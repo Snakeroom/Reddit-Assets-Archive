@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7012d0dc72aff90cb382.js
-// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.e894c1f8975541cb43e6.js
+// Retrieved at 4/12/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -740,8 +740,8 @@
 				g = r("./src/reddit/selectors/user.ts"),
 				E = r("./src/reddit/actions/gold/powerups.ts"),
 				w = r("./src/reddit/actions/modal.ts"),
-				v = r("./node_modules/bignumber.js/bignumber.js"),
-				_ = r.n(v),
+				_ = r("./node_modules/bignumber.js/bignumber.js"),
+				v = r.n(_),
 				C = r("./src/graphql/operations/CancelEconRecurringPayment.json"),
 				P = r("./src/graphql/operations/ConfirmPaypalPayment.json"),
 				x = r("./src/graphql/operations/CreateEconOrder.json"),
@@ -761,7 +761,7 @@
 				}) => {
 					const i = c()(),
 						l = await ((e, t, r, n, o) => {
-							const a = new _.a(r.pricePackages[0].price).multipliedBy(n).toFixed();
+							const a = new v.a(r.pricePackages[0].price).multipliedBy(n).toFixed();
 							return Object(T.a)(e, {
 								...x,
 								variables: {
@@ -1051,9 +1051,9 @@
 			})), r.d(t, "selectSavedCard", (function() {
 				return w
 			})), r.d(t, "_deleteSavedCard", (function() {
-				return v
-			})), r.d(t, "deleteSavedCard", (function() {
 				return _
+			})), r.d(t, "deleteSavedCard", (function() {
+				return v
 			})), r.d(t, "savedCardsPending", (function() {
 				return C
 			})), r.d(t, "savedCardsSuccess", (function() {
@@ -1095,10 +1095,10 @@
 							message: e
 						}))
 					}
-				}, g = Object(a.a)(c.x), E = Object(a.a)(c.G), w = Object(a.a)(c.B), v = Object(a.a)(c.g), _ = e => async (t, r, {
+				}, g = Object(a.a)(c.x), E = Object(a.a)(c.G), w = Object(a.a)(c.B), _ = Object(a.a)(c.g), v = e => async (t, r, {
 					apiContext: n
 				}) => {
-					t(v(e));
+					t(_(e));
 					try {
 						const t = await Object(s.a)(n(), e);
 						if (t.error) throw new Error(t.error.type)
@@ -1429,8 +1429,8 @@
 				g = r("./src/reddit/helpers/trackers/powerups.ts"),
 				E = r("./src/reddit/actions/gold/powerups.ts"),
 				w = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
-				v = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				_ = r("./src/reddit/models/Gold/ProductOffer.ts"),
+				_ = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				v = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				C = r("./src/reddit/selectors/gold/powerups.ts"),
 				P = r("./src/reddit/selectors/gold/productOffers.ts"),
 				x = r("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -1679,7 +1679,7 @@
 				}) => {
 					const r = Object(P.c)(e, {
 						subredditId: t,
-						type: _.b.Powerups
+						type: v.b.Powerups
 					});
 					return r && r[0]
 				},
@@ -1698,13 +1698,13 @@
 						stripeErrorMessage: u,
 						subredditId: p,
 						userPowerupsData: m
-					} = e, _ = Object(a.d)(), [C, P] = Object(n.useState)(b.zb);
+					} = e, v = Object(a.d)(), [C, P] = Object(n.useState)(b.zb);
 					Object(n.useEffect)(() => {
-						_(Object(w.d)()), _(Object(v.selectPaymentMethod)(C))
+						v(Object(w.d)()), v(Object(_.selectPaymentMethod)(C))
 					}, []);
 					const x = Object(y.a)();
 					Object(n.useEffect)(() => {
-						x(Object(g.d)())
+						x(Object(g.e)())
 					}, []);
 					const j = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
 					if (!j || !i) return s(), null;
@@ -1716,14 +1716,14 @@
 						className: de.a.progressControl,
 						count: l,
 						maxCount: I ? 1 : pe,
-						onChange: e => _(Object(E.d)(e)),
+						onChange: e => v(Object(E.d)(e)),
 						powerups: i
 					}), o.a.createElement("div", {
 						className: de.a.details
 					}, o.a.createElement(N.a, {
 						className: de.a.anonymousCheckbox,
 						isSelected: t,
-						onClick: () => (e => _(Object(E.b)(e)))(!t),
+						onClick: () => (e => v(Object(E.b)(e)))(!t),
 						text: ue._("Powerup anonymously", null, {
 							hk: "YXX31"
 						})
@@ -1743,7 +1743,7 @@
 						nightmode: r,
 						selectedPayment: C,
 						onPaymentSelected: e => {
-							P(e), _(Object(v.selectPaymentMethod)(e))
+							P(e), v(Object(_.selectPaymentMethod)(e))
 						}
 					}), C === b.yb && u && o.a.createElement("div", {
 						className: de.a.errorMessage
@@ -1809,8 +1809,8 @@
 				fbt: ge
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Ee = Object(l.t)(), we = Object(s.c)({
 				currentSubreddit: l.q
-			}), ve = Object(a.b)(we);
-			const _e = Object(c.a)(Ee(ve((function(e) {
+			}), _e = Object(a.b)(we);
+			const ve = Object(c.a)(Ee(_e((function(e) {
 				const {
 					currentSubreddit: t
 				} = e, r = Object(a.d)(), n = () => r(Object(u.g)(i.a.ECON_POWERUPS_PURCHASE));
@@ -1834,7 +1834,7 @@
 					onCloseModal: n
 				})) : (n(), null)
 			}))));
-			t.default = e => o.a.createElement(_e, be({}, e, {
+			t.default = e => o.a.createElement(ve, be({}, e, {
 				className: Object(d.a)(e.className, ye.a.modal)
 			}))
 		},
@@ -2093,8 +2093,8 @@
 				}
 			}
 			var w = E,
-				v = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
-				_ = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				_ = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
+				v = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				C = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				P = r("./src/reddit/selectors/goldPurchaseModals.ts");
 			const x = Object(s.c)({
@@ -2103,8 +2103,8 @@
 					stripeInfoLoading: P.v
 				}),
 				j = Object(a.b)(x, (e, t) => ({
-					onClickDeleteCard: r => t.shouldDeleteCardWithGql ? e(Object(v.c)(r)) : e(Object(_.deleteSavedCard)(r)),
-					onToggleRememberCard: () => e(Object(_.toggleRememberCard)())
+					onClickDeleteCard: r => t.shouldDeleteCardWithGql ? e(Object(_.c)(r)) : e(Object(v.deleteSavedCard)(r)),
+					onToggleRememberCard: () => e(Object(v.toggleRememberCard)())
 				}));
 			class O extends o.a.PureComponent {
 				render() {
@@ -2163,28 +2163,40 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "k", (function() {
+			r.d(t, "p", (function() {
 				return s
-			})), r.d(t, "i", (function() {
-				return c
 			})), r.d(t, "g", (function() {
+				return c
+			})), r.d(t, "k", (function() {
 				return i
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "m", (function() {
 				return l
-			})), r.d(t, "c", (function() {
-				return d
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "q", (function() {
 				return u
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "f", (function() {
 				return p
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "j", (function() {
 				return m
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "i", (function() {
 				return f
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "n", (function() {
 				return h
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "d", (function() {
 				return y
+			})), r.d(t, "e", (function() {
+				return b
+			})), r.d(t, "c", (function() {
+				return g
+			})), r.d(t, "o", (function() {
+				return E
+			})), r.d(t, "h", (function() {
+				return w
+			})), r.d(t, "a", (function() {
+				return _
+			})), r.d(t, "l", (function() {
+				return v
+			})), r.d(t, "b", (function() {
+				return C
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				o = r("./src/reddit/selectors/telemetry.ts");
@@ -2214,46 +2226,88 @@
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
 				i = () => e => ({
+					source: "postlist_supporters_cta",
+					action: "click",
+					noun: "powersup_become_hero",
+					...a(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				l = () => e => ({
+					source: "postlist_supporters_cta",
+					action: "click",
+					noun: "powersups_see_all_heroes",
+					...a(e),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
+				}),
+				d = e => (t, r) => n => ({
+					source: e,
+					action: "click",
+					noun: "powerup_supporter",
+					...a(n),
+					profile: {
+						id: t,
+						name: r,
+						type: "default"
+					}
+				}),
+				u = d("postlist_supporters_cta"),
+				p = d("comm_heroes_modal"),
+				m = () => e => ({
 					source: "powerups",
 					action: "view",
 					noun: "post_upsell",
 					...a(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				l = () => e => ({
+				f = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "post_upsell",
 					...a(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				d = (e, t) => r => ({
+				h = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "premium",
+					...a(e)
+				}),
+				y = (e, t) => r => ({
 					source: "powerups_modal",
 					action: "click",
 					noun: "benefit",
 					...a(r, e, t)
 				}),
-				u = (e, t) => r => ({
+				b = (e, t) => r => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
 					...a(r, e, t)
 				}),
-				p = () => e => ({
+				g = (e, t) => r => ({
+					source: "global",
+					action: "view",
+					noun: "screen",
+					...a(r, e, t),
+					actionInfo: {
+						pageType: "community_heroes_modal"
+					}
+				}),
+				E = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
 					...a(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				m = () => e => ({
+				w = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...a(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				f = e => t => ({
+				_ = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "add_custom_emojis",
@@ -2264,7 +2318,7 @@
 					},
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				h = e => t => ({
+				v = e => t => ({
 					source: "powerups",
 					action: "save",
 					noun: "custom_emojis",
@@ -2275,7 +2329,7 @@
 					},
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				y = (e = 1) => t => ({
+				C = (e = 1) => t => ({
 					source: "powerups",
 					action: "delete",
 					noun: "custom_emojis",
@@ -2449,4 +2503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7012d0dc72aff90cb382.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.e894c1f8975541cb43e6.js.map

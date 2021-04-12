@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.73bc590c10e211c3251c.js
-// Retrieved at 4/8/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7be1b85241afa1beb844.js
+// Retrieved at 4/12/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -369,9 +369,9 @@
 				I = r("./src/reddit/selectors/experiments/econLeaderboards.ts"),
 				C = r("./src/reddit/selectors/gold/awardIcon.ts"),
 				P = r("./src/reddit/contexts/Post/index.tsx"),
-				S = r("./src/reddit/contexts/User/index.tsx"),
-				_ = r("./node_modules/lodash/debounce.js"),
-				k = r.n(_),
+				_ = r("./src/reddit/contexts/User/index.tsx"),
+				S = r("./node_modules/lodash/debounce.js"),
+				k = r.n(S),
 				N = r("./src/lib/classNames/index.ts"),
 				M = r("./src/lib/fastdom/index.ts"),
 				B = r("./src/reddit/models/Gold/TopAwarded/index.ts"),
@@ -916,8 +916,8 @@
 				},
 				Ce = r("./src/reddit/actions/gold/reportAward.ts"),
 				Pe = r("./src/reddit/controls/Button/index.tsx"),
-				Se = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				_e = r.n(Se);
+				_e = r("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				Se = r.n(_e);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(Te || (Te = {}));
@@ -940,14 +940,14 @@
 						onClick: () => {
 							t(Object(O.clickReportAward)(e.award, e.thing.id)), i(Te.REPORT_COMMUNITY_AWARD)
 						},
-						className: _e.a.reportStepButton
+						className: Se.a.reportStepButton
 					}, s.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
 					})), a.a.createElement(Pe.l, {
 						onClick: () => {
 							t(Object(O.clickFlagAwardUsage)(e.award, e.thing.id)), i(Te.FLAG_USAGE)
 						},
-						className: _e.a.reportStepButton
+						className: Se.a.reportStepButton
 					}, s.fbt._("This award is being used inappropriately.", null, {
 						hk: "Y8giW"
 					})));
@@ -1195,7 +1195,7 @@
 					}))
 				}
 			}
-			t.a = Object(S.c)(Object(P.d)(Fe(Object(y.c)(Le))))
+			t.a = Object(_.c)(Object(P.d)(Fe(Object(y.c)(Le))))
 		},
 		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1211,7 +1211,7 @@
 			r.d(t, "b", (function() {
 				return E
 			})), r.d(t, "c", (function() {
-				return _
+				return S
 			})), r.d(t, "a", (function() {
 				return k
 			}));
@@ -1358,7 +1358,7 @@
 					onOpenUploadDialog: () => e(Object(c.j)())
 				});
 
-			function S(e) {
+			function _(e) {
 				const {
 					badgeIds: t,
 					allBadges: r,
@@ -1368,8 +1368,8 @@
 					badges: a
 				}, s))
 			}
-			const _ = Object(a.b)(I, P)(S),
-				k = Object(a.b)(C, P)(S)
+			const S = Object(a.b)(I, P)(_),
+				k = Object(a.b)(C, P)(_)
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1839,8 +1839,8 @@
 				I = r("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
 				C = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				P = r("./src/reddit/components/QuarantinedLabel/index.tsx"),
-				S = r("./src/reddit/components/SponsoredLabel/index.tsx"),
-				_ = r("./src/reddit/components/SubredditNameLink/index.tsx"),
+				_ = r("./src/reddit/components/SponsoredLabel/index.tsx"),
+				S = r("./src/reddit/components/SubredditNameLink/index.tsx"),
 				k = r("./src/reddit/constants/posts.ts"),
 				N = r("./src/reddit/contexts/InsideOverlay.tsx"),
 				M = r("./src/reddit/controls/MetaSeparator/index.tsx"),
@@ -1998,7 +1998,7 @@
 						onMouseEnter: de.show,
 						onMouseLeave: de.hide,
 						onClick: () => {
-							R(Object(m.k)(B ? "post" : "postlist")), F(Object(p.c)())
+							R(Object(m.p)(B ? "post" : "postlist")), F(Object(p.c)())
 						},
 						ref: de.target.ref
 					}, n.a.createElement(A.a, {
@@ -2030,10 +2030,10 @@
 						postId: b.id,
 						subredditName: M.name,
 						tooltipType: B
-					}, n.a.createElement(_.a, {
+					}, n.a.createElement(S.a, {
 						"data-click-id": "subreddit",
 						to: M.url
-					}, M.displayText)), M && M.isQuarantined && n.a.createElement(P.a, null), v && !le && n.a.createElement(be, null), b.isSponsored && n.a.createElement(s.Fragment, null, n.a.createElement(S.a, null), n.a.createElement(be, null)), fe, n.a.createElement(C.e, null), N && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
+					}, M.displayText)), M && M.isQuarantined && n.a.createElement(P.a, null), v && !le && n.a.createElement(be, null), b.isSponsored && n.a.createElement(s.Fragment, null, n.a.createElement(_.a, null), n.a.createElement(be, null)), fe, n.a.createElement(C.e, null), N && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
 						className: K.a.externalLink,
 						"data-click-id": "timestamp",
 						href: b.permalink,
@@ -2207,9 +2207,9 @@
 			})), r.d(t, "f", (function() {
 				return P
 			})), r.d(t, "g", (function() {
-				return S
-			})), r.d(t, "m", (function() {
 				return _
+			})), r.d(t, "m", (function() {
+				return S
 			})), r.d(t, "h", (function() {
 				return k
 			})), r.d(t, "i", (function() {
@@ -2332,14 +2332,14 @@
 						thingId: r,
 						includeGroup: !0
 					}
-				}), S = (e, t, r) => Object(a.a)(e, {
+				}), _ = (e, t, r) => Object(a.a)(e, {
 					...c,
 					variables: {
 						profileName: t,
 						thingId: r,
 						includeGroup: !0
 					}
-				}), _ = (e, t) => Object(a.a)(e, {
+				}), S = (e, t) => Object(a.a)(e, {
 					...g,
 					variables: {
 						awardId: t
@@ -2439,28 +2439,40 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "k", (function() {
+			r.d(t, "p", (function() {
 				return o
-			})), r.d(t, "i", (function() {
-				return i
 			})), r.d(t, "g", (function() {
+				return i
+			})), r.d(t, "k", (function() {
 				return d
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "m", (function() {
 				return c
-			})), r.d(t, "c", (function() {
-				return l
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "q", (function() {
 				return u
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "f", (function() {
 				return m
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "j", (function() {
 				return p
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "i", (function() {
 				return h
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "n", (function() {
 				return b
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "d", (function() {
 				return f
+			})), r.d(t, "e", (function() {
+				return w
+			})), r.d(t, "c", (function() {
+				return g
+			})), r.d(t, "o", (function() {
+				return A
+			})), r.d(t, "h", (function() {
+				return v
+			})), r.d(t, "a", (function() {
+				return x
+			})), r.d(t, "l", (function() {
+				return O
+			})), r.d(t, "b", (function() {
+				return j
 			}));
 			var s = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
@@ -2490,46 +2502,88 @@
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
 				d = () => e => ({
+					source: "postlist_supporters_cta",
+					action: "click",
+					noun: "powersup_become_hero",
+					...a(e),
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				c = () => e => ({
+					source: "postlist_supporters_cta",
+					action: "click",
+					noun: "powersups_see_all_heroes",
+					...a(e),
+					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
+				}),
+				l = e => (t, r) => s => ({
+					source: e,
+					action: "click",
+					noun: "powerup_supporter",
+					...a(s),
+					profile: {
+						id: t,
+						name: r,
+						type: "default"
+					}
+				}),
+				u = l("postlist_supporters_cta"),
+				m = l("comm_heroes_modal"),
+				p = () => e => ({
 					source: "powerups",
 					action: "view",
 					noun: "post_upsell",
 					...a(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				c = () => e => ({
+				h = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "post_upsell",
 					...a(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				l = (e, t) => r => ({
+				b = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "premium",
+					...a(e)
+				}),
+				f = (e, t) => r => ({
 					source: "powerups_modal",
 					action: "click",
 					noun: "benefit",
 					...a(r, e, t)
 				}),
-				u = (e, t) => r => ({
+				w = (e, t) => r => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
 					...a(r, e, t)
 				}),
-				m = () => e => ({
+				g = (e, t) => r => ({
+					source: "global",
+					action: "view",
+					noun: "screen",
+					...a(r, e, t),
+					actionInfo: {
+						pageType: "community_heroes_modal"
+					}
+				}),
+				A = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
 					...a(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				p = () => e => ({
+				v = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...a(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				h = e => t => ({
+				x = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "add_custom_emojis",
@@ -2540,7 +2594,7 @@
 					},
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				b = e => t => ({
+				O = e => t => ({
 					source: "powerups",
 					action: "save",
 					noun: "custom_emojis",
@@ -2551,7 +2605,7 @@
 					},
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				f = (e = 1) => t => ({
+				j = (e = 1) => t => ({
 					source: "powerups",
 					action: "delete",
 					noun: "custom_emojis",
@@ -2877,7 +2931,7 @@
 			})), r.d(t, "j", (function() {
 				return P
 			})), r.d(t, "p", (function() {
-				return S
+				return _
 			})), r.d(t, "k", (function() {
 				return N
 			})), r.d(t, "r", (function() {
@@ -3022,7 +3076,7 @@
 			function P(e, t) {
 				return T(e, t, i.a.Cosmetic, i.c.Gallery).some(e => e.locked.some(e => Object(o.f)(e) || !!e.price))
 			}
-			const S = e => {
+			const _ = e => {
 				const t = [],
 					r = e.economics.paymentSystems;
 				if (r.status === u.a.Fetched && r.data.stripe && r.data.stripe.sources) {
@@ -3049,10 +3103,10 @@
 				}
 				return t
 			};
-			var _;
+			var S;
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
-			}(_ || (_ = {}));
+			}(S || (S = {}));
 			const k = {
 					prices: {},
 					member: "Supporter",
@@ -3143,13 +3197,13 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.vb
 					});
-					return !(!t || Object(s.xd)(t))
+					return !(!t || Object(s.yd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
 						experimentName: s.vb
-					}) === s.Gb.ListingEnabled
+					}) === s.Hb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3173,4 +3227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.73bc590c10e211c3251c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7be1b85241afa1beb844.js.map
