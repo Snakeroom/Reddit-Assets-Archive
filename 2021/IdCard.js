@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.507bae71014710874c2f.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.25cfd9caf581db5b77f8.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1034,11 +1034,11 @@
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return S
+				return I
 			})), n.d(t, "c", (function() {
-				return N
-			})), n.d(t, "a", (function() {
 				return R
+			})), n.d(t, "a", (function() {
+				return P
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -1078,8 +1078,9 @@
 			}
 			const v = "add-custom-badge-tooltip",
 				y = 100,
-				T = 2 * y;
-			class S extends r.a.Component {
+				T = 2 * y,
+				S = 24;
+			class I extends r.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
@@ -1099,7 +1100,8 @@
 						className: Object(d.a)(_.a.image, this.props.className),
 						src: `${a.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${v}-${this.props.uniqueIdentifier}`;
+					const t = `${v}-${this.props.uniqueIdentifier}`,
+						n = this.props.badgeSize || S;
 					return r.a.createElement(s.Fragment, null, this.props.showAddCustom && r.a.createElement("div", {
 						className: _.a.wrapper,
 						id: t,
@@ -1118,21 +1120,24 @@
 						tooltipPosition: ["left", "top"],
 						onHideTooltip: () => this.props.onHideTooltip()
 					})), Object(h.a)(e).map(e => {
-						const t = Object(g.d)(24, 24, e),
-							n = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
+						const t = Object(g.d)(n, n, e),
+							i = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
 						return r.a.createElement(s.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, r.a.createElement("div", {
 							className: Object(d.a)(_.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
-							onMouseEnter: () => this.handleMouseEnter(n),
+							onMouseEnter: () => this.handleMouseEnter(i),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, r.a.createElement("img", {
 							className: _.a.image,
-							id: n,
+							id: i,
 							key: e.id,
 							src: t.url2x,
-							srcSet: `${t.url}, ${t.url2x} 2x`
+							srcSet: `${t.url}, ${t.url2x} 2x`,
+							style: {
+								height: `${n}px`
+							}
 						}), this.props.useHovercard ? r.a.createElement(m, {
 							badge: e,
 							correlationId: this.props.correlationId,
@@ -1140,42 +1145,42 @@
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
-							tooltipId: n,
+							tooltipId: i,
 							tooltipPosition: ["left", "top"],
 							userId: "userId" in this.props ? this.props.userId : void 0
 						}) : r.a.createElement(p.c, {
 							caretOnTop: !0,
 							key: `tooltip-${e.id}`,
-							tooltipId: n,
+							tooltipId: i,
 							text: e.title
 						})))
 					}))
 				}
 			}
-			const I = [],
-				O = Object(o.c)({
+			const O = [],
+				j = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: n
 					}) => {
 						var s;
-						return (null === (s = e.users.appliedBadges[n]) || void 0 === s ? void 0 : s[t]) || I
+						return (null === (s = e.users.appliedBadges[n]) || void 0 === s ? void 0 : s[t]) || O
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				j = Object(o.c)({
+				k = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
 						var n;
 						const s = e.user.account;
-						return s && (null === (n = e.users.appliedBadges[s.id]) || void 0 === n ? void 0 : n[t]) || I
+						return s && (null === (n = e.users.appliedBadges[s.id]) || void 0 === n ? void 0 : n[t]) || O
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				k = e => ({
+				w = e => ({
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
@@ -1183,18 +1188,18 @@
 					onOpenUploadDialog: () => e(Object(c.j)())
 				});
 
-			function w(e) {
+			function N(e) {
 				const {
 					badgeIds: t,
 					allBadges: n,
 					...s
 				} = e, i = t.map(e => n[e]).filter(Boolean);
-				return r.a.createElement(S, C({
+				return r.a.createElement(I, C({
 					badges: i
 				}, s))
 			}
-			const N = Object(i.b)(O, k)(w),
-				R = Object(i.b)(j, k)(w)
+			const R = Object(i.b)(j, w)(N),
+				P = Object(i.b)(k, w)(N)
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4670,4 +4675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.507bae71014710874c2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.25cfd9caf581db5b77f8.js.map

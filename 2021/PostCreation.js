@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.01f0e6377658934b0bbf.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cf996f705d2f76fb11b1.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -5498,7 +5498,7 @@
 					j = [];
 				let I = [];
 				y ? k.map(e => {
-					Object(h.p)(e.type) ? j.push(e) : I.push(e)
+					Object(h.q)(e.type) ? j.push(e) : I.push(e)
 				}) : I = k;
 				const S = i ? v.a.flairNoWrap : j.length > 0 || I.length > 0 || m && C ? v.a.flairWrapper : null,
 					T = e => {
@@ -8228,7 +8228,7 @@
 				} : a > r.g ? {
 					canSave: !1,
 					reason: d.TextIsTooLong
-				} : Object(i.n)(t) && !Object(i.q)(s) ? {
+				} : Object(i.n)(t) && !Object(i.r)(s) ? {
 					canSave: !1,
 					reason: d.TextIsNotAllowed
 				} : o()(n, t) ? {
@@ -8651,7 +8651,7 @@
 						poll: i,
 						post: a,
 						showNSFWSpoilerFlairsOnly: c
-					} = this.props, d = n === E.b.Left, u = Object(y.b)(a), m = c ? u.filter(e => e.type === E.f.Nsfw || e.type === E.f.Spoiler) : d ? u.filter(e => Object(f.p)(e.type)) : [], p = c ? [] : d ? u.filter(e => !Object(f.p)(e.type)) : u, h = !o && !s, b = !t && m && m.length > 0 && h, g = !t && p && p.length > 0 && h;
+					} = this.props, d = n === E.b.Left, u = Object(y.b)(a), m = c ? u.filter(e => e.type === E.f.Nsfw || e.type === E.f.Spoiler) : d ? u.filter(e => Object(f.q)(e.type)) : [], p = c ? [] : d ? u.filter(e => !Object(f.q)(e.type)) : u, h = !o && !s, b = !t && m && m.length > 0 && h, g = !t && p && p.length > 0 && h;
 					return r.a.createElement("div", {
 						className: Object(l.a)(R.a.Component, e, a.id)
 					}, !c && b && r.a.createElement(y.a, {
@@ -24331,4 +24331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.01f0e6377658934b0bbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cf996f705d2f76fb11b1.js.map

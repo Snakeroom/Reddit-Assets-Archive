@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.58cd33dd28bc0a7220fd.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.71dc1b54061e429ba94a.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -412,11 +412,11 @@
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return v
+				return C
 			})), r.d(t, "c", (function() {
-				return N
-			})), r.d(t, "a", (function() {
 				return B
+			})), r.d(t, "a", (function() {
+				return M
 			}));
 			var s = r("./node_modules/react/index.js"),
 				i = r.n(s),
@@ -456,8 +456,9 @@
 			}
 			const w = "add-custom-badge-tooltip",
 				O = 100,
-				S = 2 * O;
-			class v extends i.a.Component {
+				S = 2 * O,
+				v = 24;
+			class C extends i.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
@@ -477,7 +478,8 @@
 						className: Object(o.a)(E.a.image, this.props.className),
 						src: `${a.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${w}-${this.props.uniqueIdentifier}`;
+					const t = `${w}-${this.props.uniqueIdentifier}`,
+						r = this.props.badgeSize || v;
 					return i.a.createElement(s.Fragment, null, this.props.showAddCustom && i.a.createElement("div", {
 						className: E.a.wrapper,
 						id: t,
@@ -496,21 +498,24 @@
 						tooltipPosition: ["left", "top"],
 						onHideTooltip: () => this.props.onHideTooltip()
 					})), Object(h.a)(e).map(e => {
-						const t = Object(f.d)(24, 24, e),
-							r = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
+						const t = Object(f.d)(r, r, e),
+							n = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
 						return i.a.createElement(s.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, i.a.createElement("div", {
 							className: Object(o.a)(E.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
-							onMouseEnter: () => this.handleMouseEnter(r),
+							onMouseEnter: () => this.handleMouseEnter(n),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, i.a.createElement("img", {
 							className: E.a.image,
-							id: r,
+							id: n,
 							key: e.id,
 							src: t.url2x,
-							srcSet: `${t.url}, ${t.url2x} 2x`
+							srcSet: `${t.url}, ${t.url2x} 2x`,
+							style: {
+								height: `${r}px`
+							}
 						}), this.props.useHovercard ? i.a.createElement(l, {
 							badge: e,
 							correlationId: this.props.correlationId,
@@ -518,42 +523,42 @@
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
-							tooltipId: r,
+							tooltipId: n,
 							tooltipPosition: ["left", "top"],
 							userId: "userId" in this.props ? this.props.userId : void 0
 						}) : i.a.createElement(b.c, {
 							caretOnTop: !0,
 							key: `tooltip-${e.id}`,
-							tooltipId: r,
+							tooltipId: n,
 							text: e.title
 						})))
 					}))
 				}
 			}
-			const C = [],
-				j = Object(d.c)({
+			const j = [],
+				I = Object(d.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: r
 					}) => {
 						var s;
-						return (null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t]) || C
+						return (null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t]) || j
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: p.d.spSpecialMemberships
 				}),
-				I = Object(d.c)({
+				P = Object(d.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
 						var r;
 						const s = e.user.account;
-						return s && (null === (r = e.users.appliedBadges[s.id]) || void 0 === r ? void 0 : r[t]) || C
+						return s && (null === (r = e.users.appliedBadges[s.id]) || void 0 === r ? void 0 : r[t]) || j
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: p.d.spSpecialMemberships
 				}),
-				P = e => ({
+				k = e => ({
 					onShowTooltip: t => e(Object(u.f)({
 						tooltipId: t
 					})),
@@ -561,18 +566,18 @@
 					onOpenUploadDialog: () => e(Object(c.j)())
 				});
 
-			function k(e) {
+			function N(e) {
 				const {
 					badgeIds: t,
 					allBadges: r,
 					...s
 				} = e, n = t.map(e => r[e]).filter(Boolean);
-				return i.a.createElement(v, x({
+				return i.a.createElement(C, x({
 					badges: n
 				}, s))
 			}
-			const N = Object(n.b)(j, P)(k),
-				B = Object(n.b)(I, P)(k)
+			const B = Object(n.b)(I, k)(N),
+				M = Object(n.b)(P, k)(N)
 		},
 		"./src/reddit/components/Economics/Confetti/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -612,6 +617,7 @@
 				return n.length ? i.a.createElement(u.b, {
 					useHovercard: !0,
 					badges: n,
+					badgeSize: e.badgeSize,
 					className: Object(a.a)(e.className, h.a.badge),
 					uniqueIdentifier: e.uniqueIdentifier,
 					showAddCustom: e.customBadgesEnabled && e.premiumEnabled && e.showAddCustom && n.length < 2 && (null == s ? void 0 : s.id) === e.userId,
@@ -1834,8 +1840,8 @@
 			var G = r("./src/reddit/components/Economics/SubredditPremium/Badges/UserPreview/index.tsx"),
 				H = r("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
 				W = r("./src/reddit/selectors/gov.ts"),
-				q = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PostPurchase/index.m.less"),
-				z = r.n(q);
+				z = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PostPurchase/index.m.less"),
+				q = r.n(z);
 
 			function Z(e) {
 				return !!e
@@ -1877,19 +1883,19 @@
 					return e.account && e.subreddit ? i.a.createElement("div", {
 						className: e.className
 					}, i.a.createElement("header", {
-						className: z.a.title
+						className: q.a.title
 					}, i.a.createElement("img", {
-						className: z.a.crown,
+						className: q.a.crown,
 						src: Object(H.a)(e.subreddit, "Crown.gif")
 					}), i.a.createElement("div", null, i.a.createElement("div", null, _.fbt._("{memberAlt} {date}", [_.fbt._param("memberAlt", e.meta.memberAlt), _.fbt._param("date", e.membershipStartDate)], {
 						hk: "33p3Fk"
 					})), e.useCrypto && i.a.createElement("div", {
-						className: z.a.membershipEndDate
+						className: q.a.membershipEndDate
 					}, e.membershipEndDate))), i.a.createElement(G.a, {
 						clickToOpenModal: !0,
 						showDefaultBackground: !0,
 						badges: e.appliedPremiumBadges,
-						className: z.a.user,
+						className: q.a.user,
 						subredditId: e.subredditId
 					})) : null
 				})),
@@ -3490,4 +3496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.58cd33dd28bc0a7220fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.71dc1b54061e429ba94a.js.map

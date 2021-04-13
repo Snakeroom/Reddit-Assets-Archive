@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.ff1917a69989edc6c1f6.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.202fb4641c57645514c8.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac"], {
 		"./src/higherOrderComponents/makeAsync.tsx": function(e, t, s) {
@@ -956,7 +956,7 @@
 					I = [];
 				let E = [];
 				O ? k.map(e => {
-					Object(h.p)(e.type) ? I.push(e) : E.push(e)
+					Object(h.q)(e.type) ? I.push(e) : E.push(e)
 				}) : E = k;
 				const N = o ? y.a.flairNoWrap : I.length > 0 || E.length > 0 || m && v ? y.a.flairWrapper : null,
 					T = e => {
@@ -2264,4 +2264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.ff1917a69989edc6c1f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~redd~b7d82fac.202fb4641c57645514c8.js.map

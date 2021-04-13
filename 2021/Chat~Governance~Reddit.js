@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1776e832b382b5ab24cb.js
-// Retrieved at 4/13/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.257d936f4340b949b328.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1464,11 +1464,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("131071"),
+				buildNumber: r("131072"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1618328186"),
+				})("1618330398"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3644,14 +3644,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbebd1ea728e3c18f18d534e1cceb720bf4ff4a92-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cf676fc933e26575e8ee91e54f40a3fef13d01442-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bebd1ea728e3c18f18d534e1cceb720bf4ff4a92-production",
+						release: "f676fc933e26575e8ee91e54f40a3fef13d01442-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4100,7 +4100,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "bebd1ea728e3c18f18d534e1cceb720bf4ff4a92-production",
+						releaseClient: "f676fc933e26575e8ee91e54f40a3fef13d01442-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -18151,7 +18151,7 @@
 				}) => {
 					const r = e.posts.models[i];
 					if (!r) return;
-					const s = r.flair.find(e => Object(f.p)(e.type));
+					const s = r.flair.find(e => Object(f.q)(e.type));
 					if (!s || void 0 === s.templateId) return;
 					const d = de(e, {
 						pageLayer: t
@@ -20868,42 +20868,44 @@
 		},
 		"./src/reddit/helpers/flair.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "p", (function() {
+			i.d(t, "q", (function() {
 				return u
 			})), i.d(t, "g", (function() {
 				return p
 			})), i.d(t, "i", (function() {
 				return m
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
 				return h
 			})), i.d(t, "a", (function() {
 				return b
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "r", (function() {
 				return f
 			})), i.d(t, "n", (function() {
 				return w
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "o", (function() {
 				return y
+			})), i.d(t, "h", (function() {
+				return v
 			})), i.d(t, "c", (function() {
-				return E
-			})), i.d(t, "b", (function() {
 				return S
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "b", (function() {
 				return T
+			})), i.d(t, "l", (function() {
+				return O
 			})), i.d(t, "f", (function() {
-				return I
-			})), i.d(t, "d", (function() {
 				return j
-			})), i.d(t, "r", (function() {
-				return R
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "d", (function() {
+				return F
+			})), i.d(t, "s", (function() {
 				return x
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "k", (function() {
 				return C
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "m", (function() {
 				return N
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "j", (function() {
 				return A
+			})), i.d(t, "e", (function() {
+				return D
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./node_modules/lodash/isEqual.js"),
@@ -20922,12 +20924,13 @@
 				f = e => !e.allowableContent || e.allowableContent === c.a.Text || e.allowableContent === c.a.All,
 				g = e => !!e.find(e => e.e === c.c.Text),
 				w = e => e.type === c.f.Richtext ? g(e.richtext) : !!e.text,
-				y = e => e.type === c.f.Richtext ? e.richtext.reduce((e, t) => t.e === c.c.Emoji ? e + 1 : e, 0) : 0,
-				v = e => ({
+				y = e => !e || (e.type === c.f.Richtext ? 0 === e.richtext.length : "" === e.text),
+				v = e => e.type === c.f.Richtext ? e.richtext.reduce((e, t) => t.e === c.c.Emoji ? e + 1 : e, 0) : 0,
+				E = e => ({
 					e: c.c.Text,
 					t: e
 				}),
-				E = (e, t = !0) => {
+				S = (e, t = !0) => {
 					let i;
 					return i = e.type === c.f.Richtext ? {
 						backgroundColor: e.backgroundColor,
@@ -20943,12 +20946,12 @@
 						text: e.text,
 						textColor: e.textColor,
 						type: e.type
-					}, t && (i = j({
+					}, t && (i = F({
 						flair: i,
 						template: e
 					})), i
 				},
-				S = () => {
+				T = () => {
 					return {
 						backgroundColor: a.b.defaultFlair,
 						text: "",
@@ -20956,7 +20959,7 @@
 						type: c.f.Text
 					}
 				},
-				T = ({
+				O = ({
 					maxEmojis: e
 				}) => {
 					if ("string" == typeof e) {
@@ -20965,7 +20968,7 @@
 					}
 					return "number" == typeof e ? e : l.d
 				},
-				O = (e, t) => {
+				I = (e, t) => {
 					if (t >= e.length) return e;
 					let i = e,
 						n = -1,
@@ -20982,11 +20985,11 @@
 						i = e.slice(0, n);
 						let t = "";
 						for (let i = n; i < e.length; i++) t += _(e[i]);
-						i.push(v(t))
+						i.push(E(t))
 					}
 					return i
 				},
-				I = (e, t) => {
+				j = (e, t) => {
 					const i = e.type === c.f.Richtext ? e.richtext : [],
 						n = p(e);
 					return {
@@ -20996,7 +20999,7 @@
 						text: n
 					}
 				},
-				j = e => {
+				F = e => {
 					const {
 						flair: t,
 						template: i,
@@ -21005,7 +21008,7 @@
 					let s = t;
 					if (t.type === c.f.Richtext) {
 						let e = t.richtext;
-						e = b(i) ? O(e, T(i)) : O(e, 0), !r && g(e) && (e = e.filter(e => e.e !== c.c.Text)), e !== t.richtext && (s = {
+						e = b(i) ? I(e, O(i)) : I(e, 0), !r && g(e) && (e = e.filter(e => e.e !== c.c.Text)), e !== t.richtext && (s = {
 							...t,
 							richtext: e
 						})
@@ -21015,12 +21018,12 @@
 					});
 					return s
 				},
-				F = () => !0,
-				R = (e, t, i = F) => {
+				R = () => !0,
+				x = (e, t, i = R) => {
 					const {
 						emojis: n,
 						snoomojis: r
-					} = t, o = e.type === c.f.Richtext ? e.richtext : [v(e.text)], a = [];
+					} = t, o = e.type === c.f.Richtext ? e.richtext : [E(e.text)], a = [];
 					return o.forEach(e => {
 						if (e.e === c.c.Text) {
 							e.t.split(/(:[-\w]+:)/).forEach(e => {
@@ -21039,7 +21042,7 @@
 									}
 								}
 								const t = a[a.length - 1];
-								t && t.e === c.c.Text ? t.t += e : a.push(v(e))
+								t && t.e === c.c.Text ? t.t += e : a.push(E(e))
 							})
 						} else a.push(e)
 					}), s()(a, o) ? e : {
@@ -21048,8 +21051,8 @@
 						richtext: a
 					}
 				},
-				x = e => {
-					const t = T(e);
+				C = e => {
+					const t = O(e);
 					return e.allowableContent === c.a.Emoji ? n.fbt._({
 						"*": "Allows up to {number} emojis only",
 						_1: "Allows up to 1 emoji only"
@@ -21064,7 +21067,7 @@
 						hk: "2xjY7a"
 					})
 				},
-				C = (e, t, i = {}) => {
+				N = (e, t, i = {}) => {
 					const r = m(e),
 						s = f(t),
 						o = b(t);
@@ -21078,8 +21081,8 @@
 					if (r > l.g && !i.allowOverflow) return n.fbt._("Error: character limit exceeded", null, {
 						hk: "2ejRbH"
 					});
-					const d = T(t),
-						a = y(e);
+					const d = O(t),
+						a = v(e);
 					return !s && w(e) ? n.fbt._("Error: Only emojis allowed", null, {
 						hk: "4edtZW"
 					}) : !o && a > 0 ? n.fbt._("Error: Emojis aren't allowed", null, {
@@ -21091,8 +21094,8 @@
 						hk: "m0uE6"
 					}) : void 0
 				},
-				N = e => `flair_name:"${p(e)}"`,
-				A = (e, t) => Object(o.a)(e, {
+				A = e => `flair_name:"${p(e)}"`,
+				D = (e, t) => Object(o.a)(e, {
 					f: t
 				})
 		},
@@ -36747,7 +36750,7 @@
 						postId: t
 					});
 					if (!i) return !1;
-					const n = i.flair.some(e => Object(s.p)(e.type)),
+					const n = i.flair.some(e => Object(s.q)(e.type)),
 						r = Object(l.pb)(e, {
 							post: i
 						});
@@ -44649,4 +44652,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1776e832b382b5ab24cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.257d936f4340b949b328.js.map

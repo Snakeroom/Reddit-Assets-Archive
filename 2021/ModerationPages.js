@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.dadfb7717498640faaab.js
-// Retrieved at 4/13/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e8239eb182e54cb712d0.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -9461,7 +9461,7 @@
 						const e = t.templateId && this.props.userFlairData.templates[t.templateId];
 						s = e ? Object(A.c)(e) : s
 					}
-					Object(A.o)(t, s) || this.props.sendEvent(q()), t.cssClass !== s.cssClass && this.props.sendEvent(z(t.cssClass || ""))
+					Object(A.p)(t, s) || this.props.sendEvent(q()), t.cssClass !== s.cssClass && this.props.sendEvent(z(t.cssClass || ""))
 				}
 				getIndicatorStatus() {
 					const {
@@ -24863,4 +24863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.dadfb7717498640faaab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e8239eb182e54cb712d0.js.map

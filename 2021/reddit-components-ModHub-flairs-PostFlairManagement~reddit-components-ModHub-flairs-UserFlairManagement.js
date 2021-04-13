@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.096703238cf59db413fa.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.2b76f19ebd1f342b9fd0.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -547,7 +547,7 @@
 					let o = Object(b.c)(n, !1);
 					if (Object(b.a)(n)) {
 						const e = t === f.d.UserFlair ? me : he;
-						o = Object(b.r)(o, s, e)
+						o = Object(b.s)(o, s, e)
 					}
 					return o = Object(b.d)({
 						flair: o,
@@ -556,7 +556,7 @@
 					}), n.type = o.type, o.type === f.f.Richtext ? n.richtext = o.richtext : n.text = o.text, n
 				},
 				ge = e => {
-					const t = Object(b.n)(e) && !Object(b.q)(e),
+					const t = Object(b.n)(e) && !Object(b.r)(e),
 						s = e.text.length > h.g,
 						a = !e.text,
 						n = Object(le.a)(e.cssClass || "");
@@ -2069,4 +2069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.096703238cf59db413fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.2b76f19ebd1f342b9fd0.js.map

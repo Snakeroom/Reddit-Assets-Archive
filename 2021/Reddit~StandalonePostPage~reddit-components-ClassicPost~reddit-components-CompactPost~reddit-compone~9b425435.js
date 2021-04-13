@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.fa42f6f390990367283a.js
-// Retrieved at 4/8/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.a60da3f097cf88afebce.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, r) {
@@ -793,7 +793,7 @@
 				} : i > o.g ? {
 					canSave: !1,
 					reason: d.TextIsTooLong
-				} : Object(a.n)(t) && !Object(a.q)(n) ? {
+				} : Object(a.n)(t) && !Object(a.r)(n) ? {
 					canSave: !1,
 					reason: d.TextIsNotAllowed
 				} : s()(r, t) ? {
@@ -1087,7 +1087,7 @@
 						poll: a,
 						post: i,
 						showNSFWSpoilerFlairsOnly: c
-					} = this.props, d = r === w.b.Left, u = Object(_.b)(i), m = c ? u.filter(e => e.type === w.f.Nsfw || e.type === w.f.Spoiler) : d ? u.filter(e => Object(h.p)(e.type)) : [], p = c ? [] : d ? u.filter(e => !Object(h.p)(e.type)) : u, f = !s && !n, b = !t && m && m.length > 0 && f, g = !t && p && p.length > 0 && f;
+					} = this.props, d = r === w.b.Left, u = Object(_.b)(i), m = c ? u.filter(e => e.type === w.f.Nsfw || e.type === w.f.Spoiler) : d ? u.filter(e => Object(h.q)(e.type)) : [], p = c ? [] : d ? u.filter(e => !Object(h.q)(e.type)) : u, f = !s && !n, b = !t && m && m.length > 0 && f, g = !t && p && p.length > 0 && f;
 					return o.a.createElement("div", {
 						className: Object(l.a)(M.a.Component, e, i.id)
 					}, !c && b && o.a.createElement(_.a, {
@@ -3033,4 +3033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.fa42f6f390990367283a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.a60da3f097cf88afebce.js.map

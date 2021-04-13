@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.39829174b62ad8314874.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.d64f5a0a646d283bfd70.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1209,11 +1209,11 @@
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return E
+				return T
 			})), r.d(t, "c", (function() {
-				return S
-			})), r.d(t, "a", (function() {
 				return k
+			})), r.d(t, "a", (function() {
+				return N
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
@@ -1253,8 +1253,9 @@
 			}
 			const O = "add-custom-badge-tooltip",
 				j = 100,
-				y = 2 * j;
-			class E extends n.a.Component {
+				y = 2 * j,
+				E = 24;
+			class T extends n.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
@@ -1274,7 +1275,8 @@
 						className: Object(d.a)(v.a.image, this.props.className),
 						src: `${i.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${O}-${this.props.uniqueIdentifier}`;
+					const t = `${O}-${this.props.uniqueIdentifier}`,
+						r = this.props.badgeSize || E;
 					return n.a.createElement(s.Fragment, null, this.props.showAddCustom && n.a.createElement("div", {
 						className: v.a.wrapper,
 						id: t,
@@ -1293,21 +1295,24 @@
 						tooltipPosition: ["left", "top"],
 						onHideTooltip: () => this.props.onHideTooltip()
 					})), Object(b.a)(e).map(e => {
-						const t = Object(w.d)(24, 24, e),
-							r = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
+						const t = Object(w.d)(r, r, e),
+							a = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
 						return n.a.createElement(s.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, n.a.createElement("div", {
 							className: Object(d.a)(v.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
-							onMouseEnter: () => this.handleMouseEnter(r),
+							onMouseEnter: () => this.handleMouseEnter(a),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, n.a.createElement("img", {
 							className: v.a.image,
-							id: r,
+							id: a,
 							key: e.id,
 							src: t.url2x,
-							srcSet: `${t.url}, ${t.url2x} 2x`
+							srcSet: `${t.url}, ${t.url2x} 2x`,
+							style: {
+								height: `${r}px`
+							}
 						}), this.props.useHovercard ? n.a.createElement(m, {
 							badge: e,
 							correlationId: this.props.correlationId,
@@ -1315,42 +1320,42 @@
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
-							tooltipId: r,
+							tooltipId: a,
 							tooltipPosition: ["left", "top"],
 							userId: "userId" in this.props ? this.props.userId : void 0
 						}) : n.a.createElement(p.c, {
 							caretOnTop: !0,
 							key: `tooltip-${e.id}`,
-							tooltipId: r,
+							tooltipId: a,
 							text: e.title
 						})))
 					}))
 				}
 			}
-			const T = [],
-				I = Object(o.c)({
+			const I = [],
+				C = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: r
 					}) => {
 						var s;
-						return (null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t]) || T
+						return (null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t]) || I
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				C = Object(o.c)({
+				P = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
 						var r;
 						const s = e.user.account;
-						return s && (null === (r = e.users.appliedBadges[s.id]) || void 0 === r ? void 0 : r[t]) || T
+						return s && (null === (r = e.users.appliedBadges[s.id]) || void 0 === r ? void 0 : r[t]) || I
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				P = e => ({
+				_ = e => ({
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
@@ -1358,18 +1363,18 @@
 					onOpenUploadDialog: () => e(Object(c.j)())
 				});
 
-			function _(e) {
+			function S(e) {
 				const {
 					badgeIds: t,
 					allBadges: r,
 					...s
 				} = e, a = t.map(e => r[e]).filter(Boolean);
-				return n.a.createElement(E, x({
+				return n.a.createElement(T, x({
 					badges: a
 				}, s))
 			}
-			const S = Object(a.b)(I, P)(_),
-				k = Object(a.b)(C, P)(_)
+			const k = Object(a.b)(C, _)(S),
+				N = Object(a.b)(P, _)(S)
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1403,6 +1408,7 @@
 				return a.length ? n.a.createElement(l.b, {
 					useHovercard: !0,
 					badges: a,
+					badgeSize: e.badgeSize,
 					className: Object(i.a)(e.className, b.a.badge),
 					uniqueIdentifier: e.uniqueIdentifier,
 					showAddCustom: e.customBadgesEnabled && e.premiumEnabled && e.showAddCustom && a.length < 2 && (null == s ? void 0 : s.id) === e.userId,
@@ -3227,4 +3233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.39829174b62ad8314874.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.d64f5a0a646d283bfd70.js.map

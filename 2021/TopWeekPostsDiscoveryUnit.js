@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.5bf90d328de916fd152c.js
-// Retrieved at 4/8/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a7913cdfa7e6d1ce0454.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1808,7 +1808,7 @@
 						poll: i,
 						post: o,
 						showNSFWSpoilerFlairsOnly: c
-					} = this.props, l = s === y.b.Left, m = Object(k.b)(o), u = c ? m.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : l ? m.filter(e => Object(x.p)(e.type)) : [], p = c ? [] : l ? m.filter(e => !Object(x.p)(e.type)) : m, b = !a && !n, h = !t && u && u.length > 0 && b, f = !t && p && p.length > 0 && b;
+					} = this.props, l = s === y.b.Left, m = Object(k.b)(o), u = c ? m.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : l ? m.filter(e => Object(x.q)(e.type)) : [], p = c ? [] : l ? m.filter(e => !Object(x.q)(e.type)) : m, b = !a && !n, h = !t && u && u.length > 0 && b, f = !t && p && p.length > 0 && b;
 					return r.a.createElement("div", {
 						className: Object(d.a)(F.a.Component, e, o.id)
 					}, !c && h && r.a.createElement(k.a, {
@@ -2399,4 +2399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.5bf90d328de916fd152c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a7913cdfa7e6d1ce0454.js.map

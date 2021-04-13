@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.387663f8558dd5c90206.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.0a748687bfdf829cdaf6.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -108,11 +108,11 @@
 		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return O
+				return k
 			})), r.d(t, "c", (function() {
-				return P
-			})), r.d(t, "a", (function() {
 				return M
+			})), r.d(t, "a", (function() {
+				return B
 			}));
 			var n = r("./node_modules/react/index.js"),
 				a = r.n(n),
@@ -152,8 +152,9 @@
 			}
 			const w = "add-custom-badge-tooltip",
 				N = 100,
-				j = 2 * N;
-			class O extends a.a.Component {
+				j = 2 * N,
+				O = 24;
+			class k extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
 						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
@@ -173,7 +174,8 @@
 						className: Object(c.a)(E.a.image, this.props.className),
 						src: `${i.a.assetPath}/img/badges/placeholder.png`
 					});
-					const t = `${w}-${this.props.uniqueIdentifier}`;
+					const t = `${w}-${this.props.uniqueIdentifier}`,
+						r = this.props.badgeSize || O;
 					return a.a.createElement(n.Fragment, null, this.props.showAddCustom && a.a.createElement("div", {
 						className: E.a.wrapper,
 						id: t,
@@ -192,21 +194,24 @@
 						tooltipPosition: ["left", "top"],
 						onHideTooltip: () => this.props.onHideTooltip()
 					})), Object(b.a)(e).map(e => {
-						const t = Object(f.d)(24, 24, e),
-							r = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
+						const t = Object(f.d)(r, r, e),
+							s = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
 						return a.a.createElement(n.Fragment, {
 							key: `badges-fragement-${e.id}`
 						}, a.a.createElement("div", {
 							className: Object(c.a)(E.a.wrapper, this.props.className),
 							key: `wrapper-${e.id}`,
-							onMouseEnter: () => this.handleMouseEnter(r),
+							onMouseEnter: () => this.handleMouseEnter(s),
 							onMouseLeave: () => this.handleMouseLeave()
 						}, a.a.createElement("img", {
 							className: E.a.image,
-							id: r,
+							id: s,
 							key: e.id,
 							src: t.url2x,
-							srcSet: `${t.url}, ${t.url2x} 2x`
+							srcSet: `${t.url}, ${t.url2x} 2x`,
+							style: {
+								height: `${r}px`
+							}
 						}), this.props.useHovercard ? a.a.createElement(m, {
 							badge: e,
 							correlationId: this.props.correlationId,
@@ -214,42 +219,42 @@
 							key: `tooltip-${e.id}`,
 							subredditId: this.props.subredditId,
 							targetPosition: ["left", "bottom"],
-							tooltipId: r,
+							tooltipId: s,
 							tooltipPosition: ["left", "top"],
 							userId: "userId" in this.props ? this.props.userId : void 0
 						}) : a.a.createElement(p.c, {
 							caretOnTop: !0,
 							key: `tooltip-${e.id}`,
-							tooltipId: r,
+							tooltipId: s,
 							text: e.title
 						})))
 					}))
 				}
 			}
-			const k = [],
-				_ = Object(o.c)({
+			const _ = [],
+				T = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: r
 					}) => {
 						var n;
-						return (null === (n = e.users.appliedBadges[r]) || void 0 === n ? void 0 : n[t]) || k
+						return (null === (n = e.users.appliedBadges[r]) || void 0 === n ? void 0 : n[t]) || _
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				T = Object(o.c)({
+				C = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
 						var r;
 						const n = e.user.account;
-						return n && (null === (r = e.users.appliedBadges[n.id]) || void 0 === r ? void 0 : r[t]) || k
+						return n && (null === (r = e.users.appliedBadges[n.id]) || void 0 === r ? void 0 : r[t]) || _
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				C = e => ({
+				I = e => ({
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
@@ -257,18 +262,18 @@
 					onOpenUploadDialog: () => e(Object(d.j)())
 				});
 
-			function I(e) {
+			function P(e) {
 				const {
 					badgeIds: t,
 					allBadges: r,
 					...n
 				} = e, s = t.map(e => r[e]).filter(Boolean);
-				return a.a.createElement(O, y({
+				return a.a.createElement(k, y({
 					badges: s
 				}, n))
 			}
-			const P = Object(s.b)(_, C)(I),
-				M = Object(s.b)(T, C)(I)
+			const M = Object(s.b)(T, I)(P),
+				B = Object(s.b)(C, I)(P)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1884,4 +1889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.387663f8558dd5c90206.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.0a748687bfdf829cdaf6.js.map

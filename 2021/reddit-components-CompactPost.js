@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.edf347828b26b8491a4c.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6f95d4e4abc3c3553d7b.js
+// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2140,7 +2140,7 @@
 				}) => async (r, s, {
 					apiContext: i
 				}) => {
-					const a = e.flair.filter(e => !Object(d.p)(e.type));
+					const a = e.flair.filter(e => !Object(d.q)(e.type));
 					if (t && a.unshift(t), r(Object(o.L)({
 							[e.id]: {
 								flair: a
@@ -5927,4 +5927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.edf347828b26b8491a4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6f95d4e4abc3c3553d7b.js.map
