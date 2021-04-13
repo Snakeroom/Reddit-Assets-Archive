@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dc1103594e31fa24c12c.js
-// Retrieved at 4/12/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.74115692022be162d43b.js
+// Retrieved at 4/13/2021, 11:00:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -317,30 +317,34 @@
 		},
 		"./src/chat/endpoints/sendbird/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
+			i.d(t, "e", (function() {
 				return c
-			})), i.d(t, "e", (function() {
-				return u
-			})), i.d(t, "d", (function() {
-				return _
-			})), i.d(t, "a", (function() {
-				return p
-			})), i.d(t, "k", (function() {
-				return m
-			})), i.d(t, "h", (function() {
-				return h
-			})), i.d(t, "f", (function() {
-				return b
 			})), i.d(t, "g", (function() {
-				return f
+				return u
+			})), i.d(t, "f", (function() {
+				return _
 			})), i.d(t, "b", (function() {
+				return p
+			})), i.d(t, "m", (function() {
+				return m
+			})), i.d(t, "j", (function() {
+				return h
+			})), i.d(t, "a", (function() {
+				return b
+			})), i.d(t, "c", (function() {
+				return f
+			})), i.d(t, "h", (function() {
 				return g
 			})), i.d(t, "i", (function() {
 				return w
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "d", (function() {
 				return y
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return v
+			})), i.d(t, "l", (function() {
+				return E
+			})), i.d(t, "n", (function() {
+				return S
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./src/lib/constants/index.ts"),
@@ -385,11 +389,23 @@
 					method: r.cb.POST,
 					withCredentials: !0,
 					headers: l
-				}), b = async (e, t) => Object(s.a)(Object(o.a)(e, [d.a]), {
+				}), b = async (e, t, i) => Object(s.a)(e, {
+					data: {},
+					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/sendbird/group_channels/${i}/accept`,
+					method: r.cb.PUT,
+					withCredentials: !0,
+					headers: l
+				}), f = async (e, t, i) => Object(s.a)(e, {
+					data: {},
+					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/sendbird/group_channels/${i}/decline`,
+					method: r.cb.PUT,
+					withCredentials: !0,
+					headers: l
+				}), g = async (e, t) => Object(s.a)(Object(o.a)(e, [d.a]), {
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/sendbird/unread_message_count`,
 					method: r.cb.GET,
 					headers: l
-				}), f = (e, t, i) => Object(s.a)(e, {
+				}), w = (e, t, i) => Object(s.a)(e, {
 					data: {
 						channel_url: Object(a.a)(t),
 						modqueue_message_id: i
@@ -397,7 +413,7 @@
 					method: r.cb.PUT,
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/chat/message/report`,
 					headers: l
-				}), g = (e, t, i) => Object(s.a)(e, {
+				}), y = (e, t, i) => Object(s.a)(e, {
 					data: {
 						channel_url: Object(a.a)(t),
 						modqueue_message_id: i
@@ -405,7 +421,7 @@
 					method: r.cb.DELETE,
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/chat/message/report`,
 					headers: l
-				}), w = (e, t, i, o) => Object(s.a)(e, {
+				}), v = (e, t, i, o) => Object(s.a)(e, {
 					data: {
 						channel_url: Object(a.a)(t),
 						user_id: i,
@@ -414,11 +430,11 @@
 					method: r.cb.POST,
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/channel/kick/user`,
 					headers: l
-				}), y = (e, t) => Object(s.a)(e, {
+				}), E = (e, t) => Object(s.a)(e, {
 					method: r.cb.PUT,
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/sendbird/group_channels/${Object(a.a)(t)}/mute`,
 					headers: l
-				}), v = (e, t) => Object(s.a)(e, {
+				}), S = (e, t) => Object(s.a)(e, {
 					method: r.cb.DELETE,
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/sendbird/group_channels/${Object(a.a)(t)}/mute`,
 					headers: l
@@ -1448,11 +1464,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("131057"),
+				buildNumber: r("131067"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1618267868"),
+				})("1618323552"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3628,14 +3644,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c03a252f35aab605ca9908646202b6c4a66a269c9-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc4e8e82adeb2ee90eab7533110ddbce9f66ace2b-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "03a252f35aab605ca9908646202b6c4a66a269c9-production",
+						release: "c4e8e82adeb2ee90eab7533110ddbce9f66ace2b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4084,7 +4100,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "03a252f35aab605ca9908646202b6c4a66a269c9-production",
+						releaseClient: "c4e8e82adeb2ee90eab7533110ddbce9f66ace2b-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -44633,4 +44649,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.dc1103594e31fa24c12c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.74115692022be162d43b.js.map

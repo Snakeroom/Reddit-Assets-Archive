@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9cee0e219cf50186e9b4.js
-// Retrieved at 4/12/2021, 5:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.aa83a9d7d97d40397b9e.js
+// Retrieved at 4/13/2021, 11:00:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -180,39 +180,43 @@
 					t(ae({
 						channelId: e
 					}))
-				}, re = Object(c.a)(X), ce = e => async (t, n) => {
-					const a = n(),
+				}, re = Object(c.a)(X), ce = e => async (t, n, {
+					apiContext: a
+				}) => {
+					const s = n(),
 						{
-							channels: {
-								selected: s
+							user: {
+								session: c
 							},
 							contacts: {
-								models: c
+								models: o
 							}
-						} = a,
-						o = e || s.channelId;
-					if (!o) throw new C.a("accepted channelId", e);
-					const l = Object(I.h)(a),
+						} = s;
+					if (!e) throw new C.a("accepted channelId", e);
+					if (!c) throw new C.a("session", c);
+					const l = Object(I.h)(s),
 						d = l && l.firstMessageId,
 						u = !!(l && d && l.hasMoreMessages),
-						h = Object(I.b)(a, c),
-						m = Object(M.a)(a);
-					h && m ? t(Object(r.b)(Object(E.channelAction)(o, p.a.VIEW_NSFW_CONFIRMATION))) : await U.a.acceptChannelInvite().then(() => u && t(Object(i.r)(d))).then(() => t(re({
-						channelId: o
-					}))).then(() => t(Object(r.b)(Object(E.channelUrl)(o))))
-				}, oe = () => async (e, t) => {
-					const n = t(),
-						a = Object(I.s)(n, "channelState"),
-						s = Object(I.s)(n, "channelId"),
-						r = n.channels.models[s];
-					if (!s) throw new C.a("declinedChannelId", s);
-					if (!a) throw new C.a("declinedChannelType", a);
+						h = Object(I.b)(s, o),
+						m = Object(M.a)(s);
+					h && m ? t(Object(r.b)(Object(E.channelAction)(e, p.a.VIEW_NSFW_CONFIRMATION))) : (await Object(g.a)(a(), c, e), u && t(Object(i.r)(d)), t(re({
+						channelId: e
+					})), t(Object(r.b)(Object(E.channelUrl)(e))))
+				}, oe = e => async (t, n, {
+					apiContext: a
+				}) => {
+					const {
+						user: {
+							session: s
+						}
+					} = n();
+					if (!s) throw new C.a("session", s);
 					try {
-						await U.a.declineChannelInvite()
-					} catch (c) {
-						return Object(C.b)(`Error declining channel: ${c.message}`)
+						await Object(g.c)(a(), s, e)
+					} catch (r) {
+						return Object(C.b)(`Error declining channel: ${r.message}`)
 					}
-					e((e => async t => t(se(e)))(s)), e(Object(l.b)()), e(Se(r.channelState))
+					t((e => async t => t(se(e)))(e)), t(Object(l.b)()), t(Se(p.b.INVITED))
 				}, ie = Object(c.a)(W), le = Object(c.a)(z), de = Object(c.a)(G), ue = e => async t => {
 					t(de({
 						channel: e
@@ -334,7 +338,7 @@
 						n(_e());
 						const a = Ie(e, l, o);
 						if (a.length < 2) return;
-						const c = await Object(g.a)(s(), i, a, t);
+						const c = await Object(g.b)(s(), i, a, t);
 						if (c.ok) {
 							const t = function(e, t) {
 									return {
@@ -387,7 +391,7 @@
 						l = Object(I.s)(s, "channelSendbirdUrl");
 					if (c && o) {
 						const n = Ie(e, i);
-						(await Object(g.h)(a(), o, n, l)).body ? (t(Object(u.b)()), t(Object(r.a)())) : Object(C.b)("Error inviting user to existing channel")
+						(await Object(g.j)(a(), o, n, l)).body ? (t(Object(u.b)()), t(Object(r.a)())) : Object(C.b)("Error inviting user to existing channel")
 					}
 				}, Se = e => async (t, n) => {
 					const a = n(),
@@ -577,7 +581,7 @@
 			}, S = e => async (t, n, {
 				apiContext: a
 			}) => {
-				await Promise.all([Object(d.j)(a(), e.channelId), p.a.setPushPreference(e.channelId, !0)]).then(() => {
+				await Promise.all([Object(d.l)(a(), e.channelId), p.a.setPushPreference(e.channelId, !0)]).then(() => {
 					const a = Object(m.f)(n(), e);
 					a && t(Object(r.Q)({
 						...a,
@@ -587,7 +591,7 @@
 			}, k = e => async (t, n, {
 				apiContext: a
 			}) => {
-				await Promise.all([Object(d.l)(a(), e.channelId), p.a.setPushPreference(e.channelId, !1)]).then(() => {
+				await Promise.all([Object(d.n)(a(), e.channelId), p.a.setPushPreference(e.channelId, !1)]).then(() => {
 					const a = Object(m.f)(n(), e);
 					a && t(Object(r.Q)({
 						...a,
@@ -927,7 +931,7 @@
 					apiContext: s
 				}) => {
 					try {
-						await Object(v.g)(s(), t, e)
+						await Object(v.i)(s(), t, e)
 					} catch (r) {
 						Object(_.b)(r)
 					}
@@ -935,7 +939,7 @@
 					apiContext: s
 				}) => {
 					try {
-						await Object(v.b)(s(), t, e)
+						await Object(v.d)(s(), t, e)
 					} catch (r) {
 						Object(_.b)(r)
 					}
@@ -1079,7 +1083,7 @@
 				p = async (e, t) => {
 					const n = Object(u.c)(e);
 					if (n) try {
-						const e = await Object(l.f)(t(), n);
+						const e = await Object(l.h)(t(), n);
 						return (e => ({
 							basicChannelCount: e && Number(e.unread_count) || 0,
 							subredditChannelCount: e && Number(e.subreddit_unread_count) ? 1 : 0,
@@ -1295,7 +1299,7 @@
 				u = () => async (e, t, {
 					apiContext: n
 				}) => {
-					const a = await Object(s.c)(n());
+					const a = await Object(s.e)(n());
 					a.ok && await Promise.all([e(c({
 						host: a.body.proxy_host
 					})), e(i({
@@ -1366,7 +1370,7 @@
 							d = Object(s.a)(c);
 						if (d && d.token) n = d;
 						else {
-							const e = await Object(l.e)(a(), i);
+							const e = await Object(l.g)(a(), i);
 							if (e.ok) {
 								const {
 									valid_until: t,
@@ -1394,7 +1398,7 @@
 					if (i && i.version === d.a) return void e(_(i.data));
 					const u = t().user.session;
 					if (!u) return;
-					const h = await Object(l.d)(n(), u, 25),
+					const h = await Object(l.f)(n(), u, 25),
 						m = Object(d.c)(h.body).map(e => c[e.id] ? c[e.id] : e),
 						p = {
 							version: d.a,
@@ -1426,7 +1430,7 @@
 				}) => {
 					(e => !!e.user.experiments[a.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled)(t()) || (e(k({
 						userSubredditChatEnabled: !0
-					})), Object(l.k)(n()))
+					})), Object(l.m)(n()))
 				}
 		},
 		"./src/chat/actions/sendbird/sdk.ts": function(e, t, n) {
@@ -2184,7 +2188,7 @@
 				}, ne = Object(i.a)("MODERATOR__KICK_USER"), ae = (e, t, n) => async (a, s, {
 					apiContext: r
 				}) => {
-					await Object(p.i)(r(), e, t, n).then(() => {
+					await Object(p.k)(r(), e, t, n).then(() => {
 						a(ne({
 							userId: t
 						})), a(Object(o.a)())
@@ -5616,11 +5620,11 @@
 					isChatEmbedded: e => Object(Wc.d)(e)
 				}),
 				nl = Object(o.b)(tl, e => ({
-					onAcceptChannelRequest: () => {
-						e(Object(_.x)()), e(Object(le.k)())
+					onAcceptChannelRequest: t => {
+						e(Object(_.x)(t)), e(Object(le.k)())
 					},
 					onDeclineChannelRequest: t => {
-						e(Object(_.B)()), e(Object(le.l)())
+						e(Object(_.B)(t)), e(Object(le.l)())
 					},
 					getPreviousMessages: j.s
 				}), (e, t, n) => ({
@@ -5636,7 +5640,7 @@
 				}));
 			class al extends c.a.Component {
 				constructor(e) {
-					super(e), this.renderContent = this.renderContent.bind(this), this.renderUserInfo = this.renderUserInfo.bind(this), this.renderPreviewMessages = this.renderPreviewMessages.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this)
+					super(e), this.renderContent = this.renderContent.bind(this), this.renderUserInfo = this.renderUserInfo.bind(this), this.renderPreviewMessages = this.renderPreviewMessages.bind(this), this.onDeclineChannelRequest = this.onDeclineChannelRequest.bind(this), this.onAcceptChannelRequest = this.onAcceptChannelRequest.bind(this)
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					const {
@@ -5650,6 +5654,9 @@
 				}
 				onDeclineChannelRequest() {
 					this.props.onDeclineChannelRequest(this.props.channelId)
+				}
+				onAcceptChannelRequest() {
+					this.props.onAcceptChannelRequest(this.props.channelId)
 				}
 				renderUserInfo() {
 					const {
@@ -5755,10 +5762,10 @@
 					const {
 						props: {
 							channel: e,
-							channelId: t,
-							onAcceptChannelRequest: n
+							channelId: t
 						},
-						onDeclineChannelRequest: a
+						onDeclineChannelRequest: n,
+						onAcceptChannelRequest: a
 					} = this, s = e && e.type === Sr.a.Direct, r = s ? x.fbt._("Chat Request", null, {
 						hk: "1sWJM0"
 					}) : x.fbt._("Group invite", null, {
@@ -5773,11 +5780,11 @@
 						secondaryButtonText: x.fbt._("Decline", null, {
 							hk: "3rdClY"
 						}),
-						secondaryButtonAction: a,
+						secondaryButtonAction: n,
 						primaryButtonText: x.fbt._("Accept", null, {
 							hk: "249yqF"
 						}),
-						primaryButtonAction: n
+						primaryButtonAction: a
 					}))
 				}
 			}
@@ -6091,8 +6098,8 @@
 			const ad = i.a.div("Container", nd.a),
 				sd = i.a.p("Text", nd.a);
 			var rd = Object(o.b)(null, e => ({
-					onAccept: () => {
-						e(g(h.b.NSFWWarning)), e(Object(_.x)())
+					onAccept: t => {
+						e(g(h.b.NSFWWarning)), e(Object(_.x)(t))
 					}
 				}))(e => c.a.createElement(io.a, null, c.a.createElement(Pc.a, {
 					channelId: e.channelId,
@@ -6105,7 +6112,7 @@
 					primaryButtonText: x.fbt._("Accept", null, {
 						hk: "2ILlth"
 					}),
-					primaryButtonAction: e.onAccept
+					primaryButtonAction: () => e.onAccept(e.channelId)
 				}))),
 				cd = n("./src/chat/endpoints/users/index.ts"),
 				od = n("./src/chat/models/Message/report.ts");
@@ -12849,18 +12856,6 @@
 						t("No channel selected")
 					})
 				}
-				acceptChannelInvite() {
-					return new Promise(e => {
-						this.channel ? this.channel.acceptInvitation(e) : e()
-					})
-				}
-				declineChannelInvite() {
-					return new Promise((e, t) => {
-						this.channel ? this.channel.declineInvitation((n, a) => {
-							a ? t(a) : e(n)
-						}) : e()
-					})
-				}
 				lockChannel() {
 					return new Promise((e, t) => (this.channel && this.channel.freeze((e, n) => {
 						n && t(n)
@@ -14506,4 +14501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9cee0e219cf50186e9b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.aa83a9d7d97d40397b9e.js.map
