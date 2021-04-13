@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.05cda3089af851881f2d.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.dadfb7717498640faaab.js
+// Retrieved at 4/13/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -13546,53 +13546,60 @@
 			var N = s("./src/reddit/selectors/user.ts"),
 				P = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/reddit/constants/experiments.ts")),
 				M = s("./src/reddit/helpers/chooseVariant/index.ts");
-			var R = s("./src/higherOrderComponents/asModal/index.tsx"),
-				A = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				L = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				F = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				D = s("./src/reddit/controls/TextButton/index.tsx"),
-				U = s("./src/reddit/helpers/isValidUsername/index.tsx"),
-				B = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				H = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				W = s("./src/reddit/components/ModeratorsList/AddModeratorModal/index.m.less"),
-				V = s.n(W);
-			const q = e => {
+			const R = e => {
+				const t = Object(M.c)(e, {
+					experimentEligibilitySelector: M.a,
+					experimentName: P.gc
+				});
+				return !(!t || t !== P.kc.Enabled)
+			};
+			var A = s("./src/higherOrderComponents/asModal/index.tsx"),
+				L = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				F = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
+				D = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				U = s("./src/reddit/controls/TextButton/index.tsx"),
+				B = s("./src/reddit/helpers/isValidUsername/index.tsx"),
+				H = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				W = s("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				V = s("./src/reddit/components/ModeratorsList/AddModeratorModal/index.m.less"),
+				q = s.n(V);
+			const G = e => {
 					switch (e) {
-						case H.c.all:
+						case W.c.all:
 							return a.fbt._("Full Permissions", null, {
 								hk: "DMhUW"
 							});
-						case H.c.access:
+						case W.c.access:
 							return a.fbt._("Access", null, {
 								hk: "1WHuWY"
 							});
-						case H.c.config:
+						case W.c.config:
 							return a.fbt._("Config", null, {
 								hk: "2puxZi"
 							});
 						case "chat_config":
-						case H.c.chatConfig:
+						case W.c.chatConfig:
 							return a.fbt._("Chat Config", null, {
 								hk: "1QOA13"
 							});
 						case "chat_operator":
-						case H.c.chatOperator:
+						case W.c.chatOperator:
 							return a.fbt._("Chat Operator", null, {
 								hk: "3nv6AR"
 							});
-						case H.c.flair:
+						case W.c.flair:
 							return a.fbt._("Flair", null, {
 								hk: "16OIHu"
 							});
-						case H.c.mail:
+						case W.c.mail:
 							return a.fbt._("Mail", null, {
 								hk: "4t8jDQ"
 							});
-						case H.c.posts:
+						case W.c.posts:
 							return a.fbt._("Posts", null, {
 								hk: "v6V5n"
 							});
-						case H.c.wiki:
+						case W.c.wiki:
 							return a.fbt._("Wiki", null, {
 								hk: "3gSX65"
 							});
@@ -13602,102 +13609,96 @@
 							})
 					}
 				},
-				G = e => {
+				z = e => {
 					switch (e) {
-						case H.c.access:
+						case W.c.access:
 							return a.fbt._("Manage Users", null, {
 								hk: "2cVPGG"
 							});
-						case H.c.config:
+						case W.c.config:
 							return a.fbt._("Manage Settings", null, {
 								hk: "10NyX"
 							});
 						case "chat_config":
-						case H.c.chatConfig:
+						case W.c.chatConfig:
 							return a.fbt._("Manage Chats", null, {
 								hk: "3U1O8t"
 							});
 						case "chat_operator":
-						case H.c.chatOperator:
+						case W.c.chatOperator:
 							return a.fbt._("Monitor Chats", null, {
 								hk: "3x751K"
 							});
-						case H.c.flair:
+						case W.c.flair:
 							return a.fbt._("Manage Flair", null, {
 								hk: "IgS6W"
 							});
-						case H.c.mail:
+						case W.c.mail:
 							return a.fbt._("Manage Mod Mail", null, {
 								hk: "1H5qJm"
 							});
-						case H.c.posts:
+						case W.c.posts:
 							return a.fbt._("Manage Posts & Comments", null, {
 								hk: "1IVGI9"
 							});
-						case H.c.wiki:
+						case W.c.wiki:
 							return a.fbt._("Manage Wiki Pages", null, {
 								hk: "4gZJ2V"
 							});
-						case H.c.all:
+						case W.c.all:
 						default:
 							return a.fbt._("Everything", null, {
 								hk: "24E26J"
 							})
 					}
 				},
-				z = e => {
+				K = e => {
 					switch (e) {
-						case H.c.access:
+						case W.c.access:
 							return a.fbt._("Approve submitters and ban and mute users*.", null, {
 								hk: "KndNL"
 							});
-						case H.c.config:
+						case W.c.config:
 							return a.fbt._("Manage community settings, appearance, emojis, rules, and AutoMod*.", null, {
 								hk: "4djZSI"
 							});
 						case "chat_config":
-						case H.c.chatConfig:
+						case W.c.chatConfig:
 							return a.fbt._("Create and manage chats, set up filters and rate limits, and block domains.", null, {
 								hk: "3wcRBu"
 							});
 						case "chat_operator":
-						case H.c.chatOperator:
+						case W.c.chatOperator:
 							return a.fbt._("Delete messages, remove users, and lock chats.", null, {
 								hk: "2MErr6"
 							});
-						case H.c.flair:
+						case W.c.flair:
 							return a.fbt._("Create and manage user and post flair.", null, {
 								hk: "1oN7ft"
 							});
-						case H.c.mail:
+						case W.c.mail:
 							return a.fbt._("Read and respond to modmail and mute users*.", null, {
 								hk: "2F8Yd"
 							});
-						case H.c.posts:
+						case W.c.posts:
 							return a.fbt._("Access queues, take action on content, and manage collections and events.", null, {
 								hk: "vJ5lR"
 							});
-						case H.c.wiki:
+						case W.c.wiki:
 							return a.fbt._("Create and manage wiki pages and AutoMod*.", null, {
 								hk: "JarEL"
 							});
-						case H.c.all:
+						case W.c.all:
 						default:
 							return a.fbt._("Full access including the ability to manage moderator access and permissions.", null, {
 								hk: "2r1vEj"
 							})
 					}
 				},
-				K = Object(d.c)({
-					isInModNewPermissionsCopyExperiment: e => {
-						const t = Object(M.c)(e, {
-							experimentEligibilitySelector: M.a,
-							experimentName: P.gc
-						});
-						return !(!t || t !== P.kc.Enabled)
-					}
+				Q = Object(d.c)({
+					isInModNewPermissionsCopyExperiment: R
 				}),
-				Q = Object(i.b)(K, (e, {
+				X = Object(i.b)(Q, (e, {
 					subredditId: t,
 					after: s,
 					before: n
@@ -13706,9 +13707,9 @@
 					editModerator: (s, n, a) => e(Object(p.d)(t, s, n, a)),
 					removeModerator: a => e(Object(p.k)(t, a, s, n))
 				})),
-				X = c.a.span("SecondaryText", V.a),
-				J = c.a.wrapped(A.d, "ModalBody", V.a);
-			class Y extends r.a.Component {
+				J = c.a.span("SecondaryText", q.a),
+				Y = c.a.wrapped(L.d, "ModalBody", q.a);
+			class Z extends r.a.Component {
 				constructor(e) {
 					super(e), this.onUsernameChange = e => {
 						this.setState({
@@ -13734,7 +13735,7 @@
 						this.props.user && (this.props.removeModerator(this.props.user.id), this.props.sendEventWithName("remove")()), this.props.toggleModal()
 					}, this.state = {
 						username: e.user ? e.user.username : "",
-						permissions: e.user ? e.user.modPermissions : H.a
+						permissions: e.user ? e.user.modPermissions : W.a
 					}
 				}
 				render() {
@@ -13742,64 +13743,68 @@
 						props: e,
 						state: t
 					} = this, s = ["all", ...Object.keys(t.permissions).filter(e => "all" !== e)];
-					return r.a.createElement(J, null, r.a.createElement(A.h, null, r.a.createElement(B.a, null, r.a.createElement(A.p, null, e.isEditingPerms ? a.fbt._("Edit", null, {
+					return r.a.createElement(Y, null, r.a.createElement(L.h, null, r.a.createElement(H.a, null, r.a.createElement(L.p, null, e.isEditingPerms ? a.fbt._("Edit", null, {
 						hk: "1nftDt"
 					}) : a.fbt._("Invite Moderators", null, {
 						hk: "hkBh1"
 					}), e.username && a.fbt._(": u/{username}", [a.fbt._param("username", e.username)], {
 						hk: "2FWWEd"
-					})), r.a.createElement(D.a, {
+					})), r.a.createElement(U.a, {
 						onClick: e.toggleModal
-					}, r.a.createElement(A.b, null)))), r.a.createElement("form", {
+					}, r.a.createElement(L.b, null)))), r.a.createElement("form", {
 						onSubmit: this.onSubmit
-					}, r.a.createElement(A.k, null, !e.isEditingPerms && r.a.createElement(A.g, null, r.a.createElement(L.d, {
+					}, r.a.createElement(L.k, null, !e.isEditingPerms && r.a.createElement(L.g, null, r.a.createElement(F.d, {
 						autoFocus: !0,
 						placeholder: a.fbt._("Enter Username", null, {
 							hk: "2fYsDe"
 						}),
 						onChange: this.onUsernameChange
-					})), r.a.createElement(A.p, null, e.isInModNewPermissionsCopyExperiment ? e.isEditingSelf ? r.a.createElement(r.a.Fragment, null, a.fbt._("Access", null, {
+					})), r.a.createElement(L.p, null, e.isInModNewPermissionsCopyExperiment ? e.isEditingSelf ? r.a.createElement(r.a.Fragment, null, a.fbt._("Access", null, {
 						hk: "2We3HN"
-					}), r.a.createElement(X, null, a.fbt._("(can't edit)", null, {
+					}), r.a.createElement(J, null, a.fbt._("(can't edit)", null, {
 						hk: "3LZvZi"
 					}))) : a.fbt._("Give them access to...", null, {
 						hk: "1DzYmU"
 					}) : r.a.createElement(r.a.Fragment, null, a.fbt._("Permissions", null, {
 						hk: "GkHkd"
-					}), e.isEditingSelf && r.a.createElement(X, null, a.fbt._("(can't edit)", null, {
+					}), e.isEditingSelf && r.a.createElement(J, null, a.fbt._("(can't edit)", null, {
 						hk: "3LZvZi"
 					})))), t.permissions && s.map((s, n) => r.a.createElement("div", {
-						className: V.a.checkboxContainer,
+						className: q.a.checkboxContainer,
 						key: s
-					}, r.a.createElement(F.a, {
+					}, r.a.createElement(D.a, {
 						autoFocus: !(!e.isEditingPerms || 0 !== n) || void 0,
-						className: V.a.checkbox,
+						className: q.a.checkbox,
 						disabled: e.isEditingSelf,
 						isSelected: t.permissions[s],
 						onClick: () => this.toggleSelect(s, t.permissions[s]),
-						text: e.isInModNewPermissionsCopyExperiment ? G(s) : q(s)
+						text: e.isInModNewPermissionsCopyExperiment ? z(s) : G(s)
 					}), e.isInModNewPermissionsCopyExperiment && r.a.createElement("p", {
-						className: V.a.checkboxDescription
-					}, z(s)), e.isInModNewPermissionsCopyExperiment && "all" === s && r.a.createElement("hr", {
-						className: V.a.divider
-					})))), r.a.createElement(A.f, {
-						className: V.a.footer
+						className: q.a.checkboxDescription
+					}, K(s)), e.isInModNewPermissionsCopyExperiment && "all" === s && r.a.createElement("hr", {
+						className: q.a.divider
+					}))), e.isInModNewPermissionsCopyExperiment && r.a.createElement("p", {
+						className: q.a.automodMore
+					}, a.fbt._("*Note: To manage AutoMod, mods must have access to Wiki Pages and Manage Settings. To mute users, mods must have access to Mod Mail and Manage Users.", null, {
+						hk: "1AYX38"
+					}))), r.a.createElement(L.f, {
+						className: q.a.footer
 					}, r.a.createElement(C.i, {
-						className: V.a.primaryButton,
+						className: q.a.primaryButton,
 						"data-redditstyle": !0,
-						disabled: !e.username && !Object(U.a)(t.username),
+						disabled: !e.username && !Object(B.a)(t.username),
 						type: "submit"
 					}, e.isEditingPerms ? a.fbt._("Save", null, {
 						hk: "3h5uV"
 					}) : a.fbt._("Invite", null, {
 						hk: "2F1syY"
-					})), r.a.createElement(A.a, {
+					})), r.a.createElement(L.a, {
 						autoFocus: !!e.isEditingSelf || void 0,
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), e.isEditingPerms && !e.isEditingSelf && r.a.createElement(A.r, {
+					})), e.isEditingPerms && !e.isEditingSelf && r.a.createElement(L.r, {
 						onClick: this.onRemove,
 						"data-redditstyle": !0
 					}, a.fbt._("Remove", null, {
@@ -13807,65 +13812,67 @@
 					})))))
 				}
 			}
-			var Z = Object(R.a)(Q(Y)),
-				$ = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				ee = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				te = s("./src/reddit/selectors/telemetry.ts");
-			const se = e => ({
-					screen: te.screen(e),
-					subreddit: te.subreddit(e)
+			var $ = Object(A.a)(X(Z)),
+				ee = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				te = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				se = s("./src/reddit/selectors/telemetry.ts");
+			const ne = e => ({
+					screen: se.screen(e),
+					subreddit: se.subreddit(e)
 				}),
-				ne = e => t => ({
+				ae = e => t => ({
 					source: "remove_mod_invite",
 					action: "click",
 					noun: e,
-					...se(t)
+					...ne(t)
 				});
-			var ae = s("./src/lib/constants/index.ts"),
-				oe = s("./src/lib/timeAgo/index.ts"),
-				re = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				ie = s("./src/reddit/icons/svgs/Trash/index.tsx"),
-				de = s("./src/reddit/components/ModeratorsList/Moderator.m.less"),
-				le = s.n(de);
-			const ce = e => {
-					const t = [],
-						s = Object.keys(e);
-					return e.all ? a.fbt._("Full Permissions", null, {
-						hk: "YQ6uq"
-					}) : (s.forEach((function(s) {
-						e[s] && t.push(q(s))
-					})), 0 === t.length ? a.fbt._("No permissions", null, {
+			var oe = s("./src/lib/constants/index.ts"),
+				re = s("./src/lib/timeAgo/index.ts"),
+				ie = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				de = s("./src/reddit/icons/svgs/Trash/index.tsx"),
+				le = s("./src/reddit/components/ModeratorsList/Moderator.m.less"),
+				ce = s.n(le);
+			const ue = (e, t) => {
+					const s = [],
+						n = Object.keys(e),
+						o = t ? z : G;
+					return e.all ? o("all") : (n.forEach((function(t) {
+						e[t] && s.push(o(t))
+					})), 0 === s.length ? a.fbt._("No permissions", null, {
 						hk: "3eH05z"
-					}) : t.join(", "))
+					}) : s.join(", "))
 				},
-				ue = c.a.wrapped(re.a, "PencilIcon", le.a),
-				me = c.a.wrapped(ie.a, "TrashIcon", le.a),
-				pe = c.a.div("InteractiveDiv", le.a),
-				he = e => r.a.createElement(pe, {
+				me = c.a.wrapped(ie.a, "PencilIcon", ce.a),
+				pe = c.a.wrapped(de.a, "TrashIcon", ce.a),
+				he = c.a.div("InteractiveDiv", ce.a),
+				be = e => r.a.createElement(he, {
 					onClick: e.onClick
-				}, e.moderatorType === k.c.Editable ? r.a.createElement(ue, null) : r.a.createElement(me, null));
-			var be = e => r.a.createElement(E.b, {
-					additionalText: ce(e.moderator.modPermissions),
-					pageName: ae.Tb.Moderators,
-					primaryButton: e.moderatorType && e.onClick && r.a.createElement(he, {
-						onClick: e.onClick,
+				}, e.moderatorType === k.c.Editable ? r.a.createElement(me, null) : r.a.createElement(pe, null));
+			var ge = e => {
+					const t = Object(i.e)(R);
+					return r.a.createElement(E.b, {
+						additionalText: ue(e.moderator.modPermissions, t),
+						pageName: oe.Tb.Moderators,
+						primaryButton: e.moderatorType && e.onClick && r.a.createElement(be, {
+							onClick: e.onClick,
+							moderatorType: e.moderatorType
+						}),
+						timeAgo: Object(re.d)(e.moderator.moddedAtUTC),
+						subredditId: e.subredditId,
+						userIcon: e.moderator.accountIcon,
+						username: e.moderator.username,
 						moderatorType: e.moderatorType
-					}),
-					timeAgo: Object(oe.d)(e.moderator.moddedAtUTC),
-					subredditId: e.subredditId,
-					userIcon: e.moderator.accountIcon,
-					username: e.moderator.username,
-					moderatorType: e.moderatorType
-				}),
-				ge = s("./src/reddit/components/ModeratorsList/InvitedModeratorsList.m.less"),
-				fe = s.n(ge);
-			const xe = c.a.div("ListTitle", fe.a),
-				Ee = c.a.div("ListContainer", fe.a),
-				ve = Object(d.c)({
+					})
+				},
+				fe = s("./src/reddit/components/ModeratorsList/InvitedModeratorsList.m.less"),
+				xe = s.n(fe);
+			const Ee = c.a.div("ListTitle", xe.a),
+				ve = c.a.div("ListContainer", xe.a),
+				Ce = Object(d.c)({
 					invitedModeratorsList: I,
 					isConfirmModalOpen: Object(y.b)("ModerationPage--Modal--RemoveModeratorConfirmation")
 				});
-			class Ce extends r.a.Component {
+			class _e extends r.a.Component {
 				constructor(e) {
 					super(e), this.onToggleRemovalModal = e => {
 						this.setState({
@@ -13881,16 +13888,16 @@
 						state: t
 					} = this;
 					if (0 === e.invitedModeratorsList.length) return null;
-					const s = () => this.props.sendEvent(ne("cancel"));
-					return r.a.createElement("div", null, r.a.createElement(xe, null, a.fbt._("Invited moderators", null, {
+					const s = () => this.props.sendEvent(ae("cancel"));
+					return r.a.createElement("div", null, r.a.createElement(Ee, null, a.fbt._("Invited moderators", null, {
 						hk: "2UdpbF"
-					})), r.a.createElement(Ee, null, e.invitedModeratorsList.map(t => r.a.createElement(be, {
+					})), r.a.createElement(ve, null, e.invitedModeratorsList.map(t => r.a.createElement(ge, {
 						key: t.id,
 						moderator: t,
 						moderatorType: k.c.Invited,
 						onClick: () => this.onToggleRemovalModal(t),
 						subredditId: e.subredditId
-					}))), e.isConfirmModalOpen && t.selectedModerator && r.a.createElement($.a, {
+					}))), e.isConfirmModalOpen && t.selectedModerator && r.a.createElement(ee.a, {
 						actionText: a.fbt._("Remove", null, {
 							hk: "nUCi0"
 						}),
@@ -13901,62 +13908,62 @@
 						toggleModal: this.onToggleRemovalModal,
 						onCancel: s,
 						onClose: s,
-						trackClick: () => this.props.sendEvent(ne("remove"))
+						trackClick: () => this.props.sendEvent(ae("remove"))
 					}))
 				}
 			}
-			var _e = Object(i.b)(ve, (e, {
+			var ke = Object(i.b)(Ce, (e, {
 					subredditId: t
 				}) => ({
 					removeInvitedModerator: s => e(Object(p.j)(t, s)),
 					toggleConfirmUserActionModal: () => e(Object(m.i)("ModerationPage--Modal--RemoveModeratorConfirmation"))
-				}))(Object(ee.c)(Ce)),
-				ke = s("./src/reddit/components/ModeratorsList/InvitePendingModal.m.less"),
-				ye = s.n(ke);
+				}))(Object(te.c)(_e)),
+				ye = s("./src/reddit/components/ModeratorsList/InvitePendingModal.m.less"),
+				Oe = s.n(ye);
 			const {
-				fbt: Oe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Se = Object(i.b)(null, (e, {
+				fbt: Se
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), we = Object(i.b)(null, (e, {
 				subredditId: t
 			}) => ({
 				acceptInvite: () => e(Object(p.a)(t)),
 				declineInvite: () => e(Object(p.c)(t))
-			})), we = c.a.wrapped(A.o, "ModalText", ye.a), je = c.a.wrapped(we, "ModalTextBold", ye.a), Te = c.a.wrapped(C.i, "PrimaryButton", ye.a), Ie = c.a.wrapped(C.l, "SecondaryButton", ye.a), Ne = c.a.div("Section", ye.a), Pe = c.a.img("Image", ye.a), Me = c.a.wrapped(A.k, "ModalMain", ye.a);
-			var Re = Object(R.a)(Se(e => r.a.createElement(A.d, null, r.a.createElement(Me, null, r.a.createElement(B.a, null, r.a.createElement("div", null), r.a.createElement(D.a, {
+			})), je = c.a.wrapped(L.o, "ModalText", Oe.a), Te = c.a.wrapped(je, "ModalTextBold", Oe.a), Ie = c.a.wrapped(C.i, "PrimaryButton", Oe.a), Ne = c.a.wrapped(C.l, "SecondaryButton", Oe.a), Pe = c.a.div("Section", Oe.a), Me = c.a.img("Image", Oe.a), Re = c.a.wrapped(L.k, "ModalMain", Oe.a);
+			var Ae = Object(A.a)(we(e => r.a.createElement(L.d, null, r.a.createElement(Re, null, r.a.createElement(H.a, null, r.a.createElement("div", null), r.a.createElement(U.a, {
 					onClick: e.toggleModal
-				}, r.a.createElement(A.b, null))), r.a.createElement(Ne, null, r.a.createElement(Pe, {
+				}, r.a.createElement(L.b, null))), r.a.createElement(Pe, null, r.a.createElement(Me, {
 					src: `${n.a.assetPath}/img/snoo-success@2x.png`
-				})), r.a.createElement(je, null, Oe._("Congrats!", null, {
+				})), r.a.createElement(Te, null, Se._("Congrats!", null, {
 					hk: "T4Ccw"
-				})), r.a.createElement(we, null, Oe._("You are invited to become a moderator!", null, {
+				})), r.a.createElement(je, null, Se._("You are invited to become a moderator!", null, {
 					hk: "1jRLWz"
-				}))), r.a.createElement(A.f, null, r.a.createElement(Ie, {
+				}))), r.a.createElement(L.f, null, r.a.createElement(Ne, {
 					onClick: t => {
 						e.toggleModal(), e.declineInvite(), e.sendEventWithName("declineinvite")()
 					},
 					"data-redditstyle": !0
-				}, Oe._("Decline", null, {
+				}, Se._("Decline", null, {
 					hk: "1iOsJe"
-				})), r.a.createElement(Te, {
+				})), r.a.createElement(Ie, {
 					onClick: t => {
 						e.toggleModal(), e.acceptInvite(), e.sendEventWithName("acceptinvite")()
 					},
 					"data-redditstyle": !0
-				}, Oe._("Accept", null, {
+				}, Se._("Accept", null, {
 					hk: "2fkYc4"
 				})))))),
-				Ae = s("./src/reddit/components/ModeratorsList/ResignAsModeratorModal/index.m.less"),
-				Le = s.n(Ae);
+				Le = s("./src/reddit/components/ModeratorsList/ResignAsModeratorModal/index.m.less"),
+				Fe = s.n(Le);
 			const {
-				fbt: Fe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), De = Object(i.b)(null, (e, {
+				fbt: De
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ue = Object(i.b)(null, (e, {
 				subredditId: t,
 				userId: s,
 				after: n,
 				before: a
 			}) => ({
 				removeModerator: () => e(Object(p.k)(t, s, n, a))
-			})), Ue = c.a.wrapped(C.i, "PrimaryButton", Le.a);
-			class Be extends r.a.Component {
+			})), Be = c.a.wrapped(C.i, "PrimaryButton", Fe.a);
+			class He extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onRemove = () => {
 						this.props.removeModerator(), this.props.sendEventWithName("resign")(), this.props.toggleModal()
@@ -13966,34 +13973,34 @@
 					const {
 						props: e
 					} = this;
-					return r.a.createElement(A.d, null, r.a.createElement(A.h, null, r.a.createElement(B.a, null, r.a.createElement(A.p, null, Fe._("Leave as mod", null, {
+					return r.a.createElement(L.d, null, r.a.createElement(L.h, null, r.a.createElement(H.a, null, r.a.createElement(L.p, null, De._("Leave as mod", null, {
 						hk: "3ajWeG"
-					})), r.a.createElement(D.a, {
+					})), r.a.createElement(U.a, {
 						onClick: e.toggleModal
-					}, r.a.createElement(A.b, null)))), r.a.createElement(A.k, null, r.a.createElement(A.o, null, Fe._("Once you leave as a mod, you will lose mod permissions and will be unable to access any mod tools for this community. Are you sure you wish to leave as a mod of this community?", null, {
+					}, r.a.createElement(L.b, null)))), r.a.createElement(L.k, null, r.a.createElement(L.o, null, De._("Once you leave as a mod, you will lose mod permissions and will be unable to access any mod tools for this community. Are you sure you wish to leave as a mod of this community?", null, {
 						hk: "4qm9md"
-					}))), r.a.createElement(A.f, null, r.a.createElement(A.a, {
+					}))), r.a.createElement(L.f, null, r.a.createElement(L.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
-					}, Fe._("Cancel", null, {
+					}, De._("Cancel", null, {
 						hk: "2TSLl5"
-					})), r.a.createElement(Ue, {
+					})), r.a.createElement(Be, {
 						onClick: this.onRemove,
 						"data-redditstyle": !0
-					}, Fe._("Leave", null, {
+					}, De._("Leave", null, {
 						hk: "2ZHZVX"
 					}))))
 				}
 			}
-			var He = Object(R.a)(De(Be)),
-				We = s("./src/reddit/components/ModeratorsList/index.m.less"),
-				Ve = s.n(We);
-			const qe = c.a.div("ListContainer", Ve.a),
-				Ge = c.a.wrapped(C.l, "SecondaryButton", Ve.a),
-				ze = Object(v.t)({
+			var We = Object(A.a)(Ue(He)),
+				Ve = s("./src/reddit/components/ModeratorsList/index.m.less"),
+				qe = s.n(Ve);
+			const Ge = c.a.div("ListContainer", qe.a),
+				ze = c.a.wrapped(C.l, "SecondaryButton", qe.a),
+				Ke = Object(v.t)({
 					currentPageUrl: v.e
 				}),
-				Ke = Object(d.c)({
+				Qe = Object(d.c)({
 					currentUser: N.i,
 					nextAfterToken: (e, {
 						subredditId: t
@@ -14042,7 +14049,7 @@
 					searchPending: e => !!e.pages.modHub.moderators.search.api.pending,
 					searchResult: e => e.pages.modHub.moderators.search.result
 				}),
-				Qe = Object(i.b)(Ke, (e, {
+				Xe = Object(i.b)(Qe, (e, {
 					subredditId: t
 				}) => ({
 					searchForModerator: s => e(Object(p.h)(t, s)),
@@ -14050,9 +14057,9 @@
 					toggleInvitePendingModal: () => e(Object(m.i)("ModerationPage--Modal--InvitePending")),
 					toggleResignAsModModal: () => e(Object(m.i)("ModerationPage--Modal--Resign"))
 				})),
-				Xe = c.a.div("EditableTitle", Ve.a),
-				Je = c.a.wrapped(E.a, "UsersLoading", Ve.a);
-			class Ye extends r.a.Component {
+				Je = c.a.div("EditableTitle", qe.a),
+				Ye = c.a.wrapped(E.a, "UsersLoading", qe.a);
+			class Ze extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = k.a, this.toggleModal = (e, t) => () => {
 						this.setState({
@@ -14068,7 +14075,7 @@
 					}), this.isButtonEnabled = (e, t) => !!(e && e.length > 0 && t), this.isModeratorsListPaginated = () => !(!this.props.nextBeforeToken && !this.props.nextAfterToken), this.renderEditableList = e => {
 						const t = !(!e.nextBeforeEditableToken && !e.nextAfterEditableToken),
 							s = e.isEditableListPending || e.isModeratorListPending;
-						return r.a.createElement(r.a.Fragment, null, r.a.createElement(Xe, null, a.fbt._("You can edit these moderators", null, {
+						return r.a.createElement(r.a.Fragment, null, r.a.createElement(Je, null, a.fbt._("You can edit these moderators", null, {
 							hk: "1KTZtm"
 						})), t && r.a.createElement(x.a, null, r.a.createElement(b.a, {
 							prevButtonEnabled: this.isButtonEnabled(e.editableModeratorsList, e.nextBeforeEditableToken),
@@ -14083,13 +14090,13 @@
 								afterEditable: e.nextAfterEditableToken,
 								before: e.before
 							})
-						})), r.a.createElement(qe, null, e.editableModeratorsList && e.editableModeratorsList.length > 0 ? e.editableModeratorsList.map(e => r.a.createElement(be, {
+						})), r.a.createElement(Ge, null, e.editableModeratorsList && e.editableModeratorsList.length > 0 ? e.editableModeratorsList.map(e => r.a.createElement(ge, {
 							key: e.id,
 							moderator: e,
 							moderatorType: k.c.Editable,
 							onClick: this.toggleModal(e.id, e.username),
 							subredditId: this.props.subredditId
-						})) : s ? r.a.createElement(Je, null) : null))
+						})) : s ? r.a.createElement(Ye, null) : null))
 					}
 				}
 				componentDidMount() {
@@ -14100,7 +14107,7 @@
 						props: e,
 						state: t
 					} = this, s = !!e.moderatorPermissions, o = Object(_.a)(e.moderatorPermissions);
-					return r.a.createElement(r.a.Fragment, null, s && r.a.createElement(g.c, null, r.a.createElement(Ge, {
+					return r.a.createElement(r.a.Fragment, null, s && r.a.createElement(g.c, null, r.a.createElement(ze, {
 						onClick: e.toggleResignAsModModal
 					}, a.fbt._("Leave as mod", null, {
 						hk: "3TwqTg"
@@ -14133,19 +14140,19 @@
 						searchPending: e.searchPending,
 						searchTerm: t.searchTerm,
 						noResultsFound: !e.searchResult
-					}, e.searchResult && r.a.createElement(be, {
+					}, e.searchResult && r.a.createElement(ge, {
 						moderator: e.searchResult,
 						moderatorType: e.searchResult.isEditable ? k.c.Editable : void 0,
 						onClick: e.searchResult.isEditable ? this.toggleModal(e.searchResult.id, e.searchResult.username) : void 0,
 						subredditId: e.subredditId
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(qe, null, e.moderatorsList && e.moderatorsList.length > 0 ? e.moderatorsList.map(e => r.a.createElement(be, {
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(Ge, null, e.moderatorsList && e.moderatorsList.length > 0 ? e.moderatorsList.map(e => r.a.createElement(ge, {
 						key: e.id,
 						moderator: e,
 						subredditId: this.props.subredditId
-					})) : e.isModeratorListPending ? r.a.createElement(Je, null) : null), o && r.a.createElement(r.a.Fragment, null, this.renderEditableList(e), r.a.createElement(_e, {
+					})) : e.isModeratorListPending ? r.a.createElement(Ye, null) : null), o && r.a.createElement(r.a.Fragment, null, this.renderEditableList(e), r.a.createElement(ke, {
 						sendEventWithName: e.sendEventWithName,
 						subredditId: e.subredditId
-					})))), e.isAddUserModalOpen && r.a.createElement(Z, {
+					})))), e.isAddUserModalOpen && r.a.createElement($, {
 						ignoreDefaultFocus: !0,
 						after: e.afterEditable,
 						before: e.beforeEditable,
@@ -14157,13 +14164,13 @@
 						username: t.username,
 						user: t.userId && e.editableModerators ? e.editableModerators[t.userId] : null,
 						withOverlay: !0
-					}), e.currentUser && e.isResignAsModeratorModalOpen && r.a.createElement(He, {
+					}), e.currentUser && e.isResignAsModeratorModalOpen && r.a.createElement(We, {
 						sendEventWithName: e.sendEventWithName,
 						subredditId: e.subredditId,
 						toggleModal: e.toggleResignAsModModal,
 						userId: e.currentUser.id,
 						withOverlay: !0
-					}), e.isInvitePendingModalOpen && r.a.createElement(Re, {
+					}), e.isInvitePendingModalOpen && r.a.createElement(Ae, {
 						sendEventWithName: e.sendEventWithName,
 						subredditId: e.subredditId,
 						toggleModal: e.toggleInvitePendingModal,
@@ -14171,7 +14178,7 @@
 					}))
 				}
 			}
-			t.a = ze(Qe(Ye))
+			t.a = Ke(Xe(Ze))
 		},
 		"./src/reddit/components/MultiOptionSelect/OptionSearchBar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -24856,4 +24863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.05cda3089af851881f2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.dadfb7717498640faaab.js.map
