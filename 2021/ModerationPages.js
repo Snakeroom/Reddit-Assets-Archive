@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e8239eb182e54cb712d0.js
-// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.cf2b497cf6977af89b70.js
+// Retrieved at 4/13/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -13669,8 +13669,8 @@
 							});
 						case "chat_operator":
 						case W.c.chatOperator:
-							return a.fbt._("Delete messages, remove users, and lock chats.", null, {
-								hk: "2MErr6"
+							return a.fbt._("Remove messages, remove users, and lock chats.", null, {
+								hk: "TFYA1"
 							});
 						case W.c.flair:
 							return a.fbt._("Create and manage user and post flair.", null, {
@@ -24863,4 +24863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e8239eb182e54cb712d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cf2b497cf6977af89b70.js.map
