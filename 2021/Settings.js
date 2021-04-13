@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.5773c37dd25e001d1aad.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.cf6a2b2007fd6e17a3ad.js
+// Retrieved at 4/13/2021, 7:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -8104,9 +8104,13 @@
 						} = this.props;
 						t ? window.location.href = e : n()
 					}, this.disconnectFromGoogle = () => {
-						this.iframeRef && this.iframeRef.contentWindow.postMessage({
+						var e, t;
+						const {
+							hasGoogleIdentity: n
+						} = this.props;
+						n && (null === (t = null === (e = this.iframeRef) || void 0 === e ? void 0 : e.current) || void 0 === t || t.contentWindow.postMessage({
 							type: "unlinkGoogle"
-						}, Object(be.a)())
+						}, Object(be.a)()))
 					}, this.deactivateAccount = () => {
 						const {
 							openSSOCreatePasswordForLinkGoogleModal: e,
@@ -10661,4 +10665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5773c37dd25e001d1aad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cf6a2b2007fd6e17a3ad.js.map
