@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.a8f011017cf5ff4a31c0.js
-// Retrieved at 4/12/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.00a7dbc4e24ca0789808.js
+// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -81,8 +81,8 @@
 				d = n("./src/reddit/actions/subscription/constants.ts"),
 				l = n("./src/reddit/actions/toaster.ts"),
 				u = n("./src/reddit/constants/posts.ts"),
-				f = n("./src/lib/makeApiRequest/index.ts"),
-				m = n("./src/lib/omitHeaders/index.ts"),
+				m = n("./src/lib/makeApiRequest/index.ts"),
+				f = n("./src/lib/omitHeaders/index.ts"),
 				p = n("./src/reddit/constants/headers.ts");
 			var b = n("./src/graphql/operations/SubscribedSubreddits.json"),
 				h = n("./src/lib/makeGqlRequest/index.ts"),
@@ -194,7 +194,7 @@
 							subredditIds: t,
 							subredditNames: n,
 							subscribe: i
-						}) => Object(f.a)(Object(m.a)(e, [p.a]), {
+						}) => Object(m.a)(Object(f.a)(e, [p.a]), {
 							method: s.cb.POST,
 							endpoint: Object(v.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
@@ -261,7 +261,7 @@
 						C = () => Object(w.gb)(n(), {
 							identifier: g
 						});
-					(C() || (await t(F([g], !0)), C())) && ((await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
+					(C() || (await t(F([g], !0)), C())) && ((await ((e, t, n) => Object(m.a)(Object(f.a)(e, [p.a]), {
 						method: s.cb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
@@ -295,7 +295,7 @@
 						makeFavorite: c,
 						multiredditPath: e,
 						multiredditsModelsState: o
-					})), (await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
+					})), (await ((e, t, n) => Object(m.a)(Object(f.a)(e, [p.a]), {
 						method: s.cb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
@@ -333,7 +333,7 @@
 						follow: u,
 						multiredditPath: e,
 						multiredditsModelsState: a
-					})), (await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
+					})), (await ((e, t, n) => Object(m.a)(Object(f.a)(e, [p.a]), {
 						method: s.cb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
@@ -411,8 +411,8 @@
 				d = n("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = n("./src/reddit/helpers/trackers/authorHovercard.ts");
-			const f = e => Object(a.a)(e.id) ? e.belongsTo.id : e.subredditId;
-			class m extends s.a.Component {
+			const m = e => Object(a.a)(e.id) ? e.belongsTo.id : e.subredditId;
+			class f extends s.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(Object(u.f)(this.props.postOrComment.id))
 				}
@@ -436,14 +436,14 @@
 						contextId: e.postOrComment.id,
 						hoverId: n,
 						sendEvent: e.sendEvent,
-						subredditId: f(e.postOrComment),
+						subredditId: m(e.postOrComment),
 						tooltipId: t,
 						tooltipType: e.tooltipType,
 						userName: i
 					}))
 				}
 			}
-			t.default = Object(l.c)(m)
+			t.default = Object(l.c)(f)
 		},
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
@@ -461,9 +461,9 @@
 				d = n("./node_modules/lodash/omit.js"),
 				l = n.n(d),
 				u = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
-				f = n("./src/reddit/components/ResizeSensor/index.tsx"),
-				m = n("./src/reddit/components/InboxTooltip/index.m.less"),
-				p = n.n(m);
+				m = n("./src/reddit/components/ResizeSensor/index.tsx"),
+				f = n("./src/reddit/components/InboxTooltip/index.m.less"),
+				p = n.n(f);
 			const b = 3;
 			class h extends o.a.Component {
 				constructor() {
@@ -490,7 +490,7 @@
 						markNotificationAsRead: c,
 						notification: d,
 						setActiveOverflowMenuId: l,
-						onItemClick: m
+						onItemClick: f
 					} = this.props, h = r + 1 <= b;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						ref: this.ref,
@@ -506,8 +506,8 @@
 						markNotificationAsRead: c,
 						notification: d,
 						setActiveOverflowMenuId: l,
-						onItemClick: m
-					}), !!h && o.a.createElement(f.a, {
+						onItemClick: f
+					}), !!h && o.a.createElement(m.a, {
 						onResize: this.handleResize
 					})))
 				}
@@ -613,10 +613,10 @@
 					sendInboxClickSettings: l
 				}) => {
 					const u = !!a,
-						f = Object(s.useCallback)(() => {
+						m = Object(s.useCallback)(() => {
 							e(), t()
 						}, [e, t]),
-						m = Object(s.useCallback)(() => {
+						f = Object(s.useCallback)(() => {
 							l(), t()
 						}, [l, t]);
 					return o.a.createElement("nav", {
@@ -633,7 +633,7 @@
 						className: Object(r.a)(p.a.messagesLink, {
 							[p.a.mActive]: u
 						}),
-						onClick: f,
+						onClick: m,
 						to: u ? "/message/unread" : "/message/messages"
 					}, i.fbt._("Messages", null, {
 						hk: "hulKY"
@@ -646,7 +646,7 @@
 						onClick: n
 					}, o.a.createElement(L, null)), o.a.createElement(w.a, {
 						className: p.a.navLink,
-						onClick: m,
+						onClick: f,
 						to: "/settings/notifications"
 					}, o.a.createElement(R, null))))
 				},
@@ -837,6 +837,53 @@
 				text: "_2bba9zuFqUwxMhGdswkU86"
 			}
 		},
+		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			}));
+			var i = n("./node_modules/react/index.js"),
+				s = n.n(i),
+				o = n("./src/higherOrderComponents/asTooltip.tsx"),
+				r = n("./src/reddit/constants/elementIds.ts"),
+				a = n("./src/reddit/contexts/InsideOverlay.tsx");
+
+			function c() {
+				return (c = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+
+			function d(e, t) {
+				const n = Object(o.a)(e, t);
+				class i extends s.a.PureComponent {
+					constructor() {
+						super(...arguments), this.state = {
+							container: null
+						}
+					}
+					componentDidMount() {
+						if (this.props.isOverlay) {
+							const e = document.getElementById(r.d);
+							this.setState({
+								container: e
+							})
+						}
+					}
+					render() {
+						return s.a.createElement(n, c({}, this.props, {
+							container: this.state.container,
+							excludeContainerPosition: this.props.isOverlay
+						}))
+					}
+				}
+				return Object(a.b)(i)
+			}
+		},
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -891,9 +938,9 @@
 			})), n.d(t, "k", (function() {
 				return u
 			})), n.d(t, "f", (function() {
-				return f
-			})), n.d(t, "l", (function() {
 				return m
+			})), n.d(t, "l", (function() {
+				return f
 			})), n.d(t, "m", (function() {
 				return p
 			})), n.d(t, "p", (function() {
@@ -970,7 +1017,7 @@
 						}
 					})
 				},
-				f = ({
+				m = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
@@ -989,7 +1036,7 @@
 						type: i
 					}
 				}),
-				m = ({
+				f = ({
 					badgeCount: e,
 					tab: t
 				}) => n => ({
@@ -1391,9 +1438,9 @@
 			})), n.d(t, "e", (function() {
 				return u
 			})), n.d(t, "f", (function() {
-				return f
-			})), n.d(t, "g", (function() {
 				return m
+			})), n.d(t, "g", (function() {
+				return f
 			})), n.d(t, "a", (function() {
 				return p
 			}));
@@ -1432,8 +1479,8 @@
 				u = (e, {
 					subredditId: t
 				}) => e.features.banned.loadMore[t],
-				f = e => e.features.banned.search.api.pending,
-				m = e => e.features.banned.search.result,
+				m = e => e.features.banned.search.api.pending,
+				f = e => e.features.banned.search.result,
 				p = e => e.features.banned.inContext
 		},
 		"./src/reddit/selectors/experiments/econ/avatarMarketing.ts": function(e, t, n) {
@@ -1447,4 +1494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a8f011017cf5ff4a31c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.00a7dbc4e24ca0789808.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.1af8700a10b7074a16d1.js
-// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.5f941dc0cfdade3b9b6e.js
+// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5501,14 +5501,14 @@
 			const rt = 32,
 				nt = 250,
 				ot = Object(i.c)({
-					apiError: Xe.d,
-					apiPending: Xe.e,
-					loadMore: Xe.f,
+					apiError: Xe.e,
+					apiPending: Xe.f,
+					loadMore: Xe.g,
 					viewportDataLoaded: Ze.a
 				}),
 				it = [a.Qb.Subreddits, a.Qb.Users],
 				at = Object(o.b)(ot, e => ({
-					onLoadMore: () => e(Object(c.g)(it))
+					onLoadMore: () => e(Object(c.k)(it))
 				}));
 			class ct extends n.a.Component {
 				constructor() {
@@ -5645,10 +5645,10 @@
 				pageLayer: e => e,
 				queryParams: k.T
 			}), xt = Object(i.c)({
-				apiError: Xe.d,
-				apiPending: Xe.e,
+				apiError: Xe.e,
+				apiPending: Xe.f,
 				identifiers: Xe.b,
-				loadMore: Xe.f
+				loadMore: Xe.g
 			}), ft = 36, gt = 5, vt = Object(o.b)(xt), yt = (e, t) => () => e(e => ({
 				...Object(Oe.c)(e),
 				source: "search",
@@ -6924,8 +6924,8 @@
 					unitName: En.h
 				},
 				jn = Object(i.c)({
-					hasCommunityResults: (e, t) => !!Object(Xe.e)(e, t) || !Object(Xe.d)(e, t) && Object(Xe.b)(e, t).length > 0,
-					hasPostResults: (e, t) => !!Object(Xe.e)(e, t) || !Object(Xe.d)(e, t) && Object(Rt.J)(e, {
+					hasCommunityResults: (e, t) => !!Object(Xe.f)(e, t) || !Object(Xe.e)(e, t) && Object(Xe.b)(e, t).length > 0,
+					hasPostResults: (e, t) => !!Object(Xe.f)(e, t) || !Object(Xe.e)(e, t) && Object(Rt.J)(e, {
 						...t
 					}).length > 0,
 					isInIcons2020: On.a,
@@ -6941,10 +6941,10 @@
 							s = e.searchDiscoveryUnits.order[t];
 						return s || g
 					},
-					viewTreatment: Xe.h
+					viewTreatment: Xe.i
 				}),
 				In = Object(o.b)(jn, e => ({
-					morePostsRequested: () => e(c.g([a.Qb.Posts]))
+					morePostsRequested: () => e(c.k([a.Qb.Posts]))
 				})),
 				Sn = Object(k.t)();
 			class Pn extends n.a.PureComponent {
@@ -7360,7 +7360,7 @@
 				},
 				relatedQueries: (e, {
 					searchOptions: t
-				}) => Object(M.g)(e, t.q)
+				}) => Object(M.h)(e, t.q)
 			});
 			t.a = Object(o.b)(D)(e => n.a.createElement(y.a, {
 				className: e.className
@@ -9246,7 +9246,7 @@
 					subreddit: (e, t) => Object(S.A)(e, {
 						subredditName: t.match.params.subredditName
 					}),
-					viewTreatment: I.h
+					viewTreatment: I.i
 				}),
 				F = e => ({
 					searchViewedTrigger: () => e(Object(u.f)())
@@ -9466,4 +9466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.1af8700a10b7074a16d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5f941dc0cfdade3b9b6e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.927106ed52bb176ed7a9.js
-// Retrieved at 4/1/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.7ffee356252cc29b560f.js
+// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -26437,6 +26437,128 @@
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
+		"./node_modules/react-router-dom/esm/react-router-dom.js": function(e, t, n) {
+			"use strict";
+
+			function r(e, t) {
+				e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t
+			}
+			n.d(t, "a", (function() {
+				return d
+			}));
+			var o = n("./node_modules/react/index.js"),
+				i = n.n(o),
+				s = n("./node_modules/react-router/esm/react-router.js"),
+				a = n("./node_modules/history/esm/history.js");
+			n("./node_modules/react-router-dom/node_modules/prop-types/index.js");
+
+			function u() {
+				return (u = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+
+			function c(e, t) {
+				if (null == e) return {};
+				var n, r, o = {},
+					i = Object.keys(e);
+				for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+				return o
+			}
+			var l = n("./node_modules/tiny-invariant/dist/tiny-invariant.esm.js");
+			i.a.Component;
+			i.a.Component;
+			var d = function(e) {
+				function t() {
+					return e.apply(this, arguments) || this
+				}
+				r(t, e);
+				var n = t.prototype;
+				return n.handleClick = function(e, t) {
+					try {
+						this.props.onClick && this.props.onClick(e)
+					} catch (n) {
+						throw e.preventDefault(), n
+					}
+					e.defaultPrevented || 0 !== e.button || this.props.target && "_self" !== this.props.target || function(e) {
+						return !!(e.metaKey || e.altKey || e.ctrlKey || e.shiftKey)
+					}(e) || (e.preventDefault(), (this.props.replace ? t.replace : t.push)(this.props.to))
+				}, n.render = function() {
+					var e = this,
+						t = this.props,
+						n = t.innerRef,
+						r = (t.replace, t.to),
+						o = c(t, ["innerRef", "replace", "to"]);
+					return i.a.createElement(s.g.Consumer, null, (function(t) {
+						t || Object(l.default)(!1);
+						var s = "string" == typeof r ? Object(a.c)(r, null, null, t.location) : r,
+							c = s ? t.history.createHref(s) : "";
+						return i.a.createElement("a", u({}, o, {
+							onClick: function(n) {
+								return e.handleClick(n, t.history)
+							},
+							href: c,
+							ref: n
+						}))
+					}))
+				}, t
+			}(i.a.Component)
+		},
+		"./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, n) {
+			"use strict";
+			var r = n("./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+
+			function o() {}
+
+			function i() {}
+			i.resetWarningCache = o, e.exports = function() {
+				function e(e, t, n, o, i, s) {
+					if (s !== r) {
+						var a = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+						throw a.name = "Invariant Violation", a
+					}
+				}
+
+				function t() {
+					return e
+				}
+				e.isRequired = e;
+				var n = {
+					array: e,
+					bool: e,
+					func: e,
+					number: e,
+					object: e,
+					string: e,
+					symbol: e,
+					any: e,
+					arrayOf: t,
+					element: e,
+					elementType: e,
+					instanceOf: t,
+					node: e,
+					objectOf: t,
+					oneOf: t,
+					oneOfType: t,
+					shape: t,
+					exact: t,
+					checkPropTypes: i,
+					resetWarningCache: o
+				};
+				return n.PropTypes = n, n
+			}
+		},
+		"./node_modules/react-router-dom/node_modules/prop-types/index.js": function(e, t, n) {
+			e.exports = n("./node_modules/react-router-dom/node_modules/prop-types/factoryWithThrowingShims.js")()
+		},
+		"./node_modules/react-router-dom/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, n) {
+			"use strict";
+			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+		},
 		"./node_modules/react-router-redux/es/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -34567,4 +34689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.927106ed52bb176ed7a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.7ffee356252cc29b560f.js.map

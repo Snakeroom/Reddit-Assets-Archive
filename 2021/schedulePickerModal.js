@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.5f1ee246d6bcb2006428.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.f4c9bcb1ca1e9e0dbc71.js
+// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -476,8 +476,8 @@
 					}
 				},
 				O = l.a.div("Container", k.a),
-				w = l.a.div("Content", k.a),
-				M = l.a.div("TitleRow", k.a),
+				M = l.a.div("Content", k.a),
+				w = l.a.div("TitleRow", k.a),
 				j = l.a.hr("Hr", k.a),
 				F = l.a.wrapped(E.a, "TimeInput", k.a),
 				I = l.a.div("TimeSelectionRow", k.a),
@@ -607,7 +607,7 @@
 					const {
 						shouldShowSubmitTime: e
 					} = this.props, t = this.getValidationError();
-					return o.a.createElement(O, null, o.a.createElement(w, null, o.a.createElement(M, null, a.fbt._("When is the event?", null, {
+					return o.a.createElement(O, null, o.a.createElement(M, null, o.a.createElement(w, null, a.fbt._("When is the event?", null, {
 						hk: "2fTD7f"
 					})), o.a.createElement(I, null, a.fbt._("{start time}{to}{end time}", [a.fbt._param("start time", o.a.createElement("fieldset", null, o.a.createElement("legend", null, a.fbt._("Start time", null, {
 						hk: "3nqplI"
@@ -927,6 +927,7 @@
 			t.a = e => s.a.createElement("svg", {
 				className: e.className,
 				onClick: e.onClick,
+				onMouseUp: e.onMouseUp,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 40 40"
 			}, s.a.createElement("path", {
@@ -935,4 +936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.5f1ee246d6bcb2006428.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.f4c9bcb1ca1e9e0dbc71.js.map

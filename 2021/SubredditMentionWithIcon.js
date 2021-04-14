@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.bd44c915fdddc331cbef.js
-// Retrieved at 4/8/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.fc7cd6d273f34c9a1a45.js
+// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -10,33 +10,6 @@
 		},
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
-		},
-		"./src/lib/prettyPrintNumber/index.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return n
-			})), s.d(t, "b", (function() {
-				return u
-			}));
-			const n = e => {
-					const t = e.split(".");
-					return [t[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",")].concat(t.slice(1)).join(".")
-				},
-				i = 1e3,
-				r = 100 * i,
-				o = 10 * r,
-				c = 100 * o,
-				a = 10 * c,
-				d = 100 * a,
-				l = 51;
-
-			function u(e, t) {
-				return (null == t ? void 0 : t.displayFull) ? n(e.toString()) : e >= d - l ? `${Math.floor(e/a)}b` : e >= a - l && e < d - l ? `${(e/a).toFixed(1)}b` : e >= c - l && e < a - l ? `${Math.floor(e/o)}m` : e >= o - l && e < c - l ? `${(e/o).toFixed(1)}m` : e >= r - l && e < o - l ? `${Math.floor(e/i)}k` : e >= i && e < r - l ? (null == t ? void 0 : t.roundDown) ? `${b(e,i)}k` : `${(e/i).toFixed(1)}k` : String(e)
-			}
-			const b = (e, t, s = 1) => {
-				const n = Math.pow(10, s);
-				return (Math.floor(e / (t / n)) / n).toFixed(s)
-			}
 		},
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
 			"use strict";
@@ -961,7 +934,7 @@
 				Z = Object(a.c)({
 					isFakeSubreddit: G.x
 				});
-			var $ = Q(Object(c.b)(Z)(({
+			var J = Q(Object(c.b)(Z)(({
 					className: e,
 					showSubreddit: t,
 					...s
@@ -993,8 +966,8 @@
 						className: Object(P.a)(z.a.thumbnail, n)
 					}))))
 				})),
-				J = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
-				Y = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				Y = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
+				$ = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				X = s("./src/reddit/helpers/trackers/subredditMentions.ts"),
 				ee = s("./src/reddit/icons/svgs/Top/index.tsx"),
 				te = s("./src/reddit/selectors/user.ts"),
@@ -1074,11 +1047,11 @@
 						className: ne.a.subredditMentionContainer,
 						ref: this.subredditMentionElement,
 						onClick: this.handleOnClick
-					}, o.a.createElement(J.a, {
+					}, o.a.createElement(Y.a, {
 						href: `/r/${e}/`
 					}, o.a.createElement("span", {
 						className: ne.a.subredditIconContainer
-					}, o.a.createElement(J.b, {
+					}, o.a.createElement(Y.b, {
 						subredditOrProfile: void 0
 					})), `r/${e}`))
 				}
@@ -1104,11 +1077,11 @@
 						id: re(d),
 						onClick: this.handleOnClick,
 						ref: this.subredditMentionElement
-					}, o.a.createElement(J.a, {
+					}, o.a.createElement(Y.a, {
 						href: `/r/${a}/`
 					}, o.a.createElement("span", {
 						className: ne.a.subredditIconContainer
-					}, o.a.createElement(J.b, {
+					}, o.a.createElement(Y.b, {
 						subredditOrProfile: m ? void 0 : r
 					})), `r/${a}`), s && !p && o.a.createElement(k.a, {
 						defaultTooltipPosition: "right",
@@ -1139,16 +1112,16 @@
 						key: e,
 						postId: e,
 						thumbnailOnClick: this.onClickPost
-					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement($, {
+					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(J, {
 						isLoading: !0
-					}), o.a.createElement($, {
+					}), o.a.createElement(J, {
 						isLoading: !0
-					}), o.a.createElement($, {
+					}), o.a.createElement(J, {
 						isLoading: !0
 					})))))
 				}
 			}
-			t.default = ce(Object(Y.c)(de))
+			t.default = ce(Object($.c)(de))
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1798,7 +1771,7 @@
 			})), s.d(t, "e", (function() {
 				return Z
 			})), s.d(t, "s", (function() {
-				return Y
+				return $
 			})), s.d(t, "m", (function() {
 				return X
 			})), s.d(t, "r", (function() {
@@ -2079,7 +2052,7 @@
 					action: "click",
 					noun: "overflow_menu"
 				}),
-				$ = () => ({
+				J = () => ({
 					id: "xd_focus_verticals",
 					unitType: d.f.Listing,
 					experiment: "",
@@ -2090,29 +2063,29 @@
 					surface: d.e.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				J = (e, t, s) => b.actionInfo(e, {
+				Y = (e, t, s) => b.actionInfo(e, {
 					position: s
 				}),
-				Y = (e, t, s) => {
-					const n = $();
+				$ = (e, t, s) => {
+					const n = J();
 					return e => ({
 						...x(e, n),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						subreddit: b.subredditById(e, t)
 					})
 				},
 				X = (e, t, s) => {
-					const n = $();
+					const n = J();
 					return e => ({
 						...I(e, n, t),
-						actionInfo: J(e, 0, s)
+						actionInfo: Y(e, 0, s)
 					})
 				},
 				ee = (e, t, s) => {
-					const i = $();
+					const i = J();
 					return e => ({
 						...f(e, i),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: h,
 						action: o.c.VIEW,
@@ -2120,10 +2093,10 @@
 					})
 				},
 				te = (e, t, s) => {
-					const i = $();
+					const i = J();
 					return e => ({
 						...f(e, i),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						post: b.post(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -2131,10 +2104,10 @@
 					})
 				},
 				se = (e, t, s, i) => {
-					const r = $();
+					const r = J();
 					return e => ({
 						...f(e, r),
-						actionInfo: J(e, 0, i),
+						actionInfo: Y(e, 0, i),
 						subreddit: b.subredditById(e, s) || null,
 						post: b.post(e, t) || null,
 						source: h,
@@ -2143,10 +2116,10 @@
 					})
 				},
 				ne = (e, t, s) => {
-					const i = $();
+					const i = J();
 					return e => ({
 						...f(e, i),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -2154,10 +2127,10 @@
 					})
 				},
 				ie = (e, t, s, i) => {
-					const r = $();
+					const r = J();
 					return e => ({
 						...f(e, r),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						post: i ? b.post(e, i) : null,
 						source: h,
@@ -2166,10 +2139,10 @@
 					})
 				},
 				re = (e, t, s, i) => {
-					const r = $();
+					const r = J();
 					return e => ({
 						...f(e, r),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						post: i ? b.post(e, i) : null,
 						source: h,
@@ -2178,10 +2151,10 @@
 					})
 				},
 				oe = (e, t, s) => {
-					const i = $();
+					const i = J();
 					return e => ({
 						...f(e, i),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -2189,10 +2162,10 @@
 					})
 				},
 				ce = (e, t, s) => {
-					const i = $();
+					const i = J();
 					return e => ({
 						...f(e, i),
-						actionInfo: J(e, 0, s),
+						actionInfo: Y(e, 0, s),
 						subreddit: b.subredditById(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -2403,4 +2376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.bd44c915fdddc331cbef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.fc7cd6d273f34c9a1a45.js.map

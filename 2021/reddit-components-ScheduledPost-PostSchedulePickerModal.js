@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.4ebb19e707db3a5dc0a1.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.8365db1cbcfefdd792bc.js
+// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./node_modules/lodash/xorWith.js": function(e, t, n) {
@@ -165,8 +165,8 @@
 			}
 			var E = v,
 				P = n("./src/lib/timezone/index.ts"),
-				N = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx"),
-				M = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx"),
+				M = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx"),
+				N = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx"),
 				w = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.tsx"),
 				j = n("./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.tsx"),
 				A = n("./src/reddit/controls/NumberInput/index.tsx"),
@@ -191,7 +191,7 @@
 						submitMonthDay: l,
 						submitTime: d
 					} = this.props, u = i && e === T.b, m = u && i.frequency === T.d.Weekly, h = u && i.frequency === T.d.Monthly;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(M.a, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(N.a, {
 						className: F.a.frequencyOptionSelector,
 						selectedFrequencyOption: e,
 						submitDate: Object(P.f)(Object(I.a)(c, d)),
@@ -208,7 +208,7 @@
 						className: F.a.customIntervalInput
 					}))], {
 						hk: "3pWn0k"
-					}), o.a.createElement(N.a, {
+					}), o.a.createElement(M.a, {
 						selectedFrequency: i.frequency,
 						onSelect: t
 					})), m && o.a.createElement(j.a, {
@@ -1420,6 +1420,20 @@
 					return !0
 				}
 		},
+		"./src/reddit/icons/svgs/Clear/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				onClick: e.onClick,
+				onMouseUp: e.onMouseUp,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 40 40"
+			}, o.a.createElement("path", {
+				d: "M20 2.5C10.3 2.5 2.5 10.3 2.5 20c0 9.7 7.8 17.5 17.5 17.5S37.5 29.7 37.5 20C37.5 10.3 29.7 2.5 20 2.5zM24.2 27.7L20 23.5l-4.2 4.2c-1.1 1.1-2.5 1.1-3.5 0-1.1-1.1-1.1-2.4 0-3.5l4.2-4.2-4.2-4.2c-1.1-1.1-1.1-2.5 0-3.5 1.1-1.1 2.4-1.1 3.5 0l4.2 4.2 4.2-4.2c1.1-1.1 2.5-1.1 3.5 0 1.1 1.1 1.1 2.4 0 3.5L23.5 20l4.2 4.2c1.1 1.1 1.1 2.5 0 3.5C26.7 28.8 25.3 28.8 24.2 27.7z"
+			}))
+		},
 		"./src/reddit/models/ScheduledPost/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "r", (function() {
@@ -1536,4 +1550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.4ebb19e707db3a5dc0a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.8365db1cbcfefdd792bc.js.map

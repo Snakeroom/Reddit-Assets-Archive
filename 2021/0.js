@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/0.6931ad7b57cffc589149.js
-// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/0.0a5733bc889eac99a474.js
+// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[0], {
 		"./src/reddit/contexts/ApiContext.tsx": function(e, s, t) {
@@ -635,6 +635,7 @@
 			s.a = e => n.a.createElement("svg", {
 				className: e.className,
 				onClick: e.onClick,
+				onMouseUp: e.onMouseUp,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 40 40"
 			}, n.a.createElement("path", {
@@ -5191,4 +5192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.6931ad7b57cffc589149.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/0.0a5733bc889eac99a474.js.map
