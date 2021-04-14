@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0347c38adf882702de84.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.76cf49db66e82bbaca5f.js
+// Retrieved at 4/14/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -805,18 +805,20 @@
 				return I
 			})), s.d(t, "l", (function() {
 				return S
-			})), s.d(t, "c", (function() {
-				return L
-			})), s.d(t, "a", (function() {
-				return T
 			})), s.d(t, "m", (function() {
-				return F
-			})), s.d(t, "i", (function() {
+				return L
+			})), s.d(t, "c", (function() {
+				return T
+			})), s.d(t, "a", (function() {
+				return N
+			})), s.d(t, "n", (function() {
 				return M
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "i", (function() {
 				return A
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return R
+			})), s.d(t, "e", (function() {
+				return D
 			}));
 			var n = s("./node_modules/uuid/index.js"),
 				r = s.n(n),
@@ -971,7 +973,7 @@
 						posts: m,
 						meta: r.meta
 					})), l
-				}, I = Object(a.a)(f.a), S = Object(a.a)(f.i), L = ({
+				}, I = Object(a.a)(f.a), S = Object(a.a)(f.i), L = Object(a.a)(f.j), T = ({
 					subredditId: e
 				}) => async (t, s, {
 					gqlContext: n
@@ -998,24 +1000,26 @@
 						subredditId: e,
 						tournaments: [u]
 					})), u
-				}, T = (e, t) => async (s, n, {
+				}, N = (e, t) => async (s, n, {
 					gqlContext: o
 				}) => {
-					const i = Object(b.b)(n());
-					if (!i) throw new Error("Failed to create prediction post, no prediction drafts attached");
-					const a = await Object(d.b)(o(), {
+					var i;
+					const a = Object(b.b)(n());
+					if (!a) throw new Error("Failed to create prediction post, no prediction drafts attached");
+					const c = await Object(d.b)(o(), {
 							tournamentId: e,
 							isStartImmediately: !0,
 							iKey: `add-dfts-${r.a.v4()}`,
 							subredditId: t,
-							predictionDrafts: i
+							predictionDrafts: a
 						}),
 						{
-							addPredictionDrafts: c
-						} = a.body.data;
-					if (!(null == c ? void 0 : c.tournament)) throw new Error("Failed to create prediction");
-					return c.tournament
-				}, N = Object(a.a)(f.j), F = (e, t, s) => async (n, r, {
+							addPredictionDrafts: l
+						} = c.body.data;
+					if (null === (i = l.errors) || void 0 === i ? void 0 : i.length) throw new Error(l.errors[0].message);
+					if (!(null == l ? void 0 : l.tournament)) throw new Error("Failed to create prediction");
+					return l.tournament
+				}, F = Object(a.a)(f.k), M = (e, t, s) => async (n, r, {
 					gqlContext: o
 				}) => {
 					const i = await Object(d.k)(o(), {
@@ -1026,11 +1030,11 @@
 							updatePredictionTournament: a
 						} = i.body.data;
 					if (!a.tournament) throw new Error("Failed to update prediction name");
-					return n(N({
+					return n(F({
 						subredditId: t,
 						tournament: a.tournament
 					})), a.tournament
-				}, M = (e, t) => async (s, n, {
+				}, A = (e, t) => async (s, n, {
 					gqlContext: r
 				}) => {
 					const o = await Object(d.d)(r(), {
@@ -1040,11 +1044,11 @@
 							endPredictionTournament: i
 						} = o.body.data;
 					if (!i.tournament) throw new Error("Failed to update prediction name");
-					return s(N({
+					return s(F({
 						subredditId: t,
 						tournament: i.tournament
 					})), i.tournament
-				}, A = e => async (t, s, {
+				}, R = e => async (t, s, {
 					gqlContext: n
 				}) => {
 					const r = await Object(d.e)(n(), {
@@ -1056,7 +1060,7 @@
 					} = r.body.data;
 					if (!o.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return o.predictionChipPackages
-				}, R = e => async (t, s, {
+				}, D = e => async (t, s, {
 					gqlContext: n
 				}) => {
 					const r = await Object(d.g)(n(), {
@@ -11329,4 +11333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0347c38adf882702de84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.76cf49db66e82bbaca5f.js.map

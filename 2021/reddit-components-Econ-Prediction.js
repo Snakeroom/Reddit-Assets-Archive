@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c025fed2c0f448dcbacf.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7143ec25c36312ccd25d.js
+// Retrieved at 4/14/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -182,18 +182,20 @@
 				return P
 			})), r.d(i, "l", (function() {
 				return S
-			})), r.d(i, "c", (function() {
-				return T
-			})), r.d(i, "a", (function() {
-				return _
 			})), r.d(i, "m", (function() {
-				return C
-			})), r.d(i, "i", (function() {
+				return T
+			})), r.d(i, "c", (function() {
+				return _
+			})), r.d(i, "a", (function() {
+				return O
+			})), r.d(i, "n", (function() {
 				return j
-			})), r.d(i, "d", (function() {
+			})), r.d(i, "i", (function() {
 				return w
-			})), r.d(i, "e", (function() {
+			})), r.d(i, "d", (function() {
 				return I
+			})), r.d(i, "e", (function() {
+				return N
 			}));
 			var x = r("./node_modules/uuid/index.js"),
 				t = r.n(x),
@@ -348,7 +350,7 @@
 						posts: l,
 						meta: t.meta
 					})), e
-				}, P = Object(o.a)(u.a), S = Object(o.a)(u.i), T = ({
+				}, P = Object(o.a)(u.a), S = Object(o.a)(u.i), T = Object(o.a)(u.j), _ = ({
 					subredditId: a
 				}) => async (i, r, {
 					gqlContext: x
@@ -375,24 +377,26 @@
 						subredditId: a,
 						tournaments: [c]
 					})), c
-				}, _ = (a, i) => async (r, x, {
+				}, O = (a, i) => async (r, x, {
 					gqlContext: k
 				}) => {
-					const n = Object(f.b)(x());
-					if (!n) throw new Error("Failed to create prediction post, no prediction drafts attached");
-					const o = await Object(m.b)(k(), {
+					var n;
+					const o = Object(f.b)(x());
+					if (!o) throw new Error("Failed to create prediction post, no prediction drafts attached");
+					const s = await Object(m.b)(k(), {
 							tournamentId: a,
 							isStartImmediately: !0,
 							iKey: `add-dfts-${t.a.v4()}`,
 							subredditId: i,
-							predictionDrafts: n
+							predictionDrafts: o
 						}),
 						{
-							addPredictionDrafts: s
-						} = o.body.data;
-					if (!(null == s ? void 0 : s.tournament)) throw new Error("Failed to create prediction");
-					return s.tournament
-				}, O = Object(o.a)(u.j), C = (a, i, r) => async (x, t, {
+							addPredictionDrafts: e
+						} = s.body.data;
+					if (null === (n = e.errors) || void 0 === n ? void 0 : n.length) throw new Error(e.errors[0].message);
+					if (!(null == e ? void 0 : e.tournament)) throw new Error("Failed to create prediction");
+					return e.tournament
+				}, C = Object(o.a)(u.k), j = (a, i, r) => async (x, t, {
 					gqlContext: k
 				}) => {
 					const n = await Object(m.k)(k(), {
@@ -403,11 +407,11 @@
 							updatePredictionTournament: o
 						} = n.body.data;
 					if (!o.tournament) throw new Error("Failed to update prediction name");
-					return x(O({
+					return x(C({
 						subredditId: i,
 						tournament: o.tournament
 					})), o.tournament
-				}, j = (a, i) => async (r, x, {
+				}, w = (a, i) => async (r, x, {
 					gqlContext: t
 				}) => {
 					const k = await Object(m.d)(t(), {
@@ -417,11 +421,11 @@
 							endPredictionTournament: n
 						} = k.body.data;
 					if (!n.tournament) throw new Error("Failed to update prediction name");
-					return r(O({
+					return r(C({
 						subredditId: i,
 						tournament: n.tournament
 					})), n.tournament
-				}, w = a => async (i, r, {
+				}, I = a => async (i, r, {
 					gqlContext: x
 				}) => {
 					const t = await Object(m.e)(x(), {
@@ -433,7 +437,7 @@
 					} = t.body.data;
 					if (!k.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return k.predictionChipPackages
-				}, I = a => async (i, r, {
+				}, N = a => async (i, r, {
 					gqlContext: x
 				}) => {
 					const t = await Object(m.g)(x(), {
@@ -2754,4 +2758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c025fed2c0f448dcbacf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7143ec25c36312ccd25d.js.map

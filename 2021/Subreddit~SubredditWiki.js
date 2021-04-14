@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.9e17cfe285833baeeb14.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.1a6bb53bf0ca6dcfd2a1.js
+// Retrieved at 4/14/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -222,18 +222,20 @@
 				return I
 			})), n.d(t, "l", (function() {
 				return N
-			})), n.d(t, "c", (function() {
-				return T
-			})), n.d(t, "a", (function() {
-				return P
 			})), n.d(t, "m", (function() {
-				return B
-			})), n.d(t, "i", (function() {
+				return T
+			})), n.d(t, "c", (function() {
+				return P
+			})), n.d(t, "a", (function() {
+				return L
+			})), n.d(t, "n", (function() {
 				return F
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "i", (function() {
 				return M
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return R
+			})), n.d(t, "e", (function() {
+				return D
 			}));
 			var r = n("./node_modules/uuid/index.js"),
 				s = n.n(r),
@@ -388,7 +390,7 @@
 						posts: u,
 						meta: s.meta
 					})), l
-				}, I = Object(o.a)(f.a), N = Object(o.a)(f.i), T = ({
+				}, I = Object(o.a)(f.a), N = Object(o.a)(f.i), T = Object(o.a)(f.j), P = ({
 					subredditId: e
 				}) => async (t, n, {
 					gqlContext: r
@@ -415,24 +417,26 @@
 						subredditId: e,
 						tournaments: [m]
 					})), m
-				}, P = (e, t) => async (n, r, {
+				}, L = (e, t) => async (n, r, {
 					gqlContext: i
 				}) => {
-					const a = Object(h.b)(r());
-					if (!a) throw new Error("Failed to create prediction post, no prediction drafts attached");
-					const o = await Object(d.b)(i(), {
+					var a;
+					const o = Object(h.b)(r());
+					if (!o) throw new Error("Failed to create prediction post, no prediction drafts attached");
+					const c = await Object(d.b)(i(), {
 							tournamentId: e,
 							isStartImmediately: !0,
 							iKey: `add-dfts-${s.a.v4()}`,
 							subredditId: t,
-							predictionDrafts: a
+							predictionDrafts: o
 						}),
 						{
-							addPredictionDrafts: c
-						} = o.body.data;
-					if (!(null == c ? void 0 : c.tournament)) throw new Error("Failed to create prediction");
-					return c.tournament
-				}, L = Object(o.a)(f.j), B = (e, t, n) => async (r, s, {
+							addPredictionDrafts: l
+						} = c.body.data;
+					if (null === (a = l.errors) || void 0 === a ? void 0 : a.length) throw new Error(l.errors[0].message);
+					if (!(null == l ? void 0 : l.tournament)) throw new Error("Failed to create prediction");
+					return l.tournament
+				}, B = Object(o.a)(f.k), F = (e, t, n) => async (r, s, {
 					gqlContext: i
 				}) => {
 					const a = await Object(d.k)(i(), {
@@ -443,11 +447,11 @@
 							updatePredictionTournament: o
 						} = a.body.data;
 					if (!o.tournament) throw new Error("Failed to update prediction name");
-					return r(L({
+					return r(B({
 						subredditId: t,
 						tournament: o.tournament
 					})), o.tournament
-				}, F = (e, t) => async (n, r, {
+				}, M = (e, t) => async (n, r, {
 					gqlContext: s
 				}) => {
 					const i = await Object(d.d)(s(), {
@@ -457,11 +461,11 @@
 							endPredictionTournament: a
 						} = i.body.data;
 					if (!a.tournament) throw new Error("Failed to update prediction name");
-					return n(L({
+					return n(B({
 						subredditId: t,
 						tournament: a.tournament
 					})), a.tournament
-				}, M = e => async (t, n, {
+				}, R = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					const s = await Object(d.e)(r(), {
@@ -473,7 +477,7 @@
 					} = s.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, R = e => async (t, n, {
+				}, D = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					const s = await Object(d.g)(r(), {
@@ -8428,4 +8432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.9e17cfe285833baeeb14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.1a6bb53bf0ca6dcfd2a1.js.map
