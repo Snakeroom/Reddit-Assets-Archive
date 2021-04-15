@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.583b76f5d6637de5f928.js
-// Retrieved at 4/12/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.9e2318b361f14936d16f.js
+// Retrieved at 4/15/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, o) {
@@ -171,8 +171,8 @@
 				f = o("./src/config.ts"),
 				E = o("./src/reddit/helpers/trackers/powerups.ts"),
 				k = o("./src/reddit/hooks/useTracking.ts"),
-				x = o("./src/reddit/models/Gold/Powerups/index.ts"),
-				h = o("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
+				h = o("./src/reddit/models/Gold/Powerups/index.ts"),
+				x = o("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				P = o("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
 				N = o.n(P);
 			const {
@@ -182,18 +182,18 @@
 					const {
 						benefits: t,
 						className: o
-					} = e, s = Object(k.a)(), r = [...t, x.a.HeroStatus];
+					} = e, s = Object(k.a)(), r = [...t, h.a.HeroStatus];
 					return n.a.createElement("div", {
 						className: Object(u.a)(N.a.container, o)
-					}, r.map(e => x.e[e] && n.a.createElement(h.a, {
+					}, r.map(e => h.e[e] && n.a.createElement(x.a, {
 						className: N.a.benefit,
-						description: x.d[e](),
+						description: h.d[e](),
 						iconUrl: `${f.a.assetPath}/img/powerups/${e}_v2.svg`,
 						key: `cell_${e}`,
 						onClick: () => {
 							s(Object(E.d)())
 						},
-						title: x.e[e]()
+						title: h.e[e]()
 					})))
 				},
 				O = o("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
@@ -271,8 +271,8 @@
 					hk: "1xgdW6"
 				})), n.a.createElement("p", {
 					className: C.a.howItWorksDesc
-				}, v._("Or if you’re a Reddit Premium member, use your free monthly Powerup", null, {
-					hk: "1mFapI"
+				}, v._("Or if you’re a Reddit Premium member, use your monthly Powerup", null, {
+					hk: "1MD3Sh"
 				}))), n.a.createElement("li", {
 					className: C.a.howItWorksStep
 				}, n.a.createElement("h3", {
@@ -333,9 +333,9 @@
 			})), o.d(t, "o", (function() {
 				return k
 			})), o.d(t, "h", (function() {
-				return x
-			})), o.d(t, "a", (function() {
 				return h
+			})), o.d(t, "a", (function() {
+				return x
 			})), o.d(t, "l", (function() {
 				return P
 			})), o.d(t, "b", (function() {
@@ -443,14 +443,14 @@
 					...r(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				x = () => e => ({
+				h = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...r(e),
 					correlationId: Object(s.d)(s.a.PowerupsFlow, !0)
 				}),
-				h = e => t => ({
+				x = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "add_custom_emojis",
@@ -486,4 +486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.583b76f5d6637de5f928.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.9e2318b361f14936d16f.js.map

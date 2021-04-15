@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.e894c1f8975541cb43e6.js
-// Retrieved at 4/12/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b4c5725732968f141f98.js
+// Retrieved at 4/15/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -720,7 +720,7 @@
 			})), r.d(t, "a", (function() {
 				return H
 			})), r.d(t, "e", (function() {
-				return K
+				return Z
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./node_modules/lodash/omit.js"),
@@ -840,7 +840,7 @@
 							if (e && e.errors && e.errors.length) return void s(Object(y.stripeApiError)(R(e.errors)));
 							if (e.ok && "PAID" !== e.payment.status) return void u();
 							const t = Object(g.i)(i());
-							t && s(K({
+							t && s(Z({
 								subredditId: r,
 								powerupsCount: a,
 								user: t,
@@ -900,7 +900,7 @@
 									token: e.providerExecution.billingAgreementToken,
 									url: e.providerExecution.billingAgreementApprovalUrl
 								};
-								if ("PAID" === a && s) return o(K({
+								if ("PAID" === a && s) return o(Z({
 									subredditId: t,
 									powerupsCount: n,
 									user: s,
@@ -979,8 +979,8 @@
 					} catch (o) {
 						m.c.captureException(o)
 					}
-				}, U = Object(p.a)(h.N), V = Object(p.a)(h.O), z = Object(p.a)(h.P), W = e => async (t, r) => {
-					await t(U(e)), t(Object(d.f)({
+				}, V = Object(p.a)(h.N), U = Object(p.a)(h.O), z = Object(p.a)(h.P), W = e => async (t, r) => {
+					await t(V(e)), t(Object(d.f)({
 						kind: f.b.Error,
 						duration: d.a,
 						text: e
@@ -988,7 +988,7 @@
 				}, H = (e, t, r) => async (o, a, {
 					gqlContext: s
 				}) => {
-					o(V({
+					o(U({
 						subredditId: t,
 						allocatedAt: r
 					}));
@@ -1017,8 +1017,8 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, Z = Object(p.a)(h.R), K = e => async (t, r) => {
-					t(Z(e)), t(Object(E.g)(e.subredditId, {
+				}, K = Object(p.a)(h.R), Z = e => async (t, r) => {
+					t(K(e)), t(Object(E.g)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(w.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(w.h)(l.a.ECON_POWERUPS_SUCCESS))
@@ -1505,11 +1505,11 @@
 				B = r.n(F);
 			const {
 				fbt: D
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), U = Object(s.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), V = Object(s.c)({
 				isAnonymous: C.c,
 				isPending: C.b
-			}), V = Object(a.b)(U), z = 12;
-			var W = V((function(e) {
+			}), U = Object(a.b)(V), z = 12;
+			var W = U((function(e) {
 					const {
 						className: t,
 						isAnonymous: r,
@@ -1525,13 +1525,13 @@
 					}, n ? o.a.createElement(A.a, {
 						className: B.a.loadingIcon,
 						sizePx: z
-					}) : D._("Apply Your Free Powerup", null, {
-						hk: "fwfCU"
+					}) : D._("Apply Your Powerup", null, {
+						hk: "1PoAEc"
 					}))
 				})),
 				H = r("./src/reddit/models/Gold/Powerups/index.ts"),
-				Z = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
-				K = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				K = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
+				Z = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				J = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx"),
 				X = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
 				Y = r.n(X);
@@ -1543,7 +1543,7 @@
 						value: a,
 						min: s,
 						max: c
-					} = e, i = e => r(Math.max(Math.min(a + e, c || Number.POSITIVE_INFINITY), s || 0)), l = c === s, u = a === H.b ? Z.a : a < H.c ? K.a : J.a;
+					} = e, i = e => r(Math.max(Math.min(a + e, c || Number.POSITIVE_INFINITY), s || 0)), l = c === s, u = a === H.b ? K.a : a < H.c ? Z.a : J.a;
 					return o.a.createElement("div", {
 						className: Object(d.a)(t, Y.a.container),
 						style: n
@@ -1759,18 +1759,7 @@
 					}), C === b.yb && o.a.createElement(ie, {
 						className: de.a.button,
 						subredditId: p
-					})), I && o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: de.a.premiumDescription
-					}, o.a.createElement("div", {
-						className: de.a.premiumIconWrapper
-					}, o.a.createElement(M.a, {
-						className: de.a.premiumIcon
-					})), o.a.createElement("span", null, ue._("Premium gives you one free Powerup", null, {
-						hk: "1Rlk9N"
-					}))), o.a.createElement(W, {
-						className: de.a.button,
-						subredditId: p
-					})), o.a.createElement("p", {
+					}), o.a.createElement("p", {
 						className: de.a.description
 					}, ue._("By completing your purchase, you are agreeing to automatic payments for Powerups and Reddit's {=User Agreement}, {=Privacy Policy}, and {previews terms of use}. Your Powerups subscription will auto-renew monthly for {powerup price} (plus tax where applicable). Cancel anytime in {=User Settings}. Cancel at least 24 hours before your subscription ends to avoid getting charged for the next month. No partial refunds.", [ue._param("=User Agreement", o.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/user-agreement",
@@ -1791,6 +1780,17 @@
 						hk: "3TNXSe"
 					})))], {
 						hk: "NLnVj"
+					}))), I && o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+						className: de.a.premiumDescription
+					}, o.a.createElement("div", {
+						className: de.a.premiumIconWrapper
+					}, o.a.createElement(M.a, {
+						className: de.a.premiumIcon
+					})), o.a.createElement("span", null, ue._("Premium gives you one monthly Powerup", null, {
+						hk: "2cKV1a"
+					}))), o.a.createElement(W, {
+						className: de.a.button,
+						subredditId: p
 					})))))
 				})),
 				he = r("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
@@ -2503,4 +2503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.e894c1f8975541cb43e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b4c5725732968f141f98.js.map

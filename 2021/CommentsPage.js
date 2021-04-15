@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.9722274a1fe61bd05aaf.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.2c88455c8efd42ee7042.js
+// Retrieved at 4/15/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7169,8 +7169,8 @@
 					onClick: () => {
 						w(Object(g.g)()), k(Object(i.c)())
 					}
-				}, E ? F._("Apply Your Free Powerup", null, {
-					hk: "3HJ66L"
+				}, E ? F._("Apply Your Powerup", null, {
+					hk: "10PunM"
 				}) : F._("Become a Hero", null, {
 					hk: "3IZNw3"
 				})), E && r.a.createElement("div", {
@@ -7179,8 +7179,8 @@
 					className: j.a.premiumIconWrapper
 				}, r.a.createElement(x.a, {
 					className: j.a.premiumIcon
-				})), r.a.createElement("span", null, F._("Premium gives you 1 free Powerup", null, {
-					hk: "3moHy5"
+				})), r.a.createElement("span", null, F._("Premium gives you one monthly Powerup", null, {
+					hk: "tdfip"
 				})))))))
 			});
 			t.a = Object(h.b)(Object(o.b)(M)(A))
@@ -11322,4 +11322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9722274a1fe61bd05aaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.2c88455c8efd42ee7042.js.map

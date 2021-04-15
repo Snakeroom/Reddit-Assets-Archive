@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a30a275ca1b15fc996e2.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.8b713e8aac26df7eb514.js
+// Retrieved at 4/15/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3975,8 +3975,8 @@
 						hk: "2kYkAv"
 					}) : "", j = v ? s.fbt._("Still active until {date}.", [s.fbt._param("date", v)], {
 						hk: "IZweZ"
-					}) : "", P = m ? u ? C : `${C} ${E}` : d ? `${C} ${k}` : `${C} ${j}`, N = m ? s.fbt._("{powerups count} free Reddit Premium powerup/monthly", [s.fbt._param("powerups count", g.toLocaleString())], {
-						hk: "3T3grw"
+					}) : "", P = m ? u ? C : `${C} ${E}` : d ? `${C} ${k}` : `${C} ${j}`, N = m ? s.fbt._("{powerups count} Reddit Premium powerup/monthly", [s.fbt._param("powerups count", g.toLocaleString())], {
+						hk: "4iP1Np"
 					}) : s.fbt._("{powerups count} powerup/monthly", [s.fbt._param("powerups count", g.toLocaleString())], {
 						hk: "11DNVJ"
 					}), I = m && u || !m && d;
@@ -10665,4 +10665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a30a275ca1b15fc996e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8b713e8aac26df7eb514.js.map
