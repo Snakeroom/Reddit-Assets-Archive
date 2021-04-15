@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.18c878ac32b8b86e7525.js
-// Retrieved at 4/15/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7fe6ae6aff9a4d7b6ad2.js
+// Retrieved at 4/15/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7212,7 +7212,8 @@
 					}))))))), d && o.a.createElement(a.q, {
 						priority: a.b.Secondary,
 						className: c.a.expandButton,
-						onClick: s
+						onClick: s,
+						isFullWidth: !0
 					}, v._("See All Heroes", null, {
 						hk: "1VUmH9"
 					})))
@@ -7375,9 +7376,11 @@
 					className: j.a.powerupsIcon
 				}), r.a.createElement("h2", {
 					className: j.a.title
-				}, I, " ", m.displayText), r.a.createElement(b.i, {
+				}, I, " ", m.displayText), r.a.createElement(b.q, {
+					priority: b.b.Primary,
 					className: j.a.button,
-					onClick: O
+					onClick: O,
+					isFullWidth: !0
 				}, E && !_ ? F._("Use Your Premium Powerup", null, {
 					hk: "JJNaN"
 				}) : F._("Become a Hero", null, {
@@ -7419,7 +7422,8 @@
 					className: j.a.button,
 					onClick: () => {
 						w(Object(g.g)()), k(Object(i.c)())
-					}
+					},
+					isFullWidth: !0
 				}, E ? F._("Apply Your Powerup", null, {
 					hk: "10PunM"
 				}) : F._("Become a Hero", null, {
@@ -11648,4 +11652,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.18c878ac32b8b86e7525.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7fe6ae6aff9a4d7b6ad2.js.map
