@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7fe6ae6aff9a4d7b6ad2.js
-// Retrieved at 4/15/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b072e8ab7e15bb18f803.js
+// Retrieved at 4/15/2021, 1:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2742,6 +2742,8 @@
 				commentHeaderRedesign: "_3jJ0c2FXVItDFjup-54-X2",
 				ExpandButton: "_1nGapmdexvR0BuOkfAi6wa",
 				expandButton: "_1nGapmdexvR0BuOkfAi6wa",
+				hidden: "_1zN1-lYh2LfbYOMAho_O8g",
+				visible: "O_Ica0k2O4KFcZyNfsJDU",
 				ErrorText: "_3XArRVBsKuWegVHX9CQjH-",
 				errorText: "_3XArRVBsKuWegVHX9CQjH-",
 				CommentBody: "_3cjCphgls6DH-irkVaA0GM",
@@ -3868,9 +3870,11 @@
 						dangerouslySetInnerHTML: {
 							__html: `\n                <img alt="" src="${$t.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstCommentVisible || function(){})();" />\n              `
 						}
-					}), o && a.a.createElement(ts, {
+					}), (o || _) && a.a.createElement(ts, {
 						className: Object(l.a)(n.id, {
-							[Xt.a.commentHeaderRedesign]: _
+							[Xt.a.commentHeaderRedesign]: _,
+							[Xt.a.hidden]: !o,
+							[Xt.a.visible]: o
 						}),
 						onClick: () => {
 							s(), F(), J("collapse", n.id)()
@@ -11652,4 +11656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7fe6ae6aff9a4d7b6ad2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b072e8ab7e15bb18f803.js.map
