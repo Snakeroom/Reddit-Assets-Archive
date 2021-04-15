@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.7a3405839d4dd8a691d3.js
-// Retrieved at 3/11/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.134452831d364025a0db.js
+// Retrieved at 4/15/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -117,8 +117,8 @@
 				C = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				O = o("./src/reddit/controls/MetaSeparator/index.tsx"),
 				v = o("./src/reddit/helpers/postCollection.ts"),
-				_ = o("./src/reddit/models/Post/index.ts"),
-				x = o("./src/reddit/models/PostCollection/index.ts"),
+				x = o("./src/reddit/models/Post/index.ts"),
+				_ = o("./src/reddit/models/PostCollection/index.ts"),
 				g = o("./src/reddit/selectors/postCollection.ts"),
 				y = o("./src/reddit/selectors/posts.ts"),
 				f = (o("./node_modules/core-js/modules/web.dom.iterable.js"), o("./node_modules/react-router-dom/esm/react-router-dom.js")),
@@ -247,7 +247,7 @@
 						toggleEditStartTimeModal: E,
 						updateSelectedPostRef: C,
 						isProfilePage: O
-					} = e, v = l && l.url || "", _ = b.isSpoiler || b.isNSFW, x = b.isScoreHidden;
+					} = e, v = l && l.url || "", x = b.isSpoiler || b.isNSFW, _ = b.isScoreHidden;
 					return n.a.createElement(I.a, {
 						className: Object(a.a)(B.a.galleryPostContainer, {
 							[B.a.isSelectedPost]: d,
@@ -265,7 +265,7 @@
 						ref: d && C || void 0
 					}, v ? n.a.createElement("div", {
 						className: Object(a.a)(B.a.galleryPostImage, {
-							[B.a.blurBackground]: _
+							[B.a.blurBackground]: x
 						}),
 						style: {
 							backgroundImage: `url('${v}')`
@@ -283,9 +283,9 @@
 						className: B.a.galleryPostOverlay
 					}, n.a.createElement("div", {
 						className: Object(a.a)(B.a.galleryBottomLine, {
-							[B.a.isScoreHidden]: x
+							[B.a.isScoreHidden]: _
 						})
-					}, !x && n.a.createElement(j.a, {
+					}, !_ && n.a.createElement(j.a, {
 						"data-click-id": "score"
 					}, W._({
 						"*": "{Post score} points",
@@ -340,7 +340,7 @@
 						displayLayout: e,
 						post: t
 					} = this.props;
-					return t ? e === x.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
+					return t ? e === _.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow,
@@ -478,7 +478,7 @@
 						className: K.a.collectionBy
 					}, V._("Collection by {authorName}", [V._param("authorName", n.a.createElement($, {
 						author: m,
-						isDeleted: Object(_.m)(m)
+						isDeleted: Object(x.m)(m)
 					}))], {
 						hk: "4E412f"
 					})), n.a.createElement(O.a, {
@@ -515,7 +515,7 @@
 						className: K.a.collectionDescription
 					}, b), n.a.createElement("div", {
 						className: Object(a.a)({
-							[K.a.galleryContainer]: t === x.a.GALLERY
+							[K.a.galleryContainer]: t === _.a.GALLERY
 						})
 					}, h.map(e => n.a.createElement(Z, {
 						collectionId: C,
@@ -559,10 +559,10 @@
 				C = o("./src/reddit/selectors/postCollection.ts"),
 				O = o("./node_modules/reselect/es/index.js"),
 				v = o("./src/reddit/helpers/trackers/postCollection.ts"),
-				_ = o("./src/reddit/components/Widgets/PostCollection/CollectionOverflowMenu/index.m.less"),
-				x = o.n(_),
+				x = o("./src/reddit/components/Widgets/PostCollection/CollectionOverflowMenu/index.m.less"),
+				_ = o.n(x),
 				g = o("./node_modules/fbt/lib/FbtPublic.js");
-			const y = c.a.wrapped(h.b, "DropdownRow", x.a);
+			const y = c.a.wrapped(h.b, "DropdownRow", _.a);
 			let f;
 			const S = Object(E.b)("DELETE_COLLECTION_CONFM_MODAL_ID"),
 				T = Object(E.b)("EDIT_POST_COLLECTION_MODAL_ID"),
@@ -671,9 +671,10 @@
 				d = o("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
 				m = o("./src/reddit/components/OverflowMenu/index.tsx"),
 				p = o("./src/reddit/controls/Dropdown/Row.tsx"),
-				u = o("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
-				b = o.n(u);
-			const P = r.a.wrapped(p.b, "DropdownRow", b.a);
+				u = o("./src/reddit/helpers/path/index.ts"),
+				b = o("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
+				P = o.n(b);
+			const h = r.a.wrapped(p.b, "DropdownRow", P.a);
 			t.a = e => {
 				const {
 					isFutureEvent: t,
@@ -682,31 +683,31 @@
 					onStartEventNow: i,
 					postPermalink: r,
 					shouldShowAddEventStartTime: p,
-					targetPosition: u,
-					tooltipPosition: b
+					targetPosition: b,
+					tooltipPosition: P
 				} = e;
 				return a.a.createElement(m.b, {
 					className: e.className,
 					dropdownId: e.dropdownId,
 					onClick: l.a,
-					targetPosition: u,
-					tooltipPosition: b
-				}, p && o && a.a.createElement(P, {
+					targetPosition: b,
+					tooltipPosition: P
+				}, p && o && a.a.createElement(h, {
 					onClick: o,
 					displayText: s.fbt._("Add event start time", null, {
 						hk: "4xWttR"
 					})
-				}), t && i && a.a.createElement(P, {
+				}), t && i && a.a.createElement(h, {
 					onClick: i,
 					displayText: s.fbt._("Start event now", null, {
 						hk: "2TTNfJ"
 					})
-				}), t && n && a.a.createElement(P, {
+				}), t && n && a.a.createElement(h, {
 					onClick: n,
 					displayText: s.fbt._("Edit start time", null, {
 						hk: "44XUxC"
 					})
-				}), a.a.createElement(P, {
+				}), a.a.createElement(h, {
 					onClick: e.onRemoveClick,
 					displayText: s.fbt._("Remove from collection", null, {
 						hk: "qsiiu"
@@ -715,8 +716,8 @@
 					target: c.c.BLANK,
 					rel: c.b,
 					isOverlay: !1,
-					to: r
-				}, a.a.createElement(P, {
+					to: Object(u.b)(r)
+				}, a.a.createElement(h, {
 					displayText: s.fbt._("View post", null, {
 						hk: "1PtvnG"
 					})
@@ -725,4 +726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.7a3405839d4dd8a691d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.134452831d364025a0db.js.map

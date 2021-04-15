@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2ea6d4ffc3c9d3a8cd5e.js
-// Retrieved at 4/15/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9bd1ed7c17770f33ffc4.js
+// Retrieved at 4/15/2021, 5:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -8322,9 +8322,10 @@
 				l = n("./src/reddit/components/LinkOrOverlayLink/index.tsx"),
 				u = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				m = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				p = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
-				h = n.n(p);
-			const b = c.a.wrapped(m.b, "DropdownRow", h.a);
+				p = n("./src/reddit/helpers/path/index.ts"),
+				h = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.m.less"),
+				b = n.n(h);
+			const f = c.a.wrapped(m.b, "DropdownRow", b.a);
 			t.a = e => {
 				const {
 					isFutureEvent: t,
@@ -8333,31 +8334,31 @@
 					onStartEventNow: a,
 					postPermalink: c,
 					shouldShowAddEventStartTime: m,
-					targetPosition: p,
-					tooltipPosition: h
+					targetPosition: h,
+					tooltipPosition: b
 				} = e;
 				return i.a.createElement(u.b, {
 					className: e.className,
 					dropdownId: e.dropdownId,
 					onClick: r.a,
-					targetPosition: p,
-					tooltipPosition: h
-				}, m && n && i.a.createElement(b, {
+					targetPosition: h,
+					tooltipPosition: b
+				}, m && n && i.a.createElement(f, {
 					onClick: n,
 					displayText: o.fbt._("Add event start time", null, {
 						hk: "4xWttR"
 					})
-				}), t && a && i.a.createElement(b, {
+				}), t && a && i.a.createElement(f, {
 					onClick: a,
 					displayText: o.fbt._("Start event now", null, {
 						hk: "2TTNfJ"
 					})
-				}), t && s && i.a.createElement(b, {
+				}), t && s && i.a.createElement(f, {
 					onClick: s,
 					displayText: o.fbt._("Edit start time", null, {
 						hk: "44XUxC"
 					})
-				}), i.a.createElement(b, {
+				}), i.a.createElement(f, {
 					onClick: e.onRemoveClick,
 					displayText: o.fbt._("Remove from collection", null, {
 						hk: "qsiiu"
@@ -8366,8 +8367,8 @@
 					target: d.c.BLANK,
 					rel: d.b,
 					isOverlay: !1,
-					to: c
-				}, i.a.createElement(b, {
+					to: Object(p.b)(c)
+				}, i.a.createElement(f, {
 					displayText: o.fbt._("View post", null, {
 						hk: "1PtvnG"
 					})
@@ -22111,4 +22112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2ea6d4ffc3c9d3a8cd5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9bd1ed7c17770f33ffc4.js.map
