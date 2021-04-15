@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.912bbcc4150fcad7acb7.js
-// Retrieved at 4/15/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0b3bc4fbdafd155d4286.js
+// Retrieved at 4/15/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1464,11 +1464,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("131278"),
+				buildNumber: r("131279"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1618515203"),
+				})("1618517753"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4021,14 +4021,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf749bdf218d045354b29a3398a78dd2bb5e47122-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1ee39a292989ef4eeef8796665ad1586fb340403-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f749bdf218d045354b29a3398a78dd2bb5e47122-production",
+						release: "1ee39a292989ef4eeef8796665ad1586fb340403-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4523,7 +4523,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "f749bdf218d045354b29a3398a78dd2bb5e47122-production",
+						releaseClient: "1ee39a292989ef4eeef8796665ad1586fb340403-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -16969,13 +16969,13 @@
 			})), i.d(t, "ed", (function() {
 				return dn
 			})), i.d(t, "k", (function() {
-				return cn
-			})), i.d(t, "Fb", (function() {
 				return un
-			})), i.d(t, "td", (function() {
+			})), i.d(t, "Fb", (function() {
 				return _n
-			})), i.d(t, "hc", (function() {
+			})), i.d(t, "td", (function() {
 				return pn
+			})), i.d(t, "hc", (function() {
+				return mn
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			const n = "typeahead_redesign",
@@ -17085,7 +17085,7 @@
 			}(Ye || (Ye = {}));
 			const Je = "enabled",
 				Xe = e => e === Ye.Control1 || e === Ye.Control2;
-			var Ze, et, tt, it, nt, rt, st, ot, dt, at, lt, ct, ut, _t, pt, mt, ht, ft, bt, gt, wt, yt, vt, Et, St, Tt, Ot, It, jt, Ft, Rt, xt, Ct, Nt, Dt, At, Pt, kt, Bt, Lt, Ut, Mt, Gt, qt, Vt, Wt, Ht, $t, zt, Kt, Qt, Yt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ci, ui, _i, pi, mi, hi, fi, bi, gi, wi, yi, vi, Ei, Si, Ti, Oi, Ii, ji, Fi, Ri, xi, Ci, Ni, Di, Ai, Pi, ki, Bi, Li, Ui, Mi, Gi, qi, Vi, Wi, Hi, $i, zi, Ki, Qi, Yi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln;
+			var Ze, et, tt, it, nt, rt, st, ot, dt, at, lt, ct, ut, _t, pt, mt, ht, ft, bt, gt, wt, yt, vt, Et, St, Tt, Ot, It, jt, Ft, Rt, xt, Ct, Nt, Dt, At, Pt, kt, Bt, Lt, Ut, Mt, Gt, qt, Vt, Wt, Ht, $t, zt, Kt, Qt, Yt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ci, ui, _i, pi, mi, hi, fi, bi, gi, wi, yi, vi, Ei, Si, Ti, Oi, Ii, ji, Fi, Ri, xi, Ci, Ni, Di, Ai, Pi, ki, Bi, Li, Ui, Mi, Gi, qi, Vi, Wi, Hi, $i, zi, Ki, Qi, Yi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, cn;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(Ze || (Ze = {})),
@@ -17439,8 +17439,12 @@
 			}(an || (an = {})),
 			function(e) {
 				e.Enabled = "enabled"
-			}(ln || (ln = {}));
-			const cn = {
+			}(ln || (ln = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(cn || (cn = {}));
+			const un = {
+					web_econ_powerups_marketing_redesign: [cn.Enabled],
 					[ee]: [_i.Nlp5Max, _i.Nlp15Max, _i.Search5Max],
 					[ze]: [dn.Enabled],
 					[$e]: [on.Enabled],
@@ -17549,9 +17553,9 @@
 					[We]: [rn.Enabled],
 					web_econ_premium_migration: [ln.Enabled]
 				},
-				un = new Set([v, a, S, B, "guest_d2x_subreddit_subreddit_links_url", ee, te, ne, se, ce, _e, pe, ge, we, Z, "d2x_language_selector", Ae, He]),
-				_n = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				pn = _n(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
+				_n = new Set([v, a, S, B, "guest_d2x_subreddit_subreddit_links_url", ee, te, ne, se, ce, _e, pe, ge, we, Z, "d2x_language_selector", Ae, He]),
+				pn = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				mn = pn(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"])
 		},
 		"./src/reddit/constants/featureThrottling.ts": function(e, t, i) {
 			"use strict";
@@ -45206,4 +45210,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.912bbcc4150fcad7acb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0b3bc4fbdafd155d4286.js.map
