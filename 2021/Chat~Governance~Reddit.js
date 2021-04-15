@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.15075e091fda7a80bdeb.js
-// Retrieved at 4/14/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.abc1dfe05de06a646e29.js
+// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1464,11 +1464,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("131187"),
+				buildNumber: r("131236"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1618437539"),
+				})("1618497251"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4021,14 +4021,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c9550a5b51d067609058f15a88d15ccf9dc4899e1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c525283e4fcf674e65bfa4b1944b144e937a102c7-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9550a5b51d067609058f15a88d15ccf9dc4899e1-production",
+						release: "525283e4fcf674e65bfa4b1944b144e937a102c7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4523,7 +4523,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "9550a5b51d067609058f15a88d15ccf9dc4899e1-production",
+						releaseClient: "525283e4fcf674e65bfa4b1944b144e937a102c7-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -17029,7 +17029,7 @@
 				J = "nps_survey_scroll_trigger",
 				X = "web2x_inbox_redesign",
 				Z = "d2x_ocr_backfill",
-				ee = "guest_d2x_listing_below_content_user",
+				ee = "guest_d2x_listing_below_user",
 				te = "d2x_google_onetap",
 				ie = "d2x_nps_survey_dismiss_post_trigger",
 				ne = "d2x_realtime_comments",
@@ -17288,7 +17288,7 @@
 				e.OCR = "ocr", e.ShortPostTitleOCR = "short_post_title_ocr"
 			}(ui || (ui = {})),
 			function(e) {
-				e.NlpPostToPost1 = "nlp_post_to_post_1", e.NlpPostToPost2 = "nlp_post_to_post_2", e.NlpPostToPost3 = "nlp_post_to_post_3", e.NlpPostToPostExtended1 = "nlp_post_to_post_extended_1", e.NlpPostToPostExtended2 = "nlp_post_to_post_extended_2", e.NlpPostToPostExtended3 = "nlp_post_to_post_extended_3", e.NlpPostToPostFallback1 = "nlp_post_to_post_fallback_1", e.NlpPostToPostFallback2 = "nlp_post_to_post_fallback_2", e.NlpPostToPostFallback3 = "nlp_post_to_post_fallback_3", e.SearchPostToPost = "search_post_to_post", e.SearchPostToPostExtended = "search_post_to_post_extended", e.SearchPostToPostFallback = "search_post_to_post_fallback"
+				e.Nlp5Max = "nlp_5max", e.Nlp15Max = "nlp_15max", e.Search5Max = "search_5max"
 			}(_i || (_i = {})),
 			function(e) {
 				e.Onetap = "onetap", e.OnetapAuto = "onetap_auto"
@@ -17441,6 +17441,7 @@
 				e.Enabled = "enabled"
 			}(ln || (ln = {}));
 			const cn = {
+					[ee]: [_i.Nlp5Max, _i.Nlp15Max, _i.Search5Max],
 					[ze]: [dn.Enabled],
 					[$e]: [on.Enabled],
 					[He]: [sn.Enabled],
@@ -17475,7 +17476,7 @@
 					[re]: [bi.Enabled],
 					[ie]: [mi.Enabled],
 					[te]: [pi.Onetap, pi.OnetapAuto],
-					[ee]: [_i.NlpPostToPost1, _i.NlpPostToPost2, _i.NlpPostToPost3, _i.NlpPostToPostExtended1, _i.NlpPostToPostExtended2, _i.NlpPostToPostExtended3, _i.NlpPostToPostFallback1, _i.NlpPostToPostFallback2, _i.NlpPostToPostFallback3, _i.SearchPostToPost, _i.SearchPostToPostExtended, _i.SearchPostToPostFallback],
+					[ee]: [_i.Nlp5Max, _i.Nlp15Max, _i.Search5Max],
 					[Z]: [ui.OCR, ui.ShortPostTitleOCR],
 					[J]: [li.Enabled],
 					[Q]: [di.UpvoteOnly, di.UpvoteDownvote],
@@ -26042,7 +26043,7 @@
 				m = (e, t, i) => {
 					const {
 						currentPage: n
-					} = e.platform, o = p(n) ? "other_discussions" : "post", d = Object(a.b)(e), c = Object(l.c)(e, {
+					} = e.platform, o = p(n) ? "other_discussions" : "post", d = Object(a.a)(e), c = Object(l.c)(e, {
 						postId: t
 					});
 					if (d) {
@@ -26136,7 +26137,7 @@
 							}
 						}
 						return b(e, t, i, n)
-					})(m, e, i, t) : b(m, e, i, t), y = Object(a.b)(m) || l;
+					})(m, e, i, t) : b(m, e, i, t), y = Object(a.a)(m) || l;
 					if (y) {
 						const i = n ? u.getRelativePostOrder(m, e, n) : null;
 						return {
@@ -34783,10 +34784,8 @@
 		},
 		"./src/reddit/selectors/experiments/listingBelow.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "a", (function() {
 				return c
-			})), i.d(t, "a", (function() {
-				return u
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/constants/experiments.ts"),
@@ -34799,8 +34798,7 @@
 					experimentEligibilitySelector: l,
 					experimentName: r.Mb,
 					expEventOverride: !1
-				}),
-				u = e => e === r.Pb.SearchPostToPost || e === r.Pb.NlpPostToPost1 || e === r.Pb.NlpPostToPost2 || e === r.Pb.NlpPostToPost3
+				})
 		},
 		"./src/reddit/selectors/experiments/magicLink.ts": function(e, t, i) {
 			"use strict";
@@ -38085,7 +38083,7 @@
 						e
 					}) => e === d.m))
 				},
-				g = e => Boolean(Object(l.b)(e))
+				g = e => Boolean(Object(l.a)(e))
 		},
 		"./src/reddit/selectors/seo/linksModule.ts": function(e, t, i) {
 			"use strict";
@@ -45208,4 +45206,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.15075e091fda7a80bdeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.abc1dfe05de06a646e29.js.map

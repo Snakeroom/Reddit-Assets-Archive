@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.76cf49db66e82bbaca5f.js
-// Retrieved at 4/14/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.9722274a1fe61bd05aaf.js
+// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1419,7 +1419,7 @@
 							}
 						}
 						const d = be(!1, s(), m),
-							c = Object(re.b)(s()),
+							c = Object(re.a)(s()),
 							l = w;
 						if (ge(l, d)) {
 							Object(Y.d)(Y.a.LinkedPosts);
@@ -7284,7 +7284,7 @@
 					isChatPost: O.d,
 					isGQLLoggedIn: S.I,
 					isLoggedIn: S.J,
-					listingBelowVariant: P.b,
+					listingBelowVariant: P.a,
 					shouldShowSubredditUpsell: W
 				}),
 				H = Object(d.b)(z, e => ({
@@ -7317,30 +7317,19 @@
 					} = this.props, {
 						name: r
 					} = t, o = Object(_.a)(s.newCommunityTheme.canvas);
-					return a.a.createElement("div", {
+					let i = null;
+					return i = !e || Object(x.ud)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
+						hk: "2g363L"
+					}) : e === x.Pb.Nlp15Max ? n.fbt._("More posts like this", null, {
+						hk: "Maj0v"
+					}) : n.fbt._("More posts you may like", null, {
+						hk: "33WdfT"
+					}), a.a.createElement("div", {
 						className: V.a.smallBanner,
 						style: {
 							color: o
 						}
-					}, e && !Object(x.ud)(e) ? Object(P.a)(e) ? n.fbt._("More posts like this", null, {
-						hk: "Maj0v"
-					}) : n.fbt._("More posts you may like", null, {
-						hk: "2s2Xil"
-					}) : n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
-						hk: "2g363L"
-					}))
-				}
-				renderTextBanner() {
-					const {
-						subredditOrProfile: e
-					} = this.props, {
-						name: t
-					} = e;
-					return a.a.createElement("span", {
-						className: V.a.textBanner
-					}, n.fbt._("More from {name}", [n.fbt._param("name", t)], {
-						hk: "Hv1mS"
-					}))
+					}, i)
 				}
 				render() {
 					const {
@@ -11333,4 +11322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.76cf49db66e82bbaca5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9722274a1fe61bd05aaf.js.map
