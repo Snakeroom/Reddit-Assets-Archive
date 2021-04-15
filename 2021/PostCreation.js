@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.79d69508837005e5a585.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2ea6d4ffc3c9d3a8cd5e.js
+// Retrieved at 4/15/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -22111,4 +22111,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.79d69508837005e5a585.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2ea6d4ffc3c9d3a8cd5e.js.map

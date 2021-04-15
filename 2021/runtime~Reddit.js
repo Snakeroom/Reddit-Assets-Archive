@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6e9c933b548b4694d827.js
-// Retrieved at 4/15/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7a460094e986ab9cb3aa.js
+// Retrieved at 4/15/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && P.push(a[d][0]), a[d] = 0;
@@ -604,8 +604,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "bbb9ef1c0d585f2e519e",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "b212a485e829e0936453",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "5e38b81a9fa5fb2fd092",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "8766b5da0b15ab4ec328",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -642,7 +642,7 @@
 					HarbergerTaxManageModal: "0a15a60855e5a7077999",
 					SubredditPremiumUploadModal: "dc450930789f81561a39",
 					"vendors~PostCreation": "c5fa24469a22c9356c7c",
-					PostCreation: "f8c110a799005a30bda7",
+					PostCreation: "41ee320e96916e4e8f29",
 					"vendors~ModerationPages": "31d6cfe0d16ae931b73c",
 					ModerationPages: "3ca88718ca85be5849c0",
 					"vendors~ExportTheme~ImportTheme": "31d6cfe0d16ae931b73c",
@@ -727,7 +727,7 @@
 					"reddit-components-Governance-Leaderboard": "041d23d5f9d19d011003",
 					"reddit-pages-CommentsPage-OtherDiscussions": "5cad224fadef40eda022",
 					ChatMessageInput: "282c5e311465d1ff9ebf",
-					RichTextEditor: "14ff00cdef443c7e0f4f",
+					RichTextEditor: "4c3fceb4d99adef79630",
 					EmailNotificationSettings: "4d06820a8034046fefc8",
 					PushNotificationSettings: "4d06820a8034046fefc8",
 					UpdateCardModal: "121ae634ac17d39a0d64",
@@ -1155,13 +1155,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "617d4e0b779b5708e03f",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "98f25f77bad70a95018b",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "bbfc4b4a89e97836f67f",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "bbe11e0f27cc0da9b5dd",
 						"translations/de_DE-json": "e6e91659ddf8172b4e0a",
 						"translations/es_ES-json": "4979df74b1b9764e693a",
 						"translations/fr_FR-json": "48b850a7c7e650f3275f",
 						"translations/it_IT-json": "9548898d36c902e6258e",
-						"translations/pseudo_ext-json": "a89986be791c94cfa3c6",
+						"translations/pseudo_ext-json": "e18b55ac81357def79f5",
 						"translations/pseudo_long-json": "4f37d3c1d15b9da79b8b",
 						"translations/pseudo_short-json": "0e7ac758719f26d805c7",
 						"translations/pt_BR-json": "8eabff020a5c28f9ef7c",
@@ -1193,7 +1193,7 @@
 						HarbergerTaxManageModal: "2c89381a2517d3cd8bb8",
 						SubredditPremiumUploadModal: "7411d6a1976ccc8fba08",
 						"vendors~PostCreation": "1c260edcc0339ea6fb2f",
-						PostCreation: "79d69508837005e5a585",
+						PostCreation: "2ea6d4ffc3c9d3a8cd5e",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
 						ModerationPages: "80d2193ec1ca541e2ca0",
 						"vendors~ExportTheme~ImportTheme": "244a7587332fd38fc7bc",
@@ -1278,7 +1278,7 @@
 						"reddit-components-Governance-Leaderboard": "9876d5983a350145acbc",
 						"reddit-pages-CommentsPage-OtherDiscussions": "cf962a9346d2ad743cff",
 						ChatMessageInput: "7ea56a32242538892b8a",
-						RichTextEditor: "4ee0c0defd6f79d05e73",
+						RichTextEditor: "9b7215f398f831052f22",
 						EmailNotificationSettings: "a758bc1fc1d75a660cf1",
 						PushNotificationSettings: "d9be77385e5ac3f4b630",
 						UpdateCardModal: "239cdc5b9966099ba5f0",
@@ -1385,4 +1385,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6e9c933b548b4694d827.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7a460094e986ab9cb3aa.js.map
