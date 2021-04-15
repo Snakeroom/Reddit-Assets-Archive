@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8e9be7d30bdae50cdbcd.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4d22c64370b2167914f3.js
+// Retrieved at 4/15/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -44,8 +44,9 @@
 				o = r("./src/reddit/constants/modals.ts"),
 				c = r("./src/reddit/helpers/trackers/snoovatar.ts"),
 				d = r("./src/reddit/selectors/user.ts");
-			const l = () => async e => {
-				e(Object(i.r)({
+			const l = () => async (e, t) => {
+				const r = t();
+				Object(n.a)(Object(c.b)(r)), e(Object(i.r)({
 					forceFetch: !0
 				})), await e(Object(a.g)(o.a.SNOOVATAR_MODAL))
 			}, m = e => async (t, r) => {
@@ -2101,10 +2102,12 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return o
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return c
 			})), r.d(t, "b", (function() {
 				return d
+			})), r.d(t, "c", (function() {
+				return l
 			}));
 			var n = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				s = r("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2134,6 +2137,13 @@
 					snoovatar: a.snoovatarActiveForBuilderEvent(e)
 				}),
 				d = e => ({
+					...a.defaults(e),
+					source: "avatar_builder",
+					action: "click",
+					noun: "close",
+					snoovatar: a.snoovatarActiveForBuilderEvent(e)
+				}),
+				l = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
@@ -2559,4 +2569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8e9be7d30bdae50cdbcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4d22c64370b2167914f3.js.map

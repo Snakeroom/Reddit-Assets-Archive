@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.68740d1f54a1e4368624.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.541a7ab84004035345f2.js
+// Retrieved at 4/15/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2442,8 +2442,9 @@
 				i = n("./src/reddit/constants/modals.ts"),
 				c = n("./src/reddit/helpers/trackers/snoovatar.ts"),
 				d = n("./src/reddit/selectors/user.ts");
-			const l = () => async e => {
-				e(Object(a.r)({
+			const l = () => async (e, t) => {
+				const n = t();
+				Object(s.a)(Object(c.b)(n)), e(Object(a.r)({
 					forceFetch: !0
 				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
@@ -6561,7 +6562,7 @@
 						d = Object(p.e)(Ci.b),
 						l = Object(p.e)(Ci.a);
 					if ((null === (e = null == r ? void 0 : r.meta) || void 0 === e ? void 0 : e.name) === v.Eb.AVATAR) return null;
-					!d && c && n(Object(bi.a)()), l && s(fi.b);
+					!d && c && n(Object(bi.a)()), l && s(fi.c);
 					const u = Object(Za.c)(t ? Ni("avatar_style") : vi.a, Pi(o.fbt._("Style Avatar", null, {
 							hk: "1HIsKA"
 						}), l, i)),
@@ -13448,10 +13449,12 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return i
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return c
 			})), n.d(t, "b", (function() {
 				return d
+			})), n.d(t, "c", (function() {
+				return l
 			}));
 			var s = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				o = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -13481,6 +13484,13 @@
 					snoovatar: r.snoovatarActiveForBuilderEvent(e)
 				}),
 				d = e => ({
+					...r.defaults(e),
+					source: "avatar_builder",
+					action: "click",
+					noun: "close",
+					snoovatar: r.snoovatarActiveForBuilderEvent(e)
+				}),
+				l = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
@@ -17665,4 +17675,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.68740d1f54a1e4368624.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.541a7ab84004035345f2.js.map

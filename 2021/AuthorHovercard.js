@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.d299234e2d29be6cac45.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.90db67fcabea2c1d2c02.js
+// Retrieved at 4/15/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -19,8 +19,9 @@
 				a = n("./src/reddit/constants/modals.ts"),
 				c = n("./src/reddit/helpers/trackers/snoovatar.ts"),
 				d = n("./src/reddit/selectors/user.ts");
-			const l = () => async e => {
-				e(Object(r.r)({
+			const l = () => async (e, t) => {
+				const n = t();
+				Object(i.a)(Object(c.b)(n)), e(Object(r.r)({
 					forceFetch: !0
 				})), await e(Object(o.g)(a.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
@@ -81,8 +82,8 @@
 				d = n("./src/reddit/actions/subscription/constants.ts"),
 				l = n("./src/reddit/actions/toaster.ts"),
 				u = n("./src/reddit/constants/posts.ts"),
-				m = n("./src/lib/makeApiRequest/index.ts"),
-				f = n("./src/lib/omitHeaders/index.ts"),
+				f = n("./src/lib/makeApiRequest/index.ts"),
+				m = n("./src/lib/omitHeaders/index.ts"),
 				p = n("./src/reddit/constants/headers.ts");
 			var b = n("./src/graphql/operations/SubscribedSubreddits.json"),
 				h = n("./src/lib/makeGqlRequest/index.ts"),
@@ -130,8 +131,8 @@
 			}
 			var O = n("./src/reddit/models/Toast/index.ts"),
 				y = n("./src/reddit/selectors/profile.ts"),
-				w = n("./src/reddit/selectors/subreddit.ts"),
-				j = n("./src/reddit/selectors/subscriptions.ts"),
+				j = n("./src/reddit/selectors/subreddit.ts"),
+				w = n("./src/reddit/selectors/subscriptions.ts"),
 				E = n("./src/reddit/selectors/user.ts");
 			const k = () => i.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
@@ -159,7 +160,7 @@
 					apiContext: b
 				}) => {
 					let h = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(w.F)(d(), e.name),
+						id: Object(j.F)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -187,14 +188,14 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(j.b)(d()),
+							subscriptionsCount: Object(w.b)(d()),
 							userIsSubscriber: t,
 							widgetId: n
 						})), (await ((e, {
 							subredditIds: t,
 							subredditNames: n,
 							subscribe: i
-						}) => Object(m.a)(Object(f.a)(e, [p.a]), {
+						}) => Object(f.a)(Object(m.a)(e, [p.a]), {
 							method: s.cb.POST,
 							endpoint: Object(v.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
@@ -223,7 +224,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(j.b)(d()),
+							subscriptionsCount: Object(w.b)(d()),
 							userIsSubscriber: !t,
 							widgetId: n
 						}));
@@ -236,7 +237,7 @@
 					apiContext: i
 				}) => {
 					const o = n(),
-						r = Object(w.L)(o, {
+						r = Object(j.L)(o, {
 							identifier: e
 						});
 					if (!r) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -258,10 +259,10 @@
 							type: e.type,
 							name: r.name
 						},
-						C = () => Object(w.gb)(n(), {
+						C = () => Object(j.gb)(n(), {
 							identifier: g
 						});
-					(C() || (await t(F([g], !0)), C())) && ((await ((e, t, n) => Object(m.a)(Object(f.a)(e, [p.a]), {
+					(C() || (await t(F([g], !0)), C())) && ((await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
 						method: s.cb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
@@ -295,7 +296,7 @@
 						makeFavorite: c,
 						multiredditPath: e,
 						multiredditsModelsState: o
-					})), (await ((e, t, n) => Object(m.a)(Object(f.a)(e, [p.a]), {
+					})), (await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
 						method: s.cb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
@@ -333,7 +334,7 @@
 						follow: u,
 						multiredditPath: e,
 						multiredditsModelsState: a
-					})), (await ((e, t, n) => Object(m.a)(Object(f.a)(e, [p.a]), {
+					})), (await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
 						method: s.cb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
@@ -411,8 +412,8 @@
 				d = n("./src/reddit/components/Hovercards/AuthorHovercard/index.tsx"),
 				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = n("./src/reddit/helpers/trackers/authorHovercard.ts");
-			const m = e => Object(a.a)(e.id) ? e.belongsTo.id : e.subredditId;
-			class f extends s.a.Component {
+			const f = e => Object(a.a)(e.id) ? e.belongsTo.id : e.subredditId;
+			class m extends s.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(Object(u.f)(this.props.postOrComment.id))
 				}
@@ -436,14 +437,14 @@
 						contextId: e.postOrComment.id,
 						hoverId: n,
 						sendEvent: e.sendEvent,
-						subredditId: m(e.postOrComment),
+						subredditId: f(e.postOrComment),
 						tooltipId: t,
 						tooltipType: e.tooltipType,
 						userName: i
 					}))
 				}
 			}
-			t.default = Object(l.c)(f)
+			t.default = Object(l.c)(m)
 		},
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
@@ -461,9 +462,9 @@
 				d = n("./node_modules/lodash/omit.js"),
 				l = n.n(d),
 				u = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
-				m = n("./src/reddit/components/ResizeSensor/index.tsx"),
-				f = n("./src/reddit/components/InboxTooltip/index.m.less"),
-				p = n.n(f);
+				f = n("./src/reddit/components/ResizeSensor/index.tsx"),
+				m = n("./src/reddit/components/InboxTooltip/index.m.less"),
+				p = n.n(m);
 			const b = 3;
 			class h extends o.a.Component {
 				constructor() {
@@ -490,7 +491,7 @@
 						markNotificationAsRead: c,
 						notification: d,
 						setActiveOverflowMenuId: l,
-						onItemClick: f
+						onItemClick: m
 					} = this.props, h = r + 1 <= b;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						ref: this.ref,
@@ -506,8 +507,8 @@
 						markNotificationAsRead: c,
 						notification: d,
 						setActiveOverflowMenuId: l,
-						onItemClick: f
-					}), !!h && o.a.createElement(m.a, {
+						onItemClick: m
+					}), !!h && o.a.createElement(f.a, {
 						onResize: this.handleResize
 					})))
 				}
@@ -585,8 +586,8 @@
 					}, n ? this.renderNotifications() : e ? o.a.createElement(v.a, null) : o.a.createElement(x.a, null))
 				}
 			}
-			var w = n("./src/reddit/controls/InternalLink/index.tsx"),
-				j = n("./src/reddit/helpers/trackers/inbox.ts"),
+			var j = n("./src/reddit/controls/InternalLink/index.tsx"),
+				w = n("./src/reddit/helpers/trackers/inbox.ts"),
 				E = n("./src/reddit/hooks/useTracking.ts"),
 				k = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
 				N = n("./src/reddit/icons/svgs/Settings/index.tsx");
@@ -613,10 +614,10 @@
 					sendInboxClickSettings: l
 				}) => {
 					const u = !!a,
-						m = Object(s.useCallback)(() => {
+						f = Object(s.useCallback)(() => {
 							e(), t()
 						}, [e, t]),
-						f = Object(s.useCallback)(() => {
+						m = Object(s.useCallback)(() => {
 							l(), t()
 						}, [l, t]);
 					return o.a.createElement("nav", {
@@ -629,11 +630,11 @@
 						className: p.a.topNavLinks
 					}, o.a.createElement("span", {
 						className: p.a.messagesLinkContainer
-					}, o.a.createElement(w.a, {
+					}, o.a.createElement(j.a, {
 						className: Object(r.a)(p.a.messagesLink, {
 							[p.a.mActive]: u
 						}),
-						onClick: m,
+						onClick: f,
 						to: u ? "/message/unread" : "/message/messages"
 					}, i.fbt._("Messages", null, {
 						hk: "hulKY"
@@ -644,15 +645,15 @@
 					})), d && o.a.createElement("button", {
 						className: p.a.navLink,
 						onClick: n
-					}, o.a.createElement(L, null)), o.a.createElement(w.a, {
+					}, o.a.createElement(L, null)), o.a.createElement(j.a, {
 						className: p.a.navLink,
-						onClick: f,
+						onClick: m,
 						to: "/settings/notifications"
 					}, o.a.createElement(R, null))))
 				},
 				M = e => o.a.createElement("div", {
 					className: p.a.bottomBar
-				}, o.a.createElement(w.a, {
+				}, o.a.createElement(j.a, {
 					className: p.a.bottomLink,
 					onClick: () => {
 						e.sendInboxClickSeeAll(), e.onBarClick()
@@ -678,24 +679,24 @@
 					}, o.a.createElement(F, {
 						isInboxMarkAllAsReadEnabled: s,
 						markAllAsRead: () => {
-							e.markAllAsRead(), t(Object(j.d)({
+							e.markAllAsRead(), t(Object(w.d)({
 								isMiniInbox: !0
 							}))
 						},
 						messagesBadgeCount: a,
 						onMessagesClick: () => {
-							t(Object(j.l)({
+							t(Object(w.l)({
 								badgeCount: i,
-								tab: j.c.Messages
-							})), t(Object(j.e)()), n()
+								tab: w.c.Messages
+							})), t(Object(w.e)()), n()
 						},
-						sendInboxClickSettings: () => t(Object(j.j)(j.a.MiniInbox)),
+						sendInboxClickSettings: () => t(Object(w.j)(w.a.MiniInbox)),
 						onBarClick: d
 					}), o.a.createElement(y, S({}, e, {
 						isPending: r,
 						onItemClick: d
 					})), (l || r) && o.a.createElement(M, {
-						sendInboxClickSeeAll: () => t(Object(j.i)()),
+						sendInboxClickSeeAll: () => t(Object(w.i)()),
 						onBarClick: d
 					})))
 				}
@@ -938,9 +939,9 @@
 			})), n.d(t, "k", (function() {
 				return u
 			})), n.d(t, "f", (function() {
-				return m
-			})), n.d(t, "l", (function() {
 				return f
+			})), n.d(t, "l", (function() {
+				return m
 			})), n.d(t, "m", (function() {
 				return p
 			})), n.d(t, "p", (function() {
@@ -1017,7 +1018,7 @@
 						}
 					})
 				},
-				m = ({
+				f = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
@@ -1036,7 +1037,7 @@
 						type: i
 					}
 				}),
-				f = ({
+				m = ({
 					badgeCount: e,
 					tab: t
 				}) => n => ({
@@ -1202,10 +1203,12 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return c
 			})), n.d(t, "b", (function() {
 				return d
+			})), n.d(t, "c", (function() {
+				return l
 			}));
 			var i = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				s = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -1235,6 +1238,13 @@
 					snoovatar: o.snoovatarActiveForBuilderEvent(e)
 				}),
 				d = e => ({
+					...o.defaults(e),
+					source: "avatar_builder",
+					action: "click",
+					noun: "close",
+					snoovatar: o.snoovatarActiveForBuilderEvent(e)
+				}),
+				l = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
@@ -1438,9 +1448,9 @@
 			})), n.d(t, "e", (function() {
 				return u
 			})), n.d(t, "f", (function() {
-				return m
-			})), n.d(t, "g", (function() {
 				return f
+			})), n.d(t, "g", (function() {
+				return m
 			})), n.d(t, "a", (function() {
 				return p
 			}));
@@ -1479,8 +1489,8 @@
 				u = (e, {
 					subredditId: t
 				}) => e.features.banned.loadMore[t],
-				m = e => e.features.banned.search.api.pending,
-				f = e => e.features.banned.search.result,
+				f = e => e.features.banned.search.api.pending,
+				m = e => e.features.banned.search.result,
 				p = e => e.features.banned.inContext
 		},
 		"./src/reddit/selectors/experiments/econ/avatarMarketing.ts": function(e, t, n) {
@@ -1494,4 +1504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.d299234e2d29be6cac45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.90db67fcabea2c1d2c02.js.map
