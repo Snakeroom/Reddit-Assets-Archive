@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.a3649ffc9e017b534ef1.js
-// Retrieved at 4/15/2021, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.95038e28707248ea8676.js
+// Retrieved at 4/15/2021, 8:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -4983,7 +4983,8 @@
 				mIsOpen: "_2azsE3I8rle1m5FBqLLHpN",
 				outerContainer: "_1gVVmSnHZpkUgVShsn7-ua",
 				innerContainer: "_1_TJAX-8zAT3vVN1Iz7cys",
-				predictionsFilter: "jU3ijmuG8CyRDQhPOHdw4"
+				predictionsFilter: "jU3ijmuG8CyRDQhPOHdw4",
+				liveIcon: "_39JxJrjNw5NY_Q0ARn8NRe"
 			}
 		},
 		"./src/reddit/components/SubredditNav/index.tsx": function(e, t, n) {
@@ -5175,6 +5176,9 @@
 					})),
 					m = Object(i.e)(t => Object(D.c)(t, {
 						subredditId: e
+					})),
+					p = Object(i.e)(t => Object(D.b)(t, {
+						subredditId: e
 					}));
 				return Object(r.useEffect)(() => {
 					o && a(Object(F.v)())
@@ -5188,7 +5192,11 @@
 					to: `${l.url}predictions/`
 				}, W._("Predictions", null, {
 					hk: "Cv5GC"
-				})) : null
+				}), p && s.a.createElement("span", {
+					className: g.a.liveIcon
+				}, W._("Live", null, {
+					hk: "1o89m4"
+				}))) : null
 			}
 			var U = n("./src/lib/constants/index.ts");
 			const {
@@ -8436,4 +8444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.a3649ffc9e017b534ef1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.95038e28707248ea8676.js.map
