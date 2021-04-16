@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9d4c21a3ef7e06c45cfa.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.c3b2054247492a7d5fb6.js
+// Retrieved at 4/15/2021, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, i) {
@@ -502,9 +502,12 @@
 					user: _,
 					userName: p,
 					onPresenceIndicatorInViewport: h,
-					isCommentsPageAd: g,
+					omitResponsivePresenceWrapper: g,
 					...v
-				} = e, O = !!t && Object(a.e)(t) === p, y = O ? t : _, w = y && y.accountIcon || i, I = _ ? _.isNSFW : s, x = Object(c.a)(w), k = n.a.createElement(f.a, b({}, v, {
+				} = e, O = !!t && Object(a.e)(t) === p, y = O ? t : _, w = y && y.accountIcon || i, I = _ ? _.isNSFW : s, x = Object(c.a)(w), k = x ? n.a.createElement(u.a, {
+					headshot: w,
+					className: e.className
+				}) : n.a.createElement(f.a, b({}, v, {
 					iconUrl: w,
 					isCurrentUser: O,
 					isNSFW: I
@@ -513,10 +516,7 @@
 					className: Object(r.a)(m.a.userIconWrapper, {
 						[m.a.hasHeadShotWrapper]: x
 					})
-				}, x ? n.a.createElement(u.a, {
-					headshot: w,
-					className: e.className
-				}) : k, l && n.a.createElement(d.a, {
+				}, k, l && n.a.createElement(d.a, {
 					showPresence: !0,
 					isHighlighted: o,
 					onceInViewport: h
@@ -2992,4 +2992,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9d4c21a3ef7e06c45cfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.c3b2054247492a7d5fb6.js.map
