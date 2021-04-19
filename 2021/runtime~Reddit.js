@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.3dd2b66d448a3947280d.js
-// Retrieved at 4/19/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c3519bcab0e21a9356c0.js
+// Retrieved at 4/19/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && P.push(a[d][0]), a[d] = 0;
@@ -530,13 +530,13 @@
 					"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "4e2cf32fa9156be36971",
 					"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "9371a622018cdd3c8b83",
 					"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "2b177a93b8244e2d5e8f",
-					"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03": "0715a3d6afd1f039daca",
+					"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03": "c1e24480c60066b39f70",
 					"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "7153f95f3fff55bae071",
 					"ProfileComments~ProfileOverview~ProfilePrivate": "2f0f60e0fc6085b6c900",
 					ProfileComments: "b640308593675bff0343",
 					ProfileOverview: "5d0c1b5939852667c42c",
 					ProfilePrivate: "bc562e1e0e902c70dd9e",
-					SearchResults: "066aa50ce994ddedde0a",
+					SearchResults: "b3de79f3841b9087d02e",
 					"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "f5de3df9528071f0ed51",
 					ModQueuePages: "ea0cfa5c498ab3c6d9d7",
 					"Multireddit~reddit-components-AdHocMultiredditSidebar": "a540165a855b3fba373b",
@@ -604,8 +604,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "6fc214a83d7c32e9f89c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "8571985fa9d2320d7639",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "63006c397bb4b60ed4ae",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "1021665717274c06da3a",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -715,7 +715,7 @@
 					ChatPage: "31d6cfe0d16ae931b73c",
 					ChatReportFlow: "b8a4a886228539b00cde",
 					"ChatMessageInput~ChatPost": "7fdd2c0be3326fa7e24c",
-					ChatPost: "cc8239f8c6b4dda7367f",
+					ChatPost: "c8a907ee78cd9479d384",
 					CommentsPageNativeAd: "47e9b2a379260795ed9c",
 					EconomicsSubredditPremiumSidebarCards: "a44fdfe118e2d2974673",
 					HarbergerTaxBannerPurchaseCTA: "a8576f0c16cb09aecc82",
@@ -1081,13 +1081,13 @@
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "8829681550671cd539c4",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "541ac802071e00d9a306",
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "af0bf502aa5ff1ea1a3f",
-						"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03": "7e56d2b93692225214cc",
+						"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03": "e2439ce62fe07584416d",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "1d8d5c42df71e2a9e501",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "cce2b4100e457e2e1c56",
 						ProfileComments: "19665a0063de7a011ae5",
 						ProfileOverview: "0c84b0801b6549fbf3fd",
 						ProfilePrivate: "ed7e66e7b406e848692d",
-						SearchResults: "cf55c162920f94894da3",
+						SearchResults: "49541be08d5972c1cfb1",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "93b92fecbe94f8c1faf2",
 						ModQueuePages: "a982184d244b02d74778",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "ba6c408b73d24ab62528",
@@ -1155,13 +1155,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "322d52f065427dafea1e",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "dcc7618735dc15e90ba5",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "ca640fe770a8c0f2e50f",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "84af2ff5a5e89bcc3a4f",
 						"translations/de_DE-json": "28ed1dec3b32d2f36a69",
 						"translations/es_ES-json": "d42e63e442fc1fe27622",
 						"translations/fr_FR-json": "72de0c7b94a1ff6323a1",
 						"translations/it_IT-json": "8c1a616200fb0302175a",
-						"translations/pseudo_ext-json": "c0fe1751471aa7fae44c",
+						"translations/pseudo_ext-json": "d94d25e5c39363926b50",
 						"translations/pseudo_long-json": "e074eda9d3a5d7f07e53",
 						"translations/pseudo_short-json": "9a70b98cf209b536afb3",
 						"translations/pt_BR-json": "e19647a8d31d060efcf3",
@@ -1266,7 +1266,7 @@
 						ChatPage: "86863bf7c87f03003f7d",
 						ChatReportFlow: "8178e3213d617e04bc98",
 						"ChatMessageInput~ChatPost": "6c5844514aeea9ee7165",
-						ChatPost: "2c3f80c78fc979ecbefd",
+						ChatPost: "9182d9f750c5de61f6b7",
 						CommentsPageNativeAd: "ea037fcd693c586373cc",
 						EconomicsSubredditPremiumSidebarCards: "71dc1b54061e429ba94a",
 						HarbergerTaxBannerPurchaseCTA: "d1f5f840445386a69322",
@@ -1385,4 +1385,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3dd2b66d448a3947280d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c3519bcab0e21a9356c0.js.map
