@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.5628d8ee80fdacdd47c9.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.2f4171913c4e39b58a05.js
+// Retrieved at 4/19/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/index.tsx": function(e, t, a) {
@@ -8,9 +8,9 @@
 			var n = a("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
 				s = a("./node_modules/react/index.js"),
 				i = a.n(s),
-				l = a("./src/lib/classNames/index.ts"),
-				r = a("./src/config.ts"),
-				o = a("./src/lib/lessComponent.tsx"),
+				r = a("./src/lib/classNames/index.ts"),
+				o = a("./src/config.ts"),
+				l = a("./src/lib/lessComponent.tsx"),
 				c = a("./src/reddit/icons/svgs/Chat/index.tsx");
 			var d = e => i.a.createElement("svg", {
 					className: e.className,
@@ -66,30 +66,30 @@
 			}), i.a.createElement("path", {
 				d: "M14 5.5a.5.5 0 00.35-.85l-4-4a.5.5 0 00-.71 0l-4 4A.5.5 0 006 5.5h2v12a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-12z"
 			}));
-			var g = e => i.a.createElement("svg", {
+			var f = e => i.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
 			}, i.a.createElement("path", {
 				d: "M17 4h-2V3a1 1 0 00-1-1H6a1 1 0 00-1 1v1H3a1 1 0 00-1 1v3.28a2 2 0 00.77 1.57l3 2.45A5 5 0 009 14.68V17H7a1 1 0 000 2h6a1 1 0 000-2h-2v-2.32a5 5 0 003.22-2.38l3-2.42a2 2 0 00.78-1.6V5a1 1 0 00-1-1zM4 6h1v3.09l-1-.81zm12 2.3l-1 .79V6h1z"
 			}));
-			var f = e => i.a.createElement("svg", {
+			var h = e => i.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 20 20"
 				}, i.a.createElement("path", {
 					d: "M17.57 9.31l-7.21-7.65a.52.52 0 00-.73 0l-7.2 7.65A1 1 0 003.16 11H7v6.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V11h3.84a1 1 0 00.73-1.69z"
 				})),
-				h = a("./src/reddit/models/NotificationInbox/index.ts"),
+				g = a("./src/reddit/models/NotificationInbox/index.ts"),
 				w = a("./src/reddit/components/NotificationUnit/index.m.less"),
 				N = a.n(w);
-			const x = o.a.wrapped(c.a, "NotifIcon", N.a),
-				T = o.a.wrapped(d, "NotifIcon", N.a),
-				O = o.a.wrapped(m.a, "NotifIcon", N.a),
-				M = o.a.wrapped(p, "NotifIcon", N.a),
-				I = o.a.wrapped(u.a, "NotifIcon", N.a),
-				y = o.a.wrapped(v.a, "RedditorIcon", N.a),
-				A = o.a.wrapped(e => i.a.createElement("svg", {
+			const x = l.a.wrapped(c.a, "NotifIcon", N.a),
+				O = l.a.wrapped(d, "NotifIcon", N.a),
+				T = l.a.wrapped(m.a, "NotifIcon", N.a),
+				M = l.a.wrapped(p, "NotifIcon", N.a),
+				C = l.a.wrapped(u.a, "NotifIcon", N.a),
+				I = l.a.wrapped(v.a, "RedditorIcon", N.a),
+				A = l.a.wrapped(e => i.a.createElement("svg", {
 					className: e.className,
 					xmlns: "http://www.w3.org/2000/svg",
 					viewBox: "0 0 12 12"
@@ -99,11 +99,11 @@
 					d: "M10.934 5.208C10.16 3.365 7.503 2.586 5.1 2.613v-.812a.593.593 0 00-.358-.55.595.595 0 00-.647.107L.997 4.198a.302.302 0 000 .442l3.098 2.84a.594.594 0 00.647.106.593.593 0 00.358-.55V6.21c1.914-.075 3.025.186 3.462.83.422.621.276 1.716-.434 3.255a.3.3 0 00.478.343c2.728-2.576 2.772-4.374 2.328-5.429",
 					fill: "inherit"
 				})), "NotifIcon", N.a),
-				C = o.a.wrapped(E, "NotifIcon", N.a),
-				_ = o.a.wrapped(b, "NotifIcon", N.a),
-				H = o.a.wrapped(g, "NotifIcon", N.a),
-				S = o.a.wrapped(f, "NotifIcon", N.a),
-				U = `${r.a.assetPath}/img/cake_day.png`,
+				_ = l.a.wrapped(E, "NotifIcon", N.a),
+				H = l.a.wrapped(b, "NotifIcon", N.a),
+				S = l.a.wrapped(f, "NotifIcon", N.a),
+				y = l.a.wrapped(h, "NotifIcon", N.a),
+				U = `${o.a.assetPath}/img/cake_day.png`,
 				R = e => {
 					const {
 						avatar: t,
@@ -111,30 +111,30 @@
 						messageType: n
 					} = e, s = (e => {
 						switch (e) {
-							case h.b.Chat:
+							case g.b.Chat:
 								return i.a.createElement(x, null);
-							case h.b.Comment:
-								return i.a.createElement(T, null);
-							case h.b.Heart:
+							case g.b.Comment:
 								return i.a.createElement(O, null);
-							case h.b.Live:
+							case g.b.Heart:
+								return i.a.createElement(T, null);
+							case g.b.Live:
 								return i.a.createElement(M, null);
-							case h.b.Redditor:
-								return i.a.createElement(y, null);
-							case h.b.Reply:
+							case g.b.Redditor:
+								return i.a.createElement(I, null);
+							case g.b.Reply:
 								return i.a.createElement(A, null);
-							case h.b.SortRising:
-								return i.a.createElement(C, null);
-							case h.b.SortTop:
+							case g.b.SortRising:
 								return i.a.createElement(_, null);
-							case h.b.Trophy:
+							case g.b.SortTop:
 								return i.a.createElement(H, null);
-							case h.b.Upvote:
+							case g.b.Trophy:
 								return i.a.createElement(S, null);
+							case g.b.Upvote:
+								return i.a.createElement(y, null);
 							default:
-								return i.a.createElement(I, null)
+								return i.a.createElement(C, null)
 						}
-					})(a), l = n === h.a.CakeDay, r = t && t.isNsfw, o = t && t.url;
+					})(a), r = n === g.a.CakeDay, o = t && t.isNsfw, l = t && t.url;
 					return i.a.createElement("span", {
 						className: N.a.avatarContainer
 					}, ((e, t, a) => t ? i.a.createElement("span", {
@@ -146,109 +146,108 @@
 					}) : i.a.createElement("img", {
 						className: N.a.avatar,
 						src: a || ""
-					}))(l, r, o), i.a.createElement("span", {
+					}))(r, o, l), i.a.createElement("span", {
 						className: N.a.notificationIconContainer
 					}, s))
 				};
-			var k, L = a("./node_modules/fbt/lib/FbtPublic.js"),
+			var D, L = a("./node_modules/fbt/lib/FbtPublic.js"),
 				j = a("./src/higherOrderComponents/addOverlayEvents.tsx"),
-				D = a("./src/higherOrderComponents/asTooltip.tsx"),
+				k = a("./src/higherOrderComponents/asTooltip.tsx"),
 				P = a("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				B = a("./src/reddit/controls/Dropdown/index.tsx"),
-				V = a("./node_modules/react-redux/es/index.js"),
-				z = a("./src/reddit/selectors/experiments/inboxRedesign.ts");
+				B = a("./src/reddit/controls/Dropdown/index.tsx");
 			! function(e) {
-				e.HideMessageType = "HideMessageType", e.HideNotif = "HideNotif", e.HideNotifUpdate = "HideNotifUpdate", e.HideSubUpdates = "HideSubUpdates"
-			}(k || (k = {}));
-			const F = o.a.wrapped(B.a, "StyledDropdown", N.a),
-				Z = Object(D.a)(F),
-				W = Object(P.a)(F, [j.a.Click]),
-				Y = e => {
-					const {
-						disableMessageTypeNotifications: t,
-						disableNotificationUpdates: a,
-						hideNotification: n,
-						isInTooltip: l,
-						isHideNotifEligible: r,
-						isOpen: o,
-						isToggleMessageTypeEligible: c,
-						isToggleNotificationUpdateEligible: d,
-						isToggleUpdateFromSubredditEligible: m,
-						hideSubredditNotifications: p,
-						sendInboxViewOverflow: u,
-						tooltipId: v
-					} = e, E = Object(V.e)(z.a);
-					Object(s.useEffect)(() => {
-						o && u()
-					}, [o]);
-					const b = e => {
-							let s;
-							switch (e) {
-								case k.HideNotif:
-									s = {
-										text: L.fbt._("Hide this notification", null, {
-											hk: "4F7TDr"
-										}),
-										handler: n
-									};
-									break;
-								case k.HideSubUpdates:
-									s = {
-										text: L.fbt._("Disable updates from this community", null, {
-											hk: "2mvqrp"
-										}),
-										handler: p
-									};
-									break;
-								case k.HideMessageType:
-									s = {
-										text: L.fbt._("Turn off this notification type", null, {
-											hk: "s60ek"
-										}),
-										handler: t
-									};
-									break;
-								case k.HideNotifUpdate:
-									s = {
-										text: L.fbt._("Don't get updates on this", null, {
-											hk: "L7aUS"
-										}),
-										handler: a
-									};
-									break;
-								default:
-									s = null
-							}
-							if (!s) return;
-							const {
-								handler: l,
-								text: r
-							} = s;
-							return i.a.createElement("button", {
-								className: N.a.overflowMenuOption,
-								onClick: l
-							}, r)
-						},
-						g = l ? W : Z;
-					return i.a.createElement(g, {
-						id: v,
-						isOverlayOff: !0,
-						isOpen: o,
-						tooltipId: v,
-						tooltipPosition: ["right", "top"]
-					}, i.a.createElement("div", {
-						className: N.a.overflowMenuContainer
-					}, r && b(k.HideNotif), m && !E && b(k.HideSubUpdates), c && !E && b(k.HideMessageType), d && b(k.HideNotifUpdate)))
-				};
-			var K = a("./src/reddit/controls/MetaData/index.tsx");
-			var G = e => i.a.createElement("svg", {
+				e.HideNotif = "HideNotif", e.HideNotifUpdate = "HideNotifUpdate", e.HideSubUpdates = "HideSubUpdates"
+			}(D || (D = {}));
+			const V = l.a.wrapped(B.a, "StyledDropdown", N.a),
+				z = Object(k.a)(V),
+				F = Object(P.a)(V, [j.a.Click]);
+			z.displayName = "UnawareDropdown", F.displayName = "AwareDropdown";
+			const Z = l.a.button("HideNotif", N.a);
+			Z.displayName = "HideNotif";
+			const W = l.a.button("HideNotifUpdate", N.a);
+			W.displayName = "HideNotifUpdate";
+			const Y = l.a.button("HideSubUpdates", N.a);
+			Y.displayName = "HideSubUpdates";
+			const K = e => {
+				const {
+					disableNotificationUpdates: t,
+					hideNotification: a,
+					isInTooltip: n,
+					isHideNotifEligible: r,
+					isOpen: o,
+					isToggleNotificationUpdateEligible: l,
+					isToggleUpdateFromSubredditEligible: c,
+					hideSubredditNotifications: d,
+					sendInboxViewOverflow: m,
+					tooltipId: p
+				} = e;
+				Object(s.useEffect)(() => {
+					o && m()
+				}, [o]);
+				const u = e => {
+						let n;
+						switch (e) {
+							case D.HideNotif:
+								n = {
+									text: L.fbt._("Hide this notification", null, {
+										hk: "4F7TDr"
+									}),
+									handler: a,
+									Component: Z
+								};
+								break;
+							case D.HideSubUpdates:
+								n = {
+									text: L.fbt._("Disable updates from this community", null, {
+										hk: "2mvqrp"
+									}),
+									handler: d,
+									Component: Y
+								};
+								break;
+							case D.HideNotifUpdate:
+								n = {
+									text: L.fbt._("Don't get updates on this", null, {
+										hk: "L7aUS"
+									}),
+									handler: t,
+									Component: W
+								};
+								break;
+							default:
+								n = null
+						}
+						if (!n) return;
+						const {
+							handler: s,
+							text: r,
+							Component: o
+						} = n;
+						return i.a.createElement(o, {
+							className: N.a.overflowMenuOption,
+							onClick: s
+						}, r)
+					},
+					v = n ? F : z;
+				return i.a.createElement(v, {
+					id: p,
+					isOverlayOff: !0,
+					isOpen: o,
+					tooltipId: p,
+					tooltipPosition: ["right", "top"]
+				}, i.a.createElement("div", {
+					className: N.a.overflowMenuContainer
+				}, r && u(D.HideNotif), c && u(D.HideSubUpdates), l && u(D.HideNotifUpdate)))
+			};
+			var G = a("./src/reddit/controls/MetaData/index.tsx");
+			var $ = e => i.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, i.a.createElement("path", {
 				d: "M10,.375A9.625,9.625,0,1,0,19.625,10,9.636,9.636,0,0,0,10,.375ZM1.625,10A8.327,8.327,0,0,1,3.66,4.544l11.8,11.8A8.363,8.363,0,0,1,1.625,10ZM16.34,15.456,4.544,3.66a8.363,8.363,0,0,1,11.8,11.8Z"
 			}));
-			var $ = e => i.a.createElement("svg", {
+			var q = e => i.a.createElement("svg", {
 				className: e.className,
 				fill: "none",
 				xmlns: "http://www.w3.org/2000/svg",
@@ -258,7 +257,7 @@
 			}), i.a.createElement("path", {
 				d: "M14.672 5.384l-4.056-4.056a3.688 3.688 0 00-5.232 0L1.328 5.384a3.688 3.688 0 000 5.232l4.056 4.056a3.688 3.688 0 005.232 0l4.056-4.056a3.69 3.69 0 000-5.232zM6.512 11.6H4.984V6.624L3.672 7.2V5.776l2.4-1.088h.448L6.512 11.6zm5.6-.904c-.234.32-.552.57-.92.72a3.264 3.264 0 01-2.552 0 2.185 2.185 0 01-.912-.72 1.736 1.736 0 01-.336-1.04c-.005-.335.09-.663.272-.944.184-.293.437-.538.736-.712a1.864 1.864 0 01-.688-1.472A1.736 1.736 0 018 5.536a1.88 1.88 0 01.8-.68 2.712 2.712 0 012.248 0c.325.148.602.383.8.68.192.29.292.63.288.976a1.903 1.903 0 01-.696 1.456c.3.172.556.413.744.704.186.283.283.614.28.952a1.68 1.68 0 01-.368 1.072h.016z"
 			}));
-			var q = e => i.a.createElement("svg", {
+			var J = e => i.a.createElement("svg", {
 					className: e.className,
 					fill: "none",
 					xmlns: "http://www.w3.org/2000/svg",
@@ -266,17 +265,17 @@
 				}, i.a.createElement("path", {
 					d: "M14.672 5.384l-4.056-4.056a3.689 3.689 0 00-5.232 0L1.328 5.384a3.688 3.688 0 000 5.232l4.056 4.056a3.688 3.688 0 005.232 0l4.056-4.056a3.689 3.689 0 000-5.232zM8.928 3.952L8.704 9.36H7.296l-.24-5.408h1.872zm-.04 7.648a.96.96 0 01-.368.368 1.05 1.05 0 01-.52.136A1.033 1.033 0 017.48 12a1 1 0 01-.376-.376 1.072 1.072 0 010-1.04.944.944 0 01.376-.376.96.96 0 01.52-.144.975.975 0 01.52.144.928.928 0 01.368.376 1.024 1.024 0 010 1.048V11.6z"
 				})),
-				J = a("./src/reddit/icons/svgs/Trash2/index.tsx");
-			const Q = o.a.wrapped(J.b, "StateIcon", N.a);
-			Q.displayName = "Trash";
-			const X = o.a.wrapped(G, "StateIcon", N.a);
-			X.displayName = "Remove";
-			const ee = o.a.span("Text", N.a);
-			ee.displayName = "PostUnavailableText";
-			const te = o.a.div("PostUnavailableInfo", N.a),
-				ae = o.a.wrapped($, "WarningIcon", N.a),
-				ne = o.a.wrapped(q, "WarningIcon", N.a),
-				se = e => {
+				Q = a("./src/reddit/icons/svgs/Trash2/index.tsx");
+			const X = l.a.wrapped(Q.b, "StateIcon", N.a);
+			X.displayName = "Trash";
+			const ee = l.a.wrapped($, "StateIcon", N.a);
+			ee.displayName = "Remove";
+			const te = l.a.span("Text", N.a);
+			te.displayName = "PostUnavailableText";
+			const ae = l.a.div("PostUnavailableInfo", N.a),
+				ne = l.a.wrapped(q, "WarningIcon", N.a),
+				se = l.a.wrapped(J, "WarningIcon", N.a),
+				ie = e => {
 					const {
 						isNsfw: t,
 						isSpoiler: a,
@@ -304,104 +303,104 @@
 						src: s
 					})
 				},
-				ie = ({
+				re = ({
 					post: {
 						commentCount: e = 0,
 						isNsfw: t,
 						isSpoiler: a,
 						media: n,
 						removedByCategory: s,
-						score: r = 0,
-						thumbnail: o,
+						score: o = 0,
+						thumbnail: l,
 						title: c
 					},
 					isUnread: d
 				}) => {
 					var m, p;
-					const u = s === h.c.Deleted,
-						v = s && s !== h.c.Deleted,
-						E = Object(l.a)(N.a.postEmbedContainer, {
+					const u = s === g.c.Deleted,
+						v = s && s !== g.c.Deleted,
+						E = Object(r.a)(N.a.postEmbedContainer, {
 							[N.a.unread]: d
 						}),
-						b = Object(l.a)(N.a.postEmbedContent, {
+						b = Object(r.a)(N.a.postEmbedContent, {
 							[N.a.deleted]: u || v
 						}),
-						g = (null === (p = null === (m = null == n ? void 0 : n.obfuscated) || void 0 === m ? void 0 : m.content) || void 0 === p ? void 0 : p.url) && o.url,
-						f = null == o ? void 0 : o.url;
+						f = (null === (p = null === (m = null == n ? void 0 : n.obfuscated) || void 0 === m ? void 0 : m.content) || void 0 === p ? void 0 : p.url) && l.url,
+						h = null == l ? void 0 : l.url;
 					return i.a.createElement("span", {
 						className: E
 					}, i.a.createElement("span", {
 						className: b
 					}, i.a.createElement("span", null, i.a.createElement("span", {
 						className: N.a.postEmbedTitleContainer
-					}, t && i.a.createElement(ae, null), a && i.a.createElement(ne, null), i.a.createElement("p", {
+					}, t && i.a.createElement(ne, null), a && i.a.createElement(se, null), i.a.createElement("p", {
 						className: N.a.postEmbedTitle
 					}, c)), i.a.createElement("span", {
 						className: N.a.postEmbedMeta
-					}, !u && !v && i.a.createElement(i.a.Fragment, null, i.a.createElement(K.b, {
+					}, !u && !v && i.a.createElement(i.a.Fragment, null, i.a.createElement(G.b, {
 						isScoreHidden: !1,
-						score: r,
+						score: o,
 						useUpvotes: !0
-					}), i.a.createElement(K.c, null), Object(K.d)(e)), u && i.a.createElement(te, null, i.a.createElement(Q, null), i.a.createElement(ee, null, L.fbt._("Post deleted", null, {
+					}), i.a.createElement(G.c, null), Object(G.d)(e)), u && i.a.createElement(ae, null, i.a.createElement(X, null), i.a.createElement(te, null, L.fbt._("Post deleted", null, {
 						hk: "1bbVOR"
-					}))), v && i.a.createElement(te, null, i.a.createElement(X, null), i.a.createElement(ee, null, L.fbt._("Post removed", null, {
+					}))), v && i.a.createElement(ae, null, i.a.createElement(ee, null), i.a.createElement(te, null, L.fbt._("Post removed", null, {
 						hk: "MeMu3"
-					}))))), i.a.createElement(se, {
+					}))))), i.a.createElement(ie, {
 						isNsfw: t,
 						isSpoiler: a,
-						obfuscatedThumbnailUrl: g,
-						thumbnailUrl: f
+						obfuscatedThumbnailUrl: f,
+						thumbnailUrl: h
 					})))
 				};
-			var le = a("./src/lib/constants/index.ts"),
-				re = a("./src/lib/timeAgo/index.ts"),
-				oe = a("./src/reddit/icons/svgs/Menu/index.tsx");
-			const ce = o.a.wrapped(oe.a, "MenuIcon", N.a),
-				de = e => {
+			var oe = a("./src/lib/constants/index.ts"),
+				le = a("./src/lib/timeAgo/index.ts"),
+				ce = a("./src/reddit/icons/svgs/Menu/index.tsx");
+			const de = l.a.wrapped(ce.a, "MenuIcon", N.a),
+				me = e => {
 					const {
 						dropdownId: t,
 						isHideNotifEligible: a,
 						isInTooltip: n,
 						isOverflowMenuOpen: s,
-						isToggleMessageTypeEligible: r,
 						isToggleNotificationUpdateEligible: o,
-						isToggleUpdateFromSubredditEligible: c,
-						sendInboxClickOverflow: d,
-						sentAt: m,
-						setActiveOverflowMenuId: p,
-						title: u
-					} = e, v = a || r || o || c, E = Object(l.a)(N.a.menuButton, {
+						isToggleUpdateFromSubredditEligible: l,
+						sendInboxClickOverflow: c,
+						sentAt: d,
+						setActiveOverflowMenuId: m,
+						title: p
+					} = e, u = a || o || l, v = Object(r.a)(N.a.menuButton, {
 						[N.a.isOpen]: s
-					}), b = Date.parse(m) / le.Ib;
+					}), E = Date.parse(d) / oe.Ib;
 					return i.a.createElement("span", {
 						className: N.a.topBar
 					}, i.a.createElement("span", null, i.a.createElement("span", {
-						className: Object(l.a)(N.a.title, {
+						className: Object(r.a)(N.a.title, {
 							[N.a["m-tooltip"]]: n
 						})
-					}, u), i.a.createElement(K.c, null), i.a.createElement("span", {
+					}, p), i.a.createElement(G.c, null), i.a.createElement("span", {
 						className: N.a.timeAgo
-					}, Object(re.a)(b, !0))), v && i.a.createElement("button", {
+					}, Object(le.a)(E, !0))), u && i.a.createElement("button", {
 						"aria-expanded": s,
 						"aria-haspopup": !0,
-						className: E,
+						className: v,
 						id: t,
 						onClick: e => {
-							e.stopPropagation(), e.preventDefault(), s ? p("") : (d(), p(t))
+							e.stopPropagation(), e.preventDefault(), s ? m("") : (c(), m(t))
 						}
-					}, i.a.createElement(ce, null)))
+					}, i.a.createElement(de, null)))
 				};
-			var me = a("./src/reddit/controls/InternalLink/index.tsx"),
-				pe = a("./src/reddit/helpers/trackers/inbox.ts"),
-				ue = a("./src/reddit/hooks/useTracking.ts"),
-				ve = a("./src/reddit/actions/toaster.ts"),
-				Ee = a("./src/reddit/models/Toast/index.ts"),
-				be = a("./src/reddit/selectors/user.ts");
+			var pe = a("./src/reddit/controls/InternalLink/index.tsx"),
+				ue = a("./src/reddit/helpers/trackers/inbox.ts"),
+				ve = a("./src/reddit/hooks/useTracking.ts"),
+				Ee = a("./node_modules/react-redux/es/index.js"),
+				be = a("./src/reddit/actions/toaster.ts"),
+				fe = a("./src/reddit/models/Toast/index.ts"),
+				he = a("./src/reddit/selectors/user.ts");
 			t.default = e => {
-				const t = Object(ue.a)(),
-					a = Object(V.d)(),
-					r = Object(V.e)(be.V),
-					[o, c] = Object(s.useState)(!1),
+				const t = Object(ve.a)(),
+					a = Object(Ee.d)(),
+					o = Object(Ee.e)(he.V),
+					[l, c] = Object(s.useState)(!1),
 					{
 						activeOverflowMenuId: d,
 						isInboxPostEmbedEnabled: m,
@@ -413,102 +412,95 @@
 				if (!u) return null;
 				const {
 					avatar: b,
-					body: g,
-					context: f,
+					body: f,
+					context: h,
 					deeplinkUrl: w,
 					isHideNotifEligible: x,
-					isToggleMessageTypeEligible: T,
 					isToggleNotificationUpdateEligible: O,
-					isToggleUpdateFromSubredditEligible: M,
-					icon: I,
-					id: y,
-					readAt: A,
-					sentAt: C,
+					isToggleUpdateFromSubredditEligible: T,
+					icon: M,
+					id: C,
+					readAt: I,
+					sentAt: A,
 					title: _
-				} = u, H = f && f.messageType, S = f && f.comment && f.comment.parent && f.comment.parent.id, U = f && f.post && f.post.id, k = f && f.post, L = f && f.subreddit && f.subreddit.id, j = null == f ? void 0 : f.isBodyHidden, D = null == f ? void 0 : f.isPostHidden, P = !A, B = `notif-${p?"tooltip":""}-menu-${y}`, z = B === d, F = H === h.a.CommentReply ? S : U, Z = Object(l.a)(e.className, N.a.notificationItem, {
-					[N.a.unread]: P,
-					[N.a.isNightMode]: r
-				}), W = {
-					id: y,
-					isClicked: !!A,
+				} = u, H = h && h.messageType, S = h && h.comment && h.comment.parent && h.comment.parent.id, y = h && h.post && h.post.id, U = h && h.post, D = h && h.subreddit && h.subreddit.id, L = null == h ? void 0 : h.isBodyHidden, j = null == h ? void 0 : h.isPostHidden, k = !I, P = `notif-${p?"tooltip":""}-menu-${C}`, B = P === d, V = H === g.a.CommentReply ? S : y, z = Object(r.a)(e.className, N.a.notificationItem, {
+					[N.a.unread]: k,
+					[N.a.isNightMode]: o
+				}), F = {
+					id: C,
+					isClicked: !!I,
 					isViewed: !0,
 					type: H
-				}, K = e => t(Object(pe.h)({
-					...W,
+				}, Z = e => t(Object(ue.h)({
+					...F,
 					actionInfoType: e
-				})), G = e => {
-					t(Object(pe.q)({
-						...W,
-						actionInfoType: e
-					}))
-				}, $ = () => {
-					e.markNotificationAsRead(y, H)
+				})), W = () => {
+					e.markNotificationAsRead(C, H)
 				};
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("li", {
-					className: Z
-				}, i.a.createElement(me.a, {
+					className: z
+				}, i.a.createElement(pe.a, {
 					className: N.a.link,
 					onClick: e => {
-						(null == k ? void 0 : k.removedByCategory) ? (e.preventDefault(), a(Object(ve.f)({
-							kind: Ee.b.Error,
+						(null == U ? void 0 : U.removedByCategory) ? (e.preventDefault(), a(Object(be.f)({
+							kind: fe.b.Error,
 							text: "Sorry, this content is no longer available.",
-							duration: ve.a
-						}))) : p && E && E(), t(Object(pe.f)(W))
+							duration: be.a
+						}))) : p && E && E(), t(Object(ue.f)(F))
 					},
-					onMouseDown: $,
-					onKeyDown: $,
+					onMouseDown: W,
+					onKeyDown: W,
 					to: w
 				}, i.a.createElement(R, {
 					avatar: b,
-					iconType: I,
+					iconType: M,
 					messageType: H
 				}), i.a.createElement("span", {
 					className: N.a.contentContainer
-				}, i.a.createElement(de, {
-					dropdownId: B,
+				}, i.a.createElement(me, {
+					dropdownId: P,
 					isHideNotifEligible: x,
 					isInTooltip: p,
-					isOverflowMenuOpen: z,
-					isToggleMessageTypeEligible: T,
+					isOverflowMenuOpen: B,
 					isToggleNotificationUpdateEligible: O,
-					isToggleUpdateFromSubredditEligible: M,
-					sendInboxClickOverflow: () => t(Object(pe.g)(W)),
-					sentAt: C,
+					isToggleUpdateFromSubredditEligible: T,
+					sendInboxClickOverflow: () => t(Object(ue.g)(F)),
+					sentAt: A,
 					setActiveOverflowMenuId: v,
 					title: _
-				}), m && k && !D && i.a.createElement(ie, {
-					isUnread: P,
-					post: k
-				}), m && !j && i.a.createElement("span", {
+				}), m && U && !j && i.a.createElement(re, {
+					isUnread: k,
+					post: U
+				}), m && !L && i.a.createElement("span", {
 					className: N.a.body
-				}, g), !m && i.a.createElement("span", {
+				}, f), !m && i.a.createElement("span", {
 					className: N.a.body
-				}, g)))), i.a.createElement(Y, {
-					disableMessageTypeNotifications: () => {
-						const t = pe.b.DisableNotificationType;
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.disableMessageTypeNotifications(H, () => G(t)), K(t)
-					},
+				}, f)))), i.a.createElement(K, {
 					disableNotificationUpdates: () => {
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.disableNotificationUpdates(F), K(pe.b.HideSubreddit)
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.disableNotificationUpdates(V), Z(ue.b.HideSubreddit)
 					},
 					hideNotification: () => {
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideNotification(y), K(pe.b.HideUpdates)
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideNotification(C), Z(ue.b.HideUpdates)
 					},
 					hideSubredditNotifications: () => {
-						const t = pe.b.HideSubreddit;
-						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideSubredditNotifications(L, () => G(t)), K(t)
+						const a = ue.b.HideSubreddit;
+						e.isInTooltip && e.setActiveOverflowMenuId(""), e.hideSubredditNotifications(D, () => (e => {
+							t(Object(ue.q)({
+								...F,
+								actionInfoType: e
+							}))
+						})(a)), Z(a)
 					},
 					isInTooltip: p,
 					isHideNotifEligible: x,
-					isOpen: z,
-					isToggleMessageTypeEligible: !(!T || !H),
+					isOpen: B,
 					isToggleNotificationUpdateEligible: O,
-					isToggleUpdateFromSubredditEligible: !(!M || !L),
-					sendInboxViewOverflow: () => t(Object(pe.o)(W)),
-					tooltipId: B
+					isToggleUpdateFromSubredditEligible: !(!T || !D),
+					sendInboxViewOverflow: () => t(Object(ue.o)(F)),
+					tooltipId: P
 				}), i.a.createElement(n.a, {
 					onChange: e => {
-						e.isIntersecting && !o && (t(Object(pe.n)(W)), c(!0))
+						e.isIntersecting && !l && (t(Object(ue.n)(F)), c(!0))
 					},
 					rootMargin: "0px 0px 0px 0px",
 					threshold: .5
@@ -523,11 +515,11 @@
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
 				i = a("./src/higherOrderComponents/asTooltip.tsx"),
-				l = a("./src/reddit/constants/elementIds.ts"),
-				r = a("./src/reddit/contexts/InsideOverlay.tsx");
+				r = a("./src/reddit/constants/elementIds.ts"),
+				o = a("./src/reddit/contexts/InsideOverlay.tsx");
 
-			function o() {
-				return (o = Object.assign || function(e) {
+			function l() {
+				return (l = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
@@ -546,20 +538,20 @@
 					}
 					componentDidMount() {
 						if (this.props.isOverlay) {
-							const e = document.getElementById(l.d);
+							const e = document.getElementById(r.d);
 							this.setState({
 								container: e
 							})
 						}
 					}
 					render() {
-						return s.a.createElement(a, o({}, this.props, {
+						return s.a.createElement(a, l({}, this.props, {
 							container: this.state.container,
 							excludeContainerPosition: this.props.isOverlay
 						}))
 					}
 				}
-				return Object(r.b)(n)
+				return Object(o.b)(n)
 			}
 		},
 		"./src/reddit/controls/MetaData/index.m.less": function(e, t, a) {
@@ -581,11 +573,11 @@
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
 				s = a("./node_modules/react/index.js"),
 				i = a.n(s),
-				l = a("./src/lib/lessComponent.tsx"),
-				r = a("./src/lib/prettyPrintNumber/index.ts"),
-				o = (a("./src/lib/timeAgo/index.ts"), a("./src/reddit/controls/MetaData/index.m.less")),
-				c = a.n(o);
-			const d = l.a.span("metaText", c.a),
+				r = a("./src/lib/lessComponent.tsx"),
+				o = a("./src/lib/prettyPrintNumber/index.ts"),
+				l = (a("./src/lib/timeAgo/index.ts"), a("./src/reddit/controls/MetaData/index.m.less")),
+				c = a.n(l);
+			const d = r.a.span("metaText", c.a),
 				m = e => i.a.createElement(d, e, " · "),
 				p = ({
 					isScoreHidden: e,
@@ -593,19 +585,19 @@
 					useUpvotes: a,
 					...s
 				}) => {
-					const l = Object(r.b)(t),
-						o = n.fbt._({
+					const r = Object(o.b)(t),
+						l = n.fbt._({
 							"*": "{number} upvotes",
 							_1: "1 upvote"
-						}, [n.fbt._plural(t, "number", l)], {
+						}, [n.fbt._plural(t, "number", r)], {
 							hk: "2L3T21"
 						}),
 						c = e ? n.fbt._("Score hidden", null, {
 							hk: "SDk6B"
-						}) : a ? o : n.fbt._({
+						}) : a ? l : n.fbt._({
 							"*": "{number} points",
 							_1: "1 point"
-						}, [n.fbt._plural(t, "number", l)], {
+						}, [n.fbt._plural(t, "number", r)], {
 							hk: "gf67v"
 						});
 					return i.a.createElement(d, s, c)
@@ -613,7 +605,7 @@
 				u = e => i.a.createElement(d, null, n.fbt._({
 					"*": "{number} comments",
 					_1: "1 comment"
-				}, [n.fbt._plural(e, "number", Object(r.b)(e))], {
+				}, [n.fbt._plural(e, "number", Object(o.b)(e))], {
 					hk: "3bVMk9"
 				}))
 		},
@@ -701,15 +693,15 @@
 		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return o
+				return l
 			}));
 			var n = a("./node_modules/react/index.js"),
 				s = a.n(n),
 				i = a("./src/lib/classNames/index.ts"),
-				l = a("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				r = a.n(l);
-			const o = e => s.a.createElement("svg", {
-				className: Object(i.a)(r.a.icon, e.className),
+				r = a("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				o = a.n(r);
+			const l = e => s.a.createElement("svg", {
+				className: Object(i.a)(o.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
@@ -718,7 +710,7 @@
 			}), s.a.createElement("path", {
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
-			t.b = o
+			t.b = l
 		},
 		"./src/reddit/models/NotificationInbox/index.ts": function(e, t, a) {
 			"use strict";
@@ -742,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.5628d8ee80fdacdd47c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.2f4171913c4e39b58a05.js.map

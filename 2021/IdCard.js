@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.b57ad8284be580a2ad27.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.bb2fccbef15225067c90.js
+// Retrieved at 4/19/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2733,7 +2733,7 @@
 					experimentName: Ve.W,
 					experimentEligibilitySelector: Ke,
 					expEventOverride: !1
-				}) === Ve.fb.Enabled;
+				}) === Ve.eb.Enabled;
 			var Xe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				Qe = n("./src/reddit/selectors/structuredStyles.ts"),
 				Ze = n("./src/reddit/selectors/subscriptions.ts"),
@@ -5176,9 +5176,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.Zb.Enabled === Object(r.c)(e, {
+			const i = e => s.Xb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Tb
+				experimentName: s.Sb
 			})
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
@@ -5252,4 +5252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b57ad8284be580a2ad27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.bb2fccbef15225067c90.js.map

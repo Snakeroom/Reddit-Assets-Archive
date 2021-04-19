@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea9bcd45429880a11032.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1f2954e961151a7379d9.js
+// Retrieved at 4/19/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2037,7 +2037,7 @@
 			const ae = Object(i.a)(w.J, e => e.some(ie.c)),
 				ce = Object(i.a)(ae, e => e),
 				de = (e, t) => Object(re.c)(e, {
-					experimentName: Q.ib,
+					experimentName: Q.hb,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: n
@@ -2141,7 +2141,7 @@
 						isActionBarAnimationEnabled: Oe,
 						postId: we,
 						postIds: ke
-					} = e, je = !!e.redditStyle || !!e["data-redditstyle"], Pe = je ? void 0 : p, Ce = Object(d.a)(re), _e = ie && Ce, Ee = Object(a.a)(re), Se = Object(c.a)(re), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Ie = ye && Ne, Me = n ? n - W.a : void 0, Ae = !(k && H || $), Le = (e => e === Q.yc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.yc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
+					} = e, je = !!e.redditStyle || !!e["data-redditstyle"], Pe = je ? void 0 : p, Ce = Object(d.a)(re), _e = ie && Ce, Ee = Object(a.a)(re), Se = Object(c.a)(re), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Ie = ye && Ne, Me = n ? n - W.a : void 0, Ae = !(k && H || $), Le = (e => e === Q.wc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.wc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2156,7 +2156,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Re = !!ee && !Object(Q.ud)(ee), We = (!y || Re) && !le.isSponsored, De = Object(j.t)(le, g), {
+					})(e), Re = !!ee && !Object(Q.sd)(ee), We = (!y || Re) && !le.isSponsored, De = Object(j.t)(le, g), {
 						source: Ve
 					} = De, ze = o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, {
 						className: Object(P.a)(be.a.container, r, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -3428,11 +3428,11 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.ob
+					experimentName: s.nb
 				});
-				return !(!t || Object(s.ud)(t))
+				return !(!t || Object(s.sd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea9bcd45429880a11032.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1f2954e961151a7379d9.js.map

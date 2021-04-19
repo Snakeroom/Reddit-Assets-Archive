@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.e5e51838f9fa9b797b86.js
-// Retrieved at 4/15/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.81a1c67daba3fa785fb2.js
+// Retrieved at 4/19/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -510,9 +510,9 @@
 				F = () => void 0,
 				T = Object(a.c)({
 					crowdControlLevelEnabled: b.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => j.zc.Enabled === Object(N.c)(e, {
+					postLevelCrowdControlEnabled: e => j.xc.Enabled === Object(N.c)(e, {
 						experimentEligibilitySelector: D.K,
-						experimentName: j.pc
+						experimentName: j.nc
 					}),
 					shouldApplyPostLevelCrowdControl: (e, {
 						post: t
@@ -655,7 +655,7 @@
 					}) => Object(v.b)(t)(e),
 					isModToMemberShareEnabled: b.d.modToMemberShare
 				}),
-				z = Object(r.b)(V, (e, {
+				H = Object(r.b)(V, (e, {
 					post: t
 				}) => ({
 					onApprovePost: () => e(Object(d.n)(t.id)),
@@ -680,8 +680,8 @@
 					onSpoilerPost: () => e(Object(d.Q)(t.id)),
 					onStickyPost: () => e(Object(d.T)(t.id))
 				})),
-				H = Object(p.a)(C.a),
-				K = G(z(Object(u.c)(e => {
+				z = Object(p.a)(C.a),
+				K = G(H(Object(u.c)(e => {
 					const {
 						canEditFlair: t,
 						hasModFullPerms: s,
@@ -709,7 +709,7 @@
 						sendEvent: j,
 						tooltipId: I
 					} = e, N = R.distinguishType === i.C.MODERATOR, L = N ? i.C.NONE : i.C.MODERATOR, P = Object(m.b)(R.id, c);
-					return n.a.createElement(H, {
+					return n.a.createElement(z, {
 						className: W.a.dropdown,
 						isOpen: r,
 						tooltipId: I
@@ -1524,4 +1524,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.e5e51838f9fa9b797b86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.81a1c67daba3fa785fb2.js.map
