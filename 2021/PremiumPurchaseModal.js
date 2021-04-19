@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.541a536f8edda2147b3b.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.f518a28c9a1a2815666c.js
+// Retrieved at 4/19/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1088,7 +1088,7 @@
 			e.exports = {
 				paymentOption: "cc9iRBOTxZHHCpcEduRmM",
 				paymentOptionContent: "_1EqrH-JzLp3XTA4g36WIrt",
-				isNightmode: "_1j5SaVBaG6I__sQRpYS4-I",
+				isNightMode: "_1BbnbPaXpwTwmI3m0OOyzJ",
 				paymentMethodIcon: "_3h70jT0m-MFJMB5LtPpDF5"
 			}
 		},
@@ -1113,7 +1113,7 @@
 				onChange: e.onChange
 			}), a.a.createElement("div", {
 				className: Object(s.a)(d.a.paymentOptionContent, {
-					[d.a.isNightmode]: e.nightmode
+					[d.a.isNightMode]: e.nightmode
 				})
 			}, e.children));
 			class u extends a.a.Component {
@@ -1297,8 +1297,8 @@
 				}
 			}
 			var N = Object(h.c)(S),
-				R = n("./node_modules/react-stripe-elements/es/index.js"),
-				M = n("./src/reddit/components/CheckoutForm/index.tsx"),
+				M = n("./node_modules/react-stripe-elements/es/index.js"),
+				R = n("./src/reddit/components/CheckoutForm/index.tsx"),
 				I = n("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				B = n("./src/reddit/controls/Button/index.tsx");
 			var A = e => {
@@ -1381,7 +1381,7 @@
 					})))
 				}
 			}
-			var L = Object(R.injectStripe)(Object(h.c)(F));
+			var L = Object(M.injectStripe)(Object(h.c)(F));
 			var q = e => o.a.createElement("div", {
 				className: T.a.premiumPurchaseHeader,
 				style: {
@@ -1419,9 +1419,9 @@
 					}) : E.fbt._("month", null, {
 						hk: "1l20Gw"
 					});
-				return o.a.createElement(R.StripeProvider, {
+				return o.a.createElement(M.StripeProvider, {
 					apiKey: i.a.stripe.apiKey
-				}, o.a.createElement(R.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(q, {
+				}, o.a.createElement(M.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(q, {
 					onCloseClick: e.onCloseModal,
 					userName: e.userName
 				}), o.a.createElement("div", {
@@ -1431,7 +1431,7 @@
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
-				}), e.selectedPayment === d.yb && o.a.createElement(M.a, {
+				}), e.selectedPayment === d.yb && o.a.createElement(R.a, {
 					className: T.a.creditCard
 				}), o.a.createElement("div", {
 					className: T.a.checkoutFooter
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.541a536f8edda2147b3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.f518a28c9a1a2815666c.js.map

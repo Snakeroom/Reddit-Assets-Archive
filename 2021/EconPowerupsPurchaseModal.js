@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b4c5725732968f141f98.js
-// Retrieved at 4/15/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0269db2041c3845834bc.js
+// Retrieved at 4/19/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1670,7 +1670,7 @@
 				fbt: ue
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = 100, me = Object(s.c)({
 				isAnonymous: C.c,
-				isNightmode: j.V,
+				isNightMode: j.V,
 				paypalErrorMessage: x.d,
 				powerups: C.i,
 				powerupsCount: C.d,
@@ -1689,7 +1689,7 @@
 			var fe = Object(a.b)(me)((function(e) {
 					const {
 						isAnonymous: t,
-						isNightmode: r,
+						isNightMode: r,
 						onCloseModal: s,
 						paypalErrorMessage: c,
 						powerups: i,
@@ -1866,7 +1866,7 @@
 			e.exports = {
 				paymentOption: "cc9iRBOTxZHHCpcEduRmM",
 				paymentOptionContent: "_1EqrH-JzLp3XTA4g36WIrt",
-				isNightmode: "_1j5SaVBaG6I__sQRpYS4-I",
+				isNightMode: "_1BbnbPaXpwTwmI3m0OOyzJ",
 				paymentMethodIcon: "_3h70jT0m-MFJMB5LtPpDF5"
 			}
 		},
@@ -1891,7 +1891,7 @@
 				onChange: e.onChange
 			}), a.a.createElement("div", {
 				className: Object(s.a)(d.a.paymentOptionContent, {
-					[d.a.isNightmode]: e.nightmode
+					[d.a.isNightMode]: e.nightmode
 				})
 			}, e.children));
 			class p extends a.a.Component {
@@ -2503,4 +2503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b4c5725732968f141f98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0269db2041c3845834bc.js.map

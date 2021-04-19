@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.3f67edd40f29f6c7dd9a.js
-// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.b10015d198815fcee943.js
+// Retrieved at 4/19/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PennyPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -751,7 +751,7 @@
 			})), n.d(t, "a", (function() {
 				return U
 			})), n.d(t, "e", (function() {
-				return Q
+				return Z
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -871,7 +871,7 @@
 							if (e && e.errors && e.errors.length) return void s(Object(y.stripeApiError)(M(e.errors)));
 							if (e.ok && "PAID" !== e.payment.status) return void p();
 							const t = Object(b.i)(c());
-							t && s(Q({
+							t && s(Z({
 								subredditId: n,
 								powerupsCount: o,
 								user: t,
@@ -931,7 +931,7 @@
 									token: e.providerExecution.billingAgreementToken,
 									url: e.providerExecution.billingAgreementApprovalUrl
 								};
-								if ("PAID" === o && s) return a(Q({
+								if ("PAID" === o && s) return a(Z({
 									subredditId: t,
 									powerupsCount: r,
 									user: s,
@@ -1048,7 +1048,7 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, G = Object(u.a)(f.R), Q = e => async (t, n) => {
+				}, G = Object(u.a)(f.R), Z = e => async (t, n) => {
 					t(G(e)), t(Object(C.g)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
@@ -1624,7 +1624,7 @@
 			e.exports = {
 				paymentOption: "cc9iRBOTxZHHCpcEduRmM",
 				paymentOptionContent: "_1EqrH-JzLp3XTA4g36WIrt",
-				isNightmode: "_1j5SaVBaG6I__sQRpYS4-I",
+				isNightMode: "_1BbnbPaXpwTwmI3m0OOyzJ",
 				paymentMethodIcon: "_3h70jT0m-MFJMB5LtPpDF5"
 			}
 		},
@@ -1649,7 +1649,7 @@
 				onChange: e.onChange
 			}), o.a.createElement("div", {
 				className: Object(s.a)(d.a.paymentOptionContent, {
-					[d.a.isNightmode]: e.nightmode
+					[d.a.isNightMode]: e.nightmode
 				})
 			}, e.children));
 			class u extends o.a.Component {
@@ -1936,4 +1936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.3f67edd40f29f6c7dd9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.b10015d198815fcee943.js.map

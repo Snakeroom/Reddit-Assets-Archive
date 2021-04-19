@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f355eb0c4a3ad8bf026b.js
-// Retrieved at 4/19/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d43d833a855e711e8e0a.js
+// Retrieved at 4/19/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1161,118 +1161,124 @@
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "l", (function() {
-				return d
-			})), i.d(t, "m", (function() {
-				return a
-			})), i.d(t, "f", (function() {
+			i.d(t, "n", (function() {
 				return l
-			})), i.d(t, "h", (function() {
-				return c
-			})), i.d(t, "i", (function() {
-				return u
 			})), i.d(t, "o", (function() {
+				return c
+			})), i.d(t, "f", (function() {
+				return u
+			})), i.d(t, "i", (function() {
 				return _
-			})), i.d(t, "p", (function() {
-				return p
 			})), i.d(t, "j", (function() {
-				return m
-			})), i.d(t, "n", (function() {
-				return h
-			})), i.d(t, "b", (function() {
-				return f
-			})), i.d(t, "G", (function() {
-				return b
-			})), i.d(t, "e", (function() {
-				return g
+				return p
 			})), i.d(t, "q", (function() {
-				return w
-			})), i.d(t, "t", (function() {
-				return y
+				return m
 			})), i.d(t, "r", (function() {
-				return v
-			})), i.d(t, "s", (function() {
-				return E
-			})), i.d(t, "w", (function() {
-				return S
-			})), i.d(t, "d", (function() {
-				return T
-			})), i.d(t, "H", (function() {
-				return O
-			})), i.d(t, "x", (function() {
-				return I
-			})), i.d(t, "v", (function() {
-				return j
-			})), i.d(t, "c", (function() {
-				return F
-			})), i.d(t, "y", (function() {
-				return R
-			})), i.d(t, "z", (function() {
-				return x
-			})), i.d(t, "F", (function() {
-				return C
-			})), i.d(t, "E", (function() {
-				return N
-			})), i.d(t, "g", (function() {
-				return D
-			})), i.d(t, "a", (function() {
-				return A
-			})), i.d(t, "C", (function() {
-				return P
-			})), i.d(t, "A", (function() {
-				return k
-			})), i.d(t, "D", (function() {
-				return B
-			})), i.d(t, "B", (function() {
-				return L
+				return h
 			})), i.d(t, "k", (function() {
-				return U
+				return f
+			})), i.d(t, "p", (function() {
+				return b
+			})), i.d(t, "b", (function() {
+				return g
+			})), i.d(t, "I", (function() {
+				return w
+			})), i.d(t, "e", (function() {
+				return y
+			})), i.d(t, "s", (function() {
+				return v
+			})), i.d(t, "v", (function() {
+				return E
+			})), i.d(t, "t", (function() {
+				return S
 			})), i.d(t, "u", (function() {
+				return T
+			})), i.d(t, "y", (function() {
+				return O
+			})), i.d(t, "d", (function() {
+				return I
+			})), i.d(t, "J", (function() {
+				return j
+			})), i.d(t, "z", (function() {
+				return F
+			})), i.d(t, "x", (function() {
+				return R
+			})), i.d(t, "c", (function() {
+				return x
+			})), i.d(t, "A", (function() {
+				return C
+			})), i.d(t, "B", (function() {
+				return N
+			})), i.d(t, "H", (function() {
+				return D
+			})), i.d(t, "G", (function() {
+				return A
+			})), i.d(t, "g", (function() {
+				return P
+			})), i.d(t, "a", (function() {
+				return k
+			})), i.d(t, "E", (function() {
+				return B
+			})), i.d(t, "C", (function() {
+				return L
+			})), i.d(t, "F", (function() {
+				return U
+			})), i.d(t, "D", (function() {
 				return M
+			})), i.d(t, "l", (function() {
+				return G
+			})), i.d(t, "w", (function() {
+				return q
+			})), i.d(t, "m", (function() {
+				return V
+			})), i.d(t, "h", (function() {
+				return W
 			}));
 			var n = i("./node_modules/lodash/values.js"),
 				r = i.n(n),
 				s = i("./src/chat/constants/channels.ts"),
-				o = i("./src/chat/constants/messages.ts");
-			const d = e => e.channels.invited.sortedKeys.length,
-				a = e => e.channels.joined.sortedKeys.length,
-				l = (e, t) => {
+				o = i("./src/chat/constants/messages.ts"),
+				d = i("./src/chat/models/Channel/index.ts"),
+				a = i("./src/chat/selectors/user.ts");
+			const l = e => e.channels.invited.sortedKeys.length,
+				c = e => e.channels.joined.sortedKeys.length,
+				u = (e, t) => {
 					if (!t) return;
 					const i = "string" == typeof t ? t : t.channelId;
 					return i ? e.channels.models[i] : void 0
 				},
-				c = e => {
+				_ = e => {
 					const {
 						currentPage: t
 					} = e.platform, i = t && t.urlParams.channelId;
-					if (i) return l(e, i)
+					if (i) return u(e, i)
 				},
-				u = e => {
-					const t = c(e);
+				p = e => {
+					const t = _(e);
 					if (t && t.channelState === s.b.JOINED) return t
 				},
-				_ = e => {
+				m = e => {
 					const {
 						channelId: t
 					} = e.channels.selected;
-					if (t) return l(e, t)
+					if (t) return u(e, t)
 				},
-				p = e => e.channels.selected && e.channels.selected.channelId,
-				m = e => c(e) || _(e),
-				h = e => {
+				h = e => e.channels.selected && e.channels.selected.channelId,
+				f = e => _(e) || m(e),
+				b = e => {
 					const {
 						user: t
-					} = e, i = m(e);
+					} = e, i = f(e);
 					if (i && i.members) return i.members.filter(e => e.id !== t.account.id)
 				},
-				f = (e, t) => {
-					const i = h(e);
+				g = (e, t) => {
+					const i = b(e);
 					return !(!i || !i.find(e => !!t[e.id].isNSFW))
 				},
-				b = e => {
-					return !!u(e)
+				w = e => {
+					return !!p(e)
 				},
-				g = e => {
+				y = e => {
 					const t = [],
 						i = e.user.account.id;
 					return r()(e.channels.models).forEach(e => {
@@ -1282,60 +1288,97 @@
 						}
 					}), t.length && t
 				},
-				w = e => r()(e.messages.models).filter(t => t.channelId === e.channels.selected.channelId),
-				y = e => r()(e.messages.models).filter(t => t.messageType === o.d.USER && t.channelId === e.channels.selected.channelId),
-				v = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
-				E = (e, t) => {
-					const i = _(e);
+				v = e => r()(e.messages.models).filter(t => t.channelId === e.channels.selected.channelId),
+				E = e => r()(e.messages.models).filter(t => t.messageType === o.d.USER && t.channelId === e.channels.selected.channelId),
+				S = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
+				T = (e, t) => {
+					const i = m(e);
 					return i && i[t]
 				},
-				S = e => e.channels.joined.hasMoreChannels,
-				T = e => e.channels.joined.fetchingChannels,
-				O = e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]),
-				I = e => e.channels.inviteListExpanded,
-				j = e => e.channels.invited.hasMoreChannels,
-				F = e => e.channels.invited.fetchingChannels,
-				R = e => e.channels.invited.sortedKeys.map(t => e.channels.models[t]),
-				x = e => {
-					const t = _(e);
+				O = e => e.channels.joined.hasMoreChannels,
+				I = e => e.channels.joined.fetchingChannels,
+				j = e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]),
+				F = e => e.channels.inviteListExpanded,
+				R = e => e.channels.invited.hasMoreChannels,
+				x = e => e.channels.invited.fetchingChannels,
+				C = e => e.channels.invited.sortedKeys.map(t => e.channels.models[t]),
+				N = e => {
+					const t = m(e);
 					return t && t.inviter && t.inviter.name
 				},
-				C = e => {
-					const t = c(e);
-					return Boolean(t && t.isMessageListLoaded)
-				},
-				N = e => e.channels.isCreatingChannel,
 				D = e => {
 					const t = _(e);
+					return Boolean(t && t.isMessageListLoaded)
+				},
+				A = e => e.channels.isCreatingChannel,
+				P = e => {
+					const t = m(e);
 					return t && t.channelState
 				},
-				A = e => {
-					const t = c(e);
+				k = e => {
+					const t = _(e);
 					return !(!t || !t.isModerator)
 				},
-				P = (e, t) => {
-					const i = l(e, t);
+				B = (e, t) => {
+					const i = u(e, t);
 					return !(!i || !i.isFrozen)
 				},
-				k = (e, t) => {
-					const i = l(e, t);
+				L = (e, t) => {
+					const i = u(e, t);
 					return !(!i || !i.isMuted)
 				},
-				B = (e, t) => {
-					const i = l(e, t);
+				U = (e, t) => {
+					const i = u(e, t);
 					return Boolean(i && i.isNotifsMuted)
 				},
-				L = (e, t) => {
-					const i = l(e, t);
+				M = (e, t) => {
+					const i = u(e, t);
 					return Boolean(i && i.isHidden)
 				},
-				U = (e, t) => {
+				G = (e, t) => {
 					var i;
 					return (null === (i = e.channels.draftMessages[t]) || void 0 === i ? void 0 : i.messageValue) || ""
 				},
-				M = e => {
+				q = e => {
 					var t;
-					return Boolean(null === (t = R(e)) || void 0 === t ? void 0 : t.length)
+					return Boolean(null === (t = C(e)) || void 0 === t ? void 0 : t.length)
+				},
+				V = (e, t) => {
+					if (t) {
+						const i = u(e, t),
+							n = Object(a.a)(e);
+						if (i && n) {
+							const e = i.channelState === s.b.JOINED,
+								t = i.channelState === s.b.INVITED;
+							let r, o, a;
+							for (const s of i.members) s.id === n ? o = s : s.id === (i.inviter && i.inviter.id) ? a = s : (!r || r.name.toLocaleLowerCase() > s.name.toLocaleLowerCase()) && (r = s);
+							return i.type === d.a.Direct ? {
+								firstUser: r || i.inviter
+							} : e && o && !r && !a ? {
+								firstUser: o
+							} : e && o && a ? {
+								firstUser: o,
+								secondUser: a
+							} : e && o && r ? {
+								firstUser: o,
+								secondUser: r
+							} : t && o && a ? {
+								firstUser: o,
+								secondUser: a
+							} : t && o && i.inviter ? {
+								firstUser: o,
+								secondUser: i.inviter
+							} : {
+								firstUser: i.inviter
+							}
+						}
+					}
+				},
+				W = (e, t) => {
+					var i;
+					const n = u(e, t),
+						r = V(e, t);
+					if (n) return n.type === d.a.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
 				}
 		},
 		"./src/chat/selectors/messages.ts": function(e, t, i) {
@@ -1378,7 +1421,7 @@
 				o = i("./src/chat/selectors/channels.ts"),
 				d = i("./src/chat/selectors/promos.ts");
 			const a = e => {
-					const t = Object(o.l)(e);
+					const t = Object(o.n)(e);
 					return e.messages.unread.basicChannelCount - t || 0
 				},
 				l = e => e.messages.unread,
@@ -1484,11 +1527,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("131527"),
+				buildNumber: r("131536"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1618870300"),
+				})("1618871738"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4040,14 +4083,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7d1c81540a3e66703c83c82df561ec044fe2d2d5-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c36eff151b8d6c9e7e2087da60d185d354837969a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7d1c81540a3e66703c83c82df561ec044fe2d2d5-production",
+						release: "36eff151b8d6c9e7e2087da60d185d354837969a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -4542,7 +4585,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "7d1c81540a3e66703c83c82df561ec044fe2d2d5-production",
+						releaseClient: "36eff151b8d6c9e7e2087da60d185d354837969a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -45219,4 +45262,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f355eb0c4a3ad8bf026b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d43d833a855e711e8e0a.js.map

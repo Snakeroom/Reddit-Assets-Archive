@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f268af06f539b835d05c.js
-// Retrieved at 4/19/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.bf5788c0e4f15a9bb1ae.js
+// Retrieved at 4/19/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -688,7 +688,7 @@
 				v = n("./src/reddit/components/VerticalVotes/index.m.less"),
 				g = n.n(v);
 			const w = Object(c.c)({
-					isNightmode: h.V,
+					isNightMode: h.V,
 					totalDiscount: b.d,
 					variantAnimationConfig: b.e
 				}),
@@ -723,7 +723,7 @@
 					const e = this.props,
 						{
 							downvoteButtonClassName: t,
-							isNightmode: n,
+							isNightMode: n,
 							shouldShowScore: s = !0,
 							upvoteButtonClassName: a,
 							containerRef: c,
@@ -748,7 +748,7 @@
 						compact: e.compact,
 						className: e.upvoteClassName,
 						id: e.upvoteTooltipId,
-						isNightmode: n,
+						isNightMode: n,
 						onClick: this.onUpvote,
 						voteState: x
 					}) : o.a.createElement("button", {
@@ -783,7 +783,7 @@
 						"data-click-id": "downvote",
 						className: e.downvoteClassName,
 						compact: e.compact,
-						isNightmode: n,
+						isNightMode: n,
 						onClick: this.onDownvote,
 						voteState: x
 					}) : o.a.createElement("button", {
@@ -899,7 +899,7 @@
 			const S = e => Object(o.a)({
 					[E.a.compact]: e.compact,
 					[E.a.dark]: Object(_.b)(Object(C.a)(e)),
-					[E.a.nightmode]: e.isNightmode
+					[E.a.nightmode]: e.isNightMode
 				}),
 				T = Object(a.a)(e => {
 					const {
@@ -2885,4 +2885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f268af06f539b835d05c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.bf5788c0e4f15a9bb1ae.js.map
