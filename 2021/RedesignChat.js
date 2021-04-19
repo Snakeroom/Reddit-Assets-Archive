@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.032be337ee785d6fe7b9.js
-// Retrieved at 4/19/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.710669f5026394270035.js
+// Retrieved at 4/19/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(t, e, n) {
@@ -672,11 +672,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Ub,
+					experimentName: c.Vb,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = t => Object(i.I)(t) || Object(i.J)(t),
-				u = Object(s.a)(o, t => t === c.Zb.Enabled)
+				u = Object(s.a)(o, t => t === c.ac.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(t, e, n) {
 			"use strict";
@@ -699,17 +699,17 @@
 					experimentName: c.R,
 					experimentEligibilitySelector: o
 				}), a.a),
-				u = Object(s.a)(d, t => t === c.cc.Enabled),
+				u = Object(s.a)(d, t => t === c.dc.Enabled),
 				b = Object(s.a)(t => Object(r.c)(t, {
+					experimentName: c.Xb,
+					experimentEligibilitySelector: o
+				}), a.a),
+				l = Object(s.a)(u, b, (t, e) => t && e === c.cc.Enabled),
+				h = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.Wb,
 					experimentEligibilitySelector: o
 				}), a.a),
-				l = Object(s.a)(u, b, (t, e) => t && e === c.bc.Enabled),
-				h = Object(s.a)(t => Object(r.c)(t, {
-					experimentName: c.Vb,
-					experimentEligibilitySelector: o
-				}), a.a),
-				m = Object(s.a)(h, t => t === c.ac.Enabled),
+				m = Object(s.a)(h, t => t === c.bc.Enabled),
 				f = Object(s.a)(t => Object(r.c)(t, {
 					experimentName: c.T,
 					experimentEligibilitySelector: o
@@ -718,4 +718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.032be337ee785d6fe7b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.710669f5026394270035.js.map
