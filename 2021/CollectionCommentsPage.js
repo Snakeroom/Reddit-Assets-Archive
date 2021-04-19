@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9ee724121029f0cba8a3.js
-// Retrieved at 4/19/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.242c25e4027459977e9f.js
+// Retrieved at 4/19/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7577,7 +7577,7 @@
 						name: r
 					} = t, o = Object(_.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(x.sd)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
+					return i = !e || Object(x.od)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
 						hk: "2g363L"
 					}) : e === x.Ob.Nlp15Max ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
@@ -7600,7 +7600,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.sd)(r), u = i && i.id;
+					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.od)(r), u = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -11438,7 +11438,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.M
 				});
-				return !!t && !Object(n.sd)(t)
+				return !!t && !Object(n.od)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -11453,7 +11453,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.nb
 				});
-				return !(!t || Object(n.sd)(t))
+				return !(!t || Object(n.od)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -11664,4 +11664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9ee724121029f0cba8a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.242c25e4027459977e9f.js.map
