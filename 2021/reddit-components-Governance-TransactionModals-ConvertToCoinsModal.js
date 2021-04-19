@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f961adcbec97b9a66034.js
-// Retrieved at 3/31/2021, 10:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.88b811b5dd2cfa53375f.js
+// Retrieved at 4/19/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -434,6 +434,9 @@
 		},
 		"./src/graphql/operations/DeleteSavedStripeCard.json": function(e) {
 			e.exports = JSON.parse('{"id":"87230cb9dec2"}')
+		},
+		"./src/graphql/operations/GlobalProductOffers.json": function(e) {
+			e.exports = JSON.parse('{"id":"bcfac9a73323"}')
 		},
 		"./src/graphql/operations/PollVote.json": function(e) {
 			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
@@ -1299,7 +1302,7 @@
 				i = r("./src/lib/makeActionCreator/index.ts"),
 				l = r("./src/reddit/actions/toaster.ts"),
 				d = r("./src/reddit/models/Toast/index.ts"),
-				u = r("./src/graphql/operations/ProductOffers.json"),
+				u = (r("./src/graphql/operations/GlobalProductOffers.json"), r("./src/graphql/operations/ProductOffers.json")),
 				m = r("./src/lib/makeGqlRequest/index.ts");
 			var p = r("./src/reddit/selectors/gold/productOffers.ts"),
 				f = r("./src/reddit/actions/gold/constants.ts");
@@ -2822,4 +2825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f961adcbec97b9a66034.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.88b811b5dd2cfa53375f.js.map
