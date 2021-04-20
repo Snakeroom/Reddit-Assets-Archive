@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.7be55f4dd7497b0550e7.js
-// Retrieved at 4/19/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.091e9b1587762843eadc.js
+// Retrieved at 4/20/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -36,7 +36,7 @@
 				const o = {
 					first: 10
 				};
-				await e(Object(c.r)()), e(Object(r.c)(o))
+				await e(Object(c.r)()), e(Object(r.d)(o))
 			}
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, n) {
@@ -86,17 +86,17 @@
 				E = n.n(v);
 			const {
 				fbt: _
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = m.a.div("BladeContainer", E.a), C = m.a.wrapped(b.a, "CloseIcon", E.a), y = m.a.div("LoadingTitleContainer", E.a), k = m.a.div("LoadingNavContainer", E.a), O = m.a.div("ShortLoadingNav", E.a), I = m.a.wrapped(g.a, "ThemedChevron", E.a), j = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = m.a.div("BladeContainer", E.a), C = m.a.wrapped(b.a, "CloseIcon", E.a), k = m.a.div("LoadingTitleContainer", E.a), y = m.a.div("LoadingNavContainer", E.a), O = m.a.div("ShortLoadingNav", E.a), I = m.a.wrapped(g.a, "ThemedChevron", E.a), j = ({
 				...e
 			}) => r.a.createElement(N, null, r.a.createElement(C, null), r.a.createElement(p.k, null, r.a.createElement(p.p, null, _._("Back to mod tools", null, {
 				hk: "1YCI0W"
-			})), r.a.createElement(p.o, null, r.a.createElement(y, null, r.a.createElement("div", {
+			})), r.a.createElement(p.o, null, r.a.createElement(k, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingTitle, e.isLoading && E.a.loading)
-			})), r.a.createElement(k, null, r.a.createElement("div", {
+			})), r.a.createElement(y, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), r.a.createElement(I, null)), r.a.createElement(k, null, r.a.createElement(O, null), r.a.createElement(I, null)), r.a.createElement(k, null, r.a.createElement("div", {
+			}), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement(O, null), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), r.a.createElement(I, null)), r.a.createElement(k, null, r.a.createElement(O, null), r.a.createElement(I, null)), r.a.createElement(k, null, r.a.createElement("div", {
+			}), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement(O, null), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
 			}), r.a.createElement(I, null))))), S = Object(d.a)({
 				getComponent: () => Object(u.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
@@ -288,8 +288,8 @@
 							return null
 					}
 				},
-				y = () => window.pageYOffset || window.scrollY,
-				k = 75,
+				k = () => window.pageYOffset || window.scrollY,
+				y = 75,
 				O = {
 					paddingLeft: 15,
 					left: 0,
@@ -302,9 +302,9 @@
 			class I extends o.a.Component {
 				constructor(e) {
 					super(e), this.toggleSticky = i()(() => {
-						this.state.sticky || this.forceUnsticky ? y() < k && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
+						this.state.sticky || this.forceUnsticky ? k() < y && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
 							sticky: !1
-						}, () => this.forceUnsticky = !1)) : y() >= k && this.setState({
+						}, () => this.forceUnsticky = !1)) : k() >= y && this.setState({
 							sticky: !0
 						})
 					}, d.G), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
@@ -416,8 +416,8 @@
 				_ = n.n(E);
 			const N = "",
 				C = .5,
-				y = b.a.span("divider", _.a),
-				k = b.a.wrapped(f.a, "NotificationUnit", _.a);
+				k = b.a.span("divider", _.a),
+				y = b.a.wrapped(f.a, "NotificationUnit", _.a);
 			class O extends s.a.Component {
 				constructor() {
 					super(...arguments), this.earlierDividerNotificationId = N, this.todayDividerNotificationId = N, this.fetchNotifications = e => {
@@ -428,7 +428,7 @@
 							after: t,
 							first: 10
 						})
-					}, this.renderNotificationItem = e => s.a.createElement(k, {
+					}, this.renderNotificationItem = e => s.a.createElement(y, {
 						activeOverflowMenuId: this.props.activeOverflowMenuId,
 						disableNotificationUpdates: this.props.disableNotificationUpdates,
 						hideNotification: this.props.hideNotification,
@@ -437,19 +437,20 @@
 						key: e.id,
 						markNotificationAsRead: this.props.markNotificationAsRead,
 						notification: e,
-						setActiveOverflowMenuId: this.props.setActiveOverflowMenuId
+						setActiveOverflowMenuId: this.props.setActiveOverflowMenuId,
+						blockAwarder: this.props.blockAwarder
 					}), this.renderNotifications = () => {
 						const {
 							earlierNotifications: e,
 							todayNotifications: t
 						} = this.props, n = !(!e || !e.length), a = !(!t || !t.length);
-						return s.a.createElement(s.a.Fragment, null, a && s.a.createElement(y, null, "Today"), a && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(y, null, "Earlier"), n && s.a.createElement("ul", null, e && e.map(this.renderNotificationItem)))
+						return s.a.createElement(s.a.Fragment, null, a && s.a.createElement(k, null, "Today"), a && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(k, null, "Earlier"), n && s.a.createElement("ul", null, e && e.map(this.renderNotificationItem)))
 					}
 				}
 				componentDidMount() {
-					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(x.l)({
+					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(x.m)({
 						badgeCount: this.props.inboxBadgeCount,
-						tab: x.c.Activity
+						tab: x.d.Activity
 					}))
 				}
 				render() {
@@ -473,7 +474,7 @@
 				S = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				T = n("./src/reddit/selectors/notificationsInbox.tsx"),
 				L = n("./src/reddit/selectors/tooltip.ts");
-			const P = Object(l.c)({
+			const w = Object(l.c)({
 				activeOverflowMenuId: L.a,
 				cursor: T.c,
 				earlierNotifications: T.b,
@@ -483,19 +484,20 @@
 				isPending: T.e,
 				todayNotifications: T.h
 			});
-			var w = Object(d.b)(P, e => ({
+			var P = Object(d.b)(w, e => ({
 					clearMessageTabBadgeCount: () => e(Object(m.b)()),
-					disableNotificationUpdates: t => e(Object(u.b)(t)),
-					fetchNotifications: t => e(Object(u.c)(t)),
-					hideNotification: t => e(Object(u.a)(t)),
-					hideSubredditNotifications: (t, n) => e(Object(u.e)(t, n)),
-					markNotificationAsRead: (t, n) => e(Object(u.g)(t, n)),
+					disableNotificationUpdates: t => e(Object(u.c)(t)),
+					blockAwarder: t => e(Object(u.a)(t)),
+					fetchNotifications: t => e(Object(u.d)(t)),
+					hideNotification: t => e(Object(u.b)(t)),
+					hideSubredditNotifications: (t, n) => e(Object(u.f)(t, n)),
+					markNotificationAsRead: (t, n) => e(Object(u.h)(t, n)),
 					setActiveOverflowMenuId: t => {
 						e(Object(p.h)({
 							tooltipId: t
 						}))
 					},
-					updateInboxActivitySeenState: () => e(Object(u.h)())
+					updateInboxActivitySeenState: () => e(Object(u.i)())
 				}))(I),
 				A = n("./node_modules/fbt/lib/FbtPublic.js"),
 				F = n("./src/reddit/components/BadgeCounter/index.tsx"),
@@ -535,9 +537,9 @@
 				})), s.a.createElement("li", null, s.a.createElement(D, {
 					active: !1,
 					onMouseDown: () => {
-						i(Object(x.l)({
+						i(Object(x.m)({
 							badgeCount: n + a,
-							tab: x.c.Messages
+							tab: x.d.Messages
 						})), e.clearMessageTabBadgeCount()
 					},
 					to: r ? "/message/unread" : "/message/messages"
@@ -549,7 +551,7 @@
 				})), t && s.a.createElement("li", null, s.a.createElement("button", {
 					className: G.a.navLink,
 					onClick: () => {
-						e.markAllAsRead(), i(Object(x.d)({
+						e.markAllAsRead(), i(Object(x.e)({
 							isMiniInbox: !1
 						}))
 					}
@@ -557,7 +559,7 @@
 					hk: "3IycES"
 				}))), s.a.createElement("li", null, s.a.createElement(R.a, {
 					className: G.a.navLink,
-					onClick: () => i(Object(x.j)(x.a.Inbox)),
+					onClick: () => i(Object(x.k)(x.a.Inbox)),
 					to: "/settings/notifications"
 				}, s.a.createElement(Q, null), A.fbt._("Settings", null, {
 					hk: "1e9Jn"
@@ -570,7 +572,7 @@
 			});
 			var K = Object(d.b)(q, e => ({
 					clearMessageTabBadgeCount: () => e(Object(m.b)()),
-					markAllAsRead: () => e(Object(u.f)())
+					markAllAsRead: () => e(Object(u.g)())
 				}))(e => s.a.createElement(X, e)),
 				Y = n("./src/reddit/pages/NotificationsInbox/index.m.less"),
 				V = n.n(Y);
@@ -579,7 +581,7 @@
 				render() {
 					return s.a.createElement(i.a, null, s.a.createElement(c.a, {
 						contentClassName: V.a.contentClassName,
-						content: s.a.createElement(w, null),
+						content: s.a.createElement(P, null),
 						disableFullscreen: !0,
 						navBar: s.a.createElement(K, null)
 					}))
@@ -589,4 +591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.7be55f4dd7497b0550e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.091e9b1587762843eadc.js.map

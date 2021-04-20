@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.677838fef1eff3ff36c1.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b46a14d623a8b4eb525d.js
+// Retrieved at 4/20/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -130,15 +130,15 @@
 				}
 			}
 			var O = n("./src/reddit/models/Toast/index.ts"),
-				y = n("./src/reddit/selectors/profile.ts"),
-				j = n("./src/reddit/selectors/subreddit.ts"),
-				w = n("./src/reddit/selectors/subscriptions.ts"),
-				E = n("./src/reddit/selectors/user.ts");
-			const k = () => i.fbt._("Sorry, failed to update favorites.", null, {
+				w = n("./src/reddit/selectors/profile.ts"),
+				y = n("./src/reddit/selectors/subreddit.ts"),
+				j = n("./src/reddit/selectors/subscriptions.ts"),
+				k = n("./src/reddit/selectors/user.ts");
+			const E = () => i.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
-				N = Object(o.a)(d.c),
-				S = Object(o.a)(d.b),
+				S = Object(o.a)(d.c),
+				N = Object(o.a)(d.b),
 				A = Object(o.a)(d.a),
 				R = Object(o.a)(d.h),
 				T = (Object(o.a)(d.i), Object(o.a)(d.g), () => async (e, t, {
@@ -146,11 +146,11 @@
 				}) => {
 					const i = t();
 					if (!i.user.account || i.subscriptions.api.fetched) return;
-					e(S());
+					e(N());
 					const s = await (e => Object(h.a)(e, b))(n());
 					if (s.ok) {
 						const t = I(s.body.data);
-						e(N(t))
+						e(S(t))
 					} else e(A({
 						error: s.error
 					}))
@@ -160,18 +160,18 @@
 					apiContext: b
 				}) => {
 					let h = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(j.F)(d(), e.name),
+						id: Object(y.F)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
-						id: Object(y.m)(d(), e.name),
+						id: Object(w.m)(d(), e.name),
 						name: `${s.Xb}${e.name}`,
 						type: e.type
 					});
-					if (!Object(E.J)(d())) return o(Object(c.k)({
+					if (!Object(k.J)(d())) return o(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void o(Object(a.j)());
-					const x = Object(E.i)(d());
+					const x = Object(k.i)(d());
 					if (x) {
 						const t = h.length,
 							n = e.length;
@@ -188,7 +188,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(w.b)(d()),
+							subscriptionsCount: Object(j.b)(d()),
 							userIsSubscriber: t,
 							widgetId: n
 						})), (await ((e, {
@@ -224,7 +224,7 @@
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
 							subredditModels: d().subreddits.models,
-							subscriptionsCount: Object(w.b)(d()),
+							subscriptionsCount: Object(j.b)(d()),
 							userIsSubscriber: !t,
 							widgetId: n
 						}));
@@ -237,7 +237,7 @@
 					apiContext: i
 				}) => {
 					const o = n(),
-						r = Object(j.L)(o, {
+						r = Object(y.L)(o, {
 							identifier: e
 						});
 					if (!r) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -259,7 +259,7 @@
 							type: e.type,
 							name: r.name
 						},
-						C = () => Object(j.gb)(n(), {
+						C = () => Object(y.gb)(n(), {
 							identifier: g
 						});
 					(C() || (await t(F([g], !0)), C())) && ((await ((e, t, n) => Object(m.a)(Object(f.a)(e, [p.a]), {
@@ -276,7 +276,7 @@
 						subredditModels: x,
 						profileModels: _
 					})), t(Object(l.f)({
-						text: k(),
+						text: E(),
 						kind: O.b.Error
 					}))))
 				}, U = Object(o.a)(d.d), H = e => async (t, n, {
@@ -285,7 +285,7 @@
 					const o = n().multireddits.models,
 						r = () => {
 							t(Object(l.f)({
-								text: k(),
+								text: E(),
 								kind: O.b.Error
 							}))
 						},
@@ -314,7 +314,7 @@
 				}) => {
 					const r = n(),
 						a = r.multireddits.models;
-					if (!Object(E.J)(r)) return;
+					if (!Object(k.J)(r)) return;
 					const c = (e = !0) => {
 							t(Object(l.f)({
 								text: i.fbt._("Sorry, failed to {followAction}", [i.fbt._param("followAction", e ? i.fbt._("follow", null, {
@@ -485,13 +485,14 @@
 						disableNotificationUpdates: t,
 						hideNotification: n,
 						hideSubredditNotifications: i,
-						index: s,
-						isInboxPostEmbedEnabled: r,
-						markNotificationAsRead: a,
-						notification: c,
-						setActiveOverflowMenuId: d,
-						onItemClick: l
-					} = this.props, f = s + 1 <= b;
+						blockAwarder: s,
+						index: r,
+						isInboxPostEmbedEnabled: a,
+						markNotificationAsRead: c,
+						notification: d,
+						setActiveOverflowMenuId: l,
+						onItemClick: f
+					} = this.props, h = r + 1 <= b;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						ref: this.ref,
 						className: p.a.notificationResizeWrapper
@@ -500,13 +501,14 @@
 						disableNotificationUpdates: t,
 						hideNotification: n,
 						hideSubredditNotifications: i,
-						isInboxPostEmbedEnabled: r,
+						isInboxPostEmbedEnabled: a,
 						isInTooltip: !0,
-						markNotificationAsRead: a,
-						notification: c,
-						setActiveOverflowMenuId: d,
-						onItemClick: l
-					}), !!f && o.a.createElement(m.a, {
+						markNotificationAsRead: c,
+						notification: d,
+						setActiveOverflowMenuId: l,
+						onItemClick: f,
+						blockAwarder: s
+					}), !!h && o.a.createElement(m.a, {
 						onResize: this.handleResize
 					})))
 				}
@@ -527,7 +529,7 @@
 				C = "",
 				I = 0,
 				O = "200px";
-			class y extends o.a.Component {
+			class w extends o.a.Component {
 				constructor() {
 					super(...arguments), this.container = o.a.createRef(), this.state = {
 						notificationHeights: g
@@ -584,14 +586,14 @@
 					}, n ? this.renderNotifications() : e ? o.a.createElement(v.a, null) : o.a.createElement(x.a, null))
 				}
 			}
-			var j = n("./src/reddit/controls/InternalLink/index.tsx"),
-				w = n("./src/reddit/helpers/trackers/inbox.ts"),
-				E = n("./src/reddit/hooks/useTracking.ts"),
-				k = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
-				N = n("./src/reddit/icons/svgs/Settings/index.tsx");
+			var y = n("./src/reddit/controls/InternalLink/index.tsx"),
+				j = n("./src/reddit/helpers/trackers/inbox.ts"),
+				k = n("./src/reddit/hooks/useTracking.ts"),
+				E = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
+				S = n("./src/reddit/icons/svgs/Settings/index.tsx");
 
-			function S() {
-				return (S = Object.assign || function(e) {
+			function N() {
+				return (N = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
@@ -601,8 +603,8 @@
 			}
 			const A = [],
 				R = a.a.div("StyledDropdown", p.a),
-				T = a.a.wrapped(N.a, "Gear", p.a),
-				L = a.a.wrapped(k.a, "MarkAsRead", p.a),
+				T = a.a.wrapped(S.a, "Gear", p.a),
+				L = a.a.wrapped(E.a, "MarkAsRead", p.a),
 				F = ({
 					onMessagesClick: e,
 					onBarClick: t,
@@ -628,7 +630,7 @@
 						className: p.a.topNavLinks
 					}, o.a.createElement("span", {
 						className: p.a.messagesLinkContainer
-					}, o.a.createElement(j.a, {
+					}, o.a.createElement(y.a, {
 						className: Object(r.a)(p.a.messagesLink, {
 							[p.a.mActive]: u
 						}),
@@ -643,7 +645,7 @@
 					})), d && o.a.createElement("button", {
 						className: p.a.navLink,
 						onClick: n
-					}, o.a.createElement(L, null)), o.a.createElement(j.a, {
+					}, o.a.createElement(L, null)), o.a.createElement(y.a, {
 						className: p.a.navLink,
 						onClick: f,
 						to: "/settings/notifications"
@@ -651,7 +653,7 @@
 				},
 				B = e => o.a.createElement("div", {
 					className: p.a.bottomBar
-				}, o.a.createElement(j.a, {
+				}, o.a.createElement(y.a, {
 					className: p.a.bottomLink,
 					onClick: () => {
 						e.sendInboxClickSeeAll(), e.onBarClick()
@@ -661,7 +663,7 @@
 					hk: "3L3tFc"
 				}))),
 				M = e => {
-					const t = Object(E.a)(),
+					const t = Object(k.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: i,
@@ -677,24 +679,24 @@
 					}, o.a.createElement(F, {
 						isInboxMarkAllAsReadEnabled: s,
 						markAllAsRead: () => {
-							e.markAllAsRead(), t(Object(w.d)({
+							e.markAllAsRead(), t(Object(j.e)({
 								isMiniInbox: !0
 							}))
 						},
 						messagesBadgeCount: a,
 						onMessagesClick: () => {
-							t(Object(w.l)({
+							t(Object(j.m)({
 								badgeCount: i,
-								tab: w.c.Messages
-							})), t(Object(w.e)()), n()
+								tab: j.d.Messages
+							})), t(Object(j.f)()), n()
 						},
-						sendInboxClickSettings: () => t(Object(w.j)(w.a.MiniInbox)),
+						sendInboxClickSettings: () => t(Object(j.k)(j.a.MiniInbox)),
 						onBarClick: d
-					}), o.a.createElement(y, S({}, e, {
+					}), o.a.createElement(w, N({}, e, {
 						isPending: r,
 						onItemClick: d
 					})), (l || r) && o.a.createElement(B, {
-						sendInboxClickSeeAll: () => t(Object(w.i)()),
+						sendInboxClickSeeAll: () => t(Object(j.j)()),
 						onBarClick: d
 					})))
 				}
@@ -926,64 +928,69 @@
 		},
 		"./src/reddit/helpers/trackers/inbox.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return s
 			})), n.d(t, "a", (function() {
 				return o
-			})), n.d(t, "n", (function() {
-				return l
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "b", (function() {
+				return a
+			})), n.d(t, "o", (function() {
 				return u
-			})), n.d(t, "f", (function() {
-				return m
 			})), n.d(t, "l", (function() {
+				return m
+			})), n.d(t, "g", (function() {
 				return f
 			})), n.d(t, "m", (function() {
 				return p
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "n", (function() {
 				return b
-			})), n.d(t, "g", (function() {
-				return h
-			})), n.d(t, "o", (function() {
-				return v
-			})), n.d(t, "h", (function() {
-				return x
 			})), n.d(t, "q", (function() {
-				return _
-			})), n.d(t, "j", (function() {
-				return g
+				return h
+			})), n.d(t, "h", (function() {
+				return v
+			})), n.d(t, "p", (function() {
+				return x
 			})), n.d(t, "i", (function() {
+				return _
+			})), n.d(t, "r", (function() {
+				return g
+			})), n.d(t, "k", (function() {
 				return C
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "j", (function() {
 				return I
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return O
+			})), n.d(t, "e", (function() {
+				return w
 			}));
-			var i, s, o, r, a = n("./src/reddit/constants/tracking.ts"),
-				c = n("./src/reddit/selectors/telemetry.ts"),
-				d = n("./src/telemetry/index.ts");
+			var i, s, o, r, a, c = n("./src/reddit/constants/tracking.ts"),
+				d = n("./src/reddit/selectors/telemetry.ts"),
+				l = n("./src/telemetry/index.ts");
 			! function(e) {
 				e.Activity = "activity", e.Messages = "messages"
 			}(i || (i = {})),
 			function(e) {
-				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.HideUpdates = "hide_updates"
+				e.HideNotifications = "hide_notification", e.HideSubreddit = "hide_subreddit", e.HideUpdates = "hide_updates", e.BlockAwarder = "block_awarder"
 			}(s || (s = {})),
 			function(e) {
 				e.MiniInbox = "mini_inbox", e.Inbox = "inbox"
 			}(o || (o = {})),
 			function(e) {
 				e.Inbox = "inbox", e.Nav = "nav", e.Settings = "notification_app_settings"
-			}(r || (r = {}));
-			const l = ({
+			}(r || (r = {})),
+			function(e) {
+				e[e.FIRST = 1] = "FIRST", e[e.SECOND = 2] = "SECOND"
+			}(a || (a = {}));
+			const u = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
 					type: i
 				}) => s => ({
-					...c.defaults(s),
-					action: a.c.VIEW,
+					...d.defaults(s),
+					action: c.c.VIEW,
 					noun: "inbox_notification",
 					source: r.Inbox,
 					inbox: {
@@ -995,14 +1002,15 @@
 						type: i
 					}
 				}),
-				u = ({
+				m = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
-					type: i
-				}) => s => {
-					Object(d.a)({
-						...c.defaults(s),
+					type: i,
+					awardId: s
+				}) => o => {
+					Object(l.a)({
+						...d.defaults(o),
 						action: "receive",
 						noun: "inbox_notification",
 						source: r.Inbox,
@@ -1013,17 +1021,22 @@
 						},
 						notification: {
 							type: i
+						},
+						goldPurchase: {
+							awardId: s
 						}
 					})
 				},
-				m = ({
+				f = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
-					type: i
-				}) => s => ({
-					...c.defaults(s),
-					action: a.c.CLICK,
+					type: i,
+					awardId: s,
+					position: o
+				}) => a => ({
+					...d.defaults(a),
+					action: c.c.CLICK,
 					noun: "inbox_notification",
 					source: r.Inbox,
 					inbox: {
@@ -1033,14 +1046,20 @@
 					},
 					notification: {
 						type: i
+					},
+					goldPurchase: {
+						awardId: s
+					},
+					actionInfo: {
+						position: o
 					}
 				}),
-				f = ({
+				p = ({
 					badgeCount: e,
 					tab: t
 				}) => n => ({
-					...c.defaults(n),
-					action: a.c.VIEW,
+					...d.defaults(n),
+					action: c.c.VIEW,
 					noun: "inbox",
 					source: r.Inbox,
 					inbox: {
@@ -1048,12 +1067,12 @@
 						tab: t
 					}
 				}),
-				p = ({
+				b = ({
 					badgeCount: e,
 					tab: t
 				}) => t => ({
-					...c.defaults(t),
-					action: a.c.VIEW,
+					...d.defaults(t),
+					action: c.c.VIEW,
 					noun: "mini_inbox",
 					source: r.Inbox,
 					inbox: {
@@ -1061,44 +1080,26 @@
 						tab: i.Activity
 					}
 				}),
-				b = ({
+				h = ({
 					badgeCount: e
 				}) => t => ({
-					...c.defaults(t),
-					action: a.c.CLICK,
+					...d.defaults(t),
+					action: c.c.CLICK,
 					noun: "inbox",
 					source: r.Nav,
 					inbox: {
 						badgeCount: e
 					}
 				}),
-				h = ({
-					id: e,
-					isClicked: t,
-					isViewed: n,
-					type: i
-				}) => s => ({
-					...c.defaults(s),
-					action: a.c.CLICK,
-					noun: "inbox_notification_overflow",
-					source: r.Inbox,
-					inbox: {
-						id: e,
-						isClicked: t,
-						isViewed: n
-					},
-					notification: {
-						type: i
-					}
-				}),
 				v = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
-					type: i
-				}) => s => ({
-					...c.defaults(s),
-					action: a.c.VIEW,
+					type: i,
+					awardId: s
+				}) => o => ({
+					...d.defaults(o),
+					action: c.c.CLICK,
 					noun: "inbox_notification_overflow",
 					source: r.Inbox,
 					inbox: {
@@ -1108,30 +1109,28 @@
 					},
 					notification: {
 						type: i
+					},
+					goldPurchase: {
+						awardId: s
 					}
 				}),
 				x = ({
-					actionInfoType: e,
-					id: t,
-					isClicked: n,
-					isViewed: i,
-					type: s
-				}) => o => ({
-					...c.defaults(o),
-					action: a.c.CLICK,
-					noun: "overflow_option",
+					id: e,
+					isClicked: t,
+					isViewed: n,
+					type: i
+				}) => s => ({
+					...d.defaults(s),
+					action: c.c.VIEW,
+					noun: "inbox_notification_overflow",
 					source: r.Inbox,
 					inbox: {
-						id: t,
-						isClicked: n,
-						isViewed: i
+						id: e,
+						isClicked: t,
+						isViewed: n
 					},
 					notification: {
-						type: s
-					},
-					actionInfo: {
-						...c.actionInfo(o),
-						type: e
+						type: i
 					}
 				}),
 				_ = ({
@@ -1141,8 +1140,8 @@
 					isViewed: i,
 					type: s
 				}) => o => ({
-					...c.defaults(o),
-					action: a.c.UNDO,
+					...d.defaults(o),
+					action: c.c.CLICK,
 					noun: "overflow_option",
 					source: r.Inbox,
 					inbox: {
@@ -1154,45 +1153,69 @@
 						type: s
 					},
 					actionInfo: {
-						...c.actionInfo(o),
+						...d.actionInfo(o),
 						type: e
 					}
 				}),
-				g = e => t => ({
-					...c.defaults(t),
-					action: a.c.CLICK,
+				g = ({
+					actionInfoType: e,
+					id: t,
+					isClicked: n,
+					isViewed: i,
+					type: s
+				}) => o => ({
+					...d.defaults(o),
+					action: c.c.UNDO,
+					noun: "overflow_option",
+					source: r.Inbox,
+					inbox: {
+						id: t,
+						isClicked: n,
+						isViewed: i
+					},
+					notification: {
+						type: s
+					},
+					actionInfo: {
+						...d.actionInfo(o),
+						type: e
+					}
+				}),
+				C = e => t => ({
+					...d.defaults(t),
+					action: c.c.CLICK,
 					noun: "notification_app_settings",
 					source: r.Inbox,
 					actionInfo: {
-						...c.actionInfo(t),
+						...d.actionInfo(t),
 						pageType: e
 					}
 				}),
-				C = () => e => ({
-					...c.defaults(e),
-					action: a.c.CLICK,
+				I = () => e => ({
+					...d.defaults(e),
+					action: c.c.CLICK,
 					noun: "see_all",
 					source: r.Inbox,
 					actionInfo: {
-						...c.actionInfo(e),
+						...d.actionInfo(e),
 						pageType: o.MiniInbox
 					}
 				}),
-				I = () => e => ({
-					...c.defaults(e),
-					action: a.c.CLICK,
+				O = () => e => ({
+					...d.defaults(e),
+					action: c.c.CLICK,
 					noun: "messages",
 					source: r.Inbox
 				}),
-				O = ({
+				w = ({
 					isMiniInbox: e
 				}) => t => ({
-					...c.defaults(t),
-					action: a.c.CLICK,
+					...d.defaults(t),
+					action: c.c.CLICK,
 					noun: "mark_all_as_read",
 					source: r.Inbox,
 					actionInfo: e ? {
-						...c.actionInfo(t),
+						...d.actionInfo(t),
 						pageType: o.MiniInbox
 					} : {}
 				})
@@ -1502,4 +1525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.677838fef1eff3ff36c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b46a14d623a8b4eb525d.js.map
