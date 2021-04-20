@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c5e117f90f80aa3cc115.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.86a85ca5401ee04973a8.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2862,16 +2862,18 @@
 						border: e = !0,
 						className: t,
 						id: s,
-						small: n = !1
-					} = this.props, r = {
+						small: n = !1,
+						isFullWidth: r = !1
+					} = this.props, o = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: n
+						small: n,
+						isFullWidth: r
 					};
-					return this.props.userIsSubscriber ? i.a.createElement(b, u({}, r, {
+					return this.props.userIsSubscriber ? i.a.createElement(b, u({}, o, {
 						buttonType: this.props.identifier.type
-					})) : i.a.createElement(m, u({}, r, {
+					})) : i.a.createElement(m, u({}, o, {
 						id: s
 					}), this.props.children, Object(a.a)({
 						type: this.props.identifier.type,
@@ -5297,4 +5299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c5e117f90f80aa3cc115.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.86a85ca5401ee04973a8.js.map

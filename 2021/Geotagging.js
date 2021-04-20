@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.93e2d9102de1a3a1d63c.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.f2a4447378fe5d793e1f.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -792,16 +792,18 @@
 						border: e = !0,
 						className: t,
 						id: s,
-						small: n = !1
-					} = this.props, r = {
+						small: n = !1,
+						isFullWidth: r = !1
+					} = this.props, a = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: n
+						small: n,
+						isFullWidth: r
 					};
-					return this.props.userIsSubscriber ? i.a.createElement(p, u({}, r, {
+					return this.props.userIsSubscriber ? i.a.createElement(p, u({}, a, {
 						buttonType: this.props.identifier.type
-					})) : i.a.createElement(m, u({}, r, {
+					})) : i.a.createElement(m, u({}, a, {
 						id: s
 					}), this.props.children, Object(o.a)({
 						type: this.props.identifier.type,
@@ -1760,4 +1762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.93e2d9102de1a3a1d63c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.f2a4447378fe5d793e1f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.39a9792b437a750aae03.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.3b1395f8a1772631fdcf.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -4207,16 +4207,18 @@
 						border: e = !0,
 						className: t,
 						id: n,
-						small: s = !1
-					} = this.props, r = {
+						small: s = !1,
+						isFullWidth: r = !1
+					} = this.props, o = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: s
+						small: s,
+						isFullWidth: r
 					};
-					return this.props.userIsSubscriber ? i.a.createElement(h, u({}, r, {
+					return this.props.userIsSubscriber ? i.a.createElement(h, u({}, o, {
 						buttonType: this.props.identifier.type
-					})) : i.a.createElement(m, u({}, r, {
+					})) : i.a.createElement(m, u({}, o, {
 						id: n
 					}), this.props.children, Object(a.a)({
 						type: this.props.identifier.type,
@@ -5378,4 +5380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.39a9792b437a750aae03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.3b1395f8a1772631fdcf.js.map

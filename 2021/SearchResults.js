@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e9a533ac9010c3a739d0.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.687b40749fec704b6c08.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7707,16 +7707,18 @@
 						border: e = !0,
 						className: t,
 						id: s,
-						small: r = !1
-					} = this.props, n = {
+						small: r = !1,
+						isFullWidth: n = !1
+					} = this.props, i = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: r
+						small: r,
+						isFullWidth: n
 					};
-					return this.props.userIsSubscriber ? o.a.createElement(h, m({}, n, {
+					return this.props.userIsSubscriber ? o.a.createElement(h, m({}, i, {
 						buttonType: this.props.identifier.type
-					})) : o.a.createElement(u, m({}, n, {
+					})) : o.a.createElement(u, m({}, i, {
 						id: s
 					}), this.props.children, Object(a.a)({
 						type: this.props.identifier.type,
@@ -9462,4 +9464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e9a533ac9010c3a739d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.687b40749fec704b6c08.js.map

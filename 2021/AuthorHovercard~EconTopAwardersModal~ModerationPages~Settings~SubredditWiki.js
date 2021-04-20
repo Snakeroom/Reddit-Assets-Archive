@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.2549c2261b898f3a99d9.js
-// Retrieved at 4/20/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.63247c629096cca0e4e5.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -1680,16 +1680,18 @@
 						border: e = !0,
 						className: t,
 						id: r,
-						small: n = !1
-					} = this.props, s = {
+						small: n = !1,
+						isFullWidth: s = !1
+					} = this.props, o = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: n
+						small: n,
+						isFullWidth: s
 					};
-					return this.props.userIsSubscriber ? a.a.createElement(b, u({}, s, {
+					return this.props.userIsSubscriber ? a.a.createElement(b, u({}, o, {
 						buttonType: this.props.identifier.type
-					})) : a.a.createElement(m, u({}, s, {
+					})) : a.a.createElement(m, u({}, o, {
 						id: r
 					}), this.props.children, Object(i.a)({
 						type: this.props.identifier.type,
@@ -2290,4 +2292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.2549c2261b898f3a99d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.63247c629096cca0e4e5.js.map

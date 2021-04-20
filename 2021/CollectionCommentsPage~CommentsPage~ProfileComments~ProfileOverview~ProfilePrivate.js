@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1d8d5c42df71e2a9e501.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.8f09c84fa6ee780e7ca6.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1412,16 +1412,18 @@
 						border: e = !0,
 						className: t,
 						id: n,
-						small: s = !1
-					} = this.props, o = {
+						small: s = !1,
+						isFullWidth: o = !1
+					} = this.props, i = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: s
+						small: s,
+						isFullWidth: o
 					};
-					return this.props.userIsSubscriber ? r.a.createElement(b, m({}, o, {
+					return this.props.userIsSubscriber ? r.a.createElement(b, m({}, i, {
 						buttonType: this.props.identifier.type
-					})) : r.a.createElement(u, m({}, o, {
+					})) : r.a.createElement(u, m({}, i, {
 						id: n
 					}), this.props.children, Object(a.a)({
 						type: this.props.identifier.type,
@@ -1937,4 +1939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1d8d5c42df71e2a9e501.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.8f09c84fa6ee780e7ca6.js.map

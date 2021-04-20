@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.02d1917bbc7f6e62380e.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.89dbd395af44c3d8e5e7.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -3053,16 +3053,18 @@
 						border: e = !0,
 						className: t,
 						id: n,
-						small: s = !1
-					} = this.props, r = {
+						small: s = !1,
+						isFullWidth: r = !1
+					} = this.props, o = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: s
+						small: s,
+						isFullWidth: r
 					};
-					return this.props.userIsSubscriber ? a.a.createElement(b, u({}, r, {
+					return this.props.userIsSubscriber ? a.a.createElement(b, u({}, o, {
 						buttonType: this.props.identifier.type
-					})) : a.a.createElement(m, u({}, r, {
+					})) : a.a.createElement(m, u({}, o, {
 						id: n
 					}), this.props.children, Object(i.a)({
 						type: this.props.identifier.type,
@@ -7034,4 +7036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.02d1917bbc7f6e62380e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.89dbd395af44c3d8e5e7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.157d08d403c6e8746f71.js
-// Retrieved at 4/20/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.c0ab65b55abd18134fb3.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1256,16 +1256,18 @@
 						border: e = !0,
 						className: t,
 						id: s,
-						small: r = !1
-					} = this.props, n = {
+						small: r = !1,
+						isFullWidth: n = !1
+					} = this.props, o = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: r
+						small: r,
+						isFullWidth: n
 					};
-					return this.props.userIsSubscriber ? i.a.createElement(h, u({}, n, {
+					return this.props.userIsSubscriber ? i.a.createElement(h, u({}, o, {
 						buttonType: this.props.identifier.type
-					})) : i.a.createElement(p, u({}, n, {
+					})) : i.a.createElement(p, u({}, o, {
 						id: s
 					}), this.props.children, Object(a.a)({
 						type: this.props.identifier.type,
@@ -2627,4 +2629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.157d08d403c6e8746f71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c0ab65b55abd18134fb3.js.map

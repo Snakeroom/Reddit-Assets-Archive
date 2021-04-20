@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.e8fd2118021beaf8c880.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.e9bb4f34c78f15605375.js
+// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5879,16 +5879,18 @@
 						border: e = !0,
 						className: t,
 						id: s,
-						small: n = !1
-					} = this.props, r = {
+						small: n = !1,
+						isFullWidth: r = !1
+					} = this.props, i = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: n
+						small: n,
+						isFullWidth: r
 					};
-					return this.props.userIsSubscriber ? o.a.createElement(h, u({}, r, {
+					return this.props.userIsSubscriber ? o.a.createElement(h, u({}, i, {
 						buttonType: this.props.identifier.type
-					})) : o.a.createElement(m, u({}, r, {
+					})) : o.a.createElement(m, u({}, i, {
 						id: s
 					}), this.props.children, Object(a.a)({
 						type: this.props.identifier.type,
@@ -8083,4 +8085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e8fd2118021beaf8c880.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e9bb4f34c78f15605375.js.map
