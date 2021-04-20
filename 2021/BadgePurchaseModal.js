@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.44656380b3d3ede8d3cc.js
-// Retrieved at 3/11/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.0a618e7976ddcb473464.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/components/Badges/PurchaseModal/Header/index.m.less": function(e, t, r) {
@@ -60,12 +60,12 @@
 				h = r("./src/reddit/models/Badge/index.ts"),
 				v = r("./src/reddit/selectors/gov.ts"),
 				y = r("./src/reddit/components/Governance/ModalClose/index.tsx"),
-				E = r("./src/reddit/components/Badges/PurchaseModal/Header/index.m.less"),
-				k = r.n(E);
+				k = r("./src/reddit/components/Badges/PurchaseModal/Header/index.m.less"),
+				E = r.n(k);
 
 			function I(e) {
 				return s.a.createElement("header", {
-					className: k.a.header
+					className: E.a.header
 				}, e.children, s.a.createElement(y.a, {
 					afterClose: e.afterClose
 				}))
@@ -73,9 +73,9 @@
 			var _ = r("./src/reddit/components/Badges/PurchaseModal/PostPurchase/index.m.less"),
 				j = r.n(_);
 			const {
-				fbt: w
+				fbt: N
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			const N = Object(a.c)({
+			const w = Object(a.c)({
 				badge: (e, {
 					productId: t
 				}) => {
@@ -101,7 +101,7 @@
 					}
 				}
 			});
-			var O = Object(d.b)(N, e => ({
+			var O = Object(d.b)(w, e => ({
 					onApplyBadge: (t, r) => {
 						e(Object(m.k)({
 							badgeIds: [r],
@@ -119,7 +119,7 @@
 						className: e.className
 					}, s.a.createElement(I, {
 						afterClose: e.onOpenGallery
-					}, w._("you got a new badge!", null, {
+					}, N._("you got a new badge!", null, {
 						hk: "1dFWkt"
 					})), s.a.createElement("div", {
 						className: j.a.content
@@ -134,29 +134,29 @@
 						}))
 					}(e.badge), (e.badge, o = e.product, s.a.createElement("div", {
 						className: j.a.expiry
-					}, w._("Expires in {clock}{timeLeft}", [w._param("clock", s.a.createElement(g.a, {
+					}, N._("Expires in {clock}{timeLeft}", [N._param("clock", s.a.createElement(g.a, {
 						className: j.a.clock
-					})), w._param("timeLeft", Object(l.a)(new Date(Date.now() + 1e3 * o.duration), !0))], {
+					})), N._param("timeLeft", Object(l.a)(new Date(Date.now() + 1e3 * o.duration), !0))], {
 						hk: "1nLM5D"
 					})))), s.a.createElement("footer", {
 						className: j.a.footer
 					}, (a = e.wallet, c = e.product.subredditId, s.a.createElement("div", {
 						className: j.a.wallet
-					}, w._("You have {token}{amount}", [w._param("token", s.a.createElement(p.a, {
+					}, N._("You have {token}{amount}", [N._param("token", s.a.createElement(p.a, {
 						grey: !0,
 						className: j.a.tokenSymbol,
 						subredditId: c
-					})), w._param("amount", Object(u.a)(a.amount))], {
+					})), N._param("amount", Object(u.a)(a.amount))], {
 						hk: "2uBJCn"
 					}))), (t = e.badge, r = e.onApplyBadge, d = e.onClose, s.a.createElement("div", {
 						className: j.a.controls
 					}, s.a.createElement(f.o, {
 						onClick: d
-					}, w._("done", null, {
+					}, N._("done", null, {
 						hk: "1mAQca"
 					})), s.a.createElement(f.i, {
 						onClick: () => r(t.subredditId, t.id)
-					}, w._("apply badge", null, {
+					}, N._("apply badge", null, {
 						hk: "25p6rC"
 					})))))) : null;
 					var t, r, d, a, c, o
@@ -241,8 +241,8 @@
 			const H = Object(a.c)({
 					alreadyOwned: i.b
 				}),
-				A = Object(d.b)(H);
-			t.default = Object(c.a)(A((function(e) {
+				z = Object(d.b)(H);
+			t.default = Object(c.a)(z((function(e) {
 				return s.a.createElement("div", {
 					className: Object(o.a)(U.a.container, e.className)
 				}, e.alreadyOwned ? s.a.createElement(O, {
@@ -470,12 +470,20 @@
 				})
 			}
 		},
+		"./src/reddit/icons/svgs/Clock/index.m.less": function(e, t, r) {
+			e.exports = {
+				clock: "_3dezPhiKJXkVFXj94zLKcs"
+			}
+		},
 		"./src/reddit/icons/svgs/Clock/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
-				s = r.n(n);
+				s = r.n(n),
+				d = r("./src/lib/classNames/index.ts"),
+				a = r("./src/reddit/icons/svgs/Clock/index.m.less"),
+				c = r.n(a);
 			t.a = e => s.a.createElement("svg", {
-				className: e.className,
+				className: Object(d.a)(c.a.clock, e.className),
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 11 11"
 			}, s.a.createElement("g", null, s.a.createElement("path", {
@@ -553,9 +561,9 @@
 			})), r.d(t, "k", (function() {
 				return y
 			})), r.d(t, "r", (function() {
-				return E
-			})), r.d(t, "a", (function() {
 				return k
+			})), r.d(t, "a", (function() {
+				return E
 			})), r.d(t, "f", (function() {
 				return I
 			})), r.d(t, "p", (function() {
@@ -563,7 +571,7 @@
 			})), r.d(t, "l", (function() {
 				return j
 			})), r.d(t, "j", (function() {
-				return w
+				return N
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = r("./src/reddit/endpoints/governance/crypto.ts");
@@ -576,7 +584,7 @@
 				o = (e, {
 					subredditId: t
 				}) => {
-					const r = E(e, {
+					const r = k(e, {
 						subredditId: t
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.harberger ? r.extra.contracts.harberger : {
@@ -625,22 +633,22 @@
 				},
 				v = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0,
 				y = (e, t) => t && t.subredditId ? e.subreddits.gov.meta[t.subredditId] : void 0,
-				E = (e, t) => {
+				k = (e, t) => {
 					const r = y(e, t);
 					return r && r.walletProvider
 				},
-				k = (e, t) => {
-					const r = E(e, t),
+				E = (e, t) => {
+					const r = k(e, t),
 						n = y(e, t);
 					return r && r.provider || n && n.provider
 				},
 				I = (e, t) => {
-					const r = k(e, t);
+					const r = E(e, t);
 					return r === s.a.Ethereum || r === s.a.Rinkeby || r === s.a.EthTraderEthereum || r === s.a.EthTraderRinkeby
 				},
 				_ = (e, t) => {
-					const r = E(e, t),
-						n = k(e, t);
+					const r = k(e, t),
+						n = E(e, t);
 					if (r && !r.inTransition && n === s.a.Stellar) return {
 						address: r.extra && r.extra.issuerAddress || "",
 						decimals: r.extra && r.extra.decimals || 7,
@@ -658,14 +666,14 @@
 				j = (e, {
 					subredditId: t
 				}) => {
-					const r = E(e, {
+					const r = k(e, {
 						subredditId: t
 					});
 					return r && r.extra && r.extra.contracts && r.extra.contracts.subscriptions ? r.extra.contracts.subscriptions : {
 						address: void 0
 					}
 				},
-				w = (e, t) => {
+				N = (e, t) => {
 					const r = y(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
@@ -703,4 +711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.44656380b3d3ede8d3cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.0a618e7976ddcb473464.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a7913cdfa7e6d1ce0454.js
-// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.18b7c88630638d36e42a.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -102,7 +102,7 @@
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/constants/index.ts");
-			const r = [a.ec, a.ib, a.x, a.J, a.db, a.Ib],
+			const r = [a.fc, a.ib, a.x, a.J, a.db, a.Ib],
 				i = {
 					[a.Ib]: e => n.fbt._({
 						"*": "{number} seconds",
@@ -134,7 +134,7 @@
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[a.ec]: e => n.fbt._({
+					[a.fc]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -157,13 +157,13 @@
 					[a.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.ec]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.fc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[a.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.ec]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.fc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -172,7 +172,7 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[a.ec]: "",
+						[a.fc]: "",
 						[a.ib]: "",
 						[a.x]: "",
 						[a.J]: "",
@@ -2399,4 +2399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a7913cdfa7e6d1ce0454.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.18b7c88630638d36e42a.js.map

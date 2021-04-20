@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6984c79fd28ced76de01.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e80066cf1938e354bd51.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -354,11 +354,11 @@
 				return e.split("-")[0]
 			}
 
-			function U(e) {
+			function V(e) {
 				return e.split("-")[1]
 			}
 
-			function V(e) {
+			function U(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
@@ -367,7 +367,7 @@
 					s = e.element,
 					o = e.placement,
 					r = o ? z(o) : null,
-					i = o ? U(o) : null,
+					i = o ? V(o) : null,
 					a = n.x + n.width / 2 - s.width / 2,
 					c = n.y + n.height / 2 - s.height / 2;
 				switch (r) {
@@ -401,7 +401,7 @@
 							y: n.y
 						}
 				}
-				var d = r ? V(r) : null;
+				var d = r ? U(r) : null;
 				if (null != d) {
 					var l = "y" === d ? "height" : "width";
 					switch (i) {
@@ -809,9 +809,9 @@
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
 												d = void 0 === c ? L : c,
-												l = U(s),
+												l = V(s),
 												u = (l ? a ? T : T.filter((function(e) {
-													return U(e) === l
+													return V(e) === l
 												})) : _).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -836,7 +836,7 @@
 									}), []), g = t.rects.reference, w = t.rects.popper, P = new Map, I = !0, M = y[0], N = 0; N < y.length; N++) {
 									var A = y[N],
 										F = z(A),
-										B = U(A) === S,
+										B = V(A) === S,
 										R = [O, k].indexOf(F) >= 0,
 										D = R ? "width" : "height",
 										W = se(t, {
@@ -846,11 +846,11 @@
 											altBoundary: p,
 											padding: d
 										}),
-										V = R ? B ? E : j : B ? k : O;
-									g[D] > w[D] && (V = X(V));
-									var H = X(V),
+										U = R ? B ? E : j : B ? k : O;
+									g[D] > w[D] && (U = X(U));
+									var H = X(U),
 										q = [];
-									if (r && q.push(W[F] <= 0), a && q.push(W[V] <= 0, W[H] <= 0), q.every((function(e) {
+									if (r && q.push(W[F] <= 0), a && q.push(W[U] <= 0, W[H] <= 0), q.every((function(e) {
 											return e
 										}))) {
 										M = A, I = !1;
@@ -904,9 +904,9 @@
 									altBoundary: l
 								}),
 								v = z(t.placement),
-								y = U(t.placement),
+								y = V(t.placement),
 								C = !y,
-								_ = V(v),
+								_ = U(v),
 								w = "x" === _ ? "y" : "x",
 								P = t.modifiersData.popperOffsets,
 								I = t.rects.reference,
@@ -974,7 +974,7 @@
 								o = n.elements.arrow,
 								r = n.modifiersData.popperOffsets,
 								i = z(n.placement),
-								a = V(i),
+								a = U(i),
 								c = [j, E].indexOf(i) >= 0 ? "height" : "width";
 							if (o && r) {
 								var d = n.modifiersData[s + "#persistent"].padding,
@@ -1748,8 +1748,8 @@
 				D = n("./src/reddit/contexts/Post/index.tsx"),
 				W = n("./src/reddit/selectors/experiments/categories.ts"),
 				z = n("./src/reddit/selectors/experiments/econAwardsPlaque.ts"),
-				U = n("./src/reddit/selectors/experiments/listingBelow.ts"),
-				V = n("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
+				V = n("./src/reddit/selectors/experiments/listingBelow.ts"),
+				U = n("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
 				H = n("./src/reddit/hooks/useIsOverlay.ts"),
 				q = n("./src/reddit/hooks/useUserContext.ts"),
 				G = n("./src/reddit/selectors/inFeedChaining.ts"),
@@ -1778,7 +1778,7 @@
 					isCurrentUserProfilePost: J.k,
 					isPostChainDismissed: G.c,
 					isPostChained: G.d,
-					listingBelowVariant: U.a,
+					listingBelowVariant: V.a,
 					moderatorPermissions: Z.j,
 					showAwardsPlaque: z.a,
 					showEditFlair: X.a,
@@ -1794,7 +1794,7 @@
 						flairStyleTemplate: D,
 						hideNSFWPref: W,
 						hostPostId: z,
-						inSubredditOrProfile: U = !1,
+						inSubredditOrProfile: V = !1,
 						isActionBarAnimationEnabled: H,
 						isCheckboxSelected: q,
 						isCommentsPage: G,
@@ -1829,7 +1829,7 @@
 							listingName: re,
 							postId: le
 						}))
-					}, [Oe, oe, re, le]), Ee = e => e === R.a.upvoted ? Oe(Object(l.U)(le)) : Oe(Object(l.r)(le)), je = () => Oe(Object(l.S)(le)), Ce = pe ? void 0 : D, _e = Object(F.a)(ie), Se = ae && _e, we = Object(L.a)(ie), Pe = Object(A.a)(ie), Ie = Object(k.c)(de), Me = !!se && !Object(M.pd)(se), Ne = Object(T.a)(de), Te = U && !xe && !Me, Le = Te && !!de.source && !n, Ae = !(X && i || te) && !Z && (!U || Me), Fe = (!U || Me) && !de.isSponsored, Be = Object(a.t)(de, ne), {
+					}, [Oe, oe, re, le]), Ee = e => e === R.a.upvoted ? Oe(Object(l.V)(le)) : Oe(Object(l.r)(le)), je = () => Oe(Object(l.S)(le)), Ce = pe ? void 0 : D, _e = Object(F.a)(ie), Se = ae && _e, we = Object(L.a)(ie), Pe = Object(A.a)(ie), Ie = Object(k.c)(de), Me = !!se && !Object(M.pd)(se), Ne = Object(T.a)(de), Te = V && !xe && !Me, Le = Te && !!de.source && !n, Ae = !(X && i || te) && !Z && (!V || Me), Fe = (!V || Me) && !de.isSponsored, Be = Object(a.t)(de, ne), {
 						source: Re
 					} = Be, De = o.a.createElement(j.a, {
 						className: Object(c.a)(ee.a.container, t, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(B.a)(e), {
@@ -1871,7 +1871,7 @@
 						hideNSFWPref: W,
 						hostPostId: z,
 						iconClassName: ee.a.postTopLineIcon,
-						inSubredditOrProfile: U,
+						inSubredditOrProfile: V,
 						isCommentsPage: G,
 						isCurrentUserProfilePost: Z,
 						isOverlay: !!J,
@@ -1957,7 +1957,7 @@
 							hide: !1,
 							report: !1
 						})
-					}))), X && o.a.createElement(V.a, {
+					}))), X && o.a.createElement(U.a, {
 						post: de,
 						postIds: null != ue ? ue : [],
 						subredditId: null == ye ? void 0 : ye.id
@@ -2387,12 +2387,12 @@
 					const s = `PostBadges--${e}--${t}`;
 					return n ? `${s}--${n}` : s
 				},
-				U = Object(f.t)({
+				V = Object(f.t)({
 					isProfilePostListing: f.I,
 					isSubreddit: f.K,
 					pageLayer: e => e
 				}),
-				V = Object(a.c)({
+				U = Object(a.c)({
 					isPinned: (e, {
 						post: t
 					}) => Object(O.o)(e, {
@@ -2400,7 +2400,7 @@
 					}),
 					modModeEnabled: f.Q
 				}),
-				H = Object(i.b)(V, (e, t) => ({
+				H = Object(i.b)(U, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						n.e("removalReasonActions").then(n.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(n => e(n.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -2409,7 +2409,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = U(H(({
+			t.a = V(H(({
 				className: e,
 				displayText: t,
 				isSubreddit: n,
@@ -2419,8 +2419,8 @@
 				isProfilePostListing: f,
 				modModeEnabled: O,
 				onHideTooltip: N,
-				onOpenRemovalReasonModal: U,
-				onShowTooltip: V,
+				onOpenRemovalReasonModal: V,
+				onShowTooltip: U,
 				post: H,
 				tooltipType: q
 			}) => {
@@ -2450,7 +2450,7 @@
 					className: Object(c.a)(T.a.icon, T.a.modIcon),
 					desc: R(t),
 					id: $,
-					onMouseEnter: V($),
+					onMouseEnter: U($),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: $,
@@ -2460,7 +2460,7 @@
 					className: Object(c.a)(T.a.icon, T.a.archivedIcon),
 					desc: F(),
 					id: K,
-					onMouseEnter: V(K),
+					onMouseEnter: U(K),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: K,
@@ -2470,7 +2470,7 @@
 					className: Object(c.a)(T.a.icon, T.a.lockIcon),
 					desc: B(),
 					id: Q,
-					onMouseEnter: V(Q),
+					onMouseEnter: U(Q),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: Q,
@@ -2480,7 +2480,7 @@
 					className: Object(c.a)(T.a.icon, T.a.stickyIcon),
 					desc: D(),
 					id: se,
-					onMouseEnter: V(se),
+					onMouseEnter: U(se),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: se,
@@ -2490,7 +2490,7 @@
 					className: Object(c.a)(T.a.icon, T.a.stickyIcon),
 					desc: W(),
 					id: oe,
-					onMouseEnter: V(oe),
+					onMouseEnter: U(oe),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: oe,
@@ -2500,7 +2500,7 @@
 					className: Object(c.a)(T.a.icon, T.a.approveIcon),
 					desc: Object(h.a)(H),
 					id: J,
-					onMouseEnter: V(J),
+					onMouseEnter: U(J),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: J,
@@ -2510,16 +2510,16 @@
 					className: Object(c.a)(T.a.icon, T.a.removeIcon),
 					desc: Object(h.c)(H),
 					id: ee,
-					onMouseEnter: V(ee),
+					onMouseEnter: U(ee),
 					onMouseLeave: N
 				}), X && r.a.createElement(p.a, {
 					className: T.a.addRemovalReason,
-					onClick: U,
+					onClick: V,
 					text: s.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
 				}), (H.modRemovalReason || H.modNote) && r.a.createElement(A, {
-					onMouseEnter: V(ee),
+					onMouseEnter: U(ee),
 					onMouseLeave: N
 				}, s.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
@@ -2531,7 +2531,7 @@
 					className: Object(c.a)(T.a.icon, T.a.spamIcon),
 					desc: Object(h.e)(H),
 					id: ne,
-					onMouseEnter: V(ne),
+					onMouseEnter: U(ne),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: ne,
@@ -2544,7 +2544,7 @@
 					className: Object(c.a)(T.a.icon, T.a.automoderator, !!H.bannedBy && T.a.isRemoved),
 					desc: h.b,
 					id: Y,
-					onMouseEnter: V(Y),
+					onMouseEnter: U(Y),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: Y,
@@ -2558,7 +2558,7 @@
 					className: Object(c.a)(T.a.icon, T.a.reportIcon),
 					desc: Object(h.d)(H.numReports),
 					id: te,
-					onMouseEnter: V(te),
+					onMouseEnter: U(te),
 					onMouseLeave: N
 				}), r.a.createElement(u.c, L({
 					tooltipId: te,
@@ -3666,4 +3666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6984c79fd28ced76de01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e80066cf1938e354bd51.js.map

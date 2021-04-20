@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.a1d9d035dbfb555ba5b6.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.7917261f6941bbfb8720.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.a1d9d035dbfb555ba5b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.7917261f6941bbfb8720.js.map

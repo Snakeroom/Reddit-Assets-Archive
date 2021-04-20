@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c59486e588192ea1d370.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a16aa71a9df1089aa11b.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5522,22 +5522,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[s.Vb.HOUR]: () => r.fbt._("Now", null, {
+					[s.Wb.HOUR]: () => r.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[s.Vb.DAY]: () => r.fbt._("Today", null, {
+					[s.Wb.DAY]: () => r.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[s.Vb.WEEK]: () => r.fbt._("This Week", null, {
+					[s.Wb.WEEK]: () => r.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[s.Vb.MONTH]: () => r.fbt._("This Month", null, {
+					[s.Wb.MONTH]: () => r.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[s.Vb.YEAR]: () => r.fbt._("This Year", null, {
+					[s.Wb.YEAR]: () => r.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[s.Vb.ALL]: () => r.fbt._("All Time", null, {
+					[s.Wb.ALL]: () => r.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -8615,7 +8615,7 @@
 					selectedKey: e.sort
 				})
 			};
-			const Hn = [m.Vb.HOUR, m.Vb.DAY, m.Vb.WEEK, m.Vb.MONTH, m.Vb.YEAR, m.Vb.ALL];
+			const Hn = [m.Wb.HOUR, m.Wb.DAY, m.Wb.WEEK, m.Wb.MONTH, m.Wb.YEAR, m.Wb.ALL];
 			var Wn = e => {
 					const {
 						dropdownId: t
@@ -10694,4 +10694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c59486e588192ea1d370.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a16aa71a9df1089aa11b.js.map

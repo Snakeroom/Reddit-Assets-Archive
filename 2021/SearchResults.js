@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.687b40749fec704b6c08.js
-// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a03d787428bcdab51944.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5925,7 +5925,7 @@
 				})),
 				ms = (e, t) => {
 					const s = zt()([...Object(Qt.a)(e)]);
-					return Object(a.fc)(s.sort) && (t.sort = s.sort), Object(a.fc)(s.t) && (t.t = s.t), t
+					return Object(a.gc)(s.sort) && (t.sort = s.sort), Object(a.gc)(s.t) && (t.t = s.t), t
 				},
 				us = Object(i.c)({
 					isOpen: (e, {
@@ -6011,24 +6011,24 @@
 						hk: "3s76RE"
 					})
 				},
-				_s = [a.Vb.HOUR, a.Vb.DAY, a.Vb.WEEK, a.Vb.MONTH, a.Vb.YEAR, a.Vb.ALL],
+				_s = [a.Wb.HOUR, a.Wb.DAY, a.Wb.WEEK, a.Wb.MONTH, a.Wb.YEAR, a.Wb.ALL],
 				ks = {
-					[a.Vb.HOUR]: () => l.fbt._("Past Hour", null, {
+					[a.Wb.HOUR]: () => l.fbt._("Past Hour", null, {
 						hk: "4qCarL"
 					}),
-					[a.Vb.DAY]: () => l.fbt._("Past 24 Hours", null, {
+					[a.Wb.DAY]: () => l.fbt._("Past 24 Hours", null, {
 						hk: "GI5qN"
 					}),
-					[a.Vb.WEEK]: () => l.fbt._("Past Week", null, {
+					[a.Wb.WEEK]: () => l.fbt._("Past Week", null, {
 						hk: "3jQHYQ"
 					}),
-					[a.Vb.MONTH]: () => l.fbt._("Past Month", null, {
+					[a.Wb.MONTH]: () => l.fbt._("Past Month", null, {
 						hk: "11eVJy"
 					}),
-					[a.Vb.YEAR]: () => l.fbt._("Past Year", null, {
+					[a.Wb.YEAR]: () => l.fbt._("Past Year", null, {
 						hk: "38MavC"
 					}),
-					[a.Vb.ALL]: () => l.fbt._("All Time", null, {
+					[a.Wb.ALL]: () => l.fbt._("All Time", null, {
 						hk: "2buTB7"
 					})
 				},
@@ -8184,7 +8184,7 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const r = s === a.a.upvoted ? Object(o.U)(t) : Object(o.r)(t);
+						const r = s === a.a.upvoted ? Object(o.V)(t) : Object(o.r)(t);
 						e(r)
 					},
 					onIgnoreReports: () => e(Object(o.S)(t)),
@@ -8416,7 +8416,7 @@
 					selectedTemplateId: r
 				})),
 				handleVote: s => {
-					const r = s === c.a.upvoted ? Object(o.U)(t) : Object(o.r)(t);
+					const r = s === c.a.upvoted ? Object(o.V)(t) : Object(o.r)(t);
 					e(r)
 				},
 				onIgnoreReports: () => e(Object(o.S)(t)),
@@ -9303,7 +9303,7 @@
 					} = this.state, C = n.params.subredditName || n.params.multiredditName || "", E = n.params.username, O = Object(m.c)(o()(c || {}, y.t)), k = {
 						...O,
 						sort: O.category ? l.Ob.Relevance : O.sort,
-						t: O.category ? l.Vb.DAY : O.t
+						t: O.category ? l.Wb.DAY : O.t
 					}, j = Object(m.b)(C, E, k);
 					let I;
 					return I = u && O.restrict_sr || 1 === k.type.length && k.type[0] === l.Qb.Posts ? v.g.Posts : k.type.length > 0 && -1 === k.type.indexOf(l.Qb.Posts) && (k.type.indexOf(l.Qb.Subreddits) > -1 || k.type.indexOf(l.Qb.Users) > -1) ? v.g.Listings : v.g.Top, a.a.createElement(_.a, {
@@ -9464,4 +9464,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.687b40749fec704b6c08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a03d787428bcdab51944.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.dd8e130981d43446f952.js
-// Retrieved at 4/20/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9f2330746981aaacab95.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -849,10 +849,10 @@
 			var x = ({
 				className: e,
 				profileName: t,
-				timeSort: s = i.Vb.ALL
+				timeSort: s = i.Wb.ALL
 			}) => r.a.createElement(b, {
 				className: e
-			}, s === i.Vb.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${t}`)], {
+			}, s === i.Wb.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "1MHn3t"
 			}) : n.fbt._("hmm... {profileName} hasn't commented recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "qN3uL"
@@ -860,10 +860,10 @@
 			var v = ({
 				className: e,
 				profileName: t,
-				timeSort: s = i.Vb.ALL
+				timeSort: s = i.Wb.ALL
 			}) => r.a.createElement(b, {
 				className: e
-			}, s === i.Vb.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${t}`)], {
+			}, s === i.Wb.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "28vBEd"
 			}) : n.fbt._("hmm... {profileName} hasn't posted recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "38GhqN"
@@ -2489,7 +2489,7 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const n = s === a.a.upvoted ? Object(r.U)(t) : Object(r.r)(t);
+						const n = s === a.a.upvoted ? Object(r.V)(t) : Object(r.r)(t);
 						e(n)
 					},
 					onIgnoreReports: () => e(Object(r.S)(t)),
@@ -2700,4 +2700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.dd8e130981d43446f952.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9f2330746981aaacab95.js.map

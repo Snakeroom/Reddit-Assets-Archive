@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.89dbd395af44c3d8e5e7.js
-// Retrieved at 4/20/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9837a6bbf900e895593f.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -4319,9 +4319,9 @@
 			})), n.d(t, "J", (function() {
 				return H
 			})), n.d(t, "t", (function() {
-				return V
-			})), n.d(t, "H", (function() {
 				return q
+			})), n.d(t, "H", (function() {
+				return V
 			})), n.d(t, "d", (function() {
 				return G
 			})), n.d(t, "c", (function() {
@@ -4562,7 +4562,7 @@
 						...Object(c.d)(e, t, n, s, r, void 0, a)
 					})
 				},
-				V = (e, t, n) => {
+				q = (e, t, n) => {
 					const s = g(e, t);
 					Object(b.a)({
 						...s,
@@ -4572,7 +4572,7 @@
 						noun: "footer_subreddit"
 					})
 				},
-				q = (e, t) => n => {
+				V = (e, t) => n => {
 					const s = Object(l.j)(t);
 					return {
 						...f(n, e, t),
@@ -5998,8 +5998,8 @@
 				U = n("./src/reddit/components/HeaderImage/index.tsx"),
 				W = n("./src/reddit/components/InFeedPostCreation/async.tsx"),
 				H = n("./src/reddit/components/InfoBanners/QuarantinedSubredditBanner/index.tsx"),
-				V = n("./src/reddit/components/JumpToContent/index.tsx"),
-				q = n("./src/reddit/components/ListingPostList/index.tsx"),
+				q = n("./src/reddit/components/JumpToContent/index.tsx"),
+				V = n("./src/reddit/components/ListingPostList/index.tsx"),
 				G = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
 				K = n("./src/reddit/components/SearchDiscoveryUnits/DiscoveryUnitHeader/index.tsx"),
 				z = n("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx"),
@@ -6127,7 +6127,7 @@
 				geopopular: Oe.m
 			}), He = Object(d.c)({
 				isLoggedIn: Oe.J
-			}), Ve = Object(x.a)((e, t) => {
+			}), qe = Object(x.a)((e, t) => {
 				const {
 					subreddit: n
 				} = Me(e, t), {
@@ -6146,13 +6146,13 @@
 					if (a && i && o.length <= 1) return !0
 				}
 				return !1
-			}), qe = Object(d.c)({
+			}), Ve = Object(d.c)({
 				inAwardListingExperiment: me.a,
 				isPopular: te.C,
 				isInTrendingEntrypointExperiment: fe.a
 			}), Ge = e => {
 				const t = $.x in e && e[$.x].toUpperCase();
-				if ("string" == typeof t && t in v.Vb) return v.Vb[t]
+				if ("string" == typeof t && t in v.Wb) return v.Wb[t]
 			}, Ke = Object(x.a)((e, t) => {
 				const {
 					sort: n,
@@ -6201,7 +6201,7 @@
 				topPostsVariant: he.d,
 				walletRegistrationBannerEnabled: ne.d.spWalletRegistrationBanner
 			}), Ze = Object(d.c)({
-				showCreatePostBanner: Ve,
+				showCreatePostBanner: qe,
 				contentGateInfo: (e, t) => Object(Oe.e)(e, t.match.params.subredditName),
 				layout: te.O,
 				isRpanDuVisible: (e, {
@@ -6224,7 +6224,7 @@
 				subredditName: t.params.subredditName
 			}), He, (e, {
 				match: t
-			}) => t.params.subredditName, qe, Qe, Ze, (e, {
+			}) => t.params.subredditName, Ve, Qe, Ze, (e, {
 				countryMeta: t,
 				geopopular: n
 			}, s, {
@@ -6522,9 +6522,9 @@
 							})
 						}
 					}
-					if (!o && Oe && ce !== v.Vb.WEEK && d === ee.g.Large) {
+					if (!o && Oe && ce !== v.Wb.WEEK && d === ee.g.Large) {
 						const e = Object(f.a)(ae, v.P.TOP, {
-							t: v.Vb.WEEK
+							t: v.Wb.WEEK
 						});
 						We[Ae] = {
 							estHeight: 0,
@@ -6552,14 +6552,14 @@
 						});
 						We[t] = e
 					}
-					const Ve = {
+					const qe = {
 							baseUrl: ye,
 							countrySort: n,
 							sort: g,
 							subredditId: Me,
 							timeSort: ce
 						},
-						qe = fe ? this.props.onLoadMoreSearchResults : this.props.onLoadMorePosts,
+						Ve = fe ? this.props.onLoadMoreSearchResults : this.props.onLoadMorePosts,
 						Ge = ne && ne.subscribers;
 					let Ke;
 					const ze = window.URL;
@@ -6611,16 +6611,16 @@
 							onCloseClick: this.onTopContentDismissed
 						}), !Ee && c && !(se && se.userIsBanned) && !Ne && i.a.createElement(W.a, {
 							subredditName: ae
-						}), !Ne && i.a.createElement(D.a, Ve), ne && i.a.createElement(P.a, {
+						}), !Ne && i.a.createElement(D.a, qe), ne && i.a.createElement(P.a, {
 							subreddit: ne
-						}), i.a.createElement(V.a, null), i.a.createElement(J.a, {
+						}), i.a.createElement(q.a, null), i.a.createElement(J.a, {
 							handlePillClick: this.props.refreshFeed,
 							listingKey: m,
 							subredditName: ae,
 							subscriberCount: Ge
 						}), Ne && i.a.createElement(T.a, {
 							subreddit: ne
-						}), i.a.createElement(q.a, {
+						}), i.a.createElement(V.a, {
 							injectChildren: Ne ? void 0 : We,
 							listingKey: m,
 							listingName: ge,
@@ -6631,7 +6631,7 @@
 								sort: g,
 								subreddit: ne
 							}),
-							onLoadMore: qe,
+							onLoadMore: Ve,
 							inSubredditOrProfile: !Ee,
 							disablePlaceholder: ae === X.f && g === v.P.AWARDED,
 							isActionBarAnimationEnabled: r
@@ -6715,7 +6715,7 @@
 			})), n.d(t, "e", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return V
+				return q
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
@@ -6893,7 +6893,7 @@
 				}),
 				W = Object(s.a)(k, U, m.b, c.b, c.o, (e, t, n, s, r) => n ? s : e ? t === M.LIVE || t === M.VOD ? e.stream.hls_url : r : void 0),
 				H = Object(s.a)(k, U, F, (e, t, n) => e ? t === M.LIVE ? e.broadcast_time : t === M.VOD && n < e.broadcast_time ? n : 0 : 0),
-				V = (e, t) => {
+				q = (e, t) => {
 					const n = p(e);
 					return !!n && n[t] && n[t].chat_disabled
 				}
@@ -7036,4 +7036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.89dbd395af44c3d8e5e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9837a6bbf900e895593f.js.map

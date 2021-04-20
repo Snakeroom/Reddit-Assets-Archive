@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.14504e943a3ab32cfb63.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9b5c567dc9efe9f7f5b4.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4696,12 +4696,20 @@
 				d: "M6.707 6.707a.997.997 0 000-1.414l-5-5A.999.999 0 10.293 1.707L4.586 6 .293 10.293a.999.999 0 101.414 1.414l5-5zm6 0a.997.997 0 000-1.414l-5-5a.999.999 0 10-1.414 1.414L10.586 6l-4.293 4.293a.999.999 0 101.414 1.414l5-5z"
 			}))
 		},
+		"./src/reddit/icons/svgs/Clock/index.m.less": function(e, t, s) {
+			e.exports = {
+				clock: "_3dezPhiKJXkVFXj94zLKcs"
+			}
+		},
 		"./src/reddit/icons/svgs/Clock/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
-				r = s.n(n);
+				r = s.n(n),
+				a = s("./src/lib/classNames/index.ts"),
+				o = s("./src/reddit/icons/svgs/Clock/index.m.less"),
+				i = s.n(o);
 			t.a = e => r.a.createElement("svg", {
-				className: e.className,
+				className: Object(a.a)(i.a.clock, e.className),
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 11 11"
 			}, r.a.createElement("g", null, r.a.createElement("path", {
@@ -5211,4 +5219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.14504e943a3ab32cfb63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9b5c567dc9efe9f7f5b4.js.map

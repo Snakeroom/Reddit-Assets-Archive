@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.8eca420754d876b17ebe.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d388a438e3ab4d58376.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5580,7 +5580,7 @@
 				be = n.n(pe);
 			const he = 10,
 				ge = Object(c.a)((e, t) => t.subredditName, e => Object(w.a)(e, l.P.TOP, {
-					t: l.Vb.WEEK
+					t: l.Wb.WEEK
 				})),
 				fe = Object(c.c)({
 					discoveryUnit: e => Object(ue.c)(e, {
@@ -5658,7 +5658,7 @@
 					loadMorePosts: () => e(Object(j.r)({
 						sort: l.P.TOP,
 						subredditName: t,
-						t: l.Vb.WEEK
+						t: l.Wb.WEEK
 					}))
 				}))(Object(oe.c)(xe)),
 				ye = n("./src/config.ts"),
@@ -7131,7 +7131,7 @@
 					selectedTemplateId: r
 				})),
 				handleVote: n => {
-					const r = n === d.a.upvoted ? Object(i.U)(t) : Object(i.r)(t);
+					const r = n === d.a.upvoted ? Object(i.V)(t) : Object(i.r)(t);
 					e(r)
 				},
 				onIgnoreReports: () => e(Object(i.S)(t)),
@@ -8445,4 +8445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.8eca420754d876b17ebe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d388a438e3ab4d58376.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.adafa10af34837a29224.js
-// Retrieved at 4/20/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9442aa8ef1ef376d64f2.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1681,7 +1681,7 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.Vb.WEEK.toUpperCase(),
+									range: h.Wb.WEEK.toUpperCase(),
 									sort: h.I.TOP,
 									subredditName: i.name
 								},
@@ -6166,7 +6166,7 @@
 					tooltipId: t
 				})),
 				onVoteClick: t => {
-					const n = t === N.a.upvoted ? Object(h.U)(s) : Object(h.r)(s);
+					const n = t === N.a.upvoted ? Object(h.V)(s) : Object(h.r)(s);
 					e(n)
 				},
 				fireAdPixelsOfType: (t, s) => e(Object(h.u)(t, s)),
@@ -7554,7 +7554,7 @@
 				}));
 			class U extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.P.TOP, t, e, l.Vb.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.P.TOP, t, e, l.Wb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(k.c)("recommended_footer"))
 					}
 				}
@@ -7565,7 +7565,7 @@
 						subredditOrProfile: s
 					} = this.props;
 					return e && t && t.id ? Object(u.a)(t.id) : Object(p.a)(s.name, l.P.TOP, {
-						t: l.Vb.WEEK
+						t: l.Wb.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -11664,4 +11664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.adafa10af34837a29224.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9442aa8ef1ef376d64f2.js.map

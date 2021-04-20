@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.de438fde0ca3b7e81ad6.js
-// Retrieved at 4/19/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a99a9f1496cabc5b838c.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -75,7 +75,7 @@
 			}));
 			var x = r("./node_modules/fbt/lib/FbtPublic.js"),
 				t = r("./src/lib/constants/index.ts");
-			const k = [t.ec, t.ib, t.x, t.J, t.db, t.Ib],
+			const k = [t.fc, t.ib, t.x, t.J, t.db, t.Ib],
 				n = {
 					[t.Ib]: a => x.fbt._({
 						"*": "{number} seconds",
@@ -107,7 +107,7 @@
 					}, [x.fbt._plural(a, "number")], {
 						hk: "28DQqD"
 					}),
-					[t.ec]: a => x.fbt._({
+					[t.fc]: a => x.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [x.fbt._plural(a, "number")], {
@@ -130,13 +130,13 @@
 					[t.ib]: a => x.fbt._("{amount}m", [x.fbt._param("amount", String(a))], {
 						hk: "28feBj"
 					}),
-					[t.ec]: a => x.fbt._("{amount}y", [x.fbt._param("amount", String(a))], {
+					[t.fc]: a => x.fbt._("{amount}y", [x.fbt._param("amount", String(a))], {
 						hk: "10bv8G"
 					}),
 					[t.ib]: a => x.fbt._("{amount}m", [x.fbt._param("amount", String(a))], {
 						hk: "28feBj"
 					}),
-					[t.ec]: a => x.fbt._("{amount}y", [x.fbt._param("amount", String(a))], {
+					[t.fc]: a => x.fbt._("{amount}y", [x.fbt._param("amount", String(a))], {
 						hk: "10bv8G"
 					})
 				};
@@ -145,7 +145,7 @@
 				const m = Date.now(),
 					s = new Date(a).getTime(),
 					e = {
-						[t.ec]: "",
+						[t.fc]: "",
 						[t.ib]: "",
 						[t.x]: "",
 						[t.J]: "",
@@ -1924,7 +1924,7 @@
 				onPredictionResolve: h.j,
 				onPredictionVote: h.k,
 				showToast: d.f,
-				upvoteToggled: f.U
+				upvoteToggled: f.V
 			}, hi = Object(c.t)({
 				isCommentsPage: c.w,
 				isPredictionsPage: c.L
@@ -2763,4 +2763,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.de438fde0ca3b7e81ad6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a99a9f1496cabc5b838c.js.map

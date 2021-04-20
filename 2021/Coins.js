@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.dc2e24e48d1a941b466d.js
-// Retrieved at 3/30/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.720103484ae19f99856b.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -1118,12 +1118,20 @@
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})))
 		},
+		"./src/reddit/icons/svgs/Clock/index.m.less": function(e, t, a) {
+			e.exports = {
+				clock: "_3dezPhiKJXkVFXj94zLKcs"
+			}
+		},
 		"./src/reddit/icons/svgs/Clock/index.tsx": function(e, t, a) {
 			"use strict";
 			var n = a("./node_modules/react/index.js"),
-				r = a.n(n);
+				r = a.n(n),
+				s = a("./src/lib/classNames/index.ts"),
+				c = a("./src/reddit/icons/svgs/Clock/index.m.less"),
+				i = a.n(c);
 			t.a = e => r.a.createElement("svg", {
-				className: e.className,
+				className: Object(s.a)(i.a.clock, e.className),
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 11 11"
 			}, r.a.createElement("g", null, r.a.createElement("path", {
@@ -1333,8 +1341,8 @@
 				R = a.n(L),
 				D = a("./src/lib/classNames/index.ts"),
 				F = a("./src/reddit/controls/Button/index.tsx"),
-				B = a("./src/reddit/icons/svgs/Coin/index.tsx"),
-				V = a("./src/reddit/icons/svgs/Stamp/index.tsx");
+				V = a("./src/reddit/icons/svgs/Coin/index.tsx"),
+				B = a("./src/reddit/icons/svgs/Stamp/index.tsx");
 			var q = e => {
 					const {
 						className: t,
@@ -1363,7 +1371,7 @@
 						className: R.a.badge
 					}, u), k && o.a.createElement("div", {
 						className: Object(D.a)(R.a.stamp, _)
-					}, o.a.createElement(V.a, {
+					}, o.a.createElement(B.a, {
 						className: R.a.stampIcon
 					}), o.a.createElement("div", {
 						className: Object(D.a)(R.a.stampValue, _)
@@ -1373,7 +1381,7 @@
 						className: Object(D.a)(R.a.contentContainer, _)
 					}, o.a.createElement("div", {
 						className: Object(D.a)(R.a.price, _)
-					}, o.a.createElement(B.a, {
+					}, o.a.createElement(V.a, {
 						className: R.a.priceCoinIcon
 					}), o.a.createElement("div", null, o.a.createElement("div", {
 						className: R.a.priceValue
@@ -1724,4 +1732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.dc2e24e48d1a941b466d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.720103484ae19f99856b.js.map

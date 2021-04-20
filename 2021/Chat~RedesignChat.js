@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.35d4c806d107422368e2.js
-// Retrieved at 4/20/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b7dfe553144b26c1d57c.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -2484,7 +2484,7 @@
 					t(f(e)), (e => {
 						if (!p(e)) {
 							const t = [...Object(d.a)("chat.promo") || [], e];
-							Object(d.c)("chat.promo", t, u.ec)
+							Object(d.c)("chat.promo", t, u.fc)
 						}
 					})(e)
 				};
@@ -14120,4 +14120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.35d4c806d107422368e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b7dfe553144b26c1d57c.js.map

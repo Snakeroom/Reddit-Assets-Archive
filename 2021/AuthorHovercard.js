@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.b46a14d623a8b4eb525d.js
-// Retrieved at 4/20/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b99367f2841ea9e1f5d2.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -165,7 +165,7 @@
 						type: e.type
 					} : {
 						id: Object(w.m)(d(), e.name),
-						name: `${s.Xb}${e.name}`,
+						name: `${s.Yb}${e.name}`,
 						type: e.type
 					});
 					if (!Object(k.J)(d())) return o(Object(c.k)({
@@ -1525,4 +1525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b46a14d623a8b4eb525d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b99367f2841ea9e1f5d2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.ab48ceddc8168e3fe330.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.18843688e720e5e5f574.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -27,7 +27,7 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const o = [s.ec, s.ib, s.x, s.J, s.db, s.Ib],
+			const o = [s.fc, s.ib, s.x, s.J, s.db, s.Ib],
 				a = {
 					[s.Ib]: e => r.fbt._({
 						"*": "{number} seconds",
@@ -59,7 +59,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.ec]: e => r.fbt._({
+					[s.fc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -82,13 +82,13 @@
 					[s.ib]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.ec]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.fc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.ib]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.ec]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.fc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -97,7 +97,7 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[s.ec]: "",
+						[s.fc]: "",
 						[s.ib]: "",
 						[s.x]: "",
 						[s.J]: "",
@@ -299,7 +299,7 @@
 							const {
 								postId: e
 							} = c, t = s.posts.models[e];
-							t && t.voteState === _.a.notVoted && n(Object(i.U)(e))
+							t && t.voteState === _.a.notVoted && n(Object(i.V)(e))
 						}
 					} else n(y({
 						pollId: e,
@@ -1447,4 +1447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.ab48ceddc8168e3fe330.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.18843688e720e5e5f574.js.map

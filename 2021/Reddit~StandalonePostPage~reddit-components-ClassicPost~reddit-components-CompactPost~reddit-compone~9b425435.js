@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ad39cc762728cc098ffd.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.d94c2aa08273e105527d.js
+// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1825,6 +1825,8 @@
 				return p
 			})), n.d(t, "f", (function() {
 				return f
+			})), n.d(t, "k", (function() {
+				return b
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
@@ -1907,6 +1909,19 @@
 					comment: Object(r.comment)(n, t),
 					post: Object(r.post)(n, t),
 					subreddit: Object(r.subredditByPostOrCommentId)(n, t)
+				}),
+				b = (e, t, n, s) => o => ({
+					source: e ? "comment" : "post",
+					action: "click",
+					noun: t ? "unsnooze_reporter" : "snooze_reporter",
+					post: Object(r.post)(o, n),
+					subreddit: Object(r.subredditByPostOrCommentId)(o, n),
+					actionInfo: {
+						reason: s
+					},
+					...e && {
+						comment: Object(r.comment)(o, n)
+					}
 				})
 		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, n) {
@@ -2888,4 +2903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ad39cc762728cc098ffd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.d94c2aa08273e105527d.js.map
