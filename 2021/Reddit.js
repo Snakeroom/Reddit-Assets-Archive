@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.73c00df1ee21ce0aa764.js
-// Retrieved at 4/19/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.71b36116f7ccf654c88e.js
+// Retrieved at 4/20/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6727,7 +6727,9 @@
 					}) : m.a.createElement(ti.a, {
 						className: ji.a.modModeIcon
 					})), m.a.createElement(Ii, {
-						displayText: "Night Mode",
+						displayText: o.fbt._("Night Mode", null, {
+							hk: "2lyxcc"
+						}),
 						isEnabled: a,
 						onClick: () => {
 							e.sendEvent((e => t => ({
@@ -17294,7 +17296,7 @@
 					experimentEligibilitySelector: r.J,
 					experimentName: s.Cb
 				});
-				return !(!t || Object(s.pd)(t))
+				return !(!t || Object(s.qd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -17567,4 +17569,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.73c00df1ee21ce0aa764.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.71b36116f7ccf654c88e.js.map
