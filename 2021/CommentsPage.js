@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.45439847239628c8d680.js
-// Retrieved at 4/20/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.5d4be22a8f28f6681baf.js
+// Retrieved at 4/20/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1489,9 +1489,9 @@
 						M = !!x.platform.lastPage;
 					if ((S || E && !P) && !(N && M)) {
 						if (E && !x.sidebarPromotedPosts.firstFetch) {
-							const t = Object(V.h)(x) ? Z.a.COMMENTS_OVERLAY : Z.a.COMMENTS;
+							const e = Object(V.h)(x) ? Z.a.COMMENTS_OVERLAY : Z.a.COMMENTS;
 							window.addEventListener("load", () => {
-								r(Object(K.b)(t)), Math.random() <= .01 && r(Object(K.a)(e))
+								r(Object(K.b)(e))
 							})
 						}
 						return void(j || r(Ce(e, t, s)))
@@ -1576,7 +1576,7 @@
 							key: _
 						}));
 						const o = Object(V.h)(x) ? Z.a.COMMENTS_OVERLAY : Z.a.COMMENTS;
-						r(Object(K.b)(o)), Math.random() <= .01 && r(Object(K.a)(e))
+						r(Object(K.b)(o))
 					}
 					if (G.ok) {
 						r(w.g(_));
@@ -11338,4 +11338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.45439847239628c8d680.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.5d4be22a8f28f6681baf.js.map
