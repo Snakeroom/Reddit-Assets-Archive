@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.8c2cbeb41d6c808ef030.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.13a25a12d0a9014ce9ed.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -81,10 +81,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(d.i)()), Object(u.gb)()
+					e(Object(d.i)()), Object(u.ib)()
 				},
 				onViewTooltip: () => {
-					Object(u.yb)()
+					Object(u.Ab)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -153,7 +153,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(u.o)()
+						tooltipDismissed: Object(u.p)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -1625,4 +1625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.8c2cbeb41d6c808ef030.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.13a25a12d0a9014ce9ed.js.map

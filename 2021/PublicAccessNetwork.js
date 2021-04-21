@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cd914a693a35d688184c.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8b684d3d9d3173b9d451.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3131,7 +3131,7 @@
 					toggleModal: e
 				}) => {
 					const t = () => {
-						q.vb(), e()
+						q.xb(), e()
 					};
 					return o.a.createElement(H.d, null, o.a.createElement(Q, null, o.a.createElement(G.a, null, o.a.createElement("div", null, o.a.createElement("div", {
 						className: J.a.Title
@@ -5225,7 +5225,7 @@
 				componentDidMount() {
 					const e = this.focusRef.current;
 					e.classList.add(ao.a.focusVisible), Object(y.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, S(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(De.t)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream(), window.localStorage && this.setState({
-						shouldShowOBSBanner: !q.j()
+						shouldShowOBSBanner: !q.k()
 					})
 				}
 				componentDidUpdate(e, t) {
@@ -5479,12 +5479,12 @@
 					this.props.sendEvent(Object(Ae.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					q.bb(), this.setState({
+					q.db(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ae.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					q.bb(), this.setState({
+					q.db(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ae.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -5492,7 +5492,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Ae.n)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					q.L() || this.props.toggleIntroChatModal()
+					q.N() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ae.q)(this.props.currentStream, this.playbackStats))
@@ -5817,4 +5817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.cd914a693a35d688184c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8b684d3d9d3173b9d451.js.map

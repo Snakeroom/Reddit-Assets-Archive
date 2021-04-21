@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d302647bc39a038e4bab.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bf74df02fcc2d4bd00ea.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -5934,7 +5934,7 @@
 					update: a
 				} = e, d = Object(J.a)(), l = Object(i.d)(), [c, u] = Object(o.useState)(s), [m, p] = Object(o.useState)(!1), [h, b] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					b(Object(X.w)("location")), Object(X.nb)("location")
+					b(Object(X.x)("location")), Object(X.pb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(R.a, null, I.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(A.k, {
@@ -6889,10 +6889,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.gb)()
+					e(Object(l.i)()), Object(p.ib)()
 				},
 				onViewTooltip: () => {
-					Object(p.yb)()
+					Object(p.Ab)()
 				}
 			}))(Object(u.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -6961,7 +6961,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(p.o)()
+						tooltipDismissed: Object(p.p)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -23541,7 +23541,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(q.w)("location")
+						locationSettingSeen: Object(q.x)("location")
 					})
 				}
 				render() {
@@ -24879,4 +24879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d302647bc39a038e4bab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bf74df02fcc2d4bd00ea.js.map

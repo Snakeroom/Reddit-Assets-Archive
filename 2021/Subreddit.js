@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.9837a6bbf900e895593f.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.88e15d52bbd2e2b6eeb7.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -866,7 +866,7 @@
 				} = e, n = Object(c.f)(o.a.AWARDED_LISTING_BANNER, i.f), [u, m] = Object(s.useState)(n ? N.Hidden : N.Visible);
 				if (u === N.Hidden) return null;
 				const p = () => {
-					m(N.Visible), Object(c.W)(o.a.AWARDED_LISTING_BANNER, !1, i.f)
+					m(N.Visible), Object(c.Y)(o.a.AWARDED_LISTING_BANNER, !1, i.f)
 				};
 				return u === N.Dismissed ? r.a.createElement("div", {
 					className: Object(a.a)(x.a.dismissedContainer, t)
@@ -887,7 +887,7 @@
 				})), r.a.createElement(O, null), r.a.createElement(l.a, {
 					className: x.a.close,
 					onClick: () => {
-						m(N.Dismissed), Object(c.W)(o.a.AWARDED_LISTING_BANNER, !0, i.f)
+						m(N.Dismissed), Object(c.Y)(o.a.AWARDED_LISTING_BANNER, !0, i.f)
 					}
 				}))
 			}
@@ -987,7 +987,7 @@
 			class E extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.W)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.Y)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(m.b)())
 					}, this.createPost = () => {
@@ -4614,7 +4614,7 @@
 					action: "click",
 					noun: "overflow_menu"
 				}),
-				J = () => ({
+				Y = () => ({
 					id: "xd_focus_verticals",
 					unitType: d.f.Listing,
 					experiment: "",
@@ -4625,29 +4625,29 @@
 					surface: d.e.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				Y = (e, t, n) => m.actionInfo(e, {
+				J = (e, t, n) => m.actionInfo(e, {
 					position: n
 				}),
 				X = (e, t, n) => {
-					const s = J();
+					const s = Y();
 					return e => ({
 						...x(e, s),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						subreddit: m.subredditById(e, t)
 					})
 				},
 				$ = (e, t, n) => {
-					const s = J();
+					const s = Y();
 					return e => ({
 						...y(e, s, t),
-						actionInfo: Y(e, 0, n)
+						actionInfo: J(e, 0, n)
 					})
 				},
 				ee = (e, t, n) => {
-					const r = J();
+					const r = Y();
 					return e => ({
 						...f(e, r),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						subreddit: m.subredditById(e, t) || null,
 						source: h,
 						action: o.c.VIEW,
@@ -4655,10 +4655,10 @@
 					})
 				},
 				te = (e, t, n) => {
-					const r = J();
+					const r = Y();
 					return e => ({
 						...f(e, r),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						post: m.post(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -4666,10 +4666,10 @@
 					})
 				},
 				ne = (e, t, n, r) => {
-					const a = J();
+					const a = Y();
 					return e => ({
 						...f(e, a),
-						actionInfo: Y(e, 0, r),
+						actionInfo: J(e, 0, r),
 						subreddit: m.subredditById(e, n) || null,
 						post: m.post(e, t) || null,
 						source: h,
@@ -4678,10 +4678,10 @@
 					})
 				},
 				se = (e, t, n) => {
-					const r = J();
+					const r = Y();
 					return e => ({
 						...f(e, r),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						subreddit: m.subredditById(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -4689,10 +4689,10 @@
 					})
 				},
 				re = (e, t, n, r) => {
-					const a = J();
+					const a = Y();
 					return e => ({
 						...f(e, a),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						subreddit: m.subredditById(e, t) || null,
 						post: r ? m.post(e, r) : null,
 						source: h,
@@ -4701,10 +4701,10 @@
 					})
 				},
 				ae = (e, t, n, r) => {
-					const a = J();
+					const a = Y();
 					return e => ({
 						...f(e, a),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						subreddit: m.subredditById(e, t) || null,
 						post: r ? m.post(e, r) : null,
 						source: h,
@@ -4713,10 +4713,10 @@
 					})
 				},
 				oe = (e, t, n) => {
-					const r = J();
+					const r = Y();
 					return e => ({
 						...f(e, r),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						subreddit: m.subredditById(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -4724,10 +4724,10 @@
 					})
 				},
 				ie = (e, t, n) => {
-					const r = J();
+					const r = Y();
 					return e => ({
 						...f(e, r),
-						actionInfo: Y(e, 0, n),
+						actionInfo: J(e, 0, n),
 						subreddit: m.subredditById(e, t) || null,
 						source: h,
 						action: o.c.CLICK,
@@ -6005,8 +6005,8 @@
 				z = n("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx"),
 				Q = n("./src/reddit/components/StructuredStyles/BladeDrawerController/index.tsx"),
 				Z = n("./src/reddit/components/SubredditSidebar/index.tsx"),
-				J = n("./src/reddit/components/TabBadger/index.tsx"),
-				Y = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				Y = n("./src/reddit/components/TabBadger/index.tsx"),
+				J = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				X = n("./src/reddit/constants/page.ts"),
 				$ = n("./src/reddit/constants/parameters.ts"),
 				ee = n("./src/reddit/constants/postLayout.ts"),
@@ -6218,7 +6218,7 @@
 				isUISimplificationAllItemsVariant: xe.b,
 				isActionBarAnimationEnabled: pe.b,
 				inResonatePilot: be.a
-			}), Je = () => Object(d.a)(Oe.cb, We, De, Fe, Ue, Me, (e, {
+			}), Ye = () => Object(d.a)(Oe.cb, We, De, Fe, Ue, Me, (e, {
 				match: t
 			}) => Object(je.x)(e, {
 				subredditName: t.params.subredditName
@@ -6286,7 +6286,7 @@
 					walletRegistrationBannerEnabled: O,
 					...S
 				}
-			}), Ye = (e, t) => ({
+			}), Je = (e, t) => ({
 				onLoadMorePosts: () => {
 					e(j.r({
 						sort: t.match.params.sort,
@@ -6299,7 +6299,7 @@
 					subredditName: t.match.params.subredditName
 				})),
 				setTopContentDismissalPref: () => e(Object(_.F)())
-			}), Xe = Object(c.b)(Je, Ye), $e = Object(s.a)({
+			}), Xe = Object(c.b)(Ye, Je), $e = Object(s.a)({
 				resolved: {},
 				chunkName: () => "Trending",
 				isReady(e) {
@@ -6415,7 +6415,7 @@
 						pageLayer: C,
 						powerupsEnabled: j,
 						powerupsTier2Achieved: z,
-						stellarRegistrationBannerEnabled: Y,
+						stellarRegistrationBannerEnabled: J,
 						sendEvent: $,
 						subreddit: ne,
 						subredditAboutInfo: se,
@@ -6492,7 +6492,7 @@
 								className: Object(u.a)(e, He),
 								subredditId: ne.id
 							})
-						}), Y && ne && (We[2] = {
+						}), J && ne && (We[2] = {
 							estHeight: 200,
 							id: `stellar-registration-${d}-${m}`,
 							render: ({
@@ -6613,7 +6613,7 @@
 							subredditName: ae
 						}), !Ne && i.a.createElement(D.a, qe), ne && i.a.createElement(P.a, {
 							subreddit: ne
-						}), i.a.createElement(q.a, null), i.a.createElement(J.a, {
+						}), i.a.createElement(q.a, null), i.a.createElement(Y.a, {
 							handlePillClick: this.props.refreshFeed,
 							listingKey: m,
 							subredditName: ae,
@@ -6640,7 +6640,7 @@
 					}))
 				}
 			}
-			t.default = Le(Xe(Object(Y.c)(rt)))
+			t.default = Le(Xe(Object(J.c)(rt)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts": function(e, t, n) {
 			"use strict";
@@ -7036,4 +7036,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9837a6bbf900e895593f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.88e15d52bbd2e2b6eeb7.js.map

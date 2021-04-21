@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d388a438e3ab4d58376.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.2110096e29a4755f153a.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5733,7 +5733,7 @@
 					super(e), this.confirmCloseModOnboarding = () => {
 						this.props.toggleCloseMenuModal(), this.setState({
 							visible: !1
-						}), Object(Be.lb)(Ke, !0, this.props.subredditId), this.props.sendEvent(Object(Fe.d)("close"))
+						}), Object(Be.nb)(Ke, !0, this.props.subredditId), this.props.sendEvent(Object(Fe.d)("close"))
 					}, this.customizeThemeColors = () => {
 						this.props.sendEvent(Object(Fe.d)("theme_colors_link"))
 					}, this.customizeIcon = () => {
@@ -5759,7 +5759,7 @@
 						modHasEditedColors: n,
 						modHasEditedIcon: r,
 						subredditId: s
-					} = this.props, i = e && !(t && n && r) && (!Object(Ee.a)() || !Object(Be.u)(Ke, s));
+					} = this.props, i = e && !(t && n && r) && (!Object(Ee.a)() || !Object(Be.v)(Ke, s));
 					i !== this.state.visible && (this.setState({
 						visible: i
 					}), i && this.props.sendEvent(Object(Fe.e)("mod_edu_banner")))
@@ -8445,4 +8445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4d388a438e3ab4d58376.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.2110096e29a4755f153a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d7bca23605c09bb01635.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.8af0707bba48227f4f62.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1391,13 +1391,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(Q.r)(H.a.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(Q.s)(H.a.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ne) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(Q.jb)(H.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(Q.lb)(H.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -5299,4 +5299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d7bca23605c09bb01635.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.8af0707bba48227f4f62.js.map

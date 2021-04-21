@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.a32832ba101688117785.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3315afbd8970bebe3fc8.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -123,7 +123,7 @@
 					...x,
 					...t
 				};
-				class N extends r.Component {
+				class k extends r.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
@@ -200,10 +200,10 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || N.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || k.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = `${v()}${e}${t}`;
-						return (await E(s)).substr(0, N.VIEWER_USER_ID_LENGTH)
+						return (await E(s)).substr(0, k.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -227,25 +227,25 @@
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
 						return {
-							debug: N.DEBUG,
-							disableCookies: N.DISABLE_COOKIES,
-							respectDoNotTrack: N.RESPECT_DO_NOT_TRACK,
+							debug: k.DEBUG,
+							disableCookies: k.DISABLE_COOKIES,
+							respectDoNotTrack: k.RESPECT_DO_NOT_TRACK,
 							...s,
 							data: {
-								env_key: N.ENV_KEY,
+								env_key: k.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: N.PLAYER_NAME,
-								player_version: N.PLAYER_VERSION,
+								player_name: k.PLAYER_NAME,
+								player_version: k.PLAYER_VERSION,
 								...t,
 								viewer_user_id: e
 							}
 						}
 					}
 					getOrCreateSalt() {
-						const e = N.LOCAL_STORAGE_SALT_KEY;
+						const e = k.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(o.a)(e);
-						return t || (t = f(N.SALT_LENGTH), Object(o.b)(e, t, N.SALT_TIME_TO_LIVE)), t
+						return t || (t = f(k.SALT_LENGTH), Object(o.b)(e, t, k.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -261,15 +261,15 @@
 							muxVideoTitle: r
 						} = this.props;
 						return {
-							video_duration: s ? N.DURATION_LIVE : e,
+							video_duration: s ? k.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? N.STREAM_TYPE_LIVE : N.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: s ? k.STREAM_TYPE_LIVE : k.STREAM_TYPE_ON_DEMAND,
 							video_title: r
 						}
 					}
 				}
-				N.displayName = _(e), N.ANONYMOUS_USER_ID = s, N.DEBUG = d, N.DISABLE_COOKIES = u, N.DURATION_LIVE = 1 / 0, N.ENV_KEY = m, N.LOCAL_STORAGE_SALT_KEY = p, N.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, N.PLAYER_NAME = C, N.PLAYER_VERSION = O, N.RESPECT_DO_NOT_TRACK = y, N.SALT_LENGTH = I, N.SALT_TIME_TO_LIVE = S, N.STREAM_TYPE_LIVE = "live", N.STREAM_TYPE_ON_DEMAND = "on-demand", N.VIEWER_USER_ID_LENGTH = T;
-				const k = Object(r.forwardRef)((e, t) => n.a.createElement(N, w({}, e, {
+				k.displayName = _(e), k.ANONYMOUS_USER_ID = s, k.DEBUG = d, k.DISABLE_COOKIES = u, k.DURATION_LIVE = 1 / 0, k.ENV_KEY = m, k.LOCAL_STORAGE_SALT_KEY = p, k.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, k.PLAYER_NAME = C, k.PLAYER_VERSION = O, k.RESPECT_DO_NOT_TRACK = y, k.SALT_LENGTH = I, k.SALT_TIME_TO_LIVE = S, k.STREAM_TYPE_LIVE = "live", k.STREAM_TYPE_ON_DEMAND = "on-demand", k.VIEWER_USER_ID_LENGTH = T;
+				const N = Object(r.forwardRef)((e, t) => n.a.createElement(k, w({}, e, {
 						forwardedRef: t
 					}))),
 					j = Object(i.c)({
@@ -278,7 +278,7 @@
 					});
 				return Object(a.b)(j, null, null, {
 					forwardRef: !0
-				})(k)
+				})(N)
 			}
 		},
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -996,15 +996,15 @@
 				}, [s, d, w]);
 				const S = Object(r.useRef)(() => {}),
 					T = Object(r.useRef)(),
-					N = Object(r.useRef)();
+					k = Object(r.useRef)();
 				S.current = Object(r.useCallback)(() => {
-					N.current = setTimeout(() => {
+					k.current = setTimeout(() => {
 						y.current();
 						const e = [...C].reverse().join("");
 						parseInt(e) < s && S.current()
 					}, m())
 				}, [s, m, C]);
-				const k = Object(r.useCallback)(e => {
+				const N = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t
@@ -1014,10 +1014,10 @@
 						}, u())))
 					})
 				}, []);
-				Object(a.a)(O, k);
+				Object(a.a)(O, N);
 				const j = Object(i.a)(s);
 				Object(r.useEffect)(() => (void 0 !== j && j !== s && y.current(s - j), () => {
-					clearTimeout(T.current), clearTimeout(N.current), clearTimeout(I.current)
+					clearTimeout(T.current), clearTimeout(k.current), clearTimeout(I.current)
 				}), [s]);
 				const A = Object(r.useCallback)(() => g(!0), [g]),
 					R = 0 === C.length,
@@ -1862,8 +1862,8 @@
 				I = s("./src/reddit/models/Vote/index.ts"),
 				S = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				T = s("./src/reddit/selectors/platform.ts"),
-				N = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				k = s("./src/reddit/selectors/user.ts"),
+				k = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				N = s("./src/reddit/selectors/user.ts"),
 				j = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				A = s("./src/reddit/components/Flatlist/index.tsx"),
 				R = s("./src/reddit/components/Flatlist/constants.ts"),
@@ -1888,13 +1888,13 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Q = 20, X = l.ec, $ = l.ec, ee = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), te = Object(a.b)(() => Object(i.c)({
-				autoplay: k.b,
-				isLoggedIn: k.J,
+				autoplay: N.b,
+				isLoggedIn: N.J,
 				isOverlayOpen: T.h,
 				location: (e, {
 					listingName: t
 				}) => {
-					const s = Object(N.m)(e, {
+					const s = Object(k.m)(e, {
 						listingName: t
 					});
 					let r;
@@ -1908,10 +1908,10 @@
 				},
 				stream: (e, {
 					listingName: t
-				}) => Object(N.m)(e, {
+				}) => Object(k.m)(e, {
 					listingName: t
 				}),
-				streamById: e => t => Object(N.l)(e, t),
+				streamById: e => t => Object(k.l)(e, t),
 				rpanDuThresholdVariant: S.i,
 				inRpanDUPreloadExperiment: S.b,
 				inRpanDuTargetingExperiment: S.c
@@ -1941,19 +1941,19 @@
 			class ae extends r.Component {
 				constructor(e) {
 					super(e), this.observableElement = n.a.createRef(), this.videoRef = n.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(w.N)()
+						Object(w.P)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(w.D)());
+						const e = Number(Object(w.E)());
 						if (e) {
 							if (Date.now() - e >= X) {
-								Object(w.N)();
+								Object(w.P)();
 								const e = 30 * l.x,
 									t = Date.now() - e + $;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(w.ub)(Date.now())
+						} else Object(w.wb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -2386,9 +2386,9 @@
 			})), s.d(t, "b", (function() {
 				return T
 			})), s.d(t, "g", (function() {
-				return N
-			})), s.d(t, "h", (function() {
 				return k
+			})), s.d(t, "h", (function() {
+				return N
 			})), s.d(t, "f", (function() {
 				return j
 			})), s.d(t, "a", (function() {
@@ -2495,7 +2495,7 @@
 				}, a.a.createElement(p.a, {
 					className: x.a.overflowItemIcon
 				}))),
-				N = ({
+				k = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: x.a.promptButton,
@@ -2503,7 +2503,7 @@
 				}, a.a.createElement(C.a, null), a.a.createElement("span", null, r.fbt._("Replay Video", null, {
 					hk: "1iD2Wj"
 				}))),
-				k = ({
+				N = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: x.a.promptButton,
@@ -2684,8 +2684,8 @@
 				I = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				S = s("./src/reddit/icons/svgs/Crosspost/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				N = s("./src/reddit/icons/svgs/Link/index.tsx"),
-				k = s("./src/reddit/icons/svgs/Lock/index.tsx"),
+				k = s("./src/reddit/icons/svgs/Link/index.tsx"),
+				N = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				A = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Remove/index.tsx"),
@@ -2820,7 +2820,7 @@
 				iconWrapperClassName: B.a.overflowItemShareIconWrapper,
 				key: `${ne}-share`,
 				onClick: t
-			}, n.a.createElement(N.a, {
+			}, n.a.createElement(k.a, {
 				className: B.a.overflowItemIcon
 			})), n.a.createElement(v.b, {
 				className: B.a.menuOverflowItem,
@@ -2948,7 +2948,7 @@
 				onClick: r
 			}, a ? n.a.createElement(D.a, {
 				className: B.a.overflowItemIcon
-			}) : n.a.createElement(k.a, {
+			}) : n.a.createElement(N.a, {
 				className: B.a.overflowItemIcon
 			})), n.a.createElement(v.b, {
 				className: B.a.endBroadcastItem,
@@ -3393,8 +3393,8 @@
 					}
 				} = m.b,
 				T = () => a()(_, x),
-				N = () => a()(O, y),
-				k = Object(d.a)(e => {
+				k = () => a()(O, y),
+				N = Object(d.a)(e => {
 					const t = {
 							color: e.light ? p.b.lightboxHeaderText : w(e)
 						},
@@ -3418,13 +3418,13 @@
 						initialDisplayCount: C.current || n - s,
 						countToUpperBound: n,
 						initialDelay: T,
-						subsequentRecurringDelay: N,
+						subsequentRecurringDelay: k,
 						incrementDelta: v,
 						shouldDisjointAnimation: d,
 						id: g.current
 					}))
 				});
-			t.a = k
+			t.a = N
 		},
 		"./src/reddit/helpers/getSubredditIcon/index.ts": function(e, t, s) {
 			"use strict";
@@ -3666,9 +3666,9 @@
 			})), s.d(t, "clickSelectAwardEvent", (function() {
 				return T
 			})), s.d(t, "triggerAnonymousEvent", (function() {
-				return N
-			})), s.d(t, "clickMessageInputEvent", (function() {
 				return k
+			})), s.d(t, "clickMessageInputEvent", (function() {
+				return N
 			})), s.d(t, "typeMessageInputEvent", (function() {
 				return j
 			})), s.d(t, "clickLearnMoreLinkEvent", (function() {
@@ -3789,13 +3789,13 @@
 					noun: "award",
 					goldPurchase: l(e, s)
 				}),
-				N = (e, t) => s => ({
+				k = (e, t) => s => ({
 					...u(s, t),
 					source: "give_gold",
 					action: e,
 					noun: "anonymous"
 				}),
-				k = e => t => ({
+				N = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -5028,9 +5028,9 @@
 			})), s.d(t, "m", (function() {
 				return T
 			})), s.d(t, "e", (function() {
-				return N
-			})), s.d(t, "d", (function() {
 				return k
+			})), s.d(t, "d", (function() {
+				return N
 			}));
 			var r = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				n = s("./src/lib/initializeClient/installReducer.ts"),
@@ -5067,9 +5067,9 @@
 				I = e => e.features.goldPurchase.payment.cardValidation.postalCode,
 				S = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				T = e => e.features.goldPurchase.payment.stripeToken.pending,
-				N = e => e.features.goldPurchase.payment.paypal.passthrough,
-				k = e => e.features.goldPurchase.payment.paypal.errorMessage
+				k = e => e.features.goldPurchase.payment.paypal.passthrough,
+				N = e => e.features.goldPurchase.payment.paypal.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a32832ba101688117785.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3315afbd8970bebe3fc8.js.map

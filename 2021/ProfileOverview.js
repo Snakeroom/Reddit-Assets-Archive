@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.9b5f25b25b953c4330be.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.7652279fca1464f1617c.js
+// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5227,7 +5227,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(Ct.sb)(), this.setState({
+						Object(Ct.ub)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -5247,7 +5247,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(Ct.B)()
+						showEducation: !Object(Ct.C)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -5724,4 +5724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.9b5f25b25b953c4330be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.7652279fca1464f1617c.js.map
