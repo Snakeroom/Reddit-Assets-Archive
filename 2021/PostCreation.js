@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f9c39e7db96c3848a603.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3189b7b711d46078e40f.js
+// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -18791,7 +18791,7 @@
 					isPowerupTooltipDisplayed: e => {
 						const t = Object(S.h)(e).id,
 							n = Zi.a.PostsImageUpload;
-						return !!t && !Object(Yi.m)(e, {
+						return !!t && !Object(Yi.n)(e, {
 							subredditId: t,
 							benefit: n
 						})
@@ -20508,7 +20508,7 @@
 				}, e.children),
 				Lu = Object(a.a)(S.d, S.e, S.h, S.Q, S.Z, v.q, (e, t) => {
 					const n = Object(v.m)(e, t);
-					return !!n && Object(Yi.p)(e, {
+					return !!n && Object(Yi.q)(e, {
 						subredditId: n
 					})
 				}, (e, t, n, o, s, r, a) => {
@@ -22164,4 +22164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f9c39e7db96c3848a603.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3189b7b711d46078e40f.js.map

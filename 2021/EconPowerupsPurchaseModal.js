@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.dc86fd677b6db39a53d6.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ca8c55be41787ae79ec9.js
+// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1684,7 +1684,7 @@
 					return r && r[0]
 				},
 				stripeErrorMessage: x.j,
-				userPowerupsData: C.s
+				userPowerupsData: C.t
 			});
 			var fe = Object(a.b)(me)((function(e) {
 					const {
@@ -2503,4 +2503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.dc86fd677b6db39a53d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ca8c55be41787ae79ec9.js.map

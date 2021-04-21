@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.25d7e094057570148059.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4875adcd65feb7dd17ee.js
+// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -474,7 +474,7 @@
 								const t = await Object(f.a)(a);
 								l.width = t.width, l.height = t.height
 							} else if (c.startsWith("video/")) {
-								const c = !(null == n || !n.id) && Object(v.m)(t, {
+								const c = !(null == n || !n.id) && Object(v.n)(t, {
 										subredditId: n.id,
 										benefit: O.a.HdVideo
 									}),
@@ -8481,7 +8481,7 @@
 				r = n("./src/reddit/selectors/economics.ts"),
 				i = n("./src/reddit/selectors/experiments/econ/customEmojis.ts"),
 				c = n("./src/reddit/selectors/gold/powerups.ts");
-			const a = Object(o.a)(s.d.spEmotes, c.n, r.b, c.f, (t, {
+			const a = Object(o.a)(s.d.spEmotes, c.o, r.b, c.f, (t, {
 					subredditId: e
 				}) => {
 					var n;
@@ -8499,7 +8499,7 @@
 						if ((r = [...r, ...Object.values(i.emotes)]).length > 3) break;
 					return r.slice(0, 3)
 				}),
-				d = Object(o.a)(s.d.spGiphy, c.o, (t, e) => t || e)
+				d = Object(o.a)(s.d.spGiphy, c.p, (t, e) => t || e)
 		},
 		"./src/reddit/selectors/products.ts": function(t, e, n) {
 			"use strict";
@@ -8534,4 +8534,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.25d7e094057570148059.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4875adcd65feb7dd17ee.js.map

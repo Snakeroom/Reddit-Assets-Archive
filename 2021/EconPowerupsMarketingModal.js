@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.31eeed16604537e005ff.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3dd32c4611d8c06e3d9a.js
+// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, o) {
@@ -185,15 +185,15 @@
 					} = e, s = Object(k.a)(), r = [...t, h.a.HeroStatus];
 					return n.a.createElement("div", {
 						className: Object(u.a)(N.a.container, o)
-					}, r.map(e => h.e[e] && n.a.createElement(x.a, {
+					}, r.map(e => h.f[e] && n.a.createElement(x.a, {
 						className: N.a.benefit,
-						description: h.d[e](),
+						description: h.e[e](),
 						iconUrl: `${f.a.assetPath}/img/powerups/${e}_v2.svg`,
 						key: `cell_${e}`,
 						onClick: () => {
 							s(Object(E.d)())
 						},
-						title: h.e[e]()
+						title: h.f[e]()
 					})))
 				},
 				O = o("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
@@ -486,4 +486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.31eeed16604537e005ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3dd32c4611d8c06e3d9a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.2110096e29a4755f153a.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.6958ca87e4b49d301e2c.js
+// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -2884,14 +2884,13 @@
 						score: d,
 						supporterInfo: c
 					} = o,
-					g = c ? c.displayName : l.fbt._({
+					g = (null == c ? void 0 : c.displayName) || l.fbt._({
 						"*": "Anonymous Heroes",
 						_1: "Anonymous Hero"
 					}, [l.fbt._plural(d)], {
 						hk: "8kyEI"
-					}).toString();
-				if (!g) return null;
-				const x = null === (t = null == c ? void 0 : c.icon) || void 0 === t ? void 0 : t.url,
+					}).toString(),
+					x = null === (t = null == c ? void 0 : c.icon) || void 0 === t ? void 0 : t.url,
 					v = !!(null === (n = null == c ? void 0 : c.profile) || void 0 === n ? void 0 : n.isNsfw),
 					y = Object(u.a)(d),
 					E = i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
@@ -3109,8 +3108,8 @@
 				currentUser: O.i,
 				powerups: _.i,
 				subreddit: C.T,
-				topSupporters: _.k,
-				userPowerupsData: _.s,
+				topSupporters: _.l,
+				userPowerupsData: _.t,
 				subredditHasUnlockedPowerups: (e, t) => !!Object(_.j)(e, {
 					subredditId: t.subredditId
 				}),
@@ -8445,4 +8444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.2110096e29a4755f153a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.6958ca87e4b49d301e2c.js.map

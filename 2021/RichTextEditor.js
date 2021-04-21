@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.40340ba042d337aceae6.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.31c8b3370075499a2618.js
+// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -885,8 +885,8 @@
 				N = o("./src/reddit/models/Toast/index.ts"),
 				L = o("./src/reddit/selectors/comments.ts"),
 				H = o("./src/reddit/selectors/commentSelector.ts"),
-				q = o("./src/reddit/selectors/platform.ts"),
-				U = o("./src/reddit/selectors/posts.ts"),
+				U = o("./src/reddit/selectors/platform.ts"),
+				q = o("./src/reddit/selectors/posts.ts"),
 				K = o("./src/reddit/selectors/user.ts"),
 				Z = o("./src/reddit/actions/comment/index.ts"),
 				V = o("./src/reddit/actions/comment/constants.ts");
@@ -915,7 +915,7 @@
 					gqlContext: c
 				}) => {
 					const l = i(),
-						u = Object(q.e)(l);
+						u = Object(U.e)(l);
 					let m = "";
 					if (u && (m = u.name), I.d.enableToxicityWarning(l)) {
 						if (!(await R(c(), m, n, s))) return void a(Object(d.i)(te))
@@ -948,7 +948,7 @@
 							commentsPageKey: t,
 							draftKey: o
 						}));
-						const s = Object(U.D)(b(), {
+						const s = Object(q.D)(b(), {
 							postId: e
 						});
 						u(Object(l.u)(s, f.a.CommentSubmitted))
@@ -977,7 +977,7 @@
 						draftKey: i,
 						formData: c,
 						editorMode: l
-					} = e, u = o(), m = Object(q.e)(u);
+					} = e, u = o(), m = Object(U.e)(u);
 					let p = "";
 					if (m && (p = m.name), I.d.enableToxicityWarning(u)) {
 						if (!(await R(n(), p, c, l))) return void t(Object(d.i)(te))
@@ -1295,7 +1295,7 @@
 			})), o.d(t, "e", (function() {
 				return L
 			})), o.d(t, "l", (function() {
-				return U
+				return q
 			})), o.d(t, "m", (function() {
 				return K
 			})), o.d(t, "c", (function() {
@@ -1434,7 +1434,7 @@
 						moreCommentsItem: a,
 						...f.error
 					}))
-				}, B = Object(p.a)(b.b, y.a.upvoted), W = Object(p.a)(b.b, y.a.downvoted), N = Object(a.a)(w.i), L = Object(a.a)(w.h), H = Object(a.a)(w.d), q = Object(a.a)(w.e), U = (Object(a.a)(w.b), Object(a.a)(w.c), ({
+				}, B = Object(p.a)(b.b, y.a.upvoted), W = Object(p.a)(b.b, y.a.downvoted), N = Object(a.a)(w.i), L = Object(a.a)(w.h), H = Object(a.a)(w.d), U = Object(a.a)(w.e), q = (Object(a.a)(w.b), Object(a.a)(w.c), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: o
@@ -1459,7 +1459,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async o => {
-					o(q({
+					o(U({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -1877,8 +1877,8 @@
 				N = o("./src/reddit/constants/keycodes.ts"),
 				L = o("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				H = o("./src/reddit/constants/componentSizes.ts"),
-				q = o("./src/reddit/constants/componentTestIds.ts"),
-				U = o("./src/reddit/selectors/activeModalId.ts"),
+				U = o("./src/reddit/constants/componentTestIds.ts"),
+				q = o("./src/reddit/selectors/activeModalId.ts"),
 				K = o("./src/reddit/selectors/comments.ts"),
 				Z = o("./src/reddit/selectors/editorContent.ts"),
 				V = o("./src/reddit/actions/modal.ts"),
@@ -1906,7 +1906,7 @@
 				me = j.a.div("Wrapper", $.a),
 				pe = j.a.div("FormWrapper", $.a),
 				he = Object(i.b)(() => Object(c.c)({
-					activeModalId: U.a,
+					activeModalId: q.a,
 					userName: e => e.user.account ? Object(Q.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					draft: K.i,
@@ -2056,7 +2056,7 @@
 						wrapperHeight: D
 					} = this.state, I = Object(L.a)(b), A = c.draftType === G.c.edit;
 					return r.a.createElement(me, {
-						"data-test-id": q.b,
+						"data-test-id": U.b,
 						className: Object(W.a)(s, {
 							[$.a.isTopLevelComment]: k,
 							[$.a.mExpanded]: j,
@@ -2460,8 +2460,8 @@
 			var N = o("./src/reddit/components/RichTextEditor/Toolbar/index.tsx"),
 				L = o("./src/reddit/components/Gold/PowerupEntryTooltip/index.tsx"),
 				H = o("./src/reddit/components/RichTextEditor/helpers/controlsState.ts"),
-				q = o("./src/reddit/actions/tooltip.ts"),
-				U = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				U = o("./src/reddit/actions/tooltip.ts"),
+				q = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				K = o("./src/reddit/constants/localStorage.ts"),
 				Z = o("./src/reddit/helpers/localStorage/index.ts"),
 				V = o("./src/reddit/icons/svgs/Smile/index.tsx"),
@@ -2486,7 +2486,7 @@
 				}),
 				userCanEditCustomEmojis: (e, {
 					subredditId: t
-				}) => !!t && Object(J.q)(e, {
+				}) => !!t && Object(J.r)(e, {
 					subredditId: t
 				}),
 				subredditHasPowerups: (e, {
@@ -2506,11 +2506,11 @@
 					} = e, l = Object(Z.j)(K.a.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT), u = d && l < $ && s && 0 === c.length, [m, p] = Object(r.useState)(u), h = Object(i.d)();
 					return Object(r.useEffect)(() => {
 						m && setTimeout(() => {
-							Object(Z.J)(K.a.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT), h(Object(q.f)({
+							Object(Z.J)(K.a.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT), h(Object(U.f)({
 								tooltipId: ee
 							}))
 						}, te)
-					}, [h, m]), a.a.createElement(a.a.Fragment, null, a.a.createElement(U.c, {
+					}, [h, m]), a.a.createElement(a.a.Fragment, null, a.a.createElement(q.c, {
 						tooltipId: ee,
 						text: v.fbt._("NEW! Add custom emojis", null, {
 							hk: "494Rak"
@@ -2527,7 +2527,7 @@
 						}),
 						enabled: t.emote.isEnabled,
 						onClick: e => {
-							m && (h(Object(q.j)({
+							m && (h(Object(U.j)({
 								tooltipId: ee
 							})), p(!1)), n(e)
 						}
@@ -2590,10 +2590,10 @@
 				const f = null == o ? void 0 : o.id,
 					_ = !b.emote.isEnabled && !b.giphy.isEnabled,
 					g = !Object(i.e)(e => !!f && function(e, t) {
-						return Object(J.m)(e, {
+						return Object(J.n)(e, {
 							subredditId: t,
 							benefit: me.a.CommentsWithEmoji
-						}) || Object(J.m)(e, {
+						}) || Object(J.n)(e, {
 							subredditId: t,
 							benefit: me.a.CommentsWithGifs
 						})
@@ -2667,8 +2667,8 @@
 				Ne = p.a.wrapped(ye.a, "FormFooter", Pe.a),
 				Le = p.a.div("MarkdownButtonWrapper", Pe.a),
 				He = p.a.wrapped(be.a, "MarkdownButton", Pe.a),
-				qe = p.a.wrapped(pe, "SectionSpacer", Pe.a),
-				Ue = p.a.div("ToolbarWrapper", Pe.a),
+				Ue = p.a.wrapped(pe, "SectionSpacer", Pe.a),
+				qe = p.a.div("ToolbarWrapper", Pe.a),
 				Ke = p.a.span("FormHeaderText", Pe.a),
 				Ze = ({
 					cancelButtonEnabled: e,
@@ -2693,7 +2693,7 @@
 						pending: r,
 						submitButtonText: i,
 						canSubmit: m
-					}, a.a.createElement(Ue, null, a.a.createElement(he, c), a.a.createElement(qe, null), a.a.createElement(Le, null, a.a.createElement(He, {
+					}, a.a.createElement(qe, null, a.a.createElement(he, c), a.a.createElement(Ue, null), a.a.createElement(Le, null, a.a.createElement(He, {
 						draftKey: t,
 						onClick: l
 					}))))
@@ -3689,13 +3689,13 @@
 					user: S.i,
 					isCommentsPage: f.f
 				}),
-				q = Object(c.b)(H, (e, t) => ({
+				U = Object(c.b)(H, (e, t) => ({
 					onCancel: t => e(g.b(t)),
 					onSubmitDraft: t => e(g.c(t)),
 					onSuccess: t => e(Object(d.b)(t)),
 					onToggleEditorMode: (t, o) => e(x.d(h.g.POST_EDITING, t, o))
 				}));
-			class U extends i.a.Component {
+			class q extends i.a.Component {
 				constructor(e) {
 					super(e), this.onEditorResize = e => {
 						this.setState({
@@ -3865,7 +3865,7 @@
 					}))
 				}
 			}
-			t.default = L(q(U))
+			t.default = L(U(q))
 		},
 		"./src/reddit/components/RequestPendingBanner/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -4658,4 +4658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.40340ba042d337aceae6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.31c8b3370075499a2618.js.map
