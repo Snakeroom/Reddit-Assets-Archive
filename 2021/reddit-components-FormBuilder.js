@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.026f9ee1ac2782e7027b.js
-// Retrieved at 3/16/2021, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.2fad08ed4b9d8a3b4975.js
+// Retrieved at 4/21/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-FormBuilder"], {
 		"./src/reddit/components/FormBuilder/FormBuilderHeader/index.m.less": function(e, t, n) {
@@ -314,7 +314,9 @@
 					visible: r,
 					formikProps: o
 				} = e;
-				return !r || k(r, o) ? l.a.createElement(M, null, t && l.a.createElement("h4", null, "ref" === t.$type ? E()(o.values, t.value) : t.value), n && l.a.createElement("p", null, "ref" === n.$type ? E()(o.values, n.value) : n.value)) : null
+				if (!(!r || k(r, o))) return null;
+				let s, a;
+				return s = "ref" === t.$type ? t.ref ? E()(o.values, t.ref) : t.value ? E()(o.values, t.value) : null : t.value, a = "ref" === n.$type ? n.ref ? E()(o.values, n.ref) : n.value ? E()(o.values, n.value) : null : n.value, l.a.createElement(M, null, t && l.a.createElement("h4", null, s), n && l.a.createElement("p", null, a))
 			}
 			var G = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				q = n("./src/reddit/components/FormBuilder/components/InfoTooltip/index.m.less"),
@@ -757,4 +759,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.026f9ee1ac2782e7027b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.2fad08ed4b9d8a3b4975.js.map
