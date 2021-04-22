@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.98a093b1eb823a008f91.js
-// Retrieved at 4/22/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.01838e037181d7eb3251.js
+// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -97,7 +97,7 @@
 				} = s, f = h[1].powerupsCost, E = b >= 2, k = (null == u ? void 0 : u.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], N = Math.min(w, f) / f, x = f - w;
+				}).slice(0, 2)) || [], x = Math.min(w, f) / f, N = f - w;
 				return r.a.createElement("div", {
 					className: Object(a.a)(m.a.container, e)
 				}, r.a.createElement("div", {
@@ -130,11 +130,11 @@
 					className: m.a.title
 				}, E ? p._("Community perks are now unlocked!", null, {
 					hk: "3xbTTM"
-				}) : p._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [p._param("subredditName", o.displayText), p._param("powerups needed", x)], {
+				}) : p._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [p._param("subredditName", o.displayText), p._param("powerups needed", N)], {
 					hk: "4h33rf"
 				})), r.a.createElement(c.a, {
 					className: m.a.progressBar,
-					progress: N
+					progress: x
 				}))
 			}
 		},
@@ -269,12 +269,12 @@
 				f = s("./src/reddit/selectors/subreddit.ts"),
 				E = s("./src/config.ts"),
 				k = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
-				N = s("./src/reddit/helpers/trackers/powerups.ts"),
-				x = s("./src/reddit/hooks/useTracking.ts"),
+				x = s("./src/reddit/helpers/trackers/powerups.ts"),
+				N = s("./src/reddit/hooks/useTracking.ts"),
 				P = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				g = s("./src/reddit/constants/experiments.ts"),
 				j = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const O = Object(j.a)(g.vb);
+			const O = Object(j.a)(g.xb);
 			var v = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
 				I = s.n(v);
 			const {
@@ -286,7 +286,7 @@
 			var S = function(e) {
 					const {
 						className: t
-					} = e, s = Object(x.a)(), o = Object(n.e)(O), a = M(o);
+					} = e, s = Object(N.a)(), o = Object(n.e)(O), a = M(o);
 					return r.a.createElement("div", {
 						className: Object(i.a)(I.a.container, t)
 					}, a.map(e => P.f[e] && r.a.createElement(k.a, {
@@ -295,7 +295,7 @@
 						iconUrl: `${E.a.assetPath}/img/powerups/${e}_v3.png`,
 						key: `cell_${e}`,
 						onClick: () => {
-							s(Object(N.d)())
+							s(Object(x.d)())
 						},
 						title: P.f[e]()
 					})))
@@ -308,7 +308,7 @@
 					const {
 						benefits: t,
 						className: s
-					} = e, o = Object(x.a)(), n = [...t, P.a.HeroStatus];
+					} = e, o = Object(N.a)(), n = [...t, P.a.HeroStatus];
 					return r.a.createElement("div", {
 						className: Object(i.a)(I.a.container, s)
 					}, n.map(e => P.f[e] && e !== P.a.Achievements && r.a.createElement(k.a, {
@@ -317,7 +317,7 @@
 						iconUrl: `${E.a.assetPath}/img/powerups/${e}_v2.svg`,
 						key: `cell_${e}`,
 						onClick: () => {
-							o(Object(N.d)())
+							o(Object(x.d)())
 						},
 						title: P.f[e]()
 					})))
@@ -439,15 +439,15 @@
 				Object(o.useLayoutEffect)(() => {
 					k()
 				}, [_.current]);
-				const N = () => h(Object(l.g)(u.a.ECON_POWERUPS_MARKETING));
-				if (!s || !c || !a) return N(), null;
+				const x = () => h(Object(l.g)(u.a.ECON_POWERUPS_MARKETING));
+				if (!s || !c || !a) return x(), null;
 				const {
-					tier: x,
+					tier: N,
 					tiersInfo: P
-				} = a, g = null === (t = P[x] || P[x - 1]) || void 0 === t ? void 0 : t.benefits;
+				} = a, g = null === (t = P[N] || P[N - 1]) || void 0 === t ? void 0 : t.benefits;
 				return m ? r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
 					className: T.a.closeButton,
-					onClick: N
+					onClick: x
 				}, r.a.createElement(w.a, {
 					className: T.a.closeIcon
 				})), r.a.createElement("div", {
@@ -601,9 +601,9 @@
 			})), s.d(t, "h", (function() {
 				return k
 			})), s.d(t, "a", (function() {
-				return N
-			})), s.d(t, "l", (function() {
 				return x
+			})), s.d(t, "l", (function() {
+				return N
 			})), s.d(t, "b", (function() {
 				return P
 			}));
@@ -716,7 +716,7 @@
 					...n(e),
 					correlationId: Object(o.d)(o.a.PowerupsFlow, !0)
 				}),
-				N = e => t => ({
+				x = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "add_custom_emojis",
@@ -727,7 +727,7 @@
 					},
 					correlationId: Object(o.d)(o.a.PowerupsFlow, !0)
 				}),
-				x = e => t => ({
+				N = e => t => ({
 					source: "powerups",
 					action: "save",
 					noun: "custom_emojis",
@@ -787,8 +787,8 @@
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(o.wb)
+			const n = Object(r.a)(o.yb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.98a093b1eb823a008f91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.01838e037181d7eb3251.js.map

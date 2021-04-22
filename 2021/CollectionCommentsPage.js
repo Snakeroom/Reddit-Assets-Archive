@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d0f1bbcbb07a6ca90421.js
-// Retrieved at 4/22/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f8ec36f63961a13a44cc.js
+// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7320,7 +7320,7 @@
 				x = s("./src/reddit/icons/svgs/Premium/index.tsx"),
 				v = s("./src/reddit/constants/experiments.ts"),
 				y = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const C = Object(y.a)(v.xb);
+			const C = Object(y.a)(v.zb);
 			var _ = s("./src/reddit/selectors/gold/powerups.ts"),
 				k = s("./src/reddit/selectors/subreddit.ts"),
 				w = s("./src/reddit/selectors/user.ts"),
@@ -7598,9 +7598,9 @@
 						name: r
 					} = t, o = Object(_.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(x.rd)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
+					return i = !e || Object(x.td)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
 						hk: "2g363L"
-					}) : e === x.Qb.Nlp15Max ? n.fbt._("More posts like this", null, {
+					}) : e === x.Sb.Nlp15Max ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -7621,7 +7621,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.rd)(r), u = i && i.id;
+					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.td)(r), u = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -11429,8 +11429,8 @@
 			const a = e => r.e[Object(o.O)(e, {})] === r.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.J
-				}) === n.Y.Treatment
+					experimentName: n.L
+				}) === n.ab.Treatment
 		},
 		"./src/reddit/selectors/experiments/commentBox.ts": function(e, t, s) {
 			"use strict";
@@ -11445,7 +11445,7 @@
 				d = Object(n.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: r.x
-				}), e => e === r.C.Enabled)
+				}), e => e === r.D.Enabled)
 		},
 		"./src/reddit/selectors/experiments/commentsPageAd.ts": function(e, t, s) {
 			"use strict";
@@ -11457,9 +11457,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.M
+					experimentName: n.O
 				});
-				return !!t && !Object(n.rd)(t)
+				return !!t && !Object(n.td)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -11472,9 +11472,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.nb
+					experimentName: n.pb
 				});
-				return !(!t || Object(n.rd)(t))
+				return !(!t || Object(n.td)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -11487,8 +11487,8 @@
 				o = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: n.Lc
-			}) === n.Uc.Enabled
+				experimentName: n.Nc
+			}) === n.Wc.Enabled
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, s) {
 			"use strict";
@@ -11660,8 +11660,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: n.Ic
-				}) === n.Sc.Enabled
+					experimentName: n.Kc
+				}) === n.Uc.Enabled
 			})(e) && (e => {
 				const t = Object(o.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -11685,4 +11685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d0f1bbcbb07a6ca90421.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f8ec36f63961a13a44cc.js.map

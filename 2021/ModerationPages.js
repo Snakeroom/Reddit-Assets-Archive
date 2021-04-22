@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.70a143b3746880c8918a.js
-// Retrieved at 4/22/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.61a65008d6a17061f0dc.js
+// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -13557,9 +13557,9 @@
 			const R = e => {
 				const t = Object(M.c)(e, {
 					experimentEligibilitySelector: M.a,
-					experimentName: P.gc
+					experimentName: P.ic
 				});
-				return !(!t || t !== P.kc.Enabled)
+				return !(!t || t !== P.mc.Enabled)
 			};
 			var A = s("./src/higherOrderComponents/asModal/index.tsx"),
 				L = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -24112,7 +24112,7 @@
 		"./src/reddit/pages/SubredditCreation/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "radioOptions", (function() {
-				return xe
+				return Oe
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/react/index.js"),
@@ -24260,111 +24260,123 @@
 						[J.a.isOverlay]: e.isOverlay
 					})
 				}, e.children))),
-				Y = s("./src/reddit/selectors/experiments/emailInvite.ts"),
-				$ = s("./src/reddit/selectors/subreddit.ts"),
-				ee = s("./src/reddit/selectors/user.ts"),
-				te = s("./src/reddit/pages/SubredditCreation/index.m.less"),
-				se = s.n(te),
-				ne = s("./src/lib/lessComponent.tsx");
-			const ae = 21,
-				oe = 500,
-				re = "create-title-info",
-				ie = ne.a.wrapped(V.a, "Info", se.a),
-				de = ne.a.wrapped(A.a, "RadioOption", se.a),
-				le = ne.a.wrapped(S.c, "Tooltip", se.a),
-				ce = ne.a.wrapped(G.a, "Public", se.a),
-				ue = ne.a.wrapped(W.a, "Restricted", se.a),
-				me = ne.a.wrapped(q.a, "Private", se.a),
-				pe = ne.a.wrapped(B.a, "Employee", se.a),
-				he = ne.a.wrapped(H.a, "CloseButton", se.a),
-				be = ne.a.wrapped(M.b, "ErrorText", se.a),
-				ge = Object(d.c)({
-					error: $.h,
-					isCreatePending: $.k,
-					isEmailInviteExperimentEnabled: Y.a,
-					isEmployee: ee.G,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ee.gb)(e),
-					userIsSuspended: ee.O,
+				Y = s("./src/reddit/constants/experiments.ts"),
+				$ = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				ee = s("./src/reddit/selectors/experiments/utils.ts"),
+				te = s("./src/reddit/selectors/user.ts");
+			const se = Object(d.a)(e => Object($.c)(e, {
+					experimentName: Y.y,
+					experimentEligibilitySelector: ne
+				}), ee.a),
+				ne = e => Object(te.I)(e) || Object(te.J)(e),
+				ae = Object(d.a)(se, e => e === Y.E.Optional),
+				oe = Object(d.a)(se, e => e === Y.E.Remove);
+			var re = s("./src/reddit/selectors/experiments/emailInvite.ts"),
+				ie = s("./src/reddit/selectors/subreddit.ts"),
+				de = s("./src/reddit/pages/SubredditCreation/index.m.less"),
+				le = s.n(de),
+				ce = s("./src/lib/lessComponent.tsx");
+			const ue = 21,
+				me = 500,
+				pe = "create-title-info",
+				he = ce.a.wrapped(V.a, "Info", le.a),
+				be = ce.a.wrapped(A.a, "RadioOption", le.a),
+				ge = ce.a.wrapped(S.c, "Tooltip", le.a),
+				fe = ce.a.wrapped(G.a, "Public", le.a),
+				xe = ce.a.wrapped(W.a, "Restricted", le.a),
+				Ee = ce.a.wrapped(q.a, "Private", le.a),
+				ve = ce.a.wrapped(B.a, "Employee", le.a),
+				Ce = ce.a.wrapped(H.a, "CloseButton", le.a),
+				_e = ce.a.wrapped(M.b, "ErrorText", le.a),
+				ke = Object(d.c)({
+					error: ie.h,
+					isCreatePending: ie.k,
+					isEmailInviteExperimentEnabled: re.a,
+					isEmployee: te.G,
+					isTopicOptional: ae,
+					isTopicRemoved: oe,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(te.gb)(e),
+					userIsSuspended: te.O,
 					allTags: E.e,
 					existingTags: E.h,
 					newTags: E.i,
 					selectedCommunityTopicsOptions: E.k,
 					selectedPrimaryTagId: E.j
 				}),
-				fe = Object(r.b)(ge, e => ({
+				ye = Object(r.b)(ke, e => ({
 					createCommunity: t => e(Object(u.f)(t)),
 					clearErrors: () => e(Object(u.e)()),
 					onCloseLocation: t => e(Object(i.b)(t)),
 					onShowTooltip: () => e(Object(m.f)({
-						tooltipId: re
+						tooltipId: pe
 					})),
 					onHideTooltip: () => e(Object(m.i)())
 				})),
-				xe = (e, t) => [o.a.createElement(de, {
+				Oe = (e, t) => [o.a.createElement(be, {
 					key: "public",
 					showButton: !0,
 					value: "public"
 				}, o.a.createElement("div", {
-					className: se.a.radioContent
-				}, o.a.createElement("div", null, o.a.createElement(ce, null)), o.a.createElement("div", {
-					className: se.a.radioContainer
+					className: le.a.radioContent
+				}, o.a.createElement("div", null, o.a.createElement(fe, null)), o.a.createElement("div", {
+					className: le.a.radioContainer
 				}, o.a.createElement("div", {
-					className: se.a.sublabel
+					className: le.a.sublabel
 				}, n.fbt._("Public", null, {
 					hk: "DK992"
 				})), o.a.createElement("div", {
-					className: Object(l.a)(se.a.metafieldDescription, se.a.radioDescription)
+					className: Object(l.a)(le.a.metafieldDescription, le.a.radioDescription)
 				}, n.fbt._("Anyone can view, post, and comment to this community", null, {
 					hk: "1PfFUA"
-				}))))), o.a.createElement(de, {
+				}))))), o.a.createElement(be, {
 					key: "restricted",
 					showButton: !0,
 					value: "restricted"
 				}, o.a.createElement("div", {
-					className: se.a.radioContent
-				}, o.a.createElement("div", null, o.a.createElement(ue, null)), o.a.createElement("div", {
-					className: se.a.radioContainer
+					className: le.a.radioContent
+				}, o.a.createElement("div", null, o.a.createElement(xe, null)), o.a.createElement("div", {
+					className: le.a.radioContainer
 				}, o.a.createElement("div", {
-					className: se.a.sublabel
+					className: le.a.sublabel
 				}, n.fbt._("Restricted", null, {
 					hk: "1iBTDq"
 				})), o.a.createElement("div", {
-					className: Object(l.a)(se.a.metafieldDescription, se.a.radioDescription)
-				}, Object(K.g)(t))))), o.a.createElement(de, {
+					className: Object(l.a)(le.a.metafieldDescription, le.a.radioDescription)
+				}, Object(K.g)(t))))), o.a.createElement(be, {
 					key: "private",
 					showButton: !0,
 					value: "private"
 				}, o.a.createElement("div", {
-					className: se.a.radioContent
-				}, o.a.createElement("div", null, o.a.createElement(me, null)), o.a.createElement("div", {
-					className: se.a.radioContainer
+					className: le.a.radioContent
+				}, o.a.createElement("div", null, o.a.createElement(Ee, null)), o.a.createElement("div", {
+					className: le.a.radioContainer
 				}, o.a.createElement("div", {
-					className: se.a.sublabel
+					className: le.a.sublabel
 				}, n.fbt._("Private", null, {
 					hk: "3q5SYn"
 				})), o.a.createElement("div", {
-					className: Object(l.a)(se.a.metafieldDescription, se.a.radioDescription)
+					className: Object(l.a)(le.a.metafieldDescription, le.a.radioDescription)
 				}, n.fbt._("Only approved users can view and submit to this community", null, {
 					hk: "3z8OI6"
-				}))))), o.a.createElement(de, {
+				}))))), o.a.createElement(be, {
 					key: "employees_only",
 					showButton: !0,
 					value: "employees_only",
 					hidden: !e
 				}, o.a.createElement("div", {
-					className: se.a.radioContent
-				}, o.a.createElement("div", null, o.a.createElement(pe, null)), o.a.createElement("div", {
-					className: se.a.radioContainer
+					className: le.a.radioContent
+				}, o.a.createElement("div", null, o.a.createElement(ve, null)), o.a.createElement("div", {
+					className: le.a.radioContainer
 				}, o.a.createElement("div", {
-					className: se.a.sublabel
+					className: le.a.sublabel
 				}, n.fbt._("Employees only", null, {
 					hk: "1arrQC"
 				})), o.a.createElement("div", {
-					className: Object(l.a)(se.a.metafieldDescription, se.a.radioDescription)
+					className: Object(l.a)(le.a.metafieldDescription, le.a.radioDescription)
 				}, n.fbt._("Only Reddit employees can view and submit to this community", null, {
 					hk: "3ty23C"
 				})))))];
-			class Ee extends o.a.Component {
+			class Se extends o.a.Component {
 				constructor(e) {
 					super(e), this.onNameChange = e => {
 						this.setState({
@@ -24476,38 +24488,40 @@
 						isEmailInviteExperimentEnabled: a,
 						isEmployee: r,
 						isOverlay: i,
-						onCloseLocation: d,
-						onHideTooltip: c,
-						onShowTooltip: u,
-						sendEvent: m,
-						userDoesNotHaveEnoughExpToCreateCommunity: p,
-						userIsSuspended: h
-					} = this.props, b = this.errorHelper(e), {
-						over18: g,
-						showEmailInviteModal: x,
-						waitingForSuccessfulCommunity: E
+						isTopicOptional: d,
+						isTopicRemoved: c,
+						onCloseLocation: u,
+						onHideTooltip: m,
+						onShowTooltip: p,
+						sendEvent: h,
+						userDoesNotHaveEnoughExpToCreateCommunity: b,
+						userIsSuspended: g
+					} = this.props, x = this.errorHelper(e), {
+						over18: E,
+						showEmailInviteModal: v,
+						waitingForSuccessfulCommunity: C
 					} = this.state;
 					return o.a.createElement(Z, {
-						className: Object(l.a)(se.a.subredditCreation, {
-							[se.a.isOverlay]: i
+						className: Object(l.a)(le.a.subredditCreation, {
+							[le.a.isOverlay]: i
 						}),
 						isOverlay: i
 					}, o.a.createElement("div", {
-						className: se.a.container
+						className: le.a.container
 					}, o.a.createElement("h1", {
-						className: se.a.title
+						className: le.a.title
 					}, n.fbt._("Create a community", null, {
 						hk: "SlFa7"
-					}), i && o.a.createElement(he, {
+					}), i && o.a.createElement(Ce, {
 						onClick: () => {
-							m(Object(U.a)()), d(t.state[I.a.CloseLocation])
+							h(Object(U.a)()), u(t.state[I.a.CloseLocation])
 						}
-					})), p ? o.a.createElement("h2", {
-						className: se.a.sublabel
+					})), b ? o.a.createElement("h2", {
+						className: le.a.sublabel
 					}, n.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "44qhJp"
-					})) : h ? o.a.createElement("h2", {
-						className: se.a.sublabel
+					})) : g ? o.a.createElement("h2", {
+						className: le.a.sublabel
 					}, n.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 						hk: "3trJMZ"
 					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(w.e, {
@@ -24517,39 +24531,39 @@
 						label: n.fbt._("Name", null, {
 							hk: "3OIzgl"
 						}),
-						textContainerClassName: se.a.fullWidthTextContainer,
+						textContainerClassName: le.a.fullWidthTextContainer,
 						onChange: this.onNameChange,
-						maxChars: ae,
+						maxChars: ue,
 						value: this.state.name,
 						subtext: o.a.createElement("span", {
-							className: se.a.subtextContainer
+							className: le.a.subtextContainer
 						}, n.fbt._("Community names including capitalization cannot be changed.", null, {
 							hk: "VjrZg"
 						}), o.a.createElement("span", {
-							id: re,
-							onMouseEnter: u,
-							onMouseLeave: c,
-							className: se.a.info
-						}, o.a.createElement(ie, null), o.a.createElement(le, {
+							id: pe,
+							onMouseEnter: p,
+							onMouseLeave: m,
+							className: le.a.info
+						}, o.a.createElement(he, null), o.a.createElement(ge, {
 							caretOnTop: !0,
-							tooltipId: re,
+							tooltipId: pe,
 							text: n.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
 								hk: "3RsycS"
 							})
 						})))
-					}), b.name && o.a.createElement(be, null, b.name), o.a.createElement(w.k, {
-						isRequired: !0,
+					}), x.name && o.a.createElement(_e, null, x.name), !c && o.a.createElement(o.a.Fragment, null, o.a.createElement(w.k, {
+						isRequired: !d,
 						label: n.fbt._("Topics", null, {
 							hk: "2iixv1"
 						}),
-						textContainerClassName: se.a.fullWidthTextContainer,
+						textContainerClassName: le.a.fullWidthTextContainer,
 						subtext: o.a.createElement("span", {
-							className: se.a.subtextContainer
+							className: le.a.subtextContainer
 						}, n.fbt._("This will help relevant users find your community.", null, {
 							hk: "3LM2Jb"
 						}), o.a.createElement("span", null, `${this.props.selectedCommunityTopicsOptions.length}/${f.a}`)),
 						direction: "column"
-					}, o.a.createElement(y, null)), b.topics && o.a.createElement(be, null, b.topics), o.a.createElement(w.g, {
+					}, o.a.createElement(y, null)), x.topics && o.a.createElement(_e, null, x.topics)), o.a.createElement(w.g, {
 						hideCountdown: !0,
 						isCreateCommunity: !0,
 						isRequired: !0,
@@ -24557,82 +24571,82 @@
 							hk: "4gli9v"
 						}),
 						onChange: this.onDescriptionChange,
-						maxChars: oe,
+						maxChars: me,
 						rows: 2,
 						subtext: n.fbt._("This is how new members come to understand your community.", null, {
 							hk: "35Gh2u"
 						}),
-						textContainerClassName: se.a.fullWidthTextContainer,
+						textContainerClassName: le.a.fullWidthTextContainer,
 						value: this.state.description
-					}), b.publicDescription && o.a.createElement(be, null, b.publicDescription), o.a.createElement(w.k, {
+					}), x.publicDescription && o.a.createElement(_e, null, x.publicDescription), o.a.createElement(w.k, {
 						label: n.fbt._("Community type", null, {
 							hk: "152EhZ"
 						}),
 						direction: "column",
 						isCreateCommunity: !0,
-						textContainerClassName: se.a.fullWidthTextContainer
+						textContainerClassName: le.a.fullWidthTextContainer
 					}, o.a.createElement(R.a, {
 						value: this.state.type,
 						name: "type",
 						onChange: this.onTypeChange
-					}, xe(r, "post"))), o.a.createElement("div", {
-						className: Object(l.a)(se.a.field, {
-							[se.a.isCreatePending]: s
+					}, Oe(r, "post"))), o.a.createElement("div", {
+						className: Object(l.a)(le.a.field, {
+							[le.a.isCreatePending]: s
 						})
 					}, o.a.createElement("div", {
-						className: se.a.subtitle
+						className: le.a.subtitle
 					}, n.fbt._("Adult content", null, {
 						hk: "20arB"
 					})), o.a.createElement(P.a, {
 						name: "over18",
-						value: g,
+						value: E,
 						onChange: () => this.update(!this.state.over18, "over18"),
 						disabled: s
 					}, o.a.createElement("div", {
-						className: se.a.nsfw
+						className: le.a.nsfw
 					}, "NSFW"), o.a.createElement("div", {
-						className: se.a.sublabel
+						className: le.a.sublabel
 					}, n.fbt._("18+ year old community", null, {
 						hk: "1XxZMV"
 					})))), a && o.a.createElement("div", {
-						className: Object(l.a)(se.a.field, {
-							[se.a.isCreatePending]: s
+						className: Object(l.a)(le.a.field, {
+							[le.a.isCreatePending]: s
 						})
 					}, o.a.createElement(L.a, {
-						className: se.a.textButton,
+						className: le.a.textButton,
 						onClick: this.onInviteViaEmailClick
 					}, n.fbt._("Invite members via email", null, {
 						hk: "2uViIf"
-					}))), b.generic && o.a.createElement(be, null, b.generic), E && o.a.createElement("div", {
-						className: se.a.pendingText
+					}))), x.generic && o.a.createElement(_e, null, x.generic), C && o.a.createElement("div", {
+						className: le.a.pendingText
 					}, n.fbt._("Your community is being created...", null, {
 						hk: "3dSTrq"
 					})), o.a.createElement("div", {
-						className: Object(l.a)(se.a.buttonContainer, {
-							[se.a.isOverlay]: i
+						className: Object(l.a)(le.a.buttonContainer, {
+							[le.a.isOverlay]: i
 						})
 					}, i && o.a.createElement(T.q, {
 						disabled: s,
-						className: se.a.createButton,
+						className: le.a.createButton,
 						onClick: () => {
-							d(t.state[I.a.CloseLocation]), m(Object(U.a)())
+							u(t.state[I.a.CloseLocation]), h(Object(U.a)())
 						},
 						priority: T.b.Secondary
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), o.a.createElement(T.q, {
 						disabled: s,
-						className: se.a.createButton,
+						className: le.a.createButton,
 						onClick: this.onCreateCommunityClick
 					}, n.fbt._("Create Community", null, {
 						hk: "QE8Y3"
-					}))))), x && o.a.createElement(O.a, {
+					}))))), v && o.a.createElement(O.a, {
 						onClose: this.onCloseInviteViaEmailModal,
-						sendEvent: m
+						sendEvent: h
 					}))
 				}
 			}
-			t.default = Object(j.c)(fe(Object(N.b)(Ee)))
+			t.default = Object(j.c)(ye(Object(N.b)(Se)))
 		},
 		"./src/reddit/selectors/experiments/emailInvite.ts": function(e, t, s) {
 			"use strict";
@@ -24644,9 +24658,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Eb
+					experimentName: n.Gb
 				});
-				return !(!t || Object(n.rd)(t))
+				return !(!t || Object(n.td)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -24879,4 +24893,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.70a143b3746880c8918a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.61a65008d6a17061f0dc.js.map

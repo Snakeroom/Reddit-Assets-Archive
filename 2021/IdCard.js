@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.faaec4000249a6d6afba.js
-// Retrieved at 4/22/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1dbf4f61bce5f0985a8b.js
+// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2730,10 +2730,10 @@
 				Je = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ke = Object(u.a)(R.J, R.I, (e, t) => !e && !t),
 				Ye = e => Object(Je.b)(e, {
-					experimentName: Ve.W,
+					experimentName: Ve.Y,
 					experimentEligibilitySelector: Ke,
 					expEventOverride: !1
-				}) === Ve.eb.Enabled;
+				}) === Ve.gb.Enabled;
 			var Xe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				Qe = n("./src/reddit/selectors/structuredStyles.ts"),
 				Ze = n("./src/reddit/selectors/subscriptions.ts"),
@@ -2953,8 +2953,8 @@
 					showContributorRequestFlow: e => Object(re.r)(e, qe.e.Post),
 					showCreatePollButton: e => (e => Object(Je.c)(e, {
 						experimentEligibilitySelector: Je.a,
-						experimentName: Ve.z
-					}) === Ve.E.Treatment)(e) && !Object(Re.g)(),
+						experimentName: Ve.A
+					}) === Ve.G.Treatment)(e) && !Object(Re.g)(),
 					subreddit: (e, t) => Object(re.A)(e, {
 						subredditName: t.listingName
 					}),
@@ -5167,7 +5167,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.G)(e) || s.A.Treatment1 === Object(r.c)(e, {
+				return Object(i.G)(e) || s.B.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.u
 				})
@@ -5180,9 +5180,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.Zb.Enabled === Object(r.c)(e, {
+			const i = e => s.bc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Ub
+				experimentName: s.Wb
 			})
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
@@ -5256,4 +5256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.faaec4000249a6d6afba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1dbf4f61bce5f0985a8b.js.map

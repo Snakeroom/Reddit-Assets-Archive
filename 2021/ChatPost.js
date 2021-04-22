@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.032d4db4266ee296a7e3.js
-// Retrieved at 4/22/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.4db27e7fbfec5047b954.js
+// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2031,11 +2031,11 @@
 				Oe = o("./src/reddit/constants/experiments.ts"),
 				Me = o("./src/reddit/helpers/chooseVariant/index.ts");
 			const je = Object(l.a)(e => Object(Me.c)(e, {
-					experimentName: Oe.L,
+					experimentName: Oe.N,
 					experimentEligibilitySelector: Me.a
 				}), e => e),
-				we = e => je(e) === Oe.F.UpvoteOnly,
-				Se = e => je(e) === Oe.F.UpvoteDownvote;
+				we = e => je(e) === Oe.H.UpvoteOnly,
+				Se = e => je(e) === Oe.H.UpvoteDownvote;
 			var Ne = o("./src/reddit/selectors/moderatorPermissions.ts"),
 				Le = o("./src/reddit/selectors/user.ts");
 
@@ -2400,9 +2400,9 @@
 				xt = o("./src/reddit/controls/ErrorText/index.tsx"),
 				gt = o("./src/reddit/selectors/comments.ts");
 			const ft = e => Object(Me.c)(e, {
-				experimentName: Oe.K,
+				experimentName: Oe.M,
 				experimentEligibilitySelector: Me.a
-			}) === Oe.I.Enabled;
+			}) === Oe.K.Enabled;
 			var _t = o("./src/reddit/selectors/communityAwards.ts");
 			const Et = (e, {
 				commentId: t
@@ -3586,7 +3586,7 @@
 			}));
 			var n = o("./src/reddit/constants/experiments.ts"),
 				s = o("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(s.a)(n.ob)
+			const a = Object(s.a)(n.qb)
 		},
 		"./src/reddit/selectors/poll/index.ts": function(e, t, o) {
 			"use strict";
@@ -3662,4 +3662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.032d4db4266ee296a7e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4db27e7fbfec5047b954.js.map
