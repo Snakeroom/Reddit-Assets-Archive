@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.dac1ecdc3476708e92bf.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.1c969ed1c7e29ed33514.js
+// Retrieved at 4/22/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -618,25 +618,24 @@
 					{
 						className: o,
 						comment: n,
-						children: s,
-						isAuthorDeleted: i,
-						isLivestreaming: c,
-						isStrong: d,
-						style: l
+						isAuthorDeleted: s,
+						isLivestreaming: i,
+						isStrong: c,
+						style: d
 					} = e;
 				return a.a.createElement(C.a, {
 					className: Object(m.a)(g.a.commentAuthorLink, o),
 					author: n.author,
 					isAdmin: n.isAdmin,
 					isAdminEmeritus: n.distinguishType === p.C.ALUMNI_ADMIN,
-					isAuthorDeleted: i,
-					isLivestreaming: c,
+					isAuthorDeleted: s,
+					isLivestreaming: i,
 					isMod: n.isMod,
 					isOp: n.isOp,
-					isStrong: d,
+					isStrong: c,
 					isUnstyled: t,
-					style: l
-				}, s, n.author)
+					style: d
+				}, n.author)
 			};
 			var _ = o("./src/reddit/components/Economics/SubredditPremium/Badges/UserDisplay/index.tsx"),
 				E = o("./src/reddit/components/Flair/index.tsx"),
@@ -661,7 +660,7 @@
 				postOrComment: o,
 				tooltipType: r ? T.c.Lightbox : void 0
 			}, a.a.createElement(M.b, {
-				ignore: Object(O.e)(o) || o.distinguishType !== p.C.NONE,
+				ignore: Object(O.e)(o) || !!o.distinguishType && o.distinguishType !== p.C.NONE,
 				subredditId: o.subredditId,
 				userId: o.authorId
 			}, a.a.createElement(f, {
@@ -3663,4 +3662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.dac1ecdc3476708e92bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.1c969ed1c7e29ed33514.js.map
