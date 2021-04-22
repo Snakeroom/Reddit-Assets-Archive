@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7589d18dfe4094b9efcb.js
-// Retrieved at 4/22/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.70a143b3746880c8918a.js
+// Retrieved at 4/22/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -1025,7 +1025,7 @@
 					if (n) return;
 					a || s && !n || await t(Object(I.subredditDataRequested)(e, _, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(be.J)(s()) && v !== o.Ub.Moderators) return void Object(u.a)(t, s());
+				if (!Object(be.J)(s()) && v !== o.Ub.Moderators && v !== o.Ub.SubredditRules) return void Object(u.a)(t, s());
 				if (Object(p.i)(s(), !0, _, C), !v) return;
 				let q, G, z, K, Q, X, J, Z, Y, $ = !1;
 				switch (v) {
@@ -24879,4 +24879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7589d18dfe4094b9efcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.70a143b3746880c8918a.js.map
