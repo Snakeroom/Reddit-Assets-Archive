@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.35e31f1ac4004d5da84f.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bed27288cfc00a9f9e0c.js
+// Retrieved at 4/22/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -939,14 +939,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.uc
-					}) === o.Ec.Enabled
+						experimentName: o.vc
+					}) === o.Fc.Enabled
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.tc
-					}) === o.Dc.Enabled
+						experimentName: o.uc
+					}) === o.Ec.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -975,4 +975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.35e31f1ac4004d5da84f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bed27288cfc00a9f9e0c.js.map

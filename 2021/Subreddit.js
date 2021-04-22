@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.01e35e7bc1f4fea740bc.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.248237ce18feaabcb161.js
+// Retrieved at 4/22/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1235,28 +1235,26 @@
 		"./src/reddit/components/Econ/PowerupsLevel2PerksBanner/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return d
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
 				o = n("./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/async.tsx"),
 				i = n("./src/reddit/components/Econ/PowerupsInFeedUnit/async.tsx"),
-				c = n("./src/reddit/constants/experiments.ts"),
-				d = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const l = Object(d.a)(c.vb),
-				u = ({
+				c = n("./src/reddit/selectors/experiments/econ/powerupsMarketingRedesign.ts");
+			const d = ({
+				className: e,
+				subredditId: t
+			}) => {
+				return Object(a.e)(c.a) ? r.a.createElement(i.a, {
 					className: e,
 					subredditId: t
-				}) => {
-					return Object(a.e)(l) ? r.a.createElement(i.a, {
-						className: e,
-						subredditId: t
-					}) : r.a.createElement(o.a, {
-						className: e,
-						subredditId: t
-					})
-				}
+				}) : r.a.createElement(o.a, {
+					className: e,
+					subredditId: t
+				})
+			}
 		},
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/async.ts": function(e, t, n) {
 			"use strict";
@@ -6972,10 +6970,19 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => s.Yb.Enabled === Object(r.c)(e, {
+			const a = e => s.Zb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Tb
+				experimentName: s.Ub
 			})
+		},
+		"./src/reddit/selectors/experiments/econ/powerupsMarketingRedesign.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			var s = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const a = Object(r.a)(s.wb)
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, n) {
 			"use strict";
@@ -6987,8 +6994,8 @@
 				a = n("./src/reddit/selectors/meta.ts");
 			const o = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
-				experimentName: s.Kc
-			}) === s.Tc.Enabled
+				experimentName: s.Lc
+			}) === s.Uc.Enabled
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, n) {
 			"use strict";
@@ -6998,9 +7005,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => Object(a.G)(e) || !(s.jd.Holdout === Object(r.c)(e, {
+			const o = e => Object(a.G)(e) || !(s.kd.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.gd
+				experimentName: s.hd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -7015,17 +7022,17 @@
 				r = n("./src/reddit/featureFlags/utils.ts"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = ["AU", "CA", "GB", "US"],
-				i = new Set([s.Rb.AllItems, s.Rb.TrendingSearch]),
+				i = new Set([s.Sb.AllItems, s.Sb.TrendingSearch]),
 				c = e => {
 					const t = Object(a.c)(e, {
 						experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-						experimentName: s.Sb
+						experimentName: s.Tb
 					});
 					return i.has(t)
 				},
-				d = e => s.Rb.AllItems === Object(a.c)(e, {
+				d = e => s.Sb.AllItems === Object(a.c)(e, {
 					experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-					experimentName: s.Sb
+					experimentName: s.Tb
 				})
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, n) {
@@ -7086,4 +7093,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.01e35e7bc1f4fea740bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.248237ce18feaabcb161.js.map
