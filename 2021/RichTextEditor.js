@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.31c8b3370075499a2618.js
-// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.bde9621608a69dede69d.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1589,7 +1589,7 @@
 						})
 					})))
 				}, _ = e => async (t, o) => {
-					const s = Object(i.l)();
+					const s = Object(i.m)();
 					if (s >= 3) return;
 					const a = o().user.prefs.useMarkdown ? d.h.MARKDOWN : d.h.RICH_TEXT;
 					if (e === a) return;
@@ -1607,7 +1607,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.eb)(s + 1)
+					})), Object(i.gb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -2481,17 +2481,17 @@
 				}),
 				customEmotes: (e, {
 					subredditId: t
-				}) => Object(J.g)(e, {
+				}) => Object(J.h)(e, {
 					subredditId: t
 				}),
 				userCanEditCustomEmojis: (e, {
 					subredditId: t
-				}) => !!t && Object(J.r)(e, {
+				}) => !!t && Object(J.s)(e, {
 					subredditId: t
 				}),
 				subredditHasPowerups: (e, {
 					subredditId: t
-				}) => Object(J.f)(e, {
+				}) => Object(J.g)(e, {
 					subredditId: t
 				})
 			});
@@ -2506,7 +2506,7 @@
 					} = e, l = Object(Z.j)(K.a.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT), u = d && l < $ && s && 0 === c.length, [m, p] = Object(r.useState)(u), h = Object(i.d)();
 					return Object(r.useEffect)(() => {
 						m && setTimeout(() => {
-							Object(Z.J)(K.a.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT), h(Object(U.f)({
+							Object(Z.K)(K.a.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT), h(Object(U.f)({
 								tooltipId: ee
 							}))
 						}, te)
@@ -2590,10 +2590,10 @@
 				const f = null == o ? void 0 : o.id,
 					_ = !b.emote.isEnabled && !b.giphy.isEnabled,
 					g = !Object(i.e)(e => !!f && function(e, t) {
-						return Object(J.n)(e, {
+						return Object(J.o)(e, {
 							subredditId: t,
 							benefit: me.a.CommentsWithEmoji
-						}) || Object(J.n)(e, {
+						}) || Object(J.o)(e, {
 							subredditId: t,
 							benefit: me.a.CommentsWithGifs
 						})
@@ -3147,7 +3147,7 @@
 					} = e,
 					g = Object(n.useMemo)(() => {
 						const e = !Object(l.i)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE);
-						return e && Object(l.cb)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
+						return e && Object(l.eb)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
 					}, [o]),
 					[x, y] = Object(n.useState)(g);
 				Object(n.useEffect)(() => {
@@ -4658,4 +4658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.31c8b3370075499a2618.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.bde9621608a69dede69d.js.map

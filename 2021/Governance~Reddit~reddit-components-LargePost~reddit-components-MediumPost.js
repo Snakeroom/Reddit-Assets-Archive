@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.3dad22e47d51ce3c4d77.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.98fb4d53c7aa1030ec74.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -506,7 +506,7 @@
 				I = Object(i.a)(T),
 				h = e => {
 					const t = Date.now() - e,
-						n = Object(p.z)();
+						n = Object(p.A)();
 					return Object.keys(n).filter(e => n[e].when >= t).map(e => n[e])
 				},
 				C = ({
@@ -523,12 +523,12 @@
 						C = e === T;
 					if (!(e === _.f || e === _.b || C)) return;
 					if (C) return void j(f, t, n)(r, i, l);
-					0 === h(o.ib).length && Object(p.rb)(!1);
+					0 === h(o.ib).length && Object(p.tb)(!1);
 					let D = i();
 					if (Object(m.d)(D, {
 							listingKey: t,
 							postId: n
-						}) || Object(m.a)(D).length >= b.a || Object(p.M)() || h(o.x).length >= b.a) return;
+						}) || Object(m.a)(D).length >= b.a || Object(p.O)() || h(o.x).length >= b.a) return;
 					const g = Object(S.t)(D, {
 						listingKey: t,
 						postId: n
@@ -578,14 +578,14 @@
 						postId: n
 					})))) : Object(s.a)(Object(E.c)(L, "no_chaining", f)(D))
 				}, D = "FEED_CHAINING__CHAIN_TOGGLED", g = (Object(i.a)(D), "FEED_CHAINING__CHAINING_TOGGLED"), L = Object(i.a)(g), y = () => async e => {
-					Object(p.rb)(!0), e(L({
+					Object(p.tb)(!0), e(L({
 						isDismissed: !0
 					})), e(Object(l.f)(Object(l.e)(r.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), f.b.Undo, r.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(p.rb)(!1), e(L({
+						Object(p.tb)(!1), e(L({
 							isDismissed: !1
 						}))
 					})))
@@ -2894,4 +2894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.3dad22e47d51ce3c4d77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.98fb4d53c7aa1030ec74.js.map

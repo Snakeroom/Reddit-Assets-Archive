@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3189b7b711d46078e40f.js
-// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.29aa835cf13553098d2a.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -2355,7 +2355,7 @@
 						})
 					})))
 				}, g = e => async (t, n) => {
-					const s = Object(i.l)();
+					const s = Object(i.m)();
 					if (s >= 3) return;
 					const a = n().user.prefs.useMarkdown ? d.h.MARKDOWN : d.h.RICH_TEXT;
 					if (e === a) return;
@@ -2373,7 +2373,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.eb)(s + 1)
+					})), Object(i.gb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -4400,7 +4400,7 @@
 					} = e,
 					C = Object(o.useMemo)(() => {
 						const e = !Object(l.i)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE);
-						return e && Object(l.cb)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
+						return e && Object(l.eb)(d.a.POWERUPS_TOOLTIP_VISIBILITY_STORE), e
 					}, [n]),
 					[x, E] = Object(o.useState)(C);
 				Object(o.useEffect)(() => {
@@ -14080,10 +14080,10 @@
 
 			function r(e, t) {
 				let n;
-				n = Object(s.s)(e);
+				n = Object(s.t)(e);
 				const [r, a] = Object(o.useState)(null != n ? n : t);
 				return [r, function(t) {
-					Object(s.lb)(e, t), a(t)
+					Object(s.nb)(e, t), a(t)
 				}]
 			}
 		},
@@ -16756,14 +16756,14 @@
 				rn = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const an = [{
 					id: qt.d,
-					getShowTimesLeft: sn.B,
-					setShowTimesLeft: sn.tb,
+					getShowTimesLeft: sn.C,
+					setShowTimesLeft: sn.vb,
 					tooltipShown: rn.n,
 					tooltipDismissed: rn.m
 				}, {
 					id: qt.c,
-					getShowTimesLeft: sn.A,
-					setShowTimesLeft: sn.sb,
+					getShowTimesLeft: sn.B,
+					setShowTimesLeft: sn.ub,
 					tooltipShown: rn.f,
 					tooltipDismissed: rn.e
 				}],
@@ -16957,7 +16957,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(sn.bb)(xn.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(sn.db)(xn.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -18791,7 +18791,7 @@
 					isPowerupTooltipDisplayed: e => {
 						const t = Object(S.h)(e).id,
 							n = Zi.a.PostsImageUpload;
-						return !!t && !Object(Yi.n)(e, {
+						return !!t && !Object(Yi.o)(e, {
 							subredditId: t,
 							benefit: n
 						})
@@ -20508,7 +20508,7 @@
 				}, e.children),
 				Lu = Object(a.a)(S.d, S.e, S.h, S.Q, S.Z, v.q, (e, t) => {
 					const n = Object(v.m)(e, t);
-					return !!n && Object(Yi.q)(e, {
+					return !!n && Object(Yi.r)(e, {
 						subredditId: n
 					})
 				}, (e, t, n, o, s, r, a) => {
@@ -21443,14 +21443,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.tc
-					}) === o.Dc.Enabled
+						experimentName: o.uc
+					}) === o.Ec.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.sc
-					}) === o.Cc.Enabled
+						experimentName: o.tc
+					}) === o.Dc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -22164,4 +22164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3189b7b711d46078e40f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.29aa835cf13553098d2a.js.map

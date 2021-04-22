@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4875adcd65feb7dd17ee.js
-// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.79338458feb389d30f9d.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -474,7 +474,7 @@
 								const t = await Object(f.a)(a);
 								l.width = t.width, l.height = t.height
 							} else if (c.startsWith("video/")) {
-								const c = !(null == n || !n.id) && Object(v.n)(t, {
+								const c = !(null == n || !n.id) && Object(v.o)(t, {
 										subredditId: n.id,
 										benefit: O.a.HdVideo
 									}),
@@ -4723,7 +4723,7 @@
 				} = t, n = e.id, o = Object(l.e)(S.d.spEmotes), s = Object(l.e)(t => Object(ko.b)(t, {
 					subredditId: n
 				})), r = Object(l.e)(Oo.a);
-				return Object(l.e)(t => Object(To.f)(t, {
+				return Object(l.e)(t => Object(To.g)(t, {
 					subredditId: n
 				})) && r ? a.a.createElement(vo.a, t) : a.a.createElement(a.a.Fragment, null, s && a.a.createElement(wo, Ro({}, t, {
 					shouldHideAddEmote: !o
@@ -8481,7 +8481,7 @@
 				r = n("./src/reddit/selectors/economics.ts"),
 				i = n("./src/reddit/selectors/experiments/econ/customEmojis.ts"),
 				c = n("./src/reddit/selectors/gold/powerups.ts");
-			const a = Object(o.a)(s.d.spEmotes, c.o, r.b, c.f, (t, {
+			const a = Object(o.a)(s.d.spEmotes, c.p, r.b, c.g, (t, {
 					subredditId: e
 				}) => {
 					var n;
@@ -8492,14 +8492,14 @@
 					const i = !(!n || !Object.keys(n).length);
 					return t && i
 				}),
-				l = Object(o.a)(r.b, c.g, c.h, c.f, i.a, (t, e, n, o, s) => {
+				l = Object(o.a)(r.b, c.h, c.i, c.g, i.a, (t, e, n, o, s) => {
 					if (s && o) return [...e, ...n].slice(0, 3);
 					let r = [];
 					for (const i of t || [])
 						if ((r = [...r, ...Object.values(i.emotes)]).length > 3) break;
 					return r.slice(0, 3)
 				}),
-				d = Object(o.a)(s.d.spGiphy, c.p, (t, e) => t || e)
+				d = Object(o.a)(s.d.spGiphy, c.q, (t, e) => t || e)
 		},
 		"./src/reddit/selectors/products.ts": function(t, e, n) {
 			"use strict";
@@ -8534,4 +8534,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4875adcd65feb7dd17ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.79338458feb389d30f9d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.30f3bdfc517179bfc038.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8097959237a321b2b28c.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2433,7 +2433,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.hb)(e)
+					Object(p.jb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -2459,7 +2459,7 @@
 						thingId: y,
 						displayUnusableAwardError: E
 					} = this.props;
-					s || Object(m.d)(m.a.GildingFlow, !1), u(Object(h.viewGildModalEvent)(l.id, n, y)), g(!r && Object(p.o)());
+					s || Object(m.d)(m.a.GildingFlow, !1), u(Object(h.viewGildModalEvent)(l.id, n, y)), g(!r && Object(p.p)());
 					const _ = w ? w.id : O || (o && o.belongsTo ? o.belongsTo.id : void 0);
 					if (_ && t(_), Re(e, l) && (E(), c(b.n)), w || v) {
 						x(w ? w.name : v)
@@ -2575,7 +2575,7 @@
 					})
 				})),
 				setIsAnonymous: t => {
-					e(Object(O.setIsAnonymous)(t)), Object(p.hb)(t)
+					e(Object(O.setIsAnonymous)(t)), Object(p.jb)(t)
 				},
 				subredditAboutRequested: t => e(Object(I.u)(t)),
 				subredditLockedCoinsRequested: (t, s) => e(Object(x.a)(t, s)),
@@ -4209,12 +4209,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.bd.SmIcon:
+						case b.cd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.bd.SmIconHc:
+						case b.cd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5191,12 +5191,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Wc
+						experimentName: n.Xc
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.bd.SmIcon || t === n.bd.SmIconHc
+					return t === n.cd.SmIcon || t === n.cd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5219,4 +5219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.30f3bdfc517179bfc038.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.8097959237a321b2b28c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.54567848bd438e675989.js
-// Retrieved at 4/21/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.da10ac2f210744295e48.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3500,7 +3500,7 @@
 						const s = Object(N.a)(e, t);
 						if (!s) return !1;
 						const n = Object(jt.q)(e, t);
-						return !!n && Object(Gt.a)(e, {
+						return !!n && Object(Gt.b)(e, {
 							subredditId: n.id,
 							userId: s.authorId
 						})
@@ -6803,13 +6803,45 @@
 				})))
 			}
 		},
-		"./src/reddit/components/PowerupsSidebar/PowerupsProgressBar/index.m.less": function(e, t, s) {
+		"./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return c
+			}));
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n),
+				o = s("./src/lib/classNames/index.ts"),
+				i = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				a = s("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less"),
+				d = s.n(a);
+			const c = ({
+				className: e,
+				progress: t
+			}) => r.a.createElement("div", {
+				className: Object(o.a)(d.a.barRow, e)
+			}, r.a.createElement("div", {
+				className: d.a.track
+			}), r.a.createElement("div", {
+				className: d.a.progress,
+				style: {
+					width: `${100*t}%`
+				}
+			}, r.a.createElement(i.a, {
+				className: Object(o.a)(d.a.icon, {
+					[d.a.empty]: 0 === t,
+					[d.a.full]: t >= 1
+				})
+			})))
+		},
+		"./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less": function(e, t, s) {
 			e.exports = {
-				titleRow: "ewR4vxWiJWGeWBdmzw6xS",
-				barRow: "_1u97iAB8jvIzM_2sl3sjGu",
-				track: "_19jmSuCu8wb_2oUOO1Ksr7",
-				progress: "_1kpFqrDgv8X9yOZp129xkr",
-				icon: "_1SSPWxztrUgxbJZ-XoxKNd"
+				titleRow: "_2b_W3JXE3VJ8DO4pd1cR3l",
+				barRow: "_1ER29kj_M6FYxLorbh1AsJ",
+				track: "_3MISl1dByeWJEV8uKLNtbV",
+				progress: "_2Y6DmLHlgwPOvY5OenOM7j",
+				icon: "_2R4rnD4fdTnIksADG42tm-",
+				empty: "hkgHKu8P-BXFRaoLtGkuH",
+				full: "_1HqxlPwcLJ3eBF_qCn5-go"
 			}
 		},
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, s) {
@@ -7037,59 +7069,49 @@
 				x = s("./src/reddit/icons/svgs/Premium/index.tsx"),
 				v = s("./src/reddit/constants/experiments.ts"),
 				y = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const C = Object(y.a)(v.vb);
+			const C = Object(y.a)(v.wb);
 			var _ = s("./src/reddit/selectors/gold/powerups.ts"),
 				k = s("./src/reddit/selectors/subreddit.ts"),
 				w = s("./src/reddit/selectors/user.ts"),
 				O = s("./node_modules/reselect/es/index.js"),
 				E = s("./src/reddit/components/PowerupsSidebar/index.m.less"),
 				j = s.n(E),
-				P = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				I = s("./src/reddit/components/PowerupsSidebar/PowerupsProgressBar/index.m.less"),
+				P = s("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx"),
+				I = s("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less"),
 				S = s.n(I);
 			const {
 				fbt: L
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var T = e => {
-					const {
-						className: t,
-						powerups: s
-					} = e, {
-						tier: n,
-						count: o,
-						tiersInfo: i
-					} = s, a = (i[n] || i[n - 1]).powerupsCost;
-					if (!a) return null;
-					const d = Math.min(a, o) / a;
-					return r.a.createElement("div", {
-						className: t
-					}, r.a.createElement("div", {
-						className: S.a.titleRow
-					}, r.a.createElement("span", null, L._("Powerups", null, {
-						hk: "DrcXp"
-					})), r.a.createElement("span", null, o < a ? `${o}/${a}` : o)), r.a.createElement("div", {
-						className: S.a.barRow
-					}, r.a.createElement("div", {
-						className: S.a.track
-					}), r.a.createElement("div", {
-						className: S.a.progress,
-						style: {
-							width: `${100*d}%`
-						}
-					}, r.a.createElement(P.a, {
-						className: S.a.icon
-					}))))
-				},
-				N = s("./src/reddit/components/PowerupsSidebar/Supporters/index.tsx");
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = e => {
+				const {
+					className: t,
+					powerups: s
+				} = e, {
+					tier: n,
+					count: o,
+					tiersInfo: i
+				} = s, a = (i[n] || i[n - 1]).powerupsCost;
+				if (!a) return null;
+				const d = Math.min(a, o) / a;
+				return r.a.createElement("div", {
+					className: t
+				}, r.a.createElement("div", {
+					className: S.a.titleRow
+				}, r.a.createElement("span", null, L._("Powerups", null, {
+					hk: "DrcXp"
+				})), r.a.createElement("span", null, o < a ? `${o}/${a}` : o)), r.a.createElement(P.a, {
+					progress: d
+				}))
+			};
+			var N = s("./src/reddit/components/PowerupsSidebar/Supporters/index.tsx");
 			const {
 				fbt: F
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = Object(O.c)({
 				currentUser: w.i,
-				powerups: _.i,
+				powerups: _.j,
 				subreddit: k.T,
-				topSupporters: _.l,
-				userPowerupsData: _.t,
-				subredditHasUnlockedPowerups: (e, t) => !!Object(_.j)(e, {
+				topSupporters: _.m,
+				userPowerupsData: _.u,
+				subredditHasUnlockedPowerups: (e, t) => !!Object(_.k)(e, {
 					subredditId: t.subredditId
 				}),
 				isShortSupportersEnabled: C
@@ -7325,9 +7347,9 @@
 						name: r
 					} = t, o = Object(_.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(x.pd)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
+					return i = !e || Object(x.qd)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
 						hk: "2g363L"
-					}) : e === x.Ob.Nlp15Max ? n.fbt._("More posts like this", null, {
+					}) : e === x.Pb.Nlp15Max ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -7348,7 +7370,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.pd)(r), u = i && i.id;
+					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.qd)(r), u = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -11111,7 +11133,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.M
 				});
-				return !!t && !Object(n.pd)(t)
+				return !!t && !Object(n.qd)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -11126,7 +11148,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.nb
 				});
-				return !(!t || Object(n.pd)(t))
+				return !(!t || Object(n.qd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -11139,8 +11161,8 @@
 				o = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: n.Jc
-			}) === n.Sc.Enabled
+				experimentName: n.Kc
+			}) === n.Tc.Enabled
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, s) {
 			"use strict";
@@ -11312,8 +11334,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: n.Gc
-				}) === n.Qc.Enabled
+					experimentName: n.Hc
+				}) === n.Rc.Enabled
 			})(e) && (e => {
 				const t = Object(o.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -11337,4 +11359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.54567848bd438e675989.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.da10ac2f210744295e48.js.map

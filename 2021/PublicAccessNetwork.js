@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8b684d3d9d3173b9d451.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8d2ac125ff44d9e36624.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.gc
+					experimentName: m.hc
 				});
-				return Object(m.pd)(t) ? void 0 : t
+				return Object(m.qd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.hc
+					experimentName: m.ic
 				});
-				return Object(m.pd)(t) ? void 0 : t
-			}, (e, t) => e === m.jc.Enabled && t === m.jc.Enabled);
+				return Object(m.qd)(t) ? void 0 : t
+			}, (e, t) => e === m.kc.Enabled && t === m.kc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -3131,7 +3131,7 @@
 					toggleModal: e
 				}) => {
 					const t = () => {
-						q.xb(), e()
+						q.zb(), e()
 					};
 					return o.a.createElement(H.d, null, o.a.createElement(Q, null, o.a.createElement(G.a, null, o.a.createElement("div", null, o.a.createElement("div", {
 						className: J.a.Title
@@ -5225,7 +5225,7 @@
 				componentDidMount() {
 					const e = this.focusRef.current;
 					e.classList.add(ao.a.focusVisible), Object(y.a)(e), this.props.isOverlay && (this.previouslyActiveElement = document.activeElement, S(e)), this.props.subscribeStreams().then(e => this.unsubscribeStreams = e), this.props.subscribeConfig().then(e => this.unsubscribeConfig = e), this.props.onRecommendedViewerSubredditsSubscribe().then(e => this.unsubscribeRecommendedViewerSubreddits = e), this.props.setNewCorrelationId(), this.props.sendEvent(Object(De.t)()), document.addEventListener("keydown", this.onNextStreamKeyHandler), this.props.isIntroInProgress || this.handleNewStream(), window.localStorage && this.setState({
-						shouldShowOBSBanner: !q.k()
+						shouldShowOBSBanner: !q.l()
 					})
 				}
 				componentDidUpdate(e, t) {
@@ -5479,12 +5479,12 @@
 					this.props.sendEvent(Object(Ae.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					q.db(), this.setState({
+					q.fb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ae.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					q.db(), this.setState({
+					q.fb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ae.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -5492,7 +5492,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Ae.n)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					q.N() || this.props.toggleIntroChatModal()
+					q.P() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ae.q)(this.props.currentStream, this.playbackStats))
@@ -5808,8 +5808,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: a.Gc
-				}) === a.Qc.Enabled
+					experimentName: a.Hc
+				}) === a.Rc.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5817,4 +5817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8b684d3d9d3173b9d451.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.8d2ac125ff44d9e36624.js.map

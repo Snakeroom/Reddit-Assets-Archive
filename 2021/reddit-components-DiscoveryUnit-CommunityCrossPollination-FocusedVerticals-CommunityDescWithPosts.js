@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.e2be8d0274066617b2cd.js
-// Retrieved at 4/21/2021, 11:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.dbd32332f2058b9b099a.js
+// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -173,7 +173,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.j)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.I)(), this.setLocalStorageDisabled = Object(u.gb)()
+					}, this.getLocalStorageDisabled = Object(u.J)(), this.setLocalStorageDisabled = Object(u.ib)()
 				}
 				componentDidMount() {
 					const {
@@ -230,8 +230,8 @@
 				S = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				y = s("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
 				O = s("./src/reddit/components/PostContainer/index.tsx"),
-				g = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				f = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				f = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				g = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				j = s("./src/reddit/constants/posts.ts"),
 				k = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
@@ -307,13 +307,13 @@
 						className: N.a.postBodyWrapper
 					}, !s && i && r.a.createElement("div", {
 						className: Object(c.a)(N.a.subredditContainer)
-					}, r.a.createElement(g.a, {
+					}, r.a.createElement(f.a, {
 						className: N.a.subredditLink,
 						to: i.url,
 						onClick: this.onSubredditNameClick
 					}, i.displayText), n ? r.a.createElement("div", {
 						className: N.a.subredditSubscribeLargeButton
-					}, r.a.createElement(f.a, {
+					}, r.a.createElement(g.a, {
 						identifier: {
 							name: i.name,
 							type: j.a.SUBREDDIT
@@ -321,7 +321,7 @@
 						postId: e.id,
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
-					})) : r.a.createElement(f.a, {
+					})) : r.a.createElement(g.a, {
 						className: N.a.subredditSubscribeButton,
 						getEventFactory: this.getSubscribeEventFactory,
 						doNotHideOtherSubscribeButtons: !0,
@@ -496,7 +496,7 @@
 				subreddit: C.T,
 				subredditAboutInfo: C.x
 			}), O = Object(i.b)(y);
-			class g extends r.a.Component {
+			class f extends r.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
 						const {
@@ -602,7 +602,7 @@
 					}, c))))
 				}
 			}
-			t.a = O(Object(m.c)(g))
+			t.a = O(Object(m.c)(f))
 		},
 		"./src/reddit/components/EventPost/PostEventMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1279,4 +1279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.e2be8d0274066617b2cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.dbd32332f2058b9b099a.js.map
