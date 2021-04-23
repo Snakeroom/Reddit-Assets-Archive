@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.742ba23a02244103004e.js
-// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.e469e2a781566c1e749a.js
+// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2141,7 +2141,7 @@
 						isActionBarAnimationEnabled: Oe,
 						postId: we,
 						postIds: ke
-					} = e, je = !!e.redditStyle || !!e["data-redditstyle"], Pe = je ? void 0 : p, Ce = Object(d.a)(re), _e = ie && Ce, Ee = Object(a.a)(re), Se = Object(c.a)(re), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Ie = ye && Ne, Me = n ? n - W.a : void 0, Ae = !(k && H || $), Le = (e => e === Q.Ac.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Ac.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
+					} = e, je = !!e.redditStyle || !!e["data-redditstyle"], Pe = je ? void 0 : p, Ce = Object(d.a)(re), _e = ie && Ce, Ee = Object(a.a)(re), Se = Object(c.a)(re), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Ie = ye && Ne, Me = n ? n - W.a : void 0, Ae = !(k && H || $), Le = (e => e === Q.Bc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Bc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2156,7 +2156,7 @@
 							hasBottomCompactPostStyles: r,
 							showPinnnedHeader: o
 						}
-					})(e), Re = !!ee && !Object(Q.td)(ee), We = (!y || Re) && !le.isSponsored, De = Object(j.t)(le, g), {
+					})(e), Re = !!ee && !Object(Q.ud)(ee), We = (!y || Re) && !le.isSponsored, De = Object(j.t)(le, g), {
 						source: Ve
 					} = De, ze = o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, {
 						className: Object(P.a)(be.a.container, r, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -3430,9 +3430,9 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: s.pb
 				});
-				return !(!t || Object(s.td)(t))
+				return !(!t || Object(s.ud)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.742ba23a02244103004e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.e469e2a781566c1e749a.js.map

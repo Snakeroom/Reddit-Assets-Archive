@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.b6403f77b92ae8be4bbb.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.c3d8c6e56c992279fba4.js
+// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -677,8 +677,8 @@
 				$ = n.n(G),
 				Y = n("./node_modules/react-motion/lib/react-motion.js"),
 				H = n("./src/reddit/icons/svgs/Replay/index.tsx"),
-				W = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
-				q = n.n(W);
+				q = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Example/index.m.less"),
+				W = n.n(q);
 			const z = {
 				stiffness: 210,
 				damping: 20
@@ -702,11 +702,11 @@
 						region: n
 					} = this.state, r = T.a[e], a = T.b[t], i = T.c[n];
 					return o.a.createElement("article", {
-						className: Object(d.a)(q.a.container, this.props.className)
+						className: Object(d.a)(W.a.container, this.props.className)
 					}, o.a.createElement("div", {
-						className: q.a.cover
+						className: W.a.cover
 					}), o.a.createElement("header", {
-						className: q.a.title
+						className: W.a.title
 					}, s.fbt._("Example", null, {
 						hk: "1siPoi"
 					})), o.a.createElement(Y.TransitionMotion, {
@@ -735,18 +735,18 @@
 							rotation: Object(Y.spring)(180, z)
 						})
 					}, e => o.a.createElement("div", {
-						className: q.a.preview
+						className: W.a.preview
 					}, e.map(e => o.a.createElement("img", {
-						className: q.a.image,
+						className: W.a.image,
 						key: e.key,
 						src: e.key,
 						style: {
 							transform: `rotateY(${e.style.rotation}deg)`
 						}
 					})))), o.a.createElement("footer", {
-						className: q.a.description
+						className: W.a.description
 					}, `${i}, ${r}, ${a}`), o.a.createElement(H.a, {
-						className: q.a.redo,
+						className: W.a.redo,
 						onClick: () => this.setState(K())
 					}))
 				}
@@ -1222,7 +1222,7 @@
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
 				}(s || (s = {})),
 				function(e) {
-					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
+					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.WalletRegistration = "walletRegistration"
 				}(r || (r = {}));
 			const u = async (e, t, n) => d(e, t, n, !0), l = async (e, t, n) => d(e, t, n, !1), m = (e, t) => i(e, t, s.UpsellBanners, Object.keys(r).reduce((e, t) => (e[r[t]] = !1, e), {}))
 		},
@@ -2284,4 +2284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.b6403f77b92ae8be4bbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.c3d8c6e56c992279fba4.js.map

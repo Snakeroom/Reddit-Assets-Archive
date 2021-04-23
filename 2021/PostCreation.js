@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.aac46e4deba1f4001a5c.js
-// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0e7351b902352c745846.js
+// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1276,7 +1276,7 @@
 							disallowProfile: !0
 						});
 					if (!r) throw new Error("Post does not belong to a subreddit");
-					const a = await Object(c.f)(o(), r.name, Object(u.d)(s));
+					const a = await Object(c.f)(o(), r.name, Object(u.e)(s));
 					if (a.error || !a.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: i
@@ -21443,14 +21443,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.xc
-					}) === o.Hc.Enabled
+						experimentName: o.yc
+					}) === o.Ic.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.wc
-					}) === o.Gc.Enabled
+						experimentName: o.xc
+					}) === o.Hc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -22164,4 +22164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.aac46e4deba1f4001a5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0e7351b902352c745846.js.map

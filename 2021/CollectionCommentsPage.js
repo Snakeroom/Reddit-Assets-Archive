@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8644a35d7e3048ae5439.js
-// Retrieved at 4/22/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.320d66db1fcfac8c085d.js
+// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -882,7 +882,7 @@
 							disallowProfile: !0
 						});
 					if (!o) throw new Error("Post does not belong to a subreddit");
-					const i = await Object(d.f)(n(), o.name, Object(m.d)(r));
+					const i = await Object(d.f)(n(), o.name, Object(m.e)(r));
 					if (i.error || !i.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: a
@@ -7574,9 +7574,9 @@
 						name: r
 					} = t, o = Object(_.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(x.td)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
+					return i = !e || Object(x.ud)(e) ? n.fbt._("More posts from the {name} community", [n.fbt._param("name", r)], {
 						hk: "2g363L"
-					}) : e === x.Sb.Nlp15Max ? n.fbt._("More posts like this", null, {
+					}) : e === x.Tb.Nlp15Max ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -7597,7 +7597,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.td)(r), u = i && i.id;
+					} = this.props, l = i && Object(C.a)(i), m = !!r && !Object(x.ud)(r), u = i && i.id;
 					return s || n || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -11435,7 +11435,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.O
 				});
-				return !!t && !Object(n.td)(t)
+				return !!t && !Object(n.ud)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -11450,7 +11450,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.pb
 				});
-				return !(!t || Object(n.td)(t))
+				return !(!t || Object(n.ud)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -11463,8 +11463,8 @@
 				o = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: n.Nc
-			}) === n.Wc.Enabled
+				experimentName: n.Oc
+			}) === n.Xc.Enabled
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, s) {
 			"use strict";
@@ -11636,8 +11636,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: n.Kc
-				}) === n.Uc.Enabled
+					experimentName: n.Lc
+				}) === n.Vc.Enabled
 			})(e) && (e => {
 				const t = Object(o.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -11661,4 +11661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.8644a35d7e3048ae5439.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.320d66db1fcfac8c085d.js.map

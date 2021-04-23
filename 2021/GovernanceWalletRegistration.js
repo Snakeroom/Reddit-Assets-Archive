@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.955d42130993830f07f6.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.b2b530e4eab69d5a4b1f.js
+// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -218,8 +218,8 @@
 				O = Object(a.a)(g.q),
 				j = Object(a.a)(g.r),
 				I = Object(a.a)(g.s),
-				R = Object(a.a)(g.t),
-				A = Object(a.a)(g.u),
+				A = Object(a.a)(g.t),
+				R = Object(a.a)(g.u),
 				S = Object(a.a)(g.v),
 				L = Object(a.a)(g.w),
 				M = Object(a.a)(g.x),
@@ -287,7 +287,7 @@
 						...e,
 						contentId: l
 					});
-					u.ok ? (n(R({
+					u.ok ? (n(A({
 						...u.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
@@ -305,7 +305,7 @@
 				}) => {
 					t(S());
 					const a = await Object(h.a)(r(), e);
-					a.ok ? t(L(a.body)) : t(A({
+					a.ok ? t(L(a.body)) : t(R({
 						error: a.error
 					}))
 				}
@@ -649,7 +649,7 @@
 				j = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
 				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = "https://metamask.io/", A = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = "https://metamask.io/", R = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
 			class S extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -677,7 +677,7 @@
 					}, a.a.createElement("p", {
 						className: C.a.paragraph
 					}, I._('{=MetaMask} is an Ethereum Wallet trusted by millions. The extension allows you to manage decentralized tokens and to access Ethereum-powered decentralized applications, or "Dapps", directly in your browser. You will need to reload the page after you install the extension.', [I._param("=MetaMask", a.a.createElement("a", {
-						href: R,
+						href: A,
 						className: C.a.link,
 						rel: "noopener noreferrer",
 						target: "_blank"
@@ -712,7 +712,7 @@
 						className: C.a.buttonIcon
 					})) : a.a.createElement(f.m, {
 						className: C.a.button,
-						href: A,
+						href: R,
 						target: "_blank",
 						onClick: () => this.setState({
 							clickedInstallButton: !0
@@ -1276,7 +1276,7 @@
 					e.SubredditPremiumWaitlist = "subreddit_premium_waitlist", e.UpsellBanners = "upsell_banners"
 				}(r || (r = {})),
 				function(e) {
-					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.StellarWalletRegistration = "stellarWalletRegistration", e.WalletRegistration = "walletRegistration"
+					e.AnimatedCard = "animatedCard", e.Badges = "badges", e.BlackHole = "blackHole", e.ClaimPoints = "claimPoints", e.Emojis = "emojis", e.FavoriteSeason = "favoriteSeason", e.GameStyle = "gameStyle", e.LFG = "lfg", e.NewUserWelcome = "newuserwelcome", e.WalletRegistration = "walletRegistration"
 				}(a || (a = {}));
 			const l = async (e, t, n) => d(e, t, n, !0), u = async (e, t, n) => d(e, t, n, !1), m = (e, t) => i(e, t, r.UpsellBanners, Object.keys(a).reduce((e, t) => (e[a[t]] = !1, e), {}))
 		},
@@ -1937,4 +1937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.955d42130993830f07f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.b2b530e4eab69d5a4b1f.js.map

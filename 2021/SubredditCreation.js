@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.7461d4b7307e6ec88020.js
-// Retrieved at 4/22/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.c99341e43f0316e78880.js
+// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1164,8 +1164,8 @@
 				}).apply(this, arguments)
 			}
 			const W = Object(d.a)(h.a),
-				G = f.a.wrapped(I.a, "Circle", A.a),
-				V = f.a.h3("Label", A.a),
+				V = f.a.wrapped(I.a, "Circle", A.a),
+				G = f.a.h3("Label", A.a),
 				K = f.a.wrapped(S.c, "Subtext", A.a),
 				q = f.a.wrapped(u.a, "HoverTooltip", A.a),
 				Q = f.a.div("ControlContainer", A.a),
@@ -1205,7 +1205,7 @@
 					last: e.last
 				}, a.a.createElement(J, {
 					className: e.textContainerClassName
-				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(G, null)), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, e.children)),
+				}, a.a.createElement(G, null, e.label, e.isRequired && a.a.createElement(V, null)), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, e.children)),
 				ne = f.a.div("StyledFlair", A.a),
 				se = f.a.wrapped(ne, "SpoilerFlair", A.a),
 				ae = f.a.wrapped(ne, "NSFWFlair", A.a),
@@ -1228,7 +1228,7 @@
 						last: e.last
 					}, a.a.createElement(J, null, a.a.createElement(P.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(V, null, e.label))), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(q, {
+					}, a.a.createElement(G, null, e.label))), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(q, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), a.a.createElement(T.a, {
@@ -1258,7 +1258,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(P.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(K, null, " ", a.a.createElement(pe, {
+				}, !e.inModal && a.a.createElement(P.a, null, a.a.createElement(G, null, e.label)), a.a.createElement(K, null, " ", a.a.createElement(pe, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -1289,7 +1289,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(J, null, a.a.createElement(P.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, a.a.createElement(R.l, {
+				}, a.a.createElement(J, null, a.a.createElement(P.a, null, a.a.createElement(G, null, e.label)), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, a.a.createElement(R.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				xe = e => a.a.createElement(Y, {
@@ -1334,7 +1334,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(J, null, a.a.createElement(V, null, e.label), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, (e => a.a.createElement(fe, {
+				}, a.a.createElement(J, null, a.a.createElement(G, null, e.label), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, (e => a.a.createElement(fe, {
 					onClick: e.openDropdown
 				}, a.a.createElement(ve, {
 					id: `SettingDropdown--${e.id}`
@@ -1362,7 +1362,7 @@
 						} = o;
 					return a.a.createElement(Y, {
 						disabled: e
-					}, a.a.createElement(J, null, a.a.createElement(V, null, o.label), a.a.createElement(K, null, o.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(J, null, a.a.createElement(G, null, o.label), a.a.createElement(K, null, o.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), a.a.createElement(Y, {
 						last: t,
@@ -1384,7 +1384,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(J, null, a.a.createElement(V, null, e.label), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, e.children)),
+				}, a.a.createElement(J, null, a.a.createElement(G, null, e.label), a.a.createElement(K, null, e.subtext)), a.a.createElement(z, null, e.children)),
 				Te = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -2701,8 +2701,8 @@
 				A = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				H = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				W = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				G = n("./src/reddit/icons/svgs/Eye/index.tsx"),
-				V = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				V = n("./src/reddit/icons/svgs/Eye/index.tsx"),
+				G = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				K = n("./src/reddit/icons/svgs/Lock/index.tsx"),
 				q = n("./src/reddit/icons/svgs/User/index.tsx"),
 				Q = n("./src/reddit/models/Subreddit/index.ts"),
@@ -2747,11 +2747,11 @@
 			const pe = 21,
 				ue = 500,
 				me = "create-title-info",
-				he = de.a.wrapped(V.a, "Info", ce.a),
+				he = de.a.wrapped(G.a, "Info", ce.a),
 				xe = de.a.wrapped(M.a, "RadioOption", ce.a),
 				be = de.a.wrapped(T.c, "Tooltip", ce.a),
 				fe = de.a.wrapped(q.a, "Public", ce.a),
-				Ce = de.a.wrapped(G.a, "Restricted", ce.a),
+				Ce = de.a.wrapped(V.a, "Restricted", ce.a),
 				ve = de.a.wrapped(K.a, "Private", ce.a),
 				ge = de.a.wrapped(H.a, "Employee", ce.a),
 				Oe = de.a.wrapped(W.a, "CloseButton", ce.a),
@@ -3126,11 +3126,11 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Gb
+					experimentName: s.Hb
 				});
-				return !(!t || Object(s.td)(t))
+				return !(!t || Object(s.ud)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.7461d4b7307e6ec88020.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.c99341e43f0316e78880.js.map

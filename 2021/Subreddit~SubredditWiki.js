@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.f4c817e9639e00d1c883.js
-// Retrieved at 4/22/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.2a606b2e125997fb384e.js
+// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -292,7 +292,7 @@
 							disallowProfile: !0
 						});
 					if (!i) throw new Error("Post does not belong to a subreddit");
-					const a = await Object(d.f)(r(), i.name, Object(u.d)(s));
+					const a = await Object(d.f)(r(), i.name, Object(u.e)(s));
 					if (a.error || !a.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: o
@@ -4945,12 +4945,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case h.fd.SmIcon:
+						case h.gd.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.fd.SmIconHc:
+						case h.gd.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5913,7 +5913,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(mt.c)(e, t),
-					isPredictionsLeaderboardsEnabled: pt.g,
+					isPredictionsLeaderboardsEnabled: pt.h,
 					showGovernance: ct.d.spPoints,
 					showLeaderboard: ct.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -8414,12 +8414,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: r.ad
+						experimentName: r.bd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.fd.SmIcon || t === r.fd.SmIconHc
+					return t === r.gd.SmIcon || t === r.gd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8442,4 +8442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.f4c817e9639e00d1c883.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.2a606b2e125997fb384e.js.map
