@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c3132b26358d45dc2f8e.js
-// Retrieved at 4/26/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7d66511cc89c475eeb73.js
+// Retrieved at 4/26/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -7027,8 +7027,8 @@
 				a = n("./src/reddit/selectors/meta.ts");
 			const o = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
-				experimentName: s.Oc
-			}) === s.Xc.Enabled
+				experimentName: s.Mc
+			}) === s.Vc.Enabled
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, n) {
 			"use strict";
@@ -7038,9 +7038,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => Object(a.G)(e) || !(s.nd.Holdout === Object(r.c)(e, {
+			const o = e => Object(a.G)(e) || !(s.ld.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.kd
+				experimentName: s.id
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -7126,4 +7126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c3132b26358d45dc2f8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7d66511cc89c475eeb73.js.map
