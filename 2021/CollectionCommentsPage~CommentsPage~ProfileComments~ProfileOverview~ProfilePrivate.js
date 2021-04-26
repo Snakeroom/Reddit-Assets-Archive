@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.784e239abe8dd1e34889.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.eb849aeaa9038b960ac7.js
+// Retrieved at 4/26/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -937,7 +937,7 @@
 						postId: t.post.id
 					}))
 				})),
-				T = (e, t = !1, n, s) => {
+				F = (e, t = !1, n, s) => {
 					const o = Object(c.a)(S.a.icon, S.a.hideOnHover);
 					if (t) return r.a.createElement(h.a, {
 						className: o
@@ -1002,7 +1002,7 @@
 				}, i ? r.a.createElement(x.a, {
 					className: S.a.icon,
 					isFilled: !0
-				}) : h ? r.a.createElement(r.a.Fragment, null, T(E.media && E.media.type, g, l, _), r.a.createElement(f.a, {
+				}) : h ? r.a.createElement(r.a.Fragment, null, F(E.media && E.media.type, g, l, _), r.a.createElement(f.a, {
 					className: Object(c.a)(S.a.icon, S.a.showOnHover)
 				})) : r.a.createElement(f.a, {
 					className: S.a.icon,
@@ -1588,8 +1588,10 @@
 					useTertiaryButton: e.useTertiaryButton,
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
-				})))), e.bottomButtonText && e.onBottomButtonClick && r.a.createElement(x.o, {
+				})))), e.bottomButtonText && e.onBottomButtonClick && r.a.createElement(x.q, {
 					className: O.a.bottomButton,
+					kind: x.a.Button,
+					priority: x.b.Plain,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				S = Object(c.c)({
@@ -1599,8 +1601,11 @@
 				N = Object(i.b)(S)(e => {
 					const t = Object(v.a)();
 					return r.a.createElement("div", {
-						className: O.a.communityItemContainer
+						className: Object(d.a)(O.a.communityItemContainer, {
+							[O.a.withBottomFlair]: e.isNSFW
+						})
 					}, r.a.createElement(g.a, {
+						className: O.a.communityItemExpandCenter,
 						widthRight: h.t
 					}, r.a.createElement("div", {
 						className: O.a.iconContainer
@@ -1633,6 +1638,7 @@
 					}, [s.fbt._plural(e.subscribers, "number")], {
 						hk: "6i1wh"
 					})), e.isNSFW && r.a.createElement(l.b, {
+						className: O.a.nsfwFlair,
 						flair: {
 							type: w.f.Nsfw,
 							text: "nsfw"
@@ -1640,7 +1646,7 @@
 					}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? r.a.createElement(f.a, {
 						className: Object(d.a)(O.a.communityCta, O.a.smallLoadingIcon),
 						sizePx: 12
-					}) : r.a.createElement(x.o, {
+					}) : r.a.createElement(x.q, {
 						className: Object(d.a)(O.a.communityCta, {
 							[O.a.showOnHover]: e.showTertiaryButtonOnHover
 						}),
@@ -1695,10 +1701,14 @@
 				communityCta: "_1edkK552-3m7bXOdDxtLx_",
 				smallLoadingIcon: "_32ZA09sNmrGEXkOPMOCLst",
 				showOnHover: "_1kul3JsqY5kjVe9kzGy4bV",
+				communityItemExpandCenter: "oP8RhN61VEXVL8e6SIxK_",
+				communityDescriptionContainer: "_3jEbHrUmHtMsZcfN-z_GpD",
 				communityDescription: "_2IANzA2n-6eA5T8Tz0TEVE",
+				withBottomFlair: "_14n0HZvxiP1OqS51zI7Sy3",
 				communityName: "_3BFvyrImF3et_ZF21Xd8SC",
 				container: "_3-1jy8hD77zNJUdEMxDrXC",
 				isTruncated: "_3idiZ5DFVkbhhKjDBTQeq-",
+				nsfwFlair: "_3wQmfxeBovEB3M5pcwt-pv",
 				iconContainer: "_19EKcu4yel161081OGs8w9",
 				iconStyles: "_9p_iPxnOh7HnkcLhtSCDs",
 				planetIcon: "_3GFjQrq7t7DpW__ZFpU7xf",
@@ -1939,4 +1949,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.784e239abe8dd1e34889.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.eb849aeaa9038b960ac7.js.map

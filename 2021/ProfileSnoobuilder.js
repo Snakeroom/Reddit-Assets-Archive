@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7b9c7787c9d6c2ff8d8d.js
-// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.be5036d086b4c4570ce3.js
+// Retrieved at 4/26/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -4383,8 +4383,10 @@
 					useTertiaryButton: e.useTertiaryButton,
 					showTertiaryButtonOnHover: e.showTertiaryButtonOnHover,
 					onTertiaryButtonClick: e.onTertiaryButtonClick
-				})))), e.bottomButtonText && e.onBottomButtonClick && i.a.createElement(f.o, {
+				})))), e.bottomButtonText && e.onBottomButtonClick && i.a.createElement(f.q, {
 					className: j.a.bottomButton,
+					kind: f.a.Button,
+					priority: f.b.Plain,
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				N = Object(c.c)({
@@ -4394,8 +4396,11 @@
 				T = Object(o.b)(N)(e => {
 					const t = Object(g.a)();
 					return i.a.createElement("div", {
-						className: j.a.communityItemContainer
+						className: Object(d.a)(j.a.communityItemContainer, {
+							[j.a.withBottomFlair]: e.isNSFW
+						})
 					}, i.a.createElement(v.a, {
+						className: j.a.communityItemExpandCenter,
 						widthRight: b.t
 					}, i.a.createElement("div", {
 						className: j.a.iconContainer
@@ -4428,6 +4433,7 @@
 					}, [s.fbt._plural(e.subscribers, "number")], {
 						hk: "6i1wh"
 					})), e.isNSFW && i.a.createElement(l.b, {
+						className: j.a.nsfwFlair,
 						flair: {
 							type: E.f.Nsfw,
 							text: "nsfw"
@@ -4435,7 +4441,7 @@
 					}))), e.useTertiaryButton && e.tertiaryButtonText && e.onTertiaryButtonClick ? e.isLoading ? i.a.createElement(_.a, {
 						className: Object(d.a)(j.a.communityCta, j.a.smallLoadingIcon),
 						sizePx: 12
-					}) : i.a.createElement(f.o, {
+					}) : i.a.createElement(f.q, {
 						className: Object(d.a)(j.a.communityCta, {
 							[j.a.showOnHover]: e.showTertiaryButtonOnHover
 						}),
@@ -4490,10 +4496,14 @@
 				communityCta: "_1edkK552-3m7bXOdDxtLx_",
 				smallLoadingIcon: "_32ZA09sNmrGEXkOPMOCLst",
 				showOnHover: "_1kul3JsqY5kjVe9kzGy4bV",
+				communityItemExpandCenter: "oP8RhN61VEXVL8e6SIxK_",
+				communityDescriptionContainer: "_3jEbHrUmHtMsZcfN-z_GpD",
 				communityDescription: "_2IANzA2n-6eA5T8Tz0TEVE",
+				withBottomFlair: "_14n0HZvxiP1OqS51zI7Sy3",
 				communityName: "_3BFvyrImF3et_ZF21Xd8SC",
 				container: "_3-1jy8hD77zNJUdEMxDrXC",
 				isTruncated: "_3idiZ5DFVkbhhKjDBTQeq-",
+				nsfwFlair: "_3wQmfxeBovEB3M5pcwt-pv",
 				iconContainer: "_19EKcu4yel161081OGs8w9",
 				iconStyles: "_9p_iPxnOh7HnkcLhtSCDs",
 				planetIcon: "_3GFjQrq7t7DpW__ZFpU7xf",
@@ -5380,4 +5390,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7b9c7787c9d6c2ff8d8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.be5036d086b4c4570ce3.js.map
