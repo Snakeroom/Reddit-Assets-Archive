@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fa5f54c1c5aeb8b66c3a.js
-// Retrieved at 4/26/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.48eb9d6f9251c247260a.js
+// Retrieved at 4/26/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1583,11 +1583,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("132090"),
+				buildNumber: r("132093"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1619444125"),
+				})("1619445903"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4166,14 +4166,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc80af47faa85564b5dcfeda4b6c4d46d355c35f6-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c5df1620e5d6807596bddd55f7d83e372bcb2499d-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c80af47faa85564b5dcfeda4b6c4d46d355c35f6-production",
+						release: "5df1620e5d6807596bddd55f7d83e372bcb2499d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4234,28 +4234,27 @@
 				}));
 				const O = Object(x.a)(e.reducerMap),
 					k = Object(w.e)(O, v, Object(w.d)(Object(w.a)(...b), m, e.storeEnhancer || (e => e)));
-				Object(C.b)(e.appName, k, e.reducerMap);
-				const D = Object(r.loadTranslations)(Object(s.isoLocaleToFbtLocale)(document.documentElement.getAttribute("lang") || "en_US"), async e => (await i("./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$")(`./${e}.json`)).default),
-					P = v.user && v.user.account ? v.user.account.id : null;
-				Object(B.Q)(P);
+				Object(C.b)(e.appName, k, e.reducerMap), await Object(r.loadTranslations)(Object(s.isoLocaleToFbtLocale)(document.documentElement.getAttribute("lang") || "en_US"), async e => (await i("./src/i18n/translatedFbts lazy recursive ^\\.\\/.*\\.json$")(`./${e}.json`)).default);
+				const D = v.user && v.user.account ? v.user.account.id : null;
+				Object(B.Q)(D);
 				const {
-					routes: M
+					routes: P
 				} = e;
-				let G = {};
-				e.preRender && (G = e.preRender({
+				let M = {};
+				e.preRender && (M = e.preRender({
 					browserHistory: d,
-					routes: M,
+					routes: P,
 					store: k,
 					flags: {
 						DEBUG: W,
 						SUPPORTS_REJECTION_EVENTS: p
 					}
 				})), Object(A.e)(A.b.CreateRouteCompsStart);
-				const q = I({
-					routes: M,
+				const G = I({
+					routes: P,
 					loadingPage: e.staticPages ? e.staticPages.loading : void 0
 				});
-				await o, Object(A.e)(A.b.ReactHydrateStart), await D,
+				await o, Object(A.e)(A.b.ReactHydrateStart),
 					function(e) {
 						const t = Array.from(e.getElementsByClassName(S));
 						for (const i of t) document.head.appendChild(i), i.classList.remove(S)
@@ -4263,21 +4262,21 @@
 						store: k
 					}, h.a.createElement(F.a, null, h.a.createElement(R.b, {
 						userAgent: v.meta.userAgent
-					}, e.appFactory(j(d), q))))), e.target, t)), Object(A.e)(A.b.ReactHydrateEnd), e.postRender && e.postRender({
+					}, e.appFactory(j(d), G))))), e.target, t)), Object(A.e)(A.b.ReactHydrateEnd), e.postRender && e.postRender({
 						browserHistory: d,
-						routes: M,
+						routes: P,
 						serverDocumentLength: t,
 						store: k,
-						localStorageData: G.localStorageData
+						localStorageData: M.localStorageData
 					});
-				const H = Object(L.J)(k.getState());
+				const q = Object(L.J)(k.getState());
 				if (Object(A.e)(A.b.InitClientEnd), e.appName === E.l.Redesign) {
 					let t = null;
 					e.perfExperimentNameSelector && (t = e.perfExperimentNameSelector(k)), Object(U.b)(E.l.Redesign, {
 						type: U.a.ClientScreenview,
 						data: {
 							pageName: u,
-							loggedIn: H,
+							loggedIn: q,
 							...t ? {
 								perf: t
 							} : {}
@@ -4668,7 +4667,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c80af47faa85564b5dcfeda4b6c4d46d355c35f6-production",
+						releaseClient: "5df1620e5d6807596bddd55f7d83e372bcb2499d-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -45620,4 +45619,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fa5f54c1c5aeb8b66c3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.48eb9d6f9251c247260a.js.map
