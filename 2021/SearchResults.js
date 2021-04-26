@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.11a232e334f5d75aa87d.js
-// Retrieved at 4/26/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.0b612787443c95ef4423.js
+// Retrieved at 4/26/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1847,7 +1847,7 @@
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
-					openPowerupsModal: () => e(Object(d.c)("comment_top_supporter_badge"))
+					openPowerupsModal: () => e(Object(d.c)())
 				}));
 			t.a = $e(e => {
 				const {
@@ -1956,7 +1956,7 @@
 					onHideTooltip: L,
 					onShowTooltip: M,
 					openPowerupsModal: () => {
-						V(Object(h.q)("comment")), R()
+						V(Object(h.p)("comment")), R()
 					},
 					opTooltipId: F,
 					renderContractorBadge: A,
@@ -9463,4 +9463,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.11a232e334f5d75aa87d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0b612787443c95ef4423.js.map
