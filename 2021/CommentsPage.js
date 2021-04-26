@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.82a1249d7fddabeb49be.js
-// Retrieved at 4/26/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d76e038ef73fbed83312.js
+// Retrieved at 4/26/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -7862,7 +7862,7 @@
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
-					a && i(Object(M.v)())
+					a && i(Object(M.w)())
 				}, [a, i]), Object(n.useEffect)(() => {
 					(async () => {
 						m && !d && (t(Object(N.g)(l.name)), c(!0))
@@ -7870,6 +7870,7 @@
 				}, [m, d, t, l.name]), m && u ? r.a.createElement(C, {
 					className: g.a.predictionsFilter,
 					isActive: a,
+					onClick: () => i(Object(M.g)()),
 					to: `${l.url}predictions/`
 				}, V._("Predictions", null, {
 					hk: "Cv5GC"
@@ -9264,50 +9265,52 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "n", (function() {
+			s.d(t, "o", (function() {
 				return r
-			})), s.d(t, "o", (function() {
-				return o
 			})), s.d(t, "p", (function() {
+				return o
+			})), s.d(t, "q", (function() {
 				return i
-			})), s.d(t, "j", (function() {
-				return a
-			})), s.d(t, "r", (function() {
-				return d
-			})), s.d(t, "l", (function() {
-				return c
-			})), s.d(t, "m", (function() {
-				return l
 			})), s.d(t, "k", (function() {
+				return a
+			})), s.d(t, "s", (function() {
+				return d
+			})), s.d(t, "m", (function() {
+				return c
+			})), s.d(t, "n", (function() {
+				return l
+			})), s.d(t, "l", (function() {
 				return m
 			})), s.d(t, "a", (function() {
 				return u
-			})), s.d(t, "q", (function() {
+			})), s.d(t, "r", (function() {
 				return p
 			})), s.d(t, "d", (function() {
 				return h
-			})), s.d(t, "t", (function() {
+			})), s.d(t, "u", (function() {
 				return b
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "j", (function() {
 				return g
-			})), s.d(t, "v", (function() {
+			})), s.d(t, "w", (function() {
 				return f
 			})), s.d(t, "f", (function() {
 				return x
-			})), s.d(t, "u", (function() {
+			})), s.d(t, "v", (function() {
 				return v
-			})), s.d(t, "s", (function() {
+			})), s.d(t, "t", (function() {
 				return y
 			})), s.d(t, "c", (function() {
 				return C
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "h", (function() {
 				return _
 			})), s.d(t, "e", (function() {
 				return k
 			})), s.d(t, "b", (function() {
 				return w
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "i", (function() {
 				return O
+			})), s.d(t, "g", (function() {
+				return E
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
@@ -9491,6 +9494,12 @@
 					source: "prediction",
 					action: "click",
 					noun: "start_tournament"
+				}),
+				E = () => e => ({
+					...Object(n.defaults)(e),
+					source: "menu_links_bar",
+					action: "click",
+					noun: "predictions_tab"
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, s) {
@@ -11336,4 +11345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.82a1249d7fddabeb49be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d76e038ef73fbed83312.js.map

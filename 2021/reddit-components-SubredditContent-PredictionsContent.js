@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.fea6e5498f830e7ed876.js
-// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.e1a70f19084daa5164a1.js
+// Retrieved at 4/26/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -71,13 +71,13 @@
 		"./src/reddit/actions/economics/predictions/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return v
-			})), n.d(t, "h", (function() {
 				return k
+			})), n.d(t, "h", (function() {
+				return v
 			})), n.d(t, "k", (function() {
 				return P
 			})), n.d(t, "j", (function() {
-				return y
+				return _
 			})), n.d(t, "g", (function() {
 				return E
 			})), n.d(t, "b", (function() {
@@ -122,7 +122,7 @@
 			const O = Object(c.a)(j.d),
 				g = Object(c.a)(j.h),
 				x = Object(c.a)(j.g),
-				v = (e, t, n, o) => async (r, i, {
+				k = (e, t, n, o) => async (r, i, {
 					gqlContext: a
 				}) => {
 					const c = Object(b.J)(i()),
@@ -145,7 +145,7 @@
 						...l
 					};
 					return r(O(p)), p
-				}, k = e => async (t, n, {
+				}, v = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -185,7 +185,7 @@
 						prediction: d.poll,
 						price: o
 					})), d.poll
-				}, y = ({
+				}, _ = ({
 					optionId: e,
 					postId: t
 				}) => async (n, o, {
@@ -203,7 +203,7 @@
 						pollId: t,
 						prediction: a.poll
 					})), a.poll
-				}, _ = Object(c.a)(j.b), w = Object(c.a)(j.c), C = Object(c.a)(j.f), E = e => async (t, n, {
+				}, y = Object(c.a)(j.b), w = Object(c.a)(j.c), C = Object(c.a)(j.f), E = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -213,7 +213,7 @@
 						})) return Object(h.e)(r, {
 						subredditId: i
 					});
-					t(_({
+					t(y({
 						subredditId: i
 					}));
 					const a = await Object(s.i)(o(), {
@@ -426,7 +426,7 @@
 		"./src/reddit/components/SubredditContent/PredictionsContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return v
+				return k
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -471,15 +471,15 @@
 				g = n.n(O);
 			const x = 90;
 
-			function v({
+			function k({
 				subreddit: e
 			}) {
 				const t = Object(a.d)(),
 					n = Object(m.a)(),
 					[h, O] = Object(r.useState)(""),
-					[v, k] = Object(r.useState)(!1),
-					[P, y] = Object(r.useState)(!1),
-					[_, w] = Object(r.useState)(!1),
+					[k, v] = Object(r.useState)(!1),
+					[P, _] = Object(r.useState)(!1),
+					[y, w] = Object(r.useState)(!1),
 					[C, E] = Object(r.useState)(null),
 					I = Object(a.e)(t => Object(f.a)(t, {
 						subredditId: e.id
@@ -491,7 +491,7 @@
 						subredditId: e.id
 					}));
 				Object(r.useEffect)(() => {
-					n(Object(p.s)())
+					n(Object(p.t)())
 				}, [n]), Object(r.useEffect)(() => {
 					t(Object(s.g)(e.name))
 				}, [t, e.name]), Object(r.useEffect)(() => {
@@ -545,7 +545,7 @@
 					disabled: !h || !I || T || !q,
 					onClick: async () => {
 						if (!I || !h) return null;
-						n(Object(p.g)()), k(!0);
+						n(Object(p.h)()), v(!0);
 						try {
 							await t(Object(s.n)(I.tournamentId, e.id, h))
 						} catch (r) {
@@ -556,9 +556,9 @@
 								})
 							}))
 						}
-						k(!1)
+						v(!1)
 					}
-				}, v ? i.a.createElement(l.a, {
+				}, k ? i.a.createElement(l.a, {
 					sizePx: 16
 				}) : o.fbt._("Rename", null, {
 					hk: "4z2EPS"
@@ -576,14 +576,14 @@
 					onClick: N
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
-				})), _ && i.a.createElement(j, {
+				})), y && i.a.createElement(j, {
 					isEnding: P,
 					onClose: () => {
 						w(!1)
 					},
 					onConfirm: async () => {
 						if (!I || !S) return null;
-						y(!0);
+						_(!0);
 						try {
 							await t(Object(s.i)(I.tournamentId, e.id))
 						} catch (n) {
@@ -594,7 +594,7 @@
 								})
 							}))
 						}
-						y(!1), w(!1)
+						_(!1), w(!1)
 					}
 				}))))
 			}
@@ -614,15 +614,15 @@
 			})), n.d(t, "c", (function() {
 				return x
 			})), n.d(t, "i", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return k
+			})), n.d(t, "b", (function() {
+				return v
 			})), n.d(t, "k", (function() {
 				return P
 			})), n.d(t, "d", (function() {
-				return y
-			})), n.d(t, "e", (function() {
 				return _
+			})), n.d(t, "e", (function() {
+				return y
 			})), n.d(t, "g", (function() {
 				return w
 			}));
@@ -699,11 +699,11 @@
 						input: t
 					}
 				}),
-				v = (e, t) => Object(o.a)(e, {
+				k = (e, t) => Object(o.a)(e, {
 					...u,
 					variables: t
 				}),
-				k = (e, t) => Object(o.a)(e, {
+				v = (e, t) => Object(o.a)(e, {
 					...r,
 					variables: {
 						input: t
@@ -715,13 +715,13 @@
 						input: t
 					}
 				}),
-				y = (e, t) => Object(o.a)(e, {
+				_ = (e, t) => Object(o.a)(e, {
 					...a,
 					variables: {
 						input: t
 					}
 				}),
-				_ = (e, t) => Object(o.a)(e, {
+				y = (e, t) => Object(o.a)(e, {
 					...c,
 					variables: t
 				}),
@@ -732,50 +732,52 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "n", (function() {
+			n.d(t, "o", (function() {
 				return r
-			})), n.d(t, "o", (function() {
-				return i
 			})), n.d(t, "p", (function() {
+				return i
+			})), n.d(t, "q", (function() {
 				return a
-			})), n.d(t, "j", (function() {
-				return c
-			})), n.d(t, "r", (function() {
-				return s
-			})), n.d(t, "l", (function() {
-				return d
-			})), n.d(t, "m", (function() {
-				return u
 			})), n.d(t, "k", (function() {
+				return c
+			})), n.d(t, "s", (function() {
+				return s
+			})), n.d(t, "m", (function() {
+				return d
+			})), n.d(t, "n", (function() {
+				return u
+			})), n.d(t, "l", (function() {
 				return l
 			})), n.d(t, "a", (function() {
 				return p
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "r", (function() {
 				return m
 			})), n.d(t, "d", (function() {
 				return b
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "u", (function() {
 				return f
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return h
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "w", (function() {
 				return j
 			})), n.d(t, "f", (function() {
 				return O
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return g
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "t", (function() {
 				return x
 			})), n.d(t, "c", (function() {
-				return v
-			})), n.d(t, "g", (function() {
 				return k
+			})), n.d(t, "h", (function() {
+				return v
 			})), n.d(t, "e", (function() {
 				return P
 			})), n.d(t, "b", (function() {
-				return y
-			})), n.d(t, "h", (function() {
 				return _
+			})), n.d(t, "i", (function() {
+				return y
+			})), n.d(t, "g", (function() {
+				return w
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
@@ -930,13 +932,13 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				v = () => e => ({
+				k = () => e => ({
 					...Object(o.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				k = () => e => ({
+				v = () => e => ({
 					...Object(o.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
@@ -948,17 +950,23 @@
 					action: "click",
 					noun: "next"
 				}),
-				y = () => e => ({
+				_ = () => e => ({
 					...Object(o.defaults)(e),
 					source: "prediction",
 					action: "click",
 					noun: "add_more"
 				}),
-				_ = () => e => ({
+				y = () => e => ({
 					...Object(o.defaults)(e),
 					source: "prediction",
 					action: "click",
 					noun: "start_tournament"
+				}),
+				w = () => e => ({
+					...Object(o.defaults)(e),
+					source: "menu_links_bar",
+					action: "click",
+					noun: "predictions_tab"
 				})
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -1015,4 +1023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.fea6e5498f830e7ed876.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.e1a70f19084daa5164a1.js.map

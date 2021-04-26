@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.35d6cb3916ab5f31b56c.js
-// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1667a1ecd797d908a011.js
+// Retrieved at 4/26/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -1200,7 +1200,7 @@
 					}),
 					[l, c] = Object(x.useState)(!1);
 				if (Object(x.useEffect)(() => {
-						o(Object(y.t)({
+						o(Object(y.u)({
 							numberPredictionTokens: da,
 							pollId: r
 						}))
@@ -1298,7 +1298,7 @@
 						}
 					}, [a, o, l, c]);
 					Object(x.useEffect)(() => {
-						g || (O(y.r), v(!0))
+						g || (O(y.s), v(!0))
 					}, [g, O]), Object(x.useEffect)(() => {
 						(async () => {
 							if (h && !b) try {
@@ -1343,7 +1343,7 @@
 							await Y(), _(!1), F(da)
 						}, [Y, h]),
 						Z = Object(x.useCallback)(() => {
-							O(Object(y.k)({
+							O(Object(y.l)({
 								pollId: l,
 								selectedNumberCoins: U,
 								selectedNumberTokens: W
@@ -1883,7 +1883,7 @@
 					className: mi.a.tournamentLink,
 					to: `${m.url}predictions/`,
 					onClick: () => {
-						n(Object(y.i)({
+						n(Object(y.j)({
 							pageType: p ? "post_detail" : d ? "community" : f ? "profile" : "home"
 						})), window.scrollTo(0, 0)
 					}
@@ -2040,10 +2040,10 @@
 							})
 						}), void O(null);
 						if (!u || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						T(!0), L(Y ? Object(y.m)({
+						T(!0), L(Y ? Object(y.n)({
 							pollId: u,
 							selectedNumberTokens: t
-						}) : Object(y.l)({
+						}) : Object(y.m)({
 							pollId: u,
 							selectedNumberCoins: t,
 							totalStakeAmount: J
@@ -2337,50 +2337,52 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(a, i, r) {
 			"use strict";
-			r.d(i, "n", (function() {
+			r.d(i, "o", (function() {
 				return t
-			})), r.d(i, "o", (function() {
-				return k
 			})), r.d(i, "p", (function() {
+				return k
+			})), r.d(i, "q", (function() {
 				return n
-			})), r.d(i, "j", (function() {
-				return o
-			})), r.d(i, "r", (function() {
-				return m
-			})), r.d(i, "l", (function() {
-				return s
-			})), r.d(i, "m", (function() {
-				return e
 			})), r.d(i, "k", (function() {
+				return o
+			})), r.d(i, "s", (function() {
+				return m
+			})), r.d(i, "m", (function() {
+				return s
+			})), r.d(i, "n", (function() {
+				return e
+			})), r.d(i, "l", (function() {
 				return l
 			})), r.d(i, "a", (function() {
 				return c
-			})), r.d(i, "q", (function() {
+			})), r.d(i, "r", (function() {
 				return p
 			})), r.d(i, "d", (function() {
 				return h
-			})), r.d(i, "t", (function() {
+			})), r.d(i, "u", (function() {
 				return f
-			})), r.d(i, "i", (function() {
+			})), r.d(i, "j", (function() {
 				return d
-			})), r.d(i, "v", (function() {
+			})), r.d(i, "w", (function() {
 				return u
 			})), r.d(i, "f", (function() {
 				return y
-			})), r.d(i, "u", (function() {
+			})), r.d(i, "v", (function() {
 				return G
-			})), r.d(i, "s", (function() {
+			})), r.d(i, "t", (function() {
 				return E
 			})), r.d(i, "c", (function() {
 				return A
-			})), r.d(i, "g", (function() {
+			})), r.d(i, "h", (function() {
 				return B
 			})), r.d(i, "e", (function() {
 				return D
 			})), r.d(i, "b", (function() {
 				return V
-			})), r.d(i, "h", (function() {
+			})), r.d(i, "i", (function() {
 				return b
+			})), r.d(i, "g", (function() {
+				return F
 			}));
 			var x = r("./src/reddit/selectors/telemetry.ts");
 			const t = a => ({
@@ -2564,6 +2566,12 @@
 					source: "prediction",
 					action: "click",
 					noun: "start_tournament"
+				}),
+				F = () => a => ({
+					...Object(x.defaults)(a),
+					source: "menu_links_bar",
+					action: "click",
+					noun: "predictions_tab"
 				})
 		},
 		"./src/reddit/hooks/useLocalStorage.ts": function(a, i, r) {
@@ -2763,4 +2771,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.35d6cb3916ab5f31b56c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1667a1ecd797d908a011.js.map

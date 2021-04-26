@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8a70f14d58c3737ff089.js
-// Retrieved at 4/26/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c82bea5bb25c6f00f0ae.js
+// Retrieved at 4/26/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -13469,50 +13469,52 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "n", (function() {
+			n.d(t, "o", (function() {
 				return s
-			})), n.d(t, "o", (function() {
-				return r
 			})), n.d(t, "p", (function() {
+				return r
+			})), n.d(t, "q", (function() {
 				return a
-			})), n.d(t, "j", (function() {
-				return i
-			})), n.d(t, "r", (function() {
-				return c
-			})), n.d(t, "l", (function() {
-				return d
-			})), n.d(t, "m", (function() {
-				return l
 			})), n.d(t, "k", (function() {
+				return i
+			})), n.d(t, "s", (function() {
+				return c
+			})), n.d(t, "m", (function() {
+				return d
+			})), n.d(t, "n", (function() {
+				return l
+			})), n.d(t, "l", (function() {
 				return u
 			})), n.d(t, "a", (function() {
 				return m
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "r", (function() {
 				return p
 			})), n.d(t, "d", (function() {
 				return h
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "u", (function() {
 				return b
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return f
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "w", (function() {
 				return g
 			})), n.d(t, "f", (function() {
 				return C
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return x
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "t", (function() {
 				return E
 			})), n.d(t, "c", (function() {
 				return _
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return v
 			})), n.d(t, "e", (function() {
 				return O
 			})), n.d(t, "b", (function() {
 				return y
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return k
+			})), n.d(t, "g", (function() {
+				return S
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
@@ -13696,6 +13698,12 @@
 					source: "prediction",
 					action: "click",
 					noun: "start_tournament"
+				}),
+				S = () => e => ({
+					...Object(o.defaults)(e),
+					source: "menu_links_bar",
+					action: "click",
+					noun: "predictions_tab"
 				})
 		},
 		"./src/reddit/helpers/trackers/privateCommunity.ts": function(e, t, n) {
@@ -17242,7 +17250,7 @@
 						}),
 						primaryButtonLoading: a,
 						onPrimaryAction: async () => {
-							n(Object(go.h)()), c(!0), t(Object(bo.b)({
+							n(Object(go.i)()), c(!0), t(Object(bo.b)({
 								prediction: {
 									formData: d,
 									formState: l
@@ -19575,7 +19583,7 @@
 						a(Object(i.j)({
 							oldType: n,
 							type: X.a.GA
-						})), c(go.n)
+						})), c(go.o)
 					},
 					title: d.fbt._("Poll", null, {
 						hk: "2uKNlH"
@@ -19588,7 +19596,7 @@
 						a(Object(i.j)({
 							oldType: n,
 							type: X.a.Prediction
-						})), c(go.o)
+						})), c(go.p)
 					},
 					title: d.fbt._("Prediction", null, {
 						hk: "3wu0FO"
@@ -19603,8 +19611,8 @@
 					className: Ld.a.education
 				}, s.a.createElement(Sd.a, {
 					isTokens: e,
-					onClose: () => c(go.j),
-					onView: () => c(go.p),
+					onClose: () => c(go.k),
+					onView: () => c(go.q),
 					storageKey: _d.a.creation
 				})))
 			}
@@ -22164,4 +22172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8a70f14d58c3737ff089.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c82bea5bb25c6f00f0ae.js.map
