@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.1841405782c54ed39961.js
-// Retrieved at 4/26/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.769df039ff715f3bc5b9.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.kc
+					experimentName: u.lc
 				});
-				return Object(u.sd)(t) ? void 0 : t
+				return Object(u.td)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.lc
+					experimentName: u.mc
 				});
-				return Object(u.sd)(t) ? void 0 : t
-			}, (e, t) => e === u.mc.Enabled && t === u.mc.Enabled);
+				return Object(u.td)(t) ? void 0 : t
+			}, (e, t) => e === u.nc.Enabled && t === u.nc.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
 			const b = e => {
@@ -1256,7 +1256,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === V.dc.OCR ? o += `${oe}${t}` : s.title && (o += `${oe}${s.title}`), e === V.dc.ShortPostTitleOCR && (o += `${oe}${t}`), o.length > ne ? Object(v.a)(o, ne, h.bb) : o
+					return i && (o += i), e === V.ec.OCR ? o += `${oe}${t}` : s.title && (o += `${oe}${s.title}`), e === V.ec.ShortPostTitleOCR && (o += `${oe}${t}`), o.length > ne ? Object(v.a)(o, ne, h.bb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(Y.j, this.state.viewportHeight),
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.1841405782c54ed39961.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.769df039ff715f3bc5b9.js.map

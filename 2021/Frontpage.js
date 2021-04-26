@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2f5a18e2212fc17bfdec.js
-// Retrieved at 4/26/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.fa9895fbc90900de6403.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -575,7 +575,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(H.d)(m, {
-								experimentName: l.pc
+								experimentName: l.qc
 							});
 							s(Object(a.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -646,7 +646,7 @@
 				}, be = Object(Z.a)(oe.d), he = e => async (t, s) => {
 					const n = s(),
 						r = n.platform.currentPage.routeMatch.match;
-					Object(Q.o)(n) || Object(Q.t)(n) || (e || t(be()), await t(pe(r, !0)))
+					Object(Q.o)(n) || Object(Q.u)(n) || (e || t(be()), await t(pe(r, !0)))
 				}, ge = Object(Z.a)(oe.g), fe = Object(Z.a)(oe.f), ye = Object(Z.a)(oe.e), xe = e => async (t, s, {
 					gqlContext: n
 				}) => {
@@ -705,7 +705,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(H.d)(r, {
-										experimentName: l.pc
+										experimentName: l.qc
 									});
 									t(Object(a.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1829,7 +1829,7 @@
 							return Object(Je.c)(e, {
 								experimentEligibilitySelector: $e.J,
 								experimentName: Me.X
-							}) === Me.Ib
+							}) === Me.Jb
 						}(e))
 					}
 				}),
@@ -5309,4 +5309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2f5a18e2212fc17bfdec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fa9895fbc90900de6403.js.map

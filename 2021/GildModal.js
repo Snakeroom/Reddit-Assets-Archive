@@ -1,46 +1,46 @@
-// https://www.redditstatic.com/desktop2x/GildModal.9283ff4fa1baccca55bb.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GildModal.0b02442cc88f974621be.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GildModal"], {
-		"./src/reddit/components/GildModal/index.m.less": function(e, o, t) {
+		"./src/reddit/components/GildModal/index.m.less": function(e, o, d) {
 			e.exports = {
 				gildModal: "_1IyDH2lB_YliAPREBY8LQQ"
 			}
 		},
-		"./src/reddit/components/GildModal/index.tsx": function(e, o, t) {
+		"./src/reddit/components/GildModal/index.tsx": function(e, o, d) {
 			"use strict";
-			t.r(o);
-			var d = t("./node_modules/react/index.js"),
-				s = t.n(d),
-				r = t("./node_modules/react-redux/es/index.js"),
-				l = t("./node_modules/reselect/es/index.js"),
-				n = t("./src/reddit/actions/gold/modals.ts"),
-				a = t("./src/reddit/constants/colors.ts"),
-				c = t("./src/reddit/selectors/gild.ts"),
-				i = t("./src/reddit/selectors/goldPurchaseModals.ts"),
-				u = t("./src/higherOrderComponents/asModal/index.tsx"),
-				_ = t("./src/reddit/components/GildModalContent/index.tsx"),
-				h = t("./src/reddit/components/GildModal/index.m.less"),
-				m = t.n(h);
+			d.r(o);
+			var s = d("./node_modules/react/index.js"),
+				t = d.n(s),
+				r = d("./node_modules/react-redux/es/index.js"),
+				l = d("./node_modules/reselect/es/index.js"),
+				n = d("./src/reddit/actions/gold/modals.ts"),
+				a = d("./src/reddit/constants/colors.ts"),
+				c = d("./src/reddit/selectors/gild.ts"),
+				i = d("./src/reddit/selectors/goldPurchaseModals.ts"),
+				u = d("./src/higherOrderComponents/asModal/index.tsx"),
+				_ = d("./src/reddit/components/GildModalContent/index.tsx"),
+				h = d("./src/reddit/components/GildModal/index.m.less"),
+				m = d.n(h);
 
 			function p() {
 				return (p = Object.assign || function(e) {
 					for (var o = 1; o < arguments.length; o++) {
-						var t = arguments[o];
-						for (var d in t) Object.prototype.hasOwnProperty.call(t, d) && (e[d] = t[d])
+						var d = arguments[o];
+						for (var s in d) Object.prototype.hasOwnProperty.call(d, s) && (e[s] = d[s])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			const O = Object(l.c)({
-					showPurchaseModal: i.t,
+					showPurchaseModal: i.u,
 					thingId: c.d
 				}),
 				g = Object(u.a)(e => {
 					const {
 						thingId: o
 					} = e;
-					return o ? s.a.createElement(_.a, {
+					return o ? t.a.createElement(_.a, {
 						thingId: o
 					}) : null
 				}),
@@ -53,7 +53,7 @@
 				b = Object(r.b)(O, e => ({
 					closeGildModal: () => e(Object(n.a)())
 				}));
-			o.default = b(e => s.a.createElement(g, p({}, e, {
+			o.default = b(e => t.a.createElement(g, p({}, e, {
 				className: m.a.gildModal,
 				withOverlay: !0,
 				onOverlayClick: e.closeGildModal,
@@ -62,4 +62,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GildModal.9283ff4fa1baccca55bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GildModal.0b02442cc88f974621be.js.map

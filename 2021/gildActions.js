@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.3732303f93acb9b28f49.js
-// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.b75124394f0efa3f37e0.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/graphql/operations/GildComment.json": function(e) {
@@ -28,7 +28,7 @@
 					econPurchase: a.a
 				}
 			});
-			const l = Object(d.a)(c.gb),
+			const l = Object(d.a)(c.lb),
 				u = (e, t, s) => async (r, a, {
 					gqlContext: d
 				}) => {
@@ -452,7 +452,7 @@
 			const d = {};
 			var n = (e = d, t) => {
 				switch (t.type) {
-					case a.gb: {
+					case a.lb: {
 						const s = t.payload;
 						return {
 							...e,
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.3732303f93acb9b28f49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.b75124394f0efa3f37e0.js.map

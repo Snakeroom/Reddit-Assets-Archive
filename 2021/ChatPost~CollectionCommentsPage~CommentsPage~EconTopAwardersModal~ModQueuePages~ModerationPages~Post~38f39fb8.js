@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.84fb37a8a93469ea4f9f.js
-// Retrieved at 4/26/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3aa1cc669f1e745516f3.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -100,7 +100,7 @@
 				n = r("./src/reddit/actions/modal.ts"),
 				a = r("./src/reddit/constants/modals.ts"),
 				o = r("./src/reddit/actions/gold/constants.ts");
-			const i = Object(s.a)(o.fb),
+			const i = Object(s.a)(o.kb),
 				d = Object(s.a)(o.u),
 				c = e => async t => {
 					await t(d({
@@ -119,7 +119,7 @@
 				o = r("./src/reddit/models/Toast/index.ts"),
 				i = r("./src/reddit/endpoints/gold/communityAwards.ts"),
 				d = r("./src/reddit/actions/gold/constants.ts");
-			const c = Object(n.a)(d.eb),
+			const c = Object(n.a)(d.jb),
 				l = e => async (t, r, {
 					apiContext: n
 				}) => {
@@ -158,10 +158,10 @@
 				i = r("./src/reddit/endpoints/gold/topAwarded.ts"),
 				d = r("./src/reddit/actions/modal.ts"),
 				c = r("./src/reddit/actions/gold/constants.ts");
-			Object(n.a)(c.nb), Object(n.a)(c.mb), Object(n.a)(c.lb);
-			const l = Object(n.a)(c.qb),
-				u = Object(n.a)(c.pb),
-				m = Object(n.a)(c.ob),
+			Object(n.a)(c.sb), Object(n.a)(c.rb), Object(n.a)(c.qb);
+			const l = Object(n.a)(c.vb),
+				u = Object(n.a)(c.ub),
+				m = Object(n.a)(c.tb),
 				p = (e, t = 25) => async (r, n, {
 					gqlContext: o
 				}) => {
@@ -182,7 +182,7 @@
 							Object(s.b)() || console.error(d), a.c.captureMessage(d), r(m(d.message))
 						}
 					}
-				}, h = Object(n.a)(c.rb), b = e => async (t, r) => {
+				}, h = Object(n.a)(c.wb), b = e => async (t, r) => {
 					t(h({
 						postId: e
 					})), t(Object(d.h)(o.a.ECON_TOP_AWARDERS))
@@ -3203,13 +3203,13 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.wb
 					});
-					return !(!t || Object(s.sd)(t))
+					return !(!t || Object(s.td)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
 						experimentName: s.wb
-					}) === s.Lb.ListingEnabled
+					}) === s.Mb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3233,4 +3233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.84fb37a8a93469ea4f9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3aa1cc669f1e745516f3.js.map

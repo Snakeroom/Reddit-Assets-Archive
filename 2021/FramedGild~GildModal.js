@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e6eae774ac7c3972f404.js
-// Retrieved at 4/26/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0e1183f78d73a7b3d1bd.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -339,7 +339,7 @@
 					econPurchase: r.a
 				}
 			});
-			const l = Object(a.a)(c.gb),
+			const l = Object(a.a)(c.lb),
 				u = (e, t, s) => async (n, r, {
 					gqlContext: a
 				}) => {
@@ -665,7 +665,7 @@
 				r = s("./src/reddit/actions/modal.ts"),
 				a = s("./src/reddit/constants/modals.ts"),
 				o = s("./src/reddit/actions/gold/constants.ts");
-			const i = Object(n.a)(o.fb),
+			const i = Object(n.a)(o.kb),
 				d = Object(n.a)(o.u),
 				c = e => async t => {
 					await t(d({
@@ -766,16 +766,16 @@
 							coins: c,
 							pennies: l
 						} = t,
-						u = Object(O.q)(i) || Object(h.d)(h.a.GoldPayment, !1);
+						u = Object(O.r)(i) || Object(h.d)(h.a.GoldPayment, !1);
 					let m, b;
 					s(Object(d.stripeTokenPending)());
-					const f = Object(O.x)(i);
-					if (f || (m = await s(Object(d.validateAndCreateStripeToken)(e)), b = Object(O.u)(i), m)) try {
+					const f = Object(O.y)(i);
+					if (f || (m = await s(Object(d.validateAndCreateStripeToken)(e)), b = Object(O.v)(i), m)) try {
 						const e = await Object(p.e)({
 							coins: c,
 							context: o(),
 							correlationId: u,
-							offerContext: Object(g.c)(t, !1),
+							offerContext: Object(g.d)(t, !1),
 							pennies: l,
 							rememberCard: b,
 							savedCardId: f || void 0,
@@ -806,11 +806,11 @@
 							coins: u,
 							pennies: m
 						} = t,
-						w = Object(O.q)(l) || Object(h.d)(h.a.GoldPayment, !1);
+						w = Object(O.r)(l) || Object(h.d)(h.a.GoldPayment, !1);
 					let x, j;
 					o(Object(d.stripeTokenPending)());
-					const v = Object(O.x)(l);
-					if (v || (x = await o(Object(d.validateAndCreateStripeToken)(e)), j = Object(O.u)(l), x)) try {
+					const v = Object(O.y)(l);
+					if (v || (x = await o(Object(d.validateAndCreateStripeToken)(e)), j = Object(O.v)(l), x)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: i,
@@ -835,7 +835,7 @@
 								correlationId: w,
 								gildParams: I,
 								isOldReddit: a,
-								offerContext: Object(g.c)(t, !0),
+								offerContext: Object(g.d)(t, !0),
 								pennies: m,
 								rememberCard: j,
 								savedCardId: v || void 0,
@@ -912,7 +912,7 @@
 					apiContext: a
 				}) => {
 					const i = n(),
-						c = Object(O.q)(i) || Object(h.d)(h.a.GoldPayment, !1),
+						c = Object(O.r)(i) || Object(h.d)(h.a.GoldPayment, !1),
 						{
 							coins: l,
 							pennies: u
@@ -920,7 +920,7 @@
 					try {
 						const n = await Object(m.c)({
 							context: a(),
-							offerContext: Object(g.c)(t, !1),
+							offerContext: Object(g.d)(t, !1),
 							orderId: e,
 							coins: l,
 							pennies: u,
@@ -947,7 +947,7 @@
 					apiContext: c
 				}) => {
 					const l = i(),
-						u = Object(O.q)(l) || Object(h.d)(h.a.GoldPayment, !1),
+						u = Object(O.r)(l) || Object(h.d)(h.a.GoldPayment, !1),
 						{
 							coins: p,
 							pennies: w
@@ -965,7 +965,7 @@
 						const j = O.id,
 							v = await Object(m.d)({
 								context: c(),
-								offerContext: Object(g.c)(t, !0),
+								offerContext: Object(g.d)(t, !0),
 								orderId: e,
 								coins: p,
 								pennies: w,
@@ -1156,8 +1156,8 @@
 						b = Object(l.c)(l.a.GoldPayment);
 					let g, w;
 					a(Object(i.stripeTokenPending)());
-					const x = Object(p.x)(h);
-					if (x || (g = await a(Object(i.validateAndCreateStripeToken)(e)), w = Object(p.u)(h), g)) try {
+					const x = Object(p.y)(h);
+					if (x || (g = await a(Object(i.validateAndCreateStripeToken)(e)), w = Object(p.v)(h), g)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: o,
@@ -2300,7 +2300,7 @@
 						commentId: t
 					}),
 					purchaseCatalogPending: L.k,
-					showPurchaseModal: B.t,
+					showPurchaseModal: B.u,
 					selectedAward: M.b,
 					subreddit: G.J,
 					subredditCoins: (e, {
@@ -4209,12 +4209,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.ed.SmIcon:
+						case b.fd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.ed.SmIconHc:
+						case b.fd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4910,7 +4910,7 @@
 			const a = {};
 			var o = (e = a, t) => {
 				switch (t.type) {
-					case r.gb: {
+					case r.lb: {
 						const s = t.payload;
 						return {
 							...e,
@@ -5191,12 +5191,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Zc
+						experimentName: n.ad
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.ed.SmIcon || t === n.ed.SmIconHc
+					return t === n.fd.SmIcon || t === n.fd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5219,4 +5219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e6eae774ac7c3972f404.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0e1183f78d73a7b3d1bd.js.map

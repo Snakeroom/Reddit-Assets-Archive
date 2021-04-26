@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.720103484ae19f99856b.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.00e78a30a2042e4c645c.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -142,16 +142,16 @@
 							coins: l,
 							pennies: d
 						} = t,
-						m = Object(_.q)(i) || Object(h.d)(h.a.GoldPayment, !1);
+						m = Object(_.r)(i) || Object(h.d)(h.a.GoldPayment, !1);
 					let u, g;
 					a(Object(o.stripeTokenPending)());
-					const b = Object(_.x)(i);
-					if (b || (u = await a(Object(o.validateAndCreateStripeToken)(e)), g = Object(_.u)(i), u)) try {
+					const b = Object(_.y)(i);
+					if (b || (u = await a(Object(o.validateAndCreateStripeToken)(e)), g = Object(_.v)(i), u)) try {
 						const e = await Object(p.e)({
 							coins: l,
 							context: c(),
 							correlationId: m,
-							offerContext: Object(f.c)(t, !1),
+							offerContext: Object(f.d)(t, !1),
 							pennies: d,
 							rememberCard: g,
 							savedCardId: b || void 0,
@@ -182,11 +182,11 @@
 							coins: m,
 							pennies: u
 						} = t,
-						k = Object(_.q)(d) || Object(h.d)(h.a.GoldPayment, !1);
+						k = Object(_.r)(d) || Object(h.d)(h.a.GoldPayment, !1);
 					let w, v;
 					c(Object(o.stripeTokenPending)());
-					const O = Object(_.x)(d);
-					if (O || (w = await c(Object(o.validateAndCreateStripeToken)(e)), v = Object(_.u)(d), w)) try {
+					const O = Object(_.y)(d);
+					if (O || (w = await c(Object(o.validateAndCreateStripeToken)(e)), v = Object(_.v)(d), w)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: i,
@@ -211,7 +211,7 @@
 								correlationId: k,
 								gildParams: C,
 								isOldReddit: s,
-								offerContext: Object(f.c)(t, !0),
+								offerContext: Object(f.d)(t, !0),
 								pennies: u,
 								rememberCard: v,
 								savedCardId: O || void 0,
@@ -288,7 +288,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						l = Object(_.q)(i) || Object(h.d)(h.a.GoldPayment, !1),
+						l = Object(_.r)(i) || Object(h.d)(h.a.GoldPayment, !1),
 						{
 							coins: d,
 							pennies: m
@@ -296,7 +296,7 @@
 					try {
 						const n = await Object(u.c)({
 							context: s(),
-							offerContext: Object(f.c)(t, !1),
+							offerContext: Object(f.d)(t, !1),
 							orderId: e,
 							coins: d,
 							pennies: m,
@@ -323,7 +323,7 @@
 					apiContext: l
 				}) => {
 					const d = i(),
-						m = Object(_.q)(d) || Object(h.d)(h.a.GoldPayment, !1),
+						m = Object(_.r)(d) || Object(h.d)(h.a.GoldPayment, !1),
 						{
 							coins: p,
 							pennies: k
@@ -341,7 +341,7 @@
 						const v = _.id,
 							O = await Object(u.d)({
 								context: l(),
-								offerContext: Object(f.c)(t, !0),
+								offerContext: Object(f.d)(t, !0),
 								orderId: e,
 								coins: p,
 								pennies: k,
@@ -1732,4 +1732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.720103484ae19f99856b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.00e78a30a2042e4c645c.js.map

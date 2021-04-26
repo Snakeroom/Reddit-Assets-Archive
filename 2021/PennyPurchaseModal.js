@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5e8893722a4c745bd731.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.435345da0e9150f9cd0d.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -45,16 +45,16 @@
 				}).apply(this, arguments)
 			}
 			const w = Object(a.c)({
-					activePage: v.p,
+					activePage: v.q,
 					allowNavigationCallback: e => {
 						const s = Object(b.a)(e);
 						return null === s ? void 0 : s
 					},
 					coinBalance: O.d,
-					gildThingId: v.r,
+					gildThingId: v.s,
 					isIframed: C.g,
 					nightmode: O.V,
-					savedCardsPending: v.v,
+					savedCardsPending: v.w,
 					selectedAward: M.b,
 					selectedPayment: v.c,
 					stripeErrorMessage: v.j,
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.5e8893722a4c745bd731.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.435345da0e9150f9cd0d.js.map

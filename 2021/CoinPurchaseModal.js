@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.366535cdfeeb40c55c64.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.bc32fb578e8956e5531d.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -95,16 +95,16 @@
 							coins: i,
 							pennies: l
 						} = t,
-						p = Object(f.q)(s) || Object(g.d)(g.a.GoldPayment, !1);
+						p = Object(f.r)(s) || Object(g.d)(g.a.GoldPayment, !1);
 					let u, m;
 					r(Object(d.stripeTokenPending)());
-					const h = Object(f.x)(s);
-					if (h || (u = await r(Object(d.validateAndCreateStripeToken)(e)), m = Object(f.u)(s), u)) try {
+					const h = Object(f.y)(s);
+					if (h || (u = await r(Object(d.validateAndCreateStripeToken)(e)), m = Object(f.v)(s), u)) try {
 						const e = await Object(b.e)({
 							coins: i,
 							context: c(),
 							correlationId: p,
-							offerContext: Object(O.c)(t, !1),
+							offerContext: Object(O.d)(t, !1),
 							pennies: l,
 							rememberCard: m,
 							savedCardId: h || void 0,
@@ -135,11 +135,11 @@
 							coins: p,
 							pennies: u
 						} = t,
-						j = Object(f.q)(l) || Object(g.d)(g.a.GoldPayment, !1);
+						j = Object(f.r)(l) || Object(g.d)(g.a.GoldPayment, !1);
 					let y, w;
 					c(Object(d.stripeTokenPending)());
-					const C = Object(f.x)(l);
-					if (C || (y = await c(Object(d.validateAndCreateStripeToken)(e)), w = Object(f.u)(l), y)) try {
+					const C = Object(f.y)(l);
+					if (C || (y = await c(Object(d.validateAndCreateStripeToken)(e)), w = Object(f.v)(l), y)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: s,
@@ -164,7 +164,7 @@
 								correlationId: j,
 								gildParams: k,
 								isOldReddit: o,
-								offerContext: Object(O.c)(t, !0),
+								offerContext: Object(O.d)(t, !0),
 								pennies: u,
 								rememberCard: w,
 								savedCardId: C || void 0,
@@ -241,7 +241,7 @@
 					apiContext: o
 				}) => {
 					const s = a(),
-						i = Object(f.q)(s) || Object(g.d)(g.a.GoldPayment, !1),
+						i = Object(f.r)(s) || Object(g.d)(g.a.GoldPayment, !1),
 						{
 							coins: l,
 							pennies: p
@@ -249,7 +249,7 @@
 					try {
 						const a = await Object(u.c)({
 							context: o(),
-							offerContext: Object(O.c)(t, !1),
+							offerContext: Object(O.d)(t, !1),
 							orderId: e,
 							coins: l,
 							pennies: p,
@@ -276,7 +276,7 @@
 					apiContext: i
 				}) => {
 					const l = s(),
-						p = Object(f.q)(l) || Object(g.d)(g.a.GoldPayment, !1),
+						p = Object(f.r)(l) || Object(g.d)(g.a.GoldPayment, !1),
 						{
 							coins: b,
 							pennies: j
@@ -294,7 +294,7 @@
 						const w = f.id,
 							C = await Object(u.d)({
 								context: i(),
-								offerContext: Object(O.c)(t, !0),
+								offerContext: Object(O.d)(t, !0),
 								orderId: e,
 								coins: b,
 								pennies: j,
@@ -485,8 +485,8 @@
 						m = Object(l.c)(l.a.GoldPayment);
 					let O, j;
 					o(Object(s.stripeTokenPending)());
-					const y = Object(b.x)(g);
-					if (y || (O = await o(Object(s.validateAndCreateStripeToken)(e)), j = Object(b.u)(g), O)) try {
+					const y = Object(b.y)(g);
+					if (y || (O = await o(Object(s.validateAndCreateStripeToken)(e)), j = Object(b.v)(g), O)) try {
 						const {
 							gildModalThingId: e,
 							isAnonymous: c,
@@ -805,19 +805,19 @@
 				}).apply(this, arguments)
 			}
 			const F = Object(c.c)({
-					activePage: P.p,
+					activePage: P.q,
 					allowNavigationCallback: e => {
 						const t = Object(x.a)(e);
 						return null === t ? void 0 : t
 					},
 					coinBalance: _.d,
 					coinPackages: C.d,
-					correlationId: e => Object(P.q)(e) || Object(h.d)(h.a.GoldPayment, !1),
+					correlationId: e => Object(P.r)(e) || Object(h.d)(h.a.GoldPayment, !1),
 					dealCoinPackages: C.f,
-					gildThingId: P.r,
+					gildThingId: P.s,
 					isIframed: f.g,
 					nightmode: _.V,
-					savedCardsPending: P.v,
+					savedCardsPending: P.w,
 					selectedAward: w.b,
 					selectedPayment: P.c,
 					stripeErrorMessage: P.j,
@@ -825,7 +825,7 @@
 					paypalErrorMessage: P.d,
 					purchaseCatalogError: C.j,
 					purchaseCatalogPending: C.k,
-					purchasePackageId: P.s,
+					purchasePackageId: P.t,
 					recommendedPackages: C.m,
 					userName: e => {
 						const t = Object(_.i)(e);
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.366535cdfeeb40c55c64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.bc32fb578e8956e5531d.js.map

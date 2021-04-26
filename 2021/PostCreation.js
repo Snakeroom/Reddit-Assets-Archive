@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.55216eeb5ddc08548d89.js
-// Retrieved at 4/26/2021, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a67f44309b406f2d604d.js
+// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -13059,11 +13059,11 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, b = !!n, f = r.b(e), g = f ? Object(u.getAwardTypeFromAward)(f) : null, C = b ? g : i.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, x = n ? Object(p.a)(n) ? "comment" : "post" : void 0, E = l || i.s(e), _ = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === E)[0], v = t.offerContext || (f && 0 === f.coinPrice ? s.a.StorefrontFreeAward : Object(s.c)(_, b)), O = _ ? Math.round(1e4 * (_.baselinePennies - _.pennies) / _.baselinePennies) / 100 : 0, y = _ ? Math.round(1e4 * (_.coins - _.baselineCoins) / _.coins) / 100 : 0, k = _ ? _.baselinePennies !== _.pennies ? `${O}_percent_price` : _.baselineCoins !== _.coins ? `${y}_percent_bonus` : void 0 : void 0, S = C === d.GoldPurchaseType.Premium ? o.qb : _ ? _.pennies : void 0;
+					} = t, b = !!n, f = r.b(e), g = f ? Object(u.getAwardTypeFromAward)(f) : null, C = b ? g : i.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, x = n ? Object(p.a)(n) ? "comment" : "post" : void 0, E = l || i.t(e), _ = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === E)[0], v = t.offerContext || (f && 0 === f.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(_, b)), O = _ ? Math.round(1e4 * (_.baselinePennies - _.pennies) / _.baselinePennies) / 100 : 0, y = _ ? Math.round(1e4 * (_.coins - _.baselineCoins) / _.coins) / 100 : 0, k = _ ? _.baselinePennies !== _.pennies ? `${O}_percent_price` : _.baselineCoins !== _.coins ? `${y}_percent_bonus` : void 0 : void 0, S = C === d.GoldPurchaseType.Premium ? o.qb : _ ? _.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: n ? c.comment(e, n) : null,
-						correlationId: i.q(e) || Object(m.d)(m.a.GoldPayment, !1),
+						correlationId: i.r(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? c.post(e, n) : null,
 						screen: c.screen(e),
 						subreddit: n ? c.subreddit(e) : null,
@@ -15741,26 +15741,31 @@
 		},
 		"./src/reddit/models/Gold/ProductOffer.ts": function(e, t, n) {
 			"use strict";
-			var o, s;
-			n.d(t, "b", (function() {
+			var o, s, r;
+			n.d(t, "c", (function() {
 					return o
-				})), n.d(t, "a", (function() {
+				})), n.d(t, "b", (function() {
 					return s
-				})), n.d(t, "c", (function() {
+				})), n.d(t, "a", (function() {
 					return r
+				})), n.d(t, "d", (function() {
+					return a
 				})),
 				function(e) {
-					e.CoinConversion = "user-coins-in-subreddit", e.Powerups = "powerups"
+					e.CoinConversion = "user-coins-in-subreddit", e.Powerups = "powerups", e.Premium = "premium"
 				}(o || (o = {})),
 				function(e) {
+					e.Month = "MONTH", e.Year = "YEAR"
+				}(s || (s = {})),
+				function(e) {
 					e.GildFlow = "gild_flow", e.LowCoinBalance = "low_coin_balance", e.NewUserTargetedOffer = "new_user_targeted_offer", e.RepeatUserTargetedOffer = "repeat_user_targeted_offer", e.StorefrontFreeAward = "storefront_free_award", e.CoinSale = "coin_sale", e.AvatarNewGear = "avatar_new_gear"
-				}(s || (s = {}));
-			const r = (e, t) => {
+				}(r || (r = {}));
+			const a = (e, t) => {
 				const n = e && e.dealInfo && e.dealInfo.type,
 					o = "low_coin_upsell" === n,
-					r = "new_purchaser" === n,
+					s = "new_purchaser" === n,
 					a = "repeat_purchaser" === n;
-				return t ? s.GildFlow : o ? s.LowCoinBalance : r ? s.NewUserTargetedOffer : a ? s.RepeatUserTargetedOffer : void 0
+				return t ? r.GildFlow : o ? r.LowCoinBalance : s ? r.NewUserTargetedOffer : a ? r.RepeatUserTargetedOffer : void 0
 			}
 		},
 		"./src/reddit/models/ScheduledPost/index.ts": function(e, t, n) {
@@ -21451,14 +21456,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.wc
-					}) === o.Gc.Enabled
+						experimentName: o.xc
+					}) === o.Hc.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.vc
-					}) === o.Fc.Enabled
+						experimentName: o.wc
+					}) === o.Gc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -21647,56 +21652,58 @@
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "p", (function() {
+			n.d(t, "q", (function() {
 				return a
-			})), n.d(t, "r", (function() {
-				return i
-			})), n.d(t, "q", (function() {
-				return c
-			})), n.d(t, "t", (function() {
-				return d
 			})), n.d(t, "s", (function() {
+				return i
+			})), n.d(t, "r", (function() {
+				return c
+			})), n.d(t, "u", (function() {
+				return d
+			})), n.d(t, "t", (function() {
 				return l
 			})), n.d(t, "b", (function() {
 				return u
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "p", (function() {
 				return m
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "a", (function() {
 				return p
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "n", (function() {
 				return h
-			})), n.d(t, "y", (function() {
+			})), n.d(t, "o", (function() {
 				return b
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "z", (function() {
 				return f
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "c", (function() {
 				return g
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "h", (function() {
 				return C
 			})), n.d(t, "w", (function() {
 				return x
-			})), n.d(t, "u", (function() {
-				return E
 			})), n.d(t, "x", (function() {
+				return E
+			})), n.d(t, "v", (function() {
 				return _
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "y", (function() {
 				return v
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "f", (function() {
 				return O
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "g", (function() {
 				return y
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "i", (function() {
 				return k
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return S
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "l", (function() {
 				return j
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "j", (function() {
 				return T
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "m", (function() {
 				return w
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return I
+			})), n.d(t, "d", (function() {
+				return P
 			}));
 			var o = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				s = n("./src/lib/initializeClient/installReducer.ts"),
@@ -21712,29 +21719,30 @@
 				d = e => e.features.goldPurchase.purchaseModal.showModal,
 				l = e => e.features.goldPurchase.purchaseModal.packageId,
 				u = e => e.features.goldPurchase.packageOfferModal.packageId,
-				m = e => {
+				m = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
+				p = e => {
 					const t = Object(o.i)(e),
 						n = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return t.length && n && t.find(e => e.mobileId === n) || null
 				},
-				p = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
-				h = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				b = e => e.features.goldPurchase.updateCardModal.pending,
-				f = e => e.features.goldPurchase.payment.paymentMethod,
-				g = e => e.features.goldPurchase.payment.cardName,
-				C = e => e.features.goldPurchase.payment.savedCardsPending,
-				x = e => e.features.goldPurchase.payment.savedCards,
-				E = e => e.features.goldPurchase.payment.rememberCard,
-				_ = e => e.features.goldPurchase.payment.useSavedCard,
-				v = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				O = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				y = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				S = e => e.features.goldPurchase.payment.cardValidation.postalCode,
-				j = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				T = e => e.features.goldPurchase.payment.stripeToken.pending,
-				w = e => e.features.goldPurchase.payment.paypal.passthrough,
-				I = e => e.features.goldPurchase.payment.paypal.errorMessage
+				h = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
+				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
+				f = e => e.features.goldPurchase.updateCardModal.pending,
+				g = e => e.features.goldPurchase.payment.paymentMethod,
+				C = e => e.features.goldPurchase.payment.cardName,
+				x = e => e.features.goldPurchase.payment.savedCardsPending,
+				E = e => e.features.goldPurchase.payment.savedCards,
+				_ = e => e.features.goldPurchase.payment.rememberCard,
+				v = e => e.features.goldPurchase.payment.useSavedCard,
+				O = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				y = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				k = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				S = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				j = e => e.features.goldPurchase.payment.cardValidation.postalCode,
+				T = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				w = e => e.features.goldPurchase.payment.stripeToken.pending,
+				I = e => e.features.goldPurchase.payment.paypal.passthrough,
+				P = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -22172,4 +22180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.55216eeb5ddc08548d89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a67f44309b406f2d604d.js.map
