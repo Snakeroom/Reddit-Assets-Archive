@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.679b075f6a59c115a924.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.a5642fdf837266e57d88.js
+// Retrieved at 4/26/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-OldPowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -63,9 +63,9 @@
 				E = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				k = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				g = s("./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less"),
-				f = s.n(g);
+				_ = s.n(g);
 			const {
-				fbt: _
+				fbt: f
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			var j = e => {
 					const {
@@ -76,35 +76,35 @@
 						onClick: c
 					} = e, o = s === a - 1;
 					return n.a.createElement("footer", {
-						className: Object(i.a)(t, f.a.container),
+						className: Object(i.a)(t, _.a.container),
 						onClick: c
 					}, n.a.createElement("button", {
-						className: Object(i.a)(f.a.prevButton, {
-							[f.a.hidden]: 0 === s
+						className: Object(i.a)(_.a.prevButton, {
+							[_.a.hidden]: 0 === s
 						}),
 						onClick: e => {
 							e.stopPropagation(), r(0 === s ? a - 1 : s - 1)
 						}
 					}, n.a.createElement(k.a, {
-						className: f.a.icon
+						className: _.a.icon
 					})), n.a.createElement("div", {
-						className: f.a.dots
+						className: _.a.dots
 					}, Array.from(Array(a), (e, t) => n.a.createElement("button", {
-						className: Object(i.a)(f.a.dot, {
-							[f.a.active]: s === t
+						className: Object(i.a)(_.a.dot, {
+							[_.a.active]: s === t
 						}),
 						onClick: e => {
 							e.stopPropagation(), r(t)
 						}
 					}))), n.a.createElement("button", {
-						className: Object(i.a)(f.a.nextButton, {
-							[f.a.hidden]: o
+						className: Object(i.a)(_.a.nextButton, {
+							[_.a.hidden]: o
 						}),
 						onClick: e => {
 							e.stopPropagation(), r(o ? 0 : s + 1)
 						}
 					}, n.a.createElement(k.a, {
-						className: f.a.icon
+						className: _.a.icon
 					})))
 				},
 				N = s("./src/reddit/icons/svgs/Lock/index.tsx"),
@@ -170,7 +170,7 @@
 						userBenefits: d
 					} = e, [u, m] = Object(a.useState)(0);
 					if (!l) return null;
-					const b = s.filter(e => I[e] && E.f[e]),
+					const b = s.filter(e => I[e] && E.d[e]),
 						v = b.length + 2,
 						k = t || b.every(e => d.includes(e)) && c;
 					return n.a.createElement("div", {
@@ -218,7 +218,7 @@
 						key: `slide_${e}`
 					}, n.a.createElement(x, {
 						iconUrl: `${p.a.assetPath}/img/powerups/${e}.svg`,
-						title: E.f[e](),
+						title: E.d[e](),
 						isUnlocked: k || d.includes(e)
 					}))), n.a.createElement("div", {
 						className: Object(i.a)(h.a.slide, {
@@ -266,7 +266,7 @@
 				const {
 					tier: k,
 					tiersInfo: g
-				} = o, f = null === (t = g[1]) || void 0 === t ? void 0 : t.benefits, _ = k >= 2;
+				} = o, _ = null === (t = g[1]) || void 0 === t ? void 0 : t.benefits, f = k >= 2;
 				return n.a.createElement("div", {
 					className: Object(i.a)(y.a.container, s)
 				}, n.a.createElement("h2", {
@@ -274,8 +274,8 @@
 				}, F._("Powerup", null, {
 					hk: "4p1fZz"
 				})), n.a.createElement(U, {
-					areAllBenefitsUnlocked: _,
-					benefits: f,
+					areAllBenefitsUnlocked: f,
+					benefits: _,
 					className: y.a.gallery,
 					onClick: E,
 					subredditId: m
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.679b075f6a59c115a924.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.a5642fdf837266e57d88.js.map

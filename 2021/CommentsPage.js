@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.1dd4e3dcf746539bfa8f.js
-// Retrieved at 4/22/2021, 8:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.82a1249d7fddabeb49be.js
+// Retrieved at 4/26/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -6985,15 +6985,16 @@
 		"./src/reddit/components/PowerupsSidebar/common/utils.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return a
+				return d
 			}));
 			var n = s("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
 				r = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				o = s("./src/reddit/icons/svgs/PowerupTier3/index.tsx"),
-				i = s("./src/reddit/models/Gold/Powerups/index.ts");
+				o = s("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
+			const i = 2,
+				a = 5;
 
-			function a(e) {
-				return e >= i.c ? o.a : e >= i.b ? r.a : n.a
+			function d(e) {
+				return e >= a ? o.a : e >= i ? r.a : n.a
 			}
 		},
 		"./src/reddit/components/PowerupsSidebar/index.m.less": function(e, t, s) {
@@ -11335,4 +11336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1dd4e3dcf746539bfa8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.82a1249d7fddabeb49be.js.map

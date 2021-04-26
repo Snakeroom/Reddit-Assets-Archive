@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.bdfaa4ec804da20f26ba.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.7d15c18b2f3680b97bd2.js
+// Retrieved at 4/26/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, r) {
@@ -377,15 +377,16 @@
 		"./src/reddit/components/PowerupsSidebar/common/utils.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return l
+				return c
 			}));
 			var s = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
 				o = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				n = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx"),
-				a = r("./src/reddit/models/Gold/Powerups/index.ts");
+				n = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
+			const a = 2,
+				l = 5;
 
-			function l(e) {
-				return e >= a.c ? n.a : e >= a.b ? o.a : s.a
+			function c(e) {
+				return e >= l ? n.a : e >= a ? o.a : s.a
 			}
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, r) {
@@ -666,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.bdfaa4ec804da20f26ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.7d15c18b2f3680b97bd2.js.map

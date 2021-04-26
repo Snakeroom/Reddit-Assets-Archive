@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c1c70e21d7a1a23f78b8.js
-// Retrieved at 4/22/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.61093bfa0ac4fd7a0bc9.js
+// Retrieved at 4/26/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1529,13 +1529,10 @@
 						hk: "1PoAEc"
 					}))
 				})),
-				H = r("./src/reddit/models/Gold/Powerups/index.ts"),
-				K = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
-				Z = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				J = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx"),
-				X = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
-				Y = r.n(X);
-			var G = function(e) {
+				H = r("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
+				K = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
+				Z = r.n(K);
+			var J = function(e) {
 					const {
 						className: t,
 						onChange: r,
@@ -1543,32 +1540,32 @@
 						value: a,
 						min: s,
 						max: c
-					} = e, i = e => r(Math.max(Math.min(a + e, c || Number.POSITIVE_INFINITY), s || 0)), l = c === s, u = a === H.b ? K.a : a < H.c ? Z.a : J.a;
+					} = e, i = e => r(Math.max(Math.min(a + e, c || Number.POSITIVE_INFINITY), s || 0)), l = c === s, u = Object(H.a)(a);
 					return o.a.createElement("div", {
-						className: Object(d.a)(t, Y.a.container),
+						className: Object(d.a)(t, Z.a.container),
 						style: n
 					}, o.a.createElement("div", {
-						className: Object(d.a)(Y.a.control, {
-							[Y.a.locked]: l
+						className: Object(d.a)(Z.a.control, {
+							[Z.a.locked]: l
 						})
 					}, !l && o.a.createElement("button", {
-						className: Object(d.a)(Y.a.button, Y.a.decrementButton),
+						className: Object(d.a)(Z.a.button, Z.a.decrementButton),
 						onClick: () => i(-1)
 					}), o.a.createElement("div", {
-						className: Y.a.value
+						className: Z.a.value
 					}, o.a.createElement(u, {
-						className: Y.a.icon
+						className: Z.a.icon
 					}), o.a.createElement("span", null, a)), !l && o.a.createElement("button", {
-						className: Object(d.a)(Y.a.button, Y.a.incrementButton),
+						className: Object(d.a)(Z.a.button, Z.a.incrementButton),
 						onClick: () => i(1)
 					})))
 				},
-				Q = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				$ = r.n(Q);
+				X = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				Y = r.n(X);
 			const {
-				fbt: ee
+				fbt: Q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			var te = e => {
+			var $ = e => {
 					const {
 						additionalCount: t,
 						className: r,
@@ -1581,29 +1578,29 @@
 					return o.a.createElement("div", {
 						className: r
 					}, o.a.createElement("div", {
-						className: $.a.titleRow
-					}, o.a.createElement("span", null, ee._("Powerups", null, {
+						className: Y.a.titleRow
+					}, o.a.createElement("span", null, Q._("Powerups", null, {
 						hk: "DrcXp"
 					})), o.a.createElement("span", null, n < a ? `${n}/${a}` : n)), o.a.createElement("div", {
-						className: $.a.barRow
+						className: Y.a.barRow
 					}, o.a.createElement("div", {
-						className: $.a.track
+						className: Y.a.track
 					}), o.a.createElement("div", {
-						className: $.a.progress,
+						className: Y.a.progress,
 						style: {
 							width: `${100*s}%`
 						}
 					}), t && o.a.createElement("div", {
-						className: $.a.additionalProgress,
+						className: Y.a.additionalProgress,
 						style: {
 							width: `${100*(c-s)}%`,
 							left: `${100*s}%`
 						}
 					})))
 				},
-				re = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/index.m.less"),
-				ne = r.n(re);
-			var oe = function(e) {
+				G = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/index.m.less"),
+				ee = r.n(G);
+			var te = function(e) {
 				const {
 					className: t,
 					count: r,
@@ -1617,14 +1614,14 @@
 				if (!l) return null;
 				const u = Math.min(l, l / 2 + s.count / 2, s.count + (r || 0) / 2) / l;
 				return o.a.createElement("div", {
-					className: Object(d.a)(t, ne.a.container)
-				}, o.a.createElement(te, {
+					className: Object(d.a)(t, ee.a.container)
+				}, o.a.createElement($, {
 					additionalCount: r,
-					className: ne.a.bar,
+					className: ee.a.bar,
 					count: s.count,
 					maxCount: l
-				}), o.a.createElement(G, {
-					className: ne.a.count,
+				}), o.a.createElement(J, {
+					className: ee.a.count,
 					style: {
 						left: `${100*u}%`
 					},
@@ -1635,15 +1632,15 @@
 				}))
 			};
 			const {
-				fbt: ae
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), se = Object(s.c)({
+				fbt: re
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ne = Object(s.c)({
 				isAnonymous: C.d,
 				powerupsCount: C.e,
 				productOffer: P.a,
 				savedCardsPending: x.v,
 				stripeTokenPending: x.m
-			}), ce = Object(a.b)(se);
-			var ie = Object(h.injectStripe)(ce((function(e) {
+			}), oe = Object(a.b)(ne);
+			var ae = Object(h.injectStripe)(oe((function(e) {
 					const {
 						className: t,
 						isAnonymous: r,
@@ -1660,15 +1657,15 @@
 						},
 						className: t,
 						disabled: p || !i
-					}, ae._("Complete purchase", null, {
+					}, re._("Complete purchase", null, {
 						hk: "KaR26"
 					}))
 				}))),
-				le = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/index.m.less"),
-				de = r.n(le);
+				se = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/index.m.less"),
+				ce = r.n(se);
 			const {
-				fbt: ue
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), pe = 100, me = Object(s.c)({
+				fbt: ie
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), le = 100, de = Object(s.c)({
 				isAnonymous: C.d,
 				isNightMode: j.V,
 				paypalErrorMessage: x.d,
@@ -1686,7 +1683,7 @@
 				stripeErrorMessage: x.j,
 				userPowerupsData: C.u
 			});
-			var fe = Object(a.b)(me)((function(e) {
+			var ue = Object(a.b)(de)((function(e) {
 					const {
 						isAnonymous: t,
 						isNightMode: r,
@@ -1712,92 +1709,92 @@
 						I = !!(null == m ? void 0 : m.freeCount);
 					return o.a.createElement(h.StripeProvider, {
 						apiKey: f.a.stripe.apiKey
-					}, o.a.createElement(h.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(oe, {
-						className: de.a.progressControl,
+					}, o.a.createElement(h.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(te, {
+						className: ce.a.progressControl,
 						count: l,
-						maxCount: I ? 1 : pe,
+						maxCount: I ? 1 : le,
 						onChange: e => v(Object(E.d)(e)),
 						powerups: i
 					}), o.a.createElement("div", {
-						className: de.a.details
+						className: ce.a.details
 					}, o.a.createElement(N.a, {
-						className: de.a.anonymousCheckbox,
+						className: ce.a.anonymousCheckbox,
 						isSelected: t,
 						onClick: () => (e => v(Object(E.b)(e)))(!t),
-						text: ue._("Powerup anonymously", null, {
+						text: ie._("Powerup anonymously", null, {
 							hk: "YXX31"
 						})
 					}), !I && o.a.createElement("div", {
-						className: de.a.purchaseDetails
-					}, ue._({
+						className: ce.a.purchaseDetails
+					}, ie._({
 						"*": "{powerups} Powerups {powerup price} /mo",
 						_1: "1 Powerup {powerup price} /mo"
-					}, [ue._plural(l, "powerups"), ue._param("powerup price", `$${T.toLocaleString()}`)], {
+					}, [ie._plural(l, "powerups"), ie._param("powerup price", `$${T.toLocaleString()}`)], {
 						hk: "3cOqa5"
 					}))), !I && o.a.createElement(o.a.Fragment, null, o.a.createElement("h3", {
-						className: de.a.paymentMethodTitle
-					}, ue._("Payment Method", null, {
+						className: ce.a.paymentMethodTitle
+					}, ie._("Payment Method", null, {
 						hk: "3EbT3q"
 					})), o.a.createElement(k.a, {
-						className: de.a.paymentMethodSelector,
+						className: ce.a.paymentMethodSelector,
 						nightmode: r,
 						selectedPayment: C,
 						onPaymentSelected: e => {
 							P(e), v(Object(_.selectPaymentMethod)(e))
 						}
 					}), C === b.yb && u && o.a.createElement("div", {
-						className: de.a.errorMessage
+						className: ce.a.errorMessage
 					}, u), C === b.zb && c && o.a.createElement("div", {
-						className: de.a.errorMessage
+						className: ce.a.errorMessage
 					}, c), C === b.yb && o.a.createElement(S.a, {
 						nightmode: r,
-						className: de.a.stripeForm,
+						className: ce.a.stripeForm,
 						shouldDeleteCardWithGql: !0
 					}), C === b.zb && o.a.createElement(q, {
-						className: de.a.button,
+						className: ce.a.button,
 						subredditId: p
-					}), C === b.yb && o.a.createElement(ie, {
-						className: de.a.button,
+					}), C === b.yb && o.a.createElement(ae, {
+						className: ce.a.button,
 						subredditId: p
 					}), o.a.createElement("p", {
-						className: de.a.description
-					}, ue._("By completing your purchase, you are agreeing to automatic payments for Powerups and Reddit's {=User Agreement}, {=Privacy Policy}, and {previews terms of use}. Your Powerups subscription will auto-renew monthly for {powerup price} (plus tax where applicable). Cancel anytime in {=User Settings}. Cancel at least 24 hours before your subscription ends to avoid getting charged for the next month. No partial refunds.", [ue._param("=User Agreement", o.a.createElement("a", {
+						className: ce.a.description
+					}, ie._("By completing your purchase, you are agreeing to automatic payments for Powerups and Reddit's {=User Agreement}, {=Privacy Policy}, and {previews terms of use}. Your Powerups subscription will auto-renew monthly for {powerup price} (plus tax where applicable). Cancel anytime in {=User Settings}. Cancel at least 24 hours before your subscription ends to avoid getting charged for the next month. No partial refunds.", [ie._param("=User Agreement", o.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/user-agreement",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, ue._("User Agreement", null, {
+					}, ie._("User Agreement", null, {
 						hk: "3U1KuA"
-					}))), ue._param("=Privacy Policy", o.a.createElement("a", {
+					}))), ie._param("=Privacy Policy", o.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/privacy-policy",
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, ue._("Privacy Policy", null, {
+					}, ie._("Privacy Policy", null, {
 						hk: "Z8otX"
-					}))), ue._param("previews terms of use", o.a.createElement(O.a, null)), ue._param("powerup price", ` $${T.toLocaleString()} `), ue._param("=User Settings", o.a.createElement("a", {
+					}))), ie._param("previews terms of use", o.a.createElement(O.a, null)), ie._param("powerup price", ` $${T.toLocaleString()} `), ie._param("=User Settings", o.a.createElement("a", {
 						href: "/settings/premium",
 						target: "_blank"
-					}, ue._("User Settings", null, {
+					}, ie._("User Settings", null, {
 						hk: "3TNXSe"
 					})))], {
 						hk: "NLnVj"
 					}))), I && o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: de.a.premiumDescription
+						className: ce.a.premiumDescription
 					}, o.a.createElement("div", {
-						className: de.a.premiumIconWrapper
+						className: ce.a.premiumIconWrapper
 					}, o.a.createElement(M.a, {
-						className: de.a.premiumIcon
-					})), o.a.createElement("span", null, ue._("Premium gives you one monthly Powerup", null, {
+						className: ce.a.premiumIcon
+					})), o.a.createElement("span", null, ie._("Premium gives you one monthly Powerup", null, {
 						hk: "2cKV1a"
 					}))), o.a.createElement(W, {
-						className: de.a.button,
+						className: ce.a.button,
 						subredditId: p
 					})))))
 				})),
-				he = r("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
-				ye = r.n(he);
+				pe = r("./src/reddit/components/Econ/PowerupsPurchaseModal/index.m.less"),
+				me = r.n(pe);
 
-			function be() {
-				return (be = Object.assign || function(e) {
+			function fe() {
+				return (fe = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -1806,36 +1803,36 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: ge
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Ee = Object(l.t)(), we = Object(s.c)({
+				fbt: he
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ye = Object(l.t)(), be = Object(s.c)({
 				currentSubreddit: l.q
-			}), _e = Object(a.b)(we);
-			const ve = Object(c.a)(Ee(_e((function(e) {
+			}), ge = Object(a.b)(be);
+			const Ee = Object(c.a)(ye(ge((function(e) {
 				const {
 					currentSubreddit: t
 				} = e, r = Object(a.d)(), n = () => r(Object(u.g)(i.a.ECON_POWERUPS_PURCHASE));
 				return t ? o.a.createElement("div", {
-					className: ye.a.inner
+					className: me.a.inner
 				}, o.a.createElement(m.a, {
-					className: ye.a.header,
-					title: ge._("Powerup {r/community}", [ge._param("r/community", t.displayText)], {
+					className: me.a.header,
+					title: he._("Powerup {r/community}", [he._param("r/community", t.displayText)], {
 						hk: "2HkBNV"
 					}),
-					subtitle: ge._("Unlock perks for the whole community", null, {
+					subtitle: he._("Unlock perks for the whole community", null, {
 						hk: "faCTq"
 					})
 				}), o.a.createElement("button", {
-					className: ye.a.closeButton,
+					className: me.a.closeButton,
 					onClick: n
 				}, o.a.createElement(p.a, {
-					className: ye.a.closeIcon
-				})), o.a.createElement(fe, {
+					className: me.a.closeIcon
+				})), o.a.createElement(ue, {
 					subredditId: t.id,
 					onCloseModal: n
 				})) : (n(), null)
 			}))));
-			t.default = e => o.a.createElement(ve, be({}, e, {
-				className: Object(d.a)(e.className, ye.a.modal)
+			t.default = e => o.a.createElement(Ee, fe({}, e, {
+				className: Object(d.a)(e.className, me.a.modal)
 			}))
 		},
 		"./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx": function(e, t, r) {
@@ -1960,6 +1957,21 @@
 				}
 			}
 			t.a = Object(c.c)(p)
+		},
+		"./src/reddit/components/PowerupsSidebar/common/utils.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return i
+			}));
+			var n = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
+				o = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				a = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
+			const s = 2,
+				c = 5;
+
+			function i(e) {
+				return e >= c ? a.a : e >= s ? o.a : n.a
+			}
 		},
 		"./src/reddit/components/StripePaymentForm/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2503,4 +2515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c1c70e21d7a1a23f78b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.61093bfa0ac4fd7a0bc9.js.map
