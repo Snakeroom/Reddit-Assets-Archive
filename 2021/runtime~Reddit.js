@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.72b13e67c7cca09921b1.js
-// Retrieved at 4/26/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2b85281589c35058b55e.js
+// Retrieved at 4/26/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && P.push(a[d][0]), a[d] = 0;
@@ -237,6 +237,7 @@
 			"reddit-components-Econ-Prediction-CreatingTournamentBanner": 1,
 			"reddit-components-Econ-Tournament-ActiveTournamentBanner": 1,
 			"reddit-components-Economics-SubredditPremium-LFGBanner": 1,
+			"reddit-components-LayerEmbed": 1,
 			"reddit-components-Governance-ClaimPointsBanner": 1,
 			"reddit-components-Econ-PredictionLeaderboard-Sidebar": 1,
 			"reddit-components-FormBuilder": 1,
@@ -497,6 +498,7 @@
 					"reddit-components-Econ-Prediction-CreatingTournamentBanner": "reddit-components-Econ-Prediction-CreatingTournamentBanner",
 					"reddit-components-Econ-Tournament-ActiveTournamentBanner": "reddit-components-Econ-Tournament-ActiveTournamentBanner",
 					"reddit-components-Economics-SubredditPremium-LFGBanner": "reddit-components-Economics-SubredditPremium-LFGBanner",
+					"reddit-components-LayerEmbed": "reddit-components-LayerEmbed",
 					"reddit-components-Governance-ClaimPointsBanner": "reddit-components-Governance-ClaimPointsBanner",
 					"reddit-components-Econ-PredictionLeaderboard-Sidebar": "reddit-components-Econ-PredictionLeaderboard-Sidebar",
 					"vendors~reddit-components-FormBuilder": "vendors~reddit-components-FormBuilder",
@@ -608,8 +610,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "22ec8cbf93fcd6a24986",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "db8531c940b4088a3f71",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "8d780a66b55b56c04a72",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "a042ccbff1aacfb6c415",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -676,7 +678,7 @@
 					ReportFlow: "a3377a3aab0ac45b30da",
 					ReportFlowNew: "508173a8de46c223b338",
 					RichTextJsonEmoteTooltip: "deaaaf2d410de4862d87",
-					SubredditMentionWithIcon: "168339f3884f0826c1ae",
+					SubredditMentionWithIcon: "20ae3081249bfb9e7b9b",
 					VideoShareModal: "0772e3510d12c47ec44a",
 					"reddit-components-Governance-Proposal": "8690780e7ec7ae0fdd92",
 					"reddit-components-ProfileIdCard": "8ce21c62c284ee1bfe03",
@@ -694,7 +696,7 @@
 					"reddit-components-BlankPost": "31d6cfe0d16ae931b73c",
 					PennyPurchaseModal: "e5be0384ede98c8043a0",
 					editCollectionModal: "2f795264f7c1c1054b28",
-					NewCommunityProgress: "fc3c6c5803d1506ad383",
+					NewCommunityProgress: "7cb24bd329ffd28d9fd9",
 					"reddit-components-SidebarNativeAd": "947b0177629896ac898e",
 					FeaturedLiveEntrypointAnnouncement: "f52d7efd12c659c9bcbe",
 					FeaturedLiveEntrypointAnnouncementsCarousel: "8200033afb22c2ca516a",
@@ -762,6 +764,7 @@
 					"reddit-components-Econ-Prediction-CreatingTournamentBanner": "0cf1cd89baeb452e1b36",
 					"reddit-components-Econ-Tournament-ActiveTournamentBanner": "6b6a05f0552ef25b16d2",
 					"reddit-components-Economics-SubredditPremium-LFGBanner": "8d42d772a9976dacf7e1",
+					"reddit-components-LayerEmbed": "7fc0575c3270d79657fe",
 					"reddit-components-Governance-ClaimPointsBanner": "178912ea4f068d27a340",
 					"reddit-components-Econ-PredictionLeaderboard-Sidebar": "1a4f08ab04be5bca178e",
 					"vendors~reddit-components-FormBuilder": "31d6cfe0d16ae931b73c",
@@ -1052,6 +1055,7 @@
 						"reddit-components-Econ-Prediction-CreatingTournamentBanner": "reddit-components-Econ-Prediction-CreatingTournamentBanner",
 						"reddit-components-Econ-Tournament-ActiveTournamentBanner": "reddit-components-Econ-Tournament-ActiveTournamentBanner",
 						"reddit-components-Economics-SubredditPremium-LFGBanner": "reddit-components-Economics-SubredditPremium-LFGBanner",
+						"reddit-components-LayerEmbed": "reddit-components-LayerEmbed",
 						"reddit-components-Governance-ClaimPointsBanner": "reddit-components-Governance-ClaimPointsBanner",
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "reddit-components-Econ-PredictionLeaderboard-Sidebar",
 						"vendors~reddit-components-FormBuilder": "vendors~reddit-components-FormBuilder",
@@ -1163,13 +1167,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "d2bfe56d9c1f86f7b098",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "44f0a40298b05c5b6d8b",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "7f5b4ff39236057c5db1",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "9eb85b971b0a89e39aa2",
 						"translations/de_DE-json": "94feabf34513eaa0624f",
 						"translations/es_ES-json": "81a556e3e6be56019c21",
 						"translations/fr_FR-json": "e2c5bdf8781712ef9308",
 						"translations/it_IT-json": "a537ef9e29d85adb2ec7",
-						"translations/pseudo_ext-json": "34083920bd432927544a",
+						"translations/pseudo_ext-json": "86fe359ce872d8fa99ac",
 						"translations/pseudo_long-json": "ed5e483e823f5054bdcb",
 						"translations/pseudo_short-json": "37b2d312d83436033071",
 						"translations/pt_BR-json": "6c67ca9729c470833e0e",
@@ -1212,7 +1216,7 @@
 						PublicAccessNetwork: "104d738f3761322c920f",
 						"vendors~Subreddit": "2c1c81dcf124430428c8",
 						"Subreddit~SubredditWiki": "2a606b2e125997fb384e",
-						Subreddit: "f8e070de354b89471502",
+						Subreddit: "1c2ff217c04f8ccd5051",
 						"vendors~SubredditWiki": "46e21d94e36841f512c7",
 						SubredditWiki: "17d0178b261a01319322",
 						"vendors~xml2js": "88f76e2e07b71eb98128",
@@ -1231,7 +1235,7 @@
 						ReportFlow: "6cd1a549270b4cfe6378",
 						ReportFlowNew: "7c671a957abaea5e9a37",
 						RichTextJsonEmoteTooltip: "574ecb4a6ffae8a38695",
-						SubredditMentionWithIcon: "3237751da853e740eab7",
+						SubredditMentionWithIcon: "bd47363d7d7143a092be",
 						VideoShareModal: "4ec8ee448b4f2f9403a2",
 						"reddit-components-Governance-Proposal": "18843688e720e5e5f574",
 						"reddit-components-ProfileIdCard": "c1c4fc1ce1359ec4dbed",
@@ -1249,7 +1253,7 @@
 						"reddit-components-BlankPost": "74cb80a8e039426cd579",
 						PennyPurchaseModal: "5e8893722a4c745bd731",
 						editCollectionModal: "244f78a297593236e40f",
-						NewCommunityProgress: "f736a9d3e7bf1f247d94",
+						NewCommunityProgress: "2148893657deffb761f1",
 						"reddit-components-SidebarNativeAd": "3252194a5401059f54fc",
 						FeaturedLiveEntrypointAnnouncement: "3a87a1cb4850475701bb",
 						FeaturedLiveEntrypointAnnouncementsCarousel: "bab37cf4531619d00771",
@@ -1317,6 +1321,7 @@
 						"reddit-components-Econ-Prediction-CreatingTournamentBanner": "5f7198ec93cd79a0150c",
 						"reddit-components-Econ-Tournament-ActiveTournamentBanner": "cec42ea560f0969f7468",
 						"reddit-components-Economics-SubredditPremium-LFGBanner": "c3d8c6e56c992279fba4",
+						"reddit-components-LayerEmbed": "170d4f1a9e1f3facee55",
 						"reddit-components-Governance-ClaimPointsBanner": "26fec529ced61ab602d3",
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "6712c2908a0d620fe49d",
 						"vendors~reddit-components-FormBuilder": "e612a5e10a1e99f46476",
@@ -1395,4 +1400,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.72b13e67c7cca09921b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2b85281589c35058b55e.js.map
