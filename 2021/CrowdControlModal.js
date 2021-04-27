@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.eeed4fe99f4ed82aa97c.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.cfcd0bf456a7785e581c.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -264,8 +264,8 @@
 				R = n.n(F);
 			const P = Object(l.c)({
 					post: I.g,
-					subredditCrowdControl: I.O,
-					subredditUrl: I.Q
+					subredditCrowdControl: I.Q,
+					subredditUrl: I.S
 				}),
 				D = Object(o.b)(P, e => ({
 					onClose: () => e(Object(L.f)()),
@@ -415,7 +415,7 @@
 				b = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				C = n.n(h);
-			const f = Object(l.a)(e => e, x.D, x.d, (e, t, n) => {
+			const f = Object(l.a)(e => e, x.F, x.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -1767,4 +1767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.eeed4fe99f4ed82aa97c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.cfcd0bf456a7785e581c.js.map

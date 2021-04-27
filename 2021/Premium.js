@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.98771d8b6144225ba5cd.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.254e91057eedddea8f22.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -777,7 +777,7 @@
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(P({
 								awards: r.awards
-							})), e(Object(m.w)())
+							})), e(Object(m.z)())
 						}
 					} catch (u) {
 						Object(a.b)() || console.error(u), e(Object(d.f)({
@@ -1821,7 +1821,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(a.a)(n.Gb)
+			const s = Object(a.a)(n.Jb)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -1870,4 +1870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.98771d8b6144225ba5cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.254e91057eedddea8f22.js.map

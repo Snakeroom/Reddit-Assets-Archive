@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.672ca0228131a2c9135b.js
-// Retrieved at 3/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.5cfee1a71ef47d787175.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -239,7 +239,7 @@
 				U = t("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/index.m.less"),
 				F = t.n(U);
 			const P = 8;
-			var D = function(e) {
+			var G = function(e) {
 					const {
 						awarders: a,
 						className: t,
@@ -266,9 +266,9 @@
 						onCtaClick: c
 					}))) : null
 				},
-				G = t("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				S = t("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
-				V = t.n(S);
+				S = t("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				D = t("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
+				V = t.n(D);
 			var X = function(e) {
 					const {
 						showScore: a,
@@ -300,7 +300,7 @@
 						wrapperClassName: V.a.hoverCardWrapper
 					}, c) : c), t && a && r.a.createElement("div", {
 						className: V.a.score
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(S.a, {
 						className: V.a.coinIcon
 					}), t.score))
 				},
@@ -351,7 +351,7 @@
 					pending: n,
 					post: null
 				};
-				const s = Object(x.D)(e, {
+				const s = Object(x.F)(e, {
 						postId: a
 					}),
 					o = Object(f.b)(e, a),
@@ -476,7 +476,7 @@
 					className: Y.a.giftIcon
 				}), $._("Give Award", null, {
 					hk: "2sa45i"
-				}))), L && d && H && r.a.createElement(D, {
+				}))), L && d && H && r.a.createElement(G, {
 					awarders: h,
 					className: Y.a.list,
 					currentRank: o,
@@ -644,4 +644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.672ca0228131a2c9135b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.5cfee1a71ef47d787175.js.map

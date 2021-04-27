@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8f8ab1290c70e50a3819.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.933d3181e23ad4bdef46.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -490,7 +490,7 @@
 					}) => Object(G.a)(e) === Se(t.id),
 					isPendingDeletion: (e, {
 						comment: t
-					}) => Object(J.A)(e, {
+					}) => Object(J.C)(e, {
 						commentId: t.postId
 					}),
 					isLoggedIn: ee.J,
@@ -503,12 +503,12 @@
 					modModeEnabled: U.Q,
 					postIsLocked: (e, {
 						comment: t
-					}) => Object(Q.y)(e, {
+					}) => Object(Q.A)(e, {
 						postId: t.postId
 					}),
 					postPermalink: (e, {
 						comment: t
-					}) => Object(Q.C)(e, {
+					}) => Object(Q.E)(e, {
 						postId: t.postId
 					}),
 					reportFlowIsOpen: (e, {
@@ -520,7 +520,7 @@
 					subreddit: U.q,
 					subredditOrProfile: (e, {
 						comment: t
-					}) => Object(Q.P)(e, {
+					}) => Object(Q.R)(e, {
 						postId: t.postId
 					}),
 					reportingRevampEnabled: X.a
@@ -717,7 +717,7 @@
 					onToggleReportsDropdown: () => e(Object(M.h)({
 						tooltipId: Ae(t.id)
 					})),
-					onToggleSave: () => e(Object(P.k)(t.id)),
+					onToggleSave: () => e(Object(P.m)(t.id)),
 					handleDelete: () => {
 						e(Object(N.i)(Se(t.id))), e(Object(M.h)({
 							tooltipId: Re(s, t.id)
@@ -1047,7 +1047,7 @@
 				},
 				isNightmodeOn: f.V
 			}), e => ({
-				openPost: t => e(Object(m.E)(t))
+				openPost: t => e(Object(m.I)(t))
 			}));
 			var y = Object(l.a)(C(e => {
 					const {
@@ -2489,10 +2489,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const n = s === a.a.upvoted ? Object(r.V)(t) : Object(r.r)(t);
+						const n = s === a.a.upvoted ? Object(r.bb)(t) : Object(r.u)(t);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(r.S)(t)),
+					onIgnoreReports: () => e(Object(r.X)(t)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -2700,4 +2700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8f8ab1290c70e50a3819.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.933d3181e23ad4bdef46.js.map

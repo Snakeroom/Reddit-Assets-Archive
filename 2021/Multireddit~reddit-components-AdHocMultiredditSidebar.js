@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.e354b06165f1dc848388.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.ceeab1ae0020b08185c1.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2389,7 +2389,7 @@
 					for (const {
 							node: e
 						} of b.edges) {
-						if (!Object(m.j)(e)) {
+						if (!Object(m.k)(e)) {
 							const t = `Received unhandled element type when processing multireddit data: "${e.__typename}"`;
 							Object(r.b)() || console.warn(t), i.c.captureMessage(t);
 							continue
@@ -2400,7 +2400,7 @@
 							post: d,
 							crosspost: c
 						} = s && Object(a.a)(s);
-						t.posts[d.id] = d, c && (t.posts[c.id] = c), Object(m.i)(s) || Object(m.h)(s) || (s.authorFlair && (t.postFlair[d.belongsTo.id] || (t.postFlair[d.belongsTo.id] = {}), t.postFlair[d.belongsTo.id][d.author] = Object(n.a)(s.authorFlair)[0]), Object(m.l)(s) && (t.subreddits[s.subreddit.id] || (t.subreddits[s.subreddit.id] = Object(l.a)(s.subreddit)), t.postFlair[s.subreddit.id] || (t.postFlair[s.subreddit.id] = Object(o.a)(s.subreddit))))
+						t.posts[d.id] = d, c && (t.posts[c.id] = c), Object(m.j)(s) || Object(m.i)(s) || (s.authorFlair && (t.postFlair[d.belongsTo.id] || (t.postFlair[d.belongsTo.id] = {}), t.postFlair[d.belongsTo.id][d.author] = Object(n.a)(s.authorFlair)[0]), Object(m.m)(s) && (t.subreddits[s.subreddit.id] || (t.subreddits[s.subreddit.id] = Object(l.a)(s.subreddit)), t.postFlair[s.subreddit.id] || (t.postFlair[s.subreddit.id] = Object(o.a)(s.subreddit))))
 					}
 				} else t.pageInfo = {
 					endCursor: null,
@@ -2582,4 +2582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.e354b06165f1dc848388.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.ceeab1ae0020b08185c1.js.map

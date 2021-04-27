@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.b843738f62fdfd7ee976.js
-// Retrieved at 4/26/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.7ee1459db43d92323e05.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -592,7 +592,7 @@
 					postId: t
 				}) => Object(O.g)(e, {
 					commentsPageKey: Object(P.a)(t)
-				}), S.D, (e, {
+				}), S.F, (e, {
 					postId: t
 				}) => Object(O.u)(e, {
 					commentsPageKey: Object(P.a)(t)
@@ -670,11 +670,11 @@
 				oe = h.a.wrapped(g.a, "SmallChatUserIcon", H.a),
 				ae = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
-					errorMsgs: O.J,
+					errorMsgs: O.L,
 					hasError: O.v,
 					liveStreamingChatCharacterLimit: z.a,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: S.D
+					post: S.F
 				}), (e, {
 					isEditing: t,
 					comment: s,
@@ -1998,4 +1998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.b843738f62fdfd7ee976.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.7ee1459db43d92323e05.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.29c67f46aefefb3b6c8c.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.5ec50ca1403e166d0ede.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -295,13 +295,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = re.cachedData || Object(V.t)(Q.a.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = re.cachedData || Object(V.v)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(V.nb)(Q.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(V.rb)(Q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return re.cachedData = e, e ? e.subreddits : []
 				}
@@ -360,7 +360,7 @@
 				he = n("./src/lib/lessComponent.tsx");
 			const _e = Object(l.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(be.a)(t.permalink)),
-					clearLinks: () => e(Object(de.o)())
+					clearLinks: () => e(Object(de.r)())
 				})),
 				ke = he.a.button("ClearButton", ge.a);
 			class fe extends c.a.Component {
@@ -381,7 +381,7 @@
 			var xe = _e(fe),
 				ye = n("./src/reddit/selectors/posts.ts");
 			const Ee = Object(u.c)({
-				recentPosts: ye.M
+				recentPosts: ye.O
 			});
 			var Ne = Object(l.b)(Ee, (e, t) => ({
 					openLightbox: t => () => e(Object(be.a)(t.permalink))
@@ -732,8 +732,8 @@
 						return (!t || !n) && (!Object(et.b)(e) && function(e) {
 							return Object(He.c)(e, {
 								experimentEligibilitySelector: $e.J,
-								experimentName: Ge.X
-							}) === Ge.Jb
+								experimentName: Ge.ab
+							}) === Ge.Mb
 						}(e))
 					}
 				}),
@@ -908,7 +908,7 @@
 				g = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				_ = n.n(h);
-			const k = Object(o.a)(e => e, p.D, p.d, (e, t, n) => {
+			const k = Object(o.a)(e => e, p.F, p.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.29c67f46aefefb3b6c8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.5ec50ca1403e166d0ede.js.map

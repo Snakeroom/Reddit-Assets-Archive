@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.67963849968338d5947c.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.63298530b11fbe3d851b.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -117,8 +117,8 @@
 				C = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				O = o("./src/reddit/controls/MetaSeparator/index.tsx"),
 				v = o("./src/reddit/helpers/postCollection.ts"),
-				x = o("./src/reddit/models/Post/index.ts"),
-				_ = o("./src/reddit/models/PostCollection/index.ts"),
+				_ = o("./src/reddit/models/Post/index.ts"),
+				x = o("./src/reddit/models/PostCollection/index.ts"),
 				g = o("./src/reddit/selectors/postCollection.ts"),
 				y = o("./src/reddit/selectors/posts.ts"),
 				f = (o("./node_modules/core-js/modules/web.dom.iterable.js"), o("./node_modules/react-router-dom/esm/react-router-dom.js")),
@@ -247,7 +247,7 @@
 						toggleEditStartTimeModal: E,
 						updateSelectedPostRef: C,
 						isProfilePage: O
-					} = e, v = l && l.url || "", x = b.isSpoiler || b.isNSFW, _ = b.isScoreHidden;
+					} = e, v = l && l.url || "", _ = b.isSpoiler || b.isNSFW, x = b.isScoreHidden;
 					return n.a.createElement(I.a, {
 						className: Object(a.a)(B.a.galleryPostContainer, {
 							[B.a.isSelectedPost]: d,
@@ -265,7 +265,7 @@
 						ref: d && C || void 0
 					}, v ? n.a.createElement("div", {
 						className: Object(a.a)(B.a.galleryPostImage, {
-							[B.a.blurBackground]: x
+							[B.a.blurBackground]: _
 						}),
 						style: {
 							backgroundImage: `url('${v}')`
@@ -283,9 +283,9 @@
 						className: B.a.galleryPostOverlay
 					}, n.a.createElement("div", {
 						className: Object(a.a)(B.a.galleryBottomLine, {
-							[B.a.isScoreHidden]: _
+							[B.a.isScoreHidden]: x
 						})
-					}, !_ && n.a.createElement(j.a, {
+					}, !x && n.a.createElement(j.a, {
 						"data-click-id": "score"
 					}, W._({
 						"*": "{Post score} points",
@@ -340,7 +340,7 @@
 						displayLayout: e,
 						post: t
 					} = this.props;
-					return t ? e === _.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
+					return t ? e === x.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow,
@@ -365,9 +365,9 @@
 					galleryThumbnail: g.e,
 					isFutureEvent: g.i,
 					layout: C.O,
-					post: y.D,
+					post: y.F,
 					shouldShowCollectionPostEdits: g.s,
-					subredditOrProfile: y.P
+					subredditOrProfile: y.R
 				}), (e, {
 					collectionId: t,
 					postId: s,
@@ -413,11 +413,11 @@
 							postId: t
 						}),
 						s = o && (o.primaryPostId || o.postIds[0]);
-					return s && Object(y.D)(e, {
+					return s && Object(y.F)(e, {
 						postId: s
 					}) || null
 				},
-				post: y.D,
+				post: y.F,
 				shouldShowThumbnail: (e, {
 					postId: t
 				}) => {
@@ -478,7 +478,7 @@
 						className: K.a.collectionBy
 					}, V._("Collection by {authorName}", [V._param("authorName", n.a.createElement($, {
 						author: m,
-						isDeleted: Object(x.m)(m)
+						isDeleted: Object(_.n)(m)
 					}))], {
 						hk: "4E412f"
 					})), n.a.createElement(O.a, {
@@ -515,7 +515,7 @@
 						className: K.a.collectionDescription
 					}, b), n.a.createElement("div", {
 						className: Object(a.a)({
-							[K.a.galleryContainer]: t === _.a.GALLERY
+							[K.a.galleryContainer]: t === x.a.GALLERY
 						})
 					}, h.map(e => n.a.createElement(Z, {
 						collectionId: C,
@@ -559,10 +559,10 @@
 				C = o("./src/reddit/selectors/postCollection.ts"),
 				O = o("./node_modules/reselect/es/index.js"),
 				v = o("./src/reddit/helpers/trackers/postCollection.ts"),
-				x = o("./src/reddit/components/Widgets/PostCollection/CollectionOverflowMenu/index.m.less"),
-				_ = o.n(x),
+				_ = o("./src/reddit/components/Widgets/PostCollection/CollectionOverflowMenu/index.m.less"),
+				x = o.n(_),
 				g = o("./node_modules/fbt/lib/FbtPublic.js");
-			const y = c.a.wrapped(h.b, "DropdownRow", _.a);
+			const y = c.a.wrapped(h.b, "DropdownRow", x.a);
 			let f;
 			const S = Object(E.b)("DELETE_COLLECTION_CONFM_MODAL_ID"),
 				T = Object(E.b)("EDIT_POST_COLLECTION_MODAL_ID"),
@@ -573,7 +573,7 @@
 					shouldShowCollectionEditOptions: C.s
 				}),
 				w = Object(a.b)(N, (e, t) => ({
-					copyLink: () => e(Object(m.x)(t.permalink)),
+					copyLink: () => e(Object(m.B)(t.permalink)),
 					onCreatePost: o => {
 						t.shouldShowCreatePost && e(Object(r.b)(o))
 					},
@@ -726,4 +726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.67963849968338d5947c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.63298530b11fbe3d851b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.18843688e720e5e5f574.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.b4571270118182c447a9.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -256,8 +256,8 @@
 				I = Object(s.a)(E.k),
 				P = Object(s.a)(E.q),
 				j = Object(s.a)(E.r),
-				k = Object(s.a)(E.s),
-				R = Object(s.a)(E.t),
+				R = Object(s.a)(E.s),
+				k = Object(s.a)(E.t),
 				T = Object(s.a)(E.u),
 				w = Object(s.a)(E.v),
 				S = Object(s.a)(E.w),
@@ -299,7 +299,7 @@
 							const {
 								postId: e
 							} = c, t = s.posts.models[e];
-							t && t.voteState === _.a.notVoted && n(Object(i.V)(e))
+							t && t.voteState === _.a.notVoted && n(Object(i.bb)(e))
 						}
 					} else n(y({
 						pollId: e,
@@ -308,7 +308,7 @@
 				}, V = (e, t) => async (n, s, {
 					apiContext: i
 				}) => {
-					n(k());
+					n(R());
 					const d = s().transfers.communityPoints.contentId || void 0,
 						u = await
 					function(e, t) {
@@ -326,7 +326,7 @@
 						...e,
 						contentId: d
 					});
-					u.ok ? (n(R({
+					u.ok ? (n(k({
 						...u.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
@@ -451,9 +451,9 @@
 				I = n("./src/lib/bigNumberUtils/percent.ts"),
 				P = n("./src/lib/prettyPrintNumber/index.ts"),
 				j = n("./src/reddit/helpers/governance/tokens.ts"),
-				k = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				R = n("./src/reddit/components/Poll/ResultOption/index.m.less"),
-				T = n.n(R);
+				R = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				k = n("./src/reddit/components/Poll/ResultOption/index.m.less"),
+				T = n.n(k);
 			! function(e) {
 				e[e.Count = 0] = "Count", e[e.Percent = 1] = "Percent"
 			}(E || (E = {}));
@@ -484,7 +484,7 @@
 						})
 					}, `${o.toFixed(1)}%`), a.a.createElement("div", {
 						className: T.a.text
-					}, t.text), s.userSelected && a.a.createElement(k.a, {
+					}, t.text), s.userSelected && a.a.createElement(R.a, {
 						className: T.a.check
 					}))
 				},
@@ -548,7 +548,7 @@
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
 							}(Array.from(n.elements).filter($));
-						G()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(O.e)(t.id, t.postId, r)))
+						G()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(O.f)(t.id, t.postId, r)))
 					}
 				}
 				render() {
@@ -602,7 +602,7 @@
 							poll: e,
 							sendEvent: t
 						} = this.props;
-						e && t(Object(O.d)(e.id, e.postId))
+						e && t(Object(O.e)(e.id, e.postId))
 					}
 				}
 				componentDidMount() {
@@ -892,10 +892,10 @@
 				poll: te.e,
 				pollId: te.a,
 				pollReward: te.d,
-				post: re.D,
+				post: re.F,
 				resultsByVoters: te.c,
 				resultsByVotingPower: te.b,
-				subredditOrProfile: re.P
+				subredditOrProfile: re.R
 			});
 			t.default = Object(i.b)(xe)(Ce)
 		},
@@ -1447,4 +1447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.18843688e720e5e5f574.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.b4571270118182c447a9.js.map

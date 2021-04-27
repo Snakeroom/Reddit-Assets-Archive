@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1667a1ecd797d908a011.js
-// Retrieved at 4/26/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f6e5cbdb2ad8c3773b39.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -247,7 +247,7 @@
 					gqlContext: x
 				}) => {
 					const t = r(),
-						k = Object(c.P)(t, {
+						k = Object(c.R)(t, {
 							postId: a,
 							disallowProfile: !0
 						});
@@ -1006,8 +1006,8 @@
 				M = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				L = r("./src/reddit/icons/svgs/Minus/index.tsx"),
 				z = r("./src/reddit/icons/svgs/Plus/index.tsx"),
-				H = r("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
-				R = r("./src/reddit/controls/Button/index.tsx"),
+				R = r("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
+				H = r("./src/reddit/controls/Button/index.tsx"),
 				q = r("./src/reddit/icons/svgs/Close/index.tsx");
 
 			function U({
@@ -1103,14 +1103,14 @@
 					e(K(h)), c(!0), setTimeout(() => c(!1), 400)
 				}, [h]), n ? t.a.createElement("div", {
 					className: X.a.header
-				}, t.a.createElement(R.q, {
+				}, t.a.createElement(H.q, {
 					"aria-label": Z._("Close", null, {
 						hk: "40q8CL"
 					}),
 					className: X.a.closeButton,
 					Icon: q.a,
 					onClick: a,
-					priority: R.b.Plain
+					priority: H.b.Plain
 				}), t.a.createElement("h3", {
 					className: Object(s.a)(X.a.colorCommentary, {
 						[X.a.hasAddedCoins]: !!h
@@ -1124,7 +1124,7 @@
 					className: X.a.leftStar
 				}), t.a.createElement(U, {
 					className: X.a.rightStar
-				})))) : t.a.createElement(H.a, {
+				})))) : t.a.createElement(R.a, {
 					onAddCoins: p.promptUserToBuyMoreCoins,
 					onCancel: a,
 					title: Z._("Predict the Future", null, {
@@ -1224,14 +1224,14 @@
 					className: ca.a.description
 				}, pa._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
 					hk: "1tajkZ"
-				})), t.a.createElement(R.q, {
+				})), t.a.createElement(H.q, {
 					"aria-label": pa._("Close", null, {
 						hk: "40q8CL"
 					}),
 					className: ca.a.closeButton,
 					Icon: q.a,
 					onClick: a,
-					priority: R.b.Plain
+					priority: H.b.Plain
 				})), t.a.createElement("div", {
 					className: ca.a.body
 				}, t.a.createElement("div", {
@@ -1283,7 +1283,7 @@
 					tournamentId: h,
 					userCoins: f
 				}) => {
-					const [d, u] = Object(x.useState)(0), [A, B] = Object(x.useState)(null), [D, V] = Object(x.useState)(null), [b, F] = Object(x.useState)(null), [g, v] = Object(x.useState)(!1), [P, S] = Object(x.useState)(!1), [T, _] = Object(x.useState)(!1), O = Object(G.a)(), C = null == A ? void 0 : A[d], j = null == D ? void 0 : D[d], w = h ? D && d === D.length - 1 : A && d === A.length - 1, H = !!A || "COINS" === (null == j ? void 0 : j.currency), R = H && f < ((null == C ? void 0 : C.coins) || (null == j ? void 0 : j.amount) || 0), q = !!j && null !== b && b < j.amount, U = null == C ? void 0 : C.coins, W = null == j ? void 0 : j.amount, J = R || q, K = J || w, Y = Object(x.useCallback)(async () => {
+					const [d, u] = Object(x.useState)(0), [A, B] = Object(x.useState)(null), [D, V] = Object(x.useState)(null), [b, F] = Object(x.useState)(null), [g, v] = Object(x.useState)(!1), [P, S] = Object(x.useState)(!1), [T, _] = Object(x.useState)(!1), O = Object(G.a)(), C = null == A ? void 0 : A[d], j = null == D ? void 0 : D[d], w = h ? D && d === D.length - 1 : A && d === A.length - 1, R = !!A || "COINS" === (null == j ? void 0 : j.currency), H = R && f < ((null == C ? void 0 : C.coins) || (null == j ? void 0 : j.amount) || 0), q = !!j && null !== b && b < j.amount, U = null == C ? void 0 : C.coins, W = null == j ? void 0 : j.amount, J = H || q, K = J || w, Y = Object(x.useCallback)(async () => {
 						try {
 							const i = await a(l);
 							V(i)
@@ -1364,7 +1364,7 @@
 						className: ka.a.modalContent
 					}, n && t.a.createElement(xa, {
 						chipPack: null == D ? void 0 : D[0],
-						isCoinsPrediction: H,
+						isCoinsPrediction: R,
 						option: e,
 						tokenBalance: b
 					}), t.a.createElement("div", {
@@ -1410,7 +1410,7 @@
 						className: ka.a.wagerSelectorButtonIcon
 					}))), K && t.a.createElement("div", {
 						className: ka.a.amountMessage
-					}, R && fa._("Insufficient coins", null, {
+					}, H && fa._("Insufficient coins", null, {
 						hk: "2Mo83P"
 					}), q && fa._("Insufficient tokens", null, {
 						hk: "2XAKK7"
@@ -1418,7 +1418,7 @@
 						hk: "1BpnPd"
 					}))), t.a.createElement("button", {
 						className: Object(s.a)(ka.a.predictButton, {
-							[ka.a.isDisabled]: !A && !D || R,
+							[ka.a.isDisabled]: !A && !D || H,
 							[ka.a.isCreatingVote]: k
 						}),
 						disabled: !A && !D || k || q,
@@ -1430,13 +1430,13 @@
 						}
 					}, k ? t.a.createElement(N.a, {
 						sizePx: 16
-					}) : R ? fa._("Get Coins", null, {
+					}) : H ? fa._("Get Coins", null, {
 						hk: "11KD6n"
 					}) : fa._("Let's do this!", null, {
 						hk: "342MNr"
 					})), t.a.createElement("div", {
 						className: ka.a.disclaimer
-					}, H && t.a.createElement(t.a.Fragment, null, fa._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [fa._param("=Predictions don’t offer an opportunity to win real money or prizes.", t.a.createElement("a", {
+					}, R && t.a.createElement(t.a.Fragment, null, fa._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [fa._param("=Predictions don’t offer an opportunity to win real money or prizes.", t.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/previews-terms",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -1647,10 +1647,10 @@
 				}) {
 					return t.a.createElement(t.a.Fragment, null, t.a.createElement("div", {
 						className: Na.a.header
-					}, t.a.createElement(R.q, {
+					}, t.a.createElement(H.q, {
 						className: Na.a.closeButton,
 						Icon: q.a,
-						priority: R.b.Plain,
+						priority: H.b.Plain,
 						onClick: r
 					}), t.a.createElement("h1", null, Ma._("Confirm Your Answer", null, {
 						hk: "4yIXaD"
@@ -1664,29 +1664,29 @@
 						hk: "3Nutvx"
 					})), t.a.createElement("div", {
 						className: Na.a.actions
-					}, t.a.createElement(R.l, {
+					}, t.a.createElement(H.l, {
 						disabled: a,
 						onClick: r,
-						priority: R.b.Secondary,
+						priority: H.b.Secondary,
 						redditStyle: !0,
-						size: R.c.S
+						size: H.c.S
 					}, Ma._("Cancel", null, {
 						hk: "4Gco5s"
-					})), t.a.createElement(R.i, {
+					})), t.a.createElement(H.i, {
 						className: Na.a.submitButton,
 						disabled: a,
 						onClick: () => {
 							x()
 						},
 						redditStyle: !0,
-						size: R.c.S
+						size: H.c.S
 					}, Ma._("Submit", null, {
 						hk: "ZLsi7"
 					})))))
 				})),
 				za = r("./src/config.ts"),
-				Ha = r("./node_modules/lottie-web/build/player/lottie.js"),
-				Ra = r.n(Ha);
+				Ra = r("./node_modules/lottie-web/build/player/lottie.js"),
+				Ha = r.n(Ra);
 
 			function qa(a) {
 				return new Promise(i => setTimeout(i, a))
@@ -1803,7 +1803,7 @@
 						}),
 						ref: a => {
 							if (a && !a.children.length) {
-								const i = Ra.a.loadAnimation({
+								const i = Ha.a.loadAnimation({
 									container: a,
 									renderer: "svg",
 									loop: !1,
@@ -1915,8 +1915,8 @@
 				isVoteAnimationEnabled: u.f,
 				prediction: A.g,
 				pollId: A.a,
-				post: D.D,
-				subredditOrProfile: D.P,
+				post: D.F,
+				subredditOrProfile: D.R,
 				userCoins: V.d,
 				userIsLoggedIn: V.J,
 				userId: V.ob
@@ -1924,7 +1924,7 @@
 				onPredictionResolve: h.j,
 				onPredictionVote: h.k,
 				showToast: d.f,
-				upvoteToggled: f.V
+				upvoteToggled: f.bb
 			}, hi = Object(c.t)({
 				isCommentsPage: c.w,
 				isPredictionsPage: c.L
@@ -1950,12 +1950,12 @@
 				var v;
 				const [S, T] = Object(x.useState)(!1), [_, O] = Object(x.useState)(null), [w, I] = Object(x.useState)(null), [N, M] = Object(x.useState)(!1), L = Object(G.a)(), z = Object(x.useCallback)(() => {
 					M(!1)
-				}, []), H = Object(x.useCallback)(() => {
+				}, []), R = Object(x.useCallback)(() => {
 					O(null), I(null)
 				}, []);
 				if (!u || !d || !A) return t.a.createElement(P, null);
 				const {
-					creatorId: R,
+					creatorId: H,
 					endsAt: q,
 					options: U,
 					resolvedOptionId: W,
@@ -1964,7 +1964,7 @@
 					tournamentId: Y,
 					userSelection: X,
 					userWonAmount: Z
-				} = d, Q = R === F, $ = q < Date.now(), aa = !m()(Y), ia = $ && Q && !W, ra = U.find(({
+				} = d, Q = H === F, $ = q < Date.now(), aa = !m()(Y), ia = $ && Q && !W, ra = U.find(({
 					id: a
 				}) => a === _), xa = r ? Object(s.a)(a, ri.a.container, ri.a.forCommentsPage, {
 					[ri.a.isEditing]: k
@@ -2023,8 +2023,8 @@
 				}))), !!ra && t.a.createElement(Ga, {
 					className: ri.a.modal,
 					isCreatingVote: S,
-					onOverlayClick: H,
-					onCancel: H,
+					onOverlayClick: R,
+					onCancel: R,
 					onPredict: async ({
 						coinPackage: a,
 						chipPackage: r
@@ -2079,8 +2079,8 @@
 				}), ia && w && t.a.createElement(La, {
 					isResolving: S,
 					isTokens: aa,
-					onOverlayClick: H,
-					onCancel: H,
+					onOverlayClick: R,
+					onCancel: R,
 					onResolve: async () => {
 						if (T(!0), !w) throw new Error("Failed to create prediction, missing selected option");
 						try {
@@ -2584,10 +2584,10 @@
 
 			function k(a, i) {
 				let r;
-				r = Object(t.t)(a);
+				r = Object(t.v)(a);
 				const [k, n] = Object(x.useState)(null != r ? r : i);
 				return [k, function(i) {
-					Object(t.nb)(a, i), n(i)
+					Object(t.rb)(a, i), n(i)
 				}]
 			}
 		},
@@ -2771,4 +2771,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1667a1ecd797d908a011.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f6e5cbdb2ad8c3773b39.js.map

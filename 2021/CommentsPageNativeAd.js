@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.77a560329be841b5f1b8.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.0babac990b6cff0794d7.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -21,8 +21,8 @@
 				p = s("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
 				u = s("./src/reddit/components/ExpandoButton/index.tsx"),
 				x = s("./src/reddit/components/Flatlist/index.tsx"),
-				h = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				b = s("./src/reddit/components/ModModeReports/index.tsx"),
+				b = s("./src/reddit/components/JSAPIContainers/index.tsx"),
+				h = s("./src/reddit/components/ModModeReports/index.tsx"),
 				P = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				O = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				C = s("./src/reddit/components/PostContainer/index.tsx"),
@@ -98,7 +98,7 @@
 						toggleCheckbox: le,
 						userIsOp: me,
 						shouldShowGalleryTileOption: pe
-					} = this.props, ue = re ? void 0 : w, xe = this.props.crosspost || void 0, he = Object(M.a)(Y), be = Object(I.a)(Y), Pe = Object(L.a)(Y), Oe = q && M.a, Ce = !!se.media && se.media.type === N.o.RTJSON, Ee = me && Ce, fe = i && !ce, ye = !!se.media && Object(N.G)(se.media), ve = {
+					} = this.props, ue = re ? void 0 : w, xe = this.props.crosspost || void 0, be = Object(M.a)(Y), he = Object(I.a)(Y), Pe = Object(L.a)(Y), Oe = q && M.a, Ce = !!se.media && se.media.type === N.o.RTJSON, Ee = me && Ce, fe = i && !ce, ye = !!se.media && Object(N.G)(se.media), ve = {
 						flairStyleTemplate: ue,
 						post: se,
 						inSubredditOrProfile: i,
@@ -172,7 +172,7 @@
 						source: se.source
 					}, Object(c.a)(se))), r.a.createElement(f.a, U({
 						key: "PostMeta"
-					}, ve)), q && he && Object(P.c)(se) && r.a.createElement(b.a, {
+					}, ve)), q && be && Object(P.c)(se) && r.a.createElement(h.a, {
 						onIgnoreReports: $,
 						reportable: se
 					}), se.isSponsored && ke && ke.url && r.a.createElement(d.a, {
@@ -199,8 +199,8 @@
 					}), r.a.createElement(x.c, {
 						className: V.a.flatlist,
 						currentUser: t,
-						hasModFlairPerms: be,
-						hasModPostPerms: he,
+						hasModFlairPerms: he,
+						hasModPostPerms: be,
 						hasModFullPerms: Pe,
 						hostPostId: R,
 						isActionBarAnimationEnabled: F,
@@ -218,7 +218,7 @@
 							hide: !Oe,
 							report: !Oe
 						})
-					})), r.a.createElement(h.d, null))), z(se, ae, o, pe, H)));
+					})), r.a.createElement(b.d, null))), z(se, ae, o, pe, H)));
 					return r.a.createElement(S.b, null, Se)
 				}
 			}
@@ -287,8 +287,8 @@
 				p = s("./src/lib/permalinkToOverlayLocation/index.ts"),
 				u = s("./src/reddit/actions/profile/index.ts"),
 				x = s("./src/reddit/components/AdLinkWrapper/index.tsx"),
-				h = s("./src/reddit/components/BlankPost/index.tsx"),
-				b = s("./src/reddit/components/CallToActionButton/index.tsx"),
+				b = s("./src/reddit/components/BlankPost/index.tsx"),
+				h = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				P = s("./src/reddit/components/ClassicPost/index.tsx"),
 				O = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				C = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
@@ -473,7 +473,7 @@
 						redditStyle: i,
 						scrollerItemRef: c
 					} = this.props;
-					return n.isBlank ? a.a.createElement(h.default, {
+					return n.isBlank ? a.a.createElement(b.default, {
 						postId: n.id
 					}) : a.a.createElement("div", null, a.a.createElement("div", {
 						className: T.a.commentsSpacer
@@ -509,7 +509,7 @@
 						isCommentsPageAd: !0
 					}), n.permalink && a.a.createElement(x.a, {
 						className: T.a.adLinkWrapper
-					}, this.checkCommentsActive(), n.callToAction && n.source && n.source.url && a.a.createElement(b.a, {
+					}, this.checkCommentsActive(), n.callToAction && n.source && n.source.url && a.a.createElement(h.a, {
 						href: n.source.url.replace(d.a.redditUrl, ""),
 						isSponsored: n.isSponsored,
 						source: n.source
@@ -586,17 +586,17 @@
 				p = s("./src/reddit/selectors/chatPost.ts"),
 				u = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				x = s("./src/reddit/selectors/postFlair.ts"),
-				h = s("./src/reddit/selectors/posts.ts"),
-				b = s("./src/reddit/selectors/user.ts");
+				b = s("./src/reddit/selectors/posts.ts"),
+				h = s("./src/reddit/selectors/user.ts");
 			const P = {
-					autoplayPref: b.b,
+					autoplayPref: h.b,
 					activeModalId: m.a,
-					crosspost: h.d,
-					isActive: h.j,
+					crosspost: b.d,
+					isActive: b.j,
 					isChatPost: p.d,
-					isCurrentUserProfilePost: h.k,
-					isExpanded: h.l,
-					isLoggedIn: b.J,
+					isCurrentUserProfilePost: b.k,
+					isExpanded: b.l,
+					isLoggedIn: h.J,
 					moderatorPermissions: u.j,
 					modModeEnabled: d.Q,
 					poll: (e, t) => {
@@ -611,10 +611,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const o = s === i.a.upvoted ? Object(a.V)(t) : Object(a.r)(t);
+						const o = s === i.a.upvoted ? Object(a.bb)(t) : Object(a.u)(t);
 						e(o)
 					},
-					onIgnoreReports: () => e(Object(a.S)(t)),
+					onIgnoreReports: () => e(Object(a.X)(t)),
 					onOpenReportsDropdown: t => e(Object(n.h)({
 						tooltipId: t
 					}))
@@ -677,9 +677,9 @@
 			})), s.d(t, "c", (function() {
 				return u
 			})), s.d(t, "b", (function() {
-				return h
-			})), s.d(t, "a", (function() {
 				return b
+			})), s.d(t, "a", (function() {
+				return h
 			})), s.d(t, "d", (function() {
 				return P
 			}));
@@ -707,10 +707,10 @@
 					}
 				},
 				x = e => Object(o.l)(.2, e),
-				h = e => e && e.postBackgroundColor ? {
+				b = e => e && e.postBackgroundColor ? {
 					backgroundColor: x(e.postBackgroundColor)
 				} : m,
-				b = e => e.isActive ? l.a.mIsActive : void 0,
+				h = e => e.isActive ? l.a.mIsActive : void 0,
 				P = e => {
 					const t = Object(a.a)(Object(r.a)(e), n.a.actionIcon, n.b.actionIcon);
 					return {
@@ -722,4 +722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.77a560329be841b5f1b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.0babac990b6cff0794d7.js.map

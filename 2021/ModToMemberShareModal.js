@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.a36f0675d4037542164e.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.97b709fff01d3a41840b.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -60,7 +60,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				_ = s.n(x);
-			const f = Object(a.a)(e => e, b.D, b.d, (e, t, s) => {
+			const f = Object(a.a)(e => e, b.F, b.d, (e, t, s) => {
 					return {
 						crosspost: s,
 						post: t,
@@ -196,8 +196,8 @@
 				O = s.n(P);
 			const j = 400,
 				v = Object(a.c)({
-					post: N.r,
-					subreddit: N.s
+					post: N.t,
+					subreddit: N.u
 				}),
 				F = Object(i.b)(v, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
@@ -457,4 +457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.a36f0675d4037542164e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.97b709fff01d3a41840b.js.map

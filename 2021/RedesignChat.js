@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.c0c4bd32adfef6fac531.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.7629f4c6575d7a937f4f.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -54,10 +54,10 @@
 				N = n.n(v);
 			const {
 				embed: w,
-				hidden: T
+				hidden: R
 			} = y.b;
 
-			function R(e) {
+			function T(e) {
 				return void 0 !== e ? e : -1
 			}
 			const A = C.a.wrapped(e => x.a.createElement("div", {
@@ -66,15 +66,15 @@
 				D = C.a.wrapped(e => x.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${R(w.width)}px`,
-						height: `${R(w.height)}px`
+						width: `${T(w.width)}px`,
+						height: `${T(w.height)}px`
 					}
 				}, e.children), "EmbedPortalContainer", N.a),
 				P = C.a.wrapped(e => x.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${R(T.width)}px`,
-						height: `${R(T.height)}px`
+						width: `${T(R.width)}px`,
+						height: `${T(R.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
 				M = C.a.wrapped(E.a, "MinimizedRedesignPortalContainer", N.a),
@@ -110,8 +110,8 @@
 				H = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				$ = n("./src/chat/customMiddleware/title.ts"),
 				Q = n("./src/chat/customMiddleware/tokenRefresher.ts"),
-				V = n("./src/chat/customMiddleware/tracking.ts"),
-				Y = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
+				Y = n("./src/chat/customMiddleware/tracking.ts"),
+				V = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
 				J = n("./node_modules/lodash/uniqueId.js"),
 				K = n.n(J),
 				W = n("./src/chat/constants/theme.ts"),
@@ -236,7 +236,7 @@
 						routes: ue.a,
 						apiContext: le.apiContext,
 						gqlContext: be.gqlContext
-					}), le.middleware, Q.a, H.a, z.a, F.a, Object(V.a)(t), q.a, L.a, Y.a, G.a, $.a],
+					}), le.middleware, Q.a, H.a, z.a, F.a, Object(Y.a)(t), q.a, L.a, V.a, G.a, $.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -747,11 +747,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.ac,
+					experimentName: c.dc,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.I)(e) || Object(i.J)(e),
-				u = Object(s.a)(o, e => e === c.fc.Enabled)
+				u = Object(s.a)(o, e => e === c.ic.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -771,26 +771,26 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(i.I)(e) || Object(i.J)(e),
 				d = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.T,
-					experimentEligibilitySelector: o
-				}), a.a),
-				u = Object(s.a)(d, e => e === c.ic.Enabled),
-				l = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.cc,
-					experimentEligibilitySelector: o
-				}), a.a),
-				b = Object(s.a)(u, l, (e, t) => e && t === c.hc.Enabled),
-				m = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.bc,
-					experimentEligibilitySelector: o
-				}), a.a),
-				h = Object(s.a)(m, e => e === c.gc.Enabled),
-				p = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.V,
 					experimentEligibilitySelector: o
 				}), a.a),
-				f = Object(s.a)(u, p, (e, t) => e && t === c.eb.Enabled)
+				u = Object(s.a)(d, e => e === c.lc.Enabled),
+				l = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.fc,
+					experimentEligibilitySelector: o
+				}), a.a),
+				b = Object(s.a)(u, l, (e, t) => e && t === c.kc.Enabled),
+				m = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.ec,
+					experimentEligibilitySelector: o
+				}), a.a),
+				h = Object(s.a)(m, e => e === c.jc.Enabled),
+				p = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.Y,
+					experimentEligibilitySelector: o
+				}), a.a),
+				f = Object(s.a)(u, p, (e, t) => e && t === c.hb.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c0c4bd32adfef6fac531.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.7629f4c6575d7a937f4f.js.map

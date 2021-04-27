@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.00e78a30a2042e4c645c.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.17796e084e3828444389.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -570,7 +570,7 @@
 							if (!a.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(v({
 								awards: a.awards
-							})), e(Object(m.w)())
+							})), e(Object(m.z)())
 						}
 					} catch (u) {
 						Object(r.b)() || console.error(u), e(Object(l.f)({
@@ -1343,7 +1343,7 @@
 				F = a("./src/reddit/controls/Button/index.tsx"),
 				V = a("./src/reddit/icons/svgs/Coin/index.tsx"),
 				B = a("./src/reddit/icons/svgs/Stamp/index.tsx");
-			var q = e => {
+			var z = e => {
 					const {
 						className: t,
 						coinPackage: a,
@@ -1404,7 +1404,7 @@
 						className: R.a.priceCrossout
 					}, `$${i/100}`))))
 				},
-				z = a("./src/reddit/helpers/styles/mixins/loading.ts"),
+				q = a("./src/reddit/helpers/styles/mixins/loading.ts"),
 				U = a("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
 				Y = a.n(U);
 			var H = ({
@@ -1413,7 +1413,7 @@
 					...a
 				}) => {
 					const n = t ? Y.a.large : "",
-						r = Object(z.b)(a);
+						r = Object(q.b)(a);
 					return o.a.createElement("div", {
 						className: Object(D.a)(r, Y.a.packagePlaceholder, n, e)
 					})
@@ -1696,7 +1696,7 @@
 						isLargeView: 0 === e,
 						isLoading: !0,
 						key: e
-					})) : e.map(e => o.a.createElement(q, {
+					})) : e.map(e => o.a.createElement(z, {
 						className: C.a.purchasePackage,
 						coinPackage: e,
 						isLargeView: e.featured,
@@ -1732,4 +1732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.00e78a30a2042e4c645c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.17796e084e3828444389.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.dbd32332f2058b9b099a.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.84851ab22838b48eeca2.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -173,7 +173,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.j)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.J)(), this.setLocalStorageDisabled = Object(u.ib)()
+					}, this.getLocalStorageDisabled = Object(u.L)(), this.setLocalStorageDisabled = Object(u.kb)()
 				}
 				componentDidMount() {
 					const {
@@ -232,14 +232,14 @@
 				O = s("./src/reddit/components/PostContainer/index.tsx"),
 				f = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				g = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				j = s("./src/reddit/constants/posts.ts"),
-				k = s("./src/reddit/selectors/posts.ts"),
+				k = s("./src/reddit/constants/posts.ts"),
+				j = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
 				N = s.n(P);
 			const D = e => `${e}--FocusedVerticalRecommendationItem`,
 				T = Object(o.c)({
-					post: k.D,
-					subreddit: k.P
+					post: j.F,
+					subreddit: j.R
 				});
 			class B extends r.a.Component {
 				constructor() {
@@ -316,7 +316,7 @@
 					}, r.a.createElement(g.a, {
 						identifier: {
 							name: i.name,
-							type: j.a.SUBREDDIT
+							type: k.a.SUBREDDIT
 						},
 						postId: e.id,
 						shouldReverseColor: !0,
@@ -327,7 +327,7 @@
 						doNotHideOtherSubscribeButtons: !0,
 						identifier: {
 							name: i.name,
-							type: j.a.SUBREDDIT
+							type: k.a.SUBREDDIT
 						},
 						postId: e.id,
 						small: !0
@@ -352,7 +352,7 @@
 					onPostClick: t => {
 						e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(Object(I.E)({
+						})), e(Object(I.I)({
 							postOrComment: t
 						}))
 					}
@@ -361,8 +361,8 @@
 				F = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
 				w = s.n(F);
 			const {
-				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), R = Object(o.c)({
+				fbt: R
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = Object(o.c)({
 				isFeatureFlag: m.d,
 				isPending: m.e,
 				subredditData: (e, {
@@ -371,7 +371,7 @@
 				topPostIds: (e, {
 					numInstance: t
 				}) => Object(m.k)(e, t)
-			}), V = Object(i.b)(R);
+			}), V = Object(i.b)(A);
 			class M extends r.a.PureComponent {
 				render() {
 					const {
@@ -406,7 +406,7 @@
 						pubsub: c
 					}), r.a.createElement("div", {
 						className: w.a.topPostsTitle
-					}, A._("Top post", null, {
+					}, R._("Top post", null, {
 						hk: "3BdOuj"
 					})), d.slice(0, 1).map(e => r.a.createElement(L, {
 						key: e,
@@ -1279,4 +1279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.dbd32332f2058b9b099a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.84851ab22838b48eeca2.js.map

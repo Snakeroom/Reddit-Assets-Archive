@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3aa1cc669f1e745516f3.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.d66df530df823c83b961.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1973,14 +1973,14 @@
 						flair: q,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: he
-					})), Object(G.m)(b.author) ? n.a.createElement(ne, {
+					})), Object(G.n)(b.author) ? n.a.createElement(ne, {
 						post: b,
 						isDeleted: !0,
 						renderContractorBadge: me,
 						style: {
 							color: ee(e)
 						}
-					}) : n.a.createElement(s.Fragment, null, !Object(G.m)(b.author) && n.a.createElement(x.b, {
+					}) : n.a.createElement(s.Fragment, null, !Object(G.n)(b.author) && n.a.createElement(x.b, {
 						className: K.a.badge,
 						subredditId: H,
 						uniqueIdentifier: `${b.id}-${d}`,
@@ -1989,7 +1989,7 @@
 						postOrComment: b,
 						tooltipType: B
 					}, n.a.createElement(O.b, {
-						ignore: Object(G.m)(b.author) || !!b.distinguishType && b.distinguishType !== i.C.NONE,
+						ignore: Object(G.n)(b.author) || !!b.distinguishType && b.distinguishType !== i.C.NONE,
 						subredditId: H,
 						userId: b.authorId
 					}, n.a.createElement(ne, {
@@ -2022,7 +2022,7 @@
 						flair: q,
 						forceSmallEmojis: !0,
 						usesCommunityStyles: he
-					})), b.belongsTo.type === k.a.SUBREDDIT && !Object(G.m)(b.author) && n.a.createElement(y.a, {
+					})), b.belongsTo.type === k.a.SUBREDDIT && !Object(G.n)(b.author) && n.a.createElement(y.a, {
 						className: K.a.publicWallet,
 						contentId: b.id,
 						metaSeparator: n.a.createElement(be, null),
@@ -3201,15 +3201,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.wb
+						experimentName: s.zb
 					});
-					return !(!t || Object(s.td)(t))
+					return !(!t || Object(s.xd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.wb
-					}) === s.Mb.ListingEnabled
+						experimentName: s.zb
+					}) === s.Pb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3233,4 +3233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3aa1cc669f1e745516f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.d66df530df823c83b961.js.map

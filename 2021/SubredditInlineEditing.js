@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.1cda9fc8f33f8f3abf1c.js
-// Retrieved at 4/22/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.758065a6dd7641628f3a.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -81,10 +81,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(d.i)()), Object(u.kb)()
+					e(Object(d.i)()), Object(u.ob)()
 				},
 				onViewTooltip: () => {
-					Object(u.Cb)()
+					Object(u.Gb)()
 				}
 			}))(Object(p.c)(g));
 			const T = "editable-primary-topic-idcard";
@@ -153,7 +153,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(u.q)()
+						tooltipDismissed: Object(u.s)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -738,8 +738,8 @@
 				P = s("./src/reddit/selectors/activeModalId.ts"),
 				R = s("./src/reddit/selectors/experiments/coreStyles.ts"),
 				N = s("./src/reddit/selectors/tags.ts"),
-				k = s("./src/reddit/constants/colors.ts"),
-				B = s("./src/reddit/selectors/tooltip.ts"),
+				B = s("./src/reddit/constants/colors.ts"),
+				k = s("./src/reddit/selectors/tooltip.ts"),
 				M = s("./node_modules/uuid/v4.js"),
 				F = s.n(M),
 				L = s("./src/reddit/components/ContentTooltip/index.tsx"),
@@ -749,15 +749,15 @@
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), G = Object(r.c)({
-				activeTooltipId: B.a
+				activeTooltipId: k.a
 			}), W = Object(i.b)(G, e => ({
 				onHideTooltip: () => e(Object(l.i)()),
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
 			})), V = "inline-editing-topics-tooltip-", q = {
-				top: k.b.alienblue,
-				bottom: k.b.alienblue
+				top: B.b.alienblue,
+				bottom: B.b.alienblue
 			};
 			class X extends o.a.Component {
 				constructor(e) {
@@ -1625,4 +1625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.1cda9fc8f33f8f3abf1c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.758065a6dd7641628f3a.js.map

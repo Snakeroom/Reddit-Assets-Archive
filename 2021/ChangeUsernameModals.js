@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c69bee38903c2381ecef.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.793ce39f14e9fc22cce1.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -266,8 +266,8 @@
 			}
 			var z = Object(E.b)(Y),
 				Z = n("./src/reddit/icons/svgs/Question/index.tsx"),
-				W = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
-			var q = e => (Object(a.useEffect)(e.onView, []), o.a.createElement(I.a, {
+				q = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
+			var W = e => (Object(a.useEffect)(e.onView, []), o.a.createElement(I.a, {
 					bodyClassName: R.a.confirmModalBody,
 					className: Object(A.a)(R.a.confirmModalContainer, {
 						[R.a["m-responsive"]]: e.isResponsive
@@ -277,7 +277,7 @@
 						[R.a.saveDescription]: e.isSaveConfirm
 					}),
 					headerClassName: R.a.confirmModalHeader,
-					icon: e.isSecondConfirm ? o.a.createElement(Z.a, null) : o.a.createElement(W.a, null),
+					icon: e.isSecondConfirm ? o.a.createElement(Z.a, null) : o.a.createElement(q.a, null),
 					iconClassName: Object(A.a)(R.a.confirmModalIcon, {
 						[R.a.questionIcon]: e.isSecondConfirm
 					}),
@@ -388,7 +388,7 @@
 					}))(e(), f);
 					t.ok ? (h(f, C), U(Object(X.j)())) : p(ie(t.error)), N(!1)
 				}, [e, C, U, p, h, f]);
-				return o.a.createElement(a.Fragment, null, m && o.a.createElement(q, {
+				return o.a.createElement(a.Fragment, null, m && o.a.createElement(W, {
 					description: s.fbt._("Before continuing, confirm that you want to keep this as your Reddit username.", null, {
 						hk: "14rKrO"
 					}),
@@ -405,7 +405,7 @@
 					primaryButtonText: ne,
 					secondaryButtonText: se,
 					username: f
-				}), A && o.a.createElement(q, {
+				}), A && o.a.createElement(W, {
 					description: s.fbt._("Ok, just to confirm your confirmation… Are you absolutely sure? This will be your name forever.", null, {
 						hk: "4lvkUG"
 					}),
@@ -443,7 +443,7 @@
 						hk: "17XB7v"
 					}),
 					username: f
-				}), i && o.a.createElement(q, {
+				}), i && o.a.createElement(W, {
 					description: s.fbt._("Are you sure? This will be your username forever.", null, {
 						hk: "3JACTO"
 					}),
@@ -664,8 +664,8 @@
 				A = e => {
 					if (!e) return a.UNKNOWN;
 					switch (e.type) {
-						case o.p:
-						case o.j:
+						case o.q:
+						case o.k:
 							return a.COMMENT;
 						case r.c:
 							if (e.payload === i.a.MULTIREDDIT_ADD_SUBREDDIT || e.payload === i.a.MULTIREDDIT_CREATE) return a.CUSTOM_FEED;
@@ -821,4 +821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c69bee38903c2381ecef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.793ce39f14e9fc22cce1.js.map

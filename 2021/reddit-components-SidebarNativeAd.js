@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.86d6b1e59ea9de65d95e.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.26d6390fdfc313a40c62.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1768,7 +1768,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(s.a)(r)) {
-						const e = Object(p.D)(a, {
+						const e = Object(p.F)(a, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -2668,7 +2668,7 @@
 			}
 			const J = Object(i.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, r) => {
-					e(Object(b.u)(t, r))
+					e(Object(b.x)(t, r))
 				},
 				refreshSidebarPromotedPost: () => {
 					const {
@@ -4135,7 +4135,7 @@
 				}) => {
 					const s = Object(c.c)(e),
 						a = d.find(e => e >= r),
-						l = n ? Object(i.D)(e, {
+						l = n ? Object(i.F)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -4353,4 +4353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.86d6b1e59ea9de65d95e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.26d6390fdfc313a40c62.js.map

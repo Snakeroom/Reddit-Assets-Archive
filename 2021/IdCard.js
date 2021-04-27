@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.2050c4f42f07debc2930.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.8d2a3fab57ada23937a8.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2730,10 +2730,10 @@
 				Je = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ke = Object(u.a)(R.J, R.I, (e, t) => !e && !t),
 				Ye = e => Object(Je.b)(e, {
-					experimentName: Ve.Y,
+					experimentName: Ve.bb,
 					experimentEligibilitySelector: Ke,
 					expEventOverride: !1
-				}) === Ve.gb.Enabled;
+				}) === Ve.jb.Enabled;
 			var Xe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				Qe = n("./src/reddit/selectors/structuredStyles.ts"),
 				Ze = n("./src/reddit/selectors/subscriptions.ts"),
@@ -2954,7 +2954,7 @@
 					showCreatePollButton: e => (e => Object(Je.c)(e, {
 						experimentEligibilitySelector: Je.a,
 						experimentName: Ve.A
-					}) === Ve.G.Treatment)(e) && !Object(Re.g)(),
+					}) === Ve.H.Treatment)(e) && !Object(Re.g)(),
 					subreddit: (e, t) => Object(re.A)(e, {
 						subredditName: t.listingName
 					}),
@@ -5180,9 +5180,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.dc.Enabled === Object(r.c)(e, {
+			const i = e => s.gc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Yb
+				experimentName: s.bc
 			})
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
@@ -5256,4 +5256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.2050c4f42f07debc2930.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8d2a3fab57ada23937a8.js.map

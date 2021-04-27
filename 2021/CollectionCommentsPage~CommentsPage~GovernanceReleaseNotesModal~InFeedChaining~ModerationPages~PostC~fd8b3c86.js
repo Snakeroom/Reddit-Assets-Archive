@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.769df039ff715f3bc5b9.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.03bf588718cc0e18a7d2.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.lc
+					experimentName: u.oc
 				});
-				return Object(u.td)(t) ? void 0 : t
+				return Object(u.xd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.mc
+					experimentName: u.pc
 				});
-				return Object(u.td)(t) ? void 0 : t
-			}, (e, t) => e === u.nc.Enabled && t === u.nc.Enabled);
+				return Object(u.xd)(t) ? void 0 : t
+			}, (e, t) => e === u.qc.Enabled && t === u.qc.Enabled);
 			var p = s("./src/config.ts");
 			var g = s("./src/reddit/selectors/user.ts");
 			const b = e => {
@@ -556,7 +556,7 @@
 						}))
 					}, [t, A]),
 					se = Object(i.useCallback)(() => {
-						t(Object(f.u)(P, E.a.GalleryItemImpression))
+						t(Object(f.x)(P, E.a.GalleryItemImpression))
 					}, [t, P]),
 					ie = Object(i.useCallback)(() => {
 						t(Object(x.i)({
@@ -775,7 +775,7 @@
 				}
 			}
 			var p = Object(d.b)(null, e => ({
-				onLoadRichTextContentIfNeeded: t => e(Object(l.t)(t))
+				onLoadRichTextContentIfNeeded: t => e(Object(l.w)(t))
 			}))(h);
 
 			function g() {
@@ -1090,7 +1090,7 @@
 					subredditOrProfileDisplayText: (e, t) => Object($.k)(e, t),
 					subredditOrProfile: (e, {
 						post: t
-					}) => Object(q.P)(e, {
+					}) => Object(q.R)(e, {
 						postId: t.id
 					}),
 					isEditing: (e, {
@@ -1256,7 +1256,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === V.ec.OCR ? o += `${oe}${t}` : s.title && (o += `${oe}${s.title}`), e === V.ec.ShortPostTitleOCR && (o += `${oe}${t}`), o.length > ne ? Object(v.a)(o, ne, h.bb) : o
+					return i && (o += i), e === V.hc.OCR ? o += `${oe}${t}` : s.title && (o += `${oe}${s.title}`), e === V.hc.ShortPostTitleOCR && (o += `${oe}${t}`), o.length > ne ? Object(v.a)(o, ne, h.bb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(Y.j, this.state.viewportHeight),
@@ -1926,7 +1926,7 @@
 					const s = Object(o.a)(e, {
 						commentId: t
 					});
-					return s && s.commentType === i.a.Prediction && d(e, s) || null
+					return s && s.commentType === i.b.Prediction && d(e, s) || null
 				},
 				c = (e, {
 					postId: t
@@ -1955,4 +1955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.769df039ff715f3bc5b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.03bf588718cc0e18a7d2.js.map

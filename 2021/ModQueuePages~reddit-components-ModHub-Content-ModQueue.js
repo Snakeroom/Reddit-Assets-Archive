@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.be9e40449726575556f4.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.40b1f3e154d7835448f2.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -838,7 +838,7 @@
 					flairData: et.d,
 					isApiPending: Ce.a,
 					moderatorPermissions: Ye.k,
-					posts: tt.G,
+					posts: tt.I,
 					selectedItems: Ce.g
 				}),
 				Pt = Object(d.b)(It, e => ({
@@ -1020,8 +1020,8 @@
 					bulkUnselectItems: t => e(Object(u.c)({
 						ids: t
 					})),
-					fireAdPixelsOfType: (t, s) => e(Object(h.u)(t, s)),
-					openPost: t => e(Object(h.E)(t))
+					fireAdPixelsOfType: (t, s) => e(Object(h.x)(t, s)),
+					openPost: t => e(Object(h.I)(t))
 				})),
 				Dt = e => e.page ? parseInt(e.page, 10) : fe.b,
 				Vt = e => Dt(e) + 1,
@@ -2151,4 +2151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.be9e40449726575556f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.40b1f3e154d7835448f2.js.map

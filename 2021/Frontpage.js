@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fa9895fbc90900de6403.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b780c47d109db06e02a2.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage", "FrontpageSidebar"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -435,9 +435,9 @@
 									} = e;
 									s && s.type === v.a.Post && s.postInfo && d(s.postInfo);
 									let n = t.id;
-									if (Object(v.k)(e)) c.profiles[e.profile.id] || (c.profiles[e.profile.id] = Object(j.a)(e.profile));
-									else if (Object(v.l)(e)) c.subreddits[e.subreddit.id] || (c.subreddits[e.subreddit.id] = Object(N.a)(e.subreddit)), c.postFlair[e.subreddit.id] || (c.postFlair[e.subreddit.id] = Object(k.a)(e.subreddit));
-									else if (Object(v.g)(e)) {
+									if (Object(v.l)(e)) c.profiles[e.profile.id] || (c.profiles[e.profile.id] = Object(j.a)(e.profile));
+									else if (Object(v.m)(e)) c.subreddits[e.subreddit.id] || (c.subreddits[e.subreddit.id] = Object(N.a)(e.subreddit)), c.postFlair[e.subreddit.id] || (c.postFlair[e.subreddit.id] = Object(k.a)(e.subreddit));
+									else if (Object(v.h)(e)) {
 										const s = Object(E.b)(e);
 										if (!s) return null;
 										n = s, c.posts[s] = {
@@ -458,7 +458,7 @@
 							for (const {
 									node: p
 								} of s.elements.edges)
-								if (Object(v.j)(p)) {
+								if (Object(v.k)(p)) {
 									const e = d(p);
 									e && c.postIds.push(e)
 								} else if (Object(_.c)(p) && !a) a = p;
@@ -575,7 +575,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(H.d)(m, {
-								experimentName: l.qc
+								experimentName: l.tc
 							});
 							s(Object(a.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -705,7 +705,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(H.d)(r, {
-										experimentName: l.qc
+										experimentName: l.tc
 									});
 									t(Object(a.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1391,13 +1391,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ie.cachedData || Object(z.t)(H.a.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ie.cachedData || Object(z.v)(H.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ne) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(z.nb)(H.a.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(z.rb)(H.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ie.cachedData = e, e ? e.subreddits : []
 				}
@@ -1456,7 +1456,7 @@
 				ge = s("./src/lib/lessComponent.tsx");
 			const fe = Object(l.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink)),
-					clearLinks: () => e(Object(ce.o)())
+					clearLinks: () => e(Object(ce.r)())
 				})),
 				ye = ge.a.button("ClearButton", he.a);
 			class xe extends d.a.Component {
@@ -1477,7 +1477,7 @@
 			var _e = fe(xe),
 				ve = s("./src/reddit/selectors/posts.ts");
 			const ke = Object(u.c)({
-				recentPosts: ve.M
+				recentPosts: ve.O
 			});
 			var Ee = Object(l.b)(ke, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink))
@@ -1828,8 +1828,8 @@
 						return (!t || !s) && (!Object(et.b)(e) && function(e) {
 							return Object(Je.c)(e, {
 								experimentEligibilitySelector: $e.J,
-								experimentName: Me.X
-							}) === Me.Jb
+								experimentName: Me.ab
+							}) === Me.Mb
 						}(e))
 					}
 				}),
@@ -2052,7 +2052,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts"),
 				g = s("./src/reddit/components/MiniPost/index.m.less"),
 				f = s.n(g);
-			const y = Object(a.a)(e => e, b.D, b.d, (e, t, s) => {
+			const y = Object(a.a)(e => e, b.F, b.d, (e, t, s) => {
 					return {
 						crosspost: s,
 						post: t,
@@ -2967,7 +2967,7 @@
 				d = s("./src/reddit/selectors/platform.ts"),
 				l = s("./src/reddit/selectors/posts.ts");
 			const u = Object(o.c)({
-					postCount: l.I,
+					postCount: l.K,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -5269,8 +5269,8 @@
 			const a = e => r.e[Object(i.O)(e, {})] === r.d.Card,
 				c = e => Object(o.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: n.L
-				}) === n.ab.Treatment
+					experimentName: n.M
+				}) === n.db.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
 			"use strict";
@@ -5309,4 +5309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fa9895fbc90900de6403.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b780c47d109db06e02a2.js.map

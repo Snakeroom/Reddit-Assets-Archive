@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2439565fbcc9d9b5ff93.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ad38d6ae635ba367b4f4.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -107,7 +107,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(n)) {
-						const e = Object(m.D)(c, {
+						const e = Object(m.F)(c, {
 							postId: n
 						});
 						e && (b = e.belongsTo.id)
@@ -1805,122 +1805,133 @@
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
-				return o
-			})), n.d(t, "i", (function() {
+			n.d(t, "i", (function() {
 				return a
-			})), n.d(t, "a", (function() {
-				return c
-			})), n.d(t, "d", (function() {
-				return i
-			})), n.d(t, "b", (function() {
-				return d
-			})), n.d(t, "c", (function() {
-				return l
-			})), n.d(t, "e", (function() {
-				return u
 			})), n.d(t, "j", (function() {
-				return m
-			})), n.d(t, "g", (function() {
-				return p
+				return c
+			})), n.d(t, "a", (function() {
+				return i
 			})), n.d(t, "f", (function() {
-				return f
+				return d
+			})), n.d(t, "d", (function() {
+				return l
+			})), n.d(t, "b", (function() {
+				return u
+			})), n.d(t, "c", (function() {
+				return m
+			})), n.d(t, "e", (function() {
+				return p
 			})), n.d(t, "k", (function() {
+				return f
+			})), n.d(t, "h", (function() {
 				return b
+			})), n.d(t, "g", (function() {
+				return h
+			})), n.d(t, "l", (function() {
+				return v
 			}));
-			var r = n("./src/reddit/selectors/telemetry.ts");
-			const s = e => ({
-					screen: Object(r.screen)(e),
-					profile: Object(r.profile)(e),
-					subreddit: Object(r.subreddit)(e),
-					userSubreddit: Object(r.userSubreddit)(e)
+			var r = n("./src/reddit/constants/tracking.ts"),
+				s = n("./src/reddit/selectors/telemetry.ts");
+			const o = e => ({
+					screen: Object(s.screen)(e),
+					profile: Object(s.profile)(e),
+					subreddit: Object(s.subreddit)(e),
+					userSubreddit: Object(s.userSubreddit)(e)
 				}),
-				o = e => t => ({
+				a = e => t => ({
 					source: "nav",
 					action: "click",
 					noun: e ? "mod_mode_on" : "mod_mode_off",
-					...s(t)
+					...o(t)
 				}),
-				a = (e, t) => n => ({
+				c = (e, t) => n => ({
 					source: "post_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.post)(n, t),
-					...s(n)
+					post: Object(s.post)(n, t),
+					...o(n)
 				}),
-				c = (e, t) => n => ({
+				i = (e, t) => n => ({
 					source: "comment",
 					action: "click",
 					noun: e,
-					post: Object(r.post)(n, t),
-					comment: Object(r.comment)(n, t),
-					...s(n)
+					post: Object(s.post)(n, t),
+					comment: Object(s.comment)(n, t),
+					...o(n)
 				}),
-				i = (e, t) => n => ({
+				d = (e, t) => n => ({
+					source: "comment",
+					action: r.c.UNDO,
+					noun: e,
+					post: Object(s.post)(n, t),
+					comment: Object(s.comment)(n, t),
+					...o(n)
+				}),
+				l = (e, t) => n => ({
 					source: "comment_overflow_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.post)(n, t),
-					comment: Object(r.comment)(n, t),
-					...s(n)
+					post: Object(s.post)(n, t),
+					comment: Object(s.comment)(n, t),
+					...o(n)
 				}),
-				d = (e, t) => n => ({
+				u = (e, t) => n => ({
 					source: "mod_distinguish_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.post)(n, t),
-					comment: Object(r.comment)(n, t),
-					...s(n)
+					post: Object(s.post)(n, t),
+					comment: Object(s.comment)(n, t),
+					...o(n)
 				}),
-				l = (e, t) => n => ({
+				m = (e, t) => n => ({
 					source: "comment_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.post)(n, t),
-					comment: Object(r.comment)(n, t),
-					...s(n)
+					post: Object(s.post)(n, t),
+					comment: Object(s.comment)(n, t),
+					...o(n)
 				}),
-				u = (e, t) => n => ({
+				p = (e, t) => n => ({
 					source: "comment_report_menu",
 					action: "click",
 					noun: e,
-					comment: Object(r.comment)(n, t),
-					post: Object(r.post)(n, t),
-					...s(n)
+					comment: Object(s.comment)(n, t),
+					post: Object(s.post)(n, t),
+					...o(n)
 				}),
-				m = (e, t) => n => ({
+				f = (e, t) => n => ({
 					source: "post_report_menu",
 					action: "click",
 					noun: e,
-					post: Object(r.post)(n, t),
-					...s(n)
+					post: Object(s.post)(n, t),
+					...o(n)
 				}),
-				p = (e, t) => n => ({
+				b = (e, t) => n => ({
 					source: "post",
 					action: "click",
 					noun: e,
-					post: Object(r.post)(n, t),
-					subreddit: Object(r.subredditByPostOrCommentId)(n, t)
+					post: Object(s.post)(n, t),
+					subreddit: Object(s.subredditByPostOrCommentId)(n, t)
 				}),
-				f = (e, t) => n => ({
+				h = (e, t) => n => ({
 					source: "comment",
 					action: "click",
 					noun: e,
-					comment: Object(r.comment)(n, t),
-					post: Object(r.post)(n, t),
-					subreddit: Object(r.subredditByPostOrCommentId)(n, t)
+					comment: Object(s.comment)(n, t),
+					post: Object(s.post)(n, t),
+					subreddit: Object(s.subredditByPostOrCommentId)(n, t)
 				}),
-				b = (e, t, n, s) => o => ({
+				v = (e, t, n, r) => o => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
-					post: Object(r.post)(o, n),
-					subreddit: Object(r.subredditByPostOrCommentId)(o, n),
+					post: Object(s.post)(o, n),
+					subreddit: Object(s.subredditByPostOrCommentId)(o, n),
 					actionInfo: {
-						reason: s
+						reason: r
 					},
 					...e && {
-						comment: Object(r.comment)(o, n)
+						comment: Object(s.comment)(o, n)
 					}
 				})
 		},
@@ -2553,9 +2564,9 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.dc.Enabled === Object(s.c)(e, {
+			const o = e => r.gc.Enabled === Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.Yb
+				experimentName: r.bc
 			})
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2637,7 +2648,7 @@
 				}) => {
 					const o = Object(i.c)(e),
 						c = d.find(e => e >= n),
-						l = r ? Object(a.D)(e, {
+						l = r ? Object(a.F)(e, {
 							postId: r
 						}) || Object(s.a)(e, {
 							commentId: r
@@ -2911,4 +2922,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2439565fbcc9d9b5ff93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ad38d6ae635ba367b4f4.js.map

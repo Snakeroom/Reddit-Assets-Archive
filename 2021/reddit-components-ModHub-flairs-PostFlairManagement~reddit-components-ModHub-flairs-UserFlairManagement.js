@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.440c01fb239861d49cd9.js
-// Retrieved at 4/26/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.4f7b08599fb61f81a0dc.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -332,7 +332,7 @@
 				P = T("edit_text"),
 				D = (e, t) => t ? _(e) : S(e),
 				j = e => T("post_flair_template")(f.d.LinkFlair, e),
-				N = (e, t) => s => ({
+				F = (e, t) => s => ({
 					...E(s),
 					source: v(e),
 					action: "click",
@@ -341,13 +341,13 @@
 						count: t
 					})
 				}),
-				F = {
+				N = {
 					[f.a.All]: "text_and_emoji",
 					[f.a.Emoji]: "emoji_only",
 					[f.a.Text]: "text_only"
 				},
 				M = (e, t) => {
-					return x(F[t] || "text_and_emoji")(e)
+					return x(N[t] || "text_and_emoji")(e)
 				},
 				R = (e, t) => s => ({
 					...E(s),
@@ -601,8 +601,8 @@
 					tooltipId: e.tooltipId,
 					value: e.value
 				}))),
-				Ne = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/ColorSwitch/index.m.less"),
-				Fe = s.n(Ne);
+				Fe = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/ColorSwitch/index.m.less"),
+				Ne = s.n(Fe);
 			class Me extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = () => {
@@ -614,7 +614,7 @@
 						isDark: e
 					} = this.props;
 					return o.a.createElement("button", {
-						className: Object(Z.a)(Fe.a.switch, e ? Fe.a.dark : Fe.a.light),
+						className: Object(Z.a)(Ne.a.switch, e ? Ne.a.dark : Ne.a.light),
 						onClick: this.onChange
 					}, "Aa")
 				}
@@ -800,14 +800,14 @@
 				lt = s("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
 				rt = s.n(lt);
 			const dt = Object(_e.c)({
-					examplePost: e => Object(Qe.D)(e, {
+					examplePost: e => Object(Qe.F)(e, {
 						postId: h.e
 					})
 				}),
 				ct = Object(ke.b)(dt, (e, t) => ({
 					deleteExamplePost: () => e(Object(Re.b)(h.e)),
 					makeExamplePost: s => e(Object(Re.c)(t.subredditId, s)),
-					updateExamplePost: t => e(Object(Be.L)({
+					updateExamplePost: t => e(Object(Be.P)({
 						[h.e]: {
 							flair: [t]
 						}
@@ -1300,8 +1300,8 @@
 				}).apply(this, arguments)
 			}
 			const jt = "Flair-discard-changes-confirmation",
-				Nt = "Flair-remove-confirmation",
-				Ft = "Flair-settings-modal";
+				Ft = "Flair-remove-confirmation",
+				Nt = "Flair-settings-modal";
 			var Mt;
 			! function(e) {
 				e[e.Default = 0] = "Default", e[e.AddingTemplate = 1] = "AddingTemplate", e[e.EditingTemplate = 2] = "EditingTemplate", e[e.Reordering = 3] = "Reordering"
@@ -1338,7 +1338,7 @@
 					}, this.performPendingNavigationIfNeeded = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
 					}, this.onSettingsButtonClick = () => {
-						this.props.toggleModal(Ft)
+						this.props.toggleModal(Nt)
 					}, this.onCloseModal = () => {
 						this.props.closeAllModals(), this.resetPendingNavigation()
 					}, this.onAddNewTemplateButtonClick = () => {
@@ -1351,7 +1351,7 @@
 					}, this.onRemoveTemplateButtonClick = e => {
 						this.setState({
 							templateIdToRemove: e
-						}), this.props.toggleModal(Nt)
+						}), this.props.toggleModal(Ft)
 					}, this.onRemoveTemplateConfirmed = () => {
 						this.props.onRemoveTemplate(this.state.templateIdToRemove), this.props.sendEvent(y(this.props.flairTemplateType))
 					}, this.onStartEditingExistingTemplate = e => {
@@ -1388,7 +1388,7 @@
 							numTemplatesReordered: e,
 							templateIdsNewOrder: t
 						} = this.state;
-						this.props.onReorderTemplates(t), this.props.sendEvent(N(this.props.flairTemplateType, e)), this.setState(Rt)
+						this.props.onReorderTemplates(t), this.props.sendEvent(F(this.props.flairTemplateType, e)), this.setState(Rt)
 					}, this.onCancelReorderingClick = () => {
 						this.setState(Rt)
 					}, this.onCancelEditingTemplateClick = () => {
@@ -1561,7 +1561,7 @@
 						onConfirm: this.onDiscardUnsavedChangesConfirmed,
 						toggleModal: this.onCloseModal,
 						withOverlay: !0
-					}), this.props.activeModalId === Nt && o.a.createElement(l.a, {
+					}), this.props.activeModalId === Ft && o.a.createElement(l.a, {
 						actionText: B.fbt._("Delete", null, {
 							hk: "3nBb5n"
 						}),
@@ -1578,7 +1578,7 @@
 						onConfirm: this.onRemoveTemplateConfirmed,
 						toggleModal: this.onCloseModal,
 						withOverlay: !0
-					}), this.props.activeModalId === Ft && o.a.createElement(ie, {
+					}), this.props.activeModalId === Nt && o.a.createElement(ie, {
 						onClose: this.onCloseModal,
 						onSave: this.props.onSaveSettings,
 						sendEvent: this.props.sendEvent,
@@ -2070,4 +2070,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.440c01fb239861d49cd9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.4f7b08599fb61f81a0dc.js.map

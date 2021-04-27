@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.ea40e2a55dd1967317c6.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.85411ed127c4e9d2ce15.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1126,7 +1126,7 @@
 						userReports: [],
 						isSystem: !1
 					};
-					return e.postInfo && Object(b.l)(e.postInfo) ? L.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(b.k)(e.postInfo) && (L.subredditId = e.postInfo.profile.id), L
+					return e.postInfo && Object(b.m)(e.postInfo) ? L.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(b.l)(e.postInfo) && (L.subredditId = e.postInfo.profile.id), L
 				},
 				S = n("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				P = n("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
@@ -1188,7 +1188,7 @@
 							node: d
 						} of a.edges) {
 						let e;
-						if (d.__typename === h.c.Comment) {
+						if (d.__typename === h.d.Comment) {
 							const t = j(d);
 							if (i.comments || (i.comments = {}), i.comments[t.id] = t, i.itemIds || (i.itemIds = []), i.itemIds.push(t.id), d.authorFlair && (i.authorFlair[t.subredditId] || (i.authorFlair[t.subredditId] = {}), i.authorFlair[t.subredditId][t.author] = Object(S.a)(d.authorFlair)[0]), e = d.postInfo, d.postInfo) {
 								const {
@@ -1203,7 +1203,7 @@
 							post: t,
 							crosspost: n
 						} = e && Object(y.a)(e);
-						i.posts[t.id] = t, n && (i.posts[n.id] = n), Object(b.h)(e) || Object(b.i)(e) || (e.authorFlair && (i.authorFlair[t.belongsTo.id] || (i.authorFlair[t.belongsTo.id] = {}), i.authorFlair[t.belongsTo.id][t.author] = Object(S.a)(e.authorFlair)[0]), Object(b.k)(e) ? i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(N.a)(e.profile)) : Object(b.l)(e) && (i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(L.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(P.a)(e.subreddit))))
+						i.posts[t.id] = t, n && (i.posts[n.id] = n), Object(b.i)(e) || Object(b.j)(e) || (e.authorFlair && (i.authorFlair[t.belongsTo.id] || (i.authorFlair[t.belongsTo.id] = {}), i.authorFlair[t.belongsTo.id][t.author] = Object(S.a)(e.authorFlair)[0]), Object(b.l)(e) ? i.profiles[e.profile.id] || (i.profiles[e.profile.id] = Object(N.a)(e.profile)) : Object(b.m)(e) && (i.subreddits[e.subreddit.id] || (i.subreddits[e.subreddit.id] = Object(L.a)(e.subreddit)), i.postFlair[e.subreddit.id] || (i.postFlair[e.subreddit.id] = Object(P.a)(e.subreddit))))
 					}
 					return i
 				},
@@ -3365,7 +3365,7 @@
 						style: t
 					}, e.children)
 				},
-				j = Object(i.b)(() => Object(d.a)(g.C, _.bb, (e, {
+				j = Object(i.b)(() => Object(d.a)(g.E, _.bb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(g.b)(e, n) : null, (e, t, n) => ({
@@ -6071,12 +6071,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.fd.SmIcon:
+						case b.jd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.fd.SmIconHc:
+						case b.jd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6659,7 +6659,7 @@
 								subredditId: n
 							})
 						}
-						return Object(v.N)(e, {
+						return Object(v.P)(e, {
 							...t
 						})
 					},
@@ -6675,7 +6675,7 @@
 								subredditId: t
 							})
 						}
-						return Object(v.A)(e, t, n, r)
+						return Object(v.C)(e, t, n, r)
 					}),
 					subredditsById: w.ab,
 					viewportDataLoaded: E.a,
@@ -6697,16 +6697,16 @@
 					openPost: n => {
 						t && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(c.E(n))
+						})), e(c.I(n))
 					},
 					fireAdPixelsOfType: (t, n) => {
-						e(c.u(t, n))
+						e(c.x(t, n))
 					},
 					trackOnPostEnteredViewport: (t, n, s) => {
-						e(c.H(t, s))
+						e(c.L(t, s))
 					},
 					trackOnPostExitedViewport: (t, n, s, r, o) => {
-						e(c.I(t, s, r, o))
+						e(c.M(t, s, r, o))
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.h)())
 				}),
@@ -6714,7 +6714,7 @@
 					...e,
 					...t,
 					...n,
-					postClickEventFactory: (e, t) => Object(b.f)(e, t, "post", n.listingKey, n.hostPostId, n.listingBelowVariant, void 0),
+					postClickEventFactory: (e, t) => Object(b.g)(e, t, "post", n.listingKey, n.hostPostId, n.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(h.b)({
 						...e
 					})
@@ -7615,15 +7615,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.wb
+						experimentName: s.zb
 					});
-					return !(!t || Object(s.td)(t))
+					return !(!t || Object(s.xd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.wb
-					}) === s.Mb.ListingEnabled
+						experimentName: s.zb
+					}) === s.Pb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -7688,10 +7688,10 @@
 					return t !== a && t !== i && (!(i + n > t) && (!(t + n > a) && !((e, t, n) => {
 						const s = n[t - 1],
 							o = n[t],
-							i = o && Object(r.D)(e, {
+							i = o && Object(r.F)(e, {
 								postId: s
 							}) || null,
-							a = o && Object(r.D)(e, {
+							a = o && Object(r.F)(e, {
 								postId: o
 							}) || null;
 						return i && i.isSponsored || a && a.isSponsored
@@ -7703,7 +7703,7 @@
 				}) => {
 					const s = t.slice().sort();
 					let o = -1;
-					const i = Object(r.w)(e, {
+					const i = Object(r.y)(e, {
 							listingKey: n
 						}),
 						a = [];
@@ -7753,12 +7753,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.ad
+						experimentName: s.ed
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.fd.SmIcon || t === s.fd.SmIconHc
+					return t === s.jd.SmIcon || t === s.jd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7781,4 +7781,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ea40e2a55dd1967317c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.85411ed127c4e9d2ce15.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.62f0d37b1b6ce19dbd57.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f90e04c0827f23a6641b.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1289,7 +1289,7 @@
 						l = e[0],
 						u = Object(W.a)(l) ? K.e.Post : K.e.Comment,
 						m = u === K.e.Post ? d.posts.models[l] : d.features.comments.models[l],
-						h = u === K.e.Post ? M.L : j.h;
+						h = u === K.e.Post ? M.P : j.i;
 					if (!m || !c) return !1;
 					o(be()), o(h({
 						[l]: {
@@ -1343,7 +1343,7 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), n && n !== e.id && o(Object(j.h)({
+											})), n && n !== e.id && o(Object(j.i)({
 												[n]: {
 													isStickied: !1
 												}
@@ -1622,7 +1622,7 @@
 				}) => ({
 					onIgnoreReports: () => e(Object(c.g)(t)),
 					onVoteClick: n => {
-						const [r, o] = n === v.a.upvoted ? [Object(d.n)(t), "upvote_comment"] : [Object(d.i)(t), "downvote_comment"];
+						const [r, o] = n === v.a.upvoted ? [Object(d.q)(t), "upvote_comment"] : [Object(d.j)(t), "downvote_comment"];
 						s(o)(), e(r)
 					}
 				})),
@@ -2024,7 +2024,7 @@
 						style: t
 					}, e.children)
 				},
-				S = Object(i.b)(() => Object(d.a)(g.C, x.bb, (e, {
+				S = Object(i.b)(() => Object(d.a)(g.E, x.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(g.b)(e, s) : null, (e, t, s) => ({
@@ -4423,12 +4423,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.fd.SmIcon:
+						case b.jd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.fd.SmIconHc:
+						case b.jd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5673,12 +5673,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ad
+						experimentName: n.ed
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.fd.SmIcon || t === n.fd.SmIconHc
+					return t === n.jd.SmIcon || t === n.jd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5701,4 +5701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.62f0d37b1b6ce19dbd57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f90e04c0827f23a6641b.js.map

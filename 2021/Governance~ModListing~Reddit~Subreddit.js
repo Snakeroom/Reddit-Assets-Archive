@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e78f0d65c83ec11dbb8e.js
-// Retrieved at 4/26/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e9a30d86055ae76411d2.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, i) {
@@ -794,20 +794,20 @@
 			const w = Object(d.a)(O.a, O.i, (e, {
 					isSponsored: t,
 					postId: i
-				}) => t && i ? Object(v.b)(e, i) : null, v.D, (e, t, i, r) => ({
+				}) => t && i ? Object(v.b)(e, i) : null, v.F, (e, t, i, r) => ({
 					allowClickTracking: e,
 					basePixelMetadata: i,
 					userId: t ? Object(p.a)(t.id) : null,
 					post: r
 				})),
 				I = Object(a.b)(w, e => ({
-					fireAdPixelsOfType: (t, i) => e(Object(m.u)(t, i)),
+					fireAdPixelsOfType: (t, i) => e(Object(m.x)(t, i)),
 					recordClick: (t, i, r) => {
 						const o = t.events.filter(({
 							type: e,
 							url: t
 						}) => e === b.a.Click && Object(g.b)(t));
-						Object(g.c)(o), e(Object(m.l)(String(i), {
+						Object(g.c)(o), e(Object(m.o)(String(i), {
 							postId: t.id,
 							vendorMetadata: r
 						}))
@@ -1348,9 +1348,9 @@
 							const {
 								partialCommentId: o,
 								partialPostId: n
-							} = e.match.params, s = Object(_.r)(n), c = Object(a.a)(e, t, t.posts.models[s]);
+							} = e.match.params, s = Object(_.s)(n), c = Object(a.a)(e, t, t.posts.models[s]);
 							if (!c) return;
-							const d = o && Object(f.f)(o),
+							const d = o && Object(f.g)(o),
 								{
 									sortToUse: u
 								} = Object(l.a)(t, s),
@@ -2155,7 +2155,7 @@
 				C = (e, t, i, r, o, n) => s => P(s, e, t, i, r, o, n),
 				P = (e, t, i, r, d, u, f) => {
 					if (!r) {
-						r = Object(c.D)(e, {
+						r = Object(c.F)(e, {
 							postId: u
 						}).belongsTo
 					}
@@ -2997,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e78f0d65c83ec11dbb8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e9a30d86055ae76411d2.js.map

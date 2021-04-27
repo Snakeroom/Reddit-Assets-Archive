@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0e1183f78d73a7b3d1bd.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c7d09ef22e1d6496bfac.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -524,7 +524,7 @@
 				}, te = Object(r.a)(q.t), se = (e, t) => {
 					const {
 						id: s
-					} = t, n = Object(U.a)(s) ? Object(P.D)(e, {
+					} = t, n = Object(U.a)(s) ? Object(P.F)(e, {
 						postId: s
 					}) : Object(y.a)(e, {
 						commentId: s
@@ -621,7 +621,7 @@
 						if (e.length) {
 							const s = Math.max(900 - B, 10),
 								n = Math.max(300 - B, 10),
-								a = Object(U.a)(m) && Object(O.n)(Object(P.D)(r, {
+								a = Object(U.a)(m) && Object(O.o)(Object(P.F)(r, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -1391,7 +1391,7 @@
 							if (!s.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(j({
 								awards: s.awards
-							})), e(Object(u.w)())
+							})), e(Object(u.z)())
 						}
 					} catch (m) {
 						Object(r.b)() || console.error(m), e(Object(c.f)({
@@ -1845,7 +1845,7 @@
 			}));
 			var xe = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const s = Object(R.D)(e, {
+						const s = Object(R.F)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -2227,7 +2227,7 @@
 						n = s && s.id
 					}
 					if (!n && Object(l.a)(t)) {
-						const s = Object(R.D)(e, {
+						const s = Object(R.F)(e, {
 							postId: t
 						});
 						n = s && s.belongsTo.id
@@ -2294,7 +2294,7 @@
 					message: A.c,
 					postOrComment: (e, {
 						thingId: t
-					}) => Object(l.a)(t) ? Object(R.D)(e, {
+					}) => Object(l.a)(t) ? Object(R.F)(e, {
 						postId: t
 					}) : Object(k.a)(e, {
 						commentId: t
@@ -2327,7 +2327,7 @@
 							n = s && s.id
 						}
 						if (!n && Object(l.a)(t)) {
-							const s = Object(R.D)(e, {
+							const s = Object(R.F)(e, {
 								postId: t
 							});
 							n = s && s.belongsTo.id
@@ -2433,7 +2433,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.jb)(e)
+					Object(p.nb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -2459,7 +2459,7 @@
 						thingId: y,
 						displayUnusableAwardError: E
 					} = this.props;
-					s || Object(m.d)(m.a.GildingFlow, !1), u(Object(h.viewGildModalEvent)(l.id, n, y)), g(!r && Object(p.p)());
+					s || Object(m.d)(m.a.GildingFlow, !1), u(Object(h.viewGildModalEvent)(l.id, n, y)), g(!r && Object(p.r)());
 					const _ = w ? w.id : O || (o && o.belongsTo ? o.belongsTo.id : void 0);
 					if (_ && t(_), Re(e, l) && (E(), c(b.n)), w || v) {
 						x(w ? w.name : v)
@@ -2575,7 +2575,7 @@
 					})
 				})),
 				setIsAnonymous: t => {
-					e(Object(O.setIsAnonymous)(t)), Object(p.jb)(t)
+					e(Object(O.setIsAnonymous)(t)), Object(p.nb)(t)
 				},
 				subredditAboutRequested: t => e(Object(I.u)(t)),
 				subredditLockedCoinsRequested: (t, s) => e(Object(x.a)(t, s)),
@@ -2757,7 +2757,7 @@
 						style: t
 					}, e.children)
 				},
-				C = Object(o.b)(() => Object(d.a)(g.C, w.bb, (e, {
+				C = Object(o.b)(() => Object(d.a)(g.E, w.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(g.b)(e, s) : null, (e, t, s) => ({
@@ -4209,12 +4209,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.fd.SmIcon:
+						case b.jd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.fd.SmIconHc:
+						case b.jd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5191,12 +5191,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.ad
+						experimentName: n.ed
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.fd.SmIcon || t === n.fd.SmIconHc
+					return t === n.jd.SmIcon || t === n.jd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5219,4 +5219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0e1183f78d73a7b3d1bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c7d09ef22e1d6496bfac.js.map

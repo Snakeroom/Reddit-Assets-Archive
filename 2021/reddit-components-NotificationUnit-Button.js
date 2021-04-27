@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.952899097599f29a680d.js
-// Retrieved at 4/20/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.35527d22d2461c0550c0.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/components/ChatButton/index.tsx": function(t, o, e) {
@@ -28,12 +28,12 @@
 				redditStyle: u,
 				isFullWidth: E,
 				eventSource: x,
-				onClick: N,
-				onAddUserToQuickReplyList: C
+				onClick: C,
+				onAddUserToQuickReplyList: N
 			}) => {
 				return c.a.createElement(a.q, {
 					onClick: o => {
-						if (N && N(o), t(), x === n.awardNotification) return C();
+						if (C && C(o), t(), x === n.awardNotification) return N();
 						i(Object(l.b)(d))
 					},
 					className: e,
@@ -115,7 +115,7 @@
 					return c
 				})),
 				function(t) {
-					t.CakeDay = "CAKE_DAY", t.ChatMessage = "CHAT_MESSAGE", t.CommentReply = "COMMENT_REPLY", t.LifecyclePostSuggestions = "LIFECYCLE_POST_SUGGESTIONS", t.PostReply = "POST_REPLY", t.PrivateMessage = "PRIVATE_MESSAGE", t.SubredditRecommendation = "SUBREDDIT_RECOMMENDATION", t.ThreadReplies = "THREAD_REPLIES", t.TopLevelComment = "TOP_LEVEL_COMMENT", t.UpvoteComment = "UPVOTE_COMMENT", t.UpvotePost = "UPVOTE_POST", t.UsernameMention = "USERNAME_MENTION", t.UserNewFollower = "USER_NEW_FOLLOWER", t.AwardReceived = "AWARD_RECEIVED"
+					t.CakeDay = "CAKE_DAY", t.ChatMessage = "CHAT_MESSAGE", t.CommentReply = "COMMENT_REPLY", t.LifecyclePostSuggestions = "LIFECYCLE_POST_SUGGESTIONS", t.PostReply = "POST_REPLY", t.PrivateMessage = "PRIVATE_MESSAGE", t.SubredditRecommendation = "SUBREDDIT_RECOMMENDATION", t.ThreadReplies = "THREAD_REPLIES", t.TopLevelComment = "TOP_LEVEL_COMMENT", t.UpvoteComment = "UPVOTE_COMMENT", t.UpvotePost = "UPVOTE_POST", t.UsernameMention = "USERNAME_MENTION", t.UserNewFollower = "USER_NEW_FOLLOWER", t.AwardReceived = "AWARD_RECEIVED", t.PostFollow = "POST_FOLLOW", t.CommentFollow = "COMMENT_FOLLOW"
 				}(n || (n = {})),
 				function(t) {
 					t.Bell = "BELL", t.Chat = "CHAT", t.Comment = "COMMENT", t.Heart = "HEART", t.Trophy = "TROPHY", t.Reply = "REPLY", t.SortRising = "SORT_RISING", t.SortLive = "SORT_LIVE", t.SortTop = "SORT_TOP", t.Live = "LIVE", t.Redditor = "REDDITOR", t.Upvote = "UPVOTE", t.Award = "AWARD"
@@ -129,4 +129,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.952899097599f29a680d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.35527d22d2461c0550c0.js.map

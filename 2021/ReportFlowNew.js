@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.7c671a957abaea5e9a37.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.392ffb7467193d29ef4b.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -307,7 +307,7 @@
 			const B = Object(l.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(v.D)(e, {
+					}) => t ? Object(v.F)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -319,7 +319,7 @@
 						postId: t
 					}) => {
 						const o = t && e.posts.models[t];
-						return !!o && Object(x.n)(o)
+						return !!o && Object(x.o)(o)
 					},
 					blockUserPending: e => e.user.blocked.api,
 					blockedUser: (e, t) => e.user.blocked.data.find(o => {
@@ -328,7 +328,7 @@
 							postId: s
 						} = t, n = r ? Object(F.a)(e, {
 							commentId: r
-						}) : null, i = s ? Object(v.D)(e, {
+						}) : null, i = s ? Object(v.F)(e, {
 							postId: s
 						}) : null;
 						(n ? n.author : i ? i.author : null) || t.author;
@@ -663,4 +663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.7c671a957abaea5e9a37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.392ffb7467193d29ef4b.js.map

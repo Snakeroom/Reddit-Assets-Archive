@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.3480a920b3b7dd51b869.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.4eab249a585377dfecc7.js
+// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2239,7 +2239,7 @@
 					apiContext: i
 				}) => {
 					const a = e.flair.filter(e => !Object(d.q)(e.type));
-					if (t && a.unshift(t), r(Object(o.L)({
+					if (t && a.unshift(t), r(Object(o.P)({
 							[e.id]: {
 								flair: a
 							}
@@ -2763,10 +2763,10 @@
 						selectedTemplateId: r
 					})),
 					handleVote: n => {
-						const r = n === E.a.upvoted ? Object(_.V)(t) : Object(_.r)(t);
+						const r = n === E.a.upvoted ? Object(_.bb)(t) : Object(_.u)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(_.S)(t)),
+					onIgnoreReports: () => e(Object(_.X)(t)),
 					onOpenReportsDropdown: t => e(Object(v.h)({
 						tooltipId: t
 					}))
@@ -2814,7 +2814,7 @@
 						shouldShowGalleryTileOption: Ie
 					} = this.props, Le = !!fe.media && fe.media.type === b.o.RTJSON, Pe = _e && Le, Ae = Object(z.b)(fe.id, S), Re = Object(ue.a)(te), De = Object(de.a)(te), Me = Object(le.a)(te), Fe = `-mod-actions-menu-${fe.id}`, Ue = `voting-arrows-${fe.id}`, Be = !!o && Object(h.e)(o) === fe.author, Ye = Object(B.c)(fe), Ve = Object(A.a)("View--Reports", fe.id, Ce), We = Object(B.a)(fe), Ge = !(S || x || v), He = fe.media && fe.media.type === b.o.LIVEVIDEO, {
 						moderationPrompt: ze
-					} = fe, qe = e => ke(Object(f.f)(fe.id, e)), Ze = Object(c.t)(fe, E), {
+					} = fe, qe = e => ke(Object(f.g)(fe.id, e)), Ze = Object(c.t)(fe, E), {
 						source: Xe
 					} = Ze, Je = s.a.createElement(H.a, {
 						className: Object(d.a)(xe.a.compactPostStyles, Oe.a.postContainer, Object(m.a)(this.props), t),
@@ -3262,7 +3262,7 @@
 				k = n("./src/reddit/components/ExpandoButton/index.m.less"),
 				w = n.n(k);
 			const I = Object(i.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.s)({
+					toggle: () => e(Object(l.v)({
 						postId: t.post.id
 					}))
 				})),
@@ -3450,14 +3450,14 @@
 					id: _,
 					title: S,
 					onClose: () => {
-						E(!1), g("close", "click"), x(Object(c.A)()), x(Object(c.L)({
+						E(!1), g("close", "click"), x(Object(c.E)()), x(Object(c.P)({
 							[n.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						x(Object(c.A)())
+						x(Object(c.E)())
 					}
 				}, o.a.createElement("p", null, r.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [r.fbt._param("=Reddit", o.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -3517,10 +3517,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						_(r.Closed), S("close", "click"), v(Object(d.A)())
+						_(r.Closed), S("close", "click"), v(Object(d.E)())
 					},
 					onClickOutside: () => {
-						v(Object(d.A)())
+						v(Object(d.E)())
 					}
 				};
 				switch (E) {
@@ -3911,7 +3911,7 @@
 			const b = Object(i.b)(() => Object(a.c)({}), (e, {
 				post: t
 			}) => ({
-				onFollow: () => e(Object(d.v)(t.isSponsored ? t.postId : t.id))
+				onFollow: () => e(Object(d.y)(t.isSponsored ? t.postId : t.id))
 			}))(Object(l.c)(f))
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, n) {
@@ -5286,4 +5286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.3480a920b3b7dd51b869.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.4eab249a585377dfecc7.js.map
