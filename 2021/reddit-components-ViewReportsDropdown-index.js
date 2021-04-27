@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d1ff24c83e7ac3e3fd15.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d9ddae3729b1d2a4fe98.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -13,7 +13,7 @@
 			})), s.d(t, "h", (function() {
 				return D
 			})), s.d(t, "l", (function() {
-				return N
+				return L
 			})), s.d(t, "q", (function() {
 				return z
 			})), s.d(t, "j", (function() {
@@ -21,9 +21,9 @@
 			})), s.d(t, "g", (function() {
 				return F
 			})), s.d(t, "f", (function() {
-				return K
+				return $
 			})), s.d(t, "o", (function() {
-				return M
+				return H
 			})), s.d(t, "p", (function() {
 				return V
 			})), s.d(t, "d", (function() {
@@ -125,7 +125,7 @@
 						const s = r.c.end(d);
 						!t && s < T && (clearTimeout(k[e]), delete k[e])
 					}
-				}, A = Object(d.a)(S.x), B = Object(d.a)(S.w), L = Object(d.a)(S.v), N = (e, t) => async (s, o, {
+				}, B = Object(d.a)(S.x), A = Object(d.a)(S.w), N = Object(d.a)(S.v), L = (e, t) => async (s, o, {
 					apiContext: n
 				}) => {
 					const r = o(),
@@ -138,7 +138,7 @@
 						} = l ? l.params : null;
 					if (!p) return;
 					const u = Object(x.s)(p);
-					s(A({
+					s(B({
 						moreCommentsId: d.id
 					}));
 					const f = await Object(b.e)(n(), u, {
@@ -147,7 +147,7 @@
 					if (f.ok) {
 						const t = f.body,
 							o = Object(O.a)(t, u, r);
-						s(B({
+						s(A({
 							key: e,
 							moreCommentsItem: d,
 							shouldCollapse: o,
@@ -164,11 +164,11 @@
 						const a = f.body.comments,
 							l = f.body.posts;
 						await s(Object(m.b)(l, a, i))
-					} else s(L({
+					} else s(N({
 						moreCommentsItem: d,
 						...f.error
 					}))
-				}, z = Object(u.a)(O.b, g.a.upvoted), U = Object(u.a)(O.b, g.a.downvoted), F = Object(d.a)(S.j), K = Object(d.a)(S.i), $ = Object(d.a)(S.e), H = Object(d.a)(S.f), M = (Object(d.a)(S.c), Object(d.a)(S.d), ({
+				}, z = Object(u.a)(O.b, g.a.upvoted), U = Object(u.a)(O.b, g.a.downvoted), F = Object(d.a)(S.j), $ = Object(d.a)(S.i), K = Object(d.a)(S.e), M = Object(d.a)(S.f), H = (Object(d.a)(S.c), Object(d.a)(S.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -184,7 +184,7 @@
 							commentsPageKey: t
 						}),
 						a = c.depth;
-					o($({
+					o(K({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -193,7 +193,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(H({
+					s(M({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -209,7 +209,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					n($({
+					n(K({
 						commentId: c,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -495,7 +495,7 @@
 		"./src/reddit/components/Reports/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return N
+				return L
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
@@ -580,10 +580,10 @@
 				P = s("./src/reddit/components/Reports/index.m.less"),
 				D = s.n(P);
 			const {
-				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.div("ReportText", D.a), L = d.a.div("ReportsTitle", D.a);
+				fbt: B
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = d.a.div("ReportText", D.a), N = d.a.div("ReportsTitle", D.a);
 
-			function N(e) {
+			function L(e) {
 				const {
 					className: t,
 					modReports: s,
@@ -594,13 +594,13 @@
 					className: t
 				}, s && s.length > 0 && n.a.createElement("div", {
 					className: D.a.Reports
-				}, n.a.createElement(L, null, A._("Moderator Reports", null, {
+				}, n.a.createElement(N, null, B._("Moderator Reports", null, {
 					hk: "3hZ0oX"
-				})), s.map(([e, t]) => n.a.createElement(B, {
+				})), s.map(([e, t]) => n.a.createElement(A, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), o && o.length > 0 && n.a.createElement("div", {
 					className: D.a.Reports
-				}, n.a.createElement(L, null, A._("User Reports", null, {
+				}, n.a.createElement(N, null, B._("User Reports", null, {
 					hk: "2KeCLz"
 				})), n.a.createElement("div", {
 					className: D.a.UserReports
@@ -610,7 +610,7 @@
 					amount: t,
 					reportedThingId: d,
 					isSnoozed: s
-				}) : n.a.createElement(B, {
+				}) : n.a.createElement(A, {
 					key: `user-${e}`
 				}, `${t}: ${e}`)))))
 			}
@@ -945,14 +945,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ac
-					}) === o.Lc.Enabled
+						experimentName: o.Cc
+					}) === o.Nc.Enabled
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.zc
-					}) === o.Kc.Enabled
+						experimentName: o.Bc
+					}) === o.Mc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -981,4 +981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d1ff24c83e7ac3e3fd15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d9ddae3729b1d2a4fe98.js.map

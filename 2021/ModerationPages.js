@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.24f809d3478f13abf75b.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e2e44faff697350b12f8.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -21173,7 +21173,7 @@
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/reddit/models/Subreddit/index.ts");
 			const a = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british", "translation_french_fr", "translation_es_mx", "translation_br_pt", "german_translation"]),
-				o = new Set([n.e.Private, n.e.User]),
+				o = new Set([n.f.Private, n.f.User]),
 				r = e => !(!e || !e.name) && (!!a.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !o.has(e.type));
 			t.a = r
 		},
@@ -24397,7 +24397,7 @@
 					}, this.state = {
 						name: "",
 						description: "",
-						type: z.e.Public,
+						type: z.f.Public,
 						over18: !1,
 						waitingForSuccessfulCommunity: !1,
 						restrictCommenting: !1,
@@ -24592,9 +24592,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Lb
+					experimentName: n.Mb
 				});
-				return !(!t || Object(n.xd)(t))
+				return !(!t || Object(n.zd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -24827,4 +24827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.24f809d3478f13abf75b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e2e44faff697350b12f8.js.map

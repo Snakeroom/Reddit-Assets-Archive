@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ef15ac8261bf1bf89b71.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7ad5fa02183143083e07.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -5327,7 +5327,7 @@
 						subreddit: t,
 						user: n,
 						onHoverActionText: o
-					} = this.props, s = t && Object(k.g)(t) && n ? Object(y.d)(Object(S.e)(n)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, s = t && Object(k.h)(t) && n ? Object(y.d)(Object(S.e)(n)) : t ? t.displayText : "", r = e.postIds.length;
 					return a.a.createElement(N, {
 						onClick: this.onClick,
 						className: I.a.container
@@ -14197,7 +14197,8 @@
 					})) : t
 				}, [d, e]), {
 					attributes: f,
-					styles: g
+					styles: g,
+					update: C
 				} = Object(r.a)(t, a, b);
 				return Object(s.useMemo)(() => ({
 					arrowProps: {
@@ -14216,8 +14217,9 @@
 						element: t,
 						ref: n
 					},
-					visible: u
-				}), [l, f, c, h, p, g, t, n, u])
+					visible: u,
+					update: C
+				}), [l, f, c, h, p, g, t, n, u, C])
 			}
 		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
@@ -17075,7 +17077,7 @@
 					} = u || {}, {
 						allOriginalContent: w = !1,
 						eventPostsEnabled: T = !1
-					} = i || {}, I = a.isProfile || Object(Tn.f)(i), P = l || !I || w || _ === p.Mb.CROSSPOST, M = l, N = l || !!E;
+					} = i || {}, I = a.isProfile || Object(Tn.g)(i), P = l || !I || w || _ === p.Mb.CROSSPOST, M = l, N = l || !!E;
 					return s.a.createElement("div", {
 						className: o
 					}, s.a.createElement(Hn, null, m && s.a.createElement(Jn, {
@@ -18002,7 +18004,7 @@
 						isDraftDeletionPending: n,
 						subreddit: o,
 						user: r
-					} = this.props, a = o && Object(Tn.g)(o) && r ? {
+					} = this.props, a = o && Object(Tn.h)(o) && r ? {
 						displayText: Object(Y.d)(Object(me.e)(r)),
 						url: `/user/${Object(me.e)(r)}/`
 					} : o;
@@ -21509,14 +21511,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ac
-					}) === o.Lc.Enabled
+						experimentName: o.Cc
+					}) === o.Nc.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.zc
-					}) === o.Kc.Enabled
+						experimentName: o.Bc
+					}) === o.Mc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -22233,4 +22235,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ef15ac8261bf1bf89b71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7ad5fa02183143083e07.js.map

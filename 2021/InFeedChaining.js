@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.7f5c95a27fa9c5e27f19.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.1fc957575fd5d59e25fc.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1421,7 +1421,7 @@
 						onSubredditOrProfileClick: n,
 						shouldShowSubscribeButton: i,
 						subredditOrProfile: a
-					} = e, c = Object(h.g)(a) ? R.a.PROFILE : R.a.SUBREDDIT;
+					} = e, c = Object(h.h)(a) ? R.a.PROFILE : R.a.SUBREDDIT;
 					return r.a.createElement("div", {
 						className: Object(o.a)(V.a.header, t)
 					}, r.a.createElement(A.a, {
@@ -1457,7 +1457,7 @@
 				Y = s.n(q);
 			const X = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
-				return (Object(h.g)(e) ? t : s).some(t => t.id === e.id)
+				return (Object(h.h)(e) ? t : s).some(t => t.id === e.id)
 			});
 			class z extends r.a.Component {
 				constructor() {
@@ -1975,7 +1975,7 @@
 					}, E)));
 					const P = !S && !C;
 					let I;
-					return w && (I = Object(H.g)(w) ? Object(J.h)(w) : Object(J.i)(w)), i.a.createElement(U.a, {
+					return w && (I = Object(H.h)(w) ? Object(J.h)(w) : Object(J.i)(w)), i.a.createElement(U.a, {
 						className: Object(c.a)(K.a.container, X.a.largeAndMediumActiveStyles, X.a.largeAndMediumPostStyles, q.a.postContainer, Object(F.a)(this.props), s),
 						post: p,
 						onClick: m,
@@ -4125,12 +4125,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.jd.SmIcon:
+						case b.ld.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.jd.SmIconHc:
+						case b.ld.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4879,12 +4879,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ed
+						experimentName: n.gd
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.jd.SmIcon || t === n.jd.SmIconHc
+					return t === n.ld.SmIcon || t === n.ld.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4907,4 +4907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.7f5c95a27fa9c5e27f19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.1fc957575fd5d59e25fc.js.map

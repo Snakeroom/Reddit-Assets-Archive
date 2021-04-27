@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.e91fd6bce063abb96440.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.3de5ca5196e6ae7b96b4.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -530,7 +530,7 @@
 					}, j)));
 					const N = !P && !v;
 					let w;
-					return k && (w = Object(H.g)(k) ? Object(Q.h)(k) : Object(Q.i)(k)), r.a.createElement(A.a, {
+					return k && (w = Object(H.h)(k) ? Object(Q.h)(k) : Object(Q.i)(k)), r.a.createElement(A.a, {
 						className: Object(c.a)(Y.a.container, K.a.largeAndMediumActiveStyles, K.a.largeAndMediumPostStyles, G.a.postContainer, Object(R.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -925,9 +925,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.G)(e) || f.kd.ShowTopContent === Object(g.c)(e, {
+			const y = e => Object(C.G)(e) || f.md.ShowTopContent === Object(g.c)(e, {
 				experimentEligibilitySelector: g.a,
-				experimentName: f.fd
+				experimentName: f.hd
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1977,4 +1977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.e91fd6bce063abb96440.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.3de5ca5196e6ae7b96b4.js.map

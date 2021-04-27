@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.369feabfc723c9f6072e.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.d436c0e873e88bb39240.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, s) {
@@ -37,10 +37,10 @@
 				_ = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
 				E = s("./src/reddit/icons/fonts/index.tsx"),
 				f = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
-				h = s("./src/reddit/icons/svgs/Media/index.tsx"),
-				v = s("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				M = s("./src/reddit/selectors/subreddit.ts"),
-				N = s("./src/reddit/selectors/telemetry.ts"),
+				M = s("./src/reddit/icons/svgs/Media/index.tsx"),
+				N = s("./src/reddit/selectors/experiments/presenceIndicator.ts"),
+				h = s("./src/reddit/selectors/subreddit.ts"),
+				v = s("./src/reddit/selectors/telemetry.ts"),
 				g = s("./src/reddit/selectors/user.ts"),
 				U = s("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				O = s.n(U);
@@ -81,10 +81,10 @@
 				},
 				y = Object(a.c)({
 					currentUser: g.i,
-					isPresenceConsumptionExpEnabled: v.a,
+					isPresenceConsumptionExpEnabled: N.a,
 					isPresenceTogglePref: g.hb,
-					subreddit: M.A,
-					subredditAboutInfo: M.x
+					subreddit: h.A,
+					subredditAboutInfo: h.x
 				}),
 				L = Object(o.b)(y, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -111,7 +111,7 @@
 			}) => {
 				const p = Object(_.a)(),
 					b = (l ? `/r/${l}` : "") + "/submit",
-					v = function(e, t) {
+					N = function(e, t) {
 						if (!e) return {
 							link: !0,
 							media: !0
@@ -131,16 +131,16 @@
 							media: (c || n) && !e.isNSFW
 						}
 					}(i, a),
-					M = e => {
+					h = e => {
 						o(t => ({
 							source: "post_composer_du",
 							action: "click",
 							noun: w(e),
-							...N.defaults(t)
+							...v.defaults(t)
 						}))
 					},
 					g = () => {
-						M(d.Mb.POST), r(b)
+						h(d.Mb.POST), r(b)
 					},
 					U = t && s,
 					y = e ? c.a.createElement(I.a, {
@@ -161,33 +161,33 @@
 						hk: "OcnKS"
 					}),
 					type: "text"
-				}), v.media && c.a.createElement(x.q, {
+				}), N.media && c.a.createElement(x.q, {
 					className: O.a.Button,
 					"aria-label": A(),
 					priority: x.b.Plain,
 					kind: x.a.InternalLink,
 					size: x.c.M,
 					id: k.Media,
-					onClick: () => M(d.Mb.MEDIA),
+					onClick: () => h(d.Mb.MEDIA),
 					onMouseEnter: () => u(k.Media),
 					onMouseLeave: () => u(k.Media),
 					to: b + P(d.Mb.MEDIA),
 					Icon: p ? e => c.a.createElement(E.a, C({
 						name: "image_post"
-					}, e)) : h.a,
+					}, e)) : M.a,
 					isSquare: !0
 				}, c.a.createElement(m.c, {
 					caretOnTop: !0,
 					tooltipId: k.Media,
 					text: A()
-				})), v.link && c.a.createElement(x.q, {
+				})), N.link && c.a.createElement(x.q, {
 					className: O.a.Button,
 					priority: x.b.Plain,
 					kind: x.a.InternalLink,
 					size: x.c.M,
 					"aria-label": F(),
 					id: k.Link,
-					onClick: () => M(d.Mb.LINK_ONLY),
+					onClick: () => h(d.Mb.LINK_ONLY),
 					onMouseEnter: () => u(k.Link),
 					onMouseLeave: () => u(k.Link),
 					to: b + P(d.Mb.LINK_ONLY),
@@ -303,16 +303,16 @@
 			const c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Ac
-					}) === n.Lc.Enabled
+						experimentName: n.Cc
+					}) === n.Nc.Enabled
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.zc
-					}) === n.Kc.Enabled
+						experimentName: n.Bc
+					}) === n.Mc.Enabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.369feabfc723c9f6072e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.d436c0e873e88bb39240.js.map

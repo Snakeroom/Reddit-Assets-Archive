@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.dfd1a7f4de6dd769c10d.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.dc8adc252ea4807a7ee3.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/CrowdControlLevelInfo.json": function(e) {
@@ -977,9 +977,9 @@
 				D = () => void 0,
 				F = Object(a.c)({
 					crowdControlLevelEnabled: f.d.enableCrowdControlLevel,
-					postLevelCrowdControlEnabled: e => I.Fc.Enabled === Object(S.c)(e, {
+					postLevelCrowdControlEnabled: e => I.Hc.Enabled === Object(S.c)(e, {
 						experimentEligibilitySelector: N.K,
-						experimentName: I.uc
+						experimentName: I.wc
 					}),
 					shouldApplyPostLevelCrowdControl: (e, {
 						post: t
@@ -2334,14 +2334,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ac
-					}) === o.Lc.Enabled
+						experimentName: o.Cc
+					}) === o.Nc.Enabled
 				},
 				a = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.zc
-					}) === o.Kc.Enabled
+						experimentName: o.Bc
+					}) === o.Mc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -2370,4 +2370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.dfd1a7f4de6dd769c10d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.dc8adc252ea4807a7ee3.js.map

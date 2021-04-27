@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.805fba7f4c96eef2c4bb.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2b2b1a99af4c9a22e15a.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.oc
+					experimentName: m.qc
 				});
-				return Object(m.xd)(t) ? void 0 : t
+				return Object(m.zd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.pc
+					experimentName: m.rc
 				});
-				return Object(m.xd)(t) ? void 0 : t
-			}, (e, t) => e === m.qc.Enabled && t === m.qc.Enabled);
+				return Object(m.zd)(t) ? void 0 : t
+			}, (e, t) => e === m.sc.Enabled && t === m.sc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -862,7 +862,7 @@
 							postImageOCRAltText: !1,
 							postQASchema: !1
 						};
-					return Object(re.b)(t) ? d.listingBelow = i || a : d.postFeed = (i || a) && (!Object(P.g)(r) && !Object(ae.d)(t, {
+					return Object(re.b)(t) ? d.listingBelow = i || a : d.postFeed = (i || a) && (!Object(P.h)(r) && !Object(ae.d)(t, {
 						postId: s
 					}) && !!r || !Object(F.h)(t) && Object(D.e)(t)), e && (d.postImageOCRAltText = Object(D.c)(o) && !!Object(D.b)(t, o, !1), d.postQASchema = Object(D.f)(t, o)), d
 				},
@@ -5808,8 +5808,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: a.Oc
-				}) === a.Yc.Enabled
+					experimentName: a.Qc
+				}) === a.ad.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5817,4 +5817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.805fba7f4c96eef2c4bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2b2b1a99af4c9a22e15a.js.map

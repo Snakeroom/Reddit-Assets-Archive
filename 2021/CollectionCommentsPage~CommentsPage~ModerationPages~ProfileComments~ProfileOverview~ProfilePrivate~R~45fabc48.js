@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b5df82196d18c31fc4a5.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.1e619d9bd510495e682b.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -2322,7 +2322,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: o
-					} = this.props, n = t && Object(k.g)(t) && s ? Object(E.d)(Object(w.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, n = t && Object(k.h)(t) && s ? Object(E.d)(Object(w.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
 					return i.a.createElement(N, {
 						onClick: this.onClick,
 						className: S.a.container
@@ -2948,7 +2948,7 @@
 					}) => {
 						if (t.isSponsored) return !1;
 						if (!s) return !1;
-						const o = s.type === ce.e.User;
+						const o = s.type === ce.f.User;
 						return Object(je.r)(e, s.name, o)
 					},
 					reportingRevampEnabled: he.a,
@@ -3095,7 +3095,7 @@
 						toggleAddEventStartTimeModal: b,
 						toggleEditStartTimeModal: h,
 						userIsOp: x
-					} = e, f = e.currentUser && e.currentUser.isEmployee, v = Object(oe.a)(e.post), _ = e.post.belongsTo.type === k.a.PROFILE || Object(ce.f)(e.subredditAboutInfo), O = t && d.isGildable, C = Object(w.a)(e.post.permalink, l), g = Object(ne.a)(e.post);
+					} = e, f = e.currentUser && e.currentUser.isEmployee, v = Object(oe.a)(e.post), _ = e.post.belongsTo.type === k.a.PROFILE || Object(ce.g)(e.subredditAboutInfo), O = t && d.isGildable, C = Object(w.a)(e.post.permalink, l), g = Object(ne.a)(e.post);
 					return i.a.createElement("div", null, O && i.a.createElement(Ue, {
 						className: this.getBreakpointClass(Z.a.Gild),
 						displayText: o.fbt._("Give Award", null, {
@@ -3536,7 +3536,7 @@
 					}
 				})),
 				D = r.a.memo(e => {
-					const t = !e.subreddit || e.subreddit && e.subreddit.type === I.e.Public,
+					const t = !e.subreddit || e.subreddit && e.subreddit.type === I.f.Public,
 						s = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
 						n = Object(C.a)(e.permalink, e.isRebedLinkEnabled);
 					return r.a.createElement("div", {
@@ -5000,8 +5000,8 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.X
-			}) === o.gb.Enabled
+				experimentName: o.Y
+			}) === o.hb.Enabled
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -5018,4 +5018,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b5df82196d18c31fc4a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.1e619d9bd510495e682b.js.map

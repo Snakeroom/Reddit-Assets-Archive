@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.52b49f870f85c8743b44.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f62ae8759a76a8f4e843.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -398,8 +398,8 @@
 				z = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
 				W = r.n(z);
 			const V = 3500,
-				J = 500;
-			class Q extends a.a.PureComponent {
+				Q = 500;
+			class J extends a.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = a.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -431,7 +431,7 @@
 							e(t), this.setState({
 								hoverStateTriggered: !0
 							})
-						}, J)
+						}, Q)
 					}, this.handleMouseLeave = () => {
 						const {
 							onHideTooltip: e
@@ -513,7 +513,7 @@
 					}))
 				}
 			}
-			var $ = Q,
+			var $ = J,
 				K = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				Y = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				X = r.n(Y);
@@ -1869,8 +1869,8 @@
 				z = r("./src/reddit/models/Subreddit/index.ts"),
 				W = r("./src/reddit/selectors/authorFlair.ts"),
 				V = r("./src/reddit/selectors/gold/powerups.ts"),
-				J = r("./src/reddit/selectors/userFlair.ts"),
-				Q = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				Q = r("./src/reddit/selectors/userFlair.ts"),
+				J = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				$ = r("./src/reddit/components/PostTopMeta/index.m.less"),
 				K = r.n($);
 			const {
@@ -1885,7 +1885,7 @@
 			const ee = e => Object(H.a)(Object(R.a)(e), q.a.metaText, q.b.metaText),
 				te = l.a.wrapped(M.b, "MetaSeparator", K.a),
 				re = l.a.span("text", K.a),
-				se = Object(Q.t)(),
+				se = Object(J.t)(),
 				ne = e => {
 					const t = Object(b.a)(),
 						r = Object(f.a)(X),
@@ -1947,14 +1947,14 @@
 						tooltipType: B
 					} = e, F = Object(a.d)(), R = Object(w.a)(), H = b.belongsTo.id, U = Object(s.useCallback)(e => Object(W.a)(e, {
 						post: b
-					}), [b]), q = Object(a.e)(U), Q = Object(s.useCallback)(e => Object(J.a)(e, {
+					}), [b]), q = Object(a.e)(U), J = Object(s.useCallback)(e => Object(Q.a)(e, {
 						subredditId: H
-					}), [H]), $ = Object(a.e)(Q), Z = Object(s.useCallback)(e => Object(V.b)(e, {
+					}), [H]), $ = Object(a.e)(J), Z = Object(s.useCallback)(e => Object(V.b)(e, {
 						subredditId: H,
 						userId: b.authorId
-					}), [H, b.authorId]), se = Object(a.e)(Z), ae = Object(s.useCallback)(e => Object(J.d)(e, {
+					}), [H, b.authorId]), se = Object(a.e)(Z), ae = Object(s.useCallback)(e => Object(Q.d)(e, {
 						subredditId: H
-					}), [H]), oe = Object(a.e)(ae), ie = Object(f.a)(X), de = Object(f.a)(X), ce = l && l.meta && l.meta.name === i.Eb.COMMENTS, le = Object(h.a)(b), ue = oe === D.b.Left, me = b.authorIsContractor && !!M && M.type === z.e.EmployeesOnly, pe = !!M && se, he = !d && !ce, be = () => n.a.createElement(te, {
+					}), [H]), oe = Object(a.e)(ae), ie = Object(f.a)(X), de = Object(f.a)(X), ce = l && l.meta && l.meta.name === i.Eb.COMMENTS, le = Object(h.a)(b), ue = oe === D.b.Left, me = b.authorIsContractor && !!M && M.type === z.f.EmployeesOnly, pe = !!M && se, he = !d && !ce, be = () => n.a.createElement(te, {
 						className: e.metaSeparatorClassName
 					}, "•"), fe = n.a.createElement(n.a.Fragment, null, !le && n.a.createElement(re, {
 						style: {
@@ -3201,15 +3201,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.zb
+						experimentName: s.Ab
 					});
-					return !(!t || Object(s.xd)(t))
+					return !(!t || Object(s.zd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.zb
-					}) === s.Pb.ListingEnabled
+						experimentName: s.Ab
+					}) === s.Qb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3233,4 +3233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.52b49f870f85c8743b44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f62ae8759a76a8f4e843.js.map

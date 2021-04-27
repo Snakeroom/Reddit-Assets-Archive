@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.7b30fd3b2be6cfadfdeb.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ce8dddee5dd694446d54.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1478,7 +1478,7 @@
 			}) => {
 				const a = Object(u.a)();
 				switch (o.type) {
-					case x.e.Restricted:
+					case x.f.Restricted:
 						return i.a.createElement(I, {
 							className: e,
 							icon: a ? i.a.createElement(m.a, {
@@ -1494,7 +1494,7 @@
 							description: Object(E.g)(n),
 							subreddit: o
 						});
-					case x.e.Private:
+					case x.f.Private:
 						return i.a.createElement(I, {
 							className: e,
 							icon: a ? i.a.createElement(m.a, {
@@ -1512,7 +1512,7 @@
 							}),
 							subreddit: o
 						});
-					case x.e.EmployeesOnly:
+					case x.f.EmployeesOnly:
 						return i.a.createElement(I, {
 							className: e,
 							icon: a ? i.a.createElement(m.a, {
@@ -2730,10 +2730,10 @@
 				Je = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ke = Object(u.a)(R.J, R.I, (e, t) => !e && !t),
 				Ye = e => Object(Je.b)(e, {
-					experimentName: Ve.bb,
+					experimentName: Ve.cb,
 					experimentEligibilitySelector: Ke,
 					expEventOverride: !1
-				}) === Ve.jb.Enabled;
+				}) === Ve.kb.Enabled;
 			var Xe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				Qe = n("./src/reddit/selectors/structuredStyles.ts"),
 				Ze = n("./src/reddit/selectors/subscriptions.ts"),
@@ -4410,7 +4410,7 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/models/Subreddit/index.ts");
 			const r = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british", "translation_french_fr", "translation_es_mx", "translation_br_pt", "german_translation"]),
-				i = new Set([s.e.Private, s.e.User]),
+				i = new Set([s.f.Private, s.f.User]),
 				o = e => !(!e || !e.name) && (!!r.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !i.has(e.type));
 			t.a = o
 		},
@@ -5180,9 +5180,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.gc.Enabled === Object(r.c)(e, {
+			const i = e => s.ic.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.bc
+				experimentName: s.dc
 			})
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
@@ -5256,4 +5256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.7b30fd3b2be6cfadfdeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ce8dddee5dd694446d54.js.map

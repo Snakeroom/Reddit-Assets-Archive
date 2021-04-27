@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.65e6d6406806e217f4a9.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.525bddb78c7001fe7831.js
+// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -513,7 +513,7 @@
 						onSubredditOrProfileClick: n,
 						shouldShowSubscribeButton: r,
 						subredditOrProfile: o
-					} = e, c = Object(b.g)(o) ? U.a.PROFILE : U.a.SUBREDDIT;
+					} = e, c = Object(b.h)(o) ? U.a.PROFILE : U.a.SUBREDDIT;
 					return a.a.createElement("div", {
 						className: Object(i.a)(V.a.header, t)
 					}, a.a.createElement(B.a, {
@@ -549,7 +549,7 @@
 				q = s.n(G);
 			const K = Object(r.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
-				return (Object(b.g)(e) ? t : s).some(t => t.id === e.id)
+				return (Object(b.h)(e) ? t : s).some(t => t.id === e.id)
 			});
 			class J extends a.a.Component {
 				constructor() {
@@ -811,7 +811,7 @@
 					}, _)));
 					const N = !j && !k;
 					let S;
-					return E && (S = Object(H.g)(E) ? Object(z.h)(E) : Object(z.i)(E)), r.a.createElement(F.a, {
+					return E && (S = Object(H.h)(E) ? Object(z.h)(E) : Object(z.i)(E)), r.a.createElement(F.a, {
 						className: Object(c.a)(Z.a.container, K.a.largeAndMediumActiveStyles, K.a.largeAndMediumPostStyles, G.a.postContainer, Object(R.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -2399,4 +2399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.65e6d6406806e217f4a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.525bddb78c7001fe7831.js.map
