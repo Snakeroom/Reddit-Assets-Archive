@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c2525b916bb7b3f42152.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e9466b91b5f746dfbc6d.js
+// Retrieved at 4/27/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, d, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && P.push(a[d][0]), a[d] = 0;
+		for (var n, d, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) d = i[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
 		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return r.push.apply(r, c || []), t()
 	}
 
@@ -610,8 +610,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "0552bcf767ef9dbe8e2a",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "da9afafbf78d43f4ae69",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "c71cdeb8cfc7d248599c",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "f3f3967a1fe2343a080d",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -787,12 +787,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === a) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var n = o && o.target && o.target.src || a,
 					r = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = n, delete d[e], P.parentNode.removeChild(P), t(r)
-			}, P.href = a, document.getElementsByTagName("head")[0].appendChild(P)
+				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = n, delete d[e], b.parentNode.removeChild(b), t(r)
+			}, b.href = a, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			d[e] = 0
 		})));
@@ -1167,13 +1167,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "7f4e0b61018c7610193e",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "9b9ff048c2d27088d250",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "84b66eb1d64abb649082",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "5a57dcb99b8b8e8310b1",
 						"translations/de_DE-json": "b46f72c3c72791ba146e",
 						"translations/es_ES-json": "016c3b65db5cdfe82a15",
 						"translations/fr_FR-json": "dc35d6ad178d32a34719",
 						"translations/it_IT-json": "993211bef06ee9f85f02",
-						"translations/pseudo_ext-json": "4e794aa888d071134821",
+						"translations/pseudo_ext-json": "0e5b12421db1bcc6780d",
 						"translations/pseudo_long-json": "096aa4ddb172303f3197",
 						"translations/pseudo_short-json": "7bb31fe1f89f6830a556",
 						"translations/pt_BR-json": "ad2035bd46c590a2a266",
@@ -1400,4 +1400,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c2525b916bb7b3f42152.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e9466b91b5f746dfbc6d.js.map
