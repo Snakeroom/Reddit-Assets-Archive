@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.cc7c47b0d2136bf9e04e.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.ef15ac8261bf1bf89b71.js
+// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -4457,9 +4457,9 @@
 					}, [n]),
 					[x, E] = Object(o.useState)(C);
 				Object(o.useEffect)(() => {
-					const e = x ? Object(i.l)({
+					const e = x ? Object(i.f)({
 						tooltipId: n
-					}) : Object(i.k)({
+					}) : Object(i.j)({
 						tooltipId: n
 					});
 					t(e)
@@ -22233,4 +22233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cc7c47b0d2136bf9e04e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ef15ac8261bf1bf89b71.js.map
