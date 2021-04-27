@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b7dfe553144b26c1d57c.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.edf3e085cc7f3c9251c6.js
+// Retrieved at 4/27/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -951,10 +951,12 @@
 					t(se(e))
 				}, ce = "MESSAGE__GET_PREVIOUS_MESSAGES_START", oe = "MESSAGE__GET_PREVIOUS_MESSAGES_END", ie = "MESSAGE__GET_PREVIOUS_MESSAGES_ERROR", le = Object(o.a)(ce), de = Object(o.a)(oe), ue = Object(o.a)(ie), he = e => async (t, n) => {
 					const a = Object(S.w)(n(), "channelId");
-					t(le(a)), t(Object(d.F)()), a && await T.a.getPreviousMessages(e).then(e => t(de({
-						channelId: a,
-						...e
-					}))).catch(() => t(ue(a)))
+					t(le(a)), t(Object(d.F)()), a && await T.a.getPreviousMessages(e).then(e => {
+						t(de({
+							channelId: a,
+							...e
+						})), t(Object(O.d)(e))
+					}).catch(() => t(ue(a)))
 				}, me = (e, t) => async (n, a, {
 					apiContext: s
 				}) => {
@@ -14120,4 +14122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b7dfe553144b26c1d57c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.edf3e085cc7f3c9251c6.js.map
