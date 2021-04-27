@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.fb86db9dd2f38ff23e63.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.a69045d97780d885e5f9.js
+// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -697,7 +697,7 @@
 			function Xe(e) {
 				return Object(He.c)(e, {
 					experimentEligibilitySelector: He.a,
-					experimentName: Ge.q
+					experimentName: Ge.r
 				})
 			}
 			var ze = n("./src/reddit/selectors/experiments/coreStyles.ts"),
@@ -720,7 +720,7 @@
 					isOver18: $e.cb,
 					isUISimplificationAllItemsVariant: et.b,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Xe(e) === Ge.p.RotateEven
+						return Xe(e) === Ge.q.RotateEven
 					},
 					isInIcons2020: ze.a,
 					bffsLeaderboardVariant: Xe,
@@ -732,8 +732,8 @@
 						return (!t || !n) && (!Object(et.b)(e) && function(e) {
 							return Object(He.c)(e, {
 								experimentEligibilitySelector: $e.J,
-								experimentName: Ge.bb
-							}) === Ge.Nb
+								experimentName: Ge.db
+							}) === Ge.Pb
 						}(e))
 					}
 				}),
@@ -747,7 +747,7 @@
 						shouldShowLocalRecommendations: s
 					} = e;
 					let a, i, d, c, l;
-					n && t === Ge.p.RotateEven ? (a = Ue.t, i = Ue.m, d = Ue.r, c = Ue.a) : (a = Ue.s, i = Ue.i, d = Ue.q, c = []), l = [a, ...c, ...d], s && l.unshift(i);
+					n && t === Ge.q.RotateEven ? (a = Ue.t, i = Ue.m, d = Ue.r, c = Ue.a) : (a = Ue.s, i = Ue.i, d = Ue.q, c = []), l = [a, ...c, ...d], s && l.unshift(i);
 					const u = l[r()(l.length - 1)];
 					l = [], u.id !== a.id && l.push(a), s && u.id !== i.id && l.push(i);
 					let m = [...c, ...d];
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.fb86db9dd2f38ff23e63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.a69045d97780d885e5f9.js.map

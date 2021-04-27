@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2b2b1a99af4c9a22e15a.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.acd7273017866948a11c.js
+// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.qc
+					experimentName: m.sc
 				});
-				return Object(m.zd)(t) ? void 0 : t
+				return Object(m.Bd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.rc
+					experimentName: m.tc
 				});
-				return Object(m.zd)(t) ? void 0 : t
-			}, (e, t) => e === m.sc.Enabled && t === m.sc.Enabled);
+				return Object(m.Bd)(t) ? void 0 : t
+			}, (e, t) => e === m.uc.Enabled && t === m.uc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -824,8 +824,8 @@
 					} = Object(M.a)(e, o);
 				return (!n || n === h.r.CONFIDENCE) && Object(te.c)(e, {
 					experimentEligibilitySelector: () => Object(K.I)(e),
-					experimentName: ee.r
-				}) === ee.t.Enabled
+					experimentName: ee.s
+				}) === ee.u.Enabled
 			};
 			var ae = s("./src/reddit/selectors/chatPost.ts"),
 				oe = s("./src/reddit/selectors/experiments/listingBelow.ts"),
@@ -5808,8 +5808,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: a.Qc
-				}) === a.ad.Enabled
+					experimentName: a.Sc
+				}) === a.cd.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5817,4 +5817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.2b2b1a99af4c9a22e15a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.acd7273017866948a11c.js.map

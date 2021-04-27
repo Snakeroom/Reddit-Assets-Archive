@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.ce8dddee5dd694446d54.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.c05ca90885cb166fcf60.js
+// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2730,10 +2730,10 @@
 				Je = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ke = Object(u.a)(R.J, R.I, (e, t) => !e && !t),
 				Ye = e => Object(Je.b)(e, {
-					experimentName: Ve.cb,
+					experimentName: Ve.eb,
 					experimentEligibilitySelector: Ke,
 					expEventOverride: !1
-				}) === Ve.kb.Enabled;
+				}) === Ve.mb.Enabled;
 			var Xe = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				Qe = n("./src/reddit/selectors/structuredStyles.ts"),
 				Ze = n("./src/reddit/selectors/subscriptions.ts"),
@@ -2953,8 +2953,8 @@
 					showContributorRequestFlow: e => Object(re.r)(e, qe.e.Post),
 					showCreatePollButton: e => (e => Object(Je.c)(e, {
 						experimentEligibilitySelector: Je.a,
-						experimentName: Ve.A
-					}) === Ve.H.Treatment)(e) && !Object(Re.g)(),
+						experimentName: Ve.B
+					}) === Ve.I.Treatment)(e) && !Object(Re.g)(),
 					subreddit: (e, t) => Object(re.A)(e, {
 						subredditName: t.listingName
 					}),
@@ -5167,9 +5167,9 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.G)(e) || s.B.Treatment1 === Object(r.c)(e, {
+				return Object(i.G)(e) || s.C.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.u
+					experimentName: s.v
 				})
 			}
 		},
@@ -5180,9 +5180,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.ic.Enabled === Object(r.c)(e, {
+			const i = e => s.kc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.dc
+				experimentName: s.fc
 			})
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
@@ -5256,4 +5256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ce8dddee5dd694446d54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.c05ca90885cb166fcf60.js.map

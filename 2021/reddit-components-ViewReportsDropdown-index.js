@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d9ddae3729b1d2a4fe98.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.88ad26906eeeea61d33c.js
+// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -23,7 +23,7 @@
 			})), s.d(t, "f", (function() {
 				return $
 			})), s.d(t, "o", (function() {
-				return H
+				return M
 			})), s.d(t, "p", (function() {
 				return V
 			})), s.d(t, "d", (function() {
@@ -168,7 +168,7 @@
 						moreCommentsItem: d,
 						...f.error
 					}))
-				}, z = Object(u.a)(O.b, g.a.upvoted), U = Object(u.a)(O.b, g.a.downvoted), F = Object(d.a)(S.j), $ = Object(d.a)(S.i), K = Object(d.a)(S.e), M = Object(d.a)(S.f), H = (Object(d.a)(S.c), Object(d.a)(S.d), ({
+				}, z = Object(u.a)(O.b, g.a.upvoted), U = Object(u.a)(O.b, g.a.downvoted), F = Object(d.a)(S.j), $ = Object(d.a)(S.i), K = Object(d.a)(S.e), H = Object(d.a)(S.f), M = (Object(d.a)(S.c), Object(d.a)(S.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -193,7 +193,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(M({
+					s(H({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -945,14 +945,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Cc
-					}) === o.Nc.Enabled
+						experimentName: o.Ec
+					}) === o.Pc.Enabled
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Bc
-					}) === o.Mc.Enabled
+						experimentName: o.Dc
+					}) === o.Oc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -981,4 +981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.d9ddae3729b1d2a4fe98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.88ad26906eeeea61d33c.js.map

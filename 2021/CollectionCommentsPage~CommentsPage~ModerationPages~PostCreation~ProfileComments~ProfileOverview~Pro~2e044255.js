@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.717f2b693f2ba8dfddf2.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.a9d1fd0674bd42cf74b8.js
+// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -757,30 +757,33 @@
 				l = s("./src/reddit/actions/tooltip.ts"),
 				u = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				m = s("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
-				p = s("./src/reddit/constants/posts.ts"),
-				h = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				b = s("./src/reddit/helpers/isRemoved.ts"),
-				x = s("./src/reddit/helpers/modTooltipTemplates/index.ts"),
-				f = s("./src/reddit/helpers/showReportIndicator/index.ts"),
-				E = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				g = s("./src/reddit/models/AutomatedReporting/index.ts"),
-				y = s("./src/reddit/models/Post/index.ts"),
-				v = s("./src/reddit/selectors/posts.ts"),
-				_ = s("./src/reddit/icons/fonts/index.tsx"),
-				O = s("./src/reddit/icons/fonts/Approve/index.tsx"),
-				j = s("./src/reddit/icons/fonts/Archived/index.tsx"),
-				C = s("./src/reddit/icons/fonts/Lock/index.tsx"),
-				S = s("./src/reddit/icons/fonts/Remove/index.tsx"),
-				T = s("./src/reddit/icons/fonts/Report/index.tsx"),
-				I = s("./src/reddit/icons/fonts/Spam/index.tsx"),
-				k = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				L = s("./src/reddit/icons/svgs/Automoderator/index.tsx"),
-				P = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
-				w = s("./src/reddit/components/PostBadges/index.m.less"),
-				M = s.n(w);
+				p = s("./src/reddit/constants/experiments.ts"),
+				h = s("./src/reddit/constants/posts.ts"),
+				b = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				x = s("./src/reddit/helpers/isRemoved.ts"),
+				f = s("./src/reddit/helpers/modTooltipTemplates/index.ts"),
+				E = s("./src/reddit/helpers/showReportIndicator/index.ts"),
+				g = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
+				y = s("./src/reddit/icons/fonts/index.tsx"),
+				v = s("./src/reddit/icons/fonts/Approve/index.tsx"),
+				_ = s("./src/reddit/icons/fonts/Archived/index.tsx"),
+				O = s("./src/reddit/icons/fonts/Lock/index.tsx"),
+				j = s("./src/reddit/icons/fonts/Remove/index.tsx"),
+				C = s("./src/reddit/icons/fonts/Report/index.tsx"),
+				S = s("./src/reddit/icons/fonts/Spam/index.tsx"),
+				T = s("./src/reddit/icons/fonts/Sticky/index.tsx"),
+				I = s("./src/reddit/icons/svgs/Automoderator/index.tsx"),
+				k = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
+				L = s("./src/reddit/models/AutomatedReporting/index.ts"),
+				P = s("./src/reddit/models/Post/index.ts"),
+				w = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
+				M = s("./src/reddit/selectors/platform.ts"),
+				N = s("./src/reddit/selectors/posts.ts"),
+				R = s("./src/reddit/components/PostBadges/index.m.less"),
+				B = s.n(R);
 
-			function N() {
-				return (N = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -788,42 +791,42 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const R = e => o.a.createElement("span", N({
-					className: M.a.removalReason
+			const H = e => o.a.createElement("span", D({
+					className: B.a.removalReason
 				}, e), e.children),
-				B = () => n.fbt._("Archived", null, {
+				F = () => n.fbt._("Archived", null, {
 					hk: "zv3q3"
 				}),
-				D = () => n.fbt._("Comments are locked", null, {
+				A = () => n.fbt._("Comments are locked", null, {
 					hk: "8HjJ9"
 				}),
-				H = e => n.fbt._("Moderator of {community name}", [n.fbt._param("community name", e)], {
+				U = e => n.fbt._("Moderator of {community name}", [n.fbt._param("community name", e)], {
 					hk: "nJqIB"
 				}),
-				F = () => n.fbt._("Stickied post", null, {
+				W = () => n.fbt._("Stickied post", null, {
 					hk: "3qSaBs"
 				}),
-				A = () => n.fbt._("Pinned post", null, {
+				J = () => n.fbt._("Pinned post", null, {
 					hk: "2oxErI"
 				}),
-				U = (e, t, s) => {
+				V = (e, t, s) => {
 					const n = `PostBadges--${e}--${t}`;
 					return s ? `${n}--${s}` : n
 				},
-				W = Object(h.t)({
-					isProfilePostListing: h.I,
-					isSubreddit: h.K,
+				G = Object(b.t)({
+					isProfilePostListing: b.I,
+					isSubreddit: b.K,
 					pageLayer: e => e
 				}),
-				J = Object(a.c)({
+				X = Object(a.c)({
 					isPinned: (e, {
 						post: t
-					}) => Object(v.p)(e, {
+					}) => Object(N.p)(e, {
 						postId: t.id
 					}),
-					modModeEnabled: h.Q
+					modModeEnabled: b.Q
 				}),
-				V = Object(i.b)(J, (e, t) => ({
+				K = Object(i.b)(X, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -832,161 +835,164 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = W(V(({
+			t.a = G(K(({
 				className: e,
 				displayText: t,
 				isSubreddit: s,
-				inSubredditOrProfile: i,
-				isCompactPinnedPost: a,
-				isPinned: l,
-				isProfilePostListing: h,
-				modModeEnabled: v,
-				onHideTooltip: w,
-				onOpenRemovalReasonModal: W,
-				onShowTooltip: J,
-				post: V,
-				tooltipType: G
+				inSubredditOrProfile: a,
+				isCompactPinnedPost: l,
+				isPinned: b,
+				isProfilePostListing: N,
+				modModeEnabled: R,
+				onHideTooltip: G,
+				onOpenRemovalReasonModal: X,
+				onShowTooltip: K,
+				post: q,
+				tooltipType: Y
 			}) => {
-				const X = Object(E.a)(),
-					K = {
+				const Z = Object(g.a)(),
+					z = {
 						caretOnTop: !1
 					},
-					q = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === p.a.SUBREDDIT,
-					Y = U("Approve", V.id, G),
-					Z = U("Archived", V.id, G),
-					z = U("Automod", V.id, G),
-					Q = U("Lock", V.id, G),
-					$ = U("Mod", V.id, G),
-					ee = U("Remove", V.id, G),
-					te = U("Report", V.id, G),
-					se = U("Spam", V.id, G),
-					ne = U("Sticky", V.id, G),
-					re = U("Pinned", V.id, G),
-					oe = V.bannedBy && Object(g.b)(V.bannedBy);
+					Q = Object(i.e)(M.g),
+					$ = Object(i.e)(w.a),
+					ee = q.isSponsored && Q && $ === p.n.NoLockIcon,
+					te = q.isRemoved && !q.modRemovalReason && !q.modNote && q.belongsTo.type === h.a.SUBREDDIT,
+					se = V("Approve", q.id, Y),
+					ne = V("Archived", q.id, Y),
+					re = V("Automod", q.id, Y),
+					oe = V("Lock", q.id, Y),
+					ie = V("Mod", q.id, Y),
+					ae = V("Remove", q.id, Y),
+					ce = V("Report", q.id, Y),
+					de = V("Spam", q.id, Y),
+					le = V("Sticky", q.id, Y),
+					ue = V("Pinned", q.id, Y),
+					me = q.bannedBy && Object(L.b)(q.bannedBy);
 				return o.a.createElement("div", {
 					className: e
-				}, i && t && V.distinguishType === d.C.MODERATOR && o.a.createElement(r.Fragment, null, X ? o.a.createElement(_.a, {
+				}, a && t && q.distinguishType === d.C.MODERATOR && o.a.createElement(r.Fragment, null, Z ? o.a.createElement(y.a, {
 					name: "mod",
 					isFilled: !0,
-					className: Object(c.a)(M.a.icon, M.a.modIcon)
-				}) : o.a.createElement(P.a, {
-					className: Object(c.a)(M.a.icon, M.a.modIcon),
-					desc: H(t),
-					id: $,
-					onMouseEnter: J($),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: $,
-					text: H(t)
-				}, K))), V.isArchived && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.archivedIcon),
-					desc: B(),
-					id: Z,
-					onMouseEnter: J(Z),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: Z,
-					text: B()
-				}, K))), V.isLocked && o.a.createElement(r.Fragment, null, o.a.createElement(C.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.lockIcon),
-					desc: D(),
-					id: Q,
-					onMouseEnter: J(Q),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: Q,
-					text: D()
-				}, K))), s && Object(y.q)(V) && !a && o.a.createElement(r.Fragment, null, o.a.createElement(k.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.stickyIcon),
+					className: Object(c.a)(B.a.icon, B.a.modIcon)
+				}) : o.a.createElement(k.a, {
+					className: Object(c.a)(B.a.icon, B.a.modIcon),
+					desc: U(t),
+					id: ie,
+					onMouseEnter: K(ie),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: ie,
+					text: U(t)
+				}, z))), q.isArchived && o.a.createElement(r.Fragment, null, o.a.createElement(_.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.archivedIcon),
 					desc: F(),
 					id: ne,
-					onMouseEnter: J(ne),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
+					onMouseEnter: K(ne),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
 					tooltipId: ne,
 					text: F()
-				}, K))), h && l && o.a.createElement(r.Fragment, null, o.a.createElement(k.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.stickyIcon),
+				}, z))), q.isLocked && !ee && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.lockIcon),
 					desc: A(),
-					id: re,
-					onMouseEnter: J(re),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: re,
+					id: oe,
+					onMouseEnter: K(oe),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: oe,
 					text: A()
-				}, K))), (V.isApproved || V.approvedBy) && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.approveIcon),
-					desc: Object(x.a)(V),
-					id: Y,
-					onMouseEnter: J(Y),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: Y,
-					text: Object(x.a)(V)
-				}, K))), Object(b.a)(V) && !oe && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.removeIcon),
-					desc: Object(x.c)(V),
-					id: ee,
-					onMouseEnter: J(ee),
-					onMouseLeave: w
-				}), q && o.a.createElement(m.a, {
-					className: M.a.addRemovalReason,
-					onClick: W,
+				}, z))), s && Object(P.q)(q) && !l && o.a.createElement(r.Fragment, null, o.a.createElement(T.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.stickyIcon),
+					desc: W(),
+					id: le,
+					onMouseEnter: K(le),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: le,
+					text: W()
+				}, z))), N && b && o.a.createElement(r.Fragment, null, o.a.createElement(T.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.stickyIcon),
+					desc: J(),
+					id: ue,
+					onMouseEnter: K(ue),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: ue,
+					text: J()
+				}, z))), (q.isApproved || q.approvedBy) && o.a.createElement(r.Fragment, null, o.a.createElement(v.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.approveIcon),
+					desc: Object(f.a)(q),
+					id: se,
+					onMouseEnter: K(se),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: se,
+					text: Object(f.a)(q)
+				}, z))), Object(x.a)(q) && !me && o.a.createElement(r.Fragment, null, o.a.createElement(j.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.removeIcon),
+					desc: Object(f.c)(q),
+					id: ae,
+					onMouseEnter: K(ae),
+					onMouseLeave: G
+				}), te && o.a.createElement(m.a, {
+					className: B.a.addRemovalReason,
+					onClick: X,
 					text: n.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
-				}), (V.modRemovalReason || V.modNote) && o.a.createElement(R, {
-					onMouseEnter: J(ee),
-					onMouseLeave: w
+				}), (q.modRemovalReason || q.modNote) && o.a.createElement(H, {
+					onMouseEnter: K(ae),
+					onMouseLeave: G
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
-				})), o.a.createElement(u.c, N({
-					tooltipId: ee,
-					text: Object(x.c)(V)
-				}, K))), V.bannedBy && V.isSpam && o.a.createElement(r.Fragment, null, o.a.createElement(I.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.spamIcon),
-					desc: Object(x.e)(V),
-					id: se,
-					onMouseEnter: J(se),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: se,
-					text: Object(x.e)(V)
-				}, K))), ("AutoModerator" === V.approvedBy || "AutoModerator" === V.bannedBy) && o.a.createElement(r.Fragment, null, X ? o.a.createElement(_.a, {
+				})), o.a.createElement(u.c, D({
+					tooltipId: ae,
+					text: Object(f.c)(q)
+				}, z))), q.bannedBy && q.isSpam && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.spamIcon),
+					desc: Object(f.e)(q),
+					id: de,
+					onMouseEnter: K(de),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: de,
+					text: Object(f.e)(q)
+				}, z))), ("AutoModerator" === q.approvedBy || "AutoModerator" === q.bannedBy) && o.a.createElement(r.Fragment, null, Z ? o.a.createElement(y.a, {
 					name: "bot",
 					isFilled: !0,
-					className: Object(c.a)(M.a.icon, M.a.automoderator, !!V.bannedBy && M.a.isRemoved)
-				}) : o.a.createElement(L.a, {
-					className: Object(c.a)(M.a.icon, M.a.automoderator, !!V.bannedBy && M.a.isRemoved),
-					desc: x.b,
-					id: z,
-					onMouseEnter: J(z),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: z,
-					text: x.b
-				}, K))), oe && o.a.createElement("div", {
-					className: M.a.removalReason
-				}, n.fbt._("• Removed by the Automated {filterName}", [n.fbt._param("filterName", oe)], {
+					className: Object(c.a)(B.a.icon, B.a.automoderator, !!q.bannedBy && B.a.isRemoved)
+				}) : o.a.createElement(I.a, {
+					className: Object(c.a)(B.a.icon, B.a.automoderator, !!q.bannedBy && B.a.isRemoved),
+					desc: f.b,
+					id: re,
+					onMouseEnter: K(re),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: re,
+					text: f.b
+				}, z))), me && o.a.createElement("div", {
+					className: B.a.removalReason
+				}, n.fbt._("• Removed by the Automated {filterName}", [n.fbt._param("filterName", me)], {
 					hk: "3C408F"
-				})), Object(f.a)(V) && !v && o.a.createElement(r.Fragment, null, o.a.createElement(T.a, {
-					isFilled: X,
-					className: Object(c.a)(M.a.icon, M.a.reportIcon),
-					desc: Object(x.d)(V.numReports),
-					id: te,
-					onMouseEnter: J(te),
-					onMouseLeave: w
-				}), o.a.createElement(u.c, N({
-					tooltipId: te,
-					text: Object(x.d)(V.numReports)
-				}, K))))
+				})), Object(E.a)(q) && !R && o.a.createElement(r.Fragment, null, o.a.createElement(C.a, {
+					isFilled: Z,
+					className: Object(c.a)(B.a.icon, B.a.reportIcon),
+					desc: Object(f.d)(q.numReports),
+					id: ce,
+					onMouseEnter: K(ce),
+					onMouseLeave: G
+				}), o.a.createElement(u.c, D({
+					tooltipId: ce,
+					text: Object(f.d)(q.numReports)
+				}, z))))
 			}))
 		},
 		"./src/reddit/components/PostMeta/index.m.less": function(e, t, s) {
@@ -2260,12 +2266,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.ld.SmIcon:
+						case b.nd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.ld.SmIconHc:
+						case b.nd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2755,12 +2761,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.gd
+						experimentName: n.id
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.ld.SmIcon || t === n.ld.SmIconHc
+					return t === n.nd.SmIcon || t === n.nd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2783,4 +2789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.717f2b693f2ba8dfddf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.a9d1fd0674bd42cf74b8.js.map

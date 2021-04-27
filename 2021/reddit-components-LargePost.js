@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.be467c68eef9fde8a7b8.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6c133c13f1d9a9dbf761.js
+// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -940,16 +940,16 @@
 				}, d && q);
 				return c ? Object.assign(Object.assign({}, P), {}, ((_ = {})[v] = b ? "0" : "", _[h] = f ? "0" : "", _.transform = (x.devicePixelRatio || 1) < 2 ? "translate(" + p + "px, " + m + "px)" : "translate3d(" + p + "px, " + m + "px, 0)", _)) : Object.assign(Object.assign({}, P), {}, ((t = {})[v] = b ? m + "px" : "", t[h] = f ? p + "px" : "", t.transform = "", t))
 			}
-			var G = {
+			var X = {
 				left: "right",
 				right: "left",
 				bottom: "top",
 				top: "bottom"
 			};
 
-			function X(e) {
+			function G(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
-					return G[e]
+					return X[e]
 				}))
 			}
 			var J = {
@@ -1280,9 +1280,9 @@
 								n = e.options,
 								o = e.name;
 							if (!t.modifiersData[o]._skip) {
-								for (var r = n.mainAxis, s = void 0 === r || r, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, v = H(h), x = c || (v === h || !f ? [X(h)] : function(e) {
+								for (var r = n.mainAxis, s = void 0 === r || r, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, v = H(h), x = c || (v === h || !f ? [G(h)] : function(e) {
 										if (H(e) === _) return [];
-										var t = X(e);
+										var t = G(e);
 										return [Y(e), t, Y(t)]
 									}(h)), g = [h].concat(x).reduce((function(e, n) {
 										return e.concat(H(n) === _ ? function(e, t) {
@@ -1333,8 +1333,8 @@
 											padding: d
 										}),
 										z = R ? F ? j : k : F ? w : O;
-									y[D] > C[D] && (z = X(z));
-									var U = X(z),
+									y[D] > C[D] && (z = G(z));
+									var U = G(z),
 										q = [];
 									if (s && q.push(W[B] <= 0), a && q.push(W[z] <= 0, W[U] <= 0), q.every((function(e) {
 											return e
@@ -1353,8 +1353,8 @@
 												}))
 											}));
 											if (t) return N = t, "break"
-										}, G = f ? 3 : 1; G > 0; G--) {
-										if ("break" === Z(G)) break
+										}, X = f ? 3 : 1; X > 0; X--) {
+										if ("break" === Z(X)) break
 									}
 								t.placement !== N && (t.modifiersData[o]._skip = !0, t.placement = N, t.reset = !0)
 							}
@@ -1416,19 +1416,19 @@
 										U = g === E ? T[B] : N[B],
 										q = g === E ? -N[B] : -T[B],
 										Z = t.elements.arrow,
-										G = m && Z ? b(Z) : {
+										X = m && Z ? b(Z) : {
 											width: 0,
 											height: 0
 										},
-										X = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										G = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										J = X[A],
-										Y = X[L],
-										K = re(0, T[B], G[B]),
+										J = G[A],
+										Y = G[L],
+										K = re(0, T[B], X[B]),
 										Q = _ ? T[B] / 2 - W - K - J - M : U - K - J - M,
 										$ = _ ? -T[B] / 2 + W + K + Y + M : q + K + Y + M,
 										ee = t.elements.arrow && y(t.elements.arrow),
@@ -2213,7 +2213,7 @@
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var G = () => {
+			var X = () => {
 					const e = Object(V.a)();
 					return r.a.createElement("div", {
 						className: q.a.container
@@ -2226,7 +2226,7 @@
 						hk: "1qU8t4"
 					})))
 				},
-				X = n("./src/reddit/components/PostRailAndVotes/index.tsx"),
+				G = n("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				J = n("./src/reddit/components/PostTitle/index.tsx"),
 				Y = n("./src/reddit/components/PostTopLine/index.tsx"),
 				K = n("./src/reddit/components/SourceLink/index.tsx"),
@@ -2242,7 +2242,7 @@
 			const ae = Object(i.a)(w.L, e => e.some(ie.c)),
 				ce = Object(i.a)(ae, e => e),
 				de = (e, t) => Object(se.c)(e, {
-					experimentName: Q.nb,
+					experimentName: Q.pb,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: n
@@ -2346,7 +2346,7 @@
 						isActionBarAnimationEnabled: Oe,
 						postId: we,
 						postIds: je
-					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], _e = ke ? void 0 : p, Pe = Object(d.a)(se), Ee = ie && Pe, Ce = Object(a.a)(se), Se = Object(c.a)(se), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Me = ye && Ne, Ie = n ? n - D.a : void 0, Ae = !(j && z || $), Le = (e => e === Q.Gc.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Gc.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
+					} = e, ke = !!e.redditStyle || !!e["data-redditstyle"], _e = ke ? void 0 : p, Pe = Object(d.a)(se), Ee = ie && Pe, Ce = Object(a.a)(se), Se = Object(c.a)(se), Te = Object(B.c)(le), Ne = !!le.media && le.media.type === b.o.RTJSON, Me = ye && Ne, Ie = n ? n - D.a : void 0, Ae = !(j && z || $), Le = (e => e === Q.Ic.OnlyTitles)(pe) && !Object(ne.a)(le), Be = (e => e === Q.Ic.MediumHeight)(pe) && !Object(ne.a)(le), Fe = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2361,7 +2361,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), Re = !!ee && !Object(Q.zd)(ee), De = (!y || Re) && !le.isSponsored, We = Object(k.t)(le, g), {
+					})(e), Re = !!ee && !Object(Q.Bd)(ee), De = (!y || Re) && !le.isSponsored, We = Object(k.t)(le, g), {
 						source: He
 					} = We, Ve = r.a.createElement(r.a.Fragment, null, r.a.createElement(R.a, {
 						className: Object(_.a)(be.a.container, s, me.a.largeAndMediumPostStyles, me.a.largeAndMediumActiveStyles, Object(l.a)(e), {
@@ -2376,7 +2376,7 @@
 						onClick: ae,
 						onPostContentClick: o,
 						eventFactory: u
-					}, r.a.createElement(X.a, {
+					}, r.a.createElement(G.a, {
 						model: le,
 						handleVote: e.handleVote,
 						showBulkActionCheckbox: e.showBulkActionCheckbox,
@@ -2397,7 +2397,7 @@
 						redditStyle: ke
 					}, r.a.createElement(M.a, {
 						post: le
-					}), Fe && Fe.showPinnnedHeader && r.a.createElement(G, null), r.a.createElement(Y.a, {
+					}), Fe && Fe.showPinnnedHeader && r.a.createElement(X, null), r.a.createElement(Y.a, {
 						className: be.a.postTopLine,
 						hideAwards: ve,
 						hideNSFWPref: v,
@@ -3243,11 +3243,11 @@
 						subredditOrProfile: U,
 						isFollowed: q,
 						shouldShowFollowButton: Z,
-						onFollowPostClick: G
+						onFollowPostClick: X
 					} = e,
-					X = Object(r.useCallback)(() => {
-						G && (G(q ? I.f.UNFOLLOWED : I.f.FOLLOWED), t(q ? Object(S.h)(D.id) : Object(S.b)(D.id)))
-					}, [G, q, D.id]),
+					G = Object(r.useCallback)(() => {
+						X && (X(q ? I.f.UNFOLLOWED : I.f.FOLLOWED), t(q ? Object(S.h)(D.id) : Object(S.b)(D.id)))
+					}, [X, q, D.id]),
 					J = u || L;
 				return s.a.createElement(F, {
 					className: n
@@ -3303,7 +3303,7 @@
 					className: B.a.outboundLinkIcon
 				})), Z && s.a.createElement(y, {
 					isFilled: !!q,
-					onClick: X,
+					onClick: G,
 					hasTooltip: !0,
 					tooltipText: o.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -3732,11 +3732,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.tb
+					experimentName: o.vb
 				});
-				return !(!t || Object(o.zd)(t))
+				return !(!t || Object(o.Bd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.be467c68eef9fde8a7b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6c133c13f1d9a9dbf761.js.map
