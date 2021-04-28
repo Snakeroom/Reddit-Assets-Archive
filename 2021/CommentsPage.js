@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c5dc2faf42290f6d15dd.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b78b94a38569c3f2c26a.js
+// Retrieved at 4/28/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3517,7 +3517,7 @@
 						scrollToAndRemeasure: o
 					})),
 					onIgnoreReports: () => e(Object(K.g)(t)),
-					onOpenPowerupsModal: () => e(Object(q.c)()),
+					onOpenPowerupsModal: () => e(Object(q.c)("comment_top_supporter_badge")),
 					onVoteClick: s => {
 						const [o, r] = s === Yt.a.upvoted ? [Object(u.q)(t), "upvote_comment"] : [Object(u.j)(t), "downvote_comment"];
 						n(r, t)(), e(o)
@@ -3649,7 +3649,7 @@
 						className: os.a.UserIcon
 					}), L && a.a.createElement(Lt.a, {
 						onClick: e => {
-							$(Object(H.p)("comment")), z(), e.stopPropagation(), e.preventDefault()
+							$(Object(H.q)("comment")), z(), e.stopPropagation(), e.preventDefault()
 						},
 						className: os.a.topSupporterIcon,
 						title: D.fbt._("Powerups Top Supporter", null, {
@@ -9604,4 +9604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c5dc2faf42290f6d15dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b78b94a38569c3f2c26a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.a5642fdf837266e57d88.js
-// Retrieved at 4/26/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.b5258bc5e6d16164c990.js
+// Retrieved at 4/28/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-OldPowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -60,8 +60,8 @@
 				b = s("./src/reddit/controls/Button/index.tsx"),
 				p = s("./src/config.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
-				E = s("./src/reddit/models/Gold/Powerups/index.ts"),
-				k = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				k = s("./src/reddit/models/Gold/Powerups/index.ts"),
+				E = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				g = s("./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less"),
 				_ = s.n(g);
 			const {
@@ -85,7 +85,7 @@
 						onClick: e => {
 							e.stopPropagation(), r(0 === s ? a - 1 : s - 1)
 						}
-					}, n.a.createElement(k.a, {
+					}, n.a.createElement(E.a, {
 						className: _.a.icon
 					})), n.a.createElement("div", {
 						className: _.a.dots
@@ -103,7 +103,7 @@
 						onClick: e => {
 							e.stopPropagation(), r(o ? 0 : s + 1)
 						}
-					}, n.a.createElement(k.a, {
+					}, n.a.createElement(E.a, {
 						className: _.a.icon
 					})))
 				},
@@ -154,9 +154,9 @@
 			}(A || (A = {}));
 			const I = {
 				[A.Intro]: "linear-gradient(90deg, #EC7406 0%, #F5D21A 100%)",
-				[E.a.HdVideo]: "linear-gradient(83deg, #7544FF 0%, #FF585B 100%)",
-				[E.a.CommentsWithGifs]: "linear-gradient(90deg, #0E69A2 0%, #50CABD 100%)",
-				[E.a.CommentsWithEmoji]: "linear-gradient(90deg, #DC0A0A 0%, #F7A456 100%)",
+				[k.a.HdVideo]: "linear-gradient(83deg, #7544FF 0%, #FF585B 100%)",
+				[k.a.CommentsWithGifs]: "linear-gradient(90deg, #0E69A2 0%, #50CABD 100%)",
+				[k.a.CommentsWithEmoji]: "linear-gradient(90deg, #DC0A0A 0%, #F7A456 100%)",
 				[A.Outro]: "linear-gradient(90deg, #219A52 0%, #00D5D5 100%)"
 			};
 			var U = Object(r.b)(L)((function(e) {
@@ -170,9 +170,9 @@
 						userBenefits: d
 					} = e, [u, m] = Object(a.useState)(0);
 					if (!l) return null;
-					const b = s.filter(e => I[e] && E.d[e]),
+					const b = s.filter(e => I[e] && k.d[e]),
 						v = b.length + 2,
-						k = t || b.every(e => d.includes(e)) && c;
+						E = t || b.every(e => d.includes(e)) && c;
 					return n.a.createElement("div", {
 						className: Object(i.a)(h.a.container, r)
 					}, n.a.createElement("div", {
@@ -210,7 +210,7 @@
 						title: B._("Unlock perks for {subreddit name}", [B._param("subreddit name", l.displayText)], {
 							hk: "UpSK1"
 						}),
-						isUnlocked: k
+						isUnlocked: E
 					})), b.map((e, t) => n.a.createElement("div", {
 						className: Object(i.a)(h.a.slide, {
 							[h.a.visible]: u === t + 1
@@ -218,8 +218,8 @@
 						key: `slide_${e}`
 					}, n.a.createElement(x, {
 						iconUrl: `${p.a.assetPath}/img/powerups/${e}.svg`,
-						title: E.d[e](),
-						isUnlocked: k || d.includes(e)
+						title: k.d[e](),
+						isUnlocked: E || d.includes(e)
 					}))), n.a.createElement("div", {
 						className: Object(i.a)(h.a.slide, {
 							[h.a.visible]: u === v - 1
@@ -257,16 +257,16 @@
 					subredditId: m
 				} = e, p = Object(r.d)(), v = Object(c.a)();
 				Object(a.useEffect)(() => {
-					v(Object(l.j)())
+					v(Object(l.k)())
 				}, [m, v]);
-				const E = () => {
-					v(Object(l.i)()), p(Object(d.c)())
+				const k = () => {
+					v(Object(l.j)()), p(Object(d.c)("in_feed_unit"))
 				};
 				if (!o || 1 === o.tiersInfo.length || !u) return null;
 				const {
-					tier: k,
+					tier: E,
 					tiersInfo: g
-				} = o, _ = null === (t = g[1]) || void 0 === t ? void 0 : t.benefits, f = k >= 2;
+				} = o, _ = null === (t = g[1]) || void 0 === t ? void 0 : t.benefits, f = E >= 2;
 				return n.a.createElement("div", {
 					className: Object(i.a)(y.a.container, s)
 				}, n.a.createElement("h2", {
@@ -277,13 +277,13 @@
 					areAllBenefitsUnlocked: f,
 					benefits: _,
 					className: y.a.gallery,
-					onClick: E,
+					onClick: k,
 					subredditId: m
 				}), n.a.createElement("footer", {
 					className: y.a.footer
 				}, n.a.createElement(b.l, {
 					className: y.a.button,
-					onClick: E
+					onClick: k
 				}, F._("Learn more", null, {
 					hk: "1hZsGq"
 				}))))
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.a5642fdf837266e57d88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.b5258bc5e6d16164c990.js.map
