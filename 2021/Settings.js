@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.447d58b009f68a19f9be.js
-// Retrieved at 4/28/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.45c44ae792473f901c1d.js
+// Retrieved at 4/28/2021, 2:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -8334,15 +8334,14 @@
 			var Zt = n("./src/reddit/components/Settings/PrivacyForm.m.less"),
 				Qt = n.n(Zt);
 			const Xt = {
-				[wt.b.Whitelisted]: () => r.fbt._("nobody", null, {
-					hk: "30E0ty"
-				}),
-				[wt.b.Everyone]: () => r.fbt._("everyone", null, {
-					hk: "4oXXLa"
-				})
-			};
-			console.log(Xt);
-			const $t = e => {
+					[wt.b.Whitelisted]: () => r.fbt._("nobody", null, {
+						hk: "30E0ty"
+					}),
+					[wt.b.Everyone]: () => r.fbt._("everyone", null, {
+						hk: "4oXXLa"
+					})
+				},
+				$t = e => {
 					const t = Xt[e];
 					return t && t()
 				},
@@ -10756,4 +10755,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.447d58b009f68a19f9be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.45c44ae792473f901c1d.js.map
