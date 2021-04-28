@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a192cad7b171c14e1861.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.0f2ea0ecb08e6ff61e75.js
+// Retrieved at 4/28/2021, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -114,8 +114,8 @@
 				x = s("./src/reddit/selectors/profile.ts"),
 				_ = s("./src/reddit/selectors/subreddit.ts"),
 				M = s("./src/reddit/selectors/subscriptions.ts"),
-				P = s("./src/reddit/selectors/user.ts");
-			const j = () => i.fbt._("Sorry, failed to update favorites.", null, {
+				j = s("./src/reddit/selectors/user.ts");
+			const P = () => i.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
 				E = Object(o.a)(l.c),
@@ -149,10 +149,10 @@
 						name: `${n.ac}${e.name}`,
 						type: e.type
 					});
-					if (!Object(P.J)(l())) return o(Object(d.k)({
+					if (!Object(j.J)(l())) return o(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void o(Object(r.j)());
-					const C = Object(P.i)(l());
+					const C = Object(j.i)(l());
 					if (C) {
 						const t = v.length,
 							s = e.length;
@@ -257,7 +257,7 @@
 						subredditModels: C,
 						profileModels: g
 					})), t(Object(c.f)({
-						text: j(),
+						text: P(),
 						kind: w.b.Error
 					}))))
 				}, U = Object(o.a)(l.d), A = e => async (t, s, {
@@ -266,7 +266,7 @@
 					const o = s().multireddits.models,
 						a = () => {
 							t(Object(c.f)({
-								text: j(),
+								text: P(),
 								kind: w.b.Error
 							}))
 						},
@@ -295,7 +295,7 @@
 				}) => {
 					const a = s(),
 						r = a.multireddits.models;
-					if (!Object(P.J)(a)) return;
+					if (!Object(j.J)(a)) return;
 					const d = (e = !0) => {
 							t(Object(c.f)({
 								text: i.fbt._("Sorry, failed to {followAction}", [i.fbt._param("followAction", e ? i.fbt._("follow", null, {
@@ -425,8 +425,8 @@
 				x = s("./src/reddit/constants/keycodes.ts"),
 				_ = s("./src/reddit/helpers/trackers/rpan.ts"),
 				M = s("./src/reddit/selectors/media.ts"),
-				P = s("./src/reddit/selectors/platform.ts"),
-				j = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				j = s("./src/reddit/selectors/platform.ts"),
+				P = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				E = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				L = s("./src/reddit/selectors/user.ts"),
 				I = s("./src/reddit/selectors/video.ts"),
@@ -438,9 +438,9 @@
 				playerName: "RPAN Listing Player"
 			}), k = 3e3, H = Object(d.c)({
 				autoplay: L.b,
-				isOverlayOpen: P.h,
+				isOverlayOpen: j.h,
 				mutedInFeed: I.i,
-				unavailableVideoUrl: j.o,
+				unavailableVideoUrl: P.o,
 				volumeInFeed: M.d,
 				currentStream: (e, {
 					postId: t
@@ -715,11 +715,12 @@
 				renderVideo() {
 					const {
 						autoplay: e,
-						postId: t,
-						postTitle: s
+						className: t,
+						postId: s,
+						postTitle: i
 					} = this.props;
 					return a.a.createElement("div", {
-						className: V.a.clip9x16
+						className: Object(c.a)(V.a.clip9x16, t)
 					}, a.a.createElement(N, {
 						autoplay: e,
 						controls: !1,
@@ -729,9 +730,9 @@
 						startTime: this.state.currentTime,
 						url: this.url,
 						muxVideoDuration: void 0,
-						muxVideoId: t,
+						muxVideoId: s,
 						muxVideoIsLive: this.state.live,
-						muxVideoTitle: s,
+						muxVideoTitle: i,
 						onEnded: this.handleEnded,
 						onError: this.handleError,
 						onLevelLoaded: this.handleLevelLoaded,
@@ -1032,4 +1033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a192cad7b171c14e1861.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.0f2ea0ecb08e6ff61e75.js.map
