@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f1d9b57db7aefc8273cb.js
-// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.af847a45607dddf7a120.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -280,14 +280,14 @@
 				z = n("./src/reddit/constants/headers.ts");
 			const Y = e => Object(H.a)(Object(X.a)(e, [z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: U.cb.GET,
+				method: U.eb.GET,
 				type: "json"
 			});
 			var $ = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = n.n($);
 			const {
 				fbt: te
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, se = 30 * U.db, ae = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, se = 30 * U.fb, ae = "SubredditAdoption";
 			class re extends c.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -2091,4 +2091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.f1d9b57db7aefc8273cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.af847a45607dddf7a120.js.map

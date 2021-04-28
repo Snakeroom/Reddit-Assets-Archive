@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.fd0daf5191043ddd31fd.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.5b5d5b1507b521be1bfe.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -79,7 +79,7 @@
 					correlation_id: r
 				};
 				return Object(f.a)(Object(g.a)(e, [k.a]), {
-					method: x.cb.POST,
+					method: x.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: a
 				}).then(e => e.ok ? {
@@ -869,4 +869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.fd0daf5191043ddd31fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.5b5d5b1507b521be1bfe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.450b29363128aa9f547d.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.ce23ebc9264c5ec79efa.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/graphql/operations/SubredditWiki.json": function(e) {
@@ -920,7 +920,7 @@
 						const {
 							pageName: t
 						} = e;
-						E = t === o.Ub.WikiContributors, _ = t === o.Ub.WikiBanned
+						E = t === o.Wb.WikiContributors, _ = t === o.Wb.WikiBanned
 					}
 					const y = r(),
 						I = (w || i) && !Ve(y, d),
@@ -935,7 +935,7 @@
 					W.push(n(((e, t = !1) => async (i, s) => {
 						const n = s(),
 							r = {
-								sort: o.P.HOT
+								sort: o.R.HOT
 							},
 							a = Object(c.a)(e, r.sort),
 							d = n.listings.postOrder.api.error[a],
@@ -1128,7 +1128,7 @@
 				}, N = Object(r.a)(h.e), O = (e, t) => async (i, r, d) => {
 					const l = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/friend`,
-						method: n.cb.POST,
+						method: n.eb.POST,
 						data: {
 							api_type: "json",
 							name: i.username,
@@ -1173,7 +1173,7 @@
 				}, E = Object(r.a)(h.f), _ = (e, t) => async (i, r, d) => {
 					const l = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/unfriend`,
-						method: n.cb.POST,
+						method: n.eb.POST,
 						data: {
 							api_type: "json",
 							id: i,
@@ -1361,7 +1361,7 @@
 				}, N = Object(r.a)(h.e), O = (e, t) => async (i, r, d) => {
 					const l = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/friend`,
-						method: n.cb.POST,
+						method: n.eb.POST,
 						data: {
 							api_type: "json",
 							name: i,
@@ -1407,7 +1407,7 @@
 				}, E = Object(r.a)(h.f), _ = (e, t) => async (i, r, d) => {
 					const l = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/unfriend`,
-						method: n.cb.POST,
+						method: n.eb.POST,
 						data: {
 							api_type: "json",
 							id: i,
@@ -1602,7 +1602,7 @@
 				}) => async (r, a, o) => {
 					const c = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 						endpoint: `${e.context.apiUrl}/r/${e.subredditName}/wiki/settings/${e.wikiPageName}`,
-						method: n.cb.POST,
+						method: n.eb.POST,
 						data: {
 							permlevel: h[e.editPermissions],
 							listed: e.isVisible ? "on" : void 0
@@ -1629,7 +1629,7 @@
 				}) => async (r, a, c) => {
 					const m = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 						endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/alloweditor/add`,
-						method: n.cb.POST,
+						method: n.eb.POST,
 						data: {
 							page: e.wikiPageName,
 							username: e.username
@@ -1664,7 +1664,7 @@
 				}) => async (s, r, a) => {
 					const c = await (e => Object(d.a)(Object(l.a)(e.context, [u.a]), {
 						endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/alloweditor/del`,
-						method: n.cb.POST,
+						method: n.eb.POST,
 						data: {
 							page: e.wikiPageName,
 							username: e.username
@@ -1728,7 +1728,7 @@
 				b = i("./src/reddit/helpers/wiki/wikiRevision.ts");
 			var p = (e, t) => Object(l.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/r/${t.subredditName}/api/wiki/hide`,
-				method: n.cb.POST,
+				method: n.eb.POST,
 				data: {
 					page: t.wikiPageName,
 					revision: Object(b.b)(t.revisionId)
@@ -1736,7 +1736,7 @@
 			});
 			var h = (e, t) => Object(l.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/r/${t.subredditName}/api/wiki/revert`,
-				method: n.cb.POST,
+				method: n.eb.POST,
 				data: {
 					page: t.wikiPageName,
 					revision: Object(b.b)(t.revisionId)
@@ -1912,29 +1912,34 @@
 				r = i("./src/lib/classNames/index.ts"),
 				a = i("./src/config.ts"),
 				o = i("./src/reddit/controls/InternalLink/index.tsx"),
-				d = i("./src/reddit/components/AuthorLink/index.m.less"),
-				c = i.n(d);
+				d = i("./src/reddit/hooks/useClickSourceData.ts"),
+				c = i("./src/reddit/components/AuthorLink/index.m.less"),
+				l = i.n(c);
 			t.a = e => {
-				const t = Object(r.a)(e.className, c.a.authorLinkStyles, {
-					[c.a.isAdmin]: e.isAdmin,
-					[c.a.isAdminEmeritus]: e.isAdminEmeritus,
-					[c.a.isLivestreaming]: e.isLivestreaming,
-					[c.a.isMod]: e.isMod,
-					[c.a.isOp]: e.isOp,
-					[c.a.isStrong]: e.isStrong,
-					[c.a.isUnstyled]: e.isUnstyled
-				});
+				const t = Object(r.a)(e.className, l.a.authorLinkStyles, {
+						[l.a.isAdmin]: e.isAdmin,
+						[l.a.isAdminEmeritus]: e.isAdminEmeritus,
+						[l.a.isLivestreaming]: e.isLivestreaming,
+						[l.a.isMod]: e.isMod,
+						[l.a.isOp]: e.isOp,
+						[l.a.isStrong]: e.isStrong,
+						[l.a.isUnstyled]: e.isUnstyled
+					}),
+					i = Object(d.a)();
 				return e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? n.a.createElement("a", {
 					className: t,
 					href: `${a.a.redditUrl}/user/${e.author}`,
 					rel: "noopener noreferrer",
 					target: "_blank"
 				}, e.children) : e.isAuthorDeleted ? n.a.createElement("span", {
-					className: Object(r.a)(c.a.deletedAuthorLink, e.className)
+					className: Object(r.a)(l.a.deletedAuthorLink, e.className)
 				}, e.children) : n.a.createElement(o.a, {
 					className: t,
 					style: e.style,
-					to: `/user/${e.author}/`
+					to: {
+						pathname: `/user/${e.author}/`,
+						state: i
+					}
 				}, e.children)
 			}
 		},
@@ -3556,7 +3561,7 @@
 				f = i("./src/reddit/constants/headers.ts");
 			var x = e => Object(k.a)(Object(g.a)(e.context, [f.a]), {
 					endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`,
-					method: h.cb.POST,
+					method: h.eb.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -4837,7 +4842,7 @@
 					const {
 						subreddit: t,
 						subredditName: i
-					} = e, s = Object(m.a)(i, u.P.HOT, {});
+					} = e, s = Object(m.a)(i, u.R.HOT, {});
 					return n.a.createElement(b.a, {
 						listingKey: s,
 						listingName: i.toLowerCase(),
@@ -5127,4 +5132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.450b29363128aa9f547d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ce23ebc9264c5ec79efa.js.map

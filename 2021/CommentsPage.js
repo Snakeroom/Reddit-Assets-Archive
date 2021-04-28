@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a4395b446582322c4461.js
-// Retrieved at 4/28/2021, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c5dc2faf42290f6d15dd.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1298,8 +1298,8 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.Wb.WEEK.toUpperCase(),
-									sort: h.I.TOP,
+									range: h.Yb.WEEK.toUpperCase(),
+									sort: h.K.TOP,
 									subredditName: i.name
 								},
 								n = {
@@ -1976,7 +1976,7 @@
 			}) => {
 				const i = await (async (e, t, s) => Object(g.a)(Object(f.a)(e, [x.a]), {
 						endpoint: `${e.apiUrl}/api/set_suggested_sort/`,
-						method: c.cb.POST,
+						method: c.eb.POST,
 						data: {
 							api_type: "json",
 							id: t,
@@ -4704,7 +4704,7 @@
 					let u, h;
 					if (this.state.mounted || p === r.a.Live) u = function(e, t, s) {
 						const o = Object(r.e)(e, t),
-							n = new Date(e * a.Ib);
+							n = new Date(e * a.Kb);
 						let c;
 						return o === r.a.Live || s ? i.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -6875,7 +6875,7 @@
 					}, m.a.createElement(E.a, {
 						className: R.a.seeMorePostsText,
 						to: Object(p.a)(x, {
-							type: b.Qb.Posts
+							type: b.Sb.Posts
 						})
 					}, D._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -7252,13 +7252,13 @@
 				}),
 				H = Object(d.b)(z, e => ({
 					loadMorePosts: t => e(Object(h.r)({
-						sort: l.P.HOT,
+						sort: l.R.HOT,
 						subredditName: t
 					}))
 				}));
 			class U extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.P.TOP, t, e, l.Wb.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.R.TOP, t, e, l.Yb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(k.c)("recommended_footer"))
 					}
 				}
@@ -7268,8 +7268,8 @@
 						post: t,
 						subredditOrProfile: s
 					} = this.props;
-					return e && t && t.id ? Object(p.a)(t.id) : Object(u.a)(s.name, l.P.TOP, {
-						t: l.Wb.WEEK
+					return e && t && t.id ? Object(p.a)(t.id) : Object(u.a)(s.name, l.R.TOP, {
+						t: l.Yb.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -7281,9 +7281,9 @@
 						name: n
 					} = t, r = Object(_.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(x.Bd)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
+					return i = !e || Object(x.Dd)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
 						hk: "2g363L"
-					}) : e === x.ac.Nlp15Max ? o.fbt._("More posts like this", null, {
+					}) : e === x.cc.Nlp15Max ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -7304,7 +7304,7 @@
 						post: i,
 						shouldShowSubredditUpsell: d,
 						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!n && !Object(x.Bd)(n), p = i && i.id;
+					} = this.props, l = i && Object(C.a)(i), m = !!n && !Object(x.Dd)(n), p = i && i.id;
 					return s || o || t || l || !d ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -8844,7 +8844,7 @@
 							this.props.isOverlay || Object(O.d)(O.c.CommentsPage, o)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						v.Db.includes(e) && Object(He.a)(e)
+						v.Fb.includes(e) && Object(He.a)(e)
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -9430,7 +9430,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.R
 				});
-				return !!t && !Object(o.Bd)(t)
+				return !!t && !Object(o.Dd)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -9445,7 +9445,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.vb
 				});
-				return !(!t || Object(o.Bd)(t))
+				return !(!t || Object(o.Dd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -9458,8 +9458,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.Vc
-			}) === o.ed.Enabled
+				experimentName: o.Xc
+			}) === o.gd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -9579,8 +9579,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: o.Sc
-				}) === o.cd.Enabled
+					experimentName: o.Uc
+				}) === o.ed.Enabled
 			})(e) && (e => {
 				const t = Object(r.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -9604,4 +9604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a4395b446582322c4461.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c5dc2faf42290f6d15dd.js.map

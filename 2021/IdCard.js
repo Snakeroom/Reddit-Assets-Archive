@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.c05ca90885cb166fcf60.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.adce545f131cd6cde72b.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -779,7 +779,7 @@
 						type: e.type
 					} : {
 						id: Object(T.m)(c(), e.name),
-						name: `${r.Yb}${e.name}`,
+						name: `${r.ac}${e.name}`,
 						type: e.type
 					});
 					if (!Object(I.J)(c())) return i(Object(d.k)({
@@ -810,7 +810,7 @@
 							subredditNames: n,
 							subscribe: s
 						}) => Object(m.a)(Object(p.a)(e, [b.a]), {
-							method: r.cb.POST,
+							method: r.eb.POST,
 							endpoint: Object(g.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: s ? "sub" : "unsub",
@@ -877,7 +877,7 @@
 							identifier: _
 						});
 					(C() || (await t(D([_], !0)), C())) && ((await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
-						method: r.cb.POST,
+						method: r.eb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -911,7 +911,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
-						method: r.cb.POST,
+						method: r.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -949,7 +949,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
-						method: r.cb.POST,
+						method: r.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -1228,7 +1228,7 @@
 				p = n("./src/lib/addQueryParams/index.ts");
 			const b = (e, t, n, s, r) => {
 				const i = r || "*:*",
-					o = n || l.Q;
+					o = n || l.S;
 				return Object(p.a)("/search", {
 					q: i,
 					sort: o,
@@ -1275,7 +1275,7 @@
 						})
 					}, r.a.createElement(m.a, {
 						onClick: this.onClick,
-						to: b(s, n, l.Ob.Relevance, l.Wb.DAY),
+						to: b(s, n, l.Qb.Relevance, l.Yb.DAY),
 						children: i
 					}))
 				}
@@ -2144,74 +2144,81 @@
 		"./src/reddit/components/IdCard/Title.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return m
+				return b
 			}));
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				i = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				o = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				d = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
-				c = n("./src/reddit/components/IdCard/index.m.less"),
-				l = n.n(c);
+			var s = n("./node_modules/history/esm/history.js"),
+				r = n("./node_modules/react/index.js"),
+				i = n.n(r),
+				o = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				a = n("./src/lib/classNames/index.ts"),
+				d = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				c = n("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
+				l = n("./src/reddit/hooks/useClickSourceData.ts"),
+				u = n("./src/reddit/components/IdCard/index.m.less"),
+				m = n.n(u);
 			const {
-				fbt: u
+				fbt: p
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function m(e) {
-				const t = Object(s.useCallback)(t => {
+			function b(e) {
+				const t = Object(r.useCallback)(t => {
 						t.stopPropagation(), e.onTitleClick && e.onTitleClick()
 					}, [e.onTitleClick]),
 					{
 						canEditIcon: n,
-						isTargetBlank: c,
-						largeSubredditIcon: m,
-						linkUrl: p,
-						subredditIcon: b,
-						titleText: h,
-						primaryColor: f,
-						subreddit: g,
-						onOpenFilePicker: x
+						isTargetBlank: u,
+						largeSubredditIcon: b,
+						linkUrl: h,
+						subredditIcon: f,
+						titleText: g,
+						primaryColor: x,
+						subreddit: E,
+						onOpenFilePicker: _
 					} = e,
-					E = b.url ? u._("Update icon", null, {
+					C = f.url ? p._("Update icon", null, {
 						hk: "GXdPy"
-					}) : u._("Add icon", null, {
+					}) : p._("Add icon", null, {
 						hk: "31odkm"
-					});
-				return r.a.createElement("div", {
-					className: Object(o.a)(l.a.Title, e.className)
-				}, n && g ? r.a.createElement(d.a, {
-					className: m ? l.a.largeSubredditIcon : l.a.subredditIcon,
-					key: b.url,
-					iconUrl: b.url,
-					primaryColor: f,
-					subreddit: g,
+					}),
+					v = Object(l.a)();
+				return i.a.createElement("div", {
+					className: Object(a.a)(m.a.Title, e.className)
+				}, n && E ? i.a.createElement(c.a, {
+					className: b ? m.a.largeSubredditIcon : m.a.subredditIcon,
+					key: f.url,
+					iconUrl: f.url,
+					primaryColor: x,
+					subreddit: E,
 					inTopBar: !1
-				}) : r.a.createElement(a.b, {
-					altText: b.altText,
-					className: m ? l.a.largeSubredditIcon : l.a.subredditIcon,
-					key: b.url,
-					iconUrl: b.url,
-					primaryColor: f
-				}), r.a.createElement("div", {
-					className: l.a.titleTextContainer
-				}, p ? r.a.createElement(i.a, {
-					className: l.a.TitleLink,
-					key: p,
-					to: p,
+				}) : i.a.createElement(d.b, {
+					altText: f.altText,
+					className: b ? m.a.largeSubredditIcon : m.a.subredditIcon,
+					key: f.url,
+					iconUrl: f.url,
+					primaryColor: x
+				}), i.a.createElement("div", {
+					className: m.a.titleTextContainer
+				}, h ? i.a.createElement(o.a, {
+					className: m.a.TitleLink,
+					key: h,
+					to: {
+						pathname: Object(s.c)(h).pathname,
+						state: v,
+						search: Object(s.c)(h).search
+					},
 					onClick: t,
-					target: c ? "_blank" : void 0,
-					rel: c ? "noopener noreferrer" : void 0
-				}, r.a.createElement("span", {
-					className: l.a.TitleText,
-					title: h
-				}, h)) : r.a.createElement("span", {
-					className: l.a.TitleText,
-					key: h
-				}, h), n && g && x && r.a.createElement("div", {
-					className: l.a.editIconText,
-					onClick: x
-				}, E)))
+					target: u ? "_blank" : void 0,
+					rel: u ? "noopener noreferrer" : void 0
+				}, i.a.createElement("span", {
+					className: m.a.TitleText,
+					title: g
+				}, g)) : i.a.createElement("span", {
+					className: m.a.TitleText,
+					key: g
+				}, g), n && E && _ && i.a.createElement("div", {
+					className: m.a.editIconText,
+					onClick: _
+				}, C)))
 			}
 		},
 		"./src/reddit/components/IdCard/TopicLinksContainer/async.tsx": function(e, t, n) {
@@ -4713,6 +4720,25 @@
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				})
 		},
+		"./src/reddit/hooks/useClickSourceData.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			}));
+			var s = n("./src/reddit/constants/history.ts"),
+				r = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				i = n("./src/reddit/selectors/telemetry.ts"),
+				o = n("./node_modules/uuid/v4.js"),
+				a = n.n(o);
+
+			function d() {
+				const e = Object(r.Z)();
+				return {
+					[s.a.ClickSource]: e ? Object(i.getPageTypeFromCurrentPage)(e) : void 0,
+					[s.a.ClickId]: a()()
+				}
+			}
+		},
 		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, n) {
 			e.exports = {
 				CoinIcon: "_12xlue8dQ1odPw1J81FIGQ",
@@ -5180,9 +5206,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.kc.Enabled === Object(r.c)(e, {
+			const i = e => s.mc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.fc
+				experimentName: s.hc
 			})
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
@@ -5256,4 +5282,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.c05ca90885cb166fcf60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.adce545f131cd6cde72b.js.map

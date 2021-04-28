@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e9f054bdb4e6b322bf0e.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4521425c952f5c21e309.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, i) {
@@ -106,15 +106,15 @@
 			}(o || (o = {}));
 			var a = i("./src/lib/constants/index.ts"),
 				d = i("./src/reddit/helpers/postCollection.ts");
-			const u = [a.Eb.COMMENTS, a.Eb.COLLECTION_COMMENTS],
+			const u = [a.Gb.COMMENTS, a.Gb.COLLECTION_COMMENTS],
 				f = (e, t) => {
 					if (!e) return [];
 					const i = u.includes(e),
-						o = e === a.Eb.COLLECTION_COMMENTS || t && Object(d.a)(t),
-						n = a.O.has(e),
-						s = a.ub.has(e),
-						c = e === a.Eb.SUBREDDIT,
-						l = e === a.Eb.TOPIC;
+						o = e === a.Gb.COLLECTION_COMMENTS || t && Object(d.a)(t),
+						n = a.Q.has(e),
+						s = a.wb.has(e),
+						c = e === a.Gb.SUBREDDIT,
+						l = e === a.Gb.TOPIC;
 					let f, _, p;
 					return n && !c || s ? f = r.HeaderSelector : o ? f = r.Collection : i ? f = r.PostComments : l && (f = r.TopicHeader), (n || s || o || i) && (_ = r.Widget), (n || i) && (p = r.PostItem), [f, _, p]
 				};
@@ -842,11 +842,11 @@
 					const r = k(t, i, e.href);
 					return e.href = r.url, r.metadata
 				},
-				E = ({
+				S = ({
 					isSponsored: e,
 					source: t
 				}) => !!(e && (null == t ? void 0 : t.outboundUrl)),
-				S = I(e => {
+				E = I(e => {
 					const t = Object(c.useRef)(null),
 						{
 							allowClickTracking: i,
@@ -875,11 +875,11 @@
 						return !(!t || !i) && (t > i + 3e5 || t < i - 36e5)
 					})(p) ? l.a.createElement("a", h) : l.a.createElement("a", y({}, h, {
 						onMouseDown: o => {
-							if (!E(e)) return !(1 !== o.button && 2 !== o.button && !o.ctrlKey) || void x(o.currentTarget, p, m, i);
+							if (!S(e)) return !(1 !== o.button && 2 !== o.button && !o.ctrlKey) || void x(o.currentTarget, p, m, i);
 							t.current = j(o.currentTarget, u, r)
 						},
 						onClick: () => {
-							d && (E(e) && f(d, b.a.Click, t.current), n(d, b.a.Click))
+							d && (S(e) && f(d, b.a.Click, t.current), n(d, b.a.Click))
 						},
 						onMouseLeave: e => {
 							a || ((e, t) => {
@@ -889,7 +889,7 @@
 						onTouchStart: e => x(e.currentTarget, p, m, i)
 					}))
 				});
-			t.b = S
+			t.b = E
 		},
 		"./src/reddit/helpers/pageActionLoginRedirect.ts": function(e, t, i) {
 			"use strict";
@@ -940,9 +940,9 @@
 			})), i.d(t, "i", (function() {
 				return j
 			})), i.d(t, "u", (function() {
-				return E
-			})), i.d(t, "t", (function() {
 				return S
+			})), i.d(t, "t", (function() {
+				return E
 			})), i.d(t, "o", (function() {
 				return C
 			})), i.d(t, "n", (function() {
@@ -960,17 +960,17 @@
 			})), i.d(t, "m", (function() {
 				return M
 			})), i.d(t, "h", (function() {
-				return B
+				return H
 			})), i.d(t, "e", (function() {
-				return q
+				return B
 			})), i.d(t, "f", (function() {
-				return F
+				return q
 			})), i.d(t, "b", (function() {
-				return W
+				return F
 			})), i.d(t, "v", (function() {
-				return K
+				return W
 			})), i.d(t, "g", (function() {
-				return z
+				return K
 			}));
 			var r = i("./src/reddit/constants/tracking.ts"),
 				o = i("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -1076,7 +1076,7 @@
 						...m(e)
 					})
 				},
-				E = (e, t) => {
+				S = (e, t) => {
 					Object(u.a)({
 						noun: "save",
 						subreddit: a.subreddit(e),
@@ -1087,7 +1087,7 @@
 						...m(e)
 					})
 				},
-				S = (e, t) => {
+				E = (e, t) => {
 					const i = e.uploads[t];
 					i.error && Object(u.a)({
 						...m(e),
@@ -1195,7 +1195,7 @@
 						...A(e, r.id)
 					}
 				},
-				H = (e, t) => {
+				G = (e, t) => {
 					const i = Object(d.i)(e),
 						r = {
 							authorId: i ? i.id : void 0,
@@ -1221,42 +1221,42 @@
 						...A(e, t.subredditId)
 					}
 				},
-				B = (e, t) => {
+				H = (e, t) => {
 					Object(u.a)({
 						noun: "draft_load",
 						...m(e),
 						...M(e, t)
 					})
 				},
-				q = (e, t) => {
+				B = (e, t) => {
 					Object(u.a)({
 						noun: t.draftId ? "draft_update" : "draft_create",
 						...m(e),
 						...M(e, t)
 					})
 				},
-				F = (e, t) => {
+				q = (e, t) => {
 					Object(u.a)({
 						noun: "draft_delete",
 						...m(e),
-						...H(e, t)
+						...G(e, t)
 					})
 				},
-				W = e => {
+				F = e => {
 					Object(u.a)({
 						...m(e),
 						noun: "social_connect_link",
 						action: r.c.CLICK
 					})
 				},
-				K = (e, t) => {
+				W = (e, t) => {
 					Object(u.a)({
 						...m(e),
 						noun: "twitter_share_checkbox",
 						action: Object(f.getToggleAction)(t)
 					})
 				},
-				z = (e, t, i) => {
+				K = (e, t, i) => {
 					Object(u.a)({
 						...m(e),
 						...M(e, t),
@@ -1272,9 +1272,9 @@
 			})), i.d(t, "f", (function() {
 				return j
 			})), i.d(t, "q", (function() {
-				return E
-			})), i.d(t, "r", (function() {
 				return S
+			})), i.d(t, "r", (function() {
+				return E
 			})), i.d(t, "o", (function() {
 				return C
 			})), i.d(t, "s", (function() {
@@ -1294,25 +1294,25 @@
 			})), i.d(t, "b", (function() {
 				return M
 			})), i.d(t, "a", (function() {
-				return H
+				return G
 			})), i.d(t, "n", (function() {
-				return B
+				return H
 			})), i.d(t, "m", (function() {
-				return q
+				return B
 			})), i.d(t, "t", (function() {
-				return K
+				return W
 			})), i.d(t, "w", (function() {
-				return z
+				return K
 			})), i.d(t, "e", (function() {
-				return V
+				return z
 			})), i.d(t, "d", (function() {
 				return X
 			})), i.d(t, "u", (function() {
 				return Y
 			})), i.d(t, "v", (function() {
-				return Q
-			})), i.d(t, "h", (function() {
 				return $
+			})), i.d(t, "h", (function() {
+				return J
 			}));
 			var r = i("./node_modules/lodash/pick.js"),
 				o = i.n(r),
@@ -1344,7 +1344,7 @@
 					if (!b) return;
 					const v = t.platform.currentPage;
 					switch (b) {
-						case n.Eb.COMMENTS: {
+						case n.Gb.COMMENTS: {
 							const {
 								partialCommentId: o,
 								partialPostId: n
@@ -1358,89 +1358,89 @@
 							Object(I.a)(N(c, s, d, i, r, u, p)(t));
 							break
 						}
-						case n.Eb.INDEX:
-						case n.Eb.LISTING:
-						case n.Eb.MULTIREDDIT:
-						case n.Eb.SUBREDDIT: {
+						case n.Gb.INDEX:
+						case n.Gb.LISTING:
+						case n.Gb.MULTIREDDIT:
+						case n.Gb.SUBREDDIT: {
 							const o = Object(a.c)(e, t);
 							if (!o.listingKey) return;
 							const {
 								params: s,
 								queryParams: c
 							} = e.match, {
-								sort: l = (o.sort ? o.sort : n.P.HOT)
+								sort: l = (o.sort ? o.sort : n.R.HOT)
 							} = s, d = c.t;
 							Object(I.a)(j(o.listingKey, l, i, r, d)(t));
 							break
 						}
-						case n.Eb.TOPIC: {
+						case n.Gb.TOPIC: {
 							const o = Object(a.c)(e, t);
 							if (!o.listingKey) return;
 							const {
 								params: s
-							} = e.match, c = o.sort ? o.sort : n.Q, {
+							} = e.match, c = o.sort ? o.sort : n.S, {
 								sort: l = c
 							} = s;
 							Object(I.a)(j(o.listingKey, l, i, r)(t));
 							break
 						}
-						case n.Eb.PROFILE_OVERVIEW: {
+						case n.Gb.PROFILE_OVERVIEW: {
 							const o = Object(a.d)(e, t);
 							if (!o) return;
 							const {
 								params: s,
 								queryParams: c
 							} = e.match, {
-								sort: l = n.wb
+								sort: l = n.yb
 							} = s, d = c.t;
-							Object(I.a)(E(o, l, i, r, d)(t));
+							Object(I.a)(S(o, l, i, r, d)(t));
 							break
 						}
-						case n.Eb.PROFILE_POSTS: {
+						case n.Gb.PROFILE_POSTS: {
 							const o = Object(a.d)(e, t);
 							if (!o) return;
 							const {
 								queryParams: s
 							} = e.match, {
-								sort: c = n.wb,
-								t: l = n.xb
+								sort: c = n.yb,
+								t: l = n.zb
 							} = s;
-							Object(I.a)(S(o, c, i, r, l)(t));
+							Object(I.a)(E(o, c, i, r, l)(t));
 							break
 						}
-						case n.Eb.PROFILE_COMMENTS: {
+						case n.Gb.PROFILE_COMMENTS: {
 							const o = Object(a.d)(e, t);
 							if (!o) return;
 							const {
 								queryParams: s
 							} = e.match, {
-								sort: c = n.wb,
-								t: l = n.xb
+								sort: c = n.yb,
+								t: l = n.zb
 							} = s;
 							Object(I.a)(C(o, c, i, r, l)(t));
 							break
 						}
-						case n.Eb.PROFILE_PRIVATE: {
+						case n.Gb.PROFILE_PRIVATE: {
 							const o = Object(a.d)(e, t);
 							if (!o) return;
 							Object(I.a)(P(o)(r, i)(t));
 							break
 						}
-						case n.Eb.PROFILE_MODERATION:
+						case n.Gb.PROFILE_MODERATION:
 							p && L(t, !0);
 							break;
-						case n.Eb.SETTINGS: {
+						case n.Gb.SETTINGS: {
 							const o = e;
-							Object(I.a)(W(i, r)(t)), o.match.params.page === n.Rb.Profile && Object(u.j)(t);
+							Object(I.a)(F(i, r)(t)), o.match.params.page === n.Tb.Profile && Object(u.j)(t);
 							break
 						}
-						case n.Eb.POST_CREATION:
+						case n.Gb.POST_CREATION:
 							if (p && d) {
 								const e = Object(h.a)(d);
 								Object(I.a)(T(e, i, r)(t))
 							}
 							break;
-						case n.Eb.POST_DRAFT: {
+						case n.Gb.POST_DRAFT: {
 							const {
 								draftId: o
 							} = e.match.params, n = Object(s.a)(e.match.params);
@@ -1448,51 +1448,51 @@
 							A(t, n, o, i, r);
 							break
 						}
-						case n.Eb.SUBREDDIT_WIKI:
-							Object(I.a)(G(i, r)(t));
+						case n.Gb.SUBREDDIT_WIKI:
+							Object(I.a)(V(i, r)(t));
 							break;
-						case n.Eb.COINS:
-							Object(I.a)(M(i, r)(t)), Object(I.a)(H()(t));
+						case n.Gb.COINS:
+							Object(I.a)(M(i, r)(t)), Object(I.a)(G()(t));
 							break;
-						case n.Eb.PREMIUM:
-							Object(I.a)(B(i, r)(t)), Object(I.a)(q()(t));
+						case n.Gb.PREMIUM:
+							Object(I.a)(H(i, r)(t)), Object(I.a)(B()(t));
 							break;
-						case n.Eb.APPEAL:
-							Object(I.a)(F(i, r)(t));
+						case n.Gb.APPEAL:
+							Object(I.a)(q(i, r)(t));
 							break;
-						case n.Eb.INBOX_PAGES:
+						case n.Gb.INBOX_PAGES:
 							p && R(t);
 							break;
-						case n.Eb.MODERATION_PAGES:
+						case n.Gb.MODERATION_PAGES:
 							p && U(t, !0, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
-						case n.Eb.COLLECTION_COMMENTS:
-							p && Q(t, !0);
+						case n.Gb.COLLECTION_COMMENTS:
+							p && $(t, !0);
 							break;
-						case n.Eb.MODQUEUE_PAGES:
+						case n.Gb.MODQUEUE_PAGES:
 							p && D(t, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
-						case n.Eb.SUBREDDIT_LEADERBOARD:
-							p && Object(I.a)(V()(t));
+						case n.Gb.SUBREDDIT_LEADERBOARD:
+							p && Object(I.a)(z()(t));
 							break;
-						case n.Eb.SEARCH_RESULTS:
+						case n.Gb.SEARCH_RESULTS:
 							if (p) {
 								const n = Object(a.e)(e);
 								if (!n) return;
 								Object(I.a)(Y(n, Object(g.c)(o()(v && v.queryParams || {}, c.t)), i, r, v)(t))
 							}
 							break;
-						case n.Eb.PUBLIC_ACCESS_NETWORK:
-							p && Object(I.a)(K()(t));
+						case n.Gb.PUBLIC_ACCESS_NETWORK:
+							p && Object(I.a)(W()(t));
 							break;
-						case n.Eb.GEOTAGGING:
+						case n.Gb.GEOTAGGING:
 							p && Object(I.a)(X()(t));
 							break;
-						case n.Eb.SUBREDDIT_CREATION:
-							p && Object(I.a)(z()(t));
+						case n.Gb.SUBREDDIT_CREATION:
+							p && Object(I.a)(K()(t));
 							break;
-						case n.Eb.MOD_LISTING:
-							p && $(t, !0)
+						case n.Gb.MOD_LISTING:
+							p && J(t, !0)
 					}
 				},
 				k = e => ({
@@ -1525,7 +1525,7 @@
 						}
 					}
 				},
-				E = (e, t, i, r, o) => n => {
+				S = (e, t, i, r, o) => n => {
 					const s = w.listing(n, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -1548,7 +1548,7 @@
 						adblock: w.adblock(n)
 					}
 				},
-				S = (e, t, i, r, o) => n => {
+				E = (e, t, i, r, o) => n => {
 					const s = w.listing(n, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -1735,13 +1735,13 @@
 					timer: w.timer(e, t),
 					adblock: w.adblock(i)
 				}),
-				H = () => e => ({
+				G = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(e)
 				}),
-				B = (e, t) => i => ({
+				H = (e, t) => i => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -1750,46 +1750,46 @@
 					timer: w.timer(e, t),
 					adblock: w.adblock(i)
 				}),
-				q = () => e => ({
+				B = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(e)
 				}),
-				F = (e, t) => i => ({
+				q = (e, t) => i => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
 					...k(i),
 					timer: w.timer(e, t)
 				}),
-				W = (e, t) => i => ({
+				F = (e, t) => i => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(i),
 					timer: w.timer(e, t)
 				}),
-				K = () => e => ({
+				W = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: w.subreddit(e),
 					...k(e)
 				}),
+				K = () => e => ({
+					source: "global",
+					action: "view",
+					noun: "screen",
+					...k(e)
+				}),
 				z = () => e => ({
-					source: "global",
-					action: "view",
-					noun: "screen",
-					...k(e)
-				}),
-				V = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...k(e)
 				}),
-				G = (e, t) => i => ({
+				V = (e, t) => i => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -1808,13 +1808,13 @@
 				}),
 				Y = (e, t, i, r, o, s) => c => {
 					let l = !0;
-					if (t.type.indexOf(n.Qb.Posts) > -1) {
+					if (t.type.indexOf(n.Sb.Posts) > -1) {
 						const {
 							api: t
 						} = c.listings.listingOrder;
 						l = l && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(n.Qb.Subreddits) > -1 || t.type.indexOf(n.Qb.Users) > -1) {
+					if (t.type.indexOf(n.Sb.Subreddits) > -1 || t.type.indexOf(n.Sb.Users) > -1) {
 						const {
 							api: t
 						} = c.listings.postOrder;
@@ -1853,7 +1853,7 @@
 						}
 					}
 				},
-				Q = (e, t) => {
+				$ = (e, t) => {
 					Object(I.a)({
 						source: "global",
 						action: "view",
@@ -1864,7 +1864,7 @@
 						})
 					})
 				},
-				$ = (e, t) => {
+				J = (e, t) => {
 					Object(I.a)({
 						source: "global",
 						action: "view",
@@ -1909,9 +1909,9 @@
 			})), i.d(t, "i", (function() {
 				return j
 			})), i.d(t, "k", (function() {
-				return E
-			})), i.d(t, "e", (function() {
 				return S
+			})), i.d(t, "e", (function() {
+				return E
 			})), i.d(t, "j", (function() {
 				return C
 			})), i.d(t, "d", (function() {
@@ -1968,18 +1968,18 @@
 					media: l.media(o, e)
 				}),
 				p = (e, t, i, r, o) => n => ({
-					...S(n, e, t, o, r, i),
+					...E(n, e, t, o, r, i),
 					noun: "ad"
 				}),
 				m = (e, t, i) => o => {
 					let n = !0;
-					if (t.type.indexOf(r.Qb.Posts) > -1) {
+					if (t.type.indexOf(r.Sb.Posts) > -1) {
 						const {
 							api: t
 						} = o.listings.listingOrder;
 						n = n && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(r.Qb.Subreddits) > -1 || t.type.indexOf(r.Qb.Users) > -1) {
+					if (t.type.indexOf(r.Sb.Subreddits) > -1 || t.type.indexOf(r.Sb.Users) > -1) {
 						const {
 							api: t
 						} = o.listings.postOrder;
@@ -2097,7 +2097,7 @@
 				k = (e, t) => i => ({
 					action: "click",
 					correlationId: Object(s.c)(s.a.SearchResults),
-					noun: e ? r.Pb.ToSubreddit : r.Pb.ToGlobal,
+					noun: e ? r.Rb.ToSubreddit : r.Rb.ToGlobal,
 					search: l.search(i, t),
 					source: a
 				}),
@@ -2118,8 +2118,8 @@
 					},
 					post: l.post(o, t)
 				}),
-				E = (e, t, i, r, o) => n => S(n, e, t, i, r, o),
-				S = (e, t, i, r, o, c) => {
+				S = (e, t, i, r, o) => n => E(n, e, t, i, r, o),
+				E = (e, t, i, r, o, c) => {
 					const d = l.paneName(e, r),
 						u = l.postRelativePosition(e, t, o, c),
 						f = l.amountOfElementsBeforePost(e, i, o, c, d),
@@ -2216,7 +2216,7 @@
 					subreddit: l.subreddit(i)
 				}),
 				T = (e, t, i, r, o) => s => ({
-					...S(s, t, i, r, e, o),
+					...E(s, t, i, r, e, o),
 					action: n.c.VIEW
 				}),
 				L = (e, t, i, r) => o => ({
@@ -2997,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e9f054bdb4e6b322bf0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4521425c952f5c21e309.js.map

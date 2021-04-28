@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.6dcc7644d0b1aaa697a0.js
-// Retrieved at 4/28/2021, 12:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.815e897bc8462deaf694.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -343,7 +343,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(H.d)(m, {
-								experimentName: l.xc
+								experimentName: l.zc
 							});
 							s(Object(o.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -374,7 +374,7 @@
 						l = r.listings.postOrder.api.error[c],
 						u = r.listings.postOrder.api.pending[c],
 						m = R.x in e.queryParams && e.queryParams[R.x].toUpperCase() || "",
-						b = m in p.Wb && p.Wb[m];
+						b = m in p.Yb && p.Yb[m];
 					if (u || d && !l && !t) return void(d && (s(F.l({
 						title: T.c()
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -427,7 +427,7 @@
 						b = Object(Y.a)(B.a, u, m),
 						h = r.listings.postOrder.loadMore[b],
 						g = m[R.x] ? m[R.x].toUpperCase() : "",
-						f = g in p.Wb && p.Wb[g];
+						f = g in p.Yb && p.Yb[g];
 					if (h) {
 						const e = r.listings.postOrder.api.pending[b],
 							s = r.listings.postOrder.fetchedTokens,
@@ -473,7 +473,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(H.d)(r, {
-										experimentName: l.xc
+										experimentName: l.zc
 									});
 									t(Object(o.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -494,7 +494,7 @@
 						i = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						o = Object(Y.a)(B.a, a, i),
 						c = i[R.x] ? i[R.x].toUpperCase() : "",
-						d = c in p.Wb && p.Wb[c],
+						d = c in p.Yb && p.Yb[c],
 						l = Object(W.a)(n),
 						u = Object(W.b)(l);
 					await t(le(o, {
@@ -1144,14 +1144,14 @@
 				Y = s("./src/reddit/constants/headers.ts");
 			const X = e => Object(J.a)(Object(Z.a)(e, [Y.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: q.cb.GET,
+				method: q.eb.GET,
 				type: "json"
 			});
 			var $ = s("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = s.n($);
 			const {
 				fbt: te
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * q.db, re = "SubredditAdoption";
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * q.fb, re = "SubredditAdoption";
 			class ae extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -2330,7 +2330,7 @@
 						return e.sidebarPromotedPosts.models[Object(y.a)(s, r, n)]
 					},
 					pending: e => !e.sidebarPromotedPosts.firstFetch,
-					isSubredditOrCommentsPage: e => Object(k.p)(e) === j.Eb.SUBREDDIT || Object(k.p)(e) === j.Eb.COMMENTS
+					isSubredditOrCommentsPage: e => Object(k.p)(e) === j.Gb.SUBREDDIT || Object(k.p)(e) === j.Gb.COMMENTS
 				}),
 				S = Object(l.b)(C),
 				P = E.a.wrapped(p.a, "BannerAd", O.a),
@@ -4638,7 +4638,7 @@
 				sort: n
 			}, r, a, i, o, c) => {
 				const d = P.x in s && s[P.x].toUpperCase(),
-					l = "string" == typeof d && d in V.Wb ? V.Wb[d] : V.Xb,
+					l = "string" == typeof d && d in V.Yb ? V.Yb[d] : V.Zb,
 					u = Object(p.a)(K.a, n, s),
 					m = e || V.w.Everywhere,
 					b = t || m,
@@ -4819,7 +4819,7 @@
 					subreddit: t
 				}), d.k, (e, {
 					sort: t
-				}) => t, (e, t, s, n, a, i) => i !== r.P.AWARDED && (!!e && (!a.isPermanentlyCanceled && (!t && (!!n && n.show_discovery_unit))))),
+				}) => t, (e, t, s, n, a, i) => i !== r.R.AWARDED && (!!e && (!a.isPermanentlyCanceled && (!t && (!!n && n.show_discovery_unit))))),
 				u = Object(n.a)((e, {
 					listingName: t
 				}) => t, (e, {
@@ -5107,4 +5107,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6dcc7644d0b1aaa697a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.815e897bc8462deaf694.js.map

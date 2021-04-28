@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.63a3475979c7e6c1b86f.js
-// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.df8921ab469708cf7096.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -143,7 +143,7 @@
 						const t = `https://${c.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.cb.GET
+								method: r.eb.GET
 							});
 						n.ok && n.body && e(l(n.body))
 					}
@@ -1405,7 +1405,7 @@
 			function o(e, t) {
 				return Object(c.a)(e, {
 					endpoint: `${r.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.cb.GET
+					method: s.eb.GET
 				})
 			}
 		},
@@ -2321,4 +2321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.63a3475979c7e6c1b86f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.df8921ab469708cf7096.js.map

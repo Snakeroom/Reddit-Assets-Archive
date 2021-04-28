@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.87ffc79f769ccae84e58.js
-// Retrieved at 4/26/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.5ff861991ed1f5cdfddc.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -134,7 +134,7 @@
 					apiContext: n
 				}) => {
 					const o = Object(b.a)(r()),
-						c = (null == o ? void 0 : o.pennies) || i.qb,
+						c = (null == o ? void 0 : o.pennies) || i.sb,
 						u = Object(l.c)(l.a.GoldPayment);
 					t(Object(s.stripeTokenPending)());
 					const m = await t(Object(s.validateAndCreateStripeToken)(e));
@@ -221,7 +221,7 @@
 					u = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(i.a)(u);
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: p,
 					data: s
 				}).then(d.c)
@@ -237,7 +237,7 @@
 					correlation_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: s
 				}).then(d.c)
@@ -255,7 +255,7 @@
 					thing_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(d.c)
@@ -275,7 +275,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(d.c)
@@ -303,7 +303,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: O
 				}).then(d.c)
@@ -325,7 +325,7 @@
 					thing_id: p
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: l
 				}).then(d.c)
@@ -333,4 +333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.87ffc79f769ccae84e58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.5ff861991ed1f5cdfddc.js.map

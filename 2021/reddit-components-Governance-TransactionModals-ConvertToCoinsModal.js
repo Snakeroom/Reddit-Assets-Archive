@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.915ee888e3e8a79f9b26.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.56adff4d3818a56f83ff.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -2499,7 +2499,7 @@
 			function o(e, t) {
 				return Object(s.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: a.cb.GET
+					method: a.eb.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -2521,7 +2521,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}`,
-					method: a.cb.POST,
+					method: a.eb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -2907,4 +2907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.915ee888e3e8a79f9b26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.56adff4d3818a56f83ff.js.map

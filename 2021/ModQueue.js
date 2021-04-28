@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.5a21a3872daa756aa342.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.63b4ba31f3ad91b3a2cf.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -153,7 +153,7 @@
 						commentId: e
 					});
 					if (!c) return;
-					const u = s === n.Sb.Snoozed,
+					const u = s === n.Ub.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -273,19 +273,19 @@
 				}) => {
 					let u, m, l;
 					switch (t) {
-						case n.kb.Edited:
+						case n.mb.Edited:
 							u = k, m = y, l = g;
 							break;
-						case n.kb.Modqueue:
+						case n.mb.Modqueue:
 							u = A, m = h, l = v;
 							break;
-						case n.kb.Reports:
+						case n.mb.Reports:
 							u = I, m = N, l = x;
 							break;
-						case n.kb.Spam:
+						case n.mb.Spam:
 							u = C, m = P, l = L;
 							break;
-						case n.kb.Unmoderated:
+						case n.mb.Unmoderated:
 							u = M, m = T, l = D;
 							break;
 						default:
@@ -804,7 +804,7 @@
 				B = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const V = (e, t) => Object(T.a)(Object(w.a)(e, [U.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
-					method: h.cb.POST,
+					method: h.eb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -814,7 +814,7 @@
 				}),
 				F = (e, t, s) => Object(T.a)(Object(w.a)(e, [U.a]), {
 					endpoint: Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
-					method: h.cb.POST,
+					method: h.eb.POST,
 					type: "json",
 					data: t
 				});
@@ -842,7 +842,7 @@
 					t(Z());
 					const r = await ((e, t) => Object(T.a)(Object(w.a)(e, [U.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: h.cb.GET
+						method: h.eb.GET
 					}))(o(), n);
 					r.ok ? t(X({
 						subredditId: e,
@@ -855,7 +855,7 @@
 					s(te());
 					const d = await ((e, t, s) => Object(T.a)(Object(w.a)(e, [U.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
-						method: h.cb.POST,
+						method: h.eb.POST,
 						data: s
 					}))(r(), a, t);
 					if (d.ok) {
@@ -882,7 +882,7 @@
 					s(re());
 					const d = await ((e, t, s) => Object(T.a)(Object(w.a)(e, [U.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`,
-						method: h.cb.PUT,
+						method: h.eb.PUT,
 						data: {
 							message: s.message,
 							title: s.title
@@ -904,7 +904,7 @@
 					s(ie());
 					const d = await ((e, t, s) => Object(T.a)(Object(w.a)(e, [U.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`,
-						method: h.cb.DELETE
+						method: h.eb.DELETE
 					}))(r(), a, t);
 					d.ok ? (s(ue({
 						subredditId: e,
@@ -1106,4 +1106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.5a21a3872daa756aa342.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.63b4ba31f3ad91b3a2cf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.a9b13fc8f1aea23d13cf.js
-// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.483f582eb2d146c1b560.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -148,7 +148,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(r.b)({
 								endpoint: t,
-								method: s.cb.GET
+								method: s.eb.GET
 							});
 						n.ok && n.body && e(l(n.body))
 					}
@@ -1536,7 +1536,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${s.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: r.cb.GET
+					method: r.eb.GET
 				})
 			}
 		},
@@ -2324,4 +2324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.a9b13fc8f1aea23d13cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.483f582eb2d146c1b560.js.map

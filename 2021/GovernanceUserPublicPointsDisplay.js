@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.f2ad69621a8022c579ba.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5e6e0dfe42c5f7cd73d5.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -672,7 +672,7 @@
 			function i(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.cb.GET
+					method: s.eb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -694,7 +694,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1023,4 +1023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.f2ad69621a8022c579ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.5e6e0dfe42c5f7cd73d5.js.map

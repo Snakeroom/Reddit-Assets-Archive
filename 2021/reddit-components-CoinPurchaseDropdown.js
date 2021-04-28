@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.5245c92031cf94d1d3a1.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.3f376226ea56e7b2b25d.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown", "GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -475,7 +475,7 @@
 					apiContext: n
 				}) => {
 					const a = Object(b.a)(r()),
-						s = (null == a ? void 0 : a.pennies) || c.qb,
+						s = (null == a ? void 0 : a.pennies) || c.sb,
 						l = Object(m.c)(m.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const p = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -721,8 +721,8 @@
 				B = r("./src/reddit/components/LottieAnimation/index.tsx"),
 				$ = r("./src/reddit/controls/Button/index.tsx"),
 				z = r("./src/reddit/components/CompactCoinPurchaseList/ListItem/index.m.less"),
-				q = r.n(z);
-			var K = e => {
+				K = r.n(z);
+			var q = e => {
 					const {
 						className: t,
 						buttonClass: r,
@@ -736,26 +736,26 @@
 						subtextCrossout: m
 					} = e, b = r ? $.f : $.i;
 					return o.a.createElement("div", {
-						className: Object(s.a)(t, q.a.CompactCoinPurchaseListItem)
+						className: Object(s.a)(t, K.a.CompactCoinPurchaseListItem)
 					}, o.a.createElement("div", {
-						className: q.a.productSection
+						className: K.a.productSection
 					}, i, o.a.createElement("div", null, o.a.createElement("span", {
-						className: q.a.primaryText
+						className: K.a.primaryText
 					}, l), u && o.a.createElement("span", {
-						className: Object(s.a)(q.a.subtext, {
-							[q.a.crossout]: m
+						className: Object(s.a)(K.a.subtext, {
+							[K.a.crossout]: m
 						})
 					}, Array.isArray(u) ? u.map((e, t) => o.a.createElement("p", {
 						key: t
 					}, e)) : u))), o.a.createElement("div", {
-						className: q.a.priceSection
+						className: K.a.priceSection
 					}, o.a.createElement(b, {
-						className: Object(s.a)(q.a.button, r),
+						className: Object(s.a)(K.a.button, r),
 						redditStyle: !0,
 						onClick: d
 					}, c), o.a.createElement("span", {
-						className: Object(s.a)(q.a.buttonSubtext, {
-							[q.a.crossout]: a
+						className: Object(s.a)(K.a.buttonSubtext, {
+							[K.a.crossout]: a
 						})
 					}, n)))
 				},
@@ -807,7 +807,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(l.c());
-						const a = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === w.Eb.PREMIUM;
+						const a = (null === (e = null == n ? void 0 : n.meta) || void 0 === e ? void 0 : e.name) === w.Gb.PREMIUM;
 						r(this.correlationId, a)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -902,7 +902,7 @@
 						hk: "4EQRS8"
 					}))) : o.a.createElement("div", {
 						className: e
-					}, a && o.a.createElement(K, {
+					}, a && o.a.createElement(q, {
 						buttonClass: W.a.freeAwardButton,
 						buttonText: _.fbt._("Claim", null, {
 							hk: "OUYUl"
@@ -926,7 +926,7 @@
 							primaryText: s,
 							subtext: c
 						} = e, i = a && a.coins !== a.baselineCoins, d = a && a.pennies !== a.baselinePennies;
-						return o.a.createElement(K, {
+						return o.a.createElement(q, {
 							buttonClass: t,
 							buttonSubtext: r,
 							buttonSubtextCrossout: d,
@@ -937,7 +937,7 @@
 							subtext: c,
 							subtextCrossout: i
 						})
-					}), r && o.a.createElement(K, {
+					}), r && o.a.createElement(q, {
 						buttonText: _.fbt._("Convert", null, {
 							hk: "zVTTU"
 						}),
@@ -1180,7 +1180,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(c.a)(l);
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: u,
 					data: d
 				}).then(i.c)
@@ -1196,7 +1196,7 @@
 					correlation_id: c
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(i.c)
@@ -1214,7 +1214,7 @@
 					thing_id: c
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -1234,7 +1234,7 @@
 					correlation_id: l
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(i.c)
@@ -1262,7 +1262,7 @@
 					thing_id: p
 				};
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(i.c)
@@ -1284,7 +1284,7 @@
 					thing_id: u
 				};
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.c)
@@ -1613,4 +1613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.5245c92031cf94d1d3a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.3f376226ea56e7b2b25d.js.map

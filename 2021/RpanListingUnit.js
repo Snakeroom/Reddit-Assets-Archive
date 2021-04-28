@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.f21bfb306b3a9c333df4.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.c9682bf767c8fe2ebf06.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const h = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.sc
+					experimentName: u.uc
 				});
-				return Object(u.Bd)(t) ? void 0 : t
+				return Object(u.Dd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.tc
+					experimentName: u.vc
 				});
-				return Object(u.Bd)(t) ? void 0 : t
-			}, (e, t) => e === u.uc.Enabled && t === u.uc.Enabled);
+				return Object(u.Dd)(t) ? void 0 : t
+			}, (e, t) => e === u.wc.Enabled && t === u.wc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -923,7 +923,7 @@
 					userId: t
 				} = e, {
 					processingAvatarImageUrl: s
-				} = r.a, n = (e => e.replace(c.Ab.Account + "_", ""))(t), {
+				} = r.a, n = (e => e.replace(c.Cb.Account + "_", ""))(t), {
 					avatar: a,
 					color: i
 				} = (e => {
@@ -1885,7 +1885,7 @@
 				q = s.n(Z);
 			const {
 				fbt: J
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Q = 20, X = l.ec, $ = l.ec, ee = Object(c.a)(P.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Q = 20, X = l.gc, $ = l.gc, ee = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), te = Object(a.b)(() => Object(i.c)({
 				autoplay: N.b,
@@ -3938,7 +3938,7 @@
 					const {
 						thingId: s,
 						packageId: l
-					} = t, b = !!s, f = a.b(e), v = f ? Object(u.getAwardTypeFromAward)(f) : null, g = b ? v : o.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, C = s ? Object(h.a)(s) ? "comment" : "post" : void 0, E = l || o.t(e), w = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === E)[0], _ = t.offerContext || (f && 0 === f.coinPrice ? n.a.StorefrontFreeAward : Object(n.d)(w, b)), x = w ? Math.round(1e4 * (w.baselinePennies - w.pennies) / w.baselinePennies) / 100 : 0, O = w ? Math.round(1e4 * (w.coins - w.baselineCoins) / w.coins) / 100 : 0, y = w ? w.baselinePennies !== w.pennies ? `${x}_percent_price` : w.baselineCoins !== w.coins ? `${O}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? r.qb : w ? w.pennies : void 0;
+					} = t, b = !!s, f = a.b(e), v = f ? Object(u.getAwardTypeFromAward)(f) : null, g = b ? v : o.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, C = s ? Object(h.a)(s) ? "comment" : "post" : void 0, E = l || o.t(e), w = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === E)[0], _ = t.offerContext || (f && 0 === f.coinPrice ? n.a.StorefrontFreeAward : Object(n.d)(w, b)), x = w ? Math.round(1e4 * (w.baselinePennies - w.pennies) / w.baselinePennies) / 100 : 0, O = w ? Math.round(1e4 * (w.coins - w.baselineCoins) / w.coins) / 100 : 0, y = w ? w.baselinePennies !== w.pennies ? `${x}_percent_price` : w.baselineCoins !== w.coins ? `${O}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? r.sb : w ? w.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: s ? c.comment(e, s) : null,
@@ -4256,6 +4256,21 @@
 						comment: Object(n.comment)(a, s)
 					}
 				})
+		},
+		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			}));
+			var r = s("./node_modules/react-redux/es/index.js"),
+				n = s("./src/reddit/helpers/chooseVariant/index.ts");
+
+			function a(e, t = n.a) {
+				return Object(r.e)(s => Object(n.c)(s, {
+					experimentName: e,
+					experimentEligibilitySelector: t
+				}))
+			}
 		},
 		"./src/reddit/hooks/usePrevious.ts": function(e, t, s) {
 			"use strict";
@@ -5091,4 +5106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.f21bfb306b3a9c333df4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c9682bf767c8fe2ebf06.js.map

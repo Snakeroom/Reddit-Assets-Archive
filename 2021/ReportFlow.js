@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.effac586d598167baf23.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.179d5c3a3a803c28ec0d.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -439,7 +439,7 @@
 					if (!t().user) return;
 					const o = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/sitewide_rules.json`,
-						method: r.cb.GET
+						method: r.eb.GET
 					}))(n());
 					if (o.ok) {
 						const t = o.body,
@@ -452,7 +452,7 @@
 					if (!t().user) return;
 					const o = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/livestream_rules.json`,
-						method: r.cb.GET
+						method: r.eb.GET
 					}))(n());
 					if (o.ok) {
 						const t = o.body,
@@ -2434,7 +2434,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.cb.POST
+				method: s.eb.POST
 			}), d = async (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: n,
@@ -2442,22 +2442,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.cb.POST
+				method: s.eb.POST
 			}), c = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.cb.POST
+				method: s.eb.POST
 			}), u = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.cb.POST
+				method: s.eb.POST
 			}), p = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				endpoint: `${o.a.oauthUrl}/user/${t}/about`,
-				method: s.cb.GET,
+				method: s.eb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -2782,4 +2782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.effac586d598167baf23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.179d5c3a3a803c28ec0d.js.map

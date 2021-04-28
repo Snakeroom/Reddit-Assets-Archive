@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.19f51433d5b58770f6e8.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.0de3410a3d7b508c1ef6.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -2093,7 +2093,7 @@
 			function o(e, t) {
 				return Object(a.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.cb.GET
+					method: s.eb.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -2115,7 +2115,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -2508,4 +2508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.19f51433d5b58770f6e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.0de3410a3d7b508c1ef6.js.map

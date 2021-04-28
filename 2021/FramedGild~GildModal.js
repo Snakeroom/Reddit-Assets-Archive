@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.04f55617750720e97322.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9e12500df77bc69d0a5d.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2702,7 +2702,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return E
+				return I
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -2717,16 +2717,18 @@
 				p = s("./src/reddit/components/PlayButton/index.tsx"),
 				h = s("./src/reddit/constants/elementClassNames.ts"),
 				b = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				f = s("./src/reddit/models/Media/index.ts"),
-				g = s("./src/reddit/selectors/posts.ts"),
-				w = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/constants/tracking.ts"),
-				O = s("./src/reddit/components/Media/blurredContent.ts"),
-				v = s("./src/reddit/components/Media/ImageBox/index.m.less"),
-				j = s.n(v);
+				f = s("./src/reddit/hooks/useClickSourceData.ts"),
+				g = s("./src/reddit/models/Media/index.ts"),
+				w = s("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
+				x = s("./src/reddit/selectors/posts.ts"),
+				O = s("./src/reddit/selectors/user.ts"),
+				v = s("./src/reddit/constants/tracking.ts"),
+				j = s("./src/reddit/components/Media/blurredContent.ts"),
+				y = s("./src/reddit/components/Media/ImageBox/index.m.less"),
+				E = s.n(y);
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -2734,14 +2736,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = e => e > 2 * f.e,
-				_ = e => {
-					const t = Object(c.a)(j.a.image, h.g, e.className, {
-							[j.a.mShowCentered]: e.showCentered,
-							[j.a.mShowBlurred]: e.shouldBlur
+			const I = e => e > 2 * g.e,
+				C = e => {
+					const t = Object(c.a)(E.a.image, h.g, e.className, {
+							[E.a.mShowCentered]: e.showCentered,
+							[E.a.mShowBlurred]: e.shouldBlur
 						}),
 						s = {};
-					return e.showFull || e.isTall || (s.maxHeight = `${f.j}px`), e.isListing || e.isTall && E(e.height) || (s.maxHeight = `${f.e}px`), e.isExpando && e.maxHeight && (s.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (s.maxWidth = `${e.maxWidth}px`), a.a.createElement("img", {
+					return e.showFull || e.isTall || (s.maxHeight = `${g.j}px`), e.isListing || e.isTall && I(e.height) || (s.maxHeight = `${g.e}px`), e.isExpando && e.maxHeight && (s.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (s.maxWidth = `${e.maxWidth}px`), a.a.createElement("img", {
 						alt: e.altText || n.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -2750,36 +2752,40 @@
 						style: s
 					})
 				},
-				I = e => {
+				k = e => {
 					const t = {};
-					return (!e.showFull && Object(f.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${f.j}px`, e.shouldBlur && (t.maxWidth = Object(f.I)(e.height, e.width) ? `${f.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), a.a.createElement("div", {
-						className: Object(c.a)(j.a.container, e.className),
+					return (!e.showFull && Object(g.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.I)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), a.a.createElement("div", {
+						className: Object(c.a)(E.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				C = Object(o.b)(() => Object(d.a)(g.E, w.bb, (e, {
+				P = Object(o.b)(() => Object(d.a)(x.E, O.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(g.b)(e, s) : null, (e, t, s) => ({
+				}) => t && s ? Object(x.b)(e, s) : null, w.a, (e, t, s, n) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
-					basePixelMetadata: s
+					basePixelMetadata: s,
+					sendGoodVisitEvent: n
 				})));
-			t.a = C(e => e.outboundUrl && !e.shouldBlur ? a.a.createElement("a", {
-				href: e.outboundUrl,
-				target: "_blank",
-				rel: u.a,
-				onMouseDown: t => {
-					e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(b.c)(t.currentTarget, e.postId, e.basePixelMetadata)
-				}
-			}, P(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
-				target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
-				to: Object(m.a)(e.postPermalink)
-			}, P(e)) : P(e));
-			const k = (e, t) => a.a.createElement(_, {
+			t.a = P(e => {
+				const t = e.sendGoodVisitEvent ? Object(f.a)() : void 0;
+				return e.outboundUrl && !e.shouldBlur ? a.a.createElement("a", {
+					href: e.outboundUrl,
+					target: "_blank",
+					rel: u.a,
+					onMouseDown: t => {
+						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(b.c)(t.currentTarget, e.postId, e.basePixelMetadata)
+					}
+				}, A(e)) : e.isListing && e.postPermalink ? a.a.createElement(i.a, {
+					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
+					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
+				}, A(e)) : A(e)
+			});
+			const N = (e, t) => a.a.createElement(C, {
 					altText: t.altText,
 					className: Object(c.a)(t.imageClassName, {
-						[x.a]: !e
+						[v.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -2793,17 +2799,17 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				P = ({
+				A = ({
 					onClick: e,
 					...t
 				}) => {
-					const s = Object(f.I)(t.height, t.width),
-						r = E(t.height) && s;
-					return a.a.createElement(I, y({}, t, {
-						className: `${s?`${x.a} `:""}${t.className||""}`
+					const s = Object(g.I)(t.height, t.width),
+						r = I(t.height) && s;
+					return a.a.createElement(k, _({}, t, {
+						className: `${s?`${v.a} `:""}${t.className||""}`
 					}), t.isListing ? a.a.createElement("div", {
 						className: t.contentImageClassName
-					}, k(s, t)) : a.a.createElement("a", {
+					}, N(s, t)) : a.a.createElement("a", {
 						href: t.originalSource,
 						onClick: e,
 						style: r ? {
@@ -2811,17 +2817,17 @@
 						} : {},
 						target: "_blank",
 						rel: u.b
-					}, k(s, t)), t.isListing && !t.showFull && t.height > f.j && Object(f.I)(t.height, t.width) && a.a.createElement("div", {
-						className: j.a.seeMore
+					}, N(s, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.I)(t.height, t.width) && a.a.createElement("div", {
+						className: E.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), t.isVideoThumbnail && a.a.createElement(p.a, {
 						onClick: e
 					}), t.shouldBlur && !t.isVideoThumbnail && !t.isListing && a.a.createElement("div", {
-						className: j.a.unblurButtonContainer
+						className: E.a.unblurButtonContainer
 					}, a.a.createElement("button", {
-						className: j.a.unblurButton
-					}, Object(O.a)(!!t.isNSFW, !!t.isSpoiler))))
+						className: E.a.unblurButton
+					}, Object(j.a)(!!t.isNSFW, !!t.isSpoiler))))
 				}
 		},
 		"./src/reddit/components/Media/MediaContainer/index.m.less": function(e, t, s) {
@@ -4209,12 +4215,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.nd.SmIcon:
+						case b.pd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.nd.SmIconHc:
+						case b.pd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4318,7 +4324,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(i.a)(l);
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: u,
 					data: c
 				}).then(d.c)
@@ -4334,7 +4340,7 @@
 					correlation_id: i
 				};
 				return Object(r.a)(Object(a.a)(e, [o.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: c
 				}).then(d.c)
@@ -4352,7 +4358,7 @@
 					thing_id: i
 				};
 				return Object(r.a)(Object(a.a)(e, [o.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(d.c)
@@ -4372,7 +4378,7 @@
 					correlation_id: l
 				};
 				return Object(r.a)(Object(a.a)(e, [o.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(d.c)
@@ -4400,7 +4406,7 @@
 					thing_id: h
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: b
 				}).then(d.c)
@@ -4422,7 +4428,7 @@
 					thing_id: u
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(d.c)
@@ -5191,12 +5197,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.id
+						experimentName: n.kd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.nd.SmIcon || t === n.nd.SmIconHc
+					return t === n.pd.SmIcon || t === n.pd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5219,4 +5225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.04f55617750720e97322.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9e12500df77bc69d0a5d.js.map

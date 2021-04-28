@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.fc214d888c56ec01c9c4.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.27e2c6f7b6f067f72fd7.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -44,13 +44,13 @@
 				P = r("./src/lib/makeApiRequest/index.ts"),
 				h = r("./src/reddit/models/Comment/addProfileImgParam.ts"),
 				w = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				v = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const L = (e, t, r, s) => {
-				let o = Object(x.a)(Object(w.a)(Object(v.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`)));
+				L = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const v = (e, t, r, s) => {
+				let o = Object(x.a)(Object(w.a)(Object(L.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`)));
 				return s && (o = Object(h.a)(o)), Object(P.a)(e, {
 					data: r,
 					endpoint: o,
-					method: C.cb.GET
+					method: C.eb.GET
 				})
 			};
 			var I = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -85,7 +85,7 @@
 						}
 						return
 					}
-					const v = {
+					const L = {
 						...a()(e.queryParams, [...y.l, y.h]),
 						sort: i,
 						t: Object(I.a)(i, g)
@@ -93,7 +93,7 @@
 					t(T({
 						key: x
 					}));
-					const _ = await Object(N.a)("profileComments", () => L(s.apiContext(), j, v, Object(E.a)(r())));
+					const _ = await Object(N.a)("profileComments", () => v(s.apiContext(), j, L, Object(E.a)(r())));
 					if (!_.ok) return t(A({
 						account: _.body.data ? _.body.data.account : null,
 						error: _.body.reason ? {
@@ -141,7 +141,7 @@
 						key: f,
 						fetchedToken: b.token
 					}));
-					const C = await L(r(), u, {
+					const C = await v(r(), u, {
 						after: b.token,
 						dist: b.dist,
 						sort: m,
@@ -207,8 +207,8 @@
 				P = r("./src/reddit/components/OverviewChronoList/ListItem.tsx"),
 				h = r("./src/reddit/components/OverviewCommentPost/index.tsx"),
 				w = r("./src/reddit/components/OverviewConversationsPost/Border/index.tsx"),
-				v = r("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.tsx"),
-				L = r("./src/reddit/constants/postLayout.ts"),
+				L = r("./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.tsx"),
+				v = r("./src/reddit/constants/postLayout.ts"),
 				I = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				N = r("./src/reddit/helpers/styles/mixins/index.tsx"),
 				E = r("./src/reddit/selectors/commentSelector.ts"),
@@ -257,7 +257,7 @@
 					profileName: i,
 					allowModToolsUnderComments: c
 				} = e;
-				if (n === L.g.Compact) return a.a.createElement(P.a, e);
+				if (n === v.g.Compact) return a.a.createElement(P.a, e);
 				const {
 					height: d,
 					width: m,
@@ -265,7 +265,7 @@
 				} = e;
 				return a.a.createElement(M, l, s && a.a.createElement(w.a, {
 					isFirst: !0
-				}, n === L.g.Large ? a.a.createElement(T, S({}, e, {
+				}, n === v.g.Large ? a.a.createElement(T, S({}, e, {
 					availableWidth: m,
 					inSubredditOrProfile: !1,
 					isOverlay: !1
@@ -274,7 +274,7 @@
 					profileName: i
 				}))), a.a.createElement(w.a, {
 					isLast: o
-				}, a.a.createElement(v.a, {
+				}, a.a.createElement(L.a, {
 					commentId: r,
 					depth: t.parentId ? 1 : 0,
 					isFirst: !0,
@@ -306,8 +306,8 @@
 				Q = r("./src/reddit/selectors/comments.ts"),
 				X = r("./src/reddit/selectors/posts.ts"),
 				Z = r("./src/reddit/selectors/profileComments.ts"),
-				Y = r("./src/reddit/selectors/subreddit.ts"),
-				z = r("./src/reddit/selectors/tracking.ts"),
+				z = r("./src/reddit/selectors/subreddit.ts"),
+				Y = r("./src/reddit/selectors/tracking.ts"),
 				ee = r("./src/reddit/selectors/user.ts");
 			const te = Object(I.t)(),
 				re = {
@@ -317,28 +317,28 @@
 					measureScrollFPS: $.d.measureScrollFPS,
 					layout: I.O,
 					loadMore: Z.d,
-					subredditsById: Y.ab,
-					viewportDataLoaded: z.a,
+					subredditsById: z.ab,
+					viewportDataLoaded: Y.a,
 					commentsById: Q.q,
 					itemIds: Z.f,
 					itemIdToPostId: Z.e,
 					postsById: X.I,
 					estimateItemHeight: e => (e, t, r) => {
 						if (r) switch (t) {
-							case L.g.Medium:
+							case v.g.Medium:
 								return 174;
-							case L.g.Classic:
+							case v.g.Classic:
 								return 129;
-							case L.g.Compact:
+							case v.g.Compact:
 								return 120;
 							default:
 								return 140
 						}
 						switch (t) {
-							case L.g.Medium:
-							case L.g.Classic:
+							case v.g.Medium:
+							case v.g.Classic:
 								return 90;
-							case L.g.Compact:
+							case v.g.Compact:
 								return 80;
 							default:
 								return 90
@@ -408,7 +408,7 @@
 					profileName: t.params.profileName
 				}), ee.J, (e, {
 					match: t
-				}) => Object(ee.e)(e, d.Yb + t.params.profileName), (e, t, r, s, o, n, a, i) => {
+				}) => Object(ee.e)(e, d.ac + t.params.profileName), (e, t, r, s, o, n, a, i) => {
 					const {
 						sort: c,
 						t: d
@@ -478,7 +478,7 @@
 				const C = {
 					sort: p,
 					baseUrl: j,
-					sortOptions: d.vb,
+					sortOptions: d.xb,
 					timeSort: u
 				};
 				return a.a.createElement(pe.a, {
@@ -507,4 +507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.fc214d888c56ec01c9c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.27e2c6f7b6f067f72fd7.js.map

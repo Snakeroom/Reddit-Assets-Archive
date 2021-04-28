@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.17796e084e3828444389.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.41617c01ceaa4c02858c.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -952,7 +952,7 @@
 					d = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(d);
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: m,
 					data: l
 				}).then(o.c)
@@ -968,7 +968,7 @@
 					correlation_id: i
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(o.c)
@@ -986,7 +986,7 @@
 					thing_id: i
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: d
 				}).then(o.c)
@@ -1006,7 +1006,7 @@
 					correlation_id: d
 				};
 				return Object(r.a)(Object(s.a)(e, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(o.c)
@@ -1034,7 +1034,7 @@
 					thing_id: h
 				};
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: g
 				}).then(o.c)
@@ -1056,7 +1056,7 @@
 					thing_id: m
 				};
 				return Object(r.a)(Object(s.a)(t, [c.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: u
 				}).then(o.c)
@@ -1576,7 +1576,7 @@
 						requestPurchaseCatalog: a
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const n = u.Eb.COINS;
+					const n = u.Gb.COINS;
 					j.c.has(n) && (this.props.sendEvent(Object(O.b)(x.TimerType.InApp, j.c.end(n))), this.props.sendEvent(Object(O.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -1732,4 +1732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.17796e084e3828444389.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.41617c01ceaa4c02858c.js.map

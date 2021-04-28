@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.9de7818f38b351910e9a.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.738b6b9b788ab9ee8e2e.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -38,7 +38,7 @@
 				u = s("./src/reddit/constants/headers.ts");
 			var m = (e, t, s, o, r) => Object(l.a)(Object(p.a)(e, [u.a]), {
 				endpoint: `${e.apiUrl}/api/event_post_time.json`,
-				method: n.cb.POST,
+				method: n.eb.POST,
 				data: {
 					id: t,
 					event_start: s,
@@ -48,7 +48,7 @@
 			});
 			var b = (e, t) => Object(l.a)(Object(p.a)(e, [u.a]), {
 					endpoint: `${e.apiUrl}/api/start_event_post.json`,
-					method: n.cb.POST,
+					method: n.eb.POST,
 					data: {
 						id: t
 					}
@@ -157,11 +157,11 @@
 					if (a.ok) {
 						const t = a.body,
 							i = 14400,
-							d = Math.round(t.event_start / n.Ib);
+							d = Math.round(t.event_start / n.Kb);
 						let l = t.event_end;
 						const p = {
 							eventStart: d,
-							eventEnd: l = l && Math.round(l / n.Ib) || d + i,
+							eventEnd: l = l && Math.round(l / n.Kb) || d + i,
 							eventIsLive: t.event_is_live
 						};
 						s(I({
@@ -219,7 +219,7 @@
 				m = s("./src/reddit/constants/headers.ts");
 			var b = (e, t, s) => Object(p.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/add_post_to_collection.json`,
-				method: l.cb.POST,
+				method: l.eb.POST,
 				data: {
 					collection_id: t,
 					link_fullname: s
@@ -227,7 +227,7 @@
 			});
 			var h = (e, t, s) => Object(p.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/create_collection.json`,
-				method: l.cb.POST,
+				method: l.eb.POST,
 				data: {
 					title: t,
 					sr_fullname: s
@@ -235,7 +235,7 @@
 			});
 			var x = (e, t) => Object(p.a)(Object(u.a)(e, [m.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/delete_collection.json`,
-					method: l.cb.POST,
+					method: l.eb.POST,
 					data: {
 						collection_id: t
 					}
@@ -243,11 +243,11 @@
 				f = s("./src/config.ts");
 			var v = (e, t) => Object(p.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${f.a.gatewayUrl}/desktopapi/v1/subreddit_collections/${t}`,
-				method: l.cb.GET
+				method: l.eb.GET
 			});
 			var _ = (e, t, s) => Object(p.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/remove_post_in_collection.json`,
-				method: l.cb.POST,
+				method: l.eb.POST,
 				data: {
 					collection_id: t,
 					link_fullname: s
@@ -255,7 +255,7 @@
 			});
 			var O = (e, t, s) => Object(p.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_title.json`,
-				method: l.cb.POST,
+				method: l.eb.POST,
 				data: {
 					collection_id: t,
 					title: s
@@ -263,7 +263,7 @@
 			});
 			var C = (e, t, s) => Object(p.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/reorder_collection.json`,
-				method: l.cb.POST,
+				method: l.eb.POST,
 				data: {
 					collection_id: t,
 					link_ids: s.join(",")
@@ -271,7 +271,7 @@
 			});
 			var g = (e, t, s) => Object(p.a)(Object(u.a)(e, [m.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_description.json`,
-				method: l.cb.POST,
+				method: l.eb.POST,
 				data: {
 					collection_id: t,
 					description: s
@@ -279,7 +279,7 @@
 			});
 			var j = (e, t, s) => Object(p.a)(Object(u.a)(e, [m.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/update_collection_display_layout.json`,
-					method: l.cb.POST,
+					method: l.eb.POST,
 					data: {
 						collection_id: t,
 						display_layout: s
@@ -597,7 +597,7 @@
 				});
 			var v = (e, t) => Object(a.a)(Object(d.a)(e, [l.a]), {
 					endpoint: Object(m.a)(Object(p.a)(`${e.apiUrl}/api/editusertext`)),
-					method: c.cb.POST,
+					method: c.eb.POST,
 					data: f(t)
 				}).then(u.b),
 				_ = s("./src/reddit/helpers/overlay/index.ts"),
@@ -925,43 +925,46 @@
 				h = s("./src/reddit/components/CountAnimation/config.ts"),
 				x = s("./src/reddit/components/CountAnimation/helpers.ts"),
 				f = s("./src/reddit/constants/componentTestIds.ts"),
-				v = s("./src/reddit/constants/postLayout.ts"),
-				_ = s("./src/reddit/helpers/path/index.ts"),
-				O = s("./src/reddit/icons/fonts/Comment/index.tsx"),
-				C = s("./src/reddit/selectors/chatPost.ts"),
-				g = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				j = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				E = s("./src/reddit/selectors/posts.ts"),
-				k = s("./src/reddit/selectors/user.ts"),
-				w = s("./src/reddit/components/CommentsLink/index.m.less"),
-				I = s.n(w);
-			const y = Object(a.b)(() => Object(l.c)({
-					isChatPost: C.d,
-					isPostSEOEligible: j.e,
-					postPermalink: E.E,
-					shouldOpenPostInNewTab: k.bb,
-					totalDiscount: g.a,
-					variantAnimationConfig: g.e
+				v = s("./src/reddit/constants/experiments.ts"),
+				_ = s("./src/reddit/constants/postLayout.ts"),
+				O = s("./src/reddit/helpers/path/index.ts"),
+				C = s("./src/reddit/hooks/useClickSourceData.ts"),
+				g = s("./src/reddit/hooks/useExperimentVariant.ts"),
+				j = s("./src/reddit/icons/fonts/Comment/index.tsx"),
+				E = s("./src/reddit/selectors/chatPost.ts"),
+				k = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				w = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				I = s("./src/reddit/selectors/posts.ts"),
+				y = s("./src/reddit/selectors/user.ts"),
+				P = s("./src/reddit/components/CommentsLink/index.m.less"),
+				S = s.n(P);
+			const T = Object(a.b)(() => Object(l.c)({
+					isChatPost: E.d,
+					isPostSEOEligible: w.e,
+					postPermalink: I.E,
+					shouldOpenPostInNewTab: y.bb,
+					totalDiscount: k.a,
+					variantAnimationConfig: k.e
 				})),
 				{
 					commentCount: {
 						inititalDelayRange: {
-							lower: P,
-							upper: S
+							lower: M,
+							upper: N
 						},
 						subsequentRecurringDelayRange: {
-							lower: T,
-							upper: M
+							lower: F,
+							upper: R
 						},
 						incrementRangeRelativeToTotalDiscount: {
-							lower: N,
-							upper: F
+							lower: A,
+							upper: L
 						}
 					}
 				} = h.b,
-				R = () => r()(P, S),
-				A = () => r()(T, M),
-				L = ({
+				D = () => r()(M, N),
+				B = () => r()(F, R),
+				W = ({
 					type: e,
 					numComments: t,
 					isChatPost: s,
@@ -972,39 +975,39 @@
 					text: u,
 					totalDiscount: h,
 					shouldDisjointAnimation: f,
-					shouldShowPageTransPersistence: _,
-					postId: C
+					shouldShowPageTransPersistence: v,
+					postId: O
 				}) => {
-					let g;
-					g = u || (e === v.g.Compact || s || n && a ? Object(m.b)(t) : o.fbt._({
+					let C;
+					C = u || (e === _.g.Compact || s || n && a ? Object(m.b)(t) : o.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
 					}, [o.fbt._plural(t, "number", Object(m.b)(t))], {
 						hk: "1QeOde"
 					}));
-					const j = Object(i.useCallback)(() => r()(Math.ceil((h || 0) * N), Math.ceil((h || 0) * F)), [h]),
-						E = Object(i.useRef)(Object(x.k)(C, x.a.Comment)),
-						k = Object(i.useRef)(_ && void 0 !== h && Object(x.e)(E.current));
-					return c.a.createElement(i.Fragment, null, d && c.a.createElement(O.a, {
-						className: I.a.commentIcon,
+					const g = Object(i.useCallback)(() => r()(Math.ceil((h || 0) * A), Math.ceil((h || 0) * L)), [h]),
+						E = Object(i.useRef)(Object(x.k)(O, x.a.Comment)),
+						k = Object(i.useRef)(v && void 0 !== h && Object(x.e)(E.current));
+					return c.a.createElement(i.Fragment, null, d && c.a.createElement(j.a, {
+						className: S.a.commentIcon,
 						role: "presentation"
 					}), l && c.a.createElement("span", {
-						className: I.a.text
+						className: S.a.text
 					}, void 0 !== h ? c.a.createElement(b.a, {
 						initialDisplayCount: k.current || t - h,
 						countToUpperBound: t,
-						initialDelay: R,
-						subsequentRecurringDelay: A,
-						incrementDelta: j,
+						initialDelay: D,
+						subsequentRecurringDelay: B,
+						incrementDelta: g,
 						shouldDisjointAnimation: f,
 						id: E.current
-					}) : g), l && (!n || !a) && void 0 !== h && c.a.createElement("span", {
-						className: Object(p.a)(I.a.text, I.a.commentsText)
+					}) : C), l && (!n || !a) && void 0 !== h && c.a.createElement("span", {
+						className: Object(p.a)(S.a.text, S.a.commentsText)
 					}, o.fbt._("comments", null, {
 						hk: "ZQ8MY"
 					})))
 				};
-			t.a = y(e => {
+			t.a = T(e => {
 				const {
 					className: t,
 					hasModPostPerms: s,
@@ -1018,40 +1021,40 @@
 					numComments: b,
 					onClick: h,
 					postPermalink: x,
-					shouldOpenPostInNewTab: v,
-					shouldShowIcon: O = !0,
-					shouldShowText: C = !0,
-					text: g,
-					type: j,
-					totalDiscount: E,
-					variantAnimationConfig: k,
-					postId: w
-				} = e, y = i && !r && !l, P = r && !a, S = c.a.createElement(L, {
-					type: j,
+					shouldOpenPostInNewTab: _,
+					shouldShowIcon: j = !0,
+					shouldShowText: E = !0,
+					text: k,
+					type: w,
+					totalDiscount: I,
+					variantAnimationConfig: y,
+					postId: P
+				} = e, T = i && !r && !l, M = r && !a, N = Object(C.a)(), F = Object(g.a)(v.Wb) === v.ac.Enabled, R = c.a.createElement(W, {
+					type: w,
 					numComments: b,
 					isChatPost: n,
-					totalDiscount: E,
+					totalDiscount: I,
 					modModeEnabled: m,
 					hasModPostPerms: s,
-					shouldDisjointAnimation: null == k ? void 0 : k.shouldDisjointAnimation,
-					shouldShowPageTransPersistence: null == k ? void 0 : k.shouldShowPageTransPersistence,
-					shouldShowIcon: O,
-					shouldShowText: C,
-					text: g,
-					postId: w
+					shouldDisjointAnimation: null == y ? void 0 : y.shouldDisjointAnimation,
+					shouldShowPageTransPersistence: null == y ? void 0 : y.shouldShowPageTransPersistence,
+					shouldShowIcon: j,
+					shouldShowText: E,
+					text: k,
+					postId: P
 				});
-				return y ? c.a.createElement("div", {
-					className: Object(p.a)(I.a.commentsLink, I.a.defaultCursorWrapper, t),
+				return T ? c.a.createElement("div", {
+					className: Object(p.a)(S.a.commentsLink, S.a.defaultCursorWrapper, t),
 					onClick: h
-				}, S) : c.a.createElement(d.a, {
+				}, R) : c.a.createElement(d.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
 					"data-test-id": f.a,
-					className: Object(p.a)(I.a.commentsLink, I.a.link, t),
-					target: o || v ? "_blank" : void 0,
-					to: P ? Object(_.b)(x) : Object(u.a)(x, !0),
+					className: Object(p.a)(S.a.commentsLink, S.a.link, t),
+					target: o || _ ? "_blank" : void 0,
+					to: M ? Object(O.b)(x) : F ? Object(u.a)(x, !0, N) : Object(u.a)(x),
 					onClick: h
-				}, S)
+				}, R)
 			})
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, s) {
@@ -1673,7 +1676,7 @@
 						searchIgnoreClick: re,
 						isActionBarAnimationEnabled: ae,
 						isForceSelected: de
-					} = this.props, le = !!i && Object(te.e)(i) === L.author, pe = Object(ne.a)("View--Reports", L.id, X), me = Object(ne.a)(d.dc, L.id, X), he = Object(S.c)(L), _e = Ee("-mod-actions-menu", L.id, v, g), Oe = Object(S.a)(L), Ce = L.postId, ge = j === B.g.Large, je = !h && ge || m && E, ke = !(v || h || b), we = i && L.isGildable, Ie = L.media && L.media.type === Z.o.LIVEVIDEO;
+					} = this.props, le = !!i && Object(te.e)(i) === L.author, pe = Object(ne.a)("View--Reports", L.id, X), me = Object(ne.a)(d.fc, L.id, X), he = Object(S.c)(L), _e = Ee("-mod-actions-menu", L.id, v, g), Oe = Object(S.a)(L), Ce = L.postId, ge = j === B.g.Large, je = !h && ge || m && E, ke = !(v || h || b), we = i && L.isGildable, Ie = L.media && L.media.type === Z.o.LIVEVIDEO;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(a.a)(ue.a.flatlistContainer, s)
 					}, r.a.createElement(O.a, {
@@ -4198,12 +4201,12 @@
 				g = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === a.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / n.Ib : void 0
+						submitScheduledTime: e && e.submitTime === a.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / n.Kb : void 0
 					}
 				},
 				j = e => {
-					const t = Object(i.f)(e.startDate).getTime() / n.Ib,
-						s = Object(i.f)(e.endDate).getTime() / n.Ib;
+					const t = Object(i.f)(e.startDate).getTime() / n.Kb,
+						s = Object(i.f)(e.endDate).getTime() / n.Kb;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: s,
@@ -5018,4 +5021,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.9de7818f38b351910e9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.738b6b9b788ab9ee8e2e.js.map

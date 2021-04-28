@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fdb0c8ee0d7fd0ba12b5.js
-// Retrieved at 4/28/2021, 2:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5f05332f4b100f64b311.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -190,7 +190,7 @@
 						type: e.type
 					} : {
 						id: Object(P.m)(d(), e.name),
-						name: `${s.Yb}${e.name}`,
+						name: `${s.ac}${e.name}`,
 						type: e.type
 					});
 					if (!Object(N.J)(d())) return a(Object(c.k)({
@@ -221,7 +221,7 @@
 							subredditNames: r,
 							subscribe: n
 						}) => Object(u.a)(Object(p.a)(e, [f.a]), {
-							method: s.cb.POST,
+							method: s.eb.POST,
 							endpoint: Object(x.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: n ? "sub" : "unsub",
@@ -288,7 +288,7 @@
 							identifier: C
 						});
 					(I() || (await t(F([C], !0)), I())) && ((await ((e, t, r) => Object(u.a)(Object(p.a)(e, [f.a]), {
-						method: s.cb.POST,
+						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: r ? "true" : "false",
@@ -322,7 +322,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, r) => Object(u.a)(Object(p.a)(e, [f.a]), {
-						method: s.cb.POST,
+						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: r ? "true" : "false",
@@ -360,7 +360,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, r) => Object(u.a)(Object(p.a)(e, [f.a]), {
-						method: s.cb.POST,
+						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: r ? "sub" : "unsub",
@@ -896,8 +896,8 @@
 				q = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				X = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				V = r("./src/reddit/icons/svgs/Settings/index.tsx"),
-				Y = r("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.tsx"),
-				J = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
+				J = r("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.tsx"),
+				Y = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				Q = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
 				$ = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserName.tsx"),
 				ee = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserIcon/index.m.less"),
@@ -931,7 +931,7 @@
 					onDeleteBanner: u
 				}), s.a.createElement("div", {
 					className: te.a.SnooIconWrapper
-				}, d || !f || c ? s.a.createElement(Y.a, {
+				}, d || !f || c ? s.a.createElement(J.a, {
 					iconUrl: f,
 					isNSFW: c,
 					userName: x,
@@ -940,7 +940,7 @@
 					isSponsored: !1,
 					href: f,
 					source: null
-				}, s.a.createElement(Y.a, {
+				}, s.a.createElement(J.a, {
 					iconUrl: f,
 					isNSFW: c,
 					userName: x,
@@ -975,7 +975,7 @@
 					href: `${G.a.redditUrl}/premium`
 				}, s.a.createElement(X.a, {
 					className: te.a.premiumIcon
-				})), d && s.a.createElement(J.a, {
+				})), d && s.a.createElement(Y.a, {
 					currentUserHasSnoovatar: !1,
 					isOwnProfile: !0,
 					onClick: l
@@ -1843,7 +1843,7 @@
 				X = r.n(q);
 			const {
 				fbt: V
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(i.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), J = Object(i.c)({
 				account: h.i,
 				activeTooltipId: g.a,
 				currentUserHasSubreddit: h.f,
@@ -1870,7 +1870,7 @@
 					userName: t
 				}),
 				page: b.b
-			}), J = ({
+			}), Y = ({
 				username: e,
 				currentUserHasSubreddit: t
 			}) => s.a.createElement("div", {
@@ -1908,7 +1908,7 @@
 					hk: "UKkIW"
 				})
 			}));
-			t.default = Object(a.b)(Y, e => ({
+			t.default = Object(a.b)(J, e => ({
 				onToggleFollow: (t, r) => e(Object(c.d)([{
 					name: t,
 					type: u.a.PROFILE
@@ -1962,7 +1962,7 @@
 					prefersReducedAnimations: !!h,
 					snoovatarUrl: N,
 					topAwardIcon: b,
-					actions: s.a.createElement(s.a.Fragment, null, y && !o && J({
+					actions: s.a.createElement(s.a.Fragment, null, y && !o && Y({
 						username: j,
 						currentUserHasSubreddit: r
 					}), !y && v && Q({
@@ -2556,4 +2556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fdb0c8ee0d7fd0ba12b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5f05332f4b100f64b311.js.map

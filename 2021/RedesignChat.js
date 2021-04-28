@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.7d59ea6fa0fa91b20e21.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.3d84cabab4140b50695d.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -414,7 +414,7 @@
 				REQUEST_SUCCESS: m
 			} = s, h = Object(r.a)(u), p = Object(r.a)(l), f = Object(r.a)(b), j = Object(r.a)(m);
 			let x;
-			const g = 5 * c.db,
+			const g = 5 * c.fb,
 				O = () => async (e, t, {
 					apiContext: n
 				}) => {
@@ -747,11 +747,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.hc,
+					experimentName: c.jc,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.I)(e) || Object(i.J)(e),
-				u = Object(s.a)(o, e => e === c.mc.Enabled)
+				u = Object(s.a)(o, e => e === c.oc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -774,17 +774,17 @@
 					experimentName: c.Y,
 					experimentEligibilitySelector: o
 				}), a.a),
-				u = Object(s.a)(d, e => e === c.pc.Enabled),
+				u = Object(s.a)(d, e => e === c.rc.Enabled),
 				l = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.jc,
+					experimentName: c.lc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				b = Object(s.a)(u, l, (e, t) => e && t === c.oc.Enabled),
+				b = Object(s.a)(u, l, (e, t) => e && t === c.qc.Enabled),
 				m = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.ic,
+					experimentName: c.kc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				h = Object(s.a)(m, e => e === c.nc.Enabled),
+				h = Object(s.a)(m, e => e === c.pc.Enabled),
 				p = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.bb,
 					experimentEligibilitySelector: o
@@ -793,4 +793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.7d59ea6fa0fa91b20e21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.3d84cabab4140b50695d.js.map

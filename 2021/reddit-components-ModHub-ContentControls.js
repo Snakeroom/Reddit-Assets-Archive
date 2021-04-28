@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.b58d293fa195323ad78d.js
-// Retrieved at 3/24/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7e4c2449c78417840684.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -584,8 +584,8 @@
 			}
 			var Ee = n("./node_modules/lodash/difference.js"),
 				ve = n.n(Ee),
-				_e = n("./src/reddit/helpers/chooseVariant/index.ts");
-			var qe = n("./src/reddit/hooks/useTracking.ts"),
+				_e = n("./src/reddit/hooks/useExperimentVariant.ts"),
+				qe = n("./src/reddit/hooks/useTracking.ts"),
 				we = n("./src/lib/memoizeByReference/index.ts"),
 				Le = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
 				Be = n("./src/reddit/components/ModHub/ContentControls/MultiStringsInput/index.m.less"),
@@ -865,12 +865,7 @@
 				const {
 					formState: t,
 					onChange: n
-				} = e, i = "enabled" === function(e, t = _e.a) {
-					return Object(c.e)(n => Object(_e.c)(n, {
-						experimentName: e,
-						experimentEligibilitySelector: t
-					}))
-				}("automated_reporting_wordlist"), o = Object(qe.a)();
+				} = e, i = "enabled" === Object(_e.a)("automated_reporting_wordlist"), o = Object(qe.a)();
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 					className: lt.a.title
 				}, s.fbt._("Automated Filtering", null, {
@@ -1812,4 +1807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.b58d293fa195323ad78d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.7e4c2449c78417840684.js.map

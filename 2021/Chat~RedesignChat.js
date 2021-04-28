@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.010cee72aa746bad744b.js
-// Retrieved at 4/28/2021, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.23324feb515645b35666.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -907,7 +907,7 @@
 							url: n
 						}) => Object(g.b)({
 							endpoint: "https://api.embed.ly/1/extract",
-							method: b.cb.GET,
+							method: b.eb.GET,
 							data: {
 								key: f,
 								url: n,
@@ -1050,7 +1050,7 @@
 							subredditsNames: [],
 							userPostsIds: []
 						},
-						d = e => e.startsWith(l.Ab.Comment) || e.startsWith(l.Ab.Post);
+						d = e => e.startsWith(l.Cb.Comment) || e.startsWith(l.Cb.Post);
 					for (const o in e) {
 						const t = s()(e[o].reduce((e, t) => t.chatUnitId && (d(t.chatUnitId) || "subreddit" === o) && e.push(t.chatUnitId) && e || e, []));
 						switch (o) {
@@ -1142,7 +1142,7 @@
 						subredditChannelCount: t || 0,
 						subredditMentionCount: n || 0
 					} : await p(o, r)) && !c()(o.messages.unread, i) && await a(m(i))
-				}, o.Ib, {
+				}, o.Kb, {
 					leading: !0
 				})
 		},
@@ -1428,7 +1428,7 @@
 						}))
 					}
 					t(p())
-				}, C = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", E = Object(c.a)(C), O = "SENDBIRD__SET_REDDIT_CONTACT_LIST", _ = 6 * r.J, v = Object(c.a)(O), j = () => async (e, t, {
+				}, C = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", E = Object(c.a)(C), O = "SENDBIRD__SET_REDDIT_CONTACT_LIST", _ = 6 * r.L, v = Object(c.a)(O), j = () => async (e, t, {
 					apiContext: n
 				}) => {
 					const a = t(),
@@ -1574,7 +1574,7 @@
 						const t = await ((e, t) => Object(r.a)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: s.cb.POST
+							method: s.eb.POST
 						}))(n(), a);
 						if (t.ok) {
 							const n = t.body;
@@ -1632,7 +1632,7 @@
 					if (a.sitewideRules && a.sitewideRules.length) return;
 					const l = await (e => Object(r.a)(Object(c.a)(e, [o.a]), {
 						endpoint: `${e.apiUrl}/api/sitewide_rules.json`,
-						method: s.cb.GET
+						method: s.eb.GET
 					}))(n());
 					if (l.ok) {
 						const {
@@ -1719,7 +1719,7 @@
 				o = "TOAST__UPDATE_TOAST",
 				i = Object(a.a)(o),
 				l = e => async (t, n) => {
-					setTimeout(() => t(c()), e * s.Ib)
+					setTimeout(() => t(c()), e * s.Kb)
 				}
 		},
 		"./src/chat/actions/tooltip.ts": function(e, t, n) {
@@ -2494,7 +2494,7 @@
 					t(f(e)), (e => {
 						if (!p(e)) {
 							const t = [...Object(d.a)("chat.promo") || [], e];
-							Object(d.c)("chat.promo", t, u.fc)
+							Object(d.c)("chat.promo", t, u.hc)
 						}
 					})(e)
 				};
@@ -4339,7 +4339,7 @@
 				constructor(e) {
 					super(e), this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = jr()((e = "") => {
 						this.props.fetchSubredditChannelUsers(e)
-					}, u.Ib, {
+					}, u.Kb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -4941,7 +4941,7 @@
 								const {
 									createdAt: r,
 									sender: o
-								} = e, i = o && o.userId, l = o && o.nickname, d = this.isSplitterDisplayed(e, t, s), h = this.getPreviousTime(t, s), m = this.getPreviousUserId(t, s) === i, p = r - h < 5 * u.db, b = !(m && p), g = e.messageType === J.d.SYSTEM && this.isSystemMessageDisplayed(n, e), f = d && c.a.createElement(R, {
+								} = e, i = o && o.userId, l = o && o.nickname, d = this.isSplitterDisplayed(e, t, s), h = this.getPreviousTime(t, s), m = this.getPreviousUserId(t, s) === i, p = r - h < 5 * u.fb, b = !(m && p), g = e.messageType === J.d.SYSTEM && this.isSystemMessageDisplayed(n, e), f = d && c.a.createElement(R, {
 									date: r
 								}), C = b && l && i && c.a.createElement(Va, {
 									createdAt: r,
@@ -9566,7 +9566,7 @@
 							const t = e.getState();
 							e.dispatch(Object(d.sizeChanged)(h.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === o.Eb.CHAT_MINIMIZE && e.dispatch(Object(l.N)());
+							a && a.meta && a.meta.name === o.Gb.CHAT_MINIMIZE && e.dispatch(Object(l.N)());
 							const {
 								action: s,
 								noun: r,
@@ -9646,7 +9646,7 @@
 					const n = e(t);
 					switch (t.type) {
 						case r.a:
-							Object(a.c)(o, t.payload.channelId, s.ib)
+							Object(a.c)(o, t.payload.channelId, s.kb)
 					}
 					return n
 				}
@@ -9711,7 +9711,7 @@
 			const E = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === p.a.MINIMIZED || n === p.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === r.Eb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === r.Eb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === r.Gb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === r.Gb.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -9731,7 +9731,7 @@
 					})(n) : s()(() => e.dispatch(Object(d.m)()))
 				};
 				let a;
-				Object(f.a)(e.getState()) === r.Eb.CHAT_MINIMIZE ? s()(async () => {
+				Object(f.a)(e.getState()) === r.Gb.CHAT_MINIMIZE ? s()(async () => {
 					E(e.getState()) ? n() : (await e.dispatch(Object(d.m)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.b)()))
 				}) : n();
 				return i => g => {
@@ -9744,7 +9744,7 @@
 							const t = g.payload !== p.a.MINIMIZED && g.payload !== p.a.HIDDEN;
 							t && (clearTimeout(a), a = null), O && t && !_ && n(), !_ || g.payload !== p.a.HIDDEN && g.payload !== p.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
-							}, 10 * r.db));
+							}, 10 * r.fb));
 							break
 						}
 						case l.a: {
@@ -9811,7 +9811,7 @@
 				c = n("./src/chat/actions/channel.ts"),
 				o = n("./src/chat/actions/session.ts"),
 				i = n("./src/chat/helpers/errors.ts");
-			const l = 5 * r.db;
+			const l = 5 * r.fb;
 			t.a = e => {
 				const t = s()(() => {
 					e.dispatch(Object(o.d)())
@@ -9977,8 +9977,8 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.c)(l, e, 5 * i.db)
-			}, 5 * i.Ib, {
+				Object(o.c)(l, e, 5 * i.fb)
+			}, 5 * i.Kb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -9986,7 +9986,7 @@
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
 					void 0 === Object(o.a)(l) && Object(r.b)()
-				}, 5 * i.db)
+				}, 5 * i.fb)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return c.a;
@@ -10029,7 +10029,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts");
 			const r = async e => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/api/v1/me`,
-				method: a.cb.GET,
+				method: a.eb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -10039,10 +10039,10 @@
 					raw_json: 1
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: a.cb.POST
+				method: a.eb.POST
 			}), o = async (e, t) => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/user/${t}/about`,
-				method: a.cb.GET,
+				method: a.eb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -10063,7 +10063,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts"),
 				r = n("./src/chat/models/Message/report.ts");
 			const c = (e, t) => Object(s.a)(e, {
-					method: a.cb.POST,
+					method: a.eb.POST,
 					endpoint: `${e.apiUrl}/api/report_user`,
 					data: {
 						reason: t.reason,
@@ -10073,7 +10073,7 @@
 				o = (e, t, n) => {
 					const c = Object(r.c)(t, n);
 					return Object(s.a)(e, {
-						method: a.cb.POST,
+						method: a.eb.POST,
 						endpoint: `${e.apiUrl}/api/report_user`,
 						data: {
 							details: JSON.stringify(c),
@@ -10083,7 +10083,7 @@
 					})
 				},
 				i = (e, t) => Object(s.a)(e, {
-					method: a.cb.GET,
+					method: a.eb.GET,
 					endpoint: `${e.apiUrl}/api/user_data_by_account_ids`,
 					data: {
 						raw_json: 1,
@@ -10091,7 +10091,7 @@
 					}
 				}),
 				l = e => Object(s.a)(e, {
-					method: a.cb.GET,
+					method: a.eb.GET,
 					endpoint: `${e.apiUrl}/prefs/blocked.json`
 				})
 		},
@@ -10226,7 +10226,7 @@
 						userId: r
 					} = e, {
 						processingAvatarImageUrl: o
-					} = a.a, l = (e => e.replace(i.Ab.Account + "_", ""))(r), {
+					} = a.a, l = (e => e.replace(i.Cb.Account + "_", ""))(r), {
 						avatar: d,
 						color: u
 					} = (e => {
@@ -10445,7 +10445,7 @@
 
 			function c(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || `${a.Ab.Account}_${e.id}`,
+					id: e.contact_account_id || `${a.Cb.Account}_${e.id}`,
 					name: e.name,
 					lastInteraction: e.last_interaction,
 					created: e.created_utc,
@@ -10800,7 +10800,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const r = `${a.Ab.Account}_`,
+			const r = `${a.Cb.Account}_`,
 				c = e => {
 					const t = {};
 					for (const n in e) t[n] = o({
@@ -12279,7 +12279,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Eb.CHAT
+						name: s.Gb.CHAT
 					},
 					path: "/chat/"
 				},
@@ -12310,7 +12310,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Eb.CHAT_EMPTY
+						name: s.Gb.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -12341,7 +12341,7 @@
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Eb.CHAT_MINIMIZE
+						name: s.Gb.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
@@ -12352,7 +12352,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Eb.CHAT
+						name: s.Gb.CHAT
 					},
 					path: m
 				},
@@ -12363,7 +12363,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Eb.CHAT
+						name: s.Gb.CHAT
 					},
 					path: b
 				};
@@ -12377,7 +12377,7 @@
 				chunk: a.p.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Eb.CHAT
+					name: a.Gb.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -12776,7 +12776,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(_.h)(t)), this.dispatch(Object(v.e)({
 							toast: w.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(v.d)()), 3 * l.Ib);
+						})), Object(i.setTimeout)(() => this.dispatch(Object(v.d)()), 3 * l.Kb);
 						this.dispatch(Object(E.s)(!0)), this.dispatch(Object(u.D)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -14124,4 +14124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.010cee72aa746bad744b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.23324feb515645b35666.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.126b14f5bd9e6fd8280a.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.c9d5197ddc99d7a34b61.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -857,7 +857,7 @@
 						})
 					}
 					return Object(x.a)(Object(C.a)(e, [v.a]), {
-						method: s.cb.POST,
+						method: s.eb.POST,
 						endpoint: Object(E.a)(Object(T.a)(Object(R.a)(`${e.apiUrl}/api/comment.json`))),
 						data: a
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
@@ -962,7 +962,7 @@
 						});
 						u(Object(l.x)(s, f.a.CommentSubmitted))
 					} else {
-						v.error && v.error.type === s.Bb && W.g(g, ie(r), e);
+						v.error && v.error.type === s.Db && W.g(g, ie(r), e);
 						const t = v.error && v.error.fields && v.error.fields[0] ? v.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -1029,7 +1029,7 @@
 						depth: i + 1
 					}));
 					else {
-						if (_.error && _.error.type === s.Bb) {
+						if (_.error && _.error.type === s.Db) {
 							const e = Object(Z.a)(m, {
 								commentId: r
 							});
@@ -1201,7 +1201,7 @@
 							}
 							return Object(x.a)(Object(C.a)(e, [v.a]), {
 								endpoint: Object(E.a)(Object(R.a)(Object(T.a)(`${e.apiUrl}/api/editusertext`))),
-								method: s.cb.POST,
+								method: s.eb.POST,
 								data: i
 							}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 								...e,
@@ -1246,7 +1246,7 @@
 					})), W.a(e, a);
 					const i = await ((e, t) => Object(x.a)(Object(C.a)(e, [v.a]), {
 						endpoint: Object(E.a)(`${e.apiUrl}/api/del`),
-						method: s.cb.POST,
+						method: s.eb.POST,
 						data: {
 							id: t
 						}
@@ -1581,7 +1581,7 @@
 						const t = `https://${r.pointsDocsBaseUrl}v1.json?web`,
 							o = await Object(s.b)({
 								endpoint: t,
-								method: n.cb.GET
+								method: n.eb.GET
 							});
 						o.ok && o.body && e(u(o.body))
 					}
@@ -3704,9 +3704,9 @@
 					})(r, s, o);
 				return a ? [a] : (e => {
 					const t = [];
-					return e.image > C.T && t.push(n.fbt._("Post may not contain more that 20 images", null, {
+					return e.image > C.V && t.push(n.fbt._("Post may not contain more that 20 images", null, {
 						hk: "1Szc36"
-					})), e.video + e.gifvideo > C.W && t.push(n.fbt._("Post may not contain more that 5 videos", null, {
+					})), e.video + e.gifvideo > C.Y && t.push(n.fbt._("Post may not contain more that 5 videos", null, {
 						hk: "2WhZ8k"
 					})), t
 				})(r)
@@ -4221,42 +4221,42 @@
 				u = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const m = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/save`),
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
 				}),
 				p = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/unsave`),
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
 				}),
 				h = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/lock`),
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
 				}),
 				b = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/unlock`),
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
 				}),
 				f = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/approve`),
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
 				}),
 				_ = (e, t, o) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/remove`),
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t,
 						spam: o
@@ -4264,21 +4264,21 @@
 				}),
 				g = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
 				}),
 				x = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
 				}),
 				y = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t
 					}
@@ -4288,14 +4288,14 @@
 					return a && (i = Object(d.a)(i)), Object(r.a)(e, {
 						data: o,
 						endpoint: i,
-						method: s.cb.POST,
+						method: s.eb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
 				v = (e, t, o, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/distinguish/${o}`),
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: {
 						id: t,
 						sticky: n
@@ -4316,7 +4316,7 @@
 				};
 				return t === c.h.MARKDOWN ? d.richtext_json = o : d.markdown_text = o, Object(s.a)(Object(r.a)(e, [a.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/convert_rte_body_format`),
-					method: n.cb.POST,
+					method: n.eb.POST,
 					data: d
 				})
 			}
@@ -4711,4 +4711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.126b14f5bd9e6fd8280a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c9d5197ddc99d7a34b61.js.map

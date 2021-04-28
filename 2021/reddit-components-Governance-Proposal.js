@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.b4571270118182c447a9.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.e75931df03511fd83f26.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Proposal"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -27,21 +27,21 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const o = [s.fc, s.ib, s.x, s.J, s.db, s.Ib],
+			const o = [s.hc, s.kb, s.x, s.L, s.fb, s.Kb],
 				a = {
-					[s.Ib]: e => r.fbt._({
+					[s.Kb]: e => r.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "3pTp9Z"
 					}),
-					[s.db]: e => r.fbt._({
+					[s.fb]: e => r.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "2gB3sf"
 					}),
-					[s.J]: e => r.fbt._({
+					[s.L]: e => r.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
 					}, [r.fbt._plural(e, "number")], {
@@ -53,13 +53,13 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[s.ib]: e => r.fbt._({
+					[s.kb]: e => r.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.fc]: e => r.fbt._({
+					[s.hc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -67,28 +67,28 @@
 					})
 				},
 				i = {
-					[s.Ib]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
+					[s.Kb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
-					[s.db]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[s.fb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "43tM5H"
 					}),
-					[s.J]: e => r.fbt._("{amount}h", [r.fbt._param("amount", String(e))], {
+					[s.L]: e => r.fbt._("{amount}h", [r.fbt._param("amount", String(e))], {
 						hk: "19NsxU"
 					}),
 					[s.x]: e => r.fbt._("{amount}d", [r.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[s.ib]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[s.kb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.fc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.hc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[s.ib]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[s.kb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.fc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.hc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -97,12 +97,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[s.fc]: "",
-						[s.ib]: "",
+						[s.hc]: "",
+						[s.kb]: "",
 						[s.x]: "",
-						[s.J]: "",
-						[s.db]: "",
-						[s.Ib]: ""
+						[s.L]: "",
+						[s.fb]: "",
+						[s.Kb]: ""
 					};
 				let u = l - c;
 				if (u <= 0) return r.fbt._("a moment", null, {
@@ -256,8 +256,8 @@
 				I = Object(s.a)(E.k),
 				P = Object(s.a)(E.q),
 				j = Object(s.a)(E.r),
-				R = Object(s.a)(E.s),
-				k = Object(s.a)(E.t),
+				k = Object(s.a)(E.s),
+				R = Object(s.a)(E.t),
 				T = Object(s.a)(E.u),
 				w = Object(s.a)(E.v),
 				S = Object(s.a)(E.w),
@@ -308,7 +308,7 @@
 				}, V = (e, t) => async (n, s, {
 					apiContext: i
 				}) => {
-					n(R());
+					n(k());
 					const d = s().transfers.communityPoints.contentId || void 0,
 						u = await
 					function(e, t) {
@@ -326,7 +326,7 @@
 						...e,
 						contentId: d
 					});
-					u.ok ? (n(k({
+					u.ok ? (n(R({
 						...u.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
@@ -451,9 +451,9 @@
 				I = n("./src/lib/bigNumberUtils/percent.ts"),
 				P = n("./src/lib/prettyPrintNumber/index.ts"),
 				j = n("./src/reddit/helpers/governance/tokens.ts"),
-				R = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				k = n("./src/reddit/components/Poll/ResultOption/index.m.less"),
-				T = n.n(k);
+				k = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				R = n("./src/reddit/components/Poll/ResultOption/index.m.less"),
+				T = n.n(R);
 			! function(e) {
 				e[e.Count = 0] = "Count", e[e.Percent = 1] = "Percent"
 			}(E || (E = {}));
@@ -484,7 +484,7 @@
 						})
 					}, `${o.toFixed(1)}%`), a.a.createElement("div", {
 						className: T.a.text
-					}, t.text), s.userSelected && a.a.createElement(R.a, {
+					}, t.text), s.userSelected && a.a.createElement(k.a, {
 						className: T.a.check
 					}))
 				},
@@ -593,8 +593,8 @@
 				userIsLoggedIn: e => !!e.user.account
 			});
 			var Z = Object(i.b)(W)(Object(N.c)(z)),
-				J = n("./src/reddit/components/Poll/index.m.less"),
-				K = n.n(J);
+				K = n("./src/reddit/components/Poll/index.m.less"),
+				J = n.n(K);
 			class Q extends a.a.Component {
 				constructor() {
 					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(C.j)(e, t), this.sendPollResultsEvent = () => {
@@ -631,7 +631,7 @@
 					return r ? a.a.createElement("div", {
 						className: e
 					}, i && a.a.createElement("div", {
-						className: K.a.title
+						className: J.a.title
 					}, i), s && Object(C.h)(r, s) ? a.a.createElement(V, {
 						displayType: t,
 						poll: r,
@@ -1170,7 +1170,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.cb.GET
+					method: s.eb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1192,7 +1192,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1447,4 +1447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.b4571270118182c447a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Proposal.e75931df03511fd83f26.js.map

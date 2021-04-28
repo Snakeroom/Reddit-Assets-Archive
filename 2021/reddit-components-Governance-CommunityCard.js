@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.531035ca5f2c72fabd85.js
-// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.1b8c99df72e48f8679be.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -87,7 +87,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.cb.GET
+								method: r.eb.GET
 							});
 						n.ok && n.body && e(u(n.body))
 					}
@@ -1164,7 +1164,7 @@
 			function a(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.cb.GET
+					method: s.eb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1186,7 +1186,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.cb.POST,
+					method: s.eb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1764,4 +1764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.531035ca5f2c72fabd85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.1b8c99df72e48f8679be.js.map

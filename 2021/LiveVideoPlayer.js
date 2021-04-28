@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.fcb2f8bb424206af9f22.js
-// Retrieved at 4/20/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a192cad7b171c14e1861.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -146,7 +146,7 @@
 						type: e.type
 					} : {
 						id: Object(x.m)(l(), e.name),
-						name: `${n.Yb}${e.name}`,
+						name: `${n.ac}${e.name}`,
 						type: e.type
 					});
 					if (!Object(P.J)(l())) return o(Object(d.k)({
@@ -177,7 +177,7 @@
 							subredditNames: s,
 							subscribe: i
 						}) => Object(h.a)(Object(m.a)(e, [p.a]), {
-							method: n.cb.POST,
+							method: n.eb.POST,
 							endpoint: Object(f.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: i ? "sub" : "unsub",
@@ -244,7 +244,7 @@
 							identifier: S
 						});
 					(O() || (await t(N([S], !0)), O())) && ((await ((e, t, s) => Object(h.a)(Object(m.a)(e, [p.a]), {
-						method: n.cb.POST,
+						method: n.eb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -278,7 +278,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, s) => Object(h.a)(Object(m.a)(e, [p.a]), {
-						method: n.cb.POST,
+						method: n.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -316,7 +316,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: r
 					})), (await ((e, t, s) => Object(h.a)(Object(m.a)(e, [p.a]), {
-						method: n.cb.POST,
+						method: n.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -1032,4 +1032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.fcb2f8bb424206af9f22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a192cad7b171c14e1861.js.map

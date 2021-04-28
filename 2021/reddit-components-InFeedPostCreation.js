@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.e133e0ca8832dc4ddac0.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.5fc88a84b9e971c8bd14.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, s) {
@@ -34,19 +34,19 @@
 				b = s("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				x = s("./src/reddit/controls/Button/index.tsx"),
 				I = s("./src/reddit/controls/InternalLink/index.tsx"),
-				E = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				_ = s("./src/reddit/icons/fonts/index.tsx"),
-				f = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
-				h = s("./src/reddit/icons/svgs/Media/index.tsx"),
-				v = s("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				M = s("./src/reddit/selectors/subreddit.ts"),
+				_ = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
+				E = s("./src/reddit/icons/fonts/index.tsx"),
+				O = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
+				f = s("./src/reddit/icons/svgs/Media/index.tsx"),
+				h = s("./src/reddit/selectors/experiments/presenceIndicator.ts"),
+				v = s("./src/reddit/selectors/subreddit.ts"),
 				N = s("./src/reddit/selectors/telemetry.ts"),
 				g = s("./src/reddit/selectors/user.ts"),
-				O = s("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				U = s.n(O);
+				U = s("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				C = s.n(U);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -54,16 +54,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = l.a.wrapped(b.a, "CurrentUserIcon", U.a);
-			var k;
+			const k = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
+			var P;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
-			}(k || (k = {}));
-			const P = e => {
+			}(P || (P = {}));
+			const M = e => {
 					switch (e) {
-						case d.Mb.MEDIA:
+						case d.Ob.MEDIA:
 							return "?media=true";
-						case d.Mb.LINK_ONLY:
+						case d.Ob.LINK_ONLY:
 							return "?url";
 						default:
 							return ""
@@ -71,9 +71,9 @@
 				},
 				w = e => {
 					switch (e) {
-						case d.Mb.MEDIA:
+						case d.Ob.MEDIA:
 							return "media_post";
-						case d.Mb.LINK_ONLY:
+						case d.Ob.LINK_ONLY:
 							return "link_post";
 						default:
 							return "create_post"
@@ -81,10 +81,10 @@
 				},
 				y = Object(a.c)({
 					currentUser: g.i,
-					isPresenceConsumptionExpEnabled: v.a,
+					isPresenceConsumptionExpEnabled: h.a,
 					isPresenceTogglePref: g.hb,
-					subreddit: M.A,
-					subredditAboutInfo: M.x
+					subreddit: v.A,
+					subredditAboutInfo: v.x
 				}),
 				L = Object(o.b)(y, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -109,9 +109,9 @@
 				subredditName: l,
 				toggleTooltip: u
 			}) => {
-				const p = Object(E.a)(),
+				const p = Object(_.a)(),
 					b = (l ? `/r/${l}` : "") + "/submit",
-					v = function(e, t) {
+					h = function(e, t) {
 						if (!e) return {
 							link: !0,
 							media: !0
@@ -131,7 +131,7 @@
 							media: (c || n) && !e.isNSFW
 						}
 					}(i, a),
-					M = e => {
+					v = e => {
 						o(t => ({
 							source: "post_composer_du",
 							action: "click",
@@ -140,20 +140,20 @@
 						}))
 					},
 					g = () => {
-						M(d.Mb.POST), r(b)
+						v(d.Ob.POST), r(b)
 					},
-					O = t && s,
+					U = t && s,
 					y = e ? c.a.createElement(I.a, {
-						className: U.a.UserIconWrapper,
+						className: C.a.UserIconWrapper,
 						to: e.url
-					}, c.a.createElement(j, {
-						className: U.a.UserIcon,
-						shouldShowPresenceIndicator: O
+					}, c.a.createElement(k, {
+						className: C.a.UserIcon,
+						shouldShowPresenceIndicator: U
 					})) : null;
 				return c.a.createElement("div", {
-					className: U.a.Container
+					className: C.a.Container
 				}, y, c.a.createElement("input", {
-					className: U.a.Input,
+					className: C.a.Input,
 					onChange: g,
 					onClick: g,
 					onKeyPress: g,
@@ -161,43 +161,43 @@
 						hk: "OcnKS"
 					}),
 					type: "text"
-				}), v.media && c.a.createElement(x.q, {
-					className: U.a.Button,
+				}), h.media && c.a.createElement(x.q, {
+					className: C.a.Button,
 					"aria-label": A(),
 					priority: x.b.Plain,
 					kind: x.a.InternalLink,
 					size: x.c.M,
-					id: k.Media,
-					onClick: () => M(d.Mb.MEDIA),
-					onMouseEnter: () => u(k.Media),
-					onMouseLeave: () => u(k.Media),
-					to: b + P(d.Mb.MEDIA),
-					Icon: p ? e => c.a.createElement(_.a, C({
+					id: P.Media,
+					onClick: () => v(d.Ob.MEDIA),
+					onMouseEnter: () => u(P.Media),
+					onMouseLeave: () => u(P.Media),
+					to: b + M(d.Ob.MEDIA),
+					Icon: p ? e => c.a.createElement(E.a, j({
 						name: "image_post"
-					}, e)) : h.a,
-					isSquare: !0
-				}, c.a.createElement(m.c, {
-					caretOnTop: !0,
-					tooltipId: k.Media,
-					text: A()
-				})), v.link && c.a.createElement(x.q, {
-					className: U.a.Button,
-					priority: x.b.Plain,
-					kind: x.a.InternalLink,
-					size: x.c.M,
-					"aria-label": F(),
-					id: k.Link,
-					onClick: () => M(d.Mb.LINK_ONLY),
-					onMouseEnter: () => u(k.Link),
-					onMouseLeave: () => u(k.Link),
-					to: b + P(d.Mb.LINK_ONLY),
-					Icon: p ? e => c.a.createElement(_.a, C({
-						name: "link_post"
 					}, e)) : f.a,
 					isSquare: !0
 				}, c.a.createElement(m.c, {
 					caretOnTop: !0,
-					tooltipId: k.Media,
+					tooltipId: P.Media,
+					text: A()
+				})), h.link && c.a.createElement(x.q, {
+					className: C.a.Button,
+					priority: x.b.Plain,
+					kind: x.a.InternalLink,
+					size: x.c.M,
+					"aria-label": F(),
+					id: P.Link,
+					onClick: () => v(d.Ob.LINK_ONLY),
+					onMouseEnter: () => u(P.Link),
+					onMouseLeave: () => u(P.Link),
+					to: b + M(d.Ob.LINK_ONLY),
+					Icon: p ? e => c.a.createElement(E.a, j({
+						name: "link_post"
+					}, e)) : O.a,
+					isSquare: !0
+				}, c.a.createElement(m.c, {
+					caretOnTop: !0,
+					tooltipId: P.Media,
 					text: A()
 				})))
 			}))
@@ -232,8 +232,8 @@
 					isPresenceUserPrefEnabled: d.hb,
 					shouldHideNSFW: d.B
 				}),
-				E = Object(o.b)(I);
-			t.a = E(e => {
+				_ = Object(o.b)(I);
+			t.a = _(e => {
 				const {
 					currentUser: t,
 					shouldShowPresenceIndicator: s,
@@ -303,16 +303,16 @@
 			const c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Ec
-					}) === n.Pc.Enabled
+						experimentName: n.Gc
+					}) === n.Rc.Enabled
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Dc
-					}) === n.Oc.Enabled
+						experimentName: n.Fc
+					}) === n.Qc.Enabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.e133e0ca8832dc4ddac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.5fc88a84b9e971c8bd14.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.ad2d2f9134805e3ef920.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2f40071201f43f17cbb3.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1204,7 +1204,7 @@
 					apiContext: n
 				}) => {
 					const o = Object(m.a)(r()),
-						s = (null == o ? void 0 : o.pennies) || i.qb,
+						s = (null == o ? void 0 : o.pennies) || i.sb,
 						l = Object(p.c)(p.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const f = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -1764,7 +1764,7 @@
 					} = this.props;
 					return a.a.createElement("div", {
 						className: I.a.premiumPurchaseSelectPaymentFooter
-					}, r === l.zb && a.a.createElement(K, {
+					}, r === l.Bb && a.a.createElement(K, {
 						buttonId: t,
 						className: I.a.premiumPurchaseButton,
 						customField: e,
@@ -1774,7 +1774,7 @@
 						title: O.fbt._("Continue to PayPal", null, {
 							hk: "2TCl83"
 						})
-					}), r === l.yb && a.a.createElement(L.i, {
+					}), r === l.Ab && a.a.createElement(L.i, {
 						className: I.a.premiumPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: n,
@@ -1850,15 +1850,15 @@
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
-				}), e.selectedPayment === l.yb && o, a.a.createElement("div", {
+				}), e.selectedPayment === l.Ab && o, a.a.createElement("div", {
 					className: I.a.checkoutFooter
 				}, a.a.createElement("div", {
 					className: I.a.premiumPurchaseTotal
 				}, O.fbt._("Total: {Price}/{Membership Term}", [O.fbt._param("Price", `$${t}`), O.fbt._param("Membership Term", r)], {
 					hk: "1islUR"
-				}))), e.selectedPayment === l.zb && e.paypalErrorMessage && a.a.createElement("div", {
+				}))), e.selectedPayment === l.Bb && e.paypalErrorMessage && a.a.createElement("div", {
 					className: I.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === l.yb && e.stripeErrorMessage && a.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === l.Ab && e.stripeErrorMessage && a.a.createElement("div", {
 					className: I.a.errorMessage
 				}, e.stripeErrorMessage), a.a.createElement("div", {
 					className: I.a.membershipDescription
@@ -1948,9 +1948,9 @@
 					premiumPricePackage: j,
 					isPremiumMigrationEnabled: O
 				}) => {
-					let x = l.qb,
+					let x = l.sb,
 						w = !1;
-					O && _ && j ? (x = j.price, w = P === E.b.Year) : r && (x = r ? r.pennies : l.qb, w = !!r && r.frequency === u.c.Yearly);
+					O && _ && j ? (x = j.price, w = P === E.b.Year) : r && (x = r ? r.pennies : l.sb, w = !!r && r.frequency === u.c.Yearly);
 					const k = Object(n.useCallback)(e => {
 						if (27 === e.keyCode) return m()
 					}, [m]);
@@ -2237,7 +2237,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(i.a)(l);
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: u,
 					data: d
 				}).then(c.c)
@@ -2253,7 +2253,7 @@
 					correlation_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(c.c)
@@ -2271,7 +2271,7 @@
 					thing_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(c.c)
@@ -2291,7 +2291,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(c.c)
@@ -2319,7 +2319,7 @@
 					thing_id: f
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(c.c)
@@ -2341,7 +2341,7 @@
 					thing_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.cb.POST,
+					method: n.eb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.c)
@@ -2497,4 +2497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.ad2d2f9134805e3ef920.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2f40071201f43f17cbb3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.a73e395f22df6b372019.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.56734628bea75a00e78e.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -165,7 +165,7 @@
 						type: e.type
 					} : {
 						id: Object(w.m)(d(), e.name),
-						name: `${s.Yb}${e.name}`,
+						name: `${s.ac}${e.name}`,
 						type: e.type
 					});
 					if (!Object(k.J)(d())) return o(Object(c.k)({
@@ -196,7 +196,7 @@
 							subredditNames: n,
 							subscribe: i
 						}) => Object(f.a)(Object(m.a)(e, [p.a]), {
-							method: s.cb.POST,
+							method: s.eb.POST,
 							endpoint: Object(v.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: i ? "sub" : "unsub",
@@ -263,7 +263,7 @@
 							identifier: g
 						});
 					(C() || (await t(F([g], !0)), C())) && ((await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
-						method: s.cb.POST,
+						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -297,7 +297,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
-						method: s.cb.POST,
+						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -335,7 +335,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, n) => Object(f.a)(Object(m.a)(e, [p.a]), {
-						method: s.cb.POST,
+						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -1525,4 +1525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a73e395f22df6b372019.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.56734628bea75a00e78e.js.map

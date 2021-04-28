@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.65c7f6b53eaba306472a.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.de0df32b505b73b54bef.js
+// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -720,7 +720,7 @@
 					}, u.a.createElement(L.a, {
 						className: M.a.seeMorePostsText,
 						to: Object(m.a)(f, {
-							type: h.Qb.Posts
+							type: h.Sb.Posts
 						})
 					}, H._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -2122,7 +2122,7 @@
 				Pe = s.n(Le);
 			const {
 				fbt: Oe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), je = Object(P.t)(), Ne = (e, t) => t.match.params.sort || a.Q, we = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), je = Object(P.t)(), Ne = (e, t) => t.match.params.sort || a.S, we = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(A.Posts), e.hasSubreddits && t.push(A.Communities), e.childRelationships.length && t.push(A.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(n.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.65c7f6b53eaba306472a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.de0df32b505b73b54bef.js.map
