@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3165b04e7224fb5cd5ba.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.447d58b009f68a19f9be.js
+// Retrieved at 4/28/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3486,29 +3486,29 @@
 			e.exports = {
 				TwitterIcon: "y6CoOX8JxvJY0Kl9fvx8O",
 				twitterIcon: "y6CoOX8JxvJY0Kl9fvx8O",
-				GoogleIcon: "_2HGIcs7x1ojc1Moq_zjot8",
-				googleIcon: "_2HGIcs7x1ojc1Moq_zjot8",
 				AppleIcon: "_3KWqmZWrSf8rUGBzgw4zPr",
 				appleIcon: "_3KWqmZWrSf8rUGBzgw4zPr",
+				GoogleIcon: "_2HGIcs7x1ojc1Moq_zjot8",
+				googleIcon: "_2HGIcs7x1ojc1Moq_zjot8",
 				LoadingIcon: "PYTg-gbJiYylgL7Ep40Ez",
 				loadingIcon: "PYTg-gbJiYylgL7Ep40Ez",
 				ConnectApple: "TAF33bKwRX0N0jqZED4G5",
 				connectApple: "TAF33bKwRX0N0jqZED4G5",
-				"m-responsive": "_2CDbVOW43orfPYw-t-nPiq",
-				mResponsive: "_2CDbVOW43orfPYw-t-nPiq",
 				ConnectGoogle: "_15mHBcXEigFDBhqx4A5u7z",
 				connectGoogle: "_15mHBcXEigFDBhqx4A5u7z",
 				ConnectTwitter: "X3WnGWuTGeHRuSAUa5SvC",
 				connectTwitter: "X3WnGWuTGeHRuSAUa5SvC",
-				ConnectTwitterButton: "_3492mSfQUroLGCVlS9cxuC",
-				connectTwitterButton: "_3492mSfQUroLGCVlS9cxuC",
-				active: "_3vAfZbL1RYMw8WeC1TpCfV",
-				ConnectGoogleButton: "_3PZhYrOiAsgZIW2cezS6tI",
-				connectGoogleButton: "_3PZhYrOiAsgZIW2cezS6tI",
-				TextAndIconWrapper: "_1pLtFFacVWJa1d5e20ySJX",
-				textAndIconWrapper: "_1pLtFFacVWJa1d5e20ySJX",
+				"m-responsive": "_2CDbVOW43orfPYw-t-nPiq",
+				mResponsive: "_2CDbVOW43orfPYw-t-nPiq",
 				ConnectAppleButton: "_1oQRGKLqEtbGwWUMbhCDZj",
 				connectAppleButton: "_1oQRGKLqEtbGwWUMbhCDZj",
+				ConnectGoogleButton: "_3PZhYrOiAsgZIW2cezS6tI",
+				connectGoogleButton: "_3PZhYrOiAsgZIW2cezS6tI",
+				ConnectTwitterButton: "_3492mSfQUroLGCVlS9cxuC",
+				connectTwitterButton: "_3492mSfQUroLGCVlS9cxuC",
+				TextAndIconWrapper: "_1pLtFFacVWJa1d5e20ySJX",
+				textAndIconWrapper: "_1pLtFFacVWJa1d5e20ySJX",
+				active: "_3vAfZbL1RYMw8WeC1TpCfV",
 				DisconnectButton: "_3YGYMFQnmSavH2Yf3BYPQ1",
 				disconnectButton: "_3YGYMFQnmSavH2Yf3BYPQ1",
 				Username: "_1Na-ZHbt3YWbfBck8jEjd",
@@ -10756,4 +10756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3165b04e7224fb5cd5ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.447d58b009f68a19f9be.js.map
