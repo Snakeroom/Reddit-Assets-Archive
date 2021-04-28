@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d7fb5b44eb47bc705b3e.js
-// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.698769ba7d69ff583292.js
+// Retrieved at 4/28/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -2548,9 +2548,12 @@
 						button: t,
 						overrideColors: r
 					} = e, n = Object(h.a)(e).button;
-					return s.a.createElement(c.l, {
+					return s.a.createElement(c.q, {
 						className: E(t),
-						style: y(t, r, n)
+						style: y(t, r, n),
+						isFullWidth: !0,
+						size: c.c.S,
+						priority: c.b.Secondary
 					}, t.kind === f.f.Text && s.a.createElement("span", {
 						className: t.hoverState ? w.a.vanishingTextButtonText : void 0
 					}, t.text), t.hoverState && t.hoverState.kind === f.f.Text && s.a.createElement("span", {
@@ -3659,4 +3662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d7fb5b44eb47bc705b3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.698769ba7d69ff583292.js.map
