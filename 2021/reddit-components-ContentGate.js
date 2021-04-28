@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.c00a6b4582658b7d3fdb.js
-// Retrieved at 4/27/2021, 11:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.88707774db0c1018dd6c.js
+// Retrieved at 4/28/2021, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -136,7 +136,7 @@
 				C = n("./src/lib/linkMatchers/customLinks.ts"),
 				R = n("./src/reddit/controls/OutboundLink/index.tsx");
 			const T = /\[(.+?)\]\((.+?)\)/g,
-				P = e => {
+				j = e => {
 					const t = e.split(T);
 					if (1 === t.length) return [e];
 					const n = [];
@@ -146,9 +146,9 @@
 					}
 					return n
 				};
-			var j = o.a.memo(e => {
+			var P = o.a.memo(e => {
 					let t = [e.text];
-					return e.parseMdLinks && (t = w()(t, P)), e.parseRegularLinks && (t = w()(t, e => Array.isArray(e) ? [e] : (e => {
+					return e.parseMdLinks && (t = w()(t, j)), e.parseRegularLinks && (t = w()(t, e => Array.isArray(e) ? [e] : (e => {
 						const t = B.f.add(C.g.subreddit.prefix, C.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
@@ -200,7 +200,7 @@
 				fbt: W
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = c.a.wrapped(M, "PrivateKey", I.a), Y = c.a.div("ButtonsContainer", I.a), Z = c.a.div("Container", I.a), J = c.a.div("Description", I.a), X = c.a.div("PrivateSubredditDetails", I.a), V = c.a.div("PrivateSubredditDescription", I.a), Q = c.a.h3("PrivateSubredditName", I.a), $ = c.a.a("Link", I.a), ee = c.a.wrapped(q.k, "LinkRouterButton", I.a), te = c.a.wrapped(q.j, "LinkButton", I.a), ne = c.a.wrapped(q.n, "SecondaryLinkRouterButton", I.a), re = c.a.wrapped(q.m, "SecondaryLinkButton", I.a), ae = c.a.wrapped(ee, "GoHomeLinkButton", I.a), oe = c.a.img("Image", I.a), se = c.a.img("ImagePlaceholder", I.a), ie = c.a.wrapped(ee, "LeftLinkRouterButton", I.a), le = c.a.wrapped(te, "LeftLinkButton", I.a), ce = c.a.wrapped(re, "SecondaryLeftLinkButton", I.a), ue = c.a.wrapped(ne, "SecondaryLeftLinkRouterButton", I.a), de = c.a.h3("Title", I.a), me = c.a.div("PageBody", I.a), he = c.a.div("QuarantineMessageWrapper", I.a), pe = Object(l.c)({
 				isLoggedIn: H.I,
-				origin: G.i,
+				origin: G.j,
 				user: H.i,
 				isPrivateSubredditContributorRequestPending: e => (e => {
 					if (!Object(H.J)(e)) return !1;
@@ -364,7 +364,7 @@
 							src: `${r.a.assetPath}/img/content-gate-icons/banned.png`
 						}), o.a.createElement(de, null, W._("r/{community name} has been banned from Reddit", [W._param("community name", y)], {
 							hk: "2at9Se"
-						})), (e => o.a.createElement(J, null, e ? o.a.createElement(j, {
+						})), (e => o.a.createElement(J, null, e ? o.a.createElement(P, {
 							linkClassName: I.a.Link,
 							text: e,
 							parseMdLinks: !0,
@@ -572,4 +572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.c00a6b4582658b7d3fdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.88707774db0c1018dd6c.js.map
