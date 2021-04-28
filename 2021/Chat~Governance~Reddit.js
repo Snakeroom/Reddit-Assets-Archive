@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3d149868e2111278219.js
-// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fd62c2f3aaa1bc1408a7.js
+// Retrieved at 4/28/2021, 12:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1583,11 +1583,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("132436"),
+				buildNumber: r("132453"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1619619707"),
+				})("1619624059"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4170,14 +4170,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c70a01ecaacc4e2be2d723cb304b323ba667a700f-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c138fa6d66a987b0a06372a54e383c019afd5ab1b-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "70a01ecaacc4e2be2d723cb304b323ba667a700f-production",
+						release: "138fa6d66a987b0a06372a54e383c019afd5ab1b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4671,7 +4671,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "70a01ecaacc4e2be2d723cb304b323ba667a700f-production",
+						releaseClient: "138fa6d66a987b0a06372a54e383c019afd5ab1b-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -27580,70 +27580,72 @@
 		"./src/reddit/models/Gold/Powerups/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return s
-			})), i.d(t, "d", (function() {
 				return o
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return d
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return a
+			})), i.d(t, "b", (function() {
+				return c
 			}));
-			var n, r = i("./node_modules/fbt/lib/FbtPublic.js");
+			var n, r = i("./node_modules/fbt/lib/FbtPublic.js"),
+				s = i("./src/lib/constants/index.ts");
 			! function(e) {
 				e[e.First = 1] = "First", e[e.Second = 2] = "Second"
 			}(n || (n = {}));
 			n.Second;
-			var s;
+			var o;
 			! function(e) {
 				e.Achievements = "ACHIEVEMENT_FLAIRS", e.SdVideo = "SD_VIDEO", e.HdVideo = "HD_VIDEO", e.CommentsWithGifs = "COMMENTS_WITH_GIFS", e.CommentsWithEmoji = "COMMENTS_WITH_EMOJI", e.PostsImageUpload = "POSTS_IMAGE_UPLOAD", e.HeroStatus = "HERO_STATUS", e.More = "MORE"
-			}(s || (s = {}));
-			const o = {
-					[s.Achievements]: () => r.fbt._("Achievements", null, {
+			}(o || (o = {}));
+			const d = {
+					[o.Achievements]: () => r.fbt._("Achievements", null, {
 						hk: "15Pxs"
 					}),
-					[s.SdVideo]: () => r.fbt._("SD video", null, {
+					[o.SdVideo]: () => r.fbt._("SD video", null, {
 						hk: "GDxZa"
 					}),
-					[s.HdVideo]: () => r.fbt._("HD Video", null, {
+					[o.HdVideo]: () => r.fbt._("HD Video", null, {
 						hk: "2KPR6O"
 					}),
-					[s.CommentsWithGifs]: () => r.fbt._("GIF Replies", null, {
+					[o.CommentsWithGifs]: () => r.fbt._("GIF Replies", null, {
 						hk: "1wXiEa"
 					}),
-					[s.CommentsWithEmoji]: () => r.fbt._("Custom Emojis", null, {
+					[o.CommentsWithEmoji]: () => r.fbt._("Custom Emojis", null, {
 						hk: "2qt00u"
 					}),
-					[s.PostsImageUpload]: () => r.fbt._("Upload images", null, {
+					[o.PostsImageUpload]: () => r.fbt._("Upload images", null, {
 						hk: "1P6ot7"
 					}),
-					[s.HeroStatus]: () => r.fbt._("Hero Status", null, {
+					[o.HeroStatus]: () => r.fbt._("Hero Status", null, {
 						hk: "miGwE"
 					}),
-					[s.More]: () => r.fbt._("More to come...", null, {
+					[o.More]: () => r.fbt._("More to come...", null, {
 						hk: "3ksSuD"
 					})
 				},
-				d = {
-					[s.Achievements]: () => r.fbt._("Recognize members' contributions and skills", null, {
+				a = {
+					[o.Achievements]: () => r.fbt._("Recognize members' contributions and skills", null, {
 						hk: "lhUOn"
 					}),
-					[s.SdVideo]: () => "",
-					[s.HdVideo]: () => r.fbt._("Upload and watch in greater resolution", null, {
+					[o.SdVideo]: () => "",
+					[o.HdVideo]: () => r.fbt._("Upload and watch in greater resolution", null, {
 						hk: "1rvNwn"
 					}),
-					[s.CommentsWithGifs]: () => r.fbt._("Throw a GIF in the thread when words won’t do", null, {
+					[o.CommentsWithGifs]: () => r.fbt._("Throw a GIF in the thread when words won’t do", null, {
 						hk: "4ATk7M"
 					}),
-					[s.CommentsWithEmoji]: () => r.fbt._("Use emojis made just for this community", null, {
+					[o.CommentsWithEmoji]: () => r.fbt._("Use emojis made just for this community", null, {
 						hk: "4cQwCT"
 					}),
-					[s.PostsImageUpload]: () => "",
-					[s.HeroStatus]: () => r.fbt._("Get on the heroes list and instantly access all perks", null, {
+					[o.PostsImageUpload]: () => "",
+					[o.HeroStatus]: () => r.fbt._("Get on the heroes list and instantly access all perks", null, {
 						hk: "2bnnTY"
 					}),
-					[s.More]: () => void 0
+					[o.More]: () => void 0
 				},
-				a = e => !e.supporterInfo || !e.supporterInfo.displayName
+				l = [s.B, s.A, s.Cb],
+				c = e => !e.supporterInfo || !e.supporterInfo.displayName || l.includes(e.supporterInfo.displayName)
 		},
 		"./src/reddit/models/GqlTopLevelField.ts": function(e, t, i) {
 			"use strict";
@@ -45893,4 +45895,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3d149868e2111278219.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fd62c2f3aaa1bc1408a7.js.map

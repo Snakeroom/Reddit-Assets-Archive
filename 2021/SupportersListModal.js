@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.fefc8af46ba8dc8d9c5b.js
-// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.6ce794fa4281ffd6fdac.js
+// Retrieved at 4/28/2021, 12:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, r) {
@@ -263,38 +263,40 @@
 							rank: c
 						} = e,
 						l = n.supporterInfo,
-						i = !!a && a.id === (null == l ? void 0 : l.id),
-						u = n.score,
-						d = (null == l ? void 0 : l.displayName) || m.fbt._({
+						i = null == l ? void 0 : l.displayName,
+						u = !!a && a.id === (null == l ? void 0 : l.id),
+						d = n.score,
+						p = i ? Math.min(c, 999) : null,
+						b = i || m.fbt._({
 							"*": "Anonymous Heroes",
 							_1: "Anonymous Hero"
-						}, [m.fbt._plural(u)], {
+						}, [m.fbt._plural(d)], {
 							hk: "8kyEI"
 						}).toString(),
-						p = null === (t = null == l ? void 0 : l.icon) || void 0 === t ? void 0 : t.url,
-						b = Boolean(null === (r = null == l ? void 0 : l.profile) || void 0 === r ? void 0 : r.isNsfw),
-						h = Object(w.a)(u);
+						h = null === (t = null == l ? void 0 : l.icon) || void 0 === t ? void 0 : t.url,
+						_ = Boolean(null === (r = null == l ? void 0 : l.profile) || void 0 === r ? void 0 : r.isNsfw),
+						j = Object(w.a)(d);
 					return o.a.createElement("div", {
 						className: f.a.supporter
 					}, o.a.createElement("div", {
 						className: f.a.supporterRank
-					}, Math.min(c, 999)), o.a.createElement(N, {
+					}, p), o.a.createElement(N, {
 						className: f.a.user,
-						name: d,
+						name: b,
 						isAnonymousUser: !l,
 						onClick: () => {
 							l && s(Object(E.f)(l.id, l.displayName))
 						}
 					}, o.a.createElement(v, {
-						name: d,
-						iconUrl: p,
-						isNsfw: b,
-						isCurrentUser: i
-					})), o.a.createElement(h, {
+						name: b,
+						iconUrl: h,
+						isNsfw: _,
+						isCurrentUser: u
+					})), o.a.createElement(j, {
 						className: f.a.powerupIcon
 					}), o.a.createElement("div", {
 						className: f.a.score
-					}, u))
+					}, d))
 				};
 			var g = r("./src/reddit/constants/modals.ts"),
 				L = r("./src/reddit/controls/Button/index.tsx"),
@@ -685,4 +687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.fefc8af46ba8dc8d9c5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.6ce794fa4281ffd6fdac.js.map
