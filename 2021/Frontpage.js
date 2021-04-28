@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.22521aad4b72546ee8ef.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ee3df30aa3459ece839a.js
+// Retrieved at 4/28/2021, 10:40:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["Frontpage", "FrontpageSidebar"], {
+	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
 			var n = s("./node_modules/lodash/_baseClamp.js"),
 				r = s("./node_modules/lodash/_copyArray.js"),
@@ -281,8 +281,8 @@
 					}
 				};
 			var T = s("./src/lib/pageTitle.ts"),
-				F = s("./src/reddit/actions/login.ts"),
-				L = s("./src/reddit/actions/platform.ts"),
+				L = s("./src/reddit/actions/login.ts"),
+				F = s("./src/reddit/actions/platform.ts"),
 				D = s("./src/reddit/actions/toaster.ts"),
 				B = s("./src/reddit/constants/page.ts"),
 				R = s("./src/reddit/constants/parameters.ts"),
@@ -330,7 +330,7 @@
 							isLoggedIn: g,
 							page: b
 						});
-					s(Object(L.m)(f.status));
+					s(Object(F.m)(f.status));
 					const y = `error-${e}`;
 					if (f.ok) {
 						const t = f.body;
@@ -375,7 +375,7 @@
 						u = r.listings.postOrder.api.pending[c],
 						m = R.x in e.queryParams && e.queryParams[R.x].toUpperCase() || "",
 						b = m in p.Wb && p.Wb[m];
-					if (u || d && !l && !t) return void(d && (s(L.l({
+					if (u || d && !l && !t) return void(d && (s(F.l({
 						title: T.c()
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
 						s(Object(X.b)(ee.a.FRONTPAGE))
@@ -390,14 +390,14 @@
 						sort: o,
 						statsdPathsForExperiments: f,
 						t: Object(q.a)(o, b)
-					})), s(L.l({
+					})), s(F.l({
 						title: T.c()
 					})), Object($.c)(r, {
 						experimentEligibilitySelector: $.a,
 						experimentName: "redesign_aa"
 					});
 					const y = Object(G.a)(r, {});
-					Object(G.e)(y) && s(Object(F.j)())
+					Object(G.e)(y) && s(Object(L.j)())
 				}, me = () => async (e, t) => {
 					var s, n;
 					const r = t();
@@ -1071,7 +1071,7 @@
 				}) : n.fbt._("See more", null, {
 					hk: "439kAh"
 				})))));
-			class F extends d.a.Component {
+			class L extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -1125,7 +1125,7 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var L = F,
+			var F = L,
 				D = s("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				B = s("./src/reddit/components/SidebarContainer/index.tsx"),
 				R = s("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -1488,8 +1488,8 @@
 				}),
 				url: "cryptocurrency"
 			}];
-			var Fe = s("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
-				Le = s.n(Fe);
+			var Le = s("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
+				Fe = s.n(Le);
 			const De = () => {
 					const e = `${Se.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = n.fbt._("Find Your Next Community!", null, {
@@ -1499,17 +1499,17 @@
 							backgroundImage: `url(${e})`
 						};
 					return d.a.createElement("div", {
-						className: Le.a.banner,
+						className: Fe.a.banner,
 						style: s
 					}, d.a.createElement("h2", {
-						className: Le.a.bannerText
+						className: Fe.a.bannerText
 					}, t))
 				},
 				Be = e => `/t/${e}?activeTab=communities`,
 				Re = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
-						className: Le.a.itemContainer
+						className: Fe.a.itemContainer
 					}, d.a.createElement(we.a, {
 						to: Be(e.topic.url),
 						onClick: () => e.sendEvent(Object(Ae.c)(t))
@@ -1528,7 +1528,7 @@
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
 					}, d.a.createElement(De, null), d.a.createElement("div", {
-						className: Le.a.container
+						className: Fe.a.container
 					}, s.map(e => d.a.createElement(Re, {
 						key: e.url,
 						topic: e,
@@ -1707,7 +1707,7 @@
 						})
 					})), m && d.a.createElement(g.a, null, d.a.createElement(Ue, null)), r && d.a.createElement(g.a, null, d.a.createElement(b.a, {
 						listingName: i
-					})), ct(this.props) && d.a.createElement(Oe, null), s && y && d.a.createElement(g.a, null, d.a.createElement(L, {
+					})), ct(this.props) && d.a.createElement(Oe, null), s && y && d.a.createElement(g.a, null, d.a.createElement(F, {
 						links: s
 					})), d.a.createElement(R.a, {
 						adComponent: d.a.createElement(D.a, {
@@ -2341,8 +2341,8 @@
 					let n = "";
 					return t && (n += "overlay-"), n += `sidebar-${e}`, null != s && (n += `-${s}`), n
 				},
-				F = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(_.F)(e.media) && e.media.content)),
-				L = e => !!e && e.isBlank,
+				L = e => !(!e || e.isBlank) && (!e.isMediaOnly || !!(e.media && Object(_.F)(e.media) && e.media.content)),
+				F = e => !!e && e.isBlank,
 				D = [{
 					img: "/img/house-ads/eatcheapandhealthy.png",
 					href: "/r/eatcheapandhealthy"
@@ -2420,7 +2420,7 @@
 					} = this.props, x = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
 					}), _ = y ? d.a.Fragment : h.a;
-					return p || t || !F(s) && g ? d.a.createElement(_, null, d.a.createElement(w, {
+					return p || t || !L(s) && g ? d.a.createElement(_, null, d.a.createElement(w, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: m
@@ -2431,7 +2431,7 @@
 						redditStyle: m,
 						placement: c,
 						removeSidebarSpacer: y
-					}) : F(s) ? d.a.createElement(_, null, d.a.createElement(N, {
+					}) : L(s) ? d.a.createElement(_, null, d.a.createElement(N, {
 						post: s,
 						refreshKey: i,
 						listingName: o,
@@ -2441,7 +2441,7 @@
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: m
-					}, L(s) && d.a.createElement(N, {
+					}, F(s) && d.a.createElement(N, {
 						post: s,
 						refreshKey: i,
 						listingName: o,
@@ -4053,9 +4053,9 @@
 			})), s.d(t, "d", (function() {
 				return T
 			})), s.d(t, "e", (function() {
-				return F
-			})), s.d(t, "v", (function() {
 				return L
+			})), s.d(t, "v", (function() {
+				return F
 			})), s.d(t, "E", (function() {
 				return D
 			})), s.d(t, "f", (function() {
@@ -4314,14 +4314,14 @@
 					playback: c(s, e, t),
 					...o(s, e)
 				}),
-				F = (e, t) => s => ({
+				L = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: c(s, e, t),
 					...o(s, e)
 				}),
-				L = (e, t) => s => ({
+				F = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
@@ -4573,8 +4573,8 @@
 				A = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				I = s("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				T = s("./src/reddit/helpers/trackers/screenview.ts"),
-				F = s("./src/reddit/layout/page/Listing/index.tsx"),
-				L = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				L = s("./src/reddit/layout/page/Listing/index.tsx"),
+				F = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				D = s("./src/reddit/selectors/experiments/trending.ts"),
 				B = s("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				R = s("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
@@ -4614,7 +4614,7 @@
 				countryMeta: M.b,
 				geopopular: q.m
 			}), ee = Object(d.c)({
-				isActionBarAnimationEnabled: L.b,
+				isActionBarAnimationEnabled: F.b,
 				isInTrendingEntrypointExperiment: D.a,
 				isLoggedIn: q.J,
 				isPopular: A.C,
@@ -4749,7 +4749,7 @@
 						listingKey: d,
 						listingName: K.b
 					});
-					return o.a.createElement(F.a, {
+					return o.a.createElement(L.a, {
 						className: Object(l.a)(Q.a.Container, this.props.className),
 						fitPageToContent: !0,
 						trendingUnit: b && o.a.createElement(ae, {
@@ -4841,9 +4841,9 @@
 			})), s.d(t, "h", (function() {
 				return T
 			})), s.d(t, "k", (function() {
-				return F
-			})), s.d(t, "c", (function() {
 				return L
+			})), s.d(t, "c", (function() {
+				return F
 			})), s.d(t, "f", (function() {
 				return D
 			})), s.d(t, "a", (function() {
@@ -4998,8 +4998,8 @@
 				}),
 				I = Object(r.a)(Object(n.a)(P, k, (e, t) => e ? t[e] : void 0)),
 				T = Object(r.a)(Object(n.a)(w, k, (e, t) => e ? t[e] : void 0)),
-				F = Object(r.a)(Object(n.a)(A, k, (e, t) => e ? t[e] : void 0)),
-				L = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, k, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
+				L = Object(r.a)(Object(n.a)(A, k, (e, t) => e ? t[e] : void 0)),
+				F = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, k, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)(P, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
@@ -5107,4 +5107,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.22521aad4b72546ee8ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ee3df30aa3459ece839a.js.map
