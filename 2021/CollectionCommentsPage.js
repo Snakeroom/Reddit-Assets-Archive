@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c07cd4ec223a5ef7e38a.js
-// Retrieved at 4/27/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3983751139afdcc0a6bf.js
+// Retrieved at 4/28/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3547,7 +3547,7 @@
 						onDistinguishComment: b,
 						sendEventWithName: this.sendCommentDistinguishEvent,
 						tooltipId: lt(e.id)
-					}))), this.props.reportFlowIsOpen && this.renderReportFlow())
+					}))), (!this.props.renderedInOverlay || !this.props.isCommentFocused) && this.props.reportFlowIsOpen && this.renderReportFlow())
 				}
 			}
 			var bt = Object(d.b)(ut, (e, {
@@ -3984,6 +3984,7 @@
 						modModeEnabled: F,
 						moderatorPermissions: c || T,
 						renderedInOverlay: Z,
+						isCommentFocused: b,
 						subreddit: Y,
 						trackCommentClick: Q
 					})), te && u.map(e => a.a.createElement(ds, {
@@ -9929,4 +9930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c07cd4ec223a5ef7e38a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3983751139afdcc0a6bf.js.map
