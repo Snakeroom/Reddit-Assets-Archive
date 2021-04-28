@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.69f28c1496401632d436.js
-// Retrieved at 4/26/2021, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.1939e2732f6ebc8f426e.js
+// Retrieved at 4/28/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/axios/index.js": function(e, n, t) {
@@ -825,22 +825,6 @@
 				return l(e, s(n, 4), t, u, i)
 			}
 		},
-		"./node_modules/lodash/times.js": function(e, n, t) {
-			var r = t("./node_modules/lodash/_baseTimes.js"),
-				i = t("./node_modules/lodash/_castFunction.js"),
-				s = t("./node_modules/lodash/toInteger.js"),
-				a = 9007199254740991,
-				o = 4294967295,
-				l = Math.min;
-			e.exports = function(e, n) {
-				if ((e = s(e)) < 1 || e > a) return [];
-				var t = o,
-					u = l(e, o);
-				n = i(n), e -= o;
-				for (var c = r(u, n); ++t < e;) n(t);
-				return c
-			}
-		},
 		"./node_modules/lodash/toArray.js": function(e, n, t) {
 			var r = t("./node_modules/lodash/_Symbol.js"),
 				i = t("./node_modules/lodash/_copyArray.js"),
@@ -861,6 +845,14 @@
 				if (f && e[f]) return l(e[f]());
 				var n = s(e);
 				return (n == p ? u : n == _ ? c : h)(e)
+			}
+		},
+		"./node_modules/lodash/uniqueId.js": function(e, n, t) {
+			var r = t("./node_modules/lodash/toString.js"),
+				i = 0;
+			e.exports = function(e) {
+				var n = ++i;
+				return r(e) + n
 			}
 		},
 		"./node_modules/sendbird/SendBird.min.js": function(e, n, t) {
@@ -1055,7 +1047,7 @@
 						return r
 					}
 
-					function k(e, n) {
+					function S(e, n) {
 						var t;
 						if ("undefined" == typeof Symbol || null == e[Symbol.iterator]) {
 							if (Array.isArray(e) || (t = A(e)) || n && e && "number" == typeof e.length) {
@@ -1102,7 +1094,7 @@
 						}
 					}
 					e = e && Object.prototype.hasOwnProperty.call(e, "default") ? e.default : e, t = t && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t, s = s && Object.prototype.hasOwnProperty.call(s, "default") ? s.default : s;
-					var S = function() {
+					var k = function() {
 							function e() {
 								o(this, e)
 							}
@@ -1704,7 +1696,7 @@
 								value: function(e) {
 									var n = e.apiHost,
 										t = e.url;
-									return e = e.params, t ? (e && e.internal ? "".concat(n, "/v").concat(S.SDK_MAJOR_VERSION, "/sdk") : "".concat(n, "/v").concat(S.SDK_MAJOR_VERSION)).concat(t) : n
+									return e = e.params, t ? (e && e.internal ? "".concat(n, "/v").concat(k.SDK_MAJOR_VERSION, "/sdk") : "".concat(n, "/v").concat(k.SDK_MAJOR_VERSION)).concat(t) : n
 								}
 							}, {
 								key: "_createHeader",
@@ -1716,7 +1708,7 @@
 										s = (o = O.get(this.sb._iid).container).appId,
 										a = o.auth,
 										o = (e = o.extensions, o.getUserAgentWithExtensions);
-									return i.SendBird = "JS,".concat(S.OS_VERSION, ",").concat(S.SDK_VERSION, ",").concat(s), i["SB-User-Agent"] = encodeURIComponent(o(e)), !n && a.sessionKey && (i["Session-Key"] = a.sessionKey), r && (i["App-Id"] = s, i["Access-Token"] = r), i["Request-Sent-Timestamp"] = (new Date).getTime().toString(), i
+									return i.SendBird = "JS,".concat(k.OS_VERSION, ",").concat(k.SDK_VERSION, ",").concat(s), i["SB-User-Agent"] = encodeURIComponent(o(e)), !n && a.sessionKey && (i["Session-Key"] = a.sessionKey), r && (i["App-Id"] = s, i["Access-Token"] = r), i["Request-Sent-Timestamp"] = (new Date).getTime().toString(), i
 								}
 							}, {
 								key: "_createQuery",
@@ -2744,7 +2736,7 @@
 										s = e.internalCall;
 									this.sb.ConnectionManager.ready((function(e, a) {
 										var o;
-										e ? t(e, null) : (o = n.Path.OPENCHANNELS_CHANNELURL.replace("%s", encodeURIComponent(i)), (e = new J({})).internal = s === S.INTERNAL_CALL, r.get(o, e, t))
+										e ? t(e, null) : (o = n.Path.OPENCHANNELS_CHANNELURL.replace("%s", encodeURIComponent(i)), (e = new J({})).internal = s === k.INTERNAL_CALL, r.get(o, e, t))
 									}))
 								}
 							}, {
@@ -2832,7 +2824,7 @@
 											show_member: s,
 											show_read_receipt: !0,
 											show_delivery_receipt: !0
-										})).internal = a === S.INTERNAL_CALL, r.get(l, e, t))
+										})).internal = a === k.INTERNAL_CALL, r.get(l, e, t))
 									}))
 								}
 							}, {
@@ -3516,7 +3508,7 @@
 										u = i.sessionManager;
 									this.wsHost = t;
 									try {
-										var c = "/?p=JS&pv=" + encodeURIComponent(S.OS_VERSION) + "&sv=" + encodeURIComponent(S.SDK_VERSION) + "&ai=" + encodeURIComponent(this.sb.getApplicationId());
+										var c = "/?p=JS&pv=" + encodeURIComponent(k.OS_VERSION) + "&sv=" + encodeURIComponent(k.SDK_VERSION) + "&ai=" + encodeURIComponent(this.sb.getApplicationId());
 										if (a.sessionKey ? c += "&key=" + encodeURIComponent(a.sessionKey) : c += "&user_id=" + encodeURIComponent(e) + "&access_token=" + encodeURIComponent(n), c += "&active=1", c += "&SB-User-Agent=" + encodeURIComponent(l(o)), c += "&Request-Sent-Timestamp=" + (new Date).getTime().toString(), c += "&include_extra_data=" + encodeURIComponent(["premium_feature_list", "file_upload_size_limit", "application_attributes", "emoji_hash"].join(",")), u.handler && (c += "&expiring_session=1"), this.ws = new this.WebSocket(this.wsHost + c), !this.ws) return this.sb.isReconnectingOnError = !0, void this.handler.onError("ws does not exist.")
 									} catch (e) {
 										return this.sb.isReconnectingOnError = !0, void this.handler.onError(e)
@@ -4426,7 +4418,7 @@
 										})]), 5))[0];
 									return e = s[1], n = s[2], t = s[3], r = s[4], ge(this._iid, (function(r) {
 										var s, o;
-										a ? r(a, null) : (s = (o = w.get(i._iid)).GroupChannel, o = o.OpenChannel, i.isGroupChannel() ? s.getChannel(i.channelUrl, S.INTERNAL_CALL, (function(s, a) {
+										a ? r(a, null) : (s = (o = w.get(i._iid)).GroupChannel, o = o.OpenChannel, i.isGroupChannel() ? s.getChannel(i.channelUrl, k.INTERNAL_CALL, (function(s, a) {
 											var o;
 											ot.getInstance(i._iid).getErrorFirstCallback() && (a = (o = [s, a])[0], s = o[1]), a ? r(a, null) : O.get(i._iid).container.apiClient.getMessageList(d(d({
 												channel: s,
@@ -4452,7 +4444,7 @@
 													threadedReplies: e
 												}))
 											}))
-										})) : i.isOpenChannel() && o.getChannel(i.channelUrl, S.INTERNAL_CALL, (function(s, a) {
+										})) : i.isOpenChannel() && o.getChannel(i.channelUrl, k.INTERNAL_CALL, (function(s, a) {
 											var o;
 											ot.getInstance(i._iid).getErrorFirstCallback() && (a = (o = [s, a])[0], s = o[1]), a ? r(a, null) : O.get(i._iid).container.apiClient.getMessageList(d(d({
 												channel: s,
@@ -4553,7 +4545,7 @@
 												o = i.OpenChannel;
 											switch (e.channelType) {
 												case r.CHANNEL_TYPE_GROUP:
-													a.getChannel(e.channelUrl, S.INTERNAL_CALL, (function(i, s) {
+													a.getChannel(e.channelUrl, k.INTERNAL_CALL, (function(i, s) {
 														var a;
 														ot.getInstance(t._iid).getErrorFirstCallback() && (s = (a = [i, s])[0], i = a[1]), s ? n(s, null) : O.get(t._iid).container.apiClient.getMessage(d({
 															channel: i
@@ -4563,7 +4555,7 @@
 													}));
 													break;
 												case r.CHANNEL_TYPE_OPEN:
-													o.getChannel(e.channelUrl, S.INTERNAL_CALL, (function(i, s) {
+													o.getChannel(e.channelUrl, k.INTERNAL_CALL, (function(i, s) {
 														var a;
 														ot.getInstance(t._iid).getErrorFirstCallback() && (s = (a = [i, s])[0], i = a[1]), s ? n(s, null) : O.get(t._iid).container.apiClient.getMessage(d({
 															channel: i
@@ -5833,8 +5825,8 @@
 										b = t.mentionedUsers,
 										A = t.metaArrays,
 										U = t.thumbnails,
-										k = t.requireAuth,
-										S = t.messageSurvivalSeconds,
+										S = t.requireAuth,
+										k = t.messageSurvivalSeconds,
 										I = t.silent,
 										N = t.appleCriticalAlertOptions,
 										T = i.generateRequestId(),
@@ -5858,8 +5850,8 @@
 											requestedMentionUserIds: C,
 											metaArrays: A,
 											thumbnails: U,
-											requireAuth: k,
-											messageSurvivalSeconds: S,
+											requireAuth: S,
+											messageSurvivalSeconds: k,
 											silent: I,
 											createdAt: (new Date).getTime(),
 											appleCriticalAlertOptions: N
@@ -5877,7 +5869,7 @@
 										mentionType: v,
 										mentionedUserIds: C,
 										thumbnailSizes: U,
-										requireAuth: k,
+										requireAuth: S,
 										pushNotificationDeliveryOption: b,
 										silent: I,
 										appleCriticalAlertOptions: N
@@ -5902,7 +5894,7 @@
 										mentionType: v,
 										mentionedUserIds: C,
 										thumbnailSizes: U,
-										requireAuth: k,
+										requireAuth: S,
 										pushNotificationDeliveryOption: b,
 										appleCriticalAlertOptions: N
 									}, (function(e, t) {
@@ -5914,7 +5906,7 @@
 												for (var a in n.lastMessage = e, h.channelHandlers) h.channelHandlers[a].onChannelChanged(n);
 											c ? r(null, e) : r(e, null)
 										}
-									})), a) : (t = new R("Connection should be made first.", R.CONNECTION_REQUIRED), (S = new s(L)).requestState = h.MessageRequestState.FAILED, S.sendingStatus = h.MessageSendingStatus.FAILED, S.errorCode = t.code, c ? r(t, S) : r(S, t), a)
+									})), a) : (t = new R("Connection should be made first.", R.CONNECTION_REQUIRED), (k = new s(L)).requestState = h.MessageRequestState.FAILED, k.sendingStatus = h.MessageSendingStatus.FAILED, k.errorCode = t.code, c ? r(t, k) : r(k, t), a)
 								}
 							}, {
 								key: "addOperators",
@@ -6609,7 +6601,7 @@
 								}
 							}]), e
 						}(),
-						ke = function() {
+						Se = function() {
 							function e(n) {
 								o(this, e), n && (this.category = n.hasOwnProperty("cat") ? parseInt(n.cat) : 0, this.data = n.hasOwnProperty("data") ? n.data : null, this.channelUrl = n.hasOwnProperty("channel_url") ? String(n.channel_url) : "", this.channelType = n.hasOwnProperty("channel_type") ? String(n.channel_type) : Ue.CHANNEL_TYPE_GROUP)
 							}
@@ -6626,10 +6618,10 @@
 							}]), e
 						}();
 
-					function Se(e) {
-						o(this, Se), e && (this.category = e.hasOwnProperty("cat") ? parseInt(e.cat) : 0)
+					function ke(e) {
+						o(this, ke), e && (this.category = e.hasOwnProperty("cat") ? parseInt(e.cat) : 0)
 					}
-					ke.CATEGORY_NONE = 0, ke.CATEGORY_CHANNEL_ENTER = 10102, ke.CATEGORY_CHANNEL_EXIT = 10103, ke.CATEGORY_USER_CHANNEL_MUTE = 10201, ke.CATEGORY_USER_CHANNEL_UNMUTE = 10200, ke.CATEGORY_USER_CHANNEL_BAN = 10601, ke.CATEGORY_USER_CHANNEL_UNBAN = 10600, ke.CATEGORY_CHANNEL_FREEZE = 10701, ke.CATEGORY_CHANNEL_UNFREEZE = 10700, ke.CATEGORY_TYPING_START = 10900, ke.CATEGORY_TYPING_END = 10901, ke.CATEGORY_CHANNEL_JOIN = 1e4, ke.CATEGORY_CHANNEL_LEAVE = 10001, ke.CATEGORY_CHANNEL_OPERATOR_UPDATE = 10002, ke.CATEGORY_CHANNEL_INVITE = 10020, ke.CATEGORY_CHANNEL_DECLINE_INVITE = 10022, ke.CATEGORY_CHANNEL_PROP_CHANGED = 11e3, ke.CATEGORY_CHANNEL_DELETED = 12e3, ke.CATEGORY_CHANNEL_META_DATA_CHANGED = 11100, ke.CATEGORY_CHANNEL_META_COUNTERS_CHANGED = 11200, ke.CATEGORY_CHANNEL_HIDE = 13e3, ke.CATEGORY_CHANNEL_UNHIDE = 13001, Se.CATEGORY_USER_BLOCK = 20001, Se.CATEGORY_USER_UNBLOCK = 2e4, Se.CATEGORY_FRIEND_DISCOVERED = 20900;
+					Se.CATEGORY_NONE = 0, Se.CATEGORY_CHANNEL_ENTER = 10102, Se.CATEGORY_CHANNEL_EXIT = 10103, Se.CATEGORY_USER_CHANNEL_MUTE = 10201, Se.CATEGORY_USER_CHANNEL_UNMUTE = 10200, Se.CATEGORY_USER_CHANNEL_BAN = 10601, Se.CATEGORY_USER_CHANNEL_UNBAN = 10600, Se.CATEGORY_CHANNEL_FREEZE = 10701, Se.CATEGORY_CHANNEL_UNFREEZE = 10700, Se.CATEGORY_TYPING_START = 10900, Se.CATEGORY_TYPING_END = 10901, Se.CATEGORY_CHANNEL_JOIN = 1e4, Se.CATEGORY_CHANNEL_LEAVE = 10001, Se.CATEGORY_CHANNEL_OPERATOR_UPDATE = 10002, Se.CATEGORY_CHANNEL_INVITE = 10020, Se.CATEGORY_CHANNEL_DECLINE_INVITE = 10022, Se.CATEGORY_CHANNEL_PROP_CHANGED = 11e3, Se.CATEGORY_CHANNEL_DELETED = 12e3, Se.CATEGORY_CHANNEL_META_DATA_CHANGED = 11100, Se.CATEGORY_CHANNEL_META_COUNTERS_CHANGED = 11200, Se.CATEGORY_CHANNEL_HIDE = 13e3, Se.CATEGORY_CHANNEL_UNHIDE = 13001, ke.CATEGORY_USER_BLOCK = 20001, ke.CATEGORY_USER_UNBLOCK = 2e4, ke.CATEGORY_FRIEND_DISCOVERED = 20900;
 					var Ie = function() {
 							function e(n) {
 								o(this, e), this.sb = n, this.cls = w.get(this.sb._iid)
@@ -6673,7 +6665,7 @@
 									if (e = b.requestId)(I = E[e]) && (clearTimeout(I.timer), (I = I.handler) && ("EROR" === b.command ? I(new R(A.message, A.code), null) : I(null, b)), E.hasOwnProperty(e) && delete E[e]);
 									else switch (y && "LOGI" !== b.command && y.refreshTimer(), b.command) {
 										case "LOGI":
-											this.sb.loginTimer && (clearTimeout(this.sb.loginTimer), this.sb.loginTimer = null, this.sb.onLoginTimerCancel = null, A.hasOwnProperty("error") ? (this.sb.isSessionOpened = !1, this.sb.loginHandler(new R(A.message, A.code), null)) : (this.sb.isSessionOpened = !0, A.hasOwnProperty("key") && (m.sessionKey = A.key), A.hasOwnProperty("ekey") && (m.eKey = A.ekey), A.hasOwnProperty("user_id") && (this.sb.currentUser = new r(A)), "number" == typeof A.ping_interval && 0 < A.ping_interval && g.set("pingInterval", 1e3 * A.ping_interval), "number" == typeof A.pong_timeout && 0 < A.pong_timeout && g.set("pongTimeout", 1e3 * A.pong_timeout), "number" == typeof A.login_ts && g.set("connectedAt", 1e3 * A.login_ts), "number" == typeof A.max_unread_cnt_on_super_group ? g.set("maxUnreadCountOfSuperGroupChannel", A.max_unread_cnt_on_super_group) : g.set("maxUnreadCountOfSuperGroupChannel", S.DEFAULT_MAX_UNREAD_COUNT_OF_SUPER_GROUP_CHANNEL), A.profile_image_encryption && g.set("profileImageEncryption", !0), y && y.start(), A.hasOwnProperty("file_upload_size_limit") && A.hasOwnProperty("premium_feature_list") && A.hasOwnProperty("emoji_hash") && g.set("appInfo", new _e(A)), this.sb.loginHandler(null, this.sb.currentUser)), this.sb.connecting = !1, this.sb.reconnecting = !1);
+											this.sb.loginTimer && (clearTimeout(this.sb.loginTimer), this.sb.loginTimer = null, this.sb.onLoginTimerCancel = null, A.hasOwnProperty("error") ? (this.sb.isSessionOpened = !1, this.sb.loginHandler(new R(A.message, A.code), null)) : (this.sb.isSessionOpened = !0, A.hasOwnProperty("key") && (m.sessionKey = A.key), A.hasOwnProperty("ekey") && (m.eKey = A.ekey), A.hasOwnProperty("user_id") && (this.sb.currentUser = new r(A)), "number" == typeof A.ping_interval && 0 < A.ping_interval && g.set("pingInterval", 1e3 * A.ping_interval), "number" == typeof A.pong_timeout && 0 < A.pong_timeout && g.set("pongTimeout", 1e3 * A.pong_timeout), "number" == typeof A.login_ts && g.set("connectedAt", 1e3 * A.login_ts), "number" == typeof A.max_unread_cnt_on_super_group ? g.set("maxUnreadCountOfSuperGroupChannel", A.max_unread_cnt_on_super_group) : g.set("maxUnreadCountOfSuperGroupChannel", k.DEFAULT_MAX_UNREAD_COUNT_OF_SUPER_GROUP_CHANNEL), A.profile_image_encryption && g.set("profileImageEncryption", !0), y && y.start(), A.hasOwnProperty("file_upload_size_limit") && A.hasOwnProperty("premium_feature_list") && A.hasOwnProperty("emoji_hash") && g.set("appInfo", new _e(A)), this.sb.loginHandler(null, this.sb.currentUser)), this.sb.connecting = !1, this.sb.reconnecting = !1);
 											break;
 										case "EXPR":
 											A.hasOwnProperty("expires_in") && "number" == typeof A.expires_in && 0 < A.expires_in && C.refresh((function() {}));
@@ -6686,7 +6678,7 @@
 											"MESG" === b.command ? H = new u(A) : "FILE" === b.command ? H = new c(A) : "BRDM" !== b.command && "ADMM" !== b.command || (H = new d(A)), H && (M = this.sb.currentUser ? this.sb.currentUser.userId : null, w = H.silent, L = !!A.force_update_last_message, P = H._sender && H._sender.userId === M, H.isGroupChannel() ? (D = t.bMessageAck({
 												channelUrl: H.channelUrl,
 												messageId: H.messageId
-											}), this.sb.sendCommand(D), F = o.cachedChannels.hasOwnProperty(H.channelUrl), o.getChannel(H.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+											}), this.sb.sendCommand(D), F = o.cachedChannels.hasOwnProperty(H.channelUrl), o.getChannel(H.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 												var r;
 												if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), !t) {
 													e.isHidden = !1, e.hiddenState = o.HiddenState.UNHIDDEN, o.cachedChannels[e.url] = e, H._sender && e.memberMap.hasOwnProperty(H._sender.userId) && ((i = e.memberMap[H._sender.userId]).nickname !== H._sender.nickname && (i.nickname = H._sender.nickname), i.plainProfileUrl !== H._sender.plainProfileUrl && (i.plainProfileUrl = H._sender.plainProfileUrl), W.deepEqual(i.metaData, H._sender.metaData) || (i.metaData = H._sender.metaData), i.isBlockedByMe !== H._sender.isBlockedByMe && (i.isBlockedByMe = H._sender.isBlockedByMe));
@@ -6706,7 +6698,7 @@
 														c.onMessageReceived(e, H), a && c.onMentionReceived(e, H)
 													}
 												}
-											}))) : H.isOpenChannel() && l.getChannel(H.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+											}))) : H.isOpenChannel() && l.getChannel(H.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 												var r;
 												if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), !t) {
 													var i, s = !1;
@@ -6727,7 +6719,7 @@
 										case "FEDI":
 										case "AEDI":
 											var G, x, j, z, B = null;
-											"MEDI" === b.command ? B = new u(A) : "FEDI" === b.command ? B = new c(A) : "AEDI" === b.command && (B = new d(A)), B && (G = this.sb.currentUser ? this.sb.currentUser.userId : null, x = B.silent, j = B.sender && B.sender.userId === G, B.isGroupChannel() ? (z = o.cachedChannels.hasOwnProperty(B.channelUrl), o.getChannel(B.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+											"MEDI" === b.command ? B = new u(A) : "FEDI" === b.command ? B = new c(A) : "AEDI" === b.command && (B = new d(A)), B && (G = this.sb.currentUser ? this.sb.currentUser.userId : null, x = B.silent, j = B.sender && B.sender.userId === G, B.isGroupChannel() ? (z = o.cachedChannels.hasOwnProperty(B.channelUrl), o.getChannel(B.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 												if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), !t) {
 													t = (i = e.cachedReadReceiptStatus[G]) && i >= B.createAt, (i = n.sb.currentUser) && j && (i.nickname !== B._sender.nickname && (i.nickname = B._sender.nickname), i.plainProfileUrl !== B._sender.plainProfileUrl && (i.plainProfileUrl = B._sender.plainProfileUrl), W.deepEqual(i.metaData, B._sender.metaData) || (i.metaData = B._sender.metaData));
 													var r, i = !1,
@@ -6762,7 +6754,7 @@
 														f.onMessageUpdated(e, B), s && f.onMentionReceived(e, B)
 													}
 												}
-											}))) : B.isOpenChannel() && l.getChannel(B.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+											}))) : B.isOpenChannel() && l.getChannel(B.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 												var r;
 												if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), !t)
 													for (var i in n.sb.channelHandlers) n.sb.channelHandlers[i].onMessageUpdated(e, B)
@@ -6774,7 +6766,7 @@
 												K = parseInt(A.msg_id);
 											switch (Q) {
 												case s.CHANNEL_TYPE_GROUP:
-													o.getChannel(Y, S.INTERNAL_CALL, (function(e, t) {
+													o.getChannel(Y, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"));
 														else
@@ -6782,7 +6774,7 @@
 													}));
 													break;
 												case s.CHANNEL_TYPE_OPEN:
-													l.getChannel(Y, S.INTERNAL_CALL, (function(e, t) {
+													l.getChannel(Y, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"));
 														else
@@ -6793,7 +6785,7 @@
 										case "READ":
 											var V = new _(A),
 												J = o.cachedChannels.hasOwnProperty(V.channelUrl);
-											o.getChannel(V.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+											o.getChannel(V.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 												var r;
 												if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), !t && (J && e.updateReadReceipt(V.reader.userId, V.timestamp), n.sb.currentUser))
 													if (V.reader.userId === n.sb.currentUser.userId) {
@@ -6812,7 +6804,7 @@
 												X = p.createFromJson(A);
 											switch (Q) {
 												case s.CHANNEL_TYPE_GROUP:
-													o.getChannel(Z, S.INTERNAL_CALL, (function(e, t) {
+													o.getChannel(Z, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"));
 														else
@@ -6820,7 +6812,7 @@
 													}));
 													break;
 												case s.CHANNEL_TYPE_OPEN:
-													l.getChannel(Z, S.INTERNAL_CALL, (function(e, t) {
+													l.getChannel(Z, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"));
 														else
@@ -6832,7 +6824,7 @@
 											var $ = String(A.channel_url),
 												ee = A.hasOwnProperty("updated") ? A.updated : null,
 												ne = o.cachedChannels.hasOwnProperty($);
-											o.getChannel($, S.INTERNAL_CALL, (function(e, t) {
+											o.getChannel($, k.INTERNAL_CALL, (function(e, t) {
 												var r;
 												if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), !t) {
 													var i, s = !1;
@@ -6847,14 +6839,14 @@
 												re = ($ = String(A.channel_type), f.createFromJson(A));
 											switch ($) {
 												case s.CHANNEL_TYPE_GROUP:
-													o.getChannel(te, S.INTERNAL_CALL, (function(e, t) {
+													o.getChannel(te, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), !t)
 															for (var i in n.sb.channelHandlers) n.sb.channelHandlers[i].onThreadInfoUpdated(e, re)
 													}));
 													break;
 												case s.CHANNEL_TYPE_OPEN:
-													l.getChannel(te, S.INTERNAL_CALL, (function(e, t) {
+													l.getChannel(te, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), !t)
 															for (var i in n.sb.channelHandlers) n.sb.channelHandlers[i].onThreadInfoUpdated(e, re)
@@ -6864,7 +6856,7 @@
 										case "MCNT":
 											if (A.hasOwnProperty("group_channels") && Array.isArray(A.group_channels)) {
 												var ie = [],
-													se = k(A.group_channels);
+													se = S(A.group_channels);
 												try {
 													for (se.s(); !(ae = se.n()).done;) {
 														var ae, oe = ae.value;
@@ -6880,7 +6872,7 @@
 											}
 											if (A.hasOwnProperty("open_channels") && Array.isArray(A.open_channels)) {
 												var ue = [],
-													ce = k(A.open_channels);
+													ce = S(A.open_channels);
 												try {
 													for (ce.s(); !(de = ce.n()).done;) {
 														var de, he = de.value;
@@ -6896,19 +6888,19 @@
 											}
 											break;
 										case "SYEV":
-											var fe = new ke(A),
+											var fe = new Se(A),
 												ge = A.ts;
 											switch (fe.category) {
-												case ke.CATEGORY_CHANNEL_JOIN:
-												case ke.CATEGORY_CHANNEL_LEAVE:
-													o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_CHANNEL_JOIN:
+												case Se.CATEGORY_CHANNEL_LEAVE:
+													o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var s;
 														if (n.sb.getErrorFirstCallback() && (t = (s = [e, t])[0], e = s[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
 															var a = fe.data.hasOwnProperty("member_count") ? fe.data.member_count : null,
 																l = fe.data.hasOwnProperty("joined_member_count") ? fe.data.joined_member_count : null,
 																u = !1;
-															if (fe.category === ke.CATEGORY_CHANNEL_JOIN)(fe.data.hasOwnProperty("users") ? fe.data.users : [fe.data]).forEach((function(t) {
+															if (fe.category === Se.CATEGORY_CHANNEL_JOIN)(fe.data.hasOwnProperty("users") ? fe.data.users : [fe.data]).forEach((function(t) {
 																e.isSuper || e.isBroadcast ? u = e.setLatestMemberCount(a, l, A.ts) : (t.state = i.JOINED, e.addMember(new i(t), ge), e.updateJoinedMemberCount());
 																var s, c = new r(t);
 																for (s in n.sb.currentUser && c.userId === n.sb.currentUser.userId && (e.myMemberState = "joined", o.cachedChannels[e.url] = e), n.sb.channelHandlers) {
@@ -6926,8 +6918,8 @@
 														}
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_OPERATOR_UPDATE:
-													fe.isGroupChannel() ? o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_CHANNEL_OPERATOR_UPDATE:
+													fe.isGroupChannel() ? o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var i;
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
@@ -6940,7 +6932,7 @@
 															for (s in e.members) e.members[s].role = 0 <= u.indexOf(e.members[s].userId) ? o.Role.OPERATOR : o.Role.NONE;
 															for (a in e.myRole = n.sb.currentUser && 0 <= u.indexOf(n.sb.currentUser.userId) ? o.Role.OPERATOR : o.Role.NONE, n.sb.channelHandlers) n.sb.channelHandlers[a].onOperatorUpdated(e, l)
 														}
-													})) : fe.isOpenChannel() && l.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+													})) : fe.isOpenChannel() && l.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var i;
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else
@@ -6949,8 +6941,8 @@
 																})), n.sb.channelHandlers) n.sb.channelHandlers[s].onOperatorUpdated(e, e.operators)
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_INVITE:
-													o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_CHANNEL_INVITE:
+													o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var s;
 														if (n.sb.getErrorFirstCallback() && (t = (s = [e, t])[0], e = s[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
@@ -6966,8 +6958,8 @@
 														}
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_DECLINE_INVITE:
-													o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_CHANNEL_DECLINE_INVITE:
+													o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														if (n.sb.getErrorFirstCallback() && (t = (s = [e, t])[0], e = s[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
 															var i = null;
@@ -6977,102 +6969,102 @@
 														}
 													}));
 													break;
-												case ke.CATEGORY_TYPING_START:
-												case ke.CATEGORY_TYPING_END:
-													o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_TYPING_START:
+												case Se.CATEGORY_TYPING_END:
+													o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var i, s;
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else
-															for (s in t = new r(fe.data), fe.category === ke.CATEGORY_TYPING_START ? e.updateTypingStatus(t, !0) : e.updateTypingStatus(t, !1), n.sb.channelHandlers) n.sb.channelHandlers[s].onTypingStatusUpdated(e)
+															for (s in t = new r(fe.data), fe.category === Se.CATEGORY_TYPING_START ? e.updateTypingStatus(t, !0) : e.updateTypingStatus(t, !1), n.sb.channelHandlers) n.sb.channelHandlers[s].onTypingStatusUpdated(e)
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_ENTER:
-												case ke.CATEGORY_CHANNEL_EXIT:
-													l.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_CHANNEL_ENTER:
+												case Se.CATEGORY_CHANNEL_EXIT:
+													l.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var i;
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
 															t = fe.data.hasOwnProperty("participant_count") ? fe.data.participant_count : null;
 															var s = e.setLatestParticipantCount(t, A.ts),
 																a = new r(fe.data);
-															if (fe.category === ke.CATEGORY_CHANNEL_ENTER)
+															if (fe.category === Se.CATEGORY_CHANNEL_ENTER)
 																for (var o in n.sb.channelHandlers)(o = n.sb.channelHandlers[o]).onUserEntered(e, a), s && o.onChannelParticipantCountChanged([e]);
 															else
 																for (var l in n.sb.channelHandlers)(l = n.sb.channelHandlers[l]).onUserExited(e, a), s && l.onChannelParticipantCountChanged([e])
 														}
 													}));
 													break;
-												case ke.CATEGORY_USER_CHANNEL_MUTE:
-												case ke.CATEGORY_USER_CHANNEL_UNMUTE:
-													fe.isOpenChannel() ? l.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_USER_CHANNEL_MUTE:
+												case Se.CATEGORY_USER_CHANNEL_UNMUTE:
+													fe.isOpenChannel() ? l.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var i;
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
 															var s = new r(fe.data);
-															if (fe.category === ke.CATEGORY_USER_CHANNEL_MUTE)
+															if (fe.category === Se.CATEGORY_USER_CHANNEL_MUTE)
 																for (var a in n.sb.channelHandlers) n.sb.channelHandlers[a].onUserMuted(e, s);
 															else
 																for (var o in n.sb.channelHandlers) n.sb.channelHandlers[o].onUserUnmuted(e, s)
 														}
-													})) : o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+													})) : o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var i;
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
 															var s = new r(fe.data);
-															if (n.sb.currentUser && s.userId === n.sb.currentUser.userId && (e.myMutedState = fe.category === ke.CATEGORY_USER_CHANNEL_MUTE ? "muted" : "unmuted"), Array.isArray(e.members) && e.members.forEach((function(e) {
-																	e && e.userId === s.userId && (e.isMuted = fe.category === ke.CATEGORY_USER_CHANNEL_MUTE)
-																})), fe.category === ke.CATEGORY_USER_CHANNEL_MUTE)
+															if (n.sb.currentUser && s.userId === n.sb.currentUser.userId && (e.myMutedState = fe.category === Se.CATEGORY_USER_CHANNEL_MUTE ? "muted" : "unmuted"), Array.isArray(e.members) && e.members.forEach((function(e) {
+																	e && e.userId === s.userId && (e.isMuted = fe.category === Se.CATEGORY_USER_CHANNEL_MUTE)
+																})), fe.category === Se.CATEGORY_USER_CHANNEL_MUTE)
 																for (var a in n.sb.channelHandlers) n.sb.channelHandlers[a].onUserMuted(e, s);
 															else
 																for (var o in n.sb.channelHandlers) n.sb.channelHandlers[o].onUserUnmuted(e, s)
 														}
 													}));
 													break;
-												case ke.CATEGORY_USER_CHANNEL_BAN:
-												case ke.CATEGORY_USER_CHANNEL_UNBAN:
-													fe.isOpenChannel() ? l.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_USER_CHANNEL_BAN:
+												case Se.CATEGORY_USER_CHANNEL_UNBAN:
+													fe.isOpenChannel() ? l.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var i;
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
 															var s, a = new r(fe.data);
-															if (fe.category === ke.CATEGORY_USER_CHANNEL_BAN)
+															if (fe.category === Se.CATEGORY_USER_CHANNEL_BAN)
 																for (s in n.sb.currentUser && a.userId === n.sb.currentUser.userId && (delete l.enteredChannels[fe.channelUrl], n.cls.FileMessageQueue.delete(fe.channelUrl)), n.sb.channelHandlers) n.sb.channelHandlers[s].onUserBanned(e, a);
 															else
 																for (var o in n.sb.channelHandlers) n.sb.channelHandlers[o].onUserUnbanned(e, a)
 														}
-													})) : o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+													})) : o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														if (n.sb.getErrorFirstCallback() && (t = (i = [e, t])[0], e = i[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
 														else {
 															var i, s, a = new r(fe.data);
-															if (fe.category === ke.CATEGORY_USER_CHANNEL_BAN)
+															if (fe.category === Se.CATEGORY_USER_CHANNEL_BAN)
 																for (s in n.sb.currentUser && a.userId === n.sb.currentUser.userId && (e.isPublic || o.removeCachedChannel(fe.channelUrl), e.myMemberState = "none", e.invitedAt = 0, e._setGroupChannelUnreadCount(0, 0)), e.isSuper || e.isBroadcast ? (i = fe.data.hasOwnProperty("member_count") ? fe.data.member_count : null, t = fe.data.hasOwnProperty("joined_member_count") ? fe.data.joined_member_count : null, e.setLatestMemberCount(i, t, A.ts)) : (e.removeMember(a), e.updateJoinedMemberCount()), n.sb.channelHandlers) n.sb.channelHandlers[s].onUserBanned(e, a);
 															else
 																for (var l in n.sb.channelHandlers) n.sb.channelHandlers[l].onUserUnbanned(e, a)
 														}
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_FREEZE:
-												case ke.CATEGORY_CHANNEL_UNFREEZE:
-													fe.isOpenChannel() ? l.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_CHANNEL_FREEZE:
+												case Se.CATEGORY_CHANNEL_UNFREEZE:
+													fe.isOpenChannel() ? l.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
-														else if (e.isFrozen = fe.data.freeze, l.cachedChannels[e.url] = e, fe.category === ke.CATEGORY_CHANNEL_FREEZE)
+														else if (e.isFrozen = fe.data.freeze, l.cachedChannels[e.url] = e, fe.category === Se.CATEGORY_CHANNEL_FREEZE)
 															for (var i in n.sb.channelHandlers) n.sb.channelHandlers[i].onChannelFrozen(e);
 														else
 															for (var s in n.sb.channelHandlers) n.sb.channelHandlers[s].onChannelUnfrozen(e)
-													})) : o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+													})) : o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
-														else if (e.isFrozen = fe.data.freeze, o.cachedChannels[e.url] = e, fe.category === ke.CATEGORY_CHANNEL_FREEZE)
+														else if (e.isFrozen = fe.data.freeze, o.cachedChannels[e.url] = e, fe.category === Se.CATEGORY_CHANNEL_FREEZE)
 															for (var i in n.sb.channelHandlers) n.sb.channelHandlers[i].onChannelFrozen(e);
 														else
 															for (var s in n.sb.channelHandlers) n.sb.channelHandlers[s].onChannelUnfrozen(e)
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_DELETED:
+												case Se.CATEGORY_CHANNEL_DELETED:
 													for (var ye in (fe.isGroupChannel() ? o : l).removeCachedChannel(fe.channelUrl), this.sb.channelHandlers) this.sb.channelHandlers[ye].onChannelDeleted(fe.channelUrl, fe.isGroupChannel() ? "group" : "open");
 													break;
-												case ke.CATEGORY_CHANNEL_PROP_CHANGED:
+												case Se.CATEGORY_CHANNEL_PROP_CHANGED:
 													fe.isOpenChannel() ? l.getChannelWithoutCache(fe.channelUrl, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
@@ -7086,30 +7078,30 @@
 														}
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_META_DATA_CHANGED:
-												case ke.CATEGORY_CHANNEL_META_COUNTERS_CHANGED:
+												case Se.CATEGORY_CHANNEL_META_DATA_CHANGED:
+												case Se.CATEGORY_CHANNEL_META_COUNTERS_CHANGED:
 													var me = fe.data.hasOwnProperty("created"),
 														ve = fe.data.hasOwnProperty("updated"),
 														Ce = fe.data.hasOwnProperty("deleted");
-													(fe.isOpenChannel() ? l : o).getChannel(fe.channelUrl, S.INTERNAL_CALL).then((function(e) {
+													(fe.isOpenChannel() ? l : o).getChannel(fe.channelUrl, k.INTERNAL_CALL).then((function(e) {
 														var t, r = fe.data.created,
 															i = fe.data.updated,
 															s = fe.data.deleted,
 															a = A.ts;
 														for (t in me && e._addOrUpdateCachedMetaData(r, a), ve && e._addOrUpdateCachedMetaData(i, a), Ce && e._markAsDeletedCachedMetaData(s, a), n.sb.channelHandlers) {
 															var o = n.sb.channelHandlers[t];
-															fe.category === ke.CATEGORY_CHANNEL_META_DATA_CHANGED ? (me && o.onMetaDataCreated(e, r), ve && o.onMetaDataUpdated(e, i), Ce && o.onMetaDataDeleted(e, s)) : (me && o.onMetaCountersCreated(e, r), ve && o.onMetaCountersUpdated(e, i), Ce && o.onMetaCountersDeleted(e, s))
+															fe.category === Se.CATEGORY_CHANNEL_META_DATA_CHANGED ? (me && o.onMetaDataCreated(e, r), ve && o.onMetaDataUpdated(e, i), Ce && o.onMetaDataDeleted(e, s)) : (me && o.onMetaCountersCreated(e, r), ve && o.onMetaCountersUpdated(e, i), Ce && o.onMetaCountersDeleted(e, s))
 														}
 													})).catch((function(e) {
 														return q.debug("Discard command:", "`".concat(b.command, "`"), fe.category)
 													}));
 													break;
-												case ke.CATEGORY_CHANNEL_HIDE:
-												case ke.CATEGORY_CHANNEL_UNHIDE:
-													o.getChannel(fe.channelUrl, S.INTERNAL_CALL, (function(e, t) {
+												case Se.CATEGORY_CHANNEL_HIDE:
+												case Se.CATEGORY_CHANNEL_UNHIDE:
+													o.getChannel(fe.channelUrl, k.INTERNAL_CALL, (function(e, t) {
 														var r;
 														if (n.sb.getErrorFirstCallback() && (t = (r = [e, t])[0], e = r[1]), t) q.debug("Discard command:", "`".concat(b.command, "`"), fe.category);
-														else if (fe.category === ke.CATEGORY_CHANNEL_HIDE)
+														else if (fe.category === Se.CATEGORY_CHANNEL_HIDE)
 															for (var i in e.isHidden = !0, fe.data && (fe.data.hasOwnProperty("allow_auto_unhide") && (e.hiddenState = fe.data.allow_auto_unhide ? o.HiddenState.HIDDEN_ALLOW_AUTO_UNHIDE : o.HiddenState.HIDDEN_PREVENT_AUTO_UNHIDE), fe.data.hasOwnProperty("hide_previous_messages") && fe.data.hide_previous_messages && e._setGroupChannelUnreadCount(0, 0)), A.hasOwnProperty("ts_message_offset") && (e._messageOffsetTimestamp = A.ts_message_offset), o.cachedChannels[e.url] = e, n.sb.channelHandlers) n.sb.channelHandlers[i].onChannelHidden(e);
 														else
 															for (var s in e.isHidden = !1, e.hiddenState = o.HiddenState.UNHIDDEN, o.cachedChannels[e.url] = e, n.sb.channelHandlers) n.sb.channelHandlers[s].onChannelChanged(e)
@@ -7117,20 +7109,20 @@
 											}
 											break;
 										case "USEV":
-											var Ee = new ke(A);
+											var Ee = new Se(A);
 											switch (Ee.category) {
-												case Se.CATEGORY_USER_BLOCK:
-												case Se.CATEGORY_USER_UNBLOCK:
+												case ke.CATEGORY_USER_BLOCK:
+												case ke.CATEGORY_USER_UNBLOCK:
 													var be = Ee.data.blocker.user_id,
 														Ae = Ee.data.blockee.user_id;
 													Object.keys(o.cachedChannels).forEach((function(e) {
 														var t = o.cachedChannels[e];
 														try {
-															n.sb.currentUser && (n.sb.currentUser.userId === be ? t.memberMap[Ae].isBlockedByMe = Ee.category === Se.CATEGORY_USER_BLOCK : n.sb.currentUser.userId === Ae && (t.memberMap[be].isBlockingMe = Ee.category === Se.CATEGORY_USER_BLOCK))
+															n.sb.currentUser && (n.sb.currentUser.userId === be ? t.memberMap[Ae].isBlockedByMe = Ee.category === ke.CATEGORY_USER_BLOCK : n.sb.currentUser.userId === Ae && (t.memberMap[be].isBlockingMe = Ee.category === ke.CATEGORY_USER_BLOCK))
 														} catch (e) {}
 													}));
 													break;
-												case Se.CATEGORY_FRIEND_DISCOVERED:
+												case ke.CATEGORY_FRIEND_DISCOVERED:
 													var Ue, Ie = Ee.data.friend_discoveries.map((function(e) {
 														return new r(e)
 													}));
@@ -7896,7 +7888,7 @@
 									if (this.cachedDeliveryReceiptStatus && e instanceof Ce && !e.isAdminMessage() && n.currentUser && !this.isSuper && !this.isBroadcast) {
 										var r = e.createdAt,
 											i = 0,
-											s = k(this.members);
+											s = S(this.members);
 										try {
 											for (s.s(); !(a = s.n()).done;) {
 												var a = a.value;
@@ -9223,19 +9215,19 @@
 								key: "objectify",
 								value: function(e) {
 									var n, t = ot.getInstance(this._iid),
-										r = (k = w.get(this._iid)).BaseChannel,
-										i = k.BaseMessageParams,
-										s = k.Sender,
-										a = k.User,
-										o = k.ThreadInfo,
-										l = k.OGMetaData,
-										u = k.Plugin,
+										r = (S = w.get(this._iid)).BaseChannel,
+										i = S.BaseMessageParams,
+										s = S.Sender,
+										a = S.User,
+										o = S.ThreadInfo,
+										l = S.OGMetaData,
+										u = S.Plugin,
 										c = e.messageId,
 										d = void 0 === (T = e.reqId) ? "" : T,
 										h = e.user,
 										p = e.channel,
 										_ = e.message,
-										f = void 0 === (S = e.data) ? "" : S,
+										f = void 0 === (k = e.data) ? "" : k,
 										g = void 0 === (P = e.customType) ? "" : P,
 										y = e.appleCriticalAlertOptions,
 										m = void 0 === (M = e.mentionType) ? i.MentionType.USERS : M,
@@ -9245,8 +9237,8 @@
 										b = void 0 === (O = e.reactions) ? [] : O,
 										A = void 0 === (L = e.metaArrays) ? [] : L,
 										U = void 0 === (R = e.rootMessageId) ? 0 : R,
-										k = void 0 === (D = e.parentMessageId) ? 0 : D,
-										S = void 0 === (T = e.parentMessageText) ? "" : T,
+										S = void 0 === (D = e.parentMessageId) ? 0 : D,
+										k = void 0 === (T = e.parentMessageText) ? "" : T,
 										I = (i = void 0 === (P = e.threadInfo) ? null : P, void 0 === (M = e.translations) ? {} : M),
 										N = e.sendingStatus,
 										O = void 0 === (F = e.errorCode) ? 0 : F,
@@ -9272,13 +9264,13 @@
 									}
 									return H.metaarray_key_order = A.map((function(e) {
 										return e.key
-									})), H.root_message_id = U, H.parent_message_id = k, H.parent_message_text = S, i && (H.thread_info = o.objectify(i)), H.sending_status = 0 < c ? t.MessageSendingStatus.SUCCEEDED : t.MessageSendingStatus.FAILED, N && (H.sending_status = N), H.silent = !!R, H.error_code = O, H.message_survival_seconds = M, L && (H.og_tag = l.objectify(L)), H.is_op_msg = !!P, H.plugins = D.map((function(e) {
+									})), H.root_message_id = U, H.parent_message_id = S, H.parent_message_text = k, i && (H.thread_info = o.objectify(i)), H.sending_status = 0 < c ? t.MessageSendingStatus.SUCCEEDED : t.MessageSendingStatus.FAILED, N && (H.sending_status = N), H.silent = !!R, H.error_code = O, H.message_survival_seconds = M, L && (H.og_tag = l.objectify(L)), H.is_op_msg = !!P, H.plugins = D.map((function(e) {
 										return u.objectify(e)
 									})), H
 								}
 							}, {
 								key: "build",
-								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, _, f, g, y, m, v, C, E, b, A, U, k, S, I) {
+								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, _, f, g, y, m, v, C, E, b, A, U, S, k, I) {
 									return this.objectify({
 										messageId: n,
 										reqId: e,
@@ -9303,8 +9295,8 @@
 										errorCode: A,
 										isGlobalBlocked: u,
 										messageSurvivalSeconds: U,
-										ogMetaData: k,
-										isOperatorMessage: S,
+										ogMetaData: S,
+										isOperatorMessage: k,
 										plugins: I,
 										createdAt: c,
 										updatedAt: d
@@ -9366,15 +9358,15 @@
 								key: "objectify",
 								value: function(e) {
 									var n = ot.getInstance(this._iid),
-										t = (k = w.get(this._iid)).BaseChannel,
-										r = k.BaseMessageParams,
-										i = k.Sender,
-										s = k.User,
-										a = k.ThreadInfo,
-										o = k.OGMetaData,
+										t = (S = w.get(this._iid)).BaseChannel,
+										r = S.BaseMessageParams,
+										i = S.Sender,
+										s = S.User,
+										a = S.ThreadInfo,
+										o = S.OGMetaData,
 										l = e.messageId,
 										u = void 0 === (F = e.reqId) ? "" : F,
-										c = void 0 === (S = e.user) ? {} : S,
+										c = void 0 === (k = e.user) ? {} : k,
 										d = e.channel,
 										h = e.plainUrl,
 										p = e.name,
@@ -9389,8 +9381,8 @@
 										b = void 0 === (O = e.requestedMentionUserIds) ? [] : O,
 										A = void 0 === (R = e.reactions) ? [] : R,
 										U = void 0 === (P = e.metaArrays) ? [] : P,
-										k = void 0 === (T = e.rootMessageId) ? 0 : T,
-										S = void 0 === (F = e.parentMessageId) ? 0 : F,
+										S = void 0 === (T = e.rootMessageId) ? 0 : T,
+										k = void 0 === (F = e.parentMessageId) ? 0 : F,
 										I = void 0 === (M = e.parentMessageText) ? "" : M,
 										N = (r = void 0 === (D = e.threadInfo) ? null : D, void 0 === (L = e.thumbnails) ? [] : L),
 										O = void 0 !== (H = e.requireAuth) && H,
@@ -9418,11 +9410,11 @@
 									}
 									return G.metaarray_key_order = U.map((function(e) {
 										return e.key
-									})), G.root_message_id = k, G.parent_message_id = S, G.parent_message_text = I, r && (G.thread_info = a.objectify(r)), G.sending_status = 0 < l ? n.MessageSendingStatus.SUCCEEDED : n.MessageSendingStatus.FAILED, R && (G.sending_status = R), G.silent = !!M, G.error_code = T, G.message_survival_seconds = P, D && (G.og_tag = o.objectify(D)), G.is_op_msg = !!F, G
+									})), G.root_message_id = S, G.parent_message_id = k, G.parent_message_text = I, r && (G.thread_info = a.objectify(r)), G.sending_status = 0 < l ? n.MessageSendingStatus.SUCCEEDED : n.MessageSendingStatus.FAILED, R && (G.sending_status = R), G.silent = !!M, G.error_code = T, G.message_survival_seconds = P, D && (G.og_tag = o.objectify(D)), G.is_op_msg = !!F, G
 								}
 							}, {
 								key: "build",
-								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, _, f, g, y, m, v, C, E, b, A, U, k, S, I, N, O, R) {
+								value: function(e, n, t, r, i, s, a, o, l, u, c, d, h, p, _, f, g, y, m, v, C, E, b, A, U, S, k, I, N, O, R) {
 									return this.objectify({
 										messageId: n,
 										reqId: e,
@@ -9438,7 +9430,7 @@
 										mentionType: m,
 										mentionedUsers: v,
 										mentionedUserIds: U,
-										requestedMentionUserIds: S,
+										requestedMentionUserIds: k,
 										reactions: y,
 										metaArrays: g,
 										rootMessageId: C,
@@ -9447,7 +9439,7 @@
 										threadInfo: A,
 										thumbnails: p,
 										requireAuth: _,
-										sendingStatus: k,
+										sendingStatus: S,
 										errorCode: I,
 										isGlobalBlocked: d,
 										messageSurvivalSeconds: N,
@@ -10615,7 +10607,7 @@
 						Un = function e() {
 							o(this, e), this.channelCustomTypesFilter = [], this.superChannelFilter = Fe.SuperChannelFilter.ALL
 						},
-						kn = function() {
+						Sn = function() {
 							function e() {
 								o(this, e), this.channelUrl = null, this.channelType = null, this.messageId = 0, this.includeMetaArray = !1, this.includeParentMessageText = !1, this.includeThreadInfo = !1
 							}
@@ -10627,7 +10619,7 @@
 								}
 							}]), e
 						}(),
-						Sn = function() {
+						kn = function() {
 							function e() {
 								o(this, e);
 								var n = w.get(this._iid).BaseChannel;
@@ -11203,8 +11195,8 @@
 											FileMessageParams: bn,
 											ScheduledUserMessageParams: An,
 											GroupChannelTotalUnreadMessageCountParams: Un,
-											MessageRetrievalParams: kn,
-											MessageListParams: Sn,
+											MessageRetrievalParams: Sn,
+											MessageListParams: kn,
 											ThreadedMessageListParams: In,
 											MessageChangeLogsParams: Nn,
 											GroupChannelChangeLogsParams: On,
@@ -11262,7 +11254,7 @@
 											custom_types: {},
 											ts: 0
 										},
-										maxUnreadCountOfSuperGroupChannel: S.DEFAULT_MAX_UNREAD_COUNT_OF_SUPER_GROUP_CHANNEL,
+										maxUnreadCountOfSuperGroupChannel: k.DEFAULT_MAX_UNREAD_COUNT_OF_SUPER_GROUP_CHANNEL,
 										auth: new T,
 										appInfo: null,
 										pingInterval: Jn,
@@ -11272,7 +11264,7 @@
 										supportedExtensionKeys: ["sb_uikit", "sb_syncmanager"],
 										getUserAgentWithExtensions: function(e) {
 											var n = e.sb_syncmanager ? "s".concat(e.sb_syncmanager) : "";
-											return e = e.sb_uikit ? "u".concat(e.sb_uikit) : "", "JS/c".concat(S.SDK_VERSION, "/").concat(n, "/").concat(e)
+											return e = e.sb_uikit ? "u".concat(e.sb_uikit) : "", "JS/c".concat(k.SDK_VERSION, "/").concat(n, "/").concat(e)
 										},
 										sessionManager: new a.SessionManager(this),
 										stateChangeEnabled: !0,
@@ -12406,7 +12398,7 @@
 							}, {
 								key: "markAsDelivered",
 								value: function(e) {
-									"string" == typeof e && w.get(this._iid).GroupChannel.getChannel(e, S.INTERNAL_CALL, (function(e, n) {
+									"string" == typeof e && w.get(this._iid).GroupChannel.getChannel(e, k.INTERNAL_CALL, (function(e, n) {
 										e || n.markAsDelivered()
 									}))
 								}
@@ -12647,7 +12639,7 @@
 							}], [{
 								key: "version",
 								get: function() {
-									return S.SDK_VERSION
+									return k.SDK_VERSION
 								}
 							}, {
 								key: "LogLevel",
@@ -12704,4 +12696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.69f28c1496401632d436.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.1939e2732f6ebc8f426e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.ab09fc2e06512778c190.js
-// Retrieved at 4/20/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.4077343b0a542306de7f.js
+// Retrieved at 4/28/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/CrisisFlow/CrisisFlowPage.m.less": function(e, t, n) {
@@ -184,26 +184,26 @@
 				S = n("./src/chat/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
 				L = n.n(S);
 			const {
-				fbt: T
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = p.a.div("CrisisImageContainer", u.a), H = p.a.h2("CrisisTitle", u.a), U = p.a.p("CrisisDescription", u.a), F = p.a.div("CrisisOtherActions", L.a), y = p.a.h4("CrisisOtherActionsTitle", L.a), D = p.a.div("CrisisLinkIconContainer", L.a), N = p.a.div("CrisisLinkText", L.a), Z = p.a.h3("CrisisLinkTitle", L.a), B = p.a.p("CrisisLinkDescription", L.a);
+				fbt: O
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = p.a.div("CrisisImageContainer", u.a), H = p.a.h2("CrisisTitle", u.a), U = p.a.p("CrisisDescription", u.a), F = p.a.div("CrisisOtherActions", L.a), y = p.a.h4("CrisisOtherActionsTitle", L.a), D = p.a.div("CrisisLinkIconContainer", L.a), N = p.a.div("CrisisLinkText", L.a), Z = p.a.h3("CrisisLinkTitle", L.a), B = p.a.p("CrisisLinkDescription", L.a);
 			var I = e => r.a.createElement("div", {
 				className: L.a.CrisisThankYouPage
-			}, r.a.createElement(O, null, r.a.createElement(f, {
+			}, r.a.createElement(T, null, r.a.createElement(f, {
 				className: L.a.CrisisTickImage
-			})), r.a.createElement(H, null, T._("Thanks for caring about your fellow redditor", null, {
+			})), r.a.createElement(H, null, O._("Thanks for caring about your fellow redditor", null, {
 				hk: "1ePh84"
-			})), r.a.createElement(U, null, T._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [T._param("username", r.a.createElement("span", null, "u/", e.username))], {
+			})), r.a.createElement(U, null, O._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [O._param("username", r.a.createElement("span", null, "u/", e.username))], {
 				hk: "3X1mGY"
-			})), r.a.createElement(F, null, r.a.createElement(y, null, T._("Other things you can do", null, {
+			})), r.a.createElement(F, null, r.a.createElement(y, null, O._("Other things you can do", null, {
 				hk: "4oCunD"
 			})), r.a.createElement("a", {
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 				target: "_blank",
 				rel: "noopener noreferrer",
 				className: L.a.CrisisLink
-			}, r.a.createElement(D, null, r.a.createElement(b, null)), r.a.createElement(N, null, r.a.createElement(Z, null, T._("Learn how to help someone in crisis", null, {
+			}, r.a.createElement(D, null, r.a.createElement(b, null)), r.a.createElement(N, null, r.a.createElement(Z, null, O._("Learn how to help someone in crisis", null, {
 				hk: "3HohFx"
-			})), r.a.createElement(B, null, T._("Get advice on what you can say and how to be supportive.", null, {
+			})), r.a.createElement(B, null, O._("Get advice on what you can say and how to be supportive.", null, {
 				hk: "1NHS5d"
 			}))), r.a.createElement(E, {
 				className: L.a.CrisisLinkArrow
@@ -212,9 +212,9 @@
 				target: "_blank",
 				rel: "noopener noreferrer",
 				className: L.a.CrisisLink
-			}, r.a.createElement(D, null, r.a.createElement(R, null)), r.a.createElement(N, null, r.a.createElement(Z, null, T._("Get yourself support", null, {
+			}, r.a.createElement(D, null, r.a.createElement(R, null)), r.a.createElement(N, null, r.a.createElement(Z, null, O._("Get yourself support", null, {
 				hk: "kTT0U"
-			})), r.a.createElement(B, null, T._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
+			})), r.a.createElement(B, null, O._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 				hk: "37R4JZ"
 			}))), r.a.createElement(E, {
 				className: L.a.CrisisLinkArrow
@@ -351,27 +351,28 @@
 				fe = n("./src/chat/components/ReportFlow/FileComplaintFlow/index.m.less"),
 				Se = n.n(fe);
 			const Le = p.a.div("LinkHolder", Se.a),
-				Te = p.a.a("Link", Se.a);
-			var Oe = ({
+				Oe = p.a.a("Link", Se.a);
+			var Te = ({
 					selectedReason: e
-				}) => r.a.createElement(r.a.Fragment, null, r.a.createElement(ae, null, e.complaintPageTitle), r.a.createElement(ee, null, e.complaintPrompt), r.a.createElement(Le, null, r.a.createElement(Te, {
+				}) => r.a.createElement(r.a.Fragment, null, r.a.createElement(ae, null, e.complaintPageTitle), r.a.createElement(ee, null, e.complaintPrompt), r.a.createElement(Le, null, r.a.createElement(Oe, {
 					target: "_blank",
 					href: e.complaintUrl
 				}, e.complaintButtonText))),
 				He = n("./src/chat/actions/tooltip.ts"),
-				Ue = n("./src/chat/constants/page.ts");
-			const Fe = "ReportFlow--RedditRules";
-			var ye;
+				Ue = n("./src/chat/constants/page.ts"),
+				Fe = n("./src/chat/selectors/tooltip.ts");
+			const ye = "ReportFlow--RedditRules";
+			var De;
 			! function(e) {
 				e.SiteRule = "siteRule", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
-			}(ye || (ye = {}));
-			const De = Object(l.c)({
-				dropdownIsOpen: (e => t => t.tooltipId === e)(Fe)
+			}(De || (De = {}));
+			const Ne = Object(l.c)({
+				dropdownIsOpen: Object(Fe.a)(ye)
 			});
-			class Ne extends r.a.Component {
+			class Ze extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onRedditRuleChange = e => {
-						this.props.onChosenRuleChange(e, ye.SiteRule), this.props.onChosenRuleChange(e, e.requestCrisisSupport ? ye.CrisisTextLine : e.fileComplaint ? ye.FileComplaint : ye.SiteRule)
+						this.props.onChosenRuleChange(e, De.SiteRule), this.props.onChosenRuleChange(e, e.requestCrisisSupport ? De.CrisisTextLine : e.fileComplaint ? De.FileComplaint : De.SiteRule)
 					}, this.onChosenRuleCleared = () => {
 						this.props.onChosenRuleChange()
 					}
@@ -387,14 +388,14 @@
 					return r.a.createElement(ce, {
 						onClick: n
 					}, r.a.createElement(re, {
-						id: Fe
+						id: ye
 					}, c ? c.reasonTextToShow : ""), r.a.createElement(se, null), r.a.createElement(de, {
 						isChosen: !!c
 					}, s.fbt._("Select a rule", null, {
 						hk: "UKdaz"
 					})), r.a.createElement(ne, {
 						isOpen: t.dropdownIsOpen,
-						tooltipId: Fe,
+						tooltipId: ye,
 						container: document.getElementById(Ue.a),
 						excludeContainerPosition: !0
 					}, l ? l.map((n, s) => r.a.createElement(ie, {
@@ -449,12 +450,12 @@
 					}]), this.renderChildrenReasons(t, 0, e.indexOfReason)
 				}
 			}
-			var Ze = Object(o.b)(De, e => ({
+			var Be = Object(o.b)(Ne, e => ({
 				onOpenDropdown: () => e(Object(He.c)({
-					tooltipId: Fe
+					tooltipId: ye
 				}))
-			}))(Ne);
-			var Be = e => r.a.createElement("svg", {
+			}))(Ze);
+			var Ie = e => r.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 12 12",
 				xmlns: "http://www.w3.org/2000/svg",
@@ -463,7 +464,7 @@
 				fill: "inherit",
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})));
-			var Ie = e => r.a.createElement("svg", {
+			var je = e => r.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 12 12",
 					xmlns: "http://www.w3.org/2000/svg"
@@ -472,11 +473,11 @@
 					transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
 					points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 				}))),
-				je = n("./src/chat/controls/AccordionSection/index.m.less"),
-				Pe = n.n(je);
+				Pe = n("./src/chat/controls/AccordionSection/index.m.less"),
+				qe = n.n(Pe);
 
-			function qe() {
-				return (qe = Object.assign || function(e) {
+			function Ae() {
+				return (Ae = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -484,48 +485,48 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ae = p.a.div("Section", Pe.a),
-				Ve = p.a.wrapped(Ie, "ChevronUp", Pe.a),
-				Ye = p.a.wrapped(Be, "ChevronDown", Pe.a),
-				Me = p.a.div("ArticleWrap", Pe.a),
-				Xe = ({
+			const Ve = p.a.div("Section", qe.a),
+				Ye = p.a.wrapped(je, "ChevronUp", qe.a),
+				Me = p.a.wrapped(Ie, "ChevronDown", qe.a),
+				Xe = p.a.div("ArticleWrap", qe.a),
+				Ge = ({
 					isOpen: e,
 					...t
-				}) => r.a.createElement(Me, qe({
+				}) => r.a.createElement(Xe, Ae({
 					className: Object(Y.a)({
-						[Pe.a.open]: e
+						[qe.a.open]: e
 					})
 				}, t)),
-				Ge = p.a.div("SectionHead", Pe.a),
-				We = ({
+				We = p.a.div("SectionHead", qe.a),
+				ze = ({
 					isOpen: e,
 					...t
-				}) => r.a.createElement(Ge, qe({
+				}) => r.a.createElement(We, Ae({
 					className: Object(Y.a)({
-						[Pe.a.open]: e
+						[qe.a.open]: e
 					})
 				}, t)),
-				ze = p.a.div("Article", Pe.a);
-			class Je extends r.a.Component {
+				Je = p.a.div("Article", qe.a);
+			class Ke extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleClick = () => {
 						this.props.open || (this.props.onOpen(), this.props.onSwitchSection())
 					}
 				}
 				render() {
-					return r.a.createElement("div", null, r.a.createElement(Ae, null, this.props.open ? r.a.createElement(Ve, null) : r.a.createElement(Ye, null), r.a.createElement(We, {
+					return r.a.createElement("div", null, r.a.createElement(Ve, null, this.props.open ? r.a.createElement(Ye, null) : r.a.createElement(Me, null), r.a.createElement(ze, {
 						onClick: this.handleClick,
 						isOpen: this.props.open
-					}, this.props.title), r.a.createElement(Xe, {
+					}, this.props.title), r.a.createElement(Ge, {
 						isOpen: this.props.open,
 						height: this.props.height
-					}, this.props.open ? r.a.createElement(ze, null, this.props.children) : null)))
+					}, this.props.open ? r.a.createElement(Je, null, this.props.children) : null)))
 				}
 			}
-			var Ke = Object(o.b)(null, e => ({
+			var Qe = Object(o.b)(null, e => ({
 				onSwitchSection: () => e(Object(He.d)())
-			}))(Je);
-			class Qe {
+			}))(Ke);
+			class $e {
 				constructor() {
 					this.sequence = []
 				}
@@ -537,10 +538,10 @@
 					n.push(e), this.sequence = n
 				}
 			}
-			class $e extends r.a.Component {
+			class et extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
-						rulesSequence: new Qe
+						rulesSequence: new $e
 					}, this.onUpdateRulesSequence = this.onUpdateRulesSequence.bind(this)
 				}
 				onUpdateRulesSequence(e, t) {
@@ -551,12 +552,12 @@
 						props: n,
 						state: s
 					} = this, a = s.rulesSequence.getSequence();
-					return r.a.createElement(Ke, {
+					return r.a.createElement(Qe, {
 						key: e.reasonTextToShow,
 						title: e.reasonTextToShow,
 						open: a.length > 0 && a[0] === t,
 						onOpen: () => this.onUpdateRulesSequence(t, 0)
-					}, r.a.createElement(Ze, {
+					}, r.a.createElement(Be, {
 						onChosenRuleChange: n.onRuleChange,
 						reason: e,
 						indexOfReason: t,
@@ -578,12 +579,12 @@
 					}))
 				}
 			}
-			var et = $e,
-				tt = n("./src/chat/models/ReportFlow/index.ts");
-			const nt = Object(l.c)({
+			var tt = et,
+				nt = n("./src/chat/models/ReportFlow/index.ts");
+			const st = Object(l.c)({
 				reasons: e => e.sitewideRules
 			});
-			class st extends r.a.Component {
+			class at extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						reason: void 0
@@ -604,9 +605,9 @@
 						hk: "3to8dr"
 					}));
 					switch (e) {
-						case tt.a.Default:
-						case tt.a.Invite:
-							return r.a.createElement(et, {
+						case nt.a.Default:
+						case nt.a.Invite:
+							return r.a.createElement(tt, {
 								reasons: t,
 								onRuleChange: e => {
 									this.setState({
@@ -614,15 +615,15 @@
 									}), n(e)
 								}
 							});
-						case tt.a.FileComplaint:
-							return this.state.reason && r.a.createElement(Oe, {
+						case nt.a.FileComplaint:
+							return this.state.reason && r.a.createElement(Te, {
 								selectedReason: this.state.reason
 							});
-						case tt.a.BlockUser:
+						case nt.a.BlockUser:
 							return r.a.createElement(Re, {
 								userId: this.props.blockedUserId
 							});
-						case tt.a.CrisisTextLine:
+						case nt.a.CrisisTextLine:
 							return r.a.createElement(P, {
 								username: this.props.blockedUserName,
 								ctlSubmitted: this.props.ctlSubmitted
@@ -630,10 +631,10 @@
 					}
 				}
 			}
-			const at = Object(o.b)(nt, e => ({
+			const rt = Object(o.b)(st, e => ({
 				fetchRules: () => e(Object(i.b)())
-			}))(st);
-			t.default = at
+			}))(at);
+			t.default = rt
 		},
 		"./src/chat/controls/AccordionSection/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -666,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.ab09fc2e06512778c190.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.4077343b0a542306de7f.js.map

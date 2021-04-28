@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.96365faace601191c31b.js
-// Retrieved at 4/28/2021, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4b33ecd53b33ef080039.js
+// Retrieved at 4/28/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -159,7 +159,7 @@
 					e.ADMIN = "system", e.USER = "user", e.PENDING = "pending", e.FILE = "file"
 				}(s || (s = {})),
 				function(e) {
-					e.TEXT = "text", e.POST = "post", e.USER_POST = "userPost", e.EMBED = "embedCollection", e.SNOOMOJI = "snoomoji", e.SUBREDDIT = "subreddit", e.COMMENT = "comment"
+					e.TEXT = "text", e.POST = "post", e.USER_POST = "userPost", e.EMBED = "embedCollection", e.SNOOMOJI = "snoomoji", e.SUBREDDIT = "subreddit", e.COMMENT = "comment", e.GIF = "gif"
 				}(o || (o = {})),
 				function(e) {
 					e.DELETE = "delete", e.REPORT = "report"
@@ -545,6 +545,8 @@
 				return O
 			})), i.d(t, "getChatUnitType", (function() {
 				return I
+			})), i.d(t, "getRedirectURL", (function() {
+				return j
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./node_modules/query-string/index.js"),
@@ -635,37 +637,46 @@
 								type: d.c.TEXT, value: t[t.length - 1]
 							}
 					}
-				}
+				},
+				j = e => ({
+					pathname: e,
+					search: location.search
+				})
 		},
 		"./src/chat/models/Channel/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "b", (function() {
 				return n
-			})), i.d(t, "d", (function() {
-				return c
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "a", (function() {
+				return r
+			})), i.d(t, "e", (function() {
 				return u
-			})), i.d(t, "b", (function() {
-				return p
+			})), i.d(t, "d", (function() {
+				return _
+			})), i.d(t, "c", (function() {
+				return m
 			}));
-			var n, r = i("./src/chat/constants/channels.ts"),
-				s = i("./src/chat/models/Channel/utils/index.ts"),
-				o = i("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
-				d = i("./src/chat/models/Message/index.ts"),
-				a = i("./src/chat/models/User/inviter.ts"),
-				l = i("./src/chat/models/User/member.ts");
+			var n, r, s = i("./src/chat/constants/channels.ts"),
+				o = i("./src/chat/models/Channel/utils/index.ts"),
+				d = i("./src/chat/models/Channel/utils/removeSendbirdPrefix.ts"),
+				a = i("./src/chat/models/Message/index.ts"),
+				l = i("./src/chat/models/User/inviter.ts"),
+				c = i("./src/chat/models/User/member.ts");
 			! function(e) {
+				e.Invited = "invited", e.Joined = "joined"
+			}(n || (n = {})),
+			function(e) {
 				e[e.Direct = 0] = "Direct", e[e.Group = 1] = "Group", e[e.Subreddit = 2] = "Subreddit"
-			}(n || (n = {}));
-			r.b.UNSORTED, n.Direct;
+			}(r || (r = {}));
+			s.b.UNSORTED, r.Direct;
 
-			function c(e, t) {
+			function u(e, t) {
 				const {
 					createdAt: i,
-					customType: r,
-					data: c,
+					customType: n,
+					data: s,
 					memberCount: u,
-					name: h,
+					name: _,
 					isDistinct: f,
 					isHidden: b,
 					unreadMessageCount: g,
@@ -683,27 +694,27 @@
 					coverUrl: x
 				} = e;
 				return {
-					channelId: Object(o.a)(T),
+					channelId: Object(d.a)(T),
 					channelSendbirdUrl: T,
-					channelState: Object(s.b)(t, O),
+					channelState: Object(o.b)(t, O),
 					createdAt: Number(i),
-					customType: r,
-					data: c,
+					customType: n,
+					data: s,
 					maxLengthMessage: -1,
 					memberCount: u,
-					name: h,
+					name: _,
 					isFrozen: I,
 					isHidden: b,
 					isNotifsMuted: !j,
-					isModerator: p(R),
-					isUserMuted: m(F),
-					isMuted: _(w),
-					inviter: Object(a.a)(v),
-					type: f ? n.Direct : n.Group,
-					lastMessage: E ? Object(d.c)(E) : void 0,
+					isModerator: m(R),
+					isUserMuted: h(F),
+					isMuted: p(w),
+					inviter: Object(l.a)(v),
+					type: f ? r.Direct : r.Group,
+					lastMessage: E ? Object(a.c)(E) : void 0,
 					unreadMessageCount: g,
 					unreadMentionCount: y,
-					members: Object(l.a)(S),
+					members: Object(c.a)(S),
 					fetchingFirstMessage: !1,
 					fetchingMessages: !1,
 					fetchingMessagesError: !1,
@@ -714,17 +725,17 @@
 				}
 			}
 
-			function u(e) {
+			function _(e) {
 				const t = {};
 				for (let i = 0, n = e.length; i < n; i++) {
-					const n = c(e[i]);
+					const n = u(e[i]);
 					n && (t[n.channelId] = n)
 				}
 				return t
 			}
-			const _ = e => e === r.c.Off,
-				p = e => "operator" === e,
-				m = e => "muted" === e
+			const p = e => e === s.c.Off,
+				m = e => "operator" === e,
+				h = e => "muted" === e
 		},
 		"./src/chat/models/Channel/utils/index.ts": function(e, t, i) {
 			"use strict";
@@ -779,11 +790,11 @@
 		"./src/chat/models/Message/adapter.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return y
+				return w
 			})), i.d(t, "c", (function() {
-				return T
-			})), i.d(t, "a", (function() {
 				return O
+			})), i.d(t, "a", (function() {
+				return I
 			}));
 			var n = i("./node_modules/lodash/isObject.js"),
 				r = i.n(n),
@@ -832,7 +843,15 @@
 					snoomoji: e => ({
 						type: s.c.SNOOMOJI,
 						value: e
-					})
+					}),
+					gif: e => {
+						const t = Object(o.a)(e, {});
+						return {
+							type: s.c.GIF,
+							value: t.url || "",
+							gif: t
+						}
+					}
 				},
 				{
 					TEXT: u,
@@ -841,9 +860,10 @@
 					SNOOMOJI: m,
 					COMMENT: h,
 					SUBREDDIT: f,
-					USER_POST: b
+					USER_POST: b,
+					GIF: g
 				} = s.c,
-				g = e => {
+				y = e => {
 					let t = {};
 					if (e && "string" == typeof e) {
 						const i = Object(o.a)(e, {
@@ -853,30 +873,33 @@
 					}
 					return r()(t) || (t = {}), t
 				},
-				y = e => g(e).clientMessageId || "",
-				w = (e, t) => {
-					if (t.snoomoji) return c[m](t.snoomoji);
-					if (t.embed_data && t.embed_data.url) {
+				w = e => y(e).clientMessageId || "",
+				v = (e, t) => {
+					if (e.snoomoji) return c[m](e.snoomoji);
+					if (e.embed_data && e.embed_data.url) {
 						const {
-							type: e
-						} = Object(d.getChatUnitType)(t.embed_data.url);
-						switch (e) {
+							type: t
+						} = Object(d.getChatUnitType)(e.embed_data.url);
+						switch (t) {
 							case h:
-								return c[h](JSON.stringify(t.embed_data));
+								return c[h](JSON.stringify(e.embed_data));
 							case f:
-								return c[f](JSON.stringify(t.embed_data));
+								return c[f](JSON.stringify(e.embed_data));
 							case b:
-								return c[b](JSON.stringify(t.embed_data));
+								return c[b](JSON.stringify(e.embed_data));
 							default:
-								return c[_](JSON.stringify(t.embed_data))
+								return c[_](JSON.stringify(e.embed_data))
 						}
-					} else if (t.embed_collection) {
-						const e = c[p](t.embed_collection);
-						if (e) return e
-					} else if (e) return c[u](e);
+					} else if (e.embed_collection) {
+						const t = c[p](e.embed_collection);
+						if (t) return t
+					} else {
+						if (e.gif) return c[g](JSON.stringify(e.gif));
+						if (t) return c[u](t)
+					}
 					return c[u]("")
 				},
-				v = e => ({
+				E = e => ({
 					channelIsPublic: e.channel_is_public,
 					channelName: e.channel_name,
 					channelId: e.channel_url && Object(a.a)(e.channel_url),
@@ -909,32 +932,32 @@
 						}
 					}
 				}),
-				E = e => (null == e ? void 0 : e.preview_collapsed) ? {
+				S = e => (null == e ? void 0 : e.preview_collapsed) ? {
 					shouldCollapse: !0,
 					shouldShowReportPrompt: !0
 				} : void 0,
-				S = e => {
+				T = e => {
 					var t, i;
 					return {
 						awarder_id: null === (t = null == e ? void 0 : e.awarding) || void 0 === t ? void 0 : t.awarder_id,
 						award_id: null === (i = null == e ? void 0 : e.awarding) || void 0 === i ? void 0 : i.award_id
 					}
 				},
-				T = (e, t) => {
-					const i = g(t);
+				O = (e, t) => {
+					const i = y(e);
 					return {
-						...w(e, i),
-						clientMessageId: y(t),
+						...v(i, t),
+						clientMessageId: w(e),
 						highlights: i.highlights || [],
-						collapsedInvitePreview: E(i),
+						collapsedInvitePreview: S(i),
 						...i.report && {
-							report: v(i.report)
+							report: E(i.report)
 						},
-						awarding: S(i),
+						awarding: T(i),
 						action_info_reason: i.action_info_reason
 					}
 				},
-				O = (e, t, i, n = []) => ({
+				I = (e, t, i, n = []) => ({
 					v1: {
 						clientMessageId: i,
 						highlights: n,
@@ -948,6 +971,9 @@
 						} : {},
 						...t === p ? {
 							embed_collection: e
+						} : {},
+						...t === g ? {
+							gif: Object(o.a)(e, {})
 						} : {}
 					}
 				})
@@ -1011,7 +1037,7 @@
 						data: r,
 						mentionType: m(e),
 						mentionedUsers: l,
-						messageData: Object(a.c)(s, r),
+						messageData: Object(a.c)(r, s),
 						messageId: o,
 						messageType: p(e),
 						sender: _(e),
@@ -1025,7 +1051,7 @@
 				const r = s()(),
 					d = Object(l.c)(e, i),
 					u = JSON.stringify(Object(a.a)(i, n, r, d)),
-					_ = Object(a.c)(i, u);
+					_ = Object(a.c)(u, i);
 				return {
 					channelId: t,
 					clientMessageId: r,
@@ -1131,7 +1157,7 @@
 				profileUrl: e.profile_url || e.profileUrl,
 				state: e.state,
 				isBlockedByMe: e.isBlockedByMe,
-				isModerator: Object(n.b)(e.role)
+				isModerator: Object(n.c)(e.role)
 			})).filter(Boolean) || []
 		},
 		"./src/chat/reducers/subscribe.ts": function(e, t, i) {
@@ -1179,137 +1205,140 @@
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "p", (function() {
-				return c
-			})), i.d(t, "q", (function() {
 				return u
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "q", (function() {
 				return _
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "g", (function() {
 				return p
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "j", (function() {
 				return m
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "k", (function() {
 				return h
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return f
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "t", (function() {
 				return b
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "l", (function() {
 				return g
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "r", (function() {
 				return y
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "m", (function() {
 				return w
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "b", (function() {
 				return v
-			})), i.d(t, "e", (function() {
-				return E
-			})), i.d(t, "u", (function() {
-				return T
-			})), i.d(t, "x", (function() {
-				return O
-			})), i.d(t, "v", (function() {
-				return I
-			})), i.d(t, "f", (function() {
-				return j
-			})), i.d(t, "M", (function() {
-				return F
-			})), i.d(t, "w", (function() {
-				return R
-			})), i.d(t, "A", (function() {
-				return x
-			})), i.d(t, "d", (function() {
-				return C
 			})), i.d(t, "L", (function() {
+				return E
+			})), i.d(t, "e", (function() {
+				return S
+			})), i.d(t, "u", (function() {
+				return O
+			})), i.d(t, "x", (function() {
+				return I
+			})), i.d(t, "v", (function() {
+				return j
+			})), i.d(t, "f", (function() {
+				return F
+			})), i.d(t, "N", (function() {
+				return R
+			})), i.d(t, "w", (function() {
+				return x
+			})), i.d(t, "A", (function() {
+				return C
+			})), i.d(t, "d", (function() {
 				return k
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "M", (function() {
 				return N
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "B", (function() {
 				return A
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "z", (function() {
 				return D
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "c", (function() {
 				return P
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "C", (function() {
 				return B
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "D", (function() {
 				return L
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "K", (function() {
 				return U
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "J", (function() {
 				return M
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "h", (function() {
 				return G
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "a", (function() {
 				return q
-			})), i.d(t, "E", (function() {
-				return V
 			})), i.d(t, "H", (function() {
+				return V
+			})), i.d(t, "E", (function() {
 				return W
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "I", (function() {
 				return H
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "F", (function() {
 				return $
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "n", (function() {
 				return z
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "y", (function() {
 				return K
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "o", (function() {
 				return Y
+			})), i.d(t, "i", (function() {
+				return Q
+			})), i.d(t, "G", (function() {
+				return J
 			}));
 			var n = i("./node_modules/lodash/values.js"),
 				r = i.n(n),
-				s = i("./src/chat/constants/channels.ts"),
-				o = i("./src/chat/constants/messages.ts"),
-				d = i("./src/chat/models/Channel/index.ts"),
-				a = i("./src/chat/models/Message/index.ts"),
-				l = i("./src/chat/selectors/user.ts");
-			const c = e => e.channels.invited.sortedKeys.length,
-				u = e => e.channels.joined.sortedKeys.length,
-				_ = (e, t) => {
+				s = i("./node_modules/reselect/es/index.js"),
+				o = i("./src/chat/constants/channels.ts"),
+				d = i("./src/chat/constants/messages.ts"),
+				a = i("./src/chat/models/Channel/index.ts"),
+				l = i("./src/chat/models/Message/index.ts"),
+				c = i("./src/chat/selectors/user.ts");
+			const u = e => e.channels.invited.sortedKeys.length,
+				_ = e => e.channels.joined.sortedKeys.length,
+				p = (e, t) => {
 					if (!t) return;
 					const i = "string" == typeof t ? t : t.channelId;
 					return i ? e.channels.models[i] : void 0
 				},
-				p = e => {
+				m = e => {
 					const {
 						currentPage: t
 					} = e.platform, i = t && t.urlParams.channelId;
-					if (i) return _(e, i)
-				},
-				m = e => {
-					const t = p(e);
-					if (t && t.channelState === s.b.JOINED) return t
+					if (i) return p(e, i)
 				},
 				h = e => {
+					const t = m(e);
+					if (t && t.channelState === o.b.JOINED) return t
+				},
+				f = e => {
 					const {
 						channelId: t
 					} = e.channels.selected;
-					if (t) return _(e, t)
+					if (t) return p(e, t)
 				},
-				f = e => e.channels.selected && e.channels.selected.channelId,
-				b = e => p(e) || h(e),
-				g = e => {
+				b = e => e.channels.selected && e.channels.selected.channelId,
+				g = e => m(e) || f(e),
+				y = e => {
 					const {
 						user: t
-					} = e, i = b(e);
+					} = e, i = g(e);
 					if (i && i.members) return i.members.filter(e => e.id !== t.account.id)
 				},
-				y = (e, t) => {
+				w = (e, t) => {
 					var i;
 					const {
 						user: n
-					} = e, r = _(e, t);
-					if (r && r.type === d.a.Direct && r.members) return null === (i = r.members.find(e => e.id !== n.account.id)) || void 0 === i ? void 0 : i.id
+					} = e, r = p(e, t);
+					if (r && r.type === a.a.Direct && r.members) return null === (i = r.members.find(e => e.id !== n.account.id)) || void 0 === i ? void 0 : i.id
 				},
-				w = (e, t) => {
-					const i = g(e);
+				v = (e, t) => {
+					const i = y(e);
 					return !(!i || !i.find(e => !!t[e.id].isNSFW))
 				},
-				v = e => {
-					return !!m(e)
-				},
 				E = e => {
+					return !!h(e)
+				},
+				S = e => {
 					const t = [],
 						i = e.user.account.id;
 					return r()(e.channels.models).forEach(e => {
@@ -1319,110 +1348,110 @@
 						}
 					}), t.length && t
 				},
-				S = (e, t) => {
+				T = (e, t) => {
 					const i = ((e, t) => {
-						const i = _(e, t);
+						const i = p(e, t);
 						return i && i.lastMessage
 					})(e, t);
-					return Boolean((null == i ? void 0 : i.messageType) === o.d.SYSTEM && (null == i ? void 0 : i.customType) === a.a.AWARDING)
+					return Boolean((null == i ? void 0 : i.messageType) === d.d.SYSTEM && (null == i ? void 0 : i.customType) === l.a.AWARDING)
 				},
-				T = e => r()(e.messages.models).filter(t => t.channelId === e.channels.selected.channelId),
-				O = e => r()(e.messages.models).filter(t => t.messageType === o.d.USER && t.channelId === e.channels.selected.channelId),
-				I = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
-				j = (e, t) => {
+				O = e => r()(e.messages.models).filter(t => t.channelId === e.channels.selected.channelId),
+				I = e => r()(e.messages.models).filter(t => t.messageType === d.d.USER && t.channelId === e.channels.selected.channelId),
+				j = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
+				F = (e, t) => {
 					var i, n;
-					if (Boolean(S(e, t))) {
-						const r = _(e, t);
+					if (Boolean(T(e, t))) {
+						const r = p(e, t);
 						return null === (n = null === (i = null == r ? void 0 : r.lastMessage) || void 0 === i ? void 0 : i.messageData.awarding) || void 0 === n ? void 0 : n.award_id
 					}
 				},
-				F = (e, t) => {
-					var i, n;
-					const r = Object(l.a)(e),
-						s = _(e, t),
-						o = (null == s ? void 0 : s.type) === d.a.Direct,
-						a = null == s ? void 0 : s.lastMessage,
-						c = Boolean(I(e).length);
-					if (!o) return !1;
-					const u = y(e, t);
-					return u && e.channels.messageQuickReplyUsers[u] === u || (null === (n = null === (i = null == a ? void 0 : a.messageData) || void 0 === i ? void 0 : i.awarding) || void 0 === n ? void 0 : n.awarder_id) !== r && !c && Boolean(S(e, t))
-				},
 				R = (e, t) => {
-					const i = h(e);
+					var i, n;
+					const r = Object(c.a)(e),
+						s = p(e, t),
+						o = (null == s ? void 0 : s.type) === a.a.Direct,
+						d = null == s ? void 0 : s.lastMessage,
+						l = Boolean(j(e).length);
+					if (!o) return !1;
+					const u = w(e, t);
+					return u && e.channels.messageQuickReplyUsers[u] === u || (null === (n = null === (i = null == d ? void 0 : d.messageData) || void 0 === i ? void 0 : i.awarding) || void 0 === n ? void 0 : n.awarder_id) !== r && !l && Boolean(T(e, t))
+				},
+				x = (e, t) => {
+					const i = f(e);
 					return i && i[t]
 				},
-				x = e => e.channels.joined.hasMoreChannels,
-				C = e => e.channels.joined.fetchingChannels,
-				k = e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]),
-				N = e => e.channels.inviteListExpanded,
-				A = e => e.channels.invited.hasMoreChannels,
-				D = e => e.channels.invited.fetchingChannels,
-				P = e => e.channels.invited.sortedKeys.map(t => e.channels.models[t]),
-				B = e => {
-					const t = h(e);
+				C = e => e.channels.joined.hasMoreChannels,
+				k = e => e.channels.joined.fetchingChannels,
+				N = e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]),
+				A = e => e.channels.inviteListExpanded,
+				D = e => e.channels.invited.hasMoreChannels,
+				P = e => e.channels.invited.fetchingChannels,
+				B = e => e.channels.invited.sortedKeys.map(t => e.channels.models[t]),
+				L = e => {
+					const t = f(e);
 					return t && t.inviter && t.inviter.name
 				},
-				L = e => {
-					const t = p(e);
+				U = e => {
+					const t = m(e);
 					return Boolean(t && t.isMessageListLoaded)
 				},
-				U = e => e.channels.isCreatingChannel,
-				M = e => {
-					const t = h(e);
+				M = e => e.channels.isCreatingChannel,
+				G = e => {
+					const t = f(e);
 					return t && t.channelState
 				},
-				G = e => {
-					const t = p(e);
+				q = e => {
+					const t = m(e);
 					return !(!t || !t.isModerator)
 				},
-				q = (e, t) => {
-					const i = _(e, t);
+				V = (e, t) => {
+					const i = p(e, t);
 					return !(!i || !i.isFrozen)
 				},
-				V = (e, t) => {
-					const i = _(e, t);
+				W = (e, t) => {
+					const i = p(e, t);
 					return !(!i || !i.isMuted)
 				},
-				W = (e, t) => {
-					const i = _(e, t);
+				H = (e, t) => {
+					const i = p(e, t);
 					return Boolean(i && i.isNotifsMuted)
 				},
-				H = (e, t) => {
-					const i = _(e, t);
+				$ = (e, t) => {
+					const i = p(e, t);
 					return Boolean(i && i.isHidden)
 				},
-				$ = (e, t) => {
+				z = (e, t) => {
 					var i;
 					return (null === (i = e.channels.draftMessages[t]) || void 0 === i ? void 0 : i.messageValue) || ""
 				},
-				z = e => {
+				K = e => {
 					var t;
-					return Boolean(null === (t = P(e)) || void 0 === t ? void 0 : t.length)
+					return Boolean(null === (t = B(e)) || void 0 === t ? void 0 : t.length)
 				},
-				K = (e, t) => {
+				Y = (e, t) => {
 					if (t) {
-						const i = _(e, t),
-							n = Object(l.a)(e);
+						const i = p(e, t),
+							n = Object(c.a)(e);
 						if (i && n) {
-							const e = i.channelState === s.b.JOINED,
-								t = i.channelState === s.b.INVITED;
-							let r, o, a;
-							for (const s of i.members) s.id === n ? o = s : s.id === (i.inviter && i.inviter.id) ? a = s : (!r || r.name.toLocaleLowerCase() > s.name.toLocaleLowerCase()) && (r = s);
-							return i.type === d.a.Direct ? {
+							const e = i.channelState === o.b.JOINED,
+								t = i.channelState === o.b.INVITED;
+							let r, s, d;
+							for (const o of i.members) o.id === n ? s = o : o.id === (i.inviter && i.inviter.id) ? d = o : (!r || r.name.toLocaleLowerCase() > o.name.toLocaleLowerCase()) && (r = o);
+							return i.type === a.a.Direct ? {
 								firstUser: r || i.inviter
-							} : e && o && !r && !a ? {
-								firstUser: o
-							} : e && o && a ? {
-								firstUser: o,
-								secondUser: a
-							} : e && o && r ? {
-								firstUser: o,
+							} : e && s && !r && !d ? {
+								firstUser: s
+							} : e && s && d ? {
+								firstUser: s,
+								secondUser: d
+							} : e && s && r ? {
+								firstUser: s,
 								secondUser: r
-							} : t && o && a ? {
-								firstUser: o,
-								secondUser: a
-							} : t && o && i.inviter ? {
-								firstUser: o,
+							} : t && s && d ? {
+								firstUser: s,
+								secondUser: d
+							} : t && s && i.inviter ? {
+								firstUser: s,
 								secondUser: i.inviter
 							} : {
 								firstUser: i.inviter
@@ -1430,12 +1459,13 @@
 						}
 					}
 				},
-				Y = (e, t) => {
+				Q = (e, t) => {
 					var i;
-					const n = _(e, t),
-						r = K(e, t);
-					if (n) return n.type === d.a.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
-				}
+					const n = p(e, t),
+						r = Y(e, t);
+					if (n) return n.type === a.a.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
+				},
+				J = Object(s.a)(m, e => (null == e ? void 0 : e.type) === a.a.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.b.Invited)))
 		},
 		"./src/chat/selectors/messages.ts": function(e, t, i) {
 			"use strict";
@@ -1583,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("132511"),
+				buildNumber: r("132537"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1619638221"),
+				})("1619645120"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4176,14 +4206,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd96fbb4ded513d6e7e7c6f8e2e4dc88850cdd2c9-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cbca8f2d8e7f53bdc818412cbf0a453227e3a4ab4-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d96fbb4ded513d6e7e7c6f8e2e4dc88850cdd2c9-production",
+						release: "bca8f2d8e7f53bdc818412cbf0a453227e3a4ab4-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4677,7 +4707,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "d96fbb4ded513d6e7e7c6f8e2e4dc88850cdd2c9-production",
+						releaseClient: "bca8f2d8e7f53bdc818412cbf0a453227e3a4ab4-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -45755,7 +45785,7 @@
 				e.Allow = "allow", e.Bail = "bail", e.Block = "block", e.Close = "close", e.Request = "request", e.Register = "register", e.View = "view"
 			}(wi || (wi = {})),
 			function(e) {
-				e.Approve = "approve", e.Ban = "ban", e.Click = "click", e.Dismiss = "dismiss", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Load = "load", e.ModDelete = "mod_delete", e.OptOut = "opt_out", e.Report = "report", e.Submit = "submit", e.View = "view"
+				e.Approve = "approve", e.Ban = "ban", e.Click = "click", e.Dismiss = "dismiss", e.Heartbeat = "heartbeat", e.Kick = "kick", e.Load = "load", e.ModDelete = "mod_delete", e.OptOut = "opt_out", e.Report = "report", e.Submit = "submit", e.View = "view", e.Search = "search"
 			}(vi || (vi = {})),
 			function(e) {
 				e.Experiment = "experiment", e.Page = "page"
@@ -45939,7 +45969,8 @@
 				stream_private_id: e.streamPrivateId,
 				stream_ended_timestamp: e.streamEndedTimestamp,
 				outbound_domain: e.outboundDomain,
-				outbound_url: e.outboundUrl
+				outbound_url: e.outboundUrl,
+				caption: e.caption
 			})
 		},
 		"./src/telemetry/models/Outbound.ts": function(e, t, i) {
@@ -46107,4 +46138,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.96365faace601191c31b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4b33ecd53b33ef080039.js.map
