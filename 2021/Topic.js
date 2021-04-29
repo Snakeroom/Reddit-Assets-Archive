@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.de0df32b505b73b54bef.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.e43c545883f0d2db156e.js
+// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -514,29 +514,32 @@
 				shouldComponentUpdate(e) {
 					const {
 						postsById: t,
-						...s
+						triggerNewPostPill: s,
+						...r
 					} = this.props, {
-						postsById: r,
-						...i
-					} = e, n = Object.keys(s), o = Object.keys(i);
-					if (o.length !== n.length) return !0;
-					if (o.some(e => s[e] !== i[e])) return !0;
-					if (t === r) return !1;
+						postsById: i,
+						triggerNewPostPill: n,
+						...o
+					} = e, a = Object.keys(r), c = Object.keys(o);
+					if (c.length !== a.length) return !0;
+					if (c.some(e => r[e] !== o[e])) return !0;
+					if (t === i) return !1;
+					if (s !== n) return !0;
 					if (this.props.postIds && this.props.postIds.length) {
 						const {
 							layout: e,
 							postComponentForLayout: s
 						} = this.props;
-						return this.props.postIds.some((i, n) => {
+						return this.props.postIds.some((r, n) => {
 							const o = 0 === n;
 							return s({
 								isFirstPost: o,
 								layout: e,
-								post: t[i]
+								post: t[r]
 							}) !== s({
 								isFirstPost: o,
 								layout: e,
-								post: r[i]
+								post: i[r]
 							})
 						})
 					}
@@ -559,51 +562,52 @@
 						redditStyle: f,
 						shouldHideFlair: E,
 						isActionBarAnimationEnabled: S,
-						postIds: T
-					} = this.props, y = 0 === t, _ = `post-${r}-${e}-${t}-${s?"last-index":""}-${p}-${m}-${g}`;
-					let L;
-					if (void 0 === (L = this.scrollChildCache.get(_))) {
+						triggerNewPostPill: T,
+						postIds: y
+					} = this.props, _ = 0 === t, L = `post-${r}-${e}-${t}-${s?"last-index":""}-${p}-${m}-${g}`;
+					let P;
+					if (void 0 === (P = this.scrollChildCache.get(L))) {
 						const {
-							inSubredditOrProfile: P,
-							postsById: O
-						} = this.props, N = O[e], I = N.crosspostRootId && O[N.crosspostRootId] ? O[N.crosspostRootId] : N;
-						N.crosspostRootId && !O[N.crosspostRootId] && v.c.withScope(e => {
-							e.setExtra("errorType", h.q.API), e.setExtra("description", `Post ${N.id} is crosspost of ${N.crosspostRootId}, but ` + `${N.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: O,
+							postsById: N
+						} = this.props, I = N[e], k = I.crosspostRootId && N[I.crosspostRootId] ? N[I.crosspostRootId] : I;
+						I.crosspostRootId && !N[I.crosspostRootId] && v.c.withScope(e => {
+							e.setExtra("errorType", h.q.API), e.setExtra("description", `Post ${I.id} is crosspost of ${I.crosspostRootId}, but ` + `${I.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
 						});
-						const k = this.props.postComponentForLayout({
-								isCrosspost: !!N.crosspostRootId,
-								isFirstPost: y,
+						const R = this.props.postComponentForLayout({
+								isCrosspost: !!I.crosspostRootId,
+								isFirstPost: _,
 								layout: r,
-								post: I
+								post: k
 							}),
-							R = `post-list-item-[layout: ${r}]-[postId: ${e}]`,
-							F = z(e, r, s, m, p, g, this.props, t),
-							B = K(e, r, this.props, t, b),
-							M = Y(e, this.props),
-							H = I.media && I.media.type === w.o.EMBED ? I.media.provider : null;
-						L = {
-							estHeight: Object(j.c)(N, r),
+							F = `post-list-item-[layout: ${r}]-[postId: ${e}]`,
+							B = z(e, r, s, m, p, g, this.props, t),
+							M = K(e, r, this.props, t, b),
+							H = Y(e, this.props),
+							V = k.media && k.media.type === w.o.EMBED ? k.media.provider : null;
+						P = {
+							estHeight: Object(j.c)(I, r),
 							id: e,
-							isFocusable: !(!I.media || !(r === C.g.Large || r === C.g.Classic && Object(w.G)(I.media))) && (w.d.has(I.media.type) && (!H || !w.s.has(H)) && !I.isSpoiler && !I.isNSFW),
-							trackOnEnteredViewport: F,
-							trackOnExitedViewport: B,
+							isFocusable: !(!k.media || !(r === C.g.Large || r === C.g.Classic && Object(w.G)(k.media))) && (w.d.has(k.media.type) && (!V || !w.s.has(V)) && !k.isSpoiler && !k.isNSFW),
+							trackOnEnteredViewport: B,
+							trackOnExitedViewport: M,
 							render: ({
-								className: t,
-								height: r,
-								width: h,
-								remeasure: g,
-								setScrollerChildRef: v,
-								shouldLoadInitially: _
-							}) => u.a.createElement(k, {
-								className: t,
+								className: r,
+								height: h,
+								width: g,
+								remeasure: v,
+								setScrollerChildRef: C,
+								shouldLoadInitially: L
+							}) => u.a.createElement(R, {
+								className: r,
 								currentProfileName: i,
-								key: R,
-								availableWidth: h,
+								key: F,
+								availableWidth: g,
 								eventFactory: x,
-								first: y,
-								forceLoadMedia: _,
+								first: _,
+								forceLoadMedia: L,
 								hostPostId: n,
-								inSubredditOrProfile: P,
+								inSubredditOrProfile: O,
 								isActionBarAnimationEnabled: S,
 								isCommentPermalink: o,
 								isCommentsPage: a,
@@ -614,18 +618,21 @@
 								listingName: p,
 								pageLayer: b,
 								last: s,
-								onClickPost: M,
-								onSizeChanged: g,
+								onClickPost: H,
+								onSizeChanged: v,
 								postId: e,
-								postIds: T,
+								postIds: y,
 								redditStyle: f,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: v,
-								shouldHideFlair: E
+								scrollerItemRef: C,
+								shouldHideFlair: E,
+								onceInViewport: () => {
+									null == T || T(t)
+								}
 							})
-						}, this.scrollChildCache.set(_, L)
+						}, this.scrollChildCache.set(L, P)
 					}
-					return L
+					return P
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -2397,4 +2404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.de0df32b505b73b54bef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e43c545883f0d2db156e.js.map

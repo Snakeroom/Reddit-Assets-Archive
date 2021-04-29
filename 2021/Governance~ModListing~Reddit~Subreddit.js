@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4521425c952f5c21e309.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6a46150425de39f01da6.js
+// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, i) {
@@ -77,7 +77,7 @@
 					const n = r();
 					e in n.listings.postOrder.fetchedTokens ? e in n.listings.postOrder.ids ? i(l({
 						listingKey: e
-					})) : o.j(n, e) : i(c({
+					})) : o.l(n, e) : i(c({
 						listingKey: e,
 						listingName: t
 					}))
@@ -370,7 +370,8 @@
 					className: Object(n.a)(a.a.presenceDot, {
 						[a.a.isLit]: t
 					}),
-					isHighlighted: e.isHighlighted
+					isHighlighted: e.isHighlighted,
+					outlineClassName: e.outlineClassName
 				})
 			}
 		},
@@ -846,7 +847,7 @@
 					isSponsored: e,
 					source: t
 				}) => !!(e && (null == t ? void 0 : t.outboundUrl)),
-				E = I(e => {
+				C = I(e => {
 					const t = Object(c.useRef)(null),
 						{
 							allowClickTracking: i,
@@ -889,7 +890,7 @@
 						onTouchStart: e => x(e.currentTarget, p, m, i)
 					}))
 				});
-			t.b = E
+			t.b = C
 		},
 		"./src/reddit/helpers/pageActionLoginRedirect.ts": function(e, t, i) {
 			"use strict";
@@ -942,9 +943,9 @@
 			})), i.d(t, "u", (function() {
 				return S
 			})), i.d(t, "t", (function() {
-				return E
-			})), i.d(t, "o", (function() {
 				return C
+			})), i.d(t, "o", (function() {
+				return E
 			})), i.d(t, "n", (function() {
 				return P
 			})), i.d(t, "y", (function() {
@@ -1087,7 +1088,7 @@
 						...m(e)
 					})
 				},
-				E = (e, t) => {
+				C = (e, t) => {
 					const i = e.uploads[t];
 					i.error && Object(u.a)({
 						...m(e),
@@ -1099,7 +1100,7 @@
 						}
 					})
 				},
-				C = (e, t) => {
+				E = (e, t) => {
 					t.forEach(t => {
 						const i = Object(n.f)(t.type);
 						i && Object(u.a)({
@@ -1274,9 +1275,9 @@
 			})), i.d(t, "q", (function() {
 				return S
 			})), i.d(t, "r", (function() {
-				return E
-			})), i.d(t, "o", (function() {
 				return C
+			})), i.d(t, "o", (function() {
+				return E
 			})), i.d(t, "s", (function() {
 				return P
 			})), i.d(t, "c", (function() {
@@ -1405,7 +1406,7 @@
 								sort: c = n.yb,
 								t: l = n.zb
 							} = s;
-							Object(I.a)(E(o, c, i, r, l)(t));
+							Object(I.a)(C(o, c, i, r, l)(t));
 							break
 						}
 						case n.Gb.PROFILE_COMMENTS: {
@@ -1417,7 +1418,7 @@
 								sort: c = n.yb,
 								t: l = n.zb
 							} = s;
-							Object(I.a)(C(o, c, i, r, l)(t));
+							Object(I.a)(E(o, c, i, r, l)(t));
 							break
 						}
 						case n.Gb.PROFILE_PRIVATE: {
@@ -1548,7 +1549,7 @@
 						adblock: w.adblock(n)
 					}
 				},
-				E = (e, t, i, r, o) => n => {
+				C = (e, t, i, r, o) => n => {
 					const s = w.listing(n, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -1570,7 +1571,7 @@
 						adblock: w.adblock(n)
 					}
 				},
-				C = (e, t, i, r, o) => n => {
+				E = (e, t, i, r, o) => n => {
 					const s = w.profileComments(n, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -1911,9 +1912,9 @@
 			})), i.d(t, "k", (function() {
 				return S
 			})), i.d(t, "e", (function() {
-				return E
-			})), i.d(t, "j", (function() {
 				return C
+			})), i.d(t, "j", (function() {
+				return E
 			})), i.d(t, "d", (function() {
 				return P
 			})), i.d(t, "o", (function() {
@@ -1968,7 +1969,7 @@
 					media: l.media(o, e)
 				}),
 				p = (e, t, i, r, o) => n => ({
-					...E(n, e, t, o, r, i),
+					...C(n, e, t, o, r, i),
 					noun: "ad"
 				}),
 				m = (e, t, i) => o => {
@@ -2118,8 +2119,8 @@
 					},
 					post: l.post(o, t)
 				}),
-				S = (e, t, i, r, o) => n => E(n, e, t, i, r, o),
-				E = (e, t, i, r, o, c) => {
+				S = (e, t, i, r, o) => n => C(n, e, t, i, r, o),
+				C = (e, t, i, r, o, c) => {
 					const d = l.paneName(e, r),
 						u = l.postRelativePosition(e, t, o, c),
 						f = l.amountOfElementsBeforePost(e, i, o, c, d),
@@ -2152,7 +2153,7 @@
 						discoveryUnit: c ? l.discoveryUnit(c) : null
 					}
 				},
-				C = (e, t, i, r, o, n) => s => P(s, e, t, i, r, o, n),
+				E = (e, t, i, r, o, n) => s => P(s, e, t, i, r, o, n),
 				P = (e, t, i, r, d, u, f) => {
 					if (!r) {
 						r = Object(c.F)(e, {
@@ -2216,7 +2217,7 @@
 					subreddit: l.subreddit(i)
 				}),
 				T = (e, t, i, r, o) => s => ({
-					...E(s, t, i, r, e, o),
+					...C(s, t, i, r, e, o),
 					action: n.c.VIEW
 				}),
 				L = (e, t, i, r) => o => ({
@@ -2917,20 +2918,21 @@
 				c = i.n(s);
 			t.a = Object(r.forwardRef)(({
 				className: e,
-				isHighlighted: t
-			}, i) => o.a.createElement("svg", {
+				isHighlighted: t,
+				outlineClassName: i
+			}, r) => o.a.createElement("svg", {
 				className: Object(n.a)(c.a.defaultInactiveState, e),
 				viewBox: "0 0 12 12",
 				xmlns: "http://www.w3.org/2000/svg",
 				width: "12",
 				height: "12",
-				ref: i
+				ref: r
 			}, o.a.createElement("circle", {
 				cx: "6",
 				cy: "6",
 				r: "4"
 			}), o.a.createElement("path", {
-				className: Object(n.a)(c.a.outline, {
+				className: Object(n.a)(c.a.outline, i, {
 					[c.a.highlighted]: t
 				}),
 				fillRule: "evenodd",
@@ -2997,4 +2999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4521425c952f5c21e309.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6a46150425de39f01da6.js.map

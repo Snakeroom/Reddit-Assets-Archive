@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.ec865188cb925ecaf8a3.js
-// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.9e5a3599b50a445829e9.js
+// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3688,29 +3688,32 @@
 				shouldComponentUpdate(e) {
 					const {
 						postsById: t,
-						...s
+						triggerNewPostPill: s,
+						...n
 					} = this.props, {
-						postsById: n,
-						...r
-					} = e, o = Object.keys(s), i = Object.keys(r);
-					if (i.length !== o.length) return !0;
-					if (i.some(e => s[e] !== r[e])) return !0;
-					if (t === n) return !1;
+						postsById: r,
+						triggerNewPostPill: o,
+						...i
+					} = e, a = Object.keys(n), d = Object.keys(i);
+					if (d.length !== a.length) return !0;
+					if (d.some(e => n[e] !== i[e])) return !0;
+					if (t === r) return !1;
+					if (s !== o) return !0;
 					if (this.props.postIds && this.props.postIds.length) {
 						const {
 							layout: e,
 							postComponentForLayout: s
 						} = this.props;
-						return this.props.postIds.some((r, o) => {
+						return this.props.postIds.some((n, o) => {
 							const i = 0 === o;
 							return s({
 								isFirstPost: i,
 								layout: e,
-								post: t[r]
+								post: t[n]
 							}) !== s({
 								isFirstPost: i,
 								layout: e,
-								post: n[r]
+								post: r[n]
 							})
 						})
 					}
@@ -3733,51 +3736,52 @@
 						redditStyle: x,
 						shouldHideFlair: y,
 						isActionBarAnimationEnabled: v,
-						postIds: w
-					} = this.props, E = 0 === t, k = `post-${n}-${e}-${t}-${s?"last-index":""}-${p}-${m}-${f}`;
-					let O;
-					if (void 0 === (O = this.scrollChildCache.get(k))) {
+						triggerNewPostPill: w,
+						postIds: E
+					} = this.props, k = 0 === t, O = `post-${n}-${e}-${t}-${s?"last-index":""}-${p}-${m}-${f}`;
+					let j;
+					if (void 0 === (j = this.scrollChildCache.get(O))) {
 						const {
-							inSubredditOrProfile: j,
-							postsById: S
-						} = this.props, P = S[e], I = P.crosspostRootId && S[P.crosspostRootId] ? S[P.crosspostRootId] : P;
-						P.crosspostRootId && !S[P.crosspostRootId] && _.c.withScope(e => {
-							e.setExtra("errorType", b.q.API), e.setExtra("description", `Post ${P.id} is crosspost of ${P.crosspostRootId}, but ` + `${P.crosspostRootId} details are missing in the state`), _.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: S,
+							postsById: P
+						} = this.props, I = P[e], T = I.crosspostRootId && P[I.crosspostRootId] ? P[I.crosspostRootId] : I;
+						I.crosspostRootId && !P[I.crosspostRootId] && _.c.withScope(e => {
+							e.setExtra("errorType", b.q.API), e.setExtra("description", `Post ${I.id} is crosspost of ${I.crosspostRootId}, but ` + `${I.crosspostRootId} details are missing in the state`), _.c.captureMessage("Crosspost parent details are missing")
 						});
-						const T = this.props.postComponentForLayout({
-								isCrosspost: !!P.crosspostRootId,
-								isFirstPost: E,
+						const D = this.props.postComponentForLayout({
+								isCrosspost: !!I.crosspostRootId,
+								isFirstPost: k,
 								layout: n,
-								post: I
+								post: T
 							}),
-							D = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
-							F = W(e, n, s, m, p, f, this.props, t),
-							R = Y(e, n, this.props, t, h),
-							B = K(e, this.props),
-							A = I.media && I.media.type === L.o.EMBED ? I.media.provider : null;
-						O = {
-							estHeight: Object(N.c)(P, n),
+							F = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
+							R = W(e, n, s, m, p, f, this.props, t),
+							B = Y(e, n, this.props, t, h),
+							A = K(e, this.props),
+							M = T.media && T.media.type === L.o.EMBED ? T.media.provider : null;
+						j = {
+							estHeight: Object(N.c)(I, n),
 							id: e,
-							isFocusable: !(!I.media || !(n === C.g.Large || n === C.g.Classic && Object(L.G)(I.media))) && (L.d.has(I.media.type) && (!A || !L.s.has(A)) && !I.isSpoiler && !I.isNSFW),
-							trackOnEnteredViewport: F,
-							trackOnExitedViewport: R,
+							isFocusable: !(!T.media || !(n === C.g.Large || n === C.g.Classic && Object(L.G)(T.media))) && (L.d.has(T.media.type) && (!M || !L.s.has(M)) && !T.isSpoiler && !T.isNSFW),
+							trackOnEnteredViewport: R,
+							trackOnExitedViewport: B,
 							render: ({
-								className: t,
-								height: n,
-								width: b,
-								remeasure: f,
-								setScrollerChildRef: _,
-								shouldLoadInitially: k
-							}) => u.a.createElement(T, {
-								className: t,
+								className: n,
+								height: b,
+								width: f,
+								remeasure: _,
+								setScrollerChildRef: C,
+								shouldLoadInitially: O
+							}) => u.a.createElement(D, {
+								className: n,
 								currentProfileName: r,
-								key: D,
-								availableWidth: b,
+								key: F,
+								availableWidth: f,
 								eventFactory: g,
-								first: E,
-								forceLoadMedia: k,
+								first: k,
+								forceLoadMedia: O,
 								hostPostId: o,
-								inSubredditOrProfile: j,
+								inSubredditOrProfile: S,
 								isActionBarAnimationEnabled: v,
 								isCommentPermalink: i,
 								isCommentsPage: a,
@@ -3788,18 +3792,21 @@
 								listingName: p,
 								pageLayer: h,
 								last: s,
-								onClickPost: B,
-								onSizeChanged: f,
+								onClickPost: A,
+								onSizeChanged: _,
 								postId: e,
-								postIds: w,
+								postIds: E,
 								redditStyle: x,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: _,
-								shouldHideFlair: y
+								scrollerItemRef: C,
+								shouldHideFlair: y,
+								onceInViewport: () => {
+									null == w || w(t)
+								}
 							})
-						}, this.scrollChildCache.set(k, O)
+						}, this.scrollChildCache.set(O, j)
 					}
-					return O
+					return j
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -5845,12 +5852,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.nd.SmIcon:
+						case b.pd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.nd.SmIconHc:
+						case b.pd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7391,7 +7398,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: n.Ab
 					});
-					return !(!t || Object(n.Bd)(t))
+					return !(!t || Object(n.Dd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -7527,12 +7534,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.id
+						experimentName: n.kd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.nd.SmIcon || t === n.nd.SmIconHc
+					return t === n.pd.SmIcon || t === n.pd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7555,4 +7562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ec865188cb925ecaf8a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.9e5a3599b50a445829e9.js.map

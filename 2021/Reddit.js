@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a9dd6aebf25b6647d4e0.js
-// Retrieved at 4/29/2021, 5:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b076081a999f2383ed90.js
+// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6120,9 +6120,9 @@
 				hr = n("./src/reddit/models/Search/index.ts"),
 				gr = n("./src/reddit/selectors/experiments/trending.ts"),
 				fr = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const vr = e => Object(Ct.G)(e) || Wt.vd.Treatment1 === Object(fr.c)(e, {
+			const vr = e => Object(Ct.G)(e) || Wt.xd.Treatment1 === Object(fr.c)(e, {
 				experimentEligibilitySelector: fr.a,
-				experimentName: Wt.sd
+				experimentName: Wt.ud
 			});
 			var xr = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				Cr = n("./src/reddit/selectors/searchResults.ts"),
@@ -15000,7 +15000,7 @@
 							const r = e.getState();
 							if (o.length) break;
 							if (void 0 === r.listings.postOrder.endMarkers[t]) break;
-							bt.j(r, t);
+							bt.l(r, t);
 							break
 						}
 						case st.b: {
@@ -17597,13 +17597,13 @@
 				x = e => e.accountManagerModalData.redirectUrl,
 				C = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, v, l.a, f.a, u.b, e => Object(b.c)(e, {
 					experimentEligibilitySelector: g,
-					experimentName: d.gd
+					experimentName: d.id
 				}), m.a, p.i, (e, t, n, a, l, u, m, p, b) => {
 					let h = `${r.a.accountManagerOrigin}${e}`;
 					if (h = Object(i.a)(h, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), m && (h = Object(i.a)(h, {
-							[`experiment_${d.gd}`]: m
+							[`experiment_${d.id}`]: m
 						})), e === c.c.GoogleOneTap) return Object(i.a)(h, {
 						[d.T]: u
 					});
@@ -17611,7 +17611,7 @@
 							[d.mb]: a,
 							uiMode: t
 						})), p && (h = Object(i.a)(h, {
-							[`experiment_${d.qc}`]: p
+							[`experiment_${d.sc}`]: p
 						})), l && (h = Object(i.a)(h, {
 							mweb_responsive_settings: "treatment"
 						})), b) {
@@ -17746,7 +17746,7 @@
 					experimentEligibilitySelector: r.J,
 					experimentName: s.Lb
 				});
-				return !(!t || Object(s.Bd)(t))
+				return !(!t || Object(s.Dd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -17805,7 +17805,7 @@
 					experimentName: r.Z,
 					experimentEligibilitySelector: d
 				}), i.a),
-				u = Object(o.a)(l, e => e === r.Hc.Enabled),
+				u = Object(o.a)(l, e => e === r.Jc.Enabled),
 				m = Object(o.a)(e => Object(a.c)(e, {
 					experimentName: r.S,
 					experimentEligibilitySelector: d
@@ -17820,9 +17820,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.G)(e) || !(s.ud.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.G)(e) || !(s.wd.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.rd
+				experimentName: s.td
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -18044,4 +18044,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a9dd6aebf25b6647d4e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b076081a999f2383ed90.js.map

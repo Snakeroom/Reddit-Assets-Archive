@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.02a6129efb057cb037ed.js
-// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.8d6c272e454d03558111.js
+// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -438,8 +438,8 @@
 				k = s("./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less"),
 				E = s.n(k);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function N() {
+				return (N = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -447,27 +447,27 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const I = "view--layout--FUE",
-				N = "LayoutSwitch--picker",
-				L = Object(c.a)(f.a),
-				P = {
+			const j = "view--layout--FUE",
+				I = "LayoutSwitch--picker",
+				P = Object(c.a)(f.a),
+				L = {
 					[b.d.Card]: x.a,
 					[b.d.Classic]: v.a,
 					[b.d.Compact]: S.a
 				},
 				R = {
 					[b.d.Card]: function(e) {
-						return o.a.createElement(y.a, j({}, e, {
+						return o.a.createElement(y.a, N({}, e, {
 							name: "view_card"
 						}))
 					},
 					[b.d.Classic]: function(e) {
-						return o.a.createElement(y.a, j({}, e, {
+						return o.a.createElement(y.a, N({}, e, {
 							name: "view_classic"
 						}))
 					},
 					[b.d.Compact]: function(e) {
-						return o.a.createElement(y.a, j({}, e, {
+						return o.a.createElement(y.a, N({}, e, {
 							name: "view_compact"
 						}))
 					}
@@ -485,7 +485,7 @@
 				},
 				V = Object(h.t)(),
 				D = Object(a.c)({
-					dropdownIsOpen: Object(O.b)(N),
+					dropdownIsOpen: Object(O.b)(I),
 					isInIcons2020: _.a,
 					postLayout: h.O,
 					redditStyle: h.A
@@ -493,7 +493,7 @@
 				A = Object(i.b)(D, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.x)(t, s)),
 					openDropdown: () => e(Object(p.h)({
-						tooltipId: N
+						tooltipId: I
 					}))
 				}));
 			class B extends o.a.Component {
@@ -518,8 +518,8 @@
 							layout: n,
 							onLayoutClick: r,
 							postLayout: i
-						} = this.props, a = n || b.e[i], c = e === a, l = s ? R[e] : P[e], u = T[e];
-						return o.a.createElement(w.b, j({}, t, {
+						} = this.props, a = n || b.e[i], c = e === a, l = s ? R[e] : L[e], u = T[e];
+						return o.a.createElement(w.b, N({}, t, {
 							className: Object(d.a)(E.a.LayoutItem, {
 								[E.a.selected]: c
 							}),
@@ -539,14 +539,14 @@
 						const {
 							dropdownIsOpen: t
 						} = this.props;
-						return o.a.createElement(L, j({}, e, {
+						return o.a.createElement(P, N({}, e, {
 							className: E.a.Dropdown,
 							isOpen: t,
 							renderContentsHidden: !0,
 							rowClassName: E.a.DropdownRow,
 							rowIconClassName: E.a.DropdownRowIcon,
 							rowSelectedClassName: E.a.DropdownRowSelected,
-							tooltipId: N
+							tooltipId: I
 						}), this.renderItem(b.d.Card), this.renderItem(b.d.Classic), this.renderItem(b.d.Compact))
 					}
 				}
@@ -559,12 +559,12 @@
 					} = this.props, r = t || b.e[n];
 					return o.a.createElement("div", {
 						className: Object(d.a)(E.a.Container, e),
-						id: I
+						id: j
 					}, o.a.createElement("div", {
 						className: E.a.DropdownContainer,
 						onClick: s
 					}, this.renderItem(r, {
-						id: N,
+						id: I,
 						showDropdownTriangle: !0,
 						forceIconFill: !1
 					}), o.a.createElement(g.a.Consumer, null, this.renderDropdown)))
@@ -641,12 +641,12 @@
 				O = s("./src/reddit/helpers/trackers/navigation.ts"),
 				k = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				E = s("./src/reddit/selectors/experiments/bestSortPopular.ts"),
-				j = s("./src/reddit/selectors/experiments/econLeaderboards.ts"),
-				I = s("./src/reddit/selectors/tooltip.ts"),
-				N = s("./src/reddit/selectors/user.ts"),
-				L = s("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
-				P = s("./src/reddit/components/ListingSort/index.m.less"),
-				R = s.n(P),
+				N = s("./src/reddit/selectors/experiments/econLeaderboards.ts"),
+				j = s("./src/reddit/selectors/tooltip.ts"),
+				I = s("./src/reddit/selectors/user.ts"),
+				P = s("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
+				L = s("./src/reddit/components/ListingSort/index.m.less"),
+				R = s.n(L),
 				T = s("./src/lib/lessComponent.tsx");
 
 			function V() {
@@ -660,7 +660,7 @@
 			}
 			const D = "ListingSort--SortPicker",
 				A = Object(y.a)(T.a.wrapped(x.a, "Dropdown", R.a)),
-				B = T.a.wrapped(L.a, "ListingSortIcon", R.a),
+				B = T.a.wrapped(P.a, "ListingSortIcon", R.a),
 				M = (T.a.wrapped(k.b, "DropdownTriangle", R.a), T.a.div("Title", R.a)),
 				F = T.a.wrapped(e => r.a.createElement(_.b, V({}, e, {
 					noHover: !0,
@@ -681,10 +681,10 @@
 					pageLayer: e => e
 				}),
 				K = Object(m.c)({
-					isAwardListingExperimentEnabled: j.a,
+					isAwardListingExperimentEnabled: N.a,
 					isBestSortPopularEnabled: E.a,
-					user: N.i,
-					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || D)(e),
+					user: I.i,
+					dropdownIsOpen: (e, t) => Object(j.b)(t.dropdownId || D)(e),
 					isPopularPage: l.C
 				}),
 				W = Object(o.b)(K, (e, {
@@ -934,7 +934,7 @@
 				},
 				oe = Object(l.t)(),
 				ie = Object(m.c)({
-					dropdownIsOpen: Object(I.b)("StateSort--StateSortPicker")
+					dropdownIsOpen: Object(j.b)("StateSort--StateSortPicker")
 				}),
 				ae = Object(o.b)(ie, e => ({
 					onOpenDropdown: () => e(Object(f.h)({
@@ -1099,7 +1099,7 @@
 			const me = "CountrySort--CountrySortPicker",
 				be = Object(l.t)(),
 				he = Object(m.c)({
-					dropdownIsOpen: Object(I.b)(me)
+					dropdownIsOpen: Object(j.b)(me)
 				});
 			var ge = be(Object(o.b)(he, e => ({
 					onCloseDropdown: t => e(Object(f.j)({
@@ -1179,7 +1179,7 @@
 				Ce = T.a.div("ListingSortContainer", ve.a),
 				Oe = Object(l.t)(),
 				ke = Object(m.c)({
-					dropdownIsOpen: Object(I.b)("TimeSort--SortPicker")
+					dropdownIsOpen: Object(j.b)("TimeSort--SortPicker")
 				});
 			var Ee = Oe(Object(o.b)(ke, e => ({
 					onOpenDropdown: () => e(Object(f.h)({
@@ -1209,11 +1209,11 @@
 						e.onChange(t), e.sendEvent(Object(O.c)(t))
 					}
 				})))))))),
-				je = s("./src/reddit/constants/listings.ts"),
-				Ie = s("./src/reddit/contexts/CoreStyleExperiments.ts"),
-				Ne = s("./src/reddit/controls/Button/index.tsx"),
-				Le = s("./src/reddit/icons/fonts/index.tsx"),
-				Pe = s("./src/reddit/icons/fonts/Menu/index.tsx"),
+				Ne = s("./src/reddit/constants/listings.ts"),
+				je = s("./src/reddit/contexts/CoreStyleExperiments.ts"),
+				Ie = s("./src/reddit/controls/Button/index.tsx"),
+				Pe = s("./src/reddit/icons/fonts/index.tsx"),
+				Le = s("./src/reddit/icons/fonts/Menu/index.tsx"),
 				Re = s("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
 				Te = s.n(Re);
 
@@ -1234,7 +1234,7 @@
 					isProfilePage: l.G,
 					pageLayer: e => e
 				}),
-				Fe = Object(m.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.a, N.i, l.C, j.a, (e, t, s, n, r, o) => {
+				Fe = Object(m.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, E.a, I.i, l.C, N.a, (e, t, s, n, r, o) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e
@@ -1261,10 +1261,10 @@
 						const {
 							sort: t
 						} = this.props;
-						return r.a.createElement(Ne.q, {
+						return r.a.createElement(Ie.q, {
 							className: Object(i.a)(Te.a.SortLink, e === t && Te.a.selected),
-							kind: Ne.a.InternalLink,
-							priority: Ne.b.Plain,
+							kind: Ie.a.InternalLink,
+							priority: Ie.b.Plain,
 							Icon: s => r.a.createElement(B, Ve({}, s, {
 								className: Object(i.a)(Te.a.SortIcon, s.className),
 								sort: e,
@@ -1285,7 +1285,7 @@
 						return r.a.createElement(r.a.Fragment, {
 							key: e
 						}, this.renderSortButton(e), i && r.a.createElement(ge, {
-							baseUrl: je.c[je.b.Popular],
+							baseUrl: Ne.c[Ne.b.Popular],
 							buttonClassName: Te.a.DropdownButton,
 							className: Te.a.CountrySort,
 							disabled: t,
@@ -1308,7 +1308,7 @@
 						sortOptions: o,
 						timeSort: a
 					} = this.props, c = !t && De.has(n), d = Ae.has(n), l = o.filter(e => !Ae.has(e)), u = o.filter(e => Ae.has(e) && e !== n);
-					return r.a.createElement(Ie.b.Consumer, null, ({
+					return r.a.createElement(je.b.Consumer, null, ({
 						icons2020: t
 					}) => r.a.createElement(r.a.Fragment, null, r.a.createElement(q, Ve({}, this.props, {
 						buttonClassName: Te.a.DropdownButton,
@@ -1342,9 +1342,9 @@
 					}), r.a.createElement("button", {
 						className: Te.a.SortOverflowButton,
 						id: Be
-					}, t ? r.a.createElement(Le.a, {
+					}, t ? r.a.createElement(Pe.a, {
 						name: "overflow_horizontal"
-					}) : r.a.createElement(Pe.a, null)))))
+					}) : r.a.createElement(Le.a, null)))))
 				}
 			}
 			var Ue = Me(Object(o.b)(Fe)(Object(d.c)(He))),
@@ -1528,11 +1528,11 @@
 				O = s("./src/reddit/constants/postLayout.ts"),
 				k = s("./src/reddit/controls/InternalLink/index.tsx"),
 				E = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				j = s("./src/reddit/helpers/getClickInfo.ts"),
-				I = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				N = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				L = s("./src/reddit/models/Media/index.ts"),
-				P = s("./src/reddit/helpers/brandSafety/index.ts"),
+				N = s("./src/reddit/helpers/getClickInfo.ts"),
+				j = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				I = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				P = s("./src/reddit/models/Media/index.ts"),
+				L = s("./src/reddit/helpers/brandSafety/index.ts"),
 				R = s("./src/lib/LRUCache/index.ts"),
 				T = s("./src/telemetry/index.ts"),
 				V = s("./src/telemetry/models/Timer.ts"),
@@ -1545,7 +1545,7 @@
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5
-			}, K = f.a.div("SeeMore", A.a), W = f.a.wrapped(N.a, "ArrowRight", A.a), q = (e, t, s, n, r, o, i, a) => {
+			}, K = f.a.div("SeeMore", A.a), W = f.a.wrapped(I.a, "ArrowRight", A.a), q = (e, t, s, n, r, o, i, a) => {
 				const c = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
 				let d = F.get(c);
 				return void 0 === d && (d = () => {
@@ -1572,7 +1572,7 @@
 						}
 					} else t.openPost({
 						postOrComment: s,
-						clickInfo: Object(j.a)(e)
+						clickInfo: Object(N.a)(e)
 					})
 				}, U.set(s, n)), n
 			}, Z = (e, t) => {
@@ -1603,7 +1603,7 @@
 						n.forEach(e => r.push(e.id));
 						const o = r.map(e => t[e]).filter(Boolean),
 							i = o.map(e => s[e.belongsTo.id]).filter(e => void 0 !== e);
-						this.props.adBrandSafetyStatusReceived(Object(P.a)(o, i))
+						this.props.adBrandSafetyStatusReceived(Object(L.a)(o, i))
 					}, h.d, {
 						leading: !0
 					})
@@ -1688,29 +1688,32 @@
 				shouldComponentUpdate(e) {
 					const {
 						postsById: t,
-						...s
+						triggerNewPostPill: s,
+						...n
 					} = this.props, {
-						postsById: n,
-						...r
-					} = e, o = Object.keys(s), i = Object.keys(r);
-					if (i.length !== o.length) return !0;
-					if (i.some(e => s[e] !== r[e])) return !0;
-					if (t === n) return !1;
+						postsById: r,
+						triggerNewPostPill: o,
+						...i
+					} = e, a = Object.keys(n), c = Object.keys(i);
+					if (c.length !== a.length) return !0;
+					if (c.some(e => n[e] !== i[e])) return !0;
+					if (t === r) return !1;
+					if (s !== o) return !0;
 					if (this.props.postIds && this.props.postIds.length) {
 						const {
 							layout: e,
 							postComponentForLayout: s
 						} = this.props;
-						return this.props.postIds.some((r, o) => {
+						return this.props.postIds.some((n, o) => {
 							const i = 0 === o;
 							return s({
 								isFirstPost: i,
 								layout: e,
-								post: t[r]
+								post: t[n]
 							}) !== s({
 								isFirstPost: i,
 								layout: e,
-								post: n[r]
+								post: r[n]
 							})
 						})
 					}
@@ -1733,51 +1736,52 @@
 						redditStyle: w,
 						shouldHideFlair: v,
 						isActionBarAnimationEnabled: S,
-						postIds: x
-					} = this.props, _ = 0 === t, C = `post-${n}-${e}-${t}-${s?"last-index":""}-${m}-${p}-${g}`;
-					let k;
-					if (void 0 === (k = this.scrollChildCache.get(C))) {
+						triggerNewPostPill: x,
+						postIds: _
+					} = this.props, C = 0 === t, k = `post-${n}-${e}-${t}-${s?"last-index":""}-${m}-${p}-${g}`;
+					let E;
+					if (void 0 === (E = this.scrollChildCache.get(k))) {
 						const {
-							inSubredditOrProfile: E,
-							postsById: j
-						} = this.props, N = j[e], P = N.crosspostRootId && j[N.crosspostRootId] ? j[N.crosspostRootId] : N;
-						N.crosspostRootId && !j[N.crosspostRootId] && y.c.withScope(e => {
-							e.setExtra("errorType", h.q.API), e.setExtra("description", `Post ${N.id} is crosspost of ${N.crosspostRootId}, but ` + `${N.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: N,
+							postsById: I
+						} = this.props, L = I[e], R = L.crosspostRootId && I[L.crosspostRootId] ? I[L.crosspostRootId] : L;
+						L.crosspostRootId && !I[L.crosspostRootId] && y.c.withScope(e => {
+							e.setExtra("errorType", h.q.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
 						});
-						const R = this.props.postComponentForLayout({
-								isCrosspost: !!N.crosspostRootId,
-								isFirstPost: _,
+						const T = this.props.postComponentForLayout({
+								isCrosspost: !!L.crosspostRootId,
+								isFirstPost: C,
 								layout: n,
-								post: P
+								post: R
 							}),
-							T = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
-							V = q(e, n, s, p, m, g, this.props, t),
-							D = Y(e, n, this.props, t, b),
-							A = z(e, this.props),
-							B = P.media && P.media.type === L.o.EMBED ? P.media.provider : null;
-						k = {
-							estHeight: Object(I.c)(N, n),
+							V = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
+							D = q(e, n, s, p, m, g, this.props, t),
+							A = Y(e, n, this.props, t, b),
+							B = z(e, this.props),
+							M = R.media && R.media.type === P.o.EMBED ? R.media.provider : null;
+						E = {
+							estHeight: Object(j.c)(L, n),
 							id: e,
-							isFocusable: !(!P.media || !(n === O.g.Large || n === O.g.Classic && Object(L.G)(P.media))) && (L.d.has(P.media.type) && (!B || !L.s.has(B)) && !P.isSpoiler && !P.isNSFW),
-							trackOnEnteredViewport: V,
-							trackOnExitedViewport: D,
+							isFocusable: !(!R.media || !(n === O.g.Large || n === O.g.Classic && Object(P.G)(R.media))) && (P.d.has(R.media.type) && (!M || !P.s.has(M)) && !R.isSpoiler && !R.isNSFW),
+							trackOnEnteredViewport: D,
+							trackOnExitedViewport: A,
 							render: ({
-								className: t,
-								height: n,
-								width: h,
-								remeasure: g,
-								setScrollerChildRef: y,
-								shouldLoadInitially: C
-							}) => u.a.createElement(R, {
-								className: t,
+								className: n,
+								height: h,
+								width: g,
+								remeasure: y,
+								setScrollerChildRef: O,
+								shouldLoadInitially: k
+							}) => u.a.createElement(T, {
+								className: n,
 								currentProfileName: r,
-								key: T,
-								availableWidth: h,
+								key: V,
+								availableWidth: g,
 								eventFactory: f,
-								first: _,
-								forceLoadMedia: C,
+								first: C,
+								forceLoadMedia: k,
 								hostPostId: o,
-								inSubredditOrProfile: E,
+								inSubredditOrProfile: N,
 								isActionBarAnimationEnabled: S,
 								isCommentPermalink: i,
 								isCommentsPage: a,
@@ -1788,18 +1792,21 @@
 								listingName: m,
 								pageLayer: b,
 								last: s,
-								onClickPost: A,
-								onSizeChanged: g,
+								onClickPost: B,
+								onSizeChanged: y,
 								postId: e,
-								postIds: x,
+								postIds: _,
 								redditStyle: w,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: y,
-								shouldHideFlair: v
+								scrollerItemRef: O,
+								shouldHideFlair: v,
+								onceInViewport: () => {
+									null == x || x(t)
+								}
 							})
-						}, this.scrollChildCache.set(C, k)
+						}, this.scrollChildCache.set(k, E)
 					}
-					return k
+					return E
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -1942,7 +1949,7 @@
 			})), s.d(t, "d", (function() {
 				return k
 			})), s.d(t, "b", (function() {
-				return j
+				return N
 			}));
 			var n = s("./node_modules/react-redux/es/index.js"),
 				r = s("./node_modules/reselect/es/index.js"),
@@ -2017,7 +2024,7 @@
 					isNpsScrollSurveyEnabled: w.d
 				},
 				E = Object(r.c)(k),
-				j = (e, {
+				N = (e, {
 					isFrontpage: t
 				}) => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
@@ -2043,7 +2050,7 @@
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.h)())
 				}),
-				I = Object(n.b)(E, j, (e, t, s) => ({
+				j = Object(n.b)(E, N, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
@@ -2052,7 +2059,7 @@
 						...e
 					})
 				}));
-			t.a = e => Object(p.c)(O(I(e)))
+			t.a = e => Object(p.c)(O(j(e)))
 		},
 		"./src/reddit/constants/listingSorts.ts": function(e, t, s) {
 			"use strict";
@@ -2553,7 +2560,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: n.Ab
 					});
-					return !(!t || Object(n.Bd)(t))
+					return !(!t || Object(n.Dd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -2668,4 +2675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.02a6129efb057cb037ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.8d6c272e454d03558111.js.map
