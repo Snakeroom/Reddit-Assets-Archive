@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3c29c4ca3c9c763fc2c7.js
-// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.aff4cbabd91e5947303a.js
+// Retrieved at 4/29/2021, 5:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -172,7 +172,7 @@
 			})), r.d(t, "d", (function() {
 				return A
 			})), r.d(t, "e", (function() {
-				return D
+				return R
 			}));
 			var n = r("./node_modules/uuid/index.js"),
 				s = r.n(n),
@@ -414,7 +414,7 @@
 					} = s.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, D = e => async (t, r, {
+				}, R = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = await Object(d.g)(n(), {
@@ -472,17 +472,19 @@
 						id: e,
 						slot: t,
 						properties: r,
-						sizes: n = []
+						sizes: n = [],
+						onNullResponse: s
 					} = this.props;
 					try {
 						return this.frame && l.a(this.frame, {
 							id: e,
 							slot: t,
 							properties: r,
-							sizes: n
+							sizes: n,
+							onNullResponse: s
 						})
-					} catch (s) {
-						_(s)
+					} catch (i) {
+						_(i)
 					}
 				}
 				destroySlot() {
@@ -1420,11 +1422,22 @@
 						})))
 					}
 				});
-			class D extends c.a.Component {
+			class R extends c.a.Component {
 				constructor(e) {
-					super(e), this.incrementRefreshCounter = this.incrementRefreshCounter.bind(this), this.state = {
-						refreshCount: 0
+					super(e), this.handleNullProgrammaticResponse = () => {
+						this.setState({
+							hideProgrammatic: !0
+						})
+					}, this.incrementRefreshCounter = this.incrementRefreshCounter.bind(this), this.state = {
+						refreshCount: 0,
+						hideProgrammatic: !1,
+						showHouseAd: !1
 					}
+				}
+				componentDidUpdate(e) {
+					this.props.forceHouseAd && !e.forceHouseAd && this.setState({
+						showHouseAd: !0
+					})
 				}
 				incrementRefreshCounter() {
 					this.setState(e => ({
@@ -1445,31 +1458,30 @@
 						position: u,
 						redditStyle: m,
 						forcePlaceholder: p,
-						forceHouseAd: b,
-						waitForProgrammatic: f,
-						isSubredditOrCommentsPage: g,
-						removeSidebarSpacer: x
-					} = this.props, v = n.fbt._("advertisement", null, {
+						waitForProgrammatic: b,
+						isSubredditOrCommentsPage: f,
+						removeSidebarSpacer: g
+					} = this.props, x = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
-					}), w = x ? c.a.Fragment : h.a;
-					return p || t || !L(r) && f ? c.a.createElement(w, null, c.a.createElement(S, {
+					}), v = g ? c.a.Fragment : h.a;
+					return p || t || !L(r) && b ? c.a.createElement(v, null, c.a.createElement(S, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: m
 					}, c.a.createElement(P, {
-						"data-before-content": v
-					}))) : b ? c.a.createElement(A, {
+						"data-before-content": x
+					}))) : this.state.showHouseAd && !this.state.hideProgrammatic ? c.a.createElement(A, {
 						className: e,
 						redditStyle: m,
 						placement: d,
-						removeSidebarSpacer: x
-					}) : L(r) ? c.a.createElement(w, null, c.a.createElement(C, {
+						removeSidebarSpacer: g
+					}) : L(r) ? c.a.createElement(v, null, c.a.createElement(C, {
 						post: r,
 						refreshKey: a,
 						listingName: o,
 						placement: d,
 						placementIndex: i
-					})) : c.a.createElement(w, null, c.a.createElement(S, {
+					})) : this.state.hideProgrammatic ? null : c.a.createElement(v, null, c.a.createElement(S, {
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: m
@@ -1481,7 +1493,7 @@
 						placementIndex: i
 					}), c.a.createElement(I, {
 						id: F(d, s, i),
-						isRefreshableAd: T(g),
+						isRefreshableAd: T(f),
 						incrementRefreshCounter: this.incrementRefreshCounter,
 						sizes: l,
 						placement: d,
@@ -1489,11 +1501,12 @@
 						refreshKey: a,
 						refreshCount: this.state.refreshCount,
 						position: u,
-						dataBeforeContent: v
+						dataBeforeContent: x,
+						onNullResponse: this.handleNullProgrammaticResponse
 					})))
 				}
 			}
-			t.a = N(D)
+			t.a = N(R)
 		},
 		"./src/reddit/components/SidebarSpacer/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1694,8 +1707,8 @@
 				B = r("./src/reddit/helpers/trackers/predictions.ts"),
 				M = r("./src/reddit/hooks/usePageLayer.ts"),
 				A = r("./src/reddit/hooks/useTracking.ts"),
-				D = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				R = r("./src/reddit/selectors/subreddit.ts");
+				R = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				D = r("./src/reddit/selectors/subreddit.ts");
 			const {
 				fbt: W
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1708,16 +1721,16 @@
 					a = Object(A.a)(),
 					o = Object(L.L)(r),
 					[d, c] = Object(n.useState)(!1),
-					l = Object(i.e)(t => Object(R.T)(t, {
+					l = Object(i.e)(t => Object(D.T)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(R.N)(t, {
+					u = Object(i.e)(t => Object(D.N)(t, {
 						subredditId: e
 					})),
-					m = Object(i.e)(t => Object(D.c)(t, {
+					m = Object(i.e)(t => Object(R.c)(t, {
 						subredditId: e
 					})),
-					p = Object(i.e)(t => Object(D.b)(t, {
+					p = Object(i.e)(t => Object(R.b)(t, {
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
@@ -2592,8 +2605,8 @@
 				B = m.a.wrapped(o.a, "RawHTMLDisplay", T.a),
 				M = m.a.div("EventContainer", T.a),
 				A = m.a.div("EventTitle", T.a),
-				D = m.a.div("EventDate", T.a),
-				R = m.a.div("EventLocation", T.a),
+				R = m.a.div("EventDate", T.a),
+				D = m.a.div("EventLocation", T.a),
 				W = m.a.div("EventDescription", T.a),
 				H = m.a.wrapped(S.a, "ToggleDescription", T.a);
 			class z extends s.a.Component {
@@ -2627,12 +2640,12 @@
 					key: `${r}-${t.title}`
 				}, s.a.createElement(A, null, t.titleHtml ? s.a.createElement(B, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(D, null, Object(I.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(R, null, Object(I.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
 					const t = new Date(1e3 * e),
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(R, null, t.locationHtml ? s.a.createElement(B, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(D, null, t.locationHtml ? s.a.createElement(B, {
 					html: t.locationHtml
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(z, {
 					text: t.description
@@ -3661,4 +3674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3c29c4ca3c9c763fc2c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.aff4cbabd91e5947303a.js.map

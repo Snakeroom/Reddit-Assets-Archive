@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.24e24ab331ebd21c9f13.js
-// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.35283476b6a634674064.js
+// Retrieved at 4/29/2021, 5:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -609,17 +609,19 @@
 						id: e,
 						slot: t,
 						properties: s,
-						sizes: n = []
+						sizes: n = [],
+						onNullResponse: r
 					} = this.props;
 					try {
 						return this.frame && l.a(this.frame, {
 							id: e,
 							slot: t,
 							properties: s,
-							sizes: n
+							sizes: n,
+							onNullResponse: r
 						})
-					} catch (r) {
-						v(r)
+					} catch (a) {
+						v(a)
 					}
 				}
 				destroySlot() {
@@ -2390,9 +2392,20 @@
 				});
 			class R extends d.a.Component {
 				constructor(e) {
-					super(e), this.incrementRefreshCounter = this.incrementRefreshCounter.bind(this), this.state = {
-						refreshCount: 0
+					super(e), this.handleNullProgrammaticResponse = () => {
+						this.setState({
+							hideProgrammatic: !0
+						})
+					}, this.incrementRefreshCounter = this.incrementRefreshCounter.bind(this), this.state = {
+						refreshCount: 0,
+						hideProgrammatic: !1,
+						showHouseAd: !1
 					}
+				}
+				componentDidUpdate(e) {
+					this.props.forceHouseAd && !e.forceHouseAd && this.setState({
+						showHouseAd: !0
+					})
 				}
 				incrementRefreshCounter() {
 					this.setState(e => ({
@@ -2413,31 +2426,30 @@
 						position: u,
 						redditStyle: m,
 						forcePlaceholder: p,
-						forceHouseAd: b,
-						waitForProgrammatic: g,
-						isSubredditOrCommentsPage: f,
-						removeSidebarSpacer: y
-					} = this.props, x = n.fbt._("advertisement", null, {
+						waitForProgrammatic: b,
+						isSubredditOrCommentsPage: g,
+						removeSidebarSpacer: f
+					} = this.props, y = n.fbt._("advertisement", null, {
 						hk: "35HaIb"
-					}), _ = y ? d.a.Fragment : h.a;
-					return p || t || !L(s) && g ? d.a.createElement(_, null, d.a.createElement(w, {
+					}), x = f ? d.a.Fragment : h.a;
+					return p || t || !L(s) && b ? d.a.createElement(x, null, d.a.createElement(w, {
 						className: e,
 						contentOnly: !0,
 						redditStyle: m
 					}, d.a.createElement(A, {
-						"data-before-content": x
-					}))) : b ? d.a.createElement(B, {
+						"data-before-content": y
+					}))) : this.state.showHouseAd && !this.state.hideProgrammatic ? d.a.createElement(B, {
 						className: e,
 						redditStyle: m,
 						placement: c,
-						removeSidebarSpacer: y
-					}) : L(s) ? d.a.createElement(_, null, d.a.createElement(N, {
+						removeSidebarSpacer: f
+					}) : L(s) ? d.a.createElement(x, null, d.a.createElement(N, {
 						post: s,
 						refreshKey: i,
 						listingName: o,
 						placement: c,
 						placementIndex: a
-					})) : d.a.createElement(_, null, d.a.createElement(w, {
+					})) : this.state.hideProgrammatic ? null : d.a.createElement(x, null, d.a.createElement(w, {
 						className: this.props.className,
 						contentOnly: !0,
 						redditStyle: m
@@ -2449,7 +2461,7 @@
 						placementIndex: a
 					}), d.a.createElement(P, {
 						id: T(c, r, a),
-						isRefreshableAd: I(f),
+						isRefreshableAd: I(g),
 						incrementRefreshCounter: this.incrementRefreshCounter,
 						sizes: l,
 						placement: c,
@@ -2457,7 +2469,8 @@
 						refreshKey: i,
 						refreshCount: this.state.refreshCount,
 						position: u,
-						dataBeforeContent: x
+						dataBeforeContent: y,
+						onNullResponse: this.handleNullProgrammaticResponse
 					})))
 				}
 			}
@@ -5107,4 +5120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.24e24ab331ebd21c9f13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.35283476b6a634674064.js.map

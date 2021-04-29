@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e66ba95e32e666ce0060.js
-// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f115dcdd2ce422026035.js
+// Retrieved at 4/29/2021, 5:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -751,17 +751,17 @@
 		"./src/lib/doubleclickForPublishers/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return c
+				return d
 			})), s.d(t, "a", (function() {
-				return l
-			})), s.d(t, "e", (function() {
 				return u
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "e", (function() {
 				return m
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return p
+			})), s.d(t, "b", (function() {
+				return b
 			})), s.d(t, "f", (function() {
-				return h
+				return f
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/config.ts"),
@@ -769,32 +769,34 @@
 				a = s("./src/lib/isFakeSubreddit/index.ts"),
 				o = s("./src/lib/fastdom/index.ts");
 			const i = new Map,
-				c = (e, t) => {
+				c = new Map,
+				d = (e, t) => {
 					const s = [n.a.dfpSlotPrefix];
 					return t !== r.Gb.PROFILE && (Object(a.a)(e) ? s.push("frontpage") : s.push(`r.${e}`)), t === r.Gb.INDEX ? s.push(r.Gb.LISTING) : t && s.push(t), s.join("/")
 				},
-				d = (e, t) => {
+				l = (e, t) => {
 					e.setTargeting("keywords", t.keywords);
 					for (const s in t.properties) e.setTargeting(s, t.properties[s])
 				},
-				l = (e, t) => {
-					p(e);
+				u = (e, t) => {
+					b(e);
 					const {
 						id: s,
 						slot: n,
-						sizes: r
-					} = t, a = window.googletag = window.googletag || {};
-					return a.cmd = a.cmd || [], new Promise(c => {
-						a.cmd.push(() => {
+						sizes: r,
+						onNullResponse: a
+					} = t, d = window.googletag = window.googletag || {};
+					return d.cmd = d.cmd || [], new Promise(u => {
+						d.cmd.push(() => {
 							o.a.write(() => {
-								const o = a.defineSlot(n, r, s);
-								if (!o) return c();
-								o.addService(a.pubads()), i.set(e, o), o.setCollapseEmptyDiv(!0), d(o, t), a.display(s), c()
+								const o = d.defineSlot(n, r, s);
+								if (!o) return u();
+								o.addService(d.pubads()), i.set(e, o), a && c.set(s, a), o.setCollapseEmptyDiv(!0), l(o, t), d.display(s), u()
 							})
 						})
 					})
 				},
-				u = (e, t) => {
+				m = (e, t) => {
 					const s = i.get(e);
 					if (!s) return;
 					const n = window.googletag = window.googletag || {};
@@ -802,10 +804,10 @@
 						Object.keys(t).forEach(e => s.setTargeting(e, t[e]))
 					})
 				},
-				m = (e, t) => {
+				p = (e, t) => {
 					const s = i.get(e);
 					if (!s) return;
-					d(s, t);
+					l(s, t);
 					const n = window.googletag = window.googletag || {};
 					n.cmd = n.cmd || [], window.aax && window.aax.cmd.push(() => {
 						window.aax.getAbpStatus && window.aax.getAbpStatus() && n.cmd.push(() => {
@@ -824,7 +826,7 @@
 						})
 					})
 				},
-				p = e => {
+				b = e => {
 					const t = i.get(e);
 					if (!t) return;
 					const s = window.googletag = window.googletag || {};
@@ -834,7 +836,7 @@
 						})
 					})
 				},
-				b = e => {
+				h = e => {
 					const t = () => {
 						const t = document.createElement("script");
 						t.src = e, t.async = !0;
@@ -856,17 +858,23 @@
 						s.href = e, s.rel = "preload", s.as = "script", s.onload = t, document.head.insertBefore(s, document.head.firstChild)
 					} else t()
 				},
-				h = e => {
+				f = e => {
 					const t = window.googletag = window.googletag || {};
-					t.cmd = t.cmd || [], b("//www.googletagservices.com/tag/js/gpt.js"), t.cmd.push(() => {
-						t.pubads().addEventListener("slotRequested", e.onRequest), t.pubads().addEventListener("impressionViewable", t => e.onAdView(t, !1)), t.pubads().disableInitialLoad(), t.enableServices()
+					t.cmd = t.cmd || [], h("//www.googletagservices.com/tag/js/gpt.js"), t.cmd.push(() => {
+						t.pubads().addEventListener("slotRequested", e.onRequest), t.pubads().addEventListener("slotResponseReceived", e => {
+							const t = e.slot.getSlotElementId();
+							if (!e.slot.getResponseInformation()) {
+								const e = c.get(t);
+								e && (e(), c.delete(t))
+							}
+						}), t.pubads().addEventListener("impressionViewable", t => e.onAdView(t, !1)), t.pubads().disableInitialLoad(), t.enableServices()
 					}), window.apstag || (window.apstag = {
 						_Q: []
 					}, window.apstag.init = (...e) => {
 						window.apstag._Q.push(["i", e])
 					}, window.apstag.fetchBids = (...e) => {
 						window.apstag._Q.push(["f", e])
-					}, b("//c.amazon-adsystem.com/aax2/apstag.js"), window.apstag.init({
+					}, h("//c.amazon-adsystem.com/aax2/apstag.js"), window.apstag.init({
 						pubID: "3379",
 						adServer: "googletag",
 						bidTimeout: 2e3,
@@ -881,7 +889,7 @@
 						deliverExchangeDemand: () => {},
 						cmd: [() => window.aax.addEventListener("impressionViewable", t => e.onAdView(t, !0))],
 						execute: [() => window.aax.limitDataProcessing(e.limitDataProcessing)]
-					}, b(`//c.aaxads.com/aax.js?pub=${window.aax.pubId}&hst=${window.aax.hst}&ver=${window.aax.ver}`))
+					}, h(`//c.aaxads.com/aax.js?pub=${window.aax.pubId}&hst=${window.aax.hst}&ver=${window.aax.ver}`))
 				}
 		},
 		"./src/lib/forceHttps/index.ts": function(e, t, s) {
@@ -7772,4 +7780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e66ba95e32e666ce0060.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f115dcdd2ce422026035.js.map
