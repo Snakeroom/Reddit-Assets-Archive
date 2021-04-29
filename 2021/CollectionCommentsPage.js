@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.34498948d4a832215e76.js
-// Retrieved at 4/28/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.66bf859ec20e686ee723.js
+// Retrieved at 4/29/2021, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1448,7 +1448,7 @@
 							postImageOCRAltText: !1,
 							postQASchema: !1
 						};
-					return Object(ie.b)(t) ? d.listingBelow = a || o : d.postFeed = (a || o) && (!Object(F.h)(i) && !Object(oe.d)(t, {
+					return Object(ie.b)(t) && !Object(ne.a)(t) ? d.listingBelow = a || o : d.postFeed = (a || o) && (!Object(F.h)(i) && !Object(oe.d)(t, {
 						postId: s
 					}) && !!i || !Object(V.h)(t) && Object(R.e)(t)), e && (d.postImageOCRAltText = Object(R.c)(n) && !!Object(R.b)(t, n, !1), d.postQASchema = Object(R.f)(t, n)), d
 				},
@@ -1538,7 +1538,7 @@
 							}
 						}
 						const d = be(!1, s(), m),
-							c = Object(ne.a)(s()),
+							c = Object(ne.b)(s()),
 							l = w;
 						if (ge(l, d)) {
 							Object(Y.d)(Y.a.LinkedPosts);
@@ -7497,8 +7497,9 @@
 					includeListingBelow: I.b,
 					isChatPost: O.d,
 					isGQLLoggedIn: S.I,
+					isListingBelowAdsControl: P.a,
 					isLoggedIn: S.J,
-					listingBelowVariant: P.a,
+					listingBelowVariant: P.b,
 					shouldShowSubredditUpsell: W
 				}),
 				H = Object(d.b)(z, e => ({
@@ -7516,10 +7517,11 @@
 				listingKey() {
 					const {
 						includeListingBelow: e,
-						post: t,
-						subredditOrProfile: s
+						isListingBelowAdsControl: t,
+						post: s,
+						subredditOrProfile: o
 					} = this.props;
-					return e && t && t.id ? Object(p.a)(t.id) : Object(u.a)(s.name, l.R.TOP, {
+					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.R.TOP, {
 						t: l.Yb.WEEK
 					})
 				}
@@ -7550,22 +7552,23 @@
 						contentContainerRef: e,
 						isChatPost: t,
 						isGQLLoggedIn: s,
-						isLoggedIn: o,
-						listingBelowVariant: n,
-						post: i,
-						shouldShowSubredditUpsell: d,
-						subredditOrProfile: c
-					} = this.props, l = i && Object(C.a)(i), m = !!n && !Object(x.Dd)(n), p = i && i.id;
-					return s || o || t || l || !d ? null : a.a.createElement("div", {
+						isListingBelowAdsControl: o,
+						isLoggedIn: n,
+						listingBelowVariant: i,
+						post: d,
+						shouldShowSubredditUpsell: c,
+						subredditOrProfile: l
+					} = this.props, m = d && Object(C.a)(d), p = !!i && !Object(x.Dd)(i) && !o, u = d && d.id;
+					return s || n || t || m || !c ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
 						className: V.a.postList,
 						disablePlaceholder: !0,
 						forcedLayout: y.g.Large,
 						getScrollContainer: this.scrollContainer,
-						hostPostId: p,
+						hostPostId: u,
 						isTruncated: !0,
-						listingBelowVariant: n,
+						listingBelowVariant: i,
 						listingKey: this.listingKey(),
 						listingName: v.c.PostDetail,
 						listingViewed: this.onViewed,
@@ -7579,8 +7582,8 @@
 					}), a.a.createElement(D, {
 						className: V.a.footer,
 						onClick: this.onFooterClick,
-						shouldDisplaySeeMore: m,
-						subredditOrProfile: c
+						shouldDisplaySeeMore: p,
+						subredditOrProfile: l
 					}))
 				}
 			}
@@ -9930,4 +9933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.34498948d4a832215e76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.66bf859ec20e686ee723.js.map
