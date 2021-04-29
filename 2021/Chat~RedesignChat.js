@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e671bf17067974785124.js
-// Retrieved at 4/29/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.65f1a620b73816352bfb.js
+// Retrieved at 4/29/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -12417,10 +12417,8 @@
 								}
 							};
 						case re.b: {
-							if (Object(se.b)()) return e;
-							const a = null === (n = null == t ? void 0 : t.payload) || void 0 === n ? void 0 : n.queryParams;
-							if (!a) return e;
-							const s = Object(ce.e)(e.models, a),
+							const a = Object(se.b)() ? null : null === (n = null == t ? void 0 : t.payload) || void 0 === n ? void 0 : n.queryParams,
+								s = Object(ce.e)(e.models, a),
 								r = Object(oe.b)(t.payload.data.experimentVariants);
 							return {
 								...e,
@@ -15411,4 +15409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e671bf17067974785124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.65f1a620b73816352bfb.js.map
