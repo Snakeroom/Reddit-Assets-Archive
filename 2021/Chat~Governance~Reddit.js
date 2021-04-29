@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45a051698d2da2910b5a.js
-// Retrieved at 4/29/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c62037e2b71737747c6b.js
+// Retrieved at 4/29/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("132683"),
+				buildNumber: r("132694"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1619715106"),
+				})("1619718506"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4209,14 +4209,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbe9a9fbb72a177a3f643f0a47f4486f40aee87fb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc9db8e0796e8c90ebab9070928351792fea6ad8a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "be9a9fbb72a177a3f643f0a47f4486f40aee87fb-production",
+						release: "c9db8e0796e8c90ebab9070928351792fea6ad8a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4710,7 +4710,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "be9a9fbb72a177a3f643f0a47f4486f40aee87fb-production",
+						releaseClient: "c9db8e0796e8c90ebab9070928351792fea6ad8a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -44665,10 +44665,10 @@
 				e.writeStructBegin("DOMTimers"), null !== this.request && void 0 !== this.request && (e.writeFieldBegin("request", r.Type.I64, 1), e.writeI64(this.request), e.writeFieldEnd()), null !== this.loading && void 0 !== this.loading && (e.writeFieldBegin("loading", r.Type.I64, 2), e.writeI64(this.loading), e.writeFieldEnd()), null !== this.loaded && void 0 !== this.loaded && (e.writeFieldBegin("loaded", r.Type.I64, 3), e.writeI64(this.loaded), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			};
 			var o = e.exports.Timer = function(e) {
-				this.type = null, this.millis = null, this.time_to_first_byte = null, this.first_contentful_paint = null, this.first_meaningful_paint = null, this.first_input_delay = null, e && (void 0 !== e.type && null !== e.type && (this.type = e.type), void 0 !== e.millis && null !== e.millis && (this.millis = e.millis), void 0 !== e.time_to_first_byte && null !== e.time_to_first_byte && (this.time_to_first_byte = e.time_to_first_byte), void 0 !== e.first_contentful_paint && null !== e.first_contentful_paint && (this.first_contentful_paint = e.first_contentful_paint), void 0 !== e.first_meaningful_paint && null !== e.first_meaningful_paint && (this.first_meaningful_paint = e.first_meaningful_paint), void 0 !== e.first_input_delay && null !== e.first_input_delay && (this.first_input_delay = e.first_input_delay))
+				this.type = null, this.millis = null, this.time_to_first_byte = null, this.first_contentful_paint = null, this.first_meaningful_paint = null, this.first_input_delay = null, this.referrer = null, e && (void 0 !== e.type && null !== e.type && (this.type = e.type), void 0 !== e.millis && null !== e.millis && (this.millis = e.millis), void 0 !== e.time_to_first_byte && null !== e.time_to_first_byte && (this.time_to_first_byte = e.time_to_first_byte), void 0 !== e.first_contentful_paint && null !== e.first_contentful_paint && (this.first_contentful_paint = e.first_contentful_paint), void 0 !== e.first_meaningful_paint && null !== e.first_meaningful_paint && (this.first_meaningful_paint = e.first_meaningful_paint), void 0 !== e.first_input_delay && null !== e.first_input_delay && (this.first_input_delay = e.first_input_delay), void 0 !== e.referrer && null !== e.referrer && (this.referrer = e.referrer))
 			};
 			o.prototype = {}, o.prototype.write = function(e) {
-				e.writeStructBegin("Timer"), null !== this.type && void 0 !== this.type && (e.writeFieldBegin("type", r.Type.STRING, 1), e.writeString(this.type), e.writeFieldEnd()), null !== this.millis && void 0 !== this.millis && (e.writeFieldBegin("millis", r.Type.I64, 2), e.writeI64(this.millis), e.writeFieldEnd()), null !== this.time_to_first_byte && void 0 !== this.time_to_first_byte && (e.writeFieldBegin("time_to_first_byte", r.Type.I64, 3), e.writeI64(this.time_to_first_byte), e.writeFieldEnd()), null !== this.first_contentful_paint && void 0 !== this.first_contentful_paint && (e.writeFieldBegin("first_contentful_paint", r.Type.I64, 4), e.writeI64(this.first_contentful_paint), e.writeFieldEnd()), null !== this.first_meaningful_paint && void 0 !== this.first_meaningful_paint && (e.writeFieldBegin("first_meaningful_paint", r.Type.I64, 5), e.writeI64(this.first_meaningful_paint), e.writeFieldEnd()), null !== this.first_input_delay && void 0 !== this.first_input_delay && (e.writeFieldBegin("first_input_delay", r.Type.I64, 6), e.writeI64(this.first_input_delay), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				e.writeStructBegin("Timer"), null !== this.type && void 0 !== this.type && (e.writeFieldBegin("type", r.Type.STRING, 1), e.writeString(this.type), e.writeFieldEnd()), null !== this.millis && void 0 !== this.millis && (e.writeFieldBegin("millis", r.Type.I64, 2), e.writeI64(this.millis), e.writeFieldEnd()), null !== this.time_to_first_byte && void 0 !== this.time_to_first_byte && (e.writeFieldBegin("time_to_first_byte", r.Type.I64, 3), e.writeI64(this.time_to_first_byte), e.writeFieldEnd()), null !== this.first_contentful_paint && void 0 !== this.first_contentful_paint && (e.writeFieldBegin("first_contentful_paint", r.Type.I64, 4), e.writeI64(this.first_contentful_paint), e.writeFieldEnd()), null !== this.first_meaningful_paint && void 0 !== this.first_meaningful_paint && (e.writeFieldBegin("first_meaningful_paint", r.Type.I64, 5), e.writeI64(this.first_meaningful_paint), e.writeFieldEnd()), null !== this.first_input_delay && void 0 !== this.first_input_delay && (e.writeFieldBegin("first_input_delay", r.Type.I64, 6), e.writeI64(this.first_input_delay), e.writeFieldEnd()), null !== this.referrer && void 0 !== this.referrer && (e.writeFieldBegin("referrer", r.Type.STRING, 7), e.writeString(this.referrer), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			}
 		},
 		"./src/telemetry/eventSchemas/tooltip_types.js": function(e, t, i) {
@@ -46361,4 +46361,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45a051698d2da2910b5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c62037e2b71737747c6b.js.map
