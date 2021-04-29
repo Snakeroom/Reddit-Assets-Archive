@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.aada63a4383349454936.js
-// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.76ae9ae274cf7a97e94b.js
+// Retrieved at 4/29/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -2090,7 +2090,7 @@
 						omitResponsivePresenceWrapper: !0
 					}), Te, w.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(ye, null), n.a.createElement(N.a, {
 						adHeaderVariant: G
-					}))) : n.a.createElement(n.a.Fragment, null, w.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(N.a, null), n.a.createElement(ye, null)), Te), n.a.createElement(P.e, null), B && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
+					}))) : n.a.createElement(n.a.Fragment, null, w.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(N.a, null), n.a.createElement(ye, null)), Te), n.a.createElement(P.e, null), B && !W && n.a.createElement(n.a.Fragment, null, n.a.createElement("a", {
 						className: re.a.externalLink,
 						"data-click-id": "timestamp",
 						href: w.permalink,
@@ -3126,4 +3126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.aada63a4383349454936.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.76ae9ae274cf7a97e94b.js.map
