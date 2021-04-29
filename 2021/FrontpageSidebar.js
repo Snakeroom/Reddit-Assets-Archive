@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.af847a45607dddf7a120.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.b750190adee8de800ab4.js
+// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -174,7 +174,7 @@
 					to: e,
 					title: t
 				}, t)),
-				P = ({
+				A = ({
 					title: e,
 					isOpened: t,
 					isExpanded: n,
@@ -207,7 +207,7 @@
 				}) : s.fbt._("See more", null, {
 					hk: "439kAh"
 				})))));
-			class A extends c.a.Component {
+			class P extends c.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -235,7 +235,7 @@
 						key: t,
 						to: e,
 						title: t
-					}), this.renderSection = (e, t) => c.a.createElement(P, {
+					}), this.renderSection = (e, t) => c.a.createElement(A, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -261,7 +261,7 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var B = A,
+			var B = P,
 				L = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				D = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				R = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -413,7 +413,7 @@
 				we = n("./src/reddit/controls/Chip/index.tsx"),
 				Ie = n("./src/reddit/helpers/trackers/widgets.ts"),
 				Fe = n("./src/reddit/hooks/useTracking.ts");
-			const Pe = [{
+			const Ae = [{
 				getName: () => s.fbt._("Fashion", null, {
 					hk: "4tXmOZ"
 				}),
@@ -624,8 +624,8 @@
 				}),
 				url: "cryptocurrency"
 			}];
-			var Ae = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
-				Be = n.n(Ae);
+			var Pe = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
+				Be = n.n(Pe);
 			const Le = () => {
 					const e = `${Te.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = s.fbt._("Find Your Next Community!", null, {
@@ -654,7 +654,7 @@
 			var We = c.a.memo(e => {
 					const t = Object(Fe.a)();
 					Object(d.useEffect)(() => t(Object(Ie.d)()), []);
-					const n = Pe.map(e => ({
+					const n = Ae.map(e => ({
 						value: e,
 						sort: Object(je.d)() ? .5 : Math.random()
 					})).sort((e, t) => e.sort - t.sort).map(e => e.value).slice(0, 10);
@@ -733,7 +733,7 @@
 							return Object(He.c)(e, {
 								experimentEligibilitySelector: $e.J,
 								experimentName: Ge.db
-							}) === Ge.Pb
+							}) === Ge.Nb
 						}(e))
 					}
 				}),
@@ -2091,4 +2091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.af847a45607dddf7a120.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.b750190adee8de800ab4.js.map

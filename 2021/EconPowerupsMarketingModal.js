@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f98baacbeefd36475e70.js
-// Retrieved at 4/28/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.b99909a17fc4b7ae1229.js
+// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -275,7 +275,7 @@
 				P = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				j = s("./src/reddit/constants/experiments.ts"),
 				O = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const v = Object(O.a)(j.Db);
+			const v = Object(O.a)(j.Bb);
 			var C = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
 				I = s.n(C);
 			const {
@@ -329,7 +329,7 @@
 				fbt: A
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function D({
+			function U({
 				benefits: e,
 				subreddit: t
 			}) {
@@ -397,8 +397,8 @@
 				})))))
 			}
 
-			function U() {
-				return (U = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -523,12 +523,12 @@
 					priority: b.b.Primary
 				}, F._("Powerup This Community", null, {
 					hk: "3gjy90"
-				}))))) : n.a.createElement(D, {
+				}))))) : n.a.createElement(U, {
 					benefits: j,
 					subreddit: c
 				})
 			}))));
-			t.default = e => n.a.createElement(K, U({}, e, {
+			t.default = e => n.a.createElement(K, D({}, e, {
 				className: Object(l.a)(e.className, T.a.modal)
 			}))
 		},
@@ -610,8 +610,8 @@
 			}));
 			var a = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(n.a)(a.Eb)
+			const r = Object(n.a)(a.Cb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f98baacbeefd36475e70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.b99909a17fc4b7ae1229.js.map

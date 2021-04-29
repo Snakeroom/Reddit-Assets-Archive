@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.54f741079332500a6abc.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.86c346f263681b7d7b39.js
+// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -69,8 +69,8 @@
 			const y = Object(d.c)({
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
-						experimentName: w.yb
-					}) === w.Rb.Enabled,
+						experimentName: w.wb
+					}) === w.Pb.Enabled,
 					currentUser: g.i,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -96,7 +96,7 @@
 						postOrCommentId: s.id
 					})
 				}),
-				R = Object(a.b)(y, (e, {
+				A = Object(a.b)(y, (e, {
 					award: t,
 					tooltipId: s
 				}) => ({
@@ -106,7 +106,7 @@
 					onClickPremium: () => e(Object(n.b)("/premium")),
 					reportAward: () => e(Object(p.a)(t))
 				}));
-			class A extends i.a.Component {
+			class R extends i.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						isReported: !1
@@ -230,7 +230,7 @@
 					})), this.renderCta()))
 				}
 			}
-			t.default = R(A)
+			t.default = A(R)
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -469,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.54f741079332500a6abc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.86c346f263681b7d7b39.js.map

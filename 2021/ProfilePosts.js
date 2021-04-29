@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.509d9a117163173ad185.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.ec865188cb925ecaf8a3.js
+// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5845,12 +5845,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.pd.SmIcon:
+						case b.nd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.pd.SmIconHc:
+						case b.nd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7389,15 +7389,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Cb
+						experimentName: n.Ab
 					});
-					return !(!t || Object(n.Dd)(t))
+					return !(!t || Object(n.Bd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Cb
-					}) === n.Sb.ListingEnabled
+						experimentName: n.Ab
+					}) === n.Qb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -7527,12 +7527,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.kd
+						experimentName: n.id
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.pd.SmIcon || t === n.pd.SmIconHc
+					return t === n.nd.SmIcon || t === n.nd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7555,4 +7555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.509d9a117163173ad185.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ec865188cb925ecaf8a3.js.map

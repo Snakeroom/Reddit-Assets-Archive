@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.d68b4829e9e10359282a.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e66ba95e32e666ce0060.js
+// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7649,9 +7649,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => n.mc.Enabled === Object(r.c)(e, {
+			const a = e => n.kc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.hc
+				experimentName: n.fc
 			})
 		},
 		"./src/reddit/selectors/experiments/econ/powerupsMarketingRedesign.ts": function(e, t, s) {
@@ -7661,7 +7661,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(r.a)(n.Eb)
+			const a = Object(r.a)(n.Cb)
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
 			"use strict";
@@ -7673,8 +7673,8 @@
 				a = s("./src/reddit/selectors/meta.ts");
 			const o = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
-				experimentName: n.Xc
-			}) === n.gd.Enabled
+				experimentName: n.Vc
+			}) === n.ed.Enabled
 		},
 		"./src/reddit/selectors/experiments/trending.ts": function(e, t, s) {
 			"use strict";
@@ -7684,9 +7684,9 @@
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = s("./src/reddit/selectors/user.ts");
-			const o = e => Object(a.G)(e) || !(n.wd.Holdout === Object(r.c)(e, {
+			const o = e => Object(a.G)(e) || !(n.ud.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.td
+				experimentName: n.rd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, s) {
@@ -7701,17 +7701,17 @@
 				r = s("./src/reddit/featureFlags/utils.ts"),
 				a = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = ["AU", "CA", "GB", "US"],
-				i = new Set([n.fc.AllItems, n.fc.TrendingSearch]),
+				i = new Set([n.dc.AllItems, n.dc.TrendingSearch]),
 				c = e => {
 					const t = Object(a.c)(e, {
 						experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-						experimentName: n.gc
+						experimentName: n.ec
 					});
 					return i.has(t)
 				},
-				d = e => n.fc.AllItems === Object(a.c)(e, {
+				d = e => n.dc.AllItems === Object(a.c)(e, {
 					experimentEligibilitySelector: Object(r.d)(Object(r.b)(...o)),
-					experimentName: n.gc
+					experimentName: n.ec
 				})
 		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, s) {
@@ -7772,4 +7772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d68b4829e9e10359282a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e66ba95e32e666ce0060.js.map

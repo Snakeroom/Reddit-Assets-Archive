@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.129c77d5cb20dae9ce29.js
-// Retrieved at 4/28/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3c29c4ca3c9c763fc2c7.js
+// Retrieved at 4/29/2021, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1136,7 +1136,7 @@
 				f = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				g = r("./src/reddit/constants/experiments.ts"),
 				x = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const v = Object(x.a)(g.Fb);
+			const v = Object(x.a)(g.Db);
 			var w = r("./src/reddit/selectors/gold/powerups.ts"),
 				y = r("./src/reddit/selectors/subreddit.ts"),
 				_ = r("./src/reddit/selectors/user.ts"),
@@ -3605,7 +3605,7 @@
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.N
-				}) === n.gb.Treatment
+				}) === n.fb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -3661,4 +3661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.129c77d5cb20dae9ce29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3c29c4ca3c9c763fc2c7.js.map
