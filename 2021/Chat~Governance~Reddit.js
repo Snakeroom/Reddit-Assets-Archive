@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3e92fa69e0c101d583ca.js
-// Retrieved at 4/29/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45a051698d2da2910b5a.js
+// Retrieved at 4/29/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -217,7 +217,7 @@
 					let o;
 					o = i ? s && r ? s : t.meta.isRedesign ? p : i ? _ : l.a.FULL : l.a.FULL, e.dispatch(Object(a.sizeChanged)(o)), f(o)
 				}),
-				g = e => (h = Object(s.b)(o.o.CHAT, "container_size", e || "unknown"), Object(s.a)(h)),
+				g = e => (h = Object(s.c)(o.o.CHAT, "container_size", e || "unknown"), Object(s.b)(h)),
 				y = e => {
 					const t = g(e);
 					return !(!t || t === l.a.HIDDEN)
@@ -231,7 +231,7 @@
 						}
 					} = t,
 					n = i && i.id || "unknown";
-				return h = Object(s.b)(o.o.CHAT, "container_size", n), window.addEventListener("storage", e => {
+				return h = Object(s.c)(o.o.CHAT, "container_size", n), window.addEventListener("storage", e => {
 					switch (e.key) {
 						case h:
 							0
@@ -242,7 +242,7 @@
 						case a.SIZE_CHANGED: {
 							const e = m(t.payload);
 							(e => {
-								Object(s.c)(h, e, o.gc)
+								Object(s.d)(h, e, o.gc)
 							})(e), f(e);
 							break
 						}
@@ -268,8 +268,8 @@
 			const _ = r()(e => {
 				const t = e.getState(),
 					i = t.user.account && t.user.account.id;
-				u = Object(d.b)(a.o.CHAT, "draft_messages", i || "unknown");
-				const n = Object(d.a)(u);
+				u = Object(d.c)(a.o.CHAT, "draft_messages", i || "unknown");
+				const n = Object(d.b)(u);
 				(null == n ? void 0 : n.length) && e.dispatch(Object(l.d)(n))
 			});
 			t.a = e => {
@@ -281,25 +281,25 @@
 						}
 					} = t,
 					n = i && i.id || "unknown";
-				return u = Object(d.b)(a.o.CHAT, "draft_messages", n), e => t => {
+				return u = Object(d.c)(a.o.CHAT, "draft_messages", n), e => t => {
 					const i = e(t);
 					switch (t.type) {
 						case l.b: {
 							const {
 								channelId: e,
 								messageValue: i
-							} = t.payload, n = Object(d.a)(u) || [], r = o()([...n, t.payload], "channelId").map(t => t.channelId === e ? {
+							} = t.payload, n = Object(d.b)(u) || [], r = o()([...n, t.payload], "channelId").map(t => t.channelId === e ? {
 								...t,
 								messageValue: i
 							} : t);
-							Object(d.c)(u, r, a.kb);
+							Object(d.d)(u, r, a.kb);
 							break
 						}
 						case l.c: {
-							const e = Object(d.a)(u) || [];
+							const e = Object(d.b)(u) || [];
 							if (e.length) {
 								const i = e.filter(e => e.channelId !== t.payload);
-								Object(d.c)(u, i, a.kb)
+								Object(d.d)(u, i, a.kb)
 							}
 							break
 						}
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("132656"),
+				buildNumber: r("132683"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1619710432"),
+				})("1619715106"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -2817,20 +2817,23 @@
 		},
 		"./src/lib/cache/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "a", (function() {
 				return o
-			})), i.d(t, "a", (function() {
-				return d
 			})), i.d(t, "c", (function() {
+				return d
+			})), i.d(t, "b", (function() {
 				return a
+			})), i.d(t, "d", (function() {
+				return l
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/redditId/index.ts"),
 				s = i("./src/lib/cache/localStorage/index.ts");
-			n.L, n.hc;
-			const o = (e, t, i) => e + "." + t + (i ? "{" + Object(r.b)(i, n.Cb.Account) + "}" : ""),
-				d = s.a,
-				a = s.b
+			n.L;
+			const o = n.hc,
+				d = (e, t, i) => e + "." + t + (i ? "{" + Object(r.b)(i, n.Cb.Account) + "}" : ""),
+				a = s.a,
+				l = s.b
 		},
 		"./src/lib/cache/localStorage/index.ts": function(e, t, i) {
 			"use strict";
@@ -4206,14 +4209,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c53525da187797d660f4d50a4581bec94c1e2fdb4-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cbe9a9fbb72a177a3f643f0a47f4486f40aee87fb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "53525da187797d660f4d50a4581bec94c1e2fdb4-production",
+						release: "be9a9fbb72a177a3f643f0a47f4486f40aee87fb-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4707,7 +4710,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "53525da187797d660f4d50a4581bec94c1e2fdb4-production",
+						releaseClient: "be9a9fbb72a177a3f643f0a47f4486f40aee87fb-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7751,13 +7754,37 @@
 		"./src/reddit/actions/emailVerificationTooltip.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return r
-			})), i.d(t, "b", (function() {
 				return s
+			})), i.d(t, "b", (function() {
+				return d
 			}));
-			var n = i("./src/lib/makeActionCreator/index.ts");
-			const r = "EMAIL_VERIFICATION_TOOLTIP_TOGGLED",
-				s = Object(n.a)(r)
+			var n = i("./src/lib/cache/index.ts"),
+				r = i("./src/reddit/selectors/user.ts");
+			const s = "EMAIL_VERIFICATION_TOOLTIP_TOGGLED",
+				o = () => Object(n.b)("email.verification_prompt") || {},
+				d = () => async (e, t) => {
+					const i = t(),
+						{
+							user: d,
+							isEmailVerificationTooltipShowing: a
+						} = i;
+					if (!d || !d.account) return;
+					const l = Object(r.g)(i),
+						c = a,
+						u = (e => {
+							return o()[e] || 0
+						})(l || "");
+					if (!c) {
+						if ((e => {
+								const t = o();
+								t[e] = (t[e] || 0) + 1, Object(n.d)("email.verification_prompt", t, n.a)
+							})(l || ""), u > 6) return;
+						if (u % 3 != 0) return
+					}
+					e({
+						type: s
+					})
+				}
 		},
 		"./src/reddit/actions/externalAccount.ts": function(e, t, i) {
 			"use strict";
@@ -46334,4 +46361,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3e92fa69e0c101d583ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.45a051698d2da2910b5a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e49f90000458920a7afb.js
-// Retrieved at 4/28/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e671bf17067974785124.js
+// Retrieved at 4/29/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1607,8 +1607,8 @@
 						} = c.user;
 					if (l && o) {
 						let n;
-						const c = Object(a.b)(s.o.CHAT, "session", o.id),
-							d = Object(a.a)(c);
+						const c = Object(a.c)(s.o.CHAT, "session", o.id),
+							d = Object(a.b)(c);
 						if (d && d.token) n = d;
 						else {
 							const e = await Object(i.g)(r(), l);
@@ -1620,7 +1620,7 @@
 								n = {
 									expires: t,
 									token: s
-								}, Object(a.c)(c, n, new Date(t))
+								}, Object(a.d)(c, n, new Date(t))
 							}
 						}
 						if (n) return void t(g({
@@ -1634,8 +1634,8 @@
 				}) => {
 					const r = t(),
 						c = r.contacts.models,
-						o = Object(a.b)(s.o.CHAT, "contacts", r.user.account.id),
-						d = Object(a.a)(o);
+						o = Object(a.c)(s.o.CHAT, "contacts", r.user.account.id),
+						d = Object(a.b)(o);
 					if (d && d.version === l.a) return void e(_(d.data));
 					const u = t().user.session;
 					if (!u) return;
@@ -1645,7 +1645,7 @@
 							version: l.a,
 							data: m
 						};
-					Object(a.c)(o, p, v), e(_(m))
+					Object(a.d)(o, p, v), e(_(m))
 				}, y = "SENDBIRD__IDENTIFY_CONTACT_BEGIN", I = "SENDBIRD__IDENTIFY_CONTACT_END", x = Object(r.a)(y), w = Object(r.a)(I), S = e => async (t, n, {
 					apiContext: a
 				}) => {
@@ -2811,7 +2811,7 @@
 				h = n("./src/lib/makeActionCreator/index.ts");
 			var m = n("./src/chat/models/Promo/index.ts");
 			var p = e => {
-					const t = Object(d.a)("chat.promo") || [];
+					const t = Object(d.b)("chat.promo") || [];
 					return e = (e => {
 						switch (e) {
 							case m.c.LegacySubredditChatFtux:
@@ -2829,8 +2829,8 @@
 				C = e => async t => {
 					t(f(e)), (e => {
 						if (!p(e)) {
-							const t = [...Object(d.a)("chat.promo") || [], e];
-							Object(d.c)("chat.promo", t, u.hc)
+							const t = [...Object(d.b)("chat.promo") || [], e];
+							Object(d.d)("chat.promo", t, u.hc)
 						}
 					})(e)
 				};
@@ -10281,7 +10281,7 @@
 			let o;
 			const i = e => {
 				const t = e.user.account && e.user.account.id;
-				return o = Object(a.b)(s.o.CHAT, "last_selected_channel_id", t || "unknown"), Object(a.a)(o)
+				return o = Object(a.c)(s.o.CHAT, "last_selected_channel_id", t || "unknown"), Object(a.b)(o)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return c.a;
@@ -10292,11 +10292,11 @@
 						}
 					} = t,
 					i = n && n.id || "unknown";
-				return o = Object(a.b)(s.o.CHAT, "last_selected_channel_id", i), e => t => {
+				return o = Object(a.c)(s.o.CHAT, "last_selected_channel_id", i), e => t => {
 					const n = e(t);
 					switch (t.type) {
 						case r.a:
-							Object(a.c)(o, t.payload.channelId, s.kb)
+							Object(a.d)(o, t.payload.channelId, s.kb)
 					}
 					return n
 				}
@@ -10627,7 +10627,7 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.c)(l, e, 5 * i.fb)
+				Object(o.d)(l, e, 5 * i.fb)
 			}, 5 * i.Kb, {
 				leading: !1,
 				trailing: !0
@@ -10635,7 +10635,7 @@
 			let h;
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
-					void 0 === Object(o.a)(l) && Object(r.b)()
+					void 0 === Object(o.b)(l) && Object(r.b)()
 				}, 5 * i.fb)
 			};
 			t.a = e => {
@@ -10647,7 +10647,7 @@
 						}
 					} = t,
 					a = n && n.id || "unknown";
-				l = Object(o.b)(i.o.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
+				l = Object(o.c)(i.o.CHAT, "unread_message_count", a), u(t.messages.unread.basicChannelCount), m();
 				try {
 					window.parent.addEventListener("focus", m)
 				} catch (s) {}
@@ -15411,4 +15411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e49f90000458920a7afb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e671bf17067974785124.js.map
