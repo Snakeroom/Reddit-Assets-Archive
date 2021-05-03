@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0f2a37f3dd021ed31d16.js
-// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.851a761e9733de729cfd.js
+// Retrieved at 5/3/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1616,11 +1616,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("132884"),
+				buildNumber: r("132891"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1620049486"),
+				})("1620057593"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4212,14 +4212,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c483f2a935cc6d9efa1595a27d877dfd86d0de0c4-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c6e16b8eb116c1ea81b83458fbecf792c0e44f68d-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "483f2a935cc6d9efa1595a27d877dfd86d0de0c4-production",
+						release: "6e16b8eb116c1ea81b83458fbecf792c0e44f68d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4713,7 +4713,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "483f2a935cc6d9efa1595a27d877dfd86d0de0c4-production",
+						releaseClient: "6e16b8eb116c1ea81b83458fbecf792c0e44f68d-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -8148,22 +8148,28 @@
 				return be
 			})), i.d(t, "ab", (function() {
 				return ge
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "Cb", (function() {
 				return ye
-			})), i.d(t, "qb", (function() {
+			})), i.d(t, "Bb", (function() {
 				return we
-			})), i.d(t, "rb", (function() {
+			})), i.d(t, "Ab", (function() {
 				return ve
-			})), i.d(t, "sb", (function() {
+			})), i.d(t, "a", (function() {
 				return Ee
-			})), i.d(t, "tb", (function() {
+			})), i.d(t, "qb", (function() {
 				return Se
-			})), i.d(t, "ub", (function() {
+			})), i.d(t, "rb", (function() {
 				return Te
-			})), i.d(t, "vb", (function() {
+			})), i.d(t, "sb", (function() {
 				return Oe
-			})), i.d(t, "wb", (function() {
+			})), i.d(t, "tb", (function() {
 				return Ie
+			})), i.d(t, "ub", (function() {
+				return je
+			})), i.d(t, "vb", (function() {
+				return Fe
+			})), i.d(t, "wb", (function() {
+				return Re
 			}));
 			const n = "GIVE_PREMIUM__OPEN_GIVE_PREMIUM_MODAL",
 				r = "GIVE_PREMIUM__CLOSE_GIVE_PREMIUM_MODAL",
@@ -8235,14 +8241,17 @@
 				fe = "PRODUCT_OFFERS__OFFERS_PENDING",
 				be = "PRODUCT_OFFERS__OFFERS_LOADED",
 				ge = "PRODUCT_OFFERS__OFFERS_FAILED",
-				ye = "GILD__AWARD_KARMA_UPDATED",
-				we = "TOP_AWARDED__POSTS_FAILED",
-				ve = "TOP_AWARDED__POSTS_LOADED",
-				Ee = "TOP_AWARDED__POSTS_PENDING",
-				Se = "TOP_AWARDERS__LEADERBOARD_FAILED",
-				Te = "TOP_AWARDERS__LEADERBOARD_LOADED",
-				Oe = "TOP_AWARDERS__LEADERBOARD_PENDING",
-				Ie = "TOP_AWARDERS__MODAL_OPENED"
+				ye = "PRODUCT_OFFERS__SUBSCRIPTIONS_PENDING",
+				we = "PRODUCT_OFFERS__SUBSCRIPTIONS_LOADED",
+				ve = "PRODUCT_OFFERS__SUBSCRIPTIONS_FAILED",
+				Ee = "GILD__AWARD_KARMA_UPDATED",
+				Se = "TOP_AWARDED__POSTS_FAILED",
+				Te = "TOP_AWARDED__POSTS_LOADED",
+				Oe = "TOP_AWARDED__POSTS_PENDING",
+				Ie = "TOP_AWARDERS__LEADERBOARD_FAILED",
+				je = "TOP_AWARDERS__LEADERBOARD_LOADED",
+				Fe = "TOP_AWARDERS__LEADERBOARD_PENDING",
+				Re = "TOP_AWARDERS__MODAL_OPENED"
 		},
 		"./src/reddit/actions/gold/powerups.ts": function(e, t, i) {
 			"use strict";
@@ -46408,4 +46417,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0f2a37f3dd021ed31d16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.851a761e9733de729cfd.js.map

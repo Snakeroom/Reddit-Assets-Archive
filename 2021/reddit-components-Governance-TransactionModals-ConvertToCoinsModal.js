@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.a5806f4690f24137a6aa.js
-// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0a2e31dded9c03772b59.js
+// Retrieved at 5/3/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -441,6 +441,9 @@
 		"./src/graphql/operations/PollVote.json": function(e) {
 			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		},
+		"./src/graphql/operations/PremiumProductOfferSubscriptions.json": function(e) {
+			e.exports = JSON.parse('{"id":"93a82be72b63"}')
+		},
 		"./src/graphql/operations/ProductOffers.json": function(e) {
 			e.exports = JSON.parse('{"id":"ddb1f9f5717c"}')
 		},
@@ -844,8 +847,10 @@
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "a", (function() {
-				return y
+			r.d(t, "b", (function() {
+				return w
+			})), r.d(t, "a", (function() {
+				return M
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/makeActionCreator/index.ts"),
@@ -854,36 +859,40 @@
 				c = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				i = r("./src/reddit/models/Toast/index.ts"),
 				l = r("./src/graphql/operations/GlobalProductOffers.json"),
-				d = r("./src/graphql/operations/ProductOffers.json"),
-				u = r("./src/lib/makeGqlRequest/index.ts");
-			var m = r("./src/reddit/selectors/gold/productOffers.ts"),
-				p = r("./src/reddit/actions/gold/constants.ts");
-			const f = Object(a.a)(p.cb),
-				h = Object(a.a)(p.bb),
-				b = Object(a.a)(p.ab),
-				v = Object(a.a)(p.Y),
-				g = Object(a.a)(p.X),
-				E = Object(a.a)(p.W),
-				x = e => async t => {
+				d = r("./src/graphql/operations/PremiumProductOfferSubscriptions.json"),
+				u = r("./src/graphql/operations/ProductOffers.json"),
+				m = r("./src/lib/makeGqlRequest/index.ts");
+			var p = r("./src/reddit/selectors/gold/productOffers.ts"),
+				f = r("./src/reddit/actions/gold/constants.ts");
+			const h = Object(a.a)(f.cb),
+				b = Object(a.a)(f.bb),
+				v = Object(a.a)(f.ab),
+				g = Object(a.a)(f.Y),
+				E = Object(a.a)(f.X),
+				x = Object(a.a)(f.W),
+				y = Object(a.a)(f.Cb),
+				O = Object(a.a)(f.Ab),
+				C = Object(a.a)(f.Bb),
+				j = e => async t => {
 					t(Object(o.f)({
 						kind: i.b.Error,
 						duration: o.a,
 						text: e
 					}))
-				}, y = (e, t) => async r => {
-					e === c.c.Premium ? r(C()) : t && r(O(e, t))
-				}, O = (e, t) => async (r, a, {
+				}, w = (e, t) => async r => {
+					e === c.c.Premium ? r(I()) : t && r(N(e, t))
+				}, N = (e, t) => async (r, a, {
 					gqlContext: s
 				}) => {
 					const o = a();
-					if (!Object(m.e)(o, {
+					if (!Object(p.e)(o, {
 							subredditId: t,
 							type: e
 						})) {
-						r(f());
+						r(h());
 						try {
-							const n = await ((e, t, r, n) => Object(u.a)(e, {
-								...d,
+							const n = await ((e, t, r, n) => Object(m.a)(e, {
+								...u,
 								variables: {
 									subredditId: t,
 									types: r,
@@ -894,7 +903,7 @@
 								const e = n.body;
 								if (e.errors && e.errors.length) throw new Error(e.errors[0].message);
 								const a = e.data.subredditInfoById.productOffers ? e.data.subredditInfoById.productOffers.offers : [];
-								return void(await r(h({
+								return void(await r(b({
 									productOffers: a || [],
 									subredditId: t
 								})))
@@ -903,17 +912,17 @@
 							const e = n.fbt._("Something went wrong", null, {
 								hk: "1IJNeH"
 							});
-							r(b(e)), r(x(e))
+							r(v(e)), r(j(e))
 						}
 					}
-				}, C = () => async (e, t, {
+				}, I = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					var a, o;
 					const i = c.c.Premium;
-					e(v());
+					e(g());
 					try {
-						const t = await ((e, t) => Object(u.a)(e, {
+						const t = await ((e, t) => Object(m.a)(e, {
 							...l,
 							variables: {
 								productTypes: t
@@ -922,7 +931,7 @@
 						if (t.ok) {
 							const r = t.body;
 							if (null === (a = r.errors) || void 0 === a ? void 0 : a.length) throw new Error(r.errors[0].message);
-							return void e(g({
+							return void e(E({
 								productOffers: null !== (o = r.data.globalProductOffers.offers) && void 0 !== o ? o : []
 							}))
 						}
@@ -930,7 +939,29 @@
 						const t = d.message ? d.message : n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						});
-						s.c.captureMessage(t), e(E(t)), e(x(t))
+						s.c.captureMessage(t), e(x(t)), e(j(t))
+					}
+				}, M = () => async (e, t, {
+					gqlContext: r
+				}) => {
+					var a, o, c;
+					e(y());
+					try {
+						const t = await (e => Object(m.a)(e, d))(r());
+						if (t.error) throw new Error(t.error.type);
+						if (t.ok) {
+							const r = t.body;
+							if (null === (a = r.errors) || void 0 === a ? void 0 : a.length) throw new Error(r.errors[0].message);
+							return void e(C({
+								subscriptions: null !== (c = null === (o = r.data.identity) || void 0 === o ? void 0 : o.subscriptions) && void 0 !== c ? c : []
+							}))
+						}
+					} catch (i) {
+						s.c.captureException(i);
+						const t = i.message ? i.message : n.fbt._("Something went wrong", null, {
+							hk: "1IJNeH"
+						});
+						e(O(t)), e(j(t))
 					}
 				}
 		},
@@ -1976,7 +2007,7 @@
 					g = null === (r = null === (t = null === (e = null == v ? void 0 : v.extra) || void 0 === e ? void 0 : e.contracts) || void 0 === t ? void 0 : t.unlocked) || void 0 === r ? void 0 : r.address;
 				if (!g) throw new Error("No community points contract address");
 				Object(n.useEffect)(() => {
-					m(Object(c.a)(d.c.CoinConversion, f))
+					m(Object(c.b)(d.c.CoinConversion, f))
 				}, [m, f]);
 				const [E, y] = Object(n.useState)(!0);
 				return E ? a.a.createElement(x, {
@@ -2907,4 +2938,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.a5806f4690f24137a6aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0a2e31dded9c03772b59.js.map
