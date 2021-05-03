@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.44ef1a37ddcbce198e34.js
-// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5f0e98acf8c763b3bcaf.js
+// Retrieved at 5/3/2021, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -934,45 +934,45 @@
 				className: Object(a.a)(p.a.name, e.textClassName)
 			}, e.displayName || e.userName));
 			t.b = function(e) {
-				var t, r;
-				const s = Object(u.a)(),
+				var t;
+				const r = Object(u.a)(),
 					{
-						className: d,
-						supporter: m
+						className: s,
+						supporter: d
 					} = e,
 					{
-						score: h,
-						supporterInfo: f
-					} = m,
-					g = (null == f ? void 0 : f.displayName) || n.fbt._({
+						score: m,
+						supporterInfo: h
+					} = d,
+					f = (null == h ? void 0 : h.displayName) || n.fbt._({
 						"*": "Anonymous Heroes",
 						_1: "Anonymous Hero"
-					}, [n.fbt._plural(h)], {
+					}, [n.fbt._plural(m)], {
 						hk: "8kyEI"
 					}).toString(),
-					x = null === (t = null == f ? void 0 : f.icon) || void 0 === t ? void 0 : t.url,
-					v = !!(null === (r = null == f ? void 0 : f.profile) || void 0 === r ? void 0 : r.isNsfw),
-					w = Object(o.a)(h),
-					y = i.a.createElement(b, {
-						userName: g,
-						isNsfw: v,
+					g = !!(null === (t = null == h ? void 0 : h.profile) || void 0 === t ? void 0 : t.isNsfw),
+					x = Object(o.b)(h),
+					v = Object(o.a)(m),
+					w = i.a.createElement(b, {
+						userName: f,
+						isNsfw: g,
 						iconUrl: x
 					});
 				return i.a.createElement("div", {
-					className: Object(a.a)(d, p.a.container)
-				}, f ? i.a.createElement(c.a, {
+					className: Object(a.a)(s, p.a.container)
+				}, h ? i.a.createElement(c.a, {
 					className: p.a.user,
-					to: `/user/${g}/`,
+					to: `/user/${f}/`,
 					onClick: () => {
-						f && s(Object(l.r)(f.id, f.displayName))
+						h && r(Object(l.r)(h.id, h.displayName))
 					}
-				}, y) : i.a.createElement("div", {
+				}, w) : i.a.createElement("div", {
 					className: p.a.user
-				}, y), i.a.createElement("div", {
+				}, w), i.a.createElement("div", {
 					className: p.a.counter
-				}, i.a.createElement(w, {
+				}, i.a.createElement(v, {
 					className: p.a.powerupIcon
-				}), h))
+				}), m))
 			}
 		},
 		"./src/reddit/components/PowerupsSidebar/Supporters/index.m.less": function(e, t, r) {
@@ -1080,16 +1080,26 @@
 		"./src/reddit/components/PowerupsSidebar/common/utils.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
+				return c
+			})), r.d(t, "b", (function() {
+				return l
 			}));
-			var n = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
-				s = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				i = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
-			const a = 2,
-				o = 5;
+			var n = r("./src/config.ts"),
+				s = r("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
+				i = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				a = r("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
+			const o = 2,
+				d = 5;
 
-			function d(e) {
-				return e >= o ? i.a : e >= a ? s.a : n.a
+			function c(e) {
+				return e >= d ? a.a : e >= o ? i.a : s.a
+			}
+
+			function l(e) {
+				var t;
+				const r = !e,
+					s = `${n.a.assetPath}/img/powerups/snoovatar_anonymous.svg`;
+				return r ? s : null === (t = null == e ? void 0 : e.icon) || void 0 === t ? void 0 : t.url
 			}
 		},
 		"./src/reddit/components/PowerupsSidebar/index.m.less": function(e, t, r) {
@@ -3674,4 +3684,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.44ef1a37ddcbce198e34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5f0e98acf8c763b3bcaf.js.map
