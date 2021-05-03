@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ddc84e5529a869eaadfd.js
-// Retrieved at 5/3/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c38bb4a964ca4b41b9a6.js
+// Retrieved at 5/3/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2967,23 +2967,23 @@
 				return _
 			})), r.d(t, "h", (function() {
 				return g
-			})), r.d(t, "w", (function() {
-				return E
-			})), r.d(t, "x", (function() {
-				return y
-			})), r.d(t, "v", (function() {
-				return v
-			})), r.d(t, "y", (function() {
-				return w
-			})), r.d(t, "f", (function() {
-				return O
-			})), r.d(t, "g", (function() {
-				return S
-			})), r.d(t, "i", (function() {
-				return x
-			})), r.d(t, "k", (function() {
-				return C
 			})), r.d(t, "l", (function() {
+				return E
+			})), r.d(t, "w", (function() {
+				return y
+			})), r.d(t, "x", (function() {
+				return v
+			})), r.d(t, "v", (function() {
+				return w
+			})), r.d(t, "y", (function() {
+				return O
+			})), r.d(t, "f", (function() {
+				return S
+			})), r.d(t, "g", (function() {
+				return x
+			})), r.d(t, "i", (function() {
+				return C
+			})), r.d(t, "k", (function() {
 				return I
 			})), r.d(t, "j", (function() {
 				return k
@@ -3019,15 +3019,15 @@
 				h = e => e.features.goldPurchase.updateCardModal.pending,
 				_ = e => e.features.goldPurchase.payment.paymentMethod,
 				g = e => e.features.goldPurchase.payment.cardName,
-				E = e => e.features.goldPurchase.payment.savedCardsPending,
-				y = e => e.features.goldPurchase.payment.savedCards,
-				v = e => e.features.goldPurchase.payment.rememberCard,
-				w = e => e.features.goldPurchase.payment.useSavedCard,
-				O = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				S = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				x = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				I = e => e.features.goldPurchase.payment.cardValidation.postalCode,
+				E = e => e.features.goldPurchase.payment.postalCode,
+				y = e => e.features.goldPurchase.payment.savedCardsPending,
+				v = e => e.features.goldPurchase.payment.savedCards,
+				w = e => e.features.goldPurchase.payment.rememberCard,
+				O = e => e.features.goldPurchase.payment.useSavedCard,
+				S = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				x = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				I = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				k = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				T = e => e.features.goldPurchase.payment.stripeToken.pending,
 				P = e => e.features.goldPurchase.payment.paypal.passthrough,
@@ -3104,4 +3104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ddc84e5529a869eaadfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c38bb4a964ca4b41b9a6.js.map

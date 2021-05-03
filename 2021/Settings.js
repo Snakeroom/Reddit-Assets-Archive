@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9ea1b2f1ec4062be4d21.js
-// Retrieved at 5/3/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d327a9d150afc4469d53.js
+// Retrieved at 5/3/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2023,34 +2023,36 @@
 				return d
 			})), n.d(t, "cardNameInput", (function() {
 				return u
-			})), n.d(t, "cardNameEmpty", (function() {
+			})), n.d(t, "postalCodeInput", (function() {
 				return m
-			})), n.d(t, "cardElementChange", (function() {
+			})), n.d(t, "cardNameEmpty", (function() {
 				return p
-			})), n.d(t, "stripeTokenPending", (function() {
+			})), n.d(t, "cardElementChange", (function() {
 				return b
-			})), n.d(t, "stripeTokenError", (function() {
+			})), n.d(t, "stripeTokenPending", (function() {
 				return h
-			})), n.d(t, "stripeApiError", (function() {
+			})), n.d(t, "stripeTokenError", (function() {
 				return f
-			})), n.d(t, "validateAndCreateStripeToken", (function() {
+			})), n.d(t, "stripeApiError", (function() {
 				return g
-			})), n.d(t, "paypalApiError", (function() {
+			})), n.d(t, "validateAndCreateStripeToken", (function() {
 				return v
-			})), n.d(t, "toggleRememberCard", (function() {
+			})), n.d(t, "paypalApiError", (function() {
 				return y
-			})), n.d(t, "selectSavedCard", (function() {
+			})), n.d(t, "toggleRememberCard", (function() {
 				return x
-			})), n.d(t, "_deleteSavedCard", (function() {
+			})), n.d(t, "selectSavedCard", (function() {
 				return _
-			})), n.d(t, "deleteSavedCard", (function() {
+			})), n.d(t, "_deleteSavedCard", (function() {
 				return E
-			})), n.d(t, "savedCardsPending", (function() {
+			})), n.d(t, "deleteSavedCard", (function() {
 				return C
-			})), n.d(t, "savedCardsSuccess", (function() {
+			})), n.d(t, "savedCardsPending", (function() {
 				return w
-			})), n.d(t, "loadSavedCards", (function() {
+			})), n.d(t, "savedCardsSuccess", (function() {
 				return k
+			})), n.d(t, "loadSavedCards", (function() {
+				return O
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/sentry/index.ts"),
@@ -2058,48 +2060,51 @@
 				o = n("./src/reddit/endpoints/gold/purchase.ts"),
 				i = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
 				c = n("./src/reddit/selectors/goldPurchaseModals.ts");
-			const l = Object(a.a)(i.A),
+			const l = Object(a.a)(i.B),
 				d = Object(a.a)(i.w),
 				u = Object(a.a)(i.b),
-				m = Object(a.a)(i.a),
-				p = Object(a.a)(i.D),
-				b = Object(a.a)(i.F),
-				h = Object(a.a)(i.E),
-				f = Object(a.a)(i.C),
-				g = e => async (t, n) => {
+				m = Object(a.a)(i.y),
+				p = Object(a.a)(i.a),
+				b = Object(a.a)(i.E),
+				h = Object(a.a)(i.G),
+				f = Object(a.a)(i.F),
+				g = Object(a.a)(i.D),
+				v = e => async (t, n) => {
 					const s = n(),
 						a = Object(c.h)(s),
+						o = Object(c.l)(s),
 						{
-							token: o,
-							error: i
+							token: i,
+							error: l
 						} = await e.createToken({
-							name: a
+							name: a,
+							address_zip: o
 						});
 					if (a.trim()) {
-						if (!i && o) return o;
-						t(h(i || void 0))
+						if (!l && i) return i;
+						t(f(l || void 0))
 					} else {
 						const e = r.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
 						});
-						t(m({
+						t(p({
 							message: e
 						}))
 					}
-				}, v = Object(a.a)(i.x), y = Object(a.a)(i.G), x = Object(a.a)(i.B), _ = Object(a.a)(i.g), E = e => async (t, n, {
+				}, y = Object(a.a)(i.x), x = Object(a.a)(i.H), _ = Object(a.a)(i.C), E = Object(a.a)(i.g), C = e => async (t, n, {
 					apiContext: r
 				}) => {
-					t(_(e));
+					t(E(e));
 					try {
 						const t = await Object(o.a)(r(), e);
 						if (t.error) throw new Error(t.error.type)
 					} catch (a) {
 						s.c.captureException(a)
 					}
-				}, C = Object(a.a)(i.y), w = Object(a.a)(i.z), k = () => async (e, t, {
+				}, w = Object(a.a)(i.z), k = Object(a.a)(i.A), O = () => async (e, t, {
 					apiContext: n
 				}) => {
-					e(C());
+					e(w());
 					try {
 						const t = await Object(o.b)(n());
 						if (t.error) throw new Error(t.error.type);
@@ -2110,9 +2115,9 @@
 							expirationYear: e.exp_year,
 							last4: e.last4
 						}));
-						e(w(r)), r[0] && e(x(r[0].cardId))
+						e(k(r)), r[0] && e(_(r[0].cardId))
 					} catch (r) {
-						s.c.captureException(r), e(w([]))
+						s.c.captureException(r), e(k([]))
 					}
 				}
 		},
@@ -10886,4 +10891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9ea1b2f1ec4062be4d21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d327a9d150afc4469d53.js.map

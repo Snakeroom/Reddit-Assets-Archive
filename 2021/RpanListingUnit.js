@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1ffb78c8f5680fa2bf43.js
-// Retrieved at 5/3/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3752b0ff8bbe9e016bb3.js
+// Retrieved at 5/3/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -5038,23 +5038,23 @@
 				return v
 			})), s.d(t, "h", (function() {
 				return g
-			})), s.d(t, "w", (function() {
-				return C
-			})), s.d(t, "x", (function() {
-				return E
-			})), s.d(t, "v", (function() {
-				return w
-			})), s.d(t, "y", (function() {
-				return _
-			})), s.d(t, "f", (function() {
-				return x
-			})), s.d(t, "g", (function() {
-				return O
-			})), s.d(t, "i", (function() {
-				return y
-			})), s.d(t, "k", (function() {
-				return I
 			})), s.d(t, "l", (function() {
+				return C
+			})), s.d(t, "w", (function() {
+				return E
+			})), s.d(t, "x", (function() {
+				return w
+			})), s.d(t, "v", (function() {
+				return _
+			})), s.d(t, "y", (function() {
+				return x
+			})), s.d(t, "f", (function() {
+				return O
+			})), s.d(t, "g", (function() {
+				return y
+			})), s.d(t, "i", (function() {
+				return I
+			})), s.d(t, "k", (function() {
 				return S
 			})), s.d(t, "j", (function() {
 				return T
@@ -5090,15 +5090,15 @@
 				f = e => e.features.goldPurchase.updateCardModal.pending,
 				v = e => e.features.goldPurchase.payment.paymentMethod,
 				g = e => e.features.goldPurchase.payment.cardName,
-				C = e => e.features.goldPurchase.payment.savedCardsPending,
-				E = e => e.features.goldPurchase.payment.savedCards,
-				w = e => e.features.goldPurchase.payment.rememberCard,
-				_ = e => e.features.goldPurchase.payment.useSavedCard,
-				x = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				O = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				y = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				I = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				S = e => e.features.goldPurchase.payment.cardValidation.postalCode,
+				C = e => e.features.goldPurchase.payment.postalCode,
+				E = e => e.features.goldPurchase.payment.savedCardsPending,
+				w = e => e.features.goldPurchase.payment.savedCards,
+				_ = e => e.features.goldPurchase.payment.rememberCard,
+				x = e => e.features.goldPurchase.payment.useSavedCard,
+				O = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				y = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				I = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				S = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				T = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				k = e => e.features.goldPurchase.payment.stripeToken.pending,
 				N = e => e.features.goldPurchase.payment.paypal.passthrough,
@@ -5106,4 +5106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1ffb78c8f5680fa2bf43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3752b0ff8bbe9e016bb3.js.map

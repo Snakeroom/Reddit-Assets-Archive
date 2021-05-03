@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.63ba7848eda6827ccae7.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.61882ecbeb6a788b7689.js
+// Retrieved at 5/3/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -9,8 +9,8 @@
 			});
 			var r = i(n("./node_modules/react/index.js")),
 				o = i(n("./node_modules/react-stripe-elements/node_modules/prop-types/index.js")),
-				s = i(n("./node_modules/react-stripe-elements/es/utils/shallowEqual.js")),
-				a = n("./node_modules/react-stripe-elements/es/components/Elements.js");
+				a = i(n("./node_modules/react-stripe-elements/es/utils/isEqual.js")),
+				s = n("./node_modules/react-stripe-elements/es/components/Elements.js");
 
 			function i(e) {
 				return e && e.__esModule ? e : {
@@ -59,18 +59,20 @@
 						o.handleRef = function(e) {
 							o._ref = e
 						}, o._element = null;
-						var s = u(o.props);
-						return o._options = s, o
+						var a = u(o.props);
+						return o._options = a, o
 					}
 					return d(n, t), n.prototype.componentDidMount = function() {
 						var t = this;
 						this.context.addElementsLoadListener((function(n) {
-							var r = n.create(e, t._options);
-							t._element = r, t._setupEventListeners(r), r.mount(t._ref), (i.impliedTokenType || i.impliedSourceType) && t.context.registerElement(r, i.impliedTokenType, i.impliedSourceType)
+							if (t._ref) {
+								var r = n.create(e, t._options);
+								t._element = r, t._setupEventListeners(r), r.mount(t._ref), t.context.registerElement(r, i.impliedTokenType, i.impliedSourceType, i.impliedPaymentMethodType)
+							}
 						}))
-					}, n.prototype.componentWillReceiveProps = function(e) {
-						var t = u(e);
-						0 === Object.keys(t).length || (0, s.default)(t, this._options) || (this._options = t, this._element && this._element.update(t))
+					}, n.prototype.componentDidUpdate = function() {
+						var e = u(this.props);
+						0 === Object.keys(e).length || (0, a.default)(e, this._options) || (this._options = e, this._element && this._element.update(e))
 					}, n.prototype.componentWillUnmount = function() {
 						if (this._element) {
 							var e = this._element;
@@ -110,7 +112,7 @@
 					onBlur: p,
 					onFocus: p,
 					onReady: p
-				}, t.contextTypes = a.elementContextTypes, t.displayName = m(e) + "Element", n
+				}, t.contextTypes = s.elementContextTypes, t.displayName = m(e) + "Element", n
 			}
 		},
 		"./node_modules/react-stripe-elements/es/components/Elements.js": function(e, t, n) {
@@ -126,8 +128,8 @@
 					return e
 				},
 				o = i(n("./node_modules/react/index.js")),
-				s = i(n("./node_modules/react-stripe-elements/node_modules/prop-types/index.js")),
-				a = n("./node_modules/react-stripe-elements/es/components/Provider.js");
+				a = i(n("./node_modules/react-stripe-elements/node_modules/prop-types/index.js")),
+				s = n("./node_modules/react-stripe-elements/es/components/Provider.js");
 
 			function i(e) {
 				return e && e.__esModule ? e : {
@@ -135,53 +137,65 @@
 				}
 			}
 
-			function l(e) {
+			function l(e, t) {
+				var n = {};
+				for (var r in e) t.indexOf(r) >= 0 || Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]);
+				return n
+			}
+
+			function c(e) {
 				if (Array.isArray(e)) {
 					for (var t = 0, n = Array(e.length); t < e.length; t++) n[t] = e[t];
 					return n
 				}
 				return Array.from(e)
 			}
-			var c = t.injectContextTypes = {
-					getRegisteredElements: s.default.func.isRequired
+			var d = t.injectContextTypes = {
+					getRegisteredElements: a.default.func.isRequired,
+					elements: a.default.object
 				},
-				d = t.elementContextTypes = {
-					addElementsLoadListener: s.default.func.isRequired,
-					registerElement: s.default.func.isRequired,
-					unregisterElement: s.default.func.isRequired
+				p = t.elementContextTypes = {
+					addElementsLoadListener: a.default.func.isRequired,
+					registerElement: a.default.func.isRequired,
+					unregisterElement: a.default.func.isRequired
 				},
-				p = function(e) {
+				u = function(e) {
 					function t(n, o) {
 						! function(e, t) {
 							if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 						}(this, t);
-						var s = function(e, t) {
+						var a = function(e, t) {
 							if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 							return !t || "object" != typeof t && "function" != typeof t ? e : t
 						}(this, e.call(this, n, o));
-						return s.handleRegisterElement = function(e, t, n) {
-							s.setState((function(o) {
+						a._elements = null, a.handleRegisterElement = function(e, t, n, o) {
+							a.setState((function(a) {
 								return {
-									registeredElements: [].concat(l(o.registeredElements), [r({
+									registeredElements: [].concat(c(a.registeredElements), [r({
 										element: e
 									}, t ? {
 										impliedTokenType: t
 									} : {}, n ? {
 										impliedSourceType: n
+									} : {}, o ? {
+										impliedPaymentMethodType: o
 									} : {})])
 								}
 							}))
-						}, s.handleUnregisterElement = function(e) {
-							s.setState((function(t) {
+						}, a.handleUnregisterElement = function(e) {
+							a.setState((function(t) {
 								return {
 									registeredElements: t.registeredElements.filter((function(t) {
 										return t.element !== e
 									}))
 								}
 							}))
-						}, s.state = {
+						};
+						var s = a.props,
+							i = (s.children, l(s, ["children"]));
+						return "sync" === a.context.tag && (a._elements = a.context.stripe.elements(i)), a.state = {
 							registeredElements: []
-						}, s
+						}, a
 					}
 					return function(e, t) {
 						if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -197,32 +211,32 @@
 						var e = this;
 						return {
 							addElementsLoadListener: function(t) {
-								if (e._elements) t(e._elements);
-								else {
-									var n = e.props,
-										r = (n.children, function(e, t) {
-											var n = {};
-											for (var r in e) t.indexOf(r) >= 0 || Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]);
-											return n
-										}(n, ["children"]));
-									"sync" === e.context.tag ? (e._elements = e.context.stripe.elements(r), t(e._elements)) : e.context.addStripeLoadListener((function(n) {
-										e._elements ? t(e._elements) : (e._elements = n.elements(r), t(e._elements))
-									}))
-								}
+								if ("sync" === e.context.tag) {
+									if (!e._elements) throw new Error("Expected elements to be instantiated but it was not.");
+									t(e._elements)
+								} else e.context.addStripeLoadListener((function(n) {
+									if (e._elements) t(e._elements);
+									else {
+										var r = e.props,
+											o = (r.children, l(r, ["children"]));
+										e._elements = n.elements(o), t(e._elements)
+									}
+								}))
 							},
 							registerElement: this.handleRegisterElement,
 							unregisterElement: this.handleUnregisterElement,
 							getRegisteredElements: function() {
 								return e.state.registeredElements
-							}
+							},
+							elements: this._elements
 						}
 					}, t.prototype.render = function() {
 						return o.default.Children.only(this.props.children)
 					}, t
 				}(o.default.Component);
-			p.childContextTypes = r({}, c, d), p.contextTypes = a.providerContextTypes, p.defaultProps = {
+			u.childContextTypes = r({}, d, p), u.contextTypes = s.providerContextTypes, u.defaultProps = {
 				children: null
-			}, t.default = p
+			}, t.default = u
 		},
 		"./node_modules/react-stripe-elements/es/components/PaymentRequestButtonElement.js": function(e, t, n) {
 			"use strict";
@@ -237,8 +251,8 @@
 					return e
 				},
 				o = l(n("./node_modules/react/index.js")),
-				s = l(n("./node_modules/react-stripe-elements/node_modules/prop-types/index.js")),
-				a = l(n("./node_modules/react-stripe-elements/es/utils/shallowEqual.js")),
+				a = l(n("./node_modules/react-stripe-elements/node_modules/prop-types/index.js")),
+				s = l(n("./node_modules/react-stripe-elements/es/utils/shallowEqual.js")),
 				i = n("./node_modules/react-stripe-elements/es/components/Elements.js");
 
 			function l(e) {
@@ -267,8 +281,8 @@
 						o.handleRef = function(e) {
 							o._ref = e
 						};
-						var s = d(n);
-						return o._options = s, o
+						var a = d(n);
+						return o._options = a, o
 					}
 					return function(e, t) {
 						if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
@@ -298,10 +312,10 @@
 								return (t = e.props).onBlur.apply(t, arguments)
 							})), e._element.mount(e._ref)
 						}))
-					}, t.prototype.componentWillReceiveProps = function(e) {
+					}, t.prototype.componentDidUpdate = function(e) {
 						this.props.paymentRequest !== e.paymentRequest && console.warn("Unsupported prop change: paymentRequest is not a customizable property.");
-						var t = d(e);
-						0 === Object.keys(t).length || (0, a.default)(t, this._options) || (this._options = t, this._element.update(t))
+						var t = d(this.props);
+						0 === Object.keys(t).length || (0, s.default)(t, this._options) || (this._options = t, this._element.update(t))
 					}, t.prototype.componentWillUnmount = function() {
 						this._element.destroy()
 					}, t.prototype.render = function() {
@@ -313,16 +327,16 @@
 					}, t
 				}(o.default.Component);
 			p.propTypes = {
-				id: s.default.string,
-				className: s.default.string,
-				onBlur: s.default.func,
-				onClick: s.default.func,
-				onFocus: s.default.func,
-				onReady: s.default.func,
-				paymentRequest: s.default.shape({
-					canMakePayment: s.default.func.isRequired,
-					on: s.default.func.isRequired,
-					show: s.default.func.isRequired
+				id: a.default.string,
+				className: a.default.string,
+				onBlur: a.default.func,
+				onClick: a.default.func,
+				onFocus: a.default.func,
+				onReady: a.default.func,
+				paymentRequest: a.default.shape({
+					canMakePayment: a.default.func.isRequired,
+					on: a.default.func.isRequired,
+					show: a.default.func.isRequired
 				}).isRequired
 			}, p.defaultProps = {
 				id: void 0,
@@ -338,15 +352,15 @@
 			Object.defineProperty(t, "__esModule", {
 				value: !0
 			}), t.providerContextTypes = void 0;
-			var r = s(n("./node_modules/react/index.js")),
-				o = s(n("./node_modules/react-stripe-elements/node_modules/prop-types/index.js"));
+			var r = a(n("./node_modules/react/index.js")),
+				o = a(n("./node_modules/react-stripe-elements/node_modules/prop-types/index.js"));
 
-			function s(e) {
+			function a(e) {
 				return e && e.__esModule ? e : {
 					default: e
 				}
 			}
-			var a = t.providerContextTypes = {
+			var s = t.providerContextTypes = {
 					tag: o.default.string.isRequired,
 					stripe: o.default.object,
 					addStripeLoadListener: o.default.func
@@ -358,7 +372,7 @@
 					return window.Stripe.__cachedInstances[n] = r, r
 				},
 				l = function(e) {
-					if (e && e.elements && e.createSource && e.createToken) return e;
+					if (e && e.elements && e.createSource && e.createToken && e.createPaymentMethod && e.handleCardPayment) return e;
 					throw new Error("Please pass a valid Stripe object to StripeProvider. You can obtain a Stripe object by calling 'Stripe(...)' with your publishable key.")
 				},
 				c = function(e) {
@@ -374,21 +388,24 @@
 						if (r.props.apiKey) {
 							if (!window.Stripe) throw new Error("Please load Stripe.js (https://js.stripe.com/v3/) on this page to use react-stripe-elements. If Stripe.js isn't available yet (it's loading asynchronously, or you're using server-side rendering), see https://github.com/stripe/react-stripe-elements#advanced-integrations");
 							var o = r.props,
-								s = o.apiKey,
-								a = (o.children, o.stripe, function(e, t) {
+								a = o.apiKey,
+								s = (o.children, function(e, t) {
 									var n = {};
 									for (var r in e) t.indexOf(r) >= 0 || Object.prototype.hasOwnProperty.call(e, r) && (n[r] = e[r]);
 									return n
-								}(o, ["apiKey", "children", "stripe"]));
+								}(o, ["apiKey", "children"])),
+								c = i(a, s);
 							r._meta = {
 								tag: "sync",
-								stripe: i(s, a)
-							}
-						} else if (r.props.stripe) r._meta = {
-							tag: "sync",
-							stripe: l(r.props.stripe)
-						};
-						else {
+								stripe: c
+							}, r._register()
+						} else if (r.props.stripe) {
+							var d = l(r.props.stripe);
+							r._meta = {
+								tag: "sync",
+								stripe: d
+							}, r._register()
+						} else {
 							if (null !== r.props.stripe) throw new Error("Please pass either 'apiKey' or 'stripe' to StripeProvider. If you're using 'stripe' but don't have a Stripe instance yet, pass 'null' explicitly.");
 							r._meta = {
 								tag: "async",
@@ -418,17 +435,23 @@
 								e._meta.stripe ? t(e._meta.stripe) : e._listeners.push(t)
 							}
 						}
-					}, t.prototype.componentWillReceiveProps = function(e) {
+					}, t.prototype.componentDidUpdate = function(e) {
 						var t = this.props.apiKey && e.apiKey && this.props.apiKey !== e.apiKey,
 							n = this.props.stripe && e.stripe && this.props.stripe !== e.stripe;
 						if (!this._didWarn && (t || n) && window.console && window.console.error) return this._didWarn = !0, void console.error("StripeProvider does not support changing the apiKey parameter.");
-						if (!this._didWakeUpListeners && e.stripe) {
+						if (!this._didWakeUpListeners && this.props.stripe) {
 							this._didWakeUpListeners = !0;
-							var r = l(e.stripe);
-							this._meta.stripe = r, this._listeners.forEach((function(e) {
+							var r = l(this.props.stripe);
+							this._meta.stripe = r, this._register(), this._listeners.forEach((function(e) {
 								e(r)
 							}))
 						}
+					}, t.prototype._register = function() {
+						var e = this._meta.stripe;
+						e && e._registerWrapper && e._registerWrapper({
+							name: "react-stripe-elements",
+							version: "6.1.2"
+						})
 					}, t.prototype.render = function() {
 						return r.default.Children.only(this.props.children)
 					}, t
@@ -437,7 +460,7 @@
 				apiKey: o.default.string,
 				stripe: o.default.object,
 				children: o.default.node
-			}, c.childContextTypes = a, c.defaultProps = {
+			}, c.childContextTypes = s, c.defaultProps = {
 				apiKey: void 0,
 				stripe: void 0,
 				children: null
@@ -455,13 +478,13 @@
 					}
 					return e
 				},
-				s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+				a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
 					return typeof e
 				} : function(e) {
 					return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
 				},
-				a = n("./node_modules/react/index.js"),
-				i = (r = a) && r.__esModule ? r : {
+				s = n("./node_modules/react/index.js"),
+				i = (r = s) && r.__esModule ? r : {
 					default: r
 				},
 				l = n("./node_modules/react-stripe-elements/es/components/Elements.js"),
@@ -495,13 +518,21 @@
 			}
 			t.default = function(e) {
 				var t, n, r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-					a = r.withRef,
-					f = void 0 !== a && a;
+					s = r.withRef,
+					f = void 0 !== s && s;
 				return n = t = function(t) {
 					function n(e, r) {
 						if (p(this, n), !r || !r.getRegisteredElements) throw new Error("It looks like you are trying to inject Stripe context outside of an Elements context.\nPlease be sure the component that calls createSource or createToken is within an <Elements> component.");
 						var o = u(this, t.call(this, e, r));
-						return o.findElement = function(e, t) {
+						return o.parseElementOrData = function(e) {
+							return e && "object" === (void 0 === e ? "undefined" : a(e)) && e._frame && "object" === a(e._frame) && e._frame.id && "string" == typeof e._frame.id && "string" == typeof e._componentName ? {
+								type: "element",
+								element: e
+							} : {
+								type: "data",
+								data: e
+							}
+						}, o.findElement = function(e, t) {
 							var n = o.context.getRegisteredElements().filter((function(t) {
 									return t[e]
 								})),
@@ -509,21 +540,21 @@
 									return n[e] === t
 								}));
 							if (1 === r.length) return r[0].element;
-							if (r.length > 1) throw new Error("You did not specify the type of Source or Token to create.\n        We could not infer which Element you want to use for this operation.");
+							if (r.length > 1) throw new Error("You did not specify the type of Source, Token, or PaymentMethod to create.\n        We could not infer which Element you want to use for this operation.");
 							return null
 						}, o.requireElement = function(e, t) {
 							var n = o.findElement(e, t);
 							if (n) return n;
-							throw new Error("You did not specify the type of Source or Token to create.\n        We could not infer which Element you want to use for this operation.")
+							throw new Error("You did not specify the type of Source, Token, or PaymentMethod to create.\n        We could not infer which Element you want to use for this operation.")
 						}, o.wrappedCreateToken = function(e) {
 							return function() {
 								var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
 									n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-								if (t && "object" === (void 0 === t ? "undefined" : s(t))) {
+								if (t && "object" === (void 0 === t ? "undefined" : a(t))) {
 									var r = t,
-										a = r.type,
+										s = r.type,
 										i = d(r, ["type"]),
-										l = "string" == typeof a ? a : "auto",
+										l = "string" == typeof s ? s : "auto",
 										c = o.requireElement("impliedTokenType", l);
 									return e.createToken(c, i)
 								}
@@ -531,17 +562,44 @@
 									var p = t;
 									return e.createToken(p, n)
 								}
-								throw new Error("Invalid options passed to createToken. Expected an object, got " + (void 0 === t ? "undefined" : s(t)) + ".")
+								throw new Error("Invalid options passed to createToken. Expected an object, got " + (void 0 === t ? "undefined" : a(t)) + ".")
 							}
 						}, o.wrappedCreateSource = function(e) {
 							return function() {
 								var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-								if (t && "object" === (void 0 === t ? "undefined" : s(t))) {
-									if ("string" != typeof t.type) throw new Error("Invalid Source type passed to createSource. Expected string, got " + s(t.type) + ".");
+								if (t && "object" === (void 0 === t ? "undefined" : a(t))) {
+									if ("string" != typeof t.type) throw new Error("Invalid Source type passed to createSource. Expected string, got " + a(t.type) + ".");
 									var n = o.findElement("impliedSourceType", t.type);
 									return n ? e.createSource(n, t) : e.createSource(t)
 								}
-								throw new Error("Invalid options passed to createSource. Expected an object, got " + (void 0 === t ? "undefined" : s(t)) + ".")
+								throw new Error("Invalid options passed to createSource. Expected an object, got " + (void 0 === t ? "undefined" : a(t)) + ".")
+							}
+						}, o.wrappedCreatePaymentMethod = function(e) {
+							return function(t, n, r) {
+								if (t && "object" === (void 0 === t ? "undefined" : a(t))) return e.createPaymentMethod(t);
+								if (!t || "string" != typeof t) throw new Error("Invalid PaymentMethod type passed to createPaymentMethod. Expected a string, got " + (void 0 === t ? "undefined" : a(t)) + ".");
+								var s = o.parseElementOrData(n);
+								if ("element" === s.type) {
+									var i = s.element;
+									return r ? e.createPaymentMethod(t, i, r) : e.createPaymentMethod(t, i)
+								}
+								var l = s.data,
+									c = o.findElement("impliedPaymentMethodType", t);
+								if (c) return l ? e.createPaymentMethod(t, c, l) : e.createPaymentMethod(t, c);
+								if (l && "object" === (void 0 === l ? "undefined" : a(l))) return e.createPaymentMethod(t, l);
+								throw l ? new Error("Invalid data passed to createPaymentMethod. Expected an object, got " + (void 0 === l ? "undefined" : a(l)) + ".") : new Error("Could not find an Element that can be used to create a PaymentMethod of type: " + t + ".")
+							}
+						}, o.wrappedHandleCardX = function(e, t) {
+							return function(n, r, s) {
+								if (!n || "string" != typeof n) throw new Error("Invalid PaymentIntent client secret passed to handleCardPayment. Expected string, got " + (void 0 === n ? "undefined" : a(n)) + ".");
+								var i = o.parseElementOrData(r);
+								if ("element" === i.type) {
+									var l = i.element;
+									return s ? e[t](n, l, s) : e[t](n, l)
+								}
+								var c = i.data,
+									d = o.findElement("impliedPaymentMethodType", "card");
+								return d ? c ? e[t](n, d, c) : e[t](n, d) : c ? e[t](n, c) : e[t](n)
 							}
 						}, "sync" === o.context.tag ? o.state = {
 							stripe: o.stripeProps(o.context.stripe)
@@ -562,12 +620,16 @@
 					}, n.prototype.stripeProps = function(e) {
 						return o({}, e, {
 							createToken: this.wrappedCreateToken(e),
-							createSource: this.wrappedCreateSource(e)
+							createSource: this.wrappedCreateSource(e),
+							createPaymentMethod: this.wrappedCreatePaymentMethod(e),
+							handleCardPayment: this.wrappedHandleCardX(e, "handleCardPayment"),
+							handleCardSetup: this.wrappedHandleCardX(e, "handleCardSetup")
 						})
 					}, n.prototype.render = function() {
 						var t = this;
 						return i.default.createElement(e, o({}, this.props, {
 							stripe: this.state.stripe,
+							elements: this.context.elements,
 							ref: f ? function(e) {
 								t.wrappedInstance = e
 							} : null
@@ -580,11 +642,11 @@
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
 				value: !0
-			}), t.IdealBankElement = t.IbanElement = t.PaymentRequestButtonElement = t.PostalCodeElement = t.CardCVCElement = t.CardExpiryElement = t.CardNumberElement = t.CardElement = t.Elements = t.injectStripe = t.StripeProvider = void 0;
+			}), t.AuBankAccountElement = t.FpxBankElement = t.IdealBankElement = t.IbanElement = t.PaymentRequestButtonElement = t.CardCVCElement = t.CardCvcElement = t.CardExpiryElement = t.CardNumberElement = t.CardElement = t.Elements = t.injectStripe = t.StripeProvider = void 0;
 			var r = l(n("./node_modules/react-stripe-elements/es/components/Provider.js")),
 				o = l(n("./node_modules/react-stripe-elements/es/components/inject.js")),
-				s = l(n("./node_modules/react-stripe-elements/es/components/Elements.js")),
-				a = l(n("./node_modules/react-stripe-elements/es/components/Element.js")),
+				a = l(n("./node_modules/react-stripe-elements/es/components/Elements.js")),
+				s = l(n("./node_modules/react-stripe-elements/es/components/Element.js")),
 				i = l(n("./node_modules/react-stripe-elements/es/components/PaymentRequestButtonElement.js"));
 
 			function l(e) {
@@ -592,25 +654,61 @@
 					default: e
 				}
 			}
-			var c = (0, a.default)("card", {
+			var c = (0, s.default)("card", {
 					impliedTokenType: "card",
-					impliedSourceType: "card"
+					impliedSourceType: "card",
+					impliedPaymentMethodType: "card"
 				}),
-				d = (0, a.default)("cardNumber", {
+				d = (0, s.default)("cardNumber", {
 					impliedTokenType: "card",
-					impliedSourceType: "card"
+					impliedSourceType: "card",
+					impliedPaymentMethodType: "card"
 				}),
-				p = (0, a.default)("cardExpiry"),
-				u = (0, a.default)("cardCvc"),
-				m = (0, a.default)("postalCode"),
-				f = (0, a.default)("iban", {
+				p = (0, s.default)("cardExpiry"),
+				u = (0, s.default)("cardCvc"),
+				m = u,
+				f = (0, s.default)("iban", {
 					impliedTokenType: "bank_account",
 					impliedSourceType: "sepa_debit"
 				}),
-				y = (0, a.default)("idealBank", {
+				y = (0, s.default)("idealBank", {
 					impliedSourceType: "ideal"
-				});
-			t.StripeProvider = r.default, t.injectStripe = o.default, t.Elements = s.default, t.CardElement = c, t.CardNumberElement = d, t.CardExpiryElement = p, t.CardCVCElement = u, t.PostalCodeElement = m, t.PaymentRequestButtonElement = i.default, t.IbanElement = f, t.IdealBankElement = y
+				}),
+				h = (0, s.default)("fpxBank"),
+				b = (0, s.default)("auBankAccount");
+			t.StripeProvider = r.default, t.injectStripe = o.default, t.Elements = a.default, t.CardElement = c, t.CardNumberElement = d, t.CardExpiryElement = p, t.CardCvcElement = u, t.CardCVCElement = m, t.PaymentRequestButtonElement = i.default, t.IbanElement = f, t.IdealBankElement = y, t.FpxBankElement = h, t.AuBankAccountElement = b
+		},
+		"./node_modules/react-stripe-elements/es/utils/isEqual.js": function(e, t, n) {
+			"use strict";
+			Object.defineProperty(t, "__esModule", {
+				value: !0
+			});
+			var r = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+				return typeof e
+			} : function(e) {
+				return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+			};
+			t.default = function e(t, n) {
+				if ("object" !== (void 0 === t ? "undefined" : r(t)) || "object" !== (void 0 === n ? "undefined" : r(n))) return t === n;
+				if (null === t || null === n) return t === n;
+				var o = Array.isArray(t);
+				if (o !== Array.isArray(n)) return !1;
+				var a = "[object Object]" === Object.prototype.toString.call(t);
+				if (a !== ("[object Object]" === Object.prototype.toString.call(n))) return !1;
+				if (!a && !o) return !1;
+				var s = Object.keys(t),
+					i = Object.keys(n);
+				if (s.length !== i.length) return !1;
+				for (var l = {}, c = 0; c < s.length; c += 1) l[s[c]] = !0;
+				for (var d = 0; d < i.length; d += 1) l[i[d]] = !0;
+				var p = Object.keys(l);
+				if (p.length !== s.length) return !1;
+				var u = t,
+					m = n;
+				return p.every((function(t) {
+					return e(u[t], m[t])
+				}))
+			}
 		},
 		"./node_modules/react-stripe-elements/es/utils/shallowEqual.js": function(e, t, n) {
 			"use strict";
@@ -631,10 +729,10 @@
 
 			function o() {}
 
-			function s() {}
-			s.resetWarningCache = o, e.exports = function() {
-				function e(e, t, n, o, s, a) {
-					if (a !== r) {
+			function a() {}
+			a.resetWarningCache = o, e.exports = function() {
+				function e(e, t, n, o, a, s) {
+					if (s !== r) {
 						var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
 						throw i.name = "Invariant Violation", i
 					}
@@ -663,7 +761,7 @@
 					oneOfType: t,
 					shape: t,
 					exact: t,
-					checkPropTypes: s,
+					checkPropTypes: a,
 					resetWarningCache: o
 				};
 				return n.PropTypes = n, n
@@ -691,8 +789,8 @@
 			"use strict";
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				a = n("./node_modules/react-redux/es/index.js"),
+				a = n.n(o),
+				s = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
 				l = n("./src/lib/classNames/index.ts"),
 				c = n("./node_modules/react-stripe-elements/es/index.js"),
@@ -706,32 +804,35 @@
 					cardName: p.h,
 					cardNumberValidation: p.i,
 					nameOnCardValidation: p.k,
-					postalCodeValidation: p.l
+					postalCode: p.l
 				}),
-				y = Object(a.b)(f, (e, t) => ({
+				y = Object(s.b)(f, (e, t) => ({
 					onCardElementChange: t => e(Object(d.cardElementChange)(t)),
 					onNameInput: t => e(Object(d.cardNameInput)({
 						cardName: t
+					})),
+					onPostalCodeInput: t => e(Object(d.postalCodeInput)({
+						postalCode: t
 					}))
 				}));
-			class h extends s.a.Component {
+			class h extends a.a.Component {
 				constructor() {
 					super(...arguments), this.computedStyle = getComputedStyle(document.body), this.state = {
 						cardNumberReady: !1,
 						cardExpiryReady: !1,
-						cardCVCReady: !1,
-						postalCodeReady: !1
-					}, this.onChange = e => {
+						cardCVCReady: !1
+					}, this.onChangeCardName = e => {
 						const t = e.currentTarget.value;
 						t !== this.props.cardName && this.props.onNameInput(t)
+					}, this.onChangePostalCode = e => {
+						const t = e.currentTarget.value;
+						t !== this.props.postalCode && this.props.onPostalCodeInput(t)
 					}, this.onCardNumberReady = () => this.setState({
 						cardNumberReady: !0
 					}), this.onCardExpiryReady = () => this.setState({
 						cardExpiryReady: !0
 					}), this.onCardCVCReady = () => this.setState({
 						cardCVCReady: !0
-					}), this.onPostalCodeReady = () => this.setState({
-						postalCodeReady: !0
 					})
 				}
 				render() {
@@ -740,16 +841,15 @@
 						cardCvcValidation: t,
 						cardExpiryValidation: n,
 						cardName: o,
-						cardNumberValidation: a,
+						cardNumberValidation: s,
 						onCardElementChange: i,
 						nameOnCardValidation: d,
-						postalCodeValidation: p
+						postalCode: p
 					} = this.props, {
 						cardNumberReady: u,
 						cardExpiryReady: f,
-						cardCVCReady: y,
-						postalCodeReady: h
-					} = this.state, _ = {
+						cardCVCReady: y
+					} = this.state, h = {
 						base: {
 							lineHeight: "40px",
 							color: this.computedStyle.getPropertyValue("--newRedditTheme-bodyText"),
@@ -758,11 +858,11 @@
 							}
 						}
 					};
-					return s.a.createElement("div", {
+					return a.a.createElement("div", {
 						className: Object(l.a)(m.a.checkoutForm, e)
-					}, s.a.createElement("div", {
+					}, a.a.createElement("div", {
 						className: m.a.formCellWide
-					}, s.a.createElement("input", {
+					}, a.a.createElement("input", {
 						className: Object(l.a)(m.a.cardInput, m.a.nameOnCard, {
 							[m.a.cardInputError]: !!d
 						}),
@@ -770,27 +870,27 @@
 						placeholder: r.fbt._("NAME ON CARD", null, {
 							hk: "IgrlQ"
 						}).toString(),
-						onChange: this.onChange,
+						onChange: this.onChangeCardName,
 						value: o
-					})), s.a.createElement("div", {
+					})), a.a.createElement("div", {
 						className: m.a.formCell
-					}, s.a.createElement(c.CardNumberElement, {
+					}, a.a.createElement(c.CardNumberElement, {
 						className: Object(l.a)(m.a.cardInput, {
-							[m.a.cardInputError]: !!a
+							[m.a.cardInputError]: !!s
 						}),
 						onChange: i,
 						onReady: this.onCardNumberReady,
 						placeholder: r.fbt._("CARD NUMBER", null, {
 							hk: "3pqMxG"
 						}).toString(),
-						style: _
-					}), !u && s.a.createElement("div", {
+						style: h
+					}), !u && a.a.createElement("div", {
 						className: m.a.elementPlaceholder
 					}, r.fbt._("CARD NUMBER", null, {
 						hk: "3pqMxG"
-					}))), s.a.createElement("div", {
+					}))), a.a.createElement("div", {
 						className: m.a.formCell
-					}, s.a.createElement(c.CardExpiryElement, {
+					}, a.a.createElement(c.CardExpiryElement, {
 						className: Object(l.a)(m.a.cardInput, {
 							[m.a.cardInputError]: !!n
 						}),
@@ -799,14 +899,14 @@
 						placeholder: r.fbt._("MM/YY", null, {
 							hk: "Hou17"
 						}).toString(),
-						style: _
-					}), !f && s.a.createElement("div", {
+						style: h
+					}), !f && a.a.createElement("div", {
 						className: m.a.elementPlaceholder
 					}, r.fbt._("MM/YY", null, {
 						hk: "Hou17"
-					}))), s.a.createElement("div", {
+					}))), a.a.createElement("div", {
 						className: m.a.formCell
-					}, s.a.createElement(c.CardCVCElement, {
+					}, a.a.createElement(c.CardCVCElement, {
 						className: Object(l.a)(m.a.cardInput, {
 							[m.a.cardInputError]: !!t
 						}),
@@ -815,28 +915,22 @@
 						placeholder: r.fbt._("CCV", null, {
 							hk: "dZzZJ"
 						}).toString(),
-						style: _
-					}), !y && s.a.createElement("div", {
+						style: h
+					}), !y && a.a.createElement("div", {
 						className: m.a.elementPlaceholder
 					}, r.fbt._("CCV", null, {
 						hk: "dZzZJ"
-					}))), s.a.createElement("div", {
+					}))), a.a.createElement("div", {
 						className: m.a.formCell
-					}, s.a.createElement(c.PostalCodeElement, {
-						className: Object(l.a)(m.a.cardInput, {
-							[m.a.cardInputError]: !!p
-						}),
-						onChange: i,
-						onReady: this.onPostalCodeReady,
+					}, a.a.createElement("input", {
+						className: Object(l.a)(m.a.cardInput, m.a.nameOnCard),
+						type: "text",
+						onChange: this.onChangePostalCode,
 						placeholder: r.fbt._("ZIP CODE", null, {
 							hk: "2lJZ4j"
 						}).toString(),
-						style: _
-					}), !h && s.a.createElement("div", {
-						className: m.a.elementPlaceholder
-					}, r.fbt._("ZIP CODE", null, {
-						hk: "2lJZ4j"
-					}))))
+						value: p
+					})))
 				}
 			}
 			t.a = Object(c.injectStripe)(y(h))
@@ -855,8 +949,8 @@
 			n.r(t);
 			var r = n("./src/config.ts"),
 				o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				a = n.n(s),
+				a = n("./node_modules/react/index.js"),
+				s = n.n(a),
 				i = n("./node_modules/react-redux/es/index.js"),
 				l = n("./node_modules/react-stripe-elements/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
@@ -867,18 +961,18 @@
 				f = n("./src/lib/constants/index.ts"),
 				y = n("./src/lib/makeActionCreator/index.ts"),
 				h = n("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				_ = n("./src/reddit/actions/modal.ts"),
-				b = n("./src/reddit/actions/toaster.ts"),
+				b = n("./src/reddit/actions/modal.ts"),
+				_ = n("./src/reddit/actions/toaster.ts"),
 				E = n("./src/reddit/components/Settings/PremiumForm.tsx"),
 				v = n("./src/reddit/endpoints/gold/purchase.ts"),
-				C = n("./src/reddit/models/Toast/index.ts"),
-				g = n("./src/reddit/selectors/activeModalId.ts"),
-				w = n("./src/reddit/selectors/goldPurchaseModals.ts"),
-				j = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const x = Object(y.a)(j.f),
+				g = n("./src/reddit/models/Toast/index.ts"),
+				C = n("./src/reddit/selectors/activeModalId.ts"),
+				j = n("./src/reddit/selectors/goldPurchaseModals.ts"),
+				w = n("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const x = Object(y.a)(w.f),
 				O = () => async (e, t) => {
-					Object(g.b)(E.a)(t()) && (e(Object(_.i)(E.a)), e(x()))
-				}, S = Object(y.a)(j.I), R = Object(y.a)(j.H), P = e => {
+					Object(C.b)(E.a)(t()) && (e(Object(b.i)(E.a)), e(x()))
+				}, P = Object(y.a)(w.J), S = Object(y.a)(w.I), T = e => {
 					switch (e && e.error && e.error.type) {
 						case f.E.USER_DOESNT_EXIST:
 						case f.E.VALIDATION_ERROR:
@@ -902,30 +996,30 @@
 								hk: "ie9Ol"
 							})
 					}
-				}, T = e => async t => {
-					await t(R()), t(Object(b.f)({
-						kind: C.b.Error,
-						duration: b.a,
+				}, k = e => async t => {
+					await t(S()), t(Object(_.f)({
+						kind: g.b.Error,
+						duration: _.a,
 						text: e
 					}))
-				}, k = Object(y.a)(j.J), N = e => async (t, n) => {
-					t(k(e)), t(O());
+				}, R = Object(y.a)(w.K), N = e => async (t, n) => {
+					t(R(e)), t(O());
 					const r = o.fbt._("You successfully updated your payment information!", null, {
 						hk: "3m4P1N"
 					});
-					t(Object(b.f)({
-						kind: C.b.SuccessCommunity,
+					t(Object(_.f)({
+						kind: g.b.SuccessCommunity,
 						text: r
 					}))
 				};
-			var I = n("./src/reddit/components/CheckoutForm/index.tsx"),
-				M = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var M = n("./src/reddit/components/CheckoutForm/index.tsx"),
+				I = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				L = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				q = n("./src/reddit/controls/TextButton/index.tsx"),
-				B = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+				B = n("./src/reddit/controls/TextButton/index.tsx"),
+				A = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
 
-			function V() {
-				return (V = Object.assign || function(e) {
+			function q() {
+				return (q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -933,54 +1027,54 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const A = Object(c.c)({
-					isPending: w.z
+			const U = Object(c.c)({
+					isPending: j.z
 				}),
-				F = Object(i.b)(A, (e, t) => ({
+				V = Object(i.b)(U, (e, t) => ({
 					closeModal: () => e(O()),
 					submitCard: t => e((e => async (t, n, {
 						apiContext: r
 					}) => {
-						t(S()), t(Object(h.stripeTokenPending)());
-						const s = await t(Object(h.validateAndCreateStripeToken)(e));
-						if (!s) {
-							const e = Object(w.j)(n()) || o.fbt._("Looks like something went wrong validating your credit card.", null, {
+						t(P()), t(Object(h.stripeTokenPending)());
+						const a = await t(Object(h.validateAndCreateStripeToken)(e));
+						if (!a) {
+							const e = Object(j.j)(n()) || o.fbt._("Looks like something went wrong validating your credit card.", null, {
 								hk: "4eGqpL"
 							});
-							return await t(T(e))
+							return await t(k(e))
 						}
 						try {
-							const e = await Object(v.h)(r(), s);
+							const e = await Object(v.h)(r(), a);
 							if (e.ok) {
 								const n = e.body,
 									{
 										brand: r,
 										card_id: o,
-										last4: s,
-										exp_month: a,
+										last4: a,
+										exp_month: s,
 										exp_year: i
 									} = n;
 								await t(N({
 									brand: r,
 									cardId: o,
-									last4: s,
-									expirationMonth: a,
+									last4: a,
+									expirationMonth: s,
 									expirationYear: i
 								}))
 							} else {
-								const n = P(e);
-								await t(T(n))
+								const n = T(e);
+								await t(k(n))
 							}
-						} catch (a) {
+						} catch (s) {
 							const e = o.fbt._("Something went wrong", null, {
 								hk: "ie9Ol"
 							});
-							await t(T(e))
+							await t(k(e))
 						}
 					})(t))
 				})),
-				U = 15;
-			class D extends a.a.Component {
+				D = 15;
+			class F extends s.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						27 === e.keyCode && this.props.closeModal()
@@ -1004,53 +1098,53 @@
 						closeModal: t,
 						isPending: n
 					} = this.props;
-					return a.a.createElement(M.d, {
+					return s.a.createElement(I.d, {
 						className: Object(d.a)(e, u.a.updateCardModal)
-					}, a.a.createElement(M.h, null, a.a.createElement(B.a, null, a.a.createElement(M.p, null, o.fbt._("Update Payment Information", null, {
+					}, s.a.createElement(I.h, null, s.a.createElement(A.a, null, s.a.createElement(I.p, null, o.fbt._("Update Payment Information", null, {
 						hk: "1PrvDp"
-					})), a.a.createElement(q.a, {
+					})), s.a.createElement(B.a, {
 						onClick: t
-					}, a.a.createElement(M.b, null))), a.a.createElement(M.o, {
+					}, s.a.createElement(I.b, null))), s.a.createElement(I.o, {
 						className: u.a.descriptionText
 					}, o.fbt._("Change the Credit Card associated with your Premium subscription. This will be reflected in your next billing cycle.", null, {
 						hk: "1btBv6"
-					}))), a.a.createElement(M.k, null, a.a.createElement(I.a, {
+					}))), s.a.createElement(I.k, null, s.a.createElement(M.a, {
 						className: u.a.creditCard
-					}), a.a.createElement("a", {
+					}), s.a.createElement("a", {
 						href: "https://stripe.com",
 						target: "_blank"
-					}, a.a.createElement("img", {
+					}, s.a.createElement("img", {
 						className: u.a.poweredByStripeIcon,
 						src: `${r.a.assetPath}/img/payment-icons/powered-by-stripe.png`
-					})), a.a.createElement("div", {
+					})), s.a.createElement("div", {
 						className: u.a.agreementLink
-					}, o.fbt._("By purchasing Coins, you agree to the {agreement}", [o.fbt._param("agreement", a.a.createElement("a", {
+					}, o.fbt._("By purchasing Coins, you agree to the {agreement}", [o.fbt._param("agreement", s.a.createElement("a", {
 						href: "https://www.redditinc.com/policies/user-agreement",
 						target: "_blank"
 					}, o.fbt._("Reddit User Agreement", null, {
 						hk: "2oIYsO"
 					})))], {
 						hk: "3VFT3g"
-					}))), a.a.createElement(M.f, null, a.a.createElement(M.q, {
+					}))), s.a.createElement(I.f, null, s.a.createElement(I.q, {
 						className: u.a.updateButton,
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.handleSubmitCard
-					}, n ? a.a.createElement(L.a, {
-						sizePx: U
+					}, n ? s.a.createElement(L.a, {
+						sizePx: D
 					}) : o.fbt._("update", null, {
 						hk: "4FAt0s"
 					}))))
 				}
 			}
-			const W = Object(l.injectStripe)(Object(m.a)(D));
-			t.default = F(e => a.a.createElement(l.StripeProvider, {
+			const K = Object(l.injectStripe)(Object(m.a)(F));
+			t.default = V(e => s.a.createElement(l.StripeProvider, {
 				apiKey: r.a.stripe.apiKey
-			}, a.a.createElement(l.Elements, null, a.a.createElement(W, V({}, e, {
+			}, s.a.createElement(l.Elements, null, s.a.createElement(K, q({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.63ba7848eda6827ccae7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.61882ecbeb6a788b7689.js.map

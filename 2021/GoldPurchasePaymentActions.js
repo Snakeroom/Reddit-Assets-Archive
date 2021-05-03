@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.5ff861991ed1f5cdfddc.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.ffb25ae56a433bf4001a.js
+// Retrieved at 5/3/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -10,34 +10,36 @@
 				return u
 			})), r.d(t, "cardNameInput", (function() {
 				return p
-			})), r.d(t, "cardNameEmpty", (function() {
+			})), r.d(t, "postalCodeInput", (function() {
 				return l
-			})), r.d(t, "cardElementChange", (function() {
+			})), r.d(t, "cardNameEmpty", (function() {
 				return b
-			})), r.d(t, "stripeTokenPending", (function() {
+			})), r.d(t, "cardElementChange", (function() {
 				return m
-			})), r.d(t, "stripeTokenError", (function() {
+			})), r.d(t, "stripeTokenPending", (function() {
 				return O
+			})), r.d(t, "stripeTokenError", (function() {
+				return f
 			})), r.d(t, "stripeApiError", (function() {
 				return h
 			})), r.d(t, "validateAndCreateStripeToken", (function() {
-				return f
-			})), r.d(t, "paypalApiError", (function() {
 				return _
-			})), r.d(t, "toggleRememberCard", (function() {
+			})), r.d(t, "paypalApiError", (function() {
 				return j
-			})), r.d(t, "selectSavedCard", (function() {
+			})), r.d(t, "toggleRememberCard", (function() {
 				return y
-			})), r.d(t, "_deleteSavedCard", (function() {
+			})), r.d(t, "selectSavedCard", (function() {
 				return g
-			})), r.d(t, "deleteSavedCard", (function() {
+			})), r.d(t, "_deleteSavedCard", (function() {
 				return x
-			})), r.d(t, "savedCardsPending", (function() {
+			})), r.d(t, "deleteSavedCard", (function() {
 				return P
-			})), r.d(t, "savedCardsSuccess", (function() {
+			})), r.d(t, "savedCardsPending", (function() {
 				return I
-			})), r.d(t, "loadSavedCards", (function() {
+			})), r.d(t, "savedCardsSuccess", (function() {
 				return w
+			})), r.d(t, "loadSavedCards", (function() {
+				return C
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/sentry/index.ts"),
@@ -45,48 +47,51 @@
 				c = r("./src/reddit/endpoints/gold/purchase.ts"),
 				i = r("./src/reddit/actions/goldPurchaseModals/constants.ts"),
 				d = r("./src/reddit/selectors/goldPurchaseModals.ts");
-			const s = Object(o.a)(i.A),
+			const s = Object(o.a)(i.B),
 				u = Object(o.a)(i.w),
 				p = Object(o.a)(i.b),
-				l = Object(o.a)(i.a),
-				b = Object(o.a)(i.D),
-				m = Object(o.a)(i.F),
-				O = Object(o.a)(i.E),
-				h = Object(o.a)(i.C),
-				f = e => async (t, r) => {
+				l = Object(o.a)(i.y),
+				b = Object(o.a)(i.a),
+				m = Object(o.a)(i.E),
+				O = Object(o.a)(i.G),
+				f = Object(o.a)(i.F),
+				h = Object(o.a)(i.D),
+				_ = e => async (t, r) => {
 					const a = r(),
 						o = Object(d.h)(a),
+						c = Object(d.l)(a),
 						{
-							token: c,
-							error: i
+							token: i,
+							error: s
 						} = await e.createToken({
-							name: o
+							name: o,
+							address_zip: c
 						});
 					if (o.trim()) {
-						if (!i && c) return c;
-						t(O(i || void 0))
+						if (!s && i) return i;
+						t(f(s || void 0))
 					} else {
 						const e = n.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
 						});
-						t(l({
+						t(b({
 							message: e
 						}))
 					}
-				}, _ = Object(o.a)(i.x), j = Object(o.a)(i.G), y = Object(o.a)(i.B), g = Object(o.a)(i.g), x = e => async (t, r, {
+				}, j = Object(o.a)(i.x), y = Object(o.a)(i.H), g = Object(o.a)(i.C), x = Object(o.a)(i.g), P = e => async (t, r, {
 					apiContext: n
 				}) => {
-					t(g(e));
+					t(x(e));
 					try {
 						const t = await Object(c.a)(n(), e);
 						if (t.error) throw new Error(t.error.type)
 					} catch (o) {
 						a.c.captureException(o)
 					}
-				}, P = Object(o.a)(i.y), I = Object(o.a)(i.z), w = () => async (e, t, {
+				}, I = Object(o.a)(i.z), w = Object(o.a)(i.A), C = () => async (e, t, {
 					apiContext: r
 				}) => {
-					e(P());
+					e(I());
 					try {
 						const t = await Object(c.b)(r());
 						if (t.error) throw new Error(t.error.type);
@@ -97,9 +102,9 @@
 							expirationYear: e.exp_year,
 							last4: e.last4
 						}));
-						e(I(n)), n[0] && e(y(n[0].cardId))
+						e(w(n)), n[0] && e(g(n[0].cardId))
 					} catch (n) {
-						a.c.captureException(n), e(I([]))
+						a.c.captureException(n), e(w([]))
 					}
 				}
 		},
@@ -108,9 +113,9 @@
 			r.r(t), r.d(t, "openPremiumPurchaseModal", (function() {
 				return O
 			})), r.d(t, "closePremiumPurchaseModal", (function() {
-				return h
-			})), r.d(t, "stripePremiumPurchaseRequested", (function() {
 				return f
+			})), r.d(t, "stripePremiumPurchaseRequested", (function() {
+				return h
 			})), r.d(t, "paymentBlobCreated", (function() {
 				return _
 			})), r.d(t, "openWithBlob", (function() {
@@ -129,8 +134,8 @@
 				b = r("./src/reddit/selectors/goldPurchaseModals.ts"),
 				m = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const O = Object(o.a)(m.t),
-				h = Object(o.a)(m.e),
-				f = e => async (t, r, {
+				f = Object(o.a)(m.e),
+				h = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const o = Object(b.a)(r()),
@@ -333,4 +338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.5ff861991ed1f5cdfddc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.ffb25ae56a433bf4001a.js.map
