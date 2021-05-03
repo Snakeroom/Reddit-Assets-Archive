@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.22489512194493bb55df.js
-// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.cf947856311d85d60e9d.js
+// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -414,7 +414,7 @@
 						})))
 					}
 				}, V = Object(u.a)(h.R), Q = e => async (t, r) => {
-					t(V(e)), t(Object(P.g)(e.subredditId, {
+					t(V(e)), t(Object(P.h)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
@@ -1870,4 +1870,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.22489512194493bb55df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.cf947856311d85d60e9d.js.map

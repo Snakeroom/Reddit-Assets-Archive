@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6c592944a20eb68a2a11.js
-// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3be108cc2a8cc8afe543.js
+// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1237,7 +1237,7 @@
 						B = Object(H.J)(s());
 					if (R && "subreddit" === R.belongsTo.type) {
 						const e = R.belongsTo.id,
-							s = Object($.i)(() => t(Object(J.g)(e, {
+							s = Object($.i)(() => t(Object(J.h)(e, {
 								fullData: !0,
 								includeIdentity: B
 							})), {
@@ -3649,7 +3649,7 @@
 						className: os.a.UserIcon
 					}), L && a.a.createElement(Lt.a, {
 						onClick: e => {
-							$(Object(H.q)("comment")), z(), e.stopPropagation(), e.preventDefault()
+							$(Object(H.r)("comment")), z(), e.stopPropagation(), e.preventDefault()
 						},
 						className: os.a.topSupporterIcon,
 						title: D.fbt._("Powerups Top Supporter", null, {
@@ -9614,4 +9614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6c592944a20eb68a2a11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3be108cc2a8cc8afe543.js.map

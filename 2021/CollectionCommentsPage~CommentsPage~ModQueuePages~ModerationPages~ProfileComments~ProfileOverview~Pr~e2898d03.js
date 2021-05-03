@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.7858e022995ee5d07707.js
-// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.66fab3440acd8e60860a.js
+// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -711,8 +711,8 @@
 			};
 			var J = o("./src/lib/addQueryParams/index.ts"),
 				W = o("./src/lib/humanizeDateTime/index.ts"),
-				q = o("./src/lib/timeAgo/index.ts"),
-				Q = o("./src/reddit/actions/comment/index.ts");
+				Q = o("./src/lib/timeAgo/index.ts"),
+				q = o("./src/reddit/actions/comment/index.ts");
 			const G = e => {
 					const {
 						className: t,
@@ -737,7 +737,7 @@
 						onMouseLeave: c,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, Object(q.d)(o.created, {
+					}, Object(Q.d)(o.created, {
 						noPostfix: n,
 						shortenedUnit: n
 					}), r.a.createElement(D.c, {
@@ -751,9 +751,9 @@
 					}))
 				},
 				K = (e, t, o) => {
-					window.removeEventListener("focus", o), e(Object(Q.g)({
+					window.removeEventListener("focus", o), e(Object(q.g)({
 						commentListNodeId: t
-					})), window.setTimeout(() => e(Object(Q.g)({
+					})), window.setTimeout(() => e(Object(q.g)({
 						commentListNodeId: t
 					})), 5e3)
 				};
@@ -775,7 +775,7 @@
 				editedAt: t
 			}) => r.a.createElement(_.a, {
 				className: ne.a.editedText
-			}, se._("edited {time}", [se._param("time", Object(q.d)(t, {
+			}, se._("edited {time}", [se._param("time", Object(Q.d)(t, {
 				noPostfix: e,
 				shortenedUnit: e
 			}))], {
@@ -1108,8 +1108,8 @@
 			const Xe = p.a.wrapped(O.b, "RightPositionedAuthorFlair", Ve.a),
 				Je = p.a.wrapped(Re.a, "AdminIcon", Ve.a),
 				We = p.a.div("AdminEmeritus", Ve.a),
-				qe = p.a.wrapped(Le.a, "ModeratorIcon", Ve.a),
-				Qe = p.a.wrapped(Pe.a, "OpIcon", Ve.a),
+				Qe = p.a.wrapped(Le.a, "ModeratorIcon", Ve.a),
+				qe = p.a.wrapped(Pe.a, "OpIcon", Ve.a),
 				Ge = p.a.wrapped(Re.a, "ContractorIcon", Ve.a),
 				Ze = p.a.span("DeletedText", Ve.a),
 				Ke = p.a.wrapped(_.a, "MetaSeparator", Ve.a),
@@ -1255,7 +1255,7 @@
 					onHideTooltip: D,
 					onShowTooltip: w,
 					openPowerupsModal: () => {
-						U(Object(b.q)("comment")), P()
+						U(Object(b.r)("comment")), P()
 					},
 					opTooltipId: R,
 					renderContractorBadge: L,
@@ -1404,12 +1404,12 @@
 						id: n.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
 						onMouseLeave: n.onHideTooltip
-					}) : r.a.createElement(qe, {
+					}) : r.a.createElement(Qe, {
 						desc: F(n.subredditDisplayText),
 						id: n.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
 						onMouseLeave: n.onHideTooltip
-					})), e.isMod && st(n.modTooltipId, F(n.subredditDisplayText)), e.isOp && r.a.createElement(Qe, {
+					})), e.isMod && st(n.modTooltipId, F(n.subredditDisplayText)), e.isOp && r.a.createElement(qe, {
 						desc: H(),
 						id: n.opTooltipId,
 						onMouseEnter: this.onShowOpTooltip,
@@ -2221,4 +2221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.7858e022995ee5d07707.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.66fab3440acd8e60860a.js.map

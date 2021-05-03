@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.ff9b3b62e8bee6584ac5.js
-// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.44b6837c295a7be09f63.js
+// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1724,7 +1724,7 @@
 					onHideTooltip: L,
 					onShowTooltip: M,
 					openPowerupsModal: () => {
-						V(Object(h.q)("comment")), R()
+						V(Object(h.r)("comment")), R()
 					},
 					opTooltipId: F,
 					renderContractorBadge: A,
@@ -9285,4 +9285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ff9b3b62e8bee6584ac5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.44b6837c295a7be09f63.js.map

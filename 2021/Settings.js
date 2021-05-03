@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f0bcb90cad40a9308e6c.js
-// Retrieved at 5/3/2021, 9:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.27b6f9b0a046006f2947.js
+// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -1880,7 +1880,7 @@
 						})))
 					}
 				}, J = Object(m.a)(h.R), K = e => async (t, n) => {
-					t(J(e)), t(Object(_.g)(e.subredditId, {
+					t(J(e)), t(Object(_.h)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(E.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(E.h)(l.a.ECON_POWERUPS_SUCCESS))
@@ -2111,7 +2111,7 @@
 				} = e.params;
 				if (g === a.Tb.Gold) return void t(Object(s.c)("/settings/premium"));
 				const v = [];
-				g === a.Tb.Profile && (v.push(t(Object(P.a)())), v.push(t(Object(N.g)()))), g === a.Tb.Account && v.push(t(Object(p.o)())), g === a.Tb.Notifications && v.push(t(S())), g !== a.Tb.Privacy && g !== a.Tb.Messaging || v.push(t(Object(l.b)())), g === a.Tb.Premium && (v.push(t(Object(P.a)())), v.push(t(Object(b.h)(!0)))), await Promise.all(v); {
+				g === a.Tb.Profile && (v.push(t(Object(P.a)())), v.push(t(Object(N.g)()))), g === a.Tb.Account && v.push(t(Object(p.o)())), g === a.Tb.Notifications && v.push(t(S())), g !== a.Tb.Privacy && g !== a.Tb.Messaging || v.push(t(Object(l.b)())), g === a.Tb.Premium && (v.push(t(Object(P.a)())), v.push(t(Object(b.i)(!0)))), await Promise.all(v); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -3951,7 +3951,7 @@
 						hk: "2EKYNO"
 					}))), o.a.createElement(y.f, null, o.a.createElement(y.q, {
 						onClick: () => {
-							n.isPremium ? a(Object(g.e)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(v.a)(n.id, s.id, n.allocatedAt)), r()
+							n.isPremium ? a(Object(g.f)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(v.a)(n.id, s.id, n.allocatedAt)), r()
 						},
 						"data-redditstyle": !0
 					}, E._("Confirm", null, {
@@ -10755,4 +10755,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f0bcb90cad40a9308e6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.27b6f9b0a046006f2947.js.map

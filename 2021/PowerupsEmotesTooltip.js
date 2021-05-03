@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.e15683b70386975d6e1b.js
-// Retrieved at 4/28/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.cc444b8d7706a14be8fc.js
+// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -281,7 +281,7 @@
 					F = Object(l.e)(e => Object(P.i)(e, {
 						subredditId: t
 					})),
-					z = async (e, o = !1) => {
+					q = async (e, o = !1) => {
 						try {
 							return await c((({
 								subredditId: e,
@@ -319,18 +319,18 @@
 								success: !0
 							}
 						} catch (s) {
-							return o ? z(e, !1) : {
+							return o ? q(e, !1) : {
 								success: !1,
 								error: s.message
 							}
 						}
-					}, K = V ? s.fbt._("Your community has been powered up with emojis.", null, {
+					}, z = V ? s.fbt._("Your community has been powered up with emojis.", null, {
 						hk: "1S9hhd"
 					}) : s.fbt._("Powerup this community to unlock emojis.", null, {
 						hk: "17izsl"
-					}), q = U ? s.fbt._("Images under 128kb with a transparent background work the best.", null, {
+					}), K = U ? s.fbt._("Images under 128kb with a transparent background work the best.", null, {
 						hk: "c6yXl"
-					}) : K, Y = H.length >= 20;
+					}) : z, Y = H.length >= 20;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", null, (U || H.length > 0) && i.a.createElement("article", null, i.a.createElement("header", {
 					className: M.a.emotePackTitle
 				}, i.a.createElement("span", null, U ? s.fbt._("Add up to 20 emojis", null, {
@@ -341,7 +341,7 @@
 					className: M.a.newIcon
 				})), i.a.createElement("header", {
 					className: M.a.emotePackSubtitle
-				}, q), i.a.createElement("div", {
+				}, K), i.a.createElement("div", {
 					className: Object(m.a)(M.a.emotes, {
 						[M.a.disabled]: !V
 					})
@@ -365,9 +365,9 @@
 							})), void(o.current && (o.current.value = ""))
 						}
 						b(!0), d(Object(a.a)(t.length));
-						const n = await Promise.all([...t].map(e => z(e, !0))),
+						const n = await Promise.all([...t].map(e => q(e, !0))),
 							i = n.reduce((e, t) => e + (t.success ? 1 : 0), 0);
-						i > 0 && (d(Object(a.m)(i)), c(Object(I.f)({
+						i > 0 && (d(Object(a.n)(i)), c(Object(I.f)({
 							duration: 5e3,
 							kind: B.b.SuccessMod,
 							text: s.fbt._({
@@ -440,7 +440,7 @@
 				}))))), !V && i.a.createElement(v.q, {
 					className: M.a.unlockButton,
 					onClick: () => {
-						d(Object(a.p)()), c(Object(C.c)("emote_picker"))
+						d(Object(a.q)()), c(Object(C.c)("emote_picker"))
 					},
 					priority: v.b.Primary
 				}, s.fbt._("Unlock Emojis", null, {
@@ -530,7 +530,7 @@
 				const m = Object(r.a)(),
 					[u, p] = Object(n.useState)(!1);
 				Object(n.useEffect)(() => {
-					u && m(Object(a.i)())
+					u && m(Object(a.j)())
 				}, [u, m]);
 				return l.id ? i.a.createElement(c.a, {
 					className: V.a.toolbarTooltip,
@@ -632,4 +632,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.e15683b70386975d6e1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.cc444b8d7706a14be8fc.js.map
