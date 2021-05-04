@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.d42f107c0dff93e52536.js
-// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.914ea04110b9b028f773.js
+// Retrieved at 5/4/2021, 1:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -33,7 +33,7 @@
 			t.exports = JSON.parse('{"id":"00d537d082f7"}')
 		},
 		"./src/graphql/operations/PostFeedAndOtherDiscussions.json": function(t) {
-			t.exports = JSON.parse('{"id":"a752c721a60b"}')
+			t.exports = JSON.parse('{"id":"5e7d4bfd23ac"}')
 		},
 		"./src/graphql/operations/SubredditPosts.json": function(t) {
 			t.exports = JSON.parse('{"id":"8dfeb66985eb"}')
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.d42f107c0dff93e52536.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.914ea04110b9b028f773.js.map
