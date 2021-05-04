@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3a51d30ec29a9ac0186b.js
-// Retrieved at 5/4/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.33c1463ee52c24c07968.js
+// Retrieved at 5/4/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1960,7 +1960,7 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: F,
 						tooltipType: L
-					} = e, R = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Z.g), G = Object(a.e)(Y.a), W = !(!w.isSponsored || !G || Object(m.Dd)(G) || !D);
+					} = e, R = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Z.g), G = Object(a.e)(Y.a), W = !(!w.isSponsored || !G || Object(m.Bd)(G) || !D);
 					Object(s.useEffect)(() => {
 						W && R(Object(b.d)(w.author))
 					}, []);
@@ -3096,7 +3096,7 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.Ab
 					});
-					return !(!t || Object(s.Dd)(t))
+					return !(!t || Object(s.Bd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -3126,4 +3126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.3a51d30ec29a9ac0186b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.33c1463ee52c24c07968.js.map
