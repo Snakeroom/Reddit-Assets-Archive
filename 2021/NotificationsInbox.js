@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.698a0af198a81522b56b.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.f133fda9b03074f6b64a.js
+// Retrieved at 5/5/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "notificationsInboxPageRequested", (function() {
-				return g
+				return b
 			}));
 			var a = n("./node_modules/react-router-redux/es/index.js"),
 				s = n("./src/lib/pageTitle.ts"),
@@ -18,11 +18,11 @@
 				m = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				u = n("./src/reddit/selectors/notificationsInbox.tsx"),
 				p = n("./src/reddit/selectors/user.ts");
-			const g = () => async (e, t) => {
+			const b = () => async (e, t) => {
 				const n = t();
 				if (!(Object(p.J)(n) || Object(p.I)(n))) return Object(d.a)(e, n);
-				Object(m.c)(n) ? (e(b()), e(f()), await e(h())) : e(Object(a.c)("/"))
-			}, b = () => Object(i.k)({
+				Object(m.c)(n) ? (e(g()), e(f()), await e(h())) : e(Object(a.c)("/"))
+			}, g = () => Object(i.k)({
 				actionSource: i.a.NotificationsInbox,
 				redirectUrl: l.b
 			}), f = () => o.l({
@@ -77,8 +77,8 @@
 				m = n("./src/lib/lessComponent.tsx"),
 				u = n("./src/lib/loadWithRetries/index.ts"),
 				p = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
-				g = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				b = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				b = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				g = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				f = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				h = n("./src/reddit/selectors/structuredStyles.ts"),
 				x = n("./src/reddit/selectors/userPrefs.ts"),
@@ -86,7 +86,7 @@
 				E = n.n(v);
 			const {
 				fbt: _
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = m.a.div("BladeContainer", E.a), C = m.a.wrapped(b.a, "CloseIcon", E.a), k = m.a.div("LoadingTitleContainer", E.a), y = m.a.div("LoadingNavContainer", E.a), O = m.a.div("ShortLoadingNav", E.a), I = m.a.wrapped(g.a, "ThemedChevron", E.a), j = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = m.a.div("BladeContainer", E.a), C = m.a.wrapped(g.a, "CloseIcon", E.a), k = m.a.div("LoadingTitleContainer", E.a), y = m.a.div("LoadingNavContainer", E.a), O = m.a.div("ShortLoadingNav", E.a), j = m.a.wrapped(b.a, "ThemedChevron", E.a), I = ({
 				...e
 			}) => r.a.createElement(N, null, r.a.createElement(C, null), r.a.createElement(p.k, null, r.a.createElement(p.p, null, _._("Back to mod tools", null, {
 				hk: "1YCI0W"
@@ -94,17 +94,17 @@
 				className: Object(l.a)(E.a.LoadingTitle, e.isLoading && E.a.loading)
 			})), r.a.createElement(y, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement(O, null), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement("div", {
+			}), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement(O, null), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement(O, null), r.a.createElement(I, null)), r.a.createElement(y, null, r.a.createElement("div", {
+			}), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement(O, null), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), r.a.createElement(I, null))))), S = Object(d.a)({
+			}), r.a.createElement(j, null))))), S = Object(d.a)({
 				getComponent: () => Object(u.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => r.a.createElement(j, {
+				ErrorComponent: () => r.a.createElement(I, {
 					gradientType: "posts",
 					isLoading: !1
 				}),
-				LoadingComponent: () => r.a.createElement(j, {
+				LoadingComponent: () => r.a.createElement(I, {
 					gradientType: "posts",
 					isLoading: !0
 				})
@@ -177,9 +177,9 @@
 			})), n.d(t, "h", (function() {
 				return p
 			})), n.d(t, "a", (function() {
-				return g
-			})), n.d(t, "g", (function() {
 				return b
+			})), n.d(t, "g", (function() {
+				return g
 			})), n.d(t, "i", (function() {
 				return f
 			})), n.d(t, "e", (function() {
@@ -204,8 +204,8 @@
 				m = a.a.div("FormPageSection", i.a),
 				u = a.a.div("FormGroup", i.a),
 				p = a.a.h2("FormGroupTitle", i.a),
-				g = a.a.div("FormElement", i.a),
-				b = a.a.div("FormGroupDescription", i.a),
+				b = a.a.div("FormElement", i.a),
+				g = a.a.div("FormGroupDescription", i.a),
 				f = a.a.div("FormItem", i.a),
 				h = a.a.h3("FormElementTitle", i.a),
 				x = a.a.div("FormElementDescription", i.a),
@@ -248,9 +248,9 @@
 				m = n("./src/reddit/constants/componentSizes.ts"),
 				u = n("./src/reddit/constants/zIndex.ts"),
 				p = n("./src/reddit/controls/InternalLink/index.tsx"),
-				g = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				b = n("./src/reddit/components/TabNav/index.m.less"),
-				f = n.n(b);
+				b = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				g = n("./src/reddit/components/TabNav/index.m.less"),
+				f = n.n(g);
 
 			function h() {
 				return (h = Object.assign || function(e) {
@@ -263,7 +263,7 @@
 			}! function(e) {
 				e.GEAR = "gear"
 			}(a || (a = {}));
-			const x = l.a.wrapped(g.a, "Gear", f.a),
+			const x = l.a.wrapped(b.a, "Gear", f.a),
 				v = l.a.h3("Title", f.a),
 				E = l.a.div("TabNavContainer", f.a),
 				_ = l.a.div("Tabs", f.a),
@@ -299,7 +299,7 @@
 					willChange: "transform",
 					zIndex: u.g
 				};
-			class I extends o.a.Component {
+			class j extends o.a.Component {
 				constructor(e) {
 					super(e), this.toggleSticky = i()(() => {
 						this.state.sticky || this.forceUnsticky ? k() < y && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
@@ -343,7 +343,7 @@
 					}, this.props.children))
 				}
 			}
-			t.c = I
+			t.c = j
 		},
 		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -406,21 +406,20 @@
 				m = n("./src/reddit/actions/appBadgeIndicators/index.ts"),
 				u = n("./src/reddit/actions/notificationsInbox/index.ts"),
 				p = n("./src/reddit/actions/tooltip.ts"),
-				g = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				b = n("./src/lib/lessComponent.tsx"),
+				b = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
+				g = n("./src/lib/lessComponent.tsx"),
 				f = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
 				h = n("./src/reddit/components/NotificationUnit/Placeholder.tsx"),
 				x = n("./src/reddit/helpers/trackers/inbox.ts"),
 				v = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx"),
 				E = n("./src/reddit/pages/NotificationsInbox/Content/index.m.less"),
 				_ = n.n(E);
-			const N = "",
-				C = .5,
-				k = b.a.span("divider", _.a),
-				y = b.a.wrapped(f.a, "NotificationUnit", _.a);
-			class O extends s.a.Component {
+			const {
+				fbt: N
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = "", k = .5, y = g.a.span("divider", _.a), O = g.a.wrapped(f.a, "NotificationUnit", _.a);
+			class j extends s.a.Component {
 				constructor() {
-					super(...arguments), this.earlierDividerNotificationId = N, this.todayDividerNotificationId = N, this.fetchNotifications = e => {
+					super(...arguments), this.earlierDividerNotificationId = C, this.todayDividerNotificationId = C, this.fetchNotifications = e => {
 						const {
 							cursor: t
 						} = this.props;
@@ -428,7 +427,7 @@
 							after: t,
 							first: 10
 						})
-					}, this.renderNotificationItem = e => s.a.createElement(y, {
+					}, this.renderNotificationItem = e => s.a.createElement(O, {
 						activeOverflowMenuId: this.props.activeOverflowMenuId,
 						disableNotificationUpdates: this.props.disableNotificationUpdates,
 						hideNotification: this.props.hideNotification,
@@ -444,7 +443,11 @@
 							earlierNotifications: e,
 							todayNotifications: t
 						} = this.props, n = !(!e || !e.length), a = !(!t || !t.length);
-						return s.a.createElement(s.a.Fragment, null, a && s.a.createElement(k, null, "Today"), a && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(k, null, "Earlier"), n && s.a.createElement("ul", null, e && e.map(this.renderNotificationItem)))
+						return s.a.createElement(s.a.Fragment, null, a && s.a.createElement(y, null, N._("Today", null, {
+							hk: "2FZ72w"
+						})), a && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(y, null, N._("Earlier", null, {
+							hk: "1p7PDF"
+						})), n && s.a.createElement("ul", null, e && e.map(this.renderNotificationItem)))
 					}
 				}
 				componentDidMount() {
@@ -462,29 +465,29 @@
 					} = this.props, i = !!((t && t.length || 0) + (a && a.length));
 					return s.a.createElement("div", {
 						className: _.a.notificationsContainer
-					}, !i && n && s.a.createElement(h.a, null), !i && !n && s.a.createElement(v.a, null), i && this.renderNotifications(), i && !n && e && s.a.createElement(g.a, {
+					}, !i && n && s.a.createElement(h.a, null), !i && !n && s.a.createElement(v.a, null), i && this.renderNotifications(), i && !n && e && s.a.createElement(b.a, {
 						onChange: this.fetchNotifications,
 						rootMargin: "0px 0px 0px 0px",
-						threshold: C
+						threshold: k
 					}, s.a.createElement("div", null)))
 				}
 			}
-			var I = Object(r.c)(O),
-				j = n("./src/reddit/selectors/appBadges.ts"),
-				S = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				T = n("./src/reddit/selectors/notificationsInbox.tsx"),
+			var I = Object(r.c)(j),
+				S = n("./src/reddit/selectors/appBadges.ts"),
+				T = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				w = n("./src/reddit/selectors/notificationsInbox.tsx"),
 				L = n("./src/reddit/selectors/tooltip.ts");
-			const w = Object(l.c)({
+			const P = Object(l.c)({
 				activeOverflowMenuId: L.a,
-				cursor: T.c,
-				earlierNotifications: T.b,
-				hasNextPage: T.d,
-				inboxBadgeCount: j.g,
-				isInboxPostEmbedEnabled: S.b,
-				isPending: T.e,
-				todayNotifications: T.h
+				cursor: w.c,
+				earlierNotifications: w.b,
+				hasNextPage: w.d,
+				inboxBadgeCount: S.g,
+				isInboxPostEmbedEnabled: T.b,
+				isPending: w.e,
+				todayNotifications: w.h
 			});
-			var P = Object(d.b)(w, e => ({
+			var A = Object(d.b)(P, e => ({
 					clearMessageTabBadgeCount: () => e(Object(m.b)()),
 					disableNotificationUpdates: t => e(Object(u.c)(t)),
 					blockAwarder: t => e(Object(u.a)(t)),
@@ -499,42 +502,42 @@
 					},
 					updateInboxActivitySeenState: () => e(Object(u.i)())
 				}))(I),
-				A = n("./node_modules/fbt/lib/FbtPublic.js"),
-				F = n("./src/reddit/components/BadgeCounter/index.tsx"),
-				M = n("./src/reddit/components/TabNav/index.tsx"),
-				R = n("./src/reddit/controls/InternalLink/index.tsx"),
-				B = n("./src/reddit/hooks/useTracking.ts"),
-				U = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
-				W = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				H = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
-				G = n.n(H);
-			const z = b.a.wrapped(F.a, "Badge", G.a),
-				Q = b.a.wrapped(W.a, "Gear", G.a),
-				J = b.a.wrapped(U.a, "MarkAsRead", G.a),
-				D = b.a.wrapped(M.a, "Tab", G.a);
-			var X = e => {
+				F = n("./node_modules/fbt/lib/FbtPublic.js"),
+				M = n("./src/reddit/components/BadgeCounter/index.tsx"),
+				R = n("./src/reddit/components/TabNav/index.tsx"),
+				B = n("./src/reddit/controls/InternalLink/index.tsx"),
+				U = n("./src/reddit/hooks/useTracking.ts"),
+				W = n("./src/reddit/icons/svgs/MarkAsRead/index.tsx"),
+				H = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				G = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
+				z = n.n(G);
+			const Q = g.a.wrapped(M.a, "Badge", z.a),
+				J = g.a.wrapped(H.a, "Gear", z.a),
+				D = g.a.wrapped(W.a, "MarkAsRead", z.a),
+				X = g.a.wrapped(R.a, "Tab", z.a);
+			var q = e => {
 				const {
 					isInboxMarkAllAsReadEnabled: t,
 					messagesTabBadgeCount: n,
 					notificationsTabBadgeCount: a
-				} = e, i = Object(B.a)(), r = !!n;
+				} = e, i = Object(U.a)(), r = !!n;
 				return s.a.createElement("div", {
-					className: G.a.navContainer
+					className: z.a.navContainer
 				}, s.a.createElement("h1", {
-					className: G.a.navHeader
-				}, A.fbt._("Notifications", null, {
+					className: z.a.navHeader
+				}, F.fbt._("Notifications", null, {
 					hk: "18kEAD"
 				})), s.a.createElement("nav", {
-					className: G.a.navBar
-				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(D, {
+					className: z.a.navBar
+				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(X, {
 					active: !0,
 					to: "/notifications"
-				}, A.fbt._("Activity", null, {
+				}, F.fbt._("Activity", null, {
 					hk: "24wHCv"
-				})), s.a.createElement(z, {
+				})), s.a.createElement(Q, {
 					isActive: !!a,
 					unreadCount: a
-				})), s.a.createElement("li", null, s.a.createElement(D, {
+				})), s.a.createElement("li", null, s.a.createElement(X, {
 					active: !1,
 					onMouseDown: () => {
 						i(Object(x.m)({
@@ -543,52 +546,52 @@
 						})), e.clearMessageTabBadgeCount()
 					},
 					to: r ? "/message/unread" : "/message/messages"
-				}, A.fbt._("Messages", null, {
+				}, F.fbt._("Messages", null, {
 					hk: "Xl3Wz"
-				})), s.a.createElement(z, {
+				})), s.a.createElement(Q, {
 					isActive: r,
 					unreadCount: n
 				})), t && s.a.createElement("li", null, s.a.createElement("button", {
-					className: G.a.navLink,
+					className: z.a.navLink,
 					onClick: () => {
 						e.markAllAsRead(), i(Object(x.e)({
 							isMiniInbox: !1
 						}))
 					}
-				}, s.a.createElement(J, null), A.fbt._("Mark as read", null, {
+				}, s.a.createElement(D, null), F.fbt._("Mark as read", null, {
 					hk: "3IycES"
-				}))), s.a.createElement("li", null, s.a.createElement(R.a, {
-					className: G.a.navLink,
+				}))), s.a.createElement("li", null, s.a.createElement(B.a, {
+					className: z.a.navLink,
 					onClick: () => i(Object(x.k)(x.a.Inbox)),
 					to: "/settings/notifications"
-				}, s.a.createElement(Q, null), A.fbt._("Settings", null, {
+				}, s.a.createElement(J, null), F.fbt._("Settings", null, {
 					hk: "1e9Jn"
 				}))))))
 			};
-			const q = Object(l.c)({
-				isInboxMarkAllAsReadEnabled: S.a,
-				messagesTabBadgeCount: j.h,
-				notificationsTabBadgeCount: j.a
+			const K = Object(l.c)({
+				isInboxMarkAllAsReadEnabled: T.a,
+				messagesTabBadgeCount: S.h,
+				notificationsTabBadgeCount: S.a
 			});
-			var K = Object(d.b)(q, e => ({
+			var Y = Object(d.b)(K, e => ({
 					clearMessageTabBadgeCount: () => e(Object(m.b)()),
 					markAllAsRead: () => e(Object(u.g)())
-				}))(e => s.a.createElement(X, e)),
-				Y = n("./src/reddit/pages/NotificationsInbox/index.m.less"),
-				V = n.n(Y);
-			const Z = Object(o.t)();
-			class $ extends s.a.Component {
+				}))(e => s.a.createElement(q, e)),
+				V = n("./src/reddit/pages/NotificationsInbox/index.m.less"),
+				Z = n.n(V);
+			const $ = Object(o.t)();
+			class ee extends s.a.Component {
 				render() {
 					return s.a.createElement(i.a, null, s.a.createElement(c.a, {
-						contentClassName: V.a.contentClassName,
-						content: s.a.createElement(P, null),
+						contentClassName: Z.a.contentClassName,
+						content: s.a.createElement(A, null),
 						disableFullscreen: !0,
-						navBar: s.a.createElement(K, null)
+						navBar: s.a.createElement(Y, null)
 					}))
 				}
 			}
-			t.default = Z(Object(r.c)($))
+			t.default = $(Object(r.c)(ee))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.698a0af198a81522b56b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.f133fda9b03074f6b64a.js.map
