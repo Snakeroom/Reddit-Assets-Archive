@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.9559c4f26b5634b77f3e.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d9537be6dc58d0962eee.js
+// Retrieved at 5/5/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -5009,16 +5009,17 @@
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return i
+				return c
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				r = s("./src/reddit/selectors/user.ts");
-			const i = e => o.e.Enabled === Object(n.c)(e, {
-				experimentEligibilitySelector: r.J,
+				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
+				i = s("./src/reddit/selectors/user.ts");
+			const c = e => !!Object(r.b)(e) || Object(n.c)(e, {
+				experimentEligibilitySelector: i.J,
 				experimentName: o.i
-			})
+			}) === o.e.Enabled
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.9559c4f26b5634b77f3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d9537be6dc58d0962eee.js.map
