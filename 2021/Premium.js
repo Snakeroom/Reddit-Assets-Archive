@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.8e8eec8076f13c522d05.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.e5daeacdfffb89c430cf.js
+// Retrieved at 5/5/2021, 4:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1453,13 +1453,18 @@
 				g = r("./src/reddit/selectors/telemetry.ts");
 			const v = (e, t) => {
 					const {
-						packageId: r
+						packageId: r,
+						renewInterval: n
 					} = t;
-					if (!r) return null;
-					const n = Object(f.h)(e, r);
-					return n ? {
+					let a = "";
+					if (r) {
+						const t = Object(f.h)(e, r);
+						if (!t) return null;
+						a = t.frequency
+					} else n && (a = n);
+					return a ? {
 						goldPurchase: {
-							subscriptionType: n.frequency
+							subscriptionType: a
 						}
 					} : null
 				},
@@ -1470,9 +1475,7 @@
 					noun: "price",
 					correlationId: Object(b.c)(b.a.GoldPayment),
 					...g.defaults(t),
-					...v(t, {
-						packageId: e
-					})
+					...v(t, e)
 				}),
 				O = () => e => ({
 					source: y,
@@ -1891,7 +1894,11 @@
 						sendEvent: i,
 						isPremiumMigrationEnabled: d
 					} = this.props;
-					n ? this.onClickManagePremium() : a ? (i(t(e)), c(e, this.correlationId), d && s(r)) : o()
+					n ? this.onClickManagePremium() : a ? (c(e, this.correlationId), d ? (s(r), i(t({
+						renewInterval: r
+					}))) : i(t({
+						packageId: e
+					}))) : o()
 				}
 				renderFAQSection() {
 					return c.a.createElement(R.q, {
@@ -1978,4 +1985,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.8e8eec8076f13c522d05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.e5daeacdfffb89c430cf.js.map
