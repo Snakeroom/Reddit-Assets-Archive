@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6289380ba3c125dd004a.js
-// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0da8f0dc9ad9e6f38e11.js
+// Retrieved at 5/5/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2623,7 +2623,7 @@
 		"./src/reddit/components/EmptySubredditPostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return _
+				return v
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -2631,52 +2631,48 @@
 				o = s("./src/reddit/constants/postLayout.ts"),
 				i = s("./src/lib/classNames/index.ts"),
 				c = s("./src/lib/lessComponent.tsx"),
-				d = s("./src/reddit/components/PostList/Placeholder.tsx");
-			var l = s("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				u = s("./src/reddit/components/Econ/Prediction/EmptyPredictions/index.m.less"),
-				m = s.n(u);
+				d = s("./src/reddit/components/PostList/Placeholder.tsx"),
+				l = s("./src/reddit/hooks/useIsClient.ts"),
+				u = s("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				m = s("./src/reddit/components/Econ/Prediction/EmptyPredictions/index.m.less"),
+				p = s.n(m);
 			const {
-				fbt: p
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = c.a.wrapped(d.a, "backgroundPlaceholder", m.a);
+				fbt: b
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), h = c.a.wrapped(d.a, "backgroundPlaceholder", p.a);
 
-			function h({
+			function f({
 				subredditId: e
 			}) {
-				const t = Object(a.e)(t => !!e && Object(l.i)(t, {
+				const t = Object(a.e)(t => !!e && Object(u.i)(t, {
 						subredditId: e
 					})),
-					s = function() {
-						const [e, t] = Object(n.useState)(!1);
-						return Object(n.useEffect)(() => {
-							setTimeout(t, 1, !0)
-						}, []), e
-					}();
+					s = Object(l.a)();
 				return r.a.createElement("div", {
-					className: Object(i.a)(m.a.component, m.a.emptyHomepage)
-				}, r.a.createElement(b, {
+					className: Object(i.a)(p.a.component, p.a.emptyHomepage)
+				}, r.a.createElement(h, {
 					isLoading: t,
 					layout: o.g.Classic
 				}), s && !t && r.a.createElement("div", {
-					className: m.a.mainContentWrapper
+					className: p.a.mainContentWrapper
 				}, r.a.createElement("div", {
-					className: m.a.mainContent
+					className: p.a.mainContent
 				}, r.a.createElement("div", {
-					className: m.a.primaryText
-				}, p._("No prediction tournament posts", null, {
+					className: p.a.primaryText
+				}, b._("No prediction tournament posts", null, {
 					hk: "1gqn5x"
 				})))))
 			}
-			var f = s("./src/reddit/components/EmptySubreddit.tsx");
+			var _ = s("./src/reddit/components/EmptySubreddit.tsx");
 
-			function _({
+			function v({
 				isPredictionsPage: e,
 				listingName: t,
 				sort: s,
 				subreddit: n
 			}) {
-				return e ? r.a.createElement(h, {
+				return e ? r.a.createElement(f, {
 					subredditId: null == n ? void 0 : n.id
-				}) : r.a.createElement(f.a, {
+				}) : r.a.createElement(_.a, {
 					listingName: t,
 					sort: s,
 					subreddit: n || void 0
@@ -5940,6 +5936,20 @@
 				return Object(a.b)(t)
 			}
 		},
+		"./src/reddit/hooks/useIsClient.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var n = s("./node_modules/react/index.js");
+
+			function r() {
+				const [e, t] = Object(n.useState)(!1);
+				return Object(n.useEffect)(() => {
+					setTimeout(t, 1, !0)
+				}, []), e
+			}
+		},
 		"./src/reddit/hooks/useOnClickOutside.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -7955,4 +7965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6289380ba3c125dd004a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0da8f0dc9ad9e6f38e11.js.map
