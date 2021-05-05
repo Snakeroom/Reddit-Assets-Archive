@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.03f7f05d792f824eedf3.js
-// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.cea113653e78f1183c4f.js
+// Retrieved at 5/5/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -1995,7 +1995,7 @@
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
 							const s = Object(x.F)(e, t.listingName);
-							return Object(y.k)(e, {
+							return Object(y.j)(e, {
 								subredditId: s
 							})
 						}
@@ -2011,7 +2011,7 @@
 					}) => {
 						if (n) {
 							const t = Object(x.F)(e, s);
-							return Object(y.j)(e, {
+							return Object(y.k)(e, {
 								subredditId: t
 							})
 						}
@@ -2675,4 +2675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.03f7f05d792f824eedf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.cea113653e78f1183c4f.js.map

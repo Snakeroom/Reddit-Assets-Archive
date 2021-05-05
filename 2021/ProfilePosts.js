@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.fea2b3f9aa83d7856400.js
-// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.972e428af342df3700f7.js
+// Retrieved at 5/5/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6436,7 +6436,7 @@
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
 							const s = Object(w.F)(e, t.listingName);
-							return Object(_.k)(e, {
+							return Object(_.j)(e, {
 								subredditId: s
 							})
 						}
@@ -6452,7 +6452,7 @@
 					}) => {
 						if (n) {
 							const t = Object(w.F)(e, s);
-							return Object(_.j)(e, {
+							return Object(_.k)(e, {
 								subredditId: t
 							})
 						}
@@ -7562,4 +7562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.fea2b3f9aa83d7856400.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.972e428af342df3700f7.js.map
