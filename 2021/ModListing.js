@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.64363c930fa82016a2e9.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.95f618189b82b1d32179.js
+// Retrieved at 5/5/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -200,9 +200,9 @@
 		"./src/reddit/actions/pages/modListing/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "modListingDataPending", (function() {
-				return L
-			})), n.d(t, "modListingDataLoaded", (function() {
 				return B
+			})), n.d(t, "modListingDataLoaded", (function() {
+				return L
 			})), n.d(t, "modListingDataFailed", (function() {
 				return P
 			})), n.d(t, "modListingPageRequested", (function() {
@@ -275,18 +275,18 @@
 				I = n("./src/reddit/routes/modListing/index.ts"),
 				k = n("./src/reddit/selectors/user.ts"),
 				M = n("./src/reddit/actions/pages/modListing/constants.ts");
-			const L = Object(a.a)(M.f),
-				B = Object(a.a)(M.e),
+			const B = Object(a.a)(M.f),
+				L = Object(a.a)(M.e),
 				P = Object(a.a)(M.d),
 				T = (e, t) => async (n, r, o) => {
 					const i = r();
 					if (i.listings.postOrder.api.pending[e]) return;
-					n(L({
+					n(B({
 						key: e
 					}));
 					const a = await Object(j.a)("modListing", () => g(o.apiContext(), t)),
 						d = `error-${e}`;
-					a.ok ? (n(B({
+					a.ok ? (n(L({
 						key: e,
 						meta: i.meta,
 						...a.body
@@ -477,18 +477,33 @@
 				}
 			}
 			const p = i.f + 10,
-				b = o.a.memo(() => o.a.createElement(l.Consumer, null, e => e && o.a.createElement("div", {
-					className: c.a.wrapper
-				}, o.a.createElement(a.o, {
-					className: c.a.button,
-					onClick: () => {
-						e.focus(), e.scrollIntoView(), window.scrollBy(0, -p)
-					}
-				}, s.fbt._("Jump to content", null, {
-					hk: "2zWOmQ"
-				})), o.a.createElement("div", {
-					className: c.a.rightBorder
-				})))),
+				b = o.a.memo(() => {
+					const [e, t] = Object(r.useState)("-500px");
+					return o.a.createElement(l.Consumer, null, n => n && o.a.createElement("div", {
+						className: c.a.wrapper
+					}, o.a.createElement(a.q, {
+						kind: a.a.Button,
+						priority: a.b.Plain,
+						className: c.a.button,
+						style: {
+							marginLeft: e
+						},
+						onBlur: e => {
+							const n = e.currentTarget.clientWidth + 55;
+							t(`-${n}px`)
+						},
+						onFocus: () => {
+							t("0")
+						},
+						onClick: () => {
+							n.focus(), n.scrollIntoView(), window.scrollBy(0, -p)
+						}
+					}, s.fbt._("Jump to content", null, {
+						hk: "2zWOmQ"
+					})), o.a.createElement("div", {
+						className: c.a.rightBorder
+					})))
+				}),
 				h = o.a.memo(() => o.a.createElement(u.Consumer, null, e => o.a.createElement("div", {
 					ref: e,
 					tabIndex: 0
@@ -875,9 +890,9 @@
 			n.d(t, "a", (function() {
 				return M
 			})), n.d(t, "b", (function() {
-				return L
-			})), n.d(t, "c", (function() {
 				return B
+			})), n.d(t, "c", (function() {
+				return L
 			})), n.d(t, "d", (function() {
 				return P
 			}));
@@ -976,7 +991,7 @@
 						style: n
 					}))
 				}),
-				L = Object(i.a)(e => {
+				B = Object(i.a)(e => {
 					const {
 						voteIcons: t
 					} = Object(j.a)(e), n = {
@@ -993,7 +1008,7 @@
 						style: n
 					}))
 				}),
-				B = f,
+				L = f,
 				P = C
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, n) {
@@ -1187,9 +1202,9 @@
 			})), n.d(t, "h", (function() {
 				return M
 			})), n.d(t, "d", (function() {
-				return L
-			})), n.d(t, "g", (function() {
 				return B
+			})), n.d(t, "g", (function() {
+				return L
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -1359,14 +1374,14 @@
 					kind: h.Button,
 					className: Object(o.a)(e, c.a.PremiumButtonColors)
 				}, t)),
-				L = ({
+				B = ({
 					className: e,
 					...t
 				}) => r.a.createElement(x, l({
 					kind: h.Button,
 					className: Object(o.a)(e, c.a.ChatButton)
 				}, t)),
-				B = ({
+				L = ({
 					className: e,
 					...t
 				}) => r.a.createElement(x, l({
@@ -2051,7 +2066,7 @@
 			})), i.a.createElement(E.b, {
 				isSidebar: !1,
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
-			})))), L = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+			})))), B = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 				className: I.a.feedDetailsTitle
 			}, i.a.createElement(O.a, {
 				className: I.a.modIcon
@@ -2067,11 +2082,11 @@
 				subredditsOrProfilesIds: e.moderatedCommunitiesIds
 			}) : i.a.createElement("div", {
 				className: I.a.loadingBar
-			})), B = Object(d.c)({
+			})), L = Object(d.c)({
 				isModalOpen: Object(j.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
 				moderatedCommunitiesIds: w.f
 			});
-			var P = Object(a.b)(B, (e, {}) => ({
+			var P = Object(a.b)(L, (e, {}) => ({
 					toggleModal: () => e(Object(g.i)("MOD_LISTING_FEED_DETAILS_MODAL_ID"))
 				}))(e => {
 					const {
@@ -2079,7 +2094,7 @@
 						moderatedCommunitiesIds: n,
 						toggleModal: s
 					} = e;
-					return n ? i.a.createElement(i.a.Fragment, null, i.a.createElement(L, {
+					return n ? i.a.createElement(i.a.Fragment, null, i.a.createElement(B, {
 						moderatedCommunitiesIds: n,
 						onSeeMoreDetails: s
 					}), t && i.a.createElement(M, {
@@ -2365,4 +2380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.64363c930fa82016a2e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.95f618189b82b1d32179.js.map

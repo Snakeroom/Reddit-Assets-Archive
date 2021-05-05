@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.67c08ad9da560c2c12e2.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0fb36d4829a83b22f927.js
+// Retrieved at 5/5/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -4767,18 +4767,33 @@
 				}
 			}
 			const p = a.f + 10,
-				h = r.a.memo(() => r.a.createElement(l.Consumer, null, e => e && r.a.createElement("div", {
-					className: d.a.wrapper
-				}, r.a.createElement(i.o, {
-					className: d.a.button,
-					onClick: () => {
-						e.focus(), e.scrollIntoView(), window.scrollBy(0, -p)
-					}
-				}, o.fbt._("Jump to content", null, {
-					hk: "2zWOmQ"
-				})), r.a.createElement("div", {
-					className: d.a.rightBorder
-				})))),
+				h = r.a.memo(() => {
+					const [e, t] = Object(s.useState)("-500px");
+					return r.a.createElement(l.Consumer, null, n => n && r.a.createElement("div", {
+						className: d.a.wrapper
+					}, r.a.createElement(i.q, {
+						kind: i.a.Button,
+						priority: i.b.Plain,
+						className: d.a.button,
+						style: {
+							marginLeft: e
+						},
+						onBlur: e => {
+							const n = e.currentTarget.clientWidth + 55;
+							t(`-${n}px`)
+						},
+						onFocus: () => {
+							t("0")
+						},
+						onClick: () => {
+							n.focus(), n.scrollIntoView(), window.scrollBy(0, -p)
+						}
+					}, o.fbt._("Jump to content", null, {
+						hk: "2zWOmQ"
+					})), r.a.createElement("div", {
+						className: d.a.rightBorder
+					})))
+				}),
 				b = r.a.memo(() => r.a.createElement(u.Consumer, null, e => r.a.createElement("div", {
 					ref: e,
 					tabIndex: 0
@@ -22253,4 +22268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.67c08ad9da560c2c12e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0fb36d4829a83b22f927.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.84f1a7fbbf4007686cda.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.22134aece3a97bd4a5bc.js
+// Retrieved at 5/5/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2954,18 +2954,33 @@
 				}
 			}
 			const p = o.f + 10,
-				b = a.a.memo(() => a.a.createElement(l.Consumer, null, e => e && a.a.createElement("div", {
-					className: d.a.wrapper
-				}, a.a.createElement(i.o, {
-					className: d.a.button,
-					onClick: () => {
-						e.focus(), e.scrollIntoView(), window.scrollBy(0, -p)
-					}
-				}, n.fbt._("Jump to content", null, {
-					hk: "2zWOmQ"
-				})), a.a.createElement("div", {
-					className: d.a.rightBorder
-				})))),
+				b = a.a.memo(() => {
+					const [e, t] = Object(r.useState)("-500px");
+					return a.a.createElement(l.Consumer, null, s => s && a.a.createElement("div", {
+						className: d.a.wrapper
+					}, a.a.createElement(i.q, {
+						kind: i.a.Button,
+						priority: i.b.Plain,
+						className: d.a.button,
+						style: {
+							marginLeft: e
+						},
+						onBlur: e => {
+							const s = e.currentTarget.clientWidth + 55;
+							t(`-${s}px`)
+						},
+						onFocus: () => {
+							t("0")
+						},
+						onClick: () => {
+							s.focus(), s.scrollIntoView(), window.scrollBy(0, -p)
+						}
+					}, n.fbt._("Jump to content", null, {
+						hk: "2zWOmQ"
+					})), a.a.createElement("div", {
+						className: d.a.rightBorder
+					})))
+				}),
 				h = a.a.memo(() => a.a.createElement(u.Consumer, null, e => a.a.createElement("div", {
 					ref: e,
 					tabIndex: 0
@@ -7927,4 +7942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.84f1a7fbbf4007686cda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.22134aece3a97bd4a5bc.js.map
