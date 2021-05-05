@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b6fe3a6759b989abeece.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.930765e0d4f8fc4a190a.js
+// Retrieved at 5/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -123,7 +123,7 @@
 					...x,
 					...t
 				};
-				class k extends r.Component {
+				class N extends r.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(r.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
@@ -200,10 +200,10 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || k.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || N.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = `${v()}${e}${t}`;
-						return (await E(s)).substr(0, k.VIEWER_USER_ID_LENGTH)
+						return (await E(s)).substr(0, N.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -227,25 +227,25 @@
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
 						return {
-							debug: k.DEBUG,
-							disableCookies: k.DISABLE_COOKIES,
-							respectDoNotTrack: k.RESPECT_DO_NOT_TRACK,
+							debug: N.DEBUG,
+							disableCookies: N.DISABLE_COOKIES,
+							respectDoNotTrack: N.RESPECT_DO_NOT_TRACK,
 							...s,
 							data: {
-								env_key: k.ENV_KEY,
+								env_key: N.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: k.PLAYER_NAME,
-								player_version: k.PLAYER_VERSION,
+								player_name: N.PLAYER_NAME,
+								player_version: N.PLAYER_VERSION,
 								...t,
 								viewer_user_id: e
 							}
 						}
 					}
 					getOrCreateSalt() {
-						const e = k.LOCAL_STORAGE_SALT_KEY;
+						const e = N.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(o.a)(e);
-						return t || (t = f(k.SALT_LENGTH), Object(o.b)(e, t, k.SALT_TIME_TO_LIVE)), t
+						return t || (t = f(N.SALT_LENGTH), Object(o.b)(e, t, N.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -261,15 +261,15 @@
 							muxVideoTitle: r
 						} = this.props;
 						return {
-							video_duration: s ? k.DURATION_LIVE : e,
+							video_duration: s ? N.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? k.STREAM_TYPE_LIVE : k.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: s ? N.STREAM_TYPE_LIVE : N.STREAM_TYPE_ON_DEMAND,
 							video_title: r
 						}
 					}
 				}
-				k.displayName = _(e), k.ANONYMOUS_USER_ID = s, k.DEBUG = d, k.DISABLE_COOKIES = u, k.DURATION_LIVE = 1 / 0, k.ENV_KEY = m, k.LOCAL_STORAGE_SALT_KEY = p, k.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, k.PLAYER_NAME = C, k.PLAYER_VERSION = O, k.RESPECT_DO_NOT_TRACK = y, k.SALT_LENGTH = I, k.SALT_TIME_TO_LIVE = S, k.STREAM_TYPE_LIVE = "live", k.STREAM_TYPE_ON_DEMAND = "on-demand", k.VIEWER_USER_ID_LENGTH = T;
-				const N = Object(r.forwardRef)((e, t) => n.a.createElement(k, w({}, e, {
+				N.displayName = _(e), N.ANONYMOUS_USER_ID = s, N.DEBUG = d, N.DISABLE_COOKIES = u, N.DURATION_LIVE = 1 / 0, N.ENV_KEY = m, N.LOCAL_STORAGE_SALT_KEY = p, N.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, N.PLAYER_NAME = C, N.PLAYER_VERSION = O, N.RESPECT_DO_NOT_TRACK = y, N.SALT_LENGTH = I, N.SALT_TIME_TO_LIVE = S, N.STREAM_TYPE_LIVE = "live", N.STREAM_TYPE_ON_DEMAND = "on-demand", N.VIEWER_USER_ID_LENGTH = T;
+				const k = Object(r.forwardRef)((e, t) => n.a.createElement(N, w({}, e, {
 						forwardedRef: t
 					}))),
 					j = Object(i.c)({
@@ -278,7 +278,7 @@
 					});
 				return Object(a.b)(j, null, null, {
 					forwardRef: !0
-				})(N)
+				})(k)
 			}
 		},
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -996,15 +996,15 @@
 				}, [s, d, w]);
 				const S = Object(r.useRef)(() => {}),
 					T = Object(r.useRef)(),
-					k = Object(r.useRef)();
+					N = Object(r.useRef)();
 				S.current = Object(r.useCallback)(() => {
-					k.current = setTimeout(() => {
+					N.current = setTimeout(() => {
 						y.current();
 						const e = [...C].reverse().join("");
 						parseInt(e) < s && S.current()
 					}, m())
 				}, [s, m, C]);
-				const N = Object(r.useCallback)(e => {
+				const k = Object(r.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t
@@ -1014,10 +1014,10 @@
 						}, u())))
 					})
 				}, []);
-				Object(a.a)(O, N);
+				Object(a.a)(O, k);
 				const j = Object(i.a)(s);
 				Object(r.useEffect)(() => (void 0 !== j && j !== s && y.current(s - j), () => {
-					clearTimeout(T.current), clearTimeout(k.current), clearTimeout(I.current)
+					clearTimeout(T.current), clearTimeout(N.current), clearTimeout(I.current)
 				}), [s]);
 				const A = Object(r.useCallback)(() => g(!0), [g]),
 					R = 0 === C.length,
@@ -1862,8 +1862,8 @@
 				I = s("./src/reddit/models/Vote/index.ts"),
 				S = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				T = s("./src/reddit/selectors/platform.ts"),
-				k = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				N = s("./src/reddit/selectors/user.ts"),
+				N = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				k = s("./src/reddit/selectors/user.ts"),
 				j = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				A = s("./src/reddit/components/Flatlist/index.tsx"),
 				R = s("./src/reddit/components/Flatlist/constants.ts"),
@@ -1888,13 +1888,13 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Q = 20, X = l.gc, $ = l.gc, ee = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), te = Object(a.b)(() => Object(i.c)({
-				autoplay: N.b,
-				isLoggedIn: N.J,
+				autoplay: k.b,
+				isLoggedIn: k.J,
 				isOverlayOpen: T.h,
 				location: (e, {
 					listingName: t
 				}) => {
-					const s = Object(k.m)(e, {
+					const s = Object(N.m)(e, {
 						listingName: t
 					});
 					let r;
@@ -1908,10 +1908,10 @@
 				},
 				stream: (e, {
 					listingName: t
-				}) => Object(k.m)(e, {
+				}) => Object(N.m)(e, {
 					listingName: t
 				}),
-				streamById: e => t => Object(k.l)(e, t),
+				streamById: e => t => Object(N.l)(e, t),
 				rpanDuThresholdVariant: S.i,
 				inRpanDUPreloadExperiment: S.b,
 				inRpanDuTargetingExperiment: S.c
@@ -2386,9 +2386,9 @@
 			})), s.d(t, "b", (function() {
 				return T
 			})), s.d(t, "g", (function() {
-				return k
-			})), s.d(t, "h", (function() {
 				return N
+			})), s.d(t, "h", (function() {
+				return k
 			})), s.d(t, "f", (function() {
 				return j
 			})), s.d(t, "a", (function() {
@@ -2495,7 +2495,7 @@
 				}, a.a.createElement(p.a, {
 					className: x.a.overflowItemIcon
 				}))),
-				k = ({
+				N = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: x.a.promptButton,
@@ -2503,7 +2503,7 @@
 				}, a.a.createElement(C.a, null), a.a.createElement("span", null, r.fbt._("Replay Video", null, {
 					hk: "1iD2Wj"
 				}))),
-				N = ({
+				k = ({
 					onClick: e
 				}) => a.a.createElement("button", {
 					className: x.a.promptButton,
@@ -2684,8 +2684,8 @@
 				I = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				S = s("./src/reddit/icons/svgs/Crosspost/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				k = s("./src/reddit/icons/svgs/Link/index.tsx"),
-				N = s("./src/reddit/icons/svgs/Lock/index.tsx"),
+				N = s("./src/reddit/icons/svgs/Link/index.tsx"),
+				k = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				A = s("./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Remove/index.tsx"),
@@ -2820,7 +2820,7 @@
 				iconWrapperClassName: B.a.overflowItemShareIconWrapper,
 				key: `${ne}-share`,
 				onClick: t
-			}, n.a.createElement(k.a, {
+			}, n.a.createElement(N.a, {
 				className: B.a.overflowItemIcon
 			})), n.a.createElement(v.b, {
 				className: B.a.menuOverflowItem,
@@ -2948,7 +2948,7 @@
 				onClick: r
 			}, a ? n.a.createElement(D.a, {
 				className: B.a.overflowItemIcon
-			}) : n.a.createElement(N.a, {
+			}) : n.a.createElement(k.a, {
 				className: B.a.overflowItemIcon
 			})), n.a.createElement(v.b, {
 				className: B.a.endBroadcastItem,
@@ -3352,79 +3352,89 @@
 		},
 		"./src/reddit/controls/Score/index.m.less": function(e, t, s) {
 			e.exports = {
-				score: "_1rZYMD_4xY3gRcSS3p8ODO"
+				score: "_1rZYMD_4xY3gRcSS3p8ODO",
+				dot: "uFieChpcVxrPI9VvCKqZu"
 			}
 		},
 		"./src/reddit/controls/Score/index.tsx": function(e, t, s) {
 			"use strict";
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
-				n = s("./node_modules/lodash/random.js"),
-				a = s.n(n),
-				i = s("./node_modules/react/index.js"),
-				o = s.n(i),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				l = s("./src/lib/prettyPrintNumber/index.ts"),
-				u = s("./src/reddit/components/CountAnimation/index.tsx"),
-				m = s("./src/reddit/components/CountAnimation/config.ts"),
-				h = s("./src/reddit/components/CountAnimation/helpers.ts"),
-				p = s("./src/reddit/constants/colors.ts"),
-				b = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				f = s("./src/reddit/helpers/styles/smartTextColor.ts"),
-				v = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				g = s("./src/reddit/models/Vote/index.ts"),
-				C = s("./src/reddit/controls/Score/index.m.less"),
-				E = s.n(C);
-			const w = e => e.voteState === g.a.downvoted ? Object(v.a)(e).voteText.downvote : e.voteState === g.a.upvoted ? Object(v.a)(e).voteText.upvote : Object(f.a)(Object(b.a)(e)),
+				n = s("./src/lib/classNames/index.ts"),
+				a = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				i = s("./src/lib/prettyPrintNumber/index.ts"),
+				o = s("./node_modules/lodash/random.js"),
+				c = s.n(o),
+				d = s("./node_modules/react/index.js"),
+				l = s.n(d),
+				u = s("./node_modules/react-redux/es/index.js"),
+				m = s("./src/reddit/components/CountAnimation/index.tsx"),
+				h = s("./src/reddit/components/CountAnimation/config.ts"),
+				p = s("./src/reddit/components/CountAnimation/helpers.ts"),
+				b = s("./src/reddit/constants/colors.ts"),
+				f = s("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				v = s("./src/reddit/helpers/styles/smartTextColor.ts"),
+				g = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				C = s("./src/reddit/models/Vote/index.ts"),
+				E = s("./src/reddit/selectors/meta.ts"),
+				w = s("./src/reddit/controls/Score/index.m.less"),
+				_ = s.n(w);
+			const x = e => e.voteState === C.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === C.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(v.a)(Object(f.a)(e)),
 				{
 					upvoteCount: {
 						inititalDelayRange: {
-							lower: _,
-							upper: x
-						},
-						subsequentRecurringDelayRange: {
 							lower: O,
 							upper: y
 						},
-						incrementRangeRelativeToTotalDiscount: {
+						subsequentRecurringDelayRange: {
 							lower: I,
 							upper: S
+						},
+						incrementRangeRelativeToTotalDiscount: {
+							lower: T,
+							upper: N
 						}
 					}
-				} = m.b,
-				T = () => a()(_, x),
-				k = () => a()(O, y),
-				N = Object(d.a)(e => {
+				} = h.b,
+				k = () => c()(O, y),
+				j = () => c()(I, S),
+				A = Object(u.b)(e => ({
+					locale: Object(E.i)(e)
+				})),
+				R = Object(a.a)(e => {
 					const t = {
-							color: e.light ? p.b.lightboxHeaderText : w(e)
+							color: e.light ? b.b.lightboxHeaderText : x(e)
 						},
 						{
 							totalDiscount: s,
-							score: n,
-							shouldDisjointAnimation: d,
-							shouldShowPageTransPersistence: m,
-							postId: b = ""
+							score: a,
+							shouldDisjointAnimation: o,
+							shouldShowPageTransPersistence: u,
+							postId: h = "",
+							locale: f
 						} = e,
-						f = e.isScoreHidden ? r.fbt._("Vote", null, {
+						v = null == f ? void 0 : f.startsWith("en"),
+						g = e.isScoreHidden ? v ? r.fbt._("Vote", null, {
 							hk: "2TMson"
-						}) : Object(l.b)(n),
-						v = Object(i.useCallback)(() => a()(Math.ceil((s || 0) * I), Math.ceil((s || 0) * S)), [s]),
-						g = Object(i.useRef)(Object(h.k)(b, h.a.Vote)),
-						C = Object(i.useRef)(m && void 0 !== s && Object(h.e)(g.current));
-					return o.a.createElement("div", {
-						className: Object(c.a)(E.a.score, e.className),
+						}) : l.a.createElement("span", {
+							className: _.a.dot
+						}, "•") : Object(i.b)(a),
+						C = Object(d.useCallback)(() => c()(Math.ceil((s || 0) * T), Math.ceil((s || 0) * N)), [s]),
+						E = Object(d.useRef)(Object(p.k)(h, p.a.Vote)),
+						w = Object(d.useRef)(u && void 0 !== s && Object(p.e)(E.current));
+					return l.a.createElement("div", {
+						className: Object(n.a)(_.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, e.isScoreHidden || void 0 === s ? f : o.a.createElement(u.a, {
-						initialDisplayCount: C.current || n - s,
-						countToUpperBound: n,
-						initialDelay: T,
-						subsequentRecurringDelay: k,
-						incrementDelta: v,
-						shouldDisjointAnimation: d,
-						id: g.current
+					}, e.isScoreHidden || void 0 === s ? g : l.a.createElement(m.a, {
+						initialDisplayCount: w.current || a - s,
+						countToUpperBound: a,
+						initialDelay: k,
+						subsequentRecurringDelay: j,
+						incrementDelta: C,
+						shouldDisjointAnimation: o,
+						id: E.current
 					}))
 				});
-			t.a = N
+			t.a = A(R)
 		},
 		"./src/reddit/helpers/getSubredditIcon/index.ts": function(e, t, s) {
 			"use strict";
@@ -3666,9 +3676,9 @@
 			})), s.d(t, "clickSelectAwardEvent", (function() {
 				return T
 			})), s.d(t, "triggerAnonymousEvent", (function() {
-				return k
-			})), s.d(t, "clickMessageInputEvent", (function() {
 				return N
+			})), s.d(t, "clickMessageInputEvent", (function() {
+				return k
 			})), s.d(t, "typeMessageInputEvent", (function() {
 				return j
 			})), s.d(t, "clickLearnMoreLinkEvent", (function() {
@@ -3789,13 +3799,13 @@
 					noun: "award",
 					goldPurchase: l(e, s)
 				}),
-				k = (e, t) => s => ({
+				N = (e, t) => s => ({
 					...u(s, t),
 					source: "give_gold",
 					action: e,
 					noun: "anonymous"
 				}),
-				N = e => t => ({
+				k = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -5059,9 +5069,9 @@
 			})), s.d(t, "j", (function() {
 				return T
 			})), s.d(t, "m", (function() {
-				return k
-			})), s.d(t, "e", (function() {
 				return N
+			})), s.d(t, "e", (function() {
+				return k
 			})), s.d(t, "d", (function() {
 				return j
 			}));
@@ -5100,10 +5110,10 @@
 				I = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				S = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				T = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				k = e => e.features.goldPurchase.payment.stripeToken.pending,
-				N = e => e.features.goldPurchase.payment.paypal.passthrough,
+				N = e => e.features.goldPurchase.payment.stripeToken.pending,
+				k = e => e.features.goldPurchase.payment.paypal.passthrough,
 				j = e => e.features.goldPurchase.payment.paypal.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b6fe3a6759b989abeece.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.930765e0d4f8fc4a190a.js.map
