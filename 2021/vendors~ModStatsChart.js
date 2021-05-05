@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/vendors~ModStatsChart.066d8e9cafdefcf389e0.js
-// Retrieved at 3/8/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~ModStatsChart.45cc24bd757c37934779.js
+// Retrieved at 5/5/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~ModStatsChart"], {
-		"./node_modules/chart.js/dist/Chart.js": function(e, t, n) {
-			e.exports = function(e) {
+		"./node_modules/chart.js/dist/Chart.js": function(t, e, n) {
+			t.exports = function(t) {
 				"use strict";
-				e = e && e.hasOwnProperty("default") ? e.default : e;
-				var t = {
+				t = t && t.hasOwnProperty("default") ? t.default : t;
+				var e = {
 						aliceblue: [240, 248, 255],
 						antiquewhite: [250, 235, 215],
 						aqua: [0, 255, 255],
@@ -156,14 +156,14 @@
 						yellow: [255, 255, 0],
 						yellowgreen: [154, 205, 50]
 					},
-					n = function(e, t) {
-						return e(t = {
+					n = function(t, e) {
+						return t(e = {
 							exports: {}
-						}, t.exports), t.exports
-					}((function(e) {
+						}, e.exports), e.exports
+					}((function(t) {
 						var n = {};
-						for (var a in t) t.hasOwnProperty(a) && (n[t[a]] = a);
-						var r = e.exports = {
+						for (var i in e) e.hasOwnProperty(i) && (n[e[i]] = i);
+						var a = t.exports = {
 							rgb: {
 								channels: 3,
 								labels: "rgb"
@@ -225,367 +225,367 @@
 								labels: ["gray"]
 							}
 						};
-						for (var i in r)
-							if (r.hasOwnProperty(i)) {
-								if (!("channels" in r[i])) throw new Error("missing channels property: " + i);
-								if (!("labels" in r[i])) throw new Error("missing channel labels property: " + i);
-								if (r[i].labels.length !== r[i].channels) throw new Error("channel and label counts mismatch: " + i);
-								var s = r[i].channels,
-									o = r[i].labels;
-								delete r[i].channels, delete r[i].labels, Object.defineProperty(r[i], "channels", {
-									value: s
-								}), Object.defineProperty(r[i], "labels", {
+						for (var r in a)
+							if (a.hasOwnProperty(r)) {
+								if (!("channels" in a[r])) throw new Error("missing channels property: " + r);
+								if (!("labels" in a[r])) throw new Error("missing channel labels property: " + r);
+								if (a[r].labels.length !== a[r].channels) throw new Error("channel and label counts mismatch: " + r);
+								var o = a[r].channels,
+									s = a[r].labels;
+								delete a[r].channels, delete a[r].labels, Object.defineProperty(a[r], "channels", {
 									value: o
+								}), Object.defineProperty(a[r], "labels", {
+									value: s
 								})
-							} r.rgb.hsl = function(e) {
-							var t, n, a = e[0] / 255,
-								r = e[1] / 255,
-								i = e[2] / 255,
-								s = Math.min(a, r, i),
-								o = Math.max(a, r, i),
-								d = o - s;
-							return o === s ? t = 0 : a === o ? t = (r - i) / d : r === o ? t = 2 + (i - a) / d : i === o && (t = 4 + (a - r) / d), (t = Math.min(60 * t, 360)) < 0 && (t += 360), n = (s + o) / 2, [t, 100 * (o === s ? 0 : n <= .5 ? d / (o + s) : d / (2 - o - s)), 100 * n]
-						}, r.rgb.hsv = function(e) {
-							var t, n, a, r, i, s = e[0] / 255,
-								o = e[1] / 255,
-								d = e[2] / 255,
-								l = Math.max(s, o, d),
-								u = l - Math.min(s, o, d),
-								_ = function(e) {
-									return (l - e) / 6 / u + .5
+							} a.rgb.hsl = function(t) {
+							var e, n, i = t[0] / 255,
+								a = t[1] / 255,
+								r = t[2] / 255,
+								o = Math.min(i, a, r),
+								s = Math.max(i, a, r),
+								l = s - o;
+							return s === o ? e = 0 : i === s ? e = (a - r) / l : a === s ? e = 2 + (r - i) / l : r === s && (e = 4 + (i - a) / l), (e = Math.min(60 * e, 360)) < 0 && (e += 360), n = (o + s) / 2, [e, 100 * (s === o ? 0 : n <= .5 ? l / (s + o) : l / (2 - s - o)), 100 * n]
+						}, a.rgb.hsv = function(t) {
+							var e, n, i, a, r, o = t[0] / 255,
+								s = t[1] / 255,
+								l = t[2] / 255,
+								u = Math.max(o, s, l),
+								d = u - Math.min(o, s, l),
+								c = function(t) {
+									return (u - t) / 6 / d + .5
 								};
-							return 0 === u ? r = i = 0 : (i = u / l, t = _(s), n = _(o), a = _(d), s === l ? r = a - n : o === l ? r = 1 / 3 + t - a : d === l && (r = 2 / 3 + n - t), r < 0 ? r += 1 : r > 1 && (r -= 1)), [360 * r, 100 * i, 100 * l]
-						}, r.rgb.hwb = function(e) {
-							var t = e[0],
-								n = e[1],
-								a = e[2];
-							return [r.rgb.hsl(e)[0], 1 / 255 * Math.min(t, Math.min(n, a)) * 100, 100 * (a = 1 - 1 / 255 * Math.max(t, Math.max(n, a)))]
-						}, r.rgb.cmyk = function(e) {
-							var t, n = e[0] / 255,
-								a = e[1] / 255,
-								r = e[2] / 255;
-							return [100 * ((1 - n - (t = Math.min(1 - n, 1 - a, 1 - r))) / (1 - t) || 0), 100 * ((1 - a - t) / (1 - t) || 0), 100 * ((1 - r - t) / (1 - t) || 0), 100 * t]
-						}, r.rgb.keyword = function(e) {
-							var a = n[e];
-							if (a) return a;
-							var r, i, s, o = 1 / 0;
-							for (var d in t)
-								if (t.hasOwnProperty(d)) {
-									var l = t[d],
-										u = (i = e, s = l, Math.pow(i[0] - s[0], 2) + Math.pow(i[1] - s[1], 2) + Math.pow(i[2] - s[2], 2));
-									u < o && (o = u, r = d)
-								} return r
-						}, r.keyword.rgb = function(e) {
-							return t[e]
-						}, r.rgb.xyz = function(e) {
-							var t = e[0] / 255,
-								n = e[1] / 255,
-								a = e[2] / 255;
-							return [100 * (.4124 * (t = t > .04045 ? Math.pow((t + .055) / 1.055, 2.4) : t / 12.92) + .3576 * (n = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92) + .1805 * (a = a > .04045 ? Math.pow((a + .055) / 1.055, 2.4) : a / 12.92)), 100 * (.2126 * t + .7152 * n + .0722 * a), 100 * (.0193 * t + .1192 * n + .9505 * a)]
-						}, r.rgb.lab = function(e) {
-							var t = r.rgb.xyz(e),
-								n = t[0],
-								a = t[1],
+							return 0 === d ? a = r = 0 : (r = d / u, e = c(o), n = c(s), i = c(l), o === u ? a = i - n : s === u ? a = 1 / 3 + e - i : l === u && (a = 2 / 3 + n - e), a < 0 ? a += 1 : a > 1 && (a -= 1)), [360 * a, 100 * r, 100 * u]
+						}, a.rgb.hwb = function(t) {
+							var e = t[0],
+								n = t[1],
 								i = t[2];
-							return a /= 100, i /= 108.883, n = (n /= 95.047) > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116, [116 * (a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116) - 16, 500 * (n - a), 200 * (a - (i = i > .008856 ? Math.pow(i, 1 / 3) : 7.787 * i + 16 / 116))]
-						}, r.hsl.rgb = function(e) {
-							var t, n, a, r, i, s = e[0] / 360,
-								o = e[1] / 100,
-								d = e[2] / 100;
-							if (0 === o) return [i = 255 * d, i, i];
-							t = 2 * d - (n = d < .5 ? d * (1 + o) : d + o - d * o), r = [0, 0, 0];
-							for (var l = 0; l < 3; l++)(a = s + 1 / 3 * -(l - 1)) < 0 && a++, a > 1 && a--, i = 6 * a < 1 ? t + 6 * (n - t) * a : 2 * a < 1 ? n : 3 * a < 2 ? t + (n - t) * (2 / 3 - a) * 6 : t, r[l] = 255 * i;
-							return r
-						}, r.hsl.hsv = function(e) {
-							var t = e[0],
-								n = e[1] / 100,
-								a = e[2] / 100,
-								r = n,
-								i = Math.max(a, .01);
-							return n *= (a *= 2) <= 1 ? a : 2 - a, r *= i <= 1 ? i : 2 - i, [t, 100 * (0 === a ? 2 * r / (i + r) : 2 * n / (a + n)), (a + n) / 2 * 100]
-						}, r.hsv.rgb = function(e) {
-							var t = e[0] / 60,
-								n = e[1] / 100,
-								a = e[2] / 100,
-								r = Math.floor(t) % 6,
-								i = t - Math.floor(t),
-								s = 255 * a * (1 - n),
-								o = 255 * a * (1 - n * i),
-								d = 255 * a * (1 - n * (1 - i));
-							switch (a *= 255, r) {
+							return [a.rgb.hsl(t)[0], 1 / 255 * Math.min(e, Math.min(n, i)) * 100, 100 * (i = 1 - 1 / 255 * Math.max(e, Math.max(n, i)))]
+						}, a.rgb.cmyk = function(t) {
+							var e, n = t[0] / 255,
+								i = t[1] / 255,
+								a = t[2] / 255;
+							return [100 * ((1 - n - (e = Math.min(1 - n, 1 - i, 1 - a))) / (1 - e) || 0), 100 * ((1 - i - e) / (1 - e) || 0), 100 * ((1 - a - e) / (1 - e) || 0), 100 * e]
+						}, a.rgb.keyword = function(t) {
+							var i = n[t];
+							if (i) return i;
+							var a, r, o, s = 1 / 0;
+							for (var l in e)
+								if (e.hasOwnProperty(l)) {
+									var u = e[l],
+										d = (r = t, o = u, Math.pow(r[0] - o[0], 2) + Math.pow(r[1] - o[1], 2) + Math.pow(r[2] - o[2], 2));
+									d < s && (s = d, a = l)
+								} return a
+						}, a.keyword.rgb = function(t) {
+							return e[t]
+						}, a.rgb.xyz = function(t) {
+							var e = t[0] / 255,
+								n = t[1] / 255,
+								i = t[2] / 255;
+							return [100 * (.4124 * (e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92) + .3576 * (n = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92) + .1805 * (i = i > .04045 ? Math.pow((i + .055) / 1.055, 2.4) : i / 12.92)), 100 * (.2126 * e + .7152 * n + .0722 * i), 100 * (.0193 * e + .1192 * n + .9505 * i)]
+						}, a.rgb.lab = function(t) {
+							var e = a.rgb.xyz(t),
+								n = e[0],
+								i = e[1],
+								r = e[2];
+							return i /= 100, r /= 108.883, n = (n /= 95.047) > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116, [116 * (i = i > .008856 ? Math.pow(i, 1 / 3) : 7.787 * i + 16 / 116) - 16, 500 * (n - i), 200 * (i - (r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116))]
+						}, a.hsl.rgb = function(t) {
+							var e, n, i, a, r, o = t[0] / 360,
+								s = t[1] / 100,
+								l = t[2] / 100;
+							if (0 === s) return [r = 255 * l, r, r];
+							e = 2 * l - (n = l < .5 ? l * (1 + s) : l + s - l * s), a = [0, 0, 0];
+							for (var u = 0; u < 3; u++)(i = o + 1 / 3 * -(u - 1)) < 0 && i++, i > 1 && i--, r = 6 * i < 1 ? e + 6 * (n - e) * i : 2 * i < 1 ? n : 3 * i < 2 ? e + (n - e) * (2 / 3 - i) * 6 : e, a[u] = 255 * r;
+							return a
+						}, a.hsl.hsv = function(t) {
+							var e = t[0],
+								n = t[1] / 100,
+								i = t[2] / 100,
+								a = n,
+								r = Math.max(i, .01);
+							return n *= (i *= 2) <= 1 ? i : 2 - i, a *= r <= 1 ? r : 2 - r, [e, 100 * (0 === i ? 2 * a / (r + a) : 2 * n / (i + n)), (i + n) / 2 * 100]
+						}, a.hsv.rgb = function(t) {
+							var e = t[0] / 60,
+								n = t[1] / 100,
+								i = t[2] / 100,
+								a = Math.floor(e) % 6,
+								r = e - Math.floor(e),
+								o = 255 * i * (1 - n),
+								s = 255 * i * (1 - n * r),
+								l = 255 * i * (1 - n * (1 - r));
+							switch (i *= 255, a) {
 								case 0:
-									return [a, d, s];
+									return [i, l, o];
 								case 1:
-									return [o, a, s];
+									return [s, i, o];
 								case 2:
-									return [s, a, d];
+									return [o, i, l];
 								case 3:
-									return [s, o, a];
+									return [o, s, i];
 								case 4:
-									return [d, s, a];
+									return [l, o, i];
 								case 5:
-									return [a, s, o]
+									return [i, o, s]
 							}
-						}, r.hsv.hsl = function(e) {
-							var t, n, a, r = e[0],
-								i = e[1] / 100,
-								s = e[2] / 100,
-								o = Math.max(s, .01);
-							return a = (2 - i) * s, n = i * o, [r, 100 * (n = (n /= (t = (2 - i) * o) <= 1 ? t : 2 - t) || 0), 100 * (a /= 2)]
-						}, r.hwb.rgb = function(e) {
-							var t, n, a, r, i, s, o, d = e[0] / 360,
-								l = e[1] / 100,
-								u = e[2] / 100,
-								_ = l + u;
-							switch (_ > 1 && (l /= _, u /= _), a = 6 * d - (t = Math.floor(6 * d)), 0 != (1 & t) && (a = 1 - a), r = l + a * ((n = 1 - u) - l), t) {
+						}, a.hsv.hsl = function(t) {
+							var e, n, i, a = t[0],
+								r = t[1] / 100,
+								o = t[2] / 100,
+								s = Math.max(o, .01);
+							return i = (2 - r) * o, n = r * s, [a, 100 * (n = (n /= (e = (2 - r) * s) <= 1 ? e : 2 - e) || 0), 100 * (i /= 2)]
+						}, a.hwb.rgb = function(t) {
+							var e, n, i, a, r, o, s, l = t[0] / 360,
+								u = t[1] / 100,
+								d = t[2] / 100,
+								c = u + d;
+							switch (c > 1 && (u /= c, d /= c), i = 6 * l - (e = Math.floor(6 * l)), 0 != (1 & e) && (i = 1 - i), a = u + i * ((n = 1 - d) - u), e) {
 								default:
 								case 6:
 								case 0:
-									i = n, s = r, o = l;
+									r = n, o = a, s = u;
 									break;
 								case 1:
-									i = r, s = n, o = l;
+									r = a, o = n, s = u;
 									break;
 								case 2:
-									i = l, s = n, o = r;
+									r = u, o = n, s = a;
 									break;
 								case 3:
-									i = l, s = r, o = n;
+									r = u, o = a, s = n;
 									break;
 								case 4:
-									i = r, s = l, o = n;
+									r = a, o = u, s = n;
 									break;
 								case 5:
-									i = n, s = l, o = r
+									r = n, o = u, s = a
 							}
-							return [255 * i, 255 * s, 255 * o]
-						}, r.cmyk.rgb = function(e) {
-							var t = e[0] / 100,
-								n = e[1] / 100,
-								a = e[2] / 100,
-								r = e[3] / 100;
-							return [255 * (1 - Math.min(1, t * (1 - r) + r)), 255 * (1 - Math.min(1, n * (1 - r) + r)), 255 * (1 - Math.min(1, a * (1 - r) + r))]
-						}, r.xyz.rgb = function(e) {
-							var t, n, a, r = e[0] / 100,
-								i = e[1] / 100,
-								s = e[2] / 100;
-							return n = -.9689 * r + 1.8758 * i + .0415 * s, a = .0557 * r + -.204 * i + 1.057 * s, t = (t = 3.2406 * r + -1.5372 * i + -.4986 * s) > .0031308 ? 1.055 * Math.pow(t, 1 / 2.4) - .055 : 12.92 * t, n = n > .0031308 ? 1.055 * Math.pow(n, 1 / 2.4) - .055 : 12.92 * n, a = a > .0031308 ? 1.055 * Math.pow(a, 1 / 2.4) - .055 : 12.92 * a, [255 * (t = Math.min(Math.max(0, t), 1)), 255 * (n = Math.min(Math.max(0, n), 1)), 255 * (a = Math.min(Math.max(0, a), 1))]
-						}, r.xyz.lab = function(e) {
-							var t = e[0],
-								n = e[1],
-								a = e[2];
-							return n /= 100, a /= 108.883, t = (t /= 95.047) > .008856 ? Math.pow(t, 1 / 3) : 7.787 * t + 16 / 116, [116 * (n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116) - 16, 500 * (t - n), 200 * (n - (a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116))]
-						}, r.lab.xyz = function(e) {
-							var t, n, a, r = e[0];
-							t = e[1] / 500 + (n = (r + 16) / 116), a = n - e[2] / 200;
-							var i = Math.pow(n, 3),
-								s = Math.pow(t, 3),
-								o = Math.pow(a, 3);
-							return n = i > .008856 ? i : (n - 16 / 116) / 7.787, t = s > .008856 ? s : (t - 16 / 116) / 7.787, a = o > .008856 ? o : (a - 16 / 116) / 7.787, [t *= 95.047, n *= 100, a *= 108.883]
-						}, r.lab.lch = function(e) {
-							var t, n = e[0],
-								a = e[1],
-								r = e[2];
-							return (t = 360 * Math.atan2(r, a) / 2 / Math.PI) < 0 && (t += 360), [n, Math.sqrt(a * a + r * r), t]
-						}, r.lch.lab = function(e) {
-							var t, n = e[0],
-								a = e[1];
-							return t = e[2] / 360 * 2 * Math.PI, [n, a * Math.cos(t), a * Math.sin(t)]
-						}, r.rgb.ansi16 = function(e) {
-							var t = e[0],
-								n = e[1],
-								a = e[2],
-								i = 1 in arguments ? arguments[1] : r.rgb.hsv(e)[2];
-							if (0 === (i = Math.round(i / 50))) return 30;
-							var s = 30 + (Math.round(a / 255) << 2 | Math.round(n / 255) << 1 | Math.round(t / 255));
-							return 2 === i && (s += 60), s
-						}, r.hsv.ansi16 = function(e) {
-							return r.rgb.ansi16(r.hsv.rgb(e), e[2])
-						}, r.rgb.ansi256 = function(e) {
-							var t = e[0],
-								n = e[1],
-								a = e[2];
-							return t === n && n === a ? t < 8 ? 16 : t > 248 ? 231 : Math.round((t - 8) / 247 * 24) + 232 : 16 + 36 * Math.round(t / 255 * 5) + 6 * Math.round(n / 255 * 5) + Math.round(a / 255 * 5)
-						}, r.ansi16.rgb = function(e) {
-							var t = e % 10;
-							if (0 === t || 7 === t) return e > 50 && (t += 3.5), [t = t / 10.5 * 255, t, t];
-							var n = .5 * (1 + ~~(e > 50));
-							return [(1 & t) * n * 255, (t >> 1 & 1) * n * 255, (t >> 2 & 1) * n * 255]
-						}, r.ansi256.rgb = function(e) {
-							if (e >= 232) {
-								var t = 10 * (e - 232) + 8;
-								return [t, t, t]
+							return [255 * r, 255 * o, 255 * s]
+						}, a.cmyk.rgb = function(t) {
+							var e = t[0] / 100,
+								n = t[1] / 100,
+								i = t[2] / 100,
+								a = t[3] / 100;
+							return [255 * (1 - Math.min(1, e * (1 - a) + a)), 255 * (1 - Math.min(1, n * (1 - a) + a)), 255 * (1 - Math.min(1, i * (1 - a) + a))]
+						}, a.xyz.rgb = function(t) {
+							var e, n, i, a = t[0] / 100,
+								r = t[1] / 100,
+								o = t[2] / 100;
+							return n = -.9689 * a + 1.8758 * r + .0415 * o, i = .0557 * a + -.204 * r + 1.057 * o, e = (e = 3.2406 * a + -1.5372 * r + -.4986 * o) > .0031308 ? 1.055 * Math.pow(e, 1 / 2.4) - .055 : 12.92 * e, n = n > .0031308 ? 1.055 * Math.pow(n, 1 / 2.4) - .055 : 12.92 * n, i = i > .0031308 ? 1.055 * Math.pow(i, 1 / 2.4) - .055 : 12.92 * i, [255 * (e = Math.min(Math.max(0, e), 1)), 255 * (n = Math.min(Math.max(0, n), 1)), 255 * (i = Math.min(Math.max(0, i), 1))]
+						}, a.xyz.lab = function(t) {
+							var e = t[0],
+								n = t[1],
+								i = t[2];
+							return n /= 100, i /= 108.883, e = (e /= 95.047) > .008856 ? Math.pow(e, 1 / 3) : 7.787 * e + 16 / 116, [116 * (n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116) - 16, 500 * (e - n), 200 * (n - (i = i > .008856 ? Math.pow(i, 1 / 3) : 7.787 * i + 16 / 116))]
+						}, a.lab.xyz = function(t) {
+							var e, n, i, a = t[0];
+							e = t[1] / 500 + (n = (a + 16) / 116), i = n - t[2] / 200;
+							var r = Math.pow(n, 3),
+								o = Math.pow(e, 3),
+								s = Math.pow(i, 3);
+							return n = r > .008856 ? r : (n - 16 / 116) / 7.787, e = o > .008856 ? o : (e - 16 / 116) / 7.787, i = s > .008856 ? s : (i - 16 / 116) / 7.787, [e *= 95.047, n *= 100, i *= 108.883]
+						}, a.lab.lch = function(t) {
+							var e, n = t[0],
+								i = t[1],
+								a = t[2];
+							return (e = 360 * Math.atan2(a, i) / 2 / Math.PI) < 0 && (e += 360), [n, Math.sqrt(i * i + a * a), e]
+						}, a.lch.lab = function(t) {
+							var e, n = t[0],
+								i = t[1];
+							return e = t[2] / 360 * 2 * Math.PI, [n, i * Math.cos(e), i * Math.sin(e)]
+						}, a.rgb.ansi16 = function(t) {
+							var e = t[0],
+								n = t[1],
+								i = t[2],
+								r = 1 in arguments ? arguments[1] : a.rgb.hsv(t)[2];
+							if (0 === (r = Math.round(r / 50))) return 30;
+							var o = 30 + (Math.round(i / 255) << 2 | Math.round(n / 255) << 1 | Math.round(e / 255));
+							return 2 === r && (o += 60), o
+						}, a.hsv.ansi16 = function(t) {
+							return a.rgb.ansi16(a.hsv.rgb(t), t[2])
+						}, a.rgb.ansi256 = function(t) {
+							var e = t[0],
+								n = t[1],
+								i = t[2];
+							return e === n && n === i ? e < 8 ? 16 : e > 248 ? 231 : Math.round((e - 8) / 247 * 24) + 232 : 16 + 36 * Math.round(e / 255 * 5) + 6 * Math.round(n / 255 * 5) + Math.round(i / 255 * 5)
+						}, a.ansi16.rgb = function(t) {
+							var e = t % 10;
+							if (0 === e || 7 === e) return t > 50 && (e += 3.5), [e = e / 10.5 * 255, e, e];
+							var n = .5 * (1 + ~~(t > 50));
+							return [(1 & e) * n * 255, (e >> 1 & 1) * n * 255, (e >> 2 & 1) * n * 255]
+						}, a.ansi256.rgb = function(t) {
+							if (t >= 232) {
+								var e = 10 * (t - 232) + 8;
+								return [e, e, e]
 							}
 							var n;
-							return e -= 16, [Math.floor(e / 36) / 5 * 255, Math.floor((n = e % 36) / 6) / 5 * 255, n % 6 / 5 * 255]
-						}, r.rgb.hex = function(e) {
-							var t = (((255 & Math.round(e[0])) << 16) + ((255 & Math.round(e[1])) << 8) + (255 & Math.round(e[2]))).toString(16).toUpperCase();
-							return "000000".substring(t.length) + t
-						}, r.hex.rgb = function(e) {
-							var t = e.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i);
-							if (!t) return [0, 0, 0];
-							var n = t[0];
-							3 === t[0].length && (n = n.split("").map((function(e) {
-								return e + e
+							return t -= 16, [Math.floor(t / 36) / 5 * 255, Math.floor((n = t % 36) / 6) / 5 * 255, n % 6 / 5 * 255]
+						}, a.rgb.hex = function(t) {
+							var e = (((255 & Math.round(t[0])) << 16) + ((255 & Math.round(t[1])) << 8) + (255 & Math.round(t[2]))).toString(16).toUpperCase();
+							return "000000".substring(e.length) + e
+						}, a.hex.rgb = function(t) {
+							var e = t.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i);
+							if (!e) return [0, 0, 0];
+							var n = e[0];
+							3 === e[0].length && (n = n.split("").map((function(t) {
+								return t + t
 							})).join(""));
-							var a = parseInt(n, 16);
-							return [a >> 16 & 255, a >> 8 & 255, 255 & a]
-						}, r.rgb.hcg = function(e) {
-							var t, n = e[0] / 255,
-								a = e[1] / 255,
-								r = e[2] / 255,
-								i = Math.max(Math.max(n, a), r),
-								s = Math.min(Math.min(n, a), r),
-								o = i - s;
-							return t = o <= 0 ? 0 : i === n ? (a - r) / o % 6 : i === a ? 2 + (r - n) / o : 4 + (n - a) / o + 4, t /= 6, [360 * (t %= 1), 100 * o, 100 * (o < 1 ? s / (1 - o) : 0)]
-						}, r.hsl.hcg = function(e) {
-							var t = e[1] / 100,
-								n = e[2] / 100,
-								a = 1,
-								r = 0;
-							return (a = n < .5 ? 2 * t * n : 2 * t * (1 - n)) < 1 && (r = (n - .5 * a) / (1 - a)), [e[0], 100 * a, 100 * r]
-						}, r.hsv.hcg = function(e) {
-							var t = e[1] / 100,
-								n = e[2] / 100,
-								a = t * n,
-								r = 0;
-							return a < 1 && (r = (n - a) / (1 - a)), [e[0], 100 * a, 100 * r]
-						}, r.hcg.rgb = function(e) {
-							var t = e[0] / 360,
-								n = e[1] / 100,
-								a = e[2] / 100;
-							if (0 === n) return [255 * a, 255 * a, 255 * a];
-							var r, i = [0, 0, 0],
-								s = t % 1 * 6,
-								o = s % 1,
-								d = 1 - o;
-							switch (Math.floor(s)) {
+							var i = parseInt(n, 16);
+							return [i >> 16 & 255, i >> 8 & 255, 255 & i]
+						}, a.rgb.hcg = function(t) {
+							var e, n = t[0] / 255,
+								i = t[1] / 255,
+								a = t[2] / 255,
+								r = Math.max(Math.max(n, i), a),
+								o = Math.min(Math.min(n, i), a),
+								s = r - o;
+							return e = s <= 0 ? 0 : r === n ? (i - a) / s % 6 : r === i ? 2 + (a - n) / s : 4 + (n - i) / s + 4, e /= 6, [360 * (e %= 1), 100 * s, 100 * (s < 1 ? o / (1 - s) : 0)]
+						}, a.hsl.hcg = function(t) {
+							var e = t[1] / 100,
+								n = t[2] / 100,
+								i = 1,
+								a = 0;
+							return (i = n < .5 ? 2 * e * n : 2 * e * (1 - n)) < 1 && (a = (n - .5 * i) / (1 - i)), [t[0], 100 * i, 100 * a]
+						}, a.hsv.hcg = function(t) {
+							var e = t[1] / 100,
+								n = t[2] / 100,
+								i = e * n,
+								a = 0;
+							return i < 1 && (a = (n - i) / (1 - i)), [t[0], 100 * i, 100 * a]
+						}, a.hcg.rgb = function(t) {
+							var e = t[0] / 360,
+								n = t[1] / 100,
+								i = t[2] / 100;
+							if (0 === n) return [255 * i, 255 * i, 255 * i];
+							var a, r = [0, 0, 0],
+								o = e % 1 * 6,
+								s = o % 1,
+								l = 1 - s;
+							switch (Math.floor(o)) {
 								case 0:
-									i[0] = 1, i[1] = o, i[2] = 0;
+									r[0] = 1, r[1] = s, r[2] = 0;
 									break;
 								case 1:
-									i[0] = d, i[1] = 1, i[2] = 0;
+									r[0] = l, r[1] = 1, r[2] = 0;
 									break;
 								case 2:
-									i[0] = 0, i[1] = 1, i[2] = o;
+									r[0] = 0, r[1] = 1, r[2] = s;
 									break;
 								case 3:
-									i[0] = 0, i[1] = d, i[2] = 1;
+									r[0] = 0, r[1] = l, r[2] = 1;
 									break;
 								case 4:
-									i[0] = o, i[1] = 0, i[2] = 1;
+									r[0] = s, r[1] = 0, r[2] = 1;
 									break;
 								default:
-									i[0] = 1, i[1] = 0, i[2] = d
+									r[0] = 1, r[1] = 0, r[2] = l
 							}
-							return r = (1 - n) * a, [255 * (n * i[0] + r), 255 * (n * i[1] + r), 255 * (n * i[2] + r)]
-						}, r.hcg.hsv = function(e) {
-							var t = e[1] / 100,
-								n = t + e[2] / 100 * (1 - t),
+							return a = (1 - n) * i, [255 * (n * r[0] + a), 255 * (n * r[1] + a), 255 * (n * r[2] + a)]
+						}, a.hcg.hsv = function(t) {
+							var e = t[1] / 100,
+								n = e + t[2] / 100 * (1 - e),
+								i = 0;
+							return n > 0 && (i = e / n), [t[0], 100 * i, 100 * n]
+						}, a.hcg.hsl = function(t) {
+							var e = t[1] / 100,
+								n = t[2] / 100 * (1 - e) + .5 * e,
+								i = 0;
+							return n > 0 && n < .5 ? i = e / (2 * n) : n >= .5 && n < 1 && (i = e / (2 * (1 - n))), [t[0], 100 * i, 100 * n]
+						}, a.hcg.hwb = function(t) {
+							var e = t[1] / 100,
+								n = e + t[2] / 100 * (1 - e);
+							return [t[0], 100 * (n - e), 100 * (1 - n)]
+						}, a.hwb.hcg = function(t) {
+							var e = t[1] / 100,
+								n = 1 - t[2] / 100,
+								i = n - e,
 								a = 0;
-							return n > 0 && (a = t / n), [e[0], 100 * a, 100 * n]
-						}, r.hcg.hsl = function(e) {
-							var t = e[1] / 100,
-								n = e[2] / 100 * (1 - t) + .5 * t,
-								a = 0;
-							return n > 0 && n < .5 ? a = t / (2 * n) : n >= .5 && n < 1 && (a = t / (2 * (1 - n))), [e[0], 100 * a, 100 * n]
-						}, r.hcg.hwb = function(e) {
-							var t = e[1] / 100,
-								n = t + e[2] / 100 * (1 - t);
-							return [e[0], 100 * (n - t), 100 * (1 - n)]
-						}, r.hwb.hcg = function(e) {
-							var t = e[1] / 100,
-								n = 1 - e[2] / 100,
-								a = n - t,
-								r = 0;
-							return a < 1 && (r = (n - a) / (1 - a)), [e[0], 100 * a, 100 * r]
-						}, r.apple.rgb = function(e) {
-							return [e[0] / 65535 * 255, e[1] / 65535 * 255, e[2] / 65535 * 255]
-						}, r.rgb.apple = function(e) {
-							return [e[0] / 255 * 65535, e[1] / 255 * 65535, e[2] / 255 * 65535]
-						}, r.gray.rgb = function(e) {
-							return [e[0] / 100 * 255, e[0] / 100 * 255, e[0] / 100 * 255]
-						}, r.gray.hsl = r.gray.hsv = function(e) {
-							return [0, 0, e[0]]
-						}, r.gray.hwb = function(e) {
-							return [0, 100, e[0]]
-						}, r.gray.cmyk = function(e) {
-							return [0, 0, 0, e[0]]
-						}, r.gray.lab = function(e) {
-							return [e[0], 0, 0]
-						}, r.gray.hex = function(e) {
-							var t = 255 & Math.round(e[0] / 100 * 255),
-								n = ((t << 16) + (t << 8) + t).toString(16).toUpperCase();
+							return i < 1 && (a = (n - i) / (1 - i)), [t[0], 100 * i, 100 * a]
+						}, a.apple.rgb = function(t) {
+							return [t[0] / 65535 * 255, t[1] / 65535 * 255, t[2] / 65535 * 255]
+						}, a.rgb.apple = function(t) {
+							return [t[0] / 255 * 65535, t[1] / 255 * 65535, t[2] / 255 * 65535]
+						}, a.gray.rgb = function(t) {
+							return [t[0] / 100 * 255, t[0] / 100 * 255, t[0] / 100 * 255]
+						}, a.gray.hsl = a.gray.hsv = function(t) {
+							return [0, 0, t[0]]
+						}, a.gray.hwb = function(t) {
+							return [0, 100, t[0]]
+						}, a.gray.cmyk = function(t) {
+							return [0, 0, 0, t[0]]
+						}, a.gray.lab = function(t) {
+							return [t[0], 0, 0]
+						}, a.gray.hex = function(t) {
+							var e = 255 & Math.round(t[0] / 100 * 255),
+								n = ((e << 16) + (e << 8) + e).toString(16).toUpperCase();
 							return "000000".substring(n.length) + n
-						}, r.rgb.gray = function(e) {
-							return [(e[0] + e[1] + e[2]) / 3 / 255 * 100]
+						}, a.rgb.gray = function(t) {
+							return [(t[0] + t[1] + t[2]) / 3 / 255 * 100]
 						}
 					}));
 
-				function a(e) {
-					var t = function() {
-							for (var e = {}, t = Object.keys(n), a = t.length, r = 0; r < a; r++) e[t[r]] = {
+				function i(t) {
+					var e = function() {
+							for (var t = {}, e = Object.keys(n), i = e.length, a = 0; a < i; a++) t[e[a]] = {
 								distance: -1,
 								parent: null
 							};
-							return e
+							return t
 						}(),
-						a = [e];
-					for (t[e].distance = 0; a.length;)
-						for (var r = a.pop(), i = Object.keys(n[r]), s = i.length, o = 0; o < s; o++) {
-							var d = i[o],
-								l = t[d]; - 1 === l.distance && (l.distance = t[r].distance + 1, l.parent = r, a.unshift(d))
+						i = [t];
+					for (e[t].distance = 0; i.length;)
+						for (var a = i.pop(), r = Object.keys(n[a]), o = r.length, s = 0; s < o; s++) {
+							var l = r[s],
+								u = e[l]; - 1 === u.distance && (u.distance = e[a].distance + 1, u.parent = a, i.unshift(l))
 						}
-					return t
+					return e
 				}
 
-				function r(e, t) {
+				function a(t, e) {
 					return function(n) {
-						return t(e(n))
+						return e(t(n))
 					}
 				}
 
-				function i(e, t) {
-					for (var a = [t[e].parent, e], i = n[t[e].parent][e], s = t[e].parent; t[s].parent;) a.unshift(t[s].parent), i = r(n[t[s].parent][s], i), s = t[s].parent;
-					return i.conversion = a, i
+				function r(t, e) {
+					for (var i = [e[t].parent, t], r = n[e[t].parent][t], o = e[t].parent; e[o].parent;) i.unshift(e[o].parent), r = a(n[e[o].parent][o], r), o = e[o].parent;
+					return r.conversion = i, r
 				}
 				n.rgb, n.hsl, n.hsv, n.hwb, n.cmyk, n.xyz, n.lab, n.lch, n.hex, n.keyword, n.ansi16, n.ansi256, n.hcg, n.apple, n.gray;
-				var s = {};
-				Object.keys(n).forEach((function(e) {
-					s[e] = {}, Object.defineProperty(s[e], "channels", {
-						value: n[e].channels
-					}), Object.defineProperty(s[e], "labels", {
-						value: n[e].labels
+				var o = {};
+				Object.keys(n).forEach((function(t) {
+					o[t] = {}, Object.defineProperty(o[t], "channels", {
+						value: n[t].channels
+					}), Object.defineProperty(o[t], "labels", {
+						value: n[t].labels
 					});
-					var t = function(e) {
-						for (var t = a(e), n = {}, r = Object.keys(t), s = r.length, o = 0; o < s; o++) {
-							var d = r[o];
-							null !== t[d].parent && (n[d] = i(d, t))
+					var e = function(t) {
+						for (var e = i(t), n = {}, a = Object.keys(e), o = a.length, s = 0; s < o; s++) {
+							var l = a[s];
+							null !== e[l].parent && (n[l] = r(l, e))
 						}
 						return n
-					}(e);
-					Object.keys(t).forEach((function(n) {
-						var a = t[n];
-						s[e][n] = function(e) {
-							var t = function(t) {
-								if (null == t) return t;
-								arguments.length > 1 && (t = Array.prototype.slice.call(arguments));
-								var n = e(t);
+					}(t);
+					Object.keys(e).forEach((function(n) {
+						var i = e[n];
+						o[t][n] = function(t) {
+							var e = function(e) {
+								if (null == e) return e;
+								arguments.length > 1 && (e = Array.prototype.slice.call(arguments));
+								var n = t(e);
 								if ("object" == typeof n)
-									for (var a = n.length, r = 0; r < a; r++) n[r] = Math.round(n[r]);
+									for (var i = n.length, a = 0; a < i; a++) n[a] = Math.round(n[a]);
 								return n
 							};
-							return "conversion" in e && (t.conversion = e.conversion), t
-						}(a), s[e][n].raw = function(e) {
-							var t = function(t) {
-								return null == t ? t : (arguments.length > 1 && (t = Array.prototype.slice.call(arguments)), e(t))
+							return "conversion" in t && (e.conversion = t.conversion), e
+						}(i), o[t][n].raw = function(t) {
+							var e = function(e) {
+								return null == e ? e : (arguments.length > 1 && (e = Array.prototype.slice.call(arguments)), t(e))
 							};
-							return "conversion" in e && (t.conversion = e.conversion), t
-						}(a)
+							return "conversion" in t && (e.conversion = t.conversion), e
+						}(i)
 					}))
 				}));
-				var o = s,
-					d = {
+				var s = o,
+					l = {
 						aliceblue: [240, 248, 255],
 						antiquewhite: [250, 235, 215],
 						aqua: [0, 255, 255],
@@ -735,131 +735,131 @@
 						yellow: [255, 255, 0],
 						yellowgreen: [154, 205, 50]
 					},
-					l = {
-						getRgba: u,
-						getHsla: _,
-						getRgb: function(e) {
-							var t = u(e);
-							return t && t.slice(0, 3)
+					u = {
+						getRgba: d,
+						getHsla: c,
+						getRgb: function(t) {
+							var e = d(t);
+							return e && e.slice(0, 3)
 						},
-						getHsl: function(e) {
-							var t = _(e);
-							return t && t.slice(0, 3)
+						getHsl: function(t) {
+							var e = c(t);
+							return e && e.slice(0, 3)
 						},
-						getHwb: m,
-						getAlpha: function(e) {
-							var t = u(e);
-							return t ? t[3] : (t = _(e)) ? t[3] : (t = m(e)) ? t[3] : void 0
+						getHwb: h,
+						getAlpha: function(t) {
+							var e = d(t);
+							return e ? e[3] : (e = c(t)) ? e[3] : (e = h(t)) ? e[3] : void 0
 						},
-						hexString: function(e, t) {
-							return t = void 0 !== t && 3 === e.length ? t : e[3], "#" + M(e[0]) + M(e[1]) + M(e[2]) + (t >= 0 && t < 1 ? M(Math.round(255 * t)) : "")
+						hexString: function(t, e) {
+							return e = void 0 !== e && 3 === t.length ? e : t[3], "#" + v(t[0]) + v(t[1]) + v(t[2]) + (e >= 0 && e < 1 ? v(Math.round(255 * e)) : "")
 						},
-						rgbString: function(e, t) {
-							return t < 1 || e[3] && e[3] < 1 ? c(e, t) : "rgb(" + e[0] + ", " + e[1] + ", " + e[2] + ")"
+						rgbString: function(t, e) {
+							return e < 1 || t[3] && t[3] < 1 ? f(t, e) : "rgb(" + t[0] + ", " + t[1] + ", " + t[2] + ")"
 						},
-						rgbaString: c,
-						percentString: function(e, t) {
-							if (t < 1 || e[3] && e[3] < 1) return h(e, t);
-							var n = Math.round(e[0] / 255 * 100),
-								a = Math.round(e[1] / 255 * 100),
-								r = Math.round(e[2] / 255 * 100);
-							return "rgb(" + n + "%, " + a + "%, " + r + "%)"
+						rgbaString: f,
+						percentString: function(t, e) {
+							if (e < 1 || t[3] && t[3] < 1) return g(t, e);
+							var n = Math.round(t[0] / 255 * 100),
+								i = Math.round(t[1] / 255 * 100),
+								a = Math.round(t[2] / 255 * 100);
+							return "rgb(" + n + "%, " + i + "%, " + a + "%)"
 						},
-						percentaString: h,
-						hslString: function(e, t) {
-							return t < 1 || e[3] && e[3] < 1 ? f(e, t) : "hsl(" + e[0] + ", " + e[1] + "%, " + e[2] + "%)"
+						percentaString: g,
+						hslString: function(t, e) {
+							return e < 1 || t[3] && t[3] < 1 ? p(t, e) : "hsl(" + t[0] + ", " + t[1] + "%, " + t[2] + "%)"
 						},
-						hslaString: f,
-						hwbString: function(e, t) {
-							return void 0 === t && (t = void 0 !== e[3] ? e[3] : 1), "hwb(" + e[0] + ", " + e[1] + "%, " + e[2] + "%" + (void 0 !== t && 1 !== t ? ", " + t : "") + ")"
+						hslaString: p,
+						hwbString: function(t, e) {
+							return void 0 === e && (e = void 0 !== t[3] ? t[3] : 1), "hwb(" + t[0] + ", " + t[1] + "%, " + t[2] + "%" + (void 0 !== e && 1 !== e ? ", " + e : "") + ")"
 						},
-						keyword: function(e) {
-							return y[e.slice(0, 3)]
+						keyword: function(t) {
+							return b[t.slice(0, 3)]
 						}
 					};
 
-				function u(e) {
-					if (e) {
-						var t = [0, 0, 0],
+				function d(t) {
+					if (t) {
+						var e = [0, 0, 0],
 							n = 1,
-							a = e.match(/^#([a-fA-F0-9]{3,4})$/i),
-							r = "";
-						if (a) {
-							r = (a = a[1])[3];
-							for (var i = 0; i < t.length; i++) t[i] = parseInt(a[i] + a[i], 16);
-							r && (n = Math.round(parseInt(r + r, 16) / 255 * 100) / 100)
-						} else if (a = e.match(/^#([a-fA-F0-9]{6}([a-fA-F0-9]{2})?)$/i)) {
-							for (r = a[2], a = a[1], i = 0; i < t.length; i++) t[i] = parseInt(a.slice(2 * i, 2 * i + 2), 16);
-							r && (n = Math.round(parseInt(r, 16) / 255 * 100) / 100)
-						} else if (a = e.match(/^rgba?\(\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/i)) {
-							for (i = 0; i < t.length; i++) t[i] = parseInt(a[i + 1]);
-							n = parseFloat(a[4])
-						} else if (a = e.match(/^rgba?\(\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/i)) {
-							for (i = 0; i < t.length; i++) t[i] = Math.round(2.55 * parseFloat(a[i + 1]));
-							n = parseFloat(a[4])
-						} else if (a = e.match(/(\w+)/)) {
-							if ("transparent" == a[1]) return [0, 0, 0, 0];
-							if (!(t = d[a[1]])) return
+							i = t.match(/^#([a-fA-F0-9]{3,4})$/i),
+							a = "";
+						if (i) {
+							a = (i = i[1])[3];
+							for (var r = 0; r < e.length; r++) e[r] = parseInt(i[r] + i[r], 16);
+							a && (n = Math.round(parseInt(a + a, 16) / 255 * 100) / 100)
+						} else if (i = t.match(/^#([a-fA-F0-9]{6}([a-fA-F0-9]{2})?)$/i)) {
+							for (a = i[2], i = i[1], r = 0; r < e.length; r++) e[r] = parseInt(i.slice(2 * r, 2 * r + 2), 16);
+							a && (n = Math.round(parseInt(a, 16) / 255 * 100) / 100)
+						} else if (i = t.match(/^rgba?\(\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/i)) {
+							for (r = 0; r < e.length; r++) e[r] = parseInt(i[r + 1]);
+							n = parseFloat(i[4])
+						} else if (i = t.match(/^rgba?\(\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*,\s*([+-]?[\d\.]+)\%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)$/i)) {
+							for (r = 0; r < e.length; r++) e[r] = Math.round(2.55 * parseFloat(i[r + 1]));
+							n = parseFloat(i[4])
+						} else if (i = t.match(/(\w+)/)) {
+							if ("transparent" == i[1]) return [0, 0, 0, 0];
+							if (!(e = l[i[1]])) return
 						}
-						for (i = 0; i < t.length; i++) t[i] = p(t[i], 0, 255);
-						return n = n || 0 == n ? p(n, 0, 1) : 1, t[3] = n, t
+						for (r = 0; r < e.length; r++) e[r] = m(e[r], 0, 255);
+						return n = n || 0 == n ? m(n, 0, 1) : 1, e[3] = n, e
 					}
 				}
 
-				function _(e) {
-					if (e) {
-						var t = e.match(/^hsla?\(\s*([+-]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)/);
-						if (t) {
-							var n = parseFloat(t[4]);
-							return [p(parseInt(t[1]), 0, 360), p(parseFloat(t[2]), 0, 100), p(parseFloat(t[3]), 0, 100), p(isNaN(n) ? 1 : n, 0, 1)]
-						}
-					}
-				}
-
-				function m(e) {
-					if (e) {
-						var t = e.match(/^hwb\(\s*([+-]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)/);
-						if (t) {
-							var n = parseFloat(t[4]);
-							return [p(parseInt(t[1]), 0, 360), p(parseFloat(t[2]), 0, 100), p(parseFloat(t[3]), 0, 100), p(isNaN(n) ? 1 : n, 0, 1)]
+				function c(t) {
+					if (t) {
+						var e = t.match(/^hsla?\(\s*([+-]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)/);
+						if (e) {
+							var n = parseFloat(e[4]);
+							return [m(parseInt(e[1]), 0, 360), m(parseFloat(e[2]), 0, 100), m(parseFloat(e[3]), 0, 100), m(isNaN(n) ? 1 : n, 0, 1)]
 						}
 					}
 				}
 
-				function c(e, t) {
-					return void 0 === t && (t = void 0 !== e[3] ? e[3] : 1), "rgba(" + e[0] + ", " + e[1] + ", " + e[2] + ", " + t + ")"
+				function h(t) {
+					if (t) {
+						var e = t.match(/^hwb\(\s*([+-]?\d+)(?:deg)?\s*,\s*([+-]?[\d\.]+)%\s*,\s*([+-]?[\d\.]+)%\s*(?:,\s*([+-]?[\d\.]+)\s*)?\)/);
+						if (e) {
+							var n = parseFloat(e[4]);
+							return [m(parseInt(e[1]), 0, 360), m(parseFloat(e[2]), 0, 100), m(parseFloat(e[3]), 0, 100), m(isNaN(n) ? 1 : n, 0, 1)]
+						}
+					}
 				}
 
-				function h(e, t) {
-					return "rgba(" + Math.round(e[0] / 255 * 100) + "%, " + Math.round(e[1] / 255 * 100) + "%, " + Math.round(e[2] / 255 * 100) + "%, " + (t || e[3] || 1) + ")"
+				function f(t, e) {
+					return void 0 === e && (e = void 0 !== t[3] ? t[3] : 1), "rgba(" + t[0] + ", " + t[1] + ", " + t[2] + ", " + e + ")"
 				}
 
-				function f(e, t) {
-					return void 0 === t && (t = void 0 !== e[3] ? e[3] : 1), "hsla(" + e[0] + ", " + e[1] + "%, " + e[2] + "%, " + t + ")"
+				function g(t, e) {
+					return "rgba(" + Math.round(t[0] / 255 * 100) + "%, " + Math.round(t[1] / 255 * 100) + "%, " + Math.round(t[2] / 255 * 100) + "%, " + (e || t[3] || 1) + ")"
 				}
 
-				function p(e, t, n) {
-					return Math.min(Math.max(t, e), n)
+				function p(t, e) {
+					return void 0 === e && (e = void 0 !== t[3] ? t[3] : 1), "hsla(" + t[0] + ", " + t[1] + "%, " + t[2] + "%, " + e + ")"
 				}
 
-				function M(e) {
-					var t = e.toString(16).toUpperCase();
-					return t.length < 2 ? "0" + t : t
+				function m(t, e, n) {
+					return Math.min(Math.max(e, t), n)
 				}
-				var y = {};
-				for (var g in d) y[d[g]] = g;
-				var L = function(e) {
-					return e instanceof L ? e : this instanceof L ? (this.valid = !1, this.values = {
+
+				function v(t) {
+					var e = t.toString(16).toUpperCase();
+					return e.length < 2 ? "0" + e : e
+				}
+				var b = {};
+				for (var y in l) b[l[y]] = y;
+				var x = function(t) {
+					return t instanceof x ? t : this instanceof x ? (this.valid = !1, this.values = {
 						rgb: [0, 0, 0],
 						hsl: [0, 0, 0],
 						hsv: [0, 0, 0],
 						hwb: [0, 0, 0],
 						cmyk: [0, 0, 0, 0],
 						alpha: 1
-					}, void("string" == typeof e ? (t = l.getRgba(e)) ? this.setValues("rgb", t) : (t = l.getHsla(e)) ? this.setValues("hsl", t) : (t = l.getHwb(e)) && this.setValues("hwb", t) : "object" == typeof e && (void 0 !== (t = e).r || void 0 !== t.red ? this.setValues("rgb", t) : void 0 !== t.l || void 0 !== t.lightness ? this.setValues("hsl", t) : void 0 !== t.v || void 0 !== t.value ? this.setValues("hsv", t) : void 0 !== t.w || void 0 !== t.whiteness ? this.setValues("hwb", t) : void 0 === t.c && void 0 === t.cyan || this.setValues("cmyk", t)))) : new L(e);
-					var t
+					}, void("string" == typeof t ? (e = u.getRgba(t)) ? this.setValues("rgb", e) : (e = u.getHsla(t)) ? this.setValues("hsl", e) : (e = u.getHwb(t)) && this.setValues("hwb", e) : "object" == typeof t && (void 0 !== (e = t).r || void 0 !== e.red ? this.setValues("rgb", e) : void 0 !== e.l || void 0 !== e.lightness ? this.setValues("hsl", e) : void 0 !== e.v || void 0 !== e.value ? this.setValues("hsv", e) : void 0 !== e.w || void 0 !== e.whiteness ? this.setValues("hwb", e) : void 0 === e.c && void 0 === e.cyan || this.setValues("cmyk", e)))) : new x(t);
+					var e
 				};
-				L.prototype = {
+				x.prototype = {
 					isValid: function() {
 						return this.valid
 					},
@@ -888,536 +888,536 @@
 						return this.values.hsv
 					},
 					hwbArray: function() {
-						var e = this.values;
-						return 1 !== e.alpha ? e.hwb.concat([e.alpha]) : e.hwb
+						var t = this.values;
+						return 1 !== t.alpha ? t.hwb.concat([t.alpha]) : t.hwb
 					},
 					cmykArray: function() {
 						return this.values.cmyk
 					},
 					rgbaArray: function() {
-						var e = this.values;
-						return e.rgb.concat([e.alpha])
+						var t = this.values;
+						return t.rgb.concat([t.alpha])
 					},
 					hslaArray: function() {
-						var e = this.values;
-						return e.hsl.concat([e.alpha])
+						var t = this.values;
+						return t.hsl.concat([t.alpha])
 					},
-					alpha: function(e) {
-						return void 0 === e ? this.values.alpha : (this.setValues("alpha", e), this)
+					alpha: function(t) {
+						return void 0 === t ? this.values.alpha : (this.setValues("alpha", t), this)
 					},
-					red: function(e) {
-						return this.setChannel("rgb", 0, e)
+					red: function(t) {
+						return this.setChannel("rgb", 0, t)
 					},
-					green: function(e) {
-						return this.setChannel("rgb", 1, e)
+					green: function(t) {
+						return this.setChannel("rgb", 1, t)
 					},
-					blue: function(e) {
-						return this.setChannel("rgb", 2, e)
+					blue: function(t) {
+						return this.setChannel("rgb", 2, t)
 					},
-					hue: function(e) {
-						return e && (e = (e %= 360) < 0 ? 360 + e : e), this.setChannel("hsl", 0, e)
+					hue: function(t) {
+						return t && (t = (t %= 360) < 0 ? 360 + t : t), this.setChannel("hsl", 0, t)
 					},
-					saturation: function(e) {
-						return this.setChannel("hsl", 1, e)
+					saturation: function(t) {
+						return this.setChannel("hsl", 1, t)
 					},
-					lightness: function(e) {
-						return this.setChannel("hsl", 2, e)
+					lightness: function(t) {
+						return this.setChannel("hsl", 2, t)
 					},
-					saturationv: function(e) {
-						return this.setChannel("hsv", 1, e)
+					saturationv: function(t) {
+						return this.setChannel("hsv", 1, t)
 					},
-					whiteness: function(e) {
-						return this.setChannel("hwb", 1, e)
+					whiteness: function(t) {
+						return this.setChannel("hwb", 1, t)
 					},
-					blackness: function(e) {
-						return this.setChannel("hwb", 2, e)
+					blackness: function(t) {
+						return this.setChannel("hwb", 2, t)
 					},
-					value: function(e) {
-						return this.setChannel("hsv", 2, e)
+					value: function(t) {
+						return this.setChannel("hsv", 2, t)
 					},
-					cyan: function(e) {
-						return this.setChannel("cmyk", 0, e)
+					cyan: function(t) {
+						return this.setChannel("cmyk", 0, t)
 					},
-					magenta: function(e) {
-						return this.setChannel("cmyk", 1, e)
+					magenta: function(t) {
+						return this.setChannel("cmyk", 1, t)
 					},
-					yellow: function(e) {
-						return this.setChannel("cmyk", 2, e)
+					yellow: function(t) {
+						return this.setChannel("cmyk", 2, t)
 					},
-					black: function(e) {
-						return this.setChannel("cmyk", 3, e)
+					black: function(t) {
+						return this.setChannel("cmyk", 3, t)
 					},
 					hexString: function() {
-						return l.hexString(this.values.rgb)
+						return u.hexString(this.values.rgb)
 					},
 					rgbString: function() {
-						return l.rgbString(this.values.rgb, this.values.alpha)
+						return u.rgbString(this.values.rgb, this.values.alpha)
 					},
 					rgbaString: function() {
-						return l.rgbaString(this.values.rgb, this.values.alpha)
+						return u.rgbaString(this.values.rgb, this.values.alpha)
 					},
 					percentString: function() {
-						return l.percentString(this.values.rgb, this.values.alpha)
+						return u.percentString(this.values.rgb, this.values.alpha)
 					},
 					hslString: function() {
-						return l.hslString(this.values.hsl, this.values.alpha)
+						return u.hslString(this.values.hsl, this.values.alpha)
 					},
 					hslaString: function() {
-						return l.hslaString(this.values.hsl, this.values.alpha)
+						return u.hslaString(this.values.hsl, this.values.alpha)
 					},
 					hwbString: function() {
-						return l.hwbString(this.values.hwb, this.values.alpha)
+						return u.hwbString(this.values.hwb, this.values.alpha)
 					},
 					keyword: function() {
-						return l.keyword(this.values.rgb, this.values.alpha)
+						return u.keyword(this.values.rgb, this.values.alpha)
 					},
 					rgbNumber: function() {
-						var e = this.values.rgb;
-						return e[0] << 16 | e[1] << 8 | e[2]
+						var t = this.values.rgb;
+						return t[0] << 16 | t[1] << 8 | t[2]
 					},
 					luminosity: function() {
-						for (var e = this.values.rgb, t = [], n = 0; n < e.length; n++) {
-							var a = e[n] / 255;
-							t[n] = a <= .03928 ? a / 12.92 : Math.pow((a + .055) / 1.055, 2.4)
+						for (var t = this.values.rgb, e = [], n = 0; n < t.length; n++) {
+							var i = t[n] / 255;
+							e[n] = i <= .03928 ? i / 12.92 : Math.pow((i + .055) / 1.055, 2.4)
 						}
-						return .2126 * t[0] + .7152 * t[1] + .0722 * t[2]
+						return .2126 * e[0] + .7152 * e[1] + .0722 * e[2]
 					},
-					contrast: function(e) {
-						var t = this.luminosity(),
-							n = e.luminosity();
-						return t > n ? (t + .05) / (n + .05) : (n + .05) / (t + .05)
+					contrast: function(t) {
+						var e = this.luminosity(),
+							n = t.luminosity();
+						return e > n ? (e + .05) / (n + .05) : (n + .05) / (e + .05)
 					},
-					level: function(e) {
-						var t = this.contrast(e);
-						return t >= 7.1 ? "AAA" : t >= 4.5 ? "AA" : ""
+					level: function(t) {
+						var e = this.contrast(t);
+						return e >= 7.1 ? "AAA" : e >= 4.5 ? "AA" : ""
 					},
 					dark: function() {
-						var e = this.values.rgb;
-						return (299 * e[0] + 587 * e[1] + 114 * e[2]) / 1e3 < 128
+						var t = this.values.rgb;
+						return (299 * t[0] + 587 * t[1] + 114 * t[2]) / 1e3 < 128
 					},
 					light: function() {
 						return !this.dark()
 					},
 					negate: function() {
-						for (var e = [], t = 0; t < 3; t++) e[t] = 255 - this.values.rgb[t];
-						return this.setValues("rgb", e), this
+						for (var t = [], e = 0; e < 3; e++) t[e] = 255 - this.values.rgb[e];
+						return this.setValues("rgb", t), this
 					},
-					lighten: function(e) {
-						var t = this.values.hsl;
-						return t[2] += t[2] * e, this.setValues("hsl", t), this
+					lighten: function(t) {
+						var e = this.values.hsl;
+						return e[2] += e[2] * t, this.setValues("hsl", e), this
 					},
-					darken: function(e) {
-						var t = this.values.hsl;
-						return t[2] -= t[2] * e, this.setValues("hsl", t), this
+					darken: function(t) {
+						var e = this.values.hsl;
+						return e[2] -= e[2] * t, this.setValues("hsl", e), this
 					},
-					saturate: function(e) {
-						var t = this.values.hsl;
-						return t[1] += t[1] * e, this.setValues("hsl", t), this
+					saturate: function(t) {
+						var e = this.values.hsl;
+						return e[1] += e[1] * t, this.setValues("hsl", e), this
 					},
-					desaturate: function(e) {
-						var t = this.values.hsl;
-						return t[1] -= t[1] * e, this.setValues("hsl", t), this
+					desaturate: function(t) {
+						var e = this.values.hsl;
+						return e[1] -= e[1] * t, this.setValues("hsl", e), this
 					},
-					whiten: function(e) {
-						var t = this.values.hwb;
-						return t[1] += t[1] * e, this.setValues("hwb", t), this
+					whiten: function(t) {
+						var e = this.values.hwb;
+						return e[1] += e[1] * t, this.setValues("hwb", e), this
 					},
-					blacken: function(e) {
-						var t = this.values.hwb;
-						return t[2] += t[2] * e, this.setValues("hwb", t), this
+					blacken: function(t) {
+						var e = this.values.hwb;
+						return e[2] += e[2] * t, this.setValues("hwb", e), this
 					},
 					greyscale: function() {
-						var e = this.values.rgb,
-							t = .3 * e[0] + .59 * e[1] + .11 * e[2];
-						return this.setValues("rgb", [t, t, t]), this
+						var t = this.values.rgb,
+							e = .3 * t[0] + .59 * t[1] + .11 * t[2];
+						return this.setValues("rgb", [e, e, e]), this
 					},
-					clearer: function(e) {
-						var t = this.values.alpha;
-						return this.setValues("alpha", t - t * e), this
+					clearer: function(t) {
+						var e = this.values.alpha;
+						return this.setValues("alpha", e - e * t), this
 					},
-					opaquer: function(e) {
-						var t = this.values.alpha;
-						return this.setValues("alpha", t + t * e), this
+					opaquer: function(t) {
+						var e = this.values.alpha;
+						return this.setValues("alpha", e + e * t), this
 					},
-					rotate: function(e) {
-						var t = this.values.hsl,
-							n = (t[0] + e) % 360;
-						return t[0] = n < 0 ? 360 + n : n, this.setValues("hsl", t), this
+					rotate: function(t) {
+						var e = this.values.hsl,
+							n = (e[0] + t) % 360;
+						return e[0] = n < 0 ? 360 + n : n, this.setValues("hsl", e), this
 					},
-					mix: function(e, t) {
-						var n = e,
-							a = void 0 === t ? .5 : t,
-							r = 2 * a - 1,
-							i = this.alpha() - n.alpha(),
-							s = ((r * i == -1 ? r : (r + i) / (1 + r * i)) + 1) / 2,
-							o = 1 - s;
-						return this.rgb(s * this.red() + o * n.red(), s * this.green() + o * n.green(), s * this.blue() + o * n.blue()).alpha(this.alpha() * a + n.alpha() * (1 - a))
+					mix: function(t, e) {
+						var n = t,
+							i = void 0 === e ? .5 : e,
+							a = 2 * i - 1,
+							r = this.alpha() - n.alpha(),
+							o = ((a * r == -1 ? a : (a + r) / (1 + a * r)) + 1) / 2,
+							s = 1 - o;
+						return this.rgb(o * this.red() + s * n.red(), o * this.green() + s * n.green(), o * this.blue() + s * n.blue()).alpha(this.alpha() * i + n.alpha() * (1 - i))
 					},
 					toJSON: function() {
 						return this.rgb()
 					},
 					clone: function() {
-						var e, t, n = new L,
-							a = this.values,
-							r = n.values;
-						for (var i in a) a.hasOwnProperty(i) && (e = a[i], "[object Array]" === (t = {}.toString.call(e)) ? r[i] = e.slice(0) : "[object Number]" === t ? r[i] = e : console.error("unexpected color value:", e));
+						var t, e, n = new x,
+							i = this.values,
+							a = n.values;
+						for (var r in i) i.hasOwnProperty(r) && (t = i[r], "[object Array]" === (e = {}.toString.call(t)) ? a[r] = t.slice(0) : "[object Number]" === e ? a[r] = t : console.error("unexpected color value:", t));
 						return n
 					}
-				}, L.prototype.spaces = {
+				}, x.prototype.spaces = {
 					rgb: ["red", "green", "blue"],
 					hsl: ["hue", "saturation", "lightness"],
 					hsv: ["hue", "saturation", "value"],
 					hwb: ["hue", "whiteness", "blackness"],
 					cmyk: ["cyan", "magenta", "yellow", "black"]
-				}, L.prototype.maxes = {
+				}, x.prototype.maxes = {
 					rgb: [255, 255, 255],
 					hsl: [360, 100, 100],
 					hsv: [360, 100, 100],
 					hwb: [360, 100, 100],
 					cmyk: [100, 100, 100, 100]
-				}, L.prototype.getValues = function(e) {
-					for (var t = this.values, n = {}, a = 0; a < e.length; a++) n[e.charAt(a)] = t[e][a];
-					return 1 !== t.alpha && (n.a = t.alpha), n
-				}, L.prototype.setValues = function(e, t) {
-					var n, a, r = this.values,
-						i = this.spaces,
-						s = this.maxes,
-						d = 1;
-					if (this.valid = !0, "alpha" === e) d = t;
-					else if (t.length) r[e] = t.slice(0, e.length), d = t[e.length];
-					else if (void 0 !== t[e.charAt(0)]) {
-						for (n = 0; n < e.length; n++) r[e][n] = t[e.charAt(n)];
-						d = t.a
-					} else if (void 0 !== t[i[e][0]]) {
-						var l = i[e];
-						for (n = 0; n < e.length; n++) r[e][n] = t[l[n]];
-						d = t.alpha
+				}, x.prototype.getValues = function(t) {
+					for (var e = this.values, n = {}, i = 0; i < t.length; i++) n[t.charAt(i)] = e[t][i];
+					return 1 !== e.alpha && (n.a = e.alpha), n
+				}, x.prototype.setValues = function(t, e) {
+					var n, i, a = this.values,
+						r = this.spaces,
+						o = this.maxes,
+						l = 1;
+					if (this.valid = !0, "alpha" === t) l = e;
+					else if (e.length) a[t] = e.slice(0, t.length), l = e[t.length];
+					else if (void 0 !== e[t.charAt(0)]) {
+						for (n = 0; n < t.length; n++) a[t][n] = e[t.charAt(n)];
+						l = e.a
+					} else if (void 0 !== e[r[t][0]]) {
+						var u = r[t];
+						for (n = 0; n < t.length; n++) a[t][n] = e[u[n]];
+						l = e.alpha
 					}
-					if (r.alpha = Math.max(0, Math.min(1, void 0 === d ? r.alpha : d)), "alpha" === e) return !1;
-					for (n = 0; n < e.length; n++) a = Math.max(0, Math.min(s[e][n], r[e][n])), r[e][n] = Math.round(a);
-					for (var u in i) u !== e && (r[u] = o[e][u](r[e]));
+					if (a.alpha = Math.max(0, Math.min(1, void 0 === l ? a.alpha : l)), "alpha" === t) return !1;
+					for (n = 0; n < t.length; n++) i = Math.max(0, Math.min(o[t][n], a[t][n])), a[t][n] = Math.round(i);
+					for (var d in r) d !== t && (a[d] = s[t][d](a[t]));
 					return !0
-				}, L.prototype.setSpace = function(e, t) {
-					var n = t[0];
-					return void 0 === n ? this.getValues(e) : ("number" == typeof n && (n = Array.prototype.slice.call(t)), this.setValues(e, n), this)
-				}, L.prototype.setChannel = function(e, t, n) {
-					var a = this.values[e];
-					return void 0 === n ? a[t] : n === a[t] ? this : (a[t] = n, this.setValues(e, a), this)
-				}, "undefined" != typeof window && (window.Color = L);
-				var Y = L;
+				}, x.prototype.setSpace = function(t, e) {
+					var n = e[0];
+					return void 0 === n ? this.getValues(t) : ("number" == typeof n && (n = Array.prototype.slice.call(e)), this.setValues(t, n), this)
+				}, x.prototype.setChannel = function(t, e, n) {
+					var i = this.values[t];
+					return void 0 === n ? i[e] : n === i[e] ? this : (i[e] = n, this.setValues(t, i), this)
+				}, "undefined" != typeof window && (window.Color = x);
+				var _ = x;
 
-				function v(e) {
-					return -1 === ["__proto__", "prototype", "constructor"].indexOf(e)
+				function k(t) {
+					return -1 === ["__proto__", "prototype", "constructor"].indexOf(t)
 				}
-				var k, b = {
+				var w, M = {
 						noop: function() {},
-						uid: (k = 0, function() {
-							return k++
+						uid: (w = 0, function() {
+							return w++
 						}),
-						isNullOrUndef: function(e) {
-							return null == e
+						isNullOrUndef: function(t) {
+							return null == t
 						},
-						isArray: function(e) {
-							if (Array.isArray && Array.isArray(e)) return !0;
-							var t = Object.prototype.toString.call(e);
-							return "[object" === t.substr(0, 7) && "Array]" === t.substr(-6)
+						isArray: function(t) {
+							if (Array.isArray && Array.isArray(t)) return !0;
+							var e = Object.prototype.toString.call(t);
+							return "[object" === e.substr(0, 7) && "Array]" === e.substr(-6)
 						},
-						isObject: function(e) {
-							return null !== e && "[object Object]" === Object.prototype.toString.call(e)
+						isObject: function(t) {
+							return null !== t && "[object Object]" === Object.prototype.toString.call(t)
 						},
-						isFinite: function(e) {
-							return ("number" == typeof e || e instanceof Number) && isFinite(e)
+						isFinite: function(t) {
+							return ("number" == typeof t || t instanceof Number) && isFinite(t)
 						},
-						valueOrDefault: function(e, t) {
-							return void 0 === e ? t : e
+						valueOrDefault: function(t, e) {
+							return void 0 === t ? e : t
 						},
-						valueAtIndexOrDefault: function(e, t, n) {
-							return b.valueOrDefault(b.isArray(e) ? e[t] : e, n)
+						valueAtIndexOrDefault: function(t, e, n) {
+							return M.valueOrDefault(M.isArray(t) ? t[e] : t, n)
 						},
-						callback: function(e, t, n) {
-							if (e && "function" == typeof e.call) return e.apply(n, t)
+						callback: function(t, e, n) {
+							if (t && "function" == typeof t.call) return t.apply(n, e)
 						},
-						each: function(e, t, n, a) {
-							var r, i, s;
-							if (b.isArray(e))
-								if (i = e.length, a)
-									for (r = i - 1; r >= 0; r--) t.call(n, e[r], r);
+						each: function(t, e, n, i) {
+							var a, r, o;
+							if (M.isArray(t))
+								if (r = t.length, i)
+									for (a = r - 1; a >= 0; a--) e.call(n, t[a], a);
 								else
-									for (r = 0; r < i; r++) t.call(n, e[r], r);
-							else if (b.isObject(e))
-								for (i = (s = Object.keys(e)).length, r = 0; r < i; r++) t.call(n, e[s[r]], s[r])
+									for (a = 0; a < r; a++) e.call(n, t[a], a);
+							else if (M.isObject(t))
+								for (r = (o = Object.keys(t)).length, a = 0; a < r; a++) e.call(n, t[o[a]], o[a])
 						},
-						arrayEquals: function(e, t) {
-							var n, a, r, i;
-							if (!e || !t || e.length !== t.length) return !1;
-							for (n = 0, a = e.length; n < a; ++n)
-								if (r = e[n], i = t[n], r instanceof Array && i instanceof Array) {
-									if (!b.arrayEquals(r, i)) return !1
-								} else if (r !== i) return !1;
+						arrayEquals: function(t, e) {
+							var n, i, a, r;
+							if (!t || !e || t.length !== e.length) return !1;
+							for (n = 0, i = t.length; n < i; ++n)
+								if (a = t[n], r = e[n], a instanceof Array && r instanceof Array) {
+									if (!M.arrayEquals(a, r)) return !1
+								} else if (a !== r) return !1;
 							return !0
 						},
-						clone: function(e) {
-							if (b.isArray(e)) return e.map(b.clone);
-							if (b.isObject(e)) {
-								for (var t = Object.create(e), n = Object.keys(e), a = n.length, r = 0; r < a; ++r) t[n[r]] = b.clone(e[n[r]]);
-								return t
+						clone: function(t) {
+							if (M.isArray(t)) return t.map(M.clone);
+							if (M.isObject(t)) {
+								for (var e = Object.create(t), n = Object.keys(t), i = n.length, a = 0; a < i; ++a) e[n[a]] = M.clone(t[n[a]]);
+								return e
 							}
-							return e
+							return t
 						},
-						_merger: function(e, t, n, a) {
-							if (v(e)) {
-								var r = t[e],
-									i = n[e];
-								b.isObject(r) && b.isObject(i) ? b.merge(r, i, a) : t[e] = b.clone(i)
-							}
-						},
-						_mergerIf: function(e, t, n) {
-							if (v(e)) {
-								var a = t[e],
-									r = n[e];
-								b.isObject(a) && b.isObject(r) ? b.mergeIf(a, r) : t.hasOwnProperty(e) || (t[e] = b.clone(r))
+						_merger: function(t, e, n, i) {
+							if (k(t)) {
+								var a = e[t],
+									r = n[t];
+								M.isObject(a) && M.isObject(r) ? M.merge(a, r, i) : e[t] = M.clone(r)
 							}
 						},
-						merge: function(e, t, n) {
-							var a, r, i, s, o, d = b.isArray(t) ? t : [t],
-								l = d.length;
-							if (!b.isObject(e)) return e;
-							for (a = (n = n || {}).merger || b._merger, r = 0; r < l; ++r)
-								if (t = d[r], b.isObject(t))
-									for (o = 0, s = (i = Object.keys(t)).length; o < s; ++o) a(i[o], e, t, n);
-							return e
+						_mergerIf: function(t, e, n) {
+							if (k(t)) {
+								var i = e[t],
+									a = n[t];
+								M.isObject(i) && M.isObject(a) ? M.mergeIf(i, a) : e.hasOwnProperty(t) || (e[t] = M.clone(a))
+							}
 						},
-						mergeIf: function(e, t) {
-							return b.merge(e, t, {
-								merger: b._mergerIf
+						merge: function(t, e, n) {
+							var i, a, r, o, s, l = M.isArray(e) ? e : [e],
+								u = l.length;
+							if (!M.isObject(t)) return t;
+							for (i = (n = n || {}).merger || M._merger, a = 0; a < u; ++a)
+								if (e = l[a], M.isObject(e))
+									for (s = 0, o = (r = Object.keys(e)).length; s < o; ++s) i(r[s], t, e, n);
+							return t
+						},
+						mergeIf: function(t, e) {
+							return M.merge(t, e, {
+								merger: M._mergerIf
 							})
 						},
-						extend: Object.assign || function(e) {
-							return b.merge(e, [].slice.call(arguments, 1), {
-								merger: function(e, t, n) {
-									t[e] = n[e]
+						extend: Object.assign || function(t) {
+							return M.merge(t, [].slice.call(arguments, 1), {
+								merger: function(t, e, n) {
+									e[t] = n[t]
 								}
 							})
 						},
-						inherits: function(e) {
-							var t = this,
-								n = e && e.hasOwnProperty("constructor") ? e.constructor : function() {
-									return t.apply(this, arguments)
+						inherits: function(t) {
+							var e = this,
+								n = t && t.hasOwnProperty("constructor") ? t.constructor : function() {
+									return e.apply(this, arguments)
 								},
-								a = function() {
+								i = function() {
 									this.constructor = n
 								};
-							return a.prototype = t.prototype, n.prototype = new a, n.extend = b.inherits, e && b.extend(n.prototype, e), n.__super__ = t.prototype, n
+							return i.prototype = e.prototype, n.prototype = new i, n.extend = M.inherits, t && M.extend(n.prototype, t), n.__super__ = e.prototype, n
 						},
-						_deprecated: function(e, t, n, a) {
-							void 0 !== t && console.warn(e + ': "' + n + '" is deprecated. Please use "' + a + '" instead')
+						_deprecated: function(t, e, n, i) {
+							void 0 !== e && console.warn(t + ': "' + n + '" is deprecated. Please use "' + i + '" instead')
 						}
 					},
-					D = b;
-				b.callCallback = b.callback, b.indexOf = function(e, t, n) {
-					return Array.prototype.indexOf.call(e, t, n)
-				}, b.getValueOrDefault = b.valueOrDefault, b.getValueAtIndexOrDefault = b.valueAtIndexOrDefault;
-				var w = {
-						linear: function(e) {
-							return e
+					C = M;
+				M.callCallback = M.callback, M.indexOf = function(t, e, n) {
+					return Array.prototype.indexOf.call(t, e, n)
+				}, M.getValueOrDefault = M.valueOrDefault, M.getValueAtIndexOrDefault = M.valueAtIndexOrDefault;
+				var S = {
+						linear: function(t) {
+							return t
 						},
-						easeInQuad: function(e) {
-							return e * e
+						easeInQuad: function(t) {
+							return t * t
 						},
-						easeOutQuad: function(e) {
-							return -e * (e - 2)
+						easeOutQuad: function(t) {
+							return -t * (t - 2)
 						},
-						easeInOutQuad: function(e) {
-							return (e /= .5) < 1 ? .5 * e * e : -.5 * (--e * (e - 2) - 1)
+						easeInOutQuad: function(t) {
+							return (t /= .5) < 1 ? .5 * t * t : -.5 * (--t * (t - 2) - 1)
 						},
-						easeInCubic: function(e) {
-							return e * e * e
+						easeInCubic: function(t) {
+							return t * t * t
 						},
-						easeOutCubic: function(e) {
-							return (e -= 1) * e * e + 1
+						easeOutCubic: function(t) {
+							return (t -= 1) * t * t + 1
 						},
-						easeInOutCubic: function(e) {
-							return (e /= .5) < 1 ? .5 * e * e * e : .5 * ((e -= 2) * e * e + 2)
+						easeInOutCubic: function(t) {
+							return (t /= .5) < 1 ? .5 * t * t * t : .5 * ((t -= 2) * t * t + 2)
 						},
-						easeInQuart: function(e) {
-							return e * e * e * e
+						easeInQuart: function(t) {
+							return t * t * t * t
 						},
-						easeOutQuart: function(e) {
-							return -((e -= 1) * e * e * e - 1)
+						easeOutQuart: function(t) {
+							return -((t -= 1) * t * t * t - 1)
 						},
-						easeInOutQuart: function(e) {
-							return (e /= .5) < 1 ? .5 * e * e * e * e : -.5 * ((e -= 2) * e * e * e - 2)
+						easeInOutQuart: function(t) {
+							return (t /= .5) < 1 ? .5 * t * t * t * t : -.5 * ((t -= 2) * t * t * t - 2)
 						},
-						easeInQuint: function(e) {
-							return e * e * e * e * e
+						easeInQuint: function(t) {
+							return t * t * t * t * t
 						},
-						easeOutQuint: function(e) {
-							return (e -= 1) * e * e * e * e + 1
+						easeOutQuint: function(t) {
+							return (t -= 1) * t * t * t * t + 1
 						},
-						easeInOutQuint: function(e) {
-							return (e /= .5) < 1 ? .5 * e * e * e * e * e : .5 * ((e -= 2) * e * e * e * e + 2)
+						easeInOutQuint: function(t) {
+							return (t /= .5) < 1 ? .5 * t * t * t * t * t : .5 * ((t -= 2) * t * t * t * t + 2)
 						},
-						easeInSine: function(e) {
-							return 1 - Math.cos(e * (Math.PI / 2))
+						easeInSine: function(t) {
+							return 1 - Math.cos(t * (Math.PI / 2))
 						},
-						easeOutSine: function(e) {
-							return Math.sin(e * (Math.PI / 2))
+						easeOutSine: function(t) {
+							return Math.sin(t * (Math.PI / 2))
 						},
-						easeInOutSine: function(e) {
-							return -.5 * (Math.cos(Math.PI * e) - 1)
+						easeInOutSine: function(t) {
+							return -.5 * (Math.cos(Math.PI * t) - 1)
 						},
-						easeInExpo: function(e) {
-							return 0 === e ? 0 : Math.pow(2, 10 * (e - 1))
+						easeInExpo: function(t) {
+							return 0 === t ? 0 : Math.pow(2, 10 * (t - 1))
 						},
-						easeOutExpo: function(e) {
-							return 1 === e ? 1 : 1 - Math.pow(2, -10 * e)
+						easeOutExpo: function(t) {
+							return 1 === t ? 1 : 1 - Math.pow(2, -10 * t)
 						},
-						easeInOutExpo: function(e) {
-							return 0 === e ? 0 : 1 === e ? 1 : (e /= .5) < 1 ? .5 * Math.pow(2, 10 * (e - 1)) : .5 * (2 - Math.pow(2, -10 * --e))
+						easeInOutExpo: function(t) {
+							return 0 === t ? 0 : 1 === t ? 1 : (t /= .5) < 1 ? .5 * Math.pow(2, 10 * (t - 1)) : .5 * (2 - Math.pow(2, -10 * --t))
 						},
-						easeInCirc: function(e) {
-							return e >= 1 ? e : -(Math.sqrt(1 - e * e) - 1)
+						easeInCirc: function(t) {
+							return t >= 1 ? t : -(Math.sqrt(1 - t * t) - 1)
 						},
-						easeOutCirc: function(e) {
-							return Math.sqrt(1 - (e -= 1) * e)
+						easeOutCirc: function(t) {
+							return Math.sqrt(1 - (t -= 1) * t)
 						},
-						easeInOutCirc: function(e) {
-							return (e /= .5) < 1 ? -.5 * (Math.sqrt(1 - e * e) - 1) : .5 * (Math.sqrt(1 - (e -= 2) * e) + 1)
+						easeInOutCirc: function(t) {
+							return (t /= .5) < 1 ? -.5 * (Math.sqrt(1 - t * t) - 1) : .5 * (Math.sqrt(1 - (t -= 2) * t) + 1)
 						},
-						easeInElastic: function(e) {
-							var t = 1.70158,
+						easeInElastic: function(t) {
+							var e = 1.70158,
 								n = 0,
-								a = 1;
-							return 0 === e ? 0 : 1 === e ? 1 : (n || (n = .3), a < 1 ? (a = 1, t = n / 4) : t = n / (2 * Math.PI) * Math.asin(1 / a), -a * Math.pow(2, 10 * (e -= 1)) * Math.sin((e - t) * (2 * Math.PI) / n))
+								i = 1;
+							return 0 === t ? 0 : 1 === t ? 1 : (n || (n = .3), i < 1 ? (i = 1, e = n / 4) : e = n / (2 * Math.PI) * Math.asin(1 / i), -i * Math.pow(2, 10 * (t -= 1)) * Math.sin((t - e) * (2 * Math.PI) / n))
 						},
-						easeOutElastic: function(e) {
-							var t = 1.70158,
+						easeOutElastic: function(t) {
+							var e = 1.70158,
 								n = 0,
-								a = 1;
-							return 0 === e ? 0 : 1 === e ? 1 : (n || (n = .3), a < 1 ? (a = 1, t = n / 4) : t = n / (2 * Math.PI) * Math.asin(1 / a), a * Math.pow(2, -10 * e) * Math.sin((e - t) * (2 * Math.PI) / n) + 1)
+								i = 1;
+							return 0 === t ? 0 : 1 === t ? 1 : (n || (n = .3), i < 1 ? (i = 1, e = n / 4) : e = n / (2 * Math.PI) * Math.asin(1 / i), i * Math.pow(2, -10 * t) * Math.sin((t - e) * (2 * Math.PI) / n) + 1)
 						},
-						easeInOutElastic: function(e) {
-							var t = 1.70158,
+						easeInOutElastic: function(t) {
+							var e = 1.70158,
 								n = 0,
-								a = 1;
-							return 0 === e ? 0 : 2 == (e /= .5) ? 1 : (n || (n = .45), a < 1 ? (a = 1, t = n / 4) : t = n / (2 * Math.PI) * Math.asin(1 / a), e < 1 ? a * Math.pow(2, 10 * (e -= 1)) * Math.sin((e - t) * (2 * Math.PI) / n) * -.5 : a * Math.pow(2, -10 * (e -= 1)) * Math.sin((e - t) * (2 * Math.PI) / n) * .5 + 1)
+								i = 1;
+							return 0 === t ? 0 : 2 == (t /= .5) ? 1 : (n || (n = .45), i < 1 ? (i = 1, e = n / 4) : e = n / (2 * Math.PI) * Math.asin(1 / i), t < 1 ? i * Math.pow(2, 10 * (t -= 1)) * Math.sin((t - e) * (2 * Math.PI) / n) * -.5 : i * Math.pow(2, -10 * (t -= 1)) * Math.sin((t - e) * (2 * Math.PI) / n) * .5 + 1)
 						},
-						easeInBack: function(e) {
-							var t = 1.70158;
-							return e * e * ((t + 1) * e - t)
+						easeInBack: function(t) {
+							var e = 1.70158;
+							return t * t * ((e + 1) * t - e)
 						},
-						easeOutBack: function(e) {
-							var t = 1.70158;
-							return (e -= 1) * e * ((t + 1) * e + t) + 1
+						easeOutBack: function(t) {
+							var e = 1.70158;
+							return (t -= 1) * t * ((e + 1) * t + e) + 1
 						},
-						easeInOutBack: function(e) {
-							var t = 1.70158;
-							return (e /= .5) < 1 ? e * e * ((1 + (t *= 1.525)) * e - t) * .5 : .5 * ((e -= 2) * e * ((1 + (t *= 1.525)) * e + t) + 2)
+						easeInOutBack: function(t) {
+							var e = 1.70158;
+							return (t /= .5) < 1 ? t * t * ((1 + (e *= 1.525)) * t - e) * .5 : .5 * ((t -= 2) * t * ((1 + (e *= 1.525)) * t + e) + 2)
 						},
-						easeInBounce: function(e) {
-							return 1 - w.easeOutBounce(1 - e)
+						easeInBounce: function(t) {
+							return 1 - S.easeOutBounce(1 - t)
 						},
-						easeOutBounce: function(e) {
-							return e < 1 / 2.75 ? 7.5625 * e * e : e < 2 / 2.75 ? 7.5625 * (e -= 1.5 / 2.75) * e + .75 : e < 2.5 / 2.75 ? 7.5625 * (e -= 2.25 / 2.75) * e + .9375 : 7.5625 * (e -= 2.625 / 2.75) * e + .984375
+						easeOutBounce: function(t) {
+							return t < 1 / 2.75 ? 7.5625 * t * t : t < 2 / 2.75 ? 7.5625 * (t -= 1.5 / 2.75) * t + .75 : t < 2.5 / 2.75 ? 7.5625 * (t -= 2.25 / 2.75) * t + .9375 : 7.5625 * (t -= 2.625 / 2.75) * t + .984375
 						},
-						easeInOutBounce: function(e) {
-							return e < .5 ? .5 * w.easeInBounce(2 * e) : .5 * w.easeOutBounce(2 * e - 1) + .5
+						easeInOutBounce: function(t) {
+							return t < .5 ? .5 * S.easeInBounce(2 * t) : .5 * S.easeOutBounce(2 * t - 1) + .5
 						}
 					},
-					T = {
-						effects: w
+					P = {
+						effects: S
 					};
-				D.easingEffects = w;
-				var x = Math.PI,
-					S = x / 180,
-					H = 2 * x,
-					j = x / 2,
-					P = x / 4,
-					O = 2 * x / 3,
-					A = {
-						clear: function(e) {
-							e.ctx.clearRect(0, 0, e.width, e.height)
+				C.easingEffects = S;
+				var A = Math.PI,
+					D = A / 180,
+					I = 2 * A,
+					T = A / 2,
+					F = A / 4,
+					O = 2 * A / 3,
+					L = {
+						clear: function(t) {
+							t.ctx.clearRect(0, 0, t.width, t.height)
 						},
-						roundedRect: function(e, t, n, a, r, i) {
-							if (i) {
-								var s = Math.min(i, r / 2, a / 2),
-									o = t + s,
-									d = n + s,
-									l = t + a - s,
-									u = n + r - s;
-								e.moveTo(t, d), o < l && d < u ? (e.arc(o, d, s, -x, -j), e.arc(l, d, s, -j, 0), e.arc(l, u, s, 0, j), e.arc(o, u, s, j, x)) : o < l ? (e.moveTo(o, n), e.arc(l, d, s, -j, j), e.arc(o, d, s, j, x + j)) : d < u ? (e.arc(o, d, s, -x, 0), e.arc(o, u, s, 0, x)) : e.arc(o, d, s, -x, x), e.closePath(), e.moveTo(t, n)
-							} else e.rect(t, n, a, r)
+						roundedRect: function(t, e, n, i, a, r) {
+							if (r) {
+								var o = Math.min(r, a / 2, i / 2),
+									s = e + o,
+									l = n + o,
+									u = e + i - o,
+									d = n + a - o;
+								t.moveTo(e, l), s < u && l < d ? (t.arc(s, l, o, -A, -T), t.arc(u, l, o, -T, 0), t.arc(u, d, o, 0, T), t.arc(s, d, o, T, A)) : s < u ? (t.moveTo(s, n), t.arc(u, l, o, -T, T), t.arc(s, l, o, T, A + T)) : l < d ? (t.arc(s, l, o, -A, 0), t.arc(s, d, o, 0, A)) : t.arc(s, l, o, -A, A), t.closePath(), t.moveTo(e, n)
+							} else t.rect(e, n, i, a)
 						},
-						drawPoint: function(e, t, n, a, r, i) {
-							var s, o, d, l, u, _ = (i || 0) * S;
-							if (t && "object" == typeof t && ("[object HTMLImageElement]" === (s = t.toString()) || "[object HTMLCanvasElement]" === s)) return e.save(), e.translate(a, r), e.rotate(_), e.drawImage(t, -t.width / 2, -t.height / 2, t.width, t.height), void e.restore();
+						drawPoint: function(t, e, n, i, a, r) {
+							var o, s, l, u, d, c = (r || 0) * D;
+							if (e && "object" == typeof e && ("[object HTMLImageElement]" === (o = e.toString()) || "[object HTMLCanvasElement]" === o)) return t.save(), t.translate(i, a), t.rotate(c), t.drawImage(e, -e.width / 2, -e.height / 2, e.width, e.height), void t.restore();
 							if (!(isNaN(n) || n <= 0)) {
-								switch (e.beginPath(), t) {
+								switch (t.beginPath(), e) {
 									default:
-										e.arc(a, r, n, 0, H), e.closePath();
+										t.arc(i, a, n, 0, I), t.closePath();
 										break;
 									case "triangle":
-										e.moveTo(a + Math.sin(_) * n, r - Math.cos(_) * n), _ += O, e.lineTo(a + Math.sin(_) * n, r - Math.cos(_) * n), _ += O, e.lineTo(a + Math.sin(_) * n, r - Math.cos(_) * n), e.closePath();
+										t.moveTo(i + Math.sin(c) * n, a - Math.cos(c) * n), c += O, t.lineTo(i + Math.sin(c) * n, a - Math.cos(c) * n), c += O, t.lineTo(i + Math.sin(c) * n, a - Math.cos(c) * n), t.closePath();
 										break;
 									case "rectRounded":
-										l = n - (u = .516 * n), o = Math.cos(_ + P) * l, d = Math.sin(_ + P) * l, e.arc(a - o, r - d, u, _ - x, _ - j), e.arc(a + d, r - o, u, _ - j, _), e.arc(a + o, r + d, u, _, _ + j), e.arc(a - d, r + o, u, _ + j, _ + x), e.closePath();
+										u = n - (d = .516 * n), s = Math.cos(c + F) * u, l = Math.sin(c + F) * u, t.arc(i - s, a - l, d, c - A, c - T), t.arc(i + l, a - s, d, c - T, c), t.arc(i + s, a + l, d, c, c + T), t.arc(i - l, a + s, d, c + T, c + A), t.closePath();
 										break;
 									case "rect":
-										if (!i) {
-											l = Math.SQRT1_2 * n, e.rect(a - l, r - l, 2 * l, 2 * l);
+										if (!r) {
+											u = Math.SQRT1_2 * n, t.rect(i - u, a - u, 2 * u, 2 * u);
 											break
 										}
-										_ += P;
+										c += F;
 									case "rectRot":
-										o = Math.cos(_) * n, d = Math.sin(_) * n, e.moveTo(a - o, r - d), e.lineTo(a + d, r - o), e.lineTo(a + o, r + d), e.lineTo(a - d, r + o), e.closePath();
+										s = Math.cos(c) * n, l = Math.sin(c) * n, t.moveTo(i - s, a - l), t.lineTo(i + l, a - s), t.lineTo(i + s, a + l), t.lineTo(i - l, a + s), t.closePath();
 										break;
 									case "crossRot":
-										_ += P;
+										c += F;
 									case "cross":
-										o = Math.cos(_) * n, d = Math.sin(_) * n, e.moveTo(a - o, r - d), e.lineTo(a + o, r + d), e.moveTo(a + d, r - o), e.lineTo(a - d, r + o);
+										s = Math.cos(c) * n, l = Math.sin(c) * n, t.moveTo(i - s, a - l), t.lineTo(i + s, a + l), t.moveTo(i + l, a - s), t.lineTo(i - l, a + s);
 										break;
 									case "star":
-										o = Math.cos(_) * n, d = Math.sin(_) * n, e.moveTo(a - o, r - d), e.lineTo(a + o, r + d), e.moveTo(a + d, r - o), e.lineTo(a - d, r + o), _ += P, o = Math.cos(_) * n, d = Math.sin(_) * n, e.moveTo(a - o, r - d), e.lineTo(a + o, r + d), e.moveTo(a + d, r - o), e.lineTo(a - d, r + o);
+										s = Math.cos(c) * n, l = Math.sin(c) * n, t.moveTo(i - s, a - l), t.lineTo(i + s, a + l), t.moveTo(i + l, a - s), t.lineTo(i - l, a + s), c += F, s = Math.cos(c) * n, l = Math.sin(c) * n, t.moveTo(i - s, a - l), t.lineTo(i + s, a + l), t.moveTo(i + l, a - s), t.lineTo(i - l, a + s);
 										break;
 									case "line":
-										o = Math.cos(_) * n, d = Math.sin(_) * n, e.moveTo(a - o, r - d), e.lineTo(a + o, r + d);
+										s = Math.cos(c) * n, l = Math.sin(c) * n, t.moveTo(i - s, a - l), t.lineTo(i + s, a + l);
 										break;
 									case "dash":
-										e.moveTo(a, r), e.lineTo(a + Math.cos(_) * n, r + Math.sin(_) * n)
+										t.moveTo(i, a), t.lineTo(i + Math.cos(c) * n, a + Math.sin(c) * n)
 								}
-								e.fill(), e.stroke()
+								t.fill(), t.stroke()
 							}
 						},
-						_isPointInArea: function(e, t) {
-							return e.x > t.left - 1e-6 && e.x < t.right + 1e-6 && e.y > t.top - 1e-6 && e.y < t.bottom + 1e-6
+						_isPointInArea: function(t, e) {
+							return t.x > e.left - 1e-6 && t.x < e.right + 1e-6 && t.y > e.top - 1e-6 && t.y < e.bottom + 1e-6
 						},
-						clipArea: function(e, t) {
-							e.save(), e.beginPath(), e.rect(t.left, t.top, t.right - t.left, t.bottom - t.top), e.clip()
+						clipArea: function(t, e) {
+							t.save(), t.beginPath(), t.rect(e.left, e.top, e.right - e.left, e.bottom - e.top), t.clip()
 						},
-						unclipArea: function(e) {
-							e.restore()
+						unclipArea: function(t) {
+							t.restore()
 						},
-						lineTo: function(e, t, n, a) {
-							var r = n.steppedLine;
-							if (r) {
-								if ("middle" === r) {
-									var i = (t.x + n.x) / 2;
-									e.lineTo(i, a ? n.y : t.y), e.lineTo(i, a ? t.y : n.y)
-								} else "after" === r && !a || "after" !== r && a ? e.lineTo(t.x, n.y) : e.lineTo(n.x, t.y);
-								e.lineTo(n.x, n.y)
-							} else n.tension ? e.bezierCurveTo(a ? t.controlPointPreviousX : t.controlPointNextX, a ? t.controlPointPreviousY : t.controlPointNextY, a ? n.controlPointNextX : n.controlPointPreviousX, a ? n.controlPointNextY : n.controlPointPreviousY, n.x, n.y) : e.lineTo(n.x, n.y)
+						lineTo: function(t, e, n, i) {
+							var a = n.steppedLine;
+							if (a) {
+								if ("middle" === a) {
+									var r = (e.x + n.x) / 2;
+									t.lineTo(r, i ? n.y : e.y), t.lineTo(r, i ? e.y : n.y)
+								} else "after" === a && !i || "after" !== a && i ? t.lineTo(e.x, n.y) : t.lineTo(n.x, e.y);
+								t.lineTo(n.x, n.y)
+							} else n.tension ? t.bezierCurveTo(i ? e.controlPointPreviousX : e.controlPointNextX, i ? e.controlPointPreviousY : e.controlPointNextY, i ? n.controlPointNextX : n.controlPointPreviousX, i ? n.controlPointNextY : n.controlPointPreviousY, n.x, n.y) : t.lineTo(n.x, n.y)
 						}
 					},
-					F = A;
-				D.clear = A.clear, D.drawRoundedRectangle = function(e) {
-					e.beginPath(), A.roundedRect.apply(A, arguments)
+					R = L;
+				C.clear = L.clear, C.drawRoundedRectangle = function(t) {
+					t.beginPath(), L.roundedRect.apply(L, arguments)
 				};
-				var W = {
-					_set: function(e, t) {
-						return D.merge(this[e] || (this[e] = {}), t)
+				var E = {
+					_set: function(t, e) {
+						return C.merge(this[t] || (this[t] = {}), e)
 					}
 				};
-				W._set("global", {
+				E._set("global", {
 					defaultColor: "rgba(0,0,0,0.1)",
 					defaultFontColor: "#666",
 					defaultFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
@@ -1426,154 +1426,154 @@
 					defaultLineHeight: 1.2,
 					showLines: !0
 				});
-				var C = W,
-					E = D.valueOrDefault,
-					I = {
-						toLineHeight: function(e, t) {
-							var n = ("" + e).match(/^(normal|(\d+(?:\.\d+)?)(px|em|%)?)$/);
-							if (!n || "normal" === n[1]) return 1.2 * t;
-							switch (e = +n[2], n[3]) {
+				var z = E,
+					N = C.valueOrDefault,
+					B = {
+						toLineHeight: function(t, e) {
+							var n = ("" + t).match(/^(normal|(\d+(?:\.\d+)?)(px|em|%)?)$/);
+							if (!n || "normal" === n[1]) return 1.2 * e;
+							switch (t = +n[2], n[3]) {
 								case "px":
-									return e;
+									return t;
 								case "%":
-									e /= 100
+									t /= 100
 							}
-							return t * e
+							return e * t
 						},
-						toPadding: function(e) {
-							var t, n, a, r;
-							return D.isObject(e) ? (t = +e.top || 0, n = +e.right || 0, a = +e.bottom || 0, r = +e.left || 0) : t = n = a = r = +e || 0, {
-								top: t,
+						toPadding: function(t) {
+							var e, n, i, a;
+							return C.isObject(t) ? (e = +t.top || 0, n = +t.right || 0, i = +t.bottom || 0, a = +t.left || 0) : e = n = i = a = +t || 0, {
+								top: e,
 								right: n,
-								bottom: a,
-								left: r,
-								height: t + a,
-								width: r + n
+								bottom: i,
+								left: a,
+								height: e + i,
+								width: a + n
 							}
 						},
-						_parseFont: function(e) {
-							var t = C.global,
-								n = E(e.fontSize, t.defaultFontSize),
-								a = {
-									family: E(e.fontFamily, t.defaultFontFamily),
-									lineHeight: D.options.toLineHeight(E(e.lineHeight, t.defaultLineHeight), n),
+						_parseFont: function(t) {
+							var e = z.global,
+								n = N(t.fontSize, e.defaultFontSize),
+								i = {
+									family: N(t.fontFamily, e.defaultFontFamily),
+									lineHeight: C.options.toLineHeight(N(t.lineHeight, e.defaultLineHeight), n),
 									size: n,
-									style: E(e.fontStyle, t.defaultFontStyle),
+									style: N(t.fontStyle, e.defaultFontStyle),
 									weight: null,
 									string: ""
 								};
-							return a.string = function(e) {
-								return !e || D.isNullOrUndef(e.size) || D.isNullOrUndef(e.family) ? null : (e.style ? e.style + " " : "") + (e.weight ? e.weight + " " : "") + e.size + "px " + e.family
-							}(a), a
+							return i.string = function(t) {
+								return !t || C.isNullOrUndef(t.size) || C.isNullOrUndef(t.family) ? null : (t.style ? t.style + " " : "") + (t.weight ? t.weight + " " : "") + t.size + "px " + t.family
+							}(i), i
 						},
-						resolve: function(e, t, n, a) {
-							var r, i, s, o = !0;
-							for (r = 0, i = e.length; r < i; ++r)
-								if (void 0 !== (s = e[r]) && (void 0 !== t && "function" == typeof s && (s = s(t), o = !1), void 0 !== n && D.isArray(s) && (s = s[n], o = !1), void 0 !== s)) return a && !o && (a.cacheable = !1), s
+						resolve: function(t, e, n, i) {
+							var a, r, o, s = !0;
+							for (a = 0, r = t.length; a < r; ++a)
+								if (void 0 !== (o = t[a]) && (void 0 !== e && "function" == typeof o && (o = o(e), s = !1), void 0 !== n && C.isArray(o) && (o = o[n], s = !1), void 0 !== o)) return i && !s && (i.cacheable = !1), o
 						}
 					},
-					z = {
-						_factorize: function(e) {
-							var t, n = [],
-								a = Math.sqrt(e);
-							for (t = 1; t < a; t++) e % t == 0 && (n.push(t), n.push(e / t));
-							return a === (0 | a) && n.push(a), n.sort((function(e, t) {
-								return e - t
+					W = {
+						_factorize: function(t) {
+							var e, n = [],
+								i = Math.sqrt(t);
+							for (e = 1; e < i; e++) t % e == 0 && (n.push(e), n.push(t / e));
+							return i === (0 | i) && n.push(i), n.sort((function(t, e) {
+								return t - e
 							})).pop(), n
 						},
-						log10: Math.log10 || function(e) {
-							var t = Math.log(e) * Math.LOG10E,
-								n = Math.round(t);
-							return e === Math.pow(10, n) ? n : t
+						log10: Math.log10 || function(t) {
+							var e = Math.log(t) * Math.LOG10E,
+								n = Math.round(e);
+							return t === Math.pow(10, n) ? n : e
 						}
 					},
-					N = z;
-				D.log10 = z.log10;
-				var R = D,
-					V = T,
-					B = F,
-					J = I,
-					U = N,
-					G = {
-						getRtlAdapter: function(e, t, n) {
-							return e ? function(e, t) {
+					V = W;
+				C.log10 = W.log10;
+				var j = C,
+					H = P,
+					q = R,
+					U = B,
+					Y = V,
+					K = {
+						getRtlAdapter: function(t, e, n) {
+							return t ? function(t, e) {
 								return {
 									x: function(n) {
-										return e + e + t - n
+										return t + t + e - n
 									},
-									setWidth: function(e) {
-										t = e
+									setWidth: function(t) {
+										e = t
 									},
-									textAlign: function(e) {
-										return "center" === e ? e : "right" === e ? "left" : "right"
+									textAlign: function(t) {
+										return "center" === t ? t : "right" === t ? "left" : "right"
 									},
-									xPlus: function(e, t) {
-										return e - t
+									xPlus: function(t, e) {
+										return t - e
 									},
-									leftForLtr: function(e, t) {
-										return e - t
+									leftForLtr: function(t, e) {
+										return t - e
 									}
 								}
-							}(t, n) : {
-								x: function(e) {
-									return e
+							}(e, n) : {
+								x: function(t) {
+									return t
 								},
-								setWidth: function(e) {},
-								textAlign: function(e) {
-									return e
+								setWidth: function(t) {},
+								textAlign: function(t) {
+									return t
 								},
-								xPlus: function(e, t) {
-									return e + t
+								xPlus: function(t, e) {
+									return t + e
 								},
-								leftForLtr: function(e, t) {
-									return e
+								leftForLtr: function(t, e) {
+									return t
 								}
 							}
 						},
-						overrideTextDirection: function(e, t) {
-							var n, a;
-							"ltr" !== t && "rtl" !== t || (a = [(n = e.canvas.style).getPropertyValue("direction"), n.getPropertyPriority("direction")], n.setProperty("direction", t, "important"), e.prevTextDirection = a)
+						overrideTextDirection: function(t, e) {
+							var n, i;
+							"ltr" !== e && "rtl" !== e || (i = [(n = t.canvas.style).getPropertyValue("direction"), n.getPropertyPriority("direction")], n.setProperty("direction", e, "important"), t.prevTextDirection = i)
 						},
-						restoreTextDirection: function(e) {
-							var t = e.prevTextDirection;
-							void 0 !== t && (delete e.prevTextDirection, e.canvas.style.setProperty("direction", t[0], t[1]))
+						restoreTextDirection: function(t) {
+							var e = t.prevTextDirection;
+							void 0 !== e && (delete t.prevTextDirection, t.canvas.style.setProperty("direction", e[0], e[1]))
 						}
 					};
-				R.easing = V, R.canvas = B, R.options = J, R.math = U, R.rtl = G;
-				var q = function(e) {
-					R.extend(this, e), this.initialize.apply(this, arguments)
+				j.easing = H, j.canvas = q, j.options = U, j.math = Y, j.rtl = K;
+				var G = function(t) {
+					j.extend(this, t), this.initialize.apply(this, arguments)
 				};
-				R.extend(q.prototype, {
+				j.extend(G.prototype, {
 					_type: void 0,
 					initialize: function() {
 						this.hidden = !1
 					},
 					pivot: function() {
-						var e = this;
-						return e._view || (e._view = R.extend({}, e._model)), e._start = {}, e
+						var t = this;
+						return t._view || (t._view = j.extend({}, t._model)), t._start = {}, t
 					},
-					transition: function(e) {
-						var t = this,
-							n = t._model,
-							a = t._start,
-							r = t._view;
-						return n && 1 !== e ? (r || (r = t._view = {}), a || (a = t._start = {}), function(e, t, n, a) {
-							var r, i, s, o, d, l, u, _, m, c = Object.keys(n);
-							for (r = 0, i = c.length; r < i; ++r)
-								if (l = n[s = c[r]], t.hasOwnProperty(s) || (t[s] = l), (o = t[s]) !== l && "_" !== s[0]) {
-									if (e.hasOwnProperty(s) || (e[s] = o), (u = typeof l) == typeof(d = e[s]))
-										if ("string" === u) {
-											if ((_ = Y(d)).valid && (m = Y(l)).valid) {
-												t[s] = m.mix(_, a).rgbString();
+					transition: function(t) {
+						var e = this,
+							n = e._model,
+							i = e._start,
+							a = e._view;
+						return n && 1 !== t ? (a || (a = e._view = {}), i || (i = e._start = {}), function(t, e, n, i) {
+							var a, r, o, s, l, u, d, c, h, f = Object.keys(n);
+							for (a = 0, r = f.length; a < r; ++a)
+								if (u = n[o = f[a]], e.hasOwnProperty(o) || (e[o] = u), (s = e[o]) !== u && "_" !== o[0]) {
+									if (t.hasOwnProperty(o) || (t[o] = s), (d = typeof u) == typeof(l = t[o]))
+										if ("string" === d) {
+											if ((c = _(l)).valid && (h = _(u)).valid) {
+												e[o] = h.mix(c, i).rgbString();
 												continue
 											}
-										} else if (R.isFinite(d) && R.isFinite(l)) {
-										t[s] = d + (l - d) * a;
+										} else if (j.isFinite(l) && j.isFinite(u)) {
+										e[o] = l + (u - l) * i;
 										continue
 									}
-									t[s] = l
+									e[o] = u
 								}
-						}(a, r, n, e), t) : (t._view = R.extend({}, n), t._start = null, t)
+						}(i, a, n, t), e) : (e._view = j.extend({}, n), e._start = null, e)
 					},
 					tooltipPosition: function() {
 						return {
@@ -1582,11 +1582,11 @@
 						}
 					},
 					hasValue: function() {
-						return R.isNumber(this._model.x) && R.isNumber(this._model.y)
+						return j.isNumber(this._model.x) && j.isNumber(this._model.y)
 					}
-				}), q.extend = R.inherits;
-				var K = q,
-					Z = K.extend({
+				}), G.extend = j.inherits;
+				var X = G,
+					Z = X.extend({
 						chart: null,
 						currentStep: 0,
 						numSteps: 60,
@@ -1604,78 +1604,78 @@
 					get: function() {
 						return this.chart
 					},
-					set: function(e) {
-						this.chart = e
+					set: function(t) {
+						this.chart = t
 					}
-				}), C._set("global", {
+				}), z._set("global", {
 					animation: {
 						duration: 1e3,
 						easing: "easeOutQuart",
-						onProgress: R.noop,
-						onComplete: R.noop
+						onProgress: j.noop,
+						onComplete: j.noop
 					}
 				});
-				var X = {
+				var J = {
 						animations: [],
 						request: null,
-						addAnimation: function(e, t, n, a) {
-							var r, i, s = this.animations;
-							for (t.chart = e, t.startTime = Date.now(), t.duration = n, a || (e.animating = !0), r = 0, i = s.length; r < i; ++r)
-								if (s[r].chart === e) return void(s[r] = t);
-							s.push(t), 1 === s.length && this.requestAnimationFrame()
+						addAnimation: function(t, e, n, i) {
+							var a, r, o = this.animations;
+							for (e.chart = t, e.startTime = Date.now(), e.duration = n, i || (t.animating = !0), a = 0, r = o.length; a < r; ++a)
+								if (o[a].chart === t) return void(o[a] = e);
+							o.push(e), 1 === o.length && this.requestAnimationFrame()
 						},
-						cancelAnimation: function(e) {
-							var t = R.findIndex(this.animations, (function(t) {
-								return t.chart === e
-							})); - 1 !== t && (this.animations.splice(t, 1), e.animating = !1)
+						cancelAnimation: function(t) {
+							var e = j.findIndex(this.animations, (function(e) {
+								return e.chart === t
+							})); - 1 !== e && (this.animations.splice(e, 1), t.animating = !1)
 						},
 						requestAnimationFrame: function() {
-							var e = this;
-							null === e.request && (e.request = R.requestAnimFrame.call(window, (function() {
-								e.request = null, e.startDigest()
+							var t = this;
+							null === t.request && (t.request = j.requestAnimFrame.call(window, (function() {
+								t.request = null, t.startDigest()
 							})))
 						},
 						startDigest: function() {
 							this.advance(), this.animations.length > 0 && this.requestAnimationFrame()
 						},
 						advance: function() {
-							for (var e, t, n, a, r = this.animations, i = 0; i < r.length;) t = (e = r[i]).chart, n = e.numSteps, a = Math.floor((Date.now() - e.startTime) / e.duration * n) + 1, e.currentStep = Math.min(a, n), R.callback(e.render, [t, e], t), R.callback(e.onAnimationProgress, [e], t), e.currentStep >= n ? (R.callback(e.onAnimationComplete, [e], t), t.animating = !1, r.splice(i, 1)) : ++i
+							for (var t, e, n, i, a = this.animations, r = 0; r < a.length;) e = (t = a[r]).chart, n = t.numSteps, i = Math.floor((Date.now() - t.startTime) / t.duration * n) + 1, t.currentStep = Math.min(i, n), j.callback(t.render, [e, t], e), j.callback(t.onAnimationProgress, [t], e), t.currentStep >= n ? (j.callback(t.onAnimationComplete, [t], e), e.animating = !1, a.splice(r, 1)) : ++r
 						}
 					},
-					Q = R.options.resolve,
-					ee = ["push", "pop", "shift", "splice", "unshift"];
+					Q = j.options.resolve,
+					tt = ["push", "pop", "shift", "splice", "unshift"];
 
-				function te(e, t) {
-					var n = e._chartjs;
+				function et(t, e) {
+					var n = t._chartjs;
 					if (n) {
-						var a = n.listeners,
-							r = a.indexOf(t); - 1 !== r && a.splice(r, 1), a.length > 0 || (ee.forEach((function(t) {
-							delete e[t]
-						})), delete e._chartjs)
+						var i = n.listeners,
+							a = i.indexOf(e); - 1 !== a && i.splice(a, 1), i.length > 0 || (tt.forEach((function(e) {
+							delete t[e]
+						})), delete t._chartjs)
 					}
 				}
-				var ne = function(e, t) {
-					this.initialize(e, t)
+				var nt = function(t, e) {
+					this.initialize(t, e)
 				};
-				R.extend(ne.prototype, {
+				j.extend(nt.prototype, {
 					datasetElementType: null,
 					dataElementType: null,
 					_datasetElementOptions: ["backgroundColor", "borderCapStyle", "borderColor", "borderDash", "borderDashOffset", "borderJoinStyle", "borderWidth"],
 					_dataElementOptions: ["backgroundColor", "borderColor", "borderWidth", "pointStyle"],
-					initialize: function(e, t) {
+					initialize: function(t, e) {
 						var n = this;
-						n.chart = e, n.index = t, n.linkScales(), n.addElements(), n._type = n.getMeta().type
+						n.chart = t, n.index = e, n.linkScales(), n.addElements(), n._type = n.getMeta().type
 					},
-					updateIndex: function(e) {
-						this.index = e
+					updateIndex: function(t) {
+						this.index = t
 					},
 					linkScales: function() {
-						var e = this.getMeta(),
-							t = this.chart,
-							n = t.scales,
-							a = this.getDataset(),
-							r = t.options.scales;
-						null !== e.xAxisID && e.xAxisID in n && !a.xAxisID || (e.xAxisID = a.xAxisID || r.xAxes[0].id), null !== e.yAxisID && e.yAxisID in n && !a.yAxisID || (e.yAxisID = a.yAxisID || r.yAxes[0].id)
+						var t = this.getMeta(),
+							e = this.chart,
+							n = e.scales,
+							i = this.getDataset(),
+							a = e.options.scales;
+						null !== t.xAxisID && t.xAxisID in n && !i.xAxisID || (t.xAxisID = i.xAxisID || a.xAxes[0].id), null !== t.yAxisID && t.yAxisID in n && !i.yAxisID || (t.yAxisID = i.yAxisID || a.yAxes[0].id)
 					},
 					getDataset: function() {
 						return this.chart.data.datasets[this.index]
@@ -1683,8 +1683,8 @@
 					getMeta: function() {
 						return this.chart.getDatasetMeta(this.index)
 					},
-					getScaleForId: function(e) {
-						return this.chart.scales[e]
+					getScaleForId: function(t) {
+						return this.chart.scales[t]
 					},
 					_getValueScaleId: function() {
 						return this.getMeta().yAxisID
@@ -1702,169 +1702,169 @@
 						this._update(!0)
 					},
 					destroy: function() {
-						this._data && te(this._data, this)
+						this._data && et(this._data, this)
 					},
 					createMetaDataset: function() {
-						var e = this.datasetElementType;
-						return e && new e({
+						var t = this.datasetElementType;
+						return t && new t({
 							_chart: this.chart,
 							_datasetIndex: this.index
 						})
 					},
-					createMetaData: function(e) {
-						var t = this.dataElementType;
-						return t && new t({
+					createMetaData: function(t) {
+						var e = this.dataElementType;
+						return e && new e({
 							_chart: this.chart,
 							_datasetIndex: this.index,
-							_index: e
+							_index: t
 						})
 					},
 					addElements: function() {
-						var e, t, n = this.getMeta(),
-							a = this.getDataset().data || [],
-							r = n.data;
-						for (e = 0, t = a.length; e < t; ++e) r[e] = r[e] || this.createMetaData(e);
+						var t, e, n = this.getMeta(),
+							i = this.getDataset().data || [],
+							a = n.data;
+						for (t = 0, e = i.length; t < e; ++t) a[t] = a[t] || this.createMetaData(t);
 						n.dataset = n.dataset || this.createMetaDataset()
 					},
-					addElementAndReset: function(e) {
-						var t = this.createMetaData(e);
-						this.getMeta().data.splice(e, 0, t), this.updateElement(t, e, !0)
+					addElementAndReset: function(t) {
+						var e = this.createMetaData(t);
+						this.getMeta().data.splice(t, 0, e), this.updateElement(e, t, !0)
 					},
 					buildOrUpdateElements: function() {
-						var e, t, n = this,
-							a = n.getDataset(),
-							r = a.data || (a.data = []);
-						n._data !== r && (n._data && te(n._data, n), r && Object.isExtensible(r) && (t = n, (e = r)._chartjs ? e._chartjs.listeners.push(t) : (Object.defineProperty(e, "_chartjs", {
+						var t, e, n = this,
+							i = n.getDataset(),
+							a = i.data || (i.data = []);
+						n._data !== a && (n._data && et(n._data, n), a && Object.isExtensible(a) && (e = n, (t = a)._chartjs ? t._chartjs.listeners.push(e) : (Object.defineProperty(t, "_chartjs", {
 							configurable: !0,
 							enumerable: !1,
 							value: {
-								listeners: [t]
+								listeners: [e]
 							}
-						}), ee.forEach((function(t) {
-							var n = "onData" + t.charAt(0).toUpperCase() + t.slice(1),
-								a = e[t];
-							Object.defineProperty(e, t, {
+						}), tt.forEach((function(e) {
+							var n = "onData" + e.charAt(0).toUpperCase() + e.slice(1),
+								i = t[e];
+							Object.defineProperty(t, e, {
 								configurable: !0,
 								enumerable: !1,
 								value: function() {
-									var t = Array.prototype.slice.call(arguments),
-										r = a.apply(this, t);
-									return R.each(e._chartjs.listeners, (function(e) {
-										"function" == typeof e[n] && e[n].apply(e, t)
-									})), r
+									var e = Array.prototype.slice.call(arguments),
+										a = i.apply(this, e);
+									return j.each(t._chartjs.listeners, (function(t) {
+										"function" == typeof t[n] && t[n].apply(t, e)
+									})), a
 								}
 							})
-						})))), n._data = r), n.resyncElements()
+						})))), n._data = a), n.resyncElements()
 					},
 					_configure: function() {
-						this._config = R.merge(Object.create(null), [this.chart.options.datasets[this._type], this.getDataset()], {
-							merger: function(e, t, n) {
-								"_meta" !== e && "data" !== e && R._merger(e, t, n)
+						this._config = j.merge(Object.create(null), [this.chart.options.datasets[this._type], this.getDataset()], {
+							merger: function(t, e, n) {
+								"_meta" !== t && "data" !== t && j._merger(t, e, n)
 							}
 						})
 					},
-					_update: function(e) {
-						this._configure(), this._cachedDataOpts = null, this.update(e)
+					_update: function(t) {
+						this._configure(), this._cachedDataOpts = null, this.update(t)
 					},
-					update: R.noop,
-					transition: function(e) {
-						for (var t = this.getMeta(), n = t.data || [], a = n.length, r = 0; r < a; ++r) n[r].transition(e);
-						t.dataset && t.dataset.transition(e)
+					update: j.noop,
+					transition: function(t) {
+						for (var e = this.getMeta(), n = e.data || [], i = n.length, a = 0; a < i; ++a) n[a].transition(t);
+						e.dataset && e.dataset.transition(t)
 					},
 					draw: function() {
-						var e = this.getMeta(),
-							t = e.data || [],
-							n = t.length,
-							a = 0;
-						for (e.dataset && e.dataset.draw(); a < n; ++a) t[a].draw()
+						var t = this.getMeta(),
+							e = t.data || [],
+							n = e.length,
+							i = 0;
+						for (t.dataset && t.dataset.draw(); i < n; ++i) e[i].draw()
 					},
-					getStyle: function(e) {
-						var t, n = this.getMeta(),
-							a = n.dataset;
-						return this._configure(), a && void 0 === e ? t = this._resolveDatasetElementOptions(a || {}) : (e = e || 0, t = this._resolveDataElementOptions(n.data[e] || {}, e)), !1 !== t.fill && null !== t.fill || (t.backgroundColor = t.borderColor), t
+					getStyle: function(t) {
+						var e, n = this.getMeta(),
+							i = n.dataset;
+						return this._configure(), i && void 0 === t ? e = this._resolveDatasetElementOptions(i || {}) : (t = t || 0, e = this._resolveDataElementOptions(n.data[t] || {}, t)), !1 !== e.fill && null !== e.fill || (e.backgroundColor = e.borderColor), e
 					},
-					_resolveDatasetElementOptions: function(e, t) {
-						var n, a, r, i, s = this,
-							o = s.chart,
-							d = s._config,
-							l = e.custom || {},
-							u = o.options.elements[s.datasetElementType.prototype._type] || {},
-							_ = s._datasetElementOptions,
-							m = {},
-							c = {
-								chart: o,
-								dataset: s.getDataset(),
-								datasetIndex: s.index,
-								hover: t
+					_resolveDatasetElementOptions: function(t, e) {
+						var n, i, a, r, o = this,
+							s = o.chart,
+							l = o._config,
+							u = t.custom || {},
+							d = s.options.elements[o.datasetElementType.prototype._type] || {},
+							c = o._datasetElementOptions,
+							h = {},
+							f = {
+								chart: s,
+								dataset: o.getDataset(),
+								datasetIndex: o.index,
+								hover: e
 							};
-						for (n = 0, a = _.length; n < a; ++n) r = _[n], i = t ? "hover" + r.charAt(0).toUpperCase() + r.slice(1) : r, m[r] = Q([l[i], d[i], u[i]], c);
-						return m
+						for (n = 0, i = c.length; n < i; ++n) a = c[n], r = e ? "hover" + a.charAt(0).toUpperCase() + a.slice(1) : a, h[a] = Q([u[r], l[r], d[r]], f);
+						return h
 					},
-					_resolveDataElementOptions: function(e, t) {
+					_resolveDataElementOptions: function(t, e) {
 						var n = this,
-							a = e && e.custom,
-							r = n._cachedDataOpts;
-						if (r && !a) return r;
-						var i, s, o, d, l = n.chart,
-							u = n._config,
-							_ = l.options.elements[n.dataElementType.prototype._type] || {},
-							m = n._dataElementOptions,
-							c = {},
-							h = {
-								chart: l,
-								dataIndex: t,
+							i = t && t.custom,
+							a = n._cachedDataOpts;
+						if (a && !i) return a;
+						var r, o, s, l, u = n.chart,
+							d = n._config,
+							c = u.options.elements[n.dataElementType.prototype._type] || {},
+							h = n._dataElementOptions,
+							f = {},
+							g = {
+								chart: u,
+								dataIndex: e,
 								dataset: n.getDataset(),
 								datasetIndex: n.index
 							},
-							f = {
-								cacheable: !a
+							p = {
+								cacheable: !i
 							};
-						if (a = a || {}, R.isArray(m))
-							for (s = 0, o = m.length; s < o; ++s) c[d = m[s]] = Q([a[d], u[d], _[d]], h, t, f);
+						if (i = i || {}, j.isArray(h))
+							for (o = 0, s = h.length; o < s; ++o) f[l = h[o]] = Q([i[l], d[l], c[l]], g, e, p);
 						else
-							for (s = 0, o = (i = Object.keys(m)).length; s < o; ++s) c[d = i[s]] = Q([a[d], u[m[d]], u[d], _[d]], h, t, f);
-						return f.cacheable && (n._cachedDataOpts = Object.freeze(c)), c
+							for (o = 0, s = (r = Object.keys(h)).length; o < s; ++o) f[l = r[o]] = Q([i[l], d[h[l]], d[l], c[l]], g, e, p);
+						return p.cacheable && (n._cachedDataOpts = Object.freeze(f)), f
 					},
-					removeHoverStyle: function(e) {
-						R.merge(e._model, e.$previousStyle || {}), delete e.$previousStyle
+					removeHoverStyle: function(t) {
+						j.merge(t._model, t.$previousStyle || {}), delete t.$previousStyle
 					},
-					setHoverStyle: function(e) {
-						var t = this.chart.data.datasets[e._datasetIndex],
-							n = e._index,
-							a = e.custom || {},
-							r = e._model,
-							i = R.getHoverColor;
-						e.$previousStyle = {
-							backgroundColor: r.backgroundColor,
-							borderColor: r.borderColor,
-							borderWidth: r.borderWidth
-						}, r.backgroundColor = Q([a.hoverBackgroundColor, t.hoverBackgroundColor, i(r.backgroundColor)], void 0, n), r.borderColor = Q([a.hoverBorderColor, t.hoverBorderColor, i(r.borderColor)], void 0, n), r.borderWidth = Q([a.hoverBorderWidth, t.hoverBorderWidth, r.borderWidth], void 0, n)
+					setHoverStyle: function(t) {
+						var e = this.chart.data.datasets[t._datasetIndex],
+							n = t._index,
+							i = t.custom || {},
+							a = t._model,
+							r = j.getHoverColor;
+						t.$previousStyle = {
+							backgroundColor: a.backgroundColor,
+							borderColor: a.borderColor,
+							borderWidth: a.borderWidth
+						}, a.backgroundColor = Q([i.hoverBackgroundColor, e.hoverBackgroundColor, r(a.backgroundColor)], void 0, n), a.borderColor = Q([i.hoverBorderColor, e.hoverBorderColor, r(a.borderColor)], void 0, n), a.borderWidth = Q([i.hoverBorderWidth, e.hoverBorderWidth, a.borderWidth], void 0, n)
 					},
 					_removeDatasetHoverStyle: function() {
-						var e = this.getMeta().dataset;
-						e && this.removeHoverStyle(e)
+						var t = this.getMeta().dataset;
+						t && this.removeHoverStyle(t)
 					},
 					_setDatasetHoverStyle: function() {
-						var e, t, n, a, r, i, s = this.getMeta().dataset,
-							o = {};
-						if (s) {
-							for (i = s._model, r = this._resolveDatasetElementOptions(s, !0), e = 0, t = (a = Object.keys(r)).length; e < t; ++e) o[n = a[e]] = i[n], i[n] = r[n];
-							s.$previousStyle = o
+						var t, e, n, i, a, r, o = this.getMeta().dataset,
+							s = {};
+						if (o) {
+							for (r = o._model, a = this._resolveDatasetElementOptions(o, !0), t = 0, e = (i = Object.keys(a)).length; t < e; ++t) s[n = i[t]] = r[n], r[n] = a[n];
+							o.$previousStyle = s
 						}
 					},
 					resyncElements: function() {
-						var e = this.getMeta(),
-							t = this.getDataset().data,
-							n = e.data.length,
-							a = t.length;
-						a < n ? e.data.splice(a, n - a) : a > n && this.insertElements(n, a - n)
+						var t = this.getMeta(),
+							e = this.getDataset().data,
+							n = t.data.length,
+							i = e.length;
+						i < n ? t.data.splice(i, n - i) : i > n && this.insertElements(n, i - n)
 					},
-					insertElements: function(e, t) {
-						for (var n = 0; n < t; ++n) this.addElementAndReset(e + n)
+					insertElements: function(t, e) {
+						for (var n = 0; n < e; ++n) this.addElementAndReset(t + n)
 					},
 					onDataPush: function() {
-						var e = arguments.length;
-						this.insertElements(this.getDataset().data.length - e, e)
+						var t = arguments.length;
+						this.insertElements(this.getDataset().data.length - t, t)
 					},
 					onDataPop: function() {
 						this.getMeta().data.pop()
@@ -1872,117 +1872,117 @@
 					onDataShift: function() {
 						this.getMeta().data.shift()
 					},
-					onDataSplice: function(e, t) {
-						this.getMeta().data.splice(e, t), this.insertElements(e, arguments.length - 2)
+					onDataSplice: function(t, e) {
+						this.getMeta().data.splice(t, e), this.insertElements(t, arguments.length - 2)
 					},
 					onDataUnshift: function() {
 						this.insertElements(0, arguments.length)
 					}
-				}), ne.extend = R.inherits;
-				var ae = ne,
-					re = 2 * Math.PI;
+				}), nt.extend = j.inherits;
+				var it = nt,
+					at = 2 * Math.PI;
 
-				function ie(e, t) {
-					var n = t.startAngle,
-						a = t.endAngle,
-						r = t.pixelMargin,
-						i = r / t.outerRadius,
-						s = t.x,
-						o = t.y;
-					e.beginPath(), e.arc(s, o, t.outerRadius, n - i, a + i), t.innerRadius > r ? (i = r / t.innerRadius, e.arc(s, o, t.innerRadius - r, a + i, n - i, !0)) : e.arc(s, o, r, a + Math.PI / 2, n - Math.PI / 2), e.closePath(), e.clip()
+				function rt(t, e) {
+					var n = e.startAngle,
+						i = e.endAngle,
+						a = e.pixelMargin,
+						r = a / e.outerRadius,
+						o = e.x,
+						s = e.y;
+					t.beginPath(), t.arc(o, s, e.outerRadius, n - r, i + r), e.innerRadius > a ? (r = a / e.innerRadius, t.arc(o, s, e.innerRadius - a, i + r, n - r, !0)) : t.arc(o, s, a, i + Math.PI / 2, n - Math.PI / 2), t.closePath(), t.clip()
 				}
 
-				function se(e, t, n) {
-					var a = "inner" === t.borderAlign;
-					a ? (e.lineWidth = 2 * t.borderWidth, e.lineJoin = "round") : (e.lineWidth = t.borderWidth, e.lineJoin = "bevel"), n.fullCircles && function(e, t, n, a) {
-						var r, i = n.endAngle;
-						for (a && (n.endAngle = n.startAngle + re, ie(e, n), n.endAngle = i, n.endAngle === n.startAngle && n.fullCircles && (n.endAngle += re, n.fullCircles--)), e.beginPath(), e.arc(n.x, n.y, n.innerRadius, n.startAngle + re, n.startAngle, !0), r = 0; r < n.fullCircles; ++r) e.stroke();
-						for (e.beginPath(), e.arc(n.x, n.y, t.outerRadius, n.startAngle, n.startAngle + re), r = 0; r < n.fullCircles; ++r) e.stroke()
-					}(e, t, n, a), a && ie(e, n), e.beginPath(), e.arc(n.x, n.y, t.outerRadius, n.startAngle, n.endAngle), e.arc(n.x, n.y, n.innerRadius, n.endAngle, n.startAngle, !0), e.closePath(), e.stroke()
+				function ot(t, e, n) {
+					var i = "inner" === e.borderAlign;
+					i ? (t.lineWidth = 2 * e.borderWidth, t.lineJoin = "round") : (t.lineWidth = e.borderWidth, t.lineJoin = "bevel"), n.fullCircles && function(t, e, n, i) {
+						var a, r = n.endAngle;
+						for (i && (n.endAngle = n.startAngle + at, rt(t, n), n.endAngle = r, n.endAngle === n.startAngle && n.fullCircles && (n.endAngle += at, n.fullCircles--)), t.beginPath(), t.arc(n.x, n.y, n.innerRadius, n.startAngle + at, n.startAngle, !0), a = 0; a < n.fullCircles; ++a) t.stroke();
+						for (t.beginPath(), t.arc(n.x, n.y, e.outerRadius, n.startAngle, n.startAngle + at), a = 0; a < n.fullCircles; ++a) t.stroke()
+					}(t, e, n, i), i && rt(t, n), t.beginPath(), t.arc(n.x, n.y, e.outerRadius, n.startAngle, n.endAngle), t.arc(n.x, n.y, n.innerRadius, n.endAngle, n.startAngle, !0), t.closePath(), t.stroke()
 				}
-				C._set("global", {
+				z._set("global", {
 					elements: {
 						arc: {
-							backgroundColor: C.global.defaultColor,
+							backgroundColor: z.global.defaultColor,
 							borderColor: "#fff",
 							borderWidth: 2,
 							borderAlign: "center"
 						}
 					}
 				});
-				var oe = K.extend({
+				var st = X.extend({
 						_type: "arc",
-						inLabelRange: function(e) {
-							var t = this._view;
-							return !!t && Math.pow(e - t.x, 2) < Math.pow(t.radius + t.hoverRadius, 2)
+						inLabelRange: function(t) {
+							var e = this._view;
+							return !!e && Math.pow(t - e.x, 2) < Math.pow(e.radius + e.hoverRadius, 2)
 						},
-						inRange: function(e, t) {
+						inRange: function(t, e) {
 							var n = this._view;
 							if (n) {
-								for (var a = R.getAngleFromPoint(n, {
-										x: e,
-										y: t
-									}), r = a.angle, i = a.distance, s = n.startAngle, o = n.endAngle; o < s;) o += re;
-								for (; r > o;) r -= re;
-								for (; r < s;) r += re;
-								var d = r >= s && r <= o,
-									l = i >= n.innerRadius && i <= n.outerRadius;
-								return d && l
+								for (var i = j.getAngleFromPoint(n, {
+										x: t,
+										y: e
+									}), a = i.angle, r = i.distance, o = n.startAngle, s = n.endAngle; s < o;) s += at;
+								for (; a > s;) a -= at;
+								for (; a < o;) a += at;
+								var l = a >= o && a <= s,
+									u = r >= n.innerRadius && r <= n.outerRadius;
+								return l && u
 							}
 							return !1
 						},
 						getCenterPoint: function() {
-							var e = this._view,
-								t = (e.startAngle + e.endAngle) / 2,
-								n = (e.innerRadius + e.outerRadius) / 2;
+							var t = this._view,
+								e = (t.startAngle + t.endAngle) / 2,
+								n = (t.innerRadius + t.outerRadius) / 2;
 							return {
-								x: e.x + Math.cos(t) * n,
-								y: e.y + Math.sin(t) * n
+								x: t.x + Math.cos(e) * n,
+								y: t.y + Math.sin(e) * n
 							}
 						},
 						getArea: function() {
-							var e = this._view;
-							return Math.PI * ((e.endAngle - e.startAngle) / (2 * Math.PI)) * (Math.pow(e.outerRadius, 2) - Math.pow(e.innerRadius, 2))
+							var t = this._view;
+							return Math.PI * ((t.endAngle - t.startAngle) / (2 * Math.PI)) * (Math.pow(t.outerRadius, 2) - Math.pow(t.innerRadius, 2))
 						},
 						tooltipPosition: function() {
-							var e = this._view,
-								t = e.startAngle + (e.endAngle - e.startAngle) / 2,
-								n = (e.outerRadius - e.innerRadius) / 2 + e.innerRadius;
+							var t = this._view,
+								e = t.startAngle + (t.endAngle - t.startAngle) / 2,
+								n = (t.outerRadius - t.innerRadius) / 2 + t.innerRadius;
 							return {
-								x: e.x + Math.cos(t) * n,
-								y: e.y + Math.sin(t) * n
+								x: t.x + Math.cos(e) * n,
+								y: t.y + Math.sin(e) * n
 							}
 						},
 						draw: function() {
-							var e, t = this._chart.ctx,
+							var t, e = this._chart.ctx,
 								n = this._view,
-								a = "inner" === n.borderAlign ? .33 : 0,
-								r = {
+								i = "inner" === n.borderAlign ? .33 : 0,
+								a = {
 									x: n.x,
 									y: n.y,
 									innerRadius: n.innerRadius,
-									outerRadius: Math.max(n.outerRadius - a, 0),
-									pixelMargin: a,
+									outerRadius: Math.max(n.outerRadius - i, 0),
+									pixelMargin: i,
 									startAngle: n.startAngle,
 									endAngle: n.endAngle,
-									fullCircles: Math.floor(n.circumference / re)
+									fullCircles: Math.floor(n.circumference / at)
 								};
-							if (t.save(), t.fillStyle = n.backgroundColor, t.strokeStyle = n.borderColor, r.fullCircles) {
-								for (r.endAngle = r.startAngle + re, t.beginPath(), t.arc(r.x, r.y, r.outerRadius, r.startAngle, r.endAngle), t.arc(r.x, r.y, r.innerRadius, r.endAngle, r.startAngle, !0), t.closePath(), e = 0; e < r.fullCircles; ++e) t.fill();
-								r.endAngle = r.startAngle + n.circumference % re
+							if (e.save(), e.fillStyle = n.backgroundColor, e.strokeStyle = n.borderColor, a.fullCircles) {
+								for (a.endAngle = a.startAngle + at, e.beginPath(), e.arc(a.x, a.y, a.outerRadius, a.startAngle, a.endAngle), e.arc(a.x, a.y, a.innerRadius, a.endAngle, a.startAngle, !0), e.closePath(), t = 0; t < a.fullCircles; ++t) e.fill();
+								a.endAngle = a.startAngle + n.circumference % at
 							}
-							t.beginPath(), t.arc(r.x, r.y, r.outerRadius, r.startAngle, r.endAngle), t.arc(r.x, r.y, r.innerRadius, r.endAngle, r.startAngle, !0), t.closePath(), t.fill(), n.borderWidth && se(t, n, r), t.restore()
+							e.beginPath(), e.arc(a.x, a.y, a.outerRadius, a.startAngle, a.endAngle), e.arc(a.x, a.y, a.innerRadius, a.endAngle, a.startAngle, !0), e.closePath(), e.fill(), n.borderWidth && ot(e, n, a), e.restore()
 						}
 					}),
-					de = R.valueOrDefault,
-					le = C.global.defaultColor;
-				C._set("global", {
+					lt = j.valueOrDefault,
+					ut = z.global.defaultColor;
+				z._set("global", {
 					elements: {
 						line: {
 							tension: .4,
-							backgroundColor: le,
+							backgroundColor: ut,
 							borderWidth: 3,
-							borderColor: le,
+							borderColor: ut,
 							borderCapStyle: "butt",
 							borderDash: [],
 							borderDashOffset: 0,
@@ -1992,45 +1992,45 @@
 						}
 					}
 				});
-				var ue = K.extend({
+				var dt = X.extend({
 						_type: "line",
 						draw: function() {
-							var e, t, n, a = this,
-								r = a._view,
-								i = a._chart.ctx,
-								s = r.spanGaps,
-								o = a._children.slice(),
-								d = C.global,
-								l = d.elements.line,
-								u = -1,
-								_ = a._loop;
-							if (o.length) {
-								if (a._loop) {
-									for (e = 0; e < o.length; ++e)
-										if (t = R.previousItem(o, e), !o[e]._view.skip && t._view.skip) {
-											o = o.slice(e).concat(o.slice(0, e)), _ = s;
+							var t, e, n, i = this,
+								a = i._view,
+								r = i._chart.ctx,
+								o = a.spanGaps,
+								s = i._children.slice(),
+								l = z.global,
+								u = l.elements.line,
+								d = -1,
+								c = i._loop;
+							if (s.length) {
+								if (i._loop) {
+									for (t = 0; t < s.length; ++t)
+										if (e = j.previousItem(s, t), !s[t]._view.skip && e._view.skip) {
+											s = s.slice(t).concat(s.slice(0, t)), c = o;
 											break
-										} _ && o.push(o[0])
+										} c && s.push(s[0])
 								}
-								for (i.save(), i.lineCap = r.borderCapStyle || l.borderCapStyle, i.setLineDash && i.setLineDash(r.borderDash || l.borderDash), i.lineDashOffset = de(r.borderDashOffset, l.borderDashOffset), i.lineJoin = r.borderJoinStyle || l.borderJoinStyle, i.lineWidth = de(r.borderWidth, l.borderWidth), i.strokeStyle = r.borderColor || d.defaultColor, i.beginPath(), (n = o[0]._view).skip || (i.moveTo(n.x, n.y), u = 0), e = 1; e < o.length; ++e) n = o[e]._view, t = -1 === u ? R.previousItem(o, e) : o[u], n.skip || (u !== e - 1 && !s || -1 === u ? i.moveTo(n.x, n.y) : R.canvas.lineTo(i, t._view, n), u = e);
-								_ && i.closePath(), i.stroke(), i.restore()
+								for (r.save(), r.lineCap = a.borderCapStyle || u.borderCapStyle, r.setLineDash && r.setLineDash(a.borderDash || u.borderDash), r.lineDashOffset = lt(a.borderDashOffset, u.borderDashOffset), r.lineJoin = a.borderJoinStyle || u.borderJoinStyle, r.lineWidth = lt(a.borderWidth, u.borderWidth), r.strokeStyle = a.borderColor || l.defaultColor, r.beginPath(), (n = s[0]._view).skip || (r.moveTo(n.x, n.y), d = 0), t = 1; t < s.length; ++t) n = s[t]._view, e = -1 === d ? j.previousItem(s, t) : s[d], n.skip || (d !== t - 1 && !o || -1 === d ? r.moveTo(n.x, n.y) : j.canvas.lineTo(r, e._view, n), d = t);
+								c && r.closePath(), r.stroke(), r.restore()
 							}
 						}
 					}),
-					_e = R.valueOrDefault,
-					me = C.global.defaultColor;
+					ct = j.valueOrDefault,
+					ht = z.global.defaultColor;
 
-				function ce(e) {
-					var t = this._view;
-					return !!t && Math.abs(e - t.x) < t.radius + t.hitRadius
+				function ft(t) {
+					var e = this._view;
+					return !!e && Math.abs(t - e.x) < e.radius + e.hitRadius
 				}
-				C._set("global", {
+				z._set("global", {
 					elements: {
 						point: {
 							radius: 3,
 							pointStyle: "circle",
-							backgroundColor: me,
-							borderColor: me,
+							backgroundColor: ht,
+							borderColor: ht,
 							borderWidth: 1,
 							hitRadius: 1,
 							hoverRadius: 4,
@@ -2038,191 +2038,191 @@
 						}
 					}
 				});
-				var he = K.extend({
+				var gt = X.extend({
 						_type: "point",
-						inRange: function(e, t) {
+						inRange: function(t, e) {
 							var n = this._view;
-							return !!n && Math.pow(e - n.x, 2) + Math.pow(t - n.y, 2) < Math.pow(n.hitRadius + n.radius, 2)
+							return !!n && Math.pow(t - n.x, 2) + Math.pow(e - n.y, 2) < Math.pow(n.hitRadius + n.radius, 2)
 						},
-						inLabelRange: ce,
-						inXRange: ce,
-						inYRange: function(e) {
-							var t = this._view;
-							return !!t && Math.abs(e - t.y) < t.radius + t.hitRadius
+						inLabelRange: ft,
+						inXRange: ft,
+						inYRange: function(t) {
+							var e = this._view;
+							return !!e && Math.abs(t - e.y) < e.radius + e.hitRadius
 						},
 						getCenterPoint: function() {
-							var e = this._view;
+							var t = this._view;
 							return {
-								x: e.x,
-								y: e.y
+								x: t.x,
+								y: t.y
 							}
 						},
 						getArea: function() {
 							return Math.PI * Math.pow(this._view.radius, 2)
 						},
 						tooltipPosition: function() {
-							var e = this._view;
+							var t = this._view;
 							return {
-								x: e.x,
-								y: e.y,
-								padding: e.radius + e.borderWidth
+								x: t.x,
+								y: t.y,
+								padding: t.radius + t.borderWidth
 							}
 						},
-						draw: function(e) {
-							var t = this._view,
+						draw: function(t) {
+							var e = this._view,
 								n = this._chart.ctx,
-								a = t.pointStyle,
-								r = t.rotation,
-								i = t.radius,
-								s = t.x,
-								o = t.y,
-								d = C.global,
-								l = d.defaultColor;
-							t.skip || (void 0 === e || R.canvas._isPointInArea(t, e)) && (n.strokeStyle = t.borderColor || l, n.lineWidth = _e(t.borderWidth, d.elements.point.borderWidth), n.fillStyle = t.backgroundColor || l, R.canvas.drawPoint(n, a, i, s, o, r))
+								i = e.pointStyle,
+								a = e.rotation,
+								r = e.radius,
+								o = e.x,
+								s = e.y,
+								l = z.global,
+								u = l.defaultColor;
+							e.skip || (void 0 === t || j.canvas._isPointInArea(e, t)) && (n.strokeStyle = e.borderColor || u, n.lineWidth = ct(e.borderWidth, l.elements.point.borderWidth), n.fillStyle = e.backgroundColor || u, j.canvas.drawPoint(n, i, r, o, s, a))
 						}
 					}),
-					fe = C.global.defaultColor;
+					pt = z.global.defaultColor;
 
-				function pe(e) {
-					return e && void 0 !== e.width
+				function mt(t) {
+					return t && void 0 !== t.width
 				}
 
-				function Me(e) {
-					var t, n, a, r, i;
-					return pe(e) ? (i = e.width / 2, t = e.x - i, n = e.x + i, a = Math.min(e.y, e.base), r = Math.max(e.y, e.base)) : (i = e.height / 2, t = Math.min(e.x, e.base), n = Math.max(e.x, e.base), a = e.y - i, r = e.y + i), {
-						left: t,
-						top: a,
+				function vt(t) {
+					var e, n, i, a, r;
+					return mt(t) ? (r = t.width / 2, e = t.x - r, n = t.x + r, i = Math.min(t.y, t.base), a = Math.max(t.y, t.base)) : (r = t.height / 2, e = Math.min(t.x, t.base), n = Math.max(t.x, t.base), i = t.y - r, a = t.y + r), {
+						left: e,
+						top: i,
 						right: n,
-						bottom: r
+						bottom: a
 					}
 				}
 
-				function ye(e, t, n) {
-					return e === t ? n : e === n ? t : e
+				function bt(t, e, n) {
+					return t === e ? n : t === n ? e : t
 				}
 
-				function ge(e, t, n) {
-					var a, r, i, s, o = e.borderWidth,
-						d = function(e) {
-							var t = e.borderSkipped,
+				function yt(t, e, n) {
+					var i, a, r, o, s = t.borderWidth,
+						l = function(t) {
+							var e = t.borderSkipped,
 								n = {};
-							return t ? (e.horizontal ? e.base > e.x && (t = ye(t, "left", "right")) : e.base < e.y && (t = ye(t, "bottom", "top")), n[t] = !0, n) : n
-						}(e);
-					return R.isObject(o) ? (a = +o.top || 0, r = +o.right || 0, i = +o.bottom || 0, s = +o.left || 0) : a = r = i = s = +o || 0, {
-						t: d.top || a < 0 ? 0 : a > n ? n : a,
-						r: d.right || r < 0 ? 0 : r > t ? t : r,
-						b: d.bottom || i < 0 ? 0 : i > n ? n : i,
-						l: d.left || s < 0 ? 0 : s > t ? t : s
+							return e ? (t.horizontal ? t.base > t.x && (e = bt(e, "left", "right")) : t.base < t.y && (e = bt(e, "bottom", "top")), n[e] = !0, n) : n
+						}(t);
+					return j.isObject(s) ? (i = +s.top || 0, a = +s.right || 0, r = +s.bottom || 0, o = +s.left || 0) : i = a = r = o = +s || 0, {
+						t: l.top || i < 0 ? 0 : i > n ? n : i,
+						r: l.right || a < 0 ? 0 : a > e ? e : a,
+						b: l.bottom || r < 0 ? 0 : r > n ? n : r,
+						l: l.left || o < 0 ? 0 : o > e ? e : o
 					}
 				}
 
-				function Le(e, t, n) {
-					var a = null === t,
-						r = null === n,
-						i = !(!e || a && r) && Me(e);
-					return i && (a || t >= i.left && t <= i.right) && (r || n >= i.top && n <= i.bottom)
+				function xt(t, e, n) {
+					var i = null === e,
+						a = null === n,
+						r = !(!t || i && a) && vt(t);
+					return r && (i || e >= r.left && e <= r.right) && (a || n >= r.top && n <= r.bottom)
 				}
-				C._set("global", {
+				z._set("global", {
 					elements: {
 						rectangle: {
-							backgroundColor: fe,
-							borderColor: fe,
+							backgroundColor: pt,
+							borderColor: pt,
 							borderSkipped: "bottom",
 							borderWidth: 0
 						}
 					}
 				});
-				var Ye = K.extend({
+				var _t = X.extend({
 						_type: "rectangle",
 						draw: function() {
-							var e = this._chart.ctx,
-								t = this._view,
-								n = function(e) {
-									var t = Me(e),
-										n = t.right - t.left,
-										a = t.bottom - t.top,
-										r = ge(e, n / 2, a / 2);
+							var t = this._chart.ctx,
+								e = this._view,
+								n = function(t) {
+									var e = vt(t),
+										n = e.right - e.left,
+										i = e.bottom - e.top,
+										a = yt(t, n / 2, i / 2);
 									return {
 										outer: {
-											x: t.left,
-											y: t.top,
+											x: e.left,
+											y: e.top,
 											w: n,
-											h: a
+											h: i
 										},
 										inner: {
-											x: t.left + r.l,
-											y: t.top + r.t,
-											w: n - r.l - r.r,
-											h: a - r.t - r.b
+											x: e.left + a.l,
+											y: e.top + a.t,
+											w: n - a.l - a.r,
+											h: i - a.t - a.b
 										}
 									}
-								}(t),
-								a = n.outer,
-								r = n.inner;
-							e.fillStyle = t.backgroundColor, e.fillRect(a.x, a.y, a.w, a.h), a.w === r.w && a.h === r.h || (e.save(), e.beginPath(), e.rect(a.x, a.y, a.w, a.h), e.clip(), e.fillStyle = t.borderColor, e.rect(r.x, r.y, r.w, r.h), e.fill("evenodd"), e.restore())
+								}(e),
+								i = n.outer,
+								a = n.inner;
+							t.fillStyle = e.backgroundColor, t.fillRect(i.x, i.y, i.w, i.h), i.w === a.w && i.h === a.h || (t.save(), t.beginPath(), t.rect(i.x, i.y, i.w, i.h), t.clip(), t.fillStyle = e.borderColor, t.rect(a.x, a.y, a.w, a.h), t.fill("evenodd"), t.restore())
 						},
 						height: function() {
-							var e = this._view;
-							return e.base - e.y
+							var t = this._view;
+							return t.base - t.y
 						},
-						inRange: function(e, t) {
-							return Le(this._view, e, t)
+						inRange: function(t, e) {
+							return xt(this._view, t, e)
 						},
-						inLabelRange: function(e, t) {
+						inLabelRange: function(t, e) {
 							var n = this._view;
-							return pe(n) ? Le(n, e, null) : Le(n, null, t)
+							return mt(n) ? xt(n, t, null) : xt(n, null, e)
 						},
-						inXRange: function(e) {
-							return Le(this._view, e, null)
+						inXRange: function(t) {
+							return xt(this._view, t, null)
 						},
-						inYRange: function(e) {
-							return Le(this._view, null, e)
+						inYRange: function(t) {
+							return xt(this._view, null, t)
 						},
 						getCenterPoint: function() {
-							var e, t, n = this._view;
-							return pe(n) ? (e = n.x, t = (n.y + n.base) / 2) : (e = (n.x + n.base) / 2, t = n.y), {
-								x: e,
-								y: t
+							var t, e, n = this._view;
+							return mt(n) ? (t = n.x, e = (n.y + n.base) / 2) : (t = (n.x + n.base) / 2, e = n.y), {
+								x: t,
+								y: e
 							}
 						},
 						getArea: function() {
-							var e = this._view;
-							return pe(e) ? e.width * Math.abs(e.y - e.base) : e.height * Math.abs(e.x - e.base)
+							var t = this._view;
+							return mt(t) ? t.width * Math.abs(t.y - t.base) : t.height * Math.abs(t.x - t.base)
 						},
 						tooltipPosition: function() {
-							var e = this._view;
+							var t = this._view;
 							return {
-								x: e.x,
-								y: e.y
+								x: t.x,
+								y: t.y
 							}
 						}
 					}),
-					ve = {},
-					ke = oe,
-					be = ue,
-					De = he,
-					we = Ye;
-				ve.Arc = ke, ve.Line = be, ve.Point = De, ve.Rectangle = we;
-				var Te = R._deprecated,
-					xe = R.valueOrDefault;
+					kt = {},
+					wt = st,
+					Mt = dt,
+					Ct = gt,
+					St = _t;
+				kt.Arc = wt, kt.Line = Mt, kt.Point = Ct, kt.Rectangle = St;
+				var Pt = j._deprecated,
+					At = j.valueOrDefault;
 
-				function Se(e, t, n) {
-					var a, r, i = n.barThickness,
-						s = t.stackCount,
-						o = t.pixels[e],
-						d = R.isNullOrUndef(i) ? function(e, t) {
-							var n, a, r, i, s = e._length;
-							for (r = 1, i = t.length; r < i; ++r) s = Math.min(s, Math.abs(t[r] - t[r - 1]));
-							for (r = 0, i = e.getTicks().length; r < i; ++r) a = e.getPixelForTick(r), s = r > 0 ? Math.min(s, Math.abs(a - n)) : s, n = a;
-							return s
-						}(t.scale, t.pixels) : -1;
-					return R.isNullOrUndef(i) ? (a = d * n.categoryPercentage, r = n.barPercentage) : (a = i * s, r = 1), {
-						chunk: a / s,
-						ratio: r,
-						start: o - a / 2
+				function Dt(t, e, n) {
+					var i, a, r = n.barThickness,
+						o = e.stackCount,
+						s = e.pixels[t],
+						l = j.isNullOrUndef(r) ? function(t, e) {
+							var n, i, a, r, o = t._length;
+							for (a = 1, r = e.length; a < r; ++a) o = Math.min(o, Math.abs(e[a] - e[a - 1]));
+							for (a = 0, r = t.getTicks().length; a < r; ++a) i = t.getPixelForTick(a), o = a > 0 ? Math.min(o, Math.abs(i - n)) : o, n = i;
+							return o
+						}(e.scale, e.pixels) : -1;
+					return j.isNullOrUndef(r) ? (i = l * n.categoryPercentage, a = n.barPercentage) : (i = r * o, a = 1), {
+						chunk: i / o,
+						ratio: a,
+						start: s - i / 2
 					}
 				}
-				C._set("bar", {
+				z._set("bar", {
 					hover: {
 						mode: "label"
 					},
@@ -2238,7 +2238,7 @@
 							type: "linear"
 						}]
 					}
-				}), C._set("global", {
+				}), z._set("global", {
 					datasets: {
 						bar: {
 							categoryPercentage: .8,
@@ -2246,140 +2246,140 @@
 						}
 					}
 				});
-				var He = ae.extend({
-						dataElementType: ve.Rectangle,
+				var It = it.extend({
+						dataElementType: kt.Rectangle,
 						_dataElementOptions: ["backgroundColor", "borderColor", "borderSkipped", "borderWidth", "barPercentage", "barThickness", "categoryPercentage", "maxBarThickness", "minBarLength"],
 						initialize: function() {
-							var e, t, n = this;
-							ae.prototype.initialize.apply(n, arguments), (e = n.getMeta()).stack = n.getDataset().stack, e.bar = !0, t = n._getIndexScale().options, Te("bar chart", t.barPercentage, "scales.[x/y]Axes.barPercentage", "dataset.barPercentage"), Te("bar chart", t.barThickness, "scales.[x/y]Axes.barThickness", "dataset.barThickness"), Te("bar chart", t.categoryPercentage, "scales.[x/y]Axes.categoryPercentage", "dataset.categoryPercentage"), Te("bar chart", n._getValueScale().options.minBarLength, "scales.[x/y]Axes.minBarLength", "dataset.minBarLength"), Te("bar chart", t.maxBarThickness, "scales.[x/y]Axes.maxBarThickness", "dataset.maxBarThickness")
+							var t, e, n = this;
+							it.prototype.initialize.apply(n, arguments), (t = n.getMeta()).stack = n.getDataset().stack, t.bar = !0, e = n._getIndexScale().options, Pt("bar chart", e.barPercentage, "scales.[x/y]Axes.barPercentage", "dataset.barPercentage"), Pt("bar chart", e.barThickness, "scales.[x/y]Axes.barThickness", "dataset.barThickness"), Pt("bar chart", e.categoryPercentage, "scales.[x/y]Axes.categoryPercentage", "dataset.categoryPercentage"), Pt("bar chart", n._getValueScale().options.minBarLength, "scales.[x/y]Axes.minBarLength", "dataset.minBarLength"), Pt("bar chart", e.maxBarThickness, "scales.[x/y]Axes.maxBarThickness", "dataset.maxBarThickness")
 						},
-						update: function(e) {
-							var t, n, a = this.getMeta().data;
-							for (this._ruler = this.getRuler(), t = 0, n = a.length; t < n; ++t) this.updateElement(a[t], t, e)
+						update: function(t) {
+							var e, n, i = this.getMeta().data;
+							for (this._ruler = this.getRuler(), e = 0, n = i.length; e < n; ++e) this.updateElement(i[e], e, t)
 						},
-						updateElement: function(e, t, n) {
+						updateElement: function(t, e, n) {
+							var i = this,
+								a = i.getMeta(),
+								r = i.getDataset(),
+								o = i._resolveDataElementOptions(t, e);
+							t._xScale = i.getScaleForId(a.xAxisID), t._yScale = i.getScaleForId(a.yAxisID), t._datasetIndex = i.index, t._index = e, t._model = {
+								backgroundColor: o.backgroundColor,
+								borderColor: o.borderColor,
+								borderSkipped: o.borderSkipped,
+								borderWidth: o.borderWidth,
+								datasetLabel: r.label,
+								label: i.chart.data.labels[e]
+							}, j.isArray(r.data[e]) && (t._model.borderSkipped = null), i._updateElementGeometry(t, e, n, o), t.pivot()
+						},
+						_updateElementGeometry: function(t, e, n, i) {
 							var a = this,
-								r = a.getMeta(),
-								i = a.getDataset(),
-								s = a._resolveDataElementOptions(e, t);
-							e._xScale = a.getScaleForId(r.xAxisID), e._yScale = a.getScaleForId(r.yAxisID), e._datasetIndex = a.index, e._index = t, e._model = {
-								backgroundColor: s.backgroundColor,
-								borderColor: s.borderColor,
-								borderSkipped: s.borderSkipped,
-								borderWidth: s.borderWidth,
-								datasetLabel: i.label,
-								label: a.chart.data.labels[t]
-							}, R.isArray(i.data[t]) && (e._model.borderSkipped = null), a._updateElementGeometry(e, t, n, s), e.pivot()
+								r = t._model,
+								o = a._getValueScale(),
+								s = o.getBasePixel(),
+								l = o.isHorizontal(),
+								u = a._ruler || a.getRuler(),
+								d = a.calculateBarValuePixels(a.index, e, i),
+								c = a.calculateBarIndexPixels(a.index, e, u, i);
+							r.horizontal = l, r.base = n ? s : d.base, r.x = l ? n ? s : d.head : c.center, r.y = l ? c.center : n ? s : d.head, r.height = l ? c.size : void 0, r.width = l ? void 0 : c.size
 						},
-						_updateElementGeometry: function(e, t, n, a) {
-							var r = this,
-								i = e._model,
-								s = r._getValueScale(),
-								o = s.getBasePixel(),
-								d = s.isHorizontal(),
-								l = r._ruler || r.getRuler(),
-								u = r.calculateBarValuePixels(r.index, t, a),
-								_ = r.calculateBarIndexPixels(r.index, t, l, a);
-							i.horizontal = d, i.base = n ? o : u.base, i.x = d ? n ? o : u.head : _.center, i.y = d ? _.center : n ? o : u.head, i.height = d ? _.size : void 0, i.width = d ? void 0 : _.size
-						},
-						_getStacks: function(e) {
-							var t, n, a = this._getIndexScale(),
-								r = a._getMatchingVisibleMetas(this._type),
-								i = a.options.stacked,
-								s = r.length,
-								o = [];
-							for (t = 0; t < s && (n = r[t], (!1 === i || -1 === o.indexOf(n.stack) || void 0 === i && void 0 === n.stack) && o.push(n.stack), n.index !== e); ++t);
-							return o
+						_getStacks: function(t) {
+							var e, n, i = this._getIndexScale(),
+								a = i._getMatchingVisibleMetas(this._type),
+								r = i.options.stacked,
+								o = a.length,
+								s = [];
+							for (e = 0; e < o && (n = a[e], (!1 === r || -1 === s.indexOf(n.stack) || void 0 === r && void 0 === n.stack) && s.push(n.stack), n.index !== t); ++e);
+							return s
 						},
 						getStackCount: function() {
 							return this._getStacks().length
 						},
-						getStackIndex: function(e, t) {
-							var n = this._getStacks(e),
-								a = void 0 !== t ? n.indexOf(t) : -1;
-							return -1 === a ? n.length - 1 : a
+						getStackIndex: function(t, e) {
+							var n = this._getStacks(t),
+								i = void 0 !== e ? n.indexOf(e) : -1;
+							return -1 === i ? n.length - 1 : i
 						},
 						getRuler: function() {
-							var e, t, n = this._getIndexScale(),
-								a = [];
-							for (e = 0, t = this.getMeta().data.length; e < t; ++e) a.push(n.getPixelForValue(null, e, this.index));
+							var t, e, n = this._getIndexScale(),
+								i = [];
+							for (t = 0, e = this.getMeta().data.length; t < e; ++t) i.push(n.getPixelForValue(null, t, this.index));
 							return {
-								pixels: a,
+								pixels: i,
 								start: n._startPixel,
 								end: n._endPixel,
 								stackCount: this.getStackCount(),
 								scale: n
 							}
 						},
-						calculateBarValuePixels: function(e, t, n) {
-							var a, r, i, s, o, d, l, u = this.chart,
-								_ = this._getValueScale(),
-								m = _.isHorizontal(),
-								c = u.data.datasets,
-								h = _._getMatchingVisibleMetas(this._type),
-								f = _._parseValue(c[e].data[t]),
-								p = n.minBarLength,
-								M = _.options.stacked,
-								y = this.getMeta().stack,
-								g = void 0 === f.start ? 0 : f.max >= 0 && f.min >= 0 ? f.min : f.max,
-								L = void 0 === f.start ? f.end : f.max >= 0 && f.min >= 0 ? f.max - f.min : f.min - f.max,
-								Y = h.length;
-							if (M || void 0 === M && void 0 !== y)
-								for (a = 0; a < Y && (r = h[a]).index !== e; ++a) r.stack === y && (i = void 0 === (l = _._parseValue(c[r.index].data[t])).start ? l.end : l.min >= 0 && l.max >= 0 ? l.max : l.min, (f.min < 0 && i < 0 || f.max >= 0 && i > 0) && (g += i));
-							return s = _.getPixelForValue(g), d = (o = _.getPixelForValue(g + L)) - s, void 0 !== p && Math.abs(d) < p && (d = p, o = L >= 0 && !m || L < 0 && m ? s - p : s + p), {
-								size: d,
-								base: s,
-								head: o,
-								center: o + d / 2
+						calculateBarValuePixels: function(t, e, n) {
+							var i, a, r, o, s, l, u, d = this.chart,
+								c = this._getValueScale(),
+								h = c.isHorizontal(),
+								f = d.data.datasets,
+								g = c._getMatchingVisibleMetas(this._type),
+								p = c._parseValue(f[t].data[e]),
+								m = n.minBarLength,
+								v = c.options.stacked,
+								b = this.getMeta().stack,
+								y = void 0 === p.start ? 0 : p.max >= 0 && p.min >= 0 ? p.min : p.max,
+								x = void 0 === p.start ? p.end : p.max >= 0 && p.min >= 0 ? p.max - p.min : p.min - p.max,
+								_ = g.length;
+							if (v || void 0 === v && void 0 !== b)
+								for (i = 0; i < _ && (a = g[i]).index !== t; ++i) a.stack === b && (r = void 0 === (u = c._parseValue(f[a.index].data[e])).start ? u.end : u.min >= 0 && u.max >= 0 ? u.max : u.min, (p.min < 0 && r < 0 || p.max >= 0 && r > 0) && (y += r));
+							return o = c.getPixelForValue(y), l = (s = c.getPixelForValue(y + x)) - o, void 0 !== m && Math.abs(l) < m && (l = m, s = x >= 0 && !h || x < 0 && h ? o - m : o + m), {
+								size: l,
+								base: o,
+								head: s,
+								center: s + l / 2
 							}
 						},
-						calculateBarIndexPixels: function(e, t, n, a) {
-							var r = "flex" === a.barThickness ? function(e, t, n) {
-									var a, r = t.pixels,
-										i = r[e],
-										s = e > 0 ? r[e - 1] : null,
-										o = e < r.length - 1 ? r[e + 1] : null,
-										d = n.categoryPercentage;
-									return null === s && (s = i - (null === o ? t.end - t.start : o - i)), null === o && (o = i + i - s), a = i - (i - Math.min(s, o)) / 2 * d, {
-										chunk: Math.abs(o - s) / 2 * d / t.stackCount,
+						calculateBarIndexPixels: function(t, e, n, i) {
+							var a = "flex" === i.barThickness ? function(t, e, n) {
+									var i, a = e.pixels,
+										r = a[t],
+										o = t > 0 ? a[t - 1] : null,
+										s = t < a.length - 1 ? a[t + 1] : null,
+										l = n.categoryPercentage;
+									return null === o && (o = r - (null === s ? e.end - e.start : s - r)), null === s && (s = r + r - o), i = r - (r - Math.min(o, s)) / 2 * l, {
+										chunk: Math.abs(s - o) / 2 * l / e.stackCount,
 										ratio: n.barPercentage,
-										start: a
+										start: i
 									}
-								}(t, n, a) : Se(t, n, a),
-								i = this.getStackIndex(e, this.getMeta().stack),
-								s = r.start + r.chunk * i + r.chunk / 2,
-								o = Math.min(xe(a.maxBarThickness, 1 / 0), r.chunk * r.ratio);
+								}(e, n, i) : Dt(e, n, i),
+								r = this.getStackIndex(t, this.getMeta().stack),
+								o = a.start + a.chunk * r + a.chunk / 2,
+								s = Math.min(At(i.maxBarThickness, 1 / 0), a.chunk * a.ratio);
 							return {
-								base: s - o / 2,
-								head: s + o / 2,
-								center: s,
-								size: o
+								base: o - s / 2,
+								head: o + s / 2,
+								center: o,
+								size: s
 							}
 						},
 						draw: function() {
-							var e = this.chart,
-								t = this._getValueScale(),
+							var t = this.chart,
+								e = this._getValueScale(),
 								n = this.getMeta().data,
-								a = this.getDataset(),
-								r = n.length,
-								i = 0;
-							for (R.canvas.clipArea(e.ctx, e.chartArea); i < r; ++i) {
-								var s = t._parseValue(a.data[i]);
-								isNaN(s.min) || isNaN(s.max) || n[i].draw()
+								i = this.getDataset(),
+								a = n.length,
+								r = 0;
+							for (j.canvas.clipArea(t.ctx, t.chartArea); r < a; ++r) {
+								var o = e._parseValue(i.data[r]);
+								isNaN(o.min) || isNaN(o.max) || n[r].draw()
 							}
-							R.canvas.unclipArea(e.ctx)
+							j.canvas.unclipArea(t.ctx)
 						},
 						_resolveDataElementOptions: function() {
-							var e = this,
-								t = R.extend({}, ae.prototype._resolveDataElementOptions.apply(e, arguments)),
-								n = e._getIndexScale().options,
-								a = e._getValueScale().options;
-							return t.barPercentage = xe(n.barPercentage, t.barPercentage), t.barThickness = xe(n.barThickness, t.barThickness), t.categoryPercentage = xe(n.categoryPercentage, t.categoryPercentage), t.maxBarThickness = xe(n.maxBarThickness, t.maxBarThickness), t.minBarLength = xe(a.minBarLength, t.minBarLength), t
+							var t = this,
+								e = j.extend({}, it.prototype._resolveDataElementOptions.apply(t, arguments)),
+								n = t._getIndexScale().options,
+								i = t._getValueScale().options;
+							return e.barPercentage = At(n.barPercentage, e.barPercentage), e.barThickness = At(n.barThickness, e.barThickness), e.categoryPercentage = At(n.categoryPercentage, e.categoryPercentage), e.maxBarThickness = At(n.maxBarThickness, e.maxBarThickness), e.minBarLength = At(i.minBarLength, e.minBarLength), e
 						}
 					}),
-					je = R.valueOrDefault,
-					Pe = R.options.resolve;
-				C._set("bubble", {
+					Tt = j.valueOrDefault,
+					Ft = j.options.resolve;
+				z._set("bubble", {
 					hover: {
 						mode: "single"
 					},
@@ -2400,80 +2400,80 @@
 							title: function() {
 								return ""
 							},
-							label: function(e, t) {
-								var n = t.datasets[e.datasetIndex].label || "",
-									a = t.datasets[e.datasetIndex].data[e.index];
-								return n + ": (" + e.xLabel + ", " + e.yLabel + ", " + a.r + ")"
+							label: function(t, e) {
+								var n = e.datasets[t.datasetIndex].label || "",
+									i = e.datasets[t.datasetIndex].data[t.index];
+								return n + ": (" + t.xLabel + ", " + t.yLabel + ", " + i.r + ")"
 							}
 						}
 					}
 				});
-				var Oe = ae.extend({
-						dataElementType: ve.Point,
+				var Ot = it.extend({
+						dataElementType: kt.Point,
 						_dataElementOptions: ["backgroundColor", "borderColor", "borderWidth", "hoverBackgroundColor", "hoverBorderColor", "hoverBorderWidth", "hoverRadius", "hitRadius", "pointStyle", "rotation"],
-						update: function(e) {
-							var t = this,
-								n = t.getMeta().data;
-							R.each(n, (function(n, a) {
-								t.updateElement(n, a, e)
+						update: function(t) {
+							var e = this,
+								n = e.getMeta().data;
+							j.each(n, (function(n, i) {
+								e.updateElement(n, i, t)
 							}))
 						},
-						updateElement: function(e, t, n) {
-							var a = this,
-								r = a.getMeta(),
-								i = e.custom || {},
-								s = a.getScaleForId(r.xAxisID),
-								o = a.getScaleForId(r.yAxisID),
-								d = a._resolveDataElementOptions(e, t),
-								l = a.getDataset().data[t],
-								u = a.index,
-								_ = n ? s.getPixelForDecimal(.5) : s.getPixelForValue("object" == typeof l ? l : NaN, t, u),
-								m = n ? o.getBasePixel() : o.getPixelForValue(l, t, u);
-							e._xScale = s, e._yScale = o, e._options = d, e._datasetIndex = u, e._index = t, e._model = {
-								backgroundColor: d.backgroundColor,
-								borderColor: d.borderColor,
-								borderWidth: d.borderWidth,
-								hitRadius: d.hitRadius,
-								pointStyle: d.pointStyle,
-								rotation: d.rotation,
-								radius: n ? 0 : d.radius,
-								skip: i.skip || isNaN(_) || isNaN(m),
-								x: _,
-								y: m
-							}, e.pivot()
+						updateElement: function(t, e, n) {
+							var i = this,
+								a = i.getMeta(),
+								r = t.custom || {},
+								o = i.getScaleForId(a.xAxisID),
+								s = i.getScaleForId(a.yAxisID),
+								l = i._resolveDataElementOptions(t, e),
+								u = i.getDataset().data[e],
+								d = i.index,
+								c = n ? o.getPixelForDecimal(.5) : o.getPixelForValue("object" == typeof u ? u : NaN, e, d),
+								h = n ? s.getBasePixel() : s.getPixelForValue(u, e, d);
+							t._xScale = o, t._yScale = s, t._options = l, t._datasetIndex = d, t._index = e, t._model = {
+								backgroundColor: l.backgroundColor,
+								borderColor: l.borderColor,
+								borderWidth: l.borderWidth,
+								hitRadius: l.hitRadius,
+								pointStyle: l.pointStyle,
+								rotation: l.rotation,
+								radius: n ? 0 : l.radius,
+								skip: r.skip || isNaN(c) || isNaN(h),
+								x: c,
+								y: h
+							}, t.pivot()
 						},
-						setHoverStyle: function(e) {
-							var t = e._model,
-								n = e._options,
-								a = R.getHoverColor;
-							e.$previousStyle = {
-								backgroundColor: t.backgroundColor,
-								borderColor: t.borderColor,
-								borderWidth: t.borderWidth,
-								radius: t.radius
-							}, t.backgroundColor = je(n.hoverBackgroundColor, a(n.backgroundColor)), t.borderColor = je(n.hoverBorderColor, a(n.borderColor)), t.borderWidth = je(n.hoverBorderWidth, n.borderWidth), t.radius = n.radius + n.hoverRadius
+						setHoverStyle: function(t) {
+							var e = t._model,
+								n = t._options,
+								i = j.getHoverColor;
+							t.$previousStyle = {
+								backgroundColor: e.backgroundColor,
+								borderColor: e.borderColor,
+								borderWidth: e.borderWidth,
+								radius: e.radius
+							}, e.backgroundColor = Tt(n.hoverBackgroundColor, i(n.backgroundColor)), e.borderColor = Tt(n.hoverBorderColor, i(n.borderColor)), e.borderWidth = Tt(n.hoverBorderWidth, n.borderWidth), e.radius = n.radius + n.hoverRadius
 						},
-						_resolveDataElementOptions: function(e, t) {
+						_resolveDataElementOptions: function(t, e) {
 							var n = this,
-								a = n.chart,
-								r = n.getDataset(),
-								i = e.custom || {},
-								s = r.data[t] || {},
-								o = ae.prototype._resolveDataElementOptions.apply(n, arguments),
-								d = {
-									chart: a,
-									dataIndex: t,
-									dataset: r,
+								i = n.chart,
+								a = n.getDataset(),
+								r = t.custom || {},
+								o = a.data[e] || {},
+								s = it.prototype._resolveDataElementOptions.apply(n, arguments),
+								l = {
+									chart: i,
+									dataIndex: e,
+									dataset: a,
 									datasetIndex: n.index
 								};
-							return n._cachedDataOpts === o && (o = R.extend({}, o)), o.radius = Pe([i.radius, s.r, n._config.radius, a.options.elements.point.radius], d, t), o
+							return n._cachedDataOpts === s && (s = j.extend({}, s)), s.radius = Ft([r.radius, o.r, n._config.radius, i.options.elements.point.radius], l, e), s
 						}
 					}),
-					Ae = R.valueOrDefault,
-					Fe = Math.PI,
-					We = 2 * Fe,
-					Ce = Fe / 2;
-				C._set("doughnut", {
+					Lt = j.valueOrDefault,
+					Rt = Math.PI,
+					Et = 2 * Rt,
+					zt = Rt / 2;
+				z._set("doughnut", {
 					animation: {
 						animateRotate: !0,
 						animateScale: !1
@@ -2481,179 +2481,179 @@
 					hover: {
 						mode: "single"
 					},
-					legendCallback: function(e) {
-						var t, n, a, r = document.createElement("ul"),
-							i = e.data,
-							s = i.datasets,
-							o = i.labels;
-						if (r.setAttribute("class", e.id + "-legend"), s.length)
-							for (t = 0, n = s[0].data.length; t < n; ++t)(a = r.appendChild(document.createElement("li"))).appendChild(document.createElement("span")).style.backgroundColor = s[0].backgroundColor[t], o[t] && a.appendChild(document.createTextNode(o[t]));
-						return r.outerHTML
+					legendCallback: function(t) {
+						var e, n, i, a = document.createElement("ul"),
+							r = t.data,
+							o = r.datasets,
+							s = r.labels;
+						if (a.setAttribute("class", t.id + "-legend"), o.length)
+							for (e = 0, n = o[0].data.length; e < n; ++e)(i = a.appendChild(document.createElement("li"))).appendChild(document.createElement("span")).style.backgroundColor = o[0].backgroundColor[e], s[e] && i.appendChild(document.createTextNode(s[e]));
+						return a.outerHTML
 					},
 					legend: {
 						labels: {
-							generateLabels: function(e) {
-								var t = e.data;
-								return t.labels.length && t.datasets.length ? t.labels.map((function(n, a) {
-									var r = e.getDatasetMeta(0),
-										i = r.controller.getStyle(a);
+							generateLabels: function(t) {
+								var e = t.data;
+								return e.labels.length && e.datasets.length ? e.labels.map((function(n, i) {
+									var a = t.getDatasetMeta(0),
+										r = a.controller.getStyle(i);
 									return {
 										text: n,
-										fillStyle: i.backgroundColor,
-										strokeStyle: i.borderColor,
-										lineWidth: i.borderWidth,
-										hidden: isNaN(t.datasets[0].data[a]) || r.data[a].hidden,
-										index: a
+										fillStyle: r.backgroundColor,
+										strokeStyle: r.borderColor,
+										lineWidth: r.borderWidth,
+										hidden: isNaN(e.datasets[0].data[i]) || a.data[i].hidden,
+										index: i
 									}
 								})) : []
 							}
 						},
-						onClick: function(e, t) {
-							var n, a, r, i = t.index,
-								s = this.chart;
-							for (n = 0, a = (s.data.datasets || []).length; n < a; ++n)(r = s.getDatasetMeta(n)).data[i] && (r.data[i].hidden = !r.data[i].hidden);
-							s.update()
+						onClick: function(t, e) {
+							var n, i, a, r = e.index,
+								o = this.chart;
+							for (n = 0, i = (o.data.datasets || []).length; n < i; ++n)(a = o.getDatasetMeta(n)).data[r] && (a.data[r].hidden = !a.data[r].hidden);
+							o.update()
 						}
 					},
 					cutoutPercentage: 50,
-					rotation: -Ce,
-					circumference: We,
+					rotation: -zt,
+					circumference: Et,
 					tooltips: {
 						callbacks: {
 							title: function() {
 								return ""
 							},
-							label: function(e, t) {
-								var n = t.labels[e.index],
-									a = ": " + t.datasets[e.datasetIndex].data[e.index];
-								return R.isArray(n) ? (n = n.slice())[0] += a : n += a, n
+							label: function(t, e) {
+								var n = e.labels[t.index],
+									i = ": " + e.datasets[t.datasetIndex].data[t.index];
+								return j.isArray(n) ? (n = n.slice())[0] += i : n += i, n
 							}
 						}
 					}
 				});
-				var Ee = ae.extend({
-					dataElementType: ve.Arc,
-					linkScales: R.noop,
+				var Nt = it.extend({
+					dataElementType: kt.Arc,
+					linkScales: j.noop,
 					_dataElementOptions: ["backgroundColor", "borderColor", "borderWidth", "borderAlign", "hoverBackgroundColor", "hoverBorderColor", "hoverBorderWidth"],
-					getRingIndex: function(e) {
-						for (var t = 0, n = 0; n < e; ++n) this.chart.isDatasetVisible(n) && ++t;
-						return t
+					getRingIndex: function(t) {
+						for (var e = 0, n = 0; n < t; ++n) this.chart.isDatasetVisible(n) && ++e;
+						return e
 					},
-					update: function(e) {
-						var t, n, a, r, i = this,
-							s = i.chart,
-							o = s.chartArea,
-							d = s.options,
-							l = 1,
+					update: function(t) {
+						var e, n, i, a, r = this,
+							o = r.chart,
+							s = o.chartArea,
+							l = o.options,
 							u = 1,
-							_ = 0,
-							m = 0,
-							c = i.getMeta(),
-							h = c.data,
-							f = d.cutoutPercentage / 100 || 0,
-							p = d.circumference,
-							M = i._getRingWeight(i.index);
-						if (p < We) {
-							var y = d.rotation % We,
-								g = (y += y >= Fe ? -We : y < -Fe ? We : 0) + p,
-								L = Math.cos(y),
-								Y = Math.sin(y),
-								v = Math.cos(g),
-								k = Math.sin(g),
-								b = y <= 0 && g >= 0 || g >= We,
-								D = y <= Ce && g >= Ce || g >= We + Ce,
-								w = y <= -Ce && g >= -Ce || g >= Fe + Ce,
-								T = y === -Fe || g >= Fe ? -1 : Math.min(L, L * f, v, v * f),
-								x = w ? -1 : Math.min(Y, Y * f, k, k * f),
-								S = b ? 1 : Math.max(L, L * f, v, v * f),
-								H = D ? 1 : Math.max(Y, Y * f, k, k * f);
-							l = (S - T) / 2, u = (H - x) / 2, _ = -(S + T) / 2, m = -(H + x) / 2
+							d = 1,
+							c = 0,
+							h = 0,
+							f = r.getMeta(),
+							g = f.data,
+							p = l.cutoutPercentage / 100 || 0,
+							m = l.circumference,
+							v = r._getRingWeight(r.index);
+						if (m < Et) {
+							var b = l.rotation % Et,
+								y = (b += b >= Rt ? -Et : b < -Rt ? Et : 0) + m,
+								x = Math.cos(b),
+								_ = Math.sin(b),
+								k = Math.cos(y),
+								w = Math.sin(y),
+								M = b <= 0 && y >= 0 || y >= Et,
+								C = b <= zt && y >= zt || y >= Et + zt,
+								S = b <= -zt && y >= -zt || y >= Rt + zt,
+								P = b === -Rt || y >= Rt ? -1 : Math.min(x, x * p, k, k * p),
+								A = S ? -1 : Math.min(_, _ * p, w, w * p),
+								D = M ? 1 : Math.max(x, x * p, k, k * p),
+								I = C ? 1 : Math.max(_, _ * p, w, w * p);
+							u = (D - P) / 2, d = (I - A) / 2, c = -(D + P) / 2, h = -(I + A) / 2
 						}
-						for (a = 0, r = h.length; a < r; ++a) h[a]._options = i._resolveDataElementOptions(h[a], a);
-						for (s.borderWidth = i.getMaxBorderWidth(), t = (o.right - o.left - s.borderWidth) / l, n = (o.bottom - o.top - s.borderWidth) / u, s.outerRadius = Math.max(Math.min(t, n) / 2, 0), s.innerRadius = Math.max(s.outerRadius * f, 0), s.radiusLength = (s.outerRadius - s.innerRadius) / (i._getVisibleDatasetWeightTotal() || 1), s.offsetX = _ * s.outerRadius, s.offsetY = m * s.outerRadius, c.total = i.calculateTotal(), i.outerRadius = s.outerRadius - s.radiusLength * i._getRingWeightOffset(i.index), i.innerRadius = Math.max(i.outerRadius - s.radiusLength * M, 0), a = 0, r = h.length; a < r; ++a) i.updateElement(h[a], a, e)
+						for (i = 0, a = g.length; i < a; ++i) g[i]._options = r._resolveDataElementOptions(g[i], i);
+						for (o.borderWidth = r.getMaxBorderWidth(), e = (s.right - s.left - o.borderWidth) / u, n = (s.bottom - s.top - o.borderWidth) / d, o.outerRadius = Math.max(Math.min(e, n) / 2, 0), o.innerRadius = Math.max(o.outerRadius * p, 0), o.radiusLength = (o.outerRadius - o.innerRadius) / (r._getVisibleDatasetWeightTotal() || 1), o.offsetX = c * o.outerRadius, o.offsetY = h * o.outerRadius, f.total = r.calculateTotal(), r.outerRadius = o.outerRadius - o.radiusLength * r._getRingWeightOffset(r.index), r.innerRadius = Math.max(r.outerRadius - o.radiusLength * v, 0), i = 0, a = g.length; i < a; ++i) r.updateElement(g[i], i, t)
 					},
-					updateElement: function(e, t, n) {
-						var a = this,
-							r = a.chart,
-							i = r.chartArea,
-							s = r.options,
-							o = s.animation,
-							d = (i.left + i.right) / 2,
-							l = (i.top + i.bottom) / 2,
-							u = s.rotation,
-							_ = s.rotation,
-							m = a.getDataset(),
-							c = n && o.animateRotate ? 0 : e.hidden ? 0 : a.calculateCircumference(m.data[t]) * (s.circumference / We),
-							h = n && o.animateScale ? 0 : a.innerRadius,
-							f = n && o.animateScale ? 0 : a.outerRadius,
-							p = e._options || {};
-						R.extend(e, {
-							_datasetIndex: a.index,
-							_index: t,
+					updateElement: function(t, e, n) {
+						var i = this,
+							a = i.chart,
+							r = a.chartArea,
+							o = a.options,
+							s = o.animation,
+							l = (r.left + r.right) / 2,
+							u = (r.top + r.bottom) / 2,
+							d = o.rotation,
+							c = o.rotation,
+							h = i.getDataset(),
+							f = n && s.animateRotate ? 0 : t.hidden ? 0 : i.calculateCircumference(h.data[e]) * (o.circumference / Et),
+							g = n && s.animateScale ? 0 : i.innerRadius,
+							p = n && s.animateScale ? 0 : i.outerRadius,
+							m = t._options || {};
+						j.extend(t, {
+							_datasetIndex: i.index,
+							_index: e,
 							_model: {
-								backgroundColor: p.backgroundColor,
-								borderColor: p.borderColor,
-								borderWidth: p.borderWidth,
-								borderAlign: p.borderAlign,
-								x: d + r.offsetX,
-								y: l + r.offsetY,
-								startAngle: u,
-								endAngle: _,
-								circumference: c,
-								outerRadius: f,
-								innerRadius: h,
-								label: R.valueAtIndexOrDefault(m.label, t, r.data.labels[t])
+								backgroundColor: m.backgroundColor,
+								borderColor: m.borderColor,
+								borderWidth: m.borderWidth,
+								borderAlign: m.borderAlign,
+								x: l + a.offsetX,
+								y: u + a.offsetY,
+								startAngle: d,
+								endAngle: c,
+								circumference: f,
+								outerRadius: p,
+								innerRadius: g,
+								label: j.valueAtIndexOrDefault(h.label, e, a.data.labels[e])
 							}
 						});
-						var M = e._model;
-						n && o.animateRotate || (M.startAngle = 0 === t ? s.rotation : a.getMeta().data[t - 1]._model.endAngle, M.endAngle = M.startAngle + M.circumference), e.pivot()
+						var v = t._model;
+						n && s.animateRotate || (v.startAngle = 0 === e ? o.rotation : i.getMeta().data[e - 1]._model.endAngle, v.endAngle = v.startAngle + v.circumference), t.pivot()
 					},
 					calculateTotal: function() {
-						var e, t = this.getDataset(),
+						var t, e = this.getDataset(),
 							n = this.getMeta(),
-							a = 0;
-						return R.each(n.data, (function(n, r) {
-							e = t.data[r], isNaN(e) || n.hidden || (a += Math.abs(e))
-						})), a
+							i = 0;
+						return j.each(n.data, (function(n, a) {
+							t = e.data[a], isNaN(t) || n.hidden || (i += Math.abs(t))
+						})), i
 					},
-					calculateCircumference: function(e) {
-						var t = this.getMeta().total;
-						return t > 0 && !isNaN(e) ? We * (Math.abs(e) / t) : 0
+					calculateCircumference: function(t) {
+						var e = this.getMeta().total;
+						return e > 0 && !isNaN(t) ? Et * (Math.abs(t) / e) : 0
 					},
-					getMaxBorderWidth: function(e) {
-						var t, n, a, r, i, s, o, d, l = 0,
-							u = this.chart;
-						if (!e)
-							for (t = 0, n = u.data.datasets.length; t < n; ++t)
-								if (u.isDatasetVisible(t)) {
-									e = (a = u.getDatasetMeta(t)).data, t !== this.index && (i = a.controller);
+					getMaxBorderWidth: function(t) {
+						var e, n, i, a, r, o, s, l, u = 0,
+							d = this.chart;
+						if (!t)
+							for (e = 0, n = d.data.datasets.length; e < n; ++e)
+								if (d.isDatasetVisible(e)) {
+									t = (i = d.getDatasetMeta(e)).data, e !== this.index && (r = i.controller);
 									break
-								} if (!e) return 0;
-						for (t = 0, n = e.length; t < n; ++t) r = e[t], i ? (i._configure(), s = i._resolveDataElementOptions(r, t)) : s = r._options, "inner" !== s.borderAlign && (o = s.borderWidth, l = (d = s.hoverBorderWidth) > (l = o > l ? o : l) ? d : l);
-						return l
+								} if (!t) return 0;
+						for (e = 0, n = t.length; e < n; ++e) a = t[e], r ? (r._configure(), o = r._resolveDataElementOptions(a, e)) : o = a._options, "inner" !== o.borderAlign && (s = o.borderWidth, u = (l = o.hoverBorderWidth) > (u = s > u ? s : u) ? l : u);
+						return u
 					},
-					setHoverStyle: function(e) {
-						var t = e._model,
-							n = e._options,
-							a = R.getHoverColor;
-						e.$previousStyle = {
-							backgroundColor: t.backgroundColor,
-							borderColor: t.borderColor,
-							borderWidth: t.borderWidth
-						}, t.backgroundColor = Ae(n.hoverBackgroundColor, a(n.backgroundColor)), t.borderColor = Ae(n.hoverBorderColor, a(n.borderColor)), t.borderWidth = Ae(n.hoverBorderWidth, n.borderWidth)
+					setHoverStyle: function(t) {
+						var e = t._model,
+							n = t._options,
+							i = j.getHoverColor;
+						t.$previousStyle = {
+							backgroundColor: e.backgroundColor,
+							borderColor: e.borderColor,
+							borderWidth: e.borderWidth
+						}, e.backgroundColor = Lt(n.hoverBackgroundColor, i(n.backgroundColor)), e.borderColor = Lt(n.hoverBorderColor, i(n.borderColor)), e.borderWidth = Lt(n.hoverBorderWidth, n.borderWidth)
 					},
-					_getRingWeightOffset: function(e) {
-						for (var t = 0, n = 0; n < e; ++n) this.chart.isDatasetVisible(n) && (t += this._getRingWeight(n));
-						return t
+					_getRingWeightOffset: function(t) {
+						for (var e = 0, n = 0; n < t; ++n) this.chart.isDatasetVisible(n) && (e += this._getRingWeight(n));
+						return e
 					},
-					_getRingWeight: function(e) {
-						return Math.max(Ae(this.chart.data.datasets[e].weight, 1), 0)
+					_getRingWeight: function(t) {
+						return Math.max(Lt(this.chart.data.datasets[t].weight, 1), 0)
 					},
 					_getVisibleDatasetWeightTotal: function() {
 						return this._getRingWeightOffset(this.chart.data.datasets.length)
 					}
 				});
-				C._set("horizontalBar", {
+				z._set("horizontalBar", {
 					hover: {
 						mode: "index",
 						axis: "y"
@@ -2681,7 +2681,7 @@
 						mode: "index",
 						axis: "y"
 					}
-				}), C._set("global", {
+				}), z._set("global", {
 					datasets: {
 						horizontalBar: {
 							categoryPercentage: .8,
@@ -2689,7 +2689,7 @@
 						}
 					}
 				});
-				var Ie = He.extend({
+				var Bt = It.extend({
 						_getValueScaleId: function() {
 							return this.getMeta().xAxisID
 						},
@@ -2697,43 +2697,43 @@
 							return this.getMeta().yAxisID
 						}
 					}),
-					ze = R.valueOrDefault,
-					Ne = R.options.resolve,
-					Re = R.canvas._isPointInArea;
+					Wt = j.valueOrDefault,
+					Vt = j.options.resolve,
+					jt = j.canvas._isPointInArea;
 
-				function Ve(e, t) {
-					var n = e && e.options.ticks || {},
-						a = n.reverse,
-						r = void 0 === n.min ? t : 0,
-						i = void 0 === n.max ? t : 0;
+				function Ht(t, e) {
+					var n = t && t.options.ticks || {},
+						i = n.reverse,
+						a = void 0 === n.min ? e : 0,
+						r = void 0 === n.max ? e : 0;
 					return {
-						start: a ? i : r,
-						end: a ? r : i
+						start: i ? r : a,
+						end: i ? a : r
 					}
 				}
 
-				function Be(e, t, n) {
-					var a = n / 2,
-						r = Ve(e, a),
-						i = Ve(t, a);
+				function qt(t, e, n) {
+					var i = n / 2,
+						a = Ht(t, i),
+						r = Ht(e, i);
 					return {
-						top: i.end,
-						right: r.end,
-						bottom: i.start,
-						left: r.start
+						top: r.end,
+						right: a.end,
+						bottom: r.start,
+						left: a.start
 					}
 				}
 
-				function Je(e) {
-					var t, n, a, r;
-					return R.isObject(e) ? (t = e.top, n = e.right, a = e.bottom, r = e.left) : t = n = a = r = e, {
-						top: t,
+				function Ut(t) {
+					var e, n, i, a;
+					return j.isObject(t) ? (e = t.top, n = t.right, i = t.bottom, a = t.left) : e = n = i = a = t, {
+						top: e,
 						right: n,
-						bottom: a,
-						left: r
+						bottom: i,
+						left: a
 					}
 				}
-				C._set("line", {
+				z._set("line", {
 					showLines: !0,
 					spanGaps: !1,
 					hover: {
@@ -2750,9 +2750,9 @@
 						}]
 					}
 				});
-				var Ue = ae.extend({
-						datasetElementType: ve.Line,
-						dataElementType: ve.Point,
+				var Yt = it.extend({
+						datasetElementType: kt.Line,
+						dataElementType: kt.Point,
 						_datasetElementOptions: ["backgroundColor", "borderCapStyle", "borderColor", "borderDash", "borderDashOffset", "borderJoinStyle", "borderWidth", "cubicInterpolationMode", "fill"],
 						_dataElementOptions: {
 							backgroundColor: "pointBackgroundColor",
@@ -2767,110 +2767,110 @@
 							radius: "pointRadius",
 							rotation: "pointRotation"
 						},
-						update: function(e) {
-							var t, n, a = this,
-								r = a.getMeta(),
-								i = r.dataset,
-								s = r.data || [],
-								o = a.chart.options,
-								d = a._config,
-								l = a._showLine = ze(d.showLine, o.showLines);
-							for (a._xScale = a.getScaleForId(r.xAxisID), a._yScale = a.getScaleForId(r.yAxisID), l && (void 0 !== d.tension && void 0 === d.lineTension && (d.lineTension = d.tension), i._scale = a._yScale, i._datasetIndex = a.index, i._children = s, i._model = a._resolveDatasetElementOptions(i), i.pivot()), t = 0, n = s.length; t < n; ++t) a.updateElement(s[t], t, e);
-							for (l && 0 !== i._model.tension && a.updateBezierControlPoints(), t = 0, n = s.length; t < n; ++t) s[t].pivot()
+						update: function(t) {
+							var e, n, i = this,
+								a = i.getMeta(),
+								r = a.dataset,
+								o = a.data || [],
+								s = i.chart.options,
+								l = i._config,
+								u = i._showLine = Wt(l.showLine, s.showLines);
+							for (i._xScale = i.getScaleForId(a.xAxisID), i._yScale = i.getScaleForId(a.yAxisID), u && (void 0 !== l.tension && void 0 === l.lineTension && (l.lineTension = l.tension), r._scale = i._yScale, r._datasetIndex = i.index, r._children = o, r._model = i._resolveDatasetElementOptions(r), r.pivot()), e = 0, n = o.length; e < n; ++e) i.updateElement(o[e], e, t);
+							for (u && 0 !== r._model.tension && i.updateBezierControlPoints(), e = 0, n = o.length; e < n; ++e) o[e].pivot()
 						},
-						updateElement: function(e, t, n) {
-							var a, r, i = this,
-								s = i.getMeta(),
-								o = e.custom || {},
-								d = i.getDataset(),
-								l = i.index,
-								u = d.data[t],
-								_ = i._xScale,
-								m = i._yScale,
-								c = s.dataset._model,
-								h = i._resolveDataElementOptions(e, t);
-							a = _.getPixelForValue("object" == typeof u ? u : NaN, t, l), r = n ? m.getBasePixel() : i.calculatePointY(u, t, l), e._xScale = _, e._yScale = m, e._options = h, e._datasetIndex = l, e._index = t, e._model = {
-								x: a,
-								y: r,
-								skip: o.skip || isNaN(a) || isNaN(r),
-								radius: h.radius,
-								pointStyle: h.pointStyle,
-								rotation: h.rotation,
-								backgroundColor: h.backgroundColor,
-								borderColor: h.borderColor,
-								borderWidth: h.borderWidth,
-								tension: ze(o.tension, c ? c.tension : 0),
-								steppedLine: !!c && c.steppedLine,
-								hitRadius: h.hitRadius
+						updateElement: function(t, e, n) {
+							var i, a, r = this,
+								o = r.getMeta(),
+								s = t.custom || {},
+								l = r.getDataset(),
+								u = r.index,
+								d = l.data[e],
+								c = r._xScale,
+								h = r._yScale,
+								f = o.dataset._model,
+								g = r._resolveDataElementOptions(t, e);
+							i = c.getPixelForValue("object" == typeof d ? d : NaN, e, u), a = n ? h.getBasePixel() : r.calculatePointY(d, e, u), t._xScale = c, t._yScale = h, t._options = g, t._datasetIndex = u, t._index = e, t._model = {
+								x: i,
+								y: a,
+								skip: s.skip || isNaN(i) || isNaN(a),
+								radius: g.radius,
+								pointStyle: g.pointStyle,
+								rotation: g.rotation,
+								backgroundColor: g.backgroundColor,
+								borderColor: g.borderColor,
+								borderWidth: g.borderWidth,
+								tension: Wt(s.tension, f ? f.tension : 0),
+								steppedLine: !!f && f.steppedLine,
+								hitRadius: g.hitRadius
 							}
 						},
-						_resolveDatasetElementOptions: function(e) {
-							var t = this,
-								n = t._config,
-								a = e.custom || {},
-								r = t.chart.options,
-								i = r.elements.line,
-								s = ae.prototype._resolveDatasetElementOptions.apply(t, arguments);
-							return s.spanGaps = ze(n.spanGaps, r.spanGaps), s.tension = ze(n.lineTension, i.tension), s.steppedLine = Ne([a.steppedLine, n.steppedLine, i.stepped]), s.clip = Je(ze(n.clip, Be(t._xScale, t._yScale, s.borderWidth))), s
+						_resolveDatasetElementOptions: function(t) {
+							var e = this,
+								n = e._config,
+								i = t.custom || {},
+								a = e.chart.options,
+								r = a.elements.line,
+								o = it.prototype._resolveDatasetElementOptions.apply(e, arguments);
+							return o.spanGaps = Wt(n.spanGaps, a.spanGaps), o.tension = Wt(n.lineTension, r.tension), o.steppedLine = Vt([i.steppedLine, n.steppedLine, r.stepped]), o.clip = Ut(Wt(n.clip, qt(e._xScale, e._yScale, o.borderWidth))), o
 						},
-						calculatePointY: function(e, t, n) {
-							var a, r, i, s, o, d, l, u = this.chart,
-								_ = this._yScale,
-								m = 0,
-								c = 0;
-							if (_.options.stacked) {
-								for (o = +_.getRightValue(e), l = (d = u._getSortedVisibleDatasetMetas()).length, a = 0; a < l && (i = d[a]).index !== n; ++a) r = u.data.datasets[i.index], "line" === i.type && i.yAxisID === _.id && ((s = +_.getRightValue(r.data[t])) < 0 ? c += s || 0 : m += s || 0);
-								return o < 0 ? _.getPixelForValue(c + o) : _.getPixelForValue(m + o)
+						calculatePointY: function(t, e, n) {
+							var i, a, r, o, s, l, u, d = this.chart,
+								c = this._yScale,
+								h = 0,
+								f = 0;
+							if (c.options.stacked) {
+								for (s = +c.getRightValue(t), u = (l = d._getSortedVisibleDatasetMetas()).length, i = 0; i < u && (r = l[i]).index !== n; ++i) a = d.data.datasets[r.index], "line" === r.type && r.yAxisID === c.id && ((o = +c.getRightValue(a.data[e])) < 0 ? f += o || 0 : h += o || 0);
+								return s < 0 ? c.getPixelForValue(f + s) : c.getPixelForValue(h + s)
 							}
-							return _.getPixelForValue(e)
+							return c.getPixelForValue(t)
 						},
 						updateBezierControlPoints: function() {
-							var e, t, n, a, r = this.chart,
-								i = this.getMeta(),
-								s = i.dataset._model,
-								o = r.chartArea,
-								d = i.data || [];
+							var t, e, n, i, a = this.chart,
+								r = this.getMeta(),
+								o = r.dataset._model,
+								s = a.chartArea,
+								l = r.data || [];
 
-							function l(e, t, n) {
-								return Math.max(Math.min(e, n), t)
+							function u(t, e, n) {
+								return Math.max(Math.min(t, n), e)
 							}
-							if (s.spanGaps && (d = d.filter((function(e) {
-									return !e._model.skip
-								}))), "monotone" === s.cubicInterpolationMode) R.splineCurveMonotone(d);
+							if (o.spanGaps && (l = l.filter((function(t) {
+									return !t._model.skip
+								}))), "monotone" === o.cubicInterpolationMode) j.splineCurveMonotone(l);
 							else
-								for (e = 0, t = d.length; e < t; ++e) n = d[e]._model, a = R.splineCurve(R.previousItem(d, e)._model, n, R.nextItem(d, e)._model, s.tension), n.controlPointPreviousX = a.previous.x, n.controlPointPreviousY = a.previous.y, n.controlPointNextX = a.next.x, n.controlPointNextY = a.next.y;
-							if (r.options.elements.line.capBezierPoints)
-								for (e = 0, t = d.length; e < t; ++e) n = d[e]._model, Re(n, o) && (e > 0 && Re(d[e - 1]._model, o) && (n.controlPointPreviousX = l(n.controlPointPreviousX, o.left, o.right), n.controlPointPreviousY = l(n.controlPointPreviousY, o.top, o.bottom)), e < d.length - 1 && Re(d[e + 1]._model, o) && (n.controlPointNextX = l(n.controlPointNextX, o.left, o.right), n.controlPointNextY = l(n.controlPointNextY, o.top, o.bottom)))
+								for (t = 0, e = l.length; t < e; ++t) n = l[t]._model, i = j.splineCurve(j.previousItem(l, t)._model, n, j.nextItem(l, t)._model, o.tension), n.controlPointPreviousX = i.previous.x, n.controlPointPreviousY = i.previous.y, n.controlPointNextX = i.next.x, n.controlPointNextY = i.next.y;
+							if (a.options.elements.line.capBezierPoints)
+								for (t = 0, e = l.length; t < e; ++t) n = l[t]._model, jt(n, s) && (t > 0 && jt(l[t - 1]._model, s) && (n.controlPointPreviousX = u(n.controlPointPreviousX, s.left, s.right), n.controlPointPreviousY = u(n.controlPointPreviousY, s.top, s.bottom)), t < l.length - 1 && jt(l[t + 1]._model, s) && (n.controlPointNextX = u(n.controlPointNextX, s.left, s.right), n.controlPointNextY = u(n.controlPointNextY, s.top, s.bottom)))
 						},
 						draw: function() {
-							var e, t = this.chart,
+							var t, e = this.chart,
 								n = this.getMeta(),
-								a = n.data || [],
-								r = t.chartArea,
-								i = t.canvas,
-								s = 0,
-								o = a.length;
-							for (this._showLine && (e = n.dataset._model.clip, R.canvas.clipArea(t.ctx, {
-									left: !1 === e.left ? 0 : r.left - e.left,
-									right: !1 === e.right ? i.width : r.right + e.right,
-									top: !1 === e.top ? 0 : r.top - e.top,
-									bottom: !1 === e.bottom ? i.height : r.bottom + e.bottom
-								}), n.dataset.draw(), R.canvas.unclipArea(t.ctx)); s < o; ++s) a[s].draw(r)
+								i = n.data || [],
+								a = e.chartArea,
+								r = e.canvas,
+								o = 0,
+								s = i.length;
+							for (this._showLine && (t = n.dataset._model.clip, j.canvas.clipArea(e.ctx, {
+									left: !1 === t.left ? 0 : a.left - t.left,
+									right: !1 === t.right ? r.width : a.right + t.right,
+									top: !1 === t.top ? 0 : a.top - t.top,
+									bottom: !1 === t.bottom ? r.height : a.bottom + t.bottom
+								}), n.dataset.draw(), j.canvas.unclipArea(e.ctx)); o < s; ++o) i[o].draw(a)
 						},
-						setHoverStyle: function(e) {
-							var t = e._model,
-								n = e._options,
-								a = R.getHoverColor;
-							e.$previousStyle = {
-								backgroundColor: t.backgroundColor,
-								borderColor: t.borderColor,
-								borderWidth: t.borderWidth,
-								radius: t.radius
-							}, t.backgroundColor = ze(n.hoverBackgroundColor, a(n.backgroundColor)), t.borderColor = ze(n.hoverBorderColor, a(n.borderColor)), t.borderWidth = ze(n.hoverBorderWidth, n.borderWidth), t.radius = ze(n.hoverRadius, n.radius)
+						setHoverStyle: function(t) {
+							var e = t._model,
+								n = t._options,
+								i = j.getHoverColor;
+							t.$previousStyle = {
+								backgroundColor: e.backgroundColor,
+								borderColor: e.borderColor,
+								borderWidth: e.borderWidth,
+								radius: e.radius
+							}, e.backgroundColor = Wt(n.hoverBackgroundColor, i(n.backgroundColor)), e.borderColor = Wt(n.hoverBorderColor, i(n.borderColor)), e.borderWidth = Wt(n.hoverBorderWidth, n.borderWidth), e.radius = Wt(n.hoverRadius, n.radius)
 						}
 					}),
-					Ge = R.options.resolve;
-				C._set("polarArea", {
+					Kt = j.options.resolve;
+				z._set("polarArea", {
 					scale: {
 						type: "radialLinear",
 						angleLines: {
@@ -2891,38 +2891,38 @@
 						animateScale: !0
 					},
 					startAngle: -.5 * Math.PI,
-					legendCallback: function(e) {
-						var t, n, a, r = document.createElement("ul"),
-							i = e.data,
-							s = i.datasets,
-							o = i.labels;
-						if (r.setAttribute("class", e.id + "-legend"), s.length)
-							for (t = 0, n = s[0].data.length; t < n; ++t)(a = r.appendChild(document.createElement("li"))).appendChild(document.createElement("span")).style.backgroundColor = s[0].backgroundColor[t], o[t] && a.appendChild(document.createTextNode(o[t]));
-						return r.outerHTML
+					legendCallback: function(t) {
+						var e, n, i, a = document.createElement("ul"),
+							r = t.data,
+							o = r.datasets,
+							s = r.labels;
+						if (a.setAttribute("class", t.id + "-legend"), o.length)
+							for (e = 0, n = o[0].data.length; e < n; ++e)(i = a.appendChild(document.createElement("li"))).appendChild(document.createElement("span")).style.backgroundColor = o[0].backgroundColor[e], s[e] && i.appendChild(document.createTextNode(s[e]));
+						return a.outerHTML
 					},
 					legend: {
 						labels: {
-							generateLabels: function(e) {
-								var t = e.data;
-								return t.labels.length && t.datasets.length ? t.labels.map((function(n, a) {
-									var r = e.getDatasetMeta(0),
-										i = r.controller.getStyle(a);
+							generateLabels: function(t) {
+								var e = t.data;
+								return e.labels.length && e.datasets.length ? e.labels.map((function(n, i) {
+									var a = t.getDatasetMeta(0),
+										r = a.controller.getStyle(i);
 									return {
 										text: n,
-										fillStyle: i.backgroundColor,
-										strokeStyle: i.borderColor,
-										lineWidth: i.borderWidth,
-										hidden: isNaN(t.datasets[0].data[a]) || r.data[a].hidden,
-										index: a
+										fillStyle: r.backgroundColor,
+										strokeStyle: r.borderColor,
+										lineWidth: r.borderWidth,
+										hidden: isNaN(e.datasets[0].data[i]) || a.data[i].hidden,
+										index: i
 									}
 								})) : []
 							}
 						},
-						onClick: function(e, t) {
-							var n, a, r, i = t.index,
-								s = this.chart;
-							for (n = 0, a = (s.data.datasets || []).length; n < a; ++n)(r = s.getDatasetMeta(n)).data[i].hidden = !r.data[i].hidden;
-							s.update()
+						onClick: function(t, e) {
+							var n, i, a, r = e.index,
+								o = this.chart;
+							for (n = 0, i = (o.data.datasets || []).length; n < i; ++n)(a = o.getDatasetMeta(n)).data[r].hidden = !a.data[r].hidden;
+							o.update()
 						}
 					},
 					tooltips: {
@@ -2930,15 +2930,15 @@
 							title: function() {
 								return ""
 							},
-							label: function(e, t) {
-								return t.labels[e.index] + ": " + e.yLabel
+							label: function(t, e) {
+								return e.labels[t.index] + ": " + t.yLabel
 							}
 						}
 					}
 				});
-				var qe = ae.extend({
-					dataElementType: ve.Arc,
-					linkScales: R.noop,
+				var Gt = it.extend({
+					dataElementType: kt.Arc,
+					linkScales: j.noop,
 					_dataElementOptions: ["backgroundColor", "borderColor", "borderWidth", "borderAlign", "hoverBackgroundColor", "hoverBorderColor", "hoverBorderWidth"],
 					_getIndexScaleId: function() {
 						return this.chart.scale.id
@@ -2946,100 +2946,100 @@
 					_getValueScaleId: function() {
 						return this.chart.scale.id
 					},
-					update: function(e) {
-						var t, n, a, r = this,
-							i = r.getDataset(),
-							s = r.getMeta(),
-							o = r.chart.options.startAngle || 0,
-							d = r._starts = [],
-							l = r._angles = [],
-							u = s.data;
-						for (r._updateRadius(), s.count = r.countVisibleElements(), t = 0, n = i.data.length; t < n; t++) d[t] = o, a = r._computeAngle(t), l[t] = a, o += a;
-						for (t = 0, n = u.length; t < n; ++t) u[t]._options = r._resolveDataElementOptions(u[t], t), r.updateElement(u[t], t, e)
+					update: function(t) {
+						var e, n, i, a = this,
+							r = a.getDataset(),
+							o = a.getMeta(),
+							s = a.chart.options.startAngle || 0,
+							l = a._starts = [],
+							u = a._angles = [],
+							d = o.data;
+						for (a._updateRadius(), o.count = a.countVisibleElements(), e = 0, n = r.data.length; e < n; e++) l[e] = s, i = a._computeAngle(e), u[e] = i, s += i;
+						for (e = 0, n = d.length; e < n; ++e) d[e]._options = a._resolveDataElementOptions(d[e], e), a.updateElement(d[e], e, t)
 					},
 					_updateRadius: function() {
-						var e = this,
-							t = e.chart,
-							n = t.chartArea,
-							a = t.options,
-							r = Math.min(n.right - n.left, n.bottom - n.top);
-						t.outerRadius = Math.max(r / 2, 0), t.innerRadius = Math.max(a.cutoutPercentage ? t.outerRadius / 100 * a.cutoutPercentage : 1, 0), t.radiusLength = (t.outerRadius - t.innerRadius) / t.getVisibleDatasetCount(), e.outerRadius = t.outerRadius - t.radiusLength * e.index, e.innerRadius = e.outerRadius - t.radiusLength
+						var t = this,
+							e = t.chart,
+							n = e.chartArea,
+							i = e.options,
+							a = Math.min(n.right - n.left, n.bottom - n.top);
+						e.outerRadius = Math.max(a / 2, 0), e.innerRadius = Math.max(i.cutoutPercentage ? e.outerRadius / 100 * i.cutoutPercentage : 1, 0), e.radiusLength = (e.outerRadius - e.innerRadius) / e.getVisibleDatasetCount(), t.outerRadius = e.outerRadius - e.radiusLength * t.index, t.innerRadius = t.outerRadius - e.radiusLength
 					},
-					updateElement: function(e, t, n) {
-						var a = this,
-							r = a.chart,
-							i = a.getDataset(),
-							s = r.options,
-							o = s.animation,
-							d = r.scale,
-							l = r.data.labels,
-							u = d.xCenter,
-							_ = d.yCenter,
-							m = s.startAngle,
-							c = e.hidden ? 0 : d.getDistanceFromCenterForValue(i.data[t]),
-							h = a._starts[t],
-							f = h + (e.hidden ? 0 : a._angles[t]),
-							p = o.animateScale ? 0 : d.getDistanceFromCenterForValue(i.data[t]),
-							M = e._options || {};
-						R.extend(e, {
-							_datasetIndex: a.index,
-							_index: t,
-							_scale: d,
+					updateElement: function(t, e, n) {
+						var i = this,
+							a = i.chart,
+							r = i.getDataset(),
+							o = a.options,
+							s = o.animation,
+							l = a.scale,
+							u = a.data.labels,
+							d = l.xCenter,
+							c = l.yCenter,
+							h = o.startAngle,
+							f = t.hidden ? 0 : l.getDistanceFromCenterForValue(r.data[e]),
+							g = i._starts[e],
+							p = g + (t.hidden ? 0 : i._angles[e]),
+							m = s.animateScale ? 0 : l.getDistanceFromCenterForValue(r.data[e]),
+							v = t._options || {};
+						j.extend(t, {
+							_datasetIndex: i.index,
+							_index: e,
+							_scale: l,
 							_model: {
-								backgroundColor: M.backgroundColor,
-								borderColor: M.borderColor,
-								borderWidth: M.borderWidth,
-								borderAlign: M.borderAlign,
-								x: u,
-								y: _,
+								backgroundColor: v.backgroundColor,
+								borderColor: v.borderColor,
+								borderWidth: v.borderWidth,
+								borderAlign: v.borderAlign,
+								x: d,
+								y: c,
 								innerRadius: 0,
-								outerRadius: n ? p : c,
-								startAngle: n && o.animateRotate ? m : h,
-								endAngle: n && o.animateRotate ? m : f,
-								label: R.valueAtIndexOrDefault(l, t, l[t])
+								outerRadius: n ? m : f,
+								startAngle: n && s.animateRotate ? h : g,
+								endAngle: n && s.animateRotate ? h : p,
+								label: j.valueAtIndexOrDefault(u, e, u[e])
 							}
-						}), e.pivot()
+						}), t.pivot()
 					},
 					countVisibleElements: function() {
-						var e = this.getDataset(),
-							t = this.getMeta(),
+						var t = this.getDataset(),
+							e = this.getMeta(),
 							n = 0;
-						return R.each(t.data, (function(t, a) {
-							isNaN(e.data[a]) || t.hidden || n++
+						return j.each(e.data, (function(e, i) {
+							isNaN(t.data[i]) || e.hidden || n++
 						})), n
 					},
-					setHoverStyle: function(e) {
-						var t = e._model,
-							n = e._options,
-							a = R.getHoverColor,
-							r = R.valueOrDefault;
-						e.$previousStyle = {
-							backgroundColor: t.backgroundColor,
-							borderColor: t.borderColor,
-							borderWidth: t.borderWidth
-						}, t.backgroundColor = r(n.hoverBackgroundColor, a(n.backgroundColor)), t.borderColor = r(n.hoverBorderColor, a(n.borderColor)), t.borderWidth = r(n.hoverBorderWidth, n.borderWidth)
+					setHoverStyle: function(t) {
+						var e = t._model,
+							n = t._options,
+							i = j.getHoverColor,
+							a = j.valueOrDefault;
+						t.$previousStyle = {
+							backgroundColor: e.backgroundColor,
+							borderColor: e.borderColor,
+							borderWidth: e.borderWidth
+						}, e.backgroundColor = a(n.hoverBackgroundColor, i(n.backgroundColor)), e.borderColor = a(n.hoverBorderColor, i(n.borderColor)), e.borderWidth = a(n.hoverBorderWidth, n.borderWidth)
 					},
-					_computeAngle: function(e) {
-						var t = this,
+					_computeAngle: function(t) {
+						var e = this,
 							n = this.getMeta().count,
-							a = t.getDataset(),
-							r = t.getMeta();
-						if (isNaN(a.data[e]) || r.data[e].hidden) return 0;
-						var i = {
-							chart: t.chart,
-							dataIndex: e,
-							dataset: a,
-							datasetIndex: t.index
+							i = e.getDataset(),
+							a = e.getMeta();
+						if (isNaN(i.data[t]) || a.data[t].hidden) return 0;
+						var r = {
+							chart: e.chart,
+							dataIndex: t,
+							dataset: i,
+							datasetIndex: e.index
 						};
-						return Ge([t.chart.options.elements.arc.angle, 2 * Math.PI / n], i, e)
+						return Kt([e.chart.options.elements.arc.angle, 2 * Math.PI / n], r, t)
 					}
 				});
-				C._set("pie", R.clone(C.doughnut)), C._set("pie", {
+				z._set("pie", j.clone(z.doughnut)), z._set("pie", {
 					cutoutPercentage: 0
 				});
-				var Ke = Ee,
-					Ze = R.valueOrDefault;
-				C._set("radar", {
+				var Xt = Nt,
+					Zt = j.valueOrDefault;
+				z._set("radar", {
 					spanGaps: !1,
 					scale: {
 						type: "radialLinear"
@@ -3051,10 +3051,10 @@
 						}
 					}
 				});
-				var $e = ae.extend({
-					datasetElementType: ve.Line,
-					dataElementType: ve.Point,
-					linkScales: R.noop,
+				var $t = it.extend({
+					datasetElementType: kt.Line,
+					dataElementType: kt.Point,
+					linkScales: j.noop,
 					_datasetElementOptions: ["backgroundColor", "borderWidth", "borderColor", "borderCapStyle", "borderDash", "borderDashOffset", "borderJoinStyle", "fill"],
 					_dataElementOptions: {
 						backgroundColor: "pointBackgroundColor",
@@ -3075,72 +3075,72 @@
 					_getValueScaleId: function() {
 						return this.chart.scale.id
 					},
-					update: function(e) {
-						var t, n, a = this,
-							r = a.getMeta(),
-							i = r.dataset,
-							s = r.data || [],
-							o = a.chart.scale,
-							d = a._config;
-						for (void 0 !== d.tension && void 0 === d.lineTension && (d.lineTension = d.tension), i._scale = o, i._datasetIndex = a.index, i._children = s, i._loop = !0, i._model = a._resolveDatasetElementOptions(i), i.pivot(), t = 0, n = s.length; t < n; ++t) a.updateElement(s[t], t, e);
-						for (a.updateBezierControlPoints(), t = 0, n = s.length; t < n; ++t) s[t].pivot()
+					update: function(t) {
+						var e, n, i = this,
+							a = i.getMeta(),
+							r = a.dataset,
+							o = a.data || [],
+							s = i.chart.scale,
+							l = i._config;
+						for (void 0 !== l.tension && void 0 === l.lineTension && (l.lineTension = l.tension), r._scale = s, r._datasetIndex = i.index, r._children = o, r._loop = !0, r._model = i._resolveDatasetElementOptions(r), r.pivot(), e = 0, n = o.length; e < n; ++e) i.updateElement(o[e], e, t);
+						for (i.updateBezierControlPoints(), e = 0, n = o.length; e < n; ++e) o[e].pivot()
 					},
-					updateElement: function(e, t, n) {
-						var a = this,
-							r = e.custom || {},
-							i = a.getDataset(),
-							s = a.chart.scale,
-							o = s.getPointPositionForValue(t, i.data[t]),
-							d = a._resolveDataElementOptions(e, t),
-							l = a.getMeta().dataset._model,
-							u = n ? s.xCenter : o.x,
-							_ = n ? s.yCenter : o.y;
-						e._scale = s, e._options = d, e._datasetIndex = a.index, e._index = t, e._model = {
-							x: u,
-							y: _,
-							skip: r.skip || isNaN(u) || isNaN(_),
-							radius: d.radius,
-							pointStyle: d.pointStyle,
-							rotation: d.rotation,
-							backgroundColor: d.backgroundColor,
-							borderColor: d.borderColor,
-							borderWidth: d.borderWidth,
-							tension: Ze(r.tension, l ? l.tension : 0),
-							hitRadius: d.hitRadius
+					updateElement: function(t, e, n) {
+						var i = this,
+							a = t.custom || {},
+							r = i.getDataset(),
+							o = i.chart.scale,
+							s = o.getPointPositionForValue(e, r.data[e]),
+							l = i._resolveDataElementOptions(t, e),
+							u = i.getMeta().dataset._model,
+							d = n ? o.xCenter : s.x,
+							c = n ? o.yCenter : s.y;
+						t._scale = o, t._options = l, t._datasetIndex = i.index, t._index = e, t._model = {
+							x: d,
+							y: c,
+							skip: a.skip || isNaN(d) || isNaN(c),
+							radius: l.radius,
+							pointStyle: l.pointStyle,
+							rotation: l.rotation,
+							backgroundColor: l.backgroundColor,
+							borderColor: l.borderColor,
+							borderWidth: l.borderWidth,
+							tension: Zt(a.tension, u ? u.tension : 0),
+							hitRadius: l.hitRadius
 						}
 					},
 					_resolveDatasetElementOptions: function() {
-						var e = this,
-							t = e._config,
-							n = e.chart.options,
-							a = ae.prototype._resolveDatasetElementOptions.apply(e, arguments);
-						return a.spanGaps = Ze(t.spanGaps, n.spanGaps), a.tension = Ze(t.lineTension, n.elements.line.tension), a
+						var t = this,
+							e = t._config,
+							n = t.chart.options,
+							i = it.prototype._resolveDatasetElementOptions.apply(t, arguments);
+						return i.spanGaps = Zt(e.spanGaps, n.spanGaps), i.tension = Zt(e.lineTension, n.elements.line.tension), i
 					},
 					updateBezierControlPoints: function() {
-						var e, t, n, a, r = this.getMeta(),
-							i = this.chart.chartArea,
-							s = r.data || [];
+						var t, e, n, i, a = this.getMeta(),
+							r = this.chart.chartArea,
+							o = a.data || [];
 
-						function o(e, t, n) {
-							return Math.max(Math.min(e, n), t)
+						function s(t, e, n) {
+							return Math.max(Math.min(t, n), e)
 						}
-						for (r.dataset._model.spanGaps && (s = s.filter((function(e) {
-								return !e._model.skip
-							}))), e = 0, t = s.length; e < t; ++e) n = s[e]._model, a = R.splineCurve(R.previousItem(s, e, !0)._model, n, R.nextItem(s, e, !0)._model, n.tension), n.controlPointPreviousX = o(a.previous.x, i.left, i.right), n.controlPointPreviousY = o(a.previous.y, i.top, i.bottom), n.controlPointNextX = o(a.next.x, i.left, i.right), n.controlPointNextY = o(a.next.y, i.top, i.bottom)
+						for (a.dataset._model.spanGaps && (o = o.filter((function(t) {
+								return !t._model.skip
+							}))), t = 0, e = o.length; t < e; ++t) n = o[t]._model, i = j.splineCurve(j.previousItem(o, t, !0)._model, n, j.nextItem(o, t, !0)._model, n.tension), n.controlPointPreviousX = s(i.previous.x, r.left, r.right), n.controlPointPreviousY = s(i.previous.y, r.top, r.bottom), n.controlPointNextX = s(i.next.x, r.left, r.right), n.controlPointNextY = s(i.next.y, r.top, r.bottom)
 					},
-					setHoverStyle: function(e) {
-						var t = e._model,
-							n = e._options,
-							a = R.getHoverColor;
-						e.$previousStyle = {
-							backgroundColor: t.backgroundColor,
-							borderColor: t.borderColor,
-							borderWidth: t.borderWidth,
-							radius: t.radius
-						}, t.backgroundColor = Ze(n.hoverBackgroundColor, a(n.backgroundColor)), t.borderColor = Ze(n.hoverBorderColor, a(n.borderColor)), t.borderWidth = Ze(n.hoverBorderWidth, n.borderWidth), t.radius = Ze(n.hoverRadius, n.radius)
+					setHoverStyle: function(t) {
+						var e = t._model,
+							n = t._options,
+							i = j.getHoverColor;
+						t.$previousStyle = {
+							backgroundColor: e.backgroundColor,
+							borderColor: e.borderColor,
+							borderWidth: e.borderWidth,
+							radius: e.radius
+						}, e.backgroundColor = Zt(n.hoverBackgroundColor, i(n.backgroundColor)), e.borderColor = Zt(n.hoverBorderColor, i(n.borderColor)), e.borderWidth = Zt(n.hoverBorderWidth, n.borderWidth), e.radius = Zt(n.hoverRadius, n.radius)
 					}
 				});
-				C._set("scatter", {
+				z._set("scatter", {
 					hover: {
 						mode: "single"
 					},
@@ -3161,198 +3161,198 @@
 							title: function() {
 								return ""
 							},
-							label: function(e) {
-								return "(" + e.xLabel + ", " + e.yLabel + ")"
+							label: function(t) {
+								return "(" + t.xLabel + ", " + t.yLabel + ")"
 							}
 						}
 					}
-				}), C._set("global", {
+				}), z._set("global", {
 					datasets: {
 						scatter: {
 							showLine: !1
 						}
 					}
 				});
-				var Xe = {
-					bar: He,
-					bubble: Oe,
-					doughnut: Ee,
-					horizontalBar: Ie,
-					line: Ue,
-					polarArea: qe,
-					pie: Ke,
-					radar: $e,
-					scatter: Ue
+				var Jt = {
+					bar: It,
+					bubble: Ot,
+					doughnut: Nt,
+					horizontalBar: Bt,
+					line: Yt,
+					polarArea: Gt,
+					pie: Xt,
+					radar: $t,
+					scatter: Yt
 				};
 
-				function Qe(e, t) {
-					return e.native ? {
-						x: e.x,
-						y: e.y
-					} : R.getRelativePosition(e, t)
+				function Qt(t, e) {
+					return t.native ? {
+						x: t.x,
+						y: t.y
+					} : j.getRelativePosition(t, e)
 				}
 
-				function et(e, t) {
-					var n, a, r, i, s, o, d = e._getSortedVisibleDatasetMetas();
-					for (a = 0, i = d.length; a < i; ++a)
-						for (r = 0, s = (n = d[a].data).length; r < s; ++r)(o = n[r])._view.skip || t(o)
+				function te(t, e) {
+					var n, i, a, r, o, s, l = t._getSortedVisibleDatasetMetas();
+					for (i = 0, r = l.length; i < r; ++i)
+						for (a = 0, o = (n = l[i].data).length; a < o; ++a)(s = n[a])._view.skip || e(s)
 				}
 
-				function tt(e, t) {
+				function ee(t, e) {
 					var n = [];
-					return et(e, (function(e) {
-						e.inRange(t.x, t.y) && n.push(e)
+					return te(t, (function(t) {
+						t.inRange(e.x, e.y) && n.push(t)
 					})), n
 				}
 
-				function nt(e, t, n, a) {
-					var r = Number.POSITIVE_INFINITY,
-						i = [];
-					return et(e, (function(e) {
-						if (!n || e.inRange(t.x, t.y)) {
-							var s = e.getCenterPoint(),
-								o = a(t, s);
-							o < r ? (i = [e], r = o) : o === r && i.push(e)
+				function ne(t, e, n, i) {
+					var a = Number.POSITIVE_INFINITY,
+						r = [];
+					return te(t, (function(t) {
+						if (!n || t.inRange(e.x, e.y)) {
+							var o = t.getCenterPoint(),
+								s = i(e, o);
+							s < a ? (r = [t], a = s) : s === a && r.push(t)
 						}
-					})), i
+					})), r
 				}
 
-				function at(e) {
-					var t = -1 !== e.indexOf("x"),
-						n = -1 !== e.indexOf("y");
-					return function(e, a) {
-						var r = t ? Math.abs(e.x - a.x) : 0,
-							i = n ? Math.abs(e.y - a.y) : 0;
-						return Math.sqrt(Math.pow(r, 2) + Math.pow(i, 2))
+				function ie(t) {
+					var e = -1 !== t.indexOf("x"),
+						n = -1 !== t.indexOf("y");
+					return function(t, i) {
+						var a = e ? Math.abs(t.x - i.x) : 0,
+							r = n ? Math.abs(t.y - i.y) : 0;
+						return Math.sqrt(Math.pow(a, 2) + Math.pow(r, 2))
 					}
 				}
 
-				function rt(e, t, n) {
-					var a = Qe(t, e);
+				function ae(t, e, n) {
+					var i = Qt(e, t);
 					n.axis = n.axis || "x";
-					var r = at(n.axis),
-						i = n.intersect ? tt(e, a) : nt(e, a, !1, r),
-						s = [];
-					return i.length ? (e._getSortedVisibleDatasetMetas().forEach((function(e) {
-						var t = e.data[i[0]._index];
-						t && !t._view.skip && s.push(t)
-					})), s) : []
+					var a = ie(n.axis),
+						r = n.intersect ? ee(t, i) : ne(t, i, !1, a),
+						o = [];
+					return r.length ? (t._getSortedVisibleDatasetMetas().forEach((function(t) {
+						var e = t.data[r[0]._index];
+						e && !e._view.skip && o.push(e)
+					})), o) : []
 				}
-				var it = {
+				var re = {
 						modes: {
-							single: function(e, t) {
-								var n = Qe(t, e),
-									a = [];
-								return et(e, (function(e) {
-									if (e.inRange(n.x, n.y)) return a.push(e), a
-								})), a.slice(0, 1)
+							single: function(t, e) {
+								var n = Qt(e, t),
+									i = [];
+								return te(t, (function(t) {
+									if (t.inRange(n.x, n.y)) return i.push(t), i
+								})), i.slice(0, 1)
 							},
-							label: rt,
-							index: rt,
-							dataset: function(e, t, n) {
-								var a = Qe(t, e);
+							label: ae,
+							index: ae,
+							dataset: function(t, e, n) {
+								var i = Qt(e, t);
 								n.axis = n.axis || "xy";
-								var r = at(n.axis),
-									i = n.intersect ? tt(e, a) : nt(e, a, !1, r);
-								return i.length > 0 && (i = e.getDatasetMeta(i[0]._datasetIndex).data), i
+								var a = ie(n.axis),
+									r = n.intersect ? ee(t, i) : ne(t, i, !1, a);
+								return r.length > 0 && (r = t.getDatasetMeta(r[0]._datasetIndex).data), r
 							},
-							"x-axis": function(e, t) {
-								return rt(e, t, {
+							"x-axis": function(t, e) {
+								return ae(t, e, {
 									intersect: !1
 								})
 							},
-							point: function(e, t) {
-								return tt(e, Qe(t, e))
+							point: function(t, e) {
+								return ee(t, Qt(e, t))
 							},
-							nearest: function(e, t, n) {
-								var a = Qe(t, e);
+							nearest: function(t, e, n) {
+								var i = Qt(e, t);
 								n.axis = n.axis || "xy";
-								var r = at(n.axis);
-								return nt(e, a, n.intersect, r)
+								var a = ie(n.axis);
+								return ne(t, i, n.intersect, a)
 							},
-							x: function(e, t, n) {
-								var a = Qe(t, e),
-									r = [],
-									i = !1;
-								return et(e, (function(e) {
-									e.inXRange(a.x) && r.push(e), e.inRange(a.x, a.y) && (i = !0)
-								})), n.intersect && !i && (r = []), r
+							x: function(t, e, n) {
+								var i = Qt(e, t),
+									a = [],
+									r = !1;
+								return te(t, (function(t) {
+									t.inXRange(i.x) && a.push(t), t.inRange(i.x, i.y) && (r = !0)
+								})), n.intersect && !r && (a = []), a
 							},
-							y: function(e, t, n) {
-								var a = Qe(t, e),
-									r = [],
-									i = !1;
-								return et(e, (function(e) {
-									e.inYRange(a.y) && r.push(e), e.inRange(a.x, a.y) && (i = !0)
-								})), n.intersect && !i && (r = []), r
+							y: function(t, e, n) {
+								var i = Qt(e, t),
+									a = [],
+									r = !1;
+								return te(t, (function(t) {
+									t.inYRange(i.y) && a.push(t), t.inRange(i.x, i.y) && (r = !0)
+								})), n.intersect && !r && (a = []), a
 							}
 						}
 					},
-					st = R.extend;
+					oe = j.extend;
 
-				function ot(e, t) {
-					return R.where(e, (function(e) {
-						return e.pos === t
+				function se(t, e) {
+					return j.where(t, (function(t) {
+						return t.pos === e
 					}))
 				}
 
-				function dt(e, t) {
-					return e.sort((function(e, n) {
-						var a = t ? n : e,
-							r = t ? e : n;
-						return a.weight === r.weight ? a.index - r.index : a.weight - r.weight
+				function le(t, e) {
+					return t.sort((function(t, n) {
+						var i = e ? n : t,
+							a = e ? t : n;
+						return i.weight === a.weight ? i.index - a.index : i.weight - a.weight
 					}))
 				}
 
-				function lt(e, t, n, a) {
-					return Math.max(e[n], t[n]) + Math.max(e[a], t[a])
+				function ue(t, e, n, i) {
+					return Math.max(t[n], e[n]) + Math.max(t[i], e[i])
 				}
 
-				function ut(e, t, n) {
-					var a, r, i = n.box,
-						s = e.maxPadding;
-					if (n.size && (e[n.pos] -= n.size), n.size = n.horizontal ? i.height : i.width, e[n.pos] += n.size, i.getPadding) {
-						var o = i.getPadding();
-						s.top = Math.max(s.top, o.top), s.left = Math.max(s.left, o.left), s.bottom = Math.max(s.bottom, o.bottom), s.right = Math.max(s.right, o.right)
+				function de(t, e, n) {
+					var i, a, r = n.box,
+						o = t.maxPadding;
+					if (n.size && (t[n.pos] -= n.size), n.size = n.horizontal ? r.height : r.width, t[n.pos] += n.size, r.getPadding) {
+						var s = r.getPadding();
+						o.top = Math.max(o.top, s.top), o.left = Math.max(o.left, s.left), o.bottom = Math.max(o.bottom, s.bottom), o.right = Math.max(o.right, s.right)
 					}
-					if (a = t.outerWidth - lt(s, e, "left", "right"), r = t.outerHeight - lt(s, e, "top", "bottom"), a !== e.w || r !== e.h) {
-						e.w = a, e.h = r;
-						var d = n.horizontal ? [a, e.w] : [r, e.h];
-						return !(d[0] === d[1] || isNaN(d[0]) && isNaN(d[1]))
+					if (i = e.outerWidth - ue(o, t, "left", "right"), a = e.outerHeight - ue(o, t, "top", "bottom"), i !== t.w || a !== t.h) {
+						t.w = i, t.h = a;
+						var l = n.horizontal ? [i, t.w] : [a, t.h];
+						return !(l[0] === l[1] || isNaN(l[0]) && isNaN(l[1]))
 					}
 				}
 
-				function _t(e, t) {
-					var n = t.maxPadding;
+				function ce(t, e) {
+					var n = e.maxPadding;
 
-					function a(e) {
-						var a = {
+					function i(t) {
+						var i = {
 							left: 0,
 							top: 0,
 							right: 0,
 							bottom: 0
 						};
-						return e.forEach((function(e) {
-							a[e] = Math.max(t[e], n[e])
-						})), a
+						return t.forEach((function(t) {
+							i[t] = Math.max(e[t], n[t])
+						})), i
 					}
-					return a(e ? ["left", "right"] : ["top", "bottom"])
+					return i(t ? ["left", "right"] : ["top", "bottom"])
 				}
 
-				function mt(e, t, n) {
-					var a, r, i, s, o, d, l = [];
-					for (a = 0, r = e.length; a < r; ++a)(s = (i = e[a]).box).update(i.width || t.w, i.height || t.h, _t(i.horizontal, t)), ut(t, n, i) && (d = !0, l.length && (o = !0)), s.fullWidth || l.push(i);
-					return o && mt(l, t, n) || d
+				function he(t, e, n) {
+					var i, a, r, o, s, l, u = [];
+					for (i = 0, a = t.length; i < a; ++i)(o = (r = t[i]).box).update(r.width || e.w, r.height || e.h, ce(r.horizontal, e)), de(e, n, r) && (l = !0, u.length && (s = !0)), o.fullWidth || u.push(r);
+					return s && he(u, e, n) || l
 				}
 
-				function ct(e, t, n) {
-					var a, r, i, s, o = n.padding,
-						d = t.x,
-						l = t.y;
-					for (a = 0, r = e.length; a < r; ++a) s = (i = e[a]).box, i.horizontal ? (s.left = s.fullWidth ? o.left : t.left, s.right = s.fullWidth ? n.outerWidth - o.right : t.left + t.w, s.top = l, s.bottom = l + s.height, s.width = s.right - s.left, l = s.bottom) : (s.left = d, s.right = d + s.width, s.top = t.top, s.bottom = t.top + t.h, s.height = s.bottom - s.top, d = s.right);
-					t.x = d, t.y = l
+				function fe(t, e, n) {
+					var i, a, r, o, s = n.padding,
+						l = e.x,
+						u = e.y;
+					for (i = 0, a = t.length; i < a; ++i) o = (r = t[i]).box, r.horizontal ? (o.left = o.fullWidth ? s.left : e.left, o.right = o.fullWidth ? n.outerWidth - s.right : e.left + e.w, o.top = u, o.bottom = u + o.height, o.width = o.right - o.left, u = o.bottom) : (o.left = l, o.right = l + o.width, o.top = e.top, o.bottom = e.top + e.h, o.height = o.bottom - o.top, l = o.right);
+					e.x = l, e.y = u
 				}
-				C._set("global", {
+				z._set("global", {
 					layout: {
 						padding: {
 							top: 0,
@@ -3362,105 +3362,105 @@
 						}
 					}
 				});
-				var ht, ft = {
+				var ge, pe = {
 						defaults: {},
-						addBox: function(e, t) {
-							e.boxes || (e.boxes = []), t.fullWidth = t.fullWidth || !1, t.position = t.position || "top", t.weight = t.weight || 0, t._layers = t._layers || function() {
+						addBox: function(t, e) {
+							t.boxes || (t.boxes = []), e.fullWidth = e.fullWidth || !1, e.position = e.position || "top", e.weight = e.weight || 0, e._layers = e._layers || function() {
 								return [{
 									z: 0,
 									draw: function() {
-										t.draw.apply(t, arguments)
+										e.draw.apply(e, arguments)
 									}
 								}]
-							}, e.boxes.push(t)
+							}, t.boxes.push(e)
 						},
-						removeBox: function(e, t) {
-							var n = e.boxes ? e.boxes.indexOf(t) : -1; - 1 !== n && e.boxes.splice(n, 1)
+						removeBox: function(t, e) {
+							var n = t.boxes ? t.boxes.indexOf(e) : -1; - 1 !== n && t.boxes.splice(n, 1)
 						},
-						configure: function(e, t, n) {
-							for (var a, r = ["fullWidth", "position", "weight"], i = r.length, s = 0; s < i; ++s) a = r[s], n.hasOwnProperty(a) && (t[a] = n[a])
+						configure: function(t, e, n) {
+							for (var i, a = ["fullWidth", "position", "weight"], r = a.length, o = 0; o < r; ++o) i = a[o], n.hasOwnProperty(i) && (e[i] = n[i])
 						},
-						update: function(e, t, n) {
-							if (e) {
-								var a = e.options.layout || {},
-									r = R.options.toPadding(a.padding),
-									i = t - r.width,
-									s = n - r.height,
-									o = function(e) {
-										var t = function(e) {
-												var t, n, a, r = [];
-												for (t = 0, n = (e || []).length; t < n; ++t) a = e[t], r.push({
-													index: t,
-													box: a,
-													pos: a.position,
-													horizontal: a.isHorizontal(),
-													weight: a.weight
+						update: function(t, e, n) {
+							if (t) {
+								var i = t.options.layout || {},
+									a = j.options.toPadding(i.padding),
+									r = e - a.width,
+									o = n - a.height,
+									s = function(t) {
+										var e = function(t) {
+												var e, n, i, a = [];
+												for (e = 0, n = (t || []).length; e < n; ++e) i = t[e], a.push({
+													index: e,
+													box: i,
+													pos: i.position,
+													horizontal: i.isHorizontal(),
+													weight: i.weight
 												});
-												return r
-											}(e),
-											n = dt(ot(t, "left"), !0),
-											a = dt(ot(t, "right")),
-											r = dt(ot(t, "top"), !0),
-											i = dt(ot(t, "bottom"));
+												return a
+											}(t),
+											n = le(se(e, "left"), !0),
+											i = le(se(e, "right")),
+											a = le(se(e, "top"), !0),
+											r = le(se(e, "bottom"));
 										return {
-											leftAndTop: n.concat(r),
-											rightAndBottom: a.concat(i),
-											chartArea: ot(t, "chartArea"),
-											vertical: n.concat(a),
-											horizontal: r.concat(i)
+											leftAndTop: n.concat(a),
+											rightAndBottom: i.concat(r),
+											chartArea: se(e, "chartArea"),
+											vertical: n.concat(i),
+											horizontal: a.concat(r)
 										}
-									}(e.boxes),
-									d = o.vertical,
-									l = o.horizontal,
-									u = Object.freeze({
-										outerWidth: t,
+									}(t.boxes),
+									l = s.vertical,
+									u = s.horizontal,
+									d = Object.freeze({
+										outerWidth: e,
 										outerHeight: n,
-										padding: r,
-										availableWidth: i,
-										vBoxMaxWidth: i / 2 / d.length,
-										hBoxMaxHeight: s / 2
+										padding: a,
+										availableWidth: r,
+										vBoxMaxWidth: r / 2 / l.length,
+										hBoxMaxHeight: o / 2
 									}),
-									_ = st({
-										maxPadding: st({}, r),
-										w: i,
-										h: s,
-										x: r.left,
-										y: r.top
-									}, r);
-								! function(e, t) {
-									var n, a, r;
-									for (n = 0, a = e.length; n < a; ++n)(r = e[n]).width = r.horizontal ? r.box.fullWidth && t.availableWidth : t.vBoxMaxWidth, r.height = r.horizontal && t.hBoxMaxHeight
-								}(d.concat(l), u), mt(d, _, u), mt(l, _, u) && mt(d, _, u),
-									function(e) {
-										var t = e.maxPadding;
+									c = oe({
+										maxPadding: oe({}, a),
+										w: r,
+										h: o,
+										x: a.left,
+										y: a.top
+									}, a);
+								! function(t, e) {
+									var n, i, a;
+									for (n = 0, i = t.length; n < i; ++n)(a = t[n]).width = a.horizontal ? a.box.fullWidth && e.availableWidth : e.vBoxMaxWidth, a.height = a.horizontal && e.hBoxMaxHeight
+								}(l.concat(u), d), he(l, c, d), he(u, c, d) && he(l, c, d),
+									function(t) {
+										var e = t.maxPadding;
 
 										function n(n) {
-											var a = Math.max(t[n] - e[n], 0);
-											return e[n] += a, a
+											var i = Math.max(e[n] - t[n], 0);
+											return t[n] += i, i
 										}
-										e.y += n("top"), e.x += n("left"), n("right"), n("bottom")
-									}(_), ct(o.leftAndTop, _, u), _.x += _.w, _.y += _.h, ct(o.rightAndBottom, _, u), e.chartArea = {
-										left: _.left,
-										top: _.top,
-										right: _.left + _.w,
-										bottom: _.top + _.h
-									}, R.each(o.chartArea, (function(t) {
-										var n = t.box;
-										st(n, e.chartArea), n.update(_.w, _.h)
+										t.y += n("top"), t.x += n("left"), n("right"), n("bottom")
+									}(c), fe(s.leftAndTop, c, d), c.x += c.w, c.y += c.h, fe(s.rightAndBottom, c, d), t.chartArea = {
+										left: c.left,
+										top: c.top,
+										right: c.left + c.w,
+										bottom: c.top + c.h
+									}, j.each(s.chartArea, (function(e) {
+										var n = e.box;
+										oe(n, t.chartArea), n.update(c.w, c.h)
 									}))
 							}
 						}
 					},
-					pt = (ht = Object.freeze({
+					me = (ge = Object.freeze({
 						__proto__: null,
 						default: "/*\r\n * DOM element rendering detection\r\n * https://davidwalsh.name/detect-node-insertion\r\n */\r\n@keyframes chartjs-render-animation {\r\n\tfrom { opacity: 0.99; }\r\n\tto { opacity: 1; }\r\n}\r\n\r\n.chartjs-render-monitor {\r\n\tanimation: chartjs-render-animation 0.001s;\r\n}\r\n\r\n/*\r\n * DOM element resizing detection\r\n * https://github.com/marcj/css-element-queries\r\n */\r\n.chartjs-size-monitor,\r\n.chartjs-size-monitor-expand,\r\n.chartjs-size-monitor-shrink {\r\n\tposition: absolute;\r\n\tdirection: ltr;\r\n\tleft: 0;\r\n\ttop: 0;\r\n\tright: 0;\r\n\tbottom: 0;\r\n\toverflow: hidden;\r\n\tpointer-events: none;\r\n\tvisibility: hidden;\r\n\tz-index: -1;\r\n}\r\n\r\n.chartjs-size-monitor-expand > div {\r\n\tposition: absolute;\r\n\twidth: 1000000px;\r\n\theight: 1000000px;\r\n\tleft: 0;\r\n\ttop: 0;\r\n}\r\n\r\n.chartjs-size-monitor-shrink > div {\r\n\tposition: absolute;\r\n\twidth: 200%;\r\n\theight: 200%;\r\n\tleft: 0;\r\n\ttop: 0;\r\n}\r\n"
-					})) && ht.default || ht,
-					Mt = "$chartjs",
-					yt = "chartjs-size-monitor",
-					gt = "chartjs-render-monitor",
-					Lt = "chartjs-render-animation",
-					Yt = ["animationstart", "webkitAnimationStart"],
-					vt = {
+					})) && ge.default || ge,
+					ve = "$chartjs",
+					be = "chartjs-size-monitor",
+					ye = "chartjs-render-monitor",
+					xe = "chartjs-render-animation",
+					_e = ["animationstart", "webkitAnimationStart"],
+					ke = {
 						touchstart: "mousedown",
 						touchmove: "mousemove",
 						touchend: "mouseup",
@@ -3472,208 +3472,208 @@
 						pointerout: "mouseout"
 					};
 
-				function kt(e, t) {
-					var n = R.getStyle(e, t),
-						a = n && n.match(/^(\d+)(\.\d+)?px$/);
-					return a ? Number(a[1]) : void 0
+				function we(t, e) {
+					var n = j.getStyle(t, e),
+						i = n && n.match(/^(\d+)(\.\d+)?px$/);
+					return i ? Number(i[1]) : void 0
 				}
-				var bt = !! function() {
-					var e = !1;
+				var Me = !! function() {
+					var t = !1;
 					try {
-						var t = Object.defineProperty({}, "passive", {
+						var e = Object.defineProperty({}, "passive", {
 							get: function() {
-								e = !0
+								t = !0
 							}
 						});
-						window.addEventListener("e", null, t)
+						window.addEventListener("e", null, e)
 					} catch (n) {}
-					return e
+					return t
 				}() && {
 					passive: !0
 				};
 
-				function Dt(e, t, n) {
-					e.addEventListener(t, n, bt)
+				function Ce(t, e, n) {
+					t.addEventListener(e, n, Me)
 				}
 
-				function wt(e, t, n) {
-					e.removeEventListener(t, n, bt)
+				function Se(t, e, n) {
+					t.removeEventListener(e, n, Me)
 				}
 
-				function Tt(e, t, n, a, r) {
+				function Pe(t, e, n, i, a) {
 					return {
-						type: e,
-						chart: t,
-						native: r || null,
+						type: t,
+						chart: e,
+						native: a || null,
 						x: void 0 !== n ? n : null,
-						y: void 0 !== a ? a : null
+						y: void 0 !== i ? i : null
 					}
 				}
 
-				function xt(e) {
-					var t = document.createElement("div");
-					return t.className = e || "", t
+				function Ae(t) {
+					var e = document.createElement("div");
+					return e.className = t || "", e
 				}
 
-				function St(e, t, n) {
-					var a, r, i, s, o = e[Mt] || (e[Mt] = {}),
-						d = o.resizer = function(e) {
-							var t = xt(yt),
-								n = xt(yt + "-expand"),
-								a = xt(yt + "-shrink");
-							n.appendChild(xt()), a.appendChild(xt()), t.appendChild(n), t.appendChild(a), t._reset = function() {
-								n.scrollLeft = 1e6, n.scrollTop = 1e6, a.scrollLeft = 1e6, a.scrollTop = 1e6
+				function De(t, e, n) {
+					var i, a, r, o, s = t[ve] || (t[ve] = {}),
+						l = s.resizer = function(t) {
+							var e = Ae(be),
+								n = Ae(be + "-expand"),
+								i = Ae(be + "-shrink");
+							n.appendChild(Ae()), i.appendChild(Ae()), e.appendChild(n), e.appendChild(i), e._reset = function() {
+								n.scrollLeft = 1e6, n.scrollTop = 1e6, i.scrollLeft = 1e6, i.scrollTop = 1e6
 							};
-							var r = function() {
-								t._reset(), e()
+							var a = function() {
+								e._reset(), t()
 							};
-							return Dt(n, "scroll", r.bind(n, "expand")), Dt(a, "scroll", r.bind(a, "shrink")), t
-						}((a = function() {
-							if (o.resizer) {
-								var a = n.options.maintainAspectRatio && e.parentNode,
-									r = a ? a.clientWidth : 0;
-								t(Tt("resize", n)), a && a.clientWidth < r && n.canvas && t(Tt("resize", n))
+							return Ce(n, "scroll", a.bind(n, "expand")), Ce(i, "scroll", a.bind(i, "shrink")), e
+						}((i = function() {
+							if (s.resizer) {
+								var i = n.options.maintainAspectRatio && t.parentNode,
+									a = i ? i.clientWidth : 0;
+								e(Pe("resize", n)), i && i.clientWidth < a && n.canvas && e(Pe("resize", n))
 							}
-						}, i = !1, s = [], function() {
-							s = Array.prototype.slice.call(arguments), r = r || this, i || (i = !0, R.requestAnimFrame.call(window, (function() {
-								i = !1, a.apply(r, s)
+						}, r = !1, o = [], function() {
+							o = Array.prototype.slice.call(arguments), a = a || this, r || (r = !0, j.requestAnimFrame.call(window, (function() {
+								r = !1, i.apply(a, o)
 							})))
 						}));
-					! function(e, t) {
-						var n = e[Mt] || (e[Mt] = {}),
-							a = n.renderProxy = function(e) {
-								e.animationName === Lt && t()
+					! function(t, e) {
+						var n = t[ve] || (t[ve] = {}),
+							i = n.renderProxy = function(t) {
+								t.animationName === xe && e()
 							};
-						R.each(Yt, (function(t) {
-							Dt(e, t, a)
-						})), n.reflow = !!e.offsetParent, e.classList.add(gt)
-					}(e, (function() {
-						if (o.resizer) {
-							var t = e.parentNode;
-							t && t !== d.parentNode && t.insertBefore(d, t.firstChild), d._reset()
+						j.each(_e, (function(e) {
+							Ce(t, e, i)
+						})), n.reflow = !!t.offsetParent, t.classList.add(ye)
+					}(t, (function() {
+						if (s.resizer) {
+							var e = t.parentNode;
+							e && e !== l.parentNode && e.insertBefore(l, e.firstChild), l._reset()
 						}
 					}))
 				}
 
-				function Ht(e) {
-					var t = e[Mt] || {},
-						n = t.resizer;
-					delete t.resizer,
-						function(e) {
-							var t = e[Mt] || {},
-								n = t.renderProxy;
-							n && (R.each(Yt, (function(t) {
-								wt(e, t, n)
-							})), delete t.renderProxy), e.classList.remove(gt)
-						}(e), n && n.parentNode && n.parentNode.removeChild(n)
+				function Ie(t) {
+					var e = t[ve] || {},
+						n = e.resizer;
+					delete e.resizer,
+						function(t) {
+							var e = t[ve] || {},
+								n = e.renderProxy;
+							n && (j.each(_e, (function(e) {
+								Se(t, e, n)
+							})), delete e.renderProxy), t.classList.remove(ye)
+						}(t), n && n.parentNode && n.parentNode.removeChild(n)
 				}
-				var jt = {
+				var Te = {
 					disableCSSInjection: !1,
 					_enabled: "undefined" != typeof window && "undefined" != typeof document,
-					_ensureLoaded: function(e) {
+					_ensureLoaded: function(t) {
 						if (!this.disableCSSInjection) {
-							var t = e.getRootNode ? e.getRootNode() : document;
-							! function(e, t) {
-								var n = e[Mt] || (e[Mt] = {});
+							var e = t.getRootNode ? t.getRootNode() : document;
+							! function(t, e) {
+								var n = t[ve] || (t[ve] = {});
 								if (!n.containsStyles) {
-									n.containsStyles = !0, t = "/* Chart.js */\n" + t;
-									var a = document.createElement("style");
-									a.setAttribute("type", "text/css"), a.appendChild(document.createTextNode(t)), e.appendChild(a)
+									n.containsStyles = !0, e = "/* Chart.js */\n" + e;
+									var i = document.createElement("style");
+									i.setAttribute("type", "text/css"), i.appendChild(document.createTextNode(e)), t.appendChild(i)
 								}
-							}(t.host ? t : document.head, pt)
+							}(e.host ? e : document.head, me)
 						}
 					},
-					acquireContext: function(e, t) {
-						"string" == typeof e ? e = document.getElementById(e) : e.length && (e = e[0]), e && e.canvas && (e = e.canvas);
-						var n = e && e.getContext && e.getContext("2d");
-						return n && n.canvas === e ? (this._ensureLoaded(e), function(e, t) {
-							var n = e.style,
-								a = e.getAttribute("height"),
-								r = e.getAttribute("width");
-							if (e[Mt] = {
+					acquireContext: function(t, e) {
+						"string" == typeof t ? t = document.getElementById(t) : t.length && (t = t[0]), t && t.canvas && (t = t.canvas);
+						var n = t && t.getContext && t.getContext("2d");
+						return n && n.canvas === t ? (this._ensureLoaded(t), function(t, e) {
+							var n = t.style,
+								i = t.getAttribute("height"),
+								a = t.getAttribute("width");
+							if (t[ve] = {
 									initial: {
-										height: a,
-										width: r,
+										height: i,
+										width: a,
 										style: {
 											display: n.display,
 											height: n.height,
 											width: n.width
 										}
 									}
-								}, n.display = n.display || "block", null === r || "" === r) {
-								var i = kt(e, "width");
-								void 0 !== i && (e.width = i)
+								}, n.display = n.display || "block", null === a || "" === a) {
+								var r = we(t, "width");
+								void 0 !== r && (t.width = r)
 							}
-							if (null === a || "" === a)
-								if ("" === e.style.height) e.height = e.width / (t.options.aspectRatio || 2);
+							if (null === i || "" === i)
+								if ("" === t.style.height) t.height = t.width / (e.options.aspectRatio || 2);
 								else {
-									var s = kt(e, "height");
-									void 0 !== i && (e.height = s)
+									var o = we(t, "height");
+									void 0 !== r && (t.height = o)
 								}
-						}(e, t), n) : null
+						}(t, e), n) : null
 					},
-					releaseContext: function(e) {
-						var t = e.canvas;
-						if (t[Mt]) {
-							var n = t[Mt].initial;
-							["height", "width"].forEach((function(e) {
-								var a = n[e];
-								R.isNullOrUndef(a) ? t.removeAttribute(e) : t.setAttribute(e, a)
-							})), R.each(n.style || {}, (function(e, n) {
-								t.style[n] = e
-							})), t.width = t.width, delete t[Mt]
+					releaseContext: function(t) {
+						var e = t.canvas;
+						if (e[ve]) {
+							var n = e[ve].initial;
+							["height", "width"].forEach((function(t) {
+								var i = n[t];
+								j.isNullOrUndef(i) ? e.removeAttribute(t) : e.setAttribute(t, i)
+							})), j.each(n.style || {}, (function(t, n) {
+								e.style[n] = t
+							})), e.width = e.width, delete e[ve]
 						}
 					},
-					addEventListener: function(e, t, n) {
-						var a = e.canvas;
-						if ("resize" !== t) {
-							var r = n[Mt] || (n[Mt] = {});
-							Dt(a, t, (r.proxies || (r.proxies = {}))[e.id + "_" + t] = function(t) {
-								n(function(e, t) {
-									var n = vt[e.type] || e.type,
-										a = R.getRelativePosition(e, t);
-									return Tt(n, t, a.x, a.y, e)
-								}(t, e))
+					addEventListener: function(t, e, n) {
+						var i = t.canvas;
+						if ("resize" !== e) {
+							var a = n[ve] || (n[ve] = {});
+							Ce(i, e, (a.proxies || (a.proxies = {}))[t.id + "_" + e] = function(e) {
+								n(function(t, e) {
+									var n = ke[t.type] || t.type,
+										i = j.getRelativePosition(t, e);
+									return Pe(n, e, i.x, i.y, t)
+								}(e, t))
 							})
-						} else St(a, n, e)
+						} else De(i, n, t)
 					},
-					removeEventListener: function(e, t, n) {
-						var a = e.canvas;
-						if ("resize" !== t) {
-							var r = ((n[Mt] || {}).proxies || {})[e.id + "_" + t];
-							r && wt(a, t, r)
-						} else Ht(a)
+					removeEventListener: function(t, e, n) {
+						var i = t.canvas;
+						if ("resize" !== e) {
+							var a = ((n[ve] || {}).proxies || {})[t.id + "_" + e];
+							a && Se(i, e, a)
+						} else Ie(i)
 					}
 				};
-				R.addEvent = Dt, R.removeEvent = wt;
-				var Pt = jt._enabled ? jt : {
-						acquireContext: function(e) {
-							return e && e.canvas && (e = e.canvas), e && e.getContext("2d") || null
+				j.addEvent = Ce, j.removeEvent = Se;
+				var Fe = Te._enabled ? Te : {
+						acquireContext: function(t) {
+							return t && t.canvas && (t = t.canvas), t && t.getContext("2d") || null
 						}
 					},
-					Ot = R.extend({
+					Oe = j.extend({
 						initialize: function() {},
 						acquireContext: function() {},
 						releaseContext: function() {},
 						addEventListener: function() {},
 						removeEventListener: function() {}
-					}, Pt);
-				C._set("global", {
+					}, Fe);
+				z._set("global", {
 					plugins: {}
 				});
-				var At = {
+				var Le = {
 						_plugins: [],
 						_cacheId: 0,
-						register: function(e) {
-							var t = this._plugins;
-							[].concat(e).forEach((function(e) {
-								-1 === t.indexOf(e) && t.push(e)
+						register: function(t) {
+							var e = this._plugins;
+							[].concat(t).forEach((function(t) {
+								-1 === e.indexOf(t) && e.push(t)
 							})), this._cacheId++
 						},
-						unregister: function(e) {
-							var t = this._plugins;
-							[].concat(e).forEach((function(e) {
-								var n = t.indexOf(e); - 1 !== n && t.splice(n, 1)
+						unregister: function(t) {
+							var e = this._plugins;
+							[].concat(t).forEach((function(t) {
+								var n = e.indexOf(t); - 1 !== n && e.splice(n, 1)
 							})), this._cacheId++
 						},
 						clear: function() {
@@ -3685,59 +3685,59 @@
 						getAll: function() {
 							return this._plugins
 						},
-						notify: function(e, t, n) {
-							var a, r, i, s, o, d = this.descriptors(e),
-								l = d.length;
-							for (a = 0; a < l; ++a)
-								if ("function" == typeof(o = (i = (r = d[a]).plugin)[t]) && ((s = [e].concat(n || [])).push(r.options), !1 === o.apply(i, s))) return !1;
+						notify: function(t, e, n) {
+							var i, a, r, o, s, l = this.descriptors(t),
+								u = l.length;
+							for (i = 0; i < u; ++i)
+								if ("function" == typeof(s = (r = (a = l[i]).plugin)[e]) && ((o = [t].concat(n || [])).push(a.options), !1 === s.apply(r, o))) return !1;
 							return !0
 						},
-						descriptors: function(e) {
-							var t = e.$plugins || (e.$plugins = {});
-							if (t.id === this._cacheId) return t.descriptors;
+						descriptors: function(t) {
+							var e = t.$plugins || (t.$plugins = {});
+							if (e.id === this._cacheId) return e.descriptors;
 							var n = [],
-								a = [],
-								r = e && e.config || {},
-								i = r.options && r.options.plugins || {};
-							return this._plugins.concat(r.plugins || []).forEach((function(e) {
-								if (-1 === n.indexOf(e)) {
-									var t = e.id,
-										r = i[t];
-									!1 !== r && (!0 === r && (r = R.clone(C.global.plugins[t])), n.push(e), a.push({
-										plugin: e,
-										options: r || {}
+								i = [],
+								a = t && t.config || {},
+								r = a.options && a.options.plugins || {};
+							return this._plugins.concat(a.plugins || []).forEach((function(t) {
+								if (-1 === n.indexOf(t)) {
+									var e = t.id,
+										a = r[e];
+									!1 !== a && (!0 === a && (a = j.clone(z.global.plugins[e])), n.push(t), i.push({
+										plugin: t,
+										options: a || {}
 									}))
 								}
-							})), t.descriptors = a, t.id = this._cacheId, a
+							})), e.descriptors = i, e.id = this._cacheId, i
 						},
-						_invalidate: function(e) {
-							delete e.$plugins
+						_invalidate: function(t) {
+							delete t.$plugins
 						}
 					},
-					Ft = {
+					Re = {
 						constructors: {},
 						defaults: {},
-						registerScaleType: function(e, t, n) {
-							this.constructors[e] = t, this.defaults[e] = R.clone(n)
+						registerScaleType: function(t, e, n) {
+							this.constructors[t] = e, this.defaults[t] = j.clone(n)
 						},
-						getScaleConstructor: function(e) {
-							return this.constructors.hasOwnProperty(e) ? this.constructors[e] : void 0
+						getScaleConstructor: function(t) {
+							return this.constructors.hasOwnProperty(t) ? this.constructors[t] : void 0
 						},
-						getScaleDefaults: function(e) {
-							return this.defaults.hasOwnProperty(e) ? R.merge(Object.create(null), [C.scale, this.defaults[e]]) : {}
+						getScaleDefaults: function(t) {
+							return this.defaults.hasOwnProperty(t) ? j.merge(Object.create(null), [z.scale, this.defaults[t]]) : {}
 						},
-						updateScaleDefaults: function(e, t) {
-							this.defaults.hasOwnProperty(e) && (this.defaults[e] = R.extend(this.defaults[e], t))
+						updateScaleDefaults: function(t, e) {
+							this.defaults.hasOwnProperty(t) && (this.defaults[t] = j.extend(this.defaults[t], e))
 						},
-						addScalesToLayout: function(e) {
-							R.each(e.scales, (function(t) {
-								t.fullWidth = t.options.fullWidth, t.position = t.options.position, t.weight = t.options.weight, ft.addBox(e, t)
+						addScalesToLayout: function(t) {
+							j.each(t.scales, (function(e) {
+								e.fullWidth = e.options.fullWidth, e.position = e.options.position, e.weight = e.options.weight, pe.addBox(t, e)
 							}))
 						}
 					},
-					Wt = R.valueOrDefault,
-					Ct = R.rtl.getRtlAdapter;
-				C._set("global", {
+					Ee = j.valueOrDefault,
+					ze = j.rtl.getRtlAdapter;
+				z._set("global", {
 					tooltips: {
 						enabled: !0,
 						custom: null,
@@ -3768,26 +3768,26 @@
 						borderColor: "rgba(0,0,0,0)",
 						borderWidth: 0,
 						callbacks: {
-							beforeTitle: R.noop,
-							title: function(e, t) {
+							beforeTitle: j.noop,
+							title: function(t, e) {
 								var n = "",
-									a = t.labels,
-									r = a ? a.length : 0;
-								if (e.length > 0) {
-									var i = e[0];
-									i.label ? n = i.label : i.xLabel ? n = i.xLabel : r > 0 && i.index < r && (n = a[i.index])
+									i = e.labels,
+									a = i ? i.length : 0;
+								if (t.length > 0) {
+									var r = t[0];
+									r.label ? n = r.label : r.xLabel ? n = r.xLabel : a > 0 && r.index < a && (n = i[r.index])
 								}
 								return n
 							},
-							afterTitle: R.noop,
-							beforeBody: R.noop,
-							beforeLabel: R.noop,
-							label: function(e, t) {
-								var n = t.datasets[e.datasetIndex].label || "";
-								return n && (n += ": "), R.isNullOrUndef(e.value) ? n += e.yLabel : n += e.value, n
+							afterTitle: j.noop,
+							beforeBody: j.noop,
+							beforeLabel: j.noop,
+							label: function(t, e) {
+								var n = e.datasets[t.datasetIndex].label || "";
+								return n && (n += ": "), j.isNullOrUndef(t.value) ? n += t.yLabel : n += t.value, n
 							},
-							labelColor: function(e, t) {
-								var n = t.getDatasetMeta(e.datasetIndex).data[e.index]._view;
+							labelColor: function(t, e) {
+								var n = e.getDatasetMeta(t.datasetIndex).data[t.index]._view;
 								return {
 									borderColor: n.borderColor,
 									backgroundColor: n.backgroundColor
@@ -3796,431 +3796,431 @@
 							labelTextColor: function() {
 								return this._options.bodyFontColor
 							},
-							afterLabel: R.noop,
-							afterBody: R.noop,
-							beforeFooter: R.noop,
-							footer: R.noop,
-							afterFooter: R.noop
+							afterLabel: j.noop,
+							afterBody: j.noop,
+							beforeFooter: j.noop,
+							footer: j.noop,
+							afterFooter: j.noop
 						}
 					}
 				});
-				var Et = {
-					average: function(e) {
-						if (!e.length) return !1;
-						var t, n, a = 0,
-							r = 0,
-							i = 0;
-						for (t = 0, n = e.length; t < n; ++t) {
-							var s = e[t];
-							if (s && s.hasValue()) {
-								var o = s.tooltipPosition();
-								a += o.x, r += o.y, ++i
+				var Ne = {
+					average: function(t) {
+						if (!t.length) return !1;
+						var e, n, i = 0,
+							a = 0,
+							r = 0;
+						for (e = 0, n = t.length; e < n; ++e) {
+							var o = t[e];
+							if (o && o.hasValue()) {
+								var s = o.tooltipPosition();
+								i += s.x, a += s.y, ++r
 							}
 						}
 						return {
-							x: a / i,
-							y: r / i
+							x: i / r,
+							y: a / r
 						}
 					},
-					nearest: function(e, t) {
-						var n, a, r, i = t.x,
-							s = t.y,
-							o = Number.POSITIVE_INFINITY;
-						for (n = 0, a = e.length; n < a; ++n) {
-							var d = e[n];
-							if (d && d.hasValue()) {
-								var l = d.getCenterPoint(),
-									u = R.distanceBetweenPoints(t, l);
-								u < o && (o = u, r = d)
+					nearest: function(t, e) {
+						var n, i, a, r = e.x,
+							o = e.y,
+							s = Number.POSITIVE_INFINITY;
+						for (n = 0, i = t.length; n < i; ++n) {
+							var l = t[n];
+							if (l && l.hasValue()) {
+								var u = l.getCenterPoint(),
+									d = j.distanceBetweenPoints(e, u);
+								d < s && (s = d, a = l)
 							}
 						}
-						if (r) {
-							var _ = r.tooltipPosition();
-							i = _.x, s = _.y
+						if (a) {
+							var c = a.tooltipPosition();
+							r = c.x, o = c.y
 						}
 						return {
-							x: i,
-							y: s
+							x: r,
+							y: o
 						}
 					}
 				};
 
-				function It(e, t) {
-					return t && (R.isArray(t) ? Array.prototype.push.apply(e, t) : e.push(t)), e
+				function Be(t, e) {
+					return e && (j.isArray(e) ? Array.prototype.push.apply(t, e) : t.push(e)), t
 				}
 
-				function zt(e) {
-					return ("string" == typeof e || e instanceof String) && e.indexOf("\n") > -1 ? e.split("\n") : e
+				function We(t) {
+					return ("string" == typeof t || t instanceof String) && t.indexOf("\n") > -1 ? t.split("\n") : t
 				}
 
-				function Nt(e) {
-					var t = C.global;
+				function Ve(t) {
+					var e = z.global;
 					return {
-						xPadding: e.xPadding,
-						yPadding: e.yPadding,
-						xAlign: e.xAlign,
-						yAlign: e.yAlign,
-						rtl: e.rtl,
-						textDirection: e.textDirection,
-						bodyFontColor: e.bodyFontColor,
-						_bodyFontFamily: Wt(e.bodyFontFamily, t.defaultFontFamily),
-						_bodyFontStyle: Wt(e.bodyFontStyle, t.defaultFontStyle),
-						_bodyAlign: e.bodyAlign,
-						bodyFontSize: Wt(e.bodyFontSize, t.defaultFontSize),
-						bodySpacing: e.bodySpacing,
-						titleFontColor: e.titleFontColor,
-						_titleFontFamily: Wt(e.titleFontFamily, t.defaultFontFamily),
-						_titleFontStyle: Wt(e.titleFontStyle, t.defaultFontStyle),
-						titleFontSize: Wt(e.titleFontSize, t.defaultFontSize),
-						_titleAlign: e.titleAlign,
-						titleSpacing: e.titleSpacing,
-						titleMarginBottom: e.titleMarginBottom,
-						footerFontColor: e.footerFontColor,
-						_footerFontFamily: Wt(e.footerFontFamily, t.defaultFontFamily),
-						_footerFontStyle: Wt(e.footerFontStyle, t.defaultFontStyle),
-						footerFontSize: Wt(e.footerFontSize, t.defaultFontSize),
-						_footerAlign: e.footerAlign,
-						footerSpacing: e.footerSpacing,
-						footerMarginTop: e.footerMarginTop,
-						caretSize: e.caretSize,
-						cornerRadius: e.cornerRadius,
-						backgroundColor: e.backgroundColor,
+						xPadding: t.xPadding,
+						yPadding: t.yPadding,
+						xAlign: t.xAlign,
+						yAlign: t.yAlign,
+						rtl: t.rtl,
+						textDirection: t.textDirection,
+						bodyFontColor: t.bodyFontColor,
+						_bodyFontFamily: Ee(t.bodyFontFamily, e.defaultFontFamily),
+						_bodyFontStyle: Ee(t.bodyFontStyle, e.defaultFontStyle),
+						_bodyAlign: t.bodyAlign,
+						bodyFontSize: Ee(t.bodyFontSize, e.defaultFontSize),
+						bodySpacing: t.bodySpacing,
+						titleFontColor: t.titleFontColor,
+						_titleFontFamily: Ee(t.titleFontFamily, e.defaultFontFamily),
+						_titleFontStyle: Ee(t.titleFontStyle, e.defaultFontStyle),
+						titleFontSize: Ee(t.titleFontSize, e.defaultFontSize),
+						_titleAlign: t.titleAlign,
+						titleSpacing: t.titleSpacing,
+						titleMarginBottom: t.titleMarginBottom,
+						footerFontColor: t.footerFontColor,
+						_footerFontFamily: Ee(t.footerFontFamily, e.defaultFontFamily),
+						_footerFontStyle: Ee(t.footerFontStyle, e.defaultFontStyle),
+						footerFontSize: Ee(t.footerFontSize, e.defaultFontSize),
+						_footerAlign: t.footerAlign,
+						footerSpacing: t.footerSpacing,
+						footerMarginTop: t.footerMarginTop,
+						caretSize: t.caretSize,
+						cornerRadius: t.cornerRadius,
+						backgroundColor: t.backgroundColor,
 						opacity: 0,
-						legendColorBackground: e.multiKeyBackground,
-						displayColors: e.displayColors,
-						borderColor: e.borderColor,
-						borderWidth: e.borderWidth
+						legendColorBackground: t.multiKeyBackground,
+						displayColors: t.displayColors,
+						borderColor: t.borderColor,
+						borderWidth: t.borderWidth
 					}
 				}
 
-				function Rt(e, t) {
-					return "center" === t ? e.x + e.width / 2 : "right" === t ? e.x + e.width - e.xPadding : e.x + e.xPadding
+				function je(t, e) {
+					return "center" === e ? t.x + t.width / 2 : "right" === e ? t.x + t.width - t.xPadding : t.x + t.xPadding
 				}
 
-				function Vt(e) {
-					return It([], zt(e))
+				function He(t) {
+					return Be([], We(t))
 				}
-				var Bt = K.extend({
+				var qe = X.extend({
 						initialize: function() {
-							this._model = Nt(this._options), this._lastActive = []
+							this._model = Ve(this._options), this._lastActive = []
 						},
 						getTitle: function() {
-							var e = this,
-								t = e._options,
-								n = t.callbacks,
-								a = n.beforeTitle.apply(e, arguments),
-								r = n.title.apply(e, arguments),
-								i = n.afterTitle.apply(e, arguments),
-								s = [];
-							return s = It(s, zt(a)), s = It(s, zt(r)), s = It(s, zt(i))
+							var t = this,
+								e = t._options,
+								n = e.callbacks,
+								i = n.beforeTitle.apply(t, arguments),
+								a = n.title.apply(t, arguments),
+								r = n.afterTitle.apply(t, arguments),
+								o = [];
+							return o = Be(o, We(i)), o = Be(o, We(a)), o = Be(o, We(r))
 						},
 						getBeforeBody: function() {
-							return Vt(this._options.callbacks.beforeBody.apply(this, arguments))
+							return He(this._options.callbacks.beforeBody.apply(this, arguments))
 						},
-						getBody: function(e, t) {
+						getBody: function(t, e) {
 							var n = this,
-								a = n._options.callbacks,
-								r = [];
-							return R.each(e, (function(e) {
-								var i = {
+								i = n._options.callbacks,
+								a = [];
+							return j.each(t, (function(t) {
+								var r = {
 									before: [],
 									lines: [],
 									after: []
 								};
-								It(i.before, zt(a.beforeLabel.call(n, e, t))), It(i.lines, a.label.call(n, e, t)), It(i.after, zt(a.afterLabel.call(n, e, t))), r.push(i)
-							})), r
+								Be(r.before, We(i.beforeLabel.call(n, t, e))), Be(r.lines, i.label.call(n, t, e)), Be(r.after, We(i.afterLabel.call(n, t, e))), a.push(r)
+							})), a
 						},
 						getAfterBody: function() {
-							return Vt(this._options.callbacks.afterBody.apply(this, arguments))
+							return He(this._options.callbacks.afterBody.apply(this, arguments))
 						},
 						getFooter: function() {
-							var e = this,
-								t = e._options.callbacks,
-								n = t.beforeFooter.apply(e, arguments),
-								a = t.footer.apply(e, arguments),
-								r = t.afterFooter.apply(e, arguments),
-								i = [];
-							return i = It(i, zt(n)), i = It(i, zt(a)), i = It(i, zt(r))
+							var t = this,
+								e = t._options.callbacks,
+								n = e.beforeFooter.apply(t, arguments),
+								i = e.footer.apply(t, arguments),
+								a = e.afterFooter.apply(t, arguments),
+								r = [];
+							return r = Be(r, We(n)), r = Be(r, We(i)), r = Be(r, We(a))
 						},
-						update: function(e) {
-							var t, n, a, r, i, s, o, d, l, u, _ = this,
-								m = _._options,
-								c = _._model,
-								h = _._model = Nt(m),
-								f = _._active,
-								p = _._data,
-								M = {
-									xAlign: c.xAlign,
-									yAlign: c.yAlign
+						update: function(t) {
+							var e, n, i, a, r, o, s, l, u, d, c = this,
+								h = c._options,
+								f = c._model,
+								g = c._model = Ve(h),
+								p = c._active,
+								m = c._data,
+								v = {
+									xAlign: f.xAlign,
+									yAlign: f.yAlign
+								},
+								b = {
+									x: f.x,
+									y: f.y
 								},
 								y = {
-									x: c.x,
-									y: c.y
+									width: f.width,
+									height: f.height
 								},
-								g = {
-									width: c.width,
-									height: c.height
-								},
-								L = {
-									x: c.caretX,
-									y: c.caretY
+								x = {
+									x: f.caretX,
+									y: f.caretY
 								};
-							if (f.length) {
-								h.opacity = 1;
-								var Y = [],
-									v = [];
-								L = Et[m.position].call(_, f, _._eventPosition);
-								var k = [];
-								for (t = 0, n = f.length; t < n; ++t) k.push((a = f[t], r = void 0, i = void 0, s = void 0, o = void 0, d = void 0, l = void 0, u = void 0, r = a._xScale, i = a._yScale || a._scale, s = a._index, o = a._datasetIndex, d = a._chart.getDatasetMeta(o).controller, l = d._getIndexScale(), u = d._getValueScale(), {
-									xLabel: r ? r.getLabelForIndex(s, o) : "",
-									yLabel: i ? i.getLabelForIndex(s, o) : "",
-									label: l ? "" + l.getLabelForIndex(s, o) : "",
-									value: u ? "" + u.getLabelForIndex(s, o) : "",
-									index: s,
-									datasetIndex: o,
-									x: a._model.x,
-									y: a._model.y
+							if (p.length) {
+								g.opacity = 1;
+								var _ = [],
+									k = [];
+								x = Ne[h.position].call(c, p, c._eventPosition);
+								var w = [];
+								for (e = 0, n = p.length; e < n; ++e) w.push((i = p[e], a = void 0, r = void 0, o = void 0, s = void 0, l = void 0, u = void 0, d = void 0, a = i._xScale, r = i._yScale || i._scale, o = i._index, s = i._datasetIndex, l = i._chart.getDatasetMeta(s).controller, u = l._getIndexScale(), d = l._getValueScale(), {
+									xLabel: a ? a.getLabelForIndex(o, s) : "",
+									yLabel: r ? r.getLabelForIndex(o, s) : "",
+									label: u ? "" + u.getLabelForIndex(o, s) : "",
+									value: d ? "" + d.getLabelForIndex(o, s) : "",
+									index: o,
+									datasetIndex: s,
+									x: i._model.x,
+									y: i._model.y
 								}));
-								m.filter && (k = k.filter((function(e) {
-									return m.filter(e, p)
-								}))), m.itemSort && (k = k.sort((function(e, t) {
-									return m.itemSort(e, t, p)
-								}))), R.each(k, (function(e) {
-									Y.push(m.callbacks.labelColor.call(_, e, _._chart)), v.push(m.callbacks.labelTextColor.call(_, e, _._chart))
-								})), h.title = _.getTitle(k, p), h.beforeBody = _.getBeforeBody(k, p), h.body = _.getBody(k, p), h.afterBody = _.getAfterBody(k, p), h.footer = _.getFooter(k, p), h.x = L.x, h.y = L.y, h.caretPadding = m.caretPadding, h.labelColors = Y, h.labelTextColors = v, h.dataPoints = k, g = function(e, t) {
-									var n = e._chart.ctx,
-										a = 2 * t.yPadding,
-										r = 0,
-										i = t.body,
-										s = i.reduce((function(e, t) {
-											return e + t.before.length + t.lines.length + t.after.length
+								h.filter && (w = w.filter((function(t) {
+									return h.filter(t, m)
+								}))), h.itemSort && (w = w.sort((function(t, e) {
+									return h.itemSort(t, e, m)
+								}))), j.each(w, (function(t) {
+									_.push(h.callbacks.labelColor.call(c, t, c._chart)), k.push(h.callbacks.labelTextColor.call(c, t, c._chart))
+								})), g.title = c.getTitle(w, m), g.beforeBody = c.getBeforeBody(w, m), g.body = c.getBody(w, m), g.afterBody = c.getAfterBody(w, m), g.footer = c.getFooter(w, m), g.x = x.x, g.y = x.y, g.caretPadding = h.caretPadding, g.labelColors = _, g.labelTextColors = k, g.dataPoints = w, y = function(t, e) {
+									var n = t._chart.ctx,
+										i = 2 * e.yPadding,
+										a = 0,
+										r = e.body,
+										o = r.reduce((function(t, e) {
+											return t + e.before.length + e.lines.length + e.after.length
 										}), 0);
-									s += t.beforeBody.length + t.afterBody.length;
-									var o = t.title.length,
-										d = t.footer.length,
-										l = t.titleFontSize,
-										u = t.bodyFontSize,
-										_ = t.footerFontSize;
-									a += o * l, a += o ? (o - 1) * t.titleSpacing : 0, a += o ? t.titleMarginBottom : 0, a += s * u, a += s ? (s - 1) * t.bodySpacing : 0, a += d ? t.footerMarginTop : 0, a += d * _, a += d ? (d - 1) * t.footerSpacing : 0;
-									var m = 0,
-										c = function(e) {
-											r = Math.max(r, n.measureText(e).width + m)
+									o += e.beforeBody.length + e.afterBody.length;
+									var s = e.title.length,
+										l = e.footer.length,
+										u = e.titleFontSize,
+										d = e.bodyFontSize,
+										c = e.footerFontSize;
+									i += s * u, i += s ? (s - 1) * e.titleSpacing : 0, i += s ? e.titleMarginBottom : 0, i += o * d, i += o ? (o - 1) * e.bodySpacing : 0, i += l ? e.footerMarginTop : 0, i += l * c, i += l ? (l - 1) * e.footerSpacing : 0;
+									var h = 0,
+										f = function(t) {
+											a = Math.max(a, n.measureText(t).width + h)
 										};
-									return n.font = R.fontString(l, t._titleFontStyle, t._titleFontFamily), R.each(t.title, c), n.font = R.fontString(u, t._bodyFontStyle, t._bodyFontFamily), R.each(t.beforeBody.concat(t.afterBody), c), m = t.displayColors ? u + 2 : 0, R.each(i, (function(e) {
-										R.each(e.before, c), R.each(e.lines, c), R.each(e.after, c)
-									})), m = 0, n.font = R.fontString(_, t._footerFontStyle, t._footerFontFamily), R.each(t.footer, c), {
-										width: r += 2 * t.xPadding,
-										height: a
+									return n.font = j.fontString(u, e._titleFontStyle, e._titleFontFamily), j.each(e.title, f), n.font = j.fontString(d, e._bodyFontStyle, e._bodyFontFamily), j.each(e.beforeBody.concat(e.afterBody), f), h = e.displayColors ? d + 2 : 0, j.each(r, (function(t) {
+										j.each(t.before, f), j.each(t.lines, f), j.each(t.after, f)
+									})), h = 0, n.font = j.fontString(c, e._footerFontStyle, e._footerFontFamily), j.each(e.footer, f), {
+										width: a += 2 * e.xPadding,
+										height: i
 									}
-								}(this, h), y = function(e, t, n, a) {
-									var r = e.x,
-										i = e.y,
-										s = e.caretSize,
-										o = e.caretPadding,
-										d = e.cornerRadius,
-										l = n.xAlign,
-										u = n.yAlign,
-										_ = s + o,
-										m = d + o;
-									return "right" === l ? r -= t.width : "center" === l && ((r -= t.width / 2) + t.width > a.width && (r = a.width - t.width), r < 0 && (r = 0)), "top" === u ? i += _ : i -= "bottom" === u ? t.height + _ : t.height / 2, "center" === u ? "left" === l ? r += _ : "right" === l && (r -= _) : "left" === l ? r -= m : "right" === l && (r += m), {
-										x: r,
-										y: i
+								}(this, g), b = function(t, e, n, i) {
+									var a = t.x,
+										r = t.y,
+										o = t.caretSize,
+										s = t.caretPadding,
+										l = t.cornerRadius,
+										u = n.xAlign,
+										d = n.yAlign,
+										c = o + s,
+										h = l + s;
+									return "right" === u ? a -= e.width : "center" === u && ((a -= e.width / 2) + e.width > i.width && (a = i.width - e.width), a < 0 && (a = 0)), "top" === d ? r += c : r -= "bottom" === d ? e.height + c : e.height / 2, "center" === d ? "left" === u ? a += c : "right" === u && (a -= c) : "left" === u ? a -= h : "right" === u && (a += h), {
+										x: a,
+										y: r
 									}
-								}(h, g, M = function(e, t) {
-									var n, a, r, i, s, o = e._model,
-										d = e._chart,
-										l = e._chart.chartArea,
-										u = "center",
-										_ = "center";
-									o.y < t.height ? _ = "top" : o.y > d.height - t.height && (_ = "bottom");
-									var m = (l.left + l.right) / 2,
-										c = (l.top + l.bottom) / 2;
-									"center" === _ ? (n = function(e) {
-										return e <= m
-									}, a = function(e) {
-										return e > m
-									}) : (n = function(e) {
-										return e <= t.width / 2
-									}, a = function(e) {
-										return e >= d.width - t.width / 2
-									}), r = function(e) {
-										return e + t.width + o.caretSize + o.caretPadding > d.width
-									}, i = function(e) {
-										return e - t.width - o.caretSize - o.caretPadding < 0
-									}, s = function(e) {
-										return e <= c ? "top" : "bottom"
-									}, n(o.x) ? (u = "left", r(o.x) && (u = "center", _ = s(o.y))) : a(o.x) && (u = "right", i(o.x) && (u = "center", _ = s(o.y)));
-									var h = e._options;
+								}(g, y, v = function(t, e) {
+									var n, i, a, r, o, s = t._model,
+										l = t._chart,
+										u = t._chart.chartArea,
+										d = "center",
+										c = "center";
+									s.y < e.height ? c = "top" : s.y > l.height - e.height && (c = "bottom");
+									var h = (u.left + u.right) / 2,
+										f = (u.top + u.bottom) / 2;
+									"center" === c ? (n = function(t) {
+										return t <= h
+									}, i = function(t) {
+										return t > h
+									}) : (n = function(t) {
+										return t <= e.width / 2
+									}, i = function(t) {
+										return t >= l.width - e.width / 2
+									}), a = function(t) {
+										return t + e.width + s.caretSize + s.caretPadding > l.width
+									}, r = function(t) {
+										return t - e.width - s.caretSize - s.caretPadding < 0
+									}, o = function(t) {
+										return t <= f ? "top" : "bottom"
+									}, n(s.x) ? (d = "left", a(s.x) && (d = "center", c = o(s.y))) : i(s.x) && (d = "right", r(s.x) && (d = "center", c = o(s.y)));
+									var g = t._options;
 									return {
-										xAlign: h.xAlign ? h.xAlign : u,
-										yAlign: h.yAlign ? h.yAlign : _
+										xAlign: g.xAlign ? g.xAlign : d,
+										yAlign: g.yAlign ? g.yAlign : c
 									}
-								}(this, g), _._chart)
-							} else h.opacity = 0;
-							return h.xAlign = M.xAlign, h.yAlign = M.yAlign, h.x = y.x, h.y = y.y, h.width = g.width, h.height = g.height, h.caretX = L.x, h.caretY = L.y, _._model = h, e && m.custom && m.custom.call(_, h), _
+								}(this, y), c._chart)
+							} else g.opacity = 0;
+							return g.xAlign = v.xAlign, g.yAlign = v.yAlign, g.x = b.x, g.y = b.y, g.width = y.width, g.height = y.height, g.caretX = x.x, g.caretY = x.y, c._model = g, t && h.custom && h.custom.call(c, g), c
 						},
-						drawCaret: function(e, t) {
+						drawCaret: function(t, e) {
 							var n = this._chart.ctx,
-								a = this._view,
-								r = this.getCaretPosition(e, t, a);
-							n.lineTo(r.x1, r.y1), n.lineTo(r.x2, r.y2), n.lineTo(r.x3, r.y3)
+								i = this._view,
+								a = this.getCaretPosition(t, e, i);
+							n.lineTo(a.x1, a.y1), n.lineTo(a.x2, a.y2), n.lineTo(a.x3, a.y3)
 						},
-						getCaretPosition: function(e, t, n) {
-							var a, r, i, s, o, d, l = n.caretSize,
-								u = n.cornerRadius,
-								_ = n.xAlign,
-								m = n.yAlign,
-								c = e.x,
-								h = e.y,
-								f = t.width,
-								p = t.height;
-							if ("center" === m) o = h + p / 2, "left" === _ ? (r = (a = c) - l, i = a, s = o + l, d = o - l) : (r = (a = c + f) + l, i = a, s = o - l, d = o + l);
-							else if ("left" === _ ? (a = (r = c + u + l) - l, i = r + l) : "right" === _ ? (a = (r = c + f - u - l) - l, i = r + l) : (a = (r = n.caretX) - l, i = r + l), "top" === m) o = (s = h) - l, d = s;
+						getCaretPosition: function(t, e, n) {
+							var i, a, r, o, s, l, u = n.caretSize,
+								d = n.cornerRadius,
+								c = n.xAlign,
+								h = n.yAlign,
+								f = t.x,
+								g = t.y,
+								p = e.width,
+								m = e.height;
+							if ("center" === h) s = g + m / 2, "left" === c ? (a = (i = f) - u, r = i, o = s + u, l = s - u) : (a = (i = f + p) + u, r = i, o = s - u, l = s + u);
+							else if ("left" === c ? (i = (a = f + d + u) - u, r = a + u) : "right" === c ? (i = (a = f + p - d - u) - u, r = a + u) : (i = (a = n.caretX) - u, r = a + u), "top" === h) s = (o = g) - u, l = o;
 							else {
-								o = (s = h + p) + l, d = s;
-								var M = i;
-								i = a, a = M
+								s = (o = g + m) + u, l = o;
+								var v = r;
+								r = i, i = v
 							}
 							return {
-								x1: a,
-								x2: r,
-								x3: i,
-								y1: s,
-								y2: o,
-								y3: d
+								x1: i,
+								x2: a,
+								x3: r,
+								y1: o,
+								y2: s,
+								y3: l
 							}
 						},
-						drawTitle: function(e, t, n) {
-							var a, r, i, s = t.title,
-								o = s.length;
-							if (o) {
-								var d = Ct(t.rtl, t.x, t.width);
-								for (e.x = Rt(t, t._titleAlign), n.textAlign = d.textAlign(t._titleAlign), n.textBaseline = "middle", a = t.titleFontSize, r = t.titleSpacing, n.fillStyle = t.titleFontColor, n.font = R.fontString(a, t._titleFontStyle, t._titleFontFamily), i = 0; i < o; ++i) n.fillText(s[i], d.x(e.x), e.y + a / 2), e.y += a + r, i + 1 === o && (e.y += t.titleMarginBottom - r)
-							}
-						},
-						drawBody: function(e, t, n) {
-							var a, r, i, s, o, d, l, u, _ = t.bodyFontSize,
-								m = t.bodySpacing,
-								c = t._bodyAlign,
-								h = t.body,
-								f = t.displayColors,
-								p = 0,
-								M = f ? Rt(t, "left") : 0,
-								y = Ct(t.rtl, t.x, t.width),
-								g = function(t) {
-									n.fillText(t, y.x(e.x + p), e.y + _ / 2), e.y += _ + m
-								},
-								L = y.textAlign(c);
-							for (n.textAlign = c, n.textBaseline = "middle", n.font = R.fontString(_, t._bodyFontStyle, t._bodyFontFamily), e.x = Rt(t, L), n.fillStyle = t.bodyFontColor, R.each(t.beforeBody, g), p = f && "right" !== L ? "center" === c ? _ / 2 + 1 : _ + 2 : 0, o = 0, l = h.length; o < l; ++o) {
-								for (a = h[o], r = t.labelTextColors[o], i = t.labelColors[o], n.fillStyle = r, R.each(a.before, g), d = 0, u = (s = a.lines).length; d < u; ++d) {
-									if (f) {
-										var Y = y.x(M);
-										n.fillStyle = t.legendColorBackground, n.fillRect(y.leftForLtr(Y, _), e.y, _, _), n.lineWidth = 1, n.strokeStyle = i.borderColor, n.strokeRect(y.leftForLtr(Y, _), e.y, _, _), n.fillStyle = i.backgroundColor, n.fillRect(y.leftForLtr(y.xPlus(Y, 1), _ - 2), e.y + 1, _ - 2, _ - 2), n.fillStyle = r
-									}
-									g(s[d])
-								}
-								R.each(a.after, g)
-							}
-							p = 0, R.each(t.afterBody, g), e.y -= m
-						},
-						drawFooter: function(e, t, n) {
-							var a, r, i = t.footer,
-								s = i.length;
+						drawTitle: function(t, e, n) {
+							var i, a, r, o = e.title,
+								s = o.length;
 							if (s) {
-								var o = Ct(t.rtl, t.x, t.width);
-								for (e.x = Rt(t, t._footerAlign), e.y += t.footerMarginTop, n.textAlign = o.textAlign(t._footerAlign), n.textBaseline = "middle", a = t.footerFontSize, n.fillStyle = t.footerFontColor, n.font = R.fontString(a, t._footerFontStyle, t._footerFontFamily), r = 0; r < s; ++r) n.fillText(i[r], o.x(e.x), e.y + a / 2), e.y += a + t.footerSpacing
+								var l = ze(e.rtl, e.x, e.width);
+								for (t.x = je(e, e._titleAlign), n.textAlign = l.textAlign(e._titleAlign), n.textBaseline = "middle", i = e.titleFontSize, a = e.titleSpacing, n.fillStyle = e.titleFontColor, n.font = j.fontString(i, e._titleFontStyle, e._titleFontFamily), r = 0; r < s; ++r) n.fillText(o[r], l.x(t.x), t.y + i / 2), t.y += i + a, r + 1 === s && (t.y += e.titleMarginBottom - a)
 							}
 						},
-						drawBackground: function(e, t, n, a) {
-							n.fillStyle = t.backgroundColor, n.strokeStyle = t.borderColor, n.lineWidth = t.borderWidth;
-							var r = t.xAlign,
-								i = t.yAlign,
-								s = e.x,
-								o = e.y,
-								d = a.width,
-								l = a.height,
-								u = t.cornerRadius;
-							n.beginPath(), n.moveTo(s + u, o), "top" === i && this.drawCaret(e, a), n.lineTo(s + d - u, o), n.quadraticCurveTo(s + d, o, s + d, o + u), "center" === i && "right" === r && this.drawCaret(e, a), n.lineTo(s + d, o + l - u), n.quadraticCurveTo(s + d, o + l, s + d - u, o + l), "bottom" === i && this.drawCaret(e, a), n.lineTo(s + u, o + l), n.quadraticCurveTo(s, o + l, s, o + l - u), "center" === i && "left" === r && this.drawCaret(e, a), n.lineTo(s, o + u), n.quadraticCurveTo(s, o, s + u, o), n.closePath(), n.fill(), t.borderWidth > 0 && n.stroke()
+						drawBody: function(t, e, n) {
+							var i, a, r, o, s, l, u, d, c = e.bodyFontSize,
+								h = e.bodySpacing,
+								f = e._bodyAlign,
+								g = e.body,
+								p = e.displayColors,
+								m = 0,
+								v = p ? je(e, "left") : 0,
+								b = ze(e.rtl, e.x, e.width),
+								y = function(e) {
+									n.fillText(e, b.x(t.x + m), t.y + c / 2), t.y += c + h
+								},
+								x = b.textAlign(f);
+							for (n.textAlign = f, n.textBaseline = "middle", n.font = j.fontString(c, e._bodyFontStyle, e._bodyFontFamily), t.x = je(e, x), n.fillStyle = e.bodyFontColor, j.each(e.beforeBody, y), m = p && "right" !== x ? "center" === f ? c / 2 + 1 : c + 2 : 0, s = 0, u = g.length; s < u; ++s) {
+								for (i = g[s], a = e.labelTextColors[s], r = e.labelColors[s], n.fillStyle = a, j.each(i.before, y), l = 0, d = (o = i.lines).length; l < d; ++l) {
+									if (p) {
+										var _ = b.x(v);
+										n.fillStyle = e.legendColorBackground, n.fillRect(b.leftForLtr(_, c), t.y, c, c), n.lineWidth = 1, n.strokeStyle = r.borderColor, n.strokeRect(b.leftForLtr(_, c), t.y, c, c), n.fillStyle = r.backgroundColor, n.fillRect(b.leftForLtr(b.xPlus(_, 1), c - 2), t.y + 1, c - 2, c - 2), n.fillStyle = a
+									}
+									y(o[l])
+								}
+								j.each(i.after, y)
+							}
+							m = 0, j.each(e.afterBody, y), t.y -= h
+						},
+						drawFooter: function(t, e, n) {
+							var i, a, r = e.footer,
+								o = r.length;
+							if (o) {
+								var s = ze(e.rtl, e.x, e.width);
+								for (t.x = je(e, e._footerAlign), t.y += e.footerMarginTop, n.textAlign = s.textAlign(e._footerAlign), n.textBaseline = "middle", i = e.footerFontSize, n.fillStyle = e.footerFontColor, n.font = j.fontString(i, e._footerFontStyle, e._footerFontFamily), a = 0; a < o; ++a) n.fillText(r[a], s.x(t.x), t.y + i / 2), t.y += i + e.footerSpacing
+							}
+						},
+						drawBackground: function(t, e, n, i) {
+							n.fillStyle = e.backgroundColor, n.strokeStyle = e.borderColor, n.lineWidth = e.borderWidth;
+							var a = e.xAlign,
+								r = e.yAlign,
+								o = t.x,
+								s = t.y,
+								l = i.width,
+								u = i.height,
+								d = e.cornerRadius;
+							n.beginPath(), n.moveTo(o + d, s), "top" === r && this.drawCaret(t, i), n.lineTo(o + l - d, s), n.quadraticCurveTo(o + l, s, o + l, s + d), "center" === r && "right" === a && this.drawCaret(t, i), n.lineTo(o + l, s + u - d), n.quadraticCurveTo(o + l, s + u, o + l - d, s + u), "bottom" === r && this.drawCaret(t, i), n.lineTo(o + d, s + u), n.quadraticCurveTo(o, s + u, o, s + u - d), "center" === r && "left" === a && this.drawCaret(t, i), n.lineTo(o, s + d), n.quadraticCurveTo(o, s, o + d, s), n.closePath(), n.fill(), e.borderWidth > 0 && n.stroke()
 						},
 						draw: function() {
-							var e = this._chart.ctx,
-								t = this._view;
-							if (0 !== t.opacity) {
+							var t = this._chart.ctx,
+								e = this._view;
+							if (0 !== e.opacity) {
 								var n = {
-										width: t.width,
-										height: t.height
+										width: e.width,
+										height: e.height
 									},
-									a = {
-										x: t.x,
-										y: t.y
+									i = {
+										x: e.x,
+										y: e.y
 									},
-									r = Math.abs(t.opacity < .001) ? 0 : t.opacity,
-									i = t.title.length || t.beforeBody.length || t.body.length || t.afterBody.length || t.footer.length;
-								this._options.enabled && i && (e.save(), e.globalAlpha = r, this.drawBackground(a, t, e, n), a.y += t.yPadding, R.rtl.overrideTextDirection(e, t.textDirection), this.drawTitle(a, t, e), this.drawBody(a, t, e), this.drawFooter(a, t, e), R.rtl.restoreTextDirection(e, t.textDirection), e.restore())
+									a = Math.abs(e.opacity < .001) ? 0 : e.opacity,
+									r = e.title.length || e.beforeBody.length || e.body.length || e.afterBody.length || e.footer.length;
+								this._options.enabled && r && (t.save(), t.globalAlpha = a, this.drawBackground(i, e, t, n), i.y += e.yPadding, j.rtl.overrideTextDirection(t, e.textDirection), this.drawTitle(i, e, t), this.drawBody(i, e, t), this.drawFooter(i, e, t), j.rtl.restoreTextDirection(t, e.textDirection), t.restore())
 							}
 						},
-						handleEvent: function(e) {
-							var t, n = this,
-								a = n._options;
-							return n._lastActive = n._lastActive || [], "mouseout" === e.type ? n._active = [] : (n._active = n._chart.getElementsAtEventForMode(e, a.mode, a), a.reverse && n._active.reverse()), (t = !R.arrayEquals(n._active, n._lastActive)) && (n._lastActive = n._active, (a.enabled || a.custom) && (n._eventPosition = {
-								x: e.x,
-								y: e.y
-							}, n.update(!0), n.pivot())), t
+						handleEvent: function(t) {
+							var e, n = this,
+								i = n._options;
+							return n._lastActive = n._lastActive || [], "mouseout" === t.type ? n._active = [] : (n._active = n._chart.getElementsAtEventForMode(t, i.mode, i), i.reverse && n._active.reverse()), (e = !j.arrayEquals(n._active, n._lastActive)) && (n._lastActive = n._active, (i.enabled || i.custom) && (n._eventPosition = {
+								x: t.x,
+								y: t.y
+							}, n.update(!0), n.pivot())), e
 						}
 					}),
-					Jt = Et,
-					Ut = Bt;
-				Ut.positioners = Jt;
-				var Gt = R.valueOrDefault;
+					Ue = Ne,
+					Ye = qe;
+				Ye.positioners = Ue;
+				var Ke = j.valueOrDefault;
 
-				function qt() {
-					return R.merge(Object.create(null), [].slice.call(arguments), {
-						merger: function(e, t, n, a) {
-							if ("xAxes" === e || "yAxes" === e) {
-								var r, i, s, o = n[e].length;
-								for (t[e] || (t[e] = []), r = 0; r < o; ++r) s = n[e][r], i = Gt(s.type, "xAxes" === e ? "category" : "linear"), r >= t[e].length && t[e].push({}), !t[e][r].type || s.type && s.type !== t[e][r].type ? R.merge(t[e][r], [Ft.getScaleDefaults(i), s]) : R.merge(t[e][r], s)
-							} else R._merger(e, t, n, a)
+				function Ge() {
+					return j.merge(Object.create(null), [].slice.call(arguments), {
+						merger: function(t, e, n, i) {
+							if ("xAxes" === t || "yAxes" === t) {
+								var a, r, o, s = n[t].length;
+								for (e[t] || (e[t] = []), a = 0; a < s; ++a) o = n[t][a], r = Ke(o.type, "xAxes" === t ? "category" : "linear"), a >= e[t].length && e[t].push({}), !e[t][a].type || o.type && o.type !== e[t][a].type ? j.merge(e[t][a], [Re.getScaleDefaults(r), o]) : j.merge(e[t][a], o)
+							} else j._merger(t, e, n, i)
 						}
 					})
 				}
 
-				function Kt() {
-					return R.merge(Object.create(null), [].slice.call(arguments), {
-						merger: function(e, t, n, a) {
-							var r = t[e] || Object.create(null),
-								i = n[e];
-							"scales" === e ? t[e] = qt(r, i) : "scale" === e ? t[e] = R.merge(r, [Ft.getScaleDefaults(i.type), i]) : R._merger(e, t, n, a)
+				function Xe() {
+					return j.merge(Object.create(null), [].slice.call(arguments), {
+						merger: function(t, e, n, i) {
+							var a = e[t] || Object.create(null),
+								r = n[t];
+							"scales" === t ? e[t] = Ge(a, r) : "scale" === t ? e[t] = j.merge(a, [Re.getScaleDefaults(r.type), r]) : j._merger(t, e, n, i)
 						}
 					})
 				}
 
-				function Zt(e) {
-					var t = e.options;
-					R.each(e.scales, (function(t) {
-						ft.removeBox(e, t)
-					})), t = Kt(C.global, C[e.config.type], t), e.options = e.config.options = t, e.ensureScalesHaveIDs(), e.buildOrUpdateScales(), e.tooltip._options = t.tooltips, e.tooltip.initialize()
+				function Ze(t) {
+					var e = t.options;
+					j.each(t.scales, (function(e) {
+						pe.removeBox(t, e)
+					})), e = Xe(z.global, z[t.config.type], e), t.options = t.config.options = e, t.ensureScalesHaveIDs(), t.buildOrUpdateScales(), t.tooltip._options = e.tooltips, t.tooltip.initialize()
 				}
 
-				function $t(e, t, n) {
-					var a, r = function(e) {
-						return e.id === a
+				function $e(t, e, n) {
+					var i, a = function(t) {
+						return t.id === i
 					};
 					do {
-						a = t + n++
-					} while (R.findIndex(e, r) >= 0);
-					return a
+						i = e + n++
+					} while (j.findIndex(t, a) >= 0);
+					return i
 				}
 
-				function Xt(e) {
-					return "top" === e || "bottom" === e
+				function Je(t) {
+					return "top" === t || "bottom" === t
 				}
 
-				function Qt(e, t) {
-					return function(n, a) {
-						return n[e] === a[e] ? n[t] - a[t] : n[e] - a[e]
+				function Qe(t, e) {
+					return function(n, i) {
+						return n[t] === i[t] ? n[e] - i[e] : n[t] - i[t]
 					}
 				}
-				C._set("global", {
+				z._set("global", {
 					elements: {},
 					events: ["mousemove", "mouseout", "click", "touchstart", "touchmove"],
 					hover: {
@@ -4234,284 +4234,284 @@
 					responsive: !0,
 					responsiveAnimationDuration: 0
 				});
-				var en = function(e, t) {
-					return this.construct(e, t), this
+				var tn = function(t, e) {
+					return this.construct(t, e), this
 				};
-				R.extend(en.prototype, {
-					construct: function(e, t) {
+				j.extend(tn.prototype, {
+					construct: function(t, e) {
 						var n = this;
-						t = function(e) {
-							var t = (e = e || Object.create(null)).data = e.data || {};
-							return t.datasets = t.datasets || [], t.labels = t.labels || [], e.options = Kt(C.global, C[e.type], e.options || {}), e
-						}(t);
-						var a = Ot.acquireContext(e, t),
-							r = a && a.canvas,
-							i = r && r.height,
-							s = r && r.width;
-						n.id = R.uid(), n.ctx = a, n.canvas = r, n.config = t, n.width = s, n.height = i, n.aspectRatio = i ? s / i : null, n.options = t.options, n._bufferedRender = !1, n._layers = [], n.chart = n, n.controller = n, en.instances[n.id] = n, Object.defineProperty(n, "data", {
+						e = function(t) {
+							var e = (t = t || Object.create(null)).data = t.data || {};
+							return e.datasets = e.datasets || [], e.labels = e.labels || [], t.options = Xe(z.global, z[t.type], t.options || {}), t
+						}(e);
+						var i = Oe.acquireContext(t, e),
+							a = i && i.canvas,
+							r = a && a.height,
+							o = a && a.width;
+						n.id = j.uid(), n.ctx = i, n.canvas = a, n.config = e, n.width = o, n.height = r, n.aspectRatio = r ? o / r : null, n.options = e.options, n._bufferedRender = !1, n._layers = [], n.chart = n, n.controller = n, tn.instances[n.id] = n, Object.defineProperty(n, "data", {
 							get: function() {
 								return n.config.data
 							},
-							set: function(e) {
-								n.config.data = e
+							set: function(t) {
+								n.config.data = t
 							}
-						}), a && r ? (n.initialize(), n.update()) : console.error("Failed to create chart: can't acquire context from the given item")
+						}), i && a ? (n.initialize(), n.update()) : console.error("Failed to create chart: can't acquire context from the given item")
 					},
 					initialize: function() {
-						var e = this;
-						return At.notify(e, "beforeInit"), R.retinaScale(e, e.options.devicePixelRatio), e.bindEvents(), e.options.responsive && e.resize(!0), e.initToolTip(), At.notify(e, "afterInit"), e
+						var t = this;
+						return Le.notify(t, "beforeInit"), j.retinaScale(t, t.options.devicePixelRatio), t.bindEvents(), t.options.responsive && t.resize(!0), t.initToolTip(), Le.notify(t, "afterInit"), t
 					},
 					clear: function() {
-						return R.canvas.clear(this), this
+						return j.canvas.clear(this), this
 					},
 					stop: function() {
-						return X.cancelAnimation(this), this
+						return J.cancelAnimation(this), this
 					},
-					resize: function(e) {
-						var t = this,
-							n = t.options,
-							a = t.canvas,
-							r = n.maintainAspectRatio && t.aspectRatio || null,
-							i = Math.max(0, Math.floor(R.getMaximumWidth(a))),
-							s = Math.max(0, Math.floor(r ? i / r : R.getMaximumHeight(a)));
-						if ((t.width !== i || t.height !== s) && (a.width = t.width = i, a.height = t.height = s, a.style.width = i + "px", a.style.height = s + "px", R.retinaScale(t, n.devicePixelRatio), !e)) {
-							var o = {
-								width: i,
-								height: s
+					resize: function(t) {
+						var e = this,
+							n = e.options,
+							i = e.canvas,
+							a = n.maintainAspectRatio && e.aspectRatio || null,
+							r = Math.max(0, Math.floor(j.getMaximumWidth(i))),
+							o = Math.max(0, Math.floor(a ? r / a : j.getMaximumHeight(i)));
+						if ((e.width !== r || e.height !== o) && (i.width = e.width = r, i.height = e.height = o, i.style.width = r + "px", i.style.height = o + "px", j.retinaScale(e, n.devicePixelRatio), !t)) {
+							var s = {
+								width: r,
+								height: o
 							};
-							At.notify(t, "resize", [o]), n.onResize && n.onResize(t, o), t.stop(), t.update({
+							Le.notify(e, "resize", [s]), n.onResize && n.onResize(e, s), e.stop(), e.update({
 								duration: n.responsiveAnimationDuration
 							})
 						}
 					},
 					ensureScalesHaveIDs: function() {
-						var e = this.options,
-							t = e.scales || {},
-							n = e.scale;
-						R.each(t.xAxes, (function(e, n) {
-							e.id || (e.id = $t(t.xAxes, "x-axis-", n))
-						})), R.each(t.yAxes, (function(e, n) {
-							e.id || (e.id = $t(t.yAxes, "y-axis-", n))
+						var t = this.options,
+							e = t.scales || {},
+							n = t.scale;
+						j.each(e.xAxes, (function(t, n) {
+							t.id || (t.id = $e(e.xAxes, "x-axis-", n))
+						})), j.each(e.yAxes, (function(t, n) {
+							t.id || (t.id = $e(e.yAxes, "y-axis-", n))
 						})), n && (n.id = n.id || "scale")
 					},
 					buildOrUpdateScales: function() {
-						var e = this,
-							t = e.options,
-							n = e.scales || {},
-							a = [],
-							r = Object.keys(n).reduce((function(e, t) {
-								return e[t] = !1, e
+						var t = this,
+							e = t.options,
+							n = t.scales || {},
+							i = [],
+							a = Object.keys(n).reduce((function(t, e) {
+								return t[e] = !1, t
 							}), {});
-						t.scales && (a = a.concat((t.scales.xAxes || []).map((function(e) {
+						e.scales && (i = i.concat((e.scales.xAxes || []).map((function(t) {
 							return {
-								options: e,
+								options: t,
 								dtype: "category",
 								dposition: "bottom"
 							}
-						})), (t.scales.yAxes || []).map((function(e) {
+						})), (e.scales.yAxes || []).map((function(t) {
 							return {
-								options: e,
+								options: t,
 								dtype: "linear",
 								dposition: "left"
 							}
-						})))), t.scale && a.push({
-							options: t.scale,
+						})))), e.scale && i.push({
+							options: e.scale,
 							dtype: "radialLinear",
 							isDefault: !0,
 							dposition: "chartArea"
-						}), R.each(a, (function(t) {
-							var a = t.options,
-								i = a.id,
-								s = Gt(a.type, t.dtype);
-							Xt(a.position) !== Xt(t.dposition) && (a.position = t.dposition), r[i] = !0;
-							var o = null;
-							if (i in n && n[i].type === s)(o = n[i]).options = a, o.ctx = e.ctx, o.chart = e;
+						}), j.each(i, (function(e) {
+							var i = e.options,
+								r = i.id,
+								o = Ke(i.type, e.dtype);
+							Je(i.position) !== Je(e.dposition) && (i.position = e.dposition), a[r] = !0;
+							var s = null;
+							if (r in n && n[r].type === o)(s = n[r]).options = i, s.ctx = t.ctx, s.chart = t;
 							else {
-								var d = Ft.getScaleConstructor(s);
-								if (!d) return;
-								o = new d({
-									id: i,
-									type: s,
-									options: a,
-									ctx: e.ctx,
-									chart: e
-								}), n[o.id] = o
+								var l = Re.getScaleConstructor(o);
+								if (!l) return;
+								s = new l({
+									id: r,
+									type: o,
+									options: i,
+									ctx: t.ctx,
+									chart: t
+								}), n[s.id] = s
 							}
-							o.mergeTicksOptions(), t.isDefault && (e.scale = o)
-						})), R.each(r, (function(e, t) {
-							e || delete n[t]
-						})), e.scales = n, Ft.addScalesToLayout(this)
+							s.mergeTicksOptions(), e.isDefault && (t.scale = s)
+						})), j.each(a, (function(t, e) {
+							t || delete n[e]
+						})), t.scales = n, Re.addScalesToLayout(this)
 					},
 					buildOrUpdateControllers: function() {
-						var e, t, n = this,
-							a = [],
-							r = n.data.datasets;
-						for (e = 0, t = r.length; e < t; e++) {
-							var i = r[e],
-								s = n.getDatasetMeta(e),
-								o = i.type || n.config.type;
-							if (s.type && s.type !== o && (n.destroyDatasetMeta(e), s = n.getDatasetMeta(e)), s.type = o, s.order = i.order || 0, s.index = e, s.controller) s.controller.updateIndex(e), s.controller.linkScales();
+						var t, e, n = this,
+							i = [],
+							a = n.data.datasets;
+						for (t = 0, e = a.length; t < e; t++) {
+							var r = a[t],
+								o = n.getDatasetMeta(t),
+								s = r.type || n.config.type;
+							if (o.type && o.type !== s && (n.destroyDatasetMeta(t), o = n.getDatasetMeta(t)), o.type = s, o.order = r.order || 0, o.index = t, o.controller) o.controller.updateIndex(t), o.controller.linkScales();
 							else {
-								var d = Xe[s.type];
-								if (void 0 === d) throw new Error('"' + s.type + '" is not a chart type.');
-								s.controller = new d(n, e), a.push(s.controller)
+								var l = Jt[o.type];
+								if (void 0 === l) throw new Error('"' + o.type + '" is not a chart type.');
+								o.controller = new l(n, t), i.push(o.controller)
 							}
 						}
-						return a
+						return i
 					},
 					resetElements: function() {
-						var e = this;
-						R.each(e.data.datasets, (function(t, n) {
-							e.getDatasetMeta(n).controller.reset()
-						}), e)
+						var t = this;
+						j.each(t.data.datasets, (function(e, n) {
+							t.getDatasetMeta(n).controller.reset()
+						}), t)
 					},
 					reset: function() {
 						this.resetElements(), this.tooltip.initialize()
 					},
-					update: function(e) {
-						var t, n, a = this;
-						if (e && "object" == typeof e || (e = {
-								duration: e,
+					update: function(t) {
+						var e, n, i = this;
+						if (t && "object" == typeof t || (t = {
+								duration: t,
 								lazy: arguments[1]
-							}), Zt(a), At._invalidate(a), !1 !== At.notify(a, "beforeUpdate")) {
-							a.tooltip._data = a.data;
-							var r = a.buildOrUpdateControllers();
-							for (t = 0, n = a.data.datasets.length; t < n; t++) a.getDatasetMeta(t).controller.buildOrUpdateElements();
-							a.updateLayout(), a.options.animation && a.options.animation.duration && R.each(r, (function(e) {
-								e.reset()
-							})), a.updateDatasets(), a.tooltip.initialize(), a.lastActive = [], At.notify(a, "afterUpdate"), a._layers.sort(Qt("z", "_idx")), a._bufferedRender ? a._bufferedRequest = {
-								duration: e.duration,
-								easing: e.easing,
-								lazy: e.lazy
-							} : a.render(e)
+							}), Ze(i), Le._invalidate(i), !1 !== Le.notify(i, "beforeUpdate")) {
+							i.tooltip._data = i.data;
+							var a = i.buildOrUpdateControllers();
+							for (e = 0, n = i.data.datasets.length; e < n; e++) i.getDatasetMeta(e).controller.buildOrUpdateElements();
+							i.updateLayout(), i.options.animation && i.options.animation.duration && j.each(a, (function(t) {
+								t.reset()
+							})), i.updateDatasets(), i.tooltip.initialize(), i.lastActive = [], Le.notify(i, "afterUpdate"), i._layers.sort(Qe("z", "_idx")), i._bufferedRender ? i._bufferedRequest = {
+								duration: t.duration,
+								easing: t.easing,
+								lazy: t.lazy
+							} : i.render(t)
 						}
 					},
 					updateLayout: function() {
-						var e = this;
-						!1 !== At.notify(e, "beforeLayout") && (ft.update(this, this.width, this.height), e._layers = [], R.each(e.boxes, (function(t) {
-							t._configure && t._configure(), e._layers.push.apply(e._layers, t._layers())
-						}), e), e._layers.forEach((function(e, t) {
-							e._idx = t
-						})), At.notify(e, "afterScaleUpdate"), At.notify(e, "afterLayout"))
+						var t = this;
+						!1 !== Le.notify(t, "beforeLayout") && (pe.update(this, this.width, this.height), t._layers = [], j.each(t.boxes, (function(e) {
+							e._configure && e._configure(), t._layers.push.apply(t._layers, e._layers())
+						}), t), t._layers.forEach((function(t, e) {
+							t._idx = e
+						})), Le.notify(t, "afterScaleUpdate"), Le.notify(t, "afterLayout"))
 					},
 					updateDatasets: function() {
-						if (!1 !== At.notify(this, "beforeDatasetsUpdate")) {
-							for (var e = 0, t = this.data.datasets.length; e < t; ++e) this.updateDataset(e);
-							At.notify(this, "afterDatasetsUpdate")
+						if (!1 !== Le.notify(this, "beforeDatasetsUpdate")) {
+							for (var t = 0, e = this.data.datasets.length; t < e; ++t) this.updateDataset(t);
+							Le.notify(this, "afterDatasetsUpdate")
 						}
 					},
-					updateDataset: function(e) {
-						var t = this.getDatasetMeta(e),
+					updateDataset: function(t) {
+						var e = this.getDatasetMeta(t),
 							n = {
-								meta: t,
-								index: e
+								meta: e,
+								index: t
 							};
-						!1 !== At.notify(this, "beforeDatasetUpdate", [n]) && (t.controller._update(), At.notify(this, "afterDatasetUpdate", [n]))
+						!1 !== Le.notify(this, "beforeDatasetUpdate", [n]) && (e.controller._update(), Le.notify(this, "afterDatasetUpdate", [n]))
 					},
-					render: function(e) {
-						var t = this;
-						e && "object" == typeof e || (e = {
-							duration: e,
+					render: function(t) {
+						var e = this;
+						t && "object" == typeof t || (t = {
+							duration: t,
 							lazy: arguments[1]
 						});
-						var n = t.options.animation,
-							a = Gt(e.duration, n && n.duration),
-							r = e.lazy;
-						if (!1 !== At.notify(t, "beforeRender")) {
-							var i = function(e) {
-								At.notify(t, "afterRender"), R.callback(n && n.onComplete, [e], t)
+						var n = e.options.animation,
+							i = Ke(t.duration, n && n.duration),
+							a = t.lazy;
+						if (!1 !== Le.notify(e, "beforeRender")) {
+							var r = function(t) {
+								Le.notify(e, "afterRender"), j.callback(n && n.onComplete, [t], e)
 							};
-							if (n && a) {
-								var s = new $({
-									numSteps: a / 16.66,
-									easing: e.easing || n.easing,
-									render: function(e, t) {
-										var n = R.easing.effects[t.easing],
-											a = t.currentStep,
-											r = a / t.numSteps;
-										e.draw(n(r), r, a)
+							if (n && i) {
+								var o = new $({
+									numSteps: i / 16.66,
+									easing: t.easing || n.easing,
+									render: function(t, e) {
+										var n = j.easing.effects[e.easing],
+											i = e.currentStep,
+											a = i / e.numSteps;
+										t.draw(n(a), a, i)
 									},
 									onAnimationProgress: n.onProgress,
-									onAnimationComplete: i
+									onAnimationComplete: r
 								});
-								X.addAnimation(t, s, a, r)
-							} else t.draw(), i(new $({
+								J.addAnimation(e, o, i, a)
+							} else e.draw(), r(new $({
 								numSteps: 0,
-								chart: t
+								chart: e
 							}));
-							return t
+							return e
 						}
 					},
-					draw: function(e) {
-						var t, n, a = this;
-						if (a.clear(), R.isNullOrUndef(e) && (e = 1), a.transition(e), !(a.width <= 0 || a.height <= 0) && !1 !== At.notify(a, "beforeDraw", [e])) {
-							for (n = a._layers, t = 0; t < n.length && n[t].z <= 0; ++t) n[t].draw(a.chartArea);
-							for (a.drawDatasets(e); t < n.length; ++t) n[t].draw(a.chartArea);
-							a._drawTooltip(e), At.notify(a, "afterDraw", [e])
+					draw: function(t) {
+						var e, n, i = this;
+						if (i.clear(), j.isNullOrUndef(t) && (t = 1), i.transition(t), !(i.width <= 0 || i.height <= 0) && !1 !== Le.notify(i, "beforeDraw", [t])) {
+							for (n = i._layers, e = 0; e < n.length && n[e].z <= 0; ++e) n[e].draw(i.chartArea);
+							for (i.drawDatasets(t); e < n.length; ++e) n[e].draw(i.chartArea);
+							i._drawTooltip(t), Le.notify(i, "afterDraw", [t])
 						}
 					},
-					transition: function(e) {
-						for (var t = 0, n = (this.data.datasets || []).length; t < n; ++t) this.isDatasetVisible(t) && this.getDatasetMeta(t).controller.transition(e);
-						this.tooltip.transition(e)
+					transition: function(t) {
+						for (var e = 0, n = (this.data.datasets || []).length; e < n; ++e) this.isDatasetVisible(e) && this.getDatasetMeta(e).controller.transition(t);
+						this.tooltip.transition(t)
 					},
-					_getSortedDatasetMetas: function(e) {
-						var t, n, a = [];
-						for (t = 0, n = (this.data.datasets || []).length; t < n; ++t) e && !this.isDatasetVisible(t) || a.push(this.getDatasetMeta(t));
-						return a.sort(Qt("order", "index")), a
+					_getSortedDatasetMetas: function(t) {
+						var e, n, i = [];
+						for (e = 0, n = (this.data.datasets || []).length; e < n; ++e) t && !this.isDatasetVisible(e) || i.push(this.getDatasetMeta(e));
+						return i.sort(Qe("order", "index")), i
 					},
 					_getSortedVisibleDatasetMetas: function() {
 						return this._getSortedDatasetMetas(!0)
 					},
-					drawDatasets: function(e) {
-						var t, n;
-						if (!1 !== At.notify(this, "beforeDatasetsDraw", [e])) {
-							for (n = (t = this._getSortedVisibleDatasetMetas()).length - 1; n >= 0; --n) this.drawDataset(t[n], e);
-							At.notify(this, "afterDatasetsDraw", [e])
+					drawDatasets: function(t) {
+						var e, n;
+						if (!1 !== Le.notify(this, "beforeDatasetsDraw", [t])) {
+							for (n = (e = this._getSortedVisibleDatasetMetas()).length - 1; n >= 0; --n) this.drawDataset(e[n], t);
+							Le.notify(this, "afterDatasetsDraw", [t])
 						}
 					},
-					drawDataset: function(e, t) {
+					drawDataset: function(t, e) {
 						var n = {
-							meta: e,
-							index: e.index,
-							easingValue: t
+							meta: t,
+							index: t.index,
+							easingValue: e
 						};
-						!1 !== At.notify(this, "beforeDatasetDraw", [n]) && (e.controller.draw(t), At.notify(this, "afterDatasetDraw", [n]))
+						!1 !== Le.notify(this, "beforeDatasetDraw", [n]) && (t.controller.draw(e), Le.notify(this, "afterDatasetDraw", [n]))
 					},
-					_drawTooltip: function(e) {
-						var t = this.tooltip,
+					_drawTooltip: function(t) {
+						var e = this.tooltip,
 							n = {
-								tooltip: t,
-								easingValue: e
+								tooltip: e,
+								easingValue: t
 							};
-						!1 !== At.notify(this, "beforeTooltipDraw", [n]) && (t.draw(), At.notify(this, "afterTooltipDraw", [n]))
+						!1 !== Le.notify(this, "beforeTooltipDraw", [n]) && (e.draw(), Le.notify(this, "afterTooltipDraw", [n]))
 					},
-					getElementAtEvent: function(e) {
-						return it.modes.single(this, e)
+					getElementAtEvent: function(t) {
+						return re.modes.single(this, t)
 					},
-					getElementsAtEvent: function(e) {
-						return it.modes.label(this, e, {
+					getElementsAtEvent: function(t) {
+						return re.modes.label(this, t, {
 							intersect: !0
 						})
 					},
-					getElementsAtXAxis: function(e) {
-						return it.modes["x-axis"](this, e, {
+					getElementsAtXAxis: function(t) {
+						return re.modes["x-axis"](this, t, {
 							intersect: !0
 						})
 					},
-					getElementsAtEventForMode: function(e, t, n) {
-						var a = it.modes[t];
-						return "function" == typeof a ? a(this, e, n) : []
+					getElementsAtEventForMode: function(t, e, n) {
+						var i = re.modes[e];
+						return "function" == typeof i ? i(this, t, n) : []
 					},
-					getDatasetAtEvent: function(e) {
-						return it.modes.dataset(this, e, {
+					getDatasetAtEvent: function(t) {
+						return re.modes.dataset(this, t, {
 							intersect: !0
 						})
 					},
-					getDatasetMeta: function(e) {
-						var t = this.data.datasets[e];
-						t._meta || (t._meta = {});
-						var n = t._meta[this.id];
-						return n || (n = t._meta[this.id] = {
+					getDatasetMeta: function(t) {
+						var e = this.data.datasets[t];
+						e._meta || (e._meta = {});
+						var n = e._meta[this.id];
+						return n || (n = e._meta[this.id] = {
 							type: null,
 							data: [],
 							dataset: null,
@@ -4519,100 +4519,100 @@
 							hidden: null,
 							xAxisID: null,
 							yAxisID: null,
-							order: t.order || 0,
-							index: e
+							order: e.order || 0,
+							index: t
 						}), n
 					},
 					getVisibleDatasetCount: function() {
-						for (var e = 0, t = 0, n = this.data.datasets.length; t < n; ++t) this.isDatasetVisible(t) && e++;
-						return e
+						for (var t = 0, e = 0, n = this.data.datasets.length; e < n; ++e) this.isDatasetVisible(e) && t++;
+						return t
 					},
-					isDatasetVisible: function(e) {
-						var t = this.getDatasetMeta(e);
-						return "boolean" == typeof t.hidden ? !t.hidden : !this.data.datasets[e].hidden
+					isDatasetVisible: function(t) {
+						var e = this.getDatasetMeta(t);
+						return "boolean" == typeof e.hidden ? !e.hidden : !this.data.datasets[t].hidden
 					},
 					generateLegend: function() {
 						return this.options.legendCallback(this)
 					},
-					destroyDatasetMeta: function(e) {
-						var t = this.id,
-							n = this.data.datasets[e],
-							a = n._meta && n._meta[t];
-						a && (a.controller.destroy(), delete n._meta[t])
+					destroyDatasetMeta: function(t) {
+						var e = this.id,
+							n = this.data.datasets[t],
+							i = n._meta && n._meta[e];
+						i && (i.controller.destroy(), delete n._meta[e])
 					},
 					destroy: function() {
-						var e, t, n = this,
-							a = n.canvas;
-						for (n.stop(), e = 0, t = n.data.datasets.length; e < t; ++e) n.destroyDatasetMeta(e);
-						a && (n.unbindEvents(), R.canvas.clear(n), Ot.releaseContext(n.ctx), n.canvas = null, n.ctx = null), At.notify(n, "destroy"), delete en.instances[n.id]
+						var t, e, n = this,
+							i = n.canvas;
+						for (n.stop(), t = 0, e = n.data.datasets.length; t < e; ++t) n.destroyDatasetMeta(t);
+						i && (n.unbindEvents(), j.canvas.clear(n), Oe.releaseContext(n.ctx), n.canvas = null, n.ctx = null), Le.notify(n, "destroy"), delete tn.instances[n.id]
 					},
 					toBase64Image: function() {
 						return this.canvas.toDataURL.apply(this.canvas, arguments)
 					},
 					initToolTip: function() {
-						var e = this;
-						e.tooltip = new Ut({
-							_chart: e,
-							_chartInstance: e,
-							_data: e.data,
-							_options: e.options.tooltips
-						}, e)
+						var t = this;
+						t.tooltip = new Ye({
+							_chart: t,
+							_chartInstance: t,
+							_data: t.data,
+							_options: t.options.tooltips
+						}, t)
 					},
 					bindEvents: function() {
-						var e = this,
-							t = e._listeners = {},
+						var t = this,
+							e = t._listeners = {},
 							n = function() {
-								e.eventHandler.apply(e, arguments)
+								t.eventHandler.apply(t, arguments)
 							};
-						R.each(e.options.events, (function(a) {
-							Ot.addEventListener(e, a, n), t[a] = n
-						})), e.options.responsive && (n = function() {
-							e.resize()
-						}, Ot.addEventListener(e, "resize", n), t.resize = n)
+						j.each(t.options.events, (function(i) {
+							Oe.addEventListener(t, i, n), e[i] = n
+						})), t.options.responsive && (n = function() {
+							t.resize()
+						}, Oe.addEventListener(t, "resize", n), e.resize = n)
 					},
 					unbindEvents: function() {
-						var e = this,
-							t = e._listeners;
-						t && (delete e._listeners, R.each(t, (function(t, n) {
-							Ot.removeEventListener(e, n, t)
+						var t = this,
+							e = t._listeners;
+						e && (delete t._listeners, j.each(e, (function(e, n) {
+							Oe.removeEventListener(t, n, e)
 						})))
 					},
-					updateHoverStyle: function(e, t, n) {
-						var a, r, i, s = n ? "set" : "remove";
-						for (r = 0, i = e.length; r < i; ++r)(a = e[r]) && this.getDatasetMeta(a._datasetIndex).controller[s + "HoverStyle"](a);
-						"dataset" === t && this.getDatasetMeta(e[0]._datasetIndex).controller["_" + s + "DatasetHoverStyle"]()
+					updateHoverStyle: function(t, e, n) {
+						var i, a, r, o = n ? "set" : "remove";
+						for (a = 0, r = t.length; a < r; ++a)(i = t[a]) && this.getDatasetMeta(i._datasetIndex).controller[o + "HoverStyle"](i);
+						"dataset" === e && this.getDatasetMeta(t[0]._datasetIndex).controller["_" + o + "DatasetHoverStyle"]()
 					},
-					eventHandler: function(e) {
-						var t = this,
-							n = t.tooltip;
-						if (!1 !== At.notify(t, "beforeEvent", [e])) {
-							t._bufferedRender = !0, t._bufferedRequest = null;
-							var a = t.handleEvent(e);
-							n && (a = n._start ? n.handleEvent(e) : a | n.handleEvent(e)), At.notify(t, "afterEvent", [e]);
-							var r = t._bufferedRequest;
-							return r ? t.render(r) : a && !t.animating && (t.stop(), t.render({
-								duration: t.options.hover.animationDuration,
+					eventHandler: function(t) {
+						var e = this,
+							n = e.tooltip;
+						if (!1 !== Le.notify(e, "beforeEvent", [t])) {
+							e._bufferedRender = !0, e._bufferedRequest = null;
+							var i = e.handleEvent(t);
+							n && (i = n._start ? n.handleEvent(t) : i | n.handleEvent(t)), Le.notify(e, "afterEvent", [t]);
+							var a = e._bufferedRequest;
+							return a ? e.render(a) : i && !e.animating && (e.stop(), e.render({
+								duration: e.options.hover.animationDuration,
 								lazy: !0
-							})), t._bufferedRender = !1, t._bufferedRequest = null, t
+							})), e._bufferedRender = !1, e._bufferedRequest = null, e
 						}
 					},
-					handleEvent: function(e) {
-						var t, n = this,
-							a = n.options || {},
-							r = a.hover;
-						return n.lastActive = n.lastActive || [], "mouseout" === e.type ? n.active = [] : n.active = n.getElementsAtEventForMode(e, r.mode, r), R.callback(a.onHover || a.hover.onHover, [e.native, n.active], n), "mouseup" !== e.type && "click" !== e.type || a.onClick && a.onClick.call(n, e.native, n.active), n.lastActive.length && n.updateHoverStyle(n.lastActive, r.mode, !1), n.active.length && r.mode && n.updateHoverStyle(n.active, r.mode, !0), t = !R.arrayEquals(n.active, n.lastActive), n.lastActive = n.active, t
+					handleEvent: function(t) {
+						var e, n = this,
+							i = n.options || {},
+							a = i.hover;
+						return n.lastActive = n.lastActive || [], "mouseout" === t.type ? n.active = [] : n.active = n.getElementsAtEventForMode(t, a.mode, a), j.callback(i.onHover || i.hover.onHover, [t.native, n.active], n), "mouseup" !== t.type && "click" !== t.type || i.onClick && i.onClick.call(n, t.native, n.active), n.lastActive.length && n.updateHoverStyle(n.lastActive, a.mode, !1), n.active.length && a.mode && n.updateHoverStyle(n.active, a.mode, !0), e = !j.arrayEquals(n.active, n.lastActive), n.lastActive = n.active, e
 					}
-				}), en.instances = {};
-				var tn = en;
+				}), tn.instances = {};
+				var en = tn;
 
 				function nn() {
 					throw new Error("This method is not implemented: either no adapter can be found or an incomplete integration was provided.")
 				}
 
-				function an(e) {
-					this.options = e || {}
+				function an(t) {
+					this.options = t || {}
 				}
-				en.Controller = en, en.types = {}, R.configMerge = Kt, R.scaleMerge = qt, R.extend(an.prototype, {
+				tn.Controller = tn, tn.types = {}, j.configMerge = Xe, j.scaleMerge = Ge, j.extend(an.prototype, {
 					formats: nn,
 					parse: nn,
 					format: nn,
@@ -4620,141 +4620,141 @@
 					diff: nn,
 					startOf: nn,
 					endOf: nn,
-					_create: function(e) {
-						return e
+					_create: function(t) {
+						return t
 					}
-				}), an.override = function(e) {
-					R.extend(an.prototype, e)
+				}), an.override = function(t) {
+					j.extend(an.prototype, t)
 				};
 				var rn = {
 						_date: an
 					},
-					sn = {
+					on = {
 						formatters: {
-							values: function(e) {
-								return R.isArray(e) ? e : "" + e
+							values: function(t) {
+								return j.isArray(t) ? t : "" + t
 							},
-							linear: function(e, t, n) {
-								var a = n.length > 3 ? n[2] - n[1] : n[1] - n[0];
-								Math.abs(a) > 1 && e !== Math.floor(e) && (a = e - Math.floor(e));
-								var r = R.log10(Math.abs(a)),
-									i = "";
-								if (0 !== e)
+							linear: function(t, e, n) {
+								var i = n.length > 3 ? n[2] - n[1] : n[1] - n[0];
+								Math.abs(i) > 1 && t !== Math.floor(t) && (i = t - Math.floor(t));
+								var a = j.log10(Math.abs(i)),
+									r = "";
+								if (0 !== t)
 									if (Math.max(Math.abs(n[0]), Math.abs(n[n.length - 1])) < 1e-4) {
-										var s = R.log10(Math.abs(e)),
-											o = Math.floor(s) - Math.floor(r);
-										o = Math.max(Math.min(o, 20), 0), i = e.toExponential(o)
+										var o = j.log10(Math.abs(t)),
+											s = Math.floor(o) - Math.floor(a);
+										s = Math.max(Math.min(s, 20), 0), r = t.toExponential(s)
 									} else {
-										var d = -1 * Math.floor(r);
-										d = Math.max(Math.min(d, 20), 0), i = e.toFixed(d)
+										var l = -1 * Math.floor(a);
+										l = Math.max(Math.min(l, 20), 0), r = t.toFixed(l)
 									}
-								else i = "0";
-								return i
+								else r = "0";
+								return r
 							},
-							logarithmic: function(e, t, n) {
-								var a = e / Math.pow(10, Math.floor(R.log10(e)));
-								return 0 === e ? "0" : 1 === a || 2 === a || 5 === a || 0 === t || t === n.length - 1 ? e.toExponential() : ""
+							logarithmic: function(t, e, n) {
+								var i = t / Math.pow(10, Math.floor(j.log10(t)));
+								return 0 === t ? "0" : 1 === i || 2 === i || 5 === i || 0 === e || e === n.length - 1 ? t.toExponential() : ""
 							}
 						}
 					},
-					on = R.isArray,
-					dn = R.isNullOrUndef,
-					ln = R.valueOrDefault,
-					un = R.valueAtIndexOrDefault;
+					sn = j.isArray,
+					ln = j.isNullOrUndef,
+					un = j.valueOrDefault,
+					dn = j.valueAtIndexOrDefault;
 
-				function _n(e, t, n) {
-					var a, r = e.getTicks().length,
-						i = Math.min(t, r - 1),
-						s = e.getPixelForTick(i),
-						o = e._startPixel,
-						d = e._endPixel;
-					if (!(n && (a = 1 === r ? Math.max(s - o, d - s) : 0 === t ? (e.getPixelForTick(1) - s) / 2 : (s - e.getPixelForTick(i - 1)) / 2, (s += i < t ? a : -a) < o - 1e-6 || s > d + 1e-6))) return s
+				function cn(t, e, n) {
+					var i, a = t.getTicks().length,
+						r = Math.min(e, a - 1),
+						o = t.getPixelForTick(r),
+						s = t._startPixel,
+						l = t._endPixel;
+					if (!(n && (i = 1 === a ? Math.max(o - s, l - o) : 0 === e ? (t.getPixelForTick(1) - o) / 2 : (o - t.getPixelForTick(r - 1)) / 2, (o += r < e ? i : -i) < s - 1e-6 || o > l + 1e-6))) return o
 				}
 
-				function mn(e, t, n, a) {
-					var r, i, s, o, d, l, u, _, m, c, h, f, p, M = n.length,
+				function hn(t, e, n, i) {
+					var a, r, o, s, l, u, d, c, h, f, g, p, m, v = n.length,
+						b = [],
 						y = [],
-						g = [],
-						L = [],
-						Y = 0,
-						v = 0;
-					for (r = 0; r < M; ++r) {
-						if (o = n[r].label, d = n[r].major ? t.major : t.minor, e.font = l = d.string, u = a[l] = a[l] || {
+						x = [],
+						_ = 0,
+						k = 0;
+					for (a = 0; a < v; ++a) {
+						if (s = n[a].label, l = n[a].major ? e.major : e.minor, t.font = u = l.string, d = i[u] = i[u] || {
 								data: {},
 								gc: []
-							}, _ = d.lineHeight, m = c = 0, dn(o) || on(o)) {
-							if (on(o))
-								for (i = 0, s = o.length; i < s; ++i) h = o[i], dn(h) || on(h) || (m = R.measureText(e, u.data, u.gc, m, h), c += _)
-						} else m = R.measureText(e, u.data, u.gc, m, o), c = _;
-						y.push(m), g.push(c), L.push(_ / 2), Y = Math.max(m, Y), v = Math.max(c, v)
+							}, c = l.lineHeight, h = f = 0, ln(s) || sn(s)) {
+							if (sn(s))
+								for (r = 0, o = s.length; r < o; ++r) g = s[r], ln(g) || sn(g) || (h = j.measureText(t, d.data, d.gc, h, g), f += c)
+						} else h = j.measureText(t, d.data, d.gc, h, s), f = c;
+						b.push(h), y.push(f), x.push(c / 2), _ = Math.max(h, _), k = Math.max(f, k)
 					}
 
-					function k(e) {
+					function w(t) {
 						return {
-							width: y[e] || 0,
-							height: g[e] || 0,
-							offset: L[e] || 0
+							width: b[t] || 0,
+							height: y[t] || 0,
+							offset: x[t] || 0
 						}
 					}
-					return function(e, t) {
-						R.each(e, (function(e) {
-							var n, a = e.gc,
-								r = a.length / 2;
-							if (r > t) {
-								for (n = 0; n < r; ++n) delete e.data[a[n]];
-								a.splice(0, r)
+					return function(t, e) {
+						j.each(t, (function(t) {
+							var n, i = t.gc,
+								a = i.length / 2;
+							if (a > e) {
+								for (n = 0; n < a; ++n) delete t.data[i[n]];
+								i.splice(0, a)
 							}
 						}))
-					}(a, M), f = y.indexOf(Y), p = g.indexOf(v), {
-						first: k(0),
-						last: k(M - 1),
-						widest: k(f),
-						highest: k(p)
+					}(i, v), p = b.indexOf(_), m = y.indexOf(k), {
+						first: w(0),
+						last: w(v - 1),
+						widest: w(p),
+						highest: w(m)
 					}
 				}
 
-				function cn(e) {
-					return e.drawTicks ? e.tickMarkLength : 0
+				function fn(t) {
+					return t.drawTicks ? t.tickMarkLength : 0
 				}
 
-				function hn(e) {
-					var t, n;
-					return e.display ? (t = R.options._parseFont(e), n = R.options.toPadding(e.padding), t.lineHeight + n.height) : 0
+				function gn(t) {
+					var e, n;
+					return t.display ? (e = j.options._parseFont(t), n = j.options.toPadding(t.padding), e.lineHeight + n.height) : 0
 				}
 
-				function fn(e, t) {
-					return R.extend(R.options._parseFont({
-						fontFamily: ln(t.fontFamily, e.fontFamily),
-						fontSize: ln(t.fontSize, e.fontSize),
-						fontStyle: ln(t.fontStyle, e.fontStyle),
-						lineHeight: ln(t.lineHeight, e.lineHeight)
+				function pn(t, e) {
+					return j.extend(j.options._parseFont({
+						fontFamily: un(e.fontFamily, t.fontFamily),
+						fontSize: un(e.fontSize, t.fontSize),
+						fontStyle: un(e.fontStyle, t.fontStyle),
+						lineHeight: un(e.lineHeight, t.lineHeight)
 					}), {
-						color: R.options.resolve([t.fontColor, e.fontColor, C.global.defaultFontColor])
+						color: j.options.resolve([e.fontColor, t.fontColor, z.global.defaultFontColor])
 					})
 				}
 
-				function pn(e) {
-					var t = fn(e, e.minor);
+				function mn(t) {
+					var e = pn(t, t.minor);
 					return {
-						minor: t,
-						major: e.major.enabled ? fn(e, e.major) : t
+						minor: e,
+						major: t.major.enabled ? pn(t, t.major) : e
 					}
 				}
 
-				function Mn(e) {
-					var t, n, a, r = [];
-					for (n = 0, a = e.length; n < a; ++n) void 0 !== (t = e[n])._index && r.push(t);
-					return r
+				function vn(t) {
+					var e, n, i, a = [];
+					for (n = 0, i = t.length; n < i; ++n) void 0 !== (e = t[n])._index && a.push(e);
+					return a
 				}
 
-				function yn(e, t, n, a) {
-					var r, i, s, o, d = ln(n, 0),
-						l = Math.min(ln(a, e.length), e.length),
-						u = 0;
-					for (t = Math.ceil(t), a && (t = (r = a - n) / Math.floor(r / t)), o = d; o < 0;) u++, o = Math.round(d + u * t);
-					for (i = Math.max(d, 0); i < l; i++) s = e[i], i === o ? (s._index = i, u++, o = Math.round(d + u * t)) : delete s.label
+				function bn(t, e, n, i) {
+					var a, r, o, s, l = un(n, 0),
+						u = Math.min(un(i, t.length), t.length),
+						d = 0;
+					for (e = Math.ceil(e), i && (e = (a = i - n) / Math.floor(a / e)), s = l; s < 0;) d++, s = Math.round(l + d * e);
+					for (r = Math.max(l, 0); r < u; r++) o = t[r], r === s ? (o._index = r, d++, s = Math.round(l + d * e)) : delete o.label
 				}
-				C._set("scale", {
+				z._set("scale", {
 					display: !0,
 					position: "left",
 					offset: !1,
@@ -4793,12 +4793,12 @@
 						autoSkip: !0,
 						autoSkipPadding: 0,
 						labelOffset: 0,
-						callback: sn.formatters.values,
+						callback: on.formatters.values,
 						minor: {},
 						major: {}
 					}
 				});
-				var gn = K.extend({
+				var yn = X.extend({
 					zeroLineIndex: 0,
 					getPadding: function() {
 						return {
@@ -4812,705 +4812,705 @@
 						return this._ticks
 					},
 					_getLabels: function() {
-						var e = this.chart.data;
-						return this.options.labels || (this.isHorizontal() ? e.xLabels : e.yLabels) || e.labels || []
+						var t = this.chart.data;
+						return this.options.labels || (this.isHorizontal() ? t.xLabels : t.yLabels) || t.labels || []
 					},
 					mergeTicksOptions: function() {},
 					beforeUpdate: function() {
-						R.callback(this.options.beforeUpdate, [this])
+						j.callback(this.options.beforeUpdate, [this])
 					},
-					update: function(e, t, n) {
-						var a, r, i, s, o, d = this,
-							l = d.options.ticks,
-							u = l.sampleSize;
-						if (d.beforeUpdate(), d.maxWidth = e, d.maxHeight = t, d.margins = R.extend({
+					update: function(t, e, n) {
+						var i, a, r, o, s, l = this,
+							u = l.options.ticks,
+							d = u.sampleSize;
+						if (l.beforeUpdate(), l.maxWidth = t, l.maxHeight = e, l.margins = j.extend({
 								left: 0,
 								right: 0,
 								top: 0,
 								bottom: 0
-							}, n), d._ticks = null, d.ticks = null, d._labelSizes = null, d._maxLabelLines = 0, d.longestLabelWidth = 0, d.longestTextCache = d.longestTextCache || {}, d._gridLineItems = null, d._labelItems = null, d.beforeSetDimensions(), d.setDimensions(), d.afterSetDimensions(), d.beforeDataLimits(), d.determineDataLimits(), d.afterDataLimits(), d.beforeBuildTicks(), s = d.buildTicks() || [], (!(s = d.afterBuildTicks(s) || s) || !s.length) && d.ticks)
-							for (s = [], a = 0, r = d.ticks.length; a < r; ++a) s.push({
-								value: d.ticks[a],
+							}, n), l._ticks = null, l.ticks = null, l._labelSizes = null, l._maxLabelLines = 0, l.longestLabelWidth = 0, l.longestTextCache = l.longestTextCache || {}, l._gridLineItems = null, l._labelItems = null, l.beforeSetDimensions(), l.setDimensions(), l.afterSetDimensions(), l.beforeDataLimits(), l.determineDataLimits(), l.afterDataLimits(), l.beforeBuildTicks(), o = l.buildTicks() || [], (!(o = l.afterBuildTicks(o) || o) || !o.length) && l.ticks)
+							for (o = [], i = 0, a = l.ticks.length; i < a; ++i) o.push({
+								value: l.ticks[i],
 								major: !1
 							});
-						return d._ticks = s, o = u < s.length, i = d._convertTicksToLabels(o ? function(e, t) {
-							for (var n = [], a = e.length / t, r = 0, i = e.length; r < i; r += a) n.push(e[Math.floor(r)]);
+						return l._ticks = o, s = d < o.length, r = l._convertTicksToLabels(s ? function(t, e) {
+							for (var n = [], i = t.length / e, a = 0, r = t.length; a < r; a += i) n.push(t[Math.floor(a)]);
 							return n
-						}(s, u) : s), d._configure(), d.beforeCalculateTickRotation(), d.calculateTickRotation(), d.afterCalculateTickRotation(), d.beforeFit(), d.fit(), d.afterFit(), d._ticksToDraw = l.display && (l.autoSkip || "auto" === l.source) ? d._autoSkip(s) : s, o && (i = d._convertTicksToLabels(d._ticksToDraw)), d.ticks = i, d.afterUpdate(), d.minSize
+						}(o, d) : o), l._configure(), l.beforeCalculateTickRotation(), l.calculateTickRotation(), l.afterCalculateTickRotation(), l.beforeFit(), l.fit(), l.afterFit(), l._ticksToDraw = u.display && (u.autoSkip || "auto" === u.source) ? l._autoSkip(o) : o, s && (r = l._convertTicksToLabels(l._ticksToDraw)), l.ticks = r, l.afterUpdate(), l.minSize
 					},
 					_configure: function() {
-						var e, t, n = this,
-							a = n.options.ticks.reverse;
-						n.isHorizontal() ? (e = n.left, t = n.right) : (e = n.top, t = n.bottom, a = !a), n._startPixel = e, n._endPixel = t, n._reversePixels = a, n._length = t - e
+						var t, e, n = this,
+							i = n.options.ticks.reverse;
+						n.isHorizontal() ? (t = n.left, e = n.right) : (t = n.top, e = n.bottom, i = !i), n._startPixel = t, n._endPixel = e, n._reversePixels = i, n._length = e - t
 					},
 					afterUpdate: function() {
-						R.callback(this.options.afterUpdate, [this])
+						j.callback(this.options.afterUpdate, [this])
 					},
 					beforeSetDimensions: function() {
-						R.callback(this.options.beforeSetDimensions, [this])
+						j.callback(this.options.beforeSetDimensions, [this])
 					},
 					setDimensions: function() {
-						var e = this;
-						e.isHorizontal() ? (e.width = e.maxWidth, e.left = 0, e.right = e.width) : (e.height = e.maxHeight, e.top = 0, e.bottom = e.height), e.paddingLeft = 0, e.paddingTop = 0, e.paddingRight = 0, e.paddingBottom = 0
+						var t = this;
+						t.isHorizontal() ? (t.width = t.maxWidth, t.left = 0, t.right = t.width) : (t.height = t.maxHeight, t.top = 0, t.bottom = t.height), t.paddingLeft = 0, t.paddingTop = 0, t.paddingRight = 0, t.paddingBottom = 0
 					},
 					afterSetDimensions: function() {
-						R.callback(this.options.afterSetDimensions, [this])
+						j.callback(this.options.afterSetDimensions, [this])
 					},
 					beforeDataLimits: function() {
-						R.callback(this.options.beforeDataLimits, [this])
+						j.callback(this.options.beforeDataLimits, [this])
 					},
-					determineDataLimits: R.noop,
+					determineDataLimits: j.noop,
 					afterDataLimits: function() {
-						R.callback(this.options.afterDataLimits, [this])
+						j.callback(this.options.afterDataLimits, [this])
 					},
 					beforeBuildTicks: function() {
-						R.callback(this.options.beforeBuildTicks, [this])
+						j.callback(this.options.beforeBuildTicks, [this])
 					},
-					buildTicks: R.noop,
-					afterBuildTicks: function(e) {
-						var t = this;
-						return on(e) && e.length ? R.callback(t.options.afterBuildTicks, [t, e]) : (t.ticks = R.callback(t.options.afterBuildTicks, [t, t.ticks]) || t.ticks, e)
+					buildTicks: j.noop,
+					afterBuildTicks: function(t) {
+						var e = this;
+						return sn(t) && t.length ? j.callback(e.options.afterBuildTicks, [e, t]) : (e.ticks = j.callback(e.options.afterBuildTicks, [e, e.ticks]) || e.ticks, t)
 					},
 					beforeTickToLabelConversion: function() {
-						R.callback(this.options.beforeTickToLabelConversion, [this])
+						j.callback(this.options.beforeTickToLabelConversion, [this])
 					},
 					convertTicksToLabels: function() {
-						var e = this.options.ticks;
-						this.ticks = this.ticks.map(e.userCallback || e.callback, this)
+						var t = this.options.ticks;
+						this.ticks = this.ticks.map(t.userCallback || t.callback, this)
 					},
 					afterTickToLabelConversion: function() {
-						R.callback(this.options.afterTickToLabelConversion, [this])
+						j.callback(this.options.afterTickToLabelConversion, [this])
 					},
 					beforeCalculateTickRotation: function() {
-						R.callback(this.options.beforeCalculateTickRotation, [this])
+						j.callback(this.options.beforeCalculateTickRotation, [this])
 					},
 					calculateTickRotation: function() {
-						var e, t, n, a, r, i, s, o = this,
-							d = o.options,
-							l = d.ticks,
-							u = o.getTicks().length,
-							_ = l.minRotation || 0,
-							m = l.maxRotation,
-							c = _;
-						!o._isVisible() || !l.display || _ >= m || u <= 1 || !o.isHorizontal() ? o.labelRotation = _ : (t = (e = o._getLabelSizes()).widest.width, n = e.highest.height - e.highest.offset, a = Math.min(o.maxWidth, o.chart.width - t), t + 6 > (r = d.offset ? o.maxWidth / u : a / (u - 1)) && (r = a / (u - (d.offset ? .5 : 1)), i = o.maxHeight - cn(d.gridLines) - l.padding - hn(d.scaleLabel), s = Math.sqrt(t * t + n * n), c = R.toDegrees(Math.min(Math.asin(Math.min((e.highest.height + 6) / r, 1)), Math.asin(Math.min(i / s, 1)) - Math.asin(n / s))), c = Math.max(_, Math.min(m, c))), o.labelRotation = c)
+						var t, e, n, i, a, r, o, s = this,
+							l = s.options,
+							u = l.ticks,
+							d = s.getTicks().length,
+							c = u.minRotation || 0,
+							h = u.maxRotation,
+							f = c;
+						!s._isVisible() || !u.display || c >= h || d <= 1 || !s.isHorizontal() ? s.labelRotation = c : (e = (t = s._getLabelSizes()).widest.width, n = t.highest.height - t.highest.offset, i = Math.min(s.maxWidth, s.chart.width - e), e + 6 > (a = l.offset ? s.maxWidth / d : i / (d - 1)) && (a = i / (d - (l.offset ? .5 : 1)), r = s.maxHeight - fn(l.gridLines) - u.padding - gn(l.scaleLabel), o = Math.sqrt(e * e + n * n), f = j.toDegrees(Math.min(Math.asin(Math.min((t.highest.height + 6) / a, 1)), Math.asin(Math.min(r / o, 1)) - Math.asin(n / o))), f = Math.max(c, Math.min(h, f))), s.labelRotation = f)
 					},
 					afterCalculateTickRotation: function() {
-						R.callback(this.options.afterCalculateTickRotation, [this])
+						j.callback(this.options.afterCalculateTickRotation, [this])
 					},
 					beforeFit: function() {
-						R.callback(this.options.beforeFit, [this])
+						j.callback(this.options.beforeFit, [this])
 					},
 					fit: function() {
-						var e = this,
-							t = e.minSize = {
+						var t = this,
+							e = t.minSize = {
 								width: 0,
 								height: 0
 							},
-							n = e.chart,
-							a = e.options,
-							r = a.ticks,
-							i = a.scaleLabel,
-							s = a.gridLines,
-							o = e._isVisible(),
-							d = "bottom" === a.position,
-							l = e.isHorizontal();
-						if (l ? t.width = e.maxWidth : o && (t.width = cn(s) + hn(i)), l ? o && (t.height = cn(s) + hn(i)) : t.height = e.maxHeight, r.display && o) {
-							var u = pn(r),
-								_ = e._getLabelSizes(),
-								m = _.first,
-								c = _.last,
-								h = _.widest,
-								f = _.highest,
-								p = .4 * u.minor.lineHeight,
-								M = r.padding;
-							if (l) {
-								var y = 0 !== e.labelRotation,
-									g = R.toRadians(e.labelRotation),
-									L = Math.cos(g),
-									Y = Math.sin(g),
-									v = Y * h.width + L * (f.height - (y ? f.offset : 0)) + (y ? 0 : p);
-								t.height = Math.min(e.maxHeight, t.height + v + M);
-								var k, b, D = e.getPixelForTick(0) - e.left,
-									w = e.right - e.getPixelForTick(e.getTicks().length - 1);
-								y ? (k = d ? L * m.width + Y * m.offset : Y * (m.height - m.offset), b = d ? Y * (c.height - c.offset) : L * c.width + Y * c.offset) : (k = m.width / 2, b = c.width / 2), e.paddingLeft = Math.max((k - D) * e.width / (e.width - D), 0) + 3, e.paddingRight = Math.max((b - w) * e.width / (e.width - w), 0) + 3
+							n = t.chart,
+							i = t.options,
+							a = i.ticks,
+							r = i.scaleLabel,
+							o = i.gridLines,
+							s = t._isVisible(),
+							l = "bottom" === i.position,
+							u = t.isHorizontal();
+						if (u ? e.width = t.maxWidth : s && (e.width = fn(o) + gn(r)), u ? s && (e.height = fn(o) + gn(r)) : e.height = t.maxHeight, a.display && s) {
+							var d = mn(a),
+								c = t._getLabelSizes(),
+								h = c.first,
+								f = c.last,
+								g = c.widest,
+								p = c.highest,
+								m = .4 * d.minor.lineHeight,
+								v = a.padding;
+							if (u) {
+								var b = 0 !== t.labelRotation,
+									y = j.toRadians(t.labelRotation),
+									x = Math.cos(y),
+									_ = Math.sin(y),
+									k = _ * g.width + x * (p.height - (b ? p.offset : 0)) + (b ? 0 : m);
+								e.height = Math.min(t.maxHeight, e.height + k + v);
+								var w, M, C = t.getPixelForTick(0) - t.left,
+									S = t.right - t.getPixelForTick(t.getTicks().length - 1);
+								b ? (w = l ? x * h.width + _ * h.offset : _ * (h.height - h.offset), M = l ? _ * (f.height - f.offset) : x * f.width + _ * f.offset) : (w = h.width / 2, M = f.width / 2), t.paddingLeft = Math.max((w - C) * t.width / (t.width - C), 0) + 3, t.paddingRight = Math.max((M - S) * t.width / (t.width - S), 0) + 3
 							} else {
-								var T = r.mirror ? 0 : h.width + M + p;
-								t.width = Math.min(e.maxWidth, t.width + T), e.paddingTop = m.height / 2, e.paddingBottom = c.height / 2
+								var P = a.mirror ? 0 : g.width + v + m;
+								e.width = Math.min(t.maxWidth, e.width + P), t.paddingTop = h.height / 2, t.paddingBottom = f.height / 2
 							}
 						}
-						e.handleMargins(), l ? (e.width = e._length = n.width - e.margins.left - e.margins.right, e.height = t.height) : (e.width = t.width, e.height = e._length = n.height - e.margins.top - e.margins.bottom)
+						t.handleMargins(), u ? (t.width = t._length = n.width - t.margins.left - t.margins.right, t.height = e.height) : (t.width = e.width, t.height = t._length = n.height - t.margins.top - t.margins.bottom)
 					},
 					handleMargins: function() {
-						var e = this;
-						e.margins && (e.margins.left = Math.max(e.paddingLeft, e.margins.left), e.margins.top = Math.max(e.paddingTop, e.margins.top), e.margins.right = Math.max(e.paddingRight, e.margins.right), e.margins.bottom = Math.max(e.paddingBottom, e.margins.bottom))
+						var t = this;
+						t.margins && (t.margins.left = Math.max(t.paddingLeft, t.margins.left), t.margins.top = Math.max(t.paddingTop, t.margins.top), t.margins.right = Math.max(t.paddingRight, t.margins.right), t.margins.bottom = Math.max(t.paddingBottom, t.margins.bottom))
 					},
 					afterFit: function() {
-						R.callback(this.options.afterFit, [this])
+						j.callback(this.options.afterFit, [this])
 					},
 					isHorizontal: function() {
-						var e = this.options.position;
-						return "top" === e || "bottom" === e
+						var t = this.options.position;
+						return "top" === t || "bottom" === t
 					},
 					isFullWidth: function() {
 						return this.options.fullWidth
 					},
-					getRightValue: function(e) {
-						if (dn(e)) return NaN;
-						if (("number" == typeof e || e instanceof Number) && !isFinite(e)) return NaN;
-						if (e)
+					getRightValue: function(t) {
+						if (ln(t)) return NaN;
+						if (("number" == typeof t || t instanceof Number) && !isFinite(t)) return NaN;
+						if (t)
 							if (this.isHorizontal()) {
-								if (void 0 !== e.x) return this.getRightValue(e.x)
-							} else if (void 0 !== e.y) return this.getRightValue(e.y);
-						return e
-					},
-					_convertTicksToLabels: function(e) {
-						var t, n, a, r = this;
-						for (r.ticks = e.map((function(e) {
-								return e.value
-							})), r.beforeTickToLabelConversion(), t = r.convertTicksToLabels(e) || r.ticks, r.afterTickToLabelConversion(), n = 0, a = e.length; n < a; ++n) e[n].label = t[n];
+								if (void 0 !== t.x) return this.getRightValue(t.x)
+							} else if (void 0 !== t.y) return this.getRightValue(t.y);
 						return t
 					},
-					_getLabelSizes: function() {
-						var e = this,
-							t = e._labelSizes;
-						return t || (e._labelSizes = t = mn(e.ctx, pn(e.options.ticks), e.getTicks(), e.longestTextCache), e.longestLabelWidth = t.widest.width), t
+					_convertTicksToLabels: function(t) {
+						var e, n, i, a = this;
+						for (a.ticks = t.map((function(t) {
+								return t.value
+							})), a.beforeTickToLabelConversion(), e = a.convertTicksToLabels(t) || a.ticks, a.afterTickToLabelConversion(), n = 0, i = t.length; n < i; ++n) t[n].label = e[n];
+						return e
 					},
-					_parseValue: function(e) {
-						var t, n, a, r;
-						return on(e) ? (t = +this.getRightValue(e[0]), n = +this.getRightValue(e[1]), a = Math.min(t, n), r = Math.max(t, n)) : (t = void 0, n = e = +this.getRightValue(e), a = e, r = e), {
-							min: a,
-							max: r,
-							start: t,
+					_getLabelSizes: function() {
+						var t = this,
+							e = t._labelSizes;
+						return e || (t._labelSizes = e = hn(t.ctx, mn(t.options.ticks), t.getTicks(), t.longestTextCache), t.longestLabelWidth = e.widest.width), e
+					},
+					_parseValue: function(t) {
+						var e, n, i, a;
+						return sn(t) ? (e = +this.getRightValue(t[0]), n = +this.getRightValue(t[1]), i = Math.min(e, n), a = Math.max(e, n)) : (e = void 0, n = t = +this.getRightValue(t), i = t, a = t), {
+							min: i,
+							max: a,
+							start: e,
 							end: n
 						}
 					},
-					_getScaleLabel: function(e) {
-						var t = this._parseValue(e);
-						return void 0 !== t.start ? "[" + t.start + ", " + t.end + "]" : +this.getRightValue(e)
+					_getScaleLabel: function(t) {
+						var e = this._parseValue(t);
+						return void 0 !== e.start ? "[" + e.start + ", " + e.end + "]" : +this.getRightValue(t)
 					},
-					getLabelForIndex: R.noop,
-					getPixelForValue: R.noop,
-					getValueForPixel: R.noop,
-					getPixelForTick: function(e) {
-						var t = this.options.offset,
+					getLabelForIndex: j.noop,
+					getPixelForValue: j.noop,
+					getValueForPixel: j.noop,
+					getPixelForTick: function(t) {
+						var e = this.options.offset,
 							n = this._ticks.length,
-							a = 1 / Math.max(n - (t ? 0 : 1), 1);
-						return e < 0 || e > n - 1 ? null : this.getPixelForDecimal(e * a + (t ? a / 2 : 0))
+							i = 1 / Math.max(n - (e ? 0 : 1), 1);
+						return t < 0 || t > n - 1 ? null : this.getPixelForDecimal(t * i + (e ? i / 2 : 0))
 					},
-					getPixelForDecimal: function(e) {
-						return this._reversePixels && (e = 1 - e), this._startPixel + e * this._length
+					getPixelForDecimal: function(t) {
+						return this._reversePixels && (t = 1 - t), this._startPixel + t * this._length
 					},
-					getDecimalForPixel: function(e) {
-						var t = (e - this._startPixel) / this._length;
-						return this._reversePixels ? 1 - t : t
+					getDecimalForPixel: function(t) {
+						var e = (t - this._startPixel) / this._length;
+						return this._reversePixels ? 1 - e : e
 					},
 					getBasePixel: function() {
 						return this.getPixelForValue(this.getBaseValue())
 					},
 					getBaseValue: function() {
-						var e = this.min,
-							t = this.max;
-						return this.beginAtZero ? 0 : e < 0 && t < 0 ? t : e > 0 && t > 0 ? e : 0
+						var t = this.min,
+							e = this.max;
+						return this.beginAtZero ? 0 : t < 0 && e < 0 ? e : t > 0 && e > 0 ? t : 0
 					},
-					_autoSkip: function(e) {
-						var t, n, a, r, i = this.options.ticks,
-							s = this._length,
-							o = i.maxTicksLimit || s / this._tickSize() + 1,
-							d = i.major.enabled ? function(e) {
-								var t, n, a = [];
-								for (t = 0, n = e.length; t < n; t++) e[t].major && a.push(t);
-								return a
-							}(e) : [],
-							l = d.length,
-							u = d[0],
-							_ = d[l - 1];
-						if (l > o) return function(e, t, n) {
-							var a, r, i = 0,
-								s = t[0];
-							for (n = Math.ceil(n), a = 0; a < e.length; a++) r = e[a], a === s ? (r._index = a, s = t[++i * n]) : delete r.label
-						}(e, d, l / o), Mn(e);
-						if (a = function(e, t, n, a) {
-								var r, i, s, o, d = function(e) {
-										var t, n, a = e.length;
-										if (a < 2) return !1;
-										for (n = e[0], t = 1; t < a; ++t)
-											if (e[t] - e[t - 1] !== n) return !1;
+					_autoSkip: function(t) {
+						var e, n, i, a, r = this.options.ticks,
+							o = this._length,
+							s = r.maxTicksLimit || o / this._tickSize() + 1,
+							l = r.major.enabled ? function(t) {
+								var e, n, i = [];
+								for (e = 0, n = t.length; e < n; e++) t[e].major && i.push(e);
+								return i
+							}(t) : [],
+							u = l.length,
+							d = l[0],
+							c = l[u - 1];
+						if (u > s) return function(t, e, n) {
+							var i, a, r = 0,
+								o = e[0];
+							for (n = Math.ceil(n), i = 0; i < t.length; i++) a = t[i], i === o ? (a._index = i, o = e[++r * n]) : delete a.label
+						}(t, l, u / s), vn(t);
+						if (i = function(t, e, n, i) {
+								var a, r, o, s, l = function(t) {
+										var e, n, i = t.length;
+										if (i < 2) return !1;
+										for (n = t[0], e = 1; e < i; ++e)
+											if (t[e] - t[e - 1] !== n) return !1;
 										return n
-									}(e),
-									l = (t.length - 1) / a;
-								if (!d) return Math.max(l, 1);
-								for (s = 0, o = (r = R.math._factorize(d)).length - 1; s < o; s++)
-									if ((i = r[s]) > l) return i;
-								return Math.max(l, 1)
-							}(d, e, 0, o), l > 0) {
-							for (t = 0, n = l - 1; t < n; t++) yn(e, a, d[t], d[t + 1]);
-							return r = l > 1 ? (_ - u) / (l - 1) : null, yn(e, a, R.isNullOrUndef(r) ? 0 : u - r, u), yn(e, a, _, R.isNullOrUndef(r) ? e.length : _ + r), Mn(e)
+									}(t),
+									u = (e.length - 1) / i;
+								if (!l) return Math.max(u, 1);
+								for (o = 0, s = (a = j.math._factorize(l)).length - 1; o < s; o++)
+									if ((r = a[o]) > u) return r;
+								return Math.max(u, 1)
+							}(l, t, 0, s), u > 0) {
+							for (e = 0, n = u - 1; e < n; e++) bn(t, i, l[e], l[e + 1]);
+							return a = u > 1 ? (c - d) / (u - 1) : null, bn(t, i, j.isNullOrUndef(a) ? 0 : d - a, d), bn(t, i, c, j.isNullOrUndef(a) ? t.length : c + a), vn(t)
 						}
-						return yn(e, a), Mn(e)
+						return bn(t, i), vn(t)
 					},
 					_tickSize: function() {
-						var e = this.options.ticks,
-							t = R.toRadians(this.labelRotation),
-							n = Math.abs(Math.cos(t)),
-							a = Math.abs(Math.sin(t)),
-							r = this._getLabelSizes(),
-							i = e.autoSkipPadding || 0,
-							s = r ? r.widest.width + i : 0,
-							o = r ? r.highest.height + i : 0;
-						return this.isHorizontal() ? o * n > s * a ? s / n : o / a : o * a < s * n ? o / n : s / a
+						var t = this.options.ticks,
+							e = j.toRadians(this.labelRotation),
+							n = Math.abs(Math.cos(e)),
+							i = Math.abs(Math.sin(e)),
+							a = this._getLabelSizes(),
+							r = t.autoSkipPadding || 0,
+							o = a ? a.widest.width + r : 0,
+							s = a ? a.highest.height + r : 0;
+						return this.isHorizontal() ? s * n > o * i ? o / n : s / i : s * i < o * n ? s / n : o / i
 					},
 					_isVisible: function() {
-						var e, t, n, a = this.chart,
-							r = this.options.display;
-						if ("auto" !== r) return !!r;
-						for (e = 0, t = a.data.datasets.length; e < t; ++e)
-							if (a.isDatasetVisible(e) && ((n = a.getDatasetMeta(e)).xAxisID === this.id || n.yAxisID === this.id)) return !0;
+						var t, e, n, i = this.chart,
+							a = this.options.display;
+						if ("auto" !== a) return !!a;
+						for (t = 0, e = i.data.datasets.length; t < e; ++t)
+							if (i.isDatasetVisible(t) && ((n = i.getDatasetMeta(t)).xAxisID === this.id || n.yAxisID === this.id)) return !0;
 						return !1
 					},
-					_computeGridLineItems: function(e) {
-						var t, n, a, r, i, s, o, d, l, u, _, m, c, h, f, p, M, y = this,
-							g = y.chart,
-							L = y.options,
-							Y = L.gridLines,
-							v = L.position,
-							k = Y.offsetGridLines,
-							b = y.isHorizontal(),
-							D = y._ticksToDraw,
-							w = D.length + (k ? 1 : 0),
-							T = cn(Y),
-							x = [],
-							S = Y.drawBorder ? un(Y.lineWidth, 0, 0) : 0,
-							H = S / 2,
-							j = R._alignPixel,
-							P = function(e) {
-								return j(g, e, S)
+					_computeGridLineItems: function(t) {
+						var e, n, i, a, r, o, s, l, u, d, c, h, f, g, p, m, v, b = this,
+							y = b.chart,
+							x = b.options,
+							_ = x.gridLines,
+							k = x.position,
+							w = _.offsetGridLines,
+							M = b.isHorizontal(),
+							C = b._ticksToDraw,
+							S = C.length + (w ? 1 : 0),
+							P = fn(_),
+							A = [],
+							D = _.drawBorder ? dn(_.lineWidth, 0, 0) : 0,
+							I = D / 2,
+							T = j._alignPixel,
+							F = function(t) {
+								return T(y, t, D)
 							};
-						for ("top" === v ? (t = P(y.bottom), o = y.bottom - T, l = t - H, _ = P(e.top) + H, c = e.bottom) : "bottom" === v ? (t = P(y.top), _ = e.top, c = P(e.bottom) - H, o = t + H, l = y.top + T) : "left" === v ? (t = P(y.right), s = y.right - T, d = t - H, u = P(e.left) + H, m = e.right) : (t = P(y.left), u = e.left, m = P(e.right) - H, s = t + H, d = y.left + T), n = 0; n < w; ++n) a = D[n] || {}, dn(a.label) && n < D.length || (n === y.zeroLineIndex && L.offset === k ? (h = Y.zeroLineWidth, f = Y.zeroLineColor, p = Y.zeroLineBorderDash || [], M = Y.zeroLineBorderDashOffset || 0) : (h = un(Y.lineWidth, n, 1), f = un(Y.color, n, "rgba(0,0,0,0.1)"), p = Y.borderDash || [], M = Y.borderDashOffset || 0), void 0 !== (r = _n(y, a._index || n, k)) && (i = j(g, r, h), b ? s = d = u = m = i : o = l = _ = c = i, x.push({
-							tx1: s,
-							ty1: o,
-							tx2: d,
-							ty2: l,
-							x1: u,
-							y1: _,
-							x2: m,
-							y2: c,
-							width: h,
-							color: f,
-							borderDash: p,
-							borderDashOffset: M
+						for ("top" === k ? (e = F(b.bottom), s = b.bottom - P, u = e - I, c = F(t.top) + I, f = t.bottom) : "bottom" === k ? (e = F(b.top), c = t.top, f = F(t.bottom) - I, s = e + I, u = b.top + P) : "left" === k ? (e = F(b.right), o = b.right - P, l = e - I, d = F(t.left) + I, h = t.right) : (e = F(b.left), d = t.left, h = F(t.right) - I, o = e + I, l = b.left + P), n = 0; n < S; ++n) i = C[n] || {}, ln(i.label) && n < C.length || (n === b.zeroLineIndex && x.offset === w ? (g = _.zeroLineWidth, p = _.zeroLineColor, m = _.zeroLineBorderDash || [], v = _.zeroLineBorderDashOffset || 0) : (g = dn(_.lineWidth, n, 1), p = dn(_.color, n, "rgba(0,0,0,0.1)"), m = _.borderDash || [], v = _.borderDashOffset || 0), void 0 !== (a = cn(b, i._index || n, w)) && (r = T(y, a, g), M ? o = l = d = h = r : s = u = c = f = r, A.push({
+							tx1: o,
+							ty1: s,
+							tx2: l,
+							ty2: u,
+							x1: d,
+							y1: c,
+							x2: h,
+							y2: f,
+							width: g,
+							color: p,
+							borderDash: m,
+							borderDashOffset: v
 						})));
-						return x.ticksLength = w, x.borderValue = t, x
+						return A.ticksLength = S, A.borderValue = e, A
 					},
 					_computeLabelItems: function() {
-						var e, t, n, a, r, i, s, o, d, l, u, _, m = this,
-							c = m.options,
-							h = c.ticks,
-							f = c.position,
-							p = h.mirror,
-							M = m.isHorizontal(),
-							y = m._ticksToDraw,
-							g = pn(h),
-							L = h.padding,
-							Y = cn(c.gridLines),
-							v = -R.toRadians(m.labelRotation),
-							k = [];
-						for ("top" === f ? (i = m.bottom - Y - L, s = v ? "left" : "center") : "bottom" === f ? (i = m.top + Y + L, s = v ? "right" : "center") : "left" === f ? (r = m.right - (p ? 0 : Y) - L, s = p ? "left" : "right") : (r = m.left + (p ? 0 : Y) + L, s = p ? "right" : "left"), e = 0, t = y.length; e < t; ++e) a = (n = y[e]).label, dn(a) || (o = m.getPixelForTick(n._index || e) + h.labelOffset, l = (d = n.major ? g.major : g.minor).lineHeight, u = on(a) ? a.length : 1, M ? (r = o, _ = "top" === f ? ((v ? 1 : .5) - u) * l : (v ? 0 : .5) * l) : (i = o, _ = (1 - u) * l / 2), k.push({
-							x: r,
-							y: i,
-							rotation: v,
-							label: a,
-							font: d,
-							textOffset: _,
-							textAlign: s
+						var t, e, n, i, a, r, o, s, l, u, d, c, h = this,
+							f = h.options,
+							g = f.ticks,
+							p = f.position,
+							m = g.mirror,
+							v = h.isHorizontal(),
+							b = h._ticksToDraw,
+							y = mn(g),
+							x = g.padding,
+							_ = fn(f.gridLines),
+							k = -j.toRadians(h.labelRotation),
+							w = [];
+						for ("top" === p ? (r = h.bottom - _ - x, o = k ? "left" : "center") : "bottom" === p ? (r = h.top + _ + x, o = k ? "right" : "center") : "left" === p ? (a = h.right - (m ? 0 : _) - x, o = m ? "left" : "right") : (a = h.left + (m ? 0 : _) + x, o = m ? "right" : "left"), t = 0, e = b.length; t < e; ++t) i = (n = b[t]).label, ln(i) || (s = h.getPixelForTick(n._index || t) + g.labelOffset, u = (l = n.major ? y.major : y.minor).lineHeight, d = sn(i) ? i.length : 1, v ? (a = s, c = "top" === p ? ((k ? 1 : .5) - d) * u : (k ? 0 : .5) * u) : (r = s, c = (1 - d) * u / 2), w.push({
+							x: a,
+							y: r,
+							rotation: k,
+							label: i,
+							font: l,
+							textOffset: c,
+							textAlign: o
 						}));
-						return k
+						return w
 					},
-					_drawGrid: function(e) {
-						var t = this,
-							n = t.options.gridLines;
+					_drawGrid: function(t) {
+						var e = this,
+							n = e.options.gridLines;
 						if (n.display) {
-							var a, r, i, s, o, d = t.ctx,
-								l = t.chart,
-								u = R._alignPixel,
-								_ = n.drawBorder ? un(n.lineWidth, 0, 0) : 0,
-								m = t._gridLineItems || (t._gridLineItems = t._computeGridLineItems(e));
-							for (i = 0, s = m.length; i < s; ++i) a = (o = m[i]).width, r = o.color, a && r && (d.save(), d.lineWidth = a, d.strokeStyle = r, d.setLineDash && (d.setLineDash(o.borderDash), d.lineDashOffset = o.borderDashOffset), d.beginPath(), n.drawTicks && (d.moveTo(o.tx1, o.ty1), d.lineTo(o.tx2, o.ty2)), n.drawOnChartArea && (d.moveTo(o.x1, o.y1), d.lineTo(o.x2, o.y2)), d.stroke(), d.restore());
-							if (_) {
-								var c, h, f, p, M = _,
-									y = un(n.lineWidth, m.ticksLength - 1, 1),
-									g = m.borderValue;
-								t.isHorizontal() ? (c = u(l, t.left, M) - M / 2, h = u(l, t.right, y) + y / 2, f = p = g) : (f = u(l, t.top, M) - M / 2, p = u(l, t.bottom, y) + y / 2, c = h = g), d.lineWidth = _, d.strokeStyle = un(n.color, 0), d.beginPath(), d.moveTo(c, f), d.lineTo(h, p), d.stroke()
+							var i, a, r, o, s, l = e.ctx,
+								u = e.chart,
+								d = j._alignPixel,
+								c = n.drawBorder ? dn(n.lineWidth, 0, 0) : 0,
+								h = e._gridLineItems || (e._gridLineItems = e._computeGridLineItems(t));
+							for (r = 0, o = h.length; r < o; ++r) i = (s = h[r]).width, a = s.color, i && a && (l.save(), l.lineWidth = i, l.strokeStyle = a, l.setLineDash && (l.setLineDash(s.borderDash), l.lineDashOffset = s.borderDashOffset), l.beginPath(), n.drawTicks && (l.moveTo(s.tx1, s.ty1), l.lineTo(s.tx2, s.ty2)), n.drawOnChartArea && (l.moveTo(s.x1, s.y1), l.lineTo(s.x2, s.y2)), l.stroke(), l.restore());
+							if (c) {
+								var f, g, p, m, v = c,
+									b = dn(n.lineWidth, h.ticksLength - 1, 1),
+									y = h.borderValue;
+								e.isHorizontal() ? (f = d(u, e.left, v) - v / 2, g = d(u, e.right, b) + b / 2, p = m = y) : (p = d(u, e.top, v) - v / 2, m = d(u, e.bottom, b) + b / 2, f = g = y), l.lineWidth = c, l.strokeStyle = dn(n.color, 0), l.beginPath(), l.moveTo(f, p), l.lineTo(g, m), l.stroke()
 							}
 						}
 					},
 					_drawLabels: function() {
-						var e = this;
-						if (e.options.ticks.display) {
-							var t, n, a, r, i, s, o, d, l = e.ctx,
-								u = e._labelItems || (e._labelItems = e._computeLabelItems());
-							for (t = 0, a = u.length; t < a; ++t) {
-								if (s = (i = u[t]).font, l.save(), l.translate(i.x, i.y), l.rotate(i.rotation), l.font = s.string, l.fillStyle = s.color, l.textBaseline = "middle", l.textAlign = i.textAlign, o = i.label, d = i.textOffset, on(o))
-									for (n = 0, r = o.length; n < r; ++n) l.fillText("" + o[n], 0, d), d += s.lineHeight;
-								else l.fillText(o, 0, d);
-								l.restore()
+						var t = this;
+						if (t.options.ticks.display) {
+							var e, n, i, a, r, o, s, l, u = t.ctx,
+								d = t._labelItems || (t._labelItems = t._computeLabelItems());
+							for (e = 0, i = d.length; e < i; ++e) {
+								if (o = (r = d[e]).font, u.save(), u.translate(r.x, r.y), u.rotate(r.rotation), u.font = o.string, u.fillStyle = o.color, u.textBaseline = "middle", u.textAlign = r.textAlign, s = r.label, l = r.textOffset, sn(s))
+									for (n = 0, a = s.length; n < a; ++n) u.fillText("" + s[n], 0, l), l += o.lineHeight;
+								else u.fillText(s, 0, l);
+								u.restore()
 							}
 						}
 					},
 					_drawTitle: function() {
-						var e = this,
-							t = e.ctx,
-							n = e.options,
-							a = n.scaleLabel;
-						if (a.display) {
-							var r, i, s = ln(a.fontColor, C.global.defaultFontColor),
-								o = R.options._parseFont(a),
-								d = R.options.toPadding(a.padding),
-								l = o.lineHeight / 2,
-								u = n.position,
-								_ = 0;
-							if (e.isHorizontal()) r = e.left + e.width / 2, i = "bottom" === u ? e.bottom - l - d.bottom : e.top + l + d.top;
+						var t = this,
+							e = t.ctx,
+							n = t.options,
+							i = n.scaleLabel;
+						if (i.display) {
+							var a, r, o = un(i.fontColor, z.global.defaultFontColor),
+								s = j.options._parseFont(i),
+								l = j.options.toPadding(i.padding),
+								u = s.lineHeight / 2,
+								d = n.position,
+								c = 0;
+							if (t.isHorizontal()) a = t.left + t.width / 2, r = "bottom" === d ? t.bottom - u - l.bottom : t.top + u + l.top;
 							else {
-								var m = "left" === u;
-								r = m ? e.left + l + d.top : e.right - l - d.top, i = e.top + e.height / 2, _ = m ? -.5 * Math.PI : .5 * Math.PI
+								var h = "left" === d;
+								a = h ? t.left + u + l.top : t.right - u - l.top, r = t.top + t.height / 2, c = h ? -.5 * Math.PI : .5 * Math.PI
 							}
-							t.save(), t.translate(r, i), t.rotate(_), t.textAlign = "center", t.textBaseline = "middle", t.fillStyle = s, t.font = o.string, t.fillText(a.labelString, 0, 0), t.restore()
+							e.save(), e.translate(a, r), e.rotate(c), e.textAlign = "center", e.textBaseline = "middle", e.fillStyle = o, e.font = s.string, e.fillText(i.labelString, 0, 0), e.restore()
 						}
 					},
-					draw: function(e) {
-						this._isVisible() && (this._drawGrid(e), this._drawTitle(), this._drawLabels())
+					draw: function(t) {
+						this._isVisible() && (this._drawGrid(t), this._drawTitle(), this._drawLabels())
 					},
 					_layers: function() {
-						var e = this,
-							t = e.options,
-							n = t.ticks && t.ticks.z || 0,
-							a = t.gridLines && t.gridLines.z || 0;
-						return e._isVisible() && n !== a && e.draw === e._draw ? [{
-							z: a,
+						var t = this,
+							e = t.options,
+							n = e.ticks && e.ticks.z || 0,
+							i = e.gridLines && e.gridLines.z || 0;
+						return t._isVisible() && n !== i && t.draw === t._draw ? [{
+							z: i,
 							draw: function() {
-								e._drawGrid.apply(e, arguments), e._drawTitle.apply(e, arguments)
+								t._drawGrid.apply(t, arguments), t._drawTitle.apply(t, arguments)
 							}
 						}, {
 							z: n,
 							draw: function() {
-								e._drawLabels.apply(e, arguments)
+								t._drawLabels.apply(t, arguments)
 							}
 						}] : [{
 							z: n,
 							draw: function() {
-								e.draw.apply(e, arguments)
+								t.draw.apply(t, arguments)
 							}
 						}]
 					},
-					_getMatchingVisibleMetas: function(e) {
-						var t = this,
-							n = t.isHorizontal();
-						return t.chart._getSortedVisibleDatasetMetas().filter((function(a) {
-							return (!e || a.type === e) && (n ? a.xAxisID === t.id : a.yAxisID === t.id)
+					_getMatchingVisibleMetas: function(t) {
+						var e = this,
+							n = e.isHorizontal();
+						return e.chart._getSortedVisibleDatasetMetas().filter((function(i) {
+							return (!t || i.type === t) && (n ? i.xAxisID === e.id : i.yAxisID === e.id)
 						}))
 					}
 				});
-				gn.prototype._draw = gn.prototype.draw;
-				var Ln = gn,
-					Yn = R.isNullOrUndef,
-					vn = Ln.extend({
+				yn.prototype._draw = yn.prototype.draw;
+				var xn = yn,
+					_n = j.isNullOrUndef,
+					kn = xn.extend({
 						determineDataLimits: function() {
-							var e, t = this,
-								n = t._getLabels(),
-								a = t.options.ticks,
-								r = a.min,
-								i = a.max,
-								s = 0,
-								o = n.length - 1;
-							void 0 !== r && (e = n.indexOf(r)) >= 0 && (s = e), void 0 !== i && (e = n.indexOf(i)) >= 0 && (o = e), t.minIndex = s, t.maxIndex = o, t.min = n[s], t.max = n[o]
+							var t, e = this,
+								n = e._getLabels(),
+								i = e.options.ticks,
+								a = i.min,
+								r = i.max,
+								o = 0,
+								s = n.length - 1;
+							void 0 !== a && (t = n.indexOf(a)) >= 0 && (o = t), void 0 !== r && (t = n.indexOf(r)) >= 0 && (s = t), e.minIndex = o, e.maxIndex = s, e.min = n[o], e.max = n[s]
 						},
 						buildTicks: function() {
-							var e = this._getLabels(),
-								t = this.minIndex,
+							var t = this._getLabels(),
+								e = this.minIndex,
 								n = this.maxIndex;
-							this.ticks = 0 === t && n === e.length - 1 ? e : e.slice(t, n + 1)
+							this.ticks = 0 === e && n === t.length - 1 ? t : t.slice(e, n + 1)
 						},
-						getLabelForIndex: function(e, t) {
+						getLabelForIndex: function(t, e) {
 							var n = this.chart;
-							return n.getDatasetMeta(t).controller._getValueScaleId() === this.id ? this.getRightValue(n.data.datasets[t].data[e]) : this._getLabels()[e]
+							return n.getDatasetMeta(e).controller._getValueScaleId() === this.id ? this.getRightValue(n.data.datasets[e].data[t]) : this._getLabels()[t]
 						},
 						_configure: function() {
-							var e = this,
-								t = e.options.offset,
-								n = e.ticks;
-							Ln.prototype._configure.call(e), e.isHorizontal() || (e._reversePixels = !e._reversePixels), n && (e._startValue = e.minIndex - (t ? .5 : 0), e._valueRange = Math.max(n.length - (t ? 0 : 1), 1))
+							var t = this,
+								e = t.options.offset,
+								n = t.ticks;
+							xn.prototype._configure.call(t), t.isHorizontal() || (t._reversePixels = !t._reversePixels), n && (t._startValue = t.minIndex - (e ? .5 : 0), t._valueRange = Math.max(n.length - (e ? 0 : 1), 1))
 						},
-						getPixelForValue: function(e, t, n) {
-							var a, r, i, s = this;
-							return Yn(t) || Yn(n) || (e = s.chart.data.datasets[n].data[t]), Yn(e) || (a = s.isHorizontal() ? e.x : e.y), (void 0 !== a || void 0 !== e && isNaN(t)) && (r = s._getLabels(), e = R.valueOrDefault(a, e), t = -1 !== (i = r.indexOf(e)) ? i : t, isNaN(t) && (t = e)), s.getPixelForDecimal((t - s._startValue) / s._valueRange)
+						getPixelForValue: function(t, e, n) {
+							var i, a, r, o = this;
+							return _n(e) || _n(n) || (t = o.chart.data.datasets[n].data[e]), _n(t) || (i = o.isHorizontal() ? t.x : t.y), (void 0 !== i || void 0 !== t && isNaN(e)) && (a = o._getLabels(), t = j.valueOrDefault(i, t), e = -1 !== (r = a.indexOf(t)) ? r : e, isNaN(e) && (e = t)), o.getPixelForDecimal((e - o._startValue) / o._valueRange)
 						},
-						getPixelForTick: function(e) {
-							var t = this.ticks;
-							return e < 0 || e > t.length - 1 ? null : this.getPixelForValue(t[e], e + this.minIndex)
+						getPixelForTick: function(t) {
+							var e = this.ticks;
+							return t < 0 || t > e.length - 1 ? null : this.getPixelForValue(e[t], t + this.minIndex)
 						},
-						getValueForPixel: function(e) {
-							var t = Math.round(this._startValue + this.getDecimalForPixel(e) * this._valueRange);
-							return Math.min(Math.max(t, 0), this.ticks.length - 1)
+						getValueForPixel: function(t) {
+							var e = Math.round(this._startValue + this.getDecimalForPixel(t) * this._valueRange);
+							return Math.min(Math.max(e, 0), this.ticks.length - 1)
 						},
 						getBasePixel: function() {
 							return this.bottom
 						}
 					}),
-					kn = {
+					wn = {
 						position: "bottom"
 					};
-				vn._defaults = kn;
-				var bn = R.noop,
-					Dn = R.isNullOrUndef,
-					wn = Ln.extend({
-						getRightValue: function(e) {
-							return "string" == typeof e ? +e : Ln.prototype.getRightValue.call(this, e)
+				kn._defaults = wn;
+				var Mn = j.noop,
+					Cn = j.isNullOrUndef,
+					Sn = xn.extend({
+						getRightValue: function(t) {
+							return "string" == typeof t ? +t : xn.prototype.getRightValue.call(this, t)
 						},
 						handleTickRangeOptions: function() {
-							var e = this,
-								t = e.options.ticks;
-							if (t.beginAtZero) {
-								var n = R.sign(e.min),
-									a = R.sign(e.max);
-								n < 0 && a < 0 ? e.max = 0 : n > 0 && a > 0 && (e.min = 0)
+							var t = this,
+								e = t.options.ticks;
+							if (e.beginAtZero) {
+								var n = j.sign(t.min),
+									i = j.sign(t.max);
+								n < 0 && i < 0 ? t.max = 0 : n > 0 && i > 0 && (t.min = 0)
 							}
-							var r = void 0 !== t.min || void 0 !== t.suggestedMin,
-								i = void 0 !== t.max || void 0 !== t.suggestedMax;
-							void 0 !== t.min ? e.min = t.min : void 0 !== t.suggestedMin && (null === e.min ? e.min = t.suggestedMin : e.min = Math.min(e.min, t.suggestedMin)), void 0 !== t.max ? e.max = t.max : void 0 !== t.suggestedMax && (null === e.max ? e.max = t.suggestedMax : e.max = Math.max(e.max, t.suggestedMax)), r !== i && e.min >= e.max && (r ? e.max = e.min + 1 : e.min = e.max - 1), e.min === e.max && (e.max++, t.beginAtZero || e.min--)
+							var a = void 0 !== e.min || void 0 !== e.suggestedMin,
+								r = void 0 !== e.max || void 0 !== e.suggestedMax;
+							void 0 !== e.min ? t.min = e.min : void 0 !== e.suggestedMin && (null === t.min ? t.min = e.suggestedMin : t.min = Math.min(t.min, e.suggestedMin)), void 0 !== e.max ? t.max = e.max : void 0 !== e.suggestedMax && (null === t.max ? t.max = e.suggestedMax : t.max = Math.max(t.max, e.suggestedMax)), a !== r && t.min >= t.max && (a ? t.max = t.min + 1 : t.min = t.max - 1), t.min === t.max && (t.max++, e.beginAtZero || t.min--)
 						},
 						getTickLimit: function() {
-							var e, t = this.options.ticks,
-								n = t.stepSize,
-								a = t.maxTicksLimit;
-							return n ? e = Math.ceil(this.max / n) - Math.floor(this.min / n) + 1 : (e = this._computeTickLimit(), a = a || 11), a && (e = Math.min(a, e)), e
+							var t, e = this.options.ticks,
+								n = e.stepSize,
+								i = e.maxTicksLimit;
+							return n ? t = Math.ceil(this.max / n) - Math.floor(this.min / n) + 1 : (t = this._computeTickLimit(), i = i || 11), i && (t = Math.min(i, t)), t
 						},
 						_computeTickLimit: function() {
 							return Number.POSITIVE_INFINITY
 						},
-						handleDirectionalChanges: bn,
+						handleDirectionalChanges: Mn,
 						buildTicks: function() {
-							var e = this,
-								t = e.options.ticks,
-								n = e.getTickLimit(),
-								a = {
+							var t = this,
+								e = t.options.ticks,
+								n = t.getTickLimit(),
+								i = {
 									maxTicks: n = Math.max(2, n),
-									min: t.min,
-									max: t.max,
-									precision: t.precision,
-									stepSize: R.valueOrDefault(t.fixedStepSize, t.stepSize)
+									min: e.min,
+									max: e.max,
+									precision: e.precision,
+									stepSize: j.valueOrDefault(e.fixedStepSize, e.stepSize)
 								},
-								r = e.ticks = function(e, t) {
-									var n, a, r, i, s = [],
-										o = e.stepSize,
-										d = o || 1,
-										l = e.maxTicks - 1,
-										u = e.min,
-										_ = e.max,
-										m = e.precision,
-										c = t.min,
-										h = t.max,
-										f = R.niceNum((h - c) / l / d) * d;
-									if (f < 1e-14 && Dn(u) && Dn(_)) return [c, h];
-									(i = Math.ceil(h / f) - Math.floor(c / f)) > l && (f = R.niceNum(i * f / l / d) * d), o || Dn(m) ? n = Math.pow(10, R._decimalPlaces(f)) : (n = Math.pow(10, m), f = Math.ceil(f * n) / n), a = Math.floor(c / f) * f, r = Math.ceil(h / f) * f, o && (!Dn(u) && R.almostWhole(u / f, f / 1e3) && (a = u), !Dn(_) && R.almostWhole(_ / f, f / 1e3) && (r = _)), i = (r - a) / f, i = R.almostEquals(i, Math.round(i), f / 1e3) ? Math.round(i) : Math.ceil(i), a = Math.round(a * n) / n, r = Math.round(r * n) / n, s.push(Dn(u) ? a : u);
-									for (var p = 1; p < i; ++p) s.push(Math.round((a + p * f) * n) / n);
-									return s.push(Dn(_) ? r : _), s
-								}(a, e);
-							e.handleDirectionalChanges(), e.max = R.max(r), e.min = R.min(r), t.reverse ? (r.reverse(), e.start = e.max, e.end = e.min) : (e.start = e.min, e.end = e.max)
+								a = t.ticks = function(t, e) {
+									var n, i, a, r, o = [],
+										s = t.stepSize,
+										l = s || 1,
+										u = t.maxTicks - 1,
+										d = t.min,
+										c = t.max,
+										h = t.precision,
+										f = e.min,
+										g = e.max,
+										p = j.niceNum((g - f) / u / l) * l;
+									if (p < 1e-14 && Cn(d) && Cn(c)) return [f, g];
+									(r = Math.ceil(g / p) - Math.floor(f / p)) > u && (p = j.niceNum(r * p / u / l) * l), s || Cn(h) ? n = Math.pow(10, j._decimalPlaces(p)) : (n = Math.pow(10, h), p = Math.ceil(p * n) / n), i = Math.floor(f / p) * p, a = Math.ceil(g / p) * p, s && (!Cn(d) && j.almostWhole(d / p, p / 1e3) && (i = d), !Cn(c) && j.almostWhole(c / p, p / 1e3) && (a = c)), r = (a - i) / p, r = j.almostEquals(r, Math.round(r), p / 1e3) ? Math.round(r) : Math.ceil(r), i = Math.round(i * n) / n, a = Math.round(a * n) / n, o.push(Cn(d) ? i : d);
+									for (var m = 1; m < r; ++m) o.push(Math.round((i + m * p) * n) / n);
+									return o.push(Cn(c) ? a : c), o
+								}(i, t);
+							t.handleDirectionalChanges(), t.max = j.max(a), t.min = j.min(a), e.reverse ? (a.reverse(), t.start = t.max, t.end = t.min) : (t.start = t.min, t.end = t.max)
 						},
 						convertTicksToLabels: function() {
-							var e = this;
-							e.ticksAsNumbers = e.ticks.slice(), e.zeroLineIndex = e.ticks.indexOf(0), Ln.prototype.convertTicksToLabels.call(e)
+							var t = this;
+							t.ticksAsNumbers = t.ticks.slice(), t.zeroLineIndex = t.ticks.indexOf(0), xn.prototype.convertTicksToLabels.call(t)
 						},
 						_configure: function() {
-							var e, t = this,
-								n = t.getTicks(),
-								a = t.min,
-								r = t.max;
-							Ln.prototype._configure.call(t), t.options.offset && n.length && (a -= e = (r - a) / Math.max(n.length - 1, 1) / 2, r += e), t._startValue = a, t._endValue = r, t._valueRange = r - a
+							var t, e = this,
+								n = e.getTicks(),
+								i = e.min,
+								a = e.max;
+							xn.prototype._configure.call(e), e.options.offset && n.length && (i -= t = (a - i) / Math.max(n.length - 1, 1) / 2, a += t), e._startValue = i, e._endValue = a, e._valueRange = a - i
 						}
 					}),
-					Tn = {
+					Pn = {
 						position: "left",
 						ticks: {
-							callback: sn.formatters.linear
+							callback: on.formatters.linear
 						}
 					};
 
-				function xn(e, t, n, a) {
-					var r, i, s = e.options,
-						o = function(e, t, n) {
-							var a = [n.type, void 0 === t && void 0 === n.stack ? n.index : "", n.stack].join(".");
-							return void 0 === e[a] && (e[a] = {
+				function An(t, e, n, i) {
+					var a, r, o = t.options,
+						s = function(t, e, n) {
+							var i = [n.type, void 0 === e && void 0 === n.stack ? n.index : "", n.stack].join(".");
+							return void 0 === t[i] && (t[i] = {
 								pos: [],
 								neg: []
-							}), e[a]
-						}(t, s.stacked, n),
-						d = o.pos,
-						l = o.neg,
-						u = a.length;
-					for (r = 0; r < u; ++r) i = e._parseValue(a[r]), isNaN(i.min) || isNaN(i.max) || n.data[r].hidden || (d[r] = d[r] || 0, l[r] = l[r] || 0, s.relativePoints ? d[r] = 100 : i.min < 0 || i.max < 0 ? l[r] += i.min : d[r] += i.max)
+							}), t[i]
+						}(e, o.stacked, n),
+						l = s.pos,
+						u = s.neg,
+						d = i.length;
+					for (a = 0; a < d; ++a) r = t._parseValue(i[a]), isNaN(r.min) || isNaN(r.max) || n.data[a].hidden || (l[a] = l[a] || 0, u[a] = u[a] || 0, o.relativePoints ? l[a] = 100 : r.min < 0 || r.max < 0 ? u[a] += r.min : l[a] += r.max)
 				}
 
-				function Sn(e, t, n) {
-					var a, r, i = n.length;
-					for (a = 0; a < i; ++a) r = e._parseValue(n[a]), isNaN(r.min) || isNaN(r.max) || t.data[a].hidden || (e.min = Math.min(e.min, r.min), e.max = Math.max(e.max, r.max))
+				function Dn(t, e, n) {
+					var i, a, r = n.length;
+					for (i = 0; i < r; ++i) a = t._parseValue(n[i]), isNaN(a.min) || isNaN(a.max) || e.data[i].hidden || (t.min = Math.min(t.min, a.min), t.max = Math.max(t.max, a.max))
 				}
-				var Hn = wn.extend({
+				var In = Sn.extend({
 						determineDataLimits: function() {
-							var e, t, n, a, r = this,
-								i = r.options,
-								s = r.chart.data.datasets,
-								o = r._getMatchingVisibleMetas(),
-								d = i.stacked,
-								l = {},
-								u = o.length;
-							if (r.min = Number.POSITIVE_INFINITY, r.max = Number.NEGATIVE_INFINITY, void 0 === d)
-								for (e = 0; !d && e < u; ++e) d = void 0 !== (t = o[e]).stack;
-							for (e = 0; e < u; ++e) n = s[(t = o[e]).index].data, d ? xn(r, l, t, n) : Sn(r, t, n);
-							R.each(l, (function(e) {
-								a = e.pos.concat(e.neg), r.min = Math.min(r.min, R.min(a)), r.max = Math.max(r.max, R.max(a))
-							})), r.min = R.isFinite(r.min) && !isNaN(r.min) ? r.min : 0, r.max = R.isFinite(r.max) && !isNaN(r.max) ? r.max : 1, r.handleTickRangeOptions()
+							var t, e, n, i, a = this,
+								r = a.options,
+								o = a.chart.data.datasets,
+								s = a._getMatchingVisibleMetas(),
+								l = r.stacked,
+								u = {},
+								d = s.length;
+							if (a.min = Number.POSITIVE_INFINITY, a.max = Number.NEGATIVE_INFINITY, void 0 === l)
+								for (t = 0; !l && t < d; ++t) l = void 0 !== (e = s[t]).stack;
+							for (t = 0; t < d; ++t) n = o[(e = s[t]).index].data, l ? An(a, u, e, n) : Dn(a, e, n);
+							j.each(u, (function(t) {
+								i = t.pos.concat(t.neg), a.min = Math.min(a.min, j.min(i)), a.max = Math.max(a.max, j.max(i))
+							})), a.min = j.isFinite(a.min) && !isNaN(a.min) ? a.min : 0, a.max = j.isFinite(a.max) && !isNaN(a.max) ? a.max : 1, a.handleTickRangeOptions()
 						},
 						_computeTickLimit: function() {
-							var e;
-							return this.isHorizontal() ? Math.ceil(this.width / 40) : (e = R.options._parseFont(this.options.ticks), Math.ceil(this.height / e.lineHeight))
+							var t;
+							return this.isHorizontal() ? Math.ceil(this.width / 40) : (t = j.options._parseFont(this.options.ticks), Math.ceil(this.height / t.lineHeight))
 						},
 						handleDirectionalChanges: function() {
 							this.isHorizontal() || this.ticks.reverse()
 						},
-						getLabelForIndex: function(e, t) {
-							return this._getScaleLabel(this.chart.data.datasets[t].data[e])
+						getLabelForIndex: function(t, e) {
+							return this._getScaleLabel(this.chart.data.datasets[e].data[t])
 						},
-						getPixelForValue: function(e) {
-							return this.getPixelForDecimal((+this.getRightValue(e) - this._startValue) / this._valueRange)
+						getPixelForValue: function(t) {
+							return this.getPixelForDecimal((+this.getRightValue(t) - this._startValue) / this._valueRange)
 						},
-						getValueForPixel: function(e) {
-							return this._startValue + this.getDecimalForPixel(e) * this._valueRange
+						getValueForPixel: function(t) {
+							return this._startValue + this.getDecimalForPixel(t) * this._valueRange
 						},
-						getPixelForTick: function(e) {
-							var t = this.ticksAsNumbers;
-							return e < 0 || e > t.length - 1 ? null : this.getPixelForValue(t[e])
+						getPixelForTick: function(t) {
+							var e = this.ticksAsNumbers;
+							return t < 0 || t > e.length - 1 ? null : this.getPixelForValue(e[t])
 						}
 					}),
-					jn = Tn;
-				Hn._defaults = jn;
-				var Pn = R.valueOrDefault,
-					On = R.math.log10,
-					An = {
+					Tn = Pn;
+				In._defaults = Tn;
+				var Fn = j.valueOrDefault,
+					On = j.math.log10,
+					Ln = {
 						position: "left",
 						ticks: {
-							callback: sn.formatters.logarithmic
+							callback: on.formatters.logarithmic
 						}
 					};
 
-				function Fn(e, t) {
-					return R.isFinite(e) && e >= 0 ? e : t
+				function Rn(t, e) {
+					return j.isFinite(t) && t >= 0 ? t : e
 				}
-				var Wn = Ln.extend({
+				var En = xn.extend({
 						determineDataLimits: function() {
-							var e, t, n, a, r, i, s = this,
-								o = s.options,
-								d = s.chart,
-								l = d.data.datasets,
-								u = s.isHorizontal();
+							var t, e, n, i, a, r, o = this,
+								s = o.options,
+								l = o.chart,
+								u = l.data.datasets,
+								d = o.isHorizontal();
 
-							function _(e) {
-								return u ? e.xAxisID === s.id : e.yAxisID === s.id
+							function c(t) {
+								return d ? t.xAxisID === o.id : t.yAxisID === o.id
 							}
-							s.min = Number.POSITIVE_INFINITY, s.max = Number.NEGATIVE_INFINITY, s.minNotZero = Number.POSITIVE_INFINITY;
-							var m = o.stacked;
-							if (void 0 === m)
-								for (e = 0; e < l.length; e++)
-									if (t = d.getDatasetMeta(e), d.isDatasetVisible(e) && _(t) && void 0 !== t.stack) {
-										m = !0;
+							o.min = Number.POSITIVE_INFINITY, o.max = Number.NEGATIVE_INFINITY, o.minNotZero = Number.POSITIVE_INFINITY;
+							var h = s.stacked;
+							if (void 0 === h)
+								for (t = 0; t < u.length; t++)
+									if (e = l.getDatasetMeta(t), l.isDatasetVisible(t) && c(e) && void 0 !== e.stack) {
+										h = !0;
 										break
-									} if (o.stacked || m) {
-								var c = {};
-								for (e = 0; e < l.length; e++) {
-									var h = [(t = d.getDatasetMeta(e)).type, void 0 === o.stacked && void 0 === t.stack ? e : "", t.stack].join(".");
-									if (d.isDatasetVisible(e) && _(t))
-										for (void 0 === c[h] && (c[h] = []), r = 0, i = (a = l[e].data).length; r < i; r++) {
-											var f = c[h];
-											n = s._parseValue(a[r]), isNaN(n.min) || isNaN(n.max) || t.data[r].hidden || n.min < 0 || n.max < 0 || (f[r] = f[r] || 0, f[r] += n.max)
+									} if (s.stacked || h) {
+								var f = {};
+								for (t = 0; t < u.length; t++) {
+									var g = [(e = l.getDatasetMeta(t)).type, void 0 === s.stacked && void 0 === e.stack ? t : "", e.stack].join(".");
+									if (l.isDatasetVisible(t) && c(e))
+										for (void 0 === f[g] && (f[g] = []), a = 0, r = (i = u[t].data).length; a < r; a++) {
+											var p = f[g];
+											n = o._parseValue(i[a]), isNaN(n.min) || isNaN(n.max) || e.data[a].hidden || n.min < 0 || n.max < 0 || (p[a] = p[a] || 0, p[a] += n.max)
 										}
 								}
-								R.each(c, (function(e) {
-									if (e.length > 0) {
-										var t = R.min(e),
-											n = R.max(e);
-										s.min = Math.min(s.min, t), s.max = Math.max(s.max, n)
+								j.each(f, (function(t) {
+									if (t.length > 0) {
+										var e = j.min(t),
+											n = j.max(t);
+										o.min = Math.min(o.min, e), o.max = Math.max(o.max, n)
 									}
 								}))
 							} else
-								for (e = 0; e < l.length; e++)
-									if (t = d.getDatasetMeta(e), d.isDatasetVisible(e) && _(t))
-										for (r = 0, i = (a = l[e].data).length; r < i; r++) n = s._parseValue(a[r]), isNaN(n.min) || isNaN(n.max) || t.data[r].hidden || n.min < 0 || n.max < 0 || (s.min = Math.min(n.min, s.min), s.max = Math.max(n.max, s.max), 0 !== n.min && (s.minNotZero = Math.min(n.min, s.minNotZero)));
-							s.min = R.isFinite(s.min) ? s.min : null, s.max = R.isFinite(s.max) ? s.max : null, s.minNotZero = R.isFinite(s.minNotZero) ? s.minNotZero : null, this.handleTickRangeOptions()
+								for (t = 0; t < u.length; t++)
+									if (e = l.getDatasetMeta(t), l.isDatasetVisible(t) && c(e))
+										for (a = 0, r = (i = u[t].data).length; a < r; a++) n = o._parseValue(i[a]), isNaN(n.min) || isNaN(n.max) || e.data[a].hidden || n.min < 0 || n.max < 0 || (o.min = Math.min(n.min, o.min), o.max = Math.max(n.max, o.max), 0 !== n.min && (o.minNotZero = Math.min(n.min, o.minNotZero)));
+							o.min = j.isFinite(o.min) ? o.min : null, o.max = j.isFinite(o.max) ? o.max : null, o.minNotZero = j.isFinite(o.minNotZero) ? o.minNotZero : null, this.handleTickRangeOptions()
 						},
 						handleTickRangeOptions: function() {
-							var e = this,
-								t = e.options.ticks;
-							e.min = Fn(t.min, e.min), e.max = Fn(t.max, e.max), e.min === e.max && (0 !== e.min && null !== e.min ? (e.min = Math.pow(10, Math.floor(On(e.min)) - 1), e.max = Math.pow(10, Math.floor(On(e.max)) + 1)) : (e.min = 1, e.max = 10)), null === e.min && (e.min = Math.pow(10, Math.floor(On(e.max)) - 1)), null === e.max && (e.max = 0 !== e.min ? Math.pow(10, Math.floor(On(e.min)) + 1) : 10), null === e.minNotZero && (e.min > 0 ? e.minNotZero = e.min : e.max < 1 ? e.minNotZero = Math.pow(10, Math.floor(On(e.max))) : e.minNotZero = 1)
+							var t = this,
+								e = t.options.ticks;
+							t.min = Rn(e.min, t.min), t.max = Rn(e.max, t.max), t.min === t.max && (0 !== t.min && null !== t.min ? (t.min = Math.pow(10, Math.floor(On(t.min)) - 1), t.max = Math.pow(10, Math.floor(On(t.max)) + 1)) : (t.min = 1, t.max = 10)), null === t.min && (t.min = Math.pow(10, Math.floor(On(t.max)) - 1)), null === t.max && (t.max = 0 !== t.min ? Math.pow(10, Math.floor(On(t.min)) + 1) : 10), null === t.minNotZero && (t.min > 0 ? t.minNotZero = t.min : t.max < 1 ? t.minNotZero = Math.pow(10, Math.floor(On(t.max))) : t.minNotZero = 1)
 						},
 						buildTicks: function() {
-							var e = this,
-								t = e.options.ticks,
-								n = !e.isHorizontal(),
-								a = {
-									min: Fn(t.min),
-									max: Fn(t.max)
+							var t = this,
+								e = t.options.ticks,
+								n = !t.isHorizontal(),
+								i = {
+									min: Rn(e.min),
+									max: Rn(e.max)
 								},
-								r = e.ticks = function(e, t) {
-									var n, a, r = [],
-										i = Pn(e.min, Math.pow(10, Math.floor(On(t.min)))),
-										s = Math.floor(On(t.max)),
-										o = Math.ceil(t.max / Math.pow(10, s));
-									0 === i ? (n = Math.floor(On(t.minNotZero)), a = Math.floor(t.minNotZero / Math.pow(10, n)), r.push(i), i = a * Math.pow(10, n)) : (n = Math.floor(On(i)), a = Math.floor(i / Math.pow(10, n)));
-									var d = n < 0 ? Math.pow(10, Math.abs(n)) : 1;
+								a = t.ticks = function(t, e) {
+									var n, i, a = [],
+										r = Fn(t.min, Math.pow(10, Math.floor(On(e.min)))),
+										o = Math.floor(On(e.max)),
+										s = Math.ceil(e.max / Math.pow(10, o));
+									0 === r ? (n = Math.floor(On(e.minNotZero)), i = Math.floor(e.minNotZero / Math.pow(10, n)), a.push(r), r = i * Math.pow(10, n)) : (n = Math.floor(On(r)), i = Math.floor(r / Math.pow(10, n)));
+									var l = n < 0 ? Math.pow(10, Math.abs(n)) : 1;
 									do {
-										r.push(i), 10 == ++a && (a = 1, d = ++n >= 0 ? 1 : d), i = Math.round(a * Math.pow(10, n) * d) / d
-									} while (n < s || n === s && a < o);
-									var l = Pn(e.max, i);
-									return r.push(l), r
-								}(a, e);
-							e.max = R.max(r), e.min = R.min(r), t.reverse ? (n = !n, e.start = e.max, e.end = e.min) : (e.start = e.min, e.end = e.max), n && r.reverse()
+										a.push(r), 10 == ++i && (i = 1, l = ++n >= 0 ? 1 : l), r = Math.round(i * Math.pow(10, n) * l) / l
+									} while (n < o || n === o && i < s);
+									var u = Fn(t.max, r);
+									return a.push(u), a
+								}(i, t);
+							t.max = j.max(a), t.min = j.min(a), e.reverse ? (n = !n, t.start = t.max, t.end = t.min) : (t.start = t.min, t.end = t.max), n && a.reverse()
 						},
 						convertTicksToLabels: function() {
-							this.tickValues = this.ticks.slice(), Ln.prototype.convertTicksToLabels.call(this)
+							this.tickValues = this.ticks.slice(), xn.prototype.convertTicksToLabels.call(this)
 						},
-						getLabelForIndex: function(e, t) {
-							return this._getScaleLabel(this.chart.data.datasets[t].data[e])
+						getLabelForIndex: function(t, e) {
+							return this._getScaleLabel(this.chart.data.datasets[e].data[t])
 						},
-						getPixelForTick: function(e) {
-							var t = this.tickValues;
-							return e < 0 || e > t.length - 1 ? null : this.getPixelForValue(t[e])
+						getPixelForTick: function(t) {
+							var e = this.tickValues;
+							return t < 0 || t > e.length - 1 ? null : this.getPixelForValue(e[t])
 						},
-						_getFirstTickValue: function(e) {
-							var t = Math.floor(On(e));
-							return Math.floor(e / Math.pow(10, t)) * Math.pow(10, t)
+						_getFirstTickValue: function(t) {
+							var e = Math.floor(On(t));
+							return Math.floor(t / Math.pow(10, e)) * Math.pow(10, e)
 						},
 						_configure: function() {
+							var t = this,
+								e = t.min,
+								n = 0;
+							xn.prototype._configure.call(t), 0 === e && (e = t._getFirstTickValue(t.minNotZero), n = Fn(t.options.ticks.fontSize, z.global.defaultFontSize) / t._length), t._startValue = On(e), t._valueOffset = n, t._valueRange = (On(t.max) - On(e)) / (1 - n)
+						},
+						getPixelForValue: function(t) {
 							var e = this,
-								t = e.min,
 								n = 0;
-							Ln.prototype._configure.call(e), 0 === t && (t = e._getFirstTickValue(e.minNotZero), n = Pn(e.options.ticks.fontSize, C.global.defaultFontSize) / e._length), e._startValue = On(t), e._valueOffset = n, e._valueRange = (On(e.max) - On(t)) / (1 - n)
+							return (t = +e.getRightValue(t)) > e.min && t > 0 && (n = (On(t) - e._startValue) / e._valueRange + e._valueOffset), e.getPixelForDecimal(n)
 						},
-						getPixelForValue: function(e) {
-							var t = this,
-								n = 0;
-							return (e = +t.getRightValue(e)) > t.min && e > 0 && (n = (On(e) - t._startValue) / t._valueRange + t._valueOffset), t.getPixelForDecimal(n)
-						},
-						getValueForPixel: function(e) {
-							var t = this,
-								n = t.getDecimalForPixel(e);
-							return 0 === n && 0 === t.min ? 0 : Math.pow(10, t._startValue + (n - t._valueOffset) * t._valueRange)
+						getValueForPixel: function(t) {
+							var e = this,
+								n = e.getDecimalForPixel(t);
+							return 0 === n && 0 === e.min ? 0 : Math.pow(10, e._startValue + (n - e._valueOffset) * e._valueRange)
 						}
 					}),
-					Cn = An;
-				Wn._defaults = Cn;
-				var En = R.valueOrDefault,
-					In = R.valueAtIndexOrDefault,
-					zn = R.options.resolve,
-					Nn = {
+					zn = Ln;
+				En._defaults = zn;
+				var Nn = j.valueOrDefault,
+					Bn = j.valueAtIndexOrDefault,
+					Wn = j.options.resolve,
+					Vn = {
 						display: !0,
 						animate: !0,
 						position: "chartArea",
@@ -5529,228 +5529,228 @@
 							backdropColor: "rgba(255,255,255,0.75)",
 							backdropPaddingY: 2,
 							backdropPaddingX: 2,
-							callback: sn.formatters.linear
+							callback: on.formatters.linear
 						},
 						pointLabels: {
 							display: !0,
 							fontSize: 10,
-							callback: function(e) {
-								return e
+							callback: function(t) {
+								return t
 							}
 						}
 					};
 
-				function Rn(e) {
-					var t = e.ticks;
-					return t.display && e.display ? En(t.fontSize, C.global.defaultFontSize) + 2 * t.backdropPaddingY : 0
+				function jn(t) {
+					var e = t.ticks;
+					return e.display && t.display ? Nn(e.fontSize, z.global.defaultFontSize) + 2 * e.backdropPaddingY : 0
 				}
 
-				function Vn(e, t, n, a, r) {
-					return e === a || e === r ? {
-						start: t - n / 2,
-						end: t + n / 2
-					} : e < a || e > r ? {
-						start: t - n,
-						end: t
+				function Hn(t, e, n, i, a) {
+					return t === i || t === a ? {
+						start: e - n / 2,
+						end: e + n / 2
+					} : t < i || t > a ? {
+						start: e - n,
+						end: e
 					} : {
-						start: t,
-						end: t + n
+						start: e,
+						end: e + n
 					}
 				}
 
-				function Bn(e) {
-					return 0 === e || 180 === e ? "center" : e < 180 ? "left" : "right"
+				function qn(t) {
+					return 0 === t || 180 === t ? "center" : t < 180 ? "left" : "right"
 				}
 
-				function Jn(e, t, n, a) {
-					var r, i, s = n.y + a / 2;
-					if (R.isArray(t))
-						for (r = 0, i = t.length; r < i; ++r) e.fillText(t[r], n.x, s), s += a;
-					else e.fillText(t, n.x, s)
+				function Un(t, e, n, i) {
+					var a, r, o = n.y + i / 2;
+					if (j.isArray(e))
+						for (a = 0, r = e.length; a < r; ++a) t.fillText(e[a], n.x, o), o += i;
+					else t.fillText(e, n.x, o)
 				}
 
-				function Un(e, t, n) {
-					90 === e || 270 === e ? n.y -= t.h / 2 : (e > 270 || e < 90) && (n.y -= t.h)
+				function Yn(t, e, n) {
+					90 === t || 270 === t ? n.y -= e.h / 2 : (t > 270 || t < 90) && (n.y -= e.h)
 				}
 
-				function Gn(e) {
-					return R.isNumber(e) ? e : 0
+				function Kn(t) {
+					return j.isNumber(t) ? t : 0
 				}
-				var qn = wn.extend({
+				var Gn = Sn.extend({
 						setDimensions: function() {
-							var e = this;
-							e.width = e.maxWidth, e.height = e.maxHeight, e.paddingTop = Rn(e.options) / 2, e.xCenter = Math.floor(e.width / 2), e.yCenter = Math.floor((e.height - e.paddingTop) / 2), e.drawingArea = Math.min(e.height - e.paddingTop, e.width) / 2
+							var t = this;
+							t.width = t.maxWidth, t.height = t.maxHeight, t.paddingTop = jn(t.options) / 2, t.xCenter = Math.floor(t.width / 2), t.yCenter = Math.floor((t.height - t.paddingTop) / 2), t.drawingArea = Math.min(t.height - t.paddingTop, t.width) / 2
 						},
 						determineDataLimits: function() {
-							var e = this,
-								t = e.chart,
+							var t = this,
+								e = t.chart,
 								n = Number.POSITIVE_INFINITY,
-								a = Number.NEGATIVE_INFINITY;
-							R.each(t.data.datasets, (function(r, i) {
-								if (t.isDatasetVisible(i)) {
-									var s = t.getDatasetMeta(i);
-									R.each(r.data, (function(t, r) {
-										var i = +e.getRightValue(t);
-										isNaN(i) || s.data[r].hidden || (n = Math.min(i, n), a = Math.max(i, a))
+								i = Number.NEGATIVE_INFINITY;
+							j.each(e.data.datasets, (function(a, r) {
+								if (e.isDatasetVisible(r)) {
+									var o = e.getDatasetMeta(r);
+									j.each(a.data, (function(e, a) {
+										var r = +t.getRightValue(e);
+										isNaN(r) || o.data[a].hidden || (n = Math.min(r, n), i = Math.max(r, i))
 									}))
 								}
-							})), e.min = n === Number.POSITIVE_INFINITY ? 0 : n, e.max = a === Number.NEGATIVE_INFINITY ? 0 : a, e.handleTickRangeOptions()
+							})), t.min = n === Number.POSITIVE_INFINITY ? 0 : n, t.max = i === Number.NEGATIVE_INFINITY ? 0 : i, t.handleTickRangeOptions()
 						},
 						_computeTickLimit: function() {
-							return Math.ceil(this.drawingArea / Rn(this.options))
+							return Math.ceil(this.drawingArea / jn(this.options))
 						},
 						convertTicksToLabels: function() {
-							var e = this;
-							wn.prototype.convertTicksToLabels.call(e), e.pointLabels = e.chart.data.labels.map((function() {
-								var t = R.callback(e.options.pointLabels.callback, arguments, e);
-								return t || 0 === t ? t : ""
+							var t = this;
+							Sn.prototype.convertTicksToLabels.call(t), t.pointLabels = t.chart.data.labels.map((function() {
+								var e = j.callback(t.options.pointLabels.callback, arguments, t);
+								return e || 0 === e ? e : ""
 							}))
 						},
-						getLabelForIndex: function(e, t) {
-							return +this.getRightValue(this.chart.data.datasets[t].data[e])
+						getLabelForIndex: function(t, e) {
+							return +this.getRightValue(this.chart.data.datasets[e].data[t])
 						},
 						fit: function() {
-							var e = this.options;
-							e.display && e.pointLabels.display ? function(e) {
-								var t, n, a, r = R.options._parseFont(e.options.pointLabels),
-									i = {
+							var t = this.options;
+							t.display && t.pointLabels.display ? function(t) {
+								var e, n, i, a = j.options._parseFont(t.options.pointLabels),
+									r = {
 										l: 0,
-										r: e.width,
+										r: t.width,
 										t: 0,
-										b: e.height - e.paddingTop
+										b: t.height - t.paddingTop
 									},
-									s = {};
-								e.ctx.font = r.string, e._pointLabelSizes = [];
-								var o, d, l, u = e.chart.data.labels.length;
-								for (t = 0; t < u; t++) {
-									a = e.getPointPosition(t, e.drawingArea + 5), o = e.ctx, d = r.lineHeight, l = e.pointLabels[t], n = R.isArray(l) ? {
-										w: R.longestText(o, o.font, l),
-										h: l.length * d
+									o = {};
+								t.ctx.font = a.string, t._pointLabelSizes = [];
+								var s, l, u, d = t.chart.data.labels.length;
+								for (e = 0; e < d; e++) {
+									i = t.getPointPosition(e, t.drawingArea + 5), s = t.ctx, l = a.lineHeight, u = t.pointLabels[e], n = j.isArray(u) ? {
+										w: j.longestText(s, s.font, u),
+										h: u.length * l
 									} : {
-										w: o.measureText(l).width,
-										h: d
-									}, e._pointLabelSizes[t] = n;
-									var _ = e.getIndexAngle(t),
-										m = R.toDegrees(_) % 360,
-										c = Vn(m, a.x, n.w, 0, 180),
-										h = Vn(m, a.y, n.h, 90, 270);
-									c.start < i.l && (i.l = c.start, s.l = _), c.end > i.r && (i.r = c.end, s.r = _), h.start < i.t && (i.t = h.start, s.t = _), h.end > i.b && (i.b = h.end, s.b = _)
+										w: s.measureText(u).width,
+										h: l
+									}, t._pointLabelSizes[e] = n;
+									var c = t.getIndexAngle(e),
+										h = j.toDegrees(c) % 360,
+										f = Hn(h, i.x, n.w, 0, 180),
+										g = Hn(h, i.y, n.h, 90, 270);
+									f.start < r.l && (r.l = f.start, o.l = c), f.end > r.r && (r.r = f.end, o.r = c), g.start < r.t && (r.t = g.start, o.t = c), g.end > r.b && (r.b = g.end, o.b = c)
 								}
-								e.setReductions(e.drawingArea, i, s)
+								t.setReductions(t.drawingArea, r, o)
 							}(this) : this.setCenterPoint(0, 0, 0, 0)
 						},
-						setReductions: function(e, t, n) {
+						setReductions: function(t, e, n) {
+							var i = this,
+								a = e.l / Math.sin(n.l),
+								r = Math.max(e.r - i.width, 0) / Math.sin(n.r),
+								o = -e.t / Math.cos(n.t),
+								s = -Math.max(e.b - (i.height - i.paddingTop), 0) / Math.cos(n.b);
+							a = Kn(a), r = Kn(r), o = Kn(o), s = Kn(s), i.drawingArea = Math.min(Math.floor(t - (a + r) / 2), Math.floor(t - (o + s) / 2)), i.setCenterPoint(a, r, o, s)
+						},
+						setCenterPoint: function(t, e, n, i) {
 							var a = this,
-								r = t.l / Math.sin(n.l),
-								i = Math.max(t.r - a.width, 0) / Math.sin(n.r),
-								s = -t.t / Math.cos(n.t),
-								o = -Math.max(t.b - (a.height - a.paddingTop), 0) / Math.cos(n.b);
-							r = Gn(r), i = Gn(i), s = Gn(s), o = Gn(o), a.drawingArea = Math.min(Math.floor(e - (r + i) / 2), Math.floor(e - (s + o) / 2)), a.setCenterPoint(r, i, s, o)
+								r = a.width - e - a.drawingArea,
+								o = t + a.drawingArea,
+								s = n + a.drawingArea,
+								l = a.height - a.paddingTop - i - a.drawingArea;
+							a.xCenter = Math.floor((o + r) / 2 + a.left), a.yCenter = Math.floor((s + l) / 2 + a.top + a.paddingTop)
 						},
-						setCenterPoint: function(e, t, n, a) {
-							var r = this,
-								i = r.width - t - r.drawingArea,
-								s = e + r.drawingArea,
-								o = n + r.drawingArea,
-								d = r.height - r.paddingTop - a - r.drawingArea;
-							r.xCenter = Math.floor((s + i) / 2 + r.left), r.yCenter = Math.floor((o + d) / 2 + r.top + r.paddingTop)
-						},
-						getIndexAngle: function(e) {
-							var t = this.chart,
-								n = (e * (360 / t.data.labels.length) + ((t.options || {}).startAngle || 0)) % 360;
+						getIndexAngle: function(t) {
+							var e = this.chart,
+								n = (t * (360 / e.data.labels.length) + ((e.options || {}).startAngle || 0)) % 360;
 							return (n < 0 ? n + 360 : n) * Math.PI * 2 / 360
 						},
-						getDistanceFromCenterForValue: function(e) {
-							var t = this;
-							if (R.isNullOrUndef(e)) return NaN;
-							var n = t.drawingArea / (t.max - t.min);
-							return t.options.ticks.reverse ? (t.max - e) * n : (e - t.min) * n
+						getDistanceFromCenterForValue: function(t) {
+							var e = this;
+							if (j.isNullOrUndef(t)) return NaN;
+							var n = e.drawingArea / (e.max - e.min);
+							return e.options.ticks.reverse ? (e.max - t) * n : (t - e.min) * n
 						},
-						getPointPosition: function(e, t) {
-							var n = this.getIndexAngle(e) - Math.PI / 2;
+						getPointPosition: function(t, e) {
+							var n = this.getIndexAngle(t) - Math.PI / 2;
 							return {
-								x: Math.cos(n) * t + this.xCenter,
-								y: Math.sin(n) * t + this.yCenter
+								x: Math.cos(n) * e + this.xCenter,
+								y: Math.sin(n) * e + this.yCenter
 							}
 						},
-						getPointPositionForValue: function(e, t) {
-							return this.getPointPosition(e, this.getDistanceFromCenterForValue(t))
+						getPointPositionForValue: function(t, e) {
+							return this.getPointPosition(t, this.getDistanceFromCenterForValue(e))
 						},
-						getBasePosition: function(e) {
-							var t = this.min,
+						getBasePosition: function(t) {
+							var e = this.min,
 								n = this.max;
-							return this.getPointPositionForValue(e || 0, this.beginAtZero ? 0 : t < 0 && n < 0 ? n : t > 0 && n > 0 ? t : 0)
+							return this.getPointPositionForValue(t || 0, this.beginAtZero ? 0 : e < 0 && n < 0 ? n : e > 0 && n > 0 ? e : 0)
 						},
 						_drawGrid: function() {
-							var e, t, n, a = this,
-								r = a.ctx,
-								i = a.options,
-								s = i.gridLines,
-								o = i.angleLines,
-								d = En(o.lineWidth, s.lineWidth),
-								l = En(o.color, s.color);
-							if (i.pointLabels.display && function(e) {
-									var t = e.ctx,
-										n = e.options,
-										a = n.pointLabels,
-										r = Rn(n),
-										i = e.getDistanceFromCenterForValue(n.ticks.reverse ? e.min : e.max),
-										s = R.options._parseFont(a);
-									t.save(), t.font = s.string, t.textBaseline = "middle";
-									for (var o = e.chart.data.labels.length - 1; o >= 0; o--) {
-										var d = 0 === o ? r / 2 : 0,
-											l = e.getPointPosition(o, i + d + 5),
-											u = In(a.fontColor, o, C.global.defaultFontColor);
-										t.fillStyle = u;
-										var _ = e.getIndexAngle(o),
-											m = R.toDegrees(_);
-										t.textAlign = Bn(m), Un(m, e._pointLabelSizes[o], l), Jn(t, e.pointLabels[o], l, s.lineHeight)
+							var t, e, n, i = this,
+								a = i.ctx,
+								r = i.options,
+								o = r.gridLines,
+								s = r.angleLines,
+								l = Nn(s.lineWidth, o.lineWidth),
+								u = Nn(s.color, o.color);
+							if (r.pointLabels.display && function(t) {
+									var e = t.ctx,
+										n = t.options,
+										i = n.pointLabels,
+										a = jn(n),
+										r = t.getDistanceFromCenterForValue(n.ticks.reverse ? t.min : t.max),
+										o = j.options._parseFont(i);
+									e.save(), e.font = o.string, e.textBaseline = "middle";
+									for (var s = t.chart.data.labels.length - 1; s >= 0; s--) {
+										var l = 0 === s ? a / 2 : 0,
+											u = t.getPointPosition(s, r + l + 5),
+											d = Bn(i.fontColor, s, z.global.defaultFontColor);
+										e.fillStyle = d;
+										var c = t.getIndexAngle(s),
+											h = j.toDegrees(c);
+										e.textAlign = qn(h), Yn(h, t._pointLabelSizes[s], u), Un(e, t.pointLabels[s], u, o.lineHeight)
 									}
-									t.restore()
-								}(a), s.display && R.each(a.ticks, (function(e, n) {
-									0 !== n && (t = a.getDistanceFromCenterForValue(a.ticksAsNumbers[n]), function(e, t, n, a) {
-										var r, i = e.ctx,
-											s = t.circular,
-											o = e.chart.data.labels.length,
-											d = In(t.color, a - 1),
-											l = In(t.lineWidth, a - 1);
-										if ((s || o) && d && l) {
-											if (i.save(), i.strokeStyle = d, i.lineWidth = l, i.setLineDash && (i.setLineDash(t.borderDash || []), i.lineDashOffset = t.borderDashOffset || 0), i.beginPath(), s) i.arc(e.xCenter, e.yCenter, n, 0, 2 * Math.PI);
+									e.restore()
+								}(i), o.display && j.each(i.ticks, (function(t, n) {
+									0 !== n && (e = i.getDistanceFromCenterForValue(i.ticksAsNumbers[n]), function(t, e, n, i) {
+										var a, r = t.ctx,
+											o = e.circular,
+											s = t.chart.data.labels.length,
+											l = Bn(e.color, i - 1),
+											u = Bn(e.lineWidth, i - 1);
+										if ((o || s) && l && u) {
+											if (r.save(), r.strokeStyle = l, r.lineWidth = u, r.setLineDash && (r.setLineDash(e.borderDash || []), r.lineDashOffset = e.borderDashOffset || 0), r.beginPath(), o) r.arc(t.xCenter, t.yCenter, n, 0, 2 * Math.PI);
 											else {
-												r = e.getPointPosition(0, n), i.moveTo(r.x, r.y);
-												for (var u = 1; u < o; u++) r = e.getPointPosition(u, n), i.lineTo(r.x, r.y)
+												a = t.getPointPosition(0, n), r.moveTo(a.x, a.y);
+												for (var d = 1; d < s; d++) a = t.getPointPosition(d, n), r.lineTo(a.x, a.y)
 											}
-											i.closePath(), i.stroke(), i.restore()
+											r.closePath(), r.stroke(), r.restore()
 										}
-									}(a, s, t, n))
-								})), o.display && d && l) {
-								for (r.save(), r.lineWidth = d, r.strokeStyle = l, r.setLineDash && (r.setLineDash(zn([o.borderDash, s.borderDash, []])), r.lineDashOffset = zn([o.borderDashOffset, s.borderDashOffset, 0])), e = a.chart.data.labels.length - 1; e >= 0; e--) t = a.getDistanceFromCenterForValue(i.ticks.reverse ? a.min : a.max), n = a.getPointPosition(e, t), r.beginPath(), r.moveTo(a.xCenter, a.yCenter), r.lineTo(n.x, n.y), r.stroke();
-								r.restore()
+									}(i, o, e, n))
+								})), s.display && l && u) {
+								for (a.save(), a.lineWidth = l, a.strokeStyle = u, a.setLineDash && (a.setLineDash(Wn([s.borderDash, o.borderDash, []])), a.lineDashOffset = Wn([s.borderDashOffset, o.borderDashOffset, 0])), t = i.chart.data.labels.length - 1; t >= 0; t--) e = i.getDistanceFromCenterForValue(r.ticks.reverse ? i.min : i.max), n = i.getPointPosition(t, e), a.beginPath(), a.moveTo(i.xCenter, i.yCenter), a.lineTo(n.x, n.y), a.stroke();
+								a.restore()
 							}
 						},
 						_drawLabels: function() {
-							var e = this,
-								t = e.ctx,
-								n = e.options.ticks;
+							var t = this,
+								e = t.ctx,
+								n = t.options.ticks;
 							if (n.display) {
-								var a, r, i = e.getIndexAngle(0),
-									s = R.options._parseFont(n),
-									o = En(n.fontColor, C.global.defaultFontColor);
-								t.save(), t.font = s.string, t.translate(e.xCenter, e.yCenter), t.rotate(i), t.textAlign = "center", t.textBaseline = "middle", R.each(e.ticks, (function(i, d) {
-									(0 !== d || n.reverse) && (a = e.getDistanceFromCenterForValue(e.ticksAsNumbers[d]), n.showLabelBackdrop && (r = t.measureText(i).width, t.fillStyle = n.backdropColor, t.fillRect(-r / 2 - n.backdropPaddingX, -a - s.size / 2 - n.backdropPaddingY, r + 2 * n.backdropPaddingX, s.size + 2 * n.backdropPaddingY)), t.fillStyle = o, t.fillText(i, 0, -a))
-								})), t.restore()
+								var i, a, r = t.getIndexAngle(0),
+									o = j.options._parseFont(n),
+									s = Nn(n.fontColor, z.global.defaultFontColor);
+								e.save(), e.font = o.string, e.translate(t.xCenter, t.yCenter), e.rotate(r), e.textAlign = "center", e.textBaseline = "middle", j.each(t.ticks, (function(r, l) {
+									(0 !== l || n.reverse) && (i = t.getDistanceFromCenterForValue(t.ticksAsNumbers[l]), n.showLabelBackdrop && (a = e.measureText(r).width, e.fillStyle = n.backdropColor, e.fillRect(-a / 2 - n.backdropPaddingX, -i - o.size / 2 - n.backdropPaddingY, a + 2 * n.backdropPaddingX, o.size + 2 * n.backdropPaddingY)), e.fillStyle = s, e.fillText(r, 0, -i))
+								})), e.restore()
 							}
 						},
-						_drawTitle: R.noop
+						_drawTitle: j.noop
 					}),
-					Kn = Nn;
-				qn._defaults = Kn;
-				var Zn = R._deprecated,
-					$n = R.options.resolve,
-					Xn = R.valueOrDefault,
+					Xn = Vn;
+				Gn._defaults = Xn;
+				var Zn = j._deprecated,
+					$n = j.options.resolve,
+					Jn = j.valueOrDefault,
 					Qn = Number.MIN_SAFE_INTEGER || -9007199254740991,
-					ea = Number.MAX_SAFE_INTEGER || 9007199254740991,
-					ta = {
+					ti = Number.MAX_SAFE_INTEGER || 9007199254740991,
+					ei = {
 						millisecond: {
 							common: !0,
 							size: 1,
@@ -5796,266 +5796,266 @@
 							size: 3154e7
 						}
 					},
-					na = Object.keys(ta);
+					ni = Object.keys(ei);
 
-				function aa(e, t) {
-					return e - t
+				function ii(t, e) {
+					return t - e
 				}
 
-				function ra(e) {
-					return R.valueOrDefault(e.time.min, e.ticks.min)
+				function ai(t) {
+					return j.valueOrDefault(t.time.min, t.ticks.min)
 				}
 
-				function ia(e) {
-					return R.valueOrDefault(e.time.max, e.ticks.max)
+				function ri(t) {
+					return j.valueOrDefault(t.time.max, t.ticks.max)
 				}
 
-				function sa(e, t, n, a) {
-					var r = function(e, t, n) {
-							for (var a, r, i, s = 0, o = e.length - 1; s >= 0 && s <= o;) {
-								if (r = e[(a = s + o >> 1) - 1] || null, i = e[a], !r) return {
+				function oi(t, e, n, i) {
+					var a = function(t, e, n) {
+							for (var i, a, r, o = 0, s = t.length - 1; o >= 0 && o <= s;) {
+								if (a = t[(i = o + s >> 1) - 1] || null, r = t[i], !a) return {
 									lo: null,
-									hi: i
+									hi: r
 								};
-								if (i[t] < n) s = a + 1;
+								if (r[e] < n) o = i + 1;
 								else {
-									if (!(r[t] > n)) return {
-										lo: r,
-										hi: i
+									if (!(a[e] > n)) return {
+										lo: a,
+										hi: r
 									};
-									o = a - 1
+									s = i - 1
 								}
 							}
 							return {
-								lo: i,
+								lo: r,
 								hi: null
 							}
-						}(e, t, n),
-						i = r.lo ? r.hi ? r.lo : e[e.length - 2] : e[0],
-						s = r.lo ? r.hi ? r.hi : e[e.length - 1] : e[1],
-						o = s[t] - i[t],
-						d = o ? (n - i[t]) / o : 0,
-						l = (s[a] - i[a]) * d;
-					return i[a] + l
+						}(t, e, n),
+						r = a.lo ? a.hi ? a.lo : t[t.length - 2] : t[0],
+						o = a.lo ? a.hi ? a.hi : t[t.length - 1] : t[1],
+						s = o[e] - r[e],
+						l = s ? (n - r[e]) / s : 0,
+						u = (o[i] - r[i]) * l;
+					return r[i] + u
 				}
 
-				function oa(e, t) {
-					var n = e._adapter,
-						a = e.options.time,
-						r = a.parser,
-						i = r || a.format,
-						s = t;
-					return "function" == typeof r && (s = r(s)), R.isFinite(s) || (s = "string" == typeof i ? n.parse(s, i) : n.parse(s)), null !== s ? +s : (r || "function" != typeof i || (s = i(t), R.isFinite(s) || (s = n.parse(s))), s)
+				function si(t, e) {
+					var n = t._adapter,
+						i = t.options.time,
+						a = i.parser,
+						r = a || i.format,
+						o = e;
+					return "function" == typeof a && (o = a(o)), j.isFinite(o) || (o = "string" == typeof r ? n.parse(o, r) : n.parse(o)), null !== o ? +o : (a || "function" != typeof r || (o = r(e), j.isFinite(o) || (o = n.parse(o))), o)
 				}
 
-				function da(e, t) {
-					if (R.isNullOrUndef(t)) return null;
-					var n = e.options.time,
-						a = oa(e, e.getRightValue(t));
-					return null === a ? a : (n.round && (a = +e._adapter.startOf(a, n.round)), a)
+				function li(t, e) {
+					if (j.isNullOrUndef(e)) return null;
+					var n = t.options.time,
+						i = si(t, t.getRightValue(e));
+					return null === i ? i : (n.round && (i = +t._adapter.startOf(i, n.round)), i)
 				}
 
-				function la(e, t, n, a) {
-					var r, i, s, o = na.length;
-					for (r = na.indexOf(e); r < o - 1; ++r)
-						if (s = (i = ta[na[r]]).steps ? i.steps : ea, i.common && Math.ceil((n - t) / (s * i.size)) <= a) return na[r];
-					return na[o - 1]
+				function ui(t, e, n, i) {
+					var a, r, o, s = ni.length;
+					for (a = ni.indexOf(t); a < s - 1; ++a)
+						if (o = (r = ei[ni[a]]).steps ? r.steps : ti, r.common && Math.ceil((n - e) / (o * r.size)) <= i) return ni[a];
+					return ni[s - 1]
 				}
 
-				function ua(e, t, n) {
-					var a, r, i = [],
-						s = {},
-						o = t.length;
-					for (a = 0; a < o; ++a) s[r = t[a]] = a, i.push({
-						value: r,
+				function di(t, e, n) {
+					var i, a, r = [],
+						o = {},
+						s = e.length;
+					for (i = 0; i < s; ++i) o[a = e[i]] = i, r.push({
+						value: a,
 						major: !1
 					});
-					return 0 !== o && n ? function(e, t, n, a) {
-						var r, i, s = e._adapter,
-							o = +s.startOf(t[0].value, a),
-							d = t[t.length - 1].value;
-						for (r = o; r <= d; r = +s.add(r, 1, a))(i = n[r]) >= 0 && (t[i].major = !0);
-						return t
-					}(e, i, s, n) : i
+					return 0 !== s && n ? function(t, e, n, i) {
+						var a, r, o = t._adapter,
+							s = +o.startOf(e[0].value, i),
+							l = e[e.length - 1].value;
+						for (a = s; a <= l; a = +o.add(a, 1, i))(r = n[a]) >= 0 && (e[r].major = !0);
+						return e
+					}(t, r, o, n) : r
 				}
-				var _a = Ln.extend({
+				var ci = xn.extend({
 						initialize: function() {
-							this.mergeTicksOptions(), Ln.prototype.initialize.call(this)
+							this.mergeTicksOptions(), xn.prototype.initialize.call(this)
 						},
 						update: function() {
-							var e = this,
-								t = e.options,
-								n = t.time || (t.time = {}),
-								a = e._adapter = new rn._date(t.adapters.date);
-							return Zn("time scale", n.format, "time.format", "time.parser"), Zn("time scale", n.min, "time.min", "ticks.min"), Zn("time scale", n.max, "time.max", "ticks.max"), R.mergeIf(n.displayFormats, a.formats()), Ln.prototype.update.apply(e, arguments)
+							var t = this,
+								e = t.options,
+								n = e.time || (e.time = {}),
+								i = t._adapter = new rn._date(e.adapters.date);
+							return Zn("time scale", n.format, "time.format", "time.parser"), Zn("time scale", n.min, "time.min", "ticks.min"), Zn("time scale", n.max, "time.max", "ticks.max"), j.mergeIf(n.displayFormats, i.formats()), xn.prototype.update.apply(t, arguments)
 						},
-						getRightValue: function(e) {
-							return e && void 0 !== e.t && (e = e.t), Ln.prototype.getRightValue.call(this, e)
+						getRightValue: function(t) {
+							return t && void 0 !== t.t && (t = t.t), xn.prototype.getRightValue.call(this, t)
 						},
 						determineDataLimits: function() {
-							var e, t, n, a, r, i, s, o = this,
-								d = o.chart,
-								l = o._adapter,
-								u = o.options,
-								_ = u.time.unit || "day",
-								m = ea,
-								c = Qn,
-								h = [],
-								f = [],
+							var t, e, n, i, a, r, o, s = this,
+								l = s.chart,
+								u = s._adapter,
+								d = s.options,
+								c = d.time.unit || "day",
+								h = ti,
+								f = Qn,
+								g = [],
 								p = [],
-								M = o._getLabels();
-							for (e = 0, n = M.length; e < n; ++e) p.push(da(o, M[e]));
-							for (e = 0, n = (d.data.datasets || []).length; e < n; ++e)
-								if (d.isDatasetVisible(e))
-									if (r = d.data.datasets[e].data, R.isObject(r[0]))
-										for (f[e] = [], t = 0, a = r.length; t < a; ++t) i = da(o, r[t]), h.push(i), f[e][t] = i;
-									else f[e] = p.slice(0), s || (h = h.concat(p), s = !0);
-							else f[e] = [];
-							p.length && (m = Math.min(m, p[0]), c = Math.max(c, p[p.length - 1])), h.length && (h = n > 1 ? function(e) {
-								var t, n, a, r = {},
-									i = [];
-								for (t = 0, n = e.length; t < n; ++t) r[a = e[t]] || (r[a] = !0, i.push(a));
-								return i
-							}(h).sort(aa) : h.sort(aa), m = Math.min(m, h[0]), c = Math.max(c, h[h.length - 1])), m = da(o, ra(u)) || m, c = da(o, ia(u)) || c, m = m === ea ? +l.startOf(Date.now(), _) : m, c = c === Qn ? +l.endOf(Date.now(), _) + 1 : c, o.min = Math.min(m, c), o.max = Math.max(m + 1, c), o._table = [], o._timestamps = {
-								data: h,
-								datasets: f,
-								labels: p
+								m = [],
+								v = s._getLabels();
+							for (t = 0, n = v.length; t < n; ++t) m.push(li(s, v[t]));
+							for (t = 0, n = (l.data.datasets || []).length; t < n; ++t)
+								if (l.isDatasetVisible(t))
+									if (a = l.data.datasets[t].data, j.isObject(a[0]))
+										for (p[t] = [], e = 0, i = a.length; e < i; ++e) r = li(s, a[e]), g.push(r), p[t][e] = r;
+									else p[t] = m.slice(0), o || (g = g.concat(m), o = !0);
+							else p[t] = [];
+							m.length && (h = Math.min(h, m[0]), f = Math.max(f, m[m.length - 1])), g.length && (g = n > 1 ? function(t) {
+								var e, n, i, a = {},
+									r = [];
+								for (e = 0, n = t.length; e < n; ++e) a[i = t[e]] || (a[i] = !0, r.push(i));
+								return r
+							}(g).sort(ii) : g.sort(ii), h = Math.min(h, g[0]), f = Math.max(f, g[g.length - 1])), h = li(s, ai(d)) || h, f = li(s, ri(d)) || f, h = h === ti ? +u.startOf(Date.now(), c) : h, f = f === Qn ? +u.endOf(Date.now(), c) + 1 : f, s.min = Math.min(h, f), s.max = Math.max(h + 1, f), s._table = [], s._timestamps = {
+								data: g,
+								datasets: p,
+								labels: m
 							}
 						},
 						buildTicks: function() {
-							var e, t, n, a = this,
-								r = a.min,
-								i = a.max,
-								s = a.options,
-								o = s.ticks,
-								d = s.time,
-								l = a._timestamps,
-								u = [],
-								_ = a.getLabelCapacity(r),
-								m = o.source,
-								c = s.distribution;
-							for (l = "data" === m || "auto" === m && "series" === c ? l.data : "labels" === m ? l.labels : function(e, t, n, a) {
-									var r, i = e._adapter,
-										s = e.options,
-										o = s.time,
-										d = o.unit || la(o.minUnit, t, n, a),
-										l = $n([o.stepSize, o.unitStepSize, 1]),
-										u = "week" === d && o.isoWeekday,
-										_ = t,
-										m = [];
-									if (u && (_ = +i.startOf(_, "isoWeek", u)), _ = +i.startOf(_, u ? "day" : d), i.diff(n, t, d) > 1e5 * l) throw t + " and " + n + " are too far apart with stepSize of " + l + " " + d;
-									for (r = _; r < n; r = +i.add(r, l, d)) m.push(r);
-									return r !== n && "ticks" !== s.bounds || m.push(r), m
-								}(a, r, i, _), "ticks" === s.bounds && l.length && (r = l[0], i = l[l.length - 1]), r = da(a, ra(s)) || r, i = da(a, ia(s)) || i, e = 0, t = l.length; e < t; ++e)(n = l[e]) >= r && n <= i && u.push(n);
-							return a.min = r, a.max = i, a._unit = d.unit || (o.autoSkip ? la(d.minUnit, a.min, a.max, _) : function(e, t, n, a, r) {
-								var i, s;
-								for (i = na.length - 1; i >= na.indexOf(n); i--)
-									if (s = na[i], ta[s].common && e._adapter.diff(r, a, s) >= t - 1) return s;
-								return na[n ? na.indexOf(n) : 0]
-							}(a, u.length, d.minUnit, a.min, a.max)), a._majorUnit = o.major.enabled && "year" !== a._unit ? function(e) {
-								for (var t = na.indexOf(e) + 1, n = na.length; t < n; ++t)
-									if (ta[na[t]].common) return na[t]
-							}(a._unit) : void 0, a._table = function(e, t, n, a) {
-								if ("linear" === a || !e.length) return [{
-									time: t,
+							var t, e, n, i = this,
+								a = i.min,
+								r = i.max,
+								o = i.options,
+								s = o.ticks,
+								l = o.time,
+								u = i._timestamps,
+								d = [],
+								c = i.getLabelCapacity(a),
+								h = s.source,
+								f = o.distribution;
+							for (u = "data" === h || "auto" === h && "series" === f ? u.data : "labels" === h ? u.labels : function(t, e, n, i) {
+									var a, r = t._adapter,
+										o = t.options,
+										s = o.time,
+										l = s.unit || ui(s.minUnit, e, n, i),
+										u = $n([s.stepSize, s.unitStepSize, 1]),
+										d = "week" === l && s.isoWeekday,
+										c = e,
+										h = [];
+									if (d && (c = +r.startOf(c, "isoWeek", d)), c = +r.startOf(c, d ? "day" : l), r.diff(n, e, l) > 1e5 * u) throw e + " and " + n + " are too far apart with stepSize of " + u + " " + l;
+									for (a = c; a < n; a = +r.add(a, u, l)) h.push(a);
+									return a !== n && "ticks" !== o.bounds || h.push(a), h
+								}(i, a, r, c), "ticks" === o.bounds && u.length && (a = u[0], r = u[u.length - 1]), a = li(i, ai(o)) || a, r = li(i, ri(o)) || r, t = 0, e = u.length; t < e; ++t)(n = u[t]) >= a && n <= r && d.push(n);
+							return i.min = a, i.max = r, i._unit = l.unit || (s.autoSkip ? ui(l.minUnit, i.min, i.max, c) : function(t, e, n, i, a) {
+								var r, o;
+								for (r = ni.length - 1; r >= ni.indexOf(n); r--)
+									if (o = ni[r], ei[o].common && t._adapter.diff(a, i, o) >= e - 1) return o;
+								return ni[n ? ni.indexOf(n) : 0]
+							}(i, d.length, l.minUnit, i.min, i.max)), i._majorUnit = s.major.enabled && "year" !== i._unit ? function(t) {
+								for (var e = ni.indexOf(t) + 1, n = ni.length; e < n; ++e)
+									if (ei[ni[e]].common) return ni[e]
+							}(i._unit) : void 0, i._table = function(t, e, n, i) {
+								if ("linear" === i || !t.length) return [{
+									time: e,
 									pos: 0
 								}, {
 									time: n,
 									pos: 1
 								}];
-								var r, i, s, o, d, l = [],
-									u = [t];
-								for (r = 0, i = e.length; r < i; ++r)(o = e[r]) > t && o < n && u.push(o);
-								for (u.push(n), r = 0, i = u.length; r < i; ++r) d = u[r + 1], s = u[r - 1], o = u[r], void 0 !== s && void 0 !== d && Math.round((d + s) / 2) === o || l.push({
-									time: o,
-									pos: r / (i - 1)
+								var a, r, o, s, l, u = [],
+									d = [e];
+								for (a = 0, r = t.length; a < r; ++a)(s = t[a]) > e && s < n && d.push(s);
+								for (d.push(n), a = 0, r = d.length; a < r; ++a) l = d[a + 1], o = d[a - 1], s = d[a], void 0 !== o && void 0 !== l && Math.round((l + o) / 2) === s || u.push({
+									time: s,
+									pos: a / (r - 1)
 								});
-								return l
-							}(a._timestamps.data, r, i, c), a._offsets = function(e, t, n, a, r) {
-								var i, s, o = 0,
-									d = 0;
-								return r.offset && t.length && (i = sa(e, "time", t[0], "pos"), o = 1 === t.length ? 1 - i : (sa(e, "time", t[1], "pos") - i) / 2, s = sa(e, "time", t[t.length - 1], "pos"), d = 1 === t.length ? s : (s - sa(e, "time", t[t.length - 2], "pos")) / 2), {
-									start: o,
-									end: d,
-									factor: 1 / (o + 1 + d)
+								return u
+							}(i._timestamps.data, a, r, f), i._offsets = function(t, e, n, i, a) {
+								var r, o, s = 0,
+									l = 0;
+								return a.offset && e.length && (r = oi(t, "time", e[0], "pos"), s = 1 === e.length ? 1 - r : (oi(t, "time", e[1], "pos") - r) / 2, o = oi(t, "time", e[e.length - 1], "pos"), l = 1 === e.length ? o : (o - oi(t, "time", e[e.length - 2], "pos")) / 2), {
+									start: s,
+									end: l,
+									factor: 1 / (s + 1 + l)
 								}
-							}(a._table, u, 0, 0, s), o.reverse && u.reverse(), ua(a, u, a._majorUnit)
+							}(i._table, d, 0, 0, o), s.reverse && d.reverse(), di(i, d, i._majorUnit)
 						},
-						getLabelForIndex: function(e, t) {
+						getLabelForIndex: function(t, e) {
 							var n = this,
-								a = n._adapter,
-								r = n.chart.data,
-								i = n.options.time,
-								s = r.labels && e < r.labels.length ? r.labels[e] : "",
-								o = r.datasets[t].data[e];
-							return R.isObject(o) && (s = n.getRightValue(o)), i.tooltipFormat ? a.format(oa(n, s), i.tooltipFormat) : "string" == typeof s ? s : a.format(oa(n, s), i.displayFormats.datetime)
+								i = n._adapter,
+								a = n.chart.data,
+								r = n.options.time,
+								o = a.labels && t < a.labels.length ? a.labels[t] : "",
+								s = a.datasets[e].data[t];
+							return j.isObject(s) && (o = n.getRightValue(s)), r.tooltipFormat ? i.format(si(n, o), r.tooltipFormat) : "string" == typeof o ? o : i.format(si(n, o), r.displayFormats.datetime)
 						},
-						tickFormatFunction: function(e, t, n, a) {
-							var r = this._adapter,
-								i = this.options,
-								s = i.time.displayFormats,
-								o = s[this._unit],
-								d = this._majorUnit,
-								l = s[d],
-								u = n[t],
-								_ = i.ticks,
-								m = d && l && u && u.major,
-								c = r.format(e, a || (m ? l : o)),
-								h = m ? _.major : _.minor,
-								f = $n([h.callback, h.userCallback, _.callback, _.userCallback]);
-							return f ? f(c, t, n) : c
+						tickFormatFunction: function(t, e, n, i) {
+							var a = this._adapter,
+								r = this.options,
+								o = r.time.displayFormats,
+								s = o[this._unit],
+								l = this._majorUnit,
+								u = o[l],
+								d = n[e],
+								c = r.ticks,
+								h = l && u && d && d.major,
+								f = a.format(t, i || (h ? u : s)),
+								g = h ? c.major : c.minor,
+								p = $n([g.callback, g.userCallback, c.callback, c.userCallback]);
+							return p ? p(f, e, n) : f
 						},
-						convertTicksToLabels: function(e) {
-							var t, n, a = [];
-							for (t = 0, n = e.length; t < n; ++t) a.push(this.tickFormatFunction(e[t].value, t, e));
-							return a
+						convertTicksToLabels: function(t) {
+							var e, n, i = [];
+							for (e = 0, n = t.length; e < n; ++e) i.push(this.tickFormatFunction(t[e].value, e, t));
+							return i
 						},
-						getPixelForOffset: function(e) {
-							var t = this._offsets,
-								n = sa(this._table, "time", e, "pos");
-							return this.getPixelForDecimal((t.start + n) * t.factor)
+						getPixelForOffset: function(t) {
+							var e = this._offsets,
+								n = oi(this._table, "time", t, "pos");
+							return this.getPixelForDecimal((e.start + n) * e.factor)
 						},
-						getPixelForValue: function(e, t, n) {
-							var a = null;
-							if (void 0 !== t && void 0 !== n && (a = this._timestamps.datasets[n][t]), null === a && (a = da(this, e)), null !== a) return this.getPixelForOffset(a)
+						getPixelForValue: function(t, e, n) {
+							var i = null;
+							if (void 0 !== e && void 0 !== n && (i = this._timestamps.datasets[n][e]), null === i && (i = li(this, t)), null !== i) return this.getPixelForOffset(i)
 						},
-						getPixelForTick: function(e) {
-							var t = this.getTicks();
-							return e >= 0 && e < t.length ? this.getPixelForOffset(t[e].value) : null
+						getPixelForTick: function(t) {
+							var e = this.getTicks();
+							return t >= 0 && t < e.length ? this.getPixelForOffset(e[t].value) : null
 						},
-						getValueForPixel: function(e) {
-							var t = this._offsets,
-								n = this.getDecimalForPixel(e) / t.factor - t.end,
-								a = sa(this._table, "pos", n, "time");
-							return this._adapter._create(a)
+						getValueForPixel: function(t) {
+							var e = this._offsets,
+								n = this.getDecimalForPixel(t) / e.factor - e.end,
+								i = oi(this._table, "pos", n, "time");
+							return this._adapter._create(i)
 						},
-						_getLabelSize: function(e) {
-							var t = this.options.ticks,
-								n = this.ctx.measureText(e).width,
-								a = R.toRadians(this.isHorizontal() ? t.maxRotation : t.minRotation),
-								r = Math.cos(a),
-								i = Math.sin(a),
-								s = Xn(t.fontSize, C.global.defaultFontSize);
+						_getLabelSize: function(t) {
+							var e = this.options.ticks,
+								n = this.ctx.measureText(t).width,
+								i = j.toRadians(this.isHorizontal() ? e.maxRotation : e.minRotation),
+								a = Math.cos(i),
+								r = Math.sin(i),
+								o = Jn(e.fontSize, z.global.defaultFontSize);
 							return {
-								w: n * r + s * i,
-								h: n * i + s * r
+								w: n * a + o * r,
+								h: n * r + o * a
 							}
 						},
-						getLabelWidth: function(e) {
-							return this._getLabelSize(e).w
+						getLabelWidth: function(t) {
+							return this._getLabelSize(t).w
 						},
-						getLabelCapacity: function(e) {
-							var t = this,
-								n = t.options.time,
-								a = n.displayFormats,
-								r = a[n.unit] || a.millisecond,
-								i = t.tickFormatFunction(e, 0, ua(t, [e], t._majorUnit), r),
-								s = t._getLabelSize(i),
-								o = Math.floor(t.isHorizontal() ? t.width / s.w : t.height / s.h);
-							return t.options.offset && o--, o > 0 ? o : 1
+						getLabelCapacity: function(t) {
+							var e = this,
+								n = e.options.time,
+								i = n.displayFormats,
+								a = i[n.unit] || i.millisecond,
+								r = e.tickFormatFunction(t, 0, di(e, [t], e._majorUnit), a),
+								o = e._getLabelSize(r),
+								s = Math.floor(e.isHorizontal() ? e.width / o.w : e.height / o.h);
+							return e.options.offset && s--, s > 0 ? s : 1
 						}
 					}),
-					ma = {
+					hi = {
 						position: "bottom",
 						distribution: "linear",
 						bounds: "data",
@@ -6077,15 +6077,15 @@
 							}
 						}
 					};
-				_a._defaults = ma;
-				var ca = {
-						category: vn,
-						linear: Hn,
-						logarithmic: Wn,
-						radialLinear: qn,
-						time: _a
+				ci._defaults = hi;
+				var fi = {
+						category: kn,
+						linear: In,
+						logarithmic: En,
+						radialLinear: Gn,
+						time: ci
 					},
-					ha = {
+					gi = {
 						datetime: "MMM D, YYYY, h:mm:ss a",
 						millisecond: "h:mm:ss.SSS a",
 						second: "h:mm:ss a",
@@ -6097,72 +6097,72 @@
 						quarter: "[Q]Q - YYYY",
 						year: "YYYY"
 					};
-				rn._date.override("function" == typeof e ? {
+				rn._date.override("function" == typeof t ? {
 					_id: "moment",
 					formats: function() {
-						return ha
+						return gi
 					},
-					parse: function(t, n) {
-						return "string" == typeof t && "string" == typeof n ? t = e(t, n) : t instanceof e || (t = e(t)), t.isValid() ? t.valueOf() : null
+					parse: function(e, n) {
+						return "string" == typeof e && "string" == typeof n ? e = t(e, n) : e instanceof t || (e = t(e)), e.isValid() ? e.valueOf() : null
 					},
-					format: function(t, n) {
-						return e(t).format(n)
+					format: function(e, n) {
+						return t(e).format(n)
 					},
-					add: function(t, n, a) {
-						return e(t).add(n, a).valueOf()
+					add: function(e, n, i) {
+						return t(e).add(n, i).valueOf()
 					},
-					diff: function(t, n, a) {
-						return e(t).diff(e(n), a)
+					diff: function(e, n, i) {
+						return t(e).diff(t(n), i)
 					},
-					startOf: function(t, n, a) {
-						return t = e(t), "isoWeek" === n ? t.isoWeekday(a).valueOf() : t.startOf(n).valueOf()
+					startOf: function(e, n, i) {
+						return e = t(e), "isoWeek" === n ? e.isoWeekday(i).valueOf() : e.startOf(n).valueOf()
 					},
-					endOf: function(t, n) {
-						return e(t).endOf(n).valueOf()
+					endOf: function(e, n) {
+						return t(e).endOf(n).valueOf()
 					},
-					_create: function(t) {
-						return e(t)
+					_create: function(e) {
+						return t(e)
 					}
-				} : {}), C._set("global", {
+				} : {}), z._set("global", {
 					plugins: {
 						filler: {
 							propagate: !0
 						}
 					}
 				});
-				var fa = {
-					dataset: function(e) {
-						var t = e.fill,
-							n = e.chart,
-							a = n.getDatasetMeta(t),
-							r = a && n.isDatasetVisible(t) && a.dataset._children || [],
-							i = r.length || 0;
-						return i ? function(e, t) {
-							return t < i && r[t]._view || null
+				var pi = {
+					dataset: function(t) {
+						var e = t.fill,
+							n = t.chart,
+							i = n.getDatasetMeta(e),
+							a = i && n.isDatasetVisible(e) && i.dataset._children || [],
+							r = a.length || 0;
+						return r ? function(t, e) {
+							return e < r && a[e]._view || null
 						} : null
 					},
-					boundary: function(e) {
-						var t = e.boundary,
-							n = t ? t.x : null,
-							a = t ? t.y : null;
-						return R.isArray(t) ? function(e, n) {
-							return t[n]
-						} : function(e) {
+					boundary: function(t) {
+						var e = t.boundary,
+							n = e ? e.x : null,
+							i = e ? e.y : null;
+						return j.isArray(e) ? function(t, n) {
+							return e[n]
+						} : function(t) {
 							return {
-								x: null === n ? e.x : n,
-								y: null === a ? e.y : a
+								x: null === n ? t.x : n,
+								y: null === i ? t.y : i
 							}
 						}
 					}
 				};
 
-				function pa(e, t, n) {
-					var a, r = e._model || {},
-						i = r.fill;
-					if (void 0 === i && (i = !!r.backgroundColor), !1 === i || null === i) return !1;
-					if (!0 === i) return "origin";
-					if (a = parseFloat(i, 10), isFinite(a) && Math.floor(a) === a) return "-" !== i[0] && "+" !== i[0] || (a = t + a), !(a === t || a < 0 || a >= n) && a;
-					switch (i) {
+				function mi(t, e, n) {
+					var i, a = t._model || {},
+						r = a.fill;
+					if (void 0 === r && (r = !!a.backgroundColor), !1 === r || null === r) return !1;
+					if (!0 === r) return "origin";
+					if (i = parseFloat(r, 10), isFinite(i) && Math.floor(i) === i) return "-" !== r[0] && "+" !== r[0] || (i = e + i), !(i === e || i < 0 || i >= n) && i;
+					switch (r) {
 						case "bottom":
 							return "start";
 						case "top":
@@ -6172,111 +6172,111 @@
 						case "origin":
 						case "start":
 						case "end":
-							return i;
+							return r;
 						default:
 							return !1
 					}
 				}
 
-				function Ma(e) {
-					return (e.el._scale || {}).getPointPositionForValue ? function(e) {
-						var t, n, a, r, i, s = e.el._scale,
-							o = s.options,
-							d = s.chart.data.labels.length,
-							l = e.fill,
-							u = [];
-						if (!d) return null;
-						for (t = o.ticks.reverse ? s.max : s.min, n = o.ticks.reverse ? s.min : s.max, a = s.getPointPositionForValue(0, t), r = 0; r < d; ++r) i = "start" === l || "end" === l ? s.getPointPositionForValue(r, "start" === l ? t : n) : s.getBasePosition(r), o.gridLines.circular && (i.cx = a.x, i.cy = a.y, i.angle = s.getIndexAngle(r) - Math.PI / 2), u.push(i);
-						return u
-					}(e) : function(e) {
-						var t, n = e.el._model || {},
-							a = e.el._scale || {},
-							r = e.fill,
-							i = null;
-						if (isFinite(r)) return null;
-						if ("start" === r ? i = void 0 === n.scaleBottom ? a.bottom : n.scaleBottom : "end" === r ? i = void 0 === n.scaleTop ? a.top : n.scaleTop : void 0 !== n.scaleZero ? i = n.scaleZero : a.getBasePixel && (i = a.getBasePixel()), null != i) {
-							if (void 0 !== i.x && void 0 !== i.y) return i;
-							if (R.isFinite(i)) return {
-								x: (t = a.isHorizontal()) ? i : null,
-								y: t ? null : i
+				function vi(t) {
+					return (t.el._scale || {}).getPointPositionForValue ? function(t) {
+						var e, n, i, a, r, o = t.el._scale,
+							s = o.options,
+							l = o.chart.data.labels.length,
+							u = t.fill,
+							d = [];
+						if (!l) return null;
+						for (e = s.ticks.reverse ? o.max : o.min, n = s.ticks.reverse ? o.min : o.max, i = o.getPointPositionForValue(0, e), a = 0; a < l; ++a) r = "start" === u || "end" === u ? o.getPointPositionForValue(a, "start" === u ? e : n) : o.getBasePosition(a), s.gridLines.circular && (r.cx = i.x, r.cy = i.y, r.angle = o.getIndexAngle(a) - Math.PI / 2), d.push(r);
+						return d
+					}(t) : function(t) {
+						var e, n = t.el._model || {},
+							i = t.el._scale || {},
+							a = t.fill,
+							r = null;
+						if (isFinite(a)) return null;
+						if ("start" === a ? r = void 0 === n.scaleBottom ? i.bottom : n.scaleBottom : "end" === a ? r = void 0 === n.scaleTop ? i.top : n.scaleTop : void 0 !== n.scaleZero ? r = n.scaleZero : i.getBasePixel && (r = i.getBasePixel()), null != r) {
+							if (void 0 !== r.x && void 0 !== r.y) return r;
+							if (j.isFinite(r)) return {
+								x: (e = i.isHorizontal()) ? r : null,
+								y: e ? null : r
 							}
 						}
 						return null
-					}(e)
+					}(t)
 				}
 
-				function ya(e, t, n) {
-					var a, r = e[t].fill,
-						i = [t];
-					if (!n) return r;
-					for (; !1 !== r && -1 === i.indexOf(r);) {
-						if (!isFinite(r)) return r;
-						if (!(a = e[r])) return !1;
-						if (a.visible) return r;
-						i.push(r), r = a.fill
+				function bi(t, e, n) {
+					var i, a = t[e].fill,
+						r = [e];
+					if (!n) return a;
+					for (; !1 !== a && -1 === r.indexOf(a);) {
+						if (!isFinite(a)) return a;
+						if (!(i = t[a])) return !1;
+						if (i.visible) return a;
+						r.push(a), a = i.fill
 					}
 					return !1
 				}
 
-				function ga(e) {
-					var t = e.fill,
+				function yi(t) {
+					var e = t.fill,
 						n = "dataset";
-					return !1 === t ? null : (isFinite(t) || (n = "boundary"), fa[n](e))
+					return !1 === e ? null : (isFinite(e) || (n = "boundary"), pi[n](t))
 				}
 
-				function La(e) {
-					return e && !e.skip
+				function xi(t) {
+					return t && !t.skip
 				}
 
-				function Ya(e, t, n, a, r) {
-					var i, s, o, d;
-					if (a && r) {
-						for (e.moveTo(t[0].x, t[0].y), i = 1; i < a; ++i) R.canvas.lineTo(e, t[i - 1], t[i]);
+				function _i(t, e, n, i, a) {
+					var r, o, s, l;
+					if (i && a) {
+						for (t.moveTo(e[0].x, e[0].y), r = 1; r < i; ++r) j.canvas.lineTo(t, e[r - 1], e[r]);
 						if (void 0 === n[0].angle)
-							for (e.lineTo(n[r - 1].x, n[r - 1].y), i = r - 1; i > 0; --i) R.canvas.lineTo(e, n[i], n[i - 1], !0);
+							for (t.lineTo(n[a - 1].x, n[a - 1].y), r = a - 1; r > 0; --r) j.canvas.lineTo(t, n[r], n[r - 1], !0);
 						else
-							for (s = n[0].cx, o = n[0].cy, d = Math.sqrt(Math.pow(n[0].x - s, 2) + Math.pow(n[0].y - o, 2)), i = r - 1; i > 0; --i) e.arc(s, o, d, n[i].angle, n[i - 1].angle, !0)
+							for (o = n[0].cx, s = n[0].cy, l = Math.sqrt(Math.pow(n[0].x - o, 2) + Math.pow(n[0].y - s, 2)), r = a - 1; r > 0; --r) t.arc(o, s, l, n[r].angle, n[r - 1].angle, !0)
 					}
 				}
 
-				function va(e, t, n, a, r, i) {
-					var s, o, d, l, u, _, m, c, h = t.length,
-						f = a.spanGaps,
-						p = [],
-						M = [],
-						y = 0,
-						g = 0;
-					for (e.beginPath(), s = 0, o = h; s < o; ++s) u = n(l = t[d = s % h]._view, d, a), _ = La(l), m = La(u), i && void 0 === c && _ && (o = h + (c = s + 1)), _ && m ? (y = p.push(l), g = M.push(u)) : y && g && (f ? (_ && p.push(l), m && M.push(u)) : (Ya(e, p, M, y, g), y = g = 0, p = [], M = []));
-					Ya(e, p, M, y, g), e.closePath(), e.fillStyle = r, e.fill()
+				function ki(t, e, n, i, a, r) {
+					var o, s, l, u, d, c, h, f, g = e.length,
+						p = i.spanGaps,
+						m = [],
+						v = [],
+						b = 0,
+						y = 0;
+					for (t.beginPath(), o = 0, s = g; o < s; ++o) d = n(u = e[l = o % g]._view, l, i), c = xi(u), h = xi(d), r && void 0 === f && c && (s = g + (f = o + 1)), c && h ? (b = m.push(u), y = v.push(d)) : b && y && (p ? (c && m.push(u), h && v.push(d)) : (_i(t, m, v, b, y), b = y = 0, m = [], v = []));
+					_i(t, m, v, b, y), t.closePath(), t.fillStyle = a, t.fill()
 				}
-				var ka = {
+				var wi = {
 						id: "filler",
-						afterDatasetsUpdate: function(e, t) {
-							var n, a, r, i, s = (e.data.datasets || []).length,
-								o = t.propagate,
-								d = [];
-							for (a = 0; a < s; ++a) i = null, (r = (n = e.getDatasetMeta(a)).dataset) && r._model && r instanceof ve.Line && (i = {
-								visible: e.isDatasetVisible(a),
-								fill: pa(r, a, s),
-								chart: e,
-								el: r
-							}), n.$filler = i, d.push(i);
-							for (a = 0; a < s; ++a)(i = d[a]) && (i.fill = ya(d, a, o), i.boundary = Ma(i), i.mapper = ga(i))
+						afterDatasetsUpdate: function(t, e) {
+							var n, i, a, r, o = (t.data.datasets || []).length,
+								s = e.propagate,
+								l = [];
+							for (i = 0; i < o; ++i) r = null, (a = (n = t.getDatasetMeta(i)).dataset) && a._model && a instanceof kt.Line && (r = {
+								visible: t.isDatasetVisible(i),
+								fill: mi(a, i, o),
+								chart: t,
+								el: a
+							}), n.$filler = r, l.push(r);
+							for (i = 0; i < o; ++i)(r = l[i]) && (r.fill = bi(l, i, s), r.boundary = vi(r), r.mapper = yi(r))
 						},
-						beforeDatasetsDraw: function(e) {
-							var t, n, a, r, i, s, o, d = e._getSortedVisibleDatasetMetas(),
-								l = e.ctx;
-							for (n = d.length - 1; n >= 0; --n)(t = d[n].$filler) && t.visible && (r = (a = t.el)._view, i = a._children || [], s = t.mapper, o = r.backgroundColor || C.global.defaultColor, s && o && i.length && (R.canvas.clipArea(l, e.chartArea), va(l, i, s, r, o, a._loop), R.canvas.unclipArea(l)))
+						beforeDatasetsDraw: function(t) {
+							var e, n, i, a, r, o, s, l = t._getSortedVisibleDatasetMetas(),
+								u = t.ctx;
+							for (n = l.length - 1; n >= 0; --n)(e = l[n].$filler) && e.visible && (a = (i = e.el)._view, r = i._children || [], o = e.mapper, s = a.backgroundColor || z.global.defaultColor, o && s && r.length && (j.canvas.clipArea(u, t.chartArea), ki(u, r, o, a, s, i._loop), j.canvas.unclipArea(u)))
 						}
 					},
-					ba = R.rtl.getRtlAdapter,
-					Da = R.noop,
-					wa = R.valueOrDefault;
+					Mi = j.rtl.getRtlAdapter,
+					Ci = j.noop,
+					Si = j.valueOrDefault;
 
-				function Ta(e, t) {
-					return e.usePointStyle && e.boxWidth > t ? t : e.boxWidth
+				function Pi(t, e) {
+					return t.usePointStyle && t.boxWidth > e ? e : t.boxWidth
 				}
-				C._set("global", {
+				z._set("global", {
 					legend: {
 						display: !0,
 						position: "top",
@@ -6284,244 +6284,244 @@
 						fullWidth: !0,
 						reverse: !1,
 						weight: 1e3,
-						onClick: function(e, t) {
-							var n = t.datasetIndex,
-								a = this.chart,
-								r = a.getDatasetMeta(n);
-							r.hidden = null === r.hidden ? !a.data.datasets[n].hidden : null, a.update()
+						onClick: function(t, e) {
+							var n = e.datasetIndex,
+								i = this.chart,
+								a = i.getDatasetMeta(n);
+							a.hidden = null === a.hidden ? !i.data.datasets[n].hidden : null, i.update()
 						},
 						onHover: null,
 						onLeave: null,
 						labels: {
 							boxWidth: 40,
 							padding: 10,
-							generateLabels: function(e) {
-								var t = e.data.datasets,
-									n = e.options.legend || {},
-									a = n.labels && n.labels.usePointStyle;
-								return e._getSortedDatasetMetas().map((function(n) {
-									var r = n.controller.getStyle(a ? 0 : void 0);
+							generateLabels: function(t) {
+								var e = t.data.datasets,
+									n = t.options.legend || {},
+									i = n.labels && n.labels.usePointStyle;
+								return t._getSortedDatasetMetas().map((function(n) {
+									var a = n.controller.getStyle(i ? 0 : void 0);
 									return {
-										text: t[n.index].label,
-										fillStyle: r.backgroundColor,
-										hidden: !e.isDatasetVisible(n.index),
-										lineCap: r.borderCapStyle,
-										lineDash: r.borderDash,
-										lineDashOffset: r.borderDashOffset,
-										lineJoin: r.borderJoinStyle,
-										lineWidth: r.borderWidth,
-										strokeStyle: r.borderColor,
-										pointStyle: r.pointStyle,
-										rotation: r.rotation,
+										text: e[n.index].label,
+										fillStyle: a.backgroundColor,
+										hidden: !t.isDatasetVisible(n.index),
+										lineCap: a.borderCapStyle,
+										lineDash: a.borderDash,
+										lineDashOffset: a.borderDashOffset,
+										lineJoin: a.borderJoinStyle,
+										lineWidth: a.borderWidth,
+										strokeStyle: a.borderColor,
+										pointStyle: a.pointStyle,
+										rotation: a.rotation,
 										datasetIndex: n.index
 									}
 								}), this)
 							}
 						}
 					},
-					legendCallback: function(e) {
-						var t, n, a, r = document.createElement("ul"),
-							i = e.data.datasets;
-						for (r.setAttribute("class", e.id + "-legend"), t = 0, n = i.length; t < n; t++)(a = r.appendChild(document.createElement("li"))).appendChild(document.createElement("span")).style.backgroundColor = i[t].backgroundColor, i[t].label && a.appendChild(document.createTextNode(i[t].label));
-						return r.outerHTML
+					legendCallback: function(t) {
+						var e, n, i, a = document.createElement("ul"),
+							r = t.data.datasets;
+						for (a.setAttribute("class", t.id + "-legend"), e = 0, n = r.length; e < n; e++)(i = a.appendChild(document.createElement("li"))).appendChild(document.createElement("span")).style.backgroundColor = r[e].backgroundColor, r[e].label && i.appendChild(document.createTextNode(r[e].label));
+						return a.outerHTML
 					}
 				});
-				var xa = K.extend({
-					initialize: function(e) {
-						R.extend(this, e), this.legendHitBoxes = [], this._hoveredItem = null, this.doughnutMode = !1
+				var Ai = X.extend({
+					initialize: function(t) {
+						j.extend(this, t), this.legendHitBoxes = [], this._hoveredItem = null, this.doughnutMode = !1
 					},
-					beforeUpdate: Da,
-					update: function(e, t, n) {
-						var a = this;
-						return a.beforeUpdate(), a.maxWidth = e, a.maxHeight = t, a.margins = n, a.beforeSetDimensions(), a.setDimensions(), a.afterSetDimensions(), a.beforeBuildLabels(), a.buildLabels(), a.afterBuildLabels(), a.beforeFit(), a.fit(), a.afterFit(), a.afterUpdate(), a.minSize
+					beforeUpdate: Ci,
+					update: function(t, e, n) {
+						var i = this;
+						return i.beforeUpdate(), i.maxWidth = t, i.maxHeight = e, i.margins = n, i.beforeSetDimensions(), i.setDimensions(), i.afterSetDimensions(), i.beforeBuildLabels(), i.buildLabels(), i.afterBuildLabels(), i.beforeFit(), i.fit(), i.afterFit(), i.afterUpdate(), i.minSize
 					},
-					afterUpdate: Da,
-					beforeSetDimensions: Da,
+					afterUpdate: Ci,
+					beforeSetDimensions: Ci,
 					setDimensions: function() {
-						var e = this;
-						e.isHorizontal() ? (e.width = e.maxWidth, e.left = 0, e.right = e.width) : (e.height = e.maxHeight, e.top = 0, e.bottom = e.height), e.paddingLeft = 0, e.paddingTop = 0, e.paddingRight = 0, e.paddingBottom = 0, e.minSize = {
+						var t = this;
+						t.isHorizontal() ? (t.width = t.maxWidth, t.left = 0, t.right = t.width) : (t.height = t.maxHeight, t.top = 0, t.bottom = t.height), t.paddingLeft = 0, t.paddingTop = 0, t.paddingRight = 0, t.paddingBottom = 0, t.minSize = {
 							width: 0,
 							height: 0
 						}
 					},
-					afterSetDimensions: Da,
-					beforeBuildLabels: Da,
+					afterSetDimensions: Ci,
+					beforeBuildLabels: Ci,
 					buildLabels: function() {
-						var e = this,
-							t = e.options.labels || {},
-							n = R.callback(t.generateLabels, [e.chart], e) || [];
-						t.filter && (n = n.filter((function(n) {
-							return t.filter(n, e.chart.data)
-						}))), e.options.reverse && n.reverse(), e.legendItems = n
+						var t = this,
+							e = t.options.labels || {},
+							n = j.callback(e.generateLabels, [t.chart], t) || [];
+						e.filter && (n = n.filter((function(n) {
+							return e.filter(n, t.chart.data)
+						}))), t.options.reverse && n.reverse(), t.legendItems = n
 					},
-					afterBuildLabels: Da,
-					beforeFit: Da,
+					afterBuildLabels: Ci,
+					beforeFit: Ci,
 					fit: function() {
-						var e = this,
-							t = e.options,
-							n = t.labels,
-							a = t.display,
-							r = e.ctx,
-							i = R.options._parseFont(n),
-							s = i.size,
-							o = e.legendHitBoxes = [],
-							d = e.minSize,
-							l = e.isHorizontal();
-						if (l ? (d.width = e.maxWidth, d.height = a ? 10 : 0) : (d.width = a ? 10 : 0, d.height = e.maxHeight), a) {
-							if (r.font = i.string, l) {
-								var u = e.lineWidths = [0],
-									_ = 0;
-								r.textAlign = "left", r.textBaseline = "middle", R.each(e.legendItems, (function(e, t) {
-									var a = Ta(n, s) + s / 2 + r.measureText(e.text).width;
-									(0 === t || u[u.length - 1] + a + 2 * n.padding > d.width) && (_ += s + n.padding, u[u.length - (t > 0 ? 0 : 1)] = 0), o[t] = {
+						var t = this,
+							e = t.options,
+							n = e.labels,
+							i = e.display,
+							a = t.ctx,
+							r = j.options._parseFont(n),
+							o = r.size,
+							s = t.legendHitBoxes = [],
+							l = t.minSize,
+							u = t.isHorizontal();
+						if (u ? (l.width = t.maxWidth, l.height = i ? 10 : 0) : (l.width = i ? 10 : 0, l.height = t.maxHeight), i) {
+							if (a.font = r.string, u) {
+								var d = t.lineWidths = [0],
+									c = 0;
+								a.textAlign = "left", a.textBaseline = "middle", j.each(t.legendItems, (function(t, e) {
+									var i = Pi(n, o) + o / 2 + a.measureText(t.text).width;
+									(0 === e || d[d.length - 1] + i + 2 * n.padding > l.width) && (c += o + n.padding, d[d.length - (e > 0 ? 0 : 1)] = 0), s[e] = {
 										left: 0,
 										top: 0,
-										width: a,
-										height: s
-									}, u[u.length - 1] += a + n.padding
-								})), d.height += _
+										width: i,
+										height: o
+									}, d[d.length - 1] += i + n.padding
+								})), l.height += c
 							} else {
-								var m = n.padding,
-									c = e.columnWidths = [],
-									h = e.columnHeights = [],
-									f = n.padding,
-									p = 0,
-									M = 0;
-								R.each(e.legendItems, (function(e, t) {
-									var a = Ta(n, s) + s / 2 + r.measureText(e.text).width;
-									t > 0 && M + s + 2 * m > d.height && (f += p + n.padding, c.push(p), h.push(M), p = 0, M = 0), p = Math.max(p, a), M += s + m, o[t] = {
+								var h = n.padding,
+									f = t.columnWidths = [],
+									g = t.columnHeights = [],
+									p = n.padding,
+									m = 0,
+									v = 0;
+								j.each(t.legendItems, (function(t, e) {
+									var i = Pi(n, o) + o / 2 + a.measureText(t.text).width;
+									e > 0 && v + o + 2 * h > l.height && (p += m + n.padding, f.push(m), g.push(v), m = 0, v = 0), m = Math.max(m, i), v += o + h, s[e] = {
 										left: 0,
 										top: 0,
-										width: a,
-										height: s
+										width: i,
+										height: o
 									}
-								})), f += p, c.push(p), h.push(M), d.width += f
+								})), p += m, f.push(m), g.push(v), l.width += p
 							}
-							e.width = d.width, e.height = d.height
-						} else e.width = d.width = e.height = d.height = 0
+							t.width = l.width, t.height = l.height
+						} else t.width = l.width = t.height = l.height = 0
 					},
-					afterFit: Da,
+					afterFit: Ci,
 					isHorizontal: function() {
 						return "top" === this.options.position || "bottom" === this.options.position
 					},
 					draw: function() {
-						var e = this,
-							t = e.options,
-							n = t.labels,
-							a = C.global,
-							r = a.defaultColor,
-							i = a.elements.line,
-							s = e.height,
-							o = e.columnHeights,
-							d = e.width,
-							l = e.lineWidths;
-						if (t.display) {
-							var u, _ = ba(t.rtl, e.left, e.minSize.width),
-								m = e.ctx,
-								c = wa(n.fontColor, a.defaultFontColor),
-								h = R.options._parseFont(n),
-								f = h.size;
-							m.textAlign = _.textAlign("left"), m.textBaseline = "middle", m.lineWidth = .5, m.strokeStyle = c, m.fillStyle = c, m.font = h.string;
-							var p = Ta(n, f),
-								M = e.legendHitBoxes,
-								y = function(e, a) {
-									switch (t.align) {
+						var t = this,
+							e = t.options,
+							n = e.labels,
+							i = z.global,
+							a = i.defaultColor,
+							r = i.elements.line,
+							o = t.height,
+							s = t.columnHeights,
+							l = t.width,
+							u = t.lineWidths;
+						if (e.display) {
+							var d, c = Mi(e.rtl, t.left, t.minSize.width),
+								h = t.ctx,
+								f = Si(n.fontColor, i.defaultFontColor),
+								g = j.options._parseFont(n),
+								p = g.size;
+							h.textAlign = c.textAlign("left"), h.textBaseline = "middle", h.lineWidth = .5, h.strokeStyle = f, h.fillStyle = f, h.font = g.string;
+							var m = Pi(n, p),
+								v = t.legendHitBoxes,
+								b = function(t, i) {
+									switch (e.align) {
 										case "start":
 											return n.padding;
 										case "end":
-											return e - a;
+											return t - i;
 										default:
-											return (e - a + n.padding) / 2
+											return (t - i + n.padding) / 2
 									}
 								},
-								g = e.isHorizontal();
-							u = g ? {
-								x: e.left + y(d, l[0]),
-								y: e.top + n.padding,
+								y = t.isHorizontal();
+							d = y ? {
+								x: t.left + b(l, u[0]),
+								y: t.top + n.padding,
 								line: 0
 							} : {
-								x: e.left + n.padding,
-								y: e.top + y(s, o[0]),
+								x: t.left + n.padding,
+								y: t.top + b(o, s[0]),
 								line: 0
-							}, R.rtl.overrideTextDirection(e.ctx, t.textDirection);
-							var L = f + n.padding;
-							R.each(e.legendItems, (function(t, a) {
-								var c = m.measureText(t.text).width,
-									h = p + f / 2 + c,
-									Y = u.x,
-									v = u.y;
-								_.setWidth(e.minSize.width), g ? a > 0 && Y + h + n.padding > e.left + e.minSize.width && (v = u.y += L, u.line++, Y = u.x = e.left + y(d, l[u.line])) : a > 0 && v + L > e.top + e.minSize.height && (Y = u.x = Y + e.columnWidths[u.line] + n.padding, u.line++, v = u.y = e.top + y(s, o[u.line]));
-								var k = _.x(Y);
-								! function(e, t, a) {
-									if (!(isNaN(p) || p <= 0)) {
-										m.save();
-										var s = wa(a.lineWidth, i.borderWidth);
-										if (m.fillStyle = wa(a.fillStyle, r), m.lineCap = wa(a.lineCap, i.borderCapStyle), m.lineDashOffset = wa(a.lineDashOffset, i.borderDashOffset), m.lineJoin = wa(a.lineJoin, i.borderJoinStyle), m.lineWidth = s, m.strokeStyle = wa(a.strokeStyle, r), m.setLineDash && m.setLineDash(wa(a.lineDash, i.borderDash)), n && n.usePointStyle) {
-											var o = p * Math.SQRT2 / 2,
-												d = _.xPlus(e, p / 2),
-												l = t + f / 2;
-											R.canvas.drawPoint(m, a.pointStyle, o, d, l, a.rotation)
-										} else m.fillRect(_.leftForLtr(e, p), t, p, f), 0 !== s && m.strokeRect(_.leftForLtr(e, p), t, p, f);
-										m.restore()
+							}, j.rtl.overrideTextDirection(t.ctx, e.textDirection);
+							var x = p + n.padding;
+							j.each(t.legendItems, (function(e, i) {
+								var f = h.measureText(e.text).width,
+									g = m + p / 2 + f,
+									_ = d.x,
+									k = d.y;
+								c.setWidth(t.minSize.width), y ? i > 0 && _ + g + n.padding > t.left + t.minSize.width && (k = d.y += x, d.line++, _ = d.x = t.left + b(l, u[d.line])) : i > 0 && k + x > t.top + t.minSize.height && (_ = d.x = _ + t.columnWidths[d.line] + n.padding, d.line++, k = d.y = t.top + b(o, s[d.line]));
+								var w = c.x(_);
+								! function(t, e, i) {
+									if (!(isNaN(m) || m <= 0)) {
+										h.save();
+										var o = Si(i.lineWidth, r.borderWidth);
+										if (h.fillStyle = Si(i.fillStyle, a), h.lineCap = Si(i.lineCap, r.borderCapStyle), h.lineDashOffset = Si(i.lineDashOffset, r.borderDashOffset), h.lineJoin = Si(i.lineJoin, r.borderJoinStyle), h.lineWidth = o, h.strokeStyle = Si(i.strokeStyle, a), h.setLineDash && h.setLineDash(Si(i.lineDash, r.borderDash)), n && n.usePointStyle) {
+											var s = m * Math.SQRT2 / 2,
+												l = c.xPlus(t, m / 2),
+												u = e + p / 2;
+											j.canvas.drawPoint(h, i.pointStyle, s, l, u, i.rotation)
+										} else h.fillRect(c.leftForLtr(t, m), e, m, p), 0 !== o && h.strokeRect(c.leftForLtr(t, m), e, m, p);
+										h.restore()
 									}
-								}(k, v, t), M[a].left = _.leftForLtr(k, M[a].width), M[a].top = v,
-									function(e, t, n, a) {
-										var r = f / 2,
-											i = _.xPlus(e, p + r),
-											s = t + r;
-										m.fillText(n.text, i, s), n.hidden && (m.beginPath(), m.lineWidth = 2, m.moveTo(i, s), m.lineTo(_.xPlus(i, a), s), m.stroke())
-									}(k, v, t, c), g ? u.x += h + n.padding : u.y += L
-							})), R.rtl.restoreTextDirection(e.ctx, t.textDirection)
+								}(w, k, e), v[i].left = c.leftForLtr(w, v[i].width), v[i].top = k,
+									function(t, e, n, i) {
+										var a = p / 2,
+											r = c.xPlus(t, m + a),
+											o = e + a;
+										h.fillText(n.text, r, o), n.hidden && (h.beginPath(), h.lineWidth = 2, h.moveTo(r, o), h.lineTo(c.xPlus(r, i), o), h.stroke())
+									}(w, k, e, f), y ? d.x += g + n.padding : d.y += x
+							})), j.rtl.restoreTextDirection(t.ctx, e.textDirection)
 						}
 					},
-					_getLegendItemAt: function(e, t) {
-						var n, a, r, i = this;
-						if (e >= i.left && e <= i.right && t >= i.top && t <= i.bottom)
-							for (r = i.legendHitBoxes, n = 0; n < r.length; ++n)
-								if (e >= (a = r[n]).left && e <= a.left + a.width && t >= a.top && t <= a.top + a.height) return i.legendItems[n];
+					_getLegendItemAt: function(t, e) {
+						var n, i, a, r = this;
+						if (t >= r.left && t <= r.right && e >= r.top && e <= r.bottom)
+							for (a = r.legendHitBoxes, n = 0; n < a.length; ++n)
+								if (t >= (i = a[n]).left && t <= i.left + i.width && e >= i.top && e <= i.top + i.height) return r.legendItems[n];
 						return null
 					},
-					handleEvent: function(e) {
-						var t, n = this,
-							a = n.options,
-							r = "mouseup" === e.type ? "click" : e.type;
-						if ("mousemove" === r) {
-							if (!a.onHover && !a.onLeave) return
+					handleEvent: function(t) {
+						var e, n = this,
+							i = n.options,
+							a = "mouseup" === t.type ? "click" : t.type;
+						if ("mousemove" === a) {
+							if (!i.onHover && !i.onLeave) return
 						} else {
-							if ("click" !== r) return;
-							if (!a.onClick) return
+							if ("click" !== a) return;
+							if (!i.onClick) return
 						}
-						t = n._getLegendItemAt(e.x, e.y), "click" === r ? t && a.onClick && a.onClick.call(n, e.native, t) : (a.onLeave && t !== n._hoveredItem && (n._hoveredItem && a.onLeave.call(n, e.native, n._hoveredItem), n._hoveredItem = t), a.onHover && t && a.onHover.call(n, e.native, t))
+						e = n._getLegendItemAt(t.x, t.y), "click" === a ? e && i.onClick && i.onClick.call(n, t.native, e) : (i.onLeave && e !== n._hoveredItem && (n._hoveredItem && i.onLeave.call(n, t.native, n._hoveredItem), n._hoveredItem = e), i.onHover && e && i.onHover.call(n, t.native, e))
 					}
 				});
 
-				function Sa(e, t) {
-					var n = new xa({
-						ctx: e.ctx,
-						options: t,
-						chart: e
+				function Di(t, e) {
+					var n = new Ai({
+						ctx: t.ctx,
+						options: e,
+						chart: t
 					});
-					ft.configure(e, n, t), ft.addBox(e, n), e.legend = n
+					pe.configure(t, n, e), pe.addBox(t, n), t.legend = n
 				}
-				var Ha = {
+				var Ii = {
 						id: "legend",
-						_element: xa,
-						beforeInit: function(e) {
-							var t = e.options.legend;
-							t && Sa(e, t)
+						_element: Ai,
+						beforeInit: function(t) {
+							var e = t.options.legend;
+							e && Di(t, e)
 						},
-						beforeUpdate: function(e) {
-							var t = e.options.legend,
-								n = e.legend;
-							t ? (R.mergeIf(t, C.global.legend), n ? (ft.configure(e, n, t), n.options = t) : Sa(e, t)) : n && (ft.removeBox(e, n), delete e.legend)
+						beforeUpdate: function(t) {
+							var e = t.options.legend,
+								n = t.legend;
+							e ? (j.mergeIf(e, z.global.legend), n ? (pe.configure(t, n, e), n.options = e) : Di(t, e)) : n && (pe.removeBox(t, n), delete t.legend)
 						},
-						afterEvent: function(e, t) {
-							var n = e.legend;
-							n && n.handleEvent(t)
+						afterEvent: function(t, e) {
+							var n = t.legend;
+							n && n.handleEvent(e)
 						}
 					},
-					ja = R.noop;
-				C._set("global", {
+					Ti = j.noop;
+				z._set("global", {
 					title: {
 						display: !1,
 						fontStyle: "bold",
@@ -6532,11732 +6532,533 @@
 						weight: 2e3
 					}
 				});
-				var Pa = K.extend({
-					initialize: function(e) {
-						R.extend(this, e), this.legendHitBoxes = []
+				var Fi = X.extend({
+					initialize: function(t) {
+						j.extend(this, t), this.legendHitBoxes = []
 					},
-					beforeUpdate: ja,
-					update: function(e, t, n) {
-						var a = this;
-						return a.beforeUpdate(), a.maxWidth = e, a.maxHeight = t, a.margins = n, a.beforeSetDimensions(), a.setDimensions(), a.afterSetDimensions(), a.beforeBuildLabels(), a.buildLabels(), a.afterBuildLabels(), a.beforeFit(), a.fit(), a.afterFit(), a.afterUpdate(), a.minSize
+					beforeUpdate: Ti,
+					update: function(t, e, n) {
+						var i = this;
+						return i.beforeUpdate(), i.maxWidth = t, i.maxHeight = e, i.margins = n, i.beforeSetDimensions(), i.setDimensions(), i.afterSetDimensions(), i.beforeBuildLabels(), i.buildLabels(), i.afterBuildLabels(), i.beforeFit(), i.fit(), i.afterFit(), i.afterUpdate(), i.minSize
 					},
-					afterUpdate: ja,
-					beforeSetDimensions: ja,
+					afterUpdate: Ti,
+					beforeSetDimensions: Ti,
 					setDimensions: function() {
-						var e = this;
-						e.isHorizontal() ? (e.width = e.maxWidth, e.left = 0, e.right = e.width) : (e.height = e.maxHeight, e.top = 0, e.bottom = e.height), e.paddingLeft = 0, e.paddingTop = 0, e.paddingRight = 0, e.paddingBottom = 0, e.minSize = {
+						var t = this;
+						t.isHorizontal() ? (t.width = t.maxWidth, t.left = 0, t.right = t.width) : (t.height = t.maxHeight, t.top = 0, t.bottom = t.height), t.paddingLeft = 0, t.paddingTop = 0, t.paddingRight = 0, t.paddingBottom = 0, t.minSize = {
 							width: 0,
 							height: 0
 						}
 					},
-					afterSetDimensions: ja,
-					beforeBuildLabels: ja,
-					buildLabels: ja,
-					afterBuildLabels: ja,
-					beforeFit: ja,
+					afterSetDimensions: Ti,
+					beforeBuildLabels: Ti,
+					buildLabels: Ti,
+					afterBuildLabels: Ti,
+					beforeFit: Ti,
 					fit: function() {
-						var e, t = this,
-							n = t.options,
-							a = t.minSize = {},
-							r = t.isHorizontal();
-						n.display ? (e = (R.isArray(n.text) ? n.text.length : 1) * R.options._parseFont(n).lineHeight + 2 * n.padding, t.width = a.width = r ? t.maxWidth : e, t.height = a.height = r ? e : t.maxHeight) : t.width = a.width = t.height = a.height = 0
+						var t, e = this,
+							n = e.options,
+							i = e.minSize = {},
+							a = e.isHorizontal();
+						n.display ? (t = (j.isArray(n.text) ? n.text.length : 1) * j.options._parseFont(n).lineHeight + 2 * n.padding, e.width = i.width = a ? e.maxWidth : t, e.height = i.height = a ? t : e.maxHeight) : e.width = i.width = e.height = i.height = 0
 					},
-					afterFit: ja,
+					afterFit: Ti,
 					isHorizontal: function() {
-						var e = this.options.position;
-						return "top" === e || "bottom" === e
+						var t = this.options.position;
+						return "top" === t || "bottom" === t
 					},
 					draw: function() {
-						var e = this,
-							t = e.ctx,
-							n = e.options;
+						var t = this,
+							e = t.ctx,
+							n = t.options;
 						if (n.display) {
-							var a, r, i, s = R.options._parseFont(n),
-								o = s.lineHeight,
-								d = o / 2 + n.padding,
-								l = 0,
-								u = e.top,
-								_ = e.left,
-								m = e.bottom,
-								c = e.right;
-							t.fillStyle = R.valueOrDefault(n.fontColor, C.global.defaultFontColor), t.font = s.string, e.isHorizontal() ? (r = _ + (c - _) / 2, i = u + d, a = c - _) : (r = "left" === n.position ? _ + d : c - d, i = u + (m - u) / 2, a = m - u, l = Math.PI * ("left" === n.position ? -.5 : .5)), t.save(), t.translate(r, i), t.rotate(l), t.textAlign = "center", t.textBaseline = "middle";
-							var h = n.text;
-							if (R.isArray(h))
-								for (var f = 0, p = 0; p < h.length; ++p) t.fillText(h[p], 0, f, a), f += o;
-							else t.fillText(h, 0, 0, a);
-							t.restore()
+							var i, a, r, o = j.options._parseFont(n),
+								s = o.lineHeight,
+								l = s / 2 + n.padding,
+								u = 0,
+								d = t.top,
+								c = t.left,
+								h = t.bottom,
+								f = t.right;
+							e.fillStyle = j.valueOrDefault(n.fontColor, z.global.defaultFontColor), e.font = o.string, t.isHorizontal() ? (a = c + (f - c) / 2, r = d + l, i = f - c) : (a = "left" === n.position ? c + l : f - l, r = d + (h - d) / 2, i = h - d, u = Math.PI * ("left" === n.position ? -.5 : .5)), e.save(), e.translate(a, r), e.rotate(u), e.textAlign = "center", e.textBaseline = "middle";
+							var g = n.text;
+							if (j.isArray(g))
+								for (var p = 0, m = 0; m < g.length; ++m) e.fillText(g[m], 0, p, i), p += s;
+							else e.fillText(g, 0, 0, i);
+							e.restore()
 						}
 					}
 				});
 
-				function Oa(e, t) {
-					var n = new Pa({
-						ctx: e.ctx,
-						options: t,
-						chart: e
+				function Oi(t, e) {
+					var n = new Fi({
+						ctx: t.ctx,
+						options: e,
+						chart: t
 					});
-					ft.configure(e, n, t), ft.addBox(e, n), e.titleBlock = n
+					pe.configure(t, n, e), pe.addBox(t, n), t.titleBlock = n
 				}
-				var Aa = {},
-					Fa = ka,
-					Wa = Ha,
-					Ca = {
+				var Li = {},
+					Ri = wi,
+					Ei = Ii,
+					zi = {
 						id: "title",
-						_element: Pa,
-						beforeInit: function(e) {
-							var t = e.options.title;
-							t && Oa(e, t)
+						_element: Fi,
+						beforeInit: function(t) {
+							var e = t.options.title;
+							e && Oi(t, e)
 						},
-						beforeUpdate: function(e) {
-							var t = e.options.title,
-								n = e.titleBlock;
-							t ? (R.mergeIf(t, C.global.title), n ? (ft.configure(e, n, t), n.options = t) : Oa(e, t)) : n && (ft.removeBox(e, n), delete e.titleBlock)
+						beforeUpdate: function(t) {
+							var e = t.options.title,
+								n = t.titleBlock;
+							e ? (j.mergeIf(e, z.global.title), n ? (pe.configure(t, n, e), n.options = e) : Oi(t, e)) : n && (pe.removeBox(t, n), delete t.titleBlock)
 						}
 					};
-				for (var Ea in Aa.filler = Fa, Aa.legend = Wa, Aa.title = Ca, tn.helpers = R,
+				for (var Ni in Li.filler = Ri, Li.legend = Ei, Li.title = zi, en.helpers = j,
 						function() {
-							function e(e, t, n) {
-								var a;
-								return "string" == typeof e ? (a = parseInt(e, 10), -1 !== e.indexOf("%") && (a = a / 100 * t.parentNode[n])) : a = e, a
+							function t(t, e, n) {
+								var i;
+								return "string" == typeof t ? (i = parseInt(t, 10), -1 !== t.indexOf("%") && (i = i / 100 * e.parentNode[n])) : i = t, i
 							}
 
-							function t(e) {
-								return null != e && "none" !== e
+							function e(t) {
+								return null != t && "none" !== t
 							}
 
-							function n(n, a, r) {
-								var i = document.defaultView,
-									s = R._getParentNode(n),
-									o = i.getComputedStyle(n)[a],
-									d = i.getComputedStyle(s)[a],
-									l = t(o),
-									u = t(d),
-									_ = Number.POSITIVE_INFINITY;
-								return l || u ? Math.min(l ? e(o, n, r) : _, u ? e(d, s, r) : _) : "none"
+							function n(n, i, a) {
+								var r = document.defaultView,
+									o = j._getParentNode(n),
+									s = r.getComputedStyle(n)[i],
+									l = r.getComputedStyle(o)[i],
+									u = e(s),
+									d = e(l),
+									c = Number.POSITIVE_INFINITY;
+								return u || d ? Math.min(u ? t(s, n, a) : c, d ? t(l, o, a) : c) : "none"
 							}
-							R.where = function(e, t) {
-								if (R.isArray(e) && Array.prototype.filter) return e.filter(t);
+							j.where = function(t, e) {
+								if (j.isArray(t) && Array.prototype.filter) return t.filter(e);
 								var n = [];
-								return R.each(e, (function(e) {
-									t(e) && n.push(e)
+								return j.each(t, (function(t) {
+									e(t) && n.push(t)
 								})), n
-							}, R.findIndex = Array.prototype.findIndex ? function(e, t, n) {
-								return e.findIndex(t, n)
-							} : function(e, t, n) {
-								n = void 0 === n ? e : n;
-								for (var a = 0, r = e.length; a < r; ++a)
-									if (t.call(n, e[a], a, e)) return a;
+							}, j.findIndex = Array.prototype.findIndex ? function(t, e, n) {
+								return t.findIndex(e, n)
+							} : function(t, e, n) {
+								n = void 0 === n ? t : n;
+								for (var i = 0, a = t.length; i < a; ++i)
+									if (e.call(n, t[i], i, t)) return i;
 								return -1
-							}, R.findNextWhere = function(e, t, n) {
-								R.isNullOrUndef(n) && (n = -1);
-								for (var a = n + 1; a < e.length; a++) {
-									var r = e[a];
-									if (t(r)) return r
+							}, j.findNextWhere = function(t, e, n) {
+								j.isNullOrUndef(n) && (n = -1);
+								for (var i = n + 1; i < t.length; i++) {
+									var a = t[i];
+									if (e(a)) return a
 								}
-							}, R.findPreviousWhere = function(e, t, n) {
-								R.isNullOrUndef(n) && (n = e.length);
-								for (var a = n - 1; a >= 0; a--) {
-									var r = e[a];
-									if (t(r)) return r
+							}, j.findPreviousWhere = function(t, e, n) {
+								j.isNullOrUndef(n) && (n = t.length);
+								for (var i = n - 1; i >= 0; i--) {
+									var a = t[i];
+									if (e(a)) return a
 								}
-							}, R.isNumber = function(e) {
-								return !isNaN(parseFloat(e)) && isFinite(e)
-							}, R.almostEquals = function(e, t, n) {
-								return Math.abs(e - t) < n
-							}, R.almostWhole = function(e, t) {
-								var n = Math.round(e);
-								return n - t <= e && n + t >= e
-							}, R.max = function(e) {
-								return e.reduce((function(e, t) {
-									return isNaN(t) ? e : Math.max(e, t)
+							}, j.isNumber = function(t) {
+								return !isNaN(parseFloat(t)) && isFinite(t)
+							}, j.almostEquals = function(t, e, n) {
+								return Math.abs(t - e) < n
+							}, j.almostWhole = function(t, e) {
+								var n = Math.round(t);
+								return n - e <= t && n + e >= t
+							}, j.max = function(t) {
+								return t.reduce((function(t, e) {
+									return isNaN(e) ? t : Math.max(t, e)
 								}), Number.NEGATIVE_INFINITY)
-							}, R.min = function(e) {
-								return e.reduce((function(e, t) {
-									return isNaN(t) ? e : Math.min(e, t)
+							}, j.min = function(t) {
+								return t.reduce((function(t, e) {
+									return isNaN(e) ? t : Math.min(t, e)
 								}), Number.POSITIVE_INFINITY)
-							}, R.sign = Math.sign ? function(e) {
-								return Math.sign(e)
-							} : function(e) {
-								return 0 == (e = +e) || isNaN(e) ? e : e > 0 ? 1 : -1
-							}, R.toRadians = function(e) {
-								return e * (Math.PI / 180)
-							}, R.toDegrees = function(e) {
-								return e * (180 / Math.PI)
-							}, R._decimalPlaces = function(e) {
-								if (R.isFinite(e)) {
-									for (var t = 1, n = 0; Math.round(e * t) / t !== e;) t *= 10, n++;
+							}, j.sign = Math.sign ? function(t) {
+								return Math.sign(t)
+							} : function(t) {
+								return 0 == (t = +t) || isNaN(t) ? t : t > 0 ? 1 : -1
+							}, j.toRadians = function(t) {
+								return t * (Math.PI / 180)
+							}, j.toDegrees = function(t) {
+								return t * (180 / Math.PI)
+							}, j._decimalPlaces = function(t) {
+								if (j.isFinite(t)) {
+									for (var e = 1, n = 0; Math.round(t * e) / e !== t;) e *= 10, n++;
 									return n
 								}
-							}, R.getAngleFromPoint = function(e, t) {
-								var n = t.x - e.x,
-									a = t.y - e.y,
-									r = Math.sqrt(n * n + a * a),
-									i = Math.atan2(a, n);
-								return i < -.5 * Math.PI && (i += 2 * Math.PI), {
-									angle: i,
-									distance: r
+							}, j.getAngleFromPoint = function(t, e) {
+								var n = e.x - t.x,
+									i = e.y - t.y,
+									a = Math.sqrt(n * n + i * i),
+									r = Math.atan2(i, n);
+								return r < -.5 * Math.PI && (r += 2 * Math.PI), {
+									angle: r,
+									distance: a
 								}
-							}, R.distanceBetweenPoints = function(e, t) {
-								return Math.sqrt(Math.pow(t.x - e.x, 2) + Math.pow(t.y - e.y, 2))
-							}, R.aliasPixel = function(e) {
-								return e % 2 == 0 ? 0 : .5
-							}, R._alignPixel = function(e, t, n) {
-								var a = e.currentDevicePixelRatio,
-									r = n / 2;
-								return Math.round((t - r) * a) / a + r
-							}, R.splineCurve = function(e, t, n, a) {
-								var r = e.skip ? t : e,
-									i = t,
-									s = n.skip ? t : n,
-									o = Math.sqrt(Math.pow(i.x - r.x, 2) + Math.pow(i.y - r.y, 2)),
-									d = Math.sqrt(Math.pow(s.x - i.x, 2) + Math.pow(s.y - i.y, 2)),
-									l = o / (o + d),
-									u = d / (o + d),
-									_ = a * (l = isNaN(l) ? 0 : l),
-									m = a * (u = isNaN(u) ? 0 : u);
+							}, j.distanceBetweenPoints = function(t, e) {
+								return Math.sqrt(Math.pow(e.x - t.x, 2) + Math.pow(e.y - t.y, 2))
+							}, j.aliasPixel = function(t) {
+								return t % 2 == 0 ? 0 : .5
+							}, j._alignPixel = function(t, e, n) {
+								var i = t.currentDevicePixelRatio,
+									a = n / 2;
+								return Math.round((e - a) * i) / i + a
+							}, j.splineCurve = function(t, e, n, i) {
+								var a = t.skip ? e : t,
+									r = e,
+									o = n.skip ? e : n,
+									s = Math.sqrt(Math.pow(r.x - a.x, 2) + Math.pow(r.y - a.y, 2)),
+									l = Math.sqrt(Math.pow(o.x - r.x, 2) + Math.pow(o.y - r.y, 2)),
+									u = s / (s + l),
+									d = l / (s + l),
+									c = i * (u = isNaN(u) ? 0 : u),
+									h = i * (d = isNaN(d) ? 0 : d);
 								return {
 									previous: {
-										x: i.x - _ * (s.x - r.x),
-										y: i.y - _ * (s.y - r.y)
+										x: r.x - c * (o.x - a.x),
+										y: r.y - c * (o.y - a.y)
 									},
 									next: {
-										x: i.x + m * (s.x - r.x),
-										y: i.y + m * (s.y - r.y)
+										x: r.x + h * (o.x - a.x),
+										y: r.y + h * (o.y - a.y)
 									}
 								}
-							}, R.EPSILON = Number.EPSILON || 1e-14, R.splineCurveMonotone = function(e) {
-								var t, n, a, r, i, s, o, d, l, u = (e || []).map((function(e) {
+							}, j.EPSILON = Number.EPSILON || 1e-14, j.splineCurveMonotone = function(t) {
+								var e, n, i, a, r, o, s, l, u, d = (t || []).map((function(t) {
 										return {
-											model: e._model,
+											model: t._model,
 											deltaK: 0,
 											mK: 0
 										}
 									})),
-									_ = u.length;
-								for (t = 0; t < _; ++t)
-									if (!(a = u[t]).model.skip) {
-										if (n = t > 0 ? u[t - 1] : null, (r = t < _ - 1 ? u[t + 1] : null) && !r.model.skip) {
-											var m = r.model.x - a.model.x;
-											a.deltaK = 0 !== m ? (r.model.y - a.model.y) / m : 0
-										}!n || n.model.skip ? a.mK = a.deltaK : !r || r.model.skip ? a.mK = n.deltaK : this.sign(n.deltaK) !== this.sign(a.deltaK) ? a.mK = 0 : a.mK = (n.deltaK + a.deltaK) / 2
-									} for (t = 0; t < _ - 1; ++t) a = u[t], r = u[t + 1], a.model.skip || r.model.skip || (R.almostEquals(a.deltaK, 0, this.EPSILON) ? a.mK = r.mK = 0 : (i = a.mK / a.deltaK, s = r.mK / a.deltaK, (d = Math.pow(i, 2) + Math.pow(s, 2)) <= 9 || (o = 3 / Math.sqrt(d), a.mK = i * o * a.deltaK, r.mK = s * o * a.deltaK)));
-								for (t = 0; t < _; ++t)(a = u[t]).model.skip || (n = t > 0 ? u[t - 1] : null, r = t < _ - 1 ? u[t + 1] : null, n && !n.model.skip && (l = (a.model.x - n.model.x) / 3, a.model.controlPointPreviousX = a.model.x - l, a.model.controlPointPreviousY = a.model.y - l * a.mK), r && !r.model.skip && (l = (r.model.x - a.model.x) / 3, a.model.controlPointNextX = a.model.x + l, a.model.controlPointNextY = a.model.y + l * a.mK))
-							}, R.nextItem = function(e, t, n) {
-								return n ? t >= e.length - 1 ? e[0] : e[t + 1] : t >= e.length - 1 ? e[e.length - 1] : e[t + 1]
-							}, R.previousItem = function(e, t, n) {
-								return n ? t <= 0 ? e[e.length - 1] : e[t - 1] : t <= 0 ? e[0] : e[t - 1]
-							}, R.niceNum = function(e, t) {
-								var n = Math.floor(R.log10(e)),
-									a = e / Math.pow(10, n);
-								return (t ? a < 1.5 ? 1 : a < 3 ? 2 : a < 7 ? 5 : 10 : a <= 1 ? 1 : a <= 2 ? 2 : a <= 5 ? 5 : 10) * Math.pow(10, n)
-							}, R.requestAnimFrame = "undefined" == typeof window ? function(e) {
-								e()
-							} : window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(e) {
-								return window.setTimeout(e, 1e3 / 60)
-							}, R.getRelativePosition = function(e, t) {
-								var n, a, r = e.originalEvent || e,
-									i = e.target || e.srcElement,
-									s = i.getBoundingClientRect(),
-									o = r.touches;
-								o && o.length > 0 ? (n = o[0].clientX, a = o[0].clientY) : (n = r.clientX, a = r.clientY);
-								var d = parseFloat(R.getStyle(i, "padding-left")),
-									l = parseFloat(R.getStyle(i, "padding-top")),
-									u = parseFloat(R.getStyle(i, "padding-right")),
-									_ = parseFloat(R.getStyle(i, "padding-bottom")),
-									m = s.right - s.left - d - u,
-									c = s.bottom - s.top - l - _;
+									c = d.length;
+								for (e = 0; e < c; ++e)
+									if (!(i = d[e]).model.skip) {
+										if (n = e > 0 ? d[e - 1] : null, (a = e < c - 1 ? d[e + 1] : null) && !a.model.skip) {
+											var h = a.model.x - i.model.x;
+											i.deltaK = 0 !== h ? (a.model.y - i.model.y) / h : 0
+										}!n || n.model.skip ? i.mK = i.deltaK : !a || a.model.skip ? i.mK = n.deltaK : this.sign(n.deltaK) !== this.sign(i.deltaK) ? i.mK = 0 : i.mK = (n.deltaK + i.deltaK) / 2
+									} for (e = 0; e < c - 1; ++e) i = d[e], a = d[e + 1], i.model.skip || a.model.skip || (j.almostEquals(i.deltaK, 0, this.EPSILON) ? i.mK = a.mK = 0 : (r = i.mK / i.deltaK, o = a.mK / i.deltaK, (l = Math.pow(r, 2) + Math.pow(o, 2)) <= 9 || (s = 3 / Math.sqrt(l), i.mK = r * s * i.deltaK, a.mK = o * s * i.deltaK)));
+								for (e = 0; e < c; ++e)(i = d[e]).model.skip || (n = e > 0 ? d[e - 1] : null, a = e < c - 1 ? d[e + 1] : null, n && !n.model.skip && (u = (i.model.x - n.model.x) / 3, i.model.controlPointPreviousX = i.model.x - u, i.model.controlPointPreviousY = i.model.y - u * i.mK), a && !a.model.skip && (u = (a.model.x - i.model.x) / 3, i.model.controlPointNextX = i.model.x + u, i.model.controlPointNextY = i.model.y + u * i.mK))
+							}, j.nextItem = function(t, e, n) {
+								return n ? e >= t.length - 1 ? t[0] : t[e + 1] : e >= t.length - 1 ? t[t.length - 1] : t[e + 1]
+							}, j.previousItem = function(t, e, n) {
+								return n ? e <= 0 ? t[t.length - 1] : t[e - 1] : e <= 0 ? t[0] : t[e - 1]
+							}, j.niceNum = function(t, e) {
+								var n = Math.floor(j.log10(t)),
+									i = t / Math.pow(10, n);
+								return (e ? i < 1.5 ? 1 : i < 3 ? 2 : i < 7 ? 5 : 10 : i <= 1 ? 1 : i <= 2 ? 2 : i <= 5 ? 5 : 10) * Math.pow(10, n)
+							}, j.requestAnimFrame = "undefined" == typeof window ? function(t) {
+								t()
+							} : window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(t) {
+								return window.setTimeout(t, 1e3 / 60)
+							}, j.getRelativePosition = function(t, e) {
+								var n, i, a = t.originalEvent || t,
+									r = t.target || t.srcElement,
+									o = r.getBoundingClientRect(),
+									s = a.touches;
+								s && s.length > 0 ? (n = s[0].clientX, i = s[0].clientY) : (n = a.clientX, i = a.clientY);
+								var l = parseFloat(j.getStyle(r, "padding-left")),
+									u = parseFloat(j.getStyle(r, "padding-top")),
+									d = parseFloat(j.getStyle(r, "padding-right")),
+									c = parseFloat(j.getStyle(r, "padding-bottom")),
+									h = o.right - o.left - l - d,
+									f = o.bottom - o.top - u - c;
 								return {
-									x: n = Math.round((n - s.left - d) / m * i.width / t.currentDevicePixelRatio),
-									y: a = Math.round((a - s.top - l) / c * i.height / t.currentDevicePixelRatio)
+									x: n = Math.round((n - o.left - l) / h * r.width / e.currentDevicePixelRatio),
+									y: i = Math.round((i - o.top - u) / f * r.height / e.currentDevicePixelRatio)
 								}
-							}, R.getConstraintWidth = function(e) {
-								return n(e, "max-width", "clientWidth")
-							}, R.getConstraintHeight = function(e) {
-								return n(e, "max-height", "clientHeight")
-							}, R._calculatePadding = function(e, t, n) {
-								return (t = R.getStyle(e, t)).indexOf("%") > -1 ? n * parseInt(t, 10) / 100 : parseInt(t, 10)
-							}, R._getParentNode = function(e) {
-								var t = e.parentNode;
-								return t && "[object ShadowRoot]" === t.toString() && (t = t.host), t
-							}, R.getMaximumWidth = function(e) {
-								var t = R._getParentNode(e);
-								if (!t) return e.clientWidth;
-								var n = t.clientWidth,
-									a = n - R._calculatePadding(t, "padding-left", n) - R._calculatePadding(t, "padding-right", n),
-									r = R.getConstraintWidth(e);
-								return isNaN(r) ? a : Math.min(a, r)
-							}, R.getMaximumHeight = function(e) {
-								var t = R._getParentNode(e);
-								if (!t) return e.clientHeight;
-								var n = t.clientHeight,
-									a = n - R._calculatePadding(t, "padding-top", n) - R._calculatePadding(t, "padding-bottom", n),
-									r = R.getConstraintHeight(e);
-								return isNaN(r) ? a : Math.min(a, r)
-							}, R.getStyle = function(e, t) {
-								return e.currentStyle ? e.currentStyle[t] : document.defaultView.getComputedStyle(e, null).getPropertyValue(t)
-							}, R.retinaScale = function(e, t) {
-								var n = e.currentDevicePixelRatio = t || "undefined" != typeof window && window.devicePixelRatio || 1;
+							}, j.getConstraintWidth = function(t) {
+								return n(t, "max-width", "clientWidth")
+							}, j.getConstraintHeight = function(t) {
+								return n(t, "max-height", "clientHeight")
+							}, j._calculatePadding = function(t, e, n) {
+								return (e = j.getStyle(t, e)).indexOf("%") > -1 ? n * parseInt(e, 10) / 100 : parseInt(e, 10)
+							}, j._getParentNode = function(t) {
+								var e = t.parentNode;
+								return e && "[object ShadowRoot]" === e.toString() && (e = e.host), e
+							}, j.getMaximumWidth = function(t) {
+								var e = j._getParentNode(t);
+								if (!e) return t.clientWidth;
+								var n = e.clientWidth,
+									i = n - j._calculatePadding(e, "padding-left", n) - j._calculatePadding(e, "padding-right", n),
+									a = j.getConstraintWidth(t);
+								return isNaN(a) ? i : Math.min(i, a)
+							}, j.getMaximumHeight = function(t) {
+								var e = j._getParentNode(t);
+								if (!e) return t.clientHeight;
+								var n = e.clientHeight,
+									i = n - j._calculatePadding(e, "padding-top", n) - j._calculatePadding(e, "padding-bottom", n),
+									a = j.getConstraintHeight(t);
+								return isNaN(a) ? i : Math.min(i, a)
+							}, j.getStyle = function(t, e) {
+								return t.currentStyle ? t.currentStyle[e] : document.defaultView.getComputedStyle(t, null).getPropertyValue(e)
+							}, j.retinaScale = function(t, e) {
+								var n = t.currentDevicePixelRatio = e || "undefined" != typeof window && window.devicePixelRatio || 1;
 								if (1 !== n) {
-									var a = e.canvas,
-										r = e.height,
-										i = e.width;
-									a.height = r * n, a.width = i * n, e.ctx.scale(n, n), a.style.height || a.style.width || (a.style.height = r + "px", a.style.width = i + "px")
+									var i = t.canvas,
+										a = t.height,
+										r = t.width;
+									i.height = a * n, i.width = r * n, t.ctx.scale(n, n), i.style.height || i.style.width || (i.style.height = a + "px", i.style.width = r + "px")
 								}
-							}, R.fontString = function(e, t, n) {
-								return t + " " + e + "px " + n
-							}, R.longestText = function(e, t, n, a) {
-								var r = (a = a || {}).data = a.data || {},
-									i = a.garbageCollect = a.garbageCollect || [];
-								a.font !== t && (r = a.data = {}, i = a.garbageCollect = [], a.font = t), e.font = t;
-								var s, o, d, l, u, _ = 0,
-									m = n.length;
-								for (s = 0; s < m; s++)
-									if (null != (l = n[s]) && !0 !== R.isArray(l)) _ = R.measureText(e, r, i, _, l);
-									else if (R.isArray(l))
-									for (o = 0, d = l.length; o < d; o++) null == (u = l[o]) || R.isArray(u) || (_ = R.measureText(e, r, i, _, u));
-								var c = i.length / 2;
-								if (c > n.length) {
-									for (s = 0; s < c; s++) delete r[i[s]];
-									i.splice(0, c)
+							}, j.fontString = function(t, e, n) {
+								return e + " " + t + "px " + n
+							}, j.longestText = function(t, e, n, i) {
+								var a = (i = i || {}).data = i.data || {},
+									r = i.garbageCollect = i.garbageCollect || [];
+								i.font !== e && (a = i.data = {}, r = i.garbageCollect = [], i.font = e), t.font = e;
+								var o, s, l, u, d, c = 0,
+									h = n.length;
+								for (o = 0; o < h; o++)
+									if (null != (u = n[o]) && !0 !== j.isArray(u)) c = j.measureText(t, a, r, c, u);
+									else if (j.isArray(u))
+									for (s = 0, l = u.length; s < l; s++) null == (d = u[s]) || j.isArray(d) || (c = j.measureText(t, a, r, c, d));
+								var f = r.length / 2;
+								if (f > n.length) {
+									for (o = 0; o < f; o++) delete a[r[o]];
+									r.splice(0, f)
 								}
-								return _
-							}, R.measureText = function(e, t, n, a, r) {
-								var i = t[r];
-								return i || (i = t[r] = e.measureText(r).width, n.push(r)), i > a && (a = i), a
-							}, R.numberOfLabelLines = function(e) {
-								var t = 1;
-								return R.each(e, (function(e) {
-									R.isArray(e) && e.length > t && (t = e.length)
-								})), t
-							}, R.color = Y ? function(e) {
-								return e instanceof CanvasGradient && (e = C.global.defaultColor), Y(e)
-							} : function(e) {
-								return console.error("Color.js not found!"), e
-							}, R.getHoverColor = function(e) {
-								return e instanceof CanvasPattern || e instanceof CanvasGradient ? e : R.color(e).saturate(.5).darken(.1).rgbString()
+								return c
+							}, j.measureText = function(t, e, n, i, a) {
+								var r = e[a];
+								return r || (r = e[a] = t.measureText(a).width, n.push(a)), r > i && (i = r), i
+							}, j.numberOfLabelLines = function(t) {
+								var e = 1;
+								return j.each(t, (function(t) {
+									j.isArray(t) && t.length > e && (e = t.length)
+								})), e
+							}, j.color = _ ? function(t) {
+								return t instanceof CanvasGradient && (t = z.global.defaultColor), _(t)
+							} : function(t) {
+								return console.error("Color.js not found!"), t
+							}, j.getHoverColor = function(t) {
+								return t instanceof CanvasPattern || t instanceof CanvasGradient ? t : j.color(t).saturate(.5).darken(.1).rgbString()
 							}
-						}(), tn._adapters = rn, tn.Animation = $, tn.animationService = X, tn.controllers = Xe, tn.DatasetController = ae, tn.defaults = C, tn.Element = K, tn.elements = ve, tn.Interaction = it, tn.layouts = ft, tn.platform = Ot, tn.plugins = At, tn.Scale = Ln, tn.scaleService = Ft, tn.Ticks = sn, tn.Tooltip = Ut, tn.helpers.each(ca, (function(e, t) {
-							tn.scaleService.registerScaleType(t, e, e._defaults)
-						})), Aa) Aa.hasOwnProperty(Ea) && tn.plugins.register(Aa[Ea]);
-				tn.platform.initialize();
-				var Ia = tn;
-				return "undefined" != typeof window && (window.Chart = tn), tn.Chart = tn, tn.Legend = Aa.legend._element, tn.Title = Aa.title._element, tn.pluginService = tn.plugins, tn.PluginBase = tn.Element.extend({}), tn.canvasHelpers = tn.helpers.canvas, tn.layoutService = tn.layouts, tn.LinearScaleBase = wn, tn.helpers.each(["Bar", "Bubble", "Doughnut", "Line", "PolarArea", "Radar", "Scatter"], (function(e) {
-					tn[e] = function(t, n) {
-						return new tn(t, tn.helpers.merge(n || {}, {
-							type: e.charAt(0).toLowerCase() + e.slice(1)
+						}(), en._adapters = rn, en.Animation = $, en.animationService = J, en.controllers = Jt, en.DatasetController = it, en.defaults = z, en.Element = X, en.elements = kt, en.Interaction = re, en.layouts = pe, en.platform = Oe, en.plugins = Le, en.Scale = xn, en.scaleService = Re, en.Ticks = on, en.Tooltip = Ye, en.helpers.each(fi, (function(t, e) {
+							en.scaleService.registerScaleType(e, t, t._defaults)
+						})), Li) Li.hasOwnProperty(Ni) && en.plugins.register(Li[Ni]);
+				en.platform.initialize();
+				var Bi = en;
+				return "undefined" != typeof window && (window.Chart = en), en.Chart = en, en.Legend = Li.legend._element, en.Title = Li.title._element, en.pluginService = en.plugins, en.PluginBase = en.Element.extend({}), en.canvasHelpers = en.helpers.canvas, en.layoutService = en.layouts, en.LinearScaleBase = Sn, en.helpers.each(["Bar", "Bubble", "Doughnut", "Line", "PolarArea", "Radar", "Scatter"], (function(t) {
+					en[t] = function(e, n) {
+						return new en(e, en.helpers.merge(n || {}, {
+							type: t.charAt(0).toLowerCase() + t.slice(1)
 						}))
 					}
-				})), Ia
+				})), Bi
 			}(function() {
 				try {
 					return n("./node_modules/moment/moment.js")
-				} catch (e) {}
+				} catch (t) {}
 			}())
 		},
-		"./node_modules/lodash/keyBy.js": function(e, t, n) {
-			var a = n("./node_modules/lodash/_baseAssignValue.js"),
-				r = n("./node_modules/lodash/_createAggregator.js")((function(e, t, n) {
-					a(e, n, t)
+		"./node_modules/lodash/keyBy.js": function(t, e, n) {
+			var i = n("./node_modules/lodash/_baseAssignValue.js"),
+				a = n("./node_modules/lodash/_createAggregator.js")((function(t, e, n) {
+					i(t, n, e)
 				}));
-			e.exports = r
+			t.exports = a
 		},
-		"./node_modules/moment/locale/af.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("af", {
-					months: "Januarie_Februarie_Maart_April_Mei_Junie_Julie_Augustus_September_Oktober_November_Desember".split("_"),
-					monthsShort: "Jan_Feb_Mrt_Apr_Mei_Jun_Jul_Aug_Sep_Okt_Nov_Des".split("_"),
-					weekdays: "Sondag_Maandag_Dinsdag_Woensdag_Donderdag_Vrydag_Saterdag".split("_"),
-					weekdaysShort: "Son_Maa_Din_Woe_Don_Vry_Sat".split("_"),
-					weekdaysMin: "So_Ma_Di_Wo_Do_Vr_Sa".split("_"),
-					meridiemParse: /vm|nm/i,
-					isPM: function(e) {
-						return /^nm$/i.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? n ? "vm" : "VM" : n ? "nm" : "NM"
-					},
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Vandag om] LT",
-						nextDay: "[Môre om] LT",
-						nextWeek: "dddd [om] LT",
-						lastDay: "[Gister om] LT",
-						lastWeek: "[Laas] dddd [om] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "oor %s",
-						past: "%s gelede",
-						s: "'n paar sekondes",
-						ss: "%d sekondes",
-						m: "'n minuut",
-						mm: "%d minute",
-						h: "'n uur",
-						hh: "%d ure",
-						d: "'n dag",
-						dd: "%d dae",
-						M: "'n maand",
-						MM: "%d maande",
-						y: "'n jaar",
-						yy: "%d jaar"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
-					ordinal: function(e) {
-						return e + (1 === e || 8 === e || e >= 20 ? "ste" : "de")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ar-dz.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ar-dz", {
-					months: "جانفي_فيفري_مارس_أفريل_ماي_جوان_جويلية_أوت_سبتمبر_أكتوبر_نوفمبر_ديسمبر".split("_"),
-					monthsShort: "جانفي_فيفري_مارس_أفريل_ماي_جوان_جويلية_أوت_سبتمبر_أكتوبر_نوفمبر_ديسمبر".split("_"),
-					weekdays: "الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
-					weekdaysShort: "احد_اثنين_ثلاثاء_اربعاء_خميس_جمعة_سبت".split("_"),
-					weekdaysMin: "أح_إث_ثلا_أر_خم_جم_سب".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[اليوم على الساعة] LT",
-						nextDay: "[غدا على الساعة] LT",
-						nextWeek: "dddd [على الساعة] LT",
-						lastDay: "[أمس على الساعة] LT",
-						lastWeek: "dddd [على الساعة] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "في %s",
-						past: "منذ %s",
-						s: "ثوان",
-						ss: "%d ثانية",
-						m: "دقيقة",
-						mm: "%d دقائق",
-						h: "ساعة",
-						hh: "%d ساعات",
-						d: "يوم",
-						dd: "%d أيام",
-						M: "شهر",
-						MM: "%d أشهر",
-						y: "سنة",
-						yy: "%d سنوات"
-					},
-					week: {
-						dow: 0,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ar-kw.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ar-kw", {
-					months: "يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر".split("_"),
-					monthsShort: "يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر".split("_"),
-					weekdays: "الأحد_الإتنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
-					weekdaysShort: "احد_اتنين_ثلاثاء_اربعاء_خميس_جمعة_سبت".split("_"),
-					weekdaysMin: "ح_ن_ث_ر_خ_ج_س".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[اليوم على الساعة] LT",
-						nextDay: "[غدا على الساعة] LT",
-						nextWeek: "dddd [على الساعة] LT",
-						lastDay: "[أمس على الساعة] LT",
-						lastWeek: "dddd [على الساعة] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "في %s",
-						past: "منذ %s",
-						s: "ثوان",
-						ss: "%d ثانية",
-						m: "دقيقة",
-						mm: "%d دقائق",
-						h: "ساعة",
-						hh: "%d ساعات",
-						d: "يوم",
-						dd: "%d أيام",
-						M: "شهر",
-						MM: "%d أشهر",
-						y: "سنة",
-						yy: "%d سنوات"
-					},
-					week: {
-						dow: 0,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ar-ly.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "1",
-						2: "2",
-						3: "3",
-						4: "4",
-						5: "5",
-						6: "6",
-						7: "7",
-						8: "8",
-						9: "9",
-						0: "0"
-					},
-					n = function(e) {
-						return 0 === e ? 0 : 1 === e ? 1 : 2 === e ? 2 : e % 100 >= 3 && e % 100 <= 10 ? 3 : e % 100 >= 11 ? 4 : 5
-					},
-					a = {
-						s: ["أقل من ثانية", "ثانية واحدة", ["ثانيتان", "ثانيتين"], "%d ثوان", "%d ثانية", "%d ثانية"],
-						m: ["أقل من دقيقة", "دقيقة واحدة", ["دقيقتان", "دقيقتين"], "%d دقائق", "%d دقيقة", "%d دقيقة"],
-						h: ["أقل من ساعة", "ساعة واحدة", ["ساعتان", "ساعتين"], "%d ساعات", "%d ساعة", "%d ساعة"],
-						d: ["أقل من يوم", "يوم واحد", ["يومان", "يومين"], "%d أيام", "%d يومًا", "%d يوم"],
-						M: ["أقل من شهر", "شهر واحد", ["شهران", "شهرين"], "%d أشهر", "%d شهرا", "%d شهر"],
-						y: ["أقل من عام", "عام واحد", ["عامان", "عامين"], "%d أعوام", "%d عامًا", "%d عام"]
-					},
-					r = function(e) {
-						return function(t, r, i, s) {
-							var o = n(t),
-								d = a[e][n(t)];
-							return 2 === o && (d = d[r ? 0 : 1]), d.replace(/%d/i, t)
-						}
-					},
-					i = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
-				e.defineLocale("ar-ly", {
-					months: i,
-					monthsShort: i,
-					weekdays: "الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
-					weekdaysShort: "أحد_إثنين_ثلاثاء_أربعاء_خميس_جمعة_سبت".split("_"),
-					weekdaysMin: "ح_ن_ث_ر_خ_ج_س".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "D/‏M/‏YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /ص|م/,
-					isPM: function(e) {
-						return "م" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "ص" : "م"
-					},
-					calendar: {
-						sameDay: "[اليوم عند الساعة] LT",
-						nextDay: "[غدًا عند الساعة] LT",
-						nextWeek: "dddd [عند الساعة] LT",
-						lastDay: "[أمس عند الساعة] LT",
-						lastWeek: "dddd [عند الساعة] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "بعد %s",
-						past: "منذ %s",
-						s: r("s"),
-						ss: r("s"),
-						m: r("m"),
-						mm: r("m"),
-						h: r("h"),
-						hh: r("h"),
-						d: r("d"),
-						dd: r("d"),
-						M: r("M"),
-						MM: r("M"),
-						y: r("y"),
-						yy: r("y")
-					},
-					preparse: function(e) {
-						return e.replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						})).replace(/,/g, "،")
-					},
-					week: {
-						dow: 6,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ar-ma.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ar-ma", {
-					months: "يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر".split("_"),
-					monthsShort: "يناير_فبراير_مارس_أبريل_ماي_يونيو_يوليوز_غشت_شتنبر_أكتوبر_نونبر_دجنبر".split("_"),
-					weekdays: "الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
-					weekdaysShort: "احد_اثنين_ثلاثاء_اربعاء_خميس_جمعة_سبت".split("_"),
-					weekdaysMin: "ح_ن_ث_ر_خ_ج_س".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[اليوم على الساعة] LT",
-						nextDay: "[غدا على الساعة] LT",
-						nextWeek: "dddd [على الساعة] LT",
-						lastDay: "[أمس على الساعة] LT",
-						lastWeek: "dddd [على الساعة] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "في %s",
-						past: "منذ %s",
-						s: "ثوان",
-						ss: "%d ثانية",
-						m: "دقيقة",
-						mm: "%d دقائق",
-						h: "ساعة",
-						hh: "%d ساعات",
-						d: "يوم",
-						dd: "%d أيام",
-						M: "شهر",
-						MM: "%d أشهر",
-						y: "سنة",
-						yy: "%d سنوات"
-					},
-					week: {
-						dow: 6,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ar-sa.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "١",
-						2: "٢",
-						3: "٣",
-						4: "٤",
-						5: "٥",
-						6: "٦",
-						7: "٧",
-						8: "٨",
-						9: "٩",
-						0: "٠"
-					},
-					n = {
-						"١": "1",
-						"٢": "2",
-						"٣": "3",
-						"٤": "4",
-						"٥": "5",
-						"٦": "6",
-						"٧": "7",
-						"٨": "8",
-						"٩": "9",
-						"٠": "0"
-					};
-				e.defineLocale("ar-sa", {
-					months: "يناير_فبراير_مارس_أبريل_مايو_يونيو_يوليو_أغسطس_سبتمبر_أكتوبر_نوفمبر_ديسمبر".split("_"),
-					monthsShort: "يناير_فبراير_مارس_أبريل_مايو_يونيو_يوليو_أغسطس_سبتمبر_أكتوبر_نوفمبر_ديسمبر".split("_"),
-					weekdays: "الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
-					weekdaysShort: "أحد_إثنين_ثلاثاء_أربعاء_خميس_جمعة_سبت".split("_"),
-					weekdaysMin: "ح_ن_ث_ر_خ_ج_س".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /ص|م/,
-					isPM: function(e) {
-						return "م" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "ص" : "م"
-					},
-					calendar: {
-						sameDay: "[اليوم على الساعة] LT",
-						nextDay: "[غدا على الساعة] LT",
-						nextWeek: "dddd [على الساعة] LT",
-						lastDay: "[أمس على الساعة] LT",
-						lastWeek: "dddd [على الساعة] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "في %s",
-						past: "منذ %s",
-						s: "ثوان",
-						ss: "%d ثانية",
-						m: "دقيقة",
-						mm: "%d دقائق",
-						h: "ساعة",
-						hh: "%d ساعات",
-						d: "يوم",
-						dd: "%d أيام",
-						M: "شهر",
-						MM: "%d أشهر",
-						y: "سنة",
-						yy: "%d سنوات"
-					},
-					preparse: function(e) {
-						return e.replace(/[١٢٣٤٥٦٧٨٩٠]/g, (function(e) {
-							return n[e]
-						})).replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						})).replace(/,/g, "،")
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ar-tn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ar-tn", {
-					months: "جانفي_فيفري_مارس_أفريل_ماي_جوان_جويلية_أوت_سبتمبر_أكتوبر_نوفمبر_ديسمبر".split("_"),
-					monthsShort: "جانفي_فيفري_مارس_أفريل_ماي_جوان_جويلية_أوت_سبتمبر_أكتوبر_نوفمبر_ديسمبر".split("_"),
-					weekdays: "الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
-					weekdaysShort: "أحد_إثنين_ثلاثاء_أربعاء_خميس_جمعة_سبت".split("_"),
-					weekdaysMin: "ح_ن_ث_ر_خ_ج_س".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[اليوم على الساعة] LT",
-						nextDay: "[غدا على الساعة] LT",
-						nextWeek: "dddd [على الساعة] LT",
-						lastDay: "[أمس على الساعة] LT",
-						lastWeek: "dddd [على الساعة] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "في %s",
-						past: "منذ %s",
-						s: "ثوان",
-						ss: "%d ثانية",
-						m: "دقيقة",
-						mm: "%d دقائق",
-						h: "ساعة",
-						hh: "%d ساعات",
-						d: "يوم",
-						dd: "%d أيام",
-						M: "شهر",
-						MM: "%d أشهر",
-						y: "سنة",
-						yy: "%d سنوات"
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ar.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "١",
-						2: "٢",
-						3: "٣",
-						4: "٤",
-						5: "٥",
-						6: "٦",
-						7: "٧",
-						8: "٨",
-						9: "٩",
-						0: "٠"
-					},
-					n = {
-						"١": "1",
-						"٢": "2",
-						"٣": "3",
-						"٤": "4",
-						"٥": "5",
-						"٦": "6",
-						"٧": "7",
-						"٨": "8",
-						"٩": "9",
-						"٠": "0"
-					},
-					a = function(e) {
-						return 0 === e ? 0 : 1 === e ? 1 : 2 === e ? 2 : e % 100 >= 3 && e % 100 <= 10 ? 3 : e % 100 >= 11 ? 4 : 5
-					},
-					r = {
-						s: ["أقل من ثانية", "ثانية واحدة", ["ثانيتان", "ثانيتين"], "%d ثوان", "%d ثانية", "%d ثانية"],
-						m: ["أقل من دقيقة", "دقيقة واحدة", ["دقيقتان", "دقيقتين"], "%d دقائق", "%d دقيقة", "%d دقيقة"],
-						h: ["أقل من ساعة", "ساعة واحدة", ["ساعتان", "ساعتين"], "%d ساعات", "%d ساعة", "%d ساعة"],
-						d: ["أقل من يوم", "يوم واحد", ["يومان", "يومين"], "%d أيام", "%d يومًا", "%d يوم"],
-						M: ["أقل من شهر", "شهر واحد", ["شهران", "شهرين"], "%d أشهر", "%d شهرا", "%d شهر"],
-						y: ["أقل من عام", "عام واحد", ["عامان", "عامين"], "%d أعوام", "%d عامًا", "%d عام"]
-					},
-					i = function(e) {
-						return function(t, n, i, s) {
-							var o = a(t),
-								d = r[e][a(t)];
-							return 2 === o && (d = d[n ? 0 : 1]), d.replace(/%d/i, t)
-						}
-					},
-					s = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
-				e.defineLocale("ar", {
-					months: s,
-					monthsShort: s,
-					weekdays: "الأحد_الإثنين_الثلاثاء_الأربعاء_الخميس_الجمعة_السبت".split("_"),
-					weekdaysShort: "أحد_إثنين_ثلاثاء_أربعاء_خميس_جمعة_سبت".split("_"),
-					weekdaysMin: "ح_ن_ث_ر_خ_ج_س".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "D/‏M/‏YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /ص|م/,
-					isPM: function(e) {
-						return "م" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "ص" : "م"
-					},
-					calendar: {
-						sameDay: "[اليوم عند الساعة] LT",
-						nextDay: "[غدًا عند الساعة] LT",
-						nextWeek: "dddd [عند الساعة] LT",
-						lastDay: "[أمس عند الساعة] LT",
-						lastWeek: "dddd [عند الساعة] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "بعد %s",
-						past: "منذ %s",
-						s: i("s"),
-						ss: i("s"),
-						m: i("m"),
-						mm: i("m"),
-						h: i("h"),
-						hh: i("h"),
-						d: i("d"),
-						dd: i("d"),
-						M: i("M"),
-						MM: i("M"),
-						y: i("y"),
-						yy: i("y")
-					},
-					preparse: function(e) {
-						return e.replace(/[١٢٣٤٥٦٧٨٩٠]/g, (function(e) {
-							return n[e]
-						})).replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						})).replace(/,/g, "،")
-					},
-					week: {
-						dow: 6,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/az.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					1: "-inci",
-					5: "-inci",
-					8: "-inci",
-					70: "-inci",
-					80: "-inci",
-					2: "-nci",
-					7: "-nci",
-					20: "-nci",
-					50: "-nci",
-					3: "-üncü",
-					4: "-üncü",
-					100: "-üncü",
-					6: "-ncı",
-					9: "-uncu",
-					10: "-uncu",
-					30: "-uncu",
-					60: "-ıncı",
-					90: "-ıncı"
-				};
-				e.defineLocale("az", {
-					months: "yanvar_fevral_mart_aprel_may_iyun_iyul_avqust_sentyabr_oktyabr_noyabr_dekabr".split("_"),
-					monthsShort: "yan_fev_mar_apr_may_iyn_iyl_avq_sen_okt_noy_dek".split("_"),
-					weekdays: "Bazar_Bazar ertəsi_Çərşənbə axşamı_Çərşənbə_Cümə axşamı_Cümə_Şənbə".split("_"),
-					weekdaysShort: "Baz_BzE_ÇAx_Çər_CAx_Cüm_Şən".split("_"),
-					weekdaysMin: "Bz_BE_ÇA_Çə_CA_Cü_Şə".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[bugün saat] LT",
-						nextDay: "[sabah saat] LT",
-						nextWeek: "[gələn həftə] dddd [saat] LT",
-						lastDay: "[dünən] LT",
-						lastWeek: "[keçən həftə] dddd [saat] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s sonra",
-						past: "%s əvvəl",
-						s: "birneçə saniyə",
-						ss: "%d saniyə",
-						m: "bir dəqiqə",
-						mm: "%d dəqiqə",
-						h: "bir saat",
-						hh: "%d saat",
-						d: "bir gün",
-						dd: "%d gün",
-						M: "bir ay",
-						MM: "%d ay",
-						y: "bir il",
-						yy: "%d il"
-					},
-					meridiemParse: /gecə|səhər|gündüz|axşam/,
-					isPM: function(e) {
-						return /^(gündüz|axşam)$/.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "gecə" : e < 12 ? "səhər" : e < 17 ? "gündüz" : "axşam"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(ıncı|inci|nci|üncü|ncı|uncu)/,
-					ordinal: function(e) {
-						if (0 === e) return e + "-ıncı";
-						var n = e % 10;
-						return e + (t[n] || t[e % 100 - n] || t[e >= 100 ? 100 : null])
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/be.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n) {
-					var a, r;
-					return "m" === n ? t ? "хвіліна" : "хвіліну" : "h" === n ? t ? "гадзіна" : "гадзіну" : e + " " + (a = +e, r = {
-						ss: t ? "секунда_секунды_секунд" : "секунду_секунды_секунд",
-						mm: t ? "хвіліна_хвіліны_хвілін" : "хвіліну_хвіліны_хвілін",
-						hh: t ? "гадзіна_гадзіны_гадзін" : "гадзіну_гадзіны_гадзін",
-						dd: "дзень_дні_дзён",
-						MM: "месяц_месяцы_месяцаў",
-						yy: "год_гады_гадоў"
-					} [n].split("_"), a % 10 == 1 && a % 100 != 11 ? r[0] : a % 10 >= 2 && a % 10 <= 4 && (a % 100 < 10 || a % 100 >= 20) ? r[1] : r[2])
-				}
-				e.defineLocale("be", {
-					months: {
-						format: "студзеня_лютага_сакавіка_красавіка_траўня_чэрвеня_ліпеня_жніўня_верасня_кастрычніка_лістапада_снежня".split("_"),
-						standalone: "студзень_люты_сакавік_красавік_травень_чэрвень_ліпень_жнівень_верасень_кастрычнік_лістапад_снежань".split("_")
-					},
-					monthsShort: "студ_лют_сак_крас_трав_чэрв_ліп_жнів_вер_каст_ліст_снеж".split("_"),
-					weekdays: {
-						format: "нядзелю_панядзелак_аўторак_сераду_чацвер_пятніцу_суботу".split("_"),
-						standalone: "нядзеля_панядзелак_аўторак_серада_чацвер_пятніца_субота".split("_"),
-						isFormat: /\[ ?[Ууў] ?(?:мінулую|наступную)? ?\] ?dddd/
-					},
-					weekdaysShort: "нд_пн_ат_ср_чц_пт_сб".split("_"),
-					weekdaysMin: "нд_пн_ат_ср_чц_пт_сб".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY г.",
-						LLL: "D MMMM YYYY г., HH:mm",
-						LLLL: "dddd, D MMMM YYYY г., HH:mm"
-					},
-					calendar: {
-						sameDay: "[Сёння ў] LT",
-						nextDay: "[Заўтра ў] LT",
-						lastDay: "[Учора ў] LT",
-						nextWeek: function() {
-							return "[У] dddd [ў] LT"
-						},
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-								case 3:
-								case 5:
-								case 6:
-									return "[У мінулую] dddd [ў] LT";
-								case 1:
-								case 2:
-								case 4:
-									return "[У мінулы] dddd [ў] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "праз %s",
-						past: "%s таму",
-						s: "некалькі секунд",
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: "дзень",
-						dd: t,
-						M: "месяц",
-						MM: t,
-						y: "год",
-						yy: t
-					},
-					meridiemParse: /ночы|раніцы|дня|вечара/,
-					isPM: function(e) {
-						return /^(дня|вечара)$/.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "ночы" : e < 12 ? "раніцы" : e < 17 ? "дня" : "вечара"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(і|ы|га)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "M":
-							case "d":
-							case "DDD":
-							case "w":
-							case "W":
-								return e % 10 != 2 && e % 10 != 3 || e % 100 == 12 || e % 100 == 13 ? e + "-ы" : e + "-і";
-							case "D":
-								return e + "-га";
-							default:
-								return e
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/bg.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("bg", {
-					months: "януари_февруари_март_април_май_юни_юли_август_септември_октомври_ноември_декември".split("_"),
-					monthsShort: "яну_фев_мар_апр_май_юни_юли_авг_сеп_окт_ное_дек".split("_"),
-					weekdays: "неделя_понеделник_вторник_сряда_четвъртък_петък_събота".split("_"),
-					weekdaysShort: "нед_пон_вто_сря_чет_пет_съб".split("_"),
-					weekdaysMin: "нд_пн_вт_ср_чт_пт_сб".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "D.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY H:mm",
-						LLLL: "dddd, D MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[Днес в] LT",
-						nextDay: "[Утре в] LT",
-						nextWeek: "dddd [в] LT",
-						lastDay: "[Вчера в] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-								case 3:
-								case 6:
-									return "[Миналата] dddd [в] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[Миналия] dddd [в] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "след %s",
-						past: "преди %s",
-						s: "няколко секунди",
-						ss: "%d секунди",
-						m: "минута",
-						mm: "%d минути",
-						h: "час",
-						hh: "%d часа",
-						d: "ден",
-						dd: "%d дена",
-						M: "месец",
-						MM: "%d месеца",
-						y: "година",
-						yy: "%d години"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
-					ordinal: function(e) {
-						var t = e % 10,
-							n = e % 100;
-						return 0 === e ? e + "-ев" : 0 === n ? e + "-ен" : n > 10 && n < 20 ? e + "-ти" : 1 === t ? e + "-ви" : 2 === t ? e + "-ри" : 7 === t || 8 === t ? e + "-ми" : e + "-ти"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/bm.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("bm", {
-					months: "Zanwuyekalo_Fewuruyekalo_Marisikalo_Awirilikalo_Mɛkalo_Zuwɛnkalo_Zuluyekalo_Utikalo_Sɛtanburukalo_ɔkutɔburukalo_Nowanburukalo_Desanburukalo".split("_"),
-					monthsShort: "Zan_Few_Mar_Awi_Mɛ_Zuw_Zul_Uti_Sɛt_ɔku_Now_Des".split("_"),
-					weekdays: "Kari_Ntɛnɛn_Tarata_Araba_Alamisa_Juma_Sibiri".split("_"),
-					weekdaysShort: "Kar_Ntɛ_Tar_Ara_Ala_Jum_Sib".split("_"),
-					weekdaysMin: "Ka_Nt_Ta_Ar_Al_Ju_Si".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "MMMM [tile] D [san] YYYY",
-						LLL: "MMMM [tile] D [san] YYYY [lɛrɛ] HH:mm",
-						LLLL: "dddd MMMM [tile] D [san] YYYY [lɛrɛ] HH:mm"
-					},
-					calendar: {
-						sameDay: "[Bi lɛrɛ] LT",
-						nextDay: "[Sini lɛrɛ] LT",
-						nextWeek: "dddd [don lɛrɛ] LT",
-						lastDay: "[Kunu lɛrɛ] LT",
-						lastWeek: "dddd [tɛmɛnen lɛrɛ] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s kɔnɔ",
-						past: "a bɛ %s bɔ",
-						s: "sanga dama dama",
-						ss: "sekondi %d",
-						m: "miniti kelen",
-						mm: "miniti %d",
-						h: "lɛrɛ kelen",
-						hh: "lɛrɛ %d",
-						d: "tile kelen",
-						dd: "tile %d",
-						M: "kalo kelen",
-						MM: "kalo %d",
-						y: "san kelen",
-						yy: "san %d"
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/bn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "১",
-						2: "২",
-						3: "৩",
-						4: "৪",
-						5: "৫",
-						6: "৬",
-						7: "৭",
-						8: "৮",
-						9: "৯",
-						0: "০"
-					},
-					n = {
-						"১": "1",
-						"২": "2",
-						"৩": "3",
-						"৪": "4",
-						"৫": "5",
-						"৬": "6",
-						"৭": "7",
-						"৮": "8",
-						"৯": "9",
-						"০": "0"
-					};
-				e.defineLocale("bn", {
-					months: "জানুয়ারি_ফেব্রুয়ারি_মার্চ_এপ্রিল_মে_জুন_জুলাই_আগস্ট_সেপ্টেম্বর_অক্টোবর_নভেম্বর_ডিসেম্বর".split("_"),
-					monthsShort: "জানু_ফেব্রু_মার্চ_এপ্রিল_মে_জুন_জুলাই_আগস্ট_সেপ্ট_অক্টো_নভে_ডিসে".split("_"),
-					weekdays: "রবিবার_সোমবার_মঙ্গলবার_বুধবার_বৃহস্পতিবার_শুক্রবার_শনিবার".split("_"),
-					weekdaysShort: "রবি_সোম_মঙ্গল_বুধ_বৃহস্পতি_শুক্র_শনি".split("_"),
-					weekdaysMin: "রবি_সোম_মঙ্গল_বুধ_বৃহ_শুক্র_শনি".split("_"),
-					longDateFormat: {
-						LT: "A h:mm সময়",
-						LTS: "A h:mm:ss সময়",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm সময়",
-						LLLL: "dddd, D MMMM YYYY, A h:mm সময়"
-					},
-					calendar: {
-						sameDay: "[আজ] LT",
-						nextDay: "[আগামীকাল] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[গতকাল] LT",
-						lastWeek: "[গত] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s পরে",
-						past: "%s আগে",
-						s: "কয়েক সেকেন্ড",
-						ss: "%d সেকেন্ড",
-						m: "এক মিনিট",
-						mm: "%d মিনিট",
-						h: "এক ঘন্টা",
-						hh: "%d ঘন্টা",
-						d: "এক দিন",
-						dd: "%d দিন",
-						M: "এক মাস",
-						MM: "%d মাস",
-						y: "এক বছর",
-						yy: "%d বছর"
-					},
-					preparse: function(e) {
-						return e.replace(/[১২৩৪৫৬৭৮৯০]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /রাত|সকাল|দুপুর|বিকাল|রাত/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "রাত" === t && e >= 4 || "দুপুর" === t && e < 5 || "বিকাল" === t ? e + 12 : e
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "রাত" : e < 10 ? "সকাল" : e < 17 ? "দুপুর" : e < 20 ? "বিকাল" : "রাত"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/bo.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "༡",
-						2: "༢",
-						3: "༣",
-						4: "༤",
-						5: "༥",
-						6: "༦",
-						7: "༧",
-						8: "༨",
-						9: "༩",
-						0: "༠"
-					},
-					n = {
-						"༡": "1",
-						"༢": "2",
-						"༣": "3",
-						"༤": "4",
-						"༥": "5",
-						"༦": "6",
-						"༧": "7",
-						"༨": "8",
-						"༩": "9",
-						"༠": "0"
-					};
-				e.defineLocale("bo", {
-					months: "ཟླ་བ་དང་པོ_ཟླ་བ་གཉིས་པ_ཟླ་བ་གསུམ་པ_ཟླ་བ་བཞི་པ_ཟླ་བ་ལྔ་པ_ཟླ་བ་དྲུག་པ_ཟླ་བ་བདུན་པ_ཟླ་བ་བརྒྱད་པ_ཟླ་བ་དགུ་པ_ཟླ་བ་བཅུ་པ_ཟླ་བ་བཅུ་གཅིག་པ_ཟླ་བ་བཅུ་གཉིས་པ".split("_"),
-					monthsShort: "ཟླ་1_ཟླ་2_ཟླ་3_ཟླ་4_ཟླ་5_ཟླ་6_ཟླ་7_ཟླ་8_ཟླ་9_ཟླ་10_ཟླ་11_ཟླ་12".split("_"),
-					monthsShortRegex: /^(ཟླ་\d{1,2})/,
-					monthsParseExact: !0,
-					weekdays: "གཟའ་ཉི་མ་_གཟའ་ཟླ་བ་_གཟའ་མིག་དམར་_གཟའ་ལྷག་པ་_གཟའ་ཕུར་བུ_གཟའ་པ་སངས་_གཟའ་སྤེན་པ་".split("_"),
-					weekdaysShort: "ཉི་མ་_ཟླ་བ་_མིག་དམར་_ལྷག་པ་_ཕུར་བུ_པ་སངས་_སྤེན་པ་".split("_"),
-					weekdaysMin: "ཉི_ཟླ_མིག_ལྷག_ཕུར_སངས_སྤེན".split("_"),
-					longDateFormat: {
-						LT: "A h:mm",
-						LTS: "A h:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm",
-						LLLL: "dddd, D MMMM YYYY, A h:mm"
-					},
-					calendar: {
-						sameDay: "[དི་རིང] LT",
-						nextDay: "[སང་ཉིན] LT",
-						nextWeek: "[བདུན་ཕྲག་རྗེས་མ], LT",
-						lastDay: "[ཁ་སང] LT",
-						lastWeek: "[བདུན་ཕྲག་མཐའ་མ] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s ལ་",
-						past: "%s སྔན་ལ",
-						s: "ལམ་སང",
-						ss: "%d སྐར་ཆ།",
-						m: "སྐར་མ་གཅིག",
-						mm: "%d སྐར་མ",
-						h: "ཆུ་ཚོད་གཅིག",
-						hh: "%d ཆུ་ཚོད",
-						d: "ཉིན་གཅིག",
-						dd: "%d ཉིན་",
-						M: "ཟླ་བ་གཅིག",
-						MM: "%d ཟླ་བ",
-						y: "ལོ་གཅིག",
-						yy: "%d ལོ"
-					},
-					preparse: function(e) {
-						return e.replace(/[༡༢༣༤༥༦༧༨༩༠]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /མཚན་མོ|ཞོགས་ཀས|ཉིན་གུང|དགོང་དག|མཚན་མོ/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "མཚན་མོ" === t && e >= 4 || "ཉིན་གུང" === t && e < 5 || "དགོང་དག" === t ? e + 12 : e
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "མཚན་མོ" : e < 10 ? "ཞོགས་ཀས" : e < 17 ? "ཉིན་གུང" : e < 20 ? "དགོང་དག" : "མཚན་མོ"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/br.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n) {
-					return e + " " + function(e, t) {
-						return 2 === t ? function(e) {
-							var t = {
-								m: "v",
-								b: "v",
-								d: "z"
-							};
-							return void 0 === t[e.charAt(0)] ? e : t[e.charAt(0)] + e.substring(1)
-						}(e) : e
-					}({
-						mm: "munutenn",
-						MM: "miz",
-						dd: "devezh"
-					} [n], e)
-				}
-				e.defineLocale("br", {
-					months: "Genver_C'hwevrer_Meurzh_Ebrel_Mae_Mezheven_Gouere_Eost_Gwengolo_Here_Du_Kerzu".split("_"),
-					monthsShort: "Gen_C'hwe_Meu_Ebr_Mae_Eve_Gou_Eos_Gwe_Her_Du_Ker".split("_"),
-					weekdays: "Sul_Lun_Meurzh_Merc'her_Yaou_Gwener_Sadorn".split("_"),
-					weekdaysShort: "Sul_Lun_Meu_Mer_Yao_Gwe_Sad".split("_"),
-					weekdaysMin: "Su_Lu_Me_Mer_Ya_Gw_Sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D [a viz] MMMM YYYY",
-						LLL: "D [a viz] MMMM YYYY HH:mm",
-						LLLL: "dddd, D [a viz] MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Hiziv da] LT",
-						nextDay: "[Warc'hoazh da] LT",
-						nextWeek: "dddd [da] LT",
-						lastDay: "[Dec'h da] LT",
-						lastWeek: "dddd [paset da] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "a-benn %s",
-						past: "%s 'zo",
-						s: "un nebeud segondennoù",
-						ss: "%d eilenn",
-						m: "ur vunutenn",
-						mm: t,
-						h: "un eur",
-						hh: "%d eur",
-						d: "un devezh",
-						dd: t,
-						M: "ur miz",
-						MM: t,
-						y: "ur bloaz",
-						yy: function(e) {
-							switch (function e(t) {
-								return t > 9 ? e(t % 10) : t
-							}(e)) {
-								case 1:
-								case 3:
-								case 4:
-								case 5:
-								case 9:
-									return e + " bloaz";
-								default:
-									return e + " vloaz"
-							}
-						}
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(añ|vet)/,
-					ordinal: function(e) {
-						return e + (1 === e ? "añ" : "vet")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/bs.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n) {
-					var a = e + " ";
-					switch (n) {
-						case "ss":
-							return a += 1 === e ? "sekunda" : 2 === e || 3 === e || 4 === e ? "sekunde" : "sekundi";
-						case "m":
-							return t ? "jedna minuta" : "jedne minute";
-						case "mm":
-							return a += 1 === e ? "minuta" : 2 === e || 3 === e || 4 === e ? "minute" : "minuta";
-						case "h":
-							return t ? "jedan sat" : "jednog sata";
-						case "hh":
-							return a += 1 === e ? "sat" : 2 === e || 3 === e || 4 === e ? "sata" : "sati";
-						case "dd":
-							return a += 1 === e ? "dan" : "dana";
-						case "MM":
-							return a += 1 === e ? "mjesec" : 2 === e || 3 === e || 4 === e ? "mjeseca" : "mjeseci";
-						case "yy":
-							return a += 1 === e ? "godina" : 2 === e || 3 === e || 4 === e ? "godine" : "godina"
-					}
-				}
-				e.defineLocale("bs", {
-					months: "januar_februar_mart_april_maj_juni_juli_august_septembar_oktobar_novembar_decembar".split("_"),
-					monthsShort: "jan._feb._mar._apr._maj._jun._jul._aug._sep._okt._nov._dec.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota".split("_"),
-					weekdaysShort: "ned._pon._uto._sri._čet._pet._sub.".split("_"),
-					weekdaysMin: "ne_po_ut_sr_če_pe_su".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd, D. MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[danas u] LT",
-						nextDay: "[sutra u] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[u] [nedjelju] [u] LT";
-								case 3:
-									return "[u] [srijedu] [u] LT";
-								case 6:
-									return "[u] [subotu] [u] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[u] dddd [u] LT"
-							}
-						},
-						lastDay: "[jučer u] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-								case 3:
-									return "[prošlu] dddd [u] LT";
-								case 6:
-									return "[prošle] [subote] [u] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[prošli] dddd [u] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "za %s",
-						past: "prije %s",
-						s: "par sekundi",
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: "dan",
-						dd: t,
-						M: "mjesec",
-						MM: t,
-						y: "godinu",
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ca.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ca", {
-					months: {
-						standalone: "gener_febrer_març_abril_maig_juny_juliol_agost_setembre_octubre_novembre_desembre".split("_"),
-						format: "de gener_de febrer_de març_d'abril_de maig_de juny_de juliol_d'agost_de setembre_d'octubre_de novembre_de desembre".split("_"),
-						isFormat: /D[oD]?(\s)+MMMM/
-					},
-					monthsShort: "gen._febr._març_abr._maig_juny_jul._ag._set._oct._nov._des.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "diumenge_dilluns_dimarts_dimecres_dijous_divendres_dissabte".split("_"),
-					weekdaysShort: "dg._dl._dt._dc._dj._dv._ds.".split("_"),
-					weekdaysMin: "dg_dl_dt_dc_dj_dv_ds".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM [de] YYYY",
-						ll: "D MMM YYYY",
-						LLL: "D MMMM [de] YYYY [a les] H:mm",
-						lll: "D MMM YYYY, H:mm",
-						LLLL: "dddd D MMMM [de] YYYY [a les] H:mm",
-						llll: "ddd D MMM YYYY, H:mm"
-					},
-					calendar: {
-						sameDay: function() {
-							return "[avui a " + (1 !== this.hours() ? "les" : "la") + "] LT"
-						},
-						nextDay: function() {
-							return "[demà a " + (1 !== this.hours() ? "les" : "la") + "] LT"
-						},
-						nextWeek: function() {
-							return "dddd [a " + (1 !== this.hours() ? "les" : "la") + "] LT"
-						},
-						lastDay: function() {
-							return "[ahir a " + (1 !== this.hours() ? "les" : "la") + "] LT"
-						},
-						lastWeek: function() {
-							return "[el] dddd [passat a " + (1 !== this.hours() ? "les" : "la") + "] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "d'aquí %s",
-						past: "fa %s",
-						s: "uns segons",
-						ss: "%d segons",
-						m: "un minut",
-						mm: "%d minuts",
-						h: "una hora",
-						hh: "%d hores",
-						d: "un dia",
-						dd: "%d dies",
-						M: "un mes",
-						MM: "%d mesos",
-						y: "un any",
-						yy: "%d anys"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(r|n|t|è|a)/,
-					ordinal: function(e, t) {
-						var n = 1 === e ? "r" : 2 === e ? "n" : 3 === e ? "r" : 4 === e ? "t" : "è";
-						return "w" !== t && "W" !== t || (n = "a"), e + n
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/cs.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "leden_únor_březen_duben_květen_červen_červenec_srpen_září_říjen_listopad_prosinec".split("_"),
-					n = "led_úno_bře_dub_kvě_čvn_čvc_srp_zář_říj_lis_pro".split("_"),
-					a = [/^led/i, /^úno/i, /^bře/i, /^dub/i, /^kvě/i, /^(čvn|červen$|června)/i, /^(čvc|červenec|července)/i, /^srp/i, /^zář/i, /^říj/i, /^lis/i, /^pro/i],
-					r = /^(leden|únor|březen|duben|květen|červenec|července|červen|června|srpen|září|říjen|listopad|prosinec|led|úno|bře|dub|kvě|čvn|čvc|srp|zář|říj|lis|pro)/i;
-
-				function i(e) {
-					return e > 1 && e < 5 && 1 != ~~(e / 10)
-				}
-
-				function s(e, t, n, a) {
-					var r = e + " ";
-					switch (n) {
-						case "s":
-							return t || a ? "pár sekund" : "pár sekundami";
-						case "ss":
-							return t || a ? r + (i(e) ? "sekundy" : "sekund") : r + "sekundami";
-						case "m":
-							return t ? "minuta" : a ? "minutu" : "minutou";
-						case "mm":
-							return t || a ? r + (i(e) ? "minuty" : "minut") : r + "minutami";
-						case "h":
-							return t ? "hodina" : a ? "hodinu" : "hodinou";
-						case "hh":
-							return t || a ? r + (i(e) ? "hodiny" : "hodin") : r + "hodinami";
-						case "d":
-							return t || a ? "den" : "dnem";
-						case "dd":
-							return t || a ? r + (i(e) ? "dny" : "dní") : r + "dny";
-						case "M":
-							return t || a ? "měsíc" : "měsícem";
-						case "MM":
-							return t || a ? r + (i(e) ? "měsíce" : "měsíců") : r + "měsíci";
-						case "y":
-							return t || a ? "rok" : "rokem";
-						case "yy":
-							return t || a ? r + (i(e) ? "roky" : "let") : r + "lety"
-					}
-				}
-				e.defineLocale("cs", {
-					months: t,
-					monthsShort: n,
-					monthsRegex: r,
-					monthsShortRegex: r,
-					monthsStrictRegex: /^(leden|ledna|února|únor|březen|března|duben|dubna|květen|května|červenec|července|červen|června|srpen|srpna|září|říjen|října|listopadu|listopad|prosinec|prosince)/i,
-					monthsShortStrictRegex: /^(led|úno|bře|dub|kvě|čvn|čvc|srp|zář|říj|lis|pro)/i,
-					monthsParse: a,
-					longMonthsParse: a,
-					shortMonthsParse: a,
-					weekdays: "neděle_pondělí_úterý_středa_čtvrtek_pátek_sobota".split("_"),
-					weekdaysShort: "ne_po_út_st_čt_pá_so".split("_"),
-					weekdaysMin: "ne_po_út_st_čt_pá_so".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd D. MMMM YYYY H:mm",
-						l: "D. M. YYYY"
-					},
-					calendar: {
-						sameDay: "[dnes v] LT",
-						nextDay: "[zítra v] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[v neděli v] LT";
-								case 1:
-								case 2:
-									return "[v] dddd [v] LT";
-								case 3:
-									return "[ve středu v] LT";
-								case 4:
-									return "[ve čtvrtek v] LT";
-								case 5:
-									return "[v pátek v] LT";
-								case 6:
-									return "[v sobotu v] LT"
-							}
-						},
-						lastDay: "[včera v] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[minulou neděli v] LT";
-								case 1:
-								case 2:
-									return "[minulé] dddd [v] LT";
-								case 3:
-									return "[minulou středu v] LT";
-								case 4:
-								case 5:
-									return "[minulý] dddd [v] LT";
-								case 6:
-									return "[minulou sobotu v] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "za %s",
-						past: "před %s",
-						s,
-						ss: s,
-						m: s,
-						mm: s,
-						h: s,
-						hh: s,
-						d: s,
-						dd: s,
-						M: s,
-						MM: s,
-						y: s,
-						yy: s
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/cv.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("cv", {
-					months: "кӑрлач_нарӑс_пуш_ака_май_ҫӗртме_утӑ_ҫурла_авӑн_юпа_чӳк_раштав".split("_"),
-					monthsShort: "кӑр_нар_пуш_ака_май_ҫӗр_утӑ_ҫур_авн_юпа_чӳк_раш".split("_"),
-					weekdays: "вырсарникун_тунтикун_ытларикун_юнкун_кӗҫнерникун_эрнекун_шӑматкун".split("_"),
-					weekdaysShort: "выр_тун_ытл_юн_кӗҫ_эрн_шӑм".split("_"),
-					weekdaysMin: "вр_тн_ыт_юн_кҫ_эр_шм".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD-MM-YYYY",
-						LL: "YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ]",
-						LLL: "YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ], HH:mm",
-						LLLL: "dddd, YYYY [ҫулхи] MMMM [уйӑхӗн] D[-мӗшӗ], HH:mm"
-					},
-					calendar: {
-						sameDay: "[Паян] LT [сехетре]",
-						nextDay: "[Ыран] LT [сехетре]",
-						lastDay: "[Ӗнер] LT [сехетре]",
-						nextWeek: "[Ҫитес] dddd LT [сехетре]",
-						lastWeek: "[Иртнӗ] dddd LT [сехетре]",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: function(e) {
-							return e + (/сехет$/i.exec(e) ? "рен" : /ҫул$/i.exec(e) ? "тан" : "ран")
-						},
-						past: "%s каялла",
-						s: "пӗр-ик ҫеккунт",
-						ss: "%d ҫеккунт",
-						m: "пӗр минут",
-						mm: "%d минут",
-						h: "пӗр сехет",
-						hh: "%d сехет",
-						d: "пӗр кун",
-						dd: "%d кун",
-						M: "пӗр уйӑх",
-						MM: "%d уйӑх",
-						y: "пӗр ҫул",
-						yy: "%d ҫул"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-мӗш/,
-					ordinal: "%d-мӗш",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/cy.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("cy", {
-					months: "Ionawr_Chwefror_Mawrth_Ebrill_Mai_Mehefin_Gorffennaf_Awst_Medi_Hydref_Tachwedd_Rhagfyr".split("_"),
-					monthsShort: "Ion_Chwe_Maw_Ebr_Mai_Meh_Gor_Aws_Med_Hyd_Tach_Rhag".split("_"),
-					weekdays: "Dydd Sul_Dydd Llun_Dydd Mawrth_Dydd Mercher_Dydd Iau_Dydd Gwener_Dydd Sadwrn".split("_"),
-					weekdaysShort: "Sul_Llun_Maw_Mer_Iau_Gwe_Sad".split("_"),
-					weekdaysMin: "Su_Ll_Ma_Me_Ia_Gw_Sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Heddiw am] LT",
-						nextDay: "[Yfory am] LT",
-						nextWeek: "dddd [am] LT",
-						lastDay: "[Ddoe am] LT",
-						lastWeek: "dddd [diwethaf am] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "mewn %s",
-						past: "%s yn ôl",
-						s: "ychydig eiliadau",
-						ss: "%d eiliad",
-						m: "munud",
-						mm: "%d munud",
-						h: "awr",
-						hh: "%d awr",
-						d: "diwrnod",
-						dd: "%d diwrnod",
-						M: "mis",
-						MM: "%d mis",
-						y: "blwyddyn",
-						yy: "%d flynedd"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(fed|ain|af|il|ydd|ed|eg)/,
-					ordinal: function(e) {
-						var t = "";
-						return e > 20 ? t = 40 === e || 50 === e || 60 === e || 80 === e || 100 === e ? "fed" : "ain" : e > 0 && (t = ["", "af", "il", "ydd", "ydd", "ed", "ed", "ed", "fed", "fed", "fed", "eg", "fed", "eg", "eg", "fed", "eg", "eg", "fed", "eg", "fed"][e]), e + t
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/da.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("da", {
-					months: "januar_februar_marts_april_maj_juni_juli_august_september_oktober_november_december".split("_"),
-					monthsShort: "jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec".split("_"),
-					weekdays: "søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag".split("_"),
-					weekdaysShort: "søn_man_tir_ons_tor_fre_lør".split("_"),
-					weekdaysMin: "sø_ma_ti_on_to_fr_lø".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY HH:mm",
-						LLLL: "dddd [d.] D. MMMM YYYY [kl.] HH:mm"
-					},
-					calendar: {
-						sameDay: "[i dag kl.] LT",
-						nextDay: "[i morgen kl.] LT",
-						nextWeek: "på dddd [kl.] LT",
-						lastDay: "[i går kl.] LT",
-						lastWeek: "[i] dddd[s kl.] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "om %s",
-						past: "%s siden",
-						s: "få sekunder",
-						ss: "%d sekunder",
-						m: "et minut",
-						mm: "%d minutter",
-						h: "en time",
-						hh: "%d timer",
-						d: "en dag",
-						dd: "%d dage",
-						M: "en måned",
-						MM: "%d måneder",
-						y: "et år",
-						yy: "%d år"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/de-at.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						m: ["eine Minute", "einer Minute"],
-						h: ["eine Stunde", "einer Stunde"],
-						d: ["ein Tag", "einem Tag"],
-						dd: [e + " Tage", e + " Tagen"],
-						M: ["ein Monat", "einem Monat"],
-						MM: [e + " Monate", e + " Monaten"],
-						y: ["ein Jahr", "einem Jahr"],
-						yy: [e + " Jahre", e + " Jahren"]
-					};
-					return t ? r[n][0] : r[n][1]
-				}
-				e.defineLocale("de-at", {
-					months: "Jänner_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"),
-					monthsShort: "Jän._Feb._März_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"),
-					weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"),
-					weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY HH:mm",
-						LLLL: "dddd, D. MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[heute um] LT [Uhr]",
-						sameElse: "L",
-						nextDay: "[morgen um] LT [Uhr]",
-						nextWeek: "dddd [um] LT [Uhr]",
-						lastDay: "[gestern um] LT [Uhr]",
-						lastWeek: "[letzten] dddd [um] LT [Uhr]"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "vor %s",
-						s: "ein paar Sekunden",
-						ss: "%d Sekunden",
-						m: t,
-						mm: "%d Minuten",
-						h: t,
-						hh: "%d Stunden",
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/de-ch.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						m: ["eine Minute", "einer Minute"],
-						h: ["eine Stunde", "einer Stunde"],
-						d: ["ein Tag", "einem Tag"],
-						dd: [e + " Tage", e + " Tagen"],
-						M: ["ein Monat", "einem Monat"],
-						MM: [e + " Monate", e + " Monaten"],
-						y: ["ein Jahr", "einem Jahr"],
-						yy: [e + " Jahre", e + " Jahren"]
-					};
-					return t ? r[n][0] : r[n][1]
-				}
-				e.defineLocale("de-ch", {
-					months: "Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"),
-					monthsShort: "Jan._Feb._März_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"),
-					weekdaysShort: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"),
-					weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY HH:mm",
-						LLLL: "dddd, D. MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[heute um] LT [Uhr]",
-						sameElse: "L",
-						nextDay: "[morgen um] LT [Uhr]",
-						nextWeek: "dddd [um] LT [Uhr]",
-						lastDay: "[gestern um] LT [Uhr]",
-						lastWeek: "[letzten] dddd [um] LT [Uhr]"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "vor %s",
-						s: "ein paar Sekunden",
-						ss: "%d Sekunden",
-						m: t,
-						mm: "%d Minuten",
-						h: t,
-						hh: "%d Stunden",
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/de.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						m: ["eine Minute", "einer Minute"],
-						h: ["eine Stunde", "einer Stunde"],
-						d: ["ein Tag", "einem Tag"],
-						dd: [e + " Tage", e + " Tagen"],
-						M: ["ein Monat", "einem Monat"],
-						MM: [e + " Monate", e + " Monaten"],
-						y: ["ein Jahr", "einem Jahr"],
-						yy: [e + " Jahre", e + " Jahren"]
-					};
-					return t ? r[n][0] : r[n][1]
-				}
-				e.defineLocale("de", {
-					months: "Januar_Februar_März_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"),
-					monthsShort: "Jan._Feb._März_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"),
-					weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"),
-					weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY HH:mm",
-						LLLL: "dddd, D. MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[heute um] LT [Uhr]",
-						sameElse: "L",
-						nextDay: "[morgen um] LT [Uhr]",
-						nextWeek: "dddd [um] LT [Uhr]",
-						lastDay: "[gestern um] LT [Uhr]",
-						lastWeek: "[letzten] dddd [um] LT [Uhr]"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "vor %s",
-						s: "ein paar Sekunden",
-						ss: "%d Sekunden",
-						m: t,
-						mm: "%d Minuten",
-						h: t,
-						hh: "%d Stunden",
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/dv.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = ["ޖެނުއަރީ", "ފެބްރުއަރީ", "މާރިޗު", "އޭޕްރީލު", "މޭ", "ޖޫން", "ޖުލައި", "އޯގަސްޓު", "ސެޕްޓެމްބަރު", "އޮކްޓޯބަރު", "ނޮވެމްބަރު", "ޑިސެމްބަރު"],
-					n = ["އާދިއްތަ", "ހޯމަ", "އަންގާރަ", "ބުދަ", "ބުރާސްފަތި", "ހުކުރު", "ހޮނިހިރު"];
-				e.defineLocale("dv", {
-					months: t,
-					monthsShort: t,
-					weekdays: n,
-					weekdaysShort: n,
-					weekdaysMin: "އާދި_ހޯމަ_އަން_ބުދަ_ބުރާ_ހުކު_ހޮނި".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "D/M/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /މކ|މފ/,
-					isPM: function(e) {
-						return "މފ" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "މކ" : "މފ"
-					},
-					calendar: {
-						sameDay: "[މިއަދު] LT",
-						nextDay: "[މާދަމާ] LT",
-						nextWeek: "dddd LT",
-						lastDay: "[އިއްޔެ] LT",
-						lastWeek: "[ފާއިތުވި] dddd LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "ތެރޭގައި %s",
-						past: "ކުރިން %s",
-						s: "ސިކުންތުކޮޅެއް",
-						ss: "d% ސިކުންތު",
-						m: "މިނިޓެއް",
-						mm: "މިނިޓު %d",
-						h: "ގަޑިއިރެއް",
-						hh: "ގަޑިއިރު %d",
-						d: "ދުވަހެއް",
-						dd: "ދުވަސް %d",
-						M: "މަހެއް",
-						MM: "މަސް %d",
-						y: "އަހަރެއް",
-						yy: "އަހަރު %d"
-					},
-					preparse: function(e) {
-						return e.replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/,/g, "،")
-					},
-					week: {
-						dow: 7,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/el.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("el", {
-					monthsNominativeEl: "Ιανουάριος_Φεβρουάριος_Μάρτιος_Απρίλιος_Μάιος_Ιούνιος_Ιούλιος_Αύγουστος_Σεπτέμβριος_Οκτώβριος_Νοέμβριος_Δεκέμβριος".split("_"),
-					monthsGenitiveEl: "Ιανουαρίου_Φεβρουαρίου_Μαρτίου_Απριλίου_Μαΐου_Ιουνίου_Ιουλίου_Αυγούστου_Σεπτεμβρίου_Οκτωβρίου_Νοεμβρίου_Δεκεμβρίου".split("_"),
-					months: function(e, t) {
-						return e ? "string" == typeof t && /D/.test(t.substring(0, t.indexOf("MMMM"))) ? this._monthsGenitiveEl[e.month()] : this._monthsNominativeEl[e.month()] : this._monthsNominativeEl
-					},
-					monthsShort: "Ιαν_Φεβ_Μαρ_Απρ_Μαϊ_Ιουν_Ιουλ_Αυγ_Σεπ_Οκτ_Νοε_Δεκ".split("_"),
-					weekdays: "Κυριακή_Δευτέρα_Τρίτη_Τετάρτη_Πέμπτη_Παρασκευή_Σάββατο".split("_"),
-					weekdaysShort: "Κυρ_Δευ_Τρι_Τετ_Πεμ_Παρ_Σαβ".split("_"),
-					weekdaysMin: "Κυ_Δε_Τρ_Τε_Πε_Πα_Σα".split("_"),
-					meridiem: function(e, t, n) {
-						return e > 11 ? n ? "μμ" : "ΜΜ" : n ? "πμ" : "ΠΜ"
-					},
-					isPM: function(e) {
-						return "μ" === (e + "").toLowerCase()[0]
-					},
-					meridiemParse: /[ΠΜ]\.?Μ?\.?/i,
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY h:mm A",
-						LLLL: "dddd, D MMMM YYYY h:mm A"
-					},
-					calendarEl: {
-						sameDay: "[Σήμερα {}] LT",
-						nextDay: "[Αύριο {}] LT",
-						nextWeek: "dddd [{}] LT",
-						lastDay: "[Χθες {}] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 6:
-									return "[το προηγούμενο] dddd [{}] LT";
-								default:
-									return "[την προηγούμενη] dddd [{}] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					calendar: function(e, t) {
-						var n, a = this._calendarEl[e],
-							r = t && t.hours();
-						return n = a, ("undefined" != typeof Function && n instanceof Function || "[object Function]" === Object.prototype.toString.call(n)) && (a = a.apply(t)), a.replace("{}", r % 12 == 1 ? "στη" : "στις")
-					},
-					relativeTime: {
-						future: "σε %s",
-						past: "%s πριν",
-						s: "λίγα δευτερόλεπτα",
-						ss: "%d δευτερόλεπτα",
-						m: "ένα λεπτό",
-						mm: "%d λεπτά",
-						h: "μία ώρα",
-						hh: "%d ώρες",
-						d: "μία μέρα",
-						dd: "%d μέρες",
-						M: "ένας μήνας",
-						MM: "%d μήνες",
-						y: "ένας χρόνος",
-						yy: "%d χρόνια"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}η/,
-					ordinal: "%dη",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-au.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-au", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY h:mm A",
-						LLLL: "dddd, D MMMM YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-ca.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-ca", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "YYYY-MM-DD",
-						LL: "MMMM D, YYYY",
-						LLL: "MMMM D, YYYY h:mm A",
-						LLLL: "dddd, MMMM D, YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-gb.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-gb", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-ie.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-ie", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-il.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-il", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-in.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-in", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY h:mm A",
-						LLLL: "dddd, D MMMM YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-nz.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-nz", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY h:mm A",
-						LLLL: "dddd, D MMMM YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/en-sg.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("en-sg", {
-					months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-					weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-					weekdaysShort: "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-					weekdaysMin: "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Today at] LT",
-						nextDay: "[Tomorrow at] LT",
-						nextWeek: "dddd [at] LT",
-						lastDay: "[Yesterday at] LT",
-						lastWeek: "[Last] dddd [at] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "in %s",
-						past: "%s ago",
-						s: "a few seconds",
-						ss: "%d seconds",
-						m: "a minute",
-						mm: "%d minutes",
-						h: "an hour",
-						hh: "%d hours",
-						d: "a day",
-						dd: "%d days",
-						M: "a month",
-						MM: "%d months",
-						y: "a year",
-						yy: "%d years"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/eo.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("eo", {
-					months: "januaro_februaro_marto_aprilo_majo_junio_julio_aŭgusto_septembro_oktobro_novembro_decembro".split("_"),
-					monthsShort: "jan_feb_mart_apr_maj_jun_jul_aŭg_sept_okt_nov_dec".split("_"),
-					weekdays: "dimanĉo_lundo_mardo_merkredo_ĵaŭdo_vendredo_sabato".split("_"),
-					weekdaysShort: "dim_lun_mard_merk_ĵaŭ_ven_sab".split("_"),
-					weekdaysMin: "di_lu_ma_me_ĵa_ve_sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY-MM-DD",
-						LL: "[la] D[-an de] MMMM, YYYY",
-						LLL: "[la] D[-an de] MMMM, YYYY HH:mm",
-						LLLL: "dddd[n], [la] D[-an de] MMMM, YYYY HH:mm",
-						llll: "ddd, [la] D[-an de] MMM, YYYY HH:mm"
-					},
-					meridiemParse: /[ap]\.t\.m/i,
-					isPM: function(e) {
-						return "p" === e.charAt(0).toLowerCase()
-					},
-					meridiem: function(e, t, n) {
-						return e > 11 ? n ? "p.t.m." : "P.T.M." : n ? "a.t.m." : "A.T.M."
-					},
-					calendar: {
-						sameDay: "[Hodiaŭ je] LT",
-						nextDay: "[Morgaŭ je] LT",
-						nextWeek: "dddd[n je] LT",
-						lastDay: "[Hieraŭ je] LT",
-						lastWeek: "[pasintan] dddd[n je] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "post %s",
-						past: "antaŭ %s",
-						s: "kelkaj sekundoj",
-						ss: "%d sekundoj",
-						m: "unu minuto",
-						mm: "%d minutoj",
-						h: "unu horo",
-						hh: "%d horoj",
-						d: "unu tago",
-						dd: "%d tagoj",
-						M: "unu monato",
-						MM: "%d monatoj",
-						y: "unu jaro",
-						yy: "%d jaroj"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}a/,
-					ordinal: "%da",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/es-do.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.".split("_"),
-					n = "ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic".split("_"),
-					a = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i],
-					r = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
-				e.defineLocale("es-do", {
-					months: "enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre".split("_"),
-					monthsShort: function(e, a) {
-						return e ? /-MMM-/.test(a) ? n[e.month()] : t[e.month()] : t
-					},
-					monthsRegex: r,
-					monthsShortRegex: r,
-					monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
-					monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
-					monthsParse: a,
-					longMonthsParse: a,
-					shortMonthsParse: a,
-					weekdays: "domingo_lunes_martes_miércoles_jueves_viernes_sábado".split("_"),
-					weekdaysShort: "dom._lun._mar._mié._jue._vie._sáb.".split("_"),
-					weekdaysMin: "do_lu_ma_mi_ju_vi_sá".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "DD/MM/YYYY",
-						LL: "D [de] MMMM [de] YYYY",
-						LLL: "D [de] MMMM [de] YYYY h:mm A",
-						LLLL: "dddd, D [de] MMMM [de] YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: function() {
-							return "[hoy a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						nextDay: function() {
-							return "[mañana a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						nextWeek: function() {
-							return "dddd [a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						lastDay: function() {
-							return "[ayer a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						lastWeek: function() {
-							return "[el] dddd [pasado a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "en %s",
-						past: "hace %s",
-						s: "unos segundos",
-						ss: "%d segundos",
-						m: "un minuto",
-						mm: "%d minutos",
-						h: "una hora",
-						hh: "%d horas",
-						d: "un día",
-						dd: "%d días",
-						M: "un mes",
-						MM: "%d meses",
-						y: "un año",
-						yy: "%d años"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/es-us.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.".split("_"),
-					n = "ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic".split("_"),
-					a = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i],
-					r = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
-				e.defineLocale("es-us", {
-					months: "enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre".split("_"),
-					monthsShort: function(e, a) {
-						return e ? /-MMM-/.test(a) ? n[e.month()] : t[e.month()] : t
-					},
-					monthsRegex: r,
-					monthsShortRegex: r,
-					monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
-					monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
-					monthsParse: a,
-					longMonthsParse: a,
-					shortMonthsParse: a,
-					weekdays: "domingo_lunes_martes_miércoles_jueves_viernes_sábado".split("_"),
-					weekdaysShort: "dom._lun._mar._mié._jue._vie._sáb.".split("_"),
-					weekdaysMin: "do_lu_ma_mi_ju_vi_sá".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "MM/DD/YYYY",
-						LL: "D [de] MMMM [de] YYYY",
-						LLL: "D [de] MMMM [de] YYYY h:mm A",
-						LLLL: "dddd, D [de] MMMM [de] YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: function() {
-							return "[hoy a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						nextDay: function() {
-							return "[mañana a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						nextWeek: function() {
-							return "dddd [a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						lastDay: function() {
-							return "[ayer a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						lastWeek: function() {
-							return "[el] dddd [pasado a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "en %s",
-						past: "hace %s",
-						s: "unos segundos",
-						ss: "%d segundos",
-						m: "un minuto",
-						mm: "%d minutos",
-						h: "una hora",
-						hh: "%d horas",
-						d: "un día",
-						dd: "%d días",
-						M: "un mes",
-						MM: "%d meses",
-						y: "un año",
-						yy: "%d años"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/es.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.".split("_"),
-					n = "ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic".split("_"),
-					a = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i],
-					r = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
-				e.defineLocale("es", {
-					months: "enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre".split("_"),
-					monthsShort: function(e, a) {
-						return e ? /-MMM-/.test(a) ? n[e.month()] : t[e.month()] : t
-					},
-					monthsRegex: r,
-					monthsShortRegex: r,
-					monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
-					monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
-					monthsParse: a,
-					longMonthsParse: a,
-					shortMonthsParse: a,
-					weekdays: "domingo_lunes_martes_miércoles_jueves_viernes_sábado".split("_"),
-					weekdaysShort: "dom._lun._mar._mié._jue._vie._sáb.".split("_"),
-					weekdaysMin: "do_lu_ma_mi_ju_vi_sá".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D [de] MMMM [de] YYYY",
-						LLL: "D [de] MMMM [de] YYYY H:mm",
-						LLLL: "dddd, D [de] MMMM [de] YYYY H:mm"
-					},
-					calendar: {
-						sameDay: function() {
-							return "[hoy a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						nextDay: function() {
-							return "[mañana a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						nextWeek: function() {
-							return "dddd [a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						lastDay: function() {
-							return "[ayer a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						lastWeek: function() {
-							return "[el] dddd [pasado a la" + (1 !== this.hours() ? "s" : "") + "] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "en %s",
-						past: "hace %s",
-						s: "unos segundos",
-						ss: "%d segundos",
-						m: "un minuto",
-						mm: "%d minutos",
-						h: "una hora",
-						hh: "%d horas",
-						d: "un día",
-						dd: "%d días",
-						M: "un mes",
-						MM: "%d meses",
-						y: "un año",
-						yy: "%d años"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					},
-					invalidDate: "Fecha invalida"
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/et.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						s: ["mõne sekundi", "mõni sekund", "paar sekundit"],
-						ss: [e + "sekundi", e + "sekundit"],
-						m: ["ühe minuti", "üks minut"],
-						mm: [e + " minuti", e + " minutit"],
-						h: ["ühe tunni", "tund aega", "üks tund"],
-						hh: [e + " tunni", e + " tundi"],
-						d: ["ühe päeva", "üks päev"],
-						M: ["kuu aja", "kuu aega", "üks kuu"],
-						MM: [e + " kuu", e + " kuud"],
-						y: ["ühe aasta", "aasta", "üks aasta"],
-						yy: [e + " aasta", e + " aastat"]
-					};
-					return t ? r[n][2] ? r[n][2] : r[n][1] : a ? r[n][0] : r[n][1]
-				}
-				e.defineLocale("et", {
-					months: "jaanuar_veebruar_märts_aprill_mai_juuni_juuli_august_september_oktoober_november_detsember".split("_"),
-					monthsShort: "jaan_veebr_märts_apr_mai_juuni_juuli_aug_sept_okt_nov_dets".split("_"),
-					weekdays: "pühapäev_esmaspäev_teisipäev_kolmapäev_neljapäev_reede_laupäev".split("_"),
-					weekdaysShort: "P_E_T_K_N_R_L".split("_"),
-					weekdaysMin: "P_E_T_K_N_R_L".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd, D. MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[Täna,] LT",
-						nextDay: "[Homme,] LT",
-						nextWeek: "[Järgmine] dddd LT",
-						lastDay: "[Eile,] LT",
-						lastWeek: "[Eelmine] dddd LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s pärast",
-						past: "%s tagasi",
-						s: t,
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: t,
-						dd: "%d päeva",
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/eu.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("eu", {
-					months: "urtarrila_otsaila_martxoa_apirila_maiatza_ekaina_uztaila_abuztua_iraila_urria_azaroa_abendua".split("_"),
-					monthsShort: "urt._ots._mar._api._mai._eka._uzt._abu._ira._urr._aza._abe.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "igandea_astelehena_asteartea_asteazkena_osteguna_ostirala_larunbata".split("_"),
-					weekdaysShort: "ig._al._ar._az._og._ol._lr.".split("_"),
-					weekdaysMin: "ig_al_ar_az_og_ol_lr".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY-MM-DD",
-						LL: "YYYY[ko] MMMM[ren] D[a]",
-						LLL: "YYYY[ko] MMMM[ren] D[a] HH:mm",
-						LLLL: "dddd, YYYY[ko] MMMM[ren] D[a] HH:mm",
-						l: "YYYY-M-D",
-						ll: "YYYY[ko] MMM D[a]",
-						lll: "YYYY[ko] MMM D[a] HH:mm",
-						llll: "ddd, YYYY[ko] MMM D[a] HH:mm"
-					},
-					calendar: {
-						sameDay: "[gaur] LT[etan]",
-						nextDay: "[bihar] LT[etan]",
-						nextWeek: "dddd LT[etan]",
-						lastDay: "[atzo] LT[etan]",
-						lastWeek: "[aurreko] dddd LT[etan]",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s barru",
-						past: "duela %s",
-						s: "segundo batzuk",
-						ss: "%d segundo",
-						m: "minutu bat",
-						mm: "%d minutu",
-						h: "ordu bat",
-						hh: "%d ordu",
-						d: "egun bat",
-						dd: "%d egun",
-						M: "hilabete bat",
-						MM: "%d hilabete",
-						y: "urte bat",
-						yy: "%d urte"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fa.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "۱",
-						2: "۲",
-						3: "۳",
-						4: "۴",
-						5: "۵",
-						6: "۶",
-						7: "۷",
-						8: "۸",
-						9: "۹",
-						0: "۰"
-					},
-					n = {
-						"۱": "1",
-						"۲": "2",
-						"۳": "3",
-						"۴": "4",
-						"۵": "5",
-						"۶": "6",
-						"۷": "7",
-						"۸": "8",
-						"۹": "9",
-						"۰": "0"
-					};
-				e.defineLocale("fa", {
-					months: "ژانویه_فوریه_مارس_آوریل_مه_ژوئن_ژوئیه_اوت_سپتامبر_اکتبر_نوامبر_دسامبر".split("_"),
-					monthsShort: "ژانویه_فوریه_مارس_آوریل_مه_ژوئن_ژوئیه_اوت_سپتامبر_اکتبر_نوامبر_دسامبر".split("_"),
-					weekdays: "یک‌شنبه_دوشنبه_سه‌شنبه_چهارشنبه_پنج‌شنبه_جمعه_شنبه".split("_"),
-					weekdaysShort: "یک‌شنبه_دوشنبه_سه‌شنبه_چهارشنبه_پنج‌شنبه_جمعه_شنبه".split("_"),
-					weekdaysMin: "ی_د_س_چ_پ_ج_ش".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /قبل از ظهر|بعد از ظهر/,
-					isPM: function(e) {
-						return /بعد از ظهر/.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "قبل از ظهر" : "بعد از ظهر"
-					},
-					calendar: {
-						sameDay: "[امروز ساعت] LT",
-						nextDay: "[فردا ساعت] LT",
-						nextWeek: "dddd [ساعت] LT",
-						lastDay: "[دیروز ساعت] LT",
-						lastWeek: "dddd [پیش] [ساعت] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "در %s",
-						past: "%s پیش",
-						s: "چند ثانیه",
-						ss: "%d ثانیه",
-						m: "یک دقیقه",
-						mm: "%d دقیقه",
-						h: "یک ساعت",
-						hh: "%d ساعت",
-						d: "یک روز",
-						dd: "%d روز",
-						M: "یک ماه",
-						MM: "%d ماه",
-						y: "یک سال",
-						yy: "%d سال"
-					},
-					preparse: function(e) {
-						return e.replace(/[۰-۹]/g, (function(e) {
-							return n[e]
-						})).replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						})).replace(/,/g, "،")
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}م/,
-					ordinal: "%dم",
-					week: {
-						dow: 6,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fi.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "nolla yksi kaksi kolme neljä viisi kuusi seitsemän kahdeksan yhdeksän".split(" "),
-					n = ["nolla", "yhden", "kahden", "kolmen", "neljän", "viiden", "kuuden", t[7], t[8], t[9]];
-
-				function a(e, a, r, i) {
-					var s = "";
-					switch (r) {
-						case "s":
-							return i ? "muutaman sekunnin" : "muutama sekunti";
-						case "ss":
-							return i ? "sekunnin" : "sekuntia";
-						case "m":
-							return i ? "minuutin" : "minuutti";
-						case "mm":
-							s = i ? "minuutin" : "minuuttia";
-							break;
-						case "h":
-							return i ? "tunnin" : "tunti";
-						case "hh":
-							s = i ? "tunnin" : "tuntia";
-							break;
-						case "d":
-							return i ? "päivän" : "päivä";
-						case "dd":
-							s = i ? "päivän" : "päivää";
-							break;
-						case "M":
-							return i ? "kuukauden" : "kuukausi";
-						case "MM":
-							s = i ? "kuukauden" : "kuukautta";
-							break;
-						case "y":
-							return i ? "vuoden" : "vuosi";
-						case "yy":
-							s = i ? "vuoden" : "vuotta"
-					}
-					return s = function(e, a) {
-						return e < 10 ? a ? n[e] : t[e] : e
-					}(e, i) + " " + s
-				}
-				e.defineLocale("fi", {
-					months: "tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kesäkuu_heinäkuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu".split("_"),
-					monthsShort: "tammi_helmi_maalis_huhti_touko_kesä_heinä_elo_syys_loka_marras_joulu".split("_"),
-					weekdays: "sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai".split("_"),
-					weekdaysShort: "su_ma_ti_ke_to_pe_la".split("_"),
-					weekdaysMin: "su_ma_ti_ke_to_pe_la".split("_"),
-					longDateFormat: {
-						LT: "HH.mm",
-						LTS: "HH.mm.ss",
-						L: "DD.MM.YYYY",
-						LL: "Do MMMM[ta] YYYY",
-						LLL: "Do MMMM[ta] YYYY, [klo] HH.mm",
-						LLLL: "dddd, Do MMMM[ta] YYYY, [klo] HH.mm",
-						l: "D.M.YYYY",
-						ll: "Do MMM YYYY",
-						lll: "Do MMM YYYY, [klo] HH.mm",
-						llll: "ddd, Do MMM YYYY, [klo] HH.mm"
-					},
-					calendar: {
-						sameDay: "[tänään] [klo] LT",
-						nextDay: "[huomenna] [klo] LT",
-						nextWeek: "dddd [klo] LT",
-						lastDay: "[eilen] [klo] LT",
-						lastWeek: "[viime] dddd[na] [klo] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s päästä",
-						past: "%s sitten",
-						s: a,
-						ss: a,
-						m: a,
-						mm: a,
-						h: a,
-						hh: a,
-						d: a,
-						dd: a,
-						M: a,
-						MM: a,
-						y: a,
-						yy: a
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fil.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("fil", {
-					months: "Enero_Pebrero_Marso_Abril_Mayo_Hunyo_Hulyo_Agosto_Setyembre_Oktubre_Nobyembre_Disyembre".split("_"),
-					monthsShort: "Ene_Peb_Mar_Abr_May_Hun_Hul_Ago_Set_Okt_Nob_Dis".split("_"),
-					weekdays: "Linggo_Lunes_Martes_Miyerkules_Huwebes_Biyernes_Sabado".split("_"),
-					weekdaysShort: "Lin_Lun_Mar_Miy_Huw_Biy_Sab".split("_"),
-					weekdaysMin: "Li_Lu_Ma_Mi_Hu_Bi_Sab".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "MM/D/YYYY",
-						LL: "MMMM D, YYYY",
-						LLL: "MMMM D, YYYY HH:mm",
-						LLLL: "dddd, MMMM DD, YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "LT [ngayong araw]",
-						nextDay: "[Bukas ng] LT",
-						nextWeek: "LT [sa susunod na] dddd",
-						lastDay: "LT [kahapon]",
-						lastWeek: "LT [noong nakaraang] dddd",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "sa loob ng %s",
-						past: "%s ang nakalipas",
-						s: "ilang segundo",
-						ss: "%d segundo",
-						m: "isang minuto",
-						mm: "%d minuto",
-						h: "isang oras",
-						hh: "%d oras",
-						d: "isang araw",
-						dd: "%d araw",
-						M: "isang buwan",
-						MM: "%d buwan",
-						y: "isang taon",
-						yy: "%d taon"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}/,
-					ordinal: function(e) {
-						return e
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fo.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("fo", {
-					months: "januar_februar_mars_apríl_mai_juni_juli_august_september_oktober_november_desember".split("_"),
-					monthsShort: "jan_feb_mar_apr_mai_jun_jul_aug_sep_okt_nov_des".split("_"),
-					weekdays: "sunnudagur_mánadagur_týsdagur_mikudagur_hósdagur_fríggjadagur_leygardagur".split("_"),
-					weekdaysShort: "sun_mán_týs_mik_hós_frí_ley".split("_"),
-					weekdaysMin: "su_má_tý_mi_hó_fr_le".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D. MMMM, YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Í dag kl.] LT",
-						nextDay: "[Í morgin kl.] LT",
-						nextWeek: "dddd [kl.] LT",
-						lastDay: "[Í gjár kl.] LT",
-						lastWeek: "[síðstu] dddd [kl] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "um %s",
-						past: "%s síðani",
-						s: "fá sekund",
-						ss: "%d sekundir",
-						m: "ein minuttur",
-						mm: "%d minuttir",
-						h: "ein tími",
-						hh: "%d tímar",
-						d: "ein dagur",
-						dd: "%d dagar",
-						M: "ein mánaður",
-						MM: "%d mánaðir",
-						y: "eitt ár",
-						yy: "%d ár"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fr-ca.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("fr-ca", {
-					months: "janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre".split("_"),
-					monthsShort: "janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi".split("_"),
-					weekdaysShort: "dim._lun._mar._mer._jeu._ven._sam.".split("_"),
-					weekdaysMin: "di_lu_ma_me_je_ve_sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY-MM-DD",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Aujourd’hui à] LT",
-						nextDay: "[Demain à] LT",
-						nextWeek: "dddd [à] LT",
-						lastDay: "[Hier à] LT",
-						lastWeek: "dddd [dernier à] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "dans %s",
-						past: "il y a %s",
-						s: "quelques secondes",
-						ss: "%d secondes",
-						m: "une minute",
-						mm: "%d minutes",
-						h: "une heure",
-						hh: "%d heures",
-						d: "un jour",
-						dd: "%d jours",
-						M: "un mois",
-						MM: "%d mois",
-						y: "un an",
-						yy: "%d ans"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(er|e)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							default:
-							case "M":
-							case "Q":
-							case "D":
-							case "DDD":
-							case "d":
-								return e + (1 === e ? "er" : "e");
-							case "w":
-							case "W":
-								return e + (1 === e ? "re" : "e")
-						}
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fr-ch.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("fr-ch", {
-					months: "janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre".split("_"),
-					monthsShort: "janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi".split("_"),
-					weekdaysShort: "dim._lun._mar._mer._jeu._ven._sam.".split("_"),
-					weekdaysMin: "di_lu_ma_me_je_ve_sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Aujourd’hui à] LT",
-						nextDay: "[Demain à] LT",
-						nextWeek: "dddd [à] LT",
-						lastDay: "[Hier à] LT",
-						lastWeek: "dddd [dernier à] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "dans %s",
-						past: "il y a %s",
-						s: "quelques secondes",
-						ss: "%d secondes",
-						m: "une minute",
-						mm: "%d minutes",
-						h: "une heure",
-						hh: "%d heures",
-						d: "un jour",
-						dd: "%d jours",
-						M: "un mois",
-						MM: "%d mois",
-						y: "un an",
-						yy: "%d ans"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(er|e)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							default:
-							case "M":
-							case "Q":
-							case "D":
-							case "DDD":
-							case "d":
-								return e + (1 === e ? "er" : "e");
-							case "w":
-							case "W":
-								return e + (1 === e ? "re" : "e")
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fr.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("fr", {
-					months: "janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre".split("_"),
-					monthsShort: "janv._févr._mars_avr._mai_juin_juil._août_sept._oct._nov._déc.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "dimanche_lundi_mardi_mercredi_jeudi_vendredi_samedi".split("_"),
-					weekdaysShort: "dim._lun._mar._mer._jeu._ven._sam.".split("_"),
-					weekdaysMin: "di_lu_ma_me_je_ve_sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Aujourd’hui à] LT",
-						nextDay: "[Demain à] LT",
-						nextWeek: "dddd [à] LT",
-						lastDay: "[Hier à] LT",
-						lastWeek: "dddd [dernier à] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "dans %s",
-						past: "il y a %s",
-						s: "quelques secondes",
-						ss: "%d secondes",
-						m: "une minute",
-						mm: "%d minutes",
-						h: "une heure",
-						hh: "%d heures",
-						d: "un jour",
-						dd: "%d jours",
-						M: "un mois",
-						MM: "%d mois",
-						y: "un an",
-						yy: "%d ans"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(er|)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "D":
-								return e + (1 === e ? "er" : "");
-							default:
-							case "M":
-							case "Q":
-							case "DDD":
-							case "d":
-								return e + (1 === e ? "er" : "e");
-							case "w":
-							case "W":
-								return e + (1 === e ? "re" : "e")
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/fy.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "jan._feb._mrt._apr._mai_jun._jul._aug._sep._okt._nov._des.".split("_"),
-					n = "jan_feb_mrt_apr_mai_jun_jul_aug_sep_okt_nov_des".split("_");
-				e.defineLocale("fy", {
-					months: "jannewaris_febrewaris_maart_april_maaie_juny_july_augustus_septimber_oktober_novimber_desimber".split("_"),
-					monthsShort: function(e, a) {
-						return e ? /-MMM-/.test(a) ? n[e.month()] : t[e.month()] : t
-					},
-					monthsParseExact: !0,
-					weekdays: "snein_moandei_tiisdei_woansdei_tongersdei_freed_sneon".split("_"),
-					weekdaysShort: "si._mo._ti._wo._to._fr._so.".split("_"),
-					weekdaysMin: "Si_Mo_Ti_Wo_To_Fr_So".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD-MM-YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[hjoed om] LT",
-						nextDay: "[moarn om] LT",
-						nextWeek: "dddd [om] LT",
-						lastDay: "[juster om] LT",
-						lastWeek: "[ôfrûne] dddd [om] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "oer %s",
-						past: "%s lyn",
-						s: "in pear sekonden",
-						ss: "%d sekonden",
-						m: "ien minút",
-						mm: "%d minuten",
-						h: "ien oere",
-						hh: "%d oeren",
-						d: "ien dei",
-						dd: "%d dagen",
-						M: "ien moanne",
-						MM: "%d moannen",
-						y: "ien jier",
-						yy: "%d jierren"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
-					ordinal: function(e) {
-						return e + (1 === e || 8 === e || e >= 20 ? "ste" : "de")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ga.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ga", {
-					months: ["Eanáir", "Feabhra", "Márta", "Aibreán", "Bealtaine", "Meitheamh", "Iúil", "Lúnasa", "Meán Fómhair", "Deireadh Fómhair", "Samhain", "Nollaig"],
-					monthsShort: ["Ean", "Feabh", "Márt", "Aib", "Beal", "Meith", "Iúil", "Lún", "M.F.", "D.F.", "Samh", "Noll"],
-					monthsParseExact: !0,
-					weekdays: ["Dé Domhnaigh", "Dé Luain", "Dé Máirt", "Dé Céadaoin", "Déardaoin", "Dé hAoine", "Dé Sathairn"],
-					weekdaysShort: ["Domh", "Luan", "Máirt", "Céad", "Déar", "Aoine", "Sath"],
-					weekdaysMin: ["Do", "Lu", "Má", "Cé", "Dé", "A", "Sa"],
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Inniu ag] LT",
-						nextDay: "[Amárach ag] LT",
-						nextWeek: "dddd [ag] LT",
-						lastDay: "[Inné ag] LT",
-						lastWeek: "dddd [seo caite] [ag] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "i %s",
-						past: "%s ó shin",
-						s: "cúpla soicind",
-						ss: "%d soicind",
-						m: "nóiméad",
-						mm: "%d nóiméad",
-						h: "uair an chloig",
-						hh: "%d uair an chloig",
-						d: "lá",
-						dd: "%d lá",
-						M: "mí",
-						MM: "%d míonna",
-						y: "bliain",
-						yy: "%d bliain"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(d|na|mh)/,
-					ordinal: function(e) {
-						return e + (1 === e ? "d" : e % 10 == 2 ? "na" : "mh")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/gd.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("gd", {
-					months: ["Am Faoilleach", "An Gearran", "Am Màrt", "An Giblean", "An Cèitean", "An t-Ògmhios", "An t-Iuchar", "An Lùnastal", "An t-Sultain", "An Dàmhair", "An t-Samhain", "An Dùbhlachd"],
-					monthsShort: ["Faoi", "Gear", "Màrt", "Gibl", "Cèit", "Ògmh", "Iuch", "Lùn", "Sult", "Dàmh", "Samh", "Dùbh"],
-					monthsParseExact: !0,
-					weekdays: ["Didòmhnaich", "Diluain", "Dimàirt", "Diciadain", "Diardaoin", "Dihaoine", "Disathairne"],
-					weekdaysShort: ["Did", "Dil", "Dim", "Dic", "Dia", "Dih", "Dis"],
-					weekdaysMin: ["Dò", "Lu", "Mà", "Ci", "Ar", "Ha", "Sa"],
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[An-diugh aig] LT",
-						nextDay: "[A-màireach aig] LT",
-						nextWeek: "dddd [aig] LT",
-						lastDay: "[An-dè aig] LT",
-						lastWeek: "dddd [seo chaidh] [aig] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "ann an %s",
-						past: "bho chionn %s",
-						s: "beagan diogan",
-						ss: "%d diogan",
-						m: "mionaid",
-						mm: "%d mionaidean",
-						h: "uair",
-						hh: "%d uairean",
-						d: "latha",
-						dd: "%d latha",
-						M: "mìos",
-						MM: "%d mìosan",
-						y: "bliadhna",
-						yy: "%d bliadhna"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(d|na|mh)/,
-					ordinal: function(e) {
-						return e + (1 === e ? "d" : e % 10 == 2 ? "na" : "mh")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/gl.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("gl", {
-					months: "xaneiro_febreiro_marzo_abril_maio_xuño_xullo_agosto_setembro_outubro_novembro_decembro".split("_"),
-					monthsShort: "xan._feb._mar._abr._mai._xuñ._xul._ago._set._out._nov._dec.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "domingo_luns_martes_mércores_xoves_venres_sábado".split("_"),
-					weekdaysShort: "dom._lun._mar._mér._xov._ven._sáb.".split("_"),
-					weekdaysMin: "do_lu_ma_mé_xo_ve_sá".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D [de] MMMM [de] YYYY",
-						LLL: "D [de] MMMM [de] YYYY H:mm",
-						LLLL: "dddd, D [de] MMMM [de] YYYY H:mm"
-					},
-					calendar: {
-						sameDay: function() {
-							return "[hoxe " + (1 !== this.hours() ? "ás" : "á") + "] LT"
-						},
-						nextDay: function() {
-							return "[mañá " + (1 !== this.hours() ? "ás" : "á") + "] LT"
-						},
-						nextWeek: function() {
-							return "dddd [" + (1 !== this.hours() ? "ás" : "a") + "] LT"
-						},
-						lastDay: function() {
-							return "[onte " + (1 !== this.hours() ? "á" : "a") + "] LT"
-						},
-						lastWeek: function() {
-							return "[o] dddd [pasado " + (1 !== this.hours() ? "ás" : "a") + "] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: function(e) {
-							return 0 === e.indexOf("un") ? "n" + e : "en " + e
-						},
-						past: "hai %s",
-						s: "uns segundos",
-						ss: "%d segundos",
-						m: "un minuto",
-						mm: "%d minutos",
-						h: "unha hora",
-						hh: "%d horas",
-						d: "un día",
-						dd: "%d días",
-						M: "un mes",
-						MM: "%d meses",
-						y: "un ano",
-						yy: "%d anos"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/gom-deva.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						s: ["थोडया सॅकंडांनी", "थोडे सॅकंड"],
-						ss: [e + " सॅकंडांनी", e + " सॅकंड"],
-						m: ["एका मिणटान", "एक मिनूट"],
-						mm: [e + " मिणटांनी", e + " मिणटां"],
-						h: ["एका वरान", "एक वर"],
-						hh: [e + " वरांनी", e + " वरां"],
-						d: ["एका दिसान", "एक दीस"],
-						dd: [e + " दिसांनी", e + " दीस"],
-						M: ["एका म्हयन्यान", "एक म्हयनो"],
-						MM: [e + " म्हयन्यानी", e + " म्हयने"],
-						y: ["एका वर्सान", "एक वर्स"],
-						yy: [e + " वर्सांनी", e + " वर्सां"]
-					};
-					return a ? r[n][0] : r[n][1]
-				}
-				e.defineLocale("gom-deva", {
-					months: {
-						standalone: "जानेवारी_फेब्रुवारी_मार्च_एप्रील_मे_जून_जुलय_ऑगस्ट_सप्टेंबर_ऑक्टोबर_नोव्हेंबर_डिसेंबर".split("_"),
-						format: "जानेवारीच्या_फेब्रुवारीच्या_मार्चाच्या_एप्रीलाच्या_मेयाच्या_जूनाच्या_जुलयाच्या_ऑगस्टाच्या_सप्टेंबराच्या_ऑक्टोबराच्या_नोव्हेंबराच्या_डिसेंबराच्या".split("_"),
-						isFormat: /MMMM(\s)+D[oD]?/
-					},
-					monthsShort: "जाने._फेब्रु._मार्च_एप्री._मे_जून_जुल._ऑग._सप्टें._ऑक्टो._नोव्हें._डिसें.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "आयतार_सोमार_मंगळार_बुधवार_बिरेस्तार_सुक्रार_शेनवार".split("_"),
-					weekdaysShort: "आयत._सोम._मंगळ._बुध._ब्रेस्त._सुक्र._शेन.".split("_"),
-					weekdaysMin: "आ_सो_मं_बु_ब्रे_सु_शे".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "A h:mm [वाजतां]",
-						LTS: "A h:mm:ss [वाजतां]",
-						L: "DD-MM-YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY A h:mm [वाजतां]",
-						LLLL: "dddd, MMMM Do, YYYY, A h:mm [वाजतां]",
-						llll: "ddd, D MMM YYYY, A h:mm [वाजतां]"
-					},
-					calendar: {
-						sameDay: "[आयज] LT",
-						nextDay: "[फाल्यां] LT",
-						nextWeek: "[फुडलो] dddd[,] LT",
-						lastDay: "[काल] LT",
-						lastWeek: "[फाटलो] dddd[,] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s",
-						past: "%s आदीं",
-						s: t,
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(वेर)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "D":
-								return e + "वेर";
-							default:
-							case "M":
-							case "Q":
-							case "DDD":
-							case "d":
-							case "w":
-							case "W":
-								return e
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					},
-					meridiemParse: /राती|सकाळीं|दनपारां|सांजे/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "राती" === t ? e < 4 ? e : e + 12 : "सकाळीं" === t ? e : "दनपारां" === t ? e > 12 ? e : e + 12 : "सांजे" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "राती" : e < 12 ? "सकाळीं" : e < 16 ? "दनपारां" : e < 20 ? "सांजे" : "राती"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/gom-latn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						s: ["thoddea sekondamni", "thodde sekond"],
-						ss: [e + " sekondamni", e + " sekond"],
-						m: ["eka mintan", "ek minut"],
-						mm: [e + " mintamni", e + " mintam"],
-						h: ["eka voran", "ek vor"],
-						hh: [e + " voramni", e + " voram"],
-						d: ["eka disan", "ek dis"],
-						dd: [e + " disamni", e + " dis"],
-						M: ["eka mhoinean", "ek mhoino"],
-						MM: [e + " mhoineamni", e + " mhoine"],
-						y: ["eka vorsan", "ek voros"],
-						yy: [e + " vorsamni", e + " vorsam"]
-					};
-					return a ? r[n][0] : r[n][1]
-				}
-				e.defineLocale("gom-latn", {
-					months: {
-						standalone: "Janer_Febrer_Mars_Abril_Mai_Jun_Julai_Agost_Setembr_Otubr_Novembr_Dezembr".split("_"),
-						format: "Janerachea_Febrerachea_Marsachea_Abrilachea_Maiachea_Junachea_Julaiachea_Agostachea_Setembrachea_Otubrachea_Novembrachea_Dezembrachea".split("_"),
-						isFormat: /MMMM(\s)+D[oD]?/
-					},
-					monthsShort: "Jan._Feb._Mars_Abr._Mai_Jun_Jul._Ago._Set._Otu._Nov._Dez.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "Aitar_Somar_Mongllar_Budhvar_Birestar_Sukrar_Son'var".split("_"),
-					weekdaysShort: "Ait._Som._Mon._Bud._Bre._Suk._Son.".split("_"),
-					weekdaysMin: "Ai_Sm_Mo_Bu_Br_Su_Sn".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "A h:mm [vazta]",
-						LTS: "A h:mm:ss [vazta]",
-						L: "DD-MM-YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY A h:mm [vazta]",
-						LLLL: "dddd, MMMM Do, YYYY, A h:mm [vazta]",
-						llll: "ddd, D MMM YYYY, A h:mm [vazta]"
-					},
-					calendar: {
-						sameDay: "[Aiz] LT",
-						nextDay: "[Faleam] LT",
-						nextWeek: "[Fuddlo] dddd[,] LT",
-						lastDay: "[Kal] LT",
-						lastWeek: "[Fattlo] dddd[,] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s",
-						past: "%s adim",
-						s: t,
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(er)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "D":
-								return e + "er";
-							default:
-							case "M":
-							case "Q":
-							case "DDD":
-							case "d":
-							case "w":
-							case "W":
-								return e
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					},
-					meridiemParse: /rati|sokallim|donparam|sanje/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "rati" === t ? e < 4 ? e : e + 12 : "sokallim" === t ? e : "donparam" === t ? e > 12 ? e : e + 12 : "sanje" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "rati" : e < 12 ? "sokallim" : e < 16 ? "donparam" : e < 20 ? "sanje" : "rati"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/gu.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "૧",
-						2: "૨",
-						3: "૩",
-						4: "૪",
-						5: "૫",
-						6: "૬",
-						7: "૭",
-						8: "૮",
-						9: "૯",
-						0: "૦"
-					},
-					n = {
-						"૧": "1",
-						"૨": "2",
-						"૩": "3",
-						"૪": "4",
-						"૫": "5",
-						"૬": "6",
-						"૭": "7",
-						"૮": "8",
-						"૯": "9",
-						"૦": "0"
-					};
-				e.defineLocale("gu", {
-					months: "જાન્યુઆરી_ફેબ્રુઆરી_માર્ચ_એપ્રિલ_મે_જૂન_જુલાઈ_ઑગસ્ટ_સપ્ટેમ્બર_ઑક્ટ્બર_નવેમ્બર_ડિસેમ્બર".split("_"),
-					monthsShort: "જાન્યુ._ફેબ્રુ._માર્ચ_એપ્રિ._મે_જૂન_જુલા._ઑગ._સપ્ટે._ઑક્ટ્._નવે._ડિસે.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "રવિવાર_સોમવાર_મંગળવાર_બુધ્વાર_ગુરુવાર_શુક્રવાર_શનિવાર".split("_"),
-					weekdaysShort: "રવિ_સોમ_મંગળ_બુધ્_ગુરુ_શુક્ર_શનિ".split("_"),
-					weekdaysMin: "ર_સો_મં_બુ_ગુ_શુ_શ".split("_"),
-					longDateFormat: {
-						LT: "A h:mm વાગ્યે",
-						LTS: "A h:mm:ss વાગ્યે",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm વાગ્યે",
-						LLLL: "dddd, D MMMM YYYY, A h:mm વાગ્યે"
-					},
-					calendar: {
-						sameDay: "[આજ] LT",
-						nextDay: "[કાલે] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[ગઇકાલે] LT",
-						lastWeek: "[પાછલા] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s મા",
-						past: "%s પેહલા",
-						s: "અમુક પળો",
-						ss: "%d સેકંડ",
-						m: "એક મિનિટ",
-						mm: "%d મિનિટ",
-						h: "એક કલાક",
-						hh: "%d કલાક",
-						d: "એક દિવસ",
-						dd: "%d દિવસ",
-						M: "એક મહિનો",
-						MM: "%d મહિનો",
-						y: "એક વર્ષ",
-						yy: "%d વર્ષ"
-					},
-					preparse: function(e) {
-						return e.replace(/[૧૨૩૪૫૬૭૮૯૦]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /રાત|બપોર|સવાર|સાંજ/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "રાત" === t ? e < 4 ? e : e + 12 : "સવાર" === t ? e : "બપોર" === t ? e >= 10 ? e : e + 12 : "સાંજ" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "રાત" : e < 10 ? "સવાર" : e < 17 ? "બપોર" : e < 20 ? "સાંજ" : "રાત"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/he.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("he", {
-					months: "ינואר_פברואר_מרץ_אפריל_מאי_יוני_יולי_אוגוסט_ספטמבר_אוקטובר_נובמבר_דצמבר".split("_"),
-					monthsShort: "ינו׳_פבר׳_מרץ_אפר׳_מאי_יוני_יולי_אוג׳_ספט׳_אוק׳_נוב׳_דצמ׳".split("_"),
-					weekdays: "ראשון_שני_שלישי_רביעי_חמישי_שישי_שבת".split("_"),
-					weekdaysShort: "א׳_ב׳_ג׳_ד׳_ה׳_ו׳_ש׳".split("_"),
-					weekdaysMin: "א_ב_ג_ד_ה_ו_ש".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D [ב]MMMM YYYY",
-						LLL: "D [ב]MMMM YYYY HH:mm",
-						LLLL: "dddd, D [ב]MMMM YYYY HH:mm",
-						l: "D/M/YYYY",
-						ll: "D MMM YYYY",
-						lll: "D MMM YYYY HH:mm",
-						llll: "ddd, D MMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[היום ב־]LT",
-						nextDay: "[מחר ב־]LT",
-						nextWeek: "dddd [בשעה] LT",
-						lastDay: "[אתמול ב־]LT",
-						lastWeek: "[ביום] dddd [האחרון בשעה] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "בעוד %s",
-						past: "לפני %s",
-						s: "מספר שניות",
-						ss: "%d שניות",
-						m: "דקה",
-						mm: "%d דקות",
-						h: "שעה",
-						hh: function(e) {
-							return 2 === e ? "שעתיים" : e + " שעות"
-						},
-						d: "יום",
-						dd: function(e) {
-							return 2 === e ? "יומיים" : e + " ימים"
-						},
-						M: "חודש",
-						MM: function(e) {
-							return 2 === e ? "חודשיים" : e + " חודשים"
-						},
-						y: "שנה",
-						yy: function(e) {
-							return 2 === e ? "שנתיים" : e % 10 == 0 && 10 !== e ? e + " שנה" : e + " שנים"
-						}
-					},
-					meridiemParse: /אחה"צ|לפנה"צ|אחרי הצהריים|לפני הצהריים|לפנות בוקר|בבוקר|בערב/i,
-					isPM: function(e) {
-						return /^(אחה"צ|אחרי הצהריים|בערב)$/.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 5 ? "לפנות בוקר" : e < 10 ? "בבוקר" : e < 12 ? n ? 'לפנה"צ' : "לפני הצהריים" : e < 18 ? n ? 'אחה"צ' : "אחרי הצהריים" : "בערב"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/hi.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "१",
-						2: "२",
-						3: "३",
-						4: "४",
-						5: "५",
-						6: "६",
-						7: "७",
-						8: "८",
-						9: "९",
-						0: "०"
-					},
-					n = {
-						"१": "1",
-						"२": "2",
-						"३": "3",
-						"४": "4",
-						"५": "5",
-						"६": "6",
-						"७": "7",
-						"८": "8",
-						"९": "9",
-						"०": "0"
-					};
-				e.defineLocale("hi", {
-					months: "जनवरी_फ़रवरी_मार्च_अप्रैल_मई_जून_जुलाई_अगस्त_सितम्बर_अक्टूबर_नवम्बर_दिसम्बर".split("_"),
-					monthsShort: "जन._फ़र._मार्च_अप्रै._मई_जून_जुल._अग._सित._अक्टू._नव._दिस.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "रविवार_सोमवार_मंगलवार_बुधवार_गुरूवार_शुक्रवार_शनिवार".split("_"),
-					weekdaysShort: "रवि_सोम_मंगल_बुध_गुरू_शुक्र_शनि".split("_"),
-					weekdaysMin: "र_सो_मं_बु_गु_शु_श".split("_"),
-					longDateFormat: {
-						LT: "A h:mm बजे",
-						LTS: "A h:mm:ss बजे",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm बजे",
-						LLLL: "dddd, D MMMM YYYY, A h:mm बजे"
-					},
-					calendar: {
-						sameDay: "[आज] LT",
-						nextDay: "[कल] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[कल] LT",
-						lastWeek: "[पिछले] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s में",
-						past: "%s पहले",
-						s: "कुछ ही क्षण",
-						ss: "%d सेकंड",
-						m: "एक मिनट",
-						mm: "%d मिनट",
-						h: "एक घंटा",
-						hh: "%d घंटे",
-						d: "एक दिन",
-						dd: "%d दिन",
-						M: "एक महीने",
-						MM: "%d महीने",
-						y: "एक वर्ष",
-						yy: "%d वर्ष"
-					},
-					preparse: function(e) {
-						return e.replace(/[१२३४५६७८९०]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /रात|सुबह|दोपहर|शाम/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "रात" === t ? e < 4 ? e : e + 12 : "सुबह" === t ? e : "दोपहर" === t ? e >= 10 ? e : e + 12 : "शाम" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "रात" : e < 10 ? "सुबह" : e < 17 ? "दोपहर" : e < 20 ? "शाम" : "रात"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/hr.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n) {
-					var a = e + " ";
-					switch (n) {
-						case "ss":
-							return a += 1 === e ? "sekunda" : 2 === e || 3 === e || 4 === e ? "sekunde" : "sekundi";
-						case "m":
-							return t ? "jedna minuta" : "jedne minute";
-						case "mm":
-							return a += 1 === e ? "minuta" : 2 === e || 3 === e || 4 === e ? "minute" : "minuta";
-						case "h":
-							return t ? "jedan sat" : "jednog sata";
-						case "hh":
-							return a += 1 === e ? "sat" : 2 === e || 3 === e || 4 === e ? "sata" : "sati";
-						case "dd":
-							return a += 1 === e ? "dan" : "dana";
-						case "MM":
-							return a += 1 === e ? "mjesec" : 2 === e || 3 === e || 4 === e ? "mjeseca" : "mjeseci";
-						case "yy":
-							return a += 1 === e ? "godina" : 2 === e || 3 === e || 4 === e ? "godine" : "godina"
-					}
-				}
-				e.defineLocale("hr", {
-					months: {
-						format: "siječnja_veljače_ožujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca".split("_"),
-						standalone: "siječanj_veljača_ožujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac".split("_")
-					},
-					monthsShort: "sij._velj._ožu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota".split("_"),
-					weekdaysShort: "ned._pon._uto._sri._čet._pet._sub.".split("_"),
-					weekdaysMin: "ne_po_ut_sr_če_pe_su".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "Do MMMM YYYY",
-						LLL: "Do MMMM YYYY H:mm",
-						LLLL: "dddd, Do MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[danas u] LT",
-						nextDay: "[sutra u] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[u] [nedjelju] [u] LT";
-								case 3:
-									return "[u] [srijedu] [u] LT";
-								case 6:
-									return "[u] [subotu] [u] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[u] dddd [u] LT"
-							}
-						},
-						lastDay: "[jučer u] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[prošlu] [nedjelju] [u] LT";
-								case 3:
-									return "[prošlu] [srijedu] [u] LT";
-								case 6:
-									return "[prošle] [subote] [u] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[prošli] dddd [u] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "za %s",
-						past: "prije %s",
-						s: "par sekundi",
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: "dan",
-						dd: t,
-						M: "mjesec",
-						MM: t,
-						y: "godinu",
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/hu.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "vasárnap hétfőn kedden szerdán csütörtökön pénteken szombaton".split(" ");
-
-				function n(e, t, n, a) {
-					var r = e;
-					switch (n) {
-						case "s":
-							return a || t ? "néhány másodperc" : "néhány másodperce";
-						case "ss":
-							return r + (a || t) ? " másodperc" : " másodperce";
-						case "m":
-							return "egy" + (a || t ? " perc" : " perce");
-						case "mm":
-							return r + (a || t ? " perc" : " perce");
-						case "h":
-							return "egy" + (a || t ? " óra" : " órája");
-						case "hh":
-							return r + (a || t ? " óra" : " órája");
-						case "d":
-							return "egy" + (a || t ? " nap" : " napja");
-						case "dd":
-							return r + (a || t ? " nap" : " napja");
-						case "M":
-							return "egy" + (a || t ? " hónap" : " hónapja");
-						case "MM":
-							return r + (a || t ? " hónap" : " hónapja");
-						case "y":
-							return "egy" + (a || t ? " év" : " éve");
-						case "yy":
-							return r + (a || t ? " év" : " éve")
-					}
-					return ""
-				}
-
-				function a(e) {
-					return (e ? "" : "[múlt] ") + "[" + t[this.day()] + "] LT[-kor]"
-				}
-				e.defineLocale("hu", {
-					months: "január_február_március_április_május_június_július_augusztus_szeptember_október_november_december".split("_"),
-					monthsShort: "jan_feb_márc_ápr_máj_jún_júl_aug_szept_okt_nov_dec".split("_"),
-					weekdays: "vasárnap_hétfő_kedd_szerda_csütörtök_péntek_szombat".split("_"),
-					weekdaysShort: "vas_hét_kedd_sze_csüt_pén_szo".split("_"),
-					weekdaysMin: "v_h_k_sze_cs_p_szo".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "YYYY.MM.DD.",
-						LL: "YYYY. MMMM D.",
-						LLL: "YYYY. MMMM D. H:mm",
-						LLLL: "YYYY. MMMM D., dddd H:mm"
-					},
-					meridiemParse: /de|du/i,
-					isPM: function(e) {
-						return "u" === e.charAt(1).toLowerCase()
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? !0 === n ? "de" : "DE" : !0 === n ? "du" : "DU"
-					},
-					calendar: {
-						sameDay: "[ma] LT[-kor]",
-						nextDay: "[holnap] LT[-kor]",
-						nextWeek: function() {
-							return a.call(this, !0)
-						},
-						lastDay: "[tegnap] LT[-kor]",
-						lastWeek: function() {
-							return a.call(this, !1)
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s múlva",
-						past: "%s",
-						s: n,
-						ss: n,
-						m: n,
-						mm: n,
-						h: n,
-						hh: n,
-						d: n,
-						dd: n,
-						M: n,
-						MM: n,
-						y: n,
-						yy: n
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/hy-am.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("hy-am", {
-					months: {
-						format: "հունվարի_փետրվարի_մարտի_ապրիլի_մայիսի_հունիսի_հուլիսի_օգոստոսի_սեպտեմբերի_հոկտեմբերի_նոյեմբերի_դեկտեմբերի".split("_"),
-						standalone: "հունվար_փետրվար_մարտ_ապրիլ_մայիս_հունիս_հուլիս_օգոստոս_սեպտեմբեր_հոկտեմբեր_նոյեմբեր_դեկտեմբեր".split("_")
-					},
-					monthsShort: "հնվ_փտր_մրտ_ապր_մյս_հնս_հլս_օգս_սպտ_հկտ_նմբ_դկտ".split("_"),
-					weekdays: "կիրակի_երկուշաբթի_երեքշաբթի_չորեքշաբթի_հինգշաբթի_ուրբաթ_շաբաթ".split("_"),
-					weekdaysShort: "կրկ_երկ_երք_չրք_հնգ_ուրբ_շբթ".split("_"),
-					weekdaysMin: "կրկ_երկ_երք_չրք_հնգ_ուրբ_շբթ".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY թ.",
-						LLL: "D MMMM YYYY թ., HH:mm",
-						LLLL: "dddd, D MMMM YYYY թ., HH:mm"
-					},
-					calendar: {
-						sameDay: "[այսօր] LT",
-						nextDay: "[վաղը] LT",
-						lastDay: "[երեկ] LT",
-						nextWeek: function() {
-							return "dddd [օրը ժամը] LT"
-						},
-						lastWeek: function() {
-							return "[անցած] dddd [օրը ժամը] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s հետո",
-						past: "%s առաջ",
-						s: "մի քանի վայրկյան",
-						ss: "%d վայրկյան",
-						m: "րոպե",
-						mm: "%d րոպե",
-						h: "ժամ",
-						hh: "%d ժամ",
-						d: "օր",
-						dd: "%d օր",
-						M: "ամիս",
-						MM: "%d ամիս",
-						y: "տարի",
-						yy: "%d տարի"
-					},
-					meridiemParse: /գիշերվա|առավոտվա|ցերեկվա|երեկոյան/,
-					isPM: function(e) {
-						return /^(ցերեկվա|երեկոյան)$/.test(e)
-					},
-					meridiem: function(e) {
-						return e < 4 ? "գիշերվա" : e < 12 ? "առավոտվա" : e < 17 ? "ցերեկվա" : "երեկոյան"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}|\d{1,2}-(ին|րդ)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "DDD":
-							case "w":
-							case "W":
-							case "DDDo":
-								return 1 === e ? e + "-ին" : e + "-րդ";
-							default:
-								return e
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/id.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("id", {
-					months: "Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_November_Desember".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_Mei_Jun_Jul_Agt_Sep_Okt_Nov_Des".split("_"),
-					weekdays: "Minggu_Senin_Selasa_Rabu_Kamis_Jumat_Sabtu".split("_"),
-					weekdaysShort: "Min_Sen_Sel_Rab_Kam_Jum_Sab".split("_"),
-					weekdaysMin: "Mg_Sn_Sl_Rb_Km_Jm_Sb".split("_"),
-					longDateFormat: {
-						LT: "HH.mm",
-						LTS: "HH.mm.ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY [pukul] HH.mm",
-						LLLL: "dddd, D MMMM YYYY [pukul] HH.mm"
-					},
-					meridiemParse: /pagi|siang|sore|malam/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "pagi" === t ? e : "siang" === t ? e >= 11 ? e : e + 12 : "sore" === t || "malam" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 11 ? "pagi" : e < 15 ? "siang" : e < 19 ? "sore" : "malam"
-					},
-					calendar: {
-						sameDay: "[Hari ini pukul] LT",
-						nextDay: "[Besok pukul] LT",
-						nextWeek: "dddd [pukul] LT",
-						lastDay: "[Kemarin pukul] LT",
-						lastWeek: "dddd [lalu pukul] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "dalam %s",
-						past: "%s yang lalu",
-						s: "beberapa detik",
-						ss: "%d detik",
-						m: "semenit",
-						mm: "%d menit",
-						h: "sejam",
-						hh: "%d jam",
-						d: "sehari",
-						dd: "%d hari",
-						M: "sebulan",
-						MM: "%d bulan",
-						y: "setahun",
-						yy: "%d tahun"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/is.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e) {
-					return e % 100 == 11 || e % 10 != 1
-				}
-
-				function n(e, n, a, r) {
-					var i = e + " ";
-					switch (a) {
-						case "s":
-							return n || r ? "nokkrar sekúndur" : "nokkrum sekúndum";
-						case "ss":
-							return t(e) ? i + (n || r ? "sekúndur" : "sekúndum") : i + "sekúnda";
-						case "m":
-							return n ? "mínúta" : "mínútu";
-						case "mm":
-							return t(e) ? i + (n || r ? "mínútur" : "mínútum") : n ? i + "mínúta" : i + "mínútu";
-						case "hh":
-							return t(e) ? i + (n || r ? "klukkustundir" : "klukkustundum") : i + "klukkustund";
-						case "d":
-							return n ? "dagur" : r ? "dag" : "degi";
-						case "dd":
-							return t(e) ? n ? i + "dagar" : i + (r ? "daga" : "dögum") : n ? i + "dagur" : i + (r ? "dag" : "degi");
-						case "M":
-							return n ? "mánuður" : r ? "mánuð" : "mánuði";
-						case "MM":
-							return t(e) ? n ? i + "mánuðir" : i + (r ? "mánuði" : "mánuðum") : n ? i + "mánuður" : i + (r ? "mánuð" : "mánuði");
-						case "y":
-							return n || r ? "ár" : "ári";
-						case "yy":
-							return t(e) ? i + (n || r ? "ár" : "árum") : i + (n || r ? "ár" : "ári")
-					}
-				}
-				e.defineLocale("is", {
-					months: "janúar_febrúar_mars_apríl_maí_júní_júlí_ágúst_september_október_nóvember_desember".split("_"),
-					monthsShort: "jan_feb_mar_apr_maí_jún_júl_ágú_sep_okt_nóv_des".split("_"),
-					weekdays: "sunnudagur_mánudagur_þriðjudagur_miðvikudagur_fimmtudagur_föstudagur_laugardagur".split("_"),
-					weekdaysShort: "sun_mán_þri_mið_fim_fös_lau".split("_"),
-					weekdaysMin: "Su_Má_Þr_Mi_Fi_Fö_La".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY [kl.] H:mm",
-						LLLL: "dddd, D. MMMM YYYY [kl.] H:mm"
-					},
-					calendar: {
-						sameDay: "[í dag kl.] LT",
-						nextDay: "[á morgun kl.] LT",
-						nextWeek: "dddd [kl.] LT",
-						lastDay: "[í gær kl.] LT",
-						lastWeek: "[síðasta] dddd [kl.] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "eftir %s",
-						past: "fyrir %s síðan",
-						s: n,
-						ss: n,
-						m: n,
-						mm: n,
-						h: "klukkustund",
-						hh: n,
-						d: n,
-						dd: n,
-						M: n,
-						MM: n,
-						y: n,
-						yy: n
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/it-ch.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("it-ch", {
-					months: "gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre".split("_"),
-					monthsShort: "gen_feb_mar_apr_mag_giu_lug_ago_set_ott_nov_dic".split("_"),
-					weekdays: "domenica_lunedì_martedì_mercoledì_giovedì_venerdì_sabato".split("_"),
-					weekdaysShort: "dom_lun_mar_mer_gio_ven_sab".split("_"),
-					weekdaysMin: "do_lu_ma_me_gi_ve_sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Oggi alle] LT",
-						nextDay: "[Domani alle] LT",
-						nextWeek: "dddd [alle] LT",
-						lastDay: "[Ieri alle] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[la scorsa] dddd [alle] LT";
-								default:
-									return "[lo scorso] dddd [alle] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: function(e) {
-							return (/^[0-9].+$/.test(e) ? "tra" : "in") + " " + e
-						},
-						past: "%s fa",
-						s: "alcuni secondi",
-						ss: "%d secondi",
-						m: "un minuto",
-						mm: "%d minuti",
-						h: "un'ora",
-						hh: "%d ore",
-						d: "un giorno",
-						dd: "%d giorni",
-						M: "un mese",
-						MM: "%d mesi",
-						y: "un anno",
-						yy: "%d anni"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/it.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("it", {
-					months: "gennaio_febbraio_marzo_aprile_maggio_giugno_luglio_agosto_settembre_ottobre_novembre_dicembre".split("_"),
-					monthsShort: "gen_feb_mar_apr_mag_giu_lug_ago_set_ott_nov_dic".split("_"),
-					weekdays: "domenica_lunedì_martedì_mercoledì_giovedì_venerdì_sabato".split("_"),
-					weekdaysShort: "dom_lun_mar_mer_gio_ven_sab".split("_"),
-					weekdaysMin: "do_lu_ma_me_gi_ve_sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: function() {
-							return "[Oggi a" + (this.hours() > 1 ? "lle " : 0 === this.hours() ? " " : "ll'") + "]LT"
-						},
-						nextDay: function() {
-							return "[Domani a" + (this.hours() > 1 ? "lle " : 0 === this.hours() ? " " : "ll'") + "]LT"
-						},
-						nextWeek: function() {
-							return "dddd [a" + (this.hours() > 1 ? "lle " : 0 === this.hours() ? " " : "ll'") + "]LT"
-						},
-						lastDay: function() {
-							return "[Ieri a" + (this.hours() > 1 ? "lle " : 0 === this.hours() ? " " : "ll'") + "]LT"
-						},
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[La scorsa] dddd [a" + (this.hours() > 1 ? "lle " : 0 === this.hours() ? " " : "ll'") + "]LT";
-								default:
-									return "[Lo scorso] dddd [a" + (this.hours() > 1 ? "lle " : 0 === this.hours() ? " " : "ll'") + "]LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: function(e) {
-							return (/^[0-9].+$/.test(e) ? "tra" : "in") + " " + e
-						},
-						past: "%s fa",
-						s: "alcuni secondi",
-						ss: "%d secondi",
-						m: "un minuto",
-						mm: "%d minuti",
-						h: "un'ora",
-						hh: "%d ore",
-						d: "un giorno",
-						dd: "%d giorni",
-						M: "un mese",
-						MM: "%d mesi",
-						y: "un anno",
-						yy: "%d anni"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ja.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ja", {
-					eras: [{
-						since: "2019-05-01",
-						offset: 1,
-						name: "令和",
-						narrow: "㋿",
-						abbr: "R"
-					}, {
-						since: "1989-01-08",
-						until: "2019-04-30",
-						offset: 1,
-						name: "平成",
-						narrow: "㍻",
-						abbr: "H"
-					}, {
-						since: "1926-12-25",
-						until: "1989-01-07",
-						offset: 1,
-						name: "昭和",
-						narrow: "㍼",
-						abbr: "S"
-					}, {
-						since: "1912-07-30",
-						until: "1926-12-24",
-						offset: 1,
-						name: "大正",
-						narrow: "㍽",
-						abbr: "T"
-					}, {
-						since: "1873-01-01",
-						until: "1912-07-29",
-						offset: 6,
-						name: "明治",
-						narrow: "㍾",
-						abbr: "M"
-					}, {
-						since: "0001-01-01",
-						until: "1873-12-31",
-						offset: 1,
-						name: "西暦",
-						narrow: "AD",
-						abbr: "AD"
-					}, {
-						since: "0000-12-31",
-						until: -1 / 0,
-						offset: 1,
-						name: "紀元前",
-						narrow: "BC",
-						abbr: "BC"
-					}],
-					eraYearOrdinalRegex: /(元|\d+)年/,
-					eraYearOrdinalParse: function(e, t) {
-						return "元" === t[1] ? 1 : parseInt(t[1] || e, 10)
-					},
-					months: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
-					monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
-					weekdays: "日曜日_月曜日_火曜日_水曜日_木曜日_金曜日_土曜日".split("_"),
-					weekdaysShort: "日_月_火_水_木_金_土".split("_"),
-					weekdaysMin: "日_月_火_水_木_金_土".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY/MM/DD",
-						LL: "YYYY年M月D日",
-						LLL: "YYYY年M月D日 HH:mm",
-						LLLL: "YYYY年M月D日 dddd HH:mm",
-						l: "YYYY/MM/DD",
-						ll: "YYYY年M月D日",
-						lll: "YYYY年M月D日 HH:mm",
-						llll: "YYYY年M月D日(ddd) HH:mm"
-					},
-					meridiemParse: /午前|午後/i,
-					isPM: function(e) {
-						return "午後" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "午前" : "午後"
-					},
-					calendar: {
-						sameDay: "[今日] LT",
-						nextDay: "[明日] LT",
-						nextWeek: function(e) {
-							return e.week() !== this.week() ? "[来週]dddd LT" : "dddd LT"
-						},
-						lastDay: "[昨日] LT",
-						lastWeek: function(e) {
-							return this.week() !== e.week() ? "[先週]dddd LT" : "dddd LT"
-						},
-						sameElse: "L"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}日/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "y":
-								return 1 === e ? "元年" : e + "年";
-							case "d":
-							case "D":
-							case "DDD":
-								return e + "日";
-							default:
-								return e
-						}
-					},
-					relativeTime: {
-						future: "%s後",
-						past: "%s前",
-						s: "数秒",
-						ss: "%d秒",
-						m: "1分",
-						mm: "%d分",
-						h: "1時間",
-						hh: "%d時間",
-						d: "1日",
-						dd: "%d日",
-						M: "1ヶ月",
-						MM: "%dヶ月",
-						y: "1年",
-						yy: "%d年"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/jv.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("jv", {
-					months: "Januari_Februari_Maret_April_Mei_Juni_Juli_Agustus_September_Oktober_Nopember_Desember".split("_"),
-					monthsShort: "Jan_Feb_Mar_Apr_Mei_Jun_Jul_Ags_Sep_Okt_Nop_Des".split("_"),
-					weekdays: "Minggu_Senen_Seloso_Rebu_Kemis_Jemuwah_Septu".split("_"),
-					weekdaysShort: "Min_Sen_Sel_Reb_Kem_Jem_Sep".split("_"),
-					weekdaysMin: "Mg_Sn_Sl_Rb_Km_Jm_Sp".split("_"),
-					longDateFormat: {
-						LT: "HH.mm",
-						LTS: "HH.mm.ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY [pukul] HH.mm",
-						LLLL: "dddd, D MMMM YYYY [pukul] HH.mm"
-					},
-					meridiemParse: /enjing|siyang|sonten|ndalu/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "enjing" === t ? e : "siyang" === t ? e >= 11 ? e : e + 12 : "sonten" === t || "ndalu" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 11 ? "enjing" : e < 15 ? "siyang" : e < 19 ? "sonten" : "ndalu"
-					},
-					calendar: {
-						sameDay: "[Dinten puniko pukul] LT",
-						nextDay: "[Mbenjang pukul] LT",
-						nextWeek: "dddd [pukul] LT",
-						lastDay: "[Kala wingi pukul] LT",
-						lastWeek: "dddd [kepengker pukul] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "wonten ing %s",
-						past: "%s ingkang kepengker",
-						s: "sawetawis detik",
-						ss: "%d detik",
-						m: "setunggal menit",
-						mm: "%d menit",
-						h: "setunggal jam",
-						hh: "%d jam",
-						d: "sedinten",
-						dd: "%d dinten",
-						M: "sewulan",
-						MM: "%d wulan",
-						y: "setaun",
-						yy: "%d taun"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ka.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ka", {
-					months: "იანვარი_თებერვალი_მარტი_აპრილი_მაისი_ივნისი_ივლისი_აგვისტო_სექტემბერი_ოქტომბერი_ნოემბერი_დეკემბერი".split("_"),
-					monthsShort: "იან_თებ_მარ_აპრ_მაი_ივნ_ივლ_აგვ_სექ_ოქტ_ნოე_დეკ".split("_"),
-					weekdays: {
-						standalone: "კვირა_ორშაბათი_სამშაბათი_ოთხშაბათი_ხუთშაბათი_პარასკევი_შაბათი".split("_"),
-						format: "კვირას_ორშაბათს_სამშაბათს_ოთხშაბათს_ხუთშაბათს_პარასკევს_შაბათს".split("_"),
-						isFormat: /(წინა|შემდეგ)/
-					},
-					weekdaysShort: "კვი_ორშ_სამ_ოთხ_ხუთ_პარ_შაბ".split("_"),
-					weekdaysMin: "კვ_ორ_სა_ოთ_ხუ_პა_შა".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[დღეს] LT[-ზე]",
-						nextDay: "[ხვალ] LT[-ზე]",
-						lastDay: "[გუშინ] LT[-ზე]",
-						nextWeek: "[შემდეგ] dddd LT[-ზე]",
-						lastWeek: "[წინა] dddd LT-ზე",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: function(e) {
-							return e.replace(/(წამ|წუთ|საათ|წელ|დღ|თვ)(ი|ე)/, (function(e, t, n) {
-								return "ი" === n ? t + "ში" : t + n + "ში"
-							}))
-						},
-						past: function(e) {
-							return /(წამი|წუთი|საათი|დღე|თვე)/.test(e) ? e.replace(/(ი|ე)$/, "ის წინ") : /წელი/.test(e) ? e.replace(/წელი$/, "წლის წინ") : e
-						},
-						s: "რამდენიმე წამი",
-						ss: "%d წამი",
-						m: "წუთი",
-						mm: "%d წუთი",
-						h: "საათი",
-						hh: "%d საათი",
-						d: "დღე",
-						dd: "%d დღე",
-						M: "თვე",
-						MM: "%d თვე",
-						y: "წელი",
-						yy: "%d წელი"
-					},
-					dayOfMonthOrdinalParse: /0|1-ლი|მე-\d{1,2}|\d{1,2}-ე/,
-					ordinal: function(e) {
-						return 0 === e ? e : 1 === e ? e + "-ლი" : e < 20 || e <= 100 && e % 20 == 0 || e % 100 == 0 ? "მე-" + e : e + "-ე"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/kk.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					0: "-ші",
-					1: "-ші",
-					2: "-ші",
-					3: "-ші",
-					4: "-ші",
-					5: "-ші",
-					6: "-шы",
-					7: "-ші",
-					8: "-ші",
-					9: "-шы",
-					10: "-шы",
-					20: "-шы",
-					30: "-шы",
-					40: "-шы",
-					50: "-ші",
-					60: "-шы",
-					70: "-ші",
-					80: "-ші",
-					90: "-шы",
-					100: "-ші"
-				};
-				e.defineLocale("kk", {
-					months: "қаңтар_ақпан_наурыз_сәуір_мамыр_маусым_шілде_тамыз_қыркүйек_қазан_қараша_желтоқсан".split("_"),
-					monthsShort: "қаң_ақп_нау_сәу_мам_мау_шіл_там_қыр_қаз_қар_жел".split("_"),
-					weekdays: "жексенбі_дүйсенбі_сейсенбі_сәрсенбі_бейсенбі_жұма_сенбі".split("_"),
-					weekdaysShort: "жек_дүй_сей_сәр_бей_жұм_сен".split("_"),
-					weekdaysMin: "жк_дй_сй_ср_бй_жм_сн".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Бүгін сағат] LT",
-						nextDay: "[Ертең сағат] LT",
-						nextWeek: "dddd [сағат] LT",
-						lastDay: "[Кеше сағат] LT",
-						lastWeek: "[Өткен аптаның] dddd [сағат] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s ішінде",
-						past: "%s бұрын",
-						s: "бірнеше секунд",
-						ss: "%d секунд",
-						m: "бір минут",
-						mm: "%d минут",
-						h: "бір сағат",
-						hh: "%d сағат",
-						d: "бір күн",
-						dd: "%d күн",
-						M: "бір ай",
-						MM: "%d ай",
-						y: "бір жыл",
-						yy: "%d жыл"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(ші|шы)/,
-					ordinal: function(e) {
-						return e + (t[e] || t[e % 10] || t[e >= 100 ? 100 : null])
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/km.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "១",
-						2: "២",
-						3: "៣",
-						4: "៤",
-						5: "៥",
-						6: "៦",
-						7: "៧",
-						8: "៨",
-						9: "៩",
-						0: "០"
-					},
-					n = {
-						"១": "1",
-						"២": "2",
-						"៣": "3",
-						"៤": "4",
-						"៥": "5",
-						"៦": "6",
-						"៧": "7",
-						"៨": "8",
-						"៩": "9",
-						"០": "0"
-					};
-				e.defineLocale("km", {
-					months: "មករា_កុម្ភៈ_មីនា_មេសា_ឧសភា_មិថុនា_កក្កដា_សីហា_កញ្ញា_តុលា_វិច្ឆិកា_ធ្នូ".split("_"),
-					monthsShort: "មករា_កុម្ភៈ_មីនា_មេសា_ឧសភា_មិថុនា_កក្កដា_សីហា_កញ្ញា_តុលា_វិច្ឆិកា_ធ្នូ".split("_"),
-					weekdays: "អាទិត្យ_ច័ន្ទ_អង្គារ_ពុធ_ព្រហស្បតិ៍_សុក្រ_សៅរ៍".split("_"),
-					weekdaysShort: "អា_ច_អ_ព_ព្រ_សុ_ស".split("_"),
-					weekdaysMin: "អា_ច_អ_ព_ព្រ_សុ_ស".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /ព្រឹក|ល្ងាច/,
-					isPM: function(e) {
-						return "ល្ងាច" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "ព្រឹក" : "ល្ងាច"
-					},
-					calendar: {
-						sameDay: "[ថ្ងៃនេះ ម៉ោង] LT",
-						nextDay: "[ស្អែក ម៉ោង] LT",
-						nextWeek: "dddd [ម៉ោង] LT",
-						lastDay: "[ម្សិលមិញ ម៉ោង] LT",
-						lastWeek: "dddd [សប្តាហ៍មុន] [ម៉ោង] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%sទៀត",
-						past: "%sមុន",
-						s: "ប៉ុន្មានវិនាទី",
-						ss: "%d វិនាទី",
-						m: "មួយនាទី",
-						mm: "%d នាទី",
-						h: "មួយម៉ោង",
-						hh: "%d ម៉ោង",
-						d: "មួយថ្ងៃ",
-						dd: "%d ថ្ងៃ",
-						M: "មួយខែ",
-						MM: "%d ខែ",
-						y: "មួយឆ្នាំ",
-						yy: "%d ឆ្នាំ"
-					},
-					dayOfMonthOrdinalParse: /ទី\d{1,2}/,
-					ordinal: "ទី%d",
-					preparse: function(e) {
-						return e.replace(/[១២៣៤៥៦៧៨៩០]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/kn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "೧",
-						2: "೨",
-						3: "೩",
-						4: "೪",
-						5: "೫",
-						6: "೬",
-						7: "೭",
-						8: "೮",
-						9: "೯",
-						0: "೦"
-					},
-					n = {
-						"೧": "1",
-						"೨": "2",
-						"೩": "3",
-						"೪": "4",
-						"೫": "5",
-						"೬": "6",
-						"೭": "7",
-						"೮": "8",
-						"೯": "9",
-						"೦": "0"
-					};
-				e.defineLocale("kn", {
-					months: "ಜನವರಿ_ಫೆಬ್ರವರಿ_ಮಾರ್ಚ್_ಏಪ್ರಿಲ್_ಮೇ_ಜೂನ್_ಜುಲೈ_ಆಗಸ್ಟ್_ಸೆಪ್ಟೆಂಬರ್_ಅಕ್ಟೋಬರ್_ನವೆಂಬರ್_ಡಿಸೆಂಬರ್".split("_"),
-					monthsShort: "ಜನ_ಫೆಬ್ರ_ಮಾರ್ಚ್_ಏಪ್ರಿಲ್_ಮೇ_ಜೂನ್_ಜುಲೈ_ಆಗಸ್ಟ್_ಸೆಪ್ಟೆಂ_ಅಕ್ಟೋ_ನವೆಂ_ಡಿಸೆಂ".split("_"),
-					monthsParseExact: !0,
-					weekdays: "ಭಾನುವಾರ_ಸೋಮವಾರ_ಮಂಗಳವಾರ_ಬುಧವಾರ_ಗುರುವಾರ_ಶುಕ್ರವಾರ_ಶನಿವಾರ".split("_"),
-					weekdaysShort: "ಭಾನು_ಸೋಮ_ಮಂಗಳ_ಬುಧ_ಗುರು_ಶುಕ್ರ_ಶನಿ".split("_"),
-					weekdaysMin: "ಭಾ_ಸೋ_ಮಂ_ಬು_ಗು_ಶು_ಶ".split("_"),
-					longDateFormat: {
-						LT: "A h:mm",
-						LTS: "A h:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm",
-						LLLL: "dddd, D MMMM YYYY, A h:mm"
-					},
-					calendar: {
-						sameDay: "[ಇಂದು] LT",
-						nextDay: "[ನಾಳೆ] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[ನಿನ್ನೆ] LT",
-						lastWeek: "[ಕೊನೆಯ] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s ನಂತರ",
-						past: "%s ಹಿಂದೆ",
-						s: "ಕೆಲವು ಕ್ಷಣಗಳು",
-						ss: "%d ಸೆಕೆಂಡುಗಳು",
-						m: "ಒಂದು ನಿಮಿಷ",
-						mm: "%d ನಿಮಿಷ",
-						h: "ಒಂದು ಗಂಟೆ",
-						hh: "%d ಗಂಟೆ",
-						d: "ಒಂದು ದಿನ",
-						dd: "%d ದಿನ",
-						M: "ಒಂದು ತಿಂಗಳು",
-						MM: "%d ತಿಂಗಳು",
-						y: "ಒಂದು ವರ್ಷ",
-						yy: "%d ವರ್ಷ"
-					},
-					preparse: function(e) {
-						return e.replace(/[೧೨೩೪೫೬೭೮೯೦]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /ರಾತ್ರಿ|ಬೆಳಿಗ್ಗೆ|ಮಧ್ಯಾಹ್ನ|ಸಂಜೆ/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "ರಾತ್ರಿ" === t ? e < 4 ? e : e + 12 : "ಬೆಳಿಗ್ಗೆ" === t ? e : "ಮಧ್ಯಾಹ್ನ" === t ? e >= 10 ? e : e + 12 : "ಸಂಜೆ" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "ರಾತ್ರಿ" : e < 10 ? "ಬೆಳಿಗ್ಗೆ" : e < 17 ? "ಮಧ್ಯಾಹ್ನ" : e < 20 ? "ಸಂಜೆ" : "ರಾತ್ರಿ"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(ನೇ)/,
-					ordinal: function(e) {
-						return e + "ನೇ"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ko.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ko", {
-					months: "1월_2월_3월_4월_5월_6월_7월_8월_9월_10월_11월_12월".split("_"),
-					monthsShort: "1월_2월_3월_4월_5월_6월_7월_8월_9월_10월_11월_12월".split("_"),
-					weekdays: "일요일_월요일_화요일_수요일_목요일_금요일_토요일".split("_"),
-					weekdaysShort: "일_월_화_수_목_금_토".split("_"),
-					weekdaysMin: "일_월_화_수_목_금_토".split("_"),
-					longDateFormat: {
-						LT: "A h:mm",
-						LTS: "A h:mm:ss",
-						L: "YYYY.MM.DD.",
-						LL: "YYYY년 MMMM D일",
-						LLL: "YYYY년 MMMM D일 A h:mm",
-						LLLL: "YYYY년 MMMM D일 dddd A h:mm",
-						l: "YYYY.MM.DD.",
-						ll: "YYYY년 MMMM D일",
-						lll: "YYYY년 MMMM D일 A h:mm",
-						llll: "YYYY년 MMMM D일 dddd A h:mm"
-					},
-					calendar: {
-						sameDay: "오늘 LT",
-						nextDay: "내일 LT",
-						nextWeek: "dddd LT",
-						lastDay: "어제 LT",
-						lastWeek: "지난주 dddd LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s 후",
-						past: "%s 전",
-						s: "몇 초",
-						ss: "%d초",
-						m: "1분",
-						mm: "%d분",
-						h: "한 시간",
-						hh: "%d시간",
-						d: "하루",
-						dd: "%d일",
-						M: "한 달",
-						MM: "%d달",
-						y: "일 년",
-						yy: "%d년"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(일|월|주)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "d":
-							case "D":
-							case "DDD":
-								return e + "일";
-							case "M":
-								return e + "월";
-							case "w":
-							case "W":
-								return e + "주";
-							default:
-								return e
-						}
-					},
-					meridiemParse: /오전|오후/,
-					isPM: function(e) {
-						return "오후" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "오전" : "오후"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ku.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "١",
-						2: "٢",
-						3: "٣",
-						4: "٤",
-						5: "٥",
-						6: "٦",
-						7: "٧",
-						8: "٨",
-						9: "٩",
-						0: "٠"
-					},
-					n = {
-						"١": "1",
-						"٢": "2",
-						"٣": "3",
-						"٤": "4",
-						"٥": "5",
-						"٦": "6",
-						"٧": "7",
-						"٨": "8",
-						"٩": "9",
-						"٠": "0"
-					},
-					a = ["کانونی دووەم", "شوبات", "ئازار", "نیسان", "ئایار", "حوزەیران", "تەمموز", "ئاب", "ئەیلوول", "تشرینی یەكەم", "تشرینی دووەم", "كانونی یەکەم"];
-				e.defineLocale("ku", {
-					months: a,
-					monthsShort: a,
-					weekdays: "یه‌كشه‌ممه‌_دووشه‌ممه‌_سێشه‌ممه‌_چوارشه‌ممه‌_پێنجشه‌ممه‌_هه‌ینی_شه‌ممه‌".split("_"),
-					weekdaysShort: "یه‌كشه‌م_دووشه‌م_سێشه‌م_چوارشه‌م_پێنجشه‌م_هه‌ینی_شه‌ممه‌".split("_"),
-					weekdaysMin: "ی_د_س_چ_پ_ه_ش".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /ئێواره‌|به‌یانی/,
-					isPM: function(e) {
-						return /ئێواره‌/.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "به‌یانی" : "ئێواره‌"
-					},
-					calendar: {
-						sameDay: "[ئه‌مرۆ كاتژمێر] LT",
-						nextDay: "[به‌یانی كاتژمێر] LT",
-						nextWeek: "dddd [كاتژمێر] LT",
-						lastDay: "[دوێنێ كاتژمێر] LT",
-						lastWeek: "dddd [كاتژمێر] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "له‌ %s",
-						past: "%s",
-						s: "چه‌ند چركه‌یه‌ك",
-						ss: "چركه‌ %d",
-						m: "یه‌ك خوله‌ك",
-						mm: "%d خوله‌ك",
-						h: "یه‌ك كاتژمێر",
-						hh: "%d كاتژمێر",
-						d: "یه‌ك ڕۆژ",
-						dd: "%d ڕۆژ",
-						M: "یه‌ك مانگ",
-						MM: "%d مانگ",
-						y: "یه‌ك ساڵ",
-						yy: "%d ساڵ"
-					},
-					preparse: function(e) {
-						return e.replace(/[١٢٣٤٥٦٧٨٩٠]/g, (function(e) {
-							return n[e]
-						})).replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						})).replace(/,/g, "،")
-					},
-					week: {
-						dow: 6,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ky.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					0: "-чү",
-					1: "-чи",
-					2: "-чи",
-					3: "-чү",
-					4: "-чү",
-					5: "-чи",
-					6: "-чы",
-					7: "-чи",
-					8: "-чи",
-					9: "-чу",
-					10: "-чу",
-					20: "-чы",
-					30: "-чу",
-					40: "-чы",
-					50: "-чү",
-					60: "-чы",
-					70: "-чи",
-					80: "-чи",
-					90: "-чу",
-					100: "-чү"
-				};
-				e.defineLocale("ky", {
-					months: "январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь".split("_"),
-					monthsShort: "янв_фев_март_апр_май_июнь_июль_авг_сен_окт_ноя_дек".split("_"),
-					weekdays: "Жекшемби_Дүйшөмбү_Шейшемби_Шаршемби_Бейшемби_Жума_Ишемби".split("_"),
-					weekdaysShort: "Жек_Дүй_Шей_Шар_Бей_Жум_Ише".split("_"),
-					weekdaysMin: "Жк_Дй_Шй_Шр_Бй_Жм_Иш".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Бүгүн саат] LT",
-						nextDay: "[Эртең саат] LT",
-						nextWeek: "dddd [саат] LT",
-						lastDay: "[Кечээ саат] LT",
-						lastWeek: "[Өткөн аптанын] dddd [күнү] [саат] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s ичинде",
-						past: "%s мурун",
-						s: "бирнече секунд",
-						ss: "%d секунд",
-						m: "бир мүнөт",
-						mm: "%d мүнөт",
-						h: "бир саат",
-						hh: "%d саат",
-						d: "бир күн",
-						dd: "%d күн",
-						M: "бир ай",
-						MM: "%d ай",
-						y: "бир жыл",
-						yy: "%d жыл"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(чи|чы|чү|чу)/,
-					ordinal: function(e) {
-						return e + (t[e] || t[e % 10] || t[e >= 100 ? 100 : null])
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/lb.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						m: ["eng Minutt", "enger Minutt"],
-						h: ["eng Stonn", "enger Stonn"],
-						d: ["een Dag", "engem Dag"],
-						M: ["ee Mount", "engem Mount"],
-						y: ["ee Joer", "engem Joer"]
-					};
-					return t ? r[n][0] : r[n][1]
-				}
-
-				function n(e) {
-					if (e = parseInt(e, 10), isNaN(e)) return !1;
-					if (e < 0) return !0;
-					if (e < 10) return 4 <= e && e <= 7;
-					if (e < 100) {
-						var t = e % 10;
-						return n(0 === t ? e / 10 : t)
-					}
-					if (e < 1e4) {
-						for (; e >= 10;) e /= 10;
-						return n(e)
-					}
-					return n(e /= 1e3)
-				}
-				e.defineLocale("lb", {
-					months: "Januar_Februar_Mäerz_Abrëll_Mee_Juni_Juli_August_September_Oktober_November_Dezember".split("_"),
-					monthsShort: "Jan._Febr._Mrz._Abr._Mee_Jun._Jul._Aug._Sept._Okt._Nov._Dez.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "Sonndeg_Méindeg_Dënschdeg_Mëttwoch_Donneschdeg_Freideg_Samschdeg".split("_"),
-					weekdaysShort: "So._Mé._Dë._Më._Do._Fr._Sa.".split("_"),
-					weekdaysMin: "So_Mé_Dë_Më_Do_Fr_Sa".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm [Auer]",
-						LTS: "H:mm:ss [Auer]",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm [Auer]",
-						LLLL: "dddd, D. MMMM YYYY H:mm [Auer]"
-					},
-					calendar: {
-						sameDay: "[Haut um] LT",
-						sameElse: "L",
-						nextDay: "[Muer um] LT",
-						nextWeek: "dddd [um] LT",
-						lastDay: "[Gëschter um] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 2:
-								case 4:
-									return "[Leschten] dddd [um] LT";
-								default:
-									return "[Leschte] dddd [um] LT"
-							}
-						}
-					},
-					relativeTime: {
-						future: function(e) {
-							return n(e.substr(0, e.indexOf(" "))) ? "a " + e : "an " + e
-						},
-						past: function(e) {
-							return n(e.substr(0, e.indexOf(" "))) ? "viru " + e : "virun " + e
-						},
-						s: "e puer Sekonnen",
-						ss: "%d Sekonnen",
-						m: t,
-						mm: "%d Minutten",
-						h: t,
-						hh: "%d Stonnen",
-						d: t,
-						dd: "%d Deeg",
-						M: t,
-						MM: "%d Méint",
-						y: t,
-						yy: "%d Joer"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/lo.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("lo", {
-					months: "ມັງກອນ_ກຸມພາ_ມີນາ_ເມສາ_ພຶດສະພາ_ມິຖຸນາ_ກໍລະກົດ_ສິງຫາ_ກັນຍາ_ຕຸລາ_ພະຈິກ_ທັນວາ".split("_"),
-					monthsShort: "ມັງກອນ_ກຸມພາ_ມີນາ_ເມສາ_ພຶດສະພາ_ມິຖຸນາ_ກໍລະກົດ_ສິງຫາ_ກັນຍາ_ຕຸລາ_ພະຈິກ_ທັນວາ".split("_"),
-					weekdays: "ອາທິດ_ຈັນ_ອັງຄານ_ພຸດ_ພະຫັດ_ສຸກ_ເສົາ".split("_"),
-					weekdaysShort: "ທິດ_ຈັນ_ອັງຄານ_ພຸດ_ພະຫັດ_ສຸກ_ເສົາ".split("_"),
-					weekdaysMin: "ທ_ຈ_ອຄ_ພ_ພຫ_ສກ_ສ".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "ວັນdddd D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /ຕອນເຊົ້າ|ຕອນແລງ/,
-					isPM: function(e) {
-						return "ຕອນແລງ" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "ຕອນເຊົ້າ" : "ຕອນແລງ"
-					},
-					calendar: {
-						sameDay: "[ມື້ນີ້ເວລາ] LT",
-						nextDay: "[ມື້ອື່ນເວລາ] LT",
-						nextWeek: "[ວັນ]dddd[ໜ້າເວລາ] LT",
-						lastDay: "[ມື້ວານນີ້ເວລາ] LT",
-						lastWeek: "[ວັນ]dddd[ແລ້ວນີ້ເວລາ] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "ອີກ %s",
-						past: "%sຜ່ານມາ",
-						s: "ບໍ່ເທົ່າໃດວິນາທີ",
-						ss: "%d ວິນາທີ",
-						m: "1 ນາທີ",
-						mm: "%d ນາທີ",
-						h: "1 ຊົ່ວໂມງ",
-						hh: "%d ຊົ່ວໂມງ",
-						d: "1 ມື້",
-						dd: "%d ມື້",
-						M: "1 ເດືອນ",
-						MM: "%d ເດືອນ",
-						y: "1 ປີ",
-						yy: "%d ປີ"
-					},
-					dayOfMonthOrdinalParse: /(ທີ່)\d{1,2}/,
-					ordinal: function(e) {
-						return "ທີ່" + e
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/lt.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					ss: "sekundė_sekundžių_sekundes",
-					m: "minutė_minutės_minutę",
-					mm: "minutės_minučių_minutes",
-					h: "valanda_valandos_valandą",
-					hh: "valandos_valandų_valandas",
-					d: "diena_dienos_dieną",
-					dd: "dienos_dienų_dienas",
-					M: "mėnuo_mėnesio_mėnesį",
-					MM: "mėnesiai_mėnesių_mėnesius",
-					y: "metai_metų_metus",
-					yy: "metai_metų_metus"
-				};
-
-				function n(e, t, n, a) {
-					return t ? r(n)[0] : a ? r(n)[1] : r(n)[2]
-				}
-
-				function a(e) {
-					return e % 10 == 0 || e > 10 && e < 20
-				}
-
-				function r(e) {
-					return t[e].split("_")
-				}
-
-				function i(e, t, i, s) {
-					var o = e + " ";
-					return 1 === e ? o + n(0, t, i[0], s) : t ? o + (a(e) ? r(i)[1] : r(i)[0]) : s ? o + r(i)[1] : o + (a(e) ? r(i)[1] : r(i)[2])
-				}
-				e.defineLocale("lt", {
-					months: {
-						format: "sausio_vasario_kovo_balandžio_gegužės_birželio_liepos_rugpjūčio_rugsėjo_spalio_lapkričio_gruodžio".split("_"),
-						standalone: "sausis_vasaris_kovas_balandis_gegužė_birželis_liepa_rugpjūtis_rugsėjis_spalis_lapkritis_gruodis".split("_"),
-						isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/
-					},
-					monthsShort: "sau_vas_kov_bal_geg_bir_lie_rgp_rgs_spa_lap_grd".split("_"),
-					weekdays: {
-						format: "sekmadienį_pirmadienį_antradienį_trečiadienį_ketvirtadienį_penktadienį_šeštadienį".split("_"),
-						standalone: "sekmadienis_pirmadienis_antradienis_trečiadienis_ketvirtadienis_penktadienis_šeštadienis".split("_"),
-						isFormat: /dddd HH:mm/
-					},
-					weekdaysShort: "Sek_Pir_Ant_Tre_Ket_Pen_Šeš".split("_"),
-					weekdaysMin: "S_P_A_T_K_Pn_Š".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY-MM-DD",
-						LL: "YYYY [m.] MMMM D [d.]",
-						LLL: "YYYY [m.] MMMM D [d.], HH:mm [val.]",
-						LLLL: "YYYY [m.] MMMM D [d.], dddd, HH:mm [val.]",
-						l: "YYYY-MM-DD",
-						ll: "YYYY [m.] MMMM D [d.]",
-						lll: "YYYY [m.] MMMM D [d.], HH:mm [val.]",
-						llll: "YYYY [m.] MMMM D [d.], ddd, HH:mm [val.]"
-					},
-					calendar: {
-						sameDay: "[Šiandien] LT",
-						nextDay: "[Rytoj] LT",
-						nextWeek: "dddd LT",
-						lastDay: "[Vakar] LT",
-						lastWeek: "[Praėjusį] dddd LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "po %s",
-						past: "prieš %s",
-						s: function(e, t, n, a) {
-							return t ? "kelios sekundės" : a ? "kelių sekundžių" : "kelias sekundes"
-						},
-						ss: i,
-						m: n,
-						mm: i,
-						h: n,
-						hh: i,
-						d: n,
-						dd: i,
-						M: n,
-						MM: i,
-						y: n,
-						yy: i
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-oji/,
-					ordinal: function(e) {
-						return e + "-oji"
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/lv.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					ss: "sekundes_sekundēm_sekunde_sekundes".split("_"),
-					m: "minūtes_minūtēm_minūte_minūtes".split("_"),
-					mm: "minūtes_minūtēm_minūte_minūtes".split("_"),
-					h: "stundas_stundām_stunda_stundas".split("_"),
-					hh: "stundas_stundām_stunda_stundas".split("_"),
-					d: "dienas_dienām_diena_dienas".split("_"),
-					dd: "dienas_dienām_diena_dienas".split("_"),
-					M: "mēneša_mēnešiem_mēnesis_mēneši".split("_"),
-					MM: "mēneša_mēnešiem_mēnesis_mēneši".split("_"),
-					y: "gada_gadiem_gads_gadi".split("_"),
-					yy: "gada_gadiem_gads_gadi".split("_")
-				};
-
-				function n(e, t, n) {
-					return n ? t % 10 == 1 && t % 100 != 11 ? e[2] : e[3] : t % 10 == 1 && t % 100 != 11 ? e[0] : e[1]
-				}
-
-				function a(e, a, r) {
-					return e + " " + n(t[r], e, a)
-				}
-
-				function r(e, a, r) {
-					return n(t[r], e, a)
-				}
-				e.defineLocale("lv", {
-					months: "janvāris_februāris_marts_aprīlis_maijs_jūnijs_jūlijs_augusts_septembris_oktobris_novembris_decembris".split("_"),
-					monthsShort: "jan_feb_mar_apr_mai_jūn_jūl_aug_sep_okt_nov_dec".split("_"),
-					weekdays: "svētdiena_pirmdiena_otrdiena_trešdiena_ceturtdiena_piektdiena_sestdiena".split("_"),
-					weekdaysShort: "Sv_P_O_T_C_Pk_S".split("_"),
-					weekdaysMin: "Sv_P_O_T_C_Pk_S".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY.",
-						LL: "YYYY. [gada] D. MMMM",
-						LLL: "YYYY. [gada] D. MMMM, HH:mm",
-						LLLL: "YYYY. [gada] D. MMMM, dddd, HH:mm"
-					},
-					calendar: {
-						sameDay: "[Šodien pulksten] LT",
-						nextDay: "[Rīt pulksten] LT",
-						nextWeek: "dddd [pulksten] LT",
-						lastDay: "[Vakar pulksten] LT",
-						lastWeek: "[Pagājušā] dddd [pulksten] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "pēc %s",
-						past: "pirms %s",
-						s: function(e, t) {
-							return t ? "dažas sekundes" : "dažām sekundēm"
-						},
-						ss: a,
-						m: r,
-						mm: a,
-						h: r,
-						hh: a,
-						d: r,
-						dd: a,
-						M: r,
-						MM: a,
-						y: r,
-						yy: a
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/me.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					words: {
-						ss: ["sekund", "sekunda", "sekundi"],
-						m: ["jedan minut", "jednog minuta"],
-						mm: ["minut", "minuta", "minuta"],
-						h: ["jedan sat", "jednog sata"],
-						hh: ["sat", "sata", "sati"],
-						dd: ["dan", "dana", "dana"],
-						MM: ["mjesec", "mjeseca", "mjeseci"],
-						yy: ["godina", "godine", "godina"]
-					},
-					correctGrammaticalCase: function(e, t) {
-						return 1 === e ? t[0] : e >= 2 && e <= 4 ? t[1] : t[2]
-					},
-					translate: function(e, n, a) {
-						var r = t.words[a];
-						return 1 === a.length ? n ? r[0] : r[1] : e + " " + t.correctGrammaticalCase(e, r)
-					}
-				};
-				e.defineLocale("me", {
-					months: "januar_februar_mart_april_maj_jun_jul_avgust_septembar_oktobar_novembar_decembar".split("_"),
-					monthsShort: "jan._feb._mar._apr._maj_jun_jul_avg._sep._okt._nov._dec.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota".split("_"),
-					weekdaysShort: "ned._pon._uto._sri._čet._pet._sub.".split("_"),
-					weekdaysMin: "ne_po_ut_sr_če_pe_su".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd, D. MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[danas u] LT",
-						nextDay: "[sjutra u] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[u] [nedjelju] [u] LT";
-								case 3:
-									return "[u] [srijedu] [u] LT";
-								case 6:
-									return "[u] [subotu] [u] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[u] dddd [u] LT"
-							}
-						},
-						lastDay: "[juče u] LT",
-						lastWeek: function() {
-							return ["[prošle] [nedjelje] [u] LT", "[prošlog] [ponedjeljka] [u] LT", "[prošlog] [utorka] [u] LT", "[prošle] [srijede] [u] LT", "[prošlog] [četvrtka] [u] LT", "[prošlog] [petka] [u] LT", "[prošle] [subote] [u] LT"][this.day()]
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "za %s",
-						past: "prije %s",
-						s: "nekoliko sekundi",
-						ss: t.translate,
-						m: t.translate,
-						mm: t.translate,
-						h: t.translate,
-						hh: t.translate,
-						d: "dan",
-						dd: t.translate,
-						M: "mjesec",
-						MM: t.translate,
-						y: "godinu",
-						yy: t.translate
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/mi.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("mi", {
-					months: "Kohi-tāte_Hui-tanguru_Poutū-te-rangi_Paenga-whāwhā_Haratua_Pipiri_Hōngoingoi_Here-turi-kōkā_Mahuru_Whiringa-ā-nuku_Whiringa-ā-rangi_Hakihea".split("_"),
-					monthsShort: "Kohi_Hui_Pou_Pae_Hara_Pipi_Hōngoi_Here_Mahu_Whi-nu_Whi-ra_Haki".split("_"),
-					monthsRegex: /(?:['a-z\u0101\u014D\u016B]+\-?){1,3}/i,
-					monthsStrictRegex: /(?:['a-z\u0101\u014D\u016B]+\-?){1,3}/i,
-					monthsShortRegex: /(?:['a-z\u0101\u014D\u016B]+\-?){1,3}/i,
-					monthsShortStrictRegex: /(?:['a-z\u0101\u014D\u016B]+\-?){1,2}/i,
-					weekdays: "Rātapu_Mane_Tūrei_Wenerei_Tāite_Paraire_Hātarei".split("_"),
-					weekdaysShort: "Ta_Ma_Tū_We_Tāi_Pa_Hā".split("_"),
-					weekdaysMin: "Ta_Ma_Tū_We_Tāi_Pa_Hā".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY [i] HH:mm",
-						LLLL: "dddd, D MMMM YYYY [i] HH:mm"
-					},
-					calendar: {
-						sameDay: "[i teie mahana, i] LT",
-						nextDay: "[apopo i] LT",
-						nextWeek: "dddd [i] LT",
-						lastDay: "[inanahi i] LT",
-						lastWeek: "dddd [whakamutunga i] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "i roto i %s",
-						past: "%s i mua",
-						s: "te hēkona ruarua",
-						ss: "%d hēkona",
-						m: "he meneti",
-						mm: "%d meneti",
-						h: "te haora",
-						hh: "%d haora",
-						d: "he ra",
-						dd: "%d ra",
-						M: "he marama",
-						MM: "%d marama",
-						y: "he tau",
-						yy: "%d tau"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/mk.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("mk", {
-					months: "јануари_февруари_март_април_мај_јуни_јули_август_септември_октомври_ноември_декември".split("_"),
-					monthsShort: "јан_фев_мар_апр_мај_јун_јул_авг_сеп_окт_ное_дек".split("_"),
-					weekdays: "недела_понеделник_вторник_среда_четврток_петок_сабота".split("_"),
-					weekdaysShort: "нед_пон_вто_сре_чет_пет_саб".split("_"),
-					weekdaysMin: "нe_пo_вт_ср_че_пе_сa".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "D.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY H:mm",
-						LLLL: "dddd, D MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[Денес во] LT",
-						nextDay: "[Утре во] LT",
-						nextWeek: "[Во] dddd [во] LT",
-						lastDay: "[Вчера во] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-								case 3:
-								case 6:
-									return "[Изминатата] dddd [во] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[Изминатиот] dddd [во] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "за %s",
-						past: "пред %s",
-						s: "неколку секунди",
-						ss: "%d секунди",
-						m: "една минута",
-						mm: "%d минути",
-						h: "еден час",
-						hh: "%d часа",
-						d: "еден ден",
-						dd: "%d дена",
-						M: "еден месец",
-						MM: "%d месеци",
-						y: "една година",
-						yy: "%d години"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(ев|ен|ти|ви|ри|ми)/,
-					ordinal: function(e) {
-						var t = e % 10,
-							n = e % 100;
-						return 0 === e ? e + "-ев" : 0 === n ? e + "-ен" : n > 10 && n < 20 ? e + "-ти" : 1 === t ? e + "-ви" : 2 === t ? e + "-ри" : 7 === t || 8 === t ? e + "-ми" : e + "-ти"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ml.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ml", {
-					months: "ജനുവരി_ഫെബ്രുവരി_മാർച്ച്_ഏപ്രിൽ_മേയ്_ജൂൺ_ജൂലൈ_ഓഗസ്റ്റ്_സെപ്റ്റംബർ_ഒക്ടോബർ_നവംബർ_ഡിസംബർ".split("_"),
-					monthsShort: "ജനു._ഫെബ്രു._മാർ._ഏപ്രി._മേയ്_ജൂൺ_ജൂലൈ._ഓഗ._സെപ്റ്റ._ഒക്ടോ._നവം._ഡിസം.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "ഞായറാഴ്ച_തിങ്കളാഴ്ച_ചൊവ്വാഴ്ച_ബുധനാഴ്ച_വ്യാഴാഴ്ച_വെള്ളിയാഴ്ച_ശനിയാഴ്ച".split("_"),
-					weekdaysShort: "ഞായർ_തിങ്കൾ_ചൊവ്വ_ബുധൻ_വ്യാഴം_വെള്ളി_ശനി".split("_"),
-					weekdaysMin: "ഞാ_തി_ചൊ_ബു_വ്യാ_വെ_ശ".split("_"),
-					longDateFormat: {
-						LT: "A h:mm -നു",
-						LTS: "A h:mm:ss -നു",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm -നു",
-						LLLL: "dddd, D MMMM YYYY, A h:mm -നു"
-					},
-					calendar: {
-						sameDay: "[ഇന്ന്] LT",
-						nextDay: "[നാളെ] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[ഇന്നലെ] LT",
-						lastWeek: "[കഴിഞ്ഞ] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s കഴിഞ്ഞ്",
-						past: "%s മുൻപ്",
-						s: "അൽപ നിമിഷങ്ങൾ",
-						ss: "%d സെക്കൻഡ്",
-						m: "ഒരു മിനിറ്റ്",
-						mm: "%d മിനിറ്റ്",
-						h: "ഒരു മണിക്കൂർ",
-						hh: "%d മണിക്കൂർ",
-						d: "ഒരു ദിവസം",
-						dd: "%d ദിവസം",
-						M: "ഒരു മാസം",
-						MM: "%d മാസം",
-						y: "ഒരു വർഷം",
-						yy: "%d വർഷം"
-					},
-					meridiemParse: /രാത്രി|രാവിലെ|ഉച്ച കഴിഞ്ഞ്|വൈകുന്നേരം|രാത്രി/i,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "രാത്രി" === t && e >= 4 || "ഉച്ച കഴിഞ്ഞ്" === t || "വൈകുന്നേരം" === t ? e + 12 : e
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "രാത്രി" : e < 12 ? "രാവിലെ" : e < 17 ? "ഉച്ച കഴിഞ്ഞ്" : e < 20 ? "വൈകുന്നേരം" : "രാത്രി"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/mn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					switch (n) {
-						case "s":
-							return t ? "хэдхэн секунд" : "хэдхэн секундын";
-						case "ss":
-							return e + (t ? " секунд" : " секундын");
-						case "m":
-						case "mm":
-							return e + (t ? " минут" : " минутын");
-						case "h":
-						case "hh":
-							return e + (t ? " цаг" : " цагийн");
-						case "d":
-						case "dd":
-							return e + (t ? " өдөр" : " өдрийн");
-						case "M":
-						case "MM":
-							return e + (t ? " сар" : " сарын");
-						case "y":
-						case "yy":
-							return e + (t ? " жил" : " жилийн");
-						default:
-							return e
-					}
-				}
-				e.defineLocale("mn", {
-					months: "Нэгдүгээр сар_Хоёрдугаар сар_Гуравдугаар сар_Дөрөвдүгээр сар_Тавдугаар сар_Зургадугаар сар_Долдугаар сар_Наймдугаар сар_Есдүгээр сар_Аравдугаар сар_Арван нэгдүгээр сар_Арван хоёрдугаар сар".split("_"),
-					monthsShort: "1 сар_2 сар_3 сар_4 сар_5 сар_6 сар_7 сар_8 сар_9 сар_10 сар_11 сар_12 сар".split("_"),
-					monthsParseExact: !0,
-					weekdays: "Ням_Даваа_Мягмар_Лхагва_Пүрэв_Баасан_Бямба".split("_"),
-					weekdaysShort: "Ням_Дав_Мяг_Лха_Пүр_Баа_Бям".split("_"),
-					weekdaysMin: "Ня_Да_Мя_Лх_Пү_Ба_Бя".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY-MM-DD",
-						LL: "YYYY оны MMMMын D",
-						LLL: "YYYY оны MMMMын D HH:mm",
-						LLLL: "dddd, YYYY оны MMMMын D HH:mm"
-					},
-					meridiemParse: /ҮӨ|ҮХ/i,
-					isPM: function(e) {
-						return "ҮХ" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "ҮӨ" : "ҮХ"
-					},
-					calendar: {
-						sameDay: "[Өнөөдөр] LT",
-						nextDay: "[Маргааш] LT",
-						nextWeek: "[Ирэх] dddd LT",
-						lastDay: "[Өчигдөр] LT",
-						lastWeek: "[Өнгөрсөн] dddd LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s дараа",
-						past: "%s өмнө",
-						s: t,
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2} өдөр/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "d":
-							case "D":
-							case "DDD":
-								return e + " өдөр";
-							default:
-								return e
-						}
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/mr.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "१",
-						2: "२",
-						3: "३",
-						4: "४",
-						5: "५",
-						6: "६",
-						7: "७",
-						8: "८",
-						9: "९",
-						0: "०"
-					},
-					n = {
-						"१": "1",
-						"२": "2",
-						"३": "3",
-						"४": "4",
-						"५": "5",
-						"६": "6",
-						"७": "7",
-						"८": "8",
-						"९": "9",
-						"०": "0"
-					};
-
-				function a(e, t, n, a) {
-					var r = "";
-					if (t) switch (n) {
-						case "s":
-							r = "काही सेकंद";
-							break;
-						case "ss":
-							r = "%d सेकंद";
-							break;
-						case "m":
-							r = "एक मिनिट";
-							break;
-						case "mm":
-							r = "%d मिनिटे";
-							break;
-						case "h":
-							r = "एक तास";
-							break;
-						case "hh":
-							r = "%d तास";
-							break;
-						case "d":
-							r = "एक दिवस";
-							break;
-						case "dd":
-							r = "%d दिवस";
-							break;
-						case "M":
-							r = "एक महिना";
-							break;
-						case "MM":
-							r = "%d महिने";
-							break;
-						case "y":
-							r = "एक वर्ष";
-							break;
-						case "yy":
-							r = "%d वर्षे"
-					} else switch (n) {
-						case "s":
-							r = "काही सेकंदां";
-							break;
-						case "ss":
-							r = "%d सेकंदां";
-							break;
-						case "m":
-							r = "एका मिनिटा";
-							break;
-						case "mm":
-							r = "%d मिनिटां";
-							break;
-						case "h":
-							r = "एका तासा";
-							break;
-						case "hh":
-							r = "%d तासां";
-							break;
-						case "d":
-							r = "एका दिवसा";
-							break;
-						case "dd":
-							r = "%d दिवसां";
-							break;
-						case "M":
-							r = "एका महिन्या";
-							break;
-						case "MM":
-							r = "%d महिन्यां";
-							break;
-						case "y":
-							r = "एका वर्षा";
-							break;
-						case "yy":
-							r = "%d वर्षां"
-					}
-					return r.replace(/%d/i, e)
-				}
-				e.defineLocale("mr", {
-					months: "जानेवारी_फेब्रुवारी_मार्च_एप्रिल_मे_जून_जुलै_ऑगस्ट_सप्टेंबर_ऑक्टोबर_नोव्हेंबर_डिसेंबर".split("_"),
-					monthsShort: "जाने._फेब्रु._मार्च._एप्रि._मे._जून._जुलै._ऑग._सप्टें._ऑक्टो._नोव्हें._डिसें.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "रविवार_सोमवार_मंगळवार_बुधवार_गुरूवार_शुक्रवार_शनिवार".split("_"),
-					weekdaysShort: "रवि_सोम_मंगळ_बुध_गुरू_शुक्र_शनि".split("_"),
-					weekdaysMin: "र_सो_मं_बु_गु_शु_श".split("_"),
-					longDateFormat: {
-						LT: "A h:mm वाजता",
-						LTS: "A h:mm:ss वाजता",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm वाजता",
-						LLLL: "dddd, D MMMM YYYY, A h:mm वाजता"
-					},
-					calendar: {
-						sameDay: "[आज] LT",
-						nextDay: "[उद्या] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[काल] LT",
-						lastWeek: "[मागील] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%sमध्ये",
-						past: "%sपूर्वी",
-						s: a,
-						ss: a,
-						m: a,
-						mm: a,
-						h: a,
-						hh: a,
-						d: a,
-						dd: a,
-						M: a,
-						MM: a,
-						y: a,
-						yy: a
-					},
-					preparse: function(e) {
-						return e.replace(/[१२३४५६७८९०]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /पहाटे|सकाळी|दुपारी|सायंकाळी|रात्री/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "पहाटे" === t || "सकाळी" === t ? e : "दुपारी" === t || "सायंकाळी" === t || "रात्री" === t ? e >= 12 ? e : e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e >= 0 && e < 6 ? "पहाटे" : e < 12 ? "सकाळी" : e < 17 ? "दुपारी" : e < 20 ? "सायंकाळी" : "रात्री"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ms-my.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ms-my", {
-					months: "Januari_Februari_Mac_April_Mei_Jun_Julai_Ogos_September_Oktober_November_Disember".split("_"),
-					monthsShort: "Jan_Feb_Mac_Apr_Mei_Jun_Jul_Ogs_Sep_Okt_Nov_Dis".split("_"),
-					weekdays: "Ahad_Isnin_Selasa_Rabu_Khamis_Jumaat_Sabtu".split("_"),
-					weekdaysShort: "Ahd_Isn_Sel_Rab_Kha_Jum_Sab".split("_"),
-					weekdaysMin: "Ah_Is_Sl_Rb_Km_Jm_Sb".split("_"),
-					longDateFormat: {
-						LT: "HH.mm",
-						LTS: "HH.mm.ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY [pukul] HH.mm",
-						LLLL: "dddd, D MMMM YYYY [pukul] HH.mm"
-					},
-					meridiemParse: /pagi|tengahari|petang|malam/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "pagi" === t ? e : "tengahari" === t ? e >= 11 ? e : e + 12 : "petang" === t || "malam" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 11 ? "pagi" : e < 15 ? "tengahari" : e < 19 ? "petang" : "malam"
-					},
-					calendar: {
-						sameDay: "[Hari ini pukul] LT",
-						nextDay: "[Esok pukul] LT",
-						nextWeek: "dddd [pukul] LT",
-						lastDay: "[Kelmarin pukul] LT",
-						lastWeek: "dddd [lepas pukul] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "dalam %s",
-						past: "%s yang lepas",
-						s: "beberapa saat",
-						ss: "%d saat",
-						m: "seminit",
-						mm: "%d minit",
-						h: "sejam",
-						hh: "%d jam",
-						d: "sehari",
-						dd: "%d hari",
-						M: "sebulan",
-						MM: "%d bulan",
-						y: "setahun",
-						yy: "%d tahun"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ms.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ms", {
-					months: "Januari_Februari_Mac_April_Mei_Jun_Julai_Ogos_September_Oktober_November_Disember".split("_"),
-					monthsShort: "Jan_Feb_Mac_Apr_Mei_Jun_Jul_Ogs_Sep_Okt_Nov_Dis".split("_"),
-					weekdays: "Ahad_Isnin_Selasa_Rabu_Khamis_Jumaat_Sabtu".split("_"),
-					weekdaysShort: "Ahd_Isn_Sel_Rab_Kha_Jum_Sab".split("_"),
-					weekdaysMin: "Ah_Is_Sl_Rb_Km_Jm_Sb".split("_"),
-					longDateFormat: {
-						LT: "HH.mm",
-						LTS: "HH.mm.ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY [pukul] HH.mm",
-						LLLL: "dddd, D MMMM YYYY [pukul] HH.mm"
-					},
-					meridiemParse: /pagi|tengahari|petang|malam/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "pagi" === t ? e : "tengahari" === t ? e >= 11 ? e : e + 12 : "petang" === t || "malam" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 11 ? "pagi" : e < 15 ? "tengahari" : e < 19 ? "petang" : "malam"
-					},
-					calendar: {
-						sameDay: "[Hari ini pukul] LT",
-						nextDay: "[Esok pukul] LT",
-						nextWeek: "dddd [pukul] LT",
-						lastDay: "[Kelmarin pukul] LT",
-						lastWeek: "dddd [lepas pukul] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "dalam %s",
-						past: "%s yang lepas",
-						s: "beberapa saat",
-						ss: "%d saat",
-						m: "seminit",
-						mm: "%d minit",
-						h: "sejam",
-						hh: "%d jam",
-						d: "sehari",
-						dd: "%d hari",
-						M: "sebulan",
-						MM: "%d bulan",
-						y: "setahun",
-						yy: "%d tahun"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/mt.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("mt", {
-					months: "Jannar_Frar_Marzu_April_Mejju_Ġunju_Lulju_Awwissu_Settembru_Ottubru_Novembru_Diċembru".split("_"),
-					monthsShort: "Jan_Fra_Mar_Apr_Mej_Ġun_Lul_Aww_Set_Ott_Nov_Diċ".split("_"),
-					weekdays: "Il-Ħadd_It-Tnejn_It-Tlieta_L-Erbgħa_Il-Ħamis_Il-Ġimgħa_Is-Sibt".split("_"),
-					weekdaysShort: "Ħad_Tne_Tli_Erb_Ħam_Ġim_Sib".split("_"),
-					weekdaysMin: "Ħa_Tn_Tl_Er_Ħa_Ġi_Si".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Illum fil-]LT",
-						nextDay: "[Għada fil-]LT",
-						nextWeek: "dddd [fil-]LT",
-						lastDay: "[Il-bieraħ fil-]LT",
-						lastWeek: "dddd [li għadda] [fil-]LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "f’ %s",
-						past: "%s ilu",
-						s: "ftit sekondi",
-						ss: "%d sekondi",
-						m: "minuta",
-						mm: "%d minuti",
-						h: "siegħa",
-						hh: "%d siegħat",
-						d: "ġurnata",
-						dd: "%d ġranet",
-						M: "xahar",
-						MM: "%d xhur",
-						y: "sena",
-						yy: "%d sni"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/my.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "၁",
-						2: "၂",
-						3: "၃",
-						4: "၄",
-						5: "၅",
-						6: "၆",
-						7: "၇",
-						8: "၈",
-						9: "၉",
-						0: "၀"
-					},
-					n = {
-						"၁": "1",
-						"၂": "2",
-						"၃": "3",
-						"၄": "4",
-						"၅": "5",
-						"၆": "6",
-						"၇": "7",
-						"၈": "8",
-						"၉": "9",
-						"၀": "0"
-					};
-				e.defineLocale("my", {
-					months: "ဇန်နဝါရီ_ဖေဖော်ဝါရီ_မတ်_ဧပြီ_မေ_ဇွန်_ဇူလိုင်_သြဂုတ်_စက်တင်ဘာ_အောက်တိုဘာ_နိုဝင်ဘာ_ဒီဇင်ဘာ".split("_"),
-					monthsShort: "ဇန်_ဖေ_မတ်_ပြီ_မေ_ဇွန်_လိုင်_သြ_စက်_အောက်_နို_ဒီ".split("_"),
-					weekdays: "တနင်္ဂနွေ_တနင်္လာ_အင်္ဂါ_ဗုဒ္ဓဟူး_ကြာသပတေး_သောကြာ_စနေ".split("_"),
-					weekdaysShort: "နွေ_လာ_ဂါ_ဟူး_ကြာ_သော_နေ".split("_"),
-					weekdaysMin: "နွေ_လာ_ဂါ_ဟူး_ကြာ_သော_နေ".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[ယနေ.] LT [မှာ]",
-						nextDay: "[မနက်ဖြန်] LT [မှာ]",
-						nextWeek: "dddd LT [မှာ]",
-						lastDay: "[မနေ.က] LT [မှာ]",
-						lastWeek: "[ပြီးခဲ့သော] dddd LT [မှာ]",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "လာမည့် %s မှာ",
-						past: "လွန်ခဲ့သော %s က",
-						s: "စက္ကန်.အနည်းငယ်",
-						ss: "%d စက္ကန့်",
-						m: "တစ်မိနစ်",
-						mm: "%d မိနစ်",
-						h: "တစ်နာရီ",
-						hh: "%d နာရီ",
-						d: "တစ်ရက်",
-						dd: "%d ရက်",
-						M: "တစ်လ",
-						MM: "%d လ",
-						y: "တစ်နှစ်",
-						yy: "%d နှစ်"
-					},
-					preparse: function(e) {
-						return e.replace(/[၁၂၃၄၅၆၇၈၉၀]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/nb.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("nb", {
-					months: "januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember".split("_"),
-					monthsShort: "jan._feb._mars_apr._mai_juni_juli_aug._sep._okt._nov._des.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "søndag_mandag_tirsdag_onsdag_torsdag_fredag_lørdag".split("_"),
-					weekdaysShort: "sø._ma._ti._on._to._fr._lø.".split("_"),
-					weekdaysMin: "sø_ma_ti_on_to_fr_lø".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY [kl.] HH:mm",
-						LLLL: "dddd D. MMMM YYYY [kl.] HH:mm"
-					},
-					calendar: {
-						sameDay: "[i dag kl.] LT",
-						nextDay: "[i morgen kl.] LT",
-						nextWeek: "dddd [kl.] LT",
-						lastDay: "[i går kl.] LT",
-						lastWeek: "[forrige] dddd [kl.] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "om %s",
-						past: "%s siden",
-						s: "noen sekunder",
-						ss: "%d sekunder",
-						m: "ett minutt",
-						mm: "%d minutter",
-						h: "en time",
-						hh: "%d timer",
-						d: "en dag",
-						dd: "%d dager",
-						M: "en måned",
-						MM: "%d måneder",
-						y: "ett år",
-						yy: "%d år"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ne.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "१",
-						2: "२",
-						3: "३",
-						4: "४",
-						5: "५",
-						6: "६",
-						7: "७",
-						8: "८",
-						9: "९",
-						0: "०"
-					},
-					n = {
-						"१": "1",
-						"२": "2",
-						"३": "3",
-						"४": "4",
-						"५": "5",
-						"६": "6",
-						"७": "7",
-						"८": "8",
-						"९": "9",
-						"०": "0"
-					};
-				e.defineLocale("ne", {
-					months: "जनवरी_फेब्रुवरी_मार्च_अप्रिल_मई_जुन_जुलाई_अगष्ट_सेप्टेम्बर_अक्टोबर_नोभेम्बर_डिसेम्बर".split("_"),
-					monthsShort: "जन._फेब्रु._मार्च_अप्रि._मई_जुन_जुलाई._अग._सेप्ट._अक्टो._नोभे._डिसे.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "आइतबार_सोमबार_मङ्गलबार_बुधबार_बिहिबार_शुक्रबार_शनिबार".split("_"),
-					weekdaysShort: "आइत._सोम._मङ्गल._बुध._बिहि._शुक्र._शनि.".split("_"),
-					weekdaysMin: "आ._सो._मं._बु._बि._शु._श.".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "Aको h:mm बजे",
-						LTS: "Aको h:mm:ss बजे",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, Aको h:mm बजे",
-						LLLL: "dddd, D MMMM YYYY, Aको h:mm बजे"
-					},
-					preparse: function(e) {
-						return e.replace(/[१२३४५६७८९०]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /राति|बिहान|दिउँसो|साँझ/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "राति" === t ? e < 4 ? e : e + 12 : "बिहान" === t ? e : "दिउँसो" === t ? e >= 10 ? e : e + 12 : "साँझ" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 3 ? "राति" : e < 12 ? "बिहान" : e < 16 ? "दिउँसो" : e < 20 ? "साँझ" : "राति"
-					},
-					calendar: {
-						sameDay: "[आज] LT",
-						nextDay: "[भोलि] LT",
-						nextWeek: "[आउँदो] dddd[,] LT",
-						lastDay: "[हिजो] LT",
-						lastWeek: "[गएको] dddd[,] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%sमा",
-						past: "%s अगाडि",
-						s: "केही क्षण",
-						ss: "%d सेकेण्ड",
-						m: "एक मिनेट",
-						mm: "%d मिनेट",
-						h: "एक घण्टा",
-						hh: "%d घण्टा",
-						d: "एक दिन",
-						dd: "%d दिन",
-						M: "एक महिना",
-						MM: "%d महिना",
-						y: "एक बर्ष",
-						yy: "%d बर्ष"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/nl-be.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.".split("_"),
-					n = "jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec".split("_"),
-					a = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i],
-					r = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
-				e.defineLocale("nl-be", {
-					months: "januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december".split("_"),
-					monthsShort: function(e, a) {
-						return e ? /-MMM-/.test(a) ? n[e.month()] : t[e.month()] : t
-					},
-					monthsRegex: r,
-					monthsShortRegex: r,
-					monthsStrictRegex: /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december)/i,
-					monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
-					monthsParse: a,
-					longMonthsParse: a,
-					shortMonthsParse: a,
-					weekdays: "zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag".split("_"),
-					weekdaysShort: "zo._ma._di._wo._do._vr._za.".split("_"),
-					weekdaysMin: "zo_ma_di_wo_do_vr_za".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[vandaag om] LT",
-						nextDay: "[morgen om] LT",
-						nextWeek: "dddd [om] LT",
-						lastDay: "[gisteren om] LT",
-						lastWeek: "[afgelopen] dddd [om] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "over %s",
-						past: "%s geleden",
-						s: "een paar seconden",
-						ss: "%d seconden",
-						m: "één minuut",
-						mm: "%d minuten",
-						h: "één uur",
-						hh: "%d uur",
-						d: "één dag",
-						dd: "%d dagen",
-						M: "één maand",
-						MM: "%d maanden",
-						y: "één jaar",
-						yy: "%d jaar"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
-					ordinal: function(e) {
-						return e + (1 === e || 8 === e || e >= 20 ? "ste" : "de")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/nl.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "jan._feb._mrt._apr._mei_jun._jul._aug._sep._okt._nov._dec.".split("_"),
-					n = "jan_feb_mrt_apr_mei_jun_jul_aug_sep_okt_nov_dec".split("_"),
-					a = [/^jan/i, /^feb/i, /^maart|mrt.?$/i, /^apr/i, /^mei$/i, /^jun[i.]?$/i, /^jul[i.]?$/i, /^aug/i, /^sep/i, /^okt/i, /^nov/i, /^dec/i],
-					r = /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december|jan\.?|feb\.?|mrt\.?|apr\.?|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i;
-				e.defineLocale("nl", {
-					months: "januari_februari_maart_april_mei_juni_juli_augustus_september_oktober_november_december".split("_"),
-					monthsShort: function(e, a) {
-						return e ? /-MMM-/.test(a) ? n[e.month()] : t[e.month()] : t
-					},
-					monthsRegex: r,
-					monthsShortRegex: r,
-					monthsStrictRegex: /^(januari|februari|maart|april|mei|ju[nl]i|augustus|september|oktober|november|december)/i,
-					monthsShortStrictRegex: /^(jan\.?|feb\.?|mrt\.?|apr\.?|mei|ju[nl]\.?|aug\.?|sep\.?|okt\.?|nov\.?|dec\.?)/i,
-					monthsParse: a,
-					longMonthsParse: a,
-					shortMonthsParse: a,
-					weekdays: "zondag_maandag_dinsdag_woensdag_donderdag_vrijdag_zaterdag".split("_"),
-					weekdaysShort: "zo._ma._di._wo._do._vr._za.".split("_"),
-					weekdaysMin: "zo_ma_di_wo_do_vr_za".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD-MM-YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[vandaag om] LT",
-						nextDay: "[morgen om] LT",
-						nextWeek: "dddd [om] LT",
-						lastDay: "[gisteren om] LT",
-						lastWeek: "[afgelopen] dddd [om] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "over %s",
-						past: "%s geleden",
-						s: "een paar seconden",
-						ss: "%d seconden",
-						m: "één minuut",
-						mm: "%d minuten",
-						h: "één uur",
-						hh: "%d uur",
-						d: "één dag",
-						dd: "%d dagen",
-						M: "één maand",
-						MM: "%d maanden",
-						y: "één jaar",
-						yy: "%d jaar"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(ste|de)/,
-					ordinal: function(e) {
-						return e + (1 === e || 8 === e || e >= 20 ? "ste" : "de")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/nn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("nn", {
-					months: "januar_februar_mars_april_mai_juni_juli_august_september_oktober_november_desember".split("_"),
-					monthsShort: "jan._feb._mars_apr._mai_juni_juli_aug._sep._okt._nov._des.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "sundag_måndag_tysdag_onsdag_torsdag_fredag_laurdag".split("_"),
-					weekdaysShort: "su._må._ty._on._to._fr._lau.".split("_"),
-					weekdaysMin: "su_må_ty_on_to_fr_la".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY [kl.] H:mm",
-						LLLL: "dddd D. MMMM YYYY [kl.] HH:mm"
-					},
-					calendar: {
-						sameDay: "[I dag klokka] LT",
-						nextDay: "[I morgon klokka] LT",
-						nextWeek: "dddd [klokka] LT",
-						lastDay: "[I går klokka] LT",
-						lastWeek: "[Føregåande] dddd [klokka] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "om %s",
-						past: "%s sidan",
-						s: "nokre sekund",
-						ss: "%d sekund",
-						m: "eit minutt",
-						mm: "%d minutt",
-						h: "ein time",
-						hh: "%d timar",
-						d: "ein dag",
-						dd: "%d dagar",
-						M: "ein månad",
-						MM: "%d månader",
-						y: "eit år",
-						yy: "%d år"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/oc-lnc.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("oc-lnc", {
-					months: {
-						standalone: "genièr_febrièr_març_abril_mai_junh_julhet_agost_setembre_octòbre_novembre_decembre".split("_"),
-						format: "de genièr_de febrièr_de març_d'abril_de mai_de junh_de julhet_d'agost_de setembre_d'octòbre_de novembre_de decembre".split("_"),
-						isFormat: /D[oD]?(\s)+MMMM/
-					},
-					monthsShort: "gen._febr._març_abr._mai_junh_julh._ago._set._oct._nov._dec.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "dimenge_diluns_dimars_dimècres_dijòus_divendres_dissabte".split("_"),
-					weekdaysShort: "dg._dl._dm._dc._dj._dv._ds.".split("_"),
-					weekdaysMin: "dg_dl_dm_dc_dj_dv_ds".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM [de] YYYY",
-						ll: "D MMM YYYY",
-						LLL: "D MMMM [de] YYYY [a] H:mm",
-						lll: "D MMM YYYY, H:mm",
-						LLLL: "dddd D MMMM [de] YYYY [a] H:mm",
-						llll: "ddd D MMM YYYY, H:mm"
-					},
-					calendar: {
-						sameDay: "[uèi a] LT",
-						nextDay: "[deman a] LT",
-						nextWeek: "dddd [a] LT",
-						lastDay: "[ièr a] LT",
-						lastWeek: "dddd [passat a] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "d'aquí %s",
-						past: "fa %s",
-						s: "unas segondas",
-						ss: "%d segondas",
-						m: "una minuta",
-						mm: "%d minutas",
-						h: "una ora",
-						hh: "%d oras",
-						d: "un jorn",
-						dd: "%d jorns",
-						M: "un mes",
-						MM: "%d meses",
-						y: "un an",
-						yy: "%d ans"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(r|n|t|è|a)/,
-					ordinal: function(e, t) {
-						var n = 1 === e ? "r" : 2 === e ? "n" : 3 === e ? "r" : 4 === e ? "t" : "è";
-						return "w" !== t && "W" !== t || (n = "a"), e + n
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/pa-in.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "੧",
-						2: "੨",
-						3: "੩",
-						4: "੪",
-						5: "੫",
-						6: "੬",
-						7: "੭",
-						8: "੮",
-						9: "੯",
-						0: "੦"
-					},
-					n = {
-						"੧": "1",
-						"੨": "2",
-						"੩": "3",
-						"੪": "4",
-						"੫": "5",
-						"੬": "6",
-						"੭": "7",
-						"੮": "8",
-						"੯": "9",
-						"੦": "0"
-					};
-				e.defineLocale("pa-in", {
-					months: "ਜਨਵਰੀ_ਫ਼ਰਵਰੀ_ਮਾਰਚ_ਅਪ੍ਰੈਲ_ਮਈ_ਜੂਨ_ਜੁਲਾਈ_ਅਗਸਤ_ਸਤੰਬਰ_ਅਕਤੂਬਰ_ਨਵੰਬਰ_ਦਸੰਬਰ".split("_"),
-					monthsShort: "ਜਨਵਰੀ_ਫ਼ਰਵਰੀ_ਮਾਰਚ_ਅਪ੍ਰੈਲ_ਮਈ_ਜੂਨ_ਜੁਲਾਈ_ਅਗਸਤ_ਸਤੰਬਰ_ਅਕਤੂਬਰ_ਨਵੰਬਰ_ਦਸੰਬਰ".split("_"),
-					weekdays: "ਐਤਵਾਰ_ਸੋਮਵਾਰ_ਮੰਗਲਵਾਰ_ਬੁਧਵਾਰ_ਵੀਰਵਾਰ_ਸ਼ੁੱਕਰਵਾਰ_ਸ਼ਨੀਚਰਵਾਰ".split("_"),
-					weekdaysShort: "ਐਤ_ਸੋਮ_ਮੰਗਲ_ਬੁਧ_ਵੀਰ_ਸ਼ੁਕਰ_ਸ਼ਨੀ".split("_"),
-					weekdaysMin: "ਐਤ_ਸੋਮ_ਮੰਗਲ_ਬੁਧ_ਵੀਰ_ਸ਼ੁਕਰ_ਸ਼ਨੀ".split("_"),
-					longDateFormat: {
-						LT: "A h:mm ਵਜੇ",
-						LTS: "A h:mm:ss ਵਜੇ",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm ਵਜੇ",
-						LLLL: "dddd, D MMMM YYYY, A h:mm ਵਜੇ"
-					},
-					calendar: {
-						sameDay: "[ਅਜ] LT",
-						nextDay: "[ਕਲ] LT",
-						nextWeek: "[ਅਗਲਾ] dddd, LT",
-						lastDay: "[ਕਲ] LT",
-						lastWeek: "[ਪਿਛਲੇ] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s ਵਿੱਚ",
-						past: "%s ਪਿਛਲੇ",
-						s: "ਕੁਝ ਸਕਿੰਟ",
-						ss: "%d ਸਕਿੰਟ",
-						m: "ਇਕ ਮਿੰਟ",
-						mm: "%d ਮਿੰਟ",
-						h: "ਇੱਕ ਘੰਟਾ",
-						hh: "%d ਘੰਟੇ",
-						d: "ਇੱਕ ਦਿਨ",
-						dd: "%d ਦਿਨ",
-						M: "ਇੱਕ ਮਹੀਨਾ",
-						MM: "%d ਮਹੀਨੇ",
-						y: "ਇੱਕ ਸਾਲ",
-						yy: "%d ਸਾਲ"
-					},
-					preparse: function(e) {
-						return e.replace(/[੧੨੩੪੫੬੭੮੯੦]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /ਰਾਤ|ਸਵੇਰ|ਦੁਪਹਿਰ|ਸ਼ਾਮ/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "ਰਾਤ" === t ? e < 4 ? e : e + 12 : "ਸਵੇਰ" === t ? e : "ਦੁਪਹਿਰ" === t ? e >= 10 ? e : e + 12 : "ਸ਼ਾਮ" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "ਰਾਤ" : e < 10 ? "ਸਵੇਰ" : e < 17 ? "ਦੁਪਹਿਰ" : e < 20 ? "ਸ਼ਾਮ" : "ਰਾਤ"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/pl.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "styczeń_luty_marzec_kwiecień_maj_czerwiec_lipiec_sierpień_wrzesień_październik_listopad_grudzień".split("_"),
-					n = "stycznia_lutego_marca_kwietnia_maja_czerwca_lipca_sierpnia_września_października_listopada_grudnia".split("_");
-
-				function a(e) {
-					return e % 10 < 5 && e % 10 > 1 && ~~(e / 10) % 10 != 1
-				}
-
-				function r(e, t, n) {
-					var r = e + " ";
-					switch (n) {
-						case "ss":
-							return r + (a(e) ? "sekundy" : "sekund");
-						case "m":
-							return t ? "minuta" : "minutę";
-						case "mm":
-							return r + (a(e) ? "minuty" : "minut");
-						case "h":
-							return t ? "godzina" : "godzinę";
-						case "hh":
-							return r + (a(e) ? "godziny" : "godzin");
-						case "MM":
-							return r + (a(e) ? "miesiące" : "miesięcy");
-						case "yy":
-							return r + (a(e) ? "lata" : "lat")
-					}
-				}
-				e.defineLocale("pl", {
-					months: function(e, a) {
-						return e ? "" === a ? "(" + n[e.month()] + "|" + t[e.month()] + ")" : /D MMMM/.test(a) ? n[e.month()] : t[e.month()] : t
-					},
-					monthsShort: "sty_lut_mar_kwi_maj_cze_lip_sie_wrz_paź_lis_gru".split("_"),
-					weekdays: "niedziela_poniedziałek_wtorek_środa_czwartek_piątek_sobota".split("_"),
-					weekdaysShort: "ndz_pon_wt_śr_czw_pt_sob".split("_"),
-					weekdaysMin: "Nd_Pn_Wt_Śr_Cz_Pt_So".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Dziś o] LT",
-						nextDay: "[Jutro o] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[W niedzielę o] LT";
-								case 2:
-									return "[We wtorek o] LT";
-								case 3:
-									return "[W środę o] LT";
-								case 6:
-									return "[W sobotę o] LT";
-								default:
-									return "[W] dddd [o] LT"
-							}
-						},
-						lastDay: "[Wczoraj o] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[W zeszłą niedzielę o] LT";
-								case 3:
-									return "[W zeszłą środę o] LT";
-								case 6:
-									return "[W zeszłą sobotę o] LT";
-								default:
-									return "[W zeszły] dddd [o] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "za %s",
-						past: "%s temu",
-						s: "kilka sekund",
-						ss: r,
-						m: r,
-						mm: r,
-						h: r,
-						hh: r,
-						d: "1 dzień",
-						dd: "%d dni",
-						M: "miesiąc",
-						MM: r,
-						y: "rok",
-						yy: r
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/pt-br.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("pt-br", {
-					months: "janeiro_fevereiro_março_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro".split("_"),
-					monthsShort: "jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez".split("_"),
-					weekdays: "domingo_segunda-feira_terça-feira_quarta-feira_quinta-feira_sexta-feira_sábado".split("_"),
-					weekdaysShort: "dom_seg_ter_qua_qui_sex_sáb".split("_"),
-					weekdaysMin: "do_2ª_3ª_4ª_5ª_6ª_sá".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D [de] MMMM [de] YYYY",
-						LLL: "D [de] MMMM [de] YYYY [às] HH:mm",
-						LLLL: "dddd, D [de] MMMM [de] YYYY [às] HH:mm"
-					},
-					calendar: {
-						sameDay: "[Hoje às] LT",
-						nextDay: "[Amanhã às] LT",
-						nextWeek: "dddd [às] LT",
-						lastDay: "[Ontem às] LT",
-						lastWeek: function() {
-							return 0 === this.day() || 6 === this.day() ? "[Último] dddd [às] LT" : "[Última] dddd [às] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "em %s",
-						past: "há %s",
-						s: "poucos segundos",
-						ss: "%d segundos",
-						m: "um minuto",
-						mm: "%d minutos",
-						h: "uma hora",
-						hh: "%d horas",
-						d: "um dia",
-						dd: "%d dias",
-						M: "um mês",
-						MM: "%d meses",
-						y: "um ano",
-						yy: "%d anos"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº"
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/pt.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("pt", {
-					months: "janeiro_fevereiro_março_abril_maio_junho_julho_agosto_setembro_outubro_novembro_dezembro".split("_"),
-					monthsShort: "jan_fev_mar_abr_mai_jun_jul_ago_set_out_nov_dez".split("_"),
-					weekdays: "Domingo_Segunda-feira_Terça-feira_Quarta-feira_Quinta-feira_Sexta-feira_Sábado".split("_"),
-					weekdaysShort: "Dom_Seg_Ter_Qua_Qui_Sex_Sáb".split("_"),
-					weekdaysMin: "Do_2ª_3ª_4ª_5ª_6ª_Sá".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D [de] MMMM [de] YYYY",
-						LLL: "D [de] MMMM [de] YYYY HH:mm",
-						LLLL: "dddd, D [de] MMMM [de] YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Hoje às] LT",
-						nextDay: "[Amanhã às] LT",
-						nextWeek: "dddd [às] LT",
-						lastDay: "[Ontem às] LT",
-						lastWeek: function() {
-							return 0 === this.day() || 6 === this.day() ? "[Último] dddd [às] LT" : "[Última] dddd [às] LT"
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "em %s",
-						past: "há %s",
-						s: "segundos",
-						ss: "%d segundos",
-						m: "um minuto",
-						mm: "%d minutos",
-						h: "uma hora",
-						hh: "%d horas",
-						d: "um dia",
-						dd: "%d dias",
-						M: "um mês",
-						MM: "%d meses",
-						y: "um ano",
-						yy: "%d anos"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}º/,
-					ordinal: "%dº",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ro.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n) {
-					var a = " ";
-					return (e % 100 >= 20 || e >= 100 && e % 100 == 0) && (a = " de "), e + a + {
-						ss: "secunde",
-						mm: "minute",
-						hh: "ore",
-						dd: "zile",
-						MM: "luni",
-						yy: "ani"
-					} [n]
-				}
-				e.defineLocale("ro", {
-					months: "ianuarie_februarie_martie_aprilie_mai_iunie_iulie_august_septembrie_octombrie_noiembrie_decembrie".split("_"),
-					monthsShort: "ian._feb._mart._apr._mai_iun._iul._aug._sept._oct._nov._dec.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "duminică_luni_marți_miercuri_joi_vineri_sâmbătă".split("_"),
-					weekdaysShort: "Dum_Lun_Mar_Mie_Joi_Vin_Sâm".split("_"),
-					weekdaysMin: "Du_Lu_Ma_Mi_Jo_Vi_Sâ".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY H:mm",
-						LLLL: "dddd, D MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[azi la] LT",
-						nextDay: "[mâine la] LT",
-						nextWeek: "dddd [la] LT",
-						lastDay: "[ieri la] LT",
-						lastWeek: "[fosta] dddd [la] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "peste %s",
-						past: "%s în urmă",
-						s: "câteva secunde",
-						ss: t,
-						m: "un minut",
-						mm: t,
-						h: "o oră",
-						hh: t,
-						d: "o zi",
-						dd: t,
-						M: "o lună",
-						MM: t,
-						y: "un an",
-						yy: t
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ru.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n) {
-					var a, r;
-					return "m" === n ? t ? "минута" : "минуту" : e + " " + (a = +e, r = {
-						ss: t ? "секунда_секунды_секунд" : "секунду_секунды_секунд",
-						mm: t ? "минута_минуты_минут" : "минуту_минуты_минут",
-						hh: "час_часа_часов",
-						dd: "день_дня_дней",
-						MM: "месяц_месяца_месяцев",
-						yy: "год_года_лет"
-					} [n].split("_"), a % 10 == 1 && a % 100 != 11 ? r[0] : a % 10 >= 2 && a % 10 <= 4 && (a % 100 < 10 || a % 100 >= 20) ? r[1] : r[2])
-				}
-				var n = [/^янв/i, /^фев/i, /^мар/i, /^апр/i, /^ма[йя]/i, /^июн/i, /^июл/i, /^авг/i, /^сен/i, /^окт/i, /^ноя/i, /^дек/i];
-				e.defineLocale("ru", {
-					months: {
-						format: "января_февраля_марта_апреля_мая_июня_июля_августа_сентября_октября_ноября_декабря".split("_"),
-						standalone: "январь_февраль_март_апрель_май_июнь_июль_август_сентябрь_октябрь_ноябрь_декабрь".split("_")
-					},
-					monthsShort: {
-						format: "янв._февр._мар._апр._мая_июня_июля_авг._сент._окт._нояб._дек.".split("_"),
-						standalone: "янв._февр._март_апр._май_июнь_июль_авг._сент._окт._нояб._дек.".split("_")
-					},
-					weekdays: {
-						standalone: "воскресенье_понедельник_вторник_среда_четверг_пятница_суббота".split("_"),
-						format: "воскресенье_понедельник_вторник_среду_четверг_пятницу_субботу".split("_"),
-						isFormat: /\[ ?[Вв] ?(?:прошлую|следующую|эту)? ?\] ?dddd/
-					},
-					weekdaysShort: "вс_пн_вт_ср_чт_пт_сб".split("_"),
-					weekdaysMin: "вс_пн_вт_ср_чт_пт_сб".split("_"),
-					monthsParse: n,
-					longMonthsParse: n,
-					shortMonthsParse: n,
-					monthsRegex: /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i,
-					monthsShortRegex: /^(январ[ья]|янв\.?|феврал[ья]|февр?\.?|марта?|мар\.?|апрел[ья]|апр\.?|ма[йя]|июн[ья]|июн\.?|июл[ья]|июл\.?|августа?|авг\.?|сентябр[ья]|сент?\.?|октябр[ья]|окт\.?|ноябр[ья]|нояб?\.?|декабр[ья]|дек\.?)/i,
-					monthsStrictRegex: /^(январ[яь]|феврал[яь]|марта?|апрел[яь]|ма[яй]|июн[яь]|июл[яь]|августа?|сентябр[яь]|октябр[яь]|ноябр[яь]|декабр[яь])/i,
-					monthsShortStrictRegex: /^(янв\.|февр?\.|мар[т.]|апр\.|ма[яй]|июн[ья.]|июл[ья.]|авг\.|сент?\.|окт\.|нояб?\.|дек\.)/i,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY г.",
-						LLL: "D MMMM YYYY г., H:mm",
-						LLLL: "dddd, D MMMM YYYY г., H:mm"
-					},
-					calendar: {
-						sameDay: "[Сегодня, в] LT",
-						nextDay: "[Завтра, в] LT",
-						lastDay: "[Вчера, в] LT",
-						nextWeek: function(e) {
-							if (e.week() === this.week()) return 2 === this.day() ? "[Во] dddd, [в] LT" : "[В] dddd, [в] LT";
-							switch (this.day()) {
-								case 0:
-									return "[В следующее] dddd, [в] LT";
-								case 1:
-								case 2:
-								case 4:
-									return "[В следующий] dddd, [в] LT";
-								case 3:
-								case 5:
-								case 6:
-									return "[В следующую] dddd, [в] LT"
-							}
-						},
-						lastWeek: function(e) {
-							if (e.week() === this.week()) return 2 === this.day() ? "[Во] dddd, [в] LT" : "[В] dddd, [в] LT";
-							switch (this.day()) {
-								case 0:
-									return "[В прошлое] dddd, [в] LT";
-								case 1:
-								case 2:
-								case 4:
-									return "[В прошлый] dddd, [в] LT";
-								case 3:
-								case 5:
-								case 6:
-									return "[В прошлую] dddd, [в] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "через %s",
-						past: "%s назад",
-						s: "несколько секунд",
-						ss: t,
-						m: t,
-						mm: t,
-						h: "час",
-						hh: t,
-						d: "день",
-						dd: t,
-						M: "месяц",
-						MM: t,
-						y: "год",
-						yy: t
-					},
-					meridiemParse: /ночи|утра|дня|вечера/i,
-					isPM: function(e) {
-						return /^(дня|вечера)$/.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "ночи" : e < 12 ? "утра" : e < 17 ? "дня" : "вечера"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(й|го|я)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "M":
-							case "d":
-							case "DDD":
-								return e + "-й";
-							case "D":
-								return e + "-го";
-							case "w":
-							case "W":
-								return e + "-я";
-							default:
-								return e
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sd.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = ["جنوري", "فيبروري", "مارچ", "اپريل", "مئي", "جون", "جولاءِ", "آگسٽ", "سيپٽمبر", "آڪٽوبر", "نومبر", "ڊسمبر"],
-					n = ["آچر", "سومر", "اڱارو", "اربع", "خميس", "جمع", "ڇنڇر"];
-				e.defineLocale("sd", {
-					months: t,
-					monthsShort: t,
-					weekdays: n,
-					weekdaysShort: n,
-					weekdaysMin: n,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd، D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /صبح|شام/,
-					isPM: function(e) {
-						return "شام" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "صبح" : "شام"
-					},
-					calendar: {
-						sameDay: "[اڄ] LT",
-						nextDay: "[سڀاڻي] LT",
-						nextWeek: "dddd [اڳين هفتي تي] LT",
-						lastDay: "[ڪالهه] LT",
-						lastWeek: "[گزريل هفتي] dddd [تي] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s پوء",
-						past: "%s اڳ",
-						s: "چند سيڪنڊ",
-						ss: "%d سيڪنڊ",
-						m: "هڪ منٽ",
-						mm: "%d منٽ",
-						h: "هڪ ڪلاڪ",
-						hh: "%d ڪلاڪ",
-						d: "هڪ ڏينهن",
-						dd: "%d ڏينهن",
-						M: "هڪ مهينو",
-						MM: "%d مهينا",
-						y: "هڪ سال",
-						yy: "%d سال"
-					},
-					preparse: function(e) {
-						return e.replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/,/g, "،")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/se.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("se", {
-					months: "ođđajagemánnu_guovvamánnu_njukčamánnu_cuoŋománnu_miessemánnu_geassemánnu_suoidnemánnu_borgemánnu_čakčamánnu_golggotmánnu_skábmamánnu_juovlamánnu".split("_"),
-					monthsShort: "ođđj_guov_njuk_cuo_mies_geas_suoi_borg_čakč_golg_skáb_juov".split("_"),
-					weekdays: "sotnabeaivi_vuossárga_maŋŋebárga_gaskavahkku_duorastat_bearjadat_lávvardat".split("_"),
-					weekdaysShort: "sotn_vuos_maŋ_gask_duor_bear_láv".split("_"),
-					weekdaysMin: "s_v_m_g_d_b_L".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "MMMM D. [b.] YYYY",
-						LLL: "MMMM D. [b.] YYYY [ti.] HH:mm",
-						LLLL: "dddd, MMMM D. [b.] YYYY [ti.] HH:mm"
-					},
-					calendar: {
-						sameDay: "[otne ti] LT",
-						nextDay: "[ihttin ti] LT",
-						nextWeek: "dddd [ti] LT",
-						lastDay: "[ikte ti] LT",
-						lastWeek: "[ovddit] dddd [ti] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s geažes",
-						past: "maŋit %s",
-						s: "moadde sekunddat",
-						ss: "%d sekunddat",
-						m: "okta minuhta",
-						mm: "%d minuhtat",
-						h: "okta diimmu",
-						hh: "%d diimmut",
-						d: "okta beaivi",
-						dd: "%d beaivvit",
-						M: "okta mánnu",
-						MM: "%d mánut",
-						y: "okta jahki",
-						yy: "%d jagit"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/si.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("si", {
-					months: "ජනවාරි_පෙබරවාරි_මාර්තු_අප්‍රේල්_මැයි_ජූනි_ජූලි_අගෝස්තු_සැප්තැම්බර්_ඔක්තෝබර්_නොවැම්බර්_දෙසැම්බර්".split("_"),
-					monthsShort: "ජන_පෙබ_මාර්_අප්_මැයි_ජූනි_ජූලි_අගෝ_සැප්_ඔක්_නොවැ_දෙසැ".split("_"),
-					weekdays: "ඉරිදා_සඳුදා_අඟහරුවාදා_බදාදා_බ්‍රහස්පතින්දා_සිකුරාදා_සෙනසුරාදා".split("_"),
-					weekdaysShort: "ඉරි_සඳු_අඟ_බදා_බ්‍රහ_සිකු_සෙන".split("_"),
-					weekdaysMin: "ඉ_ස_අ_බ_බ්‍ර_සි_සෙ".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "a h:mm",
-						LTS: "a h:mm:ss",
-						L: "YYYY/MM/DD",
-						LL: "YYYY MMMM D",
-						LLL: "YYYY MMMM D, a h:mm",
-						LLLL: "YYYY MMMM D [වැනි] dddd, a h:mm:ss"
-					},
-					calendar: {
-						sameDay: "[අද] LT[ට]",
-						nextDay: "[හෙට] LT[ට]",
-						nextWeek: "dddd LT[ට]",
-						lastDay: "[ඊයේ] LT[ට]",
-						lastWeek: "[පසුගිය] dddd LT[ට]",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%sකින්",
-						past: "%sකට පෙර",
-						s: "තත්පර කිහිපය",
-						ss: "තත්පර %d",
-						m: "මිනිත්තුව",
-						mm: "මිනිත්තු %d",
-						h: "පැය",
-						hh: "පැය %d",
-						d: "දිනය",
-						dd: "දින %d",
-						M: "මාසය",
-						MM: "මාස %d",
-						y: "වසර",
-						yy: "වසර %d"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2} වැනි/,
-					ordinal: function(e) {
-						return e + " වැනි"
-					},
-					meridiemParse: /පෙර වරු|පස් වරු|පෙ.ව|ප.ව./,
-					isPM: function(e) {
-						return "ප.ව." === e || "පස් වරු" === e
-					},
-					meridiem: function(e, t, n) {
-						return e > 11 ? n ? "ප.ව." : "පස් වරු" : n ? "පෙ.ව." : "පෙර වරු"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sk.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "január_február_marec_apríl_máj_jún_júl_august_september_október_november_december".split("_"),
-					n = "jan_feb_mar_apr_máj_jún_júl_aug_sep_okt_nov_dec".split("_");
-
-				function a(e) {
-					return e > 1 && e < 5
-				}
-
-				function r(e, t, n, r) {
-					var i = e + " ";
-					switch (n) {
-						case "s":
-							return t || r ? "pár sekúnd" : "pár sekundami";
-						case "ss":
-							return t || r ? i + (a(e) ? "sekundy" : "sekúnd") : i + "sekundami";
-						case "m":
-							return t ? "minúta" : r ? "minútu" : "minútou";
-						case "mm":
-							return t || r ? i + (a(e) ? "minúty" : "minút") : i + "minútami";
-						case "h":
-							return t ? "hodina" : r ? "hodinu" : "hodinou";
-						case "hh":
-							return t || r ? i + (a(e) ? "hodiny" : "hodín") : i + "hodinami";
-						case "d":
-							return t || r ? "deň" : "dňom";
-						case "dd":
-							return t || r ? i + (a(e) ? "dni" : "dní") : i + "dňami";
-						case "M":
-							return t || r ? "mesiac" : "mesiacom";
-						case "MM":
-							return t || r ? i + (a(e) ? "mesiace" : "mesiacov") : i + "mesiacmi";
-						case "y":
-							return t || r ? "rok" : "rokom";
-						case "yy":
-							return t || r ? i + (a(e) ? "roky" : "rokov") : i + "rokmi"
-					}
-				}
-				e.defineLocale("sk", {
-					months: t,
-					monthsShort: n,
-					weekdays: "nedeľa_pondelok_utorok_streda_štvrtok_piatok_sobota".split("_"),
-					weekdaysShort: "ne_po_ut_st_št_pi_so".split("_"),
-					weekdaysMin: "ne_po_ut_st_št_pi_so".split("_"),
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd D. MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[dnes o] LT",
-						nextDay: "[zajtra o] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[v nedeľu o] LT";
-								case 1:
-								case 2:
-									return "[v] dddd [o] LT";
-								case 3:
-									return "[v stredu o] LT";
-								case 4:
-									return "[vo štvrtok o] LT";
-								case 5:
-									return "[v piatok o] LT";
-								case 6:
-									return "[v sobotu o] LT"
-							}
-						},
-						lastDay: "[včera o] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[minulú nedeľu o] LT";
-								case 1:
-								case 2:
-									return "[minulý] dddd [o] LT";
-								case 3:
-									return "[minulú stredu o] LT";
-								case 4:
-								case 5:
-									return "[minulý] dddd [o] LT";
-								case 6:
-									return "[minulú sobotu o] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "za %s",
-						past: "pred %s",
-						s: r,
-						ss: r,
-						m: r,
-						mm: r,
-						h: r,
-						hh: r,
-						d: r,
-						dd: r,
-						M: r,
-						MM: r,
-						y: r,
-						yy: r
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sl.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = e + " ";
-					switch (n) {
-						case "s":
-							return t || a ? "nekaj sekund" : "nekaj sekundami";
-						case "ss":
-							return r += 1 === e ? t ? "sekundo" : "sekundi" : 2 === e ? t || a ? "sekundi" : "sekundah" : e < 5 ? t || a ? "sekunde" : "sekundah" : "sekund";
-						case "m":
-							return t ? "ena minuta" : "eno minuto";
-						case "mm":
-							return r += 1 === e ? t ? "minuta" : "minuto" : 2 === e ? t || a ? "minuti" : "minutama" : e < 5 ? t || a ? "minute" : "minutami" : t || a ? "minut" : "minutami";
-						case "h":
-							return t ? "ena ura" : "eno uro";
-						case "hh":
-							return r += 1 === e ? t ? "ura" : "uro" : 2 === e ? t || a ? "uri" : "urama" : e < 5 ? t || a ? "ure" : "urami" : t || a ? "ur" : "urami";
-						case "d":
-							return t || a ? "en dan" : "enim dnem";
-						case "dd":
-							return r += 1 === e ? t || a ? "dan" : "dnem" : 2 === e ? t || a ? "dni" : "dnevoma" : t || a ? "dni" : "dnevi";
-						case "M":
-							return t || a ? "en mesec" : "enim mesecem";
-						case "MM":
-							return r += 1 === e ? t || a ? "mesec" : "mesecem" : 2 === e ? t || a ? "meseca" : "mesecema" : e < 5 ? t || a ? "mesece" : "meseci" : t || a ? "mesecev" : "meseci";
-						case "y":
-							return t || a ? "eno leto" : "enim letom";
-						case "yy":
-							return r += 1 === e ? t || a ? "leto" : "letom" : 2 === e ? t || a ? "leti" : "letoma" : e < 5 ? t || a ? "leta" : "leti" : t || a ? "let" : "leti"
-					}
-				}
-				e.defineLocale("sl", {
-					months: "januar_februar_marec_april_maj_junij_julij_avgust_september_oktober_november_december".split("_"),
-					monthsShort: "jan._feb._mar._apr._maj._jun._jul._avg._sep._okt._nov._dec.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "nedelja_ponedeljek_torek_sreda_četrtek_petek_sobota".split("_"),
-					weekdaysShort: "ned._pon._tor._sre._čet._pet._sob.".split("_"),
-					weekdaysMin: "ne_po_to_sr_če_pe_so".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD. MM. YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd, D. MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[danes ob] LT",
-						nextDay: "[jutri ob] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[v] [nedeljo] [ob] LT";
-								case 3:
-									return "[v] [sredo] [ob] LT";
-								case 6:
-									return "[v] [soboto] [ob] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[v] dddd [ob] LT"
-							}
-						},
-						lastDay: "[včeraj ob] LT",
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[prejšnjo] [nedeljo] [ob] LT";
-								case 3:
-									return "[prejšnjo] [sredo] [ob] LT";
-								case 6:
-									return "[prejšnjo] [soboto] [ob] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[prejšnji] dddd [ob] LT"
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "čez %s",
-						past: "pred %s",
-						s: t,
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sq.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("sq", {
-					months: "Janar_Shkurt_Mars_Prill_Maj_Qershor_Korrik_Gusht_Shtator_Tetor_Nëntor_Dhjetor".split("_"),
-					monthsShort: "Jan_Shk_Mar_Pri_Maj_Qer_Kor_Gus_Sht_Tet_Nën_Dhj".split("_"),
-					weekdays: "E Diel_E Hënë_E Martë_E Mërkurë_E Enjte_E Premte_E Shtunë".split("_"),
-					weekdaysShort: "Die_Hën_Mar_Mër_Enj_Pre_Sht".split("_"),
-					weekdaysMin: "D_H_Ma_Më_E_P_Sh".split("_"),
-					weekdaysParseExact: !0,
-					meridiemParse: /PD|MD/,
-					isPM: function(e) {
-						return "M" === e.charAt(0)
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "PD" : "MD"
-					},
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Sot në] LT",
-						nextDay: "[Nesër në] LT",
-						nextWeek: "dddd [në] LT",
-						lastDay: "[Dje në] LT",
-						lastWeek: "dddd [e kaluar në] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "në %s",
-						past: "%s më parë",
-						s: "disa sekonda",
-						ss: "%d sekonda",
-						m: "një minutë",
-						mm: "%d minuta",
-						h: "një orë",
-						hh: "%d orë",
-						d: "një ditë",
-						dd: "%d ditë",
-						M: "një muaj",
-						MM: "%d muaj",
-						y: "një vit",
-						yy: "%d vite"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sr-cyrl.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					words: {
-						ss: ["секунда", "секунде", "секунди"],
-						m: ["један минут", "једне минуте"],
-						mm: ["минут", "минуте", "минута"],
-						h: ["један сат", "једног сата"],
-						hh: ["сат", "сата", "сати"],
-						dd: ["дан", "дана", "дана"],
-						MM: ["месец", "месеца", "месеци"],
-						yy: ["година", "године", "година"]
-					},
-					correctGrammaticalCase: function(e, t) {
-						return 1 === e ? t[0] : e >= 2 && e <= 4 ? t[1] : t[2]
-					},
-					translate: function(e, n, a) {
-						var r = t.words[a];
-						return 1 === a.length ? n ? r[0] : r[1] : e + " " + t.correctGrammaticalCase(e, r)
-					}
-				};
-				e.defineLocale("sr-cyrl", {
-					months: "јануар_фебруар_март_април_мај_јун_јул_август_септембар_октобар_новембар_децембар".split("_"),
-					monthsShort: "јан._феб._мар._апр._мај_јун_јул_авг._сеп._окт._нов._дец.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "недеља_понедељак_уторак_среда_четвртак_петак_субота".split("_"),
-					weekdaysShort: "нед._пон._уто._сре._чет._пет._суб.".split("_"),
-					weekdaysMin: "не_по_ут_ср_че_пе_су".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd, D. MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[данас у] LT",
-						nextDay: "[сутра у] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[у] [недељу] [у] LT";
-								case 3:
-									return "[у] [среду] [у] LT";
-								case 6:
-									return "[у] [суботу] [у] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[у] dddd [у] LT"
-							}
-						},
-						lastDay: "[јуче у] LT",
-						lastWeek: function() {
-							return ["[прошле] [недеље] [у] LT", "[прошлог] [понедељка] [у] LT", "[прошлог] [уторка] [у] LT", "[прошле] [среде] [у] LT", "[прошлог] [четвртка] [у] LT", "[прошлог] [петка] [у] LT", "[прошле] [суботе] [у] LT"][this.day()]
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "за %s",
-						past: "пре %s",
-						s: "неколико секунди",
-						ss: t.translate,
-						m: t.translate,
-						mm: t.translate,
-						h: t.translate,
-						hh: t.translate,
-						d: "дан",
-						dd: t.translate,
-						M: "месец",
-						MM: t.translate,
-						y: "годину",
-						yy: t.translate
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sr.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					words: {
-						ss: ["sekunda", "sekunde", "sekundi"],
-						m: ["jedan minut", "jedne minute"],
-						mm: ["minut", "minute", "minuta"],
-						h: ["jedan sat", "jednog sata"],
-						hh: ["sat", "sata", "sati"],
-						dd: ["dan", "dana", "dana"],
-						MM: ["mesec", "meseca", "meseci"],
-						yy: ["godina", "godine", "godina"]
-					},
-					correctGrammaticalCase: function(e, t) {
-						return 1 === e ? t[0] : e >= 2 && e <= 4 ? t[1] : t[2]
-					},
-					translate: function(e, n, a) {
-						var r = t.words[a];
-						return 1 === a.length ? n ? r[0] : r[1] : e + " " + t.correctGrammaticalCase(e, r)
-					}
-				};
-				e.defineLocale("sr", {
-					months: "januar_februar_mart_april_maj_jun_jul_avgust_septembar_oktobar_novembar_decembar".split("_"),
-					monthsShort: "jan._feb._mar._apr._maj_jun_jul_avg._sep._okt._nov._dec.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "nedelja_ponedeljak_utorak_sreda_četvrtak_petak_subota".split("_"),
-					weekdaysShort: "ned._pon._uto._sre._čet._pet._sub.".split("_"),
-					weekdaysMin: "ne_po_ut_sr_če_pe_su".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM YYYY",
-						LLL: "D. MMMM YYYY H:mm",
-						LLLL: "dddd, D. MMMM YYYY H:mm"
-					},
-					calendar: {
-						sameDay: "[danas u] LT",
-						nextDay: "[sutra u] LT",
-						nextWeek: function() {
-							switch (this.day()) {
-								case 0:
-									return "[u] [nedelju] [u] LT";
-								case 3:
-									return "[u] [sredu] [u] LT";
-								case 6:
-									return "[u] [subotu] [u] LT";
-								case 1:
-								case 2:
-								case 4:
-								case 5:
-									return "[u] dddd [u] LT"
-							}
-						},
-						lastDay: "[juče u] LT",
-						lastWeek: function() {
-							return ["[prošle] [nedelje] [u] LT", "[prošlog] [ponedeljka] [u] LT", "[prošlog] [utorka] [u] LT", "[prošle] [srede] [u] LT", "[prošlog] [četvrtka] [u] LT", "[prošlog] [petka] [u] LT", "[prošle] [subote] [u] LT"][this.day()]
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "za %s",
-						past: "pre %s",
-						s: "nekoliko sekundi",
-						ss: t.translate,
-						m: t.translate,
-						mm: t.translate,
-						h: t.translate,
-						hh: t.translate,
-						d: "dan",
-						dd: t.translate,
-						M: "mesec",
-						MM: t.translate,
-						y: "godinu",
-						yy: t.translate
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ss.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ss", {
-					months: "Bhimbidvwane_Indlovana_Indlov'lenkhulu_Mabasa_Inkhwekhweti_Inhlaba_Kholwane_Ingci_Inyoni_Imphala_Lweti_Ingongoni".split("_"),
-					monthsShort: "Bhi_Ina_Inu_Mab_Ink_Inh_Kho_Igc_Iny_Imp_Lwe_Igo".split("_"),
-					weekdays: "Lisontfo_Umsombuluko_Lesibili_Lesitsatfu_Lesine_Lesihlanu_Umgcibelo".split("_"),
-					weekdaysShort: "Lis_Umb_Lsb_Les_Lsi_Lsh_Umg".split("_"),
-					weekdaysMin: "Li_Us_Lb_Lt_Ls_Lh_Ug".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY h:mm A",
-						LLLL: "dddd, D MMMM YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: "[Namuhla nga] LT",
-						nextDay: "[Kusasa nga] LT",
-						nextWeek: "dddd [nga] LT",
-						lastDay: "[Itolo nga] LT",
-						lastWeek: "dddd [leliphelile] [nga] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "nga %s",
-						past: "wenteka nga %s",
-						s: "emizuzwana lomcane",
-						ss: "%d mzuzwana",
-						m: "umzuzu",
-						mm: "%d emizuzu",
-						h: "lihora",
-						hh: "%d emahora",
-						d: "lilanga",
-						dd: "%d emalanga",
-						M: "inyanga",
-						MM: "%d tinyanga",
-						y: "umnyaka",
-						yy: "%d iminyaka"
-					},
-					meridiemParse: /ekuseni|emini|entsambama|ebusuku/,
-					meridiem: function(e, t, n) {
-						return e < 11 ? "ekuseni" : e < 15 ? "emini" : e < 19 ? "entsambama" : "ebusuku"
-					},
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "ekuseni" === t ? e : "emini" === t ? e >= 11 ? e : e + 12 : "entsambama" === t || "ebusuku" === t ? 0 === e ? 0 : e + 12 : void 0
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}/,
-					ordinal: "%d",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sv.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("sv", {
-					months: "januari_februari_mars_april_maj_juni_juli_augusti_september_oktober_november_december".split("_"),
-					monthsShort: "jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec".split("_"),
-					weekdays: "söndag_måndag_tisdag_onsdag_torsdag_fredag_lördag".split("_"),
-					weekdaysShort: "sön_mån_tis_ons_tor_fre_lör".split("_"),
-					weekdaysMin: "sö_må_ti_on_to_fr_lö".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY-MM-DD",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY [kl.] HH:mm",
-						LLLL: "dddd D MMMM YYYY [kl.] HH:mm",
-						lll: "D MMM YYYY HH:mm",
-						llll: "ddd D MMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Idag] LT",
-						nextDay: "[Imorgon] LT",
-						lastDay: "[Igår] LT",
-						nextWeek: "[På] dddd LT",
-						lastWeek: "[I] dddd[s] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "om %s",
-						past: "för %s sedan",
-						s: "några sekunder",
-						ss: "%d sekunder",
-						m: "en minut",
-						mm: "%d minuter",
-						h: "en timme",
-						hh: "%d timmar",
-						d: "en dag",
-						dd: "%d dagar",
-						M: "en månad",
-						MM: "%d månader",
-						y: "ett år",
-						yy: "%d år"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(\:e|\:a)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? ":e" : 1 === t ? ":a" : 2 === t ? ":a" : ":e")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/sw.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("sw", {
-					months: "Januari_Februari_Machi_Aprili_Mei_Juni_Julai_Agosti_Septemba_Oktoba_Novemba_Desemba".split("_"),
-					monthsShort: "Jan_Feb_Mac_Apr_Mei_Jun_Jul_Ago_Sep_Okt_Nov_Des".split("_"),
-					weekdays: "Jumapili_Jumatatu_Jumanne_Jumatano_Alhamisi_Ijumaa_Jumamosi".split("_"),
-					weekdaysShort: "Jpl_Jtat_Jnne_Jtan_Alh_Ijm_Jmos".split("_"),
-					weekdaysMin: "J2_J3_J4_J5_Al_Ij_J1".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[leo saa] LT",
-						nextDay: "[kesho saa] LT",
-						nextWeek: "[wiki ijayo] dddd [saat] LT",
-						lastDay: "[jana] LT",
-						lastWeek: "[wiki iliyopita] dddd [saat] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s baadaye",
-						past: "tokea %s",
-						s: "hivi punde",
-						ss: "sekunde %d",
-						m: "dakika moja",
-						mm: "dakika %d",
-						h: "saa limoja",
-						hh: "masaa %d",
-						d: "siku moja",
-						dd: "masiku %d",
-						M: "mwezi mmoja",
-						MM: "miezi %d",
-						y: "mwaka mmoja",
-						yy: "miaka %d"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ta.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-						1: "௧",
-						2: "௨",
-						3: "௩",
-						4: "௪",
-						5: "௫",
-						6: "௬",
-						7: "௭",
-						8: "௮",
-						9: "௯",
-						0: "௦"
-					},
-					n = {
-						"௧": "1",
-						"௨": "2",
-						"௩": "3",
-						"௪": "4",
-						"௫": "5",
-						"௬": "6",
-						"௭": "7",
-						"௮": "8",
-						"௯": "9",
-						"௦": "0"
-					};
-				e.defineLocale("ta", {
-					months: "ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல்_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்".split("_"),
-					monthsShort: "ஜனவரி_பிப்ரவரி_மார்ச்_ஏப்ரல்_மே_ஜூன்_ஜூலை_ஆகஸ்ட்_செப்டெம்பர்_அக்டோபர்_நவம்பர்_டிசம்பர்".split("_"),
-					weekdays: "ஞாயிற்றுக்கிழமை_திங்கட்கிழமை_செவ்வாய்கிழமை_புதன்கிழமை_வியாழக்கிழமை_வெள்ளிக்கிழமை_சனிக்கிழமை".split("_"),
-					weekdaysShort: "ஞாயிறு_திங்கள்_செவ்வாய்_புதன்_வியாழன்_வெள்ளி_சனி".split("_"),
-					weekdaysMin: "ஞா_தி_செ_பு_வி_வெ_ச".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, HH:mm",
-						LLLL: "dddd, D MMMM YYYY, HH:mm"
-					},
-					calendar: {
-						sameDay: "[இன்று] LT",
-						nextDay: "[நாளை] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[நேற்று] LT",
-						lastWeek: "[கடந்த வாரம்] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s இல்",
-						past: "%s முன்",
-						s: "ஒரு சில விநாடிகள்",
-						ss: "%d விநாடிகள்",
-						m: "ஒரு நிமிடம்",
-						mm: "%d நிமிடங்கள்",
-						h: "ஒரு மணி நேரம்",
-						hh: "%d மணி நேரம்",
-						d: "ஒரு நாள்",
-						dd: "%d நாட்கள்",
-						M: "ஒரு மாதம்",
-						MM: "%d மாதங்கள்",
-						y: "ஒரு வருடம்",
-						yy: "%d ஆண்டுகள்"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}வது/,
-					ordinal: function(e) {
-						return e + "வது"
-					},
-					preparse: function(e) {
-						return e.replace(/[௧௨௩௪௫௬௭௮௯௦]/g, (function(e) {
-							return n[e]
-						}))
-					},
-					postformat: function(e) {
-						return e.replace(/\d/g, (function(e) {
-							return t[e]
-						}))
-					},
-					meridiemParse: /யாமம்|வைகறை|காலை|நண்பகல்|எற்பாடு|மாலை/,
-					meridiem: function(e, t, n) {
-						return e < 2 ? " யாமம்" : e < 6 ? " வைகறை" : e < 10 ? " காலை" : e < 14 ? " நண்பகல்" : e < 18 ? " எற்பாடு" : e < 22 ? " மாலை" : " யாமம்"
-					},
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "யாமம்" === t ? e < 2 ? e : e + 12 : "வைகறை" === t || "காலை" === t ? e : "நண்பகல்" === t && e >= 10 ? e : e + 12
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/te.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("te", {
-					months: "జనవరి_ఫిబ్రవరి_మార్చి_ఏప్రిల్_మే_జూన్_జులై_ఆగస్టు_సెప్టెంబర్_అక్టోబర్_నవంబర్_డిసెంబర్".split("_"),
-					monthsShort: "జన._ఫిబ్ర._మార్చి_ఏప్రి._మే_జూన్_జులై_ఆగ._సెప్._అక్టో._నవ._డిసె.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "ఆదివారం_సోమవారం_మంగళవారం_బుధవారం_గురువారం_శుక్రవారం_శనివారం".split("_"),
-					weekdaysShort: "ఆది_సోమ_మంగళ_బుధ_గురు_శుక్ర_శని".split("_"),
-					weekdaysMin: "ఆ_సో_మం_బు_గు_శు_శ".split("_"),
-					longDateFormat: {
-						LT: "A h:mm",
-						LTS: "A h:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY, A h:mm",
-						LLLL: "dddd, D MMMM YYYY, A h:mm"
-					},
-					calendar: {
-						sameDay: "[నేడు] LT",
-						nextDay: "[రేపు] LT",
-						nextWeek: "dddd, LT",
-						lastDay: "[నిన్న] LT",
-						lastWeek: "[గత] dddd, LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s లో",
-						past: "%s క్రితం",
-						s: "కొన్ని క్షణాలు",
-						ss: "%d సెకన్లు",
-						m: "ఒక నిమిషం",
-						mm: "%d నిమిషాలు",
-						h: "ఒక గంట",
-						hh: "%d గంటలు",
-						d: "ఒక రోజు",
-						dd: "%d రోజులు",
-						M: "ఒక నెల",
-						MM: "%d నెలలు",
-						y: "ఒక సంవత్సరం",
-						yy: "%d సంవత్సరాలు"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}వ/,
-					ordinal: "%dవ",
-					meridiemParse: /రాత్రి|ఉదయం|మధ్యాహ్నం|సాయంత్రం/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "రాత్రి" === t ? e < 4 ? e : e + 12 : "ఉదయం" === t ? e : "మధ్యాహ్నం" === t ? e >= 10 ? e : e + 12 : "సాయంత్రం" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "రాత్రి" : e < 10 ? "ఉదయం" : e < 17 ? "మధ్యాహ్నం" : e < 20 ? "సాయంత్రం" : "రాత్రి"
-					},
-					week: {
-						dow: 0,
-						doy: 6
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tet.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("tet", {
-					months: "Janeiru_Fevereiru_Marsu_Abril_Maiu_Juñu_Jullu_Agustu_Setembru_Outubru_Novembru_Dezembru".split("_"),
-					monthsShort: "Jan_Fev_Mar_Abr_Mai_Jun_Jul_Ago_Set_Out_Nov_Dez".split("_"),
-					weekdays: "Domingu_Segunda_Tersa_Kuarta_Kinta_Sesta_Sabadu".split("_"),
-					weekdaysShort: "Dom_Seg_Ters_Kua_Kint_Sest_Sab".split("_"),
-					weekdaysMin: "Do_Seg_Te_Ku_Ki_Ses_Sa".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Ohin iha] LT",
-						nextDay: "[Aban iha] LT",
-						nextWeek: "dddd [iha] LT",
-						lastDay: "[Horiseik iha] LT",
-						lastWeek: "dddd [semana kotuk] [iha] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "iha %s",
-						past: "%s liuba",
-						s: "segundu balun",
-						ss: "segundu %d",
-						m: "minutu ida",
-						mm: "minutu %d",
-						h: "oras ida",
-						hh: "oras %d",
-						d: "loron ida",
-						dd: "loron %d",
-						M: "fulan ida",
-						MM: "fulan %d",
-						y: "tinan ida",
-						yy: "tinan %d"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(st|nd|rd|th)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tg.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					0: "-ум",
-					1: "-ум",
-					2: "-юм",
-					3: "-юм",
-					4: "-ум",
-					5: "-ум",
-					6: "-ум",
-					7: "-ум",
-					8: "-ум",
-					9: "-ум",
-					10: "-ум",
-					12: "-ум",
-					13: "-ум",
-					20: "-ум",
-					30: "-юм",
-					40: "-ум",
-					50: "-ум",
-					60: "-ум",
-					70: "-ум",
-					80: "-ум",
-					90: "-ум",
-					100: "-ум"
-				};
-				e.defineLocale("tg", {
-					months: "январ_феврал_март_апрел_май_июн_июл_август_сентябр_октябр_ноябр_декабр".split("_"),
-					monthsShort: "янв_фев_мар_апр_май_июн_июл_авг_сен_окт_ноя_дек".split("_"),
-					weekdays: "якшанбе_душанбе_сешанбе_чоршанбе_панҷшанбе_ҷумъа_шанбе".split("_"),
-					weekdaysShort: "яшб_дшб_сшб_чшб_пшб_ҷум_шнб".split("_"),
-					weekdaysMin: "яш_дш_сш_чш_пш_ҷм_шб".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Имрӯз соати] LT",
-						nextDay: "[Пагоҳ соати] LT",
-						lastDay: "[Дирӯз соати] LT",
-						nextWeek: "dddd[и] [ҳафтаи оянда соати] LT",
-						lastWeek: "dddd[и] [ҳафтаи гузашта соати] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "баъди %s",
-						past: "%s пеш",
-						s: "якчанд сония",
-						m: "як дақиқа",
-						mm: "%d дақиқа",
-						h: "як соат",
-						hh: "%d соат",
-						d: "як рӯз",
-						dd: "%d рӯз",
-						M: "як моҳ",
-						MM: "%d моҳ",
-						y: "як сол",
-						yy: "%d сол"
-					},
-					meridiemParse: /шаб|субҳ|рӯз|бегоҳ/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "шаб" === t ? e < 4 ? e : e + 12 : "субҳ" === t ? e : "рӯз" === t ? e >= 11 ? e : e + 12 : "бегоҳ" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "шаб" : e < 11 ? "субҳ" : e < 16 ? "рӯз" : e < 19 ? "бегоҳ" : "шаб"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(ум|юм)/,
-					ordinal: function(e) {
-						return e + (t[e] || t[e % 10] || t[e >= 100 ? 100 : null])
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/th.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("th", {
-					months: "มกราคม_กุมภาพันธ์_มีนาคม_เมษายน_พฤษภาคม_มิถุนายน_กรกฎาคม_สิงหาคม_กันยายน_ตุลาคม_พฤศจิกายน_ธันวาคม".split("_"),
-					monthsShort: "ม.ค._ก.พ._มี.ค._เม.ย._พ.ค._มิ.ย._ก.ค._ส.ค._ก.ย._ต.ค._พ.ย._ธ.ค.".split("_"),
-					monthsParseExact: !0,
-					weekdays: "อาทิตย์_จันทร์_อังคาร_พุธ_พฤหัสบดี_ศุกร์_เสาร์".split("_"),
-					weekdaysShort: "อาทิตย์_จันทร์_อังคาร_พุธ_พฤหัส_ศุกร์_เสาร์".split("_"),
-					weekdaysMin: "อา._จ._อ._พ._พฤ._ศ._ส.".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "H:mm",
-						LTS: "H:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY เวลา H:mm",
-						LLLL: "วันddddที่ D MMMM YYYY เวลา H:mm"
-					},
-					meridiemParse: /ก่อนเที่ยง|หลังเที่ยง/,
-					isPM: function(e) {
-						return "หลังเที่ยง" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "ก่อนเที่ยง" : "หลังเที่ยง"
-					},
-					calendar: {
-						sameDay: "[วันนี้ เวลา] LT",
-						nextDay: "[พรุ่งนี้ เวลา] LT",
-						nextWeek: "dddd[หน้า เวลา] LT",
-						lastDay: "[เมื่อวานนี้ เวลา] LT",
-						lastWeek: "[วัน]dddd[ที่แล้ว เวลา] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "อีก %s",
-						past: "%sที่แล้ว",
-						s: "ไม่กี่วินาที",
-						ss: "%d วินาที",
-						m: "1 นาที",
-						mm: "%d นาที",
-						h: "1 ชั่วโมง",
-						hh: "%d ชั่วโมง",
-						d: "1 วัน",
-						dd: "%d วัน",
-						M: "1 เดือน",
-						MM: "%d เดือน",
-						y: "1 ปี",
-						yy: "%d ปี"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tl-ph.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("tl-ph", {
-					months: "Enero_Pebrero_Marso_Abril_Mayo_Hunyo_Hulyo_Agosto_Setyembre_Oktubre_Nobyembre_Disyembre".split("_"),
-					monthsShort: "Ene_Peb_Mar_Abr_May_Hun_Hul_Ago_Set_Okt_Nob_Dis".split("_"),
-					weekdays: "Linggo_Lunes_Martes_Miyerkules_Huwebes_Biyernes_Sabado".split("_"),
-					weekdaysShort: "Lin_Lun_Mar_Miy_Huw_Biy_Sab".split("_"),
-					weekdaysMin: "Li_Lu_Ma_Mi_Hu_Bi_Sab".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "MM/D/YYYY",
-						LL: "MMMM D, YYYY",
-						LLL: "MMMM D, YYYY HH:mm",
-						LLLL: "dddd, MMMM DD, YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "LT [ngayong araw]",
-						nextDay: "[Bukas ng] LT",
-						nextWeek: "LT [sa susunod na] dddd",
-						lastDay: "LT [kahapon]",
-						lastWeek: "LT [noong nakaraang] dddd",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "sa loob ng %s",
-						past: "%s ang nakalipas",
-						s: "ilang segundo",
-						ss: "%d segundo",
-						m: "isang minuto",
-						mm: "%d minuto",
-						h: "isang oras",
-						hh: "%d oras",
-						d: "isang araw",
-						dd: "%d araw",
-						M: "isang buwan",
-						MM: "%d buwan",
-						y: "isang taon",
-						yy: "%d taon"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}/,
-					ordinal: function(e) {
-						return e
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tlh.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = "pagh_wa’_cha’_wej_loS_vagh_jav_Soch_chorgh_Hut".split("_");
-
-				function n(e, n, a, r) {
-					var i = function(e) {
-						var n = Math.floor(e % 1e3 / 100),
-							a = Math.floor(e % 100 / 10),
-							r = e % 10,
-							i = "";
-						return n > 0 && (i += t[n] + "vatlh"), a > 0 && (i += ("" !== i ? " " : "") + t[a] + "maH"), r > 0 && (i += ("" !== i ? " " : "") + t[r]), "" === i ? "pagh" : i
-					}(e);
-					switch (a) {
-						case "ss":
-							return i + " lup";
-						case "mm":
-							return i + " tup";
-						case "hh":
-							return i + " rep";
-						case "dd":
-							return i + " jaj";
-						case "MM":
-							return i + " jar";
-						case "yy":
-							return i + " DIS"
-					}
-				}
-				e.defineLocale("tlh", {
-					months: "tera’ jar wa’_tera’ jar cha’_tera’ jar wej_tera’ jar loS_tera’ jar vagh_tera’ jar jav_tera’ jar Soch_tera’ jar chorgh_tera’ jar Hut_tera’ jar wa’maH_tera’ jar wa’maH wa’_tera’ jar wa’maH cha’".split("_"),
-					monthsShort: "jar wa’_jar cha’_jar wej_jar loS_jar vagh_jar jav_jar Soch_jar chorgh_jar Hut_jar wa’maH_jar wa’maH wa’_jar wa’maH cha’".split("_"),
-					monthsParseExact: !0,
-					weekdays: "lojmItjaj_DaSjaj_povjaj_ghItlhjaj_loghjaj_buqjaj_ghInjaj".split("_"),
-					weekdaysShort: "lojmItjaj_DaSjaj_povjaj_ghItlhjaj_loghjaj_buqjaj_ghInjaj".split("_"),
-					weekdaysMin: "lojmItjaj_DaSjaj_povjaj_ghItlhjaj_loghjaj_buqjaj_ghInjaj".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[DaHjaj] LT",
-						nextDay: "[wa’leS] LT",
-						nextWeek: "LLL",
-						lastDay: "[wa’Hu’] LT",
-						lastWeek: "LLL",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: function(e) {
-							var t = e;
-							return t = -1 !== e.indexOf("jaj") ? t.slice(0, -3) + "leS" : -1 !== e.indexOf("jar") ? t.slice(0, -3) + "waQ" : -1 !== e.indexOf("DIS") ? t.slice(0, -3) + "nem" : t + " pIq"
-						},
-						past: function(e) {
-							var t = e;
-							return t = -1 !== e.indexOf("jaj") ? t.slice(0, -3) + "Hu’" : -1 !== e.indexOf("jar") ? t.slice(0, -3) + "wen" : -1 !== e.indexOf("DIS") ? t.slice(0, -3) + "ben" : t + " ret"
-						},
-						s: "puS lup",
-						ss: n,
-						m: "wa’ tup",
-						mm: n,
-						h: "wa’ rep",
-						hh: n,
-						d: "wa’ jaj",
-						dd: n,
-						M: "wa’ jar",
-						MM: n,
-						y: "wa’ DIS",
-						yy: n
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tr.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = {
-					1: "'inci",
-					5: "'inci",
-					8: "'inci",
-					70: "'inci",
-					80: "'inci",
-					2: "'nci",
-					7: "'nci",
-					20: "'nci",
-					50: "'nci",
-					3: "'üncü",
-					4: "'üncü",
-					100: "'üncü",
-					6: "'ncı",
-					9: "'uncu",
-					10: "'uncu",
-					30: "'uncu",
-					60: "'ıncı",
-					90: "'ıncı"
-				};
-				e.defineLocale("tr", {
-					months: "Ocak_Şubat_Mart_Nisan_Mayıs_Haziran_Temmuz_Ağustos_Eylül_Ekim_Kasım_Aralık".split("_"),
-					monthsShort: "Oca_Şub_Mar_Nis_May_Haz_Tem_Ağu_Eyl_Eki_Kas_Ara".split("_"),
-					weekdays: "Pazar_Pazartesi_Salı_Çarşamba_Perşembe_Cuma_Cumartesi".split("_"),
-					weekdaysShort: "Paz_Pts_Sal_Çar_Per_Cum_Cts".split("_"),
-					weekdaysMin: "Pz_Pt_Sa_Ça_Pe_Cu_Ct".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[bugün saat] LT",
-						nextDay: "[yarın saat] LT",
-						nextWeek: "[gelecek] dddd [saat] LT",
-						lastDay: "[dün] LT",
-						lastWeek: "[geçen] dddd [saat] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s sonra",
-						past: "%s önce",
-						s: "birkaç saniye",
-						ss: "%d saniye",
-						m: "bir dakika",
-						mm: "%d dakika",
-						h: "bir saat",
-						hh: "%d saat",
-						d: "bir gün",
-						dd: "%d gün",
-						M: "bir ay",
-						MM: "%d ay",
-						y: "bir yıl",
-						yy: "%d yıl"
-					},
-					ordinal: function(e, n) {
-						switch (n) {
-							case "d":
-							case "D":
-							case "Do":
-							case "DD":
-								return e;
-							default:
-								if (0 === e) return e + "'ıncı";
-								var a = e % 10;
-								return e + (t[a] || t[e % 100 - a] || t[e >= 100 ? 100 : null])
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tzl.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n, a) {
-					var r = {
-						s: ["viensas secunds", "'iensas secunds"],
-						ss: [e + " secunds", e + " secunds"],
-						m: ["'n míut", "'iens míut"],
-						mm: [e + " míuts", e + " míuts"],
-						h: ["'n þora", "'iensa þora"],
-						hh: [e + " þoras", e + " þoras"],
-						d: ["'n ziua", "'iensa ziua"],
-						dd: [e + " ziuas", e + " ziuas"],
-						M: ["'n mes", "'iens mes"],
-						MM: [e + " mesen", e + " mesen"],
-						y: ["'n ar", "'iens ar"],
-						yy: [e + " ars", e + " ars"]
-					};
-					return a ? r[n][0] : t ? r[n][0] : r[n][1]
-				}
-				e.defineLocale("tzl", {
-					months: "Januar_Fevraglh_Març_Avrïu_Mai_Gün_Julia_Guscht_Setemvar_Listopäts_Noemvar_Zecemvar".split("_"),
-					monthsShort: "Jan_Fev_Mar_Avr_Mai_Gün_Jul_Gus_Set_Lis_Noe_Zec".split("_"),
-					weekdays: "Súladi_Lúneçi_Maitzi_Márcuri_Xhúadi_Viénerçi_Sáturi".split("_"),
-					weekdaysShort: "Súl_Lún_Mai_Már_Xhú_Vié_Sát".split("_"),
-					weekdaysMin: "Sú_Lú_Ma_Má_Xh_Vi_Sá".split("_"),
-					longDateFormat: {
-						LT: "HH.mm",
-						LTS: "HH.mm.ss",
-						L: "DD.MM.YYYY",
-						LL: "D. MMMM [dallas] YYYY",
-						LLL: "D. MMMM [dallas] YYYY HH.mm",
-						LLLL: "dddd, [li] D. MMMM [dallas] YYYY HH.mm"
-					},
-					meridiemParse: /d\'o|d\'a/i,
-					isPM: function(e) {
-						return "d'o" === e.toLowerCase()
-					},
-					meridiem: function(e, t, n) {
-						return e > 11 ? n ? "d'o" : "D'O" : n ? "d'a" : "D'A"
-					},
-					calendar: {
-						sameDay: "[oxhi à] LT",
-						nextDay: "[demà à] LT",
-						nextWeek: "dddd [à] LT",
-						lastDay: "[ieiri à] LT",
-						lastWeek: "[sür el] dddd [lasteu à] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "osprei %s",
-						past: "ja%s",
-						s: t,
-						ss: t,
-						m: t,
-						mm: t,
-						h: t,
-						hh: t,
-						d: t,
-						dd: t,
-						M: t,
-						MM: t,
-						y: t,
-						yy: t
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}\./,
-					ordinal: "%d.",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tzm-latn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("tzm-latn", {
-					months: "innayr_brˤayrˤ_marˤsˤ_ibrir_mayyw_ywnyw_ywlywz_ɣwšt_šwtanbir_ktˤwbrˤ_nwwanbir_dwjnbir".split("_"),
-					monthsShort: "innayr_brˤayrˤ_marˤsˤ_ibrir_mayyw_ywnyw_ywlywz_ɣwšt_šwtanbir_ktˤwbrˤ_nwwanbir_dwjnbir".split("_"),
-					weekdays: "asamas_aynas_asinas_akras_akwas_asimwas_asiḍyas".split("_"),
-					weekdaysShort: "asamas_aynas_asinas_akras_akwas_asimwas_asiḍyas".split("_"),
-					weekdaysMin: "asamas_aynas_asinas_akras_akwas_asimwas_asiḍyas".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[asdkh g] LT",
-						nextDay: "[aska g] LT",
-						nextWeek: "dddd [g] LT",
-						lastDay: "[assant g] LT",
-						lastWeek: "dddd [g] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "dadkh s yan %s",
-						past: "yan %s",
-						s: "imik",
-						ss: "%d imik",
-						m: "minuḍ",
-						mm: "%d minuḍ",
-						h: "saɛa",
-						hh: "%d tassaɛin",
-						d: "ass",
-						dd: "%d ossan",
-						M: "ayowr",
-						MM: "%d iyyirn",
-						y: "asgas",
-						yy: "%d isgasn"
-					},
-					week: {
-						dow: 6,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/tzm.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("tzm", {
-					months: "ⵉⵏⵏⴰⵢⵔ_ⴱⵕⴰⵢⵕ_ⵎⴰⵕⵚ_ⵉⴱⵔⵉⵔ_ⵎⴰⵢⵢⵓ_ⵢⵓⵏⵢⵓ_ⵢⵓⵍⵢⵓⵣ_ⵖⵓⵛⵜ_ⵛⵓⵜⴰⵏⴱⵉⵔ_ⴽⵟⵓⴱⵕ_ⵏⵓⵡⴰⵏⴱⵉⵔ_ⴷⵓⵊⵏⴱⵉⵔ".split("_"),
-					monthsShort: "ⵉⵏⵏⴰⵢⵔ_ⴱⵕⴰⵢⵕ_ⵎⴰⵕⵚ_ⵉⴱⵔⵉⵔ_ⵎⴰⵢⵢⵓ_ⵢⵓⵏⵢⵓ_ⵢⵓⵍⵢⵓⵣ_ⵖⵓⵛⵜ_ⵛⵓⵜⴰⵏⴱⵉⵔ_ⴽⵟⵓⴱⵕ_ⵏⵓⵡⴰⵏⴱⵉⵔ_ⴷⵓⵊⵏⴱⵉⵔ".split("_"),
-					weekdays: "ⴰⵙⴰⵎⴰⵙ_ⴰⵢⵏⴰⵙ_ⴰⵙⵉⵏⴰⵙ_ⴰⴽⵔⴰⵙ_ⴰⴽⵡⴰⵙ_ⴰⵙⵉⵎⵡⴰⵙ_ⴰⵙⵉⴹⵢⴰⵙ".split("_"),
-					weekdaysShort: "ⴰⵙⴰⵎⴰⵙ_ⴰⵢⵏⴰⵙ_ⴰⵙⵉⵏⴰⵙ_ⴰⴽⵔⴰⵙ_ⴰⴽⵡⴰⵙ_ⴰⵙⵉⵎⵡⴰⵙ_ⴰⵙⵉⴹⵢⴰⵙ".split("_"),
-					weekdaysMin: "ⴰⵙⴰⵎⴰⵙ_ⴰⵢⵏⴰⵙ_ⴰⵙⵉⵏⴰⵙ_ⴰⴽⵔⴰⵙ_ⴰⴽⵡⴰⵙ_ⴰⵙⵉⵎⵡⴰⵙ_ⴰⵙⵉⴹⵢⴰⵙ".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[ⴰⵙⴷⵅ ⴴ] LT",
-						nextDay: "[ⴰⵙⴽⴰ ⴴ] LT",
-						nextWeek: "dddd [ⴴ] LT",
-						lastDay: "[ⴰⵚⴰⵏⵜ ⴴ] LT",
-						lastWeek: "dddd [ⴴ] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "ⴷⴰⴷⵅ ⵙ ⵢⴰⵏ %s",
-						past: "ⵢⴰⵏ %s",
-						s: "ⵉⵎⵉⴽ",
-						ss: "%d ⵉⵎⵉⴽ",
-						m: "ⵎⵉⵏⵓⴺ",
-						mm: "%d ⵎⵉⵏⵓⴺ",
-						h: "ⵙⴰⵄⴰ",
-						hh: "%d ⵜⴰⵙⵙⴰⵄⵉⵏ",
-						d: "ⴰⵙⵙ",
-						dd: "%d oⵙⵙⴰⵏ",
-						M: "ⴰⵢoⵓⵔ",
-						MM: "%d ⵉⵢⵢⵉⵔⵏ",
-						y: "ⴰⵙⴳⴰⵙ",
-						yy: "%d ⵉⵙⴳⴰⵙⵏ"
-					},
-					week: {
-						dow: 6,
-						doy: 12
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ug-cn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("ug-cn", {
-					months: "يانۋار_فېۋرال_مارت_ئاپرېل_ماي_ئىيۇن_ئىيۇل_ئاۋغۇست_سېنتەبىر_ئۆكتەبىر_نويابىر_دېكابىر".split("_"),
-					monthsShort: "يانۋار_فېۋرال_مارت_ئاپرېل_ماي_ئىيۇن_ئىيۇل_ئاۋغۇست_سېنتەبىر_ئۆكتەبىر_نويابىر_دېكابىر".split("_"),
-					weekdays: "يەكشەنبە_دۈشەنبە_سەيشەنبە_چارشەنبە_پەيشەنبە_جۈمە_شەنبە".split("_"),
-					weekdaysShort: "يە_دۈ_سە_چا_پە_جۈ_شە".split("_"),
-					weekdaysMin: "يە_دۈ_سە_چا_پە_جۈ_شە".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY-MM-DD",
-						LL: "YYYY-يىلىM-ئاينىڭD-كۈنى",
-						LLL: "YYYY-يىلىM-ئاينىڭD-كۈنى، HH:mm",
-						LLLL: "dddd، YYYY-يىلىM-ئاينىڭD-كۈنى، HH:mm"
-					},
-					meridiemParse: /يېرىم كېچە|سەھەر|چۈشتىن بۇرۇن|چۈش|چۈشتىن كېيىن|كەچ/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "يېرىم كېچە" === t || "سەھەر" === t || "چۈشتىن بۇرۇن" === t ? e : "چۈشتىن كېيىن" === t || "كەچ" === t ? e + 12 : e >= 11 ? e : e + 12
-					},
-					meridiem: function(e, t, n) {
-						var a = 100 * e + t;
-						return a < 600 ? "يېرىم كېچە" : a < 900 ? "سەھەر" : a < 1130 ? "چۈشتىن بۇرۇن" : a < 1230 ? "چۈش" : a < 1800 ? "چۈشتىن كېيىن" : "كەچ"
-					},
-					calendar: {
-						sameDay: "[بۈگۈن سائەت] LT",
-						nextDay: "[ئەتە سائەت] LT",
-						nextWeek: "[كېلەركى] dddd [سائەت] LT",
-						lastDay: "[تۆنۈگۈن] LT",
-						lastWeek: "[ئالدىنقى] dddd [سائەت] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s كېيىن",
-						past: "%s بۇرۇن",
-						s: "نەچچە سېكونت",
-						ss: "%d سېكونت",
-						m: "بىر مىنۇت",
-						mm: "%d مىنۇت",
-						h: "بىر سائەت",
-						hh: "%d سائەت",
-						d: "بىر كۈن",
-						dd: "%d كۈن",
-						M: "بىر ئاي",
-						MM: "%d ئاي",
-						y: "بىر يىل",
-						yy: "%d يىل"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(-كۈنى|-ئاي|-ھەپتە)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "d":
-							case "D":
-							case "DDD":
-								return e + "-كۈنى";
-							case "w":
-							case "W":
-								return e + "-ھەپتە";
-							default:
-								return e
-						}
-					},
-					preparse: function(e) {
-						return e.replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/,/g, "،")
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/uk.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-
-				function t(e, t, n) {
-					var a, r;
-					return "m" === n ? t ? "хвилина" : "хвилину" : "h" === n ? t ? "година" : "годину" : e + " " + (a = +e, r = {
-						ss: t ? "секунда_секунди_секунд" : "секунду_секунди_секунд",
-						mm: t ? "хвилина_хвилини_хвилин" : "хвилину_хвилини_хвилин",
-						hh: t ? "година_години_годин" : "годину_години_годин",
-						dd: "день_дні_днів",
-						MM: "місяць_місяці_місяців",
-						yy: "рік_роки_років"
-					} [n].split("_"), a % 10 == 1 && a % 100 != 11 ? r[0] : a % 10 >= 2 && a % 10 <= 4 && (a % 100 < 10 || a % 100 >= 20) ? r[1] : r[2])
-				}
-
-				function n(e) {
-					return function() {
-						return e + "о" + (11 === this.hours() ? "б" : "") + "] LT"
-					}
-				}
-				e.defineLocale("uk", {
-					months: {
-						format: "січня_лютого_березня_квітня_травня_червня_липня_серпня_вересня_жовтня_листопада_грудня".split("_"),
-						standalone: "січень_лютий_березень_квітень_травень_червень_липень_серпень_вересень_жовтень_листопад_грудень".split("_")
-					},
-					monthsShort: "січ_лют_бер_квіт_трав_черв_лип_серп_вер_жовт_лист_груд".split("_"),
-					weekdays: function(e, t) {
-						var n = {
-							nominative: "неділя_понеділок_вівторок_середа_четвер_п’ятниця_субота".split("_"),
-							accusative: "неділю_понеділок_вівторок_середу_четвер_п’ятницю_суботу".split("_"),
-							genitive: "неділі_понеділка_вівторка_середи_четверга_п’ятниці_суботи".split("_")
-						};
-						return !0 === e ? n.nominative.slice(1, 7).concat(n.nominative.slice(0, 1)) : e ? n[/(\[[ВвУу]\]) ?dddd/.test(t) ? "accusative" : /\[?(?:минулої|наступної)? ?\] ?dddd/.test(t) ? "genitive" : "nominative"][e.day()] : n.nominative
-					},
-					weekdaysShort: "нд_пн_вт_ср_чт_пт_сб".split("_"),
-					weekdaysMin: "нд_пн_вт_ср_чт_пт_сб".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD.MM.YYYY",
-						LL: "D MMMM YYYY р.",
-						LLL: "D MMMM YYYY р., HH:mm",
-						LLLL: "dddd, D MMMM YYYY р., HH:mm"
-					},
-					calendar: {
-						sameDay: n("[Сьогодні "),
-						nextDay: n("[Завтра "),
-						lastDay: n("[Вчора "),
-						nextWeek: n("[У] dddd ["),
-						lastWeek: function() {
-							switch (this.day()) {
-								case 0:
-								case 3:
-								case 5:
-								case 6:
-									return n("[Минулої] dddd [").call(this);
-								case 1:
-								case 2:
-								case 4:
-									return n("[Минулого] dddd [").call(this)
-							}
-						},
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "за %s",
-						past: "%s тому",
-						s: "декілька секунд",
-						ss: t,
-						m: t,
-						mm: t,
-						h: "годину",
-						hh: t,
-						d: "день",
-						dd: t,
-						M: "місяць",
-						MM: t,
-						y: "рік",
-						yy: t
-					},
-					meridiemParse: /ночі|ранку|дня|вечора/,
-					isPM: function(e) {
-						return /^(дня|вечора)$/.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 4 ? "ночі" : e < 12 ? "ранку" : e < 17 ? "дня" : "вечора"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}-(й|го)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "M":
-							case "d":
-							case "DDD":
-							case "w":
-							case "W":
-								return e + "-й";
-							case "D":
-								return e + "-го";
-							default:
-								return e
-						}
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/ur.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				var t = ["جنوری", "فروری", "مارچ", "اپریل", "مئی", "جون", "جولائی", "اگست", "ستمبر", "اکتوبر", "نومبر", "دسمبر"],
-					n = ["اتوار", "پیر", "منگل", "بدھ", "جمعرات", "جمعہ", "ہفتہ"];
-				e.defineLocale("ur", {
-					months: t,
-					monthsShort: t,
-					weekdays: n,
-					weekdaysShort: n,
-					weekdaysMin: n,
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd، D MMMM YYYY HH:mm"
-					},
-					meridiemParse: /صبح|شام/,
-					isPM: function(e) {
-						return "شام" === e
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? "صبح" : "شام"
-					},
-					calendar: {
-						sameDay: "[آج بوقت] LT",
-						nextDay: "[کل بوقت] LT",
-						nextWeek: "dddd [بوقت] LT",
-						lastDay: "[گذشتہ روز بوقت] LT",
-						lastWeek: "[گذشتہ] dddd [بوقت] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s بعد",
-						past: "%s قبل",
-						s: "چند سیکنڈ",
-						ss: "%d سیکنڈ",
-						m: "ایک منٹ",
-						mm: "%d منٹ",
-						h: "ایک گھنٹہ",
-						hh: "%d گھنٹے",
-						d: "ایک دن",
-						dd: "%d دن",
-						M: "ایک ماہ",
-						MM: "%d ماہ",
-						y: "ایک سال",
-						yy: "%d سال"
-					},
-					preparse: function(e) {
-						return e.replace(/،/g, ",")
-					},
-					postformat: function(e) {
-						return e.replace(/,/g, "،")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/uz-latn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("uz-latn", {
-					months: "Yanvar_Fevral_Mart_Aprel_May_Iyun_Iyul_Avgust_Sentabr_Oktabr_Noyabr_Dekabr".split("_"),
-					monthsShort: "Yan_Fev_Mar_Apr_May_Iyun_Iyul_Avg_Sen_Okt_Noy_Dek".split("_"),
-					weekdays: "Yakshanba_Dushanba_Seshanba_Chorshanba_Payshanba_Juma_Shanba".split("_"),
-					weekdaysShort: "Yak_Dush_Sesh_Chor_Pay_Jum_Shan".split("_"),
-					weekdaysMin: "Ya_Du_Se_Cho_Pa_Ju_Sha".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "D MMMM YYYY, dddd HH:mm"
-					},
-					calendar: {
-						sameDay: "[Bugun soat] LT [da]",
-						nextDay: "[Ertaga] LT [da]",
-						nextWeek: "dddd [kuni soat] LT [da]",
-						lastDay: "[Kecha soat] LT [da]",
-						lastWeek: "[O'tgan] dddd [kuni soat] LT [da]",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "Yaqin %s ichida",
-						past: "Bir necha %s oldin",
-						s: "soniya",
-						ss: "%d soniya",
-						m: "bir daqiqa",
-						mm: "%d daqiqa",
-						h: "bir soat",
-						hh: "%d soat",
-						d: "bir kun",
-						dd: "%d kun",
-						M: "bir oy",
-						MM: "%d oy",
-						y: "bir yil",
-						yy: "%d yil"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/uz.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("uz", {
-					months: "январ_феврал_март_апрел_май_июн_июл_август_сентябр_октябр_ноябр_декабр".split("_"),
-					monthsShort: "янв_фев_мар_апр_май_июн_июл_авг_сен_окт_ноя_дек".split("_"),
-					weekdays: "Якшанба_Душанба_Сешанба_Чоршанба_Пайшанба_Жума_Шанба".split("_"),
-					weekdaysShort: "Якш_Душ_Сеш_Чор_Пай_Жум_Шан".split("_"),
-					weekdaysMin: "Як_Ду_Се_Чо_Па_Жу_Ша".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "D MMMM YYYY, dddd HH:mm"
-					},
-					calendar: {
-						sameDay: "[Бугун соат] LT [да]",
-						nextDay: "[Эртага] LT [да]",
-						nextWeek: "dddd [куни соат] LT [да]",
-						lastDay: "[Кеча соат] LT [да]",
-						lastWeek: "[Утган] dddd [куни соат] LT [да]",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "Якин %s ичида",
-						past: "Бир неча %s олдин",
-						s: "фурсат",
-						ss: "%d фурсат",
-						m: "бир дакика",
-						mm: "%d дакика",
-						h: "бир соат",
-						hh: "%d соат",
-						d: "бир кун",
-						dd: "%d кун",
-						M: "бир ой",
-						MM: "%d ой",
-						y: "бир йил",
-						yy: "%d йил"
-					},
-					week: {
-						dow: 1,
-						doy: 7
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/vi.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("vi", {
-					months: "tháng 1_tháng 2_tháng 3_tháng 4_tháng 5_tháng 6_tháng 7_tháng 8_tháng 9_tháng 10_tháng 11_tháng 12".split("_"),
-					monthsShort: "Th01_Th02_Th03_Th04_Th05_Th06_Th07_Th08_Th09_Th10_Th11_Th12".split("_"),
-					monthsParseExact: !0,
-					weekdays: "chủ nhật_thứ hai_thứ ba_thứ tư_thứ năm_thứ sáu_thứ bảy".split("_"),
-					weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"),
-					weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"),
-					weekdaysParseExact: !0,
-					meridiemParse: /sa|ch/i,
-					isPM: function(e) {
-						return /^ch$/i.test(e)
-					},
-					meridiem: function(e, t, n) {
-						return e < 12 ? n ? "sa" : "SA" : n ? "ch" : "CH"
-					},
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM [năm] YYYY",
-						LLL: "D MMMM [năm] YYYY HH:mm",
-						LLLL: "dddd, D MMMM [năm] YYYY HH:mm",
-						l: "DD/M/YYYY",
-						ll: "D MMM YYYY",
-						lll: "D MMM YYYY HH:mm",
-						llll: "ddd, D MMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[Hôm nay lúc] LT",
-						nextDay: "[Ngày mai lúc] LT",
-						nextWeek: "dddd [tuần tới lúc] LT",
-						lastDay: "[Hôm qua lúc] LT",
-						lastWeek: "dddd [tuần trước lúc] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "%s tới",
-						past: "%s trước",
-						s: "vài giây",
-						ss: "%d giây",
-						m: "một phút",
-						mm: "%d phút",
-						h: "một giờ",
-						hh: "%d giờ",
-						d: "một ngày",
-						dd: "%d ngày",
-						M: "một tháng",
-						MM: "%d tháng",
-						y: "một năm",
-						yy: "%d năm"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}/,
-					ordinal: function(e) {
-						return e
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/x-pseudo.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("x-pseudo", {
-					months: "J~áñúá~rý_F~ébrú~árý_~Márc~h_Áp~ríl_~Máý_~Júñé~_Júl~ý_Áú~gúst~_Sép~témb~ér_Ó~ctób~ér_Ñ~óvém~bér_~Décé~mbér".split("_"),
-					monthsShort: "J~áñ_~Féb_~Már_~Ápr_~Máý_~Júñ_~Júl_~Áúg_~Sép_~Óct_~Ñóv_~Déc".split("_"),
-					monthsParseExact: !0,
-					weekdays: "S~úñdá~ý_Mó~ñdáý~_Túé~sdáý~_Wéd~ñésd~áý_T~húrs~dáý_~Fríd~áý_S~átúr~dáý".split("_"),
-					weekdaysShort: "S~úñ_~Móñ_~Túé_~Wéd_~Thú_~Frí_~Sát".split("_"),
-					weekdaysMin: "S~ú_Mó~_Tú_~Wé_T~h_Fr~_Sá".split("_"),
-					weekdaysParseExact: !0,
-					longDateFormat: {
-						LT: "HH:mm",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY HH:mm",
-						LLLL: "dddd, D MMMM YYYY HH:mm"
-					},
-					calendar: {
-						sameDay: "[T~ódá~ý át] LT",
-						nextDay: "[T~ómó~rró~w át] LT",
-						nextWeek: "dddd [át] LT",
-						lastDay: "[Ý~ést~érdá~ý át] LT",
-						lastWeek: "[L~ást] dddd [át] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "í~ñ %s",
-						past: "%s á~gó",
-						s: "á ~féw ~sécó~ñds",
-						ss: "%d s~écóñ~ds",
-						m: "á ~míñ~úté",
-						mm: "%d m~íñú~tés",
-						h: "á~ñ hó~úr",
-						hh: "%d h~óúrs",
-						d: "á ~dáý",
-						dd: "%d d~áýs",
-						M: "á ~móñ~th",
-						MM: "%d m~óñt~hs",
-						y: "á ~ýéár",
-						yy: "%d ý~éárs"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(th|st|nd|rd)/,
-					ordinal: function(e) {
-						var t = e % 10;
-						return e + (1 == ~~(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/yo.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("yo", {
-					months: "Sẹ́rẹ́_Èrèlè_Ẹrẹ̀nà_Ìgbé_Èbibi_Òkùdu_Agẹmo_Ògún_Owewe_Ọ̀wàrà_Bélú_Ọ̀pẹ̀̀".split("_"),
-					monthsShort: "Sẹ́r_Èrl_Ẹrn_Ìgb_Èbi_Òkù_Agẹ_Ògú_Owe_Ọ̀wà_Bél_Ọ̀pẹ̀̀".split("_"),
-					weekdays: "Àìkú_Ajé_Ìsẹ́gun_Ọjọ́rú_Ọjọ́bọ_Ẹtì_Àbámẹ́ta".split("_"),
-					weekdaysShort: "Àìk_Ajé_Ìsẹ́_Ọjr_Ọjb_Ẹtì_Àbá".split("_"),
-					weekdaysMin: "Àì_Aj_Ìs_Ọr_Ọb_Ẹt_Àb".split("_"),
-					longDateFormat: {
-						LT: "h:mm A",
-						LTS: "h:mm:ss A",
-						L: "DD/MM/YYYY",
-						LL: "D MMMM YYYY",
-						LLL: "D MMMM YYYY h:mm A",
-						LLLL: "dddd, D MMMM YYYY h:mm A"
-					},
-					calendar: {
-						sameDay: "[Ònì ni] LT",
-						nextDay: "[Ọ̀la ni] LT",
-						nextWeek: "dddd [Ọsẹ̀ tón'bọ] [ni] LT",
-						lastDay: "[Àna ni] LT",
-						lastWeek: "dddd [Ọsẹ̀ tólọ́] [ni] LT",
-						sameElse: "L"
-					},
-					relativeTime: {
-						future: "ní %s",
-						past: "%s kọjá",
-						s: "ìsẹjú aayá die",
-						ss: "aayá %d",
-						m: "ìsẹjú kan",
-						mm: "ìsẹjú %d",
-						h: "wákati kan",
-						hh: "wákati %d",
-						d: "ọjọ́ kan",
-						dd: "ọjọ́ %d",
-						M: "osù kan",
-						MM: "osù %d",
-						y: "ọdún kan",
-						yy: "ọdún %d"
-					},
-					dayOfMonthOrdinalParse: /ọjọ́\s\d{1,2}/,
-					ordinal: "ọjọ́ %d",
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/zh-cn.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("zh-cn", {
-					months: "一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月".split("_"),
-					monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
-					weekdays: "星期日_星期一_星期二_星期三_星期四_星期五_星期六".split("_"),
-					weekdaysShort: "周日_周一_周二_周三_周四_周五_周六".split("_"),
-					weekdaysMin: "日_一_二_三_四_五_六".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY/MM/DD",
-						LL: "YYYY年M月D日",
-						LLL: "YYYY年M月D日Ah点mm分",
-						LLLL: "YYYY年M月D日ddddAh点mm分",
-						l: "YYYY/M/D",
-						ll: "YYYY年M月D日",
-						lll: "YYYY年M月D日 HH:mm",
-						llll: "YYYY年M月D日dddd HH:mm"
-					},
-					meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "凌晨" === t || "早上" === t || "上午" === t ? e : "下午" === t || "晚上" === t ? e + 12 : e >= 11 ? e : e + 12
-					},
-					meridiem: function(e, t, n) {
-						var a = 100 * e + t;
-						return a < 600 ? "凌晨" : a < 900 ? "早上" : a < 1130 ? "上午" : a < 1230 ? "中午" : a < 1800 ? "下午" : "晚上"
-					},
-					calendar: {
-						sameDay: "[今天]LT",
-						nextDay: "[明天]LT",
-						nextWeek: "[下]ddddLT",
-						lastDay: "[昨天]LT",
-						lastWeek: "[上]ddddLT",
-						sameElse: "L"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(日|月|周)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "d":
-							case "D":
-							case "DDD":
-								return e + "日";
-							case "M":
-								return e + "月";
-							case "w":
-							case "W":
-								return e + "周";
-							default:
-								return e
-						}
-					},
-					relativeTime: {
-						future: "%s后",
-						past: "%s前",
-						s: "几秒",
-						ss: "%d 秒",
-						m: "1 分钟",
-						mm: "%d 分钟",
-						h: "1 小时",
-						hh: "%d 小时",
-						d: "1 天",
-						dd: "%d 天",
-						M: "1 个月",
-						MM: "%d 个月",
-						y: "1 年",
-						yy: "%d 年"
-					},
-					week: {
-						dow: 1,
-						doy: 4
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/zh-hk.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("zh-hk", {
-					months: "一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月".split("_"),
-					monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
-					weekdays: "星期日_星期一_星期二_星期三_星期四_星期五_星期六".split("_"),
-					weekdaysShort: "週日_週一_週二_週三_週四_週五_週六".split("_"),
-					weekdaysMin: "日_一_二_三_四_五_六".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY/MM/DD",
-						LL: "YYYY年M月D日",
-						LLL: "YYYY年M月D日 HH:mm",
-						LLLL: "YYYY年M月D日dddd HH:mm",
-						l: "YYYY/M/D",
-						ll: "YYYY年M月D日",
-						lll: "YYYY年M月D日 HH:mm",
-						llll: "YYYY年M月D日dddd HH:mm"
-					},
-					meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "凌晨" === t || "早上" === t || "上午" === t ? e : "中午" === t ? e >= 11 ? e : e + 12 : "下午" === t || "晚上" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						var a = 100 * e + t;
-						return a < 600 ? "凌晨" : a < 900 ? "早上" : a < 1200 ? "上午" : 1200 === a ? "中午" : a < 1800 ? "下午" : "晚上"
-					},
-					calendar: {
-						sameDay: "[今天]LT",
-						nextDay: "[明天]LT",
-						nextWeek: "[下]ddddLT",
-						lastDay: "[昨天]LT",
-						lastWeek: "[上]ddddLT",
-						sameElse: "L"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "d":
-							case "D":
-							case "DDD":
-								return e + "日";
-							case "M":
-								return e + "月";
-							case "w":
-							case "W":
-								return e + "週";
-							default:
-								return e
-						}
-					},
-					relativeTime: {
-						future: "%s後",
-						past: "%s前",
-						s: "幾秒",
-						ss: "%d 秒",
-						m: "1 分鐘",
-						mm: "%d 分鐘",
-						h: "1 小時",
-						hh: "%d 小時",
-						d: "1 天",
-						dd: "%d 天",
-						M: "1 個月",
-						MM: "%d 個月",
-						y: "1 年",
-						yy: "%d 年"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/zh-mo.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("zh-mo", {
-					months: "一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月".split("_"),
-					monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
-					weekdays: "星期日_星期一_星期二_星期三_星期四_星期五_星期六".split("_"),
-					weekdaysShort: "週日_週一_週二_週三_週四_週五_週六".split("_"),
-					weekdaysMin: "日_一_二_三_四_五_六".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "DD/MM/YYYY",
-						LL: "YYYY年M月D日",
-						LLL: "YYYY年M月D日 HH:mm",
-						LLLL: "YYYY年M月D日dddd HH:mm",
-						l: "D/M/YYYY",
-						ll: "YYYY年M月D日",
-						lll: "YYYY年M月D日 HH:mm",
-						llll: "YYYY年M月D日dddd HH:mm"
-					},
-					meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "凌晨" === t || "早上" === t || "上午" === t ? e : "中午" === t ? e >= 11 ? e : e + 12 : "下午" === t || "晚上" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						var a = 100 * e + t;
-						return a < 600 ? "凌晨" : a < 900 ? "早上" : a < 1130 ? "上午" : a < 1230 ? "中午" : a < 1800 ? "下午" : "晚上"
-					},
-					calendar: {
-						sameDay: "[今天] LT",
-						nextDay: "[明天] LT",
-						nextWeek: "[下]dddd LT",
-						lastDay: "[昨天] LT",
-						lastWeek: "[上]dddd LT",
-						sameElse: "L"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "d":
-							case "D":
-							case "DDD":
-								return e + "日";
-							case "M":
-								return e + "月";
-							case "w":
-							case "W":
-								return e + "週";
-							default:
-								return e
-						}
-					},
-					relativeTime: {
-						future: "%s內",
-						past: "%s前",
-						s: "幾秒",
-						ss: "%d 秒",
-						m: "1 分鐘",
-						mm: "%d 分鐘",
-						h: "1 小時",
-						hh: "%d 小時",
-						d: "1 天",
-						dd: "%d 天",
-						M: "1 個月",
-						MM: "%d 個月",
-						y: "1 年",
-						yy: "%d 年"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/locale/zh-tw.js": function(e, t, n) {
-			! function(e) {
-				"use strict";
-				e.defineLocale("zh-tw", {
-					months: "一月_二月_三月_四月_五月_六月_七月_八月_九月_十月_十一月_十二月".split("_"),
-					monthsShort: "1月_2月_3月_4月_5月_6月_7月_8月_9月_10月_11月_12月".split("_"),
-					weekdays: "星期日_星期一_星期二_星期三_星期四_星期五_星期六".split("_"),
-					weekdaysShort: "週日_週一_週二_週三_週四_週五_週六".split("_"),
-					weekdaysMin: "日_一_二_三_四_五_六".split("_"),
-					longDateFormat: {
-						LT: "HH:mm",
-						LTS: "HH:mm:ss",
-						L: "YYYY/MM/DD",
-						LL: "YYYY年M月D日",
-						LLL: "YYYY年M月D日 HH:mm",
-						LLLL: "YYYY年M月D日dddd HH:mm",
-						l: "YYYY/M/D",
-						ll: "YYYY年M月D日",
-						lll: "YYYY年M月D日 HH:mm",
-						llll: "YYYY年M月D日dddd HH:mm"
-					},
-					meridiemParse: /凌晨|早上|上午|中午|下午|晚上/,
-					meridiemHour: function(e, t) {
-						return 12 === e && (e = 0), "凌晨" === t || "早上" === t || "上午" === t ? e : "中午" === t ? e >= 11 ? e : e + 12 : "下午" === t || "晚上" === t ? e + 12 : void 0
-					},
-					meridiem: function(e, t, n) {
-						var a = 100 * e + t;
-						return a < 600 ? "凌晨" : a < 900 ? "早上" : a < 1130 ? "上午" : a < 1230 ? "中午" : a < 1800 ? "下午" : "晚上"
-					},
-					calendar: {
-						sameDay: "[今天] LT",
-						nextDay: "[明天] LT",
-						nextWeek: "[下]dddd LT",
-						lastDay: "[昨天] LT",
-						lastWeek: "[上]dddd LT",
-						sameElse: "L"
-					},
-					dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/,
-					ordinal: function(e, t) {
-						switch (t) {
-							case "d":
-							case "D":
-							case "DDD":
-								return e + "日";
-							case "M":
-								return e + "月";
-							case "w":
-							case "W":
-								return e + "週";
-							default:
-								return e
-						}
-					},
-					relativeTime: {
-						future: "%s後",
-						past: "%s前",
-						s: "幾秒",
-						ss: "%d 秒",
-						m: "1 分鐘",
-						mm: "%d 分鐘",
-						h: "1 小時",
-						hh: "%d 小時",
-						d: "1 天",
-						dd: "%d 天",
-						M: "1 個月",
-						MM: "%d 個月",
-						y: "1 年",
-						yy: "%d 年"
-					}
-				})
-			}(n("./node_modules/moment/moment.js"))
-		},
-		"./node_modules/moment/moment.js": function(e, t, n) {
-			(function(e) {
-				e.exports = function() {
-					"use strict";
-					var t, a;
-
-					function r() {
-						return t.apply(null, arguments)
-					}
-
-					function i(e) {
-						return e instanceof Array || "[object Array]" === Object.prototype.toString.call(e)
-					}
-
-					function s(e) {
-						return null != e && "[object Object]" === Object.prototype.toString.call(e)
-					}
-
-					function o(e, t) {
-						return Object.prototype.hasOwnProperty.call(e, t)
-					}
-
-					function d(e) {
-						if (Object.getOwnPropertyNames) return 0 === Object.getOwnPropertyNames(e).length;
-						var t;
-						for (t in e)
-							if (o(e, t)) return !1;
-						return !0
-					}
-
-					function l(e) {
-						return void 0 === e
-					}
-
-					function u(e) {
-						return "number" == typeof e || "[object Number]" === Object.prototype.toString.call(e)
-					}
-
-					function _(e) {
-						return e instanceof Date || "[object Date]" === Object.prototype.toString.call(e)
-					}
-
-					function m(e, t) {
-						var n, a = [];
-						for (n = 0; n < e.length; ++n) a.push(t(e[n], n));
-						return a
-					}
-
-					function c(e, t) {
-						for (var n in t) o(t, n) && (e[n] = t[n]);
-						return o(t, "toString") && (e.toString = t.toString), o(t, "valueOf") && (e.valueOf = t.valueOf), e
-					}
-
-					function h(e, t, n, a) {
-						return At(e, t, n, a, !0).utc()
-					}
-
-					function f(e) {
-						return null == e._pf && (e._pf = {
-							empty: !1,
-							unusedTokens: [],
-							unusedInput: [],
-							overflow: -2,
-							charsLeftOver: 0,
-							nullInput: !1,
-							invalidEra: null,
-							invalidMonth: null,
-							invalidFormat: !1,
-							userInvalidated: !1,
-							iso: !1,
-							parsedDateParts: [],
-							era: null,
-							meridiem: null,
-							rfc2822: !1,
-							weekdayMismatch: !1
-						}), e._pf
-					}
-
-					function p(e) {
-						if (null == e._isValid) {
-							var t = f(e),
-								n = a.call(t.parsedDateParts, (function(e) {
-									return null != e
-								})),
-								r = !isNaN(e._d.getTime()) && t.overflow < 0 && !t.empty && !t.invalidEra && !t.invalidMonth && !t.invalidWeekday && !t.weekdayMismatch && !t.nullInput && !t.invalidFormat && !t.userInvalidated && (!t.meridiem || t.meridiem && n);
-							if (e._strict && (r = r && 0 === t.charsLeftOver && 0 === t.unusedTokens.length && void 0 === t.bigHour), null != Object.isFrozen && Object.isFrozen(e)) return r;
-							e._isValid = r
-						}
-						return e._isValid
-					}
-
-					function M(e) {
-						var t = h(NaN);
-						return null != e ? c(f(t), e) : f(t).userInvalidated = !0, t
-					}
-					a = Array.prototype.some ? Array.prototype.some : function(e) {
-						var t, n = Object(this),
-							a = n.length >>> 0;
-						for (t = 0; t < a; t++)
-							if (t in n && e.call(this, n[t], t, n)) return !0;
-						return !1
-					};
-					var y = r.momentProperties = [],
-						g = !1;
-
-					function L(e, t) {
-						var n, a, r;
-						if (l(t._isAMomentObject) || (e._isAMomentObject = t._isAMomentObject), l(t._i) || (e._i = t._i), l(t._f) || (e._f = t._f), l(t._l) || (e._l = t._l), l(t._strict) || (e._strict = t._strict), l(t._tzm) || (e._tzm = t._tzm), l(t._isUTC) || (e._isUTC = t._isUTC), l(t._offset) || (e._offset = t._offset), l(t._pf) || (e._pf = f(t)), l(t._locale) || (e._locale = t._locale), y.length > 0)
-							for (n = 0; n < y.length; n++) l(r = t[a = y[n]]) || (e[a] = r);
-						return e
-					}
-
-					function Y(e) {
-						L(this, e), this._d = new Date(null != e._d ? e._d.getTime() : NaN), this.isValid() || (this._d = new Date(NaN)), !1 === g && (g = !0, r.updateOffset(this), g = !1)
-					}
-
-					function v(e) {
-						return e instanceof Y || null != e && null != e._isAMomentObject
-					}
-
-					function k(e) {
-						!1 === r.suppressDeprecationWarnings && "undefined" != typeof console && console.warn && console.warn("Deprecation warning: " + e)
-					}
-
-					function b(e, t) {
-						var n = !0;
-						return c((function() {
-							if (null != r.deprecationHandler && r.deprecationHandler(null, e), n) {
-								var a, i, s, d = [];
-								for (i = 0; i < arguments.length; i++) {
-									if (a = "", "object" == typeof arguments[i]) {
-										for (s in a += "\n[" + i + "] ", arguments[0]) o(arguments[0], s) && (a += s + ": " + arguments[0][s] + ", ");
-										a = a.slice(0, -2)
-									} else a = arguments[i];
-									d.push(a)
-								}
-								k(e + "\nArguments: " + Array.prototype.slice.call(d).join("") + "\n" + (new Error).stack), n = !1
-							}
-							return t.apply(this, arguments)
-						}), t)
-					}
-					var D, w = {};
-
-					function T(e, t) {
-						null != r.deprecationHandler && r.deprecationHandler(e, t), w[e] || (k(t), w[e] = !0)
-					}
-
-					function x(e) {
-						return "undefined" != typeof Function && e instanceof Function || "[object Function]" === Object.prototype.toString.call(e)
-					}
-
-					function S(e, t) {
-						var n, a = c({}, e);
-						for (n in t) o(t, n) && (s(e[n]) && s(t[n]) ? (a[n] = {}, c(a[n], e[n]), c(a[n], t[n])) : null != t[n] ? a[n] = t[n] : delete a[n]);
-						for (n in e) o(e, n) && !o(t, n) && s(e[n]) && (a[n] = c({}, a[n]));
-						return a
-					}
-
-					function H(e) {
-						null != e && this.set(e)
-					}
-
-					function j(e, t, n) {
-						var a = "" + Math.abs(e),
-							r = t - a.length;
-						return (e >= 0 ? n ? "+" : "" : "-") + Math.pow(10, Math.max(0, r)).toString().substr(1) + a
-					}
-					r.suppressDeprecationWarnings = !1, r.deprecationHandler = null, D = Object.keys ? Object.keys : function(e) {
-						var t, n = [];
-						for (t in e) o(e, t) && n.push(t);
-						return n
-					};
-					var P = /(\[[^\[]*\])|(\\)?([Hh]mm(ss)?|Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Qo?|N{1,5}|YYYYYY|YYYYY|YYYY|YY|y{2,4}|yo?|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|kk?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g,
-						O = /(\[[^\[]*\])|(\\)?(LTS|LT|LL?L?L?|l{1,4})/g,
-						A = {},
-						F = {};
-
-					function W(e, t, n, a) {
-						var r = a;
-						"string" == typeof a && (r = function() {
-							return this[a]()
-						}), e && (F[e] = r), t && (F[t[0]] = function() {
-							return j(r.apply(this, arguments), t[1], t[2])
-						}), n && (F[n] = function() {
-							return this.localeData().ordinal(r.apply(this, arguments), e)
-						})
-					}
-
-					function C(e, t) {
-						return e.isValid() ? (t = E(t, e.localeData()), A[t] = A[t] || function(e) {
-							var t, n, a, r = e.match(P);
-							for (t = 0, n = r.length; t < n; t++) F[r[t]] ? r[t] = F[r[t]] : r[t] = (a = r[t]).match(/\[[\s\S]/) ? a.replace(/^\[|\]$/g, "") : a.replace(/\\/g, "");
-							return function(t) {
-								var a, i = "";
-								for (a = 0; a < n; a++) i += x(r[a]) ? r[a].call(t, e) : r[a];
-								return i
-							}
-						}(t), A[t](e)) : e.localeData().invalidDate()
-					}
-
-					function E(e, t) {
-						var n = 5;
-
-						function a(e) {
-							return t.longDateFormat(e) || e
-						}
-						for (O.lastIndex = 0; n >= 0 && O.test(e);) e = e.replace(O, a), O.lastIndex = 0, n -= 1;
-						return e
-					}
-					var I = {};
-
-					function z(e, t) {
-						var n = e.toLowerCase();
-						I[n] = I[n + "s"] = I[t] = e
-					}
-
-					function N(e) {
-						return "string" == typeof e ? I[e] || I[e.toLowerCase()] : void 0
-					}
-
-					function R(e) {
-						var t, n, a = {};
-						for (n in e) o(e, n) && (t = N(n)) && (a[t] = e[n]);
-						return a
-					}
-					var V = {};
-
-					function B(e, t) {
-						V[e] = t
-					}
-
-					function J(e) {
-						return e % 4 == 0 && e % 100 != 0 || e % 400 == 0
-					}
-
-					function U(e) {
-						return e < 0 ? Math.ceil(e) || 0 : Math.floor(e)
-					}
-
-					function G(e) {
-						var t = +e,
-							n = 0;
-						return 0 !== t && isFinite(t) && (n = U(t)), n
-					}
-
-					function q(e, t) {
-						return function(n) {
-							return null != n ? (Z(this, e, n), r.updateOffset(this, t), this) : K(this, e)
-						}
-					}
-
-					function K(e, t) {
-						return e.isValid() ? e._d["get" + (e._isUTC ? "UTC" : "") + t]() : NaN
-					}
-
-					function Z(e, t, n) {
-						e.isValid() && !isNaN(n) && ("FullYear" === t && J(e.year()) && 1 === e.month() && 29 === e.date() ? (n = G(n), e._d["set" + (e._isUTC ? "UTC" : "") + t](n, e.month(), je(n, e.month()))) : e._d["set" + (e._isUTC ? "UTC" : "") + t](n))
-					}
-					var $, X = /\d/,
-						Q = /\d\d/,
-						ee = /\d{3}/,
-						te = /\d{4}/,
-						ne = /[+-]?\d{6}/,
-						ae = /\d\d?/,
-						re = /\d\d\d\d?/,
-						ie = /\d\d\d\d\d\d?/,
-						se = /\d{1,3}/,
-						oe = /\d{1,4}/,
-						de = /[+-]?\d{1,6}/,
-						le = /\d+/,
-						ue = /[+-]?\d+/,
-						_e = /Z|[+-]\d\d:?\d\d/gi,
-						me = /Z|[+-]\d\d(?::?\d\d)?/gi,
-						ce = /[0-9]{0,256}['a-z\u00A0-\u05FF\u0700-\uD7FF\uF900-\uFDCF\uFDF0-\uFF07\uFF10-\uFFEF]{1,256}|[\u0600-\u06FF\/]{1,256}(\s*?[\u0600-\u06FF]{1,256}){1,2}/i;
-
-					function he(e, t, n) {
-						$[e] = x(t) ? t : function(e, a) {
-							return e && n ? n : t
-						}
-					}
-
-					function fe(e, t) {
-						return o($, e) ? $[e](t._strict, t._locale) : new RegExp(pe(e.replace("\\", "").replace(/\\(\[)|\\(\])|\[([^\]\[]*)\]|\\(.)/g, (function(e, t, n, a, r) {
-							return t || n || a || r
-						}))))
-					}
-
-					function pe(e) {
-						return e.replace(/[-\/\\^$*+?.()|[\]{}]/g, "\\$&")
-					}
-					$ = {};
-					var Me = {};
-
-					function ye(e, t) {
-						var n, a = t;
-						for ("string" == typeof e && (e = [e]), u(t) && (a = function(e, n) {
-								n[t] = G(e)
-							}), n = 0; n < e.length; n++) Me[e[n]] = a
-					}
-
-					function ge(e, t) {
-						ye(e, (function(e, n, a, r) {
-							a._w = a._w || {}, t(e, a._w, a, r)
-						}))
-					}
-
-					function Le(e, t, n) {
-						null != t && o(Me, e) && Me[e](t, n._a, n, e)
-					}
-					var Ye, ve = 0,
-						ke = 1,
-						be = 2,
-						De = 3,
-						we = 4,
-						Te = 5,
-						xe = 6,
-						Se = 7,
-						He = 8;
-
-					function je(e, t) {
-						if (isNaN(e) || isNaN(t)) return NaN;
-						var n, a = (t % (n = 12) + n) % n;
-						return e += (t - a) / 12, 1 === a ? J(e) ? 29 : 28 : 31 - a % 7 % 2
-					}
-					Ye = Array.prototype.indexOf ? Array.prototype.indexOf : function(e) {
-						var t;
-						for (t = 0; t < this.length; ++t)
-							if (this[t] === e) return t;
-						return -1
-					}, W("M", ["MM", 2], "Mo", (function() {
-						return this.month() + 1
-					})), W("MMM", 0, 0, (function(e) {
-						return this.localeData().monthsShort(this, e)
-					})), W("MMMM", 0, 0, (function(e) {
-						return this.localeData().months(this, e)
-					})), z("month", "M"), B("month", 8), he("M", ae), he("MM", ae, Q), he("MMM", (function(e, t) {
-						return t.monthsShortRegex(e)
-					})), he("MMMM", (function(e, t) {
-						return t.monthsRegex(e)
-					})), ye(["M", "MM"], (function(e, t) {
-						t[ke] = G(e) - 1
-					})), ye(["MMM", "MMMM"], (function(e, t, n, a) {
-						var r = n._locale.monthsParse(e, a, n._strict);
-						null != r ? t[ke] = r : f(n).invalidMonth = e
-					}));
-					var Pe = "January_February_March_April_May_June_July_August_September_October_November_December".split("_"),
-						Oe = "Jan_Feb_Mar_Apr_May_Jun_Jul_Aug_Sep_Oct_Nov_Dec".split("_"),
-						Ae = /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?/,
-						Fe = ce,
-						We = ce;
-
-					function Ce(e, t, n) {
-						var a, r, i, s = e.toLocaleLowerCase();
-						if (!this._monthsParse)
-							for (this._monthsParse = [], this._longMonthsParse = [], this._shortMonthsParse = [], a = 0; a < 12; ++a) i = h([2e3, a]), this._shortMonthsParse[a] = this.monthsShort(i, "").toLocaleLowerCase(), this._longMonthsParse[a] = this.months(i, "").toLocaleLowerCase();
-						return n ? "MMM" === t ? -1 !== (r = Ye.call(this._shortMonthsParse, s)) ? r : null : -1 !== (r = Ye.call(this._longMonthsParse, s)) ? r : null : "MMM" === t ? -1 !== (r = Ye.call(this._shortMonthsParse, s)) ? r : -1 !== (r = Ye.call(this._longMonthsParse, s)) ? r : null : -1 !== (r = Ye.call(this._longMonthsParse, s)) ? r : -1 !== (r = Ye.call(this._shortMonthsParse, s)) ? r : null
-					}
-
-					function Ee(e, t) {
-						var n;
-						if (!e.isValid()) return e;
-						if ("string" == typeof t)
-							if (/^\d+$/.test(t)) t = G(t);
-							else if (!u(t = e.localeData().monthsParse(t))) return e;
-						return n = Math.min(e.date(), je(e.year(), t)), e._d["set" + (e._isUTC ? "UTC" : "") + "Month"](t, n), e
-					}
-
-					function Ie(e) {
-						return null != e ? (Ee(this, e), r.updateOffset(this, !0), this) : K(this, "Month")
-					}
-
-					function ze() {
-						function e(e, t) {
-							return t.length - e.length
-						}
-						var t, n, a = [],
-							r = [],
-							i = [];
-						for (t = 0; t < 12; t++) n = h([2e3, t]), a.push(this.monthsShort(n, "")), r.push(this.months(n, "")), i.push(this.months(n, "")), i.push(this.monthsShort(n, ""));
-						for (a.sort(e), r.sort(e), i.sort(e), t = 0; t < 12; t++) a[t] = pe(a[t]), r[t] = pe(r[t]);
-						for (t = 0; t < 24; t++) i[t] = pe(i[t]);
-						this._monthsRegex = new RegExp("^(" + i.join("|") + ")", "i"), this._monthsShortRegex = this._monthsRegex, this._monthsStrictRegex = new RegExp("^(" + r.join("|") + ")", "i"), this._monthsShortStrictRegex = new RegExp("^(" + a.join("|") + ")", "i")
-					}
-
-					function Ne(e) {
-						return J(e) ? 366 : 365
-					}
-					W("Y", 0, 0, (function() {
-						var e = this.year();
-						return e <= 9999 ? j(e, 4) : "+" + e
-					})), W(0, ["YY", 2], 0, (function() {
-						return this.year() % 100
-					})), W(0, ["YYYY", 4], 0, "year"), W(0, ["YYYYY", 5], 0, "year"), W(0, ["YYYYYY", 6, !0], 0, "year"), z("year", "y"), B("year", 1), he("Y", ue), he("YY", ae, Q), he("YYYY", oe, te), he("YYYYY", de, ne), he("YYYYYY", de, ne), ye(["YYYYY", "YYYYYY"], ve), ye("YYYY", (function(e, t) {
-						t[ve] = 2 === e.length ? r.parseTwoDigitYear(e) : G(e)
-					})), ye("YY", (function(e, t) {
-						t[ve] = r.parseTwoDigitYear(e)
-					})), ye("Y", (function(e, t) {
-						t[ve] = parseInt(e, 10)
-					})), r.parseTwoDigitYear = function(e) {
-						return G(e) + (G(e) > 68 ? 1900 : 2e3)
-					};
-					var Re = q("FullYear", !0);
-
-					function Ve(e, t, n, a, r, i, s) {
-						var o;
-						return e < 100 && e >= 0 ? (o = new Date(e + 400, t, n, a, r, i, s), isFinite(o.getFullYear()) && o.setFullYear(e)) : o = new Date(e, t, n, a, r, i, s), o
-					}
-
-					function Be(e) {
-						var t, n;
-						return e < 100 && e >= 0 ? ((n = Array.prototype.slice.call(arguments))[0] = e + 400, t = new Date(Date.UTC.apply(null, n)), isFinite(t.getUTCFullYear()) && t.setUTCFullYear(e)) : t = new Date(Date.UTC.apply(null, arguments)), t
-					}
-
-					function Je(e, t, n) {
-						var a = 7 + t - n;
-						return -(7 + Be(e, 0, a).getUTCDay() - t) % 7 + a - 1
-					}
-
-					function Ue(e, t, n, a, r) {
-						var i, s, o = 1 + 7 * (t - 1) + (7 + n - a) % 7 + Je(e, a, r);
-						return o <= 0 ? s = Ne(i = e - 1) + o : o > Ne(e) ? (i = e + 1, s = o - Ne(e)) : (i = e, s = o), {
-							year: i,
-							dayOfYear: s
-						}
-					}
-
-					function Ge(e, t, n) {
-						var a, r, i = Je(e.year(), t, n),
-							s = Math.floor((e.dayOfYear() - i - 1) / 7) + 1;
-						return s < 1 ? a = s + qe(r = e.year() - 1, t, n) : s > qe(e.year(), t, n) ? (a = s - qe(e.year(), t, n), r = e.year() + 1) : (r = e.year(), a = s), {
-							week: a,
-							year: r
-						}
-					}
-
-					function qe(e, t, n) {
-						var a = Je(e, t, n),
-							r = Je(e + 1, t, n);
-						return (Ne(e) - a + r) / 7
-					}
-
-					function Ke(e, t) {
-						return e.slice(t, 7).concat(e.slice(0, t))
-					}
-					W("w", ["ww", 2], "wo", "week"), W("W", ["WW", 2], "Wo", "isoWeek"), z("week", "w"), z("isoWeek", "W"), B("week", 5), B("isoWeek", 5), he("w", ae), he("ww", ae, Q), he("W", ae), he("WW", ae, Q), ge(["w", "ww", "W", "WW"], (function(e, t, n, a) {
-						t[a.substr(0, 1)] = G(e)
-					})), W("d", 0, "do", "day"), W("dd", 0, 0, (function(e) {
-						return this.localeData().weekdaysMin(this, e)
-					})), W("ddd", 0, 0, (function(e) {
-						return this.localeData().weekdaysShort(this, e)
-					})), W("dddd", 0, 0, (function(e) {
-						return this.localeData().weekdays(this, e)
-					})), W("e", 0, 0, "weekday"), W("E", 0, 0, "isoWeekday"), z("day", "d"), z("weekday", "e"), z("isoWeekday", "E"), B("day", 11), B("weekday", 11), B("isoWeekday", 11), he("d", ae), he("e", ae), he("E", ae), he("dd", (function(e, t) {
-						return t.weekdaysMinRegex(e)
-					})), he("ddd", (function(e, t) {
-						return t.weekdaysShortRegex(e)
-					})), he("dddd", (function(e, t) {
-						return t.weekdaysRegex(e)
-					})), ge(["dd", "ddd", "dddd"], (function(e, t, n, a) {
-						var r = n._locale.weekdaysParse(e, a, n._strict);
-						null != r ? t.d = r : f(n).invalidWeekday = e
-					})), ge(["d", "e", "E"], (function(e, t, n, a) {
-						t[a] = G(e)
-					}));
-					var Ze = "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"),
-						$e = "Sun_Mon_Tue_Wed_Thu_Fri_Sat".split("_"),
-						Xe = "Su_Mo_Tu_We_Th_Fr_Sa".split("_"),
-						Qe = ce,
-						et = ce,
-						tt = ce;
-
-					function nt(e, t, n) {
-						var a, r, i, s = e.toLocaleLowerCase();
-						if (!this._weekdaysParse)
-							for (this._weekdaysParse = [], this._shortWeekdaysParse = [], this._minWeekdaysParse = [], a = 0; a < 7; ++a) i = h([2e3, 1]).day(a), this._minWeekdaysParse[a] = this.weekdaysMin(i, "").toLocaleLowerCase(), this._shortWeekdaysParse[a] = this.weekdaysShort(i, "").toLocaleLowerCase(), this._weekdaysParse[a] = this.weekdays(i, "").toLocaleLowerCase();
-						return n ? "dddd" === t ? -1 !== (r = Ye.call(this._weekdaysParse, s)) ? r : null : "ddd" === t ? -1 !== (r = Ye.call(this._shortWeekdaysParse, s)) ? r : null : -1 !== (r = Ye.call(this._minWeekdaysParse, s)) ? r : null : "dddd" === t ? -1 !== (r = Ye.call(this._weekdaysParse, s)) ? r : -1 !== (r = Ye.call(this._shortWeekdaysParse, s)) ? r : -1 !== (r = Ye.call(this._minWeekdaysParse, s)) ? r : null : "ddd" === t ? -1 !== (r = Ye.call(this._shortWeekdaysParse, s)) ? r : -1 !== (r = Ye.call(this._weekdaysParse, s)) ? r : -1 !== (r = Ye.call(this._minWeekdaysParse, s)) ? r : null : -1 !== (r = Ye.call(this._minWeekdaysParse, s)) ? r : -1 !== (r = Ye.call(this._weekdaysParse, s)) ? r : -1 !== (r = Ye.call(this._shortWeekdaysParse, s)) ? r : null
-					}
-
-					function at() {
-						function e(e, t) {
-							return t.length - e.length
-						}
-						var t, n, a, r, i, s = [],
-							o = [],
-							d = [],
-							l = [];
-						for (t = 0; t < 7; t++) n = h([2e3, 1]).day(t), a = pe(this.weekdaysMin(n, "")), r = pe(this.weekdaysShort(n, "")), i = pe(this.weekdays(n, "")), s.push(a), o.push(r), d.push(i), l.push(a), l.push(r), l.push(i);
-						s.sort(e), o.sort(e), d.sort(e), l.sort(e), this._weekdaysRegex = new RegExp("^(" + l.join("|") + ")", "i"), this._weekdaysShortRegex = this._weekdaysRegex, this._weekdaysMinRegex = this._weekdaysRegex, this._weekdaysStrictRegex = new RegExp("^(" + d.join("|") + ")", "i"), this._weekdaysShortStrictRegex = new RegExp("^(" + o.join("|") + ")", "i"), this._weekdaysMinStrictRegex = new RegExp("^(" + s.join("|") + ")", "i")
-					}
-
-					function rt() {
-						return this.hours() % 12 || 12
-					}
-
-					function it(e, t) {
-						W(e, 0, 0, (function() {
-							return this.localeData().meridiem(this.hours(), this.minutes(), t)
-						}))
-					}
-
-					function st(e, t) {
-						return t._meridiemParse
-					}
-					W("H", ["HH", 2], 0, "hour"), W("h", ["hh", 2], 0, rt), W("k", ["kk", 2], 0, (function() {
-						return this.hours() || 24
-					})), W("hmm", 0, 0, (function() {
-						return "" + rt.apply(this) + j(this.minutes(), 2)
-					})), W("hmmss", 0, 0, (function() {
-						return "" + rt.apply(this) + j(this.minutes(), 2) + j(this.seconds(), 2)
-					})), W("Hmm", 0, 0, (function() {
-						return "" + this.hours() + j(this.minutes(), 2)
-					})), W("Hmmss", 0, 0, (function() {
-						return "" + this.hours() + j(this.minutes(), 2) + j(this.seconds(), 2)
-					})), it("a", !0), it("A", !1), z("hour", "h"), B("hour", 13), he("a", st), he("A", st), he("H", ae), he("h", ae), he("k", ae), he("HH", ae, Q), he("hh", ae, Q), he("kk", ae, Q), he("hmm", re), he("hmmss", ie), he("Hmm", re), he("Hmmss", ie), ye(["H", "HH"], De), ye(["k", "kk"], (function(e, t, n) {
-						var a = G(e);
-						t[De] = 24 === a ? 0 : a
-					})), ye(["a", "A"], (function(e, t, n) {
-						n._isPm = n._locale.isPM(e), n._meridiem = e
-					})), ye(["h", "hh"], (function(e, t, n) {
-						t[De] = G(e), f(n).bigHour = !0
-					})), ye("hmm", (function(e, t, n) {
-						var a = e.length - 2;
-						t[De] = G(e.substr(0, a)), t[we] = G(e.substr(a)), f(n).bigHour = !0
-					})), ye("hmmss", (function(e, t, n) {
-						var a = e.length - 4,
-							r = e.length - 2;
-						t[De] = G(e.substr(0, a)), t[we] = G(e.substr(a, 2)), t[Te] = G(e.substr(r)), f(n).bigHour = !0
-					})), ye("Hmm", (function(e, t, n) {
-						var a = e.length - 2;
-						t[De] = G(e.substr(0, a)), t[we] = G(e.substr(a))
-					})), ye("Hmmss", (function(e, t, n) {
-						var a = e.length - 4,
-							r = e.length - 2;
-						t[De] = G(e.substr(0, a)), t[we] = G(e.substr(a, 2)), t[Te] = G(e.substr(r))
-					}));
-					var ot, dt = q("Hours", !0),
-						lt = {
-							calendar: {
-								sameDay: "[Today at] LT",
-								nextDay: "[Tomorrow at] LT",
-								nextWeek: "dddd [at] LT",
-								lastDay: "[Yesterday at] LT",
-								lastWeek: "[Last] dddd [at] LT",
-								sameElse: "L"
-							},
-							longDateFormat: {
-								LTS: "h:mm:ss A",
-								LT: "h:mm A",
-								L: "MM/DD/YYYY",
-								LL: "MMMM D, YYYY",
-								LLL: "MMMM D, YYYY h:mm A",
-								LLLL: "dddd, MMMM D, YYYY h:mm A"
-							},
-							invalidDate: "Invalid date",
-							ordinal: "%d",
-							dayOfMonthOrdinalParse: /\d{1,2}/,
-							relativeTime: {
-								future: "in %s",
-								past: "%s ago",
-								s: "a few seconds",
-								ss: "%d seconds",
-								m: "a minute",
-								mm: "%d minutes",
-								h: "an hour",
-								hh: "%d hours",
-								d: "a day",
-								dd: "%d days",
-								w: "a week",
-								ww: "%d weeks",
-								M: "a month",
-								MM: "%d months",
-								y: "a year",
-								yy: "%d years"
-							},
-							months: Pe,
-							monthsShort: Oe,
-							week: {
-								dow: 0,
-								doy: 6
-							},
-							weekdays: Ze,
-							weekdaysMin: Xe,
-							weekdaysShort: $e,
-							meridiemParse: /[ap]\.?m?\.?/i
-						},
-						ut = {},
-						_t = {};
-
-					function mt(e, t) {
-						var n, a = Math.min(e.length, t.length);
-						for (n = 0; n < a; n += 1)
-							if (e[n] !== t[n]) return n;
-						return a
-					}
-
-					function ct(e) {
-						return e ? e.toLowerCase().replace("_", "-") : e
-					}
-
-					function ht(t) {
-						var a = null;
-						if (void 0 === ut[t] && void 0 !== e && e && e.exports) try {
-							a = ot._abbr, n("./node_modules/moment/locale sync recursive ^\\.\\/.*$")("./" + t), ft(a)
-						} catch (r) {
-							ut[t] = null
-						}
-						return ut[t]
-					}
-
-					function ft(e, t) {
-						var n;
-						return e && ((n = l(t) ? Mt(e) : pt(e, t)) ? ot = n : "undefined" != typeof console && console.warn && console.warn("Locale " + e + " not found. Did you forget to load it?")), ot._abbr
-					}
-
-					function pt(e, t) {
-						if (null !== t) {
-							var n, a = lt;
-							if (t.abbr = e, null != ut[e]) T("defineLocaleOverride", "use moment.updateLocale(localeName, config) to change an existing locale. moment.defineLocale(localeName, config) should only be used for creating a new locale See http://momentjs.com/guides/#/warnings/define-locale/ for more info."), a = ut[e]._config;
-							else if (null != t.parentLocale)
-								if (null != ut[t.parentLocale]) a = ut[t.parentLocale]._config;
-								else {
-									if (null == (n = ht(t.parentLocale))) return _t[t.parentLocale] || (_t[t.parentLocale] = []), _t[t.parentLocale].push({
-										name: e,
-										config: t
-									}), null;
-									a = n._config
-								} return ut[e] = new H(S(a, t)), _t[e] && _t[e].forEach((function(e) {
-								pt(e.name, e.config)
-							})), ft(e), ut[e]
-						}
-						return delete ut[e], null
-					}
-
-					function Mt(e) {
-						var t;
-						if (e && e._locale && e._locale._abbr && (e = e._locale._abbr), !e) return ot;
-						if (!i(e)) {
-							if (t = ht(e)) return t;
-							e = [e]
-						}
-						return function(e) {
-							for (var t, n, a, r, i = 0; i < e.length;) {
-								for (t = (r = ct(e[i]).split("-")).length, n = (n = ct(e[i + 1])) ? n.split("-") : null; t > 0;) {
-									if (a = ht(r.slice(0, t).join("-"))) return a;
-									if (n && n.length >= t && mt(r, n) >= t - 1) break;
-									t--
-								}
-								i++
-							}
-							return ot
-						}(e)
-					}
-
-					function yt(e) {
-						var t, n = e._a;
-						return n && -2 === f(e).overflow && (t = n[ke] < 0 || n[ke] > 11 ? ke : n[be] < 1 || n[be] > je(n[ve], n[ke]) ? be : n[De] < 0 || n[De] > 24 || 24 === n[De] && (0 !== n[we] || 0 !== n[Te] || 0 !== n[xe]) ? De : n[we] < 0 || n[we] > 59 ? we : n[Te] < 0 || n[Te] > 59 ? Te : n[xe] < 0 || n[xe] > 999 ? xe : -1, f(e)._overflowDayOfYear && (t < ve || t > be) && (t = be), f(e)._overflowWeeks && -1 === t && (t = Se), f(e)._overflowWeekday && -1 === t && (t = He), f(e).overflow = t), e
-					}
-					var gt = /^\s*((?:[+-]\d{6}|\d{4})-(?:\d\d-\d\d|W\d\d-\d|W\d\d|\d\d\d|\d\d))(?:(T| )(\d\d(?::\d\d(?::\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/,
-						Lt = /^\s*((?:[+-]\d{6}|\d{4})(?:\d\d\d\d|W\d\d\d|W\d\d|\d\d\d|\d\d|))(?:(T| )(\d\d(?:\d\d(?:\d\d(?:[.,]\d+)?)?)?)([+-]\d\d(?::?\d\d)?|\s*Z)?)?$/,
-						Yt = /Z|[+-]\d\d(?::?\d\d)?/,
-						vt = [
-							["YYYYYY-MM-DD", /[+-]\d{6}-\d\d-\d\d/],
-							["YYYY-MM-DD", /\d{4}-\d\d-\d\d/],
-							["GGGG-[W]WW-E", /\d{4}-W\d\d-\d/],
-							["GGGG-[W]WW", /\d{4}-W\d\d/, !1],
-							["YYYY-DDD", /\d{4}-\d{3}/],
-							["YYYY-MM", /\d{4}-\d\d/, !1],
-							["YYYYYYMMDD", /[+-]\d{10}/],
-							["YYYYMMDD", /\d{8}/],
-							["GGGG[W]WWE", /\d{4}W\d{3}/],
-							["GGGG[W]WW", /\d{4}W\d{2}/, !1],
-							["YYYYDDD", /\d{7}/],
-							["YYYYMM", /\d{6}/, !1],
-							["YYYY", /\d{4}/, !1]
-						],
-						kt = [
-							["HH:mm:ss.SSSS", /\d\d:\d\d:\d\d\.\d+/],
-							["HH:mm:ss,SSSS", /\d\d:\d\d:\d\d,\d+/],
-							["HH:mm:ss", /\d\d:\d\d:\d\d/],
-							["HH:mm", /\d\d:\d\d/],
-							["HHmmss.SSSS", /\d\d\d\d\d\d\.\d+/],
-							["HHmmss,SSSS", /\d\d\d\d\d\d,\d+/],
-							["HHmmss", /\d\d\d\d\d\d/],
-							["HHmm", /\d\d\d\d/],
-							["HH", /\d\d/]
-						],
-						bt = /^\/?Date\((-?\d+)/i,
-						Dt = /^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|([+-]\d{4}))$/,
-						wt = {
-							UT: 0,
-							GMT: 0,
-							EDT: -240,
-							EST: -300,
-							CDT: -300,
-							CST: -360,
-							MDT: -360,
-							MST: -420,
-							PDT: -420,
-							PST: -480
-						};
-
-					function Tt(e) {
-						var t, n, a, r, i, s, o = e._i,
-							d = gt.exec(o) || Lt.exec(o);
-						if (d) {
-							for (f(e).iso = !0, t = 0, n = vt.length; t < n; t++)
-								if (vt[t][1].exec(d[1])) {
-									r = vt[t][0], a = !1 !== vt[t][2];
-									break
-								} if (null == r) return void(e._isValid = !1);
-							if (d[3]) {
-								for (t = 0, n = kt.length; t < n; t++)
-									if (kt[t][1].exec(d[3])) {
-										i = (d[2] || " ") + kt[t][0];
-										break
-									} if (null == i) return void(e._isValid = !1)
-							}
-							if (!a && null != i) return void(e._isValid = !1);
-							if (d[4]) {
-								if (!Yt.exec(d[4])) return void(e._isValid = !1);
-								s = "Z"
-							}
-							e._f = r + (i || "") + (s || ""), Pt(e)
-						} else e._isValid = !1
-					}
-
-					function xt(e) {
-						var t = parseInt(e, 10);
-						return t <= 49 ? 2e3 + t : t <= 999 ? 1900 + t : t
-					}
-
-					function St(e) {
-						var t, n, a, r, i, s, o, d, l = Dt.exec(e._i.replace(/\([^)]*\)|[\n\t]/g, " ").replace(/(\s\s+)/g, " ").replace(/^\s\s*/, "").replace(/\s\s*$/, ""));
-						if (l) {
-							if (n = l[4], a = l[3], r = l[2], i = l[5], s = l[6], o = l[7], d = [xt(n), Oe.indexOf(a), parseInt(r, 10), parseInt(i, 10), parseInt(s, 10)], o && d.push(parseInt(o, 10)), t = d, ! function(e, t, n) {
-									return !e || $e.indexOf(e) === new Date(t[0], t[1], t[2]).getDay() || (f(n).weekdayMismatch = !0, n._isValid = !1, !1)
-								}(l[1], t, e)) return;
-							e._a = t, e._tzm = function(e, t, n) {
-								if (e) return wt[e];
-								if (t) return 0;
-								var a = parseInt(n, 10),
-									r = a % 100;
-								return (a - r) / 100 * 60 + r
-							}(l[8], l[9], l[10]), e._d = Be.apply(null, e._a), e._d.setUTCMinutes(e._d.getUTCMinutes() - e._tzm), f(e).rfc2822 = !0
-						} else e._isValid = !1
-					}
-
-					function Ht(e, t, n) {
-						return null != e ? e : null != t ? t : n
-					}
-
-					function jt(e) {
-						var t, n, a, i, s, o = [];
-						if (!e._d) {
-							for (a = function(e) {
-									var t = new Date(r.now());
-									return e._useUTC ? [t.getUTCFullYear(), t.getUTCMonth(), t.getUTCDate()] : [t.getFullYear(), t.getMonth(), t.getDate()]
-								}(e), e._w && null == e._a[be] && null == e._a[ke] && function(e) {
-									var t, n, a, r, i, s, o, d, l;
-									null != (t = e._w).GG || null != t.W || null != t.E ? (i = 1, s = 4, n = Ht(t.GG, e._a[ve], Ge(Ft(), 1, 4).year), a = Ht(t.W, 1), ((r = Ht(t.E, 1)) < 1 || r > 7) && (d = !0)) : (i = e._locale._week.dow, s = e._locale._week.doy, l = Ge(Ft(), i, s), n = Ht(t.gg, e._a[ve], l.year), a = Ht(t.w, l.week), null != t.d ? ((r = t.d) < 0 || r > 6) && (d = !0) : null != t.e ? (r = t.e + i, (t.e < 0 || t.e > 6) && (d = !0)) : r = i), a < 1 || a > qe(n, i, s) ? f(e)._overflowWeeks = !0 : null != d ? f(e)._overflowWeekday = !0 : (o = Ue(n, a, r, i, s), e._a[ve] = o.year, e._dayOfYear = o.dayOfYear)
-								}(e), null != e._dayOfYear && (s = Ht(e._a[ve], a[ve]), (e._dayOfYear > Ne(s) || 0 === e._dayOfYear) && (f(e)._overflowDayOfYear = !0), n = Be(s, 0, e._dayOfYear), e._a[ke] = n.getUTCMonth(), e._a[be] = n.getUTCDate()), t = 0; t < 3 && null == e._a[t]; ++t) e._a[t] = o[t] = a[t];
-							for (; t < 7; t++) e._a[t] = o[t] = null == e._a[t] ? 2 === t ? 1 : 0 : e._a[t];
-							24 === e._a[De] && 0 === e._a[we] && 0 === e._a[Te] && 0 === e._a[xe] && (e._nextDay = !0, e._a[De] = 0), e._d = (e._useUTC ? Be : Ve).apply(null, o), i = e._useUTC ? e._d.getUTCDay() : e._d.getDay(), null != e._tzm && e._d.setUTCMinutes(e._d.getUTCMinutes() - e._tzm), e._nextDay && (e._a[De] = 24), e._w && void 0 !== e._w.d && e._w.d !== i && (f(e).weekdayMismatch = !0)
-						}
-					}
-
-					function Pt(e) {
-						if (e._f !== r.ISO_8601)
-							if (e._f !== r.RFC_2822) {
-								e._a = [], f(e).empty = !0;
-								var t, n, a, i, s, o, d = "" + e._i,
-									l = d.length,
-									u = 0;
-								for (a = E(e._f, e._locale).match(P) || [], t = 0; t < a.length; t++) i = a[t], (n = (d.match(fe(i, e)) || [])[0]) && ((s = d.substr(0, d.indexOf(n))).length > 0 && f(e).unusedInput.push(s), d = d.slice(d.indexOf(n) + n.length), u += n.length), F[i] ? (n ? f(e).empty = !1 : f(e).unusedTokens.push(i), Le(i, n, e)) : e._strict && !n && f(e).unusedTokens.push(i);
-								f(e).charsLeftOver = l - u, d.length > 0 && f(e).unusedInput.push(d), e._a[De] <= 12 && !0 === f(e).bigHour && e._a[De] > 0 && (f(e).bigHour = void 0), f(e).parsedDateParts = e._a.slice(0), f(e).meridiem = e._meridiem, e._a[De] = function(e, t, n) {
-									var a;
-									return null == n ? t : null != e.meridiemHour ? e.meridiemHour(t, n) : null != e.isPM ? ((a = e.isPM(n)) && t < 12 && (t += 12), a || 12 !== t || (t = 0), t) : t
-								}(e._locale, e._a[De], e._meridiem), null !== (o = f(e).era) && (e._a[ve] = e._locale.erasConvertYear(o, e._a[ve])), jt(e), yt(e)
-							} else St(e);
-						else Tt(e)
-					}
-
-					function Ot(e) {
-						var t = e._i,
-							n = e._f;
-						return e._locale = e._locale || Mt(e._l), null === t || void 0 === n && "" === t ? M({
-							nullInput: !0
-						}) : ("string" == typeof t && (e._i = t = e._locale.preparse(t)), v(t) ? new Y(yt(t)) : (_(t) ? e._d = t : i(n) ? function(e) {
-							var t, n, a, r, i, s, o = !1;
-							if (0 === e._f.length) return f(e).invalidFormat = !0, void(e._d = new Date(NaN));
-							for (r = 0; r < e._f.length; r++) i = 0, s = !1, t = L({}, e), null != e._useUTC && (t._useUTC = e._useUTC), t._f = e._f[r], Pt(t), p(t) && (s = !0), i += f(t).charsLeftOver, i += 10 * f(t).unusedTokens.length, f(t).score = i, o ? i < a && (a = i, n = t) : (null == a || i < a || s) && (a = i, n = t, s && (o = !0));
-							c(e, n || t)
-						}(e) : n ? Pt(e) : function(e) {
-							var t = e._i;
-							l(t) ? e._d = new Date(r.now()) : _(t) ? e._d = new Date(t.valueOf()) : "string" == typeof t ? function(e) {
-								var t = bt.exec(e._i);
-								null === t ? (Tt(e), !1 === e._isValid && (delete e._isValid, St(e), !1 === e._isValid && (delete e._isValid, e._strict ? e._isValid = !1 : r.createFromInputFallback(e)))) : e._d = new Date(+t[1])
-							}(e) : i(t) ? (e._a = m(t.slice(0), (function(e) {
-								return parseInt(e, 10)
-							})), jt(e)) : s(t) ? function(e) {
-								if (!e._d) {
-									var t = R(e._i),
-										n = void 0 === t.day ? t.date : t.day;
-									e._a = m([t.year, t.month, n, t.hour, t.minute, t.second, t.millisecond], (function(e) {
-										return e && parseInt(e, 10)
-									})), jt(e)
-								}
-							}(e) : u(t) ? e._d = new Date(t) : r.createFromInputFallback(e)
-						}(e), p(e) || (e._d = null), e))
-					}
-
-					function At(e, t, n, a, r) {
-						var o, l = {};
-						return !0 !== t && !1 !== t || (a = t, t = void 0), !0 !== n && !1 !== n || (a = n, n = void 0), (s(e) && d(e) || i(e) && 0 === e.length) && (e = void 0), l._isAMomentObject = !0, l._useUTC = l._isUTC = r, l._l = n, l._i = e, l._f = t, l._strict = a, (o = new Y(yt(Ot(l))))._nextDay && (o.add(1, "d"), o._nextDay = void 0), o
-					}
-
-					function Ft(e, t, n, a) {
-						return At(e, t, n, a, !1)
-					}
-					r.createFromInputFallback = b("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.", (function(e) {
-						e._d = new Date(e._i + (e._useUTC ? " UTC" : ""))
-					})), r.ISO_8601 = function() {}, r.RFC_2822 = function() {};
-					var Wt = b("moment().min is deprecated, use moment.max instead. http://momentjs.com/guides/#/warnings/min-max/", (function() {
-							var e = Ft.apply(null, arguments);
-							return this.isValid() && e.isValid() ? e < this ? this : e : M()
-						})),
-						Ct = b("moment().max is deprecated, use moment.min instead. http://momentjs.com/guides/#/warnings/min-max/", (function() {
-							var e = Ft.apply(null, arguments);
-							return this.isValid() && e.isValid() ? e > this ? this : e : M()
-						}));
-
-					function Et(e, t) {
-						var n, a;
-						if (1 === t.length && i(t[0]) && (t = t[0]), !t.length) return Ft();
-						for (n = t[0], a = 1; a < t.length; ++a) t[a].isValid() && !t[a][e](n) || (n = t[a]);
-						return n
-					}
-					var It = ["year", "quarter", "month", "week", "day", "hour", "minute", "second", "millisecond"];
-
-					function zt(e) {
-						var t = R(e),
-							n = t.year || 0,
-							a = t.quarter || 0,
-							r = t.month || 0,
-							i = t.week || t.isoWeek || 0,
-							s = t.day || 0,
-							d = t.hour || 0,
-							l = t.minute || 0,
-							u = t.second || 0,
-							_ = t.millisecond || 0;
-						this._isValid = function(e) {
-							var t, n, a = !1;
-							for (t in e)
-								if (o(e, t) && (-1 === Ye.call(It, t) || null != e[t] && isNaN(e[t]))) return !1;
-							for (n = 0; n < It.length; ++n)
-								if (e[It[n]]) {
-									if (a) return !1;
-									parseFloat(e[It[n]]) !== G(e[It[n]]) && (a = !0)
-								} return !0
-						}(t), this._milliseconds = +_ + 1e3 * u + 6e4 * l + 1e3 * d * 60 * 60, this._days = +s + 7 * i, this._months = +r + 3 * a + 12 * n, this._data = {}, this._locale = Mt(), this._bubble()
-					}
-
-					function Nt(e) {
-						return e instanceof zt
-					}
-
-					function Rt(e) {
-						return e < 0 ? -1 * Math.round(-1 * e) : Math.round(e)
-					}
-
-					function Vt(e, t) {
-						W(e, 0, 0, (function() {
-							var e = this.utcOffset(),
-								n = "+";
-							return e < 0 && (e = -e, n = "-"), n + j(~~(e / 60), 2) + t + j(~~e % 60, 2)
-						}))
-					}
-					Vt("Z", ":"), Vt("ZZ", ""), he("Z", me), he("ZZ", me), ye(["Z", "ZZ"], (function(e, t, n) {
-						n._useUTC = !0, n._tzm = Jt(me, e)
-					}));
-					var Bt = /([\+\-]|\d\d)/gi;
-
-					function Jt(e, t) {
-						var n, a, r = (t || "").match(e);
-						return null === r ? null : 0 === (a = 60 * (n = ((r[r.length - 1] || []) + "").match(Bt) || ["-", 0, 0])[1] + G(n[2])) ? 0 : "+" === n[0] ? a : -a
-					}
-
-					function Ut(e, t) {
-						var n, a;
-						return t._isUTC ? (n = t.clone(), a = (v(e) || _(e) ? e.valueOf() : Ft(e).valueOf()) - n.valueOf(), n._d.setTime(n._d.valueOf() + a), r.updateOffset(n, !1), n) : Ft(e).local()
-					}
-
-					function Gt(e) {
-						return -Math.round(e._d.getTimezoneOffset())
-					}
-
-					function qt() {
-						return !!this.isValid() && this._isUTC && 0 === this._offset
-					}
-					r.updateOffset = function() {};
-					var Kt = /^(-|\+)?(?:(\d*)[. ])?(\d+):(\d+)(?::(\d+)(\.\d*)?)?$/,
-						Zt = /^(-|\+)?P(?:([-+]?[0-9,.]*)Y)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)W)?(?:([-+]?[0-9,.]*)D)?(?:T(?:([-+]?[0-9,.]*)H)?(?:([-+]?[0-9,.]*)M)?(?:([-+]?[0-9,.]*)S)?)?$/;
-
-					function $t(e, t) {
-						var n, a, r, i, s, d, l = e,
-							_ = null;
-						return Nt(e) ? l = {
-							ms: e._milliseconds,
-							d: e._days,
-							M: e._months
-						} : u(e) || !isNaN(+e) ? (l = {}, t ? l[t] = +e : l.milliseconds = +e) : (_ = Kt.exec(e)) ? (n = "-" === _[1] ? -1 : 1, l = {
-							y: 0,
-							d: G(_[be]) * n,
-							h: G(_[De]) * n,
-							m: G(_[we]) * n,
-							s: G(_[Te]) * n,
-							ms: G(Rt(1e3 * _[xe])) * n
-						}) : (_ = Zt.exec(e)) ? (n = "-" === _[1] ? -1 : 1, l = {
-							y: Xt(_[2], n),
-							M: Xt(_[3], n),
-							w: Xt(_[4], n),
-							d: Xt(_[5], n),
-							h: Xt(_[6], n),
-							m: Xt(_[7], n),
-							s: Xt(_[8], n)
-						}) : null == l ? l = {} : "object" == typeof l && ("from" in l || "to" in l) && (i = Ft(l.from), s = Ft(l.to), r = i.isValid() && s.isValid() ? (s = Ut(s, i), i.isBefore(s) ? d = Qt(i, s) : ((d = Qt(s, i)).milliseconds = -d.milliseconds, d.months = -d.months), d) : {
-							milliseconds: 0,
-							months: 0
-						}, (l = {}).ms = r.milliseconds, l.M = r.months), a = new zt(l), Nt(e) && o(e, "_locale") && (a._locale = e._locale), Nt(e) && o(e, "_isValid") && (a._isValid = e._isValid), a
-					}
-
-					function Xt(e, t) {
-						var n = e && parseFloat(e.replace(",", "."));
-						return (isNaN(n) ? 0 : n) * t
-					}
-
-					function Qt(e, t) {
-						var n = {};
-						return n.months = t.month() - e.month() + 12 * (t.year() - e.year()), e.clone().add(n.months, "M").isAfter(t) && --n.months, n.milliseconds = +t - +e.clone().add(n.months, "M"), n
-					}
-
-					function en(e, t) {
-						return function(n, a) {
-							var r;
-							return null === a || isNaN(+a) || (T(t, "moment()." + t + "(period, number) is deprecated. Please use moment()." + t + "(number, period). See http://momentjs.com/guides/#/warnings/add-inverted-param/ for more info."), r = n, n = a, a = r), tn(this, $t(n, a), e), this
-						}
-					}
-
-					function tn(e, t, n, a) {
-						var i = t._milliseconds,
-							s = Rt(t._days),
-							o = Rt(t._months);
-						e.isValid() && (a = null == a || a, o && Ee(e, K(e, "Month") + o * n), s && Z(e, "Date", K(e, "Date") + s * n), i && e._d.setTime(e._d.valueOf() + i * n), a && r.updateOffset(e, s || o))
-					}
-					$t.fn = zt.prototype, $t.invalid = function() {
-						return $t(NaN)
-					};
-					var nn = en(1, "add"),
-						an = en(-1, "subtract");
-
-					function rn(e) {
-						return "string" == typeof e || e instanceof String
-					}
-
-					function sn(e, t) {
-						if (e.date() < t.date()) return -sn(t, e);
-						var n = 12 * (t.year() - e.year()) + (t.month() - e.month()),
-							a = e.clone().add(n, "months");
-						return -(n + (t - a < 0 ? (t - a) / (a - e.clone().add(n - 1, "months")) : (t - a) / (e.clone().add(n + 1, "months") - a))) || 0
-					}
-
-					function on(e) {
-						var t;
-						return void 0 === e ? this._locale._abbr : (null != (t = Mt(e)) && (this._locale = t), this)
-					}
-					r.defaultFormat = "YYYY-MM-DDTHH:mm:ssZ", r.defaultFormatUtc = "YYYY-MM-DDTHH:mm:ss[Z]";
-					var dn = b("moment().lang() is deprecated. Instead, use moment().localeData() to get the language configuration. Use moment().locale() to change languages.", (function(e) {
-						return void 0 === e ? this.localeData() : this.locale(e)
-					}));
-
-					function ln() {
-						return this._locale
-					}
-					var un = 1e3,
-						_n = 60 * un,
-						mn = 60 * _n,
-						cn = 3506328 * mn;
-
-					function hn(e, t) {
-						return (e % t + t) % t
-					}
-
-					function fn(e, t, n) {
-						return e < 100 && e >= 0 ? new Date(e + 400, t, n) - cn : new Date(e, t, n).valueOf()
-					}
-
-					function pn(e, t, n) {
-						return e < 100 && e >= 0 ? Date.UTC(e + 400, t, n) - cn : Date.UTC(e, t, n)
-					}
-
-					function Mn(e, t) {
-						return t.erasAbbrRegex(e)
-					}
-
-					function yn() {
-						var e, t, n = [],
-							a = [],
-							r = [],
-							i = [],
-							s = this.eras();
-						for (e = 0, t = s.length; e < t; ++e) a.push(pe(s[e].name)), n.push(pe(s[e].abbr)), r.push(pe(s[e].narrow)), i.push(pe(s[e].name)), i.push(pe(s[e].abbr)), i.push(pe(s[e].narrow));
-						this._erasRegex = new RegExp("^(" + i.join("|") + ")", "i"), this._erasNameRegex = new RegExp("^(" + a.join("|") + ")", "i"), this._erasAbbrRegex = new RegExp("^(" + n.join("|") + ")", "i"), this._erasNarrowRegex = new RegExp("^(" + r.join("|") + ")", "i")
-					}
-
-					function gn(e, t) {
-						W(0, [e, e.length], 0, t)
-					}
-
-					function Ln(e, t, n, a, r) {
-						var i;
-						return null == e ? Ge(this, a, r).year : (t > (i = qe(e, a, r)) && (t = i), Yn.call(this, e, t, n, a, r))
-					}
-
-					function Yn(e, t, n, a, r) {
-						var i = Ue(e, t, n, a, r),
-							s = Be(i.year, 0, i.dayOfYear);
-						return this.year(s.getUTCFullYear()), this.month(s.getUTCMonth()), this.date(s.getUTCDate()), this
-					}
-					W("N", 0, 0, "eraAbbr"), W("NN", 0, 0, "eraAbbr"), W("NNN", 0, 0, "eraAbbr"), W("NNNN", 0, 0, "eraName"), W("NNNNN", 0, 0, "eraNarrow"), W("y", ["y", 1], "yo", "eraYear"), W("y", ["yy", 2], 0, "eraYear"), W("y", ["yyy", 3], 0, "eraYear"), W("y", ["yyyy", 4], 0, "eraYear"), he("N", Mn), he("NN", Mn), he("NNN", Mn), he("NNNN", (function(e, t) {
-						return t.erasNameRegex(e)
-					})), he("NNNNN", (function(e, t) {
-						return t.erasNarrowRegex(e)
-					})), ye(["N", "NN", "NNN", "NNNN", "NNNNN"], (function(e, t, n, a) {
-						var r = n._locale.erasParse(e, a, n._strict);
-						r ? f(n).era = r : f(n).invalidEra = e
-					})), he("y", le), he("yy", le), he("yyy", le), he("yyyy", le), he("yo", (function(e, t) {
-						return t._eraYearOrdinalRegex || le
-					})), ye(["y", "yy", "yyy", "yyyy"], ve), ye(["yo"], (function(e, t, n, a) {
-						var r;
-						n._locale._eraYearOrdinalRegex && (r = e.match(n._locale._eraYearOrdinalRegex)), n._locale.eraYearOrdinalParse ? t[ve] = n._locale.eraYearOrdinalParse(e, r) : t[ve] = parseInt(e, 10)
-					})), W(0, ["gg", 2], 0, (function() {
-						return this.weekYear() % 100
-					})), W(0, ["GG", 2], 0, (function() {
-						return this.isoWeekYear() % 100
-					})), gn("gggg", "weekYear"), gn("ggggg", "weekYear"), gn("GGGG", "isoWeekYear"), gn("GGGGG", "isoWeekYear"), z("weekYear", "gg"), z("isoWeekYear", "GG"), B("weekYear", 1), B("isoWeekYear", 1), he("G", ue), he("g", ue), he("GG", ae, Q), he("gg", ae, Q), he("GGGG", oe, te), he("gggg", oe, te), he("GGGGG", de, ne), he("ggggg", de, ne), ge(["gggg", "ggggg", "GGGG", "GGGGG"], (function(e, t, n, a) {
-						t[a.substr(0, 2)] = G(e)
-					})), ge(["gg", "GG"], (function(e, t, n, a) {
-						t[a] = r.parseTwoDigitYear(e)
-					})), W("Q", 0, "Qo", "quarter"), z("quarter", "Q"), B("quarter", 7), he("Q", X), ye("Q", (function(e, t) {
-						t[ke] = 3 * (G(e) - 1)
-					})), W("D", ["DD", 2], "Do", "date"), z("date", "D"), B("date", 9), he("D", ae), he("DD", ae, Q), he("Do", (function(e, t) {
-						return e ? t._dayOfMonthOrdinalParse || t._ordinalParse : t._dayOfMonthOrdinalParseLenient
-					})), ye(["D", "DD"], be), ye("Do", (function(e, t) {
-						t[be] = G(e.match(ae)[0])
-					}));
-					var vn = q("Date", !0);
-					W("DDD", ["DDDD", 3], "DDDo", "dayOfYear"), z("dayOfYear", "DDD"), B("dayOfYear", 4), he("DDD", se), he("DDDD", ee), ye(["DDD", "DDDD"], (function(e, t, n) {
-						n._dayOfYear = G(e)
-					})), W("m", ["mm", 2], 0, "minute"), z("minute", "m"), B("minute", 14), he("m", ae), he("mm", ae, Q), ye(["m", "mm"], we);
-					var kn = q("Minutes", !1);
-					W("s", ["ss", 2], 0, "second"), z("second", "s"), B("second", 15), he("s", ae), he("ss", ae, Q), ye(["s", "ss"], Te);
-					var bn, Dn, wn = q("Seconds", !1);
-					for (W("S", 0, 0, (function() {
-							return ~~(this.millisecond() / 100)
-						})), W(0, ["SS", 2], 0, (function() {
-							return ~~(this.millisecond() / 10)
-						})), W(0, ["SSS", 3], 0, "millisecond"), W(0, ["SSSS", 4], 0, (function() {
-							return 10 * this.millisecond()
-						})), W(0, ["SSSSS", 5], 0, (function() {
-							return 100 * this.millisecond()
-						})), W(0, ["SSSSSS", 6], 0, (function() {
-							return 1e3 * this.millisecond()
-						})), W(0, ["SSSSSSS", 7], 0, (function() {
-							return 1e4 * this.millisecond()
-						})), W(0, ["SSSSSSSS", 8], 0, (function() {
-							return 1e5 * this.millisecond()
-						})), W(0, ["SSSSSSSSS", 9], 0, (function() {
-							return 1e6 * this.millisecond()
-						})), z("millisecond", "ms"), B("millisecond", 16), he("S", se, X), he("SS", se, Q), he("SSS", se, ee), bn = "SSSS"; bn.length <= 9; bn += "S") he(bn, le);
-
-					function Tn(e, t) {
-						t[xe] = G(1e3 * ("0." + e))
-					}
-					for (bn = "S"; bn.length <= 9; bn += "S") ye(bn, Tn);
-					Dn = q("Milliseconds", !1), W("z", 0, 0, "zoneAbbr"), W("zz", 0, 0, "zoneName");
-					var xn = Y.prototype;
-
-					function Sn(e) {
-						return e
-					}
-					xn.add = nn, xn.calendar = function(e, t) {
-						var n;
-						1 === arguments.length && (v(n = arguments[0]) || _(n) || rn(n) || u(n) || function(e) {
-							var t = i(e),
-								n = !1;
-							return t && (n = 0 === e.filter((function(t) {
-								return !u(t) && rn(e)
-							})).length), t && n
-						}(n) || function(e) {
-							var t, n, a = s(e) && !d(e),
-								r = !1,
-								i = ["years", "year", "y", "months", "month", "M", "days", "day", "d", "dates", "date", "D", "hours", "hour", "h", "minutes", "minute", "m", "seconds", "second", "s", "milliseconds", "millisecond", "ms"];
-							for (t = 0; t < i.length; t += 1) n = i[t], r = r || o(e, n);
-							return a && r
-						}(n) || null == n ? (e = arguments[0], t = void 0) : function(e) {
-							var t, n, a = s(e) && !d(e),
-								r = !1,
-								i = ["sameDay", "nextDay", "lastDay", "nextWeek", "lastWeek", "sameElse"];
-							for (t = 0; t < i.length; t += 1) n = i[t], r = r || o(e, n);
-							return a && r
-						}(arguments[0]) && (t = arguments[0], e = void 0));
-						var a = e || Ft(),
-							l = Ut(a, this).startOf("day"),
-							m = r.calendarFormat(this, l) || "sameElse",
-							c = t && (x(t[m]) ? t[m].call(this, a) : t[m]);
-						return this.format(c || this.localeData().calendar(m, this, Ft(a)))
-					}, xn.clone = function() {
-						return new Y(this)
-					}, xn.diff = function(e, t, n) {
-						var a, r, i;
-						if (!this.isValid()) return NaN;
-						if (!(a = Ut(e, this)).isValid()) return NaN;
-						switch (r = 6e4 * (a.utcOffset() - this.utcOffset()), t = N(t)) {
-							case "year":
-								i = sn(this, a) / 12;
-								break;
-							case "month":
-								i = sn(this, a);
-								break;
-							case "quarter":
-								i = sn(this, a) / 3;
-								break;
-							case "second":
-								i = (this - a) / 1e3;
-								break;
-							case "minute":
-								i = (this - a) / 6e4;
-								break;
-							case "hour":
-								i = (this - a) / 36e5;
-								break;
-							case "day":
-								i = (this - a - r) / 864e5;
-								break;
-							case "week":
-								i = (this - a - r) / 6048e5;
-								break;
-							default:
-								i = this - a
-						}
-						return n ? i : U(i)
-					}, xn.endOf = function(e) {
-						var t, n;
-						if (void 0 === (e = N(e)) || "millisecond" === e || !this.isValid()) return this;
-						switch (n = this._isUTC ? pn : fn, e) {
-							case "year":
-								t = n(this.year() + 1, 0, 1) - 1;
-								break;
-							case "quarter":
-								t = n(this.year(), this.month() - this.month() % 3 + 3, 1) - 1;
-								break;
-							case "month":
-								t = n(this.year(), this.month() + 1, 1) - 1;
-								break;
-							case "week":
-								t = n(this.year(), this.month(), this.date() - this.weekday() + 7) - 1;
-								break;
-							case "isoWeek":
-								t = n(this.year(), this.month(), this.date() - (this.isoWeekday() - 1) + 7) - 1;
-								break;
-							case "day":
-							case "date":
-								t = n(this.year(), this.month(), this.date() + 1) - 1;
-								break;
-							case "hour":
-								t = this._d.valueOf(), t += mn - hn(t + (this._isUTC ? 0 : this.utcOffset() * _n), mn) - 1;
-								break;
-							case "minute":
-								t = this._d.valueOf(), t += _n - hn(t, _n) - 1;
-								break;
-							case "second":
-								t = this._d.valueOf(), t += un - hn(t, un) - 1
-						}
-						return this._d.setTime(t), r.updateOffset(this, !0), this
-					}, xn.format = function(e) {
-						e || (e = this.isUtc() ? r.defaultFormatUtc : r.defaultFormat);
-						var t = C(this, e);
-						return this.localeData().postformat(t)
-					}, xn.from = function(e, t) {
-						return this.isValid() && (v(e) && e.isValid() || Ft(e).isValid()) ? $t({
-							to: this,
-							from: e
-						}).locale(this.locale()).humanize(!t) : this.localeData().invalidDate()
-					}, xn.fromNow = function(e) {
-						return this.from(Ft(), e)
-					}, xn.to = function(e, t) {
-						return this.isValid() && (v(e) && e.isValid() || Ft(e).isValid()) ? $t({
-							from: this,
-							to: e
-						}).locale(this.locale()).humanize(!t) : this.localeData().invalidDate()
-					}, xn.toNow = function(e) {
-						return this.to(Ft(), e)
-					}, xn.get = function(e) {
-						return x(this[e = N(e)]) ? this[e]() : this
-					}, xn.invalidAt = function() {
-						return f(this).overflow
-					}, xn.isAfter = function(e, t) {
-						var n = v(e) ? e : Ft(e);
-						return !(!this.isValid() || !n.isValid()) && ("millisecond" === (t = N(t) || "millisecond") ? this.valueOf() > n.valueOf() : n.valueOf() < this.clone().startOf(t).valueOf())
-					}, xn.isBefore = function(e, t) {
-						var n = v(e) ? e : Ft(e);
-						return !(!this.isValid() || !n.isValid()) && ("millisecond" === (t = N(t) || "millisecond") ? this.valueOf() < n.valueOf() : this.clone().endOf(t).valueOf() < n.valueOf())
-					}, xn.isBetween = function(e, t, n, a) {
-						var r = v(e) ? e : Ft(e),
-							i = v(t) ? t : Ft(t);
-						return !!(this.isValid() && r.isValid() && i.isValid()) && (("(" === (a = a || "()")[0] ? this.isAfter(r, n) : !this.isBefore(r, n)) && (")" === a[1] ? this.isBefore(i, n) : !this.isAfter(i, n)))
-					}, xn.isSame = function(e, t) {
-						var n, a = v(e) ? e : Ft(e);
-						return !(!this.isValid() || !a.isValid()) && ("millisecond" === (t = N(t) || "millisecond") ? this.valueOf() === a.valueOf() : (n = a.valueOf(), this.clone().startOf(t).valueOf() <= n && n <= this.clone().endOf(t).valueOf()))
-					}, xn.isSameOrAfter = function(e, t) {
-						return this.isSame(e, t) || this.isAfter(e, t)
-					}, xn.isSameOrBefore = function(e, t) {
-						return this.isSame(e, t) || this.isBefore(e, t)
-					}, xn.isValid = function() {
-						return p(this)
-					}, xn.lang = dn, xn.locale = on, xn.localeData = ln, xn.max = Ct, xn.min = Wt, xn.parsingFlags = function() {
-						return c({}, f(this))
-					}, xn.set = function(e, t) {
-						if ("object" == typeof e) {
-							var n, a = function(e) {
-								var t, n = [];
-								for (t in e) o(e, t) && n.push({
-									unit: t,
-									priority: V[t]
-								});
-								return n.sort((function(e, t) {
-									return e.priority - t.priority
-								})), n
-							}(e = R(e));
-							for (n = 0; n < a.length; n++) this[a[n].unit](e[a[n].unit])
-						} else if (x(this[e = N(e)])) return this[e](t);
-						return this
-					}, xn.startOf = function(e) {
-						var t, n;
-						if (void 0 === (e = N(e)) || "millisecond" === e || !this.isValid()) return this;
-						switch (n = this._isUTC ? pn : fn, e) {
-							case "year":
-								t = n(this.year(), 0, 1);
-								break;
-							case "quarter":
-								t = n(this.year(), this.month() - this.month() % 3, 1);
-								break;
-							case "month":
-								t = n(this.year(), this.month(), 1);
-								break;
-							case "week":
-								t = n(this.year(), this.month(), this.date() - this.weekday());
-								break;
-							case "isoWeek":
-								t = n(this.year(), this.month(), this.date() - (this.isoWeekday() - 1));
-								break;
-							case "day":
-							case "date":
-								t = n(this.year(), this.month(), this.date());
-								break;
-							case "hour":
-								t = this._d.valueOf(), t -= hn(t + (this._isUTC ? 0 : this.utcOffset() * _n), mn);
-								break;
-							case "minute":
-								t = this._d.valueOf(), t -= hn(t, _n);
-								break;
-							case "second":
-								t = this._d.valueOf(), t -= hn(t, un)
-						}
-						return this._d.setTime(t), r.updateOffset(this, !0), this
-					}, xn.subtract = an, xn.toArray = function() {
-						var e = this;
-						return [e.year(), e.month(), e.date(), e.hour(), e.minute(), e.second(), e.millisecond()]
-					}, xn.toObject = function() {
-						var e = this;
-						return {
-							years: e.year(),
-							months: e.month(),
-							date: e.date(),
-							hours: e.hours(),
-							minutes: e.minutes(),
-							seconds: e.seconds(),
-							milliseconds: e.milliseconds()
-						}
-					}, xn.toDate = function() {
-						return new Date(this.valueOf())
-					}, xn.toISOString = function(e) {
-						if (!this.isValid()) return null;
-						var t = !0 !== e,
-							n = t ? this.clone().utc() : this;
-						return n.year() < 0 || n.year() > 9999 ? C(n, t ? "YYYYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYYYY-MM-DD[T]HH:mm:ss.SSSZ") : x(Date.prototype.toISOString) ? t ? this.toDate().toISOString() : new Date(this.valueOf() + 60 * this.utcOffset() * 1e3).toISOString().replace("Z", C(n, "Z")) : C(n, t ? "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]" : "YYYY-MM-DD[T]HH:mm:ss.SSSZ")
-					}, xn.inspect = function() {
-						if (!this.isValid()) return "moment.invalid(/* " + this._i + " */)";
-						var e, t, n, a = "moment",
-							r = "";
-						return this.isLocal() || (a = 0 === this.utcOffset() ? "moment.utc" : "moment.parseZone", r = "Z"), e = "[" + a + '("]', t = 0 <= this.year() && this.year() <= 9999 ? "YYYY" : "YYYYYY", n = r + '[")]', this.format(e + t + "-MM-DD[T]HH:mm:ss.SSS" + n)
-					}, "undefined" != typeof Symbol && null != Symbol.for && (xn[Symbol.for("nodejs.util.inspect.custom")] = function() {
-						return "Moment<" + this.format() + ">"
-					}), xn.toJSON = function() {
-						return this.isValid() ? this.toISOString() : null
-					}, xn.toString = function() {
-						return this.clone().locale("en").format("ddd MMM DD YYYY HH:mm:ss [GMT]ZZ")
-					}, xn.unix = function() {
-						return Math.floor(this.valueOf() / 1e3)
-					}, xn.valueOf = function() {
-						return this._d.valueOf() - 6e4 * (this._offset || 0)
-					}, xn.creationData = function() {
-						return {
-							input: this._i,
-							format: this._f,
-							locale: this._locale,
-							isUTC: this._isUTC,
-							strict: this._strict
-						}
-					}, xn.eraName = function() {
-						var e, t, n, a = this.localeData().eras();
-						for (e = 0, t = a.length; e < t; ++e) {
-							if (n = this.startOf("day").valueOf(), a[e].since <= n && n <= a[e].until) return a[e].name;
-							if (a[e].until <= n && n <= a[e].since) return a[e].name
-						}
-						return ""
-					}, xn.eraNarrow = function() {
-						var e, t, n, a = this.localeData().eras();
-						for (e = 0, t = a.length; e < t; ++e) {
-							if (n = this.startOf("day").valueOf(), a[e].since <= n && n <= a[e].until) return a[e].narrow;
-							if (a[e].until <= n && n <= a[e].since) return a[e].narrow
-						}
-						return ""
-					}, xn.eraAbbr = function() {
-						var e, t, n, a = this.localeData().eras();
-						for (e = 0, t = a.length; e < t; ++e) {
-							if (n = this.startOf("day").valueOf(), a[e].since <= n && n <= a[e].until) return a[e].abbr;
-							if (a[e].until <= n && n <= a[e].since) return a[e].abbr
-						}
-						return ""
-					}, xn.eraYear = function() {
-						var e, t, n, a, i = this.localeData().eras();
-						for (e = 0, t = i.length; e < t; ++e)
-							if (n = i[e].since <= i[e].until ? 1 : -1, a = this.startOf("day").valueOf(), i[e].since <= a && a <= i[e].until || i[e].until <= a && a <= i[e].since) return (this.year() - r(i[e].since).year()) * n + i[e].offset;
-						return this.year()
-					}, xn.year = Re, xn.isLeapYear = function() {
-						return J(this.year())
-					}, xn.weekYear = function(e) {
-						return Ln.call(this, e, this.week(), this.weekday(), this.localeData()._week.dow, this.localeData()._week.doy)
-					}, xn.isoWeekYear = function(e) {
-						return Ln.call(this, e, this.isoWeek(), this.isoWeekday(), 1, 4)
-					}, xn.quarter = xn.quarters = function(e) {
-						return null == e ? Math.ceil((this.month() + 1) / 3) : this.month(3 * (e - 1) + this.month() % 3)
-					}, xn.month = Ie, xn.daysInMonth = function() {
-						return je(this.year(), this.month())
-					}, xn.week = xn.weeks = function(e) {
-						var t = this.localeData().week(this);
-						return null == e ? t : this.add(7 * (e - t), "d")
-					}, xn.isoWeek = xn.isoWeeks = function(e) {
-						var t = Ge(this, 1, 4).week;
-						return null == e ? t : this.add(7 * (e - t), "d")
-					}, xn.weeksInYear = function() {
-						var e = this.localeData()._week;
-						return qe(this.year(), e.dow, e.doy)
-					}, xn.weeksInWeekYear = function() {
-						var e = this.localeData()._week;
-						return qe(this.weekYear(), e.dow, e.doy)
-					}, xn.isoWeeksInYear = function() {
-						return qe(this.year(), 1, 4)
-					}, xn.isoWeeksInISOWeekYear = function() {
-						return qe(this.isoWeekYear(), 1, 4)
-					}, xn.date = vn, xn.day = xn.days = function(e) {
-						if (!this.isValid()) return null != e ? this : NaN;
-						var t = this._isUTC ? this._d.getUTCDay() : this._d.getDay();
-						return null != e ? (e = function(e, t) {
-							return "string" != typeof e ? e : isNaN(e) ? "number" == typeof(e = t.weekdaysParse(e)) ? e : null : parseInt(e, 10)
-						}(e, this.localeData()), this.add(e - t, "d")) : t
-					}, xn.weekday = function(e) {
-						if (!this.isValid()) return null != e ? this : NaN;
-						var t = (this.day() + 7 - this.localeData()._week.dow) % 7;
-						return null == e ? t : this.add(e - t, "d")
-					}, xn.isoWeekday = function(e) {
-						if (!this.isValid()) return null != e ? this : NaN;
-						if (null != e) {
-							var t = function(e, t) {
-								return "string" == typeof e ? t.weekdaysParse(e) % 7 || 7 : isNaN(e) ? null : e
-							}(e, this.localeData());
-							return this.day(this.day() % 7 ? t : t - 7)
-						}
-						return this.day() || 7
-					}, xn.dayOfYear = function(e) {
-						var t = Math.round((this.clone().startOf("day") - this.clone().startOf("year")) / 864e5) + 1;
-						return null == e ? t : this.add(e - t, "d")
-					}, xn.hour = xn.hours = dt, xn.minute = xn.minutes = kn, xn.second = xn.seconds = wn, xn.millisecond = xn.milliseconds = Dn, xn.utcOffset = function(e, t, n) {
-						var a, i = this._offset || 0;
-						if (!this.isValid()) return null != e ? this : NaN;
-						if (null != e) {
-							if ("string" == typeof e) {
-								if (null === (e = Jt(me, e))) return this
-							} else Math.abs(e) < 16 && !n && (e *= 60);
-							return !this._isUTC && t && (a = Gt(this)), this._offset = e, this._isUTC = !0, null != a && this.add(a, "m"), i !== e && (!t || this._changeInProgress ? tn(this, $t(e - i, "m"), 1, !1) : this._changeInProgress || (this._changeInProgress = !0, r.updateOffset(this, !0), this._changeInProgress = null)), this
-						}
-						return this._isUTC ? i : Gt(this)
-					}, xn.utc = function(e) {
-						return this.utcOffset(0, e)
-					}, xn.local = function(e) {
-						return this._isUTC && (this.utcOffset(0, e), this._isUTC = !1, e && this.subtract(Gt(this), "m")), this
-					}, xn.parseZone = function() {
-						if (null != this._tzm) this.utcOffset(this._tzm, !1, !0);
-						else if ("string" == typeof this._i) {
-							var e = Jt(_e, this._i);
-							null != e ? this.utcOffset(e) : this.utcOffset(0, !0)
-						}
-						return this
-					}, xn.hasAlignedHourOffset = function(e) {
-						return !!this.isValid() && (e = e ? Ft(e).utcOffset() : 0, (this.utcOffset() - e) % 60 == 0)
-					}, xn.isDST = function() {
-						return this.utcOffset() > this.clone().month(0).utcOffset() || this.utcOffset() > this.clone().month(5).utcOffset()
-					}, xn.isLocal = function() {
-						return !!this.isValid() && !this._isUTC
-					}, xn.isUtcOffset = function() {
-						return !!this.isValid() && this._isUTC
-					}, xn.isUtc = qt, xn.isUTC = qt, xn.zoneAbbr = function() {
-						return this._isUTC ? "UTC" : ""
-					}, xn.zoneName = function() {
-						return this._isUTC ? "Coordinated Universal Time" : ""
-					}, xn.dates = b("dates accessor is deprecated. Use date instead.", vn), xn.months = b("months accessor is deprecated. Use month instead", Ie), xn.years = b("years accessor is deprecated. Use year instead", Re), xn.zone = b("moment().zone is deprecated, use moment().utcOffset instead. http://momentjs.com/guides/#/warnings/zone/", (function(e, t) {
-						return null != e ? ("string" != typeof e && (e = -e), this.utcOffset(e, t), this) : -this.utcOffset()
-					})), xn.isDSTShifted = b("isDSTShifted is deprecated. See http://momentjs.com/guides/#/warnings/dst-shifted/ for more information", (function() {
-						if (!l(this._isDSTShifted)) return this._isDSTShifted;
-						var e, t = {};
-						return L(t, this), (t = Ot(t))._a ? (e = t._isUTC ? h(t._a) : Ft(t._a), this._isDSTShifted = this.isValid() && function(e, t, n) {
-							var a, r = Math.min(e.length, t.length),
-								i = Math.abs(e.length - t.length),
-								s = 0;
-							for (a = 0; a < r; a++)(n && e[a] !== t[a] || !n && G(e[a]) !== G(t[a])) && s++;
-							return s + i
-						}(t._a, e.toArray()) > 0) : this._isDSTShifted = !1, this._isDSTShifted
-					}));
-					var Hn = H.prototype;
-
-					function jn(e, t, n, a) {
-						var r = Mt(),
-							i = h().set(a, t);
-						return r[n](i, e)
-					}
-
-					function Pn(e, t, n) {
-						if (u(e) && (t = e, e = void 0), e = e || "", null != t) return jn(e, t, n, "month");
-						var a, r = [];
-						for (a = 0; a < 12; a++) r[a] = jn(e, a, n, "month");
-						return r
-					}
-
-					function On(e, t, n, a) {
-						"boolean" == typeof e ? (u(t) && (n = t, t = void 0), t = t || "") : (n = t = e, e = !1, u(t) && (n = t, t = void 0), t = t || "");
-						var r, i = Mt(),
-							s = e ? i._week.dow : 0,
-							o = [];
-						if (null != n) return jn(t, (n + s) % 7, a, "day");
-						for (r = 0; r < 7; r++) o[r] = jn(t, (r + s) % 7, a, "day");
-						return o
-					}
-					Hn.calendar = function(e, t, n) {
-						var a = this._calendar[e] || this._calendar.sameElse;
-						return x(a) ? a.call(t, n) : a
-					}, Hn.longDateFormat = function(e) {
-						var t = this._longDateFormat[e],
-							n = this._longDateFormat[e.toUpperCase()];
-						return t || !n ? t : (this._longDateFormat[e] = n.match(P).map((function(e) {
-							return "MMMM" === e || "MM" === e || "DD" === e || "dddd" === e ? e.slice(1) : e
-						})).join(""), this._longDateFormat[e])
-					}, Hn.invalidDate = function() {
-						return this._invalidDate
-					}, Hn.ordinal = function(e) {
-						return this._ordinal.replace("%d", e)
-					}, Hn.preparse = Sn, Hn.postformat = Sn, Hn.relativeTime = function(e, t, n, a) {
-						var r = this._relativeTime[n];
-						return x(r) ? r(e, t, n, a) : r.replace(/%d/i, e)
-					}, Hn.pastFuture = function(e, t) {
-						var n = this._relativeTime[e > 0 ? "future" : "past"];
-						return x(n) ? n(t) : n.replace(/%s/i, t)
-					}, Hn.set = function(e) {
-						var t, n;
-						for (n in e) o(e, n) && (x(t = e[n]) ? this[n] = t : this["_" + n] = t);
-						this._config = e, this._dayOfMonthOrdinalParseLenient = new RegExp((this._dayOfMonthOrdinalParse.source || this._ordinalParse.source) + "|" + /\d{1,2}/.source)
-					}, Hn.eras = function(e, t) {
-						var n, a, i, s = this._eras || Mt("en")._eras;
-						for (n = 0, a = s.length; n < a; ++n) {
-							switch (typeof s[n].since) {
-								case "string":
-									i = r(s[n].since).startOf("day"), s[n].since = i.valueOf()
-							}
-							switch (typeof s[n].until) {
-								case "undefined":
-									s[n].until = 1 / 0;
-									break;
-								case "string":
-									i = r(s[n].until).startOf("day").valueOf(), s[n].until = i.valueOf()
-							}
-						}
-						return s
-					}, Hn.erasParse = function(e, t, n) {
-						var a, r, i, s, o, d = this.eras();
-						for (e = e.toUpperCase(), a = 0, r = d.length; a < r; ++a)
-							if (i = d[a].name.toUpperCase(), s = d[a].abbr.toUpperCase(), o = d[a].narrow.toUpperCase(), n) switch (t) {
-								case "N":
-								case "NN":
-								case "NNN":
-									if (s === e) return d[a];
-									break;
-								case "NNNN":
-									if (i === e) return d[a];
-									break;
-								case "NNNNN":
-									if (o === e) return d[a]
-							} else if ([i, s, o].indexOf(e) >= 0) return d[a]
-					}, Hn.erasConvertYear = function(e, t) {
-						var n = e.since <= e.until ? 1 : -1;
-						return void 0 === t ? r(e.since).year() : r(e.since).year() + (t - e.offset) * n
-					}, Hn.erasAbbrRegex = function(e) {
-						return o(this, "_erasAbbrRegex") || yn.call(this), e ? this._erasAbbrRegex : this._erasRegex
-					}, Hn.erasNameRegex = function(e) {
-						return o(this, "_erasNameRegex") || yn.call(this), e ? this._erasNameRegex : this._erasRegex
-					}, Hn.erasNarrowRegex = function(e) {
-						return o(this, "_erasNarrowRegex") || yn.call(this), e ? this._erasNarrowRegex : this._erasRegex
-					}, Hn.months = function(e, t) {
-						return e ? i(this._months) ? this._months[e.month()] : this._months[(this._months.isFormat || Ae).test(t) ? "format" : "standalone"][e.month()] : i(this._months) ? this._months : this._months.standalone
-					}, Hn.monthsShort = function(e, t) {
-						return e ? i(this._monthsShort) ? this._monthsShort[e.month()] : this._monthsShort[Ae.test(t) ? "format" : "standalone"][e.month()] : i(this._monthsShort) ? this._monthsShort : this._monthsShort.standalone
-					}, Hn.monthsParse = function(e, t, n) {
-						var a, r, i;
-						if (this._monthsParseExact) return Ce.call(this, e, t, n);
-						for (this._monthsParse || (this._monthsParse = [], this._longMonthsParse = [], this._shortMonthsParse = []), a = 0; a < 12; a++) {
-							if (r = h([2e3, a]), n && !this._longMonthsParse[a] && (this._longMonthsParse[a] = new RegExp("^" + this.months(r, "").replace(".", "") + "$", "i"), this._shortMonthsParse[a] = new RegExp("^" + this.monthsShort(r, "").replace(".", "") + "$", "i")), n || this._monthsParse[a] || (i = "^" + this.months(r, "") + "|^" + this.monthsShort(r, ""), this._monthsParse[a] = new RegExp(i.replace(".", ""), "i")), n && "MMMM" === t && this._longMonthsParse[a].test(e)) return a;
-							if (n && "MMM" === t && this._shortMonthsParse[a].test(e)) return a;
-							if (!n && this._monthsParse[a].test(e)) return a
-						}
-					}, Hn.monthsRegex = function(e) {
-						return this._monthsParseExact ? (o(this, "_monthsRegex") || ze.call(this), e ? this._monthsStrictRegex : this._monthsRegex) : (o(this, "_monthsRegex") || (this._monthsRegex = We), this._monthsStrictRegex && e ? this._monthsStrictRegex : this._monthsRegex)
-					}, Hn.monthsShortRegex = function(e) {
-						return this._monthsParseExact ? (o(this, "_monthsRegex") || ze.call(this), e ? this._monthsShortStrictRegex : this._monthsShortRegex) : (o(this, "_monthsShortRegex") || (this._monthsShortRegex = Fe), this._monthsShortStrictRegex && e ? this._monthsShortStrictRegex : this._monthsShortRegex)
-					}, Hn.week = function(e) {
-						return Ge(e, this._week.dow, this._week.doy).week
-					}, Hn.firstDayOfYear = function() {
-						return this._week.doy
-					}, Hn.firstDayOfWeek = function() {
-						return this._week.dow
-					}, Hn.weekdays = function(e, t) {
-						var n = i(this._weekdays) ? this._weekdays : this._weekdays[e && !0 !== e && this._weekdays.isFormat.test(t) ? "format" : "standalone"];
-						return !0 === e ? Ke(n, this._week.dow) : e ? n[e.day()] : n
-					}, Hn.weekdaysMin = function(e) {
-						return !0 === e ? Ke(this._weekdaysMin, this._week.dow) : e ? this._weekdaysMin[e.day()] : this._weekdaysMin
-					}, Hn.weekdaysShort = function(e) {
-						return !0 === e ? Ke(this._weekdaysShort, this._week.dow) : e ? this._weekdaysShort[e.day()] : this._weekdaysShort
-					}, Hn.weekdaysParse = function(e, t, n) {
-						var a, r, i;
-						if (this._weekdaysParseExact) return nt.call(this, e, t, n);
-						for (this._weekdaysParse || (this._weekdaysParse = [], this._minWeekdaysParse = [], this._shortWeekdaysParse = [], this._fullWeekdaysParse = []), a = 0; a < 7; a++) {
-							if (r = h([2e3, 1]).day(a), n && !this._fullWeekdaysParse[a] && (this._fullWeekdaysParse[a] = new RegExp("^" + this.weekdays(r, "").replace(".", "\\.?") + "$", "i"), this._shortWeekdaysParse[a] = new RegExp("^" + this.weekdaysShort(r, "").replace(".", "\\.?") + "$", "i"), this._minWeekdaysParse[a] = new RegExp("^" + this.weekdaysMin(r, "").replace(".", "\\.?") + "$", "i")), this._weekdaysParse[a] || (i = "^" + this.weekdays(r, "") + "|^" + this.weekdaysShort(r, "") + "|^" + this.weekdaysMin(r, ""), this._weekdaysParse[a] = new RegExp(i.replace(".", ""), "i")), n && "dddd" === t && this._fullWeekdaysParse[a].test(e)) return a;
-							if (n && "ddd" === t && this._shortWeekdaysParse[a].test(e)) return a;
-							if (n && "dd" === t && this._minWeekdaysParse[a].test(e)) return a;
-							if (!n && this._weekdaysParse[a].test(e)) return a
-						}
-					}, Hn.weekdaysRegex = function(e) {
-						return this._weekdaysParseExact ? (o(this, "_weekdaysRegex") || at.call(this), e ? this._weekdaysStrictRegex : this._weekdaysRegex) : (o(this, "_weekdaysRegex") || (this._weekdaysRegex = Qe), this._weekdaysStrictRegex && e ? this._weekdaysStrictRegex : this._weekdaysRegex)
-					}, Hn.weekdaysShortRegex = function(e) {
-						return this._weekdaysParseExact ? (o(this, "_weekdaysRegex") || at.call(this), e ? this._weekdaysShortStrictRegex : this._weekdaysShortRegex) : (o(this, "_weekdaysShortRegex") || (this._weekdaysShortRegex = et), this._weekdaysShortStrictRegex && e ? this._weekdaysShortStrictRegex : this._weekdaysShortRegex)
-					}, Hn.weekdaysMinRegex = function(e) {
-						return this._weekdaysParseExact ? (o(this, "_weekdaysRegex") || at.call(this), e ? this._weekdaysMinStrictRegex : this._weekdaysMinRegex) : (o(this, "_weekdaysMinRegex") || (this._weekdaysMinRegex = tt), this._weekdaysMinStrictRegex && e ? this._weekdaysMinStrictRegex : this._weekdaysMinRegex)
-					}, Hn.isPM = function(e) {
-						return "p" === (e + "").toLowerCase().charAt(0)
-					}, Hn.meridiem = function(e, t, n) {
-						return e > 11 ? n ? "pm" : "PM" : n ? "am" : "AM"
-					}, ft("en", {
-						eras: [{
-							since: "0001-01-01",
-							until: 1 / 0,
-							offset: 1,
-							name: "Anno Domini",
-							narrow: "AD",
-							abbr: "AD"
-						}, {
-							since: "0000-12-31",
-							until: -1 / 0,
-							offset: 1,
-							name: "Before Christ",
-							narrow: "BC",
-							abbr: "BC"
-						}],
-						dayOfMonthOrdinalParse: /\d{1,2}(th|st|nd|rd)/,
-						ordinal: function(e) {
-							var t = e % 10;
-							return e + (1 === G(e % 100 / 10) ? "th" : 1 === t ? "st" : 2 === t ? "nd" : 3 === t ? "rd" : "th")
-						}
-					}), r.lang = b("moment.lang is deprecated. Use moment.locale instead.", ft), r.langData = b("moment.langData is deprecated. Use moment.localeData instead.", Mt);
-					var An = Math.abs;
-
-					function Fn(e, t, n, a) {
-						var r = $t(t, n);
-						return e._milliseconds += a * r._milliseconds, e._days += a * r._days, e._months += a * r._months, e._bubble()
-					}
-
-					function Wn(e) {
-						return e < 0 ? Math.floor(e) : Math.ceil(e)
-					}
-
-					function Cn(e) {
-						return 4800 * e / 146097
-					}
-
-					function En(e) {
-						return 146097 * e / 4800
-					}
-
-					function In(e) {
-						return function() {
-							return this.as(e)
-						}
-					}
-					var zn = In("ms"),
-						Nn = In("s"),
-						Rn = In("m"),
-						Vn = In("h"),
-						Bn = In("d"),
-						Jn = In("w"),
-						Un = In("M"),
-						Gn = In("Q"),
-						qn = In("y");
-
-					function Kn(e) {
-						return function() {
-							return this.isValid() ? this._data[e] : NaN
-						}
-					}
-					var Zn = Kn("milliseconds"),
-						$n = Kn("seconds"),
-						Xn = Kn("minutes"),
-						Qn = Kn("hours"),
-						ea = Kn("days"),
-						ta = Kn("months"),
-						na = Kn("years"),
-						aa = Math.round,
-						ra = {
-							ss: 44,
-							s: 45,
-							m: 45,
-							h: 22,
-							d: 26,
-							w: null,
-							M: 11
-						};
-
-					function ia(e, t, n, a, r) {
-						return r.relativeTime(t || 1, !!n, e, a)
-					}
-					var sa = Math.abs;
-
-					function oa(e) {
-						return (e > 0) - (e < 0) || +e
-					}
-
-					function da() {
-						if (!this.isValid()) return this.localeData().invalidDate();
-						var e, t, n, a, r, i, s, o, d = sa(this._milliseconds) / 1e3,
-							l = sa(this._days),
-							u = sa(this._months),
-							_ = this.asSeconds();
-						return _ ? (e = U(d / 60), t = U(e / 60), d %= 60, e %= 60, n = U(u / 12), u %= 12, a = d ? d.toFixed(3).replace(/\.?0+$/, "") : "", r = _ < 0 ? "-" : "", i = oa(this._months) !== oa(_) ? "-" : "", s = oa(this._days) !== oa(_) ? "-" : "", o = oa(this._milliseconds) !== oa(_) ? "-" : "", r + "P" + (n ? i + n + "Y" : "") + (u ? i + u + "M" : "") + (l ? s + l + "D" : "") + (t || e || d ? "T" : "") + (t ? o + t + "H" : "") + (e ? o + e + "M" : "") + (d ? o + a + "S" : "")) : "P0D"
-					}
-					var la = zt.prototype;
-					return la.isValid = function() {
-						return this._isValid
-					}, la.abs = function() {
-						var e = this._data;
-						return this._milliseconds = An(this._milliseconds), this._days = An(this._days), this._months = An(this._months), e.milliseconds = An(e.milliseconds), e.seconds = An(e.seconds), e.minutes = An(e.minutes), e.hours = An(e.hours), e.months = An(e.months), e.years = An(e.years), this
-					}, la.add = function(e, t) {
-						return Fn(this, e, t, 1)
-					}, la.subtract = function(e, t) {
-						return Fn(this, e, t, -1)
-					}, la.as = function(e) {
-						if (!this.isValid()) return NaN;
-						var t, n, a = this._milliseconds;
-						if ("month" === (e = N(e)) || "quarter" === e || "year" === e) switch (t = this._days + a / 864e5, n = this._months + Cn(t), e) {
-							case "month":
-								return n;
-							case "quarter":
-								return n / 3;
-							case "year":
-								return n / 12
-						} else switch (t = this._days + Math.round(En(this._months)), e) {
-							case "week":
-								return t / 7 + a / 6048e5;
-							case "day":
-								return t + a / 864e5;
-							case "hour":
-								return 24 * t + a / 36e5;
-							case "minute":
-								return 1440 * t + a / 6e4;
-							case "second":
-								return 86400 * t + a / 1e3;
-							case "millisecond":
-								return Math.floor(864e5 * t) + a;
-							default:
-								throw new Error("Unknown unit " + e)
-						}
-					}, la.asMilliseconds = zn, la.asSeconds = Nn, la.asMinutes = Rn, la.asHours = Vn, la.asDays = Bn, la.asWeeks = Jn, la.asMonths = Un, la.asQuarters = Gn, la.asYears = qn, la.valueOf = function() {
-						return this.isValid() ? this._milliseconds + 864e5 * this._days + this._months % 12 * 2592e6 + 31536e6 * G(this._months / 12) : NaN
-					}, la._bubble = function() {
-						var e, t, n, a, r, i = this._milliseconds,
-							s = this._days,
-							o = this._months,
-							d = this._data;
-						return i >= 0 && s >= 0 && o >= 0 || i <= 0 && s <= 0 && o <= 0 || (i += 864e5 * Wn(En(o) + s), s = 0, o = 0), d.milliseconds = i % 1e3, e = U(i / 1e3), d.seconds = e % 60, t = U(e / 60), d.minutes = t % 60, n = U(t / 60), d.hours = n % 24, s += U(n / 24), r = U(Cn(s)), o += r, s -= Wn(En(r)), a = U(o / 12), o %= 12, d.days = s, d.months = o, d.years = a, this
-					}, la.clone = function() {
-						return $t(this)
-					}, la.get = function(e) {
-						return e = N(e), this.isValid() ? this[e + "s"]() : NaN
-					}, la.milliseconds = Zn, la.seconds = $n, la.minutes = Xn, la.hours = Qn, la.days = ea, la.weeks = function() {
-						return U(this.days() / 7)
-					}, la.months = ta, la.years = na, la.humanize = function(e, t) {
-						if (!this.isValid()) return this.localeData().invalidDate();
-						var n, a, r = !1,
-							i = ra;
-						return "object" == typeof e && (t = e, e = !1), "boolean" == typeof e && (r = e), "object" == typeof t && (i = Object.assign({}, ra, t), null != t.s && null == t.ss && (i.ss = t.s - 1)), n = this.localeData(), a = function(e, t, n, a) {
-							var r = $t(e).abs(),
-								i = aa(r.as("s")),
-								s = aa(r.as("m")),
-								o = aa(r.as("h")),
-								d = aa(r.as("d")),
-								l = aa(r.as("M")),
-								u = aa(r.as("w")),
-								_ = aa(r.as("y")),
-								m = i <= n.ss && ["s", i] || i < n.s && ["ss", i] || s <= 1 && ["m"] || s < n.m && ["mm", s] || o <= 1 && ["h"] || o < n.h && ["hh", o] || d <= 1 && ["d"] || d < n.d && ["dd", d];
-							return null != n.w && (m = m || u <= 1 && ["w"] || u < n.w && ["ww", u]), (m = m || l <= 1 && ["M"] || l < n.M && ["MM", l] || _ <= 1 && ["y"] || ["yy", _])[2] = t, m[3] = +e > 0, m[4] = a, ia.apply(null, m)
-						}(this, !r, i, n), r && (a = n.pastFuture(+this, a)), n.postformat(a)
-					}, la.toISOString = da, la.toString = da, la.toJSON = da, la.locale = on, la.localeData = ln, la.toIsoString = b("toIsoString() is deprecated. Please use toISOString() instead (notice the capitals)", da), la.lang = dn, W("X", 0, 0, "unix"), W("x", 0, 0, "valueOf"), he("x", ue), he("X", /[+-]?\d+(\.\d{1,3})?/), ye("X", (function(e, t, n) {
-						n._d = new Date(1e3 * parseFloat(e))
-					})), ye("x", (function(e, t, n) {
-						n._d = new Date(G(e))
-					})), r.version = "2.25.3", t = Ft, r.fn = xn, r.min = function() {
-						return Et("isBefore", [].slice.call(arguments, 0))
-					}, r.max = function() {
-						return Et("isAfter", [].slice.call(arguments, 0))
-					}, r.now = function() {
-						return Date.now ? Date.now() : +new Date
-					}, r.utc = h, r.unix = function(e) {
-						return Ft(1e3 * e)
-					}, r.months = function(e, t) {
-						return Pn(e, t, "months")
-					}, r.isDate = _, r.locale = ft, r.invalid = M, r.duration = $t, r.isMoment = v, r.weekdays = function(e, t, n) {
-						return On(e, t, n, "weekdays")
-					}, r.parseZone = function() {
-						return Ft.apply(null, arguments).parseZone()
-					}, r.localeData = Mt, r.isDuration = Nt, r.monthsShort = function(e, t) {
-						return Pn(e, t, "monthsShort")
-					}, r.weekdaysMin = function(e, t, n) {
-						return On(e, t, n, "weekdaysMin")
-					}, r.defineLocale = pt, r.updateLocale = function(e, t) {
-						if (null != t) {
-							var n, a, r = lt;
-							null != ut[e] && null != ut[e].parentLocale ? ut[e].set(S(ut[e]._config, t)) : (null != (a = ht(e)) && (r = a._config), t = S(r, t), null == a && (t.abbr = e), (n = new H(t)).parentLocale = ut[e], ut[e] = n), ft(e)
-						} else null != ut[e] && (null != ut[e].parentLocale ? (ut[e] = ut[e].parentLocale, e === ft() && ft(e)) : null != ut[e] && delete ut[e]);
-						return ut[e]
-					}, r.locales = function() {
-						return D(ut)
-					}, r.weekdaysShort = function(e, t, n) {
-						return On(e, t, n, "weekdaysShort")
-					}, r.normalizeUnits = N, r.relativeTimeRounding = function(e) {
-						return void 0 === e ? aa : "function" == typeof e && (aa = e, !0)
-					}, r.relativeTimeThreshold = function(e, t) {
-						return void 0 !== ra[e] && (void 0 === t ? ra[e] : (ra[e] = t, "s" === e && (ra.ss = t - 1), !0))
-					}, r.calendarFormat = function(e, t) {
-						var n = e.diff(t, "days", !0);
-						return n < -6 ? "sameElse" : n < -1 ? "lastWeek" : n < 0 ? "lastDay" : n < 1 ? "sameDay" : n < 2 ? "nextDay" : n < 7 ? "nextWeek" : "sameElse"
-					}, r.prototype = xn, r.HTML5_FMT = {
-						DATETIME_LOCAL: "YYYY-MM-DDTHH:mm",
-						DATETIME_LOCAL_SECONDS: "YYYY-MM-DDTHH:mm:ss",
-						DATETIME_LOCAL_MS: "YYYY-MM-DDTHH:mm:ss.SSS",
-						DATE: "YYYY-MM-DD",
-						TIME: "HH:mm",
-						TIME_SECONDS: "HH:mm:ss",
-						TIME_MS: "HH:mm:ss.SSS",
-						WEEK: "GGGG-[W]WW",
-						MONTH: "YYYY-MM"
-					}, r
-				}()
-			}).call(this, n("./node_modules/webpack/buildin/module.js")(e))
-		},
-		"./node_modules/react-chartjs-2/es/index.js": function(e, t, n) {
+		"./node_modules/react-chartjs-2/es/index.js": function(t, e, n) {
 			"use strict";
-			(function(e) {
-				n.d(t, "a", (function() {
-					return L
+			(function(t) {
+				n.d(e, "a", (function() {
+					return x
 				}));
-				var a = n("./node_modules/react/index.js"),
-					r = n.n(a),
-					i = n("./node_modules/react-chartjs-2/node_modules/prop-types/index.js"),
-					s = n.n(i),
-					o = n("./node_modules/chart.js/dist/Chart.js"),
-					d = n.n(o),
-					l = n("./node_modules/lodash/isEqual.js"),
-					u = n.n(l),
-					_ = n("./node_modules/lodash/keyBy.js"),
-					m = n.n(_),
-					c = Object.assign || function(e) {
-						for (var t = 1; t < arguments.length; t++) {
-							var n = arguments[t];
-							for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+				var i = n("./node_modules/react/index.js"),
+					a = n.n(i),
+					r = n("./node_modules/react-chartjs-2/node_modules/prop-types/index.js"),
+					o = n.n(r),
+					s = n("./node_modules/chart.js/dist/Chart.js"),
+					l = n.n(s),
+					u = n("./node_modules/lodash/isEqual.js"),
+					d = n.n(u),
+					c = n("./node_modules/lodash/keyBy.js"),
+					h = n.n(c),
+					f = Object.assign || function(t) {
+						for (var e = 1; e < arguments.length; e++) {
+							var n = arguments[e];
+							for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (t[i] = n[i])
 						}
-						return e
+						return t
 					};
 
-				function h(e, t) {
+				function g(t, e) {
 					var n = {};
-					for (var a in e) t.indexOf(a) >= 0 || Object.prototype.hasOwnProperty.call(e, a) && (n[a] = e[a]);
+					for (var i in t) e.indexOf(i) >= 0 || Object.prototype.hasOwnProperty.call(t, i) && (n[i] = t[i]);
 					return n
 				}
 
-				function f(e, t) {
-					if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
+				function p(t, e) {
+					if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
 				}
 
-				function p(e, t) {
-					if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-					return !t || "object" != typeof t && "function" != typeof t ? e : t
+				function m(t, e) {
+					if (!t) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+					return !e || "object" != typeof e && "function" != typeof e ? t : e
 				}
 
-				function M(e, t) {
-					if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + typeof t);
-					e.prototype = Object.create(t && t.prototype, {
+				function v(t, e) {
+					if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function, not " + typeof e);
+					t.prototype = Object.create(e && e.prototype, {
 						constructor: {
-							value: e,
+							value: t,
 							enumerable: !1,
 							writable: !0,
 							configurable: !0
 						}
-					}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
+					}), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e)
 				}
-				var y = void 0 !== e && {} && "production",
-					g = function(e) {
-						function t() {
-							var n, a;
-							f(this, t);
-							for (var r = arguments.length, i = Array(r), s = 0; s < r; s++) i[s] = arguments[s];
-							return n = a = p(this, e.call.apply(e, [this].concat(i))), a.handleOnClick = function(e) {
-								var t = a.chartInstance,
-									n = a.props,
-									r = n.getDatasetAtEvent,
-									i = n.getElementAtEvent,
-									s = n.getElementsAtEvent,
-									o = n.onElementsClick;
-								r && r(t.getDatasetAtEvent(e), e), i && i(t.getElementAtEvent(e), e), s && s(t.getElementsAtEvent(e), e), o && o(t.getElementsAtEvent(e), e)
-							}, a.ref = function(e) {
-								a.element = e
-							}, p(a, n)
+				var b = void 0 !== t && {} && "production",
+					y = function(t) {
+						function e() {
+							var n, i;
+							p(this, e);
+							for (var a = arguments.length, r = Array(a), o = 0; o < a; o++) r[o] = arguments[o];
+							return n = i = m(this, t.call.apply(t, [this].concat(r))), i.handleOnClick = function(t) {
+								var e = i.chartInstance,
+									n = i.props,
+									a = n.getDatasetAtEvent,
+									r = n.getElementAtEvent,
+									o = n.getElementsAtEvent,
+									s = n.onElementsClick;
+								a && a(e.getDatasetAtEvent(t), t), r && r(e.getElementAtEvent(t), t), o && o(e.getElementsAtEvent(t), t), s && s(e.getElementsAtEvent(t), t)
+							}, i.ref = function(t) {
+								i.element = t
+							}, m(i, n)
 						}
-						return M(t, e), t.prototype.componentWillMount = function() {
+						return v(e, t), e.prototype.componentWillMount = function() {
 							this.chartInstance = void 0
-						}, t.prototype.componentDidMount = function() {
+						}, e.prototype.componentDidMount = function() {
 							this.renderChart()
-						}, t.prototype.componentDidUpdate = function() {
+						}, e.prototype.componentDidUpdate = function() {
 							if (this.props.redraw) return this.destroyChart(), void this.renderChart();
 							this.updateChart()
-						}, t.prototype.shouldComponentUpdate = function(e) {
-							var t = this.props,
-								n = (t.redraw, t.type),
-								a = t.options,
-								r = t.plugins,
-								i = t.legend,
-								s = t.height,
-								o = t.width;
-							if (!0 === e.redraw) return !0;
-							if (s !== e.height || o !== e.width) return !0;
-							if (n !== e.type) return !0;
-							if (!u()(i, e.legend)) return !0;
-							if (!u()(a, e.options)) return !0;
-							var d = this.transformDataProp(e);
-							return !u()(this.shadowDataProp, d) || !u()(r, e.plugins)
-						}, t.prototype.componentWillUnmount = function() {
+						}, e.prototype.shouldComponentUpdate = function(t) {
+							var e = this.props,
+								n = (e.redraw, e.type),
+								i = e.options,
+								a = e.plugins,
+								r = e.legend,
+								o = e.height,
+								s = e.width;
+							if (!0 === t.redraw) return !0;
+							if (o !== t.height || s !== t.width) return !0;
+							if (n !== t.type) return !0;
+							if (!d()(r, t.legend)) return !0;
+							if (!d()(i, t.options)) return !0;
+							var l = this.transformDataProp(t);
+							return !d()(this.shadowDataProp, l) || !d()(a, t.plugins)
+						}, e.prototype.componentWillUnmount = function() {
 							this.destroyChart()
-						}, t.prototype.transformDataProp = function(e) {
-							var t = e.data;
-							return "function" == typeof t ? t(this.element) : t
-						}, t.prototype.memoizeDataProps = function() {
+						}, e.prototype.transformDataProp = function(t) {
+							var e = t.data;
+							return "function" == typeof e ? e(this.element) : e
+						}, e.prototype.memoizeDataProps = function() {
 							if (this.props.data) {
-								var e = this.transformDataProp(this.props);
-								return this.shadowDataProp = c({}, e, {
-									datasets: e.datasets && e.datasets.map((function(e) {
-										return c({}, e)
+								var t = this.transformDataProp(this.props);
+								return this.shadowDataProp = f({}, t, {
+									datasets: t.datasets && t.datasets.map((function(t) {
+										return f({}, t)
 									}))
-								}), this.saveCurrentDatasets(), e
+								}), this.saveCurrentDatasets(), t
 							}
-						}, t.prototype.checkDatasets = function(e) {
-							var n = "production" !== y && "prod" !== y,
-								a = this.props.datasetKeyProvider !== t.getLabelAsKey,
-								r = e.length > 1;
-							if (n && r && !a) {
-								var i = !1;
-								e.forEach((function(e) {
-									e.label || (i = !0)
-								})), i && console.error('[react-chartjs-2] Warning: Each dataset needs a unique key. By default, the "label" property on each dataset is used. Alternatively, you may provide a "datasetKeyProvider" as a prop that returns a unique key.')
+						}, e.prototype.checkDatasets = function(t) {
+							var n = "production" !== b && "prod" !== b,
+								i = this.props.datasetKeyProvider !== e.getLabelAsKey,
+								a = t.length > 1;
+							if (n && a && !i) {
+								var r = !1;
+								t.forEach((function(t) {
+									t.label || (r = !0)
+								})), r && console.error('[react-chartjs-2] Warning: Each dataset needs a unique key. By default, the "label" property on each dataset is used. Alternatively, you may provide a "datasetKeyProvider" as a prop that returns a unique key.')
 							}
-						}, t.prototype.getCurrentDatasets = function() {
+						}, e.prototype.getCurrentDatasets = function() {
 							return this.chartInstance && this.chartInstance.config.data && this.chartInstance.config.data.datasets || []
-						}, t.prototype.saveCurrentDatasets = function() {
-							var e = this;
-							this.datasets = this.datasets || {}, this.getCurrentDatasets().forEach((function(t) {
-								e.datasets[e.props.datasetKeyProvider(t)] = t
+						}, e.prototype.saveCurrentDatasets = function() {
+							var t = this;
+							this.datasets = this.datasets || {}, this.getCurrentDatasets().forEach((function(e) {
+								t.datasets[t.props.datasetKeyProvider(e)] = e
 							}))
-						}, t.prototype.updateChart = function() {
-							var e = this,
-								t = this.props.options,
+						}, e.prototype.updateChart = function() {
+							var t = this,
+								e = this.props.options,
 								n = this.memoizeDataProps(this.props);
 							if (this.chartInstance) {
-								t && (this.chartInstance.options = d.a.helpers.configMerge(this.chartInstance.options, t));
-								var a = this.getCurrentDatasets(),
-									r = n.datasets || [];
-								this.checkDatasets(a);
-								var i = m()(a, this.props.datasetKeyProvider);
-								this.chartInstance.config.data.datasets = r.map((function(t) {
-									var n = i[e.props.datasetKeyProvider(t)];
-									if (n && n.type === t.type) {
-										n.data.splice(t.data.length), t.data.forEach((function(e, a) {
-											n.data[a] = t.data[a]
+								e && (this.chartInstance.options = l.a.helpers.configMerge(this.chartInstance.options, e));
+								var i = this.getCurrentDatasets(),
+									a = n.datasets || [];
+								this.checkDatasets(i);
+								var r = h()(i, this.props.datasetKeyProvider);
+								this.chartInstance.config.data.datasets = a.map((function(e) {
+									var n = r[t.props.datasetKeyProvider(e)];
+									if (n && n.type === e.type) {
+										n.data.splice(e.data.length), e.data.forEach((function(t, i) {
+											n.data[i] = e.data[i]
 										}));
-										t.data;
-										var a = h(t, ["data"]);
-										return c({}, n, a)
+										e.data;
+										var i = g(e, ["data"]);
+										return f({}, n, i)
 									}
-									return t
+									return e
 								}));
 								n.datasets;
-								var s = h(n, ["datasets"]);
-								this.chartInstance.config.data = c({}, this.chartInstance.config.data, s), this.chartInstance.update()
+								var o = g(n, ["datasets"]);
+								this.chartInstance.config.data = f({}, this.chartInstance.config.data, o), this.chartInstance.update()
 							}
-						}, t.prototype.renderChart = function() {
-							var e = this.props,
-								n = e.options,
-								a = e.legend,
-								r = e.type,
-								i = e.plugins,
-								s = this.element,
-								o = this.memoizeDataProps();
-							void 0 === a || u()(t.defaultProps.legend, a) || (n.legend = a), this.chartInstance = new d.a(s, {
-								type: r,
-								data: o,
+						}, e.prototype.renderChart = function() {
+							var t = this.props,
+								n = t.options,
+								i = t.legend,
+								a = t.type,
+								r = t.plugins,
+								o = this.element,
+								s = this.memoizeDataProps();
+							void 0 === i || d()(e.defaultProps.legend, i) || (n.legend = i), this.chartInstance = new l.a(o, {
+								type: a,
+								data: s,
 								options: n,
-								plugins: i
+								plugins: r
 							})
-						}, t.prototype.destroyChart = function() {
+						}, e.prototype.destroyChart = function() {
 							this.saveCurrentDatasets();
-							var e = Object.values(this.datasets);
-							this.chartInstance.config.data.datasets = e, this.chartInstance.destroy()
-						}, t.prototype.render = function() {
-							var e = this.props,
-								t = e.height,
-								n = e.width,
-								a = e.id;
-							return r.a.createElement("canvas", {
+							var t = Object.values(this.datasets);
+							this.chartInstance.config.data.datasets = t, this.chartInstance.destroy()
+						}, e.prototype.render = function() {
+							var t = this.props,
+								e = t.height,
+								n = t.width,
+								i = t.id;
+							return a.a.createElement("canvas", {
 								ref: this.ref,
-								height: t,
+								height: e,
 								width: n,
-								id: a,
+								id: i,
 								onClick: this.handleOnClick
 							})
-						}, t
-					}(r.a.Component);
-				g.getLabelAsKey = function(e) {
-					return e.label
-				}, g.propTypes = {
-					data: s.a.oneOfType([s.a.object, s.a.func]).isRequired,
-					getDatasetAtEvent: s.a.func,
-					getElementAtEvent: s.a.func,
-					getElementsAtEvent: s.a.func,
-					height: s.a.number,
-					legend: s.a.object,
-					onElementsClick: s.a.func,
-					options: s.a.object,
-					plugins: s.a.arrayOf(s.a.object),
-					redraw: s.a.bool,
-					type: function(e, t, n) {
-						if (!d.a.controllers[e[t]]) return new Error("Invalid chart type `" + e[t] + "` supplied to `" + n + "`.")
+						}, e
+					}(a.a.Component);
+				y.getLabelAsKey = function(t) {
+					return t.label
+				}, y.propTypes = {
+					data: o.a.oneOfType([o.a.object, o.a.func]).isRequired,
+					getDatasetAtEvent: o.a.func,
+					getElementAtEvent: o.a.func,
+					getElementsAtEvent: o.a.func,
+					height: o.a.number,
+					legend: o.a.object,
+					onElementsClick: o.a.func,
+					options: o.a.object,
+					plugins: o.a.arrayOf(o.a.object),
+					redraw: o.a.bool,
+					type: function(t, e, n) {
+						if (!l.a.controllers[t[e]]) return new Error("Invalid chart type `" + t[e] + "` supplied to `" + n + "`.")
 					},
-					width: s.a.number,
-					datasetKeyProvider: s.a.func
-				}, g.defaultProps = {
+					width: o.a.number,
+					datasetKeyProvider: o.a.func
+				}, y.defaultProps = {
 					legend: {
 						display: !0,
 						position: "bottom"
@@ -18267,187 +7068,187 @@
 					width: 300,
 					redraw: !1,
 					options: {},
-					datasetKeyProvider: g.getLabelAsKey
+					datasetKeyProvider: y.getLabelAsKey
 				};
-				(function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				(function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "doughnut"
 						}))
 					}
-				})(r.a.Component),
-				function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				})(a.a.Component),
+				function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "pie"
 						}))
 					}
-				}(r.a.Component);
-				var L = function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				}(a.a.Component);
+				var x = function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					return M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					return v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "line"
 						}))
-					}, t
-				}(r.a.Component);
-				(function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+					}, e
+				}(a.a.Component);
+				(function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "bar"
 						}))
 					}
-				})(r.a.Component),
-				function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				})(a.a.Component),
+				function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "horizontalBar"
 						}))
 					}
-				}(r.a.Component),
-				function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				}(a.a.Component),
+				function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "radar"
 						}))
 					}
-				}(r.a.Component),
-				function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				}(a.a.Component),
+				function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "polarArea"
 						}))
 					}
-				}(r.a.Component),
-				function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				}(a.a.Component),
+				function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "bubble"
 						}))
 					}
-				}(r.a.Component),
-				function(e) {
-					function t() {
-						return f(this, t), p(this, e.apply(this, arguments))
+				}(a.a.Component),
+				function(t) {
+					function e() {
+						return p(this, e), m(this, t.apply(this, arguments))
 					}
-					M(t, e), t.prototype.render = function() {
-						var e = this;
-						return r.a.createElement(g, c({}, this.props, {
-							ref: function(t) {
-								return e.chartInstance = t && t.chartInstance
+					v(e, t), e.prototype.render = function() {
+						var t = this;
+						return a.a.createElement(y, f({}, this.props, {
+							ref: function(e) {
+								return t.chartInstance = e && e.chartInstance
 							},
 							type: "scatter"
 						}))
 					}
-				}(r.a.Component), d.a.defaults
+				}(a.a.Component), l.a.defaults
 			}).call(this, n("./node_modules/process/browser.js"))
 		},
-		"./node_modules/react-chartjs-2/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, n) {
+		"./node_modules/react-chartjs-2/node_modules/prop-types/factoryWithThrowingShims.js": function(t, e, n) {
 			"use strict";
-			var a = n("./node_modules/react-chartjs-2/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+			var i = n("./node_modules/react-chartjs-2/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+
+			function a() {}
 
 			function r() {}
-
-			function i() {}
-			i.resetWarningCache = r, e.exports = function() {
-				function e(e, t, n, r, i, s) {
-					if (s !== a) {
-						var o = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-						throw o.name = "Invariant Violation", o
+			r.resetWarningCache = a, t.exports = function() {
+				function t(t, e, n, a, r, o) {
+					if (o !== i) {
+						var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+						throw s.name = "Invariant Violation", s
 					}
 				}
 
-				function t() {
-					return e
+				function e() {
+					return t
 				}
-				e.isRequired = e;
+				t.isRequired = t;
 				var n = {
-					array: e,
-					bool: e,
-					func: e,
-					number: e,
-					object: e,
-					string: e,
-					symbol: e,
-					any: e,
-					arrayOf: t,
-					element: e,
-					elementType: e,
-					instanceOf: t,
-					node: e,
-					objectOf: t,
-					oneOf: t,
-					oneOfType: t,
-					shape: t,
-					exact: t,
-					checkPropTypes: i,
-					resetWarningCache: r
+					array: t,
+					bool: t,
+					func: t,
+					number: t,
+					object: t,
+					string: t,
+					symbol: t,
+					any: t,
+					arrayOf: e,
+					element: t,
+					elementType: t,
+					instanceOf: e,
+					node: t,
+					objectOf: e,
+					oneOf: e,
+					oneOfType: e,
+					shape: e,
+					exact: e,
+					checkPropTypes: r,
+					resetWarningCache: a
 				};
 				return n.PropTypes = n, n
 			}
 		},
-		"./node_modules/react-chartjs-2/node_modules/prop-types/index.js": function(e, t, n) {
-			e.exports = n("./node_modules/react-chartjs-2/node_modules/prop-types/factoryWithThrowingShims.js")()
+		"./node_modules/react-chartjs-2/node_modules/prop-types/index.js": function(t, e, n) {
+			t.exports = n("./node_modules/react-chartjs-2/node_modules/prop-types/factoryWithThrowingShims.js")()
 		},
-		"./node_modules/react-chartjs-2/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, n) {
+		"./node_modules/react-chartjs-2/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(t, e, n) {
 			"use strict";
-			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+			t.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ModStatsChart.066d8e9cafdefcf389e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~ModStatsChart.45cc24bd757c37934779.js.map

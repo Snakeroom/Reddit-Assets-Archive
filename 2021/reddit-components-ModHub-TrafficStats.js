@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.69db893ead3081be7258.js
-// Retrieved at 3/18/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.89805d71130cb86200c6.js
+// Retrieved at 5/5/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-TrafficStats"], {
 		"./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less": function(e, t, a) {
@@ -89,15 +89,15 @@
 			})), a.d(t, "m", (function() {
 				return p
 			})), a.d(t, "k", (function() {
-				return y
-			})), a.d(t, "j", (function() {
 				return v
+			})), a.d(t, "j", (function() {
+				return y
 			})), a.d(t, "g", (function() {
 				return g
 			})), a.d(t, "i", (function() {
-				return D
-			})), a.d(t, "o", (function() {
 				return M
+			})), a.d(t, "o", (function() {
+				return D
 			})), a.d(t, "n", (function() {
 				return N
 			}));
@@ -173,12 +173,12 @@
 						day: "numeric"
 					})
 				},
-				y = e => {
+				v = e => {
 					return new Date(e).toLocaleTimeString("en", {
 						hour: "numeric"
 					}).replace(" ", "")
 				},
-				v = (e, t, a) => {
+				y = (e, t, a) => {
 					return new Date(e).toLocaleDateString("en", {
 						weekday: t === s.Hour || a ? void 0 : "short",
 						month: "numeric",
@@ -187,9 +187,9 @@
 					})
 				},
 				g = e => Array.isArray(e) ? e.reduce((e, t) => e + parseInt(t), 0) : parseInt(e),
-				D = e => {
+				M = e => {
 					e = e.slice(0, m.a - 1);
-					const t = M(s.Day, !0),
+					const t = D(s.Day, !0),
 						a = new Array(u.length).fill(0),
 						n = new Array(u.length).fill(0);
 					return e.forEach((e, s) => {
@@ -200,7 +200,7 @@
 						return Math.floor(a <= 0 ? e : e / a)
 					})
 				},
-				M = (e, t) => {
+				D = (e, t) => {
 					const a = S[e],
 						n = d()(a, t => {
 							const a = new Date;
@@ -257,29 +257,29 @@
 			var w = a("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				S = a("./src/higherOrderComponents/makeAsync.tsx"),
 				p = a("./src/lib/loadWithRetries/index.ts"),
-				y = Object(S.a)({
-					getComponent: () => Object(p.a)(() => Promise.all([a.e("vendors~ModStatsChart"), a.e("ModStatsChart")]).then(a.bind(null, "./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.tsx"))).then(e => e.default),
+				v = Object(S.a)({
+					getComponent: () => Object(p.a)(() => Promise.all([a.e("vendors~ModStatsChart~Settings"), a.e("vendors~ModStatsChart"), a.e("ModStatsChart")]).then(a.bind(null, "./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.tsx"))).then(e => e.default),
 					LoadingComponent: () => null,
 					ErrorComponent: () => null
 				});
-			var v = e => i.a.createElement("button", {
+			var y = e => i.a.createElement("button", {
 					className: Object(l.a)(e.className, {
 						[e.isSelectedStyles]: e.isSelected
 					}),
 					onClick: e.onClick
 				}, Object(m.l)(e.label)),
 				g = a("./src/lib/prettyPrintNumber/index.ts"),
-				D = a("./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less"),
-				M = a.n(D);
+				M = a("./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less"),
+				D = a.n(M);
 			const {
 				fbt: N
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var E = e => i.a.createElement("span", {
-					className: M.a.StatBlock
+					className: D.a.StatBlock
 				}, i.a.createElement("div", {
-					className: M.a.contentContainer
+					className: D.a.contentContainer
 				}, i.a.createElement("div", {
-					className: M.a.value
+					className: D.a.value
 				}, e.trafficStats ? Object(g.a)(((e, t, a) => {
 					if (t === m.d.Members && e === m.b.Hour) return "N/A";
 					const s = t === m.d.Members ? a[m.e.Members] : a[m.e[t]][m.c[e]].total;
@@ -299,7 +299,7 @@
 						return e.slice(a - t - 1, a).reduce((e, t) => e + t, 0)
 					})(s, n)
 				})(e.statsTime, e.statsView, e.trafficStats).toString()) : "-"), i.a.createElement("div", {
-					className: M.a.timeFrame
+					className: D.a.timeFrame
 				}, N._("Total - {timeFrame}", [N._param("timeFrame", e.timeFrame)], {
 					hk: "1zxYNy"
 				})))),
@@ -310,7 +310,7 @@
 				[m.b.Day]: 7,
 				[m.b.Month]: 12
 			};
-			class O extends i.a.Component {
+			class C extends i.a.Component {
 				constructor(e) {
 					super(e), this.changeTime = e => {
 						const t = m.a[e],
@@ -367,19 +367,19 @@
 						className: T.a.contentContainer
 					}, i.a.createElement("div", {
 						className: T.a.viewNav
-					}, i.a.createElement(v, {
+					}, i.a.createElement(y, {
 						className: T.a.NavItem,
 						label: m.d.Pageviews,
 						isSelected: t === m.d.Pageviews,
 						isSelectedStyles: T.a.NavItemSelected,
 						onClick: () => this.changeView(m.d.Pageviews)
-					}), i.a.createElement(v, {
+					}), i.a.createElement(y, {
 						className: T.a.NavItem,
 						label: m.d.Uniques,
 						isSelected: t === m.d.Uniques,
 						isSelectedStyles: T.a.NavItemSelected,
 						onClick: () => this.changeView(m.d.Uniques)
-					}), i.a.createElement(v, {
+					}), i.a.createElement(y, {
 						className: T.a.NavItem,
 						label: m.d.Members,
 						isSelected: t === m.d.Members,
@@ -414,7 +414,7 @@
 						className: T.a.yAxis
 					}, Object(m.l)(t)), (this.props.isTrafficStatsPending || !this.props.trafficStats) && i.a.createElement("div", {
 						className: T.a.chartPlaceholder
-					}), this.props.trafficStats && i.a.createElement(y, {
+					}), this.props.trafficStats && i.a.createElement(v, {
 						data: this.props.trafficStats,
 						statsView: t,
 						statsTime: e,
@@ -434,19 +434,19 @@
 						className: Object(l.a)(T.a.buttonGroup, {
 							[T.a.hideNavArrows]: e === m.b.Month
 						})
-					}, i.a.createElement(v, {
+					}, i.a.createElement(y, {
 						className: T.a.navButton,
 						label: m.b.Hour,
 						isSelected: e === m.b.Hour,
 						isSelectedStyles: T.a.navButtonSelected,
 						onClick: () => this.changeTime(m.b.Hour)
-					}), i.a.createElement(v, {
+					}), i.a.createElement(y, {
 						className: T.a.navButton,
 						label: m.b.Day,
 						isSelected: e === m.b.Day,
 						isSelectedStyles: T.a.navButtonSelected,
 						onClick: () => this.changeTime(m.b.Day)
-					}), i.a.createElement(v, {
+					}), i.a.createElement(y, {
 						className: T.a.navButton,
 						label: m.b.Month,
 						isSelected: e === m.b.Month,
@@ -465,8 +465,8 @@
 					}))))
 				}
 			}
-			var x = Object(d.c)(O),
-				C = a("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+			var O = Object(d.c)(C),
+				x = a("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				L = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				j = a("./src/reddit/components/ModHub/TrafficStats/DataTable/index.m.less"),
 				A = a.n(j);
@@ -535,19 +535,19 @@
 						className: A.a.contentContainer
 					}, i.a.createElement("div", {
 						className: A.a.viewNav
-					}, i.a.createElement(v, {
+					}, i.a.createElement(y, {
 						className: A.a.NavItem,
 						label: m.f.Day,
 						isSelected: t === m.f.Day,
 						isSelectedStyles: A.a.NavItemSelected,
 						onClick: () => this.changeTimeFrame(m.f.Day)
-					}), i.a.createElement(v, {
+					}), i.a.createElement(y, {
 						className: A.a.NavItem,
 						label: m.f.DayOfWeek,
 						isSelected: t === m.f.DayOfWeek,
 						isSelectedStyles: A.a.NavItemSelected,
 						onClick: () => this.changeTimeFrame(m.f.DayOfWeek)
-					}), i.a.createElement(v, {
+					}), i.a.createElement(y, {
 						className: A.a.NavItem,
 						label: m.f.Month,
 						isSelected: t === m.f.Month,
@@ -562,7 +562,7 @@
 						className: A.a.timeDropdown
 					}, i.a.createElement("span", {
 						className: A.a.timeLabel
-					}, Object(m.l)(t)), i.a.createElement(C.b, {
+					}, Object(m.l)(t)), i.a.createElement(x.b, {
 						className: Object(l.a)(A.a.dropdownIcon, {
 							[A.a.iconUp]: e
 						})
@@ -605,7 +605,7 @@
 				className: I.a.updateText
 			}, s.fbt._("updating every hour", null, {
 				hk: "4h5onW"
-			}))), i.a.createElement(x, {
+			}))), i.a.createElement(O, {
 				isTrafficStatsPending: e.isTrafficStatsPending,
 				trafficStats: e.trafficStats
 			}), i.a.createElement(q, {
@@ -614,4 +614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.69db893ead3081be7258.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.89805d71130cb86200c6.js.map
