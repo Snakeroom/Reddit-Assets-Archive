@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.7ffee356252cc29b560f.js
-// Retrieved at 4/14/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.0ff65eee829f91af518f.js
+// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -329,7 +329,7 @@
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
 				value: !0
-			}), t.SWITZERLAND = t.GERMANY = t.AUSTRIA = t.PORTUGUESE_BRAZILLIAN_LOCALE = t.FRENCH_LOCALE = t.GERMAN_LOCALE = t.DEFAULT_LOCALE = t.PSEUDO_EXT_LOCALE = t.PSEUDO_SHORT_LOCALE = t.PSEUDO_LONG_LOCALE = void 0, t.PSEUDO_LONG_LOCALE = "pseudo_long", t.PSEUDO_SHORT_LOCALE = "pseudo_short", t.PSEUDO_EXT_LOCALE = "pseudo_ext", t.DEFAULT_LOCALE = "en-US", t.GERMAN_LOCALE = "de-DE", t.FRENCH_LOCALE = "fr", t.PORTUGUESE_BRAZILLIAN_LOCALE = "pt-BR", t.AUSTRIA = "AT", t.GERMANY = "DE", t.SWITZERLAND = "CH"
+			}), t.BRAZIL = t.FRANCE = t.SWITZERLAND = t.GERMANY = t.AUSTRIA = t.PORTUGUESE_BRAZILIAN_LOCALE = t.FRENCH_LOCALE = t.GERMAN_LOCALE = t.DEFAULT_LOCALE = t.PSEUDO_EXT_LOCALE = t.PSEUDO_SHORT_LOCALE = t.PSEUDO_LONG_LOCALE = void 0, t.PSEUDO_LONG_LOCALE = "pseudo_long", t.PSEUDO_SHORT_LOCALE = "pseudo_short", t.PSEUDO_EXT_LOCALE = "pseudo_ext", t.DEFAULT_LOCALE = "en-US", t.GERMAN_LOCALE = "de-DE", t.FRENCH_LOCALE = "fr", t.PORTUGUESE_BRAZILIAN_LOCALE = "pt-BR", t.AUSTRIA = "AT", t.GERMANY = "DE", t.SWITZERLAND = "CH", t.FRANCE = "FR", t.BRAZIL = "BR"
 		},
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/fbt.js": function(e, t, n) {
 			"use strict";
@@ -34689,4 +34689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.7ffee356252cc29b560f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.0ff65eee829f91af518f.js.map

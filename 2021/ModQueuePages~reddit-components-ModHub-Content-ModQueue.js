@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.02a45b0119bad71de699.js
-// Retrieved at 4/29/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.870a70d06079e047df6a.js
+// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -1912,7 +1912,7 @@
 					redditStyle: x.A
 				}),
 				j = Object(i.b)(_, e => ({
-					onListingLayoutChange: (t, s) => e(Object(c.x)(t, s)),
+					onListingLayoutChange: (t, s) => e(Object(c.v)(t, s)),
 					toggleTooltip: t => e(Object(m.h)({
 						tooltipId: t
 					}))
@@ -2158,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.02a45b0119bad71de699.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.870a70d06079e047df6a.js.map

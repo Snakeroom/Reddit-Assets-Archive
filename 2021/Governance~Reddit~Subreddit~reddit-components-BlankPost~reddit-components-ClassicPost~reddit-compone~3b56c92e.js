@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.fa04c7653028b45de9b3.js
-// Retrieved at 5/4/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.44bb1f20dd7e426a7158.js
+// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/graphql/operations/BadgeIndicators.json": function(e) {
@@ -2593,7 +2593,7 @@
 			! function(e) {
 				e.Whitelisted = "whitelisted", e.Everyone = "everyone"
 			}(n || (n = {}));
-			const V = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "lang", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", "showPresence", ...L.a, "loginOtpEnabled"],
+			const V = ["acceptPrivateMessages", "allowClickTracking", "autoplayVideo", "collapseReadMessages", "defaultCommentSort", "emailDigests", "emailUnreadMessages", "emailUnsubscribe", "geopopular", "hideAds", "hideFromRobots", "hideNSFW", "highlightComments", "ignoreSuggestedSort", "inBeta", "labelNSFW", "markMessagesRead", "nightmode", "over18", "sendWelcomeMessages", "showMessagesInInbox", "showNotifications", "showTwitter", "showUsernameMentionNotifications", "showActiveCommunities", "showPresence", ...L.a, "loginOtpEnabled"],
 				q = {
 					acceptPrivateMessages: void 0,
 					activityRelevantAds: !0,
@@ -2612,7 +2612,6 @@
 					hideNSFW: !0,
 					ignoreSuggestedSort: !1,
 					labelNSFW: !0,
-					lang: "en",
 					loginOtpEnabled: !1,
 					markMessagesRead: !0,
 					nightmode: !1,
@@ -2722,7 +2721,7 @@
 							editorMode: s === G.b.Markdown ? F.h.MARKDOWN : F.h.RICH_TEXT
 						}
 					}
-					case D.h: {
+					case D.g: {
 						const {
 							layout: s
 						} = t.payload;
@@ -2731,12 +2730,12 @@
 							layout: s
 						}
 					}
-					case D.o:
+					case D.n:
 						return void 0 !== t.payload ? {
 							...e,
 							rpanDuDismissalTime: t.payload
 						} : e;
-					case D.p: {
+					case D.o: {
 						const {
 							layout: s,
 							subredditId: n
@@ -2749,7 +2748,7 @@
 						return {
 							...e, hasSeenCustomizeFlyout: !0
 						};
-					case D.m:
+					case D.l:
 						return e.profileLayout === t.payload.profileLayout ? e : {
 							...e,
 							profileLayout: t.payload.profileLayout
@@ -2763,12 +2762,12 @@
 							...e,
 							autoplayVideo: t.payload.autoplayVideo
 						} : e;
-					case D.i:
+					case D.h:
 						return void 0 !== t.payload ? {
 							...e,
 							nightmode: t.payload.nightmode
 						} : e;
-					case D.r:
+					case D.q:
 						if (void 0 !== t.payload) {
 							const {
 								topContentDismissalTime: s,
@@ -2834,13 +2833,13 @@
 					case N.b:
 					case h.PAGE_LOADED:
 					case T.PAGE_LOADED:
-					case D.j:
+					case D.i:
 					case C.SEARCH_RESULTS_RECEIVED:
 					case D.a:
 					case w.c:
 					case S.TOPIC_DATA_LOADED:
 						return t.payload && t.payload.preferences ? H(e, t.payload.preferences) : e;
-					case D.q: {
+					case D.p: {
 						const {
 							subredditId: s,
 							prefs: n
@@ -2879,7 +2878,7 @@
 					case O.w:
 					case O.v:
 						return t.payload && t.payload.response && t.payload.response.preferences ? H(e, t.payload.preferences) : e;
-					case D.n: {
+					case D.m: {
 						const s = t.payload,
 							{
 								showActiveCommunities: n
@@ -3067,4 +3066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.fa04c7653028b45de9b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.44bb1f20dd7e426a7158.js.map

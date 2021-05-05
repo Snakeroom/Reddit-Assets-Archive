@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.5a359c701e65788f7b28.js
-// Retrieved at 5/4/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.55c66465288a04cd3e15.js
+// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2483,10 +2483,10 @@
 				G = n("./src/lib/fastdom/index.ts"),
 				z = n("./src/lib/lessComponent.tsx"),
 				V = n("./src/reddit/components/IdCard/DescriptionBlock/index.m.less"),
-				J = n.n(V);
+				K = n.n(V);
 			const {
-				fbt: K
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = z.a.div("DescriptionContainer", J.a);
+				fbt: J
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = z.a.div("DescriptionContainer", K.a);
 			class Q extends i.a.Component {
 				constructor(e) {
 					super(e), this.containerRef = null, this.textRef = null, this.showFullDescription = e => {
@@ -2513,22 +2513,22 @@
 					} = this.props, {
 						shouldDisplayShowMore: s,
 						shouldTruncateDescription: r
-					} = this.state, o = n ? K._("Welcome to {subredditName}", [K._param("subredditName", n.name)], {
+					} = this.state, o = n ? J._("Welcome to {subredditName}", [J._param("subredditName", n.name)], {
 						hk: "1dVVp0"
 					}) : "";
 					return i.a.createElement(Y, {
-						className: Object(m.a)(J.a.descriptionContainer, r && J.a.truncated),
+						className: Object(m.a)(K.a.descriptionContainer, r && K.a.truncated),
 						"data-redditstyle": !0,
 						innerRef: this.setContainerRef
 					}, i.a.createElement("div", {
-						className: J.a.description,
+						className: K.a.description,
 						ref: this.setTextRef
 					}, t || o, e), r && s && i.a.createElement("div", {
-						className: J.a.showMore
+						className: K.a.showMore
 					}, "...", i.a.createElement(w.o, {
-						className: J.a.showFullDescriptionButton,
+						className: K.a.showFullDescriptionButton,
 						onClick: this.showFullDescription
-					}, K._("MORE", null, {
+					}, J._("MORE", null, {
 						hk: "1Xmz7S"
 					}))))
 				}
@@ -2594,7 +2594,7 @@
 				}
 				renderInactiveDescription() {
 					const e = this.props.apiPending ? i.a.createElement($.a, {
-							className: J.a.loadingIcon,
+							className: K.a.loadingIcon,
 							sizePx: ie
 						}) : void 0,
 						{
@@ -2606,11 +2606,11 @@
 						subreddit: this.props.subreddit
 					}, t ? i.a.createElement(te.a, {
 						name: "edit",
-						className: J.a.pencil
+						className: K.a.pencil
 					}) : i.a.createElement(ne.a, {
-						className: J.a.pencil
+						className: K.a.pencil
 					}), e)) : i.a.createElement("div", {
-						className: J.a.emptyDescription
+						className: K.a.emptyDescription
 					}, s.fbt._("Add description", null, {
 						hk: "47p1vF"
 					}), e)
@@ -2623,25 +2623,25 @@
 						placeholder: s.fbt._("Tell us about your community", null, {
 							hk: "40SeWt"
 						}),
-						className: Object(m.a)(J.a.editableDescription, J.a.activeEditableDescription),
+						className: Object(m.a)(K.a.editableDescription, K.a.activeEditableDescription),
 						onChange: e => this.setState({
 							description: e.currentTarget.value
 						}),
 						maxLength: W.c,
 						value: this.state.description
 					}), i.a.createElement("div", {
-						className: J.a.editableDescriptionControlRow
+						className: K.a.editableDescriptionControlRow
 					}, i.a.createElement(q.a, {
-						className: J.a.characterCountdown,
+						className: K.a.characterCountdown,
 						maxChars: W.c,
 						text: this.state.description
 					}), i.a.createElement("span", {
-						className: J.a.cancel,
+						className: K.a.cancel,
 						onClick: this.onCancel
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), i.a.createElement("span", {
-						className: J.a.save,
+						className: K.a.save,
 						onClick: this.onSave
 					}, s.fbt._("Save", null, {
 						hk: "3bWn72"
@@ -2651,9 +2651,9 @@
 					return this.state.description !== this.props.description
 				}
 				getContainerClassNames() {
-					if (!this.state.editing && this.state.description) return [J.a.defaultEditableDescriptionContainer];
-					const e = [J.a.editableDescriptionContainer];
-					return this.state.editing && e.push(J.a.activeEditableDescriptionContainer), e
+					if (!this.state.editing && this.state.description) return [K.a.defaultEditableDescriptionContainer];
+					const e = [K.a.editableDescriptionContainer];
+					return this.state.editing && e.push(K.a.activeEditableDescriptionContainer), e
 				}
 				render() {
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
@@ -2723,8 +2723,8 @@
 				Ge = n("./src/reddit/selectors/subscriptions.ts"),
 				ze = n("./src/reddit/selectors/widgets.ts"),
 				Ve = n("./src/reddit/components/IdCard/Banner.tsx"),
-				Je = n("./src/reddit/actions/preferences.ts"),
-				Ke = n("./src/reddit/actions/authorFlair.ts"),
+				Ke = n("./src/reddit/actions/preferences.ts"),
+				Je = n("./src/reddit/actions/authorFlair.ts"),
 				Ye = n("./src/reddit/actions/badge.ts"),
 				Qe = n("./src/reddit/components/Badges/UserDisplay/index.tsx"),
 				Xe = n("./src/reddit/components/Flair/index.tsx"),
@@ -2759,7 +2759,7 @@
 				ht = Object(o.b)(bt, (e, {
 					subredditId: t
 				}) => ({
-					onToggleModal: n => e(Object(Ke.b)({
+					onToggleModal: n => e(Object(Je.b)({
 						username: n,
 						subredditId: t
 					})),
@@ -2906,7 +2906,7 @@
 			}
 			var Nt = Object(o.b)(kt, e => ({
 					updateSubredditPrefs: (t, n) => {
-						e(Object(Je.J)(t, n))
+						e(Object(Ke.H)(t, n))
 					}
 				}))(wt),
 				Ft = n("./src/reddit/components/IdCard/helpers.ts"),
@@ -3095,7 +3095,7 @@
 						idCardWidget: n
 					}), H = N || b || f, q = !N && C.id ? C.id : "", W = y && y.created, G = s.fbt._("Cake Day", null, {
 						hk: "gZ29b"
-					}), z = `IdCard--Subscribers--${b}--${q}`, V = `IdCard--CurrentlyViewing--${b}--${q}`, J = `IdCard--CakeDay--${b}--${q}`, K = `IdCard--CoinCoint--${b}--${q}`, Y = p && !b, Q = !N && !u && !d, Z = !N && !b && k && !f, $ = Z ? i.a.createElement(de, {
+					}), z = `IdCard--Subscribers--${b}--${q}`, V = `IdCard--CurrentlyViewing--${b}--${q}`, K = `IdCard--CakeDay--${b}--${q}`, J = `IdCard--CoinCoint--${b}--${q}`, Y = p && !b, Q = !N && !u && !d, Z = !N && !b && k && !f, $ = Z ? i.a.createElement(de, {
 						description: D,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!r,
@@ -3157,7 +3157,7 @@
 						subreddit: C,
 						titleText: M,
 						onOpenFilePicker: this.openIconFilePicker
-					}) : null, $, !N && !Y && Wt(L, A, z, R, P, V, W, G, J, l, j), Q && i.a.createElement(Bt.a, {
+					}) : null, $, !N && !Y && Wt(L, A, z, R, P, V, W, G, K, l, j), Q && i.a.createElement(Bt.a, {
 						subredditId: q
 					}), !N && i.a.createElement("div", {
 						className: At.a.CommunityTypeContainer
@@ -3175,9 +3175,9 @@
 					}), s.fbt._("{number-community-coins} Coins", [s.fbt._param("number-community-coins", T.toLocaleString())], {
 						hk: "3FSFdY"
 					}), i.a.createElement("span", {
-						id: K,
-						onMouseLeave: () => j(K),
-						onMouseEnter: () => j(K)
+						id: J,
+						onMouseLeave: () => j(J),
+						onMouseEnter: () => j(J)
 					}, l ? i.a.createElement(te.a, {
 						name: "help",
 						isFilled: !0,
@@ -3185,7 +3185,7 @@
 					}) : i.a.createElement(Pe.a, {
 						className: At.a.helpIcon
 					})), i.a.createElement(ce.c, {
-						tooltipId: K
+						tooltipId: J
 					}, i.a.createElement("p", {
 						className: At.a.coinsTooltipContent
 					}, s.fbt._("The community gets Coins from Awards given by members", null, {
@@ -5280,4 +5280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.5a359c701e65788f7b28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.55c66465288a04cd3e15.js.map

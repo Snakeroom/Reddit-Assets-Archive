@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.90d639570206ddae502c.js
-// Retrieved at 5/4/2021, 9:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.6289380ba3c125dd004a.js
+// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3487,7 +3487,7 @@
 				l = s.n(d);
 			const {
 				fbt: u
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), m = r.a.createElement(o.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), m = () => r.a.createElement(o.a, {
 				className: l.a.duHeader
 			}, u._("Trending today", null, {
 				hk: "3rOxuO"
@@ -3496,7 +3496,7 @@
 			});
 			t.a = e => r.a.createElement(i.a, {
 				className: e.className,
-				header: m,
+				header: m(),
 				layoutBodyClassName: l.a.layoutBody,
 				showCardView: e.showCardView
 			}, Array.from({
@@ -7133,7 +7133,7 @@
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
 				})),
-				setTopContentDismissalPref: () => e(Object(C.F)()),
+				setTopContentDismissalPref: () => e(Object(C.D)()),
 				redirectToNewSort: () => {
 					e(Object(u.b)(`/r/${t.match.params.subredditName}/${h.R.NEW}/`))
 				}
@@ -7955,4 +7955,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.90d639570206ddae502c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6289380ba3c125dd004a.js.map

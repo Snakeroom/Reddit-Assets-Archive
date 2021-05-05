@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.15c7024d219c6b7223fd.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.bc5882eb91d18f3a19fd.js
+// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -59,7 +59,7 @@
 					if (l.topContent.pending[a] || p[a]) return;
 					t(u({
 						subredditName: a
-					})), t(Object(i.z)());
+					})), t(Object(i.x)());
 					const h = await ((e, t) => Object(o.a)(e, {
 						...r,
 						variables: t
@@ -2376,4 +2376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.15c7024d219c6b7223fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.bc5882eb91d18f3a19fd.js.map

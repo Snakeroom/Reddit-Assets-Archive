@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fafcbc6836cb386c4396.js
-// Retrieved at 5/4/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.9a9628c02645dc261334.js
+// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -2240,7 +2240,7 @@
 				l = s.n(d);
 			const {
 				fbt: u
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), m = r.a.createElement(i.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), m = () => r.a.createElement(i.a, {
 				className: l.a.duHeader
 			}, u._("Trending today", null, {
 				hk: "3rOxuO"
@@ -2249,7 +2249,7 @@
 			});
 			t.a = e => r.a.createElement(o.a, {
 				className: e.className,
-				header: m,
+				header: m(),
 				layoutBodyClassName: l.a.layoutBody,
 				showCardView: e.showCardView
 			}, Array.from({
@@ -5120,4 +5120,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fafcbc6836cb386c4396.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9a9628c02645dc261334.js.map
