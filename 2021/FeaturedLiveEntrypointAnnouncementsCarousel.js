@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.f1cc4c73b5a3b0f0c444.js
-// Retrieved at 5/4/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0fd66714927676610574.js
+// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -61,8 +61,8 @@
 				m = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				b = (t("./node_modules/core-js/modules/web.dom.iterable.js"), t("./node_modules/js-cookie/src/js.cookie.js")),
 				v = t.n(b),
-				p = t("./node_modules/lodash/isEqual.js"),
-				A = t.n(p),
+				A = t("./node_modules/lodash/isEqual.js"),
+				p = t.n(A),
 				x = t("./src/lib/constants/index.ts"),
 				h = t("./src/reddit/constants/cookie.ts"),
 				_ = t("./src/reddit/constants/experiments.ts"),
@@ -105,7 +105,7 @@
 				I = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(_.Bd)(n.variant)) return !1
+						if (n && Object(_.Ad)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -164,7 +164,7 @@
 				const n = Object(l.a)(),
 					t = Object(c.e)(e => e.live.shouldShowAnnouncements),
 					[r, b] = Object(a.useState)([]),
-					[v, p] = Object(a.useState)(!t),
+					[v, A] = Object(a.useState)(!t),
 					[x, _] = Object(a.useState)(!0),
 					[O, f] = Object(a.useState)(0);
 				(({
@@ -181,7 +181,7 @@
 							c = e.filter(I(r, a)).slice(0, 5),
 							l = [...c].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
 							d = c.length ? h.i.Yes : h.i.No;
-						w(d), t || A()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
+						w(d), t || p()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
 					}, [])
 				})({
 					announcements: e,
@@ -214,7 +214,7 @@
 					activeIndex: O,
 					visibleAnnouncements: r,
 					setActiveIndex: f
-				}), B = (({
+				}), S = (({
 					setIsHidden: e,
 					visibleAnnouncements: n
 				}) => {
@@ -230,8 +230,8 @@
 					}, [n, t, e])
 				})({
 					visibleAnnouncements: r,
-					setIsHidden: p
-				}), S = (({
+					setIsHidden: A
+				}), B = (({
 					activeIndex: e,
 					setActiveIndex: n,
 					visibleAnnouncements: t
@@ -272,7 +272,7 @@
 					hk: "1R94KF"
 				})), o.a.createElement("button", {
 					className: D.a.CloseBtn,
-					onClick: B
+					onClick: S
 				}, n ? o.a.createElement(d.a, {
 					name: "close"
 				}) : o.a.createElement(m.a, null)), o.a.createElement("div", {
@@ -298,7 +298,7 @@
 					}),
 					isActive: n === O,
 					key: e.id,
-					onClick: S
+					onClick: B
 				}))), r.length > 1 ? o.a.createElement("button", {
 					className: D.a.RightArrow,
 					onClick: k("next")
@@ -321,4 +321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.f1cc4c73b5a3b0f0c444.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0fd66714927676610574.js.map

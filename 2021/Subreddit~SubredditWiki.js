@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.0f1dc9b5bcb98823ae08.js
-// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.d215e702a541d7f1dccd.js
+// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -484,11 +484,11 @@
 					experimentName: re.W,
 					experimentEligibilitySelector: de
 				}), ae.a),
-				le = Object(a.a)(ce, e => e === re.cc.ToolTip_nonSub),
-				ue = Object(a.a)(ce, e => e === re.cc.ToolTip_2ndVisit),
-				me = Object(a.a)(ce, e => e === re.cc.ToolTip_3rdVisit),
-				pe = Object(a.a)(ce, e => e === re.cc.HalfSheet_2ndVisit),
-				be = Object(a.a)(ce, e => e === re.cc.HalfSheet_3rdVisit),
+				le = Object(a.a)(ce, e => e === re.bc.ToolTip_nonSub),
+				ue = Object(a.a)(ce, e => e === re.bc.ToolTip_2ndVisit),
+				me = Object(a.a)(ce, e => e === re.bc.ToolTip_3rdVisit),
+				pe = Object(a.a)(ce, e => e === re.bc.HalfSheet_2ndVisit),
+				be = Object(a.a)(ce, e => e === re.bc.HalfSheet_3rdVisit),
 				he = Object(a.a)(pe, be, ue, me, le, (e, t, n, s, r) => e || t || n || s || r);
 			var xe = e => {
 					const t = Object(i.e)(pe),
@@ -3853,12 +3853,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case h.nd.SmIcon:
+						case h.md.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.nd.SmIconHc:
+						case h.md.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4467,7 +4467,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(mt.c)(e, t),
-					isPredictionsLeaderboardsEnabled: pt.h,
+					isPredictionsLeaderboardsEnabled: pt.g,
 					showGovernance: ct.d.spPoints,
 					showLeaderboard: ct.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -5043,12 +5043,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.id
+						experimentName: s.hd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.nd.SmIcon || t === s.nd.SmIconHc
+					return t === s.md.SmIcon || t === s.md.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5071,4 +5071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.0f1dc9b5bcb98823ae08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.d215e702a541d7f1dccd.js.map

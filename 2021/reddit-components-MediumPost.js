@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.849d8f3ccefadc74713b.js
-// Retrieved at 5/5/2021, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.87a215555ed4cba14e68.js
+// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2049,7 +2049,7 @@
 							listingName: re,
 							postId: le
 						}))
-					}, [Oe, se, re, le]), je = e => e === R.a.upvoted ? Oe(Object(l.bb)(le)) : Oe(Object(l.u)(le)), ke = () => Oe(Object(l.X)(le)), _e = pe ? void 0 : D, we = Object(F.a)(ie), Ce = ae && we, Se = Object(A.a)(ie), Pe = Object(L.a)(ie), Ne = Object(E.c)(de), Me = !!oe && !Object(M.Bd)(oe), Ie = Object(T.a)(de), Te = U && !xe && !Me, Ae = Te && !!de.source && !n, Le = !(X && i || te) && !G && (!U || Me), Fe = (!U || Me) && !de.isSponsored, Be = Object(a.t)(de, ne), {
+					}, [Oe, se, re, le]), je = e => e === R.a.upvoted ? Oe(Object(l.bb)(le)) : Oe(Object(l.u)(le)), ke = () => Oe(Object(l.X)(le)), _e = pe ? void 0 : D, we = Object(F.a)(ie), Ce = ae && we, Se = Object(A.a)(ie), Pe = Object(L.a)(ie), Ne = Object(E.c)(de), Me = !!oe && !Object(M.Ad)(oe), Ie = Object(T.a)(de), Te = U && !xe && !Me, Ae = Te && !!de.source && !n, Le = !(X && i || te) && !G && (!U || Me), Fe = (!U || Me) && !de.isSponsored, Be = Object(a.t)(de, ne), {
 						source: Re
 					} = Be, De = s.a.createElement(k.a, {
 						className: Object(c.a)(ee.a.container, t, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(B.a)(e), {
@@ -4001,9 +4001,9 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: o.tb
 				});
-				return !(!t || Object(o.Bd)(t))
+				return !(!t || Object(o.Ad)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.849d8f3ccefadc74713b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.87a215555ed4cba14e68.js.map

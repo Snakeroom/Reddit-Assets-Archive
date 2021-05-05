@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.2b543a77e29821d6f90b.js
-// Retrieved at 5/5/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.8e8eec8076f13c522d05.js
+// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1502,9 +1502,9 @@
 				F = r("./src/lib/classNames/index.ts"),
 				G = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				D = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				z = r("./src/reddit/hooks/useTracking.ts"),
-				J = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
-				W = r.n(J);
+				J = r("./src/reddit/hooks/useTracking.ts"),
+				z = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
+				W = r.n(z);
 			const H = {
 					avatar: () => a.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
@@ -1571,7 +1571,7 @@
 					className: e
 				}) => {
 					const t = Object(s.e)(f.i),
-						r = Object(z.a)();
+						r = Object(J.a)();
 					if (!(null == t ? void 0 : t.length)) return c.a.createElement("div", null, c.a.createElement(D.a, {
 						sizePx: 80
 					}));
@@ -1642,9 +1642,9 @@
 					}))
 				};
 			var Q = r("./src/reddit/models/Gold/Premium/index.ts"),
-				K = r("./src/reddit/selectors/gold/productOffers.ts"),
-				$ = r("./src/reddit/pages/Premium/PremiumButtons/index.m.less"),
-				Z = r.n($);
+				$ = r("./src/reddit/selectors/gold/productOffers.ts"),
+				K = r("./src/reddit/pages/Premium/PremiumButtons/index.m.less"),
+				Z = r.n(K);
 			var X = ({
 					className: e,
 					isHeroStyles: t,
@@ -1654,14 +1654,14 @@
 					const o = Object(s.e)(q.a),
 						i = Object(s.e)(f.i),
 						d = Object(s.e)(U.s),
-						l = Object(s.e)(K.c);
+						l = Object(s.e)($.c);
 					let u, m;
 					const p = i.find(e => e.frequency === Q.c.Monthly),
 						b = i.find(e => e.frequency === Q.c.Yearly);
 					if (o) {
 						if (!(null == l ? void 0 : l.pricePackages)) return null;
-						const e = Object(K.h)(l, T.b.Month),
-							t = Object(K.h)(l, T.b.Year);
+						const e = Object($.h)(l, T.b.Month),
+							t = Object($.h)(l, T.b.Year);
 						u = {
 							price: null == e ? void 0 : e.price,
 							packageId: null == e ? void 0 : e.id
@@ -1724,7 +1724,7 @@
 				re = r("./src/reddit/pages/Premium/RedeemGiftCode/index.m.less"),
 				ne = r.n(re);
 			const ae = () => {
-					const e = Object(z.a)(),
+					const e = Object(J.a)(),
 						t = Object(s.d)(),
 						r = Object(s.e)(te.a),
 						n = Object(s.e)(te.b);
@@ -1920,7 +1920,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Kb)
+			const o = Object(a.a)(n.Jb)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -1978,4 +1978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.2b543a77e29821d6f90b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.8e8eec8076f13c522d05.js.map

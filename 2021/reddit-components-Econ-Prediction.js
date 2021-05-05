@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9d1617223369338a9e11.js
-// Retrieved at 5/5/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b51d8a59c58a9dfc9055.js
+// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -252,7 +252,7 @@
 							disallowProfile: !0
 						});
 					if (!k) throw new Error("Post does not belong to a subreddit");
-					const n = await Object(m.f)(x(), k.name, Object(l.e)(t));
+					const n = await Object(m.f)(x(), k.name, Object(l.d)(t));
 					if (n.error || !n.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: o
@@ -1094,7 +1094,7 @@
 				selectedChipPack: i,
 				selectedCoinPack: r
 			}) {
-				const n = Object(k.e)(u.i),
+				const n = Object(k.e)(u.h),
 					o = Object(k.e)(V.d),
 					[m, e] = Object(x.useState)(null),
 					[l, c] = Object(x.useState)(!1),
@@ -1260,7 +1260,7 @@
 			const {
 				fbt: fa
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), da = 1e3, ua = Object(n.c)({
-				isNewPredictionsSheet: u.i,
+				isNewPredictionsSheet: u.h,
 				userCoins: V.d
 			}), ya = {
 				fetchPredictionChipPackages: h.d,
@@ -1910,9 +1910,9 @@
 			const {
 				fbt: li
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ci = Object(n.c)({
-				isAutoVoteEnabled: u.g,
+				isAutoVoteEnabled: u.f,
 				isEditing: B.K,
-				isVoteAnimationEnabled: u.f,
+				isVoteAnimationEnabled: u.e,
 				prediction: A.g,
 				pollId: A.a,
 				post: D.F,
@@ -2771,4 +2771,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9d1617223369338a9e11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b51d8a59c58a9dfc9055.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c64e5bbb9e6892cd2b78.js
-// Retrieved at 5/5/2021, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f3294233e62c145913ac.js
+// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1960,7 +1960,7 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: F,
 						tooltipType: L
-					} = e, R = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Z.g), G = Object(a.e)(Y.a), W = !(!w.isSponsored || !G || Object(m.Bd)(G) || !D);
+					} = e, R = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Z.g), G = Object(a.e)(Y.a), W = !(!w.isSponsored || !G || Object(m.Ad)(G) || !D);
 					Object(s.useEffect)(() => {
 						W && R(Object(b.d)(w.author))
 					}, []);
@@ -3096,13 +3096,13 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.Ab
 					});
-					return !(!t || Object(s.Bd)(t))
+					return !(!t || Object(s.Ad)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
 						experimentName: s.Ab
-					}) === s.Qb.ListingEnabled
+					}) === s.Pb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3126,4 +3126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c64e5bbb9e6892cd2b78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.f3294233e62c145913ac.js.map
