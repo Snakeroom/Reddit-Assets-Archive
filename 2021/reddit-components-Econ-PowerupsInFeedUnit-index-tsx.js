@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.e1c913ff663950af1d41.js
-// Retrieved at 5/3/2021, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.da66ce4aa05d054138f3.js
+// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -53,10 +53,10 @@
 					count: E,
 					tiersInfo: w,
 					supportersCount: h
-				} = r, x = w[1].powerupsCost, N = _ >= 2, f = (null == b ? void 0 : b.filter(e => {
+				} = r, x = w[1].powerupsCost, N = _ >= 2, j = (null == b ? void 0 : b.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], j = Math.min(E, x) / x, g = x - E;
+				}).slice(0, 2)) || [], f = Math.min(E, x) / x, g = x - E;
 				return o.a.createElement("div", {
 					className: Object(a.a)(m.a.container, e, {
 						[m.a.containerClickable]: !!s
@@ -65,11 +65,11 @@
 					onClick: () => null == s ? void 0 : s(E)
 				}, o.a.createElement("div", {
 					className: m.a.heroes
-				}, !!f.length && o.a.createElement("div", {
+				}, !!j.length && o.a.createElement("div", {
 					className: Object(a.a)(m.a.heroesAvatarContainer, {
-						[m.a.twoAvatarsContainer]: f.length > 1
+						[m.a.twoAvatarsContainer]: j.length > 1
 					})
-				}, f.map(e => {
+				}, j.map(e => {
 					var t, s;
 					return o.a.createElement("div", {
 						className: m.a.heroesAvatar,
@@ -97,7 +97,7 @@
 					hk: "4h33rf"
 				})), o.a.createElement(c.a, {
 					className: m.a.progressBar,
-					progress: j
+					progress: f
 				}))
 			}
 		},
@@ -163,26 +163,28 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = ({
 				subredditId: e,
-				className: t
+				className: t,
+				isDataLoaded: s
 			}) => {
-				const s = Object(n.d)(),
-					w = Object(b.a)(),
-					N = Object(n.e)(_.u),
+				const w = Object(n.d)(),
+					N = Object(b.a)(),
+					j = Object(n.e)(_.v),
 					f = Object(n.e)(t => Object(E.T)(t, {
 						subredditId: e
 					})),
-					j = Object(n.e)(t => Object(_.a)(t, {
+					g = Object(n.e)(t => Object(_.t)(t, {
 						subredditId: e
 					})),
-					[g, O] = Object(r.useState)(!1);
+					[O, k] = Object(r.useState)(!1),
+					v = O && s;
 				if (Object(r.useEffect)(() => {
-						if (j) return;
-						const t = Object(m.k)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e);
-						t && t >= 5 || O(!0)
-					}, [e, w, O, j]), Object(r.useEffect)(() => {
-						g && (Object(m.N)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), w(Object(p.l)()))
-					}, [g, w, e]), !g) return null;
-				const k = !!(null == N ? void 0 : N.freeCount);
+						k(!g && !(e => {
+							return (Object(m.k)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) || 0) >= 5
+						})(e))
+					}, [g, e, k]), Object(r.useEffect)(() => {
+						v && (Object(m.N)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), N(Object(p.l)()))
+					}, [v, N, e]), !v) return null;
+				const I = !!(null == j ? void 0 : j.freeCount);
 				return o.a.createElement("div", {
 					className: Object(a.a)(h.a.container, t)
 				}, o.a.createElement(d.a, {
@@ -199,16 +201,16 @@
 					className: h.a.supporters,
 					subredditId: e,
 					onClick: t => {
-						w(Object(p.c)("post_upsell")), s(t ? Object(c.d)(e) : Object(c.c)("in_feed_unit"))
+						N(Object(p.c)("post_upsell")), w(t ? Object(c.d)(e) : Object(c.c)("in_feed_unit"))
 					}
 				}), o.a.createElement(u.q, {
 					priority: u.b.Primary,
 					className: h.a.button,
 					onClick: () => {
-						w(Object(p.k)()), s(Object(c.c)("in_feed_unit"))
+						N(Object(p.k)()), w(Object(c.c)("in_feed_unit"))
 					},
 					isFullWidth: !0
-				}, k ? x._("Use Your Premium Powerup", null, {
+				}, I ? x._("Use Your Premium Powerup", null, {
 					hk: "JJNaN"
 				}) : x._("Unlock Powerups", null, {
 					hk: "lMvv1"
@@ -217,4 +219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.e1c913ff663950af1d41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.da66ce4aa05d054138f3.js.map

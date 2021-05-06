@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.22134aece3a97bd4a5bc.js
-// Retrieved at 5/5/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.411b962797bfcb5f0bf4.js
+// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1761,27 +1761,46 @@
 		},
 		"./src/reddit/components/Econ/PowerupsInFeedUnit/async.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js");
-			t.a = Object(n.a)({
-				resolved: {},
-				chunkName: () => "reddit-components-Econ-PowerupsInFeedUnit-index-tsx",
-				isReady(e) {
-					const t = this.resolve(e);
-					return !1 !== this.resolved[t] && !!s.m[t]
-				},
-				importAsync: () => s.e("reddit-components-Econ-PowerupsInFeedUnit-index-tsx").then(s.bind(null, "./src/reddit/components/Econ/PowerupsInFeedUnit/index.tsx")),
-				requireAsync(e) {
-					const t = this.resolve(e);
-					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-				},
-				requireSync(e) {
-					const t = this.resolve(e);
-					return s(t)
-				},
-				resolve() {
-					return "./src/reddit/components/Econ/PowerupsInFeedUnit/index.tsx"
-				}
-			})
+			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				r = s("./node_modules/react/index.js"),
+				a = s.n(r),
+				o = s("./src/reddit/hooks/useThunkDispatch.ts"),
+				i = s("./src/reddit/actions/gold/powerups.ts");
+			const c = Object(n.a)({
+					resolved: {},
+					chunkName: () => "reddit-components-Econ-PowerupsInFeedUnit-index-tsx",
+					isReady(e) {
+						const t = this.resolve(e);
+						return !1 !== this.resolved[t] && !!s.m[t]
+					},
+					importAsync: () => s.e("reddit-components-Econ-PowerupsInFeedUnit-index-tsx").then(s.bind(null, "./src/reddit/components/Econ/PowerupsInFeedUnit/index.tsx")),
+					requireAsync(e) {
+						const t = this.resolve(e);
+						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+					},
+					requireSync(e) {
+						const t = this.resolve(e);
+						return s(t)
+					},
+					resolve() {
+						return "./src/reddit/components/Econ/PowerupsInFeedUnit/index.tsx"
+					}
+				}),
+				d = ({
+					className: e,
+					subredditId: t
+				}) => {
+					const s = Object(o.a)(),
+						[n, d] = Object(r.useState)(!1);
+					return Object(r.useEffect)(() => {
+						s(Object(i.i)()).then(() => d(!0))
+					}, [d, s]), a.a.createElement(c, {
+						className: e,
+						subredditId: t,
+						isDataLoaded: n
+					})
+				};
+			t.a = d
 		},
 		"./src/reddit/components/Econ/PowerupsLevel2PerksBanner/index.tsx": function(e, t, s) {
 			"use strict";
@@ -5961,6 +5980,17 @@
 				}, [t, s])
 			}
 		},
+		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var n = s("./node_modules/react-redux/es/index.js");
+
+			function r() {
+				return Object(n.d)()
+			}
+		},
 		"./src/reddit/hooks/useTooltip.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -7942,4 +7972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.22134aece3a97bd4a5bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.411b962797bfcb5f0bf4.js.map

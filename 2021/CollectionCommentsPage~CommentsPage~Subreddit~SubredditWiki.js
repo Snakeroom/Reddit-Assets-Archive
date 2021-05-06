@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6f4f02b1b9b776436d3a.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8745aca57905845b7153.js
+// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1200,7 +1200,7 @@
 					O = Object(a.e)(e => Object(w.m)(e, {
 						subredditId: t
 					})),
-					j = Object(a.e)(w.u),
+					j = Object(a.e)(w.v),
 					C = Object(a.e)(e => !!Object(w.k)(e, {
 						subredditId: t
 					})),
@@ -3682,4 +3682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6f4f02b1b9b776436d3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8745aca57905845b7153.js.map

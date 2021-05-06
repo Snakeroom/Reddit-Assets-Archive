@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1167568bbef3149a2acf.js
-// Retrieved at 5/5/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f062e5c400fa1425b23d.js
+// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1616,11 +1616,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("133160"),
+				buildNumber: r("133255"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1620252240"),
+				})("1620319410"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4212,14 +4212,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c7f13f1c8b053606b1f3ba711ad262b4240a54762-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c70a7728000fc5fac1e9d99f3b2f7bc18f741906b-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "7f13f1c8b053606b1f3ba711ad262b4240a54762-production",
+						release: "70a7728000fc5fac1e9d99f3b2f7bc18f741906b-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4713,7 +4713,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "7f13f1c8b053606b1f3ba711ad262b4240a54762-production",
+						releaseClient: "70a7728000fc5fac1e9d99f3b2f7bc18f741906b-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -8437,17 +8437,17 @@
 							input: s
 						});
 					let f = !1,
-						b = null;
+						g = null;
 					if (h.ok) {
 						const e = h.body;
-						f = e.data.reallocatePowerups.ok, b = e.data.reallocatePowerups.errors
+						f = e.data.reallocatePowerups.ok, g = e.data.reallocatePowerups.errors
 					}
-					const g = Object(m.i)(d());
-					if (f && g) await o((e => async (t, i) => {
+					const y = Object(m.i)(d());
+					if (f && y) await o((e => async (t, i) => {
 						t(P(e)), t(j(e.subredditId, {
 							forceLoad: !0,
 							fullData: !1
-						})), e.powerupsCount && (t(Object(a.g)(c.a.ECON_POWERUPS_PURCHASE)), e.powerupsCount > 0 ? t(Object(a.h)(c.a.ECON_POWERUPS_SUCCESS)) : t(Object(l.f)({
+						})), t(b(!0)), e.powerupsCount && (t(Object(a.g)(c.a.ECON_POWERUPS_PURCHASE)), e.powerupsCount > 0 ? t(Object(a.h)(c.a.ECON_POWERUPS_SUCCESS)) : t(Object(l.f)({
 							kind: _.b.SuccessCommunityGreen,
 							duration: l.a,
 							text: n.fbt._("Your Powerup subscription has been canceled.", null, {
@@ -8458,11 +8458,11 @@
 						subredditId: e,
 						powerupsCount: t,
 						isAnonymous: i,
-						user: g,
+						user: y,
 						allocatedAt: r
 					}));
 					else {
-						const e = b && b[0] && b[0].message || n.fbt._("An unknown error occurred", null, {
+						const e = g && g[0] && g[0].message || n.fbt._("An unknown error occurred", null, {
 							hk: "2oAbwZ"
 						});
 						await o(B(e))
@@ -36532,23 +36532,26 @@
 				return E
 			})), i.d(t, "a", (function() {
 				return S
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "v", (function() {
 				return T
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "u", (function() {
 				return O
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "t", (function() {
 				return I
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return j
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return F
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "c", (function() {
 				return R
+			})), i.d(t, "f", (function() {
+				return x
 			})), i.d(t, "k", (function() {
-				return k
-			})), i.d(t, "s", (function() {
 				return N
+			})), i.d(t, "s", (function() {
+				return D
 			}));
+			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/models/Gold/Powerups/index.ts"),
 				s = i("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -36653,22 +36656,25 @@
 				},
 				T = e => e.user.powerups.data,
 				O = e => e.user.powerups.allocationByKey,
-				I = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
-				j = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
-				F = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
-				R = e => e.users.powerups.allocationByKey,
-				x = Object(n.a)(l, e => null == e ? void 0 : e.count),
-				C = Object(n.a)(l, e => {
+				I = Object(n.a)([O, (e, {
+					subredditId: t
+				}) => t], (e, t) => Object.values(e).some(e => e.subredditInfo.id === t)),
+				j = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
+				F = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
+				R = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
+				x = e => e.users.powerups.allocationByKey,
+				C = Object(n.a)(l, e => null == e ? void 0 : e.count),
+				k = Object(n.a)(l, e => {
 					if (!e) return;
 					const {
 						tiersInfo: t
 					} = e, i = t.find(e => 2 === e.tier);
 					return null == i ? void 0 : i.powerupsCost
 				}),
-				k = Object(n.a)(x, C, (e, t) => {
+				N = Object(n.a)(C, k, (e, t) => {
 					if (void 0 !== e && void 0 !== t) return e >= t
 				}),
-				N = Object(n.a)(s.d, s.e, s.f, (e, t, i) => e || t || i)
+				D = Object(n.a)(s.d, s.e, s.f, (e, t, i) => e || t || i)
 		},
 		"./src/reddit/selectors/gold/purchaseCatalog.ts": function(e, t, i) {
 			"use strict";
@@ -46367,4 +46373,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1167568bbef3149a2acf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f062e5c400fa1425b23d.js.map
