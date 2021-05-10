@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.fd10ad844812b0d1b5dd.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.92ab3bf75e6c3c3497c4.js
+// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2717,7 +2717,7 @@
 			const v = e => g.d.reCaptchaEnterprise(e) && !Object(T.d)(e),
 				w = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
-					experimentName: b.Sc
+					experimentName: b.Wc
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				j = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -21411,7 +21411,7 @@
 				l = e => e === a.K.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				y = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Ad)(t))
+				y = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Id)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -21425,14 +21425,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Ec
-					}) === s.Oc.Enabled
+						experimentName: s.Ic
+					}) === s.Sc.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Dc
-					}) === s.Nc.Enabled
+						experimentName: s.Hc
+					}) === s.Rc.Enabled
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -21588,4 +21588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.fd10ad844812b0d1b5dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.92ab3bf75e6c3c3497c4.js.map

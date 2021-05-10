@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6a7ef6f78a4749f44221.js
-// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b117e7fa61c330d747b5.js
+// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7601,7 +7601,7 @@
 						name: n
 					} = t, r = Object(_.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(x.Ad)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
+					return i = !e || Object(x.Id)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
 						hk: "2g363L"
 					}) : e === x.Zb.Nlp15Max ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
@@ -7625,7 +7625,7 @@
 						post: d,
 						shouldShowSubredditUpsell: c,
 						subredditOrProfile: l
-					} = this.props, m = d && Object(C.a)(d), p = !!i && !Object(x.Ad)(i) && !o, u = d && d.id;
+					} = this.props, m = d && Object(C.a)(d), p = !!i && !Object(x.Id)(i) && !o, u = d && d.id;
 					return s || n || t || m || !c ? null : a.a.createElement("div", {
 						className: V.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
@@ -9840,7 +9840,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.R
 				});
-				return !!t && !Object(o.Ad)(t)
+				return !!t && !Object(o.Id)(t)
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
@@ -9855,7 +9855,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.tb
 				});
-				return !(!t || Object(o.Ad)(t))
+				return !(!t || Object(o.Id)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -9868,8 +9868,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.Uc
-			}) === o.dd.Enabled
+				experimentName: o.Yc
+			}) === o.hd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -9989,8 +9989,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: o.Rc
-				}) === o.bd.Enabled
+					experimentName: o.Vc
+				}) === o.fd.Enabled
 			})(e) && (e => {
 				const t = Object(r.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -10014,4 +10014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6a7ef6f78a4749f44221.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b117e7fa61c330d747b5.js.map

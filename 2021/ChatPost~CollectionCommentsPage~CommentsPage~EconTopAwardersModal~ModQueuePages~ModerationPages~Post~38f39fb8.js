@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.618c81c0c96321c1497d.js
-// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.49234e99013c6d27a566.js
+// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1960,7 +1960,7 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: F,
 						tooltipType: L
-					} = e, R = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Y.a), G = Object(a.e)(Z.d), W = Object(a.e)(Z.g) || ["popular", "all"].includes(G || ""), J = !(!w.isSponsored || !D || Object(m.Ad)(D) || !W);
+					} = e, R = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Y.a), G = Object(a.e)(Z.d), W = Object(a.e)(Z.g) || ["popular", "all"].includes(G || ""), J = !(!w.isSponsored || !D || Object(m.Id)(D) || !W);
 					Object(s.useEffect)(() => {
 						J && R(Object(b.d)(w.author))
 					}, []);
@@ -3105,7 +3105,7 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.Ab
 					});
-					return !(!t || Object(s.Ad)(t))
+					return !(!t || Object(s.Id)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -3135,4 +3135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.618c81c0c96321c1497d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.49234e99013c6d27a566.js.map

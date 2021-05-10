@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d79a2049b9b7d4a89788.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.159a6dc9c105c48c9ed8.js
+// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -8361,57 +8361,65 @@
 				d = s("./src/reddit/actions/tooltip.ts"),
 				l = s("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = s("./src/reddit/controls/Button/index.tsx"),
-				m = s("./src/reddit/helpers/overlay/index.ts"),
-				p = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				h = s("./src/reddit/selectors/user.ts"),
-				b = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				g = s.n(b),
-				f = s("./src/lib/lessComponent.tsx");
-			const x = "create-community-button",
-				E = f.a.wrapped(l.c, "StyledTooltip", g.a),
-				v = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.gb)(e),
-					userIsSuspended: h.O
+				u = s("./src/reddit/constants/experiments.ts"),
+				m = s("./src/reddit/controls/Button/index.tsx"),
+				p = s("./src/reddit/helpers/getSrCreationEntrypointCopy.ts"),
+				h = s("./src/reddit/helpers/overlay/index.ts"),
+				b = s("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				g = s("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
+				f = s("./src/reddit/selectors/user.ts"),
+				x = s("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				E = s.n(x),
+				v = s("./src/lib/lessComponent.tsx");
+			const C = "create-community-button",
+				_ = v.a.wrapped(l.c, "StyledTooltip", E.a),
+				k = Object(i.c)({
+					isInSrCreationEntrypointBehaviorExperiment: g.c,
+					isInSrCreationEntrypointCopyExperiment: g.d,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.gb)(e),
+					userIsSuspended: f.O
 				});
-			t.a = Object(r.b)(v, (e, {
+			t.a = Object(r.b)(k, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: s => {
-					s(Object(p.b)(t)), e(Object(m.a)("/subreddits/create"))
+					s(Object(b.b)(t)), e(Object(h.a)("/subreddits/create"))
 				},
 				onShowTooltip: () => e(Object(d.f)({
-					tooltipId: x
+					tooltipId: C
 				})),
 				onHideTooltip: () => e(Object(d.i)())
 			}))(Object(c.c)(({
 				className: e,
 				eventSource: t,
-				onShowTooltip: s,
-				onHideTooltip: a,
-				openCommunityCreation: r,
-				sendEvent: i,
-				userDoesNotHaveEnoughExpToCreateCommunity: d,
-				userIsSuspended: l
-			}) => o.a.createElement(u.l, {
+				isInSrCreationEntrypointBehaviorExperiment: s,
+				isInSrCreationEntrypointCopyExperiment: a,
+				onShowTooltip: r,
+				onHideTooltip: i,
+				openCommunityCreation: d,
+				sendEvent: l,
+				userDoesNotHaveEnoughExpToCreateCommunity: c,
+				userIsSuspended: h
+			}) => o.a.createElement(m.q, {
 				className: e,
-				disabled: l || d,
-				onClick: () => r(i),
-				onMouseEnter: s,
-				onMouseLeave: a,
-				id: x,
+				disabled: h || c,
+				onClick: () => s === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
+				onMouseEnter: r,
+				onMouseLeave: i,
+				priority: m.b.Secondary,
+				id: C,
 				isFullWidth: !0
-			}, n.fbt._("Create Community", null, {
-				hk: "RLA8A"
-			}), d ? o.a.createElement(E, {
+			}, Object(p.a)(a, n.fbt._("Create Community", null, {
+				hk: "28v7Qq"
+			})), c ? o.a.createElement(_, {
 				caretOnTop: !0,
-				tooltipId: x,
+				tooltipId: C,
 				text: n.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 					hk: "2R1OXu"
 				})
-			}) : l ? o.a.createElement(E, {
+			}) : h ? o.a.createElement(_, {
 				caretOnTop: !0,
-				tooltipId: x,
+				tooltipId: C,
 				text: n.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 					hk: "2xBDEw"
 				})
@@ -24589,7 +24597,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.Lb
 				});
-				return !(!t || Object(n.Ad)(t))
+				return !(!t || Object(n.Id)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -24822,4 +24830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d79a2049b9b7d4a89788.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.159a6dc9c105c48c9ed8.js.map

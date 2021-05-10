@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.db0833c4b9f8a6c495f4.js
-// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.055d95af92765062f24a.js
+// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1134,57 +1134,65 @@
 				c = n("./src/reddit/actions/tooltip.ts"),
 				d = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				m = n("./src/reddit/helpers/overlay/index.ts"),
-				p = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				h = n("./src/reddit/selectors/user.ts"),
-				b = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				f = n.n(b),
-				_ = n("./src/lib/lessComponent.tsx");
-			const g = "create-community-button",
-				x = _.a.wrapped(d.c, "StyledTooltip", f.a),
-				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.gb)(e),
-					userIsSuspended: h.O
+				u = n("./src/reddit/constants/experiments.ts"),
+				m = n("./src/reddit/controls/Button/index.tsx"),
+				p = n("./src/reddit/helpers/getSrCreationEntrypointCopy.ts"),
+				h = n("./src/reddit/helpers/overlay/index.ts"),
+				b = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				f = n("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
+				_ = n("./src/reddit/selectors/user.ts"),
+				g = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				x = n.n(g),
+				y = n("./src/lib/lessComponent.tsx");
+			const v = "create-community-button",
+				E = y.a.wrapped(d.c, "StyledTooltip", x.a),
+				k = Object(a.c)({
+					isInSrCreationEntrypointBehaviorExperiment: f.c,
+					isInSrCreationEntrypointCopyExperiment: f.d,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.gb)(e),
+					userIsSuspended: _.O
 				});
-			t.a = Object(o.b)(y, (e, {
+			t.a = Object(o.b)(k, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: n => {
-					n(Object(p.b)(t)), e(Object(m.a)("/subreddits/create"))
+					n(Object(b.b)(t)), e(Object(h.a)("/subreddits/create"))
 				},
 				onShowTooltip: () => e(Object(c.f)({
-					tooltipId: g
+					tooltipId: v
 				})),
 				onHideTooltip: () => e(Object(c.i)())
 			}))(Object(l.c)(({
 				className: e,
 				eventSource: t,
-				onShowTooltip: n,
-				onHideTooltip: r,
-				openCommunityCreation: o,
-				sendEvent: a,
-				userDoesNotHaveEnoughExpToCreateCommunity: c,
-				userIsSuspended: d
-			}) => i.a.createElement(u.l, {
+				isInSrCreationEntrypointBehaviorExperiment: n,
+				isInSrCreationEntrypointCopyExperiment: r,
+				onShowTooltip: o,
+				onHideTooltip: a,
+				openCommunityCreation: c,
+				sendEvent: d,
+				userDoesNotHaveEnoughExpToCreateCommunity: l,
+				userIsSuspended: h
+			}) => i.a.createElement(m.q, {
 				className: e,
-				disabled: d || c,
-				onClick: () => o(a),
-				onMouseEnter: n,
-				onMouseLeave: r,
-				id: g,
+				disabled: h || l,
+				onClick: () => n === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onMouseEnter: o,
+				onMouseLeave: a,
+				priority: m.b.Secondary,
+				id: v,
 				isFullWidth: !0
-			}, s.fbt._("Create Community", null, {
-				hk: "RLA8A"
-			}), c ? i.a.createElement(x, {
+			}, Object(p.a)(r, s.fbt._("Create Community", null, {
+				hk: "28v7Qq"
+			})), l ? i.a.createElement(E, {
 				caretOnTop: !0,
-				tooltipId: g,
+				tooltipId: v,
 				text: s.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 					hk: "2R1OXu"
 				})
-			}) : d ? i.a.createElement(x, {
+			}) : h ? i.a.createElement(E, {
 				caretOnTop: !0,
-				tooltipId: g,
+				tooltipId: v,
 				text: s.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 					hk: "2xBDEw"
 				})
@@ -4110,12 +4118,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.md.SmIcon:
+						case b.ud.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.md.SmIconHc:
+						case b.ud.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5368,12 +5376,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.hd
+						experimentName: s.nd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.md.SmIcon || t === s.md.SmIconHc
+					return t === s.ud.SmIcon || t === s.ud.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5396,4 +5404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.db0833c4b9f8a6c495f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.055d95af92765062f24a.js.map

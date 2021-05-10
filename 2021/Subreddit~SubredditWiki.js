@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.d215e702a541d7f1dccd.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.71774947c6c2e8236b55.js
+// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1153,57 +1153,65 @@
 				d = n("./src/reddit/actions/tooltip.ts"),
 				c = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				m = n("./src/reddit/helpers/overlay/index.ts"),
-				p = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				b = n("./src/reddit/selectors/user.ts"),
-				h = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				x = n.n(h),
-				g = n("./src/lib/lessComponent.tsx");
-			const f = "create-community-button",
-				C = g.a.wrapped(c.c, "StyledTooltip", x.a),
-				E = Object(o.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.gb)(e),
-					userIsSuspended: b.O
+				u = n("./src/reddit/constants/experiments.ts"),
+				m = n("./src/reddit/controls/Button/index.tsx"),
+				p = n("./src/reddit/helpers/getSrCreationEntrypointCopy.ts"),
+				b = n("./src/reddit/helpers/overlay/index.ts"),
+				h = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				x = n("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
+				g = n("./src/reddit/selectors/user.ts"),
+				f = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				C = n.n(f),
+				E = n("./src/lib/lessComponent.tsx");
+			const y = "create-community-button",
+				_ = E.a.wrapped(c.c, "StyledTooltip", C.a),
+				v = Object(o.c)({
+					isInSrCreationEntrypointBehaviorExperiment: x.c,
+					isInSrCreationEntrypointCopyExperiment: x.d,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(g.gb)(e),
+					userIsSuspended: g.O
 				});
-			t.a = Object(a.b)(E, (e, {
+			t.a = Object(a.b)(v, (e, {
 				eventSource: t
 			}) => ({
 				openCommunityCreation: n => {
-					n(Object(p.b)(t)), e(Object(m.a)("/subreddits/create"))
+					n(Object(h.b)(t)), e(Object(b.a)("/subreddits/create"))
 				},
 				onShowTooltip: () => e(Object(d.f)({
-					tooltipId: f
+					tooltipId: y
 				})),
 				onHideTooltip: () => e(Object(d.i)())
 			}))(Object(l.c)(({
 				className: e,
 				eventSource: t,
-				onShowTooltip: n,
-				onHideTooltip: r,
-				openCommunityCreation: a,
-				sendEvent: o,
-				userDoesNotHaveEnoughExpToCreateCommunity: d,
-				userIsSuspended: c
-			}) => i.a.createElement(u.l, {
+				isInSrCreationEntrypointBehaviorExperiment: n,
+				isInSrCreationEntrypointCopyExperiment: r,
+				onShowTooltip: a,
+				onHideTooltip: o,
+				openCommunityCreation: d,
+				sendEvent: c,
+				userDoesNotHaveEnoughExpToCreateCommunity: l,
+				userIsSuspended: b
+			}) => i.a.createElement(m.q, {
 				className: e,
-				disabled: c || d,
-				onClick: () => a(o),
-				onMouseEnter: n,
-				onMouseLeave: r,
-				id: f,
+				disabled: b || l,
+				onClick: () => n === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onMouseEnter: a,
+				onMouseLeave: o,
+				priority: m.b.Secondary,
+				id: y,
 				isFullWidth: !0
-			}, s.fbt._("Create Community", null, {
-				hk: "RLA8A"
-			}), d ? i.a.createElement(C, {
+			}, Object(p.a)(r, s.fbt._("Create Community", null, {
+				hk: "28v7Qq"
+			})), l ? i.a.createElement(_, {
 				caretOnTop: !0,
-				tooltipId: f,
+				tooltipId: y,
 				text: s.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 					hk: "2R1OXu"
 				})
-			}) : c ? i.a.createElement(C, {
+			}) : b ? i.a.createElement(_, {
 				caretOnTop: !0,
-				tooltipId: f,
+				tooltipId: y,
 				text: s.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
 					hk: "2xBDEw"
 				})
@@ -3853,12 +3861,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case h.md.SmIcon:
+						case h.ud.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.md.SmIconHc:
+						case h.ud.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5043,12 +5051,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: s.hd
+						experimentName: s.nd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.md.SmIcon || t === s.md.SmIconHc
+					return t === s.ud.SmIcon || t === s.ud.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5071,4 +5079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.d215e702a541d7f1dccd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.71774947c6c2e8236b55.js.map

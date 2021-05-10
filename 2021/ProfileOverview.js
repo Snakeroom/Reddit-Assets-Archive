@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.e402602c41fcbbb45590.js
-// Retrieved at 5/5/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.e4d579410f16d532ce00.js
+// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -1072,7 +1072,7 @@
 						postId: je,
 						postIds: Ie,
 						onceInViewport: we
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Se = Ee ? void 0 : u, Le = Object(c.a)(ae), ke = de && Le, Ne = Object(a.a)(ae), Te = Object(d.a)(ae), Me = Object(A.c)(ue), _e = !!ue.media && ue.media.type === f.o.RTJSON, Fe = Oe && _e, Re = s ? s - K.a : void 0, Ae = !(W && q || te), Be = (e => e === Y.Ic.OnlyTitles)(he) && !Object(oe.a)(ue), Ve = (e => e === Y.Ic.MediumHeight)(he) && !Object(oe.a)(ue), Ke = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Se = Ee ? void 0 : u, Le = Object(c.a)(ae), ke = de && Le, Ne = Object(a.a)(ae), Te = Object(d.a)(ae), Me = Object(A.c)(ue), _e = !!ue.media && ue.media.type === f.o.RTJSON, Fe = Oe && _e, Re = s ? s - K.a : void 0, Ae = !(W && q || te), Be = (e => e === Y.Mc.OnlyTitles)(he) && !Object(oe.a)(ue), Ve = (e => e === Y.Mc.MediumHeight)(he) && !Object(oe.a)(ue), Ke = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -1087,7 +1087,7 @@
 							hasBottomCompactPostStyles: n,
 							showPinnnedHeader: r
 						}
-					})(e), He = !!se && !Object(Y.Ad)(se), De = (!O || He) && !ue.isSponsored, We = Object(I.t)(ue, y), {
+					})(e), He = !!se && !Object(Y.Id)(se), De = (!O || He) && !ue.isSponsored, We = Object(I.t)(ue, y), {
 						source: Ue
 					} = We, qe = Object(o.useRef)(null), Ge = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3283,7 +3283,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.tb
 				});
-				return !(!t || Object(o.Ad)(t))
+				return !(!t || Object(o.Id)(t))
 			}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -3496,4 +3496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e402602c41fcbbb45590.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.e4d579410f16d532ce00.js.map
