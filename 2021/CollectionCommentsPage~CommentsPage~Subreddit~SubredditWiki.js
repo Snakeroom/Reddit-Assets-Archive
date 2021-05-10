@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8745aca57905845b7153.js
-// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.20041d5a720bdff00822.js
+// Retrieved at 5/10/2021, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -172,7 +172,7 @@
 			})), r.d(t, "d", (function() {
 				return A
 			})), r.d(t, "e", (function() {
-				return D
+				return R
 			}));
 			var n = r("./node_modules/uuid/index.js"),
 				s = r.n(n),
@@ -414,7 +414,7 @@
 					} = s.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, D = e => async (t, r, {
+				}, R = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = await Object(d.g)(n(), {
@@ -857,33 +857,55 @@
 		},
 		"./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "a", (function() {
-				return c
+			r.d(t, "b", (function() {
+				return l
+			})), r.d(t, "a", (function() {
+				return u
 			}));
-			var n = r("./node_modules/react/index.js"),
-				s = r.n(n),
-				i = r("./src/lib/classNames/index.ts"),
-				a = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				o = r("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less"),
-				d = r.n(o);
-			const c = ({
-				className: e,
-				progress: t
-			}) => s.a.createElement("div", {
-				className: Object(i.a)(d.a.barRow, e)
-			}, s.a.createElement("div", {
-				className: d.a.track
-			}), s.a.createElement("div", {
-				className: d.a.progress,
-				style: {
-					width: `${100*t}%`
+			var n = r("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
+				s = r("./node_modules/react/index.js"),
+				i = r.n(s),
+				a = r("./src/lib/classNames/index.ts"),
+				o = r("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				d = r("./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less"),
+				c = r.n(d);
+			const l = Object(s.forwardRef)((function({
+					className: e,
+					progress: t
+				}, r) {
+					const n = 100 * t;
+					return i.a.createElement("div", {
+						className: Object(a.a)(c.a.barRow, e),
+						ref: r
+					}, i.a.createElement("div", {
+						className: c.a.track
+					}), i.a.createElement("div", {
+						className: c.a.progress,
+						style: {
+							width: `${n}%`
+						}
+					}, i.a.createElement(o.a, {
+						className: Object(a.a)(c.a.icon, {
+							[c.a.empty]: 0 === t,
+							[c.a.full]: t >= 1
+						})
+					})))
+				})),
+				u = ({
+					className: e,
+					progress: t
+				}) => {
+					const [r, a] = Object(s.useState)(!1), o = r ? t : 0;
+					return i.a.createElement(n.a, {
+						onChange: e => {
+							r || e.intersectionRatio < .75 || a(!0)
+						},
+						threshold: .75
+					}, i.a.createElement(l, {
+						className: e,
+						progress: o
+					}))
 				}
-			}, s.a.createElement(a.a, {
-				className: Object(i.a)(d.a.icon, {
-					[d.a.empty]: 0 === t,
-					[d.a.full]: t >= 1
-				})
-			})))
 		},
 		"./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1174,7 +1196,7 @@
 					className: j.a.titleRow
 				}, i.a.createElement("span", null, C._("Powerups", null, {
 					hk: "DrcXp"
-				})), i.a.createElement("span", null, s < o ? `${s}/${o}` : s)), i.a.createElement(E.a, {
+				})), i.a.createElement("span", null, s < o ? `${s}/${o}` : s)), i.a.createElement(E.b, {
 					progress: d
 				}))
 			};
@@ -1430,7 +1452,7 @@
 						})))
 					}
 				});
-			class D extends c.a.Component {
+			class R extends c.a.Component {
 				constructor(e) {
 					super(e), this.handleNullProgrammaticResponse = () => {
 						this.setState({
@@ -1514,7 +1536,7 @@
 					})))
 				}
 			}
-			t.a = N(D)
+			t.a = N(R)
 		},
 		"./src/reddit/components/SidebarSpacer/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1715,8 +1737,8 @@
 				B = r("./src/reddit/helpers/trackers/predictions.ts"),
 				M = r("./src/reddit/hooks/usePageLayer.ts"),
 				A = r("./src/reddit/hooks/useTracking.ts"),
-				D = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				R = r("./src/reddit/selectors/subreddit.ts");
+				R = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				D = r("./src/reddit/selectors/subreddit.ts");
 			const {
 				fbt: W
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1729,16 +1751,16 @@
 					a = Object(A.a)(),
 					o = Object(L.L)(r),
 					[d, c] = Object(n.useState)(!1),
-					l = Object(i.e)(t => Object(R.T)(t, {
+					l = Object(i.e)(t => Object(D.T)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(R.N)(t, {
+					u = Object(i.e)(t => Object(D.N)(t, {
 						subredditId: e
 					})),
-					m = Object(i.e)(t => Object(D.c)(t, {
+					m = Object(i.e)(t => Object(R.c)(t, {
 						subredditId: e
 					})),
-					p = Object(i.e)(t => Object(D.b)(t, {
+					p = Object(i.e)(t => Object(R.b)(t, {
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
@@ -2613,8 +2635,8 @@
 				B = m.a.wrapped(o.a, "RawHTMLDisplay", T.a),
 				M = m.a.div("EventContainer", T.a),
 				A = m.a.div("EventTitle", T.a),
-				D = m.a.div("EventDate", T.a),
-				R = m.a.div("EventLocation", T.a),
+				R = m.a.div("EventDate", T.a),
+				D = m.a.div("EventLocation", T.a),
 				W = m.a.div("EventDescription", T.a),
 				H = m.a.wrapped(S.a, "ToggleDescription", T.a);
 			class z extends s.a.Component {
@@ -2648,12 +2670,12 @@
 					key: `${r}-${t.title}`
 				}, s.a.createElement(A, null, t.titleHtml ? s.a.createElement(B, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(D, null, Object(I.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(R, null, Object(I.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
 					const t = new Date(1e3 * e),
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(R, null, t.locationHtml ? s.a.createElement(B, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(D, null, t.locationHtml ? s.a.createElement(B, {
 					html: t.locationHtml
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(z, {
 					text: t.description
@@ -3682,4 +3704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8745aca57905845b7153.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.20041d5a720bdff00822.js.map
