@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f43b33ec64f18d03f631.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.91b01feb273a8fd47632.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1673,7 +1673,7 @@
 			}) => i.a.createElement(m.q, {
 				className: e,
 				disabled: b || l,
-				onClick: () => n === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => n === u.pd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: o,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -1931,7 +1931,7 @@
 				U = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(y.a)(Object(S.a)(e).post, _.b.black, _.b.white) : e.textColor === O.e.Dark ? _.b.black : _.b.white,
 				H = p.a.wrapped(A, "TextFlair", j.a),
 				q = p.a.wrapped(M, "RichTextFlair", j.a),
-				W = e => {
+				G = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -1941,8 +1941,8 @@
 							return Object(o.j)(.1, Object(S.a)(i()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				G = p.a.wrapped(e => {
-					const t = W(e),
+				W = p.a.wrapped(e => {
+					const t = G(e),
 						n = d.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -2020,7 +2020,7 @@
 						});
 					case O.f.Nsfw:
 					case O.f.Spoiler:
-						return d.a.createElement(G, {
+						return d.a.createElement(W, {
 							className: t,
 							text: r.text,
 							type: r.type
@@ -2494,8 +2494,8 @@
 				U = n.n(M),
 				H = n("./src/reddit/actions/subredditSettings.ts"),
 				q = n("./src/reddit/components/CharacterCountdown/index.tsx"),
-				W = n("./src/reddit/components/CommunitySettings/helpers.ts"),
-				G = n("./src/lib/fastdom/index.ts"),
+				G = n("./src/reddit/components/CommunitySettings/helpers.ts"),
+				W = n("./src/lib/fastdom/index.ts"),
 				z = n("./src/lib/lessComponent.tsx"),
 				V = n("./src/reddit/components/IdCard/DescriptionBlock/index.m.less"),
 				J = n.n(V);
@@ -2514,7 +2514,7 @@
 					}
 				}
 				componentDidMount() {
-					this.state.shouldTruncateDescription && G.a.read(() => {
+					this.state.shouldTruncateDescription && W.a.read(() => {
 						this.containerRef && this.textRef && this.textRef.offsetHeight > this.containerRef.offsetHeight && this.setState({
 							shouldDisplayShowMore: !0
 						})
@@ -2642,13 +2642,13 @@
 						onChange: e => this.setState({
 							description: e.currentTarget.value
 						}),
-						maxLength: W.c,
+						maxLength: G.c,
 						value: this.state.description
 					}), i.a.createElement("div", {
 						className: J.a.editableDescriptionControlRow
 					}, i.a.createElement(q.a, {
 						className: J.a.characterCountdown,
-						maxChars: W.c,
+						maxChars: G.c,
 						text: this.state.description
 					}), i.a.createElement("span", {
 						className: J.a.cancel,
@@ -2734,8 +2734,8 @@
 				Ue = n("./src/reddit/constants/experiments.ts"),
 				He = n("./src/reddit/helpers/chooseVariant/index.ts");
 			var qe = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				We = n("./src/reddit/selectors/structuredStyles.ts"),
-				Ge = n("./src/reddit/selectors/subscriptions.ts"),
+				Ge = n("./src/reddit/selectors/structuredStyles.ts"),
+				We = n("./src/reddit/selectors/subscriptions.ts"),
 				ze = n("./src/reddit/selectors/widgets.ts"),
 				Ve = n("./src/reddit/components/IdCard/Banner.tsx"),
 				Je = n("./src/reddit/actions/preferences.ts"),
@@ -2934,7 +2934,7 @@
 			const Mt = "IDCARD_OVERFLOW_DROPDOWN_ID",
 				Ut = Object(o.b)(() => Object(u.c)({
 					postCategories: (e, t) => Object(Le.o)(e, t.postId),
-					favoriteSubredditsIds: Ge.a,
+					favoriteSubredditsIds: We.a,
 					idCardWidget: (e, t) => Object(ze.d)(e, {
 						subredditName: t.listingName
 					}),
@@ -2952,8 +2952,8 @@
 					showContributorRequestFlow: e => Object(re.r)(e, Be.e.Post),
 					showCreatePollButton: e => (e => Object(He.c)(e, {
 						experimentEligibilitySelector: He.a,
-						experimentName: Ue.B
-					}) === Ue.I.Treatment)(e) && !Object(Ie.g)(),
+						experimentName: Ue.A
+					}) === Ue.G.Treatment)(e) && !Object(Ie.g)(),
 					subreddit: (e, t) => Object(re.A)(e, {
 						subredditName: t.listingName
 					}),
@@ -2965,7 +2965,7 @@
 					}) => Object(re.C)(e, {
 						subredditName: t
 					}),
-					subredditIcon: (e, t) => Object(We.p)(e, {
+					subredditIcon: (e, t) => Object(Ge.p)(e, {
 						subredditName: t.listingName
 					}),
 					adminCommunityTopicsEnabled: Te.d.adminCommunityTopics,
@@ -3108,7 +3108,7 @@
 						listingName: w,
 						subreddit: C,
 						idCardWidget: n
-					}), H = N || b || f, q = !N && C.id ? C.id : "", W = y && y.created, G = s.fbt._("Cake Day", null, {
+					}), H = N || b || f, q = !N && C.id ? C.id : "", G = y && y.created, W = s.fbt._("Cake Day", null, {
 						hk: "gZ29b"
 					}), z = `IdCard--Subscribers--${b}--${q}`, V = `IdCard--CurrentlyViewing--${b}--${q}`, J = `IdCard--CakeDay--${b}--${q}`, K = `IdCard--CoinCoint--${b}--${q}`, Y = p && !b, Q = !N && !u && !d, Z = !N && !b && k && !f, $ = Z ? i.a.createElement(de, {
 						description: D,
@@ -3172,7 +3172,7 @@
 						subreddit: C,
 						titleText: M,
 						onOpenFilePicker: this.openIconFilePicker
-					}) : null, $, !N && !Y && Wt(L, A, z, P, R, V, W, G, J, l, j), Q && i.a.createElement(Bt.a, {
+					}) : null, $, !N && !Y && Gt(L, A, z, P, R, V, G, W, J, l, j), Q && i.a.createElement(Bt.a, {
 						subredditId: q
 					}), !N && i.a.createElement("div", {
 						className: At.a.CommunityTypeContainer
@@ -3267,7 +3267,7 @@
 						hk: "cxviW"
 					})))
 				},
-				Wt = (e, t, n, r, o, a, d, c, l, u, m) => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
+				Gt = (e, t, n, r, o, a, d, c, l, u, m) => i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: At.a.UserCounts
 				}, i.a.createElement("div", {
 					className: At.a.SubscriberCount,
@@ -4461,15 +4461,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.sd.Add:
+					case r.qd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.sd.Start:
+					case r.qd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.sd.Create:
+					case r.qd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -5229,7 +5229,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.G)(e) || s.C.Treatment1 === Object(r.c)(e, {
+				return Object(i.G)(e) || s.B.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.v
 				})
@@ -5242,9 +5242,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.jc.Enabled === Object(r.c)(e, {
+			const i = e => s.hc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.ec
+				experimentName: s.cc
 			})
 		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, n) {
@@ -5265,21 +5265,21 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const d = e => Object(a.I)(e) || Object(a.J)(e),
 				c = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.xc,
+					experimentName: r.vc,
 					experimentEligibilitySelector: d
 				}), o.a),
-				l = Object(s.a)(c, e => e === r.Bc.Enabled),
+				l = Object(s.a)(c, e => e === r.zc.Enabled),
 				u = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.wc,
+					experimentName: r.uc,
 					experimentEligibilitySelector: d
 				}), o.a),
-				m = Object(s.a)(u, e => e === r.Ac.Enabled),
+				m = Object(s.a)(u, e => e === r.yc.Enabled),
 				p = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.jd,
+					experimentName: r.hd,
 					experimentEligibilitySelector: d
 				}), o.a),
 				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.kd,
+					experimentName: r.id,
 					experimentEligibilitySelector: d
 				}), o.a)
 		},
@@ -5354,4 +5354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f43b33ec64f18d03f631.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.91b01feb273a8fd47632.js.map

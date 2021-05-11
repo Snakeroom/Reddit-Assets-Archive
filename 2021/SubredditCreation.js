@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.4d02ef898a25a808c1c9.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.a10ea70bf4d317cf993f.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2737,8 +2737,8 @@
 					experimentEligibilitySelector: se
 				}), ee.a),
 				se = e => Object(te.I)(e) || Object(te.J)(e),
-				ae = Object(l.a)(ne, e => e === Z.G.Optional),
-				oe = Object(l.a)(ne, e => e === Z.G.Remove);
+				ae = Object(l.a)(ne, e => e === Z.F.Optional),
+				oe = Object(l.a)(ne, e => e === Z.F.Remove);
 			var ie = n("./src/reddit/selectors/experiments/emailInvite.ts"),
 				re = n("./src/reddit/selectors/subreddit.ts"),
 				le = n("./src/reddit/pages/SubredditCreation/index.m.less"),
@@ -3126,11 +3126,11 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Lb
+					experimentName: s.Jb
 				});
-				return !(!t || Object(s.Id)(t))
+				return !(!t || Object(s.Gd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.4d02ef898a25a808c1c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.a10ea70bf4d317cf993f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0bc872d7f887a4c48f5e.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.44e2019eebf931da21ca.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -29,7 +29,7 @@
 			})), s.d(t, "d", (function() {
 				return Z
 			})), s.d(t, "a", (function() {
-				return Q
+				return J
 			})), s.d(t, "b", (function() {
 				return X
 			})), s.d(t, "n", (function() {
@@ -214,7 +214,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && o(c, !0), Object(l.d)()
-				}, J = Object(d.a)(k.r), Q = e => t => t(J({
+				}, Q = Object(d.a)(k.r), J = e => t => t(Q({
 					draftKey: e
 				})), X = Object(d.a)(k.a), G = Object(d.a)(k.E), Y = Object(d.a)(k.b), q = Object(d.a)(k.u)
 		},
@@ -945,14 +945,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ic
-					}) === o.Sc.Enabled
+						experimentName: o.Gc
+					}) === o.Qc.Enabled
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Hc
-					}) === o.Rc.Enabled
+						experimentName: o.Fc
+					}) === o.Pc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -981,4 +981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0bc872d7f887a4c48f5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.44e2019eebf931da21ca.js.map

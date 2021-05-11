@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.daaf2e84b80b9bbbb131.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.516cafea9e6930701916.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./src/chat/components/PortalContainer/index.m.less": function(e, t, n) {
@@ -27,8 +27,8 @@
 				o = n("./src/lib/initializeClient/index.tsx"),
 				d = n("./src/lib/matchRoute/index.ts"),
 				u = n("./src/reduxMiddleware/apiContext.ts"),
-				b = n("./src/reduxMiddleware/gqlContext.ts"),
-				l = n("./src/chat/actions/apiRequestHeaders.ts"),
+				l = n("./src/reduxMiddleware/gqlContext.ts"),
+				b = n("./src/chat/actions/apiRequestHeaders.ts"),
 				h = n("./src/chat/actions/notifications.ts"),
 				m = n("./src/chat/actions/platform.ts"),
 				j = n("./src/chat/actions/session.ts"),
@@ -115,7 +115,7 @@
 					},
 					cookies: r.a,
 					receivedActions: {
-						headersReceived: l.a,
+						headersReceived: b.a,
 						loidReceived: O.e,
 						reddaidReceived: O.f,
 						sessionTrackerReceived: O.g,
@@ -125,7 +125,7 @@
 					},
 					statsAppName: i.l.Chat
 				}),
-				Z = Object(b.a)(X.apiContext);
+				Z = Object(l.a)(X.apiContext);
 
 			function ee(e, t, n = "/chat/minimize") {
 				const s = document.getElementById("2x-container"),
@@ -189,7 +189,7 @@
 		"./src/reddit/actions/appBadgeIndicators/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return b
 			})), n.d(t, "e", (function() {
 				return m
 			})), n.d(t, "d", (function() {
@@ -209,8 +209,8 @@
 				}),
 				d = n("./src/reddit/models/Badge/index.ts");
 			const u = Object(c.a)(s.c),
-				b = Object(c.a)(s.b),
-				l = Object(c.a)(s.d),
+				l = Object(c.a)(s.b),
+				b = Object(c.a)(s.d),
 				h = Object(c.a)(s.a),
 				m = ({
 					key: e,
@@ -247,14 +247,14 @@
 							}(t.body)
 						}
 					}(n);
-					c ? (e(b(c)), e(Object(r.d)())) : e(h())
+					c ? (e(l(c)), e(Object(r.d)())) : e(h())
 				};
 			const p = () => async e => {
 				const t = m({
 					key: d.c.MessageTab,
 					count: 0
 				});
-				e(l(t))
+				e(b(t))
 			}
 		},
 		"./src/reddit/actions/chat/proxy.ts": function(e, t, n) {
@@ -269,8 +269,8 @@
 				d = n("./src/reddit/actions/appBadgeIndicators/index.ts"),
 				u = n("./src/lib/makeActionCreator/index.ts");
 			Object(u.a)(a.a);
-			const b = Object(u.a)(a.b);
-			var l = n("./src/reddit/actions/chat/unreadCount.ts"),
+			const l = Object(u.a)(a.b);
+			var b = n("./src/reddit/actions/chat/unreadCount.ts"),
 				h = n("./src/reddit/actions/survey/index.ts"),
 				m = n("./src/reddit/actions/tabBadging.ts"),
 				j = n("./src/reddit/selectors/chat.ts"),
@@ -283,12 +283,12 @@
 							a = c ? Object(m.b)(t()) : Object(j.b)(t());
 						if (!s()(r, a)) {
 							const t = Object(d.d)(r.basicChannelCount, r.subredditChannelCount, r.subredditMentionCount);
-							e(c ? Object(d.a)(t) : Object(l.c)(r)), e(Object(m.d)())
+							e(c ? Object(d.a)(t) : Object(b.c)(r)), e(Object(m.d)())
 						}
 					}
 					break;
 				case a.b:
-					n.payload === o.a.SubredditChatFtux && e(b(o.a.SubredditChatFtux));
+					n.payload === o.a.SubredditChatFtux && e(l(o.a.SubredditChatFtux));
 					break;
 				case i.a:
 					e(Object(h.e)())
@@ -317,10 +317,10 @@
 			}(c || (c = {}));
 			const {
 				SYNC: u,
-				REQUEST_FAILED: b,
-				REQUEST_PENDING: l,
+				REQUEST_FAILED: l,
+				REQUEST_PENDING: b,
 				REQUEST_SUCCESS: h
-			} = c, m = Object(r.a)(u), j = Object(r.a)(b), O = Object(r.a)(l), p = Object(r.a)(h);
+			} = c, m = Object(r.a)(u), j = Object(r.a)(l), O = Object(r.a)(b), p = Object(r.a)(h);
 			let x;
 			const f = 5 * s.fb,
 				g = () => async (e, t, {
@@ -384,8 +384,8 @@
 				o = n("./src/reddit/contexts/PageLayer/selectors.ts"),
 				d = n("./src/reddit/helpers/tabBadging/index.ts"),
 				u = n("./src/reddit/models/Badge/index.ts"),
-				b = n("./src/reddit/selectors/appBadges.ts"),
-				l = n("./src/reddit/selectors/chat.ts"),
+				l = n("./src/reddit/selectors/appBadges.ts"),
+				b = n("./src/reddit/selectors/chat.ts"),
 				h = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts"),
 				m = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				j = n("./src/reddit/selectors/user.ts"),
@@ -400,15 +400,15 @@
 					})
 				},
 				g = Object(c.c)({
-					basicChannelCount: b.e,
-					subredditChannelCount: b.d,
-					subredditMentionCount: b.c
+					basicChannelCount: l.e,
+					subredditChannelCount: l.d,
+					subredditMentionCount: l.c
 				}),
 				C = e => {
 					const t = Object(h.a)(e);
 					return {
-						inboxCount: t ? Object(b.h)(e) : Object(j.E)(e) || 0,
-						basicChannelCount: t ? Object(b.e)(e) : Object(l.a)(e) || 0
+						inboxCount: t ? Object(l.h)(e) : Object(j.E)(e) || 0,
+						basicChannelCount: t ? Object(l.e)(e) : Object(b.a)(e) || 0
 					}
 				},
 				E = () => async (e, t) => {
@@ -418,7 +418,7 @@
 						r = Object(j.I)(n) || Object(j.J)(n),
 						a = Object(m.c)(n);
 					let i = 0;
-					r && c && (i = s ? a ? Object(b.i)(n) : Object(b.j)(n) : (e => {
+					r && c && (i = s ? a ? Object(l.i)(n) : Object(l.j)(n) : (e => {
 						const {
 							inboxCount: t,
 							basicChannelCount: n
@@ -436,8 +436,8 @@
 				}, y = e => async (t, n) => {
 					const c = n();
 					if (Object(h.a)(c)) {
-						const n = Object(b.e)(c),
-							s = Object(b.h)(c),
+						const n = Object(l.e)(c),
+							s = Object(l.h)(c),
 							{
 								basicChannelCount: r,
 								inboxCount: a
@@ -457,8 +457,8 @@
 							t(Object(O.a)(e))
 						}(n !== r || a && a !== s) && t(E())
 					} else {
-						const n = Object(l.a)(c),
-							s = Object(l.b)(c),
+						const n = Object(b.a)(c),
+							s = Object(b.b)(c),
 							r = Object(j.E)(c),
 							{
 								basicChannelCount: o,
@@ -480,7 +480,7 @@
 			})), n.d(t, "b", (function() {
 				return u
 			})), n.d(t, "c", (function() {
-				return b
+				return l
 			}));
 			var c = n("./src/config.ts");
 			const s = `${c.a.assetPath}/img/favicon/badged-favicon-32x32.png`,
@@ -494,7 +494,7 @@
 						n = d(e ? i : r);
 					t && n && (t.href = e ? s : a, n.href = e ? r : i)
 				},
-				b = e => {
+				l = e => {
 					navigator && navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 						command: o,
 						badgeCounts: e
@@ -510,7 +510,7 @@
 			})), n.d(t, "f", (function() {
 				return o
 			})), n.d(t, "d", (function() {
-				return b
+				return l
 			})), n.d(t, "c", (function() {
 				return s
 			})), n.d(t, "b", (function() {
@@ -561,7 +561,7 @@
 				return e.startsWith("https") ? e : `${a.a.assetPath}/${e}`
 			}
 
-			function b(e, t, n) {
+			function l(e, t, n) {
 				const c = d(e, t, n),
 					s = d(2 * e, 2 * t, n);
 				return {
@@ -591,9 +591,9 @@
 			})), n.d(t, "f", (function() {
 				return u
 			})), n.d(t, "a", (function() {
-				return b
-			})), n.d(t, "h", (function() {
 				return l
+			})), n.d(t, "h", (function() {
+				return b
 			})), n.d(t, "g", (function() {
 				return h
 			})), n.d(t, "j", (function() {
@@ -614,10 +614,10 @@
 					}
 					return t > 0
 				}),
-				b = Object(c.a)(a, e => e && e.activityTab && e.activityTab.count || 0),
-				l = Object(c.a)(a, e => e && e.messageTab && e.messageTab.count || 0),
-				h = Object(c.a)(b, l, (e, t) => e + t),
-				m = Object(c.a)(i, l, (e, t) => e + t),
+				l = Object(c.a)(a, e => e && e.activityTab && e.activityTab.count || 0),
+				b = Object(c.a)(a, e => e && e.messageTab && e.messageTab.count || 0),
+				h = Object(c.a)(l, b, (e, t) => e + t),
+				m = Object(c.a)(i, b, (e, t) => e + t),
 				j = Object(c.a)(i, h, (e, t) => e + t)
 		},
 		"./src/reddit/selectors/chat.ts": function(e, t, n) {
@@ -655,18 +655,18 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.gc,
+					experimentName: s.ec,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.I)(e) || Object(i.J)(e),
-				u = Object(c.a)(o, e => e === s.lc.Enabled)
+				u = Object(c.a)(o, e => e === s.jc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
 				return u
 			})), n.d(t, "b", (function() {
-				return l
+				return b
 			})), n.d(t, "a", (function() {
 				return m
 			})), n.d(t, "d", (function() {
@@ -679,26 +679,26 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(i.I)(e) || Object(i.J)(e),
 				d = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.Y,
+					experimentName: s.W,
 					experimentEligibilitySelector: o
 				}), a.a),
-				u = Object(c.a)(d, e => e === s.oc.Enabled),
-				b = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.ic,
+				u = Object(c.a)(d, e => e === s.mc.Enabled),
+				l = Object(c.a)(e => Object(r.c)(e, {
+					experimentName: s.gc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				l = Object(c.a)(u, b, (e, t) => e && t === s.nc.Enabled),
+				b = Object(c.a)(u, l, (e, t) => e && t === s.lc.Enabled),
 				h = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.hc,
+					experimentName: s.fc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				m = Object(c.a)(h, e => e === s.mc.Enabled),
+				m = Object(c.a)(h, e => e === s.kc.Enabled),
 				j = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.bb,
+					experimentName: s.Z,
 					experimentEligibilitySelector: o
 				}), a.a),
-				O = Object(c.a)(u, j, (e, t) => e && t === s.jb.Enabled)
+				O = Object(c.a)(u, j, (e, t) => e && t === s.hb.Enabled)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.daaf2e84b80b9bbbb131.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.516cafea9e6930701916.js.map

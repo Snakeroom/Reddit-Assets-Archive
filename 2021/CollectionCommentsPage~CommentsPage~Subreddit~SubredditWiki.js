@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1b164d02fe4d1a14a21a.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.95f7f22fb5ea0e53be80.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1170,7 +1170,7 @@
 				f = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				g = r("./src/reddit/constants/experiments.ts"),
 				x = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const v = Object(x.a)(g.Db);
+			const v = Object(x.a)(g.Bb);
 			var w = r("./src/reddit/selectors/gold/powerups.ts"),
 				y = r("./src/reddit/selectors/subreddit.ts"),
 				_ = r("./src/reddit/selectors/user.ts"),
@@ -3647,8 +3647,8 @@
 			const o = e => s.e[Object(i.O)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.N
-				}) === n.fb.Treatment
+					experimentName: n.L
+				}) === n.db.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -3704,4 +3704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1b164d02fe4d1a14a21a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.95f7f22fb5ea0e53be80.js.map

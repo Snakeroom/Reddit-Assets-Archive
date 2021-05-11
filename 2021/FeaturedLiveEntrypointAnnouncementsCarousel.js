@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.440f9463a0826a7e52a4.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.e65216e8bda83cca0b3c.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -95,17 +95,17 @@
 				});
 			var g = t("./src/reddit/hooks/useTracking.ts"),
 				N = t("./src/reddit/selectors/experiments/index.ts");
-			const I = e => {
+			const w = e => {
 					const n = new Date;
 					n.setMonth(n.getMonth() + 1), v.a.set(h.h, e, {
 						...x.y,
 						expires: n
 					})
 				},
-				w = (e, n) => t => {
+				I = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(_.Id)(n.variant)) return !1
+						if (n && Object(_.Gd)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -178,10 +178,10 @@
 					const r = Object(c.e)(N.a);
 					Object(a.useEffect)(() => {
 						const a = Object(C.e)(),
-							c = e.filter(w(r, a)).slice(0, 5),
+							c = e.filter(I(r, a)).slice(0, 5),
 							l = [...c].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
 							d = c.length ? h.i.Yes : h.i.No;
-						I(d), t || A()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
+						w(d), t || A()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
 					}, [])
 				})({
 					announcements: e,
@@ -226,7 +226,7 @@
 								maxImpressionsCount: t
 							} = e;
 							Object(C.bb)(n, t)
-						}), t(E("dismiss_all")), I(h.i.No)
+						}), t(E("dismiss_all")), w(h.i.No)
 					}, [n, t, e])
 				})({
 					visibleAnnouncements: r,
@@ -258,7 +258,7 @@
 							c = Object(C.d)(a.id);
 						s(j("view", a)), Object(C.bb)(a.id, c + 1);
 						const i = Object(C.e)();
-						t.filter(w(o, i)).length || I(h.i.No)
+						t.filter(I(o, i)).length || w(h.i.No)
 					}, [e, o, s, n, t])
 				})({
 					activeIndex: O,
@@ -321,4 +321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.440f9463a0826a7e52a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.e65216e8bda83cca0b3c.js.map

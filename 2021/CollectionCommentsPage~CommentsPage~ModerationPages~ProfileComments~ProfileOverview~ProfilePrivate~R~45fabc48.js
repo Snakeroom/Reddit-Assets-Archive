@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b4db009bdd6337f1d15a.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.887cc535bdc77593ffe2.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -1029,7 +1029,7 @@
 					totalDiscount: I,
 					variantAnimationConfig: y,
 					postId: P
-				} = e, T = i && !r && !l, M = r && !a, N = Object(C.a)(), F = Object(g.a)(v.Tb) === v.Xb.Enabled, R = c.a.createElement(W, {
+				} = e, T = i && !r && !l, M = r && !a, N = Object(C.a)(), F = Object(g.a)(v.Rb) === v.Vb.Enabled, R = c.a.createElement(W, {
 					type: w,
 					numComments: b,
 					isChatPost: n,
@@ -5003,8 +5003,8 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.ab
-			}) === o.ib.Enabled
+				experimentName: o.Y
+			}) === o.gb.Enabled
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -5022,4 +5022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b4db009bdd6337f1d15a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.887cc535bdc77593ffe2.js.map

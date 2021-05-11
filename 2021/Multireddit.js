@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.27e45b81221abf8d9e0b.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.ca5a9bf3fefbee50f25d.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1748,7 +1748,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => s === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => s === u.pd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: i,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -5572,12 +5572,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.ud.SmIcon:
+						case b.sd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.ud.SmIconHc:
+						case b.sd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6404,15 +6404,15 @@
 				r = s("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.sd.Add:
+					case r.qd.Add:
 						return n.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.sd.Start:
+					case r.qd.Start:
 						return n.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.sd.Create:
+					case r.qd.Create:
 						return n.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -7749,9 +7749,9 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.jc.Enabled === Object(r.c)(e, {
+			const o = e => n.hc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: n.ec
+				experimentName: n.cc
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, s) {
@@ -7767,15 +7767,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Ab
+						experimentName: n.yb
 					});
-					return !(!t || Object(n.Id)(t))
+					return !(!t || Object(n.Gd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Ab
-					}) === n.Pb.ListingEnabled
+						experimentName: n.yb
+					}) === n.Nb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, s) {
@@ -7796,21 +7796,21 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const c = e => Object(a.I)(e) || Object(a.J)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.xc,
+					experimentName: r.vc,
 					experimentEligibilitySelector: c
 				}), i.a),
-				l = Object(n.a)(d, e => e === r.Bc.Enabled),
+				l = Object(n.a)(d, e => e === r.zc.Enabled),
 				u = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.wc,
+					experimentName: r.uc,
 					experimentEligibilitySelector: c
 				}), i.a),
-				m = Object(n.a)(u, e => e === r.Ac.Enabled),
+				m = Object(n.a)(u, e => e === r.yc.Enabled),
 				p = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.jd,
+					experimentName: r.hd,
 					experimentEligibilitySelector: c
 				}), i.a),
 				h = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.kd,
+					experimentName: r.id,
 					experimentEligibilitySelector: c
 				}), i.a)
 		},
@@ -7941,12 +7941,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.nd
+						experimentName: n.ld
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.ud.SmIcon || t === n.ud.SmIconHc
+					return t === n.sd.SmIcon || t === n.sd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7969,4 +7969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.27e45b81221abf8d9e0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ca5a9bf3fefbee50f25d.js.map

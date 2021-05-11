@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.159a6dc9c105c48c9ed8.js
-// Retrieved at 5/10/2021, 4:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f168c77915cf34d7893e.js
+// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -8403,7 +8403,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || c,
-				onClick: () => s === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
+				onClick: () => s === u.pd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
 				onMouseEnter: r,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -24206,8 +24206,8 @@
 					experimentEligibilitySelector: ne
 				}), ee.a),
 				ne = e => Object(te.I)(e) || Object(te.J)(e),
-				ae = Object(d.a)(se, e => e === Z.G.Optional),
-				oe = Object(d.a)(se, e => e === Z.G.Remove);
+				ae = Object(d.a)(se, e => e === Z.F.Optional),
+				oe = Object(d.a)(se, e => e === Z.F.Remove);
 			var re = s("./src/reddit/selectors/experiments/emailInvite.ts"),
 				ie = s("./src/reddit/selectors/subreddit.ts"),
 				de = s("./src/reddit/pages/SubredditCreation/index.m.less"),
@@ -24595,9 +24595,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Lb
+					experimentName: n.Jb
 				});
-				return !(!t || Object(n.Id)(t))
+				return !(!t || Object(n.Gd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -24830,4 +24830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.159a6dc9c105c48c9ed8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f168c77915cf34d7893e.js.map
