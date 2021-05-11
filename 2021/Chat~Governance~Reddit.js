@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f945e088f24257386ce7.js
-// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.07dc4f96f0c8d64c8a9c.js
+// Retrieved at 5/11/2021, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1616,11 +1616,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("133546"),
+				buildNumber: r("133561"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1620752933"),
+				})("1620757868"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4212,14 +4212,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c31f70fce68f05fca0e04960a8749b171a764da82-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c221c5e5f82f403dd6e3bea2a319d8bed936f9111-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "31f70fce68f05fca0e04960a8749b171a764da82-production",
+						release: "221c5e5f82f403dd6e3bea2a319d8bed936f9111-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4713,7 +4713,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "31f70fce68f05fca0e04960a8749b171a764da82-production",
+						releaseClient: "221c5e5f82f403dd6e3bea2a319d8bed936f9111-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -17870,7 +17870,6 @@
 					[ze]: [fn.Enabled],
 					[Je]: [wn.HalfSheet_2ndVisit, wn.HalfSheet_3rdVisit, wn.ToolTip_2ndVisit, wn.ToolTip_3rdVisit, wn.ToolTip_nonSub],
 					[Ve]: [mn.Enabled],
-					[Z]: [wi.Nlp5Max, wi.Nlp15Max, wi.Search5Max],
 					[We]: [hn.Enabled],
 					[Ye]: [gn.Enabled],
 					[Qe]: [yn.Enabled],
@@ -26804,236 +26803,239 @@
 		"./src/reddit/helpers/trackers/post.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "k", (function() {
-				return h
-			})), i.d(t, "j", (function() {
 				return f
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "j", (function() {
 				return b
+			})), i.d(t, "a", (function() {
+				return g
 			})), i.d(t, "g", (function() {
-				return y
-			})), i.d(t, "c", (function() {
 				return w
+			})), i.d(t, "c", (function() {
+				return v
 			})), i.d(t, "d", (function() {
-				return E
-			})), i.d(t, "i", (function() {
 				return S
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "i", (function() {
 				return T
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return O
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "e", (function() {
 				return I
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "b", (function() {
 				return j
+			})), i.d(t, "h", (function() {
+				return F
 			}));
 			var n = i("./src/lib/constants/index.ts"),
-				r = i("./src/reddit/constants/tracking.ts"),
-				s = i("./src/reddit/helpers/correlationIdTracker.ts"),
-				o = i("./src/reddit/helpers/getPostFromRouteMatch/index.ts"),
-				d = i("./src/reddit/helpers/localStorage/index.ts"),
-				a = i("./src/reddit/models/Post/index.ts"),
-				l = i("./src/reddit/selectors/experiments/listingBelow.ts"),
-				c = i("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				u = i("./src/reddit/selectors/posts.ts"),
-				_ = i("./src/reddit/selectors/telemetry.ts"),
-				p = i("./src/telemetry/index.ts");
-			const m = e => e && e.meta && e.meta.name && e.meta.name === n.Gb.DUPLICATES,
-				h = (e, t, i) => {
+				r = i("./src/reddit/constants/experiments.ts"),
+				s = i("./src/reddit/constants/tracking.ts"),
+				o = i("./src/reddit/helpers/correlationIdTracker.ts"),
+				d = i("./src/reddit/helpers/getPostFromRouteMatch/index.ts"),
+				a = i("./src/reddit/helpers/localStorage/index.ts"),
+				l = i("./src/reddit/models/Post/index.ts"),
+				c = i("./src/reddit/selectors/experiments/listingBelow.ts"),
+				u = i("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				_ = i("./src/reddit/selectors/posts.ts"),
+				p = i("./src/reddit/selectors/telemetry.ts"),
+				m = i("./src/telemetry/index.ts");
+			const h = e => e && e.meta && e.meta.name && e.meta.name === n.Gb.DUPLICATES,
+				f = (e, t, i) => {
 					const {
 						currentPage: n
-					} = e.platform, r = m(n) ? "other_discussions" : "post", d = Object(l.b)(e), a = Object(c.c)(e, {
+					} = e.platform, s = h(n) ? "other_discussions" : "post", a = Object(c.b)(e), l = Object(u.c)(e, {
 						postId: t
 					});
-					if (d) {
-						const n = Object(o.a)(e),
-							r = n ? n.id : void 0;
-						return Object(p.a)({
-							..._.defaults(e),
+					if (a) {
+						const n = Object(d.a)(e),
+							s = n ? n.id : void 0;
+						return Object(m.a)({
+							...p.defaults(e),
 							action: "view",
-							actionInfo: _.actionInfo(e, {
+							actionInfo: p.actionInfo(e, {
 								position: "number" == typeof i ? i + 1 : void 0,
-								reason: a || void 0
+								reason: l || void 0
 							}),
-							correlationId: Object(s.c)(s.a.LinkedPosts),
-							media: _.media(e, t),
-							mlModel: _.listingBelowMlModel(d, r),
+							correlationId: Object(o.c)(o.a.LinkedPosts),
+							experiment: p.experiment(e, r.Ub),
+							media: p.media(e, t),
+							mlModel: p.listingBelowMlModel(a, s),
 							noun: "post",
-							post: _.post(e, t),
-							profile: _.profile(e),
+							post: p.post(e, t),
+							profile: p.profile(e),
 							source: "post_detail",
-							subreddit: _.subreddit(e)
+							subreddit: p.subreddit(e)
 						})
 					}
-					return Object(p.a)({
-						source: r,
+					return Object(m.a)({
+						source: s,
 						action: "view",
 						noun: "post",
-						..._.defaults(e),
-						actionInfo: _.actionInfo(e, {
+						...p.defaults(e),
+						actionInfo: p.actionInfo(e, {
 							position: i,
-							reason: a || void 0
+							reason: l || void 0
 						}),
-						post: _.post(e, t),
-						profile: _.profile(e),
-						media: _.media(e, t),
-						screen: _.screen(e),
-						subreddit: _.subreddit(e)
+						post: p.post(e, t),
+						profile: p.profile(e),
+						media: p.media(e, t),
+						screen: p.screen(e),
+						subreddit: p.subreddit(e)
 					})
 				},
-				f = (e, t) => Object(p.a)({
+				b = (e, t) => Object(m.a)({
 					source: "post",
 					action: "view",
 					noun: "ad",
-					..._.defaults(e),
-					post: _.post(e, t),
-					media: _.media(e, t),
-					screen: _.screen(e),
-					subreddit: _.subreddit(e)
+					...p.defaults(e),
+					post: p.post(e, t),
+					media: p.media(e, t),
+					screen: p.screen(e),
+					subreddit: p.subreddit(e)
 				}),
-				b = (e, t, i, n, r) => Object(p.a)({
+				g = (e, t, i, n, r) => Object(m.a)({
 					source: "post",
 					action: "consume",
 					noun: "post",
-					..._.defaults(e),
-					actionInfo: _.actionInfo(e, {
+					...p.defaults(e),
+					actionInfo: p.actionInfo(e, {
 						position: n
 					}),
-					listing: _.listing(e, void 0, void 0, r),
-					post: _.post(e, t, i),
-					media: _.media(e, t),
-					screen: _.screen(e),
-					subreddit: _.subreddit(e)
+					listing: p.listing(e, void 0, void 0, r),
+					post: p.post(e, t, i),
+					media: p.media(e, t),
+					screen: p.screen(e),
+					subreddit: p.subreddit(e)
 				}),
-				g = (e, t, i, n) => ({
+				y = (e, t, i, n) => ({
 					noun: n,
-					post: _.post(e, t),
+					post: p.post(e, t),
 					source: i
 				}),
-				y = (e, t, i = "post", n, r, o, c) => p => {
-					const h = _.post(p, e),
-						f = _.defaults(p);
-					if ((null == h ? void 0 : h.promoted) && e) {
-						f.actionInfo.pageType && (Object(d.pb)(e), Object(d.wb)(f.actionInfo.pageType));
-						const t = Object(u.F)(p, {
+				w = (e, t, i = "post", n, s, d, u) => m => {
+					const f = p.post(m, e),
+						b = p.defaults(m);
+					if ((null == f ? void 0 : f.promoted) && e) {
+						b.actionInfo.pageType && (Object(a.pb)(e), Object(a.wb)(b.actionInfo.pageType));
+						const t = Object(_.F)(m, {
 							postId: e
 						});
-						(null == t ? void 0 : t.impressionIdStr) ? Object(d.qb)(t.impressionIdStr): (null == t ? void 0 : t.impressionId) && Object(d.qb)(t.impressionId)
+						(null == t ? void 0 : t.impressionIdStr) ? Object(a.qb)(t.impressionIdStr): (null == t ? void 0 : t.impressionId) && Object(a.qb)(t.impressionId)
 					}
 					const {
-						currentPage: b
-					} = p.platform, y = m(b) ? ((e, t, i, n) => {
+						currentPage: g
+					} = m.platform, w = h(g) ? ((e, t, i, n) => {
 						const {
 							currentPage: r
 						} = e.platform;
-						if (m(r)) {
-							const i = Object(a.s)(r && r.urlParams.partialPostId || "");
+						if (h(r)) {
+							const i = Object(l.s)(r && r.urlParams.partialPostId || "");
 							return {
 								noun: "post",
-								post: _.post(e, i),
+								post: p.post(e, i),
 								source: "other_discussions",
-								targetPost: _.post(e, t)
+								targetPost: p.post(e, t)
 							}
 						}
-						return g(e, t, i, n)
-					})(p, e, i, t) : g(p, e, i, t), w = Object(l.b)(p) || o;
-					if (w) {
-						const i = n ? _.getRelativePostOrder(p, e, n) : null;
+						return y(e, t, i, n)
+					})(m, e, i, t) : y(m, e, i, t), v = Object(c.b)(m) || d;
+					if (v) {
+						const i = n ? p.getRelativePostOrder(m, e, n) : null;
 						return {
-							...f,
+							...b,
 							action: "click",
 							actionInfo: {
-								...f.actionInfo,
+								...b.actionInfo,
 								position: "number" == typeof i ? i + 1 : void 0,
-								referralId: c
+								referralId: u
 							},
-							correlationId: Object(s.c)(s.a.LinkedPosts),
-							media: _.media(p, e),
-							mlModel: _.listingBelowMlModel(w, r),
+							correlationId: Object(o.c)(o.a.LinkedPosts),
+							experiment: p.experiment(m, r.Ub),
+							media: p.media(m, e),
+							mlModel: p.listingBelowMlModel(v, s),
 							noun: t,
-							post: h,
-							profile: _.profile(p),
+							post: f,
+							profile: p.profile(m),
 							source: "post_detail",
-							subreddit: _.subreddit(p)
+							subreddit: p.subreddit(m)
 						}
 					}
 					return {
-						...y,
-						...f,
+						...w,
+						...b,
 						action: "click",
 						actionInfo: {
-							...f.actionInfo,
-							referralId: c
+							...b.actionInfo,
+							referralId: u
 						},
-						media: _.media(p, e),
-						subreddit: _.subreddit(p) || _.subredditByPostOrCommentId(p, e)
+						media: p.media(m, e),
+						subreddit: p.subreddit(m) || p.subredditByPostOrCommentId(m, e)
 					}
 				},
-				w = (e, t) => i => Object(p.a)({
+				v = (e, t) => i => Object(m.a)({
 					source: "post",
 					action: "click",
 					noun: t,
-					..._.defaults(i),
-					post: _.post(i, e),
-					media: _.media(i, e),
-					screen: _.screen(i),
-					session: _.session(i),
-					subreddit: _.subreddit(i)
+					...p.defaults(i),
+					post: p.post(i, e),
+					media: p.media(i, e),
+					screen: p.screen(i),
+					session: p.session(i),
+					subreddit: p.subreddit(i)
 				}),
-				v = (e, t) => ({
-					post: _.post(e, t),
-					profile: _.profile(e)
+				E = (e, t) => ({
+					post: p.post(e, t),
+					profile: p.profile(e)
 				}),
-				E = e => t => ({
+				S = e => t => ({
 					action: "pin",
 					noun: "post",
 					source: "profile",
-					...v(t, e),
-					..._.defaults(t)
+					...E(t, e),
+					...p.defaults(t)
 				}),
-				S = e => t => ({
+				T = e => t => ({
 					action: "unpin",
 					noun: "post",
 					source: "profile",
-					...v(t, e),
-					..._.defaults(t)
+					...E(t, e),
+					...p.defaults(t)
 				}),
-				T = (e, t, i) => n => ({
+				O = (e, t, i) => n => ({
 					action: "click",
 					noun: "vote",
 					source: "poll",
-					..._.defaults(n),
-					poll: _.poll(n, e, !0, i),
-					post: _.post(n, t),
-					subreddit: _.subreddit(n),
-					userSubreddit: _.userSubreddit(n)
+					...p.defaults(n),
+					poll: p.poll(n, e, !0, i),
+					post: p.post(n, t),
+					subreddit: p.subreddit(n),
+					userSubreddit: p.userSubreddit(n)
 				}),
-				O = (e, t) => i => ({
+				I = (e, t) => i => ({
 					action: "view",
 					noun: "results",
 					source: "poll",
-					..._.defaults(i),
-					poll: _.poll(i, e, !1),
-					post: _.post(i, t),
-					subreddit: _.subreddit(i),
-					userSubreddit: _.userSubreddit(i)
-				}),
-				I = e => t => ({
-					action: r.c.CLICK,
-					noun: "follow",
-					source: "post",
-					..._.defaults(t),
-					post: _.post(t, e),
-					subreddit: _.subreddit(t),
-					userSubreddit: _.userSubreddit(t)
+					...p.defaults(i),
+					poll: p.poll(i, e, !1),
+					post: p.post(i, t),
+					subreddit: p.subreddit(i),
+					userSubreddit: p.userSubreddit(i)
 				}),
 				j = e => t => ({
-					action: r.c.UNDO,
+					action: s.c.CLICK,
 					noun: "follow",
 					source: "post",
-					..._.defaults(t),
-					post: _.post(t, e),
-					subreddit: _.subreddit(t),
-					userSubreddit: _.userSubreddit(t)
+					...p.defaults(t),
+					post: p.post(t, e),
+					subreddit: p.subreddit(t),
+					userSubreddit: p.userSubreddit(t)
+				}),
+				F = e => t => ({
+					action: s.c.UNDO,
+					noun: "follow",
+					source: "post",
+					...p.defaults(t),
+					post: p.post(t, e),
+					subreddit: p.subreddit(t),
+					userSubreddit: p.userSubreddit(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/postList.ts": function(e, t, i) {
@@ -35928,11 +35930,17 @@
 				d = i("./src/reddit/selectors/platform.ts"),
 				a = i("./src/reddit/selectors/user.ts");
 			const l = Object(n.a)(o.c, a.I, a.J, d.f, d.e, (e, t, i, n, r) => !e && !t && !i && n && !!r && !r.isNSFW),
-				c = e => Object(s.c)(e, {
-					experimentEligibilitySelector: l,
-					experimentName: r.Ub,
-					expEventOverride: !1
-				}),
+				c = e => {
+					const t = Object(s.c)(e, {
+						experimentEligibilitySelector: l,
+						experimentName: r.Ub,
+						expEventOverride: !1
+					});
+					return t === r.Yb.AdsControl && Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.Ub
+					}), t
+				},
 				u = Object(n.a)(c, e => e === r.Yb.AdsControl)
 		},
 		"./src/reddit/selectors/experiments/magicLink.ts": function(e, t, i) {
@@ -46395,4 +46403,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f945e088f24257386ce7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.07dc4f96f0c8d64c8a9c.js.map
