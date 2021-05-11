@@ -1,7 +1,14 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.932ed2e4c8c4ed64a41a.js
-// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.83f71cd0a01cbff9552c.js
+// Retrieved at 5/11/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["Subreddit~SubredditWiki"], {
+	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
+		"./node_modules/lodash/flatMap.js": function(e, t, n) {
+			var s = n("./node_modules/lodash/_baseFlatten.js"),
+				r = n("./node_modules/lodash/map.js");
+			e.exports = function(e, t) {
+				return s(r(e, t), 1)
+			}
+		},
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
 			e.exports = {
 				Component: "_2Qq40Mz_DMe0iARkTh8cZn",
@@ -3520,7 +3527,7 @@
 					i = Object(o.e)(e);
 				return {
 					canShowAd: s && !r,
-					forcePlaceholder: !Object(o.c)(e),
+					awaitingBrandSafetyCheck: !Object(o.c)(e),
 					isAdsDisabled: r,
 					viewIsUnsafe: i
 				}
@@ -5079,4 +5086,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.932ed2e4c8c4ed64a41a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.83f71cd0a01cbff9552c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.89e481a12ba199bfaff5.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e87673181dd41ccf3e2e.js
+// Retrieved at 5/11/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -720,7 +720,7 @@
 				hasError: P.o,
 				hasWikiModPerms: (e, t) => {
 					const i = Object(y.A)(e, t);
-					return !!i && Object(N.f)(e, {
+					return !!i && Object(N.h)(e, {
 						subredditId: i.id
 					})
 				},
@@ -1354,7 +1354,7 @@
 				k = i("./src/reddit/constants/headers.ts");
 			var v = e => Object(g.a)(Object(f.a)(e.context, [k.a]), {
 					endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`,
-					method: b.cb.POST,
+					method: b.eb.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -1890,7 +1890,7 @@
 			const L = Object(d.c)({
 					hasWikiModPerms: (e, t) => {
 						const i = Object(v.A)(e, t);
-						return !!i && Object(k.f)(e, {
+						return !!i && Object(k.h)(e, {
 							subredditId: i.id
 						})
 					},
@@ -2121,7 +2121,7 @@
 					}, a.a.createElement(m.a, {
 						className: f.a.authorLink,
 						author: l,
-						isAuthorDeleted: Object(b.m)(l),
+						isAuthorDeleted: Object(b.n)(l),
 						isUnstyled: !0
 					}, l));
 					return a.a.createElement("span", {
@@ -2158,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.89e481a12ba199bfaff5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e87673181dd41ccf3e2e.js.map
