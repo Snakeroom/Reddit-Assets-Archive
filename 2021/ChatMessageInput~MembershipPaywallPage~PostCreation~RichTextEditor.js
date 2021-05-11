@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.11212a7169ed5097533e.js
-// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.0a632a56a8b2e5ff02ab.js
+// Retrieved at 5/11/2021, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -6670,6 +6670,7 @@
 						const n = Ds(e, this.editorRef, t, this.props.editorType);
 						n && this.onChange(n)
 					}, this.handleFilesPaste = (t, e) => {
+						if (!this.props.allowMediaUploads) return void t.stopPropagation();
 						const n = t.clipboardData.files;
 						if (n && n.length) {
 							const o = Array.from(n),
@@ -8544,4 +8545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.11212a7169ed5097533e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.0a632a56a8b2e5ff02ab.js.map
