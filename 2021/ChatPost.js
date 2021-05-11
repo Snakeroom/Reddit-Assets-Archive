@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.2258fbaed3a2ff0b6a1b.js
-// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.40aef09bb9acdc5f6a34.js
+// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3662,4 +3662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.2258fbaed3a2ff0b6a1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.40aef09bb9acdc5f6a34.js.map

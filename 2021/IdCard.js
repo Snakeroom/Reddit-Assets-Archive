@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.91b01feb273a8fd47632.js
-// Retrieved at 5/11/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.804599242ba8a01c9a83.js
+// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1673,7 +1673,7 @@
 			}) => i.a.createElement(m.q, {
 				className: e,
 				disabled: b || l,
-				onClick: () => n === u.pd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => n === u.qd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: o,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -4461,15 +4461,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.qd.Add:
+					case r.rd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.qd.Start:
+					case r.rd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.qd.Create:
+					case r.rd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -5242,9 +5242,9 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => s.hc.Enabled === Object(r.c)(e, {
+			const i = e => s.ic.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.cc
+				experimentName: s.dc
 			})
 		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, n) {
@@ -5265,21 +5265,21 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const d = e => Object(a.I)(e) || Object(a.J)(e),
 				c = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: r.wc,
+					experimentEligibilitySelector: d
+				}), o.a),
+				l = Object(s.a)(c, e => e === r.Ac.Enabled),
+				u = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: r.vc,
 					experimentEligibilitySelector: d
 				}), o.a),
-				l = Object(s.a)(c, e => e === r.zc.Enabled),
-				u = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.uc,
-					experimentEligibilitySelector: d
-				}), o.a),
-				m = Object(s.a)(u, e => e === r.yc.Enabled),
+				m = Object(s.a)(u, e => e === r.zc.Enabled),
 				p = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.hd,
+					experimentName: r.id,
 					experimentEligibilitySelector: d
 				}), o.a),
 				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.id,
+					experimentName: r.jd,
 					experimentEligibilitySelector: d
 				}), o.a)
 		},
@@ -5354,4 +5354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.91b01feb273a8fd47632.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.804599242ba8a01c9a83.js.map
