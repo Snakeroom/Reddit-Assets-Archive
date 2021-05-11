@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c20102458af1fb891247.js
-// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.041cb8a51877e4d23f4d.js
+// Retrieved at 5/11/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -382,15 +382,15 @@
 				B = r("./src/reddit/models/Gold/TopAwarded/index.ts"),
 				F = r("./src/reddit/icons/fonts/Gift/index.tsx"),
 				L = r("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
-				H = r.n(L);
-			var R = a.a.memo(e => a.a.createElement("button", {
-					className: Object(k.a)(e.className, H.a.addAwardPill),
+				R = r.n(L);
+			var H = a.a.memo(e => a.a.createElement("button", {
+					className: Object(k.a)(e.className, R.a.addAwardPill),
 					name: s.fbt._("Give award", null, {
 						hk: "dQR06"
 					}),
 					onClick: e.onAddAward
 				}, a.a.createElement(F.a, {
-					className: H.a.giftIcon
+					className: R.a.giftIcon
 				}))),
 				U = r("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				D = r("./src/higherOrderComponents/makeAsync.tsx"),
@@ -729,7 +729,7 @@
 							tooltipId: `${A}-${e.id}`,
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
-					}), !r && a.a.createElement(R, {
+					}), !r && a.a.createElement(H, {
 						className: le.a.clickablePlaqueItem,
 						onAddAward: l
 					}), !i && a.a.createElement("div", {
@@ -1497,7 +1497,7 @@
 				d = e => e.alwaysShowChildren ? n.a.createElement(n.a.Fragment, null, e.children) : null;
 			t.b = Object(a.a)({
 				ErrorComponent: d,
-				getComponent: () => Object(o.a)(() => Promise.all([r.e("AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"), r.e("AuthorHovercard")]).then(r.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => r.e("AuthorHovercard").then(r.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
 				LoadingComponent: d
 			})
 		},
@@ -1860,13 +1860,13 @@
 				B = r("./src/reddit/contexts/InsideOverlay.tsx"),
 				F = r("./src/reddit/controls/MetaSeparator/index.tsx"),
 				L = r("./src/reddit/components/Portal/index.tsx"),
-				H = r("./src/reddit/constants/elementIds.ts"),
-				R = n.a.memo((function({
+				R = r("./src/reddit/constants/elementIds.ts"),
+				H = n.a.memo((function({
 					children: e
 				}) {
 					const [t, r] = Object(s.useState)(!1);
 					return Object(s.useEffect)(() => (r(!0), () => r(!1)), []), t ? n.a.createElement(L.a, {
-						container: document.getElementById(H.d)
+						container: document.getElementById(R.d)
 					}, n.a.Children.only(e)) : null
 				})),
 				U = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
@@ -1930,7 +1930,7 @@
 						onMouseOut: r.hide,
 						onMouseOver: r.show,
 						ref: r.target.ref
-					}), n.a.createElement(R, null, n.a.createElement(S.a, {
+					}), n.a.createElement(H, null, n.a.createElement(S.a, {
 						arrowProps: r.arrowProps,
 						popperProps: r.popperProps,
 						visible: r.visible
@@ -1943,7 +1943,7 @@
 						onMouseOut: r.hide,
 						onMouseOver: r.show,
 						ref: r.target.ref
-					}), n.a.createElement(R, null, n.a.createElement(S.a, {
+					}), n.a.createElement(H, null, n.a.createElement(S.a, {
 						arrowProps: r.arrowProps,
 						popperProps: r.popperProps,
 						visible: r.visible
@@ -1960,9 +1960,9 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: F,
 						tooltipType: L
-					} = e, H = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Y.a), G = Object(a.e)(Z.d), W = Object(a.e)(Z.g) || ["popular", "all"].includes(G || ""), J = !(!w.isSponsored || !D || Object(m.Hd)(D) || !W);
+					} = e, R = Object(a.d)(), U = Object(A.a)(), D = Object(a.e)(Y.a), G = Object(a.e)(Z.d), W = Object(a.e)(Z.g) || ["popular", "all"].includes(G || ""), J = !(!w.isSponsored || !D || Object(m.Hd)(D) || !W);
 					Object(s.useEffect)(() => {
-						J && H(Object(b.d)(w.author))
+						J && R(Object(b.d)(w.author))
 					}, []);
 					const te = w.belongsTo.id,
 						ae = Object(s.useCallback)(e => Object(K.a)(e, {
@@ -2044,12 +2044,12 @@
 							onMouseEnter: Ae.show,
 							onMouseLeave: Ae.hide,
 							onClick: () => {
-								U(Object(p.r)(L ? "post" : "postlist")), H(Object(h.c)("post_top_supporter_badge"))
+								U(Object(p.r)(L ? "post" : "postlist")), R(Object(h.c)("post_top_supporter_badge"))
 							},
 							ref: Ae.target.ref
 						}, n.a.createElement(v.a, {
 							className: re.a.powerupIcon
-						})), n.a.createElement(R, null, n.a.createElement(S.a, {
+						})), n.a.createElement(H, null, n.a.createElement(S.a, {
 							arrowProps: Ae.arrowProps,
 							popperProps: Ae.popperProps,
 							visible: Ae.visible
@@ -2103,7 +2103,7 @@
 						},
 						target: "_blank",
 						rel: "nofollow noopener noreferrer"
-					}, Object(u.d)(w.created / 1e3)), n.a.createElement(R, null, n.a.createElement(S.a, {
+					}, Object(u.d)(w.created / 1e3)), n.a.createElement(H, null, n.a.createElement(S.a, {
 						arrowProps: ge.arrowProps,
 						popperProps: ge.popperProps,
 						visible: ge.visible
@@ -2836,9 +2836,9 @@
 			})), r.d(t, "t", (function() {
 				return L
 			})), r.d(t, "u", (function() {
-				return H
-			})), r.d(t, "b", (function() {
 				return R
+			})), r.d(t, "b", (function() {
+				return H
 			})), r.d(t, "v", (function() {
 				return U
 			})), r.d(t, "s", (function() {
@@ -3022,16 +3022,16 @@
 					return s && s.price && s.currency && (r[s.currency] = s.price), r
 				},
 				B = (e, t) => {
-					const r = e.subreddits.gov.meta[t || ""],
-						s = r && r.extra && r.extra.nomenclature || N;
+					var r, s, n, a;
+					const o = (null === (a = null === (n = null === (s = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === s ? void 0 : s.points) || void 0 === n ? void 0 : n[t || ""]) || void 0 === a ? void 0 : a.nomenclature) || N;
 					return {
 						prices: M(e, t),
-						member: s.member || N.member,
-						memberPlural: s.memberPlural || N.memberPlural,
-						memberAlt: s.memberAlt || N.memberAlt,
-						memberAltPlural: s.memberAltPlural || N.memberAltPlural,
-						membership: s.membership || N.membership,
-						membershipAlt: s.membershipAlt || N.membershipAlt
+						member: o.member || N.member,
+						memberPlural: o.memberPlural || N.memberPlural,
+						memberAlt: o.memberAlt || N.memberAlt,
+						memberAltPlural: o.memberAltPlural || N.memberAltPlural,
+						membership: o.membership || N.membership,
+						membershipAlt: o.membershipAlt || N.membershipAlt
 					}
 				},
 				F = e => {
@@ -3042,11 +3042,11 @@
 					const r = e.user.ownedBadges[t] || {};
 					return !!Object.keys(r).length
 				},
-				H = e => {
+				R = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === u.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
-				R = (e, {
+				H = (e, {
 					subredditId: t
 				}) => {
 					if (!t) return;
@@ -3135,4 +3135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c20102458af1fb891247.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.041cb8a51877e4d23f4d.js.map

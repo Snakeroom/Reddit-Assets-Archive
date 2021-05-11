@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.b6d14bd623a3318fccfe.js
-// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.483b1b6e75a850b29e70.js
+// Retrieved at 5/11/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -38,8 +38,8 @@
 			}
 			var s = a(r("./node_modules/react-motion/lib/mapToZero.js")),
 				o = a(r("./node_modules/react-motion/lib/stripStyle.js")),
-				c = a(r("./node_modules/react-motion/lib/stepper.js")),
-				d = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
+				d = a(r("./node_modules/react-motion/lib/stepper.js")),
+				c = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
 				l = a(r("./node_modules/raf/index.js")),
 				u = a(r("./node_modules/react-motion/lib/shouldStopAnimation.js")),
 				m = a(r("./node_modules/react/index.js")),
@@ -56,23 +56,23 @@
 								a = r.currentStyle,
 								s = r.currentVelocity,
 								o = r.lastIdealStyle,
-								c = r.lastIdealVelocity;
-							for (var d in e)
-								if (Object.prototype.hasOwnProperty.call(e, d)) {
-									var l = e[d];
-									"number" == typeof l && (t || (t = !0, a = n({}, a), s = n({}, s), o = n({}, o), c = n({}, c)), a[d] = l, s[d] = 0, o[d] = l, c[d] = 0)
+								d = r.lastIdealVelocity;
+							for (var c in e)
+								if (Object.prototype.hasOwnProperty.call(e, c)) {
+									var l = e[c];
+									"number" == typeof l && (t || (t = !0, a = n({}, a), s = n({}, s), o = n({}, o), d = n({}, d)), a[c] = l, s[c] = 0, o[c] = l, d[c] = 0)
 								} t && i.setState({
 								currentStyle: a,
 								currentVelocity: s,
 								lastIdealStyle: o,
-								lastIdealVelocity: c
+								lastIdealVelocity: d
 							})
 						}, this.startAnimationIfNecessary = function() {
 							i.animationID = l.default((function(e) {
 								var t = i.props.style;
 								if (u.default(i.state.currentStyle, t, i.state.currentVelocity)) return i.wasAnimating && i.props.onRest && i.props.onRest(), i.animationID = null, i.wasAnimating = !1, void(i.accumulatedTime = 0);
 								i.wasAnimating = !0;
-								var r = e || d.default(),
+								var r = e || c.default(),
 									n = r - i.prevTime;
 								if (i.prevTime = r, i.accumulatedTime = i.accumulatedTime + n, i.accumulatedTime > 10 * f && (i.accumulatedTime = 0), 0 === i.accumulatedTime) return i.animationID = null, void i.startAnimationIfNecessary();
 								var a = (i.accumulatedTime - Math.floor(i.accumulatedTime / f) * f) / f,
@@ -87,13 +87,13 @@
 										if ("number" == typeof h) m[b] = h, p[b] = 0, o[b] = h, l[b] = 0;
 										else {
 											for (var g = i.state.lastIdealStyle[b], y = i.state.lastIdealVelocity[b], _ = 0; _ < s; _++) {
-												var E = c.default(f / 1e3, g, y, h.val, h.stiffness, h.damping, h.precision);
+												var E = d.default(f / 1e3, g, y, h.val, h.stiffness, h.damping, h.precision);
 												g = E[0], y = E[1]
 											}
-											var S = c.default(f / 1e3, g, y, h.val, h.stiffness, h.damping, h.precision),
-												v = S[0],
-												O = S[1];
-											m[b] = g + (v - g) * a, p[b] = y + (O - y) * a, o[b] = g, l[b] = y
+											var v = d.default(f / 1e3, g, y, h.val, h.stiffness, h.damping, h.precision),
+												S = v[0],
+												O = v[1];
+											m[b] = g + (S - g) * a, p[b] = y + (O - y) * a, o[b] = g, l[b] = y
 										}
 									} i.animationID = null, i.accumulatedTime -= s * f, i.setState({
 									currentStyle: m,
@@ -136,9 +136,9 @@
 							lastIdealVelocity: i
 						}
 					}, t.prototype.componentDidMount = function() {
-						this.prevTime = d.default(), this.startAnimationIfNecessary()
+						this.prevTime = c.default(), this.startAnimationIfNecessary()
 					}, t.prototype.componentWillReceiveProps = function(e) {
-						null != this.unreadPropStyle && this.clearUnreadPropStyle(this.unreadPropStyle), this.unreadPropStyle = e.style, null == this.animationID && (this.prevTime = d.default(), this.startAnimationIfNecessary())
+						null != this.unreadPropStyle && this.clearUnreadPropStyle(this.unreadPropStyle), this.unreadPropStyle = e.style, null == this.animationID && (this.prevTime = c.default(), this.startAnimationIfNecessary())
 					}, t.prototype.componentWillUnmount = function() {
 						null != this.animationID && (l.default.cancel(this.animationID), this.animationID = null)
 					}, t.prototype.render = function() {
@@ -177,8 +177,8 @@
 			}
 			var s = a(r("./node_modules/react-motion/lib/mapToZero.js")),
 				o = a(r("./node_modules/react-motion/lib/stripStyle.js")),
-				c = a(r("./node_modules/react-motion/lib/stepper.js")),
-				d = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
+				d = a(r("./node_modules/react-motion/lib/stepper.js")),
+				c = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
 				l = a(r("./node_modules/raf/index.js")),
 				u = a(r("./node_modules/react-motion/lib/shouldStopAnimation.js")),
 				m = a(r("./node_modules/react/index.js")),
@@ -190,16 +190,16 @@
 					! function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 					}(this, t), e.call(this, r), this.animationID = null, this.prevTime = 0, this.accumulatedTime = 0, this.unreadPropStyles = null, this.clearUnreadPropStyle = function(e) {
-						for (var t = i.state, r = t.currentStyles, a = t.currentVelocities, s = t.lastIdealStyles, o = t.lastIdealVelocities, c = !1, d = 0; d < e.length; d++) {
-							var l = e[d],
+						for (var t = i.state, r = t.currentStyles, a = t.currentVelocities, s = t.lastIdealStyles, o = t.lastIdealVelocities, d = !1, c = 0; c < e.length; c++) {
+							var l = e[c],
 								u = !1;
 							for (var m in l)
 								if (Object.prototype.hasOwnProperty.call(l, m)) {
 									var p = l[m];
-									"number" == typeof p && (u || (u = !0, c = !0, r[d] = n({}, r[d]), a[d] = n({}, a[d]), s[d] = n({}, s[d]), o[d] = n({}, o[d])), r[d][m] = p, a[d][m] = 0, s[d][m] = p, o[d][m] = 0)
+									"number" == typeof p && (u || (u = !0, d = !0, r[c] = n({}, r[c]), a[c] = n({}, a[c]), s[c] = n({}, s[c]), o[c] = n({}, o[c])), r[c][m] = p, a[c][m] = 0, s[c][m] = p, o[c][m] = 0)
 								}
 						}
-						c && i.setState({
+						d && i.setState({
 							currentStyles: r,
 							currentVelocities: a,
 							lastIdealStyles: s,
@@ -213,7 +213,7 @@
 										if (!u.default(e[n], t[n], r[n])) return !1;
 									return !0
 								}(i.state.currentStyles, t, i.state.currentVelocities)) return i.animationID = null, void(i.accumulatedTime = 0);
-							var r = e || d.default(),
+							var r = e || c.default(),
 								n = r - i.prevTime;
 							if (i.prevTime = r, i.accumulatedTime = i.accumulatedTime + n, i.accumulatedTime > 10 * f && (i.accumulatedTime = 0), 0 === i.accumulatedTime) return i.animationID = null, void i.startAnimationIfNecessary();
 							for (var a = (i.accumulatedTime - Math.floor(i.accumulatedTime / f) * f) / f, s = Math.floor(i.accumulatedTime / f), o = [], l = [], m = [], p = [], b = 0; b < t.length; b++) {
@@ -222,19 +222,19 @@
 									y = {},
 									_ = {},
 									E = {};
-								for (var S in h)
-									if (Object.prototype.hasOwnProperty.call(h, S)) {
-										var v = h[S];
-										if ("number" == typeof v) g[S] = v, y[S] = 0, _[S] = v, E[S] = 0;
+								for (var v in h)
+									if (Object.prototype.hasOwnProperty.call(h, v)) {
+										var S = h[v];
+										if ("number" == typeof S) g[v] = S, y[v] = 0, _[v] = S, E[v] = 0;
 										else {
-											for (var O = i.state.lastIdealStyles[b][S], w = i.state.lastIdealVelocities[b][S], P = 0; P < s; P++) {
-												var I = c.default(f / 1e3, O, w, v.val, v.stiffness, v.damping, v.precision);
+											for (var O = i.state.lastIdealStyles[b][v], w = i.state.lastIdealVelocities[b][v], P = 0; P < s; P++) {
+												var I = d.default(f / 1e3, O, w, S.val, S.stiffness, S.damping, S.precision);
 												O = I[0], w = I[1]
 											}
-											var C = c.default(f / 1e3, O, w, v.val, v.stiffness, v.damping, v.precision),
+											var C = d.default(f / 1e3, O, w, S.val, S.stiffness, S.damping, S.precision),
 												N = C[0],
 												x = C[1];
-											g[S] = O + (N - O) * a, y[S] = w + (x - w) * a, _[S] = O, E[S] = w
+											g[v] = O + (N - O) * a, y[v] = w + (x - w) * a, _[v] = O, E[v] = w
 										}
 									} m[b] = g, p[b] = y, o[b] = _, l[b] = E
 							}
@@ -280,9 +280,9 @@
 						lastIdealVelocities: i
 					}
 				}, t.prototype.componentDidMount = function() {
-					this.prevTime = d.default(), this.startAnimationIfNecessary()
+					this.prevTime = c.default(), this.startAnimationIfNecessary()
 				}, t.prototype.componentWillReceiveProps = function(e) {
-					null != this.unreadPropStyles && this.clearUnreadPropStyle(this.unreadPropStyles), this.unreadPropStyles = e.styles(this.state.lastIdealStyles), null == this.animationID && (this.prevTime = d.default(), this.startAnimationIfNecessary())
+					null != this.unreadPropStyles && this.clearUnreadPropStyle(this.unreadPropStyles), this.unreadPropStyles = e.styles(this.state.lastIdealStyles), null == this.animationID && (this.prevTime = c.default(), this.startAnimationIfNecessary())
 				}, t.prototype.componentWillUnmount = function() {
 					null != this.animationID && (l.default.cancel(this.animationID), this.animationID = null)
 				}, t.prototype.render = function() {
@@ -321,8 +321,8 @@
 			}
 			var s = a(r("./node_modules/react-motion/lib/mapToZero.js")),
 				o = a(r("./node_modules/react-motion/lib/stripStyle.js")),
-				c = a(r("./node_modules/react-motion/lib/stepper.js")),
-				d = a(r("./node_modules/react-motion/lib/mergeDiff.js")),
+				d = a(r("./node_modules/react-motion/lib/stepper.js")),
+				c = a(r("./node_modules/react-motion/lib/mergeDiff.js")),
 				l = a(r("./node_modules/react-motion/node_modules/performance-now/lib/performance-now.js")),
 				u = a(r("./node_modules/raf/index.js")),
 				m = a(r("./node_modules/react-motion/lib/shouldStopAnimation.js")),
@@ -353,8 +353,8 @@
 				}))
 			}
 
-			function g(e, t, r, n, i, a, o, c, l) {
-				for (var u = d.default(n, i, (function(e, n) {
+			function g(e, t, r, n, i, a, o, d, l) {
+				for (var u = c.default(n, i, (function(e, n) {
 						var i = t(n);
 						return null == i ? (r({
 							key: n.key,
@@ -373,11 +373,11 @@
 							_ = E;
 							break
 						} if (null == _) {
-						var S = e(y);
-						p[g] = S, b[g] = S;
-						var v = s.default(y.style);
-						f[g] = v, h[g] = v
-					} else p[g] = a[_], b[g] = c[_], f[g] = o[_], h[g] = l[_]
+						var v = e(y);
+						p[g] = v, b[g] = v;
+						var S = s.default(y.style);
+						f[g] = S, h[g] = S
+					} else p[g] = a[_], b[g] = d[_], f[g] = o[_], h[g] = l[_]
 				}
 				return [u, p, f, b, h]
 			}
@@ -387,17 +387,17 @@
 					! function(e, t) {
 						if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function")
 					}(this, t), e.call(this, r), this.unmounting = !1, this.animationID = null, this.prevTime = 0, this.accumulatedTime = 0, this.unreadPropStyles = null, this.clearUnreadPropStyle = function(e) {
-						for (var t = g(i.props.willEnter, i.props.willLeave, i.props.didLeave, i.state.mergedPropsStyles, e, i.state.currentStyles, i.state.currentVelocities, i.state.lastIdealStyles, i.state.lastIdealVelocities), r = t[0], a = t[1], s = t[2], o = t[3], c = t[4], d = 0; d < e.length; d++) {
-							var l = e[d].style,
+						for (var t = g(i.props.willEnter, i.props.willLeave, i.props.didLeave, i.state.mergedPropsStyles, e, i.state.currentStyles, i.state.currentVelocities, i.state.lastIdealStyles, i.state.lastIdealVelocities), r = t[0], a = t[1], s = t[2], o = t[3], d = t[4], c = 0; c < e.length; c++) {
+							var l = e[c].style,
 								u = !1;
 							for (var m in l)
 								if (Object.prototype.hasOwnProperty.call(l, m)) {
 									var p = l[m];
-									"number" == typeof p && (u || (u = !0, a[d] = n({}, a[d]), s[d] = n({}, s[d]), o[d] = n({}, o[d]), c[d] = n({}, c[d]), r[d] = {
-										key: r[d].key,
-										data: r[d].data,
-										style: n({}, r[d].style)
-									}), a[d][m] = p, s[d][m] = 0, o[d][m] = p, c[d][m] = 0, r[d].style[m] = p)
+									"number" == typeof p && (u || (u = !0, a[c] = n({}, a[c]), s[c] = n({}, s[c]), o[c] = n({}, o[c]), d[c] = n({}, d[c]), r[c] = {
+										key: r[c].key,
+										data: r[c].data,
+										style: n({}, r[c].style)
+									}), a[c][m] = p, s[c][m] = 0, o[c][m] = p, d[c][m] = 0, r[c].style[m] = p)
 								}
 						}
 						i.setState({
@@ -405,7 +405,7 @@
 							currentVelocities: s,
 							mergedPropsStyles: r,
 							lastIdealStyles: o,
-							lastIdealVelocities: c
+							lastIdealVelocities: d
 						})
 					}, this.startAnimationIfNecessary = function() {
 						i.unmounting || (i.animationID = u.default((function(e) {
@@ -423,27 +423,27 @@
 								var n = e || l.default(),
 									a = n - i.prevTime;
 								if (i.prevTime = n, i.accumulatedTime = i.accumulatedTime + a, i.accumulatedTime > 10 * b && (i.accumulatedTime = 0), 0 === i.accumulatedTime) return i.animationID = null, void i.startAnimationIfNecessary();
-								for (var s = (i.accumulatedTime - Math.floor(i.accumulatedTime / b) * b) / b, o = Math.floor(i.accumulatedTime / b), d = g(i.props.willEnter, i.props.willLeave, i.props.didLeave, i.state.mergedPropsStyles, r, i.state.currentStyles, i.state.currentVelocities, i.state.lastIdealStyles, i.state.lastIdealVelocities), u = d[0], p = d[1], f = d[2], y = d[3], _ = d[4], E = 0; E < u.length; E++) {
-									var S = u[E].style,
-										v = {},
+								for (var s = (i.accumulatedTime - Math.floor(i.accumulatedTime / b) * b) / b, o = Math.floor(i.accumulatedTime / b), c = g(i.props.willEnter, i.props.willLeave, i.props.didLeave, i.state.mergedPropsStyles, r, i.state.currentStyles, i.state.currentVelocities, i.state.lastIdealStyles, i.state.lastIdealVelocities), u = c[0], p = c[1], f = c[2], y = c[3], _ = c[4], E = 0; E < u.length; E++) {
+									var v = u[E].style,
+										S = {},
 										O = {},
 										w = {},
 										P = {};
-									for (var I in S)
-										if (Object.prototype.hasOwnProperty.call(S, I)) {
-											var C = S[I];
-											if ("number" == typeof C) v[I] = C, O[I] = 0, w[I] = C, P[I] = 0;
+									for (var I in v)
+										if (Object.prototype.hasOwnProperty.call(v, I)) {
+											var C = v[I];
+											if ("number" == typeof C) S[I] = C, O[I] = 0, w[I] = C, P[I] = 0;
 											else {
 												for (var N = y[E][I], x = _[E][I], j = 0; j < o; j++) {
-													var A = c.default(b / 1e3, N, x, C.val, C.stiffness, C.damping, C.precision);
-													N = A[0], x = A[1]
+													var k = d.default(b / 1e3, N, x, C.val, C.stiffness, C.damping, C.precision);
+													N = k[0], x = k[1]
 												}
-												var T = c.default(b / 1e3, N, x, C.val, C.stiffness, C.damping, C.precision),
-													k = T[0],
+												var T = d.default(b / 1e3, N, x, C.val, C.stiffness, C.damping, C.precision),
+													A = T[0],
 													M = T[1];
-												v[I] = N + (k - N) * s, O[I] = x + (M - x) * s, w[I] = N, P[I] = x
+												S[I] = N + (A - N) * s, O[I] = x + (M - x) * s, w[I] = N, P[I] = x
 											}
-										} y[E] = w, _[E] = P, p[E] = v, f[E] = O
+										} y[E] = w, _[E] = P, p[E] = S, f[E] = O
 								}
 								i.animationID = null, i.accumulatedTime -= o * b, i.setState({
 									currentStyles: p,
@@ -504,24 +504,24 @@
 						n = e.willEnter,
 						i = e.willLeave,
 						a = e.didLeave,
-						c = "function" == typeof r ? r(t) : r,
-						d = void 0;
-					d = null == t ? c : t.map((function(e) {
-						for (var t = 0; t < c.length; t++)
-							if (c[t].key === e.key) return c[t];
+						d = "function" == typeof r ? r(t) : r,
+						c = void 0;
+					c = null == t ? d : t.map((function(e) {
+						for (var t = 0; t < d.length; t++)
+							if (d[t].key === e.key) return d[t];
 						return e
 					}));
-					var l = null == t ? c.map((function(e) {
+					var l = null == t ? d.map((function(e) {
 							return o.default(e.style)
 						})) : t.map((function(e) {
 							return o.default(e.style)
 						})),
-						u = null == t ? c.map((function(e) {
+						u = null == t ? d.map((function(e) {
 							return s.default(e.style)
 						})) : t.map((function(e) {
 							return s.default(e.style)
 						})),
-						m = g(n, i, a, d, c, l, u, l, u),
+						m = g(n, i, a, c, d, l, u, l, u),
 						p = m[0];
 					return {
 						currentStyles: m[1],
@@ -570,21 +570,21 @@
 					var i = a[e.key],
 						s = a[r.key],
 						o = n[e.key],
-						c = n[r.key];
+						d = n[r.key];
 					if (null != i && null != s) return a[e.key] - a[r.key];
-					if (null != o && null != c) return n[e.key] - n[r.key];
+					if (null != o && null != d) return n[e.key] - n[r.key];
 					if (null != i) {
-						for (var d = 0; d < t.length; d++) {
-							var l = t[d].key;
+						for (var c = 0; c < t.length; c++) {
+							var l = t[c].key;
 							if (Object.prototype.hasOwnProperty.call(n, l)) {
-								if (i < a[l] && c > n[l]) return -1;
-								if (i > a[l] && c < n[l]) return 1
+								if (i < a[l] && d > n[l]) return -1;
+								if (i > a[l] && d < n[l]) return 1
 							}
 						}
 						return 1
 					}
-					for (d = 0; d < t.length; d++) {
-						l = t[d].key;
+					for (c = 0; c < t.length; c++) {
+						l = t[c].key;
 						if (Object.prototype.hasOwnProperty.call(n, l)) {
 							if (s < a[l] && o > n[l]) return 1;
 							if (s > a[l] && o < n[l]) return -1
@@ -630,10 +630,10 @@
 			t.TransitionMotion = n(s);
 			var o = r("./node_modules/react-motion/lib/spring.js");
 			t.spring = n(o);
-			var c = r("./node_modules/react-motion/lib/presets.js");
-			t.presets = n(c);
-			var d = r("./node_modules/react-motion/lib/stripStyle.js");
-			t.stripStyle = n(d);
+			var d = r("./node_modules/react-motion/lib/presets.js");
+			t.presets = n(d);
+			var c = r("./node_modules/react-motion/lib/stripStyle.js");
+			t.stripStyle = n(c);
 			var l = r("./node_modules/react-motion/lib/reorderKeys.js");
 			t.reorderKeys = n(l)
 		},
@@ -682,10 +682,10 @@
 		"./node_modules/react-motion/lib/stepper.js": function(e, t, r) {
 			"use strict";
 			t.__esModule = !0, t.default = function(e, t, r, i, a, s, o) {
-				var c = r + (-a * (t - i) + -s * r) * e,
-					d = t + c * e;
-				if (Math.abs(c) < o && Math.abs(d - i) < o) return n[0] = i, n[1] = 0, n;
-				return n[0] = d, n[1] = c, n
+				var d = r + (-a * (t - i) + -s * r) * e,
+					c = t + d * e;
+				if (Math.abs(d) < o && Math.abs(c - i) < o) return n[0] = i, n[1] = 0, n;
+				return n[0] = c, n[1] = d, n
 			};
 			var n = [0, 0];
 			e.exports = t.default
@@ -830,9 +830,9 @@
 			})), r.d(t, "e", (function() {
 				return o
 			})), r.d(t, "f", (function() {
-				return c
-			})), r.d(t, "g", (function() {
 				return d
+			})), r.d(t, "g", (function() {
+				return c
 			})), r.d(t, "h", (function() {
 				return l
 			})), r.d(t, "i", (function() {
@@ -843,8 +843,8 @@
 				a = "ECONOMICS__SUBREDDIT_PREMIUM__BADGE_MANAGEMENT_MODAL_OPENED",
 				s = "ECONOMICS__SUBREDDIT_PREMIUM__BADGE_MANAGEMENT_VIEW_CHANGED",
 				o = "ECONOMICS__SUBREDDIT_PREMIUM__EDITOR_PRODUCTS_FETCH_SUCCESS",
-				c = "ECONOMICS__SUBREDDIT_PREMIUM__ORDER_SUCCESS",
-				d = "ECONOMICS__SUBREDDIT_PREMIUM__SUBREDDIT_INFO_SUCCESS",
+				d = "ECONOMICS__SUBREDDIT_PREMIUM__ORDER_SUCCESS",
+				c = "ECONOMICS__SUBREDDIT_PREMIUM__SUBREDDIT_INFO_SUCCESS",
 				l = "ECONOMICS__SUBREDDIT_PREMIUM__SUBSCRIPTION_CANCEL_SUCCESS",
 				u = "ECONOMICS__SUBREDDIT_PREMIUM__SUBSCRIPTION_DATA_SUCCESS"
 		},
@@ -861,9 +861,9 @@
 			})), r.d(t, "e", (function() {
 				return o
 			})), r.d(t, "f", (function() {
-				return c
-			})), r.d(t, "g", (function() {
 				return d
+			})), r.d(t, "g", (function() {
+				return c
 			})), r.d(t, "h", (function() {
 				return l
 			})), r.d(t, "i", (function() {
@@ -887,9 +887,9 @@
 			})), r.d(t, "r", (function() {
 				return E
 			})), r.d(t, "s", (function() {
-				return S
-			})), r.d(t, "t", (function() {
 				return v
+			})), r.d(t, "t", (function() {
+				return S
 			})), r.d(t, "u", (function() {
 				return O
 			})), r.d(t, "v", (function() {
@@ -904,8 +904,8 @@
 				a = "GOVERNANCE__NEW_TOP_MOD_SUGGESTED",
 				s = "GOVERNANCE__OPT_OUT_MODAL_OPENED",
 				o = "POLL_VOTE_SUCCESS",
-				c = "GOVERNANCE__PROPOSAL_CREATION_FAILURE",
-				d = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
+				d = "GOVERNANCE__PROPOSAL_CREATION_FAILURE",
+				c = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
 				l = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
 				u = "GOVERNANCE__PROPOSAL_OPTION_VOTE_FAILURE",
 				m = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
@@ -917,8 +917,8 @@
 				y = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				_ = "GOVERNANCE__TRANSFER_FAILURE",
 				E = "GOVERNANCE__TRANSFER_MODAL_OPENED",
-				S = "GOVERNANCE__TRANSFER_PENDING",
-				v = "GOVERNANCE__TRANSFER_SUCCESS",
+				v = "GOVERNANCE__TRANSFER_PENDING",
+				S = "GOVERNANCE__TRANSFER_SUCCESS",
 				O = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				w = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				P = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
@@ -961,8 +961,8 @@
 				a = r("./node_modules/react-redux/es/index.js"),
 				s = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/higherOrderComponents/addOverlayEvents.tsx"),
-				c = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				d = r("./src/reddit/selectors/tooltip.ts"),
+				d = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				c = r("./src/reddit/selectors/tooltip.ts"),
 				l = r("./node_modules/uuid/v4.js"),
 				u = r.n(l),
 				m = r("./src/lib/classNames/index.ts"),
@@ -974,8 +974,8 @@
 				y = r("./src/reddit/models/Badge/managementPage.ts"),
 				_ = r("./src/reddit/selectors/economics.ts"),
 				E = r("./src/reddit/selectors/products.ts"),
-				S = r("./src/reddit/selectors/telemetry.ts"),
-				v = r("./node_modules/fbt/lib/FbtPublic.js"),
+				v = r("./src/reddit/selectors/telemetry.ts"),
+				S = r("./node_modules/fbt/lib/FbtPublic.js"),
 				O = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				w = r("./src/reddit/actions/tooltip.ts"),
 				P = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/index.tsx"),
@@ -988,7 +988,7 @@
 					subredditId: t
 				}) => e.subreddits.models[t]
 			});
-			var A = Object(b.c)(Object(a.b)(j, e => ({
+			var k = Object(b.c)(Object(a.b)(j, e => ({
 					onOpen: () => e(Object(w.i)())
 				}))((function(e) {
 					const t = e.subreddit ? e.subreddit.name : "",
@@ -999,8 +999,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_badge_hover_open_learn_more",
-								...S.defaults(e),
-								subreddit: S.subreddit(e)
+								...v.defaults(e),
+								subreddit: v.subreddit(e)
 							})), e.onOpen()
 						};
 					return i.a.createElement("footer", {
@@ -1017,13 +1017,13 @@
 						disabled: !e.subreddit,
 						to: Object(C.a)(t, r),
 						onClick: n
-					}, v.fbt._("Learn More", null, {
+					}, S.fbt._("Learn More", null, {
 						hk: "4FGSHD"
 					})))
 				}))),
 				T = r("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
-				k = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/GalleryFooter/index.m.less"),
-				M = r.n(k);
+				A = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/GalleryFooter/index.m.less"),
+				M = r.n(A);
 			var D = Object(b.c)(Object(a.b)(void 0, (e, {
 					badge: t,
 					subredditId: r
@@ -1046,21 +1046,21 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_badge_hover_open_gallery",
-								...S.defaults(e),
-								subreddit: S.subreddit(e)
+								...v.defaults(e),
+								subreddit: v.subreddit(e)
 							})), e.onOpen()
 						}
-					}, v.fbt._("Get", null, {
+					}, S.fbt._("Get", null, {
 						hk: "4g4sIK"
 					})))
 				}))),
-				B = r("./src/reddit/actions/chat/toggle.ts"),
-				R = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/LFGFooter/index.m.less"),
-				L = r.n(R);
+				R = r("./src/reddit/actions/chat/toggle.ts"),
+				B = r("./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/LFGFooter/index.m.less"),
+				L = r.n(B);
 			var F = Object(b.c)(Object(a.b)(void 0, (e, {
 					userId: t
 				}) => ({
-					onStartChat: () => e(Object(B.b)(t))
+					onStartChat: () => e(Object(R.b)(t))
 				}))((function(e) {
 					const t = e.correlationId || u()();
 					return i.a.createElement("footer", {
@@ -1072,11 +1072,11 @@
 								source: "meta",
 								action: "click",
 								noun: "lfg_badge_start_chat",
-								...S.defaults(e),
-								subreddit: S.subreddit(e)
+								...v.defaults(e),
+								subreddit: v.subreddit(e)
 							})), e.onStartChat()
 						}
-					}, v.fbt._("start chat", null, {
+					}, S.fbt._("start chat", null, {
 						hk: "eNK8L"
 					})))
 				}))),
@@ -1100,7 +1100,7 @@
 						onClick: t => {
 							t.stopPropagation(), e.onOpen()
 						}
-					}, v.fbt._("View", null, {
+					}, S.fbt._("View", null, {
 						hk: "3ZVmGs"
 					})))
 				})),
@@ -1119,8 +1119,8 @@
 						action: "open",
 						noun: "badges_hover_card",
 						correlationId: this.correlationId,
-						...S.defaults(e),
-						subreddit: S.subreddit(e)
+						...v.defaults(e),
+						subreddit: v.subreddit(e)
 					}))
 				}
 				render() {
@@ -1140,7 +1140,7 @@
 						className: H.a.footer,
 						badge: this.props.badge,
 						subredditId: this.props.subredditId
-					}), e === V.Education && i.a.createElement(A, {
+					}), e === V.Education && i.a.createElement(k, {
 						className: H.a.footerEducation,
 						correlationId: this.correlationId,
 						subredditId: this.props.subredditId
@@ -1156,7 +1156,7 @@
 					}))
 				}
 			}
-			const X = Object(s.c)({
+			const $ = Object(s.c)({
 				ownedBadge: _.l,
 				premiumSubscriptionsEnabled: h.d.spSpecialMemberships,
 				relevantProduct: (e, {
@@ -1170,15 +1170,15 @@
 					subredditId: t
 				}) => Object(_.w)(e, t)
 			});
-			var q = Object(b.c)(Object(a.b)(X)(Z));
-			const Y = Object(c.a)(q, [o.a.Click, o.a.Keydown]);
-			const $ = Object(s.c)({
+			var X = Object(b.c)(Object(a.b)($)(Z));
+			const q = Object(d.a)(X, [o.a.Click, o.a.Keydown]);
+			const Y = Object(s.c)({
 				isOpen: (e, {
 					tooltipId: t
-				}) => Object(d.b)(t)(e)
+				}) => Object(c.b)(t)(e)
 			});
-			t.default = Object(a.b)($)((function(e) {
-				return e.isOpen ? i.a.createElement(Y, e) : null
+			t.default = Object(a.b)(Y)((function(e) {
+				return e.isOpen ? i.a.createElement(q, e) : null
 			}))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.m.less": function(e, t, r) {
@@ -1205,8 +1205,8 @@
 				a = r.n(i),
 				s = r("./node_modules/react-redux/es/index.js"),
 				o = r("./src/lib/classNames/index.ts"),
-				c = r("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
-				d = r("./src/reddit/models/Badge/index.ts"),
+				d = r("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
+				c = r("./src/reddit/models/Badge/index.ts"),
 				l = r("./src/reddit/models/Badge/managementPage.ts"),
 				u = r("./src/reddit/selectors/crypto/wallet.ts"),
 				m = r("./src/reddit/selectors/economics.ts"),
@@ -1234,13 +1234,13 @@
 					subredditId: r,
 					type: n
 				}) => {
-					if (!Object(d.e)(t) && n === l.a.Achievement && c.a[t.id]) {
+					if (!Object(c.e)(t) && n === l.a.Achievement && d.a[t.id]) {
 						const n = Object(u.a)(e, {
 							subredditId: r
 						});
 						if (n) return {
 							complete: parseInt(n.amount),
-							total: c.a[t.id]
+							total: d.a[t.id]
 						}
 					}
 				}
@@ -1257,8 +1257,8 @@
 					{
 						url: i,
 						url2x: s
-					} = Object(d.d)(60, 60, e.badge),
-					c = e.progress;
+					} = Object(c.d)(60, 60, e.badge),
+					d = e.progress;
 				return a.a.createElement("article", {
 					className: Object(o.a)(e.className, {
 						[b.a.fullWidth]: !!e.fullWidth
@@ -1279,20 +1279,20 @@
 					title: r
 				}, r), a.a.createElement("header", {
 					className: b.a.title
-				}, e.badge.title), c && c.complete < c.total && a.a.createElement("div", {
+				}, e.badge.title), d && d.complete < d.total && a.a.createElement("div", {
 					className: b.a.progressContainer
 				}, a.a.createElement("div", {
 					className: b.a.progressBar
 				}, a.a.createElement("div", {
 					className: b.a.progressThumb,
 					style: {
-						width: `${c.complete/c.total*100}%`
+						width: `${d.complete/d.total*100}%`
 					}
 				})), a.a.createElement("div", {
 					className: b.a.progressAmount
 				}, function(e) {
 					return `${`${Math.floor(e.complete/1e3)}k`}/${`${Math.floor(e.total/1e3)}k`}`
-				}(c))), a.a.createElement("div", {
+				}(d))), a.a.createElement("div", {
 					className: b.a.description
 				}, e.badge.description))), e.children)
 			}))
@@ -1398,8 +1398,8 @@
 				a = r("./node_modules/react-motion/lib/react-motion.js"),
 				s = r("./node_modules/react-redux/es/index.js"),
 				o = r("./node_modules/reselect/es/index.js"),
-				c = r("./src/lib/classNames/index.ts"),
-				d = r("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
+				d = r("./src/lib/classNames/index.ts"),
+				c = r("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
 				l = r("./src/reddit/selectors/economics.ts"),
 				u = r("./node_modules/fbt/lib/FbtPublic.js"),
 				m = r("./src/config.ts"),
@@ -1588,8 +1588,8 @@
 				};
 			var _ = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Badges/index.m.less"),
 				E = r.n(_);
-			const S = (e, t) => `${m.a.assetPath}/img/memberships/paywall/${e.name.toLowerCase()}/${t}`,
-				v = 500,
+			const v = (e, t) => `${m.a.assetPath}/img/memberships/paywall/${e.name.toLowerCase()}/${t}`,
+				S = 500,
 				O = 30,
 				w = 132;
 			class P extends i.a.Component {
@@ -1623,7 +1623,7 @@
 								currentlySelected: e
 							})
 						})
-					}, v)
+					}, S)
 				}
 				componentWillUnmount() {
 					this.intervalRef && clearInterval(this.intervalRef)
@@ -1637,7 +1637,7 @@
 						currentlySelected: n
 					} = this.state;
 					return t ? i.a.createElement("article", {
-						className: Object(c.a)(E.a.container, e)
+						className: Object(d.a)(E.a.container, e)
 					}, i.a.createElement("div", {
 						className: E.a.background
 					}), i.a.createElement("div", {
@@ -1652,7 +1652,7 @@
 						className: E.a.row,
 						style: {
 							animationDuration: "80s",
-							backgroundImage: `url(${S(t,"badges-line-1-v2.png")})`
+							backgroundImage: `url(${v(t,"badges-line-1-v2.png")})`
 						}
 					}), i.a.createElement("div", {
 						className: E.a.row,
@@ -1660,13 +1660,13 @@
 						style: {
 							animationDirection: "reverse",
 							animationDuration: "120s",
-							backgroundImage: `url(${S(t,"badges-line-2-v2.png")})`
+							backgroundImage: `url(${v(t,"badges-line-2-v2.png")})`
 						}
 					}), i.a.createElement("div", {
 						className: E.a.row,
 						style: {
 							animationDuration: "160s",
-							backgroundImage: `url(${S(t,"badges-line-3-v2.png")})`
+							backgroundImage: `url(${v(t,"badges-line-3-v2.png")})`
 						}
 					})), i.a.createElement("div", {
 						className: E.a.username,
@@ -1697,18 +1697,18 @@
 				N = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Emojis/index.m.less"),
 				x = r.n(N);
 			const j = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => `https://meta.redditmedia.com/img/fortnitebr/emotes/${e}-2x.gif`).concat("https://reddit-meta-production.s3.amazonaws.com/public/fortnitebr/emotes/premium_emotes/emo_pack_1/mech_destroy.gif");
-			const A = Object(o.c)({
+			const k = Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
 				}) => e.subreddits.models[t]
 			});
-			var T = Object(s.b)(A)((function(e) {
+			var T = Object(s.b)(k)((function(e) {
 					const {
 						className: t,
 						subreddit: r
 					} = e;
 					return r ? i.a.createElement("article", {
-						className: Object(c.a)(x.a.container, t)
+						className: Object(d.a)(x.a.container, t)
 					}, i.a.createElement("div", {
 						className: x.a.background
 					}), i.a.createElement("div", {
@@ -1742,8 +1742,8 @@
 						hk: "1jTE2m"
 					})))) : null
 				})),
-				k = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Gifs/index.m.less"),
-				M = r.n(k);
+				A = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/Gifs/index.m.less"),
+				M = r.n(A);
 			const D = (() => {
 				const e = {};
 				return async t => {
@@ -1940,7 +1940,7 @@
 					return e[t] = r, r
 				}
 			})();
-			class B extends i.a.Component {
+			class R extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						imagesCol1: [],
@@ -1966,7 +1966,7 @@
 						subreddit: t
 					} = this.props;
 					return t ? i.a.createElement("article", {
-						className: Object(c.a)(M.a.container, e)
+						className: Object(d.a)(M.a.container, e)
 					}, i.a.createElement("div", {
 						className: M.a.background
 					}), i.a.createElement("div", {
@@ -2005,12 +2005,12 @@
 					})))) : null
 				}
 			}
-			const R = Object(o.c)({
+			const B = Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
 				}) => e.subreddits.models[t]
 			});
-			var L = Object(s.b)(R)(B),
+			var L = Object(s.b)(B)(R),
 				F = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/index.m.less"),
 				G = r.n(F);
 			const U = 1e4,
@@ -2055,7 +2055,7 @@
 						className: G.a.title
 					}, i.a.createElement("img", {
 						className: G.a.crown,
-						src: Object(d.a)(o, "Crown.gif")
+						src: Object(c.a)(o, "Crown.gif")
 					}), r.membershipAlt), !t && i.a.createElement(i.a.Fragment, null, i.a.createElement("article", {
 						className: G.a.benefits
 					}, i.a.createElement(a.TransitionMotion, {
@@ -2097,7 +2097,7 @@
 					})))))), i.a.createElement("footer", {
 						className: G.a.indicators
 					}, this.slides.map((e, t) => i.a.createElement("div", {
-						className: Object(c.a)(G.a.indicator, {
+						className: Object(d.a)(G.a.indicator, {
 							[G.a.indicatorSelected]: t === l
 						}),
 						key: t,
@@ -2145,7 +2145,7 @@
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			var n = r("./node_modules/react/index.js"),
 				i = r.n(n),
@@ -2153,8 +2153,8 @@
 				s = r("./src/reddit/constants/elementIds.ts"),
 				o = r("./src/reddit/contexts/InsideOverlay.tsx");
 
-			function c() {
-				return (c = Object.assign || function(e) {
+			function d() {
+				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -2163,7 +2163,7 @@
 				}).apply(this, arguments)
 			}
 
-			function d(e, t) {
+			function c(e, t) {
 				const r = Object(a.a)(e, t);
 				class n extends i.a.PureComponent {
 					constructor() {
@@ -2180,13 +2180,138 @@
 						}
 					}
 					render() {
-						return i.a.createElement(r, c({}, this.props, {
+						return i.a.createElement(r, d({}, this.props, {
 							container: this.state.container,
 							excludeContainerPosition: this.props.isOverlay
 						}))
 					}
 				}
 				return Object(o.b)(n)
+			}
+		},
+		"./src/reddit/endpoints/governance/crypto.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return n
+			})), r.d(t, "j", (function() {
+				return s
+			})), r.d(t, "i", (function() {
+				return o
+			})), r.d(t, "h", (function() {
+				return d
+			})), r.d(t, "k", (function() {
+				return c
+			})), r.d(t, "l", (function() {
+				return l
+			})), r.d(t, "g", (function() {
+				return u
+			})), r.d(t, "b", (function() {
+				return m
+			})), r.d(t, "d", (function() {
+				return p
+			})), r.d(t, "c", (function() {
+				return f
+			})), r.d(t, "e", (function() {
+				return b
+			})), r.d(t, "f", (function() {
+				return h
+			})), r.d(t, "m", (function() {
+				return g
+			}));
+			var n, i = r("./src/config.ts"),
+				a = r("./src/reddit/endpoints/governance/requester.ts");
+
+			function s(e) {
+				switch (e) {
+					case n.Ethereum:
+					case n.EthTraderEthereum:
+						return "Ethereum Main Network";
+					case n.Rinkeby:
+					case n.EthTraderRinkeby:
+						return "Rinkeby Test Network"
+				}
+				return e + " Network"
+			}
+
+			function o(e) {
+				switch (e) {
+					case n.Ethereum:
+					case n.EthTraderEthereum:
+						return "https://meta-api.reddit.com/ethereum/ethereum";
+					case n.Rinkeby:
+					case n.EthTraderRinkeby:
+						return "https://meta-api.reddit.com/ethereum/rinkeby"
+				}
+				throw new Error(`No JSON RPC url for provider: ${e}`)
+			}
+
+			function d(e) {
+				switch (e) {
+					case n.Ethereum:
+					case n.EthTraderEthereum:
+						return "homestead";
+					case n.Rinkeby:
+					case n.EthTraderRinkeby:
+						return "rinkeby"
+				}
+				throw new Error(`No ethereum network for provider: ${e}`)
+			}
+			async function c(e, t, r) {
+				return Object(a.a)(e, {
+					method: "post",
+					endpoint: `${i.a.metaUrl}/crypto/${t}/challenges`,
+					data: {
+						challengeType: "registration-challenge-EIP712",
+						address: r
+					}
+				})
+			}
+			async function l(e, t, r) {
+				return await Object(a.a)(e, {
+					method: "post",
+					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations`,
+					data: r
+				})
+			}
+			async function u(e, t, r) {
+				return await Object(a.a)(e, {
+					method: "delete",
+					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations/${r}`
+				})
+			}! function(e) {
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+			}(n || (n = {}));
+			const m = (e, t, r) => ({
+					type: "burn-link",
+					subredditId: e,
+					amount: t,
+					burnMemo: r
+				}),
+				p = e => ({
+					type: "convert-to-coins",
+					subredditId: e
+				}),
+				f = e => ({
+					type: "claim",
+					subredditId: e
+				}),
+				b = e => ({
+					type: "subscribe",
+					subredditId: e
+				}),
+				h = (e, t, r, n) => ({
+					type: "transfer",
+					subredditId: e,
+					recipient: t,
+					recipientAddress: r,
+					amount: n
+				});
+			async function g(e, t) {
+				return await Object(a.a)(e, {
+					method: "put",
+					endpoint: `${i.a.metaUrl}/crypto/ethereum/transaction-intent`,
+					data: t
+				})
 			}
 		},
 		"./src/reddit/helpers/economics/membershipPage.ts": function(e, t, r) {
@@ -2228,9 +2353,9 @@
 			})), r.d(t, "f", (function() {
 				return o
 			})), r.d(t, "a", (function() {
-				return c
-			})), r.d(t, "e", (function() {
 				return d
+			})), r.d(t, "e", (function() {
+				return c
 			})), r.d(t, "c", (function() {
 				return u
 			})), r.d(t, "d", (function() {
@@ -2249,12 +2374,12 @@
 				return e && 0 === e.indexOf(i)
 			}
 
-			function c(e) {
+			function d(e) {
 				const t = e && e.media && e.media.mediaMetadata;
 				return !!t && Object.keys(t).some(o)
 			}
 
-			function d(e) {
+			function c(e) {
 				let t = e.substring(i.length);
 				return t.indexOf("|") && (t = t.split("|")[0]), `https://giphy.com/gifs/${t}`
 			}
@@ -2428,11 +2553,11 @@
 				a = r("./src/reddit/actions/economics/subredditPremium/constants.ts"),
 				s = r("./src/reddit/helpers/economics/sortBadges.ts"),
 				o = r("./src/reddit/models/Badge/index.ts"),
-				c = r("./src/reddit/models/Badge/managementPage.ts");
+				d = r("./src/reddit/models/Badge/managementPage.ts");
 			! function(e) {
 				e[e.NotFetched = 0] = "NotFetched", e[e.Fetched = 1] = "Fetched"
 			}(n || (n = {}));
-			const d = {};
+			const c = {};
 
 			function l(e) {
 				return "userId" in e
@@ -2442,7 +2567,7 @@
 				e.forEach(e => {
 					e.collections && Object.keys(e.collections).forEach(i => {
 						let a;
-						(a = e.placement ? e.placement === o.a.First ? n[c.a.Loyalty][i] : n[c.a.Achievement][i] : l(e) ? n[c.a.Cosmetic][c.c.MyBadges][i] : n[c.a.Cosmetic][c.c.Gallery][i]) && (l(e) ? r.has(e.id) && a.unlocked.push(e) : t.has(e.id) || a.locked.push(e))
+						(a = e.placement ? e.placement === o.a.First ? n[d.a.Loyalty][i] : n[d.a.Achievement][i] : l(e) ? n[d.a.Cosmetic][d.c.MyBadges][i] : n[d.a.Cosmetic][d.c.Gallery][i]) && (l(e) ? r.has(e.id) && a.unlocked.push(e) : t.has(e.id) || a.locked.push(e))
 					})
 				})
 			}
@@ -2466,11 +2591,11 @@
 
 			function f(e) {
 				const t = {
-					[c.a.Loyalty]: {},
-					[c.a.Achievement]: {},
-					[c.a.Cosmetic]: {
-						[c.c.Gallery]: {},
-						[c.c.MyBadges]: {}
+					[d.a.Loyalty]: {},
+					[d.a.Achievement]: {},
+					[d.a.Cosmetic]: {
+						[d.c.Gallery]: {},
+						[d.c.MyBadges]: {}
 					}
 				};
 				Object.keys(e.collections).forEach(r => {
@@ -2483,19 +2608,19 @@
 							title: n.title,
 							unlocked: []
 						};
-					t[c.a.Loyalty][r] = {
+					t[d.a.Loyalty][r] = {
 						...i,
 						locked: [],
 						unlocked: []
-					}, t[c.a.Achievement][r] = {
+					}, t[d.a.Achievement][r] = {
 						...i,
 						locked: [],
 						unlocked: []
-					}, t[c.a.Cosmetic][c.c.Gallery][r] = {
+					}, t[d.a.Cosmetic][d.c.Gallery][r] = {
 						...i,
 						locked: [],
 						unlocked: []
-					}, t[c.a.Cosmetic][c.c.MyBadges][r] = {
+					}, t[d.a.Cosmetic][d.c.MyBadges][r] = {
 						...i,
 						locked: [],
 						unlocked: []
@@ -2509,18 +2634,18 @@
 				const n = new Set(e.userOwnedBadges);
 				return u(Object.keys(e.badges).map(t => e.badges[t]), r, n, t), u(Object.keys(e.products).map(t => e.products[t]), r, n, t), {
 					collections: {
-						[c.a.Loyalty]: p(t[c.a.Loyalty], e.collections),
-						[c.a.Achievement]: p(t[c.a.Achievement], e.collections),
-						[c.a.Cosmetic]: {
-							[c.c.Gallery]: p(t[c.a.Cosmetic][c.c.Gallery], e.collections),
-							[c.c.MyBadges]: p(t[c.a.Cosmetic][c.c.MyBadges], e.collections)
+						[d.a.Loyalty]: p(t[d.a.Loyalty], e.collections),
+						[d.a.Achievement]: p(t[d.a.Achievement], e.collections),
+						[d.a.Cosmetic]: {
+							[d.c.Gallery]: p(t[d.a.Cosmetic][d.c.Gallery], e.collections),
+							[d.c.MyBadges]: p(t[d.a.Cosmetic][d.c.MyBadges], e.collections)
 						}
 					},
 					subscription: e.subscription,
 					userOwnedBadges: e.userOwnedBadges.map(t => e.badges[t]).filter(Boolean)
 				}
 			}
-			t.b = (e = d, t) => {
+			t.b = (e = c, t) => {
 				switch (t.type) {
 					case a.a: {
 						const {
@@ -2620,11 +2745,58 @@
 							return e
 					}
 				},
-				c = r("./src/reddit/actions/governance/constants.ts");
-			const d = {};
-			var l = (e = d, t) => {
+				d = r("./src/reddit/actions/governance/constants.ts"),
+				c = r("./src/reddit/endpoints/governance/crypto.ts");
+			const l = {},
+				u = {
+					filled: "img/communityPoints/default_filled.png",
+					grey: "img/communityPoints/default_grey.png"
+				};
+
+			function m(e) {
+				var t, r, n, i, a;
+				const s = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
+					o = null == s ? void 0 : s.contracts,
+					d = null == o ? void 0 : o.unlocked,
+					l = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
+					m = !!(null === (i = e.walletProvider) || void 0 === i ? void 0 : i.inTransition),
+					p = !m && l === c.a.Stellar,
+					f = p ? null == s ? void 0 : s.issuerAddress : null == d ? void 0 : d.address,
+					b = p ? (null == s ? void 0 : s.decimals) || 7 : (null == d ? void 0 : d.decimals) || 0;
+				return {
+					blockchainProvider: l,
+					contractAddress: f || "",
+					contracts: o,
+					decimals: b,
+					displayConversion: "1" + "0".repeat(b),
+					images: e.images || u,
+					inTransition: m,
+					name: e.name,
+					nomenclature: null === (a = e.extra) || void 0 === a ? void 0 : a.nomenclature,
+					polls: e.polls,
+					symbol: p ? (null == s ? void 0 : s.token) || "PHOTON" : (null == d ? void 0 : d.token) || ""
+				}
+			}
+			var p = (e = l, t) => {
 				switch (t.type) {
-					case c.n: {
+					case d.a: {
+						const {
+							subredditId: r,
+							meta: n
+						} = t.payload;
+						return {
+							...e,
+							[r]: m(n)
+						}
+					}
+					default:
+						return e
+				}
+			};
+			const f = {};
+			var b = (e = f, t) => {
+				switch (t.type) {
+					case d.n: {
 						const {
 							subredditId: r,
 							wallets: n
@@ -2648,7 +2820,8 @@
 			};
 			t.a = Object(n.c)({
 				claims: o,
-				publicWallets: l
+				points: p,
+				publicWallets: b
 			})
 		},
 		"./src/reddit/selectors/crypto/wallet.ts": function(e, t, r) {
@@ -2693,9 +2866,9 @@
 			})), r.d(t, "f", (function() {
 				return E
 			})), r.d(t, "i", (function() {
-				return S
-			})), r.d(t, "q", (function() {
 				return v
+			})), r.d(t, "q", (function() {
+				return S
 			})), r.d(t, "h", (function() {
 				return O
 			})), r.d(t, "y", (function() {
@@ -2713,13 +2886,13 @@
 			})), r.d(t, "p", (function() {
 				return j
 			})), r.d(t, "k", (function() {
-				return k
+				return A
 			})), r.d(t, "r", (function() {
 				return D
 			})), r.d(t, "x", (function() {
-				return B
-			})), r.d(t, "t", (function() {
 				return R
+			})), r.d(t, "t", (function() {
+				return B
 			})), r.d(t, "u", (function() {
 				return L
 			})), r.d(t, "b", (function() {
@@ -2739,8 +2912,8 @@
 				a = r("./src/reddit/helpers/richTextJson/index.ts"),
 				s = r("./src/reddit/models/Badge/index.ts"),
 				o = r("./src/reddit/models/Badge/managementPage.ts"),
-				c = r("./src/reddit/models/Gold/Powerups/index.ts"),
-				d = r("./src/reddit/models/Payments/index.ts"),
+				d = r("./src/reddit/models/Gold/Powerups/index.ts"),
+				c = r("./src/reddit/models/Payments/index.ts"),
 				l = r("./src/reddit/models/Product/index.ts"),
 				u = r("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				m = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
@@ -2794,13 +2967,13 @@
 					}
 				};
 
-			function S(e, t) {
+			function v(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(i.a)(e.map(e => t[e]).filter(Boolean)) : b
 			}
-			const v = (e, t, r) => {
+			const S = (e, t, r) => {
 					var i;
 					if (!n.d.spBadges(e)) return b;
-					return S(null === (i = e.users.appliedBadges[r]) || void 0 === i ? void 0 : i[t], e.badges.models)
+					return v(null === (i = e.users.appliedBadges[r]) || void 0 === i ? void 0 : i[t], e.badges.models)
 				},
 				O = (e, t) => {
 					const r = e.economics.subredditPremium[t.subredditId];
@@ -2826,8 +2999,8 @@
 				if (Object(s.e)(r) && r.userId === i) return r;
 				const a = e.badges.models,
 					o = e.user.ownedBadges[n] || {},
-					c = Object(s.e)(r) ? r.type : r.id;
-				return Object.keys(o).map(e => a[e]).find(e => e && e.type === c)
+					d = Object(s.e)(r) ? r.type : r.id;
+				return Object.keys(o).map(e => a[e]).find(e => e && e.type === d)
 			}
 
 			function I(e, t, r, n) {
@@ -2866,7 +3039,7 @@
 						t.push({
 							display: `${n.brand} •••• ${n.last4}`,
 							id: r,
-							type: d.a.SavedStripe
+							type: c.a.SavedStripe
 						})
 					}
 				}
@@ -2877,16 +3050,16 @@
 						"PayPal" === n.brand && t.push({
 							display: "PayPal",
 							id: n.id,
-							type: d.a.SavedPayPal
+							type: c.a.SavedPayPal
 						})
 					}
 				}
 				return t
 			};
-			var A;
+			var k;
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
-			}(A || (A = {}));
+			}(k || (k = {}));
 			const T = {
 					prices: {},
 					member: "Supporter",
@@ -2896,34 +3069,34 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				k = (e, t) => Object.values(e.products.models).filter(e => e.type === l.a.Membership && t && e.subredditId === t),
+				A = (e, t) => Object.values(e.products.models).filter(e => e.type === l.a.Membership && t && e.subredditId === t),
 				M = (e, t) => {
 					if (!t) return {};
 					const r = T.prices;
-					k(e, t).forEach(e => {
+					A(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = h(e, t);
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
 				D = (e, t) => {
-					const r = e.subreddits.gov.meta[t || ""],
-						n = r && r.extra && r.extra.nomenclature || T;
+					var r, n, i, a;
+					const s = (null === (a = null === (i = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === i ? void 0 : i[t || ""]) || void 0 === a ? void 0 : a.nomenclature) || T;
 					return {
 						prices: M(e, t),
-						member: n.member || T.member,
-						memberPlural: n.memberPlural || T.memberPlural,
-						memberAlt: n.memberAlt || T.memberAlt,
-						memberAltPlural: n.memberAltPlural || T.memberAltPlural,
-						membership: n.membership || T.membership,
-						membershipAlt: n.membershipAlt || T.membershipAlt
+						member: s.member || T.member,
+						memberPlural: s.memberPlural || T.memberPlural,
+						memberAlt: s.memberAlt || T.memberAlt,
+						memberAltPlural: s.memberAltPlural || T.memberAltPlural,
+						membership: s.membership || T.membership,
+						membershipAlt: s.membershipAlt || T.membershipAlt
 					}
 				},
-				B = e => {
+				R = e => {
 					const t = e.economics.paymentSystems;
 					return !!(t.status === u.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				R = (e, t) => {
+				B = (e, t) => {
 					const r = e.user.ownedBadges[t] || {};
 					return !!Object.keys(r).length
 				},
@@ -2948,7 +3121,7 @@
 					if (!!i && Object(a.a)(i)) return !0;
 					if (t && Object(f.o)(e, {
 							subredditId: t,
-							benefit: c.a.CommentsWithGifs
+							benefit: d.a.CommentsWithGifs
 						})) return !0;
 					const s = n.d.spGiphy(e),
 						o = G(e, t);
@@ -2995,4 +3168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.b6d14bd623a3318fccfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.483b1b6e75a850b29e70.js.map

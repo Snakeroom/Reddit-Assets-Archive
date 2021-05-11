@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.1d74858cdbb683772326.js
-// Retrieved at 5/6/2021, 1:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.4bfc7f6805b16406d159.js
+// Retrieved at 5/11/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -146,9 +146,9 @@
 						var T = u(p, f);
 						return c(t, r, e, m.placeholder, E, p, T, v, S, C - _)
 					}
-					var x = A ? E : this,
-						M = N ? x[t] : t;
-					return _ = p.length, v ? p = a(p, v) : w && _ > 1 && p.reverse(), I && S < _ && (p.length = S), this && this !== l && this instanceof m && (M = D || d(M)), M.apply(x, p)
+					var M = A ? E : this,
+						x = N ? M[t] : t;
+					return _ = p.length, v ? p = a(p, v) : w && _ > 1 && p.reverse(), I && S < _ && (p.length = S), this && this !== l && this instanceof m && (x = D || d(x)), x.apply(M, p)
 				}
 			}
 		},
@@ -1796,7 +1796,7 @@
 			})), r.d(t, "p", (function() {
 				return w
 			})), r.d(t, "k", (function() {
-				return x
+				return M
 			})), r.d(t, "r", (function() {
 				return B
 			})), r.d(t, "x", (function() {
@@ -1979,27 +1979,27 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				x = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
-				M = (e, t) => {
+				M = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
+				x = (e, t) => {
 					if (!t) return {};
 					const r = T.prices;
-					x(e, t).forEach(e => {
+					M(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = f(e, t);
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
 				B = (e, t) => {
-					const r = e.subreddits.gov.meta[t || ""],
-						n = r && r.extra && r.extra.nomenclature || T;
+					var r, n, s, o;
+					const d = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || T;
 					return {
-						prices: M(e, t),
-						member: n.member || T.member,
-						memberPlural: n.memberPlural || T.memberPlural,
-						memberAlt: n.memberAlt || T.memberAlt,
-						memberAltPlural: n.memberAltPlural || T.memberAltPlural,
-						membership: n.membership || T.membership,
-						membershipAlt: n.membershipAlt || T.membershipAlt
+						prices: x(e, t),
+						member: d.member || T.member,
+						memberPlural: d.memberPlural || T.memberPlural,
+						memberAlt: d.memberAlt || T.memberAlt,
+						memberAltPlural: d.memberAltPlural || T.memberAltPlural,
+						membership: d.membership || T.membership,
+						membershipAlt: d.membershipAlt || T.membershipAlt
 					}
 				},
 				R = e => {
@@ -2078,4 +2078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.1d74858cdbb683772326.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions~reddit-components-Econ-Prediction.4bfc7f6805b16406d159.js.map
