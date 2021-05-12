@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.2a00fdaeb2662457dcbe.js
-// Retrieved at 5/11/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.f6b53918db15a61e5354.js
+// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1486,19 +1486,24 @@
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
 			"use strict";
-			var n, o, i;
-			r.d(t, "a", (function() {
+			var n, o, i, a;
+			r.d(t, "b", (function() {
 					return o
+				})), r.d(t, "a", (function() {
+					return i
 				})),
 				function(e) {
 					e.PayPal = "paypal", e.Stripe = "stripe"
 				}(n || (n = {})),
 				function(e) {
-					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
 				}(o || (o = {})),
 				function(e) {
+					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+				}(i || (i = {})),
+				function(e) {
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
-				}(i || (i = {}))
+				}(a || (a = {}))
 		},
 		"./src/reddit/models/Product/index.ts": function(e, t, r) {
 			"use strict";
@@ -1750,7 +1755,7 @@
 			})), r.d(t, "p", (function() {
 				return T
 			})), r.d(t, "k", (function() {
-				return q
+				return S
 			})), r.d(t, "r", (function() {
 				return I
 			})), r.d(t, "x", (function() {
@@ -1933,11 +1938,11 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				q = (e, t) => Object.values(e.products.models).filter(e => e.type === d.a.Membership && t && e.subredditId === t),
-				S = (e, t) => {
+				S = (e, t) => Object.values(e.products.models).filter(e => e.type === d.a.Membership && t && e.subredditId === t),
+				q = (e, t) => {
 					if (!t) return {};
 					const r = M.prices;
-					q(e, t).forEach(e => {
+					S(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = p(e, t);
@@ -1947,7 +1952,7 @@
 					var r, n, o, i;
 					const a = (null === (i = null === (o = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === o ? void 0 : o[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || M;
 					return {
-						prices: S(e, t),
+						prices: q(e, t),
 						member: a.member || M.member,
 						memberPlural: a.memberPlural || M.memberPlural,
 						memberAlt: a.memberAlt || M.memberAlt,
@@ -2001,4 +2006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.2a00fdaeb2662457dcbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.f6b53918db15a61e5354.js.map

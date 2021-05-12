@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.842629b78436f9fb14c2.js
-// Retrieved at 5/11/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.154f0b78c6593aaf5f2d.js
+// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -585,7 +585,7 @@
 				M = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Claim/Card/index.m.less"),
 				D = n.n(M);
 
-			function F(e) {
+			function T(e) {
 				return o.a.createElement("article", {
 					className: Object(d.a)(e.className, D.a.container, {
 						[D.a.fullWidth]: !!e.fullWidth
@@ -604,7 +604,7 @@
 					onClick: e.onClaim
 				}, e.cta))
 			}
-			var T = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/models.ts"),
+			var F = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/models.ts"),
 				U = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Claim/index.m.less"),
 				L = n.n(U);
 
@@ -616,12 +616,12 @@
 					region: i,
 					userIsSubscriber: a,
 					onClaim: c
-				} = e, u = Object(T.d)({
+				} = e, u = Object(F.d)({
 					platform: n,
 					playerType: r,
 					region: i,
 					style: "bw"
-				}), l = Object(T.d)({
+				}), l = Object(F.d)({
 					platform: n,
 					playerType: r,
 					region: i,
@@ -629,7 +629,7 @@
 				});
 				return o.a.createElement("div", {
 					className: Object(d.a)(L.a.container, t)
-				}, !a && o.a.createElement(o.a.Fragment, null, o.a.createElement(F, {
+				}, !a && o.a.createElement(o.a.Fragment, null, o.a.createElement(T, {
 					className: L.a.freeCard,
 					cta: s.fbt._("claim", null, {
 						hk: "2Ru6yU"
@@ -643,7 +643,7 @@
 					className: L.a.divider
 				}, o.a.createElement("div", {
 					className: L.a.cover
-				}), "OR"), o.a.createElement(F, {
+				}), "OR"), o.a.createElement(T, {
 					className: L.a.premiumCard,
 					cta: s.fbt._("become a supporter", null, {
 						hk: "4EFiLI"
@@ -659,7 +659,7 @@
 				}), o.a.createElement("img", {
 					className: L.a.trial,
 					src: `${p.a.assetPath}/img/memberships/banners/free-trial.png`
-				})), a && o.a.createElement(F, {
+				})), a && o.a.createElement(T, {
 					fullWidth: !0,
 					className: L.a.fullWidthCard,
 					cta: s.fbt._("claim", null, {
@@ -686,9 +686,9 @@
 
 			function K() {
 				return {
-					platform: $()(Object.keys(T.a)) || "pc",
-					playerType: $()(Object.keys(T.b)) || "casual",
-					region: $()(Object.keys(T.c)) || "nae"
+					platform: $()(Object.keys(F.a)) || "pc",
+					playerType: $()(Object.keys(F.b)) || "casual",
+					region: $()(Object.keys(F.c)) || "nae"
 				}
 			}
 			class Z extends o.a.Component {
@@ -700,7 +700,7 @@
 						platform: e,
 						playerType: t,
 						region: n
-					} = this.state, r = T.a[e], i = T.b[t], a = T.c[n];
+					} = this.state, r = F.a[e], i = F.b[t], a = F.c[n];
 					return o.a.createElement("article", {
 						className: Object(d.a)(W.a.container, this.props.className)
 					}, o.a.createElement("div", {
@@ -711,7 +711,7 @@
 						hk: "1siPoi"
 					})), o.a.createElement(q.TransitionMotion, {
 						defaultStyles: [{
-							key: Object(T.d)({
+							key: Object(F.d)({
 								...this.state,
 								style: "color"
 							}),
@@ -720,7 +720,7 @@
 							}
 						}],
 						styles: [{
-							key: Object(T.d)({
+							key: Object(F.d)({
 								...this.state,
 								style: "color"
 							}),
@@ -800,15 +800,15 @@
 				ae = n("./src/reddit/components/Economics/SubredditPremium/LFGBanner/Setup/Option/index.m.less"),
 				ce = n.n(ae);
 			const de = new Map;
-			de.set(T.a, "LFG_BANNER_PLATFORM_DROPDOWN"), de.set(T.b, "LFG_BANNER_PLAYERTYPE_DROPDOWN"), de.set(T.c, "LFG_BANNER_REGION_DROPDOWN");
+			de.set(F.a, "LFG_BANNER_PLATFORM_DROPDOWN"), de.set(F.b, "LFG_BANNER_PLAYERTYPE_DROPDOWN"), de.set(F.c, "LFG_BANNER_REGION_DROPDOWN");
 			const ue = new Map;
-			ue.set(T.a, "platform"), ue.set(T.b, "playerType"), ue.set(T.c, "region");
+			ue.set(F.a, "platform"), ue.set(F.b, "playerType"), ue.set(F.c, "region");
 			const le = new Map;
-			le.set(T.a, o.a.createElement(se.a, {
+			le.set(F.a, o.a.createElement(se.a, {
 				className: ce.a.controller
-			})), le.set(T.b, o.a.createElement(ie.a, {
+			})), le.set(F.b, o.a.createElement(ie.a, {
 				className: ce.a.user
-			})), le.set(T.c, o.a.createElement(oe.a, {
+			})), le.set(F.c, o.a.createElement(oe.a, {
 				className: ce.a.planet
 			}));
 			const me = Object(ee.a)(te.a);
@@ -871,11 +871,11 @@
 							selectedPlayerType: r,
 							selectedRegion: i,
 							visibleDropdown: a
-						} = this.state, c = n ? T.a[n] : s.fbt._("platform", null, {
+						} = this.state, c = n ? F.a[n] : s.fbt._("platform", null, {
 							hk: "4cCVan"
-						}), u = r ? T.b[r] : s.fbt._("player type", null, {
+						}), u = r ? F.b[r] : s.fbt._("player type", null, {
 							hk: "20Xii5"
-						}), l = i ? T.c[i] : s.fbt._("region", null, {
+						}), l = i ? F.c[i] : s.fbt._("region", null, {
 							hk: "30zv9O"
 						});
 						return o.a.createElement("article", {
@@ -889,7 +889,7 @@
 							selected: !!i,
 							tooltipVisible: "region" === a,
 							text: l,
-							type: T.c,
+							type: F.c,
 							onChange: e => this.setState({
 								selectedRegion: e,
 								visibleDropdown: void 0
@@ -902,7 +902,7 @@
 							selected: !!n,
 							tooltipVisible: "platform" === a,
 							text: c,
-							type: T.a,
+							type: F.a,
 							onChange: e => this.setState({
 								selectedPlatform: e,
 								visibleDropdown: void 0
@@ -915,7 +915,7 @@
 							selected: !!r,
 							tooltipVisible: "playerType" === a,
 							text: u,
-							type: T.b,
+							type: F.b,
 							onChange: e => this.setState({
 								selectedPlayerType: e,
 								visibleDropdown: void 0
@@ -1760,19 +1760,24 @@
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, n) {
 			"use strict";
-			var s, r, o;
-			n.d(t, "a", (function() {
+			var s, r, o, i;
+			n.d(t, "b", (function() {
 					return r
+				})), n.d(t, "a", (function() {
+					return o
 				})),
 				function(e) {
 					e.PayPal = "paypal", e.Stripe = "stripe"
 				}(s || (s = {})),
 				function(e) {
-					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
 				}(r || (r = {})),
 				function(e) {
+					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+				}(o || (o = {})),
+				function(e) {
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
-				}(o || (o = {}))
+				}(i || (i = {}))
 		},
 		"./src/reddit/reducers/economics/paymentSystems/index.ts": function(e, t, n) {
 			"use strict";
@@ -2046,9 +2051,9 @@
 			})), n.d(t, "r", (function() {
 				return D
 			})), n.d(t, "x", (function() {
-				return F
-			})), n.d(t, "t", (function() {
 				return T
+			})), n.d(t, "t", (function() {
+				return F
 			})), n.d(t, "u", (function() {
 				return U
 			})), n.d(t, "b", (function() {
@@ -2248,11 +2253,11 @@
 						membershipAlt: i.membershipAlt || k.membershipAlt
 					}
 				},
-				F = e => {
+				T = e => {
 					const t = e.economics.paymentSystems;
 					return !!(t.status === l.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				T = (e, t) => {
+				F = (e, t) => {
 					const n = e.user.ownedBadges[t] || {};
 					return !!Object.keys(n).length
 				},
@@ -2324,4 +2329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.842629b78436f9fb14c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.154f0b78c6593aaf5f2d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.1a56b4caa86c551636df.js
-// Retrieved at 5/11/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.fb3835965d3229030cd3.js
+// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -843,19 +843,24 @@
 		},
 		"./src/reddit/models/Payments/index.ts": function(A, e, t) {
 			"use strict";
-			var n, i, r;
-			t.d(e, "a", (function() {
+			var n, i, r, s;
+			t.d(e, "b", (function() {
 					return i
+				})), t.d(e, "a", (function() {
+					return r
 				})),
 				function(A) {
 					A.PayPal = "paypal", A.Stripe = "stripe"
 				}(n || (n = {})),
 				function(A) {
-					A.NewPayPal = "new-paypal", A.NewStripe = "new-stripe", A.SavedPayPal = "saved-paypal", A.SavedStripe = "saved-stripe"
+					A.PayPal = "PAYPAL", A.Stripe = "STRIPE"
 				}(i || (i = {})),
 				function(A) {
+					A.NewPayPal = "new-paypal", A.NewStripe = "new-stripe", A.SavedPayPal = "saved-paypal", A.SavedStripe = "saved-stripe"
+				}(r || (r = {})),
+				function(A) {
 					A.Comment = "comment", A.Post = "post", A.Profile = "profile", A.Subreddit = "subreddit"
-				}(r || (r = {}))
+				}(s || (s = {}))
 		},
 		"./src/reddit/reducers/economics/paymentSystems/index.ts": function(A, e, t) {
 			"use strict";
@@ -1597,4 +1602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.1a56b4caa86c551636df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.fb3835965d3229030cd3.js.map

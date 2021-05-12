@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.af0ec958e9d2eb7101b6.js
-// Retrieved at 5/12/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.259bec76744e75a90444.js
+// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -15844,31 +15844,42 @@
 		},
 		"./src/reddit/models/Gold/ProductOffer.ts": function(e, t, n) {
 			"use strict";
-			var o, s, r;
 			n.d(t, "c", (function() {
-					return o
-				})), n.d(t, "b", (function() {
-					return s
-				})), n.d(t, "a", (function() {
-					return r
-				})), n.d(t, "d", (function() {
-					return a
-				})),
-				function(e) {
-					e.CoinConversion = "user-coins-in-subreddit", e.Powerups = "powerups", e.Premium = "premium"
-				}(o || (o = {})),
-				function(e) {
-					e.Month = "MONTH", e.Year = "YEAR"
-				}(s || (s = {})),
-				function(e) {
-					e.GildFlow = "gild_flow", e.LowCoinBalance = "low_coin_balance", e.NewUserTargetedOffer = "new_user_targeted_offer", e.RepeatUserTargetedOffer = "repeat_user_targeted_offer", e.StorefrontFreeAward = "storefront_free_award", e.CoinSale = "coin_sale", e.AvatarNewGear = "avatar_new_gear"
-				}(r || (r = {}));
-			const a = (e, t) => {
+				return o
+			})), n.d(t, "e", (function() {
+				return r
+			})), n.d(t, "b", (function() {
+				return a
+			})), n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "d", (function() {
+				return c
+			}));
+			var o, s = n("./node_modules/fbt/lib/FbtPublic.js");
+			! function(e) {
+				e.CoinConversion = "user-coins-in-subreddit", e.Powerups = "powerups", e.Premium = "premium"
+			}(o || (o = {}));
+			const r = {
+				[o.Powerups]: () => s.fbt._("Reddit - Buy Powerups", null, {
+					hk: "4sEI31"
+				}),
+				[o.Premium]: () => s.fbt._("Reddit - Buy Premium", null, {
+					hk: "19EtMU"
+				})
+			};
+			var a, i;
+			! function(e) {
+				e.Month = "MONTH", e.Year = "YEAR"
+			}(a || (a = {})),
+			function(e) {
+				e.GildFlow = "gild_flow", e.LowCoinBalance = "low_coin_balance", e.NewUserTargetedOffer = "new_user_targeted_offer", e.RepeatUserTargetedOffer = "repeat_user_targeted_offer", e.StorefrontFreeAward = "storefront_free_award", e.CoinSale = "coin_sale", e.AvatarNewGear = "avatar_new_gear"
+			}(i || (i = {}));
+			const c = (e, t) => {
 				const n = e && e.dealInfo && e.dealInfo.type,
 					o = "low_coin_upsell" === n,
 					s = "new_purchaser" === n,
-					a = "repeat_purchaser" === n;
-				return t ? r.GildFlow : o ? r.LowCoinBalance : s ? r.NewUserTargetedOffer : a ? r.RepeatUserTargetedOffer : void 0
+					r = "repeat_purchaser" === n;
+				return t ? i.GildFlow : o ? i.LowCoinBalance : s ? i.NewUserTargetedOffer : r ? i.RepeatUserTargetedOffer : void 0
 			}
 		},
 		"./src/reddit/models/ScheduledPost/index.ts": function(e, t, n) {
@@ -22272,4 +22283,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.af0ec958e9d2eb7101b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.259bec76744e75a90444.js.map
