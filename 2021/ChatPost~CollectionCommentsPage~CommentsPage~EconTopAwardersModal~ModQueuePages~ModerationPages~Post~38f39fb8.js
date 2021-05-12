@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b640f429358697559064.js
-// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0be0205a1f3c0762d65e.js
+// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1497,7 +1497,7 @@
 				d = e => e.alwaysShowChildren ? n.a.createElement(n.a.Fragment, null, e.children) : null;
 			t.b = Object(a.a)({
 				ErrorComponent: d,
-				getComponent: () => Object(o.a)(() => r.e("AuthorHovercard").then(r.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
+				getComponent: () => Object(o.a)(() => Promise.all([r.e("AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"), r.e("AuthorHovercard")]).then(r.bind(null, "./src/reddit/components/Hovercards/AuthorHovercard/_AuthorHovercard.tsx"))).then(e => e.default),
 				LoadingComponent: d
 			})
 		},
@@ -3027,16 +3027,16 @@
 					return s && s.price && s.currency && (r[s.currency] = s.price), r
 				},
 				B = (e, t) => {
-					var r, s, n, a;
-					const o = (null === (a = null === (n = null === (s = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === s ? void 0 : s.points) || void 0 === n ? void 0 : n[t || ""]) || void 0 === a ? void 0 : a.nomenclature) || N;
+					const r = e.subreddits.gov.meta[t || ""],
+						s = r && r.extra && r.extra.nomenclature || N;
 					return {
 						prices: M(e, t),
-						member: o.member || N.member,
-						memberPlural: o.memberPlural || N.memberPlural,
-						memberAlt: o.memberAlt || N.memberAlt,
-						memberAltPlural: o.memberAltPlural || N.memberAltPlural,
-						membership: o.membership || N.membership,
-						membershipAlt: o.membershipAlt || N.membershipAlt
+						member: s.member || N.member,
+						memberPlural: s.memberPlural || N.memberPlural,
+						memberAlt: s.memberAlt || N.memberAlt,
+						memberAltPlural: s.memberAltPlural || N.memberAltPlural,
+						membership: s.membership || N.membership,
+						membershipAlt: s.membershipAlt || N.membershipAlt
 					}
 				},
 				F = e => {
@@ -3140,4 +3140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b640f429358697559064.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.0be0205a1f3c0762d65e.js.map

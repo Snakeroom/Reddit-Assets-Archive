@@ -1,12 +1,12 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.8ba19909ccfd6b59f8bb.js
-// Retrieved at 5/11/2021, 6:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.5e9307c44577273e4b74.js
+// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, n) {
 			"use strict";
 
 			function s(e, t, n = 3e4, s = 3e5) {
-				return async (r, a, o) => new Promise((c, i) => {
+				return async (r, o, a) => new Promise((c, i) => {
 					const d = Date.now() + s,
 						l = () => {
 							i(new Error("Timed out while polling for success"))
@@ -14,8 +14,8 @@
 						u = async () => {
 							if (Date.now() > d) return l();
 							const s = Date.now();
-							await e(r, a, o);
-							const m = await t(a);
+							await e(r, o, a);
+							const m = await t(o);
 							if (m) c();
 							else if (!1 === m) i();
 							else {
@@ -40,22 +40,19 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
+				o = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/prettyPrintNumber/index.ts"),
 				d = n("./src/reddit/components/Governance/Token/index.tsx"),
 				l = n("./src/reddit/helpers/governance/tokens.ts"),
-				u = n("./src/reddit/selectors/crypto/points.ts"),
+				u = n("./src/reddit/selectors/gov.ts"),
 				m = n("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = n.n(m);
-			const b = Object(o.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(u.b)(e, t)
+			const b = Object(a.c)({
+				tokenDisplayConversion: u.m
 			});
-			t.a = Object(a.b)(b)((function(e) {
-				var t;
+			t.a = Object(o.b)(b)((function(e) {
 				return r.a.createElement("div", {
 					className: Object(c.a)(p.a.container, e.className, {
 						[p.a.small]: e.small
@@ -66,7 +63,7 @@
 					}),
 					grey: e.grey,
 					subredditId: e.subredditId
-				}), Object(i.a)(Object(l.b)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
+				}), Object(i.a)(Object(l.b)(e.amount, e.tokenDisplayConversion)), e.additionalText || null)
 			}))
 		},
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less": function(e, t, n) {
@@ -88,9 +85,9 @@
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
-				a = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				o = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less"),
-				c = n.n(o);
+				o = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				a = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less"),
+				c = n.n(a);
 
 			function i(e) {
 				return r.a.createElement("div", {
@@ -104,7 +101,7 @@
 					title: e.title
 				}, e.title), r.a.createElement("div", {
 					className: c.a.amountCell
-				}, r.a.createElement(a.a, {
+				}, r.a.createElement(o.a, {
 					amount: e.pointsAmount,
 					className: c.a.amount,
 					subredditId: e.subredditId
@@ -125,8 +122,8 @@
 			n.r(t);
 			var s = n("./node_modules/ethers/utils/address.js"),
 				r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				a = n("./node_modules/react/index.js"),
-				o = n.n(a),
+				o = n("./node_modules/react/index.js"),
+				a = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
 				d = n("./src/higherOrderComponents/asModal/index.tsx"),
@@ -139,130 +136,135 @@
 				f = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
 				j = n("./src/reddit/helpers/governance/tokens.ts"),
 				O = n("./src/reddit/helpers/trackers/crypto.ts"),
-				_ = n("./src/reddit/hooks/useTracking.ts"),
-				x = n("./src/reddit/models/Toast/index.ts"),
-				T = n("./src/reddit/selectors/crypto/points.ts"),
-				A = n("./src/reddit/selectors/crypto/wallet.ts"),
+				x = n("./src/reddit/hooks/useTracking.ts"),
+				_ = n("./src/reddit/models/Toast/index.ts"),
+				T = n("./src/reddit/selectors/crypto/wallet.ts"),
 				w = n("./src/reddit/selectors/gov.ts"),
-				h = n("./src/reddit/selectors/user.ts"),
-				y = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				A = n("./src/reddit/selectors/user.ts"),
+				h = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				N = n("./src/reddit/components/UserIcon/index.tsx"),
-				M = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				I = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				E = n("./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/Approval.m.less"),
-				S = n.n(E);
+				y = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				M = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
+				k = n("./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/Approval.m.less"),
+				E = n.n(k);
 			const {
-				fbt: g
+				fbt: I
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function D(e) {
+			function S(e) {
 				const {
 					recipient: t
-				} = e, n = Object(c.e)(h.i);
-				return o.a.createElement(I.a, {
+				} = e, n = Object(c.e)(A.i);
+				return a.a.createElement(M.a, {
 					subredditId: e.subredditId,
-					image: o.a.createElement(N.a, {
-						className: S.a.userIcon,
+					image: a.a.createElement(N.a, {
+						className: E.a.userIcon,
 						isNSFW: !1,
 						userName: t
 					}),
-					title: g._("Transfer to {recipient}", [g._param("recipient", t === e.recipientAddress ? t : "u/" + t)], {
+					title: I._("Transfer to {recipient}", [I._param("recipient", t === e.recipientAddress ? t : "u/" + t)], {
 						hk: "xSmPq"
 					}),
-					subtitle: n && n.displayText ? g._("From {currentUsername}", [g._param("currentUsername", "u/" + n.displayText)], {
+					subtitle: n && n.displayText ? I._("From {currentUsername}", [I._param("currentUsername", "u/" + n.displayText)], {
 						hk: "onO9l"
 					}) : null,
 					pointsAmount: e.transferAmount
 				})
 			}
-			const k = e => o.a.createElement(M.b, {
+			const g = e => a.a.createElement(y.b, {
 				values: [
-					[Object(M.c)(), e.recipientAddress],
-					[Object(M.a)(), e.transaction.contractAddress]
+					[Object(y.c)(), e.recipientAddress],
+					[Object(y.a)(), e.transaction.contractAddress]
 				]
 			});
 			t.default = Object(d.a)((function(e) {
+				var t, n;
 				const {
-					onClose: t,
-					recipient: n,
-					subredditId: a,
-					transferAmount: d
-				} = e, N = Object(c.d)(), M = Object(_.a)(), I = Object(c.e)(e => Object(h.mb)(e, {
-					userName: n
+					onClose: o,
+					recipient: d,
+					subredditId: N,
+					transferAmount: y
+				} = e, M = Object(c.d)(), k = Object(x.a)(), E = Object(c.e)(e => Object(A.mb)(e, {
+					userName: d
 				})), {
-					currentPointsAmount: E,
-					pointsDetails: S,
-					recipientWallet: g
+					currentPointsAmount: I,
+					pointsName: C,
+					recipientWallet: D,
+					tokenConversion: G,
+					walletProvider: F
 				} = Object(c.e)(Object(i.c)({
-					currentPointsAmount: t => Object(w.e)(t, e),
-					pointsDetails: t => Object(T.b)(t, e.subredditId),
-					recipientWallet: e => I && Object(A.c)(e, {
-						subredditId: a,
-						userId: I.id
-					})
-				})), G = null == S ? void 0 : S.contractAddress;
-				if (!S || !G) throw new Error("No token contract address");
-				const C = function(e, t) {
+					currentPointsAmount: t => Object(w.h)(t, e),
+					pointsName: t => Object(w.n)(t, e),
+					recipientWallet: e => E && Object(T.c)(e, {
+						subredditId: N,
+						userId: E.id
+					}),
+					tokenConversion: t => Object(w.m)(t, e),
+					walletProvider: t => Object(w.r)(t, e)
+				}));
+				if (!F) throw new Error("No wallet provider");
+				const P = null === (n = null === (t = F.extra) || void 0 === t ? void 0 : t.contracts) || void 0 === n ? void 0 : n.unlocked.address;
+				if (!P) throw new Error("No token contract address");
+				const L = function(e, t) {
 						const n = null == t ? void 0 : t.publicAddress;
 						if (n) return n;
 						try {
 							if (!!Object(s.getAddress)(e)) return e
 						} catch {}
 						throw new Error("No recipient address found for points transfer")
-					}(n, g),
-					F = Object(v.e)(G, C, d),
-					L = Object(j.b)(d, S.displayConversion),
-					P = e => {
-						M(Object(O.a)("transfer", a, L, e))
-					},
-					U = S.name;
-				return o.a.createElement(y.a, {
-					approvalOverview: o.a.createElement(D, {
-						subredditId: a,
-						recipient: n,
-						recipientAddress: C,
-						transferAmount: d
+					}(d, D),
+					U = Object(v.e)(P, L, y),
+					Y = Object(j.b)(y, G),
+					H = e => {
+						k(Object(O.a)("transfer", N, Y, e))
+					};
+				return a.a.createElement(h.a, {
+					approvalOverview: a.a.createElement(S, {
+						subredditId: N,
+						recipient: d,
+						recipientAddress: L,
+						transferAmount: y
 					}),
-					approvalDetails: o.a.createElement(k, {
-						transaction: F,
-						recipientAddress: C
+					approvalDetails: a.a.createElement(g, {
+						transaction: U,
+						recipientAddress: L
 					}),
-					onClose: t,
+					onClose: o,
 					onTransactionSuccess: async e => {
-						t(), N(function(e) {
+						o(), M(function(e) {
 							return Object(m.f)(Object(m.e)(r.fbt._("Sending your {pointsName}...", [r.fbt._param("pointsName", e)], {
 								hk: "2LuiyB"
-							}), x.b.SuccessCommunity))
-						}(U)), async function(e, t, n, s, r, a) {
+							}), _.b.SuccessCommunity))
+						}(C)), async function(e, t, n, s, r, o) {
 							await Object(f.a)(t, n), await e(Object(p.a)(Object(l.h)({
 								subredditId: s
 							}), async e => {
-								const t = Object(w.e)(e(), {
+								const t = Object(w.h)(e(), {
 									subredditId: s
 								});
 								return r !== t || null
-							})), a && e(Object(u.a)({
+							})), o && e(Object(u.a)({
 								subredditId: s,
-								userIds: [a]
+								userIds: [o]
 							}))
-						}(N, S, e.hash, a, E, null == I ? void 0 : I.id).then(() => {
-							M(Object(O.b)("transfer", a, L)), N(function(e) {
+						}(M, F, e.hash, N, I, null == E ? void 0 : E.id).then(() => {
+							k(Object(O.b)("transfer", N, Y)), M(function(e) {
 								return Object(m.f)(Object(m.e)(r.fbt._("Your {pointsName} were sent!", [r.fbt._param("pointsName", e)], {
 									hk: "4yssJA"
-								}), x.b.SuccessCommunityGreen))
-							}(U))
+								}), _.b.SuccessCommunityGreen))
+							}(C))
 						}).catch(e => {
-							P(e.toString()), N(function(e) {
+							H(e.toString()), M(function(e) {
 								return Object(m.f)(Object(m.e)(r.fbt._("Failed to send your {pointsName}. Try again later", [r.fbt._param("pointsName", e)], {
 									hk: "yeMQh"
-								}), x.b.Error))
-							}(U))
+								}), _.b.Error))
+							}(C))
 						})
 					},
-					onTransactionFailure: P,
-					subredditId: a,
-					transaction: F,
-					transactionIntent: Object(b.f)(a, n, C, d)
+					onTransactionFailure: H,
+					subredditId: N,
+					transaction: U,
+					transactionIntent: Object(b.f)(N, d, L, y)
 				})
 			}))
 		},
@@ -282,4 +284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.8ba19909ccfd6b59f8bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.5e9307c44577273e4b74.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.5d75b602acbadf72bec1.js
-// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.77e522379e9677b4614f.js
+// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1946,16 +1946,16 @@
 					return r && r.price && r.currency && (s[r.currency] = r.price), s
 				},
 				L = (e, t) => {
-					var s, r, n, o;
-					const a = (null === (o = null === (n = null === (r = null === (s = e.features) || void 0 === s ? void 0 : s.crypto) || void 0 === r ? void 0 : r.points) || void 0 === n ? void 0 : n[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || S;
+					const s = e.subreddits.gov.meta[t || ""],
+						r = s && s.extra && s.extra.nomenclature || S;
 					return {
 						prices: P(e, t),
-						member: a.member || S.member,
-						memberPlural: a.memberPlural || S.memberPlural,
-						memberAlt: a.memberAlt || S.memberAlt,
-						memberAltPlural: a.memberAltPlural || S.memberAltPlural,
-						membership: a.membership || S.membership,
-						membershipAlt: a.membershipAlt || S.membershipAlt
+						member: r.member || S.member,
+						memberPlural: r.memberPlural || S.memberPlural,
+						memberAlt: r.memberAlt || S.memberAlt,
+						memberAltPlural: r.memberAltPlural || S.memberAltPlural,
+						membership: r.membership || S.membership,
+						membershipAlt: r.membershipAlt || S.membershipAlt
 					}
 				},
 				N = e => {
@@ -2003,4 +2003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.5d75b602acbadf72bec1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.77e522379e9677b4614f.js.map

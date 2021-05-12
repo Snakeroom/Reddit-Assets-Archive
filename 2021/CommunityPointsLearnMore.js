@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.f6b53918db15a61e5354.js
-// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b86942be243cdd7f2e6e.js
+// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1949,16 +1949,16 @@
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
 				I = (e, t) => {
-					var r, n, o, i;
-					const a = (null === (i = null === (o = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === o ? void 0 : o[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || M;
+					const r = e.subreddits.gov.meta[t || ""],
+						n = r && r.extra && r.extra.nomenclature || M;
 					return {
 						prices: q(e, t),
-						member: a.member || M.member,
-						memberPlural: a.memberPlural || M.memberPlural,
-						memberAlt: a.memberAlt || M.memberAlt,
-						memberAltPlural: a.memberAltPlural || M.memberAltPlural,
-						membership: a.membership || M.membership,
-						membershipAlt: a.membershipAlt || M.membershipAlt
+						member: n.member || M.member,
+						memberPlural: n.memberPlural || M.memberPlural,
+						memberAlt: n.memberAlt || M.memberAlt,
+						memberAltPlural: n.memberAltPlural || M.memberAltPlural,
+						membership: n.membership || M.membership,
+						membershipAlt: n.membershipAlt || M.membershipAlt
 					}
 				},
 				L = e => {
@@ -2006,4 +2006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.f6b53918db15a61e5354.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b86942be243cdd7f2e6e.js.map
