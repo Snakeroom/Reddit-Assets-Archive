@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.867c539295240b8cf926.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d836cbc6fb8de4598e84.js
+// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -21555,14 +21555,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Hc
-					}) === o.Rc.Enabled
+						experimentName: o.Fc
+					}) === o.Pc.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Gc
-					}) === o.Qc.Enabled
+						experimentName: o.Ec
+					}) === o.Oc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -22279,4 +22279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.867c539295240b8cf926.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d836cbc6fb8de4598e84.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.f133fda9b03074f6b64a.js
-// Retrieved at 5/5/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.7ef6927cc477ba9ece87.js
+// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -21,7 +21,7 @@
 			const b = () => async (e, t) => {
 				const n = t();
 				if (!(Object(p.J)(n) || Object(p.I)(n))) return Object(d.a)(e, n);
-				Object(m.c)(n) ? (e(g()), e(f()), await e(h())) : e(Object(a.c)("/"))
+				Object(m.b)(n) ? (e(g()), e(f()), await e(h())) : e(Object(a.c)("/"))
 			}, g = () => Object(i.k)({
 				actionSource: i.a.NotificationsInbox,
 				redirectUrl: l.b
@@ -32,7 +32,7 @@
 					a = Object(u.g)(t()),
 					s = !(!a || !a.length),
 					i = Object(p.J)(n) || Object(p.I)(n);
-				if (s || !i || !Object(m.c)(n)) return;
+				if (s || !i || !Object(m.b)(n)) return;
 				const o = {
 					first: 10
 				};
@@ -483,11 +483,11 @@
 				earlierNotifications: w.b,
 				hasNextPage: w.d,
 				inboxBadgeCount: S.g,
-				isInboxPostEmbedEnabled: T.b,
+				isInboxPostEmbedEnabled: T.a,
 				isPending: w.e,
 				todayNotifications: w.h
 			});
-			var A = Object(d.b)(P, e => ({
+			var F = Object(d.b)(P, e => ({
 					clearMessageTabBadgeCount: () => e(Object(m.b)()),
 					disableNotificationUpdates: t => e(Object(u.c)(t)),
 					blockAwarder: t => e(Object(u.a)(t)),
@@ -502,7 +502,7 @@
 					},
 					updateInboxActivitySeenState: () => e(Object(u.i)())
 				}))(I),
-				F = n("./node_modules/fbt/lib/FbtPublic.js"),
+				A = n("./node_modules/fbt/lib/FbtPublic.js"),
 				M = n("./src/reddit/components/BadgeCounter/index.tsx"),
 				R = n("./src/reddit/components/TabNav/index.tsx"),
 				B = n("./src/reddit/controls/InternalLink/index.tsx"),
@@ -517,59 +517,57 @@
 				X = g.a.wrapped(R.a, "Tab", z.a);
 			var q = e => {
 				const {
-					isInboxMarkAllAsReadEnabled: t,
-					messagesTabBadgeCount: n,
-					notificationsTabBadgeCount: a
-				} = e, i = Object(U.a)(), r = !!n;
+					messagesTabBadgeCount: t,
+					notificationsTabBadgeCount: n
+				} = e, a = Object(U.a)(), i = !!t;
 				return s.a.createElement("div", {
 					className: z.a.navContainer
 				}, s.a.createElement("h1", {
 					className: z.a.navHeader
-				}, F.fbt._("Notifications", null, {
+				}, A.fbt._("Notifications", null, {
 					hk: "18kEAD"
 				})), s.a.createElement("nav", {
 					className: z.a.navBar
 				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(X, {
 					active: !0,
 					to: "/notifications"
-				}, F.fbt._("Activity", null, {
+				}, A.fbt._("Activity", null, {
 					hk: "24wHCv"
 				})), s.a.createElement(Q, {
-					isActive: !!a,
-					unreadCount: a
+					isActive: !!n,
+					unreadCount: n
 				})), s.a.createElement("li", null, s.a.createElement(X, {
 					active: !1,
 					onMouseDown: () => {
-						i(Object(x.m)({
-							badgeCount: n + a,
+						a(Object(x.m)({
+							badgeCount: t + n,
 							tab: x.d.Messages
 						})), e.clearMessageTabBadgeCount()
 					},
-					to: r ? "/message/unread" : "/message/messages"
-				}, F.fbt._("Messages", null, {
+					to: i ? "/message/unread" : "/message/messages"
+				}, A.fbt._("Messages", null, {
 					hk: "Xl3Wz"
 				})), s.a.createElement(Q, {
-					isActive: r,
-					unreadCount: n
-				})), t && s.a.createElement("li", null, s.a.createElement("button", {
+					isActive: i,
+					unreadCount: t
+				})), s.a.createElement("li", null, s.a.createElement("button", {
 					className: z.a.navLink,
 					onClick: () => {
-						e.markAllAsRead(), i(Object(x.e)({
+						e.markAllAsRead(), a(Object(x.e)({
 							isMiniInbox: !1
 						}))
 					}
-				}, s.a.createElement(D, null), F.fbt._("Mark as read", null, {
+				}, s.a.createElement(D, null), A.fbt._("Mark as read", null, {
 					hk: "3IycES"
 				}))), s.a.createElement("li", null, s.a.createElement(B.a, {
 					className: z.a.navLink,
-					onClick: () => i(Object(x.k)(x.a.Inbox)),
+					onClick: () => a(Object(x.k)(x.a.Inbox)),
 					to: "/settings/notifications"
-				}, s.a.createElement(J, null), F.fbt._("Settings", null, {
+				}, s.a.createElement(J, null), A.fbt._("Settings", null, {
 					hk: "1e9Jn"
 				}))))))
 			};
 			const K = Object(l.c)({
-				isInboxMarkAllAsReadEnabled: T.a,
 				messagesTabBadgeCount: S.h,
 				notificationsTabBadgeCount: S.a
 			});
@@ -584,7 +582,7 @@
 				render() {
 					return s.a.createElement(i.a, null, s.a.createElement(c.a, {
 						contentClassName: Z.a.contentClassName,
-						content: s.a.createElement(A, null),
+						content: s.a.createElement(F, null),
 						disableFullscreen: !0,
 						navBar: s.a.createElement(Y, null)
 					}))
@@ -594,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.f133fda9b03074f6b64a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.7ef6927cc477ba9ece87.js.map

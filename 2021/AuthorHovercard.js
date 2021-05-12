@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.fd91bba8c3cd3af7c40c.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.83262e6bdaab516a19f5.js
+// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -140,8 +140,8 @@
 				}),
 				N = Object(o.a)(l.c),
 				A = Object(o.a)(l.b),
-				R = Object(o.a)(l.a),
-				T = Object(o.a)(l.h),
+				T = Object(o.a)(l.a),
+				R = Object(o.a)(l.h),
 				L = (Object(o.a)(l.i), Object(o.a)(l.g), () => async (e, t, {
 					gqlContext: n
 				}) => {
@@ -152,7 +152,7 @@
 					if (s.ok) {
 						const t = O(s.body.data);
 						e(N(t))
-					} else e(R({
+					} else e(T({
 						error: s.error
 					}))
 				}),
@@ -184,7 +184,7 @@
 						}
 						if (!e.length && !v.length) return
 					}
-					if (o(T({
+					if (o(R({
 							identifiers: v,
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
@@ -226,7 +226,7 @@
 							})
 						}))
 					} else {
-						o(T({
+						o(R({
 							identifiers: v,
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
@@ -609,24 +609,23 @@
 				}).apply(this, arguments)
 			}
 			const A = [],
-				R = a.a.div("StyledDropdown", p.a),
-				T = a.a.wrapped(S.a, "Gear", p.a),
+				T = a.a.div("StyledDropdown", p.a),
+				R = a.a.wrapped(S.a, "Gear", p.a),
 				L = a.a.wrapped(k.a, "MarkAsRead", p.a),
 				F = ({
 					onMessagesClick: e,
 					onBarClick: t,
 					markAllAsRead: n,
 					messagesBadgeCount: a,
-					isInboxMarkAllAsReadEnabled: d,
-					sendInboxClickSettings: l
+					sendInboxClickSettings: d
 				}) => {
-					const u = !!a,
-						f = Object(s.useCallback)(() => {
+					const l = !!a,
+						u = Object(s.useCallback)(() => {
 							e(), t()
 						}, [e, t]),
-						m = Object(s.useCallback)(() => {
-							l(), t()
-						}, [l, t]);
+						f = Object(s.useCallback)(() => {
+							d(), t()
+						}, [d, t]);
 					return o.a.createElement("nav", {
 						className: p.a.topNav
 					}, o.a.createElement("span", {
@@ -639,24 +638,24 @@
 						className: p.a.messagesLinkContainer
 					}, o.a.createElement(y.a, {
 						className: Object(r.a)(p.a.messagesLink, {
-							[p.a.mActive]: u
+							[p.a.mActive]: l
 						}),
-						onClick: f,
-						to: u ? "/message/unread" : "/message/messages"
+						onClick: u,
+						to: l ? "/message/unread" : "/message/messages"
 					}, i.fbt._("Messages", null, {
 						hk: "hulKY"
 					})), o.a.createElement(c.a, {
 						className: p.a.badgeCount,
-						isActive: u,
+						isActive: l,
 						unreadCount: a
-					})), d && o.a.createElement("button", {
+					})), o.a.createElement("button", {
 						className: p.a.navLink,
 						onClick: n
 					}, o.a.createElement(L, null)), o.a.createElement(y.a, {
 						className: p.a.navLink,
-						onClick: m,
+						onClick: f,
 						to: "/settings/notifications"
-					}, o.a.createElement(T, null))))
+					}, o.a.createElement(R, null))))
 				},
 				B = e => o.a.createElement("div", {
 					className: p.a.bottomBar
@@ -674,23 +673,21 @@
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: i,
-							isInboxMarkAllAsReadEnabled: s,
-							isPending: r,
-							messagesBadgeCount: a,
-							notifications: c,
-							hideTooltip: d
+							isPending: s,
+							messagesBadgeCount: r,
+							notifications: a,
+							hideTooltip: c
 						} = e,
-						l = !(!c || !c.length);
-					return o.a.createElement(R, null, o.a.createElement("div", {
+						d = !(!a || !a.length);
+					return o.a.createElement(T, null, o.a.createElement("div", {
 						className: p.a.tooltipContainer
 					}, o.a.createElement(F, {
-						isInboxMarkAllAsReadEnabled: s,
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(j.e)({
 								isMiniInbox: !0
 							}))
 						},
-						messagesBadgeCount: a,
+						messagesBadgeCount: r,
 						onMessagesClick: () => {
 							t(Object(j.m)({
 								badgeCount: i,
@@ -698,13 +695,13 @@
 							})), t(Object(j.f)()), n()
 						},
 						sendInboxClickSettings: () => t(Object(j.k)(j.a.MiniInbox)),
-						onBarClick: d
+						onBarClick: c
 					}), o.a.createElement(w, N({}, e, {
-						isPending: r,
-						onItemClick: d
-					})), (l || r) && o.a.createElement(B, {
+						isPending: s,
+						onItemClick: c
+					})), (d || s) && o.a.createElement(B, {
 						sendInboxClickSeeAll: () => t(Object(j.j)()),
-						onBarClick: d
+						onBarClick: c
 					})))
 				}
 		},
@@ -1532,4 +1529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.fd91bba8c3cd3af7c40c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.83262e6bdaab516a19f5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.e99035a5dbdcd9849e7f.js
-// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f3b4bb184e119e23c0f5.js
+// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -31,9 +31,9 @@
 			})), s.d(t, "a", (function() {
 				return X
 			})), s.d(t, "b", (function() {
-				return Q
-			})), s.d(t, "n", (function() {
 				return J
+			})), s.d(t, "n", (function() {
+				return Q
 			})), s.d(t, "c", (function() {
 				return q
 			})), s.d(t, "k", (function() {
@@ -216,7 +216,7 @@
 					})), 0 === s && o(i, !0), Object(m.d)()
 				}, Z = Object(a.a)(E.r), X = e => t => t(Z({
 					draftKey: e
-				})), Q = Object(a.a)(E.a), J = Object(a.a)(E.E), q = Object(a.a)(E.b), $ = Object(a.a)(E.u)
+				})), J = Object(a.a)(E.a), Q = Object(a.a)(E.E), q = Object(a.a)(E.b), $ = Object(a.a)(E.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -2205,14 +2205,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Hc
-					}) === o.Rc.Enabled
+						experimentName: o.Fc
+					}) === o.Pc.Enabled
 				},
 				a = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Gc
-					}) === o.Qc.Enabled
+						experimentName: o.Ec
+					}) === o.Oc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -2241,4 +2241,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.e99035a5dbdcd9849e7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f3b4bb184e119e23c0f5.js.map

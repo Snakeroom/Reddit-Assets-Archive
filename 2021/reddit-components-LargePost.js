@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.51d0337c52abce79f839.js
-// Retrieved at 5/11/2021, 1:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c16aa6f98311de228e3.js
+// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2348,7 +2348,7 @@
 						postId: ke,
 						postIds: _e,
 						onceInViewport: Pe
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Ce = Ee ? void 0 : m, Se = Object(d.a)(ae), Te = ce && Se, Ne = Object(a.a)(ae), Me = Object(c.a)(ae), Ie = Object(F.c)(me), Ae = !!me.media && me.media.type === h.o.RTJSON, Le = we && Ae, Be = n ? n - W.a : void 0, Fe = !(z && q || te), Re = (e => e === $.Lc.OnlyTitles)(be) && !Object(oe.a)(me), De = (e => e === $.Lc.MediumHeight)(be) && !Object(oe.a)(me), We = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Ce = Ee ? void 0 : m, Se = Object(d.a)(ae), Te = ce && Se, Ne = Object(a.a)(ae), Me = Object(c.a)(ae), Ie = Object(F.c)(me), Ae = !!me.media && me.media.type === h.o.RTJSON, Le = we && Ae, Be = n ? n - W.a : void 0, Fe = !(z && q || te), Re = (e => e === $.Jc.OnlyTitles)(be) && !Object(oe.a)(me), De = (e => e === $.Jc.MediumHeight)(be) && !Object(oe.a)(me), We = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2363,7 +2363,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), He = !!ne && !Object($.Hd)(ne), Ve = (!w || He) && !me.isSponsored, ze = Object(_.t)(me, O), {
+					})(e), He = !!ne && !Object($.Fd)(ne), Ve = (!w || He) && !me.isSponsored, ze = Object(_.t)(me, O), {
 						source: Ue
 					} = ze, qe = Object(o.useRef)(null), Ze = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3748,9 +3748,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.rb
 				});
-				return !(!t || Object(o.Hd)(t))
+				return !(!t || Object(o.Fd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.51d0337c52abce79f839.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c16aa6f98311de228e3.js.map
