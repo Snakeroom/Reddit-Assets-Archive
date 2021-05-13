@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4a876984ec326e30963a.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.6674e47aea3af4db8e5e.js
+// Retrieved at 5/13/2021, 4:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -1270,7 +1270,7 @@
 				eventSource: t
 			}) => ({
 				openCommunityCreation: n => {
-					n(Object(h.b)(t)), e(Object(b.a)("/subreddits/create"))
+					n(Object(h.c)(t)), e(Object(b.a)("/subreddits/create"))
 				},
 				onShowTooltip: () => e(Object(d.f)({
 					tooltipId: y
@@ -5174,4 +5174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4a876984ec326e30963a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.6674e47aea3af4db8e5e.js.map

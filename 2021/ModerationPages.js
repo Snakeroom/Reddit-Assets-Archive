@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.4d3a2c427240a9dae712.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2402017e1a288cbb56bf.js
+// Retrieved at 5/13/2021, 4:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -8383,7 +8383,7 @@
 				eventSource: t
 			}) => ({
 				openCommunityCreation: s => {
-					s(Object(b.b)(t)), e(Object(h.a)("/subreddits/create"))
+					s(Object(b.c)(t)), e(Object(h.a)("/subreddits/create"))
 				},
 				onShowTooltip: () => e(Object(d.f)({
 					tooltipId: C
@@ -24451,7 +24451,7 @@
 						hk: "SlFa7"
 					}), i && o.a.createElement(Ce, {
 						onClick: () => {
-							h(Object(U.a)()), u(t.state[I.a.CloseLocation])
+							h(Object(U.b)()), u(t.state[I.a.CloseLocation])
 						}
 					})), b ? o.a.createElement("h2", {
 						className: le.a.sublabel
@@ -24566,7 +24566,7 @@
 						disabled: s,
 						className: le.a.createButton,
 						onClick: () => {
-							u(t.state[I.a.CloseLocation]), h(Object(U.a)())
+							u(t.state[I.a.CloseLocation]), h(Object(U.b)())
 						},
 						priority: T.b.Secondary
 					}, n.fbt._("Cancel", null, {
@@ -24830,4 +24830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.4d3a2c427240a9dae712.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2402017e1a288cbb56bf.js.map

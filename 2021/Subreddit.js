@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.255152c8a490bc9ec6aa.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.257e994bdec80e6940a9.js
+// Retrieved at 5/13/2021, 4:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -5176,14 +5176,16 @@
 		},
 		"./src/reddit/helpers/trackers/subredditCreation.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return a
-			})), n.d(t, "c", (function() {
-				return o
-			})), n.d(t, "a", (function() {
-				return i
 			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "e", (function() {
 				return c
+			})), n.d(t, "a", (function() {
+				return d
 			}));
 			var s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -5234,6 +5236,13 @@
 						settingValue: t
 					}),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
+				}),
+				d = () => e => ({
+					source: "user_dropdown",
+					noun: "create_community",
+					action: "click",
+					...r.defaults(e),
+					actionInfo: r.actionInfo(e)
 				})
 		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, n) {
@@ -7321,4 +7330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.255152c8a490bc9ec6aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.257e994bdec80e6940a9.js.map

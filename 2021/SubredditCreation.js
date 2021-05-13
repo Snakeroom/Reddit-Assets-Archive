@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.ff8f5600ffbba2372ad5.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.a7fc2493f7c7ba076322.js
+// Retrieved at 5/13/2021, 4:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2982,7 +2982,7 @@
 						hk: "SlFa7"
 					}), r && o.a.createElement(Oe, {
 						onClick: () => {
-							h(Object(A.a)()), p(t.state[I.a.CloseLocation])
+							h(Object(A.b)()), p(t.state[I.a.CloseLocation])
 						}
 					})), x ? o.a.createElement("h2", {
 						className: ce.a.sublabel
@@ -3097,7 +3097,7 @@
 						disabled: n,
 						className: ce.a.createButton,
 						onClick: () => {
-							p(t.state[I.a.CloseLocation]), h(Object(A.a)())
+							p(t.state[I.a.CloseLocation]), h(Object(A.b)())
 						},
 						priority: j.b.Secondary
 					}, s.fbt._("Cancel", null, {
@@ -3133,4 +3133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ff8f5600ffbba2372ad5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.a7fc2493f7c7ba076322.js.map
