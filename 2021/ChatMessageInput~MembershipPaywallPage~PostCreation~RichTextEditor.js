@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4f42c142d7655adfa7a8.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.6491afdec8fc532a96ad.js
+// Retrieved at 5/13/2021, 10:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -4859,7 +4859,15 @@
 					}))
 				};
 			var Ho = t => {
-				return !!t.getCurrentContent().getBlockMap().filter(t => !!t && t.getType() === k.a).size
+				const e = t.getCurrentContent();
+				return e.getBlockMap().some(t => {
+					if ((null == t ? void 0 : t.getType()) === k.a) return !0;
+					let n = !1;
+					return null == t || t.findEntityRanges(t => {
+						const n = t.getEntity();
+						return !!n && e.getEntity(n).getType() === K.a.EMOTE
+					}, () => n = !0), n
+				})
 			};
 			const zo = " ".repeat(4),
 				Vo = new RegExp("^ {1,4}|\\t"),
@@ -8545,4 +8553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.4f42c142d7655adfa7a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.6491afdec8fc532a96ad.js.map
