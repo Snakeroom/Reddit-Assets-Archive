@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.4a35bc1de8ad0c132cdf.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.4a5d0a26a96d3deb2e2e.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -520,7 +520,7 @@
 							method: o.eb.PUT
 						}))(d(), O, b);
 					if (y.ok) {
-						const n = Object(k.K)(c, {
+						const n = Object(k.L)(c, {
 								identifier: t
 							}) || e && e.id || "",
 							d = s.map(e => Object(v.h)(m, e));
@@ -961,7 +961,7 @@
 			const h = b.a.wrapped(l.b, "SubredditIcon", p.a),
 				f = b.a.span("Label", p.a),
 				x = Object(c.c)({
-					subredditOrProfile: u.L
+					subredditOrProfile: u.M
 				});
 			var E = Object(a.b)(x)(({
 				children: e,
@@ -2582,4 +2582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.4a35bc1de8ad0c132cdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.4a5d0a26a96d3deb2e2e.js.map

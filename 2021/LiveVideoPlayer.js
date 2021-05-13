@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.5fcbd92014987a00ee19.js
-// Retrieved at 5/5/2021, 2:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.30ef26953149970b5c4a.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -116,10 +116,10 @@
 				M = s("./src/reddit/selectors/subreddit.ts"),
 				j = s("./src/reddit/selectors/subscriptions.ts"),
 				E = s("./src/reddit/selectors/user.ts");
-			const L = () => i.fbt._("Sorry, failed to update favorites.", null, {
+			const P = () => i.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
-				P = Object(o.a)(c.c),
+				L = Object(o.a)(c.c),
 				I = Object(o.a)(c.b),
 				T = Object(o.a)(c.a),
 				V = Object(o.a)(c.h),
@@ -132,7 +132,7 @@
 					const n = await (e => Object(f.a)(e, v))(s());
 					if (n.ok) {
 						const t = w(n.body.data);
-						e(P(t))
+						e(L(t))
 					} else e(T({
 						error: n.error
 					}))
@@ -225,7 +225,7 @@
 					apiContext: i
 				}) => {
 					const o = s(),
-						a = Object(M.L)(o, {
+						a = Object(M.M)(o, {
 							identifier: e
 						});
 					if (!a) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -247,7 +247,7 @@
 							type: e.type,
 							name: a.name
 						},
-						O = () => Object(M.gb)(s(), {
+						O = () => Object(M.hb)(s(), {
 							identifier: S
 						});
 					(O() || (await t(k([S], !0)), O())) && ((await ((e, t, s) => Object(m.a)(Object(p.a)(e, [b.a]), {
@@ -264,7 +264,7 @@
 						subredditModels: C,
 						profileModels: g
 					})), t(Object(u.f)({
-						text: L(),
+						text: P(),
 						kind: x.b.Error
 					}))))
 				}, D = Object(o.a)(c.d), A = e => async (t, s, {
@@ -273,7 +273,7 @@
 					const o = s().multireddits.models,
 						a = () => {
 							t(Object(u.f)({
-								text: L(),
+								text: P(),
 								kind: x.b.Error
 							}))
 						},
@@ -434,8 +434,8 @@
 				M = s("./src/reddit/selectors/media.ts"),
 				j = s("./src/reddit/selectors/platform.ts"),
 				E = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				L = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				P = s("./src/reddit/selectors/user.ts"),
+				P = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				L = s("./src/reddit/selectors/user.ts"),
 				I = s("./src/reddit/selectors/video.ts"),
 				T = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
 				V = s.n(T);
@@ -444,14 +444,14 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = Object(l.a)(f.a, {
 				playerName: "RPAN Listing Player"
 			}), k = 3e3, H = Object(d.c)({
-				autoplay: P.b,
+				autoplay: L.b,
 				isOverlayOpen: j.h,
 				mutedInFeed: I.i,
 				unavailableVideoUrl: E.o,
 				volumeInFeed: M.d,
 				currentStream: (e, {
 					postId: t
-				}) => Object(L.l)(e, t)
+				}) => Object(P.l)(e, t)
 			}), U = Object(r.b)(H, (e, t) => ({
 				setMutedInFeed: t => e(Object(v.G)(t)),
 				setVideoVolume: t => e(Object(m.h)(t)),
@@ -1040,4 +1040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.5fcbd92014987a00ee19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.30ef26953149970b5c4a.js.map

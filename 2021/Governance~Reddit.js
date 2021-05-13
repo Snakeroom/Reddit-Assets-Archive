@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.835c80cad80d55849085.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.5654fd063a09820f1925.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1378,7 +1378,7 @@
 					subredditId: t
 				}) => async (r, s, a) => {
 					const n = s(),
-						l = Object(g.T)(n, {
+						l = Object(g.U)(n, {
 							subredditId: t
 						}).name;
 					r(Object(b.k)(e));
@@ -1416,7 +1416,7 @@
 						subredditId: i,
 						emojiName: l,
 						settings: p
-					} = e, f = Object(m.a)(n.url), E = s(), h = Object(g.T)(E, {
+					} = e, f = Object(m.a)(n.url), E = s(), h = Object(g.U)(E, {
 						subredditId: i
 					}).name, O = await (async (e, t, r, s, a) => Object(o.a)(Object(d.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -1474,7 +1474,7 @@
 				}) => {
 					const a = r();
 					if (Object(I.a)(a, e)) return;
-					const n = Object(g.T)(a, {
+					const n = Object(g.U)(a, {
 						subredditId: e
 					}).name;
 					t(P(e));
@@ -1497,7 +1497,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.T)(i, {
+						l = Object(g.U)(i, {
 							subredditId: t
 						}).name,
 						p = await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1525,7 +1525,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.T)(i, {
+						l = Object(g.U)(i, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1550,7 +1550,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.T)(i, {
+						l = Object(g.U)(i, {
 							subredditId: e
 						}).name;
 					(await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1570,7 +1570,7 @@
 					apiContext: l
 				}) => {
 					const p = i(),
-						b = Object(g.T)(p, {
+						b = Object(g.U)(p, {
 							subredditId: a
 						}).name;
 					(await (async (e, t, r, s) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1649,7 +1649,7 @@
 				O = e => async (t, n) => {
 					t(y());
 					const c = n(),
-						d = Object(u.T)(c, {
+						d = Object(u.U)(c, {
 							subredditId: e
 						}).name,
 						l = c.structuredStyles.models[e],
@@ -3104,7 +3104,7 @@
 				_ = e => async (t, r, {
 					gqlContext: a
 				}) => {
-					const n = Object(l.T)(r(), {
+					const n = Object(l.U)(r(), {
 						subredditId: e
 					});
 					if (void 0 === n) {
@@ -16484,7 +16484,8 @@
 					case Z.b:
 					case Z.e:
 					case Ge.e:
-					case rd.TOPIC_DATA_LOADED: {
+					case rd.TOPIC_DATA_LOADED:
+					case cd.u: {
 						const r = t.payload.subredditAboutInfo;
 						if (!r) return e;
 						const s = Object.keys(r);
@@ -16682,10 +16683,10 @@
 				});
 			var UE = (e = !1, t) => {
 					switch (t.type) {
-						case cd.t:
+						case cd.w:
 							return !0;
-						case cd.u:
-						case cd.s:
+						case cd.x:
+						case cd.v:
 							return !1;
 						default:
 							return e
@@ -17798,7 +17799,7 @@
 			const j_ = {};
 			var R_ = (e = j_, t) => {
 				switch (t.type) {
-					case cd.v: {
+					case cd.y: {
 						const {
 							id: r,
 							progressModule: s
@@ -17832,7 +17833,7 @@
 			var P_ = (e = C_, t) => {
 				var r, s;
 				switch (t.type) {
-					case cd.v: {
+					case cd.y: {
 						const {
 							id: r,
 							questions: s
@@ -18021,7 +18022,7 @@
 			const q_ = {};
 			var V_ = (e = q_, t) => {
 				switch (t.type) {
-					case cd.v: {
+					case cd.y: {
 						const {
 							id: r,
 							survey: s
@@ -18031,7 +18032,7 @@
 							[r]: s
 						}
 					}
-					case cd.w: {
+					case cd.z: {
 						const {
 							id: r,
 							response: s
@@ -21588,4 +21589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.835c80cad80d55849085.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5654fd063a09820f1925.js.map

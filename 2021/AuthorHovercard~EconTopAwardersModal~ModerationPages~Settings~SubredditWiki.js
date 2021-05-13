@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.8ed04665328ee867386b.js
-// Retrieved at 5/5/2021, 10:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.1d44264c86c50bfdd96b.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -364,10 +364,10 @@
 				}, ie = (e, t) => async (r, n) => {
 					const s = n();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.Q)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.R)(s, {
 								subredditId: e
 							})) {
-							const t = Object(E.T)(s, {
+							const t = Object(E.U)(s, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
@@ -908,7 +908,7 @@
 					}) => t ? Object(h.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(v.m)(t) && Object(v.fb)(e, t),
+					userIsBanned: (e, t) => !!Object(v.m)(t) && Object(v.gb)(e, t),
 					userProfileStyles: (e, t) => Object(b.m)(e, Object(p.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(p.h)(e, {
@@ -1754,7 +1754,7 @@
 				a = r("./src/reddit/actions/subscription/index.ts"),
 				o = r("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(s.c)({
-				userIsSubscriber: o.gb
+				userIsSubscriber: o.hb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2292,4 +2292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.8ed04665328ee867386b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.1d44264c86c50bfdd96b.js.map

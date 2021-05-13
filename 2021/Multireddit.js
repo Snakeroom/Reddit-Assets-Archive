@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.2f250c99d21ed6ee3c98.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.c575a306ef56ae5b21b9.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1073,7 +1073,7 @@
 					apiContext: n
 				}) => {
 					const o = s(),
-						i = Object(O.L)(o, {
+						i = Object(O.M)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -1095,7 +1095,7 @@
 							type: e.type,
 							name: i.name
 						},
-						v = () => Object(O.gb)(s(), {
+						v = () => Object(O.hb)(s(), {
 							identifier: y
 						});
 					(v() || (await t(B([y], !0)), v())) && ((await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
@@ -6174,7 +6174,7 @@
 						}
 						return Object(v.C)(e, t, s, r)
 					}),
-					subredditsById: w.ab,
+					subredditsById: w.bb,
 					viewportDataLoaded: E.a,
 					pageReferrer: p.R,
 					postListPlaceholderComponent: () => f.a,
@@ -6225,7 +6225,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: i.gb
+				userIsSubscriber: i.hb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -7846,7 +7846,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.T)(e, {
+						const t = Object(o.U)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -7859,14 +7859,14 @@
 				u = (e, t) => {
 					const s = m(e, t);
 					if (!s) return l;
-					const n = Object(o.X)(e, {
+					const n = Object(o.Y)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : l
 				},
 				m = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.T)(e, {
+					return s ? Object(o.U)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -7961,7 +7961,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(i.X)(e, {
+					const s = Object(i.Y)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -7969,4 +7969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2f250c99d21ed6ee3c98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.c575a306ef56ae5b21b9.js.map

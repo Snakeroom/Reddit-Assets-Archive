@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.02daa663f72547b6f6f0.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c78762a05c1d5e7ca3fb.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1571,7 +1571,7 @@
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const w = (e, t) => {
 				const r = Object(b.a)(e, t),
-					s = Object(f.I)(e, t);
+					s = Object(f.J)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1610,7 +1610,7 @@
 			}));
 			const A = (e, t) => {
 				const r = Object(b.a)(e, t),
-					s = Object(f.I)(e, t);
+					s = Object(f.J)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -1636,7 +1636,7 @@
 				}
 			}));
 			var v = Object(a.b)(() => Object(o.c)({
-					subreddit: f.T
+					subreddit: f.U
 				}))(e => n.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -1743,7 +1743,7 @@
 				})
 			};
 			var T = Object(a.b)(() => Object(o.c)({
-				subreddit: f.T
+				subreddit: f.U
 			}))(e => n.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -1756,7 +1756,7 @@
 				}
 			}));
 			var I = Object(a.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.M)(e, {
 					identifier: t
 				})
 			}))(e => n.a.createElement(p, {
@@ -1773,7 +1773,7 @@
 			var C = Object(a.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.T)(e, {
+				}) => t ? Object(f.U)(e, {
 					subredditId: t
 				}) : null
 			}))(e => n.a.createElement(p, {
@@ -3140,4 +3140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.02daa663f72547b6f6f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c78762a05c1d5e7ca3fb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.a9a126f4a012cb32e2e6.js
-// Retrieved at 4/7/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.f4a8410fb796920bb671.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -61,7 +61,7 @@
 					ratingResponse: a,
 					subredditId: o,
 					children: g
-				} = e, y = null !== (t = Object(r.e)(e => Object(v.T)(e, {
+				} = e, y = null !== (t = Object(r.e)(e => Object(v.U)(e, {
 					subredditId: o
 				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
 				return s.a.createElement("div", {
@@ -345,7 +345,7 @@
 							}), y(Object(p.f)(Object(p.e)(W._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
 							}), B.b.SuccessCommunityGreen))), y({
-								type: v.w,
+								type: v.z,
 								payload: {
 									id: s,
 									response: S
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.a9a126f4a012cb32e2e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.f4a8410fb796920bb671.js.map

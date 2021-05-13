@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c16aa6f98311de228e3.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f687a080e383d16580fc.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3372,7 +3372,7 @@
 				s = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(r.c)({
-				userIsSubscriber: i.gb
+				userIsSubscriber: i.hb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -3753,4 +3753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7c16aa6f98311de228e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f687a080e383d16580fc.js.map

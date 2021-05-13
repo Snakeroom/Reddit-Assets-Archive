@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.8d47523112f463ed90b0.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.d93d9bbbc25c6bdf93ee.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/graphql/operations/BadgeIndicators.json": function(e) {
@@ -1593,7 +1593,7 @@
 					let r = P.e;
 					const i = s();
 					if (e.subredditId) {
-						const t = Object(y.T)(i, {
+						const t = Object(y.U)(i, {
 								subredditId: e.subredditId
 							}),
 							s = Object(S.p)(i, {
@@ -1701,7 +1701,7 @@
 				p = (e, t) => async (s, n, {
 					apiContext: b
 				}) => {
-					const p = Object(l.T)(n(), {
+					const p = Object(l.U)(n(), {
 						subredditId: e
 					}) || Object(u.p)(n(), {
 						profileId: e
@@ -2162,7 +2162,7 @@
 					{
 						currentUser: s
 					} = Object(a.a)(),
-					n = Object(i.e)(e => t ? Object(l.L)(e, {
+					n = Object(i.e)(e => t ? Object(l.M)(e, {
 						identifier: t.belongsTo
 					}) : null),
 					r = (null == t ? void 0 : t.belongsTo.type) === o.a.SUBREDDIT ? n : null,
@@ -3059,4 +3059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.8d47523112f463ed90b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.d93d9bbbc25c6bdf93ee.js.map

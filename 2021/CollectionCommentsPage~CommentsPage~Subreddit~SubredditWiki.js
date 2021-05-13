@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d79affabac54bafd8491.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.49ad44c2f5fcc86acd53.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1571,7 +1571,7 @@
 					_ = Object(a.e)(e => Object(v.j)(e, {
 						subredditId: t
 					})),
-					k = Object(a.e)(e => Object(y.T)(e, {
+					k = Object(a.e)(e => Object(y.U)(e, {
 						subredditId: t
 					})),
 					E = Object(a.e)(e => Object(v.m)(e, {
@@ -2026,10 +2026,10 @@
 					a = Object(B.a)(),
 					o = Object(T.L)(r),
 					[c, d] = Object(n.useState)(!1),
-					l = Object(i.e)(t => Object(M.T)(t, {
+					l = Object(i.e)(t => Object(M.U)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(M.N)(t, {
+					u = Object(i.e)(t => Object(M.O)(t, {
 						subredditId: e
 					})),
 					m = Object(i.e)(t => Object(L.c)(t, {
@@ -3089,7 +3089,7 @@
 				we = m.a.wrapped(le.a, "InternalLink", be.a),
 				ke = m.a.div("LinkContainer", be.a),
 				Ee = Object(a.c)({
-					userIsBanned: pe.eb
+					userIsBanned: pe.fb
 				});
 			var je = Object(i.b)(Ee)(e => {
 					const {
@@ -3987,4 +3987,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d79affabac54bafd8491.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.49ad44c2f5fcc86acd53.js.map

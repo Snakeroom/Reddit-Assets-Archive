@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.04ab46cdbb2e4ce95b31.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.488d081dedff6a517490.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -523,7 +523,7 @@
 					apiContext: r
 				}) => {
 					const o = n(),
-						i = Object(_.T)(o, {
+						i = Object(_.U)(o, {
 							subredditId: t
 						}).name;
 					s(m());
@@ -539,7 +539,7 @@
 					apiContext: r
 				}) => {
 					const o = n(),
-						i = Object(_.T)(o, {
+						i = Object(_.U)(o, {
 							subredditId: t
 						}).name;
 					s(O());
@@ -555,7 +555,7 @@
 					apiContext: o
 				}) => {
 					const d = r(),
-						b = Object(_.T)(d, {
+						b = Object(_.U)(d, {
 							subredditId: e
 						}).name;
 					s(D());
@@ -591,7 +591,7 @@
 					apiContext: o
 				}) => {
 					const i = r(),
-						d = Object(_.T)(i, {
+						d = Object(_.U)(i, {
 							subredditId: e
 						}).name;
 					if (s(A()), (await Object(a.b)(o(), t, d)).ok) {
@@ -619,7 +619,7 @@
 						d = Object(b.d)(i, {
 							subredditId: e
 						}).templateIds,
-						E = Object(_.T)(i, {
+						E = Object(_.U)(i, {
 							subredditId: e
 						}).name;
 					if (s(U({
@@ -697,7 +697,7 @@
 				imageData: n
 			}) => async (r, o, i) => {
 				const c = o(),
-					a = Object(S.T)(c, {
+					a = Object(S.U)(c, {
 						subredditId: t
 					});
 				if (!a) return !1;
@@ -730,7 +730,7 @@
 					...D
 				} = s;
 				let L = D;
-				const j = Object(S.T)(l, {
+				const j = Object(S.U)(l, {
 					subredditId: t
 				});
 				if (!j) return !1;
@@ -803,7 +803,7 @@
 				apiContext: r
 			}) => {
 				const o = n(),
-					i = Object(S.T)(o, {
+					i = Object(S.U)(o, {
 						subredditId: t
 					});
 				if (!i) return !1;
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.04ab46cdbb2e4ce95b31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.488d081dedff6a517490.js.map

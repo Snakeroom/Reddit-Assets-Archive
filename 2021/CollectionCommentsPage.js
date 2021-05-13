@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f853aec6c271046fa017.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.07a9a828d776205ddd6c.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -687,7 +687,7 @@
 							collectionId: t.id
 						});
 						if (!s) return "";
-						const n = Object(D.L)(e, {
+						const n = Object(D.M)(e, {
 								identifier: t
 							}),
 							r = Object(i.b)(s.title, n.name).toString();
@@ -698,12 +698,12 @@
 					}));
 					const F = s().posts.models[g];
 					if (F) {
-						const o = Object(D.L)(s(), {
+						const o = Object(D.M)(s(), {
 							identifier: F.belongsTo
 						});
 						if (!F.isSponsored)
 							if (F.belongsTo.type === v.a.SUBREDDIT) {
-								!!Object(D.S)(O, {
+								!!Object(D.T)(O, {
 									subredditId: F.belongsTo.id
 								}) || await t(b.o(o.name))
 							} else await t(u.d(o.name));
@@ -941,7 +941,7 @@
 							postId: s
 						}),
 						r = n.belongsTo,
-						i = Object(W.L)(t, {
+						i = Object(W.M)(t, {
 							identifier: r
 						}),
 						a = Object(ie.c)(t, {
@@ -1013,7 +1013,7 @@
 									});
 								return s && o ? `${e.posts.models[t].title} : ${s.name}` : ""
 							})(s(), m),
-							i = Object(W.L)(s(), {
+							i = Object(W.M)(s(), {
 								identifier: R.belongsTo
 							});
 						if (i && Object(B.a)(s())) return void t(Object(o.c)(i.url));
@@ -1031,7 +1031,7 @@
 								await e
 							}
 						} else {
-							if (!!!Object(W.S)(s(), {
+							if (!!!Object(W.T)(s(), {
 									subredditId: R.belongsTo.id
 								})) {
 								const e = Object($.i)(() => t(k.o(i.name)), {
@@ -7516,7 +7516,7 @@
 						}
 						return Object(y.C)(e, t, s, n)
 					}),
-					subredditsById: O.ab,
+					subredditsById: O.bb,
 					viewportDataLoaded: k.a,
 					pageReferrer: u.R,
 					postListPlaceholderComponent: () => g.a,
@@ -7567,7 +7567,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(n.c)({
-				userIsSubscriber: i.gb
+				userIsSubscriber: i.hb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -9403,7 +9403,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(r.T)(e, {
+						const t = Object(r.U)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -9416,14 +9416,14 @@
 				m = (e, t) => {
 					const s = p(e, t);
 					if (!s) return l;
-					const o = Object(r.X)(e, {
+					const o = Object(r.Y)(e, {
 						subredditName: s.name
 					});
 					return o && o.postIds && o.postIds.length ? o.postIds : l
 				},
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(r.T)(e, {
+					return s ? Object(r.U)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -9514,4 +9514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f853aec6c271046fa017.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.07a9a828d776205ddd6c.js.map

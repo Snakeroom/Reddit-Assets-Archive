@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserFlair.b9f0d3e34a174f6181eb.js
-// Retrieved at 4/13/2021, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserFlair.f2e572accc9805df84c6.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserFlair"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -78,9 +78,9 @@
 			})), r.d(t, "userFlairEnabledSettingSuccess", (function() {
 				return F
 			})), r.d(t, "userFlairEnabledSettingFailed", (function() {
-				return A
-			})), r.d(t, "userFlairAllowAssingOwnSettingPending", (function() {
 				return U
+			})), r.d(t, "userFlairAllowAssingOwnSettingPending", (function() {
+				return A
 			})), r.d(t, "userFlairAllowAssingOwnSettingSuccess", (function() {
 				return L
 			})), r.d(t, "userFlairAllowAssingOwnSettingFailed", (function() {
@@ -147,8 +147,8 @@
 			});
 			const O = Object(s.a)(f.i),
 				F = Object(s.a)(f.j),
-				A = Object(s.a)(f.h),
-				U = Object(s.a)(f.c),
+				U = Object(s.a)(f.h),
+				A = Object(s.a)(f.c),
 				L = Object(s.a)(f.d),
 				I = Object(s.a)(f.b),
 				j = Object(s.a)(f.p),
@@ -182,7 +182,7 @@
 							displaySettings: T
 						};
 					i(n === E ? h(R) : y(R));
-					const f = Object(_.T)(u, {
+					const f = Object(_.U)(u, {
 							subredditId: s
 						}),
 						O = t && e ? Object(o.g)(e) : void 0;
@@ -191,7 +191,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						d = Object(_.T)(i, {
+						d = Object(_.U)(i, {
 							subredditId: e
 						}).name;
 					r(O());
@@ -201,16 +201,16 @@
 							subredditId: e,
 							isEnabled: t
 						}))
-					} else r(A());
+					} else r(U());
 					return c.ok
 				}, v = (e, t) => async (r, n, {
 					apiContext: s
 				}) => {
 					const i = n(),
-						d = Object(_.T)(i, {
+						d = Object(_.U)(i, {
 							subredditId: e
 						}).name;
-					r(U());
+					r(A());
 					const c = await Object(a.j)(s(), t, l.d.UserFlair, d);
 					if (c.ok) {
 						r(L({
@@ -223,7 +223,7 @@
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.T)(d, {
+						c = Object(_.U)(d, {
 							subredditId: t
 						}).name;
 					r(j());
@@ -253,7 +253,7 @@
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.T)(d, {
+						c = Object(_.U)(d, {
 							subredditId: t
 						}).name;
 					if (r(C()), (await Object(a.b)(i(), e, c)).ok) {
@@ -278,7 +278,7 @@
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.T)(d, {
+						c = Object(_.U)(d, {
 							subredditId: t
 						}).name,
 						o = Object(b.c)(d, {
@@ -312,7 +312,7 @@
 					const l = s(),
 						S = null === (o = l.features) || void 0 === o ? void 0 : o.userFlair;
 					if (S && S[e] && S[e].displaySettings.isEnabled && d()(S[e].templateIds)) {
-						const s = Object(_.T)(l, {
+						const s = Object(_.U)(l, {
 								subredditId: e
 							}).name,
 							d = await Object(a.d)(i(), s);
@@ -334,4 +334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.b9f0d3e34a174f6181eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.f2e572accc9805df84c6.js.map

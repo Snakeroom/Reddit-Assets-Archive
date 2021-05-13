@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.06e9bda06f855e916413.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.d124bb4589a729b41038.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -2852,7 +2852,7 @@
 				Y = e => e.features.comments.visitHighlightFilter,
 				Q = (e, t) => {
 					const n = Object(b.a)(e, t);
-					if (n) return Object(u.Y)(e, n)
+					if (n) return Object(u.Z)(e, n)
 				},
 				Z = (e, {
 					postId: t
@@ -2928,4 +2928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.06e9bda06f855e916413.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.d124bb4589a729b41038.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e0fb683d379101a187a4.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.f103aacaf109aaa362bc.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -701,7 +701,7 @@
 				const t = Object(o.e)(t => Object(C.b)(t, e)),
 					r = t && t.pointsToClaim;
 				if (!r) throw new Error("Expected claim amount to approve");
-				const s = Object(o.e)(t => Object(T.T)(t, e)),
+				const s = Object(o.e)(t => Object(T.U)(t, e)),
 					i = Object(o.e)(t => Object(j.n)(t, e));
 				return a.a.createElement(A.a, {
 					subredditId: e.subredditId,
@@ -1417,4 +1417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e0fb683d379101a187a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.f103aacaf109aaa362bc.js.map

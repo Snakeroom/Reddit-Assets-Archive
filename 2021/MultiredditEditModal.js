@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.29597d9967f2c1e523e8.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.ed42041d5c64f2e7f54d.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/graphql/operations/AllUserMultireddits.json": function(e) {
@@ -14,9 +14,9 @@
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "morePostsFailed", (function() {
-				return R
-			})), i.d(t, "morePostsLoaded", (function() {
 				return L
+			})), i.d(t, "morePostsLoaded", (function() {
+				return R
 			})), i.d(t, "morePostsPending", (function() {
 				return D
 			})), i.d(t, "moreOfMyMultiRequested", (function() {
@@ -30,9 +30,9 @@
 			})), i.d(t, "createFailure", (function() {
 				return A
 			})), i.d(t, "createPending", (function() {
-				return K
-			})), i.d(t, "createSuccess", (function() {
 				return H
+			})), i.d(t, "createSuccess", (function() {
+				return K
 			})), i.d(t, "createRequested", (function() {
 				return J
 			})), i.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
@@ -168,8 +168,8 @@
 				I = i("./src/reddit/selectors/user.ts"),
 				M = i("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				q = i("./src/reddit/actions/multireddit/constants.ts");
-			const R = Object(l.a)(q.q),
-				L = Object(l.a)(q.r),
+			const L = Object(l.a)(q.q),
+				R = Object(l.a)(q.r),
 				D = Object(l.a)(q.s),
 				G = e => async (t, i, r) => {
 					const {
@@ -206,14 +206,14 @@
 							data: k
 						} = w.body,
 						S = Object(C.a)(k);
-					w.ok && k && k.multireddit ? t(L({
+					w.ok && k && k.multireddit ? t(R({
 						fetchedToken: f.token,
 						key: b,
 						meta: l.meta,
 						...S,
 						...Object(v.a)(l, b, S),
 						multiredditsModelsState: l.multireddits.models
-					})) : t(R({
+					})) : t(L({
 						error: {
 							type: d.E.NOT_FOUND_ERROR
 						},
@@ -244,7 +244,7 @@
 							multiredditsModelsState: a.multireddits.models
 						}))
 					}
-				}, A = Object(l.a)(q.e), K = Object(l.a)(q.f), H = Object(l.a)(q.g), J = ({
+				}, A = Object(l.a)(q.e), H = Object(l.a)(q.f), K = Object(l.a)(q.g), J = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: i
@@ -254,7 +254,7 @@
 					const l = n(),
 						c = Object(I.i)(l);
 					if (!c) return;
-					s(K());
+					s(H());
 					const m = await ((e, t, i) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(y.a)(`${e.apiUrl}/api/multi`),
 						data: {
@@ -271,7 +271,7 @@
 						const {
 							id: e
 						} = c;
-						if (await s(H({
+						if (await s(K({
 								multireddit: S(m.body.data),
 								multiredditsModelsState: l.multireddits.models,
 								userId: e
@@ -389,7 +389,7 @@
 							method: d.eb.PUT
 						}))(a(), g, b);
 					if (O.ok) {
-						const n = Object(P.K)(l, {
+						const n = Object(P.L)(l, {
 								identifier: t
 							}) || e && e.id || "",
 							a = i.map(e => Object(T.h)(m, e));
@@ -788,15 +788,15 @@
 				}),
 				M = 12,
 				q = "multi-edit-modal-visibility",
-				R = Object(d.c)({
+				L = Object(d.c)({
 					apiFetched: e => e.multireddits.api.edit.fetched,
 					apiPending: e => e.multireddits.api.edit.pending,
 					isDropdownOpen: Object(T.b)(q),
 					multireddit: x.d,
 					myMultireddits: S.j
 				}),
-				L = Object(x.t)(),
-				D = Object(a.b)(R, e => ({
+				R = Object(x.t)(),
+				D = Object(a.b)(L, e => ({
 					edit: t => e(Object(m.editRequested)(t)),
 					onClose: () => e(Object(u.f)()),
 					onToggleDropdown: () => e(Object(p.h)({
@@ -1020,7 +1020,7 @@
 					})))
 				}
 			}
-			t.default = Object(o.a)(L(D(G)))
+			t.default = Object(o.a)(R(D(G)))
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, i) {
 			e.exports = {
@@ -1543,4 +1543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.29597d9967f2c1e523e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.ed42041d5c64f2e7f54d.js.map

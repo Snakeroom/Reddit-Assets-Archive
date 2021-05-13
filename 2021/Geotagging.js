@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.b6e3227a364b63ca05ff.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.2e2dbd580540c5f6c098.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -919,7 +919,7 @@
 				O = s.n(j);
 			const C = Object(h.c)({
 				isLoggedIn: k.J,
-				subreddit: v.T,
+				subreddit: v.U,
 				subredditAboutInfo: v.w
 			});
 			class N extends r.a.Component {
@@ -1224,7 +1224,7 @@
 				i = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.gb
+				userIsSubscriber: a.hb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -1762,4 +1762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.b6e3227a364b63ca05ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.2e2dbd580540c5f6c098.js.map

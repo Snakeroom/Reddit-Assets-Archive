@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.0709f0fa5f2c9443b3ab.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.972d9855f221061e3a2d.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -604,9 +604,9 @@
 				m = n("./src/reddit/selectors/structuredStyles.ts"),
 				p = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/telemetry/index.ts");
-			const h = Object(r.a)(o.t),
-				f = Object(r.a)(o.u),
-				g = Object(r.a)(o.s),
+			const h = Object(r.a)(o.w),
+				f = Object(r.a)(o.x),
+				g = Object(r.a)(o.v),
 				x = (e, t, n) => async (s, r, i) => {
 					const o = Object(p.A)(r(), {
 						subredditName: e
@@ -858,7 +858,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						o = Object(S.L)(i, {
+						o = Object(S.M)(i, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -880,7 +880,7 @@
 							type: e.type,
 							name: o.name
 						},
-						C = () => Object(S.gb)(n(), {
+						C = () => Object(S.hb)(n(), {
 							identifier: _
 						});
 					(C() || (await t(B([_], !0)), C())) && ((await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
@@ -2558,7 +2558,7 @@
 				re = n("./src/reddit/selectors/subreddit.ts");
 			const ie = 6,
 				oe = Object(u.c)({
-					apiPending: re.U,
+					apiPending: re.V,
 					unsavedChangesModalIsOpen: Object(se.b)(Z.a)
 				});
 			class ae extends i.a.Component {
@@ -4145,7 +4145,7 @@
 				i = n("./src/reddit/actions/subscription/index.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: o.gb
+				userIsSubscriber: o.hb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -5354,4 +5354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.0709f0fa5f2c9443b3ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.972d9855f221061e3a2d.js.map

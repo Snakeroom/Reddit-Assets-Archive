@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f3b4bb184e119e23c0f5.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.64a1ac1bec335035fccd.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -781,7 +781,7 @@
 			const w = (e, t = !1, s = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${s}]`,
 				E = Object(c.c)({
 					flairData: O.d,
-					subreddit: v.T,
+					subreddit: v.U,
 					isMod: (e, t) => !!Object(C.k)(e, t)
 				});
 			class R extends a.a.Component {
@@ -2241,4 +2241,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f3b4bb184e119e23c0f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.64a1ac1bec335035fccd.js.map

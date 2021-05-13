@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.83262e6bdaab516a19f5.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.4538dee5a4c8b9626604.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -244,7 +244,7 @@
 					apiContext: i
 				}) => {
 					const o = n(),
-						r = Object(j.L)(o, {
+						r = Object(j.M)(o, {
 							identifier: e
 						});
 					if (!r) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -266,7 +266,7 @@
 							type: e.type,
 							name: r.name
 						},
-						C = () => Object(j.gb)(n(), {
+						C = () => Object(j.hb)(n(), {
 							identifier: g
 						});
 					(C() || (await t(B([g], !0)), C())) && ((await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
@@ -1529,4 +1529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.83262e6bdaab516a19f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.4538dee5a4c8b9626604.js.map

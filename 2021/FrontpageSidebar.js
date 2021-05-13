@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.b5047a3c11811a82c536.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ed47425d8df10c98bf2b.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -158,23 +158,23 @@
 					onClickPremium: () => e(Object(g.b)("/premium"))
 				}))(S),
 				v = n("./src/lib/classNames/index.ts"),
-				O = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				T = n("./src/reddit/controls/InternalLink/index.tsx"),
+				T = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				O = n("./src/reddit/controls/InternalLink/index.tsx"),
 				j = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				I = n.n(w);
 			const F = ({
 					to: e,
 					title: t
-				}) => c.a.createElement(O.a, {
+				}) => c.a.createElement(T.a, {
 					subredditName: t,
 					tooltipPosition: ["right", "top"]
-				}, c.a.createElement(T.a, {
+				}, c.a.createElement(O.a, {
 					className: I.a.Link,
 					to: e,
 					title: t
 				}, t)),
-				A = ({
+				P = ({
 					title: e,
 					isOpened: t,
 					isExpanded: n,
@@ -207,7 +207,7 @@
 				}) : s.fbt._("See more", null, {
 					hk: "439kAh"
 				})))));
-			class P extends c.a.Component {
+			class A extends c.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -235,7 +235,7 @@
 						key: t,
 						to: e,
 						title: t
-					}), this.renderSection = (e, t) => c.a.createElement(A, {
+					}), this.renderSection = (e, t) => c.a.createElement(P, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -261,7 +261,7 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var B = P,
+			var B = A,
 				L = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				D = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				R = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -398,7 +398,7 @@
 				Se = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				Ce = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
 				ve = n("./src/reddit/selectors/subreddit.ts");
-			var Oe = Object(l.b)(Object(u.c)({
+			var Te = Object(l.b)(Object(u.c)({
 					communities: ve.f
 				}))(Object(Se.c)(e => c.a.createElement(Ce.b, {
 					className: e.className,
@@ -408,12 +408,12 @@
 					sendEvent: e.sendEvent,
 					title: e.title
 				}))),
-				Te = n("./src/config.ts"),
+				Oe = n("./src/config.ts"),
 				je = n("./src/lib/env/index.ts"),
 				we = n("./src/reddit/controls/Chip/index.tsx"),
 				Ie = n("./src/reddit/helpers/trackers/widgets.ts"),
 				Fe = n("./src/reddit/hooks/useTracking.ts");
-			const Ae = [{
+			const Pe = [{
 				getName: () => s.fbt._("Fashion", null, {
 					hk: "4tXmOZ"
 				}),
@@ -624,10 +624,10 @@
 				}),
 				url: "cryptocurrency"
 			}];
-			var Pe = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
-				Be = n.n(Pe);
+			var Ae = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
+				Be = n.n(Ae);
 			const Le = () => {
-					const e = `${Te.a.assetPath}/img/banner/banner-medium@2x.png`,
+					const e = `${Oe.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = s.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
 						}),
@@ -654,7 +654,7 @@
 			var We = c.a.memo(e => {
 					const t = Object(Fe.a)();
 					Object(d.useEffect)(() => t(Object(Ie.d)()), []);
-					const n = Ae.map(e => ({
+					const n = Pe.map(e => ({
 						value: e,
 						sort: Object(je.d)() ? .5 : Math.random()
 					})).sort((e, t) => e.sort - t.sort).map(e => e.value).slice(0, 10);
@@ -714,7 +714,7 @@
 					isMod: $e.K,
 					isLoggedIn: $e.I,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					trendingSubredditIds: ve.cb,
+					trendingSubredditIds: ve.db,
 					currentUser: $e.i,
 					frontpageLinks: tt.b,
 					isOver18: $e.cb,
@@ -725,10 +725,10 @@
 					isInIcons2020: ze.a,
 					bffsLeaderboardVariant: Xe,
 					inRpanTopVideoEntrypointExperiment: Ye.e,
-					rankings: e => Object(ve.O)(e, at),
+					rankings: e => Object(ve.P)(e, at),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Ye.e)(e),
-							n = !!Object(ve.O)(e, at);
+							n = !!Object(ve.P)(e, at);
 						return (!t || !n) && (!Object(et.b)(e) && function(e) {
 							return Object(He.c)(e, {
 								experimentEligibilitySelector: $e.J,
@@ -832,7 +832,7 @@
 						placementIndex: e++
 					}), ct(this.props) && c.a.createElement(C, {
 						isInIcons2020: u
-					}), ot(this.props) && c.a.createElement(h.a, null, c.a.createElement(Oe, {
+					}), ot(this.props) && c.a.createElement(h.a, null, c.a.createElement(Te, {
 						getClickEventFactory: Ve,
 						getSubscribeEventFactoryHandler: Ke,
 						subredditIds: l && k ? k : o,
@@ -912,7 +912,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.L)(e, {
+						subredditOrProfile: Object(g.M)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -1423,11 +1423,11 @@
 						shouldDisplayDelta: e.shouldDisplayDelta,
 						subreddit: s
 					})
-				}), !e.rankings.length && O),
-				O = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
+				}), !e.rankings.length && T),
+				T = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
 					key: e
 				}))),
-				T = e => {
+				O = e => {
 					const t = e.isSecondaryButton ? _.n : _.k,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
@@ -1512,7 +1512,7 @@
 					rankings: n,
 					shouldDisplayDelta: !1,
 					subreddits: t
-				}), c.a.createElement(T, {
+				}), c.a.createElement(O, {
 					categoryName: s,
 					categoryDisplayText: a,
 					isSecondaryButton: e.isSecondaryButton,
@@ -2091,4 +2091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.b5047a3c11811a82c536.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.ed47425d8df10c98bf2b.js.map

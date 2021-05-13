@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.20ab1fa5334f13af6fa5.js
-// Retrieved at 5/4/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.c547c05426929b31db1a.js
+// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, n) {
@@ -69,8 +69,8 @@
 				}, e.text)), e.subreddit.isQuarantined && i.a.createElement(S, {
 					isInIcons2020: e.isInIcons2020
 				})),
-				T = Object(o.b)(j);
-			t.a = T(({
+				g = Object(o.b)(j);
+			t.a = g(({
 				className: e,
 				iconClassName: t,
 				restrictions: n = E.e.Post,
@@ -314,10 +314,10 @@
 				C = n("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
 				S = n("./src/reddit/components/DiscoveryUnit/SubredditsDiscoveryUnit/communityClickContext.ts").c,
 				_ = n("./src/reddit/components/Hovercards/SubredditHovercard/SubredditOptions.m.less"),
-				T = n.n(_);
+				g = n.n(_);
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -327,7 +327,7 @@
 			}
 			const {
 				fbt: w
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = y.a.wrapped(N.b, "SubredditIcon", T.a), B = y.a.wrapped(f.a, "SubredditNameDisplay", T.a), k = y.a.div("SubredditDescription", T.a), H = y.a.div("SubredditNameContainer", T.a), M = y.a.div("SubredditInfoContainer", T.a), L = y.a.div("Subscribers", T.a), A = y.a.div("Online", T.a), D = y.a.div("Count", T.a), U = y.a.div("CountLabel", T.a), R = y.a.div("Container", T.a), K = y.a.div("CardContainer", T.a), W = e => r.a.createElement(M, null, r.a.createElement(L, null, r.a.createElement(D, null, Object(E.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(U, null, w._({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = y.a.wrapped(N.b, "SubredditIcon", g.a), B = y.a.wrapped(f.a, "SubredditNameDisplay", g.a), k = y.a.div("SubredditDescription", g.a), H = y.a.div("SubredditNameContainer", g.a), M = y.a.div("SubredditInfoContainer", g.a), L = y.a.div("Subscribers", g.a), A = y.a.div("Online", g.a), D = y.a.div("Count", g.a), U = y.a.div("CountLabel", g.a), R = y.a.div("Container", g.a), K = y.a.div("CardContainer", g.a), W = e => r.a.createElement(M, null, r.a.createElement(L, null, r.a.createElement(D, null, Object(E.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(U, null, w._({
 				"*": "Members",
 				_1: " Member"
 			}, [w._plural(e.subredditAboutInfo.subscribers)], {
@@ -380,7 +380,7 @@
 			});
 			var F = e => {
 				const t = e.activeTooltipId === e.tooltipId;
-				return r.a.createElement(q, g({
+				return r.a.createElement(q, T({
 					isOpen: t
 				}, e))
 			};
@@ -490,7 +490,7 @@
 			})), n.d(t, "h", (function() {
 				return _
 			})), n.d(t, "i", (function() {
-				return T
+				return g
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -541,7 +541,7 @@
 				h = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const n = Object(v.a)(e, t),
-					s = Object(h.I)(e, t);
+					s = Object(h.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -580,7 +580,7 @@
 			}));
 			const E = (e, t) => {
 				const n = Object(v.a)(e, t),
-					s = Object(h.I)(e, t);
+					s = Object(h.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -606,7 +606,7 @@
 				}
 			}));
 			var I = Object(i.b)(() => Object(o.c)({
-					subreddit: h.T
+					subreddit: h.U
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -713,7 +713,7 @@
 				})
 			};
 			var S = Object(i.b)(() => Object(o.c)({
-				subreddit: h.T
+				subreddit: h.U
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -726,7 +726,7 @@
 				}
 			}));
 			var _ = Object(i.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(h.L)(e, {
+				subredditOrProfile: (e, t) => Object(h.M)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -740,10 +740,10 @@
 					url: e.subredditOrProfile.title
 				}
 			}));
-			var T = Object(i.b)(() => Object(o.c)({
+			var g = Object(i.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(h.T)(e, {
+				}) => t ? Object(h.U)(e, {
 					subredditId: t
 				}) : null
 			}))(e => r.a.createElement(p, {
@@ -835,9 +835,9 @@
 			})), n.d(t, "p", (function() {
 				return _
 			})), n.d(t, "o", (function() {
-				return T
-			})), n.d(t, "e", (function() {
 				return g
+			})), n.d(t, "e", (function() {
+				return T
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "h", (function() {
@@ -899,7 +899,7 @@
 						size: j = m.S,
 						text: C,
 						...S
-					} = e, _ = Object(a.a)(), T = (({
+					} = e, _ = Object(a.a)(), g = (({
 						baseClassName: e,
 						redditStyle: t,
 						dataRedditStyle: n,
@@ -925,7 +925,7 @@
 						redditStyle: N,
 						size: j,
 						text: C
-					}), g = (({
+					}), T = (({
 						children: e,
 						text: t,
 						Icon: n,
@@ -951,12 +951,12 @@
 						isInIcons2020: _
 					});
 					return I === v.InternalLink && (e => "to" in e)(S) ? r.a.createElement(y, l({}, u, S, {
-						className: T
-					}), g) : I === v.ExternalLink && (e => "href" in e)(S) ? r.a.createElement(E, l({}, u, S, {
-						className: T
-					}), g) : r.a.createElement(x, l({}, u, S, {
-						className: T
-					}), g)
+						className: g
+					}), T) : I === v.ExternalLink && (e => "href" in e)(S) ? r.a.createElement(E, l({}, u, S, {
+						className: g
+					}), T) : r.a.createElement(x, l({}, u, S, {
+						className: g
+					}), T)
 				},
 				y = e => r.a.createElement(o.a, e),
 				E = e => r.a.createElement("a", e),
@@ -989,11 +989,11 @@
 					kind: v.InternalLink,
 					priority: p.Plain
 				}, e)),
-				T = e => r.a.createElement(f, l({
+				g = e => r.a.createElement(f, l({
 					kind: v.Button,
 					priority: p.Plain
 				}, e)),
-				g = ({
+				T = ({
 					className: e,
 					...t
 				}) => r.a.createElement(f, l({
@@ -1248,4 +1248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.20ab1fa5334f13af6fa5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.c547c05426929b31db1a.js.map
