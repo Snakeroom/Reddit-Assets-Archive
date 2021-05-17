@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.fb66a146f07113639da8.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.e60a54bce93661f2c0a0.js
+// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7141,6 +7141,28 @@
 				d: "M1.75,9.38V1.75h16.5V9.38Zm0,8.87V10.62h16.5v7.63Z"
 			}))
 		},
+		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				r = s.n(n);
+			t.a = e => r.a.createElement("svg", {
+				className: e.className,
+				id: e.id,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				viewBox: "0 0 40 40",
+				xmlns: "http://www.w3.org/2000/svg",
+				fill: e.fill
+			}, r.a.createElement("g", null, r.a.createElement("rect", {
+				x: "7.5",
+				y: "12.5",
+				width: "0",
+				height: "0"
+			}), r.a.createElement("path", {
+				fill: "inherit",
+				d: "M32.5,17.5v-2.6c0-6.8-5.6-12.4-12.4-12.4h-0.2c-6.8,0-12.4,5.6-12.4,12.4v2.6C6.1,17.5,5,18.6,5,20v10c0,5.5,4.5,10,10,10h10c5.5,0,10-4.5,10-10V20C35,18.6,33.9,17.5,32.5,17.5z M12.5,17.5v-2.6c0-4.1,3.3-7.4,7.4-7.4h0.2c4.1,0,7.4,3.3,7.4,7.4v2.6H12.5z"
+			})))
+		},
 		"./src/reddit/icons/svgs/New/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -7978,4 +8000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.fb66a146f07113639da8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.e60a54bce93661f2c0a0.js.map

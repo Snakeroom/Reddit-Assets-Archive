@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.52c438dd54de54c193a4.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.88cd280512dc03cf74a0.js
+// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2997,7 +2997,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(Ct.Ab)(), this.setState({
+						Object(Ct.yb)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -3017,7 +3017,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(Ct.F)()
+						showEducation: !Object(Ct.E)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -3494,4 +3494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.52c438dd54de54c193a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.88cd280512dc03cf74a0.js.map

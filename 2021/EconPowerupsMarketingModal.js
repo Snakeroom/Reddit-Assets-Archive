@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a5a1cc38162eb694d319.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.b5dda158680330c4bfdd.js
+// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -397,7 +397,7 @@
 				}, n.a.createElement(h.i, {
 					className: T.a.footerButton,
 					onClick: () => {
-						Object(E.ub)(p.a.ECON_POWERUPS_MARKETING, !0), s(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
+						Object(E.sb)(p.a.ECON_POWERUPS_MARKETING, !0), s(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
 					}
 				}, U._("Powerup This Community", null, {
 					hk: "3gjy90"
@@ -451,7 +451,7 @@
 				}, [x.current]);
 				const O = () => k(Object(d.g)(p.a.ECON_POWERUPS_MARKETING)),
 					v = () => {
-						Object(E.ub)(p.a.ECON_POWERUPS_MARKETING, !0), k(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
+						Object(E.sb)(p.a.ECON_POWERUPS_MARKETING, !0), k(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!s || !c || !o) return O(), null;
 				const {
@@ -647,4 +647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a5a1cc38162eb694d319.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.b5dda158680330c4bfdd.js.map

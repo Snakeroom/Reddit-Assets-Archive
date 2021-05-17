@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.928f960142d3b16c779c.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.688d6bfe4488a116bd46.js
+// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -138,8 +138,8 @@
 				p = n("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
 				h = n("./src/reddit/components/StructuredStyles/DragItem/index.tsx"),
 				x = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				C = n("./src/reddit/constants/keycodes.ts"),
-				v = n("./src/reddit/constants/postCreation.ts"),
+				v = n("./src/reddit/constants/keycodes.ts"),
+				C = n("./src/reddit/constants/postCreation.ts"),
 				g = n("./src/reddit/controls/Button/index.tsx"),
 				f = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				_ = n("./src/reddit/controls/RadioInput/index.tsx"),
@@ -237,7 +237,7 @@
 					placeholder: s.fbt._("Enter title", null, {
 						hk: "bWrfF"
 					}),
-					maxLength: v.e,
+					maxLength: C.e,
 					rows: 1,
 					value: a
 				}), i.a.createElement(I, {
@@ -248,7 +248,7 @@
 					placeholder: s.fbt._("Give some detail on what the collection is about.", null, {
 						hk: "4DPX2P"
 					}),
-					maxLength: v.b,
+					maxLength: C.b,
 					rows: 4,
 					value: o
 				}), i.a.createElement(T, {
@@ -324,7 +324,7 @@
 						};
 						await t(i) && n && n()
 					}, this.handleEscapeKey = e => {
-						e.keyCode === C.a.Escape && this.props.onClose()
+						e.keyCode === v.a.Escape && this.props.onClose()
 					}, this.onCollectionTabClick = () => this.setState({
 						isPostsSelected: !1
 					}), this.onPostsTabClick = () => this.setState({
@@ -473,8 +473,8 @@
 				p = n.n(m),
 				h = n("./src/lib/lessComponent.tsx");
 			const x = h.a.span("PostEventFutureText", p.a),
-				C = h.a.span("PostEventPastText", p.a),
-				v = h.a.span("PostEventNowText", p.a),
+				v = h.a.span("PostEventPastText", p.a),
+				C = h.a.span("PostEventNowText", p.a),
 				g = h.a.span("Container", p.a),
 				f = h.a.wrapped(l.a, "CalendarIcon", p.a),
 				_ = h.a.wrapped(u.a, "LiveIcon", p.a),
@@ -526,11 +526,11 @@
 							className: e
 						})
 					}
-					if (l) h = a.a.createElement(v, null, a.a.createElement(_, null), p);
+					if (l) h = a.a.createElement(C, null, a.a.createElement(_, null), p);
 					else if (m === o.a.Future) h = a.a.createElement(x, null, a.a.createElement(f, null), p);
 					else {
 						if (m !== o.a.Past) return null;
-						h = a.a.createElement(C, null, a.a.createElement(f, null), p)
+						h = a.a.createElement(v, null, a.a.createElement(f, null), p)
 					}
 					return a.a.createElement(g, {
 						className: e
@@ -634,9 +634,9 @@
 			})), n.d(t, "g", (function() {
 				return x
 			})), n.d(t, "i", (function() {
-				return C
-			})), n.d(t, "e", (function() {
 				return v
+			})), n.d(t, "e", (function() {
+				return C
 			})), n.d(t, "b", (function() {
 				return g
 			})), n.d(t, "c", (function() {
@@ -659,8 +659,8 @@
 				p = s.a.h2("FormGroupTitle", o.a),
 				h = s.a.div("FormElement", o.a),
 				x = s.a.div("FormGroupDescription", o.a),
-				C = s.a.div("FormItem", o.a),
-				v = s.a.h3("FormElementTitle", o.a),
+				v = s.a.div("FormItem", o.a),
+				C = s.a.h3("FormElementTitle", o.a),
 				g = s.a.div("FormElementDescription", o.a),
 				f = s.a.div("FormElementError", o.a),
 				_ = s.a.div("FormElementSubGroup", o.a),
@@ -702,9 +702,9 @@
 			})), n.d(t, "a", (function() {
 				return x
 			})), n.d(t, "b", (function() {
-				return C
-			})), n.d(t, "i", (function() {
 				return v
+			})), n.d(t, "i", (function() {
+				return C
 			})), n.d(t, "h", (function() {
 				return g
 			})), n.d(t, "g", (function() {
@@ -723,8 +723,8 @@
 				p = s.a.wrapped(c.a, "RadioOn", l.a),
 				h = s.a.wrapped(i.a, "RadioOff", l.a),
 				x = s.a.wrapped(o.a, "Checkbox", l.a),
-				C = s.a.wrapped(r.a, "CheckboxSelected", l.a),
-				v = s.a.textarea("Textarea", l.a),
+				v = s.a.wrapped(r.a, "CheckboxSelected", l.a),
+				C = s.a.textarea("Textarea", l.a),
 				g = s.a.label("StyledLabel", l.a),
 				f = s.a.input("StyledFileInput", l.a)
 		},
@@ -1011,7 +1011,29 @@
 			}, e.title), a.a.createElement("g", null, a.a.createElement("path", {
 				d: "M8,2 C8.553,2 9,2.447 9,3 L9,5 C9,5.553 8.553,6 8,6 L6,6 C5.447,6 5,5.553 5,5 L5,3 C5,2.447 5.447,2 6,2 L8,2 Z M14,2 C14.553,2 15,2.447 15,3 L15,5 C15,5.553 14.553,6 14,6 L12,6 C11.447,6 11,5.553 11,5 L11,3 C11,2.447 11.447,2 12,2 L14,2 Z M8,8 C8.553,8 9,8.447 9,9 L9,11 C9,11.553 8.553,12 8,12 L6,12 C5.447,12 5,11.553 5,11 L5,9 C5,8.447 5.447,8 6,8 L8,8 Z M14,8 C14.553,8 15,8.447 15,9 L15,11 C15,11.553 14.553,12 14,12 L12,12 C11.447,12 11,11.553 11,11 L11,9 C11,8.447 11.447,8 12,8 L14,8 Z M8,14 C8.553,14 9,14.447 9,15 L9,17 C9,17.553 8.553,18 8,18 L6,18 C5.447,18 5,17.553 5,17 L5,15 C5,14.447 5.447,14 6,14 L8,14 Z M14,14 C14.553,14 15,14.447 15,15 L15,17 C15,17.553 14.553,18 14,18 L12,18 C11.447,18 11,17.553 11,17 L11,15 C11,14.447 11.447,14 12,14 L14,14 Z"
 			})))
+		},
+		"./src/reddit/icons/svgs/Lock/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				a = n.n(s);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				id: e.id,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				viewBox: "0 0 40 40",
+				xmlns: "http://www.w3.org/2000/svg",
+				fill: e.fill
+			}, a.a.createElement("g", null, a.a.createElement("rect", {
+				x: "7.5",
+				y: "12.5",
+				width: "0",
+				height: "0"
+			}), a.a.createElement("path", {
+				fill: "inherit",
+				d: "M32.5,17.5v-2.6c0-6.8-5.6-12.4-12.4-12.4h-0.2c-6.8,0-12.4,5.6-12.4,12.4v2.6C6.1,17.5,5,18.6,5,20v10c0,5.5,4.5,10,10,10h10c5.5,0,10-4.5,10-10V20C35,18.6,33.9,17.5,32.5,17.5z M12.5,17.5v-2.6c0-4.1,3.3-7.4,7.4-7.4h0.2c4.1,0,7.4,3.3,7.4,7.4v2.6H12.5z"
+			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.928f960142d3b16c779c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.688d6bfe4488a116bd46.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.75a187125e201e4d6926.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.3c5dad2f80f4066f5548.js
+// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -179,10 +179,10 @@
 					v = O && s;
 				if (Object(r.useEffect)(() => {
 						k(!g && !(e => {
-							return (Object(m.k)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) || 0) >= 5
+							return Object(m.j)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= 5
 						})(e))
 					}, [g, e, k]), Object(r.useEffect)(() => {
-						v && (Object(m.N)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), N(Object(p.l)()))
+						v && (Object(m.L)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), N(Object(p.l)()))
 					}, [v, N, e]), !v) return null;
 				const I = !!(null == j ? void 0 : j.freeCount);
 				return o.a.createElement("div", {
@@ -219,4 +219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.75a187125e201e4d6926.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.3c5dad2f80f4066f5548.js.map

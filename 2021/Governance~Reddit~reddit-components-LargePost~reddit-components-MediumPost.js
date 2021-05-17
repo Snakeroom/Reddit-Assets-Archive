@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.a43f45855acffd479ea9.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.dd32a0872597cc6a5e16.js
+// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -301,7 +301,7 @@
 				I = Object(i.a)(T),
 				C = t => {
 					const e = Date.now() - t,
-						s = Object(E.C)();
+						s = Object(E.B)();
 					return Object.keys(s).filter(t => s[t].when >= e).map(t => s[t])
 				},
 				D = ({
@@ -318,12 +318,12 @@
 						D = t === T;
 					if (!(t === _.f || t === _.b || D)) return;
 					if (D) return void R(p, e, s)(n, i, l);
-					0 === C(o.kb).length && Object(E.xb)(!1);
+					0 === C(o.kb).length && Object(E.vb)(!1);
 					let L = i();
 					if (Object(f.d)(L, {
 							listingKey: e,
 							postId: s
-						}) || Object(f.a)(L).length >= b.a || Object(E.Q)() || C(o.x).length >= b.a) return;
+						}) || Object(f.a)(L).length >= b.a || Object(E.O)() || C(o.x).length >= b.a) return;
 					const j = Object(S.v)(L, {
 						listingKey: e,
 						postId: s
@@ -373,14 +373,14 @@
 						postId: s
 					})))) : Object(r.a)(Object(m.c)(h, "no_chaining", p)(L))
 				}, L = "FEED_CHAINING__CHAIN_TOGGLED", j = (Object(i.a)(L), "FEED_CHAINING__CHAINING_TOGGLED"), h = Object(i.a)(j), A = () => async t => {
-					Object(E.xb)(!0), t(h({
+					Object(E.vb)(!0), t(h({
 						isDismissed: !0
 					})), t(Object(l.f)(Object(l.e)(n.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), p.b.Undo, n.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(E.xb)(!1), t(h({
+						Object(E.vb)(!1), t(h({
 							isDismissed: !1
 						}))
 					})))
@@ -2712,4 +2712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.a43f45855acffd479ea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.dd32a0872597cc6a5e16.js.map
