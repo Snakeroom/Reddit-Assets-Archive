@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.4c80c1a4951c75aa55f0.js
-// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.5437ea4347648f5c216c.js
+// Retrieved at 5/17/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -9039,11 +9039,10 @@
 				y = n("./src/reddit/selectors/experiments/coreStyles.ts"),
 				E = n("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
 				P = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				j = n("./src/reddit/selectors/goldPurchaseModals.ts"),
-				S = n("./src/reddit/selectors/tooltip.ts"),
-				w = n("./src/reddit/components/Header/GoldCoinsCta/index.m.less"),
-				_ = n.n(w);
-			const k = Object(s.a)({
+				j = n("./src/reddit/selectors/tooltip.ts"),
+				S = n("./src/reddit/components/Header/GoldCoinsCta/index.m.less"),
+				w = n.n(S);
+			const _ = Object(s.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-CoinPurchaseDropdown",
 					isReady(e) {
@@ -9063,26 +9062,25 @@
 						return "./src/reddit/components/CoinPurchaseDropdown/index.tsx"
 					}
 				}),
-				I = Object(f.a)(),
-				M = Object(d.c)({
+				k = Object(f.a)(),
+				I = Object(d.c)({
 					activeSaleConfig: P.a,
-					activeTooltipId: S.a,
-					coinPurchaseDropdownIsOpen: e => Object(S.b)(I)(e),
+					activeTooltipId: j.a,
+					coinPurchaseDropdownIsOpen: e => Object(j.b)(k)(e),
 					isFreeAwardEventEnabled: e => Object(E.a)(e) && Object(P.g)(e),
-					isInIcons2020: y.a,
-					premiumPurchaseModalIsOpen: j.o
+					isInIcons2020: y.a
 				}),
-				N = (e, t) => ({
+				M = (e, t) => ({
 					closeTooltip: () => e(Object(m.i)()),
 					requestSpecialEvents: () => e(Object(u.a)()),
 					toggleTooltip: t => {
-						e(t === I ? Object(m.i)() : Object(m.f)({
-							tooltipId: I
+						e(t === k ? Object(m.i)() : Object(m.f)({
+							tooltipId: k
 						}))
 					}
 				}),
-				T = Object(c.b)(M, N);
-			class A extends i.a.Component {
+				N = Object(c.b)(I, M);
+			class T extends i.a.Component {
 				constructor() {
 					super(...arguments), this.handleClick = e => {
 						const {
@@ -9128,38 +9126,37 @@
 						closeTooltip: n,
 						coinPurchaseDropdownIsOpen: s,
 						isFreeAwardEventEnabled: o,
-						isInIcons2020: r,
-						premiumPurchaseModalIsOpen: a
-					} = this.props, c = this.getButtonText(), d = !!e || o, u = Object(l.a)(_.a.icon, {
-						[_.a.special]: d
+						isInIcons2020: r
+					} = this.props, a = this.getButtonText(), c = !!e || o, d = Object(l.a)(w.a.icon, {
+						[w.a.special]: c
 					});
 					return i.a.createElement("button", {
-						className: Object(l.a)(t, _.a.ctaContainer, {
-							[_.a.special]: d
+						className: Object(l.a)(t, w.a.ctaContainer, {
+							[w.a.special]: c
 						}),
-						id: I,
+						id: k,
 						onClick: this.handleClick
 					}, i.a.createElement("div", {
-						className: Object(l.a)(_.a.ctaContent, {
-							[_.a.special]: d
+						className: Object(l.a)(w.a.ctaContent, {
+							[w.a.special]: c
 						})
 					}, r ? i.a.createElement(C.a, {
 						name: "coins",
-						className: u
+						className: d
 					}) : i.a.createElement(O.a, {
-						className: u
+						className: d
 					}), i.a.createElement("span", {
-						className: _.a.text
-					}, c)), s && i.a.createElement(k, {
+						className: w.a.text
+					}, a)), s && i.a.createElement(_, {
 						activeSaleConfig: e,
 						isFreeAwardEventEnabled: o,
 						isOpen: s,
 						onCloseTooltip: n,
-						tooltipId: I
-					}), a && i.a.createElement(h.a, null))
+						tooltipId: k
+					}))
 				}
 			}
-			t.a = T(Object(g.c)(A))
+			t.a = N(Object(g.c)(T))
 		},
 		"./src/reddit/components/Header/MwebResponsiveHeader/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -17649,4 +17646,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4c80c1a4951c75aa55f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5437ea4347648f5c216c.js.map
