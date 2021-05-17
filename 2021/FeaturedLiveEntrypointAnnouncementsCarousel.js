@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.7fe5ab088f754ae986d8.js
-// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.52c67c894d3270df816a.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -105,7 +105,7 @@
 				I = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(_.Gd)(n.variant)) return !1
+						if (n && Object(_.Fd)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -321,4 +321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.7fe5ab088f754ae986d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.52c67c894d3270df816a.js.map

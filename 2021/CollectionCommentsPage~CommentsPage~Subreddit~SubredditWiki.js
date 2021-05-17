@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0774d8406f68fcd1c8fe.js
-// Retrieved at 5/17/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.98c00cc9c4588bdc491e.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1525,7 +1525,7 @@
 				g = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				_ = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const x = Object(_.a)(f.Bb);
+			const x = Object(_.a)(f.Ab);
 			var v = r("./src/reddit/selectors/gold/powerups.ts"),
 				y = r("./src/reddit/selectors/subreddit.ts"),
 				w = r("./src/reddit/selectors/user.ts"),
@@ -3952,15 +3952,15 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(s.a)(n.Eb), Object(s.a)(n.Hb);
-			const i = Object(s.a)(n.Cb),
-				a = Object(s.a)(n.Fb),
-				o = Object(s.a)(n.Db),
-				c = Object(s.a)(n.Gb),
-				d = Object(s.a)(n.Ib),
-				l = Object(s.a)(n.wb),
-				u = Object(s.a)(n.vb);
-			Object(s.a)(n.xb)
+			Object(s.a)(n.Db), Object(s.a)(n.Gb);
+			const i = Object(s.a)(n.Bb),
+				a = Object(s.a)(n.Eb),
+				o = Object(s.a)(n.Cb),
+				c = Object(s.a)(n.Fb),
+				d = Object(s.a)(n.Hb),
+				l = Object(s.a)(n.vb),
+				u = Object(s.a)(n.ub);
+			Object(s.a)(n.wb)
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -4016,4 +4016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0774d8406f68fcd1c8fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.98c00cc9c4588bdc491e.js.map

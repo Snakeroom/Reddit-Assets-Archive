@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6b2ebbaf9978a2d5a2cd.js
-// Retrieved at 3/16/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.78ef967ee4ebe0628798.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -333,28 +333,27 @@
 				render() {
 					const {
 						showUpsell: e,
-						subreddit: t,
-						shouldHideAddEmote: s
+						subreddit: t
 					} = this.props, {
-						emoteBeingTyped: o,
-						isTooltipVisible: n
-					} = this.state, r = this.getMatchingEmotes(o), c = d()(), l = t.name, p = Object(h.a)(`/web/special-membership/${l}?corr=${c}`);
+						emoteBeingTyped: s,
+						isTooltipVisible: o
+					} = this.state, n = this.getMatchingEmotes(s), r = d()(), c = t.name, l = Object(h.a)(`/web/special-membership/${c}?corr=${r}`);
 					return a.a.createElement(S.a, {
 						focusOnTooltip: this.focusOnTooltip,
-						isVisible: n,
+						isVisible: o,
 						setIsVisible: this.setIsVisisble,
 						onSetApi: this.props.onSetApi,
-						className: o ? void 0 : j.a.toolbarTooltip,
-						title: o ? i.fbt._('Emotes matching "{emote}"', [i.fbt._param("emote", o)], {
+						className: s ? void 0 : j.a.toolbarTooltip,
+						title: s ? i.fbt._('Emotes matching "{emote}"', [i.fbt._param("emote", s)], {
 							hk: "tVQ7S"
 						}) : i.fbt._("Add r/{communityName} Emote", [i.fbt._param("communityName", t.name)], {
 							hk: "21G6fU"
 						}),
-						isSearching: !!o
+						isSearching: !!s
 					}, a.a.createElement("div", {
 						className: j.a.body,
 						ref: e => this.bodyEl = e
-					}, r.map((e, t) => a.a.createElement("article", {
+					}, n.map((e, t) => a.a.createElement("article", {
 						className: j.a.emotePack,
 						key: t
 					}, e.title && a.a.createElement("header", {
@@ -369,7 +368,7 @@
 						title: e.id,
 						onClick: () => this.onEmoteClick(e),
 						onKeyDown: this.onKeyPressedInTooltip
-					}))))), !o && e && a.a.createElement("div", {
+					}))))), !s && e && a.a.createElement("div", {
 						className: j.a.upsell
 					}, a.a.createElement("div", {
 						className: Object(m.a)(j.a.upsellMoreEmotes, j.a.emotes)
@@ -379,10 +378,10 @@
 						key: `${e}_${t}`
 					}))), a.a.createElement(f.k, {
 						className: j.a.upsellMoreEmotesButton,
-						to: p,
+						to: l,
 						onClick: e => {
 							e.stopPropagation(), this.props.sendEvent(e => ({
-								correlationId: c,
+								correlationId: r,
 								source: "meta",
 								action: "click",
 								noun: "emoji_tooltip_open_learn_more",
@@ -392,7 +391,7 @@
 						}
 					}, i.fbt._("Get More Emotes", null, {
 						hk: "3GJcvl"
-					}))), !o && !s && a.a.createElement("article", {
+					}))), !s && a.a.createElement("article", {
 						className: j.a.emotePack
 					}, a.a.createElement("header", {
 						className: j.a.emotePackTitle
@@ -524,4 +523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6b2ebbaf9978a2d5a2cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.78ef967ee4ebe0628798.js.map

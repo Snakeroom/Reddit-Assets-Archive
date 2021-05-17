@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f5156d5c6d029bcb243f.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.8a07adc3776afc79e91f.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -1507,7 +1507,7 @@
 								experimentName: o.x,
 								expEventOverride: t
 							});
-							return !!(Object(o.Gd)(s) ? void 0 : s)
+							return !!(Object(o.Fd)(s) ? void 0 : s)
 						})(s)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2567,4 +2567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f5156d5c6d029bcb243f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.8a07adc3776afc79e91f.js.map

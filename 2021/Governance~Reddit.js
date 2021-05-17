@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.331551970c89124b1933.js
-// Retrieved at 5/17/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.208e75a0d196ee528849.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2839,7 +2839,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(v.d)(e),
 				w = e => !!Object(D.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
-					experimentName: b.Uc
+					experimentName: b.Tc
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				j = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -21520,7 +21520,7 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(a.a)(s.zb)
+			const n = Object(a.a)(s.yb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, r) {
 			"use strict";
@@ -21534,7 +21534,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: e
 				});
-				return !(!r || Object(s.Gd)(r))
+				return !(!r || Object(s.Fd)(r))
 			}
 		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
@@ -21567,7 +21567,7 @@
 				l = e => e === a.I.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				y = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Gd)(t))
+				y = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.Fd)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -21581,14 +21581,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Gc
-					}) === s.Qc.Enabled
+						experimentName: s.Fc
+					}) === s.Pc.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Fc
-					}) === s.Pc.Enabled
+						experimentName: s.Ec
+					}) === s.Oc.Enabled
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -21744,4 +21744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.331551970c89124b1933.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.208e75a0d196ee528849.js.map

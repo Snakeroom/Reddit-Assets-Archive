@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b586883cb4ea417fdcbb.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2a9eb129859e1fb1157b.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -974,19 +974,19 @@
 				top: "bottom"
 			};
 
-			function X(e) {
+			function Z(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
 					return q[e]
 				}))
 			}
-			var Z = {
+			var X = {
 				start: "end",
 				end: "start"
 			};
 
 			function K(e) {
 				return e.replace(/start|end/g, (function(e) {
-					return Z[e]
+					return X[e]
 				}))
 			}
 
@@ -1307,9 +1307,9 @@
 								n = e.options,
 								r = e.name;
 							if (!t.modifiersData[r]._skip) {
-								for (var s = n.mainAxis, o = void 0 === s || s, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, E = Y(h), _ = c || (E === h || !f ? [X(h)] : function(e) {
+								for (var s = n.mainAxis, o = void 0 === s || s, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, E = Y(h), _ = c || (E === h || !f ? [Z(h)] : function(e) {
 										if (Y(e) === T) return [];
-										var t = X(e);
+										var t = Z(e);
 										return [K(e), t, K(t)]
 									}(h)), x = [h].concat(_).reduce((function(e, n) {
 										return e.concat(Y(n) === T ? function(e, t) {
@@ -1360,8 +1360,8 @@
 											padding: d
 										}),
 										W = F ? M ? S : y : M ? g : O;
-									v[U] > k[U] && (W = X(W));
-									var G = X(W),
+									v[U] > k[U] && (W = Z(W));
+									var G = Z(W),
 										H = [];
 									if (o && H.push(B[D] <= 0), a && H.push(B[W] <= 0, B[G] <= 0), H.every((function(e) {
 											return e
@@ -1447,16 +1447,16 @@
 											width: 0,
 											height: 0
 										},
-										X = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										Z = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										Z = X[A],
-										K = X[R],
+										X = Z[A],
+										K = Z[R],
 										Q = se(0, I[D], q[D]),
-										J = T ? I[D] / 2 - B - Q - Z - L : G - Q - Z - L,
+										J = T ? I[D] / 2 - B - Q - X - L : G - Q - X - L,
 										$ = T ? -I[D] / 2 + B + Q + K + L : H + Q + K + L,
 										ee = t.elements.arrow && v(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
@@ -2689,8 +2689,8 @@
 				H = n("./src/reddit/components/PostContainer/index.tsx"),
 				z = n("./src/reddit/components/PostFlairPicker/index.tsx"),
 				q = n("./src/reddit/components/PostLeftRail/index.tsx"),
-				X = n("./src/reddit/components/PostMedia/index.tsx"),
-				Z = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
+				Z = n("./src/reddit/components/PostMedia/index.tsx"),
+				X = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
 				K = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				Q = n("./src/reddit/components/PostTitle/index.tsx"),
 				J = n("./src/reddit/components/PostTopMeta/index.tsx"),
@@ -2794,7 +2794,7 @@
 						isOverlay: S,
 						isProfilePostListing: y,
 						inSubredditOrProfile: L = !1,
-						layout: X,
+						layout: Z,
 						moderatorPermissions: te,
 						modModeEnabled: ne,
 						onClickPost: oe,
@@ -2814,9 +2814,9 @@
 						shouldShowGalleryTileOption: Ie
 					} = this.props, Le = !!fe.media && fe.media.type === b.o.RTJSON, Pe = _e && Le, Ae = Object(z.b)(fe.id, S), Re = Object(ue.a)(te), De = Object(de.a)(te), Me = Object(le.a)(te), Fe = `-mod-actions-menu-${fe.id}`, Ue = `voting-arrows-${fe.id}`, Be = !!o && Object(h.e)(o) === fe.author, Ye = Object(B.c)(fe), Ve = Object(A.a)("View--Reports", fe.id, Ce), We = Object(B.a)(fe), Ge = !(S || x || v), He = fe.media && fe.media.type === b.o.LIVEVIDEO, {
 						moderationPrompt: ze
-					} = fe, qe = e => ke(Object(f.g)(fe.id, e)), Xe = Object(c.t)(fe, E), {
-						source: Ze
-					} = Xe, Ke = s.a.createElement(H.a, {
+					} = fe, qe = e => ke(Object(f.g)(fe.id, e)), Ze = Object(c.t)(fe, E), {
+						source: Xe
+					} = Ze, Ke = s.a.createElement(H.a, {
 						className: Object(d.a)(xe.a.compactPostStyles, Oe.a.postContainer, Object(m.a)(this.props), t),
 						isOverlay: S,
 						style: {
@@ -2923,7 +2923,7 @@
 					}), s.a.createElement(Y.a, {
 						className: Oe.a.modToolsFlatlist,
 						isOverlay: !1,
-						layout: X,
+						layout: Z,
 						modModeEnabled: ne,
 						post: fe,
 						sendEvent: ke,
@@ -2931,7 +2931,7 @@
 					}), Re && s.a.createElement(D.a, {
 						dropdownId: Fe,
 						onClick: () => qe("post_mod_action_menu")
-					}, s.a.createElement(P.b, null), s.a.createElement(Z.a, {
+					}, s.a.createElement(P.b, null), s.a.createElement(X.a, {
 						canEditFlair: De && ye,
 						hasModPostPerms: Re,
 						hasModFullPerms: Me,
@@ -2957,7 +2957,7 @@
 						isCommentsPage: x,
 						isOverlay: !1,
 						isProfilePostListing: y,
-						layout: X,
+						layout: Z,
 						permalink: fe.permalink,
 						sendEvent: ke,
 						showEditPost: Pe,
@@ -2971,11 +2971,11 @@
 							hide: !1,
 							report: !1
 						})
-					}), !ve && we(fe, r, O, !0))), fe.isSponsored && Ze && Ze.url && s.a.createElement(T.a, {
+					}), !ve && we(fe, r, O, !0))), fe.isSponsored && Xe && Xe.url && s.a.createElement(T.a, {
 						className: Oe.a.adLinkWrapper
 					}, s.a.createElement(C.a, {
 						post: fe,
-						adLinkContent: Xe,
+						adLinkContent: Ze,
 						isCompact: !0
 					})), ne && Re && Ye && s.a.createElement("div", {
 						className: Oe.a.compactPostRow
@@ -3003,7 +3003,7 @@
 				}, e.post.crosspostRootId ? s.a.createElement("div", {
 					className: Oe.a.crosspostMediaWrapper
 				}, ke(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : ke(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
-				ke = (e, t, n, r) => s.a.createElement(X.a, {
+				ke = (e, t, n, r) => s.a.createElement(Z.a, {
 					isExpando: !0,
 					isGalleryTileLayoutDefault: r,
 					isListing: !0,
@@ -4114,22 +4114,22 @@
 					}),
 					shouldOpenPostInNewTab: R.bb
 				}),
-				X = e => {
+				Z = e => {
 					const {
 						post: t,
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, s = Object(U.a)(), i = Object(B.a)(p.Tb) === p.Xb.Enabled;
+					} = t, s = Object(U.a)(), i = Object(B.a)(p.Sb) === p.Wb.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(z, {
 						nowrap: e.nowrap
-					}, o.a.createElement(Z, e));
+					}, o.a.createElement(X, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(f.b, {
 						href: t.source.url,
 						isSponsored: r,
 						postId: t.id,
 						source: t.source
-					}, o.a.createElement(Z, e)); {
+					}, o.a.createElement(X, e)); {
 						const a = t.media && Object(g.G)(t.media) ? Object(x.c)(t.id, n.name) : t.permalink,
 							c = e.isCommentPermalink ? Object(_.b)(a) : i ? Object(h.a)(a, void 0, s) : Object(h.a)(a);
 						return o.a.createElement(z, {
@@ -4144,7 +4144,7 @@
 								isSponsored: e.isSponsored,
 								postId: e.id,
 								source: n
-							}, o.a.createElement(Z, t)) : o.a.createElement(Z, t)
+							}, o.a.createElement(X, t)) : o.a.createElement(X, t)
 						})(t, e) : o.a.createElement(H, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
@@ -4152,10 +4152,10 @@
 							target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 							titleColor: e.titleColor,
 							to: c
-						}, o.a.createElement(Z, e)))
+						}, o.a.createElement(X, e)))
 					}
 				},
-				Z = e => {
+				X = e => {
 					const {
 						leftFlair: t,
 						isCommentsPageAd: n,
@@ -4237,7 +4237,7 @@
 						post: a,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), o.a.createElement(X, W({}, this.props, {
+					}), o.a.createElement(Z, W({}, this.props, {
 						leftFlair: c ? p : void 0
 					})), i && o.a.createElement(P, {
 						className: M.a.pollMeta,
@@ -5304,4 +5304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b586883cb4ea417fdcbb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2a9eb129859e1fb1157b.js.map

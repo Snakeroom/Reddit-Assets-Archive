@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.60c507dca8fadbe8a85a.js
-// Retrieved at 5/17/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b52b62a21e6a4694dae5.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -2736,15 +2736,15 @@
 			}));
 			var x = r("./src/reddit/constants/experiments.ts"),
 				t = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(t.a)(x.Eb), Object(t.a)(x.Hb);
-			const k = Object(t.a)(x.Cb),
-				n = Object(t.a)(x.Fb),
-				o = Object(t.a)(x.Db),
-				m = Object(t.a)(x.Gb),
-				s = Object(t.a)(x.Ib),
-				e = Object(t.a)(x.wb),
-				l = Object(t.a)(x.vb);
-			Object(t.a)(x.xb)
+			Object(t.a)(x.Db), Object(t.a)(x.Gb);
+			const k = Object(t.a)(x.Bb),
+				n = Object(t.a)(x.Eb),
+				o = Object(t.a)(x.Cb),
+				m = Object(t.a)(x.Fb),
+				s = Object(t.a)(x.Hb),
+				e = Object(t.a)(x.vb),
+				l = Object(t.a)(x.ub);
+			Object(t.a)(x.wb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(a, i, r) {
 			"use strict";
@@ -2758,7 +2758,7 @@
 					experimentEligibilitySelector: t.a,
 					experimentName: a
 				});
-				return !(!r || Object(x.Gd)(r))
+				return !(!r || Object(x.Fd)(r))
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(a, i, r) {
@@ -2815,4 +2815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.60c507dca8fadbe8a85a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.b52b62a21e6a4694dae5.js.map

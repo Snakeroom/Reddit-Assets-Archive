@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.b85d57da0906ee20e142.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.8c4d37580942acd0b7f3.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -544,7 +544,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || u,
-				onClick: () => n === d.pd.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
+				onClick: () => n === d.od.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
 				onMouseEnter: s,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -580,4 +580,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.b85d57da0906ee20e142.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.8c4d37580942acd0b7f3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.07ab98b085b55c7f8b69.js
-// Retrieved at 5/17/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.661e029d7e39ac366e2c.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -90,7 +90,7 @@
 			r.d(t, "e", (function() {
 				return L
 			})), r.d(t, "d", (function() {
-				return F
+				return T
 			})), r.d(t, "c", (function() {
 				return A
 			})), r.d(t, "a", (function() {
@@ -181,8 +181,8 @@
 						error: s.error
 					}))
 				}),
-				T = (e, t) => t.type === u.a.PROFILE && e.displayText === t.name.replace("u_", ""),
-				F = (e, t, r) => async (a, l, {
+				F = (e, t) => t.type === u.a.PROFILE && e.displayText === t.name.replace("u_", ""),
+				T = (e, t, r) => async (a, l, {
 					apiContext: v
 				}) => {
 					let x = e.map(e => e.type === u.a.SUBREDDIT ? {
@@ -201,7 +201,7 @@
 					if (h) {
 						const t = x.length,
 							r = e.length;
-						if (x = x.filter(e => !T(h, e)), (e = e.filter(e => !T(h, e))).length !== r || x.length !== t) {
+						if (x = x.filter(e => !F(h, e)), (e = e.filter(e => !F(h, e))).length !== r || x.length !== t) {
 							const e = n.fbt._("You cannot follow yourself!", null, {
 								hk: "3tfSaq"
 							});
@@ -294,7 +294,7 @@
 						I = () => Object(E.hb)(r(), {
 							identifier: C
 						});
-					(I() || (await t(F([C], !0)), I())) && ((await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
+					(I() || (await t(T([C], !0)), I())) && ((await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
 						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
@@ -828,8 +828,8 @@
 					}))
 				}))(Object(x.b)(M)),
 				L = r("./src/reddit/components/ProfileIdCard/Highlights.m.less"),
-				T = r.n(L);
-			const F = Object(p.a)(I.j, (e, {
+				F = r.n(L);
+			const T = Object(p.a)(I.j, (e, {
 					profileName: t
 				}) => Object(_.tb)(e, t), (e, t) => ({
 					awardeeKarma: t ? t.awardeeKarma : 0,
@@ -840,12 +840,12 @@
 					subscribers: e && e.subscribers || 0,
 					totalKarma: t ? t.totalKarma || t.postKarma + t.commentKarma : 0
 				})),
-				B = a.a.div("Container", T.a);
+				B = a.a.div("Container", F.a);
 
 			function A(e, t) {
 				return `profile--id-card--highlight-tooltip-${e?"-overlay":""}-${t}`
 			}
-			var D = Object(u.b)(F)(Object(x.b)(e => {
+			var D = Object(u.b)(T)(Object(x.b)(e => {
 					const {
 						awardeeKarma: t,
 						awarderKarma: r,
@@ -858,7 +858,7 @@
 					} = e, l = A(a, "karma"), u = A(a, "cakeday"), p = `${m.fbt._({"*":"{number} Post Karma",_1:"1 Post Karma"},[m.fbt._plural(o,"number",Object(b.b)(o,{displayFull:!0}))],{hk:"husfU"})}\n${m.fbt._({"*":"{number} Comment Karma",_1:"1 Comment Karma"},[m.fbt._plural(i,"number",Object(b.b)(i,{displayFull:!0}))],{hk:"26iPTL"})}\n${m.fbt._({"*":"{number} Awardee Karma",_1:"1 Awardee Karma"},[m.fbt._plural(t,"number",Object(b.b)(t,{displayFull:!0}))],{hk:"2Ww5MR"})}\n${m.fbt._({"*":"{number} Awarder Karma",_1:"1 Awarder Karma"},[m.fbt._plural(r,"number",Object(b.b)(r,{displayFull:!0}))],{hk:"2F1chz"})}`;
 					return s.a.createElement(B, null, s.a.createElement(U, {
 						icon: s.a.createElement(h.a, {
-							className: T.a.icon,
+							className: F.a.icon,
 							key: "karma"
 						}),
 						label: Object(b.b)(c, {
@@ -871,7 +871,7 @@
 						tooltip: p
 					}), s.a.createElement(U, {
 						icon: s.a.createElement(g.a, {
-							className: T.a.icon,
+							className: F.a.icon,
 							key: "cakeDay"
 						}),
 						label: Object(f.a)(n, !0),
@@ -882,7 +882,7 @@
 						tooltip: Object(v.d)(n)
 					}), d > 0 && s.a.createElement(U, {
 						icon: s.a.createElement(C.a, {
-							className: T.a.icon,
+							className: F.a.icon,
 							key: "followers"
 						}),
 						title: m.fbt._("Followers", null, {
@@ -1648,8 +1648,8 @@
 					LoadingComponent: () => null
 				}),
 				L = r("./src/reddit/constants/modals.ts"),
-				T = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				F = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				F = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				T = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				B = r("./src/reddit/models/Gold/Premium/index.ts"),
 				A = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				D = r("./src/reddit/selectors/premium.ts"),
@@ -1679,7 +1679,7 @@
 					isLoading: e,
 					...t
 				}) => s.a.createElement("div", G({}, t, {
-					className: Object(w.a)(W.a.Shimmer, Object(F.b)({
+					className: Object(w.a)(W.a.Shimmer, Object(T.b)({
 						isLoading: e
 					}))
 				}));
@@ -1693,7 +1693,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						e(Object(T.d)(T.a.GiftPremiumFlow));
+						e(Object(F.d)(F.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -1952,7 +1952,7 @@
 					prefShowSnoovatar: E,
 					snoovatarFullBodyAsset: N,
 					username: j
-				} = x, y = !!t && t.id === O, S = !(!t || !t.snoovatarFullBodyAsset), k = f && f.bannerBackgroundImage, M = !!m && m.isNSFW, U = M && n, L = !(!u || !u.userIsSubscriber), T = `/user/${j}/`, F = g && g.url === T, B = !u || u.acceptChats, A = !u || u.acceptPms;
+				} = x, y = !!t && t.id === O, S = !(!t || !t.snoovatarFullBodyAsset), k = f && f.bannerBackgroundImage, M = !!m && m.isNSFW, U = M && n, L = !(!u || !u.userIsSubscriber), F = `/user/${j}/`, T = g && g.url === F, B = !u || u.acceptChats, A = !u || u.acceptPms;
 				return s.a.createElement(l.a, {
 					isEmployee: P,
 					isGold: w,
@@ -1961,7 +1961,7 @@
 					isOwnProfile: y,
 					publicDescription: u ? u.publicDescription : void 0,
 					title: m ? m.title : void 0,
-					url: F ? null : T,
+					url: T ? null : F,
 					userCreated: _,
 					username: j,
 					recentAwardings: I,
@@ -2557,7 +2557,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!r || Object(n.Gd)(r))
+				return !(!r || Object(n.Fd)(r))
 			}
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
@@ -2578,4 +2578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.07ab98b085b55c7f8b69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.661e029d7e39ac366e2c.js.map

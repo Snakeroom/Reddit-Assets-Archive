@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.bc7e885ed418b7967226.js
-// Retrieved at 5/17/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.dd930219890b7c4f513a.js
+// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -1978,7 +1978,7 @@
 								experimentName: o.x,
 								expEventOverride: t
 							});
-							return !!(Object(o.Gd)(n) ? void 0 : n)
+							return !!(Object(o.Fd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -3023,7 +3023,7 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.zb)
+			const o = Object(r.a)(s.yb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -3037,7 +3037,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!n || Object(s.Gd)(n))
+				return !(!n || Object(s.Fd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
@@ -3052,14 +3052,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Gc
-					}) === s.Qc.Enabled
+						experimentName: s.Fc
+					}) === s.Pc.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Fc
-					}) === s.Pc.Enabled
+						experimentName: s.Ec
+					}) === s.Oc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -3088,4 +3088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.bc7e885ed418b7967226.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.dd930219890b7c4f513a.js.map
