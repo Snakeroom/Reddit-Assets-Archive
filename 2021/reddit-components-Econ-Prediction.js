@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.187dcf87716ed23a0c27.js
-// Retrieved at 5/17/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.60c507dca8fadbe8a85a.js
+// Retrieved at 5/17/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -252,7 +252,7 @@
 							disallowProfile: !0
 						});
 					if (!k) throw new Error("Post does not belong to a subreddit");
-					const n = await Object(m.f)(x(), k.name, Object(l.d)(t));
+					const n = await Object(m.f)(x(), k.name, Object(l.c)(t));
 					if (n.error || !n.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: o
@@ -1094,7 +1094,7 @@
 				selectedChipPack: i,
 				selectedCoinPack: r
 			}) {
-				const n = Object(k.e)(u.h),
+				const n = Object(k.e)(u.g),
 					o = Object(k.e)(V.d),
 					[m, e] = Object(x.useState)(null),
 					[l, c] = Object(x.useState)(!1),
@@ -1260,7 +1260,7 @@
 			const {
 				fbt: fa
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), da = 1e3, ua = Object(n.c)({
-				isNewPredictionsSheet: u.h,
+				isNewPredictionsSheet: u.g,
 				userCoins: V.d
 			}), ya = {
 				fetchPredictionChipPackages: h.d,
@@ -1910,9 +1910,9 @@
 			const {
 				fbt: li
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ci = Object(n.c)({
-				isAutoVoteEnabled: u.f,
+				isAutoVoteEnabled: u.e,
 				isEditing: B.K,
-				isVoteAnimationEnabled: u.e,
+				isVoteAnimationEnabled: u.d,
 				prediction: A.g,
 				pollId: A.a,
 				post: D.F,
@@ -2717,6 +2717,50 @@
 				d: "M10.3785 4.86328H14.9734C15.6086 4.86328 16.1221 4.3498 16.1221 3.71456V1.41713C16.1221 0.781889 15.6086 0.268413 14.9734 0.268413H10.3785H5.78363H1.18876C0.554665 0.268413 0.0400391 0.781889 0.0400391 1.41713V3.71456C0.0400391 4.3498 0.554665 4.86328 1.18876 4.86328H5.78363H10.3785Z"
 			})))
 		},
+		"./src/reddit/selectors/experiments/econ/predictions.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "e", (function() {
+				return k
+			})), r.d(i, "f", (function() {
+				return n
+			})), r.d(i, "c", (function() {
+				return o
+			})), r.d(i, "g", (function() {
+				return m
+			})), r.d(i, "d", (function() {
+				return s
+			})), r.d(i, "b", (function() {
+				return e
+			})), r.d(i, "a", (function() {
+				return l
+			}));
+			var x = r("./src/reddit/constants/experiments.ts"),
+				t = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			Object(t.a)(x.Eb), Object(t.a)(x.Hb);
+			const k = Object(t.a)(x.Cb),
+				n = Object(t.a)(x.Fb),
+				o = Object(t.a)(x.Db),
+				m = Object(t.a)(x.Gb),
+				s = Object(t.a)(x.Ib),
+				e = Object(t.a)(x.wb),
+				l = Object(t.a)(x.vb);
+			Object(t.a)(x.xb)
+		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "a", (function() {
+				return k
+			}));
+			var x = r("./src/reddit/constants/experiments.ts"),
+				t = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const k = a => i => {
+				const r = Object(t.c)(i, {
+					experimentEligibilitySelector: t.a,
+					experimentName: a
+				});
+				return !(!r || Object(x.Gd)(r))
+			}
+		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "b", (function() {
@@ -2771,4 +2815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.187dcf87716ed23a0c27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.60c507dca8fadbe8a85a.js.map

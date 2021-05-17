@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3342aa3d2e88b3417c1e.js
-// Retrieved at 5/13/2021, 5:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.07ab98b085b55c7f8b69.js
+// Retrieved at 5/17/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -901,8 +901,8 @@
 				Z = r("./src/reddit/controls/OutboundLink/index.tsx"),
 				z = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				q = r("./src/reddit/icons/svgs/Close/index.tsx"),
-				X = r("./src/reddit/icons/svgs/Premium/index.tsx"),
-				V = r("./src/reddit/icons/svgs/Settings/index.tsx"),
+				V = r("./src/reddit/icons/svgs/Premium/index.tsx"),
+				X = r("./src/reddit/icons/svgs/Settings/index.tsx"),
 				J = r("./src/reddit/components/ProfileIdCard/ProfileImage/ProfileIcon/index.tsx"),
 				Y = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				Q = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
@@ -961,7 +961,7 @@
 				}))), !t && d && s.a.createElement(H.a, {
 					to: "/settings/profile",
 					className: te.a.settingsLink
-				}, s.a.createElement(V.a, {
+				}, s.a.createElement(X.a, {
 					className: ne.a.settingsIcon
 				})), b && s.a.createElement("h4", {
 					className: te.a.userTitle
@@ -980,7 +980,7 @@
 						hk: "3Fylv"
 					}),
 					href: `${G.a.redditUrl}/premium`
-				}, s.a.createElement(X.a, {
+				}, s.a.createElement(V.a, {
 					className: te.a.premiumIcon
 				})), d && s.a.createElement(Y.a, {
 					currentUserHasSnoovatar: !1,
@@ -1847,9 +1847,9 @@
 					onModeratorsRequested: () => e(Object(y.b)(t))
 				}))(Z),
 				q = r("./src/reddit/components/ProfileIdCard/index.m.less"),
-				X = r.n(q);
+				V = r.n(q);
 			const {
-				fbt: V
+				fbt: X
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), J = Object(i.c)({
 				account: h.i,
 				activeTooltipId: g.a,
@@ -1881,37 +1881,37 @@
 				username: e,
 				currentUserHasSubreddit: t
 			}) => s.a.createElement("div", {
-				className: X.a.actionItem
+				className: V.a.actionItem
 			}, s.a.createElement(p.k, {
-				className: X.a.button,
+				className: V.a.button,
 				to: t ? `/user/${e}/submit` : "/submit"
-			}, V._("New Post", null, {
+			}, X._("New Post", null, {
 				hk: "2VCZwF"
 			}))), Q = ({
 				profileName: e,
 				onToggleFollow: t,
 				userIsSubscriber: r
 			}) => s.a.createElement("div", {
-				className: X.a.actionItem
+				className: V.a.actionItem
 			}, r ? s.a.createElement(p.l, {
-				className: X.a.button,
+				className: V.a.button,
 				onClick: () => t(e, r)
-			}, V._("Unfollow", null, {
+			}, X._("Unfollow", null, {
 				hk: "1nM1SO"
 			})) : s.a.createElement(p.i, {
-				className: X.a.button,
+				className: V.a.button,
 				onClick: () => t(e, r)
-			}, V._("Follow", null, {
+			}, X._("Follow", null, {
 				hk: "OPQuq"
 			}))), $ = ({
 				userId: e
 			}) => s.a.createElement("div", {
-				className: X.a.actionItem
+				className: V.a.actionItem
 			}, s.a.createElement(d.b, {
 				contextId: e,
-				className: X.a.button,
+				className: V.a.button,
 				userId: e,
-				text: V._("Chat", null, {
+				text: X._("Chat", null, {
 					hk: "UKkIW"
 				})
 			}));
@@ -2545,6 +2545,21 @@
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const a = Object(s.a)(n.qb)
 		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			}));
+			var n = r("./src/reddit/constants/experiments.ts"),
+				s = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const a = e => t => {
+				const r = Object(s.c)(t, {
+					experimentEligibilitySelector: s.a,
+					experimentName: e
+				});
+				return !(!r || Object(n.Gd)(r))
+			}
+		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
@@ -2563,4 +2578,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3342aa3d2e88b3417c1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.07ab98b085b55c7f8b69.js.map
