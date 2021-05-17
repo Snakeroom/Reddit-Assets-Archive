@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.6925e3fb5b25ca863868.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.d5313fa6ab2ce1ec98f8.js
+// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2953,7 +2953,7 @@
 					showCreatePollButton: e => (e => Object(He.c)(e, {
 						experimentEligibilitySelector: He.a,
 						experimentName: Ue.A
-					}) === Ue.G.Treatment)(e) && !Object(Ie.g)(),
+					}) === Ue.G.Treatment)(e) && !Object(Ie.h)(),
 					subreddit: (e, t) => Object(re.A)(e, {
 						subredditName: t.listingName
 					}),
@@ -4027,7 +4027,7 @@
 			class h extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
-						if (this.props.userIsSubscriber ? this.props.onUnsubscribe() : this.props.onSubscribe(), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
+						if (this.props.userIsSubscriber ? (this.props.onUnsubscribe(), this.props.afterUnsubscribeAction && this.props.afterUnsubscribeAction()) : (this.props.onSubscribe(), this.props.enableNotificationTooltipAfterSubscription && this.props.enableNotificationTooltipAfterSubscription()), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
 							const e = this.props.getEventFactory(this.props.userIsSubscriber);
 							e && this.props.sendEvent(e)
 						}
@@ -5363,4 +5363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6925e3fb5b25ca863868.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d5313fa6ab2ce1ec98f8.js.map

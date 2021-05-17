@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ef789035d81c3b89bf85.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b0dbc07e2486a14293ee.js
+// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2438,7 +2438,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.lb)(e)
+					Object(p.ob)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -2464,7 +2464,7 @@
 						thingId: y,
 						displayUnusableAwardError: E
 					} = this.props;
-					s || Object(m.d)(m.a.GildingFlow, !1), u(Object(h.viewGildModalEvent)(l.id, n, y)), g(!r && Object(p.q)());
+					s || Object(m.d)(m.a.GildingFlow, !1), u(Object(h.viewGildModalEvent)(l.id, n, y)), g(!r && Object(p.r)());
 					const _ = w ? w.id : O || (o && o.belongsTo ? o.belongsTo.id : void 0);
 					if (_ && t(_), Re(e, l) && (E(), c(b.n)), w || j) {
 						x(w ? w.name : j)
@@ -2580,7 +2580,7 @@
 					})
 				})),
 				setIsAnonymous: t => {
-					e(Object(O.setIsAnonymous)(t)), Object(p.lb)(t)
+					e(Object(O.setIsAnonymous)(t)), Object(p.ob)(t)
 				},
 				subredditAboutRequested: t => e(Object(I.u)(t)),
 				subredditLockedCoinsRequested: (t, s) => e(Object(x.a)(t, s)),
@@ -5230,4 +5230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ef789035d81c3b89bf85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b0dbc07e2486a14293ee.js.map

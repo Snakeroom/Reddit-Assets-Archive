@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a190f6135f59f87aa95d.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b38864bb7bb2f9de8c3d.js
+// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1068,7 +1068,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(D.jb)(null !== (l = null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(D.mb)(null !== (l = null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? s.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : s.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1369,7 +1369,7 @@
 				d = n("./src/reddit/components/Settings/modalIds.ts"),
 				l = n("./src/reddit/helpers/localStorage/index.ts"),
 				u = n("./src/reddit/selectors/emailCollection.ts");
-			const m = o()(l.c),
+			const m = o()(l.d),
 				p = () => async (e, t) => {
 					const n = t();
 					m(), Object(u.a)(n) && (await e(Object(i.x)()), Object(u.a)(t()) && e(Object(a.d)({
@@ -1377,7 +1377,7 @@
 					})))
 				}, b = () => async (e, t) => {
 					const n = t();
-					Object(u.a)(n) && (Object(l.b)(), e(Object(a.c)({
+					Object(u.a)(n) && (Object(l.c)(), e(Object(a.c)({
 						notificationBannerId: c.a.EmailCollectionBannerId
 					})))
 				}, h = () => async (e, t) => {
@@ -2203,7 +2203,7 @@
 						})
 					})))
 				}, f = e => async (t, n) => {
-					const o = Object(i.l)();
+					const o = Object(i.m)();
 					if (o >= 3) return;
 					const a = n().user.prefs.useMarkdown ? d.h.MARKDOWN : d.h.RICH_TEXT;
 					if (e === a) return;
@@ -2221,7 +2221,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.gb)(o + 1)
+					})), Object(i.jb)(o + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -3305,14 +3305,14 @@
 						e && Ee.a.remove(Lt.a, {
 							domain: U.a.cookieDomain
 						});
-						const t = Object(Dt.y)(et.a.ALPHA_CONSUMER);
-						t && Object(Dt.S)(et.a.ALPHA_CONSUMER), (e || t) && Object(Dt.sb)(et.a.REDESIGN_MODAL, !0)
+						const t = Object(Dt.z)(et.a.ALPHA_CONSUMER);
+						t && Object(Dt.U)(et.a.ALPHA_CONSUMER), (e || t) && Object(Dt.vb)(et.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
-					} = this.props, n = Object(Dt.y)(et.a.REDESIGN_MODAL);
-					!e && n ? t() : e && !n && Object(Dt.sb)(et.a.REDESIGN_MODAL, !0)
+					} = this.props, n = Object(Dt.z)(et.a.REDESIGN_MODAL);
+					!e && n ? t() : e && !n && Object(Dt.vb)(et.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -5831,7 +5831,7 @@
 					}, this.close = () => {
 						this.props.onCloseDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Dt.T)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Dt.V)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -5841,7 +5841,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(Dt.zb)({
+							recentSearches: Object(Dt.Cb)({
 								...e,
 								section: Er.c.recent
 							}, this.props.currentUser.id)
@@ -5935,7 +5935,7 @@
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
-							const e = Object(Dt.F)(this.props.currentUser.id);
+							const e = Object(Dt.G)(this.props.currentUser.id);
 							e.length > 0 && (this.setState({
 								recentSearches: this.props.isLoggedIn ? e : [],
 								itemList: [...e, ...this.props.trendingItems]
@@ -14296,7 +14296,7 @@
 			const oe = 1e3;
 			class re extends u.a.Component {
 				constructor() {
-					super(...arguments), this.flush = ne()(() => Object(se.pb)(this.props.storageKey, this.props.value), oe)
+					super(...arguments), this.flush = ne()(() => Object(se.sb)(this.props.storageKey, this.props.value), oe)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -14454,7 +14454,7 @@
 					return s
 				} : () => e => t => e(t),
 				Ze = n("./src/reddit/helpers/survey/index.ts");
-			var Ye = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Ze.b).filter(t => t === e).length)(t.type) && Object(se.M)(Ze.b[t.type]), e(t)) : () => e => t => e(t);
+			var Ye = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Ze.b).filter(t => t === e).length)(t.type) && Object(se.O)(Ze.b[t.type]), e(t)) : () => e => t => e(t);
 			const Xe = 5 * g.fb;
 			var $e = e => {
 					const t = ne()(() => {
@@ -14692,7 +14692,7 @@
 				Zt = n("./src/reddit/actions/publicAccessNetwork/constants.ts");
 			const Yt = Object(Qt.a)(Zt.C),
 				Xt = () => {
-					return Object(se.u)($.b.RPAN_USER_SETTINGS_STORE) || void 0
+					return Object(se.v)($.b.RPAN_USER_SETTINGS_STORE) || void 0
 				};
 			var $t = n("./src/reddit/actions/global/constants.ts");
 			Object(Kt.a)({
@@ -14849,7 +14849,7 @@
 						Object(Ve.i)(r) && e.push(me.e), e.length > 0 && n.dispatch(Object(m.c)(Object(v.a)(c.url, e)))
 					}
 					return xt.a.initialize(), {
-						localStorageData: Object(se.v)()
+						localStorageData: Object(se.w)()
 					}
 				},
 				postRender: ({
@@ -14946,7 +14946,7 @@
 										text: s.fbt._("Successfully logged in!", null, {
 											hk: "2POUVB"
 										})
-									})), u = !0, Object(mt.c)(le.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [me.o]))), Object(mt.b)(le.a.JustLoggedOut) && (u = !0, Object(mt.c)(le.a.JustLoggedOut)), Object(G.a)(t), !1 !== se.N()) {
+									})), u = !0, Object(mt.c)(le.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [me.o]))), Object(mt.b)(le.a.JustLoggedOut) && (u = !0, Object(mt.c)(le.a.JustLoggedOut)), Object(G.a)(t), !1 !== se.P()) {
 									let s;
 									Object(Ft.a)(t) && (s = () => {
 										const {
@@ -14985,29 +14985,29 @@
 									{
 										currentPage: n
 									} = t.platform;
-								if ("visible" !== document.visibilityState && (se.Db(Date.now()), Object(k.a)(Object(Ot.a)("tab_backgrounded")(t))), (e => Object(Lt.c)(e, {
+								if ("visible" !== document.visibilityState && (se.Gb(Date.now()), Object(k.a)(Object(Ot.a)("tab_backgrounded")(t))), (e => Object(Lt.c)(e, {
 										experimentEligibilitySelector: e => !Object(Wt.d)(e),
 										experimentName: Rt.cb
 									}) === Rt.jb.Enabled)(t) && "visible" === document.visibilityState && n && Object(ht.k)(n.routeMatch, c.getState(), I.TimerType.Revisit, 0, n.urlParams, !0), "visible" === document.visibilityState) {
-									const e = se.s(),
-										t = se.t(),
-										n = se.A(),
-										s = se.J();
+									const e = se.t(),
+										t = se.u(),
+										n = se.B(),
+										s = se.L();
 									if (s && e && n) {
 										const o = Date.now() - s;
 										Object(k.a)(Object(Ot.e)("tab_backgrounded", n)(c.getState(), o, e, t))
-									}(s || e || n || t) && (se.U(), se.Y(), se.W(), se.V())
+									}(s || e || n || t) && (se.X(), se.bb(), se.Z(), se.Y())
 								}
 								Object(an.a)(c.getState()) && (null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && rn.d[n.locationState.clickId] && !rn.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(rn.b)(n.locationState.clickId) : Object(rn.c)(n.locationState.clickId))
 							}), Object(Wt.g)(c.getState()) && Pt(c.getState), c.dispatch(Object(K.j)())
 						}), window.history.scrollRestoration = "manual", Vt.a.attachStore(c), c.dispatch(Object(W.b)(P.a.PageLoad)), Object(He.c)(c.getState()) && c.dispatch(Object(on.e)()), Object(Ut.b)(c.getState())) {
-						const e = se.p(null === (l = c.getState().user.account) || void 0 === l ? void 0 : l.id);
+						const e = se.q(null === (l = c.getState().user.account) || void 0 === l ? void 0 : l.id);
 						c.dispatch(Object(q.A)({
 							posts: null != e ? e : []
 						}))
 					}
 					if (Object(Ut.a)(c.getState())) {
-						const e = se.o(null === (u = c.getState().user.account) || void 0 === u ? void 0 : u.id);
+						const e = se.p(null === (u = c.getState().user.account) || void 0 === u ? void 0 : u.id);
 						c.dispatch(Object(A.k)({
 							comments: null != e ? e : []
 						}))
@@ -17647,4 +17647,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a190f6135f59f87aa95d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b38864bb7bb2f9de8c3d.js.map

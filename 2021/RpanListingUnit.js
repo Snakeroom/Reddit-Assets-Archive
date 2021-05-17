@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8ed1c6dd3d8154a2505f.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.0a68572ced568df384fe.js
+// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1941,19 +1941,19 @@
 			class ae extends r.Component {
 				constructor(e) {
 					super(e), this.observableElement = n.a.createRef(), this.videoRef = n.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(w.R)()
+						Object(w.T)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(w.G)());
+						const e = Number(Object(w.H)());
 						if (e) {
 							if (Date.now() - e >= X) {
-								Object(w.R)();
+								Object(w.T)();
 								const e = 30 * l.x,
 									t = Date.now() - e + $;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(w.Ab)(Date.now())
+						} else Object(w.Db)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -5127,4 +5127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.8ed1c6dd3d8154a2505f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.0a68572ced568df384fe.js.map

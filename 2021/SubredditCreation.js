@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.77421c94080ba6528e7b.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.5f8f4b879056d9f19dd6.js
+// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -182,10 +182,10 @@
 			}
 			var v = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(m.mb)()
+					e(Object(c.i)()), Object(m.pb)()
 				},
 				onViewTooltip: () => {
-					Object(m.Eb)()
+					Object(m.Hb)()
 				}
 			}))(Object(p.c)(C));
 			const g = "editable-primary-topic-idcard";
@@ -254,7 +254,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(m.r)()
+						tooltipDismissed: Object(m.s)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -3133,4 +3133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.77421c94080ba6528e7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.5f8f4b879056d9f19dd6.js.map

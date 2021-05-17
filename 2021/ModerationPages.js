@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.85537cf3d40f1e192ed3.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.95cf8ed459935dba23d5.js
+// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -5933,7 +5933,7 @@
 					update: a
 				} = e, d = Object(Q.a)(), l = Object(i.d)(), [c, u] = Object(o.useState)(s), [m, p] = Object(o.useState)(!1), [h, b] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					b(Object(X.z)("location")), Object(X.tb)("location")
+					b(Object(X.A)("location")), Object(X.wb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(M.a, null, j.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(R.k, {
@@ -6884,10 +6884,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.mb)()
+					e(Object(l.i)()), Object(p.pb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Eb)()
+					Object(p.Hb)()
 				}
 			}))(Object(u.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -6956,7 +6956,7 @@
 				componentDidMount() {
 					const e = this.props.onShowTooltip;
 					this.setState({
-						tooltipDismissed: Object(p.r)()
+						tooltipDismissed: Object(p.s)()
 					}, () => {
 						this.isTooltipEnabled() && e && e()
 					})
@@ -23478,7 +23478,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(q.z)("location")
+						locationSettingSeen: Object(q.A)("location")
 					})
 				}
 				render() {
@@ -24830,4 +24830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.85537cf3d40f1e192ed3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.95cf8ed459935dba23d5.js.map

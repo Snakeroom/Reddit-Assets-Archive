@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.7114c7967cf35ebaa65e.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.67caaac1972ed756319e.js
+// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1305,7 +1305,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(B.jb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(B.mb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? n.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : n.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1643,7 +1643,7 @@
 						})
 					})))
 				}, _ = e => async (t, o) => {
-					const s = Object(i.l)();
+					const s = Object(i.m)();
 					if (s >= 3) return;
 					const a = o().user.prefs.useMarkdown ? d.h.MARKDOWN : d.h.RICH_TEXT;
 					if (e === a) return;
@@ -1661,7 +1661,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.gb)(s + 1)
+					})), Object(i.jb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -2557,10 +2557,10 @@
 						customEmotes: c,
 						subredditHasPowerups: d,
 						subredditId: l
-					} = e, u = l ? Object(K.j)(U.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l) : 0, m = d && u < Y && s && 0 === c.length, [p, h] = Object(r.useState)(m), b = Object(i.d)();
+					} = e, u = l ? Object(K.k)(U.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l) : 0, m = d && u < Y && s && 0 === c.length, [p, h] = Object(r.useState)(m), b = Object(i.d)();
 					return Object(r.useEffect)(() => {
 						p && l && setTimeout(() => {
-							Object(K.L)(U.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(H.f)({
+							Object(K.N)(U.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(H.f)({
 								tooltipId: $
 							}))
 						}, ee)
@@ -4593,4 +4593,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.7114c7967cf35ebaa65e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.67caaac1972ed756319e.js.map
