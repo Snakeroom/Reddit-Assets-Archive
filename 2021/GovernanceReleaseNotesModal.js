@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.62070cfbd721e5ee01d8.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.927885242fbd385142f3.js
+// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2262,7 +2262,7 @@
 							{
 								H: r,
 								D: s
-							} = F(e.a),
+							} = V(e.a),
 							{
 								c: i = []
 							} = e;
@@ -2366,16 +2366,16 @@
 						f: n,
 						t: s
 					} = e, o = [];
-					if (!n) return V(0, s, t);
+					if (!n) return F(0, s, t);
 					const i = Object(r.a)(s);
 					let a = 0,
 						d = 0;
 					const c = n.length;
 					for (; a < c; a++) {
 						const [e, t, r] = n[a], c = t + r, l = i[t], u = i[c] - l;
-						l > d && o.push(V(0, s.substr(d, l - d), `between${a}`)), o.push(V(e, s.substr(l, u), a)), d = l + u
+						l > d && o.push(F(0, s.substr(d, l - d), `between${a}`)), o.push(F(e, s.substr(l, u), a)), d = l + u
 					}
-					return d < s.length && o.push(V(0, s.substr(d), `remaining${a}`)), o
+					return d < s.length && o.push(F(0, s.substr(d), `remaining${a}`)), o
 				},
 				U = {
 					[h.j.monospace]: d.h,
@@ -2386,13 +2386,13 @@
 					[h.j.subscript]: d.l,
 					[h.j.superscript]: d.m
 				},
-				V = (e, t, n) => {
+				F = (e, t, n) => {
 					let r = t;
 					return r = o()(U, (t, r, s) => e & parseInt(s, 10) ? a.a.createElement(r, {
 						key: n
 					}, t) : t, r)
 				},
-				F = e => {
+				V = e => {
 					switch (e) {
 						case h.f:
 							return {
@@ -3016,6 +3016,38 @@
 					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
 				}(r || (r = {}))
 		},
+		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "h", (function() {
+				return o
+			})), n.d(t, "e", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return a
+			})), n.d(t, "c", (function() {
+				return d
+			})), n.d(t, "g", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return l
+			})), n.d(t, "b", (function() {
+				return u
+			})), n.d(t, "a", (function() {
+				return m
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			Object(s.a)(r.Db);
+			const o = Object(s.a)(r.Gb),
+				i = Object(s.a)(r.Bb),
+				a = Object(s.a)(r.Eb),
+				d = Object(s.a)(r.Cb),
+				c = Object(s.a)(r.Fb),
+				l = Object(s.a)(r.Hb),
+				u = Object(s.a)(r.vb),
+				m = Object(s.a)(r.ub);
+			Object(s.a)(r.wb)
+		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -3211,4 +3243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.62070cfbd721e5ee01d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.927885242fbd385142f3.js.map

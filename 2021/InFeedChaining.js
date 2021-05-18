@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.ff9a28eb039aff7ae68b.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.4b627741d73d5802f72d.js
+// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4879,6 +4879,53 @@
 				d: "M17.91 2.62A1 1 0 0 0 17 2h-4a1 1 0 0 0 0 2h1.59L9.38 9.19a1 1 0 1 0 1.41 1.41L16 5.41V7a1 1 0 0 0 2 0V3a1 1 0 0 0-.09-.38z"
 			}))
 		},
+		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "h", (function() {
+				return i
+			})), s.d(t, "e", (function() {
+				return o
+			})), s.d(t, "f", (function() {
+				return a
+			})), s.d(t, "c", (function() {
+				return c
+			})), s.d(t, "g", (function() {
+				return l
+			})), s.d(t, "d", (function() {
+				return d
+			})), s.d(t, "b", (function() {
+				return u
+			})), s.d(t, "a", (function() {
+				return m
+			}));
+			var n = s("./src/reddit/constants/experiments.ts"),
+				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			Object(r.a)(n.Db);
+			const i = Object(r.a)(n.Gb),
+				o = Object(r.a)(n.Bb),
+				a = Object(r.a)(n.Eb),
+				c = Object(r.a)(n.Cb),
+				l = Object(r.a)(n.Fb),
+				d = Object(r.a)(n.Hb),
+				u = Object(r.a)(n.vb),
+				m = Object(r.a)(n.ub);
+			Object(r.a)(n.wb)
+		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			}));
+			var n = s("./src/reddit/constants/experiments.ts"),
+				r = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const i = e => t => {
+				const s = Object(r.c)(t, {
+					experimentEligibilitySelector: r.a,
+					experimentName: e
+				});
+				return !(!s || Object(n.Fd)(s))
+			}
+		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
@@ -4930,4 +4977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.ff9a28eb039aff7ae68b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.4b627741d73d5802f72d.js.map

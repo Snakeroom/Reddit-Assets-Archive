@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d2ee5ef551690c17c4b2.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.837f68a4853ed13ce304.js
+// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -664,18 +664,18 @@
 				j = "right",
 				k = "left",
 				_ = "auto",
-				P = [O, w, j, k],
-				E = "start",
+				E = [O, w, j, k],
+				P = "start",
 				C = "end",
 				S = "clippingParents",
 				T = "viewport",
 				N = "popper",
 				M = "reference",
-				I = P.reduce((function(e, t) {
-					return e.concat([t + "-" + E, t + "-" + C])
+				I = E.reduce((function(e, t) {
+					return e.concat([t + "-" + P, t + "-" + C])
 				}), []),
-				A = [].concat(P, [_]).reduce((function(e, t) {
-					return e.concat([t, t + "-" + E, t + "-" + C])
+				A = [].concat(E, [_]).reduce((function(e, t) {
+					return e.concat([t, t + "-" + P, t + "-" + C])
 				}), []),
 				L = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
@@ -891,7 +891,7 @@
 				if (null != d) {
 					var l = "y" === d ? "height" : "width";
 					switch (i) {
-						case E:
+						case P:
 							t[d] = Math.floor(t[d]) - Math.floor(n[l] / 2 - o[l] / 2);
 							break;
 						case C:
@@ -935,10 +935,10 @@
 					var g = y(n);
 					g === s(n) && (g = l(n)), r === O && (v = w, m -= g.clientHeight - o.height, m *= c ? 1 : -1), r === k && (h = j, p -= g.clientWidth - o.width, p *= c ? 1 : -1)
 				}
-				var _, P = Object.assign({
+				var _, E = Object.assign({
 					position: a
 				}, d && q);
-				return c ? Object.assign(Object.assign({}, P), {}, ((_ = {})[v] = b ? "0" : "", _[h] = f ? "0" : "", _.transform = (x.devicePixelRatio || 1) < 2 ? "translate(" + p + "px, " + m + "px)" : "translate3d(" + p + "px, " + m + "px, 0)", _)) : Object.assign(Object.assign({}, P), {}, ((t = {})[v] = b ? m + "px" : "", t[h] = f ? p + "px" : "", t.transform = "", t))
+				return c ? Object.assign(Object.assign({}, E), {}, ((_ = {})[v] = b ? "0" : "", _[h] = f ? "0" : "", _.transform = (x.devicePixelRatio || 1) < 2 ? "translate(" + p + "px, " + m + "px)" : "translate3d(" + p + "px, " + m + "px, 0)", _)) : Object.assign(Object.assign({}, E), {}, ((t = {})[v] = b ? m + "px" : "", t[h] = f ? p + "px" : "", t.transform = "", t))
 			}
 			var X = {
 				left: "right",
@@ -1067,12 +1067,12 @@
 					b = void 0 !== f && f,
 					h = n.padding,
 					v = void 0 === h ? 0 : h,
-					x = te("number" != typeof v ? v : ne(v, P)),
+					x = te("number" != typeof v ? v : ne(v, E)),
 					g = m === N ? M : N,
 					y = e.elements.reference,
 					k = e.rects.popper,
 					_ = e.elements[b ? g : m],
-					E = ee(a(_) ? _ : _.contextElement || l(e.elements.popper), c, u),
+					P = ee(a(_) ? _ : _.contextElement || l(e.elements.popper), c, u),
 					C = r(y),
 					I = U({
 						reference: C,
@@ -1083,10 +1083,10 @@
 					A = Q(Object.assign(Object.assign({}, k), I)),
 					L = m === N ? A : C,
 					B = {
-						top: E.top - L.top + x.top,
-						bottom: L.bottom - E.bottom + x.bottom,
-						left: E.left - L.left + x.left,
-						right: L.right - E.right + x.right
+						top: P.top - L.top + x.top,
+						bottom: L.bottom - P.bottom + x.bottom,
+						left: P.left - L.left + x.left,
+						right: L.right - P.right + x.right
 					},
 					F = e.modifiersData.offset;
 				if (m === N && F) {
@@ -1298,7 +1298,7 @@
 												l = V(o),
 												u = (l ? a ? I : I.filter((function(e) {
 													return V(e) === l
-												})) : P).filter((function(e) {
+												})) : E).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
 													return t[n] = oe(e, {
@@ -1322,7 +1322,7 @@
 									}), []), y = t.rects.reference, C = t.rects.popper, S = new Map, T = !0, N = g[0], M = 0; M < g.length; M++) {
 									var L = g[M],
 										B = H(L),
-										F = V(L) === E,
+										F = V(L) === P,
 										R = [O, w].indexOf(B) >= 0,
 										D = R ? "width" : "height",
 										W = oe(t, {
@@ -1392,8 +1392,8 @@
 								x = H(t.placement),
 								g = V(t.placement),
 								_ = !g,
-								P = z(x),
-								C = "x" === P ? "y" : "x",
+								E = z(x),
+								C = "x" === E ? "y" : "x",
 								S = t.modifiersData.popperOffsets,
 								T = t.rects.reference,
 								N = t.rects.popper,
@@ -1406,15 +1406,15 @@
 								};
 							if (S) {
 								if (s) {
-									var A = "y" === P ? O : k,
-										L = "y" === P ? w : j,
-										B = "y" === P ? "height" : "width",
-										F = S[P],
-										R = S[P] + v[A],
-										D = S[P] - v[L],
+									var A = "y" === E ? O : k,
+										L = "y" === E ? w : j,
+										B = "y" === E ? "height" : "width",
+										F = S[E],
+										R = S[E] + v[A],
+										D = S[E] - v[L],
 										W = m ? -N[B] / 2 : 0,
-										U = g === E ? T[B] : N[B],
-										q = g === E ? -N[B] : -T[B],
+										U = g === P ? T[B] : N[B],
+										q = g === P ? -N[B] : -T[B],
 										Z = t.elements.arrow,
 										X = m && Z ? b(Z) : {
 											width: 0,
@@ -1432,16 +1432,16 @@
 										Q = _ ? T[B] / 2 - W - K - J - M : U - K - J - M,
 										$ = _ ? -T[B] / 2 + W + K + Y + M : q + K + Y + M,
 										ee = t.elements.arrow && y(t.elements.arrow),
-										te = ee ? "y" === P ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
-										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][P] : 0,
-										se = S[P] + Q - ne - te,
-										ie = S[P] + $ - ne,
+										te = ee ? "y" === E ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
+										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][E] : 0,
+										se = S[E] + Q - ne - te,
+										ie = S[E] + $ - ne,
 										ae = re(m ? Math.min(R, se) : R, F, m ? Math.max(D, ie) : D);
-									S[P] = ae, I[P] = ae - F
+									S[E] = ae, I[E] = ae - F
 								}
 								if (a) {
-									var ce = "x" === P ? O : k,
-										de = "x" === P ? w : j,
+									var ce = "x" === E ? O : k,
+										de = "x" === E ? w : j,
 										le = S[C],
 										ue = re(le + v[ce], le, le - v[de]);
 									S[C] = ue, I[C] = ue - le
@@ -1474,10 +1474,10 @@
 									x = m / 2 - f / 2,
 									g = d[u],
 									_ = v - l[c] - d[p],
-									P = v / 2 - l[c] / 2 + x,
-									E = re(g, P, _),
+									E = v / 2 - l[c] / 2 + x,
+									P = re(g, E, _),
 									C = a;
-								n.modifiersData[o] = ((t = {})[C] = E, t.centerOffset = E - P, t)
+								n.modifiersData[o] = ((t = {})[C] = P, t.centerOffset = P - E, t)
 							}
 						},
 						effect: function(e) {
@@ -1489,7 +1489,7 @@
 								i = n.padding,
 								a = void 0 === i ? 0 : i;
 							null != s && ("string" != typeof s || (s = t.elements.popper.querySelector(s))) && K(t.elements.popper, s) && (t.elements.arrow = s, t.modifiersData[o + "#persistent"] = {
-								padding: te("number" != typeof a ? a : ne(a, P))
+								padding: te("number" != typeof a ? a : ne(a, E))
 							})
 						},
 						requires: ["popperOffsets"],
@@ -2190,8 +2190,8 @@
 				j = n("./src/reddit/selectors/posts.ts"),
 				k = n("./src/reddit/selectors/user.ts"),
 				_ = n("./src/lib/ads/index.ts"),
-				P = n("./src/lib/classNames/index.ts"),
-				E = n("./src/reddit/components/AdLinkWrapper/index.tsx"),
+				E = n("./src/lib/classNames/index.ts"),
+				P = n("./src/reddit/components/AdLinkWrapper/index.tsx"),
 				C = n("./src/reddit/components/AdLinkWrapperContent/index.tsx"),
 				S = n("./src/reddit/components/AwardBadges/index.tsx"),
 				T = n("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
@@ -2347,8 +2347,8 @@
 						isActionBarAnimationEnabled: je,
 						postId: ke,
 						postIds: _e,
-						onceInViewport: Pe
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Ce = Ee ? void 0 : m, Se = Object(d.a)(ae), Te = ce && Se, Ne = Object(a.a)(ae), Me = Object(c.a)(ae), Ie = Object(F.c)(me), Ae = !!me.media && me.media.type === h.o.RTJSON, Le = we && Ae, Be = n ? n - W.a : void 0, Fe = !(z && q || te), Re = (e => e === $.Jc.OnlyTitles)(be) && !Object(oe.a)(me), De = (e => e === $.Jc.MediumHeight)(be) && !Object(oe.a)(me), We = (e => {
+						onceInViewport: Ee
+					} = e, Pe = !!e.redditStyle || !!e["data-redditstyle"], Ce = Pe ? void 0 : m, Se = Object(d.a)(ae), Te = ce && Se, Ne = Object(a.a)(ae), Me = Object(c.a)(ae), Ie = Object(F.c)(me), Ae = !!me.media && me.media.type === h.o.RTJSON, Le = we && Ae, Be = n ? n - W.a : void 0, Fe = !(z && q || te), Re = (e => e === $.Jc.OnlyTitles)(be) && !Object(oe.a)(me), De = (e => e === $.Jc.MediumHeight)(be) && !Object(oe.a)(me), We = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2370,13 +2370,13 @@
 							const {
 								isIntersecting: t
 							} = e;
-							t && (null == Pe || Pe())
+							t && (null == Ee || Ee())
 						})
-					}, [Pe]);
+					}, [Ee]);
 					Object(b.a)(qe, Ze);
 					const Xe = r.a.createElement(r.a.Fragment, null, r.a.createElement(D.a, {
-						className: Object(P.a)(he.a.container, i, fe.a.largeAndMediumPostStyles, fe.a.largeAndMediumActiveStyles, Object(l.a)(e), {
-							[fe.a.mUseRedditTheme]: Ee,
+						className: Object(E.a)(he.a.container, i, fe.a.largeAndMediumPostStyles, fe.a.largeAndMediumActiveStyles, Object(l.a)(e), {
+							[fe.a.mUseRedditTheme]: Pe,
 							promotedvideolink: me.isSponsored && !(me.media && h.a.has(me.media.type)),
 							[he.a.topCompactPost]: We && We.hasTopCompactPostStyles,
 							[he.a.bottomCompactPost]: We && We.hasBottomCompactPostStyles
@@ -2396,18 +2396,18 @@
 						isCheckboxSelected: e.isCheckboxSelected,
 						toggleCheckbox: e.toggleCheckbox,
 						flairStyleTemplate: Ce,
-						redditStyle: Ee,
+						redditStyle: Pe,
 						subreddit: Oe,
 						isActionBarAnimationEnabled: je,
 						postId: ke
 					}), r.a.createElement(R.a, {
-						className: Object(P.a)(he.a.backgroundWrapper, {
+						className: Object(E.a)(he.a.backgroundWrapper, {
 							[he.a.isEvent]: Object(re.a)(me)
 						}),
 						"data-click-id": "background",
 						flairStyleTemplate: Ce,
 						post: me,
-						redditStyle: Ee
+						redditStyle: Pe
 					}, r.a.createElement(I.a, {
 						post: me
 					}), We && We.showPinnnedHeader && r.a.createElement(G, null), r.a.createElement(K.a, {
@@ -2431,7 +2431,7 @@
 					}), r.a.createElement(Y.c, {
 						className: he.a.postTitle,
 						post: me,
-						redditStyle: Ee,
+						redditStyle: Pe,
 						size: Y.b.Large,
 						titleColor: Ce && Ce.postTitleColor,
 						isOverlay: Z
@@ -2454,7 +2454,7 @@
 						scrollerItemRef: ve,
 						autoplayPref: t,
 						shouldShowGalleryTileOption: xe
-					})), me.isSponsored && Ue && Ue.url && r.a.createElement(E.a, {
+					})), me.isSponsored && Ue && Ue.url && r.a.createElement(P.a, {
 						className: he.a.adLinkWrapper
 					}, r.a.createElement(C.a, {
 						post: me,
@@ -2653,7 +2653,7 @@
 				};
 				if (!w) return null;
 				let _ = null;
-				const P = {
+				const E = {
 					id: g,
 					title: r.fbt._("Why did you downvote this post?", null, {
 						hk: "2tTiIx"
@@ -2667,7 +2667,7 @@
 				};
 				switch (v) {
 					case o.Survey:
-						_ = i.a.createElement(u.a, P, i.a.createElement("p", null, r.fbt._("Your answer helps r/ {subredditName} mods improve this community.", [r.fbt._param("subredditName", t)], {
+						_ = i.a.createElement(u.a, E, i.a.createElement("p", null, r.fbt._("Your answer helps r/ {subredditName} mods improve this community.", [r.fbt._param("subredditName", t)], {
 							hk: "DNEel"
 						})), i.a.createElement(p.a, {
 							onClick: () => {
@@ -2690,17 +2690,17 @@
 						})));
 						break;
 					case o.OffTopic:
-						_ = i.a.createElement(u.a, P, i.a.createElement("p", null, r.fbt._("Got it. Thanks for helping out this community.", null, {
+						_ = i.a.createElement(u.a, E, i.a.createElement("p", null, r.fbt._("Got it. Thanks for helping out this community.", null, {
 							hk: "22pTV3"
 						})));
 						break;
 					case o.DontLike:
-						_ = i.a.createElement(u.a, P, i.a.createElement("p", null, r.fbt._("Just a reminder, it’s not an official rule but it is considered improper Reddiquette to downvote an otherwise acceptable post because you don’t personally like it.", null, {
+						_ = i.a.createElement(u.a, E, i.a.createElement("p", null, r.fbt._("Just a reminder, it’s not an official rule but it is considered improper Reddiquette to downvote an otherwise acceptable post because you don’t personally like it.", null, {
 							hk: "3mRvPM"
 						})));
 						break;
 					case o.BreaksRules:
-						_ = i.a.createElement(u.a, P, i.a.createElement("p", null, r.fbt._("Let us know if it breaks {=Reddit} or {=community} rules.", [r.fbt._param("=Reddit", i.a.createElement("a", {
+						_ = i.a.createElement(u.a, E, i.a.createElement("p", null, r.fbt._("Let us know if it breaks {=Reddit} or {=community} rules.", [r.fbt._param("=Reddit", i.a.createElement("a", {
 							href: "https://www.redditinc.com/policies/content-policy",
 							target: "_blank",
 							rel: "noopener noreferrer"
@@ -3244,8 +3244,8 @@
 					forceOpenInNewTab: r,
 					hideAwards: w,
 					hideNSFWPref: _,
-					hostPostId: P,
-					iconClassName: E,
+					hostPostId: E,
+					iconClassName: P,
 					inSubredditOrProfile: C,
 					isCommentsPage: S,
 					isCompactPinnedPost: T,
@@ -3271,7 +3271,7 @@
 					"data-click-id": "subreddit",
 					to: W.url
 				}, D && s.a.createElement(p.b, {
-					className: Object(i.a)(j.a.subredditIcon, E),
+					className: Object(i.a)(j.a.subredditIcon, P),
 					shouldHideNsfwIcon: _,
 					subredditOrProfile: W
 				}))), s.a.createElement("div", {
@@ -3300,7 +3300,7 @@
 					tooltipType: M ? u.c.Lightbox : void 0
 				})), W && R && B && !N && s.a.createElement(f.a, {
 					className: j.a.SubscribeButton,
-					getEventFactory: e => Object(x.g)(L.id, e ? "unsubscribe" : "subscribe", "post", A, P),
+					getEventFactory: e => Object(x.g)(L.id, e ? "unsubscribe" : "subscribe", "post", A, E),
 					identifier: {
 						name: W.name,
 						type: Object(O.h)(W) ? b.a.PROFILE : b.a.SUBREDDIT
@@ -3736,6 +3736,21 @@
 				d: "M17.91 2.62A1 1 0 0 0 17 2h-4a1 1 0 0 0 0 2h1.59L9.38 9.19a1 1 0 1 0 1.41 1.41L16 5.41V7a1 1 0 0 0 2 0V3a1 1 0 0 0-.09-.38z"
 			}))
 		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			}));
+			var o = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const s = e => t => {
+				const n = Object(r.c)(t, {
+					experimentEligibilitySelector: r.a,
+					experimentName: e
+				});
+				return !(!n || Object(o.Fd)(n))
+			}
+		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -3753,4 +3768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d2ee5ef551690c17c4b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.837f68a4853ed13ce304.js.map
