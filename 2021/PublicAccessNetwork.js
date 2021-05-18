@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5b946a819ce392570c73.js
-// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f9db3f477a4d72c97fd2.js
+// Retrieved at 5/18/2021, 6:00:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -865,7 +865,7 @@
 						};
 					return Object(ie.b)(t) && !Object(ne.a)(t) ? d.listingBelow = i || a : d.postFeed = (i || a) && (!Object(L.h)(r) && !Object(oe.d)(t, {
 						postId: s
-					}) && !!r || !Object(U.h)(t) && Object(V.e)(t)), e && (d.postImageOCRAltText = Object(V.c)(o) && !!Object(V.b)(t, o, !1), d.postQASchema = Object(V.f)(t, o)), d
+					}) && !!r || !Object(U.h)(t) && Object(V.e)(t)), e && (d.postImageOCRAltText = Object(V.c)(o) && !!Object(V.b)(t, o, !1), d.postQASchema = !0), d
 				},
 				ve = (e, t) => e || t.postFeed || t.listingBelow || t.postImageOCRAltText || t.postQASchema,
 				fe = e => ({
@@ -5818,4 +5818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5b946a819ce392570c73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f9db3f477a4d72c97fd2.js.map

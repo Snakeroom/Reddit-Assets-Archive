@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cdc737480dc64586105.js
-// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e2d4dfa11210296dd906.js
+// Retrieved at 5/18/2021, 6:00:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("134356"),
+				buildNumber: r("134367"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1621370294"),
+				})("1621373496"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4208,14 +4208,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c156012d2f51ba18daab368948f404f7233cbd94a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd1a1682b71c59a69782425b4d249174490785536-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "156012d2f51ba18daab368948f404f7233cbd94a-production",
+						release: "d1a1682b71c59a69782425b4d249174490785536-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4709,7 +4709,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "156012d2f51ba18daab368948f404f7233cbd94a-production",
+						releaseClient: "d1a1682b71c59a69782425b4d249174490785536-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -10464,7 +10464,7 @@
 							} = o(),
 							E = i && i.match && i.match.queryParams,
 							S = E && E[`experiment_${c.Ac}`];
-						Object(h.h)(o()), e.pathname.split("/").some(e => "comments" === e), Object(f.h)(o());
+						Object(h.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(f.h)(o());
 						if (s(j({
 								action: t,
 								listingKey: w,
@@ -17734,7 +17734,7 @@
 				e.RotateEven = "rotate_even"
 			}(ki || (ki = {})),
 			function(e) {
-				e.Simple = "simple"
+				e.ML = "ml"
 			}(Ni || (Ni = {})),
 			function(e) {
 				e.Redirect = "redirect"
@@ -17968,7 +17968,7 @@
 					[ne]: [Ti.Enabled],
 					[se]: [Ri.LoggedInUser, Ri.ExistingUser],
 					[oe]: [xi.AllItems, xi.TrendingSearch],
-					[ce]: [Ni.Simple],
+					[ce]: [Ni.ML],
 					[he]: [Bi.Enabled],
 					[be]: [Mi.Enabled],
 					[ve]: [qi.Enabled],
@@ -36101,28 +36101,26 @@
 		},
 		"./src/reddit/selectors/experiments/postSeo.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "k", (function() {
+			i.d(t, "j", (function() {
 				return b
 			})), i.d(t, "c", (function() {
 				return g
 			})), i.d(t, "e", (function() {
 				return w
-			})), i.d(t, "j", (function() {
-				return v
-			})), i.d(t, "h", (function() {
-				return E
 			})), i.d(t, "i", (function() {
+				return v
+			})), i.d(t, "g", (function() {
+				return E
+			})), i.d(t, "h", (function() {
 				return S
 			})), i.d(t, "d", (function() {
 				return T
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "f", (function() {
 				return O
 			})), i.d(t, "a", (function() {
 				return I
 			})), i.d(t, "b", (function() {
 				return j
-			})), i.d(t, "f", (function() {
-				return F
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/constants/experiments.ts"),
@@ -36187,10 +36185,7 @@
 					})(e, t) : y(e, t, !0),
 					experimentName: r.ec,
 					expEventOverride: !!i && !!Object(m.a)(e)
-				}),
-				F = (e, t) => {
-					return w(e) && t.title.endsWith("?") && t.title.length >= 15 && ["can", "have", "when", "where", "how", "who", "why", "what", "which"].some(e => t.title.toLowerCase().startsWith(e)) && !t.isNSFW && t.score >= 100 && t.numComments >= 50
-				}
+				})
 		},
 		"./src/reddit/selectors/experiments/publicAccessNetwork.ts": function(e, t, i) {
 			"use strict";
@@ -46426,4 +46421,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cdc737480dc64586105.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e2d4dfa11210296dd906.js.map

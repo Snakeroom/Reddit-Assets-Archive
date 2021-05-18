@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.bc5c95eb773e04fd5875.js
-// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.39a07fa9a5d002266cac.js
+// Retrieved at 5/18/2021, 6:00:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -1118,7 +1118,7 @@
 					OCRAltText: (e, {
 						post: t
 					}) => Object(J.a)(e, t.id),
-					subredditOrProfileDisplayText: (e, t) => Object(J.k)(e, t),
+					subredditOrProfileDisplayText: (e, t) => Object(J.j)(e, t),
 					subredditOrProfile: (e, {
 						post: t
 					}) => Object(Z.R)(e, {
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.bc5c95eb773e04fd5875.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.39a07fa9a5d002266cac.js.map
