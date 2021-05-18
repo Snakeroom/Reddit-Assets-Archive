@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.bb3ebde68893fa468b3b.js
-// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.4d6e316e727fed79ef8f.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -794,7 +794,7 @@
 						first: w,
 						flairStyleTemplate: N,
 						formatTitle: T,
-						hostPostId: A,
+						hostPostData: A,
 						isActionBarAnimationEnabled: B,
 						isCheckboxSelected: W,
 						isCurrentUserProfilePost: q,
@@ -924,7 +924,7 @@
 						hasModFlairPerms: xe,
 						hasModPostPerms: be,
 						hasModFullPerms: fe,
-						hostPostId: A,
+						hostPostData: A,
 						isActionBarAnimationEnabled: B,
 						isOverlay: !!Y,
 						modModeEnabled: X,
@@ -4287,7 +4287,7 @@
 				scrollChildForPost(e, t, s, r) {
 					const {
 						currentProfileName: n,
-						hostPostId: o,
+						hostPostData: o,
 						isCommentPermalink: i,
 						isCommentsPage: a,
 						isFrontpage: c,
@@ -4345,7 +4345,7 @@
 								eventFactory: f,
 								first: k,
 								forceLoadMedia: _,
-								hostPostId: o,
+								hostPostData: o,
 								inSubredditOrProfile: S,
 								isActionBarAnimationEnabled: C,
 								isCommentPermalink: i,
@@ -8184,7 +8184,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(b.g)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0),
+					postClickEventFactory: (e, t) => Object(b.g)(e, t, "post", s.listingKey, s.hostPostData, s.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(h.b)({
 						...e
 					})
@@ -9293,4 +9293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bb3ebde68893fa468b3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4d6e316e727fed79ef8f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.837f68a4853ed13ce304.js
-// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.535071739e5db0beeeee.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2277,7 +2277,7 @@
 					isActive: j.j,
 					isPostChainDismissed: O.c,
 					isPostChained: O.d,
-					listingBelowVariant: se.b,
+					listingBelowVariant: se.c,
 					moderatorPermissions: w.j,
 					modModeEnabled: te.Q,
 					posts: ve,
@@ -2316,7 +2316,7 @@
 						flairStyleTemplate: m,
 						forceLoadMedia: x,
 						hideNSFWPref: g,
-						hostPostId: y,
+						hostPostData: y,
 						imageGalleryCurrentItem: O,
 						inSubredditOrProfile: w = !1,
 						isCommentsPage: j,
@@ -2414,7 +2414,7 @@
 						className: he.a.postTopLine,
 						hideAwards: ge,
 						hideNSFWPref: g,
-						hostPostId: y,
+						hostPostData: y,
 						iconClassName: he.a.postTopLineIcon,
 						inSubredditOrProfile: w,
 						isCommentsPage: !!j,
@@ -2480,7 +2480,7 @@
 						hasModFlairPerms: Ne,
 						hasModFullPerms: Me,
 						hasModPostPerms: Se,
-						hostPostId: y,
+						hostPostData: y,
 						isActionBarAnimationEnabled: je,
 						isLargePost: !0,
 						isOverlay: !!Z,
@@ -3244,7 +3244,7 @@
 					forceOpenInNewTab: r,
 					hideAwards: w,
 					hideNSFWPref: _,
-					hostPostId: E,
+					hostPostData: E,
 					iconClassName: P,
 					inSubredditOrProfile: C,
 					isCommentsPage: S,
@@ -3768,4 +3768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.837f68a4853ed13ce304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.535071739e5db0beeeee.js.map

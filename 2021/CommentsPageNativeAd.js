@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d156330e0cca691680c4.js
-// Retrieved at 5/17/2021, 2:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9a856dd308616191f919.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -38,9 +38,9 @@
 				w = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				_ = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				A = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
-				I = s("./src/reddit/contexts/Post/index.tsx"),
-				L = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				M = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				L = s("./src/reddit/contexts/Post/index.tsx"),
+				M = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				I = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				T = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				W = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				R = s("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -71,8 +71,8 @@
 						eventFactory: v,
 						first: _,
 						flairStyleTemplate: A,
-						formatTitle: I,
-						hostPostId: R,
+						formatTitle: L,
+						hostPostData: R,
 						isActionBarAnimationEnabled: F,
 						isCheckboxSelected: D,
 						isCurrentUserProfilePost: K,
@@ -98,7 +98,7 @@
 						toggleCheckbox: le,
 						userIsOp: me,
 						shouldShowGalleryTileOption: pe
-					} = this.props, ue = re ? void 0 : A, xe = this.props.crosspost || void 0, be = Object(T.a)(Y), he = Object(L.a)(Y), Ce = Object(M.a)(Y), Oe = q && T.a, Pe = !!se.media && se.media.type === N.o.RTJSON, ve = me && Pe, Ee = i && !de, ye = !!se.media && Object(N.G)(se.media), fe = {
+					} = this.props, ue = re ? void 0 : A, xe = this.props.crosspost || void 0, be = Object(T.a)(Y), he = Object(M.a)(Y), Ce = Object(I.a)(Y), Oe = q && T.a, Pe = !!se.media && se.media.type === N.o.RTJSON, ve = me && Pe, Ee = i && !de, ye = !!se.media && Object(N.G)(se.media), fe = {
 						flairStyleTemplate: ue,
 						post: se,
 						inSubredditOrProfile: i,
@@ -158,7 +158,7 @@
 						"data-click-id": "body"
 					}, r.a.createElement(g.c, {
 						className: te ? V.a.titleWithPoll : void 0,
-						format: I,
+						format: L,
 						poll: te,
 						post: se,
 						redditStyle: re,
@@ -202,7 +202,7 @@
 						hasModFlairPerms: he,
 						hasModPostPerms: be,
 						hasModFullPerms: Ce,
-						hostPostId: R,
+						hostPostData: R,
 						isActionBarAnimationEnabled: F,
 						isOverlay: !!Z,
 						modModeEnabled: q,
@@ -239,7 +239,7 @@
 					showFull: !0
 				}),
 				G = Object(i.a)(D),
-				H = Object(I.b)(Object(A.a)(G));
+				H = Object(L.b)(Object(A.a)(G));
 			t.default = Object(_.a)(G)
 		},
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -317,9 +317,9 @@
 					isSmall: !0,
 					className: _.a.metaSeparator
 				}), a.a.createElement(j.a, null)),
-				I = s("./src/lib/classNames/index.ts"),
-				L = s("./src/reddit/components/Media/index.tsx"),
-				M = s("./src/reddit/components/PlayButton/index.tsx"),
+				L = s("./src/lib/classNames/index.ts"),
+				M = s("./src/reddit/components/Media/index.tsx"),
+				I = s("./src/reddit/components/PlayButton/index.tsx"),
 				T = s("./src/reddit/components/Thumbnail/index.tsx"),
 				W = s("./src/reddit/icons/svgs/Close/index.tsx");
 
@@ -347,7 +347,7 @@
 			}) => n && n.media ? m && Object(u.K)(n.media) ? a.a.createElement("div", null, a.a.createElement(W.a, {
 				className: _.a.close,
 				onClick: t
-			}), a.a.createElement(L.a, {
+			}), a.a.createElement(M.a, {
 				className: _.a.videoPlayer,
 				post: n,
 				isNotCardView: !0,
@@ -359,7 +359,7 @@
 				isListing: !1,
 				showCentered: !1
 			})) : a.a.createElement(T.a, {
-				className: Object(I.a)(_.a.thumbnail, e),
+				className: Object(L.a)(_.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: o,
@@ -370,7 +370,7 @@
 				url: Object(u.K)(n.media) ? void 0 : c,
 				usePreview: l
 			}) : a.a.createElement(T.a, {
-				className: Object(I.a)(_.a.thumbnail, e),
+				className: Object(L.a)(_.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: o,
@@ -385,12 +385,12 @@
 						className: n
 					} = e, i = o && !t;
 					return a.a.createElement("div", {
-						className: t ? Object(I.a)(_.a.videoContainer, n) : Object(I.a)(_.a.thumbnailContainer, n),
+						className: t ? Object(L.a)(_.a.videoContainer, n) : Object(L.a)(_.a.thumbnailContainer, n),
 						onClick: i ? () => s(!0) : void 0
 					}, a.a.createElement(B, R({}, e, {
 						mediaExpanded: t,
 						closeVideo: () => s(!1)
-					})), i && a.a.createElement(M.a, {
+					})), i && a.a.createElement(I.a, {
 						className: _.a.playContainer,
 						playIconClassName: _.a.playIcon,
 						onClick: () => s(!0)
@@ -708,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d156330e0cca691680c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9a856dd308616191f919.js.map

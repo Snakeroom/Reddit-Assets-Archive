@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.82d6cb076594af99eba0.js
-// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.6dce2a9514996e3e3753.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -366,7 +366,7 @@
 				M = s.n(B);
 			const {
 				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = 500, V = new k.a(H), W = new k.a(H), U = new k.a(H), D = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = 500, V = new k.a(H), W = new k.a(H), D = new k.a(H), U = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -385,7 +385,7 @@
 				}, W.set(n, o)), o
 			}, Y = (e, t) => {
 				const s = `click-${e}`;
-				let r = U.get(s);
+				let r = D.get(s);
 				return void 0 === r && (r = (e, s, r, i) => {
 					if (s.isSponsored) {
 						t.fireAdPixelsOfType(s, y.a.Click);
@@ -400,7 +400,7 @@
 						postOrComment: s,
 						clickInfo: Object(O.a)(e)
 					})
-				}, U.set(s, r)), r
+				}, D.set(s, r)), r
 			}, q = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
@@ -548,7 +548,7 @@
 				scrollChildForPost(e, t, s, r) {
 					const {
 						currentProfileName: i,
-						hostPostId: n,
+						hostPostData: n,
 						isCommentPermalink: o,
 						isCommentsPage: a,
 						isFrontpage: c,
@@ -606,7 +606,7 @@
 								eventFactory: x,
 								first: _,
 								forceLoadMedia: L,
-								hostPostId: n,
+								hostPostData: n,
 								inSubredditOrProfile: O,
 								isActionBarAnimationEnabled: E,
 								isCommentPermalink: o,
@@ -678,7 +678,7 @@
 						className: i,
 						isLoading: !!t,
 						layout: r,
-						countOverride: D[r]
+						countOverride: U[r]
 					}), !!e && u.a.createElement(E.a, {
 						apiError: e,
 						onTryAgain: n
@@ -1433,7 +1433,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(h.g)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0),
+					postClickEventFactory: (e, t) => Object(h.g)(e, t, "post", s.listingKey, s.hostPostData, s.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(b.b)({
 						...e
 					})
@@ -1849,7 +1849,7 @@
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
 			}(W || (W = {}));
-			class U extends i.a.Component {
+			class D extends i.a.Component {
 				renderSubtitleContent() {
 					const {
 						parentRelatedTopics: e
@@ -1910,7 +1910,7 @@
 					})))))
 				}
 			}
-			var D = U,
+			var U = D,
 				J = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
 				G = s.n(J);
 			const {
@@ -2285,7 +2285,7 @@
 							className: Pe.a.SidebarRight,
 							listingName: f
 						}, w)],
-						navBar: i.a.createElement(D, {
+						navBar: i.a.createElement(U, {
 							activeTab: x,
 							layout: h,
 							onTabClick: this.openTab,
@@ -2404,4 +2404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.82d6cb076594af99eba0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.6dce2a9514996e3e3753.js.map

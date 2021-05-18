@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7f16093752b59863fe55.js
-// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.01aaebde2d91225b7e9d.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2702,7 +2702,7 @@
 						first: I,
 						flairStyleTemplate: N,
 						formatTitle: P,
-						hostPostId: M,
+						hostPostData: M,
 						isActionBarAnimationEnabled: U,
 						isCheckboxSelected: Y,
 						isCurrentUserProfilePost: G,
@@ -2832,7 +2832,7 @@
 						hasModFlairPerms: he,
 						hasModPostPerms: be,
 						hasModFullPerms: Ee,
-						hostPostId: M,
+						hostPostData: M,
 						isActionBarAnimationEnabled: U,
 						isOverlay: !!X,
 						modModeEnabled: K,
@@ -5259,4 +5259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7f16093752b59863fe55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.01aaebde2d91225b7e9d.js.map

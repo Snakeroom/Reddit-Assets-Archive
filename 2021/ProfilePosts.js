@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.c059cda507b0622ade9b.js
-// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.ce784a75b10e986d8c68.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3730,7 +3730,7 @@
 				scrollChildForPost(e, t, s, n) {
 					const {
 						currentProfileName: r,
-						hostPostId: o,
+						hostPostData: o,
 						isCommentPermalink: i,
 						isCommentsPage: a,
 						isFrontpage: d,
@@ -3788,7 +3788,7 @@
 								eventFactory: g,
 								first: k,
 								forceLoadMedia: O,
-								hostPostId: o,
+								hostPostData: o,
 								inSubredditOrProfile: S,
 								isActionBarAnimationEnabled: v,
 								isCommentPermalink: i,
@@ -6503,7 +6503,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(b.g)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0),
+					postClickEventFactory: (e, t) => Object(b.g)(e, t, "post", s.listingKey, s.hostPostData, s.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(h.b)({
 						...e
 					})
@@ -7570,4 +7570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.c059cda507b0622ade9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ce784a75b10e986d8c68.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6cf5458e445aa08e809a.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.36fae1d15cefeb737ea2.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1998,7 +1998,7 @@
 					isCurrentUserProfilePost: J.k,
 					isPostChainDismissed: q.c,
 					isPostChained: q.d,
-					listingBelowVariant: U.b,
+					listingBelowVariant: U.c,
 					moderatorPermissions: G.j,
 					showAwardsPlaque: H.a,
 					showEditFlair: X.a,
@@ -2013,7 +2013,7 @@
 						eventFactory: I,
 						flairStyleTemplate: D,
 						hideNSFWPref: W,
-						hostPostId: H,
+						hostPostData: H,
 						inSubredditOrProfile: U = !1,
 						isActionBarAnimationEnabled: V,
 						isCheckboxSelected: Z,
@@ -2089,7 +2089,7 @@
 						className: ee.a.postTopLine,
 						hideAwards: fe,
 						hideNSFWPref: W,
-						hostPostId: H,
+						hostPostData: H,
 						iconClassName: ee.a.postTopLineIcon,
 						inSubredditOrProfile: U,
 						isCommentsPage: q,
@@ -2159,7 +2159,7 @@
 						hasModFlairPerms: Se,
 						hasModFullPerms: Pe,
 						hasModPostPerms: we,
-						hostPostId: H,
+						hostPostData: H,
 						isActionBarAnimationEnabled: V,
 						isOverlay: !!J,
 						listingKey: se,
@@ -3166,7 +3166,7 @@
 					forceOpenInNewTab: s,
 					hideAwards: E,
 					hideNSFWPref: _,
-					hostPostId: w,
+					hostPostData: w,
 					iconClassName: C,
 					inSubredditOrProfile: S,
 					isCommentsPage: P,
@@ -4006,4 +4006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.6cf5458e445aa08e809a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.36fae1d15cefeb737ea2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.6ffeb8319166ab86a015.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.6e0bcb86fc9fe00df135.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -1722,7 +1722,7 @@
 				scrollChildForPost(e, t, s, n) {
 					const {
 						currentProfileName: r,
-						hostPostId: o,
+						hostPostData: o,
 						isCommentPermalink: i,
 						isCommentsPage: a,
 						isFrontpage: c,
@@ -1780,7 +1780,7 @@
 								eventFactory: f,
 								first: C,
 								forceLoadMedia: k,
-								hostPostId: o,
+								hostPostData: o,
 								inSubredditOrProfile: N,
 								isActionBarAnimationEnabled: S,
 								isCommentPermalink: i,
@@ -2054,7 +2054,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(h.g)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0),
+					postClickEventFactory: (e, t) => Object(h.g)(e, t, "post", s.listingKey, s.hostPostData, s.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(b.b)({
 						...e
 					})
@@ -2675,4 +2675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.6ffeb8319166ab86a015.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.6e0bcb86fc9fe00df135.js.map

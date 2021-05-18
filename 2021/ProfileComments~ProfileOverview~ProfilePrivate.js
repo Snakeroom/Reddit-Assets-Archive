@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ad8d2b84fab12ecd47f9.js
-// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ba657f0aa2ad80275c35.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -474,7 +474,7 @@
 						first: N,
 						flairStyleTemplate: S,
 						formatTitle: L,
-						hostPostId: B,
+						hostPostData: B,
 						isActionBarAnimationEnabled: D,
 						isCheckboxSelected: U,
 						isCurrentUserProfilePost: z,
@@ -604,7 +604,7 @@
 						hasModFlairPerms: xe,
 						hasModPostPerms: he,
 						hasModFullPerms: ve,
-						hostPostId: B,
+						hostPostData: B,
 						isActionBarAnimationEnabled: D,
 						isOverlay: !!Q,
 						modModeEnabled: $,
@@ -4413,4 +4413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ad8d2b84fab12ecd47f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ba657f0aa2ad80275c35.js.map

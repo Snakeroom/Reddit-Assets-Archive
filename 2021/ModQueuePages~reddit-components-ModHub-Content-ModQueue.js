@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.06eb5297421a6e9809fa.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.5dff327bd419356044e5.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -1622,7 +1622,7 @@
 				scrollChildForPost(e, t, s, o) {
 					const {
 						currentProfileName: n,
-						hostPostId: r,
+						hostPostData: r,
 						isCommentPermalink: i,
 						isCommentsPage: a,
 						isFrontpage: l,
@@ -1680,7 +1680,7 @@
 								eventFactory: x,
 								first: O,
 								forceLoadMedia: I,
-								hostPostId: r,
+								hostPostData: r,
 								inSubredditOrProfile: _,
 								isActionBarAnimationEnabled: E,
 								isCommentPermalink: i,
@@ -2158,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.06eb5297421a6e9809fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.5dff327bd419356044e5.js.map

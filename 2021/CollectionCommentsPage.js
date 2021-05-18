@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ba6444c46ee14cb65c37.js
-// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.03ad25180e9bd4594bfe.js
+// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1044,7 +1044,7 @@
 							}
 						}
 						const d = ge(!1, s(), m),
-							c = Object(re.b)(s()),
+							c = Object(re.c)(s()),
 							l = O;
 						if (fe(l, d)) {
 							Object(Q.d)(Q.a.LinkedPosts);
@@ -6567,7 +6567,7 @@
 				scrollChildForPost(e, t, s, o) {
 					const {
 						currentProfileName: n,
-						hostPostId: r,
+						hostPostData: r,
 						isCommentPermalink: i,
 						isCommentsPage: a,
 						isFrontpage: d,
@@ -6625,7 +6625,7 @@
 								eventFactory: f,
 								first: w,
 								forceLoadMedia: P,
-								hostPostId: r,
+								hostPostData: r,
 								inSubredditOrProfile: _,
 								isActionBarAnimationEnabled: y,
 								isCommentPermalink: i,
@@ -6891,7 +6891,7 @@
 					forceOpenInNewTab: n,
 					hideAwards: O,
 					hideNSFWPref: E,
-					hostPostId: P,
+					hostPostData: P,
 					iconClassName: j,
 					inSubredditOrProfile: _,
 					isCommentsPage: I,
@@ -7023,17 +7023,18 @@
 				j = s("./src/reddit/selectors/dismissedTruncationList.ts"),
 				_ = s("./src/reddit/selectors/experiments/listingBelow.ts"),
 				I = s("./src/reddit/selectors/seo/index.ts"),
-				S = s("./src/reddit/selectors/user.ts"),
-				L = s("./src/lib/classNames/index.ts"),
-				T = s("./src/reddit/controls/InternalLink/index.tsx"),
-				N = s("./src/reddit/helpers/name/index.ts"),
-				M = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				F = s("./src/reddit/components/RecommendedPostList/Footer/index.m.less"),
-				A = s.n(F);
+				S = s("./src/reddit/selectors/telemetry.ts"),
+				L = s("./src/reddit/selectors/user.ts"),
+				T = s("./src/lib/classNames/index.ts"),
+				N = s("./src/reddit/controls/InternalLink/index.tsx"),
+				M = s("./src/reddit/helpers/name/index.ts"),
+				F = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				A = s("./src/reddit/components/RecommendedPostList/Footer/index.m.less"),
+				R = s.n(A);
 			const {
-				fbt: R
+				fbt: B
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var B = Object(m.a)(e => {
+			var D = Object(m.a)(e => {
 					const {
 						className: t,
 						onClick: s,
@@ -7042,46 +7043,47 @@
 					} = e, {
 						primaryColor: r
 					} = n;
-					return a.a.createElement(T.a, {
-						className: Object(L.a)(A.a.footer, t),
+					return a.a.createElement(N.a, {
+						className: Object(T.a)(R.a.footer, t),
 						onMouseDown: s,
 						to: n.url,
 						style: {
 							backgroundColor: r
 						}
 					}, a.a.createElement("div", {
-						className: A.a.background
+						className: R.a.background
 					}), a.a.createElement("div", {
-						className: A.a.layout
-					}, o ? R._("See more posts like this in {subredditName}", [R._param("subredditName", Object(N.c)(n.displayText))], {
+						className: R.a.layout
+					}, o ? B._("See more posts like this in {subredditName}", [B._param("subredditName", Object(M.c)(n.displayText))], {
 						hk: "pLxW5"
-					}) : R._("Continue browsing in {subredditName}", [R._param("subredditName", n.displayText)], {
+					}) : B._("Continue browsing in {subredditName}", [B._param("subredditName", n.displayText)], {
 						hk: "2gUyTU"
-					}), a.a.createElement(M.a, {
-						className: A.a.arrow
+					}), a.a.createElement(F.a, {
+						className: R.a.arrow
 					})))
 				}),
-				D = s("./src/reddit/components/RecommendedPostList/index.m.less"),
-				V = s.n(D);
-			const H = Object(c.a)((e, {
+				V = s("./src/reddit/components/RecommendedPostList/index.m.less"),
+				H = s.n(V);
+			const W = Object(c.a)((e, {
 					isOverlay: t
 				}) => t, P.a, j.b, (e, t, s) => !((!t || s) && e)),
-				W = Object(c.c)({
+				U = Object(c.a)((e, {
+					post: t
+				}) => !!t && Object(y.a)(t), L.I, L.J, E.d, W, (e, t, s, o, n) => !t && !s && !o && !e && n),
+				K = Object(c.c)({
 					includeListingBelow: I.b,
-					isChatPost: E.d,
-					isGQLLoggedIn: S.I,
 					isListingBelowAdsControl: _.a,
-					isLoggedIn: S.J,
-					listingBelowVariant: _.b,
-					shouldShowSubredditUpsell: H
+					listingBelowVariant: (e, t) => U(e, t) ? Object(_.b)(e) : void 0,
+					requestData: S.request,
+					shouldShowListingBelow: U
 				}),
-				U = Object(d.b)(W, e => ({
+				q = Object(d.b)(K, e => ({
 					loadMorePosts: t => e(Object(h.r)({
 						sort: l.R.HOT,
 						subredditName: t
 					}))
 				}));
-			class K extends a.a.Component {
+			class G extends a.a.Component {
 				constructor() {
 					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.R.TOP, t, e, l.Yb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(k.c)("recommended_footer"))
@@ -7091,11 +7093,10 @@
 					const {
 						includeListingBelow: e,
 						isListingBelowAdsControl: t,
-						listingBelowVariant: s,
-						post: o,
-						subredditOrProfile: n
+						post: s,
+						subredditOrProfile: o
 					} = this.props;
-					return e && o && o.id && !t && !Object(x.Fd)(s) ? Object(p.a)(o.id) : Object(u.a)(n.name, l.R.TOP, {
+					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.R.TOP, {
 						t: l.Yb.WEEK
 					})
 				}
@@ -7115,7 +7116,7 @@
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
 					}), a.a.createElement("div", {
-						className: V.a.smallBanner,
+						className: H.a.smallBanner,
 						style: {
 							color: r
 						}
@@ -7124,44 +7125,49 @@
 				render() {
 					const {
 						contentContainerRef: e,
-						isChatPost: t,
-						isGQLLoggedIn: s,
-						isListingBelowAdsControl: o,
-						isLoggedIn: n,
-						listingBelowVariant: i,
-						post: d,
-						shouldShowSubredditUpsell: c,
-						subredditOrProfile: l
-					} = this.props, m = d && Object(y.a)(d), p = !!i && !Object(x.Fd)(i) && !o, u = d && d.id;
-					return s || n || t || m || !c ? null : a.a.createElement("div", {
-						className: V.a.container
+						isListingBelowAdsControl: t,
+						listingBelowVariant: s,
+						post: o,
+						requestData: n,
+						shouldShowListingBelow: i,
+						subredditOrProfile: d
+					} = this.props;
+					if (!i) return null;
+					const c = !!s && !Object(x.Fd)(s) && !t,
+						l = {
+							hostPostId: o && o.id,
+							baseUrl: n.base_url,
+							canonicalUrl: n.canonical_url
+						};
+					return a.a.createElement("div", {
+						className: H.a.container
 					}, this.renderSmallBanner(), a.a.createElement(b.a, {
-						className: V.a.postList,
+						className: H.a.postList,
 						disablePlaceholder: !0,
 						forcedLayout: v.g.Large,
 						getScrollContainer: this.scrollContainer,
-						hostPostId: u,
+						hostPostData: l,
 						isTruncated: !0,
-						listingBelowVariant: i,
+						listingBelowVariant: s,
 						listingKey: this.listingKey(),
 						listingName: C.c.PostDetail,
 						listingViewed: this.onViewed,
-						loadMoreClassName: V.a.loadMore,
+						loadMoreClassName: H.a.loadMore,
 						noPostsComponent: () => null,
 						onLoadMore: r.a,
 						preventScrollOnMount: !0,
 						inSubredditOrProfile: !0,
 						scrollContentContainerRef: e,
 						shouldHideFlair: !0
-					}), a.a.createElement(B, {
-						className: V.a.footer,
+					}), a.a.createElement(D, {
+						className: H.a.footer,
 						onClick: this.onFooterClick,
-						shouldDisplaySeeMore: p,
-						subredditOrProfile: l
+						shouldDisplaySeeMore: c,
+						subredditOrProfile: d
 					}))
 				}
 			}
-			t.a = U(Object(m.a)(Object(g.c)(K)))
+			t.a = q(Object(m.a)(Object(g.c)(G)))
 		},
 		"./src/reddit/components/RichTextEditor/Placeholder.m.less": function(e, t, s) {
 			e.exports = {
@@ -7555,7 +7561,7 @@
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(b.g)(e, t, "post", s.listingKey, s.hostPostId, s.listingBelowVariant, void 0),
+					postClickEventFactory: (e, t) => Object(b.g)(e, t, "post", s.listingKey, s.hostPostData, s.listingBelowVariant, void 0),
 					postComponentForLayout: e => Object(h.b)({
 						...e
 					})
@@ -9516,4 +9522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ba6444c46ee14cb65c37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.03ad25180e9bd4594bfe.js.map
