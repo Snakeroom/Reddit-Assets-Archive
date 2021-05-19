@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.966bdd7b3f2094302265.js
-// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.ba374a459c5eff05946c.js
+// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1583,8 +1583,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function V(e) {
-				const t = Object(b.v)(Z) || [];
-				t.push(e), Object(b.sb)(Z, t)
+				const t = Object(b.w)(Z) || [];
+				t.push(e), Object(b.ub)(Z, t)
 			}
 
 			function Y(e) {
@@ -1694,7 +1694,7 @@
 									id: "ChIJIQBpAG2ahYAR_6128GcTUEo"
 								})
 							});
-							const s = Object(b.v)(Z) || [];
+							const s = Object(b.w)(Z) || [];
 							o((t.data.geoContributableSubreddits || []).filter(e => !s.includes(e.id)))
 						}).catch(e => {
 							console.error(e), t(!0)
@@ -1762,4 +1762,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.966bdd7b3f2094302265.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.ba374a459c5eff05946c.js.map

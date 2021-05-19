@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.77165757f3a4599a12d8.js
-// Retrieved at 5/19/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d9bc980585f07aaff529.js
+// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.qc
 				});
-				return Object(m.Fd)(t) ? void 0 : t
+				return Object(m.Hd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.rc
 				});
-				return Object(m.Fd)(t) ? void 0 : t
+				return Object(m.Hd)(t) ? void 0 : t
 			}, (e, t) => e === m.sc.Enabled && t === m.sc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -3184,7 +3184,7 @@
 					toggleModal: e
 				}) => {
 					const t = () => {
-						q.Eb(), e()
+						q.Gb(), e()
 					};
 					return o.a.createElement(H.d, null, o.a.createElement(Q, null, o.a.createElement(G.a, null, o.a.createElement("div", null, o.a.createElement("div", {
 						className: J.a.Title
@@ -5540,12 +5540,12 @@
 					this.props.sendEvent(Object(De.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					q.ib(), this.setState({
+					q.jb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(De.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					q.ib(), this.setState({
+					q.jb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(De.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -5553,7 +5553,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(De.n)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					q.R() || this.props.toggleIntroChatModal()
+					q.S() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(De.q)(this.props.currentStream, this.playbackStats))
@@ -5892,4 +5892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.77165757f3a4599a12d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d9bc980585f07aaff529.js.map

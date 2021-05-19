@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.ed435ee1a9b4ccc3ecd3.js
-// Retrieved at 5/19/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.1084ecb051066f7e15f2.js
+// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -184,10 +184,10 @@
 			}
 			var v = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(m.pb)()
+					e(Object(c.i)()), Object(m.qb)()
 				},
 				onViewTooltip: () => {
-					Object(m.Hb)()
+					Object(m.Jb)()
 				}
 			}))(Object(p.c)(C));
 			const g = "editable-primary-topic-idcard";
@@ -3149,9 +3149,9 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.Kb
 				});
-				return !(!t || Object(s.Fd)(t))
+				return !(!t || Object(s.Hd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ed435ee1a9b4ccc3ecd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.1084ecb051066f7e15f2.js.map

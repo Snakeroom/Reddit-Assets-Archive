@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.535071739e5db0beeeee.js
-// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7ea9a0171e5aaa5c284d.js
+// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2363,7 +2363,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), He = !!ne && !Object($.Fd)(ne), Ve = (!w || He) && !me.isSponsored, ze = Object(_.t)(me, O), {
+					})(e), He = !!ne && !Object($.Hd)(ne), Ve = (!w || He) && !me.isSponsored, ze = Object(_.t)(me, O), {
 						source: Ue
 					} = ze, qe = Object(o.useRef)(null), Ze = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3748,7 +3748,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!n || Object(o.Fd)(n))
+				return !(!n || Object(o.Hd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, n) {
@@ -3763,9 +3763,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.rb
 				});
-				return !(!t || Object(o.Fd)(t))
+				return !(!t || Object(o.Hd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.535071739e5db0beeeee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.7ea9a0171e5aaa5c284d.js.map

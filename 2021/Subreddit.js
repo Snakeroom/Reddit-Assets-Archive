@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3073ec9f2fcb23a5709a.js
-// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.08474f9685f08e7f1dca.js
+// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -771,7 +771,7 @@
 				} = e, n = Object(c.g)(o.a.AWARDED_LISTING_BANNER, i.f), [u, m] = Object(s.useState)(n ? S.Hidden : S.Visible);
 				if (u === S.Hidden) return null;
 				const p = () => {
-					m(S.Visible), Object(c.db)(o.a.AWARDED_LISTING_BANNER, !1, i.f)
+					m(S.Visible), Object(c.eb)(o.a.AWARDED_LISTING_BANNER, !1, i.f)
 				};
 				return u === S.Dismissed ? r.a.createElement("div", {
 					className: Object(a.a)(x.a.dismissedContainer, t)
@@ -792,7 +792,7 @@
 				})), r.a.createElement(C, null), r.a.createElement(l.a, {
 					className: x.a.close,
 					onClick: () => {
-						m(S.Dismissed), Object(c.db)(o.a.AWARDED_LISTING_BANNER, !0, i.f)
+						m(S.Dismissed), Object(c.eb)(o.a.AWARDED_LISTING_BANNER, !0, i.f)
 					}
 				}))
 			}
@@ -892,7 +892,7 @@
 			class E extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.db)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.eb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(m.b)())
 					}, this.createPost = () => {
@@ -7169,7 +7169,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!n || Object(s.Fd)(n))
+				return !(!n || Object(s.Hd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/newPostPill.ts": function(e, t, n) {
@@ -7345,4 +7345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3073ec9f2fcb23a5709a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.08474f9685f08e7f1dca.js.map

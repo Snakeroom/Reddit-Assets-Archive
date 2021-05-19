@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6b06f4cedac565e27ee5.js
-// Retrieved at 5/19/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.46ac74a0c23bdf146d7e.js
+// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -5933,7 +5933,7 @@
 					update: a
 				} = e, d = Object(Q.a)(), l = Object(i.d)(), [c, u] = Object(o.useState)(s), [m, p] = Object(o.useState)(!1), [h, b] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					b(Object(X.A)("location")), Object(X.wb)("location")
+					b(Object(X.B)("location")), Object(X.yb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(M.a, null, j.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(R.k, {
@@ -6886,10 +6886,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.pb)()
+					e(Object(l.i)()), Object(p.qb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Hb)()
+					Object(p.Jb)()
 				}
 			}))(Object(u.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -23499,7 +23499,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(q.A)("location")
+						locationSettingSeen: Object(q.B)("location")
 					})
 				}
 				render() {
@@ -24618,7 +24618,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.Kb
 				});
-				return !(!t || Object(n.Fd)(t))
+				return !(!t || Object(n.Hd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -24851,4 +24851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6b06f4cedac565e27ee5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.46ac74a0c23bdf146d7e.js.map

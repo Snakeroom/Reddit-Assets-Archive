@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.96ad3e6c38d387d5b57d.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.66a84b668466a748e75d.js
+// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -26,7 +26,7 @@
 			})), s.d(t, "f", (function() {
 				return $
 			})), s.d(t, "o", (function() {
-				return H
+				return V
 			})), s.d(t, "p", (function() {
 				return Z
 			})), s.d(t, "d", (function() {
@@ -172,7 +172,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), M = Object(c.a)(S.j), $ = Object(c.a)(S.i), K = Object(c.a)(S.e), V = Object(c.a)(S.f), H = (Object(c.a)(S.c), Object(c.a)(S.d), ({
+				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), M = Object(c.a)(S.j), $ = Object(c.a)(S.i), K = Object(c.a)(S.e), H = Object(c.a)(S.f), V = (Object(c.a)(S.c), Object(c.a)(S.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -197,7 +197,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(V({
+					s(H({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -1090,7 +1090,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: e
 				});
-				return !(!s || Object(n.Fd)(s))
+				return !(!s || Object(n.Hd)(s))
 			}
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, s) {
@@ -1141,4 +1141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.96ad3e6c38d387d5b57d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.66a84b668466a748e75d.js.map
