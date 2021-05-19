@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd07946ea7f2e14255c0.js
-// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bae18f8c15aada28c825.js
+// Retrieved at 5/19/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("134387"),
+				buildNumber: r("134443"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1621382282"),
+				})("1621435960"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4208,14 +4208,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c77cab91e951471454bdc007fd1bed61cc3de9661-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7f0d026cb945c92830dca8c133798995fe777793-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "77cab91e951471454bdc007fd1bed61cc3de9661-production",
+						release: "7f0d026cb945c92830dca8c133798995fe777793-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4709,7 +4709,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "77cab91e951471454bdc007fd1bed61cc3de9661-production",
+						releaseClient: "7f0d026cb945c92830dca8c133798995fe777793-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -14776,7 +14776,7 @@
 						c = Object(v.s)(o, {
 							itemId: e
 						}),
-						u = Object(v.C)(o, {
+						u = Object(v.D)(o, {
 							itemId: e
 						}),
 						_ = new Set;
@@ -14812,7 +14812,7 @@
 						l = Object(v.u)(a, {
 							subredditId: e
 						}),
-						c = Object(v.F)(a, {
+						c = Object(v.G)(a, {
 							subredditId: e
 						});
 					let u = l.filter(e => !!e.id && !!e.action).map(e => ({
@@ -14826,7 +14826,7 @@
 							state: g.d.TAGGED
 						})))
 					}
-					await X(e, u)(r, s, d), Object(v.D)(s()) ? r(Object(o.f)(Object(o.e)(n.fbt._("Yikes! It looks like we didn't save all of your topics. Please try again", null, {
+					await X(e, u)(r, s, d), Object(v.E)(s()) ? r(Object(o.f)(Object(o.e)(n.fbt._("Yikes! It looks like we didn't save all of your topics. Please try again", null, {
 						hk: "2Jbh5V"
 					}), y.b.Error, n.fbt._("Retry", null, {
 						hk: "1c2xrJ"
@@ -14898,8 +14898,12 @@
 				}, re = (e, t, i = !0) => async (r, s, {
 					gqlContext: d
 				}) => {
+					const a = Object(v.B)(s(), {
+						subredditId: e
+					});
+					if ((null == a ? void 0 : a.id) === t.tagId && t.state === g.d.TAGGED) return;
 					r(q());
-					const a = await ((e, t) => Object(l.a)(e, {
+					const c = await ((e, t) => Object(l.a)(e, {
 							...h,
 							variables: t
 						}))(d(), {
@@ -14908,8 +14912,8 @@
 								primaryTagState: t
 							}
 						}),
-						c = a.body && a.body.data || null;
-					a.ok && c && c.updateSubredditTagStates && c.updateSubredditTagStates.ok ? (r(V((e => {
+						u = c.body && c.body.data || null;
+					c.ok && u && u.updateSubredditTagStates && u.updateSubredditTagStates.ok ? (r(V((e => {
 						const {
 							secondaryTags: t,
 							id: i,
@@ -14922,7 +14926,7 @@
 								node: t
 							}) => (e[t.tag.id] = t, e), {})
 						}
-					})(c))), i && r(Object(o.f)(Object(o.e)(n.fbt._("Successfully updated primary topic!", null, {
+					})(u))), i && r(Object(o.f)(Object(o.e)(n.fbt._("Successfully updated primary topic!", null, {
 						hk: "1NL90v"
 					}), y.b.SuccessCommunity)))) : (r(W()), r(Object(o.f)(Object(o.e)(n.fbt._("Whoops! Unable to update primary topic", null, {
 						hk: "3ilZqp"
@@ -26419,12 +26423,12 @@
 				e.communitySettings = "community_settings", e.idCard = "id_card"
 			}(n || (n = {}));
 			const d = (e, t, i) => {
-					const n = Object(r.A)(e, {
+					const n = Object(r.B)(e, {
 						subredditId: t
 					});
 					return !!n && n.id === i
 				},
-				a = (e, t) => Object(r.x)(e, {
+				a = (e, t) => Object(r.y)(e, {
 					itemId: t
 				}).reduce(({
 					topicTagIds: e,
@@ -34942,6 +34946,7 @@
 				e.ADD = "ADD", e.REMOVE = "REMOVE"
 			}(n || (n = {}));
 			const u = {
+				selectedPrimaryTagId: {},
 				selectedOptions: {},
 				selectedSuggestedOptions: {},
 				deselectedOptions: {},
@@ -34956,8 +34961,9 @@
 						const {
 							subredditId: i,
 							itemTags: n,
-							suggestedItemTags: r
-						} = t.payload, o = s()([...(e.selectedOptions[i] || []).map(e => {
+							suggestedItemTags: r,
+							primaryTag: o
+						} = t.payload, a = s()([...(e.selectedOptions[i] || []).map(e => {
 							if (!e.id) {
 								const t = d()(n[i] || {}).find(t => e.displayText.toLowerCase().trim() === t.tag.text.toLowerCase().trim());
 								if (t) return {
@@ -34970,11 +34976,15 @@
 							...Object(c.e)(e, !0),
 							action: null
 						}))], l.a);
-						return {
+						let u = e.selectedPrimaryTagId;
+						return o && (u = {
+							...u,
+							[i]: o.tag.id
+						}), {
 							...e,
 							selectedOptions: {
 								...e.selectedOptions,
-								[i]: o.map(e => ({
+								[i]: a.map(e => ({
 									...e,
 									action: e.id ? null : e.action
 								}))
@@ -34989,7 +34999,8 @@
 							deselectedOptions: {
 								...e.deselectedOptions,
 								[i]: []
-							}
+							},
+							selectedPrimaryTagId: u
 						}
 					}
 					case a.D:
@@ -35086,19 +35097,26 @@
 							primaryTagId: n
 						} = t.payload;
 						if (!n || !i) return e;
-						const r = e.selectedOptions[i];
-						if (r) {
-							const t = r.findIndex(e => e.id === n),
-								s = [...r];
-							return t >= 0 && s.splice(t, 1), {
+						const r = {
 								...e,
+								selectedPrimaryTagId: {
+									...e.selectedPrimaryTagId,
+									[i]: n
+								}
+							},
+							s = e.selectedOptions[i];
+						if (s) {
+							const t = s.findIndex(e => e.id === n),
+								o = [...s];
+							return t >= 0 && o.splice(t, 1), {
+								...r,
 								selectedOptions: {
 									...e.selectedOptions,
-									[i]: s
+									[i]: o
 								}
 							}
 						}
-						return e
+						return r
 					}
 					default:
 						return e
@@ -40137,9 +40155,9 @@
 				return h
 			})), i.d(t, "r", (function() {
 				return f
-			})), i.d(t, "D", (function() {
-				return b
 			})), i.d(t, "E", (function() {
+				return b
+			})), i.d(t, "F", (function() {
 				return g
 			})), i.d(t, "l", (function() {
 				return y
@@ -40149,7 +40167,7 @@
 				return E
 			})), i.d(t, "v", (function() {
 				return S
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return T
 			})), i.d(t, "t", (function() {
 				return F
@@ -40163,32 +40181,34 @@
 				return N
 			})), i.d(t, "n", (function() {
 				return D
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "D", (function() {
 				return A
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "C", (function() {
 				return P
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return B
 			})), i.d(t, "a", (function() {
 				return L
 			})), i.d(t, "u", (function() {
 				return U
-			})), i.d(t, "F", (function() {
-				return M
-			})), i.d(t, "z", (function() {
-				return G
-			})), i.d(t, "A", (function() {
-				return V
-			})), i.d(t, "j", (function() {
-				return W
-			})), i.d(t, "y", (function() {
-				return H
 			})), i.d(t, "G", (function() {
+				return M
+			})), i.d(t, "A", (function() {
+				return G
+			})), i.d(t, "w", (function() {
+				return V
+			})), i.d(t, "B", (function() {
+				return W
+			})), i.d(t, "j", (function() {
+				return H
+			})), i.d(t, "z", (function() {
 				return $
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "H", (function() {
 				return z
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "p", (function() {
 				return K
+			})), i.d(t, "q", (function() {
+				return Y
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/some.js"),
@@ -40199,7 +40219,7 @@
 				a = i("./src/reddit/helpers/tags/index.ts"),
 				l = i("./src/reddit/models/Tags/index.ts");
 			const c = e => {
-					const t = H(e),
+					const t = $(e),
 						i = t && t.id;
 					return o()((e => {
 						const t = u(e) ? x(e) : F(e),
@@ -40326,21 +40346,25 @@
 				}) => e.tags.models.subredditPrimaryTagId[t] || null,
 				q = (e, t) => t && e.tags.models.globalSubredditTags[t] || null,
 				V = (e, t) => {
+					const i = e.tags.selected.selectedPrimaryTagId[t.subredditId] || null;
+					return q(e, i)
+				},
+				W = (e, t) => {
 					const i = G(e, t);
 					return q(e, i)
 				},
-				W = e => e.tags.creation.selectedPrimaryTagId || null,
-				H = e => {
-					const t = W(e);
+				H = e => e.tags.creation.selectedPrimaryTagId || null,
+				$ = e => {
+					const t = H(e);
 					return q(e, t)
 				},
-				$ = e => e.tags.api.updatePrimaryTag.pending,
-				z = (e, {
+				z = e => e.tags.api.updatePrimaryTag.pending,
+				K = (e, {
 					subredditId: t
 				}) => Object.keys(N(e, {
 					itemId: t
 				})).length > 0,
-				K = e => _(e).length > 0
+				Y = e => _(e).length > 0
 		},
 		"./src/reddit/selectors/telemetry.ts": function(e, t, i) {
 			"use strict";
@@ -46421,4 +46445,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bd07946ea7f2e14255c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bae18f8c15aada28c825.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c3b152b6c011b0f7abbe.js
-// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2226d85da2821264b244.js
+// Retrieved at 5/19/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var d, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(a, n) && a[n] && b.push(a[n][0]), a[n] = 0;
@@ -619,8 +619,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "75132b69206bd3cb5d77",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "f02b07af48ea5265d31e",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "876b5feef8d6c1238939",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "63ae8b756884bd693e62",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
@@ -1169,7 +1169,7 @@
 						RequestToJoinPrivateSubredditModal: "17bde55832f71705fd71",
 						ShortcutWrapper: "62a3634edfc7c200ceba",
 						SnoovatarModal: "8ff5d16715f3959dbaaf",
-						SubredditCreation: "5f8f4b879056d9f19dd6",
+						SubredditCreation: "ed435ee1a9b4ccc3ecd3",
 						SubredditHovercard: "c547c05426929b31db1a",
 						SubredditLeaderboard: "10fbe13bd941a5400be8",
 						SubredditPremiumBadgeManagement: "997ecc26439ae8dd1c1a",
@@ -1180,13 +1180,13 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "90fecbd24fea09967320",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "d11b5dbc570fe035f559",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "b0f04811525df8463b8f",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "c24a3063ffe062683a1a",
 						"translations/de_DE-json": "617f44b98ca9ceeda9b2",
 						"translations/es_ES-json": "7d1e5e4416333521e727",
 						"translations/fr_FR-json": "cd76880433e1bf615203",
 						"translations/it_IT-json": "08e15f1ee898f1ddd5d6",
-						"translations/pseudo_ext-json": "4eba0cb4fdd7c57b936f",
+						"translations/pseudo_ext-json": "f6e77d5508c4d36f5060",
 						"translations/pseudo_long-json": "33eb832511ab11b231d6",
 						"translations/pseudo_short-json": "7f393573499752c6faa8",
 						"translations/pt_BR-json": "286b050df6798779a660",
@@ -1221,7 +1221,7 @@
 						"vendors~ModStatsChart~Settings": "4756d25d069e14bb198b",
 						Settings: "3dff758823ec30f3f9eb",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
-						ModerationPages: "a4af2438b253ac964628",
+						ModerationPages: "6b06f4cedac565e27ee5",
 						"vendors~ExportTheme~ImportTheme": "244a7587332fd38fc7bc",
 						ExportTheme: "22be1ab3948c3464e2ac",
 						ImportTheme: "099317721ef0b4bccdaf",
@@ -1335,9 +1335,9 @@
 						"reddit-components-Economics-SubredditPremium-LFGBanner": "e5ee883d81c7cc67d8ce",
 						"reddit-components-LayerEmbed": "170d4f1a9e1f3facee55",
 						"reddit-components-Governance-ClaimPointsBanner": "37696fed1fcc7e481ddd",
-						AdminCommunityTopics: "8306acdbe195a26997d6",
+						AdminCommunityTopics: "b17cebda8b3911435f14",
 						CreatePollButton: "2c69ad511a868fd6c3f2",
-						SubredditInlineEditing: "72c345dfaea5591f29ed",
+						SubredditInlineEditing: "64db1d4e4f331fcaa8ae",
 						TopicLinksContainer: "61acbf0fbcba3b0d02c1",
 						"reddit-components-Governance-TransactionModals-ClaimPointsModal": "f103aacaf109aaa362bc",
 						"vendors~reddit-components-FormBuilder": "e612a5e10a1e99f46476",
@@ -1411,4 +1411,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c3b152b6c011b0f7abbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2226d85da2821264b244.js.map

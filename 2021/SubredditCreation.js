@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.5f8f4b879056d9f19dd6.js
-// Retrieved at 5/17/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.ed435ee1a9b4ccc3ecd3.js
+// Retrieved at 5/19/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -130,8 +130,10 @@
 		},
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return j
+			n.d(t, "b", (function() {
+				return R
+			})), n.d(t, "a", (function() {
+				return P
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -229,7 +231,7 @@
 					...S,
 					selectedPrimaryTag: (e, {
 						subredditId: t
-					}) => t && Object(y.A)(e, {
+					}) => t && Object(y.w)(e, {
 						subredditId: t
 					}) || null,
 					hasSecondaryTags: (e, {
@@ -237,15 +239,48 @@
 					}) => Object.keys(Object(y.s)(e, {
 						itemId: t
 					})).length > 0,
-					isSaving: y.G
+					isSaving: y.H
 				}),
 				I = Object(r.c)({
 					...S,
-					selectedPrimaryTag: y.y,
+					selectedPrimaryTag: (e, {
+						subredditId: t
+					}) => t && Object(y.B)(e, {
+						subredditId: t
+					}) || null,
+					hasSecondaryTags: (e, {
+						subredditId: t
+					}) => Object.keys(Object(y.s)(e, {
+						itemId: t
+					})).length > 0,
+					isSaving: y.H
+				}),
+				N = Object(r.c)({
+					...S,
+					selectedPrimaryTag: y.z,
 					hasSecondaryTags: () => !1,
-					isSaving: e => Object(y.G)(e)
+					isSaving: e => Object(y.H)(e)
+				}),
+				j = (e, {
+					subredditId: t,
+					onPrimarySelect: n
+				}) => ({
+					onPrimaryTopicSelected: s => {
+						s.isSelected || !n ? s.isSelected || (e(Object(l.j)({
+							primaryTagId: s.value,
+							subredditId: t
+						})), e(Object(l.s)(t, {
+							tagId: s.value,
+							state: E.d.TAGGED
+						}))) : n(s.value)
+					},
+					onShowTooltip: () => {
+						e(Object(c.f)({
+							tooltipId: g
+						}))
+					}
 				});
-			class N extends o.a.Component {
+			class D extends o.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						tooltipDismissed: !0
@@ -297,30 +332,16 @@
 					}))
 				}
 			}
-			const j = Object(i.b)(I, e => ({
+			const R = Object(i.b)(N, e => ({
 					onPrimaryTopicSelected: t => {
 						e(Object(l.d)({
 							primaryTagId: t.value
 						}))
 					}
-				}))(N),
-				D = Object(i.b)(k, (e, {
-					subredditId: t,
-					onPrimarySelect: n
-				}) => ({
-					onPrimaryTopicSelected: s => {
-						s.isSelected || !n ? s.isSelected || e(Object(l.s)(t, {
-							tagId: s.value,
-							state: E.d.TAGGED
-						})) : n(s.value)
-					},
-					onShowTooltip: () => {
-						e(Object(c.f)({
-							tooltipId: g
-						}))
-					}
-				}));
-			t.b = D(N)
+				}))(D),
+				P = Object(i.b)(I, j)(D),
+				M = Object(i.b)(k, j);
+			t.c = M(D)
 		},
 		"./src/reddit/components/CommunityTopics/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2604,9 +2625,9 @@
 			const E = Object(l.c)({
 				availableGlobalOptions: v.f,
 				selectedOptions: v.k,
-				isLoading: v.E,
+				isLoading: v.F,
 				currentInput: v.g,
-				selectedPrimaryTag: v.y,
+				selectedPrimaryTag: v.z,
 				hasSecondaryTags: v.q
 			});
 			class y extends o.a.Component {
@@ -2637,7 +2658,7 @@
 				render() {
 					return o.a.createElement("div", {
 						className: O.a.communityTopicsContainer
-					}, o.a.createElement(x.a, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && o.a.createElement(b.a, {
+					}, o.a.createElement(x.b, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && o.a.createElement(b.a, {
 						addText: s.fbt._("Add", null, {
 							hk: "2wi3d4"
 						}),
@@ -3133,4 +3154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.5f8f4b879056d9f19dd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ed435ee1a9b4ccc3ecd3.js.map

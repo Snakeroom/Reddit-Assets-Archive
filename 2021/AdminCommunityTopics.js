@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.8306acdbe195a26997d6.js
-// Retrieved at 3/11/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.b17cebda8b3911435f14.js
+// Retrieved at 5/19/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -95,8 +95,8 @@
 				E = s("./src/reddit/models/Toast/index.ts"),
 				j = s("./src/reddit/reducers/tags/selected/index.ts"),
 				R = s("./src/reddit/components/CommunityTopics/AdminCommunityTopics/index.m.less"),
-				w = s.n(R);
-			const D = Object(c.c)({
+				D = s.n(R);
+			const w = Object(c.c)({
 					availableSubredditTags: (e, {
 						subredditId: t
 					}) => Object(m.d)(e, {
@@ -104,7 +104,7 @@
 					}),
 					subredditTags: (e, {
 						subredditId: t
-					}) => Object(m.C)(e, {
+					}) => Object(m.D)(e, {
 						itemId: t
 					}),
 					availableGlobalOptions: (e, {
@@ -115,17 +115,17 @@
 					}),
 					selectedOptions: (e, {
 						subredditId: t
-					}) => Object(m.w)(e, {
+					}) => Object(m.x)(e, {
 						subredditId: t
 					}),
-					isLoading: e => Object(m.E)(e),
+					isLoading: e => Object(m.F)(e),
 					currentInput: (e, {
 						subredditId: t
 					}) => Object(m.m)(e, {
 						subredditId: t
 					})
 				}),
-				B = Object(r.b)(D, (e, {
+				B = Object(r.b)(w, (e, {
 					subredditId: t
 				}) => ({
 					optionSelected: s => {
@@ -175,17 +175,17 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: w.a.container,
+						className: D.a.container,
 						onClick: this.onContainerClick
 					}, i.a.createElement(y.o, {
-						className: w.a.expandButton,
+						className: D.a.expandButton,
 						onClick: this.onExpandButtonClick
 					}, n.fbt._("Admin Community Topics", null, {
 						hk: "37srVU"
 					}), this.state.isOpen ? i.a.createElement(T.a, null) : i.a.createElement(S.a, null)), this.state.isOpen && i.a.createElement("div", {
-						className: w.a.content
+						className: D.a.content
 					}, i.a.createElement("div", {
-						className: w.a.header
+						className: D.a.header
 					}, n.fbt._("Moderator Added Topics", null, {
 						hk: "3GQoal"
 					})), i.a.createElement(p.b, {
@@ -194,7 +194,7 @@
 						readOnlyMode: v.a.readOnly,
 						selectedOptionComponent: g
 					}), i.a.createElement("br", null), i.a.createElement("div", {
-						className: w.a.header
+						className: D.a.header
 					}, n.fbt._("Admin Suggested Topics", null, {
 						hk: "12wo5g"
 					})), i.a.createElement(B, {
@@ -254,7 +254,7 @@
 				}) => Object(O.v)(e, {
 					subredditId: t
 				}),
-				isLoading: e => Object(O.E)(e),
+				isLoading: e => Object(O.F)(e),
 				currentInput: (e, {
 					subredditId: t
 				}) => Object(O.l)(e, {
@@ -715,8 +715,8 @@
 			}
 			var j = s("./node_modules/reselect/es/index.js");
 			const R = [],
-				w = {};
-			class D extends r.a.Component {
+				D = {};
+			class w extends r.a.Component {
 				constructor(e) {
 					super(e), this._selectableOptionsSelector = Object(j.a)(e => e.availableOptions || R, e => e.input, (e, t) => e.filter(e => {
 						const s = e.displayText.toLowerCase(),
@@ -753,7 +753,7 @@
 				}
 				render() {
 					const {
-						childClassNames: e = w
+						childClassNames: e = D
 					} = this.props;
 					return r.a.createElement("div", {
 						className: this.props.className,
@@ -784,7 +784,7 @@
 					}, this.props.children))
 				}
 			}
-			t.a = D
+			t.a = w
 		},
 		"./src/reddit/helpers/readOnlyMode/index.ts": function(e, t, s) {
 			"use strict";
@@ -804,4 +804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.8306acdbe195a26997d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.b17cebda8b3911435f14.js.map

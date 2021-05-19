@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a4af2438b253ac964628.js
-// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6b06f4cedac565e27ee5.js
+// Retrieved at 5/19/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -6067,7 +6067,7 @@
 						subredditId: a
 					}))),
 					direction: "column"
-				}, r.a.createElement(T.b, {
+				}, r.a.createElement(T.c, {
 					subredditId: a,
 					onPrimarySelect: e.onPrimarySelect
 				}), (!!e.selectedPrimaryTag || e.hasSecondaryTags) && r.a.createElement(I.b, {
@@ -6677,7 +6677,7 @@
 				restrictions: k.p,
 				settings: (e, t) => Object(k.W)(e, t.subredditId),
 				subreddit: k.U,
-				selectedPrimaryTag: O.A,
+				selectedPrimaryTag: O.w,
 				hasSecondaryTags: O.p,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
 				isWelcomeMessageExperimentEnabledSelector: C.a
@@ -6832,8 +6832,10 @@
 		},
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return T
+			s.d(t, "b", (function() {
+				return M
+			})), s.d(t, "a", (function() {
+				return R
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -6931,7 +6933,7 @@
 					...w,
 					selectedPrimaryTag: (e, {
 						subredditId: t
-					}) => t && Object(k.A)(e, {
+					}) => t && Object(k.w)(e, {
 						subredditId: t
 					}) || null,
 					hasSecondaryTags: (e, {
@@ -6939,15 +6941,48 @@
 					}) => Object.keys(Object(k.s)(e, {
 						itemId: t
 					})).length > 0,
-					isSaving: k.G
+					isSaving: k.H
 				}),
 				I = Object(i.c)({
 					...w,
-					selectedPrimaryTag: k.y,
+					selectedPrimaryTag: (e, {
+						subredditId: t
+					}) => t && Object(k.B)(e, {
+						subredditId: t
+					}) || null,
+					hasSecondaryTags: (e, {
+						subredditId: t
+					}) => Object.keys(Object(k.s)(e, {
+						itemId: t
+					})).length > 0,
+					isSaving: k.H
+				}),
+				N = Object(i.c)({
+					...w,
+					selectedPrimaryTag: k.z,
 					hasSecondaryTags: () => !1,
-					isSaving: e => Object(k.G)(e)
+					isSaving: e => Object(k.H)(e)
+				}),
+				T = (e, {
+					subredditId: t,
+					onPrimarySelect: s
+				}) => ({
+					onPrimaryTopicSelected: n => {
+						n.isSelected || !s ? n.isSelected || (e(Object(d.j)({
+							primaryTagId: n.value,
+							subredditId: t
+						})), e(Object(d.s)(t, {
+							tagId: n.value,
+							state: _.d.TAGGED
+						}))) : s(n.value)
+					},
+					onShowTooltip: () => {
+						e(Object(l.f)({
+							tooltipId: v
+						}))
+					}
 				});
-			class N extends o.a.Component {
+			class P extends o.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						tooltipDismissed: !0
@@ -6999,30 +7034,16 @@
 					}))
 				}
 			}
-			const T = Object(r.b)(I, e => ({
+			const M = Object(r.b)(N, e => ({
 					onPrimaryTopicSelected: t => {
 						e(Object(d.d)({
 							primaryTagId: t.value
 						}))
 					}
-				}))(N),
-				P = Object(r.b)(j, (e, {
-					subredditId: t,
-					onPrimarySelect: s
-				}) => ({
-					onPrimaryTopicSelected: n => {
-						n.isSelected || !s ? n.isSelected || e(Object(d.s)(t, {
-							tagId: n.value,
-							state: _.d.TAGGED
-						})) : s(n.value)
-					},
-					onShowTooltip: () => {
-						e(Object(l.f)({
-							tooltipId: v
-						}))
-					}
-				}));
-			t.b = P(N)
+				}))(P),
+				R = Object(r.b)(I, T)(P),
+				A = Object(r.b)(j, T);
+			t.c = A(P)
 		},
 		"./src/reddit/components/CommunityTopics/SuggestedTopics/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7072,13 +7093,13 @@
 					suggestedOptions: (e, {
 						subredditId: t
 					}) => {
-						const s = Object(E.B)(e, {
+						const s = Object(E.C)(e, {
 								itemId: t
 							}),
 							n = Object(E.v)(e, {
 								subredditId: t
 							}),
-							a = Object(E.z)(e, {
+							a = Object(E.A)(e, {
 								subredditId: t
 							});
 						return s.filter(e => !!e.id && a !== e.id && !n.find(t => !!t.id && t.id === e.id))
@@ -7173,7 +7194,7 @@
 				}) => Object(h.v)(e, {
 					subredditId: t
 				}),
-				isLoading: e => Object(h.E)(e),
+				isLoading: e => Object(h.F)(e),
 				currentInput: (e, {
 					subredditId: t
 				}) => Object(h.l)(e, {
@@ -24073,9 +24094,9 @@
 			const _ = Object(d.c)({
 				availableGlobalOptions: E.f,
 				selectedOptions: E.k,
-				isLoading: E.E,
+				isLoading: E.F,
 				currentInput: E.g,
-				selectedPrimaryTag: E.y,
+				selectedPrimaryTag: E.z,
 				hasSecondaryTags: E.q
 			});
 			class k extends o.a.Component {
@@ -24106,7 +24127,7 @@
 				render() {
 					return o.a.createElement("div", {
 						className: C.a.communityTopicsContainer
-					}, o.a.createElement(b.a, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && o.a.createElement(g.a, {
+					}, o.a.createElement(b.b, null), (!!this.props.selectedPrimaryTag || this.props.hasSecondaryTags) && o.a.createElement(g.a, {
 						addText: n.fbt._("Add", null, {
 							hk: "2wi3d4"
 						}),
@@ -24830,4 +24851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a4af2438b253ac964628.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6b06f4cedac565e27ee5.js.map
