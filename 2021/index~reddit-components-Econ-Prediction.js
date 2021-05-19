@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f3ce84e2bf70ef61509a.js
-// Retrieved at 5/18/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.107be0f1dc7c60ea346c.js
+// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -191,9 +191,9 @@
 			})), r.d(i, "n", (function() {
 				return j
 			})), r.d(i, "i", (function() {
-				return w
-			})), r.d(i, "d", (function() {
 				return I
+			})), r.d(i, "d", (function() {
+				return w
 			})), r.d(i, "e", (function() {
 				return N
 			}));
@@ -411,7 +411,7 @@
 						subredditId: i,
 						tournament: o.tournament
 					})), o.tournament
-				}, w = (a, i) => async (r, x, {
+				}, I = (a, i) => async (r, x, {
 					gqlContext: t
 				}) => {
 					const k = await Object(m.d)(t(), {
@@ -425,7 +425,7 @@
 						subredditId: i,
 						tournament: n.tournament
 					})), n.tournament
-				}, I = a => async (i, r, {
+				}, w = a => async (i, r, {
 					gqlContext: x
 				}) => {
 					const t = await Object(m.e)(x(), {
@@ -685,7 +685,7 @@
 				selectedChipPack: i,
 				selectedCoinPack: r
 			}) {
-				const n = Object(k.e)(G.h),
+				const n = Object(k.e)(G.g),
 					o = Object(k.e)(E.d),
 					[s, e] = Object(x.useState)(null),
 					[l, c] = Object(x.useState)(!1),
@@ -728,34 +728,34 @@
 				C = r("./src/reddit/components/Econ/Prediction/PredictionModal/Selection/index.m.less"),
 				j = r.n(C);
 			const {
-				fbt: w
+				fbt: I
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function I({
+			function w({
 				isCoinsPrediction: a,
 				option: i,
 				tokenBalance: r
 			}) {
 				return t.a.createElement(t.a.Fragment, null, t.a.createElement("h1", {
 					className: j.a.selection
-				}, w._("You picked {lineBreak}{optionText} !", [w._param("lineBreak", t.a.createElement("br", null)), w._param("optionText", `‘${Object(O.a)(i.text,40,"...")}’`)], {
+				}, I._("You picked {lineBreak}{optionText} !", [I._param("lineBreak", t.a.createElement("br", null)), I._param("optionText", `‘${Object(O.a)(i.text,40,"...")}’`)], {
 					hk: "2egxpe"
 				})), r ? t.a.createElement("div", {
 					className: j.a.tokenBalance
-				}, w._({
+				}, I._({
 					"*": "You have {=[tokenImage][tokenBalance]} tournament tokens",
 					_1: "You have {=[tokenImage][tokenBalance]} tournament token"
-				}, [w._param("=[tokenImage][tokenBalance]", t.a.createElement("span", {
+				}, [I._param("=[tokenImage][tokenBalance]", t.a.createElement("span", {
 					className: j.a.tokenBalanceAmount
-				}, w._("{tokenImage}{tokenBalance}", [w._param("tokenImage", t.a.createElement(l.a, {
+				}, I._("{tokenImage}{tokenBalance}", [I._param("tokenImage", t.a.createElement(l.a, {
 					className: j.a.tokenIcon
-				})), w._param("tokenBalance", r)], {
+				})), I._param("tokenBalance", r)], {
 					hk: "2MlGLd"
-				}))), w._plural(r)], {
+				}))), I._plural(r)], {
 					hk: "4Gtem2"
 				})) : a ? t.a.createElement("p", {
 					className: j.a.upsell
-				}, w._("Prove you’re right, taunt your fellow redditors, and earn bragging rights.", null, {
+				}, I._("Prove you’re right, taunt your fellow redditors, and earn bragging rights.", null, {
 					hk: "2fEaS6"
 				})) : null)
 			}
@@ -851,7 +851,7 @@
 			const {
 				fbt: Y
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = 1e3, X = Object(n.c)({
-				isNewPredictionsSheet: G.h,
+				isNewPredictionsSheet: G.g,
 				userCoins: E.d
 			}), Z = {
 				fetchPredictionChipPackages: s.d,
@@ -874,7 +874,7 @@
 				tournamentId: B,
 				userCoins: D
 			}) => {
-				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, C] = Object(x.useState)(!1), [j, w] = Object(x.useState)(!1), [N, L] = Object(x.useState)(!1), z = Object(u.a)(), q = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], U = B ? v && V === v.length - 1 : F && V === F.length - 1, R = !!F || "COINS" === (null == H ? void 0 : H.currency), W = R && D < ((null == q ? void 0 : q.coins) || (null == H ? void 0 : H.amount) || 0), K = !!H && null !== S && S < H.amount, X = null == q ? void 0 : q.coins, Z = null == H ? void 0 : H.amount, $ = W || K, aa = $ || U, ia = Object(x.useCallback)(async () => {
+				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, C] = Object(x.useState)(!1), [j, I] = Object(x.useState)(!1), [N, L] = Object(x.useState)(!1), z = Object(u.a)(), q = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], U = B ? v && V === v.length - 1 : F && V === F.length - 1, R = !!F || "COINS" === (null == H ? void 0 : H.currency), W = R && D < ((null == q ? void 0 : q.coins) || (null == H ? void 0 : H.amount) || 0), K = !!H && null !== S && S < H.amount, X = null == q ? void 0 : q.coins, Z = null == H ? void 0 : H.amount, $ = W || K, aa = $ || U, ia = Object(x.useCallback)(async () => {
 					try {
 						const i = await a(G);
 						P(i)
@@ -894,7 +894,7 @@
 					(async () => {
 						if (B && !S) try {
 							const a = await i(B);
-							w(!0), null === a ? L(!0) : T(a)
+							I(!0), null === a ? L(!0) : T(a)
 						} catch (a) {
 							E({
 								duration: 5e3,
@@ -953,7 +953,7 @@
 					selectedCoinPack: q
 				}), t.a.createElement("div", {
 					className: M.a.modalContent
-				}, n && t.a.createElement(I, {
+				}, n && t.a.createElement(w, {
 					chipPack: null == v ? void 0 : v[0],
 					isCoinsPrediction: R,
 					option: e,
@@ -1046,20 +1046,16 @@
 				optionButton: "_2ntp-JcW8WtkgytaV4Ulhf",
 				canVote: "_1fbJ_nQTE-D4anabkE96oz",
 				isCorrect: "_3jmmoq1otA_Twif-J89nrp",
-				hintButton: "_20VllfWHKGUSG02wR_TCKW",
 				optionBody: "X-1krr1vt__mfLM_N6-fc",
 				optionText: "_2EtRvWvspf1e95m4nOww3i",
-				canGetHint: "_13IbSA1qE2L9xvRdrE-MI4",
 				isVote: "_4SUCBqznJCIiyL9k_52hC",
 				optionStake: "_13IxX5Ek1VDFfqrZVhO_Xz",
 				optionPercentage: "_3cTLrBysxImecWhQKcy3u_",
-				isShowingHint: "_23J3bI5jf022JCgL4vM3Zp",
-				showPercentage: "dtXtw-ToVB3DAPXazCaaq",
 				isSelected: "Tg_55Aw6PyKCmanFRdTd-",
 				checkmarkIcon: "_2gAEl8yg8wfIPLrKbwHden",
 				loggedOutTooltip: "_1Hv_GwhEllz9BSmfsqochE",
-				bulbIcon: "GjPZjMgfQVA01pv-Rmka9",
-				icon: "mm7Q2UimK8B5N7a2U94Uh"
+				coinIcon: "_6FvDlfj5P0tQCO_G9qec9",
+				tokenIcon: "_1eAD31VEoDRDp3q_zlw-P3"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx": function(a, i, r) {
@@ -1086,12 +1082,11 @@
 				tournamentId: h,
 				userIsLoggedOut: f,
 				userSelection: d,
-				votePercentage: u,
-				isShowingHint: y
-			}, G) => {
-				const E = !!h,
-					A = p === c.id,
-					B = i || !!d || !!p;
+				votePercentage: u
+			}, y) => {
+				const G = !!h,
+					E = p === c.id,
+					A = i || !!d || !!p;
 				return t.a.createElement("div", {
 					className: e.a.optionButtonWrapper
 				}, t.a.createElement("button", {
@@ -1099,33 +1094,31 @@
 					className: Object(k.a)(e.a.optionButton, {
 						[e.a.canVote]: !d && !i,
 						[e.a.isVote]: d === c.id,
-						[e.a.isCorrect]: A,
+						[e.a.isCorrect]: E,
 						[e.a.isSelected]: r,
-						[e.a.isTournament]: E,
-						[e.a.isShowingHint]: y && !d
+						[e.a.isTournament]: G
 					}),
-					disabled: a || !x && (B || f),
+					disabled: a || !x && (A || f),
 					onClick: s,
-					ref: G
+					ref: y
 				}, t.a.createElement("div", {
 					className: e.a.optionBody
-				}, A && t.a.createElement(o.a, {
+				}, E && t.a.createElement(o.a, {
 					className: e.a.checkmarkIcon
 				}), t.a.createElement("div", {
 					className: e.a.optionText
 				}, c.text), !!c.userStakeAmount && t.a.createElement("div", {
 					className: e.a.optionStake
-				}, E ? t.a.createElement(n.a, {
-					className: e.a.icon
+				}, G ? t.a.createElement(n.a, {
+					className: e.a.tokenIcon
 				}) : t.a.createElement(m.a, {
-					className: e.a.icon
+					className: e.a.coinIcon
 				}), " ", c.userStakeAmount)), !!u && t.a.createElement("div", {
 					className: e.a.optionPercentage,
 					style: {
-						width: `${u}%`,
-						maxWidth: `${u}%`
+						width: `${u}%`
 					}
-				}, " "), f && !B && t.a.createElement("div", {
+				}, " "), f && !A && t.a.createElement("div", {
 					className: e.a.loggedOutTooltip
 				}, l._("You must be logged in", null, {
 					hk: "18KrL7"
@@ -2007,4 +2000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f3ce84e2bf70ef61509a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.107be0f1dc7c60ea346c.js.map

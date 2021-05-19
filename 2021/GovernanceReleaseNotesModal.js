@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9c7e8843bd2f1c16bbaa.js
-// Retrieved at 5/18/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.927885242fbd385142f3.js
+// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3018,36 +3018,34 @@
 		},
 		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "h", (function() {
 				return o
-			})), n.d(t, "i", (function() {
-				return i
 			})), n.d(t, "e", (function() {
+				return i
+			})), n.d(t, "f", (function() {
 				return a
-			})), n.d(t, "g", (function() {
-				return d
 			})), n.d(t, "c", (function() {
+				return d
+			})), n.d(t, "g", (function() {
 				return c
-			})), n.d(t, "h", (function() {
-				return l
 			})), n.d(t, "d", (function() {
-				return u
+				return l
 			})), n.d(t, "b", (function() {
-				return m
+				return u
 			})), n.d(t, "a", (function() {
-				return h
+				return m
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.Db),
-				i = Object(s.a)(r.Gb),
-				a = Object(s.a)(r.Bb),
-				d = Object(s.a)(r.Eb),
-				c = Object(s.a)(r.Cb),
-				l = Object(s.a)(r.Fb),
-				u = Object(s.a)(r.Hb),
-				m = Object(s.a)(r.vb),
-				h = Object(s.a)(r.ub);
+			Object(s.a)(r.Db);
+			const o = Object(s.a)(r.Gb),
+				i = Object(s.a)(r.Bb),
+				a = Object(s.a)(r.Eb),
+				d = Object(s.a)(r.Cb),
+				c = Object(s.a)(r.Fb),
+				l = Object(s.a)(r.Hb),
+				u = Object(s.a)(r.vb),
+				m = Object(s.a)(r.ub);
 			Object(s.a)(r.wb)
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -3245,4 +3243,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9c7e8843bd2f1c16bbaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.927885242fbd385142f3.js.map

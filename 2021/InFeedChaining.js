@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.a9ba340df9e874cb8fae.js
-// Retrieved at 5/18/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.4b627741d73d5802f72d.js
+// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4881,36 +4881,34 @@
 		},
 		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "f", (function() {
+			s.d(t, "h", (function() {
 				return i
-			})), s.d(t, "i", (function() {
-				return o
 			})), s.d(t, "e", (function() {
+				return o
+			})), s.d(t, "f", (function() {
 				return a
-			})), s.d(t, "g", (function() {
-				return c
 			})), s.d(t, "c", (function() {
+				return c
+			})), s.d(t, "g", (function() {
 				return l
-			})), s.d(t, "h", (function() {
-				return d
 			})), s.d(t, "d", (function() {
-				return u
+				return d
 			})), s.d(t, "b", (function() {
-				return m
+				return u
 			})), s.d(t, "a", (function() {
-				return p
+				return m
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(r.a)(n.Db),
-				o = Object(r.a)(n.Gb),
-				a = Object(r.a)(n.Bb),
-				c = Object(r.a)(n.Eb),
-				l = Object(r.a)(n.Cb),
-				d = Object(r.a)(n.Fb),
-				u = Object(r.a)(n.Hb),
-				m = Object(r.a)(n.vb),
-				p = Object(r.a)(n.ub);
+			Object(r.a)(n.Db);
+			const i = Object(r.a)(n.Gb),
+				o = Object(r.a)(n.Bb),
+				a = Object(r.a)(n.Eb),
+				c = Object(r.a)(n.Cb),
+				l = Object(r.a)(n.Fb),
+				d = Object(r.a)(n.Hb),
+				u = Object(r.a)(n.vb),
+				m = Object(r.a)(n.ub);
 			Object(r.a)(n.wb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, s) {
@@ -4979,4 +4977,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.a9ba340df9e874cb8fae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.4b627741d73d5802f72d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.84fd10e50c1497524fe6.js
-// Retrieved at 5/18/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.8a4416b85cffd41bfabc.js
+// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -52,8 +52,8 @@
 			var P = n("./src/lib/timeUntil/index.ts"),
 				h = n("./src/reddit/models/Toast/index.ts"),
 				f = n("./src/reddit/actions/economics/helpers/index.ts"),
-				g = n("./src/reddit/actions/economics/predictions/index.ts"),
-				E = n("./src/reddit/actions/post.ts"),
+				E = n("./src/reddit/actions/economics/predictions/index.ts"),
+				g = n("./src/reddit/actions/post.ts"),
 				x = n("./src/reddit/helpers/trackers/predictions.ts"),
 				j = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
 				I = n("./src/reddit/actions/toaster.ts");
@@ -91,8 +91,8 @@
 					} = e,
 					[O, I] = i.a.useState(!1),
 					[y, C] = i.a.useState(null),
-					[T, w] = i.a.useState(!1),
-					A = p < Date.now();
+					[T, A] = i.a.useState(!1),
+					w = p < Date.now();
 				return {
 					isLoading: O,
 					isShowingVoteAnimation: T,
@@ -100,7 +100,7 @@
 						id: e
 					}) => e === y),
 					selectOption: e => {
-						A || b || C(e.id)
+						w || b || C(e.id)
 					},
 					predict: async ({
 						coinPackage: e,
@@ -109,7 +109,7 @@
 						if (e && e.coins > n) return Object(f.promptUserToBuyMoreCoins)(), void d(x.a);
 						const r = i ? i.id : e.id,
 							c = i ? i.amount : e.coins;
-						if (A) return l(k._("Error: Failed to make prediction. This prediction has already ended", null, {
+						if (w) return l(k._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
 						})), void C(null);
 						if (!u || !y) throw new Error("Invalid arguments, optionId and pollId must be strings");
@@ -118,12 +118,12 @@
 							selectedNumberTokens: c
 						}));
 						try {
-							await t(Object(g.k)({
+							await t(Object(E.k)({
 								coinPackageId: r,
 								optionId: y,
 								postId: u,
 								price: c
-							})), o && t(Object(E.bb)(u)), I(!1), C(null), s ? w(!0) : a({
+							})), o && t(Object(g.bb)(u)), I(!1), C(null), s ? A(!0) : a({
 								duration: 5e3,
 								kind: h.b.SuccessCommunity,
 								text: k._("Thanks! See if you're right in {timeToResult}", [k._param("timeToResult", Object(P.a)(new Date(p), !0))], {
@@ -140,13 +140,13 @@
 						C(null)
 					}, []),
 					hideAnimation: i.a.useCallback(() => {
-						w(!1)
+						A(!1)
 					}, [])
 				}
 			}
 			var C = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
 				T = n.n(C);
-			const w = ({
+			const A = ({
 				className: e,
 				prediction: t,
 				tournamentId: n,
@@ -160,8 +160,8 @@
 						selectedOption: P,
 						selectOption: h,
 						predict: f,
-						cancelAction: g,
-						hideAnimation: E
+						cancelAction: E,
+						hideAnimation: g
 					} = y(t),
 					{
 						endsAt: x,
@@ -184,7 +184,7 @@
 					endsAt: x,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: b && k === e.id,
-					onAnimationEnd: E
+					onAnimationEnd: g
 				}, i.a.createElement(l.a, {
 					disabled: b,
 					isEnded: C,
@@ -196,13 +196,12 @@
 					tournamentId: n,
 					userSelection: k,
 					userIsLoggedOut: !s,
-					votePercentage: (k || C) && e.voteCount && _ ? Math.floor(e.voteCount / _ * 100) : null,
-					isShowingHint: !1
+					votePercentage: (k || C) && e.voteCount && _ ? Math.floor(e.voteCount / _ * 100) : null
 				})))), !!P && i.a.createElement(a.b, {
 					className: T.a.modal,
 					isCreatingVote: m,
-					onOverlayClick: g,
-					onCancel: g,
+					onOverlayClick: E,
+					onCancel: E,
 					onPredict: f,
 					option: P,
 					pollId: t.id,
@@ -212,8 +211,8 @@
 				}))
 			};
 
-			function A() {
-				return (A = Object.assign || function(e) {
+			function w() {
+				return (w = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -234,7 +233,7 @@
 					tournamentId: d,
 					predictions: c
 				} = o.predictionTournament;
-				return c && c.length ? i.a.createElement(w, A({
+				return c && c.length ? i.a.createElement(A, w({
 					subredditId: o.belongsTo.id,
 					tournamentId: d,
 					prediction: c[0]
@@ -243,4 +242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.84fd10e50c1497524fe6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.8a4416b85cffd41bfabc.js.map
