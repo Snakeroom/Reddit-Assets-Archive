@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.107be0f1dc7c60ea346c.js
-// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fc0f03bcf9cf88633389.js
+// Retrieved at 5/19/2021, 7:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -685,7 +685,7 @@
 				selectedChipPack: i,
 				selectedCoinPack: r
 			}) {
-				const n = Object(k.e)(G.g),
+				const n = Object(k.e)(G.h),
 					o = Object(k.e)(E.d),
 					[s, e] = Object(x.useState)(null),
 					[l, c] = Object(x.useState)(!1),
@@ -851,7 +851,7 @@
 			const {
 				fbt: Y
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = 1e3, X = Object(n.c)({
-				isNewPredictionsSheet: G.g,
+				isNewPredictionsSheet: G.h,
 				userCoins: E.d
 			}), Z = {
 				fetchPredictionChipPackages: s.d,
@@ -1046,16 +1046,21 @@
 				optionButton: "_2ntp-JcW8WtkgytaV4Ulhf",
 				canVote: "_1fbJ_nQTE-D4anabkE96oz",
 				isCorrect: "_3jmmoq1otA_Twif-J89nrp",
+				hintButton: "_20VllfWHKGUSG02wR_TCKW",
 				optionBody: "X-1krr1vt__mfLM_N6-fc",
 				optionText: "_2EtRvWvspf1e95m4nOww3i",
+				canGetHint: "_13IbSA1qE2L9xvRdrE-MI4",
 				isVote: "_4SUCBqznJCIiyL9k_52hC",
 				optionStake: "_13IxX5Ek1VDFfqrZVhO_Xz",
 				optionPercentage: "_3cTLrBysxImecWhQKcy3u_",
+				isShowingHint: "_23J3bI5jf022JCgL4vM3Zp",
+				showPercentage: "dtXtw-ToVB3DAPXazCaaq",
 				isSelected: "Tg_55Aw6PyKCmanFRdTd-",
 				checkmarkIcon: "_2gAEl8yg8wfIPLrKbwHden",
 				loggedOutTooltip: "_1Hv_GwhEllz9BSmfsqochE",
-				coinIcon: "_6FvDlfj5P0tQCO_G9qec9",
-				tokenIcon: "_1eAD31VEoDRDp3q_zlw-P3"
+				currencyIcon: "_2_H1PMvMua1F3nlUseYpzh",
+				icon: "mm7Q2UimK8B5N7a2U94Uh",
+				bulbIcon: "GjPZjMgfQVA01pv-Rmka9"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx": function(a, i, r) {
@@ -1082,11 +1087,12 @@
 				tournamentId: h,
 				userIsLoggedOut: f,
 				userSelection: d,
-				votePercentage: u
-			}, y) => {
-				const G = !!h,
-					E = p === c.id,
-					A = i || !!d || !!p;
+				votePercentage: u,
+				isShowingHint: y
+			}, G) => {
+				const E = !!h,
+					A = p === c.id,
+					B = i || !!d || !!p;
 				return t.a.createElement("div", {
 					className: e.a.optionButtonWrapper
 				}, t.a.createElement("button", {
@@ -1094,31 +1100,33 @@
 					className: Object(k.a)(e.a.optionButton, {
 						[e.a.canVote]: !d && !i,
 						[e.a.isVote]: d === c.id,
-						[e.a.isCorrect]: E,
+						[e.a.isCorrect]: A,
 						[e.a.isSelected]: r,
-						[e.a.isTournament]: G
+						[e.a.isTournament]: E,
+						[e.a.isShowingHint]: y && !d
 					}),
-					disabled: a || !x && (A || f),
+					disabled: a || !x && (B || f),
 					onClick: s,
-					ref: y
+					ref: G
 				}, t.a.createElement("div", {
 					className: e.a.optionBody
-				}, E && t.a.createElement(o.a, {
+				}, A && t.a.createElement(o.a, {
 					className: e.a.checkmarkIcon
 				}), t.a.createElement("div", {
 					className: e.a.optionText
 				}, c.text), !!c.userStakeAmount && t.a.createElement("div", {
 					className: e.a.optionStake
-				}, G ? t.a.createElement(n.a, {
-					className: e.a.tokenIcon
+				}, E ? t.a.createElement(n.a, {
+					className: e.a.currencyIcon
 				}) : t.a.createElement(m.a, {
-					className: e.a.coinIcon
+					className: e.a.currencyIcon
 				}), " ", c.userStakeAmount)), !!u && t.a.createElement("div", {
 					className: e.a.optionPercentage,
 					style: {
-						width: `${u}%`
+						width: `${u}%`,
+						maxWidth: `${u}%`
 					}
-				}, " "), f && !A && t.a.createElement("div", {
+				}, " "), f && !B && t.a.createElement("div", {
 					className: e.a.loggedOutTooltip
 				}, l._("You must be logged in", null, {
 					hk: "18KrL7"
@@ -2000,4 +2008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.107be0f1dc7c60ea346c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fc0f03bcf9cf88633389.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.aa5d00ac42ef32ebb130.js
-// Retrieved at 5/19/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1ed5c948628761b576a9.js
+// Retrieved at 5/19/2021, 7:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3025,34 +3025,36 @@
 		},
 		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "f", (function() {
 				return o
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "i", (function() {
 				return i
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "e", (function() {
 				return a
-			})), n.d(t, "c", (function() {
-				return d
 			})), n.d(t, "g", (function() {
+				return d
+			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "h", (function() {
 				return l
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return m
+			})), n.d(t, "a", (function() {
+				return h
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(s.a)(r.Db);
-			const o = Object(s.a)(r.Gb),
-				i = Object(s.a)(r.Bb),
-				a = Object(s.a)(r.Eb),
-				d = Object(s.a)(r.Cb),
-				c = Object(s.a)(r.Fb),
-				l = Object(s.a)(r.Hb),
-				u = Object(s.a)(r.vb),
-				m = Object(s.a)(r.ub);
+			const o = Object(s.a)(r.Db),
+				i = Object(s.a)(r.Gb),
+				a = Object(s.a)(r.Bb),
+				d = Object(s.a)(r.Eb),
+				c = Object(s.a)(r.Cb),
+				l = Object(s.a)(r.Fb),
+				u = Object(s.a)(r.Hb),
+				m = Object(s.a)(r.vb),
+				h = Object(s.a)(r.ub);
 			Object(s.a)(r.wb)
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -3250,4 +3252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.aa5d00ac42ef32ebb130.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.1ed5c948628761b576a9.js.map

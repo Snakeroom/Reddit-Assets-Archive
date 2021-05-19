@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.56b2b72248ad8c756523.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5b728df99db6470d777e.js
+// Retrieved at 5/19/2021, 7:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts": function(e, t, n) {
@@ -25,7 +25,7 @@
 		"./src/reddit/components/Econ/Prediction/EducationMessage/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return b
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
@@ -42,20 +42,20 @@
 				...t
 			}) => o.a.createElement(r.a, t);
 
-			function p({
+			function b({
 				message: e,
 				newBadge: t,
 				onClose: n,
 				onView: r,
 				storageKey: d = c.a.nonDismissable,
-				title: p
+				title: b
 			}) {
-				const b = d !== c.a.nonDismissable,
-					[E, h] = Object(i.a)(d, !b || !1),
+				const p = d !== c.a.nonDismissable,
+					[E, h] = Object(i.a)(d, !p || !1),
 					[v, x] = Object(s.useState)(!1);
 				return Object(s.useEffect)(() => {
 					E || v || !r || (r(), x(!0))
-				}, [E, v, r]), b && E ? null : o.a.createElement("div", {
+				}, [E, v, r]), p && E ? null : o.a.createElement("div", {
 					className: l.a.educationMessage
 				}, o.a.createElement("div", {
 					className: l.a.titleRow
@@ -63,11 +63,11 @@
 					className: l.a.header
 				}, o.a.createElement("h3", {
 					className: l.a.title
-				}, p), t && o.a.createElement("div", {
+				}, b), t && o.a.createElement("div", {
 					className: l.a.newBadge
 				}, u._("New", null, {
 					hk: "2N0EBb"
-				}))), b && o.a.createElement(a.q, {
+				}))), p && o.a.createElement(a.q, {
 					"aria-label": u._("Close", null, {
 						hk: "2UjnU"
 					}),
@@ -172,7 +172,7 @@
 		"./src/reddit/components/Econ/Prediction/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "Prediction", (function() {
-				return ke
+				return je
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
@@ -184,8 +184,8 @@
 				l = n("./src/lib/prettyPrintNumber/index.ts"),
 				u = n("./src/lib/timeUntil/index.ts"),
 				m = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				p = n("./src/reddit/actions/economics/helpers/index.ts"),
-				b = n("./src/reddit/actions/economics/predictions/index.ts"),
+				b = n("./src/reddit/actions/economics/helpers/index.ts"),
+				p = n("./src/reddit/actions/economics/predictions/index.ts"),
 				E = n("./src/reddit/actions/post.ts"),
 				h = n("./src/reddit/actions/toaster.ts"),
 				v = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
@@ -195,8 +195,8 @@
 				f = n("./src/reddit/selectors/poll/index.ts"),
 				k = n("./src/reddit/selectors/postCreations.ts"),
 				P = n("./src/reddit/selectors/posts.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts"),
+				N = n("./src/reddit/selectors/user.ts"),
+				O = n("./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts"),
 				w = n("./src/reddit/components/Econ/Prediction/NoPredictionError/index.m.less"),
 				j = n.n(w);
 			const {
@@ -236,13 +236,13 @@
 			}
 			var F = n("./src/reddit/components/Econ/Prediction/PredictionFeatureEducationMessage/index.tsx"),
 				B = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				R = n("./node_modules/fbt/lib/FbtPublic.js");
+				M = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function M() {
-				const e = R.fbt._("Choose the answer", null, {
+			function R() {
+				const e = M.fbt._("Choose the answer", null, {
 						hk: "3QoLuB"
 					}),
-					t = R.fbt._("The prediction has ended and the outcome is needed to resolve the prediction.", null, {
+					t = M.fbt._("The prediction has ended and the outcome is needed to resolve the prediction.", null, {
 						hk: "4CkrEz"
 					});
 				return o.a.createElement("div", null, o.a.createElement(y.a, {
@@ -251,15 +251,47 @@
 				}))
 			}
 			var V = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
-				D = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				U = n("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
-				W = n("./src/reddit/components/Econ/Prediction/PredictionResolvedEducationMessage/index.m.less"),
-				K = n.n(W);
+				D = n("./src/reddit/icons/svgs/Lightbulb/index.tsx"),
+				H = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
+				U = n.n(H);
 			const {
-				fbt: H
+				fbt: W
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			var z = ({
+					disabled: e,
+					isEnded: t,
+					userSelection: n,
+					isShowingHint: s,
+					onClick: a
+				}) => {
+					return !Object(i.e)(v.f) || t || n && !s ? null : o.a.createElement("div", {
+						className: U.a.optionButtonWrapper
+					}, o.a.createElement("button", {
+						"aria-label": "Get a hint",
+						className: Object(d.a)(U.a.hintButton, {
+							[U.a.canGetHint]: !e
+						}),
+						disabled: e,
+						onClick: a
+					}, o.a.createElement("div", {
+						className: U.a.optionBody
+					}, o.a.createElement(D.a, {
+						className: U.a.bulbIcon
+					}), o.a.createElement("div", {
+						className: U.a.optionText
+					}, W._("Get Hint", null, {
+						hk: "1Vk6qX"
+					})))))
+				},
+				K = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				X = n("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
+				Y = n("./src/reddit/components/Econ/Prediction/PredictionResolvedEducationMessage/index.m.less"),
+				Z = n.n(Y);
+			const {
+				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Y({
+			function J({
 				didParticipate: e,
 				isTokens: t,
 				isWinner: n,
@@ -267,230 +299,230 @@
 				wonAmount: i
 			}) {
 				return e && !n ? o.a.createElement("div", null, o.a.createElement(y.a, {
-					title: H._("Better luck next time", null, {
+					title: G._("Better luck next time", null, {
 						hk: "1KYUZf"
 					}),
-					message: o.a.createElement(o.a.Fragment, null, H._("Sorry, your prediction was wrong this time.", null, {
+					message: o.a.createElement(o.a.Fragment, null, G._("Sorry, your prediction was wrong this time.", null, {
 						hk: "4aEoP2"
 					}), !!s && o.a.createElement("div", {
-						className: K.a.wonOrLostAmountRow
-					}, H._("You lost {lostAmount}", [H._param("lostAmount", o.a.createElement("div", {
-						className: K.a.wonOrLostAmount
-					}, t ? o.a.createElement(U.a, {
-						className: K.a.coinIcon
-					}) : o.a.createElement(D.a, {
-						className: K.a.coinIcon
+						className: Z.a.wonOrLostAmountRow
+					}, G._("You lost {lostAmount}", [G._param("lostAmount", o.a.createElement("div", {
+						className: Z.a.wonOrLostAmount
+					}, t ? o.a.createElement(X.a, {
+						className: Z.a.coinIcon
+					}) : o.a.createElement(K.a, {
+						className: Z.a.coinIcon
 					}), s))], {
 						hk: "6091x"
 					})))
 				})) : e && n && s && !i ? o.a.createElement("div", null, o.a.createElement(y.a, {
-					title: H._("And the winner is... EVERYONE!", null, {
+					title: G._("And the winner is... EVERYONE!", null, {
 						hk: "2qfnkC"
 					}),
-					message: o.a.createElement(o.a.Fragment, null, H._("Well, and no one.", null, {
+					message: o.a.createElement(o.a.Fragment, null, G._("Well, and no one.", null, {
 						hk: "2nGCUb"
 					}), o.a.createElement("div", {
-						className: K.a.wonOrLostAmountRow
-					}, H._("You've been refunded {refundedAmount}", [H._param("refundedAmount", o.a.createElement("div", {
-						className: K.a.wonOrLostAmount
-					}, t ? o.a.createElement(U.a, {
-						className: K.a.coinIcon
-					}) : o.a.createElement(D.a, {
-						className: K.a.coinIcon
+						className: Z.a.wonOrLostAmountRow
+					}, G._("You've been refunded {refundedAmount}", [G._param("refundedAmount", o.a.createElement("div", {
+						className: Z.a.wonOrLostAmount
+					}, t ? o.a.createElement(X.a, {
+						className: Z.a.coinIcon
+					}) : o.a.createElement(K.a, {
+						className: Z.a.coinIcon
 					}), s))], {
 						hk: "49bOe9"
 					})))
 				})) : e && n ? o.a.createElement("div", null, o.a.createElement(y.a, {
-					title: H._("And the winner is... YOU!", null, {
+					title: G._("And the winner is... YOU!", null, {
 						hk: "19q97O"
 					}),
-					message: o.a.createElement(o.a.Fragment, null, H._("It’s confirmed—Your prediction was spot on.", null, {
+					message: o.a.createElement(o.a.Fragment, null, G._("It’s confirmed—Your prediction was spot on.", null, {
 						hk: "3AtcRD"
 					}), !!i && o.a.createElement("div", {
-						className: K.a.wonOrLostAmountRow
-					}, H._("You won {wonAmount}", [H._param("wonAmount", o.a.createElement("div", {
-						className: K.a.wonOrLostAmount
-					}, t ? o.a.createElement(U.a, {
-						className: K.a.coinIcon
-					}) : o.a.createElement(D.a, {
-						className: K.a.coinIcon
+						className: Z.a.wonOrLostAmountRow
+					}, G._("You won {wonAmount}", [G._param("wonAmount", o.a.createElement("div", {
+						className: Z.a.wonOrLostAmount
+					}, t ? o.a.createElement(X.a, {
+						className: Z.a.coinIcon
+					}) : o.a.createElement(K.a, {
+						className: Z.a.coinIcon
 					}), s + i))], {
 						hk: "1zg0cH"
 					})))
 				})) : o.a.createElement("div", null, o.a.createElement(y.a, {
-					title: H._("This prediction has ended", null, {
+					title: G._("This prediction has ended", null, {
 						hk: "3VMLnq"
 					}),
-					message: H._("The outcome has been provided.", null, {
+					message: G._("The outcome has been provided.", null, {
 						hk: "4ccLzU"
 					})
 				}))
 			}
-			var Z = n("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
-				X = n("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
-				z = n.n(X);
+			var q = n("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
+				Q = n("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
+				$ = n.n(Q);
 			const {
-				fbt: G
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = ({
+				fbt: ee
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = ({
 				endsAt: e,
 				resolvedOptionId: t,
 				isCoins: n
 			}) => Date.now() > e ? o.a.createElement("div", {
-				className: z.a.statusBar
-			}, n && o.a.createElement(Z.a, {
-				className: z.a.clockIcon
-			}), t ? G._("Prediction ended", null, {
+				className: $.a.statusBar
+			}, n && o.a.createElement(q.a, {
+				className: $.a.clockIcon
+			}), t ? ee._("Prediction ended", null, {
 				hk: "3o79Ig"
-			}) : G._("Ended. Awaiting results", null, {
+			}) : ee._("Ended. Awaiting results", null, {
 				hk: "1szagh"
 			})) : o.a.createElement("div", {
-				className: z.a.statusBar
-			}, n && o.a.createElement(Z.a, {
-				className: z.a.clockIcon
-			}), G._("Prediction ends in {expirationDuration}", [G._param("expirationDuration", Object(u.a)(new Date(e), !0))], {
+				className: $.a.statusBar
+			}, n && o.a.createElement(q.a, {
+				className: $.a.clockIcon
+			}), ee._("Prediction ends in {expirationDuration}", [ee._param("expirationDuration", Object(u.a)(new Date(e), !0))], {
 				hk: "3ysXEE"
 			}));
-			var q = ({
+			var ne = ({
 					endsAt: e,
 					resolvedOptionId: t,
 					totalStakeAmount: n,
 					isCoins: s
 				}) => o.a.createElement("div", null, n > 0 && s && o.a.createElement("div", {
-					className: z.a.statusBar
-				}, o.a.createElement(D.a, {
-					className: z.a.coinIcon
-				}), n, " ", G._("added by participants", null, {
+					className: $.a.statusBar
+				}, o.a.createElement(K.a, {
+					className: $.a.coinIcon
+				}), n, " ", ee._("added by participants", null, {
 					hk: "PSq3T"
-				})), o.a.createElement(J, {
+				})), o.a.createElement(te, {
 					endsAt: e,
 					resolvedOptionId: t,
 					isCoins: s
 				})),
-				Q = n("./src/higherOrderComponents/asModal/index.tsx"),
-				$ = n("./src/reddit/controls/Button/index.tsx"),
-				ee = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				te = n("./src/reddit/components/Econ/Prediction/ResolutionModal/index.m.less"),
-				ne = n.n(te);
+				se = n("./src/higherOrderComponents/asModal/index.tsx"),
+				oe = n("./src/reddit/controls/Button/index.tsx"),
+				ie = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				ae = n("./src/reddit/components/Econ/Prediction/ResolutionModal/index.m.less"),
+				re = n.n(ae);
 			const {
-				fbt: se
+				fbt: ce
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var oe = Object(Q.a)((function({
+			var de = Object(se.a)((function({
 					isResolving: e,
 					isTokens: t,
 					onCancel: n,
 					onResolve: s
 				}) {
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: ne.a.header
-					}, o.a.createElement($.q, {
-						className: ne.a.closeButton,
-						Icon: ee.a,
-						priority: $.b.Plain,
+						className: re.a.header
+					}, o.a.createElement(oe.q, {
+						className: re.a.closeButton,
+						Icon: ie.a,
+						priority: oe.b.Plain,
 						onClick: n
-					}), o.a.createElement("h1", null, se._("Confirm Your Answer", null, {
+					}), o.a.createElement("h1", null, ce._("Confirm Your Answer", null, {
 						hk: "4yIXaD"
 					}))), o.a.createElement("div", {
-						className: ne.a.content
+						className: re.a.content
 					}, o.a.createElement("p", {
-						className: ne.a.message
-					}, t ? se._("Once you hit Submit, the answer is final and tokens will be distributed to the winners", null, {
+						className: re.a.message
+					}, t ? ce._("Once you hit Submit, the answer is final and tokens will be distributed to the winners", null, {
 						hk: "4cSIyE"
-					}) : se._("Once you hit Submit, the answer is final and coins will be distributed to the winners", null, {
+					}) : ce._("Once you hit Submit, the answer is final and coins will be distributed to the winners", null, {
 						hk: "3Nutvx"
 					})), o.a.createElement("div", {
-						className: ne.a.actions
-					}, o.a.createElement($.l, {
+						className: re.a.actions
+					}, o.a.createElement(oe.l, {
 						disabled: e,
 						onClick: n,
-						priority: $.b.Secondary,
+						priority: oe.b.Secondary,
 						redditStyle: !0,
-						size: $.c.S
-					}, se._("Cancel", null, {
+						size: oe.c.S
+					}, ce._("Cancel", null, {
 						hk: "4Gco5s"
-					})), o.a.createElement($.i, {
-						className: ne.a.submitButton,
+					})), o.a.createElement(oe.i, {
+						className: re.a.submitButton,
 						disabled: e,
 						onClick: () => {
 							s()
 						},
 						redditStyle: !0,
-						size: $.c.S
-					}, se._("Submit", null, {
+						size: oe.c.S
+					}, ce._("Submit", null, {
 						hk: "ZLsi7"
 					})))))
 				})),
-				ie = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
-				ae = n("./src/reddit/components/Econ/Prediction/index.m.less"),
-				re = n.n(ae),
-				ce = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
-				de = n("./src/reddit/controls/InternalLink/index.tsx"),
-				le = n("./src/reddit/hooks/usePageLayer.ts"),
-				ue = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				me = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				pe = n("./src/reddit/selectors/subreddit.ts"),
-				be = n("./src/reddit/components/Econ/Prediction/TournamentLink/index.m.less"),
-				Ee = n.n(be);
+				le = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
+				ue = n("./src/reddit/components/Econ/Prediction/index.m.less"),
+				me = n.n(ue),
+				be = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
+				pe = n("./src/reddit/controls/InternalLink/index.tsx"),
+				Ee = n("./src/reddit/hooks/usePageLayer.ts"),
+				he = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				ve = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				xe = n("./src/reddit/selectors/subreddit.ts"),
+				ge = n("./src/reddit/components/Econ/Prediction/TournamentLink/index.m.less"),
+				_e = n.n(ge);
 			const {
-				fbt: he
+				fbt: fe
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function ve({
+			function ke({
 				subredditId: e,
 				tournamentId: t
 			}) {
 				const n = Object(i.d)(),
 					a = Object(g.a)(),
-					r = Object(le.a)(),
-					c = Object(i.e)(t => Object(pe.U)(t, {
+					r = Object(Ee.a)(),
+					c = Object(i.e)(t => Object(xe.U)(t, {
 						subredditId: e
 					})),
-					d = Object(i.e)(t => Object(me.g)(t, {
+					d = Object(i.e)(t => Object(ve.g)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(me.a)(t, {
+					u = Object(i.e)(t => Object(ve.a)(t, {
 						subredditId: e
 					})),
-					p = Object(m.w)(r),
+					b = Object(m.w)(r),
 					E = Object(m.G)(r),
 					h = Object(m.K)(r);
 				if (Object(s.useEffect)(() => {
-						d || n(Object(b.g)(c.name))
+						d || n(Object(p.g)(c.name))
 					}, [n, d, c.name]), (null == u ? void 0 : u.tournamentId) !== t) return null;
 				const {
 					name: v,
 					totalParticipantsCount: _
 				} = u;
-				return o.a.createElement(de.a, {
-					className: Ee.a.tournamentLink,
+				return o.a.createElement(pe.a, {
+					className: _e.a.tournamentLink,
 					to: `${c.url}predictions/`,
 					onClick: () => {
 						a(Object(x.j)({
-							pageType: p ? "post_detail" : h ? "community" : E ? "profile" : "home"
+							pageType: b ? "post_detail" : h ? "community" : E ? "profile" : "home"
 						})), window.scrollTo(0, 0)
 					}
-				}, o.a.createElement(ce.a, {
-					className: Ee.a.facepile,
+				}, o.a.createElement(be.a, {
+					className: _e.a.facepile,
 					subredditId: e
 				}), o.a.createElement("div", {
-					className: Ee.a.info
+					className: _e.a.info
 				}, o.a.createElement("div", {
-					className: Ee.a.tournamentName
+					className: _e.a.tournamentName
 				}, v), o.a.createElement("div", {
-					className: Ee.a.totalPlayers
-				}, _ > 0 ? he._({
+					className: _e.a.totalPlayers
+				}, _ > 0 ? fe._({
 					"*": "{totalPlayers} tournament players",
 					_1: "{totalPlayers} tournament player"
-				}, [he._param("totalPlayers", Object(l.b)(_)), he._plural(_)], {
+				}, [fe._param("totalPlayers", Object(l.b)(_)), fe._plural(_)], {
 					hk: "3eDpRH"
-				}) : he._("Be the first to predict!", null, {
+				}) : fe._("Be the first to predict!", null, {
 					hk: "4Ea9sh"
-				}))), o.a.createElement(ue.a, {
-					className: Ee.a.chevron
+				}))), o.a.createElement(he.a, {
+					className: _e.a.chevron
 				}))
 			}
 			const {
-				fbt: xe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ge = Object(a.c)({
+				fbt: Pe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(a.c)({
 				isAutoVoteEnabled: v.e,
 				isEditing: k.K,
 				isVoteAnimationEnabled: v.d,
@@ -498,18 +530,18 @@
 				pollId: f.a,
 				post: P.F,
 				subredditOrProfile: P.R,
-				userCoins: O.d,
-				userIsLoggedIn: O.J,
-				userId: O.ob
-			}), _e = {
-				onPredictionResolve: b.j,
-				onPredictionVote: b.k,
+				userCoins: N.d,
+				userIsLoggedIn: N.J,
+				userId: N.ob
+			}), Oe = {
+				onPredictionResolve: p.j,
+				onPredictionVote: p.k,
 				showToast: h.f,
 				upvoteToggled: E.bb
-			}, fe = Object(m.t)({
+			}, we = Object(m.t)({
 				isCommentsPage: m.w,
 				isPredictionsPage: m.L
-			}), ke = ({
+			}), je = ({
 				className: e,
 				isAutoVoteEnabled: t,
 				isCommentsPage: n,
@@ -517,92 +549,99 @@
 				isPredictionsPage: a,
 				isVoteAnimationEnabled: r,
 				onPredictionResolve: m,
-				onPredictionVote: b,
+				onPredictionVote: p,
 				post: E,
 				prediction: h,
 				pollId: v,
 				subredditOrProfile: f,
 				showToast: k,
 				upvoteToggled: P,
-				userCoins: O,
+				userCoins: N,
 				userId: w,
 				userIsLoggedIn: j
 			}) => {
 				var C;
-				const [y, S] = Object(s.useState)(!1), [A, L] = Object(s.useState)(null), [R, D] = Object(s.useState)(null), [U, W] = Object(s.useState)(!1), K = Object(g.a)(), H = Object(s.useCallback)(() => {
-					W(!1)
+				const [y, S] = Object(s.useState)(!1), [A, L] = Object(s.useState)(null), [M, D] = Object(s.useState)(null), [H, U] = Object(s.useState)(!1), [W, K] = Object(s.useState)(!1), X = Object(g.a)(), Y = Object(s.useCallback)(() => {
+					U(!1)
 				}, []), Z = Object(s.useCallback)(() => {
 					L(null), D(null)
 				}, []);
 				if (!v || !h || !f) return o.a.createElement(I, null);
 				const {
-					creatorId: X,
-					endsAt: z,
-					options: G,
-					resolvedOptionId: J,
-					totalStakeAmount: Q,
-					totalVoters: $,
-					tournamentId: ee,
-					userSelection: te,
-					userWonAmount: ne
-				} = h, se = X === w, ae = z < Date.now(), ce = !c()(ee), de = ae && se && !J, le = G.find(({
+					creatorId: G,
+					endsAt: q,
+					options: Q,
+					resolvedOptionId: $,
+					totalStakeAmount: ee,
+					totalVoters: te,
+					tournamentId: se,
+					userSelection: oe,
+					userWonAmount: ie
+				} = h, ae = G === w, re = q < Date.now(), ce = !c()(se), ue = re && ae && !$, be = Q.find(({
 					id: e
-				}) => e === A), ue = n ? Object(d.a)(e, re.a.container, re.a.forCommentsPage, {
-					[re.a.isEditing]: i
-				}) : Object(d.a)(e, re.a.container);
+				}) => e === A), pe = n ? Object(d.a)(e, me.a.container, me.a.forCommentsPage, {
+					[me.a.isEditing]: i
+				}) : Object(d.a)(e, me.a.container);
 				return o.a.createElement("div", {
-					className: ue,
+					className: pe,
 					onClick: e => {
 						h && e.stopPropagation()
 					}
-				}, n ? ae ? J ? o.a.createElement(Y, {
-					didParticipate: !!te,
+				}, n ? re ? $ ? o.a.createElement(J, {
+					didParticipate: !!oe,
 					isTokens: ce,
-					isWinner: J === te,
-					predictedAmount: te && (null === (C = G.find(({
+					isWinner: $ === oe,
+					predictedAmount: oe && (null === (C = Q.find(({
 						id: e
-					}) => e === te)) || void 0 === C ? void 0 : C.userStakeAmount) || 0,
-					wonAmount: ne
-				}) : de ? o.a.createElement(M, null) : o.a.createElement(T, {
-					didParticipate: !!te
+					}) => e === oe)) || void 0 === C ? void 0 : C.userStakeAmount) || 0,
+					wonAmount: ie
+				}) : ue ? o.a.createElement(R, null) : o.a.createElement(T, {
+					didParticipate: !!oe
 				}) : o.a.createElement(F.a, {
 					isTokens: ce,
-					storageKey: N.a.feature
+					storageKey: O.a.feature
 				}) : null, o.a.createElement("div", {
-					className: re.a.poll
-				}, G.map(e => o.a.createElement(ie.a, {
-					endsAt: z,
+					className: me.a.poll
+				}, Q.map(e => o.a.createElement(le.a, {
+					endsAt: q,
 					key: `prediction-option-${e.id}`,
-					isShowingVoteAnimation: U && te === e.id,
-					onAnimationEnd: H
+					isShowingVoteAnimation: H && oe === e.id,
+					onAnimationEnd: Y
 				}, o.a.createElement(V.a, {
-					disabled: U,
-					isEnded: ae,
+					disabled: H,
+					isEnded: re,
 					isSelected: A === e.id,
-					needsResolution: de,
+					needsResolution: ue,
 					option: e,
 					onClick: () => (e => {
-						(de || !ae && !te) && (de ? D(e.id) : L(e.id))
+						(ue || !re && !oe) && (ue ? D(e.id) : L(e.id))
 					})(e),
-					resolvedOptionId: J,
-					tournamentId: ee,
-					userSelection: te,
+					resolvedOptionId: $,
+					tournamentId: se,
+					userSelection: oe,
 					userIsLoggedOut: !j,
-					votePercentage: (te || ae) && e.voteCount ? Math.floor(e.voteCount / $ * 100) : null
-				}))), o.a.createElement("div", {
-					className: re.a.predictionsCount
-				}, ce && $ > 0 && xe._({
+					votePercentage: (oe || re || W) && e.voteCount ? Math.floor(e.voteCount / te * 100) : null,
+					isShowingHint: W
+				}))), o.a.createElement(z, {
+					disabled: H || W || !!oe,
+					isEnded: re,
+					userSelection: oe,
+					isShowingHint: W,
+					onClick: () => K(!0)
+				}), o.a.createElement("div", {
+					className: me.a.predictionsCount
+				}, ce && te > 0 && Pe._({
 					"*": "{total voters} predictions made",
 					_1: "{total voters} prediction made"
-				}, [xe._param("total voters", Object(l.b)($)), xe._plural($)], {
+				}, [Pe._param("total voters", Object(l.b)(te)), Pe._plural(te)], {
 					hk: "2u2Nv8"
-				}), o.a.createElement(q, {
+				}), o.a.createElement(ne, {
 					isCoins: !ce,
-					endsAt: z,
-					resolvedOptionId: J,
-					totalStakeAmount: Q
-				}))), !!le && o.a.createElement(B.b, {
-					className: re.a.modal,
+					endsAt: q,
+					resolvedOptionId: $,
+					totalStakeAmount: ee
+				}))), !!be && o.a.createElement(B.b, {
+					className: me.a.modal,
 					isCreatingVote: y,
 					onOverlayClick: Z,
 					onCancel: Z,
@@ -610,35 +649,35 @@
 						coinPackage: e,
 						chipPackage: n
 					}) => {
-						if (e && e.coins > O) return Object(p.promptUserToBuyMoreCoins)(), void K(x.a);
+						if (e && e.coins > N) return Object(b.promptUserToBuyMoreCoins)(), void X(x.a);
 						const s = n ? n.id : e.id,
 							o = n ? n.amount : e.coins;
-						if (ae) return k({
+						if (re) return k({
 							duration: 5e3,
 							kind: _.b.Error,
-							text: xe._("Error: Failed to make prediction. This prediction has already ended", null, {
+							text: Pe._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})
 						}), void L(null);
 						if (!v || !A) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						S(!0), K(ee ? Object(x.n)({
+						S(!0), X(se ? Object(x.n)({
 							pollId: v,
 							selectedNumberTokens: o
 						}) : Object(x.m)({
 							pollId: v,
 							selectedNumberCoins: o,
-							totalStakeAmount: Q
+							totalStakeAmount: ee
 						}));
 						try {
-							await b({
+							await p({
 								coinPackageId: s,
 								optionId: A,
 								postId: v,
 								price: o
-							}), t && P(v), S(!1), L(null), r ? W(!0) : k({
+							}), t && P(v), S(!1), L(null), r ? U(!0) : k({
 								duration: 5e3,
 								kind: _.b.SuccessCommunity,
-								text: xe._("Thanks! See if you're right in {timeToResult}", [xe._param("timeToResult", Object(u.a)(new Date(z), !0))], {
+								text: Pe._("Thanks! See if you're right in {timeToResult}", [Pe._param("timeToResult", Object(u.a)(new Date(q), !0))], {
 									hk: "3ZSdoo"
 								})
 							})
@@ -646,34 +685,34 @@
 							S(!1), L(null), k({
 								duration: 5e3,
 								kind: _.b.Error,
-								text: xe._("Error: Failed to make prediction, please try again later", null, {
+								text: Pe._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								})
 							})
 						}
 					},
-					option: le,
+					option: be,
 					pollId: v,
 					subredditId: E.belongsTo.id,
-					tournamentId: ee,
+					tournamentId: se,
 					withOverlay: !0
-				}), de && R && o.a.createElement(oe, {
+				}), ue && M && o.a.createElement(de, {
 					isResolving: y,
 					isTokens: ce,
 					onOverlayClick: Z,
 					onCancel: Z,
 					onResolve: async () => {
-						if (S(!0), !R) throw new Error("Failed to create prediction, missing selected option");
+						if (S(!0), !M) throw new Error("Failed to create prediction, missing selected option");
 						try {
 							await m({
-								optionId: R,
+								optionId: M,
 								postId: v
 							})
 						} catch (e) {
 							k({
 								duration: 5e3,
 								kind: _.b.Error,
-								text: xe._("Error: Failed to resolve prediction, please try again later", null, {
+								text: Pe._("Error: Failed to resolve prediction, please try again later", null, {
 									hk: "3Ve2Mb"
 								})
 							})
@@ -681,12 +720,12 @@
 						D(null), S(!1)
 					},
 					withOverlay: !0
-				}), !a && ee && o.a.createElement(ve, {
+				}), !a && se && o.a.createElement(ke, {
 					subredditId: E.belongsTo.id,
-					tournamentId: ee
+					tournamentId: se
 				}))
 			};
-			t.default = fe(Object(i.b)(ge, _e)(ke))
+			t.default = we(Object(i.b)(Ne, Oe)(je))
 		},
 		"./src/reddit/components/Econ/Tournament/Facepile/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -711,8 +750,8 @@
 				l = n("./src/reddit/models/User/index.ts"),
 				u = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				m = n("./src/reddit/selectors/user.ts"),
-				p = n("./src/reddit/components/Econ/Tournament/Facepile/index.m.less"),
-				b = n.n(p);
+				b = n("./src/reddit/components/Econ/Tournament/Facepile/index.m.less"),
+				p = n.n(b);
 
 			function E({
 				className: e,
@@ -720,14 +759,14 @@
 				subredditId: n
 			}) {
 				var s;
-				const p = Object(i.e)(m.V),
+				const b = Object(i.e)(m.V),
 					E = Object(i.e)(m.i),
 					h = Object(i.e)(m.B),
 					v = Object(i.e)(e => Object(u.a)(e, {
 						subredditId: n
 					}));
 				return (null === (s = null == v ? void 0 : v.latestParticipants) || void 0 === s ? void 0 : s.length) ? o.a.createElement("div", {
-					className: Object(a.a)(b.a.tournamentFacepile, e)
+					className: Object(a.a)(p.a.tournamentFacepile, e)
 				}, v.latestParticipants.slice(0, 3).map(({
 					icon: e,
 					name: n,
@@ -743,16 +782,16 @@
 						v = `tournament-facepile-face-${n}`;
 					return Object(d.a)(u) ? o.a.createElement(r.a, {
 						key: v,
-						backgroundClassName: b.a.snoovatarBackground,
-						className: Object(a.a)(b.a.snoovatar, t),
+						backgroundClassName: p.a.snoovatarBackground,
+						className: Object(a.a)(p.a.snoovatar, t),
 						headshot: u
 					}) : o.a.createElement(c.a, {
 						key: v,
-						className: Object(a.a)(b.a.userIcon, t),
+						className: Object(a.a)(p.a.userIcon, t),
 						iconUrl: u,
 						isCurrentUser: i,
 						isNSFW: m,
-						isNightMode: p,
+						isNightMode: b,
 						shouldHideNSFW: h
 					})
 				})) : null
@@ -820,7 +859,20 @@
 				d: "M11.901 11.809C11.803 11.909 11.673 11.959 11.543 11.959C11.417 11.959 11.291 11.913 11.194 11.817L7.651 8.358C7.554 8.264 7.5 8.135 7.5 8V3C7.5 2.724 7.724 2.5 8 2.5C8.276 2.5 8.5 2.724 8.5 3V7.789L11.892 11.102C12.09 11.294 12.094 11.611 11.901 11.809ZM8 0C3.589 0 0 3.589 0 8C0 12.412 3.589 16 8 16C12.411 16 16 12.412 16 8C16 3.589 12.411 0 8 0Z",
 				fill: "inherit"
 			}))
+		},
+		"./src/reddit/icons/svgs/Lightbulb/index.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s);
+			t.a = e => o.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				fill: "inherit",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("path", {
+				d: "M8 19.625H6a.625.625 0 010-1.25h2a.625.625 0 110 1.25zm1-2.5H5a.625.625 0 010-1.25h4a.625.625 0 010 1.25zm.134-2.5H4.917a.623.623 0 01-.612-.5 3.1 3.1 0 00-1.119-1.864 6.62 6.62 0 117.727.234c-.58.398-.997.991-1.176 1.67a.625.625 0 01-.603.46zM5.4 13.375h3.285a4.144 4.144 0 011.529-1.918 5.382 5.382 0 10-6.269-.191A4.26 4.26 0 015.4 13.375z"
+			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.56b2b72248ad8c756523.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5b728df99db6470d777e.js.map
