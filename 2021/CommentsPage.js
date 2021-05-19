@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.badc42c035dba76b9f3a.js
-// Retrieved at 5/18/2021, 6:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.5f5a5fb3e3a8d90bf847.js
+// Retrieved at 5/19/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -694,7 +694,7 @@
 						i = Object(U.M)(t, {
 							identifier: r
 						}),
-						a = Object(ae.c)(t, {
+						a = Object(ae.d)(t, {
 							identifier: r
 						}),
 						d = {
@@ -705,7 +705,7 @@
 						};
 					return Object(ae.b)(t) && !Object(re.a)(t) ? d.listingBelow = a || o : d.postFeed = (a || o) && (!Object(M.h)(i) && !Object(ne.d)(t, {
 						postId: s
-					}) && !!i || !Object(H.h)(t) && Object(B.e)(t)), e && (d.postImageOCRAltText = Object(B.c)(n) && !!Object(B.b)(t, n, !1), d.postQASchema = !0), d
+					}) && !!i || !Object(H.h)(t) && Object(B.f)(t)), e && (d.postImageOCRAltText = Object(B.c)(n) && !!Object(B.b)(t, n, !1), d.postQASchema = Object(B.e)(t, s, !1)), d
 				},
 				fe = (e, t) => e || t.postFeed || t.listingBelow || t.postImageOCRAltText || t.postQASchema,
 				xe = e => ({
@@ -3910,7 +3910,7 @@
 				}),
 				A = Object(c.c)({
 					isLoggedIn: S.J,
-					postSEOV2IdCardVariant: j.h,
+					postSEOV2IdCardVariant: j.i,
 					shouldShowReredditPromo: _.a,
 					widgets: Object(p.a)(I.s)
 				}),
@@ -3937,7 +3937,7 @@
 						post: n,
 						isFakeOverlay: r,
 						postSEOV2IdCardVariant: i
-					} = this.props, d = !Object(j.d)(i) && !Object(j.f)(i);
+					} = this.props, d = !Object(j.d)(i) && !Object(j.g)(i);
 					return a.a.createElement(v.a, {
 						adComponentOnFakeOverlay: r,
 						adComponent: d ? a.a.createElement(x.a, {
@@ -3967,7 +3967,7 @@
 						widgets: p
 					} = this.props;
 					let h = 0;
-					const b = Object(j.d)(r) || Object(j.f)(r),
+					const b = Object(j.d)(r) || Object(j.g)(r),
 						v = a.a.createElement(x.a, {
 							postId: n.id,
 							isOverlay: o,
@@ -4051,8 +4051,8 @@
 				hasDismissedTruncation: u.b,
 				isGQLLoggedIn: b.I,
 				isLoggedIn: b.J,
-				isPostSEOEligible: h.e,
-				postSEOV2TruncatedVariant: h.i
+				isPostSEOEligible: h.f,
+				postSEOV2TruncatedVariant: h.j
 			}), k = Object(r.b)(y);
 			class O extends n.a.Component {
 				render() {
@@ -8272,7 +8272,7 @@
 					newCommentsCount: $.F,
 					origin: de.j,
 					post: le.F,
-					postSEOV2IdCardVariant: ie.h,
+					postSEOV2IdCardVariant: ie.i,
 					profileCollectionsEnabled: z.a,
 					replyComment: (e, {
 						postId: t,
@@ -8573,7 +8573,7 @@
 						profileCollectionsEnabled: b,
 						isInCommentsPageAdExperiment: g,
 						isActionBarAnimationEnabled: f
-					} = this.props, v = Object(ie.f)(l);
+					} = this.props, v = Object(ie.g)(l);
 					if (!d) {
 						if (t) return m.a.createElement(ye.f, null);
 						const s = this.renderPageError();
@@ -9196,4 +9196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.badc42c035dba76b9f3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.5f5a5fb3e3a8d90bf847.js.map

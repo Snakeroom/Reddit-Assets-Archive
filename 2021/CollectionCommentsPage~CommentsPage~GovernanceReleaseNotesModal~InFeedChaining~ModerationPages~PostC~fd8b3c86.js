@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.39a07fa9a5d002266cac.js
-// Retrieved at 5/18/2021, 8:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.7dc18dedef4f55c52776.js
+// Retrieved at 5/19/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -1114,11 +1114,11 @@
 				}) => !!e.media && ge.has(e.media.type),
 				fe = Object(F.t)(),
 				Ee = Object(u.c)({
-					imgOCRAltTextVariant: (e, t) => Object(ee.d)(e, t) ? Object(J.b)(e, t.post, !0) : void 0,
+					imgOCRAltTextVariant: (e, t) => Object(ee.e)(e, t) ? Object(J.b)(e, t.post, !0) : void 0,
 					OCRAltText: (e, {
 						post: t
 					}) => Object(J.a)(e, t.id),
-					subredditOrProfileDisplayText: (e, t) => Object(J.j)(e, t),
+					subredditOrProfileDisplayText: (e, t) => Object(J.k)(e, t),
 					subredditOrProfile: (e, {
 						post: t
 					}) => Object(Z.R)(e, {
@@ -1129,7 +1129,7 @@
 					}) => Object(X.K)(e, {
 						postId: t.id
 					}),
-					shouldShowAltText: (e, t) => Object(ee.d)(e, t),
+					shouldShowAltText: (e, t) => Object(ee.e)(e, t),
 					isPredictionsTournament: (e, {
 						post: t
 					}) => Boolean(t.predictionTournament) && Object(q.h)(e),
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.39a07fa9a5d002266cac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.7dc18dedef4f55c52776.js.map
