@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.46ac74a0c23bdf146d7e.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a9ceece8556f2ac0524e.js
+// Retrieved at 5/19/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -14936,13 +14936,14 @@
 				p = s("./src/reddit/connectors/PostViewable/index.ts"),
 				h = s("./src/reddit/models/Media/index.ts"),
 				b = s("./src/reddit/selectors/posts.ts"),
-				g = s("./src/lib/classNames/index.ts"),
-				f = s("./src/lib/objectSelector/index.ts"),
-				x = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
-				E = s("./src/reddit/components/PostContainer/index.m.less"),
-				v = s.n(E);
-			const C = Object(p.a)(() => Object(o.c)({
-					basePixelMetadata: Object(f.a)((e, {
+				g = s("./src/reddit/selectors/telemetry.ts"),
+				f = s("./src/lib/classNames/index.ts"),
+				x = s("./src/lib/objectSelector/index.ts"),
+				E = s("./src/higherOrderComponents/withClickTracking/index.tsx"),
+				v = s("./src/reddit/components/PostContainer/index.m.less"),
+				C = s.n(v);
+			const _ = Object(p.a)(() => Object(o.c)({
+					basePixelMetadata: Object(x.a)((e, {
 						post: t
 					}) => Object(b.b)(e, t.id)),
 					clickTrackingId: (e, {
@@ -14952,14 +14953,15 @@
 						post: t
 					}) => Object(b.i)(e, {
 						postId: t.id
-					})
+					}),
+					pageType: e => Object(g.actionInfo)(e).pageType
 				})),
-				_ = e => {
-					const t = Object(x.d)(e.target, e.currentTarget),
-						s = Object(x.b)(e.target, e.currentTarget, x.a.buttons);
+				k = e => {
+					const t = Object(E.d)(e.target, e.currentTarget),
+						s = Object(E.b)(e.target, e.currentTarget, E.a.buttons);
 					return "subreddit" !== t && s
 				};
-			class k extends a.a.Component {
+			class y extends a.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -14974,41 +14976,42 @@
 						post: c,
 						onClick: m,
 						onPostContentClick: p,
-						sendEvent: b,
-						style: f,
-						ref: x
-					} = this.props, E = a.a.createElement("div", {
+						pageType: b,
+						sendEvent: g,
+						style: x,
+						ref: E
+					} = this.props, v = a.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
-						style: f,
-						ref: x,
+						style: x,
+						ref: E,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: s => {
-							if (!this.cancelClick && s.button < 2 && (e(() => m && m(s, c, t, o))(s), p && _(s) && p(s, c)), c.id && o) {
+							if (!this.cancelClick && s.button < 2 && (e(() => m && m(s, c, t, o, b))(s), p && k(s) && p(s, c)), c.id && o) {
 								const {
 									source: e
 								} = Object(r.t)(c, o);
-								e && e.outboundUrl && b(Object(d.c)(c.id, e.outboundUrl))
+								e && e.outboundUrl && g(Object(d.c)(c.id, e.outboundUrl))
 							}
 						},
-						className: Object(g.a)(v.a.WrappedPost, n, `Post ${c.id}`, {
+						className: Object(f.a)(C.a.WrappedPost, n, `Post ${c.id}`, {
 							promotedlink: c.isSponsored
 						}),
 						id: l ? l(c.id) : c.id,
 						tabIndex: -1
-					}, s), C = !!c.media && c.media.type === h.o.VIDEO;
-					return c.isSponsored || C ? a.a.createElement(i.a, {
+					}, s), _ = !!c.media && c.media.type === h.o.VIDEO;
+					return c.isSponsored || _ ? a.a.createElement(i.a, {
 						post: c,
 						trackDisplay: !0
-					}, E) : c.media && Object(h.E)(c.media) ? a.a.createElement(u, {
+					}, v) : c.media && Object(h.E)(c.media) ? a.a.createElement(u, {
 						postId: c.id
-					}, E) : E
+					}, v) : v
 				}
 			}
-			t.a = C(Object(x.c)(Object(m.c)(k)))
+			t.a = _(Object(E.c)(Object(m.c)(y)))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -24851,4 +24854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.46ac74a0c23bdf146d7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a9ceece8556f2ac0524e.js.map

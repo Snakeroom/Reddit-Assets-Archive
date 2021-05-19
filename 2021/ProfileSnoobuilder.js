@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b4bdeea3da4118d155b4.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.77753df6609327bb68ae.js
+// Retrieved at 5/19/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1422,7 +1422,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return j
+				return S
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1437,18 +1437,20 @@
 				p = n("./src/reddit/components/PlayButton/index.tsx"),
 				h = n("./src/reddit/constants/elementClassNames.ts"),
 				b = n("./src/reddit/controls/OutboundLink/index.tsx"),
-				f = n("./src/reddit/hooks/useClickSourceData.ts"),
-				_ = n("./src/reddit/models/Media/index.ts"),
-				g = n("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
-				x = n("./src/reddit/selectors/posts.ts"),
-				y = n("./src/reddit/selectors/user.ts"),
-				v = n("./src/reddit/constants/tracking.ts"),
-				E = n("./src/reddit/components/Media/blurredContent.ts"),
-				k = n("./src/reddit/components/Media/ImageBox/index.m.less"),
-				w = n.n(k);
+				f = n("./src/reddit/helpers/trackers/ads.ts"),
+				_ = n("./src/reddit/hooks/useClickSourceData.ts"),
+				g = n("./src/reddit/models/Media/index.ts"),
+				x = n("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
+				y = n("./src/reddit/selectors/posts.ts"),
+				v = n("./src/reddit/selectors/telemetry.ts"),
+				E = n("./src/reddit/selectors/user.ts"),
+				k = n("./src/reddit/constants/tracking.ts"),
+				w = n("./src/reddit/components/Media/blurredContent.ts"),
+				C = n("./src/reddit/components/Media/ImageBox/index.m.less"),
+				j = n.n(C);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1456,14 +1458,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = e => e > 2 * _.e,
-				O = e => {
-					const t = Object(d.a)(w.a.image, h.g, e.className, {
-							[w.a.mShowCentered]: e.showCentered,
-							[w.a.mShowBlurred]: e.shouldBlur
+			const S = e => e > 2 * g.e,
+				N = e => {
+					const t = Object(d.a)(j.a.image, h.g, e.className, {
+							[j.a.mShowCentered]: e.showCentered,
+							[j.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					return e.showFull || e.isTall || (n.maxHeight = `${_.j}px`), e.isListing || e.isTall && j(e.height) || (n.maxHeight = `${_.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), i.a.createElement("img", {
+					return e.showFull || e.isTall || (n.maxHeight = `${g.j}px`), e.isListing || e.isTall && S(e.height) || (n.maxHeight = `${g.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), i.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -1472,40 +1474,45 @@
 						style: n
 					})
 				},
-				S = e => {
+				T = e => {
 					const t = {};
-					return (!e.showFull && Object(_.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${_.j}px`, e.shouldBlur && (t.maxWidth = Object(_.I)(e.height, e.width) ? `${_.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
-						className: Object(d.a)(w.a.container, e.className),
+					return (!e.showFull && Object(g.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${g.j}px`, e.shouldBlur && (t.maxWidth = Object(g.I)(e.height, e.width) ? `${g.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
+						className: Object(d.a)(j.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(x.E, y.bb, (e, {
+				L = Object(o.b)(() => Object(c.a)(y.E, E.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(x.b)(e, n) : null, g.a, (e, t, n, s) => ({
+				}) => t && n ? Object(y.b)(e, n) : null, x.a, v.actionInfo, y.F, (e, t, n, s, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
-					sendGoodVisitEvent: s
+					sendGoodVisitEvent: s,
+					pageType: r.pageType,
+					post: i
 				})));
-			t.a = N(e => {
-				const t = e.sendGoodVisitEvent ? Object(f.a)() : void 0;
+			t.a = L(e => {
+				const t = e.sendGoodVisitEvent ? Object(_.a)() : void 0;
 				return e.outboundUrl && !e.shouldBlur ? i.a.createElement("a", {
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
 					onMouseDown: t => {
 						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(b.c)(t.currentTarget, e.postId, e.basePixelMetadata)
+					},
+					onClick: () => {
+						e.isSponsored && e.post.id && Object(f.a)(e.post, e.pageType)
 					}
-				}, L(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
+				}, F(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
-				}, L(e)) : L(e)
+				}, F(e)) : F(e)
 			});
-			const T = (e, t) => i.a.createElement(O, {
+			const P = (e, t) => i.a.createElement(N, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
-						[v.a]: !e
+						[k.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -1519,17 +1526,17 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				L = ({
+				F = ({
 					onClick: e,
 					...t
 				}) => {
-					const n = Object(_.I)(t.height, t.width),
-						r = j(t.height) && n;
-					return i.a.createElement(S, C({}, t, {
-						className: `${n?`${v.a} `:""}${t.className||""}`
+					const n = Object(g.I)(t.height, t.width),
+						r = S(t.height) && n;
+					return i.a.createElement(T, O({}, t, {
+						className: `${n?`${k.a} `:""}${t.className||""}`
 					}), t.isListing ? i.a.createElement("div", {
 						className: t.contentImageClassName
-					}, T(n, t)) : i.a.createElement("a", {
+					}, P(n, t)) : i.a.createElement("a", {
 						href: t.originalSource,
 						onClick: e,
 						style: r ? {
@@ -1537,17 +1544,17 @@
 						} : {},
 						target: "_blank",
 						rel: u.b
-					}, T(n, t)), t.isListing && !t.showFull && t.height > _.j && Object(_.I)(t.height, t.width) && i.a.createElement("div", {
-						className: w.a.seeMore
+					}, P(n, t)), t.isListing && !t.showFull && t.height > g.j && Object(g.I)(t.height, t.width) && i.a.createElement("div", {
+						className: j.a.seeMore
 					}, s.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), t.isVideoThumbnail && i.a.createElement(p.a, {
 						onClick: e
 					}), t.shouldBlur && !t.isVideoThumbnail && !t.isListing && i.a.createElement("div", {
-						className: w.a.unblurButtonContainer
+						className: j.a.unblurButtonContainer
 					}, i.a.createElement("button", {
-						className: w.a.unblurButton
-					}, Object(E.a)(!!t.isNSFW, !!t.isSpoiler))))
+						className: j.a.unblurButton
+					}, Object(w.a)(!!t.isNSFW, !!t.isSpoiler))))
 				}
 		},
 		"./src/reddit/components/Media/MediaContainer/index.m.less": function(e, t, n) {
@@ -5404,4 +5411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.b4bdeea3da4118d155b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.77753df6609327bb68ae.js.map

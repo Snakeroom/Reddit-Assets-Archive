@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.24b9c6f39a99820ad102.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.53ca860ffde0153444f7.js
+// Retrieved at 5/19/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2469,7 +2469,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return E
+				return P
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -2484,18 +2484,20 @@
 				p = s("./src/reddit/components/PlayButton/index.tsx"),
 				h = s("./src/reddit/constants/elementClassNames.ts"),
 				b = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				f = s("./src/reddit/hooks/useClickSourceData.ts"),
-				v = s("./src/reddit/models/Media/index.ts"),
-				x = s("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
-				y = s("./src/reddit/selectors/posts.ts"),
-				g = s("./src/reddit/selectors/user.ts"),
-				_ = s("./src/reddit/constants/tracking.ts"),
-				w = s("./src/reddit/components/Media/blurredContent.ts"),
-				j = s("./src/reddit/components/Media/ImageBox/index.m.less"),
-				C = s.n(j);
+				f = s("./src/reddit/helpers/trackers/ads.ts"),
+				v = s("./src/reddit/hooks/useClickSourceData.ts"),
+				x = s("./src/reddit/models/Media/index.ts"),
+				y = s("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
+				g = s("./src/reddit/selectors/posts.ts"),
+				_ = s("./src/reddit/selectors/telemetry.ts"),
+				w = s("./src/reddit/selectors/user.ts"),
+				j = s("./src/reddit/constants/tracking.ts"),
+				C = s("./src/reddit/components/Media/blurredContent.ts"),
+				O = s("./src/reddit/components/Media/ImageBox/index.m.less"),
+				E = s.n(O);
 
-			function O() {
-				return (O = Object.assign || function(e) {
+			function S() {
+				return (S = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -2503,14 +2505,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = e => e > 2 * v.e,
-				S = e => {
-					const t = Object(l.a)(C.a.image, h.g, e.className, {
-							[C.a.mShowCentered]: e.showCentered,
-							[C.a.mShowBlurred]: e.shouldBlur
+			const P = e => e > 2 * x.e,
+				I = e => {
+					const t = Object(l.a)(E.a.image, h.g, e.className, {
+							[E.a.mShowCentered]: e.showCentered,
+							[E.a.mShowBlurred]: e.shouldBlur
 						}),
 						s = {};
-					return e.showFull || e.isTall || (s.maxHeight = `${v.j}px`), e.isListing || e.isTall && E(e.height) || (s.maxHeight = `${v.e}px`), e.isExpando && e.maxHeight && (s.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (s.maxWidth = `${e.maxWidth}px`), i.a.createElement("img", {
+					return e.showFull || e.isTall || (s.maxHeight = `${x.j}px`), e.isListing || e.isTall && P(e.height) || (s.maxHeight = `${x.e}px`), e.isExpando && e.maxHeight && (s.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (s.maxWidth = `${e.maxWidth}px`), i.a.createElement("img", {
 						alt: e.altText || n.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -2519,40 +2521,45 @@
 						style: s
 					})
 				},
-				P = e => {
+				k = e => {
 					const t = {};
-					return (!e.showFull && Object(v.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${v.j}px`, e.shouldBlur && (t.maxWidth = Object(v.I)(e.height, e.width) ? `${v.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
-						className: Object(l.a)(C.a.container, e.className),
+					return (!e.showFull && Object(x.I)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${x.j}px`, e.shouldBlur && (t.maxWidth = Object(x.I)(e.height, e.width) ? `${x.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), i.a.createElement("div", {
+						className: Object(l.a)(E.a.container, e.className),
 						style: t
 					}, e.children)
 				},
-				I = Object(o.b)(() => Object(c.a)(y.E, g.bb, (e, {
+				N = Object(o.b)(() => Object(c.a)(g.E, w.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(y.b)(e, s) : null, x.a, (e, t, s, n) => ({
+				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.F, (e, t, s, n, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
-					sendGoodVisitEvent: n
+					sendGoodVisitEvent: n,
+					pageType: r.pageType,
+					post: i
 				})));
-			t.a = I(e => {
-				const t = e.sendGoodVisitEvent ? Object(f.a)() : void 0;
+			t.a = N(e => {
+				const t = e.sendGoodVisitEvent ? Object(v.a)() : void 0;
 				return e.outboundUrl && !e.shouldBlur ? i.a.createElement("a", {
 					href: e.outboundUrl,
 					target: "_blank",
 					rel: u.a,
 					onMouseDown: t => {
 						e.source && e.outboundUrl && e.isSponsored && e.basePixelMetadata && Object(b.c)(t.currentTarget, e.postId, e.basePixelMetadata)
+					},
+					onClick: () => {
+						e.isSponsored && e.post.id && Object(f.a)(e.post, e.pageType)
 					}
-				}, N(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
+				}, L(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
-				}, N(e)) : N(e)
+				}, L(e)) : L(e)
 			});
-			const k = (e, t) => i.a.createElement(S, {
+			const T = (e, t) => i.a.createElement(I, {
 					altText: t.altText,
 					className: Object(l.a)(t.imageClassName, {
-						[_.a]: !e
+						[j.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -2566,17 +2573,17 @@
 					src: Object(d.a)(t.source),
 					width: t.width
 				}),
-				N = ({
+				L = ({
 					onClick: e,
 					...t
 				}) => {
-					const s = Object(v.I)(t.height, t.width),
-						r = E(t.height) && s;
-					return i.a.createElement(P, O({}, t, {
-						className: `${s?`${_.a} `:""}${t.className||""}`
+					const s = Object(x.I)(t.height, t.width),
+						r = P(t.height) && s;
+					return i.a.createElement(k, S({}, t, {
+						className: `${s?`${j.a} `:""}${t.className||""}`
 					}), t.isListing ? i.a.createElement("div", {
 						className: t.contentImageClassName
-					}, k(s, t)) : i.a.createElement("a", {
+					}, T(s, t)) : i.a.createElement("a", {
 						href: t.originalSource,
 						onClick: e,
 						style: r ? {
@@ -2584,17 +2591,17 @@
 						} : {},
 						target: "_blank",
 						rel: u.b
-					}, k(s, t)), t.isListing && !t.showFull && t.height > v.j && Object(v.I)(t.height, t.width) && i.a.createElement("div", {
-						className: C.a.seeMore
+					}, T(s, t)), t.isListing && !t.showFull && t.height > x.j && Object(x.I)(t.height, t.width) && i.a.createElement("div", {
+						className: E.a.seeMore
 					}, n.fbt._("see full image", null, {
 						hk: "1Qygw5"
 					})), t.isVideoThumbnail && i.a.createElement(p.a, {
 						onClick: e
 					}), t.shouldBlur && !t.isVideoThumbnail && !t.isListing && i.a.createElement("div", {
-						className: C.a.unblurButtonContainer
+						className: E.a.unblurButtonContainer
 					}, i.a.createElement("button", {
-						className: C.a.unblurButton
-					}, Object(w.a)(!!t.isNSFW, !!t.isSpoiler))))
+						className: E.a.unblurButton
+					}, Object(C.a)(!!t.isNSFW, !!t.isSpoiler))))
 				}
 		},
 		"./src/reddit/components/Media/MediaContainer/index.m.less": function(e, t, s) {
@@ -4977,4 +4984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.24b9c6f39a99820ad102.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.53ca860ffde0153444f7.js.map

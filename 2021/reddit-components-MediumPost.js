@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7fbbd4b0c3cb21a1b34c.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.f9d28868b12fe1b9c21d.js
+// Retrieved at 5/19/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2890,13 +2890,14 @@
 				m = n("./src/reddit/connectors/PostViewable/index.ts"),
 				f = n("./src/reddit/models/Media/index.ts"),
 				b = n("./src/reddit/selectors/posts.ts"),
-				h = n("./src/lib/classNames/index.ts"),
-				x = n("./src/lib/objectSelector/index.ts"),
-				v = n("./src/higherOrderComponents/withClickTracking/index.tsx"),
-				g = n("./src/reddit/components/PostContainer/index.m.less"),
-				y = n.n(g);
-			const O = Object(m.a)(() => Object(r.c)({
-					basePixelMetadata: Object(x.a)((e, {
+				h = n("./src/reddit/selectors/telemetry.ts"),
+				x = n("./src/lib/classNames/index.ts"),
+				v = n("./src/lib/objectSelector/index.ts"),
+				g = n("./src/higherOrderComponents/withClickTracking/index.tsx"),
+				y = n("./src/reddit/components/PostContainer/index.m.less"),
+				O = n.n(y);
+			const E = Object(m.a)(() => Object(r.c)({
+					basePixelMetadata: Object(v.a)((e, {
 						post: t
 					}) => Object(b.b)(e, t.id)),
 					clickTrackingId: (e, {
@@ -2906,14 +2907,15 @@
 						post: t
 					}) => Object(b.i)(e, {
 						postId: t.id
-					})
+					}),
+					pageType: e => Object(h.actionInfo)(e).pageType
 				})),
-				E = e => {
-					const t = Object(v.d)(e.target, e.currentTarget),
-						n = Object(v.b)(e.target, e.currentTarget, v.a.buttons);
+				j = e => {
+					const t = Object(g.d)(e.target, e.currentTarget),
+						n = Object(g.b)(e.target, e.currentTarget, g.a.buttons);
 					return "subreddit" !== t && n
 				};
-			class j extends s.a.Component {
+			class k extends s.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -2928,41 +2930,42 @@
 						post: l,
 						onClick: p,
 						onPostContentClick: m,
-						sendEvent: b,
-						style: x,
-						ref: v
-					} = this.props, g = s.a.createElement("div", {
+						pageType: b,
+						sendEvent: h,
+						style: v,
+						ref: g
+					} = this.props, y = s.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
-						style: x,
-						ref: v,
+						style: v,
+						ref: g,
 						onMouseUp: e => {
 							0 !== window.getSelection().toString().length && (this.cancelClick = !0, window.setTimeout(() => {
 								this.cancelClick = !1
 							}, 1e3))
 						},
 						onClick: n => {
-							if (!this.cancelClick && n.button < 2 && (e(() => p && p(n, l, t, r))(n), m && E(n) && m(n, l)), l.id && r) {
+							if (!this.cancelClick && n.button < 2 && (e(() => p && p(n, l, t, r, b))(n), m && j(n) && m(n, l)), l.id && r) {
 								const {
 									source: e
 								} = Object(i.t)(l, r);
-								e && e.outboundUrl && b(Object(c.c)(l.id, e.outboundUrl))
+								e && e.outboundUrl && h(Object(c.c)(l.id, e.outboundUrl))
 							}
 						},
-						className: Object(h.a)(y.a.WrappedPost, o, `Post ${l.id}`, {
+						className: Object(x.a)(O.a.WrappedPost, o, `Post ${l.id}`, {
 							promotedlink: l.isSponsored
 						}),
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
-					}, n), O = !!l.media && l.media.type === f.o.VIDEO;
-					return l.isSponsored || O ? s.a.createElement(a.a, {
+					}, n), E = !!l.media && l.media.type === f.o.VIDEO;
+					return l.isSponsored || E ? s.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, g) : l.media && Object(f.E)(l.media) ? s.a.createElement(u, {
+					}, y) : l.media && Object(f.E)(l.media) ? s.a.createElement(u, {
 						postId: l.id
-					}, g) : g
+					}, y) : y
 				}
 			}
-			t.a = O(Object(v.c)(Object(p.c)(j)))
+			t.a = E(Object(g.c)(Object(p.c)(k)))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4006,4 +4009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7fbbd4b0c3cb21a1b34c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.f9d28868b12fe1b9c21d.js.map
