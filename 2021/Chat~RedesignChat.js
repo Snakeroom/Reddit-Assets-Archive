@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.687865102b7c1dfc7f65.js
-// Retrieved at 5/18/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.21e4ad6716d34399b167.js
+// Retrieved at 5/20/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -2736,7 +2736,7 @@
 				s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				c = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/lib/lessComponent.tsx"),
+				o = n("./src/lib/classNames/index.ts"),
 				i = n("./src/chat/actions/container.ts"),
 				l = n("./src/chat/actions/surveyTrigger/index.ts"),
 				d = n("./src/chat/actions/tracking.ts"),
@@ -2763,12 +2763,13 @@
 			var f = n("./src/chat/selectors/app.ts"),
 				C = n("./src/chat/components/CloseIcon/index.m.less"),
 				O = n.n(C);
-			const E = o.a.wrapped(h.c, "IconButton", O.a);
-			t.a = e => {
+			t.a = ({
+				className: e
+			}) => {
 				const t = Object(c.d)();
 				Object(c.e)(f.a);
-				return r.a.createElement(E, {
-					className: e.className,
+				return r.a.createElement(h.c, {
+					className: Object(o.a)(O.a.IconButton, e),
 					onClick: Object(m.b)(() => {
 						t(Object(i.sizeChanged)(u.a.HIDDEN)), t(Object(d.d)()), t(Object(l.b)())
 					}),
@@ -7666,17 +7667,17 @@
 				s = n.n(a),
 				r = n("./node_modules/react-redux/es/index.js"),
 				c = n("./src/lib/classNames/index.ts"),
-				o = n("./src/lib/lessComponent.tsx"),
-				i = n("./src/lib/opener/index.ts"),
-				l = n("./src/chat/actions/container.ts"),
-				d = n("./src/chat/actions/sidebar.ts"),
-				u = n("./src/chat/actions/tracking.ts"),
-				h = n("./src/chat/components/ChatIcon/index.tsx"),
-				m = n("./node_modules/fbt/lib/FbtPublic.js"),
-				p = n("./node_modules/lodash/noop.js"),
-				b = n.n(p),
-				g = n("./src/higherOrderComponents/asTooltip.tsx"),
-				f = n("./src/lib/copyToClipboard/index.ts"),
+				o = n("./src/lib/opener/index.ts"),
+				i = n("./src/chat/actions/container.ts"),
+				l = n("./src/chat/actions/sidebar.ts"),
+				d = n("./src/chat/actions/tracking.ts"),
+				u = n("./src/chat/components/ChatIcon/index.tsx"),
+				h = n("./node_modules/fbt/lib/FbtPublic.js"),
+				m = n("./node_modules/lodash/noop.js"),
+				p = n.n(m),
+				b = n("./src/higherOrderComponents/asTooltip.tsx"),
+				g = n("./src/lib/copyToClipboard/index.ts"),
+				f = n("./src/lib/lessComponent.tsx"),
 				C = n("./src/chat/actions/channel/dropdown.ts"),
 				O = n("./src/chat/actions/tooltip.ts"),
 				E = n("./src/chat/actions/user/dropdown.ts"),
@@ -7712,7 +7713,7 @@
 				N = Object(r.b)(w, (e, t) => ({
 					changeModeClicked: () => e(Object(v.themeToggle)())
 				})),
-				k = o.a.div("Wrapper", S.a);
+				k = f.a.div("Wrapper", S.a);
 			N(({
 				changeModeClicked: e,
 				theme: t
@@ -7897,94 +7898,94 @@
 				ie = n("./src/chat/components/ChannelHeaderDropdown/index.m.less"),
 				le = n.n(ie);
 			const de = "OverlayNavTooltip--Default",
-				ue = o.a.wrapped(Object(g.a)(D.a), "Dropdown", le.a);
+				ue = f.a.wrapped(Object(b.a)(D.a), "Dropdown", le.a);
 			ue.displayName = "Dropdown";
-			const he = o.a.wrapped(R.a, "DropdownRow", le.a);
+			const he = f.a.wrapped(R.a, "DropdownRow", le.a);
 			he.displayName = "DropdownRow";
-			const me = o.a.wrapped(U.c, "DropdownTrigger", le.a),
+			const me = f.a.wrapped(U.c, "DropdownTrigger", le.a),
 				pe = e => {
 					switch (e) {
 						case M.b.AddToGroup:
 							return {
-								text: m.fbt._("Add to group", null, {
+								text: h.fbt._("Add to group", null, {
 									hk: "3ZCBwZ"
 								}), icon: s.a.createElement(B, null)
 							};
 						case M.b.Block:
 							return {
-								text: m.fbt._("Block", null, {
+								text: h.fbt._("Block", null, {
 									hk: "1s7OxS"
 								}), icon: s.a.createElement(F, null)
 							};
 						case M.b.CopyLink:
 							return {
-								text: m.fbt._("Copy link", null, {
+								text: h.fbt._("Copy link", null, {
 									hk: "2OPNVI"
 								}), icon: s.a.createElement(X, null)
 							};
 						case M.b.Leave:
 							return {
-								text: m.fbt._("Leave group", null, {
+								text: h.fbt._("Leave group", null, {
 									hk: "zStpq"
 								}), icon: s.a.createElement(Q, null)
 							};
 						case M.b.LeaveRoom:
 							return {
-								text: m.fbt._("Leave room", null, {
+								text: h.fbt._("Leave room", null, {
 									hk: "42PJCV"
 								}), icon: s.a.createElement(Q, null)
 							};
 						case M.b.MuteBadging:
 							return {
-								text: m.fbt._("Disable notification badging", null, {
+								text: h.fbt._("Disable notification badging", null, {
 									hk: "4BzTkp"
 								}), icon: s.a.createElement(W, null)
 							};
 						case M.b.MuteNotifs:
 							return {
-								text: m.fbt._("Mute Notifications", null, {
+								text: h.fbt._("Mute Notifications", null, {
 									hk: "3EpiuE"
 								}), icon: s.a.createElement(W, null)
 							};
 						case M.b.Profile:
 							return {
-								text: m.fbt._("View Profile", null, {
+								text: h.fbt._("View Profile", null, {
 									hk: "3qjq7q"
 								}), icon: s.a.createElement($, null)
 							};
 						case M.b.RenameGroup:
 							return {
-								text: m.fbt._("Rename group", null, {
+								text: h.fbt._("Rename group", null, {
 									hk: "hTeQ"
 								}), icon: s.a.createElement(te, null)
 							};
 						case M.b.UnmuteBadging:
 							return {
-								text: m.fbt._("Enable notification badging", null, {
+								text: h.fbt._("Enable notification badging", null, {
 									hk: "87Nfa"
 								}), icon: s.a.createElement(K, null)
 							};
 						case M.b.UnmuteNotifs:
 							return {
-								text: m.fbt._("Unmute notifications", null, {
+								text: h.fbt._("Unmute notifications", null, {
 									hk: "2TcEwL"
 								}), icon: s.a.createElement(K, null)
 							};
 						case M.b.ViewMembers:
 							return {
-								text: m.fbt._("View members", null, {
+								text: h.fbt._("View members", null, {
 									hk: "PC84"
 								}), icon: s.a.createElement($, null)
 							};
 						case M.b.Hide:
 							return {
-								text: m.fbt._("Hide chat", null, {
+								text: h.fbt._("Hide chat", null, {
 									hk: "4e3NQf"
 								}), icon: s.a.createElement(q, null)
 							};
 						case M.b.HideGroup:
 							return {
-								text: m.fbt._("Hide group", null, {
+								text: h.fbt._("Hide group", null, {
 									hk: "PS4Ak"
 								}), icon: s.a.createElement(q, null)
 							};
@@ -8038,7 +8039,7 @@
 							onUnmuteBadging: u,
 							onMuteNotifs: h,
 							onUnmuteNotifs: m,
-							onHideChannel: p
+							onHideChannel: b
 						} = e;
 						switch (a) {
 							case M.b.AddToGroup:
@@ -8062,7 +8063,7 @@
 								} = e;
 								if (t) {
 									const e = Object(L.getShortChannelUrl)(t);
-									Object(f.a)(e)
+									Object(g.a)(e)
 								}
 								return
 							}
@@ -8076,9 +8077,9 @@
 								return m();
 							case M.b.Hide:
 							case M.b.HideGroup:
-								return p();
+								return b();
 							default:
-								return b.a
+								return p.a
 						}
 					}, l = () => {
 						const {
@@ -8095,9 +8096,9 @@
 					}, {
 						dropdownId: d = de,
 						dropdownIsOpen: u,
-						onOpenDropdown: h,
-						closeTooltip: p,
-						isFullSize: g
+						onOpenDropdown: m,
+						closeTooltip: b,
+						isFullSize: f
 					} = e, C = (() => {
 						if (t) switch (t.type) {
 							case se.a.Direct:
@@ -8108,13 +8109,13 @@
 					})();
 					return s.a.createElement(s.a.Fragment, null, !1, s.a.createElement(me, {
 						className: Object(c.a)(le.a.DropdownTrigger, {
-							[le.a.isFullSize]: g
+							[le.a.isFullSize]: f
 						}),
 						id: d,
 						onMouseDown: e => {
-							e.stopPropagation(), h(d)
+							e.stopPropagation(), m(d)
 						},
-						title: m.fbt._("Settings", null, {
+						title: h.fbt._("Settings", null, {
 							hk: "4lO98u"
 						})
 					}, s.a.createElement(ae, null)), s.a.createElement(ue, {
@@ -8127,7 +8128,7 @@
 						key: t,
 						displayText: pe(e).text,
 						onClick: () => {
-							i(e), p()
+							i(e), b()
 						}
 					}, pe(e).icon))))
 				}),
@@ -8169,20 +8170,16 @@
 			_e.displayName = "NavPopout";
 			var je = n("./src/chat/components/OverlayNavButtonGroup/index.m.less"),
 				ye = n.n(je);
-			const Ie = o.a.wrapped(U.c, "IconButton", ye.a),
-				xe = o.a.wrapped(fe.a, "CloseButton", ye.a);
-			xe.displayName = "CloseButton";
-			const Se = o.a.span("Wrapper", ye.a);
-			var we = Object(r.b)(() => Object(_.a)({
+			var Ie = Object(r.b)(() => Object(_.a)({
 					containerSize: e => e.container.size,
 					inviterName: ce.D,
 					isReady: re.g
 				}), e => ({
-					close: () => e(Object(l.sizeChanged)(Ce.a.HIDDEN)),
+					close: () => e(Object(i.sizeChanged)(Ce.a.HIDDEN)),
 					minimize: () => {
-						e(Object(l.sizeChanged)(Ce.a.MINIMIZED)), e(Object(u.p)())
+						e(Object(i.sizeChanged)(Ce.a.MINIMIZED)), e(Object(d.p)())
 					},
-					popout: () => e(Object(l.popoutOpened)())
+					popout: () => e(Object(i.popoutOpened)())
 				}))(({
 					channelId: e,
 					containerSize: t,
@@ -8195,37 +8192,43 @@
 					toggleChannelNameInput: l
 				}) => {
 					const d = c && t === Ce.a.EMBED;
-					return s.a.createElement(Se, null, a && s.a.createElement(ge, {
+					return s.a.createElement("div", {
+						className: ye.a.Wrapper
+					}, a && e && s.a.createElement(ge, {
 						channelId: e,
 						dropdownId: n,
 						inviterName: r,
 						toggleChannelNameInput: l
-					}), d && s.a.createElement(s.a.Fragment, null, s.a.createElement(Ie, {
+					}), d && s.a.createElement(s.a.Fragment, null, s.a.createElement(U.c, {
+						className: ye.a.IconButton,
 						onClick: i,
-						title: m.fbt._("Open chat in new window", null, {
+						title: h.fbt._("Open chat in new window", null, {
 							hk: "3S8f7W"
 						})
-					}, s.a.createElement(_e, null)), s.a.createElement(Ie, {
+					}, s.a.createElement(_e, null)), s.a.createElement(U.c, {
+						className: ye.a.IconButton,
 						onClick: o,
-						title: m.fbt._("Minimize chat", null, {
+						title: h.fbt._("Minimize chat", null, {
 							hk: "1gym9X"
 						})
-					}, s.a.createElement(Ee, null)), s.a.createElement(xe, null)))
+					}, s.a.createElement(Ee, null)), s.a.createElement(fe.a, {
+						className: ye.a.CloseButton
+					})))
 				}),
-				Ne = n("./src/chat/controls/ChannelNameInput/index.tsx"),
-				ke = n("./src/chat/controls/Counter/index.tsx"),
-				Te = n("./src/chat/components/RenameGroupInput/index.m.less"),
-				Me = n.n(Te);
-			const Ae = o.a.wrapped(e => s.a.createElement("span", {
+				xe = n("./src/chat/controls/ChannelNameInput/index.tsx"),
+				Se = n("./src/chat/controls/Counter/index.tsx"),
+				we = n("./src/chat/components/RenameGroupInput/index.m.less"),
+				Ne = n.n(we);
+			const ke = f.a.wrapped(e => s.a.createElement("span", {
 					className: Object(c.a)({
-						[Me.a.visible]: e.isVisible
+						[Ne.a.visible]: e.isVisible
 					}, e.className)
-				}, e.children), "InputWrapper", Me.a),
-				Ue = o.a.div("InputContent", Me.a),
-				De = o.a.span("InputControls", Me.a),
-				Re = o.a.wrapped(U.a, "CancelButton", Me.a),
-				Le = o.a.wrapped(U.a, "SaveButton", Me.a);
-			class Pe extends a.Component {
+				}, e.children), "InputWrapper", Ne.a),
+				Te = f.a.div("InputContent", Ne.a),
+				Me = f.a.span("InputControls", Ne.a),
+				Ae = f.a.wrapped(U.a, "CancelButton", Ne.a),
+				Ue = f.a.wrapped(U.a, "SaveButton", Ne.a);
+			class De extends a.Component {
 				constructor() {
 					super(...arguments), this.displayName = "RenameGroupInput", this.state = {
 						groupName: this.props.name || ""
@@ -8254,39 +8257,39 @@
 						handleChannelNameInput: a,
 						submitGroupName: r
 					} = this, c = this.getAvailableCharacters();
-					return s.a.createElement(Ae, {
+					return s.a.createElement(ke, {
 						isVisible: t
-					}, s.a.createElement(Ue, null, s.a.createElement(Ne.a, {
+					}, s.a.createElement(Te, null, s.a.createElement(xe.a, {
 						handleChannelNameInput: a,
-						placeholder: m.fbt._("Rename group", null, {
+						placeholder: h.fbt._("Rename group", null, {
 							hk: "1mjXbx"
 						}),
 						withBackground: !0,
 						value: n
-					}, s.a.createElement(ke.a, {
+					}, s.a.createElement(Se.a, {
 						count: c
-					})), s.a.createElement(De, null, s.a.createElement(Re, {
+					})), s.a.createElement(Me, null, s.a.createElement(Ae, {
 						secondaryNoBorder: !0,
 						onClick: e
-					}, m.fbt._("Cancel", null, {
+					}, h.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(Le, {
+					})), s.a.createElement(Ue, {
 						primaryNoBorder: !0,
 						disabled: c < 0 || c >= T.e,
 						onClick: r
-					}, m.fbt._("Save", null, {
+					}, h.fbt._("Save", null, {
 						hk: "1qAtYt"
 					})))))
 				}
 			}
-			var Be = Object(r.b)(void 0, e => ({
+			var Re = Object(r.b)(void 0, e => ({
 					onUpdateChannelName: t => e(Object(C.j)(t))
-				}))(Pe),
-				He = n("./src/chat/components/ToastNotification/index.tsx"),
-				Fe = n("./src/chat/helpers/dom.ts");
+				}))(De),
+				Le = n("./src/chat/components/ToastNotification/index.tsx"),
+				Pe = n("./src/chat/helpers/dom.ts");
 
-			function Ge() {
-				return (Ge = Object.assign || function(e) {
+			function Be() {
+				return (Be = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -8294,47 +8297,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var We = e => s.a.createElement(j.a, Ge({}, e, {
+			var He = e => s.a.createElement(j.a, Be({}, e, {
 					viewBox: "0 0 20 20"
 				}), s.a.createElement("path", {
 					d: "M19,9.375H2.509l7.933-7.933L9.558.558l-9,9a.625.625,0,0,0,0,.884l9,9,.884-.884L2.509,10.625H19Z"
 				})),
-				Ve = n("./src/chat/components/OverlayNav/index.m.less"),
-				Ke = n.n(Ve);
-			const ze = o.a.nav("Nav", Ke.a),
-				qe = o.a.span("TitleWrapper", Ke.a),
-				Ze = o.a.span("Title", Ke.a);
-			Ze.displayName = "Title";
-			const Qe = o.a.span("SubTitle", Ke.a);
-			Qe.displayName = "SubTitle";
-			const Je = o.a.wrapped(h.a, "ChatIcon", Ke.a),
-				Xe = o.a.wrapped(We, "ArrowLeft", Ke.a),
-				Ye = o.a.wrapped(U.c, "IconButton", Ke.a),
-				$e = o.a.wrapped(({
-					className: e,
-					userName: t
+				Fe = n("./src/chat/components/OverlayNav/index.m.less"),
+				Ge = n.n(Fe);
+			const We = ({
+					userName: e
 				}) => {
-					const n = Object(L.viewProfileUrl)(t);
+					const t = Object(L.viewProfileUrl)(e);
 					return s.a.createElement("a", {
 						onClick: e => e.stopPropagation(),
-						target: i.c.BLANK,
-						rel: i.b,
-						className: e,
-						href: n
-					}, t)
-				}, "UserProfileTitle", Ke.a),
-				et = Object(_.a)({
+						target: o.c.BLANK,
+						rel: o.b,
+						className: Ge.a.UserProfileTitle,
+						href: t
+					}, e)
+				},
+				Ve = Object(_.a)({
 					isEmbedded: re.d,
 					iconMembers: (e, t) => Object(ce.o)(e, t.channelId),
 					isFullSize: re.e
 				}),
-				tt = Object(r.b)(et, e => ({
+				Ke = Object(r.b)(Ve, e => ({
 					minimize: () => {
-						e(Object(l.sizeChanged)(Ce.a.MINIMIZED)), e(Object(u.p)())
+						e(Object(i.sizeChanged)(Ce.a.MINIMIZED)), e(Object(d.p)())
 					},
-					toggleSidebar: () => e(Object(d.f)(!0))
+					toggleSidebar: () => e(Object(l.f)(!0))
 				}));
-			class nt extends a.Component {
+			class ze extends a.Component {
 				constructor(e) {
 					super(e), this.hideChannelNameInput = () => this.setState({
 						isRenameGroupInputVisible: !1
@@ -8355,15 +8348,14 @@
 					var e;
 					const {
 						props: {
-							className: t,
-							channelId: n,
-							dropdownId: a,
-							isEmbedded: r,
-							minimize: o,
-							showMenu: i,
-							subTitle: l,
-							title: d,
-							channelType: u,
+							channelId: t,
+							dropdownId: n,
+							isEmbedded: a,
+							minimize: r,
+							showMenu: o,
+							subTitle: i,
+							title: l,
+							channelType: d,
 							iconMembers: h,
 							toggleSidebar: m,
 							showMembers: p,
@@ -8375,42 +8367,48 @@
 						hideChannelNameInput: f,
 						toggleChannelNameInput: C
 					} = this;
-					return s.a.createElement(ze, {
-						className: Object(c.a)(t, {
-							[Ke.a.isFullSize]: b
+					return s.a.createElement("nav", {
+						className: Object(c.a)(Ge.a.Nav, {
+							[Ge.a.isFullSize]: b
 						})
-					}, s.a.createElement(Ye, {
+					}, s.a.createElement(U.c, {
 						onClick: m,
-						className: Object(c.a)(Ke.a.IconButton, {
-							[Ke.a.isFullSize]: b
+						className: Object(c.a)(Ge.a.IconButton, {
+							[Ge.a.isFullSize]: b
 						})
-					}, s.a.createElement(Xe, null)), s.a.createElement(qe, {
-						onClick: r ? Object(Fe.b)(o) : void 0,
-						className: Object(c.a)(t, {
-							[Ke.a.embed]: r
+					}, s.a.createElement(He, {
+						className: Ge.a.ArrowLeft
+					})), s.a.createElement("span", {
+						onClick: a ? Object(Pe.b)(r) : void 0,
+						className: Object(c.a)(Ge.a.TitleWrapper, {
+							[Ge.a.embed]: a
 						})
-					}, p && h && h.firstUser && s.a.createElement(Je, {
-						className: Object(c.a)(Ke.a.ChatIcon, {
-							[Ke.a.isFullSize]: b
+					}, p && h && h.firstUser && s.a.createElement(u.a, {
+						className: Object(c.a)(Ge.a.ChatIcon, {
+							[Ge.a.isFullSize]: b
 						}),
 						userId: h.firstUser.id,
 						secondUserId: null === (e = h.secondUser) || void 0 === e ? void 0 : e.id
-					}), u === se.a.Direct ? s.a.createElement($e, {
-						userName: d
-					}) : s.a.createElement(Ze, null, d), s.a.createElement(Qe, null, l)), n && s.a.createElement(we, {
-						channelId: n,
+					}), d === se.a.Direct ? s.a.createElement(We, {
+						userName: l
+					}) : s.a.createElement("span", {
+						className: Ge.a.Title
+					}, l), s.a.createElement("span", {
+						className: Ge.a.SubTitle
+					}, i)), s.a.createElement(Ie, {
+						channelId: t,
 						toggleChannelNameInput: C,
-						showMenu: !!i,
-						dropdownId: a
-					}), n && d && s.a.createElement(Be, {
-						channelId: n,
-						name: d,
+						showMenu: !!o,
+						dropdownId: n
+					}), t && l && s.a.createElement(Re, {
+						channelId: t,
+						name: l,
 						isVisible: g,
 						hideChannelNameInput: f
-					}), s.a.createElement(He.a, null))
+					}), s.a.createElement(Le.a, null))
 				}
 			}
-			t.a = tt(nt)
+			t.a = Ke(ze)
 		},
 		"./src/chat/components/OverlayNavButtonGroup/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -15416,4 +15414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.687865102b7c1dfc7f65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.21e4ad6716d34399b167.js.map
