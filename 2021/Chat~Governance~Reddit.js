@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5225ec3e71060159cd0e.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.adb09999687ca7087192.js
+// Retrieved at 5/20/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("134602"),
+				buildNumber: r("134609"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1621530490"),
+				})("1621535343"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -2214,6 +2214,7 @@
 			var n = {
 				"./de_DE.json": ["./src/i18n/translatedFbts/de_DE.json", "translations/de_DE-json"],
 				"./es_ES.json": ["./src/i18n/translatedFbts/es_ES.json", "translations/es_ES-json"],
+				"./es_MX.json": ["./src/i18n/translatedFbts/es_MX.json", "translations/es_MX-json"],
 				"./fr_FR.json": ["./src/i18n/translatedFbts/fr_FR.json", "translations/fr_FR-json"],
 				"./it_IT.json": ["./src/i18n/translatedFbts/it_IT.json", "translations/it_IT-json"],
 				"./pseudo_ext.json": ["./src/i18n/translatedFbts/pseudo_ext.json", "translations/pseudo_ext-json"],
@@ -4208,14 +4209,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cb4801992cabfb285c738ff1c47d905832f21e6d0-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c4c4e591c70fcb9ecde26d0c7068b06c95cd7c219-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b4801992cabfb285c738ff1c47d905832f21e6d0-production",
+						release: "4c4e591c70fcb9ecde26d0c7068b06c95cd7c219-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4709,7 +4710,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "b4801992cabfb285c738ff1c47d905832f21e6d0-production",
+						releaseClient: "4c4e591c70fcb9ecde26d0c7068b06c95cd7c219-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -17376,15 +17377,15 @@
 			})), i.d(t, "Bd", (function() {
 				return jn
 			})), i.d(t, "k", (function() {
-				return Fn
+				return Dn
 			})), i.d(t, "Mb", (function() {
-				return Rn
+				return An
 			})), i.d(t, "Fd", (function() {
-				return Cn
+				return Bn
 			})), i.d(t, "pc", (function() {
-				return kn
+				return Ln
 			})), i.d(t, "Gd", (function() {
-				return Nn
+				return Un
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
@@ -17503,7 +17504,7 @@
 			}(st || (st = {}));
 			const ot = "enabled",
 				dt = e => e === st.Control1 || e === st.Control2;
-			var at, lt, ct, ut, _t, pt, mt, ht, ft, bt, gt, yt, wt, vt, Et, St, Tt, Ot, It, jt, Ft, Rt, xt, Ct, kt, Nt, Dt, At, Pt, Bt, Lt, Ut, Mt, Gt, qt, Vt, Wt, Ht, $t, zt, Kt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ci, ui, _i, pi, mi, hi, fi, bi, gi, yi, wi, vi, Ei, Si, Ti, Oi, Ii, ji, Fi, Ri, xi, Ci, ki, Ni, Di, Ai, Pi, Bi, Li, Ui, Mi, Gi, qi, Vi, Wi, Hi, $i, zi, Ki, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, cn, un, _n, pn, mn, hn, fn, bn, gn, yn, wn, vn, En, Sn, Tn, On, In, jn;
+			var at, lt, ct, ut, _t, pt, mt, ht, ft, bt, gt, yt, wt, vt, Et, St, Tt, Ot, It, jt, Ft, Rt, xt, Ct, kt, Nt, Dt, At, Pt, Bt, Lt, Ut, Mt, Gt, qt, Vt, Wt, Ht, $t, zt, Kt, Yt, Qt, Jt, Xt, Zt, ei, ti, ii, ni, ri, si, oi, di, ai, li, ci, ui, _i, pi, mi, hi, fi, bi, gi, yi, wi, vi, Ei, Si, Ti, Oi, Ii, ji, Fi, Ri, xi, Ci, ki, Ni, Di, Ai, Pi, Bi, Li, Ui, Mi, Gi, qi, Vi, Wi, Hi, $i, zi, Ki, Yi, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, cn, un, _n, pn, mn, hn, fn, bn, gn, yn, wn, vn, En, Sn, Tn, On, In, jn, Fn, Rn, xn, Cn, kn, Nn;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(at || (at = {})),
@@ -17884,8 +17885,26 @@
 			}(In || (In = {})),
 			function(e) {
 				e.Variant1 = "variant_1", e.Variant2 = "variant_2"
-			}(jn || (jn = {}));
-			const Fn = {
+			}(jn || (jn = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(Fn || (Fn = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(Rn || (Rn = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(xn || (xn = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(Cn || (Cn = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(kn || (kn = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(Nn || (Nn = {}));
+			const Dn = {
 					[rt]: [jn.Variant1, jn.Variant2],
 					[nt]: [In.Enabled],
 					[it]: [On.Enabled],
@@ -17998,10 +18017,16 @@
 					[Je]: [vn.Enabled],
 					[Xe]: [En.Enabled],
 					[Ze]: [Sn.Add, Sn.Start, Sn.Create],
-					[et]: [Tn.Tabs, Tn.Modals]
+					[et]: [Tn.Tabs, Tn.Modals],
+					d2x_language_fr_fr: [Fn.Enabled],
+					d2x_language_it_it: [Rn.Enabled],
+					d2x_language_pt_br: [xn.Enabled],
+					d2x_language_pt_pt: [Cn.Enabled],
+					d2x_language_es_es: [kn.Enabled],
+					d2x_language_es_mx: [Nn.Enabled]
 				},
-				Rn = new Set([E, l, T, L, "guest_d2x_subreddit_subreddit_links_url", X, Z, te, ne, ae, ce, ue, fe, J, xe, Ue, Qe, rt]),
-				xn = {
+				An = new Set([E, l, T, L, "guest_d2x_subreddit_subreddit_links_url", X, Z, te, ne, ae, ce, ue, fe, J, xe, Ue, Qe, rt]),
+				Pn = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
 					}),
@@ -18108,10 +18133,10 @@
 						hk: "nSJdn"
 					})
 				},
-				Cn = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				kn = Cn(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
-				Nn = e => {
-					const t = xn[e];
+				Bn = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				Ln = Bn(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
+				Un = e => {
+					const t = Pn[e];
 					return t && t() || e
 				}
 		},
@@ -46472,4 +46497,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5225ec3e71060159cd0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.adb09999687ca7087192.js.map
