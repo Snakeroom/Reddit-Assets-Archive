@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.125832cd1f08c93a190e.js
-// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a2322017fa9b64633c08.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6267,7 +6267,7 @@
 				m = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				u = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				p = s("./src/reddit/selectors/commentSelector.ts"),
-				h = s("./src/reddit/selectors/gold/powerups.ts");
+				h = s("./src/reddit/selectors/gold/powerups/index.ts");
 			const b = [],
 				f = (e, t) => {
 					const s = e.economics.subredditPremium[t];
@@ -6630,4 +6630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.125832cd1f08c93a190e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a2322017fa9b64633c08.js.map

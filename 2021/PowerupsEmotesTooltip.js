@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.92bb13c414020bf59897.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.2360648d041e27d7c1c5.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -260,7 +260,7 @@
 				S = o("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = o("./src/reddit/icons/svgs/AddSquare/index.tsx"),
 				R = o("./src/reddit/models/Toast/index.ts"),
-				P = o("./src/reddit/selectors/gold/powerups.ts"),
+				P = o("./src/reddit/selectors/gold/powerups/index.ts"),
 				A = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
 				D = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
 				M = o.n(D);
@@ -641,4 +641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.92bb13c414020bf59897.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.2360648d041e27d7c1c5.js.map

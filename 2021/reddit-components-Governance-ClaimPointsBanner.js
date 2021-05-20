@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.37696fed1fcc7e481ddd.js
-// Retrieved at 5/18/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.94713ad53cc3da6e57f1.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -1281,7 +1281,7 @@
 				u = t("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				m = t("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				k = t("./src/reddit/selectors/commentSelector.ts"),
-				p = t("./src/reddit/selectors/gold/powerups.ts");
+				p = t("./src/reddit/selectors/gold/powerups/index.ts");
 			const l = [],
 				b = (A, e) => {
 					const t = A.economics.subredditPremium[e];
@@ -1644,4 +1644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.37696fed1fcc7e481ddd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.94713ad53cc3da6e57f1.js.map

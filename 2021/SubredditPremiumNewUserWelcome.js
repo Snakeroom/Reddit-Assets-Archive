@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.80222f656a7e45db60c4.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c48a52af53b7b757f6b1.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -2076,7 +2076,7 @@
 				l = n("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				m = n("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				b = n("./src/reddit/selectors/commentSelector.ts"),
-				p = n("./src/reddit/selectors/gold/powerups.ts");
+				p = n("./src/reddit/selectors/gold/powerups/index.ts");
 			const f = [],
 				_ = (e, t) => {
 					const n = e.economics.subredditPremium[t];
@@ -2326,4 +2326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.80222f656a7e45db60c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c48a52af53b7b757f6b1.js.map

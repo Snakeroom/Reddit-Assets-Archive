@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.bac8b079fc7100eb9af0.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.b948c9e793653ae4c06a.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -4342,7 +4342,7 @@
 				p = n("./src/reddit/actions/gold/productOffers.ts"),
 				b = n("./src/reddit/actions/modal.ts"),
 				h = n("./src/reddit/components/ConfirmModal/index.tsx"),
-				f = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/selectors/gold/powerups.ts")),
+				f = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/selectors/gold/powerups/index.ts")),
 				g = n("./src/lib/classNames/index.ts"),
 				v = n("./src/reddit/controls/Button/index.tsx"),
 				_ = n("./src/higherOrderComponents/asModal/index.tsx"),
@@ -11049,7 +11049,7 @@
 				u = n("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				m = n("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				p = n("./src/reddit/selectors/commentSelector.ts"),
-				b = n("./src/reddit/selectors/gold/powerups.ts");
+				b = n("./src/reddit/selectors/gold/powerups/index.ts");
 			const h = [],
 				f = (e, t) => {
 					const n = e.economics.subredditPremium[t];
@@ -11372,4 +11372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.bac8b079fc7100eb9af0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b948c9e793653ae4c06a.js.map

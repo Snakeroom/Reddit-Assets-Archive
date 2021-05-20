@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.1abd82e8d5480394c88f.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a40394bfb7a652d45870.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1797,7 +1797,7 @@
 						hk: "1T4BEy"
 					}))
 				},
-				V = r("./src/reddit/selectors/gold/powerups.ts");
+				V = r("./src/reddit/selectors/gold/powerups/index.ts");
 			const {
 				fbt: H
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), G = Object(s.c)({
@@ -2818,4 +2818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.1abd82e8d5480394c88f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a40394bfb7a652d45870.js.map

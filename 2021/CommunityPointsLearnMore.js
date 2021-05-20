@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b86942be243cdd7f2e6e.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.29363b1ef5cf61ca9f2b.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1787,7 +1787,7 @@
 				l = r("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				f = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				m = r("./src/reddit/selectors/commentSelector.ts"),
-				h = r("./src/reddit/selectors/gold/powerups.ts");
+				h = r("./src/reddit/selectors/gold/powerups/index.ts");
 			const g = [],
 				p = (e, t) => {
 					const r = e.economics.subredditPremium[t];
@@ -2006,4 +2006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.b86942be243cdd7f2e6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.29363b1ef5cf61ca9f2b.js.map

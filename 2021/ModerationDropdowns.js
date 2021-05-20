@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.79fe4eb0374c2ec818a4.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.965a6c8fb86b48e1f6d2.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -421,7 +421,7 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return O
+				return x
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./src/lib/makeActionCreator/index.ts"),
@@ -430,75 +430,17 @@
 				a = s("./src/lib/makeGqlRequest/index.ts");
 			var i = s("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
 				c = s("./src/lib/initializeClient/installReducer.ts"),
-				d = s("./node_modules/redux/es/redux.js"),
-				l = s("./src/reddit/actions/gold/constants.ts");
-			const m = {};
-			var p = s("./src/reddit/actions/economics/powerups/constants.ts");
-			const u = {};
-			var b = Object(d.c)({
-					subredditAchievements: (e = m, t) => {
-						switch (t.type) {
-							case l.nb:
-								const {
-									subredditId: s, subredditAchievementFlairs: o
-								} = t.payload, n = o.reduce((e, t) => ({
-									...e,
-									[t.type]: t
-								}), e[s] || {});
-								return {
-									...e, [s]: n
-								};
-							default:
-								return e
-						}
-					},
-					subredditUserAchievements: (e = u, t) => {
-						var s, o;
-						switch (t.type) {
-							case p.d:
-								const {
-									id: n, userAchievementFlairsByRedditorIds: r
-								} = t.payload;
-								let a = e[n] || {};
-								for (const {
-										redditorId: e,
-										userAchievementFlairs: t
-									} of r) {
-									const n = t.map(({
-											type: e
-										}) => e),
-										r = null === (s = t.find(({
-											isPreferred: e
-										}) => e)) || void 0 === s ? void 0 : s.type,
-										i = (null === (o = t.find(({
-											type: e
-										}) => "POWERUPS_SUPPORTER" === e)) || void 0 === o ? void 0 : o.type) || null;
-									a = {
-										...a,
-										[e]: {
-											achievementTypes: n,
-											preferredType: r,
-											supporterType: i
-										}
-									}
-								}
-								return {
-									...e, [n]: a
-								};
-							default:
-								return e
-						}
-					}
-				}),
-				x = s("./src/reddit/actions/gold/powerups.ts"),
-				f = s("./src/reddit/selectors/gold/powerups.ts");
+				d = s("./src/reddit/reducers/features/powerups/index.ts"),
+				l = s("./src/reddit/actions/gold/powerups.ts"),
+				m = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				p = s("./src/reddit/actions/economics/powerups/constants.ts");
 			Object(c.a)({
 				features: {
-					powerups: b
+					powerups: d.a
 				}
 			});
-			const h = Object(o.a)(p.d),
-				C = (e, t) => async (s, o, {
+			const u = Object(o.a)(p.d),
+				b = (e, t) => async (s, o, {
 					gqlContext: i
 				}) => {
 					try {
@@ -513,16 +455,16 @@
 							if (!o.ok) throw new Error("Unable to fetch user achievements");
 							return o.body.data.subredditInfoById
 						})(i(), e, t);
-						await s(h(o))
+						await s(u(o))
 					} catch (c) {
 						n.c.captureException(c)
 					}
-				}, O = (e, t) => async (s, o) => {
+				}, x = (e, t) => async (s, o) => {
 					if (!e) return;
 					let n = o();
-					if (await s(Object(x.i)(e, {
+					if (await s(Object(l.i)(e, {
 							fullData: !0
-						})), n = o(), !Object(i.a)(n) || !Object(f.g)(n, {
+						})), n = o(), !Object(i.a)(n) || !Object(m.g)(n, {
 							subredditId: e
 						})) return;
 					const r = new Set;
@@ -531,7 +473,7 @@
 							authorId: t
 						} = e;
 						(null == t ? void 0 : t.trim()) && r.add(t)
-					}), r.size && await s(C(e, Array.from(r)))
+					}), r.size && await s(b(e, Array.from(r)))
 				}
 		},
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, s) {
@@ -2329,6 +2271,69 @@
 				}, Array.isArray(s) && s[1]))
 			}, 2)
 		},
+		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, s) {
+			"use strict";
+			var o = s("./node_modules/redux/es/redux.js"),
+				n = s("./src/reddit/actions/gold/constants.ts");
+			const r = {};
+			var a = s("./src/reddit/actions/economics/powerups/constants.ts");
+			const i = {};
+			t.a = Object(o.c)({
+				subredditAchievements: (e = r, t) => {
+					switch (t.type) {
+						case n.nb:
+							const {
+								subredditId: s, subredditAchievementFlairs: o
+							} = t.payload, r = o.reduce((e, t) => ({
+								...e,
+								[t.type]: t
+							}), e[s] || {});
+							return {
+								...e, [s]: r
+							};
+						default:
+							return e
+					}
+				},
+				subredditUserAchievements: (e = i, t) => {
+					var s, o;
+					switch (t.type) {
+						case a.d:
+							const {
+								id: n, userAchievementFlairsByRedditorIds: r
+							} = t.payload;
+							let i = e[n] || {};
+							for (const {
+									redditorId: e,
+									userAchievementFlairs: t
+								} of r) {
+								const n = t.map(({
+										type: e
+									}) => e),
+									r = null === (s = t.find(({
+										isPreferred: e
+									}) => e)) || void 0 === s ? void 0 : s.type,
+									a = (null === (o = t.find(({
+										type: e
+									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === o ? void 0 : o.type) || null;
+								i = {
+									...i,
+									[e]: {
+										achievementTypes: n,
+										preferredType: r,
+										supporterType: a
+									}
+								}
+							}
+							return {
+								...e, [n]: i
+							};
+						default:
+							return e
+					}
+				}
+			})
+		},
 		"./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -2401,4 +2406,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.79fe4eb0374c2ec818a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.965a6c8fb86b48e1f6d2.js.map

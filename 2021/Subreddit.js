@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bcde8337c46b230b4240.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.0b276d655a948c729228.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6182,7 +6182,7 @@
 				ye = n("./src/reddit/selectors/experiments/topPosts.ts"),
 				_e = n("./src/reddit/selectors/experiments/trending.ts"),
 				ge = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
-				je = n("./src/reddit/selectors/gold/powerups.ts"),
+				je = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				Oe = n("./src/reddit/selectors/listings.ts"),
 				Ce = n("./src/reddit/selectors/meta.ts"),
 				Ne = n("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -7345,4 +7345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bcde8337c46b230b4240.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0b276d655a948c729228.js.map

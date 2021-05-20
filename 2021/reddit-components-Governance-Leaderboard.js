@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.731f09502a757b032799.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.df06aba4a21707554ab3.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -1360,7 +1360,7 @@
 				l = r("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				m = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				p = r("./src/reddit/selectors/commentSelector.ts"),
-				b = r("./src/reddit/selectors/gold/powerups.ts");
+				b = r("./src/reddit/selectors/gold/powerups/index.ts");
 			const f = [],
 				h = (e, t) => {
 					const r = e.economics.subredditPremium[t];
@@ -1723,4 +1723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.731f09502a757b032799.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.df06aba4a21707554ab3.js.map

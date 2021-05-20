@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.e40052a609078c8373b0.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.2a928c846450c1864f66.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, s) {
@@ -302,7 +302,7 @@
 				S = s("./src/reddit/controls/Button/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				j = s("./src/reddit/selectors/activeModal.ts"),
-				k = s("./src/reddit/selectors/gold/powerups.ts"),
+				k = s("./src/reddit/selectors/gold/powerups/index.ts"),
 				C = s("./src/reddit/selectors/subreddit.ts"),
 				P = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/index.m.less"),
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.e40052a609078c8373b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.2a928c846450c1864f66.js.map

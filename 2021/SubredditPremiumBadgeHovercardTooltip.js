@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.43c7acc3defb58a53103.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.8edb8215b131546f5871.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -2750,7 +2750,7 @@
 				u = r("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				m = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				p = r("./src/reddit/selectors/commentSelector.ts"),
-				f = r("./src/reddit/selectors/gold/powerups.ts");
+				f = r("./src/reddit/selectors/gold/powerups/index.ts");
 			const b = [],
 				h = (e, t) => {
 					const r = e.economics.subredditPremium[t];
@@ -3000,4 +3000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.43c7acc3defb58a53103.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.8edb8215b131546f5871.js.map

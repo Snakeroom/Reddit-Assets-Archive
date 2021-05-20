@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3bd1f91a51a839548ba7.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.e7e2b3da220e5203f150.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2749,7 +2749,7 @@
 				tt = n("./src/reddit/icons/svgs/EditPencil/index.tsx"),
 				nt = n("./src/reddit/models/User/index.ts"),
 				st = n("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
-				rt = n("./src/reddit/selectors/gold/powerups.ts"),
+				rt = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				it = n("./src/reddit/selectors/userFlair.ts"),
 				ot = n("./src/reddit/components/SidebarFlairSettings/index.m.less"),
 				at = n.n(ot);
@@ -5396,4 +5396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3bd1f91a51a839548ba7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e7e2b3da220e5203f150.js.map

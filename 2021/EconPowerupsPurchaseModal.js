@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0d377368fa04baed9c62.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.8ec53ad35b68b5b38475.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1515,7 +1515,7 @@
 				E = n("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				P = n("./src/reddit/actions/goldPurchaseModals/payment.ts"),
 				C = n("./src/reddit/models/Gold/ProductOffer.ts"),
-				w = n("./src/reddit/selectors/gold/powerups.ts"),
+				w = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				_ = n("./src/reddit/selectors/gold/productOffers.ts"),
 				j = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				x = n("./src/reddit/selectors/user.ts"),
@@ -2629,4 +2629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0d377368fa04baed9c62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.8ec53ad35b68b5b38475.js.map

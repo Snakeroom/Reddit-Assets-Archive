@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.997ecc26439ae8dd1c1a.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.7ff63d20d27514589c53.js
+// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -3247,7 +3247,7 @@
 				m = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				u = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				p = s("./src/reddit/selectors/commentSelector.ts"),
-				b = s("./src/reddit/selectors/gold/powerups.ts");
+				b = s("./src/reddit/selectors/gold/powerups/index.ts");
 			const g = [],
 				h = (e, t) => {
 					const s = e.economics.subredditPremium[t];
@@ -3497,4 +3497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.997ecc26439ae8dd1c1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.7ff63d20d27514589c53.js.map
