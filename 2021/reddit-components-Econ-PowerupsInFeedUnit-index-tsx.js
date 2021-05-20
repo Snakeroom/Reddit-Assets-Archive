@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1d9477dffefa47f408ae.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.299091670003ddbe5a66.js
+// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -201,13 +201,13 @@
 					className: h.a.supporters,
 					subredditId: e,
 					onClick: t => {
-						N(Object(p.c)("post_upsell")), w(t ? Object(c.d)(e) : Object(c.c)("in_feed_unit"))
+						N(Object(p.c)("post_upsell")), w(t ? Object(c.e)(e) : Object(c.d)("in_feed_unit"))
 					}
 				}), o.a.createElement(u.q, {
 					priority: u.b.Primary,
 					className: h.a.button,
 					onClick: () => {
-						N(Object(p.k)()), w(Object(c.c)("in_feed_unit"))
+						N(Object(p.k)()), w(Object(c.d)("in_feed_unit"))
 					},
 					isFullWidth: !0
 				}, I ? x._("Use Your Premium Powerup", null, {
@@ -219,4 +219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1d9477dffefa47f408ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.299091670003ddbe5a66.js.map

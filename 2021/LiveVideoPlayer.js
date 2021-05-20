@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.30ef26953149970b5c4a.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a030936717faa8b0c850.js
+// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -194,7 +194,7 @@
 						})).ok) {
 						f.filter(e => e.type === h.a.SUBREDDIT).forEach(({
 							id: e
-						}) => o(Object(r.h)(e, {
+						}) => o(Object(r.i)(e, {
 							forceLoad: !0,
 							fullData: !1
 						})));
@@ -1040,4 +1040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.30ef26953149970b5c4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a030936717faa8b0c850.js.map

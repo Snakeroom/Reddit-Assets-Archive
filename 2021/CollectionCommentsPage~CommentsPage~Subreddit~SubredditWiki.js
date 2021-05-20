@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2fe11f565bca259d7d67.js
-// Retrieved at 5/19/2021, 7:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.231841e2198f37ece734.js
+// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1587,7 +1587,7 @@
 					})),
 					P = C || D,
 					T = () => {
-						s(N ? Object(h.m)() : Object(h.i)()), r(Object(o.c)("powerups_sidebar"))
+						s(N ? Object(h.m)() : Object(h.i)()), r(Object(o.d)("powerups_sidebar"))
 					};
 				if (!_ || 1 === _.tiersInfo.length || !k) return null;
 				const A = !!(null == j ? void 0 : j.freeCount),
@@ -1648,7 +1648,7 @@
 					maxSupporters: z,
 					isShortSupportersEnabled: N,
 					onShowFullSupportersList: () => {
-						s(Object(h.o)()), r(Object(o.d)(t))
+						s(Object(h.o)()), r(Object(o.e)(t))
 					}
 				}), !(null == E ? void 0 : E.length) && N && i.a.createElement("div", {
 					className: I.a.becomeFirstHero
@@ -3967,4 +3967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.2fe11f565bca259d7d67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.231841e2198f37ece734.js.map

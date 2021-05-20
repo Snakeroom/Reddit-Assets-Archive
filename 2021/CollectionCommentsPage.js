@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.86873815adb54b767f3d.js
-// Retrieved at 5/19/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fc485239e6cf4670d2e0.js
+// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -994,7 +994,7 @@
 						B = Object(K.J)(s());
 					if (R && "subreddit" === R.belongsTo.type) {
 						const e = R.belongsTo.id,
-							s = Object(ee.i)(() => t(Object(X.h)(e, {
+							s = Object(ee.i)(() => t(Object(X.i)(e, {
 								fullData: !0,
 								includeIdentity: B
 							})), {
@@ -3274,7 +3274,7 @@
 						scrollToAndRemeasure: o
 					})),
 					onIgnoreReports: () => e(Object(q.g)(t)),
-					onOpenPowerupsModal: () => e(Object(G.c)("comment_top_supporter_badge")),
+					onOpenPowerupsModal: () => e(Object(G.d)("comment_top_supporter_badge")),
 					onVoteClick: s => {
 						const [o, r] = s === Yt.a.upvoted ? [Object(u.q)(t), "upvote_comment"] : [Object(u.j)(t), "downvote_comment"];
 						n(r, t)(), e(o)
@@ -9541,4 +9541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.86873815adb54b767f3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.fc485239e6cf4670d2e0.js.map

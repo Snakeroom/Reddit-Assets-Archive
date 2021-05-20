@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.66a84b668466a748e75d.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.a86f06bcf42dd4b03397.js
+// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -520,7 +520,7 @@
 				}, h = (e, t) => async (s, n) => {
 					if (!e) return;
 					let o = n();
-					if (await s(Object(f.h)(e, {
+					if (await s(Object(f.i)(e, {
 							fullData: !0
 						})), o = n(), !Object(i.a)(o) || !Object(O.g)(o, {
 							subredditId: e
@@ -1141,4 +1141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.66a84b668466a748e75d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.a86f06bcf42dd4b03397.js.map

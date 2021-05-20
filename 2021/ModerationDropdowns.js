@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.ef63d29d723b98afea3d.js
-// Retrieved at 5/19/2021, 3:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.79fe4eb0374c2ec818a4.js
+// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -520,7 +520,7 @@
 				}, O = (e, t) => async (s, o) => {
 					if (!e) return;
 					let n = o();
-					if (await s(Object(x.h)(e, {
+					if (await s(Object(x.i)(e, {
 							fullData: !0
 						})), n = o(), !Object(i.a)(n) || !Object(f.g)(n, {
 							subredditId: e
@@ -2401,4 +2401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.ef63d29d723b98afea3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.79fe4eb0374c2ec818a4.js.map

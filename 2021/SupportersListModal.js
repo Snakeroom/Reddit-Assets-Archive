@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.e9a383944cfc76c279a9.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.e40052a609078c8373b0.js
+// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, s) {
@@ -385,7 +385,7 @@
 					priority: S.b.Primary,
 					className: y.a.ctaButton,
 					onClick: () => {
-						h(Object(N.p)()), p(Object(c.c)("supporters_list_modal"))
+						h(Object(N.p)()), p(Object(c.d)("supporters_list_modal"))
 					}
 				}, b ? z._("Use Your Premium Powerup", null, {
 					hk: "1DC7G3"
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.e9a383944cfc76c279a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.e40052a609078c8373b0.js.map
