@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ac1de3f61ff6bd52c1fe.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.157e82372dc212e995dd.js
+// Retrieved at 5/24/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -763,8 +763,8 @@
 				M = r.n(N),
 				L = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				H = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
-				q = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				q = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
+				H = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				U = r("./src/reddit/selectors/subreddit.ts"),
 				R = r("./src/reddit/components/Econ/Prediction/PredictionModal/TournamentModal/index.m.less"),
 				W = r.n(R);
@@ -779,13 +779,13 @@
 				subredditId: n
 			}) {
 				const o = Object(z.b)(),
-					m = Object(k.e)(a => Object(q.d)(a, {
+					m = Object(k.e)(a => Object(H.d)(a, {
 						subredditId: n
 					})),
 					s = Object(k.e)(a => Object(U.U)(a, {
 						subredditId: n
 					})),
-					e = Object(H.a)({
+					e = Object(q.a)({
 						shouldHideNsfwIcon: !1,
 						subredditOrProfile: s
 					}),
@@ -874,7 +874,7 @@
 				tournamentId: B,
 				userCoins: D
 			}) => {
-				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, C] = Object(x.useState)(!1), [j, I] = Object(x.useState)(!1), [N, L] = Object(x.useState)(!1), z = Object(u.a)(), H = null == F ? void 0 : F[V], q = null == v ? void 0 : v[V], U = B ? v && V === v.length - 1 : F && V === F.length - 1, R = !!F || "COINS" === (null == q ? void 0 : q.currency), W = R && D < ((null == H ? void 0 : H.coins) || (null == q ? void 0 : q.amount) || 0), K = !!q && null !== S && S < q.amount, X = null == H ? void 0 : H.coins, Z = null == q ? void 0 : q.amount, $ = W || K, aa = $ || U, ia = Object(x.useCallback)(async () => {
+				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, C] = Object(x.useState)(!1), [j, I] = Object(x.useState)(!1), [N, L] = Object(x.useState)(!1), z = Object(u.a)(), q = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], U = B ? v && V === v.length - 1 : F && V === F.length - 1, R = !!F || "COINS" === (null == H ? void 0 : H.currency), W = R && D < ((null == q ? void 0 : q.coins) || (null == H ? void 0 : H.amount) || 0), K = !!H && null !== S && S < H.amount, X = null == q ? void 0 : q.coins, Z = null == H ? void 0 : H.amount, $ = W || K, aa = $ || U, ia = Object(x.useCallback)(async () => {
 					try {
 						const i = await a(G);
 						P(i)
@@ -949,8 +949,8 @@
 					className: M.a.modalWrapper
 				}, t.a.createElement(_, {
 					onCancel: xa,
-					selectedChipPack: q,
-					selectedCoinPack: H
+					selectedChipPack: H,
+					selectedCoinPack: q
 				}), t.a.createElement("div", {
 					className: M.a.modalContent
 				}, n && t.a.createElement(w, {
@@ -973,17 +973,17 @@
 					}
 				}, t.a.createElement(h.a, {
 					className: M.a.wagerSelectorButtonIcon
-				})), H ? t.a.createElement("div", {
+				})), q ? t.a.createElement("div", {
 					className: M.a.wagerSelectorAmount
 				}, t.a.createElement(p.a, {
 					className: M.a.coinIcon
-				}), " ", H.coins ? H.coins : Y._("Free", null, {
+				}), " ", q.coins ? q.coins : Y._("Free", null, {
 					hk: "2EqRoV"
-				})) : q ? t.a.createElement("div", {
+				})) : H ? t.a.createElement("div", {
 					className: M.a.wagerSelectorAmount
-				}, q.amount > 0 ? t.a.createElement(t.a.Fragment, null, t.a.createElement(l.a, {
+				}, H.amount > 0 ? t.a.createElement(t.a.Fragment, null, t.a.createElement(l.a, {
 					className: M.a.tokenIcon
-				}), " ", q.amount) : Y._("Free", null, {
+				}), " ", H.amount) : Y._("Free", null, {
 					hk: "1fDvBk"
 				})) : t.a.createElement(c.a, {
 					className: M.a.loadingIcon,
@@ -1014,9 +1014,9 @@
 					}),
 					disabled: !F && !v || k || K,
 					onClick: a => {
-						a.preventDefault(), (H || q) && s({
-							coinPackage: H,
-							chipPackage: q
+						a.preventDefault(), (q || H) && s({
+							coinPackage: q,
+							chipPackage: H
 						})
 					}
 				}, k ? t.a.createElement(c.a, {
@@ -1058,9 +1058,8 @@
 				isSelected: "Tg_55Aw6PyKCmanFRdTd-",
 				checkmarkIcon: "_2gAEl8yg8wfIPLrKbwHden",
 				loggedOutTooltip: "_1Hv_GwhEllz9BSmfsqochE",
-				currencyIcon: "_2_H1PMvMua1F3nlUseYpzh",
-				icon: "mm7Q2UimK8B5N7a2U94Uh",
-				bulbIcon: "GjPZjMgfQVA01pv-Rmka9"
+				eyeIcon: "_2CARqVhwG8o_tQeOFQ6_LI",
+				icon: "mm7Q2UimK8B5N7a2U94Uh"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx": function(a, i, r) {
@@ -1117,9 +1116,9 @@
 				}, c.text), !!c.userStakeAmount && t.a.createElement("div", {
 					className: e.a.optionStake
 				}, E ? t.a.createElement(n.a, {
-					className: e.a.currencyIcon
+					className: e.a.icon
 				}) : t.a.createElement(m.a, {
-					className: e.a.currencyIcon
+					className: e.a.icon
 				}), " ", c.userStakeAmount)), !!u && t.a.createElement("div", {
 					className: e.a.optionPercentage,
 					style: {
@@ -1131,6 +1130,23 @@
 				}, l._("You must be logged in", null, {
 					hk: "18KrL7"
 				}))))
+			})
+		},
+		"./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx": function(a, i, r) {
+			"use strict";
+			var x = r("./node_modules/react/index.js"),
+				t = r.n(x),
+				k = r("./src/config.ts");
+			const {
+				fbt: n
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), o = `\n  ${k.a.assetPath}/img/econ/predictions/waiting.png,\n  ${k.a.assetPath}/img/econ/predictions/waiting@2x.png 2x,\n  ${k.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`;
+			i.a = a => t.a.createElement("img", {
+				className: a.className,
+				srcSet: o,
+				src: `${k.a.assetPath}/img/econ/predictions/waiting@2x.png 2x`,
+				alt: n._("Snoos gazing into a crystal ball", null, {
+					hk: "1XM1Zp"
+				})
 			})
 		},
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(a, i, r) {
@@ -1314,18 +1330,18 @@
 			r.d(i, "a", (function() {
 				return y
 			}));
-			var x = r("./src/config.ts"),
-				t = r("./node_modules/lottie-web/build/player/lottie.js"),
-				k = r.n(t),
-				n = r("./node_modules/react/index.js"),
-				o = r.n(n),
-				m = r("./src/lib/classNames/index.ts");
+			var x = r("./node_modules/lottie-web/build/player/lottie.js"),
+				t = r.n(x),
+				k = r("./node_modules/react/index.js"),
+				n = r.n(k),
+				o = r("./src/lib/classNames/index.ts");
 
-			function s(a) {
+			function m(a) {
 				return new Promise(i => setTimeout(i, a))
 			}
-			var e = r("./src/lib/timeUntil/index.ts"),
-				l = r("./src/higherOrderComponents/asModal/index.tsx"),
+			var s = r("./src/lib/timeUntil/index.ts"),
+				e = r("./src/higherOrderComponents/asModal/index.tsx"),
+				l = r("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				c = r("./src/reddit/components/Econ/Prediction/VoteAnimation/confetti.json"),
 				p = r("./src/reddit/components/Econ/Prediction/VoteAnimation/index.m.less"),
 				h = r.n(p);
@@ -1355,49 +1371,49 @@
 				isShowingVoteAnimation: r,
 				onAnimationEnd: x
 			}) {
-				const t = Object(n.useRef)(null),
-					[k, e] = Object(n.useState)(0),
-					[l, c] = Object(n.useState)(!1),
-					[p, f] = Object(n.useState)(null),
-					[d, y] = Object(n.useState)(!1),
-					[G, E] = Object(n.useState)(!1),
-					[B] = Object(n.useState)(u());
-				return Object(n.useEffect)(() => {
+				const t = Object(k.useRef)(null),
+					[s, e] = Object(k.useState)(0),
+					[l, c] = Object(k.useState)(!1),
+					[p, f] = Object(k.useState)(null),
+					[d, y] = Object(k.useState)(!1),
+					[E, A] = Object(k.useState)(!1),
+					[B] = Object(k.useState)(u());
+				return Object(k.useEffect)(() => {
 					(async () => {
 						var a;
 						if (r && !d) {
-							await s(1), y(!0);
+							await m(1), y(!0);
 							const i = null === (a = null == t ? void 0 : t.current) || void 0 === a ? void 0 : a.getBoundingClientRect();
 							if (!i) return y(!1), void x();
-							e(i.width), f(i), await s(0), f({
+							e(i.width), f(i), await m(0), f({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await s(200), c(!0), f({
+							}), await m(200), c(!0), f({
 								left: 0,
 								width: window.innerWidth,
 								top: 0,
 								height: window.innerHeight
-							}), await s(300), E(!0), await s(2e3), E(!1), f({
+							}), await m(300), A(!0), await m(2e3), A(!1), f({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await s(300), c(!1), f(i), await s(200), x(), y(!1)
+							}), await m(300), c(!1), f(i), await m(200), x(), y(!1)
 						}
 					})()
-				}, [d, r, x]), o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-					className: Object(m.a)(h.a.optionContainer)
-				}, Object(n.cloneElement)(a, {
+				}, [d, r, x]), n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+					className: Object(o.a)(h.a.optionContainer)
+				}, Object(k.cloneElement)(a, {
 					ref: t
-				})), r && o.a.createElement(A, {
+				})), r && n.a.createElement(G, {
 					background: p,
 					endsAt: i,
-					initialWidth: k,
+					initialWidth: s,
 					isAnimating: d,
 					isFullWidth: l,
-					isRaining: G,
+					isRaining: E,
 					overlayCustomStyles: {
 						padding: 0,
 						zIndex: 100
@@ -1405,77 +1421,70 @@
 					successMessage: B
 				}, a))
 			}
-			const G = `${x.a.assetPath}/img/econ/predictions/waiting@2x.png`,
-				E = `\n  ${x.a.assetPath}/img/econ/predictions/waiting.png,\n  ${G} 2x,\n  ${x.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`,
-				A = Object(l.a)(({
-					background: a,
-					children: i,
-					endsAt: r,
-					initialWidth: x,
-					isAnimating: t,
-					isFullWidth: s,
-					isRaining: l,
-					successMessage: p
-				}) => {
-					const [d, u] = Object(n.useState)(null);
-					return Object(n.useEffect)(() => {
-						l && d && d.play()
-					}, [d, l]), o.a.createElement("div", {
-						"data-testid": "success-animation",
-						className: Object(m.a)(h.a.animationContainer, {
-							[h.a.isAnimating]: t,
-							[h.a.isFullWidth]: s
-						}),
-						style: {
-							top: `${null==a?void 0:a.top}px`,
-							left: `${null==a?void 0:a.left}px`,
-							width: `${null==a?void 0:a.width}px`,
-							height: `${null==a?void 0:a.height}px`
+			const G = Object(e.a)(({
+				background: a,
+				children: i,
+				endsAt: r,
+				initialWidth: x,
+				isAnimating: m,
+				isFullWidth: e,
+				isRaining: p,
+				successMessage: d
+			}) => {
+				const [u, y] = Object(k.useState)(null);
+				return Object(k.useEffect)(() => {
+					p && u && u.play()
+				}, [u, p]), n.a.createElement("div", {
+					"data-testid": "success-animation",
+					className: Object(o.a)(h.a.animationContainer, {
+						[h.a.isAnimating]: m,
+						[h.a.isFullWidth]: e
+					}),
+					style: {
+						top: `${null==a?void 0:a.top}px`,
+						left: `${null==a?void 0:a.left}px`,
+						width: `${null==a?void 0:a.width}px`,
+						height: `${null==a?void 0:a.height}px`
+					}
+				}, n.a.createElement("div", {
+					className: Object(o.a)(h.a.confetti, {
+						[h.a.isShowing]: p
+					}),
+					ref: a => {
+						if (a && !a.children.length) {
+							const i = t.a.loadAnimation({
+								container: a,
+								renderer: "svg",
+								loop: !1,
+								animationData: c,
+								autoplay: !1,
+								rendererSettings: {
+									progressiveLoad: !0,
+									hideOnTransparent: !0
+								}
+							});
+							y(i)
 						}
-					}, o.a.createElement("div", {
-						className: Object(m.a)(h.a.confetti, {
-							[h.a.isShowing]: l
-						}),
-						ref: a => {
-							if (a && !a.children.length) {
-								const i = k.a.loadAnimation({
-									container: a,
-									renderer: "svg",
-									loop: !1,
-									animationData: c,
-									autoplay: !1,
-									rendererSettings: {
-										progressiveLoad: !0,
-										hideOnTransparent: !0
-									}
-								});
-								u(i)
-							}
-						}
-					}), o.a.createElement("div", {
-						className: h.a.animatedOptionContainer,
-						style: {
-							width: `${x}px`
-						}
-					}, o.a.createElement("img", {
-						className: h.a.image,
-						srcSet: E,
-						src: G,
-						alt: f._("Snoos gazing into a crystal ball", null, {
-							hk: "1XM1Zp"
-						})
-					}), i, o.a.createElement("h1", {
-						className: h.a.splashText
-					}, p), o.a.createElement("div", {
-						className: h.a.timer
-					}, o.a.createElement("h4", {
-						className: h.a.timerLabel
-					}, f._("Prediction ends in", null, {
-						hk: "gsPdK"
-					})), o.a.createElement("h3", {
-						className: h.a.timerValue
-					}, Object(e.a)(new Date(r), !1, !0)))))
-				})
+					}
+				}), n.a.createElement("div", {
+					className: h.a.animatedOptionContainer,
+					style: {
+						width: `${x}px`
+					}
+				}, n.a.createElement(l.a, {
+					className: h.a.image
+				}), i, n.a.createElement("h1", {
+					className: h.a.splashText
+				}, d), n.a.createElement("div", {
+					className: h.a.timer
+				}, n.a.createElement("h4", {
+					className: h.a.timerLabel
+				}, f._("Prediction ends in", null, {
+					hk: "gsPdK"
+				})), n.a.createElement("h3", {
+					className: h.a.timerValue
+				}, Object(s.a)(new Date(r), !1, !0)))))
+			})
 		},
 		"./src/reddit/controls/LoadingIcon/index.m.less": function(a, i, r) {
 			a.exports = {
@@ -2057,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ac1de3f61ff6bd52c1fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.157e82372dc212e995dd.js.map
