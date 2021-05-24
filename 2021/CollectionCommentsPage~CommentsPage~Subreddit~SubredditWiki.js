@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5de882cfd5607927f82b.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c9cfe7711c761fefa3d5.js
+// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1525,7 +1525,7 @@
 				g = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				_ = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const x = Object(_.a)(f.Ab);
+			const x = Object(_.a)(f.Bb);
 			var v = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				y = r("./src/reddit/selectors/subreddit.ts"),
 				w = r("./src/reddit/selectors/user.ts"),
@@ -3967,4 +3967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5de882cfd5607927f82b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c9cfe7711c761fefa3d5.js.map

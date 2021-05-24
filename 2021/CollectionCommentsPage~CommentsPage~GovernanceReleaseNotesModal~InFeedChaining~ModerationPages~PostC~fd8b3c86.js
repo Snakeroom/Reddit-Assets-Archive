@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.2a61185bd1223b051677.js
-// Retrieved at 5/19/2021, 7:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.574316dd45489fc2e829.js
+// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -17,16 +17,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.qc
+					experimentName: u.rc
 				});
-				return Object(u.Hd)(t) ? void 0 : t
+				return Object(u.Id)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.rc
+					experimentName: u.sc
 				});
-				return Object(u.Hd)(t) ? void 0 : t
-			}, (e, t) => e === u.sc.Enabled && t === u.sc.Enabled);
+				return Object(u.Id)(t) ? void 0 : t
+			}, (e, t) => e === u.tc.Enabled && t === u.tc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -554,24 +554,24 @@
 					K = Object(i.useRef)(null),
 					Y = Object(i.useRef)(null),
 					[$, z] = Object(i.useState)(W ? F : -1),
-					[q, J] = Object(i.useState)(W ? F : -1),
+					[J, q] = Object(i.useState)(W ? F : -1),
 					Q = Object(r.a)(W),
 					X = Object(r.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== Q && Q !== W && W && $ < 0 && q < 0 || void 0 !== X && X !== F && W && ($ > F || q < F)) && (z(_(F, 1)), J(R(F, p.length, 1)))
-				}, [Q, F, W, $, q, X, p.length, A]);
+					(void 0 !== Q && Q !== W && W && $ < 0 && J < 0 || void 0 !== X && X !== F && W && ($ > F || J < F)) && (z(_(F, 1)), q(R(F, p.length, 1)))
+				}, [Q, F, W, $, J, X, p.length, A]);
 				const Z = Object(i.useRef)(),
 					ee = Object(i.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
 							} = e;
-							t ? ($ < 0 || q - $ == 0) && (Z.current = setTimeout(() => {
-								const e = R(q, p.length);
-								e !== q && J(e)
-							}, 1e3)) : ($ < 0 || q - $ == 0) && clearTimeout(Z.current)
+							t ? ($ < 0 || J - $ == 0) && (Z.current = setTimeout(() => {
+								const e = R(J, p.length);
+								e !== J && q(e)
+							}, 1e3)) : ($ < 0 || J - $ == 0) && clearTimeout(Z.current)
 						})
-					}, [$, q, p.length]);
+					}, [$, J, p.length]);
 				Object(a.a)(Y, ee);
 				const te = Object(i.useCallback)(e => {
 						t(Object(x.f)({
@@ -591,12 +591,12 @@
 					ne = Object(i.useCallback)(() => {
 						if (!U) return;
 						const e = F + 1;
-						if (e + 1 >= q) {
-							const e = R(q, p.length);
-							e !== q && J(e)
+						if (e + 1 >= J) {
+							const e = R(J, p.length);
+							e !== J && q(e)
 						}
 						te(e), G(u.b(A, e)), G(u.d(A, e + 1)), se()
-					}, [U, F, se, te, G, A, q, p.length]),
+					}, [U, F, se, te, G, A, J, p.length]),
 					oe = Object(i.useCallback)(() => {
 						if (!H) return;
 						const e = F - 1;
@@ -680,7 +680,7 @@
 						u = Object(y.d)(b, d);
 					if (!u) return null;
 					const m = e.shouldBlur && Object(y.d)(b, o.o || []) || void 0,
-						h = s >= $ && s <= q;
+						h = s >= $ && s <= J;
 					return n.a.createElement(L, {
 						slideIndex: s,
 						currentIndex: F,
@@ -1051,8 +1051,8 @@
 				Y = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
 				$ = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				z = s("./src/reddit/models/Media/index.ts"),
-				q = s("./src/reddit/selectors/experiments/econ/predictions.ts"),
-				J = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				J = s("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				q = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				Q = s("./src/reddit/selectors/media.ts"),
 				X = s("./src/reddit/selectors/postCreations.ts"),
 				Z = s("./src/reddit/selectors/posts.ts"),
@@ -1114,11 +1114,11 @@
 				}) => !!e.media && ge.has(e.media.type),
 				fe = Object(F.t)(),
 				Ee = Object(u.c)({
-					imgOCRAltTextVariant: (e, t) => Object(ee.e)(e, t) ? Object(J.b)(e, t.post, !0) : void 0,
+					imgOCRAltTextVariant: (e, t) => Object(ee.e)(e, t) ? Object(q.b)(e, t.post, !0) : void 0,
 					OCRAltText: (e, {
 						post: t
-					}) => Object(J.a)(e, t.id),
-					subredditOrProfileDisplayText: (e, t) => Object(J.k)(e, t),
+					}) => Object(q.a)(e, t.id),
+					subredditOrProfileDisplayText: (e, t) => Object(q.k)(e, t),
 					subredditOrProfile: (e, {
 						post: t
 					}) => Object(Z.R)(e, {
@@ -1132,7 +1132,7 @@
 					shouldShowAltText: (e, t) => Object(ee.e)(e, t),
 					isPredictionsTournament: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(q.i)(e),
+					}) => Boolean(t.predictionTournament) && Object(J.i)(e),
 					isGalleryTileLayout: (e, {
 						shouldShowGalleryTileOption: t,
 						post: s,
@@ -1290,7 +1290,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === B.ic.OCR ? o += `${de}${t}` : s.title && (o += `${de}${s.title}`), e === B.ic.ShortPostTitleOCR && (o += `${de}${t}`), o.length > re ? Object(y.a)(o, re, p.db) : o
+					return i && (o += i), e === B.jc.OCR ? o += `${de}${t}` : s.title && (o += `${de}${s.title}`), e === B.jc.ShortPostTitleOCR && (o += `${de}${t}`), o.length > re ? Object(y.a)(o, re, p.db) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -1407,8 +1407,8 @@
 						W = S,
 						{
 							source: F,
-							obfuscated: q,
-							height: J,
+							obfuscated: J,
+							height: q,
 							width: Q,
 							needsBackgroundBlur: X
 						} = this.getMediaInfo(this.props, this.state),
@@ -1416,7 +1416,7 @@
 							showCentered: p,
 							isListing: d,
 							showFull: b,
-							height: J,
+							height: q,
 							width: Q
 						},
 						ee = {
@@ -1428,8 +1428,8 @@
 						te = this.shouldBlur(),
 						se = !((null === (e = h.pollData) || void 0 === e ? void 0 : e.isPrediction) && !o),
 						re = !(!h.isSponsored || !h.source);
-					if (q && te) return l.a.createElement(M.a, ne({}, ee, {
-						blurSrc: q
+					if (J && te) return l.a.createElement(M.a, ne({}, ee, {
+						blurSrc: J
 					}), l.a.createElement(he, {
 						isVisible: E
 					}, l.a.createElement(L.a, ne({}, Z, {
@@ -1444,7 +1444,7 @@
 						onClick: this.onClickRevealBlurred,
 						postId: h.id,
 						shouldBlur: te,
-						source: q,
+						source: J,
 						outboundUrl: re && h.source.outboundUrl || void 0,
 						originalSource: F
 					}))));
@@ -1543,11 +1543,11 @@
 								title: h.title
 							}) : l.a.createElement(M.a, ne({}, ee, {
 								alwaysWrapMedia: !0,
-								height: a ? J : z.j,
+								height: a ? q : z.j,
 								width: a ? Q : z.j * (16 / 9)
 							}), E && l.a.createElement(T.a, {
 								childRef: this.storeChildRef,
-								height: a ? J : z.j,
+								height: a ? q : z.j,
 								width: a ? Q : void 0,
 								isListing: d,
 								isResponsive: !0,
@@ -1567,9 +1567,9 @@
 								fullWidth: h.media.provider === z.v.IFrameEmbed
 							})));
 						case z.o.GIFVIDEO: {
-							let e = J,
+							let e = q,
 								t = Q;
-							return e > z.j && (t = Q / J * (e = z.j)), l.a.createElement(M.a, ne({}, ee, {
+							return e > z.j && (t = Q / q * (e = z.j)), l.a.createElement(M.a, ne({}, ee, {
 								blurSrc: X ? h.media.gifBackgroundImage : void 0
 							}), l.a.createElement(he, {
 								isVisible: E
@@ -1673,11 +1673,11 @@
 							}))));
 						case z.o.GALLERY:
 							const k = Object(G.b)(h.media.mediaMetadata || {}, Object(G.c)(d), z.p, Q),
-								q = Object(G.a)(h.media.gallery, h.isSponsored);
+								J = Object(G.a)(h.media.gallery, h.isSponsored);
 							return l.a.createElement(M.a, ne({}, ee, {
 								blurSrc: X ? F : void 0,
 								isExpando: !!a,
-								maxGalleryHeight: k + q,
+								maxGalleryHeight: k + J,
 								className: ie.a.galleryMediaContainer,
 								isGalleryTileLayout: r
 							}), l.a.createElement(he, {
@@ -1690,7 +1690,7 @@
 								galleryItems: h.media.gallery ? h.media.gallery.items : [],
 								mediaMetadata: h.media.mediaMetadata || {},
 								imageHeight: k,
-								captionHeight: q,
+								captionHeight: J,
 								isSponsored: h.isSponsored,
 								className: this.props.imageBoxClassName,
 								isListing: d,
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.2a61185bd1223b051677.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.574316dd45489fc2e829.js.map

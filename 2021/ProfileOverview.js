@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.4be48fa6628021635e13.js
-// Retrieved at 5/24/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.cd0eb8a30a0a57282333.js
+// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -1072,7 +1072,7 @@
 						postId: je,
 						postIds: Ie,
 						onceInViewport: we
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Se = Ee ? void 0 : u, Le = Object(c.a)(ae), ke = de && Le, Ne = Object(a.a)(ae), Te = Object(d.a)(ae), Me = Object(A.c)(ue), _e = !!ue.media && ue.media.type === f.o.RTJSON, Fe = Oe && _e, Re = s ? s - K.a : void 0, Ae = !(W && G || te), Be = (e => e === Y.Jc.OnlyTitles)(he) && !Object(oe.a)(ue), Ve = (e => e === Y.Jc.MediumHeight)(he) && !Object(oe.a)(ue), Ke = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Se = Ee ? void 0 : u, Le = Object(c.a)(ae), ke = de && Le, Ne = Object(a.a)(ae), Te = Object(d.a)(ae), Me = Object(A.c)(ue), _e = !!ue.media && ue.media.type === f.o.RTJSON, Fe = Oe && _e, Re = s ? s - K.a : void 0, Ae = !(W && G || te), Be = (e => e === Y.Kc.OnlyTitles)(he) && !Object(oe.a)(ue), Ve = (e => e === Y.Kc.MediumHeight)(he) && !Object(oe.a)(ue), Ke = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -1087,7 +1087,7 @@
 							hasBottomCompactPostStyles: n,
 							showPinnnedHeader: r
 						}
-					})(e), He = !!se && !Object(Y.Hd)(se), De = (!O || He) && !ue.isSponsored, We = Object(I.t)(ue, y), {
+					})(e), He = !!se && !Object(Y.Id)(se), De = (!O || He) && !ue.isSponsored, We = Object(I.t)(ue, y), {
 						source: Ue
 					} = We, Ge = Object(o.useRef)(null), qe = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3275,7 +3275,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.rb
 				});
-				return !(!t || Object(o.Hd)(t))
+				return !(!t || Object(o.Id)(t))
 			}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -3488,4 +3488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.4be48fa6628021635e13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.cd0eb8a30a0a57282333.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.f679aa5e17fb1b0e6776.js
-// Retrieved at 5/19/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.e94863b0bcb86773a528.js
+// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2955,12 +2955,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.rd.SmIcon:
+						case b.sd.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.rd.SmIconHc:
+						case b.sd.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4798,12 +4798,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.kd
+						experimentName: s.ld
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.rd.SmIcon || t === s.rd.SmIconHc
+					return t === s.sd.SmIcon || t === s.sd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4826,4 +4826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.f679aa5e17fb1b0e6776.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.e94863b0bcb86773a528.js.map
