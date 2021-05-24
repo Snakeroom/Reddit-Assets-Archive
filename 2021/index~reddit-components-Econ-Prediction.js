@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fc0f03bcf9cf88633389.js
-// Retrieved at 5/19/2021, 7:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e77bc6097ea31efe9a62.js
+// Retrieved at 5/24/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -763,8 +763,8 @@
 				M = r.n(N),
 				L = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				z = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				q = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
-				H = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				H = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
+				q = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				U = r("./src/reddit/selectors/subreddit.ts"),
 				R = r("./src/reddit/components/Econ/Prediction/PredictionModal/TournamentModal/index.m.less"),
 				W = r.n(R);
@@ -779,13 +779,13 @@
 				subredditId: n
 			}) {
 				const o = Object(z.b)(),
-					m = Object(k.e)(a => Object(H.d)(a, {
+					m = Object(k.e)(a => Object(q.d)(a, {
 						subredditId: n
 					})),
 					s = Object(k.e)(a => Object(U.U)(a, {
 						subredditId: n
 					})),
-					e = Object(q.a)({
+					e = Object(H.a)({
 						shouldHideNsfwIcon: !1,
 						subredditOrProfile: s
 					}),
@@ -874,7 +874,7 @@
 				tournamentId: B,
 				userCoins: D
 			}) => {
-				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, C] = Object(x.useState)(!1), [j, I] = Object(x.useState)(!1), [N, L] = Object(x.useState)(!1), z = Object(u.a)(), q = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], U = B ? v && V === v.length - 1 : F && V === F.length - 1, R = !!F || "COINS" === (null == H ? void 0 : H.currency), W = R && D < ((null == q ? void 0 : q.coins) || (null == H ? void 0 : H.amount) || 0), K = !!H && null !== S && S < H.amount, X = null == q ? void 0 : q.coins, Z = null == H ? void 0 : H.amount, $ = W || K, aa = $ || U, ia = Object(x.useCallback)(async () => {
+				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, C] = Object(x.useState)(!1), [j, I] = Object(x.useState)(!1), [N, L] = Object(x.useState)(!1), z = Object(u.a)(), H = null == F ? void 0 : F[V], q = null == v ? void 0 : v[V], U = B ? v && V === v.length - 1 : F && V === F.length - 1, R = !!F || "COINS" === (null == q ? void 0 : q.currency), W = R && D < ((null == H ? void 0 : H.coins) || (null == q ? void 0 : q.amount) || 0), K = !!q && null !== S && S < q.amount, X = null == H ? void 0 : H.coins, Z = null == q ? void 0 : q.amount, $ = W || K, aa = $ || U, ia = Object(x.useCallback)(async () => {
 					try {
 						const i = await a(G);
 						P(i)
@@ -949,8 +949,8 @@
 					className: M.a.modalWrapper
 				}, t.a.createElement(_, {
 					onCancel: xa,
-					selectedChipPack: H,
-					selectedCoinPack: q
+					selectedChipPack: q,
+					selectedCoinPack: H
 				}), t.a.createElement("div", {
 					className: M.a.modalContent
 				}, n && t.a.createElement(w, {
@@ -973,17 +973,17 @@
 					}
 				}, t.a.createElement(h.a, {
 					className: M.a.wagerSelectorButtonIcon
-				})), q ? t.a.createElement("div", {
+				})), H ? t.a.createElement("div", {
 					className: M.a.wagerSelectorAmount
 				}, t.a.createElement(p.a, {
 					className: M.a.coinIcon
-				}), " ", q.coins ? q.coins : Y._("Free", null, {
+				}), " ", H.coins ? H.coins : Y._("Free", null, {
 					hk: "2EqRoV"
-				})) : H ? t.a.createElement("div", {
+				})) : q ? t.a.createElement("div", {
 					className: M.a.wagerSelectorAmount
-				}, H.amount > 0 ? t.a.createElement(t.a.Fragment, null, t.a.createElement(l.a, {
+				}, q.amount > 0 ? t.a.createElement(t.a.Fragment, null, t.a.createElement(l.a, {
 					className: M.a.tokenIcon
-				}), " ", H.amount) : Y._("Free", null, {
+				}), " ", q.amount) : Y._("Free", null, {
 					hk: "1fDvBk"
 				})) : t.a.createElement(c.a, {
 					className: M.a.loadingIcon,
@@ -1014,9 +1014,9 @@
 					}),
 					disabled: !F && !v || k || K,
 					onClick: a => {
-						a.preventDefault(), (q || H) && s({
-							coinPackage: q,
-							chipPackage: H
+						a.preventDefault(), (H || q) && s({
+							coinPackage: H,
+							chipPackage: q
 						})
 					}
 				}, k ? t.a.createElement(c.a, {
@@ -1954,6 +1954,55 @@
 				d: "M10.3785 4.86328H14.9734C15.6086 4.86328 16.1221 4.3498 16.1221 3.71456V1.41713C16.1221 0.781889 15.6086 0.268413 14.9734 0.268413H10.3785H5.78363H1.18876C0.554665 0.268413 0.0400391 0.781889 0.0400391 1.41713V3.71456C0.0400391 4.3498 0.554665 4.86328 1.18876 4.86328H5.78363H10.3785Z"
 			})))
 		},
+		"./src/reddit/selectors/experiments/econ/predictions.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "f", (function() {
+				return k
+			})), r.d(i, "i", (function() {
+				return n
+			})), r.d(i, "e", (function() {
+				return o
+			})), r.d(i, "g", (function() {
+				return m
+			})), r.d(i, "c", (function() {
+				return s
+			})), r.d(i, "h", (function() {
+				return e
+			})), r.d(i, "d", (function() {
+				return l
+			})), r.d(i, "b", (function() {
+				return c
+			})), r.d(i, "a", (function() {
+				return p
+			}));
+			var x = r("./src/reddit/constants/experiments.ts"),
+				t = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const k = Object(t.a)(x.Db),
+				n = Object(t.a)(x.Gb),
+				o = Object(t.a)(x.Bb),
+				m = Object(t.a)(x.Eb),
+				s = Object(t.a)(x.Cb),
+				e = Object(t.a)(x.Fb),
+				l = Object(t.a)(x.Hb),
+				c = Object(t.a)(x.vb),
+				p = Object(t.a)(x.ub);
+			Object(t.a)(x.wb)
+		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "a", (function() {
+				return k
+			}));
+			var x = r("./src/reddit/constants/experiments.ts"),
+				t = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const k = a => i => {
+				const r = Object(t.c)(i, {
+					experimentEligibilitySelector: t.a,
+					experimentName: a
+				});
+				return !(!r || Object(x.Hd)(r))
+			}
+		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "b", (function() {
@@ -2008,4 +2057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fc0f03bcf9cf88633389.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e77bc6097ea31efe9a62.js.map

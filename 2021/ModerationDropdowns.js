@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.965a6c8fb86b48e1f6d2.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.a22b9952fdafa53a6dd0.js
+// Retrieved at 5/24/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -2343,21 +2343,6 @@
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const r = Object(n.a)(o.yb)
 		},
-		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			}));
-			var o = s("./src/reddit/constants/experiments.ts"),
-				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const r = e => t => {
-				const s = Object(n.c)(t, {
-					experimentEligibilitySelector: n.a,
-					experimentName: e
-				});
-				return !(!s || Object(o.Hd)(s))
-			}
-		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
@@ -2406,4 +2391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.965a6c8fb86b48e1f6d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.a22b9952fdafa53a6dd0.js.map

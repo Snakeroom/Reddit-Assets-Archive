@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.2c9b343126da5588e990.js
-// Retrieved at 5/19/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9a54c9bcbcd0351d0ef7.js
+// Retrieved at 5/24/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3023,40 +3023,6 @@
 					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
 				}(r || (r = {}))
 		},
-		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "f", (function() {
-				return o
-			})), n.d(t, "i", (function() {
-				return i
-			})), n.d(t, "e", (function() {
-				return a
-			})), n.d(t, "g", (function() {
-				return d
-			})), n.d(t, "c", (function() {
-				return c
-			})), n.d(t, "h", (function() {
-				return l
-			})), n.d(t, "d", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "a", (function() {
-				return h
-			}));
-			var r = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.Db),
-				i = Object(s.a)(r.Gb),
-				a = Object(s.a)(r.Bb),
-				d = Object(s.a)(r.Eb),
-				c = Object(s.a)(r.Cb),
-				l = Object(s.a)(r.Fb),
-				u = Object(s.a)(r.Hb),
-				m = Object(s.a)(r.vb),
-				h = Object(s.a)(r.ub);
-			Object(s.a)(r.wb)
-		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -3252,4 +3218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.2c9b343126da5588e990.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.9a54c9bcbcd0351d0ef7.js.map

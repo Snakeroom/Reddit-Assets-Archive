@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.c8d2c74619661912780a.js
-// Retrieved at 5/19/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.1f107eff1cd39b455af8.js
+// Retrieved at 5/24/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -5181,40 +5181,6 @@
 				experimentName: s.ob
 			})
 		},
-		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "f", (function() {
-				return i
-			})), n.d(t, "i", (function() {
-				return a
-			})), n.d(t, "e", (function() {
-				return o
-			})), n.d(t, "g", (function() {
-				return d
-			})), n.d(t, "c", (function() {
-				return c
-			})), n.d(t, "h", (function() {
-				return l
-			})), n.d(t, "d", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "a", (function() {
-				return p
-			}));
-			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(r.a)(s.Db),
-				a = Object(r.a)(s.Gb),
-				o = Object(r.a)(s.Bb),
-				d = Object(r.a)(s.Eb),
-				c = Object(r.a)(s.Cb),
-				l = Object(r.a)(s.Fb),
-				u = Object(r.a)(s.Hb),
-				m = Object(r.a)(s.vb),
-				p = Object(r.a)(s.ub);
-			Object(r.a)(s.wb)
-		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -5266,4 +5232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.c8d2c74619661912780a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.1f107eff1cd39b455af8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.d81481afea475563bc00.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.3206d0821882272b5097.js
+// Retrieved at 5/24/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6598,17 +6598,12 @@
 		"./src/reddit/components/PostTopLine/index.m.less": function(e, t, s) {
 			e.exports = {
 				everythingElseWrapper: "cZPZhMe-UCZ8htPodMyJ5",
-				eventMeta: "_28_NUs_O8Nh1DCErsNLCHk",
 				outboundLinkIcon: "_3z6z1xnp828wcarJXfzzjr",
 				postBadges: "_2wFk1qX4e1cxk8Pkw1rAHk",
 				postTopMeta: "nU4Je7n-eSXStTBAPMYt8",
 				subredditIcon: "_1WX5Y5qFVBTdr6hCPpARDB",
 				subredditIconWrapper: "_2dr_3pZUCk8KfJ-x0txT_l",
-				Container: "BiNC74axuTz66dlnEgicY",
-				container: "BiNC74axuTz66dlnEgicY",
-				PostOverflow: "_2tLA78PLrLx5lz5Jj6cR",
-				postOverflow: "_2tLA78PLrLx5lz5Jj6cR",
-				bulkActionCheckbox: "_3X709ZHnDjH0Rwz3pMTv40",
+				container: "_14-YvdFiW5iVvfe5wdgmET",
 				SubscribeButton: "_35dG7dsi4xKTT-_2MB74qq",
 				subscribeButton: "_35dG7dsi4xKTT-_2MB74qq"
 			}
@@ -6618,104 +6613,104 @@
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
 				r = s.n(n),
-				i = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/components/AwardBadges/index.tsx"),
-				d = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				c = s("./src/reddit/components/NotificationButton/index.tsx"),
-				l = s("./src/reddit/components/PostBadges/index.tsx"),
-				m = s("./src/reddit/components/PostTopMeta/index.tsx"),
-				p = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				u = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				h = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				b = s("./src/reddit/constants/posts.ts"),
-				g = s("./src/reddit/controls/Button/index.tsx"),
-				f = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				x = s("./src/reddit/helpers/trackers/post.ts"),
-				C = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				v = s("./src/reddit/models/Media/index.ts"),
-				y = s("./src/reddit/models/Subreddit/index.ts"),
-				k = s("./src/reddit/components/PostTopLine/index.m.less"),
-				O = s.n(k);
-			const w = s("./src/lib/lessComponent.tsx").a.div("Container", O.a);
-			t.a = e => {
-				const {
-					className: t,
-					flairStyleTemplate: s,
-					forceOpenInNewTab: n,
-					hideAwards: k,
-					hideNSFWPref: E,
-					hostPostData: P,
-					iconClassName: j,
-					inSubredditOrProfile: _,
-					isCommentsPage: I,
-					isCompactPinnedPost: S,
-					isCurrentUserProfilePost: L,
-					isOverlay: T,
-					isTopicPage: N,
-					listingKey: M,
-					post: F,
-					shouldShowSubscribeButton: A,
-					showCornerOutboundLink: R,
-					showSubreddit: B,
-					showSubredditIcon: D,
-					subredditOrProfile: V,
-					isFollowed: H,
-					shouldShowFollowButton: W,
-					onFollowPostClick: U
-				} = e, K = k || N;
-				return r.a.createElement(w, {
-					className: t
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/components/AwardBadges/index.tsx"),
+				c = s("./src/reddit/components/JSAPIContainers/index.tsx"),
+				l = s("./src/reddit/components/NotificationButton/index.tsx"),
+				m = s("./src/reddit/components/PostBadges/index.tsx"),
+				p = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				u = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				h = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				b = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				g = s("./src/reddit/constants/posts.ts"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				x = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				C = s("./src/reddit/helpers/trackers/post.ts"),
+				v = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				y = s("./src/reddit/models/Media/index.ts"),
+				k = s("./src/reddit/models/Subreddit/index.ts"),
+				O = s("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				w = s("./src/reddit/components/PostTopLine/index.m.less"),
+				E = s.n(w);
+			t.a = ({
+				className: e,
+				flairStyleTemplate: t,
+				forceOpenInNewTab: s,
+				hideAwards: n,
+				hideNSFWPref: w,
+				hostPostData: P,
+				iconClassName: j,
+				inSubredditOrProfile: _,
+				isCommentsPage: I,
+				isCompactPinnedPost: S,
+				isCurrentUserProfilePost: L,
+				isOverlay: T,
+				isTopicPage: N,
+				listingKey: M,
+				post: F,
+				shouldShowSubscribeButton: A,
+				showCornerOutboundLink: R,
+				showSubreddit: B,
+				showSubredditIcon: D,
+				subredditOrProfile: V,
+				isFollowed: H,
+				shouldShowFollowButton: W,
+				onFollowPostClick: U
+			}) => {
+				const K = n || N;
+				return Object(i.e)(e => Boolean(F.predictionTournament) && Object(O.i)(e)) ? null : r.a.createElement("div", {
+					className: Object(a.a)(E.a.container, e)
 				}, B && V && r.a.createElement("div", {
-					className: O.a.subredditIconWrapper
-				}, r.a.createElement(u.a, {
+					className: E.a.subredditIconWrapper
+				}, r.a.createElement(h.a, {
 					"data-click-id": "subreddit",
 					to: V.url
-				}, D && r.a.createElement(p.b, {
-					className: Object(i.a)(O.a.subredditIcon, j),
-					shouldHideNsfwIcon: E,
+				}, D && r.a.createElement(u.b, {
+					className: Object(a.a)(E.a.subredditIcon, j),
+					shouldHideNsfwIcon: w,
 					subredditOrProfile: V
 				}))), r.a.createElement("div", {
-					className: O.a.everythingElseWrapper
-				}, B && r.a.createElement(d.h, {
+					className: E.a.everythingElseWrapper
+				}, B && r.a.createElement(c.h, {
 					type: F.belongsTo.type,
 					id: F.belongsTo.id
-				}), r.a.createElement(m.d, {
-					className: O.a.postTopMeta,
-					forceOpenInNewTab: n,
-					flairStyleTemplate: s,
-					tooltipType: T ? m.c.Lightbox : void 0,
+				}), r.a.createElement(p.d, {
+					className: E.a.postTopMeta,
+					forceOpenInNewTab: s,
+					flairStyleTemplate: t,
+					tooltipType: T ? p.c.Lightbox : void 0,
 					post: F,
 					showSub: B,
 					subredditOrProfile: V
-				}), r.a.createElement(l.a, {
-					className: O.a.postBadges,
+				}), r.a.createElement(m.a, {
+					className: E.a.postBadges,
 					displayText: V ? V.displayText : null,
 					inSubredditOrProfile: _,
 					isCompactPinnedPost: S,
 					post: F,
-					tooltipType: T ? m.c.Lightbox : void 0
-				}), !K && r.a.createElement(a.a, {
+					tooltipType: T ? p.c.Lightbox : void 0
+				}), !K && r.a.createElement(d.a, {
 					isPostDetail: I,
 					thing: F,
-					tooltipType: T ? m.c.Lightbox : void 0
-				})), V && B && A && !L && r.a.createElement(h.a, {
-					className: O.a.SubscribeButton,
-					getEventFactory: e => Object(x.g)(F.id, e ? "unsubscribe" : "subscribe", "post", M, P),
+					tooltipType: T ? p.c.Lightbox : void 0
+				})), V && B && A && !L && r.a.createElement(b.a, {
+					className: E.a.SubscribeButton,
+					getEventFactory: e => Object(C.g)(F.id, e ? "unsubscribe" : "subscribe", "post", M, P),
 					identifier: {
 						name: V.name,
-						type: Object(y.h)(V) ? b.a.PROFILE : b.a.SUBREDDIT
+						type: Object(k.h)(V) ? g.a.PROFILE : g.a.SUBREDDIT
 					},
 					postId: F.id,
-					size: g.c.XS
-				}), R && r.a.createElement(f.b, {
-					className: O.a.OutboundLink,
+					size: f.c.XS
+				}), R && r.a.createElement(x.b, {
 					isSponsored: F.isSponsored,
 					postId: F.id,
-					href: Object(v.D)(e.post),
+					href: Object(y.D)(F),
 					source: F.source
-				}, r.a.createElement(C.a, {
-					className: O.a.outboundLinkIcon
-				})), W && r.a.createElement(c.a, {
+				}, r.a.createElement(v.a, {
+					className: E.a.outboundLinkIcon
+				})), W && r.a.createElement(l.a, {
 					isFilled: !!H,
 					onClick: U,
 					hasTooltip: !0,
@@ -9215,4 +9210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d81481afea475563bc00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3206d0821882272b5097.js.map
