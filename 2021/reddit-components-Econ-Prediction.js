@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.84dd3c1296db6342c589.js
-// Retrieved at 5/24/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3940775deb0d20bed93c.js
+// Retrieved at 5/24/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -507,7 +507,14 @@
 						className: z.a.subtitle
 					}, Z._("Premium users can see how others have predicted before they make their own Prediction.", null, {
 						hk: "2mpEHX"
-					}))), r ? o.a.createElement("a", {
+					}))), r ? o.a.createElement("button", {
+						className: z.a.button,
+						onClick: () => {
+							e(), t()
+						}
+					}, Z._("Continue", null, {
+						hk: "3T00JU"
+					})) : o.a.createElement("a", {
 						className: z.a.link,
 						href: `${V.a.redditUrl}/premium`,
 						target: "_blank",
@@ -515,13 +522,6 @@
 						onClick: () => t()
 					}, Z._("Get Premium", null, {
 						hk: "3tW2d3"
-					})) : o.a.createElement("button", {
-						className: z.a.button,
-						onClick: () => {
-							e(), t()
-						}
-					}, Z._("Continue", null, {
-						hk: "3T00JU"
 					})), o.a.createElement("div", {
 						className: z.a.spacer
 					}), o.a.createElement("p", {
@@ -540,14 +540,16 @@
 					isEnded: t,
 					userSelection: n,
 					isShowingHint: s,
-					onReveal: i
+					tournamentId: i,
+					onReveal: c
 				}) => {
-					const c = Object(a.e)(g.f),
-						[l, u] = Object(r.useState)(!1),
-						m = Object(a.d)();
-					return Object(r.useEffect)(() => {
+					const [l, u] = Object(r.useState)(!1), m = Object(a.d)();
+					Object(r.useEffect)(() => {
 						m(Object(D.b)())
-					}, []), !c || t || n && !s ? null : o.a.createElement("div", {
+					}, [m]);
+					const p = !!i,
+						f = n && !s;
+					return Object(a.e)(e => !t && !f && p && Object(g.f)(e)) ? o.a.createElement("div", {
 						className: $.a.optionButtonWrapper
 					}, o.a.createElement("button", {
 						"aria-label": ee._("Sneak a peek", null, {
@@ -567,11 +569,11 @@
 					}, ee._("See what others think", null, {
 						hk: "2TLT90"
 					})))), l && o.a.createElement(K, {
-						onReveal: i,
+						onReveal: c,
 						closeModal: () => u(!1),
 						withOverlay: !0,
 						onOverlayClick: () => u(!1)
-					}))
+					})) : null
 				},
 				ne = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				re = n("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
@@ -914,6 +916,7 @@
 					isEnded: ae,
 					userSelection: ne,
 					isShowingHint: W,
+					tournamentId: ee,
 					onReveal: () => J(!0)
 				}), o.a.createElement("div", {
 					className: Pe.a.predictionsCount
@@ -1503,4 +1506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.84dd3c1296db6342c589.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3940775deb0d20bed93c.js.map
