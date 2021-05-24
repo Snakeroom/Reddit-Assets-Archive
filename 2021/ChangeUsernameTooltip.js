@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.382919216043f7c73e9c.js
-// Retrieved at 4/27/2021, 9:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.c694bc0b1a31a4065073.js
+// Retrieved at 5/24/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -11,6 +11,7 @@
 				title: "_3pcdqdRWruf7eepiLXw4CB",
 				username: "_1G1CITYgxpC6TIO7TGwhG3",
 				usernamePrefix: "_1Tq29ay6ogsCeK60Ouhv_q",
+				buttonWrapper: "lvHFLjGg76LoUfNXv4eik",
 				commonBtn: "_2c8uIH6hCLT9iEVO5N8-9o",
 				primaryBtn: "qUwq87ZWjStAxoxwoPOJA",
 				secondaryBtn: "MnLwM5PL1ET2BmK5lLIvR"
@@ -31,7 +32,7 @@
 				p = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				E = t("./src/reddit/components/ChangeUsernameTooltip/index.m.less"),
 				m = t.n(E);
-			class _ extends a.a.Component {
+			class N extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onChangeUsernameModalOpen = () => {
 						this.props.sendEvent(Object(l.d)(l.b, "change")), this.props.openChangeUsernameModal()
@@ -42,7 +43,7 @@
 					}
 				}
 				componentDidMount() {
-					_.shouldSendViewEvent && (_.shouldSendViewEvent = !1, this.props.sendEvent(Object(l.h)(l.b)))
+					N.shouldSendViewEvent && (N.shouldSendViewEvent = !1, this.props.sendEvent(Object(l.h)(l.b)))
 				}
 				render() {
 					return a.a.createElement("div", {
@@ -77,9 +78,9 @@
 					}))))
 				}
 			}
-			_.shouldSendViewEvent = !0;
-			const N = Object(i.a)(_, [r.a.Click, r.a.Keydown, r.a.Resize]);
-			n.default = Object(d.c)(N)
+			N.shouldSendViewEvent = !0;
+			const _ = Object(i.a)(N, [r.a.Click, r.a.Keydown, r.a.Resize]);
+			n.default = Object(d.c)(_)
 		},
 		"./src/reddit/helpers/trackers/changeUsername.ts": function(e, n, t) {
 			"use strict";
@@ -94,11 +95,11 @@
 			})), t.d(n, "g", (function() {
 				return O
 			})), t.d(n, "c", (function() {
-				return T
-			})), t.d(n, "i", (function() {
 				return U
-			})), t.d(n, "e", (function() {
+			})), t.d(n, "i", (function() {
 				return f
+			})), t.d(n, "e", (function() {
+				return T
 			})), t.d(n, "f", (function() {
 				return A
 			})), t.d(n, "j", (function() {
@@ -120,7 +121,7 @@
 			}(o || (o = {}));
 			const E = "popup",
 				m = "tooltip",
-				_ = e => {
+				N = e => {
 					if (!e) return o.UNKNOWN;
 					switch (e.type) {
 						case a.q:
@@ -130,7 +131,7 @@
 							if (e.payload === i.a.MULTIREDDIT_ADD_SUBREDDIT || e.payload === i.a.MULTIREDDIT_CREATE) return o.CUSTOM_FEED;
 							break;
 						case c.a: {
-							const n = N(e);
+							const n = _(e);
 							if (n.startsWith("/user/")) return o.PROFILE;
 							if (n.includes(u.b)) return o.POST;
 							break
@@ -138,12 +139,12 @@
 					}
 					return o.UNKNOWN
 				},
-				N = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
+				_ = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
 				C = (e, n) => t => ({
 					...Object(p.defaults)(t),
 					action: d.c.VIEW,
 					actionInfo: Object(p.actionInfo)(t, {
-						reason: n ? _(Object(l.a)(t)) : void 0
+						reason: n ? N(Object(l.a)(t)) : void 0
 					}),
 					noun: s.CHANGE_USERNAME_INITIAL,
 					source: e
@@ -163,7 +164,7 @@
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: E
 				}),
-				T = e => n => ({
+				U = e => n => ({
 					...Object(p.defaults)(n),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
@@ -172,13 +173,13 @@
 						buttonText: e
 					}
 				}),
-				U = () => e => ({
+				f = () => e => ({
 					...Object(p.defaults)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: E
 				}),
-				f = () => e => ({
+				T = () => e => ({
 					...Object(p.defaults)(e),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INPUT,
@@ -202,4 +203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.382919216043f7c73e9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.c694bc0b1a31a4065073.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.71f6309046c4c8732280.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.1754a9dcbc2d9e1be462.js
+// Retrieved at 5/24/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -159,10 +159,10 @@
 				P = () => s.fbt._("Sorry, this username is taken. Try another.", null, {
 					hk: "2HkykK"
 				}),
-				J = () => s.fbt._("Username must be between 3 and 20 characters.", null, {
+				H = () => s.fbt._("Username must be between 3 and 20 characters.", null, {
 					hk: "1V72yV"
 				}),
-				H = () => s.fbt._("Sorry, something went wrong. Try again later.", null, {
+				J = () => s.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "48Ga9f"
 				}),
 				V = {
@@ -176,7 +176,7 @@
 			class Y extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = V, this.checkUsername = async e => e.length < L || e.length > Q ? {
-						error: J(),
+						error: H(),
 						state: C.a.Invalid
 					} : e === this.props.initialUsername ? F : await this.validateUsername(e), this.validateUsername = async e => {
 						const {
@@ -191,7 +191,7 @@
 							error: s.error.fields[0].msg,
 							state: C.a.Invalid
 						} : {
-							error: H(),
+							error: J(),
 							state: C.a.Invalid
 						}
 					}, this.callCheckUsername = async e => {
@@ -266,8 +266,8 @@
 			}
 			var z = Object(E.b)(Y),
 				Z = n("./src/reddit/icons/svgs/Question/index.tsx"),
-				q = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
-			var W = e => (Object(a.useEffect)(e.onView, []), o.a.createElement(I.a, {
+				W = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
+			var q = e => (Object(a.useEffect)(e.onView, []), o.a.createElement(I.a, {
 					bodyClassName: R.a.confirmModalBody,
 					className: Object(A.a)(R.a.confirmModalContainer, {
 						[R.a["m-responsive"]]: e.isResponsive
@@ -277,7 +277,7 @@
 						[R.a.saveDescription]: e.isSaveConfirm
 					}),
 					headerClassName: R.a.confirmModalHeader,
-					icon: e.isSecondConfirm ? o.a.createElement(Z.a, null) : o.a.createElement(q.a, null),
+					icon: e.isSecondConfirm ? o.a.createElement(Z.a, null) : o.a.createElement(W.a, null),
 					iconClassName: Object(A.a)(R.a.confirmModalIcon, {
 						[R.a.questionIcon]: e.isSecondConfirm
 					}),
@@ -286,7 +286,9 @@
 					className: T.a.username
 				}, o.a.createElement("span", {
 					className: T.a.usernamePrefix
-				}, "u/"), e.username), o.a.createElement("div", null, o.a.createElement(S.i, {
+				}, "u/"), e.username), o.a.createElement("div", {
+					className: T.a.buttonWrapper
+				}, o.a.createElement(S.i, {
 					className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onPrimaryButtonClick
@@ -388,7 +390,7 @@
 					}))(e(), f);
 					t.ok ? (h(f, C), U(Object(X.j)())) : p(ie(t.error)), N(!1)
 				}, [e, C, U, p, h, f]);
-				return o.a.createElement(a.Fragment, null, m && o.a.createElement(W, {
+				return o.a.createElement(a.Fragment, null, m && o.a.createElement(q, {
 					description: s.fbt._("Before continuing, confirm that you want to keep this as your Reddit username.", null, {
 						hk: "14rKrO"
 					}),
@@ -405,7 +407,7 @@
 					primaryButtonText: ne,
 					secondaryButtonText: se,
 					username: f
-				}), A && o.a.createElement(W, {
+				}), A && o.a.createElement(q, {
 					description: s.fbt._("Ok, just to confirm your confirmation… Are you absolutely sure? This will be your name forever.", null, {
 						hk: "4lvkUG"
 					}),
@@ -443,7 +445,7 @@
 						hk: "17XB7v"
 					}),
 					username: f
-				}), i && o.a.createElement(W, {
+				}), i && o.a.createElement(q, {
 					description: s.fbt._("Are you sure? This will be your username forever.", null, {
 						hk: "3JACTO"
 					}),
@@ -475,6 +477,7 @@
 				title: "_3pcdqdRWruf7eepiLXw4CB",
 				username: "_1G1CITYgxpC6TIO7TGwhG3",
 				usernamePrefix: "_1Tq29ay6ogsCeK60Ouhv_q",
+				buttonWrapper: "lvHFLjGg76LoUfNXv4eik",
 				commonBtn: "_2c8uIH6hCLT9iEVO5N8-9o",
 				primaryBtn: "qUwq87ZWjStAxoxwoPOJA",
 				secondaryBtn: "MnLwM5PL1ET2BmK5lLIvR"
@@ -821,4 +824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.71f6309046c4c8732280.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.1754a9dcbc2d9e1be462.js.map
