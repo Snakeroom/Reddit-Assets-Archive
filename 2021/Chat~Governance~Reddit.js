@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6a5347f9dbc58786ee79.js
-// Retrieved at 5/24/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.037139da907195112fa5.js
+// Retrieved at 5/24/2021, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("134762"),
+				buildNumber: r("134773"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1621882389"),
+				})("1621883690"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4209,14 +4209,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c591473821adf3ac7b21ad2390de4062de05a5549-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c3919753d1c5dbdbcdfb992404c891c12d835afe0-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "591473821adf3ac7b21ad2390de4062de05a5549-production",
+						release: "3919753d1c5dbdbcdfb992404c891c12d835afe0-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4710,7 +4710,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "591473821adf3ac7b21ad2390de4062de05a5549-production",
+						releaseClient: "3919753d1c5dbdbcdfb992404c891c12d835afe0-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -18032,7 +18032,7 @@
 					d2x_language_es_es: [Dn.Enabled],
 					d2x_language_es_mx: [An.Enabled]
 				},
-				Bn = new Set([E, l, T, L, "guest_d2x_subreddit_subreddit_links_url", Z, ee, ie, re, le, ue, _e, be, X, Ce, Me, Je, st]),
+				Bn = new Set([E, l, T, L, "guest_d2x_subreddit_subreddit_links_url", Z, ee, ie, re, le, ue, _e, be, X, Ce, Me, Je, st, "shreddit_pdp_bucketing"]),
 				Ln = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
@@ -21605,7 +21605,8 @@
 				p = i("./src/reddit/selectors/telemetry.ts"),
 				m = i("./src/telemetry/index.ts"),
 				h = i("./src/telemetry/models/Event.ts");
-			const f = (e, t, i, n, r) => {
+			const f = e => Object(m.a)(e),
+				b = (e, t, i, n, r) => {
 					Object(m.a)({
 						action: h.d.Expose,
 						actionInfo: void 0,
@@ -21619,8 +21620,7 @@
 						user: t,
 						...r
 					})
-				},
-				b = e => Object(m.a)(e);
+				};
 			var g = i("./src/server/helpers/canonicalUrl.tsx");
 			const y = Object(n.a)(e => Object(a.f)(e), e => Object(g.a)(e), (e, t) => !!e && e === t),
 				w = (e, t) => {
@@ -21688,18 +21688,18 @@
 					const c = o || d || "",
 						u = (() => s)();
 					let _ = u[c];
-					if (_ || (_ = {}, u[c] = _), !e) return t && _[r] !== t && !1 !== n && (b(a), _[r] = t), t;
+					if (_ || (_ = {}, u[c] = _), !e) return t && _[r] !== t && !1 !== n && (f(a), _[r] = t), t;
 					const p = e.name,
 						m = void 0 !== t ? t : e.variant;
 					if (m) {
-						_[p] === m || !1 === n || (b(a), _[r] = m)
+						_[p] === m || !1 === n || (f(a), _[r] = m)
 					}
 					return m
 				}),
 				T = Object(n.a)(a.c, a.b, e => p.app(e), e => p.user(e), e => p.request(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), w, (e, t) => t.experimentName, (e, t, i, n, s, o, d = {}, a, l) => {
 					if (!a) return;
 					const c = (() => r)();
-					if (!e) return t && !1 !== o && c[l] !== t && !E.includes(l) && (f(i, n, s, {
+					if (!e) return t && !1 !== o && c[l] !== t && !E.includes(l) && (b(i, n, s, {
 						id: -1,
 						isOverride: !0,
 						name: l,
@@ -21715,7 +21715,7 @@
 					if (m) {
 						const t = -1 === _,
 							r = c[u] === m;
-						t || r || !1 === o || E.includes(l) || (f(i, n, s, {
+						t || r || !1 === o || E.includes(l) || (b(i, n, s, {
 							...e,
 							isOverride: p,
 							variant: m
@@ -21732,7 +21732,7 @@
 						d = void 0 !== o;
 					if (s) {
 						const e = d ? o : s.variant;
-						e && f(i, n, r, {
+						e && b(i, n, r, {
 							...s,
 							isOverride: d,
 							variant: e
@@ -46514,4 +46514,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6a5347f9dbc58786ee79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.037139da907195112fa5.js.map
