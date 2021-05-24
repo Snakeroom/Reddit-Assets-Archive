@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.34571321193a6ffb2f05.js
-// Retrieved at 5/19/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.b4f68adb3a9647cbefd8.js
+// Retrieved at 5/24/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2025,9 +2025,7 @@
 					isNpsScrollSurveyEnabled: w.d
 				},
 				E = Object(r.c)(k),
-				N = (e, {
-					isFrontpage: t
-				}) => ({
+				N = (e, t) => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -2036,15 +2034,15 @@
 						}))
 					},
 					openPost: s => {
-						t && e(Object(a.a)({
+						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
 						})), e(d.I(s))
 					},
 					fireAdPixelsOfType: (t, s) => {
 						e(d.x(t, s))
 					},
-					trackOnPostEnteredViewport: (t, s, n) => {
-						e(d.L(t, n))
+					trackOnPostEnteredViewport: (s, n, r) => {
+						e(d.L(s, r, t.hostPostData))
 					},
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
 						e(d.M(t, n, r, o))
@@ -2676,4 +2674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.34571321193a6ffb2f05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.b4f68adb3a9647cbefd8.js.map

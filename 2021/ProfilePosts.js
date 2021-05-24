@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.13d0cfc38887da974ee1.js
-// Retrieved at 5/20/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.ef4f1e925c83c2b6f66e.js
+// Retrieved at 5/24/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -6447,9 +6447,7 @@
 					isNpsScrollSurveyEnabled: x.d
 				},
 				S = Object(r.c)(j),
-				O = (e, {
-					isFrontpage: t
-				}) => ({
+				O = (e, t) => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(d.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -6458,15 +6456,15 @@
 						}))
 					},
 					openPost: s => {
-						t && e(Object(a.a)({
+						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
 						})), e(c.I(s))
 					},
 					fireAdPixelsOfType: (t, s) => {
 						e(c.x(t, s))
 					},
-					trackOnPostEnteredViewport: (t, s, n) => {
-						e(c.L(t, n))
+					trackOnPostEnteredViewport: (s, n, r) => {
+						e(c.L(s, r, t.hostPostData))
 					},
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
 						e(c.M(t, n, r, o))
@@ -7544,4 +7542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.13d0cfc38887da974ee1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ef4f1e925c83c2b6f66e.js.map
