@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.b0f301870211b97f8ddf.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.885578c1db03a101e742.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-OldPowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.b0f301870211b97f8ddf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.885578c1db03a101e742.js.map

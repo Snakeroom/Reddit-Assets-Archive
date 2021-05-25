@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e5a8939a43ae1663efb6.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4ee6a01b69285e84e4e6.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1265,6 +1265,8 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
+				return y
+			})), r.d(t, "b", (function() {
 				return f
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1287,8 +1289,9 @@
 				y = (e, t) => async (r, s, {
 					gqlContext: o
 				}) => {
-					try {
-						const s = await (async (e, t, r) => {
+					const d = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (d.length) try {
+						const t = await (async (e, t, r) => {
 							const s = await Object(c.a)(e, {
 								...n,
 								variables: {
@@ -1298,26 +1301,24 @@
 							});
 							if (!s.ok) throw new Error("Unable to fetch user achievements");
 							return s.body.data.subredditInfoById
-						})(o(), e, t);
-						await r(b(s))
-					} catch (d) {
-						a.c.captureException(d)
+						})(o(), e, d);
+						await r(b(t))
+					} catch (i) {
+						a.c.captureException(i)
 					}
 				}, f = (e, t) => async (r, s) => {
 					if (!e) return;
-					let a = s();
-					if (await r(Object(u.i)(e, {
-							fullData: !0
-						})), a = s(), !Object(o.a)(a) || !Object(l.g)(a, {
+					await r(Object(u.i)(e, {
+						fullData: !0
+					}));
+					const a = s();
+					if (!Object(o.a)(a) || !Object(l.g)(a, {
 							subredditId: e
-						})) return;
+						}) || !t) return;
 					const n = new Set;
-					t && Object.values(t).map(e => {
-						const {
-							authorId: t
-						} = e;
-						(null == t ? void 0 : t.trim()) && n.add(t)
-					}), n.size && await r(y(e, Array.from(n)))
+					Object.values(t).forEach(e => {
+						n.add(e.authorId)
+					}), await r(y(e, Array.from(n)))
 				}
 		},
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, r) {
@@ -21838,4 +21839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e5a8939a43ae1663efb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4ee6a01b69285e84e4e6.js.map

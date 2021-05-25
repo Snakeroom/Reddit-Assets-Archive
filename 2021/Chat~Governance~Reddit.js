@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba61db821c703f2a4d6e.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b371e838bf7c01a131e.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("134872"),
+				buildNumber: r("134877"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1621953910"),
+				})("1621956979"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4209,14 +4209,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ccd5effee86bed36123434b883637a6b7e84d0d9f-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2e300d4b0501274bc9eac8ebb032409161f09441-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "cd5effee86bed36123434b883637a6b7e84d0d9f-production",
+						release: "2e300d4b0501274bc9eac8ebb032409161f09441-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4710,7 +4710,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "cd5effee86bed36123434b883637a6b7e84d0d9f-production",
+						releaseClient: "2e300d4b0501274bc9eac8ebb032409161f09441-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -36627,44 +36627,46 @@
 				return u
 			})), i.d(t, "n", (function() {
 				return _
-			})), i.d(t, "o", (function() {
-				return p
 			})), i.d(t, "p", (function() {
-				return h
+				return p
 			})), i.d(t, "q", (function() {
-				return f
+				return h
 			})), i.d(t, "r", (function() {
+				return f
+			})), i.d(t, "o", (function() {
 				return b
-			})), i.d(t, "i", (function() {
-				return g
-			})), i.d(t, "h", (function() {
-				return y
-			})), i.d(t, "l", (function() {
-				return w
-			})), i.d(t, "m", (function() {
-				return v
-			})), i.d(t, "b", (function() {
-				return E
-			})), i.d(t, "a", (function() {
-				return S
-			})), i.d(t, "v", (function() {
-				return T
-			})), i.d(t, "u", (function() {
-				return O
-			})), i.d(t, "t", (function() {
-				return I
-			})), i.d(t, "e", (function() {
-				return j
-			})), i.d(t, "d", (function() {
-				return F
-			})), i.d(t, "c", (function() {
-				return R
-			})), i.d(t, "f", (function() {
-				return x
-			})), i.d(t, "k", (function() {
-				return N
 			})), i.d(t, "s", (function() {
+				return g
+			})), i.d(t, "i", (function() {
+				return y
+			})), i.d(t, "h", (function() {
+				return w
+			})), i.d(t, "l", (function() {
+				return v
+			})), i.d(t, "m", (function() {
+				return E
+			})), i.d(t, "b", (function() {
+				return S
+			})), i.d(t, "a", (function() {
+				return T
+			})), i.d(t, "w", (function() {
+				return O
+			})), i.d(t, "v", (function() {
+				return I
+			})), i.d(t, "u", (function() {
+				return j
+			})), i.d(t, "e", (function() {
+				return F
+			})), i.d(t, "d", (function() {
+				return R
+			})), i.d(t, "c", (function() {
+				return x
+			})), i.d(t, "f", (function() {
+				return C
+			})), i.d(t, "k", (function() {
 				return D
+			})), i.d(t, "t", (function() {
+				return A
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
@@ -36708,7 +36710,8 @@
 				}),
 				h = m(r.a.CommentsWithEmoji),
 				f = m(r.a.CommentsWithGifs),
-				b = (e, {
+				b = m(r.a.Achievements),
+				g = (e, {
 					subredditId: t
 				}) => {
 					const i = l(e, {
@@ -36720,12 +36723,12 @@
 					} = i;
 					return n && n.some(e => e === r.a.HdVideo || e === r.a.SdVideo || e === r.a.PostsImageUpload)
 				},
-				g = (e, t) => {
+				y = (e, t) => {
 					var i;
 					const n = c(e, t);
 					return (null === (i = null == n ? void 0 : n.free_emotes_pack) || void 0 === i ? void 0 : i.emotes) || []
 				},
-				y = (e, {
+				w = (e, {
 					subredditId: t
 				}) => {
 					var i;
@@ -36735,12 +36738,12 @@
 					});
 					return (null === (i = null == n ? void 0 : n[t]) || void 0 === i ? void 0 : i.emotes) || []
 				},
-				w = (e, {
+				v = (e, {
 					subredditId: t
 				}) => {
 					if (t) return e.subreddits.powerupTopSupporters[t]
 				},
-				v = Object(n.a)(w, e => {
+				E = Object(n.a)(v, e => {
 					if (!e) return;
 					const t = e.filter(r.b);
 					if (!t.length) return e;
@@ -36751,45 +36754,45 @@
 					};
 					return [...e.filter(e => !Object(r.b)(e)), i]
 				}),
-				E = (e, {
+				S = (e, {
 					subredditId: t,
 					userId: i
 				}) => {
-					const n = w(e, {
+					const n = v(e, {
 						subredditId: t
 					});
 					return !!n && n.some(e => !!e.supporterInfo && e.supporterInfo.id === i)
 				},
-				S = (e, {
+				T = (e, {
 					subredditId: t
 				}) => {
 					const i = Object(a.i)(e);
-					return !!i && E(e, {
+					return !!i && S(e, {
 						subredditId: t,
 						userId: i.id
 					})
 				},
-				T = e => e.user.powerups.data,
-				O = e => e.user.powerups.allocationByKey,
-				I = Object(n.a)([O, (e, {
+				O = e => e.user.powerups.data,
+				I = e => e.user.powerups.allocationByKey,
+				j = Object(n.a)([I, (e, {
 					subredditId: t
 				}) => t], (e, t) => Object.values(e).some(e => e.subredditInfo.id === t)),
-				j = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
-				F = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
-				R = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
-				x = e => e.users.powerups.allocationByKey,
-				C = Object(n.a)(l, e => null == e ? void 0 : e.count),
-				k = Object(n.a)(l, e => {
+				F = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
+				R = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
+				x = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
+				C = e => e.users.powerups.allocationByKey,
+				k = Object(n.a)(l, e => null == e ? void 0 : e.count),
+				N = Object(n.a)(l, e => {
 					if (!e) return;
 					const {
 						tiersInfo: t
 					} = e, i = t.find(e => 2 === e.tier);
 					return null == i ? void 0 : i.powerupsCost
 				}),
-				N = Object(n.a)(C, k, (e, t) => {
+				D = Object(n.a)(k, N, (e, t) => {
 					if (void 0 !== e && void 0 !== t) return e >= t
 				}),
-				D = Object(n.a)(s.d, s.e, s.f, (e, t, i) => e || t || i)
+				A = Object(n.a)(s.d, s.e, s.f, (e, t, i) => e || t || i)
 		},
 		"./src/reddit/selectors/gold/purchaseCatalog.ts": function(e, t, i) {
 			"use strict";
@@ -37985,7 +37988,7 @@
 					const t = V(e),
 						i = Object(I.e)(e),
 						n = H(e),
-						r = !!i && Object(O.r)(e, {
+						r = !!i && Object(O.s)(e, {
 							subredditId: i.id
 						}),
 						o = !!i && i.isNSFW;
@@ -37997,7 +38000,7 @@
 				},
 				z = Object(r.a)(H, I.e, V, $, e => {
 					const t = Object(I.c)(e);
-					return !!t && Object(O.r)(e, {
+					return !!t && Object(O.s)(e, {
 						subredditId: t
 					})
 				}, (e, t, i, n, r) => {
@@ -46509,4 +46512,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ba61db821c703f2a4d6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b371e838bf7c01a131e.js.map

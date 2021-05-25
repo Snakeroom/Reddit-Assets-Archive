@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.48ddc8158251cf45e566.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.8eb99f211687c759f9cb.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -167,7 +167,7 @@
 						})));
 						const l = h.body.comments,
 							p = h.body.posts;
-						await s(Object(m.b)(p, l, d)), await s(Object(c.a)(d, l))
+						await s(Object(m.b)(p, l, d)), await s(Object(c.b)(d, l))
 					} else s(F({
 						moreCommentsItem: a,
 						...h.error
@@ -421,6 +421,8 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
+				return b
+			})), s.d(t, "b", (function() {
 				return x
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -443,8 +445,9 @@
 				b = (e, t) => async (s, o, {
 					gqlContext: i
 				}) => {
-					try {
-						const o = await (async (e, t, s) => {
+					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (c.length) try {
+						const t = await (async (e, t, s) => {
 							const o = await Object(a.a)(e, {
 								...r,
 								variables: {
@@ -454,26 +457,24 @@
 							});
 							if (!o.ok) throw new Error("Unable to fetch user achievements");
 							return o.body.data.subredditInfoById
-						})(i(), e, t);
-						await s(u(o))
-					} catch (c) {
-						n.c.captureException(c)
+						})(i(), e, c);
+						await s(u(t))
+					} catch (d) {
+						n.c.captureException(d)
 					}
 				}, x = (e, t) => async (s, o) => {
 					if (!e) return;
-					let n = o();
-					if (await s(Object(l.i)(e, {
-							fullData: !0
-						})), n = o(), !Object(i.a)(n) || !Object(m.g)(n, {
+					await s(Object(l.i)(e, {
+						fullData: !0
+					}));
+					const n = o();
+					if (!Object(i.a)(n) || !Object(m.g)(n, {
 							subredditId: e
-						})) return;
+						}) || !t) return;
 					const r = new Set;
-					t && Object.values(t).map(e => {
-						const {
-							authorId: t
-						} = e;
-						(null == t ? void 0 : t.trim()) && r.add(t)
-					}), r.size && await s(b(e, Array.from(r)))
+					Object.values(t).forEach(e => {
+						r.add(e.authorId)
+					}), await s(b(e, Array.from(r)))
 				}
 		},
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, s) {
@@ -2391,4 +2392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.48ddc8158251cf45e566.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.8eb99f211687c759f9cb.js.map

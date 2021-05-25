@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.df06aba4a21707554ab3.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.abc3da03139656620d95.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -1561,7 +1561,7 @@
 						commentId: r
 					});
 					if (!!s && Object(o.a)(s)) return !0;
-					if (t && Object(b.o)(e, {
+					if (t && Object(b.p)(e, {
 							subredditId: t,
 							benefit: a.a.CommentsWithGifs
 						})) return !0;
@@ -1723,4 +1723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.df06aba4a21707554ab3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.abc3da03139656620d95.js.map

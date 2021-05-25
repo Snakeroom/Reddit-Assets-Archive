@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.d49d0d6ce2d45fa20f6f.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.05b45ab8aa52cca6d4f9.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -474,7 +474,7 @@
 								const t = await Object(f.a)(a);
 								l.width = t.width, l.height = t.height
 							} else if (c.startsWith("video/")) {
-								const c = !(null == n || !n.id) && Object(v.o)(t, {
+								const c = !(null == n || !n.id) && Object(v.p)(t, {
 										subredditId: n.id,
 										benefit: O.a.HdVideo
 									}),
@@ -8494,7 +8494,7 @@
 						if ((s = [...s, ...Object.values(r.emotes)]).length > 3) break;
 					return s.slice(0, 3)
 				}),
-				l = Object(o.a)(s.d.spGiphy, i.q, (t, e) => t || e)
+				l = Object(o.a)(s.d.spGiphy, i.r, (t, e) => t || e)
 		},
 		"./src/reddit/selectors/products.ts": function(t, e, n) {
 			"use strict";
@@ -8529,4 +8529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.d49d0d6ce2d45fa20f6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.05b45ab8aa52cca6d4f9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.dc3256e6ac3210c69af2.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4cbca6ebc191afae0989.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1101,7 +1101,7 @@
 						const n = s && "subreddit" === s.belongsTo.type ? s.belongsTo.id : null,
 							r = J.body.comments,
 							i = J.body.posts;
-						await o(Object(k.b)(i, r, n)), await o(Object(v.a)(n, r))
+						await o(Object(k.b)(i, r, n)), await o(Object(v.b)(n, r))
 					} {
 						const a = Object(H.F)(i(), {
 							postId: e
@@ -5892,4 +5892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.dc3256e6ac3210c69af2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4cbca6ebc191afae0989.js.map

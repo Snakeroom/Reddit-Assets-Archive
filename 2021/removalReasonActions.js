@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.30e7192343baac38de31.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.633a6afd7f96593952d8.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -765,7 +765,7 @@
 						})));
 						const m = j.body.comments,
 							l = j.body.posts;
-						await n(Object(u.b)(l, m, i)), await n(Object(a.a)(i, m))
+						await n(Object(u.b)(l, m, i)), await n(Object(a.b)(i, m))
 					} else n(K({
 						moreCommentsItem: c,
 						...j.error
@@ -1019,6 +1019,8 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
+				return p
+			})), n.d(t, "b", (function() {
 				return f
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1041,8 +1043,9 @@
 				p = (e, t) => async (n, s, {
 					gqlContext: d
 				}) => {
-					try {
-						const s = await (async (e, t, n) => {
+					const a = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (a.length) try {
+						const t = await (async (e, t, n) => {
 							const s = await Object(c.a)(e, {
 								...o,
 								variables: {
@@ -1052,26 +1055,24 @@
 							});
 							if (!s.ok) throw new Error("Unable to fetch user achievements");
 							return s.body.data.subredditInfoById
-						})(d(), e, t);
-						await n(b(s))
-					} catch (a) {
-						r.c.captureException(a)
+						})(d(), e, a);
+						await n(b(t))
+					} catch (i) {
+						r.c.captureException(i)
 					}
 				}, f = (e, t) => async (n, s) => {
 					if (!e) return;
-					let r = s();
-					if (await n(Object(m.i)(e, {
-							fullData: !0
-						})), r = s(), !Object(d.a)(r) || !Object(u.g)(r, {
+					await n(Object(m.i)(e, {
+						fullData: !0
+					}));
+					const r = s();
+					if (!Object(d.a)(r) || !Object(u.g)(r, {
 							subredditId: e
-						})) return;
+						}) || !t) return;
 					const o = new Set;
-					t && Object.values(t).map(e => {
-						const {
-							authorId: t
-						} = e;
-						(null == t ? void 0 : t.trim()) && o.add(t)
-					}), o.size && await n(p(e, Array.from(o)))
+					Object.values(t).forEach(e => {
+						o.add(e.authorId)
+					}), await n(p(e, Array.from(o)))
 				}
 		},
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, n) {
@@ -2070,7 +2071,7 @@
 						subredditId: n
 					}),
 					i = Object(d.g)(e),
-					m = i ? Object(o.a)(e, {
+					m = i ? Object(o.b)(e, {
 						subredditId: n,
 						userId: i
 					}) : void 0,
@@ -3084,9 +3085,12 @@
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return d
+			n.d(t, "b", (function() {
+				return i
+			})), n.d(t, "a", (function() {
+				return m
 			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/lib/initializeClient/installReducer.ts"),
 				o = n("./src/reddit/reducers/features/powerups/index.ts");
@@ -3095,16 +3099,27 @@
 					powerups: o.a
 				}
 			});
-			const c = Object(s.a)((e, {
+			const c = (e, {
+					subredditId: t
+				}) => t ? e.features.powerups.subredditAchievements[t] : null,
+				d = (e, {
 					subredditId: t,
 					userId: n
 				}) => {
 					var s;
 					return t && n ? null === (s = e.features.powerups.subredditUserAchievements[t]) || void 0 === s ? void 0 : s[n] : null
-				}, e => null == e ? void 0 : e.preferredType),
-				d = Object(s.a)([(e, {
-					subredditId: t
-				}) => t ? e.features.powerups.subredditAchievements[t] : null, c], (e, t) => e && t ? e[t] : null)
+				},
+				a = Object(s.a)(d, e => null == e ? void 0 : e.preferredType),
+				i = Object(s.a)([c, a], (e, t) => e && t ? e[t] : null),
+				m = Object(s.a)([c, d], (e, t) => {
+					if (!e) return [];
+					const n = t ? t.achievementTypes : [];
+					return Object.values(e).map(e => ({
+						...e,
+						isLocked: !n.includes(e.type),
+						isPreferred: e.type === (null == t ? void 0 : t.preferredType)
+					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
+				})
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
 			"use strict";
@@ -3132,4 +3147,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.30e7192343baac38de31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.633a6afd7f96593952d8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.b157535232448545709f.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4965ba7f6a8d434e0af5.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -4478,7 +4478,7 @@
 			var B = n("./src/reddit/components/Settings/Powerups/index.m.less"),
 				D = n.n(B);
 			const F = Object(u.c)({
-				allocationByKey: f.u
+				allocationByKey: f.v
 			});
 			var U = Object(l.b)(F)((function(e) {
 					const {
@@ -11256,7 +11256,7 @@
 						commentId: n
 					});
 					if (!!o && Object(r.a)(o)) return !0;
-					if (t && Object(b.o)(e, {
+					if (t && Object(b.p)(e, {
 							subredditId: t,
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
@@ -11378,4 +11378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b157535232448545709f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4965ba7f6a8d434e0af5.js.map

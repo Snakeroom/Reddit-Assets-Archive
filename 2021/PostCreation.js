@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.017845c58fda18a0d0db.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3463315229c8bbd8b593.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1110,7 +1110,7 @@
 						})));
 						const l = g.body.comments,
 							m = g.body.posts;
-						await n(Object(u.b)(m, l, d)), await n(Object(c.a)(d, l))
+						await n(Object(u.b)(m, l, d)), await n(Object(c.b)(d, l))
 					} else n(F({
 						moreCommentsItem: a,
 						...g.error
@@ -1250,6 +1250,8 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
+				return h
+			})), n.d(t, "b", (function() {
 				return b
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1272,8 +1274,9 @@
 				h = (e, t) => async (n, o, {
 					gqlContext: i
 				}) => {
-					try {
-						const o = await (async (e, t, n) => {
+					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (c.length) try {
+						const t = await (async (e, t, n) => {
 							const o = await Object(a.a)(e, {
 								...r,
 								variables: {
@@ -1283,26 +1286,24 @@
 							});
 							if (!o.ok) throw new Error("Unable to fetch user achievements");
 							return o.body.data.subredditInfoById
-						})(i(), e, t);
-						await n(p(o))
-					} catch (c) {
-						s.c.captureException(c)
+						})(i(), e, c);
+						await n(p(t))
+					} catch (d) {
+						s.c.captureException(d)
 					}
 				}, b = (e, t) => async (n, o) => {
 					if (!e) return;
-					let s = o();
-					if (await n(Object(l.i)(e, {
-							fullData: !0
-						})), s = o(), !Object(i.a)(s) || !Object(u.g)(s, {
+					await n(Object(l.i)(e, {
+						fullData: !0
+					}));
+					const s = o();
+					if (!Object(i.a)(s) || !Object(u.g)(s, {
 							subredditId: e
-						})) return;
+						}) || !t) return;
 					const r = new Set;
-					t && Object.values(t).map(e => {
-						const {
-							authorId: t
-						} = e;
-						(null == t ? void 0 : t.trim()) && r.add(t)
-					}), r.size && await n(h(e, Array.from(r)))
+					Object.values(t).forEach(e => {
+						r.add(e.authorId)
+					}), await n(h(e, Array.from(r)))
 				}
 		},
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, n) {
@@ -12482,7 +12483,7 @@
 						subredditId: n
 					}),
 					d = Object(i.g)(e),
-					l = d ? Object(r.a)(e, {
+					l = d ? Object(r.b)(e, {
 						subredditId: n,
 						userId: d
 					}) : void 0,
@@ -20468,7 +20469,7 @@
 				}, e.children),
 				Du = Object(a.a)(j.d, j.e, j.h, j.Q, j.Z, v.q, (e, t) => {
 					const n = Object(v.m)(e, t);
-					return !!n && Object(Eu.r)(e, {
+					return !!n && Object(Eu.s)(e, {
 						subredditId: n
 					})
 				}, (e, t, n, o, s, r, a) => {
@@ -21671,9 +21672,12 @@
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return i
+			n.d(t, "b", (function() {
+				return d
+			})), n.d(t, "a", (function() {
+				return l
 			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/reddit/reducers/features/powerups/index.ts");
@@ -21682,16 +21686,27 @@
 					powerups: r.a
 				}
 			});
-			const a = Object(o.a)((e, {
+			const a = (e, {
+					subredditId: t
+				}) => t ? e.features.powerups.subredditAchievements[t] : null,
+				i = (e, {
 					subredditId: t,
 					userId: n
 				}) => {
 					var o;
 					return t && n ? null === (o = e.features.powerups.subredditUserAchievements[t]) || void 0 === o ? void 0 : o[n] : null
-				}, e => null == e ? void 0 : e.preferredType),
-				i = Object(o.a)([(e, {
-					subredditId: t
-				}) => t ? e.features.powerups.subredditAchievements[t] : null, a], (e, t) => e && t ? e[t] : null)
+				},
+				c = Object(o.a)(i, e => null == e ? void 0 : e.preferredType),
+				d = Object(o.a)([a, c], (e, t) => e && t ? e[t] : null),
+				l = Object(o.a)([a, i], (e, t) => {
+					if (!e) return [];
+					const n = t ? t.achievementTypes : [];
+					return Object.values(e).map(e => ({
+						...e,
+						isLocked: !n.includes(e.type),
+						isPreferred: e.type === (null == t ? void 0 : t.preferredType)
+					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
+				})
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, n) {
 			"use strict";
@@ -22223,4 +22238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.017845c58fda18a0d0db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3463315229c8bbd8b593.js.map

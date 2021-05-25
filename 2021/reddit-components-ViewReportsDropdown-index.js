@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.4dfa49ce9f43911c9772.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bdacd9dfad284d49d106.js
+// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -66,14 +66,14 @@
 				R = s("./src/reddit/selectors/commentSelector.ts"),
 				y = s("./src/reddit/selectors/experiments/avatarsInComments.ts"),
 				C = s("./src/reddit/selectors/moderatingComments.ts"),
-				S = s("./src/reddit/selectors/user.ts"),
-				E = s("./src/reddit/actions/comment/constants.ts");
+				E = s("./src/reddit/selectors/user.ts"),
+				S = s("./src/reddit/actions/comment/constants.ts");
 			const I = {},
-				_ = Object(d.a)(E.o),
+				_ = Object(d.a)(S.o),
 				k = e => async (t, s, {
 					apiContext: n
 				}) => {
-					if (!Object(S.J)(s())) return t(Object(a.j)()), void t(Object(l.k)({
+					if (!Object(E.J)(s())) return t(Object(a.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(w.m)(s(), {
 							commentId: e
@@ -129,7 +129,7 @@
 						const s = r.c.end(d);
 						!t && s < A && (clearTimeout(I[e]), delete I[e])
 					}
-				}, U = Object(d.a)(E.x), B = Object(d.a)(E.w), N = Object(d.a)(E.v), L = (e, t) => async (s, n, {
+				}, U = Object(d.a)(S.x), B = Object(d.a)(S.w), N = Object(d.a)(S.v), L = (e, t) => async (s, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
@@ -167,12 +167,12 @@
 						})));
 						const l = j.body.comments,
 							u = j.body.posts;
-						await s(Object(m.b)(u, l, a)), await s(Object(i.a)(a, l))
+						await s(Object(m.b)(u, l, a)), await s(Object(i.b)(a, l))
 					} else s(N({
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), M = Object(d.a)(E.j), $ = Object(d.a)(E.i), K = Object(d.a)(E.e), H = Object(d.a)(E.f), V = (Object(d.a)(E.c), Object(d.a)(E.d), ({
+				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), M = Object(d.a)(S.j), $ = Object(d.a)(S.i), K = Object(d.a)(S.e), H = Object(d.a)(S.f), V = (Object(d.a)(S.c), Object(d.a)(S.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -218,9 +218,9 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && n(c, !0), Object(u.d)()
-				}, q = Object(d.a)(E.r), Q = e => t => t(q({
+				}, q = Object(d.a)(S.r), Q = e => t => t(q({
 					draftKey: e
-				})), X = Object(d.a)(E.a), G = Object(d.a)(E.E), W = Object(d.a)(E.b), Y = Object(d.a)(E.u)
+				})), X = Object(d.a)(S.a), G = Object(d.a)(S.E), W = Object(d.a)(S.b), Y = Object(d.a)(S.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -237,9 +237,9 @@
 			})), s.d(t, "g", (function() {
 				return C
 			})), s.d(t, "h", (function() {
-				return S
-			})), s.d(t, "b", (function() {
 				return E
+			})), s.d(t, "b", (function() {
+				return S
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/constants/index.ts"),
@@ -351,7 +351,7 @@
 							ignoreReports: o.ignoreReports
 						}
 					}))
-				}, S = (e, t, s) => async (r, d, {
+				}, E = (e, t, s) => async (r, d, {
 					gqlContext: c
 				}) => {
 					const i = Object(f.a)(d(), {
@@ -377,7 +377,7 @@
 						}), b.b.Error);
 						r(Object(a.f)(e))
 					}
-				}, E = (e, t, s) => async (n, r, {
+				}, S = (e, t, s) => async (n, r, {
 					apiContext: c
 				}) => {
 					const i = r(),
@@ -421,6 +421,8 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
+				return b
+			})), s.d(t, "b", (function() {
 				return f
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -443,8 +445,9 @@
 				b = (e, t) => async (s, n, {
 					gqlContext: c
 				}) => {
-					try {
-						const n = await (async (e, t, s) => {
+					const i = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (i.length) try {
+						const t = await (async (e, t, s) => {
 							const n = await Object(d.a)(e, {
 								...r,
 								variables: {
@@ -454,26 +457,24 @@
 							});
 							if (!n.ok) throw new Error("Unable to fetch user achievements");
 							return n.body.data.subredditInfoById
-						})(c(), e, t);
-						await s(p(n))
-					} catch (i) {
-						o.c.captureException(i)
+						})(c(), e, i);
+						await s(p(t))
+					} catch (a) {
+						o.c.captureException(a)
 					}
 				}, f = (e, t) => async (s, n) => {
 					if (!e) return;
-					let o = n();
-					if (await s(Object(l.i)(e, {
-							fullData: !0
-						})), o = n(), !Object(c.a)(o) || !Object(m.g)(o, {
+					await s(Object(l.i)(e, {
+						fullData: !0
+					}));
+					const o = n();
+					if (!Object(c.a)(o) || !Object(m.g)(o, {
 							subredditId: e
-						})) return;
+						}) || !t) return;
 					const r = new Set;
-					t && Object.values(t).map(e => {
-						const {
-							authorId: t
-						} = e;
-						(null == t ? void 0 : t.trim()) && r.add(t)
-					}), r.size && await s(b(e, Array.from(r)))
+					Object.values(t).forEach(e => {
+						r.add(e.authorId)
+					}), await s(b(e, Array.from(r)))
 				}
 		},
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, s) {
@@ -599,11 +600,11 @@
 				y = s.n(R);
 			const {
 				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = (e, t) => `SnoozableReport--${t}--${e}`, E = Object(r.b)(() => Object(c.c)({
-				isDropdownOpen: (e, t) => Object(w.b)(S(t.reason, t.reportedThingId))(e)
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), E = (e, t) => `SnoozableReport--${t}--${e}`, S = Object(r.b)(() => Object(c.c)({
+				isDropdownOpen: (e, t) => Object(w.b)(E(t.reason, t.reportedThingId))(e)
 			}), (e, t) => ({
 				openDropdown: () => e(Object(m.h)({
-					tooltipId: S(t.reason, t.reportedThingId)
+					tooltipId: E(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
 					Object(O.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, s)) : e(Object(l.Y)(t.reportedThingId, t.reason, s))
@@ -626,7 +627,7 @@
 						openDropdown: n,
 						isDropdownOpen: r,
 						isSnoozed: d
-					} = this.props, c = S(e, s);
+					} = this.props, c = E(e, s);
 					return o.a.createElement("div", {
 						ref: this.setTooltipTargetRef
 					}, o.a.createElement(f.b, {
@@ -653,7 +654,7 @@
 					}))))))
 				}
 			}
-			var k = E(Object(p.c)(_)),
+			var k = S(Object(p.c)(_)),
 				T = s("./src/reddit/featureFlags/index.ts"),
 				A = s("./src/reddit/components/Reports/index.m.less"),
 				P = s.n(A);
@@ -748,7 +749,7 @@
 				}),
 				y = Object(r.b)(R),
 				C = Object(i.a)(w),
-				S = y(e => {
+				E = y(e => {
 					const t = !(!e.model.numReports || -1 !== e.model.numReports),
 						s = t ? e.model.modReportsDismissed || [] : e.model.modReports,
 						n = t ? e.model.userReportsDismissed || [] : e.model.userReports;
@@ -765,7 +766,7 @@
 						reportedThingId: e.model.id
 					}))
 				});
-			t.default = S
+			t.default = E
 		},
 		"./src/reddit/endpoints/comment/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1131,4 +1132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.4dfa49ce9f43911c9772.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bdacd9dfad284d49d106.js.map
