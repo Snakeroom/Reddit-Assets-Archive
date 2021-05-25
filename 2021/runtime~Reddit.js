@@ -1,25 +1,25 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.08e987ea0cc29b184b2a.js
-// Retrieved at 5/24/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.bf7b5964884d3218e865.js
+// Retrieved at 5/25/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
-		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
+		for (var d, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(a, n) && a[n] && b.push(a[n][0]), a[n] = 0;
+		for (d in s) Object.prototype.hasOwnProperty.call(s, d) && (e[d] = s[d]);
 		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
 	function t() {
 		for (var e, o = 0; o < i.length; o++) {
-			for (var t = i[o], n = !0, d = 1; d < t.length; d++) {
-				var s = t[d];
-				0 !== a[s] && (n = !1)
+			for (var t = i[o], d = !0, n = 1; n < t.length; n++) {
+				var s = t[n];
+				0 !== a[s] && (d = !1)
 			}
-			n && (i.splice(o--, 1), e = r(r.s = t[0]))
+			d && (i.splice(o--, 1), e = r(r.s = t[0]))
 		}
 		return e
 	}
-	var n = {},
-		d = {
+	var d = {},
+		n = {
 			"runtime~Reddit": 0
 		},
 		a = {
@@ -28,8 +28,8 @@
 		i = [];
 
 	function r(o) {
-		if (n[o]) return n[o].exports;
-		var t = n[o] = {
+		if (d[o]) return d[o].exports;
+		var t = d[o] = {
 			i: o,
 			l: !1,
 			exports: {}
@@ -38,7 +38,7 @@
 	}
 	r.e = function(e) {
 		var o = [];
-		d[e] ? o.push(d[e]) : 0 !== d[e] && {
+		n[e] ? o.push(n[e]) : 0 !== n[e] && {
 			0: 1,
 			1: 1,
 			Acknowledgements: 1,
@@ -252,8 +252,8 @@
 			"reddit-components-FormBuilder": 1,
 			GivePremiumModal: 1,
 			ModStatsChart: 1
-		} [e] && o.push(d[e] = new Promise((function(o, t) {
-			for (var n = "chunkCSS/" + ({
+		} [e] && o.push(n[e] = new Promise((function(o, t) {
+			for (var d = "chunkCSS/" + ({
 					Acknowledgements: "Acknowledgements",
 					Appeal: "Appeal",
 					Avatar: "Avatar",
@@ -576,7 +576,7 @@
 					ContributorRequestRequestModal: "74cb9861f3ec8b8681be",
 					CrowdControlModal: "87d7afc8bafd965d89f5",
 					CryptoHarbergerTaxPurchaseModal: "6b1d27cf6dddf8b4a4b5",
-					EconAchievementFlairModal: "7f15f44b6fd7c2897149",
+					EconAchievementFlairModal: "183fd18bb3a809146c96",
 					"EconHelperActions~index~reddit-components-Econ-Prediction": "31d6cfe0d16ae931b73c",
 					EconHelperActions: "31d6cfe0d16ae931b73c",
 					EconPowerupsMarketingModal: "c4bc2df6cf5a33334e53",
@@ -623,8 +623,8 @@
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
-					"reddit-components-Root-IconFontLoaders-RedesignFont": "430d191a00a8735810da",
-					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "3de4515a16446752b343",
+					"reddit-components-Root-IconFontLoaders-RedesignFont": "7fe52c81b22c627be17a",
+					"reddit-components-Root-IconFontLoaders-RedesignFont2020": "023ff81ff4a17fc7ad24",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/es_MX-json": "31d6cfe0d16ae931b73c",
@@ -790,32 +790,32 @@
 					ColorPickerDropdown: "31d6cfe0d16ae931b73c",
 					"vendors~ModStatsChart": "31d6cfe0d16ae931b73c",
 					ModStatsChart: "1716ac9447d14ba5fb74"
-				} [e] + ".css", a = r.p + n, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
+				} [e] + ".css", a = r.p + d, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
 				var c = (m = i[s]).getAttribute("data-href") || m.getAttribute("href");
-				if ("stylesheet" === m.rel && (c === n || c === a)) return o()
+				if ("stylesheet" === m.rel && (c === d || c === a)) return o()
 			}
 			var l = document.getElementsByTagName("style");
 			for (s = 0; s < l.length; s++) {
 				var m;
-				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === a) return o()
+				if ((c = (m = l[s]).getAttribute("data-href")) === d || c === a) return o()
 			}
 			var b = document.createElement("link");
 			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
-				var n = o && o.target && o.target.src || a,
-					i = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete d[e], b.parentNode.removeChild(b), t(i)
+				var d = o && o.target && o.target.src || a,
+					i = new Error("Loading CSS chunk " + e + " failed.\n(" + d + ")");
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = d, delete n[e], b.parentNode.removeChild(b), t(i)
 			}, b.href = a, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
-			d[e] = 0
+			n[e] = 0
 		})));
 		var t = a[e];
 		if (0 !== t)
 			if (t) o.push(t[2]);
 			else {
-				var n = new Promise((function(o, n) {
-					t = a[e] = [o, n]
+				var d = new Promise((function(o, d) {
+					t = a[e] = [o, d]
 				}));
-				o.push(t[2] = n);
+				o.push(t[2] = d);
 				var i, s = document.createElement("script");
 				s.charset = "utf-8", s.timeout = 120, r.nc && s.setAttribute("nonce", r.nc), s.src = function(e) {
 					return r.p + "" + ({
@@ -1141,7 +1141,7 @@
 						ContributorRequestRequestModal: "49cd53b2c6af7faca9ce",
 						CrowdControlModal: "1619763727dbf1ceeab5",
 						CryptoHarbergerTaxPurchaseModal: "d6811159ca449d3bc1a1",
-						EconAchievementFlairModal: "972c2b7bf99a54899f0e",
+						EconAchievementFlairModal: "5877e4062ecd573d348b",
 						"EconHelperActions~index~reddit-components-Econ-Prediction": "2026b29b8c4eb73f696f",
 						EconHelperActions: "9109b98453ee3441468d",
 						EconPowerupsMarketingModal: "ebfa8afa64419eb3d454",
@@ -1188,18 +1188,18 @@
 						UserZoomIntegration: "8294711afc559de7920d",
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
-						"reddit-components-Root-IconFontLoaders-RedesignFont": "59df679abfeb1d5d3bf6",
-						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "2bb970ef2c9ab23d1d75",
-						"translations/de_DE-json": "5e15d89596f379e1dae5",
-						"translations/es_ES-json": "2635bc543ad6b9b857ab",
-						"translations/es_MX-json": "4c3158bdd75f4748580f",
-						"translations/fr_FR-json": "7f097f817ae1a57ffe5b",
-						"translations/it_IT-json": "d122f5657af6ca0bf03a",
-						"translations/pseudo_ext-json": "b558554d2f946f850442",
-						"translations/pseudo_long-json": "7b04fd9ee0c117aefa76",
-						"translations/pseudo_short-json": "f661a7291bbe0d580ab6",
-						"translations/pt_BR-json": "1c4731ba692f58c2c66f",
-						"translations/pt_PT-json": "473606bc70cbabf9d439",
+						"reddit-components-Root-IconFontLoaders-RedesignFont": "24e5b863d044ab037bf8",
+						"reddit-components-Root-IconFontLoaders-RedesignFont2020": "7cba765df863526f88d5",
+						"translations/de_DE-json": "36d7ed72a4249d0d6e7d",
+						"translations/es_ES-json": "c894405256540bb61e24",
+						"translations/es_MX-json": "4032050f1f1f100cf940",
+						"translations/fr_FR-json": "ba756ddb4dc68085a31f",
+						"translations/it_IT-json": "40aafe6d356a2d1ce0cd",
+						"translations/pseudo_ext-json": "659f62bb0b80b66aa4ce",
+						"translations/pseudo_long-json": "428638bfe2f2d4ed6b42",
+						"translations/pseudo_short-json": "681c1bdffa35dca5a1fb",
+						"translations/pt_BR-json": "f982684e1183977b1570",
+						"translations/pt_PT-json": "4c2a60ebb4fad1874c86",
 						"vendors~AdminPanel": "9b24840577d41d3b738d",
 						AdminPanel: "9f1f5b88dffd3e85bbf0",
 						"vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor": "7b3e2381f5710fe6215a",
@@ -1250,7 +1250,7 @@
 						CryptoVault: "fa27bdf390f16645b327",
 						EconomicsSubredditPremiumSidebarCards: "88464066878da6355478",
 						HarbergerTaxBannerPurchaseCTA: "4f568e39dc05d5598330",
-						IdCard: "f64c16aa03aa61f6aa81",
+						IdCard: "d1ea78783b9388191282",
 						RichTextJsonEmoteTooltip: "574ecb4a6ffae8a38695",
 						SubredditMentionWithIcon: "9fafb7e138e685bac9e4",
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "bf34638f7fc21ef03026",
@@ -1363,9 +1363,9 @@
 					var t = a[e];
 					if (0 !== t) {
 						if (t) {
-							var n = o && ("load" === o.type ? "missing" : o.type),
-								d = o && o.target && o.target.src;
-							c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + d + ")", c.name = "ChunkLoadError", c.type = n, c.request = d, t[1](c)
+							var d = o && ("load" === o.type ? "missing" : o.type),
+								n = o && o.target && o.target.src;
+							c.message = "Loading chunk " + e + " failed.\n(" + d + ": " + n + ")", c.name = "ChunkLoadError", c.type = d, c.request = n, t[1](c)
 						}
 						a[e] = void 0
 					}
@@ -1378,7 +1378,7 @@
 				}), 12e4);
 				s.onerror = s.onload = i, document.head.appendChild(s)
 			} return Promise.all(o)
-	}, r.m = e, r.c = n, r.d = function(e, o, t) {
+	}, r.m = e, r.c = d, r.d = function(e, o, t) {
 		r.o(e, o) || Object.defineProperty(e, o, {
 			enumerable: !0,
 			get: t
@@ -1397,9 +1397,9 @@
 				enumerable: !0,
 				value: e
 			}), 2 & o && "string" != typeof e)
-			for (var n in e) r.d(t, n, function(o) {
+			for (var d in e) r.d(t, d, function(o) {
 				return e[o]
-			}.bind(null, n));
+			}.bind(null, d));
 		return t
 	}, r.n = function(e) {
 		var o = e && e.__esModule ? function() {
@@ -1420,4 +1420,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.08e987ea0cc29b184b2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bf7b5964884d3218e865.js.map

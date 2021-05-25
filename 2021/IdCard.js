@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f64c16aa03aa61f6aa81.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.d1ea78783b9388191282.js
+// Retrieved at 5/25/2021, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2765,8 +2765,9 @@
 				gt = Object(u.c)({
 					badgesEnabled: Te.d.spBadges,
 					currentUser: P.i,
-					isPowerupsAchievementFlairEnabled: st.a,
-					subredditHasPowerups: rt.g,
+					isAchievementFlairModalEnabled: (e, t) => Object(rt.g)(e, {
+						subredditId: t.subredditId
+					}) && Object(st.a)(e),
 					userFlairData: it.c,
 					userHasBadge: (e, t) => {
 						const n = e.user.account;
@@ -2807,8 +2808,8 @@
 				}));
 			class Ct extends i.a.Component {
 				constructor() {
-					super(...arguments), this.shouldRenderAchievementFlairModal = () => this.props.isPowerupsAchievementFlairEnabled && this.props.subredditHasPowerups, this.onFlairLinkClick = () => {
-						if (this.shouldRenderAchievementFlairModal()) this.props.onToggleAchievementFlairModal();
+					super(...arguments), this.onFlairLinkClick = () => {
+						if (this.props.isAchievementFlairModalEnabled) this.props.onToggleAchievementFlairModal();
 						else {
 							const e = this.props.currentUser ? Object(nt.e)(this.props.currentUser) : null;
 							this.props.onToggleUserFlairModal(e)
@@ -2824,7 +2825,7 @@
 						userFlairData: o,
 						userHasBadge: a
 					} = this.props;
-					return t && (o || this.shouldRenderAchievementFlairModal()) ? i.a.createElement(dt, null, i.a.createElement(ut, null, s.fbt._("user flair preview", null, {
+					return t && (o || this.props.isAchievementFlairModalEnabled) ? i.a.createElement(dt, null, i.a.createElement(ut, null, s.fbt._("user flair preview", null, {
 						hk: "3aBytK"
 					}), i.a.createElement(Et, {
 						onClick: this.onFlairLinkClick
@@ -5396,4 +5397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f64c16aa03aa61f6aa81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.d1ea78783b9388191282.js.map
