@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.608777684bd0ba14ebd8.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.517ac2c5e318cab40462.js
+// Retrieved at 5/25/2021, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("134886"),
+				buildNumber: r("134890"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1621962159"),
+				})("1621963768"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4209,14 +4209,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbd40f0f34d2ff7fc184cf160ce914b409ffe12d2-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce6e03f6a300961e46d94b388ae9a743557c7e7b1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bd40f0f34d2ff7fc184cf160ce914b409ffe12d2-production",
+						release: "e6e03f6a300961e46d94b388ae9a743557c7e7b1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4710,7 +4710,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "bd40f0f34d2ff7fc184cf160ce914b409ffe12d2-production",
+						releaseClient: "e6e03f6a300961e46d94b388ae9a743557c7e7b1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -27034,32 +27034,33 @@
 							return f(e, t, i, n)
 						})(p, e, i, t) : f(p, e, i, t),
 						y = Object(a.c)(p) || l,
-						w = Object(o.c)(o.a.LinkedPosts);
+						w = Object(o.c)(o.a.LinkedPosts),
+						v = n ? c.getRelativePostOrder(p, e, n) : null;
 					if (w && s && s.hostPostId && y) {
 						const {
 							baseUrl: i,
-							canonicalUrl: o,
-							hostPostId: d
-						} = s, a = n ? c.getRelativePostOrder(p, e, n) : null;
+							canonicalUrl: n,
+							hostPostId: o
+						} = s;
 						return {
 							...h,
 							action: "click",
 							actionInfo: {
 								...h.actionInfo,
-								position: "number" == typeof a ? a + 1 : void 0,
+								position: "number" == typeof v ? v + 1 : void 0,
 								referralId: u
 							},
 							correlationId: w,
 							experiment: c.experiment(p, r.Tb),
 							media: c.media(p, e),
-							mlModel: c.listingBelowMlModel(y, d),
+							mlModel: c.listingBelowMlModel(y, o),
 							noun: t,
 							post: m,
 							profile: c.profile(p),
 							request: {
 								...h.request,
 								base_url: i,
-								canonical_url: o
+								canonical_url: n
 							},
 							source: "post_detail",
 							subreddit: c.subreddit(p)
@@ -27071,6 +27072,7 @@
 						action: "click",
 						actionInfo: {
 							...h.actionInfo,
+							position: v,
 							referralId: u
 						},
 						media: c.media(p, e),
@@ -40575,22 +40577,18 @@
 				return Kt
 			})), i.d(t, "paneName", (function() {
 				return Yt
-			})), i.d(t, "postRelativePosition", (function() {
-				return Qt
-			})), i.d(t, "communityRelativePosition", (function() {
-				return Jt
 			})), i.d(t, "amountOfElementsBeforePost", (function() {
-				return Xt
+				return Qt
 			})), i.d(t, "amountOfElementsBeforeCommunity", (function() {
-				return Zt
+				return Jt
 			})), i.d(t, "structureType", (function() {
-				return ei
+				return Xt
 			})), i.d(t, "subredditPowerups", (function() {
-				return ti
+				return Zt
 			})), i.d(t, "listingBelowMlModel", (function() {
-				return ii
+				return ei
 			})), i.d(t, "geo", (function() {
-				return ni
+				return ti
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r, s = i("./node_modules/js-cookie/src/js.cookie.js"),
@@ -41812,15 +41810,7 @@
 					const i = t || e.platform.currentPage;
 					return i ? i.queryParams.type ? "link" === i.queryParams.type ? Kt.Post : "sr,user" === i.queryParams.type ? Kt.Community : void 0 : Kt.Best : void 0
 				},
-				Qt = (e, t, i, n) => {
-					const r = n && n.postOrder ? n.postOrder.indexOf(t) : i ? xe(e, t, i) : null;
-					return null !== r ? r + 1 : null
-				},
-				Jt = (e, t, i, n) => {
-					const r = n && n.subredditOrder ? n.subredditOrder.indexOf(t) : i ? Ce(e, t, i) : null;
-					return null !== r ? r + 1 : null
-				},
-				Xt = (e, t, i, n, r) => {
+				Qt = (e, t, i, n, r) => {
 					let s, o, d = 0;
 					if (n && i && e.searchDiscoveryUnits && e.searchDiscoveryUnits.models[i]) {
 						const t = e.searchDiscoveryUnits.models[i],
@@ -41837,7 +41827,7 @@
 					}
 					return d
 				},
-				Zt = (e, t, i) => {
+				Jt = (e, t, i) => {
 					let n, r, s = 0;
 					if (i && t && e.searchDiscoveryUnits && e.searchDiscoveryUnits.models[t]) {
 						const o = e.searchDiscoveryUnits.models[t],
@@ -41850,8 +41840,8 @@
 					} else s = 0;
 					return s
 				},
-				ei = (e, t) => t && t.queryParams ? t.queryParams.source ? t.queryParams.source === C.a.Recent ? Ct.Recent : t.queryParams.source === C.a.Trending ? Ct.Trending : t.queryParams.source === C.a.PromotedTrend ? Ct.PromotedTrend : void 0 : Ct.Search : void 0,
-				ti = e => {
+				Xt = (e, t) => t && t.queryParams ? t.queryParams.source ? t.queryParams.source === C.a.Recent ? Ct.Recent : t.queryParams.source === C.a.Trending ? Ct.Trending : t.queryParams.source === C.a.PromotedTrend ? Ct.PromotedTrend : void 0 : Ct.Search : void 0,
+				Zt = e => {
 					const t = Object(se.e)(e);
 					if (t) {
 						const i = Object(pe.j)(e, {
@@ -41863,13 +41853,13 @@
 					}
 					return null
 				},
-				ii = (e, t) => ({
+				ei = (e, t) => ({
 					features: JSON.stringify({
 						host_post_id: t || null
 					}),
 					name: e
 				}),
-				ni = Object(l.c)({
+				ti = Object(l.c)({
 					city: re.a,
 					country_code: re.b,
 					region: re.k
@@ -46512,4 +46502,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.608777684bd0ba14ebd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.517ac2c5e318cab40462.js.map
