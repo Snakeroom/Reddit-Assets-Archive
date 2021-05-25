@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.a39ceee1971dc1d5023d.js
-// Retrieved at 5/25/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.11437ffdd417a5c0b7a7.js
+// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -629,9 +629,9 @@
 			})), s.d(t, "f", (function() {
 				return G
 			})), s.d(t, "a", (function() {
-				return z
-			})), s.d(t, "b", (function() {
 				return q
+			})), s.d(t, "b", (function() {
+				return z
 			})), s.d(t, "c", (function() {
 				return K
 			}));
@@ -931,7 +931,7 @@
 						}), p.b.Error);
 						r(Object(d.f)(e))
 					}
-				}, z = Object(o.a)(_.a), q = Object(o.a)(_.c), K = Object(o.a)(_.d)
+				}, q = Object(o.a)(_.a), z = Object(o.a)(_.c), K = Object(o.a)(_.d)
 		},
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
@@ -1179,8 +1179,8 @@
 			var W = s("./src/reddit/helpers/isPost.ts"),
 				U = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				G = s("./src/reddit/helpers/routeKey/index.ts"),
-				z = s("./src/reddit/models/ModQueue/index.ts"),
-				q = s("./src/reddit/models/PostDraft/index.ts"),
+				q = s("./src/reddit/models/ModQueue/index.ts"),
+				z = s("./src/reddit/models/PostDraft/index.ts"),
 				K = s("./src/reddit/models/RemovalReason/index.ts"),
 				J = s("./src/reddit/models/Toast/index.ts"),
 				X = s("./src/reddit/selectors/comments.ts"),
@@ -1329,7 +1329,7 @@
 												sort: y.s,
 												hasSortParam: !0
 											})), u === K.e.Post) {
-											const s = Object(S.a)(q.c.replyToPost, l);
+											const s = Object(S.a)(z.c.replyToPost, l);
 											o(Object(P.o)({
 												...t,
 												headCommentId: Object(X.w)(d, {
@@ -1349,7 +1349,7 @@
 												}
 											}))
 										} else if (u === K.e.Comment) {
-											const e = Object(S.a)(q.c.replyToComment, m.id),
+											const e = Object(S.a)(z.c.replyToComment, m.id),
 												s = Object(X.j)(d, {
 													commentId: l,
 													commentsPageKey: r
@@ -1401,7 +1401,7 @@
 					if (h.ok) {
 						const n = {
 							ids: e,
-							operation: z.a.RemovalReason,
+							operation: q.a.RemovalReason,
 							username: l,
 							options: {
 								modNote: o,
@@ -3776,10 +3776,10 @@
 			const W = N.g,
 				U = 5 * h.G,
 				G = 3,
-				z = Object(m.c)({
+				q = Object(m.c)({
 					isOverlayOpen: F.h
 				}),
-				q = Object(l.b)(z),
+				z = Object(l.b)(q),
 				K = {};
 
 			function J(e) {
@@ -4295,7 +4295,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = q(Object(A.b)(le))
+			t.b = z(Object(A.b)(le))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -4436,12 +4436,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.pd.SmIcon:
+						case b.qd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.pd.SmIconHc:
+						case b.qd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5608,7 +5608,7 @@
 					}
 				}),
 				G = Object(a.b)(U);
-			class z extends i.a.Component {
+			class q extends i.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: "bulk_mod_action",
@@ -5661,7 +5661,7 @@
 					}))
 				}
 			}
-			t.default = H(G(Object(m.c)(z)))
+			t.default = H(G(Object(m.c)(q)))
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
 			"use strict";
@@ -5686,12 +5686,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.id
+						experimentName: n.jd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.pd.SmIcon || t === n.pd.SmIconHc
+					return t === n.qd.SmIcon || t === n.qd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5714,4 +5714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.a39ceee1971dc1d5023d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.11437ffdd417a5c0b7a7.js.map

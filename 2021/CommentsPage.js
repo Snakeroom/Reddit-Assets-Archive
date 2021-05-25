@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.65325ef546b2292805dc.js
-// Retrieved at 5/25/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.9a768d9a6c965bfa2761.js
+// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -57,6 +57,10 @@
 							associatedAward: e.associated_award ? Object(m.b)(e.associated_award) : void 0,
 							author: e.author,
 							authorId: e.author_fullname,
+							authorIconImage: e.author_icon_img,
+							authorIconIsDefault: e.author_is_default_icon,
+							authorIconIsNSFW: e.author_is_nsfw_icon,
+							authorSnoovatarImage: e.author_snoovatar_img,
 							body: e.body_html,
 							bodyMD: e.body,
 							collapsed: Boolean(e.collapsed),
@@ -2059,12 +2063,12 @@
 			var o = s("./node_modules/@loadable/component/dist/loadable.esm.js");
 			t.a = Object(o.a)({
 				resolved: {},
-				chunkName: () => "reddit-components-Comments-PredictionComment-index-tsx",
+				chunkName: () => "reddit-components-Comments-PredictionComment",
 				isReady(e) {
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => s.e("reddit-components-Comments-PredictionComment-index-tsx").then(s.bind(null, "./src/reddit/components/Comments/PredictionComment/index.tsx")),
+				importAsync: () => s.e("reddit-components-Comments-PredictionComment").then(s.bind(null, "./src/reddit/components/Comments/PredictionComment/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -6857,9 +6861,9 @@
 						name: n
 					} = t, r = Object(k.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(x.Fd)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
+					return i = !e || Object(x.Gd)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
 						hk: "2g363L"
-					}) : e === x.Wb.Nlp15Max ? o.fbt._("More posts like this", null, {
+					}) : e === x.Xb.Nlp15Max ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -6881,7 +6885,7 @@
 						subredditOrProfile: d
 					} = this.props;
 					if (!i) return null;
-					const c = !!s && !Object(x.Fd)(s) && !t,
+					const c = !!s && !Object(x.Gd)(s) && !t,
 						l = {
 							hostPostId: o && o.id,
 							baseUrl: n.base_url,
@@ -9031,7 +9035,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.ob
 				});
-				return !(!t || Object(o.Fd)(t))
+				return !(!t || Object(o.Gd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -9044,8 +9048,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.Tc
-			}) === o.cd.Enabled
+				experimentName: o.Uc
+			}) === o.dd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -9165,8 +9169,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: o.Qc
-				}) === o.ad.Enabled
+					experimentName: o.Rc
+				}) === o.bd.Enabled
 			})(e) && (e => {
 				const t = Object(r.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -9190,4 +9194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.65325ef546b2292805dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9a768d9a6c965bfa2761.js.map

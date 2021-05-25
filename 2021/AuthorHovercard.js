@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.f54b2cf7ca047b890701.js
-// Retrieved at 5/25/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.3a9aa7dcab1ad793431b.js
+// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -1589,9 +1589,9 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(i.Fd)(n))
+				return !(!n || Object(i.Gd)(n))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f54b2cf7ca047b890701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3a9aa7dcab1ad793431b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.9c84b300d6b1121050e7.js
-// Retrieved at 5/25/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e29a44769754eba96ba6.js
+// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -8424,7 +8424,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || c,
-				onClick: () => s === u.md.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
+				onClick: () => s === u.nd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
 				onMouseEnter: r,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -24619,9 +24619,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Ib
+					experimentName: n.Jb
 				});
-				return !(!t || Object(n.Fd)(t))
+				return !(!t || Object(n.Gd)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -24854,4 +24854,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9c84b300d6b1121050e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e29a44769754eba96ba6.js.map

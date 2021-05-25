@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.ca6f2409d97e47790c64.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.c78b62a6bbca0302bcf5.js
+// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -2818,4 +2818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.ca6f2409d97e47790c64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.c78b62a6bbca0302bcf5.js.map

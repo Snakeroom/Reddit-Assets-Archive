@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.2fa07121d8aed9b00248.js
-// Retrieved at 5/25/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.7a2c85f78d867c947d22.js
+// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.2fa07121d8aed9b00248.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.7a2c85f78d867c947d22.js.map

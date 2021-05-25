@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.3d109c3ca54c0192ba9a.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1486e63080ffe0cf43c7.js
+// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -75,7 +75,7 @@
 				O = s("./src/reddit/models/GqlTopLevelField.ts"),
 				y = s("./src/reddit/models/User/index.ts");
 
-			function w(e) {
+			function x(e) {
 				const t = [],
 					s = [],
 					i = {},
@@ -111,7 +111,7 @@
 					subreddits: n
 				}
 			}
-			var x = s("./src/reddit/models/Toast/index.ts"),
+			var w = s("./src/reddit/models/Toast/index.ts"),
 				_ = s("./src/reddit/selectors/profile.ts"),
 				M = s("./src/reddit/selectors/subreddit.ts"),
 				j = s("./src/reddit/selectors/subscriptions.ts"),
@@ -131,7 +131,7 @@
 					e(I());
 					const n = await (e => Object(f.a)(e, v))(s());
 					if (n.ok) {
-						const t = w(n.body.data);
+						const t = x(n.body.data);
 						e(L(t))
 					} else e(T({
 						error: n.error
@@ -161,7 +161,7 @@
 							const e = i.fbt._("You cannot follow yourself!", null, {
 								hk: "3tfSaq"
 							});
-							o(Object(u.f)(Object(u.e)(e, x.b.Error)))
+							o(Object(u.f)(Object(u.e)(e, w.b.Error)))
 						}
 						if (!e.length && !f.length) return
 					}
@@ -219,7 +219,7 @@
 						const n = i.fbt._("Something went wrong. Please try again!", null, {
 							hk: "1zlDeq"
 						});
-						o(Object(u.f)(Object(u.e)(n, x.b.Error)))
+						o(Object(u.f)(Object(u.e)(n, w.b.Error)))
 					}
 				}, H = Object(o.a)(c.f), U = e => async (t, s, {
 					apiContext: i
@@ -265,7 +265,7 @@
 						profileModels: g
 					})), t(Object(u.f)({
 						text: P(),
-						kind: x.b.Error
+						kind: w.b.Error
 					}))))
 				}, D = Object(o.a)(c.d), A = e => async (t, s, {
 					apiContext: i
@@ -274,7 +274,7 @@
 						a = () => {
 							t(Object(u.f)({
 								text: P(),
-								kind: x.b.Error
+								kind: w.b.Error
 							}))
 						},
 						r = o[e];
@@ -312,7 +312,7 @@
 								}))], {
 									hk: "1ufRSl"
 								}),
-								kind: x.b.Error
+								kind: w.b.Error
 							}))
 						},
 						l = r[e];
@@ -428,8 +428,8 @@
 				S = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				O = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx"),
 				y = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				w = s("./src/reddit/constants/chat.ts"),
-				x = s("./src/reddit/constants/keycodes.ts"),
+				x = s("./src/reddit/constants/chat.ts"),
+				w = s("./src/reddit/constants/keycodes.ts"),
 				_ = s("./src/reddit/helpers/trackers/rpan.ts"),
 				M = s("./src/reddit/selectors/media.ts"),
 				j = s("./src/reddit/selectors/platform.ts"),
@@ -476,7 +476,7 @@
 							hasError: !0
 						})
 					}, this.onKeyPress = e => {
-						e.key === x.b.Enter && (e.preventDefault(), e.stopPropagation(), this.handleTogglePaused())
+						e.key === w.b.Enter && (e.preventDefault(), e.stopPropagation(), this.handleTogglePaused())
 					}, this.handleLevelLoaded = e => {
 						const {
 							live: t,
@@ -603,7 +603,7 @@
 						const i = !e.sessionDurationMs ? _.D : _.z,
 							n = {
 								...e,
-								chatState: w.a.None,
+								chatState: x.a.None,
 								playerType: _.a.Feed
 							};
 						this.props.sendEvent(i(s, n))
@@ -1031,7 +1031,22 @@
 				clipRule: "evenodd",
 				d: "M14.9656 14.8328L13.6 13.4672V8.99847C13.6 8.55608 13.2416 8.19848 12.8 8.19848H12V6.59849C12 4.39291 10.2056 2.59853 8 2.59853C6.5712 2.59853 5.328 3.35852 4.624 4.49131L2.1656 2.03294C1.8528 1.72014 1.3472 1.72014 1.0344 2.03294C0.721605 2.34573 0.721605 2.85133 1.0344 3.16413L13.8344 15.964C13.9904 16.12 14.1952 16.1984 14.4 16.1984C14.6048 16.1984 14.8096 16.12 14.9656 15.964C15.2784 15.6512 15.2784 15.1456 14.9656 14.8328ZM4 8.19859H3.2C2.7584 8.19859 2.4 8.55619 2.4 8.99859V14.5986C2.4 15.041 2.7584 15.3986 3.2 15.3986H11.6688L4 7.72979V8.19859ZM10.4 6.59854C10.4 5.27534 9.32319 4.19854 7.99999 4.19854C7.00959 4.19854 6.15839 4.80174 5.79199 5.65934L8.33119 8.19853H10.4V6.59854Z"
 			}))
+		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return o
+			}));
+			var i = s("./src/reddit/constants/experiments.ts"),
+				n = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => t => {
+				const s = Object(n.c)(t, {
+					experimentEligibilitySelector: n.a,
+					experimentName: e
+				});
+				return !(!s || Object(i.Gd)(s))
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.3d109c3ca54c0192ba9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1486e63080ffe0cf43c7.js.map
