@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3463315229c8bbd8b593.js
-// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.403f980b88f210762edf.js
+// Retrieved at 5/25/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -7300,7 +7300,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(K.a)(), a = Object(H.a)(m.Rb) === m.Vb.Enabled;
+					} = t, s = Object(K.a)(), a = Object(H.a)(m.Qb) === m.Ub.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, r.a.createElement(te, e));
@@ -21462,7 +21462,7 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.xb)
+			const r = Object(s.a)(o.wb)
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -21476,14 +21476,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ec
-					}) === o.Oc.Enabled
+						experimentName: o.Dc
+					}) === o.Nc.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Dc
-					}) === o.Nc.Enabled
+						experimentName: o.Cc
+					}) === o.Mc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -22238,4 +22238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3463315229c8bbd8b593.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.403f980b88f210762edf.js.map

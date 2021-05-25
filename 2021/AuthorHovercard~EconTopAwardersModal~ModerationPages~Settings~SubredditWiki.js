@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a7cc1441c556c4573959.js
-// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.2fa07121d8aed9b00248.js
+// Retrieved at 5/25/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -1466,7 +1466,7 @@
 				p = r("./src/reddit/icons/svgs/Settings/index.tsx"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				v = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const f = Object(v.a)(b.rb);
+			const f = Object(v.a)(b.qb);
 			var x = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				h = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				I = r("./node_modules/react-router/esm/react-router.js"),
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a7cc1441c556c4573959.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.2fa07121d8aed9b00248.js.map
