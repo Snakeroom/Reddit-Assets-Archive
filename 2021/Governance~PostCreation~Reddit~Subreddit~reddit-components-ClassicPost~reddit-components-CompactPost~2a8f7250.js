@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.df52c641ef9d83b49317.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.a492ec3b87650dc4d986.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -1507,7 +1507,7 @@
 								experimentName: o.x,
 								expEventOverride: t
 							});
-							return !!(Object(o.Id)(s) ? void 0 : s)
+							return !!(Object(o.Gd)(s) ? void 0 : s)
 						})(s)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2588,16 +2588,16 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(n.a)(r.Eb),
-				i = Object(n.a)(r.Hb),
-				a = Object(n.a)(r.Cb),
-				c = Object(n.a)(r.Fb),
-				d = Object(n.a)(r.Db),
-				l = Object(n.a)(r.Gb),
-				m = Object(n.a)(r.Ib),
-				u = Object(n.a)(r.wb),
-				p = Object(n.a)(r.vb);
-			Object(n.a)(r.xb)
+			const o = Object(n.a)(r.Cb),
+				i = Object(n.a)(r.Fb),
+				a = Object(n.a)(r.Ab),
+				c = Object(n.a)(r.Db),
+				d = Object(n.a)(r.Bb),
+				l = Object(n.a)(r.Eb),
+				m = Object(n.a)(r.Gb),
+				u = Object(n.a)(r.ub),
+				p = Object(n.a)(r.tb);
+			Object(n.a)(r.vb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, s) {
 			"use strict";
@@ -2611,9 +2611,9 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: e
 				});
-				return !(!s || Object(r.Id)(s))
+				return !(!s || Object(r.Gd)(s))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.df52c641ef9d83b49317.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.a492ec3b87650dc4d986.js.map

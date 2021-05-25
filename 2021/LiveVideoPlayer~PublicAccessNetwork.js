@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.21a3e7f2f5c722cc3a67.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.02746c61fb8c09ba5fd4.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -1593,7 +1593,7 @@
 				"aria-label": U._("Upvote", null, {
 					hk: "Ufd6r"
 				})
-			}, n.a.createElement(k.b, {
+			}, n.a.createElement(k.a, {
 				className: H.a.voteIcon
 			})), ce = ({
 				onClick: e,
@@ -1607,7 +1607,7 @@
 				"aria-label": U._("Downvote", null, {
 					hk: "ZDRA3"
 				})
-			}, n.a.createElement(x.b, {
+			}, n.a.createElement(x.a, {
 				className: H.a.voteIcon
 			})), de = ({
 				score: e
@@ -2664,4 +2664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.21a3e7f2f5c722cc3a67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork.02746c61fb8c09ba5fd4.js.map

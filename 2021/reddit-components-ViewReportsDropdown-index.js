@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.16dd552d556947049e56.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.4dfa49ce9f43911c9772.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -14,7 +14,7 @@
 			})), s.d(t, "e", (function() {
 				return P
 			})), s.d(t, "h", (function() {
-				return U
+				return D
 			})), s.d(t, "l", (function() {
 				return L
 			})), s.d(t, "q", (function() {
@@ -120,7 +120,7 @@
 						commentId: e
 					}), A);
 					I[e] = d
-				}, U = (e, t) => async (s, n) => {
+				}, D = (e, t) => async (s, n) => {
 					const o = n(),
 						d = T(e);
 					if (Object(R.a)(o, {
@@ -129,7 +129,7 @@
 						const s = r.c.end(d);
 						!t && s < A && (clearTimeout(I[e]), delete I[e])
 					}
-				}, D = Object(d.a)(E.x), B = Object(d.a)(E.w), N = Object(d.a)(E.v), L = (e, t) => async (s, n, {
+				}, U = Object(d.a)(E.x), B = Object(d.a)(E.w), N = Object(d.a)(E.v), L = (e, t) => async (s, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
@@ -142,7 +142,7 @@
 						} = u ? u.params : null;
 					if (!p) return;
 					const b = Object(h.s)(p);
-					s(D({
+					s(U({
 						moreCommentsId: d.id
 					}));
 					const j = await Object(f.e)(o(), b, {
@@ -658,8 +658,8 @@
 				A = s("./src/reddit/components/Reports/index.m.less"),
 				P = s.n(A);
 			const {
-				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = d.a.div("ReportText", P.a), B = d.a.div("ReportsTitle", P.a);
+				fbt: D
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.div("ReportText", P.a), B = d.a.div("ReportsTitle", P.a);
 
 			function N(e) {
 				const {
@@ -672,13 +672,13 @@
 					className: t
 				}, s && s.length > 0 && o.a.createElement("div", {
 					className: P.a.Reports
-				}, o.a.createElement(B, null, U._("Moderator Reports", null, {
+				}, o.a.createElement(B, null, D._("Moderator Reports", null, {
 					hk: "3hZ0oX"
-				})), s.map(([e, t]) => o.a.createElement(D, {
+				})), s.map(([e, t]) => o.a.createElement(U, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), n && n.length > 0 && o.a.createElement("div", {
 					className: P.a.Reports
-				}, o.a.createElement(B, null, U._("User Reports", null, {
+				}, o.a.createElement(B, null, D._("User Reports", null, {
 					hk: "2KeCLz"
 				})), o.a.createElement("div", {
 					className: P.a.UserReports
@@ -688,7 +688,7 @@
 					amount: t,
 					reportedThingId: d,
 					isSnoozed: s
-				}) : o.a.createElement(D, {
+				}) : o.a.createElement(U, {
 					key: `user-${e}`
 				}, `${t}: ${e}`)))))
 			}
@@ -1081,7 +1081,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(o.a)(n.zb)
+			const r = Object(o.a)(n.xb)
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, s) {
 			"use strict";
@@ -1095,14 +1095,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Gc
-					}) === n.Qc.Enabled
+						experimentName: n.Ec
+					}) === n.Oc.Enabled
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Fc
-					}) === n.Pc.Enabled
+						experimentName: n.Dc
+					}) === n.Nc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1131,4 +1131,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.16dd552d556947049e56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.4dfa49ce9f43911c9772.js.map

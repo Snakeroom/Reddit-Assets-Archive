@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.85661aebf3069bfa98c2.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.1804c6576069cd85ad0d.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -927,7 +927,7 @@
 				}) => !1 !== e, p);
 			var f = e => {
 					const t = Object(d.a)();
-					return r.a.createElement(c.b, {
+					return r.a.createElement(c.a, {
 						className: h(e),
 						compact: e.compact,
 						isFilled: t && b(e)
@@ -948,7 +948,7 @@
 				}) => !1 !== e, g);
 			var C = e => {
 					const t = Object(d.a)();
-					return r.a.createElement(x.b, {
+					return r.a.createElement(x.a, {
 						className: E(e),
 						compact: e.compact,
 						isFilled: t && _(e)
@@ -1608,9 +1608,6 @@
 		},
 		"./src/reddit/icons/fonts/Downvote/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return l
-			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
@@ -1630,7 +1627,7 @@
 			const l = e => r.a.createElement("i", {
 				className: Object(o.a)(Object(i.b)("downvote", e.isFilled), d.a.downvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...n
@@ -1673,9 +1670,6 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return l
-			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
@@ -1695,7 +1689,7 @@
 			const l = e => r.a.createElement("i", {
 				className: Object(o.a)(Object(i.b)("upvote", e.isFilled), d.a.upvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...n
@@ -2373,11 +2367,11 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.ic.Enabled === Object(r.c)(e, {
+			const o = e => s.gc.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.ec
+				experimentName: s.cc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.85661aebf3069bfa98c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.1804c6576069cd85ad0d.js.map

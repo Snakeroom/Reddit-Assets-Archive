@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.19630de908a53f8c28ab.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a2a5f90a4842b2401901.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const h = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.rc
+					experimentName: u.pc
 				});
-				return Object(u.Id)(t) ? void 0 : t
+				return Object(u.Gd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.sc
+					experimentName: u.qc
 				});
-				return Object(u.Id)(t) ? void 0 : t
-			}, (e, t) => e === u.tc.Enabled && t === u.tc.Enabled);
+				return Object(u.Gd)(t) ? void 0 : t
+			}, (e, t) => e === u.rc.Enabled && t === u.rc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -3051,7 +3051,7 @@
 				"aria-label": W._("Upvote", null, {
 					hk: "Ufd6r"
 				})
-			}, n.a.createElement(O.b, {
+			}, n.a.createElement(O.a, {
 				className: H.a.voteIcon
 			})), ce = ({
 				onClick: e,
@@ -3065,7 +3065,7 @@
 				"aria-label": W._("Downvote", null, {
 					hk: "ZDRA3"
 				})
-			}, n.a.createElement(w.b, {
+			}, n.a.createElement(w.a, {
 				className: H.a.voteIcon
 			})), de = ({
 				score: e
@@ -5127,4 +5127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.19630de908a53f8c28ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a2a5f90a4842b2401901.js.map

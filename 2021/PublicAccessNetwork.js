@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.293ba50b2fdfe1858348.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.dc3256e6ac3210c69af2.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.rc
+					experimentName: m.pc
 				});
-				return Object(m.Id)(t) ? void 0 : t
+				return Object(m.Gd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.sc
+					experimentName: m.qc
 				});
-				return Object(m.Id)(t) ? void 0 : t
-			}, (e, t) => e === m.tc.Enabled && t === m.tc.Enabled);
+				return Object(m.Gd)(t) ? void 0 : t
+			}, (e, t) => e === m.rc.Enabled && t === m.rc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -4044,7 +4044,7 @@
 						"aria-label": b.fbt._("Upvote", null, {
 							hk: "4ijw7j"
 						})
-					}, o.a.createElement(Rs.b, {
+					}, o.a.createElement(Rs.a, {
 						className: Is.a.voteIcon
 					})), o.a.createElement("p", {
 						className: Is.a.votesCounter
@@ -4069,7 +4069,7 @@
 						"aria-label": b.fbt._("Dpvote", null, {
 							hk: "1PcDeu"
 						})
-					}, o.a.createElement(xs.b, {
+					}, o.a.createElement(xs.a, {
 						className: Is.a.voteIcon
 					})), o.a.createElement("p", {
 						className: Is.a.votesCounter
@@ -5883,8 +5883,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: a.Tc
-				}) === a.dd.Enabled
+					experimentName: a.Rc
+				}) === a.bd.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -5892,4 +5892,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.293ba50b2fdfe1858348.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.dc3256e6ac3210c69af2.js.map

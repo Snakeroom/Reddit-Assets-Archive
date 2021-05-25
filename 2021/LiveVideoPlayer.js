@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a030936717faa8b0c850.js
-// Retrieved at 5/20/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.3d109c3ca54c0192ba9a.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -845,9 +845,6 @@
 		},
 		"./src/reddit/icons/fonts/Downvote/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return c
-			}));
 			var i = s("./node_modules/react/index.js"),
 				n = s.n(i),
 				o = s("./src/lib/classNames/index.ts"),
@@ -867,7 +864,7 @@
 			const c = e => n.a.createElement("i", {
 				className: Object(o.a)(Object(a.b)("downvote", e.isFilled), d.a.downvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...s
@@ -892,9 +889,6 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return c
-			}));
 			var i = s("./node_modules/react/index.js"),
 				n = s.n(i),
 				o = s("./src/lib/classNames/index.ts"),
@@ -914,7 +908,7 @@
 			const c = e => n.a.createElement("i", {
 				className: Object(o.a)(Object(a.b)("upvote", e.isFilled), d.a.upvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...s
@@ -1040,4 +1034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a030936717faa8b0c850.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.3d109c3ca54c0192ba9a.js.map

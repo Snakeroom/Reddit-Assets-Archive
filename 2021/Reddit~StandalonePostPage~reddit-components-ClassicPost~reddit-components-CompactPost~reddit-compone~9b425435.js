@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7807d108e27886eb65d6.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.3d0271e16846a5aeebb9.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -854,7 +854,7 @@
 				}) => !1 !== e, p);
 			var h = e => {
 					const t = Object(i.a)();
-					return s.a.createElement(d.b, {
+					return s.a.createElement(d.a, {
 						className: b(e),
 						compact: e.compact,
 						isFilled: t && f(e)
@@ -875,7 +875,7 @@
 				}) => !1 !== e, x);
 			var y = e => {
 					const t = Object(i.a)();
-					return s.a.createElement(v.b, {
+					return s.a.createElement(v.a, {
 						className: O(e),
 						compact: e.compact,
 						isFilled: t && j(e)
@@ -2067,9 +2067,6 @@
 		},
 		"./src/reddit/icons/fonts/Downvote/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return l
-			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				o = n("./src/lib/classNames/index.ts"),
@@ -2089,7 +2086,7 @@
 			const l = e => s.a.createElement("i", {
 				className: Object(o.a)(Object(a.b)("downvote", e.isFilled), i.a.downvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...n
@@ -2133,9 +2130,6 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return l
-			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				o = n("./src/lib/classNames/index.ts"),
@@ -2155,7 +2149,7 @@
 			const l = e => s.a.createElement("i", {
 				className: Object(o.a)(Object(a.b)("upvote", e.isFilled), i.a.upvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...n
@@ -2587,9 +2581,9 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.ic.Enabled === Object(s.c)(e, {
+			const o = e => r.gc.Enabled === Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.ec
+				experimentName: r.cc
 			})
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2945,4 +2939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7807d108e27886eb65d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.3d0271e16846a5aeebb9.js.map

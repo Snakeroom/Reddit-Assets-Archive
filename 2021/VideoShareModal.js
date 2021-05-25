@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.f7cf498cbe0e95a8746b.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.ff1e0caf1a314e1dba5b.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -931,7 +931,7 @@
 				"aria-label": H._("Upvote", null, {
 					hk: "Ufd6r"
 				})
-			}, n.a.createElement(k.b, {
+			}, n.a.createElement(k.a, {
 				className: U.a.voteIcon
 			})), ie = ({
 				onClick: e,
@@ -945,7 +945,7 @@
 				"aria-label": H._("Downvote", null, {
 					hk: "ZDRA3"
 				})
-			}, n.a.createElement(E.b, {
+			}, n.a.createElement(E.a, {
 				className: U.a.voteIcon
 			})), le = ({
 				score: e
@@ -1084,9 +1084,6 @@
 		},
 		"./src/reddit/icons/fonts/Downvote/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return d
-			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
 				r = s("./src/lib/classNames/index.ts"),
@@ -1106,7 +1103,7 @@
 			const d = e => n.a.createElement("i", {
 				className: Object(r.a)(Object(o.b)("downvote", e.isFilled), i.a.downvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...s
@@ -1131,9 +1128,6 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return d
-			}));
 			var a = s("./node_modules/react/index.js"),
 				n = s.n(a),
 				r = s("./src/lib/classNames/index.ts"),
@@ -1153,7 +1147,7 @@
 			const d = e => n.a.createElement("i", {
 				className: Object(r.a)(Object(o.b)("upvote", e.isFilled), i.a.upvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...s
@@ -1661,4 +1655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.f7cf498cbe0e95a8746b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.ff1e0caf1a314e1dba5b.js.map

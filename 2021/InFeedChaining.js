@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.59b6e9812b12c1c6d7c8.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.f8b45d65e377a2d763ae.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4155,12 +4155,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.sd.SmIcon:
+						case b.qd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.sd.SmIconHc:
+						case b.qd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4225,7 +4225,7 @@
 				}) => !1 !== e, p);
 			var f = e => {
 					const t = Object(c.a)();
-					return r.a.createElement(l.b, {
+					return r.a.createElement(l.a, {
 						className: b(e),
 						compact: e.compact,
 						isFilled: t && h(e)
@@ -4246,7 +4246,7 @@
 				}) => !1 !== e, g);
 			var j = e => {
 					const t = Object(c.a)();
-					return r.a.createElement(v.b, {
+					return r.a.createElement(v.a, {
 						className: w(e),
 						compact: e.compact,
 						isFilled: t && _(e)
@@ -4616,9 +4616,6 @@
 		},
 		"./src/reddit/icons/fonts/Downvote/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return d
-			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./src/lib/classNames/index.ts"),
@@ -4638,7 +4635,7 @@
 			const d = e => r.a.createElement("i", {
 				className: Object(i.a)(Object(o.b)("downvote", e.isFilled), c.a.downvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...s
@@ -4663,9 +4660,6 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return d
-			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./src/lib/classNames/index.ts"),
@@ -4685,7 +4679,7 @@
 			const d = e => r.a.createElement("i", {
 				className: Object(i.a)(Object(o.b)("upvote", e.isFilled), c.a.upvote, e.className)
 			});
-			t.b = ({
+			t.a = ({
 				compact: e,
 				isFilled: t,
 				...s
@@ -4909,12 +4903,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.ld
+						experimentName: n.jd
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.sd.SmIcon || t === n.sd.SmIconHc
+					return t === n.qd.SmIcon || t === n.qd.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4937,4 +4931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.59b6e9812b12c1c6d7c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.f8b45d65e377a2d763ae.js.map

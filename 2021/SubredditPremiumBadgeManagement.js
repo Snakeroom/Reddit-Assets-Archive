@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.7ff63d20d27514589c53.js
-// Retrieved at 5/20/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.6f973f20d65a3992ae74.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, s) {
@@ -2190,9 +2190,9 @@
 						className: yt.a.commentPreview
 					}, n.a.createElement("div", {
 						className: yt.a.voteContainer
-					}, n.a.createElement(Ve.b, {
+					}, n.a.createElement(Ve.a, {
 						className: yt.a.vote
-					}), n.a.createElement(We.b, {
+					}), n.a.createElement(We.a, {
 						className: yt.a.vote
 					})), a && n.a.createElement(n.a.Fragment, null, n.a.createElement(qe.a, {
 						className: yt.a.radialHighlightOuter,
@@ -3497,4 +3497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.7ff63d20d27514589c53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.6f973f20d65a3992ae74.js.map

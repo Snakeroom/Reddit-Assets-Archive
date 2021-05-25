@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0d8da02e6ed1b16b2f54.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.ce59e5373afb1f404162.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, s) {
@@ -34,19 +34,19 @@
 				b = s("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
 				x = s("./src/reddit/controls/Button/index.tsx"),
 				I = s("./src/reddit/controls/InternalLink/index.tsx"),
-				_ = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				E = s("./src/reddit/icons/fonts/index.tsx"),
+				E = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
+				_ = s("./src/reddit/icons/fonts/index.tsx"),
 				O = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
 				f = s("./src/reddit/icons/svgs/Media/index.tsx"),
-				h = s("./src/reddit/selectors/experiments/presenceIndicator.ts"),
-				v = s("./src/reddit/selectors/subreddit.ts"),
-				N = s("./src/reddit/selectors/telemetry.ts"),
+				N = s("./src/reddit/selectors/experiments/presenceIndicator.ts"),
+				h = s("./src/reddit/selectors/subreddit.ts"),
+				v = s("./src/reddit/selectors/telemetry.ts"),
 				g = s("./src/reddit/selectors/user.ts"),
 				U = s("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				C = s.n(U);
 
-			function P() {
-				return (P = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -54,11 +54,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
-			var k;
+			const k = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
+			var P;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
-			}(k || (k = {}));
+			}(P || (P = {}));
 			const M = e => {
 					switch (e) {
 						case d.Ob.MEDIA:
@@ -81,10 +81,10 @@
 				},
 				y = Object(a.c)({
 					currentUser: g.i,
-					isPresenceConsumptionExpEnabled: h.a,
+					isPresenceConsumptionExpEnabled: N.a,
 					isPresenceTogglePref: g.hb,
-					subreddit: v.A,
-					subredditAboutInfo: v.x
+					subreddit: h.A,
+					subredditAboutInfo: h.x
 				}),
 				L = Object(o.b)(y, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -109,9 +109,9 @@
 				subredditName: l,
 				toggleTooltip: u
 			}) => {
-				const p = Object(_.a)(),
+				const p = Object(E.a)(),
 					b = (l ? `/r/${l}` : "") + "/submit",
-					h = function(e, t) {
+					N = function(e, t) {
 						if (!e) return {
 							link: !0,
 							media: !0
@@ -131,22 +131,22 @@
 							media: (c || n) && !e.isNSFW
 						}
 					}(i, a),
-					v = e => {
+					h = e => {
 						o(t => ({
 							source: "post_composer_du",
 							action: "click",
 							noun: w(e),
-							...N.defaults(t)
+							...v.defaults(t)
 						}))
 					},
 					g = () => {
-						v(d.Ob.POST), r(b)
+						h(d.Ob.POST), r(b)
 					},
 					U = t && s,
 					y = e ? c.a.createElement(I.a, {
 						className: C.a.UserIconWrapper,
 						to: e.url
-					}, c.a.createElement(j, {
+					}, c.a.createElement(k, {
 						className: C.a.UserIcon,
 						shouldShowPresenceIndicator: U
 					})) : null;
@@ -162,43 +162,43 @@
 						hk: "OcnKS"
 					}),
 					type: "text"
-				}), h.media && c.a.createElement(x.q, {
+				}), N.media && c.a.createElement(x.q, {
 					className: C.a.Button,
 					"aria-label": A(),
 					priority: x.b.Plain,
 					kind: x.a.InternalLink,
 					size: x.c.M,
-					id: k.Media,
-					onClick: () => v(d.Ob.MEDIA),
-					onMouseEnter: () => u(k.Media),
-					onMouseLeave: () => u(k.Media),
+					id: P.Media,
+					onClick: () => h(d.Ob.MEDIA),
+					onMouseEnter: () => u(P.Media),
+					onMouseLeave: () => u(P.Media),
 					to: b + M(d.Ob.MEDIA),
-					Icon: p ? e => c.a.createElement(E.a, P({
+					Icon: p ? e => c.a.createElement(_.a, j({
 						name: "image_post"
 					}, e)) : f.a,
 					isSquare: !0
 				}, c.a.createElement(m.c, {
 					caretOnTop: !0,
-					tooltipId: k.Media,
+					tooltipId: P.Media,
 					text: A()
-				})), h.link && c.a.createElement(x.q, {
+				})), N.link && c.a.createElement(x.q, {
 					className: C.a.Button,
 					priority: x.b.Plain,
 					kind: x.a.InternalLink,
 					size: x.c.M,
 					"aria-label": F(),
-					id: k.Link,
-					onClick: () => v(d.Ob.LINK_ONLY),
-					onMouseEnter: () => u(k.Link),
-					onMouseLeave: () => u(k.Link),
+					id: P.Link,
+					onClick: () => h(d.Ob.LINK_ONLY),
+					onMouseEnter: () => u(P.Link),
+					onMouseLeave: () => u(P.Link),
 					to: b + M(d.Ob.LINK_ONLY),
-					Icon: p ? e => c.a.createElement(E.a, P({
+					Icon: p ? e => c.a.createElement(_.a, j({
 						name: "link_post"
 					}, e)) : O.a,
 					isSquare: !0
 				}, c.a.createElement(m.c, {
 					caretOnTop: !0,
-					tooltipId: k.Media,
+					tooltipId: P.Media,
 					text: A()
 				})))
 			}))
@@ -233,8 +233,8 @@
 					isPresenceUserPrefEnabled: d.hb,
 					shouldHideNSFW: d.B
 				}),
-				_ = Object(o.b)(I);
-			t.a = _(e => {
+				E = Object(o.b)(I);
+			t.a = E(e => {
 				const {
 					currentUser: t,
 					shouldShowPresenceIndicator: s,
@@ -304,16 +304,16 @@
 			const c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Gc
-					}) === n.Qc.Enabled
+						experimentName: n.Ec
+					}) === n.Oc.Enabled
 				},
 				o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.Fc
-					}) === n.Pc.Enabled
+						experimentName: n.Dc
+					}) === n.Nc.Enabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0d8da02e6ed1b16b2f54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.ce59e5373afb1f404162.js.map

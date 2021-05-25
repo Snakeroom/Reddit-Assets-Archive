@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c9cfe7711c761fefa3d5.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.50f28e993c7d12ccfe66.js
+// Retrieved at 5/25/2021, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1525,7 +1525,7 @@
 				g = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				_ = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const x = Object(_.a)(f.Bb);
+			const x = Object(_.a)(f.zb);
 			var v = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				y = r("./src/reddit/selectors/subreddit.ts"),
 				w = r("./src/reddit/selectors/user.ts"),
@@ -2095,12 +2095,12 @@
 				}))),
 				J = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				$ = r("./src/higherOrderComponents/makeAsync.tsx");
-			var Y = Object($.a)({
+			var K = Object($.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => r.e("HarbergerTaxBannerPurchaseCTA").then(r.bind(null, "./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.tsx")).then(e => e.default)
 				}),
-				K = r("./src/reddit/constants/postLayout.ts"),
+				Y = r("./src/reddit/constants/postLayout.ts"),
 				X = r("./src/reddit/constants/screenWidths.ts"),
 				Q = r("./src/reddit/models/Theme/index.ts"),
 				ee = r("./src/reddit/models/Theme/NewColorSystem/index.ts");
@@ -2125,9 +2125,9 @@
 				}, s.a.createElement("div", {
 					className: g.a.innerContainer,
 					style: {
-						maxWidth: e.disableFullscreen || e.layout === K.g.Large ? `${e.maxWidth||X.a}px` : "100%"
+						maxWidth: e.disableFullscreen || e.layout === Y.g.Large ? `${e.maxWidth||X.a}px` : "100%"
 					}
-				}, s.a.createElement("div", null, e.children), s.a.createElement(Y, null))),
+				}, s.a.createElement("div", null, e.children), s.a.createElement(K, null))),
 				ne = r("./src/reddit/constants/wiki.ts"),
 				se = r("./src/reddit/helpers/trackers/subredditWiki.ts");
 			const {
@@ -2970,7 +2970,7 @@
 				}),
 				J = Object(i.b)(Z),
 				$ = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
-			class Y extends s.a.Component {
+			class K extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
 						this.iframe = e
@@ -3007,7 +3007,7 @@
 					}))
 				}
 			}
-			var K = J(Y),
+			var Y = J(K),
 				X = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				Q = r.n(X);
 			var ee = m.a.div("ImageFrame", Q.a),
@@ -3183,7 +3183,7 @@
 						case "image":
 							return ie;
 						case "custom":
-							return K;
+							return Y;
 						case "post-flair":
 							return Ce.a;
 						default:
@@ -3910,8 +3910,8 @@
 			const o = e => s.e[Object(i.O)(e, {})] === s.d.Card,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.L
-				}) === n.db.Treatment
+					experimentName: n.K
+				}) === n.bb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -3967,4 +3967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c9cfe7711c761fefa3d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.50f28e993c7d12ccfe66.js.map
