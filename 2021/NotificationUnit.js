@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.60cecb882d5cc78cb9b7.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.b8439f9fe09044ba22df.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, a) {
@@ -499,7 +499,7 @@
 					var t, a, n, N, A, C;
 					const I = Object(v.a)(),
 						M = Object(f.d)(),
-						H = Object(f.e)(w.V),
+						H = Object(f.e)(w.W),
 						[_, U] = Object(o.useState)(!1),
 						{
 							activeOverflowMenuId: y,
@@ -873,4 +873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.60cecb882d5cc78cb9b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.b8439f9fe09044ba22df.js.map

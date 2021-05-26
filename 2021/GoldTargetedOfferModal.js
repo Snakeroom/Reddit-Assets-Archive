@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.368b7a176a742fc9d7c9.js
-// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0d4d26940ba4017d80a1.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -476,7 +476,7 @@
 				}) => {
 					t(p());
 					const d = r(),
-						l = Object(i.J)(d);
+						l = Object(i.K)(d);
 					try {
 						const r = !l,
 							n = await Object(s.b)({
@@ -927,4 +927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.368b7a176a742fc9d7c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0d4d26940ba4017d80a1.js.map

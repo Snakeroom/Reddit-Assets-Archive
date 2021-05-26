@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.8ca3e89df15da4ca5454.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.ade7e1e36ca7ee0991a5.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -717,7 +717,7 @@
 			var at = e => {
 					const t = ["control_1", "control_2", ...ze.k[e.experimentName]];
 					if (!t) return null;
-					const n = ze.Lb.has(e.experimentName);
+					const n = ze.Nb.has(e.experimentName);
 					return a.a.createElement(G.a, {
 						className: e.className
 					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -1009,7 +1009,7 @@
 							return ""
 					}
 				},
-				dn = Object(h.a)(Yt.i, e => ({
+				dn = Object(h.a)(Yt.j, e => ({
 					user: e
 				}));
 			var mn = Object(u.b)(dn)(e => a.a.createElement("div", {
@@ -1801,4 +1801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.8ca3e89df15da4ca5454.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.ade7e1e36ca7ee0991a5.js.map

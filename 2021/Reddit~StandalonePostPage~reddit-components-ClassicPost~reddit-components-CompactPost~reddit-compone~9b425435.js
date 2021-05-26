@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4bedeb5f50534d2e6b32.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2e5a44661e12befa987a.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -688,7 +688,7 @@
 				v = n("./src/reddit/components/VerticalVotes/index.m.less"),
 				g = n.n(v);
 			const w = Object(c.c)({
-					isNightMode: h.V,
+					isNightMode: h.W,
 					totalDiscount: b.d,
 					variantAnimationConfig: b.e
 				}),
@@ -2581,9 +2581,9 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.gc.Enabled === Object(s.c)(e, {
+			const o = e => r.ic.Enabled === Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.cc
+				experimentName: r.ec
 			})
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2690,7 +2690,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const r = Object(c.mb)(e, {
+					const r = Object(c.nb)(e, {
 						userName: n
 					});
 					if (r && r.awardedLastMonth && r.awardedLastMonth.topAward) return p(e, {
@@ -2939,4 +2939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4bedeb5f50534d2e6b32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2e5a44661e12befa987a.js.map

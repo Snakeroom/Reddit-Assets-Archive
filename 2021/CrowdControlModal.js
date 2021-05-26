@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.1619763727dbf1ceeab5.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.6b360e4a031d15c49d85.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -177,8 +177,8 @@
 				}, s.a.createElement(m.b, null))),
 				v = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				g = n("./src/reddit/components/MiniPost/index.tsx"),
-				w = n("./src/reddit/components/Settings/shared/Widgets.tsx");
-			const E = {
+				E = n("./src/reddit/components/Settings/shared/Widgets.tsx");
+			const w = {
 				0: {
 					key: "OFF",
 					text: "Off",
@@ -221,22 +221,22 @@
 					postId: t.id,
 					showSubreddit: !0,
 					crowdControlPreview: !0
-				})), s.a.createElement(w.i, {
+				})), s.a.createElement(E.i, {
 					direction: "column",
 					inModal: !0,
-					ticks: E,
+					ticks: w,
 					min: 0,
-					max: Object.keys(E).length - 1,
+					max: Object.keys(w).length - 1,
 					step: 1,
 					value: n,
 					onChange: e => l(e.target.value, "crowdControlLevel"),
 					label: r.fbt._("Adjust Crowd Control", null, {
 						hk: "4oJUSP"
 					}),
-					subtext: r.fbt._("{subText}", [r.fbt._param("subText", E[n].subText)], {
+					subtext: r.fbt._("{subText}", [r.fbt._param("subText", w[n].subText)], {
 						hk: "3ZFhAV"
 					})
-				}), void 0 !== a && s.a.createElement(m.c, null, r.fbt._("Community level Crowd Control is set to {subredditCrowdControl} .", [r.fbt._param("subredditCrowdControl", s.a.createElement("strong", null, E[a].text))], {
+				}), void 0 !== a && s.a.createElement(m.c, null, r.fbt._("Community level Crowd Control is set to {subredditCrowdControl} .", [r.fbt._param("subredditCrowdControl", s.a.createElement("strong", null, w[a].text))], {
 					hk: "3E3xPV"
 				}), " ", r.fbt._("{=Edit}", [r.fbt._param("=Edit", s.a.createElement(v.a, {
 					to: `${o}about/edit?page=safety`
@@ -288,7 +288,7 @@
 			class A extends s.a.Component {
 				constructor(e) {
 					super(e), this.onCrowdControlLevelUpdate = (e, t, n = !0) => {
-						const r = E[e].key;
+						const r = w[e].key;
 						this.setState({
 							currentCrowdControlLevel: r
 						})
@@ -360,7 +360,7 @@
 						onCrowdControlLevelUpdate: u
 					} = this;
 					let p;
-					return a && (p = Object.entries(E).filter(e => e[1].key === a)[0][0]), s.a.createElement(m.d, {
+					return a && (p = Object.entries(w).filter(e => e[1].key === a)[0][0]), s.a.createElement(m.d, {
 						className: R.a.body
 					}, e && s.a.createElement(s.a.Fragment, null, s.a.createElement(f, {
 						onCloseClicked: d
@@ -669,8 +669,8 @@
 				v = n("./src/reddit/controls/Select/index.m.less"),
 				g = n.n(v);
 
-			function w() {
-				return (w = Object.assign || function(e) {
+			function E() {
+				return (E = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -678,7 +678,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = C.a.span("Wrapper", g.a),
+			const w = C.a.span("Wrapper", g.a),
 				_ = C.a.select("Inner", g.a),
 				k = C.a.wrapped(f.b, "Caret", g.a);
 
@@ -690,11 +690,11 @@
 				const r = n.disabled ? {
 					"data-disabled": n.disabled
 				} : {};
-				return a.a.createElement(E, {
+				return a.a.createElement(w, {
 					className: e
-				}, a.a.createElement(_, w({
+				}, a.a.createElement(_, E({
 					className: t
-				}, n)), a.a.createElement(k, w({
+				}, n)), a.a.createElement(k, E({
 					isSubreddit: !0
 				}, r)))
 			}
@@ -804,7 +804,7 @@
 				ce = C.a.div("TickText", A.a),
 				me = C.a.div("PreSubText", A.a),
 				ue = Object(l.c)({
-					isNightModeOn: D.V
+					isNightModeOn: D.W
 				}),
 				pe = Object(s.b)(ue)(e => a.a.createElement(K, {
 					last: e.last,
@@ -879,11 +879,11 @@
 				fe = C.a.wrapped(b.b, "DropdownRow", A.a),
 				ve = C.a.span("Row", A.a),
 				ge = C.a.wrapped(f.b, "DropdownTriangle", A.a),
-				we = C.a.div("DescriptionsRow", A.a),
-				Ee = Object(l.c)({
+				Ee = C.a.div("DescriptionsRow", A.a),
+				we = Object(l.c)({
 					isOpen: (e, t) => Object(P.b)(t.id)(e)
 				}),
-				_e = Object(s.b)(Ee, (e, t) => ({
+				_e = Object(s.b)(we, (e, t) => ({
 					openDropdown: () => {
 						e(Object(d.h)({
 							tooltipId: t.id
@@ -908,34 +908,41 @@
 					isSelected: e.selected === t,
 					onClick: () => e.onClick(t),
 					key: n
-				}))), e.descriptions && a.a.createElement(we, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
+				}))), e.descriptions && a.a.createElement(Ee, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
 				ke = ({
 					disabled: e,
 					last: t,
-					onChange: n,
-					...s
+					onClick: n,
+					onChange: s,
+					...o
 				}) => {
-					const o = Object(r.useCallback)(e => n(e.target.value), [n]),
+					const l = Object(r.useCallback)(e => s(e.target.value), [s]),
 						{
-							items: l
-						} = s;
+							items: i
+						} = o;
 					return a.a.createElement(K, {
 						disabled: e
-					}, a.a.createElement(q, null, a.a.createElement(V, null, s.label), a.a.createElement(z, null, s.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(q, null, a.a.createElement("label", {
+						htmlFor: o.id
+					}, a.a.createElement(V, null, o.label)), a.a.createElement(z, null, o.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), a.a.createElement(K, {
 						last: t,
 						indent: !0,
 						disabled: e
 					}, a.a.createElement(N, {
+						id: o.id,
 						className: "redditStyle",
-						disabled: e || s.inputDisabled,
-						onChange: o,
-						value: s.selected
-					}, Object.keys(l).map(e => a.a.createElement("option", {
+						disabled: e || o.inputDisabled,
+						onChange: l,
+						value: o.selected
+					}, i.map(({
+						value: e,
+						displayName: t
+					}) => a.a.createElement("option", {
 						key: e,
 						value: e
-					}, l[e].displayName)))))
+					}, t)))))
 				},
 				Ne = e => a.a.createElement(K, {
 					className: e.className,
@@ -1061,7 +1068,7 @@
 			})), n.d(t, "d", (function() {
 				return g
 			})), n.d(t, "j", (function() {
-				return w
+				return E
 			}));
 			var r = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -1081,7 +1088,7 @@
 				f = r.a.div("FormElementDescription", s.a),
 				v = r.a.div("FormElementError", s.a),
 				g = r.a.div("FormElementSubGroup", s.a),
-				w = r.a.li("FormListItem", s.a)
+				E = r.a.li("FormListItem", s.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -1321,8 +1328,8 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				w = n("./src/reddit/controls/ErrorText/index.m.less"),
-				E = n.n(w);
+				E = n("./src/reddit/controls/ErrorText/index.m.less"),
+				w = n.n(E);
 			const _ = Object(m.c)({
 				activeModalId: x.a
 			});
@@ -1368,12 +1375,12 @@
 						textHasOverflowed: i
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(u.a)(E.a.wrapper, n)
+						className: Object(u.a)(w.a.wrapper, n)
 					}, d.a.createElement("span", {
-						className: E.a.description,
+						className: w.a.description,
 						ref: this.spanRef
 					}, e), i && d.a.createElement("span", {
-						className: E.a.moreText,
+						className: w.a.moreText,
 						onClick: this.toggleModal
 					}, o), t === l && d.a.createElement(g, {
 						onConfirmed: this.toggleModal,
@@ -1767,4 +1774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.1619763727dbf1ceeab5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.6b360e4a031d15c49d85.js.map

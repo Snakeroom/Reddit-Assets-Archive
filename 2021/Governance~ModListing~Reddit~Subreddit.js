@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f12e95bf549c92c10aa0.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d8918abf82640d0bcd77.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -239,7 +239,7 @@
 				j = Object(u.t)();
 			t.b = j(e => {
 				const t = Object(p.a)(),
-					r = Object(s.e)(h.V);
+					r = Object(s.e)(h.W);
 				let o, l, a;
 				if (e.subredditOrProfile) {
 					const {
@@ -489,10 +489,10 @@
 				}).apply(this, arguments)
 			}
 			const h = Object(c.c)({
-					currentUser: p.i,
-					isNightMode: p.V,
-					shouldHideNSFW: p.B,
-					user: p.mb
+					currentUser: p.j,
+					isNightMode: p.W,
+					shouldHideNSFW: p.C,
+					user: p.nb
 				}),
 				g = Object(s.b)(h);
 			t.a = g(e => {
@@ -796,7 +796,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = Object(d.a)(I.a, I.i, (e, {
+			const x = Object(d.a)(I.a, I.j, (e, {
 					isSponsored: t,
 					postId: r
 				}) => t && r ? Object(O.b)(e, r) : null, O.F, y.actionInfo, (e, t, r, i, o) => ({
@@ -1197,7 +1197,7 @@
 					const {
 						draftId: r,
 						destSubreddit: i
-					} = t, o = Object(d.i)(e), n = Object(l.d)(e, {
+					} = t, o = Object(d.j)(e), n = Object(l.d)(e, {
 						draftId: r
 					}), s = {
 						authorId: o ? o.id : void 0,
@@ -1230,7 +1230,7 @@
 					}
 				},
 				G = (e, t) => {
-					const r = Object(d.i)(e),
+					const r = Object(d.j)(e),
 						i = {
 							authorId: r ? r.id : void 0,
 							createdTimestamp: t.created,
@@ -3033,4 +3033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f12e95bf549c92c10aa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d8918abf82640d0bcd77.js.map

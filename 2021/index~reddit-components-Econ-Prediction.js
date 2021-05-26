@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8b1ffce8d9afdb7de11a.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c1592c0e618247b5cf05.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/uuid/index.js": function(a, i, r) {
@@ -223,7 +223,7 @@
 				A = (a, i, r, x) => async (t, k, {
 					gqlContext: n
 				}) => {
-					const o = Object(h.J)(k()),
+					const o = Object(h.K)(k()),
 						s = await Object(m.h)(n(), {
 							subredditId: a,
 							period: i,
@@ -1986,16 +1986,16 @@
 			}));
 			var x = r("./src/reddit/constants/experiments.ts"),
 				t = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const k = Object(t.a)(x.Bb),
-				n = Object(t.a)(x.Eb),
-				o = Object(t.a)(x.zb),
-				m = Object(t.a)(x.Cb),
-				s = Object(t.a)(x.Ab),
-				e = Object(t.a)(x.Db),
-				l = Object(t.a)(x.Fb),
-				c = Object(t.a)(x.tb),
-				p = Object(t.a)(x.sb);
-			Object(t.a)(x.ub)
+			const k = Object(t.a)(x.Db),
+				n = Object(t.a)(x.Gb),
+				o = Object(t.a)(x.Bb),
+				m = Object(t.a)(x.Eb),
+				s = Object(t.a)(x.Cb),
+				e = Object(t.a)(x.Fb),
+				l = Object(t.a)(x.Hb),
+				c = Object(t.a)(x.vb),
+				p = Object(t.a)(x.ub);
+			Object(t.a)(x.wb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(a, i, r) {
 			"use strict";
@@ -2009,7 +2009,7 @@
 					experimentEligibilitySelector: t.a,
 					experimentName: a
 				});
-				return !(!r || Object(x.Gd)(r))
+				return !(!r || Object(x.Id)(r))
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(a, i, r) {
@@ -2066,4 +2066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8b1ffce8d9afdb7de11a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c1592c0e618247b5cf05.js.map

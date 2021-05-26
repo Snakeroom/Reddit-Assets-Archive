@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.b03fa2701a1171f3d16a.js
-// Retrieved at 5/26/2021, 12:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.7ead5b84511561c17e8d.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -374,7 +374,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(j.mb)(s, {
+						const n = Object(j.nb)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -585,7 +585,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(x.mb)(e, {
+				user: (e, t) => Object(x.nb)(e, {
 					userName: t.username
 				})
 			});
@@ -884,9 +884,9 @@
 			const qe = Object(o.c)({
 					tokenName: l.n,
 					activeTooltipId: f.a,
-					currentUser: x.i,
-					isLoggedIn: x.J,
-					hideNSFWPref: x.B,
+					currentUser: x.j,
+					isLoggedIn: x.K,
+					hideNSFWPref: x.C,
 					moderatorPermissions: (e, {
 						subredditId: t
 					}) => t ? Object(m.k)(e, {
@@ -903,7 +903,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: x.mb,
+					user: x.nb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(h.c)(e, {
@@ -1260,8 +1260,8 @@
 				a = r("./src/reddit/actions/preferences.ts"),
 				o = r("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
-					currentUser: o.i,
-					hideNSFWPref: o.B
+					currentUser: o.j,
+					hideNSFWPref: o.C
 				}),
 				d = Object(n.b)(i, e => ({
 					imageUpdateRequested: (t, r) => e(Object(a.z)(t, r))
@@ -1467,7 +1467,7 @@
 				p = r("./src/reddit/icons/svgs/Settings/index.tsx"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				v = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const f = Object(v.a)(b.qb);
+			const f = Object(v.a)(b.sb);
 			var x = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				h = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				I = r("./node_modules/react-router/esm/react-router.js"),
@@ -2328,4 +2328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.b03fa2701a1171f3d16a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.7ead5b84511561c17e8d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.2495057f1acfa2b91986.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.6ec1d4b74660b33cdeb5.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1139,7 +1139,7 @@
 			const {
 				fbt: L
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class U extends r.a.Component {
+			class W extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleClose = () => {
 						this.props.toggleModal()
@@ -1169,7 +1169,7 @@
 					}))))
 				}
 			}
-			var W = Object(R.a)(U),
+			var U = Object(R.a)(W),
 				M = n("./src/reddit/selectors/activeModalId.ts"),
 				q = n("./src/reddit/components/StructuredStyles/ResetAllStylesButton/index.m.less"),
 				z = n.n(q);
@@ -1196,7 +1196,7 @@
 						resetStyles: a,
 						toggleResetAllStylesModal: s
 					} = e;
-					return r.a.createElement("div", null, t && r.a.createElement(W, {
+					return r.a.createElement("div", null, t && r.a.createElement(U, {
 						toggleModal: s,
 						onSave: () => {
 							a(), n(Object(x.g)("reset_done"))
@@ -1491,7 +1491,7 @@
 				value: t,
 				name: e.name
 			})));
-			var Ue = e => r.a.createElement(Z.f, null, r.a.createElement(h.a, {
+			var We = e => r.a.createElement(Z.f, null, r.a.createElement(h.a, {
 					onClick: e.saveChanges,
 					disabled: e.isApiRequestInProgress,
 					"data-redditstyle": !0
@@ -1503,7 +1503,7 @@
 				}, i.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				}))),
-				We = n("./src/reddit/icons/fonts/Info/index.tsx"),
+				Ue = n("./src/reddit/icons/fonts/Info/index.tsx"),
 				Me = n("./src/reddit/components/StructuredStyles/Blade/InfoLink/index.m.less"),
 				qe = n.n(Me);
 			class ze extends r.a.Component {
@@ -1522,7 +1522,7 @@
 						href: this.props.href,
 						onClick: this.viewHelpInfo,
 						target: "_blank"
-					}, r.a.createElement(We.a, {
+					}, r.a.createElement(Ue.a, {
 						className: qe.a.infoIcon
 					}), this.props.children)
 				}
@@ -1817,19 +1817,19 @@
 					isApiRequestInProgress: s
 				}, e)))
 			}
-			var Ut = n("./src/reddit/models/Theme/index.ts");
-			const Wt = e => {
+			var Wt = n("./src/reddit/models/Theme/index.ts");
+			const Ut = e => {
 					switch (e) {
 						case "small":
-							return i.fbt._("Small • {size}px", [i.fbt._param("size", Ut.a[e].toLocaleString())], {
+							return i.fbt._("Small • {size}px", [i.fbt._param("size", Wt.a[e].toLocaleString())], {
 								hk: "2OECjT"
 							});
 						case "medium":
-							return i.fbt._("Medium • {size}px", [i.fbt._param("size", Ut.a[e].toLocaleString())], {
+							return i.fbt._("Medium • {size}px", [i.fbt._param("size", Wt.a[e].toLocaleString())], {
 								hk: "zwqi5"
 							});
 						case "large":
-							return i.fbt._("Large • {size}px", [i.fbt._param("size", Ut.a[e].toLocaleString())], {
+							return i.fbt._("Large • {size}px", [i.fbt._param("size", Wt.a[e].toLocaleString())], {
 								hk: "3ch4JX"
 							})
 					}
@@ -1870,20 +1870,20 @@
 					})
 				}), r.a.createElement(Z.g, null, Mt(1600, 480)));
 			var Vt = Lt(e => {
-				const t = e.bannerHeight ? Ut.a[e.bannerHeight] : 128;
+				const t = e.bannerHeight ? Wt.a[e.bannerHeight] : 128;
 				return r.a.createElement(Z.k, null, r.a.createElement(Ze, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Height", null, {
 					hk: "2A9oKY"
 				})), r.a.createElement(Z.a, null, r.a.createElement(Ee, {
 					name: "bannerHeight"
 				}, r.a.createElement(xe, {
 					value: "small",
-					label: Wt("small")
+					label: Ut("small")
 				}), r.a.createElement(xe, {
 					value: "medium",
-					label: Wt("medium")
+					label: Ut("medium")
 				}), r.a.createElement(xe, {
 					value: "large",
-					label: Wt("large")
+					label: Ut("large")
 				})))), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Background", null, {
 					hk: "dWBpK"
 				})), r.a.createElement(Z.a, null, r.a.createElement(yt, {
@@ -1925,7 +1925,7 @@
 						}),
 						name: "bannerPositionedImage"
 					})
-				}), r.a.createElement(Z.g, null, Mt(4e3, t)))), r.a.createElement(zt, e), r.a.createElement(Ue, e))
+				}), r.a.createElement(Z.g, null, Mt(4e3, t)))), r.a.createElement(zt, e), r.a.createElement(We, e))
 			}, ["bannerHeight", "bannerPositionedImage", "bannerPositionedImagePosition", "bannerBackgroundColor", "bannerBackgroundImage", "bannerBackgroundImagePosition", "mobileBannerImage", "secondaryBannerPositionedImage"]);
 			class Ht extends r.a.Component {
 				constructor() {
@@ -2093,7 +2093,7 @@
 						}),
 						name: "backgroundImage"
 					})
-				}))), r.a.createElement(Ue, e)), ["primaryColor", "highlightColor", "backgroundColor", "backgroundImage", "backgroundImagePosition"]),
+				}))), r.a.createElement(We, e)), ["primaryColor", "highlightColor", "backgroundColor", "backgroundImage", "backgroundImagePosition"]),
 				en = n("./src/reddit/actions/widgets/index.ts");
 			const tn = "blade_leave_menu";
 			var nn = n("./src/reddit/components/CharacterCountdown/index.tsx"),
@@ -2254,14 +2254,14 @@
 			}
 			var Nn, Bn = Rn,
 				Ln = n("./src/reddit/controls/Sortable/index.tsx"),
-				Un = n("./src/reddit/components/StructuredStyles/FeatureToggle/index.m.less"),
-				Wn = n.n(Un);
+				Wn = n("./src/reddit/components/StructuredStyles/FeatureToggle/index.m.less"),
+				Un = n.n(Wn);
 			! function(e) {
 				e.Off = "0", e.On = "1"
 			}(Nn || (Nn = {}));
-			const Mn = s.a.wrapped(Gt.h, "StyledLabel", Wn.a),
-				qn = s.a.wrapped(h.h, "ToggleInput", Wn.a),
-				zn = s.a.wrapped(Z.e, "FormElementTitle", Wn.a);
+			const Mn = s.a.wrapped(Gt.h, "StyledLabel", Un.a),
+				qn = s.a.wrapped(h.h, "ToggleInput", Un.a),
+				zn = s.a.wrapped(Z.e, "FormElementTitle", Un.a);
 			var Vn = e => r.a.createElement(Mn, null, r.a.createElement(v.a, null, r.a.createElement(zn, null, e.label), r.a.createElement(qn, {
 					redditStyle: !0,
 					name: e.name,
@@ -3177,8 +3177,8 @@
 				Na = n("./src/reddit/controls/SubredditPicker/index.tsx"),
 				Ba = n("./src/reddit/layout/row/Inline/index.tsx"),
 				La = n("./src/reddit/components/StructuredStyles/Forms/CommunityListEditor/index.m.less"),
-				Ua = n.n(La);
-			const Wa = 30,
+				Wa = n.n(La);
+			const Ua = 30,
 				Ma = 10;
 			var qa;
 			! function(e) {
@@ -3240,7 +3240,7 @@
 						const {
 							widget: e
 						} = this.state;
-						return !(!e.shortName.trim().length || e.shortName.length > Wa) && !!e.data.length
+						return !(!e.shortName.trim().length || e.shortName.length > Ua) && !!e.data.length
 					}
 					getNewCommunityName() {
 						const {
@@ -3273,7 +3273,7 @@
 							value: n.shortName,
 							onChange: this.handleTitleChange
 						}), r.a.createElement(nn.a, {
-							maxChars: Wa,
+							maxChars: Ua,
 							text: n.shortName
 						})), r.a.createElement(Z.i, null, r.a.createElement(Fn, {
 							onChangeWidgetStyles: this.onChangeWidgetStyles,
@@ -3303,16 +3303,16 @@
 						})) : n.data.map((e, t) => r.a.createElement(p.b, {
 							key: e.id
 						}, e.name, r.a.createElement(B.a, {
-							className: Ua.a.textButton,
+							className: Wa.a.textButton,
 							onClick: e => this.handleDeleteCommunity(t)
 						}, r.a.createElement(an.a, {
-							className: Ua.a.trashIcon
+							className: Wa.a.trashIcon
 						}))))), n.data.length < Ma && t.editMode !== qa.Sort && r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Add New Community", null, {
 							hk: "1tXrnU"
 						})), r.a.createElement(Ba.a, {
-							className: Ua.a.controlRow
+							className: Wa.a.controlRow
 						}, r.a.createElement(Na.a, {
-							className: Ua.a.subredditPicker,
+							className: Wa.a.subredditPicker,
 							onSelect: this.handlePickCommunity,
 							value: {
 								rawString: a,
@@ -3362,7 +3362,7 @@
 				Ka = n.n(Ha);
 			const {
 				fbt: Ga
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Za = s.a.wrapped(We.a, "Info", Ka.a), Ya = s.a.wrapped(Z.f, "FormGroup", Ka.a), Qa = s.a.wrapped(Z.h, "FormGroupTitle", Ka.a), Ja = s.a.wrapped(Z.g, "FormGroupDescription", Ka.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Za = s.a.wrapped(Ue.a, "Info", Ka.a), Ya = s.a.wrapped(Z.f, "FormGroup", Ka.a), Qa = s.a.wrapped(Z.h, "FormGroupTitle", Ka.a), Ja = s.a.wrapped(Z.g, "FormGroupDescription", Ka.a);
 			var Xa = () => r.a.createElement(Ya, null, r.a.createElement(rn.a, null, r.a.createElement(Za, null), r.a.createElement("div", null, r.a.createElement(Qa, null, Ga._("This is an experimental feature", null, {
 				hk: "4pZ6q0"
 			})), r.a.createElement(Ja, null, Ga._("Custom widgets don't display on mobile devices. Customizations can break at any time", null, {
@@ -3990,10 +3990,10 @@
 				Nr = n("./node_modules/lodash/noop.js"),
 				Br = n.n(Nr),
 				Lr = n("./src/reddit/components/StructuredStyles/Forms/MenuWidgetEditor/MenuItemLabel.m.less"),
-				Ur = n.n(Lr);
-			const Wr = s.a.wrapped(Z.e, "TextDisplay", Ur.a),
-				Mr = s.a.div("UrlDisplay", Ur.a);
-			var qr = e => r.a.createElement("div", null, r.a.createElement(Wr, null, e.text), r.a.createElement(Mr, null, e.url)),
+				Wr = n.n(Lr);
+			const Ur = s.a.wrapped(Z.e, "TextDisplay", Wr.a),
+				Mr = s.a.div("UrlDisplay", Wr.a);
+			var qr = e => r.a.createElement("div", null, r.a.createElement(Ur, null, e.text), r.a.createElement(Mr, null, e.url)),
 				zr = n("./src/reddit/components/StructuredStyles/Forms/MenuWidgetEditor/MenuItemList.m.less"),
 				Vr = n.n(zr);
 			const Hr = s.a.div("Container", Vr.a),
@@ -4672,16 +4672,16 @@
 				Ls = Object(c.c)({
 					isOpen: Object(bt.b)(Bs)
 				}),
-				Us = Object(o.b)(Ls, e => ({
+				Ws = Object(o.b)(Ls, e => ({
 					onOpenDropdown: () => {
 						e(Object(dt.h)({
 							tooltipId: Bs
 						}))
 					}
 				})),
-				Ws = s.a.wrapped(Ts.a, "StyledDropdown", Ns.a),
+				Us = s.a.wrapped(Ts.a, "StyledDropdown", Ns.a),
 				Ms = s.a.wrapped(Fs.b, "DropdownTriangle", Ns.a),
-				qs = Object(_s.a)(Ws),
+				qs = Object(_s.a)(Us),
 				zs = s.a.wrapped(As.a, "InlineButton", Ns.a),
 				Vs = s.a.div("DropdownContainer", Ns.a),
 				Hs = s.a.div("SearchBarContainer", Ns.a),
@@ -4773,7 +4773,7 @@
 					})))
 				}
 			}
-			var Ys = Us(Zs),
+			var Ys = Ws(Zs),
 				Qs = n("./src/reddit/components/StructuredStyles/Forms/PostFlairWidgetEditor/AddFlair.m.less"),
 				Js = n.n(Qs);
 			const Xs = s.a.wrapped(Ba.a, "ControlRow", Js.a);
@@ -5299,7 +5299,7 @@
 				}
 			};
 			const Li = e => r.a.createElement("div", null, `Unknown widget kind "${e.widget.kind}"`),
-				Ui = e => {
+				Wi = e => {
 					switch (e.kind) {
 						case "textarea":
 							return Bi;
@@ -5327,14 +5327,14 @@
 							return Li
 					}
 				};
-			class Wi extends r.a.Component {
+			class Ui extends r.a.Component {
 				componentWillMount() {
 					this.props.startEditing(this.props.widget)
 				}
 				render() {
 					const {
 						props: e
-					} = this, t = Ui(e.widget);
+					} = this, t = Wi(e.widget);
 					return r.a.createElement(t, e)
 				}
 			}
@@ -5398,7 +5398,7 @@
 					sendEventWithName: n.sendEventWithName,
 					helpCenterLink: n.helpCenterLink
 				}))(e)
-			}(Wi);
+			}(Ui);
 			const qi = Object(c.c)({
 				widgetId: re.e
 			});
@@ -5463,7 +5463,7 @@
 							hk: "3V0Im3"
 						})
 					})))
-				}))))), r.a.createElement(Ue, e)), ["bannerOverlayColor", "menuBackgroundColor", "menuBackgroundImage", "menuBackgroundOpacity", "menuLinkColorActive", "menuLinkColorHover", "menuLinkColorInactive", "menuPosition", "submenuBackgroundColor", "submenuBackgroundStyle"]),
+				}))))), r.a.createElement(We, e)), ["bannerOverlayColor", "menuBackgroundColor", "menuBackgroundImage", "menuBackgroundOpacity", "menuLinkColorActive", "menuLinkColorHover", "menuLinkColorInactive", "menuPosition", "submenuBackgroundColor", "submenuBackgroundStyle"]),
 				Hi = n("./src/reddit/components/StructuredStyles/LabeledVisibilityInput/index.m.less"),
 				Ki = n.n(Hi);
 			const Gi = s.a.wrapped(Z.b, "FormElementDescription", Ki.a),
@@ -5520,7 +5520,7 @@
 				name: "bannerShowCommunityIcon",
 				onValue: "hide",
 				offValue: "show"
-			})), r.a.createElement(Ue, e)), ["bannerShowCommunityIcon", "bannerCommunityNameFormat", "communityIcon"]);
+			})), r.a.createElement(We, e)), ["bannerShowCommunityIcon", "bannerCommunityNameFormat", "communityIcon"]);
 			var Ji = Lt(e => r.a.createElement(Z.k, null, r.a.createElement(Ze, e), r.a.createElement(Z.f, null, r.a.createElement(Z.h, null, i.fbt._("Title Color", null, {
 				hk: "1UCY4u"
 			})), r.a.createElement(Z.a, null, r.a.createElement(yt, {
@@ -5652,7 +5652,7 @@
 					}),
 					name: "postPlaceholderImage"
 				})
-			}))), r.a.createElement(Ue, e)), ["postBackgroundColor", "postBackgroundImage", "postBackgroundImagePosition", "postDownvoteCountColor", "postDownvoteIconActive", "postDownvoteIconInactive", "postPlaceholderImage", "postPlaceholderImagePosition", "postTitleColor", "postUpvoteCountColor", "postUpvoteIconActive", "postUpvoteIconInactive", "postVoteIcons"]);
+			}))), r.a.createElement(We, e)), ["postBackgroundColor", "postBackgroundImage", "postBackgroundImagePosition", "postDownvoteCountColor", "postDownvoteIconActive", "postDownvoteIconInactive", "postPlaceholderImage", "postPlaceholderImagePosition", "postTitleColor", "postUpvoteCountColor", "postUpvoteIconActive", "postUpvoteIconInactive", "postVoteIcons"]);
 			var Xi = Lt(e => r.a.createElement(Z.o, null, r.a.createElement(Ze, e), r.a.createElement(Z.a, null, r.a.createElement(yt, {
 					label: i.fbt._("Title background color", null, {
 						hk: "2omOuw"
@@ -5663,7 +5663,7 @@
 						hk: "2iB8pL"
 					}),
 					name: "sidebarWidgetBackgroundColor"
-				})), e.hasUnsavedChanges && r.a.createElement(Ue, e)), ["sidebarWidgetBackgroundColor", "sidebarWidgetHeaderColor"]),
+				})), e.hasUnsavedChanges && r.a.createElement(We, e)), ["sidebarWidgetBackgroundColor", "sidebarWidgetHeaderColor"]),
 				$i = n("./src/reddit/components/StructuredStyles/NavItem/index.m.less"),
 				el = n.n($i);
 			const tl = s.a.wrapped(v.a, "ExpandLeft", el.a);
@@ -6972,10 +6972,10 @@
 				}).apply(this, arguments)
 			}
 			const b = Object(l.c)({
-					currentUser: d.i,
-					isNightMode: d.V,
-					isPresenceUserPrefEnabled: d.hb,
-					shouldHideNSFW: d.B
+					currentUser: d.j,
+					isNightMode: d.W,
+					isPresenceUserPrefEnabled: d.ib,
+					shouldHideNSFW: d.C
 				}),
 				f = Object(i.b)(b);
 			t.a = f(e => {
@@ -7713,8 +7713,8 @@
 			var B = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/ProfileEntryContent/index.m.less"),
 				L = n.n(B);
 
-			function U() {
-				return (U = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -7723,7 +7723,7 @@
 				}).apply(this, arguments)
 			}
 
-			function W(e) {
+			function U(e) {
 				const {
 					item: {
 						name: t,
@@ -7737,7 +7737,7 @@
 				}) : void 0, i = l.a.createElement(v.a, {
 					className: Object(o.a)(L.a.profileIcon, P.a.subredditIcon)
 				});
-				return l.a.createElement(N, U({
+				return l.a.createElement(N, W({
 					icon: i,
 					title: r,
 					secondaryText: s
@@ -7817,7 +7817,7 @@
 				getEntryContentComponent(e, t) {
 					switch (e) {
 						case m.a.OWN_PROFILE:
-							return W;
+							return U;
 						default:
 							return V
 					}
@@ -8095,8 +8095,8 @@
 				})))
 			}
 			var L = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/index.tsx"),
-				U = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
-				W = n.n(U);
+				W = n("./src/reddit/controls/SubredditPicker/Picker/index.m.less"),
+				U = n.n(W);
 			class M extends r.a.Component {
 				constructor(e) {
 					super(e), this.inputRef = null, this.setInputRef = e => {
@@ -8250,9 +8250,9 @@
 						isOpen: l
 					} = this.state, o = s.record;
 					return r.a.createElement("div", {
-						className: Object(E.a)(W.a.container, e, {
-							[W.a.mIsActive]: i,
-							[W.a.mIsInvalid]: !n
+						className: Object(E.a)(U.a.container, e, {
+							[U.a.mIsActive]: i,
+							[U.a.mIsInvalid]: !n
 						})
 					}, r.a.createElement(B, {
 						disabled: t,
@@ -9073,4 +9073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.2495057f1acfa2b91986.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.6ec1d4b74660b33cdeb5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1a8db0cabf197011d31b.js
-// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.7552e453020b06a5ee64.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1001,13 +1001,13 @@
 					}) => Object(Z.C)(e, {
 						commentId: t.postId
 					}),
-					isLoggedIn: ee.J,
+					isLoggedIn: ee.K,
 					moderatorPermissions: (e, {
 						comment: t
 					}) => Object(J.k)(e, {
 						subredditId: t.subredditId
 					}),
-					currentUser: ee.i,
+					currentUser: ee.j,
 					modModeEnabled: H.Q,
 					postIsLocked: (e, {
 						comment: t
@@ -1846,7 +1846,7 @@
 						return s && s.coinPrice >= d.g
 					})
 				},
-				isNightmodeOn: v.V
+				isNightmodeOn: v.W
 			}), e => ({
 				openPost: t => e(Object(m.I)(t))
 			}));
@@ -2702,7 +2702,7 @@
 				}),
 				T = Object(m.c)({
 					isDropdownMenuOpen: e => Object(j.a)(e) === B,
-					isOwnProfile: (e, t) => Object(I.N)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(I.O)(e, t.profileName),
 					isSnoovatar30Enabled: k.d.snoovatar30,
 					isSubscriptionsPinned: P.b
 				}),
@@ -3104,7 +3104,7 @@
 				h = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less"),
 				x = s.n(h);
 			const f = Object(a.c)({
-					currentUser: b.i,
+					currentUser: b.j,
 					moderated: p.n,
 					subscriptions: u.f,
 					hasMoreModerated: p.d,
@@ -3270,7 +3270,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.mb)(e, {
+					const s = Object(p.nb)(e, {
 							userName: t
 						}),
 						n = Object(m.f)(e);
@@ -3667,8 +3667,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				P = Object(d.c)({
-					hideNSFWPref: w.B,
-					nightmode: w.V
+					hideNSFWPref: w.C,
+					nightmode: w.W
 				}),
 				N = Object(i.b)(P)(e => {
 					const t = Object(v.a)();
@@ -3879,7 +3879,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(b.mb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(b.nb)(e, {
 					userName: t.name
 				}) : null
 			}), j = Object(r.b)(k, e => ({
@@ -3935,7 +3935,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: h.k,
 					isExpanded: h.l,
-					isLoggedIn: x.J,
+					isLoggedIn: x.K,
 					moderatorPermissions: u.j,
 					modModeEnabled: c.Q,
 					poll: (e, t) => {
@@ -4382,4 +4382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1a8db0cabf197011d31b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.7552e453020b06a5ee64.js.map

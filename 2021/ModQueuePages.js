@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.11437ffdd417a5c0b7a7.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.4a6ff5221923ee949809.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -629,9 +629,9 @@
 			})), s.d(t, "f", (function() {
 				return G
 			})), s.d(t, "a", (function() {
-				return q
-			})), s.d(t, "b", (function() {
 				return z
+			})), s.d(t, "b", (function() {
+				return q
 			})), s.d(t, "c", (function() {
 				return K
 			}));
@@ -733,7 +733,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, H = Object(o.a)(_.t), W = Object(o.a)(_.s), U = Object(o.a)(_.r), G = (e, t, s) => async (r, o, {
+				}, W = Object(o.a)(_.t), H = Object(o.a)(_.s), U = Object(o.a)(_.r), G = (e, t, s) => async (r, o, {
 					apiContext: v
 				}) => {
 					r(Object(i.c)());
@@ -898,7 +898,7 @@
 							}), (() => async (e, t, {
 								apiContext: s
 							}) => {
-								e(H());
+								e(W());
 								const r = t(),
 									o = Object.keys(r.pages.modHub.modQueue.bulkAction.undoLastAction)[0],
 									a = r.pages.modHub.modQueue.bulkAction.undoLastAction[o],
@@ -907,7 +907,7 @@
 								const u = await Object(c.a)(s(), o, {
 									ids: a
 								});
-								u.ok ? e(W({
+								u.ok ? e(H({
 									...u.body,
 									operation: o,
 									ids: a,
@@ -931,7 +931,7 @@
 						}), p.b.Error);
 						r(Object(d.f)(e))
 					}
-				}, q = Object(o.a)(_.a), z = Object(o.a)(_.c), K = Object(o.a)(_.d)
+				}, z = Object(o.a)(_.a), q = Object(o.a)(_.c), K = Object(o.a)(_.d)
 		},
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
@@ -1170,17 +1170,17 @@
 						mod_note: t.modNote
 					}
 				}),
-				H = (e, t, s) => Object(A.a)(Object(F.a)(e, [B.a]), {
+				W = (e, t, s) => Object(A.a)(Object(F.a)(e, [B.a]), {
 					endpoint: Object(D.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
 					method: y.eb.POST,
 					type: "json",
 					data: t
 				});
-			var W = s("./src/reddit/helpers/isPost.ts"),
+			var H = s("./src/reddit/helpers/isPost.ts"),
 				U = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				G = s("./src/reddit/helpers/routeKey/index.ts"),
-				q = s("./src/reddit/models/ModQueue/index.ts"),
-				z = s("./src/reddit/models/PostDraft/index.ts"),
+				z = s("./src/reddit/models/ModQueue/index.ts"),
+				q = s("./src/reddit/models/PostDraft/index.ts"),
 				K = s("./src/reddit/models/RemovalReason/index.ts"),
 				J = s("./src/reddit/models/Toast/index.ts"),
 				X = s("./src/reddit/selectors/comments.ts"),
@@ -1287,7 +1287,7 @@
 					const d = i(),
 						c = d.user.account && d.user.account.displayText,
 						l = e[0],
-						u = Object(W.a)(l) ? K.e.Post : K.e.Comment,
+						u = Object(H.a)(l) ? K.e.Post : K.e.Comment,
 						m = u === K.e.Post ? d.posts.models[l] : d.features.comments.models[l],
 						h = u === K.e.Post ? M.P : j.i;
 					if (!m || !c) return !1;
@@ -1313,7 +1313,7 @@
 									title: t.title,
 									type: n
 								},
-								i = await H(a(), Object(K.h)(r, u), u);
+								i = await W(a(), Object(K.h)(r, u), u);
 							if (i.ok) {
 								if (n === K.f.Public) {
 									if (o(Ce()), i.body) {
@@ -1329,7 +1329,7 @@
 												sort: y.s,
 												hasSortParam: !0
 											})), u === K.e.Post) {
-											const s = Object(S.a)(z.c.replyToPost, l);
+											const s = Object(S.a)(q.c.replyToPost, l);
 											o(Object(P.o)({
 												...t,
 												headCommentId: Object(X.w)(d, {
@@ -1349,7 +1349,7 @@
 												}
 											}))
 										} else if (u === K.e.Comment) {
-											const e = Object(S.a)(z.c.replyToComment, m.id),
+											const e = Object(S.a)(q.c.replyToComment, m.id),
 												s = Object(X.j)(d, {
 													commentId: l,
 													commentsPageKey: r
@@ -1401,7 +1401,7 @@
 					if (h.ok) {
 						const n = {
 							ids: e,
-							operation: q.a.RemovalReason,
+							operation: z.a.RemovalReason,
 							username: l,
 							options: {
 								modNote: o,
@@ -1415,7 +1415,7 @@
 									title: t.title,
 									type: r
 								},
-								o = await H(d(), Object(K.h)(n, K.e.Bulk), K.e.Bulk);
+								o = await W(d(), Object(K.h)(n, K.e.Bulk), K.e.Bulk);
 							o.ok ? (i(ve()), i(u)) : i(_e(o.error))
 						} else i(u)
 					} else i(ge(h.error))
@@ -1929,7 +1929,7 @@
 				p = s.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.V
+					isNightmodeOn: m.W
 				}));
 			t.a = f(e => {
 				const t = {
@@ -2028,7 +2028,7 @@
 						style: t
 					}, e.children)
 				},
-				k = Object(i.b)(() => Object(d.a)(C.E, O.bb, (e, {
+				k = Object(i.b)(() => Object(d.a)(C.E, O.cb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(C.b)(e, s) : null, v.a, _.actionInfo, C.F, (e, t, s, n, r, o) => ({
@@ -3443,7 +3443,7 @@
 							{
 								H: n,
 								D: r
-							} = W(e.a),
+							} = H(e.a),
 							{
 								c: i = []
 							} = e;
@@ -3547,16 +3547,16 @@
 						f: s,
 						t: r
 					} = e, o = [];
-					if (!s) return H(0, r, t);
+					if (!s) return W(0, r, t);
 					const i = Object(n.a)(r);
 					let a = 0,
 						d = 0;
 					const c = s.length;
 					for (; a < c; a++) {
 						const [e, t, n] = s[a], c = t + n, l = i[t], u = i[c] - l;
-						l > d && o.push(H(0, r.substr(d, l - d), `between${a}`)), o.push(H(e, r.substr(l, u), a)), d = l + u
+						l > d && o.push(W(0, r.substr(d, l - d), `between${a}`)), o.push(W(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && o.push(H(0, r.substr(d), `remaining${a}`)), o
+					return d < r.length && o.push(W(0, r.substr(d), `remaining${a}`)), o
 				},
 				V = {
 					[h.j.monospace]: d.h,
@@ -3567,13 +3567,13 @@
 					[h.j.subscript]: d.l,
 					[h.j.superscript]: d.m
 				},
-				H = (e, t, s) => {
+				W = (e, t, s) => {
 					let n = t;
 					return n = o()(V, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
-				W = e => {
+				H = e => {
 					switch (e) {
 						case h.f:
 							return {
@@ -3772,14 +3772,14 @@
 				B = s("./src/telemetry/helpers/sendEvent.ts"),
 				D = s("./src/telemetry/helpers/sendTiming.ts"),
 				V = s("./src/reddit/components/Scroller/Simple.m.less"),
-				H = s.n(V);
-			const W = N.g,
+				W = s.n(V);
+			const H = N.g,
 				U = 5 * h.G,
 				G = 3,
-				q = Object(m.c)({
+				z = Object(m.c)({
 					isOverlayOpen: F.h
 				}),
-				z = Object(l.b)(q),
+				q = Object(l.b)(z),
 				K = {};
 
 			function J(e) {
@@ -4041,14 +4041,14 @@
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const n = s.el.firstChild;
-						n && (t !== s.el.style.height && (s.el.style.height = t), n.classList.add(H.a.Hidden), this.hiddenChildren[e] = t, s.loaded && p.a.write(() => {
+						n && (t !== s.el.style.height && (s.el.style.height = t), n.classList.add(W.a.Hidden), this.hiddenChildren[e] = t, s.loaded && p.a.write(() => {
 							s.itemRef && (s.loaded = !1, s.focused = !1, s.itemRef.unmountContent())
 						}))
 					}, this.showChild = e => {
 						const t = this.childMap.get(e);
 						if (!t || !t.el) return;
 						const s = t.el.firstChild;
-						s && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", s.classList.remove(H.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
+						s && (this.remeasureWhenShown[t.id] && (this.measurementsInvalid = !0, this.remeasureWhenShown[t.id] = void 0), t.el.style.height = "", s.classList.remove(W.a.Hidden), void 0 !== this.hiddenChildren[e] && (this.hiddenChildren[e] = void 0))
 					}, this.getStylesForOuterWrapper = e => {
 						if (void 0 !== this.hiddenChildren[e]) return {
 							height: this.hiddenChildren[e]
@@ -4273,7 +4273,7 @@
 						ref: this.getWrapperRefFN(e.id),
 						style: this.getStylesForOuterWrapper(e.id)
 					}, d.a.createElement("div", {
-						className: this.hiddenChildren[e.id] ? H.a.Hidden : void 0
+						className: this.hiddenChildren[e.id] ? W.a.Hidden : void 0
 					}, e.render({
 						className: L.k,
 						height: e.estHeight,
@@ -4282,7 +4282,7 @@
 						scrollToAndRemeasure: this.scrollToChild,
 						setScrollerChildRef: this.getChildRefFn(e.id),
 						shouldLoadInitially: t < ee,
-						width: W
+						width: H
 					})))), !!e && d.a.createElement(M.a, {
 						containerRef: e,
 						onResize: this.handleContentContainerResize
@@ -4295,7 +4295,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = z(Object(A.b)(le))
+			t.b = q(Object(A.b)(le))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -4436,12 +4436,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.qd.SmIcon:
+						case b.sd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.qd.SmIconHc:
+						case b.sd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4517,10 +4517,10 @@
 						n = t.redditStyle || Object(f.l)(e, {
 							subredditId: s
 						}),
-						r = Object(g.V)(e);
+						r = Object(g.W)(e);
 					return n || r
 				},
-				nigtmode: g.V,
+				nigtmode: g.W,
 				subredditId: u.m,
 				topPostVariant: b.d
 			}));
@@ -5581,13 +5581,13 @@
 			}, v.fbt._("Automoderator Config", null, {
 				hk: "2GBjtX"
 			})))), i.a.createElement(P.a, null, i.a.createElement(D, null)));
-			const H = Object(p.t)(),
-				W = Object(d.c)({
+			const W = Object(p.t)(),
+				H = Object(d.c)({
 					queryParams: (e, {
 						location: t
 					}) => r()([...Object(c.a)(t.search)])
 				}),
-				U = Object(d.a)(W, p.O, g.l, (e, {
+				U = Object(d.a)(H, p.O, g.l, (e, {
 					match: t
 				}) => t.params.pageName, ({
 					queryParams: e
@@ -5608,7 +5608,7 @@
 					}
 				}),
 				G = Object(a.b)(U);
-			class q extends i.a.Component {
+			class z extends i.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: "bulk_mod_action",
@@ -5661,7 +5661,7 @@
 					}))
 				}
 			}
-			t.default = H(G(Object(m.c)(q)))
+			t.default = W(G(Object(m.c)(z)))
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
 			"use strict";
@@ -5686,12 +5686,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.jd
+						experimentName: n.ld
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.qd.SmIcon || t === n.qd.SmIconHc
+					return t === n.sd.SmIcon || t === n.sd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5714,4 +5714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.11437ffdd417a5c0b7a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4a6ff5221923ee949809.js.map

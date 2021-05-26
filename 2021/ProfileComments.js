@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.c44caab13c1b1e245122.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.9a3ba6e3f5b7e09b6b49.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -17,9 +17,9 @@
 			})), r.d(t, "moreItemsLoaded", (function() {
 				return D
 			})), r.d(t, "moreItemsFailed", (function() {
-				return R
+				return K
 			})), r.d(t, "moreItemsRequested", (function() {
-				return G
+				return R
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/lodash/difference.js"),
@@ -36,9 +36,9 @@
 				f = r("./src/reddit/actions/profile/index.ts"),
 				b = r("./src/reddit/actions/subreddit.ts"),
 				O = r("./src/reddit/constants/errors.ts"),
-				y = r("./src/reddit/constants/parameters.ts"),
-				g = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				j = r("./src/config.ts"),
+				j = r("./src/reddit/constants/parameters.ts"),
+				y = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				g = r("./src/config.ts"),
 				x = r("./src/lib/addAllowQuarantinedParam/index.ts"),
 				C = r("./src/lib/constants/index.ts"),
 				P = r("./src/lib/makeApiRequest/index.ts"),
@@ -47,7 +47,7 @@
 				L = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				v = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const I = (e, t, r, s) => {
-				let o = Object(h.a)(Object(x.a)(Object(L.a)(Object(v.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`))));
+				let o = Object(h.a)(Object(x.a)(Object(L.a)(Object(v.a)(`${g.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`))));
 				return s && (o = Object(w.a)(o)), Object(P.a)(e, {
 					data: r,
 					endpoint: o,
@@ -69,16 +69,16 @@
 						params: n
 					} = e, {
 						sort: i,
-						t: g
+						t: y
 					} = Object(p.b)(o), {
-						profileName: j
-					} = n, x = Object(c.a)(`u_${j}`, i, e.queryParams), {
+						profileName: g
+					} = n, x = Object(c.a)(`u_${g}`, i, e.queryParams), {
 						profileCommentsPage: C
 					} = r(), P = C.commentIds[x], h = C.api.error[x], w = C.api.pending[x];
-					if (await t(f.d(j)), w || P && !h) {
+					if (await t(f.d(g)), w || P && !h) {
 						if (P) {
 							const e = Object(_.q)(r(), {
-								profileName: j
+								profileName: g
 							});
 							t(u.l({
 								title: e
@@ -87,14 +87,14 @@
 						return
 					}
 					const L = {
-						...a()(e.queryParams, [...y.l, y.h]),
+						...a()(e.queryParams, [...j.l, j.h]),
 						sort: i,
-						t: Object(N.a)(i, g)
+						t: Object(N.a)(i, y)
 					};
 					t(F({
 						key: x
 					}));
-					const v = await Object(E.a)("profileComments", () => I(s.apiContext(), j, L, Object(k.a)(r())));
+					const v = await Object(E.a)("profileComments", () => I(s.apiContext(), g, L, Object(k.a)(r())));
 					if (!v.ok) return t(q({
 						account: v.body.data ? v.body.data.account : null,
 						error: v.body.reason ? {
@@ -102,15 +102,15 @@
 						} : v.error,
 						key: x
 					})), v.body.reason === O.a.DeletedProfile && t(Object(d.p)({
-						profileName: j
+						profileName: g
 					})), void t(u.m(v.status));
 					const S = v.body;
 					t(A({
 						key: x,
 						meta: r().meta,
 						...S
-					})), await Promise.all([t(Object(p.c)(j)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(j))])
-				}, M = Object(i.a)(T.c), D = Object(i.a)(T.b), R = Object(i.a)(T.a), G = () => async (e, t, {
+					})), await Promise.all([t(Object(p.c)(g)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(g))])
+				}, M = Object(i.a)(T.c), D = Object(i.a)(T.b), K = Object(i.a)(T.a), R = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const s = t(),
@@ -133,10 +133,10 @@
 					const O = Object(S.b)(s, {
 							listingKey: f
 						}),
-						j = Object(S.c)(s, {
+						g = Object(S.c)(s, {
 							listingKey: f
 						}),
-						x = j && j[b.token];
+						x = g && g[b.token];
 					if (O || x) return;
 					e(M({
 						key: f,
@@ -147,8 +147,8 @@
 						dist: b.dist,
 						sort: m,
 						t: l,
-						...a()(i, y.l),
-						layout: Object(g.O)(s, {}).toLowerCase()
+						...a()(i, j.l),
+						layout: Object(y.O)(s, {}).toLowerCase()
 					}, Object(k.a)(s));
 					if (C.ok) {
 						const t = Object(S.f)(s, {
@@ -164,7 +164,7 @@
 							meta: s.meta,
 							...r
 						}))
-					} else e(R({
+					} else e(K({
 						account: C.body.data ? C.body.data.account : null,
 						error: C.error,
 						fetchedToken: b.token,
@@ -200,9 +200,9 @@
 				f = r("./src/reddit/components/ContentGate/index.tsx"),
 				b = r("./src/reddit/components/EmptyProfile/index.ts"),
 				O = r("./src/reddit/components/GeneralCleanup/SortViewBar/index.tsx"),
-				y = r("./src/reddit/components/JumpToContent/index.tsx"),
-				g = r("./src/lib/classNames/index.ts"),
-				j = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				j = r("./src/reddit/components/JumpToContent/index.tsx"),
+				y = r("./src/lib/classNames/index.ts"),
+				g = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				x = r("./src/lib/lessComponent.tsx"),
 				C = r("./src/reddit/components/ClassicPost/index.tsx"),
 				P = r("./src/reddit/components/OverviewChronoList/ListItem.tsx"),
@@ -285,8 +285,8 @@
 					showModTools: c
 				})))
 			}));
-			const M = Object(j.a)(e => a.a.createElement("div", {
-				className: Object(g.a)(_.a.backgroundMargin, {
+			const M = Object(g.a)(e => a.a.createElement("div", {
+				className: Object(y.a)(_.a.backgroundMargin, {
 					[_.a.isFirstInCommentList]: e.isFirstInCommentList,
 					[_.a.isLastInCommentList]: e.isLastInCommentList
 				}),
@@ -295,9 +295,9 @@
 				}
 			}, e.children));
 			var D = r("./src/reddit/components/ProfileItemList/index.tsx"),
-				R = r("./node_modules/lodash/noop.js"),
-				G = r.n(R),
-				K = r("./src/reddit/actions/ads/index.ts"),
+				K = r("./node_modules/lodash/noop.js"),
+				R = r.n(K),
+				G = r("./src/reddit/actions/ads/index.ts"),
 				J = r("./src/reddit/actions/comment/list.ts"),
 				H = r("./src/reddit/actions/post.ts"),
 				U = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -314,7 +314,7 @@
 				re = {
 					apiError: Z.a,
 					apiPending: Z.b,
-					currentUser: ee.i,
+					currentUser: ee.j,
 					measureScrollFPS: $.d.measureScrollFPS,
 					layout: I.O,
 					loadMore: Z.d,
@@ -350,13 +350,13 @@
 				oe = Object(i.b)(se, e => ({
 					onBottomViewed: (t, r) => e(Object(J.c)(t, r)),
 					adBrandSafetyStatusReceived: t => {
-						e(K.d({
+						e(G.d({
 							isViewSafe: t
 						}))
 					},
 					openPost: t => e(Object(H.I)(t)),
-					fireAdPixelsOfType: G.a,
-					trackOnPostEnteredViewport: G.a
+					fireAdPixelsOfType: R.a,
+					trackOnPostEnteredViewport: R.a
 				}), (e, t, r) => ({
 					...e,
 					...t,
@@ -398,8 +398,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ye = Object(I.t)(),
-				ge = Object(c.a)(I.B, ee.cb, (e, {
+			const je = Object(I.t)(),
+				ye = Object(c.a)(I.B, ee.db, (e, {
 					location: t
 				}) => o()([...Object(m.a)(t.search)]), I.O, (e, {
 					match: t
@@ -407,7 +407,7 @@
 					match: t
 				}) => Object(be.j)(e, {
 					profileName: t.params.profileName
-				}), ee.J, (e, {
+				}), ee.K, (e, {
 					match: t
 				}) => Object(ee.e)(e, d.ac + t.params.profileName), (e, t, r, s, o, n, a, i) => {
 					const {
@@ -427,14 +427,14 @@
 						timeSort: d
 					}
 				}),
-				je = Object(i.b)(ge, (e, t) => ({
+				ge = Object(i.b)(ye, (e, t) => ({
 					onLoadMore: () => e(Object(p.moreItemsRequested)()),
 					onLayoutChange: () => e(Object(p.profileCommentsRequested)({
 						...t.match,
 						queryParams: o()([...Object(m.a)(t.location.search)])
 					}))
 				}));
-			t.default = ye(je(e => {
+			t.default = je(ge(e => {
 				const {
 					contentGateInfo: t,
 					over18Prefs: r,
@@ -466,11 +466,11 @@
 					contentGateType: ue.a.ProfileDoesNotExist,
 					profileName: l
 				});
-				const g = l.toLowerCase(),
-					j = `/user/${l}/comments/`,
+				const y = l.toLowerCase(),
+					g = `/user/${l}/comments/`,
 					x = {
 						listingKey: n,
-						listingName: g
+						listingName: y
 					};
 				if (!r && o && !s) return a.a.createElement(f.default, {
 					contentGateType: ue.a.Nsfw,
@@ -478,7 +478,7 @@
 				});
 				const C = {
 					sort: p,
-					baseUrl: j,
+					baseUrl: g,
 					sortOptions: d.xb,
 					timeSort: u
 				};
@@ -488,9 +488,9 @@
 					contentNavBar: a.a.createElement(a.a.Fragment, null, a.a.createElement(de.a, {
 						profileName: l
 					})),
-					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(O.a, C), a.a.createElement(y.a, null), a.a.createElement(ce, {
+					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(O.a, C), a.a.createElement(j.a, null), a.a.createElement(ce, {
 						listingKey: n,
-						listingName: g,
+						listingName: y,
 						listingViewed: (e, t) => Object(le.o)(n, p, t, e, u),
 						noPostsComponent: () => a.a.createElement(b.b, {
 							profileName: l,
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.c44caab13c1b1e245122.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.9a3ba6e3f5b7e09b6b49.js.map

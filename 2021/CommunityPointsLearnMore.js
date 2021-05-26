@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.eaf5e7aa7c4a33558a61.js
-// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3b7ecf244b95eadaf924.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1293,7 +1293,7 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const p = Object(a.c)({
 					userId: e => {
-						const t = Object(d.i)(e);
+						const t = Object(d.j)(e);
 						return t ? t.id : ""
 					}
 				}),
@@ -2006,4 +2006,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.eaf5e7aa7c4a33558a61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3b7ecf244b95eadaf924.js.map

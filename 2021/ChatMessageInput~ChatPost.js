@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c61f413489b0f88d9b23.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.9862c71b40200f7dfb72.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -68,7 +68,7 @@
 				m = s("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
 				h = s("./src/reddit/constants/experiments.ts"),
 				p = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const b = Object(p.a)(h.Hb);
+			const b = Object(p.a)(h.Jb);
 			var x = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
 				f = s.n(x);
 			const g = l.a.div("Userpic", f.a);
@@ -288,7 +288,7 @@
 				p = s.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: m.V
+					isNightmodeOn: m.W
 				}));
 			t.a = x(e => {
 				const t = {
@@ -387,7 +387,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(c.a)(_.E, j.bb, (e, {
+				N = Object(a.b)(() => Object(c.a)(_.E, j.cb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(_.b)(e, s) : null, E.a, C.actionInfo, _.F, (e, t, s, n, r, o) => ({
@@ -1923,12 +1923,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.qd.SmIcon:
+						case b.sd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.qd.SmIconHc:
+						case b.sd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2312,12 +2312,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.jd
+						experimentName: n.ld
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.qd.SmIcon || t === n.qd.SmIconHc
+					return t === n.sd.SmIcon || t === n.sd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2340,4 +2340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c61f413489b0f88d9b23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.9862c71b40200f7dfb72.js.map

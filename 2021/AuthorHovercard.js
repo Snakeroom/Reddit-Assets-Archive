@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.3a9aa7dcab1ad793431b.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.a783de22dea01ec74843.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -11,7 +11,7 @@
 				s = n("./src/reddit/selectors/user.ts"),
 				r = n("./src/reddit/actions/login.ts");
 			t.a = () => async (e, t) => {
-				await e(Object(i.r)()), Object(s.J)(t()) || e(Object(r.h)())
+				await e(Object(i.r)()), Object(s.K)(t()) || e(Object(r.h)())
 			}
 		},
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -35,7 +35,7 @@
 				})), await e(Object(r.g)(a.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
 				const o = n();
-				Object(i.a)(Object(c.a)(e)(o)), Object(d.J)(o) ? await t(Object(r.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
+				Object(i.a)(Object(c.a)(e)(o)), Object(d.K)(o) ? await t(Object(r.h)(a.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
 			}
 		},
 		"./src/reddit/actions/subscription/constants.ts": function(e, t, n) {
@@ -178,10 +178,10 @@
 						name: `${s.ac}${e.name}`,
 						type: e.type
 					});
-					if (!Object(k.J)(l())) return r(Object(d.k)({
+					if (!Object(k.K)(l())) return r(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void r(Object(c.j)());
-					const _ = Object(k.i)(l());
+					const _ = Object(k.j)(l());
 					if (_) {
 						const t = v.length,
 							n = e.length;
@@ -330,7 +330,7 @@
 				}) => {
 					const o = n(),
 						a = o.multireddits.models;
-					if (!Object(k.J)(o)) return;
+					if (!Object(k.K)(o)) return;
 					const c = (e = !0) => {
 							t(Object(u.f)({
 								text: i.fbt._("Sorry, failed to {followAction}", [i.fbt._param("followAction", e ? i.fbt._("follow", null, {
@@ -1540,7 +1540,7 @@
 					subredditId: t,
 					username: n
 				}) => {
-					const i = Object(o.mb)(e, {
+					const i = Object(o.nb)(e, {
 						userName: n
 					});
 					if (!i) return;
@@ -1575,7 +1575,7 @@
 			}));
 			var i = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(i.nb)
+			const r = Object(s.a)(i.pb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -1589,9 +1589,9 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(i.Gd)(n))
+				return !(!n || Object(i.Id)(n))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.3a9aa7dcab1ad793431b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a783de22dea01ec74843.js.map

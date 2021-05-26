@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.9c798b7060f606a7c698.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.72a75e32e403a09d6151.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -1025,7 +1025,7 @@
 					if (n) return;
 					a || s && !n || await t(Object(I.subredditDataRequested)(e, _, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(be.J)(s()) && v !== o.Wb.Moderators && v !== o.Wb.SubredditRules) return void Object(u.a)(t, s());
+				if (!Object(be.K)(s()) && v !== o.Wb.Moderators && v !== o.Wb.SubredditRules) return void Object(u.a)(t, s());
 				if (Object(p.i)(s(), !0, _, C), !v) return;
 				let q, G, z, K, X, Q, J, Y, Z, $ = !1;
 				switch (v) {
@@ -1105,7 +1105,7 @@
 				}
 				const ee = s(),
 					te = !!_ && Object(me.hb)(ee),
-					se = Object(be.G)(ee),
+					se = Object(be.H)(ee),
 					ne = _ ? Object(k.X)(ee, {
 						subredditName: _.toLowerCase()
 					}) : Object(pe.q)(ee, {
@@ -6674,7 +6674,7 @@
 				allowChatPostCreation: (e, t) => Object(v.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(_.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(v.c)(e, t.subredditId),
-				isEmployee: S.G,
+				isEmployee: S.H,
 				notificationSettings: y.b,
 				restrictions: k.p,
 				settings: (e, t) => Object(k.W)(e, t.subredditId),
@@ -7966,11 +7966,11 @@
 			const {
 				fbt: G
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = l.a.wrapped(F, "PrivateKey", q.a), K = l.a.div("ButtonsContainer", q.a), X = l.a.div("Container", q.a), Q = l.a.div("Description", q.a), J = l.a.div("PrivateSubredditDetails", q.a), Y = l.a.div("PrivateSubredditDescription", q.a), Z = l.a.h3("PrivateSubredditName", q.a), $ = l.a.a("Link", q.a), ee = l.a.wrapped(R.k, "LinkRouterButton", q.a), te = l.a.wrapped(R.j, "LinkButton", q.a), se = l.a.wrapped(R.n, "SecondaryLinkRouterButton", q.a), ne = l.a.wrapped(R.m, "SecondaryLinkButton", q.a), ae = l.a.wrapped(ee, "GoHomeLinkButton", q.a), oe = l.a.img("Image", q.a), re = l.a.img("ImagePlaceholder", q.a), ie = l.a.wrapped(ee, "LeftLinkRouterButton", q.a), de = l.a.wrapped(te, "LeftLinkButton", q.a), le = l.a.wrapped(ne, "SecondaryLeftLinkButton", q.a), ce = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", q.a), ue = l.a.h3("Title", q.a), me = l.a.div("PageBody", q.a), pe = l.a.div("QuarantineMessageWrapper", q.a), he = Object(d.c)({
-				isLoggedIn: W.I,
+				isLoggedIn: W.J,
 				origin: H.j,
-				user: W.i,
+				user: W.j,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(W.J)(e)) return !1;
+					if (!Object(W.K)(e)) return !1;
 					const t = Object(B.d)(e);
 					if (!t) return !1;
 					const s = Object(W.e)(e, t);
@@ -8399,8 +8399,8 @@
 				k = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: g.c,
 					isInSrCreationEntrypointCopyExperiment: g.d,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.gb)(e),
-					userIsSuspended: f.O
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.hb)(e),
+					userIsSuspended: f.P
 				});
 			t.a = Object(r.b)(k, (e, {
 				eventSource: t
@@ -8426,7 +8426,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || c,
-				onClick: () => s === u.nd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
+				onClick: () => s === u.pd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
 				onMouseEnter: r,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -13969,7 +13969,7 @@
 					currentPageUrl: v.e
 				}),
 				Ve = Object(d.c)({
-					currentUser: T.i,
+					currentUser: T.j,
 					nextAfterToken: (e, {
 						subredditId: t
 					}) => e.pages.modHub.moderators.loadMoreModerators[t] && e.pages.modHub.moderators.loadMoreModerators[t].after,
@@ -15610,7 +15610,7 @@
 				submitRemovalReason: (t, s, n, a, o) => e(Object(l.submitRemovalReason)(t, s, n, a, o))
 			}), N = Object(r.c)({
 				currentUserName: e => {
-					const t = Object(_.i)(e);
+					const t = Object(_.j)(e);
 					if (t) return t.displayText
 				},
 				isLoading: v.a,
@@ -17701,7 +17701,7 @@
 				ce = f.a.div("TickText", U.a),
 				ue = f.a.div("PreSubText", U.a),
 				me = Object(i.c)({
-					isNightModeOn: F.V
+					isNightModeOn: F.W
 				}),
 				pe = Object(o.b)(me)(e => a.a.createElement(Q, {
 					last: e.last,
@@ -17809,30 +17809,37 @@
 				ye = ({
 					disabled: e,
 					last: t,
-					onChange: s,
-					...o
+					onClick: s,
+					onChange: o,
+					...r
 				}) => {
-					const r = Object(n.useCallback)(e => s(e.target.value), [s]),
+					const i = Object(n.useCallback)(e => o(e.target.value), [o]),
 						{
-							items: i
-						} = o;
+							items: d
+						} = r;
 					return a.a.createElement(Q, {
 						disabled: e
-					}, a.a.createElement(K, null, a.a.createElement(V, null, o.label), a.a.createElement(q, null, o.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(K, null, a.a.createElement("label", {
+						htmlFor: r.id
+					}, a.a.createElement(V, null, r.label)), a.a.createElement(q, null, r.subtext)), a.a.createElement("div", {
 						className: U.a.Wrapper__LineBreak
 					}), a.a.createElement(Q, {
 						last: t,
 						indent: !0,
 						disabled: e
 					}, a.a.createElement(O, {
+						id: r.id,
 						className: "redditStyle",
-						disabled: e || o.inputDisabled,
-						onChange: r,
-						value: o.selected
-					}, Object.keys(i).map(e => a.a.createElement("option", {
+						disabled: e || r.inputDisabled,
+						onChange: i,
+						value: r.selected
+					}, d.map(({
+						value: e,
+						displayName: t
+					}) => a.a.createElement("option", {
 						key: e,
 						value: e
-					}, i[e].displayName)))))
+					}, t)))))
 				},
 				Oe = e => a.a.createElement(Q, {
 					className: e.className,
@@ -20140,7 +20147,7 @@
 					isChatPost: m.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.l,
-					isLoggedIn: g.J,
+					isLoggedIn: g.K,
 					moderatorPermissions: p.j,
 					modModeEnabled: l.Q,
 					poll: (e, t) => {
@@ -23919,7 +23926,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				at = Object(i.b)(() => Object(d.a)(et, T.G, E.O, st, T.cb, w.hb, nt, tt, (e, t) => t.match.params.pageName, e => e, ({
+				at = Object(i.b)(() => Object(d.a)(et, T.H, E.O, st, T.db, w.hb, nt, tt, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, s, {
 					moderatorPermissions: n
@@ -24231,9 +24238,9 @@
 					experimentName: Z.z,
 					experimentEligibilitySelector: ne
 				}), ee.a),
-				ne = e => Object(te.I)(e) || Object(te.J)(e),
-				ae = Object(d.a)(se, e => e === Z.F.Optional),
-				oe = Object(d.a)(se, e => e === Z.F.Remove);
+				ne = e => Object(te.J)(e) || Object(te.K)(e),
+				ae = Object(d.a)(se, e => e === Z.G.Optional),
+				oe = Object(d.a)(se, e => e === Z.G.Remove);
 			var re = s("./src/reddit/selectors/experiments/emailInvite.ts"),
 				ie = s("./src/reddit/selectors/subreddit.ts"),
 				de = s("./src/reddit/pages/SubredditCreation/index.m.less"),
@@ -24255,11 +24262,11 @@
 					error: ie.h,
 					isCreatePending: ie.k,
 					isEmailInviteExperimentEnabled: re.a,
-					isEmployee: te.G,
+					isEmployee: te.H,
 					isTopicOptional: ae,
 					isTopicRemoved: oe,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(te.gb)(e),
-					userIsSuspended: te.O,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(te.hb)(e),
+					userIsSuspended: te.P,
 					allTags: E.e,
 					existingTags: E.h,
 					newTags: E.i,
@@ -24621,9 +24628,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Jb
+					experimentName: n.Lb
 				});
-				return !(!t || Object(n.Gd)(t))
+				return !(!t || Object(n.Id)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -24856,4 +24863,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9c798b7060f606a7c698.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.72a75e32e403a09d6151.js.map

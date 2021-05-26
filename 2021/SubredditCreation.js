@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.7e52d49df8fd6d7137d8.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.b94c0547de1bdfe064d5.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -93,7 +93,7 @@
 					title: Object(s.j)()
 				})), await e(Object(i.r)());
 				const n = t();
-				Object(l.J)(n) ? await e(Object(o.f)()) : Object(r.a)(e, n)
+				Object(l.K)(n) ? await e(Object(o.f)()) : Object(r.a)(e, n)
 			}
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -1266,7 +1266,7 @@
 				de = f.a.div("TickText", A.a),
 				pe = f.a.div("PreSubText", A.a),
 				ue = Object(r.c)({
-					isNightModeOn: L.V
+					isNightModeOn: L.W
 				}),
 				me = Object(o.b)(ue)(e => a.a.createElement(Y, {
 					last: e.last,
@@ -1374,30 +1374,37 @@
 				we = ({
 					disabled: e,
 					last: t,
-					onChange: n,
-					...o
+					onClick: n,
+					onChange: o,
+					...i
 				}) => {
-					const i = Object(s.useCallback)(e => n(e.target.value), [n]),
+					const r = Object(s.useCallback)(e => o(e.target.value), [o]),
 						{
-							items: r
-						} = o;
+							items: l
+						} = i;
 					return a.a.createElement(Y, {
 						disabled: e
-					}, a.a.createElement(J, null, a.a.createElement(G, null, o.label), a.a.createElement(K, null, o.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(J, null, a.a.createElement("label", {
+						htmlFor: i.id
+					}, a.a.createElement(G, null, i.label)), a.a.createElement(K, null, i.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), a.a.createElement(Y, {
 						last: t,
 						indent: !0,
 						disabled: e
 					}, a.a.createElement(_, {
+						id: i.id,
 						className: "redditStyle",
-						disabled: e || o.inputDisabled,
-						onChange: i,
-						value: o.selected
-					}, Object.keys(r).map(e => a.a.createElement("option", {
+						disabled: e || i.inputDisabled,
+						onChange: r,
+						value: i.selected
+					}, l.map(({
+						value: e,
+						displayName: t
+					}) => a.a.createElement("option", {
 						key: e,
 						value: e
-					}, r[e].displayName)))))
+					}, t)))))
 				},
 				_e = e => a.a.createElement(Y, {
 					className: e.className,
@@ -2757,9 +2764,9 @@
 					experimentName: Z.z,
 					experimentEligibilitySelector: se
 				}), ee.a),
-				se = e => Object(te.I)(e) || Object(te.J)(e),
-				ae = Object(l.a)(ne, e => e === Z.F.Optional),
-				oe = Object(l.a)(ne, e => e === Z.F.Remove);
+				se = e => Object(te.J)(e) || Object(te.K)(e),
+				ae = Object(l.a)(ne, e => e === Z.G.Optional),
+				oe = Object(l.a)(ne, e => e === Z.G.Remove);
 			var ie = n("./src/reddit/selectors/experiments/emailInvite.ts"),
 				re = n("./src/reddit/selectors/subreddit.ts"),
 				le = n("./src/reddit/pages/SubredditCreation/index.m.less"),
@@ -2781,11 +2788,11 @@
 					error: re.h,
 					isCreatePending: re.k,
 					isEmailInviteExperimentEnabled: ie.a,
-					isEmployee: te.G,
+					isEmployee: te.H,
 					isTopicOptional: ae,
 					isTopicRemoved: oe,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(te.gb)(e),
-					userIsSuspended: te.O,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(te.hb)(e),
+					userIsSuspended: te.P,
 					allTags: v.e,
 					existingTags: v.h,
 					newTags: v.i,
@@ -3147,11 +3154,11 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Jb
+					experimentName: s.Lb
 				});
-				return !(!t || Object(s.Gd)(t))
+				return !(!t || Object(s.Id)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.7e52d49df8fd6d7137d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.b94c0547de1bdfe064d5.js.map

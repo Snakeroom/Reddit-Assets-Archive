@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1a6bd6a564fc996bc3ba.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4cfb96e9d96fc6a814c2.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -533,7 +533,7 @@
 				}) => async (n, o) => {
 					const s = o();
 					if (!!s.features.comments.drafts[t])
-						if (Object(Y.L)(s) && e) {
+						if (Object(Y.M)(s) && e) {
 							const o = Z({
 								hasFocus: e,
 								draftKey: t
@@ -703,7 +703,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						l = Object(a.a)(W.c.replyToComment, t);
-					if (!Object(Y.J)(s())) return o(Object(c.j)()), void o(Object(d.k)({
+					if (!Object(Y.K)(s())) return o(Object(c.j)()), void o(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(K.m)(s(), {
 							commentId: t
@@ -743,7 +743,7 @@
 							draftType: W.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(Y.L)(r)) {
+						}, Object(Y.M)(r)) {
 						const n = ue({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -1016,7 +1016,7 @@
 				I = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(j.J)(n())) return t(Object(d.j)()), void t(Object(l.k)({
+					if (!Object(j.K)(n())) return t(Object(d.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(v.m)(n(), {
 							commentId: e
@@ -1379,7 +1379,7 @@
 				_ = (e, t, n, o) => async (s, r, {
 					gqlContext: a
 				}) => {
-					const i = Object(h.J)(r()),
+					const i = Object(h.K)(r()),
 						d = await Object(c.h)(a(), {
 							subredditId: e,
 							period: t,
@@ -5176,7 +5176,7 @@
 				}) => t ? Object(S.U)(e, {
 					subredditId: t
 				}) : void 0,
-				user: w.i
+				user: w.j
 			});
 			class B extends a.a.PureComponent {
 				constructor() {
@@ -7292,7 +7292,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: W.bb
+					shouldOpenPostInNewTab: W.cb
 				}),
 				ee = e => {
 					const {
@@ -7300,7 +7300,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(K.a)(), a = Object(H.a)(m.Rb) === m.Vb.Enabled;
+					} = t, s = Object(K.a)(), a = Object(H.a)(m.Tb) === m.Xb.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, r.a.createElement(te, e));
@@ -8136,10 +8136,10 @@
 				}).apply(this, arguments)
 			}
 			const f = Object(i.c)({
-					currentUser: d.i,
-					isNightMode: d.V,
-					isPresenceUserPrefEnabled: d.hb,
-					shouldHideNSFW: d.B
+					currentUser: d.j,
+					isNightMode: d.W,
+					isPresenceUserPrefEnabled: d.ib,
+					shouldHideNSFW: d.C
 				}),
 				g = Object(a.b)(f);
 			t.a = g(e => {
@@ -8697,10 +8697,10 @@
 						o = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						s = Object(g.V)(e);
+						s = Object(g.W)(e);
 					return o || s
 				},
-				nigtmode: g.V,
+				nigtmode: g.W,
 				subredditId: u.m,
 				topPostVariant: b.d
 			}));
@@ -12482,7 +12482,7 @@
 				const o = Object(c.c)(e, {
 						subredditId: n
 					}),
-					d = Object(i.g)(e),
+					d = Object(i.h)(e),
 					l = d ? Object(r.b)(e, {
 						subredditId: n,
 						userId: d
@@ -16305,7 +16305,7 @@
 								},
 								type: "json"
 							}).then(e => se(e, t)))(o(), r) : await re(o(), r)).ok) {
-						const e = Object(T.i)(s),
+						const e = Object(T.j)(s),
 							n = l.body;
 						t(ge({
 							draftId: r.draftId,
@@ -17436,7 +17436,7 @@
 					if (!s) return d.fbt._("A destination community is required to crosspost", null, {
 						hk: "3haidF"
 					});
-					const i = r ? Object(T.db)(e, {
+					const i = r ? Object(T.eb)(e, {
 						userId: s
 					}) : s;
 					if (i) {
@@ -17783,7 +17783,7 @@
 				hs = n.n(ps);
 			const bs = Je.a.wrapped(us.a, "SubredditPicker", hs.a),
 				fs = Je.a.wrapped(st.a, "ControlRow", hs.a),
-				gs = Object(a.a)(j.h, y.a, j.X, T.i, v.q, T.B, (e, t, n, o, s, r) => {
+				gs = Object(a.a)(j.h, y.a, j.X, T.j, v.q, T.C, (e, t, n, o, s, r) => {
 					const a = n && !t ? n : e;
 					if (!a || !a.name) return Object(ms.b)("", null, null, r);
 					const {
@@ -17887,7 +17887,7 @@
 					}) => t ? Object(w.U)(e, {
 						subredditId: t
 					}) : void 0,
-					user: T.i
+					user: T.j
 				}),
 				Qs = Object(r.b)(Xs, (e, {
 					pageLayer: t
@@ -18007,7 +18007,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), fr = `${W.a.assetPath}/img/snoo-drafts.png`, gr = 3, Cr = Je.a.div("Wrapper", pr.a), xr = Je.a.div("TitleRow", pr.a), Er = Je.a.span("DraftsNumber", pr.a), _r = Je.a.div("DetailsContainer", pr.a), vr = Je.a.wrapped(st.a, "ButtonRow", pr.a), Or = Je.a.wrapped($e.l, "CancelButton", pr.a), yr = Je.a.div("CloseWrapper", pr.a), kr = Je.a.wrapped(ys.a, "Close", pr.a), jr = Je.a.div("Empty", pr.a), Sr = Je.a.img("EmptyImage", pr.a), wr = Je.a.p("EmptyText", pr.a), Tr = Object(a.c)({
 				drafts: S.c,
 				isPending: S.b,
-				maxDrafts: T.U
+				maxDrafts: T.V
 			}), Ir = Object(r.b)(Tr);
 			class Pr extends s.a.PureComponent {
 				constructor() {
@@ -19035,7 +19035,7 @@
 				jc = Object(a.c)({
 					connectedTwitterAccount: ic.a,
 					currentSubredditOrProfile: v.o,
-					currentUser: T.i,
+					currentUser: T.j,
 					isDraftPending: S.g,
 					isMediaUploadPending: j.V,
 					isPostPending: j.mb,
@@ -19159,7 +19159,7 @@
 						}) : 0
 					},
 					destSubredditAboutInfo: j.g,
-					draftsCount: T.j,
+					draftsCount: T.k,
 					isPending: j.Z
 				});
 			var Vc = Object(r.b)(qc, e => ({
@@ -20611,12 +20611,12 @@
 						return !!n && "/" === n[0]
 					},
 					draft: S.d,
-					draftsCount: T.j,
+					draftsCount: T.k,
 					editorMode: j.n,
 					eventSchedule: j.p,
-					includeUserProfile: T.f,
+					includeUserProfile: T.g,
 					isChanged: j.F,
-					isNameEditable: T.L,
+					isNameEditable: T.M,
 					isPostSubmitEnabled: ts,
 					isScheduledPost: j.Q,
 					flair: j.r,
@@ -20625,7 +20625,7 @@
 					linkBody: j.S,
 					markdownBody: j.T,
 					rteBody: j.eb,
-					maxDrafts: T.U,
+					maxDrafts: T.V,
 					modalId: y.a,
 					needsCaptcha: j.W,
 					nextSubreddit: j.X,
@@ -20930,7 +20930,7 @@
 				em = n("./src/telemetry/models/Timer.ts");
 			const tm = Object(a.c)({
 					destSubreddit: j.h,
-					user: T.i
+					user: T.j
 				}),
 				nm = Object(r.b)(tm, (e, {
 					pageLayer: t
@@ -21462,7 +21462,7 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.wb)
+			const r = Object(s.a)(o.yb)
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -21476,14 +21476,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Ec
-					}) === o.Oc.Enabled
+						experimentName: o.Gc
+					}) === o.Qc.Enabled
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.Dc
-					}) === o.Nc.Enabled
+						experimentName: o.Fc
+					}) === o.Pc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -21642,7 +21642,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const o = Object(i.mb)(e, {
+					const o = Object(i.nb)(e, {
 						userName: n
 					});
 					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return p(e, {
@@ -22238,4 +22238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1a6bd6a564fc996bc3ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4cfb96e9d96fc6a814c2.js.map

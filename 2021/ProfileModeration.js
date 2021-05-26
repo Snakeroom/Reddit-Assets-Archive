@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.315235d1fe35ebcecc66.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.f96379e9bd2c66149b9e.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -373,12 +373,12 @@
 			var S = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				N = n("./src/reddit/controls/Typography/index.tsx"),
 				O = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				j = n("./src/reddit/icons/svgs/Circle/index.tsx"),
-				T = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				T = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				R = n("./node_modules/lodash/range.js"),
 				I = n.n(R),
-				L = n("./src/reddit/controls/Button/index.tsx"),
-				F = n("./src/reddit/layout/row/Inline/index.tsx"),
+				F = n("./src/reddit/controls/Button/index.tsx"),
+				L = n("./src/reddit/layout/row/Inline/index.tsx"),
 				M = n("./src/reddit/models/Flair/index.ts"),
 				P = n("./src/reddit/selectors/tooltip.ts"),
 				D = n("./src/reddit/selectors/user.ts"),
@@ -395,7 +395,7 @@
 				}).apply(this, arguments)
 			}
 			const G = Object(d.a)(h.a),
-				A = x.a.wrapped(j.a, "Circle", B.a),
+				A = x.a.wrapped(T.a, "Circle", B.a),
 				z = x.a.h3("Label", B.a),
 				U = x.a.wrapped(N.c, "Subtext", B.a),
 				q = x.a.wrapped(m.a, "HoverTooltip", B.a),
@@ -425,7 +425,7 @@
 				})),
 				K = x.a.a("Link", B.a),
 				Z = x.a.wrapped(K, "SubtextLink", B.a),
-				X = x.a.wrapped(T.a, "LinkIcon", B.a),
+				X = x.a.wrapped(j.a, "LinkIcon", B.a),
 				$ = x.a.button("LinkButton", B.a),
 				ee = x.a.wrapped(O.a, "ArrowRight", B.a),
 				te = e => r.a.createElement(J, {
@@ -457,7 +457,7 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, r.a.createElement(Y, null, r.a.createElement(F.a, null, r.a.createElement("label", {
+					}, r.a.createElement(Y, null, r.a.createElement(L.a, null, r.a.createElement("label", {
 						htmlFor: t
 					}, r.a.createElement(z, null, e.label))), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(V, null, e.tooltip && r.a.createElement(q, {
 						tooltipContentClass: e.tooltipContentClassName,
@@ -476,7 +476,7 @@
 				de = x.a.div("TickText", B.a),
 				ue = x.a.div("PreSubText", B.a),
 				me = Object(l.c)({
-					isNightModeOn: D.V
+					isNightModeOn: D.W
 				}),
 				pe = Object(s.b)(me)(e => r.a.createElement(J, {
 					last: e.last,
@@ -489,7 +489,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && r.a.createElement(F.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, " ", r.a.createElement(ue, {
+				}, !e.inModal && r.a.createElement(L.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, " ", r.a.createElement(ue, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -520,7 +520,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Y, null, r.a.createElement(F.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(V, null, r.a.createElement(L.l, {
+				}, r.a.createElement(Y, null, r.a.createElement(L.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(V, null, r.a.createElement(F.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				fe = e => r.a.createElement(J, {
@@ -584,30 +584,37 @@
 				ye = ({
 					disabled: e,
 					last: t,
-					onChange: n,
-					...s
+					onClick: n,
+					onChange: s,
+					...o
 				}) => {
-					const o = Object(a.useCallback)(e => n(e.target.value), [n]),
+					const l = Object(a.useCallback)(e => s(e.target.value), [s]),
 						{
-							items: l
-						} = s;
+							items: i
+						} = o;
 					return r.a.createElement(J, {
 						disabled: e
-					}, r.a.createElement(Y, null, r.a.createElement(z, null, s.label), r.a.createElement(U, null, s.subtext)), r.a.createElement("div", {
+					}, r.a.createElement(Y, null, r.a.createElement("label", {
+						htmlFor: o.id
+					}, r.a.createElement(z, null, o.label)), r.a.createElement(U, null, o.subtext)), r.a.createElement("div", {
 						className: B.a.Wrapper__LineBreak
 					}), r.a.createElement(J, {
 						last: t,
 						indent: !0,
 						disabled: e
 					}, r.a.createElement(k, {
+						id: o.id,
 						className: "redditStyle",
-						disabled: e || s.inputDisabled,
-						onChange: o,
-						value: s.selected
-					}, Object.keys(l).map(e => r.a.createElement("option", {
+						disabled: e || o.inputDisabled,
+						onChange: l,
+						value: o.selected
+					}, i.map(({
+						value: e,
+						displayName: t
+					}) => r.a.createElement("option", {
 						key: e,
 						value: e
-					}, l[e].displayName)))))
+					}, t)))))
 				},
 				ke = e => r.a.createElement(J, {
 					className: e.className,
@@ -1749,9 +1756,9 @@
 			var k = C;
 			const S = Object(l.c)({
 					isModerator: (e, t) => Object(u.f)(e, t.match.params),
-					isOwnProfile: (e, t) => Object(m.N)(e, t.match.params.profileName),
+					isOwnProfile: (e, t) => Object(m.O)(e, t.match.params.profileName),
 					isPending: e => e.profileModSettingsPage.api.pending,
-					hasSubreddit: (e, t) => Object(m.nb)(e, {
+					hasSubreddit: (e, t) => Object(m.ob)(e, {
 						userName: t.match.params.profileName
 					})
 				}),
@@ -1786,4 +1793,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.315235d1fe35ebcecc66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.f96379e9bd2c66149b9e.js.map

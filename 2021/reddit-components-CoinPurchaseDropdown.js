@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.0d4e8f167dc16454630f.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.0df34bd3224bcca31a12.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown", "GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -561,7 +561,7 @@
 				}) => {
 					t(b());
 					const d = r(),
-						l = Object(i.J)(d);
+						l = Object(i.K)(d);
 					try {
 						const r = !l,
 							n = await Object(c.b)({
@@ -776,7 +776,7 @@
 						})
 					},
 					isFreeAwardEventEnabled: e => Object(R.a)(e) && Object(F.g)(e),
-					isPremiumSubscriber: G.s,
+					isPremiumSubscriber: G.t,
 					premiumPackages: F.i,
 					purchaseCatalogError: F.j,
 					purchaseCatalogPending: F.k
@@ -794,7 +794,7 @@
 					})) : Object(v.d)("/premium", v.c.BLANK),
 					requestPurchaseCatalog: t => e(Object(A.b)(t))
 				}));
-			class J extends o.a.Component {
+			class Q extends o.a.Component {
 				constructor(e) {
 					super(e), this.handleClickBuyCoins = e => {
 						const {
@@ -956,7 +956,7 @@
 					}))
 				}
 			}
-			var Q = Object(N.t)()(Y(Object(i.c)(J))),
+			var J = Object(N.t)()(Y(Object(i.c)(Q))),
 				X = r("./src/reddit/components/CoinPurchaseDropdown/index.m.less"),
 				ee = r.n(X);
 			const {
@@ -1002,7 +1002,7 @@
 						tooltipId: a
 					}, o.a.createElement(y, {
 						activeSaleConfig: e
-					}), o.a.createElement(Q, {
+					}), o.a.createElement(J, {
 						className: ee.a.purchaseList,
 						onClick: n,
 						sorted: !0
@@ -1618,4 +1618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.0d4e8f167dc16454630f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.0df34bd3224bcca31a12.js.map

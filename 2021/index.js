@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.a6a341dcbc214cb69559.js
-// Retrieved at 5/24/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.b3d384d9be542710a029.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -28,7 +28,7 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "TournamentPostBody", (function() {
-				return Q
+				return K
 			}));
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
@@ -186,8 +186,8 @@
 				tournamentId: t,
 				subredditId: n
 			}) => {
-				const o = Object(r.e)(x.J),
-					s = Object(r.e)(x.V),
+				const o = Object(r.e)(x.K),
+					s = Object(r.e)(x.W),
 					{
 						isLoading: d,
 						isShowingVoteAnimation: a,
@@ -259,7 +259,7 @@
 				}, F._("View Tournament", null, {
 					hk: "1Iso2Z"
 				}))
-			}, Q = ({
+			}, K = ({
 				postId: e
 			}) => {
 				const t = Object(r.e)(t => Object(d.F)(t, {
@@ -281,8 +281,8 @@
 					postId: e
 				})
 			};
-			t.default = Q
+			t.default = K
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.a6a341dcbc214cb69559.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.b3d384d9be542710a029.js.map

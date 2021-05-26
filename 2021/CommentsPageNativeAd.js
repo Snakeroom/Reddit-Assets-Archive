@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9a856dd308616191f919.js
-// Retrieved at 5/18/2021, 5:00:22 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8f9ebb77e3e1ea891a16.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -78,8 +78,8 @@
 						isCurrentUserProfilePost: K,
 						isFrontpage: G,
 						isGalleryTileLayoutDefault: H,
-						isLoggedIn: J,
-						isOverlay: Z,
+						isLoggedIn: Z,
+						isOverlay: J,
 						imageGalleryCurrentItem: Q,
 						moderatorPermissions: Y,
 						modModeEnabled: q,
@@ -103,14 +103,14 @@
 						post: se,
 						inSubredditOrProfile: i,
 						isCurrentUserProfilePost: K,
-						isOverlay: Z,
-						shouldShowSubscribeButton: !(G && J),
+						isOverlay: J,
+						shouldShowSubscribeButton: !(G && Z),
 						subredditOrProfile: ce
 					}, ge = Object(a.t)(se, Q), {
 						source: ke
 					} = ge, je = r.a.createElement(P.a, {
 						className: Object(n.a)(B.a.classicPostStyles, V.a.postContainer, Object(W.a)(this.props), _ ? V.a.mFirst : void 0, e),
-						isOverlay: Z,
+						isOverlay: J,
 						style: {
 							...Object(W.d)(this.props),
 							...Object(W.b)(this.props.flairStyleTemplate)
@@ -164,7 +164,7 @@
 						redditStyle: re,
 						size: g.b.Medium,
 						titleColor: ue && ue.postTitleColor,
-						isOverlay: Z
+						isOverlay: J
 					}, se.source && !xe && r.a.createElement(S.a, {
 						href: se.source.url,
 						isSponsored: se.isSponsored,
@@ -204,14 +204,14 @@
 						hasModFullPerms: Ce,
 						hostPostData: R,
 						isActionBarAnimationEnabled: F,
-						isOverlay: !!Z,
+						isOverlay: !!J,
 						modModeEnabled: q,
 						onIgnoreReports: $,
 						onOpenReportsDropdown: ee,
 						post: se,
 						showEditPost: ve,
 						showEditFlair: ie,
-						tooltipType: Z ? k.c.Lightbox : void 0,
+						tooltipType: J ? k.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(y.h)({
 							editPost: !Oe,
 							save: !Oe,
@@ -273,7 +273,7 @@
 		"./src/reddit/components/CommentsPageNativeAd/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SearchResultsCommentsPageNativeAd", (function() {
-				return J
+				return Z
 			}));
 			var o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -507,7 +507,7 @@
 				}
 			}
 			const H = Object(l.a)(G),
-				J = Object(U.a)(H);
+				Z = Object(U.a)(H);
 			t.default = Object(V.a)(K(H))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
@@ -582,7 +582,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.l,
-					isLoggedIn: h.J,
+					isLoggedIn: h.K,
 					moderatorPermissions: u.j,
 					modModeEnabled: c.Q,
 					poll: (e, t) => {
@@ -708,4 +708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.9a856dd308616191f919.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8f9ebb77e3e1ea891a16.js.map

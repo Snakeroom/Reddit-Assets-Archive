@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.9286d2dd556d65ad0e88.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.e75beb17186bbde1f2e3.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2464,10 +2464,10 @@
 						i = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						n = Object(h.V)(e);
+						n = Object(h.W)(e);
 					return i || n
 				},
-				nigtmode: h.V,
+				nigtmode: h.W,
 				subredditId: u.m,
 				topPostVariant: k.d
 			}));
@@ -3136,7 +3136,7 @@
 						match: t
 					}) => Object(A.e)(e, t.params.subredditName),
 					layout: x.O,
-					over18Pref: A.cb,
+					over18Pref: A.db,
 					subreddit: (e, {
 						match: t
 					}) => Object(L.A)(e, {
@@ -3161,7 +3161,7 @@
 						contentGateInfo: t,
 						subreddit: s,
 						subredditName: i
-					} = this.props, r = !!s && s.isNSFW && !A.cb, o = Object(W.a)(t, r, i);
+					} = this.props, r = !!s && s.isNSFW && !A.db, o = Object(W.a)(t, r, i);
 					if (o) return n.a.createElement(c.default, o);
 					const a = `/r/${i}/`;
 					return n.a.createElement(D.a, {
@@ -3326,4 +3326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.9286d2dd556d65ad0e88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e75beb17186bbde1f2e3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.0390a2e95d3e0e3805e0.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.a37b2cf68af2ed6f1772.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -64,7 +64,7 @@
 				}, E = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(f.J)(s())) return void t(Object(d.i)(u.a.LOGIN_MODAL_ID));
+					if (!Object(f.K)(s())) return void t(Object(d.i)(u.a.LOGIN_MODAL_ID));
 					const n = s().features.comments.models[e];
 					if (!n) return;
 					const r = n.isLocked ? m.j : m.d;
@@ -1106,4 +1106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.0390a2e95d3e0e3805e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.a37b2cf68af2ed6f1772.js.map

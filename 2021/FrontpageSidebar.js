@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.bb6953c5cf022487acf5.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.b528dc4268061e911dfc.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -271,8 +271,8 @@
 				U = n("./src/lib/constants/index.ts"),
 				M = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				Q = n("./src/reddit/constants/localStorage.ts"),
-				K = n("./src/reddit/contexts/ApiContext.tsx"),
-				J = n("./src/reddit/featureFlags/component.tsx"),
+				J = n("./src/reddit/contexts/ApiContext.tsx"),
+				K = n("./src/reddit/featureFlags/component.tsx"),
 				V = n("./src/reddit/helpers/localStorage/index.ts"),
 				Z = n("./src/reddit/helpers/name/index.ts"),
 				H = n("./src/lib/makeApiRequest/index.ts"),
@@ -340,7 +340,7 @@
 				}
 			}
 			re.cachedData = null;
-			var ie = Object(J.a)("srAdoptionWeek", Object(K.b)(re)),
+			var ie = Object(K.a)("srAdoptionWeek", Object(J.b)(re)),
 				oe = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				de = n("./src/reddit/actions/post.ts"),
 				ce = n("./src/reddit/components/MiniPost/index.tsx"),
@@ -676,13 +676,13 @@
 				Ue = n("./src/reddit/constants/tracking.ts"),
 				Me = n("./src/reddit/selectors/telemetry.ts"),
 				Qe = n("./src/reddit/selectors/widgets.ts"),
-				Ke = n("./src/telemetry/models/Subreddit.ts");
-			const Je = e => t => n => ({
+				Je = n("./src/telemetry/models/Subreddit.ts");
+			const Ke = e => t => n => ({
 					...Me.defaults(n),
 					...Object(Qe.b)(n, e),
 					source: "trending_community_card",
 					action: Ue.c.CLICK,
-					noun: Object(Ke.getSubscribeEventNoun)(e.type, t)
+					noun: Object(Je.getSubscribeEventNoun)(e.type, t)
 				}),
 				Ve = e => t => ({
 					...Me.defaults(t),
@@ -711,13 +711,13 @@
 			const at = "c1020",
 				rt = "videos",
 				it = Object(u.c)({
-					isMod: $e.K,
-					isLoggedIn: $e.I,
+					isMod: $e.L,
+					isLoggedIn: $e.J,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					trendingSubredditIds: ve.db,
-					currentUser: $e.i,
+					currentUser: $e.j,
 					frontpageLinks: tt.b,
-					isOver18: $e.cb,
+					isOver18: $e.db,
 					isUISimplificationAllItemsVariant: et.b,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Xe(e) === Ge.q.RotateEven
@@ -731,9 +731,9 @@
 							n = !!Object(ve.P)(e, at);
 						return (!t || !n) && (!Object(et.b)(e) && function(e) {
 							return Object(He.c)(e, {
-								experimentEligibilitySelector: $e.J,
-								experimentName: Ge.Y
-							}) === Ge.Kb
+								experimentEligibilitySelector: $e.K,
+								experimentName: Ge.ab
+							}) === Ge.Mb
 						}(e))
 					}
 				}),
@@ -834,7 +834,7 @@
 						isInIcons2020: u
 					}), ot(this.props) && c.a.createElement(h.a, null, c.a.createElement(Te, {
 						getClickEventFactory: Ve,
-						getSubscribeEventFactoryHandler: Je,
+						getSubscribeEventFactoryHandler: Ke,
 						subredditIds: l && k ? k : o,
 						title: l ? s.fbt._("Top Video Communities", null, {
 							hk: "SSdYX"
@@ -2091,4 +2091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.bb6953c5cf022487acf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.b528dc4268061e911dfc.js.map

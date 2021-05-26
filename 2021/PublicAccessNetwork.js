@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.74f8c845a3a4c6b30ab5.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d11f18f22271c777035f.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.pc
+					experimentName: m.rc
 				});
-				return Object(m.Gd)(t) ? void 0 : t
+				return Object(m.Id)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.qc
+					experimentName: m.sc
 				});
-				return Object(m.Gd)(t) ? void 0 : t
-			}, (e, t) => e === m.rc.Enabled && t === m.rc.Enabled);
+				return Object(m.Id)(t) ? void 0 : t
+			}, (e, t) => e === m.tc.Enabled && t === m.tc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -505,7 +505,7 @@
 						forwardedRef: t
 					}))),
 					M = Object(r.c)({
-						redditUserId: b.g,
+						redditUserId: b.h,
 						isMuxEnabled: p
 					});
 				return Object(n.b)(M, null, null, {
@@ -641,7 +641,7 @@
 				}, S = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(g.J)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(g.K)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
 					const n = a.isLocked ? m.j : m.d;
@@ -880,7 +880,7 @@
 						sortToUse: n
 					} = Object(M.a)(e, a);
 				return (!n || n === h.r.CONFIDENCE) && Object(se.c)(e, {
-					experimentEligibilitySelector: () => Object(W.I)(e),
+					experimentEligibilitySelector: () => Object(W.J)(e),
 					experimentName: te.s
 				}) === te.u.Enabled
 			};
@@ -956,7 +956,7 @@
 					});
 					C && (P.sort = I), P.onOtherDiscussions = k, t(S.p(m)), await t(ye(m, u, P, I));
 					const D = s().posts.models[m],
-						V = Object(W.J)(s());
+						V = Object(W.K)(s());
 					if (D && "subreddit" === D.belongsTo.type) {
 						const e = D.belongsTo.id,
 							s = Object(ee.i)(() => t(Object(Z.i)(e, {
@@ -1073,8 +1073,8 @@
 						j = w.pages.comments.api.fullyLoaded[_],
 						R = w.pages.comments.api.error[_],
 						M = w.pages.comments.api.pending[_],
-						N = !Object(W.I)(w),
-						T = Object(W.i)(w),
+						N = !Object(W.J)(w),
+						T = Object(W.j)(w),
 						L = o === h.r.CHAT,
 						A = !!w.platform.lastPage;
 					if ((M || x && !R) && !(L && A)) {
@@ -1199,8 +1199,8 @@
 					var r;
 					const i = Object(G.a)(e, t, s),
 						c = a(),
-						m = Object(W.J)(c),
-						p = Object(W.i)(c),
+						m = Object(W.K)(c),
+						p = Object(W.j)(c),
 						h = Object(l.a)(n.apiContext(), e, t, s, Object(D.a)(c), Object(re.a)(c), oe(c)),
 						b = m && p && Object(u.d)(n.gqlContext(), Object(P.e)(p)) || null,
 						[v, f] = await Promise.all([h, b]);
@@ -1258,7 +1258,7 @@
 					i = o.g();
 				e(a.l({
 					title: i
-				})), Object(r.J)(s) || await e(n.r())
+				})), Object(r.K)(s) || await e(n.r())
 			}
 		},
 		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
@@ -2908,7 +2908,7 @@
 				submitRemovalReason: (t, s, o, a, n) => e(Object(c.submitRemovalReason)(t, s, o, a, n))
 			}), I = Object(r.c)({
 				currentUserName: e => {
-					const t = Object(k.i)(e);
+					const t = Object(k.j)(e);
 					if (t) return t.displayText
 				},
 				isLoading: y.a,
@@ -5738,7 +5738,7 @@
 				isDisabled: (e, t) => Object(qe.f)(e, {
 					streamIdFromPath: t.postId
 				}),
-				isLoggedIn: Do.J,
+				isLoggedIn: Do.K,
 				isPostDataLoaded: (e, {
 					postId: t
 				}) => !!Object(_o.F)(e, {
@@ -6992,7 +6992,7 @@
 				n = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const i = e => !!Object(n.b)(e) || Object(a.c)(e, {
-				experimentEligibilitySelector: r.J,
+				experimentEligibilitySelector: r.K,
 				experimentName: o.i
 			}) === o.e.Enabled
 		},
@@ -7009,9 +7009,9 @@
 				d = s("./src/reddit/selectors/user.ts");
 			const c = e => (e => {
 				return Object(i.c)(e, {
-					experimentEligibilitySelector: () => Object(d.I)(e),
-					experimentName: o.Rc
-				}) === o.bd.Enabled
+					experimentEligibilitySelector: () => Object(d.J)(e),
+					experimentName: o.Tc
+				}) === o.dd.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -7019,4 +7019,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.74f8c845a3a4c6b30ab5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d11f18f22271c777035f.js.map

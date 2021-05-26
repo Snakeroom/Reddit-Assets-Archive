@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.44ed7819f4a4486b2d73.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.26b8998ee5469917683e.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, a) {
@@ -442,7 +442,7 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 
 			function $(A) {
-				const [e, a] = Object(t.useState)(!1), s = Object(r.e)(W.i), n = Object(Y.a)("http://www.reddit.com/vault/transaction?version=1", {
+				const [e, a] = Object(t.useState)(!1), s = Object(r.e)(W.j), n = Object(Y.a)("http://www.reddit.com/vault/transaction?version=1", {
 					u: s ? s.id : ""
 				});
 				return i.a.createElement(C, {
@@ -1023,4 +1023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.44ed7819f4a4486b2d73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.26b8998ee5469917683e.js.map

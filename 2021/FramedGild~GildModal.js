@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6a4dafa49a02a7ce7a49.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b08342c693ef8c7de124.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -364,9 +364,9 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return z
-			})), s.d(t, "updateMessage", (function() {
 				return K
+			})), s.d(t, "updateMessage", (function() {
+				return z
 			})), s.d(t, "gildGqlRequested", (function() {
 				return Y
 			})), s.d(t, "triggerLoader", (function() {
@@ -445,8 +445,8 @@
 				V = s("./src/reddit/actions/gold/awardKarma.ts"),
 				q = s("./src/reddit/actions/gold/constants.ts"),
 				J = s("./src/reddit/actions/gold/econPurchase.ts");
-			const z = Object(r.a)(q.s),
-				K = Object(r.a)(q.w),
+			const K = Object(r.a)(q.s),
+				z = Object(r.a)(q.w),
 				Y = (e, t) => async (s, r, {
 					gqlContext: a
 				}) => {
@@ -528,7 +528,7 @@
 						postId: s
 					}) : Object(y.a)(e, {
 						commentId: s
-					}), r = Object(A.i)(e), a = e.gild, {
+					}), r = Object(A.j)(e), a = e.gild, {
 						isAnonymous: o
 					} = a, i = !o && r && (r.username || r.displayText) ? r.username || r.displayText : void 0, d = n ? n.author : void 0, c = Object(N.K)(e, {
 						thingId: s
@@ -547,7 +547,7 @@
 						} = e,
 						h = Object(E.a)(r, u),
 						b = e.awardKarmaReceived,
-						f = Object(A.i)(r),
+						f = Object(A.j)(r),
 						y = Object(I.b)(r) || Object(F.d)(F.a.GildingFlow, !1);
 					if (Object(I.g)(r)) {
 						const e = "success.gild",
@@ -1344,7 +1344,7 @@
 				}) => {
 					t(p());
 					const c = s(),
-						l = Object(d.J)(c);
+						l = Object(d.K)(c);
 					try {
 						const s = !l,
 							n = await Object(i.b)({
@@ -1597,9 +1597,9 @@
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				z = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				K = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
-				Y = s.n(K),
+				K = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				z = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
+				Y = s.n(z),
 				X = s("./src/reddit/helpers/awards/message.ts"),
 				Z = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				Q = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
@@ -2289,12 +2289,12 @@
 						})
 					},
 					correlationId: e => Object(A.b)(e) || Object(m.d)(m.a.GildingFlow, !1),
-					currentUser: F.i,
+					currentUser: F.j,
 					errorMessage: A.a,
 					isAnonymous: A.f,
 					iFramed: A.g,
 					isGildPending: A.e,
-					isEmployee: F.G,
+					isEmployee: F.H,
 					isRecommendedCoinPackagePending: L.l,
 					message: A.c,
 					postOrComment: (e, {
@@ -2585,7 +2585,7 @@
 				subredditAboutRequested: t => e(Object(_.u)(t)),
 				subredditLockedCoinsRequested: (t, s) => e(Object(x.a)(t, s)),
 				updateMessage: t => e(Object(O.updateMessage)(t))
-			}))(Object(z.c)(He))
+			}))(Object(K.c)(He))
 		},
 		"./src/reddit/components/Gold/AwardKarmaToastMessage/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2667,7 +2667,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.V
+					isNightmodeOn: m.W
 				}));
 			t.a = f(e => {
 				const t = {
@@ -2766,7 +2766,7 @@
 						style: t
 					}, e.children)
 				},
-				A = Object(o.b)(() => Object(d.a)(O.E, v.bb, (e, {
+				A = Object(o.b)(() => Object(d.a)(O.E, v.cb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(O.b)(e, s) : null, x.a, j.actionInfo, O.F, (e, t, s, n, r, a) => ({
@@ -4227,12 +4227,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.qd.SmIcon:
+						case b.sd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.qd.SmIconHc:
+						case b.sd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5209,12 +5209,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.jd
+						experimentName: n.ld
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.qd.SmIcon || t === n.qd.SmIconHc
+					return t === n.sd.SmIcon || t === n.sd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5237,4 +5237,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6a4dafa49a02a7ce7a49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b08342c693ef8c7de124.js.map

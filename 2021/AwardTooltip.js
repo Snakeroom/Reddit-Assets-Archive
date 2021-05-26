@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.cb8c33e0a901b1fdbcdb.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.ffe7efe1f39665575d9e.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -44,8 +44,8 @@
 				x = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				f = s("./src/reddit/selectors/subreddit.ts"),
 				g = s("./src/reddit/selectors/user.ts"),
-				_ = s("./src/reddit/components/ContentTooltip/index.tsx"),
-				O = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				O = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				_ = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				P = s("./src/reddit/controls/Button/index.tsx"),
 				E = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Hide/index.tsx"),
@@ -69,9 +69,9 @@
 			const y = Object(d.c)({
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
-						experimentName: w.rb
-					}) === w.Mb.Enabled,
-					currentUser: g.i,
+						experimentName: w.tb
+					}) === w.Ob.Enabled,
+					currentUser: g.j,
 					moderatorPermissions: (e, {
 						postOrComment: t
 					}) => {
@@ -185,7 +185,7 @@
 						subreddit: n,
 						tooltipId: d
 					} = this.props, p = e.awardSubType === h.d.Premium, u = s && a.authorId === s.id || Object(l.a)(r);
-					return i.a.createElement(_.a, {
+					return i.a.createElement(O.a, {
 						caretColor: {
 							top: p ? m.b.orangered : m.b.alienblue
 						},
@@ -218,7 +218,7 @@
 						award: e
 					})), e.awardType === h.f.Community && n && i.a.createElement("div", {
 						className: L.a.subreddit
-					}, i.a.createElement(O.b, {
+					}, i.a.createElement(_.b, {
 						className: L.a.subredditIcon,
 						subredditOrProfile: n
 					}), `r/${n.name}`), e.awardType === h.f.Moderator && i.a.createElement("div", {
@@ -314,8 +314,8 @@
 						tooltipId: t
 					}) => Object(u.b)(t)(e)
 				}),
-				_ = Object(d.a)(f, [o.a.Click, o.a.Keydown]),
-				O = Object(a.b)(g);
+				O = Object(d.a)(f, [o.a.Click, o.a.Keydown]),
+				_ = Object(a.b)(g);
 			class P extends i.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
@@ -387,14 +387,14 @@
 						tooltipPosition: s,
 						caretPosition: o
 					} = this.getPositions(e);
-					return i.a.createElement(_, b({}, this.props, {
+					return i.a.createElement(O, b({}, this.props, {
 						caretPosition: o,
 						targetPosition: t,
 						tooltipPosition: s
 					}))
 				}
 			}
-			t.a = O(P)
+			t.a = _(P)
 		},
 		"./src/reddit/helpers/hasModPostPermissions/index.ts": function(e, t, s) {
 			"use strict";
@@ -469,4 +469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.cb8c33e0a901b1fdbcdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.ffe7efe1f39665575d9e.js.map

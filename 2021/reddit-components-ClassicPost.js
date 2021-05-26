@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.813dc85c0008aa30ba47.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1b02cdb92ce268d455c1.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -4058,7 +4058,7 @@
 					}) => Object(m.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: V.bb
+					shouldOpenPostInNewTab: V.cb
 				}),
 				ee = e => {
 					const {
@@ -4066,7 +4066,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, s = Object(H.a)(), i = Object(z.a)(p.Rb) === p.Vb.Enabled;
+					} = t, s = Object(H.a)(), i = Object(z.a)(p.Tb) === p.Xb.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(J, {
 						nowrap: e.nowrap
 					}, o.a.createElement(te, e));
@@ -4295,7 +4295,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.l,
-					isLoggedIn: h.J,
+					isLoggedIn: h.K,
 					moderatorPermissions: m.j,
 					modModeEnabled: d.Q,
 					poll: (e, t) => {
@@ -5288,4 +5288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.813dc85c0008aa30ba47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1b02cdb92ce268d455c1.js.map

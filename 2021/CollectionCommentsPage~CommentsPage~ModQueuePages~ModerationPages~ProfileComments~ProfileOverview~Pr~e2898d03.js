@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.2dfaa9e598ccde156ea2.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.b47009cca33ba5d82217.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -181,7 +181,7 @@
 				}, k = e => async (t, o, {
 					apiContext: n
 				}) => {
-					if (!Object(x.J)(o())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(x.K)(o())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const s = o().features.comments.models[e];
 					if (!s) return;
 					const r = s.isLocked ? m.j : m.d;
@@ -364,7 +364,7 @@
 			const S = Object(x.t)(),
 				D = e => `Distinguish--Dropdown--${e}`,
 				w = Object(i.c)({
-					currentUser: O.i,
+					currentUser: O.j,
 					collapsedBecauseCrowdControl: (e, {
 						comment: t
 					}) => Object(v.a)(e, {
@@ -2249,8 +2249,8 @@
 			}));
 			var n = o("./src/reddit/constants/experiments.ts"),
 				s = o("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(n.pb)
+			const r = Object(s.a)(n.rb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.2dfaa9e598ccde156ea2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.b47009cca33ba5d82217.js.map

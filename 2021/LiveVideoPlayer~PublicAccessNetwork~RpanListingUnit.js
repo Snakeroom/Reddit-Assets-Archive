@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.21cfb4f1423561fe3a5a.js
-// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.2c264de16fee81f26369.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -399,7 +399,7 @@
 				apiContext: r
 			}) => {
 				const u = a();
-				if (Object(d.J)(u))
+				if (Object(d.K)(u))
 					if (Object(c.f)(u)) await Object(n.g)(r(), e, t);
 					else {
 						await Object(o.d)(e);
@@ -423,7 +423,7 @@
 				u = s("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
 				h = s("./src/reddit/constants/experiments.ts"),
 				p = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const v = Object(p.a)(h.Hb);
+			const v = Object(p.a)(h.Jb);
 			var b = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
 				f = s.n(b);
 			const w = d.a.div("Userpic", f.a);
@@ -996,8 +996,8 @@
 				M = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
 				D = s("./src/reddit/models/Vote/index.ts"),
-				B = s("./src/reddit/selectors/subreddit.ts"),
-				P = s("./src/reddit/selectors/user.ts"),
+				P = s("./src/reddit/selectors/subreddit.ts"),
+				B = s("./src/reddit/selectors/user.ts"),
 				F = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/Buttons.tsx"),
 				W = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
 				H = s.n(W);
@@ -1436,7 +1436,7 @@
 				}), r.a.createElement(Ee, {
 					isSubscribed: o
 				}))
-			}, we = e => Object(o.e)(t => Object(B.hb)(t, {
+			}, we = e => Object(o.e)(t => Object(P.hb)(t, {
 				identifier: {
 					name: e,
 					type: b.a.PROFILE
@@ -1455,7 +1455,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, a = Object(o.e)(e => Object(P.mb)(e, {
+				} = e, a = Object(o.e)(e => Object(B.nb)(e, {
 					userName: s
 				})), i = ge(a), c = i && Object(_.a)(a.accountIcon);
 				return r.a.createElement("div", {
@@ -1486,9 +1486,9 @@
 			}, r.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), ge = e => {
-				const t = Object(o.e)(P.i),
-					s = Object(o.e)(P.B),
-					a = Object(o.e)(P.cb);
+				const t = Object(o.e)(B.j),
+					s = Object(o.e)(B.C),
+					a = Object(o.e)(B.db);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1579,4 +1579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.21cfb4f1423561fe3a5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.2c264de16fee81f26369.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.c768b931129b6600b51c.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.172bbacdd50a4bdae0c6.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -73,7 +73,7 @@
 				S = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(E.J)(s())) return t(Object(d.j)()), void t(Object(l.k)({
+					if (!Object(E.K)(s())) return t(Object(d.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(g.m)(s(), {
 							commentId: e
@@ -172,7 +172,7 @@
 						moreCommentsItem: a,
 						...h.error
 					}))
-				}, B = Object(b.a)(f.b, j.a.upvoted), U = Object(b.a)(f.b, j.a.downvoted), z = Object(a.a)(R.j), H = Object(a.a)(R.i), W = Object(a.a)(R.e), K = Object(a.a)(R.f), G = (Object(a.a)(R.c), Object(a.a)(R.d), ({
+				}, B = Object(b.a)(f.b, j.a.upvoted), U = Object(b.a)(f.b, j.a.downvoted), z = Object(a.a)(R.j), H = Object(a.a)(R.i), K = Object(a.a)(R.e), W = Object(a.a)(R.f), G = (Object(a.a)(R.c), Object(a.a)(R.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -188,7 +188,7 @@
 							commentsPageKey: t
 						}),
 						d = i.depth;
-					o(W({
+					o(K({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -197,7 +197,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(K({
+					s(W({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -213,7 +213,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					n(W({
+					n(K({
 						commentId: i,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -269,7 +269,7 @@
 				}, j = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(f.J)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(f.K)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const n = s().features.comments.models[e];
 					if (!n) return;
 					const r = n.isLocked ? m.j : m.d;
@@ -2342,7 +2342,7 @@
 			}));
 			var o = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(n.a)(o.wb)
+			const r = Object(n.a)(o.yb)
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, s) {
 			"use strict";
@@ -2356,14 +2356,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Ec
-					}) === o.Oc.Enabled
+						experimentName: o.Gc
+					}) === o.Qc.Enabled
 				},
 				a = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Dc
-					}) === o.Nc.Enabled
+						experimentName: o.Fc
+					}) === o.Pc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -2392,4 +2392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.c768b931129b6600b51c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.172bbacdd50a4bdae0c6.js.map

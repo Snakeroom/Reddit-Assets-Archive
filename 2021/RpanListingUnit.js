@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.065c80f9ca8b242eda5f.js
-// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.6e6db81505f6f1953084.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.pc
+					experimentName: u.rc
 				});
-				return Object(u.Gd)(t) ? void 0 : t
+				return Object(u.Id)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.qc
+					experimentName: u.sc
 				});
-				return Object(u.Gd)(t) ? void 0 : t
-			}, (e, t) => e === u.rc.Enabled && t === u.rc.Enabled);
+				return Object(u.Id)(t) ? void 0 : t
+			}, (e, t) => e === u.tc.Enabled && t === u.tc.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -273,7 +273,7 @@
 						forwardedRef: t
 					}))),
 					N = Object(a.c)({
-						redditUserId: b.g,
+						redditUserId: b.h,
 						isMuxEnabled: p
 					});
 				return Object(i.b)(N, null, null, {
@@ -1265,7 +1265,7 @@
 				playerName: "RPAN DU Video Player"
 			}), te = Object(i.b)(() => Object(a.c)({
 				autoplay: A.b,
-				isLoggedIn: A.J,
+				isLoggedIn: A.K,
 				isOverlayOpen: T.h,
 				location: (e, {
 					listingName: t
@@ -3480,7 +3480,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const s = Object(o.mb)(e, {
+					const s = Object(o.nb)(e, {
 						userName: n
 					});
 					if (s && s.awardedLastMonth && s.awardedLastMonth.topAward) return p(e, {
@@ -3604,4 +3604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.065c80f9ca8b242eda5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.6e6db81505f6f1953084.js.map

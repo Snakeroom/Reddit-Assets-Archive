@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.13f1eea4b10f0b8da744.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.883ec9d07bd9e75e8fd6.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2243,7 +2243,7 @@
 			const ce = Object(i.a)(j.L, e => e.some(ae.c)),
 				de = Object(i.a)(ce, e => e),
 				le = (e, t) => Object(ie.c)(e, {
-					experimentName: $.ib,
+					experimentName: $.kb,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: n
@@ -2270,10 +2270,10 @@
 				xe = Object(s.b)(() => Object(i.c)({
 					autoplayPref: k.b,
 					activeModalId: g.a,
-					hideNSFWPref: k.B,
+					hideNSFWPref: k.C,
 					flairStyleTemplate: te.S,
 					isCurrentUserProfilePost: j.k,
-					isLoggedIn: k.J,
+					isLoggedIn: k.K,
 					isActive: j.j,
 					isPostChainDismissed: O.c,
 					isPostChained: O.d,
@@ -2348,7 +2348,7 @@
 						postId: ke,
 						postIds: _e,
 						onceInViewport: Pe
-					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Ce = Ee ? void 0 : m, Se = Object(d.a)(ae), Te = ce && Se, Ne = Object(a.a)(ae), Ie = Object(c.a)(ae), Me = Object(F.c)(me), Ae = !!me.media && me.media.type === h.o.RTJSON, Le = we && Ae, Be = n ? n - W.a : void 0, Fe = !(z && q || te), Re = (e => e === $.Ic.OnlyTitles)(be) && !Object(oe.a)(me), De = (e => e === $.Ic.MediumHeight)(be) && !Object(oe.a)(me), We = (e => {
+					} = e, Ee = !!e.redditStyle || !!e["data-redditstyle"], Ce = Ee ? void 0 : m, Se = Object(d.a)(ae), Te = ce && Se, Ne = Object(a.a)(ae), Ie = Object(c.a)(ae), Me = Object(F.c)(me), Ae = !!me.media && me.media.type === h.o.RTJSON, Le = we && Ae, Be = n ? n - W.a : void 0, Fe = !(z && q || te), Re = (e => e === $.Kc.OnlyTitles)(be) && !Object(oe.a)(me), De = (e => e === $.Kc.MediumHeight)(be) && !Object(oe.a)(me), We = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2363,7 +2363,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), Ve = !!ne && !Object($.Gd)(ne), He = (!w || Ve) && !me.isSponsored, ze = Object(_.t)(me, O), {
+					})(e), Ve = !!ne && !Object($.Id)(ne), He = (!w || Ve) && !me.isSponsored, ze = Object(_.t)(me, O), {
 						source: Ue
 					} = ze, qe = Object(o.useRef)(null), Ze = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3744,11 +3744,11 @@
 			const s = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.ob
+					experimentName: o.qb
 				});
-				return !(!t || Object(o.Gd)(t))
+				return !(!t || Object(o.Id)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.13f1eea4b10f0b8da744.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.883ec9d07bd9e75e8fd6.js.map

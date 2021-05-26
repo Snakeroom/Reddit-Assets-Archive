@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.73a36ea2bd0bf3d86a91.js
-// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.b7c9876545ba49c8f3c6.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -523,7 +523,7 @@
 				}) => {
 					t(p());
 					const l = a(),
-						d = Object(o.J)(l);
+						d = Object(o.K)(l);
 					try {
 						const a = !d,
 							n = await Object(i.b)({
@@ -1429,8 +1429,8 @@
 				J = a("./src/reddit/components/PremiumMarketingBanner/index.m.less"),
 				$ = a.n(J);
 			const {
-				fbt: Z
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), K = e => {
+				fbt: K
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), Z = e => {
 				const {
 					className: t,
 					isPremiumSubscriber: a,
@@ -1447,17 +1447,17 @@
 					src: d
 				}), o.a.createElement("h2", {
 					className: $.a.premiumDescription
-				}, Z._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [Z._param("Number of monthly coins", l)], {
+				}, K._("Get {Number of monthly coins} coins every month with Reddit Premium and browse ads-free", [K._param("Number of monthly coins", l)], {
 					hk: "42dB3q"
 				})), a ? o.a.createElement(F.i, {
 					className: $.a.premiumCTA,
 					onClick: s
-				}, Z._("Manage", null, {
+				}, K._("Manage", null, {
 					hk: "4BQsAp"
 				})) : o.a.createElement(F.i, {
 					className: $.a.premiumCTA,
 					onClick: r
-				}, Z._("Upgrade", null, {
+				}, K._("Upgrade", null, {
 					hk: "1Zf2Sh"
 				})))
 			};
@@ -1532,8 +1532,8 @@
 					activeSaleConfig: S.a,
 					coinPackages: S.d,
 					dealCoinPackages: S.f,
-					isPremiumSubscriber: G.s,
-					isLoggedIn: G.J,
+					isPremiumSubscriber: G.t,
+					isLoggedIn: G.K,
 					premiumPackages: S.i,
 					purchaseCatalogPending: S.k
 				}),
@@ -1707,7 +1707,7 @@
 						isLargeView: e.featured,
 						key: e.mobileId,
 						onClick: () => this.onClickPurchase(e)
-					})), i && o.a.createElement(K, {
+					})), i && o.a.createElement(Z, {
 						isPremiumSubscriber: t,
 						onGetPremium: this.onClickGetPremium,
 						onManagePremium: a,
@@ -1737,4 +1737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.73a36ea2bd0bf3d86a91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.b7c9876545ba49c8f3c6.js.map

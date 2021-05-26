@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.57632dacd7e083402c2a.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.2df672dc42441b2b6125.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
@@ -942,7 +942,7 @@
 					isChatPost: E.d,
 					isPostSEOEligible: w.f,
 					postPermalink: I.E,
-					shouldOpenPostInNewTab: y.bb,
+					shouldOpenPostInNewTab: y.cb,
 					totalDiscount: k.a,
 					variantAnimationConfig: k.e
 				})),
@@ -1029,7 +1029,7 @@
 					totalDiscount: I,
 					variantAnimationConfig: y,
 					postId: P
-				} = e, T = i && !r && !l, M = r && !a, N = Object(C.a)(), F = Object(g.a)(v.Rb) === v.Vb.Enabled, R = c.a.createElement(W, {
+				} = e, T = i && !r && !l, M = r && !a, N = Object(C.a)(), F = Object(g.a)(v.Tb) === v.Xb.Enabled, R = c.a.createElement(W, {
 					type: w,
 					numComments: b,
 					isChatPost: n,
@@ -1562,7 +1562,7 @@
 					claimedFreeAward: j.b,
 					isInIcons2020: le.a,
 					layout: W.O,
-					userIsOp: U.pb,
+					userIsOp: U.qb,
 					subreddit: W.q
 				}),
 				ge = Object(i.b)(Ce, (e, {
@@ -2311,7 +2311,7 @@
 				}) => t ? Object(I.U)(e, {
 					subredditId: t
 				}) : void 0,
-				user: y.i
+				user: y.j
 			});
 			class B extends i.a.PureComponent {
 				constructor() {
@@ -2940,7 +2940,7 @@
 						pageLayer: n
 					}) => Object(X.B)(e, {
 						pageLayer: n
-					}) && t && s && Object(me.nb)(e, {
+					}) && t && s && Object(me.ob)(e, {
 						userName: o.author
 					}),
 					hasSubredditRules: ue.j,
@@ -5003,8 +5003,8 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: o.V
-			}) === o.db.Enabled
+				experimentName: o.X
+			}) === o.fb.Enabled
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -5016,10 +5016,10 @@
 				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const c = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.J,
+				experimentEligibilitySelector: i.K,
 				experimentName: o.i
 			}) === o.e.Enabled
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.57632dacd7e083402c2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.2df672dc42441b2b6125.js.map

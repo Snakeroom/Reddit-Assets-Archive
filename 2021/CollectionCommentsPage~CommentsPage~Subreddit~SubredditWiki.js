@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.475143a9f136145017cc.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.dcc362bf6c29cdab7b02.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -695,7 +695,7 @@
 				y = (e, t, r, n) => async (s, i, {
 					gqlContext: a
 				}) => {
-					const o = Object(h.J)(i()),
+					const o = Object(h.K)(i()),
 						d = await Object(c.h)(a(), {
 							subredditId: e,
 							period: t,
@@ -1525,7 +1525,7 @@
 				g = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				_ = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const x = Object(_.a)(f.yb);
+			const x = Object(_.a)(f.Ab);
 			var v = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				y = r("./src/reddit/selectors/subreddit.ts"),
 				w = r("./src/reddit/selectors/user.ts"),
@@ -1567,7 +1567,7 @@
 			}) => {
 				const r = Object(a.d)(),
 					s = Object(b.a)(),
-					f = Object(a.e)(w.i),
+					f = Object(a.e)(w.j),
 					_ = Object(a.e)(e => Object(v.j)(e, {
 						subredditId: t
 					})),
@@ -2325,8 +2325,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				N = Object(c.c)({
-					hideNSFWPref: k.B,
-					nightmode: k.V
+					hideNSFWPref: k.C,
+					nightmode: k.W
 				}),
 				I = Object(a.b)(N)(e => {
 					const t = Object(_.a)();
@@ -2885,7 +2885,7 @@
 				C = m.a.wrapped(o.a, "RawHTMLDisplay", v.a);
 			var F = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: f.l,
-					isNightmodeOn: _.V
+					isNightmodeOn: _.W
 				}))(e => s.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -3910,8 +3910,8 @@
 			const o = e => s.e[Object(i.O)(e, {})] === s.d.Card,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.K
-				}) === n.ab.Treatment
+					experimentName: n.M
+				}) === n.cb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, r) {
 			"use strict";
@@ -3967,4 +3967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.475143a9f136145017cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.dcc362bf6c29cdab7b02.js.map

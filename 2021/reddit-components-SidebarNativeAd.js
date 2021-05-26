@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a358e4de02669ead521c.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.428d1444210289e64f66.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1394,7 +1394,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: G.bb
+					shouldOpenPostInNewTab: G.cb
 				}),
 				ee = e => {
 					const {
@@ -1402,7 +1402,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, s = Object(q.a)(), i = Object(H.a)(m.Rb) === m.Vb.Enabled;
+					} = t, s = Object(q.a)(), i = Object(H.a)(m.Tb) === m.Xb.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(J, {
 						nowrap: e.nowrap
 					}, o.a.createElement(te, e));
@@ -3223,7 +3223,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const r = Object(a.mb)(e, {
+					const r = Object(a.nb)(e, {
 						userName: n
 					});
 					if (r && r.awardedLastMonth && r.awardedLastMonth.topAward) return p(e, {
@@ -3416,4 +3416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a358e4de02669ead521c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.428d1444210289e64f66.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.42171776420c1737ada7.js
-// Retrieved at 5/24/2021, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.5434cb49c2dc1d52b956.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -45,7 +45,7 @@
 					const i = t(),
 						n = Object(p.e)(i),
 						o = Object(p.d)(i),
-						d = Object(b.I)(i);
+						d = Object(b.J)(i);
 					if (n || !o) return;
 					e(x());
 					let m = !1;
@@ -120,7 +120,7 @@
 						a = Object(p.g)(o);
 					if (Object(p.f)(o) || null === a || "client" === a) {
 						const s = null === (i = null === (r = Object(m.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
-							a = Object(b.J)(o);
+							a = Object(b.K)(o);
 						return Object(n.i)(() => e(T()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -1158,7 +1158,7 @@
 				C = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				L = s.n(C);
 			const P = Object(h.c)({
-				isLoggedIn: _.J,
+				isLoggedIn: _.K,
 				subreddit: y.U,
 				subredditAboutInfo: y.w
 			});
@@ -1970,7 +1970,7 @@
 			const {
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(n.c)({
-				isLoggedIn: ie.J,
+				isLoggedIn: ie.K,
 				subreddit: re.U,
 				subredditAboutInfo: (e, {
 					subredditId: t
@@ -2395,7 +2395,7 @@
 				f = e => e.focusedVerticals.category,
 				v = e => e.focusedVerticals.lastLoadedEnv,
 				S = e => {
-					const t = Object(o.I)(e),
+					const t = Object(o.J)(e),
 						s = r.d.geoSubredditRecommendationDULoggedIn(e),
 						i = r.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && i
@@ -2403,4 +2403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.42171776420c1737ada7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.5434cb49c2dc1d52b956.js.map

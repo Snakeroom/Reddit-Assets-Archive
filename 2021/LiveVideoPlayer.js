@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.b83aed2b915e360be076.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.80ac8daf3f8067e84c75.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -325,10 +325,10 @@
 						name: `${r.ac}${e.name}`,
 						type: e.type
 					});
-					if (!Object(S.J)(l())) return o(Object(d.k)({
+					if (!Object(S.K)(l())) return o(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void o(Object(c.j)());
-					const O = Object(S.i)(l());
+					const O = Object(S.j)(l());
 					if (O) {
 						const t = v.length,
 							s = e.length;
@@ -477,7 +477,7 @@
 				}) => {
 					const i = s(),
 						a = i.multireddits.models;
-					if (!Object(S.J)(i)) return;
+					if (!Object(S.K)(i)) return;
 					const c = (e = !0) => {
 							t(Object(u.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
@@ -2181,9 +2181,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!s || Object(n.Gd)(s))
+				return !(!s || Object(n.Id)(s))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.b83aed2b915e360be076.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.80ac8daf3f8067e84c75.js.map

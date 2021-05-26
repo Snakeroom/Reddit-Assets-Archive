@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.7ef6927cc477ba9ece87.js
-// Retrieved at 5/12/2021, 5:50:32 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.ce9f4179365f71b2fe8a.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -20,7 +20,7 @@
 				p = n("./src/reddit/selectors/user.ts");
 			const b = () => async (e, t) => {
 				const n = t();
-				if (!(Object(p.J)(n) || Object(p.I)(n))) return Object(d.a)(e, n);
+				if (!(Object(p.K)(n) || Object(p.J)(n))) return Object(d.a)(e, n);
 				Object(m.b)(n) ? (e(g()), e(f()), await e(h())) : e(Object(a.c)("/"))
 			}, g = () => Object(i.k)({
 				actionSource: i.a.NotificationsInbox,
@@ -31,7 +31,7 @@
 				const n = t(),
 					a = Object(u.g)(t()),
 					s = !(!a || !a.length),
-					i = Object(p.J)(n) || Object(p.I)(n);
+					i = Object(p.K)(n) || Object(p.J)(n);
 				if (s || !i || !Object(m.b)(n)) return;
 				const o = {
 					first: 10
@@ -86,7 +86,7 @@
 				E = n.n(v);
 			const {
 				fbt: _
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = m.a.div("BladeContainer", E.a), C = m.a.wrapped(g.a, "CloseIcon", E.a), k = m.a.div("LoadingTitleContainer", E.a), y = m.a.div("LoadingNavContainer", E.a), O = m.a.div("ShortLoadingNav", E.a), j = m.a.wrapped(b.a, "ThemedChevron", E.a), I = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = m.a.div("BladeContainer", E.a), C = m.a.wrapped(g.a, "CloseIcon", E.a), k = m.a.div("LoadingTitleContainer", E.a), y = m.a.div("LoadingNavContainer", E.a), O = m.a.div("ShortLoadingNav", E.a), j = m.a.wrapped(b.a, "ThemedChevron", E.a), S = ({
 				...e
 			}) => r.a.createElement(N, null, r.a.createElement(C, null), r.a.createElement(p.k, null, r.a.createElement(p.p, null, _._("Back to mod tools", null, {
 				hk: "1YCI0W"
@@ -98,13 +98,13 @@
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
 			}), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement(O, null), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), r.a.createElement(j, null))))), S = Object(d.a)({
+			}), r.a.createElement(j, null))))), I = Object(d.a)({
 				getComponent: () => Object(u.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => r.a.createElement(I, {
+				ErrorComponent: () => r.a.createElement(S, {
 					gradientType: "posts",
 					isLoading: !1
 				}),
-				LoadingComponent: () => r.a.createElement(I, {
+				LoadingComponent: () => r.a.createElement(S, {
 					gradientType: "posts",
 					isLoading: !0
 				})
@@ -117,7 +117,7 @@
 				const t = e.moderatorPermissions && s()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? r.a.createElement("div", {
 					className: Object(l.a)(E.a.Container, e.isSubscriptionsPinned && E.a.isSubscriptionPinned)
-				}, e.children, r.a.createElement(S, {
+				}, e.children, r.a.createElement(I, {
 					subredditId: e.subredditId
 				})) : r.a.createElement(i.Fragment, null, e.children)
 			})
@@ -472,8 +472,8 @@
 					}, s.a.createElement("div", null)))
 				}
 			}
-			var I = Object(r.c)(j),
-				S = n("./src/reddit/selectors/appBadges.ts"),
+			var S = Object(r.c)(j),
+				I = n("./src/reddit/selectors/appBadges.ts"),
 				T = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
 				w = n("./src/reddit/selectors/notificationsInbox.tsx"),
 				L = n("./src/reddit/selectors/tooltip.ts");
@@ -482,7 +482,7 @@
 				cursor: w.c,
 				earlierNotifications: w.b,
 				hasNextPage: w.d,
-				inboxBadgeCount: S.g,
+				inboxBadgeCount: I.g,
 				isInboxPostEmbedEnabled: T.a,
 				isPending: w.e,
 				todayNotifications: w.h
@@ -501,7 +501,7 @@
 						}))
 					},
 					updateInboxActivitySeenState: () => e(Object(u.i)())
-				}))(I),
+				}))(S),
 				A = n("./node_modules/fbt/lib/FbtPublic.js"),
 				M = n("./src/reddit/components/BadgeCounter/index.tsx"),
 				R = n("./src/reddit/components/TabNav/index.tsx"),
@@ -514,8 +514,8 @@
 			const Q = g.a.wrapped(M.a, "Badge", z.a),
 				J = g.a.wrapped(H.a, "Gear", z.a),
 				D = g.a.wrapped(W.a, "MarkAsRead", z.a),
-				X = g.a.wrapped(R.a, "Tab", z.a);
-			var q = e => {
+				K = g.a.wrapped(R.a, "Tab", z.a);
+			var X = e => {
 				const {
 					messagesTabBadgeCount: t,
 					notificationsTabBadgeCount: n
@@ -528,7 +528,7 @@
 					hk: "18kEAD"
 				})), s.a.createElement("nav", {
 					className: z.a.navBar
-				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(X, {
+				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(K, {
 					active: !0,
 					to: "/notifications"
 				}, A.fbt._("Activity", null, {
@@ -536,7 +536,7 @@
 				})), s.a.createElement(Q, {
 					isActive: !!n,
 					unreadCount: n
-				})), s.a.createElement("li", null, s.a.createElement(X, {
+				})), s.a.createElement("li", null, s.a.createElement(K, {
 					active: !1,
 					onMouseDown: () => {
 						a(Object(x.m)({
@@ -567,14 +567,14 @@
 					hk: "1e9Jn"
 				}))))))
 			};
-			const K = Object(l.c)({
-				messagesTabBadgeCount: S.h,
-				notificationsTabBadgeCount: S.a
+			const q = Object(l.c)({
+				messagesTabBadgeCount: I.h,
+				notificationsTabBadgeCount: I.a
 			});
-			var Y = Object(d.b)(K, e => ({
+			var Y = Object(d.b)(q, e => ({
 					clearMessageTabBadgeCount: () => e(Object(m.b)()),
 					markAllAsRead: () => e(Object(u.g)())
-				}))(e => s.a.createElement(q, e)),
+				}))(e => s.a.createElement(X, e)),
 				V = n("./src/reddit/pages/NotificationsInbox/index.m.less"),
 				Z = n.n(V);
 			const $ = Object(o.t)();
@@ -592,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.7ef6927cc477ba9ece87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.ce9f4179365f71b2fe8a.js.map

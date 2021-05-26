@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.5fa3440f144ed262aee7.js
-// Retrieved at 5/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e44c7bc0996967cea03c.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -673,7 +673,7 @@
 				}) => {
 					t(b());
 					const i = r(),
-						l = Object(d.J)(i);
+						l = Object(d.K)(i);
 					try {
 						const r = !l,
 							a = await Object(s.b)({
@@ -821,7 +821,7 @@
 					dealCoinPackages: C.f,
 					gildThingId: P.s,
 					isIframed: f.g,
-					nightmode: _.V,
+					nightmode: _.W,
 					savedCardsPending: P.w,
 					selectedAward: w.b,
 					selectedPayment: P.c,
@@ -833,7 +833,7 @@
 					purchasePackageId: P.t,
 					recommendedPackages: C.m,
 					userName: e => {
-						const t = Object(_.i)(e);
+						const t = Object(_.j)(e);
 						return `u/${Object(y.e)(t)}`
 					}
 				}),
@@ -1156,4 +1156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.5fa3440f144ed262aee7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e44c7bc0996967cea03c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.98c2f4a75a9411c2e5e4.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.16a215e18c21c5d07a67.js
+// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -21,7 +21,7 @@
 				apiContext: n
 			}) => {
 				const u = a();
-				if (Object(d.J)(u))
+				if (Object(d.K)(u))
 					if (Object(i.f)(u)) await Object(o.g)(n(), e, t);
 					else {
 						await Object(r.d)(e);
@@ -45,7 +45,7 @@
 				u = s("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
 				p = s("./src/reddit/constants/experiments.ts"),
 				v = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(v.a)(p.Hb);
+			const h = Object(v.a)(p.Jb);
 			var b = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
 				C = s.n(b);
 			const x = d.a.div("Userpic", C.a);
@@ -1084,7 +1084,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, a = Object(r.e)(e => Object(P.mb)(e, {
+				} = e, a = Object(r.e)(e => Object(P.nb)(e, {
 					userName: s
 				})), c = ke(a), i = c && Object(w.a)(a.accountIcon);
 				return n.a.createElement("div", {
@@ -1115,9 +1115,9 @@
 			}, n.a.createElement("path", {
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), ke = e => {
-				const t = Object(r.e)(P.i),
-					s = Object(r.e)(P.B),
-					a = Object(r.e)(P.cb);
+				const t = Object(r.e)(P.j),
+					s = Object(r.e)(P.C),
+					a = Object(r.e)(P.db);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1707,4 +1707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.98c2f4a75a9411c2e5e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.16a215e18c21c5d07a67.js.map
