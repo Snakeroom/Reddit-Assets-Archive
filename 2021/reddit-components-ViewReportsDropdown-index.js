@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b78b2281cfd936bac73a.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ca93967a0194f714b9a9.js
+// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -46,8 +46,8 @@
 			var n = s("./src/config.ts"),
 				o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/telemetry/index.ts"),
-				d = s("./src/lib/makeActionCreator/index.ts"),
-				c = s("./src/reddit/actions/economics/helpers/async.ts"),
+				c = s("./src/lib/makeActionCreator/index.ts"),
+				d = s("./src/reddit/actions/economics/helpers/async.ts"),
 				i = s("./src/reddit/actions/economics/powerups/achievements.ts"),
 				a = s("./src/reddit/actions/login.ts"),
 				l = s("./src/reddit/actions/modal.ts"),
@@ -69,7 +69,7 @@
 				E = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/reddit/actions/comment/constants.ts");
 			const I = {},
-				_ = Object(d.a)(S.o),
+				_ = Object(c.a)(S.o),
 				k = e => async (t, s, {
 					apiContext: n
 				}) => {
@@ -81,12 +81,12 @@
 					}));
 					const r = s().features.comments.models[e];
 					if (!r) return;
-					const d = r.isSaved ? f.k : f.g;
+					const c = r.isSaved ? f.k : f.g;
 					if (t(_({
 							[e]: {
 								isSaved: !r.isSaved
 							}
-						})), (await d(n(), e)).ok) {
+						})), (await c(n(), e)).ok) {
 						const s = r.isSaved ? o.fbt._("Comment unsaved successfully", null, {
 								hk: "UGKHZ"
 							}) : o.fbt._("Comment saved successfully", null, {
@@ -115,25 +115,25 @@
 						state: o,
 						commentId: e
 					}), r.c.start(T(e));
-					const d = setTimeout(() => j.a({
+					const c = setTimeout(() => j.a({
 						state: o,
 						commentId: e
 					}), A);
-					I[e] = d
+					I[e] = c
 				}, D = (e, t) => async (s, n) => {
 					const o = n(),
-						d = T(e);
+						c = T(e);
 					if (Object(R.a)(o, {
 							commentId: e
-						}) && r.c.has(d)) {
-						const s = r.c.end(d);
+						}) && r.c.has(c)) {
+						const s = r.c.end(c);
 						!t && s < A && (clearTimeout(I[e]), delete I[e])
 					}
-				}, U = Object(d.a)(S.x), B = Object(d.a)(S.w), N = Object(d.a)(S.v), L = (e, t) => async (s, n, {
+				}, U = Object(c.a)(S.x), B = Object(c.a)(S.w), N = Object(c.a)(S.v), L = (e, t) => async (s, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
-						d = r.moreComments.models[t],
+						c = r.moreComments.models[t],
 						a = r.platform.currentPage,
 						l = a && a.routeMatch,
 						u = l && l.match,
@@ -143,23 +143,23 @@
 					if (!p) return;
 					const b = Object(h.s)(p);
 					s(U({
-						moreCommentsId: d.id
+						moreCommentsId: c.id
 					}));
 					const j = await Object(f.e)(o(), b, {
-						token: d.token
+						token: c.token
 					}, Object(y.a)(r));
 					if (j.ok) {
 						const t = j.body,
 							n = Object(O.a)(t, b, r);
 						s(B({
 							key: e,
-							moreCommentsItem: d,
+							moreCommentsItem: c,
 							shouldCollapse: n,
 							...t
 						}));
 						const o = r.posts.models[b];
 						let a;
-						o && "subreddit" === o.belongsTo.type && t.comments && (a = o.belongsTo.id, await s(Object(c.a)({
+						o && "subreddit" === o.belongsTo.type && t.comments && (a = o.belongsTo.id, await s(Object(d.a)({
 							commentIds: Object.keys(j.body.comments),
 							postIds: [o.id],
 							skip: ["communityDetails", "subscription"],
@@ -169,25 +169,25 @@
 							u = j.body.posts;
 						await s(Object(m.b)(u, l, a)), await s(Object(i.b)(a, l))
 					} else s(N({
-						moreCommentsItem: d,
+						moreCommentsItem: c,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), M = Object(d.a)(S.j), $ = Object(d.a)(S.i), K = Object(d.a)(S.e), H = Object(d.a)(S.f), V = (Object(d.a)(S.c), Object(d.a)(S.d), ({
+				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), M = Object(c.a)(S.j), $ = Object(c.a)(S.i), K = Object(c.a)(S.e), H = Object(c.a)(S.f), V = (Object(c.a)(S.c), Object(c.a)(S.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
 				}) => async (n, o) => {
 					const r = o(),
-						d = Object(x.h)(e),
-						c = Object(w.n)(r, {
-							commentLink: d,
+						c = Object(x.h)(e),
+						d = Object(w.n)(r, {
+							commentLink: c,
 							commentsPageKey: t
 						}),
 						i = Object(C.b)(r, {
 							commentId: e,
 							commentsPageKey: t
 						}),
-						a = c.depth;
+						a = d.depth;
 					n(K({
 						commentId: e,
 						commentsPageKey: t,
@@ -207,20 +207,20 @@
 					lineDepth: s,
 					scrollToAndRemeasure: n
 				}) => async (o, r) => {
-					const d = r(),
-						c = Object(O.e)(t, e, s, d),
-						i = Object(C.b)(d, {
+					const c = r(),
+						d = Object(O.e)(t, e, s, c),
+						i = Object(C.b)(c, {
 							commentId: e.id,
 							commentsPageKey: t
 						});
 					o(K({
-						commentId: c,
+						commentId: d,
 						commentsPageKey: t,
 						isCollapsed: i
-					})), 0 === s && n(c, !0), Object(u.d)()
-				}, q = Object(d.a)(S.r), Q = e => t => t(q({
+					})), 0 === s && n(d, !0), Object(u.d)()
+				}, q = Object(c.a)(S.r), Q = e => t => t(q({
 					draftKey: e
-				})), X = Object(d.a)(S.a), G = Object(d.a)(S.E), W = Object(d.a)(S.b), Y = Object(d.a)(S.u)
+				})), X = Object(c.a)(S.a), G = Object(c.a)(S.E), W = Object(c.a)(S.b), Y = Object(c.a)(S.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -244,8 +244,8 @@
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/constants/index.ts"),
 				r = s("./src/lib/makeActionCreator/index.ts"),
-				d = s("./src/lib/makeCommentsPageKey/index.ts"),
-				c = s("./src/reddit/actions/modal.ts"),
+				c = s("./src/lib/makeCommentsPageKey/index.ts"),
+				d = s("./src/reddit/actions/modal.ts"),
 				i = s("./src/reddit/actions/shortcuts/utils.ts"),
 				a = s("./src/reddit/actions/toaster.ts"),
 				l = s("./src/reddit/constants/modals.ts"),
@@ -269,7 +269,7 @@
 				}, g = e => async (t, s, {
 					apiContext: n
 				}) => {
-					if (!Object(O.J)(s())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(O.J)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const o = s().features.comments.models[e];
 					if (!o) return;
 					const r = o.isLocked ? m.j : m.d;
@@ -287,11 +287,11 @@
 				}) => {
 					const o = s(),
 						r = o.features.comments.models[e],
-						d = o.user.account ? o.user.account.displayText : null;
-					r && d && (t(Object(j.i)({
+						c = o.user.account ? o.user.account.displayText : null;
+					r && c && (t(Object(j.i)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: d,
+							approvedBy: c,
 							bannedBy: null,
 							isRemoved: !1,
 							isSpam: !1,
@@ -317,23 +317,23 @@
 					apiContext: o
 				}) => {
 					const r = n(),
-						d = r.features.comments.models[e],
-						c = r.user.account ? r.user.account.displayText : null;
-					d && c && (s(Object(j.i)({
+						c = r.features.comments.models[e],
+						d = r.user.account ? r.user.account.displayText : null;
+					c && d && (s(Object(j.i)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: c,
+							bannedBy: d,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
 					})), (await Object(m.f)(o(), e, t)).ok || s(Object(j.i)({
 						[e]: {
-							approvedBy: d.approvedBy,
-							bannedBy: d.bannedBy,
-							isApproved: d.isApproved,
-							isRemoved: d.isRemoved,
-							isSpam: d.isSpam
+							approvedBy: c.approvedBy,
+							bannedBy: c.bannedBy,
+							isApproved: c.isApproved,
+							isRemoved: c.isRemoved,
+							isSpam: c.isSpam
 						}
 					})), Object(i.d)())
 				}, C = e => async (t, s, {
@@ -351,10 +351,10 @@
 							ignoreReports: o.ignoreReports
 						}
 					}))
-				}, E = (e, t, s) => async (r, d, {
-					gqlContext: c
+				}, E = (e, t, s) => async (r, c, {
+					gqlContext: d
 				}) => {
-					const i = Object(f.a)(d(), {
+					const i = Object(f.a)(c(), {
 						commentId: e
 					});
 					if (!i) return;
@@ -364,7 +364,7 @@
 							reportText: t,
 							isSnoozed: l
 						};
-					if ((await Object(u.a)(c(), {
+					if ((await Object(u.a)(d(), {
 							input: m
 						})).ok) r(Object(j.i)({
 						[e]: {
@@ -378,7 +378,7 @@
 						r(Object(a.f)(e))
 					}
 				}, S = (e, t, s) => async (n, r, {
-					apiContext: c
+					apiContext: d
 				}) => {
 					const i = r(),
 						a = i.features.comments.models[e];
@@ -397,10 +397,10 @@
 						[u]: {
 							isStickied: !1
 						}
-					})), (await Object(m.b)(c(), e, p, s || null)).ok ? s && n(w({
+					})), (await Object(m.b)(d(), e, p, s || null)).ok ? s && n(w({
 						id: e,
 						postId: l,
-						commentsPageKey: Object(d.a)(l, null, {
+						commentsPageKey: Object(c.a)(l, null, {
 							sort: o.r.CONFIDENCE,
 							...i.platform.currentPage.queryParams
 						})
@@ -429,8 +429,8 @@
 			var n = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/lib/sentry/index.ts"),
 				r = s("./src/graphql/operations/SubredditUserAchievements.json"),
-				d = s("./src/lib/makeGqlRequest/index.ts");
-			var c = s("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				c = s("./src/lib/makeGqlRequest/index.ts");
+			var d = s("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
 				i = s("./src/lib/initializeClient/installReducer.ts"),
 				a = s("./src/reddit/reducers/features/powerups/index.ts"),
 				l = s("./src/reddit/actions/gold/powerups.ts"),
@@ -443,12 +443,12 @@
 			});
 			const p = Object(n.a)(u.d),
 				b = (e, t) => async (s, n, {
-					gqlContext: c
+					gqlContext: d
 				}) => {
 					const i = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (i.length) try {
 						const t = await (async (e, t, s) => {
-							const n = await Object(d.a)(e, {
+							const n = await Object(c.a)(e, {
 								...r,
 								variables: {
 									subredditId: t,
@@ -457,7 +457,7 @@
 							});
 							if (!n.ok) throw new Error("Unable to fetch user achievements");
 							return n.body.data.subredditInfoById
-						})(c(), e, i);
+						})(d(), e, i);
 						await s(p(t))
 					} catch (a) {
 						o.c.captureException(a)
@@ -468,7 +468,7 @@
 						fullData: !0
 					}));
 					const o = n();
-					if (!Object(c.a)(o) || !Object(m.g)(o, {
+					if (!Object(d.a)(o) || !Object(m.g)(o, {
 							subredditId: e
 						}) || !t) return;
 					const r = new Set;
@@ -486,12 +486,12 @@
 			})), s.d(t, "c", (function() {
 				return r
 			})), s.d(t, "d", (function() {
-				return d
+				return c
 			}));
 			const n = 120,
 				o = "ON_CREATE_CUSTOM_EMOJI_SUCCESS",
 				r = "ON_DELETE_CUSTOM_EMOJI_SUCCESS",
-				d = "POWERUPS__SUBREDDIT_USER_ACHIEVEMENTS_LOADED"
+				c = "POWERUPS__SUBREDDIT_USER_ACHIEVEMENTS_LOADED"
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, s) {
 			"use strict";
@@ -504,8 +504,8 @@
 			var n = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/lib/constants/index.ts"),
 				r = s("./src/lib/makeApiRequest/index.ts"),
-				d = s("./src/lib/omitHeaders/index.ts"),
-				c = s("./src/reddit/constants/headers.ts"),
+				c = s("./src/lib/omitHeaders/index.ts"),
+				d = s("./src/reddit/constants/headers.ts"),
 				i = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var a = s("./src/reddit/selectors/experiments/presenceIndicator.ts");
 			const l = "PRESENCE__PRESENTUSERS_LOADED",
@@ -521,7 +521,7 @@
 					}), t && Object.values(t).map(e => {
 						e.authorId && b.add(e.authorId)
 					});
-					const f = await (async (e, t, s) => Object(r.a)(Object(d.a)(e, [c.a]), {
+					const f = await (async (e, t, s) => Object(r.a)(Object(c.a)(e, [d.a]), {
 						endpoint: Object(i.a)(`${e.apiUrl}/api/presence`),
 						method: o.eb.POST,
 						data: {
@@ -579,8 +579,8 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
-				d = s("./src/lib/lessComponent.tsx"),
-				c = s("./node_modules/reselect/es/index.js"),
+				c = s("./src/lib/lessComponent.tsx"),
+				d = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/lib/constants/index.ts"),
 				a = s("./src/reddit/actions/comment/moderation.ts"),
 				l = s("./src/reddit/actions/post.ts"),
@@ -600,7 +600,7 @@
 				y = s.n(R);
 			const {
 				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), E = (e, t) => `SnoozableReport--${t}--${e}`, S = Object(r.b)(() => Object(c.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), E = (e, t) => `SnoozableReport--${t}--${e}`, S = Object(r.b)(() => Object(d.c)({
 				isDropdownOpen: (e, t) => Object(w.b)(E(t.reason, t.reportedThingId))(e)
 			}), (e, t) => ({
 				openDropdown: () => e(Object(m.h)({
@@ -626,18 +626,18 @@
 						reportedThingId: s,
 						openDropdown: n,
 						isDropdownOpen: r,
-						isSnoozed: d
-					} = this.props, c = E(e, s);
+						isSnoozed: c
+					} = this.props, d = E(e, s);
 					return o.a.createElement("div", {
 						ref: this.setTooltipTargetRef
 					}, o.a.createElement(f.b, {
-						id: c,
+						id: d,
 						className: y.a.DropdownLabelContainer,
 						onClick: n
 					}, o.a.createElement("label", {
-						htmlFor: c,
+						htmlFor: d,
 						className: y.a.DropdownLabel
-					}, d ? "Reporter snoozed" : `${t}: ${e}`, r ? o.a.createElement(h.a, null) : o.a.createElement(x.a, null))), o.a.createElement(I, {
+					}, c ? "Reporter snoozed" : `${t}: ${e}`, r ? o.a.createElement(h.a, null) : o.a.createElement(x.a, null))), o.a.createElement(I, {
 						isOpen: r,
 						tooltipTarget: this.tooltipTarget,
 						renderContentsHidden: !0,
@@ -647,7 +647,7 @@
 						onClick: this.onSnoozeButtonClick
 					}, o.a.createElement("div", {
 						className: y.a.SnoozeButtonContent
-					}, d ? o.a.createElement(o.a.Fragment, null, o.a.createElement(g.a, null), C._("Undo snoozing reports from this user", null, {
+					}, c ? o.a.createElement(o.a.Fragment, null, o.a.createElement(g.a, null), C._("Undo snoozing reports from this user", null, {
 						hk: "4iqfWB"
 					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(v.a, null), C._("Snooze reports from this user for 7 days", null, {
 						hk: "4cRFyG"
@@ -660,15 +660,15 @@
 				P = s.n(A);
 			const {
 				fbt: D
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.div("ReportText", P.a), B = d.a.div("ReportsTitle", P.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = c.a.div("ReportText", P.a), B = c.a.div("ReportsTitle", P.a);
 
 			function N(e) {
 				const {
 					className: t,
 					modReports: s,
 					userReports: n,
-					reportedThingId: d
-				} = e, c = Object(r.e)(e => T.d.enableSnoozableReport(e));
+					reportedThingId: c
+				} = e, d = Object(r.e)(e => T.d.enableSnoozableReport(e));
 				return o.a.createElement("div", {
 					className: t
 				}, s && s.length > 0 && o.a.createElement("div", {
@@ -683,11 +683,11 @@
 					hk: "2KeCLz"
 				})), o.a.createElement("div", {
 					className: P.a.UserReports
-				}, n.map(([e, t, s, n]) => c && void 0 !== s && n ? o.a.createElement(k, {
+				}, n.map(([e, t, s, n]) => d && void 0 !== s && n ? o.a.createElement(k, {
 					key: `user-${e}`,
 					reason: e,
 					amount: t,
-					reportedThingId: d,
+					reportedThingId: c,
 					isSnoozed: s
 				}) : o.a.createElement(U, {
 					key: `user-${e}`
@@ -714,8 +714,8 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/lib/lessComponent.tsx"),
+				c = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/lib/lessComponent.tsx"),
 				i = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				a = s("./src/reddit/controls/Dropdown/index.tsx"),
 				l = s("./src/reddit/selectors/tooltip.ts"),
@@ -725,8 +725,8 @@
 				b = s("./src/reddit/layout/row/Inline/index.tsx"),
 				f = s("./src/reddit/components/ViewReportsDropdown/ReportsList.m.less"),
 				O = s.n(f);
-			const j = c.a.wrapped(b.a, "Footer", O.a),
-				x = c.a.wrapped(p.c, "FooterButton", O.a);
+			const j = d.a.wrapped(b.a, "Footer", O.a),
+				x = d.a.wrapped(p.c, "FooterButton", O.a);
 			var h = e => o.a.createElement("div", null, o.a.createElement(u.a, {
 					modReports: e.modReports,
 					userReports: e.userReports,
@@ -741,8 +741,8 @@
 				}))),
 				v = s("./src/reddit/components/ViewReportsDropdown/index.m.less"),
 				g = s.n(v);
-			const w = c.a.wrapped(a.a, "StyledDropdown", g.a),
-				R = Object(d.c)({
+			const w = d.a.wrapped(a.a, "StyledDropdown", g.a),
+				R = Object(c.c)({
 					isDropdownOpen: (e, {
 						tooltipId: t
 					}) => Object(l.b)(t)(e)
@@ -796,48 +796,48 @@
 			var n = s("./src/config.ts"),
 				o = s("./src/lib/constants/index.ts"),
 				r = s("./src/lib/makeApiRequest/index.ts"),
-				d = s("./src/lib/omitHeaders/index.ts"),
-				c = s("./src/reddit/constants/headers.ts"),
+				c = s("./src/lib/omitHeaders/index.ts"),
+				d = s("./src/reddit/constants/headers.ts"),
 				i = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				a = s("./src/reddit/models/Comment/addProfileImgParam.ts"),
 				l = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				m = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const u = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+			const u = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/save`),
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				p = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				p = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/unsave`),
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				b = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				b = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/lock`),
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				f = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				f = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/unlock`),
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				O = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				O = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/approve`),
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				j = (e, t, s) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				j = (e, t, s) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/remove`),
 					method: o.eb.POST,
 					data: {
@@ -845,38 +845,38 @@
 						spam: s
 					}
 				}),
-				x = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				x = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				h = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				h = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				v = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				v = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
 					method: o.eb.POST,
 					data: {
 						id: t
 					}
 				}),
-				g = (e, t, s, d) => {
-					let c = Object(m.a)(Object(l.a)(`${n.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`));
-					return d && (c = Object(a.a)(c)), Object(r.a)(e, {
+				g = (e, t, s, c) => {
+					let d = Object(i.a)(Object(m.a)(Object(l.a)(`${n.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
+					return c && (d = Object(a.a)(d)), Object(r.a)(e, {
 						data: s,
-						endpoint: c,
+						endpoint: d,
 						method: o.eb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
-				w = (e, t, s, n) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				w = (e, t, s, n) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/distinguish/${s}`),
 					method: o.eb.POST,
 					data: {
@@ -890,9 +890,9 @@
 			s.d(t, "c", (function() {
 				return r
 			})), s.d(t, "a", (function() {
-				return d
-			})), s.d(t, "b", (function() {
 				return c
+			})), s.d(t, "b", (function() {
+				return d
 			}));
 			var n = s("./src/telemetry/index.ts"),
 				o = s("./src/reddit/selectors/telemetry.ts");
@@ -910,7 +910,7 @@
 					subreddit: o.subreddit(e),
 					comment: o.comment(e, t)
 				}),
-				d = ({
+				c = ({
 					state: e,
 					commentId: t
 				}) => Object(n.a)({
@@ -924,7 +924,7 @@
 					subreddit: o.subreddit(e),
 					comment: o.comment(e, t)
 				}),
-				c = e => t => ({
+				d = e => t => ({
 					source: "online_presence",
 					action: "view",
 					noun: "user",
@@ -975,10 +975,10 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/lib/classNames/index.ts"),
-				d = s("./src/reddit/icons/svgs/Clock/index.m.less"),
-				c = s.n(d);
+				c = s("./src/reddit/icons/svgs/Clock/index.m.less"),
+				d = s.n(c);
 			t.a = e => o.a.createElement("svg", {
-				className: Object(r.a)(c.a.clock, e.className),
+				className: Object(r.a)(d.a.clock, e.className),
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 11 11"
 			}, o.a.createElement("g", null, o.a.createElement("path", {
@@ -1001,10 +1001,10 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./src/lib/classNames/index.ts"),
-				d = s("./src/reddit/icons/svgs/Undo/index.m.less"),
-				c = s.n(d);
+				c = s("./src/reddit/icons/svgs/Undo/index.m.less"),
+				d = s.n(c);
 			t.a = e => o.a.createElement("svg", {
-				className: Object(r.a)(c.a.undo, e.className),
+				className: Object(r.a)(d.a.undo, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, o.a.createElement("g", null, o.a.createElement("path", {
@@ -1017,8 +1017,8 @@
 			var n = s("./node_modules/redux/es/redux.js"),
 				o = s("./src/reddit/actions/gold/constants.ts");
 			const r = {};
-			var d = s("./src/reddit/actions/economics/powerups/constants.ts");
-			const c = {};
+			var c = s("./src/reddit/actions/economics/powerups/constants.ts");
+			const d = {};
 			t.a = Object(n.c)({
 				subredditAchievements: (e = r, t) => {
 					switch (t.type) {
@@ -1036,14 +1036,14 @@
 							return e
 					}
 				},
-				subredditUserAchievements: (e = c, t) => {
+				subredditUserAchievements: (e = d, t) => {
 					var s, n;
 					switch (t.type) {
-						case d.d:
+						case c.d:
 							const {
 								id: o, userAchievementFlairsByRedditorIds: r
 							} = t.payload;
-							let c = e[o] || {};
+							let d = e[o] || {};
 							for (const {
 									redditorId: e,
 									userAchievementFlairs: t
@@ -1054,20 +1054,20 @@
 									r = null === (s = t.find(({
 										isPreferred: e
 									}) => e)) || void 0 === s ? void 0 : s.type,
-									d = (null === (n = t.find(({
+									c = (null === (n = t.find(({
 										type: e
 									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === n ? void 0 : n.type) || null;
-								c = {
-									...c,
+								d = {
+									...d,
 									[e]: {
 										achievementTypes: o,
 										preferredType: r,
-										supporterType: d
+										supporterType: c
 									}
 								}
 							}
 							return {
-								...e, [o]: c
+								...e, [o]: d
 							};
 						default:
 							return e
@@ -1089,7 +1089,7 @@
 			s.d(t, "b", (function() {
 				return r
 			})), s.d(t, "a", (function() {
-				return d
+				return c
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/helpers/chooseVariant/index.ts");
@@ -1099,7 +1099,7 @@
 						experimentName: n.Ec
 					}) === n.Oc.Enabled
 				},
-				d = e => {
+				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Dc
@@ -1132,4 +1132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b78b2281cfd936bac73a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ca93967a0194f714b9a9.js.map

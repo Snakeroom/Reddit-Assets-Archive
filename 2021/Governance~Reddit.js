@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.8f2a772fd9bad6f63e4b.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7359d7db1de75dee9ad0.js
+// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4703,28 +4703,29 @@
 		"./src/reddit/endpoints/accounts/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
-			})), r.d(t, "c", (function() {
 				return i
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "c", (function() {
 				return u
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return l
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "d", (function() {
 				return p
+			})), r.d(t, "b", (function() {
+				return b
 			}));
 			var s = r("./src/config.ts"),
 				a = r("./src/lib/constants/index.ts"),
 				n = r("./src/lib/makeApiRequest/index.ts"),
 				c = r("./src/lib/omitHeaders/index.ts"),
-				o = r("./src/reddit/constants/headers.ts");
-			const d = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
+				o = r("./src/reddit/constants/headers.ts"),
+				d = r("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const i = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
 				method: a.eb.POST
-			}), i = async (e, t, r) => Object(n.a)(Object(c.a)(e, [o.a]), {
+			}), u = async (e, t, r) => Object(n.a)(Object(c.a)(e, [o.a]), {
 				data: {
 					name: r,
 					container: t,
@@ -4732,20 +4733,20 @@
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
 				method: a.eb.POST
-			}), u = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
+			}), l = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
 				method: a.eb.POST
-			}), l = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
+			}), p = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
 				method: a.eb.POST
-			}), p = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
-				endpoint: `${s.a.oauthUrl}/user/${t}/about`,
+			}), b = async (e, t) => Object(n.a)(Object(c.a)(e, [o.a]), {
+				endpoint: Object(d.a)(`${s.a.oauthUrl}/user/${t}/about`),
 				method: a.eb.GET,
 				data: {
 					raw_json: 1
@@ -21839,4 +21840,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8f2a772fd9bad6f63e4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7359d7db1de75dee9ad0.js.map

@@ -1,23 +1,23 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.0ed1cea35a8696d76228.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.c44caab13c1b1e245122.js
+// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "profileCommentsPending", (function() {
-				return T
-			})), r.d(t, "profileCommentsLoaded", (function() {
 				return F
-			})), r.d(t, "profileCommentsFailed", (function() {
+			})), r.d(t, "profileCommentsLoaded", (function() {
 				return A
-			})), r.d(t, "profileCommentsRequested", (function() {
+			})), r.d(t, "profileCommentsFailed", (function() {
 				return q
-			})), r.d(t, "moreItemsPending", (function() {
+			})), r.d(t, "profileCommentsRequested", (function() {
 				return B
-			})), r.d(t, "moreItemsLoaded", (function() {
+			})), r.d(t, "moreItemsPending", (function() {
 				return M
-			})), r.d(t, "moreItemsFailed", (function() {
+			})), r.d(t, "moreItemsLoaded", (function() {
 				return D
+			})), r.d(t, "moreItemsFailed", (function() {
+				return R
 			})), r.d(t, "moreItemsRequested", (function() {
 				return G
 			}));
@@ -42,27 +42,28 @@
 				x = r("./src/lib/addAllowQuarantinedParam/index.ts"),
 				C = r("./src/lib/constants/index.ts"),
 				P = r("./src/lib/makeApiRequest/index.ts"),
-				h = r("./src/reddit/models/Comment/addProfileImgParam.ts"),
-				w = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				L = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const v = (e, t, r, s) => {
-				let o = Object(x.a)(Object(w.a)(Object(L.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`)));
-				return s && (o = Object(h.a)(o)), Object(P.a)(e, {
+				h = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				w = r("./src/reddit/models/Comment/addProfileImgParam.ts"),
+				L = r("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				v = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const I = (e, t, r, s) => {
+				let o = Object(h.a)(Object(x.a)(Object(L.a)(Object(v.a)(`${j.a.gatewayUrl}/desktopapi/v1/user/${t}/comments`))));
+				return s && (o = Object(w.a)(o)), Object(P.a)(e, {
 					data: r,
 					endpoint: o,
 					method: C.eb.GET
 				})
 			};
-			var I = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				N = r("./src/reddit/helpers/timeApiRoute/index.ts"),
-				E = r("./src/reddit/selectors/experiments/avatarsInComments.ts"),
-				k = r("./src/reddit/selectors/profile.ts"),
-				_ = r("./src/reddit/selectors/profileComments.ts"),
-				S = r("./src/reddit/actions/pages/profileComments/constants.ts");
-			const T = Object(i.a)(S.f),
-				F = Object(i.a)(S.e),
-				A = Object(i.a)(S.d),
-				q = e => async (t, r, s) => {
+			var N = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				E = r("./src/reddit/helpers/timeApiRoute/index.ts"),
+				k = r("./src/reddit/selectors/experiments/avatarsInComments.ts"),
+				_ = r("./src/reddit/selectors/profile.ts"),
+				S = r("./src/reddit/selectors/profileComments.ts"),
+				T = r("./src/reddit/actions/pages/profileComments/constants.ts");
+			const F = Object(i.a)(T.f),
+				A = Object(i.a)(T.e),
+				q = Object(i.a)(T.d),
+				B = e => async (t, r, s) => {
 					const {
 						queryParams: o,
 						params: n
@@ -76,7 +77,7 @@
 					} = r(), P = C.commentIds[x], h = C.api.error[x], w = C.api.pending[x];
 					if (await t(f.d(j)), w || P && !h) {
 						if (P) {
-							const e = Object(k.q)(r(), {
+							const e = Object(_.q)(r(), {
 								profileName: j
 							});
 							t(u.l({
@@ -88,28 +89,28 @@
 					const L = {
 						...a()(e.queryParams, [...y.l, y.h]),
 						sort: i,
-						t: Object(I.a)(i, g)
+						t: Object(N.a)(i, g)
 					};
-					t(T({
+					t(F({
 						key: x
 					}));
-					const _ = await Object(N.a)("profileComments", () => v(s.apiContext(), j, L, Object(E.a)(r())));
-					if (!_.ok) return t(A({
-						account: _.body.data ? _.body.data.account : null,
-						error: _.body.reason ? {
-							type: _.body.reason
-						} : _.error,
+					const v = await Object(E.a)("profileComments", () => I(s.apiContext(), j, L, Object(k.a)(r())));
+					if (!v.ok) return t(q({
+						account: v.body.data ? v.body.data.account : null,
+						error: v.body.reason ? {
+							type: v.body.reason
+						} : v.error,
 						key: x
-					})), _.body.reason === O.a.DeletedProfile && t(Object(d.p)({
+					})), v.body.reason === O.a.DeletedProfile && t(Object(d.p)({
 						profileName: j
-					})), void t(u.m(_.status));
-					const S = _.body;
-					t(F({
+					})), void t(u.m(v.status));
+					const S = v.body;
+					t(A({
 						key: x,
 						meta: r().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(j)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(j))])
-				}, B = Object(i.a)(S.c), M = Object(i.a)(S.b), D = Object(i.a)(S.a), G = () => async (e, t, {
+				}, M = Object(i.a)(T.c), D = Object(i.a)(T.b), R = Object(i.a)(T.a), G = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const s = t(),
@@ -125,45 +126,45 @@
 						t: l
 					} = Object(p.b)(i), {
 						profileName: u
-					} = d, f = Object(c.a)(`u_${u}`, m, i), b = Object(_.d)(s, {
+					} = d, f = Object(c.a)(`u_${u}`, m, i), b = Object(S.d)(s, {
 						listingKey: f
 					});
 					if (!b) return;
-					const O = Object(_.b)(s, {
+					const O = Object(S.b)(s, {
 							listingKey: f
 						}),
-						j = Object(_.c)(s, {
+						j = Object(S.c)(s, {
 							listingKey: f
 						}),
 						x = j && j[b.token];
 					if (O || x) return;
-					e(B({
+					e(M({
 						key: f,
 						fetchedToken: b.token
 					}));
-					const C = await v(r(), u, {
+					const C = await I(r(), u, {
 						after: b.token,
 						dist: b.dist,
 						sort: m,
 						t: l,
 						...a()(i, y.l),
 						layout: Object(g.O)(s, {}).toLowerCase()
-					}, Object(E.a)(s));
+					}, Object(k.a)(s));
 					if (C.ok) {
-						const t = Object(_.f)(s, {
+						const t = Object(S.f)(s, {
 								listingKey: f
 							}),
 							r = {
 								...C.body,
 								commentIds: o()(C.body.commentIds, t)
 							};
-						e(M({
+						e(D({
 							fetchedToken: b.token,
 							key: f,
 							meta: s.meta,
 							...r
 						}))
-					} else e(D({
+					} else e(R({
 						account: C.body.data ? C.body.data.account : null,
 						error: C.error,
 						fetchedToken: b.token,
@@ -294,9 +295,9 @@
 				}
 			}, e.children));
 			var D = r("./src/reddit/components/ProfileItemList/index.tsx"),
-				G = r("./node_modules/lodash/noop.js"),
-				K = r.n(G),
-				R = r("./src/reddit/actions/ads/index.ts"),
+				R = r("./node_modules/lodash/noop.js"),
+				G = r.n(R),
+				K = r("./src/reddit/actions/ads/index.ts"),
 				J = r("./src/reddit/actions/comment/list.ts"),
 				H = r("./src/reddit/actions/post.ts"),
 				U = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -349,13 +350,13 @@
 				oe = Object(i.b)(se, e => ({
 					onBottomViewed: (t, r) => e(Object(J.c)(t, r)),
 					adBrandSafetyStatusReceived: t => {
-						e(R.d({
+						e(K.d({
 							isViewSafe: t
 						}))
 					},
 					openPost: t => e(Object(H.I)(t)),
-					fireAdPixelsOfType: K.a,
-					trackOnPostEnteredViewport: K.a
+					fireAdPixelsOfType: G.a,
+					trackOnPostEnteredViewport: G.a
 				}), (e, t, r) => ({
 					...e,
 					...t,
@@ -507,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.0ed1cea35a8696d76228.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.c44caab13c1b1e245122.js.map
