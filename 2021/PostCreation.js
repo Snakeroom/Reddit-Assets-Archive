@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c662a42d7bec3afc796f.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.36fe1a04be2f74dca821.js
+// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1297,9 +1297,9 @@
 						fullData: !0
 					}));
 					const r = o();
-					if (!Object(i.a)(r) || !Object(u.g)(r, {
+					if (!Object(u.g)(r, {
 							subredditId: e
-						}) || !t) return;
+						}) || !t || !Object(i.a)(r)) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
@@ -20887,9 +20887,9 @@
 									s = null === (n = t.find(({
 										isPreferred: e
 									}) => e)) || void 0 === n ? void 0 : n.type,
-									a = (null === (o = t.find(({
+									a = null === (o = t.find(({
 										type: e
-									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === o ? void 0 : o.type) || null;
+									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === o ? void 0 : o.type;
 								i = {
 									...i,
 									[e]: {
@@ -21311,8 +21311,10 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return d
+			})), n.d(t, "c", (function() {
+				return u
 			})), n.d(t, "a", (function() {
-				return l
+				return m
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/reselect/es/index.js"),
@@ -21335,7 +21337,9 @@
 				},
 				c = Object(o.a)(i, e => null == e ? void 0 : e.preferredType),
 				d = Object(o.a)([a, c], (e, t) => e && t ? e[t] : null),
-				l = Object(o.a)([a, i], (e, t) => {
+				l = Object(o.a)(i, e => null == e ? void 0 : e.supporterType),
+				u = Object(o.a)([a, l], (e, t) => e && t ? e[t] : null),
+				m = Object(o.a)([a, i], (e, t) => {
 					if (!e) return [];
 					const n = t ? t.achievementTypes : [];
 					return Object.values(e).map(e => ({
@@ -21875,4 +21879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c662a42d7bec3afc796f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.36fe1a04be2f74dca821.js.map

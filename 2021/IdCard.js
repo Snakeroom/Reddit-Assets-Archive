@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.693ef2ae666da16692d2.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.b651bb7e038592a6840f.js
+// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -550,9 +550,9 @@
 						fullData: !0
 					}));
 					const r = s();
-					if (!Object(a.a)(r) || !Object(u.g)(r, {
+					if (!Object(u.g)(r, {
 							subredditId: e
-						}) || !t) return;
+						}) || !t || !Object(a.a)(r)) return;
 					const i = new Set;
 					Object.values(t).forEach(e => {
 						i.add(e.authorId)
@@ -4912,9 +4912,9 @@
 									i = null === (n = t.find(({
 										isPreferred: e
 									}) => e)) || void 0 === n ? void 0 : n.type,
-									o = (null === (s = t.find(({
+									o = null === (s = t.find(({
 										type: e
-									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === s ? void 0 : s.type) || null;
+									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === s ? void 0 : s.type;
 								a = {
 									...a,
 									[e]: {
@@ -5233,4 +5233,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.693ef2ae666da16692d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b651bb7e038592a6840f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.630296db8b0b12e398dc.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.4ed97be7854e4e04bc69.js
+// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -468,9 +468,9 @@
 						fullData: !0
 					}));
 					const n = o();
-					if (!Object(i.a)(n) || !Object(m.g)(n, {
+					if (!Object(m.g)(n, {
 							subredditId: e
-						}) || !t) return;
+						}) || !t || !Object(i.a)(n)) return;
 					const r = new Set;
 					Object.values(t).forEach(e => {
 						r.add(e.authorId)
@@ -2183,9 +2183,9 @@
 									r = null === (s = t.find(({
 										isPreferred: e
 									}) => e)) || void 0 === s ? void 0 : s.type,
-									a = (null === (o = t.find(({
+									a = null === (o = t.find(({
 										type: e
-									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === o ? void 0 : o.type) || null;
+									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === o ? void 0 : o.type;
 								i = {
 									...i,
 									[e]: {
@@ -2261,4 +2261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.630296db8b0b12e398dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.4ed97be7854e4e04bc69.js.map

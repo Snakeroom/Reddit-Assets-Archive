@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.316bd0c32516c70d8304.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.39b95e0e091dfc3d73a3.js
+// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4534,8 +4534,10 @@
 			"use strict";
 			o.d(t, "b", (function() {
 				return d
+			})), o.d(t, "c", (function() {
+				return u
 			})), o.d(t, "a", (function() {
-				return l
+				return m
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = o("./node_modules/reselect/es/index.js"),
@@ -4558,7 +4560,9 @@
 				},
 				c = Object(n.a)(i, e => null == e ? void 0 : e.preferredType),
 				d = Object(n.a)([a, c], (e, t) => e && t ? e[t] : null),
-				l = Object(n.a)([a, i], (e, t) => {
+				l = Object(n.a)(i, e => null == e ? void 0 : e.supporterType),
+				u = Object(n.a)([a, l], (e, t) => e && t ? e[t] : null),
+				m = Object(n.a)([a, i], (e, t) => {
 					if (!e) return [];
 					const o = t ? t.achievementTypes : [];
 					return Object.values(e).map(e => ({
@@ -4594,4 +4598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.316bd0c32516c70d8304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.39b95e0e091dfc3d73a3.js.map

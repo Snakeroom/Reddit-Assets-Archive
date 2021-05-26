@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.bc95381e9e0c0dbe9c38.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.719a5d01266ebaac93a7.js
+// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1312,9 +1312,9 @@
 						fullData: !0
 					}));
 					const a = s();
-					if (!Object(o.a)(a) || !Object(l.g)(a, {
+					if (!Object(l.g)(a, {
 							subredditId: e
-						}) || !t) return;
+						}) || !t || !Object(o.a)(a)) return;
 					const n = new Set;
 					Object.values(t).forEach(e => {
 						n.add(e.authorId)
@@ -5552,9 +5552,9 @@
 									n = null === (r = t.find(({
 										isPreferred: e
 									}) => e)) || void 0 === r ? void 0 : r.type,
-									c = (null === (s = t.find(({
+									c = null === (s = t.find(({
 										type: e
-									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === s ? void 0 : s.type) || null;
+									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === s ? void 0 : s.type;
 								o = {
 									...o,
 									[e]: {
@@ -21796,4 +21796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.bc95381e9e0c0dbe9c38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.719a5d01266ebaac93a7.js.map

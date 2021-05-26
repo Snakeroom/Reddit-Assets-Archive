@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.c7c5f4601cead570712a.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.8ae099f4f7059c808bb2.js
+// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -1066,9 +1066,9 @@
 						fullData: !0
 					}));
 					const r = s();
-					if (!Object(d.a)(r) || !Object(u.g)(r, {
+					if (!Object(u.g)(r, {
 							subredditId: e
-						}) || !t) return;
+						}) || !t || !Object(d.a)(r)) return;
 					const o = new Set;
 					Object.values(t).forEach(e => {
 						o.add(e.authorId)
@@ -2257,9 +2257,9 @@
 									o = null === (n = t.find(({
 										isPreferred: e
 									}) => e)) || void 0 === n ? void 0 : n.type,
-									c = (null === (s = t.find(({
+									c = null === (s = t.find(({
 										type: e
-									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === s ? void 0 : s.type) || null;
+									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === s ? void 0 : s.type;
 								d = {
 									...d,
 									[e]: {
@@ -3087,8 +3087,10 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return i
+			})), n.d(t, "c", (function() {
+				return u
 			})), n.d(t, "a", (function() {
-				return m
+				return l
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
@@ -3111,7 +3113,9 @@
 				},
 				a = Object(s.a)(d, e => null == e ? void 0 : e.preferredType),
 				i = Object(s.a)([c, a], (e, t) => e && t ? e[t] : null),
-				m = Object(s.a)([c, d], (e, t) => {
+				m = Object(s.a)(d, e => null == e ? void 0 : e.supporterType),
+				u = Object(s.a)([c, m], (e, t) => e && t ? e[t] : null),
+				l = Object(s.a)([c, d], (e, t) => {
 					if (!e) return [];
 					const n = t ? t.achievementTypes : [];
 					return Object.values(e).map(e => ({
@@ -3147,4 +3151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c7c5f4601cead570712a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8ae099f4f7059c808bb2.js.map

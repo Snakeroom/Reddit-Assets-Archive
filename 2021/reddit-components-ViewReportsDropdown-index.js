@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2ed5ac8823b978500cd6.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.c8f1ff3ec9761915eea2.js
+// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -468,9 +468,9 @@
 						fullData: !0
 					}));
 					const o = n();
-					if (!Object(d.a)(o) || !Object(m.g)(o, {
+					if (!Object(m.g)(o, {
 							subredditId: e
-						}) || !t) return;
+						}) || !t || !Object(d.a)(o)) return;
 					const r = new Set;
 					Object.values(t).forEach(e => {
 						r.add(e.authorId)
@@ -1054,9 +1054,9 @@
 									r = null === (s = t.find(({
 										isPreferred: e
 									}) => e)) || void 0 === s ? void 0 : s.type,
-									c = (null === (n = t.find(({
+									c = null === (n = t.find(({
 										type: e
-									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === n ? void 0 : n.type) || null;
+									}) => "POWERUPS_SUPPORTER" === e)) || void 0 === n ? void 0 : n.type;
 								d = {
 									...d,
 									[e]: {
@@ -1132,4 +1132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2ed5ac8823b978500cd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.c8f1ff3ec9761915eea2.js.map
