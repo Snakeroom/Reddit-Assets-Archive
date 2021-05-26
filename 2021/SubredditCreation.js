@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.748ee6046878f7ea08c1.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.7e52d49df8fd6d7137d8.js
+// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -184,10 +184,10 @@
 			}
 			var v = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(m.qb)()
+					e(Object(c.i)()), Object(m.rb)()
 				},
 				onViewTooltip: () => {
-					Object(m.Jb)()
+					Object(m.Lb)()
 				}
 			}))(Object(p.c)(C));
 			const g = "editable-primary-topic-idcard";
@@ -3154,4 +3154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.748ee6046878f7ea08c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.7e52d49df8fd6d7137d8.js.map

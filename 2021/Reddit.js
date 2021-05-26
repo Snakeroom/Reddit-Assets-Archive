@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.dd705894c86654f97a54.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7c2bb917232422f365d6.js
+// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1068,7 +1068,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(D.nb)(null !== (l = null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(D.ob)(null !== (l = null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? s.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : s.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -2221,7 +2221,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.kb)(o + 1)
+					})), Object(i.lb)(o + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -3320,14 +3320,14 @@
 						e && Ee.a.remove(Ut.a, {
 							domain: U.a.cookieDomain
 						});
-						const t = Object(Gt.A)(et.a.ALPHA_CONSUMER);
-						t && Object(Gt.V)(et.a.ALPHA_CONSUMER), (e || t) && Object(Gt.xb)(et.a.REDESIGN_MODAL, !0)
+						const t = Object(Gt.B)(et.a.ALPHA_CONSUMER);
+						t && Object(Gt.W)(et.a.ALPHA_CONSUMER), (e || t) && Object(Gt.zb)(et.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
-					} = this.props, n = Object(Gt.A)(et.a.REDESIGN_MODAL);
-					!e && n ? t() : e && !n && Object(Gt.xb)(et.a.REDESIGN_MODAL, !0)
+					} = this.props, n = Object(Gt.B)(et.a.REDESIGN_MODAL);
+					!e && n ? t() : e && !n && Object(Gt.zb)(et.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -5847,7 +5847,7 @@
 					}, this.close = () => {
 						this.props.onCloseDropdown()
 					}, this.onRemoveRecentSearch = e => {
-						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Gt.W)(e, this.props.currentUser.id), this.setState({
+						this.props.currentUser && 0 !== this.state.recentSearches.length && (Object(Gt.X)(e, this.props.currentUser.id), this.setState({
 							recentSearches: this.state.recentSearches.filter(t => t.searchQuery !== e.searchQuery),
 							focusedItemIndex: -1
 						}))
@@ -5857,7 +5857,7 @@
 						})
 					}, this.onSetRecentSearch = e => {
 						this.props.isLoggedIn && this.props.currentUser && this.setState({
-							recentSearches: Object(Gt.Eb)({
+							recentSearches: Object(Gt.Gb)({
 								...e,
 								section: Sr.c.recent
 							}, this.props.currentUser.id)
@@ -5951,7 +5951,7 @@
 						}
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
-							const e = Object(Gt.H)(this.props.currentUser.id);
+							const e = Object(Gt.I)(this.props.currentUser.id);
 							e.length > 0 && (this.setState({
 								recentSearches: this.props.isLoggedIn ? e : [],
 								itemList: [...e, ...this.props.trendingItems]
@@ -14372,7 +14372,7 @@
 			const oe = 1e3;
 			class re extends u.a.Component {
 				constructor() {
-					super(...arguments), this.flush = ne()(() => Object(se.ub)(this.props.storageKey, this.props.value), oe)
+					super(...arguments), this.flush = ne()(() => Object(se.wb)(this.props.storageKey, this.props.value), oe)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -14530,7 +14530,7 @@
 					return s
 				} : () => e => t => e(t),
 				Ze = n("./src/reddit/helpers/survey/index.ts");
-			var Ye = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Ze.b).filter(t => t === e).length)(t.type) && Object(se.P)(Ze.b[t.type]), e(t)) : () => e => t => e(t);
+			var Ye = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Ze.b).filter(t => t === e).length)(t.type) && Object(se.Q)(Ze.b[t.type]), e(t)) : () => e => t => e(t);
 			const Xe = 5 * g.fb;
 			var $e = e => {
 					const t = ne()(() => {
@@ -14768,7 +14768,7 @@
 				Zt = n("./src/reddit/actions/publicAccessNetwork/constants.ts");
 			const Yt = Object(Qt.a)(Zt.C),
 				Xt = () => {
-					return Object(se.w)($.b.RPAN_USER_SETTINGS_STORE) || void 0
+					return Object(se.x)($.b.RPAN_USER_SETTINGS_STORE) || void 0
 				};
 			var $t = n("./src/reddit/actions/global/constants.ts");
 			Object(Kt.a)({
@@ -14925,7 +14925,7 @@
 						Object(Ve.i)(r) && e.push(me.e), e.length > 0 && n.dispatch(Object(m.c)(Object(v.a)(c.url, e)))
 					}
 					return xt.a.initialize(), {
-						localStorageData: Object(se.x)()
+						localStorageData: Object(se.y)()
 					}
 				},
 				postRender: ({
@@ -15022,7 +15022,7 @@
 										text: s.fbt._("Successfully logged in!", null, {
 											hk: "2POUVB"
 										})
-									})), u = !0, Object(mt.c)(le.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [me.o]))), Object(mt.b)(le.a.JustLoggedOut) && (u = !0, Object(mt.c)(le.a.JustLoggedOut)), Object(B.a)(t), !1 !== se.Q()) {
+									})), u = !0, Object(mt.c)(le.a.JustLoggedIn), history.replaceState(history.state, "", Object(v.a)(window.location.href, [me.o]))), Object(mt.b)(le.a.JustLoggedOut) && (u = !0, Object(mt.c)(le.a.JustLoggedOut)), Object(B.a)(t), !1 !== se.R()) {
 									let s;
 									Object(Ft.a)(t) && (s = () => {
 										const {
@@ -15061,18 +15061,18 @@
 									{
 										currentPage: n
 									} = t.platform;
-								if ("visible" !== document.visibilityState && (se.Ib(Date.now()), Object(k.a)(Object(Ot.a)("tab_backgrounded")(t))), (e => Object(Lt.c)(e, {
+								if ("visible" !== document.visibilityState && (se.Kb(Date.now()), Object(k.a)(Object(Ot.a)("tab_backgrounded")(t))), (e => Object(Lt.c)(e, {
 										experimentEligibilitySelector: e => !Object(Wt.d)(e),
 										experimentName: Rt.Z
 									}) === Rt.gb.Enabled)(t) && "visible" === document.visibilityState && n && Object(ht.k)(n.routeMatch, c.getState(), I.TimerType.Revisit, 0, n.urlParams, !0), "visible" === document.visibilityState) {
 									const e = se.t(),
 										t = se.u(),
-										n = se.C(),
-										s = se.M();
+										n = se.D(),
+										s = se.N();
 									if (s && e && n) {
 										const o = Date.now() - s;
 										Object(k.a)(Object(Ot.e)("tab_backgrounded", n)(c.getState(), o, e, t))
-									}(s || e || n || t) && (se.Y(), se.cb(), se.ab(), se.Z())
+									}(s || e || n || t) && (se.Z(), se.db(), se.bb(), se.ab())
 								}
 								Object(an.a)(c.getState()) && (null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && rn.d[n.locationState.clickId] && !rn.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(rn.b)(n.locationState.clickId) : Object(rn.c)(n.locationState.clickId))
 							}), Object(Wt.g)(c.getState()) && Pt(c.getState), c.dispatch(Object(K.j)())
@@ -17762,4 +17762,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.dd705894c86654f97a54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7c2bb917232422f365d6.js.map

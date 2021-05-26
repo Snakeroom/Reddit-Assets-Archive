@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7ee877df2046d3903533.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5d9bc69c4e748a0e0a38.js
+// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1238,10 +1238,10 @@
 
 			function a(e, t) {
 				let n;
-				n = Object(o.w)(e);
+				n = Object(o.x)(e);
 				const [a, s] = Object(r.useState)(null != n ? n : t);
 				return [a, function(t) {
-					Object(o.ub)(e, t), s(t)
+					Object(o.wb)(e, t), s(t)
 				}]
 			}
 		},
@@ -1506,4 +1506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7ee877df2046d3903533.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.5d9bc69c4e748a0e0a38.js.map

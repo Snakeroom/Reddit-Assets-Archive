@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a618e6d1a3aaf58b5ef3.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.1a6bd6a564fc996bc3ba.js
+// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -932,7 +932,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(A.nb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(A.ob)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -2505,7 +2505,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.kb)(s + 1)
+					})), Object(i.lb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -14068,10 +14068,10 @@
 
 			function r(e, t) {
 				let n;
-				n = Object(s.w)(e);
+				n = Object(s.x)(e);
 				const [r, a] = Object(o.useState)(null != n ? n : t);
 				return [r, function(t) {
-					Object(s.ub)(e, t), a(t)
+					Object(s.wb)(e, t), a(t)
 				}]
 			}
 		},
@@ -16740,14 +16740,14 @@
 				rn = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const an = [{
 					id: qt.d,
-					getShowTimesLeft: sn.F,
-					setShowTimesLeft: sn.Cb,
+					getShowTimesLeft: sn.G,
+					setShowTimesLeft: sn.Eb,
 					tooltipShown: rn.n,
 					tooltipDismissed: rn.m
 				}, {
 					id: qt.c,
-					getShowTimesLeft: sn.E,
-					setShowTimesLeft: sn.Bb,
+					getShowTimesLeft: sn.F,
+					setShowTimesLeft: sn.Db,
 					tooltipShown: rn.f,
 					tooltipDismissed: rn.e
 				}],
@@ -16941,7 +16941,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(sn.hb)(xn.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(sn.ib)(xn.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -22238,4 +22238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a618e6d1a3aaf58b5ef3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1a6bd6a564fc996bc3ba.js.map

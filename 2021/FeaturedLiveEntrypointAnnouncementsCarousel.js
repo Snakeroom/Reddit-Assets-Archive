@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.d951d6d64c7ff92cda41.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.8e61d0950f53715c9fd7.js
+// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -225,7 +225,7 @@
 								id: n,
 								maxImpressionsCount: t
 							} = e;
-							Object(C.db)(n, t)
+							Object(C.eb)(n, t)
 						}), t(E("dismiss_all")), f(h.i.No)
 					}, [n, t, e])
 				})({
@@ -256,7 +256,7 @@
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
 							c = Object(C.e)(a.id);
-						s(j("view", a)), Object(C.db)(a.id, c + 1);
+						s(j("view", a)), Object(C.eb)(a.id, c + 1);
 						const i = Object(C.f)();
 						t.filter(w(o, i)).length || f(h.i.No)
 					}, [e, o, s, n, t])
@@ -321,4 +321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.d951d6d64c7ff92cda41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.8e61d0950f53715c9fd7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4239a466ab17153f32ca.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.60ae3520775f5817fa58.js
+// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -771,7 +771,7 @@
 				} = e, n = Object(c.g)(o.a.AWARDED_LISTING_BANNER, i.f), [u, m] = Object(s.useState)(n ? S.Hidden : S.Visible);
 				if (u === S.Hidden) return null;
 				const p = () => {
-					m(S.Visible), Object(c.eb)(o.a.AWARDED_LISTING_BANNER, !1, i.f)
+					m(S.Visible), Object(c.fb)(o.a.AWARDED_LISTING_BANNER, !1, i.f)
 				};
 				return u === S.Dismissed ? r.a.createElement("div", {
 					className: Object(a.a)(x.a.dismissedContainer, t)
@@ -792,7 +792,7 @@
 				})), r.a.createElement(O, null), r.a.createElement(l.a, {
 					className: x.a.close,
 					onClick: () => {
-						m(S.Dismissed), Object(c.eb)(o.a.AWARDED_LISTING_BANNER, !0, i.f)
+						m(S.Dismissed), Object(c.fb)(o.a.AWARDED_LISTING_BANNER, !0, i.f)
 					}
 				}))
 			}
@@ -892,7 +892,7 @@
 			class E extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.eb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.fb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(Object(m.b)())
 					}, this.createPost = () => {
@@ -7324,4 +7324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4239a466ab17153f32ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.60ae3520775f5817fa58.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7359d7db1de75dee9ad0.js
-// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.278fc5305c3005dc44b9.js
+// Retrieved at 5/26/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3682,17 +3682,24 @@
 			const f = "INCREMENT_SEEN_COUNT_PER_SESS",
 				m = (e, t, r) => async (n, c) => {
 					const d = c(),
-						p = Object(i.v)(),
+						p = Object(i.w)(),
 						f = Date.now(),
 						m = p && f - p < 18e4,
 						O = Object(b.c)(d, {
 							postId: e
 						}),
-						I = d.upvotePromptCountPerSess;
-					if (!e || !O || m || I >= 4) return;
-					const g = h(d, t);
-					g && (n(Object(o.f)({
-						text: g,
+						I = d.upvotePromptCountPerSess,
+						g = (() => {
+							const e = Object(i.v)();
+							if (!e) return [];
+							const t = Date.now();
+							return e.filter(e => t - e < 864e5)
+						})();
+					if (!e || !O || m || I >= 4 || g.length >= 3) return;
+					const S = h(d, t);
+					if (!S) return;
+					n(Object(o.f)({
+						text: S,
 						buttonText: s.fbt._("UPVOTE POST", null, {
 							hk: "1u7UnZ"
 						}),
@@ -3705,12 +3712,14 @@
 							noun: "close",
 							...Object(u.defaults)(e)
 						}))(d))
-					})), Object(y.a)((e => ({
+					}));
+					const v = [...g, Date.now()].slice(Math.max(g.length + 1 - 3, 0));
+					Object(y.a)((e => ({
 						source: l,
 						action: "view",
 						noun: l,
 						...Object(u.defaults)(e)
-					}))(d)), Object(i.tb)(), n(_()), r && r())
+					}))(d)), Object(i.vb)(), Object(i.ub)(v), n(_()), r && r()
 				}, E = e => async (t, r) => {
 					Object(y.a)((e => ({
 						source: l,
@@ -21840,4 +21849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7359d7db1de75dee9ad0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.278fc5305c3005dc44b9.js.map
