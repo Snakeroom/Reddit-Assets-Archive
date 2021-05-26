@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e51a6061fe9e12aec9a9.js
-// Retrieved at 5/26/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c96246611dad5b843248.js
+// Retrieved at 5/26/2021, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("135056"),
+				buildNumber: r("135065"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1622041489"),
+				})("1622043471"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4209,14 +4209,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c831ceca9057e746c3f9e849e2b5b0f3a8719cfb0-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd7fe0460874e507bab9230f0bcde8076e9bf50d1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "831ceca9057e746c3f9e849e2b5b0f3a8719cfb0-production",
+						release: "d7fe0460874e507bab9230f0bcde8076e9bf50d1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4710,7 +4710,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "831ceca9057e746c3f9e849e2b5b0f3a8719cfb0-production",
+						releaseClient: "d7fe0460874e507bab9230f0bcde8076e9bf50d1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -13791,27 +13791,27 @@
 		"./src/reddit/actions/subredditModeration/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "g", (function() {
-				return I
-			})), i.d(t, "e", (function() {
 				return j
+			})), i.d(t, "e", (function() {
+				return F
 			})), i.d(t, "f", (function() {
-				return C
+				return k
 			})), i.d(t, "b", (function() {
-				return A
+				return P
 			})), i.d(t, "k", (function() {
-				return M
+				return G
 			})), i.d(t, "d", (function() {
-				return W
+				return H
 			})), i.d(t, "h", (function() {
-				return K
+				return Y
 			})), i.d(t, "i", (function() {
-				return Q
-			})), i.d(t, "a", (function() {
 				return J
+			})), i.d(t, "a", (function() {
+				return X
 			})), i.d(t, "c", (function() {
-				return Z
+				return ee
 			})), i.d(t, "j", (function() {
-				return ne
+				return re
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/lib/makeActionCreator/index.ts"),
@@ -13819,88 +13819,89 @@
 				o = i("./src/lib/constants/index.ts"),
 				d = i("./src/lib/makeApiRequest/index.ts"),
 				a = i("./src/lib/omitHeaders/index.ts"),
-				l = i("./src/reddit/constants/headers.ts");
-			const c = (e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
-					endpoint: `${e.apiUrl}/api/v1/${t}/moderators`,
+				l = i("./src/reddit/constants/headers.ts"),
+				c = i("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const u = (e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
+					endpoint: Object(c.a)(`${e.apiUrl}/api/v1/${t}/moderators`),
 					method: o.eb.GET,
 					data: {
 						...i,
 						count: 10
 					}
 				}),
-				u = (e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
-					endpoint: `${e.apiUrl}/api/v1/${t}/moderators_invited`,
+				_ = (e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
+					endpoint: Object(c.a)(`${e.apiUrl}/api/v1/${t}/moderators_invited`),
 					method: o.eb.GET,
 					data: {
 						...i,
 						count: 50
 					}
 				});
-			var _ = i("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				p = i("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				m = i("./src/reddit/models/SubredditModeration/index.ts"),
-				h = i("./src/reddit/models/Toast/index.ts"),
-				f = i("./src/reddit/models/User/index.ts"),
-				b = i("./src/reddit/selectors/subreddit.ts"),
-				g = i("./src/reddit/selectors/user.ts"),
-				y = i("./src/reddit/actions/subredditModeration/constants.ts");
-			const w = Object(r.a)(y.G),
-				v = Object(r.a)(y.F),
-				E = Object(r.a)(y.E),
-				S = Object(r.a)(y.v),
-				T = Object(r.a)(y.u),
-				O = Object(r.a)(y.t),
-				I = (e, t) => async (i, n, {
+			var p = i("./src/reddit/helpers/normalizeUsername/index.tsx"),
+				m = i("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				h = i("./src/reddit/models/SubredditModeration/index.ts"),
+				f = i("./src/reddit/models/Toast/index.ts"),
+				b = i("./src/reddit/models/User/index.ts"),
+				g = i("./src/reddit/selectors/subreddit.ts"),
+				y = i("./src/reddit/selectors/user.ts"),
+				w = i("./src/reddit/actions/subredditModeration/constants.ts");
+			const v = Object(r.a)(w.G),
+				E = Object(r.a)(w.F),
+				S = Object(r.a)(w.E),
+				T = Object(r.a)(w.v),
+				O = Object(r.a)(w.u),
+				I = Object(r.a)(w.t),
+				j = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n(),
-						o = Object(b.U)(s, {
+						o = Object(g.U)(s, {
 							subredditId: e
 						}).name,
 						d = t && t.after ? t.after : "",
 						a = t && t.before ? t.before : "",
-						l = Object(m.d)(e, d, a),
-						u = s.pages.modHub.moderators.userOrder.data[l],
+						l = Object(h.d)(e, d, a),
+						c = s.pages.modHub.moderators.userOrder.data[l],
 						_ = s.pages.modHub.moderators.userOrder.api.error[l];
-					if (s.pages.modHub.moderators.userOrder.api.pending[l] || u && !_) return;
-					i(w({
+					if (s.pages.modHub.moderators.userOrder.api.pending[l] || c && !_) return;
+					i(v({
 						subredditId: e,
 						key: l
 					}));
-					const p = await c(r(), o, t);
+					const p = await u(r(), o, t);
 					if (p.ok) {
 						const t = {
 							key: l,
 							response: p.body,
 							subredditId: e
 						};
-						i(v(t))
+						i(E(t))
 					} else {
 						const t = {
 							error: p.error,
 							subredditId: e,
 							key: l
 						};
-						i(E(t))
+						i(S(t))
 					}
-				}, j = (e, t) => async (i, n, {
+				}, F = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n(),
-						c = Object(b.U)(s, {
+						c = Object(g.U)(s, {
 							subredditId: e
 						}).name,
 						u = t && t.afterEditable ? t.afterEditable : "",
 						_ = t && t.beforeEditable ? t.beforeEditable : "",
-						p = Object(m.d)(e, u, _),
-						h = s.pages.modHub.moderators.editableUserOrder.data[p],
+						p = Object(h.d)(e, u, _),
+						m = s.pages.modHub.moderators.editableUserOrder.data[p],
 						f = s.pages.modHub.moderators.editableUserOrder.api.error[p];
-					if (s.pages.modHub.moderators.editableUserOrder.api.pending[p] || h && !f) return;
-					i(S({
+					if (s.pages.modHub.moderators.editableUserOrder.api.pending[p] || m && !f) return;
+					i(T({
 						subredditId: e,
 						key: p
 					}));
-					const g = {
+					const b = {
 							...t,
 							after: u,
 							before: _
@@ -13912,47 +13913,47 @@
 								...i,
 								count: 10
 							}
-						}))(r(), c, g);
+						}))(r(), c, b);
 					if (y.ok) {
 						const t = {
 							key: p,
 							response: y.body,
 							subredditId: e
 						};
-						i(T(t))
+						i(O(t))
 					} else {
 						const t = {
 							key: p,
 							error: y.error,
 							subredditId: e
 						};
-						i(O(t))
+						i(I(t))
 					}
-				}, F = Object(r.a)(y.B), R = Object(r.a)(y.A), x = Object(r.a)(y.z), C = e => async (t, i, {
+				}, R = Object(r.a)(w.B), x = Object(r.a)(w.A), C = Object(r.a)(w.z), k = e => async (t, i, {
 					apiContext: n
 				}) => {
 					const r = i(),
-						s = Object(b.U)(r, {
+						s = Object(g.U)(r, {
 							subredditId: e
 						}).name;
 					if (r.pages.modHub.moderators.invitedModerators.api.pending) return;
-					t(F());
-					const o = await u(n(), s);
+					t(R());
+					const o = await _(n(), s);
 					if (o.ok) {
 						const e = o.body;
-						t(R(e))
-					} else t(x(o.error))
-				}, k = Object(r.a)(y.a), N = Object(r.a)(y.c), D = Object(r.a)(y.b), A = (e, t, i) => async (r, c, {
-					apiContext: m
+						t(x(e))
+					} else t(C(o.error))
+				}, N = Object(r.a)(w.a), D = Object(r.a)(w.c), A = Object(r.a)(w.b), P = (e, t, i) => async (r, c, {
+					apiContext: u
 				}) => {
-					const f = c(),
-						g = Object(b.U)(f, {
+					const h = c(),
+						b = Object(g.U)(h, {
 							subredditId: e
 						}),
-						y = g.name,
-						w = g.url;
-					t = Object(_.a)(t), r(k());
-					const v = Object(p.d)(i),
+						y = b.name,
+						w = b.url;
+					t = Object(p.a)(t), r(N());
+					const v = Object(m.d)(i),
 						E = await ((e, t, i, n) => Object(d.a)(Object(a.a)(e, [l.a]), {
 							endpoint: `${e.apiUrl}${t}api/friend`,
 							method: o.eb.POST,
@@ -13962,41 +13963,41 @@
 								permissions: n,
 								api_type: "json"
 							}
-						}))(m(), w, t, v);
+						}))(u(), w, t, v);
 					if (E.ok) {
-						const i = await u(m(), y, {
+						const i = await _(u(), y, {
 							username: t
 						});
 						if (E.ok) {
 							const t = i.body,
 								o = t.moderatorIds[0];
-							f.pages.modHub.moderators.invitedModerators.models[e][o] ? r(Object(s.f)({
-								kind: h.b.SuccessCommunity,
+							h.pages.modHub.moderators.invitedModerators.models[e][o] ? r(Object(s.f)({
+								kind: f.b.SuccessCommunity,
 								text: n.fbt._("That user is already invited", null, {
 									hk: "R8YPV"
 								})
 							})) : (r(Object(s.f)({
-								kind: h.b.SuccessMod,
+								kind: f.b.SuccessMod,
 								text: n.fbt._("Successfully added a moderator", null, {
 									hk: "2ZdoIZ"
 								})
-							})), r(N(t)))
+							})), r(D(t)))
 						}
 					} else {
 						const e = E.body.json && E.body.json.errors;
 						e && e[0] && e[0][1] && r(Object(s.f)({
-							kind: h.b.Error,
+							kind: f.b.Error,
 							text: e[0][1],
 							duration: 3e3
-						})), r(D())
+						})), r(A())
 					}
-				}, P = Object(r.a)(y.W), B = Object(r.a)(y.Y), L = Object(r.a)(y.X), U = Object(r.a)(y.Z), M = (e, t, i, n) => async (r, s, {
+				}, B = Object(r.a)(w.W), L = Object(r.a)(w.Y), U = Object(r.a)(w.X), M = Object(r.a)(w.Z), G = (e, t, i, n) => async (r, s, {
 					apiContext: c
 				}) => {
 					const u = s(),
 						_ = u.subreddits.models[e].name,
-						p = Object(m.d)(e, i, n);
-					if (r(P()), (await ((e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
+						p = Object(h.d)(e, i, n);
+					if (r(B()), (await ((e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
 							endpoint: `${e.apiUrl}/api/unfriend`,
 							method: o.eb.POST,
 							data: {
@@ -14006,23 +14007,23 @@
 								api_type: "json"
 							}
 						}))(c(), _, t)).ok) {
-						r(B({
+						r(L({
 							subredditId: e,
 							userId: t,
 							key: p
 						}));
-						const i = Object(g.i)(u);
-						i && i.id === t && r(U({
+						const i = Object(y.i)(u);
+						i && i.id === t && r(M({
 							subredditId: e,
 							userId: t
 						}))
-					} else r(L())
-				}, G = Object(r.a)(y.w), q = Object(r.a)(y.y), V = Object(r.a)(y.x), W = (e, t, i, n) => async (r, s, {
+					} else r(U())
+				}, q = Object(r.a)(w.w), V = Object(r.a)(w.y), W = Object(r.a)(w.x), H = (e, t, i, n) => async (r, s, {
 					apiContext: c
 				}) => {
 					const u = s().subreddits.models[e].url;
-					r(G());
-					const _ = Object(p.d)(i);
+					r(q());
+					const _ = Object(m.d)(i);
 					if ((await ((e, t, i, n) => Object(d.a)(Object(a.a)(e, [l.a]), {
 							endpoint: `${e.apiUrl}${t}api/setpermissions`,
 							method: o.eb.POST,
@@ -14033,31 +14034,31 @@
 								api_type: "json"
 							}
 						}))(c(), u, t, _)).ok) {
-						r(q({
+						r(V({
 							permissions: i,
 							subredditId: e,
 							userId: n
 						}))
-					} else r(V())
-				}, H = Object(r.a)(y.J), $ = Object(r.a)(y.I), z = Object(r.a)(y.H), K = (e, t) => async (i, n, {
+					} else r(W())
+				}, $ = Object(r.a)(w.J), z = Object(r.a)(w.I), K = Object(r.a)(w.H), Y = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n().subreddits.models[e].name,
 						o = {
-							username: Object(_.a)(t)
+							username: Object(p.a)(t)
 						};
-					i(H());
-					const d = await c(r(), s, o);
-					d.ok ? i($(d.body)) : i(z(d.error))
-				}, Y = Object(r.a)(y.C), Q = Object(r.a)(y.S), J = e => async (t, i, {
+					i($());
+					const d = await u(r(), s, o);
+					d.ok ? i(z(d.body)) : i(K(d.error))
+				}, Q = Object(r.a)(w.C), J = Object(r.a)(w.S), X = e => async (t, i, {
 					apiContext: n
 				}) => {
 					const r = i(),
 						s = r.user.account;
 					if (!s) return;
-					const u = r.subreddits.models[e],
-						_ = u.url,
-						p = u.name;
+					const c = r.subreddits.models[e],
+						_ = c.url,
+						p = c.name;
 					if ((await ((e, t) => Object(d.a)(Object(a.a)(e, [l.a]), {
 							endpoint: `${e.apiUrl}${t}api/accept_moderator_invite`,
 							method: o.eb.POST,
@@ -14065,21 +14066,21 @@
 								api_type: "json"
 							}
 						}))(n(), _)).ok) {
-						t(Y({
+						t(Q({
 							subredditId: e
-						})), t(j(e)), t(C(e)), t(I(e));
+						})), t(F(e)), t(k(e)), t(j(e));
 						const i = {
-								username: Object(f.e)(s)
+								username: Object(b.e)(s)
 							},
-							r = await c(n(), p, i);
+							r = await u(n(), p, i);
 						if (r.ok) {
 							const i = r.body.moderators[s.id];
-							i && t(Q({
+							i && t(J({
 								[e]: i.modPermissions
 							}))
 						}
 					}
-				}, X = Object(r.a)(y.D), Z = e => async (t, i, {
+				}, Z = Object(r.a)(w.D), ee = e => async (t, i, {
 					apiContext: n
 				}) => {
 					const r = i().subreddits.models[e].name;
@@ -14089,17 +14090,17 @@
 						data: {
 							api_type: "json"
 						}
-					}))(n(), r)).ok && t(X({
+					}))(n(), r)).ok && t(Z({
 						subredditId: e
 					}))
-				}, ee = Object(r.a)(y.T), te = Object(r.a)(y.V), ie = Object(r.a)(y.U), ne = (e, t) => async (i, n, {
+				}, te = Object(r.a)(w.T), ie = Object(r.a)(w.V), ne = Object(r.a)(w.U), re = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n(),
-						c = Object(b.U)(s, {
+						c = Object(g.U)(s, {
 							subredditId: e
 						}).name;
-					i(ee()), (await ((e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
+					i(te()), (await ((e, t, i) => Object(d.a)(Object(a.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/unfriend`,
 						method: o.eb.POST,
 						data: {
@@ -14108,10 +14109,10 @@
 							r: t,
 							api_type: "json"
 						}
-					}))(r(), c, t)).ok ? i(te({
+					}))(r(), c, t)).ok ? i(ie({
 						subredditId: e,
 						userId: t
-					})) : i(ie())
+					})) : i(ne())
 				}
 		},
 		"./src/reddit/actions/subredditRules/constants.ts": function(e, t, i) {
@@ -46507,4 +46508,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e51a6061fe9e12aec9a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c96246611dad5b843248.js.map

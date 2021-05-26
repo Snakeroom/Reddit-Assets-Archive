@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e29a44769754eba96ba6.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.72583d6208867a267141.js
+// Retrieved at 5/26/2021, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -2794,13 +2794,13 @@
 		"./src/reddit/actions/subredditModeration/approvedSubmitters.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return v
+				return C
 			})), s.d(t, "c", (function() {
-				return y
+				return O
 			})), s.d(t, "a", (function() {
-				return w
-			})), s.d(t, "d", (function() {
 				return j
+			})), s.d(t, "d", (function() {
+				return I
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/lodash/get.js"),
@@ -2810,57 +2810,58 @@
 				d = s("./src/lib/constants/index.ts"),
 				l = s("./src/lib/makeApiRequest/index.ts"),
 				c = s("./src/lib/omitHeaders/index.ts"),
-				u = s("./src/reddit/constants/headers.ts");
-			const m = (e, t, s) => Object(l.a)(Object(c.a)(e, [u.a]), {
-				endpoint: `${e.apiUrl}/api/v1/${t}/contributors`,
+				u = s("./src/reddit/constants/headers.ts"),
+				m = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const p = (e, t, s) => Object(l.a)(Object(c.a)(e, [u.a]), {
+				endpoint: Object(m.a)(`${e.apiUrl}/api/v1/${t}/contributors`),
 				method: d.eb.GET,
 				data: s
 			});
-			var p = s("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				h = s("./src/reddit/models/SubredditModeration/index.ts"),
-				b = s("./src/reddit/models/Toast/index.ts"),
-				g = s("./src/reddit/actions/subredditModeration/constants.ts");
-			const f = Object(r.a)(g.g),
-				x = Object(r.a)(g.f),
-				E = Object(r.a)(g.e),
-				v = (e, t = {}) => async (s, n, {
+			var h = s("./src/reddit/helpers/normalizeUsername/index.tsx"),
+				b = s("./src/reddit/models/SubredditModeration/index.ts"),
+				g = s("./src/reddit/models/Toast/index.ts"),
+				f = s("./src/reddit/actions/subredditModeration/constants.ts");
+			const x = Object(r.a)(f.g),
+				E = Object(r.a)(f.f),
+				v = Object(r.a)(f.e),
+				C = (e, t = {}) => async (s, n, {
 					apiContext: a
 				}) => {
 					const o = n(),
 						r = t.after || "",
-						i = Object(h.d)(e, r),
+						i = Object(b.d)(e, r),
 						d = o.pages.modHub.approvedSubmitters.fetchedTokens[i];
 					if (o.pages.modHub.approvedSubmitters.api.pending[i] || d) return;
-					s(f({
+					s(x({
 						subredditId: e,
 						fetchedToken: r
 					}));
 					const l = o.subreddits.models[e].name,
-						c = await m(a(), l, t);
-					c.ok ? s(x({
+						c = await p(a(), l, t);
+					c.ok ? s(E({
 						...c.body,
 						fetchedToken: r
-					})) : s(E({
+					})) : s(v({
 						subredditId: e,
 						fetchedToken: r
 					}))
-				}, C = Object(r.a)(g.j), _ = Object(r.a)(g.i), k = Object(r.a)(g.h), y = (e, t) => async (s, n, {
+				}, _ = Object(r.a)(f.j), k = Object(r.a)(f.i), y = Object(r.a)(f.h), O = (e, t) => async (s, n, {
 					apiContext: a
 				}) => {
 					const o = n().subreddits.models[e].name,
 						r = {
-							username: Object(p.a)(t)
+							username: Object(h.a)(t)
 						};
-					s(C());
-					const i = await m(a(), o, r);
-					i.ok ? s(_(i.body)) : s(k(i.error))
-				}, O = Object(r.a)(g.d), S = Object(r.a)(g.k), w = (e, t) => async (s, a, {
+					s(_());
+					const i = await p(a(), o, r);
+					i.ok ? s(k(i.body)) : s(y(i.error))
+				}, S = Object(r.a)(f.d), w = Object(r.a)(f.k), j = (e, t) => async (s, a, {
 					apiContext: r
 				}) => {
-					const h = a(),
-						g = h.subreddits.models[e].url,
-						f = h.subreddits.models[e].name;
-					t = Object(p.a)(t);
+					const m = a(),
+						b = m.subreddits.models[e].url,
+						f = m.subreddits.models[e].name;
+					t = Object(h.a)(t);
 					const x = await ((e, t, s) => Object(l.a)(Object(c.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
 						method: d.eb.POST,
@@ -2869,30 +2870,30 @@
 							name: s,
 							type: "contributor"
 						}
-					}))(r(), g, t);
+					}))(r(), b, t);
 					if (x.ok) {
 						const e = {
 							username: t
 						};
 						s(Object(i.f)({
-							kind: b.b.SuccessMod,
+							kind: g.b.SuccessMod,
 							text: n.fbt._("Successfully added an approved submitter", null, {
 								hk: "4gruK7"
 							})
 						}));
-						const a = await m(r(), f, e);
-						a.ok && s(O(a.body))
+						const a = await p(r(), f, e);
+						a.ok && s(S(a.body))
 					} else {
 						const e = o()(x, "body.json.errors[0][1]", n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
 						s(Object(i.f)({
-							kind: b.b.Error,
+							kind: g.b.Error,
 							text: e,
 							duration: 3e3
 						}))
 					}
-				}, j = (e, t) => async (s, a, {
+				}, I = (e, t) => async (s, a, {
 					apiContext: r
 				}) => {
 					const m = a().subreddits.models[e].url,
@@ -2905,7 +2906,7 @@
 								type: "contributor"
 							}
 						}))(r(), m, t);
-					if (p.ok) s(S({
+					if (p.ok) s(w({
 						subredditId: e,
 						userId: t
 					}));
@@ -2914,7 +2915,7 @@
 							hk: "1IJNeH"
 						}));
 						s(Object(i.f)({
-							kind: b.b.Error,
+							kind: g.b.Error,
 							text: e,
 							duration: 3e3
 						}))
@@ -2924,13 +2925,13 @@
 		"./src/reddit/actions/subredditModeration/mute.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return v
+				return C
 			})), s.d(t, "c", (function() {
-				return y
+				return O
 			})), s.d(t, "d", (function() {
-				return w
-			})), s.d(t, "a", (function() {
 				return j
+			})), s.d(t, "a", (function() {
+				return I
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
@@ -2939,52 +2940,53 @@
 				i = s("./src/lib/constants/index.ts"),
 				d = s("./src/lib/makeApiRequest/index.ts"),
 				l = s("./src/lib/omitHeaders/index.ts"),
-				c = s("./src/reddit/constants/headers.ts");
-			const u = (e, t, s) => Object(d.a)(Object(l.a)(e, [c.a]), {
-				endpoint: `${e.apiUrl}/api/v1/${t}/muted`,
+				c = s("./src/reddit/constants/headers.ts"),
+				u = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const m = (e, t, s) => Object(d.a)(Object(l.a)(e, [c.a]), {
+				endpoint: Object(u.a)(`${e.apiUrl}/api/v1/${t}/muted`),
 				method: i.eb.GET,
 				data: s
 			});
-			var m = s("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				p = s("./src/reddit/models/SubredditModeration/index.ts"),
-				h = s("./src/reddit/models/Toast/index.ts"),
-				b = s("./src/reddit/actions/toaster.ts"),
-				g = s("./src/reddit/actions/subredditModeration/constants.ts");
-			const f = Object(a.a)(g.N),
-				x = Object(a.a)(g.L),
-				E = Object(a.a)(g.K),
-				v = (e, t = {}) => async (s, n, {
+			var p = s("./src/reddit/helpers/normalizeUsername/index.tsx"),
+				h = s("./src/reddit/models/SubredditModeration/index.ts"),
+				b = s("./src/reddit/models/Toast/index.ts"),
+				g = s("./src/reddit/actions/toaster.ts"),
+				f = s("./src/reddit/actions/subredditModeration/constants.ts");
+			const x = Object(a.a)(f.N),
+				E = Object(a.a)(f.L),
+				v = Object(a.a)(f.K),
+				C = (e, t = {}) => async (s, n, {
 					apiContext: a
 				}) => {
 					const o = n(),
 						r = t.after || "",
-						i = Object(p.d)(e, r),
+						i = Object(h.d)(e, r),
 						d = o.pages.modHub.muted.fetchedTokens[i];
 					if (o.pages.modHub.muted.api.pending[i] || d) return;
-					s(f({
+					s(x({
 						subredditId: e,
 						fetchedToken: r
 					}));
 					const l = o.subreddits.models[e].name,
-						c = await u(a(), l, t);
-					c.ok ? s(x({
+						c = await m(a(), l, t);
+					c.ok ? s(E({
 						...c.body,
 						fetchedToken: r
-					})) : s(E({
+					})) : s(v({
 						subredditId: e,
 						fetchedToken: r
 					}))
-				}, C = Object(a.a)(g.Q), _ = Object(a.a)(g.P), k = Object(a.a)(g.O), y = (e, t) => async (s, n, {
+				}, _ = Object(a.a)(f.Q), k = Object(a.a)(f.P), y = Object(a.a)(f.O), O = (e, t) => async (s, n, {
 					apiContext: a
 				}) => {
 					const o = n().subreddits.models[e].name,
 						r = {
-							username: Object(m.a)(t)
+							username: Object(p.a)(t)
 						};
-					s(C());
-					const i = await u(a(), o, r);
-					i.ok ? s(_(i.body)) : s(k(i.error))
-				}, O = Object(a.a)(g.M), S = Object(a.a)(g.R), w = (e, t) => async (s, a, {
+					s(_());
+					const i = await m(a(), o, r);
+					i.ok ? s(k(i.body)) : s(y(i.error))
+				}, S = Object(a.a)(f.M), w = Object(a.a)(f.R), j = (e, t) => async (s, a, {
 					apiContext: o
 				}) => {
 					const u = a().subreddits.models[e].url,
@@ -2997,7 +2999,7 @@
 								type: "muted"
 							}
 						}))(o(), u, t);
-					if (m.ok) s(S({
+					if (m.ok) s(w({
 						subredditId: e,
 						userId: t
 					}));
@@ -3005,19 +3007,19 @@
 						const e = r()(m, "body.json.errors[0][1]", n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
-						s(Object(b.f)({
-							kind: h.b.Error,
+						s(Object(g.f)({
+							kind: b.b.Error,
 							text: e,
 							duration: 3e3
 						}))
 					}
-				}, j = (e, t, s) => async (a, o, {
-					apiContext: p
+				}, I = (e, t, s) => async (a, o, {
+					apiContext: u
 				}) => {
-					const g = o(),
-						f = g.subreddits.models[e].url,
-						x = g.subreddits.models[e].name;
-					t = Object(m.a)(t);
+					const h = o(),
+						f = h.subreddits.models[e].url,
+						x = h.subreddits.models[e].name;
+					t = Object(p.a)(t);
 					const E = await ((e, t, s, n) => Object(d.a)(Object(l.a)(e, [c.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
 						method: i.eb.POST,
@@ -3027,25 +3029,25 @@
 							note: n,
 							type: "muted"
 						}
-					}))(p(), f, t, s);
+					}))(u(), f, t, s);
 					if (E.ok) {
 						const e = {
 							username: t
 						};
-						a(Object(b.f)({
-							kind: h.b.SuccessMod,
+						a(Object(g.f)({
+							kind: b.b.SuccessMod,
 							text: n.fbt._("Successfully muted a user", null, {
 								hk: "2ypyuL"
 							})
 						}));
-						const s = await u(p(), x, e);
-						s.ok && a(O(s.body))
+						const s = await m(u(), x, e);
+						s.ok && a(S(s.body))
 					} else {
 						const e = r()(E, "body.json.errors[0][1]", n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
-						a(Object(b.f)({
-							kind: h.b.Error,
+						a(Object(g.f)({
+							kind: b.b.Error,
 							text: e,
 							duration: 3e3
 						}))
@@ -24854,4 +24856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e29a44769754eba96ba6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.72583d6208867a267141.js.map

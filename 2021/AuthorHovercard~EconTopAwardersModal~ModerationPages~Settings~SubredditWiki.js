@@ -1,19 +1,19 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.7a2c85f78d867c947d22.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.b03fa2701a1171f3d16a.js
+// Retrieved at 5/26/2021, 12:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return V
+				return $
 			})), r.d(t, "d", (function() {
-				return re
+				return ne
 			})), r.d(t, "b", (function() {
-				return ae
-			})), r.d(t, "e", (function() {
 				return oe
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "e", (function() {
 				return ie
+			})), r.d(t, "a", (function() {
+				return de
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -29,52 +29,53 @@
 				p = r("./src/lib/makeApiRequest/index.ts"),
 				b = r("./src/lib/omitHeaders/index.ts"),
 				v = r("./src/reddit/constants/headers.ts"),
-				f = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const x = (e, t, r) => Object(p.a)(Object(b.a)(e, [v.a]), {
-				endpoint: Object(f.a)(`${e.apiUrl}/api/v1/${t}/banned`),
+				f = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				x = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const h = (e, t, r) => Object(p.a)(Object(b.a)(e, [v.a]), {
+				endpoint: Object(f.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
 				method: m.eb.GET,
 				data: r
 			});
-			var h = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				I = r("./src/reddit/models/SubredditModeration/index.ts"),
-				g = r("./src/reddit/models/Toast/index.ts"),
-				C = r("./src/reddit/selectors/activeModalId.ts"),
-				_ = r("./src/reddit/selectors/bannedUser.ts"),
-				E = r("./src/reddit/selectors/subreddit.ts"),
-				w = r("./src/reddit/selectors/user.ts"),
-				j = r("./src/reddit/actions/subredditModeration/constants.ts"),
-				O = r("./src/lib/initializeClient/installReducer.ts"),
-				y = r("./node_modules/redux/es/redux.js");
-			var N = (e = null, t) => {
+			var I = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
+				g = r("./src/reddit/models/SubredditModeration/index.ts"),
+				C = r("./src/reddit/models/Toast/index.ts"),
+				_ = r("./src/reddit/selectors/activeModalId.ts"),
+				E = r("./src/reddit/selectors/bannedUser.ts"),
+				w = r("./src/reddit/selectors/subreddit.ts"),
+				j = r("./src/reddit/selectors/user.ts"),
+				O = r("./src/reddit/actions/subredditModeration/constants.ts"),
+				y = r("./src/lib/initializeClient/installReducer.ts"),
+				N = r("./node_modules/redux/es/redux.js");
+			var L = (e = null, t) => {
 				switch (t.type) {
-					case j.o:
-					case j.n:
+					case O.o:
+					case O.n:
 						return null;
-					case j.m:
+					case O.m:
 						return t.payload;
 					default:
 						return e
 				}
 			};
-			const L = {};
-			var P = (e = L, t) => {
+			const P = {};
+			var U = (e = P, t) => {
 					switch (t.type) {
-						case j.o: {
+						case O.o: {
 							const {
 								subredditId: r,
 								fetchedToken: n
-							} = t.payload, s = Object(I.d)(r, n);
+							} = t.payload, s = Object(g.d)(r, n);
 							return {
 								...e,
 								[s]: !0
 							}
 						}
-						case j.n:
-						case j.m: {
+						case O.n:
+						case O.m: {
 							const {
 								subredditId: r,
 								fetchedToken: n
-							} = t.payload, s = Object(I.d)(r, n);
+							} = t.payload, s = Object(g.d)(r, n);
 							return {
 								...e,
 								[s]: !1
@@ -84,18 +85,18 @@
 							return e
 					}
 				},
-				U = Object(y.c)({
-					error: N,
-					pending: P
+				k = Object(N.c)({
+					error: L,
+					pending: U
 				});
-			const k = {};
-			var S = (e = k, t) => {
+			const S = {};
+			var B = (e = S, t) => {
 					switch (t.type) {
-						case j.n: {
+						case O.n: {
 							const {
 								fetchedToken: r,
 								subredditId: n
-							} = t.payload, s = Object(I.d)(n, r);
+							} = t.payload, s = Object(g.d)(n, r);
 							return {
 								...e,
 								[s]: !0
@@ -105,19 +106,19 @@
 							return e
 					}
 				},
-				B = r("./src/reddit/actions/inContextModeration.ts");
-			var A = (e = null, t) => {
+				A = r("./src/reddit/actions/inContextModeration.ts");
+			var M = (e = null, t) => {
 				switch (t.type) {
-					case B.a:
+					case A.a:
 						return t.payload;
 					default:
 						return e
 				}
 			};
-			const M = {};
-			var H = (e = M, t) => {
+			const H = {};
+			var T = (e = H, t) => {
 					switch (t.type) {
-						case j.n: {
+						case O.n: {
 							const {
 								subredditId: e,
 								after: r
@@ -130,63 +131,63 @@
 							return e
 					}
 				},
-				T = r("./node_modules/icepick/icepick.js");
-			const F = {};
-			var K = (e = F, t) => {
+				F = r("./node_modules/icepick/icepick.js");
+			const K = {};
+			var R = (e = K, t) => {
 				switch (t.type) {
-					case j.l:
-					case j.n: {
+					case O.l:
+					case O.n: {
 						const {
 							subredditId: r,
 							bannedUsers: n
 						} = t.payload;
-						return Object(T.merge)(e, {
+						return Object(F.merge)(e, {
 							[r]: n
 						})
 					}
-					case j.s: {
+					case O.s: {
 						const {
 							subredditId: r,
 							userId: n
 						} = t.payload;
-						return Object(T.unsetIn)(e, [r, n])
+						return Object(F.unsetIn)(e, [r, n])
 					}
 					default:
 						return e
 				}
 			};
-			var R = (e = null, t) => {
+			var D = (e = null, t) => {
 				switch (t.type) {
-					case j.r:
-					case j.q:
+					case O.r:
+					case O.q:
 						return null;
-					case j.p:
+					case O.p:
 						return t.payload;
 					default:
 						return e
 				}
 			};
-			var D = (e = !1, t) => {
+			var Z = (e = !1, t) => {
 					switch (t.type) {
-						case j.r:
+						case O.r:
 							return !0;
-						case j.q:
-						case j.p:
+						case O.q:
+						case O.p:
 							return !1;
 						default:
 							return e
 					}
 				},
-				Z = Object(y.c)({
-					error: R,
-					pending: D
+				q = Object(N.c)({
+					error: D,
+					pending: Z
 				});
-			var q = (e = null, t) => {
+			var W = (e = null, t) => {
 					switch (t.type) {
-						case j.r:
-						case j.p:
+						case O.r:
+						case O.p:
 							return null;
-						case j.q: {
+						case O.q: {
 							const e = t.payload.bannedUserIds[0];
 							return e ? t.payload.bannedUsers[e] : null
 						}
@@ -194,14 +195,14 @@
 							return e
 					}
 				},
-				W = Object(y.c)({
-					api: Z,
-					result: q
+				Y = Object(N.c)({
+					api: q,
+					result: W
 				});
-			const Y = {};
-			var z = (e = Y, t) => {
+			const z = {};
+			var J = (e = z, t) => {
 					switch (t.type) {
-						case j.n: {
+						case O.n: {
 							const {
 								subredditId: r,
 								bannedUserIds: n
@@ -214,7 +215,7 @@
 								[r]: n
 							}
 						}
-						case j.s: {
+						case O.s: {
 							const {
 								subredditId: r,
 								userId: n
@@ -223,7 +224,7 @@
 								[r]: e[r].filter(e => e !== n)
 							}
 						}
-						case j.l: {
+						case O.l: {
 							const {
 								subredditId: r,
 								bannedUserIds: n
@@ -236,62 +237,62 @@
 							return e
 					}
 				},
-				J = Object(y.c)({
-					api: U,
-					fetchedTokens: S,
-					inContext: A,
-					loadMore: H,
-					models: K,
-					search: W,
-					userOrder: z
+				G = Object(N.c)({
+					api: k,
+					fetchedTokens: B,
+					inContext: M,
+					loadMore: T,
+					models: R,
+					search: Y,
+					userOrder: J
 				});
-			Object(O.a)({
+			Object(y.a)({
 				features: {
-					banned: J
+					banned: G
 				}
 			});
-			const G = Object(o.a)(j.o),
-				Q = Object(o.a)(j.n),
-				X = Object(o.a)(j.m),
-				V = (e, t = {}) => async (r, n, {
+			const Q = Object(o.a)(O.o),
+				X = Object(o.a)(O.n),
+				V = Object(o.a)(O.m),
+				$ = (e, t = {}) => async (r, n, {
 					apiContext: s
 				}) => {
 					const a = n(),
 						o = t.after || "",
-						i = Object(I.d)(e, o),
+						i = Object(g.d)(e, o),
 						d = a.features.banned.fetchedTokens[i];
 					if (a.features.banned.api.pending[i] || d) return;
-					r(G({
+					r(Q({
 						subredditId: e,
 						fetchedToken: o
 					}));
 					const c = a.subreddits.models[e].name,
-						l = await x(s(), c, t);
-					l.ok ? r(Q({
+						l = await h(s(), c, t);
+					l.ok ? r(X({
 						...l.body,
 						fetchedToken: o
-					})) : r(X({
+					})) : r(V({
 						subredditId: e,
 						fetchedToken: o
 					}))
-				}, $ = Object(o.a)(j.r), ee = Object(o.a)(j.q), te = Object(o.a)(j.p), re = (e, t) => async (r, n, {
+				}, ee = Object(o.a)(O.r), te = Object(o.a)(O.q), re = Object(o.a)(O.p), ne = (e, t) => async (r, n, {
 					apiContext: s
 				}) => {
 					const a = n().subreddits.models[e].name,
 						o = {
-							username: Object(h.a)(t)
+							username: Object(I.a)(t)
 						};
-					r($());
-					const i = await x(s(), a, o);
-					i.ok ? r(ee(i.body)) : r(te(i.error))
-				}, ne = Object(o.a)(j.l), se = Object(o.a)(j.s), ae = (e, t, r) => async (s, o, {
+					r(ee());
+					const i = await h(s(), a, o);
+					i.ok ? r(te(i.body)) : r(re(i.error))
+				}, se = Object(o.a)(O.l), ae = Object(o.a)(O.s), oe = (e, t, r) => async (s, o, {
 					apiContext: d
 				}) => {
 					const c = o(),
 						u = c.subreddits.models[e].url,
 						f = c.subreddits.models[e].name;
-					t.username = Object(h.a)(t.username), s(Object(i.h)(r));
-					const I = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [v.a]), {
+					t.username = Object(I.a)(t.username), s(Object(i.h)(r));
+					const x = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [v.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
 						method: m.eb.POST,
 						data: {
@@ -305,31 +306,31 @@
 							type: "banned"
 						}
 					}))(d(), u, t);
-					if (I.ok) {
+					if (x.ok) {
 						s(Object(i.e)(r));
 						const e = {
 							username: t.username
 						};
 						s(Object(l.f)({
-							kind: g.b.SuccessMod,
+							kind: C.b.SuccessMod,
 							text: n.fbt._("Successfully banned a user", null, {
 								hk: "1kORpS"
 							})
 						}));
-						const a = await x(d(), f, e);
-						a.ok && s(ne(a.body))
+						const a = await h(d(), f, e);
+						a.ok && s(se(a.body))
 					} else {
-						s(Object(i.f)(r, I.error));
-						const e = a()(I, "body.json.errors[0][1]", n.fbt._("Something went wrong", null, {
+						s(Object(i.f)(r, x.error));
+						const e = a()(x, "body.json.errors[0][1]", n.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
 						s(Object(l.f)({
-							kind: g.b.Error,
+							kind: C.b.Error,
 							text: e,
 							duration: 3e3
 						}))
 					}
-				}, oe = (e, t) => async (r, s, {
+				}, ie = (e, t) => async (r, s, {
 					apiContext: o
 				}) => {
 					const i = s().subreddits.models[e].url,
@@ -342,11 +343,11 @@
 								type: "banned"
 							}
 						}))(o(), i, t);
-					if (d.ok) r(se({
+					if (d.ok) r(ae({
 						subredditId: e,
 						userId: t
 					})), r(Object(l.f)({
-						kind: g.b.SuccessMod,
+						kind: C.b.SuccessMod,
 						text: n.fbt._("Successfully unbanned a user", null, {
 							hk: "OgqK6"
 						})
@@ -356,31 +357,31 @@
 							hk: "1IJNeH"
 						}));
 						r(Object(l.f)({
-							kind: g.b.Error,
+							kind: C.b.Error,
 							text: e,
 							duration: 3e3
 						}))
 					}
-				}, ie = (e, t) => async (r, n) => {
+				}, de = (e, t) => async (r, n) => {
 					const s = n();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.R)(s, {
+						if (!Object(_.b)(u.a.BAN_USER)(s) && !Object(w.R)(s, {
 								subredditId: e
 							})) {
-							const t = Object(E.U)(s, {
+							const t = Object(w.U)(s, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(w.mb)(s, {
+						const n = Object(j.mb)(s, {
 							userName: t
 						});
 						if (!n) return;
-						const a = Object(_.h)(s, {
+						const a = Object(E.h)(s, {
 							subredditId: e
 						});
-						a && a[n.id] || await r(V(e, {
+						a && a[n.id] || await r($(e, {
 							username: t
 						}))
 					})()]), r(Object(d.i)(u.a.BAN_USER))
@@ -2327,4 +2328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.7a2c85f78d867c947d22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.b03fa2701a1171f3d16a.js.map
