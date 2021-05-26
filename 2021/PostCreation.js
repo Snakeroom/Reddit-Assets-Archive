@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4cfb96e9d96fc6a814c2.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4307e8f895ea403ffdba.js
+// Retrieved at 5/26/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -4353,12 +4353,6 @@
 				decisionThresholdExplanation: "_1GSbrVpv76_yXM2VcUM3zK"
 			}
 		},
-		"./src/reddit/components/Governance/PostPollMetaData/index.m.less": function(e, t, n) {
-			e.exports = {
-				proposalMetaData: "_2uZcUQgumllsYgn5TxSizG",
-				proposalMetaDataTime: "_1u5ghYiKbGasP3ORCsbasV"
-			}
-		},
 		"./src/reddit/components/Governance/ProposalTemplates/Generic/index.m.less": function(e, t, n) {
 			e.exports = {
 				hintText: "_1iTDa11Wj-8Ogp0kHlXhus",
@@ -4995,7 +4989,7 @@
 				}, e.children))
 			})
 		},
-		"./src/reddit/components/Poll/MetaData/index.tsx": function(e, t, n) {
+		"./src/reddit/components/Poll/PollExpiry/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
 				return c
@@ -5013,6 +5007,12 @@
 				}, t ? o.fbt._("Voting closed {timeAgo}", [o.fbt._param("timeAgo", Object(s.d)(e.poll.endsAt / 1e3))], {
 					hk: "3OERID"
 				}) : Object(r.a)(new Date(e.poll.endsAt)))
+			}
+		},
+		"./src/reddit/components/Poll/PostTitleMetaData/index.m.less": function(e, t, n) {
+			e.exports = {
+				proposalMetaData: "_3yYOHq_rWQcgaR_pinEQU7",
+				proposalExpiry: "_1poH87fXNrjNu84jKXBtun"
 			}
 		},
 		"./src/reddit/components/PollCreator/DefaultHintText/index.m.less": function(e, t, n) {
@@ -7178,8 +7178,8 @@
 				P = n("./src/reddit/components/FlairWrapper/index.tsx"),
 				N = n("./node_modules/fbt/lib/FbtPublic.js"),
 				M = n("./src/lib/prettyPrintNumber/index.ts"),
-				D = n("./src/reddit/components/Poll/MetaData/index.tsx"),
-				R = n("./src/reddit/components/Governance/PostPollMetaData/index.m.less"),
+				D = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
+				R = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
 				L = n.n(R);
 			const F = Object(c.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
@@ -7198,7 +7198,7 @@
 					}, [N.fbt._param("count", Object(M.a)(o)), N.fbt._plural(parseInt(o))], {
 						hk: "4rP1VK"
 					})), t && r.a.createElement(D.a, {
-						className: L.a.proposalMetaDataTime,
+						className: L.a.proposalExpiry,
 						poll: t
 					}))
 				})),
@@ -22238,4 +22238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4cfb96e9d96fc6a814c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4307e8f895ea403ffdba.js.map

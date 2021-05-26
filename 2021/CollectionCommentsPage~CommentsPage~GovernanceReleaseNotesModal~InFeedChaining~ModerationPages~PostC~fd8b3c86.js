@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.72f6a08e84d6510b27ca.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.12220bfe0748db9320d8.js
+// Retrieved at 5/26/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -306,30 +306,6 @@
 				},
 				resolve() {
 					return "./src/reddit/components/Econ/Prediction/index.tsx"
-				}
-			})
-		},
-		"./src/reddit/components/Governance/Proposal/async.ts": function(e, t, s) {
-			"use strict";
-			var i = s("./node_modules/@loadable/component/dist/loadable.esm.js");
-			t.a = Object(i.a)({
-				resolved: {},
-				chunkName: () => "reddit-components-Governance-Proposal",
-				isReady(e) {
-					const t = this.resolve(e);
-					return !1 !== this.resolved[t] && !!s.m[t]
-				},
-				importAsync: () => s.e("reddit-components-Governance-Proposal").then(s.bind(null, "./src/reddit/components/Governance/Proposal/index.tsx")),
-				requireAsync(e) {
-					const t = this.resolve(e);
-					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-				},
-				requireSync(e) {
-					const t = this.resolve(e);
-					return s(t)
-				},
-				resolve() {
-					return "./src/reddit/components/Governance/Proposal/index.tsx"
 				}
 			})
 		},
@@ -737,7 +713,7 @@
 				r = s("./src/reddit/models/Poll/index.ts"),
 				d = s("./src/reddit/selectors/poll/index.ts"),
 				l = s("./src/reddit/components/Econ/Prediction/async.ts"),
-				c = s("./src/reddit/components/Governance/Proposal/async.ts");
+				c = s("./src/reddit/components/Poll/async.ts");
 			const u = Object(a.c)({
 				poll: d.e
 			});
@@ -1709,6 +1685,30 @@
 			}
 			t.a = fe(ve(Object(b.a)(we)))
 		},
+		"./src/reddit/components/Poll/async.ts": function(e, t, s) {
+			"use strict";
+			var i = s("./node_modules/@loadable/component/dist/loadable.esm.js");
+			t.a = Object(i.a)({
+				resolved: {},
+				chunkName: () => "reddit-components-Poll",
+				isReady(e) {
+					const t = this.resolve(e);
+					return !1 !== this.resolved[t] && !!s.m[t]
+				},
+				importAsync: () => s.e("reddit-components-Poll").then(s.bind(null, "./src/reddit/components/Poll/index.tsx")),
+				requireAsync(e) {
+					const t = this.resolve(e);
+					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				},
+				requireSync(e) {
+					const t = this.resolve(e);
+					return s(t)
+				},
+				resolve() {
+					return "./src/reddit/components/Poll/index.tsx"
+				}
+			})
+		},
 		"./src/reddit/components/RawHTMLDisplay/Media.tsx": function(e, t, s) {
 			"use strict";
 			var i = s("./node_modules/react/index.js"),
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.72f6a08e84d6510b27ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.12220bfe0748db9320d8.js.map

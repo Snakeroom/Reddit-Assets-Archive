@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f3b28f6e78e70bd5e528.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.6eb09c385592f92760e6.js
+// Retrieved at 5/26/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -3577,7 +3577,7 @@
 				d = o("./node_modules/react-router-redux/es/index.js"),
 				l = o("./node_modules/reselect/es/index.js"),
 				u = o("./src/lib/classNames/index.ts"),
-				m = o("./src/reddit/components/Governance/Proposal/async.ts"),
+				m = o("./src/reddit/components/Poll/async.ts"),
 				p = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				h = o("./src/reddit/models/PostCreationForm/index.ts"),
 				b = o("./src/reddit/models/PostRequirements/index.ts"),
@@ -4646,4 +4646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f3b28f6e78e70bd5e528.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6eb09c385592f92760e6.js.map
