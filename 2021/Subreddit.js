@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2748093f342a5fe2b878.js
-// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4239a466ab17153f32ca.js
+// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -1806,7 +1806,7 @@
 						backgroundClassName: b.a.snoovatarBackground,
 						className: Object(o.a)(b.a.snoovatar, t),
 						headshot: u
-					}) : r.a.createElement(c.a, {
+					}) : r.a.createElement(c.b, {
 						key: x,
 						className: Object(o.a)(b.a.userIcon, t),
 						iconUrl: u,
@@ -2647,7 +2647,7 @@
 					className: e,
 					layout: t
 				}),
-				getComponent: () => Promise.all([n.e("vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"), n.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), n.e("RpanListingUnit")]).then(n.bind(null, "./src/reddit/components/PublicAccessNetwork/ListingUnit/index.tsx")).then(e => e.default)
+				getComponent: () => Promise.all([n.e("vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"), n.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), n.e("LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"), n.e("RpanListingUnit")]).then(n.bind(null, "./src/reddit/components/PublicAccessNetwork/ListingUnit/index.tsx")).then(e => e.default)
 			});
 			var y = e => r.a.createElement(E, e),
 				_ = n("./src/reddit/helpers/trackers/rpan.ts");
@@ -7324,4 +7324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2748093f342a5fe2b878.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4239a466ab17153f32ca.js.map

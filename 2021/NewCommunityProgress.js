@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.c78b62a6bbca0302bcf5.js
-// Retrieved at 5/25/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.370025e3f45a122a88f0.js
+// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/graphql/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -1543,17 +1543,21 @@
 						}
 					}, a.a.createElement(j.g, null), a.a.createElement("div", null, mC._("Close", null, {
 						hk: "4gbyAA"
-					}))), r.length > 0 && a.a.createElement("div", null, r.map(C => a.a.createElement(Y.q, {
-						key: C.buttonText,
-						className: c.a.button,
-						href: EC(C, f),
-						onClick: () => D(C),
-						style: l ? {
-							backgroundColor: w,
-							borderColor: w,
-							color: "white"
-						} : {}
-					}, C.buttonText)))))
+					}))), r.length > 0 && a.a.createElement("div", null, r.map(C => {
+						const e = EC(C, f);
+						return a.a.createElement(Y.q, {
+							kind: e ? Y.a.ExternalLink : void 0,
+							key: C.buttonText,
+							className: c.a.button,
+							href: e,
+							onClick: () => D(C),
+							style: l ? {
+								backgroundColor: w,
+								borderColor: w,
+								color: "white"
+							} : {}
+						}, C.buttonText)
+					}))))
 				}),
 				uC = t("./src/higherOrderComponents/asModal/index.tsx");
 			const {
@@ -2818,4 +2822,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.c78b62a6bbca0302bcf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.370025e3f45a122a88f0.js.map

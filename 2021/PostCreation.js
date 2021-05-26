@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e05777a030bce02b54d4.js
-// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a618e6d1a3aaf58b5ef3.js
+// Retrieved at 5/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -8155,7 +8155,7 @@
 				}, d ? r.a.createElement(u.a, {
 					headshot: t.accountIcon,
 					className: e.className
-				}) : r.a.createElement(m.a, b({}, i, {
+				}) : r.a.createElement(m.b, b({}, i, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -11133,7 +11133,7 @@
 					}
 				}),
 				_ = (e, t, n, a) => {
-					let i = Object(u.a)(Object(l.a)(`${o.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`));
+					let i = Object(c.a)(Object(u.a)(Object(l.a)(`${o.a.gatewayUrl}/desktopapi/v1/morecomments/${t}`)));
 					return a && (i = Object(d.a)(i)), Object(r.a)(e, {
 						data: n,
 						endpoint: i,
@@ -22238,4 +22238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e05777a030bce02b54d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a618e6d1a3aaf58b5ef3.js.map
