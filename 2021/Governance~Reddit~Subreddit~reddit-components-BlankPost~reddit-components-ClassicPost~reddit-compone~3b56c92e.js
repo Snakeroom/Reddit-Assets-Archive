@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.22522b6da0d7cdf1450c.js
-// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.c0161a30002596bbc05b.js
+// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/graphql/operations/BadgeIndicators.json": function(e) {
@@ -721,33 +721,33 @@
 		"./src/reddit/actions/pages/profilePosts.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "PROFILE_POSTS_PENDING", (function() {
-				return D
+				return y
 			})), s.d(t, "PROFILE_POSTS_LOADED", (function() {
-				return N
+				return D
 			})), s.d(t, "PROFILE_POSTS_FAILED", (function() {
-				return R
+				return N
 			})), s.d(t, "profilePostsPending", (function() {
-				return v
+				return R
 			})), s.d(t, "profilePostsLoaded", (function() {
-				return x
+				return v
 			})), s.d(t, "profilePostsFailed", (function() {
-				return w
+				return x
 			})), s.d(t, "profilePostsRequested", (function() {
-				return k
+				return w
 			})), s.d(t, "MORE_POSTS_PENDING", (function() {
-				return L
+				return k
 			})), s.d(t, "MORE_POSTS_LOADED", (function() {
-				return M
+				return L
 			})), s.d(t, "MORE_POSTS_FAILED", (function() {
-				return F
+				return M
 			})), s.d(t, "morePostsPending", (function() {
-				return G
+				return F
 			})), s.d(t, "morePostsLoaded", (function() {
-				return U
+				return G
 			})), s.d(t, "morePostsFailed", (function() {
-				return V
+				return U
 			})), s.d(t, "morePostsRequested", (function() {
-				return q
+				return V
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/lodash/pick.js"),
@@ -769,11 +769,10 @@
 				h = s("./src/lib/addAllowQuarantinedParam/index.ts"),
 				T = s("./src/lib/constants/index.ts"),
 				P = s("./src/lib/makeApiRequest/index.ts"),
-				g = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				j = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const C = (e, t, s) => Object(P.a)(e, {
+				g = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const j = (e, t, s) => Object(P.a)(e, {
 				data: s,
-				endpoint: Object(g.a)(Object(h.a)(Object(j.a)(`${E.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`))),
+				endpoint: Object(h.a)(Object(g.a)(`${E.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`)),
 				method: T.eb.GET
 			}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 				...e,
@@ -782,17 +781,17 @@
 					pinned: e.body.postIds.filter(t => e.body.posts[t] && e.body.posts[t].isPinned).reverse()
 				}
 			} : e);
-			var I = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				A = s("./src/reddit/helpers/timeApiRoute/index.ts"),
-				S = s("./src/reddit/selectors/listings.ts"),
-				y = s("./src/reddit/selectors/profile.ts");
-			const D = "PAGE__PROFILE_POSTS_PENDING",
-				N = "PAGE__PROFILE_POSTS_LOADED",
-				R = "PAGE__PROFILE_POSTS_FAILED",
+			var C = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				I = s("./src/reddit/helpers/timeApiRoute/index.ts"),
+				A = s("./src/reddit/selectors/listings.ts"),
+				S = s("./src/reddit/selectors/profile.ts");
+			const y = "PAGE__PROFILE_POSTS_PENDING",
+				D = "PAGE__PROFILE_POSTS_LOADED",
+				N = "PAGE__PROFILE_POSTS_FAILED",
+				R = Object(i.a)(y),
 				v = Object(i.a)(D),
 				x = Object(i.a)(N),
-				w = Object(i.a)(R),
-				k = e => async (t, s, n) => {
+				w = e => async (t, s, n) => {
 					const {
 						queryParams: i,
 						params: E
@@ -801,14 +800,14 @@
 						t: T
 					} = Object(u.b)(i), {
 						profileName: P
-					} = E, g = Object(o.a)(`u_${P}`, h, i), j = s(), D = j.listings.postOrder.ids[g], N = Object(S.c)(j, {
+					} = E, g = Object(o.a)(`u_${P}`, h, i), y = s(), D = y.listings.postOrder.ids[g], N = Object(A.c)(y, {
 						listingKey: g
-					}), R = Object(S.d)(j, {
+					}), w = Object(A.d)(y, {
 						listingKey: g
 					});
-					if (await t(m.d(P)), R || D && !N) {
+					if (await t(m.d(P)), w || D && !N) {
 						if (D) {
-							const e = Object(y.q)(s(), {
+							const e = Object(S.q)(s(), {
 								profileName: P
 							});
 							t(b.l({
@@ -819,15 +818,15 @@
 					}
 					const k = {
 						...r()(e.queryParams, [...f.l, ...f.k, f.h]),
-						layout: Object(_.O)(j, {}).toLowerCase(),
+						layout: Object(_.O)(y, {}).toLowerCase(),
 						sort: h,
-						t: Object(I.a)(h, T)
+						t: Object(C.a)(h, T)
 					};
-					t(v({
+					t(R({
 						key: g
 					}));
-					const L = await Object(A.a)("profilePosts", () => C(n.apiContext(), P, k));
-					if (!L.ok) return t(w({
+					const L = await Object(I.a)("profilePosts", () => j(n.apiContext(), P, k));
+					if (!L.ok) return t(x({
 						account: L.body.data ? L.body.data.account : null,
 						error: L.body.reason ? {
 							type: L.body.reason
@@ -837,12 +836,12 @@
 						profileName: P
 					})), void t(b.m(L.status));
 					const M = L.body;
-					t(x({
+					t(v({
 						key: g,
 						meta: s().meta,
 						...M
 					}));
-					const F = Object(y.m)(s(), P),
+					const F = Object(S.m)(s(), P),
 						{
 							pinned: G
 						} = M;
@@ -850,7 +849,7 @@
 						profileId: F,
 						pinned: G
 					})), await Promise.all([t(Object(u.c)(P)), t(Object(p.q)()), t(Object(c.b)()), t(a.o(P))])
-				}, L = "PROFILE_POSTS__MORE_POSTS_PENDING", M = "PROFILE_POSTS__MORE_POSTS_LOADED", F = "PROFILE_POSTS__MORE_POSTS_FAILED", G = Object(i.a)(L), U = Object(i.a)(M), V = Object(i.a)(F), q = () => async (e, t, {
+				}, k = "PROFILE_POSTS__MORE_POSTS_PENDING", L = "PROFILE_POSTS__MORE_POSTS_LOADED", M = "PROFILE_POSTS__MORE_POSTS_FAILED", F = Object(i.a)(k), G = Object(i.a)(L), U = Object(i.a)(M), V = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const n = t(),
@@ -866,19 +865,19 @@
 						t: l
 					} = Object(u.b)(d), {
 						profileName: b
-					} = a, m = Object(o.a)(`u_${b}`, c, d), p = Object(S.g)(n, {
+					} = a, m = Object(o.a)(`u_${b}`, c, d), p = Object(A.g)(n, {
 						listingKey: m
 					});
 					if (!p) return;
-					const O = Object(S.d)(n, {
+					const O = Object(A.d)(n, {
 							listingKey: m
 						}),
-						E = Object(S.e)(n, {
+						E = Object(A.e)(n, {
 							listingKey: m,
 							token: p.token
 						});
 					if (O || E) return;
-					e(G({
+					e(F({
 						key: m,
 						fetchedToken: p.token
 					}));
@@ -890,19 +889,19 @@
 							...r()(d, f.l),
 							layout: Object(_.O)(n, {}).toLowerCase()
 						},
-						T = await C(s(), b, h),
+						T = await j(s(), b, h),
 						P = n.listings.postOrder.ids[m],
 						g = T.body.postIds || [],
-						j = {
+						C = {
 							...T.body,
 							postIds: g.filter(e => !P || !P.includes(e))
 						};
-					T.ok ? (e(U({
+					T.ok ? (e(G({
 						fetchedToken: p.token,
 						key: m,
 						meta: n.meta,
-						...j
-					})), await e(Object(u.c)(b))) : e(V({
+						...C
+					})), await e(Object(u.c)(b))) : e(U({
 						account: T.body.data ? T.body.data.account : null,
 						error: T.error,
 						fetchedToken: p.token,
@@ -2280,14 +2279,13 @@
 		"./src/reddit/endpoints/me/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return o
 			}));
 			var n = s("./src/config.ts"),
 				r = s("./src/lib/constants/index.ts"),
-				i = s("./src/lib/makeApiRequest/index.ts"),
-				o = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const d = e => Object(i.a)(e, {
-				endpoint: Object(o.a)(`${n.a.gatewayUrl}/desktopapi/v1/me`),
+				i = s("./src/lib/makeApiRequest/index.ts");
+			const o = e => Object(i.a)(e, {
+				endpoint: `${n.a.gatewayUrl}/desktopapi/v1/me`,
 				method: r.eb.GET
 			})
 		},
@@ -3061,4 +3059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.22522b6da0d7cdf1450c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.c0161a30002596bbc05b.js.map

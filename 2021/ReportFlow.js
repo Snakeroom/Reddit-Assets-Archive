@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.2b8450665e0251f89981.js
-// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.cf85397f65bfae066327.js
+// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -2441,29 +2441,28 @@
 		"./src/reddit/endpoints/accounts/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return l
 			})), n.d(t, "c", (function() {
-				return c
+				return d
 			})), n.d(t, "e", (function() {
-				return u
+				return c
 			})), n.d(t, "d", (function() {
-				return p
+				return u
 			})), n.d(t, "b", (function() {
-				return m
+				return p
 			}));
 			var o = n("./src/config.ts"),
 				s = n("./src/lib/constants/index.ts"),
 				r = n("./src/lib/makeApiRequest/index.ts"),
 				a = n("./src/lib/omitHeaders/index.ts"),
-				i = n("./src/reddit/constants/headers.ts"),
-				l = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const d = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
+				i = n("./src/reddit/constants/headers.ts");
+			const l = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
 				method: s.eb.POST
-			}), c = async (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
+			}), d = async (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: n,
 					container: t,
@@ -2471,20 +2470,20 @@
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
 				method: s.eb.POST
-			}), u = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
+			}), c = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
 				method: s.eb.POST
-			}), p = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
+			}), u = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
 				method: s.eb.POST
-			}), m = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
-				endpoint: Object(l.a)(`${o.a.oauthUrl}/user/${t}/about`),
+			}), p = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
+				endpoint: `${o.a.oauthUrl}/user/${t}/about`,
 				method: s.eb.GET,
 				data: {
 					raw_json: 1
@@ -2810,4 +2809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.2b8450665e0251f89981.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.cf85397f65bfae066327.js.map

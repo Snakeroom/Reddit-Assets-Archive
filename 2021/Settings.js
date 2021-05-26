@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.785063df7e7a0084b9bc.js
-// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.668b9e8ce3221ed3b000.js
+// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -10042,7 +10042,7 @@
 						title: w
 					} = this.state, k = Object(u.a)({
 						[ao.a["m-responsive"]]: l
-					}), O = !!h && !Object(eo.c)(h);
+					}), O = !!h && !Object(eo.b)(h);
 					return r.a.createElement(pe.a, {
 						sidebar: r.a.createElement(Eo, {
 							bannerBackgroundImage: b,
@@ -11378,4 +11378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.785063df7e7a0084b9bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.668b9e8ce3221ed3b000.js.map

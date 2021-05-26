@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a975d18c5c902bed9465.js
-// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d095514f048accbf7153.js
+// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -423,9 +423,7 @@
 		},
 		"./src/reddit/components/UserIcon/UserIcon.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "a", (function() {
-				return u
-			})), r.d(t, "c", (function() {
+			r.d(t, "b", (function() {
 				return f
 			}));
 			var i = r("./src/config.ts"),
@@ -438,7 +436,7 @@
 				d = r.n(a);
 			const u = `${i.a.assetPath}/img/avatar_over18_square.png`,
 				f = e => !e || e.includes("avatar_default_");
-			t.b = e => {
+			t.a = e => {
 				const {
 					className: t,
 					iconUrl: r,
@@ -510,7 +508,7 @@
 				} = e, O = !!t && Object(a.e)(t) === _, y = O ? t : p, I = y && y.accountIcon || r, w = p ? p.isNSFW : s, x = Object(l.a)(I), k = x ? n.a.createElement(u.a, {
 					headshot: I,
 					className: e.className
-				}) : n.a.createElement(f.b, b({}, v, {
+				}) : n.a.createElement(f.a, b({}, v, {
 					iconUrl: I,
 					isCurrentUser: O,
 					isNSFW: w
@@ -3033,4 +3031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a975d18c5c902bed9465.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d095514f048accbf7153.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.86bdcc5b437393080c3e.js
-// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.c746910006b9c79d9688.js
+// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -2266,20 +2266,19 @@
 		"./src/reddit/endpoints/page/profileOverviewPage.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return l
+				return c
 			})), s.d(t, "a", (function() {
-				return m
+				return l
 			}));
 			var o = s("./src/config.ts"),
 				r = s("./src/lib/addAllowQuarantinedParam/index.ts"),
 				n = s("./src/lib/constants/index.ts"),
 				i = s("./src/lib/makeApiRequest/index.ts"),
-				a = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				d = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				c = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const l = (e, t, s) => Object(i.a)(e, {
+				a = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				d = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const c = (e, t, s) => Object(i.a)(e, {
 					data: s,
-					endpoint: Object(a.a)(Object(r.a)(Object(d.a)(Object(c.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
+					endpoint: Object(r.a)(Object(a.a)(Object(d.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`))),
 					traceRequestName: "get_profile_conversations",
 					method: n.eb.GET
 				}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
@@ -2289,9 +2288,9 @@
 						pinned: e.body.postIds.filter(t => e.body.posts[t] && e.body.posts[t].isPinned).reverse()
 					}
 				} : e),
-				m = (e, t, s) => Object(i.a)(e, {
+				l = (e, t, s) => Object(i.a)(e, {
 					data: s,
-					endpoint: Object(a.a)(Object(r.a)(Object(c.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/overview`))),
+					endpoint: Object(r.a)(Object(d.a)(`${o.a.gatewayUrl}/desktopapi/v1/user/${t}/overview`)),
 					method: n.eb.GET
 				}).then(e => "pinned" in e.body ? e : "overviewIds" in e.body ? {
 					...e,
@@ -3489,4 +3488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.86bdcc5b437393080c3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.c746910006b9c79d9688.js.map

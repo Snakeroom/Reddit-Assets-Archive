@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7ee877df2046d3903533.js
-// Retrieved at 5/26/2021, 7:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3940775deb0d20bed93c.js
+// Retrieved at 5/26/2021, 7:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -1075,7 +1075,7 @@
 						backgroundClassName: f.a.snoovatarBackground,
 						className: Object(s.a)(f.a.snoovatar, t),
 						headshot: u
-					}) : o.a.createElement(c.b, {
+					}) : o.a.createElement(c.a, {
 						key: g,
 						className: Object(s.a)(f.a.userIcon, t),
 						iconUrl: u,
@@ -1506,4 +1506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7ee877df2046d3903533.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.3940775deb0d20bed93c.js.map
