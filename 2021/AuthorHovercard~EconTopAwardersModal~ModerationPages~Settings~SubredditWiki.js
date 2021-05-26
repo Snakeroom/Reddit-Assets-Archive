@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a3a2790a5aff557006da.js
-// Retrieved at 5/26/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.b0139371ccbfcf4a011a.js
+// Retrieved at 5/26/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
@@ -1303,6 +1303,7 @@
 			}) {
 				return s.a.createElement(o.q, {
 					onClick: n,
+					isFullWidth: !0,
 					className: Object(a.a)(l.a.snoovatarButton, {
 						[l.a.snoovatarExtraPadding]: !t && r,
 						[l.a.compactButtonLayout]: e
@@ -2274,4 +2275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.a3a2790a5aff557006da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~EconTopAwardersModal~ModerationPages~Settings~SubredditWiki.b0139371ccbfcf4a011a.js.map
