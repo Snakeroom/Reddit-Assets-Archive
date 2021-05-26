@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.d51d9ee72d3cecc71f5c.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.a5d4b11188afb5103f49.js
+// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -112,7 +112,7 @@
 			})), r.d(t, "h", (function() {
 				return F
 			})), r.d(t, "i", (function() {
-				return D
+				return G
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -389,7 +389,7 @@
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, F = Object(m.a)(f.V), D = Object(m.a)(f.Z)
+				}, F = Object(m.a)(f.V), G = Object(m.a)(f.Z)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -1601,8 +1601,8 @@
 				U = r("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
 				L = r("./src/reddit/controls/Button/index.tsx"),
 				F = r("./src/lib/classNames/index.ts"),
-				D = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
-				G = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				G = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
+				D = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				J = r("./src/reddit/hooks/useTracking.ts"),
 				z = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
 				W = r.n(z);
@@ -1673,7 +1673,7 @@
 				}) => {
 					const t = Object(s.e)(h.i),
 						r = Object(J.a)();
-					if (!(null == t ? void 0 : t.length)) return c.a.createElement("div", null, c.a.createElement(G.a, {
+					if (!(null == t ? void 0 : t.length)) return c.a.createElement("div", null, c.a.createElement(D.a, {
 						sizePx: 80
 					}));
 					const {
@@ -1723,7 +1723,7 @@
 							isNew: a,
 							telemetryTag: o
 						} = e;
-						return c.a.createElement(D.a, {
+						return c.a.createElement(G.a, {
 							className: W.a.benefit,
 							description: Y[t](u),
 							iconUrl: `${n.a.assetPath}/img/gold/premium-marketing/benefits-icons/${t}.png`,
@@ -2026,7 +2026,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Ib)
+			const o = Object(a.a)(n.Gb)
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -2094,4 +2094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.d51d9ee72d3cecc71f5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.a5d4b11188afb5103f49.js.map

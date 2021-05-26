@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.ea0fe39a571ede6abd45.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.cabed823abb476624d08.js
+// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -1330,7 +1330,7 @@
 			s.d(e, "b", (function() {
 				return v
 			})), s.d(e, "a", (function() {
-				return X
+				return $
 			}));
 			var n = s("./node_modules/polished/dist/polished.es.js"),
 				r = s("./node_modules/react/index.js"),
@@ -1431,7 +1431,7 @@
 			}! function(t) {
 				t[t.ExtraLarge = 0] = "ExtraLarge", t[t.Large = 1] = "Large", t[t.Medium = 2] = "Medium", t[t.Small = 3] = "Small", t[t.ExtraSmall = 4] = "ExtraSmall"
 			}(v || (v = {}));
-			const X = ({
+			const $ = ({
 					size: t,
 					titleColor: e,
 					titleType: s,
@@ -1472,7 +1472,7 @@
 						type: s
 					}, r) : r)
 				},
-				$ = ({
+				X = ({
 					className: t,
 					disableVisited: e,
 					titleColor: s,
@@ -1508,7 +1508,7 @@
 						subreddit: s
 					} = t, {
 						isSponsored: n
-					} = e, r = Object(V.a)(), i = Object(H.a)(b.Tb) === b.Xb.Enabled;
+					} = e, r = Object(V.a)(), i = Object(H.a)(b.Rb) === b.Vb.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return o.a.createElement(J, {
 						nowrap: t.nowrap
 					}, o.a.createElement(et, t));
@@ -1533,7 +1533,7 @@
 								postId: t.id,
 								source: s
 							}, o.a.createElement(et, e)) : o.a.createElement(et, e)
-						})(e, t) : o.a.createElement($, {
+						})(e, t) : o.a.createElement(X, {
 							className: t.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: t.disableVisited,
@@ -1554,7 +1554,7 @@
 						return t.length >= 250 ? t.slice(0, 250 - "...".length) + "..." : t
 					})(r));
 					const i = t.isCommentsPage ? Y.a.PostComments : Y.a.PostItem;
-					return o.a.createElement(X, {
+					return o.a.createElement($, {
 						className: t.titleClassName,
 						nowrap: t.nowrap,
 						redditStyle: t.redditStyle || t.isCommentsPage,
@@ -2107,7 +2107,7 @@
 					action: "click",
 					noun: "overflow_menu"
 				}),
-				X = () => ({
+				$ = () => ({
 					id: "xd_focus_verticals",
 					unitType: d.f.Listing,
 					experiment: "",
@@ -2118,29 +2118,29 @@
 					surface: d.e.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				$ = (t, e, s) => b.actionInfo(t, {
+				X = (t, e, s) => b.actionInfo(t, {
 					position: s
 				}),
 				J = (t, e, s) => {
-					const n = X();
+					const n = $();
 					return t => ({
 						...f(t, n),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						subreddit: b.subredditById(t, e)
 					})
 				},
 				Z = (t, e, s) => {
-					const n = X();
+					const n = $();
 					return t => ({
 						...I(t, n, e),
-						actionInfo: $(t, 0, s)
+						actionInfo: X(t, 0, s)
 					})
 				},
 				tt = (t, e, s) => {
-					const r = X();
+					const r = $();
 					return t => ({
 						...p(t, r),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						subreddit: b.subredditById(t, e) || null,
 						source: m,
 						action: i.c.VIEW,
@@ -2148,10 +2148,10 @@
 					})
 				},
 				et = (t, e, s) => {
-					const r = X();
+					const r = $();
 					return t => ({
 						...p(t, r),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						post: b.post(t, e) || null,
 						source: m,
 						action: i.c.CLICK,
@@ -2159,10 +2159,10 @@
 					})
 				},
 				st = (t, e, s, r) => {
-					const o = X();
+					const o = $();
 					return t => ({
 						...p(t, o),
-						actionInfo: $(t, 0, r),
+						actionInfo: X(t, 0, r),
 						subreddit: b.subredditById(t, s) || null,
 						post: b.post(t, e) || null,
 						source: m,
@@ -2171,10 +2171,10 @@
 					})
 				},
 				nt = (t, e, s) => {
-					const r = X();
+					const r = $();
 					return t => ({
 						...p(t, r),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						subreddit: b.subredditById(t, e) || null,
 						source: m,
 						action: i.c.CLICK,
@@ -2182,10 +2182,10 @@
 					})
 				},
 				rt = (t, e, s, r) => {
-					const o = X();
+					const o = $();
 					return t => ({
 						...p(t, o),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						subreddit: b.subredditById(t, e) || null,
 						post: r ? b.post(t, r) : null,
 						source: m,
@@ -2194,10 +2194,10 @@
 					})
 				},
 				ot = (t, e, s, r) => {
-					const o = X();
+					const o = $();
 					return t => ({
 						...p(t, o),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						subreddit: b.subredditById(t, e) || null,
 						post: r ? b.post(t, r) : null,
 						source: m,
@@ -2206,10 +2206,10 @@
 					})
 				},
 				it = (t, e, s) => {
-					const r = X();
+					const r = $();
 					return t => ({
 						...p(t, r),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						subreddit: b.subredditById(t, e) || null,
 						source: m,
 						action: i.c.CLICK,
@@ -2217,10 +2217,10 @@
 					})
 				},
 				ct = (t, e, s) => {
-					const r = X();
+					const r = $();
 					return t => ({
 						...p(t, r),
-						actionInfo: $(t, 0, s),
+						actionInfo: X(t, 0, s),
 						subreddit: b.subredditById(t, e) || null,
 						source: m,
 						action: i.c.CLICK,
@@ -2735,4 +2735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.ea0fe39a571ede6abd45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.cabed823abb476624d08.js.map

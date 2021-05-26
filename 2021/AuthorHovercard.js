@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.95e14b84aa7b86052ec5.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.15e77cb572024f44f5d4.js
+// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -92,8 +92,8 @@
 				l = n("./src/reddit/actions/subscription/constants.ts"),
 				u = n("./src/reddit/actions/toaster.ts"),
 				f = n("./src/reddit/constants/posts.ts"),
-				p = n("./src/lib/makeApiRequest/index.ts"),
-				m = n("./src/lib/omitHeaders/index.ts"),
+				m = n("./src/lib/makeApiRequest/index.ts"),
+				p = n("./src/lib/omitHeaders/index.ts"),
 				b = n("./src/reddit/constants/headers.ts");
 			var h = n("./src/graphql/operations/SubscribedSubreddits.json"),
 				v = n("./src/lib/makeGqlRequest/index.ts"),
@@ -205,7 +205,7 @@
 							subredditIds: t,
 							subredditNames: n,
 							subscribe: i
-						}) => Object(p.a)(Object(m.a)(e, [b.a]), {
+						}) => Object(m.a)(Object(p.a)(e, [b.a]), {
 							method: s.eb.POST,
 							endpoint: Object(x.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
@@ -278,7 +278,7 @@
 						O = () => Object(w.hb)(n(), {
 							identifier: I
 						});
-					(O() || (await t(U([I], !0)), O())) && ((await ((e, t, n) => Object(p.a)(Object(m.a)(e, [b.a]), {
+					(O() || (await t(U([I], !0)), O())) && ((await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
@@ -312,7 +312,7 @@
 						makeFavorite: c,
 						multiredditPath: e,
 						multiredditsModelsState: r
-					})), (await ((e, t, n) => Object(p.a)(Object(m.a)(e, [b.a]), {
+					})), (await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
@@ -350,7 +350,7 @@
 						follow: l,
 						multiredditPath: e,
 						multiredditsModelsState: a
-					})), (await ((e, t, n) => Object(p.a)(Object(m.a)(e, [b.a]), {
+					})), (await ((e, t, n) => Object(m.a)(Object(p.a)(e, [b.a]), {
 						method: s.eb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
@@ -430,7 +430,7 @@
 				l = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = n("./src/reddit/helpers/trackers/authorHovercard.ts");
 			const f = e => Object(a.a)(e.id) ? e.belongsTo.id : e.subredditId;
-			class p extends s.a.Component {
+			class m extends s.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(Object(u.f)(this.props.postOrComment.id))
 				}
@@ -461,7 +461,7 @@
 					}))
 				}
 			}
-			t.default = Object(l.c)(p)
+			t.default = Object(l.c)(m)
 		},
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
@@ -480,8 +480,8 @@
 				l = n.n(d),
 				u = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
 				f = n("./src/reddit/components/ResizeSensor/index.tsx"),
-				p = n("./src/reddit/components/InboxTooltip/index.m.less"),
-				m = n.n(p);
+				m = n("./src/reddit/components/InboxTooltip/index.m.less"),
+				p = n.n(m);
 			const b = 3;
 			class h extends r.a.Component {
 				constructor() {
@@ -508,11 +508,11 @@
 						markNotificationAsRead: c,
 						notification: d,
 						setActiveOverflowMenuId: l,
-						onItemClick: p
+						onItemClick: m
 					} = this.props, h = o + 1 <= b;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						ref: this.ref,
-						className: m.a.notificationResizeWrapper
+						className: p.a.notificationResizeWrapper
 					}, r.a.createElement(u.a, {
 						activeOverflowMenuId: e,
 						disableNotificationUpdates: t,
@@ -523,7 +523,7 @@
 						markNotificationAsRead: c,
 						notification: d,
 						setActiveOverflowMenuId: l,
-						onItemClick: p,
+						onItemClick: m,
 						blockAwarder: s
 					}), !!h && r.a.createElement(f.a, {
 						onResize: this.handleResize
@@ -594,7 +594,7 @@
 						notifications: t
 					} = this.props, n = !(!t || !t.length), i = this.getContainerHeight();
 					return r.a.createElement("div", {
-						className: m.a.notificationList,
+						className: p.a.notificationList,
 						ref: this.container,
 						style: {
 							height: i,
@@ -618,7 +618,7 @@
 				}).apply(this, arguments)
 			}
 			const N = [],
-				A = a.a.div("StyledDropdown", m.a),
+				A = a.a.div("StyledDropdown", p.a),
 				T = ({
 					onMessagesClick: e,
 					onBarClick: t,
@@ -634,46 +634,46 @@
 							d(), t()
 						}, [d, t]);
 					return r.a.createElement("nav", {
-						className: m.a.topNav
+						className: p.a.topNav
 					}, r.a.createElement("span", {
-						className: m.a.topNavTitle
+						className: p.a.topNavTitle
 					}, i.fbt._("Notifications", null, {
 						hk: "1sYFjx"
 					})), r.a.createElement("span", {
-						className: m.a.topNavLinks
+						className: p.a.topNavLinks
 					}, r.a.createElement("span", {
-						className: m.a.messagesLinkContainer
+						className: p.a.messagesLinkContainer
 					}, r.a.createElement(j.a, {
-						className: Object(o.a)(m.a.messagesLink, {
-							[m.a.mActive]: l
+						className: Object(o.a)(p.a.messagesLink, {
+							[p.a.mActive]: l
 						}),
 						onClick: u,
 						to: l ? "/message/unread" : "/message/messages"
 					}, i.fbt._("Messages", null, {
 						hk: "hulKY"
 					})), r.a.createElement(c.a, {
-						className: m.a.badgeCount,
+						className: p.a.badgeCount,
 						isActive: l,
 						unreadCount: a
 					})), r.a.createElement("button", {
-						className: m.a.navLink,
+						className: p.a.navLink,
 						onClick: n
 					}, r.a.createElement(k.a, {
 						name: "mark_read",
-						className: m.a.icon
+						className: p.a.icon
 					})), r.a.createElement(j.a, {
-						className: m.a.navLink,
+						className: p.a.navLink,
 						onClick: f,
 						to: "/settings/notifications"
 					}, r.a.createElement(k.a, {
 						name: "settings",
-						className: m.a.icon
+						className: p.a.icon
 					}))))
 				},
 				R = e => r.a.createElement("div", {
-					className: m.a.bottomBar
+					className: p.a.bottomBar
 				}, r.a.createElement(j.a, {
-					className: m.a.bottomLink,
+					className: p.a.bottomLink,
 					onClick: () => {
 						e.sendInboxClickSeeAll(), e.onBarClick()
 					},
@@ -693,7 +693,7 @@
 						} = e,
 						d = !(!a || !a.length);
 					return r.a.createElement(A, null, r.a.createElement("div", {
-						className: m.a.tooltipContainer
+						className: p.a.tooltipContainer
 					}, r.a.createElement(T, {
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(w.e)({
@@ -955,9 +955,9 @@
 			})), n.d(t, "l", (function() {
 				return f
 			})), n.d(t, "g", (function() {
-				return p
-			})), n.d(t, "m", (function() {
 				return m
+			})), n.d(t, "m", (function() {
+				return p
 			})), n.d(t, "n", (function() {
 				return b
 			})), n.d(t, "q", (function() {
@@ -1041,7 +1041,7 @@
 						}
 					})
 				},
-				p = ({
+				m = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
@@ -1068,7 +1068,7 @@
 						position: r
 					}
 				}),
-				m = ({
+				p = ({
 					badgeCount: e,
 					tab: t
 				}) => n => ({
@@ -1467,9 +1467,9 @@
 			})), n.d(t, "f", (function() {
 				return f
 			})), n.d(t, "g", (function() {
-				return p
-			})), n.d(t, "a", (function() {
 				return m
+			})), n.d(t, "a", (function() {
+				return p
 			}));
 			var i = n("./src/lib/objectSelector/index.ts"),
 				s = n("./src/reddit/components/InboxTooltip/Component.tsx"),
@@ -1507,8 +1507,8 @@
 					subredditId: t
 				}) => e.features.banned.loadMore[t],
 				f = e => e.features.banned.search.api.pending,
-				p = e => e.features.banned.search.result,
-				m = e => e.features.banned.inContext
+				m = e => e.features.banned.search.result,
+				p = e => e.features.banned.inContext
 		},
 		"./src/reddit/selectors/experiments/econ/avatarMarketing.ts": function(e, t, n) {
 			"use strict";
@@ -1517,7 +1517,7 @@
 			}));
 			var i = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(i.pb)
+			const r = Object(s.a)(i.nb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -1531,9 +1531,9 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(i.Gd)(n))
+				return !(!n || Object(i.Ed)(n))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.95e14b84aa7b86052ec5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.15e77cb572024f44f5d4.js.map

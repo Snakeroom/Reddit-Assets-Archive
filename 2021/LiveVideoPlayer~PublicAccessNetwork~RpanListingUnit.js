@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.2eb1a4c0f5c4ef1b7d17.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.3b5c28523134ede39bcf.js
+// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -423,7 +423,7 @@
 				u = s("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
 				h = s("./src/reddit/constants/experiments.ts"),
 				p = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const v = Object(p.a)(h.Jb);
+			const v = Object(p.a)(h.Hb);
 			var b = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
 				f = s.n(b);
 			const C = d.a.div("Userpic", f.a);
@@ -1664,4 +1664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.2eb1a4c0f5c4ef1b7d17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.3b5c28523134ede39bcf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.2ecbe75e1b1ad9c50788.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b198d07b2a71c41243d5.js
+// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -343,7 +343,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(G.d)(m, {
-								experimentName: l.yc
+								experimentName: l.wc
 							});
 							s(Object(o.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -473,7 +473,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(G.d)(r, {
-										experimentName: l.yc
+										experimentName: l.wc
 									});
 									t(Object(o.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1452,8 +1452,8 @@
 						return (!t || !s) && (!Object(Xe.b)(e) && function(e) {
 							return Object(ze.c)(e, {
 								experimentEligibilitySelector: Ye.K,
-								experimentName: Ue.ab
-							}) === Ue.Mb
+								experimentName: Ue.Z
+							}) === Ue.Kb
 						}(e))
 					}
 				}),
@@ -4834,7 +4834,7 @@
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.M
-				}) === n.cb.Treatment
+				}) === n.bb.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
 			"use strict";
@@ -4873,4 +4873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2ecbe75e1b1ad9c50788.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b198d07b2a71c41243d5.js.map
