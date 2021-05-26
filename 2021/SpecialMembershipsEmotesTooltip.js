@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.78ef967ee4ebe0628798.js
-// Retrieved at 5/17/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.af2ac56400c0942dea11.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -523,4 +523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.78ef967ee4ebe0628798.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.af2ac56400c0942dea11.js.map

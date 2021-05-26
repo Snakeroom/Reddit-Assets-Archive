@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8f9ebb77e3e1ea891a16.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f394e96fb1704f8b022a.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -154,7 +154,9 @@
 						post: se,
 						useMediaIcons: !1
 					})), r.a.createElement("div", {
-						className: V.a.content,
+						className: Object(n.a)(V.a.content, {
+							[V.a.showBulkActionCheckbox]: ne
+						}),
 						"data-click-id": "body"
 					}, r.a.createElement(g.c, {
 						className: te ? V.a.titleWithPoll : void 0,
@@ -212,7 +214,7 @@
 						showEditPost: ve,
 						showEditFlair: ie,
 						tooltipType: J ? k.c.Lightbox : void 0,
-						useFlatlistBreakpoints: Object(y.h)({
+						useFlatlistBreakpoints: Object(y.b)({
 							editPost: !Oe,
 							save: !Oe,
 							hide: !Oe,
@@ -708,4 +710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.8f9ebb77e3e1ea891a16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f394e96fb1704f8b022a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.f3149364bd656a564064.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.4c5895726028016497dc.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
@@ -68,47 +68,49 @@
 				_ = s("./node_modules/lodash/times.js"),
 				E = s.n(_),
 				N = s("./src/lib/classNames/index.ts"),
-				L = s("./src/lib/lessComponent.tsx"),
-				j = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
-				k = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				O = s("./src/reddit/icons/svgs/Settings/index.tsx"),
-				w = s("./src/reddit/components/ModHub/ChatSettings/FormPlaceholder/index.m.less"),
-				y = s.n(w);
-			const B = L.a.wrapped(O.a, "SettingsIcon", y.a),
-				M = ({
-					subredditName: e
-				}) => c.a.createElement(j.c, {
-					text: n.fbt._("No chat settings in r/{subredditName}", [n.fbt._param("subredditName", e)], {
-						hk: "268tZg"
-					})
-				}, c.a.createElement(B, null));
-			var H = ({
+				L = s("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
+				j = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				k = s("./src/reddit/icons/fonts/index.tsx"),
+				O = s("./src/reddit/components/ModHub/ChatSettings/FormPlaceholder/index.m.less"),
+				w = s.n(O);
+			const y = ({
+				subredditName: e
+			}) => c.a.createElement(L.c, {
+				text: n.fbt._("No chat settings in r/{subredditName}", [n.fbt._param("subredditName", e)], {
+					hk: "268tZg"
+				})
+			}, c.a.createElement(k.a, {
+				name: "settings",
+				className: w.a.SettingsIcon
+			}));
+			var B = ({
 					isLoading: e
 				}) => c.a.createElement("div", {
-					className: Object(N.a)(y.a.container, Object(k.a)({
+					className: Object(N.a)(w.a.container, Object(j.a)({
 						isLoading: !1
 					}))
 				}, c.a.createElement("div", {
-					className: y.a.section
+					className: w.a.section
 				}, c.a.createElement("div", {
-					className: Object(N.a)(y.a.sectionTitle, Object(k.b)({
+					className: Object(N.a)(w.a.sectionTitle, Object(j.b)({
 						isLoading: e
 					}))
 				}), c.a.createElement("div", {
-					className: y.a.line
+					className: w.a.line
 				}), E()(5).map(t => c.a.createElement("div", {
 					key: t,
-					className: Object(N.a)(y.a.sectionBodyRow, Object(k.b)({
+					className: Object(N.a)(w.a.sectionBodyRow, Object(j.b)({
 						isLoading: e
 					}))
 				})))),
-				I = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/logs/console.ts")),
-				U = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				P = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				A = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
-				F = s.n(A);
-			const D = L.a.wrapped(U.o, "toggleSetting", F.a);
-			var R = ({
+				M = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/logs/console.ts")),
+				H = s("./src/lib/lessComponent.tsx"),
+				I = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				U = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				P = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
+				A = s.n(P);
+			const F = H.a.wrapped(I.o, "toggleSetting", A.a);
+			var D = ({
 					controlState: e,
 					controlState: {
 						state: t,
@@ -118,7 +120,7 @@
 						descriptionUrl: i
 					},
 					onChange: r
-				}) => c.a.createElement(D, {
+				}) => c.a.createElement(F, {
 					on: t,
 					forceOn: !0,
 					disabled: !s,
@@ -127,8 +129,8 @@
 						state: !t
 					}),
 					label: a,
-					subtext: o && c.a.createElement("span", null, o, i && c.a.createElement(P.a, {
-						className: F.a.welcomeMessageHelpLink,
+					subtext: o && c.a.createElement("span", null, o, i && c.a.createElement(U.a, {
+						className: A.a.welcomeMessageHelpLink,
 						isSponsored: !1,
 						source: null,
 						href: i,
@@ -138,10 +140,10 @@
 						hk: "180L0O"
 					})))
 				}),
-				T = s("./src/reddit/models/ChatSettingsPage/index.ts");
+				R = s("./src/reddit/models/ChatSettingsPage/index.ts");
 
-			function K() {
-				return (K = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -149,17 +151,17 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Z = (e, t) => {
+			const K = (e, t) => {
 				switch (e.controlState.settingType) {
-					case T.a.Toggle:
-						return c.a.createElement(R, K({
+					case R.a.Toggle:
+						return c.a.createElement(D, T({
 							key: `settings-control-${t}`
 						}, e));
 					default:
-						return Object(I.a)(`Undefined settings control type: ${e.controlState.settingType}`), null
+						return Object(M.a)(`Undefined settings control type: ${e.controlState.settingType}`), null
 				}
 			};
-			class Y extends c.a.Component {
+			class Z extends c.a.Component {
 				get groupSettings() {
 					const e = {},
 						t = [];
@@ -179,7 +181,7 @@
 							isLoading: t,
 							onChange: s
 						} = this.props;
-						return c.a.createElement(c.a.Fragment, null, e.map((e, n) => Z({
+						return c.a.createElement(c.a.Fragment, null, e.map((e, n) => K({
 							controlState: e,
 							isLoading: t,
 							onChange: s
@@ -195,41 +197,41 @@
 					return c.a.createElement(c.a.Fragment, null, Object.keys(e).map((t, s) => c.a.createElement("fieldset", {
 						key: `settings-group-${s}`
 					}, c.a.createElement("legend", {
-						className: F.a.sectionLegend
+						className: A.a.sectionLegend
 					}, t), this.buildControls(e[t]))), this.buildControls(t))
 				}
 			}
-			var W = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				X = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				q = s("./src/reddit/controls/Button/index.tsx"),
-				Q = s("./src/reddit/controls/LoadingIcon/index.tsx"),
-				V = s("./src/reddit/selectors/activeModalId.ts"),
-				z = s("./src/reddit/selectors/chat.ts"),
-				G = s("./src/reddit/selectors/chatSettingsPage.ts"),
-				J = s("./src/reddit/selectors/platform.ts");
-			const $ = "chat-settings-discard-confirmation",
-				ee = Object(m.c)({
-					allowNavigationCallback: J.a,
-					isDiscardModalOpen: Object(V.b)($),
-					isLoading: G.b,
-					settings: G.a,
+			var Y = s("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				W = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				X = s("./src/reddit/controls/Button/index.tsx"),
+				q = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				Q = s("./src/reddit/selectors/activeModalId.ts"),
+				V = s("./src/reddit/selectors/chat.ts"),
+				z = s("./src/reddit/selectors/chatSettingsPage.ts"),
+				G = s("./src/reddit/selectors/platform.ts");
+			const J = "chat-settings-discard-confirmation",
+				$ = Object(m.c)({
+					allowNavigationCallback: G.a,
+					isDiscardModalOpen: Object(Q.b)(J),
+					isLoading: z.b,
+					settings: z.a,
 					isChatModerator: (e, {
 						subredditId: t
 					}) => {
 						const s = {
 							subredditId: t
 						};
-						return Object(z.c)(e, s)
+						return Object(V.c)(e, s)
 					}
 				}),
-				te = Object(l.b)(ee, (e, {
+				ee = Object(l.b)($, (e, {
 					subredditId: t
 				}) => ({
 					closeAllModals: () => e(Object(g.f)()),
 					toggleModal: t => e(Object(g.i)(t)),
 					onSave: (s, n) => e(Object(h.f)(t, s, n))
 				}));
-			class se extends c.a.Component {
+			class te extends c.a.Component {
 				constructor(e) {
 					super(e), this.formBodyRef = c.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!1)
@@ -319,40 +321,40 @@
 						hasUnsavedChanges: i
 					} = e;
 					return c.a.createElement("div", {
-						className: F.a.container
-					}, c.a.createElement(W.c, {
-						className: F.a.topBar
-					}, c.a.createElement(q.i, {
+						className: A.a.container
+					}, c.a.createElement(Y.c, {
+						className: A.a.topBar
+					}, c.a.createElement(X.i, {
 						disabled: t || !i,
 						onClick: this.onSaveClick
 					}, e.hasJustSaved ? n.fbt._("Saved", null, {
 						hk: "38ZPdi"
-					}) : e.isSavePending ? c.a.createElement(Q.a, {
-						className: F.a.loadingIcon,
+					}) : e.isSavePending ? c.a.createElement(q.a, {
+						className: A.a.loadingIcon,
 						sizePx: 10
 					}) : n.fbt._("Save changes", null, {
 						hk: "TTPsK"
-					}))), c.a.createElement(W.a, {
-						className: F.a.contentContainer
-					}, c.a.createElement(W.b, null, n.fbt._("Chat settings", null, {
+					}))), c.a.createElement(Y.a, {
+						className: A.a.contentContainer
+					}, c.a.createElement(Y.b, null, n.fbt._("Chat settings", null, {
 						hk: "174Drb"
 					})), !a && c.a.createElement(x, {
-						className: F.a.modAccessBanner
+						className: A.a.modAccessBanner
 					}), o ? c.a.createElement("div", {
-						className: F.a.formBody,
+						className: A.a.formBody,
 						onBlur: this.onFormFieldBlur,
 						ref: this.formBodyRef
-					}, this.state.formState && this.state.formState.length ? c.a.createElement(Y, {
+					}, this.state.formState && this.state.formState.length ? c.a.createElement(Z, {
 						formState: this.state.formState,
 						isLoading: t,
 						onChange: this.onFormStateChange
-					}) : c.a.createElement(M, {
+					}) : c.a.createElement(y, {
 						subredditName: s
-					})) : c.a.createElement(H, {
+					})) : c.a.createElement(B, {
 						isLoading: t
 					})), c.a.createElement(u.a, {
 						blockOnBeforeUnload: !0,
-						dialogId: $,
+						dialogId: J,
 						enabled: i
 					}), this.props.isDiscardModalOpen && c.a.createElement(p.a, {
 						actionText: n.fbt._("Discard", null, {
@@ -370,8 +372,8 @@
 					}))
 				}
 			}
-			t.default = te(Object(X.c)(se))
+			t.default = ee(Object(W.c)(te))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.f3149364bd656a564064.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.4c5895726028016497dc.js.map

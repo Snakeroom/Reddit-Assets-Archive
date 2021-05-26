@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoVault.fa27bdf390f16645b327.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoVault.08a002361e1c01f4bd92.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoVault"], {
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, r) {
@@ -538,4 +538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.fa27bdf390f16645b327.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoVault.08a002361e1c01f4bd92.js.map

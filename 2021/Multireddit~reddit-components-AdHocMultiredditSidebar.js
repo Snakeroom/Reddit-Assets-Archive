@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.09f0c1e4e1327f8026a3.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.24373f648d5efa9c4407.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1784,7 +1784,7 @@
 		"./src/reddit/components/OverflowMenu/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return j
+				return g
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				i = s("./node_modules/react/index.js"),
@@ -1797,59 +1797,53 @@
 				u = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				m = s("./src/reddit/controls/Dropdown/index.tsx"),
 				p = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				b = s("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				h = s("./src/reddit/icons/fonts/index.tsx"),
-				f = s("./src/reddit/icons/fonts/Menu/index.tsx"),
-				x = s("./src/reddit/selectors/tooltip.ts"),
-				E = s("./src/reddit/components/OverflowMenu/index.m.less"),
-				O = s.n(E);
-			const y = c.a.wrapped(m.a, "_Dropdown", O.a),
-				g = Object(u.a)(y),
-				S = c.a.button("MenuButton", O.a),
-				_ = c.a.wrapped(f.a, "MenuIcon", O.a),
-				j = c.a.wrapped(p.b, "DropdownRow", O.a),
-				I = Object(o.c)({
+				b = s("./src/reddit/icons/fonts/index.tsx"),
+				h = s("./src/reddit/selectors/tooltip.ts"),
+				f = s("./src/reddit/components/OverflowMenu/index.m.less"),
+				x = s.n(f);
+			const E = c.a.wrapped(m.a, "_Dropdown", x.a),
+				O = Object(u.a)(E),
+				y = c.a.button("MenuButton", x.a),
+				g = c.a.wrapped(p.b, "DropdownRow", x.a),
+				S = Object(o.c)({
 					dropdownIsOpen: (e, {
 						dropdownId: t
-					}) => Object(x.b)(t)(e)
+					}) => Object(h.b)(t)(e)
 				}),
-				C = Object(d.b)(I, (e, {
+				_ = Object(d.b)(S, (e, {
 					dropdownId: t
 				}) => ({
 					toggleDropdown: () => e(Object(l.h)({
 						tooltipId: t
 					}))
 				})),
-				w = e => t => {
+				j = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = C(e => {
-				const t = Object(b.a)();
-				return n.a.createElement(S, {
-					"aria-expanded": e.dropdownIsOpen,
-					"aria-haspopup": !0,
-					"aria-label": r.fbt._("more options", null, {
-						hk: "2EnY1x"
-					}),
-					className: Object(a.a)(e.className, {
-						[O.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
-					}),
-					disabled: e.disabled,
-					onClick: w(e),
-					onMouseDown: e.handleMouseDown,
-					id: e.dropdownId
-				}, e.icon ? e.icon : t ? n.a.createElement(h.a, {
-					name: "overflow_horizontal"
-				}) : n.a.createElement(_, null), n.a.createElement(g, {
-					className: e.dropdownClassName,
-					isOpen: e.dropdownIsOpen,
-					tooltipId: e.dropdownId,
-					isFixed: e.isFixed,
-					targetPosition: e.targetPosition,
-					tooltipPosition: e.tooltipPosition,
-					style: e.style
-				}, e.children))
-			})
+			t.b = _(e => n.a.createElement(y, {
+				"aria-expanded": e.dropdownIsOpen,
+				"aria-haspopup": !0,
+				"aria-label": r.fbt._("more options", null, {
+					hk: "2EnY1x"
+				}),
+				className: Object(a.a)(e.className, {
+					[x.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
+				}),
+				disabled: e.disabled,
+				onClick: j(e),
+				onMouseDown: e.handleMouseDown,
+				id: e.dropdownId
+			}, e.icon ? e.icon : n.a.createElement(b.a, {
+				name: "overflow_horizontal"
+			}), n.a.createElement(O, {
+				className: e.dropdownClassName,
+				isOpen: e.dropdownIsOpen,
+				tooltipId: e.dropdownId,
+				isFixed: e.isFixed,
+				targetPosition: e.targetPosition,
+				tooltipPosition: e.tooltipPosition,
+				style: e.style
+			}, e.children)))
 		},
 		"./src/reddit/components/SidebarExpandableList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -2582,4 +2576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.09f0c1e4e1327f8026a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.24373f648d5efa9c4407.js.map

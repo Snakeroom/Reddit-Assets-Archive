@@ -1,30 +1,30 @@
-// https://www.redditstatic.com/desktop2x/1.f4a8410fb796920bb671.js
-// Retrieved at 5/13/2021, 1:30:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.ca6e630400ca961afad7.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
 			var n = Math.ceil,
 				a = Math.max;
-			e.exports = function(e, t, s, r) {
-				for (var o = -1, i = a(n((t - e) / (s || 1)), 0), c = Array(i); i--;) c[r ? i : ++o] = e, e += s;
+			e.exports = function(e, t, r, s) {
+				for (var o = -1, i = a(n((t - e) / (r || 1)), 0), c = Array(i); i--;) c[s ? i : ++o] = e, e += r;
 				return c
 			}
 		},
 		"./node_modules/lodash/_createRange.js": function(e, t, n) {
 			var a = n("./node_modules/lodash/_baseRange.js"),
-				s = n("./node_modules/lodash/_isIterateeCall.js"),
-				r = n("./node_modules/lodash/toFinite.js");
+				r = n("./node_modules/lodash/_isIterateeCall.js"),
+				s = n("./node_modules/lodash/toFinite.js");
 			e.exports = function(e) {
 				return function(t, n, o) {
-					return o && "number" != typeof o && s(t, n, o) && (n = o = void 0), t = r(t), void 0 === n ? (n = t, t = 0) : n = r(n), o = void 0 === o ? t < n ? 1 : -1 : r(o), a(t, n, o, e)
+					return o && "number" != typeof o && r(t, n, o) && (n = o = void 0), t = s(t), void 0 === n ? (n = t, t = 0) : n = s(n), o = void 0 === o ? t < n ? 1 : -1 : s(o), a(t, n, o, e)
 				}
 			}
 		},
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
 			var a = n("./node_modules/lodash/_baseFlatten.js"),
-				s = n("./node_modules/lodash/map.js");
+				r = n("./node_modules/lodash/map.js");
 			e.exports = function(e, t) {
-				return a(s(e, t), 1)
+				return a(r(e, t), 1)
 			}
 		},
 		"./node_modules/lodash/range.js": function(e, t, n) {
@@ -40,8 +40,8 @@
 				return g
 			}));
 			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./node_modules/react-redux/es/index.js"),
+				r = n.n(a),
+				s = n("./node_modules/react-redux/es/index.js"),
 				o = n("./src/reddit/components/ContentSurvey/index.m.less"),
 				i = n.n(o),
 				c = n("./src/lib/classNames/index.ts"),
@@ -50,9 +50,9 @@
 				u = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				m = n("./src/reddit/models/Theme/index.ts"),
 				h = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				v = n("./src/reddit/selectors/subreddit.ts");
+				p = n("./src/reddit/selectors/subreddit.ts");
 			const {
-				fbt: p
+				fbt: y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function g(e) {
@@ -61,39 +61,39 @@
 					ratingResponse: a,
 					subredditId: o,
 					children: g
-				} = e, y = null !== (t = Object(r.e)(e => Object(v.U)(e, {
+				} = e, v = null !== (t = Object(s.e)(e => Object(p.U)(e, {
 					subredditId: o
-				}))) && void 0 !== t ? t : {}, f = Object(d.a)();
-				return s.a.createElement("div", {
+				}))) && void 0 !== t ? t : {}, b = Object(d.a)();
+				return r.a.createElement("div", {
 					className: i.a.ratingCard
-				}, "PENDING" === (null == a ? void 0 : a.status) && s.a.createElement("div", {
+				}, "PENDING" === (null == a ? void 0 : a.status) && r.a.createElement("div", {
 					className: Object(c.a)(i.a.card, i.a.pending)
-				}, s.a.createElement(u.a, {
+				}, r.a.createElement(u.a, {
 					className: i.a.infoIcon
-				}), p._("Content tag is pending until reviewed", null, {
+				}), y._("Content tag is pending until reviewed", null, {
 					hk: "Umha7"
-				})), s.a.createElement("div", {
+				})), r.a.createElement("div", {
 					className: i.a.card
-				}, s.a.createElement("div", {
+				}, r.a.createElement("div", {
 					className: i.a.banner,
 					style: {
 						background: Object(m.g)(Object(h.a)({
-							theme: f
+							theme: b
 						}).banner.backgroundColor, Object(h.a)({
-							theme: f
+							theme: b
 						}).banner.backgroundImage, Object(h.a)({
-							theme: f
+							theme: b
 						}).banner.backgroundImagePosition)
 					}
-				}, s.a.createElement(l.b, {
+				}, r.a.createElement(l.b, {
 					className: i.a.communityIcon,
-					iconUrl: null === (n = y.icon) || void 0 === n ? void 0 : n.url
-				})), s.a.createElement("h3", {
+					iconUrl: null === (n = v.icon) || void 0 === n ? void 0 : n.url
+				})), r.a.createElement("h3", {
 					className: i.a.communityName
-				}, a ? s.a.createElement("span", null, y.displayText, s.a.createElement("img", {
+				}, a ? r.a.createElement("span", null, v.displayText, r.a.createElement("img", {
 					className: i.a.ratingImg,
 					src: a.rating.icon.png
-				})) : y.displayText), g))
+				})) : v.displayText), g))
 			}
 		},
 		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, n) {
@@ -102,8 +102,8 @@
 				return H
 			}));
 			var a = n("./node_modules/icepick/icepick.js"),
-				s = n("./node_modules/lodash/flatMap.js"),
-				r = n.n(s),
+				r = n("./node_modules/lodash/flatMap.js"),
+				s = n.n(r),
 				o = n("./node_modules/lodash/sortBy.js"),
 				i = n.n(o),
 				c = n("./node_modules/react/index.js"),
@@ -112,80 +112,80 @@
 				u = n("./src/reddit/components/ContentSurvey/index.m.less"),
 				m = n.n(u),
 				h = n("./src/lib/sentry/index.ts"),
-				v = n("./src/reddit/actions/subreddit/constants.ts"),
-				p = n("./src/reddit/actions/toaster.ts"),
+				p = n("./src/reddit/actions/subreddit/constants.ts"),
+				y = n("./src/reddit/actions/toaster.ts"),
 				g = n("./node_modules/fbt/lib/FbtPublic.js"),
-				y = n("./node_modules/lodash/range.js"),
-				f = n.n(y),
-				b = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
-				x = n.n(b),
-				w = n("./src/lib/classNames/index.ts");
-			var _ = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				E = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/controls/TextButton/index.tsx"),
+				v = n("./node_modules/lodash/range.js"),
+				b = n.n(v),
+				f = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
+				_ = n.n(f),
+				x = n("./src/lib/classNames/index.ts");
+			var k = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				w = n("./src/reddit/controls/Button/index.tsx"),
+				E = n("./src/reddit/controls/TextButton/index.tsx"),
 				N = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				j = n("./src/reddit/icons/svgs/svgIcons.tsx");
+				C = n("./src/reddit/icons/svgs/svgIcons.tsx");
 
-			function C(e) {
+			function j(e) {
 				const {
 					children: t,
 					activeSlide: n,
 					progressCurrent: a,
-					progressTotal: s,
-					disableNext: r,
+					progressTotal: r,
+					disableNext: s,
 					buttonText: o,
 					advance: i,
 					goBack: d,
 					onClose: u = (() => {})
 				} = e, m = function e(t) {
 					return c.Children.toArray(t).reduce((t, n) => n ? n.type === l.a.Fragment ? [...t, ...e(n.props.children)] : [...t, n] : t, [])
-				}(t), h = m.length, v = h > 1 && n > 0, p = null != a ? a : n + 1, y = null != s ? s : h;
+				}(t), h = m.length, p = h > 1 && n > 0, y = null != a ? a : n + 1, v = null != r ? r : h;
 				return l.a.createElement("div", {
-					className: x.a.container
+					className: _.a.container
 				}, l.a.createElement("div", {
-					className: x.a.header
-				}, v ? l.a.createElement(k.a, {
-					className: x.a.headerButton,
+					className: _.a.header
+				}, p ? l.a.createElement(E.a, {
+					className: _.a.headerButton,
 					onClick: d
-				}, l.a.createElement(j.i, {
-					className: x.a.backIcon
+				}, l.a.createElement(C.d, {
+					className: _.a.backIcon
 				}), l.a.createElement("div", null, g.fbt._("Back", null, {
 					hk: "39TCGR"
-				}))) : l.a.createElement(k.a, {
-					className: x.a.headerButton,
+				}))) : l.a.createElement(E.a, {
+					className: _.a.headerButton,
 					onClick: u
-				}, l.a.createElement(_.b, null), l.a.createElement("div", null, g.fbt._("Close", null, {
+				}, l.a.createElement(k.b, null), l.a.createElement("div", null, g.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), l.a.createElement(N.a, {
-					className: x.a.snoo
+					className: _.a.snoo
 				})), l.a.createElement("div", {
-					className: x.a.slides,
+					className: _.a.slides,
 					style: {
 						transform: `translateX(${-600*n}px)`
 					}
 				}, m.map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: x.a.slide,
+					className: _.a.slide,
 					"aria-hidden": n !== t,
 					"aria-current": n === t
 				}, e))), l.a.createElement("div", {
-					className: x.a.footer
+					className: _.a.footer
 				}, l.a.createElement("div", {
-					className: x.a.progressBar
-				}, y > 1 && f()(y).map((e, t) => l.a.createElement("div", {
+					className: _.a.progressBar
+				}, v > 1 && b()(v).map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: Object(w.a)(x.a.progressSegment, {
-						[x.a.active]: t < p
+					className: Object(x.a)(_.a.progressSegment, {
+						[_.a.active]: t < y
 					})
 				}))), l.a.createElement("div", {
-					className: x.a.progress
-				}, y > 1 ? g.fbt._("{current} of {total}", [g.fbt._param("current", p), g.fbt._param("total", y)], {
+					className: _.a.progress
+				}, v > 1 ? g.fbt._("{current} of {total}", [g.fbt._param("current", y), g.fbt._param("total", v)], {
 					hk: "pZU46"
-				}) : ""), l.a.createElement(E.q, {
+				}) : ""), l.a.createElement(w.q, {
 					redditStyle: !0,
-					className: x.a.footerButton,
+					className: _.a.footerButton,
 					onClick: i,
-					disabled: r
+					disabled: s
 				}, null != o ? o : n === h - 1 ? g.fbt._("Submit", null, {
 					hk: "194VZ0"
 				}) : g.fbt._("Next", null, {
@@ -198,16 +198,16 @@
 					...S,
 					variables: t
 				}),
-				L = n("./src/reddit/helpers/trackers/contentTag.ts"),
-				A = n("./src/reddit/hooks/useMutation.ts"),
-				M = n("./src/reddit/hooks/useTracking.ts");
+				A = n("./src/reddit/helpers/trackers/contentTag.ts"),
+				R = n("./src/reddit/hooks/useMutation.ts"),
+				F = n("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
 			}(T || (T = {}));
-			var B = n("./src/reddit/models/Toast/index.ts"),
-				R = n("./node_modules/lodash/mapValues.js"),
-				Z = n.n(R),
-				F = n("./src/reddit/controls/CheckboxInput/index.tsx");
+			var q = n("./src/reddit/models/Toast/index.ts"),
+				W = n("./node_modules/lodash/mapValues.js"),
+				M = n.n(W),
+				B = n("./src/reddit/controls/CheckboxInput/index.tsx");
 
 			function P({
 				children: e
@@ -218,110 +218,110 @@
 				var t
 			}
 
-			function q({
+			function L({
 				question: e,
 				selectedAnswers: t,
 				onChange: n
 			}) {
 				return l.a.createElement("div", null, l.a.createElement("h3", {
 					className: m.a.header
-				}, l.a.createElement(P, null, e.questionTextMarkdown)), e.answerOptions.map(a => l.a.createElement(F.a, {
+				}, l.a.createElement(P, null, e.questionTextMarkdown)), e.answerOptions.map(a => l.a.createElement(B.a, {
 					key: a.id,
 					name: a.id,
 					className: m.a.checkbox,
 					value: t[a.id],
-					onChange: s => (function(a, s) {
-						const r = a.id;
+					onChange: r => (function(a, r) {
+						const s = a.id;
 						if (a.isMutuallyExclusive) return n(e.id, {
-							[r]: s
+							[s]: r
 						});
-						if (s) {
+						if (r) {
 							const a = e.answerOptions.filter(e => e.isMutuallyExclusive).map(e => e.id),
-								s = Z()(t, (e, t) => !a.includes(t) && e);
-							return s[r] = !0, n(e.id, s)
+								r = M()(t, (e, t) => !a.includes(t) && e);
+							return r[s] = !0, n(e.id, r)
 						}
 						const {
-							[r]: o, ...i
+							[s]: o, ...i
 						} = t;
 						n(e.id, i)
-					})(a, s)
+					})(a, r)
 				}, l.a.createElement("span", {
 					id: a.id
 				}, a.answerText))))
 			}
-			var V = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
+			var D = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
 			const {
-				fbt: W
+				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var D;
+			var U;
 
 			function H(e) {
 				var t, n;
 				const {
-					subredditId: s,
-					survey: r,
+					subredditId: r,
+					survey: s,
 					onClose: o = (() => {})
-				} = e, [u, g] = Object(c.useState)({}), y = Object(d.d)(), f = Q(null == r ? void 0 : r.questions, u), [{
-					surveyState: b,
-					activeSlide: x
-				}, w] = Object(c.useReducer)(({
+				} = e, [u, g] = Object(c.useState)({}), v = Object(d.d)(), b = X(null == s ? void 0 : s.questions, u), [{
+					surveyState: f,
+					activeSlide: _
+				}, x] = Object(c.useReducer)(({
 					activeSlide: e
 				}, t) => {
-					const n = "forward" === t ? Math.min(e + 1, f.length + 1) : Math.max(e - 1, 0);
+					const n = "forward" === t ? Math.min(e + 1, b.length + 1) : Math.max(e - 1, 0);
 					return {
-						surveyState: 0 === n ? D.Intro : n === f.length + 1 ? D.Tag : D.Survey,
+						surveyState: 0 === n ? U.Intro : n === b.length + 1 ? U.Tag : U.Survey,
 						activeSlide: n
 					}
 				}, {
-					surveyState: D.Intro,
+					surveyState: U.Intro,
 					activeSlide: 0
-				}), _ = f[x - 1], E = Object(M.a)();
+				}), k = b[_ - 1], w = Object(F.a)();
 				Object(c.useEffect)(() => {
-					switch (x) {
+					switch (_) {
 						case 0:
-							return E(Object(L.c)());
+							return w(Object(A.c)());
 						case 1:
-							return E(Object(L.e)());
-						case f.length + 1:
-							return E(Object(L.n)())
+							return w(Object(A.e)());
+						case b.length + 1:
+							return w(Object(A.n)())
 					}
-					if (_) return E(Object(L.j)(_.pageType))
-				}, [x, E]);
-				const [k, {
+					if (k) return w(Object(A.j)(k.pageType))
+				}, [_, w]);
+				const [E, {
 					pending: N,
-					error: j
-				}] = Object(A.a)(I);
+					error: C
+				}] = Object(R.a)(I);
 				Object(c.useEffect)(() => {
-					j && (h.c.captureException(j), y(Object(p.f)(Object(p.e)(W._("An error occurred", null, {
+					C && (h.c.captureException(C), v(Object(y.f)(Object(y.e)(K._("An error occurred", null, {
 						hk: "1VDETi"
-					}), B.b.Error))))
-				}, [j, y]);
+					}), q.b.Error))))
+				}, [C, v]);
 				const [S, O] = Object(c.useState)(null);
-				if (!r) return null;
-				if (!r.isEligible) return null;
+				if (!s) return null;
+				if (!s.isEligible) return null;
 
-				function R(e, t) {
-					g(Object(a.setIn)(u, [e], t)), E(Object(L.a)(_.pageType))
+				function W(e, t) {
+					g(Object(a.setIn)(u, [e], t)), w(Object(A.a)(k.pageType))
 				}
-				const Z = null !== (t = u[null == _ ? void 0 : _.id]) && void 0 !== t ? t : {},
-					F = (null !== (n = null == _ ? void 0 : _.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
-					P = b === D.Survey && x > 1;
-				return l.a.createElement(C, {
-					activeSlide: x,
+				const M = null !== (t = u[null == k ? void 0 : k.id]) && void 0 !== t ? t : {},
+					B = (null !== (n = null == k ? void 0 : k.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => M[e]),
+					P = f === U.Survey && _ > 1;
+				return l.a.createElement(j, {
+					activeSlide: _,
 					advance: async function() {
-						if (b === D.Survey && x === f.length && O(function(e, t) {
+						if (f === U.Survey && _ === b.length && O(function(e, t) {
 								var n;
 								let a = null,
-									s = [];
-								const r = Q(e.questions, t);
-								for (const o of r)
+									r = [];
+								const s = X(e.questions, t);
+								for (const o of s)
 									for (const e of o.answerOptions) {
 										if (!(null === (n = t[o.id]) || void 0 === n ? void 0 : n[e.id])) continue;
-										if (!X(e)) continue;
-										const r = e.contentRatingTag;
-										(!a || a.weight < r.weight) && (a = r), r.weight > 0 && s.push(e)
+										if (!Z(e)) continue;
+										const s = e.contentRatingTag;
+										(!a || a.weight < s.weight) && (a = s), s.weight > 0 && r.push(e)
 									}
-								if (s = i()(s, e => -e.contentRatingTag.weight), !a) throw new Error("no question was selected!");
+								if (r = i()(r, e => -e.contentRatingTag.weight), !a) throw new Error("no question was selected!");
 								return {
 									id: "",
 									version: e.version,
@@ -329,114 +329,114 @@
 									isFromMod: !0,
 									status: T.Pending,
 									rating: a,
-									ratingReasons: s
+									ratingReasons: r
 								}
-							}(r, u)), b === D.Tag) {
+							}(s, u)), f === U.Tag) {
 							if (N) return;
-							return E(Object(L.m)()), await k({
+							return w(Object(A.m)()), await E({
 								input: {
-									subredditId: s,
-									version: r.version,
-									answers: Q(r.questions, u).map(e => ({
+									subredditId: r,
+									version: s.version,
+									answers: X(s.questions, u).map(e => ({
 										questionId: e.id,
-										answerIds: U(e, u).map(e => e.id)
+										answerIds: V(e, u).map(e => e.id)
 									}))
 								}
-							}), y(Object(p.f)(Object(p.e)(W._("Thanks for setting up your Content Tag!", null, {
+							}), v(Object(y.f)(Object(y.e)(K._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), B.b.SuccessCommunityGreen))), y({
-								type: v.z,
+							}), q.b.SuccessCommunityGreen))), v({
+								type: p.z,
 								payload: {
-									id: s,
+									id: r,
 									response: S
 								}
-							}), void(j || o())
+							}), void(C || o())
 						}
-						w("forward"), _ ? E(Object(L.i)(_.pageType, U(_, u).map(e => e.id))) : 0 === x && E(Object(L.l)())
+						x("forward"), k ? w(Object(A.i)(k.pageType, V(k, u).map(e => e.id))) : 0 === _ && w(Object(A.l)())
 					},
 					goBack: function() {
-						w("back"), _ && E(Object(L.b)(_.pageType))
+						x("back"), k && w(Object(A.b)(k.pageType))
 					},
 					onClose: o,
-					progressCurrent: P ? x - 1 : 0,
-					progressTotal: P ? f.length - 1 : 0,
-					disableNext: N || b === D.Survey && !F,
-					buttonText: K(b)
+					progressCurrent: P ? _ - 1 : 0,
+					progressTotal: P ? b.length - 1 : 0,
+					disableNext: N || f === U.Survey && !B,
+					buttonText: Q(f)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
 					className: m.a.heading
-				}, W._("Get started with content tags", null, {
+				}, K._("Get started with content tags", null, {
 					hk: "2WspCv"
-				})), W._("{=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.}{=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.}{=Here's how it works:}{=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.}{=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.}{=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.}{=If you want to learn more or have questions, visit ourcommunity content tags FAQ .}", [W._param("=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", l.a.createElement("p", {
+				})), K._("{=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.}{=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.}{=Here's how it works:}{=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.}{=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.}{=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.}{=If you want to learn more or have questions, visit ourcommunity content tags FAQ .}", [K._param("=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", null, {
+				}, K._("Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", null, {
 					hk: "1Fer1r"
-				}))), W._param("=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", l.a.createElement("p", {
+				}))), K._param("=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", null, {
+				}, K._("Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", null, {
 					hk: "4cgXFP"
-				}))), W._param("=Here's how it works:", l.a.createElement("p", {
+				}))), K._param("=Here's how it works:", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("Here's how it works:", null, {
+				}, K._("Here's how it works:", null, {
 					hk: "36BNnd"
-				}))), W._param("=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", l.a.createElement("p", {
+				}))), K._param("=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("{=Consult your mod team} Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", [W._param("=Consult your mod team", l.a.createElement("strong", null, W._("Consult your mod team", null, {
+				}, K._("{=Consult your mod team} Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", [K._param("=Consult your mod team", l.a.createElement("strong", null, K._("Consult your mod team", null, {
 					hk: "23H654"
 				})))], {
 					hk: "jnTSv"
-				}))), W._param("=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.", l.a.createElement("p", {
+				}))), K._param("=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("{=Take the survey} This survey will ask you about how different mature themes are posted about and discussed in your community.", [W._param("=Take the survey", l.a.createElement("strong", null, W._("Take the survey", null, {
+				}, K._("{=Take the survey} This survey will ask you about how different mature themes are posted about and discussed in your community.", [K._param("=Take the survey", l.a.createElement("strong", null, K._("Take the survey", null, {
 					hk: "2hQ3n7"
 				})))], {
 					hk: "2KYjT1"
-				}))), W._param("=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.", l.a.createElement("p", {
+				}))), K._param("=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("{=Keep doing what you're doing} Once you get your tag, you don't need to change anything about your community and how you run it.", [W._param("=Keep doing what you're doing", l.a.createElement("strong", null, W._("Keep doing what you're doing", null, {
+				}, K._("{=Keep doing what you're doing} Once you get your tag, you don't need to change anything about your community and how you run it.", [K._param("=Keep doing what you're doing", l.a.createElement("strong", null, K._("Keep doing what you're doing", null, {
 					hk: "3euaLx"
 				})))], {
 					hk: "4f5ry9"
-				}))), W._param("=If you want to learn more or have questions, visit ourcommunity content tags FAQ .", l.a.createElement("p", {
+				}))), K._param("=If you want to learn more or have questions, visit ourcommunity content tags FAQ .", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("If you want to learn more or have questions, visit our {=community content tags FAQ} .", [W._param("=community content tags FAQ", l.a.createElement("a", {
+				}, K._("If you want to learn more or have questions, visit our {=community content tags FAQ} .", [K._param("=community content tags FAQ", l.a.createElement("a", {
 					target: "_blank",
 					rel: "noopener noreferrer",
 					href: "https://www.reddithelp.com/hc/en-us/articles/360048185132-What-are-community-content-tags-and-how-do-they-work-"
-				}, W._("community content tags FAQ", null, {
+				}, K._("community content tags FAQ", null, {
 					hk: "1kl5Jq"
 				})))], {
 					hk: "4tG83R"
 				})))], {
 					hk: "2x33OC"
-				})), f.map(e => {
+				})), b.map(e => {
 					var t;
-					return l.a.createElement(q, {
+					return l.a.createElement(L, {
 						key: e.id,
 						question: e,
 						selectedAnswers: null !== (t = u[e.id]) && void 0 !== t ? t : {},
-						onChange: R
+						onChange: W
 					})
 				}), S && l.a.createElement("div", {
 					key: "result",
 					className: m.a.result
 				}, l.a.createElement("p", {
 					className: m.a.heading
-				}, W._("Your Content Tag:", null, {
+				}, K._("Your Content Tag:", null, {
 					hk: "2OUAzB"
-				})), l.a.createElement(V.a, {
+				})), l.a.createElement(D.a, {
 					ratingResponse: S,
-					subredditId: s
+					subredditId: r
 				}, l.a.createElement("p", {
 					className: m.a.ratingAudience
 				}, S.rating.name), l.a.createElement("p", {
 					className: m.a.ratingDescription
-				}, S.rating.description, " ", l.a.createElement("br", null), W._("(Note: Only moderators can see this tag.)", null, {
+				}, S.rating.description, " ", l.a.createElement("br", null), K._("(Note: Only moderators can see this tag.)", null, {
 					hk: "2PN50Z"
 				}))), l.a.createElement("p", {
 					className: m.a.reasonsHeader
-				}, W._("Posts and discussions include:", null, {
+				}, K._("Posts and discussions include:", null, {
 					hk: "12MdUE"
 				})), l.a.createElement("ul", null, S.ratingReasons.map(e => l.a.createElement("li", {
 					key: e.id,
@@ -444,48 +444,48 @@
 				}, e.contentRatingReasonText)))))
 			}
 
-			function K(e) {
+			function Q(e) {
 				switch (e) {
-					case D.Intro:
-						return W._("Start Survey", null, {
+					case U.Intro:
+						return K._("Start Survey", null, {
 							hk: "41dYsT"
 						});
-					case D.Survey:
-						return W._("Next", null, {
+					case U.Survey:
+						return K._("Next", null, {
 							hk: "3WmYcd"
 						});
-					case D.Tag:
-						return W._("Submit", null, {
+					case U.Tag:
+						return K._("Submit", null, {
 							hk: "2tgWd9"
 						})
 				}
 			}
 
-			function U(e, t) {
+			function V(e, t) {
 				return e.answerOptions.filter(n => {
 					var a;
 					return null === (a = t[e.id]) || void 0 === a ? void 0 : a[n.id]
 				})
 			}
 
-			function Q(e, t) {
+			function X(e, t) {
 				let n = [];
 				for (const a of null != e ? e : []) {
-					const e = U(a, t),
-						s = r()(e, e => {
+					const e = V(a, t),
+						r = s()(e, e => {
 							var t;
 							return null !== (t = e.subQuestions) && void 0 !== t ? t : []
 						});
-					n = [...n, a, ...Q(s, t)]
+					n = [...n, a, ...X(r, t)]
 				}
 				return n
 			}
 
-			function X(e) {
+			function Z(e) {
 				return "ContentRatingSurveyLeafAnswer" === e.__typename
 			}! function(e) {
 				e[e.Intro = 0] = "Intro", e[e.Survey = 1] = "Survey", e[e.Tag = 2] = "Tag"
-			}(D || (D = {}))
+			}(U || (U = {}))
 		},
 		"./src/reddit/components/ModeratorSurvey/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -514,179 +514,38 @@
 		"./src/reddit/controls/CheckboxInput/index.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
+				r = n.n(a),
+				s = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
 				i = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				c = n("./src/reddit/layout/row/Inline/index.tsx"),
 				l = n("./src/reddit/controls/CheckboxInput/index.m.less"),
 				d = n.n(l);
-			t.a = e => s.a.createElement(c.a, {
+			t.a = e => r.a.createElement(c.a, {
 				"aria-checked": !!e.value,
 				"aria-disabled": e.disabled,
 				"aria-labelledby": e.name,
-				className: Object(r.a)(e.className, d.a.checkboxInput, e.disabled ? d.a.disabled : null),
+				className: Object(s.a)(e.className, d.a.checkboxInput, e.disabled ? d.a.disabled : null),
 				onClick: e.onChange && !e.disabled ? () => e.onChange(!e.value) : void 0,
 				role: "checkbox"
-			}, s.a.createElement("input", {
+			}, r.a.createElement("input", {
 				value: e.value ? e.value.toString() : "",
 				type: "hidden"
-			}), e.value ? s.a.createElement(i.a, {
+			}), e.value ? r.a.createElement(i.a, {
 				className: d.a.checkboxSelected
-			}) : s.a.createElement(o.a, null), e.children)
+			}) : r.a.createElement(o.a, null), e.children)
 		},
 		"./src/reddit/hooks/useTheme.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return s
 			}));
 			var a = n("./node_modules/react/index.js"),
-				s = n("./src/lib/CSSVariableProvider/index.tsx");
+				r = n("./src/lib/CSSVariableProvider/index.tsx");
 
-			function r() {
-				return Object(a.useContext)(s.b)
+			function s() {
+				return Object(a.useContext)(r.b)
 			}
-		},
-		"./src/reddit/icons/svgs/Best/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("path", {
-				d: "M18.06,3a1,1,0,0,0-1-1A11.16,11.16,0,0,0,9.11,5.29L6.72,7.68A4.45,4.45,0,0,0,4.33,7,4.5,4.5,0,0,0,1.15,8.3a.5.5,0,0,0,0,.71L4,11.84l4.25,4.24,2.83,2.83h0a.48.48,0,0,0,.7,0,4.49,4.49,0,0,0,.62-5.57L14.76,11A11.15,11.15,0,0,0,18.06,3ZM13.47,9.41a2,2,0,0,1-2.88-2.77l.05,0a2,2,0,0,1,2.83,2.82Z"
-			}), s.a.createElement("path", {
-				d: "M3.21,14.73h0A3.89,3.89,0,0,0,2.06,17.5a.5.5,0,0,0,.5.5,4,4,0,0,0,2.83-1.21,1.5,1.5,0,1,0-2.18-2.06Z"
-			}))
-		},
-		"./src/reddit/icons/svgs/ClassicPosts/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-
-			function r() {
-				return (r = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = e => s.a.createElement("svg", r({
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, e), s.a.createElement("path", {
-				d: "M1.75,6.6V1.75h16.5V6.6Zm0,5.83V7.57h16.5v4.86Zm0,5.82V13.4h16.5v4.85Z"
-			}))
-		},
-		"./src/reddit/icons/svgs/CompactPosts/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-
-			function r() {
-				return (r = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = e => s.a.createElement("svg", r({
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, e), s.a.createElement("path", {
-				d: "M1.75,5V1.75h16.5V5Zm0,4.43V6.18h16.5v3.2Zm0,8.87v-3.2h16.5v3.2Zm0-4.43v-3.2h16.5v3.2Z"
-			}))
-		},
-		"./src/reddit/icons/svgs/Controversial/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("polygon", {
-				fill: "inherit",
-				points: "16 0 7.25 0 3.5 10.108 8.5 10.108 4.475 20 16 8 11 8"
-			})))
-		},
-		"./src/reddit/icons/svgs/Hot/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 20 20"
-			}, s.a.createElement("title", null, "Hot"), s.a.createElement("path", {
-				d: "M10.31.61a.5.5,0,0,0-.61,0C9.41.83,2.75,6.07,2.75,11.47a8.77,8.77,0,0,0,3.14,6.91.5.5,0,0,0,.75-.64,3.84,3.84,0,0,1-.55-2A7.2,7.2,0,0,1,10,9.56a7.2,7.2,0,0,1,3.91,6.23,3.84,3.84,0,0,1-.55,2,.5.5,0,0,0,.75.64,8.77,8.77,0,0,0,3.14-6.91C17.25,6.07,10.59.83,10.31.61Z"
-			}))
-		},
-		"./src/reddit/icons/svgs/LargePosts/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-
-			function r() {
-				return (r = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = e => s.a.createElement("svg", r({
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, e), s.a.createElement("path", {
-				d: "M1.75,9.38V1.75h16.5V9.38Zm0,8.87V10.62h16.5v7.63Z"
-			}))
-		},
-		"./src/reddit/icons/svgs/New/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("polygon", {
-				fill: "inherit",
-				points: "17.16 10 19.07 12.936 15.799 14.188 15.619 17.686 12.237 16.776 10.035 19.5 7.833 16.776 4.451 17.686 4.271 14.188 1 12.936 2.91 10 1 7.065 4.271 5.812 4.451 2.315 7.833 3.224 10.035 .5 12.237 3.224 15.619 2.315 15.799 5.812 19.07 7.065"
-			})))
-		},
-		"./src/reddit/icons/svgs/Rising/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				fill: "inherit",
-				d: "M18.5 4h-6a.5.5 0 0 0-.35.85l1.64 1.65-3.29 3.29L8.21 7.5a1 1 0 0 0-1.41 0L.65 13.65a.5.5 0 0 0 0 .71l2 2a.5.5 0 0 0 .71 0l4.14-4.15 2.29 2.29a1 1 0 0 0 1.41 0l5.3-5.29 1.65 1.65a.5.5 0 0 0 .85-.36v-6a.5.5 0 0 0-.5-.5z"
-			})))
-		},
-		"./src/reddit/icons/svgs/Top/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				fill: "inherit",
-				d: "M1.25,17.5 L1.25,7.5 L6.25,7.5 L6.25,17.5 L1.25,17.5 Z M12.49995,17.5001 L7.49995,17.5001 L7.49995,5.0001 L4.99995,5.0001 L9.99995,0.0006 L14.99995,5.0001 L12.49995,5.0001 L12.49995,17.5001 Z M13.75,17.5 L13.75,12.5 L18.75,12.5 L18.75,17.5 L13.75,17.5 Z"
-			})))
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -696,10 +555,10 @@
 		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./src/lib/lessComponent.tsx"),
-				s = n("./src/reddit/layout/row/Inline/index.m.less"),
-				r = n.n(s);
-			t.a = a.a.div("inlineRow", r.a)
+				r = n("./src/reddit/layout/row/Inline/index.m.less"),
+				s = n.n(r);
+			t.a = a.a.div("inlineRow", s.a)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.f4a8410fb796920bb671.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.ca6e630400ca961afad7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.9e09d4c44176f1ab9e48.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.2b636fce072085248486.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, s) {
@@ -36,12 +36,12 @@
 				h = s("./src/reddit/selectors/structuredStyles.ts"),
 				v = s("./src/reddit/selectors/userPrefs.ts"),
 				b = s("./src/reddit/components/LayoutNavigation/ConsiderateNav.tsx"),
-				f = s("./src/reddit/components/LayoutNavigation/Container.m.less"),
-				x = s.n(f),
+				x = s("./src/reddit/components/LayoutNavigation/Container.m.less"),
+				f = s.n(x),
 				E = s("./src/lib/lessComponent.tsx");
-			const g = E.a.div("BodyContainer", x.a),
-				y = E.a.div("SidebarPlaceholder", x.a),
-				_ = E.a.div("InnerContainer", x.a),
+			const g = E.a.div("BodyContainer", f.a),
+				y = E.a.div("SidebarPlaceholder", f.a),
+				_ = E.a.div("InnerContainer", f.a),
 				C = Object(r.c)({
 					bladeOpen: e => !!Object(h.i)(e),
 					isSubscriptionsPinned: v.b
@@ -102,30 +102,30 @@
 					}))), o && a.a.createElement(y, null)))
 				}
 			}
-			var L = E.a.wrapped(N(O), "Component", x.a),
+			var L = E.a.wrapped(N(O), "Component", f.a),
 				S = s("./src/reddit/components/Settings/modalIds.ts"),
 				j = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				B = s("./src/reddit/controls/Button/index.tsx"),
-				k = s("./src/reddit/helpers/trackers/emailCollection.ts"),
-				w = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				w = s("./src/reddit/controls/Button/index.tsx"),
+				B = s("./src/reddit/helpers/trackers/emailCollection.ts"),
+				k = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				P = s("./src/reddit/models/User/index.ts"),
 				I = s("./src/reddit/selectors/user.ts"),
 				D = s("./src/reddit/components/EmailCollection/Banner/index.m.less"),
 				H = s.n(D);
 			const {
-				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = "banner", F = Object(r.c)({
+				fbt: M
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = "banner", q = Object(r.c)({
 				user: I.j
-			}), A = Object(o.b)(F, e => ({
+			}), F = Object(o.b)(q, e => ({
 				onAddEmail: () => e(Object(l.h)(S.g)),
 				onClose: () => e(Object(c.a)())
 			}));
 			class G extends a.a.Component {
 				constructor() {
 					super(...arguments), this.closeBanner = () => {
-						this.props.sendEvent(Object(k.e)(M)), this.props.onClose()
+						this.props.sendEvent(Object(B.e)(A)), this.props.onClose()
 					}, this.addEmail = () => {
-						this.props.onAddEmail(), this.props.sendEvent(Object(k.a)(M))
+						this.props.onAddEmail(), this.props.sendEvent(Object(B.a)(A))
 					}, this.renderLayout = () => {
 						const {
 							user: e
@@ -140,22 +140,22 @@
 							className: H.a.header
 						}, a.a.createElement("h2", {
 							className: H.a.title
-						}, q._("{username}, add your email to verify your Reddit account.", [q._param("username", Object(P.e)(e))], {
+						}, M._("{username}, add your email to verify your Reddit account.", [M._param("username", Object(P.e)(e))], {
 							hk: "1WZjMk"
-						})), a.a.createElement(B.l, {
+						})), a.a.createElement(w.l, {
 							className: H.a.addEmail,
 							onClick: this.addEmail
-						}, q._("Add email", null, {
+						}, M._("Add email", null, {
 							hk: "3kllGi"
 						}))), a.a.createElement("p", {
 							className: H.a.description
-						}, q._("Verify your email to prevent being locked out of your account.", null, {
+						}, M._("Verify your email to prevent being locked out of your account.", null, {
 							hk: "27IsZu"
 						})))) : null
 					}
 				}
 				componentDidMount() {
-					this.props.sendEvent(Object(k.f)(M))
+					this.props.sendEvent(Object(B.f)(A))
 				}
 				render() {
 					const {
@@ -173,12 +173,12 @@
 					}), a.a.createElement("button", {
 						className: H.a.close,
 						onClick: this.closeBanner
-					}, a.a.createElement(w.a, {
+					}, a.a.createElement(k.a, {
 						className: H.a.closeIcon
 					}))) : null
 				}
 			}
-			t.default = A(Object(j.c)(G))
+			t.default = F(Object(j.c)(G))
 		},
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -235,8 +235,8 @@
 				b = Object(r.c)({
 					layout: m.O
 				}),
-				f = Object(o.b)(b);
-			class x extends a.a.Component {
+				x = Object(o.b)(b);
+			class f extends a.a.Component {
 				constructor(e) {
 					super(e), this.onClickIcon = e => {
 						if (void 0 === this.state.left) {
@@ -302,7 +302,7 @@
 					}, this.getDynamicStyleTags(), this.props.render(this.onClickIcon)))
 				}
 			}
-			t.a = v(f(h.a.wrapped(x, "Component", u.a)))
+			t.a = v(x(h.a.wrapped(f, "Component", u.a)))
 		},
 		"./src/reddit/components/LayoutNavigation/Container.m.less": function(e, t, s) {
 			e.exports = {
@@ -318,6 +318,20 @@
 				Component: "_12Ewyh01Y1cMPB3Ri_F1C4",
 				component: "_12Ewyh01Y1cMPB3Ri_F1C4"
 			}
+		},
+		"./src/reddit/icons/svgs/Envelope/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				a = s.n(n);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, a.a.createElement("path", {
+				d: "M7.79,9.16,2.48,3.85A2.49,2.49,0,0,1,3.75,3.5h12.5a2.49,2.49,0,0,1,1.27.35L12.21,9.16A3.13,3.13,0,0,1,7.79,9.16Z"
+			}), a.a.createElement("path", {
+				d: "M13.09,10.31,18.4,5a2.47,2.47,0,0,1,.35,1.27v7.5a2.5,2.5,0,0,1-2.5,2.5H3.75a2.5,2.5,0,0,1-2.5-2.5V6.27A2.47,2.47,0,0,1,1.6,5l5.31,5.31a4.37,4.37,0,0,0,6.18,0Z"
+			}))
 		},
 		"./src/reddit/icons/svgs/Warning/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -348,4 +362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.9e09d4c44176f1ab9e48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.2b636fce072085248486.js.map

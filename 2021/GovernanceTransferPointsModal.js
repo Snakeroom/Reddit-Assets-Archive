@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.78d5a62ecbfc34a46627.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.a2608d24d5808162e8a8.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -213,8 +213,8 @@
 						return a && (e = i << 2, t = n[o], a > 0 && (c[e] = 255 & t), a > 1 && (c[e + 1] = t >> 8 & 255), a > 2 && (c[e + 2] = t >> 16 & 255)), c
 					};
 					var N = function(e) {
-						var t, r, n, s, a, o, c, d, l, u, m, f, h, p, b, v, g, x, E, y, N, I, _, w, C, j, k, O, T, A, M, P, R, S, U, D, G, L, V, B, F, W, H, z, q, X, Y, $, Z, J, K, Q, ee, te, re, ne, se, ae, oe, ie, ce, de, le;
-						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], d = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (f = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), r = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (d << 1 | l >>> 31), r = a ^ (l << 1 | d >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = o ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = d ^ (f << 1 | h >>> 31), r = l ^ (h << 1 | f >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | a >>> 31), r = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, p = e[0], b = e[1], X = e[11] << 4 | e[10] >>> 28, Y = e[10] << 4 | e[11] >>> 28, O = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, S = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, $ = e[22] << 10 | e[23] >>> 22, Z = e[23] << 10 | e[22] >>> 22, A = e[33] << 13 | e[32] >>> 19, M = e[32] << 13 | e[33] >>> 19, de = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, G = e[15] << 6 | e[14] >>> 26, x = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, K = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, w = e[6] << 28 | e[7] >>> 4, C = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, L = e[26] << 25 | e[27] >>> 7, V = e[27] << 25 | e[26] >>> 7, y = e[36] << 21 | e[37] >>> 11, N = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, q = e[9] << 27 | e[8] >>> 5, j = e[18] << 20 | e[19] >>> 12, k = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, B = e[38] << 8 | e[39] >>> 24, F = e[39] << 8 | e[38] >>> 24, I = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = p ^ ~v & x, e[1] = b ^ ~g & E, e[10] = w ^ ~j & O, e[11] = C ^ ~k & T, e[20] = S ^ ~D & L, e[21] = U ^ ~G & V, e[30] = z ^ ~X & $, e[31] = q ^ ~Y & Z, e[40] = te ^ ~ne & ae, e[41] = re ^ ~se & oe, e[2] = v ^ ~x & y, e[3] = g ^ ~E & N, e[12] = j ^ ~O & A, e[13] = k ^ ~T & M, e[22] = D ^ ~L & B, e[23] = G ^ ~V & F, e[32] = X ^ ~$ & J, e[33] = Y ^ ~Z & K, e[42] = ne ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = x ^ ~y & I, e[5] = E ^ ~N & _, e[14] = O ^ ~A & P, e[15] = T ^ ~M & R, e[24] = L ^ ~B & W, e[25] = V ^ ~F & H, e[34] = $ ^ ~J & Q, e[35] = Z ^ ~K & ee, e[44] = ae ^ ~ie & de, e[45] = oe ^ ~ce & le, e[6] = y ^ ~I & p, e[7] = N ^ ~_ & b, e[16] = A ^ ~P & w, e[17] = M ^ ~R & C, e[26] = B ^ ~W & S, e[27] = F ^ ~H & U, e[36] = J ^ ~Q & z, e[37] = K ^ ~ee & q, e[46] = ie ^ ~de & te, e[47] = ce ^ ~le & re, e[8] = I ^ ~p & v, e[9] = _ ^ ~b & g, e[18] = P ^ ~w & j, e[19] = R ^ ~C & k, e[28] = W ^ ~S & D, e[29] = H ^ ~U & G, e[38] = Q ^ ~z & X, e[39] = ee ^ ~q & Y, e[48] = de ^ ~te & ne, e[49] = le ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
+						var t, r, n, s, a, o, c, d, l, u, m, f, h, p, b, v, g, x, E, y, N, I, _, C, w, j, k, O, T, A, M, P, R, S, U, D, G, L, B, V, F, W, H, z, q, X, Y, $, Z, J, K, Q, ee, te, re, ne, se, ae, oe, ie, ce, de, le;
+						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], d = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (f = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), r = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (d << 1 | l >>> 31), r = a ^ (l << 1 | d >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = o ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = d ^ (f << 1 | h >>> 31), r = l ^ (h << 1 | f >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | a >>> 31), r = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, p = e[0], b = e[1], X = e[11] << 4 | e[10] >>> 28, Y = e[10] << 4 | e[11] >>> 28, O = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, S = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, $ = e[22] << 10 | e[23] >>> 22, Z = e[23] << 10 | e[22] >>> 22, A = e[33] << 13 | e[32] >>> 19, M = e[32] << 13 | e[33] >>> 19, de = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, G = e[15] << 6 | e[14] >>> 26, x = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, K = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, C = e[6] << 28 | e[7] >>> 4, w = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, L = e[26] << 25 | e[27] >>> 7, B = e[27] << 25 | e[26] >>> 7, y = e[36] << 21 | e[37] >>> 11, N = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, q = e[9] << 27 | e[8] >>> 5, j = e[18] << 20 | e[19] >>> 12, k = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, V = e[38] << 8 | e[39] >>> 24, F = e[39] << 8 | e[38] >>> 24, I = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = p ^ ~v & x, e[1] = b ^ ~g & E, e[10] = C ^ ~j & O, e[11] = w ^ ~k & T, e[20] = S ^ ~D & L, e[21] = U ^ ~G & B, e[30] = z ^ ~X & $, e[31] = q ^ ~Y & Z, e[40] = te ^ ~ne & ae, e[41] = re ^ ~se & oe, e[2] = v ^ ~x & y, e[3] = g ^ ~E & N, e[12] = j ^ ~O & A, e[13] = k ^ ~T & M, e[22] = D ^ ~L & V, e[23] = G ^ ~B & F, e[32] = X ^ ~$ & J, e[33] = Y ^ ~Z & K, e[42] = ne ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = x ^ ~y & I, e[5] = E ^ ~N & _, e[14] = O ^ ~A & P, e[15] = T ^ ~M & R, e[24] = L ^ ~V & W, e[25] = B ^ ~F & H, e[34] = $ ^ ~J & Q, e[35] = Z ^ ~K & ee, e[44] = ae ^ ~ie & de, e[45] = oe ^ ~ce & le, e[6] = y ^ ~I & p, e[7] = N ^ ~_ & b, e[16] = A ^ ~P & C, e[17] = M ^ ~R & w, e[26] = V ^ ~W & S, e[27] = F ^ ~H & U, e[36] = J ^ ~Q & z, e[37] = K ^ ~ee & q, e[46] = ie ^ ~de & te, e[47] = ce ^ ~le & re, e[8] = I ^ ~p & v, e[9] = _ ^ ~b & g, e[18] = P ^ ~C & j, e[19] = R ^ ~w & k, e[28] = W ^ ~S & D, e[29] = H ^ ~U & G, e[38] = Q ^ ~z & X, e[39] = ee ^ ~q & Y, e[48] = de ^ ~te & ne, e[49] = le ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
 					};
 					if (s) e.exports = h;
 					else
@@ -657,8 +657,8 @@
 				N = Object(s.a)(g.e),
 				I = (Object(s.a)(g.f), Object(s.a)(g.g), Object(s.a)(g.h)),
 				_ = Object(s.a)(g.i),
-				w = Object(s.a)(g.j),
-				C = Object(s.a)(g.k),
+				C = Object(s.a)(g.j),
+				w = Object(s.a)(g.k),
 				j = Object(s.a)(g.q),
 				k = Object(s.a)(g.r),
 				O = Object(s.a)(g.s),
@@ -672,7 +672,7 @@
 					gqlContext: a
 				}) => {
 					let o, c = n().polls.models[e];
-					if (r(w({
+					if (r(C({
 							pollId: e
 						})), (o = c.type === m.a.GA ? await ((e, t, r) => Object(u.a)(e, {
 								...l,
@@ -698,7 +698,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else r(C(o.body));
+						} else r(w(o.body));
 						const s = n();
 						if ((c = s.polls.models[e]) && Object(m.f)(c)) {
 							const {
@@ -1064,10 +1064,10 @@
 						return u.b.warning
 				}
 			}
-			const w = Object(c.c)({
+			const C = Object(c.c)({
 				usernameAvailability: e => e.users.nameAvailable
 			});
-			t.c = Object(i.b)(w, e => ({
+			t.c = Object(i.b)(C, e => ({
 				onCheckUsername: s()(t => e(Object(l.f)({
 					username: t
 				})), 250)
@@ -1128,8 +1128,8 @@
 				N = r("./src/reddit/endpoints/governance/crypto.ts"),
 				I = r("./src/reddit/helpers/governance/stellar.ts"),
 				_ = r("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
-				w = r.n(_),
-				C = r("./node_modules/fbt/lib/FbtPublic.js");
+				C = r.n(_),
+				w = r("./node_modules/fbt/lib/FbtPublic.js");
 			const j = Object(h.c)({
 				contentId: e => e.transfers.communityPoints.contentId,
 				blockchainProvider: f.a,
@@ -1145,14 +1145,14 @@
 						a = n.isGreaterThanOrEqualTo(r),
 						o = e.submissionEnabled && !n.isZero() && a;
 					return s.a.createElement("div", {
-						className: Object(b.a)(w.a.container, e.className)
+						className: Object(b.a)(C.a.container, e.className)
 					}, s.a.createElement("div", {
-						className: w.a.available
-					}, s.a.createElement("div", null, C.fbt._("Transferable", null, {
+						className: C.a.available
+					}, s.a.createElement("div", null, w.fbt._("Transferable", null, {
 						hk: "4n8VPB"
 					})), s.a.createElement(g.a, {
 						grey: !0,
-						className: w.a.token,
+						className: C.a.token,
 						subredditId: e.subredditId
 					}), s.a.createElement("div", {
 						style: {
@@ -1160,21 +1160,21 @@
 						}
 					}, Object(v.a)(Object(m.b)(t, e.tokenDisplayConversion)))), e.blockchainProvider === N.a.Stellar && o ? s.a.createElement(E.j, {
 						redditStyle: !0,
-						className: w.a.button,
+						className: C.a.button,
 						href: Object(I.b)(e.unlockedToken && e.unlockedToken.address || "", e.unlockedToken && e.unlockedToken.symbol || "", e.publicAddress || "", e.amount && Object(m.b)(e.amount, e.tokenDisplayConversion) || "0", e.contentId ? `t|${e.contentId}` : void 0),
 						target: "_blank",
 						tabIndex: e.tabIndex
-					}, C.fbt._("send", null, {
+					}, w.fbt._("send", null, {
 						hk: "oTFGp"
 					})) : s.a.createElement(E.i, {
 						disabled: !o,
-						className: w.a.button,
+						className: C.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onTransferPoints
 					}, e.transferIsPending ? s.a.createElement(y.a, {
-						className: w.a.loadingIcon,
+						className: C.a.loadingIcon,
 						sizePx: 20
-					}) : C.fbt._("send", null, {
+					}) : w.fbt._("send", null, {
 						hk: "oTFGp"
 					})))
 				})),
@@ -1233,8 +1233,8 @@
 				D = r("./node_modules/ethers/utils/address.js"),
 				G = r("./node_modules/lodash/debounce.js"),
 				L = r.n(G),
-				V = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
-				B = r("./src/reddit/actions/users.ts"),
+				B = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
+				V = r("./src/reddit/actions/users.ts"),
 				F = r("./src/reddit/selectors/crypto/wallet.ts"),
 				W = r("./src/reddit/selectors/user.ts");
 			var H = r("./src/reddit/controls/FormFields/index.tsx"),
@@ -1264,7 +1264,7 @@
 						o = Object(W.nb)(a, {
 							userName: e
 						});
-					if (!(o || (await r(Object(B.y)(e)), a = n(), o = Object(W.nb)(a, {
+					if (!(o || (await r(Object(V.y)(e)), a = n(), o = Object(W.nb)(a, {
 							userName: e
 						})))) return {
 						userId: null,
@@ -1274,7 +1274,7 @@
 						subredditId: t,
 						userId: o.id
 					});
-					return i || (await r(Object(V.a)({
+					return i || (await r(Object(B.a)({
 						subredditId: t,
 						userIds: [o.id]
 					})), i = Object(F.c)(n(), {
@@ -1308,7 +1308,7 @@
 				}, s.a.createElement(H.c, {
 					redditStyle: !0,
 					className: Z.a.input,
-					label: C.fbt._("username or vault address", null, {
+					label: w.fbt._("username or vault address", null, {
 						hk: "1IIniU"
 					}),
 					max: J,
@@ -1360,19 +1360,19 @@
 				}, function(e) {
 					switch (e) {
 						case Q.UserDoesNotHaveAWallet:
-							return C.fbt._("That user does not yet have a Vault.", null, {
+							return w.fbt._("That user does not yet have a Vault.", null, {
 								hk: "ucZYj"
 							});
 						case Q.InvalidWalletAddress:
-							return C.fbt._("Invalid Vault address.", null, {
+							return w.fbt._("Invalid Vault address.", null, {
 								hk: "1puAgb"
 							});
 						case Q.InvalidUsername:
-							return C.fbt._("That user does not exist.", null, {
+							return w.fbt._("That user does not exist.", null, {
 								hk: "4f8vh9"
 							});
 						case Q.Error:
-							return C.fbt._("There was an error retrieving that user.", null, {
+							return w.fbt._("There was an error retrieving that user.", null, {
 								hk: "2F521p"
 							});
 						default:
@@ -1399,7 +1399,7 @@
 				} = e;
 				return s.a.createElement(ne.a, {
 					className: e.className
-				}, C.fbt._("Send {tokenName}", [C.fbt._param("tokenName", t)], {
+				}, w.fbt._("Send {tokenName}", [w.fbt._param("tokenName", t)], {
 					hk: "33shhf"
 				}))
 			}
@@ -1604,7 +1604,7 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return C
+				return w
 			})), r.d(t, "c", (function() {
 				return j
 			}));
@@ -1705,10 +1705,10 @@
 					}, s || e))
 				}
 			}
-			const w = Object(l.b)(I, e => ({
+			const C = Object(l.b)(I, e => ({
 					toggleErrorTextModal: t => e(Object(f.i)(t))
 				}))(_),
-				C = e => {
+				w = e => {
 					const {
 						className: t,
 						errorClassName: r,
@@ -1718,19 +1718,19 @@
 					} = e, o = a.length ? a : s ? [s] : [];
 					return o.length ? d.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => d.a.createElement(w, {
+					}, o.map((e, t) => d.a.createElement(C, {
 						className: r,
 						errorModalTitle: n,
 						key: t
 					}, e))) : null
 				},
-				j = e => d.a.createElement(C, {
+				j = e => d.a.createElement(w, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = w
+			t.b = C
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2239,6 +2239,23 @@
 				d: "M38.5,16.5l-15-15c-2-2-5.1-2-7.1,0l-15,15c-2,2-2,5.1,0,7.1l15,15c2,2,5.1,2,7.1,0l15-15 C40.5,21.6,40.5,18.4,38.5,16.5z M17.7,8.3C17.7,7,18.7,6,20,6s2.3,1,2.3,2.3v14.3c0,1.3-1,2.3-2.3,2.3s-2.3-1-2.3-2.3V8.3z M20,33.7c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1s3.1,1.4,3.1,3.1C23.1,32.4,21.7,33.7,20,33.7z"
 			})))
 		},
+		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, r) {
+			"use strict";
+			var n = r("./node_modules/react/index.js"),
+				s = r.n(n);
+			t.a = e => s.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				version: "1.1"
+			}, s.a.createElement("g", {
+				stroke: "none"
+			}, s.a.createElement("g", {
+				transform: "translate(-34.000000, -136.000000)",
+				fill: "inherit"
+			}, s.a.createElement("path", {
+				d: "M45.2,147.2 L48.8,147.2 C49.46272,147.2 50,146.66272 50,146 C50,145.33728 49.46272,144.8 48.8,144.8 L45.2,144.8 L45.2,141.2 C45.2,140.53728 44.66272,140 44,140 C43.33728,140 42.8,140.53728 42.8,141.2 L42.8,144.8 L39.2,144.8 C38.53728,144.8 38,145.33728 38,146 C38,146.66272 38.53728,147.2 39.2,147.2 L42.8,147.2 L42.8,150.8 C42.8,151.46272 43.33728,152 44,152 C44.66272,152 45.2,151.46272 45.2,150.8 L45.2,147.2 Z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, r) {
 			e.exports = {
 				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
@@ -2397,9 +2414,9 @@
 			})), r.d(t, "p", (function() {
 				return _
 			})), r.d(t, "l", (function() {
-				return w
-			})), r.d(t, "j", (function() {
 				return C
+			})), r.d(t, "j", (function() {
+				return w
 			}));
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				s = r("./src/reddit/endpoints/governance/crypto.ts");
@@ -2491,7 +2508,7 @@
 						image: o.image
 					}
 				},
-				w = (e, {
+				C = (e, {
 					subredditId: t
 				}) => {
 					const r = y(e, {
@@ -2501,11 +2518,11 @@
 						address: void 0
 					}
 				},
-				C = (e, t) => {
+				w = (e, t) => {
 					const r = E(e, t);
 					return !!r && !!r.walletProvider && !r.walletProvider.inTransition
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.78d5a62ecbfc34a46627.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.a2608d24d5808162e8a8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.b5a452ef4600acc912f0.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.5758fbdc355f676bc2b5.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./node_modules/lodash/xorWith.js": function(e, t, n) {
@@ -165,8 +165,8 @@
 			}
 			var E = v,
 				P = n("./src/lib/timezone/index.ts"),
-				M = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx"),
-				N = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx"),
+				N = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx"),
+				M = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx"),
 				w = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.tsx"),
 				j = n("./src/reddit/components/ScheduledPost/SchedulePicker/WeekDaysCheckboxes/index.tsx"),
 				A = n("./src/reddit/controls/NumberInput/index.tsx"),
@@ -191,7 +191,7 @@
 						submitMonthDay: l,
 						submitTime: d
 					} = this.props, u = i && e === T.b, m = u && i.frequency === T.d.Weekly, h = u && i.frequency === T.d.Monthly;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(N.a, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(M.a, {
 						className: F.a.frequencyOptionSelector,
 						selectedFrequencyOption: e,
 						submitDate: Object(P.f)(Object(I.a)(c, d)),
@@ -208,7 +208,7 @@
 						className: F.a.customIntervalInput
 					}))], {
 						hk: "3pWn0k"
-					}), o.a.createElement(M.a, {
+					}), o.a.createElement(N.a, {
 						selectedFrequency: i.frequency,
 						onSelect: t
 					})), m && o.a.createElement(j.a, {
@@ -933,22 +933,20 @@
 		"./src/reddit/controls/DropdownSelector/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return m
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				r = n("./src/reddit/controls/DropdownSelector/index.m.less"),
 				a = n.n(r),
 				i = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/contexts/CoreStyleExperiments.ts"),
-				l = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				d = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				u = n("./src/reddit/icons/fonts/index.tsx"),
-				m = n("./src/reddit/icons/svgs/Dropdown/index.tsx");
-			const h = e => {
+				c = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				l = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				d = n("./src/reddit/icons/fonts/index.tsx");
+			const u = e => {
 				e.preventDefault()
 			};
-			class p extends o.a.Component {
+			class m extends o.a.Component {
 				constructor() {
 					super(...arguments), this.dropdownButton = o.a.createRef(), this.menuItems = o.a.createRef(), this.containerRef = o.a.createRef(), this.state = {
 						isOpen: !1
@@ -1013,7 +1011,7 @@
 						showSelectedCheckmark: t,
 						isTopicsStyle: n
 					} = this.props;
-					return e.map((e, s) => o.a.createElement(l.b, {
+					return e.map((e, s) => o.a.createElement(c.b, {
 						key: s + e.displayText,
 						className: Object(i.a)(a.a.menuOption, {
 							[a.a.topics]: n
@@ -1034,15 +1032,13 @@
 						displayText: n,
 						isCompactStyle: s,
 						isTopicsStyle: r,
-						menuItemsClassName: l,
-						name: p,
-						isSaving: f
+						menuItemsClassName: c,
+						name: m,
+						isSaving: h
 					} = this.props, {
-						isOpen: b
+						isOpen: p
 					} = this.state;
-					return o.a.createElement(c.b.Consumer, null, ({
-						[c.a.Icons]: y
-					}) => o.a.createElement("div", {
+					return o.a.createElement("div", {
 						ref: this.containerRef,
 						id: this.props.id,
 						className: Object(i.a)(a.a.dropdownMenu, t, {
@@ -1055,7 +1051,7 @@
 						}, {
 							[a.a.topics]: r
 						}),
-						name: p,
+						name: m,
 						role: "menu",
 						ref: this.dropdownButton,
 						onBlur: this.handleDropdownBlur,
@@ -1063,23 +1059,21 @@
 					}, o.a.createElement("span", {
 						className: a.a.selectorContent,
 						tabIndex: -1
-					}, n), f ? o.a.createElement(d.a, {
+					}, n), h ? o.a.createElement(l.a, {
 						sizePx: 8,
 						className: a.a.loadingIcon
-					}) : y ? o.a.createElement(u.a, {
+					}) : o.a.createElement(d.a, {
 						name: "caret_down"
-					}) : o.a.createElement(m.b, {
-						className: a.a.caretDown
 					})), o.a.createElement("div", {
-						className: Object(i.a)(a.a.menuItems, l, {
+						className: Object(i.a)(a.a.menuItems, c, {
 							[a.a.topics]: r
 						}),
-						onMouseDown: h,
+						onMouseDown: u,
 						ref: this.menuItems
-					}, b && this.getDropdownMenuItems())))
+					}, p && this.getDropdownMenuItems()))
 				}
 			}
-			t.b = p
+			t.b = m
 		},
 		"./src/reddit/controls/NumberInput/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1420,19 +1414,19 @@
 					return !0
 				}
 		},
-		"./src/reddit/icons/svgs/Clear/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s);
 			t.a = e => o.a.createElement("svg", {
 				className: e.className,
-				onClick: e.onClick,
-				onMouseUp: e.onMouseUp,
-				xmlns: "http://www.w3.org/2000/svg",
-				viewBox: "0 0 40 40"
-			}, o.a.createElement("path", {
-				d: "M20 2.5C10.3 2.5 2.5 10.3 2.5 20c0 9.7 7.8 17.5 17.5 17.5S37.5 29.7 37.5 20C37.5 10.3 29.7 2.5 20 2.5zM24.2 27.7L20 23.5l-4.2 4.2c-1.1 1.1-2.5 1.1-3.5 0-1.1-1.1-1.1-2.4 0-3.5l4.2-4.2-4.2-4.2c-1.1-1.1-1.1-2.5 0-3.5 1.1-1.1 2.4-1.1 3.5 0l4.2 4.2 4.2-4.2c1.1-1.1 2.5-1.1 3.5 0 1.1 1.1 1.1 2.4 0 3.5L23.5 20l4.2 4.2c1.1 1.1 1.1 2.5 0 3.5C26.7 28.8 25.3 28.8 24.2 27.7z"
-			}))
+				viewBox: "0 0 12 12",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, o.a.createElement("g", null, o.a.createElement("polygon", {
+				fill: "inherit",
+				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
+				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
+			})))
 		},
 		"./src/reddit/models/ScheduledPost/index.ts": function(e, t, n) {
 			"use strict";
@@ -1550,4 +1544,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.b5a452ef4600acc912f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.5758fbdc355f676bc2b5.js.map

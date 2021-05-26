@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.98d9f7b5fb66c4f86a02.js
-// Retrieved at 2/28/2021, 9:18:37 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.804db7c97da99aaf7c05.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointLegacyAnnouncement"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.m.less": function(e, n, t) {
@@ -20,13 +20,13 @@
 		"./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx": function(e, n, t) {
 			"use strict";
 			t.r(n), t.d(n, "default", (function() {
-				return g
+				return _
 			}));
 			var s = t("./node_modules/react/index.js"),
 				c = t.n(s),
 				a = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/controls/Button/index.tsx"),
-				o = t("./src/reddit/icons/svgs/Close/index.tsx"),
+				o = t("./src/reddit/controls/Button/index.tsx"),
+				i = t("./src/reddit/icons/svgs/Close/index.tsx"),
 				r = t("./src/reddit/icons/svgs/Comments/index.tsx"),
 				l = t("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				d = t("./src/reddit/icons/svgs/Snoo/index.tsx"),
@@ -35,42 +35,42 @@
 				x = t("./src/reddit/layout/row/Inline/index.tsx"),
 				v = t("./src/reddit/models/Live/index.ts"),
 				E = t("./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.m.less"),
-				_ = t.n(E);
+				g = t.n(E);
 
-			function g(e) {
+			function _(e) {
 				const {
 					announcement: n,
 					className: t,
 					onBtnClick: s,
 					onClose: E
-				} = e, g = {
+				} = e, _ = {
 					[v.b.Announcement]: c.a.createElement(m.a, {
-						className: _.a.iconStyles
+						className: g.a.iconStyles
 					}),
 					[v.b.Document]: c.a.createElement(u.a, {
-						className: _.a.iconStyles
+						className: g.a.iconStyles
 					}),
 					[v.b.Snoo]: c.a.createElement(d.a, {
-						className: _.a.iconStyles
+						className: g.a.iconStyles
 					}),
 					[v.b.Ama]: c.a.createElement(r.a, {
-						className: _.a.iconStyles
+						className: g.a.iconStyles
 					}),
 					[v.b.Moderation]: c.a.createElement(l.a, {
-						className: _.a.iconStyles
+						className: g.a.iconStyles
 					})
 				};
 				return c.a.createElement("div", {
-					className: Object(a.a)(t, _.a.AnnouncementContainer)
-				}, c.a.createElement(x.a, null, g[n.icon], c.a.createElement("div", {
-					className: Object(a.a)(_.a.Title, _.a.isAnnouncement)
-				}, "function" == typeof n.title ? n.title() : n.title), c.a.createElement(o.a, {
-					className: _.a.CloseButton,
+					className: Object(a.a)(t, g.a.AnnouncementContainer)
+				}, c.a.createElement(x.a, null, _[n.icon], c.a.createElement("div", {
+					className: Object(a.a)(g.a.Title, g.a.isAnnouncement)
+				}, "function" == typeof n.title ? n.title() : n.title), c.a.createElement(i.a, {
+					className: g.a.CloseButton,
 					onClick: E
 				})), c.a.createElement("div", {
-					className: Object(a.a)(_.a.Description, _.a.isAnnouncement)
-				}, "function" == typeof n.description ? n.description() : n.description), c.a.createElement(i.j, {
-					className: _.a.Button,
+					className: Object(a.a)(g.a.Description, g.a.isAnnouncement)
+				}, "function" == typeof n.description ? n.description() : n.description), c.a.createElement(o.j, {
+					className: g.a.Button,
 					target: "_blank",
 					href: n.url,
 					onClick: s
@@ -91,6 +91,32 @@
 				d: "M15 4V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h1V6a2 2 0 0 1 2-2z"
 			}), c.a.createElement("path", {
 				d: "M17 5H6a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h3.36l1.76 1.83a.5.5 0 0 0 .75 0L13.64 16H17a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1z"
+			}))
+		},
+		"./src/reddit/icons/svgs/Moderate/index.tsx": function(e, n, t) {
+			"use strict";
+			var s = t("./node_modules/react/index.js"),
+				c = t.n(s),
+				a = t("./src/reddit/constants/colors.ts");
+			n.a = e => c.a.createElement("svg", {
+				className: e.className,
+				id: e.id,
+				onMouseEnter: e.onMouseEnter,
+				onMouseLeave: e.onMouseLeave,
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e.desc && c.a.createElement("desc", null, e.desc), c.a.createElement("path", {
+				d: "M1.88,3.32V9a11.53,11.53,0,0,0,8,11L10,20l.08,0a11.53,11.53,0,0,0,8-11V3.32A11.57,11.57,0,0,1,10,0,11.57,11.57,0,0,1,1.88,3.32"
+			}), c.a.createElement("circle", {
+				cx: "18",
+				cy: "3",
+				r: "5",
+				fill: e.isUnread ? "white" : "none"
+			}), c.a.createElement("circle", {
+				cx: "18",
+				cy: "3",
+				r: "4",
+				fill: e.isUnread ? a.b.orangered : "none"
 			}))
 		},
 		"./src/reddit/icons/svgs/Sticky/index.tsx": function(e, n, t) {
@@ -122,10 +148,10 @@
 			var s = t("./node_modules/react/index.js"),
 				c = t.n(s),
 				a = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/icons/svgs/TextPost/index.m.less"),
-				o = t.n(i);
+				o = t("./src/reddit/icons/svgs/TextPost/index.m.less"),
+				i = t.n(o);
 			n.a = e => c.a.createElement("svg", {
-				className: Object(a.a)(o.a.icon, e.className),
+				className: Object(a.a)(i.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, c.a.createElement("path", {
@@ -136,4 +162,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.98d9f7b5fb66c4f86a02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointLegacyAnnouncement.804db7c97da99aaf7c05.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.739934e52099e1309611.js
-// Retrieved at 5/25/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.b33aa93d700f3606c505.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -1644,4 +1644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.739934e52099e1309611.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.b33aa93d700f3606c505.js.map

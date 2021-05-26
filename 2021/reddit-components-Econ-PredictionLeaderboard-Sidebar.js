@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.bf34638f7fc21ef03026.js
-// Retrieved at 5/5/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.2b80ab28a4cc8c8df644.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, c) {
@@ -224,7 +224,7 @@
 				s = c("./src/higherOrderComponents/asModal/index.tsx"),
 				l = c("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = c("./src/reddit/controls/Button/index.tsx"),
-				o = c("./src/reddit/icons/svgs/Close/index.tsx"),
+				o = c("./src/reddit/icons/fonts/index.tsx"),
 				m = c("./src/reddit/helpers/trackers/predictions.ts"),
 				u = c("./src/reddit/hooks/usePageLayer.ts"),
 				f = c("./src/reddit/hooks/useTracking.ts"),
@@ -261,7 +261,7 @@
 					className: x.a.header
 				}, n.a.createElement(i.q, {
 					className: x.a.closeButton,
-					Icon: o.a,
+					Icon: Object(o.b)("close"),
 					priority: i.b.Plain,
 					onClick: e
 				}), n.a.createElement("h1", null, h ? P._("Tournament leaderboard", null, {
@@ -500,7 +500,7 @@
 				if (!(null === (i = null == c ? void 0 : c.topPredictorsRank) || void 0 === i ? void 0 : i.length) || z) return null;
 				const {
 					currentRank: g,
-					topPredictorsRank: I
+					topPredictorsRank: O
 				} = c;
 				return r.a.createElement(o.a, null, r.a.createElement(m.a, {
 					className: Object(l.a)(v.a.themedWidget, e),
@@ -512,7 +512,7 @@
 				}, r.a.createElement(x.a, {
 					className: v.a.list,
 					currentRank: g,
-					topPredictorsRank: I.slice(0, k),
+					topPredictorsRank: O.slice(0, k),
 					tournamentId: s
 				}), r.a.createElement("div", {
 					className: v.a.openModalButtonContainer
@@ -539,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.bf34638f7fc21ef03026.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.2b80ab28a4cc8c8df644.js.map

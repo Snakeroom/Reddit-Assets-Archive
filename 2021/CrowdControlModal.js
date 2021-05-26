@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.6b360e4a031d15c49d85.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.1ae89f0149444a73caad.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -248,27 +248,27 @@
 			}
 			var y = n("./src/higherOrderComponents/asModal/index.tsx"),
 				O = n("./src/reddit/endpoints/crowdControl/index.ts"),
-				S = n("./src/graphql/operations/UpdateCrowdControlLevel.json"),
-				j = n("./src/lib/makeGqlRequest/index.ts");
-			const T = (e, t, n) => Object(j.a)(e, {
-				...S,
+				j = n("./src/graphql/operations/UpdateCrowdControlLevel.json"),
+				S = n("./src/lib/makeGqlRequest/index.ts");
+			const T = (e, t, n) => Object(S.a)(e, {
+				...j,
 				variables: {
 					postId: t,
 					level: n
 				}
 			});
-			var I = n("./src/reddit/selectors/posts.ts"),
-				L = n("./src/reddit/actions/modal.ts"),
+			var L = n("./src/reddit/selectors/posts.ts"),
+				I = n("./src/reddit/actions/modal.ts"),
 				M = n("./src/reddit/actions/toaster.ts"),
 				F = n("./src/reddit/components/CrowdControlModal/index.m.less"),
 				R = n.n(F);
 			const P = Object(l.c)({
-					post: I.g,
-					subredditCrowdControl: I.Q,
-					subredditUrl: I.S
+					post: L.g,
+					subredditCrowdControl: L.Q,
+					subredditUrl: L.S
 				}),
 				D = Object(o.b)(P, e => ({
-					onClose: () => e(Object(L.f)()),
+					onClose: () => e(Object(I.f)()),
 					showSuccessToast: () => e(Object(M.f)({
 						text: r.fbt._("Crowd control settings saved!", null, {
 							hk: "1r4rS3"
@@ -380,8 +380,8 @@
 					})))
 				}
 			}
-			const G = Object(d.b)(D(Object(i.c)(A)));
-			t.default = c.a.wrapped(Object(y.a)(D(G)), "Component", R.a)
+			const H = Object(d.b)(D(Object(i.c)(A)));
+			t.default = c.a.wrapped(Object(y.a)(D(H)), "Component", R.a)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -619,7 +619,7 @@
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "m", (function() {
-				return z
+				return U
 			})), n.d(t, "j", (function() {
 				return K
 			})), n.d(t, "n", (function() {
@@ -700,11 +700,11 @@
 			}
 			var y = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				O = n("./src/reddit/controls/Typography/index.tsx"),
-				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				j = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				j = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				S = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				T = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				I = n("./node_modules/lodash/range.js"),
-				L = n.n(I),
+				L = n("./node_modules/lodash/range.js"),
+				I = n.n(L),
 				M = n("./src/reddit/controls/Button/index.tsx"),
 				F = n("./src/reddit/layout/row/Inline/index.tsx"),
 				R = n("./src/reddit/models/Flair/index.ts"),
@@ -713,8 +713,8 @@
 				B = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(B);
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -722,11 +722,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = Object(c.a)(x.a),
-				W = C.a.wrapped(j.a, "Circle", A.a),
+			const G = Object(c.a)(x.a),
+				W = C.a.wrapped(S.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
-				z = C.a.wrapped(O.c, "Subtext", A.a),
-				U = C.a.wrapped(u.a, "HoverTooltip", A.a),
+				U = C.a.wrapped(O.c, "Subtext", A.a),
+				z = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				Q = C.a.div("ControlContainer", A.a),
 				q = C.a.div("TextContainer", A.a),
 				J = C.a.div("ActionContainer", A.a),
@@ -740,7 +740,7 @@
 					indent: l,
 					last: d,
 					...c
-				}) => a.a.createElement("div", G({}, c, {
+				}) => a.a.createElement("div", H({}, c, {
 					className: Object(i.a)(A.a.Wrapper, e, {
 						[A.a.mColumn]: "column" === t,
 						[A.a.mDisabled]: !!o,
@@ -755,7 +755,7 @@
 				Y = C.a.wrapped(X, "SubtextLink", A.a),
 				Z = C.a.wrapped(T.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
-				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
+				ee = C.a.wrapped(j.a, "ArrowRight", A.a),
 				te = e => a.a.createElement(K, {
 					direction: e.direction,
 					disabled: e.disabled,
@@ -764,7 +764,7 @@
 					last: e.last
 				}, a.a.createElement(q, {
 					className: e.textContainerClassName
-				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				ne = C.a.div("StyledFlair", A.a),
 				re = C.a.wrapped(ne, "SpoilerFlair", A.a),
 				ae = C.a.wrapped(ne, "NSFWFlair", A.a),
@@ -787,7 +787,7 @@
 						last: e.last
 					}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(V, null, e.label))), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(U, {
+					}, a.a.createElement(V, null, e.label))), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(z, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), a.a.createElement(y.a, {
@@ -817,7 +817,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(z, null, " ", a.a.createElement(me, {
+				}, !e.inModal && a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(U, null, " ", a.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -828,7 +828,7 @@
 					}
 				}, a.a.createElement(ie, null, a.a.createElement(le, {
 					style: {
-						background: "linear-gradient(to right, " + L()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
+						background: "linear-gradient(to right, " + I()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
 					},
 					className: "range-slider-input",
 					type: "range",
@@ -848,7 +848,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, a.a.createElement(M.l, {
+				}, a.a.createElement(q, null, a.a.createElement(F.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Q, null, a.a.createElement(M.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				be = e => a.a.createElement(K, {
@@ -860,7 +860,7 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, a.a.createElement(Z, null)), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(X, {
+				}, e.label, a.a.createElement(Z, null)), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -872,7 +872,7 @@
 					last: e.last
 				}, a.a.createElement(q, null, a.a.createElement($, {
 					onClick: e.onClick
-				}, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, a.a.createElement($, {
+				}, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, a.a.createElement($, {
 					onClick: e.onClick
 				}, a.a.createElement(ee, null)))),
 				Ce = C.a.div("DropdownWrapper", A.a),
@@ -893,11 +893,11 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement(Ce, {
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement(Ce, {
 					onClick: e.openDropdown
 				}, a.a.createElement(ve, {
 					id: `SettingDropdown--${e.id}`
-				}, e.displayTitle || e.selected), a.a.createElement(ge, null), a.a.createElement(H, {
+				}, e.displayTitle || e.selected), a.a.createElement(ge, null), a.a.createElement(G, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
@@ -924,7 +924,7 @@
 						disabled: e
 					}, a.a.createElement(q, null, a.a.createElement("label", {
 						htmlFor: o.id
-					}, a.a.createElement(V, null, o.label)), a.a.createElement(z, null, o.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(V, null, o.label)), a.a.createElement(U, null, o.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), a.a.createElement(K, {
 						last: t,
@@ -950,7 +950,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(z, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(U, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				ye = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -1259,7 +1259,6 @@
 		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, n) {
 			e.exports = {
 				iconWrapper: "pthKOcceozMuXLYrLlbL1",
-				iconStyles: "_2XOVBjNLHjJIznEsn35vs2",
 				text: "_2-cXnP74241WI7fpcpfPmg",
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
 				topics: "kR_ljR-F8vtc-ORj1uipB",
@@ -1662,27 +1661,14 @@
 				o = n.n(s);
 			t.a = r.a.wrapped(a.a, "unstyledInternalLink", o.a)
 		},
-		"./src/reddit/icons/fonts/DropdownTriangle/index.m.less": function(e, t, n) {
-			e.exports = {
-				DropdownTriangle: "_28O0gzb6GMS8lbDeySdpwp",
-				dropdownTriangle: "_28O0gzb6GMS8lbDeySdpwp"
-			}
-		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
 				a = n.n(r),
-				s = n("./src/reddit/hooks/useCoreStyleExperiments.ts"),
-				o = n("./src/reddit/icons/fonts/helpers.tsx"),
-				l = n("./src/reddit/icons/fonts/DropdownTriangle/index.m.less"),
-				i = n.n(l);
-			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => {
-				const t = Object(s.a)();
-				return a.a.createElement("i", {
-					className: `${Object(o.b)(t?"caret_down":"dropdownTriangle",e.isFilled)} ${e.className}`
-				})
-			}, "DropdownTriangle", i.a);
-			t.a = d
+				s = n("./src/reddit/icons/fonts/helpers.tsx");
+			t.a = e => a.a.createElement("i", {
+				className: `${Object(s.b)("caret_down",e.isFilled)} ${e.className}`
+			})
 		},
 		"./src/reddit/icons/svgs/ArrowRight/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1745,6 +1731,78 @@
 				cx: "4"
 			})))
 		},
+		"./src/reddit/icons/svgs/Dropdown/index.m.less": function(e, t, n) {
+			e.exports = {
+				dropdown: "XHbKeEqnW58ib9mTN6jnS",
+				mRedditStyle: "u_kypUXmB-k1A5TcC8MI9"
+			}
+		},
+		"./src/reddit/icons/svgs/Dropdown/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			}));
+			var r = n("./node_modules/react/index.js"),
+				a = n.n(r),
+				s = n("./src/lib/classNames/index.ts"),
+				o = n("./src/reddit/icons/svgs/Dropdown/index.m.less"),
+				l = n.n(o);
+
+			function i() {
+				return (i = Object.assign || function(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var n = arguments[t];
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			const d = ({
+				className: e,
+				isSubreddit: t,
+				...n
+			}) => a.a.createElement("svg", i({
+				className: Object(s.a)(l.a.dropdown, {
+					[l.a.mRedditStyle]: !t
+				}, e),
+				viewBox: "0 0 20 20",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, n), a.a.createElement("path", {
+				d: "M14.17,9.35,10,13.53,5.83,9.35a.5.5,0,0,1,.35-.85h7.64a.5.5,0,0,1,.35.85"
+			}));
+			t.b = d
+		},
+		"./src/reddit/icons/svgs/OutboundLink/index.tsx": function(e, t, n) {
+			"use strict";
+			var r = n("./node_modules/react/index.js"),
+				a = n.n(r);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				xmlns: "http://www.w3.org/2000/svg",
+				viewBox: "0 0 20 20"
+			}, a.a.createElement("path", {
+				d: "M16 10.77a1 1 0 0 0-1 1V14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2.23a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-2.23a1 1 0 0 0-1-1z"
+			}), a.a.createElement("path", {
+				d: "M17.91 2.62A1 1 0 0 0 17 2h-4a1 1 0 0 0 0 2h1.59L9.38 9.19a1 1 0 1 0 1.41 1.41L16 5.41V7a1 1 0 0 0 2 0V3a1 1 0 0 0-.09-.38z"
+			}))
+		},
+		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, n) {
+			"use strict";
+			var r = n("./node_modules/react/index.js"),
+				a = n.n(r);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				version: "1.1"
+			}, a.a.createElement("g", {
+				stroke: "none"
+			}, a.a.createElement("g", {
+				transform: "translate(-34.000000, -136.000000)",
+				fill: "inherit"
+			}, a.a.createElement("path", {
+				d: "M45.2,147.2 L48.8,147.2 C49.46272,147.2 50,146.66272 50,146 C50,145.33728 49.46272,144.8 48.8,144.8 L45.2,144.8 L45.2,141.2 C45.2,140.53728 44.66272,140 44,140 C43.33728,140 42.8,140.53728 42.8,141.2 L42.8,144.8 L39.2,144.8 C38.53728,144.8 38,145.33728 38,146 C38,146.66272 38.53728,147.2 39.2,147.2 L42.8,147.2 L42.8,150.8 C42.8,151.46272 43.33728,152 44,152 C44.66272,152 45.2,151.46272 45.2,150.8 L45.2,147.2 Z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, n) {
 			e.exports = {
 				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
@@ -1774,4 +1832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.6b360e4a031d15c49d85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.1ae89f0149444a73caad.js.map

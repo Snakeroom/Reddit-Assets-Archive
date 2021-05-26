@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.d6811159ca449d3bc1a1.js
-// Retrieved at 5/12/2021, 12:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.ff3a04ec2dd1f80950fb.js
+// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
@@ -231,25 +231,25 @@
 					}))
 				}
 			}
-			const _ = [],
-				T = Object(o.c)({
+			const C = [],
+				_ = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: r
 					}) => {
 						var n;
-						return (null === (n = e.users.appliedBadges[r]) || void 0 === n ? void 0 : n[t]) || _
+						return (null === (n = e.users.appliedBadges[r]) || void 0 === n ? void 0 : n[t]) || C
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				C = Object(o.c)({
+				T = Object(o.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
 						var r;
 						const n = e.user.account;
-						return n && (null === (r = e.users.appliedBadges[n.id]) || void 0 === r ? void 0 : r[t]) || _
+						return n && (null === (r = e.users.appliedBadges[n.id]) || void 0 === r ? void 0 : r[t]) || C
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
@@ -272,8 +272,8 @@
 					badges: s
 				}, n))
 			}
-			const M = Object(s.b)(T, I)(P),
-				B = Object(s.b)(C, I)(P)
+			const M = Object(s.b)(_, I)(P),
+				B = Object(s.b)(T, I)(P)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -558,13 +558,13 @@
 			var O = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Upsell/index.m.less"),
 				k = r.n(O);
 			const {
-				fbt: _
+				fbt: C
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			const T = Object(u.c)({
+			const _ = Object(u.c)({
 				tokenName: f.n,
 				details: f.b
 			});
-			var C = Object(s.b)(T)((function(e) {
+			var T = Object(s.b)(_)((function(e) {
 					const {
 						className: t,
 						details: r,
@@ -583,11 +583,11 @@
 						className: k.a.textSection
 					}, a.a.createElement("div", {
 						className: k.a.title
-					}, _._("Buy r/{communityName} 's Top Banner", [_._param("communityName", n)], {
+					}, C._("Buy r/{communityName} 's Top Banner", [C._param("communityName", n)], {
 						hk: "2hXSyn"
 					})), a.a.createElement("div", {
 						className: k.a.text
-					}, _._("Set the image to whatever you want", null, {
+					}, C._("Set the image to whatever you want", null, {
 						hk: "45iv1p"
 					})))), a.a.createElement("div", {
 						className: k.a.section
@@ -599,19 +599,19 @@
 						className: k.a.textSection
 					}, a.a.createElement("div", {
 						className: k.a.title
-					}, _._("Harberger Tax", null, {
+					}, C._("Harberger Tax", null, {
 						hk: "1RH5bF"
 					})), a.a.createElement("ul", {
 						className: k.a.text
-					}, a.a.createElement("li", null, _._("The owner sets the price for the banner", null, {
+					}, a.a.createElement("li", null, C._("The owner sets the price for the banner", null, {
 						hk: "1EnVw2"
-					})), a.a.createElement("li", null, _._("They pay a daily tax of {tax} by burning {token}", [_._param("tax", o), _._param("token", s)], {
+					})), a.a.createElement("li", null, C._("They pay a daily tax of {tax} by burning {token}", [C._param("tax", o), C._param("token", s)], {
 						hk: "2qEsqE"
-					})), a.a.createElement("li", null, _._("If the owner cannot pay the tax, the price goes to 0", null, {
+					})), a.a.createElement("li", null, C._("If the owner cannot pay the tax, the price goes to 0", null, {
 						hk: "X4H8x"
-					})), a.a.createElement("li", null, _._("Anyone can buy the banner at its advertised price", null, {
+					})), a.a.createElement("li", null, C._("Anyone can buy the banner at its advertised price", null, {
 						hk: "2k3KWy"
-					})), a.a.createElement("li", null, _._("The owner cannot refuse to sell it at that price", null, {
+					})), a.a.createElement("li", null, C._("The owner cannot refuse to sell it at that price", null, {
 						hk: "zeQCk"
 					}))))))
 				})),
@@ -621,7 +621,7 @@
 			function M(e) {
 				return a.a.createElement("div", {
 					className: Object(i.a)(P.a.container, e.className)
-				}, a.a.createElement(C, {
+				}, a.a.createElement(T, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name
 				}), a.a.createElement(w, {
@@ -635,11 +635,11 @@
 				H = r("./src/reddit/actions/harbergerTax/actionCreators.ts"),
 				S = r("./src/reddit/actions/toaster.ts"),
 				D = r("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				R = r("./src/reddit/controls/FormFields/index.tsx"),
-				F = r("./src/reddit/helpers/governance/ethereum.ts"),
-				G = r("./src/reddit/models/Toast/index.ts"),
-				L = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
-				V = r.n(L);
+				L = r("./src/reddit/controls/FormFields/index.tsx"),
+				R = r("./src/reddit/helpers/governance/ethereum.ts"),
+				F = r("./src/reddit/models/Toast/index.ts"),
+				G = r("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
+				V = r.n(G);
 
 			function W(e) {
 				return a.a.createElement("article", {
@@ -686,7 +686,7 @@
 						if (!s || !o) return this.props.onError();
 						const i = new B.BigNumber(n).multipliedBy(t.taxRate * z).multipliedBy(parseInt(a));
 						try {
-							await Object(F.f)(s, o, e || "0", n, i.toFixed(0)), this.props.onPurchaseComplete()
+							await Object(R.f)(s, o, e || "0", n, i.toFixed(0)), this.props.onPurchaseComplete()
 						} catch (c) {
 							return this.props.onError(c.message)
 						}
@@ -741,7 +741,7 @@
 						})
 					}, a.a.createElement("div", {
 						className: q.a.price
-					}, a.a.createElement(R.c, {
+					}, a.a.createElement(L.c, {
 						redditStyle: !0,
 						className: q.a.priceInput,
 						label: J.fbt._("new price", null, {
@@ -773,7 +773,7 @@
 						})
 					}, a.a.createElement("div", {
 						className: q.a.prePay
-					}, a.a.createElement(R.c, {
+					}, a.a.createElement(L.c, {
 						redditStyle: !0,
 						className: q.a.prepayInput,
 						label: J.fbt._("# of days to prepay", null, {
@@ -826,7 +826,7 @@
 			var K = Object(s.b)(Q, e => ({
 					onError: t => e(Object(S.f)({
 						duration: 5e3,
-						kind: G.b.Error,
+						kind: F.b.Error,
 						text: t || J.fbt._("Something wen't wrong with the purchase. Please try again later.", null, {
 							hk: "18lJda"
 						})
@@ -1033,7 +1033,7 @@
 			r.d(t, "a", (function() {
 				return k
 			})), r.d(t, "c", (function() {
-				return _
+				return C
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/uniqueId.js"),
@@ -1151,7 +1151,7 @@
 						key: t
 					}, e))) : null
 				},
-				_ = e => d.a.createElement(k, {
+				C = e => d.a.createElement(k, {
 					fallbackMessage: n.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -1716,6 +1716,23 @@
 				}))
 			}
 		},
+		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, r) {
+			"use strict";
+			var n = r("./node_modules/react/index.js"),
+				a = r.n(n);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				version: "1.1"
+			}, a.a.createElement("g", {
+				stroke: "none"
+			}, a.a.createElement("g", {
+				transform: "translate(-34.000000, -136.000000)",
+				fill: "inherit"
+			}, a.a.createElement("path", {
+				d: "M45.2,147.2 L48.8,147.2 C49.46272,147.2 50,146.66272 50,146 C50,145.33728 49.46272,144.8 48.8,144.8 L45.2,144.8 L45.2,141.2 C45.2,140.53728 44.66272,140 44,140 C43.33728,140 42.8,140.53728 42.8,141.2 L42.8,144.8 L39.2,144.8 C38.53728,144.8 38,145.33728 38,146 C38,146.66272 38.53728,147.2 39.2,147.2 L42.8,147.2 L42.8,150.8 C42.8,151.46272 43.33728,152 44,152 C44.66272,152 45.2,151.46272 45.2,150.8 L45.2,147.2 Z"
+			}))))
+		},
 		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, r) {
 			e.exports = {
 				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
@@ -1889,4 +1906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.d6811159ca449d3bc1a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.ff3a04ec2dd1f80950fb.js.map
