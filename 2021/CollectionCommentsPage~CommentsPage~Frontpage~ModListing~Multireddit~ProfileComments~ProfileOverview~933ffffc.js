@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.3ab6b3b3cad2a5eb294a.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.c4edb0eea1c7b978f5c9.js
+// Retrieved at 5/27/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2155,7 +2155,7 @@
 				if (i.isBlank) return g;
 				const n = !i.media && !!i.source && Object(r.a)(i.source.url),
 					o = e && n;
-				s === l.g.Large && v(i) && !o && (s = l.g.Medium);
+				s !== l.g.Large || !v(i) || o || i.predictionTournament || (s = l.g.Medium);
 				const d = b[s];
 				return void 0 === d ? (Object(a.a)(void 0, `Could not find component for layout ${s}.`), g) : t && i.isSponsored && s === l.g.Large ? u : d
 			}
@@ -2296,4 +2296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.3ab6b3b3cad2a5eb294a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.c4edb0eea1c7b978f5c9.js.map

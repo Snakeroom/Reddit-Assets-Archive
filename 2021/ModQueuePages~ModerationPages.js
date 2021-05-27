@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.415a55e604b401610699.js
-// Retrieved at 5/26/2021, 3:30:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c25136788728b1d37dbe.js
+// Retrieved at 5/27/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -4264,7 +4264,7 @@
 				if (s.isBlank) return f;
 				const o = !s.media && !!s.source && Object(i.a)(s.source.url),
 					r = e && o;
-				n === d.g.Large && g(s) && !r && (n = d.g.Medium);
+				n !== d.g.Large || !g(s) || r || s.predictionTournament || (n = d.g.Medium);
 				const c = b[n];
 				return void 0 === c ? (Object(a.a)(void 0, `Could not find component for layout ${n}.`), f) : t && s.isSponsored && n === d.g.Large ? h : c
 			}
@@ -4461,4 +4461,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.415a55e604b401610699.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c25136788728b1d37dbe.js.map
