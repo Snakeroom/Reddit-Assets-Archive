@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6449387450a4e50e8a1c.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.754d3aa473bdd0512a85.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -361,7 +361,7 @@
 						commentId: e
 					});
 					if (!c) return;
-					const l = s === n.Ub.Snoozed,
+					const l = s === n.Vb.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -392,8 +392,8 @@
 					o(Object(h.i)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === n.C.ADMIN,
-							isMod: t === n.C.MODERATOR,
+							isAdmin: t === n.D.ADMIN,
+							isMod: t === n.D.MODERATOR,
 							isStickied: !!s
 						}
 					})), s && p && p !== e && o(Object(h.i)({
@@ -576,7 +576,7 @@
 					});
 					const f = await (async (e, t, s) => Object(r.a)(Object(a.a)(e, [i.a]), {
 						endpoint: Object(c.a)(`${e.apiUrl}/api/presence`),
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							user_fullnames: t.join(","),
 							subreddit_fullname: s || ""
@@ -1279,7 +1279,7 @@
 						post: C,
 						sendEvent: y,
 						tooltipId: I
-					} = e, S = C.distinguishType === i.C.MODERATOR, T = S ? i.C.NONE : i.C.MODERATOR, N = Object(p.b)(C.id, c);
+					} = e, S = C.distinguishType === i.D.MODERATOR, T = S ? i.D.NONE : i.D.MODERATOR, N = Object(p.b)(C.id, c);
 					return n.a.createElement(F, {
 						className: M.a.dropdown,
 						isOpen: r,
@@ -1405,7 +1405,7 @@
 			class I extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.Ub.None : c.Ub.Snoozed;
+						const e = this.props.isSnoozed ? c.Vb.None : c.Vb.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(h.l)(Object(x.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -1729,42 +1729,42 @@
 				m = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const p = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/save`),
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				u = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/unsave`),
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				b = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/lock`),
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				f = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/unlock`),
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				x = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/approve`),
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				h = (e, t, s) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/remove`),
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t,
 						spam: s
@@ -1772,21 +1772,21 @@
 				}),
 				O = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				j = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				v = (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t
 					}
@@ -1796,14 +1796,14 @@
 					return a && (i = Object(d.a)(i)), Object(r.a)(e, {
 						data: s,
 						endpoint: i,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
 				E = (e, t, s, o) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/distinguish/${s}`),
-					method: n.eb.POST,
+					method: n.fb.POST,
 					data: {
 						id: t,
 						sticky: o
@@ -2345,4 +2345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6449387450a4e50e8a1c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.754d3aa473bdd0512a85.js.map

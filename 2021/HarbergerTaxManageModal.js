@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.ef13d3496ef8eb6d1024.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.54b40b9e7663a3847b64.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1392,7 +1392,7 @@
 				o = n("./src/reddit/constants/headers.ts");
 			const d = async (e, t, n, d, c) => Object(s.a)(Object(i.a)(e, [o.a]), {
 				endpoint: `${a.a.metaUrl}/communities/${t}/upload-lease`,
-				method: r.eb.POST,
+				method: r.fb.POST,
 				data: {
 					filepath: n,
 					imagetype: d,
@@ -1710,4 +1710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.ef13d3496ef8eb6d1024.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.54b40b9e7663a3847b64.js.map

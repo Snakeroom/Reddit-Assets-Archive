@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.3b5c28523134ede39bcf.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.59d9477c8534d3d851ba.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -443,7 +443,7 @@
 					className: f.a.NewUserpic,
 					userId: t
 				});
-				const o = (e => e.replace(l.Cb.Account + "_", ""))(t),
+				const o = (e => e.replace(l.Db.Account + "_", ""))(t),
 					{
 						avatar: n,
 						color: d
@@ -1664,4 +1664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.3b5c28523134ede39bcf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.59d9477c8534d3d851ba.js.map

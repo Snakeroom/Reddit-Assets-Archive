@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.80ed6fa554036d7426d4.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.db528909d0e1238c9945.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -15,9 +15,9 @@
 			})), s.d(t, "m", (function() {
 				return T
 			})), s.d(t, "e", (function() {
-				return U
-			})), s.d(t, "h", (function() {
 				return A
+			})), s.d(t, "h", (function() {
+				return D
 			})), s.d(t, "l", (function() {
 				return F
 			})), s.d(t, "q", (function() {
@@ -27,9 +27,9 @@
 			})), s.d(t, "g", (function() {
 				return M
 			})), s.d(t, "f", (function() {
-				return K
-			})), s.d(t, "o", (function() {
 				return V
+			})), s.d(t, "o", (function() {
+				return H
 			})), s.d(t, "p", (function() {
 				return q
 			})), s.d(t, "d", (function() {
@@ -109,7 +109,7 @@
 							isSaved: r.isSaved
 						}
 					}))
-				}, k = e => `viewing-comment-${e}`, P = n.a.telemetry.commentConsumedThreshold, U = e => async (t, s) => {
+				}, k = e => `viewing-comment-${e}`, P = n.a.telemetry.commentConsumedThreshold, A = e => async (t, s) => {
 					const o = s();
 					if (!Object(R.a)(o, {
 							commentId: e
@@ -123,7 +123,7 @@
 						commentId: e
 					}), P);
 					S[e] = d
-				}, A = (e, t) => async (s, n) => {
+				}, D = (e, t) => async (s, n) => {
 					const o = n(),
 						d = k(e);
 					if (Object(R.a)(o, {
@@ -132,7 +132,7 @@
 						const s = r.c.end(d);
 						!t && s < P && (clearTimeout(S[e]), delete S[e])
 					}
-				}, D = Object(d.a)(I.x), B = Object(d.a)(I.w), N = Object(d.a)(I.v), F = (e, t) => async (s, n, {
+				}, U = Object(d.a)(I.x), B = Object(d.a)(I.w), N = Object(d.a)(I.v), F = (e, t) => async (s, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
@@ -145,7 +145,7 @@
 						} = u ? u.params : null;
 					if (!p) return;
 					const b = Object(h.s)(p);
-					s(D({
+					s(U({
 						moreCommentsId: d.id
 					}));
 					const j = await Object(f.e)(o(), b, {
@@ -175,7 +175,7 @@
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, L = Object(b.a)(O.b, g.a.upvoted), z = Object(b.a)(O.b, g.a.downvoted), M = Object(d.a)(I.j), K = Object(d.a)(I.i), $ = Object(d.a)(I.e), H = Object(d.a)(I.f), V = (Object(d.a)(I.c), Object(d.a)(I.d), ({
+				}, L = Object(b.a)(O.b, g.a.upvoted), z = Object(b.a)(O.b, g.a.downvoted), M = Object(d.a)(I.j), V = Object(d.a)(I.i), K = Object(d.a)(I.e), $ = Object(d.a)(I.f), H = (Object(d.a)(I.c), Object(d.a)(I.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -191,7 +191,7 @@
 							commentsPageKey: t
 						}),
 						a = c.depth;
-					n($({
+					n(K({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -200,7 +200,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(H({
+					s($({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -216,7 +216,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o($({
+					o(K({
 						commentId: c,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -361,7 +361,7 @@
 						commentId: e
 					});
 					if (!i) return;
-					const l = s === o.Ub.Snoozed,
+					const l = s === o.Vb.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -392,8 +392,8 @@
 					n(Object(j.i)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === o.C.ADMIN,
-							isMod: t === o.C.MODERATOR,
+							isAdmin: t === o.D.ADMIN,
+							isMod: t === o.D.MODERATOR,
 							isStickied: !!s
 						}
 					})), s && u && u !== e && n(Object(j.i)({
@@ -576,7 +576,7 @@
 					});
 					const f = await (async (e, t, s) => Object(r.a)(Object(d.a)(e, [c.a]), {
 						endpoint: Object(i.a)(`${e.apiUrl}/api/presence`),
-						method: o.eb.POST,
+						method: o.fb.POST,
 						data: {
 							user_fullnames: t.join(","),
 							subreddit_fullname: s || ""
@@ -666,7 +666,7 @@
 			class C extends o.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? i.Ub.None : i.Ub.Snoozed;
+						const e = this.props.isSnoozed ? i.Vb.None : i.Vb.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(j.l)(Object(O.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -710,10 +710,10 @@
 			var T = I(Object(p.c)(C)),
 				k = s("./src/reddit/featureFlags/index.ts"),
 				P = s("./src/reddit/components/Reports/index.m.less"),
-				U = s.n(P);
+				A = s.n(P);
 			const {
-				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = d.a.div("ReportText", U.a), B = d.a.div("ReportsTitle", U.a);
+				fbt: D
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.div("ReportText", A.a), B = d.a.div("ReportsTitle", A.a);
 
 			function N(e) {
 				const {
@@ -725,24 +725,24 @@
 				return o.a.createElement("div", {
 					className: t
 				}, s && s.length > 0 && o.a.createElement("div", {
-					className: U.a.Reports
-				}, o.a.createElement(B, null, A._("Moderator Reports", null, {
+					className: A.a.Reports
+				}, o.a.createElement(B, null, D._("Moderator Reports", null, {
 					hk: "3hZ0oX"
-				})), s.map(([e, t]) => o.a.createElement(D, {
+				})), s.map(([e, t]) => o.a.createElement(U, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), n && n.length > 0 && o.a.createElement("div", {
-					className: U.a.Reports
-				}, o.a.createElement(B, null, A._("User Reports", null, {
+					className: A.a.Reports
+				}, o.a.createElement(B, null, D._("User Reports", null, {
 					hk: "2KeCLz"
 				})), o.a.createElement("div", {
-					className: U.a.UserReports
+					className: A.a.UserReports
 				}, n.map(([e, t, s, n]) => c && void 0 !== s && n ? o.a.createElement(T, {
 					key: `user-${e}`,
 					reason: e,
 					amount: t,
 					reportedThingId: d,
 					isSnoozed: s
-				}) : o.a.createElement(D, {
+				}) : o.a.createElement(U, {
 					key: `user-${e}`
 				}, `${t}: ${e}`)))))
 			}
@@ -857,42 +857,42 @@
 				m = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const u = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/save`),
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				p = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/unsave`),
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				b = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/lock`),
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				f = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/unlock`),
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				O = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/approve`),
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				j = (e, t, s) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/remove`),
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t,
 						spam: s
@@ -900,21 +900,21 @@
 				}),
 				x = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				h = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
 				}),
 				v = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t
 					}
@@ -924,14 +924,14 @@
 					return d && (c = Object(a.a)(c)), Object(r.a)(e, {
 						data: s,
 						endpoint: c,
-						method: o.eb.POST,
+						method: o.fb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
 				E = (e, t, s, n) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/distinguish/${s}`),
-					method: o.eb.POST,
+					method: o.fb.POST,
 					data: {
 						id: t,
 						sticky: n
@@ -1216,4 +1216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.80ed6fa554036d7426d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.db528909d0e1238c9945.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.3787da8c42526354c6a2.js
-// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.7b48997a31ff70c6e85b.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -87,7 +87,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.eb.GET
+								method: r.fb.GET
 							});
 						n.ok && n.body && e(u(n.body))
 					}
@@ -136,9 +136,9 @@
 			})), n.d(t, "t", (function() {
 				return O
 			})), n.d(t, "u", (function() {
-				return x
-			})), n.d(t, "v", (function() {
 				return g
+			})), n.d(t, "v", (function() {
+				return x
 			})), n.d(t, "w", (function() {
 				return N
 			})), n.d(t, "x", (function() {
@@ -164,8 +164,8 @@
 				h = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				y = "GOVERNANCE__TRANSFER_PENDING",
 				O = "GOVERNANCE__TRANSFER_SUCCESS",
-				x = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				g = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				g = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				x = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				j = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
@@ -193,7 +193,7 @@
 			})), n.d(t, "b", (function() {
 				return y
 			})), n.d(t, "c", (function() {
-				return x
+				return g
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "g", (function() {
@@ -225,8 +225,8 @@
 			const h = Object(s.a)(E.b),
 				y = Object(s.a)(E.c),
 				O = Object(s.a)(E.e),
-				x = (Object(s.a)(E.f), Object(s.a)(E.g), Object(s.a)(E.h)),
-				g = Object(s.a)(E.i),
+				g = (Object(s.a)(E.f), Object(s.a)(E.g), Object(s.a)(E.h)),
+				x = Object(s.a)(E.i),
 				N = Object(s.a)(E.j),
 				j = Object(s.a)(E.k),
 				k = Object(s.a)(E.q),
@@ -276,7 +276,7 @@
 							} = c, t = s.posts.models[e];
 							t && t.voteState === v.a.notVoted && n(Object(a.bb)(e))
 						}
-					} else n(g({
+					} else n(x({
 						pollId: e,
 						error: i.error || i.errors[0].message
 					})), Object(_.a)(n, i.error || i.errors[0].messsage)
@@ -439,8 +439,8 @@
 			! function(e) {
 				e.Initial = "initial_distribution", e.Mod = "moderator_election"
 			}(r || (r = {}));
-			var x = n("./src/reddit/selectors/crypto/claims.ts"),
-				g = n("./src/reddit/selectors/user.ts"),
+			var g = n("./src/reddit/selectors/crypto/claims.ts"),
+				x = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/higherOrderComponents/asTooltip.tsx"),
 				j = n("./src/lib/copyToClipboard/index.ts"),
 				k = n("./src/reddit/actions/governance/errorToast.ts"),
@@ -599,7 +599,7 @@
 				const {
 					claimablePoints: t,
 					subredditId: n
-				} = e, [r, s] = Object(o.useState)(!1), c = Object(a.e)(e => Object(x.a)(e, {
+				} = e, [r, s] = Object(o.useState)(!1), c = Object(a.e)(e => Object(g.a)(e, {
 					subredditId: n
 				}));
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
@@ -666,7 +666,7 @@
 						wallet: v
 					} = this.props, E = v && v.inactive && function(e, t) {
 						const n = e.actionScheduledAt - Date.now(),
-							o = Math.max(1, Math.floor(n / m.x)),
+							o = Math.max(1, Math.floor(n / m.y)),
 							i = 1 !== o ? s.fbt._("{numDays} day", [s.fbt._param("numDays", String(o))], {
 								hk: "20neqo"
 							}) : s.fbt._("{numDays} days", [s.fbt._param("numDays", String(o))], {
@@ -743,8 +743,8 @@
 				isEthereumProvider: (e, {
 					subredditId: t
 				}) => Object(d.a)(e, t),
-				isLoggedIn: g.K,
-				nextAvailableClaim: x.b
+				isLoggedIn: x.K,
+				nextAvailableClaim: g.b
 			});
 			var de = Object(a.b)(ce, e => ({
 					onFetchMeData: () => e(Object(p.b)()),
@@ -794,8 +794,8 @@
 					}))) : null
 				}))),
 				Oe = n("./src/reddit/actions/modal.ts"),
-				xe = n("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
-				ge = n("./src/reddit/constants/modals.ts"),
+				ge = n("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
+				xe = n("./src/reddit/constants/modals.ts"),
 				Ne = n("./src/reddit/icons/svgs/Coin/index.tsx"),
 				je = n("./src/reddit/icons/svgs/Send/index.tsx"),
 				ke = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
@@ -824,14 +824,14 @@
 					className: e.className
 				}, i.a.createElement(ve, null, Ie._("Use Points", null, {
 					hk: "2Mco3v"
-				})), m && i.a.createElement(xe.a, {
+				})), m && i.a.createElement(ge.a, {
 					onClick: () => t(Object(f.f)())
 				}, i.a.createElement(je.a, {
 					className: we.a.icon
 				}), Ie._("Transfer", null, {
 					hk: "1MQW1Y"
-				})), n && i.a.createElement(xe.a, {
-					onClick: () => t(Object(Oe.h)(ge.a.CONVERT_TO_COINS))
+				})), n && i.a.createElement(ge.a, {
+					onClick: () => t(Object(Oe.h)(xe.a.CONVERT_TO_COINS))
 				}, i.a.createElement(Ne.a, {
 					className: we.a.icon
 				}), Ie._("Convert to Reddit Coins", null, {
@@ -1187,7 +1187,7 @@
 			function i(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.eb.GET
+					method: s.fb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1209,7 +1209,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.eb.POST,
+					method: s.fb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1784,4 +1784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.3787da8c42526354c6a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.7b48997a31ff70c6e85b.js.map

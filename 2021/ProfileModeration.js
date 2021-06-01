@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.12824293a37975b39085.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.167877a05f4795323b7a.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -596,7 +596,9 @@
 						disabled: e
 					}, r.a.createElement(Y, null, r.a.createElement("label", {
 						htmlFor: o.id
-					}, r.a.createElement(z, null, o.label)), r.a.createElement(U, null, o.subtext)), r.a.createElement("div", {
+					}, r.a.createElement(z, {
+						className: o.labelClassname
+					}, o.label)), r.a.createElement(U, null, o.subtext)), r.a.createElement("div", {
 						className: B.a.Wrapper__LineBreak
 					}), r.a.createElement(J, {
 						last: t,
@@ -918,7 +920,7 @@
 						}, () => this.forceUnsticky = !1)) : k() >= y && this.setState({
 							sticky: !0
 						})
-					}, c.G), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, c.H), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -1867,4 +1869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.12824293a37975b39085.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.167877a05f4795323b7a.js.map

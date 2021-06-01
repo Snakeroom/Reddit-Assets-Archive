@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.a76a994c184d08a53e3f.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.6a662e7b6ba95748e3fb.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -991,7 +991,7 @@
 				i = n("./src/reddit/constants/headers.ts");
 			const d = async (e, t, n, d, c) => Object(s.a)(Object(o.a)(e, [i.a]), {
 				endpoint: `${r.a.metaUrl}/communities/${t}/upload-lease`,
-				method: a.eb.POST,
+				method: a.fb.POST,
 				data: {
 					filepath: n,
 					imagetype: d,
@@ -1293,4 +1293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.a76a994c184d08a53e3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.6a662e7b6ba95748e3fb.js.map

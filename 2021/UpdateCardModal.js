@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.61882ecbeb6a788b7689.js
-// Retrieved at 5/3/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.6abea95ae43c5374977d.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -974,20 +974,20 @@
 					Object(C.b)(E.a)(t()) && (e(Object(b.i)(E.a)), e(x()))
 				}, P = Object(y.a)(w.J), S = Object(y.a)(w.I), T = e => {
 					switch (e && e.error && e.error.type) {
-						case f.E.USER_DOESNT_EXIST:
-						case f.E.VALIDATION_ERROR:
+						case f.F.USER_DOESNT_EXIST:
+						case f.F.VALIDATION_ERROR:
 							return o.fbt._("Looks like you entered an invalid user.", null, {
 								hk: "Cv0iO"
 							});
-						case f.E.NO_STRIPE_SUBSCRIPTION:
+						case f.F.NO_STRIPE_SUBSCRIPTION:
 							return o.fbt._("Sorry, but there's no Stripe customer associated with this account.", null, {
 								hk: "2hv2Ey"
 							});
-						case f.E.CREDIT_CARD_FAILURE:
+						case f.F.CREDIT_CARD_FAILURE:
 							return e.error && e.error.fields && e.error.fields[0] && e.error.fields[0].msg || o.fbt._("Something went wrong", null, {
 								hk: "ie9Ol"
 							});
-						case f.E.AUTHENTICATION_ERROR:
+						case f.F.AUTHENTICATION_ERROR:
 							return o.fbt._("There was an authentication error", null, {
 								hk: "12YR0w"
 							});
@@ -1027,10 +1027,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const U = Object(c.c)({
+			const F = Object(c.c)({
 					isPending: j.z
 				}),
-				V = Object(i.b)(U, (e, t) => ({
+				U = Object(i.b)(F, (e, t) => ({
 					closeModal: () => e(O()),
 					submitCard: t => e((e => async (t, n, {
 						apiContext: r
@@ -1073,8 +1073,8 @@
 						}
 					})(t))
 				})),
-				D = 15;
-			class F extends s.a.Component {
+				V = 15;
+			class D extends s.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						27 === e.keyCode && this.props.closeModal()
@@ -1131,14 +1131,14 @@
 						disabled: n,
 						onClick: this.handleSubmitCard
 					}, n ? s.a.createElement(L.a, {
-						sizePx: D
+						sizePx: V
 					}) : o.fbt._("update", null, {
 						hk: "4FAt0s"
 					}))))
 				}
 			}
-			const K = Object(l.injectStripe)(Object(m.a)(F));
-			t.default = V(e => s.a.createElement(l.StripeProvider, {
+			const K = Object(l.injectStripe)(Object(m.a)(D));
+			t.default = U(e => s.a.createElement(l.StripeProvider, {
 				apiKey: r.a.stripe.apiKey
 			}, s.a.createElement(l.Elements, null, s.a.createElement(K, q({}, e, {
 				withOverlay: !0,
@@ -1147,4 +1147,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.61882ecbeb6a788b7689.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.6abea95ae43c5374977d.js.map

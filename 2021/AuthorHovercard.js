@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.617b27f059c1c1d5a993.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.49bf3300679eb828c908.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -69,7 +69,7 @@
 				h = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const x = (e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
 				endpoint: Object(v.a)(Object(h.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.eb.GET,
+				method: m.fb.GET,
 				data: n
 			});
 			var _ = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -330,7 +330,7 @@
 					t.username = Object(_.a)(t.username), r(Object(i.h)(n));
 					const h = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.eb.POST,
+						method: m.fb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: n.reason,
@@ -372,7 +372,7 @@
 					const i = r().subreddits.models[e].url,
 						c = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.eb.POST,
+							method: m.fb.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -560,7 +560,7 @@
 						type: e.type
 					} : {
 						id: Object(E.m)(l(), e.name),
-						name: `${r.ac}${e.name}`,
+						name: `${r.bc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(N.K)(l())) return a(Object(d.k)({
@@ -591,7 +591,7 @@
 							subredditNames: n,
 							subscribe: s
 						}) => Object(p.a)(Object(b.a)(e, [f.a]), {
-							method: r.eb.POST,
+							method: r.fb.POST,
 							endpoint: Object(x.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: s ? "sub" : "unsub",
@@ -664,7 +664,7 @@
 							identifier: I
 						});
 					(g() || (await t(F([I], !0)), g())) && ((await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
-						method: r.eb.POST,
+						method: r.fb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -698,7 +698,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
-						method: r.eb.POST,
+						method: r.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -736,7 +736,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
-						method: r.eb.POST,
+						method: r.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -3419,7 +3419,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: r.Gb.AVATAR
+						name: r.Hb.AVATAR
 					},
 					path: i
 				};
@@ -3535,4 +3535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.617b27f059c1c1d5a993.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.49bf3300679eb828c908.js.map

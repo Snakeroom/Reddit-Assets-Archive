@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.e195b13219d30fe4a5ca.js
-// Retrieved at 4/28/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.7ce6a049b4a92bcd3d88.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/index.m.less": function(e, i, t) {
@@ -74,8 +74,8 @@
 				});
 			var g = t("./src/reddit/components/TabBadger/index.m.less"),
 				B = t.n(g);
-			const v = 12 * a.L,
-				P = 2 * a.L,
+			const v = 12 * a.M,
+				P = 2 * a.M,
 				k = 5e4;
 			class w extends n.Component {
 				constructor() {
@@ -132,4 +132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.e195b13219d30fe4a5ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.7ce6a049b4a92bcd3d88.js.map

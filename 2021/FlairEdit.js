@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.69c8efee4dc922411b04.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.38d68d1161eb8c647144.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -111,7 +111,7 @@
 				d = o("./src/reddit/constants/headers.ts");
 			const p = async (e, t) => Object(a.a)(Object(c.a)(e, [d.a]), {
 				endpoint: `${e.apiUrl}/api/v1/${t}/emojis/all`,
-				method: r.eb.GET,
+				method: r.fb.GET,
 				type: "json"
 			}).then(e => (e.ok && (e.body = (e => {
 				let t;
@@ -178,7 +178,7 @@
 						h = await Object(g.g)(m),
 						f = await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
 							endpoint: `${e.apiUrl}/api/v1/${t}/emoji_asset_upload_s3.json`,
-							method: r.eb.POST,
+							method: r.fb.POST,
 							data: {
 								filepath: o,
 								mimetype: s
@@ -212,7 +212,7 @@
 						subredditId: l
 					}).name, x = await (async (e, t, o, s, i) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
-						method: r.eb.POST,
+						method: r.fb.POST,
 						data: {
 							s3_key: o,
 							name: s,
@@ -294,7 +294,7 @@
 						}).name,
 						m = await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
 							endpoint: `${e.apiUrl}/api/v1/${o}/emoji/${t}`,
-							method: r.eb.DELETE,
+							method: r.fb.DELETE,
 							type: "json"
 						}))(n(), e, p);
 					if (m.ok) {
@@ -322,7 +322,7 @@
 						}).name;
 					if ((await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
 							endpoint: `${e.apiUrl}/api/enable_emojis_in_sr.json`,
-							method: r.eb.POST,
+							method: r.fb.POST,
 							data: {
 								subreddit: t,
 								enable: o
@@ -347,7 +347,7 @@
 						}).name;
 					(await (async (e, t, o) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji_custom_size`,
-						method: r.eb.POST,
+						method: r.fb.POST,
 						data: o
 					}))(n(), p, t)).ok ? o(z({
 						subredditId: e,
@@ -367,7 +367,7 @@
 						}).name;
 					(await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${o}/emoji_permissions.json`,
-						method: r.eb.POST,
+						method: r.fb.POST,
 						data: {
 							name: t,
 							post_flair_allowed: s.postFlairAllowed,
@@ -1780,4 +1780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.69c8efee4dc922411b04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.38d68d1161eb8c647144.js.map

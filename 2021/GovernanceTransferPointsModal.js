@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.d4c6f8e273a6539509bc.js
-// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.4e5d6d6b40d4fcabfef2.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, n) {
@@ -147,10 +147,10 @@
 								}
 								return n
 							}
-						}], h = {}, f = [], b = 0; b < p.length; ++b)
+						}], f = {}, h = [], b = 0; b < p.length; ++b)
 						for (var v = p[b], g = v.bits, x = 0; x < g.length; ++x) {
 							var E = v.name + "_" + g[x];
-							f.push(E), h[E] = v.createMethod(g[x], v.padding)
+							h.push(E), f[E] = v.createMethod(g[x], v.padding)
 						}
 
 					function y(e, t, n) {
@@ -213,12 +213,12 @@
 						return a && (e = i << 2, t = r[o], a > 0 && (c[e] = 255 & t), a > 1 && (c[e + 1] = t >> 8 & 255), a > 2 && (c[e + 2] = t >> 16 & 255)), c
 					};
 					var N = function(e) {
-						var t, n, r, s, a, o, c, d, l, u, m, p, h, f, b, v, g, x, E, y, N, I, _, C, w, j, O, A, T, k, M, P, R, S, U, D, L, G, B, V, F, W, H, z, q, X, Y, Z, $, J, K, Q, ee, te, ne, re, se, ae, oe, ie, ce, de, le;
-						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], d = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), n = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (d << 1 | l >>> 31), n = a ^ (l << 1 | d >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = o ^ (u << 1 | m >>> 31), n = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = d ^ (p << 1 | h >>> 31), n = l ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = u ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, f = e[0], b = e[1], X = e[11] << 4 | e[10] >>> 28, Y = e[10] << 4 | e[11] >>> 28, A = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, S = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, Z = e[22] << 10 | e[23] >>> 22, $ = e[23] << 10 | e[22] >>> 22, k = e[33] << 13 | e[32] >>> 19, M = e[32] << 13 | e[33] >>> 19, de = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, x = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, K = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, C = e[6] << 28 | e[7] >>> 4, w = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, G = e[26] << 25 | e[27] >>> 7, B = e[27] << 25 | e[26] >>> 7, y = e[36] << 21 | e[37] >>> 11, N = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, q = e[9] << 27 | e[8] >>> 5, j = e[18] << 20 | e[19] >>> 12, O = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, V = e[38] << 8 | e[39] >>> 24, F = e[39] << 8 | e[38] >>> 24, I = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = f ^ ~v & x, e[1] = b ^ ~g & E, e[10] = C ^ ~j & A, e[11] = w ^ ~O & T, e[20] = S ^ ~D & G, e[21] = U ^ ~L & B, e[30] = z ^ ~X & Z, e[31] = q ^ ~Y & $, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & oe, e[2] = v ^ ~x & y, e[3] = g ^ ~E & N, e[12] = j ^ ~A & k, e[13] = O ^ ~T & M, e[22] = D ^ ~G & V, e[23] = L ^ ~B & F, e[32] = X ^ ~Z & J, e[33] = Y ^ ~$ & K, e[42] = re ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = x ^ ~y & I, e[5] = E ^ ~N & _, e[14] = A ^ ~k & P, e[15] = T ^ ~M & R, e[24] = G ^ ~V & W, e[25] = B ^ ~F & H, e[34] = Z ^ ~J & Q, e[35] = $ ^ ~K & ee, e[44] = ae ^ ~ie & de, e[45] = oe ^ ~ce & le, e[6] = y ^ ~I & f, e[7] = N ^ ~_ & b, e[16] = k ^ ~P & C, e[17] = M ^ ~R & w, e[26] = V ^ ~W & S, e[27] = F ^ ~H & U, e[36] = J ^ ~Q & z, e[37] = K ^ ~ee & q, e[46] = ie ^ ~de & te, e[47] = ce ^ ~le & ne, e[8] = I ^ ~f & v, e[9] = _ ^ ~b & g, e[18] = P ^ ~C & j, e[19] = R ^ ~w & O, e[28] = W ^ ~S & D, e[29] = H ^ ~U & L, e[38] = Q ^ ~z & X, e[39] = ee ^ ~q & Y, e[48] = de ^ ~te & re, e[49] = le ^ ~ne & se, e[0] ^= i[r], e[1] ^= i[r + 1]
+						var t, n, r, s, a, o, c, d, l, u, m, p, f, h, b, v, g, x, E, y, N, I, _, C, w, j, O, A, T, k, M, P, R, S, U, D, L, G, B, V, F, W, H, z, q, X, Y, Z, $, J, K, Q, ee, te, ne, re, se, ae, oe, ie, ce, de, le;
+						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], d = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), n = (f = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (d << 1 | l >>> 31), n = a ^ (l << 1 | d >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = o ^ (u << 1 | m >>> 31), n = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = d ^ (p << 1 | f >>> 31), n = l ^ (f << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = u ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, h = e[0], b = e[1], X = e[11] << 4 | e[10] >>> 28, Y = e[10] << 4 | e[11] >>> 28, A = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, S = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, Z = e[22] << 10 | e[23] >>> 22, $ = e[23] << 10 | e[22] >>> 22, k = e[33] << 13 | e[32] >>> 19, M = e[32] << 13 | e[33] >>> 19, de = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, x = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, K = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, C = e[6] << 28 | e[7] >>> 4, w = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, G = e[26] << 25 | e[27] >>> 7, B = e[27] << 25 | e[26] >>> 7, y = e[36] << 21 | e[37] >>> 11, N = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, q = e[9] << 27 | e[8] >>> 5, j = e[18] << 20 | e[19] >>> 12, O = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, V = e[38] << 8 | e[39] >>> 24, F = e[39] << 8 | e[38] >>> 24, I = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = h ^ ~v & x, e[1] = b ^ ~g & E, e[10] = C ^ ~j & A, e[11] = w ^ ~O & T, e[20] = S ^ ~D & G, e[21] = U ^ ~L & B, e[30] = z ^ ~X & Z, e[31] = q ^ ~Y & $, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & oe, e[2] = v ^ ~x & y, e[3] = g ^ ~E & N, e[12] = j ^ ~A & k, e[13] = O ^ ~T & M, e[22] = D ^ ~G & V, e[23] = L ^ ~B & F, e[32] = X ^ ~Z & J, e[33] = Y ^ ~$ & K, e[42] = re ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = x ^ ~y & I, e[5] = E ^ ~N & _, e[14] = A ^ ~k & P, e[15] = T ^ ~M & R, e[24] = G ^ ~V & W, e[25] = B ^ ~F & H, e[34] = Z ^ ~J & Q, e[35] = $ ^ ~K & ee, e[44] = ae ^ ~ie & de, e[45] = oe ^ ~ce & le, e[6] = y ^ ~I & h, e[7] = N ^ ~_ & b, e[16] = k ^ ~P & C, e[17] = M ^ ~R & w, e[26] = V ^ ~W & S, e[27] = F ^ ~H & U, e[36] = J ^ ~Q & z, e[37] = K ^ ~ee & q, e[46] = ie ^ ~de & te, e[47] = ce ^ ~le & ne, e[8] = I ^ ~h & v, e[9] = _ ^ ~b & g, e[18] = P ^ ~C & j, e[19] = R ^ ~w & O, e[28] = W ^ ~S & D, e[29] = H ^ ~U & L, e[38] = Q ^ ~z & X, e[39] = ee ^ ~q & Y, e[48] = de ^ ~te & re, e[49] = le ^ ~ne & se, e[0] ^= i[r], e[1] ^= i[r + 1]
 					};
-					if (s) e.exports = h;
+					if (s) e.exports = f;
 					else
-						for (b = 0; b < f.length; ++b) r[f[b]] = h[f[b]]
+						for (b = 0; b < h.length; ++b) r[h[b]] = f[h[b]]
 				}()
 			}).call(this, n("./node_modules/process/browser.js"), n("./node_modules/webpack/buildin/global.js"))
 		},
@@ -252,7 +252,7 @@
 			for (u = 0; u < 26; u++) l[String.fromCharCode(65 + u)] = String(10 + u);
 			var m, p = Math.floor((m = 9007199254740991, Math.log10 ? Math.log10(m) : Math.log(m) / Math.LN10));
 
-			function h(e) {
+			function f(e) {
 				e = (e = e.toUpperCase()).substring(4) + e.substring(0, 2) + "00";
 				var t = "";
 				for (e.split("").forEach((function(e) {
@@ -265,7 +265,7 @@
 				return r
 			}
 
-			function f(e) {
+			function h(e) {
 				var t = null;
 				if ("string" != typeof e && c.throwError("invalid address", c.INVALID_ARGUMENT, {
 						arg: "address",
@@ -275,7 +275,7 @@
 					value: e
 				});
 				else if (e.match(/^XE[0-9]{2}[0-9A-Za-z]{30,31}$/)) {
-					for (e.substring(2, 4) !== h(e) && c.throwError("bad icap checksum", c.INVALID_ARGUMENT, {
+					for (e.substring(2, 4) !== f(e) && c.throwError("bad icap checksum", c.INVALID_ARGUMENT, {
 							arg: "address",
 							value: e
 						}), t = new s.default.BN(e.substring(4), 36).toString(16); t.length < 40;) t = "0" + t;
@@ -286,13 +286,13 @@
 				});
 				return t
 			}
-			t.getAddress = f, t.getIcapAddress = function(e) {
-				for (var t = new s.default.BN(f(e).substring(2), 16).toString(36).toUpperCase(); t.length < 30;) t = "0" + t;
-				return "XE" + h("XE00" + t) + t
+			t.getAddress = h, t.getIcapAddress = function(e) {
+				for (var t = new s.default.BN(h(e).substring(2), 16).toString(36).toUpperCase(); t.length < 30;) t = "0" + t;
+				return "XE" + f("XE00" + t) + t
 			}, t.getContractAddress = function(e) {
 				if (!e.from) throw new Error("missing from address");
 				var t = e.nonce;
-				return f("0x" + o.keccak256(i.encode([f(e.from), a.stripZeros(a.hexlify(t))])).substring(26))
+				return h("0x" + o.keccak256(i.encode([h(e.from), a.stripZeros(a.hexlify(t))])).substring(26))
 			}, t.getCreate2Address = function(e) {
 				var t = e.initCodeHash;
 				e.initCode && (t ? o.keccak256(e.initCode) !== t && c.throwError("initCode/initCodeHash mismatch", c.INVALID_ARGUMENT, {
@@ -302,12 +302,12 @@
 					arg: "options",
 					value: e
 				});
-				var n = f(e.from),
+				var n = h(e.from),
 					r = a.arrayify(e.salt);
 				return 32 !== r.length && c.throwError("invalid salt", c.INVALID_ARGUMENT, {
 					arg: "options",
 					value: e
-				}), f("0x" + o.keccak256(a.concat(["0xff", n, r, t])).substring(26))
+				}), h("0x" + o.keccak256(a.concat(["0xff", n, r, t])).substring(26))
 			}
 		},
 		"./node_modules/ethers/utils/bytes.js": function(e, t, n) {
@@ -437,7 +437,7 @@
 				return e
 			}
 
-			function h(e) {
+			function f(e) {
 				var t, n = 0,
 					r = "0x",
 					a = "0x";
@@ -476,8 +476,8 @@
 						value: e
 					}); e.length > 3 && "0x0" === e.substring(0, 3);) e = "0x" + e.substring(3);
 				return e
-			}, t.hexZeroPad = p, t.splitSignature = h, t.joinSignature = function(e) {
-				return m(d([(e = h(e)).r, e.s, e.recoveryParam ? "0x1c" : "0x1b"]))
+			}, t.hexZeroPad = p, t.splitSignature = f, t.joinSignature = function(e) {
+				return m(d([(e = f(e)).r, e.s, e.recoveryParam ? "0x1c" : "0x1b"]))
 			}
 		},
 		"./node_modules/ethers/utils/keccak256.js": function(e, t, n) {
@@ -646,8 +646,8 @@
 				u = n("./src/lib/makeGqlRequest/index.ts"),
 				m = n("./src/reddit/models/Poll/index.ts"),
 				p = n("./src/reddit/endpoints/governance/requester.ts");
-			var h = n("./src/reddit/endpoints/governance/wallet.ts"),
-				f = n("./src/reddit/models/Toast/index.ts"),
+			var f = n("./src/reddit/endpoints/governance/wallet.ts"),
+				h = n("./src/reddit/models/Toast/index.ts"),
 				b = n("./src/reddit/models/Vote/index.ts"),
 				v = n("./src/reddit/selectors/crypto/points.ts"),
 				g = n("./src/reddit/actions/governance/constants.ts"),
@@ -736,7 +736,7 @@
 						...m.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
-						kind: f.b.SuccessCommunity,
+						kind: h.b.SuccessCommunity,
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(a.a)(e.amount)), r.fbt._param("tokenName", (null === (l = Object(v.b)(s(), e.subredditId)) || void 0 === l ? void 0 : l.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
@@ -747,7 +747,7 @@
 					apiContext: r
 				}) => {
 					t(M());
-					const s = await Object(h.a)(r(), e);
+					const s = await Object(f.a)(r(), e);
 					s.ok ? t(P(s.body)) : t(k({
 						error: s.error
 					}))
@@ -943,8 +943,8 @@
 				u = n("./src/reddit/constants/colors.ts"),
 				m = n("./src/reddit/controls/FormFields/index.tsx"),
 				p = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				h = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				f = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				f = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				h = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				b = n("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				v = n("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
 				g = n.n(v),
@@ -1013,7 +1013,7 @@
 					}), function(e) {
 						switch (e) {
 							case N.Error:
-								return o.a.createElement(f.a, {
+								return o.a.createElement(h.a, {
 									className: g.a.icon,
 									style: {
 										fill: u.b.notice
@@ -1032,7 +1032,7 @@
 									sizePx: 8
 								});
 							case N.Valid:
-								return o.a.createElement(h.a, {
+								return o.a.createElement(f.a, {
 									className: g.a.icon
 								});
 							default:
@@ -1121,8 +1121,8 @@
 				u = n("./src/reddit/featureFlags/index.ts"),
 				m = n("./src/reddit/helpers/governance/tokens.ts"),
 				p = n("./src/reddit/selectors/crypto/points.ts"),
-				h = n("./node_modules/reselect/es/index.js"),
-				f = n("./node_modules/bignumber.js/bignumber.js"),
+				f = n("./node_modules/reselect/es/index.js"),
+				h = n("./node_modules/bignumber.js/bignumber.js"),
 				b = n("./src/lib/classNames/index.ts"),
 				v = n("./src/lib/prettyPrintNumber/index.ts"),
 				g = n("./src/reddit/components/Governance/Token/index.tsx"),
@@ -1135,7 +1135,7 @@
 				C = n("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
 				w = n.n(C),
 				j = n("./node_modules/fbt/lib/FbtPublic.js");
-			const O = Object(h.c)({
+			const O = Object(f.c)({
 				contentId: e => e.transfers.communityPoints.contentId,
 				points: (e, {
 					subredditId: t
@@ -1155,7 +1155,7 @@
 						tabIndex: d,
 						transferIsPending: l,
 						wallet: u
-					} = e, p = (null == u ? void 0 : u.unlockedAmount) || "0", h = new f.BigNumber(t || "0"), _ = new f.BigNumber(p), C = _.isGreaterThanOrEqualTo(h), O = e.submissionEnabled && !_.isZero() && C;
+					} = e, p = (null == u ? void 0 : u.unlockedAmount) || "0", f = new h.BigNumber(t || "0"), _ = new h.BigNumber(p), C = _.isGreaterThanOrEqualTo(f), O = e.submissionEnabled && !_.isZero() && C;
 					return s.a.createElement("div", {
 						className: Object(b.a)(w.a.container, n)
 					}, s.a.createElement("div", {
@@ -1197,7 +1197,7 @@
 
 			function R(e) {
 				const t = e.amount || "0",
-					n = !new f.BigNumber(t).isZero(),
+					n = !new h.BigNumber(t).isZero(),
 					r = Object(v.a)(t);
 				return s.a.createElement("label", {
 					"aria-label": t,
@@ -1463,15 +1463,15 @@
 					}))))
 				}
 			}
-			const ue = Object(h.c)({
+			const ue = Object(f.c)({
 				contentId: e => e.transfers.communityPoints.contentId,
 				publicAddress: e => e.transfers.communityPoints.publicAddress
 			});
 			var me = Object(a.b)(ue)(le),
 				pe = n("./src/reddit/components/Governance/TransferPointsModal/index.m.less"),
-				he = n.n(pe);
+				fe = n.n(pe);
 			const {
-				fbt: fe
+				fbt: he
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			class be extends s.a.Component {
 				constructor(e) {
@@ -1512,35 +1512,35 @@
 					});
 					const i = a.blockchainProvider ? ne : D.c;
 					return s.a.createElement("div", {
-						className: he.a.container
+						className: fe.a.container
 					}, s.a.createElement(ae, {
-						className: he.a.title,
+						className: fe.a.title,
 						subredditId: o.id,
 						tokenName: a.name
 					}), s.a.createElement("div", {
-						className: he.a.inputContainer
+						className: fe.a.inputContainer
 					}, s.a.createElement(R, {
 						amount: this.state.displayAmount,
 						subredditId: o.id,
 						tabIndex: 1,
 						onChange: this.handleAmountChange
 					})), !a.blockchainProvider && s.a.createElement("div", {
-						className: he.a.explanation
-					}, fe._("Up to 49% of earned {tokenName}. Remaining are frozen.", [fe._param("tokenName", a.name)], {
+						className: fe.a.explanation
+					}, he._("Up to 49% of earned {tokenName}. Remaining are frozen.", [he._param("tokenName", a.name)], {
 						hk: "1fUxyG"
 					})), e ? s.a.createElement("div", {
-						className: he.a.explanation
+						className: fe.a.explanation
 					}, "Transfer to ", t) : s.a.createElement("div", {
-						className: he.a.recipientContainer
+						className: fe.a.recipientContainer
 					}, s.a.createElement(i, {
-						className: he.a.recipient,
+						className: fe.a.recipient,
 						initialRecipient: t,
 						tabIndex: 2,
 						onChange: this.handleRecipientChange,
 						subredditId: o.id
 					})), s.a.createElement(A, {
 						amount: this.state.tokenAmount,
-						className: he.a.controls,
+						className: fe.a.controls,
 						submissionEnabled: !!this.state.tokenAmount && this.state.recipientIsValid,
 						subredditId: o.id,
 						tabIndex: 3,
@@ -1553,7 +1553,7 @@
 					}))
 				}
 			}
-			const ve = Object(h.c)({
+			const ve = Object(f.c)({
 					customCrypto: u.d.spCustomCrypto,
 					initialRecipient: e => e.transfers.communityPoints.initialRecipient,
 					isEthereumProvider: (e, t) => {
@@ -1614,13 +1614,13 @@
 				u = n("./node_modules/reselect/es/index.js"),
 				m = n("./src/lib/classNames/index.ts"),
 				p = n("./src/reddit/actions/modal.ts"),
-				h = n("./src/reddit/selectors/activeModalId.ts"),
-				f = n("./src/higherOrderComponents/asModal/index.tsx"),
+				f = n("./src/reddit/selectors/activeModalId.ts"),
+				h = n("./src/higherOrderComponents/asModal/index.tsx"),
 				b = n("./src/reddit/controls/Button/index.tsx"),
 				v = n("./src/reddit/layout/row/Inline/index.tsx"),
 				g = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
 				x = n.n(g);
-			var E = Object(f.a)(e => {
+			var E = Object(h.a)(e => {
 					const {
 						children: t,
 						title: n
@@ -1643,7 +1643,7 @@
 				y = n("./src/reddit/controls/ErrorText/index.m.less"),
 				N = n.n(y);
 			const I = Object(u.c)({
-				activeModalId: h.a
+				activeModalId: f.a
 			});
 			class _ extends d.a.Component {
 				constructor(e) {
@@ -1749,7 +1749,7 @@
 			n.d(t, "a", (function() {
 				return p
 			})), n.d(t, "b", (function() {
-				return f
+				return h
 			})), n.d(t, "c", (function() {
 				return b
 			})), n.d(t, "d", (function() {
@@ -1776,10 +1776,10 @@
 				}).apply(this, arguments)
 			}
 			const p = o.a.input("input", u.a),
-				h = e => {
+				f = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
-				f = e => {
+				h = e => {
 					const {
 						label: t,
 						children: n,
@@ -1791,7 +1791,7 @@
 						className: Object(a.a)(u.a.inputWrapper, o, {
 							[u.a.mIsInvalid]: e.isInvalid
 						}),
-						onClick: h
+						onClick: f
 					}, s.a.createElement(p, m({
 						"aria-invalid": e.isInvalid,
 						innerRef: r
@@ -1816,7 +1816,7 @@
 							[u.a.mIsInvalid]: o,
 							[u.a.mIsRedditStyle]: c
 						}),
-						onClick: h
+						onClick: f
 					}, s.a.createElement(p, m({
 						innerRef: r
 					}, d)), e.label && s.a.createElement("label", {
@@ -1878,7 +1878,7 @@
 						placeholder: r,
 						errors: a = []
 					} = this.props;
-					return e.map((e, o) => s.a.createElement(f, {
+					return e.map((e, o) => s.a.createElement(h, {
 						inputRef: e => this.setInputRef(e, o),
 						isInvalid: !!a[o],
 						disabled: t,
@@ -1970,9 +1970,9 @@
 			})), n.d(t, "d", (function() {
 				return p
 			})), n.d(t, "c", (function() {
-				return h
-			})), n.d(t, "e", (function() {
 				return f
+			})), n.d(t, "e", (function() {
+				return h
 			})), n.d(t, "f", (function() {
 				return b
 			})), n.d(t, "m", (function() {
@@ -2051,11 +2051,11 @@
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				h = e => ({
+				f = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				f = e => ({
+				h = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
@@ -2088,7 +2088,7 @@
 			function o(e, t) {
 				return Object(a.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.eb.GET
+					method: s.fb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -2110,7 +2110,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.eb.POST,
+					method: s.fb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -2330,14 +2330,14 @@
 					l = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
 					m = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
 					p = !m && l === d.a.Stellar,
-					h = p ? null == o ? void 0 : o.issuerAddress : null == c ? void 0 : c.address,
-					f = p ? (null == o ? void 0 : o.decimals) || 7 : (null == c ? void 0 : c.decimals) || 0;
+					f = p ? null == o ? void 0 : o.issuerAddress : null == c ? void 0 : c.address,
+					h = p ? (null == o ? void 0 : o.decimals) || 7 : (null == c ? void 0 : c.decimals) || 0;
 				return {
 					blockchainProvider: l,
-					contractAddress: h || "",
+					contractAddress: f || "",
 					contracts: i,
-					decimals: f,
-					displayConversion: "1" + "0".repeat(f),
+					decimals: h,
+					displayConversion: "1" + "0".repeat(h),
 					images: e.images || u,
 					inTransition: m,
 					name: e.name,
@@ -2362,8 +2362,8 @@
 						return e
 				}
 			};
-			const h = {};
-			var f = (e = h, t) => {
+			const f = {};
+			var h = (e = f, t) => {
 				switch (t.type) {
 					case c.n: {
 						const {
@@ -2390,7 +2390,7 @@
 			t.a = Object(r.c)({
 				claims: i,
 				points: p,
-				publicWallets: f
+				publicWallets: h
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -2517,4 +2517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.d4c6f8e273a6539509bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.4e5d6d6b40d4fcabfef2.js.map

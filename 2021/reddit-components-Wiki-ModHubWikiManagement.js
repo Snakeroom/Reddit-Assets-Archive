@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.1a02e038e9126485fe0b.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.2ddc97c6d048730145f1.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -1071,10 +1071,10 @@
 							});
 							break;
 						default:
-							return p === r.Wb.WikiBanned ? s.a.createElement(se, {
+							return p === r.Xb.WikiBanned ? s.a.createElement(se, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : p === r.Wb.WikiContributors ? s.a.createElement(he, {
+							}) : p === r.Xb.WikiContributors ? s.a.createElement(he, {
 								subredditName: e.name
 							}) : h && g && k ? s.a.createElement(o.a, {
 								comparisonRevisionId: Object(m.a)(k),
@@ -1200,4 +1200,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.1a02e038e9126485fe0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.2ddc97c6d048730145f1.js.map

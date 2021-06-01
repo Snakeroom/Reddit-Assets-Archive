@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b0ce1e774b4d21e55b8d.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.524e477a9f55788dfe6d.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown", "GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -490,7 +490,7 @@
 					apiContext: r
 				}) => {
 					const a = Object(p.a)(n()),
-						s = (null == a ? void 0 : a.pennies) || c.sb,
+						s = (null == a ? void 0 : a.pennies) || c.tb,
 						l = Object(m.c)(m.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const b = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -730,8 +730,8 @@
 				D = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				R = n("./src/reddit/models/Gold/Premium/index.ts"),
 				F = n("./src/reddit/selectors/crypto/points.ts"),
-				U = n("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
-				H = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				H = n("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
+				U = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				G = n("./src/reddit/selectors/user.ts"),
 				B = n("./src/reddit/components/LottieAnimation/index.tsx"),
 				$ = n("./src/reddit/controls/Button/index.tsx"),
@@ -777,18 +777,18 @@
 				V = n("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
 				W = n.n(V);
 			const Z = Object(P.c)({
-					coinPackages: H.d,
+					coinPackages: U.d,
 					communityPointsConversionEnabled: L.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
 						var n;
 						const r = Object(N.q)(e, t);
 						return null === (n = Object(F.b)(e, null == r ? void 0 : r.id)) || void 0 === n ? void 0 : n.name
 					},
-					isFreeAwardEventEnabled: e => Object(U.a)(e) && Object(H.g)(e),
+					isFreeAwardEventEnabled: e => Object(H.a)(e) && Object(U.g)(e),
 					isPremiumSubscriber: G.t,
-					premiumPackages: H.i,
-					purchaseCatalogError: H.j,
-					purchaseCatalogPending: H.k
+					premiumPackages: U.i,
+					purchaseCatalogError: U.j,
+					purchaseCatalogPending: U.k
 				}),
 				Y = Object(v.b)(Z, e => ({
 					onClickClaimFreeAward: () => e(Object(T.h)(S.a.ECON_CLAIM_FREE_AWARD_MODAL)),
@@ -821,7 +821,7 @@
 							sendEvent: o
 						} = this.props;
 						t && t(), o(l.c());
-						const a = (null === (e = null == r ? void 0 : r.meta) || void 0 === e ? void 0 : e.name) === k.Gb.PREMIUM;
+						const a = (null === (e = null == r ? void 0 : r.meta) || void 0 === e ? void 0 : e.name) === k.Hb.PREMIUM;
 						n(this.correlationId, a)
 					}, this.handleClickFreeAward = () => {
 						const {
@@ -1194,7 +1194,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(c.a)(l);
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: r.eb.POST,
+					method: r.fb.POST,
 					endpoint: u,
 					data: d
 				}).then(i.c)
@@ -1210,7 +1210,7 @@
 					correlation_id: c
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: r.eb.POST,
+					method: r.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(i.c)
@@ -1228,7 +1228,7 @@
 					thing_id: c
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: r.eb.POST,
+					method: r.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -1248,7 +1248,7 @@
 					correlation_id: l
 				};
 				return Object(o.a)(Object(a.a)(e, [s.a]), {
-					method: r.eb.POST,
+					method: r.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(i.c)
@@ -1276,7 +1276,7 @@
 					thing_id: b
 				};
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: r.eb.POST,
+					method: r.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(i.c)
@@ -1298,7 +1298,7 @@
 					thing_id: u
 				};
 				return Object(o.a)(Object(a.a)(t, [s.a]), {
-					method: r.eb.POST,
+					method: r.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.c)
@@ -1639,4 +1639,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b0ce1e774b4d21e55b8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.524e477a9f55788dfe6d.js.map

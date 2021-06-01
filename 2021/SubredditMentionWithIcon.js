@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.49e06a5c66dcd3cd6f1a.js
-// Retrieved at 5/27/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.e8a7129b1049a764d74a.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/graphql/operations/SubredditTopContent.json": function(e) {
@@ -218,7 +218,7 @@
 						type: e.type
 					} : {
 						id: Object(y.m)(l(), e.name),
-						name: `${i.ac}${e.name}`,
+						name: `${i.bc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(g.K)(l())) return r(Object(a.k)({
@@ -249,7 +249,7 @@
 							subredditNames: s,
 							subscribe: n
 						}) => Object(m.a)(Object(p.a)(e, [h.a]), {
-							method: i.eb.POST,
+							method: i.fb.POST,
 							endpoint: Object(_.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: n ? "sub" : "unsub",
@@ -322,7 +322,7 @@
 							identifier: I
 						});
 					(E() || (await t(B([I], !0)), E())) && ((await ((e, t, s) => Object(m.a)(Object(p.a)(e, [h.a]), {
-						method: i.eb.POST,
+						method: i.fb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -356,7 +356,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: r
 					})), (await ((e, t, s) => Object(m.a)(Object(p.a)(e, [h.a]), {
-						method: i.eb.POST,
+						method: i.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -394,7 +394,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: d
 					})), (await ((e, t, s) => Object(m.a)(Object(p.a)(e, [h.a]), {
-						method: i.eb.POST,
+						method: i.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -1009,7 +1009,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object($.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object($.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object($.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.G), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.H), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -1076,7 +1076,7 @@
 					if (!r || !d || Object(I.j)(r)) return this.renderDefault();
 					const {
 						uniqueId: a
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.R.TOP), m = r.isNSFW && e || r.type === I.f.EmployeesOnly && !t || r.type === I.f.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.S.TOP), m = r.isNSFW && e || r.type === I.f.EmployeesOnly && !t || r.type === I.f.Private && !d.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: ne.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -2172,4 +2172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.49e06a5c66dcd3cd6f1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.e8a7129b1049a764d74a.js.map

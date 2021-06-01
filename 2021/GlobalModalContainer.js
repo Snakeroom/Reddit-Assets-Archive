@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GlobalModalContainer.5167400f7ad97359af7f.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GlobalModalContainer.d67f2008ad702d610675.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GlobalModalContainer"], {
 		"./src/reddit/components/ConfirmModal/index.m.less": function(e, t, n) {
@@ -71,11 +71,11 @@
 				message: o.fbt._({
 					"*": "You can only pin {number} posts to the top of your profile. To pin something new, please unpin a post first.",
 					_1: "You can only pin 1 post to the top of your profile. To pin something new, please unpin a post first."
-				}, [o.fbt._plural(c.X, "number")], {
+				}, [o.fbt._plural(c.Y, "number")], {
 					hk: "3OxzcA"
 				})
 			}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.5167400f7ad97359af7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.d67f2008ad702d610675.js.map

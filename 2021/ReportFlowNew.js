@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.7a52ced3cb76d5d87dcf.js
-// Retrieved at 5/26/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.48db99a1cfe9e1fbf0cb.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -302,12 +302,12 @@
 				I = o("./src/reddit/selectors/commentSelector.ts"),
 				E = o("./src/reddit/selectors/meta.ts"),
 				S = o("./src/reddit/selectors/posts.ts"),
-				A = o("./src/reddit/selectors/user.ts"),
-				L = o("./src/lib/lessComponent.tsx"),
+				L = o("./src/reddit/selectors/user.ts"),
+				A = o("./src/lib/lessComponent.tsx"),
 				q = o("./src/reddit/components/ReportFlow/index.m.less"),
 				D = o.n(q);
-			const N = L.a.div("ReportLoaderWrapper", D.a),
-				B = L.a.img("LoadingIcon", D.a),
+			const N = A.a.div("ReportLoaderWrapper", D.a),
+				B = A.a.img("LoadingIcon", D.a),
 				P = "2.0";
 			var T;
 			! function(e) {
@@ -343,7 +343,7 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: A.W,
+					isNightmodeOn: L.W,
 					locale: E.i
 				}),
 				K = Object(c.b)(U, (e, {
@@ -530,26 +530,28 @@
 						state: {
 							formComponent: t,
 							formState: o,
-							ctlFlowOpened: s,
-							hasLoaded: n
+							ctlFlowOpened: n,
+							hasLoaded: i
 						}
 					} = this, {
-						itemAuthor: i
+						itemAuthor: d
 					} = this.getItemMetadata();
-					return s && i ? a.a.createElement(m.b, {
+					return n && d ? a.a.createElement(m.b, {
 						withOverlay: !0,
 						overlayCustomStyles: m.a,
 						fromUserProfile: !0,
-						username: i,
+						username: d,
 						onCloseCrisisModal: this.handleReportFlowClose
-					}) : t && o && n ? a.a.createElement(b.a, {
+					}) : t && o && i ? a.a.createElement(b.a, {
 						formComponent: t,
 						formState: o,
 						onCloseClick: this.handleReportFlowClose,
 						onSubmit: this.onReportSubmit,
-						headerTitle: "Submit a Report",
+						headerTitle: s.fbt._("Submit a Report", null, {
+							hk: "2wubLC"
+						}),
 						onOpenCtlFlow: this.onOpenCtlFlow,
-						onBlockAuthor: () => this.onBlockAuthor(i),
+						onBlockAuthor: () => this.onBlockAuthor(d),
 						onResize: this.props.onResize
 					}) : a.a.createElement(N, null, a.a.createElement(B, {
 						src: e ? `${r.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${r.a.assetPath}/img/loader_2orbit_loop.gif`,
@@ -631,7 +633,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.eb.POST
+				method: s.fb.POST
 			}), l = async (e, t, o) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: o,
@@ -639,22 +641,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.eb.POST
+				method: s.fb.POST
 			}), p = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.eb.POST
+				method: s.fb.POST
 			}), u = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.eb.POST
+				method: s.fb.POST
 			}), m = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				endpoint: Object(a.a)(`${r.a.oauthUrl}/user/${t}/about`),
-				method: s.eb.GET,
+				method: s.fb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -691,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.7a52ced3cb76d5d87dcf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.48db99a1cfe9e1fbf0cb.js.map

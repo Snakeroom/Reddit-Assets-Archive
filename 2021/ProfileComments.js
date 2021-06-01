@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.9a3ba6e3f5b7e09b6b49.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.1646e025cda56d59fbd9.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -36,8 +36,8 @@
 				f = r("./src/reddit/actions/profile/index.ts"),
 				b = r("./src/reddit/actions/subreddit.ts"),
 				O = r("./src/reddit/constants/errors.ts"),
-				j = r("./src/reddit/constants/parameters.ts"),
-				y = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				y = r("./src/reddit/constants/parameters.ts"),
+				j = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = r("./src/config.ts"),
 				x = r("./src/lib/addAllowQuarantinedParam/index.ts"),
 				C = r("./src/lib/constants/index.ts"),
@@ -51,7 +51,7 @@
 				return s && (o = Object(w.a)(o)), Object(P.a)(e, {
 					data: r,
 					endpoint: o,
-					method: C.eb.GET
+					method: C.fb.GET
 				})
 			};
 			var N = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -69,7 +69,7 @@
 						params: n
 					} = e, {
 						sort: i,
-						t: y
+						t: j
 					} = Object(p.b)(o), {
 						profileName: g
 					} = n, x = Object(c.a)(`u_${g}`, i, e.queryParams), {
@@ -87,9 +87,9 @@
 						return
 					}
 					const L = {
-						...a()(e.queryParams, [...j.l, j.h]),
+						...a()(e.queryParams, [...y.l, y.h]),
 						sort: i,
-						t: Object(N.a)(i, y)
+						t: Object(N.a)(i, j)
 					};
 					t(F({
 						key: x
@@ -147,8 +147,8 @@
 						dist: b.dist,
 						sort: m,
 						t: l,
-						...a()(i, j.l),
-						layout: Object(y.O)(s, {}).toLowerCase()
+						...a()(i, y.l),
+						layout: Object(j.O)(s, {}).toLowerCase()
 					}, Object(k.a)(s));
 					if (C.ok) {
 						const t = Object(S.f)(s, {
@@ -200,8 +200,8 @@
 				f = r("./src/reddit/components/ContentGate/index.tsx"),
 				b = r("./src/reddit/components/EmptyProfile/index.ts"),
 				O = r("./src/reddit/components/GeneralCleanup/SortViewBar/index.tsx"),
-				j = r("./src/reddit/components/JumpToContent/index.tsx"),
-				y = r("./src/lib/classNames/index.ts"),
+				y = r("./src/reddit/components/JumpToContent/index.tsx"),
+				j = r("./src/lib/classNames/index.ts"),
 				g = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				x = r("./src/lib/lessComponent.tsx"),
 				C = r("./src/reddit/components/ClassicPost/index.tsx"),
@@ -286,7 +286,7 @@
 				})))
 			}));
 			const M = Object(g.a)(e => a.a.createElement("div", {
-				className: Object(y.a)(_.a.backgroundMargin, {
+				className: Object(j.a)(_.a.backgroundMargin, {
 					[_.a.isFirstInCommentList]: e.isFirstInCommentList,
 					[_.a.isLastInCommentList]: e.isLastInCommentList
 				}),
@@ -398,8 +398,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const je = Object(I.t)(),
-				ye = Object(c.a)(I.B, ee.db, (e, {
+			const ye = Object(I.t)(),
+				je = Object(c.a)(I.B, ee.db, (e, {
 					location: t
 				}) => o()([...Object(m.a)(t.search)]), I.O, (e, {
 					match: t
@@ -409,7 +409,7 @@
 					profileName: t.params.profileName
 				}), ee.K, (e, {
 					match: t
-				}) => Object(ee.e)(e, d.ac + t.params.profileName), (e, t, r, s, o, n, a, i) => {
+				}) => Object(ee.e)(e, d.bc + t.params.profileName), (e, t, r, s, o, n, a, i) => {
 					const {
 						sort: c,
 						t: d
@@ -427,14 +427,14 @@
 						timeSort: d
 					}
 				}),
-				ge = Object(i.b)(ye, (e, t) => ({
+				ge = Object(i.b)(je, (e, t) => ({
 					onLoadMore: () => e(Object(p.moreItemsRequested)()),
 					onLayoutChange: () => e(Object(p.profileCommentsRequested)({
 						...t.match,
 						queryParams: o()([...Object(m.a)(t.location.search)])
 					}))
 				}));
-			t.default = je(ge(e => {
+			t.default = ye(ge(e => {
 				const {
 					contentGateInfo: t,
 					over18Prefs: r,
@@ -466,11 +466,11 @@
 					contentGateType: ue.a.ProfileDoesNotExist,
 					profileName: l
 				});
-				const y = l.toLowerCase(),
+				const j = l.toLowerCase(),
 					g = `/user/${l}/comments/`,
 					x = {
 						listingKey: n,
-						listingName: y
+						listingName: j
 					};
 				if (!r && o && !s) return a.a.createElement(f.default, {
 					contentGateType: ue.a.Nsfw,
@@ -479,7 +479,7 @@
 				const C = {
 					sort: p,
 					baseUrl: g,
-					sortOptions: d.xb,
+					sortOptions: d.yb,
 					timeSort: u
 				};
 				return a.a.createElement(pe.a, {
@@ -488,9 +488,9 @@
 					contentNavBar: a.a.createElement(a.a.Fragment, null, a.a.createElement(de.a, {
 						profileName: l
 					})),
-					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(O.a, C), a.a.createElement(j.a, null), a.a.createElement(ce, {
+					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(O.a, C), a.a.createElement(y.a, null), a.a.createElement(ce, {
 						listingKey: n,
-						listingName: y,
+						listingName: j,
 						listingViewed: (e, t) => Object(le.o)(n, p, t, e, u),
 						noPostsComponent: () => a.a.createElement(b.b, {
 							profileName: l,
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.9a3ba6e3f5b7e09b6b49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.1646e025cda56d59fbd9.js.map

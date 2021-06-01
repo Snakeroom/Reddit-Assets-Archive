@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.aee60dfe464e47f0ea75.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.626c44b819f9269e81a5.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1386,7 +1386,9 @@
 						disabled: e
 					}, a.a.createElement(J, null, a.a.createElement("label", {
 						htmlFor: i.id
-					}, a.a.createElement(K, null, i.label)), a.a.createElement(G, null, i.subtext)), a.a.createElement("div", {
+					}, a.a.createElement(K, {
+						className: i.labelClassname
+					}, i.label)), a.a.createElement(G, null, i.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
 					}), a.a.createElement(Y, {
 						last: t,
@@ -3213,4 +3215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.aee60dfe464e47f0ea75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.626c44b819f9269e81a5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.86ee0e5a17576d749387.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.7ddfbd3c4cbec1092ba3.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -348,7 +348,7 @@
 					}))))) : null
 				}
 			}
-			var U = Object(i.b)(D, e => ({
+			var L = Object(i.b)(D, e => ({
 					onPostClick: t => {
 						e(Object(d.a)({
 							lastLoadedEnv: "server"
@@ -357,7 +357,7 @@
 						}))
 					}
 				}))(Object(u.c)(B)),
-				L = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
+				U = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
 				F = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/CommunityDescWithPosts/index.m.less"),
 				w = s.n(F);
 			const {
@@ -397,7 +397,7 @@
 						listingPosition: i,
 						numInstance: o,
 						pubsub: c
-					}, r.a.createElement(L.a, {
+					}, r.a.createElement(U.a, {
 						subredditId: u,
 						subredditName: l,
 						shouldHideBottomBorder: !0,
@@ -408,7 +408,7 @@
 						className: w.a.topPostsTitle
 					}, V._("Top post", null, {
 						hk: "3BdOuj"
-					})), a.slice(0, 1).map(e => r.a.createElement(U, {
+					})), a.slice(0, 1).map(e => r.a.createElement(L, {
 						key: e,
 						postId: e,
 						shouldHideBottomBorder: !0,
@@ -684,7 +684,7 @@
 					let p, m;
 					if (this.state.mounted || b === i.a.Live) p = function(e, t, s) {
 						const n = Object(i.e)(e, t),
-							r = new Date(e * c.Kb);
+							r = new Date(e * c.Lb);
 						let a;
 						return n === i.a.Live || s ? o.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -1222,4 +1222,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.86ee0e5a17576d749387.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.7ddfbd3c4cbec1092ba3.js.map

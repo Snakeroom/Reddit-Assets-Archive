@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.ffb25ae56a433bf4001a.js
-// Retrieved at 5/3/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.bf3117ca6502bd896ba5.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -15,11 +15,11 @@
 			})), r.d(t, "cardNameEmpty", (function() {
 				return b
 			})), r.d(t, "cardElementChange", (function() {
-				return m
-			})), r.d(t, "stripeTokenPending", (function() {
-				return O
-			})), r.d(t, "stripeTokenError", (function() {
 				return f
+			})), r.d(t, "stripeTokenPending", (function() {
+				return m
+			})), r.d(t, "stripeTokenError", (function() {
+				return O
 			})), r.d(t, "stripeApiError", (function() {
 				return h
 			})), r.d(t, "validateAndCreateStripeToken", (function() {
@@ -52,9 +52,9 @@
 				p = Object(o.a)(i.b),
 				l = Object(o.a)(i.y),
 				b = Object(o.a)(i.a),
-				m = Object(o.a)(i.E),
-				O = Object(o.a)(i.G),
-				f = Object(o.a)(i.F),
+				f = Object(o.a)(i.E),
+				m = Object(o.a)(i.G),
+				O = Object(o.a)(i.F),
 				h = Object(o.a)(i.D),
 				_ = e => async (t, r) => {
 					const a = r(),
@@ -69,7 +69,7 @@
 						});
 					if (o.trim()) {
 						if (!s && i) return i;
-						t(f(s || void 0))
+						t(O(s || void 0))
 					} else {
 						const e = n.fbt._("Your card’s name field is incomplete", null, {
 							hk: "VBdRU"
@@ -111,9 +111,9 @@
 		"./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "openPremiumPurchaseModal", (function() {
-				return O
+				return m
 			})), r.d(t, "closePremiumPurchaseModal", (function() {
-				return f
+				return O
 			})), r.d(t, "stripePremiumPurchaseRequested", (function() {
 				return h
 			})), r.d(t, "paymentBlobCreated", (function() {
@@ -132,23 +132,23 @@
 				p = r("./src/reddit/endpoints/gold/purchase.ts"),
 				l = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				b = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				m = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const O = Object(o.a)(m.t),
-				f = Object(o.a)(m.e),
+				f = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			const m = Object(o.a)(f.t),
+				O = Object(o.a)(f.e),
 				h = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const o = Object(b.a)(r()),
-						c = (null == o ? void 0 : o.pennies) || i.sb,
+						c = (null == o ? void 0 : o.pennies) || i.tb,
 						u = Object(l.c)(l.a.GoldPayment);
 					t(Object(s.stripeTokenPending)());
-					const m = await t(Object(s.validateAndCreateStripeToken)(e));
-					if (m) try {
+					const f = await t(Object(s.validateAndCreateStripeToken)(e));
+					if (f) try {
 						const e = await Object(p.g)({
 							context: n(),
 							correlationId: u,
 							pennies: c,
-							token: m
+							token: f
 						});
 						if (e.error) {
 							const r = Object(d.a)(e.error);
@@ -156,8 +156,8 @@
 						} else t(Object(s.paymentCompleted)({
 							confirmed: !1
 						}))
-					} catch (O) {
-						const e = Object(d.a)(O);
+					} catch (m) {
+						const e = Object(d.a)(m);
 						t(Object(s.stripeApiError)(e))
 					} else {
 						const e = a.fbt._("Looks like something went wrong validating your credit card.", null, {
@@ -165,13 +165,13 @@
 						});
 						t(Object(s.stripeApiError)(e))
 					}
-				}, _ = Object(o.a)(m.v), j = ({
+				}, _ = Object(o.a)(f.v), j = ({
 					packageId: e,
 					correlationId: t
 				}) => async (r, a, {
 					apiContext: o
 				}) => {
-					r(O({
+					r(m({
 						packageId: e,
 						correlationId: t
 					}));
@@ -206,7 +206,7 @@
 			})), r.d(t, "d", (function() {
 				return b
 			})), r.d(t, "e", (function() {
-				return m
+				return f
 			}));
 			var n = r("./src/lib/constants/index.ts"),
 				a = r("./src/lib/makeApiRequest/index.ts"),
@@ -226,7 +226,7 @@
 					u = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(i.a)(u);
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: p,
 					data: s
 				}).then(d.c)
@@ -242,7 +242,7 @@
 					correlation_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: s
 				}).then(d.c)
@@ -260,7 +260,7 @@
 					thing_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(d.c)
@@ -280,7 +280,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(d.c)
@@ -294,9 +294,9 @@
 				offerContext: p,
 				orderId: l,
 				pennies: b,
-				thingId: m
+				thingId: f
 			}) => {
-				const O = {
+				const m = {
 					award_id: e,
 					coins: r,
 					correlation_id: i,
@@ -305,14 +305,14 @@
 					offer_context: p,
 					order_id: l,
 					pennies: b,
-					thing_id: m
+					thing_id: f
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
-					data: O
+					data: m
 				}).then(d.c)
-			}, m = async ({
+			}, f = async ({
 				awardId: e,
 				context: t,
 				correlationId: r,
@@ -330,7 +330,7 @@
 					thing_id: p
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: l
 				}).then(d.c)
@@ -338,4 +338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.ffb25ae56a433bf4001a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.bf3117ca6502bd896ba5.js.map

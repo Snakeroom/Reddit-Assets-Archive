@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.53afcf86c39029814bec.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0402b7aebbc1ebf2adbc.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1779,7 +1779,7 @@
 						stripeErrorMessage: u,
 						subredditId: p,
 						userPowerupsData: m
-					} = e, C = Object(o.d)(), [w, j] = Object(r.useState)(b.Bb);
+					} = e, C = Object(o.d)(), [w, j] = Object(r.useState)(b.Cb);
 					Object(r.useEffect)(() => {
 						C(Object(E.d)()), C(Object(P.selectPaymentMethod)(w))
 					}, []);
@@ -1826,18 +1826,18 @@
 						onPaymentSelected: e => {
 							j(e), C(Object(P.selectPaymentMethod)(e))
 						}
-					}), w === b.Ab && u && a.a.createElement("div", {
+					}), w === b.Bb && u && a.a.createElement("div", {
 						className: ie.a.errorMessage
-					}, u), w === b.Bb && i && a.a.createElement("div", {
+					}, u), w === b.Cb && i && a.a.createElement("div", {
 						className: ie.a.errorMessage
-					}, i), w === b.Ab && a.a.createElement(N.a, {
+					}, i), w === b.Bb && a.a.createElement(N.a, {
 						nightmode: n,
 						className: ie.a.stripeForm,
 						shouldDeleteCardWithGql: !0
-					}), w === b.Bb && a.a.createElement(A, {
+					}), w === b.Cb && a.a.createElement(A, {
 						className: ie.a.button,
 						subredditId: p
-					}), w === b.Ab && a.a.createElement(oe, {
+					}), w === b.Bb && a.a.createElement(oe, {
 						className: ie.a.button,
 						subredditId: p
 					}), a.a.createElement("p", {
@@ -2641,4 +2641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.53afcf86c39029814bec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0402b7aebbc1ebf2adbc.js.map

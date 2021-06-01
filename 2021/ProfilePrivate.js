@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.2925ff47f5fcd9ed78ed.js
-// Retrieved at 5/27/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.b08914921211f5d2b892.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/graphql/operations/ProfileDownvoted.json": function(e) {
@@ -94,7 +94,7 @@
 					} = e, S = "ADMIN" === n, L = "MODERATOR" === n, E = i ? Object(v.b)(i) : void 0, T = s && s.__typename === j.c.AvailableRedditor && s.isCakeDayNow || !1, R = s && s.__typename === j.c.AvailableRedditor && s.isPremiumMember || !1, k = {
 						allAwardings: E,
 						associatedAward: t,
-						author: s && Object(O.b)(s) || b.A,
+						author: s && Object(O.b)(s) || b.B,
 						authorId: s && s.id || "",
 						body: r && r.html || "",
 						bodyMD: r && r.markdown || "",
@@ -759,7 +759,7 @@
 					}, p.a.createElement(C.a, {
 						className: K.a.seeMorePostsText,
 						to: Object(u.a)(v, {
-							type: g.Sb.Posts
+							type: g.Tb.Posts
 						})
 					}, _._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -1154,4 +1154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.2925ff47f5fcd9ed78ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.b08914921211f5d2b892.js.map

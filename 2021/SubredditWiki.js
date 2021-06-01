@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.5c1f4cfdd2b8e184bd60.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.af448b24a6f3b237e2ab.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -67,7 +67,7 @@
 			})), i.d(t, "subredditWikiDataFailed", (function() {
 				return Ve
 			})), i.d(t, "fetchSubredditWikiData", (function() {
-				return Xe
+				return $e
 			})), i.d(t, "handleWikiRedirects", (function() {
 				return ze
 			})), i.d(t, "subredditWikDataRequested", (function() {
@@ -89,8 +89,8 @@
 			var m = i("./src/reddit/actions/ads/index.ts"),
 				p = i("./src/reddit/actions/pages/subreddit.ts"),
 				k = i("./src/reddit/actions/pages/subredditWiki/constants.ts"),
-				g = i("./src/reddit/actions/toaster.ts"),
-				f = i("./src/reddit/actions/wiki/wikiBannedContributors/index.ts"),
+				f = i("./src/reddit/actions/toaster.ts"),
+				g = i("./src/reddit/actions/wiki/wikiBannedContributors/index.ts"),
 				h = i("./src/reddit/actions/wiki/wikiContributors/index.ts"),
 				w = i("./src/lib/makeGqlRequest/index.ts"),
 				O = i("./src/graphql/operations/WikiComparisonDiff.json"),
@@ -99,8 +99,8 @@
 				_ = i("./src/reddit/selectors/subredditWiki.ts");
 			const N = Object(d.a)("WIKI_DIFF_PENDING"),
 				C = Object(d.a)("WIKI_DIFF_LOADED"),
-				E = Object(d.a)("WIKI_DIFF_FAILED"),
-				j = e => async (t, i, s) => {
+				j = Object(d.a)("WIKI_DIFF_FAILED"),
+				E = e => async (t, i, s) => {
 					const n = i(),
 						r = Object(x.a)(e),
 						a = Object(_.i)(n, {
@@ -126,12 +126,12 @@
 							t = e.data.subreddit && e.data.subreddit.wiki,
 							i = t && t.page && t.page.revisionComparisonDiffHtml;
 						i ? l = i : u = {
-							type: o.E.NOT_FOUND_ERROR
+							type: o.F.NOT_FOUND_ERROR
 						}
 					} else u = c.error || {
-						type: o.E.UNKNOWN_ERROR
+						type: o.F.UNKNOWN_ERROR
 					};
-					return t(u ? E({
+					return t(u ? j({
 						...d,
 						error: u
 					}) : C({
@@ -152,8 +152,8 @@
 				B = i("./src/reddit/selectors/subreddit.ts"),
 				K = i("./src/lib/initializeClient/installReducer.ts"),
 				M = i("./node_modules/redux/es/redux.js");
-			const U = {};
-			var F = (e = U, t) => {
+			const F = {};
+			var U = (e = F, t) => {
 				switch (t.type) {
 					case "WIKI_DIFF_LOADED": {
 						const {
@@ -220,7 +220,7 @@
 				},
 				H = i("./src/reddit/actions/wiki/wikiRevisions/constants.ts");
 			const V = {};
-			var $ = (e = V, t) => {
+			var X = (e = V, t) => {
 					switch (t.type) {
 						case k.b: {
 							const {
@@ -248,11 +248,11 @@
 							return e
 					}
 				},
-				X = i("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
+				$ = i("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
 			const z = {};
 			var Q = (e = z, t) => {
 					switch (t.type) {
-						case X.c: {
+						case $.c: {
 							const {
 								settings: i,
 								pageKey: s
@@ -262,7 +262,7 @@
 								[s]: i
 							} : e
 						}
-						case X.d: {
+						case $.d: {
 							const {
 								isVisible: i,
 								editPermissions: s,
@@ -277,7 +277,7 @@
 								}
 							} : e
 						}
-						case X.b: {
+						case $.b: {
 							const {
 								editorsInfo: i,
 								afterToken: s,
@@ -294,7 +294,7 @@
 								}
 							}
 						}
-						case X.a: {
+						case $.a: {
 							const {
 								username: i,
 								pageKey: s
@@ -523,12 +523,12 @@
 							return e
 					}
 				},
-				ge = Object(M.c)({
+				fe = Object(M.c)({
 					error: me,
 					pending: ke
 				});
-			const fe = {};
-			var he = (e = fe, t) => {
+			const ge = {};
+			var he = (e = ge, t) => {
 					switch (t.type) {
 						case ce.c:
 						case ce.a: {
@@ -613,7 +613,7 @@
 				},
 				_e = Object(M.c)({
 					afterToken: le,
-					api: ge,
+					api: fe,
 					models: he,
 					userOrder: xe
 				});
@@ -634,16 +634,16 @@
 							return e
 					}
 				},
-				Ee = Object(M.c)({
+				je = Object(M.c)({
 					listing: _e,
 					search: Ce
 				}),
-				je = i("./src/reddit/actions/wiki/wikiContributors/constants.ts");
+				Ee = i("./src/reddit/actions/wiki/wikiContributors/constants.ts");
 			const Ie = {};
 			var ve = (e = Ie, t) => {
 				switch (t.type) {
-					case je.c:
-					case je.a: {
+					case Ee.c:
+					case Ee.a: {
 						const {
 							subredditName: i,
 							afterToken: s
@@ -660,7 +660,7 @@
 			const Se = {};
 			var Re = (e = Se, t) => {
 				switch (t.type) {
-					case je.b: {
+					case Ee.b: {
 						const {
 							subredditName: i,
 							error: s
@@ -670,8 +670,8 @@
 							[i]: s
 						}
 					}
-					case je.d:
-					case je.c: {
+					case Ee.d:
+					case Ee.c: {
 						const {
 							subredditName: i
 						} = t.payload;
@@ -684,12 +684,12 @@
 			const Te = {};
 			var Pe = (e = Te, t) => {
 					switch (t.type) {
-						case je.d:
-						case je.c:
-						case je.b: {
+						case Ee.d:
+						case Ee.c:
+						case Ee.b: {
 							const {
 								subredditName: i
-							} = t.payload, s = t.type === je.d;
+							} = t.payload, s = t.type === Ee.d;
 							return {
 								...e,
 								[i]: s
@@ -706,8 +706,8 @@
 			const De = {};
 			var Le = (e = De, t) => {
 				switch (t.type) {
-					case je.c:
-					case je.a: {
+					case Ee.c:
+					case Ee.a: {
 						const {
 							subredditName: i,
 							contributors: s
@@ -720,7 +720,7 @@
 							}
 						}
 					}
-					case je.e: {
+					case Ee.e: {
 						const {
 							subredditName: i,
 							contributor: s
@@ -733,7 +733,7 @@
 							}
 						}
 					}
-					case je.f: {
+					case Ee.f: {
 						const {
 							subredditName: i,
 							userId: s
@@ -750,8 +750,8 @@
 			const Ae = {};
 			var Be = (e = Ae, t) => {
 					switch (t.type) {
-						case je.c:
-						case je.a: {
+						case Ee.c:
+						case Ee.a: {
 							const {
 								subredditName: i,
 								userOrder: s
@@ -761,7 +761,7 @@
 								[i]: Oe()([...e[i] || [], ...s])
 							}
 						}
-						case je.e: {
+						case Ee.e: {
 							const {
 								subredditName: i,
 								userOrder: s
@@ -771,7 +771,7 @@
 								[i]: [...s, ...e[i] || []]
 							}
 						}
-						case je.f: {
+						case Ee.f: {
 							const {
 								subredditName: i,
 								userId: s
@@ -792,9 +792,9 @@
 					userOrder: Be
 				});
 			const Me = {};
-			var Ue = (e = Me, t) => {
+			var Fe = (e = Me, t) => {
 					switch (t.type) {
-						case je.g: {
+						case Ee.g: {
 							const {
 								subredditName: i,
 								contributor: s
@@ -808,18 +808,18 @@
 							return e
 					}
 				},
-				Fe = Object(M.c)({
+				Ue = Object(M.c)({
 					listing: Ke,
-					search: Ue
+					search: Fe
 				}),
 				qe = Object(M.c)({
-					diff: F,
+					diff: U,
 					directory: G,
-					pages: $,
+					pages: X,
 					pageSettings: Q,
 					revisions: de,
-					wikiBannedContributors: Ee,
-					wikiContributors: Fe
+					wikiBannedContributors: je,
+					wikiContributors: Ue
 				});
 			Object(K.a)({
 				pages: {
@@ -829,10 +829,10 @@
 			const Ge = Object(d.a)(k.c),
 				He = Object(d.a)(k.b),
 				Ve = Object(d.a)(k.a),
-				$e = (e, t) => !!Object(_.b)(e, {
+				Xe = (e, t) => !!Object(_.b)(e, {
 					subredditName: t
 				}),
-				Xe = e => async (t, i, n) => {
+				$e = e => async (t, i, n) => {
 					const {
 						canShowFailToast: a,
 						wikiPageName: d
@@ -858,9 +858,9 @@
 						options: u,
 						pageKey: l,
 						error: b.error || {
-							type: o.E.NOT_FOUND_ERROR
+							type: o.F.NOT_FOUND_ERROR
 						}
-					})), a && t(Object(g.f)({
+					})), a && t(Object(f.f)({
 						id: "SUBREDDIT_WIKI_DATA_ERROR_TOAST",
 						kind: D.b.Error,
 						text: s.fbt._("Something went wrong loading this page. Try again?", null, {
@@ -869,7 +869,7 @@
 						buttonText: s.fbt._("Retry", null, {
 							hk: "mgOpG"
 						}),
-						buttonAction: Xe(e)
+						buttonAction: $e(e)
 					}))), !(!b.ok || !r()(m.data.subreddit)) || !(!b.ok || !p)
 				}, ze = e => async (t, i) => {
 					const {
@@ -895,35 +895,35 @@
 						const {
 							pageName: t
 						} = e;
-						N = t === o.Wb.WikiContributors, C = t === o.Wb.WikiBanned
+						N = t === o.Xb.WikiContributors, C = t === o.Xb.WikiBanned
 					}
-					const E = r(),
-						T = (O || i) && !$e(E, d),
+					const j = r(),
+						T = (O || i) && !Xe(j, d),
 						P = !!u && !((e, t, i, s) => {
-							return i === R.j ? $e(e, t) : !!Object(_.c)(e, {
+							return i === R.j ? Xe(e, t) : !!Object(_.c)(e, {
 								subredditName: t,
 								wikiPageName: i,
 								revisionId: s
 							})
-						})(E, d, u, k),
+						})(j, d, u, k),
 						W = [];
 					W.push(n(((e, t = !1) => async (i, s) => {
 						const n = s(),
 							r = {
-								sort: o.R.HOT
+								sort: o.S.HOT
 							},
 							a = Object(c.a)(e, r.sort),
 							d = n.listings.postOrder.api.error[a],
 							u = n.listings.postOrder.api.pending[a],
 							l = !!n.listings.postOrder.ids[a];
 						return !!(u || l && !d) || (await i(Object(p.subredditDataRequested)(a, e, r, t)), !s().listings.postOrder.api.error[a])
-					})(d))), (T || P) && W.push(n(Xe({
+					})(d))), (T || P) && W.push(n($e({
 						includeDirectory: T,
 						includePageData: P,
 						revisionId: k,
 						subredditName: d,
 						wikiPageName: u
-					}))), l === R.m.Settings && u && W.push(n(Object(I.c)(d, u))), u && k && w && W.push(n(j({
+					}))), l === R.m.Settings && u && W.push(n(Object(I.c)(d, u))), u && k && w && W.push(n(E({
 						comparisonRevisionId: w,
 						revisionId: k,
 						subredditName: d,
@@ -932,7 +932,7 @@
 						isRecent: !u,
 						wikiPageName: u,
 						subredditName: d
-					}))), N && W.push(n(Object(h.e)(d))), C && W.push(n(Object(f.e)(d))), (await Promise.all(W)).every(Boolean) || n(Object(g.f)({
+					}))), N && W.push(n(Object(h.e)(d))), C && W.push(n(Object(g.e)(d))), (await Promise.all(W)).every(Boolean) || n(Object(f.f)({
 						kind: D.b.Error,
 						text: s.fbt._("Something went wrong", null, {
 							hk: "3UWos1"
@@ -998,7 +998,7 @@
 			})), i.d(t, "c", (function() {
 				return C
 			})), i.d(t, "d", (function() {
-				return j
+				return E
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1043,11 +1043,11 @@
 				},
 				p = i("./src/reddit/models/Toast/index.ts"),
 				k = i("./src/reddit/actions/wiki/wikiBannedContributors/constants.ts");
-			const g = Object(r.a)(k.d),
-				f = Object(r.a)(k.c),
+			const f = Object(r.a)(k.d),
+				g = Object(r.a)(k.c),
 				h = Object(r.a)(k.b),
 				w = e => async (t, i, s) => {
-					t(g({
+					t(f({
 						subredditName: e
 					}));
 					const r = {
@@ -1059,14 +1059,14 @@
 							s = i.data.subreddit && i.data.subreddit.wiki;
 						if (s) {
 							const i = m(s);
-							t(f({
+							t(g({
 								...i,
 								subredditName: e.toLowerCase()
 							}))
 						}
 					} else {
 						const i = a.error || {
-							type: n.E.UNKNOWN_ERROR
+							type: n.F.UNKNOWN_ERROR
 						};
 						t(h({
 							error: i,
@@ -1103,7 +1103,7 @@
 				}, x = Object(r.a)(k.e), _ = (e, t) => async (i, r, d) => {
 					const u = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/friend`,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							api_type: "json",
 							name: i.username,
@@ -1135,7 +1135,7 @@
 						}
 					} else if (u.error) {
 						let e;
-						u.error.type === n.E.USER_DOESNT_EXIST && (e = s.fbt._("That user doesn't exist", null, {
+						u.error.type === n.F.USER_DOESNT_EXIST && (e = s.fbt._("That user doesn't exist", null, {
 							hk: "1AFgzG"
 						})), i(Object(a.f)({
 							kind: p.b.Error,
@@ -1148,7 +1148,7 @@
 				}, N = Object(r.a)(k.f), C = (e, t) => async (i, r, d) => {
 					const u = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/unfriend`,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							api_type: "json",
 							id: i,
@@ -1173,7 +1173,7 @@
 						}),
 						buttonAction: C(e, t)
 					})), u.ok
-				}, E = Object(r.a)(k.g), j = (e, t) => async (i, n, r) => {
+				}, j = Object(r.a)(k.g), E = (e, t) => async (i, n, r) => {
 					const o = {
 							subredditName: e,
 							username: t
@@ -1184,7 +1184,7 @@
 						if (t.data.subreddit.wiki) {
 							const s = m(t.data.subreddit.wiki),
 								n = Object.keys(s.bannedContributors)[0];
-							i(E({
+							i(j({
 								subredditName: e.toLowerCase(),
 								bannedContributor: s.bannedContributors[n]
 							}))
@@ -1234,7 +1234,7 @@
 			})), i.d(t, "c", (function() {
 				return C
 			})), i.d(t, "d", (function() {
-				return j
+				return E
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1276,11 +1276,11 @@
 				},
 				p = i("./src/reddit/models/Toast/index.ts"),
 				k = i("./src/reddit/actions/wiki/wikiContributors/constants.ts");
-			const g = Object(r.a)(k.d),
-				f = Object(r.a)(k.c),
+			const f = Object(r.a)(k.d),
+				g = Object(r.a)(k.c),
 				h = Object(r.a)(k.b),
 				w = e => async (t, i, s) => {
-					t(g({
+					t(f({
 						subredditName: e
 					}));
 					const r = {
@@ -1292,14 +1292,14 @@
 							s = i.data.subreddit && i.data.subreddit.wiki;
 						if (s) {
 							const i = m(s);
-							t(f({
+							t(g({
 								...i,
 								subredditName: e.toLowerCase()
 							}))
 						}
 					} else {
 						const i = a.error || {
-							type: n.E.UNKNOWN_ERROR
+							type: n.F.UNKNOWN_ERROR
 						};
 						t(h({
 							error: i,
@@ -1336,7 +1336,7 @@
 				}, x = Object(r.a)(k.e), _ = (e, t) => async (i, r, d) => {
 					const u = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/friend`,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							api_type: "json",
 							name: i,
@@ -1367,9 +1367,9 @@
 					} else if (u.error) {
 						let e;
 						const t = u.error.type;
-						t === n.E.USER_DOESNT_EXIST ? e = s.fbt._("That user doesn't exist", null, {
+						t === n.F.USER_DOESNT_EXIST ? e = s.fbt._("That user doesn't exist", null, {
 							hk: "1OHcCX"
-						}) : t === n.E.BANNED_FROM_SUBREDDIT && (e = s.fbt._("That user is banned from the subreddit", null, {
+						}) : t === n.F.BANNED_FROM_SUBREDDIT && (e = s.fbt._("That user is banned from the subreddit", null, {
 							hk: "4eZcXp"
 						})), i(Object(a.f)({
 							kind: p.b.Error,
@@ -1382,7 +1382,7 @@
 				}, N = Object(r.a)(k.f), C = (e, t) => async (i, r, d) => {
 					const u = await ((e, t, i) => Object(o.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/r/${t}/api/unfriend`,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							api_type: "json",
 							id: i,
@@ -1407,7 +1407,7 @@
 						}),
 						buttonAction: C(e, t)
 					})), u.ok
-				}, E = Object(r.a)(k.g), j = (e, t) => async (i, n, r) => {
+				}, j = Object(r.a)(k.g), E = (e, t) => async (i, n, r) => {
 					const o = {
 							subredditName: e,
 							username: t
@@ -1418,7 +1418,7 @@
 						if (t.data.subreddit.wiki) {
 							const s = m(t.data.subreddit.wiki),
 								n = Object.keys(s.contributors)[0];
-							i(E({
+							i(j({
 								subredditName: e.toLowerCase(),
 								contributor: s.contributors[n]
 							}))
@@ -1462,9 +1462,9 @@
 			})), i.d(t, "b", (function() {
 				return N
 			})), i.d(t, "e", (function() {
-				return E
-			})), i.d(t, "a", (function() {
 				return j
+			})), i.d(t, "a", (function() {
+				return E
 			})), i.d(t, "d", (function() {
 				return v
 			}));
@@ -1488,7 +1488,7 @@
 					[m.a.Contributors]: "1",
 					[m.a.Mods]: "2"
 				};
-			var g = e => {
+			var f = e => {
 					const {
 						editPermissions: t,
 						editorsInfo: i,
@@ -1509,7 +1509,7 @@
 						afterToken: r.hasNextPage ? r.endCursor : null
 					}
 				},
-				f = i("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
+				g = i("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
 				h = i("./src/reddit/models/Toast/index.ts"),
 				w = i("./src/reddit/selectors/subreddit.ts"),
 				O = i("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
@@ -1525,9 +1525,9 @@
 						const e = o.body,
 							t = e.data.subreddit && e.data.subreddit.wiki;
 						if (t && t.page) {
-							const e = g(t.page.settings);
+							const e = f(t.page.settings);
 							i(y({
-								pageKey: Object(f.a)(r),
+								pageKey: Object(g.a)(r),
 								settings: e
 							}))
 						}
@@ -1544,7 +1544,7 @@
 						const i = c.body,
 							s = i.data.subreddit && i.data.subreddit.wiki;
 						if (s && s.page) {
-							const i = g(s.page.settings),
+							const i = f(s.page.settings),
 								{
 									editorsInfo: r,
 									afterToken: a
@@ -1552,7 +1552,7 @@
 							n(_({
 								editorsInfo: r,
 								afterToken: a,
-								pageKey: Object(f.a)({
+								pageKey: Object(g.a)({
 									wikiPageName: t,
 									subredditName: e
 								})
@@ -1569,7 +1569,7 @@
 						buttonAction: N(e, t, i)
 					}));
 					return c.ok
-				}, C = Object(r.a)(O.d), E = ({
+				}, C = Object(r.a)(O.d), j = ({
 					editPermissions: e,
 					isVisible: t,
 					wikiPageName: i,
@@ -1577,7 +1577,7 @@
 				}) => async (r, a, o) => {
 					const c = await (e => Object(d.a)(Object(u.a)(e.context, [l.a]), {
 						endpoint: `${e.context.apiUrl}/r/${e.subredditName}/wiki/settings/${e.wikiPageName}`,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							permlevel: k[e.editPermissions],
 							listed: e.isVisible ? "on" : void 0
@@ -1592,19 +1592,19 @@
 					return c.ok && r(C({
 						editPermissions: e,
 						isVisible: t,
-						pageKey: Object(f.a)({
+						pageKey: Object(g.a)({
 							wikiPageName: i,
 							subredditName: s
 						})
 					})), c.ok
-				}, j = ({
+				}, E = ({
 					subredditName: e,
 					username: t,
 					wikiPageName: i
 				}) => async (r, a, c) => {
 					const b = await (e => Object(d.a)(Object(u.a)(e.context, [l.a]), {
 						endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/alloweditor/add`,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							page: e.wikiPageName,
 							username: e.username
@@ -1624,7 +1624,7 @@
 						let t = s.fbt._("Something went wrong", null, {
 							hk: "8AkV3"
 						});
-						e === n.E.NOT_FOUND_ERROR && (t = s.fbt._("That user does not exist", null, {
+						e === n.F.NOT_FOUND_ERROR && (t = s.fbt._("That user does not exist", null, {
 							hk: "XDM7X"
 						})), r(Object(o.f)({
 							kind: h.b.Error,
@@ -1639,7 +1639,7 @@
 				}) => async (s, r, a) => {
 					const c = await (e => Object(d.a)(Object(u.a)(e.context, [l.a]), {
 						endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/alloweditor/del`,
-						method: n.eb.POST,
+						method: n.fb.POST,
 						data: {
 							page: e.wikiPageName,
 							username: e.username
@@ -1655,7 +1655,7 @@
 						text: "User has been successfully removed"
 					})), s(I({
 						username: t,
-						pageKey: Object(f.a)({
+						pageKey: Object(g.a)({
 							wikiPageName: i,
 							subredditName: e
 						})
@@ -1686,7 +1686,7 @@
 			i.d(t, "c", (function() {
 				return C
 			})), i.d(t, "a", (function() {
-				return j
+				return E
 			})), i.d(t, "b", (function() {
 				return v
 			}));
@@ -1703,7 +1703,7 @@
 				m = i("./src/reddit/helpers/wiki/wikiRevision.ts");
 			var p = (e, t) => Object(u.a)(Object(l.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/r/${t.subredditName}/api/wiki/hide`,
-				method: n.eb.POST,
+				method: n.fb.POST,
 				data: {
 					page: t.wikiPageName,
 					revision: Object(m.b)(t.revisionId)
@@ -1711,13 +1711,13 @@
 			});
 			var k = (e, t) => Object(u.a)(Object(l.a)(e, [b.a]), {
 				endpoint: `${e.apiUrl}/r/${t.subredditName}/api/wiki/revert`,
-				method: n.eb.POST,
+				method: n.fb.POST,
 				data: {
 					page: t.wikiPageName,
 					revision: Object(m.b)(t.revisionId)
 				}
 			});
-			var g = e => {
+			var f = e => {
 					const t = e.subreddit && e.subreddit.wiki || {},
 						i = t.pageRevisions && t.pageRevisions.revisions || t.recentRevisions;
 					if (!i) throw new Error("Invalid response");
@@ -1734,7 +1734,7 @@
 						}
 					})(i)
 				},
-				f = i("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
+				g = i("./src/reddit/helpers/wiki/makeRevisionsListingKey.ts"),
 				h = i("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
 				w = i("./src/reddit/models/Toast/index.ts"),
 				O = i("./src/reddit/selectors/subredditWiki.ts"),
@@ -1749,42 +1749,42 @@
 						isRecent: l,
 						subredditName: b,
 						wikiPageName: m
-					} = e, p = i(), k = Object(f.a)(e), h = Object(O.p)(p, {
+					} = e, p = i(), k = Object(g.a)(e), h = Object(O.p)(p, {
 						listingKey: k
 					});
 					if (!o && !!h) return !0;
 					const y = h && h.pageInfo.endCursor || void 0;
 					if (!(!h || h.pageInfo.hasNextPage)) return !0;
-					const E = {
+					const j = {
 							after: y,
 							isRecent: l,
 							subredditName: b,
 							wikiPageName: m
 						},
-						j = {
+						E = {
 							key: k,
-							options: E
+							options: j
 						};
-					t(x(j));
+					t(x(E));
 					const I = await ((e, t) => Object(d.a)(e, {
 						...c,
 						variables: t
-					}))(r.gqlContext(), E);
+					}))(r.gqlContext(), j);
 					if (I.ok) {
 						const e = I.body;
 						if (e.data.subreddit) {
-							const i = g(e.data);
+							const i = f(e.data);
 							t(_({
-								...j,
+								...E,
 								...i
 							}))
 						}
 					} else {
 						const i = I.error || {
-							type: n.E.UNKNOWN_ERROR
+							type: n.F.UNKNOWN_ERROR
 						};
 						t(N({
-							...j,
+							...E,
 							error: i
 						})), u && t(Object(a.f)({
 							kind: w.b.Error,
@@ -1798,17 +1798,17 @@
 						}))
 					}
 					return I.ok
-				}, E = Object(r.a)(y.a), j = e => async (t, i, n) => {
+				}, j = Object(r.a)(y.a), E = e => async (t, i, n) => {
 					const {
 						subredditName: r,
 						wikiPageName: d
 					} = e, c = Object(h.a)({
 						...e,
 						revisionId: void 0
-					}), u = Object(f.a)({
+					}), u = Object(g.a)({
 						...e,
 						isRecent: !1
-					}), l = Object(f.a)({
+					}), l = Object(g.a)({
 						...e,
 						isRecent: !0
 					}), b = Object(O.p)(i(), {
@@ -1829,7 +1829,7 @@
 								hk: "46i9jx"
 							})
 						}));
-						t(E({
+						t(j({
 							page: b,
 							pageKey: c,
 							pageRevisionsListingKey: u,
@@ -1845,7 +1845,7 @@
 						buttonText: s.fbt._("Retry", null, {
 							hk: "1QXiG6"
 						}),
-						buttonAction: j(e)
+						buttonAction: E(e)
 					}))
 				}, I = Object(r.a)(y.e), v = e => async (t, i, n) => {
 					const r = await p(n.apiContext(), e);
@@ -1863,7 +1863,7 @@
 						buttonText: s.fbt._("Retry", null, {
 							hk: "1QXiG6"
 						}),
-						buttonAction: j(e)
+						buttonAction: E(e)
 					}))
 				}
 		},
@@ -2055,12 +2055,12 @@
 				m = i("./src/reddit/controls/Dropdown/Row.tsx"),
 				p = i("./src/reddit/icons/fonts/index.tsx"),
 				k = i("./src/reddit/selectors/tooltip.ts"),
-				g = i("./src/reddit/components/OverflowMenu/index.m.less"),
-				f = i.n(g);
-			const h = c.a.wrapped(b.a, "_Dropdown", f.a),
+				f = i("./src/reddit/components/OverflowMenu/index.m.less"),
+				g = i.n(f);
+			const h = c.a.wrapped(b.a, "_Dropdown", g.a),
 				w = Object(l.a)(h),
-				O = c.a.button("MenuButton", f.a),
-				y = c.a.wrapped(m.b, "DropdownRow", f.a),
+				O = c.a.button("MenuButton", g.a),
+				y = c.a.wrapped(m.b, "DropdownRow", g.a),
 				x = Object(o.c)({
 					dropdownIsOpen: (e, {
 						dropdownId: t
@@ -2083,7 +2083,7 @@
 					hk: "2EnY1x"
 				}),
 				className: Object(d.a)(e.className, {
-					[f.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
+					[g.a.mIsEnabled]: !e.disabled && !e.defaultButtonOutline
 				}),
 				disabled: e.disabled,
 				onClick: N(e),
@@ -2264,9 +2264,9 @@
 				}))),
 				p = i("./src/reddit/components/SidebarFooter/index.tsx"),
 				k = i("./src/reddit/constants/componentSizes.ts"),
-				g = i("./src/reddit/contexts/PageLayer/index.tsx"),
-				f = i("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				h = i.n(f),
+				f = i("./src/reddit/contexts/PageLayer/index.tsx"),
+				g = i("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				h = i.n(g),
 				w = i("./src/lib/lessComponent.tsx");
 
 			function O() {
@@ -2291,7 +2291,7 @@
 						top: "calc(100vh - 8px)"
 					}
 				}, t)), "BackToTop", h.a),
-				E = ({
+				j = ({
 					children: e,
 					className: t,
 					isFakeOverlay: i,
@@ -2302,7 +2302,7 @@
 						[h.a.StickyStylesFakeOverlay]: !!i
 					})
 				}, e);
-			class j extends a.Component {
+			class E extends a.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > _,
@@ -2321,7 +2321,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = r()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.H), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -2348,14 +2348,14 @@
 					return o.a.createElement(N, {
 						className: s,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(E, {
+					}, o.a.createElement(j, {
 						isFakeOverlay: t,
 						isSticky: r
 					}, e, i, !n && o.a.createElement(p.a, null)), !this.props.hideBackToTop && o.a.createElement(C, null))
 				}
 			}
-			const I = Object(g.t)();
-			t.a = I(j)
+			const I = Object(f.t)();
+			t.a = I(E)
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, i) {
 			e.exports = {
@@ -2386,8 +2386,8 @@
 				m = i("./src/reddit/helpers/trackers/widgets.ts"),
 				p = i("./src/reddit/models/NewStructuredStyles/index.ts"),
 				k = i("./src/reddit/selectors/experiments/topPosts.ts"),
-				g = i("./src/reddit/selectors/structuredStyles.ts"),
-				f = i("./src/reddit/selectors/user.ts"),
+				f = i("./src/reddit/selectors/structuredStyles.ts"),
+				g = i("./src/reddit/selectors/user.ts"),
 				h = i("./src/reddit/models/Theme/index.ts"),
 				w = i("./src/reddit/models/Theme/NewColorSystem/index.ts");
 			const O = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(w.a)(e).widgetColors.sidebarWidgetBackgroundColor,
@@ -2403,17 +2403,17 @@
 			var N = i("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
 				C = i.n(N);
 			const {
-				fbt: E
-			} = i("./node_modules/fbt/lib/FbtPublic.js"), j = Object(l.t)(), I = Object(r.b)(() => Object(a.c)({
+				fbt: j
+			} = i("./node_modules/fbt/lib/FbtPublic.js"), E = Object(l.t)(), I = Object(r.b)(() => Object(a.c)({
 				forceRedditStyle: (e, t) => {
 					const i = Object(l.m)(e, t) || void 0,
-						s = t.redditStyle || Object(g.l)(e, {
+						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: i
 						}),
-						n = Object(f.W)(e);
+						n = Object(g.W)(e);
 					return s || n
 				},
-				nigtmode: f.W,
+				nigtmode: g.W,
 				subredditId: l.m,
 				topPostVariant: k.d
 			}));
@@ -2457,7 +2457,7 @@
 						title: d,
 						titleClassName: u,
 						truncateThreshold: l
-					} = this.props, m = i ? C.a.widgetContentOnly : C.a.widgetContent, p = !s && this.props.styles, k = p ? this.getWidgetBackgroundStyles() : {}, g = p ? this.getWidgetHeaderStyles() : {};
+					} = this.props, m = i ? C.a.widgetContentOnly : C.a.widgetContent, p = !s && this.props.styles, k = p ? this.getWidgetBackgroundStyles() : {}, f = p ? this.getWidgetHeaderStyles() : {};
 					return n.a.createElement("div", {
 						className: Object(o.a)(t, C.a.widgetBackground, {
 							[C.a.redditStyle]: s,
@@ -2469,7 +2469,7 @@
 						style: k
 					}, d && n.a.createElement("div", {
 						className: C.a.widgetHeader,
-						style: g
+						style: f
 					}, n.a.createElement("div", {
 						className: Object(o.a)(C.a.widgetTitle, u)
 					}, n.a.createElement(c.b, {
@@ -2485,12 +2485,12 @@
 					}, e), this.state.isTruncated && n.a.createElement(b.o, {
 						className: C.a.seeMore,
 						onClick: this.handleSeeMoreClick
-					}, E._("See More", null, {
+					}, j._("See More", null, {
 						hk: "4w47Qu"
 					})))
 				}
 			}
-			t.a = j(I(Object(d.a)(Object(u.c)(v))))
+			t.a = E(I(Object(d.a)(Object(u.c)(v))))
 		},
 		"./src/reddit/components/Wiki/CommunityWikiManagement/CommunityWikiPage/index.m.less": function(e, t, i) {
 			e.exports = {
@@ -2712,7 +2712,7 @@
 					const {
 						subreddit: t,
 						subredditName: i
-					} = e, s = Object(b.a)(i, l.R.HOT, {});
+					} = e, s = Object(b.a)(i, l.S.HOT, {});
 					return n.a.createElement(m.a, {
 						listingKey: s,
 						listingName: i.toLowerCase(),
@@ -2721,8 +2721,8 @@
 					})
 				},
 				k = i("./src/reddit/components/Wiki/WikiPageDiff/index.tsx"),
-				g = i("./src/reddit/components/Wiki/WikiPageEditor/index.tsx"),
-				f = i("./src/reddit/components/Wiki/WikiPageSource/index.tsx"),
+				f = i("./src/reddit/components/Wiki/WikiPageEditor/index.tsx"),
+				g = i("./src/reddit/components/Wiki/WikiPageSource/index.tsx"),
 				h = i("./src/reddit/constants/parameters.ts"),
 				w = i("./src/reddit/constants/wiki.ts"),
 				O = i("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -2731,8 +2731,8 @@
 				_ = i("./src/reddit/components/JumpToContent/index.tsx"),
 				N = i("./src/reddit/components/Wiki/WikiPageContent/index.tsx"),
 				C = i("./src/reddit/components/Wiki/WikiPageTopBar/index.tsx"),
-				E = i("./src/reddit/components/Wiki/CommunityWikiManagement/CommunityWikiPage/index.m.less"),
-				j = i.n(E);
+				j = i("./src/reddit/components/Wiki/CommunityWikiManagement/CommunityWikiPage/index.m.less"),
+				E = i.n(j);
 
 			function I(e) {
 				const {
@@ -2741,7 +2741,7 @@
 				} = e;
 				return s.createElement(s.Fragment, null, s.createElement(_.a, null), s.createElement(C.a, {
 					isModHub: !1,
-					className: j.a.topBar,
+					className: E.a.topBar,
 					wikiPageName: t,
 					subredditName: i
 				}), s.createElement(N.a, {
@@ -2769,7 +2769,7 @@
 					switch (r) {
 						case w.m.Create:
 						case w.m.Edit:
-							return n.a.createElement(g.a, {
+							return n.a.createElement(f.a, {
 								contentClassName: S.a.wikiPageEditorContent,
 								isCreation: r === w.m.Create,
 								subredditName: t,
@@ -2789,7 +2789,7 @@
 								revisionId: Object(y.a)(o),
 								subredditName: t,
 								wikiPageName: a
-							}) : a && (o || c) ? n.a.createElement(f.a, {
+							}) : a && (o || c) ? n.a.createElement(g.a, {
 								revisionId: o ? Object(y.a)(o) : void 0,
 								subredditName: t,
 								wikiPageName: a
@@ -2891,9 +2891,9 @@
 			})), i.d(t, "j", (function() {
 				return k
 			})), i.d(t, "m", (function() {
-				return g
-			})), i.d(t, "k", (function() {
 				return f
+			})), i.d(t, "k", (function() {
+				return g
 			})), i.d(t, "l", (function() {
 				return h
 			})), i.d(t, "e", (function() {
@@ -2951,7 +2951,7 @@
 					} = t;
 					return !!e.pages.subredditWiki.wikiContributors.listing.api.pending[i.toLowerCase()]
 				},
-				g = Object(s.a)((e, {
+				f = Object(s.a)((e, {
 					subredditName: t
 				}) => {
 					const i = t.toLowerCase(),
@@ -2960,7 +2960,7 @@
 						a = s.models[i];
 					return n ? n.map(e => a[e]) : r
 				}),
-				f = (e, t) => {
+				g = (e, t) => {
 					const {
 						subredditName: i
 					} = t;
@@ -3002,4 +3002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.5c1f4cfdd2b8e184bd60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.af448b24a6f3b237e2ab.js.map

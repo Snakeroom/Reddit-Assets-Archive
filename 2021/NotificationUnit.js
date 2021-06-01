@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.0a33a89cc67c33c070e8.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.280af19dfb524685f2a3.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, n) {
@@ -323,7 +323,7 @@
 					title: E
 				} = e, N = n || u || p, x = Object(o.a)(m.a.menuButton, {
 					[m.a.isOpen]: c
-				}), h = Date.parse(f) / s.Kb;
+				}), h = Date.parse(f) / s.Lb;
 				return a.a.createElement("span", {
 					className: m.a.topBar
 				}, a.a.createElement("span", null, a.a.createElement("span", {
@@ -414,16 +414,16 @@
 						isToggleNotificationUpdateEligible: W,
 						isToggleUpdateFromSubredditEligible: z,
 						icon: Z,
-						id: K,
-						readAt: Y,
+						id: Y,
+						readAt: K,
 						sentAt: G,
 						title: q
-					} = D, $ = B && B.messageType, J = B && B.comment && B.comment.parent && B.comment.parent.id, Q = B && B.post && B.post.id, X = B && B.post, ee = B && B.subreddit && B.subreddit.id, te = null == B ? void 0 : B.isBodyHidden, ne = null == B ? void 0 : B.isPostHidden, ie = !Y, ae = `notif-${k?"tooltip":""}-menu-${K}`, oe = ae === y, se = $ === f.a.CommentReply ? J : Q, re = Object(r.a)(e.className, O.a.notificationItem, {
+					} = D, $ = B && B.messageType, J = B && B.comment && B.comment.parent && B.comment.parent.id, Q = B && B.post && B.post.id, X = B && B.post, ee = B && B.subreddit && B.subreddit.id, te = null == B ? void 0 : B.isBodyHidden, ne = null == B ? void 0 : B.isPostHidden, ie = !K, ae = `notif-${k?"tooltip":""}-menu-${Y}`, oe = ae === y, se = $ === f.a.CommentReply ? J : Q, re = Object(r.a)(e.className, O.a.notificationItem, {
 						[O.a.unread]: ie,
 						[O.a.isNightMode]: _
 					}), de = {
-						id: K,
-						isClicked: !!Y,
+						id: Y,
+						isClicked: !!K,
 						isViewed: !0,
 						type: $
 					}, le = B.messageType === f.a.AwardReceived, ce = le ? null === (t = null == B ? void 0 : B.awarding) || void 0 === t ? void 0 : t.id : "", me = null === (i = null === (n = null == B ? void 0 : B.awarding) || void 0 === n ? void 0 : n.target) || void 0 === i ? void 0 : i.permalink, ue = null === (h = null == B ? void 0 : B.awarding) || void 0 === h ? void 0 : h.award.id;
@@ -439,7 +439,7 @@
 							}))
 						},
 						fe = () => {
-							e.markNotificationAsRead(K, $)
+							e.markNotificationAsRead(Y, $)
 						};
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("li", {
 						className: re
@@ -506,7 +506,7 @@
 							e.isInTooltip && e.setActiveOverflowMenuId(w), e.disableNotificationUpdates(se), be(p.c.HideSubreddit)
 						},
 						hideNotification: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(w), e.hideNotification(K), be(p.c.HideUpdates)
+							e.isInTooltip && e.setActiveOverflowMenuId(w), e.hideNotification(Y), be(p.c.HideUpdates)
 						},
 						hideSubredditNotifications: () => {
 							const t = p.c.HideSubreddit;
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.0a33a89cc67c33c070e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.280af19dfb524685f2a3.js.map

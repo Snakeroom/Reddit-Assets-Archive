@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.1df6abb2f6b0285c677e.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.ad12cdbdeca01b12612e.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -53,19 +53,20 @@
 			var d, l = s("./node_modules/fbt/lib/FbtPublic.js"),
 				u = s("./node_modules/p-debounce/index.js"),
 				m = s.n(u),
-				b = s("./src/reddit/constants/keycodes.ts"),
-				p = s("./src/lib/makeGqlRequest/index.ts"),
-				h = s("./src/lib/sentry/index.ts"),
-				g = s("./src/graphql/operations/GeoPlaceAutocomplete.json");
+				b = s("./src/lib/hooks/useOnClickOutside.ts"),
+				p = s("./src/reddit/constants/keycodes.ts"),
+				h = s("./src/lib/makeGqlRequest/index.ts"),
+				g = s("./src/lib/sentry/index.ts"),
+				f = s("./src/graphql/operations/GeoPlaceAutocomplete.json");
 			! function(e) {
 				e.GoogleMaps = "GOOGLE_MAPS", e.Geonames = "GEONAMES"
 			}(d || (d = {}));
-			const f = (e, t) => async s => {
+			const x = (e, t) => async s => {
 				let n;
 				try {
 					n = await async function(e, t) {
-						return Object(p.a)(e, {
-							...g,
+						return Object(h.a)(e, {
+							...f,
 							variables: t
 						})
 					}(e(), {
@@ -73,12 +74,11 @@
 						sessionId: t
 					})
 				} catch (r) {
-					return h.c.captureException(r), []
+					return g.c.captureException(r), []
 				}
 				return n.body.data.geoPlaceAutocomplete || []
 			};
-			var x = s("./src/reddit/hooks/useGqlContext.ts"),
-				_ = s("./src/reddit/hooks/useOnClickOutside.ts"),
+			var _ = s("./src/reddit/hooks/useGqlContext.ts"),
 				E = s("./src/reddit/icons/svgs/Location/index.tsx"),
 				S = s("./src/reddit/components/GeoForm/index.m.less"),
 				y = s.n(S);
@@ -92,14 +92,14 @@
 					onFocus: c,
 					sessionId: d,
 					className: u
-				} = e, p = Object(x.a)(), [h, g] = Object(n.useState)(!1), _ = function(e, t, s) {
+				} = e, b = Object(_.a)(), [h, g] = Object(n.useState)(!1), f = function(e, t, s) {
 					const [r, i] = Object(n.useState)([]), a = Object(n.useMemo)(() => m()(s, 300), [s]);
 					return Object(n.useEffect)(() => {
 						e && t && a(e).then(e => {
 							i(e)
 						}).catch(() => i([]))
 					}, [e]), r
-				}(t, h, f(p, d)), {
+				}(t, h, x(b, d)), {
 					highlightValue: S,
 					selectedIndex: v,
 					onKeyDown: j,
@@ -111,18 +111,18 @@
 						highlightValue: c,
 						selectedIndex: r,
 						onKeyDown: n => {
-							if (n.key === b.b.ArrowDown) {
+							if (n.key === p.b.ArrowDown) {
 								const t = Math.min(r + 1, e.length - 1);
 								i(t), d(e[t])
-							} else if (n.key === b.b.ArrowUp) {
+							} else if (n.key === p.b.ArrowUp) {
 								const t = Math.max(r - 1, -1);
 								i(t), d(e[t])
-							} else n.key === b.b.Enter && r > -1 ? (i(-1), t(e[r].name), s(e[r]), o(!0), n.preventDefault()) : n.key === b.b.Escape ? (i(-1), o(!0)) : d(void 0)
+							} else n.key === p.b.Enter && r > -1 ? (i(-1), t(e[r].name), s(e[r]), o(!0), n.preventDefault()) : n.key === p.b.Escape ? (i(-1), o(!0)) : d(void 0)
 						},
 						isClosed: a,
 						setClosed: o
 					}
-				}(_, s, i), N = `location-input-${d}`;
+				}(f, s, i), N = `location-input-${d}`;
 				return r.a.createElement("div", {
 					className: y.a.autocompleteInput
 				}, r.a.createElement("label", {
@@ -146,12 +146,12 @@
 						g(!0), c()
 					},
 					onBlur: () => g(!1)
-				}), _.length && !O ? r.a.createElement(k, {
+				}), f.length && !O ? r.a.createElement(k, {
 					id: d,
-					items: _.map(e => e.name),
+					items: f.map(e => e.name),
 					selectedIndex: v,
 					selectValue: e => {
-						s(_[e].name), i(_[e]), C(!0)
+						s(f[e].name), i(f[e]), C(!0)
 					},
 					onClickOutside: () => C(!0)
 				}) : null)
@@ -165,7 +165,7 @@
 					selectValue: i,
 					onClickOutside: a
 				} = e;
-				return Object(_.a)(`autocomplete-dropdown-${t}`, a), r.a.createElement("ul", {
+				return Object(b.a)(`autocomplete-dropdown-${t}`, a), r.a.createElement("ul", {
 					className: y.a.autocompleteDropdown,
 					id: `autocomplete-dropdown-${t}`
 				}, s.map((e, t) => r.a.createElement("li", {
@@ -498,7 +498,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.H), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -1761,4 +1761,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.1df6abb2f6b0285c677e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.ad12cdbdeca01b12612e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.4d1fa02eea0b33891747.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.020cd715dd7714f0187d.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -65,10 +65,10 @@
 				h = n("./src/reddit/helpers/trackers/givePremium.ts"),
 				x = n("./src/lib/constants/index.ts"),
 				b = n("./src/lib/makeActionCreator/index.ts"),
-				E = n("./src/reddit/actions/toaster.ts"),
-				f = n("./src/lib/makeApiRequest/index.ts"),
-				k = n("./src/lib/omitHeaders/index.ts"),
-				g = n("./src/reddit/constants/headers.ts"),
+				f = n("./src/reddit/actions/toaster.ts"),
+				k = n("./src/lib/makeApiRequest/index.ts"),
+				g = n("./src/lib/omitHeaders/index.ts"),
+				E = n("./src/reddit/constants/headers.ts"),
 				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var C = async (e, t, n, s, o, a) => {
 				const c = {
@@ -78,8 +78,8 @@
 					message: o,
 					correlation_id: a
 				};
-				return Object(f.a)(Object(k.a)(e, [g.a]), {
-					method: x.eb.POST,
+				return Object(k.a)(Object(g.a)(e, [E.a]), {
+					method: x.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
 				}).then(e => e.ok ? {
@@ -98,11 +98,11 @@
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === x.E.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === x.F.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === x.E.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === x.F.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -110,9 +110,9 @@
 									return t
 							}
 						})(e, o);
-						t(Object(E.f)({
+						t(Object(f.f)({
 							kind: _.b.Error,
-							duration: E.a,
+							duration: f.a,
 							text: n
 						}))
 					}
@@ -123,7 +123,7 @@
 					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${a}`)], {
 						hk: "3cBrLk"
 					});
-					t(Object(E.f)({
+					t(Object(f.f)({
 						kind: _.b.SuccessCommunity,
 						text: c
 					}))
@@ -135,8 +135,8 @@
 				L = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = n("./src/reddit/controls/TextButton/index.tsx"),
-				K = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				F = n("./src/reddit/models/Gold/Premium/index.ts"),
+				F = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				K = n("./src/reddit/models/Gold/Premium/index.ts"),
 				U = n("./src/reddit/selectors/user.ts");
 
 			function G() {
@@ -182,7 +182,7 @@
 						isAnonymous: !0,
 						message: "",
 						messageTypeEventSent: !1,
-						selectedPackage: F.a.PREMIUM_1_MONTH
+						selectedPackage: K.a.PREMIUM_1_MONTH
 					}, this.handleEscapeKey = e => {
 						const {
 							closeModal: t
@@ -260,8 +260,8 @@
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(F.d)(e, t).map(e => ({
-						displayText: Object(F.e)(e),
+					return Object(K.d)(e, t).map(e => ({
+						displayText: Object(K.e)(e),
 						value: e
 					}))
 				}
@@ -276,10 +276,10 @@
 						isAnonymous: i,
 						message: r,
 						selectedPackage: d
-					} = this.state, u = Object(F.e)(d), p = c ? [l.a.messageInputOpen] : "";
+					} = this.state, u = Object(K.e)(d), p = c ? [l.a.messageInputOpen] : "";
 					return a.a.createElement(P.d, {
 						className: e
-					}, a.a.createElement(P.h, null, a.a.createElement(K.a, null, a.a.createElement(P.p, null, s.fbt._("Give Premium", null, {
+					}, a.a.createElement(P.h, null, a.a.createElement(F.a, null, a.a.createElement(P.p, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
 					})), a.a.createElement(B.a, {
 						onClick: this.onClickClose
@@ -321,7 +321,7 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), a.a.createElement(P.f, null, a.a.createElement(K.a, {
+					}))), a.a.createElement(P.f, null, a.a.createElement(F.a, {
 						className: l.a.coinCountSection
 					}, a.a.createElement(T.a, {
 						className: l.a.coinCount,
@@ -390,7 +390,7 @@
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
+				return f
 			}));
 			var s = n("./node_modules/lodash/throttle.js"),
 				o = n.n(s),
@@ -415,7 +415,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class E extends c.a.Component {
+			class f extends c.a.Component {
 				constructor() {
 					super(...arguments), this.handleMouseMove = o()(() => {
 						const {
@@ -472,7 +472,7 @@
 					[x.a.mIsSelected]: t.isSelected,
 					[x.a.topics]: t.isTopicsStyle
 				});
-				return c.a.createElement(E, b({
+				return c.a.createElement(f, b({
 					className: n
 				}, t))
 			}
@@ -684,23 +684,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case s.E.NO_STRIPE_SUBSCRIPTION:
-							case s.E.USER_DOESNT_EXIST:
-							case s.E.USER_REQUIRED_ERROR:
-							case s.E.VALIDATION_ERROR:
+							case s.F.NO_STRIPE_SUBSCRIPTION:
+							case s.F.USER_DOESNT_EXIST:
+							case s.F.USER_REQUIRED_ERROR:
+							case s.F.VALIDATION_ERROR:
 								return e;
-							case s.E.NO_USER:
-							case s.E.NO_TEXT:
-							case s.E.NO_URL:
-								return s.E.VALIDATION_ERROR;
-							case s.E.CREDIT_CARD_FAILURE:
-							case s.E.CREDIT_CARD_FAILURE_GENERIC:
-								return s.E.CREDIT_CARD_FAILURE;
+							case s.F.NO_USER:
+							case s.F.NO_TEXT:
+							case s.F.NO_URL:
+								return s.F.VALIDATION_ERROR;
+							case s.F.CREDIT_CARD_FAILURE:
+							case s.F.CREDIT_CARD_FAILURE_GENERIC:
+								return s.F.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.E.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return s.F.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return s.E.VALIDATION_ERROR
+					return s.F.VALIDATION_ERROR
 				},
 				a = e => {
 					const t = e.body;
@@ -845,4 +845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.4d1fa02eea0b33891747.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.020cd715dd7714f0187d.js.map

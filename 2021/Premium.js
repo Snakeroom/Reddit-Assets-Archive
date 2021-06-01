@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.a5d4b11188afb5103f49.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.ad9c93da8cadda848301.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -112,7 +112,7 @@
 			})), r.d(t, "h", (function() {
 				return F
 			})), r.d(t, "i", (function() {
-				return G
+				return D
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -389,7 +389,7 @@
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, F = Object(m.a)(f.V), G = Object(m.a)(f.Z)
+				}, F = Object(m.a)(f.V), D = Object(m.a)(f.Z)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -679,7 +679,7 @@
 					apiContext: n
 				}) => {
 					const o = Object(p.a)(r()),
-						c = (null == o ? void 0 : o.pennies) || s.sb,
+						c = (null == o ? void 0 : o.pennies) || s.tb,
 						l = Object(m.c)(m.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const b = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -1126,7 +1126,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(s.a)(l);
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: u,
 					data: d
 				}).then(i.c)
@@ -1142,7 +1142,7 @@
 					correlation_id: s
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(i.c)
@@ -1160,7 +1160,7 @@
 					thing_id: s
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -1180,7 +1180,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(i.c)
@@ -1208,7 +1208,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: f
 				}).then(i.c)
@@ -1230,7 +1230,7 @@
 					thing_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.c)
@@ -1601,8 +1601,8 @@
 				U = r("./src/reddit/icons/svgs/PremiumLogo/index.tsx"),
 				L = r("./src/reddit/controls/Button/index.tsx"),
 				F = r("./src/lib/classNames/index.ts"),
-				G = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
-				D = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				D = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
+				G = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				J = r("./src/reddit/hooks/useTracking.ts"),
 				z = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
 				W = r.n(z);
@@ -1673,7 +1673,7 @@
 				}) => {
 					const t = Object(s.e)(h.i),
 						r = Object(J.a)();
-					if (!(null == t ? void 0 : t.length)) return c.a.createElement("div", null, c.a.createElement(D.a, {
+					if (!(null == t ? void 0 : t.length)) return c.a.createElement("div", null, c.a.createElement(G.a, {
 						sizePx: 80
 					}));
 					const {
@@ -1723,7 +1723,7 @@
 							isNew: a,
 							telemetryTag: o
 						} = e;
-						return c.a.createElement(G.a, {
+						return c.a.createElement(D.a, {
 							className: W.a.benefit,
 							description: Y[t](u),
 							iconUrl: `${n.a.assetPath}/img/gold/premium-marketing/benefits-icons/${t}.png`,
@@ -1916,7 +1916,7 @@
 						sendEvent: o
 					} = this.props;
 					e.length || t || r(this.correlationId), a && n(), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const c = l.Gb.PREMIUM;
+					const c = l.Hb.PREMIUM;
 					j.c.has(c) && (o(Object(O.n)(w.TimerType.InApp, j.c.end(c))), o(Object(O.m)())), Object(m.a)()
 				}
 				render() {
@@ -2094,4 +2094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.a5d4b11188afb5103f49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.ad9c93da8cadda848301.js.map

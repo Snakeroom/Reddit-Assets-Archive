@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.9dcd0971d3ec5bfc7e26.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.eef89a25fc6d87b4874a.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -322,7 +322,7 @@
 						type: e.type
 					} : {
 						id: Object(j.m)(l(), e.name),
-						name: `${r.ac}${e.name}`,
+						name: `${r.bc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(L.K)(l())) return o(Object(d.k)({
@@ -353,7 +353,7 @@
 							subredditNames: s,
 							subscribe: n
 						}) => Object(p.a)(Object(h.a)(e, [b.a]), {
-							method: r.eb.POST,
+							method: r.fb.POST,
 							endpoint: Object(O.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: n ? "sub" : "unsub",
@@ -426,7 +426,7 @@
 							identifier: w
 						});
 					(g() || (await t(V([w], !0)), g())) && ((await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
-						method: r.eb.POST,
+						method: r.fb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -460,7 +460,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
-						method: r.eb.POST,
+						method: r.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: s ? "true" : "false",
@@ -498,7 +498,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
-						method: r.eb.POST,
+						method: r.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: s ? "sub" : "unsub",
@@ -2093,4 +2093,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.9dcd0971d3ec5bfc7e26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.eef89a25fc6d87b4874a.js.map

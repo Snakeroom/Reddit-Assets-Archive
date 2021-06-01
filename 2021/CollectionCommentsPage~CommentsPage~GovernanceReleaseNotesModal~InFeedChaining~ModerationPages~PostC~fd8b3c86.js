@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.56bcd1d07015636ea3e7.js
-// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.7c4c83fa34b85ddd5240.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -627,7 +627,7 @@
 						o = L && L[i];
 					if (!o || !o.s) return null;
 					const a = t.caption ? t.caption : V,
-						r = Object(c.a)(B ? `${B} - ${a}` : a, 300, l.db),
+						r = Object(c.a)(B ? `${B} - ${a}` : a, 300, l.eb),
 						d = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
 						u = Object(y.d)(b, d);
 					if (!u) return null;
@@ -1237,7 +1237,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), e === k.fc.OCR ? o += `${ae}${t}` : s.title && (o += `${ae}${s.title}`), e === k.fc.ShortPostTitleOCR && (o += `${ae}${t}`), o.length > oe ? Object(y.a)(o, oe, p.db) : o
+					return i && (o += i), e === k.fc.OCR ? o += `${ae}${t}` : s.title && (o += `${ae}${s.title}`), e === k.fc.ShortPostTitleOCR && (o += `${ae}${t}`), o.length > oe ? Object(y.a)(o, oe, p.eb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(z.j, this.state.viewportHeight),
@@ -1975,4 +1975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.56bcd1d07015636ea3e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.7c4c83fa34b85ddd5240.js.map

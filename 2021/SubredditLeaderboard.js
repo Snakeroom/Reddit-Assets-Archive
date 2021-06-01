@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ee3ff403d9e7700e5a95.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.09a22a7e9cecafe22196.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -435,7 +435,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = a()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.G), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.H), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -922,13 +922,11 @@
 						to: a
 					}, e.categoryName ? ((e, t) => e === b.l ? r.fbt._("Communities Near You", null, {
 						hk: "ZMVOK"
-					}) : c.a.createElement(c.a.Fragment, null, r.fbt._("Top", null, {
-						hk: "4bbkOp"
-					}), c.a.createElement("span", {
+					}) : r.fbt._("Top {categoryName} Communities", [r.fbt._param("categoryName", c.a.createElement("span", {
 						className: C.a.categoryName
-					}, " ", t || e, " "), r.fbt._("Communities", null, {
-						hk: "2rXjVR"
-					})))(e.categoryName, e.categoryDisplayText) : r.fbt._("Today's Top Growing Communities", null, {
+					}, " ", t || e, " "))], {
+						hk: "X3A9z"
+					}))(e.categoryName, e.categoryDisplayText) : r.fbt._("Today's Top Growing Communities", null, {
 						hk: "2U7TDT"
 					}))))
 				},
@@ -1973,10 +1971,10 @@
 			var J = Object(u.c)(H(Q)),
 				q = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				z = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				V = n.n(z);
+				K = n.n(z);
 
-			function K() {
-				return (K = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1991,8 +1989,8 @@
 					className: r,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(V.a.categoryLink, s && V.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(q.a, K({}, t.anchorProps, {
+				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
+				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2045,7 +2043,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && n * d, p = a + (e ? n * e.length : 0), h = Object(c.a)(V.a.categoryList, u && V.a.expanded), b = e => !(!o || o !== Object(X.g)(e)), f = i.a.createElement("ul", {
+					} = this.state, m = !u && d && n * d, p = a + (e ? n * e.length : 0), h = Object(c.a)(K.a.categoryList, u && K.a.expanded), b = e => !(!o || o !== Object(X.g)(e)), f = i.a.createElement("ul", {
 						className: h,
 						style: {
 							height: m || p
@@ -2062,7 +2060,7 @@
 						}, e.name === g.l ? g.j : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(V.a.categoryListContainer, r)
+						className: Object(c.a)(K.a.categoryListContainer, r)
 					}, f)
 				}
 				render() {
@@ -2073,16 +2071,16 @@
 						header: r,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, V.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, K.a.container);
 					return i.a.createElement(Z.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(V.a.header, s)
+						className: Object(c.a)(K.a.header, s)
 					}, i.a.createElement("h2", null, r || $._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(Y.o, {
-						className: Object(c.a)(V.a.button, e),
+						className: Object(c.a)(K.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? $._("Show More", null, {
 						hk: "1pCiqD"
@@ -2277,4 +2275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ee3ff403d9e7700e5a95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.09a22a7e9cecafe22196.js.map

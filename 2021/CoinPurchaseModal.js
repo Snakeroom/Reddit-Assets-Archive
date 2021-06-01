@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e44c7bc0996967cea03c.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.ea2d4b5c03a07e851854.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -1044,7 +1044,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(s.a)(l);
 				return Object(n.a)(Object(o.a)(t, [c.a]), {
-					method: a.eb.POST,
+					method: a.fb.POST,
 					endpoint: p,
 					data: i
 				}).then(d.c)
@@ -1060,7 +1060,7 @@
 					correlation_id: s
 				};
 				return Object(n.a)(Object(o.a)(e, [c.a]), {
-					method: a.eb.POST,
+					method: a.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: i
 				}).then(d.c)
@@ -1078,7 +1078,7 @@
 					thing_id: s
 				};
 				return Object(n.a)(Object(o.a)(e, [c.a]), {
-					method: a.eb.POST,
+					method: a.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(d.c)
@@ -1098,7 +1098,7 @@
 					correlation_id: l
 				};
 				return Object(n.a)(Object(o.a)(e, [c.a]), {
-					method: a.eb.POST,
+					method: a.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(d.c)
@@ -1126,7 +1126,7 @@
 					thing_id: g
 				};
 				return Object(n.a)(Object(o.a)(t, [c.a]), {
-					method: a.eb.POST,
+					method: a.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: m
 				}).then(d.c)
@@ -1148,7 +1148,7 @@
 					thing_id: p
 				};
 				return Object(n.a)(Object(o.a)(t, [c.a]), {
-					method: a.eb.POST,
+					method: a.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: u
 				}).then(d.c)
@@ -1156,4 +1156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e44c7bc0996967cea03c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.ea2d4b5c03a07e851854.js.map

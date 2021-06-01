@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.19a82e033f95f160ba3f.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.ec54974732065b33a423.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -161,7 +161,7 @@
 						type: e.type
 					} : {
 						id: Object(I.m)(l(), e.name),
-						name: `${n.ac}${e.name}`,
+						name: `${n.bc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(S.K)(l())) return o(Object(d.k)({
@@ -192,7 +192,7 @@
 							subredditNames: r,
 							subscribe: s
 						}) => Object(p.a)(Object(b.a)(e, [f.a]), {
-							method: n.eb.POST,
+							method: n.fb.POST,
 							endpoint: Object(y.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: s ? "sub" : "unsub",
@@ -265,7 +265,7 @@
 							identifier: j
 						});
 					(g() || (await t(R([j], !0)), g())) && ((await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
-						method: n.eb.POST,
+						method: n.fb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: r ? "true" : "false",
@@ -299,7 +299,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), (await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
-						method: n.eb.POST,
+						method: n.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: r ? "true" : "false",
@@ -337,7 +337,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
-						method: n.eb.POST,
+						method: n.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: r ? "sub" : "unsub",
@@ -379,7 +379,7 @@
 				p = r("./src/lib/addQueryParams/index.ts");
 			const b = (e, t, r, s, n) => {
 				const o = n || "*:*",
-					i = r || l.S;
+					i = r || l.T;
 				return Object(p.a)("/search", {
 					q: o,
 					sort: i,
@@ -426,7 +426,7 @@
 						})
 					}, n.a.createElement(m.a, {
 						onClick: this.onClick,
-						to: b(s, r, l.Qb.Relevance, l.Yb.DAY),
+						to: b(s, r, l.Rb.Relevance, l.Zb.DAY),
 						children: o
 					}))
 				}
@@ -2269,7 +2269,7 @@
 						const {
 							partialPostId: t
 						} = e.platform.currentPage.urlParams, r = Object(d.s)(t);
-						return Array.from(new Set(Object.keys(e.features.comments.models).filter(t => e.features.comments.models[t].postId === r && e.features.comments.models[t].author !== o.A).map(t => e.features.comments.models[t].author)))
+						return Array.from(new Set(Object.keys(e.features.comments.models).filter(t => e.features.comments.models[t].postId === r && e.features.comments.models[t].author !== o.B).map(t => e.features.comments.models[t].author)))
 					}
 					return []
 				},
@@ -2457,4 +2457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.19a82e033f95f160ba3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.ec54974732065b33a423.js.map

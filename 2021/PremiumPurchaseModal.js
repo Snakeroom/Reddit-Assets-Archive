@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.e5a75fd475956a1cce58.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.82bc693a727ecdd65b3b.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1275,7 +1275,7 @@
 					apiContext: n
 				}) => {
 					const o = Object(m.a)(r()),
-						s = (null == o ? void 0 : o.pennies) || i.sb,
+						s = (null == o ? void 0 : o.pennies) || i.tb,
 						l = Object(p.c)(p.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const f = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -1889,7 +1889,7 @@
 					} = this.props;
 					return a.a.createElement("div", {
 						className: T.a.premiumPurchaseSelectPaymentFooter
-					}, r === l.Bb && a.a.createElement(X, {
+					}, r === l.Cb && a.a.createElement(X, {
 						buttonId: t,
 						className: T.a.premiumPurchaseButton,
 						customField: e,
@@ -1899,7 +1899,7 @@
 						title: O.fbt._("Continue to PayPal", null, {
 							hk: "2TCl83"
 						})
-					}), r === l.Ab && a.a.createElement(L.i, {
+					}), r === l.Bb && a.a.createElement(L.i, {
 						className: T.a.premiumPurchaseButton,
 						"data-redditstyle": !0,
 						disabled: n,
@@ -1947,8 +1947,8 @@
 					}) : O.fbt._("month", null, {
 						hk: "1l20Gw"
 					}),
-					o = e.selectedPayment === l.Bb,
-					s = e.selectedPayment === l.Ab,
+					o = e.selectedPayment === l.Cb,
+					s = e.selectedPayment === l.Bb,
 					c = o ? W : K,
 					d = e.isPremiumMigrationEnabled ? a.a.createElement("div", {
 						className: T.a.creditCard
@@ -2077,9 +2077,9 @@
 					premiumPrice: E,
 					isPremiumMigrationEnabled: O
 				}) => {
-					let x = l.sb,
+					let x = l.tb,
 						w = !1;
-					O && j && E ? (x = E, w = C === _.b.Year) : r && (x = r ? r.pennies : l.sb, w = !!r && r.frequency === u.c.Yearly);
+					O && j && E ? (x = E, w = C === _.b.Year) : r && (x = r ? r.pennies : l.tb, w = !!r && r.frequency === u.c.Yearly);
 					const k = Object(n.useCallback)(e => {
 						if (27 === e.keyCode) return m()
 					}, [m]);
@@ -2366,7 +2366,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(i.a)(l);
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: u,
 					data: d
 				}).then(c.c)
@@ -2382,7 +2382,7 @@
 					correlation_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(c.c)
@@ -2400,7 +2400,7 @@
 					thing_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(c.c)
@@ -2420,7 +2420,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(c.c)
@@ -2448,7 +2448,7 @@
 					thing_id: f
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(c.c)
@@ -2470,7 +2470,7 @@
 					thing_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.eb.POST,
+					method: n.fb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.c)
@@ -2818,4 +2818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.e5a75fd475956a1cce58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.82bc693a727ecdd65b3b.js.map

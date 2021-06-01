@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.31f3b694d32884629a71.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.e733963199a65925e9db.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1690,13 +1690,13 @@
 					}
 				}
 				componentDidMount() {
-					this.trackDiscoveryUnitViewed(), this.props.routeName !== d.Gb.COMMENTS && this.setState({
+					this.trackDiscoveryUnitViewed(), this.props.routeName !== d.Hb.COMMENTS && this.setState({
 						isCarouselVisible: !0,
 						isDUVisible: !0
 					})
 				}
 				componentDidUpdate(e) {
-					this.state.isCarouselVisible || e.routeName !== d.Gb.COMMENTS || this.props.routeName === d.Gb.COMMENTS || this.showDU()
+					this.state.isCarouselVisible || e.routeName !== d.Hb.COMMENTS || this.props.routeName === d.Hb.COMMENTS || this.showDU()
 				}
 				componentWillUnmount() {
 					this.showCarouselTimer && clearTimeout(this.showCarouselTimer), this.showDUTimer && clearTimeout(this.showDUTimer)
@@ -4934,4 +4934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.31f3b694d32884629a71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.e733963199a65925e9db.js.map

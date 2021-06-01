@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a318ab42cd97961e787e.js
-// Retrieved at 5/26/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0bd7912d3b0e47cb0fdc.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -200,7 +200,7 @@
 						type: e.type
 					} : {
 						id: Object(E.m)(l(), e.name),
-						name: `${s.ac}${e.name}`,
+						name: `${s.bc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(y.K)(l())) return a(Object(d.k)({
@@ -231,7 +231,7 @@
 							subredditNames: r,
 							subscribe: n
 						}) => Object(p.a)(Object(f.a)(e, [b.a]), {
-							method: s.eb.POST,
+							method: s.fb.POST,
 							endpoint: Object(g.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: n ? "sub" : "unsub",
@@ -304,7 +304,7 @@
 							identifier: I
 						});
 					(_() || (await t(A([I], !0)), _())) && ((await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
-						method: s.eb.POST,
+						method: s.fb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: r ? "true" : "false",
@@ -338,7 +338,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
-						method: s.eb.POST,
+						method: s.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: r ? "true" : "false",
@@ -376,7 +376,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
-						method: s.eb.POST,
+						method: s.fb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: r ? "sub" : "unsub",
@@ -2464,7 +2464,7 @@
 					}),
 					exact: !0,
 					meta: {
-						name: s.Gb.AVATAR
+						name: s.Hb.AVATAR
 					},
 					path: i
 				};
@@ -2557,4 +2557,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.a318ab42cd97961e787e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0bd7912d3b0e47cb0fdc.js.map

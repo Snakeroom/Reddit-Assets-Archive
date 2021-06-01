@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.04b5f690bd7bf91bdf5d.js
-// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.baa4370f5d6770b463fc.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -1719,7 +1719,7 @@
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function W({
+			function H({
 				subredditId: e
 			}) {
 				const t = Object(i.d)(),
@@ -1758,12 +1758,12 @@
 					hk: "1o89m4"
 				}))) : null
 			}
-			var H = r("./src/lib/constants/index.ts");
+			var W = r("./src/lib/constants/index.ts");
 			const {
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(c.t)(),
-				U = [H.Gb.SUBREDDIT, H.Gb.COMMENTS, H.Gb.COLLECTION_COMMENTS],
+				U = [W.Hb.SUBREDDIT, W.Hb.COMMENTS, W.Hb.COLLECTION_COMMENTS],
 				Z = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && U.indexOf(t.pageLayer.meta.name) > -1,
@@ -1839,7 +1839,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === H.Gb.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === W.Hb.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(v, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -1868,7 +1868,7 @@
 				subredditId: e.subredditId
 			}), s.a.createElement(oe, {
 				subredditId: e.subredditId
-			}), s.a.createElement(W, {
+			}), s.a.createElement(H, {
 				subredditId: e.subredditId
 			})), e.widget && s.a.createElement(s.a.Fragment, null, e.widget.showWiki && s.a.createElement(ae, {
 				homeUrl: e.homeUrl,
@@ -2356,8 +2356,8 @@
 				B = m.a.div("EventDate", S.a),
 				M = m.a.div("EventLocation", S.a),
 				R = m.a.div("EventDescription", S.a),
-				W = m.a.wrapped(D.a, "ToggleDescription", S.a);
-			class H extends s.a.Component {
+				H = m.a.wrapped(D.a, "ToggleDescription", S.a);
+			class W extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -2370,7 +2370,7 @@
 						props: e,
 						state: t
 					} = this;
-					return e.text.length > P ? s.a.createElement(R, null, t.isExpanded ? e.text : e.text.slice(0, P), s.a.createElement(W, {
+					return e.text.length > P ? s.a.createElement(R, null, t.isExpanded ? e.text : e.text.slice(0, P), s.a.createElement(H, {
 						onClick: this.toggleDescriptionView
 					}, t.isExpanded ? O.fbt._("read less", null, {
 						hk: "2KdNS6"
@@ -2395,7 +2395,7 @@
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
 				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(M, null, t.locationHtml ? s.a.createElement(A, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(H, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(W, {
 					text: t.description
 				})))),
 				V = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -3401,4 +3401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.04b5f690bd7bf91bdf5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.baa4370f5d6770b463fc.js.map

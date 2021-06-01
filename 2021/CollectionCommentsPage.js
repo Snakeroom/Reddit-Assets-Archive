@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a687766fa8d32f9e18ed.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5d496f6300331fbd42b1.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -126,11 +126,11 @@
 				f = e => {
 					switch (e) {
 						case p.e.Admin:
-							return o.C.ADMIN;
+							return o.D.ADMIN;
 						case p.e.Moderator:
-							return o.C.MODERATOR;
+							return o.D.MODERATOR;
 						case p.e.Alumni:
-							return o.C.ALUMNI_ADMIN;
+							return o.D.ALUMNI_ADMIN;
 						default:
 							return ""
 					}
@@ -625,7 +625,7 @@
 			var P = (e, t, s, n, r) => Object(k.a)(e, {
 					data: r,
 					endpoint: E(t, s, n),
-					method: o.eb.GET
+					method: o.fb.GET
 				}),
 				j = s("./src/reddit/endpoints/page/subredditPage.ts"),
 				I = s("./src/reddit/helpers/canonicalUrls.ts"),
@@ -687,7 +687,7 @@
 								identifier: t
 							}),
 							r = Object(i.b)(s.title, n.name).toString();
-						return Object(a.a)(r, y.c, o.db)
+						return Object(a.a)(r, y.c, o.eb)
 					})(s(), w) || Object(i.c)();
 					t(m.l({
 						title: L
@@ -1051,8 +1051,8 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.Yb.WEEK.toUpperCase(),
-									sort: h.K.TOP,
+									range: h.Zb.WEEK.toUpperCase(),
+									sort: h.L.TOP,
 									subredditName: i.name
 								},
 								n = {
@@ -1359,7 +1359,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/CommentCreation/index.tsx")),
+					importAsync: () => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/CommentCreation/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1515,7 +1515,7 @@
 			}) => {
 				const i = await (async (e, t, s) => Object(g.a)(Object(f.a)(e, [C.a]), {
 						endpoint: `${e.apiUrl}/api/set_suggested_sort/`,
-						method: c.eb.POST,
+						method: c.fb.POST,
 						data: {
 							api_type: "json",
 							id: t,
@@ -3856,7 +3856,7 @@
 				p = i.a.div("Byline", c.a),
 				u = Object(r.a)({
 					ErrorComponent: () => n.a.createElement(l, null, n.a.createElement(m, null), n.a.createElement(p, null)),
-					getComponent: () => Object(a.a)(() => Promise.all([s.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("ChatMessageInput~ChatPost"), s.e("ChatMessageInput")]).then(s.bind(null, "./src/reddit/components/CommentsChat/MessageInput/index.tsx")).then(e => e.default)),
+					getComponent: () => Object(a.a)(() => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("ChatMessageInput~ChatPost"), s.e("ChatMessageInput")]).then(s.bind(null, "./src/reddit/components/CommentsChat/MessageInput/index.tsx")).then(e => e.default)),
 					LoadingComponent: ({
 						isLivestreaming: e
 					}) => e ? null : n.a.createElement(l, null, n.a.createElement(m, null), n.a.createElement(p, null))
@@ -4881,7 +4881,7 @@
 					isLoading: !1,
 					toolbarPosition: "top"
 				}),
-				getComponent: () => Object(re.a)(() => Promise.all([s.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/PostEditForm/index.tsx")).then(e => e.default)),
+				getComponent: () => Object(re.a)(() => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/PostEditForm/index.tsx")).then(e => e.default)),
 				LoadingComponent: () => i.a.createElement(ie.a, {
 					isLoading: !0,
 					toolbarPosition: "top"
@@ -6065,7 +6065,7 @@
 					}, m.a.createElement(P.a, {
 						className: B.a.seeMorePostsText,
 						to: Object(p.a)(C, {
-							type: b.Sb.Posts
+							type: b.Tb.Posts
 						})
 					}, D._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -6310,13 +6310,13 @@
 				}),
 				q = Object(d.b)(K, e => ({
 					loadMorePosts: t => e(Object(h.r)({
-						sort: l.R.HOT,
+						sort: l.S.HOT,
 						subredditName: t
 					}))
 				}));
 			class G extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.R.TOP, t, e, l.Yb.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.S.TOP, t, e, l.Zb.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(k.c)("recommended_footer"))
 					}
 				}
@@ -6327,8 +6327,8 @@
 						post: s,
 						subredditOrProfile: o
 					} = this.props;
-					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.R.TOP, {
-						t: l.Yb.WEEK
+					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.S.TOP, {
+						t: l.Zb.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -7582,7 +7582,7 @@
 								tooltipType: Ae.c.StickyPost
 							}))
 						}))
-					}, y.G), this.sendEventWithName = (e, t) => () => this.props.sendEvent(Object(qe.d)(this.props.postId, e, t)), this.updateWindowHeight = () => {
+					}, y.H), this.sendEventWithName = (e, t) => () => this.props.sendEvent(Object(qe.d)(this.props.postId, e, t)), this.updateWindowHeight = () => {
 						this.needsUpdatedMeasurements = !0, this.handleScroll()
 					}, this.updateCommentSortRef = e => {
 						this.commentSortRef = e, this.needsUpdatedMeasurements = !0
@@ -7672,7 +7672,7 @@
 							this.props.isOverlay || Object(E.d)(E.c.CommentsPage, o)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						y.Fb.includes(e) && Object(Ke.a)(e)
+						y.Gb.includes(e) && Object(Ke.a)(e)
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -8419,4 +8419,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a687766fa8d32f9e18ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5d496f6300331fbd42b1.js.map

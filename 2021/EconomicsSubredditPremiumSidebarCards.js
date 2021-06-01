@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.13174f597cec27ac5ac9.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.f370c87b52545bcdcb74.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -136,7 +136,7 @@
 						const t = `https://${n.pointsDocsBaseUrl}v1.json?web`,
 							r = await Object(i.b)({
 								endpoint: t,
-								method: s.eb.GET
+								method: s.fb.GET
 							});
 						r.ok && r.body && e(l(r.body))
 					}
@@ -2477,7 +2477,7 @@
 			function d(e, t) {
 				return Object(n.a)(e, {
 					endpoint: `${s.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: i.eb.GET
+					method: i.fb.GET
 				})
 			}
 		},
@@ -3614,4 +3614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.13174f597cec27ac5ac9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.f370c87b52545bcdcb74.js.map

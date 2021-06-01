@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.8f82f8b7644ea8b714fa.js
-// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.b1fa44e6612893bf2467.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -102,39 +102,39 @@
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/constants/index.ts");
-			const r = [a.hc, a.kb, a.x, a.L, a.fb, a.Kb],
+			const r = [a.ic, a.lb, a.y, a.M, a.gb, a.Lb],
 				i = {
-					[a.Kb]: e => n.fbt._({
+					[a.Lb]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3pTp9Z"
 					}),
-					[a.fb]: e => n.fbt._({
+					[a.gb]: e => n.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "2gB3sf"
 					}),
-					[a.L]: e => n.fbt._({
+					[a.M]: e => n.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "2w4n8B"
 					}),
-					[a.x]: e => n.fbt._({
+					[a.y]: e => n.fbt._({
 						"*": "{number} days",
 						_1: "1 day"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[a.kb]: e => n.fbt._({
+					[a.lb]: e => n.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[a.hc]: e => n.fbt._({
+					[a.ic]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -142,28 +142,28 @@
 					})
 				},
 				o = {
-					[a.Kb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+					[a.Lb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
-					[a.fb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[a.gb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "43tM5H"
 					}),
-					[a.L]: e => n.fbt._("{amount}h", [n.fbt._param("amount", String(e))], {
+					[a.M]: e => n.fbt._("{amount}h", [n.fbt._param("amount", String(e))], {
 						hk: "19NsxU"
 					}),
-					[a.x]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
+					[a.y]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[a.kb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[a.lb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.hc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.ic]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[a.kb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[a.lb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[a.hc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[a.ic]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -172,12 +172,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[a.hc]: "",
-						[a.kb]: "",
-						[a.x]: "",
-						[a.L]: "",
-						[a.fb]: "",
-						[a.Kb]: ""
+						[a.ic]: "",
+						[a.lb]: "",
+						[a.y]: "",
+						[a.M]: "",
+						[a.gb]: "",
+						[a.Lb]: ""
 					};
 				let m = l - c;
 				if (m <= 0) return n.fbt._("a moment", null, {
@@ -433,32 +433,32 @@
 				},
 				I = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				T = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				D = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
-				M = s.n(D);
+				M = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
+				D = s.n(M);
 			var A = e => {
 					const t = Object(j.a)(e.name, e.type);
 					return r.a.createElement("div", {
-						className: Object(c.a)(M.a.container, e.className)
+						className: Object(c.a)(D.a.container, e.className)
 					}, r.a.createElement(T.a, {
-						className: M.a.layout
+						className: D.a.layout
 					}, r.a.createElement("div", {
-						className: M.a.iconContainer
+						className: D.a.iconContainer
 					}, e.iconUrl ? r.a.createElement("img", {
-						className: M.a.icon,
+						className: D.a.icon,
 						src: e.iconUrl
 					}) : r.a.createElement(I.a, {
-						className: M.a.planetIcon,
+						className: D.a.planetIcon,
 						"data-redditstyle": !0
 					})), r.a.createElement("div", {
-						className: M.a.textContainer
+						className: D.a.textContainer
 					}, r.a.createElement(_.a, {
 						"data-click-id": "subreddit",
-						className: M.a.name,
+						className: D.a.name,
 						to: t
 					}, Object(j.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
-						className: M.a.separator
+						className: D.a.separator
 					}, "•"), r.a.createElement("span", {
-						className: M.a.timestamp
+						className: D.a.timestamp
 					}, Object(v.d)(e.created / 1e3)))))
 				},
 				V = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -987,7 +987,7 @@
 					const {
 						postIds: a,
 						range: r
-					} = s, i = `${t}${m.R.TOP}?t=${r}`, c = o.a.createElement(h.a, {
+					} = s, i = `${t}${m.S.TOP}?t=${r}`, c = o.a.createElement(h.a, {
 						className: _.a.widgetHeader
 					}, o.a.createElement("button", {
 						className: _.a.closeButton,
@@ -1374,9 +1374,9 @@
 				S = s("./src/reddit/components/FlairWrapper/index.tsx"),
 				I = s("./node_modules/fbt/lib/FbtPublic.js"),
 				T = s("./src/lib/prettyPrintNumber/index.ts"),
-				D = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
-				M = s("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
-				A = s.n(M);
+				M = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
+				D = s("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
+				A = s.n(D);
 			const V = Object(c.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
 				resultsByVoters: (e, t) => e.polls.results.byVoters[t.pollId]
@@ -1393,7 +1393,7 @@
 						_1: "{count} vote"
 					}, [I.fbt._param("count", Object(T.a)(n)), I.fbt._plural(parseInt(n))], {
 						hk: "4rP1VK"
-					})), t && r.a.createElement(D.a, {
+					})), t && r.a.createElement(M.a, {
 						className: A.a.proposalExpiry,
 						poll: t
 					}))
@@ -2043,4 +2043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8f82f8b7644ea8b714fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.b1fa44e6612893bf2467.js.map

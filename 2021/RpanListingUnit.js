@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.146f25248c8623d0b23d.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.e46ba4004b4bce2a22bd.js
+// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -692,7 +692,7 @@
 					})
 				}), "FlairEditStub", m.a),
 				h = s()((e = p) => Object(o.a)({
-					getComponent: () => Object(l.a)(() => Promise.all([n.e("vendors~Chat~ChatMessageInput~FlairEdit~MembershipPaywallPage~PostCreation~RedesignChat~RichTextEditor"), n.e("FlairEdit")]).then(n.bind(null, "./src/reddit/components/FlairSearch/FlairEdit/index.tsx")).then(e => e.default)),
+					getComponent: () => Object(l.a)(() => Promise.all([n.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), n.e("FlairEdit")]).then(n.bind(null, "./src/reddit/components/FlairSearch/FlairEdit/index.tsx")).then(e => e.default)),
 					ErrorComponent: e,
 					LoadingComponent: e
 				}))
@@ -1259,7 +1259,7 @@
 				z = n.n(K);
 			const {
 				fbt: Z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = 20, J = l.gc, X = l.gc, $ = Object(c.a)(k.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = 20, J = l.hc, X = l.hc, $ = Object(c.a)(k.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(a.c)({
 				autoplay: A.b,
@@ -1321,7 +1321,7 @@
 						if (e) {
 							if (Date.now() - e >= J) {
 								Object(_.V)();
-								const e = 30 * l.x,
+								const e = 30 * l.y,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
@@ -2032,23 +2032,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case r.E.NO_STRIPE_SUBSCRIPTION:
-							case r.E.USER_DOESNT_EXIST:
-							case r.E.USER_REQUIRED_ERROR:
-							case r.E.VALIDATION_ERROR:
+							case r.F.NO_STRIPE_SUBSCRIPTION:
+							case r.F.USER_DOESNT_EXIST:
+							case r.F.USER_REQUIRED_ERROR:
+							case r.F.VALIDATION_ERROR:
 								return e;
-							case r.E.NO_USER:
-							case r.E.NO_TEXT:
-							case r.E.NO_URL:
-								return r.E.VALIDATION_ERROR;
-							case r.E.CREDIT_CARD_FAILURE:
-							case r.E.CREDIT_CARD_FAILURE_GENERIC:
-								return r.E.CREDIT_CARD_FAILURE;
+							case r.F.NO_USER:
+							case r.F.NO_TEXT:
+							case r.F.NO_URL:
+								return r.F.VALIDATION_ERROR;
+							case r.F.CREDIT_CARD_FAILURE:
+							case r.F.CREDIT_CARD_FAILURE_GENERIC:
+								return r.F.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return r.E.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return r.F.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return r.E.VALIDATION_ERROR
+					return r.F.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -2507,7 +2507,7 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, b = !!n, f = i.b(e), g = f ? Object(u.getAwardTypeFromAward)(f) : null, v = b ? g : o.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, E = n ? Object(p.a)(n) ? "comment" : "post" : void 0, O = l || o.t(e), _ = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === O)[0], C = t.offerContext || (f && 0 === f.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(_, b)), y = _ ? Math.round(1e4 * (_.baselinePennies - _.pennies) / _.baselinePennies) / 100 : 0, x = _ ? Math.round(1e4 * (_.coins - _.baselineCoins) / _.coins) / 100 : 0, S = _ ? _.baselinePennies !== _.pennies ? `${y}_percent_price` : _.baselineCoins !== _.coins ? `${x}_percent_bonus` : void 0 : void 0, I = v === d.GoldPurchaseType.Premium ? r.sb : _ ? _.pennies : void 0;
+					} = t, b = !!n, f = i.b(e), g = f ? Object(u.getAwardTypeFromAward)(f) : null, v = b ? g : o.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, E = n ? Object(p.a)(n) ? "comment" : "post" : void 0, O = l || o.t(e), _ = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === O)[0], C = t.offerContext || (f && 0 === f.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(_, b)), y = _ ? Math.round(1e4 * (_.baselinePennies - _.pennies) / _.baselinePennies) / 100 : 0, x = _ ? Math.round(1e4 * (_.coins - _.baselineCoins) / _.coins) / 100 : 0, S = _ ? _.baselinePennies !== _.pennies ? `${y}_percent_price` : _.baselineCoins !== _.coins ? `${x}_percent_bonus` : void 0 : void 0, I = v === d.GoldPurchaseType.Premium ? r.tb : _ ? _.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: n ? c.comment(e, n) : null,
@@ -3355,4 +3355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.146f25248c8623d0b23d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e46ba4004b4bce2a22bd.js.map
