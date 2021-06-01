@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.494994c761bc8677560e.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.76144ef49525d8c19e59.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-OldPowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -140,13 +140,13 @@
 					subredditId: t
 				}) => {
 					const s = Object(v.j)(e);
-					return !!s && Object(u.b)(e, {
+					return !!s && Object(u.a)(e, {
 						subredditId: t,
 						userId: s.id
 					})
 				},
 				subreddit: m.U,
-				userBenefits: u.n
+				userBenefits: u.m
 			});
 			var A;
 			! function(e) {
@@ -245,7 +245,7 @@
 			const {
 				fbt: F
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(o.c)({
-				powerups: u.j,
+				powerups: u.i,
 				subreddit: m.U
 			});
 			t.default = Object(r.b)(D)(e => {
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.494994c761bc8677560e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.76144ef49525d8c19e59.js.map

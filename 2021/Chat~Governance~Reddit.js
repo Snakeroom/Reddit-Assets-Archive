@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0e3361c07df58a37b6bc.js
-// Retrieved at 6/1/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7a5dd22cc9586aba3d00.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("135356"),
+				buildNumber: r("135365"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1622559503"),
+				})("1622563616"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4207,14 +4207,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c67d002642156a437d1602bb5c424038b10c9eebb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce8550a0c6d1b3f72df035c7977b7c6029f61d99e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "67d002642156a437d1602bb5c424038b10c9eebb-production",
+						release: "e8550a0c6d1b3f72df035c7977b7c6029f61d99e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4708,7 +4708,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "67d002642156a437d1602bb5c424038b10c9eebb-production",
+						releaseClient: "e8550a0c6d1b3f72df035c7977b7c6029f61d99e-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -8348,9 +8348,9 @@
 			}) => {
 				var d;
 				const a = r();
-				if (Object(p.j)(a, {
+				if (Object(p.i)(a, {
 						subredditId: e
-					}) && (!t.fullData || Object(p.l)(a, {
+					}) && (!t.fullData || Object(p.k)(a, {
 						subredditId: e
 					})) && !t.forceLoad) return;
 				i(R());
@@ -36661,100 +36661,98 @@
 		},
 		"./src/reddit/selectors/gold/powerups/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "j", (function() {
-				return l
-			})), i.d(t, "g", (function() {
+			i.d(t, "i", (function() {
+				return a
+			})), i.d(t, "f", (function() {
+				return c
+			})), i.d(t, "m", (function() {
 				return u
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "o", (function() {
 				return _
 			})), i.d(t, "p", (function() {
-				return p
+				return m
 			})), i.d(t, "q", (function() {
 				return h
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "n", (function() {
 				return f
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "r", (function() {
 				return b
-			})), i.d(t, "s", (function() {
-				return g
-			})), i.d(t, "i", (function() {
-				return y
 			})), i.d(t, "h", (function() {
+				return g
+			})), i.d(t, "g", (function() {
+				return y
+			})), i.d(t, "k", (function() {
 				return w
 			})), i.d(t, "l", (function() {
 				return v
-			})), i.d(t, "m", (function() {
-				return E
-			})), i.d(t, "b", (function() {
-				return S
 			})), i.d(t, "a", (function() {
-				return T
-			})), i.d(t, "w", (function() {
-				return O
+				return E
 			})), i.d(t, "v", (function() {
-				return I
+				return S
 			})), i.d(t, "u", (function() {
-				return j
-			})), i.d(t, "e", (function() {
-				return F
-			})), i.d(t, "d", (function() {
-				return R
-			})), i.d(t, "c", (function() {
-				return x
-			})), i.d(t, "f", (function() {
-				return C
-			})), i.d(t, "k", (function() {
-				return D
+				return T
 			})), i.d(t, "t", (function() {
-				return A
+				return O
+			})), i.d(t, "d", (function() {
+				return I
+			})), i.d(t, "c", (function() {
+				return j
+			})), i.d(t, "b", (function() {
+				return F
+			})), i.d(t, "e", (function() {
+				return R
+			})), i.d(t, "j", (function() {
+				return k
+			})), i.d(t, "s", (function() {
+				return N
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/models/Gold/Powerups/index.ts"),
 				s = i("./src/reddit/selectors/moderatorPermissions.ts"),
 				o = i("./src/lib/initializeClient/installReducer.ts"),
-				d = i("./src/reddit/reducers/features/goldPurchase/index.ts"),
-				a = i("./src/reddit/selectors/user.ts");
+				d = i("./src/reddit/reducers/features/goldPurchase/index.ts");
+			i("./src/reddit/selectors/user.ts");
 			Object(o.a)({
 				features: {
 					goldPurchase: d.a
 				}
 			});
-			const l = (e, {
+			const a = (e, {
 					subredditId: t
 				}) => t ? e.subreddits.powerups[t] : null,
-				c = (e, {
+				l = (e, {
 					subredditId: t
 				}) => t ? e.subreddits.powerupsEmojis[t] : null,
-				u = Object(n.a)(l, e => !!e),
-				_ = (e, {
+				c = Object(n.a)(a, e => !!e),
+				u = (e, {
 					subredditId: t
 				}) => {
 					var i;
-					return (null === (i = l(e, {
+					return (null === (i = a(e, {
 						subredditId: t
 					})) || void 0 === i ? void 0 : i.benefits) || []
 				},
-				p = (e, {
+				_ = (e, {
 					subredditId: t,
 					benefit: i
 				}) => {
 					var n;
-					return null === (n = _(e, {
+					return null === (n = u(e, {
 						subredditId: t
 					})) || void 0 === n ? void 0 : n.includes(i)
 				},
-				m = e => Object(n.a)(l, t => {
+				p = e => Object(n.a)(a, t => {
 					var i;
 					return !!(null === (i = null == t ? void 0 : t.benefits) || void 0 === i ? void 0 : i.includes(e))
 				}),
-				h = m(r.a.CommentsWithEmoji),
-				f = m(r.a.CommentsWithGifs),
-				b = m(r.a.Achievements),
-				g = (e, {
+				m = p(r.a.CommentsWithEmoji),
+				h = p(r.a.CommentsWithGifs),
+				f = p(r.a.Achievements),
+				b = (e, {
 					subredditId: t
 				}) => {
-					const i = l(e, {
+					const i = a(e, {
 						subredditId: t
 					});
 					if (!i) return !1;
@@ -36763,27 +36761,27 @@
 					} = i;
 					return n && n.some(e => e === r.a.HdVideo || e === r.a.SdVideo || e === r.a.PostsImageUpload)
 				},
-				y = (e, t) => {
+				g = (e, t) => {
 					var i;
-					const n = c(e, t);
+					const n = l(e, t);
 					return (null === (i = null == n ? void 0 : n.free_emotes_pack) || void 0 === i ? void 0 : i.emotes) || []
 				},
-				w = (e, {
+				y = (e, {
 					subredditId: t
 				}) => {
 					var i;
 					if (!t) return [];
-					const n = c(e, {
+					const n = l(e, {
 						subredditId: t
 					});
 					return (null === (i = null == n ? void 0 : n[t]) || void 0 === i ? void 0 : i.emotes) || []
 				},
-				v = (e, {
+				w = (e, {
 					subredditId: t
 				}) => {
 					if (t) return e.subreddits.powerupTopSupporters[t]
 				},
-				E = Object(n.a)(v, e => {
+				v = Object(n.a)(w, e => {
 					if (!e) return;
 					const t = e.filter(r.b);
 					if (!t.length) return e;
@@ -36794,45 +36792,36 @@
 					};
 					return [...e.filter(e => !Object(r.b)(e)), i]
 				}),
-				S = (e, {
+				E = (e, {
 					subredditId: t,
 					userId: i
 				}) => {
-					const n = v(e, {
+					const n = w(e, {
 						subredditId: t
 					});
 					return !!n && n.some(e => !!e.supporterInfo && e.supporterInfo.id === i)
 				},
-				T = (e, {
-					subredditId: t
-				}) => {
-					const i = Object(a.j)(e);
-					return !!i && S(e, {
-						subredditId: t,
-						userId: i.id
-					})
-				},
-				O = e => e.user.powerups.data,
-				I = e => e.user.powerups.allocationByKey,
-				j = Object(n.a)([I, (e, {
+				S = e => e.user.powerups.data,
+				T = e => e.user.powerups.allocationByKey,
+				O = Object(n.a)([T, (e, {
 					subredditId: t
 				}) => t], (e, t) => Object.values(e).some(e => e.subredditInfo.id === t)),
-				F = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
-				R = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
-				x = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
-				C = e => e.users.powerups.allocationByKey,
-				k = Object(n.a)(l, e => null == e ? void 0 : e.count),
-				N = Object(n.a)(l, e => {
+				I = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
+				j = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
+				F = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
+				R = e => e.users.powerups.allocationByKey,
+				x = Object(n.a)(a, e => null == e ? void 0 : e.count),
+				C = Object(n.a)(a, e => {
 					if (!e) return;
 					const {
 						tiersInfo: t
 					} = e, i = t.find(e => 2 === e.tier);
 					return null == i ? void 0 : i.powerupsCost
 				}),
-				D = Object(n.a)(k, N, (e, t) => {
+				k = Object(n.a)(x, C, (e, t) => {
 					if (void 0 !== e && void 0 !== t) return e >= t
 				}),
-				A = Object(n.a)(s.d, s.e, s.f, (e, t, i) => e || t || i)
+				N = Object(n.a)(s.d, s.e, s.f, (e, t, i) => e || t || i)
 		},
 		"./src/reddit/selectors/gold/purchaseCatalog.ts": function(e, t, i) {
 			"use strict";
@@ -38028,7 +38017,7 @@
 					const t = V(e),
 						i = Object(I.e)(e),
 						n = H(e),
-						r = !!i && Object(O.s)(e, {
+						r = !!i && Object(O.r)(e, {
 							subredditId: i.id
 						}),
 						o = !!i && i.isNSFW;
@@ -38040,7 +38029,7 @@
 				},
 				z = Object(r.a)(H, I.e, V, $, e => {
 					const t = Object(I.c)(e);
-					return !!t && Object(O.s)(e, {
+					return !!t && Object(O.r)(e, {
 						subredditId: t
 					})
 				}, (e, t, i, n, r) => {
@@ -41882,7 +41871,7 @@
 				Zt = e => {
 					const t = Object(se.e)(e);
 					if (t) {
-						const i = Object(pe.j)(e, {
+						const i = Object(pe.i)(e, {
 							subredditId: t.id
 						});
 						if (i) return {
@@ -46543,4 +46532,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0e3361c07df58a37b6bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7a5dd22cc9586aba3d00.js.map

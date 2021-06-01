@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1dd96cf03aaa23429135.js
-// Retrieved at 5/27/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a9ebc6905ff9ad08895c.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -2164,7 +2164,7 @@
 						commentId: n
 					});
 					if (!!s && Object(o.a)(s)) return !0;
-					if (t && Object(b.p)(e, {
+					if (t && Object(b.o)(e, {
 							subredditId: t,
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
@@ -2389,4 +2389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1dd96cf03aaa23429135.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a9ebc6905ff9ad08895c.js.map

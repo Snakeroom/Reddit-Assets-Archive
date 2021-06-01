@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.a2916424ddee8b72fa93.js
-// Retrieved at 6/1/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.c1964e7e3f36a51f8422.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -56,8 +56,8 @@
 				n = a("./src/higherOrderComponents/asModal/index.tsx"),
 				r = a("./src/reddit/actions/modal.ts"),
 				l = a("./src/reddit/constants/modals.ts"),
-				o = a("./src/reddit/selectors/platform.ts"),
-				d = a("./src/reddit/selectors/user.ts"),
+				d = a("./src/reddit/selectors/platform.ts"),
+				o = a("./src/reddit/selectors/user.ts"),
 				m = a("./src/reddit/selectors/userFlair.ts"),
 				v = a("./src/reddit/actions/economics/powerups/achievements.ts"),
 				h = a("./src/reddit/controls/Button/index.tsx"),
@@ -127,7 +127,7 @@
 						subredditId: t,
 						userId: a
 					})),
-					n = Object(i.e)(e => Object(u.o)(e, {
+					n = Object(i.e)(e => Object(u.n)(e, {
 						subredditId: t
 					})),
 					r = Object(i.d)(),
@@ -185,7 +185,7 @@
 				flairData: a
 			}) => {
 				const s = Object(i.d)(),
-					n = Object(i.e)(d.j);
+					n = Object(i.e)(o.j);
 				return n ? c.a.createElement("div", {
 					className: Object(p.a)(U.a.container, e)
 				}, c.a.createElement("div", {
@@ -217,8 +217,8 @@
 				V = a.n(T);
 			t.default = Object(n.a)(() => {
 				const e = Object(i.d)(),
-					t = Object(i.e)(e => Object(d.j)(e)),
-					a = Object(i.e)(o.e),
+					t = Object(i.e)(e => Object(o.j)(e)),
+					a = Object(i.e)(d.e),
 					s = Object(i.e)(e => a ? Object(m.b)(e, {
 						subredditId: a.id
 					}) : null),
@@ -259,4 +259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.a2916424ddee8b72fa93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.c1964e7e3f36a51f8422.js.map

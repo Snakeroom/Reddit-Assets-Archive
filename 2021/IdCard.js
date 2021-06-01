@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.6f1848a14ad9490cee9c.js
-// Retrieved at 6/1/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.814e11740bb4fa5cfc25.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -563,7 +563,7 @@
 						fullData: !0
 					}));
 					const r = s();
-					if (!Object(h.g)(r, {
+					if (!Object(h.f)(r, {
 							subredditId: e
 						}) || !t || !Object(c.a)(r)) return;
 					const i = new Set;
@@ -2870,7 +2870,7 @@
 				bt = Object(u.c)({
 					badgesEnabled: Te.d.spBadges,
 					currentUser: R.j,
-					isAchievementFlairModalEnabled: (e, t) => Object(nt.g)(e, {
+					isAchievementFlairModalEnabled: (e, t) => Object(nt.f)(e, {
 						subredditId: t.subredditId
 					}) && Object(tt.a)(e),
 					userFlairData: st.c,
@@ -2946,7 +2946,7 @@
 					canChangeUserFlair: st.b,
 					stylesDisabledForSubreddit: R.jb,
 					stylesDisabledGlobally: R.kb,
-					canChangeAchievementFlair: (e, t) => Object(nt.g)(e, {
+					canChangeAchievementFlair: (e, t) => Object(nt.f)(e, {
 						subredditId: t.subredditId
 					}) && Object(tt.a)(e)
 				});
@@ -5317,4 +5317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6f1848a14ad9490cee9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.814e11740bb4fa5cfc25.js.map

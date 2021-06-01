@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.e9ac2bdef693ba2f0c70.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.376d670c7e574d603ec3.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -2280,7 +2280,7 @@
 						commentId: n
 					});
 					if (!!r && Object(o.a)(r)) return !0;
-					if (t && Object(b.p)(e, {
+					if (t && Object(b.o)(e, {
 							subredditId: t,
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
@@ -2329,4 +2329,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.e9ac2bdef693ba2f0c70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.376d670c7e574d603ec3.js.map

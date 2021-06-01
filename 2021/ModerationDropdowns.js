@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.9863844ce2981141ac3c.js
-// Retrieved at 6/1/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6449387450a4e50e8a1c.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -481,7 +481,7 @@
 						fullData: !0
 					}));
 					const n = o();
-					if (!Object(f.g)(n, {
+					if (!Object(f.f)(n, {
 							subredditId: e
 						}) || !t || !Object(d.a)(n)) return;
 					const r = new Set;
@@ -2345,4 +2345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.9863844ce2981141ac3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6449387450a4e50e8a1c.js.map

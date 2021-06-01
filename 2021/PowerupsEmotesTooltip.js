@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.c3796ed2e454a611250a.js
-// Retrieved at 6/1/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.337056c05972e1c4008d.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -283,16 +283,16 @@
 					[u, E] = Object(n.useState)(0),
 					[h, k] = Object(n.useState)(null),
 					[A, M] = Object(n.useState)(!1),
-					V = Object(l.e)(e => Object(D.t)(e, {
+					V = Object(l.e)(e => Object(D.s)(e, {
 						subredditId: t
 					})),
-					L = Object(l.e)(e => Object(D.q)(e, {
+					L = Object(l.e)(e => Object(D.p)(e, {
 						subredditId: t
 					})),
-					H = Object(l.e)(e => Object(D.h)(e, {
+					H = Object(l.e)(e => Object(D.g)(e, {
 						subredditId: t
 					})),
-					F = Object(l.e)(e => Object(D.i)(e, {
+					F = Object(l.e)(e => Object(D.h)(e, {
 						subredditId: t
 					})),
 					q = async (e, o = !1, s) => {
@@ -650,4 +650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.c3796ed2e454a611250a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.337056c05972e1c4008d.js.map

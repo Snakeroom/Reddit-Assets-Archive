@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.3b0b82b59d7bf430291e.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.61b15ece947303c9fd14.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1971,7 +1971,7 @@
 						commentId: s
 					});
 					if (!!n && Object(a.a)(n)) return !0;
-					if (t && Object(p.p)(e, {
+					if (t && Object(p.o)(e, {
 							subredditId: t,
 							benefit: c.a.CommentsWithGifs
 						})) return !0;
@@ -1989,4 +1989,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.3b0b82b59d7bf430291e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.61b15ece947303c9fd14.js.map

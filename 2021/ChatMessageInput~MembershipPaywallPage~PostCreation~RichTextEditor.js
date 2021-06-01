@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.1741fdd5d4c3b65be79a.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.855da3bdaf39132db33f.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
@@ -474,7 +474,7 @@
 								const t = await Object(f.a)(a);
 								l.width = t.width, l.height = t.height
 							} else if (c.startsWith("video/")) {
-								const c = !(null == n || !n.id) && Object(j.p)(t, {
+								const c = !(null == n || !n.id) && Object(j.o)(t, {
 										subredditId: n.id,
 										benefit: k.a.HdVideo
 									}),
@@ -4686,7 +4686,7 @@
 				} = t, n = e.id, o = Object(l.e)(t => Object(ko.b)(t, {
 					subredditId: n
 				}));
-				return Object(l.e)(t => Object(xo.g)(t, {
+				return Object(l.e)(t => Object(xo.f)(t, {
 					subredditId: n
 				})) ? a.a.createElement(To.a, t) : a.a.createElement(a.a.Fragment, null, o && a.a.createElement(vo, t))
 			};
@@ -8131,7 +8131,7 @@
 				r = n("./src/reddit/featureFlags/index.ts"),
 				s = n("./src/reddit/selectors/economics.ts"),
 				i = n("./src/reddit/selectors/gold/powerups/index.ts");
-			const c = Object(o.a)(r.d.spEmotes, s.b, i.g, (t, {
+			const c = Object(o.a)(r.d.spEmotes, s.b, i.f, (t, {
 					subredditId: e
 				}) => {
 					var n;
@@ -8141,14 +8141,14 @@
 					const r = !(!e || !Object.keys(e).length);
 					return t && r
 				}),
-				a = Object(o.a)(s.b, i.h, i.i, i.g, (t, e, n, o) => {
+				a = Object(o.a)(s.b, i.g, i.h, i.f, (t, e, n, o) => {
 					if (o) return [...e, ...n].slice(0, 3);
 					let r = [];
 					for (const s of t || [])
 						if ((r = [...r, ...Object.values(s.emotes)]).length > 3) break;
 					return r.slice(0, 3)
 				}),
-				l = Object(o.a)(r.d.spGiphy, i.r, (t, e) => t || e)
+				l = Object(o.a)(r.d.spGiphy, i.q, (t, e) => t || e)
 		},
 		"./src/reddit/selectors/products.ts": function(t, e, n) {
 			"use strict";
@@ -8183,4 +8183,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.1741fdd5d4c3b65be79a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.855da3bdaf39132db33f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.e5462a9de0b869653bef.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.53afcf86c39029814bec.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1530,8 +1530,8 @@
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), L = Object(s.c)({
 				currentUser: x.j,
-				isAnonymous: w.d,
-				powerupsCount: w.e,
+				isAnonymous: w.c,
+				powerupsCount: w.d,
 				productOffer: j.a
 			});
 			var A = Object(o.b)(L)(a.a.memo((function(e) {
@@ -1590,8 +1590,8 @@
 			const {
 				fbt: D
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = Object(s.c)({
-				isAnonymous: w.d,
-				isPending: w.c
+				isAnonymous: w.c,
+				isPending: w.b
 			}), V = Object(o.b)(U), W = 12;
 			var z = V((function(e) {
 					const {
@@ -1718,8 +1718,8 @@
 			const {
 				fbt: ne
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), re = Object(s.c)({
-				isAnonymous: w.d,
-				powerupsCount: w.e,
+				isAnonymous: w.c,
+				powerupsCount: w.d,
 				productOffer: j.a,
 				savedCardsPending: _.w,
 				stripeTokenPending: _.m
@@ -1750,11 +1750,11 @@
 			const {
 				fbt: ce
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), de = 100, le = Object(s.c)({
-				isAnonymous: w.d,
+				isAnonymous: w.c,
 				isNightMode: x.W,
 				paypalErrorMessage: _.d,
-				powerups: w.j,
-				powerupsCount: w.e,
+				powerups: w.i,
+				powerupsCount: w.d,
 				productOffer: (e, {
 					subredditId: t
 				}) => {
@@ -1765,7 +1765,7 @@
 					return n && n[0]
 				},
 				stripeErrorMessage: _.j,
-				userPowerupsData: w.w
+				userPowerupsData: w.v
 			});
 			var ue = Object(o.b)(le)((function(e) {
 					const {
@@ -2641,4 +2641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.e5462a9de0b869653bef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.53afcf86c39029814bec.js.map

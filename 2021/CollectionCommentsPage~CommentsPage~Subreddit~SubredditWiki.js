@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6df2b11e0de1bfd2330c.js
-// Retrieved at 5/27/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.845329604b4cfc0dd88f.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -1282,21 +1282,21 @@
 				const r = Object(a.d)(),
 					s = Object(b.a)(),
 					_ = Object(a.e)(y.j),
-					f = Object(a.e)(e => Object(v.j)(e, {
+					f = Object(a.e)(e => Object(v.i)(e, {
 						subredditId: t
 					})),
 					k = Object(a.e)(e => Object(w.U)(e, {
 						subredditId: t
 					})),
-					j = Object(a.e)(e => Object(v.m)(e, {
+					j = Object(a.e)(e => Object(v.l)(e, {
 						subredditId: t
 					})),
-					E = Object(a.e)(v.w),
-					C = Object(a.e)(e => !!Object(v.k)(e, {
+					E = Object(a.e)(v.v),
+					C = Object(a.e)(e => !!Object(v.j)(e, {
 						subredditId: t
 					})),
 					N = Object(a.e)(x),
-					S = Object(a.e)(e => Object(v.a)(e, {
+					S = Object(a.e)(e => Object(v.t)(e, {
 						subredditId: t
 					})),
 					P = C || S,
@@ -3389,4 +3389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6df2b11e0de1bfd2330c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.845329604b4cfc0dd88f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.914c1d8e5c47ae7b5517.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8568c821f7e63772bd89.js
+// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1952,7 +1952,7 @@
 							subredditId: ne
 						}), [ne]),
 						pe = Object(a.e)(me),
-						he = Object(s.useCallback)(e => Object($.b)(e, {
+						he = Object(s.useCallback)(e => Object($.a)(e, {
 							subredditId: ne,
 							userId: v.authorId
 						}), [ne, v.authorId]),
@@ -3047,7 +3047,7 @@
 						commentId: r
 					});
 					if (!!n && Object(a.a)(n)) return !0;
-					if (t && Object(h.p)(e, {
+					if (t && Object(h.o)(e, {
 							subredditId: t,
 							benefit: d.a.CommentsWithGifs
 						})) return !0;
@@ -3121,4 +3121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.914c1d8e5c47ae7b5517.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8568c821f7e63772bd89.js.map
