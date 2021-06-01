@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c3e7a2e7234012ef785f.js
-// Retrieved at 6/1/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.fd5521a21ad8f0939fb7.js
+// Retrieved at 6/1/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1193,7 +1193,7 @@
 						PostDraft: "2e418a6c1af314390ede",
 						ProfileSnoobuilder: "1521a5ac7a7014f8b2d3",
 						"Frontpage~ModListing~Subreddit": "95fbf6eb260df407b156",
-						Frontpage: "9246ea466b2b2a7ebd6a",
+						Frontpage: "af5e7f8ba2cb3439b31a",
 						ModListing: "986eacf4a5cf4084ceb3",
 						Topic: "23d6a8015731d067a007",
 						CommunityAwards: "604b029c80b00b3033cb",
@@ -1253,7 +1253,7 @@
 						"translations/es_MX-json": "d1ec4d65be207e2a9aad",
 						"translations/fr_FR-json": "10b0dfdf8972cfb39253",
 						"translations/it_IT-json": "959908bd0174fa7180a2",
-						"translations/pseudo_ext-json": "e1b361826424f1fc83e2",
+						"translations/pseudo_ext-json": "f6ac5425aed37a79a4e8",
 						"translations/pseudo_long-json": "2abc7fb8d82ea2e114f0",
 						"translations/pseudo_short-json": "059a97128d07bd7fa583",
 						"translations/pt_BR-json": "a61e70c6a12084ddb2ff",
@@ -1341,7 +1341,7 @@
 						editCollectionModal: "052b6eb812cbb2a2a09c",
 						NewCommunityProgress: "239092791d9ab918df55",
 						FeaturedLiveEntrypointAnnouncement: "1670159b269e2500aa99",
-						FeaturedLiveEntrypointAnnouncementsCarousel: "a0647f6cea3baef75363",
+						FeaturedLiveEntrypointAnnouncementsCarousel: "25180511c566edc59bc5",
 						Trending: "824e2da1ac2ffa052467",
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "7ddfbd3c4cbec1092ba3",
 						"reddit-components-InFeedPostCreation": "75fa1522c70f6d4da6a2",
@@ -1495,4 +1495,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c3e7a2e7234012ef785f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.fd5521a21ad8f0939fb7.js.map

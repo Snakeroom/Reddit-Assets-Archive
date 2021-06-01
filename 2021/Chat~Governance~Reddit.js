@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cfa13acdd19c5ee671d.js
-// Retrieved at 6/1/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7925a941c067c2348104.js
+// Retrieved at 6/1/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1900,11 +1900,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("135431"),
+				buildNumber: r("135435"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1622579644"),
+				})("1622581926"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4500,14 +4500,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cb8382937b0269a02634a882602e9b4818f39f6fe-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c52a82f7b3c6af63cb5a776513bddd8ad2afe79f1-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b8382937b0269a02634a882602e9b4818f39f6fe-production",
+						release: "52a82f7b3c6af63cb5a776513bddd8ad2afe79f1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5001,7 +5001,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "b8382937b0269a02634a882602e9b4818f39f6fe-production",
+						releaseClient: "52a82f7b3c6af63cb5a776513bddd8ad2afe79f1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -21902,7 +21902,7 @@
 					})
 				};
 			var g = i("./src/server/helpers/canonicalUrl.tsx");
-			const y = Object(n.a)(e => Object(a.f)(e), e => Object(g.a)(e), (e, t) => !!e && e === t),
+			const y = Object(n.a)(e => Object(a.e)(e), e => Object(g.a)(e), (e, t) => !!e && e === t),
 				w = (e, t) => {
 					if (!t.experimentEligibilitySelector(e)) return !1;
 					if (t.isThrottled && o.a.isFeatureThrottled(t.experimentName)) return !1;
@@ -21919,7 +21919,7 @@
 				},
 				v = () => !0,
 				E = [],
-				S = Object(n.a)(a.c, a.b, w, (e, t) => t.expEventOverride, (e, t) => t.experimentName, a.f, e => Object(g.a)(e), (e, t) => {
+				S = Object(n.a)(a.c, a.b, w, (e, t) => t.expEventOverride, (e, t) => t.experimentName, a.e, e => Object(g.a)(e), (e, t) => ((e, t) => {
 					const i = Object(a.b)(e, t),
 						n = void 0 !== i,
 						r = Object(a.c)(e, t);
@@ -21937,7 +21937,7 @@
 					const o = Object(c.m)(e),
 						m = o ? p.post(e, o) : void 0,
 						f = p.request(e),
-						b = Object(a.f)(e);
+						b = Object(a.e)(e);
 					if (Object(l.b)(s) && o) {
 						const t = Object(u.F)(e, {
 							postId: o
@@ -21963,7 +21963,7 @@
 						subreddit: p.subreddit(e),
 						user: p.user(e)
 					}
-				}, y, (e, t, i, n, r, o, d, a, l) => {
+				})(e, t), y, (e, t, i, n, r, o, d, a, l) => {
 					if (!l || !i) return;
 					const c = o || d || "",
 						u = (() => s)();
@@ -36247,72 +36247,34 @@
 					experimentName: n.R
 				}) === n.cb.Enabled
 		},
-		"./src/reddit/selectors/experiments/htmlResponseStreaming.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "a", (function() {
-				return p
-			}));
-			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/reddit/constants/experiments.ts"),
-				s = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = i("./src/reddit/selectors/meta.ts"),
-				d = i("./src/reddit/selectors/user.ts");
-			const a = e => !Object(o.d)(e) && Object(d.R)(e),
-				l = e => !Object(o.d)(e) && (e => {
-					const t = Object(d.tb)(e);
-					return parseInt(t.loidCreated) < 16074144e5
-				})(e),
-				c = e => Object(s.c)(e, {
-					experimentName: r.U,
-					experimentEligibilitySelector: a
-				}),
-				u = e => Object(s.c)(e, {
-					experimentName: r.U,
-					experimentEligibilitySelector: l
-				});
-			Object(n.a)(c, e => e === r.K.LoggedInUser), Object(n.a)(u, e => e === r.K.ExistingUser);
-			var _;
-			! function(e) {
-				e.LoggedInUser = "html_response_streaming.logged_in_user", e.ExistingUser = "html_response_streaming.existing_user", e.Control = "html_response_streaming.control_1"
-			}(_ || (_ = {}));
-			const p = e => {
-				const t = c(e);
-				if (t) return t === r.K.LoggedInUser ? _.LoggedInUser : _.Control;
-				const i = u(e);
-				return i ? i === r.K.ExistingUser ? _.ExistingUser : _.Control : void 0
-			}
-		},
 		"./src/reddit/selectors/experiments/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return d
+				return o
 			})), i.d(t, "d", (function() {
-				return a
+				return d
 			})), i.d(t, "b", (function() {
-				return c
-			})), i.d(t, "f", (function() {
-				return u
-			})), i.d(t, "a", (function() {
-				return _
+				return l
 			})), i.d(t, "e", (function() {
-				return p
+				return c
+			})), i.d(t, "a", (function() {
+				return u
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/env/index.ts"),
 				r = i("./src/reddit/constants/experiments.ts"),
-				s = i("./src/reddit/selectors/experiments/htmlResponseStreaming.ts"),
-				o = i("./src/reddit/selectors/user.ts");
-			const d = (e, t) => {
+				s = i("./src/reddit/selectors/user.ts");
+			const o = (e, t) => {
 					var i, n, r, s;
 					const o = null !== (n = null === (i = e.user) || void 0 === i ? void 0 : i.experiments.byName) && void 0 !== n ? n : {},
 						d = null !== (s = null === (r = e.page) || void 0 === r ? void 0 : r.experiments.byName) && void 0 !== s ? s : {},
 						a = t.experimentName.toLowerCase();
 					return o[a] || d[a]
 				},
-				a = (e, t) => {
-					let i = d(e, t);
+				d = (e, t) => {
+					let i = o(e, t);
 					const n = t.experimentName.toLowerCase(),
-						r = c(e, t);
+						r = l(e, t);
 					return r && (i ? i.variant = r : i = {
 						id: -1,
 						name: n,
@@ -36320,31 +36282,27 @@
 						version: "-1"
 					}), i
 				},
-				l = (e, t) => Object(n.a)() || (null == e ? void 0 : e.isEmployee) || r.Lb.has(t.toLowerCase()),
-				c = (e, {
+				a = (e, t) => Object(n.a)() || (null == e ? void 0 : e.isEmployee) || r.Lb.has(t.toLowerCase()),
+				l = (e, {
 					experimentName: t
 				}) => {
 					var i;
-					const n = Object(o.j)(e);
-					return l(n, t) ? null === (i = e.experimentOverrides) || void 0 === i ? void 0 : i[t.toLowerCase()] : void 0
+					const n = Object(s.j)(e);
+					return a(n, t) ? null === (i = e.experimentOverrides) || void 0 === i ? void 0 : i[t.toLowerCase()] : void 0
 				},
-				u = e => e.page.experiments.canonicalUrl,
-				_ = e => {
-					const t = Object(o.j)(e),
+				c = e => e.page.experiments.canonicalUrl,
+				u = e => {
+					const t = Object(s.j)(e),
 						i = {
 							...e.user.experiments.byName,
 							...e.page.experiments.byName
 						};
-					for (const n of Object.keys(e.experimentOverrides)) l(t, n) && (i[n] = {
+					for (const n of Object.keys(e.experimentOverrides)) a(t, n) && (i[n] = {
 						id: 0,
 						name: n,
 						variant: e.experimentOverrides[n] || ""
 					});
 					return i
-				},
-				p = e => {
-					const t = Object(s.a)(e);
-					return t || null
 				}
 		},
 		"./src/reddit/selectors/experiments/listingBelow.ts": function(e, t, i) {
@@ -46845,4 +46803,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cfa13acdd19c5ee671d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7925a941c067c2348104.js.map
