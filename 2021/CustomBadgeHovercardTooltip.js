@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.f24168d690bf9475b3b1.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.27dc25022f36b4f8c9a9.js
+// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -174,14 +174,14 @@
 			var A = Object(f.c)(Object(o.b)(I, e => ({
 				onOpenUploadDialog: () => e(Object(b.j)())
 			}))(P));
-			const M = Object(d.a)(A, [i.a.Click, i.a.Keydown]);
-			const v = Object(c.c)({
+			const v = Object(d.a)(A, [i.a.Click, i.a.Keydown]);
+			const M = Object(c.c)({
 				isOpen: (e, {
 					tooltipId: t
 				}) => Object(a.b)(t)(e)
 			});
-			t.default = Object(o.b)(v)((function(e) {
-				return e.isOpen ? s.a.createElement(M, e) : null
+			t.default = Object(o.b)(M)((function(e) {
+				return e.isOpen ? s.a.createElement(v, e) : null
 			}))
 		},
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, r) {
@@ -653,9 +653,9 @@
 			})), r.d(t, "n", (function() {
 				return A
 			})), r.d(t, "e", (function() {
-				return M
-			})), r.d(t, "d", (function() {
 				return v
+			})), r.d(t, "d", (function() {
+				return M
 			})), r.d(t, "j", (function() {
 				return x
 			})), r.d(t, "p", (function() {
@@ -787,12 +787,12 @@
 				return f
 			}
 
-			function M(e, t) {
+			function v(e, t) {
 				const r = A(e, t, i.a.Loyalty).find(e => "membership" === e.id);
 				return r ? [].concat(r.locked, r.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : f
 			}
 
-			function v(e, t) {
+			function M(e, t) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === m.a.Fetched) {
 					const e = r.data.collections[i.a.Cosmetic];
@@ -855,16 +855,16 @@
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
 				k = (e, t) => {
-					const r = e.subreddits.gov.meta[t || ""],
-						n = r && r.extra && r.extra.nomenclature || w;
+					var r, n, s, o;
+					const c = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || w;
 					return {
 						prices: j(e, t),
-						member: n.member || w.member,
-						memberPlural: n.memberPlural || w.memberPlural,
-						memberAlt: n.memberAlt || w.memberAlt,
-						memberAltPlural: n.memberAltPlural || w.memberAltPlural,
-						membership: n.membership || w.membership,
-						membershipAlt: n.membershipAlt || w.membershipAlt
+						member: c.member || w.member,
+						memberPlural: c.memberPlural || w.memberPlural,
+						memberAlt: c.memberAlt || w.memberAlt,
+						memberAltPlural: c.memberAltPlural || w.memberAltPlural,
+						membership: c.membership || w.membership,
+						membershipAlt: c.membershipAlt || w.membershipAlt
 					}
 				},
 				F = e => {
@@ -912,4 +912,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.f24168d690bf9475b3b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.27dc25022f36b4f8c9a9.js.map

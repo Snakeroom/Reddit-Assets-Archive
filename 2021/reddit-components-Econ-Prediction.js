@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a9ebc6905ff9ad08895c.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.8e2380491e191f87f2cc.js
+// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -265,8 +265,8 @@
 				g = Object(s.a)(f.bb),
 				E = Object(s.a)(f.ab),
 				_ = Object(s.a)(f.Y),
-				P = Object(s.a)(f.X),
-				v = Object(s.a)(f.W),
+				v = Object(s.a)(f.X),
+				P = Object(s.a)(f.W),
 				O = Object(s.a)(f.Cb),
 				y = Object(s.a)(f.Ab),
 				x = Object(s.a)(f.Bb),
@@ -331,7 +331,7 @@
 						if (t.ok) {
 							const n = t.body;
 							if (null === (s = n.errors) || void 0 === s ? void 0 : s.length) throw new Error(n.errors[0].message);
-							return void e(P({
+							return void e(v({
 								productOffers: null !== (a = n.data.globalProductOffers.offers) && void 0 !== a ? a : []
 							}))
 						}
@@ -339,7 +339,7 @@
 						const t = d.message ? d.message : r.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						});
-						o.c.captureMessage(t), e(v(t)), e(k(t))
+						o.c.captureMessage(t), e(P(t)), e(k(t))
 					}
 				}, M = () => async (e, t, {
 					gqlContext: n
@@ -593,8 +593,8 @@
 				g = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
 				E = n("./src/reddit/helpers/trackers/predictions.ts"),
 				_ = n("./src/reddit/hooks/useTracking.ts"),
-				P = n("./src/reddit/models/Toast/index.ts"),
-				v = n("./src/reddit/selectors/poll/index.ts"),
+				v = n("./src/reddit/models/Toast/index.ts"),
+				P = n("./src/reddit/selectors/poll/index.ts"),
 				O = n("./src/reddit/selectors/postCreations.ts"),
 				y = n("./src/reddit/selectors/posts.ts"),
 				x = n("./src/reddit/selectors/user.ts"),
@@ -934,8 +934,8 @@
 					})))))
 				})),
 				_e = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
-				Pe = n("./src/reddit/components/Econ/Prediction/index.m.less"),
-				ve = n.n(Pe),
+				ve = n("./src/reddit/components/Econ/Prediction/index.m.less"),
+				Pe = n.n(ve),
 				Oe = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
 				ye = n("./src/reddit/controls/InternalLink/index.tsx"),
 				xe = n("./src/reddit/hooks/usePageLayer.ts"),
@@ -972,7 +972,7 @@
 					}, [n, d, c.name]), (null == u ? void 0 : u.tournamentId) !== t) return null;
 				const {
 					name: g,
-					totalParticipantsCount: P
+					totalParticipantsCount: v
 				} = u;
 				return s.a.createElement(ye.a, {
 					className: Ne.a.tournamentLink,
@@ -991,10 +991,10 @@
 					className: Ne.a.tournamentName
 				}, g), s.a.createElement("div", {
 					className: Ne.a.totalPlayers
-				}, P > 0 ? we._({
+				}, v > 0 ? we._({
 					"*": "{totalPlayers} tournament players",
 					_1: "{totalPlayers} tournament player"
-				}, [we._param("totalPlayers", Object(l.b)(P)), we._plural(P)], {
+				}, [we._param("totalPlayers", Object(l.b)(v)), we._plural(v)], {
 					hk: "3eDpRH"
 				}) : we._("Be the first to predict!", null, {
 					hk: "4Ea9sh"
@@ -1008,8 +1008,8 @@
 				isAutoVoteEnabled: g.e,
 				isEditing: O.K,
 				isVoteAnimationEnabled: g.d,
-				prediction: v.g,
-				pollId: v.a,
+				prediction: P.g,
+				pollId: P.a,
 				post: y.F,
 				subredditOrProfile: y.R,
 				userCoins: x.d,
@@ -1035,7 +1035,7 @@
 				post: f,
 				prediction: h,
 				pollId: g,
-				subredditOrProfile: v,
+				subredditOrProfile: P,
 				showToast: O,
 				upvoteToggled: y,
 				userCoins: x,
@@ -1048,7 +1048,7 @@
 				}, []), Y = Object(r.useCallback)(() => {
 					A(null), U(null)
 				}, []);
-				if (!g || !h || !v) return s.a.createElement(N, null);
+				if (!g || !h || !P) return s.a.createElement(N, null);
 				const {
 					creatorId: K,
 					endsAt: z,
@@ -1061,9 +1061,9 @@
 					userWonAmount: re
 				} = h, se = K === j, oe = z < Date.now(), ae = !c()(ee), ce = oe && se && !X, de = Z.find(({
 					id: e
-				}) => e === M), le = n ? Object(d.a)(e, ve.a.container, ve.a.forCommentsPage, {
-					[ve.a.isEditing]: o
-				}) : Object(d.a)(e, ve.a.container);
+				}) => e === M), le = n ? Object(d.a)(e, Pe.a.container, Pe.a.forCommentsPage, {
+					[Pe.a.isEditing]: o
+				}) : Object(d.a)(e, Pe.a.container);
 				return s.a.createElement("div", {
 					className: le,
 					onClick: e => {
@@ -1083,7 +1083,7 @@
 					isTokens: ae,
 					storageKey: C.a.feature
 				}) : null, s.a.createElement("div", {
-					className: ve.a.poll
+					className: Pe.a.poll
 				}, Z.map(e => s.a.createElement(_e.a, {
 					endsAt: z,
 					key: `prediction-option-${e.id}`,
@@ -1112,7 +1112,7 @@
 					tournamentId: ee,
 					onReveal: () => V(!0)
 				}), s.a.createElement("div", {
-					className: ve.a.predictionsCount
+					className: Pe.a.predictionsCount
 				}, ae && $ > 0 && Me._({
 					"*": "{total voters} predictions made",
 					_1: "{total voters} prediction made"
@@ -1124,7 +1124,7 @@
 					resolvedOptionId: X,
 					totalStakeAmount: Q
 				}))), !!de && s.a.createElement(T.b, {
-					className: ve.a.modal,
+					className: Pe.a.modal,
 					isCreatingVote: w,
 					onOverlayClick: Y,
 					onCancel: Y,
@@ -1137,7 +1137,7 @@
 							s = n ? n.amount : e.coins;
 						if (oe) return O({
 							duration: 5e3,
-							kind: P.b.Error,
+							kind: v.b.Error,
 							text: Me._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})
@@ -1159,7 +1159,7 @@
 								price: s
 							}), t && y(g), I(!1), A(null), i ? G(!0) : O({
 								duration: 5e3,
-								kind: P.b.SuccessCommunity,
+								kind: v.b.SuccessCommunity,
 								text: Me._("Thanks! See if you're right in {timeToResult}", [Me._param("timeToResult", Object(u.a)(new Date(z), !0))], {
 									hk: "3ZSdoo"
 								})
@@ -1167,7 +1167,7 @@
 						} catch (o) {
 							I(!1), A(null), O({
 								duration: 5e3,
-								kind: P.b.Error,
+								kind: v.b.Error,
 								text: Me._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								})
@@ -1194,7 +1194,7 @@
 						} catch (e) {
 							O({
 								duration: 5e3,
-								kind: P.b.Error,
+								kind: v.b.Error,
 								text: Me._("Error: Failed to resolve prediction, please try again later", null, {
 									hk: "3Ve2Mb"
 								})
@@ -1316,9 +1316,9 @@
 			})), n.d(t, "i", (function() {
 				return _
 			})), n.d(t, "h", (function() {
-				return P
-			})), n.d(t, "j", (function() {
 				return v
+			})), n.d(t, "j", (function() {
+				return P
 			})), n.d(t, "g", (function() {
 				return O
 			})), n.d(t, "c", (function() {
@@ -1381,7 +1381,7 @@
 						token: r
 					}
 				}),
-				P = (e, t, n, r) => Object(h.a)(e, {
+				v = (e, t, n, r) => Object(h.a)(e, {
 					...u,
 					variables: {
 						nonce: t,
@@ -1389,7 +1389,7 @@
 						token: r
 					}
 				}),
-				v = (e, t, n, r) => Object(h.a)(e, {
+				P = (e, t, n, r) => Object(h.a)(e, {
 					...p,
 					variables: {
 						nonce: t,
@@ -1909,9 +1909,9 @@
 			})), n.d(t, "w", (function() {
 				return _
 			})), n.d(t, "f", (function() {
-				return P
-			})), n.d(t, "i", (function() {
 				return v
+			})), n.d(t, "i", (function() {
+				return P
 			})), n.d(t, "q", (function() {
 				return O
 			})), n.d(t, "h", (function() {
@@ -1994,7 +1994,7 @@
 					}
 					return E.DontKnow
 				},
-				P = (e, t) => {
+				v = (e, t) => {
 					const n = e.user.account,
 						r = e.economics.subredditPremium[t];
 					if (n && r && r.status === m.a.Fetched) {
@@ -2012,13 +2012,13 @@
 					}
 				};
 
-			function v(e, t) {
+			function P(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(s.a)(e.map(e => t[e]).filter(Boolean)) : f
 			}
 			const O = (e, t, n) => {
 					var s;
 					if (!r.d.spBadges(e)) return f;
-					return v(null === (s = e.users.appliedBadges[n]) || void 0 === s ? void 0 : s[t], e.badges.models)
+					return P(null === (s = e.users.appliedBadges[n]) || void 0 === s ? void 0 : s[t], e.badges.models)
 				},
 				y = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
@@ -2125,16 +2125,16 @@
 					return r && r.price && r.currency && (n[r.currency] = r.price), n
 				},
 				F = (e, t) => {
-					const n = e.subreddits.gov.meta[t || ""],
-						r = n && n.extra && n.extra.nomenclature || M;
+					var n, r, s, o;
+					const a = (null === (o = null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || M;
 					return {
 						prices: B(e, t),
-						member: r.member || M.member,
-						memberPlural: r.memberPlural || M.memberPlural,
-						memberAlt: r.memberAlt || M.memberAlt,
-						memberAltPlural: r.memberAltPlural || M.memberAltPlural,
-						membership: r.membership || M.membership,
-						membershipAlt: r.membershipAlt || M.membershipAlt
+						member: a.member || M.member,
+						memberPlural: a.memberPlural || M.memberPlural,
+						memberAlt: a.memberAlt || M.memberAlt,
+						memberAltPlural: a.memberAltPlural || M.memberAltPlural,
+						membership: a.membership || M.membership,
+						membershipAlt: a.membershipAlt || M.membershipAlt
 					}
 				},
 				T = e => {
@@ -2324,9 +2324,9 @@
 			})), n.d(t, "l", (function() {
 				return _
 			})), n.d(t, "w", (function() {
-				return P
-			})), n.d(t, "x", (function() {
 				return v
+			})), n.d(t, "x", (function() {
+				return P
 			})), n.d(t, "v", (function() {
 				return O
 			})), n.d(t, "y", (function() {
@@ -2374,8 +2374,8 @@
 				g = e => e.features.goldPurchase.payment.paymentMethod,
 				E = e => e.features.goldPurchase.payment.cardName,
 				_ = e => e.features.goldPurchase.payment.postalCode,
-				P = e => e.features.goldPurchase.payment.savedCardsPending,
-				v = e => e.features.goldPurchase.payment.savedCards,
+				v = e => e.features.goldPurchase.payment.savedCardsPending,
+				P = e => e.features.goldPurchase.payment.savedCards,
 				O = e => e.features.goldPurchase.payment.rememberCard,
 				y = e => e.features.goldPurchase.payment.useSavedCard,
 				x = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
@@ -2389,4 +2389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a9ebc6905ff9ad08895c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.8e2380491e191f87f2cc.js.map
