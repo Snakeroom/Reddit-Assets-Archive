@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.554e3f31dfeb938a0671.js
-// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8bed0868f57b881599be.js
+// Retrieved at 6/1/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -22073,17 +22073,41 @@
 		"./src/reddit/hooks/useLocalStorage.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return s
+				return a
 			}));
 			var o = n("./node_modules/react/index.js"),
 				r = n("./src/reddit/helpers/localStorage/index.ts");
+			const s = {},
+				i = (e, t, n) => (s[e] || (s[e] = {
+					callbacks: [],
+					value: n
+				}), s[e].callbacks.push(t), {
+					deregister: () => {
+						const {
+							callbacks: n
+						} = s[e], o = n.indexOf(t);
+						o > -1 && n.splice(o, 1)
+					},
+					emit: n => {
+						s[e].value !== n && (s[e].value = n, s[e].callbacks.forEach(e => {
+							e !== t && e(n)
+						}))
+					}
+				});
 
-			function s(e, t) {
-				let n;
-				n = Object(r.y)(e);
-				const [s, i] = Object(o.useState)(null != n ? n : t);
-				return [s, function(t) {
-					Object(r.yb)(e, t), i(t)
+			function a(e, t) {
+				const n = Object(o.useRef)(null);
+				let s;
+				s = Object(r.y)(e);
+				const [a, c] = Object(o.useState)(null != s ? s : t);
+				return Object(o.useEffect)(() => (n.current = i(e, c, t), () => {
+					var e;
+					return null === (e = n.current) || void 0 === e ? void 0 : e.deregister()
+				}), [e, t]), Object(o.useEffect)(() => {
+					var e;
+					null === (e = n.current) || void 0 === e || e.emit(a)
+				}, [a]), [a, function(t) {
+					Object(r.yb)(e, t), c(t)
 				}]
 			}
 		},
@@ -30148,4 +30172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.554e3f31dfeb938a0671.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8bed0868f57b881599be.js.map
