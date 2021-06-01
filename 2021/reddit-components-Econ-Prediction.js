@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d20eec837885e0f767e1.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7bce084d9fd61f7277d3.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
@@ -661,8 +661,8 @@
 				H = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				J = n("./src/reddit/selectors/gold/productOffers.ts"),
 				Y = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
-				z = n("./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less"),
-				K = n.n(z);
+				K = n("./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less"),
+				z = n.n(K);
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -673,41 +673,41 @@
 					const n = Object(o.e)(J.f),
 						r = Boolean(n);
 					return s.a.createElement("div", {
-						className: K.a.modal
+						className: z.a.modal
 					}, s.a.createElement(V.q, {
-						className: K.a.closeButton,
+						className: z.a.closeButton,
 						Icon: H.a,
 						priority: V.b.Plain,
 						onClick: t
 					}), s.a.createElement("header", {
-						className: K.a.header
+						className: z.a.header
 					}, s.a.createElement(Y.a, {
-						className: K.a.image
+						className: z.a.image
 					}), s.a.createElement("div", {
-						className: K.a.spacer
+						className: z.a.spacer
 					}), s.a.createElement("p", {
-						className: K.a.premium
+						className: z.a.premium
 					}, Z._("Premium Feature", null, {
 						hk: "32ZWoW"
 					})), s.a.createElement("div", {
-						className: K.a.smallSpacer
+						className: z.a.smallSpacer
 					}), s.a.createElement("h2", {
-						className: K.a.title
+						className: z.a.title
 					}, Z._("Sneak Peek", null, {
 						hk: "2FAIvU"
 					})), s.a.createElement("h3", {
-						className: K.a.subtitle
+						className: z.a.subtitle
 					}, Z._("Premium users can see how others have predicted before they make their own Prediction.", null, {
 						hk: "2mpEHX"
 					}))), r ? s.a.createElement("button", {
-						className: K.a.button,
+						className: z.a.button,
 						onClick: () => {
 							e(), t()
 						}
 					}, Z._("Continue", null, {
 						hk: "3T00JU"
 					})) : s.a.createElement("a", {
-						className: K.a.link,
+						className: z.a.link,
 						href: `${G.a.redditUrl}/premium`,
 						target: "_blank",
 						rel: "noopener noreferrer",
@@ -715,9 +715,9 @@
 					}, Z._("Get Premium", null, {
 						hk: "3tW2d3"
 					})), s.a.createElement("div", {
-						className: K.a.spacer
+						className: z.a.spacer
 					}), s.a.createElement("p", {
-						className: K.a.disclaimer
+						className: z.a.disclaimer
 					}, Z._("Only paid Reddit Premium members get a sneak peek.", null, {
 						hk: "KOIbk"
 					})))
@@ -1050,8 +1050,8 @@
 				}, []);
 				if (!g || !h || !P) return s.a.createElement(N, null);
 				const {
-					creatorId: z,
-					endsAt: K,
+					creatorId: K,
+					endsAt: z,
 					options: Z,
 					resolvedOptionId: X,
 					totalStakeAmount: Q,
@@ -1059,7 +1059,7 @@
 					tournamentId: ee,
 					userSelection: ne,
 					userWonAmount: re
-				} = h, se = z === j, oe = K < Date.now(), ae = !c()(ee), ce = oe && se && !X, de = Z.find(({
+				} = h, se = K === j, oe = z < Date.now(), ae = !c()(ee), ce = oe && se && !X, de = Z.find(({
 					id: e
 				}) => e === M), le = n ? Object(d.a)(e, Pe.a.container, Pe.a.forCommentsPage, {
 					[Pe.a.isEditing]: o
@@ -1085,7 +1085,7 @@
 				}) : null, s.a.createElement("div", {
 					className: Pe.a.poll
 				}, Z.map(e => s.a.createElement(_e.a, {
-					endsAt: K,
+					endsAt: z,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: q && ne === e.id,
 					onAnimationEnd: J
@@ -1120,7 +1120,7 @@
 					hk: "2u2Nv8"
 				}), s.a.createElement(pe, {
 					isCoins: !ae,
-					endsAt: K,
+					endsAt: z,
 					resolvedOptionId: X,
 					totalStakeAmount: Q
 				}))), !!de && s.a.createElement(T.b, {
@@ -1160,7 +1160,7 @@
 							}), t && y(g), I(!1), A(null), i ? G(!0) : O({
 								duration: 5e3,
 								kind: v.b.SuccessCommunity,
-								text: Me._("Thanks! See if you're right in {timeToResult}", [Me._param("timeToResult", Object(u.a)(new Date(K), !0))], {
+								text: Me._("Thanks! See if you're right in {timeToResult}", [Me._param("timeToResult", Object(u.a)(new Date(z), !0))], {
 									hk: "3ZSdoo"
 								})
 							})
@@ -1479,10 +1479,10 @@
 
 			function o(e, t) {
 				let n;
-				n = Object(s.x)(e);
+				n = Object(s.y)(e);
 				const [o, a] = Object(r.useState)(null != n ? n : t);
 				return [o, function(t) {
-					Object(s.wb)(e, t), a(t)
+					Object(s.yb)(e, t), a(t)
 				}]
 			}
 		},
@@ -2203,16 +2203,16 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.Bb),
-				a = Object(s.a)(r.Eb),
-				i = Object(s.a)(r.zb),
-				c = Object(s.a)(r.Cb),
-				d = Object(s.a)(r.Ab),
-				l = Object(s.a)(r.Db),
-				u = Object(s.a)(r.Fb),
-				m = Object(s.a)(r.tb),
-				p = Object(s.a)(r.sb);
-			Object(s.a)(r.ub)
+			const o = Object(s.a)(r.Cb),
+				a = Object(s.a)(r.Fb),
+				i = Object(s.a)(r.Ab),
+				c = Object(s.a)(r.Db),
+				d = Object(s.a)(r.Bb),
+				l = Object(s.a)(r.Eb),
+				u = Object(s.a)(r.Gb),
+				m = Object(s.a)(r.ub),
+				p = Object(s.a)(r.tb);
+			Object(s.a)(r.vb)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -2226,7 +2226,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!n || Object(r.Gd)(n))
+				return !(!n || Object(r.Id)(n))
 			}
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
@@ -2389,4 +2389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d20eec837885e0f767e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7bce084d9fd61f7277d3.js.map

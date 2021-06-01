@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1b228dff7ec5b0f785a4.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9a00cbf0e9a27b45efbd.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1233,7 +1233,7 @@
 						}),
 						id: d,
 						onClick: () => {
-							G(a, n.id)
+							q(a, n.id)
 						},
 						onMouseEnter: c,
 						onMouseLeave: c,
@@ -1247,12 +1247,12 @@
 						text: Object(X.a)(n.created)
 					}))
 				},
-				G = (e, t) => {
+				q = (e, t) => {
 					window.addEventListener("focus", (function n() {
-						q(e, t, n)
+						G(e, t, n)
 					}))
 				},
-				q = (e, t, n) => {
+				G = (e, t, n) => {
 					window.removeEventListener("focus", n), e(Object(J.g)({
 						commentListNodeId: t
 					})), window.setTimeout(() => e(Object(J.g)({
@@ -1639,8 +1639,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ge = p.a.wrapped(_.b, "RightPositionedAuthorFlair", Je.a),
-				qe = p.a.wrapped(Re.a, "AdminIcon", Je.a),
+			const qe = p.a.wrapped(_.b, "RightPositionedAuthorFlair", Je.a),
+				Ge = p.a.wrapped(Re.a, "AdminIcon", Je.a),
 				Ke = p.a.div("AdminEmeritus", Je.a),
 				Ye = p.a.wrapped(Ve, "OpIcon", Je.a),
 				$e = p.a.wrapped(Re.a, "ContractorIcon", Je.a),
@@ -1763,7 +1763,7 @@
 				}), a && r.a.createElement(ee, null), a && r.a.createElement(y.c, {
 					className: Je.a.metaText,
 					key: "crowdControlSeparator"
-				}), h && !W && r.a.createElement(Ge, {
+				}), h && !W && r.a.createElement(qe, {
 					flair: h,
 					forceSmallEmojis: p
 				}), !p && r.a.createElement(O.a, {
@@ -1911,7 +1911,7 @@
 					return r.a.createElement(s.Fragment, null, e.isAuthorCakeday && r.a.createElement(V, {
 						commentId: e.id,
 						renderedInOverlay: t
-					}), e.isAdmin && r.a.createElement(qe, {
+					}), e.isAdmin && r.a.createElement(Ge, {
 						desc: B(),
 						id: n.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
@@ -3742,8 +3742,8 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.pb)
+			const r = Object(s.a)(o.qb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1b228dff7ec5b0f785a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9a00cbf0e9a27b45efbd.js.map

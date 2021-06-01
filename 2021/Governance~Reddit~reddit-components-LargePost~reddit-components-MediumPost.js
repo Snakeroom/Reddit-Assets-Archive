@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.be37269e7145f04bfebe.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.877af913721f3b091b1e.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -301,7 +301,7 @@
 				I = Object(i.a)(T),
 				C = t => {
 					const e = Date.now() - t,
-						s = Object(E.E)();
+						s = Object(E.F)();
 					return Object.keys(s).filter(t => s[t].when >= e).map(t => s[t])
 				},
 				L = ({
@@ -318,12 +318,12 @@
 						L = t === T;
 					if (!(t === _.f || t === _.b || L)) return;
 					if (L) return void A(p, e, s)(n, i, l);
-					0 === C(o.lb).length && Object(E.Cb)(!1);
+					0 === C(o.lb).length && Object(E.Eb)(!1);
 					let D = i();
 					if (Object(f.d)(D, {
 							listingKey: e,
 							postId: s
-						}) || Object(f.a)(D).length >= b.a || Object(E.S)() || C(o.y).length >= b.a) return;
+						}) || Object(f.a)(D).length >= b.a || Object(E.T)() || C(o.y).length >= b.a) return;
 					const j = Object(S.v)(D, {
 						listingKey: e,
 						postId: s
@@ -373,14 +373,14 @@
 						postId: s
 					})))) : Object(r.a)(Object(m.c)(h, "no_chaining", p)(D))
 				}, D = "FEED_CHAINING__CHAIN_TOGGLED", j = (Object(i.a)(D), "FEED_CHAINING__CHAINING_TOGGLED"), h = Object(i.a)(j), y = () => async t => {
-					Object(E.Cb)(!0), t(h({
+					Object(E.Eb)(!0), t(h({
 						isDismissed: !0
 					})), t(Object(l.f)(Object(l.e)(n.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), p.b.Undo, n.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(E.Cb)(!1), t(h({
+						Object(E.Eb)(!1), t(h({
 							isDismissed: !1
 						}))
 					})))
@@ -1166,17 +1166,17 @@
 						listingKey: w
 					}), G = m && (!Y || 0 === Y.length), B = b, q = Object(P.F)(R, {
 						postId: f
-					}), V = d && !!q && !!q.media && (Object(U.H)(q.media) || Object(U.F)(q.media)) && !q.media.altText;
-					if (!(F || G || B || V || p)) return;
+					}), K = d && !!q && !!q.media && (Object(U.H)(q.media) || Object(U.F)(q.media)) && !q.media.altText;
+					if (!(F || G || B || K || p)) return;
 					F && e(C({
 						key: y
 					}));
-					const K = await ((t, e) => Object(_.a)(t, {
+					const V = await ((t, e) => Object(_.a)(t, {
 							...D,
 							variables: e
 						}))(r(), t),
-						H = K.body;
-					p && (K.ok ? H.data && H.data.post && e(c({
+						H = V.body;
+					p && (V.ok ? H.data && H.data.post && e(c({
 						postId: f,
 						isEligibleForQASchema: null !== (i = H.data.post.isEligibleForQASchema) && void 0 !== i && i
 					})) : e(a())), F && O({
@@ -1184,20 +1184,20 @@
 						onFailure: t => e(T(t)),
 						onSuccess: t => e(I(t)),
 						postId: f,
-						response: K
-					}), G && (K.ok ? H.data && N({
+						response: V
+					}), G && (V.ok ? H.data && N({
 						getState: s,
 						onFailure: t => e(v(t)),
 						onSuccess: t => e(M(t)),
 						options: t,
 						subreddit: H.data.subreddit
-					}) : e(v(K.error))), B && K.ok && A({
+					}) : e(v(V.error))), B && V.ok && A({
 						getState: s,
 						onFailure: t => e(l(t)),
 						onSuccess: t => e(u(t)),
 						postId: f,
 						post: H.data.post
-					}), V && K.ok && h({
+					}), K && V.ok && h({
 						getState: s,
 						onFailure: t => e(x(t)),
 						onSuccess: t => e(k(t)),
@@ -1414,8 +1414,8 @@
 				G = s("./src/reddit/selectors/user.ts"),
 				B = s("./src/reddit/components/PostTitle/index.m.less"),
 				q = s.n(B),
-				V = s("./src/config.ts"),
-				K = s("./src/reddit/hooks/useClickSourceData.ts"),
+				K = s("./src/config.ts"),
+				V = s("./src/reddit/hooks/useClickSourceData.ts"),
 				H = s("./src/reddit/hooks/useExperimentVariant.ts"),
 				W = s("./src/reddit/hooks/usePostContext.ts"),
 				z = s("./src/reddit/hooks/useTheme.ts");
@@ -1508,7 +1508,7 @@
 						subreddit: s
 					} = t, {
 						isSponsored: n
-					} = e, r = Object(K.a)(), i = Object(H.a)(b.Rb) === b.Vb.Enabled;
+					} = e, r = Object(V.a)(), i = Object(H.a)(b.Sb) === b.Wb.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return o.a.createElement(J, {
 						nowrap: t.nowrap
 					}, o.a.createElement(et, t));
@@ -1642,7 +1642,7 @@
 					}), o.a.createElement("div", {
 						className: q.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
-							__html: `\n              <img alt="" src="${V.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
+							__html: `\n              <img alt="" src="${K.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
 						}
 					}), this.getDynamicStyleTags())
 				}
@@ -1814,9 +1814,9 @@
 			})), s.d(e, "t", (function() {
 				return q
 			})), s.d(e, "H", (function() {
-				return V
-			})), s.d(e, "d", (function() {
 				return K
+			})), s.d(e, "d", (function() {
+				return V
 			})), s.d(e, "c", (function() {
 				return H
 			})), s.d(e, "b", (function() {
@@ -2065,7 +2065,7 @@
 						noun: "footer_subreddit"
 					})
 				},
-				V = (t, e) => s => {
+				K = (t, e) => s => {
 					const n = Object(u.j)(e);
 					return {
 						...p(s, t, e),
@@ -2075,7 +2075,7 @@
 						noun: "title_subreddit"
 					}
 				},
-				K = (t, e) => s => ({
+				V = (t, e) => s => ({
 					...p(s, t, e),
 					action: "status",
 					actionInfo: b.actionInfo(s, {
@@ -2735,4 +2735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.be37269e7145f04bfebe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.877af913721f3b091b1e.js.map

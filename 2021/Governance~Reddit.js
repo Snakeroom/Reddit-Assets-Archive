@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.175d3b3326e32663512c.js
-// Retrieved at 6/1/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c321ae6a51837a22acf7.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2845,7 +2845,7 @@
 			const D = e => g.d.reCaptchaEnterprise(e) && !Object(v.d)(e),
 				w = e => !!Object(T.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
-					experimentName: b.Qc
+					experimentName: b.Sc
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				j = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -3745,7 +3745,7 @@
 			const y = "INCREMENT_SEEN_COUNT_PER_SESS",
 				m = (e, t, r) => async (n, c) => {
 					const d = c(),
-						p = Object(i.w)(),
+						p = Object(i.x)(),
 						y = Date.now(),
 						m = p && y - p < 18e4,
 						O = Object(b.c)(d, {
@@ -3753,7 +3753,7 @@
 						}),
 						I = d.upvotePromptCountPerSess,
 						g = (() => {
-							const e = Object(i.v)();
+							const e = Object(i.w)();
 							if (!e) return [];
 							const t = Date.now();
 							return e.filter(e => t - e < 864e5)
@@ -3782,7 +3782,7 @@
 						action: "view",
 						noun: l,
 						...Object(u.defaults)(e)
-					}))(d)), Object(i.vb)(), Object(i.ub)(T), n(_()), r && r()
+					}))(d)), Object(i.xb)(), Object(i.wb)(T), n(_()), r && r()
 				}, E = e => async (t, r) => {
 					Object(f.a)((e => ({
 						source: l,
@@ -3794,14 +3794,14 @@
 					}) && t(Object(c.bb)(e))
 				}, h = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.zd
+						experimentName: d.Bd
 					});
 					let a = "";
-					return (null == r ? void 0 : r.variant) === d.Ad.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.Cd.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.Ad.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.Cd.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -21722,7 +21722,7 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(a.a)(s.wb)
+			const n = Object(a.a)(s.xb)
 		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
 			"use strict";
@@ -21754,7 +21754,7 @@
 				l = e => e === a.J.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(a.Gd)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(a.Id)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -21768,14 +21768,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Cc
-					}) === s.Mc.Enabled
+						experimentName: s.Ec
+					}) === s.Oc.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Bc
-					}) === s.Lc.Enabled
+						experimentName: s.Dc
+					}) === s.Nc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
@@ -21803,9 +21803,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.zd
+						experimentName: s.Bd
 					});
-					return r === s.Ad.Variant1 || r === s.Ad.Variant2
+					return r === s.Cd.Variant1 || r === s.Cd.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -21961,4 +21961,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.175d3b3326e32663512c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c321ae6a51837a22acf7.js.map

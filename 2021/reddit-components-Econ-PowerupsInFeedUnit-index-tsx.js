@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.bba917da5cafd851fb71.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.604a4d6144928994f640.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -180,7 +180,7 @@
 							return Object(m.k)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= 5
 						})(e))
 					}, [g, e, k]), Object(r.useEffect)(() => {
-						j && (Object(m.P)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), w(Object(p.l)()))
+						j && (Object(m.Q)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), w(Object(p.l)()))
 					}, [j, w, e]), !j) return null;
 				const O = !!(null == N ? void 0 : N.freeCount);
 				return o.a.createElement("div", {
@@ -217,4 +217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.bba917da5cafd851fb71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.604a4d6144928994f640.js.map

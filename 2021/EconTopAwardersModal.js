@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6d71921cd86f1ad37141.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.383b5b13599a759f9b6d.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -1990,7 +1990,7 @@
 				p = a("./src/reddit/icons/svgs/PremiumCircle/index.tsx"),
 				b = a("./src/reddit/constants/experiments.ts"),
 				f = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const v = Object(f.a)(b.qb);
+			const v = Object(f.a)(b.rb);
 			var h = a("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				x = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				E = a("./node_modules/react-router/esm/react-router.js"),
@@ -2599,4 +2599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6d71921cd86f1ad37141.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.383b5b13599a759f9b6d.js.map

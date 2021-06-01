@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.7ac406df32652ea8038b.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.18f2a7e7bae07fdbab2a.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./src/chat/components/PortalContainer/index.m.less": function(e, t, n) {
@@ -34,65 +34,65 @@
 				j = n("./src/chat/actions/session.ts"),
 				O = n("./src/chat/actions/user.ts"),
 				p = n("./node_modules/react/index.js"),
-				x = n.n(p),
-				f = n("./node_modules/react-redux/es/index.js"),
+				f = n.n(p),
+				x = n("./node_modules/react-redux/es/index.js"),
 				g = n("./src/lib/CSSVariableProvider/index.tsx"),
 				C = n("./src/lib/lessComponent.tsx"),
 				E = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
 				_ = n("./src/chat/components/Root/index.tsx"),
 				y = n("./src/chat/constants/container.ts"),
-				v = n("./src/chat/helpers/chatSelector.ts"),
-				S = n("./src/chat/components/PortalContainer/index.m.less"),
-				w = n.n(S);
+				S = n("./src/chat/helpers/chatSelector.ts"),
+				v = n("./src/chat/components/PortalContainer/index.m.less"),
+				w = n.n(v);
 			const {
-				embed: R,
-				hidden: N
+				embed: N,
+				hidden: R
 			} = y.b;
 
 			function A(e) {
 				return void 0 !== e ? e : -1
 			}
-			const D = C.a.wrapped(e => x.a.createElement("div", {
+			const T = C.a.wrapped(e => f.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", w.a),
-				M = C.a.wrapped(e => x.a.createElement("div", {
-					className: e.className,
-					style: {
-						width: `${A(R.width)}px`,
-						height: `${A(R.height)}px`
-					}
-				}, e.children), "EmbedPortalContainer", w.a),
-				T = C.a.wrapped(e => x.a.createElement("div", {
+				D = C.a.wrapped(e => f.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${A(N.width)}px`,
 						height: `${A(N.height)}px`
 					}
+				}, e.children), "EmbedPortalContainer", w.a),
+				M = C.a.wrapped(e => f.a.createElement("div", {
+					className: e.className,
+					style: {
+						width: `${A(R.width)}px`,
+						height: `${A(R.height)}px`
+					}
 				}, e.children), "HiddenPortalContainer", w.a),
 				P = C.a.wrapped(E.a, "MinimizedRedesignPortalContainer", w.a),
-				B = D,
-				U = Object(v.a)({
+				B = T,
+				U = Object(S.a)({
 					container: e => e && e.container && e.container.size
 				});
 
 			function k(e) {
 				switch (e.container) {
 					case y.a.EMBED:
-						return x.a.createElement(M, null, e.children);
+						return f.a.createElement(D, null, e.children);
 					case y.a.HIDDEN:
-						return x.a.createElement(T, null, e.children);
+						return f.a.createElement(M, null, e.children);
 					case y.a.FULL:
-						return x.a.createElement(B, null, e.children);
+						return f.a.createElement(B, null, e.children);
 					case y.a.MINIMIZED:
-						return x.a.createElement(P, null);
+						return f.a.createElement(P, null);
 					default:
-						return x.a.createElement(M, null, e.children)
+						return f.a.createElement(D, null, e.children)
 				}
 			}
 
 			function I(e, t) {
-				const n = Object(f.b)(U)(k);
-				return x.a.createElement("div", null, Object(g.d)(x.a.createElement(n, null, Object(_.a)(e, t)), document.body))
+				const n = Object(x.b)(U)(k);
+				return f.a.createElement("div", null, Object(g.d)(f.a.createElement(n, null, Object(_.a)(e, t)), document.body))
 			}
 			var q = n("./src/chat/customMiddleware/chatThemeKey.ts"),
 				L = n("./src/chat/customMiddleware/containerSize.ts"),
@@ -105,8 +105,8 @@
 				K = n("./src/chat/customMiddleware/tokenRefresher.ts"),
 				Y = n("./src/chat/customMiddleware/tracking.ts"),
 				V = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				J = n("./src/chat/helpers/modifyInitialData.ts"),
-				W = n("./src/chat/reducers/index.ts"),
+				W = n("./src/chat/helpers/modifyInitialData.ts"),
+				J = n("./src/chat/reducers/index.ts"),
 				X = n("./src/chat/routes/index.ts");
 			const Z = Object(u.a)({
 					actionDispatchers: {
@@ -132,7 +132,7 @@
 				const s = document.getElementById("2x-container"),
 					r = document.createElement("div");
 				return s.appendChild(r), Object(o.a)({
-					reducerMap: W.a,
+					reducerMap: J.a,
 					routes: X.a,
 					apiContext: Z.apiContext,
 					appFactory: I,
@@ -149,7 +149,7 @@
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
-					}) => (t = Object(J.d)(e, t), t = Object(J.a)(t), t = Object(J.b)(t), t = Object(J.c)(e, t), t = Object(J.g)(t, n, X.a), t = Object(J.f)(t), t = Object(J.h)(e, t)),
+					}) => (t = Object(W.d)(e, t), t = Object(W.a)(t), t = Object(W.b)(t), t = Object(W.c)(e, t), t = Object(W.g)(t, n, X.a), t = Object(W.f)(t), t = Object(W.h)(e, t)),
 					preRender: ({
 						browserHistory: e,
 						routes: t,
@@ -322,14 +322,14 @@
 				REQUEST_PENDING: b,
 				REQUEST_SUCCESS: h
 			} = c, m = Object(r.a)(u), j = Object(r.a)(l), O = Object(r.a)(b), p = Object(r.a)(h);
-			let x;
-			const f = 5 * s.gb,
+			let f;
+			const x = 5 * s.gb,
 				g = () => async (e, t, {
 					apiContext: n
 				}) => {
 					const c = t();
-					if (!Object(d.K)(c) || !Object(o.d)(c)) return clearTimeout(x);
-					x || e((() => async (e, t, {
+					if (!Object(d.K)(c) || !Object(o.d)(c)) return clearTimeout(f);
+					f || e((() => async (e, t, {
 						apiContext: n
 					}) => {
 						const c = t(),
@@ -346,9 +346,9 @@
 								error: t.error
 							}))
 						}
-					})()), x = setTimeout(() => {
+					})()), f = setTimeout(() => {
 						e(g())
-					}, f)
+					}, x)
 				}
 		},
 		"./src/reddit/actions/inbox.ts": function(e, t, n) {
@@ -367,7 +367,7 @@
 			n.d(t, "a", (function() {
 				return p
 			})), n.d(t, "c", (function() {
-				return f
+				return x
 			})), n.d(t, "b", (function() {
 				return g
 			})), n.d(t, "e", (function() {
@@ -392,8 +392,8 @@
 				j = n("./src/reddit/selectors/user.ts"),
 				O = n("./src/reddit/actions/appBadgeIndicators/index.ts");
 			const p = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
-				x = Object(r.a)(p),
-				f = (e, t) => {
+				f = Object(r.a)(p),
+				x = (e, t) => {
 					e <= 0 ? s.a.write(() => {
 						Object(d.b)(!1), window.document.title = t
 					}) : s.a.write(() => {
@@ -417,7 +417,7 @@
 						c = Object(o.e)(n, {}),
 						s = Object(h.a)(n),
 						r = Object(j.J)(n) || Object(j.K)(n),
-						a = Object(m.b)(n);
+						a = Object(m.e)(n);
 					let i = 0;
 					r && c && (i = s ? a ? Object(l.i)(n) : Object(l.j)(n) : (e => {
 						const {
@@ -425,7 +425,7 @@
 							basicChannelCount: n
 						} = C(e);
 						return t + n
-					})(n), f(i, c), e(x({
+					})(n), x(i, c), e(f({
 						hasUnreadMessages: !!i
 					})))
 				}, _ = () => async (e, t) => {
@@ -656,20 +656,26 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.dc,
+					experimentName: s.ec,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.J)(e) || Object(i.K)(e),
-				u = Object(c.a)(o, e => e === s.gc.Enabled)
+				u = Object(c.a)(o, e => e === s.hc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "e", (function() {
 				return u
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "d", (function() {
 				return b
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return m
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "c", (function() {
+				return p
+			})), n.d(t, "a", (function() {
+				return f
 			}));
 			var c = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/reddit/constants/experiments.ts"),
@@ -678,21 +684,28 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(i.J)(e) || Object(i.K)(e),
 				d = Object(c.a)(e => Object(r.c)(e, {
+					experimentName: s.W,
+					experimentEligibilitySelector: o
+				}), a.a),
+				u = Object(c.a)(d, e => e === s.kc.Enabled),
+				l = Object(c.a)(e => Object(r.c)(e, {
+					experimentName: s.fc,
+					experimentEligibilitySelector: o
+				}), a.a),
+				b = Object(c.a)(u, l, (e, t) => e && t === s.jc.Enabled),
+				h = Object(c.a)(e => Object(r.c)(e, {
+					experimentName: s.Y,
+					experimentEligibilitySelector: o
+				}), a.a),
+				m = Object(c.a)(u, h, (e, t) => e && t === s.fb.Enabled),
+				j = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.V,
 					experimentEligibilitySelector: o
 				}), a.a),
-				u = Object(c.a)(d, e => e === s.ic.Enabled),
-				l = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.ec,
-					experimentEligibilitySelector: o
-				}), a.a),
-				b = Object(c.a)(u, l, (e, t) => e && t === s.hc.Enabled),
-				h = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.X,
-					experimentEligibilitySelector: o
-				}), a.a),
-				m = Object(c.a)(u, h, (e, t) => e && t === s.eb.Enabled)
+				O = Object(c.a)(j, e => e === s.ic.Banner_1st_time),
+				p = Object(c.a)(j, e => e === s.ic.Tooltip_persist),
+				f = Object(c.a)(j, e => e === s.ic.Tooltip_1st_time)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.7ac406df32652ea8038b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.18f2a7e7bae07fdbab2a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f8ad13d932b777894a0a.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c3d6c6066f53ba368a87.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -4707,7 +4707,7 @@
 					update: a
 				} = e, d = Object(Y.a)(), l = Object(i.d)(), [c, u] = Object(o.useState)(s), [m, p] = Object(o.useState)(!1), [b, h] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					h(Object(G.C)("location")), Object(G.Ab)("location")
+					h(Object(G.D)("location")), Object(G.Cb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(P.a, null, j.fbt._("Community Location", null, {
 					hk: "3aowzb"
 				})), r.a.createElement(R.k, {
@@ -5660,10 +5660,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(l.i)()), Object(p.rb)()
+					e(Object(l.i)()), Object(p.tb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Lb)()
+					Object(p.Nb)()
 				}
 			}))(Object(u.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -7200,7 +7200,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: b || c,
-				onClick: () => s === u.nd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
+				onClick: () => s === u.pd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
 				onMouseEnter: r,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -21150,7 +21150,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(X.C)("location")
+						locationSettingSeen: Object(X.D)("location")
 					})
 				}
 				render() {
@@ -22277,9 +22277,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Jb
+					experimentName: n.Kb
 				});
-				return !(!t || Object(n.Gd)(t))
+				return !(!t || Object(n.Id)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -22512,4 +22512,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f8ad13d932b777894a0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c3d6c6066f53ba368a87.js.map

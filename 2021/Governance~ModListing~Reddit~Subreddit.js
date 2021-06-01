@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7c9a9f24afe94c05aa55.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a36ef587a30117cb6e1a.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1434,7 +1434,7 @@
 					}
 				}),
 				c = (e, t) => {
-					t && (Object(o.sb)(e.postId), Object(o.Bb)(t)), e.impressionIdStr ? Object(o.tb)(e.impressionIdStr) : e.impressionId && Object(o.tb)(e.impressionId)
+					t && (Object(o.ub)(e.postId), Object(o.Db)(t)), e.impressionIdStr ? Object(o.vb)(e.impressionIdStr) : e.impressionId && Object(o.vb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/postComposer.ts": function(e, t, r) {
@@ -1480,9 +1480,9 @@
 			})), r.d(t, "m", (function() {
 				return A
 			})), r.d(t, "h", (function() {
-				return B
-			})), r.d(t, "e", (function() {
 				return q
+			})), r.d(t, "e", (function() {
+				return B
 			})), r.d(t, "f", (function() {
 				return F
 			})), r.d(t, "b", (function() {
@@ -1741,14 +1741,14 @@
 						...R(e, t.subredditId)
 					}
 				},
-				B = (e, t) => {
+				q = (e, t) => {
 					Object(u.a)({
 						noun: "draft_load",
 						...m(e),
 						...A(e, t)
 					})
 				},
-				q = (e, t) => {
+				B = (e, t) => {
 					Object(u.a)({
 						noun: t.draftId ? "draft_update" : "draft_create",
 						...m(e),
@@ -1816,9 +1816,9 @@
 			})), r.d(t, "a", (function() {
 				return M
 			})), r.d(t, "n", (function() {
-				return B
-			})), r.d(t, "m", (function() {
 				return q
+			})), r.d(t, "m", (function() {
+				return B
 			})), r.d(t, "t", (function() {
 				return K
 			})), r.d(t, "w", (function() {
@@ -1975,7 +1975,7 @@
 							Object(w.a)(A(r, i)(t)), Object(w.a)(M()(t));
 							break;
 						case n.Hb.PREMIUM:
-							Object(w.a)(B(r, i)(t)), Object(w.a)(q()(t));
+							Object(w.a)(q(r, i)(t)), Object(w.a)(B()(t));
 							break;
 						case n.Hb.APPEAL:
 							Object(w.a)(F(r, i)(t));
@@ -2261,7 +2261,7 @@
 					noun: "screen",
 					...x(e)
 				}),
-				B = (e, t) => r => ({
+				q = (e, t) => r => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
@@ -2270,7 +2270,7 @@
 					timer: I.timer(e, t),
 					adblock: I.adblock(r)
 				}),
-				q = () => e => ({
+				B = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2975,4 +2975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7c9a9f24afe94c05aa55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a36ef587a30117cb6e1a.js.map

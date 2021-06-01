@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.af5e7f8ba2cb3439b31a.js
-// Retrieved at 6/1/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e2eea470fdffb8a451c1.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -343,7 +343,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(G.d)(m, {
-								experimentName: l.wc
+								experimentName: l.yc
 							});
 							s(Object(o.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -473,7 +473,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(G.d)(r, {
-										experimentName: l.wc
+										experimentName: l.yc
 									});
 									t(Object(o.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1019,13 +1019,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = re.cachedData || Object(K.x)(V.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = re.cachedData || Object(K.y)(V.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await X(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(K.wb)(V.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(K.yb)(V.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return re.cachedData = e, e ? e.subreddits : []
 				}
@@ -1454,8 +1454,8 @@
 						return (!t || !s) && (!Object(Ye.b)(e) && function(e) {
 							return Object(ze.c)(e, {
 								experimentEligibilitySelector: Xe.K,
-								experimentName: Ue.Z
-							}) === Ue.Kb
+								experimentName: Ue.ab
+							}) === Ue.Lb
 						}(e))
 					}
 				}),
@@ -4834,7 +4834,7 @@
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.M
-				}) === n.bb.Treatment
+				}) === n.cb.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
 			"use strict";
@@ -4873,4 +4873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.af5e7f8ba2cb3439b31a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e2eea470fdffb8a451c1.js.map

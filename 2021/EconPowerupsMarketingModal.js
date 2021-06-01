@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0cf97d65c2f6b555bf7d.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4daf97bf57524e9cb446.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -96,10 +96,10 @@
 					count: E,
 					tiersInfo: w,
 					supportersCount: _
-				} = a, f = w[1].powerupsCost, k = h >= 2, x = (null == b ? void 0 : b.filter(e => {
+				} = a, f = w[1].powerupsCost, k = h >= 2, N = (null == b ? void 0 : b.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], N = Math.min(E, f) / f, g = f - E;
+				}).slice(0, 2)) || [], x = Math.min(E, f) / f, g = f - E;
 				return n.a.createElement("div", {
 					className: Object(o.a)(u.a.container, e, {
 						[u.a.containerClickable]: !!s
@@ -108,11 +108,11 @@
 					onClick: () => null == s ? void 0 : s(E)
 				}, n.a.createElement("div", {
 					className: u.a.heroes
-				}, !!x.length && n.a.createElement("div", {
+				}, !!N.length && n.a.createElement("div", {
 					className: Object(o.a)(u.a.heroesAvatarContainer, {
-						[u.a.twoAvatarsContainer]: x.length > 1
+						[u.a.twoAvatarsContainer]: N.length > 1
 					})
-				}, x.map(e => {
+				}, N.map(e => {
 					var t, s;
 					return n.a.createElement("div", {
 						className: u.a.heroesAvatar,
@@ -140,7 +140,7 @@
 					hk: "4h33rf"
 				})), n.a.createElement(c.a, {
 					className: u.a.progressBar,
-					progress: N
+					progress: x
 				}))
 			}
 		},
@@ -275,8 +275,8 @@
 				_ = s("./src/reddit/hooks/useTracking.ts"),
 				f = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				k = s("./src/reddit/selectors/experiments/econ/powerupsMarketingRedesign.ts"),
-				x = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				N = s("./src/reddit/selectors/subreddit.ts"),
+				N = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				x = s("./src/reddit/selectors/subreddit.ts"),
 				g = s("./src/config.ts"),
 				P = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				j = s("./src/reddit/models/Gold/Powerups/index.ts"),
@@ -329,9 +329,9 @@
 					})))
 				},
 				W = s("./src/reddit/components/Econ/PowerupsMarketingModal/index.m.less"),
-				A = s.n(W);
+				B = s.n(W);
 			const {
-				fbt: B
+				fbt: A
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function T({
@@ -340,64 +340,64 @@
 			}) {
 				const s = Object(r.d)();
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement("button", {
-					className: A.a.closeButton,
+					className: B.a.closeButton,
 					onClick: () => s(Object(d.g)(p.a.ECON_POWERUPS_MARKETING))
 				}, n.a.createElement(f.a, {
-					className: A.a.closeIcon
+					className: B.a.closeIcon
 				})), n.a.createElement("div", {
-					className: A.a.container
+					className: B.a.container
 				}, n.a.createElement("div", {
-					className: A.a.main
+					className: B.a.main
 				}, n.a.createElement(L.a, {
-					title: B._("Powerup {r/community}", [B._param("r/community", t.displayText)], {
+					title: A._("Powerup {r/community}", [A._param("r/community", t.displayText)], {
 						hk: "2HkBNV"
 					}),
-					subtitle: B._("Unlock perks for the whole community", null, {
+					subtitle: A._("Unlock perks for the whole community", null, {
 						hk: "faCTq"
 					})
 				}), n.a.createElement(R, {
 					benefits: e,
-					className: A.a.benefits
+					className: B.a.benefits
 				}), n.a.createElement("h2", {
-					className: A.a.howItWorksTitle
-				}, B._("How it works", null, {
+					className: B.a.howItWorksTitle
+				}, A._("How it works", null, {
 					hk: "1S8XOX"
 				})), n.a.createElement("ul", {
-					className: A.a.howItWorksList
+					className: B.a.howItWorksList
 				}, n.a.createElement("li", {
-					className: A.a.howItWorksStep
+					className: B.a.howItWorksStep
 				}, n.a.createElement("h3", {
-					className: A.a.howItWorksSubtitle
-				}, B._("Buy a monthly Powerup subscription", null, {
+					className: B.a.howItWorksSubtitle
+				}, A._("Buy a monthly Powerup subscription", null, {
 					hk: "1xgdW6"
 				})), n.a.createElement("p", {
-					className: A.a.howItWorksDesc
-				}, B._("Or if you’re a Reddit Premium member, use your monthly Powerup", null, {
+					className: B.a.howItWorksDesc
+				}, A._("Or if you’re a Reddit Premium member, use your monthly Powerup", null, {
 					hk: "1MD3Sh"
 				}))), n.a.createElement("li", {
-					className: A.a.howItWorksStep
+					className: B.a.howItWorksStep
 				}, n.a.createElement("h3", {
-					className: A.a.howItWorksSubtitle
-				}, B._("Unlock perks for yourself", null, {
+					className: B.a.howItWorksSubtitle
+				}, A._("Unlock perks for yourself", null, {
 					hk: "3TEvpW"
 				})), n.a.createElement("p", {
-					className: A.a.howItWorksDesc
-				}, B._("Your Powerup gives you instant access to all the perks + badge + leaderboard", null, {
+					className: B.a.howItWorksDesc
+				}, A._("Your Powerup gives you instant access to all the perks + badge + leaderboard", null, {
 					hk: "3q4unB"
 				}))), n.a.createElement("li", {
-					className: A.a.howItWorksStep
+					className: B.a.howItWorksStep
 				}, n.a.createElement("h3", {
-					className: A.a.howItWorksSubtitle
-				}, B._("Help unlock perks for your community", null, {
+					className: B.a.howItWorksSubtitle
+				}, A._("Help unlock perks for your community", null, {
 					hk: "1BeLmx"
 				}))))), n.a.createElement("div", {
-					className: A.a.footer
+					className: B.a.footer
 				}, n.a.createElement(h.i, {
-					className: A.a.footerButton,
+					className: B.a.footerButton,
 					onClick: () => {
-						Object(E.zb)(p.a.ECON_POWERUPS_MARKETING, !0), s(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
+						Object(E.Bb)(p.a.ECON_POWERUPS_MARKETING, !0), s(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
 					}
-				}, B._("Powerup This Community", null, {
+				}, A._("Powerup This Community", null, {
 					hk: "3gjy90"
 				})))))
 			}
@@ -418,13 +418,13 @@
 				isRedesignEnabled: k.a,
 				powerups: (e, t) => {
 					const s = Object(b.m)(e, t);
-					return s ? Object(x.i)(e, {
+					return s ? Object(N.i)(e, {
 						subredditId: s
 					}) : null
 				},
 				subreddit: (e, t) => {
 					const s = Object(b.m)(e, t);
-					return s ? Object(N.U)(e, {
+					return s ? Object(x.U)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -436,20 +436,20 @@
 					powerups: o,
 					subreddit: c,
 					isRedesignEnabled: b
-				} = e, k = Object(r.d)(), x = Object(_.a)(), N = Object(a.useRef)(null), [g, P] = Object(a.useState)(!1), j = () => {
-					if (!N.current) return;
-					const e = Math.ceil(N.current.scrollTop) + N.current.clientHeight >= N.current.scrollHeight,
-						t = N.current.clientHeight < N.current.scrollHeight;
+				} = e, k = Object(r.d)(), N = Object(_.a)(), x = Object(a.useRef)(null), [g, P] = Object(a.useState)(!1), j = () => {
+					if (!x.current) return;
+					const e = Math.ceil(x.current.scrollTop) + x.current.clientHeight >= x.current.scrollHeight,
+						t = x.current.clientHeight < x.current.scrollHeight;
 					P(t && !e)
 				};
 				Object(a.useEffect)(() => {
 					Object(u.a)()
 				}, []), Object(a.useLayoutEffect)(() => {
 					j()
-				}, [N.current]);
+				}, [x.current]);
 				const O = () => k(Object(d.g)(p.a.ECON_POWERUPS_MARKETING)),
 					v = () => {
-						Object(E.zb)(p.a.ECON_POWERUPS_MARKETING, !0), k(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
+						Object(E.Bb)(p.a.ECON_POWERUPS_MARKETING, !0), k(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
 					};
 				if (!s || !c || !o) return O(), null;
 				const {
@@ -457,15 +457,15 @@
 					tiersInfo: I
 				} = o, y = null === (t = I[C] || I[C - 1]) || void 0 === t ? void 0 : t.benefits;
 				return b ? n.a.createElement(n.a.Fragment, null, n.a.createElement("button", {
-					className: A.a.closeButton,
+					className: B.a.closeButton,
 					onClick: O
 				}, n.a.createElement(f.a, {
-					className: A.a.closeIcon
+					className: B.a.closeIcon
 				})), n.a.createElement("div", {
-					className: A.a.container
+					className: B.a.container
 				}, n.a.createElement("div", {
-					className: Object(l.a)(A.a.main),
-					ref: N,
+					className: Object(l.a)(B.a.main),
+					ref: x,
 					onScroll: e => {
 						j()
 					}
@@ -477,57 +477,57 @@
 						hk: "faCTq"
 					})
 				}), n.a.createElement(S, {
-					className: A.a.benefits
+					className: B.a.benefits
 				}), n.a.createElement("span", {
-					className: A.a.modDisclaimer
+					className: B.a.modDisclaimer
 				}, F._("Mods may choose to opt out of some perks.", null, {
 					hk: "3W2PR1"
 				})), n.a.createElement("h2", {
-					className: A.a.howItWorksTitle
+					className: B.a.howItWorksTitle
 				}, F._("How it works", null, {
 					hk: "1S8XOX"
 				})), n.a.createElement("ul", {
-					className: A.a.howItWorksList
+					className: B.a.howItWorksList
 				}, n.a.createElement("li", {
-					className: A.a.howItWorksStep
+					className: B.a.howItWorksStep
 				}, n.a.createElement("h3", {
-					className: A.a.howItWorksSubtitle
+					className: B.a.howItWorksSubtitle
 				}, F._("Buy a monthly Powerup subscription", null, {
 					hk: "1xgdW6"
 				})), n.a.createElement("p", {
-					className: A.a.howItWorksDesc
+					className: B.a.howItWorksDesc
 				}, F._("Purchase a Powerup or apply your monthly Powerup included with paid Reddit Premium", null, {
 					hk: "2rBQGS"
 				}))), n.a.createElement("li", {
-					className: A.a.howItWorksStep
+					className: B.a.howItWorksStep
 				}, n.a.createElement("h3", {
-					className: A.a.howItWorksSubtitle
+					className: B.a.howItWorksSubtitle
 				}, F._("Help unlock perks for your community", null, {
 					hk: "4qBTJD"
 				})), n.a.createElement(m.a, {
-					className: A.a.joinHeroes,
+					className: B.a.joinHeroes,
 					subredditId: s,
 					onClick: e => {
-						x(Object(w.c)("powerups_modal")), e ? k(Object(i.e)(c.id)) : v()
+						N(Object(w.c)("powerups_modal")), e ? k(Object(i.e)(c.id)) : v()
 					}
 				})), n.a.createElement("li", {
-					className: A.a.howItWorksStep
+					className: B.a.howItWorksStep
 				}, n.a.createElement("h3", {
-					className: A.a.howItWorksSubtitle
+					className: B.a.howItWorksSubtitle
 				}, F._("Unlock perks for yourself", null, {
 					hk: "4dQOvK"
 				})), n.a.createElement("p", {
-					className: A.a.howItWorksDesc
+					className: B.a.howItWorksDesc
 				}, F._("Get instant access to perks, a hero badge, and a spot on the heroes list", null, {
 					hk: "3uxTLG"
 				})))), n.a.createElement("div", {
-					className: Object(l.a)(A.a.gradient, {
-						[A.a.hidden]: !g
+					className: Object(l.a)(B.a.gradient, {
+						[B.a.hidden]: !g
 					})
 				})), n.a.createElement("div", {
-					className: A.a.footer
+					className: B.a.footer
 				}, n.a.createElement(h.q, {
-					className: A.a.footerButton,
+					className: B.a.footerButton,
 					onClick: v,
 					priority: h.b.Primary
 				}, F._("Powerup This Community", null, {
@@ -538,7 +538,7 @@
 				})
 			}))));
 			t.default = e => n.a.createElement(J, U({}, e, {
-				className: Object(l.a)(e.className, A.a.modal)
+				className: Object(l.a)(e.className, B.a.modal)
 			}))
 		},
 		"./src/reddit/components/PowerupsSidebar/PowerupsCountAndProgress/PowerupsProgressBar.tsx": function(e, t, s) {
@@ -641,8 +641,8 @@
 			}));
 			var a = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(n.a)(a.xb)
+			const r = Object(n.a)(a.yb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0cf97d65c2f6b555bf7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.4daf97bf57524e9cb446.js.map

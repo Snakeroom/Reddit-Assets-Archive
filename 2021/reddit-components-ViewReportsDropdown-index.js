@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ab096780bee0dfa185c9.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.45a97e1376ad8d2b83de.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -132,7 +132,7 @@
 						const s = r.c.end(d);
 						!t && s < P && (clearTimeout(S[e]), delete S[e])
 					}
-				}, U = Object(d.a)(I.x), B = Object(d.a)(I.w), N = Object(d.a)(I.v), F = (e, t) => async (s, n, {
+				}, U = Object(d.a)(I.x), N = Object(d.a)(I.w), B = Object(d.a)(I.v), F = (e, t) => async (s, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
@@ -154,7 +154,7 @@
 					if (j.ok) {
 						const t = j.body,
 							n = Object(O.a)(t, b, r);
-						s(B({
+						s(N({
 							key: e,
 							moreCommentsItem: d,
 							shouldCollapse: n,
@@ -171,7 +171,7 @@
 						const l = j.body.comments,
 							u = j.body.posts;
 						await s(Object(m.b)(u, l, a)), await s(Object(i.b)(a, l))
-					} else s(N({
+					} else s(B({
 						moreCommentsItem: d,
 						...j.error
 					}))
@@ -627,7 +627,7 @@
 		"./src/reddit/components/Reports/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return N
+				return B
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -713,9 +713,9 @@
 				A = s.n(P);
 			const {
 				fbt: D
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.div("ReportText", A.a), B = d.a.div("ReportsTitle", A.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.div("ReportText", A.a), N = d.a.div("ReportsTitle", A.a);
 
-			function N(e) {
+			function B(e) {
 				const {
 					className: t,
 					modReports: s,
@@ -726,13 +726,13 @@
 					className: t
 				}, s && s.length > 0 && o.a.createElement("div", {
 					className: A.a.Reports
-				}, o.a.createElement(B, null, D._("Moderator Reports", null, {
+				}, o.a.createElement(N, null, D._("Moderator Reports", null, {
 					hk: "3hZ0oX"
 				})), s.map(([e, t]) => o.a.createElement(U, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), n && n.length > 0 && o.a.createElement("div", {
 					className: A.a.Reports
-				}, o.a.createElement(B, null, D._("User Reports", null, {
+				}, o.a.createElement(N, null, D._("User Reports", null, {
 					hk: "2KeCLz"
 				})), o.a.createElement("div", {
 					className: A.a.UserReports
@@ -1166,7 +1166,7 @@
 			}));
 			var n = s("./src/reddit/constants/experiments.ts"),
 				o = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(o.a)(n.wb)
+			const r = Object(o.a)(n.xb)
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, s) {
 			"use strict";
@@ -1180,14 +1180,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Cc
-					}) === n.Mc.Enabled
+						experimentName: n.Ec
+					}) === n.Oc.Enabled
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Bc
-					}) === n.Lc.Enabled
+						experimentName: n.Dc
+					}) === n.Nc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1216,4 +1216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ab096780bee0dfa185c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.45a97e1376ad8d2b83de.js.map

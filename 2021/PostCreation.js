@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0716923d4a528b8057d8.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.554e3f31dfeb938a0671.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1106,7 +1106,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(F.ob)(null !== (l = null === (d = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(F.pb)(null !== (l = null === (d = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = i ? o.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : o.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -2899,7 +2899,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.lb)(r + 1)
+					})), Object(a.mb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -8159,7 +8159,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(G.a)(), i = Object(V.a)(p.Rb) === p.Vb.Enabled;
+					} = t, r = Object(G.a)(), i = Object(V.a)(p.Sb) === p.Wb.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(Z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(te, e));
@@ -22080,10 +22080,10 @@
 
 			function s(e, t) {
 				let n;
-				n = Object(r.x)(e);
+				n = Object(r.y)(e);
 				const [s, i] = Object(o.useState)(null != n ? n : t);
 				return [s, function(t) {
-					Object(r.wb)(e, t), i(t)
+					Object(r.yb)(e, t), i(t)
 				}]
 			}
 		},
@@ -24541,14 +24541,14 @@
 				$t = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const en = [{
 					id: Ut.d,
-					getShowTimesLeft: Zt.G,
-					setShowTimesLeft: Zt.Eb,
+					getShowTimesLeft: Zt.H,
+					setShowTimesLeft: Zt.Gb,
 					tooltipShown: $t.n,
 					tooltipDismissed: $t.m
 				}, {
 					id: Ut.c,
-					getShowTimesLeft: Zt.F,
-					setShowTimesLeft: Zt.Db,
+					getShowTimesLeft: Zt.G,
+					setShowTimesLeft: Zt.Fb,
 					tooltipShown: $t.f,
 					tooltipDismissed: $t.e
 				}],
@@ -24730,7 +24730,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(Zt.ib)(mn.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(Zt.jb)(mn.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -29447,7 +29447,7 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(o.wb)
+			const s = Object(r.a)(o.xb)
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -29461,14 +29461,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Cc
-					}) === o.Mc.Enabled
+						experimentName: o.Ec
+					}) === o.Oc.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Bc
-					}) === o.Lc.Enabled
+						experimentName: o.Dc
+					}) === o.Nc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -30148,4 +30148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0716923d4a528b8057d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.554e3f31dfeb938a0671.js.map

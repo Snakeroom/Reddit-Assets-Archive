@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.89a419150140f458ea83.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.dbda06b3aa3bb42db460.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -465,8 +465,8 @@
 				U = s("./src/reddit/components/Media/index.tsx"),
 				W = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
 				F = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
-				R = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				B = s("./src/reddit/components/PostContainer/index.tsx"),
+				B = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				R = s("./src/reddit/components/PostContainer/index.tsx"),
 				H = s("./src/reddit/components/PostTitle/index.tsx"),
 				Q = s("./src/reddit/connectors/miniCardPost.ts"),
 				q = s("./src/reddit/contexts/Post/index.tsx"),
@@ -540,7 +540,7 @@
 					}, O)));
 					const P = !j && !v;
 					let N;
-					return k && (N = Object(Z.h)(k) ? Object(J.h)(k) : Object(J.i)(k)), r.a.createElement(B.a, {
+					return k && (N = Object(Z.h)(k) ? Object(J.h)(k) : Object(J.i)(k)), r.a.createElement(R.a, {
 						className: Object(c.a)(se.a.container, ee.a.largeAndMediumActiveStyles, ee.a.largeAndMediumPostStyles, X.a.postContainer, Object(G.a)(this.props), s),
 						post: p,
 						onClick: u,
@@ -551,7 +551,7 @@
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
-					}, r.a.createElement(R.a, {
+					}, r.a.createElement(B.a, {
 						className: X.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, r.a.createElement("div", {
@@ -942,9 +942,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.H)(e) || g.rd.ShowTopContent === Object(f.c)(e, {
+			const y = e => Object(C.H)(e) || g.td.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.jd
+				experimentName: g.ld
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1399,9 +1399,9 @@
 					}))
 				})),
 				F = s("./src/reddit/components/SEOTitle/index.tsx"),
-				R = s("./src/reddit/selectors/user.ts"),
-				B = s("./src/reddit/components/PostTitle/index.m.less"),
-				H = s.n(B),
+				B = s("./src/reddit/selectors/user.ts"),
+				R = s("./src/reddit/components/PostTitle/index.m.less"),
+				H = s.n(R),
 				Q = s("./src/config.ts"),
 				q = s("./src/reddit/hooks/useClickSourceData.ts"),
 				z = s("./src/reddit/hooks/useExperimentVariant.ts"),
@@ -1488,7 +1488,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: R.cb
+					shouldOpenPostInNewTab: B.cb
 				}),
 				ee = e => {
 					const {
@@ -1496,7 +1496,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(q.a)(), i = Object(z.a)(u.Rb) === u.Vb.Enabled;
+					} = t, a = Object(q.a)(), i = Object(z.a)(u.Sb) === u.Wb.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(X, {
 						nowrap: e.nowrap
 					}, r.a.createElement(te, e));
@@ -2043,4 +2043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.89a419150140f458ea83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.dbda06b3aa3bb42db460.js.map

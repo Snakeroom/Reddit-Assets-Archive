@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.d040d1ccac681f2775cc.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.4102ab18f838114cddb1.js
+// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/pages/shared.ts": function(e, t, r) {
@@ -1519,7 +1519,7 @@
 				p = r("./src/reddit/icons/svgs/PremiumCircle/index.tsx"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				v = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const f = Object(v.a)(b.qb);
+			const f = Object(v.a)(b.rb);
 			var x = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
 				h = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				I = r("./node_modules/react-router/esm/react-router.js"),
@@ -2207,4 +2207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.d040d1ccac681f2775cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.4102ab18f838114cddb1.js.map
