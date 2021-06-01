@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.abbba155c1d6e2d2bd47.js
-// Retrieved at 6/1/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d48c0e66660062b43804.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1613,11 +1613,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("135397"),
+				buildNumber: r("135403"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1622570952"),
+				})("1622572060"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4207,14 +4207,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c285e017f6b5027e798fd3b49b87eeacbcda1c513-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7d7a018dac633d2c3097f470ffb173bff242f195-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "285e017f6b5027e798fd3b49b87eeacbcda1c513-production",
+						release: "7d7a018dac633d2c3097f470ffb173bff242f195-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4708,7 +4708,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "285e017f6b5027e798fd3b49b87eeacbcda1c513-production",
+						releaseClient: "7d7a018dac633d2c3097f470ffb173bff242f195-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -29312,82 +29312,68 @@
 		},
 		"./src/reddit/models/Poll/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "d", (function() {
-				return d.a
-			})), i.d(t, "b", (function() {
+			i.d(t, "a", (function() {
 				return n
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return r
-			})), i.d(t, "c", (function() {
-				return s
-			})), i.d(t, "i", (function() {
-				return a
-			})), i.d(t, "j", (function() {
-				return l
-			})), i.d(t, "h", (function() {
-				return c
-			})), i.d(t, "e", (function() {
-				return u
 			})), i.d(t, "f", (function() {
-				return _
+				return o
 			})), i.d(t, "g", (function() {
-				return p
+				return d
+			})), i.d(t, "e", (function() {
+				return a
+			})), i.d(t, "c", (function() {
+				return l
+			})), i.d(t, "d", (function() {
+				return c
 			}));
-			var n, r, s, o = i("./node_modules/bignumber.js/bignumber.js"),
-				d = i("./src/reddit/models/Prediction/Tournament/index.ts");
+			var n, r, s = i("./node_modules/bignumber.js/bignumber.js");
 			! function(e) {
-				e.Coins = "COINS", e.Tokens = "TOKENS", e.NotSupported = "NOT_SUPPORTED"
+				e.GovGeneric = "governance:generic", e.ReplaceTopMod = "governance:replace-top-mod", e.Spinoff = "governance:spin-off", e.GA = "ga", e.Prediction = "prediction"
 			}(n || (n = {})),
 			function(e) {
-				e.GovGeneric = "governance:generic", e.ReplaceTopMod = "governance:replace-top-mod", e.Spinoff = "governance:spin-off", e.GA = "ga", e.Prediction = "prediction"
-			}(r || (r = {})),
-			function(e) {
 				e.ByVoters = "byVoters", e.ByVotingPower = "byVotingPower"
-			}(s || (s = {}));
-			const a = {
-				[r.ReplaceTopMod]: () => [{
+			}(r || (r = {}));
+			const o = {
+				[n.ReplaceTopMod]: () => [{
 					text: "Yes"
 				}, {
 					text: "No"
 				}],
-				[r.Spinoff]: e => [{
+				[n.Spinoff]: e => [{
 					text: e ? `Yes, I'd like to join r/${e}` : "Yes, I'd like to join the new community"
 				}, {
 					text: "No"
 				}]
 			};
 
-			function l(e, t) {
+			function d(e, t) {
 				return !!e.options.filter(e => t.options[e.id].userSelected).length
 			}
 
-			function c(e, t) {
-				return new Date(e.endsAt).getTime() < Date.now() || l(e, t)
+			function a(e, t) {
+				return new Date(e.endsAt).getTime() < Date.now() || d(e, t)
 			}
 
-			function u(e, t) {
+			function l(e, t) {
 				let i = e.options[0],
-					n = new o.BigNumber(t.options[i.id].votes);
+					n = new s.BigNumber(t.options[i.id].votes);
 				for (const r of e.options) {
-					const e = new o.BigNumber(t.options[r.id].votes);
+					const e = new s.BigNumber(t.options[r.id].votes);
 					e.isGreaterThan(n) && (i = r, n = e)
 				}
 				return i
 			}
 
-			function _(e) {
+			function c(e) {
 				switch (e.type) {
-					case r.GovGeneric:
-					case r.ReplaceTopMod:
-					case r.Spinoff:
+					case n.GovGeneric:
+					case n.ReplaceTopMod:
+					case n.Spinoff:
 						return !0;
 					default:
 						return !1
 				}
-			}
-
-			function p(e) {
-				return !0 === e.isPrediction
 			}
 		},
 		"./src/reddit/models/Post/index.ts": function(e, t, i) {
@@ -29651,6 +29637,22 @@
 				})),
 				function(e) {
 					e.Draft = "DRAFT", e.LiveInProgress = "LIVE_IN_PROGRESS", e.Live = "LIVE", e.Closed = "CLOSED"
+				}(n || (n = {}))
+		},
+		"./src/reddit/models/Prediction/index.ts": function(e, t, i) {
+			"use strict";
+			var n;
+
+			function r(e) {
+				return !0 === e.isPrediction
+			}
+			i.d(t, "a", (function() {
+					return n
+				})), i.d(t, "b", (function() {
+					return r
+				})),
+				function(e) {
+					e.Coins = "COINS", e.Tokens = "TOKENS", e.NotSupported = "NOT_SUPPORTED"
 				}(n || (n = {}))
 		},
 		"./src/reddit/models/Profile/index.ts": function(e, t, i) {
@@ -36596,7 +36598,7 @@
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/lib/initializeClient/installReducer.ts"),
 				s = i("./src/reddit/reducers/features/predictions/index.ts"),
-				o = i("./src/reddit/models/Poll/index.ts"),
+				o = i("./src/reddit/models/Prediction/Tournament/index.ts"),
 				d = i("./src/reddit/selectors/posts.ts"),
 				a = i("./src/reddit/selectors/user.ts"),
 				l = i("./node_modules/lodash/isNull.js"),
@@ -36622,7 +36624,7 @@
 					const i = p(e, t);
 					return i.length ? i[i.length - 1] : null
 				},
-				h = Object(n.a)(p, e => e.filter(e => e.status === o.d.Live || e.status === o.d.LiveInProgress)),
+				h = Object(n.a)(p, e => e.filter(e => e.status === o.a.Live || e.status === o.a.LiveInProgress)),
 				f = (e, t) => h(e, t)[0],
 				b = (e, t) => !!p(e, t).length,
 				g = (e, t) => !!h(e, t).length,
@@ -36648,7 +36650,7 @@
 					var t;
 					return null !== (t = !(null == e ? void 0 : e.predictionPosts) || 0 === (null == e ? void 0 : e.predictionPosts.length) || (null == e ? void 0 : e.predictionPosts.every(e => !c()(e.pollData.resolvedOptionId)))) && void 0 !== t && t
 				}),
-				E = Object(n.a)(m, e => !!e && e.status === o.d.LiveInProgress)
+				E = Object(n.a)(m, e => !!e && e.status === o.a.LiveInProgress)
 		},
 		"./src/reddit/selectors/frontpage.ts": function(e, t, i) {
 			"use strict";
@@ -40781,7 +40783,7 @@
 				ae = i("./src/reddit/selectors/profile.ts"),
 				le = i("./src/reddit/selectors/profileComments.ts"),
 				ce = i("./src/reddit/models/Multireddit/index.ts"),
-				ue = i("./src/reddit/models/Poll/index.ts"),
+				ue = i("./src/reddit/models/Prediction/index.ts"),
 				_e = i("./src/reddit/models/User/index.ts"),
 				pe = i("./src/reddit/selectors/gold/powerups/index.ts"),
 				me = i("./src/reddit/selectors/media.ts"),
@@ -41105,7 +41107,7 @@
 				Ye = (e, t, i, n, r, s) => {
 					const o = e.polls.models[t];
 					if (!o) return;
-					const d = Object(ue.g)(o) && !!o.tournamentId;
+					const d = Object(ue.b)(o) && !!o.tournamentId;
 					return {
 						numberPredictionCoins: r,
 						numberPredictionTokens: s,
@@ -46532,4 +46534,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.abbba155c1d6e2d2bd47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d48c0e66660062b43804.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.088e6e5a4e88d8f95e47.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1e11cecbc62a2e5e6e70.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -1826,7 +1826,7 @@
 				d = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				l = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
 				u = n("./src/reddit/hooks/useTheme.ts"),
-				m = n("./src/reddit/models/Poll/index.ts"),
+				m = n("./src/reddit/models/Prediction/Tournament/index.ts"),
 				p = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				b = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/Econ/Tournament/Sidebar/Header/index.m.less"),
@@ -1870,13 +1870,13 @@
 					className: f.a.title
 				}, v), r.a.createElement("h3", {
 					className: f.a.subtitle
-				}, E !== m.d.Closed ? x._("Join this live Predictions tournament!", null, {
+				}, E !== m.a.Closed ? x._("Join this live Predictions tournament!", null, {
 					hk: "3BXAaU"
 				}) : x._("Check out the leaderboard to see the winners!", null, {
 					hk: "Nsabe"
 				})), r.a.createElement("div", {
 					className: f.a.status
-				}, E !== m.d.Closed ? y > 0 && r.a.createElement("div", {
+				}, E !== m.a.Closed ? y > 0 && r.a.createElement("div", {
 					className: f.a.facepileRow
 				}, r.a.createElement(c.a, {
 					subredditId: e
@@ -7193,4 +7193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.088e6e5a4e88d8f95e47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1e11cecbc62a2e5e6e70.js.map

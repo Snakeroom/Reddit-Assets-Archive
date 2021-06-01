@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bce605cc556d5329d68c.js
-// Retrieved at 5/27/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c600e64039608c575f24.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -775,7 +775,7 @@
 				o = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/reddit/endpoints/economics/predictions.ts"),
 				m = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				e = r("./src/reddit/models/Poll/index.ts"),
+				e = r("./src/reddit/models/Prediction/index.ts"),
 				l = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
 				c = r("./src/reddit/selectors/posts.ts"),
 				p = r("./src/reddit/selectors/subreddit.ts"),
@@ -935,7 +935,7 @@
 							isStartImmediately: !0,
 							subredditId: a,
 							predictionDrafts: k,
-							currency: n ? e.b.Coins : e.b.Tokens
+							currency: n ? e.a.Coins : e.a.Tokens
 						}),
 						{
 							createPredictionTournament: m
@@ -3277,4 +3277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bce605cc556d5329d68c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c600e64039608c575f24.js.map

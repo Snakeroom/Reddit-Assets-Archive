@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.b3d384d9be542710a029.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.fc9584f4806d6b26c8bf.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -33,7 +33,7 @@
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
 				r = n("./node_modules/react-redux/es/index.js"),
-				s = n("./src/reddit/models/Poll/index.ts"),
+				s = n("./src/reddit/models/Prediction/Tournament/index.ts"),
 				d = n("./src/reddit/selectors/posts.ts"),
 				c = n("./src/lib/classNames/index.ts"),
 				a = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
@@ -271,7 +271,7 @@
 					predictions: o,
 					status: c
 				} = t.predictionTournament;
-				return o && o.length && c !== s.d.Closed ? i.a.createElement(m, null, i.a.createElement(M, {
+				return o && o.length && c !== s.a.Closed ? i.a.createElement(m, null, i.a.createElement(M, {
 					subredditId: t.belongsTo.id,
 					tournamentId: n,
 					prediction: o[0]
@@ -285,4 +285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.b3d384d9be542710a029.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.fc9584f4806d6b26c8bf.js.map

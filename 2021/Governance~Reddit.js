@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e1fe557408800d60fe40.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.10a2a3dd524758620f9c.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -12545,7 +12545,7 @@
 				switch (t.type) {
 					case m.k: {
 						const {
-							[ja.c.ByVoters]: r, pollId: s
+							[ja.b.ByVoters]: r, pollId: s
 						} = t.payload.pollResults;
 						return {
 							...e,
@@ -12587,7 +12587,7 @@
 							const t = Object.keys(r).reduce((e, t) => {
 								const s = r[t],
 									{
-										[ja.c.ByVoters]: a,
+										[ja.b.ByVoters]: a,
 										pollId: n
 									} = s.pollResults;
 								return e[n] = a, e
@@ -12637,7 +12637,7 @@
 					switch (t.type) {
 						case m.k: {
 							const {
-								[ja.c.ByVotingPower]: r, pollId: s
+								[ja.b.ByVotingPower]: r, pollId: s
 							} = t.payload.pollResults;
 							return {
 								...e,
@@ -12657,7 +12657,7 @@
 								const t = Object.keys(r).reduce((e, t) => {
 									const s = r[t],
 										{
-											[ja.c.ByVotingPower]: a,
+											[ja.b.ByVotingPower]: a,
 											pollId: n
 										} = s.pollResults;
 									return e[n] = a, e
@@ -21931,4 +21931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e1fe557408800d60fe40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.10a2a3dd524758620f9c.js.map

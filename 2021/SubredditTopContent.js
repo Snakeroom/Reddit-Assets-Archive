@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.b23ece7e7c6a17de04a8.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.8f82f8b7644ea8b714fa.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1341,7 +1341,7 @@
 				E = s("./src/reddit/models/Flair/index.ts"),
 				k = s("./src/reddit/models/Media/index.ts"),
 				_ = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				v = s("./src/reddit/models/Poll/index.ts"),
+				v = s("./src/reddit/models/Prediction/Tournament/index.ts"),
 				O = s("./src/reddit/components/Econ/Prediction/TournamentPostTitle/index.m.less"),
 				j = s.n(O);
 			const {
@@ -1349,8 +1349,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = ({
 				tournament: e
 			}) => {
-				const t = e.status === v.d.Live,
-					s = e.status === v.d.Closed;
+				const t = e.status === v.a.Live,
+					s = e.status === v.a.Closed;
 				return r.a.createElement("div", {
 					className: j.a.container
 				}, r.a.createElement("h3", {
@@ -2043,4 +2043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.b23ece7e7c6a17de04a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8f82f8b7644ea8b714fa.js.map

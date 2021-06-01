@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.721113dda270031f4c29.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.466bef67df01e451411a.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -318,7 +318,7 @@
 							}))
 						} else n(I(i.body));
 						const r = s();
-						if ((l = r.polls.models[e]) && Object(m.f)(l)) {
+						if ((l = r.polls.models[e]) && Object(m.d)(l)) {
 							const {
 								postId: e
 							} = l, t = r.posts.models[e];
@@ -734,7 +734,7 @@
 				X = n.n(Q);
 			class ee extends i.a.Component {
 				constructor() {
-					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(C.j)(e, t), this.sendPollResultsEvent = () => {
+					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(C.g)(e, t), this.sendPollResultsEvent = () => {
 						const {
 							poll: e,
 							sendEvent: t
@@ -769,7 +769,7 @@
 						className: e
 					}, a && i.a.createElement("div", {
 						className: X.a.title
-					}, a), r && Object(C.h)(s, r) ? i.a.createElement(G, {
+					}, a), r && Object(C.e)(s, r) ? i.a.createElement(G, {
 						displayType: t,
 						poll: s,
 						result: r,
@@ -853,7 +853,7 @@
 			var me = Object(a.b)(ue)((function(e) {
 					var t;
 					if (!(e.poll && e.poll.decisionThreshold && e.pollResult)) return null;
-					const n = Object(C.e)(e.poll, e.pollResult),
+					const n = Object(C.c)(e.poll, e.pollResult),
 						s = new r.a(e.pollResult.options[n.id].votes),
 						o = e.poll.decisionThreshold,
 						a = s.isGreaterThanOrEqualTo(new r.a(o)),
@@ -901,7 +901,7 @@
 					resultsByVoters: n
 				}) => {
 					const s = e.polls.models[t];
-					return !!(s && n && Object(C.h)(s, n))
+					return !!(s && n && Object(C.e)(s, n))
 				},
 				wallet: se.d
 			});
@@ -917,15 +917,15 @@
 					return i.a.createElement("div", {
 						className: Object(c.a)(e.className, be.a.container)
 					}, i.a.createElement("div", null, r.type !== C.a.GA && i.a.createElement(Ee, {
-						isSelected: e.currentResultType === C.c.ByVotingPower,
+						isSelected: e.currentResultType === C.b.ByVotingPower,
 						selectable: e.pollIsClosed,
 						text: `${p} ${h}`,
 						tooltipText: he._("{count} {tokenName} ({percent}% of all {tokenNameAgain})", [he._param("count", p), he._param("tokenName", h), he._param("percent", u.toFixed(2)), he._param("tokenNameAgain", h)], {
 							hk: "3R2TN1"
 						}),
-						onSelect: () => e.onChangeResultType && e.onChangeResultType(C.c.ByVotingPower)
+						onSelect: () => e.onChangeResultType && e.onChangeResultType(C.b.ByVotingPower)
 					}), i.a.createElement(Ee, {
-						isSelected: e.currentResultType === C.c.ByVoters,
+						isSelected: e.currentResultType === C.b.ByVoters,
 						selectable: e.pollIsClosed,
 						text: he._({
 							"*": "{count} votes",
@@ -933,8 +933,8 @@
 						}, [he._param("count", b), he._plural(parseInt(m))], {
 							hk: "3oK0a3"
 						}),
-						onSelect: () => e.onChangeResultType && e.onChangeResultType(C.c.ByVoters)
-					})), Object(C.f)(r) && i.a.createElement(me, {
+						onSelect: () => e.onChangeResultType && e.onChangeResultType(C.b.ByVoters)
+					})), Object(C.d)(r) && i.a.createElement(me, {
 						pollId: e.pollId,
 						subredditId: e.subredditId
 					}))
@@ -945,7 +945,7 @@
 				constructor() {
 					super(...arguments), this.state = {
 						displayReward: !1,
-						resultType: this.props.poll && this.props.poll.type === C.a.GA ? C.c.ByVoters : C.c.ByVotingPower
+						resultType: this.props.poll && this.props.poll.type === C.a.GA ? C.b.ByVoters : C.b.ByVotingPower
 					}, this.handleResultTypeChange = e => this.setState({
 						resultType: e
 					}), this.handleContainerClick = e => {
@@ -957,8 +957,8 @@
 						const n = ye(e, t.resultType),
 							s = ye(this.props, this.state.resultType);
 						if (n && s && e.poll && this.props.poll) {
-							const t = !Object(C.h)(e.poll, n),
-								r = Object(C.h)(this.props.poll, s);
+							const t = !Object(C.e)(e.poll, n),
+								r = Object(C.e)(this.props.poll, s);
 							t && r && this.setState({
 								displayReward: !0
 							})
@@ -988,7 +988,7 @@
 						[Oe.a.isEditing]: t
 					}) : _ = Object(c.a)(Oe.a.ForNonCommentsPage, {
 						[Oe.a.mHasNotVoted]: !s,
-						[Oe.a.mPollIsClosed]: !!s && Object(C.h)(n, s),
+						[Oe.a.mPollIsClosed]: !!s && Object(C.e)(n, s),
 						[Oe.a.mGAPoll]: n.type === C.a.GA
 					}), i.a.createElement("div", {
 						className: m
@@ -1006,11 +1006,11 @@
 					}), i.a.createElement(ne, {
 						key: r,
 						className: Oe.a.poll,
-						displayType: this.state.resultType === C.c.ByVoters ? b.Count : b.Percent,
+						displayType: this.state.resultType === C.b.ByVoters ? b.Count : b.Percent,
 						pollId: r,
 						resultType: this.state.resultType,
 						subredditId: o.id,
-						votingIcon: Object(C.f)(n) ? i.a.createElement(O.a, {
+						votingIcon: Object(C.d)(n) ? i.a.createElement(O.a, {
 							className: Oe.a.govIcon
 						}) : void 0
 					}), u && this.state.displayReward && i.a.createElement(p, {
@@ -1022,7 +1022,7 @@
 			}
 
 			function ye(e, t) {
-				return t === C.c.ByVotingPower ? e.resultsByVotingPower : e.resultsByVoters
+				return t === C.b.ByVotingPower ? e.resultsByVotingPower : e.resultsByVoters
 			}
 			const xe = Object(l.c)({
 				isEditing: x.K,
@@ -1543,4 +1543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.721113dda270031f4c29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.466bef67df01e451411a.js.map

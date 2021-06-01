@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.f0322ba165bb2f811e43.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.ce5bcd0749b797f5e319.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -26,7 +26,7 @@
 				o = n("./src/reddit/actions/subreddit.ts"),
 				c = n("./src/reddit/controls/Button/index.tsx"),
 				l = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				u = n("./src/reddit/models/Poll/index.ts"),
+				u = n("./src/reddit/models/Prediction/Tournament/index.ts"),
 				m = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				b = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				_ = n("./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less"),
@@ -61,7 +61,7 @@
 					}),
 					onClick: async () => {
 						if (!e || n) return null;
-						_(!0), (await t(Object(a.g)(e.name)))[0].status === u.d.Live && await t(Object(o.s)({
+						_(!0), (await t(Object(a.g)(e.name)))[0].status === u.a.Live && await t(Object(o.s)({
 							subredditName: e.name
 						})), _(!1)
 					}
@@ -75,4 +75,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.f0322ba165bb2f811e43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.ce5bcd0749b797f5e319.js.map

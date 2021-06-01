@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.aadf2ee5b36139f9c966.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7fb93d3cbbc90518d878.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -4004,7 +4004,7 @@
 				O = n("./src/reddit/models/Flair/index.ts"),
 				S = n("./src/reddit/models/Media/index.ts"),
 				y = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				g = n("./src/reddit/models/Poll/index.ts"),
+				g = n("./src/reddit/models/Prediction/Tournament/index.ts"),
 				T = n("./src/reddit/components/Econ/Prediction/TournamentPostTitle/index.m.less"),
 				j = n.n(T);
 			const {
@@ -4012,8 +4012,8 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = ({
 				tournament: e
 			}) => {
-				const t = e.status === g.d.Live,
-					n = e.status === g.d.Closed;
+				const t = e.status === g.a.Live,
+					n = e.status === g.a.Closed;
 				return s.a.createElement("div", {
 					className: j.a.container
 				}, s.a.createElement("h3", {
@@ -5133,4 +5133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.aadf2ee5b36139f9c966.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7fb93d3cbbc90518d878.js.map

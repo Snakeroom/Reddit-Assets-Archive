@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.22d9b6cca7ab7ffae3cd.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cc13612a07cd69fd488e.js
+// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1423,7 +1423,7 @@
 				i = n("./src/lib/makeActionCreator/index.ts"),
 				c = n("./src/reddit/endpoints/economics/predictions.ts"),
 				d = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				l = n("./src/reddit/models/Poll/index.ts"),
+				l = n("./src/reddit/models/Prediction/index.ts"),
 				u = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
 				m = n("./src/reddit/selectors/posts.ts"),
 				p = n("./src/reddit/selectors/subreddit.ts"),
@@ -1583,7 +1583,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: s,
-							currency: a ? l.b.Coins : l.b.Tokens
+							currency: a ? l.a.Coins : l.a.Tokens
 						}),
 						{
 							createPredictionTournament: d
@@ -1995,7 +1995,7 @@
 							}))
 						} else n(j(a.body));
 						const r = o();
-						if ((c = r.polls.models[e]) && Object(m.f)(c)) {
+						if ((c = r.polls.models[e]) && Object(m.d)(c)) {
 							const {
 								postId: e
 							} = c, t = r.posts.models[e];
@@ -7190,7 +7190,7 @@
 				x = n("./src/reddit/models/Flair/index.ts"),
 				v = n("./src/reddit/models/Media/index.ts"),
 				O = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				y = n("./src/reddit/models/Poll/index.ts"),
+				y = n("./src/reddit/models/Prediction/Tournament/index.ts"),
 				k = n("./src/reddit/components/Econ/Prediction/TournamentPostTitle/index.m.less"),
 				j = n.n(k);
 			const {
@@ -7198,8 +7198,8 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = ({
 				tournament: e
 			}) => {
-				const t = e.status === y.d.Live,
-					n = e.status === y.d.Closed;
+				const t = e.status === y.a.Live,
+					n = e.status === y.a.Closed;
 				return s.a.createElement("div", {
 					className: j.a.container
 				}, s.a.createElement("h3", {
@@ -15844,9 +15844,9 @@
 						};
 					return o && (a.type = o), a.type === X.a.ReplaceTopMod ? (a.params = {
 						userName: s
-					}, a.options = X.i[X.a.ReplaceTopMod]()) : a.type === X.a.Spinoff ? (a.params = {
+					}, a.options = X.f[X.a.ReplaceTopMod]()) : a.type === X.a.Spinoff ? (a.params = {
 						subreddit: r
-					}, a.options = X.i[X.a.Spinoff](r)) : a.options = a.options.map(e => ({
+					}, a.options = X.f[X.a.Spinoff](r)) : a.options = a.options.map(e => ({
 						text: e.text.trim()
 					})).filter(e => !!e.text), a
 				},
@@ -19376,7 +19376,7 @@
 						poll: o = this.makeDefaultPoll(),
 						pollType: s,
 						tournamentsEnabled: a
-					} = this.props, i = !Object(X.f)(o) && t && n, c = s === X.a.Prediction;
+					} = this.props, i = !Object(X.d)(o) && t && n, c = s === X.a.Prediction;
 					return r.a.createElement("div", {
 						"data-testid": "poll-creator"
 					}, i && r.a.createElement(ud, {
@@ -19534,7 +19534,7 @@
 				}))((function(e) {
 					return r.a.createElement(Id, {
 						className: e.className,
-						options: X.i[X.a.Spinoff](e.newSubredditName),
+						options: X.f[X.a.Spinoff](e.newSubredditName),
 						poll: e.poll,
 						subreddit: e.subreddit,
 						onUpdatePoll: e.onUpdatePoll
@@ -19571,7 +19571,7 @@
 				}))((function(e) {
 					return r.a.createElement(Id, {
 						className: e.className,
-						options: X.i[X.a.ReplaceTopMod](),
+						options: X.f[X.a.ReplaceTopMod](),
 						poll: e.poll,
 						subreddit: e.subreddit,
 						onUpdatePoll: e.onUpdatePoll
@@ -21968,4 +21968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.22d9b6cca7ab7ffae3cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cc13612a07cd69fd488e.js.map
