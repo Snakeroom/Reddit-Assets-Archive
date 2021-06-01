@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.36dae084c873bf028007.js
-// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.db3a8c378cd21b99b1fc.js
+// Retrieved at 6/1/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -671,7 +671,7 @@
 					FlairEdit: "da4992efe0a35a4bcfd8",
 					"vendors~Chat~PostCreation~RedesignChat": "31d6cfe0d16ae931b73c",
 					"vendors~Chat~RedesignChat": "31d6cfe0d16ae931b73c",
-					"Chat~RedesignChat": "f522edc275b25bf9a1fe",
+					"Chat~RedesignChat": "f72ba6e740959e6111c8",
 					RedesignChat: "d7dff5f1e60e7e74cf6c",
 					"vendors~ClaimFreeAwardModal~CollectionCommentsPage~CommentsPage~PowerupSuccessModal~SubredditWelcome~bbbfd142": "31d6cfe0d16ae931b73c",
 					ClaimFreeAwardModal: "3bbde9c66e49f5a76cd2",
@@ -1253,7 +1253,7 @@
 						"translations/es_MX-json": "d1ec4d65be207e2a9aad",
 						"translations/fr_FR-json": "10b0dfdf8972cfb39253",
 						"translations/it_IT-json": "959908bd0174fa7180a2",
-						"translations/pseudo_ext-json": "1e64cd19b068764ab72d",
+						"translations/pseudo_ext-json": "571808996e1fad1b06ce",
 						"translations/pseudo_long-json": "2abc7fb8d82ea2e114f0",
 						"translations/pseudo_short-json": "059a97128d07bd7fa583",
 						"translations/pt_BR-json": "a61e70c6a12084ddb2ff",
@@ -1266,7 +1266,7 @@
 						FlairEdit: "38d68d1161eb8c647144",
 						"vendors~Chat~PostCreation~RedesignChat": "f30417aa05f7e05f4789",
 						"vendors~Chat~RedesignChat": "fd973ea1092707bcf345",
-						"Chat~RedesignChat": "e16458d245de79d78644",
+						"Chat~RedesignChat": "f8fca865bc78decc428e",
 						RedesignChat: "7ac406df32652ea8038b",
 						"vendors~ClaimFreeAwardModal~CollectionCommentsPage~CommentsPage~PowerupSuccessModal~SubredditWelcome~bbbfd142": "2e7621bb9851b67d1653",
 						ClaimFreeAwardModal: "7357b0469947345eacfe",
@@ -1495,4 +1495,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.36dae084c873bf028007.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.db3a8c378cd21b99b1fc.js.map
