@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.c822e47e7e9d1110f3e0.js
-// Retrieved at 6/1/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.625cbca8ee1835a2eb4f.js
+// Retrieved at 6/1/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16713,11 +16713,12 @@
 				u = Object(s.a)([a, l], (e, t) => e && t ? e[t] : null),
 				m = Object(s.a)([a, i], (e, t) => {
 					if (!e) return [];
-					const n = t ? t.achievementTypes : [];
+					const n = t ? t.achievementTypes : [],
+						s = (null == t ? void 0 : t.pendingPreferredType) || (null == t ? void 0 : t.preferredType);
 					return Object.values(e).map(e => ({
 						...e,
 						isLocked: !n.includes(e.type),
-						isPreferred: e.type === (null == t ? void 0 : t.preferredType)
+						isPreferred: e.type === s
 					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
 				})
 		},
@@ -16908,4 +16909,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c822e47e7e9d1110f3e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.625cbca8ee1835a2eb4f.js.map

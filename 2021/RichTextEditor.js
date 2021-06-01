@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.32e833df20a0a84582d1.js
-// Retrieved at 6/1/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.f6a6607d74aaec86c131.js
+// Retrieved at 6/1/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4568,11 +4568,12 @@
 				u = Object(n.a)([a, l], (e, t) => e && t ? e[t] : null),
 				m = Object(n.a)([a, i], (e, t) => {
 					if (!e) return [];
-					const o = t ? t.achievementTypes : [];
+					const o = t ? t.achievementTypes : [],
+						n = (null == t ? void 0 : t.pendingPreferredType) || (null == t ? void 0 : t.preferredType);
 					return Object.values(e).map(e => ({
 						...e,
 						isLocked: !o.includes(e.type),
-						isPreferred: e.type === (null == t ? void 0 : t.preferredType)
+						isPreferred: e.type === n
 					})).sort((e, t) => e.isLocked === t.isLocked ? 0 : e.isLocked ? 1 : -1)
 				})
 		},
@@ -4602,4 +4603,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.32e833df20a0a84582d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f6a6607d74aaec86c131.js.map
