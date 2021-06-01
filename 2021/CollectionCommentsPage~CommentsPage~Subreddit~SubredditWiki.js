@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.845329604b4cfc0dd88f.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c6116b824ffeef1f8414.js
+// Retrieved at 6/1/2021, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -1306,7 +1306,7 @@
 				if (!f || 1 === f.tiersInfo.length || !k) return null;
 				const A = !!(null == E ? void 0 : E.freeCount),
 					z = N ? 8 : 50,
-					L = P ? I._("Powerups are unlocked in", null, {
+					L = C ? I._("Powerups are unlocked in", null, {
 						hk: "fquP8"
 					}) : I._("Powerup to unlock perks for", null, {
 						hk: "3kTNGL"
@@ -3389,4 +3389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.845329604b4cfc0dd88f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c6116b824ffeef1f8414.js.map
