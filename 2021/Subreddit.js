@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5764f4bd11747b2fba3d.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1ad29d7eaa4c440a4610.js
+// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -4159,15 +4159,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.md.Add:
+					case r.od.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.md.Start:
+					case r.od.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.md.Create:
+					case r.od.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -7090,11 +7090,11 @@
 				}), o.a),
 				m = Object(s.a)(u, e => e === r.uc.Enabled),
 				p = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: r.dd,
+					experimentName: r.ed,
 					experimentEligibilitySelector: c
 				}), o.a),
 				b = Object(s.a)(e => Object(a.c)(e, {
-					experimentName: r.ed,
+					experimentName: r.fd,
 					experimentEligibilitySelector: c
 				}), o.a)
 		},
@@ -7106,9 +7106,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const o = e => Object(a.H)(e) || !(s.vd.Holdout === Object(r.c)(e, {
+			const o = e => Object(a.H)(e) || !(s.xd.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.sd
+				experimentName: s.ud
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -7194,4 +7194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5764f4bd11747b2fba3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1ad29d7eaa4c440a4610.js.map

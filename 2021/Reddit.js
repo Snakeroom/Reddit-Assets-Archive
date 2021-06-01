@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.17650cbf442725007066.js
-// Retrieved at 6/1/2021, 3:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.73b9b9257ce2dd572296.js
+// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -4498,7 +4498,7 @@
 				})))
 			}
 			const to = (e, t, n, s) => {
-					const r = n === zt.ld.Modals,
+					const r = n === zt.nd.Modals,
 						a = {
 							id: ds.CreateCommunity,
 							telemetryNoun: "create_community"
@@ -5539,9 +5539,9 @@
 				lr = n("./src/reddit/models/Search/index.ts"),
 				ur = n("./src/reddit/selectors/experiments/trending.ts"),
 				mr = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const pr = e => Object(Pt.H)(e) || zt.wd.Treatment1 === Object(mr.c)(e, {
+			const pr = e => Object(Pt.H)(e) || zt.yd.Treatment1 === Object(mr.c)(e, {
 				experimentEligibilitySelector: mr.a,
-				experimentName: zt.td
+				experimentName: zt.vd
 			});
 			var br = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				hr = n("./src/reddit/selectors/searchResults.ts"),
@@ -6424,7 +6424,7 @@
 				})), g && p && m.a.createElement(w, {
 					className: ci.a.entrypointLink,
 					onClick: () => {
-						h === zt.ld.Tabs ? window.open("/subreddits/create", "_blank") : f(), e.sendEvent(Object(za.a)())
+						h === zt.nd.Tabs ? window.open("/subreddits/create", "_blank") : f(), e.sendEvent(Object(za.a)())
 					}
 				}), m.a.createElement(u.Fragment, null, m.a.createElement(_, {
 					href: "/coins",
@@ -12029,15 +12029,15 @@
 				o = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case o.md.Add:
+					case o.od.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case o.md.Start:
+					case o.od.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case o.md.Create:
+					case o.od.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -16390,13 +16390,13 @@
 				C = e => e.accountManagerModalData.redirectUrl,
 				x = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, v, l.a, f.a, u.b, e => Object(b.c)(e, {
 					experimentEligibilitySelector: g,
-					experimentName: d.fd
+					experimentName: d.gd
 				}), m.a, p.i, (e, t, n, a, l, u, m, p, b) => {
 					let h = `${r.a.accountManagerOrigin}${e}`;
 					if (h = Object(i.a)(h, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), m && (h = Object(i.a)(h, {
-							[`experiment_${d.fd}`]: m
+							[`experiment_${d.gd}`]: m
 						})), e === c.c.GoogleOneTap) return Object(i.a)(h, {
 						[d.Q]: u
 					});
@@ -16539,7 +16539,7 @@
 					experimentEligibilitySelector: r.K,
 					experimentName: s.Ib
 				});
-				return !(!t || Object(s.Ed)(t))
+				return !(!t || Object(s.Gd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -16633,11 +16633,11 @@
 				}), a.a),
 				m = Object(s.a)(u, e => e === o.uc.Enabled),
 				p = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.dd,
+					experimentName: o.ed,
 					experimentEligibilitySelector: c
 				}), a.a),
 				b = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: o.ed,
+					experimentName: o.fd,
 					experimentEligibilitySelector: c
 				}), a.a)
 		},
@@ -16649,9 +16649,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.H)(e) || !(s.vd.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.H)(e) || !(s.xd.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.sd
+				experimentName: s.ud
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -16909,4 +16909,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.17650cbf442725007066.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.73b9b9257ce2dd572296.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.9ec4e7d5a8c9c282e985.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.95b4a2aa528b9bd487f1.js
+// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2480,12 +2480,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.od.SmIcon:
+						case b.qd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.od.SmIconHc:
+						case b.qd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3354,7 +3354,7 @@
 					}
 				}),
 				J = Object(a.b)(V);
-			class G extends i.a.Component {
+			class q extends i.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: "bulk_mod_action",
@@ -3407,7 +3407,7 @@
 					}))
 				}
 			}
-			t.default = W(J(Object(m.c)(G)))
+			t.default = W(J(Object(m.c)(q)))
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, s) {
 			"use strict";
@@ -3432,12 +3432,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.hd
+						experimentName: n.id
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.od.SmIcon || t === n.od.SmIconHc
+					return t === n.qd.SmIcon || t === n.qd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -3460,4 +3460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9ec4e7d5a8c9c282e985.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.95b4a2aa528b9bd487f1.js.map

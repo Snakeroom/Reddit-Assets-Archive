@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b0ca159ca77679e9075a.js
-// Retrieved at 5/26/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.aa4a014a83728c4c155b.js
+// Retrieved at 6/1/2021, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -195,7 +195,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(B.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: N.od.SmIconHc,
+					userVariant: N.qd.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -206,7 +206,7 @@
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function A(e) {
+			function q(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -246,10 +246,10 @@
 				})))
 			}
 			const {
-				fbt: F
+				fbt: A
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function q(e) {
+			function F(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -267,7 +267,7 @@
 					onClick: () => i(t)
 				}, o.a.createElement(C.b, null), o.a.createElement("span", {
 					className: M.a.closeText
-				}, F._("Close", null, {
+				}, A._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
 					className: M.a.question
@@ -290,7 +290,7 @@
 						await e.onSubmit(t, a)
 					},
 					disabled: 0 === a.length
-				}, F._("Submit", null, {
+				}, A._("Submit", null, {
 					hk: "7ztww"
 				})))
 			}
@@ -349,7 +349,7 @@
 				}
 				switch (O.type) {
 					case v.d.Multi:
-						return o.a.createElement(A, {
+						return o.a.createElement(q, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -360,7 +360,7 @@
 							inFeed: a
 						});
 					case v.d.SingleWithSubmit:
-						return o.a.createElement(q, {
+						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -371,7 +371,7 @@
 							inFeed: a
 						});
 					case v.d.SingleNoSubmit:
-						return o.a.createElement(q, {
+						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -816,12 +816,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case f.od.SmIcon:
+						case f.qd.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case f.od.SmIconHc:
+						case f.qd.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1123,12 +1123,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.hd
+						experimentName: r.id
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.od.SmIcon || t === r.od.SmIconHc
+					return t === r.qd.SmIcon || t === r.qd.SmIconHc
 				},
 				u = (e, {
 					subredditName: t
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b0ca159ca77679e9075a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.aa4a014a83728c4c155b.js.map
