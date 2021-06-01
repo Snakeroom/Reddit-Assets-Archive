@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.75d9ceddd5a251cacddc.js
-// Retrieved at 6/1/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.44ef30275ac02fa123e9.js
+// Retrieved at 6/1/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16583,27 +16583,26 @@
 		"./src/reddit/selectors/experiments/postCommentFollow.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return u
+				return l
 			})), n.d(t, "a", (function() {
-				return p
+				return m
 			}));
-			var s = n("./src/lib/localStorageAvailable/index.ts"),
-				o = n("./node_modules/reselect/es/index.js"),
-				r = n("./src/reddit/constants/experiments.ts"),
-				a = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				i = n("./src/reddit/selectors/experiments/utils.ts"),
-				c = n("./src/reddit/selectors/user.ts");
-			const d = e => (Object(c.J)(e) || Object(c.K)(e)) && Object(s.a)(),
-				l = Object(o.a)(e => Object(a.c)(e, {
-					experimentName: r.W,
-					experimentEligibilitySelector: d
-				}), i.a),
-				u = Object(o.a)(l, e => e === r.Fc.Enabled),
-				m = Object(o.a)(e => Object(a.c)(e, {
-					experimentName: r.P,
-					experimentEligibilitySelector: d
-				}), i.a),
-				p = Object(o.a)(m, e => e === r.F.Enabled)
+			var s = n("./node_modules/reselect/es/index.js"),
+				o = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				a = n("./src/reddit/selectors/experiments/utils.ts"),
+				i = n("./src/reddit/selectors/user.ts");
+			const c = e => Object(i.J)(e) || Object(i.K)(e),
+				d = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: o.W,
+					experimentEligibilitySelector: c
+				}), a.a),
+				l = Object(s.a)(d, e => e === o.Fc.Enabled),
+				u = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: o.P,
+					experimentEligibilitySelector: c
+				}), a.a),
+				m = Object(s.a)(u, e => e === o.F.Enabled)
 		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, n) {
 			"use strict";
@@ -16909,4 +16908,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.75d9ceddd5a251cacddc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.44ef30275ac02fa123e9.js.map
