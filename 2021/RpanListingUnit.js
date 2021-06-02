@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2d6501a7519f539fedb7.js
-// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.00b6f3ad52087074f87f.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.pc
+					experimentName: u.oc
 				});
-				return Object(u.Id)(t) ? void 0 : t
+				return Object(u.Hd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.qc
+					experimentName: u.pc
 				});
-				return Object(u.Id)(t) ? void 0 : t
-			}, (e, t) => e === u.rc.Enabled && t === u.rc.Enabled);
+				return Object(u.Hd)(t) ? void 0 : t
+			}, (e, t) => e === u.qc.Enabled && t === u.qc.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1250,16 +1250,16 @@
 				F = n("./src/reddit/components/PostLeftRail/index.tsx"),
 				U = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				V = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				G = n("./src/reddit/controls/InternalLink/index.tsx"),
-				H = n("./src/reddit/controls/Score/index.tsx"),
+				H = n("./src/reddit/controls/InternalLink/index.tsx"),
+				G = n("./src/reddit/controls/Score/index.tsx"),
 				Y = n("./src/reddit/icons/fonts/index.tsx"),
 				B = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				W = n.n(B),
 				K = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				z = n.n(K);
 			const {
-				fbt: Z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = 20, J = l.hc, X = l.hc, $ = Object(c.a)(k.a, {
+				fbt: q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.hc, X = l.hc, $ = Object(c.a)(k.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(a.c)({
 				autoplay: A.b,
@@ -1301,15 +1301,15 @@
 				}))
 			})), ee = () => s.a.createElement("h3", {
 				className: z.a.title
-			}, Z._("Top broadcast", null, {
+			}, q._("Top broadcast", null, {
 				hk: "HADCh"
 			})), te = () => s.a.createElement("h3", {
 				className: z.a.title
-			}, Z._("Top livestream", null, {
+			}, q._("Top livestream", null, {
 				hk: "4od1tZ"
 			})), ne = () => s.a.createElement("p", {
 				className: z.a.description
-			}, Z._("Live from the internet, this is RPAN", null, {
+			}, q._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class re extends r.Component {
@@ -1419,7 +1419,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && o.c.has(this.timerId)) {
-						Math.round(o.c.end(this.timerId)) / 1e3 >= q ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(o.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -1495,7 +1495,7 @@
 				renderTitleAndDescription(e) {
 					return s.a.createElement("div", {
 						className: z.a.titleAndDescriptionContainer
-					}, s.a.createElement(G.a, {
+					}, s.a.createElement(H.a, {
 						to: this.props.location
 					}, s.a.createElement(te, null), e && s.a.createElement(ne, null)))
 				}
@@ -1509,7 +1509,7 @@
 					}))), s.a.createElement("div", {
 						className: z.a.body,
 						ref: this.observableElement
-					}, s.a.createElement(G.a, {
+					}, s.a.createElement(H.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
 						className: z.a.previewLink,
@@ -1522,7 +1522,7 @@
 					return s.a.createElement("div", {
 						className: z.a.body,
 						ref: this.observableElement
-					}, s.a.createElement(G.a, {
+					}, s.a.createElement(H.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, s.a.createElement("div", {
@@ -1577,10 +1577,10 @@
 					const t = Math.max(1, (null === (e = this.props.stream) || void 0 === e ? void 0 : e.continuous_watchers) || 0);
 					return s.a.createElement("span", {
 						className: z.a.watchingCount
-					}, Z._({
+					}, q._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [Z._plural(t, "number")], {
+					}, [q._plural(t, "number")], {
 						hk: "33zJ5F"
 					}))
 				}
@@ -1704,7 +1704,7 @@
 						[z.a.verticalVotes]: e.isVertical,
 						[z.a.horizontalVotes]: !e.isVertical
 					})
-				}, s.a.createElement(H.a, {
+				}, s.a.createElement(G.a, {
 					className: z.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -1723,7 +1723,7 @@
 					onClick: e,
 					isLoggedIn: t
 				}) => s.a.createElement(R.a, {
-					displayText: Z._("Show me less of this", null, {
+					displayText: q._("Show me less of this", null, {
 						hk: "4t8AKC"
 					}),
 					flatlistItem: D.a.Hide,
@@ -1742,7 +1742,7 @@
 					dropdownId: "rpan-du-overflow"
 				}, s.a.createElement(V.b, {
 					className: z.a.overflowItem,
-					displayText: Z._("Show me less of this", null, {
+					displayText: q._("Show me less of this", null, {
 						hk: "2c4uFK"
 					}),
 					iconWrapperClassName: z.a.overflowItemIconWrapper,
@@ -2259,9 +2259,9 @@
 			})), n.d(t, "clickFilterEvent", (function() {
 				return V
 			})), n.d(t, "clickNextFiltersEvent", (function() {
-				return G
-			})), n.d(t, "clickPreviousFiltersEvent", (function() {
 				return H
+			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+				return G
 			}));
 			var r = n("./src/reddit/models/Gold/Award.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts"),
@@ -2455,13 +2455,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				G = () => e => ({
+				H = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				H = () => e => ({
+				G = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -2470,26 +2470,24 @@
 		},
 		"./src/reddit/helpers/trackers/goldPayment.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "g", (function() {
 				return b
 			})), n.d(t, "b", (function() {
 				return f
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "e", (function() {
 				return g
 			})), n.d(t, "d", (function() {
 				return v
-			})), n.d(t, "e", (function() {
-				return E
 			})), n.d(t, "c", (function() {
-				return O
+				return E
 			})), n.d(t, "a", (function() {
+				return O
+			})), n.d(t, "f", (function() {
 				return _
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return C
 			})), n.d(t, "i", (function() {
 				return y
-			})), n.d(t, "j", (function() {
-				return x
 			}));
 			var r = n("./src/lib/constants/index.ts"),
 				s = n("./src/reddit/models/Gold/ProductOffer.ts"),
@@ -2557,7 +2555,7 @@
 					}),
 					source: "gold_payment",
 					action: "click",
-					noun: "continue_paypal"
+					noun: "credit_card"
 				}),
 				E = e => t => ({
 					...b(t, {
@@ -2565,17 +2563,9 @@
 					}),
 					source: "gold_payment",
 					action: "click",
-					noun: "credit_card"
-				}),
-				O = e => t => ({
-					...b(t, {
-						thingId: e
-					}),
-					source: "gold_payment",
-					action: "click",
 					noun: "complete_credit_card"
 				}),
-				_ = (e, t) => n => ({
+				O = (e, t) => n => ({
 					...b(n, {
 						packageId: e,
 						offerContext: t
@@ -2584,7 +2574,7 @@
 					action: "click",
 					noun: "confirm"
 				}),
-				C = e => t => ({
+				_ = e => t => ({
 					...b(t, {
 						thingId: e
 					}),
@@ -2592,7 +2582,7 @@
 					action: "display",
 					noun: "error"
 				}),
-				y = (e, t, n) => r => {
+				C = (e, t, n) => r => {
 					const s = b(r, {
 						packageId: t,
 						thingId: e,
@@ -2613,7 +2603,7 @@
 						}
 					}
 				},
-				x = e => t => {
+				y = e => t => {
 					const n = b(t, {
 						thingId: e
 					});
@@ -3355,4 +3345,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2d6501a7519f539fedb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.00b6f3ad52087074f87f.js.map

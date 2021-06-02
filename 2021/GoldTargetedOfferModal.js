@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.754dd90617917e03961d.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.8ef8db830d511d59c294.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -586,7 +586,7 @@
 						t(Object(b.f)())
 					};
 				if (Object(n.useEffect)(() => {
-						O && e(Object(d.i)(void 0, O.mobileId, p.a.StorefrontFreeAward))
+						O && e(Object(d.h)(void 0, O.mobileId, p.a.StorefrontFreeAward))
 					}, []), !O) return _(), null;
 				const {
 					baselineCoins: y,
@@ -715,7 +715,7 @@
 					} = e,
 					b = c.filter(e => e.mobileId === d)[0];
 				if (Object(a.useEffect)(() => {
-						b && t(Object(l.i)(void 0, b.mobileId))
+						b && t(Object(l.h)(void 0, b.mobileId))
 					}, []), !b) return s(), null;
 				const {
 					baselineCoins: p,
@@ -927,4 +927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.754dd90617917e03961d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.8ef8db830d511d59c294.js.map

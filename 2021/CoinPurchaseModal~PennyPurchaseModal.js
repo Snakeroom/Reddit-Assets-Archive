@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.68c933405f009063dd6c.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.52883d8f9cd264bce96a.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal~PennyPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -1349,7 +1349,7 @@
 						gildThingId: e,
 						sendEvent: t
 					} = this.props;
-					t(Object(p.j)(e)), Object(i.b)()
+					t(Object(p.i)(e)), Object(i.b)()
 				}
 				render() {
 					const e = this.props,
@@ -1742,10 +1742,10 @@
 							} = this.props;
 						switch (t) {
 							case "creditCard":
-								a(Object(c.e)(n));
+								a(Object(c.d)(n));
 								break;
 							case "paypal":
-								a(Object(c.f)(n))
+								a(Object(c.e)(n))
 						}
 						return r(t)
 					}
@@ -2241,4 +2241,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.68c933405f009063dd6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal~PennyPurchaseModal.52883d8f9cd264bce96a.js.map

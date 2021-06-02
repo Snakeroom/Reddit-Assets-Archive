@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ec8636de6518b411fee6.js
-// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0932f2c2058be7e30053.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -559,11 +559,11 @@
 				return e.split("-")[0]
 			}
 
-			function V(e) {
+			function H(e) {
 				return e.split("-")[1]
 			}
 
-			function H(e) {
+			function V(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
@@ -572,7 +572,7 @@
 					o = e.element,
 					r = e.placement,
 					s = r ? U(r) : null,
-					i = r ? V(r) : null,
+					i = r ? H(r) : null,
 					a = n.x + n.width / 2 - o.width / 2,
 					c = n.y + n.height / 2 - o.height / 2;
 				switch (s) {
@@ -606,7 +606,7 @@
 							y: n.y
 						}
 				}
-				var d = s ? H(s) : null;
+				var d = s ? V(s) : null;
 				if (null != d) {
 					var l = "y" === d ? "height" : "width";
 					switch (i) {
@@ -1014,9 +1014,9 @@
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
 												d = void 0 === c ? F : c,
-												l = V(o),
+												l = H(o),
 												u = (l ? a ? M : M.filter((function(e) {
-													return V(e) === l
+													return H(e) === l
 												})) : S).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -1041,7 +1041,7 @@
 									}), []), g = t.rects.reference, P = t.rects.popper, C = new Map, I = !0, T = y[0], N = 0; N < y.length; N++) {
 									var L = y[N],
 										B = U(L),
-										A = V(L) === w,
+										A = H(L) === w,
 										R = [O, j].indexOf(B) >= 0,
 										D = R ? "width" : "height",
 										W = oe(t, {
@@ -1051,11 +1051,11 @@
 											altBoundary: p,
 											padding: d
 										}),
-										H = R ? A ? E : k : A ? j : O;
-									g[D] > P[D] && (H = J(H));
-									var z = J(H),
+										V = R ? A ? E : k : A ? j : O;
+									g[D] > P[D] && (V = J(V));
+									var z = J(V),
 										q = [];
-									if (s && q.push(W[B] <= 0), a && q.push(W[H] <= 0, W[z] <= 0), q.every((function(e) {
+									if (s && q.push(W[B] <= 0), a && q.push(W[V] <= 0, W[z] <= 0), q.every((function(e) {
 											return e
 										}))) {
 										T = L, I = !1;
@@ -1109,9 +1109,9 @@
 									altBoundary: l
 								}),
 								v = U(t.placement),
-								y = V(t.placement),
+								y = H(t.placement),
 								_ = !y,
-								S = H(v),
+								S = V(v),
 								P = "x" === S ? "y" : "x",
 								C = t.modifiersData.popperOffsets,
 								I = t.rects.reference,
@@ -1179,7 +1179,7 @@
 								r = n.elements.arrow,
 								s = n.modifiersData.popperOffsets,
 								i = U(n.placement),
-								a = H(i),
+								a = V(i),
 								c = [k, E].indexOf(i) >= 0 ? "height" : "width";
 							if (r && s) {
 								var d = n.modifiersData[o + "#persistent"].padding,
@@ -1976,8 +1976,8 @@
 				D = n("./src/reddit/contexts/Post/index.tsx"),
 				W = n("./src/reddit/selectors/experiments/categories.ts"),
 				U = n("./src/reddit/selectors/experiments/econAwardsPlaque.ts"),
-				V = n("./src/reddit/selectors/experiments/listingBelow.ts"),
-				H = n("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
+				H = n("./src/reddit/selectors/experiments/listingBelow.ts"),
+				V = n("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
 				z = n("./src/reddit/hooks/useIsOverlay.ts"),
 				q = n("./src/reddit/hooks/useUserContext.ts"),
 				G = n("./src/reddit/selectors/inFeedChaining.ts"),
@@ -2006,7 +2006,7 @@
 					isCurrentUserProfilePost: K.k,
 					isPostChainDismissed: G.c,
 					isPostChained: G.d,
-					listingBelowVariant: V.c,
+					listingBelowVariant: H.c,
 					moderatorPermissions: X.j,
 					showAwardsPlaque: U.a,
 					showEditFlair: J.a,
@@ -2022,7 +2022,7 @@
 						flairStyleTemplate: D,
 						hideNSFWPref: W,
 						hostPostData: U,
-						inSubredditOrProfile: V = !1,
+						inSubredditOrProfile: H = !1,
 						isActionBarAnimationEnabled: z,
 						isCheckboxSelected: q,
 						isCommentsPage: G,
@@ -2057,7 +2057,7 @@
 							listingName: se,
 							postId: le
 						}))
-					}, [Oe, re, se, le]), Ee = e => e === R.a.upvoted ? Oe(Object(l.bb)(le)) : Oe(Object(l.u)(le)), ke = () => Oe(Object(l.X)(le)), _e = pe ? void 0 : D, Se = Object(B.a)(ie), we = ae && Se, Pe = Object(F.a)(ie), Ce = Object(L.a)(ie), Ie = Object(j.c)(de), Te = !!oe && !Object(T.Id)(oe), Ne = Object(M.a)(de), Me = V && !xe && !Te, Fe = Me && !!de.source && !n, Le = !(J && i || te) && !X && (!V || Te), Be = (!V || Te) && !de.isSponsored, Ae = Object(a.t)(de, ne), {
+					}, [Oe, re, se, le]), Ee = e => e === R.a.upvoted ? Oe(Object(l.bb)(le)) : Oe(Object(l.u)(le)), ke = () => Oe(Object(l.X)(le)), _e = pe ? void 0 : D, Se = Object(B.a)(ie), we = ae && Se, Pe = Object(F.a)(ie), Ce = Object(L.a)(ie), Ie = Object(j.c)(de), Te = !!oe && !Object(T.Hd)(oe), Ne = Object(M.a)(de), Me = H && !xe && !Te, Fe = Me && !!de.source && !n, Le = !(J && i || te) && !X && (!H || Te), Be = (!H || Te) && !de.isSponsored, Ae = Object(a.t)(de, ne), {
 						source: Re
 					} = Ae, De = r.a.createElement(k.a, {
 						className: Object(c.a)(ee.a.container, t, Q.a.largeAndMediumPostStyles, Q.a.largeAndMediumActiveStyles, Object(A.a)(e), {
@@ -2099,7 +2099,7 @@
 						hideNSFWPref: W,
 						hostPostData: U,
 						iconClassName: ee.a.postTopLineIcon,
-						inSubredditOrProfile: V,
+						inSubredditOrProfile: H,
 						isCommentsPage: G,
 						isCurrentUserProfilePost: X,
 						isOverlay: !!K,
@@ -2185,7 +2185,7 @@
 							hide: !1,
 							report: !1
 						})
-					}))), J && r.a.createElement(H.a, {
+					}))), J && r.a.createElement(V.a, {
 						post: de,
 						postIds: null != ue ? ue : [],
 						subredditId: null == ye ? void 0 : ye.id
@@ -2662,12 +2662,12 @@
 					const o = `PostBadges--${e}--${t}`;
 					return n ? `${o}--${n}` : o
 				},
-				V = Object(b.t)({
+				H = Object(b.t)({
 					isProfilePostListing: b.I,
 					isSubreddit: b.K,
 					pageLayer: e => e
 				}),
-				H = Object(a.c)({
+				V = Object(a.c)({
 					isPinned: (e, {
 						post: t
 					}) => Object(T.p)(e, {
@@ -2675,7 +2675,7 @@
 					}),
 					modModeEnabled: b.Q
 				}),
-				z = Object(i.b)(H, (e, t) => ({
+				z = Object(i.b)(V, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						n.e("removalReasonActions").then(n.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(n => e(n.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -2684,7 +2684,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = V(z(({
+			t.a = H(z(({
 				className: e,
 				displayText: t,
 				isSubreddit: n,
@@ -2693,8 +2693,8 @@
 				isPinned: b,
 				isProfilePostListing: T,
 				modModeEnabled: N,
-				onHideTooltip: V,
-				onOpenRemovalReasonModal: H,
+				onHideTooltip: H,
+				onOpenRemovalReasonModal: V,
 				onShowTooltip: z,
 				post: q,
 				tooltipType: G
@@ -2732,7 +2732,7 @@
 					desc: B(),
 					id: $,
 					onMouseEnter: z($),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), s.a.createElement(u.c, F({
 					tooltipId: $,
 					text: B()
@@ -2742,7 +2742,7 @@
 					desc: A(),
 					id: te,
 					onMouseEnter: z(te),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), s.a.createElement(u.c, F({
 					tooltipId: te,
 					text: A()
@@ -2752,7 +2752,7 @@
 					desc: D(),
 					id: ie,
 					onMouseEnter: z(ie),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), s.a.createElement(u.c, F({
 					tooltipId: ie,
 					text: D()
@@ -2762,7 +2762,7 @@
 					desc: W(),
 					id: ae,
 					onMouseEnter: z(ae),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), s.a.createElement(u.c, F({
 					tooltipId: ae,
 					text: W()
@@ -2772,7 +2772,7 @@
 					desc: Object(x.a)(q),
 					id: Q,
 					onMouseEnter: z(Q),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), s.a.createElement(u.c, F({
 					tooltipId: Q,
 					text: Object(x.a)(q)
@@ -2782,16 +2782,16 @@
 					desc: Object(x.c)(q),
 					id: oe,
 					onMouseEnter: z(oe),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), Y && s.a.createElement(p.a, {
 					className: M.a.addRemovalReason,
-					onClick: H,
+					onClick: V,
 					text: o.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
 				}), (q.modRemovalReason || q.modNote) && s.a.createElement(L, {
 					onMouseEnter: z(oe),
-					onMouseLeave: V
+					onMouseLeave: H
 				}, o.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
 				})), s.a.createElement(u.c, F({
@@ -2803,7 +2803,7 @@
 					desc: Object(x.e)(q),
 					id: se,
 					onMouseEnter: z(se),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), s.a.createElement(u.c, F({
 					tooltipId: se,
 					text: Object(x.e)(q)
@@ -2824,7 +2824,7 @@
 					desc: Object(x.d)(q.numReports),
 					id: re,
 					onMouseEnter: z(re),
-					onMouseLeave: V
+					onMouseLeave: H
 				}), s.a.createElement(u.c, F({
 					tooltipId: re,
 					text: Object(x.d)(q.numReports)
@@ -3164,7 +3164,7 @@
 				shouldShowFollowButton: W,
 				onFollowPostClick: U
 			}) => {
-				const V = r || T;
+				const H = r || T;
 				return s.a.createElement("div", {
 					className: Object(i.a)(E.a.container, e)
 				}, B && R && s.a.createElement("div", {
@@ -3196,7 +3196,7 @@
 					isCompactPinnedPost: P,
 					post: M,
 					tooltipType: I ? u.c.Lightbox : void 0
-				}), !V && s.a.createElement(a.a, {
+				}), !H && s.a.createElement(a.a, {
 					isPostDetail: w,
 					thing: M,
 					tooltipType: I ? u.c.Lightbox : void 0
@@ -3834,9 +3834,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.pb
 				});
-				return !(!t || Object(o.Id)(t))
+				return !(!t || Object(o.Hd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ec8636de6518b411fee6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0932f2c2058be7e30053.js.map

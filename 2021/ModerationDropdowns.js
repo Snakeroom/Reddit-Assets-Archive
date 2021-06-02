@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.fece7c06a902edd8f5c5.js
-// Retrieved at 6/2/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.179131a914bd477b9b00.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -2350,7 +2350,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: e
 				});
-				return !(!s || Object(n.Id)(s))
+				return !(!s || Object(n.Hd)(s))
 			}
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, s) {
@@ -2365,14 +2365,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Ec
-					}) === n.Oc.Enabled
+						experimentName: n.Dc
+					}) === n.Nc.Enabled
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Dc
-					}) === n.Nc.Enabled
+						experimentName: n.Cc
+					}) === n.Mc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -2401,4 +2401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.fece7c06a902edd8f5c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.179131a914bd477b9b00.js.map

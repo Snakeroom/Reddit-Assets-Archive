@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.dc7a60701e6759156aa7.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.80e27b4db6316d5ce882.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -1317,7 +1317,7 @@
 				b = a("./src/reddit/helpers/trackers/goldPayment.ts");
 			const f = "coins_marketing",
 				k = (e, t = {}) => ({
-					...Object(b.h)(e, t),
+					...Object(b.g)(e, t),
 					correlationId: Object(g.d)(g.a.GoldPayment, !1)
 				}),
 				w = () => e => ({
@@ -1749,4 +1749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.dc7a60701e6759156aa7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.80e27b4db6316d5ce882.js.map

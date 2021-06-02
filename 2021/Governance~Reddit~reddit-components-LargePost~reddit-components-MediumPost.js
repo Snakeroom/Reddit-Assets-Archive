@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.b6053fe38009dac45793.js
-// Retrieved at 6/2/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.70ff0a05c24abb3d1981.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -803,17 +803,17 @@
 						listingKey: w
 					}), Y = m && (!B || 0 === B.length), G = _, q = Object(P.F)(N, {
 						postId: f
-					}), K = a && !!q && !!q.media && (Object(U.H)(q.media) || Object(U.F)(q.media)) && !q.media.altText;
-					if (!(F || Y || G || K || p)) return;
+					}), V = a && !!q && !!q.media && (Object(U.H)(q.media) || Object(U.F)(q.media)) && !q.media.altText;
+					if (!(F || Y || G || V || p)) return;
 					F && e(C({
 						key: g
 					}));
-					const V = await ((t, e) => Object(b.a)(t, {
+					const K = await ((t, e) => Object(b.a)(t, {
 							...L,
 							variables: e
 						}))(r(), t),
-						H = V.body;
-					p && (V.ok ? H.data && H.data.post && e(c({
+						H = K.body;
+					p && (K.ok ? H.data && H.data.post && e(c({
 						postId: f,
 						isEligibleForQASchema: null !== (i = H.data.post.isEligibleForQASchema) && void 0 !== i && i
 					})) : e(d())), F && O({
@@ -821,20 +821,20 @@
 						onFailure: t => e(I(t)),
 						onSuccess: t => e(T(t)),
 						postId: f,
-						response: V
-					}), Y && (V.ok ? H.data && R({
+						response: K
+					}), Y && (K.ok ? H.data && R({
 						getState: s,
 						onFailure: t => e(v(t)),
 						onSuccess: t => e(M(t)),
 						options: t,
 						subreddit: H.data.subreddit
-					}) : e(v(V.error))), G && V.ok && A({
+					}) : e(v(K.error))), G && K.ok && A({
 						getState: s,
 						onFailure: t => e(l(t)),
 						onSuccess: t => e(u(t)),
 						postId: f,
 						post: H.data.post
-					}), K && V.ok && y({
+					}), V && K.ok && y({
 						getState: s,
 						onFailure: t => e(x(t)),
 						onSuccess: t => e(k(t)),
@@ -957,7 +957,7 @@
 			s.d(e, "b", (function() {
 				return U
 			})), s.d(e, "a", (function() {
-				return K
+				return V
 			}));
 			var n = s("./node_modules/polished/dist/polished.es.js"),
 				r = s("./node_modules/react/index.js"),
@@ -1029,7 +1029,7 @@
 			}! function(t) {
 				t[t.ExtraLarge = 0] = "ExtraLarge", t[t.Large = 1] = "Large", t[t.Medium = 2] = "Medium", t[t.Small = 3] = "Small", t[t.ExtraSmall = 4] = "ExtraSmall"
 			}(U || (U = {}));
-			const K = ({
+			const V = ({
 					size: t,
 					titleColor: e,
 					titleType: s,
@@ -1070,7 +1070,7 @@
 						type: s
 					}, r) : r)
 				},
-				V = ({
+				K = ({
 					className: t,
 					disableVisited: e,
 					titleColor: s,
@@ -1106,7 +1106,7 @@
 						subreddit: s
 					} = t, {
 						isSponsored: n
-					} = e, r = Object(w.a)(), i = Object(B.a)(_.Sb) === _.Wb.Enabled;
+					} = e, r = Object(w.a)(), i = Object(B.a)(_.Rb) === _.Vb.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return o.a.createElement(H, {
 						nowrap: t.nowrap
 					}, o.a.createElement(Q, t));
@@ -1131,7 +1131,7 @@
 								postId: t.id,
 								source: s
 							}, o.a.createElement(Q, e)) : o.a.createElement(Q, e)
-						})(e, t) : o.a.createElement(V, {
+						})(e, t) : o.a.createElement(K, {
 							className: t.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: t.disableVisited,
@@ -1152,7 +1152,7 @@
 						return t.length >= 250 ? t.slice(0, 250 - "...".length) + "..." : t
 					})(r));
 					const i = t.isCommentsPage ? F.a.PostComments : F.a.PostItem;
-					return o.a.createElement(K, {
+					return o.a.createElement(V, {
 						className: t.titleClassName,
 						nowrap: t.nowrap,
 						redditStyle: t.redditStyle || t.isCommentsPage,
@@ -1410,9 +1410,9 @@
 			})), s.d(e, "t", (function() {
 				return q
 			})), s.d(e, "H", (function() {
-				return K
-			})), s.d(e, "d", (function() {
 				return V
+			})), s.d(e, "d", (function() {
+				return K
 			})), s.d(e, "c", (function() {
 				return H
 			})), s.d(e, "b", (function() {
@@ -1661,7 +1661,7 @@
 						noun: "footer_subreddit"
 					})
 				},
-				K = (t, e) => s => {
+				V = (t, e) => s => {
 					const n = Object(u.j)(e);
 					return {
 						...p(s, t, e),
@@ -1671,7 +1671,7 @@
 						noun: "title_subreddit"
 					}
 				},
-				V = (t, e) => s => ({
+				K = (t, e) => s => ({
 					...p(s, t, e),
 					action: "status",
 					actionInfo: _.actionInfo(s, {
@@ -2331,4 +2331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.b6053fe38009dac45793.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.70ff0a05c24abb3d1981.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.be47973fd41d5e5d5c9b.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.14e6b0e7c037b91ce582.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/reddit/components/PennyPurchaseModal/index.m.less": function(e, s, t) {
@@ -80,7 +80,7 @@
 					...t,
 					onCompletePurchaseClick: t => s.dispatchCompletePurchase(t, e.isIframed)
 				}));
-			class I extends r.a.Component {
+			class f extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
 						const {
@@ -99,7 +99,7 @@
 						loadSavedCards: s,
 						sendEvent: t
 					} = this.props;
-					s(), Object(u.d)(u.a.GoldPayment, !1), t(Object(P.i)(e))
+					s(), Object(u.d)(u.a.GoldPayment, !1), t(Object(P.h)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -107,7 +107,7 @@
 							gildThingId: e,
 							sendEvent: s
 						} = this.props;
-						s(Object(P.g)(e))
+						s(Object(P.f)(e))
 					}
 				}
 				render() {
@@ -152,7 +152,7 @@
 					}))
 				}
 			}
-			const N = Object(d.a)(I);
+			const I = Object(d.a)(f);
 			s.default = _(Object(h.c)(class extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -174,7 +174,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return r.a.createElement(N, T({}, this.props, {
+					return r.a.createElement(I, T({}, this.props, {
 						className: Object(l.a)(this.props.className, k.a.pennyPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.be47973fd41d5e5d5c9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.14e6b0e7c037b91ce582.js.map

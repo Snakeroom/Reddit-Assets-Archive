@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.2310d9739b3a3e6ffae6.js
-// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.936a6591e0e8f69f9af4.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -102,15 +102,15 @@
 				f = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.Id)(n.variant)) return !1
+						if (n && Object(p.Hd)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
 			var g = t("./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less"),
 				N = t.n(g);
 
-			function I() {
-				return (I = Object.assign || function(e) {
+			function w() {
+				return (w = Object.assign || function(e) {
 					for (var n = 1; n < arguments.length; n++) {
 						var t = arguments[n];
 						for (var s in t) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s])
@@ -118,7 +118,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = o.a.memo(({
+			const I = o.a.memo(({
 					announcement: e,
 					className: n,
 					isActive: t,
@@ -149,9 +149,9 @@
 					...s
 				}) => {
 					const a = e.url.split("reddit.com");
-					return a.length > 1 ? o.a.createElement(r.a, I({
+					return a.length > 1 ? o.a.createElement(r.a, w({
 						to: a[1]
-					}, s), n) : o.a.createElement("a", I({
+					}, s), n) : o.a.createElement("a", w({
 						href: e.url
 					}, s), n)
 				});
@@ -189,7 +189,7 @@
 				});
 				const {
 					onCarouselNavigate: g,
-					isTransitionComplete: I
+					isTransitionComplete: w
 				} = (({
 					activeIndex: e,
 					visibleAnnouncements: n,
@@ -284,13 +284,13 @@
 					className: N.a.AnnouncementsWrapper
 				}, m ? o.a.createElement("div", {
 					className: N.a.LoadingIndicator
-				}) : t.map((e, n) => o.a.createElement(w, {
+				}) : t.map((e, n) => o.a.createElement(I, {
 					announcement: e,
 					className: Object(i.a)(N.a.Announcement, {
 						[N.a.isActive]: n === p,
 						[N.a.prev]: t.length > 1 && 0 === p && n + 1 === t.length || n === p - 1,
 						[N.a.next]: t.length > 1 && p + 1 === t.length && 0 === n || n === p + 1,
-						[N.a.isTransitionComplete]: I
+						[N.a.isTransitionComplete]: w
 					}),
 					isActive: n === p,
 					key: e.id,
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.2310d9739b3a3e6ffae6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.936a6591e0e8f69f9af4.js.map

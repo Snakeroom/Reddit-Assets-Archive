@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.ea2d4b5c03a07e851854.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9d7ca0897afa8a9dd24d.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -886,7 +886,7 @@
 						gildThingId: e,
 						sendEvent: t
 					} = this.props;
-					Object(h.d)(h.a.GoldPayment, !1), t(Object(O.i)(e))
+					Object(h.d)(h.a.GoldPayment, !1), t(Object(O.h)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -894,7 +894,7 @@
 							gildThingId: e,
 							sendEvent: t
 						} = this.props;
-						t(Object(O.g)(e))
+						t(Object(O.f)(e))
 					}
 				}
 				render() {
@@ -1156,4 +1156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.ea2d4b5c03a07e851854.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9d7ca0897afa8a9dd24d.js.map

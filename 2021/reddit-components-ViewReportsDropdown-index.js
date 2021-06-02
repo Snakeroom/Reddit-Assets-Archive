@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.e773de67232c1cc96b1f.js
-// Retrieved at 6/2/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.3d561deeaa30793d3dfc.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -29,7 +29,7 @@
 			})), s.d(t, "f", (function() {
 				return V
 			})), s.d(t, "o", (function() {
-				return H
+				return $
 			})), s.d(t, "p", (function() {
 				return q
 			})), s.d(t, "d", (function() {
@@ -175,7 +175,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, L = Object(b.a)(O.b, g.a.upvoted), z = Object(b.a)(O.b, g.a.downvoted), M = Object(c.a)(I.j), V = Object(c.a)(I.i), K = Object(c.a)(I.e), $ = Object(c.a)(I.f), H = (Object(c.a)(I.c), Object(c.a)(I.d), ({
+				}, L = Object(b.a)(O.b, g.a.upvoted), z = Object(b.a)(O.b, g.a.downvoted), M = Object(c.a)(I.j), V = Object(c.a)(I.i), K = Object(c.a)(I.e), H = Object(c.a)(I.f), $ = (Object(c.a)(I.c), Object(c.a)(I.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -200,7 +200,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s($({
+					s(H({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -1180,7 +1180,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: e
 				});
-				return !(!s || Object(n.Id)(s))
+				return !(!s || Object(n.Hd)(s))
 			}
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, s) {
@@ -1195,14 +1195,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Ec
-					}) === n.Oc.Enabled
+						experimentName: n.Dc
+					}) === n.Nc.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Dc
-					}) === n.Nc.Enabled
+						experimentName: n.Cc
+					}) === n.Mc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1231,4 +1231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.e773de67232c1cc96b1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.3d561deeaa30793d3dfc.js.map

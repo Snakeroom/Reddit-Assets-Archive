@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c1453eec1992c6229e23.js
-// Retrieved at 6/2/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.91f922a59f781bac6e28.js
+// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2442,7 +2442,7 @@
 						postId: Ee,
 						postIds: Ce,
 						onceInViewport: Se
-					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Ne = Te ? void 0 : m, Ie = Object(d.a)(le), Me = ue && Ie, Ae = Object(a.a)(le), Be = Object(c.a)(le), Fe = Object(W.c)(ve), Le = !!ve.media && ve.media.type === x.o.RTJSON, Re = Pe && Le, De = n ? n - U.a : void 0, We = !(E && G || oe), Ve = (e => e === te.Ic.OnlyTitles)(ge) && !Object(se.a)(ve), He = (e => e === te.Ic.MediumHeight)(ge) && !Object(se.a)(ve), Ue = (e => {
+					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Ne = Te ? void 0 : m, Ie = Object(d.a)(le), Me = ue && Ie, Ae = Object(a.a)(le), Be = Object(c.a)(le), Fe = Object(W.c)(ve), Le = !!ve.media && ve.media.type === x.o.RTJSON, Re = Pe && Le, De = n ? n - U.a : void 0, We = !(E && G || oe), Ve = (e => e === te.Hc.OnlyTitles)(ge) && !Object(se.a)(ve), He = (e => e === te.Hc.MediumHeight)(ge) && !Object(se.a)(ve), Ue = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2457,7 +2457,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), ze = !!ae && !Object(te.Id)(ae), qe = (!k || ze) && !ve.isSponsored, Ke = Object(C.t)(ve, w), {
+					})(e), ze = !!ae && !Object(te.Hd)(ae), qe = (!k || ze) && !ve.isSponsored, Ke = Object(C.t)(ve, w), {
 						source: Ge
 					} = Ke, Xe = Object(o.useRef)(null), Je = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3717,7 +3717,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: e
 				});
-				return !(!n || Object(o.Id)(n))
+				return !(!n || Object(o.Hd)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, n) {
@@ -3732,9 +3732,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.pb
 				});
-				return !(!t || Object(o.Id)(t))
+				return !(!t || Object(o.Hd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c1453eec1992c6229e23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.91f922a59f781bac6e28.js.map
