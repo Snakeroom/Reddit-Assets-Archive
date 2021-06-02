@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5a62ace093ba64e8a1c3.js
-// Retrieved at 6/2/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0b767d0dc6866d2e1175.js
+// Retrieved at 6/2/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -626,7 +626,7 @@
 					InboxTooltip: "31d6cfe0d16ae931b73c",
 					ModQueue: "31d6cfe0d16ae931b73c",
 					ModToMemberShareModal: "68ddc44e57494faf4b78",
-					ModerationDropdowns: "836f74fd0b8f7952f962",
+					ModerationDropdowns: "270a82fff1d5cac18224",
 					MultiredditAddSubredditModal: "f8a59c29eb57b7ae828b",
 					MultiredditCreateModal: "642d82da059ca1681597",
 					MultiredditEditModal: "fc3df74def2afbe1ec50",
@@ -1221,7 +1221,7 @@
 						InboxTooltip: "b6fbc231433f18a7afc0",
 						ModQueue: "5877b2189f41084a87cd",
 						ModToMemberShareModal: "87913c90bfec2618cfb0",
-						ModerationDropdowns: "ff70a0c31dbeb3f4056e",
+						ModerationDropdowns: "fece7c06a902edd8f5c5",
 						MultiredditAddSubredditModal: "833e6b0eeb378d790b0d",
 						MultiredditCreateModal: "bea55f2137c70003c0f9",
 						MultiredditEditModal: "96e823132f0a997c7d64",
@@ -1253,7 +1253,7 @@
 						"translations/es_MX-json": "be385b59b68404b4d9c7",
 						"translations/fr_FR-json": "7cf7be498fb3024e2bce",
 						"translations/it_IT-json": "503478bae843dcfde155",
-						"translations/pseudo_ext-json": "7e945fd16c6775a0429b",
+						"translations/pseudo_ext-json": "c35c07a7bc3993482993",
 						"translations/pseudo_long-json": "5e1c635a1b4c4dcf4183",
 						"translations/pseudo_short-json": "bee15f2a80d9debcf235",
 						"translations/pt_BR-json": "8ea0d429a424149a18b5",
@@ -1495,4 +1495,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5a62ace093ba64e8a1c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0b767d0dc6866d2e1175.js.map
