@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.697086c28751a7a9fde6.js
-// Retrieved at 6/2/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.ad9b74a1add513bb0569.js
+// Retrieved at 6/2/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5064,7 +5064,7 @@
 					id: s,
 					expiresAt: 0
 				}))
-			})), $e = p.a.wrapped(d.a, "ThumbLink", Ke.a), et = ({
+			})), $e = e => e.media && e.media.type === L.o.EMBED && e.media.provider === L.v.Imgur && e.media.height > 700, et = p.a.wrapped(d.a, "ThumbLink", Ke.a), tt = ({
 				post: e,
 				templatePlaceholderImage: t,
 				shouldShowFollowButton: s,
@@ -5075,7 +5075,7 @@
 					post: e,
 					forceShowNSFW: !0,
 					templatePlaceholderImage: t
-				}) : i.a.createElement($e, {
+				}) : i.a.createElement(et, {
 					to: Object(y.b)(e.permalink)
 				}, i.a.createElement(G.a, {
 					post: e,
@@ -5092,7 +5092,7 @@
 						hk: "26UP9Z"
 					})
 				}), r)
-			}, tt = ({
+			}, st = ({
 				post: e,
 				isExpanded: t,
 				scrollerItemRef: s
@@ -5173,7 +5173,7 @@
 					}),
 					Be = J.removedByCategory === T.g.AuthorDeleted,
 					De = o && (o.displayText === J.author || o.username === J.author),
-					Ve = !Be && (De || w || !(J.removedByCategory && J.media && (Object(L.J)(J.media) || Object(L.H)(J.media)))),
+					Ve = !Be && !$e(J) && (De || w || !(J.removedByCategory && J.media && (Object(L.J)(J.media) || Object(L.H)(J.media)))),
 					Ue = Object(l.t)(J, O),
 					{
 						source: He
@@ -5184,7 +5184,7 @@
 					Ze = Object(r.useCallback)(() => {
 						B(I ? T.f.UNFOLLOWED : T.f.FOLLOWED), Oe(I ? Object(k.h)(J.id) : Object(k.b)(J.id))
 					}, [B, Oe, I, J.id]),
-					$e = i.a.createElement(Ge, {
+					et = i.a.createElement(Ge, {
 						post: J,
 						size: he.b.ExtraLarge,
 						showCategoryTag: N,
@@ -5192,19 +5192,19 @@
 						disableVisited: !0,
 						isCommentsPage: !0
 					}),
-					st = i.a.createElement(We, {
+					ot = i.a.createElement(We, {
 						post: J,
 						showViewCount: Se
 					}),
-					ot = (e => {
+					nt = (e => {
 						const {
 							crosspost: t,
 							isCommentPermalink: s,
 							post: o
 						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(F.i)(e));
-						return s ? ye.g.Classic : n ? ye.g.Large : t ? ye.g.Large : o.media ? ye.g.Large : ye.g.Medium
+						return s ? ye.g.Classic : n ? ye.g.Large : t ? ye.g.Large : o.media && !$e(o) ? ye.g.Large : ye.g.Medium
 					})(e);
-				if (ot === ye.g.Classic) {
+				if (nt === ye.g.Classic) {
 					const t = Object(b.a)(J);
 					Me = i.a.createElement("div", {
 						"data-test-id": ve.e
@@ -5236,7 +5236,7 @@
 						shouldShowFollowButton: Xe && !t,
 						isFollowed: I,
 						onFollowPostClick: Ze
-					}), $e, i.a.createElement(X.a, {
+					}), et, i.a.createElement(X.a, {
 						className: E ? Ke.a.leftPadding : void 0,
 						post: J,
 						showCategoryTag: e.isInCategoriesExperiment && E,
@@ -5251,7 +5251,7 @@
 						isExpanded: !!_,
 						post: J,
 						useMediaIcons: !1
-					}), tt(e), ie && i.a.createElement(q.a, {
+					}), st(e), ie && i.a.createElement(q.a, {
 						awardsPlaqueStyle: !0,
 						isPostDetail: !0,
 						thing: J,
@@ -5271,14 +5271,14 @@
 						useFlatlistBreakpoints: Fe,
 						isActionBarAnimationEnabled: y,
 						isForceSelected: !N && y
-					}))), t && i.a.createElement(et, {
+					}))), t && i.a.createElement(tt, {
 						post: J,
 						templatePlaceholderImage: c && c.postPlaceholderImage,
 						shouldShowFollowButton: Xe,
 						isFollowed: I,
 						onFollowPostClick: Ze
 					})))
-				} else if (ot === ye.g.Medium) {
+				} else if (nt === ye.g.Medium) {
 					const t = Object(b.a)(J);
 					Me = i.a.createElement("div", {
 						"data-test-id": ve.e
@@ -5310,7 +5310,7 @@
 						shouldShowFollowButton: Xe && !t,
 						isFollowed: I,
 						onFollowPostClick: Ze
-					}), $e, J.source && i.a.createElement(fe.a, {
+					}), et, J.source && i.a.createElement(fe.a, {
 						post: J,
 						isCommentsPage: E
 					}), Object(L.L)(J) && Je, i.a.createElement(X.a, {
@@ -5360,8 +5360,8 @@
 						useFlatlistBreakpoints: Fe,
 						isActionBarAnimationEnabled: y,
 						isForceSelected: !N && y
-					}), st))
-				} else ot === ye.g.Large && (Me = i.a.createElement("div", {
+					}), ot))
+				} else nt === ye.g.Large && (Me = i.a.createElement("div", {
 					"data-test-id": ve.e
 				}, i.a.createElement(ue.a, {
 					model: J,
@@ -5392,7 +5392,7 @@
 					shouldShowFollowButton: Xe,
 					isFollowed: I,
 					onFollowPostClick: Ze
-				}), $e, ((e, t, s, o) => e.source && !t && (s || o))(J, s, N, E) && i.a.createElement(fe.a, {
+				}), et, ((e, t, s, o) => e.source && !t && (s || o))(J, s, N, E) && i.a.createElement(fe.a, {
 					post: J,
 					isCommentsPage: E
 				})), i.a.createElement(X.a, {
@@ -5452,15 +5452,15 @@
 					useFlatlistBreakpoints: Fe,
 					isActionBarAnimationEnabled: y,
 					isForceSelected: !N && y
-				}), st)));
-				const nt = Object(r.useCallback)((e, t) => Object(k.g)(e, t), []);
+				}), ot)));
+				const rt = Object(r.useCallback)((e, t) => Object(k.g)(e, t), []);
 				return i.a.createElement(ne.a, {
 					className: Object(m.a)(t, Ke.a.postContainer, {
 						[Ke.a.hasEventMeta]: Object(ke.a)(J)
 					}),
 					isOverlay: N,
 					post: J,
-					eventFactory: N ? x.b : nt,
+					eventFactory: N ? x.b : rt,
 					onClick: Ee
 				}, i.a.createElement(Q.a, {
 					post: J
@@ -8159,4 +8159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.697086c28751a7a9fde6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.ad9b74a1add513bb0569.js.map
