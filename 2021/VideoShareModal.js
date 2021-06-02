@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.9d4c43382c58bdb9b102.js
-// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.7ab9fb63402d336677f2.js
+// Retrieved at 6/2/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -1735,7 +1735,22 @@
 				c = Object(a.a)(o, r.n, (e, t) => t && !e.isIntroFinished),
 				i = Object(a.a)(o, e => e.lastChatActivityUtcTs),
 				l = e => !!e && e + n.a > Date.now()
+		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			}));
+			var a = s("./src/reddit/constants/experiments.ts"),
+				n = s("./src/reddit/helpers/chooseVariant/index.ts");
+			const r = e => t => {
+				const s = Object(n.c)(t, {
+					experimentEligibilitySelector: n.a,
+					experimentName: e
+				});
+				return !(!s || Object(a.Id)(s))
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.9d4c43382c58bdb9b102.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.7ab9fb63402d336677f2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c321ae6a51837a22acf7.js
-// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b4a7e3ac558be3ac7548.js
+// Retrieved at 6/2/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -21724,6 +21724,21 @@
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
 			const n = Object(a.a)(s.xb)
 		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return n
+			}));
+			var s = r("./src/reddit/constants/experiments.ts"),
+				a = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const n = e => t => {
+				const r = Object(a.c)(t, {
+					experimentEligibilitySelector: a.a,
+					experimentName: e
+				});
+				return !(!r || Object(s.Id)(r))
+			}
+		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -21961,4 +21976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c321ae6a51837a22acf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b4a7e3ac558be3ac7548.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.c03c082628d869928e31.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.30f861994a8ea31b618a.js
+// Retrieved at 6/2/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -85,9 +85,9 @@
 						if ("none" != e.getComputedStyle(s).display) {
 							for (var n, o, r, l, c, h, m, p, u = a(s), b = d(s), g = !1; !g;) {
 								var f = null,
-									C = 1 == b.nodeType ? e.getComputedStyle(b) : {};
-								if ("none" == C.display) return;
-								if (b == this.root || b == t ? (g = !0, f = i) : b != t.body && b != t.documentElement && "visible" != C.overflow && (f = a(b)), f && (n = f, o = u, r = void 0, l = void 0, c = void 0, h = void 0, m = void 0, p = void 0, r = Math.max(n.top, o.top), l = Math.min(n.bottom, o.bottom), c = Math.max(n.left, o.left), h = Math.min(n.right, o.right), p = l - r, !(u = (m = h - c) >= 0 && p >= 0 && {
+									v = 1 == b.nodeType ? e.getComputedStyle(b) : {};
+								if ("none" == v.display) return;
+								if (b == this.root || b == t ? (g = !0, f = i) : b != t.body && b != t.documentElement && "visible" != v.overflow && (f = a(b)), f && (n = f, o = u, r = void 0, l = void 0, c = void 0, h = void 0, m = void 0, p = void 0, r = Math.max(n.top, o.top), l = Math.min(n.bottom, o.bottom), c = Math.max(n.left, o.left), h = Math.min(n.right, o.right), p = l - r, !(u = (m = h - c) >= 0 && p >= 0 && {
 										top: r,
 										bottom: l,
 										left: c,
@@ -310,11 +310,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = Object(c.t)(),
-				v = Object(r.c)({
+			const v = Object(c.t)(),
+				C = Object(r.c)({
 					isFakeSubreddit: c.x
 				}),
-				y = Object(o.b)(v),
+				y = Object(o.b)(C),
 				w = e => {
 					const t = {
 						interactive: !1,
@@ -332,7 +332,7 @@
 					className: g.a.emptyScore,
 					key: "s"
 				}));
-			t.b = C(y(e => n.a.createElement("div", {
+			t.b = v(y(e => n.a.createElement("div", {
 				className: Object(a.a)(e.className, u.a.classicPostStyles, u.a.classicAndCompactPlaceholderStyles)
 			}, n.a.createElement(l.b, null, n.a.createElement(x, null)), n.a.createElement("div", {
 				className: g.a.mainBody
@@ -426,11 +426,11 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = Object(c.t)(),
-				v = Object(r.c)({
+			const v = Object(c.t)(),
+				C = Object(r.c)({
 					isFakeSubreddit: c.x
 				}),
-				y = Object(o.b)(v),
+				y = Object(o.b)(C),
 				w = e => {
 					const t = {
 						interactive: !1,
@@ -457,7 +457,7 @@
 				}), n.a.createElement("div", {
 					className: Object(a.a)(g.a.ellipsis, Object(h.b)(e))
 				}));
-			t.a = C(y(e => n.a.createElement("div", {
+			t.a = v(y(e => n.a.createElement("div", {
 				className: Object(a.a)(e.className, u.a.compactPostStyles, u.a.classicAndCompactPlaceholderStyles)
 			}, n.a.createElement("div", {
 				className: g.a.wrapper
@@ -571,8 +571,8 @@
 				b = s("./src/reddit/components/CompactPost/Placeholder/index.tsx"),
 				g = s("./src/lib/classNames/index.ts"),
 				f = s("./src/reddit/components/PostLeftRail/index.tsx"),
-				C = s("./src/reddit/components/VerticalVotes/votes.tsx"),
-				v = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				v = s("./src/reddit/components/VerticalVotes/votes.tsx"),
+				C = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				y = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				w = s("./src/reddit/models/Vote/index.ts"),
 				x = s("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -589,9 +589,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = Object(v.t)(),
+			const S = Object(C.t)(),
 				O = Object(c.c)({
-					isFakeSubreddit: v.x
+					isFakeSubreddit: C.x
 				}),
 				E = Object(d.b)(O),
 				k = e => {
@@ -601,12 +601,12 @@
 					};
 					return l.a.createElement("div", {
 						className: R.a.emptyVerticalVotes
-					}, l.a.createElement(C.d, _({
+					}, l.a.createElement(v.d, _({
 						key: "u"
 					}, t)), l.a.createElement("div", {
 						className: R.a.emptyScore,
 						key: "s"
-					}), l.a.createElement(C.c, _({
+					}), l.a.createElement(v.c, _({
 						key: "d"
 					}, t)))
 				},
@@ -781,8 +781,8 @@
 				b = s("./node_modules/lodash/throttle.js"),
 				g = s.n(b);
 			const f = 500,
-				C = 1e3,
-				v = 40;
+				v = 1e3,
+				C = 40;
 			var y;
 			! function(e) {
 				e.Max10 = "0-10", e.Max20 = "11-20", e.Max30 = "21-30", e.Max40 = "31-40", e.Max50 = "41-50", e.Max60 = "51-60"
@@ -808,9 +808,9 @@
 				const i = [];
 				let n, o, r;
 				const a = () => {
-						if (i.length < v) return;
+						if (i.length < C) return;
 						const e = w(),
-							s = Math.min(C, i.length),
+							s = Math.min(v, i.length),
 							n = i.splice(0, s);
 						i.splice(0, i.length);
 						const o = n[s - 1] - n[0];
@@ -1618,8 +1618,8 @@
 				b = s("./src/reddit/constants/componentSizes.ts"),
 				g = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				f = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				C = s.n(f),
-				v = s("./src/lib/lessComponent.tsx");
+				v = s.n(f),
+				C = s("./src/lib/lessComponent.tsx");
 
 			function y() {
 				return (y = Object.assign || function(e) {
@@ -1633,8 +1633,8 @@
 			const w = l.e[1] + 24,
 				x = b.f + 8 + 152 + 16,
 				I = x + w + 8,
-				P = v.a.div("Container", C.a),
-				R = v.a.wrapped(({
+				P = C.a.div("Container", v.a),
+				R = C.a.wrapped(({
 					className: e,
 					...t
 				}) => a.a.createElement(p, y({
@@ -1642,7 +1642,7 @@
 					style: {
 						top: "calc(100vh - 8px)"
 					}
-				}, t)), "BackToTop", C.a),
+				}, t)), "BackToTop", v.a),
 				_ = ({
 					children: e,
 					className: t,
@@ -1650,8 +1650,8 @@
 					isSticky: n
 				}) => a.a.createElement("div", {
 					className: Object(i.a)(t, {
-						[C.a.StickyStyles]: n && !s,
-						[C.a.StickyStylesFakeOverlay]: !!s
+						[v.a.StickyStyles]: n && !s,
+						[v.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
 			class S extends r.Component {
@@ -1740,17 +1740,17 @@
 				b = s("./src/reddit/selectors/experiments/topPosts.ts"),
 				g = s("./src/reddit/selectors/structuredStyles.ts"),
 				f = s("./src/reddit/selectors/user.ts"),
-				C = s("./src/reddit/models/Theme/index.ts"),
-				v = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const y = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(v.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				w = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(v.a)(e).widgetColors.sidebarWidgetHeaderColor,
+				v = s("./src/reddit/models/Theme/index.ts"),
+				C = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
+			const y = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(C.a)(e).widgetColors.sidebarWidgetBackgroundColor,
+				w = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(C.a)(e).widgetColors.sidebarWidgetHeaderColor,
 				x = e => {
 					const t = y(e);
-					return Object(C.f)(t)
+					return Object(v.f)(t)
 				},
 				I = e => {
 					const t = w(e);
-					return Object(C.f)(t)
+					return Object(v.f)(t)
 				};
 			var P = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
 				R = s.n(P);
@@ -2049,7 +2049,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2069,7 +2069,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2089,7 +2089,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"), s.e("reddit-components-LargePost")]).then(s.bind(null, "./src/reddit/components/LargePost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"), s.e("reddit-components-LargePost")]).then(s.bind(null, "./src/reddit/components/LargePost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2109,7 +2109,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"), s.e("reddit-components-MediumPost")]).then(s.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"), s.e("reddit-components-MediumPost")]).then(s.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2130,8 +2130,8 @@
 				},
 				g = e => o.a.createElement(c, e),
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net"],
-				C = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
-				v = e => !e.media || e.media.type === d.o.EMBED && !(d.b.has(e.media.provider) || C(e)),
+				v = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
+				C = e => !e.media || e.media.type === d.o.EMBED && !(d.b.has(e.media.provider) || v(e)),
 				y = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
@@ -2155,7 +2155,7 @@
 				if (i.isBlank) return g;
 				const n = !i.media && !!i.source && Object(r.a)(i.source.url),
 					o = e && n;
-				s !== l.g.Large || !v(i) || o || i.predictionTournament || (s = l.g.Medium);
+				s !== l.g.Large || !C(i) || o || i.predictionTournament || (s = l.g.Medium);
 				const d = b[s];
 				return void 0 === d ? (Object(a.a)(void 0, `Could not find component for layout ${s}.`), g) : t && i.isSponsored && s === l.g.Large ? u : d
 			}
@@ -2296,4 +2296,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.c03c082628d869928e31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.30f861994a8ea31b618a.js.map
