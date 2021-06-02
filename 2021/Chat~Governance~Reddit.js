@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4c2355a8bbded26364ad.js
-// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5d42b0d3cd2ffe331edf.js
+// Retrieved at 6/2/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1900,11 +1900,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("135549"),
+				buildNumber: r("135550"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1622666815"),
+				})("1622668032"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4500,14 +4500,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc4f1e6e79cbff9863ffdb24d8f582c9e6024d443-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca0b8cfd2ba8df05dea13709a2ea09430d6254f5c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c4f1e6e79cbff9863ffdb24d8f582c9e6024d443-production",
+						release: "a0b8cfd2ba8df05dea13709a2ea09430d6254f5c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5001,7 +5001,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c4f1e6e79cbff9863ffdb24d8f582c9e6024d443-production",
+						releaseClient: "a0b8cfd2ba8df05dea13709a2ea09430d6254f5c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -21490,60 +21490,57 @@
 		"./src/reddit/featureFlags/subredditPoints.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return _
+				return l
 			})), i.d(t, "c", (function() {
-				return m
+				return u
 			})), i.d(t, "d", (function() {
-				return h
+				return _
 			})), i.d(t, "e", (function() {
-				return f
+				return p
 			})), i.d(t, "f", (function() {
-				return b
+				return m
 			})), i.d(t, "g", (function() {
-				return g
+				return h
 			})), i.d(t, "h", (function() {
-				return y
+				return f
 			})), i.d(t, "i", (function() {
-				return w
+				return b
 			})), i.d(t, "j", (function() {
-				return v
+				return g
 			})), i.d(t, "k", (function() {
-				return E
+				return y
 			})), i.d(t, "l", (function() {
-				return S
+				return w
 			})), i.d(t, "m", (function() {
-				return T
+				return v
 			})), i.d(t, "a", (function() {
-				return O
+				return E
 			})), i.d(t, "n", (function() {
-				return I
+				return S
 			})), i.d(t, "o", (function() {
-				return j
+				return T
 			})), i.d(t, "p", (function() {
-				return F
+				return O
 			})), i.d(t, "r", (function() {
-				return R
+				return I
 			})), i.d(t, "q", (function() {
-				return x
+				return j
 			})), i.d(t, "s", (function() {
-				return C
+				return F
 			})), i.d(t, "t", (function() {
-				return k
+				return R
 			})), i.d(t, "u", (function() {
-				return N
+				return x
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/reddit/selectors/platform.ts");
 			const r = new Set(["cryptocurrencytest", "gigapoints", "pointsnitebr"]),
 				s = new Set([...r, "cryptocurrency", "fortnitebr"]),
 				o = new Set(["daonuts", "ethtrader"]),
-				d = new Set(["stellartest"]),
-				a = new Set([...o, ...d]),
-				l = new Set([...s, "badgesroyaletest", "funkygoose"]),
-				c = new Set([...s, ...o, ...d, "funkygoose", "mountainbiking", "stellar"]),
-				u = new Set([...c, "project_kairos"]),
-				_ = new Set([...s, ...o, ...d, "badgesroyaletest", "funkygoose"]),
-				p = (...e) => t => {
+				d = new Set([...s, "badgesroyaletest", "funkygoose"]),
+				a = new Set([...s, ...o, "funkygoose"]),
+				l = new Set([...s, ...o, "badgesroyaletest", "funkygoose"]),
+				c = (...e) => t => {
 					const i = Object(n.d)(t);
 					if (i) {
 						for (const t of e)
@@ -21552,26 +21549,26 @@
 					}
 					return !1
 				},
-				m = p(_),
-				h = p(r),
-				f = p(s),
-				b = p(l, new Set([...s, "badgesroyaletest", "funkygoose"])),
-				g = p(a),
-				y = p(l),
-				w = p(new Set([...s, ...o, ...d, "badgesroyaletest", "funkygoose"])),
-				v = p(u),
-				E = p(u, new Set([...o, "funkygoose", "stellar"])),
-				S = p(new Set([...s, ...o, ...d, "badgesroyaletest", "funkygoose", "stellar"])),
-				T = p(u),
-				O = s,
-				I = p(O),
-				j = p(u),
-				F = p(c),
-				R = p(_),
-				x = p(_, new Set(["badgesroyaletest", "fortnitebr", "funkygoose"])),
-				C = p(u, new Set(["funkygoose"])),
-				k = p(c, new Set([...s, ...o, ...d, "funkygoose", "mountainbiking", "stellar"])),
-				N = p(o)
+				u = c(l),
+				_ = c(r),
+				p = c(s),
+				m = c(d, new Set([...s, "badgesroyaletest", "funkygoose"])),
+				h = c(o),
+				f = c(d),
+				b = c(new Set([...s, ...o, "badgesroyaletest", "funkygoose"])),
+				g = c(a),
+				y = c(a, new Set([...o, "funkygoose"])),
+				w = c(new Set([...s, ...o, "badgesroyaletest", "funkygoose"])),
+				v = c(a),
+				E = s,
+				S = c(E),
+				T = c(a),
+				O = c(a),
+				I = c(l),
+				j = c(l, new Set(["badgesroyaletest", "fortnitebr", "funkygoose"])),
+				F = c(a, new Set(["funkygoose"])),
+				R = c(a, new Set([...s, ...o, "funkygoose"])),
+				x = c(o)
 		},
 		"./src/reddit/featureFlags/useProductionStreamingApi.ts": function(e, t, i) {
 			"use strict";
@@ -46815,4 +46812,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4c2355a8bbded26364ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5d42b0d3cd2ffe331edf.js.map
