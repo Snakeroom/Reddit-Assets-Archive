@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.4cef901390055e49568f.js
-// Retrieved at 6/2/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.03861ad22148fdc865ff.js
+// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -404,47 +404,47 @@
 				P = n("./src/reddit/components/Governance/Token/index.tsx"),
 				M = n("./src/reddit/controls/Button/index.tsx"),
 				S = n("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Controls/index.m.less"),
-				U = n.n(S);
+				A = n.n(S);
 			const {
-				fbt: B
+				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const A = Object(d.c)({
+			const B = Object(d.c)({
 				wallet: b.d
 			});
-			var D = Object(o.b)(A, e => ({
+			var D = Object(o.b)(B, e => ({
 					onClose: () => e(Object(T.f)())
 				}))((function(e) {
 					return i.a.createElement("div", {
-						className: Object(w.a)(U.a.container, e.className)
+						className: Object(w.a)(A.a.container, e.className)
 					}, i.a.createElement("div", {
-						className: U.a.wallet
-					}, e.wallet && i.a.createElement(s.Fragment, null, B._("You have", null, {
+						className: A.a.wallet
+					}, e.wallet && i.a.createElement(s.Fragment, null, U._("You have", null, {
 						hk: "2IixC6"
 					}), i.a.createElement(P.a, {
 						grey: !0,
-						className: U.a.token,
+						className: A.a.token,
 						subredditId: e.subredditId
 					}), Object(k.a)(e.wallet.amount))), i.a.createElement("div", {
-						className: U.a.buttons
+						className: A.a.buttons
 					}, i.a.createElement(M.l, {
-						className: U.a.button,
+						className: A.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onClose
-					}, B._("Cancel", null, {
+					}, U._("Cancel", null, {
 						hk: "2TSLl5"
 					})), i.a.createElement(M.i, {
-						className: Object(w.a)(U.a.button, U.a.save),
+						className: Object(w.a)(A.a.button, A.a.save),
 						disabled: !e.submitEnabled,
 						tabIndex: e.tabIndex ? e.tabIndex + 1 : void 0,
 						onClick: e.onSubmit
-					}, B._("save", null, {
+					}, U._("save", null, {
 						hk: "3joVpg"
 					}))))
 				})),
 				H = n("./src/lib/currency/cleanNumber/index.ts"),
-				L = n("./src/reddit/controls/FormFields/index.tsx"),
-				R = n("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Price/index.m.less"),
-				F = n.n(R);
+				R = n("./src/reddit/controls/FormFields/index.tsx"),
+				L = n("./src/reddit/components/Governance/HarbergerTax/BannerManageModal/Price/index.m.less"),
+				F = n.n(L);
 			var G = function(e) {
 					return i.a.createElement("div", {
 						className: Object(w.a)(F.a.container, e.className)
@@ -458,7 +458,7 @@
 						hk: "1FBx6x"
 					})), i.a.createElement("div", {
 						className: F.a.tax
-					}, i.a.createElement(L.c, {
+					}, i.a.createElement(R.c, {
 						redditStyle: !0,
 						className: F.a.input,
 						label: g.fbt._("banner price", null, {
@@ -1265,24 +1265,26 @@
 				return o
 			})), n.d(t, "h", (function() {
 				return d
-			})), n.d(t, "k", (function() {
-				return c
 			})), n.d(t, "l", (function() {
+				return c
+			})), n.d(t, "k", (function() {
 				return l
-			})), n.d(t, "g", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return p
-			})), n.d(t, "c", (function() {
-				return b
-			})), n.d(t, "e", (function() {
-				return g
-			})), n.d(t, "f", (function() {
-				return h
 			})), n.d(t, "m", (function() {
+				return u
+			})), n.d(t, "g", (function() {
+				return m
+			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "d", (function() {
+				return b
+			})), n.d(t, "c", (function() {
+				return g
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "f", (function() {
 				return x
+			})), n.d(t, "n", (function() {
+				return v
 			}));
 			var a, r = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
@@ -1306,7 +1308,9 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum";
 					case a.Rinkeby:
 					case a.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby"
+						return "https://meta-api.reddit.com/ethereum/rinkeby";
+					case a.ArbitrumRinkeby:
+						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -1318,11 +1322,17 @@
 						return "homestead";
 					case a.Rinkeby:
 					case a.EthTraderRinkeby:
-						return "rinkeby"
+						return "rinkeby";
+					case a.ArbitrumRinkeby:
+						return 29199749760514
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function c(e, t, n) {
+
+			function c(e) {
+				return e === a.ArbitrumRinkeby ? 5e3 : 3e4
+			}
+			async function l(e, t, n) {
 				return Object(s.a)(e, {
 					method: "post",
 					endpoint: `${r.a.metaUrl}/crypto/${t}/challenges`,
@@ -1332,47 +1342,47 @@
 					}
 				})
 			}
-			async function l(e, t, n) {
+			async function u(e, t, n) {
 				return await Object(s.a)(e, {
 					method: "post",
 					endpoint: `${r.a.metaUrl}/crypto/${t}/registrations`,
 					data: n
 				})
 			}
-			async function u(e, t, n) {
+			async function m(e, t, n) {
 				return await Object(s.a)(e, {
 					method: "delete",
 					endpoint: `${r.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(a || (a = {}));
-			const m = (e, t, n) => ({
+			const p = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
 					burnMemo: n
 				}),
-				p = e => ({
+				b = e => ({
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				b = e => ({
+				g = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				g = e => ({
+				h = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				h = (e, t, n, a) => ({
+				x = (e, t, n, a) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: a
 				});
-			async function x(e, t) {
+			async function v(e, t) {
 				return await Object(s.a)(e, {
 					method: "put",
 					endpoint: `${r.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -1653,7 +1663,7 @@
 			const l = (e, t) => {
 				var n;
 				const a = null === (n = d(e, t)) || void 0 === n ? void 0 : n.blockchainProvider;
-				return a === s.a.Ethereum || a === s.a.Rinkeby || a === s.a.EthTraderEthereum || a === s.a.EthTraderRinkeby
+				return a === s.a.Ethereum || a === s.a.Rinkeby || a === s.a.EthTraderEthereum || a === s.a.EthTraderRinkeby || a === s.a.ArbitrumRinkeby
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1710,4 +1720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.4cef901390055e49568f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.03861ad22148fdc865ff.js.map

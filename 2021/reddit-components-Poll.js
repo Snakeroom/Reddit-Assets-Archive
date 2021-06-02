@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.622e9b825fcb15a9606e.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.afbf1be7c87e793efaef.js
+// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -282,8 +282,8 @@
 				T = Object(r.a)(v.s),
 				S = Object(r.a)(v.t),
 				R = Object(r.a)(v.u),
-				w = Object(r.a)(v.v),
-				A = Object(r.a)(v.w),
+				A = Object(r.a)(v.v),
+				w = Object(r.a)(v.w),
 				k = Object(r.a)(v.x),
 				L = (e, t) => async (n, s, {
 					apiContext: r,
@@ -364,9 +364,9 @@
 				}, D = e => async (t, n, {
 					apiContext: s
 				}) => {
-					t(w());
+					t(A());
 					const r = await Object(b.a)(s(), e);
-					r.ok ? t(A(r.body)) : t(R({
+					r.ok ? t(w(r.body)) : t(R({
 						error: r.error
 					}))
 				}
@@ -621,8 +621,8 @@
 				}))
 			}
 			var R = n("./src/reddit/actions/governance/index.ts"),
-				w = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				A = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				A = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				k = n("./src/reddit/helpers/trackers/post.ts"),
 				L = n("./src/reddit/selectors/crypto/points.ts"),
 				V = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
@@ -729,7 +729,7 @@
 			const Y = Object(l.c)({
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var J = Object(a.b)(Y)(Object(w.c)(z)),
+			var J = Object(a.b)(Y)(Object(A.c)(z)),
 				Q = n("./src/reddit/components/Poll/PollBody/index.m.less"),
 				X = n.n(Q);
 			class ee extends i.a.Component {
@@ -787,11 +787,11 @@
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
 			});
-			var ne = Object(A.t)({
-					isCommentsPage: A.w
+			var ne = Object(w.t)({
+					isCommentsPage: w.w
 				})(Object(a.b)(te, (e, t) => ({
 					onVoteSelection: n => e(Object(R.d)(t.pollId, n.id))
-				}))(Object(w.c)(ee))),
+				}))(Object(A.c)(ee))),
 				se = n("./src/reddit/selectors/gov.ts"),
 				re = n("./src/reddit/icons/svgs/DynamicThreshold/index.tsx"),
 				oe = n("./src/reddit/components/Poll/ResultsSelector/DecisionThreshold/index.m.less"),
@@ -1073,24 +1073,26 @@
 				return a
 			})), n.d(t, "h", (function() {
 				return l
-			})), n.d(t, "k", (function() {
-				return c
 			})), n.d(t, "l", (function() {
+				return c
+			})), n.d(t, "k", (function() {
 				return d
-			})), n.d(t, "g", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return p
-			})), n.d(t, "c", (function() {
-				return b
-			})), n.d(t, "e", (function() {
-				return _
-			})), n.d(t, "f", (function() {
-				return f
 			})), n.d(t, "m", (function() {
+				return u
+			})), n.d(t, "g", (function() {
+				return m
+			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "d", (function() {
+				return b
+			})), n.d(t, "c", (function() {
+				return _
+			})), n.d(t, "e", (function() {
+				return f
+			})), n.d(t, "f", (function() {
 				return E
+			})), n.d(t, "n", (function() {
+				return v
 			}));
 			var s, r = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -1114,7 +1116,9 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum";
 					case s.Rinkeby:
 					case s.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby"
+						return "https://meta-api.reddit.com/ethereum/rinkeby";
+					case s.ArbitrumRinkeby:
+						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -1126,11 +1130,17 @@
 						return "homestead";
 					case s.Rinkeby:
 					case s.EthTraderRinkeby:
-						return "rinkeby"
+						return "rinkeby";
+					case s.ArbitrumRinkeby:
+						return 29199749760514
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function c(e, t, n) {
+
+			function c(e) {
+				return e === s.ArbitrumRinkeby ? 5e3 : 3e4
+			}
+			async function d(e, t, n) {
 				return Object(o.a)(e, {
 					method: "post",
 					endpoint: `${r.a.metaUrl}/crypto/${t}/challenges`,
@@ -1140,47 +1150,47 @@
 					}
 				})
 			}
-			async function d(e, t, n) {
+			async function u(e, t, n) {
 				return await Object(o.a)(e, {
 					method: "post",
 					endpoint: `${r.a.metaUrl}/crypto/${t}/registrations`,
 					data: n
 				})
 			}
-			async function u(e, t, n) {
+			async function m(e, t, n) {
 				return await Object(o.a)(e, {
 					method: "delete",
 					endpoint: `${r.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(s || (s = {}));
-			const m = (e, t, n) => ({
+			const p = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
 					burnMemo: n
 				}),
-				p = e => ({
+				b = e => ({
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				b = e => ({
+				_ = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				_ = e => ({
+				f = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				f = (e, t, n, s) => ({
+				E = (e, t, n, s) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: s
 				});
-			async function E(e, t) {
+			async function v(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: `${r.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -1486,7 +1496,7 @@
 			const d = (e, t) => {
 				var n;
 				const s = null === (n = l(e, t)) || void 0 === n ? void 0 : n.blockchainProvider;
-				return s === o.a.Ethereum || s === o.a.Rinkeby || s === o.a.EthTraderEthereum || s === o.a.EthTraderRinkeby
+				return s === o.a.Ethereum || s === o.a.Rinkeby || s === o.a.EthTraderEthereum || s === o.a.EthTraderRinkeby || s === o.a.ArbitrumRinkeby
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1543,4 +1553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.622e9b825fcb15a9606e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.afbf1be7c87e793efaef.js.map

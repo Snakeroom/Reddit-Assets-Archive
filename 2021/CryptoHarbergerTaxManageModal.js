@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.42b1fb126b6edfe32e1f.js
-// Retrieved at 6/2/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.08c609402553b68efc90.js
+// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -278,8 +278,8 @@
 				C = n.n(O);
 			const {
 				fbt: _
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = "bannerBackgroundImage";
-			class k extends o.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = "bannerBackgroundImage";
+			class E extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						imageUploadInProgress: !1
@@ -292,14 +292,14 @@
 							imageUploadInProgress: !0
 						});
 						const r = await Object(j.g)(e.file) || e.file.type,
-							a = await Object(I.a)(t(), n, e.file.name, E, r);
+							a = await Object(I.a)(t(), n, e.file.name, k, r);
 						if (!a.ok) return void this.props.onImageUploadFailed();
 						const s = a.body.s3UploadLease,
 							o = await Object(h.a)(e.file, s);
 						if (o.ok) {
 							const e = decodeURIComponent(o.body.PostResponse.Location);
 							this.props.onImageChange({
-								[E]: e
+								[k]: e
 							})
 						} else this.props.onImageUploadFailed();
 						this.setState({
@@ -307,7 +307,7 @@
 						})
 					}, this.handleBannerImageDelete = () => {
 						this.props.onImageChange({
-							[E]: ""
+							[k]: ""
 						})
 					}
 				}
@@ -317,7 +317,7 @@
 						image: t,
 						tabIndex: n,
 						tiled: r
-					} = this.props, a = t ? t[E] : void 0;
+					} = this.props, a = t ? t[k] : void 0;
 					return o.a.createElement("div", {
 						className: e
 					}, o.a.createElement("div", {
@@ -370,22 +370,22 @@
 			}
 			var N = Object(i.b)(null, e => ({
 					onImageUploadFailed: () => e(Object(l.a)())
-				}))(Object(v.b)(k)),
+				}))(Object(v.b)(E)),
 				w = n("./src/lib/classNames/index.ts"),
 				T = n("./src/lib/prettyPrintNumber/index.ts"),
 				P = n("./src/reddit/actions/modal.ts"),
 				U = n("./src/reddit/components/Governance/Token/index.tsx"),
 				B = n("./src/reddit/helpers/governance/tokens.ts"),
-				S = n("./src/reddit/selectors/crypto/points.ts"),
-				D = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Controls/index.m.less"),
-				A = n.n(D);
+				A = n("./src/reddit/selectors/crypto/points.ts"),
+				S = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Controls/index.m.less"),
+				D = n.n(S);
 			const {
 				fbt: M
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const H = Object(d.c)({
 				pointsDetails: (e, {
 					subredditId: t
-				}) => Object(S.b)(e, t),
+				}) => Object(A.b)(e, t),
 				wallet: g.d
 			});
 			var L = Object(i.b)(H, e => ({
@@ -393,25 +393,25 @@
 				}))((function(e) {
 					var t;
 					return o.a.createElement("div", {
-						className: Object(w.a)(A.a.container, e.className)
+						className: Object(w.a)(D.a.container, e.className)
 					}, o.a.createElement("div", {
-						className: A.a.wallet
+						className: D.a.wallet
 					}, e.wallet && o.a.createElement(s.Fragment, null, M._("You have", null, {
 						hk: "TlDwo"
 					}), o.a.createElement(U.a, {
 						grey: !0,
-						className: A.a.token,
+						className: D.a.token,
 						subredditId: e.subredditId
 					}), Object(T.a)(Object(B.b)(e.wallet.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))), o.a.createElement("div", {
-						className: A.a.buttons
+						className: D.a.buttons
 					}, o.a.createElement(p.l, {
-						className: A.a.button,
+						className: D.a.button,
 						tabIndex: e.tabIndex,
 						onClick: e.onClose
 					}, M._("Cancel", null, {
 						hk: "2TSLl5"
 					})), o.a.createElement(p.i, {
-						className: Object(w.a)(A.a.button, A.a.save),
+						className: Object(w.a)(D.a.button, D.a.save),
 						disabled: !e.submitEnabled,
 						tabIndex: e.tabIndex ? e.tabIndex + 1 : void 0,
 						onClick: e.onSubmit
@@ -419,8 +419,8 @@
 						hk: "nbpNh"
 					}))))
 				})),
-				F = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/index.m.less"),
-				R = n.n(F);
+				R = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/index.m.less"),
+				F = n.n(R);
 			const {
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = {
@@ -437,7 +437,7 @@
 						this.props.subreddit && this.props.onUpdateBanner({
 							subredditId: this.props.subreddit.id,
 							content: {
-								bannerBackgroundImage: this.state.image ? this.state.image[E] : "",
+								bannerBackgroundImage: this.state.image ? this.state.image[k] : "",
 								bannerBackgroundImagePosition: this.state.tiled ? "tiled" : "cover"
 							}
 						})
@@ -445,7 +445,7 @@
 				}
 				componentDidUpdate(e) {
 					if (!a()(e.mainHeaderAsset, this.props.mainHeaderAsset)) {
-						const t = q(e) === q(this.props) ? this.state.image ? this.state.image[E] : e.savedStyles.bannerBackgroundImage : void 0;
+						const t = q(e) === q(this.props) ? this.state.image ? this.state.image[k] : e.savedStyles.bannerBackgroundImage : void 0;
 						this.setState($(this.props, t)), this.originalState = $(this.props, t)
 					}
 				}
@@ -454,19 +454,19 @@
 						subreddit: e
 					} = this.props;
 					return e ? o.a.createElement("div", {
-						className: R.a.container
+						className: F.a.container
 					}, o.a.createElement(u.a, {
-						className: R.a.title
+						className: F.a.title
 					}, G._("Manage Banner", null, {
 						hk: "NMRRK"
 					})), o.a.createElement("div", {
-						className: R.a.manage
+						className: F.a.manage
 					}, o.a.createElement("div", {
-						className: R.a.manageTitle
+						className: F.a.manageTitle
 					}, G._("Manage the banner's price, tax, and balance", null, {
 						hk: "39e58h"
 					})), o.a.createElement("div", {
-						className: R.a.manageDescription
+						className: F.a.manageDescription
 					}, G._("Change the banner price and top up your balance in the Aragorn DApp", null, {
 						hk: "4f5PNI"
 					})), o.a.createElement(p.m, {
@@ -475,7 +475,7 @@
 					}, G._("Open in Aragon", null, {
 						hk: "UMPAO"
 					}))), o.a.createElement(N, {
-						className: R.a.banner,
+						className: F.a.banner,
 						image: this.state.image,
 						subredditId: e.id,
 						subredditName: e.name,
@@ -484,7 +484,7 @@
 						onImageChange: this.handleImageChange,
 						onTilingChange: this.handleTilingChange
 					}), o.a.createElement(L, {
-						className: R.a.controls,
+						className: F.a.controls,
 						subredditId: e.id,
 						submitEnabled: !a()(this.state, this.originalState),
 						tabIndex: 5,
@@ -503,18 +503,18 @@
 				} = e;
 				return n ? {
 					image: t ? {
-						[E]: t
+						[k]: t
 					} : n.content && n.content.bannerBackgroundImage ? {
-						[E]: n.content.bannerBackgroundImage
+						[k]: n.content.bannerBackgroundImage
 					} : {
-						[E]: ""
+						[k]: ""
 					},
 					tiled: !!n.content && "tiled" === n.content.bannerBackgroundImagePosition
 				} : {
 					image: t ? {
-						[E]: t
+						[k]: t
 					} : {
-						[E]: ""
+						[k]: ""
 					},
 					tiled: !1
 				}
@@ -864,24 +864,26 @@
 				return i
 			})), n.d(t, "h", (function() {
 				return d
-			})), n.d(t, "k", (function() {
-				return c
 			})), n.d(t, "l", (function() {
+				return c
+			})), n.d(t, "k", (function() {
 				return l
-			})), n.d(t, "g", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return p
-			})), n.d(t, "c", (function() {
-				return b
-			})), n.d(t, "e", (function() {
-				return g
-			})), n.d(t, "f", (function() {
-				return h
 			})), n.d(t, "m", (function() {
+				return u
+			})), n.d(t, "g", (function() {
+				return m
+			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "d", (function() {
+				return b
+			})), n.d(t, "c", (function() {
+				return g
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "f", (function() {
 				return x
+			})), n.d(t, "n", (function() {
+				return v
 			}));
 			var r, a = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
@@ -905,7 +907,9 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum";
 					case r.Rinkeby:
 					case r.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby"
+						return "https://meta-api.reddit.com/ethereum/rinkeby";
+					case r.ArbitrumRinkeby:
+						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -917,11 +921,17 @@
 						return "homestead";
 					case r.Rinkeby:
 					case r.EthTraderRinkeby:
-						return "rinkeby"
+						return "rinkeby";
+					case r.ArbitrumRinkeby:
+						return 29199749760514
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function c(e, t, n) {
+
+			function c(e) {
+				return e === r.ArbitrumRinkeby ? 5e3 : 3e4
+			}
+			async function l(e, t, n) {
 				return Object(s.a)(e, {
 					method: "post",
 					endpoint: `${a.a.metaUrl}/crypto/${t}/challenges`,
@@ -931,47 +941,47 @@
 					}
 				})
 			}
-			async function l(e, t, n) {
+			async function u(e, t, n) {
 				return await Object(s.a)(e, {
 					method: "post",
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations`,
 					data: n
 				})
 			}
-			async function u(e, t, n) {
+			async function m(e, t, n) {
 				return await Object(s.a)(e, {
 					method: "delete",
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(r || (r = {}));
-			const m = (e, t, n) => ({
+			const p = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
 					burnMemo: n
 				}),
-				p = e => ({
+				b = e => ({
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				b = e => ({
+				g = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				g = e => ({
+				h = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				h = (e, t, n, r) => ({
+				x = (e, t, n, r) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: r
 				});
-			async function x(e, t) {
+			async function v(e, t) {
 				return await Object(s.a)(e, {
 					method: "put",
 					endpoint: `${a.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -1236,7 +1246,7 @@
 			const l = (e, t) => {
 				var n;
 				const r = null === (n = d(e, t)) || void 0 === n ? void 0 : n.blockchainProvider;
-				return r === s.a.Ethereum || r === s.a.Rinkeby || r === s.a.EthTraderEthereum || r === s.a.EthTraderRinkeby
+				return r === s.a.Ethereum || r === s.a.Rinkeby || r === s.a.EthTraderEthereum || r === s.a.EthTraderRinkeby || r === s.a.ArbitrumRinkeby
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -1293,4 +1303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.42b1fb126b6edfe32e1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.08c609402553b68efc90.js.map

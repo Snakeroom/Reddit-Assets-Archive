@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.1989bf7c4908204fd26f.js
-// Retrieved at 6/1/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.af5bd1f7a732a4bfc919.js
+// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -2199,24 +2199,26 @@
 				return o
 			})), r.d(t, "h", (function() {
 				return d
-			})), r.d(t, "k", (function() {
-				return c
 			})), r.d(t, "l", (function() {
+				return c
+			})), r.d(t, "k", (function() {
 				return l
-			})), r.d(t, "g", (function() {
-				return u
-			})), r.d(t, "b", (function() {
-				return m
-			})), r.d(t, "d", (function() {
-				return p
-			})), r.d(t, "c", (function() {
-				return f
-			})), r.d(t, "e", (function() {
-				return b
-			})), r.d(t, "f", (function() {
-				return h
 			})), r.d(t, "m", (function() {
+				return u
+			})), r.d(t, "g", (function() {
+				return m
+			})), r.d(t, "b", (function() {
+				return p
+			})), r.d(t, "d", (function() {
+				return f
+			})), r.d(t, "c", (function() {
+				return b
+			})), r.d(t, "e", (function() {
+				return h
+			})), r.d(t, "f", (function() {
 				return g
+			})), r.d(t, "n", (function() {
+				return y
 			}));
 			var n, i = r("./src/config.ts"),
 				a = r("./src/reddit/endpoints/governance/requester.ts");
@@ -2240,7 +2242,9 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum";
 					case n.Rinkeby:
 					case n.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby"
+						return "https://meta-api.reddit.com/ethereum/rinkeby";
+					case n.ArbitrumRinkeby:
+						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -2252,11 +2256,17 @@
 						return "homestead";
 					case n.Rinkeby:
 					case n.EthTraderRinkeby:
-						return "rinkeby"
+						return "rinkeby";
+					case n.ArbitrumRinkeby:
+						return 29199749760514
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function c(e, t, r) {
+
+			function c(e) {
+				return e === n.ArbitrumRinkeby ? 5e3 : 3e4
+			}
+			async function l(e, t, r) {
 				return Object(a.a)(e, {
 					method: "post",
 					endpoint: `${i.a.metaUrl}/crypto/${t}/challenges`,
@@ -2266,47 +2276,47 @@
 					}
 				})
 			}
-			async function l(e, t, r) {
+			async function u(e, t, r) {
 				return await Object(a.a)(e, {
 					method: "post",
 					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations`,
 					data: r
 				})
 			}
-			async function u(e, t, r) {
+			async function m(e, t, r) {
 				return await Object(a.a)(e, {
 					method: "delete",
 					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(n || (n = {}));
-			const m = (e, t, r) => ({
+			const p = (e, t, r) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
 					burnMemo: r
 				}),
-				p = e => ({
+				f = e => ({
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				f = e => ({
+				b = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				b = e => ({
+				h = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				h = (e, t, r, n) => ({
+				g = (e, t, r, n) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: r,
 					amount: n
 				});
-			async function g(e, t) {
+			async function y(e, t) {
 				return await Object(a.a)(e, {
 					method: "put",
 					endpoint: `${i.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -3173,4 +3183,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.1989bf7c4908204fd26f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.af5bd1f7a732a4bfc919.js.map

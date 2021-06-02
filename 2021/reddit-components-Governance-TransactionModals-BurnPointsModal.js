@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.5242c8fba8c5e5ba81a4.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.81bcf2d3530131e68ae1.js
+// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, n) {
@@ -596,7 +596,7 @@
 								Date.now() + Math.max(n - (Date.now() - r), 0) < i ? setTimeout(u, n) : d()
 							}
 						};
-					setTimeout(u, n)
+					u()
 				})
 			}
 			n.d(t, "a", (function() {
@@ -1645,24 +1645,26 @@
 				return c
 			})), n.d(t, "h", (function() {
 				return o
-			})), n.d(t, "k", (function() {
-				return i
 			})), n.d(t, "l", (function() {
+				return i
+			})), n.d(t, "k", (function() {
 				return d
-			})), n.d(t, "g", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return h
-			})), n.d(t, "c", (function() {
-				return p
-			})), n.d(t, "e", (function() {
-				return f
-			})), n.d(t, "f", (function() {
-				return v
 			})), n.d(t, "m", (function() {
+				return u
+			})), n.d(t, "g", (function() {
+				return m
+			})), n.d(t, "b", (function() {
+				return h
+			})), n.d(t, "d", (function() {
+				return p
+			})), n.d(t, "c", (function() {
+				return f
+			})), n.d(t, "e", (function() {
+				return v
+			})), n.d(t, "f", (function() {
 				return b
+			})), n.d(t, "n", (function() {
+				return E
 			}));
 			var r, a = n("./src/config.ts"),
 				l = n("./src/reddit/endpoints/governance/requester.ts");
@@ -1686,7 +1688,9 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum";
 					case r.Rinkeby:
 					case r.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby"
+						return "https://meta-api.reddit.com/ethereum/rinkeby";
+					case r.ArbitrumRinkeby:
+						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -1698,11 +1702,17 @@
 						return "homestead";
 					case r.Rinkeby:
 					case r.EthTraderRinkeby:
-						return "rinkeby"
+						return "rinkeby";
+					case r.ArbitrumRinkeby:
+						return 29199749760514
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function i(e, t, n) {
+
+			function i(e) {
+				return e === r.ArbitrumRinkeby ? 5e3 : 3e4
+			}
+			async function d(e, t, n) {
 				return Object(l.a)(e, {
 					method: "post",
 					endpoint: `${a.a.metaUrl}/crypto/${t}/challenges`,
@@ -1712,47 +1722,47 @@
 					}
 				})
 			}
-			async function d(e, t, n) {
+			async function u(e, t, n) {
 				return await Object(l.a)(e, {
 					method: "post",
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations`,
 					data: n
 				})
 			}
-			async function u(e, t, n) {
+			async function m(e, t, n) {
 				return await Object(l.a)(e, {
 					method: "delete",
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(r || (r = {}));
-			const m = (e, t, n) => ({
+			const h = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
 					burnMemo: n
 				}),
-				h = e => ({
+				p = e => ({
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				p = e => ({
+				f = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				f = e => ({
+				v = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				v = (e, t, n, r) => ({
+				b = (e, t, n, r) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: r
 				});
-			async function b(e, t) {
+			async function E(e, t) {
 				return await Object(l.a)(e, {
 					method: "put",
 					endpoint: `${a.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -2059,7 +2069,7 @@
 			const d = (e, t) => {
 				var n;
 				const r = null === (n = o(e, t)) || void 0 === n ? void 0 : n.blockchainProvider;
-				return r === l.a.Ethereum || r === l.a.Rinkeby || r === l.a.EthTraderEthereum || r === l.a.EthTraderRinkeby
+				return r === l.a.Ethereum || r === l.a.Rinkeby || r === l.a.EthTraderEthereum || r === l.a.EthTraderRinkeby || r === l.a.ArbitrumRinkeby
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2116,4 +2126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.5242c8fba8c5e5ba81a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.81bcf2d3530131e68ae1.js.map

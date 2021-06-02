@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.7b48997a31ff70c6e85b.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.6f0a5f54add5e1762970.js
+// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -142,7 +142,7 @@
 			})), n.d(t, "w", (function() {
 				return N
 			})), n.d(t, "x", (function() {
-				return j
+				return k
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				s = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -167,7 +167,7 @@
 				g = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				x = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				j = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				k = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
 			"use strict";
@@ -201,9 +201,9 @@
 			})), n.d(t, "d", (function() {
 				return M
 			})), n.d(t, "e", (function() {
-				return G
-			})), n.d(t, "h", (function() {
 				return R
+			})), n.d(t, "h", (function() {
+				return G
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -228,12 +228,12 @@
 				g = (Object(s.a)(E.f), Object(s.a)(E.g), Object(s.a)(E.h)),
 				x = Object(s.a)(E.i),
 				N = Object(s.a)(E.j),
-				j = Object(s.a)(E.k),
-				k = Object(s.a)(E.q),
+				k = Object(s.a)(E.k),
+				j = Object(s.a)(E.q),
 				w = Object(s.a)(E.r),
 				I = Object(s.a)(E.s),
-				P = Object(s.a)(E.t),
-				A = Object(s.a)(E.u),
+				A = Object(s.a)(E.t),
+				P = Object(s.a)(E.u),
 				T = Object(s.a)(E.v),
 				S = Object(s.a)(E.w),
 				L = Object(s.a)(E.x),
@@ -268,7 +268,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(j(i.body));
+						} else n(k(i.body));
 						const s = r();
 						if ((c = s.polls.models[e]) && Object(m.d)(c)) {
 							const {
@@ -280,7 +280,7 @@
 						pollId: e,
 						error: i.error || i.errors[0].message
 					})), Object(_.a)(n, i.error || i.errors[0].messsage)
-				}, G = (e, t) => async (n, s, {
+				}, R = (e, t) => async (n, s, {
 					apiContext: a
 				}) => {
 					var l;
@@ -302,7 +302,7 @@
 						...e,
 						contentId: u
 					});
-					m.ok ? (n(P({
+					m.ok ? (n(A({
 						...m.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
@@ -310,15 +310,15 @@
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(o.a)(e.amount)), r.fbt._param("tokenName", (null === (l = Object(C.b)(s(), e.subredditId)) || void 0 === l ? void 0 : l.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(i.f)())) : (n(k({
+					})), t && n(Object(i.f)())) : (n(j({
 						error: m.error
 					})), Object(_.a)(n, m.error))
-				}, R = e => async (t, n, {
+				}, G = e => async (t, n, {
 					apiContext: r
 				}) => {
 					t(T());
 					const s = await Object(p.a)(r(), e);
-					s.ok ? t(S(s.body)) : t(A({
+					s.ok ? t(S(s.body)) : t(P({
 						error: s.error
 					}))
 				}
@@ -442,26 +442,26 @@
 			var g = n("./src/reddit/selectors/crypto/claims.ts"),
 				x = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/higherOrderComponents/asTooltip.tsx"),
-				j = n("./src/lib/copyToClipboard/index.ts"),
-				k = n("./src/reddit/actions/governance/errorToast.ts"),
+				k = n("./src/lib/copyToClipboard/index.ts"),
+				j = n("./src/reddit/actions/governance/errorToast.ts"),
 				w = n("./src/reddit/actions/toaster.ts"),
 				I = n("./src/reddit/actions/tooltip.ts"),
-				P = n("./src/reddit/contexts/ApiContext.tsx"),
-				A = n("./src/reddit/controls/Dropdown/index.tsx"),
+				A = n("./src/reddit/contexts/ApiContext.tsx"),
+				P = n("./src/reddit/controls/Dropdown/index.tsx"),
 				T = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				S = n("./src/reddit/endpoints/governance/crypto.ts"),
 				L = n("./src/reddit/helpers/governance/ethereum.ts"),
 				M = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				G = n("./src/reddit/models/Toast/index.ts"),
-				R = n("./src/reddit/selectors/tooltip.ts"),
+				R = n("./src/reddit/models/Toast/index.ts"),
+				G = n("./src/reddit/selectors/tooltip.ts"),
 				D = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				U = n.n(D);
-			const B = Object(N.a)(A.a),
+			const B = Object(N.a)(P.a),
 				V = "BlockchainWalletInfo--SettingsMenu";
 			class W extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
-						Object(j.a)(this.props.publicAddress || "")
+						Object(k.a)(this.props.publicAddress || "")
 					}, this.onRemoveMyWallet = async () => {
 						const e = await Object(S.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
 						e.ok ? this.props.onWalletRemoved() : this.props.onGovernanceError(e.error)
@@ -543,7 +543,7 @@
 				}
 			}
 			const F = Object(u.c)({
-					dropdownIsOpen: Object(R.b)(V),
+					dropdownIsOpen: Object(G.b)(V),
 					isEthereumProvider: (e, {
 						subredditId: t
 					}) => Object(d.a)(e, t),
@@ -553,7 +553,7 @@
 				}),
 				q = Object(a.b)(F, (e, t) => ({
 					onGovernanceError: t => {
-						Object(k.a)(e, t)
+						Object(j.a)(e, t)
 					},
 					onOpenDropdown: () => e(Object(I.h)({
 						tooltipId: V
@@ -562,14 +562,14 @@
 						e(Object(f.h)({
 							subredditId: t.subredditId
 						})), e(Object(w.f)({
-							kind: G.b.SuccessCommunityGreen,
+							kind: R.b.SuccessCommunityGreen,
 							text: s.fbt._("Wallet removed successfully!", null, {
 								hk: "3LDwnT"
 							})
 						}))
 					}
 				}));
-			var H = Object(P.b)(q(W)),
+			var H = Object(A.b)(q(W)),
 				Z = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				$ = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				Y = n.n($);
@@ -797,14 +797,14 @@
 				ge = n("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
 				xe = n("./src/reddit/constants/modals.ts"),
 				Ne = n("./src/reddit/icons/svgs/Coin/index.tsx"),
-				je = n("./src/reddit/icons/svgs/Send/index.tsx"),
-				ke = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
-				we = n.n(ke);
+				ke = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				je = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
+				we = n.n(je);
 			const {
 				fbt: Ie
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Pe(e) {
+			function Ae(e) {
 				const t = Object(a.d)(),
 					{
 						coinConversionEnabled: n,
@@ -826,7 +826,7 @@
 					hk: "2Mco3v"
 				})), m && i.a.createElement(ge.a, {
 					onClick: () => t(Object(f.f)())
-				}, i.a.createElement(je.a, {
+				}, i.a.createElement(ke.a, {
 					className: we.a.icon
 				}), Ie._("Transfer", null, {
 					hk: "1MQW1Y"
@@ -838,8 +838,8 @@
 					hk: "lqkYM"
 				}))) : null
 			}
-			var Ae = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
-				Te = n.n(Ae);
+			var Pe = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
+				Te = n.n(Pe);
 			const Se = Object(u.c)({
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				pointsDetails: (e, {
@@ -867,7 +867,7 @@
 					pointsDetails: r,
 					subredditId: o,
 					wallet: a
-				}), i.a.createElement(Pe, {
+				}), i.a.createElement(Ae, {
 					className: Te.a.section,
 					subredditId: o
 				}), i.a.createElement(ye, {
@@ -1058,24 +1058,26 @@
 				return a
 			})), n.d(t, "h", (function() {
 				return c
-			})), n.d(t, "k", (function() {
-				return d
 			})), n.d(t, "l", (function() {
+				return d
+			})), n.d(t, "k", (function() {
 				return l
-			})), n.d(t, "g", (function() {
-				return u
-			})), n.d(t, "b", (function() {
-				return m
-			})), n.d(t, "d", (function() {
-				return b
-			})), n.d(t, "c", (function() {
-				return p
-			})), n.d(t, "e", (function() {
-				return f
-			})), n.d(t, "f", (function() {
-				return v
 			})), n.d(t, "m", (function() {
+				return u
+			})), n.d(t, "g", (function() {
+				return m
+			})), n.d(t, "b", (function() {
+				return b
+			})), n.d(t, "d", (function() {
+				return p
+			})), n.d(t, "c", (function() {
+				return f
+			})), n.d(t, "e", (function() {
+				return v
+			})), n.d(t, "f", (function() {
 				return C
+			})), n.d(t, "n", (function() {
+				return E
 			}));
 			var r, s = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -1099,7 +1101,9 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum";
 					case r.Rinkeby:
 					case r.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby"
+						return "https://meta-api.reddit.com/ethereum/rinkeby";
+					case r.ArbitrumRinkeby:
+						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -1111,11 +1115,17 @@
 						return "homestead";
 					case r.Rinkeby:
 					case r.EthTraderRinkeby:
-						return "rinkeby"
+						return "rinkeby";
+					case r.ArbitrumRinkeby:
+						return 29199749760514
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function d(e, t, n) {
+
+			function d(e) {
+				return e === r.ArbitrumRinkeby ? 5e3 : 3e4
+			}
+			async function l(e, t, n) {
 				return Object(o.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/challenges`,
@@ -1125,47 +1135,47 @@
 					}
 				})
 			}
-			async function l(e, t, n) {
+			async function u(e, t, n) {
 				return await Object(o.a)(e, {
 					method: "post",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations`,
 					data: n
 				})
 			}
-			async function u(e, t, n) {
+			async function m(e, t, n) {
 				return await Object(o.a)(e, {
 					method: "delete",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(r || (r = {}));
-			const m = (e, t, n) => ({
+			const b = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
 					burnMemo: n
 				}),
-				b = e => ({
+				p = e => ({
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				p = e => ({
+				f = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				f = e => ({
+				v = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				v = (e, t, n, r) => ({
+				C = (e, t, n, r) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: r
 				});
-			async function C(e, t) {
+			async function E(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -1698,7 +1708,7 @@
 			const l = (e, t) => {
 				var n;
 				const r = null === (n = c(e, t)) || void 0 === n ? void 0 : n.blockchainProvider;
-				return r === o.a.Ethereum || r === o.a.Rinkeby || r === o.a.EthTraderEthereum || r === o.a.EthTraderRinkeby
+				return r === o.a.Ethereum || r === o.a.Rinkeby || r === o.a.EthTraderEthereum || r === o.a.EthTraderRinkeby || r === o.a.ArbitrumRinkeby
 			}
 		},
 		"./src/reddit/selectors/crypto/wallet.ts": function(e, t, n) {
@@ -1784,4 +1794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.7b48997a31ff70c6e85b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.6f0a5f54add5e1762970.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.f370c87b52545bcdcb74.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.16d757155276aecf365c.js
+// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -1628,12 +1628,12 @@
 					})))) : null
 				}
 			}
-			const U = Object(o.c)({
+			const R = Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
 				}) => e.subreddits.models[t]
 			});
-			var R = Object(d.b)(U)(D),
+			var U = Object(d.b)(R)(D),
 				L = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/PrePurchase/SubscriberBenefits/index.m.less"),
 				F = r.n(L);
 			const G = 1e4,
@@ -1650,9 +1650,9 @@
 						switch (e) {
 							case "t5_3oeyf":
 							case "t5_socj8":
-								return [P, A, R];
+								return [P, A, U];
 							default:
-								return [P, R]
+								return [P, U]
 						}
 					}(e.subredditId)
 				}
@@ -1889,10 +1889,10 @@
 				M = r("./src/reddit/controls/Dropdown/Row.tsx"),
 				T = r("./src/reddit/components/Economics/SubredditPremium/SidebarCards/MembershipCard/DismissDropdown/index.m.less"),
 				D = r.n(T);
-			const U = Object(A.a)(B.a);
+			const R = Object(A.a)(B.a);
 
-			function R(e) {
-				return i.a.createElement(U, {
+			function U(e) {
+				return i.a.createElement(R, {
 					className: Object(c.a)(D.a.container, e.className),
 					isOpen: e.isOpen,
 					targetPosition: ["right", "bottom"],
@@ -2094,7 +2094,7 @@
 						id: pe,
 						className: me.a.menuIcon,
 						onClick: this.props.onOpenDropdown
-					}), i.a.createElement(R, {
+					}), i.a.createElement(U, {
 						isOpen: this.props.dropdownIsOpen,
 						tooltipId: pe,
 						onClickDismiss: this.props.onDismissBanner
@@ -2491,24 +2491,26 @@
 				return o
 			})), r.d(t, "h", (function() {
 				return a
-			})), r.d(t, "k", (function() {
-				return c
 			})), r.d(t, "l", (function() {
+				return c
+			})), r.d(t, "k", (function() {
 				return u
-			})), r.d(t, "g", (function() {
-				return l
-			})), r.d(t, "b", (function() {
-				return m
-			})), r.d(t, "d", (function() {
-				return p
-			})), r.d(t, "c", (function() {
-				return b
-			})), r.d(t, "e", (function() {
-				return h
-			})), r.d(t, "f", (function() {
-				return g
 			})), r.d(t, "m", (function() {
+				return l
+			})), r.d(t, "g", (function() {
+				return m
+			})), r.d(t, "b", (function() {
+				return p
+			})), r.d(t, "d", (function() {
+				return b
+			})), r.d(t, "c", (function() {
+				return h
+			})), r.d(t, "e", (function() {
+				return g
+			})), r.d(t, "f", (function() {
 				return f
+			})), r.d(t, "n", (function() {
+				return _
 			}));
 			var s, i = r("./src/config.ts"),
 				n = r("./src/reddit/endpoints/governance/requester.ts");
@@ -2532,7 +2534,9 @@
 						return "https://meta-api.reddit.com/ethereum/ethereum";
 					case s.Rinkeby:
 					case s.EthTraderRinkeby:
-						return "https://meta-api.reddit.com/ethereum/rinkeby"
+						return "https://meta-api.reddit.com/ethereum/rinkeby";
+					case s.ArbitrumRinkeby:
+						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -2544,11 +2548,17 @@
 						return "homestead";
 					case s.Rinkeby:
 					case s.EthTraderRinkeby:
-						return "rinkeby"
+						return "rinkeby";
+					case s.ArbitrumRinkeby:
+						return 29199749760514
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
-			async function c(e, t, r) {
+
+			function c(e) {
+				return e === s.ArbitrumRinkeby ? 5e3 : 3e4
+			}
+			async function u(e, t, r) {
 				return Object(n.a)(e, {
 					method: "post",
 					endpoint: `${i.a.metaUrl}/crypto/${t}/challenges`,
@@ -2558,47 +2568,47 @@
 					}
 				})
 			}
-			async function u(e, t, r) {
+			async function l(e, t, r) {
 				return await Object(n.a)(e, {
 					method: "post",
 					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations`,
 					data: r
 				})
 			}
-			async function l(e, t, r) {
+			async function m(e, t, r) {
 				return await Object(n.a)(e, {
 					method: "delete",
 					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
 			}(s || (s = {}));
-			const m = (e, t, r) => ({
+			const p = (e, t, r) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
 					burnMemo: r
 				}),
-				p = e => ({
+				b = e => ({
 					type: "convert-to-coins",
 					subredditId: e
 				}),
-				b = e => ({
+				h = e => ({
 					type: "claim",
 					subredditId: e
 				}),
-				h = e => ({
+				g = e => ({
 					type: "subscribe",
 					subredditId: e
 				}),
-				g = (e, t, r, s) => ({
+				f = (e, t, r, s) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: r,
 					amount: s
 				});
-			async function f(e, t) {
+			async function _(e, t) {
 				return await Object(n.a)(e, {
 					method: "put",
 					endpoint: `${i.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -3296,7 +3306,7 @@
 			const u = (e, t) => {
 				var r;
 				const s = null === (r = a(e, t)) || void 0 === r ? void 0 : r.blockchainProvider;
-				return s === n.a.Ethereum || s === n.a.Rinkeby || s === n.a.EthTraderEthereum || s === n.a.EthTraderRinkeby
+				return s === n.a.Ethereum || s === n.a.Rinkeby || s === n.a.EthTraderEthereum || s === n.a.EthTraderRinkeby || s === n.a.ArbitrumRinkeby
 			}
 		},
 		"./src/reddit/selectors/economics.ts": function(e, t, r) {
@@ -3338,9 +3348,9 @@
 			})), r.d(t, "x", (function() {
 				return D
 			})), r.d(t, "t", (function() {
-				return U
-			})), r.d(t, "u", (function() {
 				return R
+			})), r.d(t, "u", (function() {
+				return U
 			})), r.d(t, "b", (function() {
 				return L
 			})), r.d(t, "v", (function() {
@@ -3542,11 +3552,11 @@
 					const t = e.economics.paymentSystems;
 					return !!(t.status === l.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
-				U = (e, t) => {
+				R = (e, t) => {
 					const r = e.user.ownedBadges[t] || {};
 					return !!Object.keys(r).length
 				},
-				R = e => {
+				U = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === l.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
@@ -3614,4 +3624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.f370c87b52545bcdcb74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.16d757155276aecf365c.js.map
