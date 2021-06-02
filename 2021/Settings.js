@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.fa1dfa0da0d44c1921a9.js
-// Retrieved at 6/2/2021, 9:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d7fd430205c917a9752b.js
+// Retrieved at 6/2/2021, 2:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -8792,7 +8792,7 @@
 						onChange: e => _(e, "countryCode"),
 						selected: v,
 						subtext: o.fbt._("This is your primary location. {accountPrefs: language link}", [o.fbt._param("accountPrefs: language link", s.a.createElement(ze, {
-							href: "https://www.reddit.com/api/report_redirect?reason_code=COUNTRY_CODE"
+							href: "https://www.reddit.com/api/report_redirect?reason_code=COUNTRY_SETTING"
 						}, "Learn more"))], {
 							hk: "bLreC"
 						})
@@ -11869,4 +11869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fa1dfa0da0d44c1921a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d7fd430205c917a9752b.js.map
