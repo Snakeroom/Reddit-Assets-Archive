@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.62bafd2f2009fb9aef65.js
-// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.8c143681e4d37866f8e5.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -421,26 +421,24 @@
 				d = s("./src/lib/lessComponent.tsx"),
 				m = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
 				u = s("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
-				h = s("./src/reddit/constants/experiments.ts"),
-				p = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const v = Object(p.a)(h.Hb);
-			var b = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
-				f = s.n(b);
-			const C = d.a.div("Userpic", f.a);
+				h = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				p = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
+				v = s.n(p);
+			const b = d.a.div("Userpic", v.a);
 			t.a = o()(({
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(c.e)(v),
+				const s = Object(c.e)(h.p),
 					{
 						processingAvatarImageUrl: r
 					} = a.a;
 				if (s) return e ? i.a.createElement("img", {
-					className: f.a.NewUserpic,
+					className: v.a.NewUserpic,
 					src: e,
 					alt: "user icon"
 				}) : i.a.createElement(u.a, {
-					className: f.a.NewUserpic,
+					className: v.a.NewUserpic,
 					userId: t
 				});
 				const o = (e => e.replace(l.Db.Account + "_", ""))(t),
@@ -457,11 +455,11 @@
 							color: m[r]
 						}
 					})(o),
-					h = `${r}/avatar_default_${n}_${d}.png`;
-				return i.a.createElement(C, {
+					p = `${r}/avatar_default_${n}_${d}.png`;
+				return i.a.createElement(b, {
 					"data-testid": "old-default-icon",
 					style: {
-						backgroundImage: `url(${h})`,
+						backgroundImage: `url(${p})`,
 						backgroundColor: `#${d}`
 					}
 				})
@@ -1664,4 +1662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.62bafd2f2009fb9aef65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.8c143681e4d37866f8e5.js.map

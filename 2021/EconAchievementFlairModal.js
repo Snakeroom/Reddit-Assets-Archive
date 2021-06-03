@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.c6199a199ad41253aa54.js
-// Retrieved at 6/3/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.1beae235cee148ad4d67.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -49,8 +49,8 @@
 			"use strict";
 			a.r(t);
 			var s = a("./node_modules/react/index.js"),
-				c = a.n(s),
-				n = a("./node_modules/react-redux/es/index.js"),
+				n = a.n(s),
+				c = a("./node_modules/react-redux/es/index.js"),
 				i = a("./src/higherOrderComponents/asModal/index.tsx"),
 				r = a("./src/reddit/actions/modal.ts"),
 				l = a("./src/reddit/constants/modals.ts"),
@@ -74,7 +74,7 @@
 				achievement: e,
 				onSelect: t
 			}) => {
-				const a = Object(n.d)(),
+				const a = Object(c.d)(),
 					s = `achievement-locked-${e.type}`,
 					i = x._("To use this achievement, you gotta earn it!", null, {
 						hk: "2RYhLB"
@@ -85,7 +85,7 @@
 						}))
 					},
 					l = !e.isLocked && !e.isPreferred;
-				return c.a.createElement("div", {
+				return n.a.createElement("div", {
 					onMouseEnter: r,
 					onMouseLeave: r,
 					onClick: () => {
@@ -97,22 +97,22 @@
 						[j.a.achievementItemSelectable]: l
 					}),
 					"data-testid": `af-modal-achievement-flair-${e.type}`
-				}, c.a.createElement("div", {
+				}, n.a.createElement("div", {
 					className: j.a.achievementImgWrapper
-				}, c.a.createElement("img", {
+				}, n.a.createElement("img", {
 					id: s,
 					className: j.a.achievementImg,
 					src: e.icon.url,
 					alt: e.name
-				}), c.a.createElement("div", {
+				}), n.a.createElement("div", {
 					className: j.a.achievementImgLocked
-				}, c.a.createElement(f.a, {
+				}, n.a.createElement(f.a, {
 					name: "lock",
 					isFilled: !0,
 					className: j.a.achievementLock
-				}))), c.a.createElement("div", {
+				}))), n.a.createElement("div", {
 					className: j.a.achievementName
-				}, c.a.createElement("span", null, e.name)), e.isLocked && c.a.createElement(I.c, {
+				}, n.a.createElement("span", null, e.name)), e.isLocked && n.a.createElement(I.c, {
 					tooltipId: s,
 					text: i,
 					className: j.a.achievementTooltip
@@ -124,34 +124,34 @@
 				subredditId: t,
 				userId: a
 			}) => {
-				const s = Object(n.e)(e => Object(b.a)(e, {
+				const s = Object(c.e)(e => Object(b.a)(e, {
 						subredditId: t,
 						userId: a
 					})),
-					i = Object(n.e)(e => Object(p.n)(e, {
+					i = Object(c.e)(e => Object(p.n)(e, {
 						subredditId: t
 					})),
-					r = Object(n.d)(),
+					r = Object(c.d)(),
 					l = e => {
 						r(Object(v.c)(t, e))
 					};
-				return c.a.createElement("div", {
+				return n.a.createElement("div", {
 					className: e
-				}, c.a.createElement("h4", {
+				}, n.a.createElement("h4", {
 					className: j.a.achievementsHeading
 				}, N._("Achievements", null, {
 					hk: "1DnL4g"
-				})), c.a.createElement("p", {
+				})), n.a.createElement("p", {
 					className: j.a.achievementsDescription
 				}, N._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
 					hk: "4iPJwf"
-				})), c.a.createElement("div", {
+				})), n.a.createElement("div", {
 					className: j.a.achievementsList
-				}, s.map(e => c.a.createElement(A, {
+				}, s.map(e => n.a.createElement(A, {
 					achievement: e,
 					key: e.type,
 					onSelect: l
-				}))), !i && c.a.createElement(h.q, {
+				}))), !i && n.a.createElement(h.q, {
 					priority: h.b.Primary,
 					className: j.a.powerupButton,
 					isFullWidth: !0
@@ -163,29 +163,29 @@
 				k = a("./src/reddit/components/Econ/AchievementFlair/UserFlairPreview.tsx"),
 				U = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/Header.m.less"),
 				P = a.n(U);
-			const L = ({
+			const g = ({
 				className: e,
 				subredditId: t,
 				userId: a,
 				flairData: s,
-				onModalClose: n,
+				onModalClose: c,
 				username: i
-			}) => c.a.createElement("div", {
+			}) => n.a.createElement("div", {
 				className: Object(E.a)(P.a.container, e),
 				"data-testid": "achievement-flair-modal-header"
-			}, c.a.createElement(k.a, {
+			}, n.a.createElement(k.a, {
 				className: P.a.userFlairPreview,
 				subredditId: t,
 				userId: a,
 				username: i,
 				flairData: s
-			}), c.a.createElement(w.a, {
+			}), n.a.createElement(w.a, {
 				className: P.a.closeIcon,
-				onClick: n,
+				onClick: c,
 				"data-testid": "close-icon"
 			}));
-			var M = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/index.m.less"),
-				g = a.n(M),
+			var L = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/index.m.less"),
+				M = a.n(L),
 				y = a("./src/reddit/actions/authorFlair.ts"),
 				S = a("./src/reddit/components/Flair/index.tsx"),
 				C = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/UserFlair.m.less"),
@@ -197,17 +197,17 @@
 				subredditId: t,
 				flairData: a
 			}) => {
-				const s = Object(n.d)(),
-					i = Object(n.e)(m.j);
-				return i ? c.a.createElement("div", {
+				const s = Object(c.d)(),
+					i = Object(c.e)(m.j);
+				return i ? n.a.createElement("div", {
 					className: Object(E.a)(D.a.container, e)
-				}, c.a.createElement("div", {
+				}, n.a.createElement("div", {
 					className: D.a.header
-				}, c.a.createElement("h4", {
+				}, n.a.createElement("h4", {
 					className: D.a.flairText
 				}, H._("User flair", null, {
 					hk: "3ToqP0"
-				})), c.a.createElement(h.q, {
+				})), n.a.createElement(h.q, {
 					className: D.a.editButton,
 					priority: h.b.Plain,
 					onClick: () => {
@@ -218,28 +218,28 @@
 						}))
 					},
 					"data-testid": "edit-user-flair-button"
-				}, c.a.createElement(f.a, {
+				}, n.a.createElement(f.a, {
 					name: "edit"
-				}))), (null == a ? void 0 : a.applied) && a.displaySettings.isUserEnabled && c.a.createElement(S.b, {
+				}))), (null == a ? void 0 : a.applied) && a.displaySettings.isUserEnabled && n.a.createElement(S.b, {
 					className: D.a.flair,
 					flair: a.applied,
 					forceSmallEmojis: !0
 				})) : null
 			};
 			t.default = Object(i.a)(() => {
-				const e = Object(n.d)(),
-					t = Object(n.e)(m.j),
-					a = Object(n.e)(o.e),
-					s = Object(n.e)(e => a ? Object(u.b)(e, {
+				const e = Object(c.d)(),
+					t = Object(c.e)(m.j),
+					a = Object(c.e)(o.e),
+					s = Object(c.e)(e => a ? Object(u.b)(e, {
 						subredditId: a.id
 					}) : null),
-					i = Object(n.e)(e => a ? Object(u.c)(e, {
+					i = Object(c.e)(e => a ? Object(u.c)(e, {
 						subredditId: a.id
 					}) : null),
 					v = !!s && !!i;
-				return t && a ? c.a.createElement("div", {
-					className: g.a.container
-				}, c.a.createElement(L, {
+				return t && a ? n.a.createElement("div", {
+					className: M.a.container
+				}, n.a.createElement(g, {
 					subredditId: a.id,
 					userId: t.id,
 					username: Object(d.e)(t),
@@ -247,10 +247,10 @@
 					onModalClose: () => {
 						e(Object(r.g)(l.a.ACHIEVEMENT_FLAIR))
 					}
-				}), v && c.a.createElement(T, {
+				}), v && n.a.createElement(T, {
 					subredditId: a.id,
 					flairData: i
-				}), c.a.createElement(O, {
+				}), n.a.createElement(O, {
 					subredditId: a.id,
 					userId: t.id
 				})) : null
@@ -268,10 +268,10 @@
 				return m
 			}));
 			var s = a("./node_modules/react/index.js"),
-				c = a.n(s),
-				n = a("./node_modules/react-redux/es/index.js"),
+				n = a.n(s),
+				c = a("./node_modules/react-redux/es/index.js"),
 				i = a("./src/lib/classNames/index.ts"),
-				r = a("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				r = a("./src/reddit/selectors/experiments/econ/index.ts"),
 				l = a("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				d = a("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
 				o = a.n(d);
@@ -280,29 +280,29 @@
 					subredditId: t,
 					userId: a
 				}) => {
-					const s = Object(n.e)(e => Object(l.b)(e, {
+					const s = Object(c.e)(e => Object(l.b)(e, {
 							subredditId: t,
 							userId: a
 						})),
-						d = Object(n.e)(e => Object(l.c)(e, {
+						d = Object(c.e)(e => Object(l.c)(e, {
 							subredditId: t,
 							userId: a
 						})),
 						m = !!s || !!d;
-					if (!Object(n.e)(e => m && Object(r.a)(e))) return null;
+					if (!Object(c.e)(e => m && Object(r.g)(e))) return null;
 					const v = (null == d ? void 0 : d.type) === (null == s ? void 0 : s.type) ? null : d;
-					return c.a.createElement("span", {
+					return n.a.createElement("span", {
 						className: Object(i.a)(o.a.container, e),
 						"data-testid": "achievement-flairs"
-					}, c.a.createElement(u, {
+					}, n.a.createElement(u, {
 						achievement: v
-					}), c.a.createElement(u, {
+					}), n.a.createElement(u, {
 						achievement: s
 					}))
 				},
 				u = ({
 					achievement: e
-				}) => e ? c.a.createElement("img", {
+				}) => e ? n.a.createElement("img", {
 					alt: e.name,
 					className: o.a.icon,
 					src: e.icon.url
@@ -325,8 +325,8 @@
 				return h
 			}));
 			var s = a("./src/lib/classNames/index.ts"),
-				c = a("./node_modules/react/index.js"),
-				n = a.n(c),
+				n = a("./node_modules/react/index.js"),
+				c = a.n(n),
 				i = a("./node_modules/react-redux/es/index.js"),
 				r = a("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.tsx"),
 				l = a("./src/reddit/components/Flair/index.tsx"),
@@ -339,32 +339,32 @@
 				className: e,
 				subredditId: t,
 				userId: a,
-				flairData: c,
+				flairData: n,
 				username: u
 			}) => {
 				const h = Object(i.e)(e => Object(m.j)(e));
-				return h ? n.a.createElement("div", {
+				return h ? c.a.createElement("div", {
 					className: Object(s.a)(v.a.flairPreview, e),
 					"data-testid": "user-flair-preview"
-				}, n.a.createElement(d.a, {
+				}, c.a.createElement(d.a, {
 					className: v.a.userIcon,
 					iconUrl: h.accountIcon,
 					isNSFW: h.isNSFW,
 					nsfwIconUrl: o.a,
 					userName: u || ""
-				}), n.a.createElement("div", {
+				}), c.a.createElement("div", {
 					className: v.a.allFlair
-				}, n.a.createElement("div", {
+				}, c.a.createElement("div", {
 					className: v.a.flairPreviewFirstLine
-				}, n.a.createElement("span", {
+				}, c.a.createElement("span", {
 					className: v.a.username
-				}, `u/${u||"username"}`), n.a.createElement(r.a, {
+				}, `u/${u||"username"}`), c.a.createElement(r.a, {
 					className: v.a.achievementFlair,
 					subredditId: t,
 					userId: a
-				})), (null == c ? void 0 : c.applied) && c.displaySettings.isUserEnabled && n.a.createElement(l.b, {
+				})), (null == n ? void 0 : n.applied) && n.displaySettings.isUserEnabled && c.a.createElement(l.b, {
 					className: v.a.userFlair,
-					flair: c.applied,
+					flair: n.applied,
 					forceSmallEmojis: !0
 				}))) : null
 			}
@@ -378,4 +378,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.c6199a199ad41253aa54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.1beae235cee148ad4d67.js.map

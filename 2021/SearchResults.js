@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.06f81fca74df3cc652cf.js
-// Retrieved at 6/3/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.21c2ba450a129f5ea7c2.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1062,11 +1062,11 @@
 				h = s("./src/reddit/helpers/trackers/powerups.ts"),
 				b = s("./src/reddit/components/AwardBadges/index.tsx"),
 				x = s("./src/reddit/components/AuthorLink/index.tsx"),
-				f = s("./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts"),
+				f = s("./src/reddit/selectors/experiments/econ/index.ts"),
 				g = s("./src/reddit/components/Comments/Comment/TopMeta/commentAuthorLink.m.less"),
 				y = s.n(g);
 			const v = e => {
-				const t = Object(i.e)(f.a),
+				const t = Object(i.e)(f.d),
 					{
 						className: s,
 						comment: r,
@@ -1594,7 +1594,7 @@
 					}) => Object(Ue.d)(e, {
 						subredditId: t.subredditId
 					}),
-					isCommentHeaderRedesignEnabled: f.a
+					isCommentHeaderRedesignEnabled: f.d
 				}), (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onShowTooltip: t => e(Object(l.f)({
@@ -2854,7 +2854,7 @@
 				n = s.n(r),
 				o = s("./node_modules/react-redux/es/index.js"),
 				i = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				a = s("./src/reddit/selectors/experiments/econ/index.ts"),
 				c = s("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				d = s("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
 				l = s.n(d);
@@ -2872,7 +2872,7 @@
 							userId: s
 						})),
 						m = !!r || !!d;
-					if (!Object(o.e)(e => m && Object(a.a)(e))) return null;
+					if (!Object(o.e)(e => m && Object(a.g)(e))) return null;
 					const u = (null == d ? void 0 : d.type) === (null == r ? void 0 : r.type) ? null : d;
 					return n.a.createElement("span", {
 						className: Object(i.a)(l.a.container, e),
@@ -8967,15 +8967,6 @@
 			}
 			t.default = L(R(Object(f.c)(A)))
 		},
-		"./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return o
-			}));
-			var r = s("./src/reddit/constants/experiments.ts"),
-				n = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(n.a)(r.qb)
-		},
 		"./src/reddit/selectors/experiments/railsSearchResults.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -9094,4 +9085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.06f81fca74df3cc652cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.21c2ba450a129f5ea7c2.js.map

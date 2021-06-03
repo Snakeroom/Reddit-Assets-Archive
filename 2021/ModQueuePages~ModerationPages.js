@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c2bcef8a7edff3e1f06d.js
-// Retrieved at 6/3/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.b46d9cc61f484a80e1c1.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1551,11 +1551,11 @@
 				h = n("./src/reddit/helpers/trackers/powerups.ts"),
 				b = n("./src/reddit/components/AwardBadges/index.tsx"),
 				f = n("./src/reddit/components/AuthorLink/index.tsx"),
-				C = n("./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts"),
+				C = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				g = n("./src/reddit/components/Comments/Comment/TopMeta/commentAuthorLink.m.less"),
 				v = n.n(g);
 			const x = e => {
-				const t = Object(i.e)(C.a),
+				const t = Object(i.e)(C.d),
 					{
 						className: n,
 						comment: s,
@@ -2083,7 +2083,7 @@
 					}) => Object(Be.d)(e, {
 						subredditId: t.subredditId
 					}),
-					isCommentHeaderRedesignEnabled: C.a
+					isCommentHeaderRedesignEnabled: C.d
 				}), (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onShowTooltip: t => e(Object(l.f)({
@@ -2758,7 +2758,7 @@
 				o = n.n(s),
 				r = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				a = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				d = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				c = n("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
 				l = n.n(c);
@@ -2776,7 +2776,7 @@
 							userId: n
 						})),
 						m = !!s || !!c;
-					if (!Object(r.e)(e => m && Object(a.a)(e))) return null;
+					if (!Object(r.e)(e => m && Object(a.g)(e))) return null;
 					const p = (null == c ? void 0 : c.type) === (null == s ? void 0 : s.type) ? null : c;
 					return o.a.createElement("span", {
 						className: Object(i.a)(l.a.container, e),
@@ -4292,16 +4292,7 @@
 						type: e.type
 					}
 				}
-		},
-		"./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var s = n("./src/reddit/constants/experiments.ts"),
-				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(o.a)(s.qb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.c2bcef8a7edff3e1f06d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.b46d9cc61f484a80e1c1.js.map

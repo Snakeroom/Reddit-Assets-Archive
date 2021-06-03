@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0da58bf3120713fd64f5.js
-// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.884c1428ebe22c1d0ca2.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -1343,7 +1343,7 @@
 				a = n("./src/graphql/operations/SubredditUserAchievements.json"),
 				i = n("./src/graphql/operations/UpdateAchievementFlairPreference.json"),
 				c = n("./src/lib/makeGqlRequest/index.ts");
-			var d = n("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+			var d = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				l = n("./src/lib/initializeClient/installReducer.ts"),
 				u = n("./src/reddit/reducers/features/powerups/index.ts"),
 				m = n("./src/reddit/actions/gold/powerups.ts"),
@@ -1389,7 +1389,7 @@
 					const r = o();
 					if (!Object(h.f)(r, {
 							subredditId: e
-						}) || !t || !Object(d.a)(r)) return;
+						}) || !t || !Object(d.g)(r)) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
@@ -1491,7 +1491,7 @@
 				c = n("./src/reddit/endpoints/economics/predictions.ts"),
 				d = n("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
-				u = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				u = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				m = n("./src/reddit/selectors/posts.ts"),
 				p = n("./src/reddit/selectors/subreddit.ts"),
 				b = n("./src/reddit/selectors/user.ts"),
@@ -1538,7 +1538,7 @@
 							disallowProfile: !0
 						});
 					if (!s) throw new Error("Post does not belong to a subreddit");
-					const a = await Object(c.f)(o(), s.name, Object(u.c)(r));
+					const a = await Object(c.f)(o(), s.name, Object(u.f)(r));
 					if (a.error || !a.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: i
@@ -18507,7 +18507,7 @@
 				Qn = n("./src/reddit/hooks/usePageLayer.ts"),
 				Xn = n("./src/reddit/hooks/useTracking.ts"),
 				Zn = n("./src/reddit/models/Toast/index.ts"),
-				$n = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				$n = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				eo = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				to = n("./src/higherOrderComponents/asModal/index.tsx");
 			const {
@@ -23712,63 +23712,66 @@
 				return o === s.a.Ethereum || o === s.a.Rinkeby || o === s.a.EthTraderEthereum || o === s.a.EthTraderRinkeby || o === s.a.ArbitrumRinkeby
 			}
 		},
-		"./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts": function(e, t, n) {
+		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			var o = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(o.xb)
-		},
-		"./src/reddit/selectors/experiments/econ/predictions.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "f", (function() {
-				return s
-			})), n.d(t, "i", (function() {
+			n.d(t, "c", (function() {
 				return a
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return i
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "e", (function() {
 				return c
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "g", (function() {
 				return d
 			})), n.d(t, "h", (function() {
 				return l
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "i", (function() {
 				return u
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "l", (function() {
 				return m
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "o", (function() {
 				return p
-			}));
-			var o = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(o.Cb),
-				a = Object(r.a)(o.Fb),
-				i = Object(r.a)(o.Ab),
-				c = Object(r.a)(o.Db),
-				d = Object(r.a)(o.Bb),
-				l = Object(r.a)(o.Eb),
-				u = Object(r.a)(o.Gb),
-				m = Object(r.a)(o.ub),
-				p = Object(r.a)(o.tb);
-			Object(r.a)(o.vb)
-		},
-		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
+			})), n.d(t, "k", (function() {
+				return b
+			})), n.d(t, "m", (function() {
+				return h
+			})), n.d(t, "f", (function() {
+				return f
+			})), n.d(t, "n", (function() {
+				return g
+			})), n.d(t, "j", (function() {
+				return C
+			})), n.d(t, "b", (function() {
+				return x
+			})), n.d(t, "a", (function() {
+				return _
+			})), n.d(t, "p", (function() {
+				return E
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => t => {
-				const n = Object(r.c)(t, {
-					experimentEligibilitySelector: r.a,
-					experimentName: e
-				});
-				return !(!n || Object(o.Hd)(n))
-			}
+					const n = Object(r.c)(t, {
+						experimentEligibilitySelector: r.a,
+						experimentName: e
+					});
+					return !(!n || Object(o.Hd)(n))
+				},
+				a = s(o.ob),
+				i = s(o.qb),
+				c = s(o.rb),
+				d = s(o.xb),
+				l = s(o.yb),
+				u = s(o.zb),
+				m = s(o.Cb),
+				p = s(o.Fb),
+				b = s(o.Ab),
+				h = s(o.Db),
+				f = s(o.Bb),
+				g = s(o.Eb),
+				C = s(o.Gb),
+				x = s(o.ub),
+				_ = s(o.tb),
+				E = (s(o.vb), s(o.Hb))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -24405,4 +24408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0da58bf3120713fd64f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.884c1428ebe22c1d0ca2.js.map

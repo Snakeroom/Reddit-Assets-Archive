@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.2af4d260f8092498b1de.js
-// Retrieved at 6/3/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.56bfddb552b4f1f9bfe6.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1099,11 +1099,11 @@
 				b = n("./src/reddit/helpers/trackers/powerups.ts"),
 				x = n("./src/reddit/components/AwardBadges/index.tsx"),
 				h = n("./src/reddit/components/AuthorLink/index.tsx"),
-				f = n("./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts"),
+				f = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				v = n("./src/reddit/components/Comments/Comment/TopMeta/commentAuthorLink.m.less"),
 				E = n.n(v);
 			const k = e => {
-				const t = Object(i.e)(f.a),
+				const t = Object(i.e)(f.d),
 					{
 						className: n,
 						comment: o,
@@ -1631,7 +1631,7 @@
 					}) => Object(He.d)(e, {
 						subredditId: t.subredditId
 					}),
-					isCommentHeaderRedesignEnabled: f.a
+					isCommentHeaderRedesignEnabled: f.d
 				}), (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onShowTooltip: t => e(Object(l.f)({
@@ -2054,7 +2054,7 @@
 				s = n.n(o),
 				r = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				a = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				d = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				c = n("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
 				l = n.n(c);
@@ -2072,7 +2072,7 @@
 							userId: n
 						})),
 						m = !!o || !!c;
-					if (!Object(r.e)(e => m && Object(a.a)(e))) return null;
+					if (!Object(r.e)(e => m && Object(a.g)(e))) return null;
 					const p = (null == c ? void 0 : c.type) === (null == o ? void 0 : o.type) ? null : c;
 					return s.a.createElement("span", {
 						className: Object(i.a)(l.a.container, e),
@@ -3745,16 +3745,7 @@
 					flexBasis: e.widthRight
 				}
 			}, Array.isArray(e.children) && e.children[2])), 3)
-		},
-		"./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var o = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(o.qb)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.2af4d260f8092498b1de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.56bfddb552b4f1f9bfe6.js.map

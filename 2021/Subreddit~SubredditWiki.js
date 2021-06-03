@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.0c90dda23859f6b7bfa0.js
-// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4ba2be998d50a9eb87e7.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4759,7 +4759,7 @@
 				dt = n("./src/reddit/helpers/createBannerProperties/index.ts"),
 				ct = n("./src/reddit/models/Widgets/index.ts"),
 				lt = n("./src/reddit/selectors/communityFlairs.ts"),
-				ut = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				ut = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				mt = n("./src/reddit/selectors/listings.ts"),
 				pt = n("./src/reddit/components/SubredditSidebar/index.m.less"),
 				bt = n.n(pt);
@@ -4775,7 +4775,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(lt.c)(e, t),
-					isPredictionsLeaderboardsEnabled: ut.g,
+					isPredictionsLeaderboardsEnabled: ut.m,
 					showGovernance: at.d.spPoints,
 					showLeaderboard: at.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -5656,4 +5656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.0c90dda23859f6b7bfa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.4ba2be998d50a9eb87e7.js.map

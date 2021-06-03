@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5eb7a7f55c02025d8bf0.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.16c480bd49740733f54e.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -776,7 +776,7 @@
 				s = r("./src/reddit/endpoints/economics/predictions.ts"),
 				m = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
 				e = r("./src/reddit/models/Prediction/index.ts"),
-				l = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				c = r("./src/reddit/selectors/posts.ts"),
 				p = r("./src/reddit/selectors/subreddit.ts"),
 				h = r("./src/reddit/selectors/user.ts"),
@@ -823,7 +823,7 @@
 							disallowProfile: !0
 						});
 					if (!k) throw new Error("Post does not belong to a subreddit");
-					const n = await Object(s.f)(x(), k.name, Object(l.c)(t));
+					const n = await Object(s.f)(x(), k.name, Object(l.f)(t));
 					if (n.error || !n.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: o
@@ -1465,7 +1465,7 @@
 				d = r("./src/reddit/helpers/trackers/predictions.ts"),
 				u = r("./src/reddit/hooks/useTracking.ts"),
 				y = r("./src/reddit/models/Toast/index.ts"),
-				G = r("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				G = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				E = r("./src/reddit/selectors/user.ts"),
 				A = r("./src/reddit/actions/economics/helpers/index.ts"),
 				B = r("./src/reddit/components/Econ/CoinsModalHeader/index.tsx"),
@@ -1556,7 +1556,7 @@
 				selectedChipPack: i,
 				selectedCoinPack: r
 			}) {
-				const n = Object(k.e)(G.h),
+				const n = Object(k.e)(G.n),
 					o = Object(k.e)(E.d),
 					[m, e] = Object(x.useState)(null),
 					[l, c] = Object(x.useState)(!1),
@@ -1722,7 +1722,7 @@
 			const {
 				fbt: J
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = 1e3, X = Object(n.c)({
-				isNewPredictionsSheet: G.h,
+				isNewPredictionsSheet: G.n,
 				userCoins: E.d
 			}), Q = {
 				fetchPredictionChipPackages: m.d,
@@ -3277,4 +3277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5eb7a7f55c02025d8bf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.16c480bd49740733f54e.js.map

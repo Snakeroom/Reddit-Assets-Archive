@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.935718eacdff0023cfc7.js
-// Retrieved at 6/3/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.032787cdb569e6b50e64.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -519,7 +519,7 @@
 				o = n("./src/graphql/operations/SubredditUserAchievements.json"),
 				a = n("./src/graphql/operations/UpdateAchievementFlairPreference.json"),
 				d = n("./src/lib/makeGqlRequest/index.ts");
-			var c = n("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+			var c = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				l = n("./src/lib/initializeClient/installReducer.ts"),
 				u = n("./src/reddit/reducers/features/powerups/index.ts"),
 				m = n("./src/reddit/actions/gold/powerups.ts"),
@@ -565,7 +565,7 @@
 					const r = s();
 					if (!Object(h.f)(r, {
 							subredditId: e
-						}) || !t || !Object(c.a)(r)) return;
+						}) || !t || !Object(c.g)(r)) return;
 					const i = new Set;
 					Object.values(t).forEach(e => {
 						i.add(e.authorId)
@@ -1821,7 +1821,7 @@
 				r = n.n(s),
 				i = n("./node_modules/react-redux/es/index.js"),
 				o = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				a = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				d = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				c = n("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
 				l = n.n(c);
@@ -1839,7 +1839,7 @@
 							userId: n
 						})),
 						u = !!s || !!c;
-					if (!Object(i.e)(e => u && Object(a.a)(e))) return null;
+					if (!Object(i.e)(e => u && Object(a.g)(e))) return null;
 					const p = (null == c ? void 0 : c.type) === (null == s ? void 0 : s.type) ? null : c;
 					return r.a.createElement("span", {
 						className: Object(o.a)(l.a.container, e),
@@ -2967,7 +2967,7 @@
 				Ze = n("./src/reddit/components/Flair/index.tsx"),
 				$e = n("./src/reddit/featureFlags/component.tsx"),
 				et = n("./src/reddit/models/User/index.ts"),
-				tt = n("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				tt = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				nt = n("./src/reddit/selectors/gold/powerups/index.ts"),
 				st = n("./src/reddit/selectors/userFlair.ts"),
 				rt = n("./src/reddit/components/Econ/AchievementFlair/UserFlairPreview.tsx"),
@@ -2986,7 +2986,7 @@
 					currentUser: P.j,
 					isAchievementFlairModalEnabled: (e, t) => Object(nt.f)(e, {
 						subredditId: t.subredditId
-					}) && Object(tt.a)(e),
+					}) && Object(tt.g)(e),
 					userFlairData: st.c,
 					userHasBadge: (e, t) => {
 						const n = e.user.account;
@@ -3084,7 +3084,7 @@
 					stylesDisabledGlobally: P.kb,
 					canChangeAchievementFlair: (e, t) => Object(nt.f)(e, {
 						subredditId: t.subredditId
-					}) && Object(tt.a)(e)
+					}) && Object(tt.g)(e)
 				});
 			class St extends i.a.Component {
 				constructor(e) {
@@ -5331,29 +5331,66 @@
 				})
 			}
 		},
-		"./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts": function(e, t, n) {
+		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(r.a)(s.xb)
-		},
-		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
+			n.d(t, "c", (function() {
+				return o
+			})), n.d(t, "d", (function() {
+				return a
+			})), n.d(t, "e", (function() {
+				return d
+			})), n.d(t, "g", (function() {
+				return c
+			})), n.d(t, "h", (function() {
+				return l
+			})), n.d(t, "i", (function() {
+				return u
+			})), n.d(t, "l", (function() {
+				return m
+			})), n.d(t, "o", (function() {
+				return p
+			})), n.d(t, "k", (function() {
+				return b
+			})), n.d(t, "m", (function() {
+				return h
+			})), n.d(t, "f", (function() {
+				return f
+			})), n.d(t, "n", (function() {
+				return g
+			})), n.d(t, "j", (function() {
+				return _
+			})), n.d(t, "b", (function() {
+				return x
+			})), n.d(t, "a", (function() {
+				return E
+			})), n.d(t, "p", (function() {
+				return C
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => t => {
-				const n = Object(r.c)(t, {
-					experimentEligibilitySelector: r.a,
-					experimentName: e
-				});
-				return !(!n || Object(s.Hd)(n))
-			}
+					const n = Object(r.c)(t, {
+						experimentEligibilitySelector: r.a,
+						experimentName: e
+					});
+					return !(!n || Object(s.Hd)(n))
+				},
+				o = i(s.ob),
+				a = i(s.qb),
+				d = i(s.rb),
+				c = i(s.xb),
+				l = i(s.yb),
+				u = i(s.zb),
+				m = i(s.Cb),
+				p = i(s.Fb),
+				b = i(s.Ab),
+				h = i(s.Db),
+				f = i(s.Bb),
+				g = i(s.Eb),
+				_ = i(s.Gb),
+				x = i(s.ub),
+				E = i(s.tb),
+				C = (i(s.vb), i(s.Hb))
 		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, n) {
 			"use strict";
@@ -5505,4 +5542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.935718eacdff0023cfc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.032787cdb569e6b50e64.js.map

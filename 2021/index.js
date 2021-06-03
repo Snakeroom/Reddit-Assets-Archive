@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.fc9584f4806d6b26c8bf.js
-// Retrieved at 6/1/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.532f60dd45bc6cce4cb4.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -82,15 +82,15 @@
 			};
 			var x = n("./src/reddit/selectors/user.ts"),
 				I = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				g = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
-				h = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
-				j = n("./src/lib/timeUntil/index.ts"),
+				j = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
+				g = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
+				h = n("./src/lib/timeUntil/index.ts"),
 				_ = n("./src/reddit/models/Toast/index.ts"),
 				f = n("./src/reddit/actions/economics/helpers/index.ts"),
 				v = n("./src/reddit/actions/economics/predictions/index.ts"),
 				k = n("./src/reddit/actions/post.ts"),
 				y = n("./src/reddit/helpers/trackers/predictions.ts"),
-				w = n("./src/reddit/selectors/experiments/econ/predictions.ts"),
+				w = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				C = n("./src/reddit/actions/toaster.ts");
 
 			function A() {
@@ -105,8 +105,8 @@
 			function D(e) {
 				const t = Object(r.d)(),
 					n = Object(r.e)(x.d),
-					o = Object(r.e)(w.e),
-					s = Object(r.e)(w.d),
+					o = Object(r.e)(w.k),
+					s = Object(r.e)(w.j),
 					d = Object(L.a)(),
 					c = A(),
 					a = function() {
@@ -127,7 +127,7 @@
 					[b, P] = i.a.useState(!1),
 					[O, E] = i.a.useState(null),
 					[T, I] = i.a.useState(!1),
-					g = u < Date.now();
+					j = u < Date.now();
 				return {
 					isLoading: b,
 					isShowingVoteAnimation: T,
@@ -135,7 +135,7 @@
 						id: e
 					}) => e === O),
 					selectOption: e => {
-						g || p || E(e.id)
+						j || p || E(e.id)
 					},
 					predict: async ({
 						coinPackage: e,
@@ -144,7 +144,7 @@
 						if (e && e.coins > n) return Object(f.promptUserToBuyMoreCoins)(), void d(y.a);
 						const r = i ? i.id : e.id,
 							m = i ? i.amount : e.coins;
-						if (g) return a(B._("Error: Failed to make prediction. This prediction has already ended", null, {
+						if (j) return a(B._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
 						})), void E(null);
 						if (!l || !O) throw new Error("Invalid arguments, optionId and pollId must be strings");
@@ -161,7 +161,7 @@
 							})), o && t(Object(k.bb)(l)), P(!1), E(null), s ? I(!0) : c({
 								duration: 5e3,
 								kind: _.b.SuccessCommunity,
-								text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(j.a)(new Date(u), !0))], {
+								text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(h.a)(new Date(u), !0))], {
 									hk: "3ZSdoo"
 								})
 							})
@@ -202,7 +202,7 @@
 						options: O,
 						title: E,
 						resolvedOptionId: T,
-						totalVoteCount: j,
+						totalVoteCount: h,
 						selectedOptionId: _
 					} = e,
 					f = P < Date.now();
@@ -212,12 +212,12 @@
 					})
 				}, i.a.createElement("p", {
 					className: S.a.pollQuestion
-				}, E), O.map(e => i.a.createElement(h.a, {
+				}, E), O.map(e => i.a.createElement(g.a, {
 					endsAt: P,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: a && _ === e.id,
 					onAnimationEnd: b
-				}, i.a.createElement(g.a, {
+				}, i.a.createElement(j.a, {
 					disabled: a,
 					isEnded: f,
 					isSelected: (null == l ? void 0 : l.id) === e.id,
@@ -228,7 +228,7 @@
 					tournamentId: t,
 					userSelection: _,
 					userIsLoggedOut: !o,
-					votePercentage: (_ || f) && e.voteCount && j ? Math.floor(e.voteCount / j * 100) : null,
+					votePercentage: (_ || f) && e.voteCount && h ? Math.floor(e.voteCount / h * 100) : null,
 					isShowingHint: !1
 				})))), !!l && i.a.createElement(I.b, {
 					className: S.a.modal,
@@ -285,4 +285,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.fc9584f4806d6b26c8bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.532f60dd45bc6cce4cb4.js.map

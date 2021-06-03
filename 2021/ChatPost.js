@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.c6d20a24eb5ec7c8a67f.js
-// Retrieved at 6/3/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.5d410037bd808403edb9.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -610,11 +610,11 @@
 				h = o("./src/reddit/helpers/trackers/powerups.ts"),
 				b = o("./src/reddit/components/AwardBadges/index.tsx"),
 				C = o("./src/reddit/components/AuthorLink/index.tsx"),
-				v = o("./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts"),
+				v = o("./src/reddit/selectors/experiments/econ/index.ts"),
 				f = o("./src/reddit/components/Comments/Comment/TopMeta/commentAuthorLink.m.less"),
 				g = o.n(f);
 			const x = e => {
-				const t = Object(a.e)(v.a),
+				const t = Object(a.e)(v.d),
 					{
 						className: o,
 						comment: n,
@@ -1142,7 +1142,7 @@
 					}) => Object(Ue.d)(e, {
 						subredditId: t.subredditId
 					}),
-					isCommentHeaderRedesignEnabled: v.a
+					isCommentHeaderRedesignEnabled: v.d
 				}), (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onShowTooltip: t => e(Object(l.f)({
@@ -2952,7 +2952,7 @@
 				s = o.n(n),
 				r = o("./node_modules/react-redux/es/index.js"),
 				a = o("./src/lib/classNames/index.ts"),
-				i = o("./src/reddit/selectors/experiments/econ/powerupsAchievementFlair.ts"),
+				i = o("./src/reddit/selectors/experiments/econ/index.ts"),
 				c = o("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				d = o("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
 				l = o.n(d);
@@ -2970,7 +2970,7 @@
 							userId: o
 						})),
 						m = !!n || !!d;
-					if (!Object(r.e)(e => m && Object(i.a)(e))) return null;
+					if (!Object(r.e)(e => m && Object(i.g)(e))) return null;
 					const u = (null == d ? void 0 : d.type) === (null == n ? void 0 : n.type) ? null : d;
 					return s.a.createElement("span", {
 						className: Object(a.a)(l.a.container, e),
@@ -3464,15 +3464,6 @@
 				}))
 			}
 		},
-		"./src/reddit/selectors/experiments/econ/commentHeaderRedesign.ts": function(e, t, o) {
-			"use strict";
-			o.d(t, "a", (function() {
-				return r
-			}));
-			var n = o("./src/reddit/constants/experiments.ts"),
-				s = o("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(s.a)(n.qb)
-		},
 		"./src/reddit/selectors/poll/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
@@ -3547,4 +3538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.c6d20a24eb5ec7c8a67f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5d410037bd808403edb9.js.map

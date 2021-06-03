@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f616b67f9c7f99ccebdb.js
-// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.8650584d4be4491748d8.js
+// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -66,26 +66,24 @@
 				l = s("./src/lib/lessComponent.tsx"),
 				u = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
 				m = s("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
-				h = s("./src/reddit/constants/experiments.ts"),
-				p = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const b = Object(p.a)(h.Hb);
-			var x = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
-				f = s.n(x);
-			const g = l.a.div("Userpic", f.a);
+				h = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				p = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
+				b = s.n(p);
+			const x = l.a.div("Userpic", b.a);
 			t.a = o()(({
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(c.e)(b),
+				const s = Object(c.e)(h.p),
 					{
 						processingAvatarImageUrl: r
 					} = n.a;
 				if (s) return e ? i.a.createElement("img", {
-					className: f.a.NewUserpic,
+					className: b.a.NewUserpic,
 					src: e,
 					alt: "user icon"
 				}) : i.a.createElement(m.a, {
-					className: f.a.NewUserpic,
+					className: b.a.NewUserpic,
 					userId: t
 				});
 				const o = (e => e.replace(d.Db.Account + "_", ""))(t),
@@ -102,11 +100,11 @@
 							color: u[r]
 						}
 					})(o),
-					h = `${r}/avatar_default_${a}_${l}.png`;
-				return i.a.createElement(g, {
+					p = `${r}/avatar_default_${a}_${l}.png`;
+				return i.a.createElement(x, {
 					"data-testid": "old-default-icon",
 					style: {
-						backgroundImage: `url(${h})`,
+						backgroundImage: `url(${p})`,
 						backgroundColor: `#${l}`
 					}
 				})
@@ -2340,4 +2338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f616b67f9c7f99ccebdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.8650584d4be4491748d8.js.map
