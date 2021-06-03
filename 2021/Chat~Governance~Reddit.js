@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.28a765c75c788cc65635.js
-// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c4b2fb9181b4a71430f7.js
+// Retrieved at 6/3/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -242,6 +242,33 @@
 					}
 				}
 		},
+		"./src/chat/constants/experiments.ts": function(e, t, i) {
+			"use strict";
+			var n, r;
+			i.d(t, "b", (function() {
+					return n
+				})), i.d(t, "d", (function() {
+					return s
+				})), i.d(t, "a", (function() {
+					return o
+				})), i.d(t, "c", (function() {
+					return d
+				})),
+				function(e) {
+					e.SubredditChat = "chat_subreddit", e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux", e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.ChatMediaGiphy = "chat_media_giphy", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset"
+				}(n || (n = {})),
+				function(e) {
+					e.Control1 = "control_1", e.Control2 = "control_2"
+				}(r || (r = {}));
+			const s = e => e === r.Control1 || e === r.Control2;
+			var o, d;
+			! function(e) {
+				e.InputOnly = "input_only", e.InputAndGifs = "input_and_gifs"
+			}(o || (o = {})),
+			function(e) {
+				e.JustEnabled = "just_enabled", e.Prompt = "prompt", e.Sparkles = "sparkles"
+			}(d || (d = {}))
+		},
 		"./src/chat/constants/messages.ts": function(e, t, i) {
 			"use strict";
 			var n, r, s, o, d, a;
@@ -347,7 +374,7 @@
 					} = t,
 					n = i && i.id || "unknown";
 				_ = Object(s.c)(o.o.CHAT, o.v.CHAT_THEME_KEY, n), p = Object(s.c)(o.o.CHAT, o.v.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown");
-				const r = Object(u.d)(t);
+				const r = Object(u.e)(t);
 				return e => t => {
 					const i = e(t);
 					switch (t.type) {
@@ -1443,7 +1470,7 @@
 				return w
 			})), i.d(t, "b", (function() {
 				return v
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "K", (function() {
 				return E
 			})), i.d(t, "e", (function() {
 				return S
@@ -1455,7 +1482,7 @@
 				return j
 			})), i.d(t, "f", (function() {
 				return F
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "M", (function() {
 				return R
 			})), i.d(t, "w", (function() {
 				return x
@@ -1463,7 +1490,7 @@
 				return C
 			})), i.d(t, "d", (function() {
 				return k
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "L", (function() {
 				return N
 			})), i.d(t, "B", (function() {
 				return A
@@ -1475,19 +1502,19 @@
 				return B
 			})), i.d(t, "D", (function() {
 				return L
-			})), i.d(t, "K", (function() {
-				return U
 			})), i.d(t, "J", (function() {
+				return U
+			})), i.d(t, "I", (function() {
 				return M
 			})), i.d(t, "h", (function() {
 				return G
 			})), i.d(t, "a", (function() {
 				return q
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "G", (function() {
 				return H
 			})), i.d(t, "E", (function() {
 				return V
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "H", (function() {
 				return W
 			})), i.d(t, "F", (function() {
 				return $
@@ -1499,8 +1526,6 @@
 				return Y
 			})), i.d(t, "i", (function() {
 				return Q
-			})), i.d(t, "G", (function() {
-				return J
 			}));
 			var n = i("./node_modules/lodash/values.js"),
 				r = i.n(n),
@@ -1678,67 +1703,58 @@
 					const n = p(e, t),
 						r = Y(e, t);
 					if (n) return n.type === a.a.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
-				},
-				J = Object(s.a)(m, e => (null == e ? void 0 : e.type) === a.a.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.b.Invited)))
+				};
+			Object(s.a)(m, e => (null == e ? void 0 : e.type) === a.a.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.b.Invited)))
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "g", (function() {
+			i.d(t, "h", (function() {
+				return s
+			})), i.d(t, "d", (function() {
+				return o
+			})), i.d(t, "b", (function() {
 				return a
+			})), i.d(t, "g", (function() {
+				return l
 			})), i.d(t, "c", (function() {
 				return c
-			})), i.d(t, "a", (function() {
-				return _
 			})), i.d(t, "f", (function() {
-				return p
-			})), i.d(t, "b", (function() {
-				return m
+				return u
 			})), i.d(t, "e", (function() {
-				return h
-			})), i.d(t, "d", (function() {
-				return f
+				return _
+			})), i.d(t, "a", (function() {
+				return p
 			}));
-			var n, r = i("./node_modules/reselect/es/index.js");
-			! function(e) {
-				e.SubredditChat = "chat_subreddit", e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux", e.EconRpanAvatar = "web_econ_avatar_in_rpan"
-			}(n || (n = {}));
-			var s;
-			! function(e) {
-				e.Control1 = "control_1", e.Control2 = "control_2"
-			}(s || (s = {}));
-			var o, d;
-			! function(e) {
-				e.InputOnly = "input_only", e.InputAndGifs = "input_and_gifs"
-			}(o || (o = {})),
-			function(e) {
-				e.JustEnabled = "just_enabled", e.Prompt = "prompt", e.Sparkles = "sparkles"
-			}(d || (d = {}));
-			const a = e => !!e.user.experiments[n.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled,
-				l = e => {
-					if (!(e => e === s.Control1 || e === s.Control2)(e)) return e || void 0
-				},
-				c = e => !!e.user.experiments[n.EconRpanAvatar],
-				u = e => e.experiments.models,
-				_ = Object(r.a)(u, e => {
+			var n = i("./node_modules/reselect/es/index.js"),
+				r = i("./src/chat/constants/experiments.ts");
+			const s = e => !!e.user.experiments[r.b.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled,
+				o = e => !!e.user.experiments[r.b.EconRpanAvatar],
+				d = e => e.experiments.models,
+				a = Object(n.a)(d, e => {
 					var t;
-					return (null === (t = e.chat_media_giphy) || void 0 === t ? void 0 : t.variant) === o.InputAndGifs
+					return (null === (t = e[r.b.ChatMediaGiphy]) || void 0 === t ? void 0 : t.variant) === r.a.InputAndGifs
 				}),
-				p = Object(r.a)(u, e => {
+				l = Object(n.a)(d, e => {
 					var t;
-					return Boolean(l(null === (t = e.ui_refresh_bubble_preset) || void 0 === t ? void 0 : t.variant))
+					return Boolean((e => {
+						if (!Object(r.d)(e)) return e || void 0
+					})(null === (t = e[r.b.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant))
 				}),
-				m = Object(r.a)(u, e => {
+				c = Object(n.a)(d, e => {
 					var t;
-					return (null === (t = e.ui_refresh_bubble_preset) || void 0 === t ? void 0 : t.variant) === d.Prompt
+					return (null === (t = e[r.b.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant) === r.c.Prompt
 				}),
-				h = Object(r.a)(u, e => {
+				u = Object(n.a)(d, e => {
 					var t;
-					return (null === (t = e.ui_refresh_bubble_preset) || void 0 === t ? void 0 : t.variant) === d.Sparkles
+					return (null === (t = e[r.b.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant) === r.c.Sparkles
 				}),
-				f = Object(r.a)(u, e => {
+				_ = Object(n.a)(d, e => {
 					var t, i;
-					return (null === (t = e.ui_refresh_bubble_preset) || void 0 === t ? void 0 : t.variant) === d.Sparkles || (null === (i = e.ui_refresh_bubble_preset) || void 0 === i ? void 0 : i.variant) === d.Prompt
-				})
+					return (null === (t = e[r.b.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant) === r.c.Sparkles || (null === (i = e[r.b.UiRefreshBubblePreset]) || void 0 === i ? void 0 : i.variant) === r.c.Prompt
+				}),
+				p = (e, t) => {
+					return d(e)[t]
+				}
 		},
 		"./src/chat/selectors/messages.ts": function(e, t, i) {
 			"use strict";
@@ -1900,11 +1916,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("135637"),
+				buildNumber: r("135642"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1622748666"),
+				})("1622750091"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4500,14 +4516,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c54d3fbb2d2fe76b518349b605ffe97a5eb806a4c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c345c4bfa31051285a98874c8c2eac211249e1519-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "54d3fbb2d2fe76b518349b605ffe97a5eb806a4c-production",
+						release: "345c4bfa31051285a98874c8c2eac211249e1519-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5001,7 +5017,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "54d3fbb2d2fe76b518349b605ffe97a5eb806a4c-production",
+						releaseClient: "345c4bfa31051285a98874c8c2eac211249e1519-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -46812,4 +46828,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.28a765c75c788cc65635.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c4b2fb9181b4a71430f7.js.map

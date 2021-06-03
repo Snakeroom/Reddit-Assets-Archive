@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.3b12e7d70cccc9f7787d.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.069335d96f30c98b8982.js
+// Retrieved at 6/3/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -248,7 +248,7 @@
 						const t = Object(ee.w)(e, "members");
 						return t && t.map(e => e.id)
 					},
-					isCreatingChannel: ee.J,
+					isCreatingChannel: ee.I,
 					loadedContacts: te.i,
 					knownContacts: te.g,
 					memberCount: e => Object(ee.w)(e, "memberCount"),
@@ -728,4 +728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.3b12e7d70cccc9f7787d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.069335d96f30c98b8982.js.map
