@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.af7572bd8aa75fffd347.js
-// Retrieved at 6/3/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.6cf890c3a1bdcb564b70.js
+// Retrieved at 6/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.m.less": function(e, t, s) {
@@ -13,7 +13,7 @@
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "OverlayReport", (function() {
-				return K
+				return P
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/lodash/map.js"),
@@ -28,12 +28,12 @@
 			var m = s("./src/chat/actions/tracking.ts"),
 				p = s("./src/chat/components/OverlayNav/index.tsx"),
 				b = s("./src/higherOrderComponents/makeAsync.tsx"),
-				C = s("./src/lib/loadWithRetries/index.ts");
-			const x = () => null;
+				x = s("./src/lib/loadWithRetries/index.ts");
+			const C = () => null;
 			var y = Object(b.a)({
-					ErrorComponent: x,
-					getComponent: () => Object(C.a)(() => s.e("ChatReportFlow").then(s.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
-					LoadingComponent: x
+					ErrorComponent: C,
+					getComponent: () => Object(x.a)(() => s.e("ChatReportFlow").then(s.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
+					LoadingComponent: C
 				}),
 				O = s("./src/chat/components/Scroller/index.tsx"),
 				g = s("./src/chat/constants/messages.ts");
@@ -62,9 +62,9 @@
 					messageList: e => Object(I.x)(e),
 					currentUserId: (e, t) => Object(L.a)(e)
 				}),
-				A = Object(l.b)(N, e => ({
+				K = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
-						e(Object(m.A)(s.id)), e((e => async (t, s, {
+						e(Object(m.G)(s.id)), e((e => async (t, s, {
 							apiContext: n
 						}) => {
 							const {
@@ -81,7 +81,7 @@
 						})).then(() => e(Object(i.a)()))
 					},
 					onReportMessage: (t, s, n) => {
-						e(Object(m.C)(s.messageId, t)), e(((e, t, s) => async (n, a, {
+						e(Object(m.I)(s.messageId, t)), e(((e, t, s) => async (n, a, {
 							apiContext: r
 						}) => {
 							const o = Object(u.a)(e, t),
@@ -90,7 +90,7 @@
 						})(t, s, n))
 					}
 				}));
-			class K extends o.Component {
+			class P extends o.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
@@ -205,7 +205,7 @@
 					}))
 				}
 			}
-			t.default = A(K)
+			t.default = K(P)
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -260,8 +260,8 @@
 				p = s("./src/chat/icons/svgs/Checkbox/unchecked.m.less"),
 				b = s.n(p);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -269,15 +269,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = o.a.wrapped(e => a.a.createElement("circle", {
+			const C = o.a.wrapped(e => a.a.createElement("circle", {
 				className: e.className,
 				cy: "10",
 				cx: "10",
 				r: "9"
 			}), "StyledCircle", b.a);
-			var y = e => a.a.createElement(c.a, C({}, e, {
+			var y = e => a.a.createElement(c.a, x({}, e, {
 					viewBox: "0 0 20 20"
-				}), a.a.createElement("g", null, a.a.createElement(x, null))),
+				}), a.a.createElement("g", null, a.a.createElement(C, null))),
 				O = s("./src/chat/controls/Checkbox/index.m.less"),
 				g = s.n(O);
 			const _ = o.a.input("HiddenInput", g.a),
@@ -333,8 +333,8 @@
 					onSubmit: () => {},
 					onCancel: Object(h.b)(() => e(Object(c.a)()))
 				})),
-				C = i.a.div("OverlayControlBar", m.a),
-				x = b(e => r.a.createElement(C, {
+				x = i.a.div("OverlayControlBar", m.a),
+				C = b(e => r.a.createElement(x, {
 					className: Object(l.a)({
 						[m.a.primary]: e.primaryButtonOnly
 					}, e.className)
@@ -357,7 +357,7 @@
 				}, e.primaryButtonText || n.fbt._("Submit", null, {
 					hk: "2Iwjdv"
 				}))));
-			x.displayName = "OverlayControlBar", t.a = x
+			C.displayName = "OverlayControlBar", t.a = C
 		},
 		"./src/chat/icons/svgs/Checkbox/checked.m.less": function(e, t, s) {
 			e.exports = {
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.af7572bd8aa75fffd347.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.6cf890c3a1bdcb564b70.js.map

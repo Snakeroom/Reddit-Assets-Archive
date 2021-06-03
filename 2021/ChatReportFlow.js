@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.6e4d4ecf00699c35f1bc.js
-// Retrieved at 6/3/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.fcbd4ae55e46307e8e6a.js
+// Retrieved at 6/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/CrisisFlow/CrisisFlowPage.m.less": function(e, t, n) {
@@ -345,7 +345,7 @@
 			}
 			var Re = Object(o.b)(Ee, (e, {}) => ({
 					onBlockUser: t => {
-						e(Object(A.n)(t, !0)), e(Object(q.z)())
+						e(Object(A.n)(t, !0)), e(Object(q.F)())
 					}
 				}))(be),
 				fe = n("./src/chat/components/ReportFlow/FileComplaintFlow/index.m.less"),
@@ -667,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.6e4d4ecf00699c35f1bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.fcbd4ae55e46307e8e6a.js.map

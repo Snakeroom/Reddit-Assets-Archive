@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayKickUser.5844656d048ebeafc3d8.js
-// Retrieved at 6/3/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayKickUser.c65ba7aa6683f7801c1f.js
+// Retrieved at 6/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayKickUser"], {
 		"./src/chat/components/OverlayKickUser/index.m.less": function(e, t, n) {
@@ -73,7 +73,7 @@
 				}),
 				H = Object(s.b)(L, e => ({
 					onKickUser: (t, n, a) => {
-						e(Object(i.p)(t, n, a)), e(Object(o.w)(a))
+						e(Object(i.p)(t, n, a)), e(Object(o.B)(a))
 					}
 				}));
 			class K extends r.Component {
@@ -308,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.5844656d048ebeafc3d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.c65ba7aa6683f7801c1f.js.map

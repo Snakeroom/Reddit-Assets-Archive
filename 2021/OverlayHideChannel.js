@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayHideChannel.d2c201972c0f5aae2784.js
-// Retrieved at 6/3/2021, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayHideChannel.82050af59d433d4e4334.js
+// Retrieved at 6/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayHideChannel"], {
 		"./src/chat/components/OverlayHideChannel/index.m.less": function(e, t, n) {
@@ -11,55 +11,58 @@
 		"./src/chat/components/OverlayHideChannel/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "OverlayHideChannel", (function() {
-				return _
+				return B
 			}));
 			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				o = n("./node_modules/react-redux/es/index.js"),
-				l = n("./src/lib/lessComponent.tsx"),
-				c = n("./src/chat/actions/channel.ts"),
+				c = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/chat/actions/channel.ts"),
 				i = n("./src/chat/actions/message/unreadCount.ts"),
 				d = n("./src/chat/helpers/errors.ts"),
 				u = n("./src/chat/selectors/channels.ts"),
 				h = n("./src/chat/singleton/SendbirdSDK.ts");
-			var m = n("./src/chat/components/OverlayNav/index.tsx"),
-				y = n("./src/chat/controls/Overlay/index.tsx"),
-				b = n("./src/chat/controls/OverlayControlBar/index.tsx"),
-				O = n("./src/chat/components/OverlayHideChannel/index.m.less"),
-				x = n.n(O);
-			const p = l.a.p("Text", x.a);
-			p.displayName = "Text";
-			const C = Object(o.b)(null, e => ({
-					onHideChannelRequest: () => e((() => async (e, t) => {
-						const n = t(),
-							a = Object(u.j)(n);
-						if (!a) throw new d.a("hideChannel", a);
-						try {
-							await h.a.hideChannel()
-						} catch (r) {
-							return Object(d.b)(`Error hiding channel: ${r.message}`)
-						}
-						e(Object(c.K)(a.channelId)), e(Object(c.P)(a.channelState)), e(Object(i.b)())
-					})())
+			var m = n("./src/chat/actions/tracking.ts"),
+				y = n("./src/chat/components/OverlayNav/index.tsx"),
+				b = n("./src/chat/controls/Overlay/index.tsx"),
+				O = n("./src/chat/controls/OverlayControlBar/index.tsx"),
+				x = n("./src/chat/components/OverlayHideChannel/index.m.less"),
+				p = n.n(x);
+			const C = c.a.p("Text", p.a);
+			C.displayName = "Text";
+			const _ = Object(o.b)(null, e => ({
+					onHideChannelRequest: () => {
+						e((() => async (e, t) => {
+							const n = t(),
+								a = Object(u.j)(n);
+							if (!a) throw new d.a("hideChannel", a);
+							try {
+								await h.a.hideChannel()
+							} catch (r) {
+								return Object(d.b)(`Error hiding channel: ${r.message}`)
+							}
+							e(Object(l.K)(a.channelId)), e(Object(l.P)(a.channelState)), e(Object(i.b)())
+						})()), e(Object(m.x)())
+					}
 				})),
-				_ = ({
+				B = ({
 					channelId: e,
 					onHideChannelRequest: t
-				}) => s.a.createElement(y.a, null, s.a.createElement(m.a, {
+				}) => s.a.createElement(b.a, null, s.a.createElement(y.a, {
 					channelId: e,
 					title: a.fbt._("Hide channel?", null, {
 						hk: "2tS9C7"
 					})
-				}), s.a.createElement(p, null, a.fbt._("Hiding this channel will remove it from your chat inbox until someone else in the channel sends another message.", null, {
+				}), s.a.createElement(C, null, a.fbt._("Hiding this channel will remove it from your chat inbox until someone else in the channel sends another message.", null, {
 					hk: "2obYDP"
-				})), s.a.createElement(b.a, {
+				})), s.a.createElement(O.a, {
 					primaryButtonText: a.fbt._("Hide", null, {
 						hk: "1mv2YH"
 					}),
 					primaryButtonAction: () => t()
 				}));
-			t.default = C(_)
+			t.default = _(B)
 		},
 		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -76,8 +79,8 @@
 				r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				o = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/react-router-redux/es/index.js"),
-				c = n("./src/lib/classNames/index.ts"),
+				c = n("./node_modules/react-router-redux/es/index.js"),
+				l = n("./src/lib/classNames/index.ts"),
 				i = n("./src/lib/lessComponent.tsx"),
 				d = n("./src/chat/controls/Button/index.tsx"),
 				u = n("./src/chat/helpers/dom.ts"),
@@ -86,11 +89,11 @@
 			const y = i.a.wrapped(d.a, "Button", m.a),
 				b = Object(o.b)(void 0, e => ({
 					onSubmit: () => {},
-					onCancel: Object(u.b)(() => e(Object(l.a)()))
+					onCancel: Object(u.b)(() => e(Object(c.a)()))
 				})),
 				O = i.a.div("OverlayControlBar", m.a),
 				x = b(e => s.a.createElement(O, {
-					className: Object(c.a)({
+					className: Object(l.a)({
 						[m.a.primary]: e.primaryButtonOnly
 					}, e.className)
 				}, !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? s.a.createElement(y, {
@@ -116,4 +119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayHideChannel.d2c201972c0f5aae2784.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayHideChannel.82050af59d433d4e4334.js.map
