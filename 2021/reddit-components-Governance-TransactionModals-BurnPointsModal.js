@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.81bcf2d3530131e68ae1.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.683810c9a9b3c84e1d93.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, n) {
@@ -1735,7 +1735,7 @@
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const h = (e, t, n) => ({
 					type: "burn-link",
@@ -1952,39 +1952,37 @@
 							return e
 					}
 				},
-				o = n("./src/reddit/actions/governance/constants.ts"),
-				i = n("./src/reddit/endpoints/governance/crypto.ts");
-			const d = {},
-				u = {
+				o = n("./src/reddit/actions/governance/constants.ts");
+			const i = {},
+				d = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function m(e) {
+			function u(e) {
 				var t, n, r, a, l;
 				const s = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					c = null == s ? void 0 : s.contracts,
 					o = null == c ? void 0 : c.unlocked,
-					d = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					m = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
-					h = !m && d === i.a.Stellar,
-					p = h ? null == s ? void 0 : s.issuerAddress : null == o ? void 0 : o.address,
-					f = h ? (null == s ? void 0 : s.decimals) || 7 : (null == o ? void 0 : o.decimals) || 0;
+					i = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
+					u = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
+					m = (null == o ? void 0 : o.decimals) || 0,
+					h = "1" + "0".repeat(m);
 				return {
-					blockchainProvider: d,
-					contractAddress: p || "",
+					blockchainProvider: i,
+					contractAddress: (null == o ? void 0 : o.address) || "",
 					contracts: c,
-					decimals: f,
-					displayConversion: "1" + "0".repeat(f),
-					images: e.images || u,
-					inTransition: m,
+					decimals: m,
+					displayConversion: h,
+					images: e.images || d,
+					inTransition: u,
 					name: e.name,
 					nomenclature: null === (l = e.extra) || void 0 === l ? void 0 : l.nomenclature,
 					polls: e.polls,
-					symbol: h ? (null == s ? void 0 : s.token) || "PHOTON" : (null == o ? void 0 : o.token) || ""
+					symbol: (null == o ? void 0 : o.token) || ""
 				}
 			}
-			var h = (e = d, t) => {
+			var m = (e = i, t) => {
 				switch (t.type) {
 					case o.a: {
 						const {
@@ -1993,15 +1991,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: m(r)
+							[n]: u(r)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const p = {};
-			var f = (e = p, t) => {
+			const h = {};
+			var p = (e = h, t) => {
 				switch (t.type) {
 					case o.n: {
 						const {
@@ -2027,8 +2025,8 @@
 			};
 			t.a = Object(r.c)({
 				claims: c,
-				points: h,
-				publicWallets: f
+				points: m,
+				publicWallets: p
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -2126,4 +2124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.81bcf2d3530131e68ae1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.683810c9a9b3c84e1d93.js.map

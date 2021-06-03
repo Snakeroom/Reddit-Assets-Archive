@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.16c480bd49740733f54e.js
-// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.6c4b66c833797d360cfe.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -491,55 +491,44 @@
 		},
 		"./src/reddit/actions/badge.ts": function(a, i, r) {
 			"use strict";
-			r.d(i, "c", (function() {
+			r.d(i, "b", (function() {
 				return n
-			})), r.d(i, "b", (function() {
-				return o
 			})), r.d(i, "a", (function() {
+				return o
+			})), r.d(i, "e", (function() {
 				return s
-			})), r.d(i, "f", (function() {
+			})), r.d(i, "c", (function() {
 				return m
 			})), r.d(i, "d", (function() {
 				return e
-			})), r.d(i, "e", (function() {
+			})), r.d(i, "h", (function() {
 				return l
-			})), r.d(i, "i", (function() {
+			})), r.d(i, "f", (function() {
 				return c
 			})), r.d(i, "g", (function() {
 				return p
-			})), r.d(i, "h", (function() {
-				return h
+			})), r.d(i, "i", (function() {
+				return G
 			})), r.d(i, "j", (function() {
-				return f
-			})), r.d(i, "k", (function() {
-				return V
-			})), r.d(i, "l", (function() {
-				return b
-			})), r.d(i, "m", (function() {
-				return F
+				return E
 			}));
 			var x = r("./src/lib/makeActionCreator/index.ts"),
 				t = r("./src/reddit/actions/governance/errorToast.ts"),
 				k = r("./src/reddit/endpoints/governance/badges.ts");
-			const n = "BADGE__BADGE_MODAL_OPENED",
-				o = "BADGE__BADGE_APPLICATION_SUCCESS",
-				s = "BADGE__BADGE_APPLICATION_FAILURE",
-				m = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
-				e = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
-				l = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
-				c = "BADGE__USER_BADGES_FETCH_SUCCESS",
-				p = "BADGE__USER_BADGES_FETCH_FAILURE",
-				h = "BADGE__USER_BADGES_FETCH_PENDING",
-				f = Object(x.a)(n),
-				d = Object(x.a)(o),
-				u = Object(x.a)(s),
-				y = (Object(x.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(x.a)(m)),
-				G = Object(x.a)(e),
-				E = Object(x.a)(l),
-				A = Object(x.a)(c),
-				B = Object(x.a)(p),
-				D = Object(x.a)(h),
-				V = ({
+			const n = "BADGE__BADGE_APPLICATION_SUCCESS",
+				o = "BADGE__BADGE_APPLICATION_FAILURE",
+				s = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
+				m = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
+				e = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
+				l = "BADGE__USER_BADGES_FETCH_SUCCESS",
+				c = "BADGE__USER_BADGES_FETCH_FAILURE",
+				p = "BADGE__USER_BADGES_FETCH_PENDING",
+				h = Object(x.a)(n),
+				f = Object(x.a)(o),
+				d = (Object(x.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(x.a)(s)),
+				u = Object(x.a)(m),
+				y = Object(x.a)(e),
+				G = (Object(x.a)(l), Object(x.a)(c), Object(x.a)(p), ({
 					badgeIds: a,
 					subredditId: i
 				}) => async (r, x, {
@@ -551,13 +540,13 @@
 						const x = (o.users.appliedBadges[s.id] || {})[i] || [],
 							m = a.length ? a[0] : x[0],
 							e = !!a.length;
-						r(d({
+						r(h({
 							badgeIds: a,
 							subredditId: i,
 							userId: s.id
 						}));
 						const l = await Object(k.a)(n(), i, m, e);
-						l.ok || (r(u({
+						l.ok || (r(f({
 							badgeIds: a,
 							subredditId: i,
 							error: l.error,
@@ -565,42 +554,24 @@
 							userId: s.id
 						})), Object(t.a)(r, l.error))
 					}
-				}, b = ({
+				}),
+				E = ({
 					subredditId: a,
 					userIds: i
 				}) => async (r, x, {
 					apiContext: t
 				}) => {
-					r(E({
+					r(y({
 						subredditId: a
 					}));
 					const n = await Object(k.b)(t(), a, i);
-					n.ok ? r(y({
+					n.ok ? r(d({
 						...n.body,
 						subredditId: a
-					})) : r(G({
+					})) : r(u({
 						subredditId: a,
 						error: n.error
 					}))
-				}, F = ({
-					subredditId: a
-				}) => async (i, r, {
-					apiContext: x
-				}) => {
-					const t = r().user.account;
-					if (t) {
-						i(D({
-							subredditId: a
-						}));
-						const r = await Object(k.c)(x(), a, t.id);
-						r.ok ? i(A({
-							...r.body,
-							subredditId: a
-						})) : i(B({
-							subredditId: a,
-							error: r.error
-						}))
-					}
 				}
 		},
 		"./src/reddit/actions/economics/helpers/index.ts": function(a, i, r) {
@@ -659,7 +630,7 @@
 						i && G.add(i.authorId)
 					});
 					const E = Array.from(G);
-					!e.includes("badges") && E.length && d(["spBadges"]) && h.push(i(Object(k.l)({
+					!e.includes("badges") && E.length && d(["spBadges"]) && h.push(i(Object(k.j)({
 						subredditId: l,
 						userIds: E
 					}))), !e.includes("communityDetails") && d(["spPoints", "spSpecialMemberships"]) && h.push(i(Object(o.a)({
@@ -3277,4 +3248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.16c480bd49740733f54e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.6c4b66c833797d360cfe.js.map

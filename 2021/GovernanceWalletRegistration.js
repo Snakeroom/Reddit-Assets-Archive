@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.bdd02e9caedf14ae75c7.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.f5f0d9c7b8ab7c4d7a1a.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1401,7 +1401,7 @@
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -1773,39 +1773,37 @@
 							return e
 					}
 				},
-				c = n("./src/reddit/actions/governance/constants.ts"),
-				d = n("./src/reddit/endpoints/governance/crypto.ts");
-			const l = {},
-				u = {
+				c = n("./src/reddit/actions/governance/constants.ts");
+			const d = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function m(e) {
+			function u(e) {
 				var t, n, r, a, s;
 				const o = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					i = null == o ? void 0 : o.contracts,
 					c = null == i ? void 0 : i.unlocked,
-					l = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					m = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
-					b = !m && l === d.a.Stellar,
-					p = b ? null == o ? void 0 : o.issuerAddress : null == c ? void 0 : c.address,
-					h = b ? (null == o ? void 0 : o.decimals) || 7 : (null == c ? void 0 : c.decimals) || 0;
+					d = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
+					u = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
+					m = (null == c ? void 0 : c.decimals) || 0,
+					b = "1" + "0".repeat(m);
 				return {
-					blockchainProvider: l,
-					contractAddress: p || "",
+					blockchainProvider: d,
+					contractAddress: (null == c ? void 0 : c.address) || "",
 					contracts: i,
-					decimals: h,
-					displayConversion: "1" + "0".repeat(h),
-					images: e.images || u,
-					inTransition: m,
+					decimals: m,
+					displayConversion: b,
+					images: e.images || l,
+					inTransition: u,
 					name: e.name,
 					nomenclature: null === (s = e.extra) || void 0 === s ? void 0 : s.nomenclature,
 					polls: e.polls,
-					symbol: b ? (null == o ? void 0 : o.token) || "PHOTON" : (null == c ? void 0 : c.token) || ""
+					symbol: (null == c ? void 0 : c.token) || ""
 				}
 			}
-			var b = (e = l, t) => {
+			var m = (e = d, t) => {
 				switch (t.type) {
 					case c.a: {
 						const {
@@ -1814,15 +1812,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: m(r)
+							[n]: u(r)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const p = {};
-			var h = (e = p, t) => {
+			const b = {};
+			var p = (e = b, t) => {
 				switch (t.type) {
 					case c.n: {
 						const {
@@ -1848,8 +1846,8 @@
 			};
 			t.a = Object(r.c)({
 				claims: i,
-				points: b,
-				publicWallets: h
+				points: m,
+				publicWallets: p
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -1947,4 +1945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.bdd02e9caedf14ae75c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.f5f0d9c7b8ab7c4d7a1a.js.map

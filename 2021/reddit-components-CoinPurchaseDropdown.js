@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.9cc01ebdb97e34ff50be.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.ed442580a6fcc50ff106.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown", "GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, r) {
@@ -730,8 +730,8 @@
 				D = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				R = r("./src/reddit/models/Gold/Premium/index.ts"),
 				F = r("./src/reddit/selectors/crypto/points.ts"),
-				H = r("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
-				U = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				U = r("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
+				H = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				G = r("./src/reddit/selectors/user.ts"),
 				B = r("./src/reddit/components/LottieAnimation/index.tsx"),
 				$ = r("./src/reddit/controls/Button/index.tsx"),
@@ -777,18 +777,18 @@
 				V = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
 				W = r.n(V);
 			const Z = Object(k.c)({
-					coinPackages: U.d,
+					coinPackages: H.d,
 					communityPointsConversionEnabled: L.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
 						var r;
 						const n = Object(N.q)(e, t);
 						return null === (r = Object(F.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
-					isFreeAwardEventEnabled: e => Object(H.a)(e) && Object(U.g)(e),
+					isFreeAwardEventEnabled: e => Object(U.a)(e) && Object(H.g)(e),
 					isPremiumSubscriber: G.t,
-					premiumPackages: U.i,
-					purchaseCatalogError: U.j,
-					purchaseCatalogPending: U.k
+					premiumPackages: H.i,
+					purchaseCatalogError: H.j,
+					purchaseCatalogPending: H.k
 				}),
 				Y = Object(v.b)(Z, e => ({
 					onClickClaimFreeAward: () => e(Object(T.h)(S.a.ECON_CLAIM_FREE_AWARD_MODAL)),
@@ -1404,7 +1404,7 @@
 					endpoint: `${o.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const p = (e, t, r) => ({
 					type: "burn-link",
@@ -1527,39 +1527,37 @@
 							return e
 					}
 				},
-				i = r("./src/reddit/actions/governance/constants.ts"),
-				d = r("./src/reddit/endpoints/governance/crypto.ts");
-			const l = {},
-				u = {
+				i = r("./src/reddit/actions/governance/constants.ts");
+			const d = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function m(e) {
+			function u(e) {
 				var t, r, n, o, a;
 				const s = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					c = null == s ? void 0 : s.contracts,
 					i = null == c ? void 0 : c.unlocked,
-					l = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
-					m = !!(null === (o = e.walletProvider) || void 0 === o ? void 0 : o.inTransition),
-					p = !m && l === d.a.Stellar,
-					b = p ? null == s ? void 0 : s.issuerAddress : null == i ? void 0 : i.address,
-					h = p ? (null == s ? void 0 : s.decimals) || 7 : (null == i ? void 0 : i.decimals) || 0;
+					d = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
+					u = !!(null === (o = e.walletProvider) || void 0 === o ? void 0 : o.inTransition),
+					m = (null == i ? void 0 : i.decimals) || 0,
+					p = "1" + "0".repeat(m);
 				return {
-					blockchainProvider: l,
-					contractAddress: b || "",
+					blockchainProvider: d,
+					contractAddress: (null == i ? void 0 : i.address) || "",
 					contracts: c,
-					decimals: h,
-					displayConversion: "1" + "0".repeat(h),
-					images: e.images || u,
-					inTransition: m,
+					decimals: m,
+					displayConversion: p,
+					images: e.images || l,
+					inTransition: u,
 					name: e.name,
 					nomenclature: null === (a = e.extra) || void 0 === a ? void 0 : a.nomenclature,
 					polls: e.polls,
-					symbol: p ? (null == s ? void 0 : s.token) || "PHOTON" : (null == i ? void 0 : i.token) || ""
+					symbol: (null == i ? void 0 : i.token) || ""
 				}
 			}
-			var p = (e = l, t) => {
+			var m = (e = d, t) => {
 				switch (t.type) {
 					case i.a: {
 						const {
@@ -1568,15 +1566,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[r]: m(n)
+							[r]: u(n)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const b = {};
-			var h = (e = b, t) => {
+			const p = {};
+			var b = (e = p, t) => {
 				switch (t.type) {
 					case i.n: {
 						const {
@@ -1602,8 +1600,8 @@
 			};
 			t.a = Object(n.c)({
 				claims: c,
-				points: p,
-				publicWallets: h
+				points: m,
+				publicWallets: b
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, r) {
@@ -1649,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.9cc01ebdb97e34ff50be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.ed442580a6fcc50ff106.js.map

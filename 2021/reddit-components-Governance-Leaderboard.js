@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.b0212a8e238ec8f6c1a2.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.4cbe4679e73dcaed0b5e.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -11,55 +11,44 @@
 		},
 		"./src/reddit/actions/badge.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
+			r.d(t, "b", (function() {
 				return i
-			})), r.d(t, "b", (function() {
-				return d
 			})), r.d(t, "a", (function() {
+				return d
+			})), r.d(t, "e", (function() {
 				return c
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "c", (function() {
 				return a
 			})), r.d(t, "d", (function() {
 				return u
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "h", (function() {
 				return l
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "f", (function() {
 				return m
 			})), r.d(t, "g", (function() {
 				return p
-			})), r.d(t, "h", (function() {
-				return b
+			})), r.d(t, "i", (function() {
+				return O
 			})), r.d(t, "j", (function() {
-				return E
-			})), r.d(t, "k", (function() {
-				return I
-			})), r.d(t, "l", (function() {
-				return S
-			})), r.d(t, "m", (function() {
-				return N
+				return y
 			}));
 			var n = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/reddit/actions/governance/errorToast.ts"),
 				o = r("./src/reddit/endpoints/governance/badges.ts");
-			const i = "BADGE__BADGE_MODAL_OPENED",
-				d = "BADGE__BADGE_APPLICATION_SUCCESS",
-				c = "BADGE__BADGE_APPLICATION_FAILURE",
-				a = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
-				u = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
-				l = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
-				m = "BADGE__USER_BADGES_FETCH_SUCCESS",
-				p = "BADGE__USER_BADGES_FETCH_FAILURE",
-				b = "BADGE__USER_BADGES_FETCH_PENDING",
-				E = Object(n.a)(i),
-				_ = Object(n.a)(d),
-				f = Object(n.a)(c),
-				h = (Object(n.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(n.a)(a)),
-				O = Object(n.a)(u),
-				y = Object(n.a)(l),
-				C = Object(n.a)(m),
-				v = Object(n.a)(p),
-				g = Object(n.a)(b),
-				I = ({
+			const i = "BADGE__BADGE_APPLICATION_SUCCESS",
+				d = "BADGE__BADGE_APPLICATION_FAILURE",
+				c = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
+				a = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
+				u = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
+				l = "BADGE__USER_BADGES_FETCH_SUCCESS",
+				m = "BADGE__USER_BADGES_FETCH_FAILURE",
+				p = "BADGE__USER_BADGES_FETCH_PENDING",
+				b = Object(n.a)(i),
+				E = Object(n.a)(d),
+				_ = (Object(n.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(n.a)(c)),
+				f = Object(n.a)(a),
+				h = Object(n.a)(u),
+				O = (Object(n.a)(l), Object(n.a)(m), Object(n.a)(p), ({
 					badgeIds: e,
 					subredditId: t
 				}) => async (r, n, {
@@ -71,13 +60,13 @@
 						const n = (d.users.appliedBadges[c.id] || {})[t] || [],
 							a = e.length ? e[0] : n[0],
 							u = !!e.length;
-						r(_({
+						r(b({
 							badgeIds: e,
 							subredditId: t,
 							userId: c.id
 						}));
 						const l = await Object(o.a)(i(), t, a, u);
-						l.ok || (r(f({
+						l.ok || (r(E({
 							badgeIds: e,
 							subredditId: t,
 							error: l.error,
@@ -85,42 +74,24 @@
 							userId: c.id
 						})), Object(s.a)(r, l.error))
 					}
-				}, S = ({
+				}),
+				y = ({
 					subredditId: e,
 					userIds: t
 				}) => async (r, n, {
 					apiContext: s
 				}) => {
-					r(y({
+					r(h({
 						subredditId: e
 					}));
 					const i = await Object(o.b)(s(), e, t);
-					i.ok ? r(h({
+					i.ok ? r(_({
 						...i.body,
 						subredditId: e
-					})) : r(O({
+					})) : r(f({
 						subredditId: e,
 						error: i.error
 					}))
-				}, N = ({
-					subredditId: e
-				}) => async (t, r, {
-					apiContext: n
-				}) => {
-					const s = r().user.account;
-					if (s) {
-						t(g({
-							subredditId: e
-						}));
-						const r = await Object(o.c)(n(), e, s.id);
-						r.ok ? t(C({
-							...r.body,
-							subredditId: e
-						})) : t(v({
-							subredditId: e,
-							error: r.error
-						}))
-					}
 				}
 		},
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, r) {
@@ -478,7 +449,7 @@
 				}
 			}
 			const A = [],
-				P = Object(i.c)({
+				T = Object(i.c)({
 					badgeIds: (e, {
 						subredditId: t,
 						userId: r
@@ -489,7 +460,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: b.d.spSpecialMemberships
 				}),
-				T = Object(i.c)({
+				P = Object(i.c)({
 					badgeIds: (e, {
 						subredditId: t
 					}) => {
@@ -518,8 +489,8 @@
 					badges: o
 				}, n))
 			}
-			const x = Object(o.b)(P, D)(j),
-				R = Object(o.b)(T, D)(j)
+			const x = Object(o.b)(T, D)(j),
+				R = Object(o.b)(P, D)(j)
 		},
 		"./src/reddit/components/Governance/Leaderboard/EntryDivider/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -624,7 +595,7 @@
 						data: c.body.leaderboard
 					}));
 					const r = c.body.leaderboard.filter(h).map(e => e.userId);
-					t(Object(a.l)({
+					t(Object(a.j)({
 						subredditId: e,
 						userIds: r
 					}))
@@ -642,7 +613,7 @@
 				N = r("./src/reddit/components/Governance/Leaderboard/EntryDivider/index.m.less"),
 				A = r.n(N);
 
-			function P(e) {
+			function T(e) {
 				const t = Object(S.a)(e.entry.numUsers.toString()),
 					r = 1 === e.entry.numUsers ? s.fbt._("User", null, {
 						hk: "167Ce9"
@@ -659,13 +630,13 @@
 					className: A.a.line
 				}))
 			}
-			var T = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
+			var P = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				D = r("./node_modules/uuid/v4.js"),
 				j = r.n(D),
 				x = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
 				R = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				k = r("./src/reddit/featureFlags/index.ts"),
-				B = r("./src/reddit/helpers/governance/tokens.ts"),
+				B = r("./src/reddit/featureFlags/index.ts"),
+				k = r("./src/reddit/helpers/governance/tokens.ts"),
 				L = r("./src/reddit/selectors/telemetry.ts"),
 				M = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
 				U = r.n(M);
@@ -686,7 +657,7 @@
 			};
 			const G = Object(c.c)({
 				accountId: e => e.user.account ? e.user.account.id : void 0,
-				badgesEnabled: e => k.d.spBadges(e),
+				badgesEnabled: e => B.d.spBadges(e),
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(v.b)(e, t)
@@ -694,7 +665,7 @@
 			var F = Object(R.c)(Object(d.b)(G)((function(e) {
 					var t;
 					const r = j()();
-					return i.a.createElement(T.a, {
+					return i.a.createElement(P.a, {
 						className: Object(I.a)(U.a.container, e.className, {
 							[U.a.currentUser]: e.entry.userId === e.accountId
 						}),
@@ -721,7 +692,7 @@
 						className: U.a.rank
 					}, i.a.createElement("div", {
 						className: U.a.points
-					}, Object(S.a)(Object(B.b)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
+					}, Object(S.a)(Object(k.b)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
 						className: U.a.position
 					}, `#${Object(S.a)(e.entry.position.toString())}`)))
 				}))),
@@ -764,7 +735,7 @@
 									key: e.userId
 								});
 							case n.Divider:
-								return i.a.createElement(P, {
+								return i.a.createElement(T, {
 									className: V.a.divider,
 									entry: e,
 									key: "divider"
@@ -978,7 +949,7 @@
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const p = (e, t, r) => ({
 					type: "burn-link",
@@ -1448,39 +1419,37 @@
 							return e
 					}
 				},
-				c = r("./src/reddit/actions/governance/constants.ts"),
-				a = r("./src/reddit/endpoints/governance/crypto.ts");
-			const u = {},
-				l = {
+				c = r("./src/reddit/actions/governance/constants.ts");
+			const a = {},
+				u = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function m(e) {
+			function l(e) {
 				var t, r, n, s, o;
 				const i = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					d = null == i ? void 0 : i.contracts,
 					c = null == d ? void 0 : d.unlocked,
-					u = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
-					m = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
-					p = !m && u === a.a.Stellar,
-					b = p ? null == i ? void 0 : i.issuerAddress : null == c ? void 0 : c.address,
-					E = p ? (null == i ? void 0 : i.decimals) || 7 : (null == c ? void 0 : c.decimals) || 0;
+					a = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
+					l = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
+					m = (null == c ? void 0 : c.decimals) || 0,
+					p = "1" + "0".repeat(m);
 				return {
-					blockchainProvider: u,
-					contractAddress: b || "",
+					blockchainProvider: a,
+					contractAddress: (null == c ? void 0 : c.address) || "",
 					contracts: d,
-					decimals: E,
-					displayConversion: "1" + "0".repeat(E),
-					images: e.images || l,
-					inTransition: m,
+					decimals: m,
+					displayConversion: p,
+					images: e.images || u,
+					inTransition: l,
 					name: e.name,
 					nomenclature: null === (o = e.extra) || void 0 === o ? void 0 : o.nomenclature,
 					polls: e.polls,
-					symbol: p ? (null == i ? void 0 : i.token) || "PHOTON" : (null == c ? void 0 : c.token) || ""
+					symbol: (null == c ? void 0 : c.token) || ""
 				}
 			}
-			var p = (e = u, t) => {
+			var m = (e = a, t) => {
 				switch (t.type) {
 					case c.a: {
 						const {
@@ -1489,15 +1458,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[r]: m(n)
+							[r]: l(n)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const b = {};
-			var E = (e = b, t) => {
+			const p = {};
+			var b = (e = p, t) => {
 				switch (t.type) {
 					case c.n: {
 						const {
@@ -1523,8 +1492,8 @@
 			};
 			t.a = Object(n.c)({
 				claims: d,
-				points: p,
-				publicWallets: E
+				points: m,
+				publicWallets: b
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, r) {
@@ -1595,15 +1564,15 @@
 			})), r.d(t, "e", (function() {
 				return A
 			})), r.d(t, "d", (function() {
-				return P
-			})), r.d(t, "j", (function() {
 				return T
+			})), r.d(t, "j", (function() {
+				return P
 			})), r.d(t, "p", (function() {
 				return D
 			})), r.d(t, "k", (function() {
 				return R
 			})), r.d(t, "r", (function() {
-				return B
+				return k
 			})), r.d(t, "x", (function() {
 				return L
 			})), r.d(t, "t", (function() {
@@ -1732,7 +1701,7 @@
 				return r ? [].concat(r.locked, r.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : E
 			}
 
-			function P(e, t) {
+			function T(e, t) {
 				const r = e.economics.subredditPremium[t];
 				if (r && r.status === m.a.Fetched) {
 					const e = r.data.collections[d.a.Cosmetic];
@@ -1741,7 +1710,7 @@
 				return E
 			}
 
-			function T(e, t) {
+			function P(e, t) {
 				return N(e, t, d.a.Cosmetic, d.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
 			}
 			const D = e => {
@@ -1785,7 +1754,7 @@
 					membershipAlt: "Supporter Membership"
 				},
 				R = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
-				k = (e, t) => {
+				B = (e, t) => {
 					if (!t) return {};
 					const r = x.prices;
 					R(e, t).forEach(e => {
@@ -1794,11 +1763,11 @@
 					const n = _(e, t);
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
-				B = (e, t) => {
+				k = (e, t) => {
 					var r, n, s, o;
 					const i = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || x;
 					return {
-						prices: k(e, t),
+						prices: B(e, t),
 						member: i.member || x.member,
 						memberPlural: i.memberPlural || x.memberPlural,
 						memberAlt: i.memberAlt || x.memberAlt,
@@ -1852,4 +1821,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.b0212a8e238ec8f6c1a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.4cbe4679e73dcaed0b5e.js.map

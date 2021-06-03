@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f60e3a4d7ba38c3d8179.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.b9e68ec5208d2d1f1f7c.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3152,7 +3152,7 @@
 					endpoint: `${n.a.metaUrl}/crypto/${t}/registrations/${s}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(i || (i = {}));
 			const p = (e, t, s) => ({
 					type: "burn-link",
@@ -4291,9 +4291,7 @@
 					t5_2wlj3: E,
 					t5_2l3wpx: E,
 					t5_vsb5g: E,
-					t5_37jgj: E,
-					t5_2t9ha: E,
-					t5_2a3y8x: E
+					t5_37jgj: E
 				};
 			var I = function(e) {
 					return {
@@ -6536,39 +6534,37 @@
 							return e
 					}
 				},
-				c = s("./src/reddit/actions/governance/constants.ts"),
-				d = s("./src/reddit/endpoints/governance/crypto.ts");
-			const l = {},
-				m = {
+				c = s("./src/reddit/actions/governance/constants.ts");
+			const d = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function u(e) {
+			function m(e) {
 				var t, s, i, n, r;
 				const a = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					o = null == a ? void 0 : a.contracts,
 					c = null == o ? void 0 : o.unlocked,
-					l = null !== (i = null === (s = e.walletProvider) || void 0 === s ? void 0 : s.provider) && void 0 !== i ? i : e.provider,
-					u = !!(null === (n = e.walletProvider) || void 0 === n ? void 0 : n.inTransition),
-					p = !u && l === d.a.Stellar,
-					h = p ? null == a ? void 0 : a.issuerAddress : null == c ? void 0 : c.address,
-					b = p ? (null == a ? void 0 : a.decimals) || 7 : (null == c ? void 0 : c.decimals) || 0;
+					d = null !== (i = null === (s = e.walletProvider) || void 0 === s ? void 0 : s.provider) && void 0 !== i ? i : e.provider,
+					m = !!(null === (n = e.walletProvider) || void 0 === n ? void 0 : n.inTransition),
+					u = (null == c ? void 0 : c.decimals) || 0,
+					p = "1" + "0".repeat(u);
 				return {
-					blockchainProvider: l,
-					contractAddress: h || "",
+					blockchainProvider: d,
+					contractAddress: (null == c ? void 0 : c.address) || "",
 					contracts: o,
-					decimals: b,
-					displayConversion: "1" + "0".repeat(b),
-					images: e.images || m,
-					inTransition: u,
+					decimals: u,
+					displayConversion: p,
+					images: e.images || l,
+					inTransition: m,
 					name: e.name,
 					nomenclature: null === (r = e.extra) || void 0 === r ? void 0 : r.nomenclature,
 					polls: e.polls,
-					symbol: p ? (null == a ? void 0 : a.token) || "PHOTON" : (null == c ? void 0 : c.token) || ""
+					symbol: (null == c ? void 0 : c.token) || ""
 				}
 			}
-			var p = (e = l, t) => {
+			var u = (e = d, t) => {
 				switch (t.type) {
 					case c.a: {
 						const {
@@ -6577,15 +6573,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[s]: u(i)
+							[s]: m(i)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const h = {};
-			var b = (e = h, t) => {
+			const p = {};
+			var h = (e = p, t) => {
 				switch (t.type) {
 					case c.n: {
 						const {
@@ -6611,8 +6607,8 @@
 			};
 			t.a = Object(i.c)({
 				claims: o,
-				points: p,
-				publicWallets: b
+				points: u,
+				publicWallets: h
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, s) {
@@ -6992,4 +6988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f60e3a4d7ba38c3d8179.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.b9e68ec5208d2d1f1f7c.js.map

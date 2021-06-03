@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0d5257f563421301bf55.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6bd037b582836f86a535.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -2649,7 +2649,7 @@
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${r}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const p = (e, t, r) => ({
 					type: "burn-link",
@@ -2951,39 +2951,37 @@
 							return e
 					}
 				},
-				i = r("./src/reddit/actions/governance/constants.ts"),
-				l = r("./src/reddit/endpoints/governance/crypto.ts");
-			const d = {},
-				u = {
+				i = r("./src/reddit/actions/governance/constants.ts");
+			const l = {},
+				d = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function m(e) {
+			function u(e) {
 				var t, r, n, a, s;
 				const o = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					c = null == o ? void 0 : o.contracts,
 					i = null == c ? void 0 : c.unlocked,
-					d = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
-					m = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
-					p = !m && d === l.a.Stellar,
-					f = p ? null == o ? void 0 : o.issuerAddress : null == i ? void 0 : i.address,
-					h = p ? (null == o ? void 0 : o.decimals) || 7 : (null == i ? void 0 : i.decimals) || 0;
+					l = null !== (n = null === (r = e.walletProvider) || void 0 === r ? void 0 : r.provider) && void 0 !== n ? n : e.provider,
+					u = !!(null === (a = e.walletProvider) || void 0 === a ? void 0 : a.inTransition),
+					m = (null == i ? void 0 : i.decimals) || 0,
+					p = "1" + "0".repeat(m);
 				return {
-					blockchainProvider: d,
-					contractAddress: f || "",
+					blockchainProvider: l,
+					contractAddress: (null == i ? void 0 : i.address) || "",
 					contracts: c,
-					decimals: h,
-					displayConversion: "1" + "0".repeat(h),
-					images: e.images || u,
-					inTransition: m,
+					decimals: m,
+					displayConversion: p,
+					images: e.images || d,
+					inTransition: u,
 					name: e.name,
 					nomenclature: null === (s = e.extra) || void 0 === s ? void 0 : s.nomenclature,
 					polls: e.polls,
-					symbol: p ? (null == o ? void 0 : o.token) || "PHOTON" : (null == i ? void 0 : i.token) || ""
+					symbol: (null == i ? void 0 : i.token) || ""
 				}
 			}
-			var p = (e = d, t) => {
+			var m = (e = l, t) => {
 				switch (t.type) {
 					case i.a: {
 						const {
@@ -2992,15 +2990,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[r]: m(n)
+							[r]: u(n)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const f = {};
-			var h = (e = f, t) => {
+			const p = {};
+			var f = (e = p, t) => {
 				switch (t.type) {
 					case i.n: {
 						const {
@@ -3026,8 +3024,8 @@
 			};
 			t.a = Object(n.c)({
 				claims: c,
-				points: p,
-				publicWallets: h
+				points: m,
+				publicWallets: f
 			})
 		},
 		"./src/reddit/reducers/features/econPurchase/index.ts": function(e, t, r) {
@@ -3227,4 +3225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0d5257f563421301bf55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6bd037b582836f86a535.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.2fdebbd840689dc371c6.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.61d1bee983480c32a307.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -435,7 +435,7 @@
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -689,39 +689,37 @@
 							return e
 					}
 				},
-				d = n("./src/reddit/actions/governance/constants.ts"),
-				u = n("./src/reddit/endpoints/governance/crypto.ts");
-			const a = {},
-				l = {
+				d = n("./src/reddit/actions/governance/constants.ts");
+			const u = {},
+				a = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function _(e) {
+			function l(e) {
 				var t, n, r, s, i;
 				const o = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					c = null == o ? void 0 : o.contracts,
 					d = null == c ? void 0 : c.unlocked,
-					a = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					_ = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
-					b = !_ && a === u.a.Stellar,
-					E = b ? null == o ? void 0 : o.issuerAddress : null == d ? void 0 : d.address,
-					f = b ? (null == o ? void 0 : o.decimals) || 7 : (null == d ? void 0 : d.decimals) || 0;
+					u = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
+					l = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
+					_ = (null == d ? void 0 : d.decimals) || 0,
+					b = "1" + "0".repeat(_);
 				return {
-					blockchainProvider: a,
-					contractAddress: E || "",
+					blockchainProvider: u,
+					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: c,
-					decimals: f,
-					displayConversion: "1" + "0".repeat(f),
-					images: e.images || l,
-					inTransition: _,
+					decimals: _,
+					displayConversion: b,
+					images: e.images || a,
+					inTransition: l,
 					name: e.name,
 					nomenclature: null === (i = e.extra) || void 0 === i ? void 0 : i.nomenclature,
 					polls: e.polls,
-					symbol: b ? (null == o ? void 0 : o.token) || "PHOTON" : (null == d ? void 0 : d.token) || ""
+					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var b = (e = a, t) => {
+			var _ = (e = u, t) => {
 				switch (t.type) {
 					case d.a: {
 						const {
@@ -730,15 +728,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: _(r)
+							[n]: l(r)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const E = {};
-			var f = (e = E, t) => {
+			const b = {};
+			var E = (e = b, t) => {
 				switch (t.type) {
 					case d.n: {
 						const {
@@ -764,8 +762,8 @@
 			};
 			t.a = Object(r.c)({
 				claims: c,
-				points: b,
-				publicWallets: f
+				points: _,
+				publicWallets: E
 			})
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
@@ -892,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.2fdebbd840689dc371c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.61d1bee983480c32a307.js.map

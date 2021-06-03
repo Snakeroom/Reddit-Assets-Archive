@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.884c1428ebe22c1d0ca2.js
-// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.aa7703efcd837d2904ea.js
+// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -12918,7 +12918,7 @@
 					endpoint: `${r.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader", e.Stellar = "stellar"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(o || (o = {}));
 			const p = (e, t, n) => ({
 					type: "burn-link",
@@ -22555,39 +22555,37 @@
 							return e
 					}
 				},
-				c = n("./src/reddit/actions/governance/constants.ts"),
-				d = n("./src/reddit/endpoints/governance/crypto.ts");
-			const l = {},
-				u = {
+				c = n("./src/reddit/actions/governance/constants.ts");
+			const d = {},
+				l = {
 					filled: "img/communityPoints/default_filled.png",
 					grey: "img/communityPoints/default_grey.png"
 				};
 
-			function m(e) {
+			function u(e) {
 				var t, n, o, r, s;
 				const a = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					i = null == a ? void 0 : a.contracts,
 					c = null == i ? void 0 : i.unlocked,
-					l = null !== (o = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== o ? o : e.provider,
-					m = !!(null === (r = e.walletProvider) || void 0 === r ? void 0 : r.inTransition),
-					p = !m && l === d.a.Stellar,
-					b = p ? null == a ? void 0 : a.issuerAddress : null == c ? void 0 : c.address,
-					h = p ? (null == a ? void 0 : a.decimals) || 7 : (null == c ? void 0 : c.decimals) || 0;
+					d = null !== (o = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== o ? o : e.provider,
+					u = !!(null === (r = e.walletProvider) || void 0 === r ? void 0 : r.inTransition),
+					m = (null == c ? void 0 : c.decimals) || 0,
+					p = "1" + "0".repeat(m);
 				return {
-					blockchainProvider: l,
-					contractAddress: b || "",
+					blockchainProvider: d,
+					contractAddress: (null == c ? void 0 : c.address) || "",
 					contracts: i,
-					decimals: h,
-					displayConversion: "1" + "0".repeat(h),
-					images: e.images || u,
-					inTransition: m,
+					decimals: m,
+					displayConversion: p,
+					images: e.images || l,
+					inTransition: u,
 					name: e.name,
 					nomenclature: null === (s = e.extra) || void 0 === s ? void 0 : s.nomenclature,
 					polls: e.polls,
-					symbol: p ? (null == a ? void 0 : a.token) || "PHOTON" : (null == c ? void 0 : c.token) || ""
+					symbol: (null == c ? void 0 : c.token) || ""
 				}
 			}
-			var p = (e = l, t) => {
+			var m = (e = d, t) => {
 				switch (t.type) {
 					case c.a: {
 						const {
@@ -22596,15 +22594,15 @@
 						} = t.payload;
 						return {
 							...e,
-							[n]: m(o)
+							[n]: u(o)
 						}
 					}
 					default:
 						return e
 				}
 			};
-			const b = {};
-			var h = (e = b, t) => {
+			const p = {};
+			var b = (e = p, t) => {
 				switch (t.type) {
 					case c.n: {
 						const {
@@ -22630,8 +22628,8 @@
 			};
 			t.a = Object(o.c)({
 				claims: i,
-				points: p,
-				publicWallets: h
+				points: m,
+				publicWallets: b
 			})
 		},
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, n) {
@@ -24408,4 +24406,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.884c1428ebe22c1d0ca2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.aa7703efcd837d2904ea.js.map
