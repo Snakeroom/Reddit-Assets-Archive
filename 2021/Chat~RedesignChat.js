@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d311da0ff732110d4e4b.js
-// Retrieved at 6/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ff88d3e65ca22c643e0a.js
+// Retrieved at 6/3/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1035,7 +1035,7 @@
 							message: n,
 							channelId: e,
 							clientMessageId: c
-						})), s(Object(d.H)(t.messageId)), s(Object(E.c)(t))
+						})), s(Object(d.I)(t.messageId)), s(Object(E.c)(t))
 					}).catch(e => {
 						if (c) {
 							const t = `${e.code}: ${e.message}`;
@@ -1149,7 +1149,7 @@
 					} = e, r = n(), c = Object(N.t)(r) === e.channelId;
 					Object(w.b)(r) && c && t(Object(i.J)(e.channelId)), await t(Q({
 						[s]: e
-					})), t(Object(d.J)(a, s)), t(Object(E.c)(e))
+					})), t(Object(d.K)(a, s)), t(Object(E.c)(e))
 				}, X = "MESSAGE__ADD_LIST", Y = Object(o.a)(X), $ = (e, t) => async n => {
 					n(Y({
 						channelId: t,
@@ -1941,11 +1941,11 @@
 				return E
 			})), n.d(t, "k", (function() {
 				return C
-			})), n.d(t, "H", (function() {
+			})), n.d(t, "I", (function() {
 				return v
 			})), n.d(t, "N", (function() {
 				return _
-			})), n.d(t, "I", (function() {
+			})), n.d(t, "J", (function() {
 				return I
 			})), n.d(t, "Q", (function() {
 				return x
@@ -1953,7 +1953,7 @@
 				return y
 			})), n.d(t, "O", (function() {
 				return S
-			})), n.d(t, "F", (function() {
+			})), n.d(t, "G", (function() {
 				return w
 			})), n.d(t, "w", (function() {
 				return N
@@ -1973,7 +1973,7 @@
 				return U
 			})), n.d(t, "R", (function() {
 				return L
-			})), n.d(t, "G", (function() {
+			})), n.d(t, "H", (function() {
 				return R
 			})), n.d(t, "j", (function() {
 				return B
@@ -2023,9 +2023,9 @@
 				return oe
 			})), n.d(t, "t", (function() {
 				return ie
-			})), n.d(t, "J", (function() {
-				return le
 			})), n.d(t, "K", (function() {
+				return le
+			})), n.d(t, "F", (function() {
 				return de
 			}));
 			var s = n("./src/telemetry/models/Event.ts"),
@@ -2406,7 +2406,9 @@
 						noun: s.e.UserId,
 						source: s.f.Experiment,
 						action: s.d.Expose,
-						experiment: t,
+						experiment: {
+							...t
+						},
 						chat: {
 							...Object(u.A)(e),
 							...Object(u.g)(e)
@@ -4240,7 +4242,7 @@
 				const e = Object(c.d)(),
 					t = Object(c.e)(ut.c),
 					n = Object(c.e)(e => Object(ut.a)(e, bt.b.UiRefreshBubblePreset));
-				return t && n && e(Object(u.K)(n)), t ? r.a.createElement("div", {
+				return n && e(Object(u.F)(n)), t ? r.a.createElement("div", {
 					className: pt.a.ThemePrompt,
 					tabIndex: 0
 				}, r.a.createElement("button", {
@@ -5652,7 +5654,7 @@
 						t = Object(l.e)(y.a),
 						n = Object(l.e)(ze.b),
 						s = Object(l.e)(e => Object(ze.a)(e, xe.b.ChatMediaGiphy));
-					n && s && e(Object(f.K)(s));
+					s && e(Object(f.F)(s));
 					return n ? i.a.createElement(ot, {
 						onMouseDown: () => {
 							e(Object(b.c)({
@@ -6512,7 +6514,7 @@
 						isChannelHidden: i,
 						isThemesEnabled: l
 					} = e, u = Object(r.d)(), m = Object(r.e)(e => Object(re.a)(e, de.b.UiRefreshBubblePreset));
-					l && m && u(Object(d.K)(m));
+					m && u(Object(d.F)(m));
 					const g = Object(f.b)(Object(D.c)());
 					Object(b.a)("OverlayNavTooltip--Default", g.hide);
 					const O = s => {
@@ -6590,7 +6592,7 @@
 									return k.c.groupChannel.filter(e => k.d.muteBadging(e, s)).filter(e => k.d.unmuteBadging(e, s)).filter(e => k.d.muteNotifs(e, o)).filter(e => k.d.unmuteNotifs(e, o)).filter(e => k.d.hideChannel(e, i)).filter(e => k.d.changeTheme(e, l))
 							}
 						})();
-					return v && m && u(Object(d.K)(m)), a.a.createElement(a.a.Fragment, null, !1, a.a.createElement("button", {
+					return a.a.createElement(a.a.Fragment, null, !1, a.a.createElement("button", {
 						onClick: e => (e => {
 							e.stopPropagation(), null == g || g.toggle()
 						})(e),
@@ -14218,4 +14220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d311da0ff732110d4e4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.ff88d3e65ca22c643e0a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.6cf890c3a1bdcb564b70.js
-// Retrieved at 6/3/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.4ca20a07ed1dffe42435.js
+// Retrieved at 6/3/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.m.less": function(e, t, s) {
@@ -64,7 +64,7 @@
 				}),
 				K = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
-						e(Object(m.G)(s.id)), e((e => async (t, s, {
+						e(Object(m.H)(s.id)), e((e => async (t, s, {
 							apiContext: n
 						}) => {
 							const {
@@ -81,7 +81,7 @@
 						})).then(() => e(Object(i.a)()))
 					},
 					onReportMessage: (t, s, n) => {
-						e(Object(m.I)(s.messageId, t)), e(((e, t, s) => async (n, a, {
+						e(Object(m.J)(s.messageId, t)), e(((e, t, s) => async (n, a, {
 							apiContext: r
 						}) => {
 							const o = Object(u.a)(e, t),
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.6cf890c3a1bdcb564b70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.4ca20a07ed1dffe42435.js.map
