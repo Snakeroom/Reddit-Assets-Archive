@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7980996a7fdeab73abf8.js
-// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ed93c03589a0a317c0c4.js
+// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -175,7 +175,7 @@
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, L = Object(b.a)(O.b, g.a.upvoted), z = Object(b.a)(O.b, g.a.downvoted), M = Object(d.a)(I.j), V = Object(d.a)(I.i), H = Object(d.a)(I.e), K = Object(d.a)(I.f), $ = (Object(d.a)(I.c), Object(d.a)(I.d), ({
+				}, L = Object(b.a)(O.b, g.a.upvoted), z = Object(b.a)(O.b, g.a.downvoted), M = Object(d.a)(I.j), V = Object(d.a)(I.i), K = Object(d.a)(I.e), H = Object(d.a)(I.f), $ = (Object(d.a)(I.c), Object(d.a)(I.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -191,7 +191,7 @@
 							commentsPageKey: t
 						}),
 						a = c.depth;
-					s(H({
+					s(K({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -200,7 +200,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(K({
+					n(H({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -216,7 +216,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					r(H({
+					r(K({
 						commentId: c,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -1201,7 +1201,7 @@
 						experimentEligibilitySelector: r.a,
 						experimentName: e
 					});
-					return !(!n || Object(s.Hd)(n))
+					return !(!n || Object(s.Jd)(n))
 				},
 				d = o(s.ob),
 				c = o(s.qb),
@@ -1232,14 +1232,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Dc
-					}) === s.Nc.Enabled
+						experimentName: s.Fc
+					}) === s.Pc.Enabled
 				},
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Cc
-					}) === s.Mc.Enabled
+						experimentName: s.Ec
+					}) === s.Oc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
@@ -1268,4 +1268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7980996a7fdeab73abf8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ed93c03589a0a317c0c4.js.map

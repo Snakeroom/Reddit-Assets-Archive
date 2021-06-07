@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.bf777ff95a70b9b4bea0.js
-// Retrieved at 6/7/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.20a2da08fa26d74eb99a.js
+// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -463,8 +463,8 @@
 				U = n("./src/reddit/icons/svgs/EyeDouble/index.tsx"),
 				G = n("./src/reddit/hooks/useLocalStorage.ts"),
 				V = n("./src/config.ts"),
-				H = n("./src/higherOrderComponents/asModal/index.tsx"),
-				W = n("./src/reddit/controls/Button/index.tsx"),
+				W = n("./src/higherOrderComponents/asModal/index.tsx"),
+				H = n("./src/reddit/controls/Button/index.tsx"),
 				Y = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				K = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				q = n("./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less"),
@@ -472,16 +472,16 @@
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var X = Object(H.a)(({
+			var X = Object(W.a)(({
 					isPremiumSubscriber: e,
 					onReveal: t,
 					closeModal: n
 				}) => r.a.createElement("div", {
 					className: z.a.modal
-				}, r.a.createElement(W.q, {
+				}, r.a.createElement(H.q, {
 					className: z.a.closeButton,
 					Icon: Y.a,
-					priority: W.b.Plain,
+					priority: H.b.Plain,
 					onClick: n
 				}), r.a.createElement("header", {
 					className: z.a.header
@@ -690,7 +690,7 @@
 			const {
 				fbt: Ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var he = Object(H.a)((function({
+			var he = Object(W.a)((function({
 					isResolving: e,
 					isTokens: t,
 					onCancel: n,
@@ -698,10 +698,10 @@
 				}) {
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: fe.a.header
-					}, r.a.createElement(W.q, {
+					}, r.a.createElement(H.q, {
 						className: fe.a.closeButton,
 						Icon: Object(be.b)("close"),
-						priority: W.b.Plain,
+						priority: H.b.Plain,
 						onClick: n
 					}), r.a.createElement("h1", null, Ee._("Confirm Your Answer", null, {
 						hk: "4yIXaD"
@@ -715,22 +715,22 @@
 						hk: "3Nutvx"
 					})), r.a.createElement("div", {
 						className: fe.a.actions
-					}, r.a.createElement(W.l, {
+					}, r.a.createElement(H.l, {
 						disabled: e,
 						onClick: n,
-						priority: W.b.Secondary,
+						priority: H.b.Secondary,
 						redditStyle: !0,
-						size: W.c.S
+						size: H.c.S
 					}, Ee._("Cancel", null, {
 						hk: "4Gco5s"
-					})), r.a.createElement(W.i, {
+					})), r.a.createElement(H.i, {
 						className: fe.a.submitButton,
 						disabled: e,
 						onClick: () => {
 							s()
 						},
 						redditStyle: !0,
-						size: W.c.S
+						size: H.c.S
 					}, Ee._("Submit", null, {
 						hk: "ZLsi7"
 					})))))
@@ -845,7 +845,7 @@
 				userIsLoggedIn: S
 			}) => {
 				var N;
-				const [j, w] = Object(s.useState)(!1), [A, M] = Object(s.useState)(null), [T, U] = Object(s.useState)(null), [G, V] = Object(s.useState)(!1), [H, W] = Object(s.useState)(!1), Y = Object(_.a)(), K = Object(s.useCallback)(() => {
+				const [j, w] = Object(s.useState)(!1), [A, M] = Object(s.useState)(null), [T, U] = Object(s.useState)(null), [G, V] = Object(s.useState)(!1), [W, H] = Object(s.useState)(!1), Y = Object(_.a)(), K = Object(s.useCallback)(() => {
 					V(!1)
 				}, []), q = Object(s.useCallback)(() => {
 					M(null), U(null)
@@ -904,15 +904,15 @@
 					tournamentId: te,
 					userSelection: ne,
 					userIsLoggedOut: !S,
-					votePercentage: (ne || oe || H) && e.voteCount ? Math.floor(e.voteCount / $ * 100) : null,
-					isShowingHint: H
+					votePercentage: (ne || oe || W) && e.voteCount ? Math.floor(e.voteCount / $ * 100) : null,
+					isShowingHint: W
 				}))), r.a.createElement(ee, {
-					disabled: G || H || !!ne,
+					disabled: G || W || !!ne,
 					isEnded: oe,
 					userSelection: ne,
-					isShowingHint: H,
+					isShowingHint: W,
 					tournamentId: te,
-					onReveal: () => W(!0)
+					onReveal: () => H(!0)
 				}), r.a.createElement("div", {
 					className: ve.a.predictionsCount
 				}, ae && $ > 0 && we._({
@@ -1594,7 +1594,7 @@
 			})), n.d(t, "g", (function() {
 				return V
 			})), n.d(t, "m", (function() {
-				return H
+				return W
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/featureFlags/index.ts"),
@@ -1823,7 +1823,7 @@
 						if (s && s.data) return !!s.data[n]
 					}
 				},
-				H = e => e.economics.pointsCopy.data
+				W = e => e.economics.pointsCopy.data
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
@@ -1867,7 +1867,7 @@
 						experimentEligibilitySelector: r.a,
 						experimentName: e
 					});
-					return !(!n || Object(s.Hd)(n))
+					return !(!n || Object(s.Jd)(n))
 				},
 				i = o(s.ob),
 				a = o(s.qb),
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.bf777ff95a70b9b4bea0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.20a2da08fa26d74eb99a.js.map

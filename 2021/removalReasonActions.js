@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.cc1d3f9fffbd6b1b2e3c.js
-// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.96dd5653d67969005634.js
+// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -1974,7 +1974,7 @@
 								experimentName: o.x,
 								expEventOverride: t
 							});
-							return !!(Object(o.Hd)(n) ? void 0 : n)
+							return !!(Object(o.Jd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -3163,7 +3163,7 @@
 						experimentEligibilitySelector: r.a,
 						experimentName: e
 					});
-					return !(!n || Object(s.Hd)(n))
+					return !(!n || Object(s.Jd)(n))
 				},
 				c = o(s.ob),
 				d = o(s.qb),
@@ -3194,14 +3194,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Dc
-					}) === s.Nc.Enabled
+						experimentName: s.Fc
+					}) === s.Pc.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Cc
-					}) === s.Mc.Enabled
+						experimentName: s.Ec
+					}) === s.Oc.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -3273,4 +3273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.cc1d3f9fffbd6b1b2e3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.96dd5653d67969005634.js.map

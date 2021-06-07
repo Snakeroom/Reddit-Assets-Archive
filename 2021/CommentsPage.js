@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e9cecff10d21503165a0.js
-// Retrieved at 6/7/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.72d5c953b6286278a03b.js
+// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6155,7 +6155,7 @@
 						name: n
 					} = t, r = Object(k.a)(s.newCommunityTheme.canvas);
 					let i = null;
-					return i = !e || Object(C.Hd)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
+					return i = !e || Object(C.Jd)(e) ? o.fbt._("More posts from the {name} community", [o.fbt._param("name", n)], {
 						hk: "2g363L"
 					}) : e === C.Xb.Nlp15Max ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
@@ -6179,7 +6179,7 @@
 						subredditOrProfile: d
 					} = this.props;
 					if (!i) return null;
-					const c = !!s && !Object(C.Hd)(s) && !t,
+					const c = !!s && !Object(C.Jd)(s) && !t,
 						l = {
 							hostPostId: o && o.id,
 							baseUrl: n.base_url,
@@ -8007,7 +8007,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.pb
 				});
-				return !(!t || Object(o.Hd)(t))
+				return !(!t || Object(o.Jd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -8020,8 +8020,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.Tc
-			}) === o.cd.Enabled
+				experimentName: o.Vc
+			}) === o.ed.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -8141,8 +8141,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.J)(e),
-					experimentName: o.Qc
-				}) === o.ad.Enabled
+					experimentName: o.Sc
+				}) === o.cd.Enabled
 			})(e) && (e => {
 				const t = Object(r.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -8166,4 +8166,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e9cecff10d21503165a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.72d5c953b6286278a03b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.068e99a467c7f086ef49.js
-// Retrieved at 6/7/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.5bbec6ffe04490108d5f.js
+// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
@@ -236,7 +236,7 @@
 					result: q
 				});
 			const Z = {};
-			var V = (e = Z, t) => {
+			var J = (e = Z, t) => {
 					switch (t.type) {
 						case w.n: {
 							const {
@@ -273,18 +273,18 @@
 							return e
 					}
 				},
-				J = Object(N.c)({
+				V = Object(N.c)({
 					api: A,
 					fetchedTokens: B,
 					inContext: F,
 					loadMore: M,
 					models: D,
 					search: G,
-					userOrder: V
+					userOrder: J
 				});
 			Object(y.a)({
 				features: {
-					banned: J
+					banned: V
 				}
 			});
 			const Y = Object(o.a)(w.o),
@@ -996,9 +996,9 @@
 				q = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				G = n("./src/reddit/selectors/bannedUser.ts"),
 				Z = n("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
-				V = n.n(Z);
+				J = n.n(Z);
 			const {
-				fbt: J
+				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(o.c)({
 				hasModMailPermissions: Object(u.a)(q.c.mail),
 				isUserBanned: (e, t) => !!Object(G.b)(e, {
@@ -1034,8 +1034,8 @@
 					}, s.a.createElement(W.a, {
 						name: "ban",
 						isFilled: !0,
-						className: V.a.icon
-					}), J._("Unban User", null, {
+						className: J.a.icon
+					}), V._("Unban User", null, {
 						hk: "1aASyW"
 					})) : s.a.createElement(z.a, {
 						role: "button",
@@ -1044,8 +1044,8 @@
 						}
 					}, s.a.createElement(W.a, {
 						name: "ban",
-						className: V.a.icon
-					}), J._("Ban User", null, {
+						className: J.a.icon
+					}), V._("Ban User", null, {
 						hk: "3OhuLx"
 					})), n && s.a.createElement(z.a, {
 						role: "button",
@@ -1054,8 +1054,8 @@
 						}
 					}, s.a.createElement(W.a, {
 						name: "mod_mute",
-						className: V.a.icon
-					}), J._("Mute User", null, {
+						className: J.a.icon
+					}), V._("Mute User", null, {
 						hk: "3MCujH"
 					})))
 				}
@@ -1097,7 +1097,7 @@
 					}
 				}, s.a.createElement(W.a, {
 					name: "tag",
-					className: V.a.icon
+					className: J.a.icon
 				}), ee._("Edit user flair", null, {
 					hk: "4mTxM"
 				}))),
@@ -3620,7 +3620,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: e
 					});
-					return !(!n || Object(r.Hd)(n))
+					return !(!n || Object(r.Jd)(n))
 				},
 				o = a(r.ob),
 				i = a(r.qb),
@@ -3641,4 +3641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.068e99a467c7f086ef49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5bbec6ffe04490108d5f.js.map
