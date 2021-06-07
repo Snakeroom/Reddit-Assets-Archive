@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6a1a84f543f689e5ef17.js
-// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.b2680989f24852287c3f.js
+// Retrieved at 6/7/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4732,14 +4732,18 @@
 		},
 		"./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			}));
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
 				o = s("./src/lib/classNames/index.ts"),
 				i = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				a = s("./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.m.less"),
 				c = s.n(a);
-			t.a = e => n.a.createElement("div", {
-				className: Object(o.a)(c.a.container, e.className)
+			const d = e => n.a.createElement("div", {
+				className: Object(o.a)(c.a.container, e.className),
+				"data-testid": "community-placeholder"
 			}, n.a.createElement("div", {
 				className: c.a.userInfo
 			}, n.a.createElement("div", {
@@ -5242,8 +5246,8 @@
 					subredditOrProfileAboutInfo: S.I,
 					userIsSubscriber: S.hb
 				}),
-				Xe = Object(o.b)(Ye);
-			var Ze = Qe(Xe(e => {
+				Xe = Object(o.b)(Ye),
+				Ze = Qe(Xe(e => {
 					const {
 						identifier: t,
 						listingKey: s,
@@ -5306,6 +5310,7 @@
 						})
 					}
 					return n.a.createElement(Re.a, {
+						"data-testid": "community-link",
 						className: Object(A.a)(Je.a.container, e.className),
 						onClick: m,
 						to: {
@@ -5334,8 +5339,8 @@
 					}, h), n.a.createElement("div", {
 						className: Je.a.buttonContainer
 					}, x))
-				})),
-				$e = s("./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.tsx"),
+				}));
+			var $e = s("./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.tsx"),
 				et = s("./src/reddit/helpers/trackers/screenview.ts"),
 				tt = s("./src/reddit/selectors/searchResults.ts"),
 				st = s("./src/reddit/selectors/tracking.ts"),
@@ -5442,14 +5447,13 @@
 					return t && t.getBoundingClientRect().bottom > window.innerHeight
 				}
 				render() {
-					return this.hasContent() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.hasAttemptedLoad() ? (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty()) : (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder())
-				}
-				renderEmpty() {
-					return this.renderList()
+					return this.hasContent() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.hasAttemptedLoad() ? (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderList()) : (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder())
 				}
 				renderPlaceholder() {
 					const e = !this.props.apiError;
-					return n.a.createElement("div", null, Ee()(10, t => n.a.createElement($e.a, {
+					return n.a.createElement("div", {
+						"data-testid": "communities-list-placeholder"
+					}, Ee()(10, t => n.a.createElement($e.a, {
 						className: it.a.communityPlaceholder,
 						key: t,
 						isLoading: e
@@ -5479,8 +5483,8 @@
 					return rt.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (r || s)))
 				}
 			}
-			var ut = Object(_.t)()(mt(Object(Te.c)(pt))),
-				ht = s("./src/reddit/helpers/history/index.ts"),
+			const ut = Object(_.t)()(mt(Object(Te.c)(pt)));
+			var ht = s("./src/reddit/helpers/history/index.ts"),
 				bt = s("./src/reddit/components/SearchResultsContent/Communities/index.m.less"),
 				xt = s.n(bt);
 			const {
@@ -5560,7 +5564,8 @@
 							e = ve()(e, 3), r = n.a.createElement(je.b, null, e)
 						}
 						return n.a.createElement("div", {
-							className: xt.a.container
+							className: xt.a.container,
+							"data-testid": "communities-list"
 						}, n.a.createElement("span", {
 							className: xt.a.title
 						}, ft._("Communities and users", null, {
@@ -5585,7 +5590,8 @@
 						})))
 					}
 					return n.a.createElement("div", {
-						className: xt.a.container
+						className: xt.a.container,
+						"data-testid": "communities-list"
 					}, !c.is_multi && n.a.createElement(ut, {
 						identifiers: s,
 						listingKey: r,
@@ -5599,8 +5605,8 @@
 					})))))
 				}
 			}
-			var _t = gt(Et(Object(Te.c)(jt))),
-				It = s("./src/reddit/helpers/search/hasSearchGrammar.ts"),
+			const _t = gt(Et(Object(Te.c)(jt)));
+			var It = s("./src/reddit/helpers/search/hasSearchGrammar.ts"),
 				St = s("./src/reddit/icons/svgs/SnooCrying/index.tsx"),
 				Pt = s("./src/reddit/components/SearchResultsContent/NoResults/index.m.less"),
 				Nt = s.n(Pt);
@@ -5611,42 +5617,43 @@
 			! function(e) {
 				e.Category = "category", e.Communities = "communities", e.Posts = "posts"
 			}(Tt || (Tt = {}));
-			var Lt = e => {
-					if (Object(It.a)(e.query)) return null;
-					let t = wt._("Sorry, there were no results for {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
-						className: Nt.a.semiBold
-					}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
-						hk: "1VMw0P"
-					})))], {
-						hk: "4eAu8m"
-					});
-					return e.type === Tt.Category ? t = wt._("Sorry, there were no results for the category {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
-						className: Nt.a.semiBold
-					}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
-						hk: "2vXsw0"
-					})))], {
-						hk: "42nr3u"
-					}) : e.type === Tt.Communities ? t = wt._("Sorry, there were no community results for {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
-						className: Nt.a.semiBold
-					}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
-						hk: "41Nh2l"
-					})))], {
-						hk: "ztoCJ"
-					}) : e.type === Tt.Posts && (t = wt._("Sorry, there were no post results for {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
-						className: Nt.a.semiBold
-					}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
-						hk: "2n8mO1"
-					})))], {
-						hk: "3fsKtO"
-					})), n.a.createElement("div", {
-						className: Nt.a.noResults
-					}, n.a.createElement(St.a, {
-						className: Nt.a.icon
-					}), n.a.createElement("div", {
-						className: Nt.a.text
-					}, t))
-				},
-				Ft = s("./src/reddit/components/PostList/index.tsx"),
+			const Lt = e => {
+				if (Object(It.a)(e.query)) return null;
+				let t = wt._("Sorry, there were no results for {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
+					className: Nt.a.semiBold
+				}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
+					hk: "1VMw0P"
+				})))], {
+					hk: "4eAu8m"
+				});
+				return e.type === Tt.Category ? t = wt._("Sorry, there were no results for the category {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
+					className: Nt.a.semiBold
+				}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
+					hk: "2vXsw0"
+				})))], {
+					hk: "42nr3u"
+				}) : e.type === Tt.Communities ? t = wt._("Sorry, there were no community results for {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
+					className: Nt.a.semiBold
+				}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
+					hk: "41Nh2l"
+				})))], {
+					hk: "ztoCJ"
+				}) : e.type === Tt.Posts && (t = wt._("Sorry, there were no post results for {=“ [search query] ”}", [wt._param("=“ [search query] ”", n.a.createElement("span", {
+					className: Nt.a.semiBold
+				}, wt._("“ {search query} ”", [wt._param("search query", e.query)], {
+					hk: "2n8mO1"
+				})))], {
+					hk: "3fsKtO"
+				})), n.a.createElement("div", {
+					className: Nt.a.noResults,
+					"data-testid": "no-results"
+				}, n.a.createElement(St.a, {
+					className: Nt.a.icon
+				}), n.a.createElement("div", {
+					className: Nt.a.text
+				}, t))
+			};
+			var Ft = s("./src/reddit/components/PostList/index.tsx"),
 				Mt = s("./src/reddit/components/ClassicPost/index.tsx"),
 				Rt = s("./src/reddit/constants/postLayout.ts"),
 				At = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
@@ -5723,8 +5730,8 @@
 						post: e
 					}) => e.isBlank ? At.a : Mt.SearchResultsClassicPost
 				}));
-			var qt = (e => Object(Te.c)(Vt(Ht(e))))(Ft.a),
-				Kt = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+			const qt = (e => Object(Te.c)(Vt(Ht(e))))(Ft.a);
+			var Kt = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				zt = s("./src/lib/lessComponent.tsx"),
 				Gt = s("./node_modules/lodash/fromPairs.js"),
 				Jt = s.n(Gt),
@@ -6161,8 +6168,8 @@
 					shouldShowSrSearchSwitcher: (e, {
 						pageLayer: t
 					}) => Object(_.M)(t)
-				});
-			var tr = $s(Object(o.b)(er)(e => {
+				}),
+				tr = $s(Object(o.b)(er)(e => {
 					const {
 						hasPostResults: t,
 						listingKey: s,
@@ -6198,8 +6205,8 @@
 						query: u,
 						type: h && u ? Tt.Category : Tt.Posts
 					}))
-				})),
-				sr = s("./src/config.ts"),
+				}));
+			var sr = s("./src/config.ts"),
 				rr = s("./src/lib/intersectionObserver/index.ts"),
 				nr = s("./src/lib/isUrl/index.ts"),
 				or = s("./src/lib/objectSelector/index.ts"),
@@ -6718,7 +6725,7 @@
 									if (c === l) return n.a.createElement(C, {
 										heroPostId: a,
 										listingKey: t,
-										key: "postsDiscoveryUnit",
+										key: e.id,
 										searchDiscoveryUnit: e,
 										searchOptions: d
 									});
@@ -6726,6 +6733,7 @@
 									if (c === h) return n.a.createElement(fn, {
 										searchDiscoveryUnit: e,
 										heroPostId: a,
+										key: e.id,
 										listingKey: t,
 										listingName: s,
 										location: r,
@@ -6737,7 +6745,7 @@
 								case pn.a.Communities:
 									if (c === l) return n.a.createElement(xe, {
 										listingKey: t,
-										key: "subredditsDiscoveryUnit",
+										key: e.id,
 										searchDiscoveryUnit: e,
 										searchOptions: d
 									});
@@ -6775,7 +6783,7 @@
 					viewTreatment: tt.i
 				}),
 				jn = Object(o.b)(kn, e => ({
-					morePostsRequested: () => e(c.k([a.Tb.Posts]))
+					morePostsRequested: () => e(Object(c.k)([a.Tb.Posts]))
 				})),
 				_n = Object(_.t)();
 			class In extends n.a.PureComponent {
@@ -8474,7 +8482,10 @@
 		},
 		"./src/reddit/helpers/search/hasSearchGrammar.ts": function(e, t, s) {
 			"use strict";
-			t.a = e => {
+			s.d(t, "a", (function() {
+				return r
+			}));
+			const r = e => {
 				return /\b(author|subreddit|flair|nsfw|self|selftext|site|url):[^\b]+/.test(e)
 			}
 		},
@@ -9085,4 +9096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6a1a84f543f689e5ef17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b2680989f24852287c3f.js.map

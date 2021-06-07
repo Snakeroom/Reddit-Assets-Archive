@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.dec8916a19d0366c12d4.js
-// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.ed123a45202aa0b7c2e2.js
+// Retrieved at 6/7/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -250,14 +250,18 @@
 		},
 		"./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return d
+			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./src/lib/classNames/index.ts"),
 				a = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				o = s("./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.m.less"),
 				c = s.n(o);
-			t.a = e => r.a.createElement("div", {
-				className: Object(i.a)(c.a.container, e.className)
+			const d = e => r.a.createElement("div", {
+				className: Object(i.a)(c.a.container, e.className),
+				"data-testid": "community-placeholder"
 			}, r.a.createElement("div", {
 				className: c.a.userInfo
 			}, r.a.createElement("div", {
@@ -1796,4 +1800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.dec8916a19d0366c12d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.ed123a45202aa0b7c2e2.js.map
