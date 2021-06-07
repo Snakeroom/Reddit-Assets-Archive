@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e59e3d8e1be316225b1a.js
-// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.157697cdba3167b4556b.js
+// Retrieved at 6/7/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -1206,7 +1206,7 @@
 						subredditId: n
 					}));
 				Object(s.useEffect)(() => {
-					E(x ? Object(u.v)() : Object(u.r)(_))
+					E(x ? Object(u.w)() : Object(u.s)(_))
 				}, []);
 				const C = t && t.rank > 0;
 				return r.a.createElement("div", {
@@ -1476,7 +1476,7 @@
 					className: g.a.openModalButton,
 					isFullWidth: !0,
 					onClick: () => {
-						i && f(Object(b.f)()), E(!0)
+						i && f(Object(b.g)()), E(!0)
 					}
 				}, s.fbt._("See All", null, {
 					hk: "1Ozf02"
@@ -6933,4 +6933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e59e3d8e1be316225b1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.157697cdba3167b4556b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.6c4b66c833797d360cfe.js
-// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ef242718cf5a2db0946b.js
+// Retrieved at 6/7/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1633,7 +1633,7 @@
 					}),
 					[p, h] = Object(x.useState)(!1);
 				if (Object(x.useEffect)(() => {
-						o(Object(d.u)({
+						o(Object(d.v)({
 							numberPredictionTokens: Y,
 							pollId: r
 						}))
@@ -1731,7 +1731,7 @@
 					}
 				}, [a, o, G, E]);
 				Object(x.useEffect)(() => {
-					O || (R(d.s), j(!0))
+					O || (R(d.t), j(!0))
 				}, [O, R]), Object(x.useEffect)(() => {
 					(async () => {
 						if (B && !S) try {
@@ -1776,7 +1776,7 @@
 						await ia(), M(!1), T(Y)
 					}, [ia, B]),
 					xa = Object(x.useCallback)(() => {
-						R(Object(d.l)({
+						R(Object(d.m)({
 							pollId: G,
 							selectedNumberCoins: X,
 							selectedNumberTokens: Q
@@ -2859,126 +2859,129 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(a, i, r) {
 			"use strict";
-			r.d(i, "o", (function() {
-				return t
-			})), r.d(i, "p", (function() {
+			r.d(i, "p", (function() {
 				return k
 			})), r.d(i, "q", (function() {
 				return n
-			})), r.d(i, "k", (function() {
+			})), r.d(i, "r", (function() {
 				return o
-			})), r.d(i, "s", (function() {
+			})), r.d(i, "l", (function() {
 				return s
-			})), r.d(i, "m", (function() {
+			})), r.d(i, "t", (function() {
 				return m
 			})), r.d(i, "n", (function() {
 				return e
-			})), r.d(i, "l", (function() {
+			})), r.d(i, "o", (function() {
 				return l
-			})), r.d(i, "a", (function() {
+			})), r.d(i, "m", (function() {
 				return c
-			})), r.d(i, "r", (function() {
+			})), r.d(i, "a", (function() {
 				return p
-			})), r.d(i, "d", (function() {
+			})), r.d(i, "s", (function() {
 				return h
-			})), r.d(i, "u", (function() {
+			})), r.d(i, "d", (function() {
 				return f
-			})), r.d(i, "j", (function() {
-				return d
-			})), r.d(i, "w", (function() {
-				return u
-			})), r.d(i, "f", (function() {
-				return y
 			})), r.d(i, "v", (function() {
-				return G
-			})), r.d(i, "t", (function() {
-				return E
-			})), r.d(i, "c", (function() {
-				return A
-			})), r.d(i, "h", (function() {
-				return B
-			})), r.d(i, "e", (function() {
-				return D
-			})), r.d(i, "b", (function() {
-				return V
-			})), r.d(i, "i", (function() {
-				return b
+				return d
+			})), r.d(i, "k", (function() {
+				return u
+			})), r.d(i, "x", (function() {
+				return y
 			})), r.d(i, "g", (function() {
+				return G
+			})), r.d(i, "w", (function() {
+				return E
+			})), r.d(i, "u", (function() {
+				return A
+			})), r.d(i, "c", (function() {
+				return B
+			})), r.d(i, "i", (function() {
+				return D
+			})), r.d(i, "e", (function() {
+				return V
+			})), r.d(i, "b", (function() {
+				return b
+			})), r.d(i, "j", (function() {
 				return F
+			})), r.d(i, "h", (function() {
+				return g
+			})), r.d(i, "f", (function() {
+				return v
 			}));
 			var x = r("./src/reddit/selectors/telemetry.ts");
-			const t = a => ({
+			const t = "poll",
+				k = a => ({
 					...Object(x.defaults)(a),
-					source: "poll",
+					source: t,
 					action: "select",
 					noun: "poll_option"
 				}),
-				k = a => ({
+				n = a => ({
 					...Object(x.defaults)(a),
-					source: "poll",
+					source: t,
 					action: "select",
 					noun: "prediction_option"
 				}),
-				n = a => ({
-					...Object(x.defaults)(a),
-					source: "poll",
-					action: "view",
-					noun: "predict_info_modal"
-				}),
 				o = a => ({
 					...Object(x.defaults)(a),
-					source: "poll",
-					action: "close",
+					source: t,
+					action: "view",
 					noun: "predict_info_modal"
 				}),
 				s = a => ({
 					...Object(x.defaults)(a),
-					source: "poll",
+					source: t,
+					action: "close",
+					noun: "predict_info_modal"
+				}),
+				m = a => ({
+					...Object(x.defaults)(a),
+					source: t,
 					action: "view",
 					noun: "predict_option_modal"
 				}),
-				m = ({
+				e = ({
 					pollId: a,
 					selectedNumberCoins: i,
 					totalStakeAmount: r
-				}) => t => ({
-					...Object(x.defaults)(t),
-					source: "poll",
+				}) => k => ({
+					...Object(x.defaults)(k),
+					source: t,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(x.poll)(t, a, !1, void 0, i),
+					poll: Object(x.poll)(k, a, !1, void 0, i),
 					goldPurchase: {
 						numberCoins: r
 					}
 				}),
-				e = ({
+				l = ({
 					pollId: a,
 					selectedNumberTokens: i
 				}) => r => ({
 					...Object(x.defaults)(r),
-					source: "poll",
+					source: t,
 					action: "confirm",
 					noun: "predict",
 					poll: Object(x.poll)(r, a, !1, void 0, void 0, i)
 				}),
-				l = ({
+				c = ({
 					pollId: a,
 					selectedNumberCoins: i,
 					selectedNumberTokens: r
-				}) => t => ({
-					...Object(x.defaults)(t),
-					source: "poll",
+				}) => k => ({
+					...Object(x.defaults)(k),
+					source: t,
 					action: "close",
 					noun: "prediction_modal",
-					poll: Object(x.poll)(t, a, !1, i, r)
+					poll: Object(x.poll)(k, a, !1, i, r)
 				}),
-				c = a => ({
+				p = a => ({
 					...Object(x.defaults)(a),
-					source: "poll",
+					source: t,
 					action: "click",
 					noun: "add_coins"
 				}),
-				p = a => i => ({
+				h = a => i => ({
 					...Object(x.defaults)(i),
 					source: "global",
 					action: "view",
@@ -2988,39 +2991,39 @@
 						reason: a ? "prediction_details" : "subreddit_header"
 					}
 				}),
-				h = ({
+				f = ({
 					targetUserId: a
 				}) => i => ({
 					...Object(x.defaults)(i),
-					source: "prediction",
+					source: "predictions",
 					action: "click",
 					noun: "leaderboard_profile",
 					targetUser: {
 						id: a
 					}
 				}),
-				f = ({
+				d = ({
 					numberPredictionTokens: a,
 					pollId: i
 				}) => r => ({
 					...Object(x.defaults)(r),
-					source: "poll",
+					source: t,
 					action: "view",
 					noun: "token_claim_modal",
 					poll: Object(x.poll)(r, i, !1, void 0, void 0, a)
 				}),
-				d = ({
+				u = ({
 					pageType: a
 				}) => i => ({
 					...Object(x.defaults)(i),
-					source: "prediction",
+					source: "predictions",
 					action: "click",
 					noun: "tournament",
 					actionInfo: {
 						pageType: a
 					}
 				}),
-				u = () => a => ({
+				y = () => a => ({
 					...Object(x.defaults)(a),
 					source: "global",
 					action: "view",
@@ -3030,9 +3033,9 @@
 						paneName: "predictions"
 					}
 				}),
-				y = () => a => ({
+				G = () => a => ({
 					...Object(x.defaults)(a),
-					source: "prediction",
+					source: "predictions",
 					action: "click",
 					noun: "leaderboard",
 					actionInfo: {
@@ -3040,7 +3043,7 @@
 						paneName: "predictions"
 					}
 				}),
-				G = () => a => ({
+				E = () => a => ({
 					...Object(x.defaults)(a),
 					source: "global",
 					action: "view",
@@ -3050,7 +3053,7 @@
 						reason: "predictions_tab"
 					}
 				}),
-				E = () => a => ({
+				A = () => a => ({
 					...Object(x.defaults)(a),
 					source: "global",
 					action: "view",
@@ -3059,41 +3062,51 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				A = () => a => ({
+				B = () => a => ({
 					...Object(x.defaults)(a),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
-				B = () => a => ({
+				D = () => a => ({
 					...Object(x.defaults)(a),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				D = () => a => ({
+				V = () => a => ({
 					...Object(x.defaults)(a),
-					source: "prediction",
+					source: "predictions",
 					action: "click",
 					noun: "next"
 				}),
-				V = () => a => ({
+				b = () => a => ({
 					...Object(x.defaults)(a),
-					source: "prediction",
+					source: "predictions",
 					action: "click",
 					noun: "add_more"
 				}),
-				b = () => a => ({
+				F = () => a => ({
 					...Object(x.defaults)(a),
-					source: "prediction",
+					source: "predictions",
 					action: "click",
 					noun: "start_tournament"
 				}),
-				F = () => a => ({
+				g = () => a => ({
 					...Object(x.defaults)(a),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
+				}),
+				v = a => i => ({
+					...Object(x.defaults)(i),
+					source: "predictions",
+					action: "click",
+					noun: "play_tournament",
+					poll: Object(x.predictionTournamentPoll)(i, a),
+					post: Object(x.post)(i, a),
+					predictions: Object(x.predictions)(i, a),
+					subreddit: Object(x.subreddit)(i)
 				})
 		},
 		"./src/reddit/icons/svgs/CoinV2/index.m.less": function(a, i, r) {
@@ -3248,4 +3261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.6c4b66c833797d360cfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ef242718cf5a2db0946b.js.map

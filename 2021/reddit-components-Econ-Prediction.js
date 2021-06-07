@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.afa93c0e471dc23d5b03.js
-// Retrieved at 6/3/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.bf777ff95a70b9b4bea0.js
+// Retrieved at 6/7/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -403,8 +403,8 @@
 				v = n("./src/reddit/models/Toast/index.ts"),
 				P = n("./src/reddit/selectors/poll/index.ts"),
 				x = n("./src/reddit/selectors/postCreations.ts"),
-				O = n("./src/reddit/selectors/posts.ts"),
-				k = n("./src/reddit/selectors/user.ts"),
+				k = n("./src/reddit/selectors/posts.ts"),
+				O = n("./src/reddit/selectors/user.ts"),
 				y = n("./src/reddit/components/Econ/Prediction/EducationMessage/constants.ts"),
 				C = n("./src/reddit/components/Econ/Prediction/NoPredictionError/index.m.less"),
 				S = n.n(C);
@@ -538,7 +538,7 @@
 					tournamentId: a,
 					onReveal: c
 				}) => {
-					const [l, u] = Object(s.useState)(!1), [m, b] = Object(G.a)("hasSeenPredictionSneakPeek", !1), p = Object(o.e)(k.t), f = !!a, E = n && !i;
+					const [l, u] = Object(s.useState)(!1), [m, b] = Object(G.a)("hasSeenPredictionSneakPeek", !1), p = Object(o.e)(O.t), f = !!a, E = n && !i;
 					if (!Object(o.e)(e => !t && !E && f && Object(g.l)(e))) return null;
 					return r.a.createElement("div", {
 						className: Q.a.optionButtonWrapper
@@ -740,8 +740,8 @@
 				ve = n.n(ge),
 				Pe = n("./src/reddit/components/Econ/Tournament/Facepile/index.tsx"),
 				xe = n("./src/reddit/controls/InternalLink/index.tsx"),
-				Oe = n("./src/reddit/hooks/usePageLayer.ts"),
-				ke = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				ke = n("./src/reddit/hooks/usePageLayer.ts"),
+				Oe = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				ye = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				Ce = n("./src/reddit/selectors/subreddit.ts"),
 				Se = n("./src/reddit/components/Econ/Prediction/TournamentLink/index.m.less"),
@@ -756,7 +756,7 @@
 			}) {
 				const n = Object(o.d)(),
 					i = Object(_.a)(),
-					a = Object(Oe.a)(),
+					a = Object(ke.a)(),
 					c = Object(o.e)(t => Object(Ce.U)(t, {
 						subredditId: e
 					})),
@@ -780,7 +780,7 @@
 					className: Ne.a.tournamentLink,
 					to: `${c.url}predictions/`,
 					onClick: () => {
-						i(Object(h.j)({
+						i(Object(h.k)({
 							pageType: b ? "post_detail" : E ? "community" : f ? "profile" : "home"
 						})), window.scrollTo(0, 0)
 					}
@@ -800,7 +800,7 @@
 					hk: "3eDpRH"
 				}) : Ie._("Be the first to predict!", null, {
 					hk: "4Ea9sh"
-				}))), r.a.createElement(ke.a, {
+				}))), r.a.createElement(Oe.a, {
 					className: Ne.a.chevron
 				}))
 			}
@@ -812,11 +812,11 @@
 				isVoteAnimationEnabled: g.j,
 				prediction: P.g,
 				pollId: P.a,
-				post: O.F,
-				subredditOrProfile: O.R,
-				userCoins: k.d,
-				userIsLoggedIn: k.K,
-				userId: k.pb
+				post: k.F,
+				subredditOrProfile: k.R,
+				userCoins: O.d,
+				userIsLoggedIn: O.K,
+				userId: O.pb
 			}), Me = {
 				onPredictionResolve: p.j,
 				onPredictionVote: p.k,
@@ -839,8 +839,8 @@
 				pollId: g,
 				subredditOrProfile: P,
 				showToast: x,
-				upvoteToggled: O,
-				userCoins: k,
+				upvoteToggled: k,
+				userCoins: O,
 				userId: C,
 				userIsLoggedIn: S
 			}) => {
@@ -934,7 +934,7 @@
 						coinPackage: e,
 						chipPackage: n
 					}) => {
-						if (e && e.coins > k) return Object(b.promptUserToBuyMoreCoins)(), void Y(h.a);
+						if (e && e.coins > O) return Object(b.promptUserToBuyMoreCoins)(), void Y(h.a);
 						const s = n ? n.id : e.id,
 							r = n ? n.amount : e.coins;
 						if (oe) return x({
@@ -945,10 +945,10 @@
 							})
 						}), void M(null);
 						if (!g || !A) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						w(!0), Y(te ? Object(h.n)({
+						w(!0), Y(te ? Object(h.o)({
 							pollId: g,
 							selectedNumberTokens: r
-						}) : Object(h.m)({
+						}) : Object(h.n)({
 							pollId: g,
 							selectedNumberCoins: r,
 							totalStakeAmount: Q
@@ -959,7 +959,7 @@
 								optionId: A,
 								postId: g,
 								price: r
-							}), t && O(g), w(!1), M(null), a ? V(!0) : x({
+							}), t && k(g), w(!1), M(null), a ? V(!0) : x({
 								duration: 5e3,
 								kind: v.b.SuccessCommunity,
 								text: we._("Thanks! See if you're right in {timeToResult}", [we._param("timeToResult", Object(u.a)(new Date(Z), !0))], {
@@ -1560,9 +1560,9 @@
 			})), n.d(t, "q", (function() {
 				return x
 			})), n.d(t, "h", (function() {
-				return O
-			})), n.d(t, "y", (function() {
 				return k
+			})), n.d(t, "y", (function() {
+				return O
 			})), n.d(t, "l", (function() {
 				return y
 			})), n.d(t, "n", (function() {
@@ -1665,7 +1665,7 @@
 					if (!s.d.spBadges(e)) return f;
 					return P(null === (r = e.users.appliedBadges[n]) || void 0 === r ? void 0 : r[t], e.badges.models)
 				},
-				O = (e, t) => {
+				k = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
 					if (n && n.status === m.a.Fetched) {
 						const e = n.raw.collections[t.collectionId];
@@ -1676,7 +1676,7 @@
 					}
 				};
 
-			function k(e, t) {
+			function O(e, t) {
 				const n = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(n && n.settings && n.settings.optOut)
 			}
@@ -1888,4 +1888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.afa93c0e471dc23d5b03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.bf777ff95a70b9b4bea0.js.map
