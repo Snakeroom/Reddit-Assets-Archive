@@ -1,76 +1,76 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5d7490caaa8ea90857a4.js
-// Retrieved at 6/8/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1fdad774d2eea650c323.js
+// Retrieved at 6/8/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_baseCreate.js"),
-				t = r("./node_modules/lodash/_baseLodash.js"),
+			var t = r("./node_modules/lodash/_baseCreate.js"),
+				x = r("./node_modules/lodash/_baseLodash.js"),
 				k = 4294967295;
 
 			function n(a) {
 				this.__wrapped__ = a, this.__actions__ = [], this.__dir__ = 1, this.__filtered__ = !1, this.__iteratees__ = [], this.__takeCount__ = k, this.__views__ = []
 			}
-			n.prototype = x(t.prototype), n.prototype.constructor = n, a.exports = n
+			n.prototype = t(x.prototype), n.prototype.constructor = n, a.exports = n
 		},
 		"./node_modules/lodash/_LodashWrapper.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_baseCreate.js"),
-				t = r("./node_modules/lodash/_baseLodash.js");
+			var t = r("./node_modules/lodash/_baseCreate.js"),
+				x = r("./node_modules/lodash/_baseLodash.js");
 
 			function k(a, i) {
 				this.__wrapped__ = a, this.__actions__ = [], this.__chain__ = !!i, this.__index__ = 0, this.__values__ = void 0
 			}
-			k.prototype = x(t.prototype), k.prototype.constructor = k, a.exports = k
+			k.prototype = t(x.prototype), k.prototype.constructor = k, a.exports = k
 		},
 		"./node_modules/lodash/_baseLodash.js": function(a, i) {
 			a.exports = function() {}
 		},
 		"./node_modules/lodash/_baseSetData.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/identity.js"),
-				t = r("./node_modules/lodash/_metaMap.js"),
-				k = t ? function(a, i) {
-					return t.set(a, i), a
-				} : x;
+			var t = r("./node_modules/lodash/identity.js"),
+				x = r("./node_modules/lodash/_metaMap.js"),
+				k = x ? function(a, i) {
+					return x.set(a, i), a
+				} : t;
 			a.exports = k
 		},
 		"./node_modules/lodash/_composeArgs.js": function(a, i) {
 			var r = Math.max;
-			a.exports = function(a, i, x, t) {
-				for (var k = -1, n = a.length, o = x.length, s = -1, m = i.length, e = r(n - o, 0), l = Array(m + e), c = !t; ++s < m;) l[s] = i[s];
-				for (; ++k < o;)(c || k < n) && (l[x[k]] = a[k]);
-				for (; e--;) l[s++] = a[k++];
+			a.exports = function(a, i, t, x) {
+				for (var k = -1, n = a.length, o = t.length, s = -1, e = i.length, m = r(n - o, 0), l = Array(e + m), c = !x; ++s < e;) l[s] = i[s];
+				for (; ++k < o;)(c || k < n) && (l[t[k]] = a[k]);
+				for (; m--;) l[s++] = a[k++];
 				return l
 			}
 		},
 		"./node_modules/lodash/_composeArgsRight.js": function(a, i) {
 			var r = Math.max;
-			a.exports = function(a, i, x, t) {
-				for (var k = -1, n = a.length, o = -1, s = x.length, m = -1, e = i.length, l = r(n - s, 0), c = Array(l + e), p = !t; ++k < l;) c[k] = a[k];
-				for (var h = k; ++m < e;) c[h + m] = i[m];
-				for (; ++o < s;)(p || k < n) && (c[h + x[o]] = a[k++]);
+			a.exports = function(a, i, t, x) {
+				for (var k = -1, n = a.length, o = -1, s = t.length, e = -1, m = i.length, l = r(n - s, 0), c = Array(l + m), p = !x; ++k < l;) c[k] = a[k];
+				for (var h = k; ++e < m;) c[h + e] = i[e];
+				for (; ++o < s;)(p || k < n) && (c[h + t[o]] = a[k++]);
 				return c
 			}
 		},
 		"./node_modules/lodash/_countHolders.js": function(a, i) {
 			a.exports = function(a, i) {
-				for (var r = a.length, x = 0; r--;) a[r] === i && ++x;
-				return x
+				for (var r = a.length, t = 0; r--;) a[r] === i && ++t;
+				return t
 			}
 		},
 		"./node_modules/lodash/_createBind.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_createCtor.js"),
-				t = r("./node_modules/lodash/_root.js"),
+			var t = r("./node_modules/lodash/_createCtor.js"),
+				x = r("./node_modules/lodash/_root.js"),
 				k = 1;
 			a.exports = function(a, i, r) {
 				var n = i & k,
-					o = x(a);
+					o = t(a);
 				return function i() {
-					return (this && this !== t && this instanceof i ? o : a).apply(n ? r : this, arguments)
+					return (this && this !== x && this instanceof i ? o : a).apply(n ? r : this, arguments)
 				}
 			}
 		},
 		"./node_modules/lodash/_createCtor.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_baseCreate.js"),
-				t = r("./node_modules/lodash/isObject.js");
+			var t = r("./node_modules/lodash/_baseCreate.js"),
+				x = r("./node_modules/lodash/isObject.js");
 			a.exports = function(a) {
 				return function() {
 					var i = arguments;
@@ -92,147 +92,147 @@
 						case 7:
 							return new a(i[0], i[1], i[2], i[3], i[4], i[5], i[6])
 					}
-					var r = x(a.prototype),
+					var r = t(a.prototype),
 						k = a.apply(r, i);
-					return t(k) ? k : r
+					return x(k) ? k : r
 				}
 			}
 		},
 		"./node_modules/lodash/_createCurry.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_apply.js"),
-				t = r("./node_modules/lodash/_createCtor.js"),
+			var t = r("./node_modules/lodash/_apply.js"),
+				x = r("./node_modules/lodash/_createCtor.js"),
 				k = r("./node_modules/lodash/_createHybrid.js"),
 				n = r("./node_modules/lodash/_createRecurry.js"),
 				o = r("./node_modules/lodash/_getHolder.js"),
 				s = r("./node_modules/lodash/_replaceHolders.js"),
-				m = r("./node_modules/lodash/_root.js");
+				e = r("./node_modules/lodash/_root.js");
 			a.exports = function(a, i, r) {
-				var e = t(a);
-				return function t() {
-					for (var l = arguments.length, c = Array(l), p = l, h = o(t); p--;) c[p] = arguments[p];
-					var f = l < 3 && c[0] !== h && c[l - 1] !== h ? [] : s(c, h);
-					return (l -= f.length) < r ? n(a, i, k, t.placeholder, void 0, c, f, void 0, void 0, r - l) : x(this && this !== m && this instanceof t ? e : a, this, c)
+				var m = x(a);
+				return function x() {
+					for (var l = arguments.length, c = Array(l), p = l, h = o(x); p--;) c[p] = arguments[p];
+					var d = l < 3 && c[0] !== h && c[l - 1] !== h ? [] : s(c, h);
+					return (l -= d.length) < r ? n(a, i, k, x.placeholder, void 0, c, d, void 0, void 0, r - l) : t(this && this !== e && this instanceof x ? m : a, this, c)
 				}
 			}
 		},
 		"./node_modules/lodash/_createHybrid.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_composeArgs.js"),
-				t = r("./node_modules/lodash/_composeArgsRight.js"),
+			var t = r("./node_modules/lodash/_composeArgs.js"),
+				x = r("./node_modules/lodash/_composeArgsRight.js"),
 				k = r("./node_modules/lodash/_countHolders.js"),
 				n = r("./node_modules/lodash/_createCtor.js"),
 				o = r("./node_modules/lodash/_createRecurry.js"),
 				s = r("./node_modules/lodash/_getHolder.js"),
-				m = r("./node_modules/lodash/_reorder.js"),
-				e = r("./node_modules/lodash/_replaceHolders.js"),
+				e = r("./node_modules/lodash/_reorder.js"),
+				m = r("./node_modules/lodash/_replaceHolders.js"),
 				l = r("./node_modules/lodash/_root.js"),
 				c = 1,
 				p = 2,
 				h = 8,
-				f = 16,
-				d = 128,
+				d = 16,
+				f = 128,
 				u = 512;
 			a.exports = function a(i, r, y, G, E, A, B, D, V, b) {
-				var F = r & d,
+				var F = r & f,
 					g = r & c,
 					v = r & p,
-					P = r & (h | f),
-					S = r & u,
+					S = r & (h | d),
+					P = r & u,
 					T = v ? void 0 : n(i);
 				return function c() {
-					for (var p = arguments.length, h = Array(p), f = p; f--;) h[f] = arguments[f];
-					if (P) var d = s(c),
-						u = k(h, d);
-					if (G && (h = x(h, G, E, P)), A && (h = t(h, A, B, P)), p -= u, P && p < b) {
-						var _ = e(h, d);
+					for (var p = arguments.length, h = Array(p), d = p; d--;) h[d] = arguments[d];
+					if (S) var f = s(c),
+						u = k(h, f);
+					if (G && (h = t(h, G, E, S)), A && (h = x(h, A, B, S)), p -= u, S && p < b) {
+						var _ = m(h, f);
 						return o(i, r, a, c.placeholder, y, h, _, D, V, b - p)
 					}
 					var O = g ? y : this,
 						j = v ? O[i] : i;
-					return p = h.length, D ? h = m(h, D) : S && p > 1 && h.reverse(), F && V < p && (h.length = V), this && this !== l && this instanceof c && (j = T || n(j)), j.apply(O, h)
+					return p = h.length, D ? h = e(h, D) : P && p > 1 && h.reverse(), F && V < p && (h.length = V), this && this !== l && this instanceof c && (j = T || n(j)), j.apply(O, h)
 				}
 			}
 		},
 		"./node_modules/lodash/_createPartial.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_apply.js"),
-				t = r("./node_modules/lodash/_createCtor.js"),
+			var t = r("./node_modules/lodash/_apply.js"),
+				x = r("./node_modules/lodash/_createCtor.js"),
 				k = r("./node_modules/lodash/_root.js"),
 				n = 1;
 			a.exports = function(a, i, r, o) {
 				var s = i & n,
-					m = t(a);
+					e = x(a);
 				return function i() {
-					for (var t = -1, n = arguments.length, e = -1, l = o.length, c = Array(l + n), p = this && this !== k && this instanceof i ? m : a; ++e < l;) c[e] = o[e];
-					for (; n--;) c[e++] = arguments[++t];
-					return x(p, s ? r : this, c)
+					for (var x = -1, n = arguments.length, m = -1, l = o.length, c = Array(l + n), p = this && this !== k && this instanceof i ? e : a; ++m < l;) c[m] = o[m];
+					for (; n--;) c[m++] = arguments[++x];
+					return t(p, s ? r : this, c)
 				}
 			}
 		},
 		"./node_modules/lodash/_createRecurry.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_isLaziable.js"),
-				t = r("./node_modules/lodash/_setData.js"),
+			var t = r("./node_modules/lodash/_isLaziable.js"),
+				x = r("./node_modules/lodash/_setData.js"),
 				k = r("./node_modules/lodash/_setWrapToString.js"),
 				n = 1,
 				o = 2,
 				s = 4,
-				m = 8,
-				e = 32,
+				e = 8,
+				m = 32,
 				l = 64;
-			a.exports = function(a, i, r, c, p, h, f, d, u, y) {
-				var G = i & m;
-				i |= G ? e : l, (i &= ~(G ? l : e)) & s || (i &= ~(n | o));
-				var E = [a, i, p, G ? h : void 0, G ? f : void 0, G ? void 0 : h, G ? void 0 : f, d, u, y],
+			a.exports = function(a, i, r, c, p, h, d, f, u, y) {
+				var G = i & e;
+				i |= G ? m : l, (i &= ~(G ? l : m)) & s || (i &= ~(n | o));
+				var E = [a, i, p, G ? h : void 0, G ? d : void 0, G ? void 0 : h, G ? void 0 : d, f, u, y],
 					A = r.apply(void 0, E);
-				return x(a) && t(A, E), A.placeholder = c, k(A, a, i)
+				return t(a) && x(A, E), A.placeholder = c, k(A, a, i)
 			}
 		},
 		"./node_modules/lodash/_createWrap.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_baseSetData.js"),
-				t = r("./node_modules/lodash/_createBind.js"),
+			var t = r("./node_modules/lodash/_baseSetData.js"),
+				x = r("./node_modules/lodash/_createBind.js"),
 				k = r("./node_modules/lodash/_createCurry.js"),
 				n = r("./node_modules/lodash/_createHybrid.js"),
 				o = r("./node_modules/lodash/_createPartial.js"),
 				s = r("./node_modules/lodash/_getData.js"),
-				m = r("./node_modules/lodash/_mergeData.js"),
-				e = r("./node_modules/lodash/_setData.js"),
+				e = r("./node_modules/lodash/_mergeData.js"),
+				m = r("./node_modules/lodash/_setData.js"),
 				l = r("./node_modules/lodash/_setWrapToString.js"),
 				c = r("./node_modules/lodash/toInteger.js"),
 				p = "Expected a function",
 				h = 1,
-				f = 2,
-				d = 8,
+				d = 2,
+				f = 8,
 				u = 16,
 				y = 32,
 				G = 64,
 				E = Math.max;
 			a.exports = function(a, i, r, A, B, D, V, b) {
-				var F = i & f;
+				var F = i & d;
 				if (!F && "function" != typeof a) throw new TypeError(p);
 				var g = A ? A.length : 0;
 				if (g || (i &= ~(y | G), A = B = void 0), V = void 0 === V ? V : E(c(V), 0), b = void 0 === b ? b : c(b), g -= B ? B.length : 0, i & G) {
 					var v = A,
-						P = B;
+						S = B;
 					A = B = void 0
 				}
-				var S = F ? void 0 : s(a),
-					T = [a, i, r, A, B, v, P, D, V, b];
-				if (S && m(T, S), a = T[0], i = T[1], r = T[2], A = T[3], B = T[4], !(b = T[9] = void 0 === T[9] ? F ? 0 : a.length : E(T[9] - g, 0)) && i & (d | u) && (i &= ~(d | u)), i && i != h) _ = i == d || i == u ? k(a, i, b) : i != y && i != (h | y) || B.length ? n.apply(void 0, T) : o(a, i, r, A);
-				else var _ = t(a, i, r);
-				return l((S ? x : e)(_, T), a, i)
+				var P = F ? void 0 : s(a),
+					T = [a, i, r, A, B, v, S, D, V, b];
+				if (P && e(T, P), a = T[0], i = T[1], r = T[2], A = T[3], B = T[4], !(b = T[9] = void 0 === T[9] ? F ? 0 : a.length : E(T[9] - g, 0)) && i & (f | u) && (i &= ~(f | u)), i && i != h) _ = i == f || i == u ? k(a, i, b) : i != y && i != (h | y) || B.length ? n.apply(void 0, T) : o(a, i, r, A);
+				else var _ = x(a, i, r);
+				return l((P ? t : m)(_, T), a, i)
 			}
 		},
 		"./node_modules/lodash/_getData.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_metaMap.js"),
-				t = r("./node_modules/lodash/noop.js"),
-				k = x ? function(a) {
-					return x.get(a)
-				} : t;
+			var t = r("./node_modules/lodash/_metaMap.js"),
+				x = r("./node_modules/lodash/noop.js"),
+				k = t ? function(a) {
+					return t.get(a)
+				} : x;
 			a.exports = k
 		},
 		"./node_modules/lodash/_getFuncName.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_realNames.js"),
-				t = Object.prototype.hasOwnProperty;
+			var t = r("./node_modules/lodash/_realNames.js"),
+				x = Object.prototype.hasOwnProperty;
 			a.exports = function(a) {
-				for (var i = a.name + "", r = x[i], k = t.call(x, i) ? r.length : 0; k--;) {
+				for (var i = a.name + "", r = t[i], k = x.call(t, i) ? r.length : 0; k--;) {
 					var n = r[k],
 						o = n.func;
 					if (null == o || o == a) return n.name
@@ -247,79 +247,79 @@
 		},
 		"./node_modules/lodash/_getWrapDetails.js": function(a, i) {
 			var r = /\{\n\/\* \[wrapped with (.+)\] \*/,
-				x = /,? & /;
+				t = /,? & /;
 			a.exports = function(a) {
 				var i = a.match(r);
-				return i ? i[1].split(x) : []
+				return i ? i[1].split(t) : []
 			}
 		},
 		"./node_modules/lodash/_insertWrapDetails.js": function(a, i) {
 			var r = /\{(?:\n\/\* \[wrapped with .+\] \*\/)?\n?/;
 			a.exports = function(a, i) {
-				var x = i.length;
-				if (!x) return a;
-				var t = x - 1;
-				return i[t] = (x > 1 ? "& " : "") + i[t], i = i.join(x > 2 ? ", " : " "), a.replace(r, "{\n/* [wrapped with " + i + "] */\n")
+				var t = i.length;
+				if (!t) return a;
+				var x = t - 1;
+				return i[x] = (t > 1 ? "& " : "") + i[x], i = i.join(t > 2 ? ", " : " "), a.replace(r, "{\n/* [wrapped with " + i + "] */\n")
 			}
 		},
 		"./node_modules/lodash/_isLaziable.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_LazyWrapper.js"),
-				t = r("./node_modules/lodash/_getData.js"),
+			var t = r("./node_modules/lodash/_LazyWrapper.js"),
+				x = r("./node_modules/lodash/_getData.js"),
 				k = r("./node_modules/lodash/_getFuncName.js"),
 				n = r("./node_modules/lodash/wrapperLodash.js");
 			a.exports = function(a) {
 				var i = k(a),
 					r = n[i];
-				if ("function" != typeof r || !(i in x.prototype)) return !1;
+				if ("function" != typeof r || !(i in t.prototype)) return !1;
 				if (a === r) return !0;
-				var o = t(r);
+				var o = x(r);
 				return !!o && a === o[0]
 			}
 		},
 		"./node_modules/lodash/_mergeData.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_composeArgs.js"),
-				t = r("./node_modules/lodash/_composeArgsRight.js"),
+			var t = r("./node_modules/lodash/_composeArgs.js"),
+				x = r("./node_modules/lodash/_composeArgsRight.js"),
 				k = r("./node_modules/lodash/_replaceHolders.js"),
 				n = "__lodash_placeholder__",
 				o = 1,
 				s = 2,
-				m = 4,
-				e = 8,
+				e = 4,
+				m = 8,
 				l = 128,
 				c = 256,
 				p = Math.min;
 			a.exports = function(a, i) {
 				var r = a[1],
 					h = i[1],
-					f = r | h,
-					d = f < (o | s | l),
-					u = h == l && r == e || h == l && r == c && a[7].length <= i[8] || h == (l | c) && i[7].length <= i[8] && r == e;
-				if (!d && !u) return a;
-				h & o && (a[2] = i[2], f |= r & o ? 0 : m);
+					d = r | h,
+					f = d < (o | s | l),
+					u = h == l && r == m || h == l && r == c && a[7].length <= i[8] || h == (l | c) && i[7].length <= i[8] && r == m;
+				if (!f && !u) return a;
+				h & o && (a[2] = i[2], d |= r & o ? 0 : e);
 				var y = i[3];
 				if (y) {
 					var G = a[3];
-					a[3] = G ? x(G, y, i[4]) : y, a[4] = G ? k(a[3], n) : i[4]
+					a[3] = G ? t(G, y, i[4]) : y, a[4] = G ? k(a[3], n) : i[4]
 				}
-				return (y = i[5]) && (G = a[5], a[5] = G ? t(G, y, i[6]) : y, a[6] = G ? k(a[5], n) : i[6]), (y = i[7]) && (a[7] = y), h & l && (a[8] = null == a[8] ? i[8] : p(a[8], i[8])), null == a[9] && (a[9] = i[9]), a[0] = i[0], a[1] = f, a
+				return (y = i[5]) && (G = a[5], a[5] = G ? x(G, y, i[6]) : y, a[6] = G ? k(a[5], n) : i[6]), (y = i[7]) && (a[7] = y), h & l && (a[8] = null == a[8] ? i[8] : p(a[8], i[8])), null == a[9] && (a[9] = i[9]), a[0] = i[0], a[1] = d, a
 			}
 		},
 		"./node_modules/lodash/_metaMap.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_WeakMap.js"),
-				t = x && new x;
-			a.exports = t
+			var t = r("./node_modules/lodash/_WeakMap.js"),
+				x = t && new t;
+			a.exports = x
 		},
 		"./node_modules/lodash/_realNames.js": function(a, i) {
 			a.exports = {}
 		},
 		"./node_modules/lodash/_reorder.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_copyArray.js"),
-				t = r("./node_modules/lodash/_isIndex.js"),
+			var t = r("./node_modules/lodash/_copyArray.js"),
+				x = r("./node_modules/lodash/_isIndex.js"),
 				k = Math.min;
 			a.exports = function(a, i) {
-				for (var r = a.length, n = k(i.length, r), o = x(a); n--;) {
+				for (var r = a.length, n = k(i.length, r), o = t(a); n--;) {
 					var s = i[n];
-					a[n] = t(s, r) ? o[s] : void 0
+					a[n] = x(s, r) ? o[s] : void 0
 				}
 				return a
 			}
@@ -327,31 +327,31 @@
 		"./node_modules/lodash/_replaceHolders.js": function(a, i) {
 			var r = "__lodash_placeholder__";
 			a.exports = function(a, i) {
-				for (var x = -1, t = a.length, k = 0, n = []; ++x < t;) {
-					var o = a[x];
-					o !== i && o !== r || (a[x] = r, n[k++] = x)
+				for (var t = -1, x = a.length, k = 0, n = []; ++t < x;) {
+					var o = a[t];
+					o !== i && o !== r || (a[t] = r, n[k++] = t)
 				}
 				return n
 			}
 		},
 		"./node_modules/lodash/_setData.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_baseSetData.js"),
-				t = r("./node_modules/lodash/_shortOut.js")(x);
-			a.exports = t
+			var t = r("./node_modules/lodash/_baseSetData.js"),
+				x = r("./node_modules/lodash/_shortOut.js")(t);
+			a.exports = x
 		},
 		"./node_modules/lodash/_setWrapToString.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_getWrapDetails.js"),
-				t = r("./node_modules/lodash/_insertWrapDetails.js"),
+			var t = r("./node_modules/lodash/_getWrapDetails.js"),
+				x = r("./node_modules/lodash/_insertWrapDetails.js"),
 				k = r("./node_modules/lodash/_setToString.js"),
 				n = r("./node_modules/lodash/_updateWrapDetails.js");
 			a.exports = function(a, i, r) {
 				var o = i + "";
-				return k(a, t(o, n(x(o), r)))
+				return k(a, x(o, n(t(o), r)))
 			}
 		},
 		"./node_modules/lodash/_updateWrapDetails.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_arrayEach.js"),
-				t = r("./node_modules/lodash/_arrayIncludes.js"),
+			var t = r("./node_modules/lodash/_arrayEach.js"),
+				x = r("./node_modules/lodash/_arrayIncludes.js"),
 				k = [
 					["ary", 128],
 					["bind", 1],
@@ -364,81 +364,81 @@
 					["rearg", 256]
 				];
 			a.exports = function(a, i) {
-				return x(k, (function(r) {
-					var x = "_." + r[0];
-					i & r[1] && !t(a, x) && a.push(x)
+				return t(k, (function(r) {
+					var t = "_." + r[0];
+					i & r[1] && !x(a, t) && a.push(t)
 				})), a.sort()
 			}
 		},
 		"./node_modules/lodash/_wrapperClone.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_LazyWrapper.js"),
-				t = r("./node_modules/lodash/_LodashWrapper.js"),
+			var t = r("./node_modules/lodash/_LazyWrapper.js"),
+				x = r("./node_modules/lodash/_LodashWrapper.js"),
 				k = r("./node_modules/lodash/_copyArray.js");
 			a.exports = function(a) {
-				if (a instanceof x) return a.clone();
-				var i = new t(a.__wrapped__, a.__chain__);
+				if (a instanceof t) return a.clone();
+				var i = new x(a.__wrapped__, a.__chain__);
 				return i.__actions__ = k(a.__actions__), i.__index__ = a.__index__, i.__values__ = a.__values__, i
 			}
 		},
 		"./node_modules/lodash/curry.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_createWrap.js"),
-				t = 8;
+			var t = r("./node_modules/lodash/_createWrap.js"),
+				x = 8;
 
 			function k(a, i, r) {
-				var n = x(a, t, void 0, void 0, void 0, void 0, void 0, i = r ? void 0 : i);
+				var n = t(a, x, void 0, void 0, void 0, void 0, void 0, i = r ? void 0 : i);
 				return n.placeholder = k.placeholder, n
 			}
 			k.placeholder = {}, a.exports = k
 		},
 		"./node_modules/lodash/wrapperLodash.js": function(a, i, r) {
-			var x = r("./node_modules/lodash/_LazyWrapper.js"),
-				t = r("./node_modules/lodash/_LodashWrapper.js"),
+			var t = r("./node_modules/lodash/_LazyWrapper.js"),
+				x = r("./node_modules/lodash/_LodashWrapper.js"),
 				k = r("./node_modules/lodash/_baseLodash.js"),
 				n = r("./node_modules/lodash/isArray.js"),
 				o = r("./node_modules/lodash/isObjectLike.js"),
 				s = r("./node_modules/lodash/_wrapperClone.js"),
-				m = Object.prototype.hasOwnProperty;
+				e = Object.prototype.hasOwnProperty;
 
-			function e(a) {
-				if (o(a) && !n(a) && !(a instanceof x)) {
-					if (a instanceof t) return a;
-					if (m.call(a, "__wrapped__")) return s(a)
+			function m(a) {
+				if (o(a) && !n(a) && !(a instanceof t)) {
+					if (a instanceof x) return a;
+					if (e.call(a, "__wrapped__")) return s(a)
 				}
-				return new t(a)
+				return new x(a)
 			}
-			e.prototype = k.prototype, e.prototype.constructor = e, a.exports = e
+			m.prototype = k.prototype, m.prototype.constructor = m, a.exports = m
 		},
 		"./node_modules/uuid/index.js": function(a, i, r) {
-			var x = r("./node_modules/uuid/v1.js"),
-				t = r("./node_modules/uuid/v4.js"),
-				k = t;
-			k.v1 = x, k.v4 = t, a.exports = k
+			var t = r("./node_modules/uuid/v1.js"),
+				x = r("./node_modules/uuid/v4.js"),
+				k = x;
+			k.v1 = t, k.v4 = x, a.exports = k
 		},
 		"./node_modules/uuid/v1.js": function(a, i, r) {
-			var x, t, k = r("./node_modules/uuid/lib/rng-browser.js"),
+			var t, x, k = r("./node_modules/uuid/lib/rng-browser.js"),
 				n = r("./node_modules/uuid/lib/bytesToUuid.js"),
 				o = 0,
 				s = 0;
 			a.exports = function(a, i, r) {
-				var m = i && r || 0,
-					e = i || [],
-					l = (a = a || {}).node || x,
-					c = void 0 !== a.clockseq ? a.clockseq : t;
+				var e = i && r || 0,
+					m = i || [],
+					l = (a = a || {}).node || t,
+					c = void 0 !== a.clockseq ? a.clockseq : x;
 				if (null == l || null == c) {
 					var p = k();
-					null == l && (l = x = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == c && (c = t = 16383 & (p[6] << 8 | p[7]))
+					null == l && (l = t = [1 | p[0], p[1], p[2], p[3], p[4], p[5]]), null == c && (c = x = 16383 & (p[6] << 8 | p[7]))
 				}
 				var h = void 0 !== a.msecs ? a.msecs : (new Date).getTime(),
-					f = void 0 !== a.nsecs ? a.nsecs : s + 1,
-					d = h - o + (f - s) / 1e4;
-				if (d < 0 && void 0 === a.clockseq && (c = c + 1 & 16383), (d < 0 || h > o) && void 0 === a.nsecs && (f = 0), f >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-				o = h, s = f, t = c;
-				var u = (1e4 * (268435455 & (h += 122192928e5)) + f) % 4294967296;
-				e[m++] = u >>> 24 & 255, e[m++] = u >>> 16 & 255, e[m++] = u >>> 8 & 255, e[m++] = 255 & u;
+					d = void 0 !== a.nsecs ? a.nsecs : s + 1,
+					f = h - o + (d - s) / 1e4;
+				if (f < 0 && void 0 === a.clockseq && (c = c + 1 & 16383), (f < 0 || h > o) && void 0 === a.nsecs && (d = 0), d >= 1e4) throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+				o = h, s = d, x = c;
+				var u = (1e4 * (268435455 & (h += 122192928e5)) + d) % 4294967296;
+				m[e++] = u >>> 24 & 255, m[e++] = u >>> 16 & 255, m[e++] = u >>> 8 & 255, m[e++] = 255 & u;
 				var y = h / 4294967296 * 1e4 & 268435455;
-				e[m++] = y >>> 8 & 255, e[m++] = 255 & y, e[m++] = y >>> 24 & 15 | 16, e[m++] = y >>> 16 & 255, e[m++] = c >>> 8 | 128, e[m++] = 255 & c;
-				for (var G = 0; G < 6; ++G) e[m + G] = l[G];
-				return i || n(e)
+				m[e++] = y >>> 8 & 255, m[e++] = 255 & y, m[e++] = y >>> 24 & 15 | 16, m[e++] = y >>> 16 & 255, m[e++] = c >>> 8 | 128, m[e++] = 255 & c;
+				for (var G = 0; G < 6; ++G) m[e + G] = l[G];
+				return i || n(m)
 			}
 		},
 		"./src/graphql/operations/AddPredictionDrafts.json": function(a) {
@@ -477,16 +477,16 @@
 		"./src/lib/bigNumberUtils/percent.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return t
+				return x
 			}));
-			var x = r("./node_modules/bignumber.js/bignumber.js");
+			var t = r("./node_modules/bignumber.js/bignumber.js");
 
-			function t(a, i) {
-				const r = new x.BigNumber(a),
-					t = new x.BigNumber(i),
-					k = new x.BigNumber(r.dividedBy(t)),
-					n = new x.BigNumber("100").multipliedBy(k);
-				return new x.BigNumber(n).toNumber()
+			function x(a, i) {
+				const r = new t.BigNumber(a),
+					x = new t.BigNumber(i),
+					k = new t.BigNumber(r.dividedBy(x)),
+					n = new t.BigNumber("100").multipliedBy(k);
+				return new t.BigNumber(n).toNumber()
 			}
 		},
 		"./src/reddit/actions/badge.ts": function(a, i, r) {
@@ -498,9 +498,9 @@
 			})), r.d(i, "e", (function() {
 				return s
 			})), r.d(i, "c", (function() {
-				return m
-			})), r.d(i, "d", (function() {
 				return e
+			})), r.d(i, "d", (function() {
+				return m
 			})), r.d(i, "h", (function() {
 				return l
 			})), r.d(i, "f", (function() {
@@ -512,60 +512,60 @@
 			})), r.d(i, "j", (function() {
 				return E
 			}));
-			var x = r("./src/lib/makeActionCreator/index.ts"),
-				t = r("./src/reddit/actions/governance/errorToast.ts"),
+			var t = r("./src/lib/makeActionCreator/index.ts"),
+				x = r("./src/reddit/actions/governance/errorToast.ts"),
 				k = r("./src/reddit/endpoints/governance/badges.ts");
 			const n = "BADGE__BADGE_APPLICATION_SUCCESS",
 				o = "BADGE__BADGE_APPLICATION_FAILURE",
 				s = "BADGE__SUBREDDIT_BADGES_FETCH_SUCCESS",
-				m = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
-				e = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
+				e = "BADGE__SUBREDDIT_BADGES_FETCH_FAILURE",
+				m = "BADGE__SUBREDDIT_BADGES_FETCH_PENDING",
 				l = "BADGE__USER_BADGES_FETCH_SUCCESS",
 				c = "BADGE__USER_BADGES_FETCH_FAILURE",
 				p = "BADGE__USER_BADGES_FETCH_PENDING",
-				h = Object(x.a)(n),
-				f = Object(x.a)(o),
-				d = (Object(x.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(x.a)(s)),
-				u = Object(x.a)(m),
-				y = Object(x.a)(e),
-				G = (Object(x.a)(l), Object(x.a)(c), Object(x.a)(p), ({
+				h = Object(t.a)(n),
+				d = Object(t.a)(o),
+				f = (Object(t.a)("BADGE__BADGE_APPLICATION_PENDING"), Object(t.a)(s)),
+				u = Object(t.a)(e),
+				y = Object(t.a)(m),
+				G = (Object(t.a)(l), Object(t.a)(c), Object(t.a)(p), ({
 					badgeIds: a,
 					subredditId: i
-				}) => async (r, x, {
+				}) => async (r, t, {
 					apiContext: n
 				}) => {
-					const o = x(),
+					const o = t(),
 						s = o.user.account;
 					if (s) {
-						const x = (o.users.appliedBadges[s.id] || {})[i] || [],
-							m = a.length ? a[0] : x[0],
-							e = !!a.length;
+						const t = (o.users.appliedBadges[s.id] || {})[i] || [],
+							e = a.length ? a[0] : t[0],
+							m = !!a.length;
 						r(h({
 							badgeIds: a,
 							subredditId: i,
 							userId: s.id
 						}));
-						const l = await Object(k.a)(n(), i, m, e);
-						l.ok || (r(f({
+						const l = await Object(k.a)(n(), i, e, m);
+						l.ok || (r(d({
 							badgeIds: a,
 							subredditId: i,
 							error: l.error,
-							previousBadgeIds: x,
+							previousBadgeIds: t,
 							userId: s.id
-						})), Object(t.a)(r, l.error))
+						})), Object(x.a)(r, l.error))
 					}
 				}),
 				E = ({
 					subredditId: a,
 					userIds: i
-				}) => async (r, x, {
-					apiContext: t
+				}) => async (r, t, {
+					apiContext: x
 				}) => {
 					r(y({
 						subredditId: a
 					}));
-					const n = await Object(k.b)(t(), a, i);
-					n.ok ? r(d({
+					const n = await Object(k.b)(x(), a, i);
+					n.ok ? r(f({
 						...n.body,
 						subredditId: a
 					})) : r(u({
@@ -579,19 +579,19 @@
 			r.r(i), r.d(i, "fetchAll", (function() {
 				return h
 			})), r.d(i, "promptUserToBuyMoreCoins", (function() {
-				return f
+				return d
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var x = r("./node_modules/lodash/curry.js"),
-				t = r.n(x),
+			var t = r("./node_modules/lodash/curry.js"),
+				x = r.n(t),
 				k = r("./src/reddit/actions/badge.ts"),
 				n = r("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
 				o = r("./src/reddit/actions/governance/communityDetails.ts"),
 				s = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
-				m = r("./src/reddit/featureFlags/index.ts"),
-				e = r("./src/lib/initializeClient/installReducer.ts"),
+				e = r("./src/reddit/featureFlags/index.ts"),
+				m = r("./src/lib/initializeClient/installReducer.ts"),
 				l = r("./src/reddit/reducers/features/comments/index.ts");
-			Object(e.a)({
+			Object(m.a)({
 				features: {
 					comments: l.a
 				}
@@ -602,14 +602,14 @@
 					fortnitebr: "t5_3oeyf",
 					funkygoose: "t5_kzsl3"
 				},
-				p = t()((a, i) => i.some(i => m.d[i](a))),
+				p = x()((a, i) => i.some(i => e.d[i](a))),
 				h = a => async (i, r, {
-					apiContext: x
+					apiContext: t
 				}) => {
 					const {
-						commentIds: t = [],
-						postIds: m = [],
-						skip: e = []
+						commentIds: x = [],
+						postIds: e = [],
+						skip: m = []
 					} = a;
 					let l = a.subredditId;
 					if (!l) {
@@ -617,45 +617,45 @@
 					}
 					if (!l) return;
 					const h = [],
-						f = r(),
-						d = p(f),
-						u = f.features.comments.models,
-						y = f.posts.models,
-						G = new Set(f.user.account ? [f.user.account.id] : []);
-					m.forEach(a => {
+						d = r(),
+						f = p(d),
+						u = d.features.comments.models,
+						y = d.posts.models,
+						G = new Set(d.user.account ? [d.user.account.id] : []);
+					e.forEach(a => {
 						const i = y[a];
 						i && G.add(i.authorId)
-					}), t.forEach(a => {
+					}), x.forEach(a => {
 						const i = u[a];
 						i && G.add(i.authorId)
 					});
 					const E = Array.from(G);
-					!e.includes("badges") && E.length && d(["spBadges"]) && h.push(i(Object(k.j)({
+					!m.includes("badges") && E.length && f(["spBadges"]) && h.push(i(Object(k.j)({
 						subredditId: l,
 						userIds: E
-					}))), !e.includes("communityDetails") && d(["spPoints", "spSpecialMemberships"]) && h.push(i(Object(o.a)({
+					}))), !m.includes("communityDetails") && f(["spPoints", "spSpecialMemberships"]) && h.push(i(Object(o.a)({
 						subredditId: l
-					}))), !e.includes("subscription") && d(["spSpecialMemberships"]) && h.push(i(Object(n.g)(l))), !e.includes("wallets") && E.length && d(["spPoints"]) && h.push(i(Object(s.a)({
+					}))), !m.includes("subscription") && f(["spSpecialMemberships"]) && h.push(i(Object(n.g)(l))), !m.includes("wallets") && E.length && f(["spPoints"]) && h.push(i(Object(s.a)({
 						subredditId: l,
 						userIds: E
 					}))), await Promise.all(h)
 				};
 
-			function f() {
+			function d() {
 				window.open("/coins", "_blank")
 			}
 		},
 		"./src/reddit/actions/economics/me/constants.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return x
-			})), r.d(i, "b", (function() {
 				return t
+			})), r.d(i, "b", (function() {
+				return x
 			})), r.d(i, "c", (function() {
 				return k
 			}));
-			const x = "ECONOMICS__ME__ME_DATA_SUCCESS",
-				t = "ECONOMICS__ME__POINTS_COPY_REQUESTED",
+			const t = "ECONOMICS__ME__ME_DATA_SUCCESS",
+				x = "ECONOMICS__ME__POINTS_COPY_REQUESTED",
 				k = "ECONOMICS__ME__POINTS_COPY_SUCCESS"
 		},
 		"./src/reddit/actions/economics/me/thunkedActions.ts": function(a, i, r) {
@@ -665,32 +665,32 @@
 			})), r.d(i, "a", (function() {
 				return p
 			}));
-			var x = r("./src/lib/constants/index.ts"),
-				t = r("./src/lib/makeRequest/index.ts"),
+			var t = r("./src/lib/constants/index.ts"),
+				x = r("./src/lib/makeRequest/index.ts"),
 				k = r("./src/config.ts"),
 				n = r("./src/reddit/endpoints/governance/requester.ts");
 			var o = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/reddit/actions/economics/me/constants.ts");
-			const m = Object(o.a)(s.a),
-				e = Object(o.a)(s.b),
+			const e = Object(o.a)(s.a),
+				m = Object(o.a)(s.b),
 				l = Object(o.a)(s.c),
 				c = a => async (i, r, {
-					apiContext: x
+					apiContext: t
 				}) => {
-					const t = a && a.includeMemberships || !1,
+					const x = a && a.includeMemberships || !1,
 						o = a && a.forceFetch || !1,
 						s = r();
-					if (!s.economics.me.fetched || t && !s.economics.me.data.specialMemberships || o) {
+					if (!s.economics.me.fetched || x && !s.economics.me.data.specialMemberships || o) {
 						const a = await
 						function(a, i) {
 							return Object(n.a)(a, {
 								method: "get",
 								endpoint: `${k.a.metaUrl}/users/me${i?"?fields=specialMemberships":""}`
 							})
-						}(x(), t);
+						}(t(), x);
 						if (a.ok) {
 							const r = a.body;
-							t && !r.specialMemberships && (r.specialMemberships = {}), i(m(r))
+							x && !r.specialMemberships && (r.specialMemberships = {}), i(e(r))
 						}
 					}
 				}, p = () => async (a, i) => {
@@ -698,11 +698,11 @@
 						k = r.economics.me.data;
 					if (!k) throw new Error("me data required for copy to be fetched");
 					if (!r.economics.pointsCopy.fetched) {
-						a(e());
+						a(m());
 						const i = `https://${k.pointsDocsBaseUrl}v1.json?web`,
-							r = await Object(t.b)({
+							r = await Object(x.b)({
 								endpoint: i,
-								method: x.gb.GET
+								method: t.gb.GET
 							});
 						r.ok && r.body && a(l(r.body))
 					}
@@ -721,9 +721,9 @@
 			})), r.d(i, "g", (function() {
 				return v
 			})), r.d(i, "b", (function() {
-				return P
-			})), r.d(i, "l", (function() {
 				return S
+			})), r.d(i, "l", (function() {
+				return P
 			})), r.d(i, "m", (function() {
 				return T
 			})), r.d(i, "c", (function() {
@@ -735,24 +735,24 @@
 			})), r.d(i, "i", (function() {
 				return I
 			})), r.d(i, "d", (function() {
-				return w
-			})), r.d(i, "e", (function() {
 				return N
+			})), r.d(i, "e", (function() {
+				return w
 			}));
-			var x = r("./node_modules/uuid/index.js"),
-				t = r.n(x),
+			var t = r("./node_modules/uuid/index.js"),
+				x = r.n(t),
 				k = r("./src/lib/initializeClient/installReducer.ts"),
 				n = r("./src/reddit/reducers/features/predictions/index.ts"),
 				o = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/reddit/endpoints/economics/predictions.ts"),
-				m = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
-				e = r("./src/reddit/models/Prediction/index.ts"),
+				e = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts"),
+				m = r("./src/reddit/models/Prediction/index.ts"),
 				l = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				c = r("./src/reddit/selectors/posts.ts"),
 				p = r("./src/reddit/selectors/subreddit.ts"),
 				h = r("./src/reddit/selectors/user.ts"),
-				f = r("./src/reddit/selectors/features/predictions/creation/index.ts"),
-				d = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				d = r("./src/reddit/selectors/features/predictions/creation/index.ts"),
+				f = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				u = r("./src/reddit/actions/economics/predictions/constants.ts");
 			Object(k.a)({
 				features: {
@@ -762,39 +762,39 @@
 			const y = Object(o.a)(u.d),
 				G = Object(o.a)(u.h),
 				E = Object(o.a)(u.g),
-				A = (a, i, r, x) => async (t, k, {
+				A = (a, i, r, t) => async (x, k, {
 					gqlContext: n
 				}) => {
 					const o = Object(h.K)(k()),
-						m = await Object(s.h)(n(), {
+						e = await Object(s.h)(n(), {
 							subredditId: a,
 							period: i,
 							top: r,
 							includeCurrentRank: o,
-							tournamentId: x
+							tournamentId: t
 						});
-					if (m.error || !m.ok) throw new Error("Failed to fetch subreddit top predictors");
+					if (e.error || !e.ok) throw new Error("Failed to fetch subreddit top predictors");
 					const {
-						subredditInfoById: e
-					} = m.body.data;
-					if (!e || !e.predictionWinners) throw new Error("Subreddit has no prediction winners");
+						subredditInfoById: m
+					} = e.body.data;
+					if (!m || !m.predictionWinners) throw new Error("Subreddit has no prediction winners");
 					const {
 						predictionWinners: l
-					} = e, c = {
+					} = m, c = {
 						subredditId: a,
 						...l
 					};
-					return t(y(c)), c
+					return x(y(c)), c
 				}, B = a => async (i, r, {
-					gqlContext: x
+					gqlContext: t
 				}) => {
-					const t = r(),
-						k = Object(c.R)(t, {
+					const x = r(),
+						k = Object(c.R)(x, {
 							postId: a,
 							disallowProfile: !0
 						});
 					if (!k) throw new Error("Post does not belong to a subreddit");
-					const n = await Object(s.f)(x(), k.name, Object(l.g)(t));
+					const n = await Object(s.f)(t(), k.name, Object(l.g)(x));
 					if (n.error || !n.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: o
@@ -805,33 +805,33 @@
 					coinPackageId: a,
 					optionId: i,
 					postId: r,
-					price: x
-				}) => async (t, k, {
+					price: t
+				}) => async (x, k, {
 					gqlContext: n
 				}) => {
 					const o = await Object(s.l)(n(), {
 						coinPackageId: a,
 						optionId: i,
 						postId: r,
-						price: x
+						price: t
 					});
 					if (o.error || !o.ok) throw new Error("Failed to make prediction");
 					const {
-						votePrediction: m
+						votePrediction: e
 					} = o.body.data;
-					if (!m) throw new Error("Failed to create prediction vote");
-					return t(G({
+					if (!e) throw new Error("Failed to create prediction vote");
+					return x(G({
 						pollId: r,
-						prediction: m.poll,
-						price: x
-					})), m.poll
+						prediction: e.poll,
+						price: t
+					})), e.poll
 				}, V = ({
 					optionId: a,
 					postId: i
-				}) => async (r, x, {
-					gqlContext: t
+				}) => async (r, t, {
+					gqlContext: x
 				}) => {
-					const k = await Object(s.j)(t(), {
+					const k = await Object(s.j)(x(), {
 							optionId: a,
 							postId: i
 						}),
@@ -844,19 +844,19 @@
 						prediction: n.poll
 					})), n.poll
 				}, b = Object(o.a)(u.b), F = Object(o.a)(u.c), g = Object(o.a)(u.f), v = a => async (i, r, {
-					gqlContext: x
+					gqlContext: t
 				}) => {
-					const t = r(),
-						k = Object(p.F)(t, a);
-					if (Object(d.i)(t, {
+					const x = r(),
+						k = Object(p.F)(x, a);
+					if (Object(f.i)(x, {
 							subredditId: k
-						})) return Object(d.e)(t, {
+						})) return Object(f.e)(x, {
 						subredditId: k
 					});
 					i(b({
 						subredditId: k
 					}));
-					const n = await Object(s.i)(x(), {
+					const n = await Object(s.i)(t(), {
 						subredditName: a,
 						isLatestOnly: !0,
 						isIncludingPredictions: !0,
@@ -867,10 +867,10 @@
 						subredditInfoByName: o
 					} = n.body.data;
 					if (!o.predictionTournaments) return [];
-					const e = o.predictionTournaments.map(a => {
+					const m = o.predictionTournaments.map(a => {
 							var i, r;
-							const x = null !== (r = null === (i = a.predictionPosts) || void 0 === i ? void 0 : i.map(a => {
-								const i = Object(m.e)(a),
+							const t = null !== (r = null === (i = a.predictionPosts) || void 0 === i ? void 0 : i.map(a => {
+								const i = Object(e.e)(a),
 									r = i.pollData;
 								return {
 									...i,
@@ -879,66 +879,66 @@
 							})) && void 0 !== r ? r : [];
 							return {
 								...a,
-								predictionPosts: x
+								predictionPosts: t
 							}
 						}),
-						l = e.reduce((a, i) => (i.predictionPosts.length && i.predictionPosts.forEach(i => {
+						l = m.reduce((a, i) => (i.predictionPosts.length && i.predictionPosts.forEach(i => {
 							a[i.id] = i
 						}), a), {});
 					return i(F({
 						subredditId: k,
-						tournaments: e
+						tournaments: m
 					})), i(g({
 						posts: l,
-						meta: t.meta
-					})), e
-				}, P = Object(o.a)(u.a), S = Object(o.a)(u.i), T = Object(o.a)(u.j), _ = ({
+						meta: x.meta
+					})), m
+				}, S = Object(o.a)(u.a), P = Object(o.a)(u.i), T = Object(o.a)(u.j), _ = ({
 					subredditId: a
 				}) => async (i, r, {
-					gqlContext: x
+					gqlContext: t
 				}) => {
-					const t = r(),
-						k = Object(f.b)(t),
-						n = Object(l.a)(t);
+					const x = r(),
+						k = Object(d.b)(x),
+						n = Object(l.a)(x);
 					if (!k) throw new Error("Failed to create tournament, no prediction drafts attached");
-					const o = await Object(s.c)(x(), {
+					const o = await Object(s.c)(t(), {
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: a,
 							predictionDrafts: k,
-							currency: n ? e.a.Coins : e.a.Tokens
+							currency: n ? m.a.Coins : m.a.Tokens
 						}),
 						{
-							createPredictionTournament: m
+							createPredictionTournament: e
 						} = o.body.data;
-					if (!(null == m ? void 0 : m.tournament)) throw new Error("Failed to resolve prediction");
+					if (!(null == e ? void 0 : e.tournament)) throw new Error("Failed to resolve prediction");
 					const {
 						tournament: c
-					} = m;
+					} = e;
 					return i(F({
 						subredditId: a,
 						tournaments: [c]
 					})), c
-				}, O = (a, i) => async (r, x, {
+				}, O = (a, i) => async (r, t, {
 					gqlContext: k
 				}) => {
 					var n;
-					const o = Object(f.b)(x());
+					const o = Object(d.b)(t());
 					if (!o) throw new Error("Failed to create prediction post, no prediction drafts attached");
-					const m = await Object(s.b)(k(), {
+					const e = await Object(s.b)(k(), {
 							tournamentId: a,
 							isStartImmediately: !0,
-							iKey: `add-dfts-${t.a.v4()}`,
+							iKey: `add-dfts-${x.a.v4()}`,
 							subredditId: i,
 							predictionDrafts: o
 						}),
 						{
-							addPredictionDrafts: e
-						} = m.body.data;
-					if (null === (n = e.errors) || void 0 === n ? void 0 : n.length) throw new Error(e.errors[0].message);
-					if (!(null == e ? void 0 : e.tournament)) throw new Error("Failed to create prediction");
-					return e.tournament
-				}, j = Object(o.a)(u.k), C = (a, i, r) => async (x, t, {
+							addPredictionDrafts: m
+						} = e.body.data;
+					if (null === (n = m.errors) || void 0 === n ? void 0 : n.length) throw new Error(m.errors[0].message);
+					if (!(null == m ? void 0 : m.tournament)) throw new Error("Failed to create prediction");
+					return m.tournament
+				}, j = Object(o.a)(u.k), C = (a, i, r) => async (t, x, {
 					gqlContext: k
 				}) => {
 					const n = await Object(s.k)(k(), {
@@ -949,14 +949,14 @@
 							updatePredictionTournament: o
 						} = n.body.data;
 					if (!o.tournament) throw new Error("Failed to update prediction name");
-					return x(j({
+					return t(j({
 						subredditId: i,
 						tournament: o.tournament
 					})), o.tournament
-				}, I = (a, i) => async (r, x, {
-					gqlContext: t
+				}, I = (a, i) => async (r, t, {
+					gqlContext: x
 				}) => {
-					const k = await Object(s.d)(t(), {
+					const k = await Object(s.d)(x(), {
 							tournamentId: a
 						}),
 						{
@@ -967,28 +967,28 @@
 						subredditId: i,
 						tournament: n.tournament
 					})), n.tournament
-				}, w = a => async (i, r, {
-					gqlContext: x
+				}, N = a => async (i, r, {
+					gqlContext: t
 				}) => {
-					const t = await Object(s.e)(x(), {
+					const x = await Object(s.e)(t(), {
 						postId: a
 					});
-					if (!t.ok || t.error) throw new Error("Failed to fetch prediction chip packages");
+					if (!x.ok || x.error) throw new Error("Failed to fetch prediction chip packages");
 					const {
 						postInfoById: k
-					} = t.body.data;
+					} = x.body.data;
 					if (!k.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return k.predictionChipPackages
-				}, N = a => async (i, r, {
-					gqlContext: x
+				}, w = a => async (i, r, {
+					gqlContext: t
 				}) => {
-					const t = await Object(s.g)(x(), {
+					const x = await Object(s.g)(t(), {
 						tournamentId: a
 					});
-					if (!t.ok || t.error) throw new Error("Failed to fetch token balance");
+					if (!x.ok || x.error) throw new Error("Failed to fetch token balance");
 					const {
 						identity: k
-					} = t.body.data;
+					} = x.body.data;
 					if (!k.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return k.predictionTokens
 				}
@@ -1008,29 +1008,29 @@
 			})), r.d(i, "c", (function() {
 				return v
 			})), r.d(i, "f", (function() {
-				return P
+				return S
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var x = r("./node_modules/lodash/forOwn.js"),
-				t = r.n(x),
+			var t = r("./node_modules/lodash/forOwn.js"),
+				x = r.n(t),
 				k = r("./src/reddit/actions/governance/errorToast.ts"),
 				n = r("./src/reddit/endpoints/economics/emojis.ts"),
 				o = r("./src/reddit/endpoints/economics/specialMembership.ts"),
 				s = r("./src/reddit/endpoints/economics/subredditPremium.ts"),
-				m = r("./src/reddit/endpoints/governance/badges.ts"),
-				e = r("./src/config.ts"),
+				e = r("./src/reddit/endpoints/governance/badges.ts"),
+				m = r("./src/config.ts"),
 				l = r("./src/reddit/endpoints/governance/requester.ts");
 
 			function c(a, i, r) {
 				return Object(l.a)(a, {
 					method: "get",
-					endpoint: `${e.a.metaUrl}/products/${i}?owners=${r}` + "&types=emotes_pack,giphy"
+					endpoint: `${m.a.metaUrl}/products/${i}?owners=${r}` + "&types=emotes_pack,giphy"
 				})
 			}
 			var p = r("./src/reddit/models/Badge/index.ts"),
 				h = r("./src/reddit/models/Badge/managementPage.ts"),
-				f = r("./src/reddit/models/Product/index.ts"),
-				d = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
+				d = r("./src/reddit/models/Product/index.ts"),
+				f = r("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				u = r("./src/reddit/selectors/economics.ts"),
 				y = r("./src/reddit/selectors/products.ts"),
 				G = r("./src/reddit/actions/economics/me/thunkedActions.ts"),
@@ -1050,82 +1050,82 @@
 				await a(Object(G.b)({
 					includeMemberships: !0
 				}));
-				const x = i().economics.me.data.specialMemberships || {},
-					t = Object.keys(x);
-				if (t.length) {
-					const i = await Object(o.e)(r(), t);
+				const t = i().economics.me.data.specialMemberships || {},
+					x = Object.keys(t);
+				if (x.length) {
+					const i = await Object(o.e)(r(), x);
 					i.ok && a(Object(E.g)(i.body))
 				}
-			}, V = (a, i) => async (r, x, {
-				apiContext: t
+			}, V = (a, i) => async (r, t, {
+				apiContext: x
 			}) => {
-				const k = x().user.account,
-					n = x().economics.subredditPremium[a],
-					o = !n || n.status !== d.a.Fetched || i;
+				const k = t().user.account,
+					n = t().economics.subredditPremium[a],
+					o = !n || n.status !== f.a.Fetched || i;
 				if (k && o) {
-					const i = await Object(s.a)(t(), a, k.id);
+					const i = await Object(s.a)(x(), a, k.id);
 					r(Object(E.i)(i))
 				}
 			}, b = a => async (i, r, {
-				apiContext: x
+				apiContext: t
 			}) => {
-				const t = r(),
-					n = t.user.account,
-					o = Object(u.f)(t, a.subredditId),
+				const x = r(),
+					n = x.user.account,
+					o = Object(u.f)(x, a.subredditId),
 					s = Object.keys(o).map(a => o[a]).filter(Boolean);
 				if (n && a.badge) {
-					let r, t;
+					let r, x;
 					r = a.placement === p.a.First ? o[h.a.Loyalty] : a.placement === p.a.Second ? o[h.a.Achievement] : o[h.a.Cosmetic], i(Object(E.a)({
 						...a,
 						badge: B(a.badge),
 						currentAppliedBadges: s,
 						userId: n.id
-					})), A(a.badge) && r ? t = await Object(m.a)(x(), a.subredditId, r.id, !1) : A(a.badge) || (t = await Object(m.a)(x(), a.subredditId, a.badge.id)), t && !t.ok && (i(Object(E.a)({
+					})), A(a.badge) && r ? x = await Object(e.a)(t(), a.subredditId, r.id, !1) : A(a.badge) || (x = await Object(e.a)(t(), a.subredditId, a.badge.id)), x && !x.ok && (i(Object(E.a)({
 						...a,
 						badge: r,
 						currentAppliedBadges: s,
 						userId: n.id
-					})), Object(k.a)(i, t.error))
+					})), Object(k.a)(i, x.error))
 				}
-			}, F = (a, i) => async (r, x, {
-				apiContext: t
+			}, F = (a, i) => async (r, t, {
+				apiContext: x
 			}) => {
 				await r(V(a, !0));
-				const k = x().economics.subredditPremium[a];
-				if (k && k.status === d.a.Fetched) {
-					const x = k.data.userOwnedBadges.find(a => a.type === i.id);
-					x && (r(b({
-						badge: x,
+				const k = t().economics.subredditPremium[a];
+				if (k && k.status === f.a.Fetched) {
+					const t = k.data.userOwnedBadges.find(a => a.type === i.id);
+					t && (r(b({
+						badge: t,
 						subredditId: a,
-						placement: x.placement
+						placement: t.placement
 					})), r(Object(E.d)(h.c.MyBadges)))
 				}
 			}, g = a => async (i, r, {
-				apiContext: x
+				apiContext: t
 			}) => {
 				const o = r().user.account,
 					s = !r().economics.emotes[a],
-					m = !r().economics.gifs[a];
-				if (o && (s || m)) {
-					const [r, s] = await Promise.all([Object(n.b)(x(), a), c(x(), a, o.id)]);
+					e = !r().economics.gifs[a];
+				if (o && (s || e)) {
+					const [r, s] = await Promise.all([Object(n.b)(t(), a), c(t(), a, o.id)]);
 					if (!s.ok) return void Object(k.a)(i, s.error);
-					const m = {
+					const e = {
 						emotes: [],
 						emoteCollections: r.ok ? r.body : {},
 						giphy: []
 					};
-					t()(s.body, a => {
-						a.type === f.a.EmotesPack ? m.emotes.push(a) : a.type === f.a.Giphy && m.giphy.push(a)
+					x()(s.body, a => {
+						a.type === d.a.EmotesPack ? e.emotes.push(a) : a.type === d.a.Giphy && e.giphy.push(a)
 					}), i(Object(E.e)({
 						subredditId: a,
-						products: m
+						products: e
 					}))
 				}
-			}, v = (a, i, r) => async (x, t, {
+			}, v = (a, i, r) => async (t, x, {
 				apiContext: k
 			}) => {
-				if (await x(V(a, !0)), r && i) {
-					const r = t(),
+				if (await t(V(a, !0)), r && i) {
+					const r = x(),
 						k = Object(u.f)(r, a),
 						n = Object(y.a)(r, i);
 					if (!k[Object(h.d)(n.placement)] && n) {
@@ -1133,24 +1133,24 @@
 							subredditId: a,
 							badge: n
 						});
-						i && await x(b({
+						i && await t(b({
 							badge: i,
 							subredditId: a
 						}))
 					}
-					x(Object(E.c)({
+					t(Object(E.c)({
 						subredditId: a,
 						initialView: h.c.MyBadges
 					}))
 				}
-			}, P = a => async (i, r, {
-				apiContext: x
+			}, S = a => async (i, r, {
+				apiContext: t
 			}) => {
 				const {
-					wallet: t
-				} = await Object(o.c)(x(), a);
+					wallet: x
+				} = await Object(o.c)(t(), a);
 				i(Object(E.f)({
-					wallet: t
+					wallet: x
 				})), await i(V(a.subredditId, !0))
 			}
 		},
@@ -1159,16 +1159,16 @@
 			r.d(i, "a", (function() {
 				return o
 			}));
-			var x = r("./src/lib/makeActionCreator/index.ts"),
-				t = r("./src/reddit/endpoints/governance/community.ts"),
+			var t = r("./src/lib/makeActionCreator/index.ts"),
+				x = r("./src/reddit/endpoints/governance/community.ts"),
 				k = r("./src/reddit/actions/governance/constants.ts");
-			const n = Object(x.a)(k.a),
+			const n = Object(t.a)(k.a),
 				o = ({
 					subredditId: a
 				}) => async (i, r, {
-					apiContext: x
+					apiContext: t
 				}) => {
-					const k = await Object(t.a)(x(), {
+					const k = await Object(x.a)(t(), {
 						subredditId: a
 					});
 					k.ok && i(n({
@@ -1180,9 +1180,9 @@
 		"./src/reddit/actions/governance/constants.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return x
-			})), r.d(i, "b", (function() {
 				return t
+			})), r.d(i, "b", (function() {
+				return x
 			})), r.d(i, "c", (function() {
 				return k
 			})), r.d(i, "d", (function() {
@@ -1192,9 +1192,9 @@
 			})), r.d(i, "f", (function() {
 				return s
 			})), r.d(i, "g", (function() {
-				return m
-			})), r.d(i, "h", (function() {
 				return e
+			})), r.d(i, "h", (function() {
+				return m
 			})), r.d(i, "i", (function() {
 				return l
 			})), r.d(i, "j", (function() {
@@ -1204,9 +1204,9 @@
 			})), r.d(i, "l", (function() {
 				return h
 			})), r.d(i, "m", (function() {
-				return f
-			})), r.d(i, "n", (function() {
 				return d
+			})), r.d(i, "n", (function() {
+				return f
 			})), r.d(i, "o", (function() {
 				return u
 			})), r.d(i, "p", (function() {
@@ -1228,20 +1228,20 @@
 			})), r.d(i, "x", (function() {
 				return F
 			}));
-			const x = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
-				t = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
+			const t = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
+				x = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
 				k = "GOVERNANCE__NEW_TOP_MOD_SUGGESTED",
 				n = "GOVERNANCE__OPT_OUT_MODAL_OPENED",
 				o = "POLL_VOTE_SUCCESS",
 				s = "GOVERNANCE__PROPOSAL_CREATION_FAILURE",
-				m = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
-				e = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
+				e = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
+				m = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
 				l = "GOVERNANCE__PROPOSAL_OPTION_VOTE_FAILURE",
 				c = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
 				p = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
 				h = "GOVERNANCE__PUBLIC_WALLET_INFO_FAILURE",
-				f = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
-				d = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
+				d = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
+				f = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
 				u = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
 				y = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				G = "GOVERNANCE__TRANSFER_FAILURE",
@@ -1258,33 +1258,33 @@
 			r.d(i, "a", (function() {
 				return n
 			}));
-			var x = r("./src/reddit/actions/toaster.ts"),
-				t = r("./src/reddit/helpers/governanceErrorText/index.ts"),
+			var t = r("./src/reddit/actions/toaster.ts"),
+				x = r("./src/reddit/helpers/governanceErrorText/index.ts"),
 				k = r("./src/reddit/models/Toast/index.ts");
 
 			function n(a, i) {
-				a(Object(x.f)({
+				a(Object(t.f)({
 					duration: 5e3,
 					kind: k.b.Error,
-					text: Object(t.a)(i)
+					text: Object(x.a)(i)
 				}))
 			}
 		},
 		"./src/reddit/actions/governance/publicWalletsFetched.ts": function(a, i, r) {
 			"use strict";
-			var x = r("./src/lib/makeActionCreator/index.ts"),
-				t = r("./src/reddit/endpoints/governance/wallet.ts"),
+			var t = r("./src/lib/makeActionCreator/index.ts"),
+				x = r("./src/reddit/endpoints/governance/wallet.ts"),
 				k = r("./src/reddit/actions/governance/constants.ts");
-			const n = Object(x.a)(k.m),
-				o = Object(x.a)(k.n),
-				s = Object(x.a)(k.l);
+			const n = Object(t.a)(k.m),
+				o = Object(t.a)(k.n),
+				s = Object(t.a)(k.l);
 			i.a = a => async (i, r, {
-				apiContext: x
+				apiContext: t
 			}) => {
 				i(n({
 					subredditId: a.subredditId
 				}));
-				const k = await Object(t.b)(x(), a);
+				const k = await Object(x.b)(t(), a);
 				k.ok ? i(o({
 					subredditId: a.subredditId,
 					...k.body
@@ -1313,48 +1313,72 @@
 			r.d(i, "a", (function() {
 				return l
 			}));
-			var x = r("./node_modules/react/index.js"),
-				t = r.n(x),
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t),
 				k = r("./src/reddit/components/Econ/CoinsModalHeader/index.m.less"),
 				n = r.n(k),
 				o = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				s = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				m = r("./src/reddit/icons/svgs/Plus/index.tsx");
+				e = r("./src/reddit/icons/svgs/Plus/index.tsx");
 			const {
-				fbt: e
+				fbt: m
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
 			function l({
 				onAddCoins: a,
 				onCancel: i,
 				title: r,
-				userCoins: x
+				userCoins: t
 			}) {
-				return t.a.createElement("div", {
+				return x.a.createElement("div", {
 					className: n.a.gildHeader
-				}, t.a.createElement("button", {
+				}, x.a.createElement("button", {
 					className: n.a.closeBtn,
 					onClick: i
-				}, t.a.createElement(o.b, {
+				}, x.a.createElement(o.b, {
 					className: n.a.closeBtnIcon
-				})), t.a.createElement("div", {
+				})), x.a.createElement("div", {
 					className: n.a.headerText
-				}, r), t.a.createElement("button", {
+				}, r), x.a.createElement("button", {
 					className: n.a.coinButton,
 					onClick: a
-				}, t.a.createElement("div", {
+				}, x.a.createElement("div", {
 					className: n.a.coinBalanceIndicator,
 					tabIndex: -1
-				}, t.a.createElement(s.a, {
+				}, x.a.createElement(s.a, {
 					className: n.a.coinIcon
-				}), t.a.createElement("div", {
+				}), x.a.createElement("div", {
 					className: n.a.coinBalance
-				}, (x || 0).toLocaleString())), t.a.createElement("div", {
+				}, (t || 0).toLocaleString())), x.a.createElement("div", {
 					className: n.a.addCoins,
 					tabIndex: -1
-				}, t.a.createElement(m.a, {
+				}, x.a.createElement(e.a, {
 					className: n.a.plusIcon
 				}))))
+			}
+		},
+		"./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less": function(a, i, r) {
+			a.exports = {
+				spacer: "_2X6bLV9uUx2nAIyWr-ZH8q",
+				smallSpacer: "_2AnpY9wZq41t4cOOg6nl7Z",
+				modal: "gK-Bq6LND2mHlVmm0OyOF",
+				closeButton: "_148SgYhRwbe3yqgXCkao-3",
+				closeIcon: "_2Wfc_WdfJFIr_vf3eEXpZZ",
+				image: "_2-6PRuDsvE0VmeUxPiN4VO",
+				imageWrapper: "_2W3osjGBUyX9KFl62fi7rk",
+				star1: "_2UfVJXiEmwm5iuqWtStET_",
+				star2: "kz2JFnOTsECwmeCjUq7DT",
+				star3: "VIpS2R-VHBk65WSa6Zcib",
+				star4: "l-AV8_H83Hx_AHDSeTB98",
+				star5: "_1dPwshgIcu7y8Z1FasODrj",
+				star6: "_3NqJmwdfmQTGmPTo_r720g",
+				header: "_12Jw6FeyEt2qhLDDnwSw9i",
+				premium: "_3U4cIVyfUBOzxSWWEj8JYE",
+				title: "_8kYSqIcb9XUa_toG_ha4y",
+				subtitle: "_2rpc1fbJH1uajRfg-G8wWJ",
+				button: "_2MBbc_VAPJT7NXQBaPHyXd",
+				link: "n3UBYMhr65qHMduvqQ5pA",
+				disclaimer: "_29_5VhqcFSJcdkzGldAB94"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionModal/Header/index.m.less": function(a, i, r) {
@@ -1418,22 +1442,22 @@
 		"./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return Y
+				return K
 			}));
-			var x = r("./node_modules/react/index.js"),
-				t = r.n(x),
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t),
 				k = r("./node_modules/react-redux/es/index.js"),
 				n = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/higherOrderComponents/asModal/index.tsx"),
 				s = r("./src/lib/classNames/index.ts"),
-				m = r("./src/reddit/actions/economics/predictions/index.ts"),
-				e = r("./src/reddit/actions/toaster.ts"),
+				e = r("./src/reddit/actions/economics/predictions/index.ts"),
+				m = r("./src/reddit/actions/toaster.ts"),
 				l = r("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
 				c = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				p = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				h = r("./src/reddit/icons/svgs/Minus/index.tsx"),
-				f = r("./src/reddit/icons/svgs/Plus/index.tsx"),
-				d = r("./src/reddit/helpers/trackers/predictions.ts"),
+				d = r("./src/reddit/icons/svgs/Plus/index.tsx"),
+				f = r("./src/reddit/helpers/trackers/predictions.ts"),
 				u = r("./src/reddit/hooks/useTracking.ts"),
 				y = r("./src/reddit/models/Toast/index.ts"),
 				G = r("./src/reddit/selectors/experiments/econ/index.ts"),
@@ -1446,14 +1470,14 @@
 			function b({
 				className: a
 			}) {
-				return t.a.createElement("svg", {
+				return x.a.createElement("svg", {
 					className: a,
 					width: "24",
 					height: "24",
 					viewBox: "0 0 24 24",
 					fill: "none",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, t.a.createElement("path", {
+				}, x.a.createElement("path", {
 					opacity: "0.4",
 					d: "M12 0L13.6971 10.3029L24 12L13.6971 13.6971L12 24L10.3029 13.6971L0 12L10.3029 10.3029L12 0Z",
 					fill: "#DDBD37"
@@ -1516,8 +1540,8 @@
 				const i = g[a];
 				return i[Math.floor(Math.random() * i.length)]
 			};
-			var P = r("./src/reddit/components/Econ/Prediction/PredictionModal/Header/index.m.less"),
-				S = r.n(P);
+			var S = r("./src/reddit/components/Econ/Prediction/PredictionModal/Header/index.m.less"),
+				P = r.n(S);
 			const {
 				fbt: T
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1529,35 +1553,35 @@
 			}) {
 				const n = Object(k.e)(G.o),
 					o = Object(k.e)(E.d),
-					[m, e] = Object(x.useState)(null),
-					[l, c] = Object(x.useState)(!1),
+					[e, m] = Object(t.useState)(null),
+					[l, c] = Object(t.useState)(!1),
 					p = (null == i ? void 0 : i.amount) || (null == r ? void 0 : r.coins) || 0;
-				return Object(x.useEffect)(() => {
-					e(v(p)), c(!0), setTimeout(() => c(!1), 400)
-				}, [p]), n ? t.a.createElement("div", {
-					className: S.a.header
-				}, t.a.createElement(D.q, {
+				return Object(t.useEffect)(() => {
+					m(v(p)), c(!0), setTimeout(() => c(!1), 400)
+				}, [p]), n ? x.a.createElement("div", {
+					className: P.a.header
+				}, x.a.createElement(D.q, {
 					"aria-label": T._("Close", null, {
 						hk: "40q8CL"
 					}),
-					className: S.a.closeButton,
+					className: P.a.closeButton,
 					Icon: Object(V.b)("close"),
 					onClick: a,
 					priority: D.b.Plain
-				}), t.a.createElement("h3", {
-					className: Object(s.a)(S.a.colorCommentary, {
-						[S.a.hasAddedCoins]: !!p
+				}), x.a.createElement("h3", {
+					className: Object(s.a)(P.a.colorCommentary, {
+						[P.a.hasAddedCoins]: !!p
 					}),
 					"data-testid": "color-commentary"
-				}, m || t.a.createElement(t.a.Fragment, null, " "), t.a.createElement("div", {
-					className: Object(s.a)(S.a.highlight, {
-						[S.a.isHighlighting]: l
+				}, e || x.a.createElement(x.a.Fragment, null, " "), x.a.createElement("div", {
+					className: Object(s.a)(P.a.highlight, {
+						[P.a.isHighlighting]: l
 					})
-				}, t.a.createElement(b, {
-					className: S.a.leftStar
-				}), t.a.createElement(b, {
-					className: S.a.rightStar
-				})))) : t.a.createElement(B.a, {
+				}, x.a.createElement(b, {
+					className: P.a.leftStar
+				}), x.a.createElement(b, {
+					className: P.a.rightStar
+				})))) : x.a.createElement(B.a, {
 					onAddCoins: A.promptUserToBuyMoreCoins,
 					onCancel: a,
 					title: T._("Predict the Future", null, {
@@ -1573,48 +1597,48 @@
 				fbt: I
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function w({
+			function N({
 				isCoinsPrediction: a,
 				option: i,
 				tokenBalance: r
 			}) {
-				return t.a.createElement(t.a.Fragment, null, t.a.createElement("h1", {
+				return x.a.createElement(x.a.Fragment, null, x.a.createElement("h1", {
 					className: C.a.selection
-				}, I._("You picked {lineBreak}{optionText} !", [I._param("lineBreak", t.a.createElement("br", null)), I._param("optionText", `‘${Object(O.a)(i.text,40,"...")}’`)], {
+				}, I._("You picked {lineBreak}{optionText} !", [I._param("lineBreak", x.a.createElement("br", null)), I._param("optionText", `‘${Object(O.a)(i.text,40,"...")}’`)], {
 					hk: "2egxpe"
-				})), r ? t.a.createElement("div", {
+				})), r ? x.a.createElement("div", {
 					className: C.a.tokenBalance
 				}, I._({
 					"*": "You have {=[tokenImage][tokenBalance]} tournament tokens",
 					_1: "You have {=[tokenImage][tokenBalance]} tournament token"
-				}, [I._param("=[tokenImage][tokenBalance]", t.a.createElement("span", {
+				}, [I._param("=[tokenImage][tokenBalance]", x.a.createElement("span", {
 					className: C.a.tokenBalanceAmount
-				}, I._("{tokenImage}{tokenBalance}", [I._param("tokenImage", t.a.createElement(l.a, {
+				}, I._("{tokenImage}{tokenBalance}", [I._param("tokenImage", x.a.createElement(l.a, {
 					className: C.a.tokenIcon
 				})), I._param("tokenBalance", r)], {
 					hk: "2MlGLd"
 				}))), I._plural(r)], {
 					hk: "4Gtem2"
-				})) : a ? t.a.createElement("p", {
+				})) : a ? x.a.createElement("p", {
 					className: C.a.upsell
 				}, I._("Prove you’re right, taunt your fellow redditors, and earn bragging rights.", null, {
 					hk: "2fEaS6"
 				})) : null)
 			}
-			var N = r("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
-				L = r.n(N),
+			var w = r("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
+				L = r.n(w),
 				M = r("./src/reddit/components/SubredditIcon/index.tsx"),
 				R = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				U = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
 				H = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				z = r("./src/reddit/selectors/subreddit.ts"),
+				W = r("./src/reddit/selectors/subreddit.ts"),
 				q = r("./src/reddit/components/Econ/Prediction/PredictionModal/TournamentModal/index.m.less"),
-				W = r.n(q);
+				z = r.n(q);
 			const {
-				fbt: $
+				fbt: J
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function J({
+			function $({
 				onCancel: a,
 				onSubmit: i,
 				pollId: r,
@@ -1624,139 +1648,139 @@
 					s = Object(k.e)(a => Object(H.d)(a, {
 						subredditId: n
 					})),
-					m = Object(k.e)(a => Object(z.U)(a, {
+					e = Object(k.e)(a => Object(W.U)(a, {
 						subredditId: n
 					})),
-					e = Object(U.a)({
+					m = Object(U.a)({
 						shouldHideNsfwIcon: !1,
-						subredditOrProfile: m
+						subredditOrProfile: e
 					}),
-					[p, h] = Object(x.useState)(!1);
-				if (Object(x.useEffect)(() => {
-						o(Object(d.v)({
-							numberPredictionTokens: Y,
+					[p, h] = Object(t.useState)(!1);
+				if (Object(t.useEffect)(() => {
+						o(Object(f.v)({
+							numberPredictionTokens: K,
 							pollId: r
 						}))
-					}, [r, o]), Object(x.useEffect)(() => {
+					}, [r, o]), Object(t.useEffect)(() => {
 						s || a()
 					}, [s, a]), !s) return null;
-				return t.a.createElement("div", {
-					className: W.a.tournamentModal
-				}, t.a.createElement("div", {
-					className: W.a.header
-				}, t.a.createElement(M.b, {
-					className: W.a.icon,
-					iconUrl: e.url,
-					altText: $._("Subreddit icon", null, {
+				return x.a.createElement("div", {
+					className: z.a.tournamentModal
+				}, x.a.createElement("div", {
+					className: z.a.header
+				}, x.a.createElement(M.b, {
+					className: z.a.icon,
+					iconUrl: m.url,
+					altText: J._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
-					subredditOrProfile: m
-				}), t.a.createElement("h1", {
-					className: W.a.title
-				}, s.name), t.a.createElement("p", {
-					className: W.a.description
-				}, $._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
+					subredditOrProfile: e
+				}), x.a.createElement("h1", {
+					className: z.a.title
+				}, s.name), x.a.createElement("p", {
+					className: z.a.description
+				}, J._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
 					hk: "1tajkZ"
-				})), t.a.createElement(D.q, {
-					"aria-label": $._("Close", null, {
+				})), x.a.createElement(D.q, {
+					"aria-label": J._("Close", null, {
 						hk: "40q8CL"
 					}),
-					className: W.a.closeButton,
+					className: z.a.closeButton,
 					Icon: Object(V.b)("close"),
 					onClick: a,
 					priority: D.b.Plain
-				})), t.a.createElement("div", {
-					className: W.a.body
-				}, t.a.createElement("div", {
-					className: W.a.startingBalance
-				}, $._({
+				})), x.a.createElement("div", {
+					className: z.a.body
+				}, x.a.createElement("div", {
+					className: z.a.startingBalance
+				}, J._({
 					"*": "Claim your {tokens amount}tokens to get started",
 					_1: "Claim your {tokens amount} token to get started"
-				}, [$._param("tokens amount", t.a.createElement("span", {
-					className: W.a.startingBalanceAmount
-				}, t.a.createElement(l.a, {
-					className: W.a.tokenIcon
-				}), Y)), $._plural(Y)], {
+				}, [J._param("tokens amount", x.a.createElement("span", {
+					className: z.a.startingBalanceAmount
+				}, x.a.createElement(l.a, {
+					className: z.a.tokenIcon
+				}), K)), J._plural(K)], {
 					hk: "1qVlUJ"
-				})), t.a.createElement("button", {
-					className: W.a.submitButton,
+				})), x.a.createElement("button", {
+					className: z.a.submitButton,
 					onClick: async () => {
 						h(!0), await i(), h(!1)
 					}
-				}, p ? t.a.createElement(c.a, {
-					className: W.a.loadingIcon,
+				}, p ? x.a.createElement(c.a, {
+					className: z.a.loadingIcon,
 					sizePx: 6
-				}) : $._("Join the Tournament!", null, {
+				}) : J._("Join the Tournament!", null, {
 					hk: "SIzo7"
 				}))))
 			}
 			const {
-				fbt: K
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = 1e3, Q = Object(n.c)({
+				fbt: Y
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = 1e3, X = Object(n.c)({
 				isNewPredictionsSheet: G.o,
 				userCoins: E.d
-			}), X = {
-				fetchPredictionChipPackages: m.d,
-				fetchPredictionTokens: m.e,
-				getCoinPacks: m.h,
-				showToast: e.f
+			}), Q = {
+				fetchPredictionChipPackages: e.d,
+				fetchPredictionTokens: e.e,
+				getCoinPacks: e.h,
+				showToast: m.f
 			};
-			i.b = Object(k.b)(Q, X)(Object(o.a)(({
+			i.b = Object(k.b)(X, Q)(Object(o.a)(({
 				fetchPredictionChipPackages: a,
 				fetchPredictionTokens: i,
 				getCoinPacks: r,
 				isCreatingVote: k,
 				isNewPredictionsSheet: n,
 				onCancel: o,
-				onPredict: m,
-				option: e,
+				onPredict: e,
+				option: m,
 				pollId: G,
 				showToast: E,
 				subredditId: A,
 				tournamentId: B,
 				userCoins: D
 			}) => {
-				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, j] = Object(x.useState)(!1), [C, I] = Object(x.useState)(!1), [N, M] = Object(x.useState)(!1), R = Object(u.a)(), U = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], z = B ? v && V === v.length - 1 : F && V === F.length - 1, q = !!F || "COINS" === (null == H ? void 0 : H.currency), W = q && D < ((null == U ? void 0 : U.coins) || (null == H ? void 0 : H.amount) || 0), $ = !!H && null !== S && S < H.amount, Q = null == U ? void 0 : U.coins, X = null == H ? void 0 : H.amount, Z = W || $, aa = Z || z, ia = Object(x.useCallback)(async () => {
+				const [V, b] = Object(t.useState)(0), [F, g] = Object(t.useState)(null), [v, S] = Object(t.useState)(null), [P, T] = Object(t.useState)(null), [O, j] = Object(t.useState)(!1), [C, I] = Object(t.useState)(!1), [w, M] = Object(t.useState)(!1), R = Object(u.a)(), U = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], W = B ? v && V === v.length - 1 : F && V === F.length - 1, q = !!F || "COINS" === (null == H ? void 0 : H.currency), z = q && D < ((null == U ? void 0 : U.coins) || (null == H ? void 0 : H.amount) || 0), J = !!H && null !== P && P < H.amount, X = null == U ? void 0 : U.coins, Q = null == H ? void 0 : H.amount, Z = z || J, aa = Z || W, ia = Object(t.useCallback)(async () => {
 					try {
 						const i = await a(G);
-						P(i)
+						S(i)
 					} catch (i) {
 						E({
 							duration: 5e3,
 							kind: y.b.Error,
-							text: K._("Error: Failed to get chip packs for post", null, {
+							text: Y._("Error: Failed to get chip packs for post", null, {
 								hk: "1wR7Zy"
 							})
 						}), o()
 					}
 				}, [a, o, G, E]);
-				Object(x.useEffect)(() => {
-					O || (R(d.t), j(!0))
-				}, [O, R]), Object(x.useEffect)(() => {
+				Object(t.useEffect)(() => {
+					O || (R(f.t), j(!0))
+				}, [O, R]), Object(t.useEffect)(() => {
 					(async () => {
-						if (B && !S) try {
+						if (B && !P) try {
 							const a = await i(B);
 							I(!0), null === a ? M(!0) : T(a)
 						} catch (a) {
 							E({
 								duration: 5e3,
 								kind: y.b.Error,
-								text: K._("Error: Failed to fetch user balance", null, {
+								text: Y._("Error: Failed to fetch user balance", null, {
 									hk: "TF2D5"
 								})
 							}), o()
 						}
 					})()
-				}, [i, o, E, B, S]), Object(x.useEffect)(() => {
+				}, [i, o, E, B, P]), Object(t.useEffect)(() => {
 					(async () => {
 						if (!F && !v)
-							if (B) null !== S && ia();
+							if (B) null !== P && ia();
 							else try {
 								const a = await r(G);
 								a.length || (E({
 									duration: 5e3,
 									kind: y.b.Error,
-									text: K._("Error: Subreddit is not configured with coin packs", null, {
+									text: Y._("Error: Subreddit is not configured with coin packs", null, {
 										hk: "2t8uz0"
 									})
 								}), o()), g(a)
@@ -1764,48 +1788,48 @@
 								E({
 									duration: 5e3,
 									kind: y.b.Error,
-									text: K._("Error: Failed to fetch coin packs, please try again later", null, {
+									text: Y._("Error: Failed to fetch coin packs, please try again later", null, {
 										hk: "2aROIr"
 									})
 								}), o()
 							}
 					})()
-				}, [v, F, a, r, o, ia, G, E, S, B]);
-				const ra = Object(x.useCallback)(async () => {
+				}, [v, F, a, r, o, ia, G, E, P, B]);
+				const ra = Object(t.useCallback)(async () => {
 						if (!B) return null;
-						await ia(), M(!1), T(Y)
+						await ia(), M(!1), T(K)
 					}, [ia, B]),
-					xa = Object(x.useCallback)(() => {
-						R(Object(d.m)({
+					ta = Object(t.useCallback)(() => {
+						R(Object(f.m)({
 							pollId: G,
-							selectedNumberCoins: Q,
-							selectedNumberTokens: X
+							selectedNumberCoins: X,
+							selectedNumberTokens: Q
 						})), o()
-					}, [o, G, Q, X, R]);
-				return B && !C ? null : N ? t.a.createElement(J, {
-					onCancel: xa,
+					}, [o, G, X, Q, R]);
+				return B && !C ? null : w ? x.a.createElement($, {
+					onCancel: ta,
 					onSubmit: ra,
 					pollId: G,
 					subredditId: A
-				}) : t.a.createElement("div", {
+				}) : x.a.createElement("div", {
 					className: L.a.modalWrapper
-				}, t.a.createElement(_, {
-					onCancel: xa,
+				}, x.a.createElement(_, {
+					onCancel: ta,
 					selectedChipPack: H,
 					selectedCoinPack: U
-				}), t.a.createElement("div", {
+				}), x.a.createElement("div", {
 					className: L.a.modalContent
-				}, n && t.a.createElement(w, {
+				}, n && x.a.createElement(N, {
 					chipPack: null == v ? void 0 : v[0],
 					isCoinsPrediction: q,
-					option: e,
-					tokenBalance: S
-				}), t.a.createElement("div", {
+					option: m,
+					tokenBalance: P
+				}), x.a.createElement("div", {
 					className: L.a.wagerSelectorContainer
-				}, t.a.createElement("div", {
+				}, x.a.createElement("div", {
 					className: L.a.wagerSelector
-				}, t.a.createElement("button", {
-					"aria-label": K._("Decrease amount", null, {
+				}, x.a.createElement("button", {
+					"aria-label": Y._("Decrease amount", null, {
 						hk: "3CJknV"
 					}),
 					disabled: 0 === V,
@@ -1813,74 +1837,316 @@
 					onClick: a => {
 						a.preventDefault(), (F || v) && 0 !== V && b(V - 1)
 					}
-				}, t.a.createElement(h.a, {
+				}, x.a.createElement(h.a, {
 					className: L.a.wagerSelectorButtonIcon
-				})), U ? t.a.createElement("div", {
+				})), U ? x.a.createElement("div", {
 					className: L.a.wagerSelectorAmount
-				}, t.a.createElement(p.a, {
+				}, x.a.createElement(p.a, {
 					className: L.a.coinIcon
-				}), " ", U.coins ? U.coins : K._("Free", null, {
+				}), " ", U.coins ? U.coins : Y._("Free", null, {
 					hk: "2EqRoV"
-				})) : H ? t.a.createElement("div", {
+				})) : H ? x.a.createElement("div", {
 					className: L.a.wagerSelectorAmount
-				}, H.amount > 0 ? t.a.createElement(t.a.Fragment, null, t.a.createElement(l.a, {
+				}, H.amount > 0 ? x.a.createElement(x.a.Fragment, null, x.a.createElement(l.a, {
 					className: L.a.tokenIcon
-				}), " ", H.amount) : K._("Free", null, {
+				}), " ", H.amount) : Y._("Free", null, {
 					hk: "1fDvBk"
-				})) : t.a.createElement(c.a, {
+				})) : x.a.createElement(c.a, {
 					className: L.a.loadingIcon,
 					sizePx: 24
-				}), t.a.createElement("button", {
-					"aria-label": K._("Increase", null, {
+				}), x.a.createElement("button", {
+					"aria-label": Y._("Increase", null, {
 						hk: "3OfAwL"
 					}),
-					disabled: !(!F && !v || !z),
+					disabled: !(!F && !v || !W),
 					className: L.a.wagerSelectorButton,
 					onClick: a => {
-						a.preventDefault(), (F || v) && (z || b(V + 1))
+						a.preventDefault(), (F || v) && (W || b(V + 1))
 					}
-				}, t.a.createElement(f.a, {
+				}, x.a.createElement(d.a, {
 					className: L.a.wagerSelectorButtonIcon
-				}))), aa && t.a.createElement("div", {
+				}))), aa && x.a.createElement("div", {
 					className: L.a.amountMessage
-				}, W && K._("Insufficient coins", null, {
+				}, z && Y._("Insufficient coins", null, {
 					hk: "2Mo83P"
-				}), $ && K._("Insufficient tokens", null, {
+				}), J && Y._("Insufficient tokens", null, {
 					hk: "2XAKK7"
-				}), z && !Z && K._("Max amount", null, {
+				}), W && !Z && Y._("Max amount", null, {
 					hk: "1BpnPd"
-				}))), t.a.createElement("button", {
+				}))), x.a.createElement("button", {
 					className: Object(s.a)(L.a.predictButton, {
-						[L.a.isDisabled]: !F && !v || W,
+						[L.a.isDisabled]: !F && !v || z,
 						[L.a.isCreatingVote]: k
 					}),
-					disabled: !F && !v || k || $,
+					disabled: !F && !v || k || J,
 					onClick: a => {
-						a.preventDefault(), (U || H) && m({
+						a.preventDefault(), (U || H) && e({
 							coinPackage: U,
 							chipPackage: H
 						})
 					}
-				}, k ? t.a.createElement(c.a, {
+				}, k ? x.a.createElement(c.a, {
 					sizePx: 16
-				}) : W ? K._("Get Coins", null, {
+				}) : z ? Y._("Get Coins", null, {
 					hk: "11KD6n"
-				}) : K._("Let's do this!", null, {
+				}) : Y._("Let's do this!", null, {
 					hk: "342MNr"
-				})), t.a.createElement("div", {
+				})), x.a.createElement("div", {
 					className: L.a.disclaimer
-				}, q && t.a.createElement(t.a.Fragment, null, K._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [K._param("=Predictions don’t offer an opportunity to win real money or prizes.", t.a.createElement("a", {
+				}, q && x.a.createElement(x.a.Fragment, null, Y._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [Y._param("=Predictions don’t offer an opportunity to win real money or prizes.", x.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/previews-terms",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, K._("Predictions don’t offer an opportunity to win real money or prizes.", null, {
+				}, Y._("Predictions don’t offer an opportunity to win real money or prizes.", null, {
 					hk: "1BMKCi"
 				})))], {
 					hk: "7yPT5"
-				}), " "), K._("Other redditors will see your username and prediction.", null, {
+				}), " "), Y._("Other redditors will see your username and prediction.", null, {
 					hk: "TPwVV"
 				}))))
 			}))
+		},
+		"./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx": function(a, i, r) {
+			"use strict";
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t),
+				k = r("./node_modules/react-redux/es/index.js"),
+				n = r("./src/lib/classNames/index.ts"),
+				o = r("./src/reddit/selectors/telemetry.ts");
+			const s = "prediction_sneak_peek",
+				e = (a, i, r) => ({
+					...o.defaults(a),
+					post: o.post(a, i),
+					subreddit: o.subreddit(a),
+					predictions: {
+						tournamentId: r
+					}
+				});
+			var m = r("./src/reddit/hooks/useLocalStorage.ts"),
+				l = r("./src/reddit/hooks/useTracking.ts"),
+				c = r("./src/reddit/icons/svgs/EyeDouble/index.tsx"),
+				p = r("./src/reddit/icons/svgs/Star6/index.m.less"),
+				h = r.n(p);
+			var d = ({
+					className: a
+				}) => x.a.createElement("svg", {
+					className: Object(n.a)(h.a.sparkle, a),
+					viewBox: "0 0 12 12",
+					fill: "none",
+					xmlns: "http://www.w3.org/2000/svg"
+				}, x.a.createElement("path", {
+					d: "M6.24217.834593C6.17191.634169 5.98271.5 5.77032.5c-.21238 0-.40158.134169-.47184.334593L4.09315 4.27297.820306 5.53341C.627317 5.60773.5 5.79319.5 6s.127317.39227.320306.46659L4.09315 7.72703l1.20533 3.43837c.07026.2004.25946.3346.47184.3346.21239 0 .40159-.1342.47185-.3346L7.4475 7.72703l3.2728-1.26044c.193-.07432.3203-.25978.3203-.46659s-.1273-.39227-.3203-.46659L7.4475 4.27297 6.24217.834593z",
+					fill: "url(#paint0_linear)",
+					stroke: "inherit",
+					strokeLinejoin: "round"
+				}), x.a.createElement("defs", null, x.a.createElement("linearGradient", {
+					id: "paint0_linear",
+					x1: "1",
+					y1: "11",
+					x2: "10.5506",
+					y2: "10.9905",
+					gradientUnits: "userSpaceOnUse"
+				}, x.a.createElement("stop", {
+					stopColor: "#EC0623"
+				}), x.a.createElement("stop", {
+					offset: "1",
+					stopColor: "#FF8717"
+				})))),
+				f = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				u = r("./src/reddit/selectors/user.ts"),
+				y = r("./src/config.ts"),
+				G = r("./src/higherOrderComponents/asModal/index.tsx"),
+				E = r("./src/reddit/controls/Button/index.tsx"),
+				A = r("./src/reddit/icons/svgs/Close/index.tsx"),
+				B = r("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
+				D = r("./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less"),
+				V = r.n(D);
+			const {
+				fbt: b
+			} = r("./node_modules/fbt/lib/FbtPublic.js");
+			var F = Object(G.a)(({
+					isPremiumSubscriber: a,
+					tournamentId: i,
+					pollId: r,
+					hasSeenSneakPeek: k,
+					onReveal: n,
+					closeModal: o
+				}) => {
+					const m = a ? "continue" : "premium",
+						c = Object(l.a)();
+					Object(t.useEffect)(() => {
+						c((({
+							noun: a,
+							pollId: i,
+							tournamentId: r
+						}) => t => ({
+							...e(t, i, r),
+							source: s,
+							action: "view",
+							noun: a
+						}))({
+							noun: m,
+							pollId: r,
+							tournamentId: i
+						}))
+					}, [c, m, r, i]);
+					const p = () => c((({
+						noun: a,
+						pollId: i,
+						tournamentId: r
+					}) => t => ({
+						...e(t, i, r),
+						source: s,
+						action: "click",
+						noun: a
+					}))({
+						noun: m,
+						pollId: r,
+						tournamentId: i
+					}));
+					return x.a.createElement("div", {
+						className: V.a.modal
+					}, x.a.createElement("button", {
+						"aria-label": b._("Close", null, {
+							hk: "10CQyx"
+						}),
+						className: V.a.closeButton,
+						onClick: o
+					}, x.a.createElement(A.a, {
+						className: V.a.closeIcon
+					})), x.a.createElement("header", {
+						className: V.a.header
+					}, x.a.createElement("div", {
+						className: V.a.imageWrapper
+					}, x.a.createElement(B.a, {
+						className: V.a.image
+					}), !k && x.a.createElement(x.a.Fragment, null, x.a.createElement(d, {
+						className: V.a.star1
+					}), x.a.createElement(d, {
+						className: V.a.star2
+					}), x.a.createElement(d, {
+						className: V.a.star3
+					}), x.a.createElement(d, {
+						className: V.a.star4
+					}), x.a.createElement(d, {
+						className: V.a.star5
+					}), x.a.createElement(d, {
+						className: V.a.star6
+					}))), x.a.createElement("div", {
+						className: V.a.spacer
+					}), x.a.createElement("p", {
+						className: V.a.premium
+					}, b._("Premium Feature", null, {
+						hk: "32ZWoW"
+					})), x.a.createElement("div", {
+						className: V.a.smallSpacer
+					}), x.a.createElement("h2", {
+						className: V.a.title
+					}, b._("Sneak Peek", null, {
+						hk: "2FAIvU"
+					})), x.a.createElement("h3", {
+						className: V.a.subtitle
+					}, b._("Premium users can see how others have predicted before they make their own Prediction.", null, {
+						hk: "1gsyLA"
+					}))), a ? x.a.createElement(E.q, {
+						priority: E.b.Primary,
+						className: V.a.button,
+						onClick: () => {
+							p(), n(), o()
+						},
+						isFullWidth: !0
+					}, b._("Continue", null, {
+						hk: "3T00JU"
+					})) : x.a.createElement("a", {
+						className: V.a.link,
+						href: `${y.a.redditUrl}/premium`,
+						target: "_blank",
+						rel: "noopener noreferrer",
+						onClick: () => {
+							p(), o()
+						}
+					}, b._("Get Premium", null, {
+						hk: "3tW2d3"
+					})), x.a.createElement("div", {
+						className: V.a.spacer
+					}), x.a.createElement("p", {
+						className: V.a.disclaimer
+					}, b._("Only paid Reddit Premium members get a hint.", null, {
+						hk: "2BpR2d"
+					})))
+				}),
+				g = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
+				v = r.n(g);
+			const {
+				fbt: S
+			} = r("./node_modules/fbt/lib/FbtPublic.js");
+			i.a = ({
+				disabled: a,
+				isEnded: i,
+				userSelection: r,
+				isShowingHint: o,
+				tournamentId: p,
+				pollId: h,
+				onReveal: y
+			}) => {
+				const [G, E] = Object(t.useState)(!1), [A, B] = Object(m.a)("hasSeenPredictionSneakPeek", !1), D = Object(l.a)(), V = Object(k.e)(u.t), b = !!p, g = r && !o;
+				if (!Object(k.e)(a => !i && !g && b && Object(f.m)(a))) return null;
+				const P = () => {
+					A || B(!0), E(!1)
+				};
+				return x.a.createElement("div", {
+					className: v.a.optionButtonWrapper
+				}, !A && !a && x.a.createElement(x.a.Fragment, null, x.a.createElement(d, {
+					className: v.a.star1
+				}), x.a.createElement(d, {
+					className: v.a.star2
+				}), x.a.createElement(d, {
+					className: v.a.star3
+				}), x.a.createElement(d, {
+					className: v.a.star4
+				}), x.a.createElement(d, {
+					className: v.a.star5
+				})), x.a.createElement("button", {
+					"aria-label": S._("Sneak a peek", null, {
+						hk: "1VQ7WW"
+					}),
+					className: Object(n.a)(v.a.hintButton, {
+						[v.a.canGetHint]: !a
+					}),
+					disabled: a,
+					onClick: () => {
+						D((({
+							pollId: a,
+							tournamentId: i
+						}) => r => ({
+							...e(r, a, i),
+							source: "predictions",
+							action: "click",
+							noun: s
+						}))({
+							pollId: h,
+							tournamentId: p
+						})), V && A ? y() : E(!0)
+					}
+				}, x.a.createElement("div", {
+					className: v.a.optionBody
+				}, x.a.createElement(c.a, {
+					className: v.a.eyeIcon
+				}), x.a.createElement("div", {
+					className: v.a.optionText
+				}, S._("See what others think", null, {
+					hk: "2TLT90"
+				})))), G && x.a.createElement(F, {
+					isPremiumSubscriber: V,
+					tournamentId: p,
+					pollId: h,
+					hasSeenSneakPeek: A,
+					onReveal: y,
+					closeModal: P,
+					withOverlay: !0,
+					onOverlayClick: P
+				}))
+			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less": function(a, i, r) {
 			a.exports = {
@@ -1911,69 +2177,69 @@
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx": function(a, i, r) {
 			"use strict";
-			var x = r("./node_modules/react/index.js"),
-				t = r.n(x),
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t),
 				k = r("./src/lib/classNames/index.ts"),
 				n = r("./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx"),
 				o = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				s = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				m = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
-				e = r.n(m);
+				e = r("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
+				m = r.n(e);
 			const {
 				fbt: l
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			i.a = Object(x.forwardRef)(({
+			i.a = Object(t.forwardRef)(({
 				disabled: a,
 				isEnded: i,
 				isSelected: r,
-				needsResolution: x,
-				onClick: m,
+				needsResolution: t,
+				onClick: e,
 				option: c,
 				resolvedOptionId: p,
 				tournamentId: h,
-				userIsLoggedOut: f,
-				userSelection: d,
+				userIsLoggedOut: d,
+				userSelection: f,
 				votePercentage: u,
 				isShowingHint: y
 			}, G) => {
 				const E = !!h,
 					A = p === c.id,
-					B = i || !!d || !!p;
-				return t.a.createElement("div", {
-					className: e.a.optionButtonWrapper
-				}, t.a.createElement("button", {
+					B = i || !!f || !!p;
+				return x.a.createElement("div", {
+					className: m.a.optionButtonWrapper
+				}, x.a.createElement("button", {
 					"aria-label": c.text,
-					className: Object(k.a)(e.a.optionButton, {
-						[e.a.canVote]: !d && !i,
-						[e.a.isVote]: d === c.id,
-						[e.a.isCorrect]: A,
-						[e.a.isSelected]: r,
-						[e.a.isTournament]: E,
-						[e.a.isShowingHint]: y && !d
+					className: Object(k.a)(m.a.optionButton, {
+						[m.a.canVote]: !f && !i,
+						[m.a.isVote]: f === c.id,
+						[m.a.isCorrect]: A,
+						[m.a.isSelected]: r,
+						[m.a.isTournament]: E,
+						[m.a.isShowingHint]: y && !f
 					}),
-					disabled: a || !x && (B || f),
-					onClick: m,
+					disabled: a || !t && (B || d),
+					onClick: e,
 					ref: G
-				}, t.a.createElement("div", {
-					className: e.a.optionBody
-				}, A && t.a.createElement(o.a, {
-					className: e.a.checkmarkIcon
-				}), t.a.createElement("div", {
-					className: e.a.optionText
-				}, c.text), !!c.userStakeAmount && t.a.createElement("div", {
-					className: e.a.optionStake
-				}, E ? t.a.createElement(n.a, {
-					className: e.a.icon
-				}) : t.a.createElement(s.a, {
-					className: e.a.icon
-				}), " ", c.userStakeAmount)), !!u && t.a.createElement("div", {
-					className: e.a.optionPercentage,
+				}, x.a.createElement("div", {
+					className: m.a.optionBody
+				}, A && x.a.createElement(o.a, {
+					className: m.a.checkmarkIcon
+				}), x.a.createElement("div", {
+					className: m.a.optionText
+				}, c.text), !!c.userStakeAmount && x.a.createElement("div", {
+					className: m.a.optionStake
+				}, E ? x.a.createElement(n.a, {
+					className: m.a.icon
+				}) : x.a.createElement(s.a, {
+					className: m.a.icon
+				}), " ", c.userStakeAmount)), !!u && x.a.createElement("div", {
+					className: m.a.optionPercentage,
 					style: {
 						width: `${u}%`,
 						maxWidth: `${u}%`
 					}
-				}, " "), f && !B && t.a.createElement("div", {
-					className: e.a.loggedOutTooltip
+				}, " "), d && !B && x.a.createElement("div", {
+					className: m.a.loggedOutTooltip
 				}, l._("You must be logged in", null, {
 					hk: "18KrL7"
 				}))))
@@ -1981,13 +2247,13 @@
 		},
 		"./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx": function(a, i, r) {
 			"use strict";
-			var x = r("./node_modules/react/index.js"),
-				t = r.n(x),
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t),
 				k = r("./src/config.ts");
 			const {
 				fbt: n
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), o = `\n  ${k.a.assetPath}/img/econ/predictions/waiting.png,\n  ${k.a.assetPath}/img/econ/predictions/waiting@2x.png 2x,\n  ${k.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`;
-			i.a = a => t.a.createElement("img", {
+			i.a = a => x.a.createElement("img", {
 				className: a.className,
 				srcSet: o,
 				src: `${k.a.assetPath}/img/econ/predictions/waiting@2x.png 2x`,
@@ -2001,150 +2267,150 @@
 			r.d(i, "a", (function() {
 				return k
 			}));
-			var x = r("./node_modules/react/index.js"),
-				t = r.n(x);
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t);
 
 			function k({
 				className: a
 			}) {
-				return t.a.createElement("svg", {
+				return x.a.createElement("svg", {
 					className: a,
 					fill: "none",
 					height: "20",
 					viewBox: "0 0 20 20",
 					width: "20",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, t.a.createElement("path", {
+				}, x.a.createElement("path", {
 					d: "m11.8373 7.17254c-.0381-2.14805-1.2066-4.26563-3.12608-5.6611-.7001 1.14224-1.0571 2.46166-1.02847 3.80108.02863 1.33941.44168 2.64237 1.18995 3.75365",
 					fill: "#ffc2dd"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m8.87285 9.06578c-.03047.01981-.17672-.13254-.39609-.43722-.29757-.44864-.53424-.93481-.70383-1.44575-.25319-.76597-.37124-1.57014-.34887-2.37656.0185-.47751.08381-.95205.195-1.4168.12075-.49951.29704-.98393.52559-1.44421.04547-.10166.09632-.20083.15234-.29708l.16453-.28792c.0182-.03202.04253-.06014.07159-.08276.02907-.02261.06231-.03928.09782-.04904s.0726-.01243.10914-.00785c.03655.00458.07183.01631.10384.03453l.02742.01828c.38016.28079.73681.5921 1.0664.93082.30177.31806.57737.65991.82417 1.02223.4117.60733.7253 1.27566.9293 1.98046.1388.46809.2126.95301.2194 1.44118 0 .34277-.0396.52863-.0731.52863-.0336 0-.0762-.18281-.1402-.50731-.0876-.45579-.214-.90328-.3778-1.33757-.2445-.64356-.5745-1.25128-.9811-1.8068-.2427-.32728-.50846-.63681-.79524-.92625-.31294-.30838-.64797-.59352-1.00242-.85313l.41742-.08226-.15234.2666c-.05268.08874-.10048.18028-.1432.27422-.20887.42313-.37327.8668-.49055 1.32387-.10969.42749-.18107.8639-.21328 1.30406-.04198.75145.02993 1.50493.21328 2.23488.31535 1.25684.78762 1.94696.70078 1.99875z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m15.6001 5.87727c-.8963-.80295-1.9238-1.44605-3.0378-1.90125-.8516-.34734-1.7854-.585-2.69037-.41742-1.00242.18586-1.84945.84246-2.58984 1.55086-.89883.86988-1.70321 1.87383-2.14196 3.04687-.34277.91407-.45703 1.93177-1.02984 2.72697-.44789.6292-1.12582 1.0481-1.73672 1.5234s-1.19894 1.0664-1.32691 1.8281c-.134064.7983.2666 1.5905.76172 2.2349.43629.6039.99546 1.1085 1.64074 1.4808.65104.3698 1.41006.5028 2.14805.3763 1.28273-.2544 2.18918-1.3711 3.33937-2.0018.91406-.4966 1.98046-.6657 2.93876-1.0664 1.7105-.7343 3.0622-2.1139 3.7613-3.8391.6813-1.72672.7474-3.63533.1874-5.40512",
 					fill: "#ffc2dd"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m11.9928 5.88635c-.9902.47227-2.10078.77238-3.13214.36105-.44942-.17824-.91407-.48597-.99633-.96281-.08836-.53777.35648-1.01156.81047-1.31472 1.4823-.98567 3.3333-1.06641 5.0669-.66422 1.7337.40218 3.2663 2.19375 3.4842 3.95941 1.1699.23309 1.6178 1.90582 1.4396 3.08494-.0975.649-.4647 1.2416-.5027 1.8967-.0595 1.042.7175 1.9591.8302 2.9966.0424.4433-.0361.8899-.2271 1.2922-.1909.4024-.4873.7455-.8576.993-.7449.4829-2.1998.8653-2.9661.4174-.5408.5408-1.0664.8531-1.953.5621-.4365-.1597-.8123-.4516-1.075-.835s-.3992-.8392-.3906-1.3039c.0251-.4645.1826-.9122.4539-1.2901.2713-.378.645-.6704 1.0772-.8427-.118-.6928-.0689-1.4038.143-2.0739.212-.6701.5808-1.2799 1.0757-1.7789.4357-.4311.6475-1.2568.8623-1.82809.3184-.84551.0792-1.3589-.7115-1.79461-.7906-.4357-.6322-.91406-1.5356-.93234",
 					fill: "#7e53c1"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m2.93455 11.5232c-.76172.5652-1.73063 2.1861-1.73063 2.1861-.335154.9887-.09293 2.174.67184 2.8839.30469.2803.66879.4814.97347.7617.24375.2209.4479.489.72973.6581.29688.1598.6324.2336.96891.2133 1.02679-.0183 1.96523-.5515 2.83207-1.1014.52711-.3337.74496-.3748 1.08469-.8973.33972-.5226.44179-1.2508.08074-1.7596-.10551-.1489-.24341-.2718-.40332-.3597s-.33766-.1383-.51989-.1476c.14706-.1759.25646-.3801.32145-.5999.06499-.2199.08417-.4507.05637-.6783-.03221-.2274-.1238-.4424-.26556-.6232-.14175-.1808-.32865-.321-.54187-.4066-.21517-.0769-.44922-.0833-.66831-.0184s-.41185.1978-.55044.3795c-.12035-.4571-.26812-.9415-.66117-1.1929-.39304-.2514-.95672-.1706-1.36043.0899s-.73429.2133-1.01156.6094",
 					fill: "#ff85c6"
-				}), t.a.createElement("g", {
+				}), x.a.createElement("g", {
 					fill: "#000"
-				}, t.a.createElement("path", {
+				}, x.a.createElement("path", {
 					d: "m12.0369 5.96144c.0076.01828-.0975.08074-.3047.18129-.1051.04875-.2422.09598-.4022.15234-.1874.06167-.3781.11253-.5713.15235l-.1691.03351-.1813.01524-.1904.02133-.2011.00761c-.29982.01193-.59992-.01521-.89273-.08074-.34868-.0711-.67773-.21717-.96434-.42809-.33198-.24583-.57949-.58862-.7084-.98109-.00992-.03112-.01206-.0642-.00622-.09634.00585-.03215.01949-.06236.03974-.088l.18129-.22699.09293-.11578c.03351-.03656.06855-.0716.10359-.10816l.21176-.21633.23613-.20109c.33521-.27221.70445-.49959 1.0984-.67641.86515-.37673 1.79855-.5717 2.74215-.57281.2458 0 .4946.00761.7465.02285.1249.01066.2514.02437.3778.03656l.3885.06703c.5231.11861 1.0247.31749 1.4869.58957.4807.27702.916.62643 1.2903 1.03594.3946.42526.6993.9258.8958 1.47164.1606.44653.2128.92481.1524 1.39547l-.2225-.32449c.3024.07237.582.21897.8136.42656.2182.19639.3962.43337.524.69773.2368.4925.3602 1.03182.3611 1.57828.0036.26324-.0198.52618-.0701.78458-.0515.2498-.1265.4941-.224.7297-.1751.4479-.3458.8471-.3351 1.231.0236.4021.1338.7945.323 1.1502.1736.3762.3762.748.5149 1.1486.0732.1995.1243.4064.1523.617.025.2054.025.4131 0 .6185-.049.3813-.1783.7479-.3793 1.0756-.1803.2992-.4198.5584-.7038.7617-.2515.1695-.5267.3009-.8166.39-.4515.1462-.9263.2072-1.4.1798-.2998-.0157-.5927-.0952-.8593-.2331-.0441-.0259-.0837-.0472-.1142-.0701l-.0747-.064c-.0381-.035-.0548-.0564-.0487-.064s.0335 0 .0792.0168l.0838.0366c.0335.0137.0746.0259.1203.0426.265.0859.5427.1261.8212.1188.4422-.0126.879-.1002 1.2919-.2589.253-.0934.4915-.2222.7083-.3824.2336-.1832.4283-.4111.5729-.6703.1596-.2843.2582-.5987.2894-.9232.0316-.3501-.0206-.7025-.1523-1.0284-.131-.3519-.3321-.7038-.5256-1.0953-.2303-.4174-.366-.8802-.3976-1.3559-.0049-.2555.0316-.5102.1081-.7541.0701-.2376.1524-.457.2407-.6779.083-.2069.1462-.4211.1889-.6399.0401-.2216.0575-.44666.0518-.67179-.0025-.45984-.1065-.91345-.3046-1.32843-.089-.19841-.2208-.37466-.386-.5161-.1651-.14144-.3595-.24457-.5692-.30199-.0707-.01706-.1324-.05965-.1735-.11957s-.0585-.13291-.049-.20492c.0449-.37936.0001-.76396-.131-1.12278-.1711-.47191-.4347-.90491-.7754-1.27359-.3334-.36724-.7207-.68161-1.1487-.93234-.4116-.24365-.858-.42295-1.3238-.53168l-.3504-.06704-.352-.0396c-.2346-.0193-.4671-.02946-.6977-.03047-.8711-.0115-1.7356.15167-2.5426.47988-.69944.29292-1.31358.75772-1.78547 1.35129l.03199-.18738c.09268.31809.28096.59997.5393.80742.23935.19093.5167.32857.81351.40371.26464.07357.53739.114.81197.12035h.1874l.1798-.00762.1721-.00761.163-.01981c.2118-.01828.3976-.06246.5607-.08988.163-.02742.3046-.06856.4082-.0975.2194-.05942.3398-.08379.3474-.06551z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m15.1617 6.80064c.032-.01066.16.18738.2529.60938.0533.25693.0661.52062.0381.78152-.0428.34276-.1325.678-.2666.99633-.159.38683-.3724.749-.6338 1.07553-.2727.3504-.5713.684-.8318 1.0664-.1345.1968-.2591.4001-.3732.6094-.1109.2057-.1964.4241-.2544.6505-.126.4741-.116.9741.0289 1.4427l.0549.1523.0655.1524v.0107c.0153.035.0235.0728.0241.1111s-.0063.0763-.0205.1118c-.0142.0356-.0352.068-.062.0954-.0268.0273-.0587.0491-.094.064l-.0228.0092c-.4112.1591-.7588.4486-.9897.8242s-.3322.8166-.2885 1.2553c.0443.3877.1928.7562.4296 1.0664.21.2635.5015.4499.8288.5301.0736.0194.1484.0342.2239.0442.0792.0102.1564.0183.2316.0244.1384.0097.2774.0097.4159 0 .2139-.0066.4231-.0652.6093-.1706.3047-.1874.4007-.3977.4434-.3702.0167.0076.0091.0655-.029.166-.0649.1473-.1623.2781-.2849.3824-.2014.1636-.4437.2689-.7007.3047-.1541.0256-.31.0389-.4662.0396-.0823 0-.1656 0-.2499 0-.0935-.0045-.1866-.0152-.2787-.032-.4244-.0768-.8101-.2954-1.0939-.62-.3157-.3695-.521-.8204-.5926-1.3011-.0783-.5443.0291-1.0992.3047-1.5752.2866-.522.7517-.9233 1.3101-1.1304l-.1645.4022-.0838-.1858c-.0228-.064-.0487-.1265-.0701-.192-.1795-.573-.1895-1.1856-.0289-1.7641.0739-.272.1819-.5336.3215-.7785.1288-.2228.2697-.4385.4219-.646.2956-.4067.6231-.7464.8943-1.06636.2517-.28403.4648-.60009.6337-.93996.1414-.27918.2488-.57429.32-.87903.0485-.23077.0679-.4667.0579-.7023-.0198-.38695-.0732-.6109-.0305-.62461z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m11.7475 15.5359c.0397.0198-.0121.1751-.0487.457-.0497.3816-.0079.7696.1219 1.1319.0832.2572.2266.4908.4181.6816.1916.1907.4258.3331.6833.4153.2964.1041.6157.1251.9232.0609.3275-.0754.6263-.2436.8608-.4844.0439-.0439.1008-.0725.1623-.0816.0614-.009.1242.0019.1789.0313l.0229.0122.131.0716c.3301.1294.6855.1815 1.039.1523.3483-.0224.6927-.0874 1.0252-.1935.2948-.0892.572-.2283.8196-.4113.2096-.1663.3885-.3678.5287-.5957.2115-.3484.3397-.741.3747-1.1471.0275-.2879.0153-.457.0595-.4677.0441-.0107.1233.1523.1675.457.0501.4566-.033.918-.2392 1.3285-.1429.2883-.3393.5468-.5789.7617-.2813.2401-.6046.426-.9536.5484-.3748.137-.7663.2231-1.1639.256-.4489.0469-.9024-.017-1.3209-.1859-.07-.0335-.1371-.0746-.2056-.1112l.3626-.0381c-.3113.3274-.7135.554-1.1548.6505-.409.0775-.8316.0374-1.2188-.1158-.1777-.0673-.3469-.1553-.5042-.262-.1473-.1097-.279-.2388-.3915-.3839-.2342-.2994-.39-.6525-.4534-1.0273-.0633-.3748-.0321-.7595.0908-1.1192.1112-.291.2346-.4083.2635-.3915z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m12.5288 4.12384c.0335.12188-.6551.38696-1.2964.98567-.6414.59871-.9766 1.24922-1.0939 1.20504-.0533-.01981-.0411-.2209.0792-.51797.1677-.38261.4134-.72603.7214-1.00828.3079-.28226.6714-.49715 1.0672-.63094.3062-.09902.5073-.08836.5225-.03352z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m11.1488 3.92917c.0243.12492-.6734.33058-1.32543.89273s-.98262 1.20199-1.10145 1.15781c-.05332-.0198-.04265-.21937.07922-.51187.171-.37717.42374-.71159.73992-.97903.31619-.26744.68794-.4612 1.08824-.56726.3107-.0716.5088-.04723.5195.00762z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m16.3803 10.1901c-.1097-.067.3915-.97041.5347-2.19678s-.1005-2.22269.0229-2.26078c.0533-.01676.1935.2148.3047.63223.0647.24543.1066.49635.1249.74953.0464.62313-.0318 1.24927-.23 1.84183-.0799.24049-.1819.47305-.3047.69469-.2118.37938-.4053.56978-.4525.53928z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m18.9885 16.1546c-.064-.0137-.0412-.2773-.1036-.6749-.0645-.5111-.2722-.9936-.5992-1.3918-.327-.3981-.7599-.6957-1.2488-.8583-.3793-.1356-.6413-.163-.6429-.23-.0015-.0671.2697-.1402.7191-.0686.5932.102 1.1302.4135 1.5132.8779.383.4643.5866 1.0507.5739 1.6525-.0167.4555-.1538.7069-.2117.6932z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m14.8916 15.5424c0 .0549-.2575.0945-.6475-.0213-.5113-.1635-.9518-.4959-1.2494-.9426-.2976-.4468-.4345-.9814-.3882-1.5162.0426-.4038.1767-.6216.2285-.6094s.0411.2513.0792.6094c.0371.4555.1895.8941.443 1.2745.2535.3803.5996.6898 1.0058.8994.3138.1721.5377.2483.5286.3062z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m17.5289 17.9844c.0198.0518-.1813.1919-.5546.3047-.2195.0627-.4453.1005-.6733.1127-.2821.0127-.5646-.0104-.841-.0685-.5039-.1057-.972-.3398-1.3589-.6795-.2879-.2651-.4021-.4799-.3625-.5164.0396-.0366.2376.0883.5454.2681.3936.2324.8213.4016 1.2675.5012.2454.051.4945.082.7449.0929.2078.0059.4158.0008.6231-.0152.358-.029.5896-.0625.6094 0z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m2.90817 17.6644c.02743-.0336.16758.0441.422.1447.35517.1372.73285.207 1.11363.2056.2607-.0006.52062-.0286.77543-.0837.29447-.0691.58245-.1634.86074-.2819.6451-.2903 1.25785-.6478 1.82813-1.0664.3184-.2194.63527-.4357.95215-.6337.16005-.1033.32643-.1964.49816-.2788.16632-.0783.33786-.145.5134-.1996.33819-.1066.66119-.1691.94909-.2316.2657-.0562.5281-.1269.7861-.2117.9461-.291 1.3894-.7419 1.4503-.6856.0274.0229-.0411.1783-.2529.39-.3054.2895-.6618.5198-1.0511.6795-.2631.1148-.5339.2111-.8105.2879-.2925.0838-.5957.1615-.8943.2712-.1517.0544-.29977.1185-.44329.1919-.15014.0784-.29562.1654-.43571.2605-.30468.1966-.60937.4114-.92929.6323-.60607.446-1.26645.8131-1.96524 1.0923-.31459.118-.64019.2042-.97195.2574-.29262.0427-.58936.0493-.8836.0198-.42771-.0359-.83949-.1789-1.19742-.4159-.24527-.1751-.33668-.3168-.31383-.3442z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m6.225 5.96731c.03504.03047-.11882.24832-.27269.70688-.15387.45855-.32906 1.14257-.64289 1.98046-.35795 1.00905-.94757 1.92005-1.72149 2.65995-.44789.4128-.98261.7419-1.41984 1.1365-.22006.1952-.41046.4216-.5652.6718-.15641.2581-.27396.5379-.34886.8303-.1496.5767-.109 1.1864.11578 1.7382.2033.5106.57035.9393 1.04355 1.2188.43841.246.94.3563 1.44117.3168.4522-.035.89467-.1495 1.30711-.3382.62316-.2632 1.19822-.6282 1.70168-1.0801.36106-.3214.55149-.521.585-.4921.03352.029-.09902.2682-.42351.6521-.46912.5411-1.04342.9812-1.68797 1.2934-.4486.2367-.93728.3881-1.44117.4463-.60087.0697-1.20871-.0451-1.74282-.329-.59015-.3284-1.05149-.8472-1.308628-1.4717-.279975-.664-.334037-1.4015-.153867-2.0993.089401-.3498.231157-.6842.420465-.9917.18513-.296.41307-.563.67641-.7922.24386-.2077.49809-.403.76172-.585.24527-.1767.47683-.3473.68707-.5286.39554-.3476.74199-.7474 1.02984-1.18832.25632-.38967.48001-.79986.66879-1.22636.34278-.78153.57586-1.46707.81199-1.91344.23614-.44637.45551-.63984.47836-.61547z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m7.61001 17.0368c-.01371-.0229.07312-.096.22852-.227.21967-.1779.4162-.3826.585-.6094.11178-.1553.19769-.3276.25441-.5103.06503-.2047.08222-.4215.05027-.6338-.0336-.226-.14711-.4325-.31992-.5819-.08594-.0808-.18875-.1414-.30099-.1775-.11225-.0361-.23111-.0467-.34799-.0312-.04085.0077-.08309.0029-.12121-.0136-.03812-.0166-.07037-.0443-.09255-.0795-.02219-.0351-.03328-.0762-.03183-.1177.00144-.0416.01535-.0817.03992-.1153.15099-.206.25783-.4409.31383-.6901.0588-.2522.04721-.5157-.03352-.7617-.06006-.1925-.16964-.3659-.31775-.5028s-.32957-.2325-.52623-.2772c-.18409-.0295-.37273-.0078-.54539.0625-.16009.0641-.29709.1751-.39305.3184v.0076c-.02289.0359-.05711.0632-.09724.0776-.04014.0144-.08391.0149-.12442.0017-.0405-.0133-.07544-.0397-.0993-.075s-.03529-.0776-.03247-.1201c.00897-.1905-.02689-.3804-.10468-.5545s-.19534-.3275-.34321-.4479c-.2408-.1906-.54594-.2806-.85161-.2514-.20637.0174-.40675.0781-.58804.1783-.12797.07-.195.1203-.21176.1035-.01676-.0167.02437-.0914.14168-.2026.17711-.1566.39359-.2619.62613-.3047.16814-.034.3411-.0371.51035-.0091.2035.0334.39676.1126.5652.2316.2034.1439.36838.3356.48046.5582.11209.2226.16786.4693.16243.7184l-.35801-.1097c.1399-.2193.34103-.3927.5785-.4989.23747-.1061.50086-.1403.75756-.0983.27463.053.52991.1791.73901.3648.2091.1858.36429.4245.44927.691.10765.3236.12191.671.04113 1.0024-.07296.3061-.21004.5932-.40219.8425l-.20109-.3306c.17731-.0238.3577-.0071.52763.0488s.32497.1497.45346.2741c.2323.2134.37995.5033.4159.8166.02715.2664-.00994.5354-.10816.7846-.08209.2088-.20017.4017-.34887.5697-.20103.2307-.44204.4232-.71145.5683-.18586.099-.29707.131-.30773.1112z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m1.63036 14.9239c-.05028-.0671.02742-.2026.10054-.4037.0973-.242.14496-.501.14016-.7618-.00623-.1382-.03082-.275-.07313-.4067-.02438-.0824-.06591-.1587-.12187-.224-.04305-.0401-.0954-.0689-.15235-.0837-.05179-.0153-.10207-.0122-.13253-.0381-.03047-.0259-.03657-.0899.03503-.1646.05278-.0478.11654-.0819.18564-.0991.06909-.0173.14139-.0173.21046.0001.09781.0283.18881.0762.26741.1409s.14313.1448.18962.2354c.14254.2601.1987.5588.16036.8529-.03833.2941-.16918.5684-.37364.7833-.20414.2026-.39305.23-.4357.1691z"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m3.30922 14.9463c.00761-.0838.2148-.1218.47836-.2529.15103-.0716.29108-.1645.41589-.2757.14195-.126.25387-.2821.32754-.457.02539-.0616.03666-.1281.033-.1946-.00367-.0666-.02218-.1314-.05417-.1899-.03199-.0584-.07666-.1089-.13073-.1479-.05407-.0389-.11616-.0652-.18173-.077-.24375-.0457-.42504.0685-.48598.0152-.02894-.0243-.02742-.0959.04266-.1889.10853-.1306.26266-.215.43113-.2361.1238-.0188.25029-.0073.36868.0335.13848.0489.26222.1322.35953.2422.10996.1238.18329.2757.21175.4388.02862.1723.0102.3491-.05332.5119-.09984.2397-.25932.45-.4633.6108-.20397.1607-.44567.2667-.70213.3078-.15219.0271-.30857.0187-.45703-.0244-.09445-.035-.1432-.0777-.14015-.1158z"
-				})), t.a.createElement("path", {
+				})), x.a.createElement("path", {
 					d: "m3.53778 4.27334c.35264.00703.70225-.06643 1.02223-.2148.5652-.30469.58653-1.05879.69317-1.70473l-.68707-.57586-.29098-.29097c-.40265-.06883-.81671-.01302-1.18676.15996-.11314.03509-.21026.109-.27422.20871-.04419.13436-.03491.28058.0259.40828.20871.67336.43723 1.34824.69773 2.00941z",
 					fill: "#fcff78"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m6.92588 3.76312-1.45336-1.21875c-.08836.62309-.10817 1.28121-.66879 1.66207-.31535.21481-.73582.28793-1.16848.30469.28754.71505.63298 1.40543 1.03289 2.06426.56368.13254 1.12582.15234 1.6636-.21176.81047-.54691.7084-1.71844.59414-2.60051z",
 					fill: "#34e2ac"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m8.74027 5.59247c-.30468-.5591-.8059-.98262-1.2934-1.39242l-.24832-.20719c.0975.87293.10665 1.89668-.59871 2.47558-.54843.45704-1.14867.49665-1.75804.39.19381.29675.40386.58258.62918.85618.30468.35953.64593.70839 1.0923.8455.39305.12036.81809.06246 1.21875 0 .23991-.04098.4642-.14628.64899-.30468.23423-.14822.41471-.36769.51492-.62614.19905-.67984.12528-1.4105-.20567-2.03683z",
 					fill: "#4ab6ff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m3.63372 1.50807c-.00915.02133-.07922 0-.20262.01066-.17338.01719-.33517.09486-.45703.21938-.08963.10119-.15545.22118-.19262.35115s-.04475.26662-.02219.3999c.03199.32297.21176.66727.45703 1.05117.47989.78 1.04203 1.71387 1.65903 2.75438l.47226.79828c.14562.26333.3215.50874.52407.73125.09393.10008.20166.18626.31992.25594.12269.06894.2545.12023.39152.15234.29024.05902.59075.04276.87293-.04723.14265-.04381.27929-.10522.40676-.18281.12585-.08503.24364-.18141.35191-.28793.21371-.19425.37641-.43804.47379-.70992.18434-.52102 0-1.09231-.33515-1.52344-.33516-.43113-.79067-.79371-1.1959-1.13648l-1.15782-.94149c-1.42593-1.13953-2.32629-1.82812-2.28515-1.89668.04113-.06855 1.02832.50578 2.52586 1.56914.37324.26661.78.56368 1.20961.89121.42961.32754.91406.67336 1.32082 1.18981.21796.26961.37913.58054.47379.91406.0477.17942.07177.36431.0716.54996-.00338.19142-.03469.38131-.09293.56368-.12117.36293-.33056.6901-.60938.95214-.1406.13226-.29366.25062-.45703.35344-.16878.10363-.34998.18553-.53929.24375-.37848.12012-.78173.13955-1.17001.05637-.19307-.04362-.37883-.11494-.55148-.21176-.16901-.097-.32297-.21811-.45703-.35953-.23145-.25682-.43095-.54072-.59414-.84551l-.45703-.81047c-.5911-1.05574-1.11668-2.01093-1.55086-2.81683-.2209-.40067-.41438-.82266-.42047-1.23551-.0138-.17693.01449-.35461.08254-.51851.06804-.16391.17393-.30937.30898-.4245.08602-.06939.18569-.1199.29251-.14825.10683-.02835.21842-.03389.32753-.01628.15844.03047.21328.09141.20567.10512z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m4.46393 6.19913c-.07008.03961-.40371-.44332-.88664-1.25836-.24223-.40675-.52102-.8973-.82266-1.44574-.07617-.13558-.15234-.27879-.22395-.43722-.07862-.16703-.13841-.34229-.17824-.52254-.04674-.20918-.04674-.4261 0-.63528.05176-.237.17898-.45082.36258-.60937.19251-.15305.43201-.23486.67793-.23156.21542.00414.42722.05618.62004.15234.16671.07743.32497.17188.47226.28184.13711.10359.25747.20261.38086.30468.4875.38848.91407.74496 1.27969 1.05117.71906.60938 1.13801 1.02223 1.09078 1.08622-.04722.06398-.55605-.23157-1.3391-.76172-.39152-.26356-.85008-.58653-1.35586-.95215-.23758-.19065-.49262-.35846-.76172-.50121-.24527-.11426-.53929-.11578-.69164.01676-.08628.07832-.14594.18165-.17062.29554-.02806.12849-.02806.26152 0 .39.07188.29274.18147.5749.32601.83942.2727.55757.51188 1.0664.70535 1.49144.38086.85617.585 1.40766.51493 1.44574z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m3.32259 4.185c.04265-.05027.22089.06856.50425.05637.17023-.01048.33705-.05232.49207-.1234.09475-.04162.18639-.08999.27422-.14473.08767-.05455.16761-.12065.23766-.19652.24239-.29049.364-.66295.33973-1.04051-.00975-.12051-.03484-.23928-.07465-.35343-.02743-.08836-.03809-.15235-.01371-.16454.02437-.01218.07921 0 .15234.07161.11052.10274.19152.23319.23461.37781.06054.21354.072.43801.03351.6566-.04331.27667-.16671.53459-.35496.74191-.09867.10747-.21387.1985-.34125.26965-.11202.0622-.22989.11323-.35191.15235-.21234.07339-.43982.09174-.66117.05332-.1515-.02712-.29151-.09872-.40219-.20567-.07008-.07008-.09445-.12492-.06855-.15082z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m4.604 6.28436c.03047-.00914.0716.05637.13864.15234.03548.05467.08035.10264.13253.14168.06723.04371.1441.07037.22395.0777.05049.00737.10135.01195.15234.01371.05353.00107.10705-.00249.15996-.01067.12363-.02073.24399-.05761.35801-.10968.26973-.11881.50848-.29813.69774-.52407.18908-.22808.32585-.49485.40066-.78152.06123-.2426.09295-.49171.09445-.74191 0-.42047-.15234-.67184-.09445-.7084.02285-.01523.09141.02437.1752.13406.11597.16041.19315.34554.22546.54082.04641.28689.0428.57965-.01066.86531-.06644.35874-.2238.69444-.45703.975-.23468.28133-.54026.49486-.88512.61852-.15255.05626-.31288.08863-.47531.09598-.077.00278-.15408-.00232-.23004-.01524-.06368-.0138-.1263-.03213-.18738-.05484-.12349-.03615-.23401-.10701-.3184-.20414-.05878-.07254-.09904-.15829-.11731-.24985-.02742-.13254-.01066-.20718.01676-.2148z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m14.8962 8.86965c.8394-1.7809.3564-5.85914-2.2502-7.58672-.6194.71264-1.0159 1.59151-1.1402 2.5275s.029 1.88788.441 2.7375",
 					fill: "#ffc2dd"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m11.9471 6.54651c-.0289.01371-.1264-.10816-.2575-.35953-.178-.36602-.3017-.75607-.3671-1.15781-.1063-.61415-.0898-1.24329.0487-1.85098.1786-.77188.5449-1.48774 1.0664-2.08406v-.00762c.0445-.05081.1065-.08307.1736-.090408.0672-.007334.1346.010798.189.050798l.2956.21937c.1024.07061.1991.14905.2894.23461.1902.16824.367.3511.5287.54692.0807.09902.1675.19347.2391.29707l.2103.30469c.0335.05179.07.10207.102.15234l.0884.16148.1691.32602c.099.21633.195.43113.2773.64441l.1081.32145c.0376.10373.0691.20953.0945.31687.2039.74383.2933 1.5144.2651 2.28516-.0097.52011-.106 1.03497-.2849 1.52344-.0465.13373-.1094.26116-.1874.37933-.0518.08227-.0884.11883-.1066.11121-.0183-.00761-.0183-.06246 0-.15234.0182-.08988.0563-.2209.0777-.39609.0863-.48239.117-.97311.0914-1.4625-.0309-.72382-.1548-1.44065-.3687-2.13282-.0269-.09929-.0594-.19695-.0975-.2925l-.1097-.29554c-.0807-.19653-.1737-.39153-.2681-.58957l-.163-.28946-.0823-.15234c-.0289-.04723-.0625-.09293-.0945-.14016l-.1843-.28031c-.0655-.09293-.1523-.17672-.2163-.2666-.1443-.1766-.3017-.34211-.4708-.49512-.0811-.07598-.1682-.14527-.2605-.20718l-.2589-.19957.3762-.05028c-.4697.52458-.8126 1.15003-1.0024 1.82813-.1534.54814-.2101 1.11883-.1676 1.68644.0747.97196.3382 1.52953.2575 1.56305z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m12.4756 10.9713c.6932-.9314.556-2.20692-.3066-2.84893-.8626-.642-2.1238-.40739-2.81708.52403-.69325.93142-.55598 2.2069.30659 2.8489.86259.6421 2.12379.4074 2.81709-.524z",
 					fill: "#b8e7ff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m12.6477 11.0997c-.3495.475-.8556.8112-1.429.9491-.2925.0698-.596.0806-.8927.032-.3037-.0513-.59239-.1689-.84553-.3443-.256-.1803-.47062-.4131-.62955-.6829s-.25852-.5704-.29213-.8817c-.0368-.31289-.01301-.62995.07008-.93385.16819-.60576.55597-1.12715 1.08773-1.4625.26428-.1668.558-.28159.8653-.33821.308-.05723.6247-.04811.9289.02676s.589.21377.8353.40742c.2408.1922.4364.43511.5728.71145.1316.27014.2083.56376.2254.86379.036.59244-.1401 1.17834-.4966 1.65294zm-.3458-.2575c.1408-.1938.2465-.4109.3123-.6413.0626-.22856.0807-.46699.0533-.70234-.0262-.22746-.1011-.4466-.2197-.64247-.1185-.19586-.278-.36385-.4674-.4925-.1832-.12067-.39-.20124-.6066-.23642s-.4382-.02418-.6502.03228c-.4264.11149-.80187.3653-1.06425.71939s-.39591.7872-.37845 1.22756c.00711.2192.06045.4345.15654.6316.09609.1972.23275.3718.40104.5125.17772.143.38412.2461.60512.3023.2211.0562.4516.0643.6761.0237.2336-.0413.457-.1271.6581-.2529.2016-.1291.379-.2925.5241-.4829z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m11.734 10.3357c.3564-.72954.0761-1.59909-.6262-1.94222-.7023-.34314-1.56058-.02993-1.91701.69958-.35643.7295-.07606 1.59904.62623 1.94214.70228.3432 1.56058.03 1.91698-.6995z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m10.6281 9.66417c.0662-.43647-.2192-.84166-.63736-.90502-.41814-.06335-.81073.23912-.87686.67559s.21923.84166.63738.90506c.41814.0633.81074-.2392.87684-.67563z",
 					fill: "#fff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m11.5831 11.1074c.3374 0 .6109-.2851.6109-.6368s-.2735-.6368-.6109-.6368-.6109.2851-.6109.6368.2735.6368.6109.6368z",
 					fill: "#fff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m12.8948 6.65901c-.0594-.02894.0366-.31687.1158-.78304l.0305-.18282.0228-.20109c.0214-.13711.0244-.28793.0366-.44332.0143-.33972.0097-.67997-.0137-1.01918-.0458-.61737-.1478-1.22927-.3047-1.82812-.1204-.45704-.2224-.74801-.1661-.78.0564-.032.2529.2148.4571.67793.2577.60474.4122 1.24843.457 1.90429.0235.35959.0148.72055-.0259 1.0786-.0259.16605-.0427.32449-.0807.46922l-.0503.21023-.061.19043c-.1706.48293-.3732.73277-.4174.70687z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m1.41844 16.2901c.07617-.0472.30469.2834.83789.5652.30658.1598.63944.263.98262.3047.42089.046.8467.0098 1.25379-.1066.88359-.2438 1.57828-.7617 2.06425-1.1639.48598-.4022.7861-.6734.85008-.6201.06399.0534-.12797.4129-.56519.9141-.26033.2951-.55316.5598-.87293.7891-.40061.2889-.84865.5054-1.32387.6399-.48542.1386-.99614.1641-1.49297.0746-.40609-.0764-.78949-.2442-1.12125-.4905-.222-.1628-.40729-.3704-.54387-.6094-.08836-.1676-.10054-.2773-.06855-.2971z",
 					fill: "#000"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m1.2085 15.8394c.70843.486 1.55388.7323 2.4125.703s1.68528-.3328 2.3589-.8661c.23004-.2064.4744-.3963.73125-.5682.12943-.0849.27578-.1405.42889-.1632.15311-.0226.30931-.0116.45775.0322.15254.0661.2835.1737.37801.3105s.14881.2973.15672.4634c.00895.3331-.1037.658-.31688.9141-.21295.2544-.46491.4734-.74648.6489-.83941.5637-1.8525.9933-2.84426.7998-.54082-.1051-1.02984-.3884-1.50515-.6657-.21368-.1179-.41747-.2529-.60938-.4037-.3144-.2606-.5528-.6011-.69012-.9857",
 					fill: "#ff85c6"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m13.3224 5.51322c-.0032.29968-.0637.59597-.1782.87293-.0542.13337-.1411.25098-.2526.34202-.1116.09103-.2442.15259-.3857.179-.3321.03351-.6445-.22242-.7983-.54082-.134-.3332-.1968-.69074-.1844-1.04965-.0259-.98719.061-2.0216.4571-2.92348.1523-.35496.457-1.05422.7845-.45703.2514.45703.3596 1.10754.4479 1.62856.1099.64328.1467 1.29692.1097 1.94847z",
 					fill: "#ffc2dd"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m2.43311 1.8313c.4357-.66727 5.62605 6.34054 5.62605 6.34054l-.4677.41742-1.76566-.26507z",
 					fill: "#fff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m15.2968 5.96724c1.0832.9293 1.5783 2.68734 1.1944 4.06296 1.4335-1.13034 1.0999 1.88 0 2.9631.2803-.1081.844.2057 1.0222.4479.163.2547.2526.5493.259.8516.0566.6477-.0536 1.2991-.3199 1.8921-.6414 1.4062-2.9829 1.4808-3.6776.972-.1356.5332-.5698.9658-1.3071 1.106.9262.5225 1.7184.4951 2.4253-.3047.8805.2544 2.3628 0 3.1337-.4875s1.2584-1.4579 1.0664-2.3522c-.1341-.6093-.55-1.1197-.7389-1.7154-.227-.7145-.1112-1.4899.0336-2.2257.1447-.7358.3168-1.4884.195-2.22879-.1219-.74039-.6201-1.47622-1.3559-1.62094.0186-.79515-.2157-1.57567-.6691-2.22917-.4533-.6535-1.1024-1.14624-1.8537-1.40728l.5515 2.145",
 					fill: "#7e53c1",
 					opacity: ".67"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m14.8307 4.86442c.113 1.0501.0543 2.11159-.1737 3.14285-.2483 1.02375-.7724 1.69559-1.5889 2.96003-1.3666 2.1145-4.16206 4.2123-4.16206 4.2123l-.21024 1.106s3.0012-.914 3.9229-1.5539c.1995-.361.2909-1.2187.3382-1.6316.0895-.7608.3635-1.4883.7982-2.1191.3443-.4997.7298-.8927 1.0375-1.41678.4246-.75116.6314-1.60579.5972-2.46797-.0544-.8398-.2078-1.67024-.457-2.47406",
 					fill: "#ffc2dd"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m13.8086 14.0707c-.0274 0-.0761-.0807-.1173-.2514-.0508-.2446-.058-.4963-.0213-.7434.0512-.3631.1538-.717.3047-1.0512.1823-.399.3931-.7844.6307-1.1532.2422-.387.4677-.7511.6444-1.09233.1603-.2979.29-.61131.387-.93539.1523-.55148.1173-.9232.1858-.93387.0274 0 .0731.08227.1097.25442.0428.24545.0428.49646 0 .74191-.0594.36166-.1686.71336-.3245 1.04508-.1865.39658-.3992.78038-.6368 1.14868-.2422.3854-.457.751-.6368 1.0938-.156.299-.2801.6135-.3702.9385-.1417.5545-.0883.9262-.1554.9384z",
 					fill: "#c676ff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m14.9072 14.0231c-.0564 0-.1326-.1752-.1524-.4829-.0454-.8133.2322-1.6116.7724-2.2212.2102-.2255.3824-.3199.4235-.2803.0914.0868-.3458.652-.6185 1.4579s-.3047 1.5143-.425 1.5265z",
 					fill: "#c676ff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m6.19165 7.1707c-.01219-.06246.12949-.13559.32297-.2666.24618-.1607.45882-.36765.62613-.60938.15866-.24732.26783-.52308.32144-.81199.04723-.22852.05942-.38848.12036-.40067.06093-.01218.15234.13407.18738.41133.03174.3671-.06183.73413-.26546 1.04123-.20362.30709-.50528.53614-.85579.64979-.27117.07312-.44637.04266-.45703-.01371z",
 					fill: "#fff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m4.43023 4.76671c0-.12035.43114-.18434.76172-.50273.33059-.3184.43571-.72821.55758-.72668.05789 0 .11731.1234.10207.33058-.03163.27398-.1599.52771-.36178.71562-.20187.18791-.46413.2977-.73966.30966-.20567 0-.32297-.07313-.31993-.12645z",
 					fill: "#fff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m3.40812 2.70883c.30037 0 .54387-.2435.54387-.54387s-.2435-.54387-.54387-.54387c-.30036 0-.54386.2435-.54386.54387s.2435.54387.54386.54387z",
 					fill: "#fff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m16.4716 14.2914c.0168-.0213.0915-.0076.192.0808.1373.1344.2244.3119.2468.5027.0418.2872-.0268.5795-.192.8181-.202.2785-.4875.4856-.815.5911-.5639.1875-1.1772.1593-1.7215-.0792-.4067-.1844-.585-.4037-.5515-.4464.0336-.0427.2682.0625.6521.1523.2215.0538.4484.082.6764.0838.2721.0041.543-.0376.8013-.1234.2476-.0783.4686-.2238.6383-.4204.1276-.1591.2003-.3553.2072-.5591.0152-.3641-.1782-.5515-.1341-.6003z",
 					fill: "#c676ff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m12.6798 17.3567c-.0442.0365-.1813-.0305-.3199-.2255-.1735-.264-.2528-.5787-.2251-.8933.0276-.3146.1606-.6107.3774-.8404.1691-.1691.3169-.2117.3535-.1691.0365.0427-.0229.1676-.1021.3458-.2153.4435-.2582.9512-.1204 1.4245.0412.1904.0854.3138.0366.358z",
 					fill: "#c676ff"
-				}), t.a.createElement("path", {
+				}), x.a.createElement("path", {
 					d: "m12.6432.993331c.0549.001261.1081.019339.1524.051799l.2955.21937c.1024.0706.1992.14904.2895.23461.1902.16823.3669.3511.5286.54692.0807.09902.1676.19347.2392.29707l.2102.30468c.0335.0518.0701.10207.1021.15235l.0883.16148.1311.24223c.1523.0716.3123.15234.457.23613.4808.277.916.62641 1.2903 1.03594.3946.42526.6993.9258.8958 1.47164.1365.37028.2007.76334.1889 1.15781.2065.0822.3969.20031.5622.34887.2183.19639.3963.43337.524.69773.2368.4925.3602 1.03182.3611 1.57829.0037.26323-.0198.52615-.0701.78455-.0515.2498-.1264.4941-.2239.7297-.1752.4479-.3459.8471-.3352 1.231.0236.4022.1338.7945.323 1.1502.1737.3763.3763.748.5149 1.1486.0732.1995.1243.4064.1523.617.0251.2055.0251.4131 0 .6186-.049.3813-.1782.7478-.3793 1.0755-.1265.2034-.2802.3884-.457.55-.032.032-.0625.0655-.096.0959-.2813.2401-.6047.4261-.9537.5485-.3748.1369-.7662.223-1.1639.2559-.096 0-.1935.0107-.2925.0107-.3527.0071-.703-.0598-1.0283-.1965-.2835.2425-.6235.4096-.9887.4859-.1309.0263-.2641.0396-.3976.0396-.1308 0-.2613-.0118-.39-.035-.0691-.0034-.1379-.0121-.2057-.0259-.4243-.0768-.81-.2954-1.0938-.62-.3157-.3695-.5211-.8204-.5926-1.3011-.0692-.4618-.0031-.9338.1904-1.3589-.1661.0625-.3413.1219-.5256.1737-.2925.0838-.5957.1615-.8942.2712-.15177.0544-.29985.1185-.44337.1919-.15013.0784-.29561.1654-.4357.2605-.30469.1966-.60938.4114-.9293.6323-.60606.446-1.26645.8131-1.96523 1.0923-.31459.118-.6402.2042-.97196.2574-.1751.0251-.35174.0378-.52863.0381-.11856.0001-.23704-.006-.35496-.0183-.42771-.0359-.8395-.1789-1.19742-.4159-.24527-.1736-.3382-.3168-.31535-.3427.0035-.0009.00716-.0009.01066 0-.26616-.056-.52276-.1504-.76172-.2803-.59015-.3284-1.05149-.8472-1.308629-1.4717-.285418-.6678-.341666-1.4113-.159961-2.1145.089401-.3499.231157-.6843.42047-.9918.18512-.296.41306-.5629.6764-.7922.24386-.2077.49809-.403.76172-.585.24528-.1767.47684-.3473.68707-.5286.39554-.3476.742-.7473 1.02985-1.18827.25631-.38968.48-.79987.66879-1.22637.09293-.21023.17672-.41133.25593-.60937-.11902-.16844-.22936-.34285-.33058-.52254l-.45703-.81047c-.5911-1.05574-1.11668-2.01094-1.55086-2.81684-.12458-.21556-.23059-.44134-.31688-.67488-.08052-.16829-.14184-.3451-.18281-.52711-.04675-.20918-.04675-.4261 0-.63527.05176-.237.17898-.45082.36258-.60938.19129-.15206.429-.2338.67336-.23156h.00914c.2118.00575.41978.05775.60937.15234.16882.07706.32914.17152.47836.28184.13711.10359.25746.20262.38086.30469.4875.38847.91406.74496 1.27969 1.05117.40066.34125.7084.62004.89273.81047l.41743.30773.04418.03352c.02807-.2051.06723-.40852.1173-.60938.12074-.49951.29704-.98394.52559-1.44422.04547-.10165.09632-.20082.15234-.29707l.16453-.28793c.0182-.03202.04252-.06014.07159-.08275.02907-.02262.06231-.03928.09782-.04904s.0726-.01243.10914-.00785c.03654.00457.07183.01631.10383.03453l.02743.01828c.38016.28079.7368.59209 1.0664.93082.21773.22749.42123.46813.60933.72058.3091-.0716.6226-.12249.9385-.15234.2026-.61813.5268-1.18947.9537-1.68035v-.00762c.0251-.02912.0562-.05248.0911-.06852.035-.01603.073-.024358.1115-.024409zm-7.59736 2.437499c.06405-.15644.10312-.32197.11578-.49055-.02525.16638-.06397.33044-.11578.49055zm-.73125 7.08097.03351-.0076c.02133-.0397.04114-.0808.06094-.1204l-.09293.128zm-.28793.3565c.04937-.0282.10023-.0536.15234-.0762l.02285-.0351c-.03808.0092-.07312.0183-.10664.029l-.07008.0807zm-1.00395 6.8143h-.00761zm9.62049-16.910168c-.0696-.000201-.1385.014672-.2019.043598s-.1197.07122-.1652.123981v.007617c-.4115.478212-.7312 1.028242-.943 1.622462-.2316.02742-.4571.06551-.6902.11426-.1682-.21931-.3483-.42934-.5392-.62918-.33831-.34598-.70412-.6639-1.09388-.95063l-.05027-.03199c-.05671-.03237-.11923-.05323-.18401-.06141-.06478-.00817-.13053-.00349-.1935.01377-.06296.01726-.12191.04677-.17346.08684-.05155.04006-.09469.0899-.12696.14666l-.1691.28336c-.06001.09869-.11492.20038-.16453.30469-.2348.4748-.4152.97461-.53778 1.48992-.02285.08988-.04418.18129-.06246.27726l-.16301-.12187c-.19195-.195-.49359-.4677-.8973-.80438-.36715-.30468-.79981-.66726-1.28578-1.05574l-.09598-.07617c-.08531-.08684-.18586-.15539-.28945-.23918-.15921-.11881-.33023-.22091-.51035-.30469-.22066-.10615-.46202-.162328-.70688-.164529l-.00914.216329v-.223946c-.29523-.003494-.58241.096186-.81199.281836-.21874.18764-.37103.44092-.43418.72211-.0536.24029-.0536.48944 0 .72973.04217.19688.10603.38848.19043.57128.08802.24388.19657.47984.32449.70536.44027.81808.96281 1.76414 1.55238 2.81683l.45704.81199c.0716.12493.16453.28184.27421.44333-.07464.18281-.14168.33972-.20871.48902-.18354.41537-.40112.81486-.65051 1.19437-.2769.42478-.61058.80968-.99175 1.14408-.21328.1844-.44942.358-.67184.518l-.0716.0518c-.24432.1701-.47974.3527-.70535.5469-.27965.2431-.52148.5265-.717541.8409-.201003.3259-.351499.6803-.446367 1.0512-.191573.7431-.132671 1.5287.167578 2.2349.277385.6687.77228 1.2242 1.40461 1.5768.21839.1184.45074.2089.69164.2696.09693.1355.21773.2521.35648.3443.38841.2581.83506.4151 1.2995.457.1255.0132.25161.0198.37781.0198.18655-.0002.37287-.0134.55758-.0396.34488-.0565.68324-.1473 1.01004-.2711.7161-.2867 1.39326-.6624 2.0155-1.1182l.18586-.128c.25594-.1767.49817-.3443.73887-.5012.13372-.0908.27259-.1737.4159-.2483.1356-.0694.27554-.13.41896-.1813.227-.0823.457-.1524.6871-.2118l.1934-.0548.1173-.0351c-.0901.3419-.1088.6987-.0548 1.0481.0765.5219.3 1.0113.6444 1.4107.3166.3609.7463.6037 1.2188.6886.0723.015.1456.0246.2193.029.1379.0242.2775.0364.4175.0366.1478.0002.2952-.0141.4402-.0427.3588-.0709.6965-.2231.9872-.4448.3197.1159.6578.1727.9979.1675.0959 0 .1965 0 .3047-.0106.4164-.0353.8263-.126 1.2187-.2697.375-.1317.7222-.3322 1.0238-.5911.0289-.0259.0533-.0518.0776-.0777l.0244-.0259c.1885-.174.3525-.3729.4875-.5911.2169-.3543.3565-.7504.4098-1.1623.0271-.2227.0271-.4477 0-.6704-.0266-.2257-.0777-.4479-.1523-.6627-.107-.2909-.2312-.5753-.3717-.8516-.0518-.1066-.1036-.2117-.1524-.3184-.176-.3298-.2798-.6933-.3047-1.0664-.0091-.3184.125-.6596.2819-1.0542l.0396-.099c.1028-.2484.1819-.506.2361-.7693.0531-.2709.0776-.54668.0731-.8227-.0008-.5803-.132-1.153-.3839-1.67578-.1406-.28852-.3356-.54716-.5743-.76172-.1482-.13199-.3144-.24227-.4936-.32753-.0056-.36454-.0704-.72574-.192-1.06946-.2059-.57305-.5256-1.09851-.9399-1.54476-.3892-.42647-.8419-.79028-1.3422-1.0786-.1249-.0716-.2589-.14168-.4159-.2148l-.0304-.05789-.0655-.12035-.0884-.16149c-.0228-.03808-.0472-.07465-.0716-.11121l-.0396-.06246-.2118-.31383c-.0548-.07922-.1127-.15234-.1706-.2148l-.0807-.09598c-.139-.17453-.2919-.33755-.4571-.4875l-.0807-.0777c-.0754-.07432-.1569-.14211-.2438-.20261l-.067-.05028-.2437-.176714-.0579-.042657c-.0834-.06156-.1843-.094675-.288-.094453z",
 					fill: "#fff"
 				}))
@@ -2177,8 +2443,8 @@
 			r.d(i, "a", (function() {
 				return y
 			}));
-			var x = r("./node_modules/lottie-web/build/player/lottie.js"),
-				t = r.n(x),
+			var t = r("./node_modules/lottie-web/build/player/lottie.js"),
+				x = r.n(t),
 				k = r("./node_modules/react/index.js"),
 				n = r.n(k),
 				o = r("./src/lib/classNames/index.ts");
@@ -2186,79 +2452,79 @@
 			function s(a) {
 				return new Promise(i => setTimeout(i, a))
 			}
-			var m = r("./src/lib/timeUntil/index.ts"),
-				e = r("./src/higherOrderComponents/asModal/index.tsx"),
+			var e = r("./src/lib/timeUntil/index.ts"),
+				m = r("./src/higherOrderComponents/asModal/index.tsx"),
 				l = r("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				c = r("./src/reddit/components/Econ/Prediction/VoteAnimation/confetti.json"),
 				p = r("./src/reddit/components/Econ/Prediction/VoteAnimation/index.m.less"),
 				h = r.n(p);
 			const {
-				fbt: f
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), d = [f._("Noice!", null, {
+				fbt: d
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), f = [d._("Noice!", null, {
 				hk: "27jDNM"
-			}), f._("Sweet!", null, {
+			}), d._("Sweet!", null, {
 				hk: "488CcB"
-			}), f._("Good job!", null, {
+			}), d._("Good job!", null, {
 				hk: "3VVV7D"
-			}), f._("Ya did it!", null, {
+			}), d._("Ya did it!", null, {
 				hk: "4eYyyG"
-			}), f._("Huzzah!", null, {
+			}), d._("Huzzah!", null, {
 				hk: "2mDbG0"
-			}), f._("Kazaam!", null, {
+			}), d._("Kazaam!", null, {
 				hk: "16QSNc"
-			}), f._("Woohoo!", null, {
+			}), d._("Woohoo!", null, {
 				hk: "4f99e5"
-			}), f._("Tada!", null, {
+			}), d._("Tada!", null, {
 				hk: "3Wlnwj"
-			})], u = () => d[Math.floor(Math.random() * d.length)];
+			})], u = () => f[Math.floor(Math.random() * f.length)];
 
 			function y({
 				children: a,
 				endsAt: i,
 				isShowingVoteAnimation: r,
-				onAnimationEnd: x
+				onAnimationEnd: t
 			}) {
-				const t = Object(k.useRef)(null),
-					[m, e] = Object(k.useState)(0),
+				const x = Object(k.useRef)(null),
+					[e, m] = Object(k.useState)(0),
 					[l, c] = Object(k.useState)(!1),
-					[p, f] = Object(k.useState)(null),
-					[d, y] = Object(k.useState)(!1),
+					[p, d] = Object(k.useState)(null),
+					[f, y] = Object(k.useState)(!1),
 					[E, A] = Object(k.useState)(!1),
 					[B] = Object(k.useState)(u());
 				return Object(k.useEffect)(() => {
 					(async () => {
 						var a;
-						if (r && !d) {
+						if (r && !f) {
 							await s(1), y(!0);
-							const i = null === (a = null == t ? void 0 : t.current) || void 0 === a ? void 0 : a.getBoundingClientRect();
-							if (!i) return y(!1), void x();
-							e(i.width), f(i), await s(0), f({
+							const i = null === (a = null == x ? void 0 : x.current) || void 0 === a ? void 0 : a.getBoundingClientRect();
+							if (!i) return y(!1), void t();
+							m(i.width), d(i), await s(0), d({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await s(200), c(!0), f({
+							}), await s(200), c(!0), d({
 								left: 0,
 								width: window.innerWidth,
 								top: 0,
 								height: window.innerHeight
-							}), await s(300), A(!0), await s(2e3), A(!1), f({
+							}), await s(300), A(!0), await s(2e3), A(!1), d({
 								top: i.top,
 								left: 0,
 								width: window.innerWidth,
 								height: i.height
-							}), await s(300), c(!1), f(i), await s(200), x(), y(!1)
+							}), await s(300), c(!1), d(i), await s(200), t(), y(!1)
 						}
 					})()
-				}, [d, r, x]), n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
+				}, [f, r, t]), n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(o.a)(h.a.optionContainer)
 				}, Object(k.cloneElement)(a, {
-					ref: t
+					ref: x
 				})), r && n.a.createElement(G, {
 					background: p,
 					endsAt: i,
-					initialWidth: m,
-					isAnimating: d,
+					initialWidth: e,
+					isAnimating: f,
 					isFullWidth: l,
 					isRaining: E,
 					overlayCustomStyles: {
@@ -2268,15 +2534,15 @@
 					successMessage: B
 				}, a))
 			}
-			const G = Object(e.a)(({
+			const G = Object(m.a)(({
 				background: a,
 				children: i,
 				endsAt: r,
-				initialWidth: x,
+				initialWidth: t,
 				isAnimating: s,
-				isFullWidth: e,
+				isFullWidth: m,
 				isRaining: p,
-				successMessage: d
+				successMessage: f
 			}) => {
 				const [u, y] = Object(k.useState)(null);
 				return Object(k.useEffect)(() => {
@@ -2285,7 +2551,7 @@
 					"data-testid": "success-animation",
 					className: Object(o.a)(h.a.animationContainer, {
 						[h.a.isAnimating]: s,
-						[h.a.isFullWidth]: e
+						[h.a.isFullWidth]: m
 					}),
 					style: {
 						top: `${null==a?void 0:a.top}px`,
@@ -2299,7 +2565,7 @@
 					}),
 					ref: a => {
 						if (a && !a.children.length) {
-							const i = t.a.loadAnimation({
+							const i = x.a.loadAnimation({
 								container: a,
 								renderer: "svg",
 								loop: !1,
@@ -2316,21 +2582,21 @@
 				}), n.a.createElement("div", {
 					className: h.a.animatedOptionContainer,
 					style: {
-						width: `${x}px`
+						width: `${t}px`
 					}
 				}, n.a.createElement(l.a, {
 					className: h.a.image
 				}), i, n.a.createElement("h1", {
 					className: h.a.splashText
-				}, d), n.a.createElement("div", {
+				}, f), n.a.createElement("div", {
 					className: h.a.timer
 				}, n.a.createElement("h4", {
 					className: h.a.timerLabel
-				}, f._("Prediction ends in", null, {
+				}, d._("Prediction ends in", null, {
 					hk: "gsPdK"
 				})), n.a.createElement("h3", {
 					className: h.a.timerValue
-				}, Object(m.a)(new Date(r), !1, !0)))))
+				}, Object(e.a)(new Date(r), !1, !0)))))
 			})
 		},
 		"./src/reddit/endpoints/economics/emojis.ts": function(a, i, r) {
@@ -2340,11 +2606,11 @@
 			})), r.d(i, "b", (function() {
 				return n
 			}));
-			var x = r("./src/config.ts"),
-				t = r("./src/reddit/endpoints/governance/requester.ts");
-			const k = (a, i) => Object(t.a)(a, {
+			var t = r("./src/config.ts"),
+				x = r("./src/reddit/endpoints/governance/requester.ts");
+			const k = (a, i) => Object(x.a)(a, {
 					method: "post",
-					endpoint: `${x.a.metaUrl}/orders`,
+					endpoint: `${t.a.metaUrl}/orders`,
 					data: {
 						price: "0",
 						currency: "usd",
@@ -2355,17 +2621,17 @@
 						subredditId: i.subredditId
 					}
 				}),
-				n = (a, i) => Object(t.a)(a, {
+				n = (a, i) => Object(x.a)(a, {
 					method: "get",
-					endpoint: `${x.a.metaUrl}/product-collections/${i}?types=emotes_pack`
+					endpoint: `${t.a.metaUrl}/product-collections/${i}?types=emotes_pack`
 				})
 		},
 		"./src/reddit/endpoints/economics/predictions.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "f", (function() {
-				return f
-			})), r.d(i, "l", (function() {
 				return d
+			})), r.d(i, "l", (function() {
+				return f
 			})), r.d(i, "j", (function() {
 				return u
 			})), r.d(i, "a", (function() {
@@ -2387,37 +2653,37 @@
 			})), r.d(i, "g", (function() {
 				return F
 			}));
-			var x = r("./src/lib/makeGqlRequest/index.ts"),
-				t = r("./src/graphql/operations/AddPredictionDrafts.json"),
+			var t = r("./src/lib/makeGqlRequest/index.ts"),
+				x = r("./src/graphql/operations/AddPredictionDrafts.json"),
 				k = r("./src/graphql/operations/CreatePredictionTournament.json"),
 				n = r("./src/graphql/operations/EndPredictionTournament.json"),
 				o = r("./src/graphql/operations/GetPredictionChipPackages.json"),
 				s = r("./src/graphql/operations/GetPredictionCoinPackages.json"),
-				m = r("./src/graphql/operations/GetPredictionToken.json"),
-				e = r("./src/graphql/operations/GetTournaments.json"),
+				e = r("./src/graphql/operations/GetPredictionToken.json"),
+				m = r("./src/graphql/operations/GetTournaments.json"),
 				l = r("./src/graphql/operations/ResolvePrediction.json"),
 				c = r("./src/graphql/operations/SubredditTopPredictors.json"),
 				p = r("./src/graphql/operations/UpdatePredictionTournament.json"),
 				h = r("./src/graphql/operations/VotePrediction.json");
-			const f = (a, i, r) => Object(x.a)(a, {
+			const d = (a, i, r) => Object(t.a)(a, {
 					...s,
 					variables: {
 						subredditName: i,
 						includeFreePackage: r
 					}
 				}),
-				d = (a, {
+				f = (a, {
 					postId: i,
 					optionId: r,
-					coinPackageId: t,
+					coinPackageId: x,
 					price: k
-				}) => Object(x.a)(a, {
+				}) => Object(t.a)(a, {
 					...h,
 					variables: {
 						input: {
 							postId: i,
 							optionId: r,
-							coinPackageId: t,
+							coinPackageId: x,
 							price: k
 						}
 					}
@@ -2425,7 +2691,7 @@
 				u = (a, {
 					postId: i,
 					optionId: r
-				}) => Object(x.a)(a, {
+				}) => Object(t.a)(a, {
 					...l,
 					variables: {
 						input: {
@@ -2441,62 +2707,62 @@
 			const G = (a, {
 					subredditId: i,
 					period: r,
-					top: t,
+					top: x,
 					includeCurrentRank: k,
 					tournamentId: n
-				}) => Object(x.a)(a, {
+				}) => Object(t.a)(a, {
 					...c,
 					variables: {
 						subredditId: i,
 						period: r,
-						top: t,
+						top: x,
 						includeCurrentRank: k,
 						tournamentId: n
 					}
 				}),
-				E = (a, i) => Object(x.a)(a, {
+				E = (a, i) => Object(t.a)(a, {
 					...k,
 					variables: {
 						input: i
 					}
 				}),
-				A = (a, i) => Object(x.a)(a, {
-					...e,
+				A = (a, i) => Object(t.a)(a, {
+					...m,
 					variables: i
 				}),
-				B = (a, i) => Object(x.a)(a, {
-					...t,
+				B = (a, i) => Object(t.a)(a, {
+					...x,
 					variables: {
 						input: i
 					}
 				}),
-				D = (a, i) => Object(x.a)(a, {
+				D = (a, i) => Object(t.a)(a, {
 					...p,
 					variables: {
 						input: i
 					}
 				}),
-				V = (a, i) => Object(x.a)(a, {
+				V = (a, i) => Object(t.a)(a, {
 					...n,
 					variables: {
 						input: i
 					}
 				}),
-				b = (a, i) => Object(x.a)(a, {
+				b = (a, i) => Object(t.a)(a, {
 					...o,
 					variables: i
 				}),
-				F = (a, i) => Object(x.a)(a, {
-					...m,
+				F = (a, i) => Object(t.a)(a, {
+					...e,
 					variables: i
 				})
 		},
 		"./src/reddit/endpoints/economics/specialMembership.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return m
-			})), r.d(i, "b", (function() {
 				return e
+			})), r.d(i, "b", (function() {
+				return m
 			})), r.d(i, "d", (function() {
 				return l
 			})), r.d(i, "e", (function() {
@@ -2504,16 +2770,16 @@
 			})), r.d(i, "c", (function() {
 				return p
 			}));
-			var x = r("./src/config.ts"),
-				t = r("./src/lib/omitHeaders/index.ts"),
+			var t = r("./src/config.ts"),
+				x = r("./src/lib/omitHeaders/index.ts"),
 				k = r("./src/reddit/constants/headers.ts"),
 				n = r("./src/reddit/endpoints/governance/requester.ts"),
 				o = r("./src/reddit/helpers/governanceErrorText/index.ts"),
 				s = r("./src/reddit/helpers/r2/normalizeSubredditFromR2/index.ts");
 
-			function m(a, i) {
+			function e(a, i) {
 				return Object(n.a)(a, {
-					endpoint: `${x.a.metaUrl}/communities/${i.subredditId}/me`,
+					endpoint: `${t.a.metaUrl}/communities/${i.subredditId}/me`,
 					method: "patch",
 					data: {
 						specialMemberships: {
@@ -2525,9 +2791,9 @@
 				})
 			}
 
-			function e(a, i) {
+			function m(a, i) {
 				return Object(n.a)(a, {
-					endpoint: `${x.a.metaUrl}/ps/me/braintree-client-tokens`,
+					endpoint: `${t.a.metaUrl}/ps/me/braintree-client-tokens`,
 					method: "post",
 					data: {
 						username: i && i.username
@@ -2537,7 +2803,7 @@
 
 			function l(a, i) {
 				return Object(n.a)(a, {
-					endpoint: `${x.a.metaUrl}/orders`,
+					endpoint: `${t.a.metaUrl}/orders`,
 					method: "post",
 					data: {
 						currency: "usd",
@@ -2562,7 +2828,7 @@
 			}
 
 			function c(a, i) {
-				return Object(n.a)(Object(t.a)(a, [k.a]), {
+				return Object(n.a)(Object(x.a)(a, [k.a]), {
 					endpoint: `${a.apiUrl}/api/info?id=${i.join(",")}`,
 					method: "get"
 				}).then(a => {
@@ -2580,7 +2846,7 @@
 			}
 			async function p(a, i) {
 				const r = await Object(n.a)(a, {
-					endpoint: `${x.a.metaUrl}/orders`,
+					endpoint: `${t.a.metaUrl}/orders`,
 					method: "post",
 					data: {
 						...i,
@@ -2602,20 +2868,20 @@
 		"./src/reddit/endpoints/economics/subredditPremium.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return e
+				return m
 			})), r.d(i, "b", (function() {
 				return l
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var x = r("./node_modules/lodash/merge.js"),
-				t = r.n(x),
+			var t = r("./node_modules/lodash/merge.js"),
+				x = r.n(t),
 				k = r("./src/config.ts"),
 				n = r("./src/reddit/endpoints/governance/badges.ts"),
 				o = r("./src/reddit/endpoints/governance/community.ts"),
 				s = r("./src/reddit/endpoints/governance/products/badges.ts"),
-				m = r("./src/reddit/endpoints/governance/requester.ts");
-			async function e(a, i, r) {
-				const x = {
+				e = r("./src/reddit/endpoints/governance/requester.ts");
+			async function m(a, i, r) {
+				const t = {
 						subredditId: i,
 						badges: {},
 						errors: {},
@@ -2624,8 +2890,8 @@
 						subscription: void 0,
 						userOwnedBadges: []
 					},
-					e = function(a, i) {
-						return Object(m.a)(a, {
+					m = function(a, i) {
+						return Object(e.a)(a, {
 							method: "get",
 							endpoint: `${k.a.metaUrl}/product-collections/${i}?types=badge`
 						})
@@ -2635,14 +2901,14 @@
 					}),
 					c = Object(s.b)(a, i),
 					p = Object(n.c)(a, i, r),
-					[h, f, d, u] = await Promise.all([e, l, c, p]);
-				if (h.ok ? x.collections = h.body : x.errors.collections = h.error, f.ok) {
-					const a = f.body;
-					x.subscription = a.specialMemberships, x.communityRaw = a
+					[h, d, f, u] = await Promise.all([m, l, c, p]);
+				if (h.ok ? t.collections = h.body : t.errors.collections = h.error, d.ok) {
+					const a = d.body;
+					t.subscription = a.specialMemberships, t.communityRaw = a
 				}
-				return d.ok ? x.products = d.body : x.errors.products = d.error, u.ok ? (t()(x.badges, u.body.badges), x.userOwnedBadges = u.body.userOwnedBadges) : x.errors.userBadges = u.error, x
+				return f.ok ? t.products = f.body : t.errors.products = f.error, u.ok ? (x()(t.badges, u.body.badges), t.userOwnedBadges = u.body.userOwnedBadges) : t.errors.userBadges = u.error, t
 			}
-			const l = (a, i) => Object(m.a)(a, {
+			const l = (a, i) => Object(e.a)(a, {
 				endpoint: `${k.a.metaUrl}/products/${i}?types=badge,membership`,
 				method: "delete"
 			})
@@ -2657,15 +2923,15 @@
 				return o
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var x = r("./src/config.ts"),
-				t = r("./src/reddit/endpoints/governance/requester.ts");
+			var t = r("./src/config.ts"),
+				x = r("./src/reddit/endpoints/governance/requester.ts");
 			async function k(a, i, r) {
-				const k = Object(t.a)(a, {
+				const k = Object(x.a)(a, {
 						headers: {
 							"X-HTTP-Method-Override": "GET"
 						},
 						method: "post",
-						endpoint: `${x.a.metaUrl}/badges/${i}`,
+						endpoint: `${t.a.metaUrl}/badges/${i}`,
 						data: {
 							selected: !0,
 							users: r
@@ -2676,9 +2942,9 @@
 					const a = {},
 						i = {},
 						r = n.body;
-					return Object.keys(r).forEach(x => {
-						const t = r[x];
-						i[x] = t, a[t.userId] || (a[t.userId] = []), a[t.userId].push(t.id)
+					return Object.keys(r).forEach(t => {
+						const x = r[t];
+						i[t] = x, a[x.userId] || (a[x.userId] = []), a[x.userId].push(x.id)
 					}), {
 						...n,
 						body: {
@@ -2690,17 +2956,17 @@
 				return n
 			}
 			async function n(a, i, r) {
-				const k = await Object(t.a)(a, {
+				const k = await Object(x.a)(a, {
 					method: "get",
-					endpoint: `${x.a.metaUrl}/badges/${i}?users=${r}`
+					endpoint: `${t.a.metaUrl}/badges/${i}?users=${r}`
 				});
 				if (k.ok) {
 					const a = {},
 						i = [],
 						r = k.body;
-					return Object.keys(r).forEach(x => {
-						const t = r[x];
-						a[x] = t, i.push(t.id)
+					return Object.keys(r).forEach(t => {
+						const x = r[t];
+						a[t] = x, i.push(x.id)
 					}), {
 						...k,
 						body: {
@@ -2713,9 +2979,9 @@
 			}
 
 			function o(a, i, r, k = !0) {
-				return Object(t.a)(a, {
+				return Object(x.a)(a, {
 					method: "patch",
-					endpoint: `${x.a.metaUrl}/badges/${i}/${r}`,
+					endpoint: `${t.a.metaUrl}/badges/${i}/${r}`,
 					data: {
 						selected: k
 					}
@@ -2727,14 +2993,14 @@
 			r.d(i, "a", (function() {
 				return n
 			}));
-			var x = r("./src/config.ts"),
-				t = r("./src/lib/constants/index.ts"),
+			var t = r("./src/config.ts"),
+				x = r("./src/lib/constants/index.ts"),
 				k = r("./src/reddit/endpoints/governance/requester.ts");
 
 			function n(a, i) {
 				return Object(k.a)(a, {
-					endpoint: `${x.a.metaUrl}/communities/${i.subredditId}/me`,
-					method: t.gb.GET
+					endpoint: `${t.a.metaUrl}/communities/${i.subredditId}/me`,
+					method: x.gb.GET
 				})
 			}
 		},
@@ -2749,35 +3015,35 @@
 			})), r.d(i, "d", (function() {
 				return s
 			}));
-			var x = r("./src/config.ts"),
-				t = r("./src/reddit/endpoints/governance/requester.ts");
+			var t = r("./src/config.ts"),
+				x = r("./src/reddit/endpoints/governance/requester.ts");
 
 			function k(a, i) {
-				return Object(t.a)(a, {
+				return Object(x.a)(a, {
 					method: "get",
-					endpoint: `${x.a.metaUrl}/products/${i}?types=badge`
+					endpoint: `${t.a.metaUrl}/products/${i}?types=badge`
 				})
 			}
 
 			function n(a, i) {
-				return Object(t.a)(a, {
+				return Object(x.a)(a, {
 					method: "get",
-					endpoint: `${x.a.metaUrl}/products/${i}?types=badge,membership`
+					endpoint: `${t.a.metaUrl}/products/${i}?types=badge,membership`
 				})
 			}
 
 			function o(a, i) {
-				return Object(t.a)(a, {
+				return Object(x.a)(a, {
 					method: "post",
-					endpoint: `${x.a.metaUrl}/orders`,
+					endpoint: `${t.a.metaUrl}/orders`,
 					data: i
 				})
 			}
 
 			function s(a, i) {
-				return Object(t.a)(a, {
+				return Object(x.a)(a, {
 					method: "post",
-					endpoint: `${x.a.metaUrl}/orders`,
+					endpoint: `${t.a.metaUrl}/orders`,
 					data: {
 						currency: "usd",
 						price: i.price,
@@ -2798,23 +3064,23 @@
 			})), r.d(i, "b", (function() {
 				return o
 			}));
-			var x = r("./src/config.ts"),
-				t = (r("./src/lib/bigNumberUtils/percent.ts"), r("./src/lib/constants/index.ts")),
+			var t = r("./src/config.ts"),
+				x = (r("./src/lib/bigNumberUtils/percent.ts"), r("./src/lib/constants/index.ts")),
 				k = r("./src/reddit/endpoints/governance/requester.ts");
 
 			function n(a, i) {
 				return Object(k.a)(a, {
-					endpoint: `${x.a.metaUrl}/wallets/${i.subredditId}/me`,
-					method: t.gb.GET
+					endpoint: `${t.a.metaUrl}/wallets/${i.subredditId}/me`,
+					method: x.gb.GET
 				}).then(a => {
 					if (a.ok) {
 						const r = a.body,
-							x = {
+							t = {
 								[i.subredditId]: r
 							};
 						return {
 							...a,
-							body: x
+							body: t
 						}
 					}
 					return a
@@ -2826,8 +3092,8 @@
 					headers: {
 						"X-HTTP-Method-Override": "GET"
 					},
-					endpoint: `${x.a.metaUrl}/wallets/${i.subredditId}`,
-					method: t.gb.POST,
+					endpoint: `${t.a.metaUrl}/wallets/${i.subredditId}`,
+					method: x.gb.POST,
 					data: i.userIds
 				}).then(a => a.ok ? {
 					...a,
@@ -2845,14 +3111,14 @@
 				return n
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var x = r("./node_modules/fbt/lib/FbtPublic.js");
+			var t = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function t(a) {
+			function x(a) {
 				return a[0].toUpperCase() + a.slice(1)
 			}
 
 			function k(a) {
-				return "extra" in a ? "string" == typeof a.extra ? a.extra : Object.keys(a.extra).map(i => a.extra[i]).map(t).join(" ") : x.fbt._("Something went wrong. Please try again later.", null, {
+				return "extra" in a ? "string" == typeof a.extra ? a.extra : Object.keys(a.extra).map(i => a.extra[i]).map(x).join(" ") : t.fbt._("Something went wrong. Please try again later.", null, {
 					hk: "16ibYk"
 				})
 			}
@@ -2873,9 +3139,9 @@
 			})), r.d(i, "l", (function() {
 				return s
 			})), r.d(i, "t", (function() {
-				return m
-			})), r.d(i, "n", (function() {
 				return e
+			})), r.d(i, "n", (function() {
+				return m
 			})), r.d(i, "o", (function() {
 				return l
 			})), r.d(i, "m", (function() {
@@ -2885,9 +3151,9 @@
 			})), r.d(i, "s", (function() {
 				return h
 			})), r.d(i, "d", (function() {
-				return f
-			})), r.d(i, "v", (function() {
 				return d
+			})), r.d(i, "v", (function() {
+				return f
 			})), r.d(i, "k", (function() {
 				return u
 			})), r.d(i, "x", (function() {
@@ -2913,48 +3179,48 @@
 			})), r.d(i, "f", (function() {
 				return v
 			}));
-			var x = r("./src/reddit/selectors/telemetry.ts");
-			const t = "poll",
+			var t = r("./src/reddit/selectors/telemetry.ts");
+			const x = "poll",
 				k = a => ({
-					...Object(x.defaults)(a),
-					source: t,
+					...Object(t.defaults)(a),
+					source: x,
 					action: "select",
 					noun: "poll_option"
 				}),
 				n = a => ({
-					...Object(x.defaults)(a),
-					source: t,
+					...Object(t.defaults)(a),
+					source: x,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				o = a => ({
-					...Object(x.defaults)(a),
-					source: t,
+					...Object(t.defaults)(a),
+					source: x,
 					action: "view",
 					noun: "predict_info_modal"
 				}),
 				s = a => ({
-					...Object(x.defaults)(a),
-					source: t,
+					...Object(t.defaults)(a),
+					source: x,
 					action: "close",
 					noun: "predict_info_modal"
 				}),
-				m = a => ({
-					...Object(x.defaults)(a),
-					source: t,
+				e = a => ({
+					...Object(t.defaults)(a),
+					source: x,
 					action: "view",
 					noun: "predict_option_modal"
 				}),
-				e = ({
+				m = ({
 					pollId: a,
 					selectedNumberCoins: i,
 					totalStakeAmount: r
 				}) => k => ({
-					...Object(x.defaults)(k),
-					source: t,
+					...Object(t.defaults)(k),
+					source: x,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(x.poll)(k, a, !1, void 0, i),
+					poll: Object(t.poll)(k, a, !1, void 0, i),
 					goldPurchase: {
 						numberCoins: r
 					}
@@ -2963,31 +3229,31 @@
 					pollId: a,
 					selectedNumberTokens: i
 				}) => r => ({
-					...Object(x.defaults)(r),
-					source: t,
+					...Object(t.defaults)(r),
+					source: x,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(x.poll)(r, a, !1, void 0, void 0, i)
+					poll: Object(t.poll)(r, a, !1, void 0, void 0, i)
 				}),
 				c = ({
 					pollId: a,
 					selectedNumberCoins: i,
 					selectedNumberTokens: r
 				}) => k => ({
-					...Object(x.defaults)(k),
-					source: t,
+					...Object(t.defaults)(k),
+					source: x,
 					action: "close",
 					noun: "prediction_modal",
-					poll: Object(x.poll)(k, a, !1, i, r)
+					poll: Object(t.poll)(k, a, !1, i, r)
 				}),
 				p = a => ({
-					...Object(x.defaults)(a),
-					source: t,
+					...Object(t.defaults)(a),
+					source: x,
 					action: "click",
 					noun: "add_coins"
 				}),
 				h = a => i => ({
-					...Object(x.defaults)(i),
+					...Object(t.defaults)(i),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2996,10 +3262,10 @@
 						reason: a ? "prediction_details" : "subreddit_header"
 					}
 				}),
-				f = ({
+				d = ({
 					targetUserId: a
 				}) => i => ({
-					...Object(x.defaults)(i),
+					...Object(t.defaults)(i),
 					source: "predictions",
 					action: "click",
 					noun: "leaderboard_profile",
@@ -3007,20 +3273,20 @@
 						id: a
 					}
 				}),
-				d = ({
+				f = ({
 					numberPredictionTokens: a,
 					pollId: i
 				}) => r => ({
-					...Object(x.defaults)(r),
-					source: t,
+					...Object(t.defaults)(r),
+					source: x,
 					action: "view",
 					noun: "token_claim_modal",
-					poll: Object(x.poll)(r, i, !1, void 0, void 0, a)
+					poll: Object(t.poll)(r, i, !1, void 0, void 0, a)
 				}),
 				u = ({
 					pageType: a
 				}) => i => ({
-					...Object(x.defaults)(i),
+					...Object(t.defaults)(i),
 					source: "predictions",
 					action: "click",
 					noun: "tournament",
@@ -3029,7 +3295,7 @@
 					}
 				}),
 				y = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3039,7 +3305,7 @@
 					}
 				}),
 				G = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "leaderboard",
@@ -3049,7 +3315,7 @@
 					}
 				}),
 				E = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3059,7 +3325,7 @@
 					}
 				}),
 				A = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3068,51 +3334,92 @@
 					}
 				}),
 				B = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				D = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				V = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "next"
 				}),
 				b = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "add_more"
 				}),
 				F = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "predictions",
 					action: "click",
 					noun: "start_tournament"
 				}),
 				g = () => a => ({
-					...Object(x.defaults)(a),
+					...Object(t.defaults)(a),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				v = a => i => ({
-					...Object(x.defaults)(i),
+					...Object(t.defaults)(i),
 					source: "predictions",
 					action: "click",
 					noun: "play_tournament",
-					poll: Object(x.predictionTournamentPoll)(i, a),
-					post: Object(x.post)(i, a),
-					predictions: Object(x.predictions)(i, a),
-					subreddit: Object(x.subreddit)(i)
+					poll: Object(t.predictionTournamentPoll)(i, a),
+					post: Object(t.post)(i, a),
+					predictions: Object(t.predictions)(i, a),
+					subreddit: Object(t.subreddit)(i)
 				})
+		},
+		"./src/reddit/hooks/useLocalStorage.ts": function(a, i, r) {
+			"use strict";
+			r.d(i, "a", (function() {
+				return o
+			}));
+			var t = r("./node_modules/react/index.js"),
+				x = r("./src/reddit/helpers/localStorage/index.ts");
+			const k = {},
+				n = (a, i, r) => (k[a] || (k[a] = {
+					callbacks: [],
+					value: r
+				}), k[a].callbacks.push(i), {
+					deregister: () => {
+						const {
+							callbacks: r
+						} = k[a], t = r.indexOf(i);
+						t > -1 && r.splice(t, 1)
+					},
+					emit: r => {
+						k[a].value !== r && (k[a].value = r, k[a].callbacks.forEach(a => {
+							a !== i && a(r)
+						}))
+					}
+				});
+
+			function o(a, i) {
+				const r = Object(t.useRef)(null);
+				let k;
+				k = Object(x.y)(a);
+				const [o, s] = Object(t.useState)(null != k ? k : i);
+				return Object(t.useEffect)(() => (r.current = n(a, s, i), () => {
+					var a;
+					return null === (a = r.current) || void 0 === a ? void 0 : a.deregister()
+				}), [a, i]), Object(t.useEffect)(() => {
+					var a;
+					null === (a = r.current) || void 0 === a || a.emit(o)
+				}, [o]), [o, function(i) {
+					Object(x.yb)(a, i), s(i)
+				}]
+			}
 		},
 		"./src/reddit/icons/svgs/CoinV2/index.m.less": function(a, i, r) {
 			a.exports = {
@@ -3122,64 +3429,85 @@
 		},
 		"./src/reddit/icons/svgs/CoinV2/index.tsx": function(a, i, r) {
 			"use strict";
-			var x = r("./node_modules/react/index.js"),
-				t = r.n(x),
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t),
 				k = r("./src/lib/classNames/index.ts"),
 				n = r("./src/reddit/icons/svgs/CoinV2/index.m.less"),
 				o = r.n(n);
-			i.a = a => t.a.createElement("svg", {
+			i.a = a => x.a.createElement("svg", {
 				className: a.className,
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, t.a.createElement("path", {
+			}, x.a.createElement("path", {
 				className: Object(k.a)(o.a.shadow, a.shadowClassName),
 				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z"
-			}), t.a.createElement("path", {
+			}), x.a.createElement("path", {
 				d: "M11.1 1.889H8.722v16.219h2.212a5.86 5.86 0 001.951-.274c3.658-1.158 5.837-5.614 4.856-9.933C16.92 4.28 14.134 1.886 11.1 1.89z",
 				fill: "url(#shine)",
 				fillOpacity: ".3"
-			}), t.a.createElement("path", {
+			}), x.a.createElement("path", {
 				className: Object(k.a)(o.a.standardColor, a.standardColorClassName),
 				d: "M6.991 2.166C3.334 3.324 1.155 7.78 2.135 12.1c.98 4.32 4.754 6.891 8.411 5.734 3.658-1.157 5.837-5.613 4.857-9.932-.98-4.32-4.754-6.892-8.412-5.735z"
-			}), t.a.createElement("path", {
+			}), x.a.createElement("path", {
 				className: Object(k.a)(o.a.shadow, a.shadowClassName),
 				d: "M7.54 12.335c1.122.765 2.664.277 3.311-1.047.224-.457.718-.613 1.104-.35.387.264.52.847.296 1.304-.54 1.103-1.41 1.892-2.453 2.222-1.043.33-2.13.16-3.065-.476-1.929-1.316-2.592-4.24-1.479-6.517.54-1.104 1.41-1.893 2.453-2.223 1.042-.33 2.13-.16 3.065.477.387.263.52.847.296 1.303-.223.456-.717.612-1.104.35-1.121-.765-2.663-.277-3.31 1.047-.669 1.367-.271 3.121.887 3.91z"
-			}), t.a.createElement("defs", null, t.a.createElement("linearGradient", {
+			}), x.a.createElement("defs", null, x.a.createElement("linearGradient", {
 				id: "shine",
 				x1: "11.107",
 				y1: "1.889",
 				x2: "11.107",
 				y2: "18.111",
 				gradientUnits: "userSpaceOnUse"
-			}, t.a.createElement("stop", {
+			}, x.a.createElement("stop", {
 				offset: ".063",
 				stopColor: "#fff",
 				stopOpacity: "0"
-			}), t.a.createElement("stop", {
+			}), x.a.createElement("stop", {
 				offset: ".302",
 				stopColor: "#fff"
-			}), t.a.createElement("stop", {
+			}), x.a.createElement("stop", {
 				offset: "0.432",
 				stopColor: "#fff"
-			}), t.a.createElement("stop", {
+			}), x.a.createElement("stop", {
 				offset: "0.474",
 				stopColor: "#fff",
 				stopOpacity: "0"
 			}))))
 		},
+		"./src/reddit/icons/svgs/EyeDouble/index.tsx": function(a, i, r) {
+			"use strict";
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t);
+			i.a = a => x.a.createElement("svg", {
+				className: a.className,
+				viewBox: "0 0 21 16",
+				fill: "inherit",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, x.a.createElement("path", {
+				d: "M10.5 3.38a4.62 4.62 0 100 9.24 4.62 4.62 0 000-9.24zm0 8A3.38 3.38 0 1113.88 8a3.39 3.39 0 01-3.38 3.38z"
+			}), x.a.createElement("path", {
+				d: "M20.36 7.57a10.61 10.61 0 00-19.72 0 1.16 1.16 0 000 .86 10.73 10.73 0 002.42 3.65 10.62 10.62 0 0014.44.39 10.72 10.72 0 002.84-4 1.16 1.16 0 00.02-.9zm-3.67 4a9.34 9.34 0 01-12.75-.34A9.79 9.79 0 011.8 8a9.37 9.37 0 0117.4 0 9.4 9.4 0 01-2.51 3.53v.04z"
+			}))
+		},
 		"./src/reddit/icons/svgs/Minus/index.tsx": function(a, i, r) {
 			"use strict";
-			var x = r("./node_modules/react/index.js"),
-				t = r.n(x);
-			i.a = a => t.a.createElement("svg", {
+			var t = r("./node_modules/react/index.js"),
+				x = r.n(t);
+			i.a = a => x.a.createElement("svg", {
 				className: a.className,
 				viewBox: "0 0 20 20",
 				version: "1.1"
-			}, t.a.createElement("g", {
+			}, x.a.createElement("g", {
 				transform: "translate(4, 8), scale(0.75)"
-			}, t.a.createElement("path", {
+			}, x.a.createElement("path", {
 				d: "M10.3785 4.86328H14.9734C15.6086 4.86328 16.1221 4.3498 16.1221 3.71456V1.41713C16.1221 0.781889 15.6086 0.268413 14.9734 0.268413H10.3785H5.78363H1.18876C0.554665 0.268413 0.0400391 0.781889 0.0400391 1.41713V3.71456C0.0400391 4.3498 0.554665 4.86328 1.18876 4.86328H5.78363H10.3785Z"
 			})))
+		},
+		"./src/reddit/icons/svgs/Star6/index.m.less": function(a, i, r) {
+			a.exports = {
+				sparkle: "_39SsnAyWvt-R7vd5x-DV2p",
+				fadeIn: "_2Rb9zPIVWO8_F_3QxHbRSh"
+			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(a, i, r) {
 			"use strict";
@@ -3188,12 +3516,12 @@
 			})), r.d(i, "a", (function() {
 				return o
 			}));
-			var x = r("./src/lib/initializeClient/installReducer.ts"),
-				t = r("./src/reddit/reducers/features/predictions/index.ts"),
+			var t = r("./src/lib/initializeClient/installReducer.ts"),
+				x = r("./src/reddit/reducers/features/predictions/index.ts"),
 				k = r("./src/reddit/selectors/postCreations.ts");
-			Object(x.a)({
+			Object(t.a)({
 				features: {
-					predictions: t.a
+					predictions: x.a
 				}
 			});
 			const n = a => {
@@ -3210,8 +3538,8 @@
 									formState: i.formState
 								}
 							}, {}),
-							x = i.formData.polls,
-							t = x.options.map(a => ({
+							t = i.formData.polls,
+							x = t.options.map(a => ({
 								text: a.text
 							})),
 							n = {};
@@ -3222,9 +3550,9 @@
 							isLiveChat: r.isChatPost,
 							isNsfw: r.isNSFW,
 							isSpoiler: r.isSpoiler,
-							votingEndsAt: x.endDate.toISOString(),
+							votingEndsAt: t.endDate.toISOString(),
 							body: n,
-							options: t
+							options: x
 						}
 					}) : []
 				},
@@ -3236,27 +3564,27 @@
 		"./src/reddit/selectors/products.ts": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return t
+				return x
 			})), r.d(i, "b", (function() {
 				return k
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var x = r("./src/reddit/models/Product/index.ts");
-			const t = (a, i) => {
+			var t = r("./src/reddit/models/Product/index.ts");
+			const x = (a, i) => {
 					const r = a.products.models[i];
-					if (r && r.type === x.a.Badge) return r
+					if (r && r.type === t.a.Badge) return r
 				},
 				k = (a, {
 					productId: i
 				}) => {
 					const r = a.products.models[i];
 					if (r) {
-						const x = r.subredditId,
-							t = Object.keys(a.user.ownedBadges[x] || {}),
+						const t = r.subredditId,
+							x = Object.keys(a.user.ownedBadges[t] || {}),
 							k = a.badges.models,
 							n = Date.now();
 						let o = !1;
-						return t.forEach(a => {
+						return x.forEach(a => {
 							const r = k[a];
 							r && r.type === i && r.endsAt > n && (o = !0)
 						}), o
@@ -3266,4 +3594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5d7490caaa8ea90857a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1fdad774d2eea650c323.js.map
