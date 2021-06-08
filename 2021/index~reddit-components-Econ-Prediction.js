@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.55b619924641048c1b64.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5d7490caaa8ea90857a4.js
+// Retrieved at 6/8/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1614,7 +1614,7 @@
 				fbt: $
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function K({
+			function J({
 				onCancel: a,
 				onSubmit: i,
 				pollId: r,
@@ -1691,17 +1691,17 @@
 				}))))
 			}
 			const {
-				fbt: J
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = 1e3, X = Object(n.c)({
+				fbt: K
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = 1e3, Q = Object(n.c)({
 				isNewPredictionsSheet: G.o,
 				userCoins: E.d
-			}), Q = {
+			}), X = {
 				fetchPredictionChipPackages: m.d,
 				fetchPredictionTokens: m.e,
 				getCoinPacks: m.h,
 				showToast: e.f
 			};
-			i.b = Object(k.b)(X, Q)(Object(o.a)(({
+			i.b = Object(k.b)(Q, X)(Object(o.a)(({
 				fetchPredictionChipPackages: a,
 				fetchPredictionTokens: i,
 				getCoinPacks: r,
@@ -1716,7 +1716,7 @@
 				tournamentId: B,
 				userCoins: D
 			}) => {
-				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, j] = Object(x.useState)(!1), [C, I] = Object(x.useState)(!1), [N, M] = Object(x.useState)(!1), R = Object(u.a)(), U = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], z = B ? v && V === v.length - 1 : F && V === F.length - 1, q = !!F || "COINS" === (null == H ? void 0 : H.currency), W = q && D < ((null == U ? void 0 : U.coins) || (null == H ? void 0 : H.amount) || 0), $ = !!H && null !== S && S < H.amount, X = null == U ? void 0 : U.coins, Q = null == H ? void 0 : H.amount, Z = W || $, aa = Z || z, ia = Object(x.useCallback)(async () => {
+				const [V, b] = Object(x.useState)(0), [F, g] = Object(x.useState)(null), [v, P] = Object(x.useState)(null), [S, T] = Object(x.useState)(null), [O, j] = Object(x.useState)(!1), [C, I] = Object(x.useState)(!1), [N, M] = Object(x.useState)(!1), R = Object(u.a)(), U = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], z = B ? v && V === v.length - 1 : F && V === F.length - 1, q = !!F || "COINS" === (null == H ? void 0 : H.currency), W = q && D < ((null == U ? void 0 : U.coins) || (null == H ? void 0 : H.amount) || 0), $ = !!H && null !== S && S < H.amount, Q = null == U ? void 0 : U.coins, X = null == H ? void 0 : H.amount, Z = W || $, aa = Z || z, ia = Object(x.useCallback)(async () => {
 					try {
 						const i = await a(G);
 						P(i)
@@ -1724,7 +1724,7 @@
 						E({
 							duration: 5e3,
 							kind: y.b.Error,
-							text: J._("Error: Failed to get chip packs for post", null, {
+							text: K._("Error: Failed to get chip packs for post", null, {
 								hk: "1wR7Zy"
 							})
 						}), o()
@@ -1741,7 +1741,7 @@
 							E({
 								duration: 5e3,
 								kind: y.b.Error,
-								text: J._("Error: Failed to fetch user balance", null, {
+								text: K._("Error: Failed to fetch user balance", null, {
 									hk: "TF2D5"
 								})
 							}), o()
@@ -1756,7 +1756,7 @@
 								a.length || (E({
 									duration: 5e3,
 									kind: y.b.Error,
-									text: J._("Error: Subreddit is not configured with coin packs", null, {
+									text: K._("Error: Subreddit is not configured with coin packs", null, {
 										hk: "2t8uz0"
 									})
 								}), o()), g(a)
@@ -1764,7 +1764,7 @@
 								E({
 									duration: 5e3,
 									kind: y.b.Error,
-									text: J._("Error: Failed to fetch coin packs, please try again later", null, {
+									text: K._("Error: Failed to fetch coin packs, please try again later", null, {
 										hk: "2aROIr"
 									})
 								}), o()
@@ -1778,11 +1778,11 @@
 					xa = Object(x.useCallback)(() => {
 						R(Object(d.m)({
 							pollId: G,
-							selectedNumberCoins: X,
-							selectedNumberTokens: Q
+							selectedNumberCoins: Q,
+							selectedNumberTokens: X
 						})), o()
-					}, [o, G, X, Q, R]);
-				return B && !C ? null : N ? t.a.createElement(K, {
+					}, [o, G, Q, X, R]);
+				return B && !C ? null : N ? t.a.createElement(J, {
 					onCancel: xa,
 					onSubmit: ra,
 					pollId: G,
@@ -1805,7 +1805,7 @@
 				}, t.a.createElement("div", {
 					className: L.a.wagerSelector
 				}, t.a.createElement("button", {
-					"aria-label": J._("Decrease amount", null, {
+					"aria-label": K._("Decrease amount", null, {
 						hk: "3CJknV"
 					}),
 					disabled: 0 === V,
@@ -1819,19 +1819,19 @@
 					className: L.a.wagerSelectorAmount
 				}, t.a.createElement(p.a, {
 					className: L.a.coinIcon
-				}), " ", U.coins ? U.coins : J._("Free", null, {
+				}), " ", U.coins ? U.coins : K._("Free", null, {
 					hk: "2EqRoV"
 				})) : H ? t.a.createElement("div", {
 					className: L.a.wagerSelectorAmount
 				}, H.amount > 0 ? t.a.createElement(t.a.Fragment, null, t.a.createElement(l.a, {
 					className: L.a.tokenIcon
-				}), " ", H.amount) : J._("Free", null, {
+				}), " ", H.amount) : K._("Free", null, {
 					hk: "1fDvBk"
 				})) : t.a.createElement(c.a, {
 					className: L.a.loadingIcon,
 					sizePx: 24
 				}), t.a.createElement("button", {
-					"aria-label": J._("Increase", null, {
+					"aria-label": K._("Increase", null, {
 						hk: "3OfAwL"
 					}),
 					disabled: !(!F && !v || !z),
@@ -1843,11 +1843,11 @@
 					className: L.a.wagerSelectorButtonIcon
 				}))), aa && t.a.createElement("div", {
 					className: L.a.amountMessage
-				}, W && J._("Insufficient coins", null, {
+				}, W && K._("Insufficient coins", null, {
 					hk: "2Mo83P"
-				}), $ && J._("Insufficient tokens", null, {
+				}), $ && K._("Insufficient tokens", null, {
 					hk: "2XAKK7"
-				}), z && !Z && J._("Max amount", null, {
+				}), z && !Z && K._("Max amount", null, {
 					hk: "1BpnPd"
 				}))), t.a.createElement("button", {
 					className: Object(s.a)(L.a.predictButton, {
@@ -1863,21 +1863,21 @@
 					}
 				}, k ? t.a.createElement(c.a, {
 					sizePx: 16
-				}) : W ? J._("Get Coins", null, {
+				}) : W ? K._("Get Coins", null, {
 					hk: "11KD6n"
-				}) : J._("Let's do this!", null, {
+				}) : K._("Let's do this!", null, {
 					hk: "342MNr"
 				})), t.a.createElement("div", {
 					className: L.a.disclaimer
-				}, q && t.a.createElement(t.a.Fragment, null, J._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [J._param("=Predictions don’t offer an opportunity to win real money or prizes.", t.a.createElement("a", {
+				}, q && t.a.createElement(t.a.Fragment, null, K._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [K._param("=Predictions don’t offer an opportunity to win real money or prizes.", t.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/previews-terms",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, J._("Predictions don’t offer an opportunity to win real money or prizes.", null, {
+				}, K._("Predictions don’t offer an opportunity to win real money or prizes.", null, {
 					hk: "1BMKCi"
 				})))], {
 					hk: "7yPT5"
-				}), " "), J._("Other redditors will see your username and prediction.", null, {
+				}), " "), K._("Other redditors will see your username and prediction.", null, {
 					hk: "TPwVV"
 				}))))
 			}))
@@ -1901,7 +1901,12 @@
 				checkmarkIcon: "_2gAEl8yg8wfIPLrKbwHden",
 				loggedOutTooltip: "_1Hv_GwhEllz9BSmfsqochE",
 				eyeIcon: "_2CARqVhwG8o_tQeOFQ6_LI",
-				icon: "mm7Q2UimK8B5N7a2U94Uh"
+				icon: "mm7Q2UimK8B5N7a2U94Uh",
+				star1: "OvDvpN-0fsFe2vyihFSWI",
+				star2: "_1b-Rcn8TB4dTLb7t_11a0",
+				star3: "_3DiunxbT_MWQsv1uJCrEvS",
+				star4: "_2ASeRoLCrsveZYTJBWi1y3",
+				star5: "_19HQMXjQGx095f06-3MUZJ"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx": function(a, i, r) {
@@ -3261,4 +3266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.55b619924641048c1b64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5d7490caaa8ea90857a4.js.map
