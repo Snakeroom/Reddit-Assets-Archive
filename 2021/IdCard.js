@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.fbdca5236c1ffe67c542.js
-// Retrieved at 6/7/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1f8f8faaaf8e8f790467.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -451,7 +451,7 @@
 					const r = s();
 					if (!Object(h.f)(r, {
 							subredditId: e
-						}) || !t || !Object(c.g)(r)) return;
+						}) || !t || !Object(c.h)(r)) return;
 					const i = new Set;
 					Object.values(t).forEach(e => {
 						i.add(e.authorId)
@@ -1653,7 +1653,7 @@
 			}) => i.a.createElement(m.q, {
 				className: e,
 				disabled: b || l,
-				onClick: () => n === u.qd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => n === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: o,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -1708,7 +1708,7 @@
 							userId: n
 						})),
 						u = !!s || !!c;
-					if (!Object(i.e)(e => u && Object(a.g)(e))) return null;
+					if (!Object(i.e)(e => u && Object(a.h)(e))) return null;
 					const p = (null == c ? void 0 : c.type) === (null == s ? void 0 : s.type) ? null : c;
 					return r.a.createElement("span", {
 						className: Object(o.a)(l.a.container, e),
@@ -2849,7 +2849,7 @@
 				currentUser: P.j,
 				isAchievementFlairModalEnabled: (e, t) => Object(st.f)(e, {
 					subredditId: t.subredditId
-				}) && Object(nt.g)(e),
+				}) && Object(nt.h)(e),
 				userFlairData: rt.c,
 				userHasBadge: (e, t) => {
 					const n = e.user.account;
@@ -2930,7 +2930,7 @@
 					stylesDisabledGlobally: P.kb,
 					canChangeAchievementFlair: (e, t) => Object(st.f)(e, {
 						subredditId: t.subredditId
-					}) && Object(nt.g)(e)
+					}) && Object(nt.h)(e)
 				});
 			class jt extends i.a.Component {
 				constructor(e) {
@@ -4457,15 +4457,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.rd.Add:
+					case r.sd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.rd.Start:
+					case r.sd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.rd.Create:
+					case r.sd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -5159,67 +5159,6 @@
 				})
 			}
 		},
-		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "c", (function() {
-				return o
-			})), n.d(t, "d", (function() {
-				return a
-			})), n.d(t, "e", (function() {
-				return d
-			})), n.d(t, "g", (function() {
-				return c
-			})), n.d(t, "h", (function() {
-				return l
-			})), n.d(t, "i", (function() {
-				return u
-			})), n.d(t, "l", (function() {
-				return m
-			})), n.d(t, "o", (function() {
-				return p
-			})), n.d(t, "k", (function() {
-				return b
-			})), n.d(t, "m", (function() {
-				return h
-			})), n.d(t, "f", (function() {
-				return f
-			})), n.d(t, "n", (function() {
-				return g
-			})), n.d(t, "j", (function() {
-				return x
-			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "a", (function() {
-				return E
-			})), n.d(t, "p", (function() {
-				return C
-			}));
-			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => t => {
-					const n = Object(r.c)(t, {
-						experimentEligibilitySelector: r.a,
-						experimentName: e
-					});
-					return !(!n || Object(s.Jd)(n))
-				},
-				o = i(s.ob),
-				a = i(s.qb),
-				d = i(s.rb),
-				c = i(s.xb),
-				l = i(s.yb),
-				u = i(s.zb),
-				m = i(s.Cb),
-				p = i(s.Fb),
-				b = i(s.Ab),
-				h = i(s.Db),
-				f = i(s.Bb),
-				g = i(s.Eb),
-				x = i(s.Gb),
-				_ = i(s.ub),
-				E = i(s.tb),
-				C = (i(s.vb), i(s.Hb))
-		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -5238,21 +5177,21 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const d = e => Object(a.J)(e) || Object(a.K)(e),
 				c = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: r.uc,
+					experimentEligibilitySelector: d
+				}), o.a),
+				l = Object(s.a)(c, e => e === r.zc.Enabled),
+				u = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: r.tc,
 					experimentEligibilitySelector: d
 				}), o.a),
-				l = Object(s.a)(c, e => e === r.yc.Enabled),
-				u = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.sc,
-					experimentEligibilitySelector: d
-				}), o.a),
-				m = Object(s.a)(u, e => e === r.wc.Enabled),
+				m = Object(s.a)(u, e => e === r.xc.Enabled),
 				p = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.hd,
+					experimentName: r.id,
 					experimentEligibilitySelector: d
 				}), o.a),
 				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.id,
+					experimentName: r.jd,
 					experimentEligibilitySelector: d
 				}), o.a)
 		},
@@ -5370,4 +5309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.fbdca5236c1ffe67c542.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1f8f8faaaf8e8f790467.js.map

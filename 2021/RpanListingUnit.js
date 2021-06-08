@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.41dfe4f273b92ed6ca1b.js
-// Retrieved at 6/7/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3c4df07a4ea379d9774d.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.oc
+					experimentName: u.pc
 				});
-				return Object(u.Jd)(t) ? void 0 : t
+				return Object(u.Kd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.pc
+					experimentName: u.qc
 				});
-				return Object(u.Jd)(t) ? void 0 : t
-			}, (e, t) => e === u.qc.Enabled && t === u.qc.Enabled);
+				return Object(u.Kd)(t) ? void 0 : t
+			}, (e, t) => e === u.rc.Enabled && t === u.rc.Enabled);
 			var h = r("./src/config.ts");
 			var b = r("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1337,7 +1337,7 @@
 				z = r.n(K);
 			const {
 				fbt: q
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.hc, X = l.hc, Q = Object(c.a)(L.a, {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.hc, X = l.hc, Q = Object(c.a)(L.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(a.c)({
 				autoplay: j.b,
@@ -1397,7 +1397,7 @@
 					}, this.handleUnsuccessfulPlayback = () => {
 						const e = Number(Object(O.K)());
 						if (e) {
-							if (Date.now() - e >= Z) {
+							if (Date.now() - e >= J) {
 								Object(O.W)();
 								const e = 30 * l.y,
 									t = Date.now() - e + X;
@@ -1497,7 +1497,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && o.c.has(this.timerId)) {
-						Math.round(o.c.end(this.timerId)) / 1e3 >= J ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(o.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -3865,4 +3865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.41dfe4f273b92ed6ca1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3c4df07a4ea379d9774d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.59295c82ab1b55dcca14.js
-// Retrieved at 6/7/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.05698f4ffe5385c6fdcc.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -125,8 +125,8 @@
 					className: N.a.achievementTooltip
 				}))
 			}, {
-				fbt: g
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), P = ({
+				fbt: P
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), g = ({
 				className: e,
 				subredditId: t,
 				userId: a
@@ -148,11 +148,11 @@
 					className: e
 				}, c.a.createElement("h4", {
 					className: N.a.achievementsHeading
-				}, g._("Achievements", null, {
+				}, P._("Achievements", null, {
 					hk: "1DnL4g"
 				})), c.a.createElement("p", {
 					className: N.a.achievementsDescription
-				}, g._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
+				}, P._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
 					hk: "4iPJwf"
 				})), c.a.createElement("div", {
 					className: N.a.achievementsList
@@ -167,7 +167,7 @@
 					onClick: () => {
 						l(Object(h.d)("user_flair_picker"))
 					}
-				}, g._("Powerup to Unlock", null, {
+				}, P._("Powerup to Unlock", null, {
 					hk: "M8l7D"
 				})))
 			};
@@ -263,7 +263,7 @@
 				}), v && c.a.createElement(B, {
 					subredditId: a.id,
 					flairData: n
-				}), c.a.createElement(P, {
+				}), c.a.createElement(g, {
 					subredditId: a.id,
 					userId: t.id
 				})) : null
@@ -302,7 +302,7 @@
 							userId: a
 						})),
 						m = !!s || !!d;
-					if (!Object(i.e)(e => m && Object(r.g)(e))) return null;
+					if (!Object(i.e)(e => m && Object(r.h)(e))) return null;
 					const v = (null == d ? void 0 : d.type) === (null == s ? void 0 : s.type) ? null : d;
 					return c.a.createElement("span", {
 						className: Object(n.a)(o.a.container, e),
@@ -391,4 +391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.59295c82ab1b55dcca14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.05698f4ffe5385c6fdcc.js.map

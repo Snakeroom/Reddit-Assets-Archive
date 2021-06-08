@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a36ef587a30117cb6e1a.js
-// Retrieved at 6/1/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a8c72a25b2db3c5dd464.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -911,42 +911,46 @@
 		"./src/reddit/components/UserIcon/UserIcon.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return u
+				return _
 			})), r.d(t, "c", (function() {
-				return f
+				return p
 			}));
 			var i = r("./src/config.ts"),
 				o = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./node_modules/react/index.js"),
 				s = r.n(n),
-				c = r("./src/lib/classNames/index.ts"),
-				l = r("./src/reddit/icons/svgs/SnooSilhouette/index.tsx"),
-				a = r("./src/reddit/components/UserIcon/UserIcon.m.less"),
-				d = r.n(a);
-			const u = `${i.a.assetPath}/img/avatar_over18_square.png`,
-				f = e => !e || e.includes("avatar_default_");
+				c = r("./node_modules/react-redux/es/index.js"),
+				l = r("./src/lib/classNames/index.ts"),
+				a = r("./src/reddit/icons/svgs/SnooSilhouette/index.tsx"),
+				d = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				u = r("./src/reddit/components/UserIcon/UserIcon.m.less"),
+				f = r.n(u);
+			const _ = `${i.a.assetPath}/img/avatar_over18_square.png`,
+				p = e => !e || e.includes("avatar_default_");
 			t.b = e => {
 				const {
 					className: t,
 					iconUrl: r,
 					isCurrentUser: i,
 					isNightMode: n,
-					isNSFW: a,
-					nsfwIconUrl: _,
-					shouldHideNSFW: p
+					isNSFW: u,
+					nsfwIconUrl: m,
+					shouldHideNSFW: b
 				} = e;
-				if (i && f(r) || !i && !r) return s.a.createElement(l.a, {
-					className: Object(c.a)(d.a.DefaultUserIcon, t, {
-						[d.a.mNightmode]: n
+				if (Object(c.e)(e => {
+						p(r) && Object(d.f)(e)
+					}), i && p(r) || !i && !r) return s.a.createElement(a.a, {
+					className: Object(l.a)(f.a.DefaultUserIcon, t, {
+						[f.a.mNightmode]: n
 					})
 				});
-				const m = !i && a && p ? _ || u : r;
+				const h = !i && u && b ? m || _ : r;
 				return s.a.createElement("img", {
 					alt: o.fbt._("User avatar", null, {
 						hk: "X43nA"
 					}),
-					className: Object(c.a)(d.a.UserIcon, t),
-					src: m
+					className: Object(l.a)(f.a.UserIcon, t),
+					src: h
 				})
 			}
 		},
@@ -2963,6 +2967,70 @@
 				d: "m261.37 80.13a5.12 5.12 0 0 1 -.27-1.29c-.06-.34-.08-.75-.17-1.2s-.19-1-.3-1.5a23.88 23.88 0 0 0 -3.12-7.61 22.56 22.56 0 0 0 -6.59-6.71 20 20 0 0 0 -7.06-2.93 22.12 22.12 0 0 0 -19.67 5.49 21.36 21.36 0 0 0 -5.7 9 20.88 20.88 0 0 0 -.7 10.29 21.16 21.16 0 0 0 9.47 14.18 21.55 21.55 0 0 0 16.06 2.92 21.77 21.77 0 0 0 12.8-8.08 23.8 23.8 0 0 0 3.39-6.16 26 26 0 0 0 1.32-6.35 19.06 19.06 0 0 1 .12 6.81 21.83 21.83 0 0 1 -8.21 13.51 18.67 18.67 0 0 1 -5.13 2.82 24.34 24.34 0 0 1 -8.2 1.31 24.84 24.84 0 0 1 -7.83-1.26 25.86 25.86 0 0 1 -6.77-3.5 25 25 0 0 1 -5.2-5.16 23.4 23.4 0 0 1 -3.35-6.21 25 25 0 0 1 -1-3.32c-.13-.56-.18-1.12-.28-1.68l-.12-.84c0-.28 0-.56-.05-.84 0-.56 0-1.12-.07-1.68s.05-1.11.08-1.66a11.26 11.26 0 0 1 .17-1.64c.09-.54.15-1.09.26-1.62a25.58 25.58 0 0 1 2.15-6 24.56 24.56 0 0 1 5.71-7.24c.37-.34.79-.62 1.18-.93a11.19 11.19 0 0 1 1.21-.87 23.57 23.57 0 0 1 21.4-2.45 23 23 0 0 1 8.39 5.48 22 22 0 0 1 6.08 14.14c.11 1.26 0 2.29 0 2.78z"
 			})))
 		},
+		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "f", (function() {
+				return s
+			})), r.d(t, "c", (function() {
+				return c
+			})), r.d(t, "d", (function() {
+				return l
+			})), r.d(t, "e", (function() {
+				return a
+			})), r.d(t, "h", (function() {
+				return d
+			})), r.d(t, "i", (function() {
+				return u
+			})), r.d(t, "j", (function() {
+				return f
+			})), r.d(t, "m", (function() {
+				return _
+			})), r.d(t, "p", (function() {
+				return p
+			})), r.d(t, "l", (function() {
+				return m
+			})), r.d(t, "n", (function() {
+				return b
+			})), r.d(t, "g", (function() {
+				return h
+			})), r.d(t, "o", (function() {
+				return g
+			})), r.d(t, "k", (function() {
+				return v
+			})), r.d(t, "b", (function() {
+				return O
+			})), r.d(t, "a", (function() {
+				return y
+			})), r.d(t, "q", (function() {
+				return I
+			}));
+			var i = r("./src/reddit/constants/experiments.ts"),
+				o = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const n = e => t => {
+					const r = Object(o.c)(t, {
+						experimentEligibilitySelector: o.a,
+						experimentName: e
+					});
+					return !(!r || Object(i.Kd)(r))
+				},
+				s = n(i.sb),
+				c = n(i.ob),
+				l = n(i.qb),
+				a = n(i.rb),
+				d = n(i.yb),
+				u = n(i.zb),
+				f = n(i.Ab),
+				_ = n(i.Db),
+				p = n(i.Gb),
+				m = n(i.Bb),
+				b = n(i.Eb),
+				h = n(i.Cb),
+				g = n(i.Fb),
+				v = n(i.Hb),
+				O = n(i.vb),
+				y = n(i.ub),
+				I = (n(i.wb), n(i.Ib))
+		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -2975,4 +3043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a36ef587a30117cb6e1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.a8c72a25b2db3c5dd464.js.map

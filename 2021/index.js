@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.151ad3108691720aaa51.js
-// Retrieved at 6/8/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.259a00c76e552fbb2b1a.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -84,8 +84,8 @@
 					hk: "2PjgXb"
 				})))
 			};
-			var j = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
+			var g = n("./src/reddit/selectors/user.ts"),
+				j = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				_ = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				f = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
 				k = n("./src/lib/timeUntil/index.ts"),
@@ -106,9 +106,9 @@
 
 			function D(e) {
 				const t = Object(m.d)(),
-					n = Object(m.e)(j.d),
-					o = Object(m.e)(C.k),
-					r = Object(m.e)(C.j),
+					n = Object(m.e)(g.d),
+					o = Object(m.e)(C.l),
+					r = Object(m.e)(C.k),
 					s = Object(P.a)(),
 					d = L(),
 					c = function() {
@@ -128,7 +128,7 @@
 					} = e,
 					[O, E] = i.a.useState(!1),
 					[x, T] = i.a.useState(null),
-					[h, g] = i.a.useState(!1),
+					[h, j] = i.a.useState(!1),
 					_ = l < Date.now();
 				return {
 					isLoading: O,
@@ -160,7 +160,7 @@
 								optionId: x,
 								postId: a,
 								price: m
-							})), o && t(Object(w.bb)(a)), E(!1), T(null), r ? g(!0) : d({
+							})), o && t(Object(w.bb)(a)), E(!1), T(null), r ? j(!0) : d({
 								duration: 5e3,
 								kind: I.b.SuccessCommunity,
 								text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(k.a)(new Date(l), !0))], {
@@ -177,7 +177,7 @@
 						T(null)
 					}, []),
 					hideAnimation: i.a.useCallback(() => {
-						g(!1)
+						j(!1)
 					}, [])
 				}
 			}
@@ -188,8 +188,8 @@
 				tournamentId: t,
 				subredditId: n
 			}) => {
-				const o = Object(m.e)(j.K),
-					r = Object(m.e)(j.W),
+				const o = Object(m.e)(g.K),
+					r = Object(m.e)(g.W),
 					{
 						isLoading: s,
 						isShowingVoteAnimation: c,
@@ -232,7 +232,7 @@
 					userIsLoggedOut: !o,
 					votePercentage: (h || k) && e.voteCount && T ? Math.floor(e.voteCount / T * 100) : null,
 					isShowingHint: !1
-				})))), !!a && i.a.createElement(g.b, {
+				})))), !!a && i.a.createElement(j.b, {
 					className: S.a.modal,
 					isCreatingVote: s,
 					onOverlayClick: p,
@@ -287,4 +287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.151ad3108691720aaa51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.259a00c76e552fbb2b1a.js.map

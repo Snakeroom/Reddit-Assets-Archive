@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.64ab395fee16d846b48e.js
-// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.85483e241e0972ebf895.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -270,8 +270,8 @@
 				U = n("./src/lib/constants/index.ts"),
 				M = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				Q = n("./src/reddit/constants/localStorage.ts"),
-				K = n("./src/reddit/contexts/ApiContext.tsx"),
-				J = n("./src/reddit/featureFlags/component.tsx"),
+				J = n("./src/reddit/contexts/ApiContext.tsx"),
+				K = n("./src/reddit/featureFlags/component.tsx"),
 				V = n("./src/reddit/helpers/localStorage/index.ts"),
 				Z = n("./src/reddit/helpers/name/index.ts"),
 				H = n("./src/lib/makeApiRequest/index.ts"),
@@ -339,7 +339,7 @@
 				}
 			}
 			re.cachedData = null;
-			var ie = Object(J.a)("srAdoptionWeek", Object(K.b)(re)),
+			var ie = Object(K.a)("srAdoptionWeek", Object(J.b)(re)),
 				oe = n("./src/reddit/components/TopSubredditsWidget/Container.tsx"),
 				de = n("./src/reddit/actions/post.ts"),
 				ce = n("./src/reddit/components/MiniPost/index.tsx"),
@@ -675,13 +675,13 @@
 				Ue = n("./src/reddit/constants/tracking.ts"),
 				Me = n("./src/reddit/selectors/telemetry.ts"),
 				Qe = n("./src/reddit/selectors/widgets.ts"),
-				Ke = n("./src/telemetry/models/Subreddit.ts");
-			const Je = e => t => n => ({
+				Je = n("./src/telemetry/models/Subreddit.ts");
+			const Ke = e => t => n => ({
 					...Me.defaults(n),
 					...Object(Qe.b)(n, e),
 					source: "trending_community_card",
 					action: Ue.c.CLICK,
-					noun: Object(Ke.getSubscribeEventNoun)(e.type, t)
+					noun: Object(Je.getSubscribeEventNoun)(e.type, t)
 				}),
 				Ve = e => t => ({
 					...Me.defaults(t),
@@ -730,7 +730,7 @@
 							return Object(He.c)(e, {
 								experimentEligibilitySelector: Ye.K,
 								experimentName: Ge.ab
-							}) === Ge.Kb
+							}) === Ge.Lb
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: u.a
@@ -830,7 +830,7 @@
 						placementIndex: e++
 					}), dt(this.props) && c.a.createElement(v, null), it(this.props) && c.a.createElement(_.a, null, c.a.createElement(Te, {
 						getClickEventFactory: Ve,
-						getSubscribeEventFactoryHandler: Je,
+						getSubscribeEventFactoryHandler: Ke,
 						subredditIds: l && k ? k : o,
 						title: l ? s.fbt._("Top Video Communities", null, {
 							hk: "SSdYX"
@@ -2078,4 +2078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.64ab395fee16d846b48e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.85483e241e0972ebf895.js.map

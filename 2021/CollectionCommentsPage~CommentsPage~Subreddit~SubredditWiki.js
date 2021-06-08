@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d45d3b66b9a5129d9c8f.js
-// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.39be8d463604260c65fc.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -438,7 +438,7 @@
 							disallowProfile: !0
 						});
 					if (!i) throw new Error("Post does not belong to a subreddit");
-					const a = await Object(c.f)(n(), i.name, Object(u.f)(s));
+					const a = await Object(c.f)(n(), i.name, Object(u.g)(s));
 					if (a.error || !a.ok) throw new Error("Failed to fetch coin packs");
 					const {
 						subredditInfoByName: o
@@ -1293,7 +1293,7 @@
 					D = Object(a.e)(e => !!Object(f.j)(e, {
 						subredditId: t
 					})),
-					I = Object(a.e)(_.i),
+					I = Object(a.e)(_.j),
 					S = Object(a.e)(e => Object(f.t)(e, {
 						subredditId: t
 					})),
@@ -3412,4 +3412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.d45d3b66b9a5129d9c8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.39be8d463604260c65fc.js.map

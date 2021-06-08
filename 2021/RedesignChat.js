@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.02563af788939421cefa.js
-// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.b5d81b423f0c4a860d42.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./src/chat/components/PortalContainer/index.m.less": function(e, t, n) {
@@ -656,11 +656,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.dc,
+					experimentName: s.ec,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.J)(e) || Object(i.K)(e),
-				u = Object(c.a)(o, e => e === s.gc.Enabled)
+				u = Object(c.a)(o, e => e === s.hc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -687,12 +687,12 @@
 					experimentName: s.W,
 					experimentEligibilitySelector: o
 				}), a.a),
-				u = Object(c.a)(d, e => e === s.jc.Enabled),
+				u = Object(c.a)(d, e => e === s.kc.Enabled),
 				l = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.ec,
+					experimentName: s.fc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				b = Object(c.a)(u, l, (e, t) => e && t === s.ic.Enabled),
+				b = Object(c.a)(u, l, (e, t) => e && t === s.jc.Enabled),
 				h = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.Y,
 					experimentEligibilitySelector: o
@@ -702,10 +702,10 @@
 					experimentName: s.V,
 					experimentEligibilitySelector: o
 				}), a.a),
-				O = Object(c.a)(j, e => e === s.hc.Banner_1st_time),
-				p = Object(c.a)(j, e => e === s.hc.Tooltip_persist),
-				f = Object(c.a)(j, e => e === s.hc.Tooltip_1st_time)
+				O = Object(c.a)(j, e => e === s.ic.Banner_1st_time),
+				p = Object(c.a)(j, e => e === s.ic.Tooltip_persist),
+				f = Object(c.a)(j, e => e === s.ic.Tooltip_1st_time)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.02563af788939421cefa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b5d81b423f0c4a860d42.js.map

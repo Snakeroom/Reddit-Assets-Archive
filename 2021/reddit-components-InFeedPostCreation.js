@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.108441cf2bd57a764a67.js
-// Retrieved at 6/7/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.6819e0219eeb0392dce3.js
+// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -40,8 +40,8 @@
 				U = n("./src/reddit/selectors/telemetry.ts"),
 				f = n("./src/reddit/selectors/user.ts"),
 				C = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				O = n.n(C);
-			const N = l.a.wrapped(b.a, "CurrentUserIcon", O.a);
+				N = n.n(C);
+			const O = l.a.wrapped(b.a, "CurrentUserIcon", N.a);
 			var j;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
@@ -130,17 +130,17 @@
 					},
 					f = t && n,
 					C = e ? o.a.createElement(x.a, {
-						className: O.a.UserIconWrapper,
+						className: N.a.UserIconWrapper,
 						to: e.url
-					}, o.a.createElement(N, {
-						className: O.a.UserIcon,
+					}, o.a.createElement(O, {
+						className: N.a.UserIcon,
 						shouldShowPresenceIndicator: f
 					})) : null;
 				return o.a.createElement("div", {
-					className: O.a.Container
+					className: N.a.Container
 				}, C, o.a.createElement("input", {
 					name: "createPost",
-					className: O.a.Input,
+					className: N.a.Input,
 					onChange: E,
 					onClick: E,
 					onKeyPress: E,
@@ -149,7 +149,7 @@
 					}),
 					type: "text"
 				}), b.media && o.a.createElement(I.q, {
-					className: O.a.Button,
+					className: N.a.Button,
 					"aria-label": v(),
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
@@ -166,7 +166,7 @@
 					tooltipId: j.Media,
 					text: v()
 				})), b.link && o.a.createElement(I.q, {
-					className: O.a.Button,
+					className: N.a.Button,
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
@@ -250,16 +250,16 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Fc
-					}) === r.Pc.Enabled
+						experimentName: r.Gc
+					}) === r.Qc.Enabled
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ec
-					}) === r.Oc.Enabled
+						experimentName: r.Fc
+					}) === r.Pc.Enabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.108441cf2bd57a764a67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.6819e0219eeb0392dce3.js.map
