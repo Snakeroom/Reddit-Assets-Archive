@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b1a3f22122fcd8a2ae4.js
-// Retrieved at 6/7/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.19aa98fced4bf485c281.js
+// Retrieved at 6/8/2021, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1916,11 +1916,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("135876"),
+				buildNumber: r("135938"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1623104897"),
+				})("1623167650"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4516,14 +4516,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ce61695124f95a73ad876ef695698e0d28331cbe8-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %caf6d3ed6bc71afe89060cee47bc7e2da1b0a8778-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e61695124f95a73ad876ef695698e0d28331cbe8-production",
+						release: "af6d3ed6bc71afe89060cee47bc7e2da1b0a8778-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5017,7 +5017,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "e61695124f95a73ad876ef695698e0d28331cbe8-production",
+						releaseClient: "af6d3ed6bc71afe89060cee47bc7e2da1b0a8778-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -25650,6 +25650,37 @@
 			}));
 			const n = e => e && !!e.eventInfo
 		},
+		"./src/reddit/helpers/predictions/index.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "a", (function() {
+				return n
+			})), i.d(t, "b", (function() {
+				return r
+			}));
+			const n = (e, t) => {
+					const i = Date.now(),
+						n = i <= e.endsAt;
+					return n !== i <= t.endsAt ? n ? -1 : 1 : n && e.selectedOptionId !== t.selectedOptionId ? e.selectedOptionId ? 1 : -1 : !e.resolvedOptionId != !t.resolvedOptionId ? e.resolvedOptionId ? 1 : -1 : n || e.selectedOptionId === t.selectedOptionId ? (e.totalVoteCount || 0) >= (t.totalVoteCount || 0) ? -1 : 1 : e.selectedOptionId ? -1 : 1
+				},
+				r = (e, t) => {
+					const {
+						pollData: i
+					} = e, {
+						pollData: r
+					} = t;
+					return n({
+						endsAt: i.votingEndTimestamp,
+						selectedOptionId: i.userSelection || null,
+						resolvedOptionId: i.resolvedOptionId,
+						totalVoteCount: i.totalVoteCount
+					}, {
+						endsAt: r.votingEndTimestamp,
+						selectedOptionId: r.userSelection || null,
+						resolvedOptionId: r.resolvedOptionId,
+						totalVoteCount: r.totalVoteCount
+					})
+				}
+		},
 		"./src/reddit/helpers/publicAccessNetwork/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
@@ -36908,63 +36939,64 @@
 		"./src/reddit/selectors/features/predictions/tournaments/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "g", (function() {
-				return u
-			})), i.d(t, "i", (function() {
 				return _
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "i", (function() {
 				return p
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return m
+			})), i.d(t, "d", (function() {
+				return h
 			})), i.d(t, "a", (function() {
-				return f
-			})), i.d(t, "c", (function() {
 				return b
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return g
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "b", (function() {
 				return y
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "j", (function() {
 				return w
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "k", (function() {
 				return v
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "f", (function() {
 				return E
+			})), i.d(t, "h", (function() {
+				return T
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/lib/initializeClient/installReducer.ts"),
 				s = i("./src/reddit/reducers/features/predictions/index.ts"),
-				o = i("./src/reddit/models/Prediction/Tournament/index.ts"),
-				d = i("./src/reddit/selectors/posts.ts"),
-				a = i("./src/reddit/selectors/user.ts"),
-				l = i("./node_modules/lodash/isNull.js"),
-				c = i.n(l);
+				o = i("./src/reddit/helpers/predictions/index.ts"),
+				d = i("./src/reddit/models/Prediction/Tournament/index.ts"),
+				a = i("./src/reddit/selectors/posts.ts"),
+				l = i("./src/reddit/selectors/user.ts"),
+				c = i("./node_modules/lodash/isNull.js"),
+				u = i.n(c);
 			Object(r.a)({
 				features: {
 					predictions: s.a
 				}
 			});
-			const u = (e, t) => {
+			const _ = (e, t) => {
 					var i, n;
 					return !!(null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId])
 				},
-				_ = (e, t) => {
+				p = (e, t) => {
 					var i, n, r;
 					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.isFetching) || !1
 				},
-				p = (e, t) => {
+				m = (e, t) => {
 					var i, n, r;
 					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) || []
 				},
-				m = (e, t) => {
-					const i = p(e, t);
+				h = (e, t) => {
+					const i = m(e, t);
 					return i.length ? i[i.length - 1] : null
 				},
-				h = Object(n.a)(p, e => e.filter(e => e.status === o.a.Live || e.status === o.a.LiveInProgress)),
-				f = (e, t) => h(e, t)[0],
-				b = (e, t) => !!p(e, t).length,
-				g = (e, t) => !!h(e, t).length,
-				y = Object(n.a)(m, d.h, d.I, a.C, (e, t, i, n) => {
+				f = Object(n.a)(m, e => e.filter(e => e.status === d.a.Live || e.status === d.a.LiveInProgress)),
+				b = (e, t) => f(e, t)[0],
+				g = (e, t) => !!m(e, t).length,
+				y = (e, t) => !!f(e, t).length,
+				w = Object(n.a)(h, a.h, a.I, l.C, (e, t, i, n) => {
 					var r;
 					return (null === (r = null == e ? void 0 : e.predictionPosts) || void 0 === r ? void 0 : r.length) ? null == e ? void 0 : e.predictionPosts.reduce((e, {
 						id: r
@@ -36974,19 +37006,12 @@
 						return !s || n && s.isNSFW || (e[r] = s), e
 					}, {}) : {}
 				}),
-				w = Object(n.a)(y, e => Object.keys(e).sort((t, i) => ((e, t) => {
-					const {
-						pollData: i
-					} = e, {
-						pollData: n
-					} = t, r = Date.now(), s = r <= i.votingEndTimestamp;
-					return s !== r <= n.votingEndTimestamp ? s ? -1 : 1 : s && i.userSelection !== n.userSelection ? i.userSelection ? 1 : -1 : !i.resolvedOptionId != !n.resolvedOptionId ? i.resolvedOptionId ? 1 : -1 : s || i.userSelection === n.userSelection ? i.totalVoteCount >= n.totalVoteCount ? -1 : 1 : i.userSelection ? -1 : 1
-				})(e[t], e[i]))),
-				v = Object(n.a)(f, e => {
+				v = Object(n.a)(w, e => Object.keys(e).sort((t, i) => Object(o.b)(e[t], e[i]))),
+				E = Object(n.a)(b, e => {
 					var t;
-					return null !== (t = !(null == e ? void 0 : e.predictionPosts) || 0 === (null == e ? void 0 : e.predictionPosts.length) || (null == e ? void 0 : e.predictionPosts.every(e => !c()(e.pollData.resolvedOptionId)))) && void 0 !== t && t
+					return null !== (t = !(null == e ? void 0 : e.predictionPosts) || 0 === (null == e ? void 0 : e.predictionPosts.length) || (null == e ? void 0 : e.predictionPosts.every(e => !u()(e.pollData.resolvedOptionId)))) && void 0 !== t && t
 				}),
-				E = Object(n.a)(m, e => !!e && e.status === o.a.LiveInProgress)
+				T = Object(n.a)(h, e => !!e && e.status === d.a.LiveInProgress)
 		},
 		"./src/reddit/selectors/frontpage.ts": function(e, t, i) {
 			"use strict";
@@ -46901,4 +46926,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b1a3f22122fcd8a2ae4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.19aa98fced4bf485c281.js.map
