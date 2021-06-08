@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.4ca20a07ed1dffe42435.js
-// Retrieved at 6/3/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.0fc461be7df68ef44f4b.js
+// Retrieved at 6/8/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.m.less": function(e, t, s) {
@@ -58,7 +58,7 @@
 				D = d.a.div("ListItem", F.a),
 				N = Object(S.a)({
 					user: (e, t) => t.attr === j.a.User ? e.contacts.models[t.attrId] : void 0,
-					message: (e, t) => t.attr === j.a.Invite || t.attr === j.a.Message ? Object(T.d)(e, Number(t.attrId)) : void 0,
+					message: (e, t) => t.attr === j.a.Invite || t.attr === j.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
 					messageList: e => Object(I.x)(e),
 					currentUserId: (e, t) => Object(L.a)(e)
 				}),
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.4ca20a07ed1dffe42435.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.0fc461be7df68ef44f4b.js.map

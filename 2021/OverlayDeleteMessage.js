@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.1d12807da9297a5d9f4e.js
-// Retrieved at 6/3/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.517c7421b5cbfad4fa60.js
+// Retrieved at 6/8/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDeleteMessage"], {
 		"./src/chat/components/OverlayDeleteMessage/index.m.less": function(e, t, s) {
@@ -35,9 +35,9 @@
 				p = s("./src/chat/components/OverlayDeleteMessage/index.m.less"),
 				_ = s.n(p);
 			const C = Object(h.a)({
-					message: (e, t) => Object(x.d)(e, t.messageId),
-					isChatEmbedded: e => Object(O.a)(e),
-					isMessageFromCurrentUser: (e, t) => Object(x.n)(e, t.messageId)
+					message: (e, t) => Object(x.b)(e, t.messageId),
+					isChatEmbedded: O.a,
+					isMessageFromCurrentUser: (e, t) => Object(x.g)(e, t.messageId)
 				}),
 				B = Object(o.b)(C, (e, t) => ({
 					onConfirmationClick: () => ((e, t) => {
@@ -71,7 +71,6 @@
 						className: _.a.MessageItemBubble,
 						message: t,
 						fromCurrentUser: o,
-						fromInvite: !1,
 						withButton: !1,
 						isChatEmbedded: n
 					})), r.a.createElement(y.a, {
@@ -139,4 +138,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.1d12807da9297a5d9f4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.517c7421b5cbfad4fa60.js.map

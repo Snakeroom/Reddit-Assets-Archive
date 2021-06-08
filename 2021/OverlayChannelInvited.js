@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.8cc64f29aff84d5af1d9.js
-// Retrieved at 6/3/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChannelInvited.32f8ace25d0ca14dc569.js
+// Retrieved at 6/8/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChannelInvited"], {
 		"./src/chat/components/OverlayChannelInvited/index.m.less": function(e, t, n) {
@@ -45,17 +45,17 @@
 				i = n("./node_modules/react-redux/es/index.js"),
 				d = n("./src/lib/classNames/index.ts"),
 				h = n("./src/lib/lessComponent.tsx"),
-				m = n("./src/lib/opener/index.ts"),
-				u = n("./src/lib/timeAgo/index.ts"),
+				u = n("./src/lib/opener/index.ts"),
+				m = n("./src/lib/timeAgo/index.ts"),
 				p = n("./src/chat/actions/channel.ts"),
 				b = n("./src/chat/actions/message/index.ts"),
 				_ = n("./src/chat/actions/tracking.ts"),
 				x = n("./src/chat/components/ChatMemberList/index.tsx"),
 				y = n("./src/chat/components/Message/Bubble.tsx"),
 				C = n("./src/chat/components/OverlayNav/index.tsx"),
-				f = n("./src/chat/components/Scroller/index.tsx"),
-				O = n("./src/chat/controls/MediaObject/index.m.less"),
-				g = n.n(O);
+				O = n("./src/chat/components/Scroller/index.tsx"),
+				f = n("./src/chat/controls/MediaObject/index.m.less"),
+				g = n.n(f);
 			const v = h.a.wrapped(e => {
 				const [t, n, a] = o.a.Children.toArray(e.children);
 				return o.a.createElement("div", {
@@ -67,8 +67,8 @@
 				k = n("./src/chat/controls/Title/index.tsx"),
 				E = n("./src/chat/helpers/chatSelector.ts"),
 				M = n("./src/chat/icons/Nsfw/index.tsx"),
-				I = n("./src/chat/icons/Userpic/index.tsx"),
-				N = n("./src/chat/models/Channel/index.ts"),
+				N = n("./src/chat/icons/Userpic/index.tsx"),
+				I = n("./src/chat/models/Channel/index.ts"),
 				w = n("./src/chat/selectors/app.ts"),
 				T = n("./src/chat/selectors/channels.ts"),
 				D = n("./src/chat/selectors/contacts.ts"),
@@ -79,7 +79,7 @@
 				R = h.a.div("Container", A.a),
 				Q = h.a.div("TitleContainer", A.a),
 				S = h.a.wrapped(M.a, "NSFWIcon", A.a),
-				W = h.a.wrapped(I.a, "UserPic", A.a),
+				W = h.a.wrapped(N.a, "UserPic", A.a),
 				G = h.a.span("WarningTextNSFW", A.a),
 				U = h.a.p("Text", A.a),
 				K = h.a.wrapped(v, "MediaObject", A.a),
@@ -135,7 +135,7 @@
 					} = this.props;
 					if (t && e.channel) {
 						const a = e.channel.channelId === t.channelId;
-						t.type === N.a.Direct && !t.firstMessageId && !t.fetchingFirstMessage && a && n()
+						t.type === I.a.Direct && !t.firstMessageId && !t.fetchingFirstMessage && a && n()
 					}
 				}
 				onDeclineChannelRequest(e) {
@@ -152,7 +152,7 @@
 						const {
 							linkKarma: t,
 							created: n
-						} = e, a = s.fbt._("Redditor since {amount of time}", [s.fbt._param("amount of time", Object(u.a)(n))], {
+						} = e, a = s.fbt._("Redditor since {amount of time}", [s.fbt._param("amount of time", Object(m.a)(n))], {
 							hk: "37XXLN"
 						}), r = s.fbt._({
 							"*": "{karma count} karma",
@@ -170,16 +170,14 @@
 						} = this.props, t = c()([...this.props.channelMessages], "createdAt");
 						return o.a.createElement(R, null, o.a.createElement(F, null, s.fbt._("Preview of this chat", null, {
 							hk: "42xxX4"
-						})), t.map(t => o.a.createElement(o.a.Fragment, {
-							key: t.createdAt
-						}, o.a.createElement(Z, {
+						})), t.map(t => o.a.createElement(Z, {
+							key: t.createdAt,
 							message: t,
 							inPreview: !0,
 							fromCurrentUser: !1,
-							fromInvite: !0,
 							withButton: !0,
 							isChatEmbedded: e
-						}))))
+						})))
 					}
 				}
 				renderBlockedUserHeader() {
@@ -231,8 +229,8 @@
 						channel: t
 					} = this.props, n = e && !!e.isNSFW;
 					if (t && t.inviter) return o.a.createElement("div", null, o.a.createElement("a", {
-						target: m.c.BLANK,
-						rel: m.b,
+						target: u.c.BLANK,
+						rel: u.b,
 						href: `${a.a.redditUrl}/user/${t.inviter.name}`
 					}, o.a.createElement(K, null, n ? o.a.createElement(S, null) : o.a.createElement(W, {
 						userId: t.inviter.id
@@ -242,7 +240,7 @@
 						hk: "3rI4EF"
 					}))), this.renderUserInfo())), o.a.createElement(U, null, s.fbt._("Accept their request if you'd like to continue the conversation. We won't notify them if you decline.", null, {
 						hk: "1wbHBD"
-					})), t && t.type === N.a.Group ? this.renderMembersList() : this.renderPreviewMessages())
+					})), t && t.type === I.a.Group ? this.renderMembersList() : this.renderPreviewMessages())
 				}
 				render() {
 					const {
@@ -252,7 +250,7 @@
 						},
 						onDeclineChannelRequest: n,
 						onAcceptChannelRequest: a
-					} = this, r = e && e.type === N.a.Direct, c = r ? s.fbt._("Chat Request", null, {
+					} = this, r = e && e.type === I.a.Direct, c = r ? s.fbt._("Chat Request", null, {
 						hk: "1sWJM0"
 					}) : s.fbt._("Group invite", null, {
 						hk: "JPFyz"
@@ -262,7 +260,7 @@
 						title: c,
 						showMenu: r,
 						dropdownId: L
-					}), o.a.createElement(f.b, null, this.renderContent()), o.a.createElement(B.a, {
+					}), o.a.createElement(O.b, null, this.renderContent()), o.a.createElement(B.a, {
 						secondaryButtonText: s.fbt._("Decline", null, {
 							hk: "3rdClY"
 						}),
@@ -303,17 +301,17 @@
 				i = n("./src/lib/lessComponent.tsx"),
 				d = n("./src/chat/controls/Button/index.tsx"),
 				h = n("./src/chat/helpers/dom.ts"),
-				m = n("./src/chat/controls/OverlayControlBar/index.m.less"),
-				u = n.n(m);
-			const p = i.a.wrapped(d.a, "Button", u.a),
+				u = n("./src/chat/controls/OverlayControlBar/index.m.less"),
+				m = n.n(u);
+			const p = i.a.wrapped(d.a, "Button", m.a),
 				b = Object(c.b)(void 0, e => ({
 					onSubmit: () => {},
 					onCancel: Object(h.b)(() => e(Object(l.a)()))
 				})),
-				_ = i.a.div("OverlayControlBar", u.a),
+				_ = i.a.div("OverlayControlBar", m.a),
 				x = b(e => r.a.createElement(_, {
 					className: Object(o.a)({
-						[u.a.primary]: e.primaryButtonOnly
+						[m.a.primary]: e.primaryButtonOnly
 					}, e.className)
 				}, !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(p, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
@@ -338,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.8cc64f29aff84d5af1d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChannelInvited.32f8ace25d0ca14dc569.js.map
