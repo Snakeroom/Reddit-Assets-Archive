@@ -1,19 +1,19 @@
-// https://www.redditstatic.com/desktop2x/Report.1c0dbf0c97b09167a774.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Report.f7c06f31e45f50086442.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Report"], {
 		"./src/reddit/actions/pages/report/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "reportPageFailed", (function() {
-				return g
+				return l
 			})), r.d(t, "reportPagePending", (function() {
 				return _
 			})), r.d(t, "reportPageLoaded", (function() {
 				return O
 			})), r.d(t, "reportPageInitialReasonSet", (function() {
-				return f
-			})), r.d(t, "reportPageRequested", (function() {
 				return x
+			})), r.d(t, "reportPageRequested", (function() {
+				return f
 			}));
 			var n = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/constants/index.ts"),
@@ -29,7 +29,7 @@
 					if (!n.user || !n.user.language) return;
 					const c = await (e => Object(a.a)(Object(o.a)(e, [i.a]), {
 						endpoint: `${e.apiUrl}/api/report_page_rules.json`,
-						method: s.fb.GET
+						method: s.gb.GET
 					}))(r());
 					if (c.ok) {
 						const {
@@ -42,16 +42,16 @@
 				};
 			var u = r("./src/reddit/endpoints/me/index.ts"),
 				b = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				l = r("./src/reddit/actions/pages/report/constants.ts");
-			const g = Object(n.a)(l.b),
-				_ = Object(n.a)(l.d),
-				O = Object(n.a)(l.c),
-				f = Object(n.a)(l.a),
-				x = e => async (t, r, {
+				g = r("./src/reddit/actions/pages/report/constants.ts");
+			const l = Object(n.a)(g.b),
+				_ = Object(n.a)(g.d),
+				O = Object(n.a)(g.c),
+				x = Object(n.a)(g.a),
+				f = e => async (t, r, {
 					apiContext: n
 				}) => {
 					let s;
-					e.queryParams && e.queryParams.reason && (s = e.queryParams.reason, t(f(s))), t(p()), t(_());
+					e.queryParams && e.queryParams.reason && (s = e.queryParams.reason, t(x(s))), t(p()), t(_());
 					const a = await Object(u.a)(n());
 					if (a.ok && a.body)
 						if (a.body.account) t(O(a.body));
@@ -59,9 +59,9 @@
 							const e = r();
 							Object(b.a)(t, e)
 						}
-					else t(g(a.error))
+					else t(l(a.error))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.1c0dbf0c97b09167a774.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.f7c06f31e45f50086442.js.map

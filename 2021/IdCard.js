@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.1f8f8faaaf8e8f790467.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.753950a31d2eb65ccd57.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -780,7 +780,7 @@
 						type: e.type
 					} : {
 						id: Object(O.m)(l(), e.name),
-						name: `${r.bc}${e.name}`,
+						name: `${r.cc}${e.name}`,
 						type: e.type
 					});
 					if (!Object(j.K)(l())) return i(Object(c.k)({
@@ -811,7 +811,7 @@
 							subredditNames: n,
 							subscribe: s
 						}) => Object(p.a)(Object(b.a)(e, [h.a]), {
-							method: r.fb.POST,
+							method: r.gb.POST,
 							endpoint: Object(x.a)(`${e.apiUrl}/api/subscribe`),
 							data: {
 								action: s ? "sub" : "unsub",
@@ -884,7 +884,7 @@
 							identifier: E
 						});
 					(C() || (await t(A([E], !0)), C())) && ((await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
-						method: r.fb.POST,
+						method: r.gb.POST,
 						endpoint: `${e.apiUrl}/api/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -918,7 +918,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: i
 					})), (await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
-						method: r.fb.POST,
+						method: r.gb.POST,
 						endpoint: `${e.apiUrl}/api/multi/favorite`,
 						data: {
 							make_favorite: n ? "true" : "false",
@@ -956,7 +956,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), (await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
-						method: r.fb.POST,
+						method: r.gb.POST,
 						endpoint: `${e.apiUrl}/api/multi/subscribe`,
 						data: {
 							action: n ? "sub" : "unsub",
@@ -1235,7 +1235,7 @@
 				p = n("./src/lib/addQueryParams/index.ts");
 			const b = (e, t, n, s, r) => {
 				const i = r || "*:*",
-					o = n || l.T;
+					o = n || l.U;
 				return Object(p.a)("/search", {
 					q: i,
 					sort: o,
@@ -1282,7 +1282,7 @@
 						})
 					}, r.a.createElement(m.a, {
 						onClick: this.onClick,
-						to: b(s, n, l.Rb.Relevance, l.Zb.DAY),
+						to: b(s, n, l.Sb.Relevance, l.ac.DAY),
 						children: i
 					}))
 				}
@@ -4823,17 +4823,19 @@
 			n.d(t, "a", (function() {
 				return d
 			}));
-			var s = n("./src/reddit/constants/history.ts"),
-				r = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				i = n("./src/reddit/selectors/telemetry.ts"),
-				o = n("./node_modules/uuid/v4.js"),
-				a = n.n(o);
+			var s = n("./node_modules/uuid/v4.js"),
+				r = n.n(s),
+				i = n("./src/reddit/constants/history.ts"),
+				o = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				a = n("./src/reddit/selectors/telemetry.ts");
 
 			function d() {
-				const e = Object(r.Z)();
+				const e = Object(o.Z)(),
+					t = e ? Object(a.getPageTypeFromCurrentPage)(e) : void 0,
+					n = "search_results" === t && Object(a.structureType)(e) === a.StructureType.Trending;
 				return {
-					[s.a.ClickSource]: e ? Object(i.getPageTypeFromCurrentPage)(e) : void 0,
-					[s.a.ClickId]: a()()
+					[i.a.ClickSource]: n ? "search_results_trending" : t,
+					[i.a.ClickId]: r()()
 				}
 			}
 		},
@@ -5309,4 +5311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1f8f8faaaf8e8f790467.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.753950a31d2eb65ccd57.js.map

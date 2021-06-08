@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.39be8d463604260c65fc.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7c4ccf8067674795e132.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -367,9 +367,9 @@
 			})), r.d(t, "b", (function() {
 				return N
 			})), r.d(t, "l", (function() {
-				return D
-			})), r.d(t, "m", (function() {
 				return I
+			})), r.d(t, "m", (function() {
+				return D
 			})), r.d(t, "c", (function() {
 				return S
 			})), r.d(t, "a", (function() {
@@ -536,7 +536,7 @@
 						posts: u,
 						meta: s.meta
 					})), l
-				}, N = Object(o.a)(_.a), D = Object(o.a)(_.i), I = Object(o.a)(_.j), S = ({
+				}, N = Object(o.a)(_.a), I = Object(o.a)(_.i), D = Object(o.a)(_.j), S = ({
 					subredditId: e
 				}) => async (t, r, {
 					gqlContext: n
@@ -1290,21 +1290,21 @@
 						subredditId: t
 					})),
 					F = Object(a.e)(f.v),
-					D = Object(a.e)(e => !!Object(f.j)(e, {
+					I = Object(a.e)(e => !!Object(f.j)(e, {
 						subredditId: t
 					})),
-					I = Object(a.e)(_.j),
+					D = Object(a.e)(_.j),
 					S = Object(a.e)(e => Object(f.t)(e, {
 						subredditId: t
 					})),
-					P = D || S,
+					P = I || S,
 					T = () => {
-						s(I ? Object(h.m)() : Object(h.i)()), r(Object(o.d)("powerups_sidebar"))
+						s(D ? Object(h.m)() : Object(h.i)()), r(Object(o.d)("powerups_sidebar"))
 					};
 				if (!y || 1 === y.tiersInfo.length || !k) return null;
 				const A = !!(null == F ? void 0 : F.freeCount),
-					z = I ? 8 : 50,
-					L = D ? N._("Powerups are unlocked in", null, {
+					z = D ? 8 : 50,
+					L = I ? N._("Powerups are unlocked in", null, {
 						hk: "fquP8"
 					}) : N._("Powerup to unlock perks for", null, {
 						hk: "3kTNGL"
@@ -1316,7 +1316,7 @@
 					})
 				}, i.a.createElement("div", {
 					className: O.a.container
-				}, I && i.a.createElement("div", {
+				}, D && i.a.createElement("div", {
 					className: O.a.titleGroup
 				}, i.a.createElement("div", {
 					className: O.a.powerupsIcon
@@ -1334,7 +1334,7 @@
 					hk: "JJNaN"
 				}) : N._("Become a Hero", null, {
 					hk: "3IZNw3"
-				}))), !I && i.a.createElement("div", {
+				}))), !D && i.a.createElement("div", {
 					className: O.a.oldTitleGroup
 				}, i.a.createElement("h2", {
 					className: O.a.title
@@ -1358,11 +1358,11 @@
 					supporters: j,
 					className: O.a.heroes,
 					maxSupporters: z,
-					isShortSupportersEnabled: I,
+					isShortSupportersEnabled: D,
 					onShowFullSupportersList: () => {
 						s(Object(h.o)()), r(Object(o.e)(t))
 					}
-				}), !(null == j ? void 0 : j.length) && I && i.a.createElement("div", {
+				}), !(null == j ? void 0 : j.length) && D && i.a.createElement("div", {
 					className: O.a.becomeFirstHero
 				}, i.a.createElement(d.a, {
 					displayName: N._("Become the first hero!", null, {
@@ -1372,7 +1372,7 @@
 					isNsfw: !!(null == w ? void 0 : w.isNSFW),
 					iconUrl: null == w ? void 0 : w.accountIcon,
 					textClassName: O.a.becomeFirstHeroLabel
-				}))), !I && i.a.createElement("div", {
+				}))), !D && i.a.createElement("div", {
 					className: O.a.oldGroup
 				}, i.a.createElement(p.q, {
 					priority: p.b.Primary,
@@ -1686,23 +1686,23 @@
 					}, e.children))
 				}
 			}
-			var D = N;
-			const I = e => {
+			var I = N;
+			const D = e => {
 				const t = e.url && Object(O.h)(O.f, e.url);
 				return t ? t.url : e.url
 			};
 			var S = e => e.menuItem.url ? s.a.createElement(v, {
-					href: I(e.menuItem),
+					href: D(e.menuItem),
 					isActive: !!e.isActive,
 					isTopBannerVariant: e.isTopBannerVariant
-				}, e.menuItem.text) : s.a.createElement(D, {
+				}, e.menuItem.text) : s.a.createElement(I, {
 					isActive: !!e.isActive,
 					isTopBannerVariant: e.isTopBannerVariant,
 					label: e.menuItem.text
 				}, e.menuItem.children && e.menuItem.children.map(e => s.a.createElement(y, {
-					key: `${e.text}-${I(e)}`,
+					key: `${e.text}-${D(e)}`,
 					role: "listitem",
-					href: I(e),
+					href: D(e),
 					target: "_blank",
 					rel: "noopener"
 				}, e.text))),
@@ -1717,7 +1717,7 @@
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function H({
+			function W({
 				subredditId: e
 			}) {
 				const t = Object(i.d)(),
@@ -1756,12 +1756,12 @@
 					hk: "1o89m4"
 				}))) : null
 			}
-			var W = r("./src/lib/constants/index.ts");
+			var H = r("./src/lib/constants/index.ts");
 			const {
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(c.t)(),
-				U = [W.Hb.SUBREDDIT, W.Hb.COMMENTS, W.Hb.COLLECTION_COMMENTS],
+				U = [H.Ib.SUBREDDIT, H.Ib.COMMENTS, H.Ib.COLLECTION_COMMENTS],
 				Z = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && U.indexOf(t.pageLayer.meta.name) > -1,
@@ -1837,7 +1837,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === W.Hb.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === H.Ib.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(v, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -1866,7 +1866,7 @@
 				subredditId: e.subredditId
 			}), s.a.createElement(oe, {
 				subredditId: e.subredditId
-			}), s.a.createElement(H, {
+			}), s.a.createElement(W, {
 				subredditId: e.subredditId
 			})), e.widget && s.a.createElement(s.a.Fragment, null, e.widget.showWiki && s.a.createElement(ae, {
 				homeUrl: e.homeUrl,
@@ -2005,7 +2005,7 @@
 				}),
 				O = Object(a.b)(F),
 				N = l.a.div("WidgetContent", k.a),
-				D = ({
+				I = ({
 					display: e,
 					isFlairFilter: t,
 					onMouseDown: r,
@@ -2021,7 +2021,7 @@
 					isFlairFilter: t,
 					forceSmallEmojis: !0
 				})));
-			class I extends i.a.Component {
+			class D extends i.a.Component {
 				constructor(e) {
 					super(e), this.flairListRef = i.a.createRef(), this.trackFlairWidgetClick = e => {
 						this.props.sendEvent(Object(x.f)(e))
@@ -2067,7 +2067,7 @@
 					} = this.props;
 					return i.a.createElement("ul", {
 						ref: this.flairListRef
-					}, e.map(e => i.a.createElement(D, {
+					}, e.map(e => i.a.createElement(I, {
 						key: e.templateId,
 						display: r.display,
 						flair: e,
@@ -2094,7 +2094,7 @@
 						subredditName: t,
 						widget: r
 					} = this.props;
-					return i.a.createElement("ul", null, i.a.createElement(D, {
+					return i.a.createElement("ul", null, i.a.createElement(I, {
 						key: e.templateId,
 						display: r.display,
 						flair: e,
@@ -2121,7 +2121,7 @@
 					}, i.a.createElement(N, null, a && this.renderSelectedFlairFilter(a), !a && this.renderFlairFilters(s), o && this.renderButton()))
 				}
 			}
-			t.a = C(O(Object(m.c)(I)))
+			t.a = C(O(Object(m.c)(D)))
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2341,9 +2341,9 @@
 				})))),
 				O = r("./node_modules/fbt/lib/FbtPublic.js"),
 				N = r("./src/lib/humanizeDate/index.ts"),
-				D = r("./src/reddit/controls/TextButton/index.tsx"),
-				I = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
-				S = r.n(I);
+				I = r("./src/reddit/controls/TextButton/index.tsx"),
+				D = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
+				S = r.n(D);
 			const P = 100,
 				T = {
 					isExpanded: !1
@@ -2354,8 +2354,8 @@
 				B = m.a.div("EventDate", S.a),
 				M = m.a.div("EventLocation", S.a),
 				R = m.a.div("EventDescription", S.a),
-				H = m.a.wrapped(D.a, "ToggleDescription", S.a);
-			class W extends s.a.Component {
+				W = m.a.wrapped(I.a, "ToggleDescription", S.a);
+			class H extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -2368,7 +2368,7 @@
 						props: e,
 						state: t
 					} = this;
-					return e.text.length > P ? s.a.createElement(R, null, t.isExpanded ? e.text : e.text.slice(0, P), s.a.createElement(H, {
+					return e.text.length > P ? s.a.createElement(R, null, t.isExpanded ? e.text : e.text.slice(0, P), s.a.createElement(W, {
 						onClick: this.toggleDescriptionView
 					}, t.isExpanded ? O.fbt._("read less", null, {
 						hk: "2KdNS6"
@@ -2393,7 +2393,7 @@
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
 				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(M, null, t.locationHtml ? s.a.createElement(A, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(W, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(H, {
 					text: t.description
 				})))),
 				V = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -2593,14 +2593,14 @@
 				Fe = r("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
 				Oe = r("./src/reddit/components/Widgets/TextArea/index.m.less"),
 				Ne = r.n(Oe);
-			const De = m.a.div("WidgetContent", Ne.a),
-				Ie = m.a.wrapped(o.a, "RawHTMLDisplay", Ne.a);
+			const Ie = m.a.div("WidgetContent", Ne.a),
+				De = m.a.wrapped(o.a, "RawHTMLDisplay", Ne.a);
 			var Se = e => s.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, s.a.createElement(De, null, s.a.createElement(Ie, {
+				}, s.a.createElement(Ie, null, s.a.createElement(De, {
 					html: e.widget.textHtml || ""
 				}))),
 				Pe = r("./src/reddit/components/Widgets/Base/index.tsx");
@@ -3412,4 +3412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.39be8d463604260c65fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7c4ccf8067674795e132.js.map

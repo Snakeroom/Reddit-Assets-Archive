@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.b08914921211f5d2b892.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.a14f5a4bf74aee01b539.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/graphql/operations/ProfileDownvoted.json": function(e) {
@@ -759,7 +759,7 @@
 					}, p.a.createElement(C.a, {
 						className: K.a.seeMorePostsText,
 						to: Object(u.a)(v, {
-							type: g.Tb.Posts
+							type: g.Ub.Posts
 						})
 					}, _._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -1154,4 +1154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.b08914921211f5d2b892.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.a14f5a4bf74aee01b539.js.map

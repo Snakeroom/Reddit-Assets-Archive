@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.e4203dd1033c231c528f.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.fe4c90ab3c919a91799d.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -29,7 +29,7 @@
 			})), s.d(t, "f", (function() {
 				return $
 			})), s.d(t, "o", (function() {
-				return M
+				return V
 			})), s.d(t, "p", (function() {
 				return q
 			})), s.d(t, "d", (function() {
@@ -41,9 +41,9 @@
 			})), s.d(t, "n", (function() {
 				return G
 			})), s.d(t, "c", (function() {
-				return Y
-			})), s.d(t, "k", (function() {
 				return W
+			})), s.d(t, "k", (function() {
+				return Y
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/config.ts"),
@@ -175,7 +175,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, v.a.upvoted), F = Object(b.a)(O.b, v.a.downvoted), K = Object(c.a)(k.j), $ = Object(c.a)(k.i), V = Object(c.a)(k.e), H = Object(c.a)(k.f), M = (Object(c.a)(k.c), Object(c.a)(k.d), ({
+				}, z = Object(b.a)(O.b, v.a.upvoted), F = Object(b.a)(O.b, v.a.downvoted), K = Object(c.a)(k.j), $ = Object(c.a)(k.i), H = Object(c.a)(k.e), M = Object(c.a)(k.f), V = (Object(c.a)(k.c), Object(c.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -191,7 +191,7 @@
 							commentsPageKey: t
 						}),
 						a = d.depth;
-					n(V({
+					n(H({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -200,7 +200,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(H({
+					s(M({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -216,14 +216,14 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o(V({
+					o(H({
 						commentId: d,
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && n(d, !0), Object(p.d)()
 				}, Q = Object(c.a)(k.r), J = e => t => t(Q({
 					draftKey: e
-				})), X = Object(c.a)(k.a), G = Object(c.a)(k.E), Y = Object(c.a)(k.b), W = Object(c.a)(k.u)
+				})), X = Object(c.a)(k.a), G = Object(c.a)(k.E), W = Object(c.a)(k.b), Y = Object(c.a)(k.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -361,7 +361,7 @@
 						commentId: e
 					});
 					if (!i) return;
-					const l = s === o.Vb.Snoozed,
+					const l = s === o.Wb.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -551,7 +551,7 @@
 					});
 					const f = await (async (e, t, s) => Object(r.a)(Object(c.a)(e, [d.a]), {
 						endpoint: Object(i.a)(`${e.apiUrl}/api/presence`),
-						method: o.fb.POST,
+						method: o.gb.POST,
 						data: {
 							user_fullnames: t.join(","),
 							subreddit_fullname: s || ""
@@ -641,7 +641,7 @@
 			class E extends o.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? i.Vb.None : i.Vb.Snoozed;
+						const e = this.props.isSnoozed ? i.Wb.None : i.Wb.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(j.l)(Object(O.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -832,42 +832,42 @@
 				m = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const p = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/save`),
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
 				}),
 				u = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/unsave`),
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
 				}),
 				b = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/lock`),
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
 				}),
 				f = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/unlock`),
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
 				}),
 				O = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/approve`),
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
 				}),
 				j = (e, t, s) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/remove`),
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t,
 						spam: s
@@ -875,21 +875,21 @@
 				}),
 				x = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
 				}),
 				h = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
 				}),
 				g = (e, t) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: `${e.apiUrl}/api/show_comment`,
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t
 					}
@@ -899,14 +899,14 @@
 					return c && (d = Object(a.a)(d)), Object(r.a)(e, {
 						data: s,
 						endpoint: d,
-						method: o.fb.POST,
+						method: o.gb.POST,
 						type: "json",
 						traceRequestName: "more_comments"
 					})
 				},
 				w = (e, t, s, n) => Object(r.a)(Object(c.a)(e, [d.a]), {
 					endpoint: Object(i.a)(`${e.apiUrl}/api/distinguish/${s}`),
-					method: o.fb.POST,
+					method: o.gb.POST,
 					data: {
 						id: t,
 						sticky: n
@@ -1088,4 +1088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.e4203dd1033c231c528f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.fe4c90ab3c919a91799d.js.map

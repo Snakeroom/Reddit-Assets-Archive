@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.54b7d4c6bf3becff8acb.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7c9e737317fb879d01e6.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -701,10 +701,10 @@
 				A = T.reduce((function(e, t) {
 					return e.concat([t + "-" + j, t + "-" + k])
 				}), []),
-				L = [].concat(T, [C]).reduce((function(e, t) {
+				D = [].concat(T, [C]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + j, t + "-" + k])
 				}), []),
-				D = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
+				L = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
 			function R(e) {
 				var t = new Map,
@@ -768,7 +768,7 @@
 								};
 								var o = function(e) {
 									var t = R(e);
-									return D.reduce((function(e, n) {
+									return L.reduce((function(e, n) {
 										return e.concat(t.filter((function(e) {
 											return e.phase === n
 										})))
@@ -1107,13 +1107,13 @@
 						strategy: "absolute",
 						placement: s
 					}),
-					L = K(Object.assign(Object.assign({}, S), A)),
-					D = m === N ? L : k,
+					D = K(Object.assign(Object.assign({}, S), A)),
+					L = m === N ? D : k,
 					R = {
-						top: j.top - D.top + _.top,
-						bottom: D.bottom - j.bottom + _.bottom,
-						left: j.left - D.left + _.left,
-						right: D.right - j.right + _.right
+						top: j.top - L.top + _.top,
+						bottom: L.bottom - j.bottom + _.bottom,
+						left: j.left - L.left + _.left,
+						right: L.right - j.right + _.right
 					},
 					M = e.modifiersData.offset;
 				if (m === N && M) {
@@ -1275,7 +1275,7 @@
 								r = e.name,
 								o = n.offset,
 								s = void 0 === o ? [0, 0] : o,
-								i = L.reduce((function(e, n) {
+								i = D.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
 										var r = W(e),
 											o = [S, y].indexOf(r) >= 0 ? -1 : 1,
@@ -1321,7 +1321,7 @@
 												i = n.padding,
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
-												d = void 0 === c ? L : c,
+												d = void 0 === c ? D : c,
 												l = V(r),
 												u = (l ? a ? A : A.filter((function(e) {
 													return V(e) === l
@@ -1347,13 +1347,13 @@
 											allowedAutoPlacements: b
 										}) : n)
 									}), []), v = t.rects.reference, k = t.rects.popper, w = new Map, P = !0, N = x[0], I = 0; I < x.length; I++) {
-									var D = x[I],
-										R = W(D),
-										M = V(D) === j,
+									var L = x[I],
+										R = W(L),
+										M = V(L) === j,
 										F = [y, O].indexOf(R) >= 0,
 										U = F ? "width" : "height",
 										B = re(t, {
-											placement: D,
+											placement: L,
 											boundary: l,
 											rootBoundary: u,
 											altBoundary: p,
@@ -1366,10 +1366,10 @@
 									if (s && G.push(B[R] <= 0), a && G.push(B[Y] <= 0, B[H] <= 0), G.every((function(e) {
 											return e
 										}))) {
-										N = D, P = !1;
+										N = L, P = !1;
 										break
 									}
-									w.set(D, G)
+									w.set(L, G)
 								}
 								if (P)
 									for (var z = function(e) {
@@ -1433,12 +1433,12 @@
 								};
 							if (w) {
 								if (s) {
-									var L = "y" === T ? y : S,
-										D = "y" === T ? O : g,
+									var D = "y" === T ? y : S,
+										L = "y" === T ? O : g,
 										R = "y" === T ? "height" : "width",
 										M = w[T],
-										F = w[T] + E[L],
-										U = w[T] - E[D],
+										F = w[T] + E[D],
+										U = w[T] - E[L],
 										B = m ? -N[R] / 2 : 0,
 										H = x === j ? P[R] : N[R],
 										G = x === j ? -N[R] : -P[R],
@@ -1453,8 +1453,8 @@
 											bottom: 0,
 											left: 0
 										},
-										Q = X[L],
-										J = X[D],
+										Q = X[D],
+										J = X[L],
 										Z = oe(0, P[R], q[R]),
 										K = C ? P[R] / 2 - B - Z - Q - I : H - Z - Q - I,
 										$ = C ? -P[R] / 2 + B + Z + J + I : G + Z + J + I,
@@ -1821,21 +1821,21 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/constants/index.ts");
-			const s = [o.ic, o.lb, o.y, o.M, o.gb, o.Lb],
+			const s = [o.jc, o.mb, o.y, o.N, o.hb, o.Mb],
 				i = {
-					[o.Lb]: e => r.fbt._({
+					[o.Mb]: e => r.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "3pTp9Z"
 					}),
-					[o.gb]: e => r.fbt._({
+					[o.hb]: e => r.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "2gB3sf"
 					}),
-					[o.M]: e => r.fbt._({
+					[o.N]: e => r.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
 					}, [r.fbt._plural(e, "number")], {
@@ -1847,13 +1847,13 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[o.lb]: e => r.fbt._({
+					[o.mb]: e => r.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[o.ic]: e => r.fbt._({
+					[o.jc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -1861,28 +1861,28 @@
 					})
 				},
 				a = {
-					[o.Lb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
+					[o.Mb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
-					[o.gb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[o.hb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "43tM5H"
 					}),
-					[o.M]: e => r.fbt._("{amount}h", [r.fbt._param("amount", String(e))], {
+					[o.N]: e => r.fbt._("{amount}h", [r.fbt._param("amount", String(e))], {
 						hk: "19NsxU"
 					}),
 					[o.y]: e => r.fbt._("{amount}d", [r.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[o.lb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[o.mb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.ic]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[o.jc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[o.lb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[o.mb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.ic]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[o.jc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -1891,12 +1891,12 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[o.ic]: "",
-						[o.lb]: "",
+						[o.jc]: "",
+						[o.mb]: "",
 						[o.y]: "",
-						[o.M]: "",
-						[o.gb]: "",
-						[o.Lb]: ""
+						[o.N]: "",
+						[o.hb]: "",
+						[o.Mb]: ""
 					};
 				let u = d - c;
 				if (u <= 0) return r.fbt._("a moment", null, {
@@ -2333,8 +2333,8 @@
 				N = n("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
 				I = n("./src/reddit/contexts/Post/index.tsx"),
 				A = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				L = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				D = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				D = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				L = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				R = n("./src/reddit/helpers/styles/mixins/index.tsx"),
 				M = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				F = n.n(M),
@@ -2391,7 +2391,7 @@
 						toggleCheckbox: le,
 						userIsOp: ue,
 						shouldShowGalleryTileOption: pe
-					} = this.props, me = oe ? void 0 : N, fe = this.props.crosspost || void 0, be = Object(D.a)(J), he = Object(A.a)(J), Ee = Object(L.a)(J), _e = Z && D.a, xe = !!ne.media && ne.media.type === k.o.RTJSON, ve = ue && xe, ye = a && !ce, Oe = !!ne.media && Object(k.G)(ne.media), ge = {
+					} = this.props, me = oe ? void 0 : N, fe = this.props.crosspost || void 0, be = Object(L.a)(J), he = Object(A.a)(J), Ee = Object(D.a)(J), _e = Z && L.a, xe = !!ne.media && ne.media.type === k.o.RTJSON, ve = ue && xe, ye = a && !ce, Oe = !!ne.media && Object(k.G)(ne.media), ge = {
 						flairStyleTemplate: me,
 						post: ne,
 						inSubredditOrProfile: a,
@@ -2700,7 +2700,7 @@
 					let m, f;
 					if (this.state.mounted || p === s.a.Live) m = function(e, t, n) {
 						const r = Object(s.e)(e, t),
-							o = new Date(e * a.Lb);
+							o = new Date(e * a.Mb);
 						let d;
 						return r === s.a.Live || n ? i.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -3593,8 +3593,8 @@
 						poll: t
 					}))
 				})),
-				L = n("./src/reddit/components/SEOTitle/index.tsx"),
-				D = n("./src/reddit/selectors/user.ts"),
+				D = n("./src/reddit/components/SEOTitle/index.tsx"),
+				L = n("./src/reddit/selectors/user.ts"),
 				R = n("./src/reddit/components/PostTitle/index.m.less"),
 				M = n.n(R),
 				F = n("./src/config.ts"),
@@ -3651,7 +3651,7 @@
 								theme: c
 							}).titleText
 						}
-					}, n ? s.a.createElement(L.b, {
+					}, n ? s.a.createElement(D.b, {
 						type: n
 					}, o) : o)
 				},
@@ -3683,7 +3683,7 @@
 					}) => Object(m.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: D.cb
+					shouldOpenPostInNewTab: L.cb
 				}),
 				X = e => {
 					const {
@@ -3736,7 +3736,7 @@
 					n && "string" == typeof o && (o = (e => {
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(o));
-					const i = e.isCommentsPage ? L.a.PostComments : L.a.PostItem;
+					const i = e.isCommentsPage ? D.a.PostComments : D.a.PostItem;
 					return s.a.createElement(H, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
@@ -4784,4 +4784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.54b7d4c6bf3becff8acb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.7c9e737317fb879d01e6.js.map

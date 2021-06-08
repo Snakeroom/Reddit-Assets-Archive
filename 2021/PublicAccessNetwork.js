@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.04650fd89e36bf8f2675.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b0d01d3e944d30bd34c3.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -730,7 +730,7 @@
 						commentId: e
 					});
 					if (!d) return;
-					const l = s === o.Vb.Snoozed,
+					const l = s === o.Wb.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -1020,8 +1020,8 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.Zb.WEEK.toUpperCase(),
-									sort: h.L.TOP,
+									range: h.ac.WEEK.toUpperCase(),
+									sort: h.M.TOP,
 									subredditName: r.name
 								},
 								o = {
@@ -1635,7 +1635,7 @@
 				B = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const F = (e, t) => Object(A.a)(Object(D.a)(e, [V.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
-					method: O.fb.POST,
+					method: O.gb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -1645,7 +1645,7 @@
 				}),
 				U = (e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 					endpoint: Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
-					method: O.fb.POST,
+					method: O.gb.POST,
 					type: "json",
 					data: t
 				});
@@ -1673,7 +1673,7 @@
 					t(Q());
 					const n = await ((e, t) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: O.fb.GET
+						method: O.gb.GET
 					}))(a(), o);
 					n.ok ? t(Z({
 						subredditId: e,
@@ -1686,7 +1686,7 @@
 					s(te());
 					const i = await ((e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
-						method: O.fb.POST,
+						method: O.gb.POST,
 						data: s
 					}))(n(), r, t);
 					if (i.ok) {
@@ -1713,7 +1713,7 @@
 					s(ne());
 					const i = await ((e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`,
-						method: O.fb.PUT,
+						method: O.gb.PUT,
 						data: {
 							message: s.message,
 							title: s.title
@@ -1735,7 +1735,7 @@
 					s(ce());
 					const i = await ((e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`,
-						method: O.fb.DELETE
+						method: O.gb.DELETE
 					}))(n(), r, t);
 					i.ok ? (s(le({
 						subredditId: e,
@@ -7012,4 +7012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.04650fd89e36bf8f2675.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b0d01d3e944d30bd34c3.js.map

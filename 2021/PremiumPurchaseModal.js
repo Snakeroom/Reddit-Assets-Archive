@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.7ffaac226e8640baa94f.js
-// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3b0a47e1c2f4b94e1a80.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1275,7 +1275,7 @@
 					apiContext: n
 				}) => {
 					const o = Object(m.a)(r()),
-						s = (null == o ? void 0 : o.pennies) || i.tb,
+						s = (null == o ? void 0 : o.pennies) || i.ub,
 						l = Object(p.c)(p.a.GoldPayment);
 					t(Object(d.stripeTokenPending)());
 					const f = await t(Object(d.validateAndCreateStripeToken)(e));
@@ -1864,8 +1864,8 @@
 					}) : E.fbt._("month", null, {
 						hk: "1l20Gw"
 					}),
-					o = e.selectedPayment === l.Cb,
-					s = e.selectedPayment === l.Bb,
+					o = e.selectedPayment === l.Db,
+					s = e.selectedPayment === l.Cb,
 					c = o ? L : G;
 				return a.a.createElement(R.StripeProvider, {
 					apiKey: i.a.stripe.apiKey
@@ -1976,9 +1976,9 @@
 					premiumProductOffer: _,
 					premiumPrice: E
 				}) => {
-					let O = l.tb,
+					let O = l.ub,
 						x = !1;
-					_ && E ? (O = E, x = P === j.b.Year) : r && (O = r ? r.pennies : l.tb, x = !!r && r.frequency === u.c.Yearly);
+					_ && E ? (O = E, x = P === j.b.Year) : r && (O = r ? r.pennies : l.ub, x = !!r && r.frequency === u.c.Yearly);
 					const w = Object(n.useCallback)(e => {
 						if (27 === e.keyCode) return m()
 					}, [m]);
@@ -2264,7 +2264,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(i.a)(l);
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: u,
 					data: d
 				}).then(c.c)
@@ -2280,7 +2280,7 @@
 					correlation_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(c.c)
@@ -2298,7 +2298,7 @@
 					thing_id: i
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(c.c)
@@ -2318,7 +2318,7 @@
 					correlation_id: l
 				};
 				return Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(c.c)
@@ -2346,7 +2346,7 @@
 					thing_id: f
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(c.c)
@@ -2368,7 +2368,7 @@
 					thing_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.c)
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.7ffaac226e8640baa94f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3b0a47e1c2f4b94e1a80.js.map

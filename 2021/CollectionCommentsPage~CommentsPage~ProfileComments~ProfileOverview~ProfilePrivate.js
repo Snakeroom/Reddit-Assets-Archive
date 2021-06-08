@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.568f32dee416dae19776.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9f084bf5b0efdcef431a.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -564,7 +564,7 @@
 						commentId: e
 					});
 					if (!d) return;
-					const l = n === s.Vb.Snoozed,
+					const l = n === s.Wb.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -2218,7 +2218,7 @@
 					let p, b;
 					if (this.state.mounted || u === r.a.Live) p = function(e, t, n) {
 						const o = Object(r.e)(e, t),
-							s = new Date(e * a.Lb);
+							s = new Date(e * a.Mb);
 						let c;
 						return o === r.a.Live || n ? i.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -3748,4 +3748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.568f32dee416dae19776.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9f084bf5b0efdcef431a.js.map

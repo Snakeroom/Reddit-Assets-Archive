@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c1c08595a7366e35160e.js
-// Retrieved at 6/2/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.224898ad0eaf3abfcef9.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, n) {
@@ -824,9 +824,9 @@
 			})), n.d(t, "a", (function() {
 				return q
 			})), n.d(t, "g", (function() {
-				return F
-			})), n.d(t, "h", (function() {
 				return D
+			})), n.d(t, "h", (function() {
+				return F
 			})), n.d(t, "i", (function() {
 				return U
 			}));
@@ -931,12 +931,12 @@
 							if (!a.data.confirmEconPayment.ok || a.data.confirmEconPayment.payment.status !== w.a.Paid) return void f()
 						} else if (m && b.status !== w.a.Paid) return void f();
 						const E = Object(v.j)(d());
-						E && (P && s ? c(F({
+						E && (P && s ? c(D({
 							subredditId: s,
 							powerupsCount: a,
 							user: E,
 							isAnonymous: n
-						})) : h && c(D({
+						})) : h && c(F({
 							user: E
 						})))
 					} catch (M) {
@@ -1000,12 +1000,12 @@
 									token: e.providerExecution.billingAgreementToken,
 									url: e.providerExecution.billingAgreementApprovalUrl
 								};
-								if ("PAID" === s && r) return a ? o(F({
+								if ("PAID" === s && r) return a ? o(D({
 									subredditId: a,
 									powerupsCount: n,
 									user: r,
 									isAnonymous: t
-								})) : f && o(D({
+								})) : f && o(F({
 									user: r
 								})), null
 							}
@@ -1100,12 +1100,12 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, B = Object(p.a)(h.R), F = e => async (t, n) => {
+				}, B = Object(p.a)(h.R), D = e => async (t, n) => {
 					t(B(e)), t(Object(P.i)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(C.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(C.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, D = Object(p.a)(h.V), U = Object(p.a)(h.Z)
+				}, F = Object(p.a)(h.V), U = Object(p.a)(h.Z)
 		},
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
 			"use strict";
@@ -1586,9 +1586,9 @@
 				}))),
 				q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = n("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsPremiumButton/index.m.less"),
-				F = n.n(B);
+				D = n.n(B);
 			const {
-				fbt: D
+				fbt: F
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = Object(s.c)({
 				isAnonymous: w.c,
 				isPending: w.b
@@ -1604,12 +1604,12 @@
 						onClick: () => {
 							i(Object(v.f)(1)), i(Object(v.g)(s, 1, n))
 						},
-						className: Object(l.a)(t, F.a.button),
+						className: Object(l.a)(t, D.a.button),
 						disabled: r
 					}, r ? a.a.createElement(q.a, {
-						className: F.a.loadingIcon,
+						className: D.a.loadingIcon,
 						sizePx: W
-					}) : D._("Apply Your Powerup", null, {
+					}) : F._("Apply Your Powerup", null, {
 						hk: "1PoAEc"
 					}))
 				})),
@@ -1779,7 +1779,7 @@
 						stripeErrorMessage: u,
 						subredditId: p,
 						userPowerupsData: m
-					} = e, C = Object(o.d)(), [w, j] = Object(r.useState)(b.Cb);
+					} = e, C = Object(o.d)(), [w, j] = Object(r.useState)(b.Db);
 					Object(r.useEffect)(() => {
 						C(Object(E.d)()), C(Object(P.selectPaymentMethod)(w))
 					}, []);
@@ -1826,18 +1826,18 @@
 						onPaymentSelected: e => {
 							j(e), C(Object(P.selectPaymentMethod)(e))
 						}
-					}), w === b.Bb && u && a.a.createElement("div", {
+					}), w === b.Cb && u && a.a.createElement("div", {
 						className: ie.a.errorMessage
-					}, u), w === b.Cb && i && a.a.createElement("div", {
+					}, u), w === b.Db && i && a.a.createElement("div", {
 						className: ie.a.errorMessage
-					}, i), w === b.Bb && a.a.createElement(N.a, {
+					}, i), w === b.Cb && a.a.createElement(N.a, {
 						nightmode: n,
 						className: ie.a.stripeForm,
 						shouldDeleteCardWithGql: !0
-					}), w === b.Cb && a.a.createElement(A, {
+					}), w === b.Db && a.a.createElement(A, {
 						className: ie.a.button,
 						subredditId: p
-					}), w === b.Bb && a.a.createElement(oe, {
+					}), w === b.Cb && a.a.createElement(oe, {
 						className: ie.a.button,
 						subredditId: p
 					}), a.a.createElement("p", {
@@ -2641,4 +2641,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c1c08595a7366e35160e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.224898ad0eaf3abfcef9.js.map

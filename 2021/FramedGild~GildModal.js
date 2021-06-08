@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7285e43001a048475276.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e2b702120e575b2200cd.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4336,7 +4336,7 @@
 					l = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(i.a)(l);
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: u,
 					data: c
 				}).then(d.c)
@@ -4352,7 +4352,7 @@
 					correlation_id: i
 				};
 				return Object(r.a)(Object(a.a)(e, [o.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: c
 				}).then(d.c)
@@ -4370,7 +4370,7 @@
 					thing_id: i
 				};
 				return Object(r.a)(Object(a.a)(e, [o.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(d.c)
@@ -4390,7 +4390,7 @@
 					correlation_id: l
 				};
 				return Object(r.a)(Object(a.a)(e, [o.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(d.c)
@@ -4418,7 +4418,7 @@
 					thing_id: h
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: b
 				}).then(d.c)
@@ -4440,7 +4440,7 @@
 					thing_id: u
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: n.fb.POST,
+					method: n.gb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(d.c)
@@ -5292,4 +5292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7285e43001a048475276.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e2b702120e575b2200cd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.27e583e9a1ef8752bed6.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.6c5367d76fe2f6a763be.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -800,8 +800,8 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.Zb.WEEK.toUpperCase(),
-									sort: h.L.TOP,
+									range: h.ac.WEEK.toUpperCase(),
+									sort: h.M.TOP,
 									subredditName: i.name
 								},
 								n = {
@@ -1264,7 +1264,7 @@
 			}) => {
 				const i = await (async (e, t, s) => Object(g.a)(Object(f.a)(e, [C.a]), {
 						endpoint: `${e.apiUrl}/api/set_suggested_sort/`,
-						method: c.fb.POST,
+						method: c.gb.POST,
 						data: {
 							api_type: "json",
 							id: t,
@@ -5875,7 +5875,7 @@
 					}, m.a.createElement(P.a, {
 						className: B.a.seeMorePostsText,
 						to: Object(p.a)(C, {
-							type: b.Tb.Posts
+							type: b.Ub.Posts
 						})
 					}, D._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -6120,13 +6120,13 @@
 				}),
 				q = Object(d.b)(K, e => ({
 					loadMorePosts: t => e(Object(h.r)({
-						sort: l.S.HOT,
+						sort: l.T.HOT,
 						subredditName: t
 					}))
 				}));
 			class G extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.S.TOP, t, e, l.Zb.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.T.TOP, t, e, l.ac.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(O.c)("recommended_footer"))
 					}
 				}
@@ -6137,8 +6137,8 @@
 						post: s,
 						subredditOrProfile: o
 					} = this.props;
-					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.S.TOP, {
-						t: l.Zb.WEEK
+					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.T.TOP, {
+						t: l.ac.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -7414,7 +7414,7 @@
 							this.props.isOverlay || Object(E.d)(E.c.CommentsPage, o)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						v.Gb.includes(e) && Object(Ke.a)(e)
+						v.Hb.includes(e) && Object(Ke.a)(e)
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -8161,4 +8161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.27e583e9a1ef8752bed6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6c5367d76fe2f6a763be.js.map

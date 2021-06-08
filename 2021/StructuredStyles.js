@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.91440074e8c73104ee2c.js
-// Retrieved at 6/2/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.c9a7af23df790a5810eb.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -526,7 +526,7 @@
 					const u = await ((e, t) => Object(i.a)(Object(l.a)(e, [o.a]), {
 						data: t,
 						endpoint: `${e.apiUrl}/api/crosspostable_subreddits.json`,
-						method: s.fb.GET
+						method: s.gb.GET
 					}))(n(), {
 						sr_detail: !1
 					});
@@ -9099,4 +9099,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.91440074e8c73104ee2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.c9a7af23df790a5810eb.js.map

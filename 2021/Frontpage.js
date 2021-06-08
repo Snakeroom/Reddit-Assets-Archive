@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ab32291cc8447168ee69.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.df86f049efe024751189.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -374,7 +374,7 @@
 						l = r.listings.postOrder.api.error[c],
 						u = r.listings.postOrder.api.pending[c],
 						m = R.x in e.queryParams && e.queryParams[R.x].toUpperCase() || "",
-						b = m in p.Zb && p.Zb[m];
+						b = m in p.ac && p.ac[m];
 					if (u || d && !l && !t) return void(d && (s(F.l({
 						title: I.c()
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -427,7 +427,7 @@
 						b = Object(X.a)(B.a, u, m),
 						h = r.listings.postOrder.loadMore[b],
 						g = m[R.x] ? m[R.x].toUpperCase() : "",
-						f = g in p.Zb && p.Zb[g];
+						f = g in p.ac && p.ac[g];
 					if (h) {
 						const e = r.listings.postOrder.api.pending[b],
 							s = r.listings.postOrder.fetchedTokens,
@@ -494,7 +494,7 @@
 						i = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						o = Object(X.a)(B.a, a, i),
 						c = i[R.x] ? i[R.x].toUpperCase() : "",
-						d = c in p.Zb && p.Zb[c],
+						d = c in p.ac && p.ac[c],
 						l = Object(M.a)(n),
 						u = Object(M.b)(l);
 					await t(le(o, {
@@ -1005,14 +1005,14 @@
 				X = s("./src/reddit/constants/headers.ts");
 			const Y = e => Object(J.a)(Object(Z.a)(e, [X.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: q.fb.GET,
+				method: q.gb.GET,
 				type: "json"
 			});
 			var $ = s("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = s.n($);
 			const {
 				fbt: te
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * q.gb, re = "SubredditAdoption";
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * q.hb, re = "SubredditAdoption";
 			class ae extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -4407,7 +4407,7 @@
 				sort: n
 			}, r, a, i, o, c) => {
 				const d = P.x in s && s[P.x].toUpperCase(),
-					l = "string" == typeof d && d in V.Zb ? V.Zb[d] : V.ac,
+					l = "string" == typeof d && d in V.ac ? V.ac[d] : V.bc,
 					u = Object(p.a)(K.a, n, s),
 					m = e || V.x.Everywhere,
 					b = t || m,
@@ -4588,7 +4588,7 @@
 					subreddit: t
 				}), d.k, (e, {
 					sort: t
-				}) => t, (e, t, s, n, a, i) => i !== r.S.AWARDED && (!!e && (!a.isPermanentlyCanceled && (!t && (!!n && n.show_discovery_unit))))),
+				}) => t, (e, t, s, n, a, i) => i !== r.T.AWARDED && (!!e && (!a.isPermanentlyCanceled && (!t && (!!n && n.show_discovery_unit))))),
 				u = Object(n.a)((e, {
 					listingName: t
 				}) => t, (e, {
@@ -4876,4 +4876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ab32291cc8447168ee69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.df86f049efe024751189.js.map

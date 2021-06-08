@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.aaee7cd8249b49420381.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ca6764d4358457840b09.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -2027,7 +2027,7 @@
 				}) => {
 					const o = t ? [{
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_PRIVATE && r === k.a.Saved,
+						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Saved,
 						key: "profile.mainmenu.saved",
 						text: s.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -2036,7 +2036,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_PRIVATE && r === k.a.Hidden,
+						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: s.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -2045,7 +2045,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_PRIVATE && r === k.a.Upvoted,
+						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: s.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -2054,7 +2054,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_PRIVATE && r === k.a.Downvoted,
+						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: s.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -2064,7 +2064,7 @@
 					}] : [];
 					t ? (o.push({
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_PRIVATE && r === k.a.ReceivedGildings,
+						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -2073,7 +2073,7 @@
 						position: I.MENU
 					}), o.push({
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_PRIVATE && r === k.a.GivenGildings,
+						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -2092,7 +2092,7 @@
 					});
 					const a = i ? [{
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_SNOOBUILDER,
+						isActive: n === b.Ib.PROFILE_SNOOBUILDER,
 						key: "profile.mainmenu.snoobuilder",
 						text: s.fbt._("Snoobuilder", null, {
 							hk: "3SSKff"
@@ -2102,7 +2102,7 @@
 					}] : [];
 					return [{
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_OVERVIEW,
+						isActive: n === b.Ib.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: s.fbt._("Overview", null, {
 							hk: "2IBbqy"
@@ -2111,7 +2111,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_POSTS,
+						isActive: n === b.Ib.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: s.fbt._("Posts", null, {
 							hk: "a1BoF"
@@ -2120,7 +2120,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Hb.PROFILE_COMMENTS,
+						isActive: n === b.Ib.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: s.fbt._("Comments", null, {
 							hk: "2VwjOc"
@@ -3288,7 +3288,7 @@
 				}
 			}
 			b.defaultProps = {
-				minimizedLength: c.Mb
+				minimizedLength: c.Nb
 			}, t.a = b
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -5393,4 +5393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.aaee7cd8249b49420381.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ca6764d4358457840b09.js.map

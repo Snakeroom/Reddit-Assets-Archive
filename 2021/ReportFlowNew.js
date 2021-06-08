@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.48db99a1cfe9e1fbf0cb.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.d8034307d5c7d2e0b7e9.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -131,7 +131,7 @@
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "g", (function() {
-				return g
+				return j
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -178,7 +178,7 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), g = e => async (t, o, {
+				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), g = Object(s.a)(_), R = Object(s.a)(w), j = e => async (t, o, {
 					apiContext: s
 				}) => {
 					const l = o(),
@@ -187,7 +187,7 @@
 						m = l.user.blocked.data.filter(t => t.name === e)[0];
 					u && (t(C({
 						name: e
-					})), (await Object(d.c)(s(), u, e)).ok ? (t(R({
+					})), (await Object(d.c)(s(), u, e)).ok ? (t(g({
 						name: e
 					})), m && m.id && t(Object(n.h)(m.id)), t(i.f({
 						kind: a.b.SuccessCommunity,
@@ -199,7 +199,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(j({
+					})), t(R({
 						name: e
 					}))))
 				}
@@ -288,10 +288,10 @@
 				...w,
 				variables: t
 			});
-			var R = o("./src/reddit/endpoints/messages/index.ts"),
-				j = o("./src/graphql/operations/ReportPost.json");
-			const g = (e, t) => Object(O.a)(e, {
-				...j,
+			var g = o("./src/reddit/endpoints/messages/index.ts"),
+				R = o("./src/graphql/operations/ReportPost.json");
+			const j = (e, t) => Object(O.a)(e, {
+				...R,
 				variables: t
 			});
 			var x = o("./src/graphql/operations/ReportForm.json");
@@ -473,7 +473,7 @@
 									postId: a,
 									...m
 								};
-								b = () => g(o(), {
+								b = () => j(o(), {
 									input: e
 								});
 								break;
@@ -491,7 +491,7 @@
 									messageId: a,
 									...m
 								};
-								b = () => Object(R.a)(o(), {
+								b = () => Object(g.a)(o(), {
 									input: r
 								});
 								break;
@@ -633,7 +633,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), l = async (e, t, o) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: o,
@@ -641,22 +641,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), p = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), u = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), m = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				endpoint: Object(a.a)(`${r.a.oauthUrl}/user/${t}/about`),
-				method: s.fb.GET,
+				method: s.gb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.48db99a1cfe9e1fbf0cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.d8034307d5c7d2e0b7e9.js.map

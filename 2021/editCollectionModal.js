@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.052b6eb812cbb2a2a09c.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.fa20cdb6ec765205bb22.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -514,7 +514,7 @@
 					let p, h;
 					if (this.state.mounted || m === o.a.Live) p = function(e, t, n) {
 						const s = Object(o.e)(e, t),
-							a = new Date(e * i.Lb);
+							a = new Date(e * i.Mb);
 						let l;
 						return s === o.a.Live || n ? r.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -998,4 +998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.052b6eb812cbb2a2a09c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.fa20cdb6ec765205bb22.js.map

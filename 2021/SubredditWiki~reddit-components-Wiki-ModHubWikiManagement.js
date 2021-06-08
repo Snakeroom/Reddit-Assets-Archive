@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e9a8a64a51712e586a3b.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.2693fa05d4b6b5fb9396.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -1354,7 +1354,7 @@
 				k = i("./src/reddit/constants/headers.ts");
 			var v = e => Object(g.a)(Object(f.a)(e.context, [k.a]), {
 					endpoint: `${e.context.apiUrl}/r/${e.subredditName}/api/wiki/edit`,
-					method: b.fb.POST,
+					method: b.gb.POST,
 					data: {
 						content: e.pageContent,
 						page: e.wikiPageName,
@@ -2158,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e9a8a64a51712e586a3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.2693fa05d4b6b5fb9396.js.map

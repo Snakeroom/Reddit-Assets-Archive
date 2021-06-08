@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.a11756cfbcd01d9e21e7.js
-// Retrieved at 6/8/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.5164fa39ff8685500ddd.js
+// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -442,7 +442,7 @@
 					if (!t().user) return;
 					const o = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/sitewide_rules.json`,
-						method: r.fb.GET
+						method: r.gb.GET
 					}))(n());
 					if (o.ok) {
 						const t = o.body,
@@ -455,7 +455,7 @@
 					if (!t().user) return;
 					const o = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/livestream_rules.json`,
-						method: r.fb.GET
+						method: r.gb.GET
 					}))(n());
 					if (o.ok) {
 						const t = o.body,
@@ -2463,7 +2463,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), d = async (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: n,
@@ -2471,22 +2471,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), u = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), p = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.fb.POST
+				method: s.gb.POST
 			}), m = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				endpoint: Object(l.a)(`${o.a.oauthUrl}/user/${t}/about`),
-				method: s.fb.GET,
+				method: s.gb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -2858,4 +2858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.a11756cfbcd01d9e21e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.5164fa39ff8685500ddd.js.map
