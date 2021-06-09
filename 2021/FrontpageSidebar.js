@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.29fea8ff84813a9ba3e6.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.08df377f164109085e3f.js
+// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -705,10 +705,11 @@
 				et = n("./src/reddit/selectors/seo/linksModule.ts"),
 				tt = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
-			var nt = n("./src/reddit/helpers/createBannerProperties/index.ts");
-			const st = "c1020",
-				at = "videos",
-				rt = Object(m.c)({
+			var nt = n("./src/reddit/helpers/createBannerProperties/index.ts"),
+				st = n("./src/reddit/selectors/meta.ts");
+			const at = "c1020",
+				rt = "videos",
+				it = Object(m.c)({
 					isMod: Ye.L,
 					isLoggedIn: Ye.J,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
@@ -722,10 +723,10 @@
 					},
 					bffsLeaderboardVariant: Xe,
 					inRpanTopVideoEntrypointExperiment: ze.e,
-					rankings: e => Object(Ce.P)(e, st),
+					rankings: e => Object(Ce.P)(e, at),
 					shouldShowTopicsWidget: e => {
 						const t = Object(ze.e)(e),
-							n = !!Object(Ce.P)(e, st);
+							n = !!Object(Ce.P)(e, at);
 						return (!t || !n) && (!Object($e.b)(e) && function(e) {
 							return Object(He.c)(e, {
 								experimentEligibilitySelector: Ye.K,
@@ -733,12 +734,13 @@
 							}) === Ge.Ob
 						}(e))
 					},
-					isNavbarLikeMwebEnabled: u.a
+					isNavbarLikeMwebEnabled: u.a,
+					locale: st.i
 				}),
-				it = e => !((e.inRpanTopVideoEntrypointExperiment ? !e.rankings : !e.trendingSubredditIds.length) || e.currentUser && !e.currentUser.showTrending || e.isUISimplificationAllItemsVariant || e.shouldShowTopicsWidget),
-				ot = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
-				dt = e => !(e.currentUser && (!e.currentUser || e.currentUser.isGold)),
-				ct = e => {
+				ot = e => !((e.inRpanTopVideoEntrypointExperiment ? !e.rankings : !e.trendingSubredditIds.length) || e.currentUser && !e.currentUser.showTrending || e.isUISimplificationAllItemsVariant || e.shouldShowTopicsWidget || !e.locale.startsWith("en")),
+				dt = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
+				ct = e => !(e.currentUser && (!e.currentUser || e.currentUser.isGold)),
+				lt = e => {
 					const {
 						bffsLeaderboardVariant: t,
 						isInBFFSLeaderboardExperiment: n,
@@ -754,7 +756,7 @@
 						categories: l
 					}
 				};
-			class lt extends c.a.Component {
+			class ut extends c.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = async () => {
 						this.setState({
@@ -787,7 +789,7 @@
 					const {
 						category: t,
 						categories: n
-					} = ct(e);
+					} = lt(e);
 					!e.rankings && e.inRpanTopVideoEntrypointExperiment && e.fetchTopSubreddits(), this.state = {
 						isMounted: !1,
 						category: t,
@@ -828,7 +830,7 @@
 						position: nt.a.FIRST,
 						sizes: U.h,
 						placementIndex: e++
-					}), dt(this.props) && c.a.createElement(v, null), it(this.props) && c.a.createElement(_.a, null, c.a.createElement(Te, {
+					}), ct(this.props) && c.a.createElement(v, null), ot(this.props) && c.a.createElement(_.a, null, c.a.createElement(Te, {
 						getClickEventFactory: Ve,
 						getSubscribeEventFactoryHandler: Ke,
 						subredditIds: l && k ? k : o,
@@ -839,7 +841,7 @@
 						})
 					})), u && c.a.createElement(_.a, null, c.a.createElement(We, null)), a && c.a.createElement(_.a, null, c.a.createElement(g.a, {
 						listingName: i
-					})), ot(this.props) && c.a.createElement(Ne, null), n && f && c.a.createElement(_.a, null, c.a.createElement(B, {
+					})), dt(this.props) && c.a.createElement(Ne, null), n && f && c.a.createElement(_.a, null, c.a.createElement(B, {
 						links: n
 					})), c.a.createElement(R.a, {
 						adComponent: c.a.createElement(L.a, {
@@ -852,10 +854,10 @@
 					}, a && c.a.createElement(ie, null)))
 				}
 			}
-			const ut = Object(l.b)(rt, e => ({
+			const mt = Object(l.b)(it, e => ({
 				fetchTopSubreddits: () => {
 					const t = {
-							categoryId: st,
+							categoryId: at,
 							filter: {
 								includeUnrated: !1,
 								isBlacklistedSubredditsExcluded: !0,
@@ -865,12 +867,12 @@
 							},
 							isOnlyModIncluded: !1
 						},
-						n = Object(tt.d)(st, at);
+						n = Object(tt.d)(at, rt);
 					e(Object(p.a)(t, n))
 				},
 				subredditAboutRequested: t => e(Object(b.u)(t))
 			}));
-			t.default = ut(lt)
+			t.default = mt(ut)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2078,4 +2080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.29fea8ff84813a9ba3e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.08df377f164109085e3f.js.map

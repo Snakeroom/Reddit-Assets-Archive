@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.be452340ecd561057ed2.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.19337bc71fcc25a379c0.js
+// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -3972,6 +3972,118 @@
 				C = "STRUCTURED_STYLES__USERFLAIR_REORDERTEMPLATES_FAILED",
 				y = "USERFLAIR_FETCH_SUCCESS"
 		},
+		"./src/reddit/components/CollapseIntoOverflow/index.m.less": function(e, t, n) {
+			e.exports = {
+				hidden: "_2x_bJPl7Q970NCRxOS36QB",
+				innerWrapper: "_3oLr47tuKGv2mNpavCZ2X0",
+				outerWrapper: "_1wi_3uF8fUynqe5reIop-G",
+				overflowMenu: "_2aOuodBenLHlceR3j0AlIM",
+				overflowMenuWrapper: "_3nQ7w1VIzZvzFawddOYgBC",
+				row: "_2IirhjIkZ7hgWGtpr087xZ",
+				postWrap: "WaTxGJXojt1RbZOH3q6eC"
+			}
+		},
+		"./src/reddit/components/CollapseIntoOverflow/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return b
+			}));
+			var o = n("./src/lib/fastdom/index.ts"),
+				r = n("./node_modules/react/index.js"),
+				s = n.n(r),
+				i = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				c = n("./src/reddit/helpers/richTextEditor/index.ts"),
+				d = n("./src/reddit/components/CollapseIntoOverflow/index.m.less"),
+				l = n.n(d);
+			const u = 33,
+				p = e => e.preventDefault(),
+				m = (e, t) => `${e===c.a.Post?"Post":"Comment"}--Overflow-Dropdown__${t}`,
+				h = e => e.reduce((e, t) => (Array.isArray(t) ? e += t.length : t && e++, e), 0);
+			class b extends s.a.Component {
+				constructor(e) {
+					super(e), this.breakpoints = [], this.updateCurrentBreakpoint = () => {
+						o.a.read(() => {
+							if (!this.container) return;
+							const {
+								indexOfCurrentBreakpoint: e,
+								totalNumCollapsibleItems: t
+							} = this.state, n = this.container.clientWidth;
+							let r = this.breakpoints.findIndex((e, o) => {
+								const r = o + 1 < t - 1,
+									s = this.breakpoints[o + 1] + (r ? u : 0);
+								return n < s
+							});
+							r < 0 && (r = t - 1), r !== e && o.a.write(() => {
+								this.setState({
+									indexOfCurrentBreakpoint: r,
+									shouldShowOverflow: r < t - 1
+								})
+							})
+						})
+					};
+					const t = Array.isArray(e.children) ? h(e.children) : 1;
+					this.state = {
+						indexOfCurrentBreakpoint: t - 1,
+						shouldShowOverflow: !1,
+						totalNumCollapsibleItems: t
+					}
+				}
+				componentDidMount() {
+					window.addEventListener("resize", this.updateCurrentBreakpoint)
+				}
+				componentWillUnmount() {
+					window.removeEventListener("resize", this.updateCurrentBreakpoint)
+				}
+				registerBreakpoint(e, t) {
+					this.breakpoints[t] = 0, o.a.read(() => {
+						if (e && e.clientWidth) {
+							const n = e.clientWidth;
+							this.breakpoints[t] = 0 === t ? n : this.breakpoints[t - 1] + n, this.breakpoints[this.state.totalNumCollapsibleItems - 1] && this.updateCurrentBreakpoint()
+						}
+					})
+				}
+				render() {
+					const {
+						children: e,
+						className: t,
+						oveflowMenuDropdownId: n,
+						onOverflowMenuClick: o,
+						renderOverflowMenuTooltip: r,
+						editorType: d
+					} = this.props, {
+						indexOfCurrentBreakpoint: u,
+						shouldShowOverflow: h
+					} = this.state, b = s.a.Children.toArray(e).filter(Boolean);
+					return s.a.createElement("div", {
+						className: Object(i.a)(l.a.outerWrapper, t),
+						ref: e => this.container = e
+					}, s.a.createElement("div", {
+						className: l.a.innerWrapper
+					}, b.map((e, t) => s.a.createElement("span", {
+						className: t > u ? l.a.hidden : void 0,
+						key: t,
+						ref: e => this.registerBreakpoint(e, t)
+					}, e)), h && s.a.createElement("div", {
+						className: l.a.overflowMenuWrapper,
+						key: "overflowMenuWrapper"
+					}, r && r(), s.a.createElement(a.b, {
+						className: l.a.overflowMenu,
+						dropdownId: m(d, n),
+						isFixed: !1,
+						handleMouseDown: p,
+						onClick: o
+					}, s.a.createElement("div", {
+						className: Object(i.a)(l.a.row, {
+							[l.a.postWrap]: d === c.a.Post
+						})
+					}, b.map((e, t) => s.a.createElement("span", {
+						className: t <= u ? l.a.hidden : void 0,
+						key: t
+					}, e)))))))
+				}
+			}
+		},
 		"./src/reddit/components/CommentCreation/ExpandingFormDiv.m.less": function(e, t, n) {
 			e.exports = {
 				breakout: "_1VBLErIxAjOke05q8yLOyf"
@@ -6230,11 +6342,12 @@
 				saveDraftButtonLayout: "_2qdAvPbBMsK4TpwNnVe-pj",
 				Container: "_1d1--0DMy_jAIxCCoYMo1k",
 				container: "_1d1--0DMy_jAIxCCoYMo1k",
+				Divider: "_3DzaxETs3eHqVBAuiSTECq",
+				divider: "_3DzaxETs3eHqVBAuiSTECq",
 				ButtonsAndErrors: "_2DHDj0dbS1TkKD3fMqSbHy",
 				buttonsAndErrors: "_2DHDj0dbS1TkKD3fMqSbHy",
 				ButtonRow: "_2RmKGBRP9puAMQITZ7HMaB",
 				buttonRow: "_2RmKGBRP9puAMQITZ7HMaB",
-				autoWidth: "_2lg9-dlsll34oz__8Kmxk7",
 				errorMessages: "_2kLLxn1y9vaTeT0OAc-Ikc",
 				PostLoadingIcon: "_2QZRXSFrX2qcSjZIV5mRzK",
 				postLoadingIcon: "_2QZRXSFrX2qcSjZIV5mRzK",
@@ -9229,33 +9342,38 @@
 		},
 		"./src/reddit/components/RichTextEditor/Toolbar/index.m.less": function(e, t, n) {
 			e.exports = {
-				toolbarContent: "_2vR2-7URvDAFSwQjhcvJ7m",
+				ToolbarWrapper: "_2w8adx4kIBGPEESCyEmToa",
+				toolbarWrapper: "_2w8adx4kIBGPEESCyEmToa",
 				isSticky: "r7zyyy152ZTdiHhea0cIj",
 				tooltip: "dMXy0l6Saub8-fPDkQvGC",
 				SectionSpacer: "_2voJAi1L0g2QbtAFDHSOCK",
 				sectionSpacer: "_2voJAi1L0g2QbtAFDHSOCK",
-				Spacer: "uoedn0efWwCxoQUIxsJY3",
-				spacer: "uoedn0efWwCxoQUIxsJY3"
+				CollapseIntoOverflow: "_2Sw_-OGBZ8HN7tA8CP2qjP",
+				collapseIntoOverflow: "_2Sw_-OGBZ8HN7tA8CP2qjP",
+				MarkdownButtonWrapper: "-CJZhr1W053faqFXFYgXO",
+				markdownButtonWrapper: "-CJZhr1W053faqFXFYgXO",
+				MarkdownButton: "_2Z7RdWBmSoubpoKJAgNIAi",
+				markdownButton: "_2Z7RdWBmSoubpoKJAgNIAi"
 			}
 		},
 		"./src/reddit/components/RichTextEditor/Toolbar/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return w
+				return P
 			})), n.d(t, "g", (function() {
-				return R
-			})), n.d(t, "f", (function() {
 				return M
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "f", (function() {
 				return N
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "h", (function() {
 				return D
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return L
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "a", (function() {
 				return A
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return F
+			})), n.d(t, "b", (function() {
+				return B
 			}));
 			var o = n("./node_modules/draft-js/lib/Draft.js"),
 				r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -9263,30 +9381,32 @@
 				i = n.n(s),
 				a = n("./src/lib/classNames/index.ts"),
 				c = n("./src/lib/constants/icons.ts"),
-				d = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/reddit/components/RichTextEditor/editorStateTransforms.ts"),
-				u = n("./src/reddit/components/RichTextEditor/helpers/controlsState.ts"),
-				p = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
-				m = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
-				h = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
-				b = n("./src/reddit/components/RichTextEditor/table/helpers.ts");
-			var f = (e, t, n) => {
-					if (Object(p.v)(o.RichUtils.getCurrentBlockType(e))) return e;
+				d = n("./src/reddit/components/CollapseIntoOverflow/index.tsx"),
+				l = n("./src/reddit/helpers/richTextEditor/index.ts"),
+				u = n("./src/reddit/components/RichTextEditor/editorStateTransforms.ts"),
+				p = n("./src/reddit/components/RichTextEditor/helpers/controlsState.ts"),
+				m = n("./src/reddit/components/RichTextEditor/styleAndBlockTypes.ts"),
+				h = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
+				b = n("./src/reddit/components/RichTextEditor/helpers/common.ts"),
+				f = n("./src/reddit/components/RichTextEditor/table/helpers.ts");
+			var g = (e, t, n) => {
+					if (Object(m.v)(o.RichUtils.getCurrentBlockType(e))) return e;
 					const r = e.getCurrentContent(),
 						s = e.getSelection().getEndKey(),
-						i = Object(b.l)(t, n),
-						a = Object(h.f)(r, s, i, h.a.after, !0),
-						c = o.EditorState.push(e, a, m.e);
+						i = Object(f.l)(t, n),
+						a = Object(b.f)(r, s, i, b.a.after, !0),
+						c = o.EditorState.push(e, a, h.e);
 					return o.EditorState.forceSelection(c, o.SelectionState.createEmpty(i[0].getKey()))
 				},
-				g = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
-				E = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
-				C = n("./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.tsx"),
-				y = n("./src/lib/constants/index.ts"),
-				x = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less"),
-				v = n.n(x);
-			const O = d.a.input("HiddenInput", v.a);
-			class _ extends s.Component {
+				E = n("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
+				C = n("./src/reddit/components/RichTextEditor/Toolbar/formatterConfigs.tsx"),
+				y = n("./src/reddit/components/RichTextEditor/Toolbar/MarkdownButton/index.tsx"),
+				x = n("./src/lib/constants/index.ts"),
+				v = n("./src/lib/lessComponent.tsx"),
+				O = n("./src/reddit/components/RichTextEditor/Toolbar/MediaInputButton/index.m.less"),
+				_ = n.n(O);
+			const k = v.a.input("HiddenInput", _.a);
+			class S extends s.Component {
 				constructor() {
 					super(...arguments), this.hiddenInputEl = null, this.onFileInputChange = e => {
 						e.stopPropagation();
@@ -9301,7 +9421,7 @@
 						controlsState: e,
 						destSubreddit: t,
 						type: n
-					} = this.props, o = "image" === n, s = e.blocks[p.a];
+					} = this.props, o = "image" === n, s = e.blocks[m.a];
 					let a = !0;
 					if (t && t.allowedPostTypes) {
 						const {
@@ -9310,7 +9430,7 @@
 						} = t.allowedPostTypes;
 						a = o ? e : n
 					}
-					return i.a.createElement(g.a, {
+					return i.a.createElement(E.a, {
 						iconName: o ? c.a.image_post : c.a.video_post,
 						active: s.isActive,
 						enabled: s.isEnabled && a,
@@ -9320,21 +9440,21 @@
 							hk: "2dn6oZ"
 						}),
 						onClick: this.onButtonClick
-					}, i.a.createElement(O, {
+					}, i.a.createElement(k, {
 						multiple: !0,
 						innerRef: e => this.hiddenInputEl = e,
 						onChange: this.onFileInputChange,
 						onClick: this.onHiddenInputClick,
 						type: "file",
-						accept: Array.from(o ? y.a : y.b).join()
+						accept: Array.from(o ? x.a : x.b).join()
 					}))
 				}
 			}
-			var k = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
-				S = n.n(k);
+			var j = n("./src/reddit/components/RichTextEditor/Toolbar/index.m.less"),
+				T = n.n(j);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function w() {
+				return (w = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -9342,29 +9462,30 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const T = e => i.a.createElement(g.a, j({}, e, {
-					tooltipContentClass: S.a.tooltip
+			const I = e => i.a.createElement(E.a, w({}, e, {
+					tooltipContentClass: T.a.tooltip
 				})),
-				w = d.a.div("SectionSpacer", S.a),
-				I = d.a.div("Spacer", S.a),
-				P = (e, t, n, r, s) => {
+				P = () => i.a.createElement("div", {
+					className: T.a.SectionSpacer
+				}),
+				R = (e, t, n, r, s) => {
 					const {
 						name: a,
 						iconName: c,
 						tooltipTranslation: d
-					} = e, u = d();
+					} = e, l = d();
 					if ("style" === e.type) {
 						const {
 							style: o
 						} = e;
-						return i.a.createElement(T, {
+						return i.a.createElement(I, {
 							iconName: c,
 							active: t.styles[o].isActive,
 							enabled: t.styles[o].isEnabled,
 							key: a,
-							tooltip: u,
+							tooltip: l,
 							onClick: () => {
-								const e = Object(l.c)(o, n);
+								const e = Object(u.c)(o, n);
 								r(e), s(a, ((e, t) => e.getCurrentInlineStyle().contains(t))(e, o))
 							}
 						})
@@ -9372,24 +9493,24 @@
 						const {
 							block: d
 						} = e;
-						return i.a.createElement(T, {
+						return i.a.createElement(I, {
 							iconName: c,
 							active: t.blocks[d].isActive,
 							enabled: t.blocks[d].isEnabled,
 							key: a,
-							tooltip: u,
+							tooltip: l,
 							onClick: () => {
-								const e = Object(l.i)(d, n);
+								const e = Object(u.i)(d, n);
 								r(e), s(a, ((e, t) => o.RichUtils.getCurrentBlockType(e) === t)(e, d))
 							}
 						})
 					}
 				},
-				R = (e, t, n, o, r) => e.map(e => P(e, t, n, o, r)),
-				M = [E.b, E.e],
-				N = [E.j, E.g, E.k, E.i],
-				D = [E.d, E.l, E.h, E.a, E.c],
-				L = e => i.a.createElement(T, {
+				M = (e, t, n, o, r) => e.map(e => R(e, t, n, o, r)),
+				N = [C.b, C.e],
+				D = [C.j, C.g, C.k, C.i],
+				L = [C.d, C.l, C.h, C.a, C.c],
+				A = e => i.a.createElement(I, {
 					iconName: c.a.link_post,
 					active: e.controlsState.link.isActive,
 					enabled: e.controlsState.link.isEnabled,
@@ -9400,18 +9521,18 @@
 						e.onLinkButtonClick(), e.trackOnClick("link", !0)
 					}
 				}),
-				A = e => i.a.createElement(T, {
+				F = e => i.a.createElement(I, {
 					iconName: c.a.table,
-					active: e.controlsState.blocks[p.l].isActive,
-					enabled: e.controlsState.blocks[p.l].isEnabled,
+					active: e.controlsState.blocks[m.l].isActive,
+					enabled: e.controlsState.blocks[m.l].isEnabled,
 					tooltip: r.fbt._("Table", null, {
 						hk: "3cHfLT"
 					}),
 					onClick: () => {
-						e.onChange(f(e.editorState, 3, 2)), e.trackOnClick("table", !0)
+						e.onChange(g(e.editorState, 3, 2)), e.trackOnClick("table", !0)
 					}
 				}),
-				F = e => {
+				B = e => {
 					const {
 						className: t,
 						allowMediaUploads: n = !1,
@@ -9419,40 +9540,48 @@
 						editorState: r,
 						isOverlay: s,
 						onChange: c,
-						onFilesSelect: d,
-						readOnly: l,
-						trackOnClick: p,
-						onLinkButtonClick: m,
-						onMarkdownButtonClick: h
-					} = e, b = Object(u.a)(r);
-					return l && Object(u.b)(b), i.a.createElement("div", {
-						className: Object(a.a)(S.a.toolbarContent, t, {
-							[S.a.isSticky]: !s
+						onFilesSelect: u,
+						readOnly: m,
+						trackOnClick: h,
+						onLinkButtonClick: b,
+						onMarkdownButtonClick: f,
+						editorKey: g
+					} = e, E = Object(p.a)(r);
+					return m && Object(p.b)(E), i.a.createElement("div", {
+						className: Object(a.a)(T.a.ToolbarWrapper, t, {
+							[T.a.isSticky]: !s
 						})
-					}, R(M, b, r, c, p), i.a.createElement(L, {
-						controlsState: b,
-						trackOnClick: p,
-						onLinkButtonClick: m
-					}), R(N, b, r, c, p), i.a.createElement(w, null), R(D, b, r, c, p), i.a.createElement(w, null), i.a.createElement(A, {
-						controlsState: b,
+					}, i.a.createElement(d.a, {
+						oveflowMenuDropdownId: g,
+						className: T.a.CollapseIntoOverflow,
+						editorType: l.a.Post
+					}, M(N, E, r, c, h), i.a.createElement(A, {
+						controlsState: E,
+						trackOnClick: h,
+						onLinkButtonClick: b
+					}), M(D, E, r, c, h), i.a.createElement(P, null), M(L, E, r, c, h), i.a.createElement(P, null), i.a.createElement(F, {
+						controlsState: E,
 						editorState: r,
-						trackOnClick: p,
+						trackOnClick: h,
 						onChange: c
-					}), n && i.a.createElement(_, {
+					}), n && i.a.createElement(S, {
 						destSubreddit: o,
-						controlsState: b,
-						onClick: () => p("image_upload"),
-						onFilesInput: d,
+						controlsState: E,
+						onClick: () => h("image_upload"),
+						onFilesInput: u,
 						type: "image"
-					}), n && i.a.createElement(_, {
+					}), n && i.a.createElement(S, {
 						destSubreddit: o,
-						controlsState: b,
-						onClick: () => p("video_upload"),
-						onFilesInput: d,
+						controlsState: E,
+						onClick: () => h("video_upload"),
+						onFilesInput: u,
 						type: "video"
-					}), i.a.createElement(I, null), i.a.createElement(C.a, {
-						onClick: h
-					}))
+					})), i.a.createElement("div", {
+						className: T.a.MarkdownButtonWrapper
+					}, i.a.createElement(y.a, {
+						className: T.a.MarkdownButton,
+						onClick: f
+					})))
 				}
 		},
 		"./src/reddit/components/RichTextEditor/Tooltip/getSelectionClientRect.ts": function(e, t, n) {
@@ -25569,6 +25698,8 @@
 						className: lo.a.postModifiers,
 						disabled: K,
 						onPostFieldValidation: j
+					}), r.a.createElement("hr", {
+						className: lo.a.Divider
 					}), r.a.createElement(vo, null, r.a.createElement(Oo, null, r.a.createElement("div", {
 						className: V
 					}, M ? r.a.createElement(Je.default, {
@@ -30075,4 +30206,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.be452340ecd561057ed2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.19337bc71fcc25a379c0.js.map

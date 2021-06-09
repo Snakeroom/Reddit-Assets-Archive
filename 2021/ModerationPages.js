@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.89779402cccdca8e545b.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.bce50426a9ed2433ac45.js
+// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -3426,7 +3426,7 @@
 		"./src/reddit/components/BannedUserList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return X
+				return J
 			}));
 			var n = s("./src/config.ts"),
 				a = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -3482,22 +3482,16 @@
 				P = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				R = s("./src/reddit/components/BannedUserList/ExpandedComponent.m.less"),
 				D = s.n(R);
-			const F = Object(P.t)({
-					currentProfileName: P.h,
-					isCommentsPage: P.w,
-					isCommentPermalink: P.v,
-					isProfilePostListing: P.I,
-					pageLayer: e => e
-				}),
-				A = I.a.wrapped(T.c, "UnthreadedComment", D.a),
-				L = I.a.div("BanReason", D.a),
-				B = I.a.div("ExpandedComponentContainer", D.a),
-				U = I.a.div("ModNote", D.a),
-				H = I.a.div("ModNoteContainer", D.a),
-				W = I.a.div("SectionTitle", D.a),
-				q = I.a.div("ContextContainer", D.a),
-				Z = e => () => {};
-			var V = F(e => {
+			const {
+				fbt: F
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = Object(P.t)({
+				currentProfileName: P.h,
+				isCommentsPage: P.w,
+				isCommentPermalink: P.v,
+				isProfilePostListing: P.I,
+				pageLayer: e => e
+			}), L = I.a.wrapped(T.c, "UnthreadedComment", D.a), B = I.a.div("BanReason", D.a), U = I.a.div("ExpandedComponentContainer", D.a), H = I.a.div("ModNote", D.a), W = I.a.div("ModNoteContainer", D.a), q = I.a.div("SectionTitle", D.a), Z = I.a.div("ContextContainer", D.a), V = e => () => {};
+			var G = A(e => {
 					const {
 						currentProfileName: t,
 						isCommentPermalink: s,
@@ -3506,7 +3500,11 @@
 						pageLayer: o,
 						user: i
 					} = e;
-					return r.a.createElement(B, null, i.modNote && r.a.createElement(H, null, r.a.createElement(W, null, "Mod note:"), r.a.createElement(U, null, i.modNote)), r.a.createElement("div", null, r.a.createElement(W, null, "Banned For:"), r.a.createElement(L, null, i.reason), (i.postId || i.commentId) && r.a.createElement(q, null, i.postId && r.a.createElement(M.default, {
+					return r.a.createElement(U, null, i.modNote && r.a.createElement(W, null, r.a.createElement(q, null, F._("Mod note:", null, {
+						hk: "2LBtSw"
+					})), r.a.createElement(H, null, i.modNote)), r.a.createElement("div", null, r.a.createElement(q, null, F._("Banned For:", null, {
+						hk: "3UbXsX"
+					})), r.a.createElement(B, null, i.reason), (i.postId || i.commentId) && r.a.createElement(Z, null, i.postId && r.a.createElement(M.default, {
 						currentProfileName: t,
 						isCommentsPage: n,
 						isCommentPermalink: s,
@@ -3516,16 +3514,16 @@
 						postId: i.postId,
 						hideModTools: !0,
 						inSubredditOrProfile: !0
-					}), i.commentId && r.a.createElement(A, {
+					}), i.commentId && r.a.createElement(L, {
 						commentId: i.commentId,
 						highlight: !1,
-						trackClick: Z
+						trackClick: V
 					}))))
 				}),
-				G = s("./src/reddit/components/BannedUserList/index.m.less"),
-				z = s.n(G);
-			const K = 48,
-				X = e => {
+				z = s("./src/reddit/components/BannedUserList/index.m.less"),
+				K = s.n(z);
+			const X = 48,
+				J = e => {
 					if (null == e) return a.fbt._("Permanent", null, {
 						hk: "3pNDzS"
 					}); {
@@ -3547,10 +3545,10 @@
 						})
 					}
 				},
-				J = e => {
-					return `${Object(p.d)(e.bannedAtUTC)} (${X(e.duration)})`
+				Y = e => {
+					return `${Object(p.d)(e.bannedAtUTC)} (${J(e.duration)})`
 				},
-				Y = Object(d.c)({
+				Q = Object(d.c)({
 					bannedUsers: j.h,
 					bannedUsersList: j.d,
 					bannedUsersListPending: j.c,
@@ -3560,7 +3558,7 @@
 					searchPending: j.f,
 					searchResult: j.g
 				}),
-				Q = Object(i.b)(Y, (e, {
+				$ = Object(i.b)(Q, (e, {
 					subredditId: t
 				}) => ({
 					loadMore: s => e(Object(h.c)(t, {
@@ -3570,7 +3568,7 @@
 					searchForBannedUser: s => e(Object(h.d)(t, s)),
 					toggleBanUserModal: () => e(Object(b.i)("ModerationPage--Modal--AddUser"))
 				}));
-			class $ extends r.a.Component {
+			class ee extends r.a.Component {
 				constructor(e) {
 					super(e), this.handleBanUserToggled = e => {
 						if (e) {
@@ -3599,7 +3597,7 @@
 						const t = this.props.bannedUsers[e] || this.props.searchResult;
 						return t ? r.a.createElement(C.b, {
 							description: t.reason,
-							expandedComponent: r.a.createElement(V, {
+							expandedComponent: r.a.createElement(G, {
 								user: t
 							}),
 							pageName: l.Zb.Banned,
@@ -3610,7 +3608,7 @@
 								hk: "1nftDt"
 							})),
 							subredditId: this.props.subredditId,
-							timeAgo: J(t),
+							timeAgo: Y(t),
 							userIcon: t.accountIcon,
 							username: t.username
 						}) : r.a.createElement("div", null)
@@ -3651,7 +3649,7 @@
 						loadMoreToken: s,
 						onLoadMore: this.onLoadMore
 					}, e.bannedUsersList.map(e => ({
-						estHeight: K,
+						estHeight: X,
 						id: e.id,
 						render: () => this.renderBannedUser(e.id)
 					})))), e.isBanUserModalOpen && this.renderAddBannedUserModal(), e.isConfirmModalOpen && t.userId && t.username && r.a.createElement(g.a, {
@@ -3679,11 +3677,11 @@
 						})
 					}, r.a.createElement(O.a, {
 						name: "ban",
-						className: z.a.BanIcon
+						className: K.a.BanIcon
 					}))), e.isBanUserModalOpen && this.renderAddBannedUserModal())
 				}
 			}
-			t.a = Q($)
+			t.a = $(ee)
 		},
 		"./src/reddit/components/CallToActionButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -22512,4 +22510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.89779402cccdca8e545b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bce50426a9ed2433ac45.js.map
