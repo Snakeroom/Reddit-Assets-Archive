@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c5343910dc2fddd13644.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.dc2430c3ac69c9075450.js
+// Retrieved at 6/9/2021, 11:10:18 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -762,7 +762,7 @@
 							i = Object(H.M)(s(), {
 								identifier: A.belongsTo
 							});
-						if (i && Object(D.a)(s())) return void t(Object(o.c)(i.url));
+						if (i && Object(D.b)(s())) return void t(Object(o.c)(i.url));
 						if ((A.media && A.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${A.belongsTo.type===I.a.SUBREDDIT?i.url:"/"}${Object(u.t)(A.id)}`;
 							return void t(Object(o.c)(e))
@@ -5022,7 +5022,7 @@
 					const s = Object(V.R)(e, {
 						postId: t.postId
 					});
-					return !!s && Object(A.a)(e, {
+					return !!s && Object(A.c)(e, {
 						subredditId: s.id
 					})
 				},
@@ -8161,4 +8161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c5343910dc2fddd13644.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.dc2430c3ac69c9075450.js.map
