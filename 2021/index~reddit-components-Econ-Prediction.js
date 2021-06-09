@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1fdad774d2eea650c323.js
-// Retrieved at 6/8/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.2c30203a5b6b5549b4fd.js
+// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -442,13 +442,13 @@
 			}
 		},
 		"./src/graphql/operations/AddPredictionDrafts.json": function(a) {
-			a.exports = JSON.parse('{"id":"83f8c9485fc2"}')
+			a.exports = JSON.parse('{"id":"84c24426ab00"}')
 		},
 		"./src/graphql/operations/CreatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"76dfc155c2e6"}')
+			a.exports = JSON.parse('{"id":"b8bc80c247a6"}')
 		},
 		"./src/graphql/operations/EndPredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"8f6f9c7f897e"}')
+			a.exports = JSON.parse('{"id":"160c1d2839c1"}')
 		},
 		"./src/graphql/operations/GetPredictionChipPackages.json": function(a) {
 			a.exports = JSON.parse('{"id":"3785e4a718f5"}')
@@ -460,7 +460,7 @@
 			a.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/graphql/operations/GetTournaments.json": function(a) {
-			a.exports = JSON.parse('{"id":"20bd24c2878f"}')
+			a.exports = JSON.parse('{"id":"d2575383d168"}')
 		},
 		"./src/graphql/operations/ResolvePrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"45c2e0b86b90"}')
@@ -469,7 +469,7 @@
 			a.exports = JSON.parse('{"id":"3407d5f67207"}')
 		},
 		"./src/graphql/operations/UpdatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"6ce5e93d21f5"}')
+			a.exports = JSON.parse('{"id":"aeb2b0e42e97"}')
 		},
 		"./src/graphql/operations/VotePrediction.json": function(a) {
 			a.exports = JSON.parse('{"id":"1712829dfb21"}')
@@ -3594,4 +3594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1fdad774d2eea650c323.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.2c30203a5b6b5549b4fd.js.map

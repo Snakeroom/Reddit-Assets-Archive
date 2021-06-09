@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7c4ccf8067674795e132.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.865bc1ab8e2f9ce6a5df.js
+// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -212,13 +212,13 @@
 			}
 		},
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
-			e.exports = JSON.parse('{"id":"83f8c9485fc2"}')
+			e.exports = JSON.parse('{"id":"84c24426ab00"}')
 		},
 		"./src/graphql/operations/CreatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"76dfc155c2e6"}')
+			e.exports = JSON.parse('{"id":"b8bc80c247a6"}')
 		},
 		"./src/graphql/operations/EndPredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"8f6f9c7f897e"}')
+			e.exports = JSON.parse('{"id":"160c1d2839c1"}')
 		},
 		"./src/graphql/operations/GetPredictionChipPackages.json": function(e) {
 			e.exports = JSON.parse('{"id":"3785e4a718f5"}')
@@ -230,7 +230,7 @@
 			e.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/graphql/operations/GetTournaments.json": function(e) {
-			e.exports = JSON.parse('{"id":"20bd24c2878f"}')
+			e.exports = JSON.parse('{"id":"d2575383d168"}')
 		},
 		"./src/graphql/operations/ResolvePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"45c2e0b86b90"}')
@@ -239,7 +239,7 @@
 			e.exports = JSON.parse('{"id":"3407d5f67207"}')
 		},
 		"./src/graphql/operations/UpdatePredictionTournament.json": function(e) {
-			e.exports = JSON.parse('{"id":"6ce5e93d21f5"}')
+			e.exports = JSON.parse('{"id":"aeb2b0e42e97"}')
 		},
 		"./src/graphql/operations/VotePrediction.json": function(e) {
 			e.exports = JSON.parse('{"id":"1712829dfb21"}')
@@ -3412,4 +3412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.7c4ccf8067674795e132.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.865bc1ab8e2f9ce6a5df.js.map

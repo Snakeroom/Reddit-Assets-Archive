@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1708de62aef9649e4bbf.js
-// Retrieved at 6/8/2021, 7:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.588fee3466092136688a.js
+// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1767,11 +1767,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("136019"),
+				buildNumber: r("136086"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1623191681"),
+				})("1623245178"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -1938,7 +1938,7 @@
 			e.exports = JSON.parse('{"id":"29aee4089528"}')
 		},
 		"./src/graphql/operations/SubredditPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"fd5e864b01e6"}')
+			e.exports = JSON.parse('{"id":"74df7290549b"}')
 		},
 		"./src/graphql/operations/SubredditPageExtra.json": function(e) {
 			e.exports = JSON.parse('{"id":"9a5e80214e01"}')
@@ -1959,13 +1959,13 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/graphql/operations/TopAwardedPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"afa04c78bc2f"}')
+			e.exports = JSON.parse('{"id":"4fec6a770577"}')
 		},
 		"./src/graphql/operations/TopAwardersLeaderboard.json": function(e) {
 			e.exports = JSON.parse('{"id":"2a194e7926dd"}')
 		},
 		"./src/graphql/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"678ccf433519"}')
+			e.exports = JSON.parse('{"id":"c456914fb811"}')
 		},
 		"./src/graphql/operations/UpdatePostFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"6491fda8f22b"}')
@@ -4371,14 +4371,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c6f1356227033f40bd0fb6de006654fbe794db33c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c735bc3bfe5901c58a8b965288f5c46c150f3f94e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6f1356227033f40bd0fb6de006654fbe794db33c-production",
+						release: "735bc3bfe5901c58a8b965288f5c46c150f3f94e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4872,7 +4872,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "6f1356227033f40bd0fb6de006654fbe794db33c-production",
+						releaseClient: "735bc3bfe5901c58a8b965288f5c46c150f3f94e-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -23144,13 +23144,15 @@
 				title: e,
 				endsAt: t,
 				options: i,
-				...n
+				isNsfw: n,
+				...r
 			}) {
 				return {
 					title: e || "",
 					endsAt: new Date(Object(c.a)(t)).valueOf(),
 					options: i ? i.map(m) : [],
-					...n
+					isNSFW: n,
+					...r
 				}
 			}
 
@@ -46798,4 +46800,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1708de62aef9649e4bbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.588fee3466092136688a.js.map

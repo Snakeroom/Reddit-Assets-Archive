@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.3644882d21bd9cc32d3e.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.2ade3cf5f037d084bec1.js
+// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -510,7 +510,7 @@
 			}, "Component", c.a)
 		},
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"96a6834825b1"}')
+			e.exports = JSON.parse('{"id":"0c0a6fd04a2c"}')
 		},
 		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
@@ -7754,4 +7754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.3644882d21bd9cc32d3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2ade3cf5f037d084bec1.js.map
