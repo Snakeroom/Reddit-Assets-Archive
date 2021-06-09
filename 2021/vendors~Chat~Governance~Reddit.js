@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.3e3a84332b12bb0b4614.js
-// Retrieved at 5/20/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.f5ff2f87308880944fca.js
+// Retrieved at 6/9/2021, 6:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -5626,7 +5626,7 @@
 							this.split(n, this.tmp), t = (n = (n = this.imulK(n)).iadd(this.tmp)).bitLength()
 						} while (t > this.n);
 						var r = t < this.n ? -1 : n.ucmp(this.p);
-						return 0 === r ? (n.words[0] = 0, n.length = 1) : r > 0 ? n.isub(this.p) : n.strip(), n
+						return 0 === r ? (n.words[0] = 0, n.length = 1) : r > 0 ? n.isub(this.p) : void 0 !== n.strip ? n.strip() : n._strip(), n
 					}, _.prototype.split = function(e, t) {
 						e.iushrn(this.n, 0, t)
 					}, _.prototype.imulK = function(e) {
@@ -8415,67 +8415,69 @@
 					r = i(t, 1, this._bitLength),
 					o = (1 << n.step + 1) - (n.step % 2 == 0 ? 2 : 1);
 				o /= 3;
-				for (var s = [], u = 0; u < r.length; u += n.step) {
-					var c = 0;
-					for (t = u + n.step - 1; t >= u; t--) c = (c << 1) + r[t];
-					s.push(c)
+				var s, u, c = [];
+				for (s = 0; s < r.length; s += n.step) {
+					u = 0;
+					for (var l = s + n.step - 1; l >= s; l--) u = (u << 1) + r[l];
+					c.push(u)
 				}
-				for (var l = this.jpoint(null, null, null), d = this.jpoint(null, null, null), f = o; f > 0; f--) {
-					for (u = 0; u < s.length; u++) {
-						(c = s[u]) === f ? d = d.mixedAdd(n.points[u]) : c === -f && (d = d.mixedAdd(n.points[u].neg()))
-					}
-					l = l.add(d)
+				for (var d = this.jpoint(null, null, null), f = this.jpoint(null, null, null), h = o; h > 0; h--) {
+					for (s = 0; s < c.length; s++)(u = c[s]) === h ? f = f.mixedAdd(n.points[s]) : u === -h && (f = f.mixedAdd(n.points[s].neg()));
+					d = d.add(f)
 				}
-				return l.toP()
+				return d.toP()
 			}, u.prototype._wnafMul = function(e, t) {
 				var n = 4,
 					r = e._getNAFPoints(n);
 				n = r.wnd;
 				for (var o = r.points, s = i(t, n, this._bitLength), u = this.jpoint(null, null, null), c = s.length - 1; c >= 0; c--) {
-					for (t = 0; c >= 0 && 0 === s[c]; c--) t++;
-					if (c >= 0 && t++, u = u.dblp(t), c < 0) break;
-					var l = s[c];
-					a(0 !== l), u = "affine" === e.type ? l > 0 ? u.mixedAdd(o[l - 1 >> 1]) : u.mixedAdd(o[-l - 1 >> 1].neg()) : l > 0 ? u.add(o[l - 1 >> 1]) : u.add(o[-l - 1 >> 1].neg())
+					for (var l = 0; c >= 0 && 0 === s[c]; c--) l++;
+					if (c >= 0 && l++, u = u.dblp(l), c < 0) break;
+					var d = s[c];
+					a(0 !== d), u = "affine" === e.type ? d > 0 ? u.mixedAdd(o[d - 1 >> 1]) : u.mixedAdd(o[-d - 1 >> 1].neg()) : d > 0 ? u.add(o[d - 1 >> 1]) : u.add(o[-d - 1 >> 1].neg())
 				}
 				return "affine" === e.type ? u.toP() : u
 			}, u.prototype._wnafMulAdd = function(e, t, n, r, o) {
-				for (var a = this._wnafT1, u = this._wnafT2, c = this._wnafT3, l = 0, d = 0; d < r; d++) {
-					var f = (S = t[d])._getNAFPoints(e);
-					a[d] = f.wnd, u[d] = f.points
+				var a, u, c, l = this._wnafT1,
+					d = this._wnafT2,
+					f = this._wnafT3,
+					h = 0;
+				for (a = 0; a < r; a++) {
+					var p = (c = t[a])._getNAFPoints(e);
+					l[a] = p.wnd, d[a] = p.points
 				}
-				for (d = r - 1; d >= 1; d -= 2) {
-					var h = d - 1,
-						p = d;
-					if (1 === a[h] && 1 === a[p]) {
-						var m = [t[h], null, null, t[p]];
-						0 === t[h].y.cmp(t[p].y) ? (m[1] = t[h].add(t[p]), m[2] = t[h].toJ().mixedAdd(t[p].neg())) : 0 === t[h].y.cmp(t[p].y.redNeg()) ? (m[1] = t[h].toJ().mixedAdd(t[p]), m[2] = t[h].add(t[p].neg())) : (m[1] = t[h].toJ().mixedAdd(t[p]), m[2] = t[h].toJ().mixedAdd(t[p].neg()));
-						var b = [-3, -1, -5, -7, 0, 7, 5, 1, 3],
-							_ = s(n[h], n[p]);
-						l = Math.max(_[0].length, l), c[h] = new Array(l), c[p] = new Array(l);
-						for (var y = 0; y < l; y++) {
-							var v = 0 | _[0][y],
-								g = 0 | _[1][y];
-							c[h][y] = b[3 * (v + 1) + (g + 1)], c[p][y] = 0, u[h] = m
+				for (a = r - 1; a >= 1; a -= 2) {
+					var m = a - 1,
+						b = a;
+					if (1 === l[m] && 1 === l[b]) {
+						var _ = [t[m], null, null, t[b]];
+						0 === t[m].y.cmp(t[b].y) ? (_[1] = t[m].add(t[b]), _[2] = t[m].toJ().mixedAdd(t[b].neg())) : 0 === t[m].y.cmp(t[b].y.redNeg()) ? (_[1] = t[m].toJ().mixedAdd(t[b]), _[2] = t[m].add(t[b].neg())) : (_[1] = t[m].toJ().mixedAdd(t[b]), _[2] = t[m].toJ().mixedAdd(t[b].neg()));
+						var y = [-3, -1, -5, -7, 0, 7, 5, 1, 3],
+							v = s(n[m], n[b]);
+						for (h = Math.max(v[0].length, h), f[m] = new Array(h), f[b] = new Array(h), u = 0; u < h; u++) {
+							var g = 0 | v[0][u],
+								w = 0 | v[1][u];
+							f[m][u] = y[3 * (g + 1) + (w + 1)], f[b][u] = 0, d[m] = _
 						}
-					} else c[h] = i(n[h], a[h], this._bitLength), c[p] = i(n[p], a[p], this._bitLength), l = Math.max(c[h].length, l), l = Math.max(c[p].length, l)
+					} else f[m] = i(n[m], l[m], this._bitLength), f[b] = i(n[b], l[b], this._bitLength), h = Math.max(f[m].length, h), h = Math.max(f[b].length, h)
 				}
-				var w = this.jpoint(null, null, null),
-					j = this._wnafT4;
-				for (d = l; d >= 0; d--) {
-					for (var E = 0; d >= 0;) {
-						var x = !0;
-						for (y = 0; y < r; y++) j[y] = 0 | c[y][d], 0 !== j[y] && (x = !1);
-						if (!x) break;
-						E++, d--
+				var j = this.jpoint(null, null, null),
+					E = this._wnafT4;
+				for (a = h; a >= 0; a--) {
+					for (var x = 0; a >= 0;) {
+						var S = !0;
+						for (u = 0; u < r; u++) E[u] = 0 | f[u][a], 0 !== E[u] && (S = !1);
+						if (!S) break;
+						x++, a--
 					}
-					if (d >= 0 && E++, w = w.dblp(E), d < 0) break;
-					for (y = 0; y < r; y++) {
-						var S, k = j[y];
-						0 !== k && (k > 0 ? S = u[y][k - 1 >> 1] : k < 0 && (S = u[y][-k - 1 >> 1].neg()), w = "affine" === S.type ? w.mixedAdd(S) : w.add(S))
+					if (a >= 0 && x++, j = j.dblp(x), a < 0) break;
+					for (u = 0; u < r; u++) {
+						var k = E[u];
+						0 !== k && (k > 0 ? c = d[u][k - 1 >> 1] : k < 0 && (c = d[u][-k - 1 >> 1].neg()), j = "affine" === c.type ? j.mixedAdd(c) : j.add(c))
 					}
 				}
-				for (d = 0; d < r; d++) u[d] = null;
-				return o ? w : w.toP()
+				for (a = 0; a < r; a++) d[a] = null;
+				return o ? j : j.toP()
 			}, u.BasePoint = c, c.prototype.eq = function() {
 				throw new Error("Not implemented")
 			}, c.prototype.validate = function() {
@@ -8608,22 +8610,13 @@
 					d = s.redMul(i);
 				return this.curve.point(u, c, d, l)
 			}, c.prototype._projDbl = function() {
-				var e, t, n, r = this.x.redAdd(this.y).redSqr(),
-					o = this.x.redSqr(),
-					i = this.y.redSqr();
+				var e, t, n, r, o, i, s = this.x.redAdd(this.y).redSqr(),
+					a = this.x.redSqr(),
+					u = this.y.redSqr();
 				if (this.curve.twisted) {
-					var s = (c = this.curve._mulA(o)).redAdd(i);
-					if (this.zOne) e = r.redSub(o).redSub(i).redMul(s.redSub(this.curve.two)), t = s.redMul(c.redSub(i)), n = s.redSqr().redSub(s).redSub(s);
-					else {
-						var a = this.z.redSqr(),
-							u = s.redSub(a).redISub(a);
-						e = r.redSub(o).redISub(i).redMul(u), t = s.redMul(c.redSub(i)), n = s.redMul(u)
-					}
-				} else {
-					var c = o.redAdd(i);
-					a = this.curve._mulC(this.z).redSqr(), u = c.redSub(a).redSub(a);
-					e = this.curve._mulC(r.redISub(c)).redMul(u), t = this.curve._mulC(c).redMul(o.redISub(i)), n = c.redMul(u)
-				}
+					var c = (r = this.curve._mulA(a)).redAdd(u);
+					this.zOne ? (e = s.redSub(a).redSub(u).redMul(c.redSub(this.curve.two)), t = c.redMul(r.redSub(u)), n = c.redSqr().redSub(c).redSub(c)) : (o = this.z.redSqr(), i = c.redSub(o).redISub(o), e = s.redSub(a).redISub(u).redMul(i), t = c.redMul(r.redSub(u)), n = c.redMul(i))
+				} else r = a.redAdd(u), o = this.curve._mulC(this.z).redSqr(), i = r.redSub(o).redSub(o), e = this.curve._mulC(s.redISub(r)).redMul(i), t = this.curve._mulC(r).redMul(a.redISub(u)), n = r.redMul(i);
 				return this.curve.point(e, t, n)
 			}, c.prototype.dbl = function() {
 				return this.isInfinity() ? this : this.curve.extended ? this._extDbl() : this._projDbl()
@@ -9032,9 +9025,11 @@
 				if (0 === e) return this;
 				if (this.isInfinity()) return this;
 				if (!e) return this.dbl();
+				var t;
 				if (this.curve.zeroA || this.curve.threeA) {
-					for (var t = this, n = 0; n < e; n++) t = t.dbl();
-					return t
+					var n = this;
+					for (t = 0; t < e; t++) n = n.dbl();
+					return n
 				}
 				var r = this.curve.a,
 					o = this.curve.tinv,
@@ -9043,7 +9038,7 @@
 					a = this.z,
 					u = a.redSqr().redSqr(),
 					c = s.redAdd(s);
-				for (n = 0; n < e; n++) {
+				for (t = 0; t < e; t++) {
 					var l = i.redSqr(),
 						d = c.redSqr(),
 						f = d.redSqr(),
@@ -9054,7 +9049,7 @@
 						_ = h.redMul(b);
 					_ = _.redIAdd(_).redISub(f);
 					var y = c.redMul(a);
-					n + 1 < e && (u = u.redMul(f)), i = m, a = y, c = _
+					t + 1 < e && (u = u.redMul(f)), i = m, a = y, c = _
 				}
 				return this.curve.jpoint(i, c.redMul(o), a)
 			}, l.prototype.dbl = function() {
@@ -9310,7 +9305,7 @@
 
 			function d(e) {
 				if (!(this instanceof d)) return new d(e);
-				"string" == typeof e && (u(s.hasOwnProperty(e), "Unknown curve " + e), e = s[e]), e instanceof s.PresetCurve && (e = {
+				"string" == typeof e && (u(Object.prototype.hasOwnProperty.call(s, e), "Unknown curve " + e), e = s[e]), e instanceof s.PresetCurve && (e = {
 					curve: e
 				}), this.curve = e.curve.curve, this.n = this.curve.n, this.nh = this.n.ushrn(1), this.g = this.curve.g, this.g = e.curve.g, this.g.precompute(e.curve.n.bitLength() + 1), this.hash = e.hash || e.curve.hash
 			}
@@ -9446,7 +9441,7 @@
 				if (e.x || e.y) return "mont" === this.ec.curve.type ? o(e.x, "Need x coordinate") : "short" !== this.ec.curve.type && "edwards" !== this.ec.curve.type || o(e.x && e.y, "Need both x and y coordinate"), void(this.pub = this.ec.curve.point(e.x, e.y));
 				this.pub = this.ec.curve.decodePoint(e, t)
 			}, i.prototype.derive = function(e) {
-				return e.mul(this.priv).getX()
+				return e.validate() || o(e.validate(), "public point not validated"), e.mul(this.priv).getX()
 			}, i.prototype.sign = function(e, t, n) {
 				return this.ec.sign(e, this, t, n)
 			}, i.prototype.verify = function(e, t) {
@@ -9473,8 +9468,10 @@
 			function u(e, t) {
 				var n = e[t.place++];
 				if (!(128 & n)) return n;
-				for (var r = 15 & n, o = 0, i = 0, s = t.place; i < r; i++, s++) o <<= 8, o |= e[s];
-				return t.place = s, o
+				var r = 15 & n;
+				if (0 === r || r > 4) return !1;
+				for (var o = 0, i = 0, s = t.place; i < r; i++, s++) o <<= 8, o |= e[s], o >>>= 0;
+				return !(o <= 127) && (t.place = s, o)
 			}
 
 			function c(e) {
@@ -9494,15 +9491,27 @@
 				e = o.toArray(e, t);
 				var n = new a;
 				if (48 !== e[n.place++]) return !1;
-				if (u(e, n) + n.place !== e.length) return !1;
+				var i = u(e, n);
+				if (!1 === i) return !1;
+				if (i + n.place !== e.length) return !1;
 				if (2 !== e[n.place++]) return !1;
-				var i = u(e, n),
-					s = e.slice(n.place, i + n.place);
-				if (n.place += i, 2 !== e[n.place++]) return !1;
-				var c = u(e, n);
-				if (e.length !== c + n.place) return !1;
-				var l = e.slice(n.place, c + n.place);
-				return 0 === s[0] && 128 & s[1] && (s = s.slice(1)), 0 === l[0] && 128 & l[1] && (l = l.slice(1)), this.r = new r(s), this.s = new r(l), this.recoveryParam = null, !0
+				var s = u(e, n);
+				if (!1 === s) return !1;
+				var c = e.slice(n.place, s + n.place);
+				if (n.place += s, 2 !== e[n.place++]) return !1;
+				var l = u(e, n);
+				if (!1 === l) return !1;
+				if (e.length !== l + n.place) return !1;
+				var d = e.slice(n.place, l + n.place);
+				if (0 === c[0]) {
+					if (!(128 & c[1])) return !1;
+					c = c.slice(1)
+				}
+				if (0 === d[0]) {
+					if (!(128 & d[1])) return !1;
+					d = d.slice(1)
+				}
+				return this.r = new r(c), this.s = new r(d), this.recoveryParam = null, !0
 			}, s.prototype.toDER = function(e) {
 				var t = this.r.toArray(),
 					n = this.s.toArray();
@@ -9526,8 +9535,7 @@
 
 			function l(e) {
 				if (s("ed25519" === e, "only tested with ed25519 so far"), !(this instanceof l)) return new l(e);
-				e = o[e].curve;
-				this.curve = e, this.g = e.g, this.g.precompute(e.n.bitLength() + 1), this.pointClass = e.point().constructor, this.encodingLength = Math.ceil(e.n.bitLength() / 8), this.hash = r.sha512
+				e = o[e].curve, this.curve = e, this.g = e.g, this.g.precompute(e.n.bitLength() + 1), this.pointClass = e.point().constructor, this.encodingLength = Math.ceil(e.n.bitLength() / 8), this.hash = r.sha512
 			}
 			e.exports = l, l.prototype.sign = function(e, t) {
 				e = a(e);
@@ -9874,14 +9882,10 @@
 					[]
 				];
 				e = e.clone(), t = t.clone();
-				for (var r = 0, o = 0; e.cmpn(-r) > 0 || t.cmpn(-o) > 0;) {
-					var i, s, a, u = e.andln(3) + r & 3,
-						c = t.andln(3) + o & 3;
-					if (3 === u && (u = -1), 3 === c && (c = -1), 0 == (1 & u)) i = 0;
-					else i = 3 !== (a = e.andln(7) + r & 7) && 5 !== a || 2 !== c ? u : -u;
-					if (n[0].push(i), 0 == (1 & c)) s = 0;
-					else s = 3 !== (a = t.andln(7) + o & 7) && 5 !== a || 2 !== u ? c : -c;
-					n[1].push(s), 2 * r === i + 1 && (r = 1 - r), 2 * o === s + 1 && (o = 1 - o), e.iushrn(1), t.iushrn(1)
+				for (var r, o = 0, i = 0; e.cmpn(-o) > 0 || t.cmpn(-i) > 0;) {
+					var s, a, u = e.andln(3) + o & 3,
+						c = t.andln(3) + i & 3;
+					3 === u && (u = -1), 3 === c && (c = -1), s = 0 == (1 & u) ? 0 : 3 !== (r = e.andln(7) + o & 7) && 5 !== r || 2 !== c ? u : -u, n[0].push(s), a = 0 == (1 & c) ? 0 : 3 !== (r = t.andln(7) + i & 7) && 5 !== r || 2 !== u ? c : -c, n[1].push(a), 2 * o === s + 1 && (o = 1 - o), 2 * i === a + 1 && (i = 1 - i), e.iushrn(1), t.iushrn(1)
 				}
 				return n
 			}, r.cachedProperty = function(e, t, n) {
@@ -9896,7 +9900,7 @@
 			}
 		},
 		"./node_modules/elliptic/package.json": function(e) {
-			e.exports = JSON.parse('{"name":"elliptic","version":"6.5.2","description":"EC cryptography","main":"lib/elliptic.js","files":["lib"],"scripts":{"jscs":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","jshint":"jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js","lint":"npm run jscs && npm run jshint","unit":"istanbul test _mocha --reporter=spec test/index.js","test":"npm run lint && npm run unit","version":"grunt dist && git add dist/"},"repository":{"type":"git","url":"git@github.com:indutny/elliptic"},"keywords":["EC","Elliptic","curve","Cryptography"],"author":"Fedor Indutny <fedor@indutny.com>","license":"MIT","bugs":{"url":"https://github.com/indutny/elliptic/issues"},"homepage":"https://github.com/indutny/elliptic","devDependencies":{"brfs":"^1.4.3","coveralls":"^3.0.8","grunt":"^1.0.4","grunt-browserify":"^5.0.0","grunt-cli":"^1.2.0","grunt-contrib-connect":"^1.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^1.0.1","grunt-mocha-istanbul":"^3.0.1","grunt-saucelabs":"^9.0.1","istanbul":"^0.4.2","jscs":"^3.0.7","jshint":"^2.10.3","mocha":"^6.2.2"},"dependencies":{"bn.js":"^4.4.0","brorand":"^1.0.1","hash.js":"^1.0.0","hmac-drbg":"^1.0.0","inherits":"^2.0.1","minimalistic-assert":"^1.0.0","minimalistic-crypto-utils":"^1.0.0"}}')
+			e.exports = JSON.parse('{"name":"elliptic","version":"6.5.4","description":"EC cryptography","main":"lib/elliptic.js","files":["lib"],"scripts":{"lint":"eslint lib test","lint:fix":"npm run lint -- --fix","unit":"istanbul test _mocha --reporter=spec test/index.js","test":"npm run lint && npm run unit","version":"grunt dist && git add dist/"},"repository":{"type":"git","url":"git@github.com:indutny/elliptic"},"keywords":["EC","Elliptic","curve","Cryptography"],"author":"Fedor Indutny <fedor@indutny.com>","license":"MIT","bugs":{"url":"https://github.com/indutny/elliptic/issues"},"homepage":"https://github.com/indutny/elliptic","devDependencies":{"brfs":"^2.0.2","coveralls":"^3.1.0","eslint":"^7.6.0","grunt":"^1.2.1","grunt-browserify":"^5.3.0","grunt-cli":"^1.3.2","grunt-contrib-connect":"^3.0.0","grunt-contrib-copy":"^1.0.0","grunt-contrib-uglify":"^5.0.0","grunt-mocha-istanbul":"^5.0.2","grunt-saucelabs":"^9.0.1","istanbul":"^0.4.5","mocha":"^8.0.1"},"dependencies":{"bn.js":"^4.11.9","brorand":"^1.1.0","hash.js":"^1.0.0","hmac-drbg":"^1.0.1","inherits":"^2.0.4","minimalistic-assert":"^1.0.1","minimalistic-crypto-utils":"^1.0.1"}}')
 		},
 		"./node_modules/err-code/index.js": function(e, t, n) {
 			"use strict";
@@ -34689,4 +34693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.3e3a84332b12bb0b4614.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.f5ff2f87308880944fca.js.map
