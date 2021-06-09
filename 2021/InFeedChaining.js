@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.9ba2fdf6c981e95792b4.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.5055c129719f0b5a5f53.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1451,8 +1451,8 @@
 						small: !0
 					}))
 				},
-				G = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				J = s.n(G),
+				J = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				G = s.n(J),
 				q = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
 				Y = s.n(q);
 			const X = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
@@ -1486,7 +1486,7 @@
 						subscribedSubreddits: h
 					});
 					return r.a.createElement(d.a, {
-						className: Object(o.a)(Y.a.container, J.a.largeAndMediumActiveStyles, J.a.largeAndMediumPostStyles, J.a.mUseRedditTheme, O.a.postContainer, Object(p.a)(this.props), e),
+						className: Object(o.a)(Y.a.container, G.a.largeAndMediumActiveStyles, G.a.largeAndMediumPostStyles, G.a.mUseRedditTheme, O.a.postContainer, Object(p.a)(this.props), e),
 						eventFactory: s,
 						onClick: i,
 						post: a,
@@ -1690,13 +1690,13 @@
 					}
 				}
 				componentDidMount() {
-					this.trackDiscoveryUnitViewed(), this.props.routeName !== d.Ib.COMMENTS && this.setState({
+					this.trackDiscoveryUnitViewed(), this.props.routeName !== d.Jb.COMMENTS && this.setState({
 						isCarouselVisible: !0,
 						isDUVisible: !0
 					})
 				}
 				componentDidUpdate(e) {
-					this.state.isCarouselVisible || e.routeName !== d.Ib.COMMENTS || this.props.routeName === d.Ib.COMMENTS || this.showDU()
+					this.state.isCarouselVisible || e.routeName !== d.Jb.COMMENTS || this.props.routeName === d.Jb.COMMENTS || this.showDU()
 				}
 				componentWillUnmount() {
 					this.showCarouselTimer && clearTimeout(this.showCarouselTimer), this.showDUTimer && clearTimeout(this.showDUTimer)
@@ -1913,8 +1913,8 @@
 				F = s("./src/reddit/connectors/miniCardPost.ts"),
 				V = s("./src/reddit/contexts/Post/index.tsx"),
 				H = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				G = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				J = s("./src/reddit/models/Media/index.ts"),
+				J = s("./src/reddit/helpers/styles/mixins/index.tsx"),
+				G = s("./src/reddit/models/Media/index.ts"),
 				q = s("./src/reddit/models/Subreddit/index.ts"),
 				Y = s("./src/reddit/models/Widgets/index.ts"),
 				X = s("./src/reddit/components/MiniCardPost/index.m.less"),
@@ -1961,7 +1961,7 @@
 							autoplayPref: e,
 							availableWidth: t,
 							className: z.a.media,
-							forceAspectRatio: J.c,
+							forceAspectRatio: G.c,
 							imageBoxClassName: z.a.mediaImageBox,
 							imageBoxContentImageClassName: z.a.mediaImageBoxContentImage,
 							isListing: !0,
@@ -1975,7 +1975,7 @@
 							showFull: !1
 						}),
 						E = !1;
-					C && O && (C.type !== J.o.RTJSON && C.type !== J.o.TEXT ? (O = i.a.createElement("div", {
+					C && O && (C.type !== G.o.RTJSON && C.type !== G.o.TEXT ? (O = i.a.createElement("div", {
 						className: $.a.mediaWrapper
 					}, O), E = !0) : C && C.content && Object(H.a)(p) && (O = i.a.createElement("div", {
 						className: $.a.textWrapper
@@ -1983,13 +1983,13 @@
 					const S = !E && !j;
 					let I;
 					return w && (I = Object(q.h)(w) ? Object(Y.h)(w) : Object(Y.i)(w)), i.a.createElement(W.a, {
-						className: Object(c.a)($.a.container, Q.a.largeAndMediumActiveStyles, Q.a.largeAndMediumPostStyles, z.a.postContainer, Object(G.a)(this.props), s),
+						className: Object(c.a)($.a.container, Q.a.largeAndMediumActiveStyles, Q.a.largeAndMediumPostStyles, z.a.postContainer, Object(J.a)(this.props), s),
 						post: p,
 						onClick: m,
 						eventFactory: o,
 						style: {
-							...Object(G.b)(this.props.flairStyleTemplate),
-							...Object(G.d)(this.props),
+							...Object(J.b)(this.props.flairStyleTemplate),
+							...Object(J.d)(this.props),
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
@@ -4928,4 +4928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.9ba2fdf6c981e95792b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.5055c129719f0b5a5f53.js.map

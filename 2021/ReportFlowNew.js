@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.d8034307d5c7d2e0b7e9.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.07178a6857a7ae48a39a.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -32,7 +32,7 @@
 			})), o.d(t, "f", (function() {
 				return m
 			})), o.d(t, "h", (function() {
-				return b
+				return h
 			})), o.d(t, "g", (function() {
 				return _
 			}));
@@ -52,8 +52,8 @@
 				p = "BLOCKED_REDDITORS_LIST__LOADED",
 				u = "BLOCKED_REDDITORS_LIST__PENDING",
 				m = Object(r.a)(a),
-				b = Object(r.a)(c),
-				h = Object(r.a)(l),
+				h = Object(r.a)(c),
+				b = Object(r.a)(l),
 				f = Object(r.a)(p),
 				O = Object(r.a)(u),
 				_ = () => async (e, t, {
@@ -93,7 +93,7 @@
 						} else {
 							n = !1;
 							const t = r.error ? r.error.type : "unknown error";
-							e(h({
+							e(b({
 								message: t
 							}))
 						}
@@ -131,7 +131,7 @@
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "g", (function() {
-				return j
+				return g
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -144,8 +144,8 @@
 				p = "USER_BLOCK__LOADED",
 				u = "USER_BLOCK__FAILED",
 				m = Object(s.a)(l),
-				b = Object(s.a)(p),
-				h = Object(s.a)(u),
+				h = Object(s.a)(p),
+				b = Object(s.a)(u),
 				f = e => async (t, o, {
 					apiContext: s
 				}) => {
@@ -155,7 +155,7 @@
 					}));
 					const c = await Object(d.a)(s(), e),
 						l = `error-block-${e}`;
-					if (c.ok) c.body.name && t(b(c.body)), c.body.id && t(Object(n.f)(c.body.id)), t(i.g(l)), t(i.f({
+					if (c.ok) c.body.name && t(h(c.body)), c.body.id && t(Object(n.f)(c.body.id)), t(i.g(l)), t(i.f({
 						kind: a.b.SuccessCommunity,
 						text: r.fbt._("{username} is now blocked", [r.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -166,7 +166,7 @@
 							type: c.error ? c.error.type : "Unknown error",
 							username: e
 						};
-						t(h(o)), t(i.f({
+						t(b(o)), t(i.f({
 							id: l,
 							kind: a.b.Error,
 							text: r.fbt._("An error has occured. Please try again later", null, {
@@ -178,7 +178,7 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), g = Object(s.a)(_), R = Object(s.a)(w), j = e => async (t, o, {
+				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), g = e => async (t, o, {
 					apiContext: s
 				}) => {
 					const l = o(),
@@ -187,7 +187,7 @@
 						m = l.user.blocked.data.filter(t => t.name === e)[0];
 					u && (t(C({
 						name: e
-					})), (await Object(d.c)(s(), u, e)).ok ? (t(g({
+					})), (await Object(d.c)(s(), u, e)).ok ? (t(R({
 						name: e
 					})), m && m.id && t(Object(n.h)(m.id)), t(i.f({
 						kind: a.b.SuccessCommunity,
@@ -199,7 +199,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(R({
+					})), t(j({
 						name: e
 					}))))
 				}
@@ -275,8 +275,8 @@
 				p = o("./src/reddit/actions/reportFlow/index.ts"),
 				u = o("./src/reddit/actions/toaster.ts"),
 				m = o("./src/reddit/components/CrisisFlow/index.tsx"),
-				b = o("./src/reddit/components/FormBuilder/async.tsx"),
-				h = o("./src/reddit/actions/userBlocks.ts"),
+				h = o("./src/reddit/components/FormBuilder/async.tsx"),
+				b = o("./src/reddit/actions/userBlocks.ts"),
 				f = o("./src/graphql/operations/ReportComment.json"),
 				O = o("./src/lib/makeGqlRequest/index.ts");
 			const _ = (e, t) => Object(O.a)(e, {
@@ -288,10 +288,10 @@
 				...w,
 				variables: t
 			});
-			var g = o("./src/reddit/endpoints/messages/index.ts"),
-				R = o("./src/graphql/operations/ReportPost.json");
-			const j = (e, t) => Object(O.a)(e, {
-				...R,
+			var R = o("./src/reddit/endpoints/messages/index.ts"),
+				j = o("./src/graphql/operations/ReportPost.json");
+			const g = (e, t) => Object(O.a)(e, {
+				...j,
 				variables: t
 			});
 			var x = o("./src/graphql/operations/ReportForm.json");
@@ -353,7 +353,7 @@
 						e(Object(p.b)())
 					},
 					onBlockUser: t => {
-						e(Object(h.h)(t))
+						e(Object(b.h)(t))
 					},
 					showFailToast: () => e(Object(u.f)({
 						kind: F.b.Error,
@@ -455,7 +455,7 @@
 								const e = i()(t, l.ref);
 								"other" === e && u ? m.customRule = i()(t, u.ref) : m.subredditRule = e
 						}
-						let b;
+						let h;
 						switch (c) {
 							case T.Post:
 								if (n && d) {
@@ -464,7 +464,7 @@
 										relativeReportTimeSec: d,
 										...m
 									};
-									b = () => C(o(), {
+									h = () => C(o(), {
 										input: e
 									});
 									break
@@ -473,7 +473,7 @@
 									postId: a,
 									...m
 								};
-								b = () => j(o(), {
+								h = () => g(o(), {
 									input: e
 								});
 								break;
@@ -482,7 +482,7 @@
 									commentId: a,
 									...m
 								};
-								b = () => _(o(), {
+								h = () => _(o(), {
 									input: t
 								});
 								break;
@@ -491,13 +491,13 @@
 									messageId: a,
 									...m
 								};
-								b = () => Object(g.a)(o(), {
+								h = () => Object(R.a)(o(), {
 									input: r
 								});
 								break;
 							default:
 								throw new Error("Unsupported item type provided")
-						}(await b()).ok || r()
+						}(await h()).ok || r()
 					}, this.state = {
 						ctlFlowOpened: !1,
 						hasLoaded: !1
@@ -542,7 +542,7 @@
 						fromUserProfile: !0,
 						username: d,
 						onCloseCrisisModal: this.handleReportFlowClose
-					}) : t && o && i ? a.a.createElement(b.a, {
+					}) : t && o && i ? a.a.createElement(h.a, {
 						formComponent: t,
 						formState: o,
 						onCloseClick: this.handleReportFlowClose,
@@ -633,7 +633,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.gb.POST
+				method: s.hb.POST
 			}), l = async (e, t, o) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: o,
@@ -641,22 +641,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.gb.POST
+				method: s.hb.POST
 			}), p = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.gb.POST
+				method: s.hb.POST
 			}), u = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.gb.POST
+				method: s.hb.POST
 			}), m = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				endpoint: Object(a.a)(`${r.a.oauthUrl}/user/${t}/about`),
-				method: s.gb.GET,
+				method: s.hb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.d8034307d5c7d2e0b7e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.07178a6857a7ae48a39a.js.map

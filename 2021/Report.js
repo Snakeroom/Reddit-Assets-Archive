@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/Report.f7c06f31e45f50086442.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Report.c57bdfe5faf27fdefecd.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Report"], {
 		"./src/reddit/actions/pages/report/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "reportPageFailed", (function() {
-				return l
+				return g
 			})), r.d(t, "reportPagePending", (function() {
 				return _
 			})), r.d(t, "reportPageLoaded", (function() {
@@ -29,7 +29,7 @@
 					if (!n.user || !n.user.language) return;
 					const c = await (e => Object(a.a)(Object(o.a)(e, [i.a]), {
 						endpoint: `${e.apiUrl}/api/report_page_rules.json`,
-						method: s.gb.GET
+						method: s.hb.GET
 					}))(r());
 					if (c.ok) {
 						const {
@@ -42,11 +42,11 @@
 				};
 			var u = r("./src/reddit/endpoints/me/index.ts"),
 				b = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				g = r("./src/reddit/actions/pages/report/constants.ts");
-			const l = Object(n.a)(g.b),
-				_ = Object(n.a)(g.d),
-				O = Object(n.a)(g.c),
-				x = Object(n.a)(g.a),
+				l = r("./src/reddit/actions/pages/report/constants.ts");
+			const g = Object(n.a)(l.b),
+				_ = Object(n.a)(l.d),
+				O = Object(n.a)(l.c),
+				x = Object(n.a)(l.a),
 				f = e => async (t, r, {
 					apiContext: n
 				}) => {
@@ -59,9 +59,9 @@
 							const e = r();
 							Object(b.a)(t, e)
 						}
-					else t(l(a.error))
+					else t(g(a.error))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.f7c06f31e45f50086442.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.c57bdfe5faf27fdefecd.js.map

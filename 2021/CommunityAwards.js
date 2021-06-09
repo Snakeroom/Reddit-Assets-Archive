@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.94835acd94f490e3f600.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.a74b041b26e6c91f4cb2.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -56,15 +56,15 @@
 			})), r.d(t, "optionalAwardsLoaded", (function() {
 				return N
 			})), r.d(t, "awardSheetInfoRequested", (function() {
-				return v
-			})), r.d(t, "awardSheetInfoPending", (function() {
 				return U
+			})), r.d(t, "awardSheetInfoPending", (function() {
+				return G
 			})), r.d(t, "awardSheetInfoFailed", (function() {
 				return L
 			})), r.d(t, "awardSheetInfoLoaded", (function() {
-				return M
+				return F
 			})), r.d(t, "removeCommunityAward", (function() {
-				return G
+				return M
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
 				return B
 			})), r.d(t, "disableAwardinCommunity", (function() {
@@ -252,7 +252,7 @@
 						duration: o.a,
 						text: e
 					}))
-				}, k = Object(n.a)(O.e), F = e => e.map(({
+				}, k = Object(n.a)(O.e), v = e => e.map(({
 					tag: e,
 					content: t
 				}) => ({
@@ -261,13 +261,13 @@
 						richtext: JSON.parse(t.richtext),
 						markdown: t.markdown
 					}
-				})), v = (e, t, r, a) => async (n, d, {
+				})), U = (e, t, r, a) => async (n, d, {
 					gqlContext: s
 				}) => {
 					const o = d(),
 						c = o.awards.sortedUsable.order[e];
 					if (!(!!c && !!c[t]) || a) {
-						n(U({
+						n(G({
 							subredditOrProfileId: e,
 							thingId: t
 						}));
@@ -293,8 +293,8 @@
 								const r = await Object(p.g)(s(), a, t);
 								if (r.ok) {
 									const a = r.body,
-										i = F(a.data.profileByName.awardingTray.sortedUsableTags);
-									await n(M({
+										i = v(a.data.profileByName.awardingTray.sortedUsableTags);
+									await n(F({
 										awards: a.data.profileByName.sortedUsableAwards,
 										tags: i,
 										subredditOrProfileId: e,
@@ -308,8 +308,8 @@
 								const r = await Object(p.f)(s(), e, t);
 								if (r.ok) {
 									const a = r.body,
-										i = F(a.data.subredditInfoById.awardingTray.sortedUsableTags);
-									await n(M({
+										i = v(a.data.subredditInfoById.awardingTray.sortedUsableTags);
+									await n(F({
 										awards: a.data.subredditInfoById.sortedUsableAwards,
 										tags: i,
 										subredditOrProfileId: e,
@@ -327,7 +327,7 @@
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.d), L = Object(n.a)(O.b), M = Object(n.a)(O.c), G = (e, t) => async (r, n, {
+				}, G = Object(n.a)(O.d), L = Object(n.a)(O.b), F = Object(n.a)(O.c), M = (e, t) => async (r, n, {
 					gqlContext: d
 				}) => {
 					r(J());
@@ -501,7 +501,7 @@
 						mimetype: i
 					};
 					return Object(n.a)(Object(d.a)(e, [j.a]), {
-						method: a.gb.POST,
+						method: a.hb.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: s
 					})
@@ -622,7 +622,7 @@
 						raw_json: 1
 					};
 					return Object(n.a)(Object(d.a)(e, [j.a]), {
-						method: a.gb.POST,
+						method: a.hb.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: i
 					}).then(e => e.ok ? {
@@ -653,23 +653,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case a.F.NO_STRIPE_SUBSCRIPTION:
-							case a.F.USER_DOESNT_EXIST:
-							case a.F.USER_REQUIRED_ERROR:
-							case a.F.VALIDATION_ERROR:
+							case a.G.NO_STRIPE_SUBSCRIPTION:
+							case a.G.USER_DOESNT_EXIST:
+							case a.G.USER_REQUIRED_ERROR:
+							case a.G.VALIDATION_ERROR:
 								return e;
-							case a.F.NO_USER:
-							case a.F.NO_TEXT:
-							case a.F.NO_URL:
-								return a.F.VALIDATION_ERROR;
-							case a.F.CREDIT_CARD_FAILURE:
-							case a.F.CREDIT_CARD_FAILURE_GENERIC:
-								return a.F.CREDIT_CARD_FAILURE;
+							case a.G.NO_USER:
+							case a.G.NO_TEXT:
+							case a.G.NO_URL:
+								return a.G.VALIDATION_ERROR;
+							case a.G.CREDIT_CARD_FAILURE:
+							case a.G.CREDIT_CARD_FAILURE_GENERIC:
+								return a.G.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return a.F.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return a.G.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return a.F.VALIDATION_ERROR
+					return a.G.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.94835acd94f490e3f600.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.a74b041b26e6c91f4cb2.js.map

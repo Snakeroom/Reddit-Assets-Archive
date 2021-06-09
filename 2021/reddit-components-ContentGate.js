@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.0b0b0bc862f40aca884a.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.79a5f56163d462a2dd61.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -196,11 +196,11 @@
 				N = n("./src/reddit/selectors/platform.ts"),
 				H = n("./src/reddit/selectors/user.ts");
 			var I = n("./src/reddit/selectors/meta.ts"),
-				G = n("./src/reddit/components/ContentGate/index.m.less"),
-				z = n.n(G);
+				z = n("./src/reddit/components/ContentGate/index.m.less"),
+				G = n.n(z);
 			const {
 				fbt: W
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = c.a.wrapped(M, "PrivateKey", z.a), Z = c.a.div("ButtonsContainer", z.a), Y = c.a.div("Container", z.a), J = c.a.div("Description", z.a), Q = c.a.div("PrivateSubredditDetails", z.a), V = c.a.div("PrivateSubredditDescription", z.a), X = c.a.h3("PrivateSubredditName", z.a), $ = c.a.a("Link", z.a), ee = c.a.wrapped(q.k, "LinkRouterButton", z.a), te = c.a.wrapped(q.j, "LinkButton", z.a), ne = c.a.wrapped(q.n, "SecondaryLinkRouterButton", z.a), re = c.a.wrapped(q.m, "SecondaryLinkButton", z.a), ae = c.a.wrapped(ee, "GoHomeLinkButton", z.a), oe = c.a.wrapped(h.a, "CreateCommunityButton", z.a), se = c.a.img("Image", z.a), ie = c.a.img("ImagePlaceholder", z.a), le = c.a.wrapped(ee, "LeftLinkRouterButton", z.a), ce = c.a.wrapped(te, "LeftLinkButton", z.a), ue = c.a.wrapped(re, "SecondaryLeftLinkButton", z.a), de = c.a.wrapped(ne, "SecondaryLeftLinkRouterButton", z.a), me = c.a.h3("Title", z.a), pe = c.a.div("PageBody", z.a), he = c.a.div("QuarantineMessageWrapper", z.a), be = Object(l.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = c.a.wrapped(M, "PrivateKey", G.a), Z = c.a.div("ButtonsContainer", G.a), Y = c.a.div("Container", G.a), J = c.a.div("Description", G.a), Q = c.a.div("PrivateSubredditDetails", G.a), V = c.a.div("PrivateSubredditDescription", G.a), X = c.a.h3("PrivateSubredditName", G.a), $ = c.a.a("Link", G.a), ee = c.a.wrapped(q.k, "LinkRouterButton", G.a), te = c.a.wrapped(q.j, "LinkButton", G.a), ne = c.a.wrapped(q.n, "SecondaryLinkRouterButton", G.a), re = c.a.wrapped(q.m, "SecondaryLinkButton", G.a), ae = c.a.wrapped(ee, "GoHomeLinkButton", G.a), oe = c.a.wrapped(h.a, "CreateCommunityButton", G.a), se = c.a.img("Image", G.a), ie = c.a.img("ImagePlaceholder", G.a), le = c.a.wrapped(ee, "LeftLinkRouterButton", G.a), ce = c.a.wrapped(te, "LeftLinkButton", G.a), ue = c.a.wrapped(re, "SecondaryLeftLinkButton", G.a), de = c.a.wrapped(ne, "SecondaryLeftLinkRouterButton", G.a), me = c.a.h3("Title", G.a), pe = c.a.div("PageBody", G.a), he = c.a.div("QuarantineMessageWrapper", G.a), be = Object(l.c)({
 				isLoggedIn: H.J,
 				origin: I.j,
 				user: H.j,
@@ -215,7 +215,7 @@
 						isContributorRequestTimestamp: r
 					} = n;
 					if (!r) return !1;
-					const a = 30 * F.y;
+					const a = 30 * F.z;
 					return r > Date.now() - a
 				})(e)
 			}), _e = Object(O.t)(), Ee = Object(s.b)(be, (e, {
@@ -305,7 +305,7 @@
 						})), o.a.createElement(Z, null, f ? o.a.createElement(o.a.Fragment, null, !i && o.a.createElement(p.a, {
 							eventSource: "content_gate",
 							smallButton: !0,
-							className: z.a.ContributorRequestButton,
+							className: G.a.ContributorRequestButton,
 							isContributorRequestPending: l
 						}), o.a.createElement(ue, {
 							href: `${r.a.redditUrl}/message/compose?to=/r/${g}`
@@ -367,7 +367,7 @@
 						}), o.a.createElement(me, null, W._("r/{community name} has been banned from Reddit", [W._param("community name", g)], {
 							hk: "2at9Se"
 						})), (e => o.a.createElement(J, null, e ? o.a.createElement(P, {
-							linkClassName: z.a.Link,
+							linkClassName: G.a.Link,
 							text: e,
 							parseMdLinks: !0,
 							parseRegularLinks: !0
@@ -582,4 +582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.0b0b0bc862f40aca884a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.79a5f56163d462a2dd61.js.map

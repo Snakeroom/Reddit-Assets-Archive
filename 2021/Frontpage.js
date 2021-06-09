@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d2da868fca4d6611e03b.js
-// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.39bf54207ed2e7f677a9.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -144,7 +144,7 @@
 						limit: i,
 						sort: o,
 						t: c
-					} = t, d = Object(w.R)(e) || Object(w.K)(e), l = Object(P.o)(e), u = Object.values(p.x).map(e => e), b = Object(S.b)(e), h = u.includes(b) ? b : p.x.Everywhere, y = {
+					} = t, d = Object(w.R)(e) || Object(w.K)(e), l = Object(P.o)(e), u = Object.values(p.y).map(e => e), b = Object(S.b)(e), h = u.includes(b) ? b : p.y.Everywhere, y = {
 						adContext: {
 							layout: a ? a.toUpperCase() : g.a.Card,
 							reddaid: e.user.reddaid,
@@ -269,7 +269,7 @@
 								logKeyType: h.a.gqlNormalizationTiming
 							}];
 						Object(h.h)({
-							name: p.p.FRONTPAGE,
+							name: p.q.FRONTPAGE,
 							isLoggedIn: s,
 							metrics: c,
 							statsdPathsForExperiments: n
@@ -374,7 +374,7 @@
 						l = r.listings.postOrder.api.error[c],
 						u = r.listings.postOrder.api.pending[c],
 						m = R.x in e.queryParams && e.queryParams[R.x].toUpperCase() || "",
-						b = m in p.ac && p.ac[m];
+						b = m in p.bc && p.bc[m];
 					if (u || d && !l && !t) return void(d && (s(F.l({
 						title: I.c()
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -427,7 +427,7 @@
 						b = Object(X.a)(B.a, u, m),
 						h = r.listings.postOrder.loadMore[b],
 						g = m[R.x] ? m[R.x].toUpperCase() : "",
-						f = g in p.ac && p.ac[g];
+						f = g in p.bc && p.bc[g];
 					if (h) {
 						const e = r.listings.postOrder.api.pending[b],
 							s = r.listings.postOrder.fetchedTokens,
@@ -494,7 +494,7 @@
 						i = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						o = Object(X.a)(B.a, a, i),
 						c = i[R.x] ? i[R.x].toUpperCase() : "",
-						d = c in p.ac && p.ac[c],
+						d = c in p.bc && p.bc[c],
 						l = Object(M.a)(n),
 						u = Object(M.b)(l);
 					await t(le(o, {
@@ -1005,14 +1005,14 @@
 				X = s("./src/reddit/constants/headers.ts");
 			const Y = e => Object(J.a)(Object(Z.a)(e, [X.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: q.gb.GET,
+				method: q.hb.GET,
 				type: "json"
 			});
 			var $ = s("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = s.n($);
 			const {
 				fbt: te
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * q.hb, re = "SubredditAdoption";
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), se = 3, ne = 30 * q.ib, re = "SubredditAdoption";
 			class ae extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -4407,9 +4407,9 @@
 				sort: n
 			}, r, a, i, o, c) => {
 				const d = P.x in s && s[P.x].toUpperCase(),
-					l = "string" == typeof d && d in V.ac ? V.ac[d] : V.bc,
+					l = "string" == typeof d && d in V.bc ? V.bc[d] : V.cc,
 					u = Object(p.a)(K.a, n, s),
-					m = e || V.x.Everywhere,
+					m = e || V.y.Everywhere,
 					b = t || m,
 					h = P.h in s ? s[P.h].toUpperCase() : b,
 					g = [];
@@ -4579,7 +4579,7 @@
 						n = o
 					} else n = s;
 					if (!n.rpanDuDismissalTime) return !1;
-					return new Date(n.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.y
+					return new Date(n.rpanDuDismissalTime).getTime() > Date.now() - 30 * r.z
 				}, (e, {
 					listingName: t
 				}) => t, (e, {
@@ -4588,7 +4588,7 @@
 					subreddit: t
 				}), d.k, (e, {
 					sort: t
-				}) => t, (e, t, s, n, a, i) => i !== r.T.AWARDED && (!!e && (!a.isPermanentlyCanceled && (!t && (!!n && n.show_discovery_unit))))),
+				}) => t, (e, t, s, n, a, i) => i !== r.U.AWARDED && (!!e && (!a.isPermanentlyCanceled && (!t && (!!n && n.show_discovery_unit))))),
 				u = Object(n.a)((e, {
 					listingName: t
 				}) => t, (e, {
@@ -4876,4 +4876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d2da868fca4d6611e03b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.39bf54207ed2e7f677a9.js.map

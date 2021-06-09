@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.c9c95d665481cc8507ff.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.07ddc198818cc8df9b3c.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -79,7 +79,7 @@
 					correlation_id: a
 				};
 				return Object(k.a)(Object(g.a)(e, [E.a]), {
-					method: x.gb.POST,
+					method: x.hb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
 				}).then(e => e.ok ? {
@@ -98,11 +98,11 @@
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === x.F.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === x.G.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === x.F.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === x.G.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -135,12 +135,12 @@
 				L = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				B = n("./src/reddit/controls/TextButton/index.tsx"),
-				F = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				G = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				K = n("./src/reddit/models/Gold/Premium/index.ts"),
-				U = n("./src/reddit/selectors/user.ts");
+				F = n("./src/reddit/selectors/user.ts");
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -150,8 +150,8 @@
 			}
 			const W = 10,
 				X = Object(r.c)({
-					coinBalance: U.d,
-					isEmployee: U.H,
+					coinBalance: F.d,
+					isEmployee: F.H,
 					isPending: y.b,
 					recipientName: y.d
 				}),
@@ -279,7 +279,7 @@
 					} = this.state, u = Object(K.e)(d), p = c ? [l.a.messageInputOpen] : "";
 					return a.a.createElement(P.d, {
 						className: e
-					}, a.a.createElement(P.h, null, a.a.createElement(F.a, null, a.a.createElement(P.p, null, s.fbt._("Give Premium", null, {
+					}, a.a.createElement(P.h, null, a.a.createElement(G.a, null, a.a.createElement(P.p, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
 					})), a.a.createElement(B.a, {
 						onClick: this.onClickClose
@@ -321,7 +321,7 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), a.a.createElement(P.f, null, a.a.createElement(F.a, {
+					}))), a.a.createElement(P.f, null, a.a.createElement(G.a, {
 						className: l.a.coinCountSection
 					}, a.a.createElement(T.a, {
 						className: l.a.coinCount,
@@ -346,7 +346,7 @@
 				}
 			}
 			const V = Object(d.a)(Object(u.c)(z));
-			t.default = H(e => a.a.createElement(V, G({}, e, {
+			t.default = H(e => a.a.createElement(V, U({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -684,23 +684,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case s.F.NO_STRIPE_SUBSCRIPTION:
-							case s.F.USER_DOESNT_EXIST:
-							case s.F.USER_REQUIRED_ERROR:
-							case s.F.VALIDATION_ERROR:
+							case s.G.NO_STRIPE_SUBSCRIPTION:
+							case s.G.USER_DOESNT_EXIST:
+							case s.G.USER_REQUIRED_ERROR:
+							case s.G.VALIDATION_ERROR:
 								return e;
-							case s.F.NO_USER:
-							case s.F.NO_TEXT:
-							case s.F.NO_URL:
-								return s.F.VALIDATION_ERROR;
-							case s.F.CREDIT_CARD_FAILURE:
-							case s.F.CREDIT_CARD_FAILURE_GENERIC:
-								return s.F.CREDIT_CARD_FAILURE;
+							case s.G.NO_USER:
+							case s.G.NO_TEXT:
+							case s.G.NO_URL:
+								return s.G.VALIDATION_ERROR;
+							case s.G.CREDIT_CARD_FAILURE:
+							case s.G.CREDIT_CARD_FAILURE_GENERIC:
+								return s.G.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.F.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return s.G.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return s.F.VALIDATION_ERROR
+					return s.G.VALIDATION_ERROR
 				},
 				a = e => {
 					const t = e.body;
@@ -845,4 +845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.c9c95d665481cc8507ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.07ddc198818cc8df9b3c.js.map

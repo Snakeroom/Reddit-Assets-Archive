@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.027b90bac26a65104163.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.312e9410327bf8c9eaaa.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/graphql/operations/PollVote.json": function(e) {
@@ -86,13 +86,13 @@
 			})), n.d(t, "t", (function() {
 				return x
 			})), n.d(t, "u", (function() {
-				return j
-			})), n.d(t, "v", (function() {
 				return h
+			})), n.d(t, "v", (function() {
+				return j
 			})), n.d(t, "w", (function() {
 				return T
 			})), n.d(t, "x", (function() {
-				return g
+				return I
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				o = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -114,10 +114,10 @@
 				N = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				y = "GOVERNANCE__TRANSFER_PENDING",
 				x = "GOVERNANCE__TRANSFER_SUCCESS",
-				j = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				h = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				h = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				j = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				T = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				g = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				I = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
 			"use strict";
@@ -143,7 +143,7 @@
 			})), n.d(t, "b", (function() {
 				return y
 			})), n.d(t, "c", (function() {
-				return j
+				return h
 			})), n.d(t, "f", (function() {
 				return C
 			})), n.d(t, "g", (function() {
@@ -175,11 +175,11 @@
 			const N = Object(o.a)(E.b),
 				y = Object(o.a)(E.c),
 				x = Object(o.a)(E.e),
-				j = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
-				h = Object(o.a)(E.i),
+				h = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
+				j = Object(o.a)(E.i),
 				T = Object(o.a)(E.j),
-				g = Object(o.a)(E.k),
-				I = Object(o.a)(E.q),
+				I = Object(o.a)(E.k),
+				g = Object(o.a)(E.q),
 				C = Object(o.a)(E.r),
 				P = Object(o.a)(E.s),
 				A = Object(o.a)(E.t),
@@ -218,7 +218,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(g(i.body));
+						} else n(I(i.body));
 						const o = r();
 						if ((d = o.polls.models[e]) && Object(b.d)(d)) {
 							const {
@@ -226,7 +226,7 @@
 							} = d, t = o.posts.models[e];
 							t && t.voteState === _.a.notVoted && n(Object(c.bb)(e))
 						}
-					} else n(h({
+					} else n(j({
 						pollId: e,
 						error: i.error || i.errors[0].message
 					})), Object(v.a)(n, i.error || i.errors[0].messsage)
@@ -260,7 +260,7 @@
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(s.a)(e.amount)), r.fbt._param("tokenName", (null === (u = Object(O.b)(o(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(i.f)())) : (n(I({
+					})), t && n(Object(i.f)())) : (n(g({
 						error: b.error
 					})), Object(v.a)(n, b.error))
 				}, U = e => async (t, n, {
@@ -684,7 +684,7 @@
 			function i(e, t) {
 				return Object(s.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: o.gb.GET
+					method: o.hb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -706,7 +706,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: o.gb.POST,
+					method: o.hb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.027b90bac26a65104163.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.312e9410327bf8c9eaaa.js.map

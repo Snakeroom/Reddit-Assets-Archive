@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.39d14495999e3db7e29d.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.8b5a5531a0cd568bc4e7.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, n) {
@@ -1784,7 +1784,7 @@
 			function s(e, t) {
 				return Object(l.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: a.gb.GET
+					method: a.hb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1806,7 +1806,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: a.gb.POST,
+					method: a.hb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -2124,4 +2124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.39d14495999e3db7e29d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.8b5a5531a0cd568bc4e7.js.map

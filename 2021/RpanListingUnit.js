@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.8101b63831291a7857a6.js
-// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ae83a8b770b409a386c6.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1299,8 +1299,8 @@
 				L = r("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				P = r("./src/reddit/components/HlsVideo/index.tsx"),
 				k = r("./src/reddit/components/OverflowMenu/index.tsx"),
-				F = r("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				U = r("./src/reddit/components/PostLeftRail/index.tsx"),
+				U = r("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				F = r("./src/reddit/components/PostLeftRail/index.tsx"),
 				M = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				V = r("./src/reddit/controls/Dropdown/Row.tsx"),
 				G = r("./src/reddit/controls/InternalLink/index.tsx"),
@@ -1312,7 +1312,7 @@
 				z = r.n(K);
 			const {
 				fbt: q
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.ic, X = l.ic, Q = Object(c.a)(P.a, {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.jc, X = l.jc, Q = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(a.c)({
 				autoplay: j.b,
@@ -1374,7 +1374,7 @@
 						if (e) {
 							if (Date.now() - e >= J) {
 								Object(O.W)();
-								const e = 30 * l.y,
+								const e = 30 * l.z,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
@@ -1533,14 +1533,14 @@
 							[z.a.classic]: e === v.g.Classic,
 							[z.a.compact]: e === v.g.Compact
 						}, this.props.className)
-					}, e !== v.g.Large && n.a.createElement(U.b, {
+					}, e !== v.g.Large && n.a.createElement(F.b, {
 						className: z.a.leftRail,
 						withoutComputedStyles: e === v.g.Compact
 					}, n.a.createElement(ne, {
 						isVertical: !0
 					}), e === v.g.Compact && n.a.createElement(ne, {
 						isVertical: !1
-					})), n.a.createElement(F.a, {
+					})), n.a.createElement(U.a, {
 						className: z.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
@@ -2085,23 +2085,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case s.F.NO_STRIPE_SUBSCRIPTION:
-							case s.F.USER_DOESNT_EXIST:
-							case s.F.USER_REQUIRED_ERROR:
-							case s.F.VALIDATION_ERROR:
+							case s.G.NO_STRIPE_SUBSCRIPTION:
+							case s.G.USER_DOESNT_EXIST:
+							case s.G.USER_REQUIRED_ERROR:
+							case s.G.VALIDATION_ERROR:
 								return e;
-							case s.F.NO_USER:
-							case s.F.NO_TEXT:
-							case s.F.NO_URL:
-								return s.F.VALIDATION_ERROR;
-							case s.F.CREDIT_CARD_FAILURE:
-							case s.F.CREDIT_CARD_FAILURE_GENERIC:
-								return s.F.CREDIT_CARD_FAILURE;
+							case s.G.NO_USER:
+							case s.G.NO_TEXT:
+							case s.G.NO_URL:
+								return s.G.VALIDATION_ERROR;
+							case s.G.CREDIT_CARD_FAILURE:
+							case s.G.CREDIT_CARD_FAILURE_GENERIC:
+								return s.G.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.F.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return s.G.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return s.F.VALIDATION_ERROR
+					return s.G.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -2304,9 +2304,9 @@
 			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
 				return k
 			})), r.d(t, "clickNextButtonEvent", (function() {
-				return F
-			})), r.d(t, "clickCloseGildModalEvent", (function() {
 				return U
+			})), r.d(t, "clickCloseGildModalEvent", (function() {
+				return F
 			})), r.d(t, "viewKarmaSuccessEvent", (function() {
 				return M
 			})), r.d(t, "clickFilterEvent", (function() {
@@ -2467,13 +2467,13 @@
 					action: "click",
 					noun: "add_coins"
 				}),
-				F = e => t => ({
+				U = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "next"
 				}),
-				U = e => t => ({
+				F = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -2558,7 +2558,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, f = i.b(e), E = f ? Object(u.getAwardTypeFromAward)(f) : null, g = b ? E : o.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = r ? Object(p.a)(r) ? "comment" : "post" : void 0, v = l || o.t(e), O = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === v)[0], S = t.offerContext || (f && 0 === f.coinPrice ? n.a.StorefrontFreeAward : Object(n.d)(O, b)), C = O ? Math.round(1e4 * (O.baselinePennies - O.pennies) / O.baselinePennies) / 100 : 0, y = O ? Math.round(1e4 * (O.coins - O.baselineCoins) / O.coins) / 100 : 0, T = O ? O.baselinePennies !== O.pennies ? `${C}_percent_price` : O.baselineCoins !== O.coins ? `${y}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? s.ub : O ? O.pennies : void 0;
+					} = t, b = !!r, f = i.b(e), E = f ? Object(u.getAwardTypeFromAward)(f) : null, g = b ? E : o.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = r ? Object(p.a)(r) ? "comment" : "post" : void 0, v = l || o.t(e), O = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === v)[0], S = t.offerContext || (f && 0 === f.coinPrice ? n.a.StorefrontFreeAward : Object(n.d)(O, b)), C = O ? Math.round(1e4 * (O.baselinePennies - O.pennies) / O.baselinePennies) / 100 : 0, y = O ? Math.round(1e4 * (O.coins - O.baselineCoins) / O.coins) / 100 : 0, T = O ? O.baselinePennies !== O.pennies ? `${C}_percent_price` : O.baselineCoins !== O.coins ? `${y}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? s.vb : O ? O.pennies : void 0;
 					return {
 						...c.defaults(e),
 						comment: r ? c.comment(e, r) : null,
@@ -3703,4 +3703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.8101b63831291a7857a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ae83a8b770b409a386c6.js.map

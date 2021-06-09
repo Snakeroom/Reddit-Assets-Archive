@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.065c0ef1030146c83c27.js
-// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c8404afb7f635aba2fe7.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -730,7 +730,7 @@
 						commentId: e
 					});
 					if (!d) return;
-					const l = s === o.Wb.Snoozed,
+					const l = s === o.Xb.Snoozed,
 						m = {
 							itemId: e,
 							reportText: t,
@@ -761,8 +761,8 @@
 					a(Object(v.i)({
 						[e]: {
 							distinguishType: t,
-							isAdmin: t === o.D.ADMIN,
-							isMod: t === o.D.MODERATOR,
+							isAdmin: t === o.E.ADMIN,
+							isMod: t === o.E.MODERATOR,
 							isStickied: !!s
 						}
 					})), s && u && u !== e && a(Object(v.i)({
@@ -773,7 +773,7 @@
 						id: e,
 						postId: l,
 						commentsPageKey: Object(r.a)(l, null, {
-							sort: o.r.CONFIDENCE,
+							sort: o.s.CONFIDENCE,
 							...d.platform.currentPage.queryParams
 						})
 					})) : (a(Object(v.i)({
@@ -879,7 +879,7 @@
 					{
 						sortToUse: n
 					} = Object(M.a)(e, o);
-				return (!n || n === h.r.CONFIDENCE) && Object(se.c)(e, {
+				return (!n || n === h.s.CONFIDENCE) && Object(se.c)(e, {
 					experimentEligibilitySelector: () => Object(W.J)(e),
 					experimentName: te.s
 				}) === te.u.Enabled
@@ -1020,8 +1020,8 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.ac.WEEK.toUpperCase(),
-									sort: h.M.TOP,
+									range: h.bc.WEEK.toUpperCase(),
+									sort: h.N.TOP,
 									subredditName: r.name
 								},
 								o = {
@@ -1075,7 +1075,7 @@
 						M = w.pages.comments.api.pending[_],
 						N = !Object(W.J)(w),
 						T = Object(W.j)(w),
-						L = a === h.r.CHAT,
+						L = a === h.s.CHAT,
 						A = !!w.platform.lastPage;
 					if ((M || x && !R) && !(L && A)) {
 						if (x && !w.sidebarPromotedPosts.firstFetch) {
@@ -1096,7 +1096,7 @@
 					const B = {
 						...s,
 						...L ? {
-							sort: h.r.LIVE
+							sort: h.s.LIVE
 						} : N ? {
 							sort: s.sort,
 							depth: 2
@@ -1635,7 +1635,7 @@
 				B = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const F = (e, t) => Object(A.a)(Object(D.a)(e, [V.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
-					method: O.gb.POST,
+					method: O.hb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -1645,7 +1645,7 @@
 				}),
 				U = (e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 					endpoint: Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
-					method: O.gb.POST,
+					method: O.hb.POST,
 					type: "json",
 					data: t
 				});
@@ -1673,7 +1673,7 @@
 					t(Q());
 					const n = await ((e, t) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: O.gb.GET
+						method: O.hb.GET
 					}))(a(), o);
 					n.ok ? t(Z({
 						subredditId: e,
@@ -1686,7 +1686,7 @@
 					s(te());
 					const i = await ((e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
-						method: O.gb.POST,
+						method: O.hb.POST,
 						data: s
 					}))(n(), r, t);
 					if (i.ok) {
@@ -1713,7 +1713,7 @@
 					s(ne());
 					const i = await ((e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`,
-						method: O.gb.PUT,
+						method: O.hb.PUT,
 						data: {
 							message: s.message,
 							title: s.title
@@ -1735,7 +1735,7 @@
 					s(ce());
 					const i = await ((e, t, s) => Object(A.a)(Object(D.a)(e, [V.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`,
-						method: O.gb.DELETE
+						method: O.hb.DELETE
 					}))(n(), r, t);
 					i.ok ? (s(le({
 						subredditId: e,
@@ -1799,7 +1799,7 @@
 											a = d.platform.currentPage && d.platform.currentPage.routeMatch;
 										let o = s && a && Object(W.a)(a, d, d.posts.models[e.postId]);
 										if (o || (o = Object(C.a)(e.postId, null, {
-												sort: O.s,
+												sort: O.t,
 												hasSortParam: !0
 											})), m === z.e.Post) {
 											const s = Object(x.a)(G.c.replyToPost, l);
@@ -5838,8 +5838,8 @@
 					postId: t
 				}) => ({
 					loadComments: () => e(Object(Qs.commentsPageDataRequested)(t, void 0, {
-						sort: Xs.r.CHAT
-					}, Xs.r.CHAT)),
+						sort: Xs.s.CHAT
+					}, Xs.s.CHAT)),
 					openLoginModal: () => e(Object(m.h)()),
 					openRegisterModal: () => e(Object(m.j)()),
 					fetchAutomuteStatus: () => e(Object(Zs.b)(t))
@@ -7012,4 +7012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.065c0ef1030146c83c27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c8404afb7f635aba2fe7.js.map

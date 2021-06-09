@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ca6764d4358457840b09.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.71a3cc7ad96649f9bf6c.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -832,7 +832,7 @@
 				q = n.n(W);
 			const {
 				fbt: V
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), G = d.a.wrapped(R, "PrivateKey", q.a), J = d.a.div("ButtonsContainer", q.a), Z = d.a.div("Container", q.a), Y = d.a.div("Description", q.a), K = d.a.div("PrivateSubredditDetails", q.a), X = d.a.div("PrivateSubredditDescription", q.a), Q = d.a.h3("PrivateSubredditName", q.a), $ = d.a.a("Link", q.a), ee = d.a.wrapped(D.k, "LinkRouterButton", q.a), te = d.a.wrapped(D.j, "LinkButton", q.a), ne = d.a.wrapped(D.n, "SecondaryLinkRouterButton", q.a), se = d.a.wrapped(D.m, "SecondaryLinkButton", q.a), re = d.a.wrapped(ee, "GoHomeLinkButton", q.a), ie = d.a.wrapped(h.a, "CreateCommunityButton", q.a), oe = d.a.img("Image", q.a), ae = d.a.img("ImagePlaceholder", q.a), ce = d.a.wrapped(ee, "LeftLinkRouterButton", q.a), de = d.a.wrapped(te, "LeftLinkButton", q.a), le = d.a.wrapped(se, "SecondaryLeftLinkButton", q.a), ue = d.a.wrapped(ne, "SecondaryLeftLinkRouterButton", q.a), me = d.a.h3("Title", q.a), pe = d.a.div("PageBody", q.a), he = d.a.div("QuarantineMessageWrapper", q.a), be = Object(c.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = d.a.wrapped(R, "PrivateKey", q.a), G = d.a.div("ButtonsContainer", q.a), Z = d.a.div("Container", q.a), Y = d.a.div("Description", q.a), K = d.a.div("PrivateSubredditDetails", q.a), X = d.a.div("PrivateSubredditDescription", q.a), Q = d.a.h3("PrivateSubredditName", q.a), $ = d.a.a("Link", q.a), ee = d.a.wrapped(D.k, "LinkRouterButton", q.a), te = d.a.wrapped(D.j, "LinkButton", q.a), ne = d.a.wrapped(D.n, "SecondaryLinkRouterButton", q.a), se = d.a.wrapped(D.m, "SecondaryLinkButton", q.a), re = d.a.wrapped(ee, "GoHomeLinkButton", q.a), ie = d.a.wrapped(h.a, "CreateCommunityButton", q.a), oe = d.a.img("Image", q.a), ae = d.a.img("ImagePlaceholder", q.a), ce = d.a.wrapped(ee, "LeftLinkRouterButton", q.a), de = d.a.wrapped(te, "LeftLinkButton", q.a), le = d.a.wrapped(se, "SecondaryLeftLinkButton", q.a), ue = d.a.wrapped(ne, "SecondaryLeftLinkRouterButton", q.a), me = d.a.h3("Title", q.a), pe = d.a.div("PageBody", q.a), he = d.a.div("QuarantineMessageWrapper", q.a), be = Object(c.c)({
 				isLoggedIn: H.J,
 				origin: U.j,
 				user: H.j,
@@ -847,7 +847,7 @@
 						isContributorRequestTimestamp: s
 					} = n;
 					if (!s) return !1;
-					const r = 30 * A.y;
+					const r = 30 * A.z;
 					return s > Date.now() - r
 				})(e)
 			}), fe = Object(P.t)(), _e = Object(o.b)(be, (e, {
@@ -889,7 +889,7 @@
 							hk: "2lyDwB"
 						})), i.a.createElement(Y, null, V._("The moderators in this community have set it to Reddit Premium members only. You must upgrade to a Reddit Premium membership to continue.", null, {
 							hk: "mIiOw"
-						})), i.a.createElement(J, null, E ? i.a.createElement(le, {
+						})), i.a.createElement(G, null, E ? i.a.createElement(le, {
 							href: `${s.a.redditUrl}/premium`
 						}, V._("Get Premium", null, {
 							hk: "3ChWi4"
@@ -916,7 +916,7 @@
 							hk: "3pmHS2"
 						})), i.a.createElement(Y, null, V._("You must be at least eighteen years old to view this content. Are you over eighteen and willing to see adult content?", null, {
 							hk: "gI12S"
-						})), i.a.createElement(J, null, i.a.createElement(ce, {
+						})), i.a.createElement(G, null, i.a.createElement(ce, {
 							to: "/"
 						}, V._("No", null, {
 							hk: "3fMglW"
@@ -926,7 +926,7 @@
 							hk: "2hpRkN"
 						}))));
 					case M.a.PrivateSubreddit:
-						return i.a.createElement("div", null, i.a.createElement(G, null), i.a.createElement(me, null, "r/", v, " ", V._("is a private community", null, {
+						return i.a.createElement("div", null, i.a.createElement(J, null), i.a.createElement(me, null, "r/", v, " ", V._("is a private community", null, {
 							hk: "7zZmq"
 						})), y && y.length && i.a.createElement(K, null, i.a.createElement(Q, null, "r/", v), i.a.createElement(X, null, i.a.createElement("div", null, y))), i.a.createElement(Y, null, V._("The moderators of", null, {
 							hk: "3QSrbr"
@@ -934,7 +934,7 @@
 							hk: "3zhD9F"
 						}), i.a.createElement("br", null), V._("Only approved members can view and take part in its discussions.", null, {
 							hk: "af0uR"
-						})), i.a.createElement(J, null, E ? i.a.createElement(i.a.Fragment, null, !a && i.a.createElement(p.a, {
+						})), i.a.createElement(G, null, E ? i.a.createElement(i.a.Fragment, null, !a && i.a.createElement(p.a, {
 							eventSource: "content_gate",
 							smallButton: !0,
 							className: q.a.ContributorRequestButton,
@@ -974,8 +974,8 @@
 							hk: "3kRIzE"
 						})), V._("Are you certain you want to continue?", null, {
 							hk: "1gr5Bw"
-						})), i.a.createElement(J, null, ((e, t, n) => {
-							return !(e && e.hasVerifiedEmail) && n ? i.a.createElement(J, null, i.a.createElement(ue, {
+						})), i.a.createElement(G, null, ((e, t, n) => {
+							return !(e && e.hasVerifiedEmail) && n ? i.a.createElement(G, null, i.a.createElement(ue, {
 								to: "/"
 							}, V._("No Thank You", null, {
 								hk: "4B26AR"
@@ -983,7 +983,7 @@
 								href: `${s.a.redditUrl}/prefs/update`
 							}, V._("Verify Email", null, {
 								hk: "1893cq"
-							}))) : i.a.createElement(J, null, i.a.createElement(ce, {
+							}))) : i.a.createElement(G, null, i.a.createElement(ce, {
 								to: "/"
 							}, V._("No Thank You", null, {
 								hk: "4B26AR"
@@ -1005,7 +1005,7 @@
 							parseRegularLinks: !0
 						}) : V._("This community has been banned for violating the Reddit rules.", null, {
 							hk: "3iUVxA"
-						})))(t), i.a.createElement(J, null, i.a.createElement(ee, {
+						})))(t), i.a.createElement(G, null, i.a.createElement(ee, {
 							to: "/"
 						}, V._("Explore Reddit", null, {
 							hk: "FrUWU"
@@ -1015,7 +1015,7 @@
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), i.a.createElement(me, null, V._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "4bCnhl"
-						})), i.a.createElement(J, null, i.a.createElement(ee, {
+						})), i.a.createElement(G, null, i.a.createElement(ee, {
 							to: "/"
 						}, V._("Explore Reddit", null, {
 							hk: "FrUWU"
@@ -1025,7 +1025,7 @@
 							hk: "31DRpe"
 						})), i.a.createElement(Y, null, V._("This community may have been banned or the community name is incorrect.", null, {
 							hk: "1lYMG2"
-						})), i.a.createElement(J, null, E && i.a.createElement(ie, {
+						})), i.a.createElement(G, null, E && i.a.createElement(ie, {
 							eventSource: "content_gate"
 						}), i.a.createElement(re, {
 							to: "/"
@@ -1066,7 +1066,7 @@
 										hk: "36ab4J"
 									})))
 							}
-						})(e)), i.a.createElement(J, null, i.a.createElement(re, {
+						})(e)), i.a.createElement(G, null, i.a.createElement(re, {
 							to: "/"
 						}, V._("Go Home", null, {
 							hk: "49p4or"
@@ -1076,7 +1076,7 @@
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), i.a.createElement(me, null, V._("Sorry, this custom feed is private or does not exist.", null, {
 							hk: "2Ml4j9"
-						})), i.a.createElement(J, null, i.a.createElement(re, {
+						})), i.a.createElement(G, null, i.a.createElement(re, {
 							to: "/"
 						}, V._("Go Home", null, {
 							hk: "49p4or"
@@ -1086,7 +1086,7 @@
 							src: `${s.a.assetPath}/img/snoomoji/snoo_thoughtful.png`
 						}), i.a.createElement(me, null, V._("This content has been restricted in your country in response to a legal request.", null, {
 							hk: "1q1rVU"
-						})), i.a.createElement(J, null, i.a.createElement(ee, {
+						})), i.a.createElement(G, null, i.a.createElement(ee, {
 							to: "/"
 						}, V._("Browse Reddit", null, {
 							hk: "1XnYmj"
@@ -2027,7 +2027,7 @@
 				}) => {
 					const o = t ? [{
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Saved,
+						isActive: n === b.Jb.PROFILE_PRIVATE && r === k.a.Saved,
 						key: "profile.mainmenu.saved",
 						text: s.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -2036,7 +2036,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Hidden,
+						isActive: n === b.Jb.PROFILE_PRIVATE && r === k.a.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: s.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -2045,7 +2045,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Upvoted,
+						isActive: n === b.Jb.PROFILE_PRIVATE && r === k.a.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: s.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -2054,7 +2054,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.Downvoted,
+						isActive: n === b.Jb.PROFILE_PRIVATE && r === k.a.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: s.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -2064,7 +2064,7 @@
 					}] : [];
 					t ? (o.push({
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.ReceivedGildings,
+						isActive: n === b.Jb.PROFILE_PRIVATE && r === k.a.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -2073,7 +2073,7 @@
 						position: I.MENU
 					}), o.push({
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_PRIVATE && r === k.a.GivenGildings,
+						isActive: n === b.Jb.PROFILE_PRIVATE && r === k.a.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -2092,7 +2092,7 @@
 					});
 					const a = i ? [{
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_SNOOBUILDER,
+						isActive: n === b.Jb.PROFILE_SNOOBUILDER,
 						key: "profile.mainmenu.snoobuilder",
 						text: s.fbt._("Snoobuilder", null, {
 							hk: "3SSKff"
@@ -2102,7 +2102,7 @@
 					}] : [];
 					return [{
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_OVERVIEW,
+						isActive: n === b.Jb.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: s.fbt._("Overview", null, {
 							hk: "2IBbqy"
@@ -2111,7 +2111,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_POSTS,
+						isActive: n === b.Jb.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: s.fbt._("Posts", null, {
 							hk: "a1BoF"
@@ -2120,7 +2120,7 @@
 						position: I.MENU
 					}, {
 						internal: !0,
-						isActive: n === b.Ib.PROFILE_COMMENTS,
+						isActive: n === b.Jb.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: s.fbt._("Comments", null, {
 							hk: "2VwjOc"
@@ -3288,7 +3288,7 @@
 				}
 			}
 			b.defaultProps = {
-				minimizedLength: c.Nb
+				minimizedLength: c.Ob
 			}, t.a = b
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -3786,7 +3786,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.H), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.I), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -5393,4 +5393,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.ca6764d4358457840b09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.71a3cc7ad96649f9bf6c.js.map

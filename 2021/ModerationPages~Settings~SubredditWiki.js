@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.3416beb3a3d9efc10f5d.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.0605c7a80bdf4ac4884c.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~Settings~SubredditWiki"], {
 		"./src/reddit/actions/pages/shared.ts": function(e, t, r) {
@@ -55,7 +55,7 @@
 				x = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const h = (e, t, r) => Object(p.a)(Object(b.a)(e, [v.a]), {
 				endpoint: Object(f.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.gb.GET,
+				method: m.hb.GET,
 				data: r
 			});
 			var I = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -316,7 +316,7 @@
 					t.username = Object(I.a)(t.username), n(Object(i.h)(r));
 					const x = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [v.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.gb.POST,
+						method: m.hb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: r.reason,
@@ -358,7 +358,7 @@
 					const i = n().subreddits.models[e].url,
 						c = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [v.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.gb.POST,
+							method: m.hb.POST,
 							data: {
 								api_type: "json",
 								id: r,
@@ -2205,4 +2205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.3416beb3a3d9efc10f5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~Settings~SubredditWiki.0605c7a80bdf4ac4884c.js.map

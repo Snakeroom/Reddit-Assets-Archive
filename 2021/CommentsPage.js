@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.6b74b864b79924b6f133.js
-// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c5343910dc2fddd13644.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -119,11 +119,11 @@
 				f = e => {
 					switch (e) {
 						case p.e.Admin:
-							return o.D.ADMIN;
+							return o.E.ADMIN;
 						case p.e.Moderator:
-							return o.D.MODERATOR;
+							return o.E.MODERATOR;
 						case p.e.Alumni:
-							return o.D.ALUMNI_ADMIN;
+							return o.E.ALUMNI_ADMIN;
 						default:
 							return ""
 					}
@@ -284,7 +284,7 @@
 									const d = t.payload.name,
 										c = g(t.payload),
 										l = a(),
-										m = Object(r.a)(l, s).sortToUse === o.r.CHAT,
+										m = Object(r.a)(l, s).sortToUse === o.s.CHAT,
 										p = Object(N.a)(l, {
 											commentId: d
 										}),
@@ -346,7 +346,7 @@
 											commentId: d
 										}),
 										m = g(t.payload),
-										p = Object(r.a)(c, s).sortToUse === o.r.CHAT;
+										p = Object(r.a)(c, s).sortToUse === o.s.CHAT;
 									if (l && m) {
 										const s = v(0, n, t.payload),
 											o = t.payload.total_comment_count;
@@ -659,7 +659,7 @@
 					{
 						sortToUse: r
 					} = Object(L.a)(e, n);
-				return (!r || r === h.r.CONFIDENCE) && Object(se.c)(e, {
+				return (!r || r === h.s.CONFIDENCE) && Object(se.c)(e, {
 					experimentEligibilitySelector: () => Object(K.J)(e),
 					experimentName: te.s
 				}) === te.u.Enabled
@@ -800,8 +800,8 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.ac.WEEK.toUpperCase(),
-									sort: h.M.TOP,
+									range: h.bc.WEEK.toUpperCase(),
+									sort: h.N.TOP,
 									subredditName: i.name
 								},
 								n = {
@@ -855,7 +855,7 @@
 						L = v.pages.comments.api.pending[O],
 						T = !Object(K.J)(v),
 						N = Object(K.j)(v),
-						M = o === h.r.CHAT,
+						M = o === h.s.CHAT,
 						F = !!v.platform.lastPage;
 					if ((L || j && !I) && !(M && F)) {
 						if (j && !v.sidebarPromotedPosts.firstFetch) {
@@ -876,7 +876,7 @@
 					const D = {
 						...s,
 						...M ? {
-							sort: h.r.LIVE
+							sort: h.s.LIVE
 						} : T ? {
 							sort: s.sort,
 							depth: 2
@@ -1264,7 +1264,7 @@
 			}) => {
 				const i = await (async (e, t, s) => Object(g.a)(Object(f.a)(e, [C.a]), {
 						endpoint: `${e.apiUrl}/api/set_suggested_sort/`,
-						method: c.gb.POST,
+						method: c.hb.POST,
 						data: {
 							api_type: "json",
 							id: t,
@@ -1537,7 +1537,7 @@
 						suggestedSort: y,
 						showTooltip: k,
 						toggleContestModeModal: O
-					} = this.props, w = b.contestMode, E = !h.search.includes(c.r.CONFIDENCE), P = v === c.r.CONFIDENCE && E, _ = p && !P, S = c.t[v], L = S ? S() : "", N = y && v === y && !P ? this.addSuggestedLabel(L) : L, M = w ? o.fbt._("End contest mode?", null, {
+					} = this.props, w = b.contestMode, E = !h.search.includes(c.s.CONFIDENCE), P = v === c.s.CONFIDENCE && E, _ = p && !P, S = c.u[v], L = S ? S() : "", N = y && v === y && !P ? this.addSuggestedLabel(L) : L, M = w ? o.fbt._("End contest mode?", null, {
 						hk: "2AkJRZ"
 					}) : o.fbt._("Start contest?", null, {
 						hk: "2PQPOu"
@@ -1571,10 +1571,10 @@
 					}), r.a.createElement(se, {
 						isOpen: i,
 						tooltipId: $
-					}, [c.r.CONFIDENCE, c.r.TOP, c.r.NEW, c.r.CONTROVERSIAL, c.r.OLD, c.r.QA].map(e => {
+					}, [c.s.CONFIDENCE, c.s.TOP, c.s.NEW, c.s.CONTROVERSIAL, c.s.OLD, c.s.QA].map(e => {
 						const t = s || g,
 							o = Object(I.b)(t),
-							n = c.t[e],
+							n = c.u[e],
 							i = n ? n() : "";
 						return r.a.createElement(me, {
 							isOverlay: u,
@@ -5720,7 +5720,7 @@
 							postsById: S
 						} = this.props, T = S[e], N = T.crosspostRootId && S[T.crosspostRootId] ? S[T.crosspostRootId] : T;
 						T.crosspostRootId && !S[T.crosspostRootId] && v.c.withScope(e => {
-							e.setExtra("errorType", b.q.API), e.setExtra("description", `Post ${T.id} is crosspost of ${T.crosspostRootId}, but ` + `${T.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
+							e.setExtra("errorType", b.r.API), e.setExtra("description", `Post ${T.id} is crosspost of ${T.crosspostRootId}, but ` + `${T.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
 						});
 						const M = this.props.postComponentForLayout({
 								isCrosspost: !!T.crosspostRootId,
@@ -5875,7 +5875,7 @@
 					}, m.a.createElement(P.a, {
 						className: B.a.seeMorePostsText,
 						to: Object(p.a)(C, {
-							type: b.Ub.Posts
+							type: b.Vb.Posts
 						})
 					}, D._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -6120,13 +6120,13 @@
 				}),
 				q = Object(d.b)(K, e => ({
 					loadMorePosts: t => e(Object(h.r)({
-						sort: l.T.HOT,
+						sort: l.U.HOT,
 						subredditName: t
 					}))
 				}));
 			class G extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.T.TOP, t, e, l.ac.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(f.d) : null, this.onViewed = (e, t) => Object(w.f)(this.listingKey(), l.U.TOP, t, e, l.bc.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(O.c)("recommended_footer"))
 					}
 				}
@@ -6137,8 +6137,8 @@
 						post: s,
 						subredditOrProfile: o
 					} = this.props;
-					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.T.TOP, {
-						t: l.ac.WEEK
+					return e && s && s.id && !t ? Object(p.a)(s.id) : Object(u.a)(o.name, l.U.TOP, {
+						t: l.bc.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -7324,7 +7324,7 @@
 								tooltipType: Fe.c.StickyPost
 							}))
 						}))
-					}, v.H), this.sendEventWithName = (e, t) => () => this.props.sendEvent(Object(qe.d)(this.props.postId, e, t)), this.updateWindowHeight = () => {
+					}, v.I), this.sendEventWithName = (e, t) => () => this.props.sendEvent(Object(qe.d)(this.props.postId, e, t)), this.updateWindowHeight = () => {
 						this.needsUpdatedMeasurements = !0, this.handleScroll()
 					}, this.updateCommentSortRef = e => {
 						this.commentSortRef = e, this.needsUpdatedMeasurements = !0
@@ -7414,7 +7414,7 @@
 							this.props.isOverlay || Object(E.d)(E.c.CommentsPage, o)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						v.Hb.includes(e) && Object(Ke.a)(e)
+						v.Ib.includes(e) && Object(Ke.a)(e)
 					}
 				}
 				UNSAFE_componentWillReceiveProps(e) {
@@ -8161,4 +8161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6b74b864b79924b6f133.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c5343910dc2fddd13644.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.cc7b85d4356ad69b0e11.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.35664413da0e37cff1f4.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/graphql/operations/AwardSheetInfo.json": function(e) {
@@ -1886,7 +1886,7 @@
 						s = re._("Reddit contractor", null, {
 							hk: "3APwEh"
 						}),
-						a = !e.isDeleted && e.post.distinguishType === i.D.ADMIN;
+						a = !e.isDeleted && e.post.distinguishType === i.E.ADMIN;
 					return n.a.createElement(x.a, {
 						author: e.post.author,
 						className: Object(o.a)(te.a.authorLink, {
@@ -1963,7 +1963,7 @@
 						we = Object(a.e)(fe),
 						ge = Object(w.a)(se),
 						Ae = Object(w.a)(se),
-						ve = l && l.meta && l.meta.name === i.Ib.COMMENTS,
+						ve = l && l.meta && l.meta.name === i.Jb.COMMENTS,
 						xe = Object(f.a)(x),
 						Oe = we === W.b.Left,
 						je = x.authorIsContractor && !!F && F.type === Q.f.EmployeesOnly,
@@ -1996,7 +1996,7 @@
 							postOrComment: x,
 							tooltipType: L
 						}, n.a.createElement(j.b, {
-							ignore: !!x.distinguishType && x.distinguishType !== i.D.NONE,
+							ignore: !!x.distinguishType && x.distinguishType !== i.E.NONE,
 							subredditId: ne,
 							userId: x.authorId
 						}, n.a.createElement(ce, {
@@ -2306,7 +2306,7 @@
 						mimetype: a
 					};
 					return Object(n.a)(Object(o.a)(e, [A.a]), {
-						method: s.gb.POST,
+						method: s.hb.POST,
 						endpoint: `${e.apiUrl}/api/v1/community_awards/award_asset_upload_s3`,
 						data: i
 					})
@@ -2427,7 +2427,7 @@
 						raw_json: 1
 					};
 					return Object(n.a)(Object(o.a)(e, [A.a]), {
-						method: s.gb.POST,
+						method: s.hb.POST,
 						endpoint: `${e.apiUrl}/api/report_award`,
 						data: a
 					}).then(e => e.ok ? {
@@ -3121,4 +3121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.cc7b85d4356ad69b0e11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.35664413da0e37cff1f4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.5209441ab74126c43ffe.js
-// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.d5b19fe51ad4e4f08162.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -668,7 +668,7 @@
 					loadingPostComponentForLayout: () => L
 				}),
 				V = Object(d.b)(F);
-			class H extends l.a.Component {
+			class A extends l.a.Component {
 				constructor() {
 					super(...arguments), this.mounted = !1, this.state = {
 						visible: !1
@@ -707,7 +707,7 @@
 					}, l.a.Children.toArray(p))
 				}
 			}
-			t.a = V(H)
+			t.a = V(A)
 		},
 		"./src/reddit/components/PostList/SomethingWrong.tsx": function(e, t, s) {
 			"use strict";
@@ -836,7 +836,7 @@
 					},
 					h = g()(() => {
 						l(), r = window.setTimeout(d, s)
-					}, p.H);
+					}, p.I);
 				return {
 					cleanup: d,
 					eventHandler: t => {
@@ -933,17 +933,17 @@
 				N = s("./src/reddit/constants/elementClassNames.ts"),
 				F = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				V = s("./src/reddit/selectors/platform.ts"),
-				H = s("./src/telemetry/helpers/sendEvent.ts"),
-				A = s("./src/telemetry/helpers/sendTiming.ts"),
-				W = s("./src/reddit/components/Scroller/Simple.m.less"),
-				B = s.n(W);
+				A = s("./src/telemetry/helpers/sendEvent.ts"),
+				W = s("./src/telemetry/helpers/sendTiming.ts"),
+				H = s("./src/reddit/components/Scroller/Simple.m.less"),
+				B = s.n(H);
 			const z = L.g,
-				D = 5 * p.H,
+				D = 5 * p.I,
 				U = 3,
-				q = Object(m.c)({
+				G = Object(m.c)({
 					isOverlayOpen: V.h
 				}),
-				G = Object(c.b)(q),
+				q = Object(c.b)(G),
 				K = {};
 
 			function Q(e) {
@@ -963,10 +963,10 @@
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				se = 2 * p.H,
+				se = 2 * p.I,
 				ie = 400,
 				ne = 8,
-				oe = 5 * p.H,
+				oe = 5 * p.I,
 				re = 30,
 				ae = "object" == typeof performance && "function" == typeof performance.now,
 				le = () => ae ? performance.now() : Date.now();
@@ -994,9 +994,9 @@
 						const t = {
 							name: this.props.trackingName
 						};
-						H.b.enqueue(new R.a({
+						A.b.enqueue(new R.a({
 							args: [e, t],
-							cb: (e, t) => Object(A.a)(p.l.Redesign, {
+							cb: (e, t) => Object(W.a)(p.l.Redesign, {
 								data: e,
 								meta: t,
 								type: "scrollfps"
@@ -1058,7 +1058,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(h.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = n()(() => {
 						this.handleScroll()
-					}, p.H), this.pauseAllElements = () => {
+					}, p.I), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -1080,7 +1080,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(h.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.H))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(h.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.I))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -1112,7 +1112,7 @@
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, p.H), this.handleScroll = () => {
+					}, p.I), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = u.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(_.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
@@ -1155,7 +1155,7 @@
 								} = l, p = !!this.itemsInViewport.get(c);
 								if (this.elementIsUnmountable(d)) h && p && l.loaded && l.isFocusable && a.push(h.pauseContent);
 								else if (h && this.loadItemIfPossible(l, h, t, s, i, a), this.elementIsVisible(d)) {
-									n.push(l), !p && m && H.b.enqueue(new R.a({
+									n.push(l), !p && m && A.b.enqueue(new R.a({
 										cb: m,
 										args: void 0
 									}));
@@ -1168,7 +1168,7 @@
 								id: e,
 								trackOnExitedViewport: t
 							}) => {
-								t && !n.has(e) && H.b.enqueue(new R.a({
+								t && !n.has(e) && A.b.enqueue(new R.a({
 									cb: t,
 									args: [!1]
 								}))
@@ -1201,7 +1201,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, p.H), this.hideChild = (e, t) => {
+					}, p.I), this.hideChild = (e, t) => {
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const i = s.el.firstChild;
@@ -1227,7 +1227,7 @@
 								const i = this.getScrollTop() + s.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(_.c)(this.scrollContainer, i), this.callOnScrollForItemsChanged())
-								}, p.H)
+								}, p.I)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -1412,7 +1412,7 @@
 						id: e,
 						trackOnExitedViewport: t
 					}) => {
-						t && H.b.enqueue(new R.a({
+						t && A.b.enqueue(new R.a({
 							cb: t,
 							args: [!0]
 						}))
@@ -1459,7 +1459,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = G(Object(F.b)(ce))
+			t.b = q(Object(F.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -1708,7 +1708,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = o()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, l.H), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, l.I), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -2006,25 +2006,25 @@
 				isLoggedOut: t
 			}) {
 				switch (e.type) {
-					case n.F.AUTHORIZATION_ERROR:
+					case n.G.AUTHORIZATION_ERROR:
 						return t ? i.fbt._("You might need to be logged in to do that.", null, {
 							hk: "1313fG"
 						}) : i.fbt._("It looks like you aren't allowed to do that.", null, {
 							hk: "5tQod"
 						});
-					case n.F.VALIDATION_ERROR:
+					case n.G.VALIDATION_ERROR:
 						return i.fbt._("We weren't able to handle your request.", null, {
 							hk: "4umMwv"
 						});
-					case n.F.NOT_FOUND_ERROR:
+					case n.G.NOT_FOUND_ERROR:
 						return i.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 							hk: "2UmS4e"
 						});
-					case n.F.SERVER_ERROR:
+					case n.G.SERVER_ERROR:
 						return i.fbt._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "1Sxl7y"
 						});
-					case n.F.LIKELY_UBLOCK_ERROR:
+					case n.G.LIKELY_UBLOCK_ERROR:
 						return i.fbt._("It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use.", null, {
 							hk: "6Gh68"
 						});
@@ -2331,4 +2331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.5209441ab74126c43ffe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.d5b19fe51ad4e4f08162.js.map

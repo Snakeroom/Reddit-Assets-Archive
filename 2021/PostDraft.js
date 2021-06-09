@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.0019b9fc4713dd9daa3f.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.a0db74a760fd2597b433.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -346,7 +346,7 @@
 				p = n("./src/reddit/constants/headers.ts");
 			var h = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/add_post_to_collection.json`,
-				method: l.gb.POST,
+				method: l.hb.POST,
 				data: {
 					collection_id: t,
 					link_fullname: n
@@ -354,7 +354,7 @@
 			});
 			var b = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/create_collection.json`,
-				method: l.gb.POST,
+				method: l.hb.POST,
 				data: {
 					title: t,
 					sr_fullname: n
@@ -362,7 +362,7 @@
 			});
 			var f = (e, t) => Object(u.a)(Object(m.a)(e, [p.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/delete_collection.json`,
-					method: l.gb.POST,
+					method: l.hb.POST,
 					data: {
 						collection_id: t
 					}
@@ -370,11 +370,11 @@
 				x = n("./src/config.ts");
 			var g = (e, t) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${x.a.gatewayUrl}/desktopapi/v1/subreddit_collections/${t}`,
-				method: l.gb.GET
+				method: l.hb.GET
 			});
 			var E = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/remove_post_in_collection.json`,
-				method: l.gb.POST,
+				method: l.hb.POST,
 				data: {
 					collection_id: t,
 					link_fullname: n
@@ -382,7 +382,7 @@
 			});
 			var _ = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_title.json`,
-				method: l.gb.POST,
+				method: l.hb.POST,
 				data: {
 					collection_id: t,
 					title: n
@@ -390,7 +390,7 @@
 			});
 			var v = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/reorder_collection.json`,
-				method: l.gb.POST,
+				method: l.hb.POST,
 				data: {
 					collection_id: t,
 					link_ids: n.join(",")
@@ -398,7 +398,7 @@
 			});
 			var y = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 				endpoint: `${e.apiUrl}/api/v1/collections/update_collection_description.json`,
-				method: l.gb.POST,
+				method: l.hb.POST,
 				data: {
 					collection_id: t,
 					description: n
@@ -406,7 +406,7 @@
 			});
 			var w = (e, t, n) => Object(u.a)(Object(m.a)(e, [p.a]), {
 					endpoint: `${e.apiUrl}/api/v1/collections/update_collection_display_layout.json`,
-					method: l.gb.POST,
+					method: l.hb.POST,
 					data: {
 						collection_id: t,
 						display_layout: n
@@ -1542,7 +1542,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, o = n === d.Qb.CROSSPOST;
+				} = e, o = n === d.Rb.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(x, null, r.a.createElement(h, null), o ? s.fbt._("Crossposting to Reddit", null, {
@@ -4079,12 +4079,12 @@
 				y = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === d.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / o.Mb : void 0
+						submitScheduledTime: e && e.submitTime === d.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / o.Nb : void 0
 					}
 				},
 				w = e => {
-					const t = Object(i.f)(e.startDate).getTime() / o.Mb,
-						n = Object(i.f)(e.endDate).getTime() / o.Mb;
+					const t = Object(i.f)(e.startDate).getTime() / o.Nb,
+						n = Object(i.f)(e.endDate).getTime() / o.Nb;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: n,
@@ -4798,4 +4798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.0019b9fc4713dd9daa3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a0db74a760fd2597b433.js.map

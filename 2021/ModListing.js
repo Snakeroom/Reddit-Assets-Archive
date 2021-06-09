@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.6f7b9344d76930cd7ee8.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.97a96be44242ff0319fa.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -214,7 +214,7 @@
 			})), n.d(t, "morePostsFailed", (function() {
 				return H
 			})), n.d(t, "moreModListingRequested", (function() {
-				return U
+				return A
 			})), n.d(t, "hideSubredditSuccess", (function() {
 				return W
 			})), n.d(t, "hideSubredditPending", (function() {
@@ -254,11 +254,11 @@
 				g = (e, t) => Object(b.a)(e, {
 					data: t,
 					endpoint: Object(x.a)(Object(v.a)(`${p.a.gatewayUrl}/desktopapi/v1/mod`)),
-					method: o.gb.GET
+					method: o.hb.GET
 				});
 			const _ = (e, t, n, s) => Object(b.a)(Object(h.a)(e, [f.a]), {
 					endpoint: `${e.apiUrl}/api/filter/user/${t}/f/mod/${Object(y.c)(n)}`,
-					method: s ? o.gb.PUT : o.gb.DELETE,
+					method: s ? o.hb.PUT : o.hb.DELETE,
 					data: {
 						model: JSON.stringify({
 							name: Object(y.h)(n)
@@ -307,14 +307,14 @@
 					})))
 				}, F = (e, t) => async (n, r) => {
 					const {
-						sort: a = o.U
+						sort: a = o.V
 					} = e.params, l = Object(k.d)(e.path), p = l ? u.e : u.d, b = Object(d.a)(p, a, e.queryParams), h = r(), f = h.listings.postOrder.ids[b], x = h.listings.postOrder.api.error[b];
 					if (h.listings.postOrder.api.pending[b] || f && !x && !t) return void(f && n(c.l({
 						title: s.fbt._("Subreddits you moderate", null, {
 							hk: "3RYtBz"
 						})
 					})));
-					const y = A(e.queryParams);
+					const y = U(e.queryParams);
 					await n(T(b, {
 						...i()(e.queryParams, m.l),
 						...i()(e.queryParams, m.k),
@@ -327,21 +327,21 @@
 							hk: "3RYtBz"
 						})
 					})), Object(w.h)(r(), !0)
-				}, R = Object(a.a)(M.i), D = Object(a.a)(M.h), H = Object(a.a)(M.g), U = e => async (t, n, {
+				}, R = Object(a.a)(M.i), D = Object(a.a)(M.h), H = Object(a.a)(M.g), A = e => async (t, n, {
 					apiContext: s
 				}) => {
 					const r = n(),
 						a = r.platform.currentPage;
 					if (!a) return;
 					const {
-						sort: c = o.U
+						sort: c = o.V
 					} = e, l = a.queryParams, p = Object(k.d)(a.url), b = p ? u.e : u.d, h = Object(d.a)(b, c, l), f = r.listings.postOrder.loadMore[h];
 					if (!f) return;
 					const x = r.listings.postOrder.api.pending[h],
 						y = r.listings.postOrder.fetchedTokens,
 						v = !(!y[h] || !y[h][f.token]);
 					if (x || v) return;
-					const _ = A(l);
+					const _ = U(l);
 					t(R({
 						key: h,
 						fetchedToken: f.token
@@ -372,9 +372,9 @@
 					}))
 				};
 
-			function A(e) {
+			function U(e) {
 				const t = m.x in e && e[m.x].toUpperCase() || "";
-				return t in o.ac && o.ac[t]
+				return t in o.bc && o.bc[t]
 			}
 			const W = Object(a.a)(M.c),
 				K = Object(a.a)(M.b),
@@ -2064,12 +2064,12 @@
 					action: "click",
 					noun: "hide_subreddit"
 				}),
-				U = () => e => ({
+				A = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "unhide_subreddit"
 				}),
-				A = e => t => ({
+				U = e => t => ({
 					source: "r_mod",
 					action: "click",
 					noun: e ? "unfiltered_subreddits" : "filtered_subreddits"
@@ -2150,7 +2150,7 @@
 							subredditName: t.subredditName
 						});
 						if (!n) {
-							const n = (e => e.startsWith(c.cc) ? e.slice(2) : e)(t.subredditName);
+							const n = (e => e.startsWith(c.dc) ? e.slice(2) : e)(t.subredditName);
 							return n && Object(ne.j)(e, {
 								profileName: n
 							}) || null
@@ -2161,7 +2161,7 @@
 			class de extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(U()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(A()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -2219,7 +2219,7 @@
 			class ve extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onToggleFiltered = () => {
-						this.props.sendEvent(A(this.props.filtered)), this.props.toggleFiltered()
+						this.props.sendEvent(U(this.props.filtered)), this.props.toggleFiltered()
 					}
 				}
 				render() {
@@ -2268,12 +2268,12 @@
 					location: t
 				}) => t.search, (e, {
 					match: t
-				}) => t.params.sort || c.T.HOT, (e, {
+				}) => t.params.sort || c.U.HOT, (e, {
 					match: t
 				}) => Object(W.d)(t.path), ke.i, ke.c, (e, t, n, s, i) => {
 					const o = r()([...Object(l.a)(e)]),
 						a = je.x in o && o[je.x].toUpperCase(),
-						d = "string" == typeof a && a in c.ac ? c.ac[a] : c.bc,
+						d = "string" == typeof a && a in c.bc ? c.bc[a] : c.cc,
 						m = n ? Se.e : Se.d;
 					return {
 						filtered: n,
@@ -2336,4 +2336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.6f7b9344d76930cd7ee8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.97a96be44242ff0319fa.js.map

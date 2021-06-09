@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.e460d14158e35caca69f.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.77b59cc8caf96a58b349.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -643,7 +643,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							r = await Object(s.b)({
 								endpoint: t,
-								method: n.gb.GET
+								method: n.hb.GET
 							});
 						r.ok && r.body && e(l(r.body))
 					}
@@ -1309,7 +1309,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.gb.GET
+					method: s.hb.GET
 				})
 			}
 		},
@@ -1380,7 +1380,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.gb.GET
+					method: s.hb.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -1402,7 +1402,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.gb.POST,
+					method: s.hb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -2197,4 +2197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.e460d14158e35caca69f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.77b59cc8caf96a58b349.js.map

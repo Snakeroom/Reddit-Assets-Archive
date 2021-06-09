@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.69436d76f4025eb2859c.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d13a054fd0fa89eaa711.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1823,7 +1823,7 @@
 					let m, f;
 					if (this.state.mounted || p === s.a.Live) m = function(e, t, n) {
 						const o = Object(s.e)(e, t),
-							r = new Date(e * a.Mb);
+							r = new Date(e * a.Nb);
 						let d;
 						return o === s.a.Live || n ? i.fbt._("Now", null, {
 							hk: "Prpcg"
@@ -2719,7 +2719,7 @@
 					ce = q.bannedBy && Object(w.b)(q.bannedBy);
 				return s.a.createElement("div", {
 					className: e
-				}, a && t && q.distinguishType === d.D.MODERATOR && s.a.createElement(r.Fragment, null, s.a.createElement(y.a, {
+				}, a && t && q.distinguishType === d.E.MODERATOR && s.a.createElement(r.Fragment, null, s.a.createElement(y.a, {
 					name: "mod",
 					isFilled: !0,
 					className: Object(c.a)(M.a.icon, M.a.modIcon)
@@ -3839,4 +3839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.69436d76f4025eb2859c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d13a054fd0fa89eaa711.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82d73a5bc000cb3e4e94.js
-// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e46b41c08cf490de5fd6.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -367,9 +367,9 @@
 			})), r.d(t, "b", (function() {
 				return N
 			})), r.d(t, "l", (function() {
-				return I
-			})), r.d(t, "m", (function() {
 				return D
+			})), r.d(t, "m", (function() {
+				return I
 			})), r.d(t, "c", (function() {
 				return S
 			})), r.d(t, "a", (function() {
@@ -536,7 +536,7 @@
 						posts: u,
 						meta: s.meta
 					})), l
-				}, N = Object(o.a)(_.a), I = Object(o.a)(_.i), D = Object(o.a)(_.j), S = ({
+				}, N = Object(o.a)(_.a), D = Object(o.a)(_.i), I = Object(o.a)(_.j), S = ({
 					subredditId: e
 				}) => async (t, r, {
 					gqlContext: n
@@ -1272,7 +1272,7 @@
 				O = r("./src/reddit/components/PowerupsSidebar/index.m.less"),
 				N = r.n(O);
 			const {
-				fbt: I
+				fbt: D
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = ({
 				className: e,
@@ -1290,7 +1290,7 @@
 					O = Object(a.e)(e => Object(x.l)(e, {
 						subredditId: t
 					})),
-					D = Object(a.e)(x.v),
+					I = Object(a.e)(x.v),
 					S = Object(a.e)(e => !!Object(x.j)(e, {
 						subredditId: t
 					})),
@@ -1306,16 +1306,16 @@
 					y(P ? Object(b.m)() : Object(b.i)()), r(Object(c.d)("powerups_sidebar"))
 				};
 				if (!j || 1 === j.tiersInfo.length || !E) return null;
-				const L = !!(null == D ? void 0 : D.freeCount),
+				const L = !!(null == I ? void 0 : I.freeCount),
 					B = P ? 8 : 50,
-					M = S ? I._("Powerups are unlocked in", null, {
+					M = S ? D._("Powerups are unlocked in", null, {
 						hk: "fquP8"
-					}) : I._("Powerup to unlock perks for", null, {
+					}) : D._("Powerup to unlock perks for", null, {
 						hk: "3kTNGL"
 					});
 				return i.a.createElement(u.a, null, i.a.createElement(m.a, {
 					className: e,
-					title: I._("Powerups", null, {
+					title: D._("Powerups", null, {
 						hk: "DrcXp"
 					})
 				}, i.a.createElement("div", {
@@ -1334,26 +1334,26 @@
 					className: N.a.button,
 					onClick: z,
 					isFullWidth: !0
-				}, L && !A ? I._("Use Your Premium Powerup", null, {
+				}, L && !A ? D._("Use Your Premium Powerup", null, {
 					hk: "JJNaN"
-				}) : I._("Become a Hero", null, {
+				}) : D._("Become a Hero", null, {
 					hk: "3IZNw3"
 				}))), !P && i.a.createElement("div", {
 					className: N.a.oldTitleGroup
 				}, i.a.createElement("h2", {
 					className: N.a.title
-				}, I._("Powerup and unlock perks for {subreddit name}", [I._param("subreddit name", E.displayText)], {
+				}, D._("Powerup and unlock perks for {subreddit name}", [D._param("subreddit name", E.displayText)], {
 					hk: "2gDqtV"
 				})), i.a.createElement("button", {
 					className: N.a.perksButton,
 					onClick: z
-				}, I._("Show Perks", null, {
+				}, D._("Show Perks", null, {
 					hk: "3TgZRL"
 				}))), i.a.createElement("div", {
 					className: N.a.group
 				}, i.a.createElement("h3", {
 					className: N.a.subTitle
-				}, I._("Community heroes", null, {
+				}, D._("Community heroes", null, {
 					hk: "1hGdba"
 				})), i.a.createElement(C, {
 					className: N.a.progress,
@@ -1369,7 +1369,7 @@
 				}), !(null == O ? void 0 : O.length) && P && i.a.createElement("div", {
 					className: N.a.becomeFirstHero
 				}, i.a.createElement(l.a, {
-					displayName: I._("Become the first hero!", null, {
+					displayName: D._("Become the first hero!", null, {
 						hk: "4ta0Hi"
 					}).toString(),
 					userName: null == k ? void 0 : k.displayName,
@@ -1385,9 +1385,9 @@
 						y(Object(b.i)()), r(Object(d.h)(p.a.ECON_POWERUPS_PURCHASE))
 					},
 					isFullWidth: !0
-				}, L ? I._("Apply Your Powerup", null, {
+				}, L ? D._("Apply Your Powerup", null, {
 					hk: "10PunM"
-				}) : I._("Become a Hero", null, {
+				}) : D._("Become a Hero", null, {
 					hk: "3IZNw3"
 				})), L && i.a.createElement("div", {
 					className: N.a.premiumDescription
@@ -1395,7 +1395,7 @@
 					className: N.a.premiumIconWrapper
 				}, i.a.createElement(_.a, {
 					className: N.a.premiumIcon
-				})), i.a.createElement("span", null, I._("Premium gives you one monthly Powerup", null, {
+				})), i.a.createElement("span", null, D._("Premium gives you one monthly Powerup", null, {
 					hk: "tdfip"
 				})))))))
 			}
@@ -1690,23 +1690,23 @@
 					}, e.children))
 				}
 			}
-			var I = N;
-			const D = e => {
+			var D = N;
+			const I = e => {
 				const t = e.url && Object(O.h)(O.f, e.url);
 				return t ? t.url : e.url
 			};
 			var S = e => e.menuItem.url ? s.a.createElement(v, {
-					href: D(e.menuItem),
+					href: I(e.menuItem),
 					isActive: !!e.isActive,
 					isTopBannerVariant: e.isTopBannerVariant
-				}, e.menuItem.text) : s.a.createElement(I, {
+				}, e.menuItem.text) : s.a.createElement(D, {
 					isActive: !!e.isActive,
 					isTopBannerVariant: e.isTopBannerVariant,
 					label: e.menuItem.text
 				}, e.menuItem.children && e.menuItem.children.map(e => s.a.createElement(y, {
-					key: `${e.text}-${D(e)}`,
+					key: `${e.text}-${I(e)}`,
 					role: "listitem",
-					href: D(e),
+					href: I(e),
 					target: "_blank",
 					rel: "noopener"
 				}, e.text))),
@@ -1765,7 +1765,7 @@
 				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(c.t)(),
-				U = [H.Ib.SUBREDDIT, H.Ib.COMMENTS, H.Ib.COLLECTION_COMMENTS],
+				U = [H.Jb.SUBREDDIT, H.Jb.COMMENTS, H.Jb.COLLECTION_COMMENTS],
 				Z = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && U.indexOf(t.pageLayer.meta.name) > -1,
@@ -1841,7 +1841,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, i = !!n && !!n.meta && n.meta.name === H.Ib.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!n && !!n.meta && n.meta.name === H.Jb.SUBREDDIT_WIKI, a = `wiki/${ne.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(v, {
 					isActive: i,
 					isTopBannerVariant: r,
@@ -2009,7 +2009,7 @@
 				}),
 				O = Object(a.b)(F),
 				N = l.a.div("WidgetContent", k.a),
-				I = ({
+				D = ({
 					display: e,
 					isFlairFilter: t,
 					onMouseDown: r,
@@ -2025,7 +2025,7 @@
 					isFlairFilter: t,
 					forceSmallEmojis: !0
 				})));
-			class D extends i.a.Component {
+			class I extends i.a.Component {
 				constructor(e) {
 					super(e), this.flairListRef = i.a.createRef(), this.trackFlairWidgetClick = e => {
 						this.props.sendEvent(Object(x.f)(e))
@@ -2071,7 +2071,7 @@
 					} = this.props;
 					return i.a.createElement("ul", {
 						ref: this.flairListRef
-					}, e.map(e => i.a.createElement(I, {
+					}, e.map(e => i.a.createElement(D, {
 						key: e.templateId,
 						display: r.display,
 						flair: e,
@@ -2098,7 +2098,7 @@
 						subredditName: t,
 						widget: r
 					} = this.props;
-					return i.a.createElement("ul", null, i.a.createElement(I, {
+					return i.a.createElement("ul", null, i.a.createElement(D, {
 						key: e.templateId,
 						display: r.display,
 						flair: e,
@@ -2125,7 +2125,7 @@
 					}, i.a.createElement(N, null, a && this.renderSelectedFlairFilter(a), !a && this.renderFlairFilters(s), o && this.renderButton()))
 				}
 			}
-			t.a = C(O(Object(m.c)(D)))
+			t.a = C(O(Object(m.c)(I)))
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2345,9 +2345,9 @@
 				})))),
 				O = r("./node_modules/fbt/lib/FbtPublic.js"),
 				N = r("./src/lib/humanizeDate/index.ts"),
-				I = r("./src/reddit/controls/TextButton/index.tsx"),
-				D = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
-				S = r.n(D);
+				D = r("./src/reddit/controls/TextButton/index.tsx"),
+				I = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
+				S = r.n(I);
 			const P = 100,
 				T = {
 					isExpanded: !1
@@ -2358,7 +2358,7 @@
 				B = m.a.div("EventDate", S.a),
 				M = m.a.div("EventLocation", S.a),
 				R = m.a.div("EventDescription", S.a),
-				W = m.a.wrapped(I.a, "ToggleDescription", S.a);
+				W = m.a.wrapped(D.a, "ToggleDescription", S.a);
 			class H extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
@@ -2597,14 +2597,14 @@
 				Fe = r("./src/reddit/components/Widgets/SubredditRules/index.tsx"),
 				Oe = r("./src/reddit/components/Widgets/TextArea/index.m.less"),
 				Ne = r.n(Oe);
-			const Ie = m.a.div("WidgetContent", Ne.a),
-				De = m.a.wrapped(o.a, "RawHTMLDisplay", Ne.a);
+			const De = m.a.div("WidgetContent", Ne.a),
+				Ie = m.a.wrapped(o.a, "RawHTMLDisplay", Ne.a);
 			var Se = e => s.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, s.a.createElement(Ie, null, s.a.createElement(De, {
+				}, s.a.createElement(De, null, s.a.createElement(Ie, {
 					html: e.widget.textHtml || ""
 				}))),
 				Pe = r("./src/reddit/components/Widgets/Base/index.tsx");
@@ -3416,4 +3416,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82d73a5bc000cb3e4e94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e46b41c08cf490de5fd6.js.map

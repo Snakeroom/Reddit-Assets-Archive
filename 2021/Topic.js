@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.9436ed3bd726ce7ff3ac.js
-// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9505947d616bea1f50c3.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/graphql/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
@@ -565,7 +565,7 @@
 							postsById: j
 						} = this.props, I = j[e], k = I.crosspostRootId && j[I.crosspostRootId] ? j[I.crosspostRootId] : I;
 						I.crosspostRootId && !j[I.crosspostRootId] && v.c.withScope(e => {
-							e.setExtra("errorType", h.q.API), e.setExtra("description", `Post ${I.id} is crosspost of ${I.crosspostRootId}, but ` + `${I.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
+							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${I.id} is crosspost of ${I.crosspostRootId}, but ` + `${I.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
 						});
 						const R = this.props.postComponentForLayout({
 								isCrosspost: !!I.crosspostRootId,
@@ -720,7 +720,7 @@
 					}, u.a.createElement(L.a, {
 						className: A.a.seeMorePostsText,
 						to: Object(p.a)(f, {
-							type: h.Ub.Posts
+							type: h.Vb.Posts
 						})
 					}, W._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -2057,7 +2057,7 @@
 				Pe = s.n(Le);
 			const {
 				fbt: Oe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(P.t)(), je = (e, t) => t.match.params.sort || a.U, we = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(P.t)(), je = (e, t) => t.match.params.sort || a.V, we = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(n.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
@@ -2332,4 +2332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9436ed3bd726ce7ff3ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9505947d616bea1f50c3.js.map

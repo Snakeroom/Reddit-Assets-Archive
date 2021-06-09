@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.3d01e7c2053872c111f9.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.e87cd492a1a4039e19c2.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/index.m.less": function(e, i, t) {
@@ -74,10 +74,10 @@
 				});
 			var g = t("./src/reddit/components/TabBadger/index.m.less"),
 				B = t.n(g);
-			const v = 12 * a.N,
-				P = 2 * a.N,
+			const v = 12 * a.O,
+				P = 2 * a.O,
 				k = 5e4;
-			class N extends n.Component {
+			class w extends n.Component {
 				constructor() {
 					super(...arguments), this.timer = 0, this.state = {
 						isPillHidden: !0
@@ -122,7 +122,7 @@
 					})))
 				}
 			}
-			i.default = N
+			i.default = w
 		},
 		"./src/reddit/components/TabBadger/index.m.less": function(e, i, t) {
 			e.exports = {
@@ -132,4 +132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.3d01e7c2053872c111f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.e87cd492a1a4039e19c2.js.map

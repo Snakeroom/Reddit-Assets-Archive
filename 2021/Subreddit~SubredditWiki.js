@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.e31688080290ef1469fa.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.560f76a72db51575469c.js
+// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1158,7 +1158,7 @@
 						isContributorRequestTimestamp: s
 					} = n;
 					if (!s) return !1;
-					const r = 30 * A.y;
+					const r = 30 * A.z;
 					return s > Date.now() - r
 				})(e)
 			}), fe = Object(B.t)(), xe = Object(o.b)(he, (e, {
@@ -4445,8 +4445,8 @@
 				pe = n("./src/reddit/components/TopPostsWidgets/TopWeekPosts/index.m.less"),
 				be = n.n(pe);
 			const he = 10,
-				fe = Object(c.a)((e, t) => t.subredditName, e => Object(j.a)(e, l.T.TOP, {
-					t: l.ac.WEEK
+				fe = Object(c.a)((e, t) => t.subredditName, e => Object(j.a)(e, l.U.TOP, {
+					t: l.bc.WEEK
 				})),
 				xe = Object(c.c)({
 					discoveryUnit: e => Object(ue.c)(e, {
@@ -4522,9 +4522,9 @@
 					subredditName: t
 				}) => ({
 					loadMorePosts: () => e(Object(w.r)({
-						sort: l.T.TOP,
+						sort: l.U.TOP,
 						subredditName: t,
-						t: l.ac.WEEK
+						t: l.bc.WEEK
 					}))
 				}))(Object(ae.c)(ge)),
 				ve = n("./src/config.ts"),
@@ -5656,4 +5656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.e31688080290ef1469fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit~SubredditWiki.560f76a72db51575469c.js.map
