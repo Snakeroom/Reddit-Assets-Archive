@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c9d73f9ce15c570cd4f6.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ad99b96636ed27073896.js
+// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1551,7 +1551,7 @@
 				selectedChipPack: i,
 				selectedCoinPack: r
 			}) {
-				const n = Object(k.e)(G.o),
+				const n = Object(k.e)(G.p),
 					o = Object(k.e)(E.d),
 					[e, m] = Object(t.useState)(null),
 					[l, c] = Object(t.useState)(!1),
@@ -1717,7 +1717,7 @@
 			const {
 				fbt: Y
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = 1e3, X = Object(n.c)({
-				isNewPredictionsSheet: G.o,
+				isNewPredictionsSheet: G.p,
 				userCoins: E.d
 			}), Q = {
 				fetchPredictionChipPackages: e.d,
@@ -2090,7 +2090,7 @@
 				onReveal: y
 			}) => {
 				const [G, E] = Object(t.useState)(!1), [A, B] = Object(m.a)("hasSeenPredictionSneakPeek", !1), D = Object(l.a)(), V = Object(k.e)(u.t), b = !!p, g = r && !o;
-				if (!Object(k.e)(a => !i && !g && b && Object(f.m)(a))) return null;
+				if (!Object(k.e)(a => !i && !g && b && Object(f.n)(a))) return null;
 				const P = () => {
 					A || B(!0), E(!1)
 				};
@@ -3594,4 +3594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c9d73f9ce15c570cd4f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ad99b96636ed27073896.js.map

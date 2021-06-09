@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d04828e737c120b0c82e.js
-// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.cb45cf248de8e04a7c82.js
+// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -343,7 +343,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(G.d)(m, {
-								experimentName: l.Cc
+								experimentName: l.Dc
 							});
 							s(Object(o.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -473,7 +473,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(G.d)(r, {
-										experimentName: l.Cc
+										experimentName: l.Dc
 									});
 									t(Object(o.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1456,7 +1456,7 @@
 							return Object(Je.c)(e, {
 								experimentEligibilitySelector: Ye.K,
 								experimentName: We.cb
-							}) === We.Nb
+							}) === We.Ob
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: u.a
@@ -4876,4 +4876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d04828e737c120b0c82e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.cb45cf248de8e04a7c82.js.map

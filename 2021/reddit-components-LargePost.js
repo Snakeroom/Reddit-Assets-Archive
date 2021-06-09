@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a42f8f81f90b3a0c22ef.js
-// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d3c493da2877070a6499.js
+// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2371,7 +2371,7 @@
 					showAwardsPlaque: k.a,
 					isTournamentPost: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(j.p)(e)
+					}) => Boolean(t.predictionTournament) && Object(j.q)(e)
 				}), (e, {
 					listingKey: t,
 					listingName: n,
@@ -2437,7 +2437,7 @@
 						postId: Ce,
 						postIds: Se,
 						onceInViewport: Te
-					} = e, Ne = !!e.redditStyle || !!e["data-redditstyle"], Ie = Ne ? void 0 : f, Me = Object(l.a)(ue), Ae = pe && Me, Be = Object(c.a)(ue), Fe = Object(d.a)(ue), Le = Object(V.c)(xe), Re = !!xe.media && xe.media.type === g.o.RTJSON, De = _e && Re, We = n ? n - z.a : void 0, Ve = !(C && G || re), He = (e => e === ne.Mc.OnlyTitles)(ye) && !Object(ie.a)(xe), Ue = (e => e === ne.Mc.MediumHeight)(ye) && !Object(ie.a)(xe), ze = (e => {
+					} = e, Ne = !!e.redditStyle || !!e["data-redditstyle"], Ie = Ne ? void 0 : f, Me = Object(l.a)(ue), Ae = pe && Me, Be = Object(c.a)(ue), Fe = Object(d.a)(ue), Le = Object(V.c)(xe), Re = !!xe.media && xe.media.type === g.o.RTJSON, De = _e && Re, We = n ? n - z.a : void 0, Ve = !(C && G || re), He = (e => e === ne.Nc.OnlyTitles)(ye) && !Object(ie.a)(xe), Ue = (e => e === ne.Nc.MediumHeight)(ye) && !Object(ie.a)(xe), ze = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2452,7 +2452,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), qe = !!ce && !Object(ne.Md)(ce), Ke = (!P || qe) && !xe.isSponsored, Xe = Object(S.t)(xe, k), {
+					})(e), qe = !!ce && !Object(ne.Nd)(ce), Ke = (!P || qe) && !xe.isSponsored, Xe = Object(S.t)(xe, k), {
 						source: Ge
 					} = Xe, Je = Object(o.useRef)(null), Ye = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3678,9 +3678,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.rb
 				});
-				return !(!t || Object(o.Md)(t))
+				return !(!t || Object(o.Nd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a42f8f81f90b3a0c22ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d3c493da2877070a6499.js.map

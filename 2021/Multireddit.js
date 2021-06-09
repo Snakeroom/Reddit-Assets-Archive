@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.3d0f13ac2bb8310aa2ca.js
-// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.15c7bbd239d76a43f5a7.js
+// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1750,7 +1750,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => s === u.td.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => s === u.ud.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: i,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -5549,12 +5549,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.wd.SmIcon:
+						case b.xd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.wd.SmIconHc:
+						case b.xd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6364,15 +6364,15 @@
 				r = s("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.ud.Add:
+					case r.vd.Add:
 						return n.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.ud.Start:
+					case r.vd.Start:
 						return n.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.ud.Create:
+					case r.vd.Create:
 						return n.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -7554,13 +7554,13 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: n.zb
 					});
-					return !(!t || Object(n.Md)(t))
+					return !(!t || Object(n.Nd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.K,
 						experimentName: n.zb
-					}) === n.Qb.ListingEnabled
+					}) === n.Rb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, s) {
@@ -7581,21 +7581,21 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const c = e => Object(a.J)(e) || Object(a.K)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
+					experimentName: r.xc,
+					experimentEligibilitySelector: c
+				}), i.a),
+				l = Object(n.a)(d, e => e === r.Cc.Enabled),
+				u = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: r.wc,
 					experimentEligibilitySelector: c
 				}), i.a),
-				l = Object(n.a)(d, e => e === r.Bc.Enabled),
-				u = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.vc,
-					experimentEligibilitySelector: c
-				}), i.a),
-				m = Object(n.a)(u, e => e === r.zc.Enabled),
+				m = Object(n.a)(u, e => e === r.Ac.Enabled),
 				p = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.kd,
+					experimentName: r.ld,
 					experimentEligibilitySelector: c
 				}), i.a),
 				h = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.ld,
+					experimentName: r.md,
 					experimentEligibilitySelector: c
 				}), i.a)
 		},
@@ -7726,12 +7726,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.od
+						experimentName: n.pd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.wd.SmIcon || t === n.wd.SmIconHc
+					return t === n.xd.SmIcon || t === n.xd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7754,4 +7754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.3d0f13ac2bb8310aa2ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.15c7bbd239d76a43f5a7.js.map

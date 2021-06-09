@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.455e701c5a7a3f5eb412.js
-// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.2b5a9ecf5ec4f0c9fe19.js
+// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -89,8 +89,8 @@
 				g = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
 				_ = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
 				I = n("./src/lib/timeUntil/index.ts"),
-				k = n("./src/reddit/models/Toast/index.ts"),
-				v = n("./src/reddit/actions/economics/helpers/index.ts"),
+				v = n("./src/reddit/models/Toast/index.ts"),
+				k = n("./src/reddit/actions/economics/helpers/index.ts"),
 				y = n("./src/reddit/actions/economics/predictions/index.ts"),
 				w = n("./src/reddit/actions/post.ts"),
 				C = n("./src/reddit/selectors/experiments/econ/index.ts"),
@@ -107,15 +107,15 @@
 			function B(e) {
 				const t = Object(u.d)(),
 					n = Object(u.e)(h.d),
-					o = Object(u.e)(C.l),
-					r = Object(u.e)(C.k),
+					o = Object(u.e)(C.m),
+					r = Object(u.e)(C.l),
 					s = Object(b.a)(),
 					d = S(),
 					c = function() {
 						const e = S();
 						return (t, n) => e({
 							duration: 5e3,
-							kind: k.b.Error,
+							kind: v.b.Error,
 							...n,
 							text: t
 						})
@@ -143,7 +143,7 @@
 						coinPackage: e,
 						chipPackage: i
 					}) => {
-						if (e && e.coins > n) return Object(v.promptUserToBuyMoreCoins)(), void s(p.a);
+						if (e && e.coins > n) return Object(k.promptUserToBuyMoreCoins)(), void s(p.a);
 						const u = i ? i.id : e.id,
 							m = i ? i.amount : e.coins;
 						if (g) return c(L._("Error: Failed to make prediction. This prediction has already ended", null, {
@@ -162,7 +162,7 @@
 								price: m
 							})), o && t(Object(w.bb)(a)), E(!1), T(null), r ? f(!0) : d({
 								duration: 5e3,
-								kind: k.b.SuccessCommunity,
+								kind: v.b.SuccessCommunity,
 								text: L._("Thanks! See if you're right in {timeToResult}", [L._param("timeToResult", Object(I.a)(new Date(l), !0))], {
 									hk: "3ZSdoo"
 								})
@@ -204,8 +204,8 @@
 						endsAt: x,
 						options: T,
 						title: I,
-						resolvedOptionId: k,
-						totalVoteCount: v,
+						resolvedOptionId: v,
+						totalVoteCount: k,
 						selectedOptionId: y
 					} = e,
 					w = x < Date.now();
@@ -227,11 +227,11 @@
 					needsResolution: !1,
 					option: e,
 					onClick: () => b(e),
-					resolvedOptionId: k,
+					resolvedOptionId: v,
 					tournamentId: t,
 					userSelection: y,
 					userIsLoggedOut: !r,
-					votePercentage: (y || w || c) && e.voteCount && v ? Math.floor(e.voteCount / v * 100) : null,
+					votePercentage: (y || w || c) && e.voteCount && k ? Math.floor(e.voteCount / k * 100) : null,
 					isShowingHint: c
 				}))), i.a.createElement(g.a, {
 					disabled: m || c || !!y,
@@ -299,4 +299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.455e701c5a7a3f5eb412.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.2b5a9ecf5ec4f0c9fe19.js.map

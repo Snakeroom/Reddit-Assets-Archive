@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.3a43d038d18d6f2be7b8.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.d9918a11440432e0832e.js
+// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -51,7 +51,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(i.e)(p.q),
+				const s = Object(i.e)(p.r),
 					{
 						processingAvatarImageUrl: n
 					} = a.a;
@@ -553,9 +553,9 @@
 			})), s.d(t, "h", (function() {
 				return K
 			})), s.d(t, "g", (function() {
-				return q
-			})), s.d(t, "p", (function() {
 				return z
+			})), s.d(t, "p", (function() {
+				return q
 			})), s.d(t, "f", (function() {
 				return Y
 			})), s.d(t, "l", (function() {
@@ -638,13 +638,13 @@
 				onClick: e
 			}) => n.a.createElement("button", {
 				onClick: e
-			}, n.a.createElement(q, null)), q = () => H._("{=Live}", [H._param("=Live", n.a.createElement("span", {
+			}, n.a.createElement(z, null)), z = () => H._("{=Live}", [H._param("=Live", n.a.createElement("span", {
 				className: W.a.live
 			}, H._("Live", null, {
 				hk: "8x90I"
 			})))], {
 				hk: "3ZBbO0"
-			}), z = () => H._("Recorded live", null, {
+			}), q = () => H._("Recorded live", null, {
 				hk: "2seH5c"
 			}), Y = ({
 				onSubscribe: e,
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.3a43d038d18d6f2be7b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.d9918a11440432e0832e.js.map
