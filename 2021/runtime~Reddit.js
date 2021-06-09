@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0640e10be65154c5438d.js
-// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0e472ab364bb499d101b.js
+// Retrieved at 6/9/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -821,7 +821,7 @@
 					"reddit-components-LayerEmbed": "227b8ad80362853984b6",
 					"reddit-components-Governance-ClaimPointsBanner": "178912ea4f068d27a340",
 					"vendors~reddit-components-FormBuilder": "31d6cfe0d16ae931b73c",
-					"reddit-components-FormBuilder": "e251e43530ad7b7684c5",
+					"reddit-components-FormBuilder": "8bbdf8e44e3a5d5803a0",
 					GivePremiumModal: "58d0c1f6e67963103aae",
 					AdminCommunityTopics: "d4be031ee24a09e79397",
 					CreatePollButton: "f61ace8b0ca14a98ed44",
@@ -1248,7 +1248,7 @@
 						"translations/es_MX-json": "388f69d8992d16b32f7c",
 						"translations/fr_FR-json": "9dab101d263a7da900fb",
 						"translations/it_IT-json": "4091aa751f2e1b6dfedd",
-						"translations/pseudo_ext-json": "a459be28cd9d07e43d8e",
+						"translations/pseudo_ext-json": "2c3475681229f8ad2f1a",
 						"translations/pseudo_long-json": "74cc6f110a0d02bdb319",
 						"translations/pseudo_short-json": "9d70aa91e9356705f2f2",
 						"translations/pt_BR-json": "ac6ac9f82dc3c9d7eb6c",
@@ -1414,7 +1414,7 @@
 						"reddit-components-LayerEmbed": "c24606ad662df0dd1886",
 						"reddit-components-Governance-ClaimPointsBanner": "e09354918d0f5247cf54",
 						"vendors~reddit-components-FormBuilder": "e612a5e10a1e99f46476",
-						"reddit-components-FormBuilder": "2fad08ed4b9d8a3b4975",
+						"reddit-components-FormBuilder": "8f673fdac8c883fd3071",
 						GivePremiumModal: "07ddc198818cc8df9b3c",
 						AdminCommunityTopics: "647d620e608572966c9b",
 						CreatePollButton: "7600db46816d3e867a48",
@@ -1490,4 +1490,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0640e10be65154c5438d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0e472ab364bb499d101b.js.map
