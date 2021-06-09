@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ba0a64eac82f350434cb.js
-// Retrieved at 6/9/2021, 9:40:19 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c7d36ba48c71def11c0b.js
+// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1249,11 +1249,11 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return g
-			})), r.d(t, "b", (function() {
-				return S
-			})), r.d(t, "c", (function() {
 				return v
+			})), r.d(t, "b", (function() {
+				return D
+			})), r.d(t, "c", (function() {
+				return T
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1269,18 +1269,19 @@
 				b = r("./src/reddit/actions/toaster.ts"),
 				y = r("./src/reddit/models/Toast/index.ts"),
 				f = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				m = r("./src/reddit/selectors/user.ts"),
-				E = r("./src/reddit/actions/economics/powerups/constants.ts");
+				m = r("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				E = r("./src/reddit/selectors/user.ts"),
+				h = r("./src/reddit/actions/economics/powerups/constants.ts");
 			Object(u.a)({
 				features: {
 					powerups: l.a
 				}
 			});
-			const h = Object(a.a)(E.d),
-				_ = Object(a.a)(E.f),
-				O = Object(a.a)(E.g),
-				I = Object(a.a)(E.e),
-				g = (e, t) => async (r, s, {
+			const _ = Object(a.a)(h.d),
+				O = Object(a.a)(h.f),
+				I = Object(a.a)(h.g),
+				g = Object(a.a)(h.e),
+				S = (e, t) => async (r, s, {
 					gqlContext: a
 				}) => {
 					const o = t.filter(e => !!(null == e ? void 0 : e.trim()));
@@ -1296,11 +1297,23 @@
 							if (!s.ok) throw new Error("Unable to fetch user achievements");
 							return s.body.data.subredditInfoById
 						})(a(), e, o);
-						await r(h(t))
+						await r(_(t))
 					} catch (i) {
 						n.c.captureException(i)
 					}
-				}, S = (e, t) => async (r, s) => {
+				}, v = (e, t) => async (r, s) => {
+					if (!e) return;
+					const a = s(),
+						n = Object(E.j)(a);
+					if (!n || !Object(f.f)(a, {
+							subredditId: e
+						}) || !Object(i.h)(a)) return;
+					const c = !!Object(m.b)(a, {
+						subredditId: e,
+						userId: n.id
+					});
+					!t && c || await r(S(e, [n.id]))
+				}, D = (e, t) => async (r, s) => {
 					if (!e) return;
 					await r(Object(p.i)(e, {
 						fullData: !0
@@ -1312,19 +1325,19 @@
 					const n = new Set;
 					Object.values(t).forEach(e => {
 						n.add(e.authorId)
-					}), await r(g(e, Array.from(n)))
-				}, v = (e, t) => async (r, a, {
+					}), await r(S(e, Array.from(n)))
+				}, T = (e, t) => async (r, a, {
 					gqlContext: c
 				}) => {
 					const i = a(),
-						u = Object(m.j)(i);
+						u = Object(E.j)(i);
 					if (!u) return;
 					const l = {
 						subredditId: e,
 						userId: u.id,
 						achievementType: t
 					};
-					r(_(l));
+					r(O(l));
 					try {
 						await (async (e, t, r) => {
 							if (!(await Object(d.a)(e, {
@@ -1334,9 +1347,9 @@
 										achievementType: r
 									}
 								})).ok) throw new Error("Unable to update the preferred achievement flair")
-						})(c(), l.subredditId, l.achievementType), r(O(l))
+						})(c(), l.subredditId, l.achievementType), r(I(l))
 					} catch (p) {
-						r(I(l)), n.c.captureException(p), r(Object(b.f)({
+						r(g(l)), n.c.captureException(p), r(Object(b.f)({
 							duration: b.a,
 							kind: y.b.Error,
 							text: s.fbt._("Failed to set preferred achievement flair", null, {
@@ -21783,4 +21796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ba0a64eac82f350434cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c7d36ba48c71def11c0b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.0bdd40ca700a53d4db67.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.3f806a825891e75dbcb2.js
+// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -1022,11 +1022,11 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return R
-			})), n.d(t, "b", (function() {
-				return g
-			})), n.d(t, "c", (function() {
 				return _
+			})), n.d(t, "b", (function() {
+				return I
+			})), n.d(t, "c", (function() {
+				return E
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1042,18 +1042,19 @@
 				b = n("./src/reddit/actions/toaster.ts"),
 				p = n("./src/reddit/models/Toast/index.ts"),
 				f = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/actions/economics/powerups/constants.ts");
+				O = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				j = n("./src/reddit/selectors/user.ts"),
+				y = n("./src/reddit/actions/economics/powerups/constants.ts");
 			Object(m.a)({
 				features: {
 					powerups: u.a
 				}
 			});
-			const y = Object(r.a)(j.d),
-				h = Object(r.a)(j.f),
-				v = Object(r.a)(j.g),
-				S = Object(r.a)(j.e),
-				R = (e, t) => async (n, s, {
+			const h = Object(r.a)(y.d),
+				v = Object(r.a)(y.f),
+				S = Object(r.a)(y.g),
+				R = Object(r.a)(y.e),
+				g = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
 					const d = t.filter(e => !!(null == e ? void 0 : e.trim()));
@@ -1069,11 +1070,23 @@
 							if (!s.ok) throw new Error("Unable to fetch user achievements");
 							return s.body.data.subredditInfoById
 						})(r(), e, d);
-						await n(y(t))
+						await n(h(t))
 					} catch (a) {
 						o.c.captureException(a)
 					}
-				}, g = (e, t) => async (n, s) => {
+				}, _ = (e, t) => async (n, s) => {
+					if (!e) return;
+					const r = s(),
+						o = Object(j.j)(r);
+					if (!o || !Object(f.f)(r, {
+							subredditId: e
+						}) || !Object(a.h)(r)) return;
+					const c = !!Object(O.b)(r, {
+						subredditId: e,
+						userId: o.id
+					});
+					!t && c || await n(g(e, [o.id]))
+				}, I = (e, t) => async (n, s) => {
 					if (!e) return;
 					await n(Object(l.i)(e, {
 						fullData: !0
@@ -1085,19 +1098,19 @@
 					const o = new Set;
 					Object.values(t).forEach(e => {
 						o.add(e.authorId)
-					}), await n(R(e, Array.from(o)))
-				}, _ = (e, t) => async (n, r, {
+					}), await n(g(e, Array.from(o)))
+				}, E = (e, t) => async (n, r, {
 					gqlContext: c
 				}) => {
 					const a = r(),
-						m = Object(O.j)(a);
+						m = Object(j.j)(a);
 					if (!m) return;
 					const u = {
 						subredditId: e,
 						userId: m.id,
 						achievementType: t
 					};
-					n(h(u));
+					n(v(u));
 					try {
 						await (async (e, t, n) => {
 							if (!(await Object(i.a)(e, {
@@ -1107,9 +1120,9 @@
 										achievementType: n
 									}
 								})).ok) throw new Error("Unable to update the preferred achievement flair")
-						})(c(), u.subredditId, u.achievementType), n(v(u))
+						})(c(), u.subredditId, u.achievementType), n(S(u))
 					} catch (l) {
-						n(S(u)), o.c.captureException(l), n(Object(b.f)({
+						n(R(u)), o.c.captureException(l), n(Object(b.f)({
 							duration: b.a,
 							kind: p.b.Error,
 							text: s.fbt._("Failed to set preferred achievement flair", null, {
@@ -2218,7 +2231,7 @@
 						subredditId: n
 					}),
 					a = Object(c.h)(e),
-					m = a ? Object(r.b)(e, {
+					m = a ? Object(r.c)(e, {
 						subredditId: n,
 						userId: a
 					}) : void 0,
@@ -3194,8 +3207,10 @@
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return a
+				return d
 			})), n.d(t, "c", (function() {
+				return a
+			})), n.d(t, "d", (function() {
 				return u
 			})), n.d(t, "a", (function() {
 				return l
@@ -3260,4 +3275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.0bdd40ca700a53d4db67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.3f806a825891e75dbcb2.js.map

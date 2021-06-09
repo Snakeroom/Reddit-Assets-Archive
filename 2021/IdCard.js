@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.753950a31d2eb65ccd57.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.b285790981d5a33df49b.js
+// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -392,11 +392,11 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return y
-			})), n.d(t, "b", (function() {
-				return v
-			})), n.d(t, "c", (function() {
 				return T
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "c", (function() {
+				return S
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -412,18 +412,19 @@
 				p = n("./src/reddit/actions/toaster.ts"),
 				b = n("./src/reddit/models/Toast/index.ts"),
 				h = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				f = n("./src/reddit/selectors/user.ts"),
-				g = n("./src/reddit/actions/economics/powerups/constants.ts");
+				f = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				g = n("./src/reddit/selectors/user.ts"),
+				x = n("./src/reddit/actions/economics/powerups/constants.ts");
 			Object(l.a)({
 				features: {
 					powerups: u.a
 				}
 			});
-			const x = Object(r.a)(g.d),
-				_ = Object(r.a)(g.f),
-				E = Object(r.a)(g.g),
-				C = Object(r.a)(g.e),
-				y = (e, t) => async (n, s, {
+			const _ = Object(r.a)(x.d),
+				E = Object(r.a)(x.f),
+				C = Object(r.a)(x.g),
+				y = Object(r.a)(x.e),
+				v = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
 					const a = t.filter(e => !!(null == e ? void 0 : e.trim()));
@@ -439,11 +440,23 @@
 							if (!s.ok) throw new Error("Unable to fetch user achievements");
 							return s.body.data.subredditInfoById
 						})(r(), e, a);
-						await n(x(t))
+						await n(_(t))
 					} catch (c) {
 						i.c.captureException(c)
 					}
-				}, v = (e, t) => async (n, s) => {
+				}, T = (e, t) => async (n, s) => {
+					if (!e) return;
+					const r = s(),
+						i = Object(g.j)(r);
+					if (!i || !Object(h.f)(r, {
+							subredditId: e
+						}) || !Object(c.h)(r)) return;
+					const o = !!Object(f.b)(r, {
+						subredditId: e,
+						userId: i.id
+					});
+					!t && o || await n(v(e, [i.id]))
+				}, O = (e, t) => async (n, s) => {
 					if (!e) return;
 					await n(Object(m.i)(e, {
 						fullData: !0
@@ -455,19 +468,19 @@
 					const i = new Set;
 					Object.values(t).forEach(e => {
 						i.add(e.authorId)
-					}), await n(y(e, Array.from(i)))
-				}, T = (e, t) => async (n, r, {
+					}), await n(v(e, Array.from(i)))
+				}, S = (e, t) => async (n, r, {
 					gqlContext: o
 				}) => {
 					const c = r(),
-						l = Object(f.j)(c);
+						l = Object(g.j)(c);
 					if (!l) return;
 					const u = {
 						subredditId: e,
 						userId: l.id,
 						achievementType: t
 					};
-					n(_(u));
+					n(E(u));
 					try {
 						await (async (e, t, n) => {
 							if (!(await Object(d.a)(e, {
@@ -477,9 +490,9 @@
 										achievementType: n
 									}
 								})).ok) throw new Error("Unable to update the preferred achievement flair")
-						})(o(), u.subredditId, u.achievementType), n(E(u))
+						})(o(), u.subredditId, u.achievementType), n(C(u))
 					} catch (m) {
-						n(C(u)), i.c.captureException(m), n(Object(p.f)({
+						n(y(u)), i.c.captureException(m), n(Object(p.f)({
 							duration: p.a,
 							kind: b.b.Error,
 							text: s.fbt._("Failed to set preferred achievement flair", null, {
@@ -1699,11 +1712,11 @@
 					subredditId: t,
 					userId: n
 				}) => {
-					const s = Object(i.e)(e => Object(d.b)(e, {
+					const s = Object(i.e)(e => Object(d.c)(e, {
 							subredditId: t,
 							userId: n
 						})),
-						c = Object(i.e)(e => Object(d.c)(e, {
+						c = Object(i.e)(e => Object(d.d)(e, {
 							subredditId: t,
 							userId: n
 						})),
@@ -2892,11 +2905,10 @@
 					isAchievementFlairModalEnabled: a
 				}) => {
 					const d = Object(o.d)(),
-						c = Object(et.a)(),
-						l = null == e ? void 0 : e.id;
+						c = Object(et.a)();
 					Object(r.useEffect)(() => {
-						l && a && d(Object(Ke.a)(t, [l]))
-					}, [l, a, t, d]);
+						a && d(Object(Ke.a)(t))
+					}, [d, t, a]);
 					return e && (n || a) ? i.a.createElement(ct, null, i.a.createElement(ut, null, dt._("user flair preview", null, {
 						hk: "3aBytK"
 					}), i.a.createElement(_t, {
@@ -4761,7 +4773,7 @@
 						subredditId: n
 					}),
 					c = Object(o.h)(e),
-					l = c ? Object(r.b)(e, {
+					l = c ? Object(r.c)(e, {
 						subredditId: n,
 						userId: c
 					}) : void 0,
@@ -5200,8 +5212,10 @@
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return c
+				return a
 			})), n.d(t, "c", (function() {
+				return c
+			})), n.d(t, "d", (function() {
 				return u
 			})), n.d(t, "a", (function() {
 				return m
@@ -5311,4 +5325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.753950a31d2eb65ccd57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b285790981d5a33df49b.js.map

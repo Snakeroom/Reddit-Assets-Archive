@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9f084bf5b0efdcef431a.js
-// Retrieved at 6/8/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b1a892a2b0c4cece686a.js
+// Retrieved at 6/9/2021, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2063,11 +2063,11 @@
 					subredditId: t,
 					userId: n
 				}) => {
-					const o = Object(r.e)(e => Object(d.b)(e, {
+					const o = Object(r.e)(e => Object(d.c)(e, {
 							subredditId: t,
 							userId: n
 						})),
-						c = Object(r.e)(e => Object(d.c)(e, {
+						c = Object(r.e)(e => Object(d.d)(e, {
 							subredditId: t,
 							userId: n
 						})),
@@ -3748,4 +3748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9f084bf5b0efdcef431a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.b1a892a2b0c4cece686a.js.map
