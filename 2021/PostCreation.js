@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.19337bc71fcc25a379c0.js
-// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3c53bff2324a1681d676.js
+// Retrieved at 6/9/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -5928,7 +5928,8 @@
 				onMouseDown: e.handleMouseDown,
 				id: e.dropdownId
 			}, e.icon ? e.icon : s.a.createElement(h.a, {
-				name: "overflow_horizontal"
+				name: "overflow_horizontal",
+				className: g.a.MenuIcon
 			}), s.a.createElement(C, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
@@ -30206,4 +30207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.19337bc71fcc25a379c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3c53bff2324a1681d676.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.65a69d9e0775576b25ba.js
-// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a5a658f982f661a3d247.js
+// Retrieved at 6/9/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1623,7 +1623,8 @@
 				onMouseDown: e.handleMouseDown,
 				id: e.dropdownId
 			}, e.icon ? e.icon : r.a.createElement(h.a, {
-				name: "overflow_horizontal"
+				name: "overflow_horizontal",
+				className: g.a.MenuIcon
 			}), r.a.createElement(x, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
@@ -7188,4 +7189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.65a69d9e0775576b25ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a5a658f982f661a3d247.js.map

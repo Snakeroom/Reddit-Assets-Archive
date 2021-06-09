@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.fd8ee73715af7c24dfe2.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.6a71566f7768f2dd2139.js
+// Retrieved at 6/9/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2090,7 +2090,8 @@
 				onMouseDown: e.handleMouseDown,
 				id: e.dropdownId
 			}, e.icon ? e.icon : r.a.createElement(p.a, {
-				name: "overflow_horizontal"
+				name: "overflow_horizontal",
+				className: f.a.MenuIcon
 			}), r.a.createElement(w, {
 				className: e.dropdownClassName,
 				isOpen: e.dropdownIsOpen,
@@ -3037,4 +3038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.fd8ee73715af7c24dfe2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.6a71566f7768f2dd2139.js.map
