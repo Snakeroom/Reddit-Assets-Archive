@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b30f5e9813e564ae4a2c.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f81009b3906adcaf629e.js
+// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/graphql/operations/AddPredictionDrafts.json": function(e) {
@@ -8103,7 +8103,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), i = Object(U.a)(p.Sb) === p.Wb.Enabled;
+					} = t, r = Object(B.a)(), i = Object(U.a)(p.Ub) === p.Yb.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(V, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
@@ -29414,10 +29414,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.sc,
+				experimentName: o.uc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.yc.Enabled
+			}) === o.Ac.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -29431,14 +29431,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Gc
-					}) === o.Qc.Enabled
+						experimentName: o.Ic
+					}) === o.Sc.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Fc
-					}) === o.Pc.Enabled
+						experimentName: o.Hc
+					}) === o.Rc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -30075,4 +30075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b30f5e9813e564ae4a2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f81009b3906adcaf629e.js.map

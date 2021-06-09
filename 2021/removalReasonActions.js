@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.a468b99dced2270931f0.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.42be777dba98cbaefdeb.js
+// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/graphql/operations/CommentToxicity.json": function(e) {
@@ -183,8 +183,8 @@
 				W = n("./src/reddit/selectors/posts.ts"),
 				z = n("./src/reddit/selectors/user.ts"),
 				X = n("./src/reddit/actions/comment/index.ts"),
-				Q = n("./src/reddit/actions/comment/constants.ts");
-			const Y = Object(o.a)(Q.k),
+				Y = n("./src/reddit/actions/comment/constants.ts");
+			const Q = Object(o.a)(Y.k),
 				Z = ({
 					hasFocus: e,
 					draftKey: t
@@ -192,16 +192,16 @@
 					const r = s();
 					if (!!r.features.comments.drafts[t])
 						if (Object(z.M)(r) && e) {
-							const s = Y({
+							const s = Q({
 								hasFocus: e,
 								draftKey: t
 							});
 							n(Object(d.f)(s))
-						} else n(Y({
+						} else n(Q({
 							hasFocus: e,
 							draftKey: t
 						}))
-				}, ee = Object(o.a)(Q.H), te = Object(o.a)(Q.J), ne = Object(o.a)(Q.I), se = Object(o.a)(Q.G), re = (e, t, n, s) => {
+				}, ee = Object(o.a)(Y.H), te = Object(o.a)(Y.J), ne = Object(o.a)(Y.I), se = Object(o.a)(Y.G), re = (e, t, n, s) => {
 					const r = s.ok && s.body,
 						o = r && r.comment && r.comment.id;
 					U.f(e, n, t, o)
@@ -327,7 +327,7 @@
 						}))
 					}
 					re(n(), c, u, j), Object(b.d)()
-				}, ue = Object(o.a)(Q.q), le = Object(o.a)(Q.p), be = Object(o.a)(Q.l), pe = (Object(o.a)(Q.g), Object(o.a)(Q.m)), fe = (Object(o.a)(Q.t), (e, t, n) => async (r, o, {
+				}, ue = Object(o.a)(Y.q), le = Object(o.a)(Y.p), be = Object(o.a)(Y.l), pe = (Object(o.a)(Y.g), Object(o.a)(Y.m)), fe = (Object(o.a)(Y.t), (e, t, n) => async (r, o, {
 					apiContext: c
 				}) => {
 					const d = e === g.h.RICH_TEXT;
@@ -434,7 +434,7 @@
 				}, he = (e, t) => n => n(be({
 					draftKey: e,
 					formData: t
-				})), ve = Object(o.a)(Q.s), Se = ({
+				})), ve = Object(o.a)(Y.s), Se = ({
 					commentId: e,
 					commentMode: t,
 					commentsPageKey: n,
@@ -454,7 +454,7 @@
 							hasFocus: !0
 						}
 					})))
-				}, Re = Object(o.a)(Q.C), _e = Object(o.a)(Q.B), Ie = Object(o.a)(Q.D), Ee = Object(o.a)(Q.h), xe = ({
+				}, Re = Object(o.a)(Y.C), _e = Object(o.a)(Y.B), Ie = Object(o.a)(Y.D), Ee = Object(o.a)(Y.h), xe = ({
 					id: e,
 					commentsPageKey: t,
 					depth: n,
@@ -522,7 +522,7 @@
 						draftKey: s,
 						error: u.error
 					}))
-				}, ge = Object(o.a)(Q.z), Ce = Object(o.a)(Q.y), ke = Object(o.a)(Q.A), Ae = (e, t) => async (n, s, {
+				}, ge = Object(o.a)(Y.z), Ce = Object(o.a)(Y.y), ke = Object(o.a)(Y.A), Ae = (e, t) => async (n, s, {
 					apiContext: o
 				}) => {
 					const c = s();
@@ -637,9 +637,9 @@
 			})), n.d(t, "b", (function() {
 				return X
 			})), n.d(t, "n", (function() {
-				return Q
-			})), n.d(t, "c", (function() {
 				return Y
+			})), n.d(t, "c", (function() {
+				return Q
 			})), n.d(t, "k", (function() {
 				return Z
 			}));
@@ -821,7 +821,7 @@
 					})), 0 === n && s(d, !0), Object(l.d)()
 				}, W = Object(c.a)(g.r), z = e => t => t(W({
 					draftKey: e
-				})), X = Object(c.a)(g.a), Q = Object(c.a)(g.E), Y = Object(c.a)(g.b), Z = Object(c.a)(g.u)
+				})), X = Object(c.a)(g.a), Y = Object(c.a)(g.E), Q = Object(c.a)(g.b), Z = Object(c.a)(g.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, n) {
 			"use strict";
@@ -1309,9 +1309,9 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "removalReasonsPending", (function() {
-				return Q
-			})), n.d(t, "removalReasonsLoaded", (function() {
 				return Y
+			})), n.d(t, "removalReasonsLoaded", (function() {
+				return Q
 			})), n.d(t, "removalReasonsFailed", (function() {
 				return Z
 			})), n.d(t, "removalReasonsRequested", (function() {
@@ -1563,19 +1563,19 @@
 					removalReasons: _
 				}
 			});
-			const Q = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
-				Y = Object(E.a)("REMOVALREASONS__LOAD_SUCCESS"),
+			const Y = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
+				Q = Object(E.a)("REMOVALREASONS__LOAD_SUCCESS"),
 				Z = Object(E.a)("REMOVALREASONS__LOAD_FAILED"),
 				ee = e => async (t, n, {
 					apiContext: s
 				}) => {
 					const r = n().subreddits.models[e].name;
-					t(Q());
+					t(Y());
 					const o = await ((e, t) => Object(N.a)(Object(K.a)(e, [M.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: I.hb.GET
 					}))(s(), r);
-					o.ok ? t(Y({
+					o.ok ? t(Q({
 						subredditId: e,
 						response: o.body
 					})) : t(Z(o.error))
@@ -1984,10 +1984,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const n = Object(c.c)(e, {
 								experimentEligibilitySelector: c.a,
-								experimentName: o.x,
+								experimentName: o.z,
 								expEventOverride: t
 							});
-							return !!(Object(o.Kd)(n) ? void 0 : n)
+							return !!(Object(o.Md)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2932,9 +2932,9 @@
 			})), n.d(t, "J", (function() {
 				return X
 			})), n.d(t, "p", (function() {
-				return Q
-			})), n.d(t, "M", (function() {
 				return Y
+			})), n.d(t, "M", (function() {
+				return Q
 			})), n.d(t, "F", (function() {
 				return Z
 			})), n.d(t, "y", (function() {
@@ -3151,8 +3151,8 @@
 				X = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				Q = e => e.features.comments.visitHighlightFilter,
-				Y = (e, t) => {
+				Y = e => e.features.comments.visitHighlightFilter,
+				Q = (e, t) => {
 					const n = Object(b.a)(e, t);
 					if (n) return Object(u.Z)(e, n)
 				},
@@ -3194,14 +3194,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Gc
-					}) === s.Qc.Enabled
+						experimentName: s.Ic
+					}) === s.Sc.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Fc
-					}) === s.Pc.Enabled
+						experimentName: s.Hc
+					}) === s.Rc.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -3275,4 +3275,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.a468b99dced2270931f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.42be777dba98cbaefdeb.js.map

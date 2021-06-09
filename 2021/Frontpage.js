@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.39bf54207ed2e7f677a9.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.d04828e737c120b0c82e.js
+// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -343,7 +343,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(G.d)(m, {
-								experimentName: l.Ac
+								experimentName: l.Cc
 							});
 							s(Object(o.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -473,7 +473,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(G.d)(r, {
-										experimentName: l.Ac
+										experimentName: l.Cc
 									});
 									t(Object(o.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1422,7 +1422,7 @@
 			function Ze(e) {
 				return Object(Je.c)(e, {
 					experimentEligibilitySelector: Je.a,
-					experimentName: We.r
+					experimentName: We.t
 				})
 			}
 			var Xe = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
@@ -1444,7 +1444,7 @@
 					isOver18: Ye.db,
 					isUISimplificationAllItemsVariant: $e.b,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Ze(e) === We.q.RotateEven
+						return Ze(e) === We.s.RotateEven
 					},
 					bffsLeaderboardVariant: Ze,
 					inRpanTopVideoEntrypointExperiment: Xe.e,
@@ -1455,8 +1455,8 @@
 						return (!t || !s) && (!Object($e.b)(e) && function(e) {
 							return Object(Je.c)(e, {
 								experimentEligibilitySelector: Ye.K,
-								experimentName: We.ab
-							}) === We.Lb
+								experimentName: We.cb
+							}) === We.Nb
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: u.a
@@ -1471,7 +1471,7 @@
 						shouldShowLocalRecommendations: n
 					} = e;
 					let r, i, c, d, l;
-					s && t === We.q.RotateEven ? (r = Me.t, i = Me.m, c = Me.r, d = Me.a) : (r = Me.s, i = Me.i, c = Me.q, d = []), l = [r, ...d, ...c], n && l.unshift(i);
+					s && t === We.s.RotateEven ? (r = Me.t, i = Me.m, c = Me.r, d = Me.a) : (r = Me.s, i = Me.i, c = Me.q, d = []), l = [r, ...d, ...c], n && l.unshift(i);
 					const u = l[a()(l.length - 1)];
 					l = [], u.id !== r.id && l.push(r), n && u.id !== i.id && l.push(i);
 					let m = [...d, ...c];
@@ -4836,8 +4836,8 @@
 			const o = e => r.e[Object(a.O)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.M
-				}) === n.cb.Treatment
+					experimentName: n.O
+				}) === n.eb.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
 			"use strict";
@@ -4876,4 +4876,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.39bf54207ed2e7f677a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d04828e737c120b0c82e.js.map

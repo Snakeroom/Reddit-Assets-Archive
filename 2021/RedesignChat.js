@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.8852543e637b41f2f020.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.3fe9f3960a6e80749e54.js
+// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./src/chat/components/PortalContainer/index.m.less": function(e, t, n) {
@@ -105,8 +105,8 @@
 				K = n("./src/chat/customMiddleware/tokenRefresher.ts"),
 				Y = n("./src/chat/customMiddleware/tracking.ts"),
 				V = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				W = n("./src/chat/helpers/modifyInitialData.ts"),
-				J = n("./src/chat/reducers/index.ts"),
+				J = n("./src/chat/helpers/modifyInitialData.ts"),
+				W = n("./src/chat/reducers/index.ts"),
 				X = n("./src/chat/routes/index.ts");
 			const Z = Object(u.a)({
 					actionDispatchers: {
@@ -132,7 +132,7 @@
 				const s = document.getElementById("2x-container"),
 					r = document.createElement("div");
 				return s.appendChild(r), Object(o.a)({
-					reducerMap: J.a,
+					reducerMap: W.a,
 					routes: X.a,
 					apiContext: Z.apiContext,
 					appFactory: I,
@@ -149,7 +149,7 @@
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
-					}) => (t = Object(W.d)(e, t), t = Object(W.a)(t), t = Object(W.b)(t), t = Object(W.c)(e, t), t = Object(W.g)(t, n, X.a), t = Object(W.f)(t), t = Object(W.h)(e, t)),
+					}) => (t = Object(J.d)(e, t), t = Object(J.a)(t), t = Object(J.b)(t), t = Object(J.c)(e, t), t = Object(J.g)(t, n, X.a), t = Object(J.f)(t), t = Object(J.h)(e, t)),
 					preRender: ({
 						browserHistory: e,
 						routes: t,
@@ -656,11 +656,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.ec,
+					experimentName: s.gc,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.J)(e) || Object(i.K)(e),
-				u = Object(c.a)(o, e => e === s.hc.Enabled)
+				u = Object(c.a)(o, e => e === s.jc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -684,28 +684,28 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(i.J)(e) || Object(i.K)(e),
 				d = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.W,
-					experimentEligibilitySelector: o
-				}), a.a),
-				u = Object(c.a)(d, e => e === s.kc.Enabled),
-				l = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.fc,
-					experimentEligibilitySelector: o
-				}), a.a),
-				b = Object(c.a)(u, l, (e, t) => e && t === s.jc.Enabled),
-				h = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.Y,
 					experimentEligibilitySelector: o
 				}), a.a),
-				m = Object(c.a)(u, h, (e, t) => e && t === s.fb.Enabled),
-				j = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.V,
+				u = Object(c.a)(d, e => e === s.mc.Enabled),
+				l = Object(c.a)(e => Object(r.c)(e, {
+					experimentName: s.hc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				O = Object(c.a)(j, e => e === s.ic.Banner_1st_time),
-				p = Object(c.a)(j, e => e === s.ic.Tooltip_persist),
-				f = Object(c.a)(j, e => e === s.ic.Tooltip_1st_time)
+				b = Object(c.a)(u, l, (e, t) => e && t === s.lc.Enabled),
+				h = Object(c.a)(e => Object(r.c)(e, {
+					experimentName: s.ab,
+					experimentEligibilitySelector: o
+				}), a.a),
+				m = Object(c.a)(u, h, (e, t) => e && t === s.hb.Enabled),
+				j = Object(c.a)(e => Object(r.c)(e, {
+					experimentName: s.X,
+					experimentEligibilitySelector: o
+				}), a.a),
+				O = Object(c.a)(j, e => e === s.kc.Banner_1st_time),
+				p = Object(c.a)(j, e => e === s.kc.Tooltip_persist),
+				f = Object(c.a)(j, e => e === s.kc.Tooltip_1st_time)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.8852543e637b41f2f020.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.3fe9f3960a6e80749e54.js.map

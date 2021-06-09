@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1f622c6a8703900b0c0a.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a1e46de841dcec4b349d.js
+// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, s) {
@@ -7200,7 +7200,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: b || c,
-				onClick: () => s === u.rd.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
+				onClick: () => s === u.td.Tabs ? window.open("/subreddits/create", "_blank") : d(l),
 				onMouseEnter: r,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -21884,12 +21884,12 @@
 				ee = s("./src/reddit/selectors/experiments/utils.ts"),
 				te = s("./src/reddit/selectors/user.ts");
 			const se = Object(d.a)(e => Object($.c)(e, {
-					experimentName: Q.z,
+					experimentName: Q.B,
 					experimentEligibilitySelector: ne
 				}), ee.a),
 				ne = e => Object(te.J)(e) || Object(te.K)(e),
-				ae = Object(d.a)(se, e => e === Q.G.Optional),
-				oe = Object(d.a)(se, e => e === Q.G.Remove);
+				ae = Object(d.a)(se, e => e === Q.I.Optional),
+				oe = Object(d.a)(se, e => e === Q.I.Remove);
 			var re = s("./src/reddit/selectors/experiments/emailInvite.ts"),
 				ie = s("./src/reddit/selectors/subreddit.ts"),
 				de = s("./src/reddit/pages/SubredditCreation/index.m.less"),
@@ -22277,9 +22277,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Kb
+					experimentName: n.Mb
 				});
-				return !(!t || Object(n.Kd)(t))
+				return !(!t || Object(n.Md)(t))
 			}
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
@@ -22512,4 +22512,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1f622c6a8703900b0c0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a1e46de841dcec4b349d.js.map

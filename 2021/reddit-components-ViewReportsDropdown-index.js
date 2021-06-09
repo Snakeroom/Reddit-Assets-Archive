@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0f7053d0aa4522266ab9.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.18bc2e61ec2fd4207882.js
+// Retrieved at 6/9/2021, 11:40:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
@@ -35,9 +35,9 @@
 			})), s.d(t, "d", (function() {
 				return Z
 			})), s.d(t, "a", (function() {
-				return Q
-			})), s.d(t, "b", (function() {
 				return J
+			})), s.d(t, "b", (function() {
+				return Q
 			})), s.d(t, "n", (function() {
 				return G
 			})), s.d(t, "c", (function() {
@@ -221,9 +221,9 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && n(d, !0), Object(p.d)()
-				}, X = Object(c.a)(k.r), Q = e => t => t(X({
+				}, X = Object(c.a)(k.r), J = e => t => t(X({
 					draftKey: e
-				})), J = Object(c.a)(k.a), G = Object(c.a)(k.E), Y = Object(c.a)(k.b), W = Object(c.a)(k.u)
+				})), Q = Object(c.a)(k.a), G = Object(c.a)(k.E), Y = Object(c.a)(k.b), W = Object(c.a)(k.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -1065,14 +1065,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Gc
-					}) === n.Qc.Enabled
+						experimentName: n.Ic
+					}) === n.Sc.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Fc
-					}) === n.Pc.Enabled
+						experimentName: n.Hc
+					}) === n.Rc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1101,4 +1101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0f7053d0aa4522266ab9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.18bc2e61ec2fd4207882.js.map
