@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.df4992ef00de75dcbced.js
-// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.6883625def4eff8d1e62.js
+// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
@@ -41,8 +41,8 @@
 				E = s("./src/chat/helpers/dom.ts"),
 				R = s("./src/chat/models/ReportFlow/index.ts"),
 				j = s("./src/chat/routes/chat.ts"),
-				I = s("./src/chat/selectors/channels.ts"),
-				B = s("./src/chat/selectors/user.ts"),
+				B = s("./src/chat/selectors/channels.ts"),
+				I = s("./src/chat/selectors/user.ts"),
 				L = s("./src/chat/components/OverlayReport/index.m.less"),
 				F = s.n(L),
 				T = s("./src/chat/selectors/messages.ts");
@@ -51,12 +51,12 @@
 				N = Object(S.a)({
 					user: (e, t) => t.attr === j.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === j.a.Invite || t.attr === j.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
-					messageList: e => Object(I.x)(e),
-					currentUserId: (e, t) => Object(B.a)(e)
+					messageList: e => Object(B.x)(e),
+					currentUserId: (e, t) => Object(I.a)(e)
 				}),
 				K = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
-						e(Object(m.I)(s.id)), e((e => async (t, s, {
+						e(Object(m.K)(s.id)), e((e => async (t, s, {
 							apiContext: n
 						}) => {
 							const {
@@ -73,7 +73,7 @@
 						})).then(() => e(Object(i.a)()))
 					},
 					onReportMessage: (t, s, n) => {
-						e(Object(m.K)(s.messageId, t)), e(((e, t, s) => async (n, a, {
+						e(Object(m.M)(s.messageId, t)), e(((e, t, s) => async (n, a, {
 							apiContext: r
 						}) => {
 							const o = Object(u.a)(e, t),
@@ -382,4 +382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.df4992ef00de75dcbced.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.6883625def4eff8d1e62.js.map

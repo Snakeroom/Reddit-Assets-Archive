@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.668d2fccb796040497a9.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f0458d0126e011cce956.js
+// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -43,7 +43,8 @@
 						[l.a.hover]: !!s
 					}),
 					viewBox: e.viewBox,
-					style: t
+					style: t,
+					onClick: e.onClick
 				}, e.children)
 			}, "Component", l.a)
 		},
@@ -117,17 +118,17 @@
 				b = n("./src/reddit/components/Footer/index.m.less"),
 				_ = n.n(b);
 			const {
-				fbt: E
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = c.a.div("FooterContainer", _.a), y = c.a.div("UserAgreement", _.a), v = c.a.a("UserAgreementLink", _.a), g = c.a.a("PrivacyLink", _.a);
-			var f = () => o.a.createElement(k, null, o.a.createElement(y, null, E._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy} . ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [E._param("=User Agreement", o.a.createElement(v, {
+				fbt: k
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = c.a.div("FooterContainer", _.a), y = c.a.div("UserAgreement", _.a), v = c.a.a("UserAgreementLink", _.a), g = c.a.a("PrivacyLink", _.a);
+			var f = () => o.a.createElement(E, null, o.a.createElement(y, null, k._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy} . ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [k._param("=User Agreement", o.a.createElement(v, {
 					href: `${r.a.redditUrl}/help/useragreement`
-				}, E._("User Agreement", null, {
+				}, k._("User Agreement", null, {
 					hk: "2srkM2"
-				}))), E._param("=Privacy Policy", o.a.createElement(g, {
+				}))), k._param("=Privacy Policy", o.a.createElement(g, {
 					href: `${r.a.redditUrl}/help/privacypolicy`
-				}, E._("Privacy Policy", null, {
+				}, k._("Privacy Policy", null, {
 					hk: "2nBcYA"
-				}))), E._param("year", (new Date).getFullYear())], {
+				}))), k._param("year", (new Date).getFullYear())], {
 					hk: "335pdO"
 				}))),
 				x = n("./src/reddit/components/RawHTMLDisplay/index.tsx"),
@@ -218,7 +219,7 @@
 					const a = 30 * F.z;
 					return r > Date.now() - a
 				})(e)
-			}), _e = Object(O.t)(), Ee = Object(s.b)(be, (e, {
+			}), _e = Object(O.t)(), ke = Object(s.b)(be, (e, {
 				subredditName: t
 			}) => ({
 				continueToQuarantinedSubreddit: async () => {
@@ -227,7 +228,7 @@
 				setNSFWPreference: async () => {
 					await e(Object(d.l)())
 				}
-			})), ke = e => {
+			})), Ee = e => {
 				const {
 					banMessage: t,
 					contentGateType: n,
@@ -240,8 +241,8 @@
 					pageLayer: h,
 					quarantineRequiresEmail: b,
 					quarantineMessage: _,
-					quarantineMessageHtml: E,
-					quarantineMessageRTJson: k,
+					quarantineMessageHtml: k,
+					quarantineMessageRTJson: E,
 					setNSFWPreference: y,
 					subredditDescription: v,
 					subredditName: g,
@@ -331,13 +332,13 @@
 							hk: "2XqfJa"
 						})))], {
 							hk: "2B9i8y"
-						}), o.a.createElement(he, null, k ? o.a.createElement(S.a, {
-							content: k,
+						}), o.a.createElement(he, null, E ? o.a.createElement(S.a, {
+							content: E,
 							rtJsonElementProps: {
 								pageLayer: h
 							}
-						}) : E ? o.a.createElement(x.a, {
-							html: E
+						}) : k ? o.a.createElement(x.a, {
+							html: k
 						}) : _ || W._("Quarantined communities are dedicated to shocking or highly offensive content. You must be logged in with a verified email to continue.", null, {
 							hk: "3kRIzE"
 						})), W._("Are you certain you want to continue?", null, {
@@ -461,7 +462,7 @@
 						}))))
 				}
 			};
-			t.default = _e(Ee(Object(i.i)(e => o.a.createElement(Y, null, o.a.createElement("div", null, o.a.createElement(pe, null, ke(e))), o.a.createElement(f, null)))))
+			t.default = _e(ke(Object(i.i)(e => o.a.createElement(Y, null, o.a.createElement("div", null, o.a.createElement(pe, null, Ee(e))), o.a.createElement(f, null)))))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, n) {
 			"use strict";
@@ -510,17 +511,17 @@
 				h = n("./src/reddit/helpers/overlay/index.ts"),
 				b = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				_ = n("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
-				E = n("./src/reddit/selectors/user.ts"),
-				k = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				y = n.n(k),
+				k = n("./src/reddit/selectors/user.ts"),
+				E = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				y = n.n(E),
 				v = n("./src/lib/lessComponent.tsx");
 			const g = "create-community-button",
 				f = v.a.wrapped(c.c, "StyledTooltip", y.a),
 				x = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: _.c,
 					isInSrCreationEntrypointCopyExperiment: _.d,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(E.hb)(e),
-					userIsSuspended: E.P
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(k.hb)(e),
+					userIsSuspended: k.P
 				});
 			t.a = Object(s.b)(x, (e, {
 				eventSource: t
@@ -582,4 +583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.668d2fccb796040497a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f0458d0126e011cce956.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.fd7cdbe3aa9f0e9ebc8e.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.efda8422447b0537a101.js
+// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -36,7 +36,8 @@
 						[c.a.hover]: !!o
 					}),
 					viewBox: e.viewBox,
-					style: t
+					style: t,
+					onClick: e.onClick
 				}, e.children)
 			}, "Component", c.a)
 		},
@@ -144,9 +145,9 @@
 			})), n.d(t, "u", (function() {
 				return y
 			})), n.d(t, "v", (function() {
-				return N
-			})), n.d(t, "w", (function() {
 				return k
+			})), n.d(t, "w", (function() {
+				return N
 			})), n.d(t, "x", (function() {
 				return O
 			}));
@@ -171,8 +172,8 @@
 				_ = "GOVERNANCE__TRANSFER_PENDING",
 				x = "GOVERNANCE__TRANSFER_SUCCESS",
 				y = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				N = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				k = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				k = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				O = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -232,8 +233,8 @@
 				_ = Object(a.a)(C.c),
 				x = Object(a.a)(C.e),
 				y = (Object(a.a)(C.f), Object(a.a)(C.g), Object(a.a)(C.h)),
-				N = Object(a.a)(C.i),
-				k = Object(a.a)(C.j),
+				k = Object(a.a)(C.i),
+				N = Object(a.a)(C.j),
 				O = Object(a.a)(C.k),
 				w = Object(a.a)(C.q),
 				j = Object(a.a)(C.r),
@@ -248,7 +249,7 @@
 					gqlContext: s
 				}) => {
 					let o, c = r().polls.models[e];
-					if (n(k({
+					if (n(N({
 							pollId: e
 						})), (o = c.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
 								...m,
@@ -282,7 +283,7 @@
 							} = c, t = a.posts.models[e];
 							t && t.voteState === f.a.notVoted && n(Object(i.bb)(e))
 						}
-					} else n(N({
+					} else n(k({
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(g.a)(n, o.error || o.errors[0].messsage)
@@ -627,7 +628,7 @@
 			const {
 				fbt: y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class N extends a.a.Component {
+			class k extends a.a.Component {
 				componentDidMount() {
 					this.intervalId = window.setInterval(() => {
 						Object(l.c)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
@@ -667,7 +668,7 @@
 					}))))
 				}
 			}
-			var k = n("./src/chat/icons/svgs/Refresh/index.tsx"),
+			var N = n("./src/chat/icons/svgs/Refresh/index.tsx"),
 				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				w = n("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"),
 				j = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
@@ -732,7 +733,7 @@
 						onClick: j.a
 					}, I._("Reload page", null, {
 						hk: "14fa9z"
-					}), a.a.createElement(k.a, {
+					}), a.a.createElement(N.a, {
 						className: g.a.buttonIcon
 					})) : a.a.createElement(f.m, {
 						className: g.a.button,
@@ -1091,7 +1092,7 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === Z.About ? _ : s === Z.MetaMask ? R : s === Z.Wallet ? Y : s === Z.Connect ? N : s === Z.Verify ? $ : T;
+					} = this.state, i = s === Z.About ? _ : s === Z.MetaMask ? R : s === Z.Wallet ? Y : s === Z.Connect ? k : s === Z.Verify ? $ : T;
 					return a.a.createElement("article", {
 						className: Object(o.a)(z.a.container, e)
 					}, a.a.createElement(J.a, {
@@ -1945,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.fd7cdbe3aa9f0e9ebc8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.efda8422447b0537a101.js.map

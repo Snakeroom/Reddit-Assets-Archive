@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.4a901a97361fac18bcd1.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.c0817de732fb42e13879.js
+// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./src/chat/components/PortalContainer/index.m.less": function(t, e, n) {
@@ -17,7 +17,7 @@
 		"./src/chat/initializer.tsx": function(t, e, n) {
 			"use strict";
 			n.r(e), n.d(e, "default", (function() {
-				return et
+				return nt
 			}));
 			var c = n("./node_modules/react/index.js"),
 				s = n.n(c),
@@ -53,10 +53,10 @@
 			function T(t) {
 				return void 0 !== t ? t : -1
 			}
-			const D = E.a.wrapped(t => s.a.createElement("div", {
+			const M = E.a.wrapped(t => s.a.createElement("div", {
 					className: t.className
 				}, t.children), "BasePortalContainer", N.a),
-				M = E.a.wrapped(t => s.a.createElement("div", {
+				D = E.a.wrapped(t => s.a.createElement("div", {
 					className: t.className,
 					style: {
 						width: `${T(R.width)}px`,
@@ -71,7 +71,7 @@
 					}
 				}, t.children), "HiddenPortalContainer", N.a),
 				B = E.a.wrapped(_.a, "MinimizedRedesignPortalContainer", N.a),
-				U = D,
+				U = M,
 				k = Object(S.a)({
 					container: t => t && t.container && t.container.size
 				});
@@ -79,7 +79,7 @@
 			function I(t) {
 				switch (t.container) {
 					case v.a.EMBED:
-						return s.a.createElement(M, null, t.children);
+						return s.a.createElement(D, null, t.children);
 					case v.a.HIDDEN:
 						return s.a.createElement(P, null, t.children);
 					case v.a.FULL:
@@ -87,7 +87,7 @@
 					case v.a.MINIMIZED:
 						return s.a.createElement(B, null);
 					default:
-						return s.a.createElement(M, null, t.children)
+						return s.a.createElement(D, null, t.children)
 				}
 			}
 			var q = n("./src/chat/customMiddleware/chatThemeKey.ts"),
@@ -103,8 +103,9 @@
 				V = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
 				J = n("./src/chat/helpers/modifyInitialData.ts"),
 				W = n("./src/chat/reducers/index.ts"),
-				X = n("./src/chat/routes/index.ts");
-			const Z = Object(h.a)({
+				X = n("./src/chat/routes/index.ts"),
+				Z = n("./src/chat/customMiddleware/editNickname.ts");
+			const tt = Object(h.a)({
 					actionDispatchers: {
 						reddaidReceived: f.r,
 						loidReceived: f.q,
@@ -122,20 +123,20 @@
 					},
 					statsAppName: d.l.Chat
 				}),
-				tt = Object(m.a)(Z.apiContext);
+				et = Object(m.a)(tt.apiContext);
 
-			function et(t, e, n = "/chat/minimize") {
+			function nt(t, e, n = "/chat/minimize") {
 				const c = document.getElementById("2x-container"),
 					a = document.createElement("div");
 				return c.appendChild(a), Object(u.a)({
 					reducerMap: W.a,
 					routes: X.a,
-					apiContext: Z.apiContext,
-					gqlContext: tt.gqlContext,
+					apiContext: tt.apiContext,
+					gqlContext: et.gqlContext,
 					appFactory: (t, e) => s.a.createElement(b.a.Provider, {
 						value: {
-							apiContext: Z.apiContext,
-							gqlContext: tt.gqlContext
+							apiContext: tt.apiContext,
+							gqlContext: et.gqlContext
 						}
 					}, function(t, e) {
 						const n = Object(g.b)(k)(I);
@@ -148,9 +149,9 @@
 					}),
 					customMiddleware: [o.a.withExtraArgument({
 						routes: X.a,
-						apiContext: Z.apiContext,
-						gqlContext: tt.gqlContext
-					}), Z.middleware, K.a, $.a, G.a, Q.a, Object(Y.a)(e), L.a, q.a, z.a, V.a, F.a, H.a],
+						apiContext: tt.apiContext,
+						gqlContext: et.gqlContext
+					}), tt.middleware, K.a, $.a, G.a, Q.a, Object(Y.a)(e), L.a, q.a, z.a, Z.a, V.a, F.a, H.a],
 					modifyInitialData: ({
 						initialData: e,
 						browserHistory: n
@@ -712,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.4a901a97361fac18bcd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c0817de732fb42e13879.js.map

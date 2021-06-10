@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.bac241a92f4454f95ef5.js
-// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.a2887572baae1b628679.js
+// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/ReportFlow/BlockUserFlow/index.m.less": function(e, t, n) {
@@ -84,8 +84,8 @@
 				v = p.a.div("Description", C.a),
 				E = Object(u.a)(x.a),
 				f = p.a.wrapped(E, "Dropdown", C.a),
-				H = p.a.wrapped(_, "DropdownTriangle", C.a),
-				O = p.a.div("Header", C.a),
+				O = p.a.wrapped(_, "DropdownTriangle", C.a),
+				H = p.a.div("Header", C.a),
 				U = p.a.div("SelectValue", C.a),
 				B = p.a.div("LoadingIndicator", C.a),
 				F = p.a.div("RadioOptionsSectionHeader", C.a),
@@ -118,8 +118,8 @@
 				Z = n.n(P);
 			const M = p.a.div("BlockUserHolder", Z.a),
 				A = p.a.wrapped(q, "BlockUserIcon", Z.a),
-				V = p.a.div("BlockUserHeader", Z.a),
-				J = p.a.div("BlockUserDescription", Z.a),
+				J = p.a.div("BlockUserHeader", Z.a),
+				V = p.a.div("BlockUserDescription", Z.a),
 				Y = Object(l.c)({
 					blockedUser: (e, t) => Object(I.b)(e, t.userId)
 				});
@@ -160,20 +160,20 @@
 							}
 						}
 					} = this;
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(O, null, s.fbt._("Thanks for letting us know!", null, {
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(H, null, s.fbt._("Thanks for letting us know!", null, {
 						hk: "EieVe"
 					})), a.a.createElement(v, null, s.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "40yYvG"
 					})), a.a.createElement(M, {
 						onClick: () => this.blockUser()
-					}, a.a.createElement(A, null), a.a.createElement("div", null, a.a.createElement(V, null, this.getHeader()), a.a.createElement(J, null, s.fbt._("You won't see posts or comments from u/{username}. You can change this later in your preference.", [s.fbt._param("username", e)], {
+					}, a.a.createElement(A, null), a.a.createElement("div", null, a.a.createElement(J, null, this.getHeader()), a.a.createElement(V, null, s.fbt._("You won't see posts or comments from u/{username}. You can change this later in your preference.", [s.fbt._param("username", e)], {
 						hk: "4Gjtr9"
 					})))))
 				}
 			}
 			var K = Object(r.b)(Y, (e, {}) => ({
 					onBlockUser: t => {
-						e(Object(h.n)(t, !0)), e(Object(d.H)())
+						e(Object(h.n)(t, !0)), e(Object(d.J)())
 					}
 				}))(G),
 				z = n("./src/chat/components/ReportFlow/FileComplaintFlow/index.m.less"),
@@ -182,7 +182,7 @@
 				Q = p.a.a("Link", X.a);
 			var $ = ({
 					selectedReason: e
-				}) => a.a.createElement(a.a.Fragment, null, a.a.createElement(O, null, e.complaintPageTitle), a.a.createElement(v, null, e.complaintPrompt), a.a.createElement(W, null, a.a.createElement(Q, {
+				}) => a.a.createElement(a.a.Fragment, null, a.a.createElement(H, null, e.complaintPageTitle), a.a.createElement(v, null, e.complaintPrompt), a.a.createElement(W, null, a.a.createElement(Q, {
 					target: "_blank",
 					href: e.complaintUrl
 				}, e.complaintButtonText))),
@@ -217,7 +217,7 @@
 						onClick: n
 					}, a.a.createElement(U, {
 						id: se
-					}, i ? i.reasonTextToShow : ""), a.a.createElement(H, null), a.a.createElement(T, {
+					}, i ? i.reasonTextToShow : ""), a.a.createElement(O, null), a.a.createElement(T, {
 						isChosen: !!i
 					}, s.fbt._("Select a rule", null, {
 						hk: "UKdaz"
@@ -398,7 +398,7 @@
 					const {
 						reasons: e
 					} = this.props;
-					return e && e.length ? a.a.createElement(a.a.Fragment, null, a.a.createElement(O, null, s.fbt._("We're sorry something's wrong. How can we help?", null, {
+					return e && e.length ? a.a.createElement(a.a.Fragment, null, a.a.createElement(H, null, s.fbt._("We're sorry something's wrong. How can we help?", null, {
 						hk: "3oYhG"
 					})), e.map((e, t) => this.renderRulesSection(e, t))) : a.a.createElement(B, {
 						role: "progressbar"
@@ -409,10 +409,10 @@
 			}
 			var Ee = ve,
 				fe = n("./src/chat/models/ReportFlow/index.ts");
-			const He = Object(l.c)({
+			const Oe = Object(l.c)({
 				reasons: e => e.sitewideRules
 			});
-			class Oe extends a.a.Component {
+			class He extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						reason: void 0
@@ -459,9 +459,9 @@
 					}
 				}
 			}
-			const Ue = Object(r.b)(He, e => ({
+			const Ue = Object(r.b)(Oe, e => ({
 				fetchRules: () => e(Object(c.b)())
-			}))(Oe);
+			}))(He);
 			t.default = Ue
 		},
 		"./src/chat/controls/AccordionSection/index.m.less": function(e, t, n) {
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.bac241a92f4454f95ef5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.a2887572baae1b628679.js.map

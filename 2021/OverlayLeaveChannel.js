@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayLeaveChannel.e6ce1d14d962f73cf83a.js
-// Retrieved at 6/10/2021, 1:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayLeaveChannel.1453d03fa0d5b5dc112b.js
+// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayLeaveChannel"], {
 		"./src/chat/components/OverlayLeaveChannel/index.m.less": function(e, t, n) {
@@ -32,7 +32,7 @@
 				x = s.a.wrapped(v, "TextBold", h.a),
 				_ = Object(l.b)(void 0, e => ({
 					onChannelLeave: t => {
-						e(Object(c.I)(t)), e(Object(i.y)())
+						e(Object(c.I)(t)), e(Object(i.z)())
 					}
 				}));
 			t.default = _(e => {
@@ -112,4 +112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLeaveChannel.e6ce1d14d962f73cf83a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLeaveChannel.1453d03fa0d5b5dc112b.js.map
