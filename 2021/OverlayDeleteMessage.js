@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.517c7421b5cbfad4fa60.js
-// Retrieved at 6/8/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.c91deeb1a40f8abcaa06.js
+// Retrieved at 6/10/2021, 1:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDeleteMessage"], {
 		"./src/chat/components/OverlayDeleteMessage/index.m.less": function(e, t, s) {
@@ -41,7 +41,7 @@
 				}),
 				B = Object(o.b)(C, (e, t) => ({
 					onConfirmationClick: () => ((e, t) => {
-						e(Object(c.r)(t)), e(Object(d.y)())
+						e(Object(c.r)(t)), e(Object(d.z)())
 					})(e, t.messageId),
 					onCancel: () => e(i())
 				}));
@@ -138,4 +138,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.517c7421b5cbfad4fa60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.c91deeb1a40f8abcaa06.js.map

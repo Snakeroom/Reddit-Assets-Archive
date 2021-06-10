@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.97d39059a8dacd6b023e.js
-// Retrieved at 6/3/2021, 8:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.3dfe945af8b9e668ff98.js
+// Retrieved at 6/10/2021, 1:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/CrisisFlow/CrisisFlowPage.m.less": function(e, t, n) {
@@ -237,8 +237,8 @@
 				V = n("./src/higherOrderComponents/asTooltip.tsx"),
 				Y = n("./src/lib/classNames/index.ts"),
 				M = n("./src/chat/controls/Checkbox/index.tsx"),
-				G = n("./src/chat/controls/Dropdown/index.tsx"),
-				X = n("./src/chat/controls/Dropdown/Row.tsx"),
+				X = n("./src/chat/controls/Dropdown/index.tsx"),
+				G = n("./src/chat/controls/Dropdown/Row.tsx"),
 				W = n("./src/chat/icons/svgs/Dropdown/index.m.less"),
 				z = n.n(W);
 			var J = p.a.wrapped(e => r.a.createElement("svg", {
@@ -254,14 +254,14 @@
 				Q = n.n(K);
 			const $ = p.a.wrapped(M.a, "Checkbox", Q.a),
 				ee = p.a.div("Description", Q.a),
-				te = Object(V.a)(G.a),
+				te = Object(V.a)(X.a),
 				ne = p.a.wrapped(te, "Dropdown", Q.a),
 				se = p.a.wrapped(J, "DropdownTriangle", Q.a),
 				ae = p.a.div("Header", Q.a),
 				re = p.a.div("SelectValue", Q.a),
 				oe = p.a.div("LoadingIndicator", Q.a),
 				le = p.a.div("RadioOptionsSectionHeader", Q.a),
-				ie = p.a.wrapped(X.a, "DropdownRow", Q.a),
+				ie = p.a.wrapped(G.a, "DropdownRow", Q.a),
 				ce = p.a.div("PickerWrapper", Q.a),
 				pe = p.a.wrapped(e => r.a.createElement("div", {
 					className: e.className,
@@ -345,7 +345,7 @@
 			}
 			var Re = Object(o.b)(Ee, (e, {}) => ({
 					onBlockUser: t => {
-						e(Object(A.n)(t, !0)), e(Object(q.G)())
+						e(Object(A.n)(t, !0)), e(Object(q.H)())
 					}
 				}))(be),
 				fe = n("./src/chat/components/ReportFlow/FileComplaintFlow/index.m.less"),
@@ -488,11 +488,11 @@
 			const Ve = p.a.div("Section", qe.a),
 				Ye = p.a.wrapped(je, "ChevronUp", qe.a),
 				Me = p.a.wrapped(Ie, "ChevronDown", qe.a),
-				Ge = p.a.div("ArticleWrap", qe.a),
-				Xe = ({
+				Xe = p.a.div("ArticleWrap", qe.a),
+				Ge = ({
 					isOpen: e,
 					...t
-				}) => r.a.createElement(Ge, Ae({
+				}) => r.a.createElement(Xe, Ae({
 					className: Object(Y.a)({
 						[qe.a.open]: e
 					})
@@ -517,7 +517,7 @@
 					return r.a.createElement("div", null, r.a.createElement(Ve, null, this.props.open ? r.a.createElement(Ye, null) : r.a.createElement(Me, null), r.a.createElement(ze, {
 						onClick: this.handleClick,
 						isOpen: this.props.open
-					}, this.props.title), r.a.createElement(Xe, {
+					}, this.props.title), r.a.createElement(Ge, {
 						isOpen: this.props.open,
 						height: this.props.height
 					}, this.props.open ? r.a.createElement(Je, null, this.props.children) : null)))
@@ -667,4 +667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.97d39059a8dacd6b023e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.3dfe945af8b9e668ff98.js.map
