@@ -1,19 +1,11 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.235a16829561983ff197.js
-// Retrieved at 6/10/2021, 1:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.df4992ef00de75dcbced.js
+// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
-		"./src/chat/components/OverlayReport/index.m.less": function(e, t, s) {
-			e.exports = {
-				Checkbox: "_3_ggjAPRo5VjUmv6nJLlil",
-				checkbox: "_3_ggjAPRo5VjUmv6nJLlil",
-				ListItem: "_2qQcEGZtboU7wa6nmfyOoD",
-				listItem: "_2qQcEGZtboU7wa6nmfyOoD"
-			}
-		},
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "OverlayReport", (function() {
-				return P
+				return M
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/lodash/map.js"),
@@ -28,12 +20,12 @@
 			var m = s("./src/chat/actions/tracking.ts"),
 				p = s("./src/chat/components/OverlayNav/index.tsx"),
 				b = s("./src/higherOrderComponents/makeAsync.tsx"),
-				x = s("./src/lib/loadWithRetries/index.ts");
-			const C = () => null;
+				C = s("./src/lib/loadWithRetries/index.ts");
+			const x = () => null;
 			var y = Object(b.a)({
-					ErrorComponent: C,
-					getComponent: () => Object(x.a)(() => s.e("ChatReportFlow").then(s.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
-					LoadingComponent: C
+					ErrorComponent: x,
+					getComponent: () => Object(C.a)(() => s.e("ChatReportFlow").then(s.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
+					LoadingComponent: x
 				}),
 				O = s("./src/chat/components/Scroller/index.tsx"),
 				g = s("./src/chat/constants/messages.ts");
@@ -50,17 +42,17 @@
 				R = s("./src/chat/models/ReportFlow/index.ts"),
 				j = s("./src/chat/routes/chat.ts"),
 				I = s("./src/chat/selectors/channels.ts"),
-				L = s("./src/chat/selectors/user.ts"),
-				B = s("./src/chat/components/OverlayReport/index.m.less"),
-				F = s.n(B),
+				B = s("./src/chat/selectors/user.ts"),
+				L = s("./src/chat/components/OverlayReport/index.m.less"),
+				F = s.n(L),
 				T = s("./src/chat/selectors/messages.ts");
-			const U = d.a.wrapped(k.a, "Checkbox", F.a),
-				D = d.a.div("ListItem", F.a),
+			const D = d.a.wrapped(k.a, "Checkbox", F.a),
+				U = d.a.div("ListItem", F.a),
 				N = Object(S.a)({
 					user: (e, t) => t.attr === j.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === j.a.Invite || t.attr === j.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
 					messageList: e => Object(I.x)(e),
-					currentUserId: (e, t) => Object(L.a)(e)
+					currentUserId: (e, t) => Object(B.a)(e)
 				}),
 				K = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
@@ -90,7 +82,7 @@
 						})(t, s, n))
 					}
 				}));
-			class P extends o.Component {
+			class M extends o.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
@@ -137,9 +129,9 @@
 						}
 					}, this.getUserReportFlow = () => r()(v, e => {
 						const t = this.getReportReasonText(e);
-						return c.a.createElement(D, {
+						return c.a.createElement(U, {
 							key: t
-						}, c.a.createElement(U, {
+						}, c.a.createElement(D, {
 							type: "radio",
 							value: t,
 							name: _,
@@ -205,7 +197,7 @@
 					}))
 				}
 			}
-			t.default = K(P)
+			t.default = K(M)
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -260,8 +252,8 @@
 				p = s("./src/chat/icons/svgs/Checkbox/unchecked.m.less"),
 				b = s.n(p);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function C() {
+				return (C = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -269,15 +261,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = o.a.wrapped(e => a.a.createElement("circle", {
+			const x = o.a.wrapped(e => a.a.createElement("circle", {
 				className: e.className,
 				cy: "10",
 				cx: "10",
 				r: "9"
 			}), "StyledCircle", b.a);
-			var y = e => a.a.createElement(c.a, x({}, e, {
+			var y = e => a.a.createElement(c.a, C({}, e, {
 					viewBox: "0 0 20 20"
-				}), a.a.createElement("g", null, a.a.createElement(C, null))),
+				}), a.a.createElement("g", null, a.a.createElement(x, null))),
 				O = s("./src/chat/controls/Checkbox/index.m.less"),
 				g = s.n(O);
 			const _ = o.a.input("HiddenInput", g.a),
@@ -333,8 +325,8 @@
 					onSubmit: () => {},
 					onCancel: Object(h.b)(() => e(Object(c.a)()))
 				})),
-				x = i.a.div("OverlayControlBar", m.a),
-				C = b(e => r.a.createElement(x, {
+				C = i.a.div("OverlayControlBar", m.a),
+				x = b(e => r.a.createElement(C, {
 					className: Object(l.a)({
 						[m.a.primary]: e.primaryButtonOnly
 					}, e.className)
@@ -357,7 +349,7 @@
 				}, e.primaryButtonText || n.fbt._("Submit", null, {
 					hk: "2Iwjdv"
 				}))));
-			C.displayName = "OverlayControlBar", t.a = C
+			x.displayName = "OverlayControlBar", t.a = x
 		},
 		"./src/chat/icons/svgs/Checkbox/checked.m.less": function(e, t, s) {
 			e.exports = {
@@ -375,14 +367,19 @@
 		},
 		"./src/chat/models/ReportFlow/index.ts": function(e, t, s) {
 			"use strict";
-			var n;
 			s.d(t, "a", (function() {
-					return n
-				})),
-				function(e) {
-					e[e.Default = 0] = "Default", e[e.BlockUser = 1] = "BlockUser", e[e.FileComplaint = 2] = "FileComplaint", e[e.CrisisTextLine = 3] = "CrisisTextLine", e[e.Invite = 4] = "Invite"
-				}(n || (n = {}))
+				return n
+			}));
+			var n, a;
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			! function(e) {
+				e[e.Default = 0] = "Default", e[e.BlockUser = 1] = "BlockUser", e[e.FileComplaint = 2] = "FileComplaint", e[e.CrisisTextLine = 3] = "CrisisTextLine", e[e.Invite = 4] = "Invite"
+			}(n || (n = {})),
+			function(e) {
+				e.R2 = "R2"
+			}(a || (a = {}));
+			new Set(Object.values(a))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.235a16829561983ff197.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.df4992ef00de75dcbced.js.map

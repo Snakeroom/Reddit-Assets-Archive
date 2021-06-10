@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.f4b63472cbf0b4410b37.js
-// Retrieved at 3/3/2021, 12:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.68fadbc7723eb259f91a.js
+// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, s, t) {
@@ -83,6 +83,8 @@
 			t.d(s, "a", (function() {
 				return r
 			})), t.d(s, "b", (function() {
+				return o
+			})), t.d(s, "c", (function() {
 				return n
 			}));
 			var r, o, i;
@@ -133,16 +135,16 @@
 				R = {
 					PARENT_ORIGIN: "_o"
 				},
-				N = {
+				u = {
 					CTL: "ctl",
 					PAYPAL_FINISH: "paypal-finish",
 					REPORT: "report"
 				};
-			class u extends n.a.Component {
+			class N extends n.a.Component {
 				constructor(e) {
 					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.onContentResize = () => {
 							this.maybeResize()
-						}, this.modalType = e.match.params.type, this.modalType !== N.CTL && this.modalType !== N.PAYPAL_FINISH && this.modalType !== N.REPORT) throw new Error("Unknown modal page type: " + e.match.params.type);
+						}, this.modalType = e.match.params.type, this.modalType !== u.CTL && this.modalType !== u.PAYPAL_FINISH && this.modalType !== u.REPORT) throw new Error("Unknown modal page type: " + e.match.params.type);
 					this.queryParams = o()([...Object(a.a)(this.props.location.search)]);
 					const s = this.queryParams[R.PARENT_ORIGIN];
 					if (!A.test(s)) throw new Error("Invalid parent origin: " + s);
@@ -153,7 +155,7 @@
 				}
 				componentForIframe() {
 					switch (this.modalType) {
-						case N.CTL:
+						case u.CTL:
 							return n.a.createElement(_.a, p({
 								iframed: !0,
 								username: this.queryParams.author,
@@ -162,15 +164,15 @@
 								}),
 								postMessage: e => this.postMessage(e)
 							}, this.queryParams));
-						case N.PAYPAL_FINISH:
+						case u.PAYPAL_FINISH:
 							return n.a.createElement(O.a, {
 								params: this.queryParams,
 								postMessage: e => this.postMessage(e)
 							});
-						case N.REPORT: {
+						case u.REPORT: {
 							const e = this.queryParams.host_app_name;
 							return n.a.createElement(m.b, {
-								hostAppName: h.b.has(e) ? e : void 0,
+								hostAppName: h.c.has(e) ? e : void 0,
 								postId: this.queryParams.post_id,
 								commentId: this.queryParams.comment_id,
 								messageId: this.queryParams.message_id,
@@ -225,7 +227,7 @@
 					}))
 				}
 			}
-			s.default = u
+			s.default = N
 		},
 		"./src/reddit/pages/PaypalFinishPage/async.tsx": function(e, s, t) {
 			"use strict";
@@ -253,4 +255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.f4b63472cbf0b4410b37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.68fadbc7723eb259f91a.js.map
