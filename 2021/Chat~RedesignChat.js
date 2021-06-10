@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d19452e718c07b5eb56e.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.bab502415bddb48b3c46.js
+// Retrieved at 6/10/2021, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -13358,8 +13358,8 @@
 				O = e => {
 					Object(d.a)({
 						noun: "prompt_theme",
-						source: s.b.Chat,
-						action: s.a.View,
+						source: s.b.ChatView,
+						action: s.a.Click,
 						chat: {
 							...Object(r.A)(e),
 							...Object(r.q)(e),
@@ -14359,4 +14359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d19452e718c07b5eb56e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.bab502415bddb48b3c46.js.map
