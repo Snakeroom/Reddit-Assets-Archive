@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.312e9410327bf8c9eaaa.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.ae3649f602511d8e3aac.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
-		"./src/graphql/operations/PollVote.json": function(e) {
-			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
-		},
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -86,9 +83,9 @@
 			})), n.d(t, "t", (function() {
 				return x
 			})), n.d(t, "u", (function() {
-				return h
-			})), n.d(t, "v", (function() {
 				return j
+			})), n.d(t, "v", (function() {
+				return h
 			})), n.d(t, "w", (function() {
 				return T
 			})), n.d(t, "x", (function() {
@@ -114,8 +111,8 @@
 				N = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				y = "GOVERNANCE__TRANSFER_PENDING",
 				x = "GOVERNANCE__TRANSFER_SUCCESS",
-				h = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				j = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				j = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				h = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				T = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				I = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
@@ -143,7 +140,7 @@
 			})), n.d(t, "b", (function() {
 				return y
 			})), n.d(t, "c", (function() {
-				return h
+				return j
 			})), n.d(t, "f", (function() {
 				return C
 			})), n.d(t, "g", (function() {
@@ -162,9 +159,9 @@
 				c = n("./src/reddit/actions/post.ts"),
 				d = n("./src/reddit/actions/toaster.ts"),
 				a = n("./src/config.ts"),
-				u = n("./src/graphql/operations/PollVote.json"),
-				l = n("./src/lib/makeGqlRequest/index.ts"),
-				b = n("./src/reddit/models/Poll/index.ts"),
+				u = n("./src/lib/makeGqlRequest/index.ts"),
+				l = n("./src/reddit/models/Poll/index.ts"),
+				b = n("./src/redditGQL/operations/PollVote.json"),
 				m = n("./src/reddit/endpoints/governance/requester.ts");
 			var p = n("./src/reddit/endpoints/governance/wallet.ts"),
 				f = n("./src/reddit/models/Toast/index.ts"),
@@ -175,8 +172,8 @@
 			const N = Object(o.a)(E.b),
 				y = Object(o.a)(E.c),
 				x = Object(o.a)(E.e),
-				h = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
-				j = Object(o.a)(E.i),
+				j = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
+				h = Object(o.a)(E.i),
 				T = Object(o.a)(E.j),
 				I = Object(o.a)(E.k),
 				g = Object(o.a)(E.q),
@@ -194,8 +191,8 @@
 					let i, d = r().polls.models[e];
 					if (n(T({
 							pollId: e
-						})), (i = d.type === b.a.GA ? await ((e, t, n) => Object(l.a)(e, {
-								...u,
+						})), (i = d.type === l.a.GA ? await ((e, t, n) => Object(u.a)(e, {
+								...b,
 								variables: {
 									input: {
 										postId: t,
@@ -209,7 +206,7 @@
 									endpoint: `${a.a.metaUrl}/polls/${t}/${n}/votes/me/${r}`
 								})
 							}(o(), d.subredditId, e, t)).ok) {
-						if (d.type === b.a.GA) {
+						if (d.type === l.a.GA) {
 							const {
 								options: e
 							} = i.body.data.updatePostPollVoteState.poll;
@@ -220,13 +217,13 @@
 							}))
 						} else n(I(i.body));
 						const o = r();
-						if ((d = o.polls.models[e]) && Object(b.d)(d)) {
+						if ((d = o.polls.models[e]) && Object(l.d)(d)) {
 							const {
 								postId: e
 							} = d, t = o.posts.models[e];
 							t && t.voteState === _.a.notVoted && n(Object(c.bb)(e))
 						}
-					} else n(j({
+					} else n(h({
 						pollId: e,
 						error: i.error || i.errors[0].message
 					})), Object(v.a)(n, i.error || i.errors[0].messsage)
@@ -975,7 +972,10 @@
 					var n, r, o, s;
 					return null === (s = null === (o = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.publicWallets) || void 0 === o ? void 0 : o[t.userId]) || void 0 === s ? void 0 : s[t.subredditId]
 				}
+		},
+		"./src/redditGQL/operations/PollVote.json": function(e) {
+			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.312e9410327bf8c9eaaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.ae3649f602511d8e3aac.js.map

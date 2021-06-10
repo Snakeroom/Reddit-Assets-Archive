@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.581710e74bfbae99bb39.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.b2e8485e646e5b343bc5.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -187,9 +187,6 @@
 		},
 		"./node_modules/uc.micro/properties/Any/regex.js": function(e, t) {
 			e.exports = /[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/
-		},
-		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		},
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
 			"use strict";
@@ -430,8 +427,8 @@
 				return h
 			}));
 			var a = n("./src/lib/makeActionCreator/index.ts"),
-				r = n("./src/graphql/operations/SubredditTypeaheadSearch.json"),
-				s = n("./src/lib/makeGqlRequest/index.ts"),
+				r = n("./src/lib/makeGqlRequest/index.ts"),
+				s = n("./src/redditGQL/operations/SubredditTypeaheadSearch.json"),
 				i = n("./src/reddit/helpers/graphql/normalizeAllowedPostTypesFromGql/index.ts"),
 				l = n("./src/reddit/helpers/name/index.ts"),
 				o = n("./src/reddit/selectors/subredditAutocomplete.ts"),
@@ -453,8 +450,8 @@
 					n(c({
 						key: h
 					}));
-					const b = await ((e, t) => Object(s.a)(e, {
-						...r,
+					const b = await ((e, t) => Object(r.a)(e, {
+						...s,
 						variables: t
 					}))(d(), {
 						query: h,
@@ -9096,7 +9093,10 @@
 				return a
 			}));
 			const a = e => e.apiRequestState
+		},
+		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(e) {
+			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.581710e74bfbae99bb39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.b2e8485e646e5b343bc5.js.map

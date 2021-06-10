@@ -1,14 +1,11 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.610ebf965cd2377bd35d.js
-// Retrieved at 6/9/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.cd686b1ff2bef5616566.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
 			e.exports = function(e) {
 				return void 0 === e
 			}
-		},
-		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
 		},
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
 			"use strict";
@@ -242,7 +239,7 @@
 				p = s("./src/lib/makeApiRequest/index.ts"),
 				h = s("./src/lib/omitHeaders/index.ts"),
 				b = s("./src/reddit/constants/headers.ts");
-			var f = s("./src/graphql/operations/SubscribedSubreddits.json"),
+			var f = s("./src/redditGQL/operations/SubscribedSubreddits.json"),
 				v = s("./src/lib/makeGqlRequest/index.ts"),
 				y = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var O = s("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
@@ -1877,7 +1874,7 @@
 			})), s.d(t, "e", (function() {
 				return H
 			})), s.d(t, "g", (function() {
-				return q
+				return G
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/reselect/es/index.js"),
@@ -2055,7 +2052,7 @@
 				}),
 				B = Object(n.a)(M, U, m.b, c.b, c.o, (e, t, s, n, r) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : r : void 0),
 				H = Object(n.a)(M, U, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
-				q = (e, t) => {
+				G = (e, t) => {
 					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
@@ -2076,7 +2073,10 @@
 				a = Object(n.a)(i, o.n, (e, t) => t && !e.isIntroFinished),
 				c = Object(n.a)(i, e => e.lastChatActivityUtcTs),
 				d = e => !!e && e + r.a > Date.now()
+		},
+		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
+			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.610ebf965cd2377bd35d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.cd686b1ff2bef5616566.js.map

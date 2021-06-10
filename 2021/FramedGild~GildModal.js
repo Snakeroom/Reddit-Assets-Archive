@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5914f94ffea4d468051c.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.cbfa4471b478cabbc2a4.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -288,15 +288,6 @@
 				throw new Error("define cannot be used indirect")
 			}
 		},
-		"./src/graphql/operations/GildComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"c25f21e6351f"}')
-		},
-		"./src/graphql/operations/GildPost.json": function(e) {
-			e.exports = JSON.parse('{"id":"496275fd4bb6"}')
-		},
-		"./src/graphql/operations/SubredditCoins.json": function(e) {
-			e.exports = JSON.parse('{"id":"a82ef253ed10"}')
-		},
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -330,8 +321,8 @@
 			var n = s("./src/lib/initializeClient/installReducer.ts"),
 				r = s("./src/reddit/reducers/features/econPurchase/index.ts"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/graphql/operations/SubredditCoins.json"),
-				i = s("./src/lib/makeGqlRequest/index.ts");
+				o = s("./src/lib/makeGqlRequest/index.ts"),
+				i = s("./src/redditGQL/operations/SubredditCoins.json");
 			var d = s("./src/reddit/featureFlags/subredditPoints.ts"),
 				c = s("./src/reddit/actions/gold/constants.ts");
 			Object(n.a)({
@@ -346,8 +337,8 @@
 					var c, u;
 					if (!d.a.has(t.toLowerCase())) return;
 					if (void 0 !== r().features.econPurchase.subredditLockedCoins[e] && !(null == s ? void 0 : s.force)) return;
-					const m = await ((e, t) => Object(i.a)(e, {
-						...o,
+					const m = await ((e, t) => Object(o.a)(e, {
+						...i,
 						variables: {
 							subreddit: t
 						}
@@ -372,7 +363,7 @@
 			})), s.d(t, "triggerLoader", (function() {
 				return X
 			})), s.d(t, "gildPending", (function() {
-				return Q
+				return Z
 			})), s.d(t, "gildFailed", (function() {
 				return ee
 			})), s.d(t, "gildSuccessful", (function() {
@@ -420,21 +411,21 @@
 				P = s("./src/reddit/selectors/posts.ts"),
 				N = s("./src/reddit/selectors/subreddit.ts"),
 				A = s("./src/reddit/selectors/user.ts"),
-				S = s("./src/graphql/operations/GildComment.json"),
-				T = s("./src/graphql/operations/GildPost.json"),
-				L = s("./src/lib/makeGqlRequest/index.ts"),
-				M = s("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const B = (e, t, s) => Object(L.a)(e, {
-					...T,
+				S = s("./src/lib/makeGqlRequest/index.ts"),
+				T = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				L = s("./src/redditGQL/operations/GildComment.json"),
+				M = s("./src/redditGQL/operations/GildPost.json");
+			const B = (e, t, s) => Object(S.a)(e, {
+					...M,
 					variables: t
 				}, {
-					query: s ? {} : Object(M.b)()
+					query: s ? {} : Object(T.b)()
 				}),
-				R = (e, t, s) => Object(L.a)(e, {
-					...S,
+				R = (e, t, s) => Object(S.a)(e, {
+					...L,
 					variables: t
 				}, {
-					query: s ? {} : Object(M.b)()
+					query: s ? {} : Object(T.b)()
 				});
 			var D = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				G = s("./src/reddit/helpers/awards/message.ts"),
@@ -455,7 +446,7 @@
 							isOldReddit: i,
 							isLivestream: d
 						} = t;
-					s(Q());
+					s(Z());
 					try {
 						const t = {
 								gildingTypeId: o.selectedAward.id,
@@ -511,8 +502,8 @@
 					} finally {
 						Object(F.b)(F.a.GildingFlow)
 					}
-				}, X = Object(r.a)(q.v), Z = Object(r.a)(q.r), Q = () => async (e, t) => {
-					e(Z()), window.setTimeout(() => {
+				}, X = Object(r.a)(q.v), Q = Object(r.a)(q.r), Z = () => async (e, t) => {
+					e(Q()), window.setTimeout(() => {
 						t().gild.api.pending && e(X())
 					}, 2e3)
 				}, $ = Object(r.a)(q.q), ee = e => async (t, s) => {
@@ -1601,8 +1592,8 @@
 				z = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				Y = s.n(z),
 				X = s("./src/reddit/helpers/awards/message.ts"),
-				Z = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Q = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				Q = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Z = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				$ = s("./src/reddit/icons/svgs/Eye/index.tsx"),
 				ee = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				te = s("./src/reddit/icons/svgs/CoinV2/index.tsx"),
@@ -1738,7 +1729,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : r.a.createElement(Q.a, {
+					return e ? null : r.a.createElement(Z.a, {
 						className: Y.a.giver,
 						isSelected: t,
 						text: i.fbt._("Make my gift anonymous", null, {
@@ -1770,7 +1761,7 @@
 						className: Object(d.a)(Y.a.textAreaWrapper, {
 							[Y.a.messageTooLong]: o
 						})
-					}, r.a.createElement(Z.s, pe({
+					}, r.a.createElement(Q.s, pe({
 						className: Y.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -5289,7 +5280,16 @@
 					});
 					return (s && s.postIds || []).slice(0, 2)
 				}
+		},
+		"./src/redditGQL/operations/GildComment.json": function(e) {
+			e.exports = JSON.parse('{"id":"c25f21e6351f"}')
+		},
+		"./src/redditGQL/operations/GildPost.json": function(e) {
+			e.exports = JSON.parse('{"id":"496275fd4bb6"}')
+		},
+		"./src/redditGQL/operations/SubredditCoins.json": function(e) {
+			e.exports = JSON.parse('{"id":"a82ef253ed10"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5914f94ffea4d468051c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.cbfa4471b478cabbc2a4.js.map

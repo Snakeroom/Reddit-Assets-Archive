@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.43ac52754bec912889f8.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.0f00911c12632e312970.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -213,8 +213,8 @@
 						return a && (e = i << 2, t = n[o], a > 0 && (c[e] = 255 & t), a > 1 && (c[e + 1] = t >> 8 & 255), a > 2 && (c[e + 2] = t >> 16 & 255)), c
 					};
 					var N = function(e) {
-						var t, r, n, s, a, o, c, d, l, u, m, h, f, p, b, v, g, x, E, y, N, I, C, _, w, j, O, k, A, T, M, P, R, U, S, D, L, G, B, V, F, W, H, z, q, X, Y, Z, $, J, K, Q, ee, te, re, ne, se, ae, oe, ie, ce, de, le;
-						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], d = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), r = (f = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (d << 1 | l >>> 31), r = a ^ (l << 1 | d >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = o ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = d ^ (h << 1 | f >>> 31), r = l ^ (f << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | a >>> 31), r = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, p = e[0], b = e[1], X = e[11] << 4 | e[10] >>> 28, Y = e[10] << 4 | e[11] >>> 28, k = e[20] << 3 | e[21] >>> 29, A = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, U = e[2] << 1 | e[3] >>> 31, S = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, Z = e[22] << 10 | e[23] >>> 22, $ = e[23] << 10 | e[22] >>> 22, T = e[33] << 13 | e[32] >>> 19, M = e[32] << 13 | e[33] >>> 19, de = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, x = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, K = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, _ = e[6] << 28 | e[7] >>> 4, w = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, G = e[26] << 25 | e[27] >>> 7, B = e[27] << 25 | e[26] >>> 7, y = e[36] << 21 | e[37] >>> 11, N = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, q = e[9] << 27 | e[8] >>> 5, j = e[18] << 20 | e[19] >>> 12, O = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, V = e[38] << 8 | e[39] >>> 24, F = e[39] << 8 | e[38] >>> 24, I = e[48] << 14 | e[49] >>> 18, C = e[49] << 14 | e[48] >>> 18, e[0] = p ^ ~v & x, e[1] = b ^ ~g & E, e[10] = _ ^ ~j & k, e[11] = w ^ ~O & A, e[20] = U ^ ~D & G, e[21] = S ^ ~L & B, e[30] = z ^ ~X & Z, e[31] = q ^ ~Y & $, e[40] = te ^ ~ne & ae, e[41] = re ^ ~se & oe, e[2] = v ^ ~x & y, e[3] = g ^ ~E & N, e[12] = j ^ ~k & T, e[13] = O ^ ~A & M, e[22] = D ^ ~G & V, e[23] = L ^ ~B & F, e[32] = X ^ ~Z & J, e[33] = Y ^ ~$ & K, e[42] = ne ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = x ^ ~y & I, e[5] = E ^ ~N & C, e[14] = k ^ ~T & P, e[15] = A ^ ~M & R, e[24] = G ^ ~V & W, e[25] = B ^ ~F & H, e[34] = Z ^ ~J & Q, e[35] = $ ^ ~K & ee, e[44] = ae ^ ~ie & de, e[45] = oe ^ ~ce & le, e[6] = y ^ ~I & p, e[7] = N ^ ~C & b, e[16] = T ^ ~P & _, e[17] = M ^ ~R & w, e[26] = V ^ ~W & U, e[27] = F ^ ~H & S, e[36] = J ^ ~Q & z, e[37] = K ^ ~ee & q, e[46] = ie ^ ~de & te, e[47] = ce ^ ~le & re, e[8] = I ^ ~p & v, e[9] = C ^ ~b & g, e[18] = P ^ ~_ & j, e[19] = R ^ ~w & O, e[28] = W ^ ~U & D, e[29] = H ^ ~S & L, e[38] = Q ^ ~z & X, e[39] = ee ^ ~q & Y, e[48] = de ^ ~te & ne, e[49] = le ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
+						var t, r, n, s, a, o, c, d, l, u, m, h, f, p, b, v, g, x, E, y, N, I, C, _, w, j, O, k, A, T, M, P, R, U, S, D, L, G, B, V, F, W, H, z, X, q, Y, Z, $, J, K, Q, ee, te, re, ne, se, ae, oe, ie, ce, de, le;
+						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], d = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | c >>> 31), r = (f = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | o >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (d << 1 | l >>> 31), r = a ^ (l << 1 | d >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = o ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = d ^ (h << 1 | f >>> 31), r = l ^ (f << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | a >>> 31), r = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, p = e[0], b = e[1], q = e[11] << 4 | e[10] >>> 28, Y = e[10] << 4 | e[11] >>> 28, k = e[20] << 3 | e[21] >>> 29, A = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, U = e[2] << 1 | e[3] >>> 31, S = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, Z = e[22] << 10 | e[23] >>> 22, $ = e[23] << 10 | e[22] >>> 22, T = e[33] << 13 | e[32] >>> 19, M = e[32] << 13 | e[33] >>> 19, de = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, D = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, x = e[25] << 11 | e[24] >>> 21, E = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, K = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, R = e[44] << 29 | e[45] >>> 3, _ = e[6] << 28 | e[7] >>> 4, w = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, G = e[26] << 25 | e[27] >>> 7, B = e[27] << 25 | e[26] >>> 7, y = e[36] << 21 | e[37] >>> 11, N = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, j = e[18] << 20 | e[19] >>> 12, O = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, V = e[38] << 8 | e[39] >>> 24, F = e[39] << 8 | e[38] >>> 24, I = e[48] << 14 | e[49] >>> 18, C = e[49] << 14 | e[48] >>> 18, e[0] = p ^ ~v & x, e[1] = b ^ ~g & E, e[10] = _ ^ ~j & k, e[11] = w ^ ~O & A, e[20] = U ^ ~D & G, e[21] = S ^ ~L & B, e[30] = z ^ ~q & Z, e[31] = X ^ ~Y & $, e[40] = te ^ ~ne & ae, e[41] = re ^ ~se & oe, e[2] = v ^ ~x & y, e[3] = g ^ ~E & N, e[12] = j ^ ~k & T, e[13] = O ^ ~A & M, e[22] = D ^ ~G & V, e[23] = L ^ ~B & F, e[32] = q ^ ~Z & J, e[33] = Y ^ ~$ & K, e[42] = ne ^ ~ae & ie, e[43] = se ^ ~oe & ce, e[4] = x ^ ~y & I, e[5] = E ^ ~N & C, e[14] = k ^ ~T & P, e[15] = A ^ ~M & R, e[24] = G ^ ~V & W, e[25] = B ^ ~F & H, e[34] = Z ^ ~J & Q, e[35] = $ ^ ~K & ee, e[44] = ae ^ ~ie & de, e[45] = oe ^ ~ce & le, e[6] = y ^ ~I & p, e[7] = N ^ ~C & b, e[16] = T ^ ~P & _, e[17] = M ^ ~R & w, e[26] = V ^ ~W & U, e[27] = F ^ ~H & S, e[36] = J ^ ~Q & z, e[37] = K ^ ~ee & X, e[46] = ie ^ ~de & te, e[47] = ce ^ ~le & re, e[8] = I ^ ~p & v, e[9] = C ^ ~b & g, e[18] = P ^ ~_ & j, e[19] = R ^ ~w & O, e[28] = W ^ ~U & D, e[29] = H ^ ~S & L, e[38] = Q ^ ~z & q, e[39] = ee ^ ~X & Y, e[48] = de ^ ~te & ne, e[49] = le ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
 					};
 					if (s) e.exports = f;
 					else
@@ -578,9 +578,6 @@
 				return n(e) + t
 			}
 		},
-		"./src/graphql/operations/PollVote.json": function(e) {
-			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
-		},
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -642,9 +639,9 @@
 				i = r("./src/reddit/actions/post.ts"),
 				c = r("./src/reddit/actions/toaster.ts"),
 				d = r("./src/config.ts"),
-				l = r("./src/graphql/operations/PollVote.json"),
-				u = r("./src/lib/makeGqlRequest/index.ts"),
-				m = r("./src/reddit/models/Poll/index.ts"),
+				l = r("./src/lib/makeGqlRequest/index.ts"),
+				u = r("./src/reddit/models/Poll/index.ts"),
+				m = r("./src/redditGQL/operations/PollVote.json"),
 				h = r("./src/reddit/endpoints/governance/requester.ts");
 			var f = r("./src/reddit/endpoints/governance/wallet.ts"),
 				p = r("./src/reddit/models/Toast/index.ts"),
@@ -674,8 +671,8 @@
 					let o, c = n().polls.models[e];
 					if (r(_({
 							pollId: e
-						})), (o = c.type === m.a.GA ? await ((e, t, r) => Object(u.a)(e, {
-								...l,
+						})), (o = c.type === u.a.GA ? await ((e, t, r) => Object(l.a)(e, {
+								...m,
 								variables: {
 									input: {
 										postId: t,
@@ -689,7 +686,7 @@
 									endpoint: `${d.a.metaUrl}/polls/${t}/${r}/votes/me/${n}`
 								})
 							}(s(), c.subredditId, e, t)).ok) {
-						if (c.type === m.a.GA) {
+						if (c.type === u.a.GA) {
 							const {
 								options: e
 							} = o.body.data.updatePostPollVoteState.poll;
@@ -700,7 +697,7 @@
 							}))
 						} else r(w(o.body));
 						const s = n();
-						if ((c = s.polls.models[e]) && Object(m.d)(c)) {
+						if ((c = s.polls.models[e]) && Object(u.d)(c)) {
 							const {
 								postId: e
 							} = c, t = s.posts.models[e];
@@ -1239,8 +1236,8 @@
 			var W = r("./src/reddit/controls/FormFields/index.tsx"),
 				H = r("./src/reddit/hooks/useThunkDispatch.ts"),
 				z = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				q = r("./src/reddit/icons/svgs/Info/index.tsx"),
-				X = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
+				X = r("./src/reddit/icons/svgs/Info/index.tsx"),
+				q = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
 				Y = r("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
 				Z = r.n(Y);
 			const $ = 42,
@@ -1324,7 +1321,7 @@
 				}), function(e) {
 					switch (e) {
 						case K.UserDoesNotHaveAWallet:
-							return s.a.createElement(q.a, {
+							return s.a.createElement(X.a, {
 								className: Z.a.icon,
 								style: {
 									fill: x.b.notice
@@ -1333,7 +1330,7 @@
 						case K.InvalidWalletAddress:
 						case K.InvalidUsername:
 						case K.Error:
-							return s.a.createElement(X.a, {
+							return s.a.createElement(q.a, {
 								className: Z.a.icon,
 								style: {
 									fill: x.b.warning
@@ -2475,7 +2472,10 @@
 					return r && e.subreddits.gov.releaseNotes[r] || s
 				},
 				h = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
+		},
+		"./src/redditGQL/operations/PollVote.json": function(e) {
+			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.43ac52754bec912889f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.0f00911c12632e312970.js.map

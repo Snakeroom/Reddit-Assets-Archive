@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7c8638c7ab4528b13883.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4836cc26c2a0e9c91ed8.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -10,9 +10,6 @@
 				}
 				return s
 			}
-		},
-		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
 		},
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
 			"use strict";
@@ -120,7 +117,7 @@
 				p = r("./src/lib/makeApiRequest/index.ts"),
 				f = r("./src/lib/omitHeaders/index.ts"),
 				b = r("./src/reddit/constants/headers.ts");
-			var v = r("./src/graphql/operations/SubscribedSubreddits.json"),
+			var v = r("./src/redditGQL/operations/SubscribedSubreddits.json"),
 				x = r("./src/lib/makeGqlRequest/index.ts"),
 				g = r("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var h = r("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
@@ -2047,8 +2044,8 @@
 				V = r.n(Y),
 				X = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.tsx");
 			const {
-				fbt: J
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(o.c)({
+				fbt: Q
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
 				account: h.j,
 				activeTooltipId: g.a,
 				currentUserHasSubreddit: h.g,
@@ -2084,7 +2081,7 @@
 			}, s.a.createElement(p.k, {
 				className: V.a.button,
 				to: t ? `/user/${e}/submit` : "/submit"
-			}, J._("New Post", null, {
+			}, Q._("New Post", null, {
 				hk: "2VCZwF"
 			}))), ee = ({
 				profileName: e,
@@ -2095,12 +2092,12 @@
 			}, r ? s.a.createElement(p.l, {
 				className: V.a.button,
 				onClick: () => t(e, r)
-			}, J._("Unfollow", null, {
+			}, Q._("Unfollow", null, {
 				hk: "1nM1SO"
 			})) : s.a.createElement(p.i, {
 				className: V.a.button,
 				onClick: () => t(e, r)
-			}, J._("Follow", null, {
+			}, Q._("Follow", null, {
 				hk: "OPQuq"
 			}))), te = ({
 				userId: e
@@ -2110,11 +2107,11 @@
 				contextId: e,
 				className: V.a.button,
 				userId: e,
-				text: J._("Chat", null, {
+				text: Q._("Chat", null, {
 					hk: "UKkIW"
 				})
 			}));
-			t.default = Object(a.b)(Q, e => ({
+			t.default = Object(a.b)(J, e => ({
 				onToggleFollow: (t, r) => e(Object(d.d)([{
 					name: t,
 					type: u.a.PROFILE
@@ -2689,7 +2686,10 @@
 				s = e => e.givePremium.givePremiumModalAccountName,
 				a = e => e.givePremium.api.error || "",
 				o = e => e.givePremium.api.pending
+		},
+		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
+			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7c8638c7ab4528b13883.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4836cc26c2a0e9c91ed8.js.map

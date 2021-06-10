@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.e5cf8af0b87bb85bf8ba.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.eaa5e97b1d856c8c3de7.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -20,18 +20,6 @@
 				}
 			};
 			e.exports = n, e.exports.default = n
-		},
-		"./src/graphql/operations/GeoContributableSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"9f61c6bd8f6d"}')
-		},
-		"./src/graphql/operations/GeoPlaceAutocomplete.json": function(e) {
-			e.exports = JSON.parse('{"id":"8a89fd7c7db1"}')
-		},
-		"./src/graphql/operations/SetSubredditGeoPlace.json": function(e) {
-			e.exports = JSON.parse('{"id":"ece6b91ed02d"}')
-		},
-		"./src/graphql/operations/SuggestSubredditGeoPlace.json": function(e) {
-			e.exports = JSON.parse('{"id":"aea8f624d4b7"}')
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -57,7 +45,7 @@
 				p = s("./src/reddit/constants/keycodes.ts"),
 				h = s("./src/lib/makeGqlRequest/index.ts"),
 				g = s("./src/lib/sentry/index.ts"),
-				f = s("./src/graphql/operations/GeoPlaceAutocomplete.json");
+				f = s("./src/redditGQL/operations/GeoPlaceAutocomplete.json");
 			! function(e) {
 				e.GoogleMaps = "GOOGLE_MAPS", e.Geonames = "GEONAMES"
 			}(d || (d = {}));
@@ -1038,13 +1026,13 @@
 					}))
 				},
 				I = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				F = s.n(I);
+				L = s.n(I);
 			const {
-				fbt: L
+				fbt: F
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = 8, G = Array.from({
 				length: B
 			}).map((e, t) => r.a.createElement(P, {
-				className: F.a.Subreddit,
+				className: L.a.Subreddit,
 				key: t
 			})), R = {
 				enabled: !0,
@@ -1068,26 +1056,26 @@
 						topicUrl: s
 					} = this.props, n = t.slice(0, B);
 					return r.a.createElement(o.a, {
-						className: Object(a.a)(F.a.Container, e)
+						className: Object(a.a)(L.a.Container, e)
 					}, r.a.createElement("div", {
-						className: F.a.Title
+						className: L.a.Title
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
-					}, L._("Top Communities", null, {
+					}, F._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
-						className: F.a.SubredditList
+						className: L.a.SubredditList
 					}, n.length > 0 ? n.map(e => r.a.createElement(N, {
-						className: F.a.Subreddit,
+						className: L.a.Subreddit,
 						discoveryUnit: R,
 						key: e,
 						subredditId: e
 					})) : G), t.length > B && r.a.createElement(i.a, {
 						to: s
 					}, r.a.createElement(l.o, {
-						className: F.a.SeeMore,
+						className: L.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
-					}, L._("See more", null, {
+					}, F._("See more", null, {
 						hk: "2qkY6H"
 					}))))
 				}
@@ -1277,7 +1265,7 @@
 				return i
 			}));
 			var n = s("./src/lib/makeGqlRequest/index.ts"),
-				r = s("./src/graphql/operations/SetSubredditGeoPlace.json");
+				r = s("./src/redditGQL/operations/SetSubredditGeoPlace.json");
 			const i = e => ({
 				input: {
 					subredditId: e.subredditId,
@@ -1494,7 +1482,7 @@
 				c = s("./src/reddit/components/TopicSidebar/index.tsx"),
 				d = s("./src/reddit/components/TopicSidebar/SubredditList/index.tsx"),
 				l = s("./src/lib/makeGqlRequest/index.ts"),
-				u = s("./src/graphql/operations/GeoContributableSubreddits.json"),
+				u = s("./src/redditGQL/operations/GeoContributableSubreddits.json"),
 				m = async e => {
 					const t = await Object(l.a)(e, u),
 						{
@@ -1552,13 +1540,13 @@
 			var C = s("./src/reddit/actions/toaster.ts"),
 				w = s("./src/reddit/components/GeoForm/GeoForm.tsx"),
 				N = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				T = s("./src/graphql/operations/SuggestSubredditGeoPlace.json"),
-				P = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
+				T = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
+				P = s("./src/redditGQL/operations/SuggestSubredditGeoPlace.json"),
 				I = async (e, t) => Object(l.a)(e, {
-					...T,
-					variables: Object(P.b)(t)
-				}), F = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
-			const L = "crowdsource",
+					...P,
+					variables: Object(T.b)(t)
+				}), L = s("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
+			const F = "crowdsource",
 				B = {
 					pageType: "crowdsource_feed_geo"
 				},
@@ -1566,34 +1554,34 @@
 					pageType: "geo_entry"
 				},
 				R = e => () => ({
-					source: L,
+					source: F,
 					noun: "skip",
 					action: "click",
-					subreddit: Object(F.a)(e),
-					userSubreddit: Object(F.g)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(L.a)(e),
+					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: B
 				}),
 				M = e => () => ({
-					source: L,
+					source: F,
 					noun: "location_field",
 					action: "click",
-					subreddit: Object(F.a)(e),
-					userSubreddit: Object(F.g)(e.modPermissions, e.isSubscribed),
+					subreddit: Object(L.a)(e),
+					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: G
 				}),
-				W = q("select_location"),
-				A = q("confirm_location"),
-				H = q("undo_location"),
+				W = Q("select_location"),
+				A = Q("confirm_location"),
+				H = Q("undo_location"),
 				D = U("verify_location"),
 				J = U("reject_location");
 
-			function q(e) {
+			function Q(e) {
 				return (t, s) => () => ({
-					source: L,
+					source: F,
 					noun: e,
 					action: "click",
-					subreddit: Object(F.a)(t),
-					userSubreddit: Object(F.g)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(L.a)(t),
+					userSubreddit: Object(L.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
 						...G,
 						reason: s
@@ -1603,18 +1591,18 @@
 
 			function U(e) {
 				return (t, s) => () => ({
-					source: L,
+					source: F,
 					noun: e,
 					action: "click",
-					subreddit: Object(F.a)(t),
-					userSubreddit: Object(F.g)(t.modPermissions, t.isSubscribed),
+					subreddit: Object(L.a)(t),
+					userSubreddit: Object(L.g)(t.modPermissions, t.isSubscribed),
 					actionInfo: {
 						...B,
 						reason: s
 					}
 				})
 			}
-			var Q = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
+			var q = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
 				K = s("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: z
@@ -1656,7 +1644,7 @@
 					className: S.a.subredditTitle
 				}, r.a.createElement(N.b, {
 					className: S.a.icon,
-					subredditOrProfile: Object(F.a)(t),
+					subredditOrProfile: Object(L.a)(t),
 					linkTo: t.path
 				}), r.a.createElement(x.a, {
 					to: t.path
@@ -1667,7 +1655,7 @@
 					onClick: function() {
 						Y(t.id), E(R(t)), f(), s(t.id)
 					}
-				}, r.a.createElement(Q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
+				}, r.a.createElement(q.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
 				}, r.a.createElement("div", {
 					className: S.a.question
@@ -1797,7 +1785,19 @@
 					}))]
 				}))
 			}
+		},
+		"./src/redditGQL/operations/GeoContributableSubreddits.json": function(e) {
+			e.exports = JSON.parse('{"id":"9f61c6bd8f6d"}')
+		},
+		"./src/redditGQL/operations/GeoPlaceAutocomplete.json": function(e) {
+			e.exports = JSON.parse('{"id":"8a89fd7c7db1"}')
+		},
+		"./src/redditGQL/operations/SetSubredditGeoPlace.json": function(e) {
+			e.exports = JSON.parse('{"id":"ece6b91ed02d"}')
+		},
+		"./src/redditGQL/operations/SuggestSubredditGeoPlace.json": function(e) {
+			e.exports = JSON.parse('{"id":"aea8f624d4b7"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.e5cf8af0b87bb85bf8ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.eaa5e97b1d856c8c3de7.js.map

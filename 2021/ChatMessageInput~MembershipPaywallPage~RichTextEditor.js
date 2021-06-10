@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.68cf21b73f2205a2f6b5.js
-// Retrieved at 6/9/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.77c89fe864d32cc83a67.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
-		"./src/graphql/operations/SubredditTypeaheadSearch.json": function(t) {
-			t.exports = JSON.parse('{"id":"20edc5ee12df"}')
-		},
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "a", (function() {
@@ -649,8 +646,8 @@
 				return h
 			}));
 			var o = n("./src/lib/makeActionCreator/index.ts"),
-				r = n("./src/graphql/operations/SubredditTypeaheadSearch.json"),
-				s = n("./src/lib/makeGqlRequest/index.ts"),
+				r = n("./src/lib/makeGqlRequest/index.ts"),
+				s = n("./src/redditGQL/operations/SubredditTypeaheadSearch.json"),
 				i = n("./src/reddit/helpers/graphql/normalizeAllowedPostTypesFromGql/index.ts"),
 				c = n("./src/reddit/helpers/name/index.ts"),
 				a = n("./src/reddit/selectors/subredditAutocomplete.ts"),
@@ -672,8 +669,8 @@
 					n(d({
 						key: h
 					}));
-					const f = await ((t, e) => Object(s.a)(t, {
-						...r,
+					const f = await ((t, e) => Object(r.a)(t, {
+						...s,
 						variables: e
 					}))(l(), {
 						query: h,
@@ -8308,7 +8305,10 @@
 					}
 					return !1
 				}
+		},
+		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(t) {
+			t.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.68cf21b73f2205a2f6b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.77c89fe864d32cc83a67.js.map

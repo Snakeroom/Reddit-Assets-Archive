@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.9de6acb5f470efa4284f.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.10ba1d6fc8bf2c93a431.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
-		"./src/graphql/operations/PollVote.json": function(e) {
-			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
-		},
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -201,9 +198,9 @@
 			})), n.d(t, "d", (function() {
 				return M
 			})), n.d(t, "e", (function() {
-				return R
-			})), n.d(t, "h", (function() {
 				return G
+			})), n.d(t, "h", (function() {
+				return R
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -212,9 +209,9 @@
 				a = n("./src/reddit/actions/post.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
 				d = n("./src/config.ts"),
-				l = n("./src/graphql/operations/PollVote.json"),
-				u = n("./src/lib/makeGqlRequest/index.ts"),
-				m = n("./src/reddit/models/Poll/index.ts"),
+				l = n("./src/lib/makeGqlRequest/index.ts"),
+				u = n("./src/reddit/models/Poll/index.ts"),
+				m = n("./src/redditGQL/operations/PollVote.json"),
 				b = n("./src/reddit/endpoints/governance/requester.ts");
 			var p = n("./src/reddit/endpoints/governance/wallet.ts"),
 				f = n("./src/reddit/models/Toast/index.ts"),
@@ -244,8 +241,8 @@
 					let i, c = r().polls.models[e];
 					if (n(N({
 							pollId: e
-						})), (i = c.type === m.a.GA ? await ((e, t, n) => Object(u.a)(e, {
-								...l,
+						})), (i = c.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
+								...m,
 								variables: {
 									input: {
 										postId: t,
@@ -259,7 +256,7 @@
 									endpoint: `${d.a.metaUrl}/polls/${t}/${n}/votes/me/${r}`
 								})
 							}(s(), c.subredditId, e, t)).ok) {
-						if (c.type === m.a.GA) {
+						if (c.type === u.a.GA) {
 							const {
 								options: e
 							} = i.body.data.updatePostPollVoteState.poll;
@@ -270,7 +267,7 @@
 							}))
 						} else n(j(i.body));
 						const s = r();
-						if ((c = s.polls.models[e]) && Object(m.d)(c)) {
+						if ((c = s.polls.models[e]) && Object(u.d)(c)) {
 							const {
 								postId: e
 							} = c, t = s.posts.models[e];
@@ -280,7 +277,7 @@
 						pollId: e,
 						error: i.error || i.errors[0].message
 					})), Object(_.a)(n, i.error || i.errors[0].messsage)
-				}, R = (e, t) => async (n, s, {
+				}, G = (e, t) => async (n, s, {
 					apiContext: a
 				}) => {
 					var l;
@@ -313,7 +310,7 @@
 					})), t && n(Object(i.f)())) : (n(k({
 						error: m.error
 					})), Object(_.a)(n, m.error))
-				}, G = e => async (t, n, {
+				}, R = e => async (t, n, {
 					apiContext: r
 				}) => {
 					t(T());
@@ -452,8 +449,8 @@
 				S = n("./src/reddit/endpoints/governance/crypto.ts"),
 				L = n("./src/reddit/helpers/governance/ethereum.ts"),
 				M = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				R = n("./src/reddit/models/Toast/index.ts"),
-				G = n("./src/reddit/selectors/tooltip.ts"),
+				G = n("./src/reddit/models/Toast/index.ts"),
+				R = n("./src/reddit/selectors/tooltip.ts"),
 				D = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				U = n.n(D);
 			const B = Object(N.a)(P.a),
@@ -525,7 +522,7 @@
 				}
 			}
 			const F = Object(u.c)({
-					dropdownIsOpen: Object(G.b)(V),
+					dropdownIsOpen: Object(R.b)(V),
 					isEthereumProvider: (e, {
 						subredditId: t
 					}) => Object(d.a)(e, t),
@@ -544,7 +541,7 @@
 						e(Object(f.h)({
 							subredditId: t.subredditId
 						})), e(Object(w.f)({
-							kind: R.b.SuccessCommunityGreen,
+							kind: G.b.SuccessCommunityGreen,
 							text: s.fbt._("Wallet removed successfully!", null, {
 								hk: "3LDwnT"
 							})
@@ -1771,7 +1768,10 @@
 					return n && e.subreddits.gov.releaseNotes[n] || s
 				},
 				b = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
+		},
+		"./src/redditGQL/operations/PollVote.json": function(e) {
+			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.9de6acb5f470efa4284f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.10ba1d6fc8bf2c93a431.js.map

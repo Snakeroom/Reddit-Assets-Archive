@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.18d70fd81ba4bef4956f.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.8589c5dd2663b446dab0.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -47,9 +47,6 @@
 					return c()[0].gen
 				}
 		},
-		"./src/graphql/operations/RecordCommunityAnswer.json": function(e) {
-			e.exports = JSON.parse('{"id":"fea84f5739a4"}')
-		},
 		"./src/reddit/components/CommunityTopicSurvey/index.m.less": function(e, t, n) {
 			e.exports = {
 				survey: "_38x4rPvvkwQ6NMJG2ex7X",
@@ -72,10 +69,10 @@
 				i = n("./node_modules/react-redux/es/index.js"),
 				d = n("./src/lib/sentry/index.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
-				a = n("./src/graphql/operations/RecordCommunityAnswer.json"),
-				u = n("./src/lib/makeGqlRequest/index.ts"),
-				l = (e, t) => Object(u.a)(e, {
-					...a,
+				a = n("./src/lib/makeGqlRequest/index.ts"),
+				u = n("./src/redditGQL/operations/RecordCommunityAnswer.json"),
+				l = (e, t) => Object(a.a)(e, {
+					...u,
 					variables: t
 				}),
 				m = n("./src/reddit/selectors/subreddit.ts");
@@ -1148,7 +1145,10 @@
 					});
 					return (n && n.postIds || []).slice(0, 2)
 				}
+		},
+		"./src/redditGQL/operations/RecordCommunityAnswer.json": function(e) {
+			e.exports = JSON.parse('{"id":"fea84f5739a4"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.18d70fd81ba4bef4956f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.8589c5dd2663b446dab0.js.map

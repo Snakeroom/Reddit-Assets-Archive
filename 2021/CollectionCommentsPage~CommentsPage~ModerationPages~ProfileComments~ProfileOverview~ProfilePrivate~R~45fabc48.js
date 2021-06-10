@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d1e08feed5e37a3f7f0b.js
-// Retrieved at 6/9/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.aaa8091129a0e3d2647e.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
-		"./src/graphql/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"dbc0fa67c5a1"}')
-		},
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "fetchEventPostsPending", (function() {
@@ -31,8 +28,8 @@
 				r = o("./src/lib/makeActionCreator/index.ts"),
 				i = o("./src/reddit/actions/eventPosts/constants.ts"),
 				a = o("./src/reddit/actions/toaster.ts"),
-				c = o("./src/graphql/operations/EventPostsBySubredditName.json"),
-				d = o("./src/lib/makeGqlRequest/index.ts");
+				c = o("./src/lib/makeGqlRequest/index.ts"),
+				d = o("./src/redditGQL/operations/EventPostsBySubredditName.json");
 			var l = o("./src/lib/makeApiRequest/index.ts"),
 				p = o("./src/lib/omitHeaders/index.ts"),
 				u = o("./src/reddit/constants/headers.ts");
@@ -95,8 +92,8 @@
 					t(C({
 						key: b
 					}));
-					const v = await ((e, t) => Object(d.a)(e, {
-						...c,
+					const v = await ((e, t) => Object(c.a)(e, {
+						...d,
 						variables: t
 					}))(s(), m);
 					if (v.ok) {
@@ -4673,7 +4670,10 @@
 				experimentEligibilitySelector: i.K,
 				experimentName: s.i
 			}) === s.e.Enabled
+		},
+		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
+			e.exports = JSON.parse('{"id":"dbc0fa67c5a1"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.d1e08feed5e37a3f7f0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.aaa8091129a0e3d2647e.js.map

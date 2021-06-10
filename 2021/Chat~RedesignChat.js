@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1debee0daa1733e5e6ce.js
-// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.96f653e1d0781eb57835.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -14,9 +14,9 @@
 			n.d(t, "g", (function() {
 				return P
 			})), n.d(t, "e", (function() {
-				return R
-			})), n.d(t, "f", (function() {
 				return L
+			})), n.d(t, "f", (function() {
+				return R
 			})), n.d(t, "d", (function() {
 				return U
 			})), n.d(t, "q", (function() {
@@ -156,8 +156,8 @@
 				k = n("./src/chat/selectors/promos.ts"),
 				D = n("./src/chat/singleton/SendbirdSDK.ts");
 			const P = "CHANNEL__ADD_SUCCESS",
-				R = "CHANNEL__ADD_FAIL",
-				L = "CHANNEL__CREATE_CHANNEL_START",
+				L = "CHANNEL__ADD_FAIL",
+				R = "CHANNEL__CREATE_CHANNEL_START",
 				U = "CHANNEL__CREATE_CHANNEL_END",
 				B = "CHANNEL__SELECT_BEGIN",
 				F = "CHANNEL__RESET_UNREAD_COUNT",
@@ -314,7 +314,7 @@
 					const s = n(),
 						a = e || Object(M.d)(s);
 					a && (await t(Ce(a)), await D.a.markChannelAsRead(), t(Object(d.b)()))
-				}, Ie = Object(o.a)(L), xe = Object(o.a)(P), ye = Object(o.a)(R), Se = Object(o.a)(U), we = (e, t, n) => {
+				}, Ie = Object(o.a)(R), xe = Object(o.a)(P), ye = Object(o.a)(L), Se = Object(o.a)(U), we = (e, t, n) => {
 					const s = e.map(e => ({
 						user_id: e,
 						nickname: t[e].name
@@ -456,7 +456,7 @@
 						}
 					}
 					return t(ke())
-				}, Re = Object(o.a)(J), Le = Object(o.a)(Y), Ue = Object(o.a)(Z), Be = Object(o.a)(Q), Fe = Object(o.a)(X), He = Object(o.a)($), Ge = Object(o.a)(te), Ve = () => async (e, t) => {
+				}, Le = Object(o.a)(J), Re = Object(o.a)(Y), Ue = Object(o.a)(Z), Be = Object(o.a)(Q), Fe = Object(o.a)(X), He = Object(o.a)($), Ge = Object(o.a)(te), Ve = () => async (e, t) => {
 					await Promise.all([e(qe()), e(ze()), e(Ke())]);
 					const n = t().channels.models;
 					await e(We(n)), e(Ge()), e(_e())
@@ -474,7 +474,7 @@
 						t(Object(m.v)(e))
 					}
 				}, ze = () => async (e, t) => {
-					e(Re());
+					e(Le());
 					const n = await D.a.getExistingChannels(b.b.INVITED).catch(() => null);
 					if (n) {
 						const {
@@ -485,7 +485,7 @@
 							hasMoreChannels: t
 						}))
 					}
-					e(Le()), Object(C.b)("Error fetching invited channels")
+					e(Re()), Object(C.b)("Error fetching invited channels")
 				}, Ke = () => async (e, t) => {
 					e(Ue());
 					const n = await D.a.getExistingChannels(b.b.JOINED).catch(t => {
@@ -926,7 +926,7 @@
 			n.d(t, "a", (function() {
 				return k
 			})), n.d(t, "c", (function() {
-				return L
+				return R
 			})), n.d(t, "o", (function() {
 				return B
 			})), n.d(t, "q", (function() {
@@ -1026,7 +1026,7 @@
 				P = (e, t, n) => async (s, a) => {
 					const r = a(),
 						c = Object(S.b)(n),
-						o = await R(t, r);
+						o = await L(t, r);
 					M.a.addMessage(t, n, o).then(t => {
 						const n = {
 							[t.messageId]: t
@@ -1045,7 +1045,7 @@
 							}))
 						}
 					})
-				}, R = async (e, t) => {
+				}, L = async (e, t) => {
 					const n = Object(c.d)(e);
 					if (!n.length) return [];
 					const s = [];
@@ -1053,7 +1053,7 @@
 						const n = Object(T.f)(t, e);
 						return n || s.push(e), n && n.id
 					}).filter(e => e), ...(s.length && a()(await Promise.all(s.slice(0, 3).map(e => M.a.searchMemberByName(e, !0)))) || []).map(e => e && e.id).filter(e => e)]
-				}, L = "MESSAGE__ADD_PENDING_ONE", U = Object(o.a)(L), B = (e, t) => async (n, s, {
+				}, R = "MESSAGE__ADD_PENDING_ONE", U = Object(o.a)(R), B = (e, t) => async (n, s, {
 					gqlContext: a
 				}) => {
 					const r = s(),
@@ -1208,8 +1208,8 @@
 				a = n.n(s),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				c = n("./src/chat/constants/messages.ts"),
-				o = n("./src/graphql/operations/ChatUnitDetails.json"),
-				i = n("./src/lib/makeGqlRequest/index.ts");
+				o = n("./src/lib/makeGqlRequest/index.ts"),
+				i = n("./src/redditGQL/operations/ChatUnitDetails.json");
 			var l = n("./src/lib/constants/index.ts");
 			const d = "MESSAGE__UNITS_DATA_RECEIVED",
 				u = "MESSAGE__RESET_RICH_UNITS_DATA_RECEIVED",
@@ -1282,8 +1282,8 @@
 						}
 					}
 					if (r.includePosts || r.includeComments || r.includeUserPosts || r.includeSubreddits) {
-						const e = await ((e, t) => Object(i.a)(e, {
-							...o,
+						const e = await ((e, t) => Object(o.a)(e, {
+							...i,
 							variables: t
 						}))(s(), r);
 						if (null == e ? void 0 : e.ok) {
@@ -1974,9 +1974,9 @@
 			})), n.d(t, "F", (function() {
 				return P
 			})), n.d(t, "S", (function() {
-				return R
-			})), n.d(t, "I", (function() {
 				return L
+			})), n.d(t, "I", (function() {
+				return R
 			})), n.d(t, "j", (function() {
 				return U
 			})), n.d(t, "N", (function() {
@@ -2200,7 +2200,7 @@
 					},
 					...Object(u.a)(e)
 				}))(t())
-			}, R = () => async (e, t) => {
+			}, L = () => async (e, t) => {
 				(e => Object(h.a)({
 					noun: "view_members",
 					source: s.b.ChatSettings,
@@ -2213,7 +2213,7 @@
 					},
 					...Object(u.a)(e)
 				}))(t())
-			}, L = e => async (t, n) => {
+			}, R = e => async (t, n) => {
 				((e, t) => {
 					Object(h.a)({
 						noun: "chat_member_report",
@@ -2466,7 +2466,7 @@
 			})), n.d(t, "l", (function() {
 				return P
 			})), n.d(t, "i", (function() {
-				return R
+				return L
 			})), n.d(t, "v", (function() {
 				return F
 			})), n.d(t, "h", (function() {
@@ -2546,14 +2546,14 @@
 						} = i, s = Object(E.b)(t), a = Object(C.a)(n), r = !!s.prefNightmode;
 						e(T(s)), e(D(a)), e(Object(d.switchTheme)(r))
 					} else e(A(i.error))
-				}, R = "USER__USERS_FETCH_COMPLETED", L = Object(i.a)("USER__USERS_FETCH_PENDING"), U = Object(i.a)(R), B = Object(i.a)("USER__USERS_FETCH_FAILED"), F = e => async (t, n, {
+				}, L = "USER__USERS_FETCH_COMPLETED", R = Object(i.a)("USER__USERS_FETCH_PENDING"), U = Object(i.a)(L), B = Object(i.a)("USER__USERS_FETCH_FAILED"), F = e => async (t, n, {
 					apiContext: s
 				}) => {
 					const r = n().contacts.models,
 						c = e.filter(e => !r[e]),
 						o = a()(c, 100);
 					if (!c.length) return;
-					t(L(e));
+					t(R(e));
 					const i = await Promise.all(o.map(e => Object(b.e)(s(), e))).catch(() => []);
 					for (const e of i)
 						if (e.ok) {
@@ -3229,10 +3229,10 @@
 					})
 				})(e))),
 				P = n("./src/chat/components/Message/Bubble.tsx"),
-				R = n("./src/chat/components/Message/LinkedText.tsx"),
-				L = n("./src/chat/components/Message/SystemMessage.m.less"),
-				U = n.n(L);
-			const B = l.a.wrapped(R.a, "LinkedText", U.a);
+				L = n("./src/chat/components/Message/LinkedText.tsx"),
+				R = n("./src/chat/components/Message/SystemMessage.m.less"),
+				U = n.n(R);
+			const B = l.a.wrapped(L.a, "LinkedText", U.a);
 			var F = l.a.wrapped(e => {
 					const {
 						message: t,
@@ -3625,8 +3625,8 @@
 				}),
 				De = n("./src/chat/components/Sidebar/index.tsx"),
 				Pe = n("./src/chat/constants/channels.ts"),
-				Re = n("./src/chat/constants/container.ts"),
-				Le = n("./src/chat/constants/page.ts");
+				Le = n("./src/chat/constants/container.ts"),
+				Re = n("./src/chat/constants/page.ts");
 			const Ue = () => null;
 			var Be = Object(we.a)({
 				ErrorComponent: Ue,
@@ -3695,16 +3695,16 @@
 				lt = n("./src/reddit/actions/reportFlow/index.ts"),
 				dt = n("./src/reddit/actions/toaster.ts"),
 				ut = n("./src/chat/components/FormBuilder/async.tsx"),
-				ht = n("./src/graphql/operations/ReportForm.json"),
-				mt = n("./src/lib/makeGqlRequest/index.ts");
+				ht = n("./src/lib/makeGqlRequest/index.ts"),
+				mt = n("./src/redditGQL/operations/ReportForm.json");
 			var pt = n("./src/reddit/contexts/ApiContext.tsx"),
 				bt = n("./src/reddit/models/ReportFlow/index.ts"),
 				ft = n("./src/reddit/models/Toast/index.ts"),
 				gt = n("./src/chat/components/OverlayReport/index.m.less"),
 				Ot = n.n(gt),
 				Ct = n("./src/chat/actions/user.ts"),
-				Et = n("./src/graphql/operations/ReportChatMessage.json");
-			const jt = (e, t) => Object(mt.a)(e, {
+				Et = n("./src/redditGQL/operations/ReportChatMessage.json");
+			const jt = (e, t) => Object(ht.a)(e, {
 				...Et,
 				variables: t
 			});
@@ -3764,7 +3764,7 @@
 					isNightMode: e => Object(he.b)(e),
 					inReportingRevampSelector: e => xt(e)
 				}),
-				Rt = Object(o.b)(Pt, (e, {
+				Lt = Object(o.b)(Pt, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
@@ -3781,14 +3781,14 @@
 					})),
 					onCancel: () => e(Object(ot.a)())
 				})),
-				Lt = async (e, t, n) => {
+				Rt = async (e, t, n) => {
 					var s;
 					const a = await ((e, {
 						itemId: t,
 						formVersion: n,
 						hostAppName: s
-					}) => Object(mt.a)(e, {
-						...ht,
+					}) => Object(ht.a)(e, {
+						...mt,
 						variables: {
 							itemId: t,
 							hostAppName: s,
@@ -3871,7 +3871,7 @@
 				componentDidMount() {
 					if (!this.props.message) return;
 					const e = `CHAT_${this.props.message.channelId}_${this.props.message.messageId}`;
-					Lt(this.props.gqlContext(), e, Dt).then(e => {
+					Rt(this.props.gqlContext(), e, Dt).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -3918,7 +3918,7 @@
 					}))
 				}
 			}
-			var Bt = Object(pt.b)(Rt(Ut)),
+			var Bt = Object(pt.b)(Lt(Ut)),
 				Ft = n("./src/chat/constants/users.ts");
 			const Ht = e => e.channelId ? e.action === Pe.a.VIEW_INVITE && e.channelId ? c.a.createElement(He, {
 				channelId: e.channelId
@@ -3996,7 +3996,7 @@
 						case r === Pe.a.CREATE:
 						case r === Pe.a.INVITE_MEMBERS:
 							return c.a.createElement(ke, null);
-						case t === Re.a.MINIMIZED:
+						case t === Le.a.MINIMIZED:
 							return c.a.createElement(Se.a, null);
 						default: {
 							const n = Ht({
@@ -4006,7 +4006,7 @@
 							return c.a.createElement(c.a.Fragment, null, c.a.createElement(De.b, null), c.a.createElement(Qt, {
 								className: Object(i.a)(Wt.a.Content, {
 									[Wt.a.hidden]: s,
-									[Wt.a.isFullSize]: t === Re.a.FULL
+									[Wt.a.isFullSize]: t === Le.a.FULL
 								})
 							}, n ? c.a.createElement(Jt, null, n) : e && o && c.a.createElement(ye, {
 								channelId: o,
@@ -4017,7 +4017,7 @@
 				}
 				render() {
 					return c.a.createElement(Zt, {
-						id: Le.a
+						id: Re.a
 					}, this.getContent())
 				}
 			}
@@ -4363,9 +4363,9 @@
 						clientMessageId: t
 					}))
 				}))(D),
-				R = n("./src/chat/components/Message/LinkedText.tsx"),
-				L = n("./src/chat/components/Message/OffensiveMessageReportPrompt.m.less"),
-				U = n.n(L);
+				L = n("./src/chat/components/Message/LinkedText.tsx"),
+				R = n("./src/chat/components/Message/OffensiveMessageReportPrompt.m.less"),
+				U = n.n(R);
 			const B = v.a.wrapped(x.a, "Regular", U.a),
 				F = v.a.wrapped(x.a, "Active", U.a),
 				H = Object(c.b)(void 0, (e, t) => ({
@@ -4558,8 +4558,8 @@
 				d: "M30.7205152,44.3911599 L31.8223802,44.3911599 C32.9364596,44.3911599 33.8428946,45.2673804 33.8428946,46.3443238 C33.8428946,46.6873548 33.5548926,46.9657568 33.2000329,46.9657568 L29.3428625,46.9657568 C28.9880028,46.9657568 28.7000008,46.6873548 28.7000008,46.3443238 C28.7000008,45.2673804 29.6064358,44.3911599 30.7205152,44.3911599 Z M32.7044508,42.3845527 C32.7044508,43.1482939 32.0615891,43.7697269 31.271512,43.7697269 C30.4814349,43.7697269 29.8385732,43.1482939 29.8385732,42.3845527 C29.8385732,41.6208116 30.4814349,41 31.271512,41 C32.0615891,41 32.7044508,41.6208116 32.7044508,42.3845527 Z M35.8634091,47.1254029 L36.9652741,47.1254029 C38.0793535,47.1254029 38.9857885,48.0016234 38.9857885,49.0785668 C38.9857885,49.4215978 38.6977865,49.6999998 38.3429268,49.6999998 L34.4857564,49.6999998 C34.1308967,49.6999998 33.8428946,49.4215978 33.8428946,49.0785668 C33.8428946,48.0016234 34.7493297,47.1254029 35.8634091,47.1254029 Z M37.8473447,45.1187958 C37.8473447,45.8825369 37.2044829,46.5039699 36.4144059,46.5039699 C35.6243288,46.5039699 34.9814671,45.8825369 34.9814671,45.1187958 C34.9814671,44.3550546 35.6243288,43.734243 36.4144059,43.734243 C37.2044829,43.734243 37.8473447,44.3550546 37.8473447,45.1187958 Z"
 			})));
 
-			function Re() {
-				return (Re = Object.assign || function(e) {
+			function Le() {
+				return (Le = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -4567,7 +4567,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Le = e => r.a.createElement(ue.a, Re({}, e, {
+			var Re = e => r.a.createElement(ue.a, Le({}, e, {
 					viewBox: "0 0 16 16"
 				}), r.a.createElement("path", {
 					d: "M10.224 7.109c-.623.623-1.709.623-2.332 0a1.652 1.652 0 0 1 0-2.332 1.64 1.64 0 0 1 1.166-.483c.44 0 .855.172 1.166.483a1.652 1.652 0 0 1 0 2.332m.915-3.247A2.923 2.923 0 0 0 9.06 3c-.787 0-1.525.306-2.082.862a2.946 2.946 0 0 0-.403 3.65l-1.76 1.761-.812.811v.001L4 10.087l-.81.81a.646.646 0 0 0 0 .915l.81.811h.001l.27.27a.643.643 0 0 0 .916 0 .648.648 0 0 0 0-.914l-.271-.27a.502.502 0 0 1 0-.708.512.512 0 0 1 .709 0l.27.27a.648.648 0 0 0 .915-.915l-.624-.625L7.49 8.427a2.924 2.924 0 0 0 3.65-.403 2.945 2.945 0 0 0 0-4.162"
@@ -4576,7 +4576,7 @@
 				Be = n("./src/chat/components/MessageReportDialog/Header.m.less"),
 				Fe = n.n(Be);
 			const He = v.a.wrapped(Pe, "Group", Fe.a),
-				Ge = v.a.wrapped(Le, "Key", Fe.a),
+				Ge = v.a.wrapped(Re, "Key", Fe.a),
 				Ve = v.a.wrapped(Ie.a, "MemberActionDropdown", Fe.a),
 				We = v.a.wrapped(De, "MessageHeaderLink", Fe.a),
 				ze = v.a.h5("ChannelName", Fe.a),
@@ -4786,7 +4786,7 @@
 					if (t && h.type !== jt) return h.type === It ? s.fbt._("Sent a GIF", null, {
 						hk: "1x1QrK"
 					}) : p;
-					const b = r.a.createElement(R.a, {
+					const b = r.a.createElement(L.a, {
 						className: bt.a.Text,
 						value: p,
 						highlighMentionGroupLinks: m
@@ -5572,9 +5572,9 @@
 						}
 					}))))
 				},
-				R = n("./node_modules/fbt/lib/FbtPublic.js"),
-				L = n("./node_modules/lodash/debounce.js"),
-				U = n.n(L),
+				L = n("./node_modules/fbt/lib/FbtPublic.js"),
+				R = n("./node_modules/lodash/debounce.js"),
+				U = n.n(R),
 				B = n("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
 				F = n("./src/chat/controls/Gif/index.tsx"),
 				H = n("./src/chat/controls/Svg/index.tsx");
@@ -5656,7 +5656,7 @@
 						className: Z.a.SearchBar,
 						ref: a,
 						value: n,
-						placeholder: R.fbt._("Search GIPHY", null, {
+						placeholder: L.fbt._("Search GIPHY", null, {
 							hk: "3eUT8S"
 						}),
 						tabIndex: 0,
@@ -5751,7 +5751,7 @@
 						onClick: () => e(t)
 					}, i.a.createElement(se.a, {
 						iconName: t
-					}))))()) : i.a.createElement(ie, null, R.fbt._("Loading snoomoji...", null, {
+					}))))()) : i.a.createElement(ie, null, L.fbt._("Loading snoomoji...", null, {
 						hk: "39nqLy"
 					})))
 				},
@@ -5840,9 +5840,9 @@
 						onSelectName: n,
 						selectIndex: this.state.selectIndex,
 						useNSFWIcons: !0
-					})) : s || this.members && this.members.length ? i.a.createElement(Ce, null, R.fbt._("Loading members...", null, {
+					})) : s || this.members && this.members.length ? i.a.createElement(Ce, null, L.fbt._("Loading members...", null, {
 						hk: "23phIt"
-					})) : i.a.createElement(Ce, null, R.fbt._("Member not found!", null, {
+					})) : i.a.createElement(Ce, null, L.fbt._("Member not found!", null, {
 						hk: "4DkpQe"
 					}))
 				}
@@ -5873,7 +5873,7 @@
 				ke = 12,
 				De = 6,
 				Pe = u.a.textarea("Textarea", Ae.a);
-			class Re extends i.a.Component {
+			class Le extends i.a.Component {
 				constructor(e) {
 					super(e), this.offset = 0, this.emitChange = this.emitChange.bind(this), this.emitChangeOnce = this.emitChangeOnce.bind(this), this.handleCursor = this.handleCursor.bind(this), this.handleKeyPress = this.handleKeyPress.bind(this), this.handleKeyDown = this.handleKeyDown.bind(this), this.handleSizing = this.handleSizing.bind(this), this._ref = i.a.createRef()
 				}
@@ -5946,7 +5946,7 @@
 						autoCorrect: "off",
 						autoComplete: "off",
 						role: "textbox",
-						placeholder: R.fbt._("Message", null, {
+						placeholder: L.fbt._("Message", null, {
 							hk: "3fzEsG"
 						}),
 						onKeyPress: this.handleKeyPress,
@@ -5962,7 +5962,7 @@
 					})
 				}
 			}
-			var Le = n("./src/chat/helpers/dom.ts");
+			var Re = n("./src/chat/helpers/dom.ts");
 
 			function Ue() {
 				return (Ue = Object.assign || function(e) {
@@ -6070,7 +6070,7 @@
 				nt = u.a.div("Wrapper", qe.a),
 				st = u.a.div("InputWrapper", qe.a),
 				at = u.a.div("Icons", qe.a),
-				rt = u.a.wrapped(Re, "ContentEditable", qe.a),
+				rt = u.a.wrapped(Le, "ContentEditable", qe.a),
 				ct = i.a.memo((function() {
 					const e = Object(l.d)(),
 						t = Object(l.e)(S.a),
@@ -6092,7 +6092,7 @@
 					className: Object(d.a)({
 						[qe.a.active]: e.active
 					}, e.className),
-					onMouseDown: Object(Le.b)(e.onMouseDown)
+					onMouseDown: Object(Re.b)(e.onMouseDown)
 				}, e.children), "IconButton", qe.a),
 				it = Object(pe.a)({
 					activeDropdownId: e => e.tooltipId || void 0,
@@ -6270,7 +6270,7 @@
 							[qe.a.isFullSize]: r
 						}),
 						id: T,
-						onSubmit: Object(Le.b)(this.handleSubmitText)
+						onSubmit: Object(Re.b)(this.handleSubmitText)
 					}, i.a.createElement(nt, null, i.a.createElement(st, null, i.a.createElement(rt, {
 						channelId: n,
 						clearText: this.state.clearText,
@@ -6635,8 +6635,8 @@
 				D = n("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
 				P = n("./src/chat/controls/TooltipHooked/TooltipHooked.tsx");
 
-			function R() {
-				return (R = Object.assign || function(e) {
+			function L() {
+				return (L = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -6644,7 +6644,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var L = e => a.a.createElement(v.a, R({}, e, {
+			var R = e => a.a.createElement(v.a, L({}, e, {
 				viewBox: "0 0 20 20"
 			}), a.a.createElement("g", {
 				id: "icons_flat"
@@ -6796,7 +6796,7 @@
 							return {
 								text: h.fbt._("Add to group", null, {
 									hk: "3ZCBwZ"
-								}), icon: a.a.createElement(L, null)
+								}), icon: a.a.createElement(R, null)
 							};
 						case M.b.Block:
 							return {
@@ -7207,8 +7207,8 @@
 					saveRenamedGroup: () => e(Object(d.F)())
 				}))(ke),
 				Pe = n("./src/chat/components/ToastNotification/index.tsx"),
-				Re = n("./src/chat/helpers/dom.ts"),
-				Le = n("./src/chat/helpers/urls/index.ts");
+				Le = n("./src/chat/helpers/dom.ts"),
+				Re = n("./src/chat/helpers/urls/index.ts");
 
 			function Ue() {
 				return (Ue = Object.assign || function(e) {
@@ -7229,7 +7229,7 @@
 			const Ge = ({
 					userName: e
 				}) => {
-					const t = Object(Le.viewProfileUrl)(e);
+					const t = Object(Re.viewProfileUrl)(e);
 					return a.a.createElement("a", {
 						onClick: e => e.stopPropagation(),
 						target: o.c.BLANK,
@@ -7302,7 +7302,7 @@
 					}, a.a.createElement(Be, {
 						className: He.a.ArrowLeft
 					})), a.a.createElement("span", {
-						onClick: s ? Object(Re.b)(r) : void 0,
+						onClick: s ? Object(Le.b)(r) : void 0,
 						className: Object(c.a)(He.a.TitleWrapper, {
 							[He.a.embed]: s
 						})
@@ -7699,13 +7699,13 @@
 				k = i.a.div("ItemControls", T.a),
 				D = i.a.span("ChannelName", T.a),
 				P = i.a.div("Description", T.a),
-				R = i.a.wrapped(e => a.a.createElement("h4", {
+				L = i.a.wrapped(e => a.a.createElement("h4", {
 					className: Object(c.a)(e.className, {
 						[T.a.active]: e.active,
 						[T.a.unread]: e.unread
 					})
 				}, e.children), "ItemTitleName", T.a),
-				L = Object(v.a)({
+				R = Object(v.a)({
 					inviterContact: (e, t) => {
 						const n = e.channels.models[t.channelId];
 						return Object(w.d)(e, n)
@@ -7713,7 +7713,7 @@
 					iconMembers: (e, t) => Object(S.o)(e, t.channelId),
 					channelName: (e, t) => Object(S.i)(e, t.channelId)
 				});
-			var U = Object(r.b)(L)(i.a.wrapped(e => {
+			var U = Object(r.b)(R)(i.a.wrapped(e => {
 					var t;
 					const {
 						className: n,
@@ -7738,7 +7738,7 @@
 					}, u && a.a.createElement(k, null, a.a.createElement(y, null)), b && b.firstUser && a.a.createElement(A, {
 						userId: b.firstUser.id,
 						secondUserId: null === (t = b.secondUser) || void 0 === t ? void 0 : t.id
-					}), a.a.createElement(M, null, a.a.createElement(R, {
+					}), a.a.createElement(M, null, a.a.createElement(L, {
 						unread: m || g,
 						active: i
 					}, a.a.createElement(D, null, f)), a.a.createElement(P, null, a.a.createElement(E, {
@@ -9566,20 +9566,20 @@
 			})), n.d(t, "a", (function() {
 				return l
 			}));
-			var s = n("./src/graphql/operations/CreateChatGifMessage.json"),
-				a = n("./src/graphql/operations/GetTrendingChatGifs.json"),
-				r = n("./src/graphql/operations/SearchChatGifs.json"),
-				c = n("./src/lib/makeGqlRequest/index.ts");
-			const o = (e, t) => Object(c.a)(e, {
-					...a,
-					variables: t
-				}),
-				i = (e, t) => Object(c.a)(e, {
+			var s = n("./src/lib/makeGqlRequest/index.ts"),
+				a = n("./src/redditGQL/operations/CreateChatGifMessage.json"),
+				r = n("./src/redditGQL/operations/GetTrendingChatGifs.json"),
+				c = n("./src/redditGQL/operations/SearchChatGifs.json");
+			const o = (e, t) => Object(s.a)(e, {
 					...r,
 					variables: t
 				}),
-				l = (e, t) => Object(c.a)(e, {
-					...s,
+				i = (e, t) => Object(s.a)(e, {
+					...c,
+					variables: t
+				}),
+				l = (e, t) => Object(s.a)(e, {
+					...a,
 					variables: t
 				})
 		},
@@ -9596,13 +9596,13 @@
 			})), n.d(t, "a", (function() {
 				return h
 			}));
-			var s = n("./src/graphql/operations/ExperimentVariantsShort.json"),
-				a = n("./src/lib/constants/index.ts"),
-				r = n("./src/lib/makeApiRequest/index.ts"),
-				c = n("./src/lib/makeGqlRequest/index.ts"),
+			var s = n("./src/lib/constants/index.ts"),
+				a = n("./src/lib/makeApiRequest/index.ts"),
+				r = n("./src/lib/makeGqlRequest/index.ts"),
+				c = n("./src/redditGQL/operations/ExperimentVariantsShort.json"),
 				o = n("./src/chat/models/Message/report.ts");
-			const i = (e, t) => Object(r.a)(e, {
-					method: a.hb.POST,
+			const i = (e, t) => Object(a.a)(e, {
+					method: s.hb.POST,
 					endpoint: `${e.apiUrl}/api/report_user`,
 					data: {
 						reason: t.reason,
@@ -9610,31 +9610,31 @@
 					}
 				}),
 				l = (e, t, n) => {
-					const s = Object(o.c)(t, n);
-					return Object(r.a)(e, {
-						method: a.hb.POST,
+					const r = Object(o.c)(t, n);
+					return Object(a.a)(e, {
+						method: s.hb.POST,
 						endpoint: `${e.apiUrl}/api/report_user`,
 						data: {
-							details: JSON.stringify(s),
+							details: JSON.stringify(r),
 							reason: t.reason,
 							user: t.userNickname
 						}
 					})
 				},
-				d = (e, t) => Object(r.a)(e, {
-					method: a.hb.GET,
+				d = (e, t) => Object(a.a)(e, {
+					method: s.hb.GET,
 					endpoint: `${e.apiUrl}/api/user_data_by_account_ids`,
 					data: {
 						raw_json: 1,
 						ids: t.join(",")
 					}
 				}),
-				u = e => Object(r.a)(e, {
-					method: a.hb.GET,
+				u = e => Object(a.a)(e, {
+					method: s.hb.GET,
 					endpoint: `${e.apiUrl}/prefs/blocked.json`
 				}),
-				h = e => Object(c.a)(e, {
-					...s
+				h = e => Object(r.a)(e, {
+					...c
 				})
 		},
 		"./src/chat/helpers/chatSelector.ts": function(e, t, n) {
@@ -10980,7 +10980,7 @@
 		"./src/chat/reducers/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Lt
+				return Rt
 			}));
 			var s = n("./node_modules/redux/es/redux.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -11363,7 +11363,7 @@
 				channelId: void 0,
 				isLoaded: !1
 			};
-			var R = (e = P, t) => {
+			var L = (e = P, t) => {
 					switch (t.type) {
 						case p.q: {
 							const n = {
@@ -11389,7 +11389,7 @@
 							return e
 					}
 				},
-				L = Object(s.c)({
+				R = Object(s.c)({
 					draftMessages: m,
 					firstLoaded: b,
 					invited: j,
@@ -11408,7 +11408,7 @@
 					},
 					joined: x,
 					models: D,
-					selected: R,
+					selected: L,
 					messageQuickReplyUsers: i
 				}),
 				U = n("./src/chat/actions/user.ts");
@@ -12047,8 +12047,8 @@
 					richUnits: we
 				}),
 				Pe = n("./src/chat/reducers/meta/index.ts"),
-				Re = n("./src/chat/reducers/platform/index.ts"),
-				Le = n("./src/chat/reducers/promos/index.ts"),
+				Le = n("./src/chat/reducers/platform/index.ts"),
+				Re = n("./src/chat/reducers/promos/index.ts"),
 				Ue = n("./src/chat/actions/sendbird/config.ts");
 			const Be = {
 				maxMessageLength: void 0
@@ -12418,7 +12418,7 @@
 							return e
 					}
 				},
-				Rt = Object(s.c)({
+				Lt = Object(s.c)({
 					account: jt,
 					chatExperiments: vt,
 					experiments: xt,
@@ -12429,8 +12429,8 @@
 					session: Dt,
 					sessionTracker: Pt
 				});
-			const Lt = {
-				channels: L,
+			const Rt = {
+				channels: R,
 				contacts: $,
 				container: se,
 				experiments: le,
@@ -12438,8 +12438,8 @@
 				members: Ce,
 				messages: De,
 				meta: Pe.b,
-				platform: Re.b,
-				promos: Le.b,
+				platform: Le.b,
+				promos: Re.b,
 				sendbird: Qe,
 				sidebar: nt,
 				sitewideRules: rt,
@@ -12447,7 +12447,7 @@
 				toast: mt,
 				tooltipId: ft,
 				typingIndicator: Ct,
-				user: Rt,
+				user: Lt,
 				lastAction: ct.a
 			}
 		},
@@ -14229,9 +14229,9 @@
 			})), n.d(t, "b", (function() {
 				return P
 			})), n.d(t, "w", (function() {
-				return R
-			})), n.d(t, "u", (function() {
 				return L
+			})), n.d(t, "u", (function() {
+				return R
 			})), n.d(t, "a", (function() {
 				return U
 			})), n.d(t, "d", (function() {
@@ -14393,10 +14393,10 @@
 				P = e => ({
 					blocked_user_id: e || null
 				}),
-				R = e => ({
+				L = e => ({
 					reported_user_id: e || null
 				}),
-				L = e => {
+				R = e => {
 					const t = Object(l.l)(e),
 						n = !(!t || t.type !== i.a.Direct),
 						s = Object(l.r)(e),
@@ -14480,30 +14480,6 @@
 					Object(a.b)(`Error sending telemetry event: ${t}`)
 				}
 			}
-		},
-		"./src/graphql/operations/ChatUnitDetails.json": function(e) {
-			e.exports = JSON.parse('{"id":"0e3adbb8d3c9"}')
-		},
-		"./src/graphql/operations/CreateChatGifMessage.json": function(e) {
-			e.exports = JSON.parse('{"id":"3c7c0b56eebb"}')
-		},
-		"./src/graphql/operations/ExperimentVariantsShort.json": function(e) {
-			e.exports = JSON.parse('{"id":"bc53b55777c5"}')
-		},
-		"./src/graphql/operations/GetTrendingChatGifs.json": function(e) {
-			e.exports = JSON.parse('{"id":"5b4e0d028600"}')
-		},
-		"./src/graphql/operations/RegisterWebPushToken.json": function(e) {
-			e.exports = JSON.parse('{"id":"197650c1946c"}')
-		},
-		"./src/graphql/operations/ReportChatMessage.json": function(e) {
-			e.exports = JSON.parse('{"id":"fd819ca5f0fa"}')
-		},
-		"./src/graphql/operations/ReportForm.json": function(e) {
-			e.exports = JSON.parse('{"id":"404920cc0308"}')
-		},
-		"./src/graphql/operations/SearchChatGifs.json": function(e) {
-			e.exports = JSON.parse('{"id":"01a298f0be11"}')
 		},
 		"./src/lib/combineRefs/index.tsx": function(e, t, n) {
 			"use strict";
@@ -14722,7 +14698,7 @@
 				return d
 			}));
 			var s = n("./src/config.ts"),
-				a = n("./src/graphql/operations/RegisterWebPushToken.json"),
+				a = n("./src/redditGQL/operations/RegisterWebPushToken.json"),
 				r = n("./src/lib/makeGqlRequest/index.ts"),
 				c = n("./src/lib/serviceWorker/index.ts"),
 				o = n("./src/lib/timezone/index.ts"),
@@ -14905,7 +14881,31 @@
 				e.R2 = "R2"
 			}(r || (r = {}));
 			const c = new Set(Object.values(r))
+		},
+		"./src/redditGQL/operations/ChatUnitDetails.json": function(e) {
+			e.exports = JSON.parse('{"id":"0e3adbb8d3c9"}')
+		},
+		"./src/redditGQL/operations/CreateChatGifMessage.json": function(e) {
+			e.exports = JSON.parse('{"id":"3c7c0b56eebb"}')
+		},
+		"./src/redditGQL/operations/ExperimentVariantsShort.json": function(e) {
+			e.exports = JSON.parse('{"id":"bc53b55777c5"}')
+		},
+		"./src/redditGQL/operations/GetTrendingChatGifs.json": function(e) {
+			e.exports = JSON.parse('{"id":"5b4e0d028600"}')
+		},
+		"./src/redditGQL/operations/RegisterWebPushToken.json": function(e) {
+			e.exports = JSON.parse('{"id":"197650c1946c"}')
+		},
+		"./src/redditGQL/operations/ReportChatMessage.json": function(e) {
+			e.exports = JSON.parse('{"id":"fd819ca5f0fa"}')
+		},
+		"./src/redditGQL/operations/ReportForm.json": function(e) {
+			e.exports = JSON.parse('{"id":"404920cc0308"}')
+		},
+		"./src/redditGQL/operations/SearchChatGifs.json": function(e) {
+			e.exports = JSON.parse('{"id":"01a298f0be11"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1debee0daa1733e5e6ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.96f653e1d0781eb57835.js.map

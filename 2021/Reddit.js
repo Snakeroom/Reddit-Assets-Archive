@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6ed199e7927988f474b3.js
-// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ea47d265c177023ca1e3.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -163,39 +163,6 @@
 				o = e => t => {
 					if (t.preventDefault(), t.stopPropagation(), e && "function" == typeof e) return e(t)
 				}
-		},
-		"./src/graphql/operations/BlockAwarder.json": function(e) {
-			e.exports = JSON.parse('{"id":"9769ffbb7031"}')
-		},
-		"./src/graphql/operations/ClaimAwardOffer.json": function(e) {
-			e.exports = JSON.parse('{"id":"7264b2ee2ded"}')
-		},
-		"./src/graphql/operations/CommentToxicity.json": function(e) {
-			e.exports = JSON.parse('{"id":"445164f0825f"}')
-		},
-		"./src/graphql/operations/DeleteInboxNotifications.json": function(e) {
-			e.exports = JSON.parse('{"id":"ce2deb9deef7"}')
-		},
-		"./src/graphql/operations/FetchSpecialEvents.json": function(e) {
-			e.exports = JSON.parse('{"id":"7537a71b4f14"}')
-		},
-		"./src/graphql/operations/NotificationInboxFeed.json": function(e) {
-			e.exports = JSON.parse('{"id":"43a931178716"}')
-		},
-		"./src/graphql/operations/NotificationInboxFeedSlimmed.json": function(e) {
-			e.exports = JSON.parse('{"id":"916e9e9be5e0"}')
-		},
-		"./src/graphql/operations/NotificationSettingsLayoutByChannel.json": function(e) {
-			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
-		},
-		"./src/graphql/operations/UpdateCommentFollowState.json": function(e) {
-			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
-		},
-		"./src/graphql/operations/UpdateInboxActivitySeenState.json": function(e) {
-			e.exports = JSON.parse('{"id":"85d656894a08"}')
-		},
-		"./src/graphql/operations/UpdateNotificationPreferences.json": function(e) {
-			e.exports = JSON.parse('{"id":"129085be0500"}')
 		},
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -575,7 +542,7 @@
 				h = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				g = n("./src/reddit/constants/adEvents.ts"),
 				f = n("./src/reddit/constants/localStorage.ts"),
-				v = n("./src/graphql/operations/CommentToxicity.json"),
+				v = n("./src/redditGQL/operations/CommentToxicity.json"),
 				C = n("./src/lib/makeApiRequest/index.ts"),
 				x = n("./src/lib/makeGqlRequest/index.ts"),
 				O = n("./src/lib/omitHeaders/index.ts"),
@@ -643,7 +610,7 @@
 						error: e.error || Object(P.a)()
 					})
 				};
-			var N = n("./src/graphql/operations/UpdateCommentFollowState.json");
+			var N = n("./src/redditGQL/operations/UpdateCommentFollowState.json");
 			var T = n("./src/reddit/endpoints/post/index.tsx"),
 				A = n("./src/reddit/endpoints/post/convert.ts"),
 				R = n("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
@@ -1732,19 +1699,19 @@
 				a = (n("./src/reddit/actions/notificationSettingsLayout/index.ts"), n("./src/reddit/actions/notificationsInbox/constants.ts")),
 				i = n("./src/reddit/actions/tabBadging.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
-				d = n("./src/graphql/operations/BlockAwarder.json"),
-				l = n("./src/lib/makeGqlRequest/index.ts");
-			var u = (e, t) => Object(l.a)(e, {
-					...d,
+				d = n("./src/lib/makeGqlRequest/index.ts"),
+				l = n("./src/redditGQL/operations/BlockAwarder.json");
+			var u = (e, t) => Object(d.a)(e, {
+					...l,
 					variables: t
 				}),
-				m = n("./src/graphql/operations/DeleteInboxNotifications.json");
+				m = n("./src/redditGQL/operations/DeleteInboxNotifications.json");
 			n("./src/reddit/endpoints/notificationSettingsLayoutByChannelEndpoint.ts");
-			var p = n("./src/graphql/operations/NotificationInboxFeed.json"),
-				b = n("./src/graphql/operations/NotificationInboxFeedSlimmed.json"),
-				h = n("./src/lib/constants/index.ts"),
-				g = n("./src/lib/makeApiRequest/index.ts"),
-				f = n("./src/lib/omitHeaders/index.ts"),
+			var p = n("./src/lib/constants/index.ts"),
+				b = n("./src/lib/makeApiRequest/index.ts"),
+				h = n("./src/lib/omitHeaders/index.ts"),
+				g = n("./src/redditGQL/operations/NotificationInboxFeed.json"),
+				f = n("./src/redditGQL/operations/NotificationInboxFeedSlimmed.json"),
 				v = n("./src/reddit/constants/headers.ts"),
 				C = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var x;
@@ -1752,7 +1719,7 @@
 				e.Activity = "activity", e.Messages = "messages"
 			}(x || (x = {}));
 			var O = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				y = n("./src/graphql/operations/UpdateInboxActivitySeenState.json");
+				y = n("./src/redditGQL/operations/UpdateInboxActivitySeenState.json");
 			var E = n("./src/reddit/helpers/trackers/inbox.ts"),
 				P = n("./src/reddit/models/Badge/index.ts"),
 				j = n("./src/reddit/models/NotificationInbox/index.ts"),
@@ -1769,14 +1736,14 @@
 					const a = n(),
 						i = Object(k.a)(a);
 					t(w());
-					const d = await ((e, t) => Object(l.a)(e, {
-						...p,
+					const l = await ((e, t) => Object(d.a)(e, {
+						...g,
 						variables: t
 					}))(s(), e);
-					if (null === (r = null === (o = d.error) || void 0 === o ? void 0 : o.fields) || void 0 === r ? void 0 : r.length) return t(M({
-						error: d.error
+					if (null === (r = null === (o = l.error) || void 0 === o ? void 0 : o.fields) || void 0 === r ? void 0 : r.length) return t(M({
+						error: l.error
 					})), void t(Object(c.d)());
-					const u = d && d.body,
+					const u = l && l.body,
 						m = A(u);
 					if (null === i) {
 						const e = Object(k.f)(a);
@@ -1787,8 +1754,8 @@
 					gqlContext: n
 				}) => {
 					var s, o;
-					const r = await (e => Object(l.a)(e, {
-						...b
+					const r = await (e => Object(d.a)(e, {
+						...f
 					}))(n());
 					if (null === (o = null === (s = r.error) || void 0 === s ? void 0 : s.fields) || void 0 === o ? void 0 : o.length) return;
 					const a = r && r.body,
@@ -1844,7 +1811,7 @@
 					gqlContext: o
 				}) => {
 					const r = [e];
-					if ((await ((e, t) => Object(l.a)(e, {
+					if ((await ((e, t) => Object(d.a)(e, {
 							...m,
 							variables: {
 								input: t
@@ -1896,9 +1863,9 @@
 					apiContext: o
 				}) => {
 					if (!e) return;
-					(await ((e, t) => Object(g.a)(Object(f.a)(e, [v.a]), {
+					(await ((e, t) => Object(b.a)(Object(h.a)(e, [v.a]), {
 						endpoint: Object(C.a)(`${e.apiUrl}/api/sendreplies`),
-						method: h.hb.POST,
+						method: p.hb.POST,
 						data: {
 							id: t
 						}
@@ -1923,9 +1890,9 @@
 				}) => {
 					let a;
 					if (t === j.a.CommentReply || t === j.a.PostReply || t === j.a.PrivateMessage || t === j.a.UsernameMention) {
-						if ((a = await ((e, t) => Object(g.a)(Object(f.a)(e, [v.a]), {
+						if ((a = await ((e, t) => Object(b.a)(Object(h.a)(e, [v.a]), {
 								endpoint: Object(C.a)(`${e.apiUrl}/api/read_message`),
-								method: h.hb.POST,
+								method: p.hb.POST,
 								data: {
 									id: t
 								}
@@ -1940,9 +1907,9 @@
 								n(Object(r.a)(t)), n(Object(i.e)())
 							}
 						}
-					} else a = await ((e, t) => Object(g.a)(Object(f.a)(e, [v.a]), {
+					} else a = await ((e, t) => Object(b.a)(Object(h.a)(e, [v.a]), {
 						endpoint: Object(C.a)(`${e.apiUrl}/api/read_notification`),
-						method: h.hb.POST,
+						method: p.hb.POST,
 						data: {
 							id: t
 						}
@@ -1958,7 +1925,7 @@
 					gqlContext: n
 				}) => {
 					const s = (new Date).toLocaleDateString(),
-						o = await ((e, t) => Object(l.a)(e, {
+						o = await ((e, t) => Object(d.a)(e, {
 							...y,
 							variables: {
 								input: t
@@ -1980,9 +1947,9 @@
 						}
 					} = t(), a = new Date;
 					if (!o || a.getTime() - new Date(o).getTime() > 15e3) {
-						if ((await ((e, t) => Object(g.a)(Object(f.a)(e, [v.a]), {
+						if ((await ((e, t) => Object(b.a)(Object(h.a)(e, [v.a]), {
 								endpoint: Object(C.a)(`${e.apiUrl}/api/read_all_messages`),
-								method: h.hb.POST,
+								method: p.hb.POST,
 								data: {
 									filter_types: null == t ? void 0 : t.join(",")
 								}
@@ -12545,12 +12512,12 @@
 			})), n.d(t, "a", (function() {
 				return y
 			}));
-			var s = n("./src/graphql/operations/ClaimAwardOffer.json"),
-				o = n("./src/graphql/operations/FetchSpecialEvents.json"),
-				r = n("./src/lib/constants/index.ts"),
-				a = n("./src/lib/makeApiRequest/index.ts"),
-				i = n("./src/lib/makeGqlRequest/index.ts"),
-				c = n("./src/lib/omitHeaders/index.ts"),
+			var s = n("./src/lib/constants/index.ts"),
+				o = n("./src/lib/makeApiRequest/index.ts"),
+				r = n("./src/lib/makeGqlRequest/index.ts"),
+				a = n("./src/lib/omitHeaders/index.ts"),
+				i = n("./src/redditGQL/operations/ClaimAwardOffer.json"),
+				c = n("./src/redditGQL/operations/FetchSpecialEvents.json"),
 				d = n("./src/reddit/constants/headers.ts"),
 				l = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				u = n("./src/reddit/endpoints/gold/purchase.ts");
@@ -12611,12 +12578,12 @@
 					correlationId: t,
 					shouldUseCurrentOrigin: n
 				}) => {
-					const s = "/api/v2/gold/purchase_package_details",
-						o = n && "undefined" != typeof window ? `${window.location.origin}${s}` : `${e.apiUrl}${s}`,
-						i = Object(l.a)(o);
-					return Object(a.a)(Object(c.a)(e, [d.a]), {
-						method: r.hb.GET,
-						endpoint: i,
+					const r = "/api/v2/gold/purchase_package_details",
+						i = n && "undefined" != typeof window ? `${window.location.origin}${r}` : `${e.apiUrl}${r}`,
+						c = Object(l.a)(i);
+					return Object(o.a)(Object(a.a)(e, [d.a]), {
+						method: s.hb.GET,
+						endpoint: c,
 						data: {
 							correlation_id: t
 						}
@@ -12646,11 +12613,11 @@
 				awardId: t,
 				correlationId: n
 			}) => {
-				const s = `${e.apiUrl}/api/v2/gold/recommended_coin_package_details`,
-					o = Object(l.a)(s);
-				return Object(a.a)(Object(c.a)(e, [d.a]), {
-					method: r.hb.GET,
-					endpoint: o,
+				const r = `${e.apiUrl}/api/v2/gold/recommended_coin_package_details`,
+					i = Object(l.a)(r);
+				return Object(o.a)(Object(a.a)(e, [d.a]), {
+					method: s.hb.GET,
+					endpoint: i,
 					data: {
 						correlation_id: n,
 						intended_award: t
@@ -12669,11 +12636,11 @@
 					body: n
 				}
 			}
-			const O = e => Object(i.a)(e, {
-					...o
+			const O = e => Object(r.a)(e, {
+					...c
 				}),
-				y = e => Object(i.a)(e, {
-					...s,
+				y = e => Object(r.a)(e, {
+					...i,
 					variables: {
 						input: {
 							offerId: "free_awards"
@@ -12872,15 +12839,15 @@
 			})), n.d(t, "b", (function() {
 				return i
 			}));
-			var s = n("./src/graphql/operations/NotificationSettingsLayoutByChannel.json"),
-				o = n("./src/graphql/operations/UpdateNotificationPreferences.json"),
-				r = n("./src/lib/makeGqlRequest/index.ts");
-			const a = (e, t) => Object(r.a)(e, {
-					...s,
+			var s = n("./src/lib/makeGqlRequest/index.ts"),
+				o = n("./src/redditGQL/operations/NotificationSettingsLayoutByChannel.json"),
+				r = n("./src/redditGQL/operations/UpdateNotificationPreferences.json");
+			const a = (e, t) => Object(s.a)(e, {
+					...o,
 					variables: t
 				}),
-				i = (e, t) => Object(r.a)(e, {
-					...o,
+				i = (e, t) => Object(s.a)(e, {
+					...r,
 					variables: {
 						input: {
 							preferences: [t]
@@ -17884,10 +17851,43 @@
 				return s
 			}));
 			const s = e => e.trending.models
+		},
+		"./src/redditGQL/operations/BlockAwarder.json": function(e) {
+			e.exports = JSON.parse('{"id":"9769ffbb7031"}')
+		},
+		"./src/redditGQL/operations/ClaimAwardOffer.json": function(e) {
+			e.exports = JSON.parse('{"id":"7264b2ee2ded"}')
+		},
+		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
+			e.exports = JSON.parse('{"id":"445164f0825f"}')
+		},
+		"./src/redditGQL/operations/DeleteInboxNotifications.json": function(e) {
+			e.exports = JSON.parse('{"id":"ce2deb9deef7"}')
+		},
+		"./src/redditGQL/operations/FetchSpecialEvents.json": function(e) {
+			e.exports = JSON.parse('{"id":"7537a71b4f14"}')
+		},
+		"./src/redditGQL/operations/NotificationInboxFeed.json": function(e) {
+			e.exports = JSON.parse('{"id":"43a931178716"}')
+		},
+		"./src/redditGQL/operations/NotificationInboxFeedSlimmed.json": function(e) {
+			e.exports = JSON.parse('{"id":"916e9e9be5e0"}')
+		},
+		"./src/redditGQL/operations/NotificationSettingsLayoutByChannel.json": function(e) {
+			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
+		},
+		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
+			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
+		},
+		"./src/redditGQL/operations/UpdateInboxActivitySeenState.json": function(e) {
+			e.exports = JSON.parse('{"id":"85d656894a08"}')
+		},
+		"./src/redditGQL/operations/UpdateNotificationPreferences.json": function(e) {
+			e.exports = JSON.parse('{"id":"129085be0500"}')
 		}
 	},
 	[
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6ed199e7927988f474b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ea47d265c177023ca1e3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.ca6e630400ca961afad7.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.1b356176e9a941edc8a3.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -30,9 +30,6 @@
 		"./node_modules/lodash/range.js": function(e, t, n) {
 			var a = n("./node_modules/lodash/_createRange.js")();
 			e.exports = a
-		},
-		"./src/graphql/operations/SubmitContentRatingSurvey.json": function(e) {
-			e.exports = JSON.parse('{"id":"8cd4e428e688"}')
 		},
 		"./src/reddit/components/ContentSurvey/RatingCard.tsx": function(e, t, n) {
 			"use strict";
@@ -99,7 +96,7 @@
 		"./src/reddit/components/ContentSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return H
+				return U
 			}));
 			var a = n("./node_modules/icepick/icepick.js"),
 				r = n("./node_modules/lodash/flatMap.js"),
@@ -192,7 +189,7 @@
 					hk: "3WmYcd"
 				}))))
 			}
-			var S = n("./src/graphql/operations/SubmitContentRatingSurvey.json"),
+			var S = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
 				O = n("./src/lib/makeGqlRequest/index.ts");
 			var T, I = (e, t) => Object(O.a)(e, {
 					...S,
@@ -204,12 +201,12 @@
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
 			}(T || (T = {}));
-			var q = n("./src/reddit/models/Toast/index.ts"),
-				W = n("./node_modules/lodash/mapValues.js"),
-				M = n.n(W),
+			var W = n("./src/reddit/models/Toast/index.ts"),
+				q = n("./node_modules/lodash/mapValues.js"),
+				M = n.n(q),
 				B = n("./src/reddit/controls/CheckboxInput/index.tsx");
 
-			function P({
+			function L({
 				children: e
 			}) {
 				return l.a.createElement(l.a.Fragment, null, (t = e, t.split(/\*+/)).map((e, t) => t % 2 == 1 ? l.a.createElement("em", {
@@ -218,14 +215,14 @@
 				var t
 			}
 
-			function L({
+			function P({
 				question: e,
 				selectedAnswers: t,
 				onChange: n
 			}) {
 				return l.a.createElement("div", null, l.a.createElement("h3", {
 					className: m.a.header
-				}, l.a.createElement(P, null, e.questionTextMarkdown)), e.answerOptions.map(a => l.a.createElement(B.a, {
+				}, l.a.createElement(L, null, e.questionTextMarkdown)), e.answerOptions.map(a => l.a.createElement(B.a, {
 					key: a.id,
 					name: a.id,
 					className: m.a.checkbox,
@@ -253,15 +250,15 @@
 			const {
 				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var U;
+			var Q;
 
-			function H(e) {
+			function U(e) {
 				var t, n;
 				const {
 					subredditId: r,
 					survey: s,
 					onClose: o = (() => {})
-				} = e, [u, g] = Object(c.useState)({}), v = Object(d.d)(), b = X(null == s ? void 0 : s.questions, u), [{
+				} = e, [u, g] = Object(c.useState)({}), v = Object(d.d)(), b = V(null == s ? void 0 : s.questions, u), [{
 					surveyState: f,
 					activeSlide: _
 				}, x] = Object(c.useReducer)(({
@@ -269,11 +266,11 @@
 				}, t) => {
 					const n = "forward" === t ? Math.min(e + 1, b.length + 1) : Math.max(e - 1, 0);
 					return {
-						surveyState: 0 === n ? U.Intro : n === b.length + 1 ? U.Tag : U.Survey,
+						surveyState: 0 === n ? Q.Intro : n === b.length + 1 ? Q.Tag : Q.Survey,
 						activeSlide: n
 					}
 				}, {
-					surveyState: U.Intro,
+					surveyState: Q.Intro,
 					activeSlide: 0
 				}), k = b[_ - 1], w = Object(F.a)();
 				Object(c.useEffect)(() => {
@@ -294,30 +291,30 @@
 				Object(c.useEffect)(() => {
 					C && (h.c.captureException(C), v(Object(y.f)(Object(y.e)(K._("An error occurred", null, {
 						hk: "1VDETi"
-					}), q.b.Error))))
+					}), W.b.Error))))
 				}, [C, v]);
 				const [S, O] = Object(c.useState)(null);
 				if (!s) return null;
 				if (!s.isEligible) return null;
 
-				function W(e, t) {
+				function q(e, t) {
 					g(Object(a.setIn)(u, [e], t)), w(Object(A.a)(k.pageType))
 				}
 				const M = null !== (t = u[null == k ? void 0 : k.id]) && void 0 !== t ? t : {},
 					B = (null !== (n = null == k ? void 0 : k.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => M[e]),
-					P = f === U.Survey && _ > 1;
+					L = f === Q.Survey && _ > 1;
 				return l.a.createElement(j, {
 					activeSlide: _,
 					advance: async function() {
-						if (f === U.Survey && _ === b.length && O(function(e, t) {
+						if (f === Q.Survey && _ === b.length && O(function(e, t) {
 								var n;
 								let a = null,
 									r = [];
-								const s = X(e.questions, t);
+								const s = V(e.questions, t);
 								for (const o of s)
 									for (const e of o.answerOptions) {
 										if (!(null === (n = t[o.id]) || void 0 === n ? void 0 : n[e.id])) continue;
-										if (!Z(e)) continue;
+										if (!X(e)) continue;
 										const s = e.contentRatingTag;
 										(!a || a.weight < s.weight) && (a = s), s.weight > 0 && r.push(e)
 									}
@@ -331,20 +328,20 @@
 									rating: a,
 									ratingReasons: r
 								}
-							}(s, u)), f === U.Tag) {
+							}(s, u)), f === Q.Tag) {
 							if (N) return;
 							return w(Object(A.m)()), await E({
 								input: {
 									subredditId: r,
 									version: s.version,
-									answers: X(s.questions, u).map(e => ({
+									answers: V(s.questions, u).map(e => ({
 										questionId: e.id,
-										answerIds: V(e, u).map(e => e.id)
+										answerIds: H(e, u).map(e => e.id)
 									}))
 								}
 							}), v(Object(y.f)(Object(y.e)(K._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
-							}), q.b.SuccessCommunityGreen))), v({
+							}), W.b.SuccessCommunityGreen))), v({
 								type: p.z,
 								payload: {
 									id: r,
@@ -352,16 +349,16 @@
 								}
 							}), void(C || o())
 						}
-						x("forward"), k ? w(Object(A.i)(k.pageType, V(k, u).map(e => e.id))) : 0 === _ && w(Object(A.l)())
+						x("forward"), k ? w(Object(A.i)(k.pageType, H(k, u).map(e => e.id))) : 0 === _ && w(Object(A.l)())
 					},
 					goBack: function() {
 						x("back"), k && w(Object(A.b)(k.pageType))
 					},
 					onClose: o,
-					progressCurrent: P ? _ - 1 : 0,
-					progressTotal: P ? b.length - 1 : 0,
-					disableNext: N || f === U.Survey && !B,
-					buttonText: Q(f)
+					progressCurrent: L ? _ - 1 : 0,
+					progressTotal: L ? b.length - 1 : 0,
+					disableNext: N || f === Q.Survey && !B,
+					buttonText: G(f)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
@@ -412,11 +409,11 @@
 					hk: "2x33OC"
 				})), b.map(e => {
 					var t;
-					return l.a.createElement(L, {
+					return l.a.createElement(P, {
 						key: e.id,
 						question: e,
 						selectedAnswers: null !== (t = u[e.id]) && void 0 !== t ? t : {},
-						onChange: W
+						onChange: q
 					})
 				}), S && l.a.createElement("div", {
 					key: "result",
@@ -444,48 +441,48 @@
 				}, e.contentRatingReasonText)))))
 			}
 
-			function Q(e) {
+			function G(e) {
 				switch (e) {
-					case U.Intro:
+					case Q.Intro:
 						return K._("Start Survey", null, {
 							hk: "41dYsT"
 						});
-					case U.Survey:
+					case Q.Survey:
 						return K._("Next", null, {
 							hk: "3WmYcd"
 						});
-					case U.Tag:
+					case Q.Tag:
 						return K._("Submit", null, {
 							hk: "2tgWd9"
 						})
 				}
 			}
 
-			function V(e, t) {
+			function H(e, t) {
 				return e.answerOptions.filter(n => {
 					var a;
 					return null === (a = t[e.id]) || void 0 === a ? void 0 : a[n.id]
 				})
 			}
 
-			function X(e, t) {
+			function V(e, t) {
 				let n = [];
 				for (const a of null != e ? e : []) {
-					const e = V(a, t),
+					const e = H(a, t),
 						r = s()(e, e => {
 							var t;
 							return null !== (t = e.subQuestions) && void 0 !== t ? t : []
 						});
-					n = [...n, a, ...X(r, t)]
+					n = [...n, a, ...V(r, t)]
 				}
 				return n
 			}
 
-			function Z(e) {
+			function X(e) {
 				return "ContentRatingSurveyLeafAnswer" === e.__typename
 			}! function(e) {
 				e[e.Intro = 0] = "Intro", e[e.Survey = 1] = "Survey", e[e.Tag = 2] = "Tag"
-			}(U || (U = {}))
+			}(Q || (Q = {}))
 		},
 		"./src/reddit/components/ModeratorSurvey/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -558,7 +555,10 @@
 				r = n("./src/reddit/layout/row/Inline/index.m.less"),
 				s = n.n(r);
 			t.a = a.a.div("inlineRow", s.a)
+		},
+		"./src/redditGQL/operations/SubmitContentRatingSurvey.json": function(e) {
+			e.exports = JSON.parse('{"id":"8cd4e428e688"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.ca6e630400ca961afad7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.1b356176e9a941edc8a3.js.map

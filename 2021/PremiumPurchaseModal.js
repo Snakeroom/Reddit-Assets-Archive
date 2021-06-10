@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.51df9efabb990afdaf29.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a698b20974dd7494f46c.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -774,39 +774,6 @@
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
-		"./src/graphql/operations/CancelEconRecurringPayment.json": function(e) {
-			e.exports = JSON.parse('{"id":"ac36f7489268"}')
-		},
-		"./src/graphql/operations/ConfirmPaypalPayment.json": function(e) {
-			e.exports = JSON.parse('{"id":"6ad51fec38be"}')
-		},
-		"./src/graphql/operations/ConfirmStripePaymentNewCard.json": function(e) {
-			e.exports = JSON.parse('{"id":"e4d2b27d6d30"}')
-		},
-		"./src/graphql/operations/ConfirmStripePaymentSavedCard.json": function(e) {
-			e.exports = JSON.parse('{"id":"0095edf93db4"}')
-		},
-		"./src/graphql/operations/CreateEconOrder.json": function(e) {
-			e.exports = JSON.parse('{"id":"1bf318d40021"}')
-		},
-		"./src/graphql/operations/CreatePaypalPayment.json": function(e) {
-			e.exports = JSON.parse('{"id":"8bca171d6bb4"}')
-		},
-		"./src/graphql/operations/CreateStripePaymentWithProvidedCard.json": function(e) {
-			e.exports = JSON.parse('{"id":"179702814d8f"}')
-		},
-		"./src/graphql/operations/CreateStripePaymentWithProvidedNonAuthCard.json": function(e) {
-			e.exports = JSON.parse('{"id":"6d178a1662ba"}')
-		},
-		"./src/graphql/operations/CreateStripePaymentWithSavedCard.json": function(e) {
-			e.exports = JSON.parse('{"id":"9fc54f6de447"}')
-		},
-		"./src/graphql/operations/DeleteSavedStripeCard.json": function(e) {
-			e.exports = JSON.parse('{"id":"87230cb9dec2"}')
-		},
-		"./src/graphql/operations/UserSavedStripeCards.json": function(e) {
-			e.exports = JSON.parse('{"id":"d29c51cfbfe6"}')
-		},
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, r) {
 			e.exports = {
 				overlay: "_1DK52RbaamLOWw5UPaht_S",
@@ -946,9 +913,9 @@
 			})), r.d(t, "c", (function() {
 				return M
 			})), r.d(t, "a", (function() {
-				return B
+				return F
 			})), r.d(t, "g", (function() {
-				return q
+				return G
 			})), r.d(t, "h", (function() {
 				return D
 			})), r.d(t, "i", (function() {
@@ -1055,7 +1022,7 @@
 							if (!o.data.confirmEconPayment.ok || o.data.confirmEconPayment.payment.status !== w.a.Paid) return void f()
 						} else if (m && b.status !== w.a.Paid) return void f();
 						const C = Object(v.j)(d());
-						C && (_ && s ? c(q({
+						C && (_ && s ? c(G({
 							subredditId: s,
 							powerupsCount: o,
 							user: C,
@@ -1124,7 +1091,7 @@
 									token: e.providerExecution.billingAgreementToken,
 									url: e.providerExecution.billingAgreementApprovalUrl
 								};
-								if ("PAID" === s && n) return o ? a(q({
+								if ("PAID" === s && n) return o ? a(G({
 									subredditId: o,
 									powerupsCount: r,
 									user: n,
@@ -1191,13 +1158,13 @@
 					} catch (o) {
 						m.c.captureException(o)
 					}
-				}, N = Object(p.a)(h.N), R = Object(p.a)(h.O), A = Object(p.a)(h.P), F = e => async (t, r) => {
+				}, N = Object(p.a)(h.N), R = Object(p.a)(h.O), A = Object(p.a)(h.P), L = e => async (t, r) => {
 					await t(N(e)), t(Object(l.f)({
 						kind: f.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, B = (e, t, r) => async (o, a, {
+				}, F = (e, t, r) => async (o, a, {
 					gqlContext: s
 				}) => {
 					o(R({
@@ -1211,21 +1178,21 @@
 								{
 									errors: n
 								} = e.data.cancelEconRecurringPayment;
-							if (n && n.length) return void o(F(n[0].message));
+							if (n && n.length) return void o(L(n[0].message));
 							o(A({
 								subredditId: t,
 								allocatedAt: r
 							}))
-						} else o(F(n.fbt._("Something went wrong", null, {
+						} else o(L(n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					} catch (i) {
-						m.c.captureException(i), o(F(n.fbt._("Something went wrong", null, {
+						m.c.captureException(i), o(L(n.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					}
-				}, L = Object(p.a)(h.R), q = e => async (t, r) => {
-					t(L(e)), t(Object(_.i)(e.subredditId, {
+				}, B = Object(p.a)(h.R), G = e => async (t, r) => {
+					t(B(e)), t(Object(_.i)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(P.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(P.h)(d.a.ECON_POWERUPS_SUCCESS))
@@ -1976,7 +1943,7 @@
 			var N = Object(f.c)(M),
 				R = r("./node_modules/react-stripe-elements/es/index.js"),
 				A = r("./src/reddit/actions/gold/productOfferPurchase.ts");
-			var F = ({
+			var L = ({
 					paypalUrl: e,
 					finishPaymentCallback: t
 				}) => {
@@ -2000,10 +1967,10 @@
 						}
 					}
 				},
-				B = r("./src/reddit/hooks/useThunkDispatch.ts"),
-				L = r("./src/reddit/controls/Button/index.tsx");
+				F = r("./src/reddit/hooks/useThunkDispatch.ts"),
+				B = r("./src/reddit/controls/Button/index.tsx");
 			const {
-				fbt: q
+				fbt: G
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var D = ({
 					className: e,
@@ -2011,7 +1978,7 @@
 					productOffer: r,
 					productOfferType: s
 				}) => {
-					const i = Object(B.a)(),
+					const i = Object(F.a)(),
 						c = Object(a.e)(_.j),
 						[d, l] = Object(n.useState)(!1),
 						[u, p] = Object(n.useState)(""),
@@ -2020,11 +1987,11 @@
 								user: c
 							}))
 						}, [i, s, c]);
-					F({
+					L({
 						paypalUrl: u,
 						finishPaymentCallback: m
 					});
-					return o.a.createElement(L.q, {
+					return o.a.createElement(B.q, {
 						onClick: async () => {
 							if (!r) return;
 							l(!0);
@@ -2033,13 +2000,13 @@
 						},
 						className: e,
 						disabled: d
-					}, q._("Continue to PayPal", null, {
+					}, G._("Continue to PayPal", null, {
 						hk: "1T4BEy"
 					}))
 				},
 				U = r("./src/reddit/selectors/gold/powerups/index.ts");
 			const {
-				fbt: G
+				fbt: q
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = Object(s.c)({
 				isAnonymous: U.c,
 				savedCardsPending: v.w,
@@ -2057,19 +2024,19 @@
 				}) => {
 					const l = Object(a.d)(),
 						u = c || s;
-					return o.a.createElement(L.q, {
+					return o.a.createElement(B.q, {
 						onClick: () => {
 							i && r && l(Object(A.j)(i, r, t, n, d))
 						},
 						className: e,
 						disabled: u || !i
-					}, G._("Complete purchase", null, {
+					}, q._("Complete purchase", null, {
 						hk: "KaR26"
 					}))
 				})),
-				K = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				J = r("./src/reddit/components/StripePaymentForm/index.tsx");
-			var Y = e => o.a.createElement("div", {
+				Q = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
+				K = r("./src/reddit/components/StripePaymentForm/index.tsx");
+			var J = e => o.a.createElement("div", {
 				className: I.a.premiumPurchaseHeader,
 				style: {
 					backgroundImage: `url("${i.a.assetPath}/img/gold/premium-hero-g.jpg")`
@@ -2094,7 +2061,7 @@
 				className: I.a.closeIcon,
 				"data-redditstyle": !0
 			})));
-			var X = e => {
+			var Y = e => {
 				const t = (e.total / 100).toLocaleString(),
 					r = e.isAnnualPremium ? j.fbt._("yearly", null, {
 						hk: "10Ao7X"
@@ -2111,19 +2078,19 @@
 					c = a ? D : H;
 				return o.a.createElement(R.StripeProvider, {
 					apiKey: i.a.stripe.apiKey
-				}, o.a.createElement(R.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(Y, {
+				}, o.a.createElement(R.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(J, {
 					onCloseClick: e.onCloseModal,
 					userName: e.userName
 				}), o.a.createElement("div", {
 					className: I.a.premiumPurchaseBody
-				}, o.a.createElement(K.a, {
+				}, o.a.createElement(Q.a, {
 					className: I.a.selectPayment,
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
 				}), s && o.a.createElement("div", {
 					className: I.a.creditCard
-				}, o.a.createElement(J.a, {
+				}, o.a.createElement(K.a, {
 					nightmode: e.nightmode,
 					className: I.a.stripeForm,
 					shouldDeleteCardWithGql: !0
@@ -2163,8 +2130,8 @@
 				})))))
 			};
 
-			function Q() {
-				return (Q = Object.assign || function(e) {
+			function X() {
+				return (X = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -2228,7 +2195,7 @@
 						h && e(Object(b.f)())
 					}, [e, h]), o.a.createElement("div", {
 						className: a
-					}, "selectPayment" === t && o.a.createElement(X, {
+					}, "selectPayment" === t && o.a.createElement(Y, {
 						nightmode: s,
 						onCloseModal: m,
 						onCompletePurchaseClick: d,
@@ -2262,7 +2229,7 @@
 					}
 				}
 				render() {
-					return o.a.createElement($, Q({}, this.props, {
+					return o.a.createElement($, X({}, this.props, {
 						className: Object(d.a)(this.props.className, I.a.premiumPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -2745,17 +2712,17 @@
 			}));
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				o = r.n(n),
-				a = r("./src/graphql/operations/CancelEconRecurringPayment.json"),
-				s = r("./src/graphql/operations/ConfirmPaypalPayment.json"),
-				i = r("./src/graphql/operations/ConfirmStripePaymentNewCard.json"),
-				c = r("./src/graphql/operations/ConfirmStripePaymentSavedCard.json"),
-				d = r("./src/graphql/operations/CreateEconOrder.json"),
-				l = r("./src/graphql/operations/CreatePaypalPayment.json"),
-				u = r("./src/graphql/operations/CreateStripePaymentWithProvidedCard.json"),
-				p = r("./src/graphql/operations/CreateStripePaymentWithProvidedNonAuthCard.json"),
-				m = r("./src/graphql/operations/CreateStripePaymentWithSavedCard.json"),
-				f = r("./src/graphql/operations/DeleteSavedStripeCard.json"),
-				h = r("./src/graphql/operations/UserSavedStripeCards.json"),
+				a = r("./src/redditGQL/operations/CancelEconRecurringPayment.json"),
+				s = r("./src/redditGQL/operations/ConfirmPaypalPayment.json"),
+				i = r("./src/redditGQL/operations/ConfirmStripePaymentNewCard.json"),
+				c = r("./src/redditGQL/operations/ConfirmStripePaymentSavedCard.json"),
+				d = r("./src/redditGQL/operations/CreateEconOrder.json"),
+				l = r("./src/redditGQL/operations/CreatePaypalPayment.json"),
+				u = r("./src/redditGQL/operations/CreateStripePaymentWithProvidedCard.json"),
+				p = r("./src/redditGQL/operations/CreateStripePaymentWithProvidedNonAuthCard.json"),
+				m = r("./src/redditGQL/operations/CreateStripePaymentWithSavedCard.json"),
+				f = r("./src/redditGQL/operations/DeleteSavedStripeCard.json"),
+				h = r("./src/redditGQL/operations/UserSavedStripeCards.json"),
 				y = r("./src/lib/makeGqlRequest/index.ts");
 			const b = (e, t, r, n, a) => {
 				const {
@@ -3090,19 +3057,19 @@
 			})), r.d(t, "clickGetPremiumEvent", (function() {
 				return A
 			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
-				return F
-			})), r.d(t, "clickNextButtonEvent", (function() {
-				return B
-			})), r.d(t, "clickCloseGildModalEvent", (function() {
 				return L
+			})), r.d(t, "clickNextButtonEvent", (function() {
+				return F
+			})), r.d(t, "clickCloseGildModalEvent", (function() {
+				return B
 			})), r.d(t, "viewKarmaSuccessEvent", (function() {
-				return q
+				return G
 			})), r.d(t, "clickFilterEvent", (function() {
 				return D
 			})), r.d(t, "clickNextFiltersEvent", (function() {
 				return U
 			})), r.d(t, "clickPreviousFiltersEvent", (function() {
-				return G
+				return q
 			}));
 			var n = r("./src/reddit/models/Gold/Award.ts"),
 				o = r("./src/reddit/selectors/telemetry.ts"),
@@ -3249,25 +3216,25 @@
 						...l(t)
 					}
 				}),
-				F = e => t => ({
+				L = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "add_coins"
 				}),
-				B = e => t => ({
+				F = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "next"
 				}),
-				L = e => t => ({
+				B = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				q = ({
+				G = ({
 					award: e,
 					awardeeKarmaEarned: t,
 					awarderKarmaEarned: r,
@@ -3302,7 +3269,7 @@
 					action: "click",
 					noun: "next_filters"
 				}),
-				G = () => e => ({
+				q = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -3748,7 +3715,40 @@
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
 				b = Object(n.a)(y, e => Boolean(null == e ? void 0 : e.isCanceled))
+		},
+		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
+			e.exports = JSON.parse('{"id":"ac36f7489268"}')
+		},
+		"./src/redditGQL/operations/ConfirmPaypalPayment.json": function(e) {
+			e.exports = JSON.parse('{"id":"6ad51fec38be"}')
+		},
+		"./src/redditGQL/operations/ConfirmStripePaymentNewCard.json": function(e) {
+			e.exports = JSON.parse('{"id":"e4d2b27d6d30"}')
+		},
+		"./src/redditGQL/operations/ConfirmStripePaymentSavedCard.json": function(e) {
+			e.exports = JSON.parse('{"id":"0095edf93db4"}')
+		},
+		"./src/redditGQL/operations/CreateEconOrder.json": function(e) {
+			e.exports = JSON.parse('{"id":"1bf318d40021"}')
+		},
+		"./src/redditGQL/operations/CreatePaypalPayment.json": function(e) {
+			e.exports = JSON.parse('{"id":"8bca171d6bb4"}')
+		},
+		"./src/redditGQL/operations/CreateStripePaymentWithProvidedCard.json": function(e) {
+			e.exports = JSON.parse('{"id":"179702814d8f"}')
+		},
+		"./src/redditGQL/operations/CreateStripePaymentWithProvidedNonAuthCard.json": function(e) {
+			e.exports = JSON.parse('{"id":"6d178a1662ba"}')
+		},
+		"./src/redditGQL/operations/CreateStripePaymentWithSavedCard.json": function(e) {
+			e.exports = JSON.parse('{"id":"9fc54f6de447"}')
+		},
+		"./src/redditGQL/operations/DeleteSavedStripeCard.json": function(e) {
+			e.exports = JSON.parse('{"id":"87230cb9dec2"}')
+		},
+		"./src/redditGQL/operations/UserSavedStripeCards.json": function(e) {
+			e.exports = JSON.parse('{"id":"d29c51cfbfe6"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.51df9efabb990afdaf29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a698b20974dd7494f46c.js.map

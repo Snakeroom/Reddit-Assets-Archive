@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.27bf6483a4bba8693214.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.cb2b34b0b09516a73a5a.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
-		"./src/graphql/operations/SubscribedSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
-		},
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/actions/users.ts"),
@@ -287,8 +284,8 @@
 					banned: V
 				}
 			});
-			const Y = Object(o.a)(w.o),
-				Q = Object(o.a)(w.n),
+			const Q = Object(o.a)(w.o),
+				Y = Object(o.a)(w.n),
 				X = Object(o.a)(w.m),
 				$ = (e, t = {}) => async (n, s, {
 					apiContext: r
@@ -298,13 +295,13 @@
 						i = Object(I.d)(e, o),
 						c = a.features.banned.fetchedTokens[i];
 					if (a.features.banned.api.pending[i] || c) return;
-					n(Y({
+					n(Q({
 						subredditId: e,
 						fetchedToken: o
 					}));
 					const d = a.subreddits.models[e].name,
 						l = await x(r(), d, t);
-					l.ok ? n(Q({
+					l.ok ? n(Y({
 						...l.body,
 						fetchedToken: o
 					})) : n(X({
@@ -480,7 +477,7 @@
 				p = n("./src/lib/makeApiRequest/index.ts"),
 				b = n("./src/lib/omitHeaders/index.ts"),
 				f = n("./src/reddit/constants/headers.ts");
-			var v = n("./src/graphql/operations/SubscribedSubreddits.json"),
+			var v = n("./src/redditGQL/operations/SubscribedSubreddits.json"),
 				h = n("./src/lib/makeGqlRequest/index.ts"),
 				x = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			var _ = n("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
@@ -999,7 +996,7 @@
 				J = n.n(Z);
 			const {
 				fbt: V
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(o.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(o.c)({
 				hasModMailPermissions: Object(u.a)(q.c.mail),
 				isUserBanned: (e, t) => !!Object(G.b)(e, {
 					subredditId: t.subredditId,
@@ -1009,7 +1006,7 @@
 					userName: t.username
 				})
 			});
-			class Q extends r.a.Component {
+			class Y extends r.a.Component {
 				componentDidMount() {
 					this.props.requestUserBanInfo()
 				}
@@ -1060,7 +1057,7 @@
 					})))
 				}
 			}
-			var X = Object(a.b)(Y, (e, {
+			var X = Object(a.b)(Q, (e, {
 					username: t,
 					subredditId: n,
 					contextId: s
@@ -1083,7 +1080,7 @@
 							contextId: s
 						})), e(Object(R.i)(K.a.MUTE_USER))
 					}
-				}))(Q),
+				}))(Y),
 				$ = n("./src/reddit/actions/userFlair/index.ts");
 			const {
 				fbt: ee
@@ -3599,7 +3596,10 @@
 				m = e => e.features.banned.search.api.pending,
 				p = e => e.features.banned.search.result,
 				b = e => e.features.banned.inContext
+		},
+		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
+			e.exports = JSON.parse('{"id":"84f02d14f38a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.27bf6483a4bba8693214.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.cb2b34b0b09516a73a5a.js.map

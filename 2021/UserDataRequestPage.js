@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.1730401f65565aa33f95.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.8243c387da704edeeeb8.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
-		"./src/graphql/operations/RequestUserDataExport.json": function(e) {
-			e.exports = JSON.parse('{"id":"f3bf387093f2"}')
-		},
 		"./src/reddit/actions/userDataRequest.ts": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "userDataRequestPageRequested", (function() {
@@ -236,10 +233,10 @@
 				c = a("./src/reddit/controls/Form/index.tsx"),
 				m = a("./src/reddit/controls/RadioInput/index.tsx"),
 				p = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				h = a("./src/graphql/operations/RequestUserDataExport.json"),
-				b = a("./src/lib/makeGqlRequest/index.ts");
-			var D = (e, t) => Object(b.a)(e, {
-				...h,
+				h = a("./src/lib/makeGqlRequest/index.ts"),
+				b = a("./src/redditGQL/operations/RequestUserDataExport.json");
+			var D = (e, t) => Object(h.a)(e, {
+				...b,
 				variables: t
 			});
 			const f = () => "/message/inbox";
@@ -549,7 +546,10 @@
 				}
 			}
 			t.default = Object(d.b)(S(I))
+		},
+		"./src/redditGQL/operations/RequestUserDataExport.json": function(e) {
+			e.exports = JSON.parse('{"id":"f3bf387093f2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.1730401f65565aa33f95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.8243c387da704edeeeb8.js.map

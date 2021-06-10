@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6cff3de72793717c8701.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.061a8889247b5ca62903.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -42,12 +42,6 @@
 			e.exports = function(e, t, n) {
 				return t = (n ? o(e, t, n) : void 0 === t) ? 1 : i(t), (a(e) ? s : r)(e, t)
 			}
-		},
-		"./src/graphql/operations/SubredditUserAchievements.json": function(e) {
-			e.exports = JSON.parse('{"id":"9995fe64fd5a"}')
-		},
-		"./src/graphql/operations/UpdateAchievementFlairPreference.json": function(e) {
-			e.exports = JSON.parse('{"id":"eab9458f507c"}')
 		},
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -347,9 +341,9 @@
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/lib/sentry/index.ts"),
-				o = n("./src/graphql/operations/SubredditUserAchievements.json"),
-				i = n("./src/graphql/operations/UpdateAchievementFlairPreference.json"),
-				c = n("./src/lib/makeGqlRequest/index.ts");
+				o = n("./src/lib/makeGqlRequest/index.ts"),
+				i = n("./src/redditGQL/operations/SubredditUserAchievements.json"),
+				c = n("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
 			var d = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				l = n("./src/lib/initializeClient/installReducer.ts"),
 				u = n("./src/reddit/reducers/features/powerups/index.ts"),
@@ -372,11 +366,11 @@
 				j = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
-					const i = t.filter(e => !!(null == e ? void 0 : e.trim()));
-					if (i.length) try {
+					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (c.length) try {
 						const t = await (async (e, t, n) => {
-							const s = await Object(c.a)(e, {
-								...o,
+							const s = await Object(o.a)(e, {
+								...i,
 								variables: {
 									subredditId: t,
 									redditorIds: n
@@ -384,7 +378,7 @@
 							});
 							if (!s.ok) throw new Error("Unable to fetch user achievements");
 							return s.body.data.subredditInfoById
-						})(r(), e, i);
+						})(r(), e, c);
 						await n(E(t))
 					} catch (d) {
 						a.c.captureException(d)
@@ -415,7 +409,7 @@
 						a.add(e.authorId)
 					}), await n(j(e, Array.from(a)))
 				}, N = (e, t) => async (n, r, {
-					gqlContext: o
+					gqlContext: i
 				}) => {
 					const d = r(),
 						l = Object(x.j)(d);
@@ -428,14 +422,14 @@
 					n(y(u));
 					try {
 						await (async (e, t, n) => {
-							if (!(await Object(c.a)(e, {
-									...i,
+							if (!(await Object(o.a)(e, {
+									...c,
 									variables: {
 										subredditId: t,
 										achievementType: n
 									}
 								})).ok) throw new Error("Unable to update the preferred achievement flair")
-						})(o(), u.subredditId, u.achievementType), n(_(u))
+						})(i(), u.subredditId, u.achievementType), n(_(u))
 					} catch (m) {
 						n(g(u)), a.c.captureException(m), n(Object(p.f)({
 							duration: p.a,
@@ -4548,11 +4542,11 @@
 			})), n.d(t, "J", (function() {
 				return H
 			})), n.d(t, "t", (function() {
-				return q
-			})), n.d(t, "H", (function() {
 				return V
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "H", (function() {
 				return K
+			})), n.d(t, "d", (function() {
+				return q
 			})), n.d(t, "c", (function() {
 				return G
 			})), n.d(t, "b", (function() {
@@ -4791,7 +4785,7 @@
 						...Object(c.d)(e, t, n, s, r, void 0, a)
 					})
 				},
-				q = (e, t, n) => {
+				V = (e, t, n) => {
 					const s = y(e, t);
 					Object(b.a)({
 						...s,
@@ -4801,7 +4795,7 @@
 						noun: "footer_subreddit"
 					})
 				},
-				V = (e, t) => n => {
+				K = (e, t) => n => {
 					const s = Object(l.j)(t);
 					return {
 						...f(n, e, t),
@@ -4811,7 +4805,7 @@
 						noun: "title_subreddit"
 					}
 				},
-				K = (e, t) => n => ({
+				q = (e, t) => n => ({
 					...f(n, e, t),
 					action: "status",
 					actionInfo: m.actionInfo(n, {
@@ -6193,9 +6187,9 @@
 				M = n("./src/reddit/components/Governance/ClaimPointsBanner/async.ts"),
 				W = n("./src/reddit/components/Governance/WalletRegistration/Banner/async.tsx"),
 				H = n("./src/reddit/components/HeaderImage/index.tsx"),
-				q = n("./src/reddit/components/InFeedPostCreation/async.tsx"),
-				V = n("./src/reddit/components/InfoBanners/QuarantinedSubredditBanner/index.tsx"),
-				K = n("./src/reddit/components/JumpToContent/index.tsx"),
+				V = n("./src/reddit/components/InFeedPostCreation/async.tsx"),
+				K = n("./src/reddit/components/InfoBanners/QuarantinedSubredditBanner/index.tsx"),
+				q = n("./src/reddit/components/JumpToContent/index.tsx"),
 				G = n("./src/reddit/components/ListingPostList/index.tsx"),
 				z = n("./src/reddit/components/NewPostPill/index.tsx"),
 				Q = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx"),
@@ -6289,7 +6283,7 @@
 				resolve() {
 					return "./src/reddit/components/LayerEmbed/index.tsx"
 				}
-			}), Re = 5, Me = 3, We = 6e3, He = Object(re.t)(), qe = Object(s.a)({
+			}), Re = 5, Me = 3, We = 6e3, He = Object(re.t)(), Ve = Object(s.a)({
 				resolved: {},
 				chunkName: () => "SubredditTopContent",
 				isReady(e) {
@@ -6308,13 +6302,13 @@
 				resolve() {
 					return "./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.tsx"
 				}
-			}), Ve = Object(_.a)(Object(m.a)((e, {
+			}), Ke = Object(_.a)(Object(m.a)((e, {
 				location: t
-			}) => t.search, e => a()([...Object(f.a)(e)]))), Ke = Object(m.a)((e, {
+			}) => t.search, e => a()([...Object(f.a)(e)]))), qe = Object(m.a)((e, {
 				match: t
 			}) => t.params.subredditName, (e, {
 				match: t
-			}) => t.params.sort, Ve, we.db, he.a, (e, t, n, s, r) => {
+			}) => t.params.sort, Ke, we.db, he.a, (e, t, n, s, r) => {
 				let a = t;
 				a || (e === te.f && r ? a = h.U.BEST : Object(v.a)(e) && (a = h.U.HOT));
 				const o = Object(O.makeFlairSearchOptions)(n, s);
@@ -6355,7 +6349,7 @@
 				} = t.match.params;
 				if (n) {
 					if (e.subreddits.progressModule[n.id]) return !1;
-					const r = Ke(e, t),
+					const r = qe(e, t),
 						a = Object(Ne.a)(pe.c.config)(e, {
 							subredditId: n.id
 						}),
@@ -6367,7 +6361,7 @@
 				}
 				return !1
 			}), Xe = (e, t) => {
-				const n = Ke(e, t),
+				const n = qe(e, t),
 					s = Object(re.O)(e, t),
 					{
 						sort: r
@@ -6388,7 +6382,7 @@
 				const {
 					sort: n,
 					subredditName: s
-				} = t.match.params, r = Ve(e, t);
+				} = t.match.params, r = Ke(e, t);
 				if (n) return Object(E.b)({
 					sort: n,
 					timeSort: et(r)
@@ -6398,7 +6392,7 @@
 				}) : Object(E.b)({
 					sort: h.U.HOT
 				});
-				const a = Ke(e, t),
+				const a = qe(e, t),
 					o = e.listings.postOrder.listingSort[a];
 				if (o && !o.hasChanged) return Object(E.d)(o.sort);
 				const {
@@ -6421,7 +6415,7 @@
 			}), st = Object(m.c)({
 				claimablePointsEnabled: ae.d.spClaimablePoints,
 				isBlacklistedTopContentPage: be.f,
-				listingKey: Ke,
+				listingKey: qe,
 				sortParams: tt,
 				specialMembershipUpsellsEnabled: ae.d.spSpecialMembershipUpsells,
 				topContent: nt,
@@ -6450,7 +6444,7 @@
 				inResonatePilot: Ee.a,
 				newPostPillTriggerIdx: Xe,
 				isReducedAnimation: Te.c
-			}), at = () => Object(m.a)(we.db, Ze, Ve, Ge, Qe, ze, (e, {
+			}), at = () => Object(m.a)(we.db, Ze, Ke, Ge, Qe, ze, (e, {
 				match: t
 			}) => Object(Ie.x)(e, {
 				subredditName: t.params.subredditName
@@ -6816,8 +6810,8 @@
 							subredditId: we,
 							timeSort: ne
 						},
-						Ve = be ? this.props.onLoadMoreSearchResults : this.props.onLoadMorePosts,
-						Ke = P && P.subscribers;
+						Ke = be ? this.props.onLoadMoreSearchResults : this.props.onLoadMorePosts,
+						qe = P && P.subscribers;
 					let Ge;
 					const ze = window.URL;
 					if (mt(this.props)) {
@@ -6856,7 +6850,7 @@
 							subredditUrl: Ee
 						})]),
 						trendingUnit: Ge,
-						content: d.a.createElement(d.a.Fragment, null, P && P.isQuarantined && d.a.createElement(V.a, {
+						content: d.a.createElement(d.a.Fragment, null, P && P.isQuarantined && d.a.createElement(K.a, {
 							subredditName: ee
 						}), P && f && d.a.createElement(T.a, {
 							subreddit: P,
@@ -6866,20 +6860,20 @@
 							className: Le.a.duHeader
 						}, De._("Popular posts", null, {
 							hk: "Gfyj2"
-						})), Te && d.a.createElement(qe, {
+						})), Te && d.a.createElement(Ve, {
 							discoveryUnit: oe,
 							subredditName: P ? P.name : ee,
 							topContent: ae,
 							onCloseClick: this.onTopContentDismissed
-						}), !xe && i && !(J && J.userIsBanned) && !Ce && d.a.createElement(q.a, {
+						}), !xe && i && !(J && J.userIsBanned) && !Ce && d.a.createElement(V.a, {
 							subredditName: ee
 						}), !Ce && d.a.createElement(R.a, He), P && d.a.createElement(k.a, {
 							subreddit: P
-						}), d.a.createElement(K.a, null), d.a.createElement($.a, {
+						}), d.a.createElement(q.a, null), d.a.createElement($.a, {
 							handlePillClick: this.props.refreshFeed,
 							listingKey: l,
 							subredditName: ee,
-							subscriberCount: Ke
+							subscriberCount: qe
 						}), Ce && d.a.createElement(L.a, {
 							subreddit: P
 						}), Ze && d.a.createElement(z.a, {
@@ -6897,7 +6891,7 @@
 								sort: E,
 								subreddit: P
 							}),
-							onLoadMore: Ve,
+							onLoadMore: Ke,
 							inSubredditOrProfile: !xe,
 							disablePlaceholder: ee === te.f && E === h.U.AWARDED,
 							isActionBarAnimationEnabled: r
@@ -6981,7 +6975,7 @@
 			})), n.d(t, "e", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return q
+				return V
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/reselect/es/index.js"),
@@ -7159,7 +7153,7 @@
 				}),
 				W = Object(s.a)(k, M, m.b, c.b, c.o, (e, t, n, s, r) => n ? s : e ? t === R.LIVE || t === R.VOD ? e.stream.hls_url : r : void 0),
 				H = Object(s.a)(k, M, U, (e, t, n) => e ? t === R.LIVE ? e.broadcast_time : t === R.VOD && n < e.broadcast_time ? n : 0 : 0),
-				q = (e, t) => {
+				V = (e, t) => {
 					const n = p(e);
 					return !!n && n[t] && n[t].chat_disabled
 				}
@@ -7364,7 +7358,13 @@
 				}
 			};
 			t.a = u
+		},
+		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
+			e.exports = JSON.parse('{"id":"9995fe64fd5a"}')
+		},
+		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
+			e.exports = JSON.parse('{"id":"eab9458f507c"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6cff3de72793717c8701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.061a8889247b5ca62903.js.map

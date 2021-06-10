@@ -1,10 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.e6a3f354ce11247e14b5.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.500e743d7bd0f69e62f1.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
-		"./src/graphql/operations/PollVote.json": function(e) {
-			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
-		},
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -260,9 +257,9 @@
 				a = n("./src/reddit/actions/post.ts"),
 				c = n("./src/reddit/actions/toaster.ts"),
 				l = n("./src/config.ts"),
-				d = n("./src/graphql/operations/PollVote.json"),
-				u = n("./src/lib/makeGqlRequest/index.ts"),
-				m = n("./src/reddit/models/Poll/index.ts"),
+				d = n("./src/lib/makeGqlRequest/index.ts"),
+				u = n("./src/reddit/models/Poll/index.ts"),
+				m = n("./src/redditGQL/operations/PollVote.json"),
 				p = n("./src/reddit/endpoints/governance/requester.ts");
 			var b = n("./src/reddit/endpoints/governance/wallet.ts"),
 				_ = n("./src/reddit/models/Toast/index.ts"),
@@ -292,8 +289,8 @@
 					let i, c = s().polls.models[e];
 					if (n(x({
 							pollId: e
-						})), (i = c.type === m.a.GA ? await ((e, t, n) => Object(u.a)(e, {
-								...d,
+						})), (i = c.type === u.a.GA ? await ((e, t, n) => Object(d.a)(e, {
+								...m,
 								variables: {
 									input: {
 										postId: t,
@@ -307,7 +304,7 @@
 									endpoint: `${l.a.metaUrl}/polls/${t}/${n}/votes/me/${s}`
 								})
 							}(r(), c.subredditId, e, t)).ok) {
-						if (c.type === m.a.GA) {
+						if (c.type === u.a.GA) {
 							const {
 								options: e
 							} = i.body.data.updatePostPollVoteState.poll;
@@ -318,7 +315,7 @@
 							}))
 						} else n(I(i.body));
 						const r = s();
-						if ((c = r.polls.models[e]) && Object(m.d)(c)) {
+						if ((c = r.polls.models[e]) && Object(u.d)(c)) {
 							const {
 								postId: e
 							} = c, t = r.posts.models[e];
@@ -627,9 +624,9 @@
 				L = n("./src/reddit/selectors/crypto/points.ts"),
 				V = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				D = n("./src/reddit/components/Poll/PollBody/ClosedPoll/index.m.less"),
-				B = n.n(D);
+				G = n.n(D);
 
-			function G(e) {
+			function B(e) {
 				let t;
 				const {
 					pointsDetails: n
@@ -643,7 +640,7 @@
 					className: e.className
 				}, e.poll.options.map((s, r) => i.a.createElement(N, {
 					key: r,
-					className: B.a.option,
+					className: G.a.option,
 					displayType: e.displayType,
 					isWinningOption: s === t,
 					optionId: s.id,
@@ -651,7 +648,7 @@
 					result: e.result,
 					pointsDetails: n
 				})), i.a.createElement(V.a, {
-					className: B.a.metaData,
+					className: G.a.metaData,
 					poll: e.poll
 				}))
 			}
@@ -729,9 +726,9 @@
 			const Y = Object(c.c)({
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var J = Object(a.b)(Y)(Object(k.c)(Z)),
-				Q = n("./src/reddit/components/Poll/PollBody/index.m.less"),
-				X = n.n(Q);
+			var Q = Object(a.b)(Y)(Object(k.c)(Z)),
+				J = n("./src/reddit/components/Poll/PollBody/index.m.less"),
+				X = n.n(J);
 			class ee extends i.a.Component {
 				constructor() {
 					super(...arguments), this.userAlreadyMadeSelection = (e, t) => !(!e || !t) && Object(C.g)(e, t), this.sendPollResultsEvent = () => {
@@ -769,12 +766,12 @@
 						className: e
 					}, a && i.a.createElement("div", {
 						className: X.a.title
-					}, a), r && Object(C.e)(s, r) ? i.a.createElement(G, {
+					}, a), r && Object(C.e)(s, r) ? i.a.createElement(B, {
 						displayType: t,
 						poll: s,
 						result: r,
 						subredditId: o
-					}) : i.a.createElement(J, {
+					}) : i.a.createElement(Q, {
 						poll: s,
 						onVoteSelection: n,
 						voteInProgress: c,
@@ -1548,7 +1545,10 @@
 					return n && e.subreddits.gov.releaseNotes[n] || r
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
+		},
+		"./src/redditGQL/operations/PollVote.json": function(e) {
+			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.e6a3f354ce11247e14b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.500e743d7bd0f69e62f1.js.map

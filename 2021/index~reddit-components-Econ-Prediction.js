@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ad99b96636ed27073896.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e358cd2aaedaf5e7e6c8.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -440,39 +440,6 @@
 				for (var G = 0; G < 6; ++G) m[e + G] = l[G];
 				return i || n(m)
 			}
-		},
-		"./src/graphql/operations/AddPredictionDrafts.json": function(a) {
-			a.exports = JSON.parse('{"id":"84c24426ab00"}')
-		},
-		"./src/graphql/operations/CreatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"b8bc80c247a6"}')
-		},
-		"./src/graphql/operations/EndPredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"160c1d2839c1"}')
-		},
-		"./src/graphql/operations/GetPredictionChipPackages.json": function(a) {
-			a.exports = JSON.parse('{"id":"3785e4a718f5"}')
-		},
-		"./src/graphql/operations/GetPredictionCoinPackages.json": function(a) {
-			a.exports = JSON.parse('{"id":"6829c428155b"}')
-		},
-		"./src/graphql/operations/GetPredictionToken.json": function(a) {
-			a.exports = JSON.parse('{"id":"26b911e67a5f"}')
-		},
-		"./src/graphql/operations/GetTournaments.json": function(a) {
-			a.exports = JSON.parse('{"id":"d2575383d168"}')
-		},
-		"./src/graphql/operations/ResolvePrediction.json": function(a) {
-			a.exports = JSON.parse('{"id":"45c2e0b86b90"}')
-		},
-		"./src/graphql/operations/SubredditTopPredictors.json": function(a) {
-			a.exports = JSON.parse('{"id":"3407d5f67207"}')
-		},
-		"./src/graphql/operations/UpdatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"aeb2b0e42e97"}')
-		},
-		"./src/graphql/operations/VotePrediction.json": function(a) {
-			a.exports = JSON.parse('{"id":"1712829dfb21"}')
 		},
 		"./src/lib/bigNumberUtils/percent.ts": function(a, i, r) {
 			"use strict";
@@ -1442,7 +1409,7 @@
 		"./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx": function(a, i, r) {
 			"use strict";
 			r.d(i, "a", (function() {
-				return K
+				return Y
 			}));
 			var t = r("./node_modules/react/index.js"),
 				x = r.n(t),
@@ -1632,13 +1599,13 @@
 				U = r("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
 				H = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				W = r("./src/reddit/selectors/subreddit.ts"),
-				q = r("./src/reddit/components/Econ/Prediction/PredictionModal/TournamentModal/index.m.less"),
-				z = r.n(q);
+				z = r("./src/reddit/components/Econ/Prediction/PredictionModal/TournamentModal/index.m.less"),
+				q = r.n(z);
 			const {
 				fbt: J
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function $({
+			function Q({
 				onCancel: a,
 				onSubmit: i,
 				pollId: r,
@@ -1658,74 +1625,74 @@
 					[p, h] = Object(t.useState)(!1);
 				if (Object(t.useEffect)(() => {
 						o(Object(f.v)({
-							numberPredictionTokens: K,
+							numberPredictionTokens: Y,
 							pollId: r
 						}))
 					}, [r, o]), Object(t.useEffect)(() => {
 						s || a()
 					}, [s, a]), !s) return null;
 				return x.a.createElement("div", {
-					className: z.a.tournamentModal
+					className: q.a.tournamentModal
 				}, x.a.createElement("div", {
-					className: z.a.header
+					className: q.a.header
 				}, x.a.createElement(M.b, {
-					className: z.a.icon,
+					className: q.a.icon,
 					iconUrl: m.url,
 					altText: J._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					subredditOrProfile: e
 				}), x.a.createElement("h1", {
-					className: z.a.title
+					className: q.a.title
 				}, s.name), x.a.createElement("p", {
-					className: z.a.description
+					className: q.a.description
 				}, J._("Welcome to tournament play! Claim your tokens, make predictions, and climb up the leaderboard.", null, {
 					hk: "1tajkZ"
 				})), x.a.createElement(D.q, {
 					"aria-label": J._("Close", null, {
 						hk: "40q8CL"
 					}),
-					className: z.a.closeButton,
+					className: q.a.closeButton,
 					Icon: Object(V.b)("close"),
 					onClick: a,
 					priority: D.b.Plain
 				})), x.a.createElement("div", {
-					className: z.a.body
+					className: q.a.body
 				}, x.a.createElement("div", {
-					className: z.a.startingBalance
+					className: q.a.startingBalance
 				}, J._({
 					"*": "Claim your {tokens amount}tokens to get started",
 					_1: "Claim your {tokens amount} token to get started"
 				}, [J._param("tokens amount", x.a.createElement("span", {
-					className: z.a.startingBalanceAmount
+					className: q.a.startingBalanceAmount
 				}, x.a.createElement(l.a, {
-					className: z.a.tokenIcon
-				}), K)), J._plural(K)], {
+					className: q.a.tokenIcon
+				}), Y)), J._plural(Y)], {
 					hk: "1qVlUJ"
 				})), x.a.createElement("button", {
-					className: z.a.submitButton,
+					className: q.a.submitButton,
 					onClick: async () => {
 						h(!0), await i(), h(!1)
 					}
 				}, p ? x.a.createElement(c.a, {
-					className: z.a.loadingIcon,
+					className: q.a.loadingIcon,
 					sizePx: 6
 				}) : J._("Join the Tournament!", null, {
 					hk: "SIzo7"
 				}))))
 			}
 			const {
-				fbt: Y
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = 1e3, X = Object(n.c)({
+				fbt: $
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Y = 1e3, K = Object(n.c)({
 				isNewPredictionsSheet: G.p,
 				userCoins: E.d
-			}), Q = {
+			}), X = {
 				fetchPredictionChipPackages: e.d,
 				fetchPredictionTokens: e.e,
 				getCoinPacks: e.h,
 				showToast: m.f
 			};
-			i.b = Object(k.b)(X, Q)(Object(o.a)(({
+			i.b = Object(k.b)(K, X)(Object(o.a)(({
 				fetchPredictionChipPackages: a,
 				fetchPredictionTokens: i,
 				getCoinPacks: r,
@@ -1740,7 +1707,7 @@
 				tournamentId: B,
 				userCoins: D
 			}) => {
-				const [V, b] = Object(t.useState)(0), [F, g] = Object(t.useState)(null), [v, S] = Object(t.useState)(null), [P, T] = Object(t.useState)(null), [O, j] = Object(t.useState)(!1), [C, I] = Object(t.useState)(!1), [w, M] = Object(t.useState)(!1), R = Object(u.a)(), U = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], W = B ? v && V === v.length - 1 : F && V === F.length - 1, q = !!F || "COINS" === (null == H ? void 0 : H.currency), z = q && D < ((null == U ? void 0 : U.coins) || (null == H ? void 0 : H.amount) || 0), J = !!H && null !== P && P < H.amount, X = null == U ? void 0 : U.coins, Q = null == H ? void 0 : H.amount, Z = z || J, aa = Z || W, ia = Object(t.useCallback)(async () => {
+				const [V, b] = Object(t.useState)(0), [F, g] = Object(t.useState)(null), [v, S] = Object(t.useState)(null), [P, T] = Object(t.useState)(null), [O, j] = Object(t.useState)(!1), [C, I] = Object(t.useState)(!1), [w, M] = Object(t.useState)(!1), R = Object(u.a)(), U = null == F ? void 0 : F[V], H = null == v ? void 0 : v[V], W = B ? v && V === v.length - 1 : F && V === F.length - 1, z = !!F || "COINS" === (null == H ? void 0 : H.currency), q = z && D < ((null == U ? void 0 : U.coins) || (null == H ? void 0 : H.amount) || 0), J = !!H && null !== P && P < H.amount, K = null == U ? void 0 : U.coins, X = null == H ? void 0 : H.amount, Z = q || J, aa = Z || W, ia = Object(t.useCallback)(async () => {
 					try {
 						const i = await a(G);
 						S(i)
@@ -1748,7 +1715,7 @@
 						E({
 							duration: 5e3,
 							kind: y.b.Error,
-							text: Y._("Error: Failed to get chip packs for post", null, {
+							text: $._("Error: Failed to get chip packs for post", null, {
 								hk: "1wR7Zy"
 							})
 						}), o()
@@ -1765,7 +1732,7 @@
 							E({
 								duration: 5e3,
 								kind: y.b.Error,
-								text: Y._("Error: Failed to fetch user balance", null, {
+								text: $._("Error: Failed to fetch user balance", null, {
 									hk: "TF2D5"
 								})
 							}), o()
@@ -1780,7 +1747,7 @@
 								a.length || (E({
 									duration: 5e3,
 									kind: y.b.Error,
-									text: Y._("Error: Subreddit is not configured with coin packs", null, {
+									text: $._("Error: Subreddit is not configured with coin packs", null, {
 										hk: "2t8uz0"
 									})
 								}), o()), g(a)
@@ -1788,7 +1755,7 @@
 								E({
 									duration: 5e3,
 									kind: y.b.Error,
-									text: Y._("Error: Failed to fetch coin packs, please try again later", null, {
+									text: $._("Error: Failed to fetch coin packs, please try again later", null, {
 										hk: "2aROIr"
 									})
 								}), o()
@@ -1797,16 +1764,16 @@
 				}, [v, F, a, r, o, ia, G, E, P, B]);
 				const ra = Object(t.useCallback)(async () => {
 						if (!B) return null;
-						await ia(), M(!1), T(K)
+						await ia(), M(!1), T(Y)
 					}, [ia, B]),
 					ta = Object(t.useCallback)(() => {
 						R(Object(f.m)({
 							pollId: G,
-							selectedNumberCoins: X,
-							selectedNumberTokens: Q
+							selectedNumberCoins: K,
+							selectedNumberTokens: X
 						})), o()
-					}, [o, G, X, Q, R]);
-				return B && !C ? null : w ? x.a.createElement($, {
+					}, [o, G, K, X, R]);
+				return B && !C ? null : w ? x.a.createElement(Q, {
 					onCancel: ta,
 					onSubmit: ra,
 					pollId: G,
@@ -1821,7 +1788,7 @@
 					className: L.a.modalContent
 				}, n && x.a.createElement(N, {
 					chipPack: null == v ? void 0 : v[0],
-					isCoinsPrediction: q,
+					isCoinsPrediction: z,
 					option: m,
 					tokenBalance: P
 				}), x.a.createElement("div", {
@@ -1829,7 +1796,7 @@
 				}, x.a.createElement("div", {
 					className: L.a.wagerSelector
 				}, x.a.createElement("button", {
-					"aria-label": Y._("Decrease amount", null, {
+					"aria-label": $._("Decrease amount", null, {
 						hk: "3CJknV"
 					}),
 					disabled: 0 === V,
@@ -1843,19 +1810,19 @@
 					className: L.a.wagerSelectorAmount
 				}, x.a.createElement(p.a, {
 					className: L.a.coinIcon
-				}), " ", U.coins ? U.coins : Y._("Free", null, {
+				}), " ", U.coins ? U.coins : $._("Free", null, {
 					hk: "2EqRoV"
 				})) : H ? x.a.createElement("div", {
 					className: L.a.wagerSelectorAmount
 				}, H.amount > 0 ? x.a.createElement(x.a.Fragment, null, x.a.createElement(l.a, {
 					className: L.a.tokenIcon
-				}), " ", H.amount) : Y._("Free", null, {
+				}), " ", H.amount) : $._("Free", null, {
 					hk: "1fDvBk"
 				})) : x.a.createElement(c.a, {
 					className: L.a.loadingIcon,
 					sizePx: 24
 				}), x.a.createElement("button", {
-					"aria-label": Y._("Increase", null, {
+					"aria-label": $._("Increase", null, {
 						hk: "3OfAwL"
 					}),
 					disabled: !(!F && !v || !W),
@@ -1867,15 +1834,15 @@
 					className: L.a.wagerSelectorButtonIcon
 				}))), aa && x.a.createElement("div", {
 					className: L.a.amountMessage
-				}, z && Y._("Insufficient coins", null, {
+				}, q && $._("Insufficient coins", null, {
 					hk: "2Mo83P"
-				}), J && Y._("Insufficient tokens", null, {
+				}), J && $._("Insufficient tokens", null, {
 					hk: "2XAKK7"
-				}), W && !Z && Y._("Max amount", null, {
+				}), W && !Z && $._("Max amount", null, {
 					hk: "1BpnPd"
 				}))), x.a.createElement("button", {
 					className: Object(s.a)(L.a.predictButton, {
-						[L.a.isDisabled]: !F && !v || z,
+						[L.a.isDisabled]: !F && !v || q,
 						[L.a.isCreatingVote]: k
 					}),
 					disabled: !F && !v || k || J,
@@ -1887,21 +1854,21 @@
 					}
 				}, k ? x.a.createElement(c.a, {
 					sizePx: 16
-				}) : z ? Y._("Get Coins", null, {
+				}) : q ? $._("Get Coins", null, {
 					hk: "11KD6n"
-				}) : Y._("Let's do this!", null, {
+				}) : $._("Let's do this!", null, {
 					hk: "342MNr"
 				})), x.a.createElement("div", {
 					className: L.a.disclaimer
-				}, q && x.a.createElement(x.a.Fragment, null, Y._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [Y._param("=Predictions don’t offer an opportunity to win real money or prizes.", x.a.createElement("a", {
+				}, z && x.a.createElement(x.a.Fragment, null, $._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [$._param("=Predictions don’t offer an opportunity to win real money or prizes.", x.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/previews-terms",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, Y._("Predictions don’t offer an opportunity to win real money or prizes.", null, {
+				}, $._("Predictions don’t offer an opportunity to win real money or prizes.", null, {
 					hk: "1BMKCi"
 				})))], {
 					hk: "7yPT5"
-				}), " "), Y._("Other redditors will see your username and prediction.", null, {
+				}), " "), $._("Other redditors will see your username and prediction.", null, {
 					hk: "TPwVV"
 				}))))
 			}))
@@ -2654,17 +2621,17 @@
 				return F
 			}));
 			var t = r("./src/lib/makeGqlRequest/index.ts"),
-				x = r("./src/graphql/operations/AddPredictionDrafts.json"),
-				k = r("./src/graphql/operations/CreatePredictionTournament.json"),
-				n = r("./src/graphql/operations/EndPredictionTournament.json"),
-				o = r("./src/graphql/operations/GetPredictionChipPackages.json"),
-				s = r("./src/graphql/operations/GetPredictionCoinPackages.json"),
-				e = r("./src/graphql/operations/GetPredictionToken.json"),
-				m = r("./src/graphql/operations/GetTournaments.json"),
-				l = r("./src/graphql/operations/ResolvePrediction.json"),
-				c = r("./src/graphql/operations/SubredditTopPredictors.json"),
-				p = r("./src/graphql/operations/UpdatePredictionTournament.json"),
-				h = r("./src/graphql/operations/VotePrediction.json");
+				x = r("./src/redditGQL/operations/AddPredictionDrafts.json"),
+				k = r("./src/redditGQL/operations/CreatePredictionTournament.json"),
+				n = r("./src/redditGQL/operations/EndPredictionTournament.json"),
+				o = r("./src/redditGQL/operations/GetPredictionChipPackages.json"),
+				s = r("./src/redditGQL/operations/GetPredictionCoinPackages.json"),
+				e = r("./src/redditGQL/operations/GetPredictionToken.json"),
+				m = r("./src/redditGQL/operations/GetTournaments.json"),
+				l = r("./src/redditGQL/operations/ResolvePrediction.json"),
+				c = r("./src/redditGQL/operations/SubredditTopPredictors.json"),
+				p = r("./src/redditGQL/operations/UpdatePredictionTournament.json"),
+				h = r("./src/redditGQL/operations/VotePrediction.json");
 			const d = (a, i, r) => Object(t.a)(a, {
 					...s,
 					variables: {
@@ -3591,7 +3558,40 @@
 					}
 					return !1
 				}
+		},
+		"./src/redditGQL/operations/AddPredictionDrafts.json": function(a) {
+			a.exports = JSON.parse('{"id":"84c24426ab00"}')
+		},
+		"./src/redditGQL/operations/CreatePredictionTournament.json": function(a) {
+			a.exports = JSON.parse('{"id":"b8bc80c247a6"}')
+		},
+		"./src/redditGQL/operations/EndPredictionTournament.json": function(a) {
+			a.exports = JSON.parse('{"id":"160c1d2839c1"}')
+		},
+		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(a) {
+			a.exports = JSON.parse('{"id":"3785e4a718f5"}')
+		},
+		"./src/redditGQL/operations/GetPredictionCoinPackages.json": function(a) {
+			a.exports = JSON.parse('{"id":"6829c428155b"}')
+		},
+		"./src/redditGQL/operations/GetPredictionToken.json": function(a) {
+			a.exports = JSON.parse('{"id":"26b911e67a5f"}')
+		},
+		"./src/redditGQL/operations/GetTournaments.json": function(a) {
+			a.exports = JSON.parse('{"id":"d2575383d168"}')
+		},
+		"./src/redditGQL/operations/ResolvePrediction.json": function(a) {
+			a.exports = JSON.parse('{"id":"45c2e0b86b90"}')
+		},
+		"./src/redditGQL/operations/SubredditTopPredictors.json": function(a) {
+			a.exports = JSON.parse('{"id":"3407d5f67207"}')
+		},
+		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(a) {
+			a.exports = JSON.parse('{"id":"aeb2b0e42e97"}')
+		},
+		"./src/redditGQL/operations/VotePrediction.json": function(a) {
+			a.exports = JSON.parse('{"id":"1712829dfb21"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ad99b96636ed27073896.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e358cd2aaedaf5e7e6c8.js.map

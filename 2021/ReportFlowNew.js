@@ -1,28 +1,13 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.7ea306834125e7a1e3bb.js
-// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.f4924dd8042b8cfe8bc4.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
-		"./src/graphql/operations/FetchBlockedRedditorsInfo.json": function(e) {
-			e.exports = JSON.parse('{"id":"1e9183c00f76"}')
-		},
-		"./src/graphql/operations/ReportComment.json": function(e) {
-			e.exports = JSON.parse('{"id":"cec8e7309a27"}')
-		},
-		"./src/graphql/operations/ReportForm.json": function(e) {
-			e.exports = JSON.parse('{"id":"404920cc0308"}')
-		},
-		"./src/graphql/operations/ReportLiveStream.json": function(e) {
-			e.exports = JSON.parse('{"id":"f401837d5e74"}')
-		},
-		"./src/graphql/operations/ReportPost.json": function(e) {
-			e.exports = JSON.parse('{"id":"08c43db238fd"}')
-		},
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
-				return a
-			})), o.d(t, "e", (function() {
 				return c
+			})), o.d(t, "e", (function() {
+				return a
 			})), o.d(t, "b", (function() {
 				return l
 			})), o.d(t, "c", (function() {
@@ -32,28 +17,28 @@
 			})), o.d(t, "f", (function() {
 				return m
 			})), o.d(t, "h", (function() {
-				return h
+				return b
 			})), o.d(t, "g", (function() {
 				return _
 			}));
 			var r = o("./src/lib/makeActionCreator/index.ts"),
-				s = o("./src/graphql/operations/FetchBlockedRedditorsInfo.json"),
-				n = o("./src/lib/makeGqlRequest/index.ts");
-			const i = (e, t) => Object(n.a)(e, {
-				...s,
+				s = o("./src/lib/makeGqlRequest/index.ts"),
+				n = o("./src/redditGQL/operations/FetchBlockedRedditorsInfo.json");
+			const i = (e, t) => Object(s.a)(e, {
+				...n,
 				variables: t
 			}, {
 				traceRequestName: "get_blocked_redditors_info"
 			});
 			var d = o("./src/reddit/selectors/blockedRedditors.ts");
-			const a = "BLOCKED_REDDITORS_LIST__ADD",
-				c = "BLOCKED_REDDITORS_LIST__REMOVE",
+			const c = "BLOCKED_REDDITORS_LIST__ADD",
+				a = "BLOCKED_REDDITORS_LIST__REMOVE",
 				l = "BLOCKED_REDDITORS_LIST__FAILED",
 				p = "BLOCKED_REDDITORS_LIST__LOADED",
 				u = "BLOCKED_REDDITORS_LIST__PENDING",
-				m = Object(r.a)(a),
-				h = Object(r.a)(c),
-				b = Object(r.a)(l),
+				m = Object(r.a)(c),
+				b = Object(r.a)(a),
+				h = Object(r.a)(l),
 				f = Object(r.a)(p),
 				O = Object(r.a)(u),
 				_ = () => async (e, t, {
@@ -63,11 +48,11 @@
 						s = Object(d.a)(r);
 					if (Object(d.b)(r) || s.timestamp && Date.now() - s.timestamp < 36e6) return;
 					let n = !1,
-						a = "";
+						c = "";
 					do {
 						e(O());
 						const t = {
-								after: a,
+								after: c,
 								pageSize: 100
 							},
 							r = await i(o(), t);
@@ -87,13 +72,13 @@
 										hasNextPage: e,
 										endCursor: t
 									} = o;
-									n = e, a = t || ""
+									n = e, c = t || ""
 								}
 							} else n = !1
 						} else {
 							n = !1;
 							const t = r.error ? r.error.type : "unknown error";
-							e(b({
+							e(h({
 								message: t
 							}))
 						}
@@ -131,21 +116,21 @@
 			})), o.d(t, "a", (function() {
 				return w
 			})), o.d(t, "g", (function() {
-				return g
+				return x
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
 				n = o("./src/reddit/actions/blockedRedditors.ts"),
 				i = o("./src/reddit/actions/toaster.ts"),
 				d = o("./src/reddit/endpoints/accounts/index.ts"),
-				a = o("./src/reddit/models/Toast/index.ts"),
-				c = o("./src/reddit/selectors/user.ts");
+				c = o("./src/reddit/models/Toast/index.ts"),
+				a = o("./src/reddit/selectors/user.ts");
 			const l = "USER_BLOCK__PENDING",
 				p = "USER_BLOCK__LOADED",
 				u = "USER_BLOCK__FAILED",
 				m = Object(s.a)(l),
-				h = Object(s.a)(p),
-				b = Object(s.a)(u),
+				b = Object(s.a)(p),
+				h = Object(s.a)(u),
 				f = e => async (t, o, {
 					apiContext: s
 				}) => {
@@ -153,22 +138,22 @@
 					t(m({
 						username: e
 					}));
-					const c = await Object(d.a)(s(), e),
+					const a = await Object(d.a)(s(), e),
 						l = `error-block-${e}`;
-					if (c.ok) c.body.name && t(h(c.body)), c.body.id && t(Object(n.f)(c.body.id)), t(i.g(l)), t(i.f({
-						kind: a.b.SuccessCommunity,
+					if (a.ok) a.body.name && t(b(a.body)), a.body.id && t(Object(n.f)(a.body.id)), t(i.g(l)), t(i.f({
+						kind: c.b.SuccessCommunity,
 						text: r.fbt._("{username} is now blocked", [r.fbt._param("username", e)], {
 							hk: "MI2y8"
 						})
 					}));
 					else {
 						const o = {
-							type: c.error ? c.error.type : "Unknown error",
+							type: a.error ? a.error.type : "Unknown error",
 							username: e
 						};
-						t(b(o)), t(i.f({
+						t(h(o)), t(i.f({
 							id: l,
-							kind: a.b.Error,
+							kind: c.b.Error,
 							text: r.fbt._("An error has occured. Please try again later", null, {
 								hk: "2FpsLy"
 							}),
@@ -178,11 +163,11 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), g = e => async (t, o, {
+				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), x = e => async (t, o, {
 					apiContext: s
 				}) => {
 					const l = o(),
-						p = Object(c.j)(l),
+						p = Object(a.j)(l),
 						u = p ? p.id : void 0,
 						m = l.user.blocked.data.filter(t => t.name === e)[0];
 					u && (t(C({
@@ -190,12 +175,12 @@
 					})), (await Object(d.c)(s(), u, e)).ok ? (t(R({
 						name: e
 					})), m && m.id && t(Object(n.h)(m.id)), t(i.f({
-						kind: a.b.SuccessCommunity,
+						kind: c.b.SuccessCommunity,
 						text: r.fbt._("{username} is now unblocked", [r.fbt._param("username", e)], {
 							hk: "4CEi6N"
 						})
 					}))) : (t(i.f({
-						kind: a.b.Error,
+						kind: c.b.Error,
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
@@ -269,45 +254,45 @@
 				n = o("./node_modules/lodash/get.js"),
 				i = o.n(n),
 				d = o("./node_modules/react/index.js"),
-				a = o.n(d),
-				c = o("./node_modules/react-redux/es/index.js"),
+				c = o.n(d),
+				a = o("./node_modules/react-redux/es/index.js"),
 				l = o("./node_modules/reselect/es/index.js"),
 				p = o("./src/reddit/actions/reportFlow/index.ts"),
 				u = o("./src/reddit/actions/toaster.ts"),
 				m = o("./src/reddit/components/CrisisFlow/index.tsx"),
-				h = o("./src/reddit/components/FormBuilder/async.tsx"),
-				b = o("./src/reddit/actions/userBlocks.ts"),
-				f = o("./src/graphql/operations/ReportComment.json"),
-				O = o("./src/lib/makeGqlRequest/index.ts");
-			const _ = (e, t) => Object(O.a)(e, {
-				...f,
+				b = o("./src/reddit/components/FormBuilder/async.tsx"),
+				h = o("./src/reddit/actions/userBlocks.ts"),
+				f = o("./src/lib/makeGqlRequest/index.ts"),
+				O = o("./src/redditGQL/operations/ReportComment.json");
+			const _ = (e, t) => Object(f.a)(e, {
+				...O,
 				variables: t
 			});
-			var w = o("./src/graphql/operations/ReportLiveStream.json");
-			const C = (e, t) => Object(O.a)(e, {
+			var w = o("./src/redditGQL/operations/ReportLiveStream.json");
+			const C = (e, t) => Object(f.a)(e, {
 				...w,
 				variables: t
 			});
 			var R = o("./src/reddit/endpoints/messages/index.ts"),
-				j = o("./src/graphql/operations/ReportPost.json");
-			const g = (e, t) => Object(O.a)(e, {
+				j = o("./src/redditGQL/operations/ReportPost.json");
+			const x = (e, t) => Object(f.a)(e, {
 				...j,
 				variables: t
 			});
-			var x = o("./src/graphql/operations/ReportForm.json");
-			var k = o("./src/reddit/contexts/ApiContext.tsx"),
-				y = o("./src/reddit/models/Post/index.ts"),
-				F = o("./src/reddit/models/Toast/index.ts"),
+			var k = o("./src/redditGQL/operations/ReportForm.json");
+			var y = o("./src/reddit/contexts/ApiContext.tsx"),
+				F = o("./src/reddit/models/Post/index.ts"),
+				g = o("./src/reddit/models/Toast/index.ts"),
 				v = o("./src/reddit/models/WhitelistAndBlocked.ts"),
 				I = o("./src/reddit/selectors/commentSelector.ts"),
-				E = o("./src/reddit/selectors/meta.ts"),
-				S = o("./src/reddit/selectors/posts.ts"),
-				L = o("./src/reddit/selectors/user.ts"),
+				L = o("./src/reddit/selectors/meta.ts"),
+				E = o("./src/reddit/selectors/posts.ts"),
+				S = o("./src/reddit/selectors/user.ts"),
 				A = o("./src/lib/lessComponent.tsx"),
-				q = o("./src/reddit/components/ReportFlow/index.m.less"),
-				D = o.n(q);
-			const N = A.a.div("ReportLoaderWrapper", D.a),
-				B = A.a.img("LoadingIcon", D.a),
+				D = o("./src/reddit/components/ReportFlow/index.m.less"),
+				N = o.n(D);
+			const B = A.a.div("ReportLoaderWrapper", N.a),
+				q = A.a.img("LoadingIcon", N.a),
 				P = "2.0";
 			var T;
 			! function(e) {
@@ -316,7 +301,7 @@
 			const U = Object(l.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(S.F)(e, {
+					}) => t ? Object(E.F)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -328,7 +313,7 @@
 						postId: t
 					}) => {
 						const o = t && e.posts.models[t];
-						return !!o && Object(y.o)(o)
+						return !!o && Object(F.o)(o)
 					},
 					blockUserPending: e => e.user.blocked.api,
 					blockedUser: (e, t) => e.user.blocked.data.find(o => {
@@ -337,40 +322,40 @@
 							postId: s
 						} = t, n = r ? Object(I.a)(e, {
 							commentId: r
-						}) : null, i = s ? Object(S.F)(e, {
+						}) : null, i = s ? Object(E.F)(e, {
 							postId: s
 						}) : null;
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: L.W,
-					locale: E.i
+					isNightmodeOn: S.W,
+					locale: L.i
 				}),
-				K = Object(c.b)(U, (e, {
+				K = Object(a.b)(U, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
 						e(Object(p.b)())
 					},
 					onBlockUser: t => {
-						e(Object(b.h)(t))
+						e(Object(h.h)(t))
 					},
 					showFailToast: () => e(Object(u.f)({
-						kind: F.b.Error,
+						kind: g.b.Error,
 						text: s.fbt._("Something went wrong!", null, {
 							hk: "1BEFhz"
 						})
 					}))
 				})),
-				M = async (e, t, o, r, s) => {
+				G = async (e, t, o, r, s) => {
 					var n;
 					const i = await ((e, {
 						itemId: t,
 						formVersion: o,
 						hostAppName: r,
 						locale: s
-					}) => Object(O.a)(e, {
-						...x,
+					}) => Object(f.a)(e, {
+						...k,
 						variables: {
 							itemId: t,
 							hostAppName: r,
@@ -388,7 +373,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class $ extends a.a.Component {
+			class M extends c.a.Component {
 				constructor(e) {
 					super(e), this.getItemMetadata = () => {
 						const {
@@ -434,8 +419,8 @@
 								timestamp: d
 							}
 						} = this, {
-							itemId: a,
-							itemType: c
+							itemId: c,
+							itemType: a
 						} = this.getItemMetadata();
 						if (!e) throw new Error("Report data not provided");
 						const {
@@ -455,49 +440,49 @@
 								const e = i()(t, l.ref);
 								"other" === e && u ? m.customRule = i()(t, u.ref) : m.subredditRule = e
 						}
-						let h;
-						switch (c) {
+						let b;
+						switch (a) {
 							case T.Post:
 								if (n && d) {
 									const e = {
-										postId: a,
+										postId: c,
 										relativeReportTimeSec: d,
 										...m
 									};
-									h = () => C(o(), {
+									b = () => C(o(), {
 										input: e
 									});
 									break
 								}
 								const e = {
-									postId: a,
+									postId: c,
 									...m
 								};
-								h = () => g(o(), {
+								b = () => x(o(), {
 									input: e
 								});
 								break;
 							case T.Comment:
 								const t = {
-									commentId: a,
+									commentId: c,
 									...m
 								};
-								h = () => _(o(), {
+								b = () => _(o(), {
 									input: t
 								});
 								break;
 							case T.Message:
 								const r = {
-									messageId: a,
+									messageId: c,
 									...m
 								};
-								h = () => Object(R.a)(o(), {
+								b = () => Object(R.a)(o(), {
 									input: r
 								});
 								break;
 							default:
 								throw new Error("Unsupported item type provided")
-						}(await h()).ok || r()
+						}(await b()).ok || r()
 					}, this.state = {
 						ctlFlowOpened: !1,
 						hasLoaded: !1
@@ -514,7 +499,7 @@
 						gqlContext: o,
 						hostAppName: r
 					} = this.props;
-					M(o(), e, P, r, t).then(e => {
+					G(o(), e, P, r, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -536,13 +521,13 @@
 					} = this, {
 						itemAuthor: d
 					} = this.getItemMetadata();
-					return n && d ? a.a.createElement(m.b, {
+					return n && d ? c.a.createElement(m.b, {
 						withOverlay: !0,
 						overlayCustomStyles: m.a,
 						fromUserProfile: !0,
 						username: d,
 						onCloseCrisisModal: this.handleReportFlowClose
-					}) : t && o && i ? a.a.createElement(h.a, {
+					}) : t && o && i ? c.a.createElement(b.a, {
 						formComponent: t,
 						formState: o,
 						onCloseClick: this.handleReportFlowClose,
@@ -553,13 +538,13 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => this.onBlockAuthor(d),
 						onResize: this.props.onResize
-					}) : a.a.createElement(N, null, a.a.createElement(B, {
+					}) : c.a.createElement(B, null, c.a.createElement(q, {
 						src: e ? `${r.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${r.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: "Loading"
 					}))
 				}
 			}
-			t.default = Object(k.b)(K($))
+			t.default = Object(y.b)(K(M))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -574,7 +559,7 @@
 			o.d(t, "a", (function() {
 				return d
 			})), o.d(t, "b", (function() {
-				return a
+				return c
 			}));
 			var r = o("./node_modules/react/index.js"),
 				s = o.n(r);
@@ -598,7 +583,7 @@
 				},
 				d = Object(r.createContext)(i);
 
-			function a(e) {
+			function c(e) {
 				const t = t => s.a.createElement(d.Consumer, null, ({
 					apiContext: o,
 					gqlContext: r
@@ -612,7 +597,7 @@
 		"./src/reddit/endpoints/accounts/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
-				return c
+				return a
 			})), o.d(t, "c", (function() {
 				return l
 			})), o.d(t, "e", (function() {
@@ -627,8 +612,8 @@
 				n = o("./src/lib/makeApiRequest/index.ts"),
 				i = o("./src/lib/omitHeaders/index.ts"),
 				d = o("./src/reddit/constants/headers.ts"),
-				a = o("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const c = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
+				c = o("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const a = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
@@ -655,7 +640,7 @@
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
 				method: s.hb.POST
 			}), m = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
-				endpoint: Object(a.a)(`${r.a.oauthUrl}/user/${t}/about`),
+				endpoint: Object(c.a)(`${r.a.oauthUrl}/user/${t}/about`),
 				method: s.hb.GET,
 				data: {
 					raw_json: 1
@@ -690,7 +675,22 @@
 					})(e);
 					return !!o && o.includes(t)
 				}
+		},
+		"./src/redditGQL/operations/FetchBlockedRedditorsInfo.json": function(e) {
+			e.exports = JSON.parse('{"id":"1e9183c00f76"}')
+		},
+		"./src/redditGQL/operations/ReportComment.json": function(e) {
+			e.exports = JSON.parse('{"id":"cec8e7309a27"}')
+		},
+		"./src/redditGQL/operations/ReportForm.json": function(e) {
+			e.exports = JSON.parse('{"id":"404920cc0308"}')
+		},
+		"./src/redditGQL/operations/ReportLiveStream.json": function(e) {
+			e.exports = JSON.parse('{"id":"f401837d5e74"}')
+		},
+		"./src/redditGQL/operations/ReportPost.json": function(e) {
+			e.exports = JSON.parse('{"id":"08c43db238fd"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.7ea306834125e7a1e3bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.f4924dd8042b8cfe8bc4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.08df377f164109085e3f.js
-// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.181947898d3b60bcc716.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -23,12 +23,6 @@
 			e.exports = function(e) {
 				return (r(e) ? s : a)(e)
 			}
-		},
-		"./src/graphql/operations/GetNearbySubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"26ddd553d11e"}')
-		},
-		"./src/graphql/operations/TopSubreddits.json": function(e) {
-			e.exports = JSON.parse('{"id":"bc611d08f6ef"}')
 		},
 		"./src/reddit/actions/subreddit/topSubreddits.ts": function(e, t, n) {
 			"use strict";
@@ -260,14 +254,14 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var B = P,
-				L = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
+			var L = P,
+				B = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				D = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				R = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				W = n("./node_modules/lodash/sampleSize.js"),
 				G = n.n(W),
-				q = n("./node_modules/request-idle-callback/index.js"),
-				U = n("./src/lib/constants/index.ts"),
+				U = n("./node_modules/request-idle-callback/index.js"),
+				q = n("./src/lib/constants/index.ts"),
 				M = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				Q = n("./src/reddit/constants/localStorage.ts"),
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
@@ -279,14 +273,14 @@
 				z = n("./src/reddit/constants/headers.ts");
 			const Y = e => Object(H.a)(Object(X.a)(e, [z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: U.hb.GET,
+				method: q.hb.GET,
 				type: "json"
 			});
 			var $ = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = n.n($);
 			const {
 				fbt: te
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, se = 30 * U.ib, ae = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, se = 30 * q.ib, ae = "SubredditAdoption";
 			class re extends c.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -305,7 +299,7 @@
 					return re.cachedData = e, e ? e.subreddits : []
 				}
 				componentDidMount() {
-					Object(q.requestIdleCallback)(async () => {
+					Object(U.requestIdleCallback)(async () => {
 						const e = await this.getSubredditForAdoption();
 						this.setState({
 							subredditNames: G()(e, ne)
@@ -624,8 +618,8 @@
 				url: "cryptocurrency"
 			}];
 			var Pe = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
-				Be = n.n(Pe);
-			const Le = () => {
+				Le = n.n(Pe);
+			const Be = () => {
 					const e = `${Oe.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = s.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
@@ -634,17 +628,17 @@
 							backgroundImage: `url(${e})`
 						};
 					return c.a.createElement("div", {
-						className: Be.a.banner,
+						className: Le.a.banner,
 						style: n
 					}, c.a.createElement("h2", {
-						className: Be.a.bannerText
+						className: Le.a.bannerText
 					}, t))
 				},
 				De = e => `/t/${e}?activeTab=communities`,
 				Re = e => {
 					const t = e.topic.getName();
 					return c.a.createElement("div", {
-						className: Be.a.itemContainer
+						className: Le.a.itemContainer
 					}, c.a.createElement(we.a, {
 						to: De(e.topic.url),
 						onClick: () => e.sendEvent(Object(Fe.c)(t))
@@ -662,8 +656,8 @@
 						noGradient: !0,
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
-					}, c.a.createElement(Le, null), c.a.createElement("div", {
-						className: Be.a.container
+					}, c.a.createElement(Be, null), c.a.createElement("div", {
+						className: Le.a.container
 					}, n.map(e => c.a.createElement(Re, {
 						key: e.url,
 						topic: e,
@@ -671,8 +665,8 @@
 					}))))
 				}),
 				Ge = n("./src/reddit/constants/experiments.ts"),
-				qe = n("./src/reddit/constants/subredditLeaderboard.ts"),
-				Ue = n("./src/reddit/constants/tracking.ts"),
+				Ue = n("./src/reddit/constants/subredditLeaderboard.ts"),
+				qe = n("./src/reddit/constants/tracking.ts"),
 				Me = n("./src/reddit/selectors/telemetry.ts"),
 				Qe = n("./src/reddit/selectors/widgets.ts"),
 				Je = n("./src/telemetry/models/Subreddit.ts");
@@ -680,14 +674,14 @@
 					...Me.defaults(n),
 					...Object(Qe.b)(n, e),
 					source: "trending_community_card",
-					action: Ue.c.CLICK,
+					action: qe.c.CLICK,
 					noun: Object(Je.getSubscribeEventNoun)(e.type, t)
 				}),
 				Ve = e => t => ({
 					...Me.defaults(t),
 					...Object(Qe.b)(t, e),
 					source: "trending_community_card",
-					action: Ue.c.CLICK,
+					action: qe.c.CLICK,
 					noun: "community"
 				});
 			var Ze = n("./src/reddit/models/GoodContent/index.ts"),
@@ -747,7 +741,7 @@
 						shouldShowLocalRecommendations: s
 					} = e;
 					let a, i, d, c, l;
-					n && t === Ge.s.RotateEven ? (a = qe.t, i = qe.m, d = qe.r, c = qe.a) : (a = qe.s, i = qe.i, d = qe.q, c = []), l = [a, ...c, ...d], s && l.unshift(i);
+					n && t === Ge.s.RotateEven ? (a = Ue.t, i = Ue.m, d = Ue.r, c = Ue.a) : (a = Ue.s, i = Ue.i, d = Ue.q, c = []), l = [a, ...c, ...d], s && l.unshift(i);
 					const u = l[r()(l.length - 1)];
 					l = [], u.id !== a.id && l.push(a), s && u.id !== i.id && l.push(i);
 					let m = [...c, ...d];
@@ -821,14 +815,14 @@
 						category: b,
 						first: 5,
 						isOver18: r,
-						shouldDisplayDelta: !this.props.isMod && b.id !== qe.k,
+						shouldDisplayDelta: !this.props.isMod && b.id !== Ue.k,
 						to: b.path
-					}), c.a.createElement(L.a, {
-						placement: U.c.ABOVE_THE_FOLD,
+					}), c.a.createElement(B.a, {
+						placement: q.c.ABOVE_THE_FOLD,
 						listingName: i,
 						removeSidebarSpacer: !h,
 						position: nt.a.FIRST,
-						sizes: U.h,
+						sizes: q.h,
 						placementIndex: e++
 					}), ct(this.props) && c.a.createElement(v, null), ot(this.props) && c.a.createElement(_.a, null, c.a.createElement(Te, {
 						getClickEventFactory: Ve,
@@ -841,14 +835,14 @@
 						})
 					})), u && c.a.createElement(_.a, null, c.a.createElement(We, null)), a && c.a.createElement(_.a, null, c.a.createElement(g.a, {
 						listingName: i
-					})), dt(this.props) && c.a.createElement(Ne, null), n && f && c.a.createElement(_.a, null, c.a.createElement(B, {
+					})), dt(this.props) && c.a.createElement(Ne, null), n && f && c.a.createElement(_.a, null, c.a.createElement(L, {
 						links: n
 					})), c.a.createElement(R.a, {
-						adComponent: c.a.createElement(L.a, {
-							placement: U.c.BELOW_THE_FOLD,
+						adComponent: c.a.createElement(B.a, {
+							placement: q.c.BELOW_THE_FOLD,
 							listingName: i,
 							position: nt.a.BOTTOM,
-							sizes: U.n,
+							sizes: q.n,
 							placementIndex: e++
 						})
 					}, a && c.a.createElement(ie, null)))
@@ -1859,19 +1853,19 @@
 		},
 		"./src/reddit/endpoints/subreddit/local.ts": function(e, t, n) {
 			"use strict";
-			var s = n("./src/graphql/operations/GetNearbySubreddits.json"),
-				a = n("./src/lib/makeGqlRequest/index.ts");
-			t.a = (e, t) => Object(a.a)(e, {
-				...s,
+			var s = n("./src/lib/makeGqlRequest/index.ts"),
+				a = n("./src/redditGQL/operations/GetNearbySubreddits.json");
+			t.a = (e, t) => Object(s.a)(e, {
+				...a,
 				variables: t
 			})
 		},
 		"./src/reddit/endpoints/subreddit/topSubreddits.ts": function(e, t, n) {
 			"use strict";
-			var s = n("./src/graphql/operations/TopSubreddits.json"),
-				a = n("./src/lib/makeGqlRequest/index.ts");
-			t.a = (e, t) => Object(a.a)(e, {
-				...s,
+			var s = n("./src/lib/makeGqlRequest/index.ts"),
+				a = n("./src/redditGQL/operations/TopSubreddits.json");
+			t.a = (e, t) => Object(s.a)(e, {
+				...a,
 				variables: t
 			})
 		},
@@ -2077,7 +2071,13 @@
 						r = n[o(s && s.id || null, t)];
 					return !(!r || !r.length)
 				}
+		},
+		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
+			e.exports = JSON.parse('{"id":"26ddd553d11e"}')
+		},
+		"./src/redditGQL/operations/TopSubreddits.json": function(e) {
+			e.exports = JSON.parse('{"id":"bc611d08f6ef"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.08df377f164109085e3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.181947898d3b60bcc716.js.map

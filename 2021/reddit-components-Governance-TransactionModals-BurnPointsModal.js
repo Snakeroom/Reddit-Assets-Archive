@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.8b5a5531a0cd568bc4e7.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.99135b381bb42c97cc5a.js
+// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, n) {
@@ -411,9 +411,6 @@
 				return r(e) + t
 			}
 		},
-		"./src/graphql/operations/PollVote.json": function(e) {
-			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
-		},
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -465,9 +462,9 @@
 				c = n("./src/reddit/actions/post.ts"),
 				o = n("./src/reddit/actions/toaster.ts"),
 				i = n("./src/config.ts"),
-				d = n("./src/graphql/operations/PollVote.json"),
-				u = n("./src/lib/makeGqlRequest/index.ts"),
-				m = n("./src/reddit/models/Poll/index.ts"),
+				d = n("./src/lib/makeGqlRequest/index.ts"),
+				u = n("./src/reddit/models/Poll/index.ts"),
+				m = n("./src/redditGQL/operations/PollVote.json"),
 				h = n("./src/reddit/endpoints/governance/requester.ts");
 			var p = n("./src/reddit/endpoints/governance/wallet.ts"),
 				f = n("./src/reddit/models/Toast/index.ts"),
@@ -497,8 +494,8 @@
 					let s, o = r().polls.models[e];
 					if (n(C({
 							pollId: e
-						})), (s = o.type === m.a.GA ? await ((e, t, n) => Object(u.a)(e, {
-								...d,
+						})), (s = o.type === u.a.GA ? await ((e, t, n) => Object(d.a)(e, {
+								...m,
 								variables: {
 									input: {
 										postId: t,
@@ -512,7 +509,7 @@
 									endpoint: `${i.a.metaUrl}/polls/${t}/${n}/votes/me/${r}`
 								})
 							}(a(), o.subredditId, e, t)).ok) {
-						if (o.type === m.a.GA) {
+						if (o.type === u.a.GA) {
 							const {
 								options: e
 							} = s.body.data.updatePostPollVoteState.poll;
@@ -523,7 +520,7 @@
 							}))
 						} else n(w(s.body));
 						const a = r();
-						if ((o = a.polls.models[e]) && Object(m.d)(o)) {
+						if ((o = a.polls.models[e]) && Object(u.d)(o)) {
 							const {
 								postId: e
 							} = o, t = a.posts.models[e];
@@ -2121,7 +2118,10 @@
 					return n && e.subreddits.gov.releaseNotes[n] || a
 				},
 				h = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
+		},
+		"./src/redditGQL/operations/PollVote.json": function(e) {
+			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.8b5a5531a0cd568bc4e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.99135b381bb42c97cc5a.js.map
