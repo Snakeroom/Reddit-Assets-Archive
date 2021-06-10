@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6983a179bafdb37baab0.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b830265cacb480386020.js
+// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -77,7 +77,7 @@
 				g = n("./src/reddit/selectors/category.ts"),
 				p = n("./src/reddit/selectors/subredditLeaderboard.ts"),
 				h = n("./src/reddit/selectors/user.ts");
-			const b = (e, t) => t && e === l.p,
+			const b = (e, t) => t && e === l.q,
 				f = e => async (t, n) => {
 					t(Object(a.k)({
 						actionSource: a.a.SubredditLeaderboard,
@@ -96,7 +96,7 @@
 					const i = e && Object(g.f)(r, {
 							categoryName: e
 						}),
-						c = e === l.l ? l.k : i && i.id || l.f,
+						c = e === l.m ? l.l : i && i.id || l.f,
 						u = ((e, t) => ({
 							categoryId: e,
 							filter: m.a,
@@ -127,7 +127,7 @@
 					gqlContext: s
 				}) => {
 					n(c());
-					const h = t === a.k ? async function() {
+					const h = t === a.l ? async function() {
 						const t = await Object(i.a)(s(), e);
 						if (!t.ok) {
 							const e = t.error;
@@ -725,7 +725,7 @@
 						category: e,
 						first: t
 					} = this.props, n = e && e.id;
-					if (n !== o.k)(n || n === o.f) && h(this.props.gqlContext(), {
+					if (n !== o.l)(n || n === o.f) && h(this.props.gqlContext(), {
 						categoryId: n,
 						filter: g.a,
 						first: t
@@ -759,7 +759,7 @@
 						} = e;
 						this.setState(e => ({
 							...e,
-							[o.l]: {
+							[o.m]: {
 								rankings: n,
 								subreddits: r
 							}
@@ -940,7 +940,7 @@
 						s = e.bannerBackgroundImage && e.shouldDisplayBannerImg ? {
 							backgroundImage: `url(${e.bannerBackgroundImage})`
 						} : void 0,
-						a = e.categoryName === b.l && b.i.path ? b.i.path : b.g;
+						a = e.categoryName === b.m && b.j.path ? b.j.path : b.g;
 					return c.a.createElement("div", {
 						className: Object(m.a)(e.className, C.a.communityBanner, n),
 						style: s
@@ -949,7 +949,7 @@
 					}, c.a.createElement(l.a, {
 						onMouseDown: () => e.onSendEventClick("banner", e.categoryName || b.e),
 						to: a
-					}, e.categoryName ? ((e, t) => e === b.l ? r.fbt._("Communities Near You", null, {
+					}, e.categoryName ? ((e, t) => e === b.m ? r.fbt._("Communities Near You", null, {
 						hk: "ZMVOK"
 					}) : r.fbt._("Top {categoryName} Communities", [r.fbt._param("categoryName", c.a.createElement("span", {
 						className: C.a.categoryName
@@ -1043,8 +1043,8 @@
 					className: e.hasTagline ? C.a.taglineChip : C.a.chip,
 					key: t.name,
 					to: j(t.name, t.path),
-					wide: t.name === b.l
-				}, t.name ? t.name === b.l ? b.j : t.displayText || t.name : r.fbt._("Top", null, {
+					wide: t.name === b.m
+				}, t.name ? t.name === b.m ? b.k : t.displayText || t.name : r.fbt._("Top", null, {
 					hk: "2rw7Gx"
 				})))))
 			};
@@ -1251,36 +1251,38 @@
 				return o
 			})), n.d(t, "e", (function() {
 				return d
-			})), n.d(t, "o", (function() {
-				return c
 			})), n.d(t, "p", (function() {
+				return c
+			})), n.d(t, "q", (function() {
 				return l
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return u
-			})), n.d(t, "k", (function() {
-				return m
 			})), n.d(t, "l", (function() {
+				return m
+			})), n.d(t, "m", (function() {
 				return g
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return p
 			})), n.d(t, "g", (function() {
 				return h
-			})), n.d(t, "s", (function() {
-				return b
-			})), n.d(t, "i", (function() {
-				return f
-			})), n.d(t, "q", (function() {
-				return y
 			})), n.d(t, "t", (function() {
-				return k
-			})), n.d(t, "m", (function() {
-				return _
+				return b
+			})), n.d(t, "j", (function() {
+				return f
 			})), n.d(t, "r", (function() {
+				return y
+			})), n.d(t, "u", (function() {
+				return k
+			})), n.d(t, "n", (function() {
+				return _
+			})), n.d(t, "s", (function() {
 				return E
-			})), n.d(t, "a", (function() {
-				return x
 			})), n.d(t, "h", (function() {
+				return x
+			})), n.d(t, "a", (function() {
 				return C
+			})), n.d(t, "i", (function() {
+				return S
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js");
 			const s = "DEFAULT",
@@ -1410,6 +1412,14 @@
 					gradients: ["#F3B54F", "#EC5428"]
 				}],
 				x = [{
+					name: "E3",
+					displayText: r.fbt._("E3", null, {
+						hk: "3oJuEH"
+					}),
+					id: "c1034",
+					path: `${h}moment/`
+				}],
+				C = [{
 					name: "Beauty",
 					displayText: r.fbt._("Beauty", null, {
 						hk: "4mzjuL"
@@ -1482,7 +1492,7 @@
 					}),
 					gradients: ["#F08C3A", "#D72E33"]
 				}],
-				C = ["Sports", "Gaming", "News", "TV", "Aww", "Memes", "Pics & Gifs", "Travel", "Tech", "Music"]
+				S = ["Sports", "Gaming", "News", "TV", "Aww", "Memes", "Pics & Gifs", "Travel", "Tech", "Music"]
 		},
 		"./src/reddit/controls/Chip/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1969,7 +1979,7 @@
 						isMod: r,
 						rankings: s,
 						categoryDisplayText: a
-					} = this.props, o = t || n, d = e === g.l, c = r && !d;
+					} = this.props, o = t || n, d = e === g.m, c = r && !d;
 					return i.a.createElement("div", {
 						className: x.a.mainContent
 					}, i.a.createElement("div", {
@@ -1998,12 +2008,12 @@
 				}
 			}
 			var J = Object(u.c)(H(Q)),
-				z = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				K = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				U = n.n(K);
+				q = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				z = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				K = n.n(z);
 
-			function V() {
-				return (V = Object.assign || function(e) {
+			function U() {
+				return (U = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2011,15 +2021,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const q = e => {
+			const V = e => {
 				const {
 					category: t,
 					children: n,
 					className: r,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(z.a, V({}, t.anchorProps, {
+				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
+				return i.a.createElement("li", null, i.a.createElement(q.a, U({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2072,24 +2082,24 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && n * d, p = a + (e ? n * e.length : 0), h = Object(c.a)(U.a.categoryList, u && U.a.expanded), b = e => !(!o || o !== Object(X.g)(e)), f = i.a.createElement("ul", {
+					} = this.state, m = !u && d && n * d, p = a + (e ? n * e.length : 0), h = Object(c.a)(K.a.categoryList, u && K.a.expanded), b = e => !(!o || o !== Object(X.g)(e)), f = i.a.createElement("ul", {
 						className: h,
 						style: {
 							height: m || p
 						}
 					}, s, e && e.map((e, r) => {
 						const s = a + r * n;
-						return i.a.createElement(q, {
+						return i.a.createElement(V, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
 							key: e.id,
 							onSendEventClick: l,
 							tabIndex: m && s >= m ? -1 : 0
-						}, e.name === g.l ? g.j : e.displayText || e.name)
+						}, e.name === g.m ? g.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(U.a.categoryListContainer, r)
+						className: Object(c.a)(K.a.categoryListContainer, r)
 					}, f)
 				}
 				render() {
@@ -2100,16 +2110,16 @@
 						header: r,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, U.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, K.a.container);
 					return i.a.createElement(Z.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(U.a.header, s)
+						className: Object(c.a)(K.a.header, s)
 					}, i.a.createElement("h2", null, r || $._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(Y.o, {
-						className: Object(c.a)(U.a.button, e),
+						className: Object(c.a)(K.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? $._("Show More", null, {
 						hk: "1pCiqD"
@@ -2181,14 +2191,14 @@
 				ke = (e, {
 					match: t
 				}) => Object(h.b)(t.params.categoryName || ""),
-				_e = Object(m.Ld)(g.h),
+				_e = Object(m.Nd)(g.i),
 				Ee = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: _e
 					}),
 					categoryId: (e, t) => {
 						const n = ke(0, t);
-						return n === g.l ? g.k : n ? Object(be.g)(e, {
+						return n === g.m ? g.l : n ? Object(be.g)(e, {
 							categoryName: n
 						}) : g.c
 					},
@@ -2205,9 +2215,9 @@
 				},
 				Se = {
 					customIcon: i.a.createElement(y.a, null),
-					id: g.o,
-					name: g.p,
-					displayText: g.n
+					id: g.p,
+					name: g.q,
+					displayText: g.o
 				};
 			class ve extends i.a.Component {
 				constructor(e) {
@@ -2246,12 +2256,12 @@
 						className: t,
 						isMod: n,
 						shouldShowLocalRecommendations: r
-					} = this.props, s = [Ce, ...r ? [g.i] : [], ...this.props.categories];
+					} = this.props, s = [Ce, ...r ? [g.j] : [], ...this.props.categories];
 					n && s.unshift(Se);
 					const a = Object(h.a)(g.g, s),
-						o = n && this.props.categoryName === g.p,
-						d = this.props.categoryId ? this.props.categoryName : o ? g.p : void 0,
-						u = this.props.categoryId ? this.props.categoryId : o ? g.o : g.c,
+						o = n && this.props.categoryName === g.q,
+						d = this.props.categoryId ? this.props.categoryName : o ? g.q : void 0,
+						u = this.props.categoryId ? this.props.categoryId : o ? g.p : g.c,
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, x.a.mainContent),
@@ -2292,7 +2302,7 @@
 				s = n("./src/reddit/selectors/category.ts");
 			const a = (e, t) => e.subreddits.rankingsPageInfo && e.subreddits.rankingsPageInfo[t] && e.subreddits.rankingsPageInfo[t].hasPreviousPage,
 				i = (e, t) => e.subreddits.rankingsPageInfo && e.subreddits.rankingsPageInfo[t] && e.subreddits.rankingsPageInfo[t].hasNextPage,
-				o = (e, t) => t === r.p ? r.o : t === r.l ? r.k : e || r.c,
+				o = (e, t) => t === r.q ? r.p : t === r.m ? r.l : e || r.c,
 				d = (e, t) => {
 					const n = e.subreddits.rankings,
 						r = t && Object(s.f)(e, {
@@ -2310,4 +2320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.6983a179bafdb37baab0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b830265cacb480386020.js.map

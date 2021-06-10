@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.20038c621329f97d9bcc.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.33ee5277c26caaea31aa.js
+// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -23,7 +23,7 @@
 			})), s.d(t, "f", (function() {
 				return $
 			})), s.d(t, "o", (function() {
-				return V
+				return M
 			})), s.d(t, "p", (function() {
 				return Q
 			})), s.d(t, "d", (function() {
@@ -31,9 +31,9 @@
 			})), s.d(t, "a", (function() {
 				return G
 			})), s.d(t, "b", (function() {
-				return J
-			})), s.d(t, "n", (function() {
 				return q
+			})), s.d(t, "n", (function() {
+				return J
 			})), s.d(t, "c", (function() {
 				return Y
 			})), s.d(t, "k", (function() {
@@ -169,7 +169,7 @@
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), K = Object(d.a)(k.j), $ = Object(d.a)(k.i), H = Object(d.a)(k.e), M = Object(d.a)(k.f), V = (Object(d.a)(k.c), Object(d.a)(k.d), ({
+				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), K = Object(d.a)(k.j), $ = Object(d.a)(k.i), V = Object(d.a)(k.e), H = Object(d.a)(k.f), M = (Object(d.a)(k.c), Object(d.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -185,7 +185,7 @@
 							commentsPageKey: t
 						}),
 						a = c.depth;
-					n(H({
+					n(V({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -194,7 +194,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(M({
+					s(H({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -210,14 +210,14 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o(H({
+					o(V({
 						commentId: c,
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && n(c, !0), Object(p.d)()
 				}, X = Object(d.a)(k.r), G = e => t => t(X({
 					draftKey: e
-				})), J = Object(d.a)(k.a), q = Object(d.a)(k.E), Y = Object(d.a)(k.b), W = Object(d.a)(k.u)
+				})), q = Object(d.a)(k.a), J = Object(d.a)(k.E), Y = Object(d.a)(k.b), W = Object(d.a)(k.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -1059,14 +1059,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Jc
-					}) === n.Tc.Enabled
+						experimentName: n.Lc
+					}) === n.Vc.Enabled
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Ic
-					}) === n.Sc.Enabled
+						experimentName: n.Kc
+					}) === n.Uc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1101,4 +1101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.20038c621329f97d9bcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.33ee5277c26caaea31aa.js.map

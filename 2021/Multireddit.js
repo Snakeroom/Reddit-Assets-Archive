@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.745d5b65975241a1c5d9.js
-// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.d9ba2a7f9c37c08eb9c3.js
+// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1745,7 +1745,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => s === u.ud.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => s === u.wd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: i,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -5558,12 +5558,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.xd.SmIcon:
+						case b.zd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.xd.SmIconHc:
+						case b.zd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6373,15 +6373,15 @@
 				r = s("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.vd.Add:
+					case r.xd.Add:
 						return n.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.vd.Start:
+					case r.xd.Start:
 						return n.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.vd.Create:
+					case r.xd.Create:
 						return n.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -7563,7 +7563,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: n.zb
 					});
-					return !(!t || Object(n.Nd)(t))
+					return !(!t || Object(n.Pd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -7590,21 +7590,21 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const c = e => Object(a.J)(e) || Object(a.K)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.xc,
+					experimentName: r.zc,
 					experimentEligibilitySelector: c
 				}), i.a),
-				l = Object(n.a)(d, e => e === r.Cc.Enabled),
+				l = Object(n.a)(d, e => e === r.Ec.Enabled),
 				u = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.wc,
+					experimentName: r.yc,
 					experimentEligibilitySelector: c
 				}), i.a),
-				m = Object(n.a)(u, e => e === r.Ac.Enabled),
+				m = Object(n.a)(u, e => e === r.Cc.Enabled),
 				p = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.ld,
+					experimentName: r.nd,
 					experimentEligibilitySelector: c
 				}), i.a),
 				h = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: r.md,
+					experimentName: r.od,
 					experimentEligibilitySelector: c
 				}), i.a)
 		},
@@ -7735,12 +7735,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.pd
+						experimentName: n.rd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.xd.SmIcon || t === n.xd.SmIconHc
+					return t === n.zd.SmIcon || t === n.zd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7769,4 +7769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.745d5b65975241a1c5d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.d9ba2a7f9c37c08eb9c3.js.map

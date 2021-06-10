@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.8589c5dd2663b446dab0.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e91ca8de19de8f308785.js
+// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -107,7 +107,7 @@
 					}),
 					raterTag: b(e, t)
 				}),
-				x = (e, t, n) => r => ({
+				_ = (e, t, n) => r => ({
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
@@ -116,7 +116,7 @@
 					}),
 					raterTag: b(e, t)
 				}),
-				_ = (e, t) => n => ({
+				x = (e, t) => n => ({
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
@@ -192,7 +192,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(B.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: N.xd.SmIconHc,
+					userVariant: N.zd.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -315,7 +315,7 @@
 							subredditId: n,
 							questionId: e
 						}
-					}), u(_(O, n)), y(!0), I({
+					}), u(x(O, n)), y(!0), I({
 						type: S.e,
 						payload: {}
 					})
@@ -333,7 +333,7 @@
 							subredditId: n,
 							questionId: e
 						}
-					}), u(x(O, t, n)), I(Object(c.f)({
+					}), u(_(O, t, n)), I(Object(c.f)({
 						text: r.fbt._("Thank you for your help!", null, {
 							hk: "1asBUQ"
 						}),
@@ -510,9 +510,9 @@
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "j", (function() {
-				return x
-			})), n.d(t, "g", (function() {
 				return _
+			})), n.d(t, "g", (function() {
+				return x
 			})), n.d(t, "v", (function() {
 				return h
 			})), n.d(t, "i", (function() {
@@ -570,8 +570,8 @@
 				b = c.a.code("M", d.a),
 				p = c.a.pre("Pre", d.a),
 				f = c.a.blockquote("Blockquote", d.a),
-				x = c.a.p("P", d.a),
-				_ = c.a.li("Li", d.a),
+				_ = c.a.p("P", d.a),
+				x = c.a.li("Li", d.a),
 				h = c.a.ul("Ul", d.a),
 				g = c.a.ol("Ol", d.a),
 				v = c.a.strong("B", d.a),
@@ -631,9 +631,9 @@
 		"./src/reddit/components/StructuredStyles/StyledComponents/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "g", (function() {
 				return _
+			})), n.d(t, "g", (function() {
+				return x
 			})), n.d(t, "a", (function() {
 				return h
 			})), n.d(t, "f", (function() {
@@ -677,8 +677,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = i.a.wrapped(m.a, "CloseIcon", p.a),
-				_ = i.a.wrapped(l.a, "ThemedChevron", p.a),
+			const _ = i.a.wrapped(m.a, "CloseIcon", p.a),
+				x = i.a.wrapped(l.a, "ThemedChevron", p.a),
 				h = i.a.wrapped(d.i, "Button", p.a),
 				g = i.a.wrapped(d.o, "TertiaryButton", p.a),
 				v = i.a.div("SubFormTitle", p.a),
@@ -768,8 +768,8 @@
 				}),
 				p = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = n("./src/reddit/constants/experiments.ts"),
-				x = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
-				_ = n("./src/reddit/selectors/subredditMention.ts");
+				_ = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				x = n("./src/reddit/selectors/subredditMention.ts");
 			class h extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleOnClick = () => {
@@ -778,7 +778,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(x.a)({
+						t(Object(_.a)({
 							...e,
 							subredditName: n
 						}))
@@ -796,9 +796,9 @@
 			}
 			const g = Object(p.c)(h),
 				v = Object(i.c)({
-					isFeatureFlagEnabled: _.b,
-					isUserInTreatment: _.e,
-					userVariant: _.a
+					isFeatureFlagEnabled: x.b,
+					isUserInTreatment: x.e,
+					userVariant: x.a
 				}),
 				E = Object(o.b)(v),
 				S = ({
@@ -813,12 +813,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case f.xd.SmIcon:
+						case f.zd.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case f.xd.SmIconHc:
+						case f.zd.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -962,7 +962,7 @@
 				}) => {
 					if (t && (Object(d.b)(t) || Object(c.b)(t))) return Object(d.b)(t) ? m.SourceElement.Comment : Object(i.w)(n) ? m.SourceElement.PostDetail : Object(i.E)(n) ? m.SourceElement.ListingPostDetail : void 0
 				},
-				x = (e, t) => {
+				_ = (e, t) => {
 					const {
 						renderingObjectInfo: n,
 						subredditName: r
@@ -992,7 +992,7 @@
 						}
 					}
 				},
-				_ = (e, t) => {
+				x = (e, t) => {
 					const {
 						renderingObjectInfo: n
 					} = t;
@@ -1001,12 +1001,12 @@
 					return {
 						post: l.post(e, n.id),
 						subreddit: l.subredditById(e, r),
-						...x(e, t)
+						..._(e, t)
 					}
 				},
 				h = e => t => ({
 					...b(t),
-					..._(t, e)
+					...x(t, e)
 				}),
 				g = e => t => ({
 					...p(t),
@@ -1120,12 +1120,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.pd
+						experimentName: r.rd
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.xd.SmIcon || t === r.xd.SmIconHc
+					return t === r.zd.SmIcon || t === r.zd.SmIconHc
 				},
 				u = (e, {
 					subredditName: t
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.8589c5dd2663b446dab0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e91ca8de19de8f308785.js.map

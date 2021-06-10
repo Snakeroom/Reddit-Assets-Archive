@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f0458d0126e011cce956.js
-// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.727d7049a97d7609d880.js
+// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -134,8 +134,8 @@
 				x = n("./src/reddit/components/RawHTMLDisplay/index.tsx"),
 				S = n("./src/reddit/components/RichTextJson/index.tsx"),
 				C = n("./node_modules/lodash/flatMap.js"),
-				B = n.n(C),
-				w = n("./src/lib/linkMatchers/index.ts"),
+				w = n.n(C),
+				B = n("./src/lib/linkMatchers/index.ts"),
 				L = n("./src/lib/linkMatchers/customLinks.ts"),
 				R = n("./src/reddit/controls/OutboundLink/index.tsx");
 			const j = /\[(.+?)\]\((.+?)\)/g,
@@ -151,8 +151,8 @@
 				};
 			var P = o.a.memo(e => {
 					let t = [e.text];
-					return e.parseMdLinks && (t = B()(t, T)), e.parseRegularLinks && (t = B()(t, e => Array.isArray(e) ? [e] : (e => {
-						const t = w.f.add(L.g.subreddit.prefix, L.g.subreddit.config).match(e);
+					return e.parseMdLinks && (t = w()(t, T)), e.parseRegularLinks && (t = w()(t, e => Array.isArray(e) ? [e] : (e => {
+						const t = B.f.add(L.g.subreddit.prefix, L.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
 						let r = null;
@@ -547,7 +547,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || u,
-				onClick: () => n === d.ud.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
+				onClick: () => n === d.wd.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
 				onMouseEnter: s,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -583,4 +583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f0458d0126e011cce956.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.727d7049a97d7609d880.js.map

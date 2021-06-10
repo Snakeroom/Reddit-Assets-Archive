@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.b54910c7de85ff73927a.js
-// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.13d9bac3024e092b6922.js
+// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.sc
+					experimentName: u.uc
 				});
-				return Object(u.Nd)(t) ? void 0 : t
+				return Object(u.Pd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.tc
+					experimentName: u.vc
 				});
-				return Object(u.Nd)(t) ? void 0 : t
-			}, (e, t) => e === u.uc.Enabled && t === u.uc.Enabled);
+				return Object(u.Pd)(t) ? void 0 : t
+			}, (e, t) => e === u.wc.Enabled && t === u.wc.Enabled);
 			var h = r("./src/config.ts");
 			var b = r("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -620,9 +620,9 @@
 				Object(s.useEffect)(() => (void 0 !== w && w !== r && T.current(r - w), () => {
 					clearTimeout(A.current), clearTimeout(R.current), clearTimeout(I.current)
 				}), [r]);
-				const N = Object(s.useCallback)(() => g(!0), [g]),
-					D = 0 === _.length,
-					L = E || D;
+				const D = Object(s.useCallback)(() => g(!0), [g]),
+					N = 0 === _.length,
+					L = E || N;
 				return n.a.createElement("div", {
 					className: l.a.countAnimation,
 					ref: y
@@ -633,7 +633,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: N,
+						onTransitionEnd: D,
 						style: b && _.length > 0 && !E ? {
 							transform: `translateY(-${p&&s.length>1?100:100*(s.length-1)}%)`,
 							transitionDuration: `${(p?o.b.disjointAnimationDuration:o.b.animationIncrementDuration)/1e3}s`
@@ -1294,8 +1294,8 @@
 				R = r("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				j = r("./src/reddit/selectors/user.ts"),
 				w = r("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				N = r("./src/reddit/components/Flatlist/index.tsx"),
-				D = r("./src/reddit/components/Flatlist/constants.ts"),
+				D = r("./src/reddit/components/Flatlist/index.tsx"),
+				N = r("./src/reddit/components/Flatlist/constants.ts"),
 				L = r("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				P = r("./src/reddit/components/HlsVideo/index.tsx"),
 				k = r("./src/reddit/components/OverflowMenu/index.tsx"),
@@ -1586,7 +1586,7 @@
 						className: z.a.flatListContainer
 					}, n.a.createElement(ie, {
 						onClick: this.onHeaderClicked
-					}), n.a.createElement(N.a, {
+					}), n.a.createElement(D.a, {
 						className: z.a.flatlistSeparator
 					}), n.a.createElement("div", null, n.a.createElement(ae, {
 						onClick: this.onHideUnitClicked
@@ -1779,7 +1779,7 @@
 					displayText: q._("Show me less of this", null, {
 						hk: "4t8AKC"
 					}),
-					flatlistItem: D.a.Hide,
+					flatlistItem: N.a.Hide,
 					isLoggedIn: !!t,
 					isUserOp: !1,
 					onClick: e,
@@ -2014,10 +2014,10 @@
 				} = p.b,
 				j = () => c()(y, T),
 				w = () => c()(I, x),
-				N = Object(u.b)(e => ({
+				D = Object(u.b)(e => ({
 					locale: Object(v.i)(e)
 				})),
-				D = Object(i.a)(e => {
+				N = Object(i.a)(e => {
 					const t = {
 							color: e.light ? b.b.lightboxHeaderText : C(e)
 						},
@@ -2051,7 +2051,7 @@
 						id: v.current
 					}))
 				});
-			t.a = N(D)
+			t.a = D(N)
 		},
 		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, r) {
 			"use strict";
@@ -2294,9 +2294,9 @@
 			})), r.d(t, "typeMessageInputEvent", (function() {
 				return w
 			})), r.d(t, "clickLearnMoreLinkEvent", (function() {
-				return N
-			})), r.d(t, "clickQuestionMarkEvent", (function() {
 				return D
+			})), r.d(t, "clickQuestionMarkEvent", (function() {
+				return N
 			})), r.d(t, "clickConfirmAwardEvent", (function() {
 				return L
 			})), r.d(t, "clickGetPremiumEvent", (function() {
@@ -2429,13 +2429,13 @@
 					action: "type",
 					noun: "message_input"
 				}),
-				N = e => t => ({
+				D = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "learn_more"
 				}),
-				D = e => t => ({
+				N = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3703,4 +3703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b54910c7de85ff73927a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.13d9bac3024e092b6922.js.map

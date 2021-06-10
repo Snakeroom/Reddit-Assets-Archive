@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.08f218c7f5e48d4ccd1c.js
-// Retrieved at 6/10/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a3d516b93d462ebfb277.js
+// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2437,7 +2437,7 @@
 						postId: Ce,
 						postIds: Se,
 						onceInViewport: Te
-					} = e, Ne = !!e.redditStyle || !!e["data-redditstyle"], Ie = Ne ? void 0 : f, Me = Object(l.a)(ue), Ae = pe && Me, Be = Object(c.a)(ue), Fe = Object(d.a)(ue), Le = Object(V.c)(xe), Re = !!xe.media && xe.media.type === g.o.RTJSON, De = _e && Re, We = n ? n - z.a : void 0, Ve = !(C && G || re), He = (e => e === ne.Nc.OnlyTitles)(ye) && !Object(ie.a)(xe), Ue = (e => e === ne.Nc.MediumHeight)(ye) && !Object(ie.a)(xe), ze = (e => {
+					} = e, Ne = !!e.redditStyle || !!e["data-redditstyle"], Ie = Ne ? void 0 : f, Me = Object(l.a)(ue), Ae = pe && Me, Be = Object(c.a)(ue), Fe = Object(d.a)(ue), Le = Object(V.c)(xe), Re = !!xe.media && xe.media.type === g.o.RTJSON, De = _e && Re, We = n ? n - z.a : void 0, Ve = !(C && G || re), He = (e => e === ne.Pc.OnlyTitles)(ye) && !Object(ie.a)(xe), Ue = (e => e === ne.Pc.MediumHeight)(ye) && !Object(ie.a)(xe), ze = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2452,7 +2452,7 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), qe = !!ce && !Object(ne.Nd)(ce), Ke = (!P || qe) && !xe.isSponsored, Xe = Object(S.t)(xe, k), {
+					})(e), qe = !!ce && !Object(ne.Pd)(ce), Ke = (!P || qe) && !xe.isSponsored, Xe = Object(S.t)(xe, k), {
 						source: Ge
 					} = Xe, Je = Object(o.useRef)(null), Ye = Object(o.useCallback)(e => {
 						e.forEach(e => {
@@ -3678,9 +3678,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.rb
 				});
-				return !(!t || Object(o.Nd)(t))
+				return !(!t || Object(o.Pd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.08f218c7f5e48d4ccd1c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a3d516b93d462ebfb277.js.map
