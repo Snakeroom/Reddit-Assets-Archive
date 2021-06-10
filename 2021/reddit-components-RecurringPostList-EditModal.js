@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.31c9be24758f3512e678.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.df6552947f08c033108f.js
+// Retrieved at 6/10/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-RecurringPostList-EditModal"], {
 		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, n) {
@@ -398,6 +398,7 @@
 		"./src/reddit/components/RecurringPostList/EditModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
@@ -563,9 +564,14 @@
 						return n !== e.submitDate && (t.submitDate = n, t.timezoneName = this.state.timezoneName), this.state.timezoneName !== e.timezoneName && (t.timezoneName = this.state.timezoneName), this.state.frequencyOption !== e.frequencyOption && (t.frequencyOption = this.state.frequencyOption), Object(M.g)(this.state.recurrenceInfo, e.recurrenceInfo) || (t.recurrenceInfo = this.state.recurrenceInfo ? {
 							...this.state.recurrenceInfo
 						} : null), t
-					}, this.onFrequencyOptionChange = Object(z.i)(this), this.onCustomFrequencyChange = Object(z.e)(this), this.onCustomIntervalChange = Object(z.f)(this), this.onCustomWeekDaysChange = Object(z.h)(this), this.onCustomMonthDaysChange = Object(z.g)(this), this.getValidationError = () => this.state.frequencyOption ? null : V._("Must configure recurrence rules for a recurring post", null, {
-						hk: "3yv6f5"
-					}), this.onUpdate = () => {
+					}, this.onFrequencyOptionChange = Object(z.i)(this), this.onCustomFrequencyChange = Object(z.e)(this), this.onCustomIntervalChange = Object(z.f)(this), this.onCustomWeekDaysChange = Object(z.h)(this), this.onCustomMonthDaysChange = Object(z.g)(this), this.getValidationError = () => {
+						var e;
+						return this.state.frequencyOption ? (null === (e = this.props.scheduledPost) || void 0 === e ? void 0 : e.state) === N.e.FAILED && 0 === Object.keys(this.buildPostSchedule()).length ? V._("Must update submission rules for a failed recurring post", null, {
+							hk: "1shqbP"
+						}) : null : V._("Must configure recurrence rules for a recurring post", null, {
+							hk: "3yv6f5"
+						})
+					}, this.onUpdate = () => {
 						this.isSaving = !0, this.props.updatePostRequested(this.buildPostSchedule())
 					}, this.onCancel = () => {
 						this.props.sendEvent(Object(H.a)()), this.props.closeModal()
@@ -1288,4 +1294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.31c9be24758f3512e678.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-RecurringPostList-EditModal.df6552947f08c033108f.js.map
