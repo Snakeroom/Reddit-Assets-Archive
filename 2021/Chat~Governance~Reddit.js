@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8a5caa884fbd1d6d331c.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.346425588aeda4823813.js
+// Retrieved at 6/10/2021, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -399,7 +399,7 @@
 					} = t,
 					n = i && i.id || "unknown";
 				_ = Object(s.c)(o.o.CHAT, o.w.CHAT_THEME_KEY, n), p = Object(s.c)(o.o.CHAT, o.w.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown");
-				const r = Object(u.g)(t);
+				const r = Object(u.h)(t);
 				return e => t => {
 					const i = e(t);
 					switch (t.type) {
@@ -1680,63 +1680,65 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "j", (function() {
+			i.d(t, "k", (function() {
 				return s
-			})), i.d(t, "f", (function() {
-				return d
+			})), i.d(t, "g", (function() {
+				return o
 			})), i.d(t, "a", (function() {
-				return l
-			})), i.d(t, "d", (function() {
-				return c
-			})), i.d(t, "i", (function() {
-				return u
+				return a
 			})), i.d(t, "e", (function() {
+				return l
+			})), i.d(t, "j", (function() {
+				return c
+			})), i.d(t, "f", (function() {
+				return u
+			})), i.d(t, "i", (function() {
 				return _
 			})), i.d(t, "h", (function() {
 				return p
-			})), i.d(t, "g", (function() {
-				return m
 			})), i.d(t, "c", (function() {
-				return h
+				return m
 			})), i.d(t, "b", (function() {
+				return h
+			})), i.d(t, "d", (function() {
 				return b
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/chat/constants/experiments.ts");
 			const s = e => !!e.user.experiments[r.c.SubredditChat] || !!e.user.chatExperiments.userSubredditChatEnabled,
-				o = e => {
-					if (!Object(r.e)(e)) return e || void 0
+				o = e => !!e.user.experiments[r.c.EconRpanAvatar],
+				d = e => e.experiments.models,
+				a = (e, t) => {
+					return d(e)[t]
 				},
-				d = e => !!e.user.experiments[r.c.EconRpanAvatar],
-				a = e => e.experiments.models,
-				l = (e, t) => {
-					return a(e)[t]
-				},
-				c = Object(n.a)(a, e => {
+				l = Object(n.a)(d, e => {
 					var t;
 					return (null === (t = e[r.c.ChatMediaGiphy]) || void 0 === t ? void 0 : t.variant) === r.a.InputAndGifs
 				}),
-				u = Object(n.a)(a, e => {
+				c = Object(n.a)(d, e => {
 					var t;
-					return Boolean(o(null === (t = e[r.c.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant))
+					return Boolean((e => {
+						if (!Object(r.e)(e)) return e || void 0
+					})(null === (t = e[r.c.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant))
 				}),
-				_ = Object(n.a)(a, e => {
+				u = Object(n.a)(d, e => {
 					var t;
 					return (null === (t = e[r.c.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant) === r.d.Prompt
 				}),
-				p = Object(n.a)(a, e => {
+				_ = Object(n.a)(d, e => {
 					var t;
 					return (null === (t = e[r.c.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant) === r.d.Sparkles
 				}),
-				m = Object(n.a)(a, e => {
+				p = Object(n.a)(d, e => {
 					var t, i;
 					return (null === (t = e[r.c.UiRefreshBubblePreset]) || void 0 === t ? void 0 : t.variant) === r.d.Sparkles || (null === (i = e[r.c.UiRefreshBubblePreset]) || void 0 === i ? void 0 : i.variant) === r.d.Prompt
 				}),
-				h = Object(n.a)(a, e => {
+				m = Object(n.a)(d, e => {
 					var t;
-					return Boolean(o(null === (t = e[r.c.D2xChatNicknamePainted]) || void 0 === t ? void 0 : t.variant))
+					return null === (t = e[r.c.D2xChatNicknamePainted]) || void 0 === t ? void 0 : t.variant
 				}),
-				b = Object(n.a)(a, e => {
+				h = Object(n.a)(m, e => Boolean(e && [r.b.NicknamePaintedEditPopup, r.b.NicknamePaintedEditButton].includes(e))),
+				b = Object(n.a)(d, e => {
 					var t;
 					return (null === (t = e[r.c.D2xChatNicknamePainted]) || void 0 === t ? void 0 : t.variant) === r.b.NicknamePaintedEditPopup
 				})
@@ -1844,11 +1846,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("136336"),
+				buildNumber: r("136339"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1623367591"),
+				})("1623369151"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4334,14 +4336,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c575d927a5646a2904ceb0252da0ebe1ea9da8419-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c26d288f35ac543d6119e0de49de1c26759942884-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "575d927a5646a2904ceb0252da0ebe1ea9da8419-production",
+						release: "26d288f35ac543d6119e0de49de1c26759942884-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -4835,7 +4837,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "575d927a5646a2904ceb0252da0ebe1ea9da8419-production",
+						releaseClient: "26d288f35ac543d6119e0de49de1c26759942884-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -46967,4 +46969,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8a5caa884fbd1d6d331c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.346425588aeda4823813.js.map

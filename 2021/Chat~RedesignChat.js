@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2454f858bb920c10ec74.js
-// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1497e8d820e2c1b7f4df.js
+// Retrieved at 6/10/2021, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1721,7 +1721,7 @@
 				}, N = "SENDBIRD__OPT_IN", T = Object(r.a)(N), A = () => async (e, t, {
 					apiContext: n
 				}) => {
-					Object(u.j)(t()) || (e(T({
+					Object(u.k)(t()) || (e(T({
 						userSubredditChatEnabled: !0
 					})), Object(i.m)(n()))
 				}
@@ -4683,7 +4683,7 @@
 				GIF: _t
 			} = p.c, It = () => {
 				const e = Object(c.d)(),
-					t = Object(c.e)(ut.e),
+					t = Object(c.e)(ut.f),
 					n = Object(c.e)(e => Object(ut.a)(e, at.c.UiRefreshBubblePreset));
 				return n && e(Object(u.I)(n)), t ? r.a.createElement("div", {
 					className: pt.a.ThemePrompt,
@@ -6063,7 +6063,7 @@
 				ct = i.a.memo((function() {
 					const e = Object(l.d)(),
 						t = Object(l.e)(S.a),
-						n = Object(l.e)(ze.d),
+						n = Object(l.e)(ze.e),
 						s = Object(l.e)(e => Object(ze.a)(e, xe.c.ChatMediaGiphy));
 					s && e(Object(g.I)(s));
 					return n ? i.a.createElement(ot, {
@@ -6883,8 +6883,8 @@
 					isChannelNotifsMuted: ae.H,
 					isChannelHidden: ae.F,
 					isFullSize: se.e,
-					isThemesEnabled: re.i,
-					isSparkles: re.h,
+					isThemesEnabled: re.j,
+					isSparkles: re.i,
 					isShowPrompt: ce.c
 				});
 			var me = Object(r.b)(he, (e, t) => ({
@@ -7208,31 +7208,32 @@
 			var ze = () => {
 					const e = Object(r.d)(),
 						t = Object(f.b)(Object(P.c)()),
-						n = Object(r.e)(re.b),
+						n = Object(r.e)(re.d),
 						c = Object(r.e)(re.c),
-						o = Object(r.e)(He),
-						i = Object(r.e)(Ge);
+						o = Object(r.e)(re.b),
+						i = Object(r.e)(He),
+						l = Object(r.e)(Ge);
 					Object(s.useEffect)(() => {
 						setTimeout(() => {
 							null == t || t.show()
 						}), c && e(Object(d.Q)())
 					}, []);
-					const l = {
+					const u = {
 						...t.arrowProps,
 						style: {
 							...t.arrowProps.style,
 							borderBottom: "4px solid var(--activity-text-active)"
 						}
 					};
-					return c && o ? a.a.createElement("span", {
+					return o && i ? a.a.createElement("span", {
 						ref: t.target.ref,
 						className: Ve.a.EditName
 					}, a.a.createElement(G.a, {
 						onClick: n => {
 							n.stopPropagation(), t.hide(), e(Object(De.d)()), e(Object(d.e)())
 						}
-					}), n && i && a.a.createElement(Le.a, {
-						arrowProps: l,
+					}), n && l && a.a.createElement(Le.a, {
+						arrowProps: u,
 						popperProps: t.popperProps,
 						visible: t.visible,
 						styled: !0,
@@ -10173,7 +10174,7 @@
 			const g = l.a.i("FallbackAvatar", f.a),
 				O = l.a.wrapped(g, "FallbackAvatarWrapper", f.a),
 				C = l.a.wrapped(e => {
-					const t = Object(o.e)(m.f),
+					const t = Object(o.e)(m.g),
 						{
 							className: n,
 							height: a,
@@ -15079,4 +15080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2454f858bb920c10ec74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1497e8d820e2c1b7f4df.js.map
