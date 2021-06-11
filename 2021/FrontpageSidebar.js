@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.9ef0f335ae1939313adf.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.50f718e07a804ec502f0.js
+// Retrieved at 6/11/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -267,11 +267,11 @@
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
 				K = n("./src/reddit/featureFlags/component.tsx"),
 				V = n("./src/reddit/helpers/localStorage/index.ts"),
-				H = n("./src/reddit/helpers/name/index.ts"),
-				Z = n("./src/lib/makeApiRequest/index.ts"),
+				Z = n("./src/reddit/helpers/name/index.ts"),
+				H = n("./src/lib/makeApiRequest/index.ts"),
 				X = n("./src/lib/omitHeaders/index.ts"),
 				z = n("./src/reddit/constants/headers.ts");
-			const Y = e => Object(Z.a)(Object(X.a)(e, [z.a]), {
+			const Y = e => Object(H.a)(Object(X.a)(e, [z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: q.hb.GET,
 				type: "json"
@@ -322,7 +322,7 @@
 						hk: "487Ffc"
 					})), c.a.createElement("div", {
 						className: ee.a.description
-					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", c.a.createElement("strong", null, e.map(H.c).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", c.a.createElement("strong", null, e.map(Z.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), c.a.createElement(k.k, {
 						className: ee.a.button,
@@ -684,19 +684,19 @@
 					action: qe.c.CLICK,
 					noun: "community"
 				});
-			var He = n("./src/reddit/models/GoodContent/index.ts"),
-				Ze = n("./src/reddit/helpers/chooseVariant/index.ts");
+			var Ze = n("./src/reddit/models/GoodContent/index.ts"),
+				He = n("./src/reddit/helpers/chooseVariant/index.ts");
 
 			function Xe(e) {
-				return Object(Ze.c)(e, {
-					experimentEligibilitySelector: Ze.a,
+				return Object(He.c)(e, {
+					experimentEligibilitySelector: He.a,
 					experimentName: Ge.t
 				})
 			}
 			var ze = n("./src/reddit/selectors/experiments/utils.ts");
-			const Ye = Object(m.a)(e => Object(Ze.c)(e, {
+			const Ye = Object(m.a)(e => Object(He.c)(e, {
 					experimentName: Ge.oc,
-					experimentEligibilitySelector: Ze.a
+					experimentEligibilitySelector: He.a
 				}), ze.a),
 				$e = Object(m.a)(Ye, e => e === Ge.qc.Enabled);
 			var et = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
@@ -728,7 +728,7 @@
 						const t = Object(et.e)(e),
 							n = !!Object(Ce.P)(e, ot);
 						return (!t || !n) && (!Object(nt.b)(e) && function(e) {
-							return Object(Ze.c)(e, {
+							return Object(He.c)(e, {
 								experimentEligibilitySelector: tt.K,
 								experimentName: Ge.cb
 							}) === Ge.Ob
@@ -872,7 +872,7 @@
 								isBlacklistedSubredditsExcluded: !0,
 								isNsfwExcluded: !0,
 								isDiscoverable: !0,
-								maxRating: He.b.PG13
+								maxRating: Ze.b.PG13
 							},
 							isOnlyModIncluded: !1
 						},
@@ -1712,12 +1712,12 @@
 					gradients: ["#F3B54F", "#EC5428"]
 				}],
 				E = [{
-					name: "E3",
-					displayText: s.fbt._("E3", null, {
-						hk: "3oJuEH"
+					name: "E3 Gaming",
+					displayText: s.fbt._("E3 Gaming", null, {
+						hk: "289tR6"
 					}),
 					id: "c1034",
-					path: `${g}moment/`
+					path: `${g}e3/`
 				}],
 				N = [{
 					name: "Beauty",
@@ -2105,4 +2105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.9ef0f335ae1939313adf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.50f718e07a804ec502f0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a9bd6340d950a77af23b.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4133d7738fc6d3326e73.js
+// Retrieved at 6/11/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -3434,12 +3434,12 @@
 					gradients: ["#F3B54F", "#EC5428"]
 				}],
 				v = [{
-					name: "E3",
-					displayText: n.fbt._("E3", null, {
-						hk: "3oJuEH"
+					name: "E3 Gaming",
+					displayText: n.fbt._("E3 Gaming", null, {
+						hk: "289tR6"
 					}),
 					id: "c1034",
-					path: `${h}moment/`
+					path: `${h}e3/`
 				}],
 				j = [{
 					name: "Beauty",
@@ -4903,4 +4903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a9bd6340d950a77af23b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4133d7738fc6d3326e73.js.map
