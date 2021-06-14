@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~PostCreation~RedesignChat.f30417aa05f7e05f4789.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~PostCreation~RedesignChat.bc666e204513e3f2e137.js
+// Retrieved at 6/14/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~PostCreation~RedesignChat"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -194,14 +194,6 @@
 				var u = s(e) ? n : a,
 					c = arguments.length < 3;
 				return u(e, i(t, 4), r, c, o)
-			}
-		},
-		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
-			var n = r("./node_modules/lodash/toString.js"),
-				o = 0;
-			e.exports = function(e) {
-				var t = ++o;
-				return n(e) + t
 			}
 		},
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, r) {
@@ -518,15 +510,15 @@
 				passive: !0
 			};
 
-			function I(e) {
+			function W(e) {
 				return e.split("-")[0]
 			}
 
-			function W(e) {
+			function H(e) {
 				return e.split("-")[1]
 			}
 
-			function H(e) {
+			function I(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
@@ -534,8 +526,8 @@
 				var t, r = e.reference,
 					n = e.element,
 					o = e.placement,
-					i = o ? I(o) : null,
-					a = o ? W(o) : null,
+					i = o ? W(o) : null,
+					a = o ? H(o) : null,
 					s = r.x + r.width / 2 - n.width / 2,
 					u = r.y + r.height / 2 - n.height / 2;
 				switch (i) {
@@ -569,7 +561,7 @@
 							y: r.y
 						}
 				}
-				var c = i ? H(i) : null;
+				var c = i ? I(i) : null;
 				if (null != c) {
 					var l = "y" === c ? "height" : "width";
 					switch (a) {
@@ -856,7 +848,7 @@
 								i = r.adaptive,
 								a = void 0 === i || i,
 								s = {
-									placement: I(t.placement),
+									placement: W(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: o
@@ -932,7 +924,7 @@
 								i = void 0 === o ? [0, 0] : o,
 								a = M.reduce((function(e, r) {
 									return e[r] = function(e, t, r) {
-										var n = I(e),
+										var n = W(e),
 											o = [k, x].indexOf(n) >= 0 ? -1 : 1,
 											i = "function" == typeof r ? r(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -962,12 +954,12 @@
 								r = e.options,
 								n = e.name;
 							if (!t.modifiersData[n]._skip) {
-								for (var o = r.mainAxis, i = void 0 === o || o, a = r.altAxis, s = void 0 === a || a, u = r.fallbackPlacements, c = r.padding, l = r.boundary, p = r.rootBoundary, f = r.altBoundary, d = r.flipVariations, m = void 0 === d || d, h = r.allowedAutoPlacements, _ = t.options.placement, g = I(_), b = u || (g === _ || !m ? [K(_)] : function(e) {
-										if (I(e) === F) return [];
+								for (var o = r.mainAxis, i = void 0 === o || o, a = r.altAxis, s = void 0 === a || a, u = r.fallbackPlacements, c = r.padding, l = r.boundary, p = r.rootBoundary, f = r.altBoundary, d = r.flipVariations, m = void 0 === d || d, h = r.allowedAutoPlacements, _ = t.options.placement, g = W(_), b = u || (g === _ || !m ? [K(_)] : function(e) {
+										if (W(e) === F) return [];
 										var t = K(e);
 										return [Y(e), t, Y(t)]
 									}(_)), y = [_].concat(b).reduce((function(e, r) {
-										return e.concat(I(r) === F ? function(e, t) {
+										return e.concat(W(r) === F ? function(e, t) {
 											void 0 === t && (t = {});
 											var r = t,
 												n = r.placement,
@@ -977,9 +969,9 @@
 												s = r.flipVariations,
 												u = r.allowedAutoPlacements,
 												c = void 0 === u ? M : u,
-												l = W(n),
+												l = H(n),
 												p = (l ? s ? P : P.filter((function(e) {
-													return W(e) === l
+													return H(e) === l
 												})) : j).filter((function(e) {
 													return c.indexOf(e) >= 0
 												})).reduce((function(t, r) {
@@ -988,7 +980,7 @@
 														boundary: o,
 														rootBoundary: i,
 														padding: a
-													})[I(r)], t
+													})[W(r)], t
 												}), {});
 											return Object.keys(p).sort((function(e, t) {
 												return p[e] - p[t]
@@ -1003,8 +995,8 @@
 										}) : r)
 									}), []), v = t.rects.reference, E = t.rects.popper, O = new Map, A = !0, C = y[0], B = 0; B < y.length; B++) {
 									var L = y[B],
-										q = I(L),
-										S = W(L) === z,
+										q = W(L),
+										S = H(L) === z,
 										R = [x, w].indexOf(q) >= 0,
 										Z = R ? "width" : "height",
 										T = ne(t, {
@@ -1014,11 +1006,11 @@
 											altBoundary: f,
 											padding: c
 										}),
-										H = R ? S ? D : k : S ? w : x;
-									v[Z] > E[Z] && (H = K(H));
-									var U = K(H),
+										I = R ? S ? D : k : S ? w : x;
+									v[Z] > E[Z] && (I = K(I));
+									var U = K(I),
 										$ = [];
-									if (i && $.push(T[q] <= 0), s && $.push(T[H] <= 0, T[U] <= 0), $.every((function(e) {
+									if (i && $.push(T[q] <= 0), s && $.push(T[I] <= 0, T[U] <= 0), $.every((function(e) {
 											return e
 										}))) {
 										C = L, A = !1;
@@ -1071,10 +1063,10 @@
 									padding: p,
 									altBoundary: l
 								}),
-								b = I(t.placement),
-								y = W(t.placement),
+								b = W(t.placement),
+								y = H(t.placement),
 								F = !y,
-								j = H(b),
+								j = I(b),
 								E = "x" === j ? "y" : "x",
 								O = t.modifiersData.popperOffsets,
 								A = t.rects.reference,
@@ -1141,8 +1133,8 @@
 								n = e.name,
 								o = r.elements.arrow,
 								i = r.modifiersData.popperOffsets,
-								a = I(r.placement),
-								s = H(a),
+								a = W(r.placement),
+								s = I(a),
 								u = [k, D].indexOf(a) >= 0 ? "height" : "width";
 							if (o && i) {
 								var c = r.modifiersData[n + "#persistent"].padding,
@@ -1367,4 +1359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~PostCreation~RedesignChat.f30417aa05f7e05f4789.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~PostCreation~RedesignChat.bc666e204513e3f2e137.js.map

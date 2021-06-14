@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatReportFlow.a2887572baae1b628679.js
-// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatReportFlow.6c44af400cfccc42aab1.js
+// Retrieved at 6/14/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatReportFlow"], {
 		"./src/chat/components/ReportFlow/BlockUserFlow/index.m.less": function(e, t, n) {
@@ -118,8 +118,8 @@
 				Z = n.n(P);
 			const M = p.a.div("BlockUserHolder", Z.a),
 				A = p.a.wrapped(q, "BlockUserIcon", Z.a),
-				J = p.a.div("BlockUserHeader", Z.a),
-				V = p.a.div("BlockUserDescription", Z.a),
+				V = p.a.div("BlockUserHeader", Z.a),
+				J = p.a.div("BlockUserDescription", Z.a),
 				Y = Object(l.c)({
 					blockedUser: (e, t) => Object(I.b)(e, t.userId)
 				});
@@ -166,14 +166,14 @@
 						hk: "40yYvG"
 					})), a.a.createElement(M, {
 						onClick: () => this.blockUser()
-					}, a.a.createElement(A, null), a.a.createElement("div", null, a.a.createElement(J, null, this.getHeader()), a.a.createElement(V, null, s.fbt._("You won't see posts or comments from u/{username}. You can change this later in your preference.", [s.fbt._param("username", e)], {
+					}, a.a.createElement(A, null), a.a.createElement("div", null, a.a.createElement(V, null, this.getHeader()), a.a.createElement(J, null, s.fbt._("You won't see posts or comments from u/{username}. You can change this later in your preference.", [s.fbt._param("username", e)], {
 						hk: "4Gjtr9"
 					})))))
 				}
 			}
 			var K = Object(r.b)(Y, (e, {}) => ({
 					onBlockUser: t => {
-						e(Object(h.n)(t, !0)), e(Object(d.J)())
+						e(Object(h.n)(t, !0)), e(Object(d.I)())
 					}
 				}))(G),
 				z = n("./src/chat/components/ReportFlow/FileComplaintFlow/index.m.less"),
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.a2887572baae1b628679.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatReportFlow.6c44af400cfccc42aab1.js.map

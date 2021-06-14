@@ -1,9 +1,17 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.8222e78671ffa7656b5e.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.885e4079d8d2c96b7ad7.js
+// Retrieved at 6/14/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
-		"./src/chat/components/PortalContainer/index.m.less": function(t, e, n) {
-			t.exports = {
+		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
+			var s = n("./node_modules/lodash/toString.js"),
+				c = 0;
+			e.exports = function(e) {
+				var t = ++c;
+				return s(e) + t
+			}
+		},
+		"./src/chat/components/PortalContainer/index.m.less": function(e, t, n) {
+			e.exports = {
 				BasePortalContainer: "yU9j1WJPhK5O625xcz254",
 				basePortalContainer: "yU9j1WJPhK5O625xcz254",
 				EmbedPortalContainer: "_1ScY1cHS-Vgv6eoU-LmjTi",
@@ -14,158 +22,255 @@
 				minimizedRedesignPortalContainer: "_29tNelkz3zQzbXmYFOCncy"
 			}
 		},
-		"./src/chat/initializer.tsx": function(t, e, n) {
+		"./src/chat/initializer.tsx": function(e, t, n) {
 			"use strict";
-			n.r(e), n.d(e, "default", (function() {
-				return nt
+			n.r(t), n.d(t, "default", (function() {
+				return ge
 			}));
-			var c = n("./node_modules/react/index.js"),
-				s = n.n(c),
+			var s = n("./node_modules/react/index.js"),
+				c = n.n(s),
 				r = n("./node_modules/history/esm/history.js"),
 				a = n("./node_modules/js-cookie/src/js.cookie.js"),
 				i = n.n(a),
-				o = n("./node_modules/redux-thunk/es/index.js"),
-				d = n("./src/lib/constants/index.ts"),
-				u = n("./src/lib/initializeClient/index.tsx"),
-				l = n("./src/lib/matchRoute/index.ts"),
-				b = n("./src/reddit/contexts/ApiContext.tsx"),
-				h = n("./src/reduxMiddleware/apiContext.ts"),
-				m = n("./src/reduxMiddleware/gqlContext.ts"),
+				o = n("./node_modules/lodash/fromPairs.js"),
+				d = n.n(o),
+				u = n("./node_modules/redux-thunk/es/index.js"),
+				l = n("./src/lib/constants/index.ts"),
+				b = n("./src/lib/extractQueryParams/index.ts"),
+				m = n("./src/lib/initializeClient/index.tsx"),
+				h = n("./src/lib/matchRoute/index.ts"),
+				p = n("./src/reddit/contexts/ApiContext.tsx"),
+				x = n("./src/reduxMiddleware/apiContext.ts"),
+				f = n("./src/reduxMiddleware/gqlContext.ts"),
 				j = n("./src/chat/actions/apiRequestHeaders.ts"),
-				x = n("./src/chat/actions/notifications.ts"),
-				O = n("./src/chat/actions/platform.ts"),
-				p = n("./src/chat/actions/session.ts"),
-				f = n("./src/chat/actions/user.ts"),
-				g = n("./node_modules/react-redux/es/index.js"),
-				C = n("./src/lib/CSSVariableProvider/index.tsx"),
-				E = n("./src/lib/lessComponent.tsx"),
-				_ = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				y = n("./src/chat/components/Root/index.tsx"),
-				v = n("./src/chat/constants/container.ts"),
-				S = n("./src/chat/helpers/chatSelector.ts"),
-				w = n("./src/chat/components/PortalContainer/index.m.less"),
-				N = n.n(w);
+				O = n("./src/chat/actions/experiments/index.ts"),
+				g = n("./src/chat/actions/notifications.ts"),
+				C = n("./src/chat/actions/platform.ts"),
+				E = n("./src/chat/actions/session.ts"),
+				_ = n("./src/chat/actions/user.ts"),
+				y = n("./node_modules/react-redux/es/index.js"),
+				v = n("./src/lib/CSSVariableProvider/index.tsx"),
+				S = n("./src/lib/lessComponent.tsx"),
+				N = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
+				T = n("./src/chat/components/Root/index.tsx"),
+				w = n("./src/chat/constants/container.ts"),
+				R = n("./src/chat/helpers/chatSelector.ts"),
+				A = n("./src/chat/components/PortalContainer/index.m.less"),
+				P = n.n(A);
 			const {
-				embed: R,
-				hidden: A
-			} = v.b;
+				embed: M,
+				hidden: D
+			} = w.b;
 
-			function T(t) {
-				return void 0 !== t ? t : -1
+			function B(e) {
+				return void 0 !== e ? e : -1
 			}
-			const M = E.a.wrapped(t => s.a.createElement("div", {
-					className: t.className
-				}, t.children), "BasePortalContainer", N.a),
-				D = E.a.wrapped(t => s.a.createElement("div", {
-					className: t.className,
+			const I = S.a.wrapped(e => c.a.createElement("div", {
+					className: e.className
+				}, e.children), "BasePortalContainer", P.a),
+				U = S.a.wrapped(e => c.a.createElement("div", {
+					className: e.className,
 					style: {
-						width: `${T(R.width)}px`,
-						height: `${T(R.height)}px`
+						width: `${B(M.width)}px`,
+						height: `${B(M.height)}px`
 					}
-				}, t.children), "EmbedPortalContainer", N.a),
-				P = E.a.wrapped(t => s.a.createElement("div", {
-					className: t.className,
+				}, e.children), "EmbedPortalContainer", P.a),
+				k = S.a.wrapped(e => c.a.createElement("div", {
+					className: e.className,
 					style: {
-						width: `${T(A.width)}px`,
-						height: `${T(A.height)}px`
+						width: `${B(D.width)}px`,
+						height: `${B(D.height)}px`
 					}
-				}, t.children), "HiddenPortalContainer", N.a),
-				B = E.a.wrapped(_.a, "MinimizedRedesignPortalContainer", N.a),
-				U = M,
-				k = Object(S.a)({
-					container: t => t && t.container && t.container.size
+				}, e.children), "HiddenPortalContainer", P.a),
+				q = S.a.wrapped(N.a, "MinimizedRedesignPortalContainer", P.a),
+				L = I,
+				z = Object(R.a)({
+					container: e => e && e.container && e.container.size
 				});
 
-			function I(t) {
-				switch (t.container) {
-					case v.a.EMBED:
-						return s.a.createElement(D, null, t.children);
-					case v.a.HIDDEN:
-						return s.a.createElement(P, null, t.children);
-					case v.a.FULL:
-						return s.a.createElement(U, null, t.children);
-					case v.a.MINIMIZED:
-						return s.a.createElement(B, null);
+			function G(e) {
+				switch (e.container) {
+					case w.a.EMBED:
+						return c.a.createElement(U, null, e.children);
+					case w.a.HIDDEN:
+						return c.a.createElement(k, null, e.children);
+					case w.a.FULL:
+						return c.a.createElement(L, null, e.children);
+					case w.a.MINIMIZED:
+						return c.a.createElement(q, null);
 					default:
-						return s.a.createElement(D, null, t.children)
+						return c.a.createElement(U, null, e.children)
 				}
 			}
-			var q = n("./src/chat/customMiddleware/chatThemeKey.ts"),
-				L = n("./src/chat/customMiddleware/containerSize.ts"),
-				z = n("./src/chat/customMiddleware/draftMessageText.ts"),
-				G = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				F = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				Q = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
-				$ = n("./src/chat/customMiddleware/sendbirdToken.ts"),
-				H = n("./src/chat/customMiddleware/title.ts"),
-				K = n("./src/chat/customMiddleware/tokenRefresher.ts"),
-				Y = n("./src/chat/customMiddleware/tracking.ts"),
-				V = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
-				J = n("./src/chat/helpers/modifyInitialData.ts"),
-				W = n("./src/chat/reducers/index.ts"),
-				X = n("./src/chat/routes/index.ts"),
-				Z = n("./src/chat/customMiddleware/editNickname.ts");
-			const tt = Object(h.a)({
+			var F = n("./src/chat/customMiddleware/chatThemeKey.ts"),
+				H = n("./src/chat/customMiddleware/containerSize.ts"),
+				K = n("./src/chat/customMiddleware/draftMessageText.ts"),
+				Q = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
+				$ = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				Y = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				V = n("./src/chat/customMiddleware/sendbirdToken.ts"),
+				W = n("./src/chat/customMiddleware/title.ts"),
+				J = n("./src/chat/customMiddleware/tokenRefresher.ts"),
+				X = n("./src/chat/customMiddleware/tracking.ts"),
+				Z = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
+				ee = n("./node_modules/lodash/uniqueId.js"),
+				te = n.n(ee),
+				ne = n("./src/chat/constants/theme.ts"),
+				se = n("./src/chat/models/Theme/index.ts"),
+				ce = n("./src/chat/reducers/meta/index.ts"),
+				re = n("./src/chat/reducers/platform/index.ts"),
+				ae = n("./src/chat/reducers/promos/index.ts"),
+				ie = n("./src/chat/reducers/sidebar/sideBarAppearance/index.ts"),
+				oe = n("./src/chat/selectors/platform.ts");
+			const de = (e, t) => (e.chat && e.chat.promos && (t.promos = {
+					...ae.a,
+					...e.chat.promos
+				}), t),
+				ue = (e, t) => {
+					const {
+						account: n,
+						language: s,
+						loid: c,
+						prefs: r,
+						reddaid: a,
+						session: i,
+						sessionTracker: o
+					} = e.user;
+					return t.user = {
+						...t.user,
+						account: n ? {
+							commentKarma: n.commentKarma,
+							created: n.created,
+							inChat: n.inChat,
+							id: n.id,
+							isNSFW: n.isNSFW,
+							linkKarma: n.postKarma,
+							name: n.displayText || "",
+							prefNightmode: e.user.prefs.nightmode,
+							profileImg: n.accountIcon
+						} : null,
+						language: s,
+						loid: c,
+						prefs: r,
+						reddaid: a,
+						sessionTracker: o,
+						session: i && i.unsafeLoggedOut ? null : i
+					}, t
+				},
+				le = e => (e.meta = {
+					...ce.a,
+					isRedesign: !0
+				}, e),
+				be = e => {
+					if (e.user && e.user.prefs && e.user.prefs.nightmode) {
+						const {
+							NIGHT: t,
+							REDDIT: n
+						} = ne.b, {
+							nightmode: s
+						} = e.user.prefs, c = s ? t : n;
+						e.themes = {
+							current: se.e[c],
+							chatTheme: null,
+							cached: {}
+						}, e.user.prefs.globalTheme = c
+					}
+					return e
+				},
+				me = (e, t, n) => {
+					const s = te()(),
+						c = Object(r.c)(t.location.pathname, void 0, s),
+						a = Object(h.a)(Object(r.e)(c), n),
+						i = Object(re.b)(re.a, Object(C.e)({
+							location: c,
+							action: "PUSH",
+							routeMatch: a
+						}));
+					return e.platform = {
+						...i
+					}, e
+				},
+				he = e => {
+					const t = Object(oe.e)(e);
+					return e.sidebar = {
+						activeIndex: t,
+						lastChannelIdPerTab: {},
+						sideBarAppearance: {
+							isSidebarVisible: !1,
+							sideBarComponentType: ie.a.CHANNELS
+						}
+					}, e
+				};
+			var pe = n("./src/chat/reducers/index.ts"),
+				xe = n("./src/chat/routes/index.ts"),
+				fe = n("./src/chat/customMiddleware/editNickname.ts");
+			const je = Object(x.a)({
 					actionDispatchers: {
-						reddaidReceived: f.r,
-						loidReceived: f.q,
-						sessionTrackerReceived: f.u
+						reddaidReceived: _.r,
+						loidReceived: _.q,
+						sessionTrackerReceived: _.u
 					},
 					cookies: i.a,
 					receivedActions: {
 						headersReceived: j.a,
-						loidReceived: f.e,
-						reddaidReceived: f.f,
-						sessionTrackerReceived: f.g,
-						userAuthenticated: p.a,
-						userLoggedOut: p.b,
-						userReauthenticated: p.c
+						loidReceived: _.e,
+						reddaidReceived: _.f,
+						sessionTrackerReceived: _.g,
+						userAuthenticated: E.a,
+						userLoggedOut: E.b,
+						userReauthenticated: E.c
 					},
-					statsAppName: d.l.Chat
+					statsAppName: l.l.Chat
 				}),
-				et = Object(m.a)(tt.apiContext);
+				Oe = Object(f.a)(je.apiContext);
 
-			function nt(t, e, n = "/chat/minimize") {
-				const c = document.getElementById("2x-container"),
+			function ge(e, t, n = "/chat/minimize") {
+				const s = document.getElementById("2x-container"),
 					a = document.createElement("div");
-				return c.appendChild(a), Object(u.a)({
-					reducerMap: W.a,
-					routes: X.a,
-					apiContext: tt.apiContext,
-					gqlContext: et.gqlContext,
-					appFactory: (t, e) => s.a.createElement(b.a.Provider, {
+				return s.appendChild(a), Object(m.a)({
+					reducerMap: pe.a,
+					routes: xe.a,
+					apiContext: je.apiContext,
+					gqlContext: Oe.gqlContext,
+					appFactory: (e, t) => c.a.createElement(p.a.Provider, {
 						value: {
-							apiContext: tt.apiContext,
-							gqlContext: et.gqlContext
+							apiContext: je.apiContext,
+							gqlContext: Oe.gqlContext
 						}
-					}, function(t, e) {
-						const n = Object(g.b)(k)(I);
-						return s.a.createElement("div", null, Object(C.d)(s.a.createElement(n, null, Object(y.a)(t, e)), document.body))
-					}(t, e)),
-					appName: d.l.Chat,
+					}, function(e, t) {
+						const n = Object(y.b)(z)(G);
+						return c.a.createElement("div", null, Object(v.d)(c.a.createElement(n, null, Object(T.a)(e, t)), document.body))
+					}(e, t)),
+					appName: l.l.Chat,
 					history: Object(r.d)({
 						initialEntries: [n],
 						initialIndex: 0
 					}),
-					customMiddleware: [o.a.withExtraArgument({
-						routes: X.a,
-						apiContext: tt.apiContext,
-						gqlContext: et.gqlContext
-					}), tt.middleware, K.a, $.a, G.a, Q.a, Object(Y.a)(e), L.a, q.a, z.a, Z.a, V.a, F.a, H.a],
+					customMiddleware: [u.a.withExtraArgument({
+						routes: xe.a,
+						apiContext: je.apiContext,
+						gqlContext: Oe.gqlContext
+					}), je.middleware, J.a, V.a, Q.a, Y.a, Object(X.a)(t), H.a, F.a, K.a, fe.a, Z.a, $.a, W.a],
+					postRender: ({
+						store: e
+					}) => {
+						const t = d()([...Object(b.a)(Object(r.e)(location))]);
+						e.dispatch(Object(O.d)(t))
+					},
 					modifyInitialData: ({
-						initialData: e,
+						initialData: t,
 						browserHistory: n
-					}) => (e = Object(J.d)(t, e), e = Object(J.a)(e), e = Object(J.b)(e), e = Object(J.c)(t, e), e = Object(J.g)(e, n, X.a), e = Object(J.f)(e), e = Object(J.h)(t, e)),
+					}) => (t = ue(e, t), t = le(t), t = be(t), t = de(e, t), t = me(t, n, xe.a), t = he(t)),
 					preRender: ({
-						browserHistory: t,
-						routes: e,
+						browserHistory: e,
+						routes: t,
 						store: n
 					}) => {
-						return n.dispatch(Object(f.l)()), t.listen((t, c) => {
-							const s = Object(l.a)(Object(r.e)(t), e);
-							n.dispatch(Object(O.d)(t, c, s)), n.dispatch(Object(f.l)())
+						return n.dispatch(Object(_.l)()), e.listen((e, s) => {
+							const c = Object(h.a)(Object(r.e)(e), t);
+							n.dispatch(Object(C.d)(e, s, c)), n.dispatch(Object(_.l)())
 						}), "undefined" != typeof window && window.addEventListener("load", async () => {
-							n.dispatch(Object(x.a)(!1, !1))
+							n.dispatch(Object(g.a)(!1, !1))
 						}), {}
 					},
 					target: a,
@@ -173,64 +278,64 @@
 				})
 			}
 		},
-		"./src/reddit/actions/appBadgeIndicators/constants.ts": function(t, e, n) {
+		"./src/reddit/actions/appBadgeIndicators/constants.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "c", (function() {
-				return c
-			})), n.d(e, "b", (function() {
+			n.d(t, "c", (function() {
 				return s
-			})), n.d(e, "d", (function() {
+			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "d", (function() {
 				return r
-			})), n.d(e, "a", (function() {
+			})), n.d(t, "a", (function() {
 				return a
 			}));
-			const c = "APP_BADGES__PENDING",
-				s = "APP_BADGES__LOADED",
+			const s = "APP_BADGES__PENDING",
+				c = "APP_BADGES__LOADED",
 				r = "APP_BADGES__UPDATED",
 				a = "APP_BADGES__FAILED"
 		},
-		"./src/reddit/actions/appBadgeIndicators/index.ts": function(t, e, n) {
+		"./src/reddit/actions/appBadgeIndicators/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "a", (function() {
+			n.d(t, "a", (function() {
 				return b
-			})), n.d(e, "e", (function() {
-				return m
-			})), n.d(e, "d", (function() {
-				return j
-			})), n.d(e, "c", (function() {
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "d", (function() {
+				return p
+			})), n.d(t, "c", (function() {
 				return x
-			})), n.d(e, "b", (function() {
-				return O
+			})), n.d(t, "b", (function() {
+				return f
 			}));
-			var c = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/reddit/actions/appBadgeIndicators/constants.ts"),
+			var s = n("./src/lib/makeActionCreator/index.ts"),
+				c = n("./src/reddit/actions/appBadgeIndicators/constants.ts"),
 				r = n("./src/reddit/actions/tabBadging.ts"),
 				a = n("./src/lib/makeGqlRequest/index.ts"),
 				i = n("./src/redditGQL/operations/BadgeIndicators.json"),
-				o = t => Object(a.a)(t, {
+				o = e => Object(a.a)(e, {
 					...i
 				}),
 				d = n("./src/reddit/models/Badge/index.ts");
-			const u = Object(c.a)(s.c),
-				l = Object(c.a)(s.b),
-				b = Object(c.a)(s.d),
-				h = Object(c.a)(s.a),
-				m = ({
-					key: t,
-					count: e
+			const u = Object(s.a)(c.c),
+				l = Object(s.a)(c.b),
+				b = Object(s.a)(c.d),
+				m = Object(s.a)(c.a),
+				h = ({
+					key: e,
+					count: t
 				}) => ({
-					[t]: {
-						count: e,
+					[e]: {
+						count: t,
 						style: d.b.Numbered
 					}
 				}),
-				j = (t, e, n) => ({
+				p = (e, t, n) => ({
 					[d.c.DirectMessages]: {
-						count: t,
+						count: e,
 						style: d.b.Numbered
 					},
 					[d.c.ChatRooms]: {
-						count: e,
+						count: t,
 						style: d.b.Numbered
 					},
 					[d.c.ChatRoomMentions]: {
@@ -238,33 +343,33 @@
 						style: d.b.Numbered
 					}
 				}),
-				x = () => async (t, e, {
+				x = () => async (e, t, {
 					gqlContext: n
 				}) => {
-					t(u());
-					const c = await async function(t) {
-						const e = await o(t());
-						if (e.ok && e.body) {
-							return function(t) {
-								return t && t.data && t.data.badgeIndicators
-							}(e.body)
+					e(u());
+					const s = await async function(e) {
+						const t = await o(e());
+						if (t.ok && t.body) {
+							return function(e) {
+								return e && e.data && e.data.badgeIndicators
+							}(t.body)
 						}
 					}(n);
-					c ? (t(l(c)), t(Object(r.d)())) : t(h())
+					s ? (e(l(s)), e(Object(r.d)())) : e(m())
 				};
-			const O = () => async t => {
-				const e = m({
+			const f = () => async e => {
+				const t = h({
 					key: d.c.MessageTab,
 					count: 0
 				});
-				t(b(e))
+				e(b(t))
 			}
 		},
-		"./src/reddit/actions/chat/proxy.ts": function(t, e, n) {
+		"./src/reddit/actions/chat/proxy.ts": function(e, t, n) {
 			"use strict";
-			n.r(e);
-			var c = n("./node_modules/lodash/isEqual.js"),
-				s = n.n(c),
+			n.r(t);
+			var s = n("./node_modules/lodash/isEqual.js"),
+				c = n.n(s),
 				r = n("./src/chat/actions/message/unreadCount.ts"),
 				a = n("./src/chat/actions/promo/constants.ts"),
 				i = n("./src/chat/actions/surveyTrigger/index.ts"),
@@ -274,113 +379,113 @@
 			Object(u.a)(a.a);
 			const l = Object(u.a)(a.b);
 			var b = n("./src/reddit/actions/chat/unreadCount.ts"),
-				h = n("./src/reddit/actions/survey/index.ts"),
-				m = n("./src/reddit/actions/tabBadging.ts"),
-				j = n("./src/reddit/selectors/chat.ts"),
+				m = n("./src/reddit/actions/survey/index.ts"),
+				h = n("./src/reddit/actions/tabBadging.ts"),
+				p = n("./src/reddit/selectors/chat.ts"),
 				x = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts");
-			e.default = (t, e) => n => {
-				const c = Object(x.a)(e());
+			t.default = (e, t) => n => {
+				const s = Object(x.a)(t());
 				switch (n.type) {
 					case r.a: {
 						const r = n.payload,
-							a = c ? Object(m.b)(e()) : Object(j.b)(e());
-						if (!s()(r, a)) {
-							const e = Object(d.d)(r.basicChannelCount, r.subredditChannelCount, r.subredditMentionCount);
-							t(c ? Object(d.a)(e) : Object(b.c)(r)), t(Object(m.d)())
+							a = s ? Object(h.b)(t()) : Object(p.b)(t());
+						if (!c()(r, a)) {
+							const t = Object(d.d)(r.basicChannelCount, r.subredditChannelCount, r.subredditMentionCount);
+							e(s ? Object(d.a)(t) : Object(b.c)(r)), e(Object(h.d)())
 						}
 					}
 					break;
 				case a.b:
-					n.payload === o.a.SubredditChatFtux && t(l(o.a.SubredditChatFtux));
+					n.payload === o.a.SubredditChatFtux && e(l(o.a.SubredditChatFtux));
 					break;
 				case i.a:
-					t(Object(h.e)())
+					e(Object(m.e)())
 				}
 			}
 		},
-		"./src/reddit/actions/chat/unreadCount.ts": function(t, e, n) {
+		"./src/reddit/actions/chat/unreadCount.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "a", (function() {
-				return c
-			})), n.d(e, "c", (function() {
-				return m
-			})), n.d(e, "b", (function() {
-				return O
-			})), n.d(e, "d", (function() {
+			n.d(t, "a", (function() {
+				return s
+			})), n.d(t, "c", (function() {
+				return h
+			})), n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "d", (function() {
 				return g
 			}));
-			var c, s = n("./src/lib/constants/index.ts"),
+			var s, c = n("./src/lib/constants/index.ts"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/chat/endpoints/sendbird/index.ts"),
 				i = n("./src/reddit/actions/tabBadging.ts"),
 				o = n("./src/reddit/selectors/chat.ts"),
 				d = n("./src/reddit/selectors/user.ts");
-			! function(t) {
-				t.SYNC = "UNREAD_COUNT__SYNC", t.REQUEST_FAILED = "UNREAD_COUNT__REQUEST_FAILED", t.REQUEST_PENDING = "UNREAD_COUNT__REQUEST_PENDING", t.REQUEST_SUCCESS = "UNREAD_COUNT__REQUEST_SUCCESS"
-			}(c || (c = {}));
+			! function(e) {
+				e.SYNC = "UNREAD_COUNT__SYNC", e.REQUEST_FAILED = "UNREAD_COUNT__REQUEST_FAILED", e.REQUEST_PENDING = "UNREAD_COUNT__REQUEST_PENDING", e.REQUEST_SUCCESS = "UNREAD_COUNT__REQUEST_SUCCESS"
+			}(s || (s = {}));
 			const {
 				SYNC: u,
 				REQUEST_FAILED: l,
 				REQUEST_PENDING: b,
-				REQUEST_SUCCESS: h
-			} = c, m = Object(r.a)(u), j = Object(r.a)(l), x = Object(r.a)(b), O = Object(r.a)(h);
-			let p;
-			const f = 5 * s.ib,
-				g = () => async (t, e, {
+				REQUEST_SUCCESS: m
+			} = s, h = Object(r.a)(u), p = Object(r.a)(l), x = Object(r.a)(b), f = Object(r.a)(m);
+			let j;
+			const O = 5 * c.ib,
+				g = () => async (e, t, {
 					apiContext: n
 				}) => {
-					const c = e();
-					if (!Object(d.K)(c) || !Object(o.d)(c)) return clearTimeout(p);
-					p || t((() => async (t, e, {
+					const s = t();
+					if (!Object(d.K)(s) || !Object(o.d)(s)) return clearTimeout(j);
+					j || e((() => async (e, t, {
 						apiContext: n
 					}) => {
-						const c = e(),
+						const s = t(),
 							{
-								session: s
-							} = c.user;
-						if (s && Object(d.K)(c) && Object(o.d)(c)) {
-							t(x());
-							const e = await Object(a.h)(n(), s);
-							e && e.ok ? (t(O({
-								basicChannelCount: e.body.unread_count || 0,
-								subredditChannelCount: e.body.subreddit_unread_count || 0
-							})), t(Object(i.d)())) : t(j({
-								error: e.error
+								session: c
+							} = s.user;
+						if (c && Object(d.K)(s) && Object(o.d)(s)) {
+							e(x());
+							const t = await Object(a.h)(n(), c);
+							t && t.ok ? (e(f({
+								basicChannelCount: t.body.unread_count || 0,
+								subredditChannelCount: t.body.subreddit_unread_count || 0
+							})), e(Object(i.d)())) : e(p({
+								error: t.error
 							}))
 						}
-					})()), p = setTimeout(() => {
-						t(g())
-					}, f)
+					})()), j = setTimeout(() => {
+						e(g())
+					}, O)
 				}
 		},
-		"./src/reddit/actions/inbox.ts": function(t, e, n) {
+		"./src/reddit/actions/inbox.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "a", (function() {
-				return s
-			})), n.d(e, "b", (function() {
+			n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "b", (function() {
 				return r
 			}));
-			var c = n("./src/lib/makeActionCreator/index.ts");
-			const s = "INBOX__COUNT_UPDATE",
-				r = Object(c.a)(s)
+			var s = n("./src/lib/makeActionCreator/index.ts");
+			const c = "INBOX__COUNT_UPDATE",
+				r = Object(s.a)(c)
 		},
-		"./src/reddit/actions/tabBadging.ts": function(t, e, n) {
+		"./src/reddit/actions/tabBadging.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "a", (function() {
-				return O
-			})), n.d(e, "c", (function() {
+			n.d(t, "a", (function() {
 				return f
-			})), n.d(e, "b", (function() {
+			})), n.d(t, "c", (function() {
+				return O
+			})), n.d(t, "b", (function() {
 				return g
-			})), n.d(e, "e", (function() {
+			})), n.d(t, "e", (function() {
 				return E
-			})), n.d(e, "d", (function() {
+			})), n.d(t, "d", (function() {
 				return _
-			})), n.d(e, "f", (function() {
+			})), n.d(t, "f", (function() {
 				return y
 			}));
-			var c = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/lib/fastdom/index.ts"),
+			var s = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/lib/fastdom/index.ts"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/reddit/actions/chat/unreadCount.ts"),
 				i = n("./src/reddit/actions/inbox.ts"),
@@ -389,328 +494,328 @@
 				u = n("./src/reddit/models/Badge/index.ts"),
 				l = n("./src/reddit/selectors/appBadges.ts"),
 				b = n("./src/reddit/selectors/chat.ts"),
-				h = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts"),
-				m = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				j = n("./src/reddit/selectors/user.ts"),
+				m = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts"),
+				h = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				p = n("./src/reddit/selectors/user.ts"),
 				x = n("./src/reddit/actions/appBadgeIndicators/index.ts");
-			const O = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
-				p = Object(r.a)(O),
-				f = (t, e) => {
-					t <= 0 ? s.a.write(() => {
-						Object(d.b)(!1), window.document.title = e
-					}) : s.a.write(() => {
-						Object(d.b)(), window.document.title = `(${t}) ${e}`
+			const f = "TAB__UPDATE_HAS_UNREAD_MESSAGES_BADGE",
+				j = Object(r.a)(f),
+				O = (e, t) => {
+					e <= 0 ? c.a.write(() => {
+						Object(d.b)(!1), window.document.title = t
+					}) : c.a.write(() => {
+						Object(d.b)(), window.document.title = `(${e}) ${t}`
 					})
 				},
-				g = Object(c.c)({
+				g = Object(s.c)({
 					basicChannelCount: l.e,
 					subredditChannelCount: l.d,
 					subredditMentionCount: l.c
 				}),
-				C = t => {
-					const e = Object(h.a)(t);
+				C = e => {
+					const t = Object(m.a)(e);
 					return {
-						inboxCount: e ? Object(l.h)(t) : Object(j.F)(t) || 0,
-						basicChannelCount: e ? Object(l.e)(t) : Object(b.a)(t) || 0
+						inboxCount: t ? Object(l.h)(e) : Object(p.F)(e) || 0,
+						basicChannelCount: t ? Object(l.e)(e) : Object(b.a)(e) || 0
 					}
 				},
-				E = () => async (t, e) => {
-					const n = e(),
-						c = Object(o.e)(n, {}),
-						s = Object(h.a)(n),
-						r = Object(j.J)(n) || Object(j.K)(n),
-						a = Object(m.e)(n);
+				E = () => async (e, t) => {
+					const n = t(),
+						s = Object(o.e)(n, {}),
+						c = Object(m.a)(n),
+						r = Object(p.J)(n) || Object(p.K)(n),
+						a = Object(h.e)(n);
 					let i = 0;
-					r && c && (i = s ? a ? Object(l.i)(n) : Object(l.j)(n) : (t => {
+					r && s && (i = c ? a ? Object(l.i)(n) : Object(l.j)(n) : (e => {
 						const {
-							inboxCount: e,
+							inboxCount: t,
 							basicChannelCount: n
-						} = C(t);
-						return e + n
-					})(n), f(i, c), t(p({
+						} = C(e);
+						return t + n
+					})(n), O(i, s), e(j({
 						hasUnreadMessages: !!i
 					})))
-				}, _ = () => async (t, e) => {
+				}, _ = () => async (e, t) => {
 					{
-						t(E());
-						const n = C(e());
+						e(E());
+						const n = C(t());
 						Object(d.c)(n)
 					}
-				}, y = t => async (e, n) => {
-					const c = n();
-					if (Object(h.a)(c)) {
-						const n = Object(l.e)(c),
-							s = Object(l.h)(c),
+				}, y = e => async (t, n) => {
+					const s = n();
+					if (Object(m.a)(s)) {
+						const n = Object(l.e)(s),
+							c = Object(l.h)(s),
 							{
 								basicChannelCount: r,
 								inboxCount: a
-							} = t;
+							} = e;
 						if (n !== r) {
-							const t = Object(x.e)({
+							const e = Object(x.e)({
 								count: r,
 								key: u.c.ChatTab
 							});
-							e(Object(x.a)(t))
+							t(Object(x.a)(e))
 						}
-						if (a && a !== s) {
-							const t = Object(x.e)({
+						if (a && a !== c) {
+							const e = Object(x.e)({
 								count: a,
 								key: u.c.MessageTab
 							});
-							e(Object(x.a)(t))
-						}(n !== r || a && a !== s) && e(E())
+							t(Object(x.a)(e))
+						}(n !== r || a && a !== c) && t(E())
 					} else {
-						const n = Object(b.a)(c),
-							s = Object(b.b)(c),
-							r = Object(j.F)(c),
+						const n = Object(b.a)(s),
+							c = Object(b.b)(s),
+							r = Object(p.F)(s),
 							{
 								basicChannelCount: o,
 								inboxCount: d
-							} = t;
-						n !== o && e(Object(a.b)({
-							...s,
+							} = e;
+						n !== o && t(Object(a.b)({
+							...c,
 							basicChannelCount: o
-						})), d && d !== r && e(Object(i.b)({
+						})), d && d !== r && t(Object(i.b)({
 							inboxCount: d
-						})), (n !== o || d && d !== r) && e(E())
+						})), (n !== o || d && d !== r) && t(E())
 					}
 				}
 		},
-		"./src/reddit/helpers/tabBadging/index.ts": function(t, e, n) {
+		"./src/reddit/helpers/tabBadging/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "a", (function() {
+			n.d(t, "a", (function() {
 				return o
-			})), n.d(e, "b", (function() {
+			})), n.d(t, "b", (function() {
 				return u
-			})), n.d(e, "c", (function() {
+			})), n.d(t, "c", (function() {
 				return l
 			}));
-			var c = n("./src/config.ts");
-			const s = `${c.a.assetPath}/img/favicon/badged-favicon-32x32.png`,
-				r = `${c.a.assetPath}/img/favicon/badged-favicon-16x16.png`,
-				a = `${c.a.assetPath}/img/favicon/favicon-32x32.png`,
-				i = `${c.a.assetPath}/img/favicon/favicon-16x16.png`,
+			var s = n("./src/config.ts");
+			const c = `${s.a.assetPath}/img/favicon/badged-favicon-32x32.png`,
+				r = `${s.a.assetPath}/img/favicon/badged-favicon-16x16.png`,
+				a = `${s.a.assetPath}/img/favicon/favicon-32x32.png`,
+				i = `${s.a.assetPath}/img/favicon/favicon-16x16.png`,
 				o = "badgeCountSync",
-				d = t => window.document.querySelector(`link[href="${t}"]`),
-				u = (t = !0) => {
-					const e = d(t ? a : s),
-						n = d(t ? i : r);
-					e && n && (e.href = t ? s : a, n.href = t ? r : i)
+				d = e => window.document.querySelector(`link[href="${e}"]`),
+				u = (e = !0) => {
+					const t = d(e ? a : c),
+						n = d(e ? i : r);
+					t && n && (t.href = e ? c : a, n.href = e ? r : i)
 				},
-				l = t => {
+				l = e => {
 					navigator && navigator.serviceWorker && navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 						command: o,
-						badgeCounts: t
+						badgeCounts: e
 					})
 				}
 		},
-		"./src/reddit/models/Badge/index.ts": function(t, e, n) {
+		"./src/reddit/models/Badge/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "a", (function() {
-				return c
-			})), n.d(e, "e", (function() {
-				return i
-			})), n.d(e, "f", (function() {
-				return o
-			})), n.d(e, "d", (function() {
-				return l
-			})), n.d(e, "c", (function() {
+			n.d(t, "a", (function() {
 				return s
-			})), n.d(e, "b", (function() {
+			})), n.d(t, "e", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return o
+			})), n.d(t, "d", (function() {
+				return l
+			})), n.d(t, "c", (function() {
+				return c
+			})), n.d(t, "b", (function() {
 				return r
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var c, s, r, a = n("./src/config.ts");
+			var s, c, r, a = n("./src/config.ts");
 
-			function i(t) {
-				return "userId" in t
+			function i(e) {
+				return "userId" in e
 			}
 
-			function o(t) {
-				return !(!t.extra || !t.extra.membership) && !!t.extra.membership.included
+			function o(e) {
+				return !(!e.extra || !e.extra.membership) && !!e.extra.membership.included
 			}
 
-			function d(t, e, n) {
-				const c = n.media[0],
-					s = Object.keys(c);
-				if (c["0x0"]) return c["0x0"];
+			function d(e, t, n) {
+				const s = n.media[0],
+					c = Object.keys(s);
+				if (s["0x0"]) return s["0x0"];
 				let r = {
 					width: 1 / 0,
 					height: 1 / 0,
 					url: ""
 				};
-				if (s.forEach(n => {
-						const s = c[n],
-							[a, i] = n.split("x").map(t => parseInt(t));
-						(a < r.width && a >= t || i < r.height && i >= e) && (r = {
+				if (c.forEach(n => {
+						const c = s[n],
+							[a, i] = n.split("x").map(e => parseInt(e));
+						(a < r.width && a >= e || i < r.height && i >= t) && (r = {
 							height: i,
 							width: a,
-							url: s
+							url: c
 						})
-					}), !r.url && s.length) {
-					const t = Object.keys(c)[0],
-						e = c[t],
-						[n, s] = t.split("x").map(t => parseInt(t));
+					}), !r.url && c.length) {
+					const e = Object.keys(s)[0],
+						t = s[e],
+						[n, c] = e.split("x").map(e => parseInt(e));
 					r = {
-						height: s,
+						height: c,
 						width: n,
-						url: e
+						url: t
 					}
 				}
 				return r.url
 			}
 
-			function u(t) {
-				return t.startsWith("https") ? t : `${a.a.assetPath}/${t}`
+			function u(e) {
+				return e.startsWith("https") ? e : `${a.a.assetPath}/${e}`
 			}
 
-			function l(t, e, n) {
-				const c = d(t, e, n),
-					s = d(2 * t, 2 * e, n);
+			function l(e, t, n) {
+				const s = d(e, t, n),
+					c = d(2 * e, 2 * t, n);
 				return {
-					url: u(c),
-					url2x: u(s)
+					url: u(s),
+					url2x: u(c)
 				}
-			}! function(t) {
-				t.First = "p1", t.Second = "p2"
-			}(c || (c = {})),
-			function(t) {
-				t.ActivityTab = "activityTab", t.ChatTab = "chatTab", t.DirectMessages = "directMessages", t.MessageTab = "messageTab", t.ChatRooms = "chatRooms", t.ChatRoomMentions = "chatRoomMentions"
+			}! function(e) {
+				e.First = "p1", e.Second = "p2"
 			}(s || (s = {})),
-			function(t) {
-				t.Numbered = "NUMBERED", t.Filled = "FILLED"
+			function(e) {
+				e.ActivityTab = "activityTab", e.ChatTab = "chatTab", e.DirectMessages = "directMessages", e.MessageTab = "messageTab", e.ChatRooms = "chatRooms", e.ChatRoomMentions = "chatRoomMentions"
+			}(c || (c = {})),
+			function(e) {
+				e.Numbered = "NUMBERED", e.Filled = "FILLED"
 			}(r || (r = {}))
 		},
-		"./src/reddit/selectors/appBadges.ts": function(t, e, n) {
+		"./src/reddit/selectors/appBadges.ts": function(e, t, n) {
 			"use strict";
-			n.d(e, "b", (function() {
+			n.d(t, "b", (function() {
 				return a
-			})), n.d(e, "e", (function() {
+			})), n.d(t, "e", (function() {
 				return i
-			})), n.d(e, "d", (function() {
+			})), n.d(t, "d", (function() {
 				return o
-			})), n.d(e, "c", (function() {
+			})), n.d(t, "c", (function() {
 				return d
-			})), n.d(e, "f", (function() {
+			})), n.d(t, "f", (function() {
 				return u
-			})), n.d(e, "a", (function() {
+			})), n.d(t, "a", (function() {
 				return l
-			})), n.d(e, "h", (function() {
+			})), n.d(t, "h", (function() {
 				return b
-			})), n.d(e, "g", (function() {
+			})), n.d(t, "g", (function() {
+				return m
+			})), n.d(t, "j", (function() {
 				return h
-			})), n.d(e, "j", (function() {
-				return m
-			})), n.d(e, "i", (function() {
-				return j
-			}));
-			var c = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/selectors/chat.ts"),
-				r = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts");
-			const a = t => t.appBadges.badges,
-				i = Object(c.a)(r.a, a, s.a, (t, e, n) => t ? e && e.directMessages && e.directMessages.count || 0 : n),
-				o = Object(c.a)(a, t => t && t.chatRooms && t.chatRooms.count || 0),
-				d = Object(c.a)(a, t => t && t.chatRoomMentions && t.chatRoomMentions.count || 0),
-				u = Object(c.a)(r.a, s.a, i, o, d, (t, e, n, c, s) => {
-					if (t) {
-						return n + c + s > 0
-					}
-					return e > 0
-				}),
-				l = Object(c.a)(a, t => t && t.activityTab && t.activityTab.count || 0),
-				b = Object(c.a)(a, t => t && t.messageTab && t.messageTab.count || 0),
-				h = Object(c.a)(l, b, (t, e) => t + e),
-				m = Object(c.a)(i, b, (t, e) => t + e),
-				j = Object(c.a)(i, h, (t, e) => t + e)
-		},
-		"./src/reddit/selectors/chat.ts": function(t, e, n) {
-			"use strict";
-			n.d(e, "b", (function() {
-				return a
-			})), n.d(e, "a", (function() {
-				return i
-			})), n.d(e, "d", (function() {
-				return o
-			})), n.d(e, "c", (function() {
-				return d
-			}));
-			var c = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				r = n("./src/reddit/selectors/moderatorPermissions.ts");
-			const a = t => t.chat.unread.count,
-				i = Object(c.a)(a, t => t.basicChannelCount),
-				o = (Object(c.a)(a, t => t.subredditChannelCount), t => !(t.chat.isInited || t.chat.unread.api.pending)),
-				d = (t, e) => {
-					const {
-						chatConfig: n
-					} = s.c;
-					return Object(r.a)(n)(t, e)
-				}
-		},
-		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(t, e, n) {
-			"use strict";
-			n.d(e, "a", (function() {
-				return u
-			}));
-			var c = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				a = n("./src/reddit/selectors/experiments/utils.ts"),
-				i = n("./src/reddit/selectors/user.ts");
-			const o = Object(c.a)(t => Object(r.c)(t, {
-					experimentName: s.hc,
-					experimentEligibilitySelector: d
-				}), a.a),
-				d = t => Object(i.J)(t) || Object(i.K)(t),
-				u = Object(c.a)(o, t => t === s.kc.Enabled)
-		},
-		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(t, e, n) {
-			"use strict";
-			n.d(e, "e", (function() {
-				return u
-			})), n.d(e, "d", (function() {
-				return b
-			})), n.d(e, "f", (function() {
-				return m
-			})), n.d(e, "b", (function() {
-				return x
-			})), n.d(e, "c", (function() {
-				return O
-			})), n.d(e, "a", (function() {
+			})), n.d(t, "i", (function() {
 				return p
 			}));
-			var c = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/constants/experiments.ts"),
+			var s = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/reddit/selectors/chat.ts"),
+				r = n("./src/reddit/selectors/experiments/inboxAppBadgingGql.ts");
+			const a = e => e.appBadges.badges,
+				i = Object(s.a)(r.a, a, c.a, (e, t, n) => e ? t && t.directMessages && t.directMessages.count || 0 : n),
+				o = Object(s.a)(a, e => e && e.chatRooms && e.chatRooms.count || 0),
+				d = Object(s.a)(a, e => e && e.chatRoomMentions && e.chatRoomMentions.count || 0),
+				u = Object(s.a)(r.a, c.a, i, o, d, (e, t, n, s, c) => {
+					if (e) {
+						return n + s + c > 0
+					}
+					return t > 0
+				}),
+				l = Object(s.a)(a, e => e && e.activityTab && e.activityTab.count || 0),
+				b = Object(s.a)(a, e => e && e.messageTab && e.messageTab.count || 0),
+				m = Object(s.a)(l, b, (e, t) => e + t),
+				h = Object(s.a)(i, b, (e, t) => e + t),
+				p = Object(s.a)(i, m, (e, t) => e + t)
+		},
+		"./src/reddit/selectors/chat.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return a
+			})), n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "c", (function() {
+				return d
+			}));
+			var s = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				r = n("./src/reddit/selectors/moderatorPermissions.ts");
+			const a = e => e.chat.unread.count,
+				i = Object(s.a)(a, e => e.basicChannelCount),
+				o = (Object(s.a)(a, e => e.subredditChannelCount), e => !(e.chat.isInited || e.chat.unread.api.pending)),
+				d = (e, t) => {
+					const {
+						chatConfig: n
+					} = c.c;
+					return Object(r.a)(n)(e, t)
+				}
+		},
+		"./src/reddit/selectors/experiments/inboxAppBadgingGql.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return u
+			}));
+			var s = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const o = t => Object(i.J)(t) || Object(i.K)(t),
-				d = Object(c.a)(t => Object(r.c)(t, {
-					experimentName: s.Y,
-					experimentEligibilitySelector: o
+			const o = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.hc,
+					experimentEligibilitySelector: d
 				}), a.a),
-				u = Object(c.a)(d, t => t === s.nc.Enabled),
-				l = Object(c.a)(t => Object(r.c)(t, {
-					experimentName: s.ic,
-					experimentEligibilitySelector: o
-				}), a.a),
-				b = Object(c.a)(u, l, (t, e) => t && e === s.mc.Enabled),
-				h = Object(c.a)(t => Object(r.c)(t, {
-					experimentName: s.ab,
-					experimentEligibilitySelector: o
-				}), a.a),
-				m = Object(c.a)(u, h, (t, e) => t && e === s.hb.Enabled),
-				j = Object(c.a)(t => Object(r.c)(t, {
-					experimentName: s.X,
-					experimentEligibilitySelector: o
-				}), a.a),
-				x = Object(c.a)(j, t => t === s.lc.Banner_1st_time),
-				O = Object(c.a)(j, t => t === s.lc.Tooltip_persist),
-				p = Object(c.a)(j, t => t === s.lc.Tooltip_1st_time)
+				d = e => Object(i.J)(e) || Object(i.K)(e),
+				u = Object(s.a)(o, e => e === c.kc.Enabled)
 		},
-		"./src/redditGQL/operations/BadgeIndicators.json": function(t) {
-			t.exports = JSON.parse('{"id":"712476d48c90"}')
+		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "e", (function() {
+				return u
+			})), n.d(t, "d", (function() {
+				return b
+			})), n.d(t, "f", (function() {
+				return h
+			})), n.d(t, "b", (function() {
+				return x
+			})), n.d(t, "c", (function() {
+				return f
+			})), n.d(t, "a", (function() {
+				return j
+			}));
+			var s = n("./node_modules/reselect/es/index.js"),
+				c = n("./src/reddit/constants/experiments.ts"),
+				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				a = n("./src/reddit/selectors/experiments/utils.ts"),
+				i = n("./src/reddit/selectors/user.ts");
+			const o = e => Object(i.J)(e) || Object(i.K)(e),
+				d = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.Y,
+					experimentEligibilitySelector: o
+				}), a.a),
+				u = Object(s.a)(d, e => e === c.nc.Enabled),
+				l = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.ic,
+					experimentEligibilitySelector: o
+				}), a.a),
+				b = Object(s.a)(u, l, (e, t) => e && t === c.mc.Enabled),
+				m = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.ab,
+					experimentEligibilitySelector: o
+				}), a.a),
+				h = Object(s.a)(u, m, (e, t) => e && t === c.hb.Enabled),
+				p = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: c.X,
+					experimentEligibilitySelector: o
+				}), a.a),
+				x = Object(s.a)(p, e => e === c.lc.Banner_1st_time),
+				f = Object(s.a)(p, e => e === c.lc.Tooltip_persist),
+				j = Object(s.a)(p, e => e === c.lc.Tooltip_1st_time)
+		},
+		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
+			e.exports = JSON.parse('{"id":"712476d48c90"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.8222e78671ffa7656b5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.885e4079d8d2c96b7ad7.js.map
