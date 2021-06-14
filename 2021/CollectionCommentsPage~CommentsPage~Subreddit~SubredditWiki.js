@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.34145f67e8350815bd53.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.05dd09dcb71cf648b4a6.js
+// Retrieved at 6/14/2021, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2063,8 +2063,8 @@
 					}))
 				}))),
 				J = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				Q = r("./src/higherOrderComponents/makeAsync.tsx");
-			var K = Object(Q.a)({
+				K = r("./src/higherOrderComponents/makeAsync.tsx");
+			var Q = Object(K.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => r.e("HarbergerTaxBannerPurchaseCTA").then(r.bind(null, "./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.tsx")).then(e => e.default)
@@ -2096,7 +2096,7 @@
 					style: {
 						maxWidth: e.disableFullscreen || e.layout === Y.g.Large ? `${e.maxWidth||$.a}px` : "100%"
 					}
-				}, s.a.createElement("div", null, e.children), s.a.createElement(K, null))),
+				}, s.a.createElement("div", null, e.children), s.a.createElement(Q, null))),
 				ne = r("./src/reddit/constants/wiki.ts"),
 				se = r("./src/reddit/helpers/trackers/subredditWiki.ts");
 			const {
@@ -3069,8 +3069,8 @@
 					stylesheet: e => e.stylesheets
 				}),
 				J = Object(i.b)(Z),
-				Q = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
-			class K extends s.a.Component {
+				K = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
+			class Q extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
 						this.iframe = e
@@ -3089,7 +3089,7 @@
 					this.iframe && this.iframe.contentWindow && this.iframeContent && (this.iframe.contentWindow.document.body && this.iframe.contentWindow.document.body.childNodes.length || this.writeIFrameDocument())
 				}
 				renderIframeContent(e) {
-					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = Q(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
+					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = K(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
 				}
 				render() {
 					const {
@@ -3107,7 +3107,7 @@
 					}))
 				}
 			}
-			var Y = J(K),
+			var Y = J(Q),
 				$ = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				X = r.n($);
 			var ee = m.a.div("ImageFrame", X.a),
@@ -3189,13 +3189,15 @@
 				we = m.a.wrapped(le.a, "InternalLink", he.a),
 				ke = m.a.div("LinkContainer", he.a),
 				Ee = Object(o.c)({
-					userIsBanned: pe.fb
+					userIsBanned: pe.fb,
+					userIsLoggedIn: _.K
 				});
 			var je = Object(i.b)(Ee)(e => {
 					const {
 						subredditName: t,
 						widget: r,
-						userIsBanned: n
+						userIsBanned: n,
+						userIsLoggedIn: i
 					} = e;
 					return s.a.createElement(c.a, {
 						styles: r.styles,
@@ -3224,7 +3226,7 @@
 						to: `/r/${t}/about/moderators/`
 					}, F.fbt._("View All Moderators", null, {
 						hk: "2DIeXE"
-					})))) : n ? s.a.createElement("div", {
+					})))) : n || !i ? s.a.createElement("div", {
 						className: he.a.HelpCenterMessage
 					}, F.fbt._("Moderator list hidden.", null, {
 						hk: "447TOY"
@@ -4187,4 +4189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.34145f67e8350815bd53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.05dd09dcb71cf648b4a6.js.map
