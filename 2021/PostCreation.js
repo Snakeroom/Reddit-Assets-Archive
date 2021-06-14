@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7ec4f970f54268738156.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.56f47aaa966fa8f92fc7.js
+// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -22002,29 +22002,32 @@
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return c
-			})), n.d(t, "c", (function() {
 				return d
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return l
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return u
+			})), n.d(t, "a", (function() {
+				return p
+			})), n.d(t, "e", (function() {
+				return m
 			}));
 			var o = n("./src/reddit/helpers/flair.ts"),
-				r = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
-				s = n("./src/reddit/selectors/telemetry.ts"),
-				i = n("./src/reddit/selectors/user.ts"),
-				a = n("./src/reddit/selectors/userFlair.ts");
+				r = n("./src/reddit/selectors/comments.ts"),
+				s = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				i = n("./src/reddit/selectors/telemetry.ts"),
+				a = n("./src/reddit/selectors/user.ts"),
+				c = n("./src/reddit/selectors/userFlair.ts");
 
-			function c(e) {
-				const t = s.subreddit(e),
+			function d(e) {
+				const t = i.subreddit(e),
 					n = null == t ? void 0 : t.id;
 				if (!n) return;
-				const c = Object(a.c)(e, {
+				const r = Object(c.c)(e, {
 						subredditId: n
 					}),
-					d = Object(i.h)(e),
-					l = d ? Object(r.c)(e, {
+					d = Object(a.h)(e),
+					l = d ? Object(s.c)(e, {
 						subredditId: n,
 						userId: d
 					}) : void 0,
@@ -22032,12 +22035,12 @@
 						achievementFlairId: null == l ? void 0 : l.type,
 						achievementFlairTitle: null == l ? void 0 : l.name
 					};
-				if (!(null == c ? void 0 : c.displaySettings.isUserEnabled) || !(null == c ? void 0 : c.applied)) return {
+				if (!(null == r ? void 0 : r.displaySettings.isUserEnabled) || !(null == r ? void 0 : r.applied)) return {
 					isActive: !1,
 					...u
 				};
-				const p = c.applied.templateId,
-					m = Object(o.g)(c.applied);
+				const p = r.applied.templateId,
+					m = Object(o.g)(r.applied);
 				return m ? {
 					id: p,
 					title: m,
@@ -22048,13 +22051,13 @@
 					...u
 				}
 			}
-			const d = () => e => ({
+			const l = () => e => ({
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...s.defaults(e)
+					...i.defaults(e)
 				}),
-				l = e => t => {
+				u = e => t => {
 					const {
 						userFlair: n,
 						achievementFlair: r
@@ -22063,7 +22066,7 @@
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...s.defaults(t),
+						...i.defaults(t),
 						userFlair: {
 							id: null == n ? void 0 : n.id,
 							title: n && Object(o.g)(n),
@@ -22074,12 +22077,33 @@
 						}
 					}
 				},
-				u = () => e => ({
+				p = () => e => ({
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...s.defaults(e)
-				})
+					...i.defaults(e)
+				}),
+				m = (e, t, n) => a => {
+					const c = Object(r.e)(a, {
+							commentId: e
+						}),
+						d = Object(s.c)(a, {
+							subredditId: t,
+							userId: n
+						});
+					return {
+						source: "meta",
+						action: "hover",
+						noun: "achieve_flair",
+						...i.defaults(a),
+						userFlair: {
+							id: null == c ? void 0 : c.templateId,
+							title: c ? Object(o.g)(c) : void 0,
+							achievementFlairId: null == d ? void 0 : d.type,
+							achievementFlairTitle: null == d ? void 0 : d.name
+						}
+					}
+				}
 		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, n) {
 			"use strict";
@@ -30207,4 +30231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7ec4f970f54268738156.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.56f47aaa966fa8f92fc7.js.map

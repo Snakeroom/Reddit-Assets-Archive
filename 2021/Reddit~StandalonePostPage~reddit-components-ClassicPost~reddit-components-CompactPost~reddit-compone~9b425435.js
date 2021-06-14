@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7d569650953bf9b17cf5.js
-// Retrieved at 6/9/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1c636ef65281c5c23fe9.js
+// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -237,14 +237,14 @@
 					subsequentRecurringDelay: m,
 					shouldDisjointAnimation: p,
 					id: f
-				} = e, [b, v] = Object(n.useState)(!1), [h, g] = Object(n.useState)(!0), [w, O] = Object(n.useState)([]), [j, x] = Object(n.useState)(Object(a.d)(t).reverse()), y = Object(n.useRef)(!1), _ = Object(n.useRef)(null), C = Object(n.useRef)(e => {}), I = Object(n.useRef)();
-				C.current = Object(n.useCallback)(e => {
+				} = e, [b, v] = Object(n.useState)(!1), [h, g] = Object(n.useState)(!0), [w, O] = Object(n.useState)([]), [j, x] = Object(n.useState)(Object(a.d)(t).reverse()), y = Object(n.useRef)(!1), _ = Object(n.useRef)(null), I = Object(n.useRef)(e => {}), C = Object(n.useRef)();
+				I.current = Object(n.useCallback)(e => {
 					let t = e || d();
 					const n = [...j].reverse().join("");
 					let s = parseInt(n) + t;
 					s > r && (t = r - parseInt(n), s = r);
 					const o = Object(a.d)(s).reverse();
-					v(!1), O(j), x(o), g(!1), I.current = setTimeout(() => {
+					v(!1), O(j), x(o), g(!1), C.current = setTimeout(() => {
 						v(!0)
 					}, 0)
 				}, [r, d, j]);
@@ -253,7 +253,7 @@
 					E = Object(n.useRef)();
 				k.current = Object(n.useCallback)(() => {
 					E.current = setTimeout(() => {
-						C.current();
+						I.current();
 						const e = [...w].reverse().join("");
 						parseInt(e) < r && k.current()
 					}, m())
@@ -264,14 +264,14 @@
 							isIntersecting: t
 						} = e;
 						t && (y.current || (y.current = !0, P.current = setTimeout(() => {
-							C.current(), k.current()
+							I.current(), k.current()
 						}, u())))
 					})
 				}, []);
 				Object(o.a)(_, S);
 				const T = Object(c.a)(r);
-				Object(n.useEffect)(() => (void 0 !== T && T !== r && C.current(r - T), () => {
-					clearTimeout(P.current), clearTimeout(E.current), clearTimeout(I.current)
+				Object(n.useEffect)(() => (void 0 !== T && T !== r && I.current(r - T), () => {
+					clearTimeout(P.current), clearTimeout(E.current), clearTimeout(C.current)
 				}), [r]);
 				const A = Object(n.useCallback)(() => g(!0), [g]),
 					N = 0 === w.length,
@@ -507,8 +507,8 @@
 				}
 			}
 			var _ = r("./src/reddit/components/FlairSearch/index.m.less"),
-				C = r.n(_);
-			const I = Object(d.a)(e => e && Object(u.c)(e)),
+				I = r.n(_);
+			const C = Object(d.a)(e => e && Object(u.c)(e)),
 				k = Object(i.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
 					isModerator: f.f
@@ -525,9 +525,9 @@
 					templateIds: l,
 					areFlairRestrictionsEnabled: f,
 					isModerator: v
-				} = e, h = Object(p.a)(), g = d && r && r.templateId && d[r.templateId] || void 0, w = Object(b.a)(), O = r || I(g);
+				} = e, h = Object(p.a)(), g = d && r && r.templateId && d[r.templateId] || void 0, w = Object(b.a)(), O = r || C(g);
 				return o.a.createElement("div", {
-					className: Object(a.a)(s, C.a.container)
+					className: Object(a.a)(s, I.a.container)
 				}, d && l && o.a.createElement(y, {
 					flairTemplateType: t,
 					onChange: e => {
@@ -543,13 +543,13 @@
 					templateIds: l,
 					templates: d
 				}), O && g && (v || g.textEditable) && o.a.createElement("div", {
-					className: C.a.flairEditSection
+					className: I.a.flairEditSection
 				}, o.a.createElement("div", {
-					className: C.a.editLabel
+					className: I.a.editLabel
 				}, n.fbt._("Edit flair", null, {
 					hk: "1APWWu"
 				})), f && o.a.createElement("div", {
-					className: C.a.restrictionHintText
+					className: I.a.restrictionHintText
 				}, Object(u.k)(g)), o.a.createElement(w, {
 					autofocus: !0,
 					emojiPickerId: "FlairSearch-EmojiPicker-DropdownId",
@@ -947,9 +947,9 @@
 				}),
 				y = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				_ = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				C = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				I = r("./src/reddit/components/VerticalVotes/votes.m.less"),
-				k = r.n(I);
+				I = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				C = r("./src/reddit/components/VerticalVotes/votes.m.less"),
+				k = r.n(C);
 
 			function P() {
 				return (P = Object.assign || function(e) {
@@ -968,7 +968,7 @@
 				S = Object(c.a)(e => {
 					const {
 						voteIcons: t
-					} = Object(C.a)(e), r = {
+					} = Object(I.a)(e), r = {
 						"--verticalvotes-customdownvote-active": `url(${t.downvoteActive})`,
 						"--verticalvotes-customdownvote-inactive": `url(${t.downvoteInactive})`
 					}, {
@@ -985,7 +985,7 @@
 				T = Object(c.a)(e => {
 					const {
 						voteIcons: t
-					} = Object(C.a)(e), r = {
+					} = Object(I.a)(e), r = {
 						"--verticalvotes-customupvote-active": `url(${t.upvoteActive})`,
 						"--verticalvotes-customupvote-inactive": `url(${t.upvoteInactive})`
 					}, {
@@ -1190,10 +1190,10 @@
 					upvoteCount: {
 						inititalDelayRange: {
 							lower: _,
-							upper: C
+							upper: I
 						},
 						subsequentRecurringDelayRange: {
-							lower: I,
+							lower: C,
 							upper: k
 						},
 						incrementRangeRelativeToTotalDiscount: {
@@ -1202,8 +1202,8 @@
 						}
 					}
 				} = p.b,
-				S = () => a()(_, C),
-				T = () => a()(I, k),
+				S = () => a()(_, I),
+				T = () => a()(C, k),
 				A = Object(u.b)(e => ({
 					locale: Object(O.i)(e)
 				})),
@@ -1410,9 +1410,9 @@
 			})), r.d(t, "clickReportAward", (function() {
 				return _
 			})), r.d(t, "clickCancelReportAward", (function() {
-				return C
-			})), r.d(t, "clickConfirmReportAward", (function() {
 				return I
+			})), r.d(t, "clickConfirmReportAward", (function() {
+				return C
 			})), r.d(t, "viewGildModalEvent", (function() {
 				return k
 			})), r.d(t, "clickSelectAwardEvent", (function() {
@@ -1522,8 +1522,8 @@
 				x = g("cancel_flag_award"),
 				y = g("confirm_flag_award"),
 				_ = g("report_community_award"),
-				C = g("cancel_report_community_award"),
-				I = g("confirm_report_community_award"),
+				I = g("cancel_report_community_award"),
+				C = g("confirm_report_community_award"),
 				k = (e, t, r) => n => ({
 					...u(n, r),
 					source: "give_gold",
@@ -1688,7 +1688,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : i.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, w = r ? Object(p.a)(r) ? "comment" : "post" : void 0, O = l || i.t(e), j = [...Object(c.d)(e), ...Object(c.f)(e)].filter(e => e.mobileId === O)[0], x = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(j, b)), y = j ? Math.round(1e4 * (j.baselinePennies - j.pennies) / j.baselinePennies) / 100 : 0, _ = j ? Math.round(1e4 * (j.coins - j.baselineCoins) / j.coins) / 100 : 0, C = j ? j.baselinePennies !== j.pennies ? `${y}_percent_price` : j.baselineCoins !== j.coins ? `${_}_percent_bonus` : void 0 : void 0, I = g === d.GoldPurchaseType.Premium ? n.vb : j ? j.pennies : void 0;
+					} = t, b = !!r, v = o.b(e), h = v ? Object(u.getAwardTypeFromAward)(v) : null, g = b ? h : i.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, w = r ? Object(p.a)(r) ? "comment" : "post" : void 0, O = l || i.t(e), j = [...Object(c.d)(e), ...Object(c.f)(e)].filter(e => e.mobileId === O)[0], x = t.offerContext || (v && 0 === v.coinPrice ? s.a.StorefrontFreeAward : Object(s.d)(j, b)), y = j ? Math.round(1e4 * (j.baselinePennies - j.pennies) / j.baselinePennies) / 100 : 0, _ = j ? Math.round(1e4 * (j.coins - j.baselineCoins) / j.coins) / 100 : 0, I = j ? j.baselinePennies !== j.pennies ? `${y}_percent_price` : j.baselineCoins !== j.coins ? `${_}_percent_bonus` : void 0 : void 0, C = g === d.GoldPurchaseType.Premium ? n.vb : j ? j.pennies : void 0;
 					return {
 						...a.defaults(e),
 						comment: r ? a.comment(e, r) : null,
@@ -1703,14 +1703,14 @@
 							contentType: w,
 							numberCoins: j ? j.coins : void 0,
 							offerContext: x,
-							offerType: C
+							offerType: I
 						},
 						payment: {
 							currency: "USD",
-							amountInSmallestDenom: I
+							amountInSmallestDenom: C
 						},
 						purchase: {
-							priceMicros: I
+							priceMicros: C
 						}
 					}
 				},
@@ -2002,29 +2002,32 @@
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "d", (function() {
-				return a
-			})), r.d(t, "c", (function() {
 				return d
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "c", (function() {
 				return l
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "b", (function() {
 				return u
+			})), r.d(t, "a", (function() {
+				return m
+			})), r.d(t, "e", (function() {
+				return p
 			}));
 			var n = r("./src/reddit/helpers/flair.ts"),
-				s = r("./src/reddit/selectors/gold/powerups/achievements.ts"),
-				o = r("./src/reddit/selectors/telemetry.ts"),
-				c = r("./src/reddit/selectors/user.ts"),
-				i = r("./src/reddit/selectors/userFlair.ts");
+				s = r("./src/reddit/selectors/comments.ts"),
+				o = r("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				c = r("./src/reddit/selectors/telemetry.ts"),
+				i = r("./src/reddit/selectors/user.ts"),
+				a = r("./src/reddit/selectors/userFlair.ts");
 
-			function a(e) {
-				const t = o.subreddit(e),
+			function d(e) {
+				const t = c.subreddit(e),
 					r = null == t ? void 0 : t.id;
 				if (!r) return;
-				const a = Object(i.c)(e, {
+				const s = Object(a.c)(e, {
 						subredditId: r
 					}),
-					d = Object(c.h)(e),
-					l = d ? Object(s.c)(e, {
+					d = Object(i.h)(e),
+					l = d ? Object(o.c)(e, {
 						subredditId: r,
 						userId: d
 					}) : void 0,
@@ -2032,12 +2035,12 @@
 						achievementFlairId: null == l ? void 0 : l.type,
 						achievementFlairTitle: null == l ? void 0 : l.name
 					};
-				if (!(null == a ? void 0 : a.displaySettings.isUserEnabled) || !(null == a ? void 0 : a.applied)) return {
+				if (!(null == s ? void 0 : s.displaySettings.isUserEnabled) || !(null == s ? void 0 : s.applied)) return {
 					isActive: !1,
 					...u
 				};
-				const m = a.applied.templateId,
-					p = Object(n.g)(a.applied);
+				const m = s.applied.templateId,
+					p = Object(n.g)(s.applied);
 				return p ? {
 					id: m,
 					title: p,
@@ -2048,13 +2051,13 @@
 					...u
 				}
 			}
-			const d = () => e => ({
+			const l = () => e => ({
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...o.defaults(e)
+					...c.defaults(e)
 				}),
-				l = e => t => {
+				u = e => t => {
 					const {
 						userFlair: r,
 						achievementFlair: s
@@ -2063,7 +2066,7 @@
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...o.defaults(t),
+						...c.defaults(t),
 						userFlair: {
 							id: null == r ? void 0 : r.id,
 							title: r && Object(n.g)(r),
@@ -2074,12 +2077,33 @@
 						}
 					}
 				},
-				u = () => e => ({
+				m = () => e => ({
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...o.defaults(e)
-				})
+					...c.defaults(e)
+				}),
+				p = (e, t, r) => i => {
+					const a = Object(s.e)(i, {
+							commentId: e
+						}),
+						d = Object(o.c)(i, {
+							subredditId: t,
+							userId: r
+						});
+					return {
+						source: "meta",
+						action: "hover",
+						noun: "achieve_flair",
+						...c.defaults(i),
+						userFlair: {
+							id: null == a ? void 0 : a.templateId,
+							title: a ? Object(n.g)(a) : void 0,
+							achievementFlairId: null == d ? void 0 : d.type,
+							achievementFlairTitle: null == d ? void 0 : d.name
+						}
+					}
+				}
 		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, r) {
 			"use strict";
@@ -2717,9 +2741,9 @@
 			})), r.d(t, "f", (function() {
 				return _
 			})), r.d(t, "g", (function() {
-				return C
-			})), r.d(t, "i", (function() {
 				return I
+			})), r.d(t, "i", (function() {
+				return C
 			})), r.d(t, "k", (function() {
 				return k
 			})), r.d(t, "j", (function() {
@@ -2762,8 +2786,8 @@
 				x = e => e.features.goldPurchase.payment.rememberCard,
 				y = e => e.features.goldPurchase.payment.useSavedCard,
 				_ = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				C = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				I = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				I = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				P = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				E = e => e.features.goldPurchase.payment.stripeToken.pending,
@@ -2897,4 +2921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7d569650953bf9b17cf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1c636ef65281c5c23fe9.js.map
