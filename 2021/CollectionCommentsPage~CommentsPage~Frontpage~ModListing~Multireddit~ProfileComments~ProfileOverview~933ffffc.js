@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.d5b19fe51ad4e4f08162.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.a38a5c4ebe6501936582.js
+// Retrieved at 6/14/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -590,10 +590,10 @@
 				}).apply(this, arguments)
 			}
 			const E = Object(C.t)(),
-				S = Object(c.c)({
+				O = Object(c.c)({
 					isFakeSubreddit: C.x
 				}),
-				O = Object(d.b)(S),
+				S = Object(d.b)(O),
 				k = e => {
 					const t = {
 						interactive: !1,
@@ -615,7 +615,7 @@
 						isLoading: !0
 					}))
 				}, e));
-			var M = E(O(({
+			var M = E(S(({
 				className: e,
 				dispatch: t,
 				pageLayer: s,
@@ -847,23 +847,23 @@
 			var R = s("./src/lib/scheduler/index.ts"),
 				_ = s("./src/lib/domUtils/index.ts"),
 				E = s("./src/lib/LinkedListMap/index.ts");
-			const S = (e, t) => e < 0 ? t + e : e % t;
-			class O {
+			const O = (e, t) => e < 0 ? t + e : e % t;
+			class S {
 				constructor(e) {
 					this.head = 0, this.size = 0, this.maxSize = e, this.items = new Array(e)
 				}
 				push(e) {
-					return this.items[this.head] = e, this.head = S(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
+					return this.items[this.head] = e, this.head = O(this.head + 1, this.maxSize), this.size < this.maxSize && this.size++, this
 				}
 				pop() {
 					if (this.size > 0) {
-						const e = S(this.head - 1, this.maxSize),
+						const e = O(this.head - 1, this.maxSize),
 							t = this.items[e];
 						return this.items[e] = void 0, this.head = e, this.size--, t
 					}
 				}
 				forEach(e) {
-					let t = this.size < this.maxSize ? S(this.head - this.size, this.maxSize) : this.head;
+					let t = this.size < this.maxSize ? O(this.head - this.size, this.maxSize) : this.head;
 					for (let s = 0; s < this.size; s++) e(this.items[t], s, this.size), t = (t + 1) % this.maxSize
 				}
 				map(e) {
@@ -1242,7 +1242,7 @@
 							return n >= s + e && n < i
 						}
 						return !1
-					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new E.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new O(J), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = oe;
+					}, this.childMap = de(e), this.containerRef = null, this.itemsInViewport = new E.a("id"), this.loadMoreFired = !1, this.pixelsPerMSRing = new S(J), this.wrapperRefFNs = {}, this.childRefFns = {}, this.childrenToHide = {}, this.childrenToShow = {}, this.canFocusItems = !0, this.focusedChild = void 0, this.hiddenChildren = {}, this.nextVisibleChildrenIndex = 0, this.lastVisibleEl = null, this.lastVisibleElId = null, this.remeasureWhenShown = {}, this.timeoutForUpdateIdleCallback = oe;
 					const t = this.getVisibleChildren();
 					t.length && (this.lastVisibleElId = t[t.length - 1].id), this.nextVisibleChildrenIndex = t.length, this.updateRenderableChildrenHandle = null, this.state = {
 						renderableChildren: t
@@ -1634,30 +1634,40 @@
 				r = s("./node_modules/react/index.js"),
 				a = s.n(r),
 				l = s("./src/lib/constants/index.ts"),
-				d = s("./src/reddit/controls/Button/index.tsx"),
-				c = s("./src/reddit/components/BackToTop/index.m.less"),
-				h = s.n(c);
+				d = s("./src/reddit/constants/elementIds.ts"),
+				c = s("./src/reddit/controls/Button/index.tsx"),
+				h = s("./src/reddit/components/BackToTop/index.m.less"),
+				m = s.n(h);
 			const {
-				fbt: m
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var p = e => a.a.createElement("div", {
-					className: Object(i.a)(e.className, h.a.container),
-					style: e.style
-				}, a.a.createElement(d.i, {
-					className: h.a.button,
-					onClick: () => window.scroll(0, 0)
-				}, m._("Back to Top", null, {
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), u = e => {
+				if (e) {
+					const e = document.getElementById(d.d);
+					e && e.scroll(0, 0)
+				} else window.scroll(0, 0)
+			};
+			var b = ({
+					className: e,
+					isOverlay: t,
+					style: s
+				}) => a.a.createElement("div", {
+					className: Object(i.a)(e, m.a.container),
+					style: s
+				}, a.a.createElement(c.i, {
+					className: m.a.button,
+					onClick: () => u(t)
+				}, p._("Back to Top", null, {
 					hk: "YjBtV"
 				}))),
-				u = s("./src/reddit/components/SidebarFooter/index.tsx"),
-				b = s("./src/reddit/constants/componentSizes.ts"),
-				g = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				f = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				v = s.n(f),
-				C = s("./src/lib/lessComponent.tsx");
+				g = s("./src/reddit/components/SidebarFooter/index.tsx"),
+				f = s("./src/reddit/constants/componentSizes.ts"),
+				v = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				C = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				y = s.n(C),
+				w = s("./src/lib/lessComponent.tsx");
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i])
@@ -1665,35 +1675,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const w = l.e[1] + 24,
-				x = b.f + 8 + 152 + 16,
-				I = x + w + 8,
-				P = C.a.div("Container", v.a),
-				R = C.a.wrapped(({
+			const I = l.e[1] + 24,
+				P = f.f + 8 + 152 + 16,
+				R = P + I + 8,
+				_ = w.a.div("Container", y.a),
+				E = w.a.wrapped(({
 					className: e,
-					...t
-				}) => a.a.createElement(p, y({
+					isOverlay: t,
+					...s
+				}) => a.a.createElement(b, x({
 					className: e,
+					isOverlay: t,
 					style: {
 						top: "calc(100vh - 8px)"
 					}
-				}, t)), "BackToTop", v.a),
-				_ = ({
+				}, s)), "BackToTop", y.a),
+				O = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
 					isSticky: n
 				}) => a.a.createElement("div", {
 					className: Object(i.a)(t, {
-						[v.a.StickyStyles]: n && !s,
-						[v.a.StickyStylesFakeOverlay]: !!s
+						[y.a.StickyStyles]: n && !s,
+						[y.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class E extends r.Component {
+			class S extends r.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > I,
-						shouldFooterSticky: this.windowHeight > x
+						shouldAdSticky: this.windowHeight > R,
+						shouldFooterSticky: this.windowHeight > P
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -1723,26 +1735,30 @@
 					window.removeEventListener("resize", this.handleResize)
 				}
 				render() {
+					var e;
 					const {
 						props: {
-							adComponent: e,
-							adComponentOnFakeOverlay: t,
-							children: s,
-							className: i,
-							hideFooter: n
+							adComponent: t,
+							adComponentOnFakeOverlay: s,
+							children: i,
+							className: n,
+							hideFooter: o,
+							pageLayer: r
 						}
-					} = this, o = this.state.isAdSticky && !(!e && !s);
-					return a.a.createElement(P, {
-						className: i,
+					} = this, l = this.state.isAdSticky && !(!t && !i);
+					return a.a.createElement(_, {
+						className: n,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(_, {
-						isFakeOverlay: t,
-						isSticky: o
-					}, e, s, !n && a.a.createElement(u.a, null)), !this.props.hideBackToTop && a.a.createElement(R, null))
+					}, a.a.createElement(O, {
+						isFakeOverlay: s,
+						isSticky: l
+					}, t, i, !o && a.a.createElement(g.a, null)), !this.props.hideBackToTop && a.a.createElement(E, {
+						isOverlay: !!(null === (e = null == r ? void 0 : r.locationState) || void 0 === e ? void 0 : e.isOverlay)
+					}))
 				}
 			}
-			const S = Object(g.t)();
-			t.a = S(E)
+			const k = Object(v.t)();
+			t.a = k(S)
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1791,7 +1807,7 @@
 				R = s.n(P);
 			const {
 				fbt: _
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), E = Object(h.t)(), S = Object(o.b)(() => Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), E = Object(h.t)(), O = Object(o.b)(() => Object(r.c)({
 				forceRedditStyle: (e, t) => {
 					const s = Object(h.m)(e, t) || void 0,
 						i = t.redditStyle || Object(g.l)(e, {
@@ -1804,7 +1820,7 @@
 				subredditId: h.m,
 				topPostVariant: b.d
 			}));
-			class O extends n.a.Component {
+			class S extends n.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = n.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1877,7 +1893,7 @@
 					})))
 				}
 			}
-			t.a = E(S(Object(l.a)(Object(c.c)(O))))
+			t.a = E(O(Object(l.a)(Object(c.c)(S))))
 		},
 		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, s) {
 			"use strict";
@@ -2331,4 +2347,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.d5b19fe51ad4e4f08162.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.a38a5c4ebe6501936582.js.map

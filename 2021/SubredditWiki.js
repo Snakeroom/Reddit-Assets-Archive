@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.d791e0c8875bcd28b126.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.00417102137294f6b7ef.js
+// Retrieved at 6/14/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -158,7 +158,7 @@
 		"./src/reddit/components/OverflowMenu/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return y
+				return f
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				i = s("./node_modules/react/index.js"),
@@ -177,8 +177,8 @@
 				g = s.n(x);
 			const k = c.a.wrapped(u.a, "_Dropdown", g.a),
 				w = Object(m.a)(k),
-				f = c.a.button("MenuButton", g.a),
-				y = c.a.wrapped(p.b, "DropdownRow", g.a),
+				y = c.a.button("MenuButton", g.a),
+				f = c.a.wrapped(p.b, "DropdownRow", g.a),
 				_ = Object(a.c)({
 					dropdownIsOpen: (e, {
 						dropdownId: t
@@ -194,7 +194,7 @@
 				E = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = C(e => r.a.createElement(f, {
+			t.b = C(e => r.a.createElement(y, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": n.fbt._("more options", null, {
@@ -401,30 +401,40 @@
 				o = s("./node_modules/react/index.js"),
 				a = s.n(o),
 				d = s("./src/lib/constants/index.ts"),
-				c = s("./src/reddit/controls/Button/index.tsx"),
-				l = s("./src/reddit/components/BackToTop/index.m.less"),
-				m = s.n(l);
+				c = s("./src/reddit/constants/elementIds.ts"),
+				l = s("./src/reddit/controls/Button/index.tsx"),
+				m = s("./src/reddit/components/BackToTop/index.m.less"),
+				u = s.n(m);
 			const {
-				fbt: u
-			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var p = e => a.a.createElement("div", {
-					className: Object(n.a)(e.className, m.a.container),
-					style: e.style
-				}, a.a.createElement(c.i, {
-					className: m.a.button,
-					onClick: () => window.scroll(0, 0)
-				}, u._("Back to Top", null, {
+				fbt: p
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
+				if (e) {
+					const e = document.getElementById(c.d);
+					e && e.scroll(0, 0)
+				} else window.scroll(0, 0)
+			};
+			var b = ({
+					className: e,
+					isOverlay: t,
+					style: s
+				}) => a.a.createElement("div", {
+					className: Object(n.a)(e, u.a.container),
+					style: s
+				}, a.a.createElement(l.i, {
+					className: u.a.button,
+					onClick: () => h(t)
+				}, p._("Back to Top", null, {
 					hk: "YjBtV"
 				}))),
-				h = s("./src/reddit/components/SidebarFooter/index.tsx"),
-				b = s("./src/reddit/constants/componentSizes.ts"),
-				x = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				g = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				k = s.n(g),
-				w = s("./src/lib/lessComponent.tsx");
+				x = s("./src/reddit/components/SidebarFooter/index.tsx"),
+				g = s("./src/reddit/constants/componentSizes.ts"),
+				k = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				w = s("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				y = s.n(w),
+				f = s("./src/lib/lessComponent.tsx");
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -432,35 +442,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const y = d.e[1] + 24,
-				_ = b.f + 8 + 152 + 16,
-				C = _ + y + 8,
-				E = w.a.div("Container", k.a),
-				S = w.a.wrapped(({
+			const C = d.e[1] + 24,
+				E = g.f + 8 + 152 + 16,
+				S = E + C + 8,
+				O = f.a.div("Container", y.a),
+				v = f.a.wrapped(({
 					className: e,
-					...t
-				}) => a.a.createElement(p, f({
+					isOverlay: t,
+					...s
+				}) => a.a.createElement(b, _({
 					className: e,
+					isOverlay: t,
 					style: {
 						top: "calc(100vh - 8px)"
 					}
-				}, t)), "BackToTop", k.a),
-				O = ({
+				}, s)), "BackToTop", y.a),
+				N = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
 					isSticky: i
 				}) => a.a.createElement("div", {
 					className: Object(n.a)(t, {
-						[k.a.StickyStyles]: i && !s,
-						[k.a.StickyStylesFakeOverlay]: !!s
+						[y.a.StickyStyles]: i && !s,
+						[y.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class v extends o.Component {
+			class j extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > C,
-						shouldFooterSticky: this.windowHeight > _
+						shouldAdSticky: this.windowHeight > S,
+						shouldFooterSticky: this.windowHeight > E
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -490,26 +502,30 @@
 					window.removeEventListener("resize", this.handleResize)
 				}
 				render() {
+					var e;
 					const {
 						props: {
-							adComponent: e,
-							adComponentOnFakeOverlay: t,
-							children: s,
-							className: n,
-							hideFooter: i
+							adComponent: t,
+							adComponentOnFakeOverlay: s,
+							children: n,
+							className: i,
+							hideFooter: r,
+							pageLayer: o
 						}
-					} = this, r = this.state.isAdSticky && !(!e && !s);
-					return a.a.createElement(E, {
-						className: n,
+					} = this, d = this.state.isAdSticky && !(!t && !n);
+					return a.a.createElement(O, {
+						className: i,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(O, {
-						isFakeOverlay: t,
-						isSticky: r
-					}, e, s, !i && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(S, null))
+					}, a.a.createElement(N, {
+						isFakeOverlay: s,
+						isSticky: d
+					}, t, n, !r && a.a.createElement(x.a, null)), !this.props.hideBackToTop && a.a.createElement(v, {
+						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
+					}))
 				}
 			}
-			const N = Object(x.t)();
-			t.a = N(v)
+			const T = Object(k.t)();
+			t.a = T(j)
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -544,14 +560,14 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				k = s("./src/reddit/models/Theme/index.ts"),
 				w = s("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const f = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(w.a)(e).widgetColors.sidebarWidgetBackgroundColor,
-				y = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(w.a)(e).widgetColors.sidebarWidgetHeaderColor,
+			const y = e => e.styles && e.styles.backgroundColor ? e.styles.backgroundColor : Object(w.a)(e).widgetColors.sidebarWidgetBackgroundColor,
+				f = e => e.styles && e.styles.headerColor ? e.styles.headerColor : Object(w.a)(e).widgetColors.sidebarWidgetHeaderColor,
 				_ = e => {
-					const t = f(e);
+					const t = y(e);
 					return Object(k.f)(t)
 				},
 				C = e => {
-					const t = y(e);
+					const t = f(e);
 					return Object(k.f)(t)
 				};
 			var E = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
@@ -594,11 +610,11 @@
 				}
 				getWidgetBackgroundStyles() {
 					const e = {};
-					return e.backgroundColor = f(this.props), e.borderColor = Object(h.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = _(this.props), e
+					return e.backgroundColor = y(this.props), e.borderColor = Object(h.d)(e.backgroundColor, this.props.nigtmode), e.color = e.fill = _(this.props), e
 				}
 				getWidgetHeaderStyles() {
 					const e = {};
-					return e.backgroundColor = y(this.props), e.color = e.fill = C(this.props), e
+					return e.backgroundColor = f(this.props), e.color = e.fill = C(this.props), e
 				}
 				render() {
 					const {
@@ -779,8 +795,8 @@
 				g = s("./src/reddit/components/Wiki/WikiPageSource/index.tsx"),
 				k = s("./src/reddit/constants/parameters.ts"),
 				w = s("./src/reddit/constants/wiki.ts"),
-				f = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				y = s("./src/reddit/helpers/wiki/wikiRevision.ts"),
+				y = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				f = s("./src/reddit/helpers/wiki/wikiRevision.ts"),
 				_ = s("./src/reddit/components/Wiki/RevisionsHistory/index.tsx"),
 				C = s("./src/reddit/components/JumpToContent/index.tsx"),
 				E = s("./src/reddit/components/Wiki/WikiPageContent/index.tsx"),
@@ -839,12 +855,12 @@
 							});
 						default:
 							return o && a && d ? i.a.createElement(b.a, {
-								comparisonRevisionId: Object(y.a)(d),
-								revisionId: Object(y.a)(a),
+								comparisonRevisionId: Object(f.a)(d),
+								revisionId: Object(f.a)(a),
 								subredditName: t,
 								wikiPageName: o
 							}) : o && (a || c) ? i.a.createElement(g.a, {
-								revisionId: a ? Object(y.a)(a) : void 0,
+								revisionId: a ? Object(f.a)(a) : void 0,
 								subredditName: t,
 								wikiPageName: o
 							}) : o ? i.a.createElement(N, {
@@ -854,18 +870,18 @@
 					}
 				}
 			}
-			var W = Object(f.t)()(P),
+			var W = Object(y.t)()(P),
 				R = s("./src/reddit/constants/componentSizes.ts"),
 				M = s("./src/reddit/helpers/getSubredditErrorProps/index.ts"),
 				I = s("./src/reddit/layout/page/Listing/index.tsx"),
 				D = s("./src/reddit/selectors/subreddit.ts"),
 				L = s("./src/reddit/selectors/user.ts");
-			const B = Object(f.t)(),
+			const B = Object(y.t)(),
 				A = Object(r.b)(() => Object(o.c)({
 					contentGateInfo: (e, {
 						match: t
 					}) => Object(L.e)(e, t.params.subredditName),
-					layout: f.O,
+					layout: y.O,
 					over18Pref: L.db,
 					subreddit: (e, {
 						match: t
@@ -924,4 +940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d791e0c8875bcd28b126.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.00417102137294f6b7ef.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1143b3fef92da32f4fdf.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1a6d02cacd26933a3a28.js
+// Retrieved at 6/14/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -3718,30 +3718,40 @@
 				o = n("./node_modules/react/index.js"),
 				a = n.n(o),
 				c = n("./src/lib/constants/index.ts"),
-				d = n("./src/reddit/controls/Button/index.tsx"),
-				l = n("./src/reddit/components/BackToTop/index.m.less"),
-				u = n.n(l);
+				d = n("./src/reddit/constants/elementIds.ts"),
+				l = n("./src/reddit/controls/Button/index.tsx"),
+				u = n("./src/reddit/components/BackToTop/index.m.less"),
+				m = n.n(u);
 			const {
-				fbt: m
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var p = e => a.a.createElement("div", {
-					className: Object(s.a)(e.className, u.a.container),
-					style: e.style
-				}, a.a.createElement(d.i, {
-					className: u.a.button,
-					onClick: () => window.scroll(0, 0)
-				}, m._("Back to Top", null, {
+				fbt: p
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
+				if (e) {
+					const e = document.getElementById(d.d);
+					e && e.scroll(0, 0)
+				} else window.scroll(0, 0)
+			};
+			var b = ({
+					className: e,
+					isOverlay: t,
+					style: n
+				}) => a.a.createElement("div", {
+					className: Object(s.a)(e, m.a.container),
+					style: n
+				}, a.a.createElement(l.i, {
+					className: m.a.button,
+					onClick: () => h(t)
+				}, p._("Back to Top", null, {
 					hk: "YjBtV"
 				}))),
-				h = n("./src/reddit/components/SidebarFooter/index.tsx"),
-				b = n("./src/reddit/constants/componentSizes.ts"),
-				f = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				_ = n("./src/reddit/components/SidebarStickyBottom/index.m.less"),
-				g = n.n(_),
-				x = n("./src/lib/lessComponent.tsx");
+				f = n("./src/reddit/components/SidebarFooter/index.tsx"),
+				_ = n("./src/reddit/constants/componentSizes.ts"),
+				g = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				x = n("./src/reddit/components/SidebarStickyBottom/index.m.less"),
+				y = n.n(x),
+				v = n("./src/lib/lessComponent.tsx");
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function E() {
+				return (E = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -3749,35 +3759,37 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const v = c.e[1] + 24,
-				E = b.f + 8 + 152 + 16,
-				k = E + v + 8,
-				w = x.a.div("Container", g.a),
-				C = x.a.wrapped(({
+			const k = c.e[1] + 24,
+				w = _.f + 8 + 152 + 16,
+				C = w + k + 8,
+				j = v.a.div("Container", y.a),
+				S = v.a.wrapped(({
 					className: e,
-					...t
-				}) => a.a.createElement(p, y({
+					isOverlay: t,
+					...n
+				}) => a.a.createElement(b, E({
 					className: e,
+					isOverlay: t,
 					style: {
 						top: "calc(100vh - 8px)"
 					}
-				}, t)), "BackToTop", g.a),
-				j = ({
+				}, n)), "BackToTop", y.a),
+				O = ({
 					children: e,
 					className: t,
 					isFakeOverlay: n,
 					isSticky: r
 				}) => a.a.createElement("div", {
 					className: Object(s.a)(t, {
-						[g.a.StickyStyles]: r && !n,
-						[g.a.StickyStylesFakeOverlay]: !!n
+						[y.a.StickyStyles]: r && !n,
+						[y.a.StickyStylesFakeOverlay]: !!n
 					})
 				}, e);
-			class S extends o.Component {
+			class N extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > k,
-						shouldFooterSticky: this.windowHeight > E
+						shouldAdSticky: this.windowHeight > C,
+						shouldFooterSticky: this.windowHeight > w
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -3807,26 +3819,30 @@
 					window.removeEventListener("resize", this.handleResize)
 				}
 				render() {
+					var e;
 					const {
 						props: {
-							adComponent: e,
-							adComponentOnFakeOverlay: t,
-							children: n,
-							className: s,
-							hideFooter: r
+							adComponent: t,
+							adComponentOnFakeOverlay: n,
+							children: s,
+							className: r,
+							hideFooter: i,
+							pageLayer: o
 						}
-					} = this, i = this.state.isAdSticky && !(!e && !n);
-					return a.a.createElement(w, {
-						className: s,
+					} = this, c = this.state.isAdSticky && !(!t && !s);
+					return a.a.createElement(j, {
+						className: r,
 						innerRef: this.setWrapperRef
-					}, a.a.createElement(j, {
-						isFakeOverlay: t,
-						isSticky: i
-					}, e, n, !r && a.a.createElement(h.a, null)), !this.props.hideBackToTop && a.a.createElement(C, null))
+					}, a.a.createElement(O, {
+						isFakeOverlay: n,
+						isSticky: c
+					}, t, s, !i && a.a.createElement(f.a, null)), !this.props.hideBackToTop && a.a.createElement(S, {
+						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
+					}))
 				}
 			}
-			const O = Object(f.t)();
-			t.a = O(S)
+			const T = Object(g.t)();
+			t.a = T(N)
 		},
 		"./src/reddit/components/SidebarTrophyCase/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -5399,4 +5415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1143b3fef92da32f4fdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1a6d02cacd26933a3a28.js.map
