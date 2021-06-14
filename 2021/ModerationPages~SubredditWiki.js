@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.bb1142fc31b7ac22a80e.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.eecb44f6ca9fa392f546.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/reddit/actions/pages/shared.ts": function(e, t, r) {
@@ -33,7 +33,7 @@
 			})), r.d(t, "subredditWikiDataFailed", (function() {
 				return Qe
 			})), r.d(t, "fetchSubredditWikiData", (function() {
-				return ze
+				return Xe
 			})), r.d(t, "handleWikiRedirects", (function() {
 				return $e
 			})), r.d(t, "subredditWikDataRequested", (function() {
@@ -186,7 +186,7 @@
 				},
 				q = r("./src/reddit/actions/wiki/wikiRevisions/constants.ts");
 			const Q = {};
-			var X = (e = Q, t) => {
+			var z = (e = Q, t) => {
 					switch (t.type) {
 						case f.b: {
 							const {
@@ -214,11 +214,11 @@
 							return e
 					}
 				},
-				z = r("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
+				X = r("./src/reddit/actions/wiki/wikiPageSettings/constants.ts");
 			const $ = {};
 			var Z = (e = $, t) => {
 					switch (t.type) {
-						case z.c: {
+						case X.c: {
 							const {
 								settings: r,
 								pageKey: s
@@ -228,7 +228,7 @@
 								[s]: r
 							} : e
 						}
-						case z.d: {
+						case X.d: {
 							const {
 								isVisible: r,
 								editPermissions: s,
@@ -243,7 +243,7 @@
 								}
 							} : e
 						}
-						case z.b: {
+						case X.b: {
 							const {
 								editorsInfo: r,
 								afterToken: s,
@@ -260,7 +260,7 @@
 								}
 							}
 						}
-						case z.a: {
+						case X.a: {
 							const {
 								username: r,
 								pageKey: s
@@ -781,7 +781,7 @@
 				He = Object(W.c)({
 					diff: F,
 					directory: G,
-					pages: X,
+					pages: z,
 					pageSettings: Z,
 					revisions: de,
 					wikiBannedContributors: je,
@@ -795,10 +795,10 @@
 			const Ge = Object(d.a)(f.c),
 				qe = Object(d.a)(f.b),
 				Qe = Object(d.a)(f.a),
-				Xe = (e, t) => !!Object(O.b)(e, {
+				ze = (e, t) => !!Object(O.b)(e, {
 					subredditName: t
 				}),
-				ze = e => async (t, r, n) => {
+				Xe = e => async (t, r, n) => {
 					const {
 						canShowFailToast: i,
 						wikiPageName: d
@@ -835,7 +835,7 @@
 						buttonText: s.fbt._("Retry", null, {
 							hk: "mgOpG"
 						}),
-						buttonAction: ze(e)
+						buttonAction: Xe(e)
 					}))), !(!m.ok || !a()(b.data.subreddit)) || !(!m.ok || !p)
 				}, $e = e => async (t, r) => {
 					const {
@@ -864,9 +864,9 @@
 						_ = t === o.Zb.WikiContributors, N = t === o.Zb.WikiBanned
 					}
 					const j = a(),
-						T = (x || r) && !Xe(j, d),
+						T = (x || r) && !ze(j, d),
 						U = !!l && !((e, t, r, s) => {
-							return r === S.j ? Xe(e, t) : !!Object(O.c)(e, {
+							return r === S.j ? ze(e, t) : !!Object(O.c)(e, {
 								subredditName: t,
 								wikiPageName: r,
 								revisionId: s
@@ -883,7 +883,7 @@
 							l = n.listings.postOrder.api.pending[i],
 							u = !!n.listings.postOrder.ids[i];
 						return !!(l || u && !d) || (await r(Object(p.subredditDataRequested)(i, e, a, t)), !s().listings.postOrder.api.error[i])
-					})(d))), (T || U) && R.push(n(ze({
+					})(d))), (T || U) && R.push(n(Xe({
 						includeDirectory: T,
 						includePageData: U,
 						revisionId: f,
@@ -917,7 +917,7 @@
 					t(u.l({
 						title: s.wikiPageName ? `${s.wikiPageName} - ${a}` : `wiki - ${a}`
 					})), await t(Ze(s, n));
-					const i = Object(B.A)(r(), {
+					const i = Object(B.z)(r(), {
 							subredditName: a
 						}),
 						o = r();
@@ -1125,8 +1125,8 @@
 					api: G,
 					result: q
 				});
-			const X = {};
-			var z = (e = X, t) => {
+			const z = {};
+			var X = (e = z, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -1170,7 +1170,7 @@
 					loadMore: B,
 					models: M,
 					search: Q,
-					userOrder: z
+					userOrder: X
 				});
 			Object(y.a)({
 				features: {
@@ -1291,10 +1291,10 @@
 				}, de = (e, t) => async (r, s) => {
 					const n = s();
 					await Promise.all([(async () => {
-						if (!Object(I.b)(u.a.BAN_USER)(n) && !Object(_.R)(n, {
+						if (!Object(I.b)(u.a.BAN_USER)(n) && !Object(_.Q)(n, {
 								subredditId: e
 							})) {
-							const t = Object(_.U)(n, {
+							const t = Object(_.T)(n, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
@@ -1871,8 +1871,8 @@
 							wikiPageName: t
 						},
 						o = await p(n.gqlContext(), a),
-						d = Object(h.F)(s(), e);
-					if (Object(h.W)(s(), d) || await r(Object(i.h)(e, d)), o.ok) {
+						d = Object(h.E)(s(), e);
+					if (Object(h.V)(s(), d) || await r(Object(i.h)(e, d)), o.ok) {
 						const e = o.body,
 							t = e.data.subreddit && e.data.subreddit.wiki;
 						if (t && t.page) {
@@ -2411,8 +2411,8 @@
 				G = r("./src/reddit/icons/fonts/index.tsx"),
 				q = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				Q = r("./src/reddit/selectors/bannedUser.ts"),
-				X = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
-				z = r.n(X);
+				z = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
+				X = r.n(z);
 			const {
 				fbt: $
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = Object(i.c)({
@@ -2450,7 +2450,7 @@
 					}, n.a.createElement(G.a, {
 						name: "ban",
 						isFilled: !0,
-						className: z.a.icon
+						className: X.a.icon
 					}), $._("Unban User", null, {
 						hk: "1aASyW"
 					})) : n.a.createElement(H.a, {
@@ -2460,7 +2460,7 @@
 						}
 					}, n.a.createElement(G.a, {
 						name: "ban",
-						className: z.a.icon
+						className: X.a.icon
 					}), $._("Ban User", null, {
 						hk: "3OhuLx"
 					})), r && n.a.createElement(H.a, {
@@ -2470,7 +2470,7 @@
 						}
 					}, n.a.createElement(G.a, {
 						name: "mod_mute",
-						className: z.a.icon
+						className: X.a.icon
 					}), $._("Mute User", null, {
 						hk: "3MCujH"
 					})))
@@ -2513,7 +2513,7 @@
 					}
 				}, n.a.createElement(G.a, {
 					name: "tag",
-					className: z.a.icon
+					className: X.a.icon
 				}), ee._("Edit user flair", null, {
 					hk: "4mTxM"
 				}))),
@@ -2754,7 +2754,7 @@
 					}) => t ? Object(g.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(p.m)(t) && Object(p.gb)(e, t),
+					userIsBanned: (e, t) => !!Object(p.l)(t) && Object(p.eb)(e, t),
 					userProfileStyles: (e, t) => Object(b.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(m.h)(e, {
@@ -4096,4 +4096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.bb1142fc31b7ac22a80e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.eecb44f6ca9fa392f546.js.map

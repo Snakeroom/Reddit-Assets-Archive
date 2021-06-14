@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.990557cd315adec75ae2.js
-// Retrieved at 6/9/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bab1e7e4710eaeb004ad.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -84,7 +84,7 @@
 				const a = Object(r.e)(e => Object(i.i)(e, {
 						subredditId: t
 					})),
-					m = Object(r.e)(e => Object(d.U)(e, {
+					m = Object(r.e)(e => Object(d.T)(e, {
 						subredditId: t
 					})),
 					b = Object(r.e)(e => Object(i.k)(e, {
@@ -333,7 +333,7 @@
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function A({
+			function T({
 				benefits: e,
 				subreddit: t
 			}) {
@@ -401,8 +401,8 @@
 				})))))
 			}
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -423,7 +423,7 @@
 				},
 				subreddit: (e, t) => {
 					const s = Object(b.m)(e, t);
-					return s ? Object(x.U)(e, {
+					return s ? Object(x.T)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -531,12 +531,12 @@
 					priority: h.b.Primary
 				}, U._("Powerup This Community", null, {
 					hk: "3gjy90"
-				}))))) : n.a.createElement(A, {
+				}))))) : n.a.createElement(T, {
 					benefits: y,
 					subreddit: c
 				})
 			}))));
-			t.default = e => n.a.createElement(G, T({}, e, {
+			t.default = e => n.a.createElement(G, A({}, e, {
 				className: Object(l.a)(e.className, B.a.modal)
 			}))
 		},
@@ -635,4 +635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.990557cd315adec75ae2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.bab1e7e4710eaeb004ad.js.map

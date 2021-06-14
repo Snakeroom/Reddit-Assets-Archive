@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5f773072ac34bdc21ed6.js
-// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.624e420826f8c7a0022d.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1623,7 +1623,7 @@
 					gqlContext: o
 				}) => {
 					const r = n(),
-						s = Object(m.F)(r, e);
+						s = Object(m.E)(r, e);
 					if (Object(f.i)(r, {
 							subredditId: s
 						})) return Object(f.e)(r, {
@@ -2046,7 +2046,7 @@
 						thingId: n,
 						correlationId: t
 					})), o(Object(l.h)(i.a.GOLD_GILD_MODAL));
-					const h = Object(m.K)(a, {
+					const h = Object(m.J)(a, {
 						thingId: n
 					});
 					let b = null;
@@ -3705,7 +3705,7 @@
 					});
 					if (u.ok) {
 						const n = t(),
-							o = u.body && u.body.length ? u.body.map(e => Object(d.F)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							o = u.body && u.body.length ? u.body.map(e => Object(d.E)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(m({
 							subredditIds: o
 						}))
@@ -6064,7 +6064,7 @@
 					collection: {
 						subredditId: t
 					}
-				}) => t ? Object(j.U)(e, {
+				}) => t ? Object(j.T)(e, {
 					subredditId: t
 				}) : void 0,
 				user: T.j
@@ -7887,7 +7887,7 @@
 			const k = (e, t = !1, n = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
 				S = Object(c.c)({
 					flairData: C.d,
-					subreddit: y.U,
+					subreddit: y.T,
 					isMod: (e, t) => !!Object(E.k)(e, t)
 				});
 			class j extends i.a.Component {
@@ -8470,7 +8470,7 @@
 					const n = Object(b.q)(e, {
 						pageLayer: t
 					});
-					return n && Object(C.T)(e, {
+					return n && Object(C.S)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => w.has(e.kind))),
@@ -8582,7 +8582,7 @@
 				h = n.n(m);
 			const b = c.a.wrapped(d.a, "Banner", h.a),
 				f = Object(i.b)(() => Object(a.c)({
-					restrictions: p.p,
+					restrictions: p.o,
 					subreddit: u.e
 				}));
 			t.a = f(({
@@ -15789,46 +15789,6 @@
 					}, t)
 				}))
 		},
-		"./src/reddit/components/SubscribeButton/helpers/actionTemplateSource.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var o = n("./node_modules/fbt/lib/FbtPublic.js");
-			const r = ({
-					type: e
-				}) => "subreddit" === e ? "subredditActions" : "profileActions",
-				s = {
-					subredditActions: {
-						subscribe: () => o.fbt._("Join", null, {
-							hk: "3Nhj3V"
-						}),
-						subscribed: () => o.fbt._("Joined", null, {
-							hk: "1YGago"
-						}),
-						unsubscribe: () => o.fbt._("Leave", null, {
-							hk: "299znK"
-						})
-					},
-					profileActions: {
-						subscribe: () => o.fbt._("Follow", null, {
-							hk: "18PRa5"
-						}),
-						subscribed: () => o.fbt._("Following", null, {
-							hk: "sjS3y"
-						}),
-						unsubscribe: () => o.fbt._("Unfollow", null, {
-							hk: "3c0uwF"
-						})
-					}
-				},
-				i = ({
-					type: e,
-					key: t
-				}) => s[r({
-					type: e
-				})][t]()
-		},
 		"./src/reddit/components/ThumbnailSelector/index.m.less": function(e, t, n) {
 			e.exports = {
 				Component: "uqOt5KqJAqw5pe-WNxa0a",
@@ -16636,22 +16596,6 @@
 				}
 			}
 			t.a = j(T(Object(c.a)(Object(l.c)(w))))
-		},
-		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, n) {
-			"use strict";
-			var o = n("./node_modules/react-redux/es/index.js"),
-				r = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/actions/subscription/index.ts"),
-				i = n("./src/reddit/selectors/subreddit.ts");
-			t.a = Object(o.b)(() => Object(r.c)({
-				userIsSubscriber: i.hb
-			}), (e, {
-				identifier: t
-			}) => ({
-				onSubscribe: () => e(s.d([t], !0)),
-				onSubscriptionsRequested: () => e(s.e()),
-				onUnsubscribe: () => e(s.d([t], !1))
-			}))
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, n) {
 			"use strict";
@@ -25160,7 +25104,7 @@
 						{
 							subredditName: m
 						} = (null == u ? void 0 : u.urlParams) || {},
-						h = Object(s.e)(e => Object(T.F)(e, m));
+						h = Object(s.e)(e => Object(T.E)(e, m));
 					return r.a.createElement(Le.a, {
 						titleText: no._("Prediction created", null, {
 							hk: "1O6btq"
@@ -25236,7 +25180,7 @@
 					C = Object(s.e)(e => Object(xt.n)(e, {
 						pageLayer: E
 					})),
-					y = Object(s.e)(e => Object(T.U)(e, {
+					y = Object(s.e)(e => Object(T.T)(e, {
 						subredditId: C
 					})),
 					x = Object(s.e)(e => Object(eo.a)(e, {
@@ -25416,7 +25360,7 @@
 					});
 					const {
 						isCrosspostableSubreddit: c
-					} = Object(T.x)(e, {
+					} = Object(T.w)(e, {
 						subredditName: i
 					});
 					if (!c) return d.fbt._("This community does not allow for crossposting of any posts", null, {
@@ -25525,7 +25469,7 @@
 					postSchedule: S.bb,
 					postToTwitter: S.db,
 					isEditingScheduledPost: e => !!Object(me.r)(e),
-					showContributorRequestFlow: e => Object(T.r)(e, g.e.Post),
+					showContributorRequestFlow: e => Object(T.q)(e, g.e.Post),
 					showScheduledPosts: S.hb,
 					stickyPosition: S.jb,
 					submissionType: S.a,
@@ -25838,7 +25782,7 @@
 						draft: {
 							subredditId: t
 						}
-					}) => t ? Object(T.U)(e, {
+					}) => t ? Object(T.T)(e, {
 						subredditId: t
 					}) : void 0,
 					user: w.j
@@ -27521,7 +27465,7 @@
 					{
 						subredditName: a
 					} = (null == i ? void 0 : i.urlParams) || {},
-					c = Object(s.e)(e => Object(T.F)(e, a)),
+					c = Object(s.e)(e => Object(T.E)(e, a)),
 					l = Object(s.e)(e => Object(eo.a)(e, {
 						subredditId: c
 					})) || {
@@ -27574,7 +27518,7 @@
 				},
 				tournamentsEnabled: (e, {
 					subredditId: t
-				}) => !!t && Object(T.O)(e, {
+				}) => !!t && Object(T.N)(e, {
 					subredditId: t
 				}),
 				votingLengthDropdownIsOpen: e => e.tooltipId === xd
@@ -28549,7 +28493,7 @@
 				bu = Object(i.c)({
 					submissionType: S.a,
 					allowNavigationCallback: k.a,
-					contributorRequestPending: e => Object(T.g)(e, g.e.Post),
+					contributorRequestPending: e => Object(T.f)(e, g.e.Post),
 					discardGoesBack: (e, {
 						pageLayer: t
 					}) => {
@@ -30228,4 +30172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5f773072ac34bdc21ed6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.624e420826f8c7a0022d.js.map

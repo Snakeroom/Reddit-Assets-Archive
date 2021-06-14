@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.cb89f9a401f73d95ca22.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.91457642a822a5e181ba.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, s) {
@@ -323,7 +323,7 @@
 			const I = Object(o.c)({
 				currentUser: P.j,
 				powerups: U(k.i),
-				subreddit: U(C.U),
+				subreddit: U(C.T),
 				topSupporters: U(k.l),
 				userPowerupsData: k.v
 			});
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.cb89f9a401f73d95ca22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.91457642a822a5e181ba.js.map

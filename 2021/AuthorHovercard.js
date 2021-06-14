@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.c6b146a918dad852f6f9.js
-// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.94bcb72d68bd0d043778.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -398,10 +398,10 @@
 				}, ce = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(r) && !Object(E.R)(r, {
+						if (!Object(C.b)(u.a.BAN_USER)(r) && !Object(E.Q)(r, {
 								subredditId: e
 							})) {
-							const t = Object(E.U)(r, {
+							const t = Object(E.T)(r, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -552,7 +552,7 @@
 					apiContext: v
 				}) => {
 					let h = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(w.F)(l(), e.name),
+						id: Object(w.E)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -635,7 +635,7 @@
 					apiContext: s
 				}) => {
 					const a = n(),
-						o = Object(w.M)(a, {
+						o = Object(w.L)(a, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -657,7 +657,7 @@
 							type: e.type,
 							name: o.name
 						},
-						g = () => Object(w.hb)(n(), {
+						g = () => Object(w.fb)(n(), {
 							identifier: I
 						});
 					(g() || (await t(F([I], !0)), g())) && ((await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
@@ -1335,7 +1335,7 @@
 					}) => t ? Object(h.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.m)(t) && Object(b.gb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.eb)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -2800,7 +2800,7 @@
 				a = n("./src/reddit/actions/subscription/index.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: o.hb
+				userIsSubscriber: o.fb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -3602,4 +3602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c6b146a918dad852f6f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.94bcb72d68bd0d043778.js.map

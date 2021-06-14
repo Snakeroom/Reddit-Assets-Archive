@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.cd686b1ff2bef5616566.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.395c6ee09d16dfa2e64c.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -138,7 +138,7 @@
 							models: t,
 							utcTimeStamp: c
 						}))
-					} else s(I({
+					} else s(L({
 						error: i.error,
 						utcTimeStamp: c
 					}))
@@ -150,13 +150,13 @@
 					s(b());
 					const i = Date.now(),
 						c = e.replace("r/", ""),
-						u = Object(l.F)(o, c),
+						u = Object(l.E)(o, c),
 						m = await Object(a.b)(r(), {
 							subredditId: u,
 							options: t
 						}),
 						p = m.body;
-					m.ok && p && p.data || s(I({
+					m.ok && p && p.data || s(L({
 						error: m.error,
 						utcTimeStamp: i
 					}));
@@ -178,7 +178,7 @@
 					}))
 				}, S = e => async t => {
 					t(v(e))
-				}, I = e => async t => {
+				}, L = e => async t => {
 					t(y(e))
 				}
 		},
@@ -286,8 +286,8 @@
 			var j = s("./src/reddit/models/Toast/index.ts"),
 				x = s("./src/reddit/selectors/profile.ts"),
 				S = s("./src/reddit/selectors/subreddit.ts"),
-				I = s("./src/reddit/selectors/subscriptions.ts"),
-				L = s("./src/reddit/selectors/user.ts");
+				L = s("./src/reddit/selectors/subscriptions.ts"),
+				I = s("./src/reddit/selectors/user.ts");
 			const C = () => n.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
@@ -314,7 +314,7 @@
 					apiContext: f
 				}) => {
 					let v = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(S.F)(l(), e.name),
+						id: Object(S.E)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -322,10 +322,10 @@
 						name: `${r.dc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(L.K)(l())) return o(Object(d.k)({
+					if (!Object(I.K)(l())) return o(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void o(Object(c.j)());
-					const O = Object(L.j)(l());
+					const O = Object(I.j)(l());
 					if (O) {
 						const t = v.length,
 							s = e.length;
@@ -342,7 +342,7 @@
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
 							subredditModels: l().subreddits.models,
-							subscriptionsCount: Object(I.b)(l()),
+							subscriptionsCount: Object(L.b)(l()),
 							userIsSubscriber: t,
 							widgetId: s
 						})), (await ((e, {
@@ -384,7 +384,7 @@
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
 							subredditModels: l().subreddits.models,
-							subscriptionsCount: Object(I.b)(l()),
+							subscriptionsCount: Object(L.b)(l()),
 							userIsSubscriber: !t,
 							widgetId: s
 						}));
@@ -397,7 +397,7 @@
 					apiContext: n
 				}) => {
 					const o = s(),
-						i = Object(S.M)(o, {
+						i = Object(S.L)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -419,7 +419,7 @@
 							type: e.type,
 							name: i.name
 						},
-						_ = () => Object(S.hb)(s(), {
+						_ = () => Object(S.fb)(s(), {
 							identifier: w
 						});
 					(_() || (await t(A([w], !0)), _())) && ((await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
@@ -474,7 +474,7 @@
 				}) => {
 					const i = s(),
 						a = i.multireddits.models;
-					if (!Object(L.K)(i)) return;
+					if (!Object(I.K)(i)) return;
 					const c = (e = !0) => {
 							t(Object(u.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
@@ -682,8 +682,8 @@
 				j = s("./src/reddit/constants/keycodes.ts"),
 				x = s("./src/reddit/helpers/trackers/rpan.ts"),
 				S = s("./src/reddit/selectors/media.ts"),
-				I = s("./src/reddit/selectors/platform.ts"),
-				L = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				L = s("./src/reddit/selectors/platform.ts"),
+				I = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				C = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				k = s("./src/reddit/selectors/user.ts"),
 				N = s("./src/reddit/selectors/video.ts"),
@@ -695,9 +695,9 @@
 				playerName: "RPAN Listing Player"
 			}), A = 3e3, V = Object(c.c)({
 				autoplay: k.b,
-				isOverlayOpen: I.h,
+				isOverlayOpen: L.h,
 				mutedInFeed: N.i,
-				unavailableVideoUrl: L.o,
+				unavailableVideoUrl: I.o,
 				volumeInFeed: S.d,
 				currentStream: (e, {
 					postId: t
@@ -1285,9 +1285,9 @@
 			})), s.d(t, "r", (function() {
 				return S
 			})), s.d(t, "x", (function() {
-				return I
-			})), s.d(t, "F", (function() {
 				return L
+			})), s.d(t, "F", (function() {
+				return I
 			})), s.d(t, "s", (function() {
 				return C
 			})), s.d(t, "c", (function() {
@@ -1507,14 +1507,14 @@
 					playback: c(n, t, s),
 					...a(n, t)
 				}),
-				I = (e, t) => s => ({
+				L = (e, t) => s => ({
 					source: "stream_player",
 					action: "scrub",
 					noun: "video",
 					playback: c(s, e, t),
 					...d(s)
 				}),
-				L = e => t => ({
+				I = e => t => ({
 					source: "post",
 					action: "view",
 					noun: "post",
@@ -1854,7 +1854,7 @@
 			})), s.d(t, "m", (function() {
 				return x
 			})), s.d(t, "i", (function() {
-				return L
+				return I
 			})), s.d(t, "d", (function() {
 				return M
 			})), s.d(t, "h", (function() {
@@ -1980,7 +1980,7 @@
 						n = t.filter(e => !s.has(e));
 					if (n.length) return n[0]
 				}),
-				I = Object(n.a)((e, {
+				L = Object(n.a)((e, {
 					streamIdFromPath: t
 				}) => t, _, (e, {
 					related: t,
@@ -2000,10 +2000,10 @@
 					});
 					return a ? a.post.id : void 0
 				}),
-				L = Object(r.a)(Object(n.a)(I, _, (e, t) => e ? t[e] : void 0)),
+				I = Object(r.a)(Object(n.a)(L, _, (e, t) => e ? t[e] : void 0)),
 				C = Object(n.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.g)(t) : void 0, I, h, a.h, (e, {
+				}) => t ? Object(o.g)(t) : void 0, L, h, a.h, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: n
@@ -2079,4 +2079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.cd686b1ff2bef5616566.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.395c6ee09d16dfa2e64c.js.map

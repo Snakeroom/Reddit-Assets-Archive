@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.cbe5690d0ae65b963772.js
-// Retrieved at 6/3/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9ae8269100d7c949b4c7.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -144,9 +144,9 @@
 				})),
 				G = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				H = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
-				U = s.n(H);
+				W = s.n(H);
 			const {
-				fbt: W
+				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(l.c)({
 				meta: (e, {
@@ -158,13 +158,13 @@
 						meta: t
 					} = e;
 					return c.a.createElement("header", {
-						className: U.a.container
+						className: W.a.container
 					}, c.a.createElement("div", {
-						className: U.a.text
-					}, W._("Purchase {membership name}", [W._param("membership name", t.membershipAlt)], {
+						className: W.a.text
+					}, U._("Purchase {membership name}", [U._param("membership name", t.membershipAlt)], {
 						hk: "OO3Gk"
 					})), c.a.createElement(G.a, {
-						className: U.a.close,
+						className: W.a.close,
 						onClick: e.onClose
 					}))
 				})),
@@ -309,7 +309,7 @@
 					subscriptionExpiration: (e, {
 						subredditId: t
 					}) => Object(T.o)(e, t),
-					subreddit: S.U,
+					subreddit: S.T,
 					wallet: w.d
 				}),
 				$ = Object(d.b)(Q, (e, t) => ({
@@ -1056,4 +1056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.cbe5690d0ae65b963772.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9ae8269100d7c949b4c7.js.map

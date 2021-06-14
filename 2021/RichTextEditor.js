@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.8405fe5b214d8fa94a0c.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.91f41246facefbfd0f25.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2856,7 +2856,7 @@
 				He = o("./src/reddit/selectors/subreddit.ts");
 			const Ue = Object(c.c)({
 					activeModalId: Ce.a,
-					contributorRequestPending: e => Object(He.g)(e, f.e.Comment),
+					contributorRequestPending: e => Object(He.f)(e, f.e.Comment),
 					isCommentBoxDesignEnabled: Ne.a,
 					userName: e => e.user.account ? Object(Le.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
@@ -2864,7 +2864,7 @@
 					errorMsgs: ve.L,
 					draft: ve.i,
 					disableAutofocus: ve.f,
-					showContributorRequestFlow: e => Object(He.r)(e, f.e.Comment)
+					showContributorRequestFlow: e => Object(He.q)(e, f.e.Comment)
 				}),
 				qe = Object(i.b)(Ue, (e, t) => ({
 					onMount: () => e(d.a(t.draftKey)),
@@ -3749,7 +3749,7 @@
 				h = o.n(p);
 			const b = c.a.wrapped(d.a, "Banner", h.a),
 				f = Object(a.b)(() => Object(i.c)({
-					restrictions: m.p,
+					restrictions: m.o,
 					subreddit: u.e
 				}));
 			t.a = f(({
@@ -4431,4 +4431,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.8405fe5b214d8fa94a0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.91f41246facefbfd0f25.js.map

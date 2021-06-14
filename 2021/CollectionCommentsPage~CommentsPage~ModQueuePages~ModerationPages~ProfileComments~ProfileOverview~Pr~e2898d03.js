@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.869829c8ad74bd72842e.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.aa991017179257fc5dd2.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -662,10 +662,10 @@
 				L = () => n.fbt._("Reddit admin emeritus", null, {
 					hk: "1Md5AV"
 				}),
-				U = e => n.fbt._("Moderator of {subredditDisplayText}, speaking officially", [n.fbt._param("subredditDisplayText", e)], {
+				H = e => n.fbt._("Moderator of {subredditDisplayText}, speaking officially", [n.fbt._param("subredditDisplayText", e)], {
 					hk: "3pHm3n"
 				}),
-				H = () => n.fbt._("Original Poster", null, {
+				U = () => n.fbt._("Original Poster", null, {
 					hk: "3DqK8z"
 				}),
 				X = () => n.fbt._("Reddit contractor", null, {
@@ -900,7 +900,7 @@
 							hk: "3l7DyF"
 						}),
 						tooltipPrefix: "CommentTopMeta--Mod--",
-						tooltipTemplate: e => U(e.subredditDisplayText)
+						tooltipTemplate: e => H(e.subredditDisplayText)
 					},
 					[ve.Op]: {
 						color: ke.a,
@@ -908,7 +908,7 @@
 							hk: "1A74qs"
 						}),
 						tooltipPrefix: "CommentTopMeta--OP--",
-						tooltipTemplate: H
+						tooltipTemplate: U
 					},
 					[ve.AlumniAdmin]: {
 						color: ke.b,
@@ -1084,8 +1084,8 @@
 					onMouseEnter: e.onMouseEnter,
 					onMouseLeave: e.onMouseLeave
 				}, r.a.createElement(Pe.a, null, e.desc)), "OpIcon", Be.a),
-				Ue = o("./src/reddit/selectors/subreddit.ts"),
-				He = o("./src/reddit/selectors/userFlair.ts"),
+				He = o("./src/reddit/selectors/subreddit.ts"),
+				Ue = o("./src/reddit/selectors/userFlair.ts"),
 				Xe = o("./src/reddit/components/Comments/Comment/TopMeta/index.m.less"),
 				Ve = o.n(Xe);
 
@@ -1121,14 +1121,14 @@
 						comment: t
 					}) => !!Object(Se.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const o = Object(Ue.J)(e, {
+						const o = Object(He.I)(e, {
 							commentId: t.comment.id
 						});
 						return o ? o.displayText : ""
 					},
 					flairPosition: (e, {
 						comment: t
-					}) => Object(He.d)(e, {
+					}) => Object(Ue.d)(e, {
 						subredditId: t.subredditId
 					}),
 					isCommentHeaderRedesignEnabled: f.d
@@ -1168,7 +1168,7 @@
 					renderedInOverlay: F,
 					subredditDisplayText: B,
 					topSupporterTooltipId: L
-				} = e, U = Object(d.a)(), H = r.a.createElement(r.a.Fragment, null, r.a.createElement(De.b, {
+				} = e, H = Object(d.a)(), U = r.a.createElement(r.a.Fragment, null, r.a.createElement(De.b, {
 					commentId: c.id
 				}), r.a.createElement(De.a, {
 					commentId: c.id,
@@ -1186,7 +1186,7 @@
 					renderedInOverlay: F,
 					subredditDisplayText: B,
 					renderContractorBadge: !!P
-				}), H);
+				}), U);
 				if (c.isDeleted) return r.a.createElement(et, ze({}, e, {
 					className: Object(m.a)(s, Ve.a.container, {
 						[Ve.a.collapsed]: a
@@ -1234,7 +1234,7 @@
 					subredditId: c.subredditId,
 					userId: c.authorId,
 					username: c.author
-				}), r.a.createElement(r.a.Fragment, null, H, !v && r.a.createElement(nt, {
+				}), r.a.createElement(r.a.Fragment, null, U, !v && r.a.createElement(nt, {
 					comment: c,
 					compact: p,
 					adminTooltipId: o,
@@ -1244,7 +1244,7 @@
 					onHideTooltip: A,
 					onShowTooltip: D,
 					openPowerupsModal: () => {
-						U(Object(b.r)("comment")), R()
+						H(Object(b.r)("comment")), R()
 					},
 					opTooltipId: S,
 					renderContractorBadge: P,
@@ -1385,17 +1385,17 @@
 						name: "mod",
 						isFilled: !0,
 						className: Ve.a.ModeratorIcon,
-						"aria-label": U(o.subredditDisplayText),
+						"aria-label": H(o.subredditDisplayText),
 						id: o.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
 						onMouseLeave: o.onHideTooltip
-					}), e.isMod && st(o.modTooltipId, U(o.subredditDisplayText)), e.isOp && r.a.createElement(Ye, {
-						desc: H(),
+					}), e.isMod && st(o.modTooltipId, H(o.subredditDisplayText)), e.isOp && r.a.createElement(Ye, {
+						desc: U(),
 						id: o.opTooltipId,
 						onMouseEnter: this.onShowOpTooltip,
 						onMouseLeave: o.onHideTooltip,
 						isFilled: !0
-					}), e.isOp && st(o.opTooltipId, H()), o.renderContractorBadge && r.a.createElement(Ke, {
+					}), e.isOp && st(o.opTooltipId, U()), o.renderContractorBadge && r.a.createElement(Ke, {
 						desc: X(),
 						id: o.contractorTooltipId,
 						onMouseEnter: this.onShowContractorTooltip,
@@ -1586,7 +1586,7 @@
 						subredditId: t,
 						userId: o
 					})),
-					l = Object(r.e)(e => Object(c.U)(e, {
+					l = Object(r.e)(e => Object(c.T)(e, {
 						subredditId: t
 					}));
 				return s.a.createElement("div", {
@@ -2185,4 +2185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.869829c8ad74bd72842e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.aa991017179257fc5dd2.js.map

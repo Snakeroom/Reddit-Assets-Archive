@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9eaca6333e449583c17b.js
-// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3f88589507e8a9066260.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -94,7 +94,7 @@
 		"./src/reddit/actions/subscription/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "e", (function() {
-				return M
+				return T
 			})), r.d(t, "d", (function() {
 				return B
 			})), r.d(t, "c", (function() {
@@ -173,7 +173,7 @@
 				k = Object(a.a)(l.b),
 				U = Object(a.a)(l.a),
 				F = Object(a.a)(l.h),
-				M = (Object(a.a)(l.i), Object(a.a)(l.g), () => async (e, t, {
+				T = (Object(a.a)(l.i), Object(a.a)(l.g), () => async (e, t, {
 					gqlContext: r
 				}) => {
 					const n = t();
@@ -187,12 +187,12 @@
 						error: s.error
 					}))
 				}),
-				T = (e, t) => t.type === u.a.PROFILE && e.displayText === t.name.replace("u_", ""),
+				M = (e, t) => t.type === u.a.PROFILE && e.displayText === t.name.replace("u_", ""),
 				B = (e, t, r) => async (a, l, {
 					apiContext: v
 				}) => {
 					let x = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(N.F)(l(), e.name),
+						id: Object(N.E)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -207,7 +207,7 @@
 					if (h) {
 						const t = x.length,
 							r = e.length;
-						if (x = x.filter(e => !T(h, e)), (e = e.filter(e => !T(h, e))).length !== r || x.length !== t) {
+						if (x = x.filter(e => !M(h, e)), (e = e.filter(e => !M(h, e))).length !== r || x.length !== t) {
 							const e = n.fbt._("You cannot follow yourself!", null, {
 								hk: "3tfSaq"
 							});
@@ -275,7 +275,7 @@
 					apiContext: n
 				}) => {
 					const a = r(),
-						o = Object(N.M)(a, {
+						o = Object(N.L)(a, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -297,7 +297,7 @@
 							type: e.type,
 							name: o.name
 						},
-						_ = () => Object(N.hb)(r(), {
+						_ = () => Object(N.fb)(r(), {
 							identifier: I
 						});
 					(_() || (await t(B([I], !0)), _())) && ((await ((e, t, r) => Object(p.a)(Object(f.a)(e, [b.a]), {
@@ -910,7 +910,7 @@
 		"./src/reddit/components/ProfileIdCard/Preview.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return T
+				return M
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -1080,8 +1080,8 @@
 				k = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.tsx");
 			const U = a.a.wrapped(o.b, "Widget", p.a),
 				F = a.a.div("Description", p.a),
-				M = a.a.wrapped(c, "Actions", p.a);
-			class T extends s.a.PureComponent {
+				T = a.a.wrapped(c, "Actions", p.a);
+			class M extends s.a.PureComponent {
 				renderAwardedLastMonth() {
 					const {
 						recentAwardings: e,
@@ -1166,7 +1166,7 @@
 					}), s.a.createElement(F, null, p), s.a.createElement(m.a, {
 						profileName: g,
 						isOverlay: c
-					}), this.renderAwardedLastMonth(), s.a.createElement(M, null, e), a)
+					}), this.renderAwardedLastMonth(), s.a.createElement(T, null, e), a)
 				}
 			}
 		},
@@ -1708,8 +1708,8 @@
 			}
 			var U = k,
 				F = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
-				M = r.n(F),
-				T = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
+				T = r.n(F),
+				M = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
 			t.a = ({
 				bannerBackgroundImage: e,
 				compact: t,
@@ -1753,8 +1753,8 @@
 					className: C.a.snoovatarSettingsLink
 				}, s.a.createElement(d.a, {
 					name: "settings",
-					className: M.a.settingsIcon
-				})), s.a.createElement(T.a, {
+					className: T.a.settingsIcon
+				})), s.a.createElement(M.a, {
 					isEmployee: u,
 					isGold: p,
 					isNSFW: f,
@@ -1836,12 +1836,12 @@
 				k = r("./src/reddit/components/CrisisFlow/index.tsx"),
 				U = r("./src/higherOrderComponents/makeAsync.tsx"),
 				F = r("./src/lib/loadWithRetries/index.ts");
-			var M = Object(U.a)({
+			var T = Object(U.a)({
 					getComponent: () => Object(F.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				T = r("./src/reddit/constants/modals.ts"),
+				M = r("./src/reddit/constants/modals.ts"),
 				B = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				A = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				L = r("./src/reddit/models/Gold/Premium/index.ts"),
@@ -2019,7 +2019,7 @@
 					}, s.a.createElement(p.o, {
 						className: G.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, a)), e && s.a.createElement(M, null), this.state.showCrisisModal && s.a.createElement(k.b, {
+					}, a)), e && s.a.createElement(T, null), this.state.showCrisisModal && s.a.createElement(k.b, {
 						withOverlay: !0,
 						overlayCustomStyles: k.a,
 						fromUserProfile: !0,
@@ -2032,7 +2032,7 @@
 					profileName: t
 				}) => ({
 					addToMultiClicked: () => {
-						e(Object(w.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), r.e("Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(y.h)(T.a.MULTIREDDIT_ADD_SUBREDDIT))
+						e(Object(w.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), r.e("Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(y.h)(M.a.MULTIREDDIT_ADD_SUBREDDIT))
 					},
 					onClickGivePremium: r => e(Object(j.e)({
 						correlationId: r,
@@ -2149,7 +2149,7 @@
 					prefShowSnoovatar: w,
 					snoovatarFullBodyAsset: j,
 					username: y
-				} = g, S = !!t && t.id === P, k = !(!t || !t.snoovatarFullBodyAsset), U = f && f.bannerBackgroundImage, F = !!m && m.isNSFW, M = F && n, T = !(!u || !u.userIsSubscriber), B = `/user/${y}/`, A = h && h.url === B, L = !u || u.acceptChats, D = !u || u.acceptPms, R = x && Object(X.c)(j);
+				} = g, S = !!t && t.id === P, k = !(!t || !t.snoovatarFullBodyAsset), U = f && f.bannerBackgroundImage, F = !!m && m.isNSFW, T = F && n, M = !(!u || !u.userIsSubscriber), B = `/user/${y}/`, A = h && h.url === B, L = !u || u.acceptChats, D = !u || u.acceptPms, R = x && Object(X.c)(j);
 				return s.a.createElement(l.a, {
 					isEmployee: E,
 					isGold: N,
@@ -2173,7 +2173,7 @@
 					}), !S && v && ee({
 						profileName: y,
 						onToggleFollow: c,
-						userIsSubscriber: T
+						userIsSubscriber: M
 					}), !!t && !S && L && te({
 						userId: P
 					})),
@@ -2188,7 +2188,7 @@
 					}),
 					onClickSnoovatar: d,
 					profileIcon: _,
-					bannerBackgroundImage: M ? void 0 : U
+					bannerBackgroundImage: T ? void 0 : U
 				})
 			}))
 		},
@@ -2692,4 +2692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9eaca6333e449583c17b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3f88589507e8a9066260.js.map

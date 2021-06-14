@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.56ba0b455d890950cc14.js
-// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.971c07733f6a3f8a14fb.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2013,7 +2013,7 @@
 						Object(c.K)(l) || n.push(e(Object(a.r)()));
 						const u = Object(s.a)(d, null);
 						n.push(e(Object(r.subredditDataRequested)(u, d, {}))), await Promise.all(n);
-						const m = Object(i.F)(t(), d);
+						const m = Object(i.E)(t(), d);
 						await e(Object(o.a)({
 							subredditId: m,
 							skip: ["badges", "tips", "wallets"]
@@ -3938,7 +3938,7 @@
 						const n = Object(zt.n)(e, {
 								pageLayer: t
 							}) || js.e,
-							s = Object(_s.A)(e, {
+							s = Object(_s.z)(e, {
 								subredditName: n
 							});
 						if (s) return {
@@ -4022,10 +4022,9 @@
 				multis: e => e.subscriptions.multiredditOrder.map(t => Object(Bs.e)(e, t)).filter(Boolean),
 				multisPending: e => e.multireddits.api.forUser.pending || !e.multireddits.api.forUser.fetched,
 				profiles: e => e.subscriptions.profileOrder.map(t => e.profiles.models[t]).filter(Boolean),
-				isUserEnrolledInOldModmail: _s.o,
+				isUserEnrolledInOldModmail: _s.n,
 				subscriptions: e => e.subscriptions.subredditOrder.map(t => e.subreddits.models[t]).filter(Boolean),
-				subscriptionsPending: e => e.subscriptions.api.pending || !e.subscriptions.api.fetched,
-				trendingSubreddits: e => e.subreddits.trending.map(t => e.subreddits.models[t]).filter(Boolean)
+				subscriptionsPending: e => e.subscriptions.api.pending || !e.subscriptions.api.fetched
 			});
 			var Ws;
 			! function(e) {
@@ -7676,7 +7675,7 @@
 						pageLayer: t
 					}) => Object(zt.K)(t) && !!Object(Et.m)(e) && !Object(Et.A)(e) && Object(Et.K)(e) && !Object(Et.I)(e),
 					shouldShowChangeUsernameModals: jc.c,
-					shouldShowLegacyModmailIcon: _s.o,
+					shouldShowLegacyModmailIcon: _s.n,
 					unreadNotifications: Et.lb
 				}),
 				Lc = Object(p.b)(Rc, (e, t) => ({
@@ -11498,7 +11497,7 @@
 				if (Object(p.i)(e) || Object(h.kb)(e)) return;
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.F)(e, n);
+				const s = Object(b.E)(e, n);
 				if (!s) return;
 				if (Object(h.jb)(e, {
 						subredditId: s
@@ -11508,7 +11507,7 @@
 			}), (e, t) => {
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.x)(e, {
+				const s = Object(b.w)(e, {
 					subredditName: n
 				});
 				return s ? s.emojisCustomSize : void 0
@@ -11520,7 +11519,7 @@
 				if (Object(h.K)(e)) return !n.hideNSFW;
 				const s = v(e, t);
 				if (s) {
-					const t = Object(b.A)(e, {
+					const t = Object(b.z)(e, {
 						subredditName: s
 					});
 					return !(!t || !t.isNSFW)
@@ -14792,7 +14791,7 @@
 					if (n.type === Z.a) {
 						const s = e.getState(),
 							o = (s.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-							a = Object(tn.F)(s, o) || "",
+							a = Object(tn.E)(s, o) || "",
 							i = (s.subreddits.about[a] || {}).advertiserCategory;
 						r.trigger("pageview", {
 							...ht()(n.payload.location, "pathname", "search", "hash"),
@@ -15200,7 +15199,7 @@
 								queryParams: o
 							},
 							a = s.subredditName,
-							i = Object(tn.F)(n, a) || "";
+							i = Object(tn.E)(n, a) || "";
 						if (hn(i, {
 								country: n.meta.country
 							}), i) {
@@ -15220,13 +15219,13 @@
 						}), t(x(n)), t(y(Array.from(s)))
 					})(p));
 					const b = (m.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-						h = Object(tn.F)(m, b) || "";
+						h = Object(tn.E)(m, b) || "";
 					if (b) {
 						c.dispatch(C(h, b));
 						const e = Object(It.e)(m);
 						e && c.dispatch(O(e))
 					}
-					const g = Object(tn.F)(m, b) || "",
+					const g = Object(tn.E)(m, b) || "",
 						f = (m.subreddits.about[g] || {}).advertiserCategory;
 					if (r.setup({
 							jailUrl: "https://www.redditmedia.com/gtm/jail",
@@ -15251,7 +15250,7 @@
 									currentPage: r
 								} = t.platform,
 								a = (r.urlParams.subredditName || "").toLowerCase(),
-								d = Object(tn.F)(t, a) || "";
+								d = Object(tn.E)(t, a) || "";
 							if (hn(d, {
 									country: t.meta.country
 								}), r && r.meta) {
@@ -17935,4 +17934,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.56ba0b455d890950cc14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.971c07733f6a3f8a14fb.js.map

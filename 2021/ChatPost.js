@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.05e45f4a2b78937aae72.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.f967630ccf1791d44682.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -720,8 +720,8 @@
 			};
 			var z = o("./src/lib/addQueryParams/index.ts"),
 				G = o("./src/lib/humanizeDateTime/index.ts"),
-				J = o("./src/lib/timeAgo/index.ts"),
-				Q = o("./src/reddit/actions/comment/index.ts");
+				Q = o("./src/lib/timeAgo/index.ts"),
+				J = o("./src/reddit/actions/comment/index.ts");
 			const X = e => {
 					const {
 						className: t,
@@ -746,7 +746,7 @@
 						onMouseLeave: d,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, Object(J.d)(o.created, {
+					}, Object(Q.d)(o.created, {
 						noPostfix: n,
 						shortenedUnit: n
 					}), a.a.createElement(R.c, {
@@ -760,9 +760,9 @@
 					}))
 				},
 				Z = (e, t, o) => {
-					window.removeEventListener("focus", o), e(Object(Q.g)({
+					window.removeEventListener("focus", o), e(Object(J.g)({
 						commentListNodeId: t
-					})), window.setTimeout(() => e(Object(Q.g)({
+					})), window.setTimeout(() => e(Object(J.g)({
 						commentListNodeId: t
 					})), 5e3)
 				};
@@ -784,7 +784,7 @@
 				editedAt: t
 			}) => a.a.createElement(y.a, {
 				className: se.a.editedText
-			}, ae._("edited {time}", [ae._param("time", Object(J.d)(t, {
+			}, ae._("edited {time}", [ae._param("time", Object(Q.d)(t, {
 				noPostfix: e,
 				shortenedUnit: e
 			}))], {
@@ -1120,8 +1120,8 @@
 			const qe = u.a.wrapped(I.b, "RightPositionedAuthorFlair", Ve.a),
 				ze = u.a.wrapped(Re.a, "AdminIcon", Ve.a),
 				Ge = u.a.div("AdminEmeritus", Ve.a),
-				Je = u.a.wrapped(Be, "OpIcon", Ve.a),
-				Qe = u.a.wrapped(Re.a, "ContractorIcon", Ve.a),
+				Qe = u.a.wrapped(Be, "OpIcon", Ve.a),
+				Je = u.a.wrapped(Re.a, "ContractorIcon", Ve.a),
 				Xe = u.a.span("DeletedText", Ve.a),
 				Ye = u.a.wrapped(y.a, "MetaSeparator", Ve.a),
 				Ze = e => (t, {
@@ -1140,7 +1140,7 @@
 						comment: t
 					}) => !!Object(Ae.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const o = Object(Ue.J)(e, {
+						const o = Object(Ue.I)(e, {
 							commentId: t.comment.id
 						});
 						return o ? o.displayText : ""
@@ -1408,13 +1408,13 @@
 						id: o.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
 						onMouseLeave: o.onHideTooltip
-					}), e.isMod && st(o.modTooltipId, U(o.subredditDisplayText)), e.isOp && a.a.createElement(Je, {
+					}), e.isMod && st(o.modTooltipId, U(o.subredditDisplayText)), e.isOp && a.a.createElement(Qe, {
 						desc: W(),
 						id: o.opTooltipId,
 						onMouseEnter: this.onShowOpTooltip,
 						onMouseLeave: o.onHideTooltip,
 						isFilled: !0
-					}), e.isOp && st(o.opTooltipId, W()), o.renderContractorBadge && a.a.createElement(Qe, {
+					}), e.isOp && st(o.opTooltipId, W()), o.renderContractorBadge && a.a.createElement(Je, {
 						desc: H(),
 						id: o.contractorTooltipId,
 						onMouseEnter: this.onShowContractorTooltip,
@@ -1898,8 +1898,8 @@
 				q = o("./src/reddit/actions/modal.ts"),
 				z = o("./src/reddit/actions/reportFlow/index.ts"),
 				G = o("./src/reddit/actions/tooltip.ts"),
-				J = o("./src/reddit/actions/userBlocks.ts"),
-				Q = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				Q = o("./src/reddit/actions/userBlocks.ts"),
+				J = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				X = o("./src/reddit/constants/tracking.ts"),
 				Y = o("./src/reddit/selectors/telemetry.ts"),
 				Z = o("./src/telemetry/models/Event.ts");
@@ -1968,7 +1968,7 @@
 							...$(o)
 						}))(d, t.id)))
 					}
-				}, e, c.a.createElement(Q.c, {
+				}, e, c.a.createElement(J.c, {
 					tooltipId: r,
 					text: i
 				})),
@@ -2080,8 +2080,8 @@
 						}))
 					},
 					onApproveClick: () => e(Object(K.a)(t.id)),
-					onBlockClick: () => e(Object(J.h)(t.author)),
-					onUnblockClick: () => e(Object(J.g)(t.author)),
+					onBlockClick: () => e(Object(Q.h)(t.author)),
+					onUnblockClick: () => e(Object(Q.g)(t.author)),
 					onUpvoteClick: () => e(Object(b.q)(t.id)),
 					onDownvoteClick: () => e(Object(b.j)(t.id)),
 					onDistinguishClick: o => e(Object(K.b)(t.id, o)),
@@ -2247,8 +2247,8 @@
 				qe = o.n(Ke);
 			const ze = {},
 				Ge = I.a.wrapped(D.a, "ChatIcon", qe.a),
-				Je = I.a.span("ReplyAuthor", qe.a),
-				Qe = I.a.div("ReplyWrapper", qe.a);
+				Qe = I.a.span("ReplyAuthor", qe.a),
+				Je = I.a.div("ReplyWrapper", qe.a);
 			var Xe = Object(d.b)(() => Object(l.c)({
 					comment: Ve.a
 				}))(({
@@ -2256,11 +2256,11 @@
 					commentId: t,
 					isLivestreaming: o,
 					onReplyClick: n
-				}) => e ? e.isDeleted ? c.a.createElement(Qe, null, c.a.createElement("span", {
+				}) => e ? e.isDeleted ? c.a.createElement(Je, null, c.a.createElement("span", {
 					className: Object(E.a)(qe.a.ReplyLinkBubble, qe.a.delete, {
 						[qe.a.Livestreaming]: o
 					})
-				}, c.a.createElement(kt, null))) : c.a.createElement(Qe, null, c.a.createElement("a", {
+				}, c.a.createElement(kt, null))) : c.a.createElement(Je, null, c.a.createElement("a", {
 					className: Object(E.a)(qe.a.ReplyLinkBubble, {
 						[qe.a.Livestreaming]: o
 					}),
@@ -2271,7 +2271,7 @@
 				}, c.a.createElement(Ge, {
 					userId: e.authorId,
 					icon: e.profileImage
-				}), c.a.createElement(Je, null, e.author), c.a.createElement(He.a, {
+				}), c.a.createElement(Qe, null, e.author), c.a.createElement(He.a, {
 					className: qe.a.ReplyComment,
 					key: `rich-text-${t}`,
 					content: Object(j.a)(e),
@@ -2992,7 +2992,7 @@
 						subredditId: t,
 						userId: o
 					})),
-					l = Object(a.e)(e => Object(d.U)(e, {
+					l = Object(a.e)(e => Object(d.T)(e, {
 						subredditId: t
 					}));
 				return s.a.createElement("div", {
@@ -3626,4 +3626,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.05e45f4a2b78937aae72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f967630ccf1791d44682.js.map

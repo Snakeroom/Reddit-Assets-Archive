@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.16c0c715ddb8b2dcf8d4.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.3352058610ec12605c3e.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -416,7 +416,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(b.M)(e, {
+						subredditOrProfile: Object(b.L)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -1834,4 +1834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.16c0c715ddb8b2dcf8d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.3352058610ec12605c3e.js.map

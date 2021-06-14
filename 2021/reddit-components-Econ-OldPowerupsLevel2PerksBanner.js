@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.76144ef49525d8c19e59.js
-// Retrieved at 6/1/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.bf233dae4a5d8dfb4d71.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-OldPowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -145,21 +145,21 @@
 						userId: s.id
 					})
 				},
-				subreddit: m.U,
+				subreddit: m.T,
 				userBenefits: u.m
 			});
 			var A;
 			! function(e) {
 				e.Intro = "intro", e.Benefits = "benefits", e.Outro = "outro"
 			}(A || (A = {}));
-			const U = {
+			const I = {
 				[A.Intro]: "linear-gradient(90deg, #EC7406 0%, #F5D21A 100%)",
 				[k.a.HdVideo]: "linear-gradient(83deg, #7544FF 0%, #FF585B 100%)",
 				[k.a.CommentsWithGifs]: "linear-gradient(90deg, #0E69A2 0%, #50CABD 100%)",
 				[k.a.CommentsWithEmoji]: "linear-gradient(90deg, #DC0A0A 0%, #F7A456 100%)",
 				[A.Outro]: "linear-gradient(90deg, #219A52 0%, #00D5D5 100%)"
 			};
-			var I = Object(r.b)(L)((function(e) {
+			var U = Object(r.b)(L)((function(e) {
 					const {
 						areAllBenefitsUnlocked: t,
 						benefits: s,
@@ -170,7 +170,7 @@
 						userBenefits: d
 					} = e, [u, m] = Object(a.useState)(0);
 					if (!l) return null;
-					const b = s.filter(e => U[e] && k.d[e]),
+					const b = s.filter(e => I[e] && k.d[e]),
 						v = b.length + 2,
 						E = t || b.every(e => d.includes(e)) && c;
 					return n.a.createElement("div", {
@@ -182,7 +182,7 @@
 							[h.a.visible]: 0 === u
 						}),
 						style: {
-							background: U[A.Intro]
+							background: I[A.Intro]
 						}
 					}), b.map((e, t) => n.a.createElement("div", {
 						className: Object(i.a)(h.a.background, {
@@ -190,14 +190,14 @@
 						}),
 						key: `bg_${e}`,
 						style: {
-							background: U[e] || U[A.Intro]
+							background: I[e] || I[A.Intro]
 						}
 					})), n.a.createElement("div", {
 						className: Object(i.a)(h.a.background, {
 							[h.a.visible]: u === v - 1
 						}),
 						style: {
-							background: U[A.Outro]
+							background: I[A.Outro]
 						}
 					})), n.a.createElement("div", {
 						className: h.a.slides
@@ -244,11 +244,11 @@
 				y = s.n(S);
 			const {
 				fbt: F
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(o.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = Object(o.c)({
 				powerups: u.i,
-				subreddit: m.U
+				subreddit: m.T
 			});
-			t.default = Object(r.b)(D)(e => {
+			t.default = Object(r.b)(T)(e => {
 				var t;
 				const {
 					className: s,
@@ -273,7 +273,7 @@
 					className: y.a.title
 				}, F._("Powerup", null, {
 					hk: "4p1fZz"
-				})), n.a.createElement(I, {
+				})), n.a.createElement(U, {
 					areAllBenefitsUnlocked: f,
 					benefits: _,
 					className: y.a.gallery,
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.76144ef49525d8c19e59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.bf233dae4a5d8dfb4d71.js.map

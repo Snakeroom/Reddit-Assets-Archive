@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.2e6ee922d99fab7073a1.js
-// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9e71258ae7edfce85173.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1432,7 +1432,7 @@
 					subredditId: t
 				}) => async (r, s, a) => {
 					const n = s(),
-						l = Object(g.U)(n, {
+						l = Object(g.T)(n, {
 							subredditId: t
 						}).name;
 					r(Object(b.k)(e));
@@ -1470,7 +1470,7 @@
 						subredditId: i,
 						emojiName: l,
 						settings: p
-					} = e, f = Object(m.a)(n.url), E = s(), h = Object(g.U)(E, {
+					} = e, f = Object(m.a)(n.url), E = s(), h = Object(g.T)(E, {
 						subredditId: i
 					}).name, O = await (async (e, t, r, s, a) => Object(o.a)(Object(d.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -1528,7 +1528,7 @@
 				}) => {
 					const a = r();
 					if (Object(I.a)(a, e)) return;
-					const n = Object(g.U)(a, {
+					const n = Object(g.T)(a, {
 						subredditId: e
 					}).name;
 					t(P(e));
@@ -1551,7 +1551,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.U)(i, {
+						l = Object(g.T)(i, {
 							subredditId: t
 						}).name,
 						p = await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1579,7 +1579,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.U)(i, {
+						l = Object(g.T)(i, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1604,7 +1604,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.U)(i, {
+						l = Object(g.T)(i, {
 							subredditId: e
 						}).name;
 					(await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1624,7 +1624,7 @@
 					apiContext: l
 				}) => {
 					const p = i(),
-						b = Object(g.U)(p, {
+						b = Object(g.T)(p, {
 							subredditId: a
 						}).name;
 					(await (async (e, t, r, s) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1703,7 +1703,7 @@
 				O = e => async (t, n) => {
 					t(y());
 					const c = n(),
-						d = Object(u.U)(c, {
+						d = Object(u.T)(c, {
 							subredditId: e
 						}).name,
 						l = c.structuredStyles.models[e],
@@ -3250,7 +3250,7 @@
 				_ = e => async (t, r, {
 					gqlContext: a
 				}) => {
-					const n = Object(l.U)(r(), {
+					const n = Object(l.T)(r(), {
 						subredditId: e
 					});
 					if (void 0 === n) {
@@ -3417,7 +3417,7 @@
 							name: m,
 							type: E
 						} = e;
-					if (Object(b.k)(f)) return;
+					if (Object(b.j)(f)) return;
 					t(_({
 						subredditName: m
 					}));
@@ -3480,7 +3480,7 @@
 					});
 					if (l.ok) {
 						const r = t(),
-							s = l.body && l.body.length ? l.body.map(e => Object(i.F)(r, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							s = l.body && l.body.length ? l.body.map(e => Object(i.E)(r, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(b({
 							subredditIds: s
 						}))
@@ -4130,11 +4130,9 @@
 				icon: "_3HTtcITrR-crvsRovLrijl",
 				favorite: "t2A0mgkgGzc8cAahJsR7a",
 				text: "_2aqH0n-kSzFY7HZZ5GL-Jb",
-				trending: "_2H51id1RX9dGNrtrAIOMGK",
 				subText: "_2Efd4uMAp4YawdvL9Zhdhv",
 				title: "_1JNAu7U5gWAkRoykwfUWhY",
 				mFavorite: "_2cEhEGN_WTLlwspw_bpqTr",
-				trendingContent: "BNJ5Y52EyQmTHFZJwjoXJ",
 				relatedSubredditMetaData: "_3P_WRCH8aFjwOFA7B1RlBL",
 				promoted: "bpYVdL9hAnIqOnrKi8PVS"
 			}
@@ -4735,7 +4733,7 @@
 				subredditsByName: Object(d.a)((e, t) => {
 					const r = {};
 					return t.subredditIcons && t.subredditIcons.map(t => {
-						r[t.subredditName] = Object(l.A)(e, {
+						r[t.subredditName] = Object(l.z)(e, {
 							subredditName: t.subredditName
 						})
 					}), r
@@ -5147,7 +5145,7 @@
 							n = e.platform.currentPage,
 							c = n && n.urlParams.subredditName,
 							d = a || c || "",
-							i = Object(o.F)(e, d);
+							i = Object(o.E)(e, d);
 						i && e.structuredStyles.models[i] || s.add("structuredStyles"), e.user.prefs.subreddit[i] || s.add("prefsSubreddit")
 					}
 					return [...s].join(",")
@@ -21701,7 +21699,7 @@
 				}),
 				p = Object(n.a)(l, o.c, (e, t) => t.isFlairModOnly, (e, t) => t.flairTemplateType, (e, t, r, s) => e.filter(e => !(e.modFlairOnly && !t || e.modFlairOnly && !r) && (!(!e.userFlairAllowed && s === c.d.UserFlair) && !(!e.postFlairAllowed && s === c.d.LinkFlair)))),
 				b = Object(n.a)(u, (e, t) => t.subredditId, (e, t) => Object.keys(e[t].snoomojis)),
-				y = (e, t) => Object(d.x)(e, {
+				y = (e, t) => Object(d.w)(e, {
 					subredditName: t
 				}).emojisEnabled,
 				f = {
@@ -21983,4 +21981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2e6ee922d99fab7073a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9e71258ae7edfce85173.js.map

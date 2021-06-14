@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.484ab46b96fcb7e30bc9.js
-// Retrieved at 6/14/2021, 9:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.ca3d32045617570dad3b.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -70,7 +70,7 @@
 				post: e
 			}) => {
 				const t = Object(b.a)(),
-					n = Object(u.e)(t => Object(O.U)(t, {
+					n = Object(u.e)(t => Object(O.T)(t, {
 						subredditId: e.belongsTo.id
 					}));
 				return i.a.createElement(m.a, {
@@ -253,17 +253,17 @@
 					withOverlay: !0
 				}))
 			};
-			var U = n("./src/reddit/helpers/predictions/index.ts");
-			var V = n("./src/reddit/selectors/posts.ts"),
-				F = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				H = n.n(F);
+			var V = n("./src/reddit/helpers/predictions/index.ts");
+			var F = n("./src/reddit/selectors/posts.ts"),
+				U = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				H = n.n(U);
 			const {
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = ({
 				postId: e
 			}) => {
 				const t = Object(b.a)(),
-					n = Object(u.e)(t => Object(V.R)(t, {
+					n = Object(u.e)(t => Object(F.R)(t, {
 						postId: e
 					}));
 				return i.a.createElement(m.a, {
@@ -284,7 +284,7 @@
 					const t = Object(u.e)(j.C);
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						return e.filter(e => !(t && e.isNSFW)).sort(U.a)[0]
+						return e.filter(e => !(t && e.isNSFW)).sort(V.a)[0]
 					}, [e, t])
 				}(n);
 				return s && o !== r.a.Closed ? i.a.createElement(l, null, i.a.createElement(M, {
@@ -301,4 +301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.484ab46b96fcb7e30bc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ca3d32045617570dad3b.js.map

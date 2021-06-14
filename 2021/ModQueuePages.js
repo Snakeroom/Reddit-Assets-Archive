@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.d32e212da4dfde251886.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.b7270fcd8753e1a7cd35.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -889,7 +889,7 @@
 						if (e !== h.a.Approve && e !== h.a.Flair) {
 							let t, o;
 							const l = C.platform.currentPage && C.platform.currentPage.queryParams && C.platform.currentPage.queryParams.subreddit,
-								u = l && Object(f.F)(C, l);
+								u = l && Object(f.E)(C, l);
 							e === h.a.Remove && u && O.length > 1 && (t = n.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), o = Object(a.fetchReasonsAndOpenModal)(u, O));
@@ -1614,7 +1614,7 @@
 				T = Object(i.c)({
 					comment: (e, t) => Object(O.a)(e, t),
 					flair: C.e,
-					subreddit: _.J
+					subreddit: _.I
 				}),
 				M = Object(o.b)(T, (e, {
 					commentId: t,
@@ -2447,7 +2447,7 @@
 			const w = (e, t = !1, s = n.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${s}]`,
 				S = Object(d.c)({
 					flairData: v.d,
-					subreddit: C.U,
+					subreddit: C.T,
 					isMod: (e, t) => !!Object(x.k)(e, t)
 				});
 			class I extends i.a.Component {
@@ -5051,7 +5051,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						i = Object(l.A)(e, {
+						i = Object(l.z)(e, {
 							subredditName: n
 						});
 					return i ? {
@@ -5650,7 +5650,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(i.Y)(e, {
+					const s = Object(i.X)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -5658,4 +5658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.d32e212da4dfde251886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b7270fcd8753e1a7cd35.js.map

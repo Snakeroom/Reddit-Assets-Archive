@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.41bf88b6a8022f699f51.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.fb49b39cf030825ebaf5.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2839,8 +2839,8 @@
 				Oe = de.a.wrapped(W.a, "CloseButton", ce.a),
 				Ee = de.a.wrapped(D.b, "ErrorText", ce.a),
 				ye = Object(l.c)({
-					error: re.h,
-					isCreatePending: re.k,
+					error: re.g,
+					isCreatePending: re.j,
 					isEmailInviteExperimentEnabled: ie.a,
 					isEmployee: te.H,
 					isTopicOptional: ae,
@@ -3215,4 +3215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.41bf88b6a8022f699f51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.fb49b39cf030825ebaf5.js.map

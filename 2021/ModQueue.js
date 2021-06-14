@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.ef56c4a2215256a03c2e.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.961c3ec47591b6e90de9.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -482,7 +482,7 @@
 						if (e !== b.a.Approve && e !== b.a.Flair) {
 							let t, r;
 							const u = j.platform.currentPage && j.platform.currentPage.queryParams && j.platform.currentPage.queryParams.subreddit,
-								m = u && Object(f.F)(j, u);
+								m = u && Object(f.E)(j, u);
 							e === b.a.Remove && m && E.length > 1 && (t = o.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), r = Object(d.fetchReasonsAndOpenModal)(m, E));
@@ -1106,4 +1106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.ef56c4a2215256a03c2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.961c3ec47591b6e90de9.js.map

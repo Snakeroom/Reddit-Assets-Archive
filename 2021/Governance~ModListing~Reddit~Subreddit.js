@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e4fe6da61448da856a12.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.071a49011acabf431712.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2205,7 +2205,7 @@
 							success: t
 						}),
 						profile: I.profileById(e, Object(m.m)(e, i)),
-						subreddit: I.subredditById(e, Object(b.F)(e, r)),
+						subreddit: I.subredditById(e, Object(b.E)(e, r)),
 						userSubreddit: I.userSubreddit(e),
 						adblock: I.adblock(e)
 					})
@@ -2217,7 +2217,7 @@
 						noun: "screen",
 						...x(e),
 						profile: I.profileById(e, Object(m.m)(e, r)),
-						subreddit: I.subredditById(e, Object(b.F)(e, t)),
+						subreddit: I.subredditById(e, Object(b.E)(e, t)),
 						userSubreddit: I.userSubreddit(e),
 						adblock: I.adblock(e)
 					})
@@ -3050,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e4fe6da61448da856a12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.071a49011acabf431712.js.map

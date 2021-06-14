@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e91ca8de19de8f308785.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.9ba7be5d4c7a42afdec4.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -93,7 +93,7 @@
 					source: "community_tagging",
 					action: "view",
 					noun: "verify_topics_module",
-					subreddit: Object(m.U)(n, {
+					subreddit: Object(m.T)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -102,7 +102,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
-					subreddit: Object(m.U)(r, {
+					subreddit: Object(m.T)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -111,7 +111,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
-					subreddit: Object(m.U)(r, {
+					subreddit: Object(m.T)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -120,7 +120,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
-					subreddit: Object(m.U)(n, {
+					subreddit: Object(m.T)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -134,8 +134,8 @@
 				C = n("./src/reddit/components/StructuredStyles/StyledComponents/index.tsx"),
 				y = n("./src/reddit/controls/Button/index.tsx"),
 				O = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-uid/dist/es2015/hooks.js")),
-				j = n("./src/reddit/controls/ButtonGroup/index.m.less"),
-				T = n.n(j);
+				T = n("./src/reddit/controls/ButtonGroup/index.m.less"),
+				j = n.n(T);
 
 			function w(e) {
 				const {
@@ -143,7 +143,7 @@
 					onChange: n = (() => {})
 				} = e, r = Object(O.b)(), [i, d] = Object(s.useState)({});
 				return o.a.createElement("div", {
-					className: T.a.buttonGroup,
+					className: j.a.buttonGroup,
 					role: "group",
 					onClick: e => e.stopPropagation()
 				}, t.map(({
@@ -155,7 +155,7 @@
 					type: "checkbox",
 					id: r(s),
 					name: r(s),
-					className: T.a.checkbox,
+					className: j.a.checkbox,
 					checked: !!i[s],
 					onChange: () => (function(e) {
 						const r = t.find(t => t.id === e),
@@ -177,7 +177,7 @@
 					})(s)
 				}), o.a.createElement("label", {
 					htmlFor: r(s),
-					className: T.a.option
+					className: j.a.option
 				}, e))))
 			}
 			var k = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -197,8 +197,8 @@
 					rtJsonElementProps: {}
 				}), n[2])
 			}
-			var U = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
-				M = n.n(U);
+			var M = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
+				U = n.n(M);
 			const {
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -212,18 +212,18 @@
 					onClose: d
 				} = e, [c, a] = Object(s.useState)([]);
 				return o.a.createElement("div", {
-					className: Object(I.a)(M.a.survey, i && M.a.inFeed),
+					className: Object(I.a)(U.a.survey, i && U.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
 				}, o.a.createElement(k.a, {
-					className: M.a.closeButton,
+					className: U.a.closeButton,
 					onClick: () => d(t)
 				}, o.a.createElement(C.b, null), o.a.createElement("span", {
-					className: M.a.closeText
+					className: U.a.closeText
 				}, R._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
-					className: M.a.question
+					className: U.a.question
 				}, o.a.createElement(D, null, n)), o.a.createElement(w, {
 					options: r,
 					onChange: function(n) {
@@ -231,7 +231,7 @@
 						a(n), null === (r = e.onSelect) || void 0 === r || r.call(e, t, n)
 					}
 				}), o.a.createElement(y.i, {
-					className: M.a.submitButton,
+					className: U.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
 					onClick: async function() {
@@ -256,20 +256,20 @@
 					inFeed: c
 				} = e, [a, u] = Object(s.useState)([]);
 				return o.a.createElement("div", {
-					className: Object(I.a)(M.a.survey, c && M.a.inFeed),
+					className: Object(I.a)(U.a.survey, c && U.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
 				}, o.a.createElement(k.a, {
-					className: M.a.closeButton,
+					className: U.a.closeButton,
 					onClick: () => i(t)
 				}, o.a.createElement(C.b, null), o.a.createElement("span", {
-					className: M.a.closeText
+					className: U.a.closeText
 				}, F._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
-					className: M.a.question
+					className: U.a.question
 				}, o.a.createElement(D, null, n)), o.a.createElement("div", {
-					className: M.a.buttonGroup
+					className: U.a.buttonGroup
 				}, o.a.createElement(w, {
 					onChange: function(n) {
 						var r;
@@ -280,7 +280,7 @@
 						isMutuallyExclusive: !0
 					}))
 				})), !d && o.a.createElement(y.i, {
-					className: M.a.submitButton,
+					className: U.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
 					onClick: async function() {
@@ -302,7 +302,7 @@
 						O && !C && u(p(O, n))
 					}, [u, O, C, n]), C) return null;
 				if (!O) return null;
-				async function j(e) {
+				async function T(e) {
 					l(m(), {
 						input: {
 							questionId: e,
@@ -320,7 +320,7 @@
 						payload: {}
 					})
 				}
-				async function T(e, t) {
+				async function j(e, t) {
 					await l(m(), {
 						input: {
 							questionId: e,
@@ -351,9 +351,9 @@
 							questionId: O.id,
 							questionText: O.questionText,
 							answers: O.answerOptions,
-							onSubmit: T,
+							onSubmit: j,
 							onSelect: w,
-							onClose: j,
+							onClose: T,
 							inFeed: a
 						});
 					case v.d.SingleWithSubmit:
@@ -362,9 +362,9 @@
 							questionId: O.id,
 							questionText: O.questionText,
 							answers: O.answerOptions,
-							onSubmit: T,
+							onSubmit: j,
 							onSelect: w,
-							onClose: j,
+							onClose: T,
 							inFeed: a
 						});
 					case v.d.SingleNoSubmit:
@@ -373,9 +373,9 @@
 							questionId: O.id,
 							questionText: O.questionText,
 							answers: O.answerOptions,
-							onSubmit: T,
+							onSubmit: j,
 							onSelect: w,
-							onClose: j,
+							onClose: T,
 							inFeed: a,
 							noSubmit: !0
 						})
@@ -532,9 +532,9 @@
 			})), n.d(t, "n", (function() {
 				return O
 			})), n.d(t, "t", (function() {
-				return j
-			})), n.d(t, "p", (function() {
 				return T
+			})), n.d(t, "p", (function() {
+				return j
 			})), n.d(t, "o", (function() {
 				return w
 			})), n.d(t, "q", (function() {
@@ -546,7 +546,7 @@
 			})), n.d(t, "a", (function() {
 				return D
 			})), n.d(t, "w", (function() {
-				return U
+				return M
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -581,8 +581,8 @@
 				C = c.a.sub("Sub", d.a),
 				y = c.a.sup("Sup", d.a),
 				O = c.a.table("Table", d.a),
-				j = c.a.tr("Tr", d.a),
-				T = c.a.td("Tdl", d.a),
+				T = c.a.tr("Tr", d.a),
+				j = c.a.td("Tdl", d.a),
 				w = c.a.td("Tdc", d.a),
 				k = c.a.td("Tdr", d.a),
 				B = c.a.th("Thl", d.a),
@@ -591,7 +591,7 @@
 					isSponsored: !1,
 					source: null
 				})), "A", d.a)),
-				U = c.a.wrapped(a.a, "A", d.a)
+				M = c.a.wrapped(a.a, "A", d.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -977,7 +977,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						i = Object(u.A)(e, {
+						i = Object(u.z)(e, {
 							subredditName: r
 						});
 					return i ? {
@@ -1140,7 +1140,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.Y)(e, {
+					const n = Object(i.X)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -1151,4 +1151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.e91ca8de19de8f308785.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.9ba7be5d4c7a42afdec4.js.map

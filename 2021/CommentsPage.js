@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.c06f1859a9b0b914be39.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8af34a9745a09dd66bbc.js
+// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -692,7 +692,7 @@
 							postId: s
 						}),
 						r = n.belongsTo,
-						i = Object(H.M)(t, {
+						i = Object(H.L)(t, {
 							identifier: r
 						}),
 						a = Object(ae.d)(t, {
@@ -764,7 +764,7 @@
 									});
 								return s && o ? `${e.posts.models[t].title} : ${s.name}` : ""
 							})(s(), m),
-							i = Object(H.M)(s(), {
+							i = Object(H.L)(s(), {
 								identifier: R.belongsTo
 							});
 						if (i && Object(D.b)(s())) return void t(Object(o.c)(i.url));
@@ -782,7 +782,7 @@
 								await e
 							}
 						} else {
-							if (!!!Object(H.T)(s(), {
+							if (!!!Object(H.S)(s(), {
 									subredditId: R.belongsTo.id
 								})) {
 								const e = Object(ee.i)(() => t(w.o(i.name)), {
@@ -2558,7 +2558,7 @@
 					}),
 					subredditAboutInfo: (e, {
 						subreddit: t
-					}) => t ? Object(be.x)(e, {
+					}) => t ? Object(be.w)(e, {
 						subredditName: t.name
 					}) : void 0,
 					subredditOrProfile: (e, {
@@ -3932,7 +3932,7 @@
 					isLoggedIn: S.K,
 					postSEOV2IdCardVariant: _.i,
 					shouldShowReredditPromo: j.a,
-					widgets: Object(p.a)(I.s)
+					widgets: Object(p.a)(I.r)
 				}),
 				R = Object(d.b)(A);
 			class B extends a.a.Component {
@@ -4738,8 +4738,8 @@
 					className: b.a.icon
 				}),
 				f = Object(a.c)({
-					subreddit: p.A,
-					subredditAboutInfo: p.x
+					subreddit: p.z,
+					subredditAboutInfo: p.w
 				}),
 				x = Object(i.b)(f);
 			t.a = x(e => {
@@ -7586,7 +7586,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(C.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const s = Object(k.F)(e, t.listingName);
+							const s = Object(k.E)(e, t.listingName);
 							return Object(v.j)(e, {
 								subredditId: s
 							})
@@ -7602,14 +7602,14 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (o) {
-							const t = Object(k.F)(e, s);
+							const t = Object(k.E)(e, s);
 							return Object(v.k)(e, {
 								subredditId: t
 							})
 						}
 						return Object(y.C)(e, t, s, n)
 					}),
-					subredditsById: k.bb,
+					subredditsById: k.ab,
 					viewportDataLoaded: O.a,
 					pageReferrer: u.R,
 					postListPlaceholderComponent: () => g.a,
@@ -8598,7 +8598,7 @@
 					shouldOpenPostInNewTab: be.cb,
 					subredditAboutInfo: (e, {
 						subredditName: t
-					}) => t ? Object(ue.x)(e, {
+					}) => t ? Object(ue.w)(e, {
 						subredditName: t
 					}) : void 0,
 					subredditOrProfile: me.R,
@@ -9403,7 +9403,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(r.U)(e, {
+						const t = Object(r.T)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -9416,14 +9416,14 @@
 				m = (e, t) => {
 					const s = p(e, t);
 					if (!s) return l;
-					const o = Object(r.Y)(e, {
+					const o = Object(r.X)(e, {
 						subredditName: s.name
 					});
 					return o && o.postIds && o.postIds.length ? o.postIds : l
 				},
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(r.U)(e, {
+					return s ? Object(r.T)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -9517,4 +9517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c06f1859a9b0b914be39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8af34a9745a09dd66bbc.js.map
