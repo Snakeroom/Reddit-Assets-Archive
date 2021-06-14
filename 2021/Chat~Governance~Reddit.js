@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1499baaed7cc1e514c85.js
-// Retrieved at 6/14/2021, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.330ce4a6e464526945dc.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2470,11 +2470,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("136554"),
+				buildNumber: r("136570"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1623694619"),
+				})("1623696955"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4960,14 +4960,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c442543598a2ad753b04b10c07149f69e5cbebb7c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cbeecd06645ad6f7635a9cb012b482f4648649290-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "442543598a2ad753b04b10c07149f69e5cbebb7c-production",
+						release: "beecd06645ad6f7635a9cb012b482f4648649290-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5461,7 +5461,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "442543598a2ad753b04b10c07149f69e5cbebb7c-production",
+						releaseClient: "beecd06645ad6f7635a9cb012b482f4648649290-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -9281,48 +9281,42 @@
 				return b
 			})), i.d(t, "f", (function() {
 				return g
-			})), i.d(t, "I", (function() {
-				return y
-			})), i.d(t, "J", (function() {
-				return w
-			})), i.d(t, "K", (function() {
-				return v
 			})), i.d(t, "i", (function() {
-				return E
+				return y
 			})), i.d(t, "j", (function() {
-				return S
+				return w
 			})), i.d(t, "k", (function() {
-				return T
+				return v
 			})), i.d(t, "l", (function() {
-				return O
+				return E
 			})), i.d(t, "m", (function() {
-				return I
+				return S
 			})), i.d(t, "n", (function() {
-				return j
+				return T
 			})), i.d(t, "o", (function() {
-				return F
+				return O
 			})), i.d(t, "h", (function() {
-				return R
+				return I
 			})), i.d(t, "q", (function() {
-				return x
+				return j
 			})), i.d(t, "c", (function() {
-				return C
+				return F
 			})), i.d(t, "u", (function() {
-				return k
+				return R
 			})), i.d(t, "p", (function() {
-				return N
+				return x
 			})), i.d(t, "r", (function() {
-				return D
+				return C
 			})), i.d(t, "d", (function() {
-				return A
+				return k
 			})), i.d(t, "s", (function() {
-				return P
+				return N
 			})), i.d(t, "t", (function() {
-				return B
+				return D
 			})), i.d(t, "e", (function() {
-				return L
+				return A
 			})), i.d(t, "v", (function() {
-				return U
+				return P
 			}));
 			const n = "GOLD_PAYMENT__CARD_NAME_EMPTY",
 				r = "GOLD_PAYMENT__CARD_NAME_INPUT",
@@ -9340,27 +9334,24 @@
 				f = "GOLD_PAYMENT__STRIPE_TOKEN_PENDING",
 				b = "GOLD_PAYMENT__TOGGLE_REMEMBER_CARD",
 				g = "UPDATE_CARD_MODAL__CLOSE_UPDATE_CARD_MODAL",
-				y = "UPDATE_CARD_MODAL__UPDATE_CARD_FAILED",
-				w = "UPDATE_CARD_MODAL__UPDATE_CARD_PENDING",
-				v = "UPDATE_CARD_MODAL__UPDATE_CARD_SUCCESSFUL",
-				E = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_ERROR",
-				S = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_REQUESTED",
-				T = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_SUCCESS",
-				O = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_ERROR",
-				I = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_REQUESTED",
-				j = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_SUCCESS",
-				F = "SPECIAL_EVENTS__FETCH_SPECIAL_EVENTS_SUCCESS",
-				R = "SPECIAL_EVENTS__FETCH_CLAIM_FREE_AWARDS_SUCCESS",
-				x = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
-				C = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
-				k = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
-				N = "COIN_PURCHASE_MODAL__OPEN_COIN_PACKAGE_OFFER_MODAL",
-				D = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
-				A = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
-				P = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
-				B = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
-				L = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL",
-				U = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED"
+				y = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_ERROR",
+				w = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_REQUESTED",
+				v = "GOLD_PURCHASE__FETCH_PURCHASE_CATALOG_SUCCESS",
+				E = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_ERROR",
+				S = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_REQUESTED",
+				T = "GOLD_PURCHASE__FETCH_RECOMMENDED_PACKAGE_SUCCESS",
+				O = "SPECIAL_EVENTS__FETCH_SPECIAL_EVENTS_SUCCESS",
+				I = "SPECIAL_EVENTS__FETCH_CLAIM_FREE_AWARDS_SUCCESS",
+				j = "COIN_PURCHASE_MODAL__OPEN_COIN_PURCHASE_MODAL",
+				F = "COIN_PURCHASE_MODAL__CLOSE_COIN_PURCHASE_MODAL",
+				R = "COIN_PURCHASE_MODAL__OPEN_TARGETED_OFFER_MODAL",
+				x = "COIN_PURCHASE_MODAL__OPEN_COIN_PACKAGE_OFFER_MODAL",
+				C = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL",
+				k = "PENNY_PURCHASE_MODAL__CLOSE_PENNY_PURCHASE_MODAL",
+				N = "PENNY_PURCHASE_MODAL__OPEN_PENNY_PURCHASE_MODAL_TO_GILD",
+				D = "PREMIUM_PURCHASE_MODAL__OPEN_PREMIUM_PURCHASE_MODAL",
+				A = "PREMIUM_PURCHASE_MODAL__CLOSE_PREMIUM_PURCHASE_MODAL",
+				P = "PREMIUM_PURCHASE_MODAL__PAYMENT_BLOB_CREATED"
 		},
 		"./src/reddit/actions/grantUserFlair/constants.ts": function(e, t, i) {
 			"use strict";
@@ -34027,20 +34018,6 @@
 					packageId: pe,
 					showModal: me
 				});
-			var fe = (e = !1, t) => {
-					switch (t.type) {
-						case r.I:
-						case r.K:
-							return !1;
-						case r.J:
-							return !0;
-						default:
-							return e
-					}
-				},
-				be = Object(n.c)({
-					pending: fe
-				});
 			t.a = Object(n.c)({
 				packageOfferModal: o,
 				payment: C,
@@ -34048,8 +34025,7 @@
 				premiumPurchaseModal: q,
 				productOffers: W,
 				purchaseCatalog: ce,
-				purchaseModal: he,
-				updateCardModal: be
+				purchaseModal: he
 			})
 		},
 		"./src/reddit/reducers/features/predictions/index.ts": function(e, t, i) {
@@ -47591,4 +47567,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1499baaed7cc1e514c85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.330ce4a6e464526945dc.js.map

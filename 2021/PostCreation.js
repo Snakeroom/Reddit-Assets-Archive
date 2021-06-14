@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.56f47aaa966fa8f92fc7.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5f773072ac34bdc21ed6.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -29776,38 +29776,36 @@
 				return h
 			})), n.d(t, "o", (function() {
 				return b
-			})), n.d(t, "z", (function() {
-				return f
 			})), n.d(t, "c", (function() {
-				return g
+				return f
 			})), n.d(t, "h", (function() {
-				return E
+				return g
 			})), n.d(t, "l", (function() {
-				return C
+				return E
 			})), n.d(t, "w", (function() {
-				return y
+				return C
 			})), n.d(t, "x", (function() {
-				return x
+				return y
 			})), n.d(t, "v", (function() {
-				return v
+				return x
 			})), n.d(t, "y", (function() {
-				return O
+				return v
 			})), n.d(t, "f", (function() {
-				return _
+				return O
 			})), n.d(t, "g", (function() {
-				return k
+				return _
 			})), n.d(t, "i", (function() {
-				return S
+				return k
 			})), n.d(t, "k", (function() {
-				return j
+				return S
 			})), n.d(t, "j", (function() {
-				return T
+				return j
 			})), n.d(t, "m", (function() {
-				return w
+				return T
 			})), n.d(t, "e", (function() {
-				return I
+				return w
 			})), n.d(t, "d", (function() {
-				return P
+				return I
 			}));
 			var o = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				r = n("./src/lib/initializeClient/installReducer.ts"),
@@ -29831,22 +29829,21 @@
 				},
 				h = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
 				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				f = e => e.features.goldPurchase.updateCardModal.pending,
-				g = e => e.features.goldPurchase.payment.paymentMethod,
-				E = e => e.features.goldPurchase.payment.cardName,
-				C = e => e.features.goldPurchase.payment.postalCode,
-				y = e => e.features.goldPurchase.payment.savedCardsPending,
-				x = e => e.features.goldPurchase.payment.savedCards,
-				v = e => e.features.goldPurchase.payment.rememberCard,
-				O = e => e.features.goldPurchase.payment.useSavedCard,
-				_ = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				k = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				S = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				j = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				T = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				w = e => e.features.goldPurchase.payment.stripeToken.pending,
-				I = e => e.features.goldPurchase.payment.paypal.passthrough,
-				P = e => e.features.goldPurchase.payment.paypal.errorMessage
+				f = e => e.features.goldPurchase.payment.paymentMethod,
+				g = e => e.features.goldPurchase.payment.cardName,
+				E = e => e.features.goldPurchase.payment.postalCode,
+				C = e => e.features.goldPurchase.payment.savedCardsPending,
+				y = e => e.features.goldPurchase.payment.savedCards,
+				x = e => e.features.goldPurchase.payment.rememberCard,
+				v = e => e.features.goldPurchase.payment.useSavedCard,
+				O = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				_ = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				k = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				S = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				j = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				T = e => e.features.goldPurchase.payment.stripeToken.pending,
+				w = e => e.features.goldPurchase.payment.paypal.passthrough,
+				I = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, n) {
 			"use strict";
@@ -30231,4 +30228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.56f47aaa966fa8f92fc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5f773072ac34bdc21ed6.js.map

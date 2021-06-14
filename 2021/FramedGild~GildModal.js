@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c6922b5e3c9c7f11ae20.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a1666e823e20f65600c0.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -762,7 +762,7 @@
 					s(Object(d.stripeTokenPending)());
 					const f = Object(v.y)(i);
 					if (f || (m = await s(Object(d.validateAndCreateStripeToken)(e)), b = Object(v.v)(i), m)) try {
-						const e = await Object(p.e)({
+						const e = await Object(p.f)({
 							coins: c,
 							context: o(),
 							correlationId: u,
@@ -820,7 +820,7 @@
 								isAnonymous: i,
 								message: v
 							},
-							C = await Object(p.d)({
+							C = await Object(p.e)({
 								coins: u,
 								context: c(),
 								correlationId: w,
@@ -1173,7 +1173,7 @@
 								isAnonymous: o,
 								message: l
 							},
-							y = await Object(c.f)({
+							y = await Object(c.g)({
 								context: d(),
 								correlationId: b,
 								gildParams: j,
@@ -5292,4 +5292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c6922b5e3c9c7f11ae20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a1666e823e20f65600c0.js.map

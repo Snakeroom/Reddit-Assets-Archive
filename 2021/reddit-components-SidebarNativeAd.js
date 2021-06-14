@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.faebcefed3c38cb9da6a.js
-// Retrieved at 6/10/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2f964fe2990f1ee0b4da.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -3146,38 +3146,36 @@
 				return f
 			})), r.d(t, "o", (function() {
 				return b
-			})), r.d(t, "z", (function() {
-				return h
 			})), r.d(t, "c", (function() {
-				return g
+				return h
 			})), r.d(t, "h", (function() {
-				return _
+				return g
 			})), r.d(t, "l", (function() {
-				return E
+				return _
 			})), r.d(t, "w", (function() {
-				return y
+				return E
 			})), r.d(t, "x", (function() {
-				return v
+				return y
 			})), r.d(t, "v", (function() {
-				return w
+				return v
 			})), r.d(t, "y", (function() {
-				return O
+				return w
 			})), r.d(t, "f", (function() {
-				return I
+				return O
 			})), r.d(t, "g", (function() {
-				return S
+				return I
 			})), r.d(t, "i", (function() {
-				return C
+				return S
 			})), r.d(t, "k", (function() {
-				return T
+				return C
 			})), r.d(t, "j", (function() {
-				return x
+				return T
 			})), r.d(t, "m", (function() {
-				return k
+				return x
 			})), r.d(t, "e", (function() {
-				return P
+				return k
 			})), r.d(t, "d", (function() {
-				return j
+				return P
 			}));
 			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				s = r("./src/lib/initializeClient/installReducer.ts"),
@@ -3201,22 +3199,21 @@
 				},
 				f = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
 				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				h = e => e.features.goldPurchase.updateCardModal.pending,
-				g = e => e.features.goldPurchase.payment.paymentMethod,
-				_ = e => e.features.goldPurchase.payment.cardName,
-				E = e => e.features.goldPurchase.payment.postalCode,
-				y = e => e.features.goldPurchase.payment.savedCardsPending,
-				v = e => e.features.goldPurchase.payment.savedCards,
-				w = e => e.features.goldPurchase.payment.rememberCard,
-				O = e => e.features.goldPurchase.payment.useSavedCard,
-				I = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				S = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				T = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				x = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				k = e => e.features.goldPurchase.payment.stripeToken.pending,
-				P = e => e.features.goldPurchase.payment.paypal.passthrough,
-				j = e => e.features.goldPurchase.payment.paypal.errorMessage
+				h = e => e.features.goldPurchase.payment.paymentMethod,
+				g = e => e.features.goldPurchase.payment.cardName,
+				_ = e => e.features.goldPurchase.payment.postalCode,
+				E = e => e.features.goldPurchase.payment.savedCardsPending,
+				y = e => e.features.goldPurchase.payment.savedCards,
+				v = e => e.features.goldPurchase.payment.rememberCard,
+				w = e => e.features.goldPurchase.payment.useSavedCard,
+				O = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				I = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				S = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				T = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				x = e => e.features.goldPurchase.payment.stripeToken.pending,
+				k = e => e.features.goldPurchase.payment.paypal.passthrough,
+				P = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, r) {
 			"use strict";
@@ -3289,4 +3286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.faebcefed3c38cb9da6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.2f964fe2990f1ee0b4da.js.map

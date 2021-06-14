@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1c636ef65281c5c23fe9.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2a32476dac58c8541006.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -2722,38 +2722,36 @@
 				return f
 			})), r.d(t, "o", (function() {
 				return b
-			})), r.d(t, "z", (function() {
-				return v
 			})), r.d(t, "c", (function() {
-				return h
+				return v
 			})), r.d(t, "h", (function() {
-				return g
+				return h
 			})), r.d(t, "l", (function() {
-				return w
+				return g
 			})), r.d(t, "w", (function() {
-				return O
+				return w
 			})), r.d(t, "x", (function() {
-				return j
+				return O
 			})), r.d(t, "v", (function() {
-				return x
+				return j
 			})), r.d(t, "y", (function() {
-				return y
+				return x
 			})), r.d(t, "f", (function() {
-				return _
+				return y
 			})), r.d(t, "g", (function() {
-				return I
+				return _
 			})), r.d(t, "i", (function() {
-				return C
+				return I
 			})), r.d(t, "k", (function() {
-				return k
+				return C
 			})), r.d(t, "j", (function() {
-				return P
+				return k
 			})), r.d(t, "m", (function() {
-				return E
+				return P
 			})), r.d(t, "e", (function() {
-				return S
+				return E
 			})), r.d(t, "d", (function() {
-				return T
+				return S
 			}));
 			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				s = r("./src/lib/initializeClient/installReducer.ts"),
@@ -2777,22 +2775,21 @@
 				},
 				f = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
 				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				v = e => e.features.goldPurchase.updateCardModal.pending,
-				h = e => e.features.goldPurchase.payment.paymentMethod,
-				g = e => e.features.goldPurchase.payment.cardName,
-				w = e => e.features.goldPurchase.payment.postalCode,
-				O = e => e.features.goldPurchase.payment.savedCardsPending,
-				j = e => e.features.goldPurchase.payment.savedCards,
-				x = e => e.features.goldPurchase.payment.rememberCard,
-				y = e => e.features.goldPurchase.payment.useSavedCard,
-				_ = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				I = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				C = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				P = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				E = e => e.features.goldPurchase.payment.stripeToken.pending,
-				S = e => e.features.goldPurchase.payment.paypal.passthrough,
-				T = e => e.features.goldPurchase.payment.paypal.errorMessage
+				v = e => e.features.goldPurchase.payment.paymentMethod,
+				h = e => e.features.goldPurchase.payment.cardName,
+				g = e => e.features.goldPurchase.payment.postalCode,
+				w = e => e.features.goldPurchase.payment.savedCardsPending,
+				O = e => e.features.goldPurchase.payment.savedCards,
+				j = e => e.features.goldPurchase.payment.rememberCard,
+				x = e => e.features.goldPurchase.payment.useSavedCard,
+				y = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				_ = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				I = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				k = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				P = e => e.features.goldPurchase.payment.stripeToken.pending,
+				E = e => e.features.goldPurchase.payment.paypal.passthrough,
+				S = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, r) {
 			"use strict";
@@ -2921,4 +2918,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1c636ef65281c5c23fe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2a32476dac58c8541006.js.map

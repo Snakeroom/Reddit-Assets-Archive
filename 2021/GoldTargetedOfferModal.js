@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.b2b79aed46349f0ffc31.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.dc148fdff662619ee781.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -100,7 +100,7 @@
 					r(Object(i.stripeTokenPending)());
 					const g = Object(_.y)(s);
 					if (g || (b = await r(Object(i.validateAndCreateStripeToken)(e)), f = Object(_.v)(s), b)) try {
-						const e = await Object(p.e)({
+						const e = await Object(p.f)({
 							coins: d,
 							context: c(),
 							correlationId: u,
@@ -158,7 +158,7 @@
 								isAnonymous: s,
 								message: _
 							},
-							I = await Object(p.d)({
+							I = await Object(p.e)({
 								coins: u,
 								context: d(),
 								correlationId: h,
@@ -927,4 +927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.b2b79aed46349f0ffc31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.dc148fdff662619ee781.js.map

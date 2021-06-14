@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a698b20974dd7494f46c.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b21efbc060c76fdf6f49.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/react-stripe-elements/es/components/Element.js": function(e, t, r) {
@@ -1340,7 +1340,7 @@
 					t(Object(d.stripeTokenPending)());
 					const f = await t(Object(d.validateAndCreateStripeToken)(e));
 					if (f) try {
-						const e = await Object(u.g)({
+						const e = await Object(u.h)({
 							context: n(),
 							correlationId: l,
 							pennies: s,
@@ -1434,156 +1434,6 @@
 				errorMessage: "oGQBXeEv9yu4mXmkfKI4Y",
 				elementPlaceholder: "_1wqbqqyQ0kPt-0QYCJqWdf"
 			}
-		},
-		"./src/reddit/components/CheckoutForm/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
-				o = r("./node_modules/react/index.js"),
-				a = r.n(o),
-				s = r("./node_modules/react-redux/es/index.js"),
-				i = r("./node_modules/reselect/es/index.js"),
-				c = r("./src/lib/classNames/index.ts"),
-				d = r("./node_modules/react-stripe-elements/es/index.js"),
-				l = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				u = r("./src/reddit/selectors/goldPurchaseModals.ts"),
-				p = r("./src/reddit/components/CheckoutForm/index.m.less"),
-				m = r.n(p);
-			const f = Object(i.c)({
-					cardCvcValidation: u.f,
-					cardExpiryValidation: u.g,
-					cardName: u.h,
-					cardNumberValidation: u.i,
-					nameOnCardValidation: u.k,
-					postalCode: u.l
-				}),
-				h = Object(s.b)(f, (e, t) => ({
-					onCardElementChange: t => e(Object(l.cardElementChange)(t)),
-					onNameInput: t => e(Object(l.cardNameInput)({
-						cardName: t
-					})),
-					onPostalCodeInput: t => e(Object(l.postalCodeInput)({
-						postalCode: t
-					}))
-				}));
-			class y extends a.a.Component {
-				constructor() {
-					super(...arguments), this.computedStyle = getComputedStyle(document.body), this.state = {
-						cardNumberReady: !1,
-						cardExpiryReady: !1,
-						cardCVCReady: !1
-					}, this.onChangeCardName = e => {
-						const t = e.currentTarget.value;
-						t !== this.props.cardName && this.props.onNameInput(t)
-					}, this.onChangePostalCode = e => {
-						const t = e.currentTarget.value;
-						t !== this.props.postalCode && this.props.onPostalCodeInput(t)
-					}, this.onCardNumberReady = () => this.setState({
-						cardNumberReady: !0
-					}), this.onCardExpiryReady = () => this.setState({
-						cardExpiryReady: !0
-					}), this.onCardCVCReady = () => this.setState({
-						cardCVCReady: !0
-					})
-				}
-				render() {
-					const {
-						className: e,
-						cardCvcValidation: t,
-						cardExpiryValidation: r,
-						cardName: o,
-						cardNumberValidation: s,
-						onCardElementChange: i,
-						nameOnCardValidation: l,
-						postalCode: u
-					} = this.props, {
-						cardNumberReady: p,
-						cardExpiryReady: f,
-						cardCVCReady: h
-					} = this.state, y = {
-						base: {
-							lineHeight: "40px",
-							color: this.computedStyle.getPropertyValue("--newRedditTheme-bodyText"),
-							"::placeholder": {
-								color: this.computedStyle.getPropertyValue("--newRedditTheme-metaText")
-							}
-						}
-					};
-					return a.a.createElement("div", {
-						className: Object(c.a)(m.a.checkoutForm, e)
-					}, a.a.createElement("div", {
-						className: m.a.formCellWide
-					}, a.a.createElement("input", {
-						className: Object(c.a)(m.a.cardInput, m.a.nameOnCard, {
-							[m.a.cardInputError]: !!l
-						}),
-						type: "text",
-						placeholder: n.fbt._("NAME ON CARD", null, {
-							hk: "IgrlQ"
-						}).toString(),
-						onChange: this.onChangeCardName,
-						value: o
-					})), a.a.createElement("div", {
-						className: m.a.formCell
-					}, a.a.createElement(d.CardNumberElement, {
-						className: Object(c.a)(m.a.cardInput, {
-							[m.a.cardInputError]: !!s
-						}),
-						onChange: i,
-						onReady: this.onCardNumberReady,
-						placeholder: n.fbt._("CARD NUMBER", null, {
-							hk: "3pqMxG"
-						}).toString(),
-						style: y
-					}), !p && a.a.createElement("div", {
-						className: m.a.elementPlaceholder
-					}, n.fbt._("CARD NUMBER", null, {
-						hk: "3pqMxG"
-					}))), a.a.createElement("div", {
-						className: m.a.formCell
-					}, a.a.createElement(d.CardExpiryElement, {
-						className: Object(c.a)(m.a.cardInput, {
-							[m.a.cardInputError]: !!r
-						}),
-						onChange: i,
-						onReady: this.onCardExpiryReady,
-						placeholder: n.fbt._("MM/YY", null, {
-							hk: "Hou17"
-						}).toString(),
-						style: y
-					}), !f && a.a.createElement("div", {
-						className: m.a.elementPlaceholder
-					}, n.fbt._("MM/YY", null, {
-						hk: "Hou17"
-					}))), a.a.createElement("div", {
-						className: m.a.formCell
-					}, a.a.createElement(d.CardCVCElement, {
-						className: Object(c.a)(m.a.cardInput, {
-							[m.a.cardInputError]: !!t
-						}),
-						onChange: i,
-						onReady: this.onCardCVCReady,
-						placeholder: n.fbt._("CCV", null, {
-							hk: "dZzZJ"
-						}).toString(),
-						style: y
-					}), !h && a.a.createElement("div", {
-						className: m.a.elementPlaceholder
-					}, n.fbt._("CCV", null, {
-						hk: "dZzZJ"
-					}))), a.a.createElement("div", {
-						className: m.a.formCell
-					}, a.a.createElement("input", {
-						className: Object(c.a)(m.a.cardInput, m.a.nameOnCard),
-						type: "text",
-						onChange: this.onChangePostalCode,
-						placeholder: n.fbt._("ZIP CODE", null, {
-							hk: "2lJZ4j"
-						}).toString(),
-						value: u
-					})))
-				}
-			}
-			t.a = Object(d.injectStripe)(h(y))
 		},
 		"./src/reddit/components/Gold/PaymentCompletePageFooter/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -2271,19 +2121,159 @@
 				i = r("./src/lib/classNames/index.ts"),
 				c = r("./node_modules/fbt/lib/FbtPublic.js"),
 				d = r("./src/config.ts"),
-				l = r("./src/reddit/components/CheckoutForm/index.tsx"),
-				u = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				p = r("./src/reddit/components/StripePaymentForm/index.m.less"),
-				m = r.n(p);
-			var f = e => {
+				l = r("./node_modules/react-stripe-elements/es/index.js"),
+				u = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
+				p = r("./src/reddit/selectors/goldPurchaseModals.ts"),
+				m = r("./src/reddit/components/CheckoutForm/index.m.less"),
+				f = r.n(m);
+			const h = Object(s.c)({
+					cardCvcValidation: p.f,
+					cardExpiryValidation: p.g,
+					cardName: p.h,
+					cardNumberValidation: p.i,
+					nameOnCardValidation: p.k,
+					postalCode: p.l
+				}),
+				y = Object(a.b)(h, (e, t) => ({
+					onCardElementChange: t => e(Object(u.cardElementChange)(t)),
+					onNameInput: t => e(Object(u.cardNameInput)({
+						cardName: t
+					})),
+					onPostalCodeInput: t => e(Object(u.postalCodeInput)({
+						postalCode: t
+					}))
+				}));
+			class b extends o.a.Component {
+				constructor() {
+					super(...arguments), this.computedStyle = getComputedStyle(document.body), this.state = {
+						cardNumberReady: !1,
+						cardExpiryReady: !1,
+						cardCVCReady: !1
+					}, this.onChangeCardName = e => {
+						const t = e.currentTarget.value;
+						t !== this.props.cardName && this.props.onNameInput(t)
+					}, this.onChangePostalCode = e => {
+						const t = e.currentTarget.value;
+						t !== this.props.postalCode && this.props.onPostalCodeInput(t)
+					}, this.onCardNumberReady = () => this.setState({
+						cardNumberReady: !0
+					}), this.onCardExpiryReady = () => this.setState({
+						cardExpiryReady: !0
+					}), this.onCardCVCReady = () => this.setState({
+						cardCVCReady: !0
+					})
+				}
+				render() {
+					const {
+						className: e,
+						cardCvcValidation: t,
+						cardExpiryValidation: r,
+						cardName: n,
+						cardNumberValidation: a,
+						onCardElementChange: s,
+						nameOnCardValidation: d,
+						postalCode: u
+					} = this.props, {
+						cardNumberReady: p,
+						cardExpiryReady: m,
+						cardCVCReady: h
+					} = this.state, y = {
+						base: {
+							lineHeight: "40px",
+							color: this.computedStyle.getPropertyValue("--newRedditTheme-bodyText"),
+							"::placeholder": {
+								color: this.computedStyle.getPropertyValue("--newRedditTheme-metaText")
+							}
+						}
+					};
+					return o.a.createElement("div", {
+						className: Object(i.a)(f.a.checkoutForm, e)
+					}, o.a.createElement("div", {
+						className: f.a.formCellWide
+					}, o.a.createElement("input", {
+						className: Object(i.a)(f.a.cardInput, f.a.nameOnCard, {
+							[f.a.cardInputError]: !!d
+						}),
+						type: "text",
+						placeholder: c.fbt._("NAME ON CARD", null, {
+							hk: "IgrlQ"
+						}).toString(),
+						onChange: this.onChangeCardName,
+						value: n
+					})), o.a.createElement("div", {
+						className: f.a.formCell
+					}, o.a.createElement(l.CardNumberElement, {
+						className: Object(i.a)(f.a.cardInput, {
+							[f.a.cardInputError]: !!a
+						}),
+						onChange: s,
+						onReady: this.onCardNumberReady,
+						placeholder: c.fbt._("CARD NUMBER", null, {
+							hk: "3pqMxG"
+						}).toString(),
+						style: y
+					}), !p && o.a.createElement("div", {
+						className: f.a.elementPlaceholder
+					}, c.fbt._("CARD NUMBER", null, {
+						hk: "3pqMxG"
+					}))), o.a.createElement("div", {
+						className: f.a.formCell
+					}, o.a.createElement(l.CardExpiryElement, {
+						className: Object(i.a)(f.a.cardInput, {
+							[f.a.cardInputError]: !!r
+						}),
+						onChange: s,
+						onReady: this.onCardExpiryReady,
+						placeholder: c.fbt._("MM/YY", null, {
+							hk: "Hou17"
+						}).toString(),
+						style: y
+					}), !m && o.a.createElement("div", {
+						className: f.a.elementPlaceholder
+					}, c.fbt._("MM/YY", null, {
+						hk: "Hou17"
+					}))), o.a.createElement("div", {
+						className: f.a.formCell
+					}, o.a.createElement(l.CardCVCElement, {
+						className: Object(i.a)(f.a.cardInput, {
+							[f.a.cardInputError]: !!t
+						}),
+						onChange: s,
+						onReady: this.onCardCVCReady,
+						placeholder: c.fbt._("CCV", null, {
+							hk: "dZzZJ"
+						}).toString(),
+						style: y
+					}), !h && o.a.createElement("div", {
+						className: f.a.elementPlaceholder
+					}, c.fbt._("CCV", null, {
+						hk: "dZzZJ"
+					}))), o.a.createElement("div", {
+						className: f.a.formCell
+					}, o.a.createElement("input", {
+						className: Object(i.a)(f.a.cardInput, f.a.nameOnCard),
+						type: "text",
+						onChange: this.onChangePostalCode,
+						placeholder: c.fbt._("ZIP CODE", null, {
+							hk: "2lJZ4j"
+						}).toString(),
+						value: u
+					})))
+				}
+			}
+			var g = Object(l.injectStripe)(y(b)),
+				v = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				C = r("./src/reddit/components/StripePaymentForm/index.m.less"),
+				_ = r.n(C);
+			var P = e => {
 					const {
 						onToggleRememberCard: t,
 						rememberCard: r
 					} = e;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(l.a, {
-						className: m.a.creditCard
-					}), o.a.createElement(u.a, {
-						className: m.a.saveCardCheckbox,
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(g, {
+						className: _.a.creditCard
+					}), o.a.createElement(v.a, {
+						className: _.a.saveCardCheckbox,
 						isSelected: r,
 						onClick: t,
 						text: c.fbt._("Remember this card", null, {
@@ -2293,14 +2283,14 @@
 						href: "https://stripe.com",
 						target: "_blank"
 					}, o.a.createElement("img", {
-						className: m.a.poweredByStripeIcon,
+						className: _.a.poweredByStripeIcon,
 						src: `${d.a.assetPath}/img/payment-icons/powered-by-stripe.png`
 					})))
 				},
-				h = r("./src/reddit/icons/svgs/Trash2/index.tsx");
+				w = r("./src/reddit/icons/svgs/Trash2/index.tsx");
 			const {
-				fbt: y
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), b = e => 2 === e.length ? e : "0" + e, g = e => {
+				fbt: j
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), x = e => 2 === e.length ? e : "0" + e, O = e => {
 				switch (e.toLowerCase()) {
 					case "visa":
 						return `${d.a.assetPath}/img/payment-icons/visa.png`;
@@ -2314,7 +2304,7 @@
 						return null
 				}
 			};
-			class v extends o.a.PureComponent {
+			class E extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						showConfirmText: !1
@@ -2334,58 +2324,56 @@
 				render() {
 					const {
 						savedCard: e
-					} = this.props, t = g(e.brand);
+					} = this.props, t = O(e.brand);
 					return o.a.createElement("label", {
-						className: m.a.savedCardContainer
+						className: _.a.savedCardContainer
 					}, o.a.createElement("input", {
 						type: "radio",
 						name: "use-saved-card",
 						checked: !0,
 						readOnly: !0
 					}), o.a.createElement("div", {
-						className: Object(i.a)(m.a.cardImageContainer, {
-							[m.a.cardImageContainerNightmode]: this.props.nightmode
+						className: Object(i.a)(_.a.cardImageContainer, {
+							[_.a.cardImageContainerNightmode]: this.props.nightmode
 						})
 					}, t ? o.a.createElement("img", {
-						className: m.a.brandImage,
+						className: _.a.brandImage,
 						src: t
 					}) : o.a.createElement("span", {
-						className: m.a.unknownCC
+						className: _.a.unknownCC
 					}, "CC")), o.a.createElement("div", {
-						className: m.a.cardDetails
-					}, o.a.createElement("span", null, y._("Card ending in {Credit Card last four digits}", [y._param("Credit Card last four digits", e.last4)], {
+						className: _.a.cardDetails
+					}, o.a.createElement("span", null, j._("Card ending in {Credit Card last four digits}", [j._param("Credit Card last four digits", e.last4)], {
 						hk: "3dMxMn"
 					})), o.a.createElement("span", {
-						className: m.a.expiry
-					}, y._("Expires {month} / {year}", [y._param("month", b(e.expirationMonth.toString())), y._param("year", e.expirationYear.toString())], {
+						className: _.a.expiry
+					}, j._("Expires {month} / {year}", [j._param("month", x(e.expirationMonth.toString())), j._param("year", e.expirationYear.toString())], {
 						hk: "3iXzVI"
 					}))), this.state.showConfirmText ? o.a.createElement("button", {
-						className: m.a.confirmText,
+						className: _.a.confirmText,
 						onClick: this.onConfirmClick
-					}, y._("Confirm", null, {
+					}, j._("Confirm", null, {
 						hk: "gFhpD"
 					})) : o.a.createElement("button", {
 						onClick: this.onTrashCanClick
-					}, o.a.createElement(h.b, {
-						className: m.a.icon
+					}, o.a.createElement(w.b, {
+						className: _.a.icon
 					})))
 				}
 			}
-			var C = v,
-				_ = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
-				P = r("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				w = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				j = r("./src/reddit/selectors/goldPurchaseModals.ts");
-			const x = Object(s.c)({
-					rememberCard: j.v,
-					savedCard: e => Object(j.x)(e)[0],
-					stripeInfoLoading: j.w
+			var k = E,
+				S = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
+				T = r("./src/reddit/controls/LoadingIcon/index.tsx");
+			const I = Object(s.c)({
+					rememberCard: p.v,
+					savedCard: e => Object(p.x)(e)[0],
+					stripeInfoLoading: p.w
 				}),
-				O = Object(a.b)(x, (e, t) => ({
-					onClickDeleteCard: r => t.shouldDeleteCardWithGql ? e(Object(_.c)(r)) : e(Object(P.deleteSavedCard)(r)),
-					onToggleRememberCard: () => e(Object(P.toggleRememberCard)())
+				M = Object(a.b)(I, (e, t) => ({
+					onClickDeleteCard: r => t.shouldDeleteCardWithGql ? e(Object(S.c)(r)) : e(Object(u.deleteSavedCard)(r)),
+					onToggleRememberCard: () => e(Object(u.toggleRememberCard)())
 				}));
-			class E extends o.a.PureComponent {
+			class N extends o.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -2395,23 +2383,23 @@
 						rememberCard: a,
 						savedCard: s,
 						stripeInfoLoading: c
-					} = this.props, d = c, l = !d && s, u = !d && !l, p = d ? m.a.loadingState : l ? m.a.savedCardState : m.a.formState;
+					} = this.props, d = c, l = !d && s, u = !d && !l, p = d ? _.a.loadingState : l ? _.a.savedCardState : _.a.formState;
 					return o.a.createElement("div", {
-						className: Object(i.a)(m.a.stripePaymentForm, p, e)
-					}, d && o.a.createElement(w.a, {
-						className: m.a.loader,
+						className: Object(i.a)(_.a.stripePaymentForm, p, e)
+					}, d && o.a.createElement(T.a, {
+						className: _.a.loader,
 						sizePx: 60
-					}), l && s && o.a.createElement("form", null, o.a.createElement(C, {
+					}), l && s && o.a.createElement("form", null, o.a.createElement(k, {
 						nightmode: t,
 						onDelete: r,
 						savedCard: s
-					})), u && o.a.createElement(f, {
+					})), u && o.a.createElement(P, {
 						onToggleRememberCard: n,
 						rememberCard: a
 					}))
 				}
 			}
-			t.a = O(E)
+			t.a = M(N)
 		},
 		"./src/reddit/constants/keycodes.ts": function(e, t, r) {
 			"use strict";
@@ -3751,4 +3739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a698b20974dd7494f46c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b21efbc060c76fdf6f49.js.map

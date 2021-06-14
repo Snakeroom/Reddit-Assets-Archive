@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.e3888a9fbf69d22a94e2.js
-// Retrieved at 6/14/2021, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.120536bb121f11e9c3a1.js
+// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -3584,38 +3584,36 @@
 				return h
 			})), r.d(t, "o", (function() {
 				return b
-			})), r.d(t, "z", (function() {
-				return f
 			})), r.d(t, "c", (function() {
-				return E
+				return f
 			})), r.d(t, "h", (function() {
-				return g
+				return E
 			})), r.d(t, "l", (function() {
-				return _
+				return g
 			})), r.d(t, "w", (function() {
-				return v
+				return _
 			})), r.d(t, "x", (function() {
-				return O
+				return v
 			})), r.d(t, "v", (function() {
-				return S
+				return O
 			})), r.d(t, "y", (function() {
-				return C
+				return S
 			})), r.d(t, "f", (function() {
-				return y
+				return C
 			})), r.d(t, "g", (function() {
-				return I
+				return y
 			})), r.d(t, "i", (function() {
-				return T
+				return I
 			})), r.d(t, "k", (function() {
-				return x
+				return T
 			})), r.d(t, "j", (function() {
-				return A
+				return x
 			})), r.d(t, "m", (function() {
-				return R
+				return A
 			})), r.d(t, "e", (function() {
-				return j
+				return R
 			})), r.d(t, "d", (function() {
-				return w
+				return j
 			}));
 			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				s = r("./src/lib/initializeClient/installReducer.ts"),
@@ -3639,22 +3637,21 @@
 				},
 				h = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
 				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				f = e => e.features.goldPurchase.updateCardModal.pending,
-				E = e => e.features.goldPurchase.payment.paymentMethod,
-				g = e => e.features.goldPurchase.payment.cardName,
-				_ = e => e.features.goldPurchase.payment.postalCode,
-				v = e => e.features.goldPurchase.payment.savedCardsPending,
-				O = e => e.features.goldPurchase.payment.savedCards,
-				S = e => e.features.goldPurchase.payment.rememberCard,
-				C = e => e.features.goldPurchase.payment.useSavedCard,
-				y = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				I = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
-				T = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
-				x = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				A = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				R = e => e.features.goldPurchase.payment.stripeToken.pending,
-				j = e => e.features.goldPurchase.payment.paypal.passthrough,
-				w = e => e.features.goldPurchase.payment.paypal.errorMessage
+				f = e => e.features.goldPurchase.payment.paymentMethod,
+				E = e => e.features.goldPurchase.payment.cardName,
+				g = e => e.features.goldPurchase.payment.postalCode,
+				_ = e => e.features.goldPurchase.payment.savedCardsPending,
+				v = e => e.features.goldPurchase.payment.savedCards,
+				O = e => e.features.goldPurchase.payment.rememberCard,
+				S = e => e.features.goldPurchase.payment.useSavedCard,
+				C = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				y = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				I = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
+				T = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
+				x = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				A = e => e.features.goldPurchase.payment.stripeToken.pending,
+				R = e => e.features.goldPurchase.payment.paypal.passthrough,
+				j = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, r) {
 			"use strict";
@@ -3727,4 +3724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e3888a9fbf69d22a94e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.120536bb121f11e9c3a1.js.map
