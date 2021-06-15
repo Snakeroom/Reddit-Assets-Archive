@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b587be997124a00f6a66.js
-// Retrieved at 6/15/2021, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fccc56b0d74eeccfe9b1.js
+// Retrieved at 6/15/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -1685,16 +1685,19 @@
 					return Boolean(null === (t = B(e)) || void 0 === t ? void 0 : t.length)
 				},
 				J = (e, t) => {
+					var i;
 					if (t) {
-						const i = p(e, t),
-							n = Object(l.a)(e);
-						if (i && n) {
-							const e = i.channelState === o.b.JOINED,
-								t = i.channelState === o.b.INVITED;
-							let r, s, d;
-							for (const o of i.members) o.id === n ? s = o : o.id === (i.inviter && i.inviter.id) ? d = o : (!r || r.name.toLocaleLowerCase() > o.name.toLocaleLowerCase()) && (r = o);
-							return i.type === a.a.Direct ? {
-								firstUser: r || i.inviter
+						const n = p(e, t),
+							r = Object(l.a)(e),
+							s = Object(l.d)(e);
+						if (n && r) {
+							const e = n.channelState === o.b.JOINED,
+								t = n.channelState === o.b.INVITED;
+							let r;
+							const d = (null == s ? void 0 : s.id) !== (null === (i = n.inviter) || void 0 === i ? void 0 : i.id) ? n.inviter : void 0;
+							for (const i of n.members)(null == s ? void 0 : s.id) !== i.id && (null == d ? void 0 : d.id) !== i.id && (!r || r.name.toLocaleLowerCase() > i.name.toLocaleLowerCase()) && (r = i);
+							return n.type === a.a.Direct ? {
+								firstUser: r || n.inviter
 							} : e && s && !r && !d ? {
 								firstUser: s
 							} : e && s && d ? {
@@ -1706,11 +1709,11 @@
 							} : t && s && d ? {
 								firstUser: s,
 								secondUser: d
-							} : t && s && i.inviter ? {
+							} : t && s && n.inviter ? {
 								firstUser: s,
-								secondUser: i.inviter
+								secondUser: n.inviter
 							} : {
-								firstUser: i.inviter
+								firstUser: n.inviter
 							}
 						}
 					}
@@ -2470,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("136691"),
+				buildNumber: r("136703"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1623775150"),
+				})("1623778872"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4960,14 +4963,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c249b5ce8188addc425c6f0e9b8868d94f2f10dd8-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ccf4db586cfa3fb7fd8e4804adc3a32d385a45fcc-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "249b5ce8188addc425c6f0e9b8868d94f2f10dd8-production",
+						release: "cf4db586cfa3fb7fd8e4804adc3a32d385a45fcc-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5461,7 +5464,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "249b5ce8188addc425c6f0e9b8868d94f2f10dd8-production",
+						releaseClient: "cf4db586cfa3fb7fd8e4804adc3a32d385a45fcc-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -47567,4 +47570,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b587be997124a00f6a66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fccc56b0d74eeccfe9b1.js.map
