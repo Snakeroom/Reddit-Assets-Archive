@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.26a5c05731546eaf607d.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.a96087d01fa04f496b61.js
+// Retrieved at 6/15/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1847,66 +1847,42 @@
 				u = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				m = s("./src/reddit/layout/row/Inline/index.tsx"),
 				p = s("./src/reddit/layout/row/RightAlign/index.tsx");
-			const b = 10;
-			class h extends o.a.Component {
-				constructor() {
-					super(...arguments), this.state = {
-						expanded: !1
-					}, this.onButtonClick = () => {
-						const {
-							expanded: e
-						} = this.state, {
-							hasMoreItems: t,
-							onLoadMore: s
-						} = this.props;
-						e || this.setState({
-							expanded: !0
-						}), e && !t && this.setState({
-							expanded: !1
-						}), t && s && s()
-					}, this.renderToggleButton = () => {
-						const {
-							expanded: e
-						} = this.state, {
-							hasMoreItems: t,
-							onLoadMore: s,
-							pending: r
-						} = this.props, n = !e || t && s ? i.fbt._("View More", null, {
-							hk: "1RK8uA"
-						}) : i.fbt._("View Less", null, {
-							hk: "1M72mK"
-						});
-						return o.a.createElement(l.o, {
-							onClick: this.onButtonClick
-						}, r ? o.a.createElement(u.a, {
-							sizePx: b
-						}) : n)
-					}
-				}
-				render() {
-					const {
-						className: e,
-						hasMoreItems: t,
-						headerButton: s,
-						items: i,
-						minimizedLength: r,
-						renderItem: d,
-						title: a
-					} = this.props, {
-						expanded: l
-					} = this.state, u = i.length > r || t, b = (!u || l ? i : n()(i, r)).map(e => d({
-						item: e
-					}));
-					return o.a.createElement(c.a, {
-						className: e,
-						headerButton: s,
-						title: a
-					}, b, o.a.createElement(m.a, null, o.a.createElement(p.a, null, u && this.renderToggleButton())))
-				}
-			}
-			h.defaultProps = {
+			const b = e => {
+				const {
+					className: t,
+					hasMoreItems: s,
+					headerButton: r,
+					items: a,
+					minimizedLength: b,
+					onLoadMore: h,
+					pending: f,
+					renderItem: x,
+					title: E
+				} = e, [O, y] = Object(d.useState)(!1), S = a.length > b || s, g = (!S || O ? a : n()(a, b)).map(e => x({
+					item: e
+				})), _ = () => {
+					O || y(!0), O && !s && y(!1), s && h && h()
+				};
+				return o.a.createElement(c.a, {
+					className: t,
+					headerButton: r,
+					title: E
+				}, g, o.a.createElement(m.a, null, o.a.createElement(p.a, null, S && (() => {
+					const e = !O || s && h ? i.fbt._("View More", null, {
+						hk: "1RK8uA"
+					}) : i.fbt._("View Less", null, {
+						hk: "1M72mK"
+					});
+					return o.a.createElement(l.o, {
+						onClick: _
+					}, f ? o.a.createElement(u.a, {
+						sizePx: 10
+					}) : e)
+				})())))
+			};
+			b.defaultProps = {
 				minimizedLength: a.Ob
-			}, t.a = h
+			}, t.a = b
 		},
 		"./src/reddit/components/SidebarSectionHeader/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2577,4 +2553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.26a5c05731546eaf607d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.a96087d01fa04f496b61.js.map

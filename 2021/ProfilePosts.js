@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.4c9efc08a7f686956173.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.3c969672db7fd593e5f6.js
+// Retrieved at 6/15/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5282,66 +5282,42 @@
 				u = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				m = s("./src/reddit/layout/row/Inline/index.tsx"),
 				p = s("./src/reddit/layout/row/RightAlign/index.tsx");
-			const h = 10;
-			class b extends a.a.Component {
-				constructor() {
-					super(...arguments), this.state = {
-						expanded: !1
-					}, this.onButtonClick = () => {
-						const {
-							expanded: e
-						} = this.state, {
-							hasMoreItems: t,
-							onLoadMore: s
-						} = this.props;
-						e || this.setState({
-							expanded: !0
-						}), e && !t && this.setState({
-							expanded: !1
-						}), t && s && s()
-					}, this.renderToggleButton = () => {
-						const {
-							expanded: e
-						} = this.state, {
-							hasMoreItems: t,
-							onLoadMore: s,
-							pending: r
-						} = this.props, o = !e || t && s ? n.fbt._("View More", null, {
-							hk: "1RK8uA"
-						}) : n.fbt._("View Less", null, {
-							hk: "1M72mK"
-						});
-						return a.a.createElement(l.o, {
-							onClick: this.onButtonClick
-						}, r ? a.a.createElement(u.a, {
-							sizePx: h
-						}) : o)
-					}
-				}
-				render() {
-					const {
-						className: e,
-						hasMoreItems: t,
-						headerButton: s,
-						items: n,
-						minimizedLength: r,
-						renderItem: i,
-						title: d
-					} = this.props, {
-						expanded: l
-					} = this.state, u = n.length > r || t, h = (!u || l ? n : o()(n, r)).map(e => i({
-						item: e
-					}));
-					return a.a.createElement(c.a, {
-						className: e,
-						headerButton: s,
-						title: d
-					}, h, a.a.createElement(m.a, null, a.a.createElement(p.a, null, u && this.renderToggleButton())))
-				}
-			}
-			b.defaultProps = {
+			const h = e => {
+				const {
+					className: t,
+					hasMoreItems: s,
+					headerButton: r,
+					items: d,
+					minimizedLength: h,
+					onLoadMore: b,
+					pending: f,
+					renderItem: g,
+					title: _
+				} = e, [x, y] = Object(i.useState)(!1), v = d.length > h || s, w = (!v || x ? d : o()(d, h)).map(e => g({
+					item: e
+				})), E = () => {
+					x || y(!0), x && !s && y(!1), s && b && b()
+				};
+				return a.a.createElement(c.a, {
+					className: t,
+					headerButton: r,
+					title: _
+				}, w, a.a.createElement(m.a, null, a.a.createElement(p.a, null, v && (() => {
+					const e = !x || s && b ? n.fbt._("View More", null, {
+						hk: "1RK8uA"
+					}) : n.fbt._("View Less", null, {
+						hk: "1M72mK"
+					});
+					return a.a.createElement(l.o, {
+						onClick: E
+					}, f ? a.a.createElement(u.a, {
+						sizePx: 10
+					}) : e)
+				})())))
+			};
+			h.defaultProps = {
 				minimizedLength: d.Ob
-			}, t.a = b
+			}, t.a = h
 		},
 		"./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -5617,51 +5593,67 @@
 				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
 				d = s("./src/reddit/components/SidebarExpandableList/index.tsx"),
-				c = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				l = s("./src/reddit/controls/Typography/index.tsx"),
-				u = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				m = s("./node_modules/lodash/isEqual.js"),
-				p = s.n(m);
-			const h = Object(a.b)(a.d, p.a);
-			var b = s("./src/reddit/selectors/profile.ts"),
-				f = s("./src/reddit/components/SidebarTrophyCase/index.m.less"),
-				g = s.n(f),
-				_ = s("./src/lib/lessComponent.tsx");
-			const x = Object(a.c)({
+				c = s("./src/reddit/controls/Typography/index.tsx"),
+				l = s("./src/reddit/selectors/telemetry.ts");
+			var u = s("./src/reddit/hooks/useTracking.ts"),
+				m = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				p = s("./node_modules/lodash/isEqual.js"),
+				h = s.n(p);
+			const b = Object(a.b)(a.d, h.a);
+			var f = s("./src/reddit/selectors/profile.ts"),
+				g = s("./src/reddit/components/SidebarTrophyCase/index.m.less"),
+				_ = s.n(g),
+				x = s("./src/lib/lessComponent.tsx"),
+				y = s("./src/lib/opener/index.ts");
+			const v = Object(a.c)({
 				trophyCase: (e, {
 					profileName: t
-				}) => Object(b.r)(e, Object(b.m)(e, t))
-			}, h);
-			t.a = Object(i.b)(x)(({
+				}) => Object(f.r)(e, Object(f.m)(e, t))
+			}, b);
+			t.a = Object(i.b)(v)(({
 				trophyCase: e
 			}) => 0 === e.length ? null : o.a.createElement(d.a, {
 				title: n.fbt._("Trophy Case ({trophyCount})", [n.fbt._param("trophyCount", `${e.length}`)], {
 					hk: "mzh3V"
 				}),
 				items: e,
-				renderItem: C
+				renderItem: S
 			}));
-			const y = _.a.wrapped(u.a, "TrophyItem", g.a),
-				v = _.a.div("TrophyIcon", g.a),
-				w = _.a.h5("TrophyName", g.a),
-				E = _.a.div("TrophyContent", g.a),
-				k = _.a.wrapped(l.c, "Description", g.a);
-
-			function C({
-				item: e
-			}) {
-				const t = o.a.createElement("img", {
-					src: e.icon,
-					title: e.name
-				});
-				return o.a.createElement(y, {
-					key: e.id
-				}, o.a.createElement(v, null, e.url ? o.a.createElement(c.b, {
-					href: e.url,
-					source: void 0,
-					isSponsored: !1
-				}, t) : t), o.a.createElement(E, null, o.a.createElement(w, null, e.name), o.a.createElement(k, null, e.description)))
-			}
+			const w = x.a.wrapped(m.a, "TrophyItem", _.a),
+				E = x.a.div("TrophyIcon", _.a),
+				k = x.a.h5("TrophyName", _.a),
+				C = x.a.div("TrophyContent", _.a),
+				j = x.a.wrapped(c.c, "Description", _.a),
+				S = ({
+					item: e
+				}) => {
+					const t = Object(u.a)(),
+						s = o.a.createElement("img", {
+							src: e.icon,
+							title: e.name
+						});
+					return o.a.createElement(w, {
+						key: e.id
+					}, o.a.createElement(E, null, e.url ? o.a.createElement("a", {
+						target: y.c.BLANK,
+						rel: y.b,
+						href: e.url,
+						onClick: () => t((e => t => ({
+							source: "trophy",
+							action: "click",
+							noun: "trophy",
+							...l.defaults(t),
+							actionInfo: Object(l.actionInfo)(t, {
+								paneName: "profile_about"
+							}),
+							profile: l.profile(t),
+							trophy: e
+						}))({
+							id: e.id,
+							name: e.name
+						}))
+					}, s) : s), o.a.createElement(C, null, o.a.createElement(k, null, e.name), o.a.createElement(j, null, e.description)))
+				}
 		},
 		"./src/reddit/components/StateSort/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -7384,4 +7376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.4c9efc08a7f686956173.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3c969672db7fd593e5f6.js.map
