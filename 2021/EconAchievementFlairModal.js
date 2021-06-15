@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.edcfa8488089c05ec5d8.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.6b974192eacaf35fb471.js
+// Retrieved at 6/15/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -66,8 +66,8 @@
 				_ = a("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				I = a("./src/lib/classNames/index.ts"),
 				f = a("./src/reddit/actions/tooltip.ts"),
-				j = a("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				N = a("./src/reddit/helpers/trackers/userFlair.ts"),
+				N = a("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				j = a("./src/reddit/helpers/trackers/userFlair.ts"),
 				F = a("./src/reddit/hooks/useTracking.ts"),
 				O = a("./src/reddit/icons/fonts/index.tsx"),
 				x = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less"),
@@ -94,7 +94,7 @@
 					onMouseEnter: d,
 					onMouseLeave: d,
 					onClick: () => {
-						l && t(e.type), e.isPreferred || s(Object(N.b)({
+						l && t(e.type), e.isPreferred || s(Object(j.b)({
 							achievementFlair: e
 						}))
 					},
@@ -119,7 +119,7 @@
 					className: A.a.achievementLock
 				}))), c.a.createElement("div", {
 					className: A.a.achievementName
-				}, c.a.createElement("span", null, e.name)), e.isLocked && c.a.createElement(j.c, {
+				}, c.a.createElement("span", null, e.name)), e.isLocked && c.a.createElement(N.c, {
 					tooltipId: i,
 					text: r,
 					className: A.a.achievementTooltip
@@ -225,7 +225,7 @@
 					priority: b.b.Plain,
 					onClick: () => {
 						const e = r ? Object(l.e)(r) : null;
-						i(Object(N.a)()), s(Object(H.b)({
+						i(Object(j.a)()), s(Object(H.b)({
 							username: e,
 							subredditId: t
 						}))
@@ -294,7 +294,7 @@
 		"./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.tsx": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return E
+				return b
 			}));
 			var s = a("./node_modules/react/index.js"),
 				c = a.n(s),
@@ -349,10 +349,9 @@
 					className: m.a.achievementName
 				}, c.a.createElement("span", null, e.name))))))
 			};
-			var h = a("./src/reddit/selectors/experiments/econ/index.ts"),
-				p = a("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
-				b = a.n(p);
-			const E = ({
+			var h = a("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
+				p = a.n(h);
+			const b = ({
 					className: e,
 					subredditId: t,
 					userId: a,
@@ -371,33 +370,32 @@
 						u = null === (l = Object(n.e)(e => Object(d.b)(e, {
 							subredditId: t,
 							userId: a
-						}))) || void 0 === l ? void 0 : l.achievementTypes,
-						p = !!o || !!m;
-					if (!Object(n.e)(e => p && Object(h.h)(e)) || !u) return null;
-					const E = (null == m ? void 0 : m.type) === (null == o ? void 0 : o.type) ? null : m,
-						I = 1 + (E ? 1 : 0),
-						f = (null == u ? void 0 : u.length) - I;
+						}))) || void 0 === l ? void 0 : l.achievementTypes;
+					if (!(!!o || !!m) || !u) return null;
+					const h = (null == m ? void 0 : m.type) === (null == o ? void 0 : o.type) ? null : m,
+						b = 1 + (h ? 1 : 0),
+						_ = (null == u ? void 0 : u.length) - b;
 					return c.a.createElement("span", {
-						className: Object(i.a)(b.a.container, e),
+						className: Object(i.a)(p.a.container, e),
 						"data-testid": "achievement-flairs",
 						onMouseEnter: r
-					}, c.a.createElement(_, {
-						achievement: E
-					}), c.a.createElement(_, {
+					}, c.a.createElement(E, {
+						achievement: h
+					}), c.a.createElement(E, {
 						achievement: o
-					}), !!f && c.a.createElement("span", {
-						className: b.a.hiddenAchievementsCount
-					}, "+", f), s && c.a.createElement(v, {
-						className: b.a.hoverPopup,
+					}), !!_ && c.a.createElement("span", {
+						className: p.a.hiddenAchievementsCount
+					}, "+", _), s && c.a.createElement(v, {
+						className: p.a.hoverPopup,
 						subredditId: t,
 						userId: a
 					}))
 				},
-				_ = ({
+				E = ({
 					achievement: e
 				}) => e ? c.a.createElement("img", {
 					alt: e.name,
-					className: b.a.icon,
+					className: p.a.icon,
 					src: e.icon.url
 				}) : null
 		},
@@ -475,4 +473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.edcfa8488089c05ec5d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.6b974192eacaf35fb471.js.map

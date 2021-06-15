@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f781d391c9db51a6768c.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.8317c187518aaca92e67.js
+// Retrieved at 6/15/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1712,7 +1712,7 @@
 		"./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return g
+				return f
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -1767,10 +1767,9 @@
 					className: u.a.achievementName
 				}, r.a.createElement("span", null, e.name))))))
 			};
-			var b = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				h = n("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
-				f = n.n(h);
-			const g = ({
+			var b = n("./src/reddit/components/Econ/AchievementFlair/UserAchievementFlair.m.less"),
+				h = n.n(b);
+			const f = ({
 					className: e,
 					subredditId: t,
 					userId: n,
@@ -1789,33 +1788,32 @@
 						m = null === (c = Object(i.e)(e => Object(d.b)(e, {
 							subredditId: t,
 							userId: n
-						}))) || void 0 === c ? void 0 : c.achievementTypes,
-						h = !!l || !!u;
-					if (!Object(i.e)(e => h && Object(b.h)(e)) || !m) return null;
-					const g = (null == u ? void 0 : u.type) === (null == l ? void 0 : l.type) ? null : u,
-						_ = 1 + (g ? 1 : 0),
-						E = (null == m ? void 0 : m.length) - _;
+						}))) || void 0 === c ? void 0 : c.achievementTypes;
+					if (!(!!l || !!u) || !m) return null;
+					const b = (null == u ? void 0 : u.type) === (null == l ? void 0 : l.type) ? null : u,
+						f = 1 + (b ? 1 : 0),
+						x = (null == m ? void 0 : m.length) - f;
 					return r.a.createElement("span", {
-						className: Object(o.a)(f.a.container, e),
+						className: Object(o.a)(h.a.container, e),
 						"data-testid": "achievement-flairs",
 						onMouseEnter: a
-					}, r.a.createElement(x, {
-						achievement: g
-					}), r.a.createElement(x, {
+					}, r.a.createElement(g, {
+						achievement: b
+					}), r.a.createElement(g, {
 						achievement: l
-					}), !!E && r.a.createElement("span", {
-						className: f.a.hiddenAchievementsCount
-					}, "+", E), s && r.a.createElement(p, {
-						className: f.a.hoverPopup,
+					}), !!x && r.a.createElement("span", {
+						className: h.a.hiddenAchievementsCount
+					}, "+", x), s && r.a.createElement(p, {
+						className: h.a.hoverPopup,
 						subredditId: t,
 						userId: n
 					}))
 				},
-				x = ({
+				g = ({
 					achievement: e
 				}) => e ? r.a.createElement("img", {
 					alt: e.name,
-					className: f.a.icon,
+					className: h.a.icon,
 					src: e.icon.url
 				}) : null
 		},
@@ -6263,4 +6261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f781d391c9db51a6768c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8317c187518aaca92e67.js.map
