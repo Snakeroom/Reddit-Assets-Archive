@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.54af08abeb623a1ea016.js
-// Retrieved at 5/24/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.bab5ed39bfba49e8855f.js
+// Retrieved at 6/15/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, a, t) {
@@ -17,38 +17,39 @@
 				m = t.n(u);
 			a.a = Object(n.i)(({
 				className: e,
-				match: a
+				match: a,
+				location: t
 			}) => {
-				const t = new URLSearchParams("?platform=desktop");
-				Object.entries(a.params).forEach(([e, a]) => t.append(e, a));
-				const n = Object(l.a)();
+				const n = new URLSearchParams(t.search);
+				n.append("platform", "desktop"), Object.entries(a.params).forEach(([e, a]) => n.append(e, a));
+				const u = Object(l.a)();
 				Object(o.useEffect)(() => {
-					n(i.d)
-				}, [n]);
-				const u = Object(s.e)(e => e.user.session),
-					v = Object(o.useRef)(null),
-					f = Object(o.useCallback)(e => {
-						u && e && e.postMessage({
+					u(i.d)
+				}, [u]);
+				const v = Object(s.e)(e => e.user.session),
+					f = Object(o.useRef)(null),
+					p = Object(o.useCallback)(e => {
+						v && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
-								Authorization: `Bearer ${u.accessToken}`
+								Authorization: `Bearer ${v.accessToken}`
 							},
-							expiration: new Date(u.expires).getTime()
+							expiration: new Date(v.expires).getTime()
 						}, c.a.snoovatarUrl)
-					}, [u]);
+					}, [v]);
 				return Object(o.useEffect)(() => {
 					var e;
-					return f(null === (e = null == v ? void 0 : v.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [v, f]), Object(o.useEffect)(() => {
+					return p(null === (e = null == f ? void 0 : f.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [f, p]), Object(o.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && f(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [f]), r.a.createElement("div", {
+				}, [p]), r.a.createElement("div", {
 					className: Object(d.a)(m.a.iframeContainer, e)
 				}, r.a.createElement("iframe", {
-					ref: v,
-					src: `${c.a.snoovatarUrl}/static/client/?${t.toString()}`
+					ref: f,
+					src: `${c.a.snoovatarUrl}/static/client/?${n.toString()}`
 				}))
 			})
 		},
@@ -95,4 +96,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.54af08abeb623a1ea016.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.bab5ed39bfba49e8855f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9486a19c77cea97cb845.js
-// Retrieved at 6/15/2021, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8a6acd393f66ca0ef6b4.js
+// Retrieved at 6/15/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1146,7 +1146,7 @@
 						2: "c69edd6867b4025615c4",
 						Acknowledgements: "2e1f5f7d5ffd48ab76ed",
 						Appeal: "951cc12ba302655f087f",
-						Avatar: "e862a9b21901f16cc7e7",
+						Avatar: "6693e11aeb445491d513",
 						BadgePurchaseModal: "8ae919109b839fec3345",
 						BannedUserModal: "b0e7ae6bafe1fcb4adc1",
 						ChangeUsernameModals: "56518b54693f760d1a38",
@@ -1229,7 +1229,7 @@
 						ReportPage: "431b61bb7a5a8ab12d6d",
 						RequestToJoinPrivateSubredditModal: "17bde55832f71705fd71",
 						ShortcutWrapper: "62a3634edfc7c200ceba",
-						SnoovatarModal: "54af08abeb623a1ea016",
+						SnoovatarModal: "bab5ed39bfba49e8855f",
 						SubredditCreation: "fb49b39cf030825ebaf5",
 						SubredditHovercard: "475fabb1f283f05d2506",
 						SubredditLeaderboard: "462f63494426493c2d34",
@@ -1246,7 +1246,7 @@
 						"translations/es_MX-json": "6a1f63835c55a60d2f55",
 						"translations/fr_FR-json": "80f65cff0a55aa152785",
 						"translations/it_IT-json": "f36aee6278c054f0b77a",
-						"translations/pseudo_ext-json": "897703c1bddcb74073d4",
+						"translations/pseudo_ext-json": "93b3f8bca7e9ce1f3758",
 						"translations/pseudo_long-json": "1e693889813f2e464087",
 						"translations/pseudo_short-json": "e0cf055f59bd8daa5f98",
 						"translations/pt_BR-json": "88f437039db00b9bee48",
@@ -1489,4 +1489,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9486a19c77cea97cb845.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8a6acd393f66ca0ef6b4.js.map
