@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.071a49011acabf431712.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0c2d447758d8c9748b11.js
+// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1828,7 +1828,7 @@
 			})), r.d(t, "w", (function() {
 				return J
 			})), r.d(t, "e", (function() {
-				return V
+				return z
 			})), r.d(t, "d", (function() {
 				return G
 			})), r.d(t, "u", (function() {
@@ -1973,7 +1973,7 @@
 							break
 						}
 						case n.Jb.SUBREDDIT_WIKI:
-							Object(w.a)(z(r, i)(t));
+							Object(w.a)(V(r, i)(t));
 							break;
 						case n.Jb.COINS:
 							Object(w.a)(M(r, i)(t)), Object(w.a)(H()(t));
@@ -1997,7 +1997,7 @@
 							p && D(t, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case n.Jb.SUBREDDIT_LEADERBOARD:
-							p && Object(w.a)(V()(t));
+							p && Object(w.a)(z()(t));
 							break;
 						case n.Jb.SEARCH_RESULTS:
 							if (p) {
@@ -2307,13 +2307,13 @@
 					noun: "screen",
 					...x(e)
 				}),
-				V = () => e => ({
+				z = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...x(e)
 				}),
-				z = (e, t) => r => ({
+				V = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3017,26 +3017,26 @@
 						experimentEligibilitySelector: o.a,
 						experimentName: e
 					});
-					return !(!r || Object(i.Pd)(r))
+					return !(!r || Object(i.Rd)(r))
 				},
-				s = n(i.ub),
-				c = n(i.qb),
-				l = n(i.sb),
-				a = n(i.tb),
-				d = n(i.Ab),
-				u = n(i.Bb),
-				f = n(i.Cb),
-				_ = n(i.Db),
-				p = n(i.Gb),
-				m = n(i.Jb),
-				b = n(i.Eb),
-				h = n(i.Hb),
-				g = n(i.Fb),
-				v = n(i.Ib),
-				O = n(i.Kb),
-				y = n(i.xb),
-				I = n(i.wb),
-				w = (n(i.yb), n(i.Lb))
+				s = n(i.wb),
+				c = n(i.sb),
+				l = n(i.ub),
+				a = n(i.vb),
+				d = n(i.Cb),
+				u = n(i.Db),
+				f = n(i.Eb),
+				_ = n(i.Fb),
+				p = n(i.Ib),
+				m = n(i.Lb),
+				b = n(i.Gb),
+				h = n(i.Jb),
+				g = n(i.Hb),
+				v = n(i.Kb),
+				O = n(i.Mb),
+				y = n(i.zb),
+				I = n(i.yb),
+				w = (n(i.Ab), n(i.Nb))
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -3050,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.071a49011acabf431712.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0c2d447758d8c9748b11.js.map

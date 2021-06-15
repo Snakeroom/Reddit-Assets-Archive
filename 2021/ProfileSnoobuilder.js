@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7030d4d6efaf667e9ff6.js
-// Retrieved at 6/15/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.c16d97abd43f9763eaee.js
+// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1179,7 +1179,7 @@
 			}) => i.a.createElement(m.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => n === u.wd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => n === u.yd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: o,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -4133,12 +4133,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.zd.SmIcon:
+						case b.Bd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.zd.SmIconHc:
+						case b.Bd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5379,12 +5379,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.rd
+						experimentName: s.td
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.zd.SmIcon || t === s.zd.SmIconHc
+					return t === s.Bd.SmIcon || t === s.Bd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5407,4 +5407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7030d4d6efaf667e9ff6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.c16d97abd43f9763eaee.js.map

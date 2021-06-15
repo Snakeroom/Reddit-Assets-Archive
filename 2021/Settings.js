@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4010e77d4a5e71a40bff.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.edbef7d865fa66faa557.js
+// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6953,7 +6953,9 @@
 				MultiLineInputSettingsBottomRow: "hgvQ7UQa9_0jmXSzQjqhF",
 				multiLineInputSettingsBottomRow: "hgvQ7UQa9_0jmXSzQjqhF",
 				ActionLinkContainer: "e4RehzaESS5nfk-O6pYoK",
-				actionLinkContainer: "e4RehzaESS5nfk-O6pYoK"
+				actionLinkContainer: "e4RehzaESS5nfk-O6pYoK",
+				input: "_14_SnmD6g3FrozcKjTpqoH",
+				tag: "_1GQzFyg5xYq94euL74ZaeJ"
 			}
 		},
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
@@ -7300,7 +7302,10 @@
 					subtext: e.subtext,
 					direction: "column",
 					textContainerClassName: e.textContainerClassName
-				}, s.a.createElement(f.a, {
+				}, e.isCreateCommunity && s.a.createElement("span", {
+					className: F.a.tag
+				}, "r/"), s.a.createElement(f.a, {
+					className: e.isCreateCommunity ? F.a.input : void 0,
 					disabled: !1,
 					onChange: e.onChange,
 					placeholder: e.placeholder,
@@ -10962,9 +10967,9 @@
 					language: M.U,
 					shouldShowCreatePasswordModal: B.d,
 					shouldShowGenderCollection: e => Object(T.c)(e, {
-						experimentName: A.md,
+						experimentName: A.od,
 						experimentEligibilitySelector: L
-					}) === A.vd.Enabled,
+					}) === A.xd.Enabled,
 					showLanguageSection: P.d.langSelect,
 					availableLocales: Re,
 					locale: De.i,
@@ -14219,4 +14224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4010e77d4a5e71a40bff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.edbef7d865fa66faa557.js.map

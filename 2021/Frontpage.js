@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.faa9f30fb205582772ef.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.64bbd63bac3d0f53713e.js
+// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -334,7 +334,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(V.d)(m, {
-								experimentName: l.Fc
+								experimentName: l.Hc
 							});
 							s(Object(i.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -464,7 +464,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(V.d)(r, {
-										experimentName: l.Fc
+										experimentName: l.Hc
 									});
 									t(Object(i.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1386,10 +1386,10 @@
 			}
 			var We = s("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.oc,
+					experimentName: Fe.qc,
 					experimentEligibilitySelector: Ue.a
 				}), We.a),
-				Ge = Object(u.a)(qe, e => e === Fe.qc.Enabled);
+				Ge = Object(u.a)(qe, e => e === Fe.sc.Enabled);
 			var Ve = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ke = s("./src/reddit/selectors/user.ts");
 			var He = s("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1421,8 +1421,8 @@
 						return (!t || !s) && (!Object(He.b)(e) && function(e) {
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: Ke.K,
-								experimentName: Fe.cb
-							}) === Fe.Ob
+								experimentName: Fe.db
+							}) === Fe.Qb
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -4355,7 +4355,7 @@
 				c = e => Object(o.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: n.O
-				}) === n.eb.Treatment
+				}) === n.fb.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
 			"use strict";
@@ -4403,4 +4403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.faa9f30fb205582772ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.64bbd63bac3d0f53713e.js.map

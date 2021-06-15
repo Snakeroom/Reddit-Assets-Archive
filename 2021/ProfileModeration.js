@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.ecad81dd8d5fb0a574cd.js
-// Retrieved at 6/9/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.0dbde9115f47b903fefb.js
+// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -285,7 +285,9 @@
 				MultiLineInputSettingsBottomRow: "hgvQ7UQa9_0jmXSzQjqhF",
 				multiLineInputSettingsBottomRow: "hgvQ7UQa9_0jmXSzQjqhF",
 				ActionLinkContainer: "e4RehzaESS5nfk-O6pYoK",
-				actionLinkContainer: "e4RehzaESS5nfk-O6pYoK"
+				actionLinkContainer: "e4RehzaESS5nfk-O6pYoK",
+				input: "_14_SnmD6g3FrozcKjTpqoH",
+				tag: "_1GQzFyg5xYq94euL74ZaeJ"
 			}
 		},
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
@@ -313,9 +315,9 @@
 			})), n.d(t, "d", (function() {
 				return we
 			})), n.d(t, "h", (function() {
-				return ke
-			})), n.d(t, "c", (function() {
 				return ye
+			})), n.d(t, "c", (function() {
+				return ke
 			})), n.d(t, "e", (function() {
 				return Ne
 			})), n.d(t, "g", (function() {
@@ -352,9 +354,9 @@
 			}
 			const _ = x.a.span("Wrapper", E.a),
 				w = x.a.select("Inner", E.a),
-				k = x.a.wrapped(g.b, "Caret", E.a);
+				y = x.a.wrapped(g.b, "Caret", E.a);
 
-			function y({
+			function k({
 				className: e,
 				innerClassName: t,
 				...n
@@ -366,7 +368,7 @@
 					className: e
 				}, r.a.createElement(w, C({
 					className: t
-				}, n)), r.a.createElement(k, C({
+				}, n)), r.a.createElement(y, C({
 					isSubreddit: !0
 				}, a)))
 			}
@@ -581,7 +583,7 @@
 					onClick: () => e.onClick(t),
 					key: n
 				}))), e.descriptions && r.a.createElement(Ce, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
-				ke = ({
+				ye = ({
 					disabled: e,
 					last: t,
 					onClick: n,
@@ -604,7 +606,7 @@
 						last: t,
 						indent: !0,
 						disabled: e
-					}, r.a.createElement(y, {
+					}, r.a.createElement(k, {
 						id: o.id,
 						className: "redditStyle",
 						disabled: e || o.inputDisabled,
@@ -618,7 +620,7 @@
 						value: e
 					}, t)))))
 				},
-				ye = e => r.a.createElement(J, {
+				ke = e => r.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
@@ -632,7 +634,10 @@
 					subtext: e.subtext,
 					direction: "column",
 					textContainerClassName: e.textContainerClassName
-				}, r.a.createElement(b.a, {
+				}, e.isCreateCommunity && r.a.createElement("span", {
+					className: B.a.tag
+				}, "r/"), r.a.createElement(b.a, {
+					className: e.isCreateCommunity ? B.a.input : void 0,
 					disabled: !1,
 					onChange: e.onChange,
 					placeholder: e.placeholder,
@@ -901,8 +906,8 @@
 							return null
 					}
 				},
-				k = () => window.pageYOffset || window.scrollY,
-				y = 75,
+				y = () => window.pageYOffset || window.scrollY,
+				k = 75,
 				N = {
 					paddingLeft: 15,
 					left: 0,
@@ -915,9 +920,9 @@
 			class S extends i.a.Component {
 				constructor(e) {
 					super(e), this.toggleSticky = s()(() => {
-						this.state.sticky || this.forceUnsticky ? k() < y && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
+						this.state.sticky || this.forceUnsticky ? y() < k && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
 							sticky: !1
-						}, () => this.forceUnsticky = !1)) : k() >= y && this.setState({
+						}, () => this.forceUnsticky = !1)) : y() >= k && this.setState({
 							sticky: !0
 						})
 					}, c.I), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
@@ -1124,7 +1129,7 @@
 			const w = Object(u.c)({
 				activeModalId: h.a
 			});
-			class k extends c.a.Component {
+			class y extends c.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = c.a.createRef(), this.toggleModal = () => {
 						this.props.toggleErrorTextModal(this.state.modalId)
@@ -1179,9 +1184,9 @@
 					}, r || e))
 				}
 			}
-			const y = Object(d.b)(w, e => ({
+			const k = Object(d.b)(w, e => ({
 					toggleErrorTextModal: t => e(Object(p.i)(t))
-				}))(k),
+				}))(y),
 				N = e => {
 					const {
 						className: t,
@@ -1192,7 +1197,7 @@
 					} = e, o = s.length ? s : r ? [r] : [];
 					return o.length ? c.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => c.a.createElement(y, {
+					}, o.map((e, t) => c.a.createElement(k, {
 						className: n,
 						errorModalTitle: a,
 						key: t
@@ -1204,7 +1209,7 @@
 					}),
 					messages: e
 				});
-			t.b = y
+			t.b = k
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1697,7 +1702,7 @@
 						isResponsiveSettingsEnabled: !1
 					}, a.fbt._("Profile moderation", null, {
 						hk: "3wd5uz"
-					})), s.a.createElement(k, null, s.a.createElement(x.c, null, a.fbt._("Posting directly to your profile is optional. If you choose not to post to your profile, you will not have a need for moderation tools.", null, {
+					})), s.a.createElement(y, null, s.a.createElement(x.c, null, a.fbt._("Posting directly to your profile is optional. If you choose not to post to your profile, you will not have a need for moderation tools.", null, {
 						hk: "1fhfms"
 					})), s.a.createElement(x.c, null, a.fbt._("If you do choose to post to your profile, then it's important to get familiar with your {=moderation tools} and the {=mod guidelines} to ensure that personal information, spam, and other disallowed content isn't showing up and remaining in the comments of your profile. Below, you'll find a basic guide for the tools provided to you:", [a.fbt._param("=moderation tools", s.a.createElement(b.n, {
 						href: "https://www.reddithelp.com/en/categories/using-reddit/profiles/profile-moderation-tools"
@@ -1802,7 +1807,7 @@
 						url: `/${t}/about/awards/`
 					}, a.fbt._("Optional awards can be toggled on or off to make them available on posts and comments in your community. When disabled, users will not be able to use those awards on your content.", null, {
 						hk: "4oO0RA"
-					})), s.a.createElement(k, null, a.fbt._("Have more questions?", null, {
+					})), s.a.createElement(y, null, a.fbt._("Have more questions?", null, {
 						hk: "2YqHcl"
 					}), s.a.createElement(b.n, {
 						href: "https://www.reddithelp.com/en/submit-request"
@@ -1824,12 +1829,12 @@
 				})
 			}
 
-			function k({
+			function y({
 				children: e
 			}) {
 				return s.a.createElement(C, null, s.a.createElement(b.m, null, e))
 			}
-			var y = _;
+			var k = _;
 			const N = Object(i.c)({
 					isModerator: (e, t) => Object(u.f)(e, t.match.params),
 					isOwnProfile: (e, t) => Object(m.O)(e, t.match.params.profileName),
@@ -1856,7 +1861,7 @@
 						constrainWidth: !0,
 						title: `/user/${i} Settings`,
 						icon: c.b.GEAR
-					}), s.a.createElement(l.a, null, s.a.createElement(y, {
+					}), s.a.createElement(l.a, null, s.a.createElement(k, {
 						profileName: i
 					}))) : s.a.createElement(d.b, {
 						message: a.fbt._("The requested page is not supported", null, {
@@ -1869,4 +1874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.ecad81dd8d5fb0a574cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.0dbde9115f47b903fefb.js.map

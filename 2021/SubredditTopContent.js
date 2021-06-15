@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.96295e8b50003e8cf414.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.2b9834a991b4a52448fe.js
+// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -472,8 +472,8 @@
 				z = s("./src/reddit/models/Media/index.ts"),
 				q = s("./src/reddit/models/Subreddit/index.ts"),
 				G = s("./src/reddit/models/Widgets/index.ts"),
-				Z = s("./src/reddit/components/MiniCardPost/index.m.less"),
-				K = s.n(Z),
+				K = s("./src/reddit/components/MiniCardPost/index.m.less"),
+				Z = s.n(K),
 				Y = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				J = s.n(Y),
 				X = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
@@ -515,10 +515,10 @@
 					let O = _ && r.a.createElement(D.a, {
 							autoplayPref: e,
 							availableWidth: t,
-							className: K.a.media,
+							className: Z.a.media,
 							forceAspectRatio: z.c,
-							imageBoxClassName: K.a.mediaImageBox,
-							imageBoxContentImageClassName: K.a.mediaImageBoxContentImage,
+							imageBoxClassName: Z.a.mediaImageBox,
+							imageBoxContentImageClassName: Z.a.mediaImageBoxContentImage,
 							isListing: !0,
 							isMiniCard: m,
 							isNotCardView: !0,
@@ -538,7 +538,7 @@
 					const P = !j && !v;
 					let w;
 					return E && (w = Object(q.h)(E) ? Object(G.h)(E) : Object(G.i)(E)), r.a.createElement(W.a, {
-						className: Object(c.a)($.a.container, J.a.largeAndMediumActiveStyles, J.a.largeAndMediumPostStyles, K.a.postContainer, Object(Q.a)(this.props), s),
+						className: Object(c.a)($.a.container, J.a.largeAndMediumActiveStyles, J.a.largeAndMediumPostStyles, Z.a.postContainer, Object(Q.a)(this.props), s),
 						post: p,
 						onClick: u,
 						eventFactory: i,
@@ -549,10 +549,10 @@
 						},
 						"data-click-id": this.props["data-click-id"]
 					}, r.a.createElement(V.a, {
-						className: K.a.backgroundWrapper,
+						className: Z.a.backgroundWrapper,
 						flairStyleTemplate: o
 					}, r.a.createElement("div", {
-						className: Object(c.a)($.a.innerContainer, K.a.innerContainer)
+						className: Object(c.a)($.a.innerContainer, Z.a.innerContainer)
 					}, k && E && r.a.createElement(T, ee({
 						created: p.created
 					}, w)), C && E && r.a.createElement(N, ee({
@@ -936,9 +936,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.H)(e) || g.Ad.ShowTopContent === Object(f.c)(e, {
+			const y = e => Object(C.H)(e) || g.Cd.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.sd
+				experimentName: g.ud
 			});
 			var k = s("./src/reddit/selectors/subreddit.ts"),
 				E = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1445,22 +1445,22 @@
 					}),
 					shouldOpenPostInNewTab: D.cb
 				}),
-				Z = e => {
+				K = e => {
 					const {
 						post: t,
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(W.a)(), i = Object(F.a)(u.Vb) === u.Zb.Enabled;
+					} = t, a = Object(W.a)(), i = Object(F.a)(u.Xb) === u.bc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(q, {
 						nowrap: e.nowrap
-					}, r.a.createElement(K, e));
+					}, r.a.createElement(Z, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return r.a.createElement(b.b, {
 						href: t.source.url,
 						isSponsored: n,
 						postId: t.id,
 						source: t.source
-					}, r.a.createElement(K, e)); {
+					}, r.a.createElement(Z, e)); {
 						const o = t.media && Object(E.G)(t.media) ? Object(C.c)(t.id, s.name) : t.permalink,
 							c = e.isCommentPermalink ? Object(f.b)(o) : i ? Object(x.a)(o, void 0, a) : Object(x.a)(o);
 						return r.a.createElement(q, {
@@ -1475,7 +1475,7 @@
 								isSponsored: e.isSponsored,
 								postId: e.id,
 								source: s
-							}, r.a.createElement(K, t)) : r.a.createElement(K, t)
+							}, r.a.createElement(Z, t)) : r.a.createElement(Z, t)
 						})(t, e) : r.a.createElement(z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
@@ -1483,10 +1483,10 @@
 							target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 							titleColor: e.titleColor,
 							to: c
-						}, r.a.createElement(K, e)))
+						}, r.a.createElement(Z, e)))
 					}
 				},
-				K = e => {
+				Z = e => {
 					const {
 						leftFlair: t,
 						isCommentsPageAd: s,
@@ -1570,7 +1570,7 @@
 						post: o,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), r.a.createElement(Z, H({}, this.props, {
+					}), r.a.createElement(K, H({}, this.props, {
 						leftFlair: c ? u : void 0
 					})), i && r.a.createElement(T, {
 						className: U.a.pollMeta,
@@ -1996,4 +1996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.96295e8b50003e8cf414.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.2b9834a991b4a52448fe.js.map
