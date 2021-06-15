@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.151cf7040b3701f38073.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.c6745e018d4fe1d3a848.js
+// Retrieved at 6/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3313,7 +3313,7 @@
 					case n.EthTraderRinkeby:
 						return "rinkeby";
 					case n.ArbitrumRinkeby:
-						return 29199749760514
+						return 42161
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
@@ -5220,8 +5220,8 @@
 						hk: "3ioHSL"
 					})), i.a.createElement("div", {
 						className: Se.a.description
-					}, y.fbt._("Stand out with 8 new badges a month", null, {
-						hk: "kAJmf"
+					}, y.fbt._("Stand out with 4 new badges a month", null, {
+						hk: "3Pd0bd"
 					})), i.a.createElement("div", {
 						className: Se.a.description
 					}, y.fbt._("and a special color for your {username}", [y.fbt._param("username", i.a.createElement("div", {
@@ -7189,4 +7189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.151cf7040b3701f38073.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.c6745e018d4fe1d3a848.js.map
