@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2ff8089aa725ecdb2e2c.js
-// Retrieved at 6/16/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6caf6511ec7dfd3caff9.js
+// Retrieved at 6/16/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2473,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("136967"),
+				buildNumber: r("136976"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1623883608"),
+				})("1623885915"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4961,14 +4961,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cef548e9cd91df7d5bef207cf687d63df9540cf08-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca41dc44676bd4a7de9ef6c5301f0fb631a381481-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ef548e9cd91df7d5bef207cf687d63df9540cf08-production",
+						release: "a41dc44676bd4a7de9ef6c5301f0fb631a381481-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5462,7 +5462,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "ef548e9cd91df7d5bef207cf687d63df9540cf08-production",
+						releaseClient: "a41dc44676bd4a7de9ef6c5301f0fb631a381481-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -8466,36 +8466,39 @@
 				return n
 			})), i.d(t, "h", (function() {
 				return r
-			})), i.d(t, "g", (function() {
-				return s
-			})), i.d(t, "b", (function() {
-				return o
-			})), i.d(t, "c", (function() {
-				return d
-			})), i.d(t, "f", (function() {
-				return a
-			})), i.d(t, "e", (function() {
-				return l
-			})), i.d(t, "a", (function() {
-				return c
-			})), i.d(t, "i", (function() {
-				return u
-			})), i.d(t, "j", (function() {
-				return _
 			})), i.d(t, "k", (function() {
+				return s
+			})), i.d(t, "g", (function() {
+				return o
+			})), i.d(t, "b", (function() {
+				return d
+			})), i.d(t, "c", (function() {
+				return a
+			})), i.d(t, "f", (function() {
+				return l
+			})), i.d(t, "e", (function() {
+				return c
+			})), i.d(t, "a", (function() {
+				return u
+			})), i.d(t, "i", (function() {
+				return _
+			})), i.d(t, "j", (function() {
 				return p
+			})), i.d(t, "l", (function() {
+				return m
 			}));
 			const n = "FETCH_SUBREDDIT_TOP_PREDICTORS_SUCCESS",
 				r = "PREDICTION_VOTE_SUCCESS",
-				s = "PREDICTION_RESOLVE_SUCCESS",
-				o = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_START",
-				d = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_SUCCESS",
-				a = "PREDICTIONS_POSTS_LOADED",
-				l = "NEW_TOURNAMENT",
-				c = "ADD_PREDICTION_TO_TOURNAMENT",
-				u = "REMOVE_LAST_PREDICTION_FROM_TOURNAMENT",
-				_ = "RESET_TOURNAMENT_PREDICTIONS",
-				p = "UPDATE_PREDICTION_TOURNAMENT_SUCCESS"
+				s = "TOURNAMENT_POST_VOTE_SUCCESS",
+				o = "PREDICTION_RESOLVE_SUCCESS",
+				d = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_START",
+				a = "FETCH_SUBREDDIT_PREDICTION_TOURNAMENTS_SUCCESS",
+				l = "PREDICTIONS_POSTS_LOADED",
+				c = "NEW_TOURNAMENT",
+				u = "ADD_PREDICTION_TO_TOURNAMENT",
+				_ = "REMOVE_LAST_PREDICTION_FROM_TOURNAMENT",
+				p = "RESET_TOURNAMENT_PREDICTIONS",
+				m = "UPDATE_PREDICTION_TOURNAMENT_SUCCESS"
 		},
 		"./src/reddit/actions/emailVerificationTooltip.ts": function(e, t, i) {
 			"use strict";
@@ -34053,27 +34056,28 @@
 			};
 			const l = {};
 			var c = (e = l, t) => {
-				switch (t.type) {
-					case o.d: {
-						const {
-							currentRank: i,
-							subredditId: n,
-							topPredictorsRank: r
-						} = t.payload;
-						return {
-							...e,
-							[n]: {
+					switch (t.type) {
+						case o.d: {
+							const {
 								currentRank: i,
+								subredditId: n,
 								topPredictorsRank: r
+							} = t.payload;
+							return {
+								...e,
+								[n]: {
+									currentRank: i,
+									topPredictorsRank: r
+								}
 							}
 						}
+						default:
+							return e
 					}
-					default:
-						return e
-				}
-			};
-			const u = {};
-			var _ = (e = u, t) => {
+				},
+				u = i("./src/reddit/models/Prediction/Tournament/index.ts");
+			const _ = {};
+			var p = (e = _, t) => {
 				var i;
 				switch (t.type) {
 					case o.b: {
@@ -34101,7 +34105,7 @@
 							}
 						}
 					}
-					case o.k: {
+					case o.l: {
 						const {
 							subredditId: i,
 							tournament: n
@@ -34118,6 +34122,32 @@
 							}
 						}
 					}
+					case o.k: {
+						const {
+							predictionId: i,
+							selectedOptionId: n,
+							subredditId: r
+						} = t.payload;
+						return {
+							...e,
+							[r]: {
+								...e[r],
+								tournaments: e[r].tournaments.map((t, s) => {
+									var o;
+									return t.status === u.a.Live || t.status === u.a.LiveInProgress ? {
+										...t,
+										predictionPosts: null === (o = e[r].tournaments[s].predictionPosts) || void 0 === o ? void 0 : o.map(e => e.id === i ? {
+											...e,
+											pollData: {
+												...e.pollData,
+												userSelection: n
+											}
+										} : e)
+									} : t
+								})
+							}
+						}
+					}
 					default:
 						return e
 				}
@@ -34125,7 +34155,7 @@
 			t.a = Object(n.c)({
 				creation: a,
 				leaderboards: c,
-				tournaments: _
+				tournaments: p
 			})
 		},
 		"./src/reddit/reducers/pages/modHub/index.ts": function(e, t, i) {
@@ -37491,8 +37521,8 @@
 					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.isFetching) || !1
 				},
 				m = (e, t) => {
-					var i, n, r;
-					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) || []
+					var i, n, r, s;
+					return null !== (s = null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) && void 0 !== s ? s : []
 				},
 				h = (e, t) => {
 					const i = m(e, t);
@@ -47574,4 +47604,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2ff8089aa725ecdb2e2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6caf6511ec7dfd3caff9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.e39bd492243b886ba081.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.bee3fb98384a7f1882aa.js
+// Retrieved at 6/16/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -10,7 +10,8 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_1jmD4mW_RLMiaiFTU4IgDc",
-				playTournament: "_1ZAQtWa2JonNlEgDEUHohg"
+				playTournament: "_1ZAQtWa2JonNlEgDEUHohg",
+				showOverlay: "_3gxGGGPvavst2iPB0Tx0BQ"
 			}
 		},
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less": function(e, t, n) {
@@ -28,7 +29,7 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "TournamentPostBody", (function() {
-				return K
+				return G
 			}));
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
@@ -58,222 +59,231 @@
 				}))
 			};
 			var u = n("./node_modules/react-redux/es/index.js"),
-				m = n("./src/reddit/controls/InternalLink/index.tsx"),
-				p = n("./src/reddit/helpers/trackers/predictions.ts"),
-				b = n("./src/reddit/hooks/useTracking.ts"),
-				O = n("./src/reddit/selectors/subreddit.ts"),
-				P = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
-				E = n.n(P);
+				m = n("./src/reddit/selectors/poll/index.ts"),
+				p = n("./src/reddit/selectors/user.ts"),
+				b = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
+				O = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
+				P = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
+				x = n("./src/reddit/controls/InternalLink/index.tsx"),
+				E = n("./src/reddit/helpers/trackers/predictions.ts"),
+				I = n("./src/reddit/hooks/useTracking.ts"),
+				T = n("./src/reddit/selectors/subreddit.ts"),
+				j = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
+				v = n.n(j);
 			const {
-				fbt: x
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = ({
-				post: e
+				fbt: f
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), g = ({
+				postId: e,
+				subredditId: t
 			}) => {
-				const t = Object(b.a)(),
-					n = Object(u.e)(t => Object(O.T)(t, {
-						subredditId: e.belongsTo.id
+				const n = Object(I.a)(),
+					o = Object(u.e)(e => Object(T.T)(e, {
+						subredditId: t
 					}));
-				return i.a.createElement(m.a, {
-					className: E.a.container,
-					to: `${null==n?void 0:n.url}predictions/`,
-					onClick: () => t(Object(p.f)(e.id))
+				return i.a.createElement(x.a, {
+					className: v.a.container,
+					to: `${null==o?void 0:o.url}predictions/`,
+					onClick: () => n(Object(E.f)(e))
 				}, i.a.createElement("div", {
-					className: E.a.playTournament
-				}, x._("Play Tournament", null, {
-					hk: "2PjgXb"
+					className: v.a.playTournament
+				}, f._("Keep Playing", null, {
+					hk: "2HQ7HH"
 				})))
 			};
-			var j = n("./src/reddit/selectors/user.ts"),
-				f = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				g = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
-				h = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
-				_ = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
-				k = n("./src/lib/timeUntil/index.ts"),
-				v = n("./src/reddit/models/Toast/index.ts"),
-				I = n("./src/reddit/actions/economics/helpers/index.ts"),
+			var h = n("./src/lib/timeUntil/index.ts"),
+				_ = n("./src/reddit/models/Toast/index.ts"),
+				k = n("./src/reddit/actions/economics/helpers/index.ts"),
 				y = n("./src/reddit/actions/economics/predictions/index.ts"),
-				C = n("./src/reddit/actions/post.ts"),
-				w = n("./src/reddit/selectors/experiments/econ/index.ts"),
-				A = n("./src/reddit/actions/toaster.ts");
+				w = n("./src/reddit/actions/post.ts"),
+				C = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				B = n("./src/reddit/actions/toaster.ts");
 
 			function S() {
 				const e = Object(u.d)();
-				return t => e(Object(A.f)(t))
+				return t => e(Object(B.f)(t))
 			}
 			const {
 				fbt: L
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function B(e) {
-				const t = Object(u.d)(),
-					n = Object(u.e)(j.d),
-					o = Object(u.e)(w.l),
-					r = Object(u.e)(w.k),
-					s = Object(b.a)(),
-					d = S(),
-					c = function() {
+			function D(e, t, n) {
+				const o = Object(u.d)(),
+					r = Object(u.e)(p.d),
+					s = Object(u.e)(C.l),
+					d = Object(u.e)(C.k),
+					c = Object(I.a)(),
+					a = S(),
+					l = function() {
 						const e = S();
 						return (t, n) => e({
 							duration: 5e3,
-							kind: v.b.Error,
+							kind: _.b.Error,
 							...n,
 							text: t
 						})
 					}(),
 					{
-						id: a,
-						endsAt: l,
-						options: m,
-						selectedOptionId: O
+						id: m,
+						endsAt: b,
+						options: O,
+						selectedOptionId: P
 					} = e,
-					[P, E] = i.a.useState(!1),
-					[x, T] = i.a.useState(null),
+					[x, T] = i.a.useState(!1),
+					[j, v] = i.a.useState(null),
 					[f, g] = i.a.useState(!1),
-					h = l < Date.now();
+					B = b < Date.now();
 				return {
-					isLoading: P,
+					isLoading: x,
 					isShowingVoteAnimation: f,
-					selectedOption: m.find(({
+					selectedOption: O.find(({
 						id: e
-					}) => e === x),
+					}) => e === j),
 					selectOption: e => {
-						h || O || T(e.id)
+						B || P || v(e.id)
 					},
 					predict: async ({
 						coinPackage: e,
 						chipPackage: i
 					}) => {
-						if (e && e.coins > n) return Object(I.promptUserToBuyMoreCoins)(), void s(p.a);
+						if (e && e.coins > r) return Object(k.promptUserToBuyMoreCoins)(), void c(E.a);
 						const u = i ? i.id : e.id,
-							m = i ? i.amount : e.coins;
-						if (h) return c(L._("Error: Failed to make prediction. This prediction has already ended", null, {
+							p = i ? i.amount : e.coins;
+						if (B) return l(L._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
-						})), void T(null);
-						if (!a || !x) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						E(!0), s(Object(p.o)({
-							pollId: a,
-							selectedNumberTokens: m
+						})), void v(null);
+						if (!m || !j) throw new Error("Invalid arguments, optionId and pollId must be strings");
+						T(!0), c(Object(E.o)({
+							pollId: m,
+							selectedNumberTokens: p
 						}));
 						try {
-							await t(Object(y.k)({
+							await o(Object(y.l)({
 								coinPackageId: u,
-								optionId: x,
-								postId: a,
-								price: m
-							})), o && t(Object(C.bb)(a)), E(!1), T(null), r ? g(!0) : d({
+								selectedOptionId: j,
+								price: p,
+								pollId: m,
+								postId: t,
+								subredditId: n
+							})), s && o(Object(w.bb)(m)), T(!1), v(null), d ? g(!0) : a({
 								duration: 5e3,
-								kind: v.b.SuccessCommunity,
-								text: L._("Thanks! See if you're right in {timeToResult}", [L._param("timeToResult", Object(k.a)(new Date(l), !0))], {
+								kind: _.b.SuccessCommunity,
+								text: L._("Thanks! See if you're right in {timeToResult}", [L._param("timeToResult", Object(h.a)(new Date(b), !0))], {
 									hk: "3ZSdoo"
 								})
 							})
-						} catch (b) {
-							E(!1), T(null), c(L._("Error: Failed to make prediction, please try again later", null, {
+						} catch (O) {
+							T(!1), v(null), l(L._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
 							}))
 						}
 					},
 					cancelAction: i.a.useCallback(() => {
-						T(null)
+						v(null)
 					}, []),
 					hideAnimation: i.a.useCallback(() => {
 						g(!1)
 					}, [])
 				}
 			}
-			var D = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
-				N = n.n(D);
+			var A = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
+				N = n.n(A);
 			const M = ({
 				prediction: e,
 				tournamentId: t,
-				subredditId: n
+				subredditId: n,
+				postId: r
 			}) => {
-				const r = Object(u.e)(j.K),
-					d = Object(u.e)(j.W),
-					[c, a] = Object(o.useState)(!1),
+				const d = Object(u.e)(p.K),
+					c = Object(u.e)(p.W),
+					a = Object(u.e)(t => Object(m.g)(t, {
+						postId: e.id
+					})),
+					[l, x] = Object(o.useState)(!1),
 					{
-						isLoading: l,
-						isShowingVoteAnimation: m,
-						selectedOption: p,
-						selectOption: b,
-						predict: O,
-						cancelAction: P,
-						hideAnimation: E
-					} = B(e),
+						isLoading: E,
+						isShowingVoteAnimation: I,
+						selectedOption: T,
+						selectOption: j,
+						predict: v,
+						cancelAction: f
+					} = D(e, r, n),
+					h = null == a ? void 0 : a.userSelection,
 					{
-						endsAt: x,
-						options: T,
-						title: k,
-						resolvedOptionId: v,
-						totalVoteCount: I,
-						selectedOptionId: y
+						endsAt: _,
+						options: k,
+						title: y,
+						resolvedOptionId: w
 					} = e,
-					C = x < Date.now();
+					C = _ < Date.now();
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(s.a)(N.a.poll, {
-						[N.a.nightMode]: d
+						[N.a.nightMode]: c
 					})
 				}, i.a.createElement("p", {
 					className: N.a.pollQuestion
-				}, k), T.map(e => i.a.createElement(_.a, {
-					endsAt: x,
-					key: `prediction-option-${e.id}`,
-					isShowingVoteAnimation: m && y === e.id,
-					onAnimationEnd: E
-				}, i.a.createElement(g.a, {
-					disabled: m,
+				}, y), k.map(e => {
+					const n = null == a ? void 0 : a.options.find(({
+						id: t
+					}) => t === e.id);
+					return i.a.createElement(O.a, {
+						key: `prediction-option-${e.id}`,
+						disabled: I,
+						isEnded: C,
+						isSelected: h === e.id,
+						needsResolution: !1,
+						option: e,
+						onClick: () => j(e),
+						resolvedOptionId: w,
+						tournamentId: t,
+						userSelection: h,
+						userIsLoggedOut: !d,
+						votePercentage: (h || C || l) && (null == n ? void 0 : n.voteCount) && (null == a ? void 0 : a.totalVoters) ? Math.floor(n.voteCount / a.totalVoters * 100) : null,
+						isShowingHint: l
+					})
+				}), i.a.createElement(P.a, {
+					disabled: I || l || !!h,
 					isEnded: C,
-					isSelected: (null == p ? void 0 : p.id) === e.id,
-					needsResolution: !1,
-					option: e,
-					onClick: () => b(e),
-					resolvedOptionId: v,
+					userSelection: h,
+					isShowingHint: l,
 					tournamentId: t,
-					userSelection: y,
-					userIsLoggedOut: !r,
-					votePercentage: (y || C || c) && e.voteCount && I ? Math.floor(e.voteCount / I * 100) : null,
-					isShowingHint: c
-				}))), i.a.createElement(h.a, {
-					disabled: m || c || !!y,
-					isEnded: C,
-					userSelection: y,
-					isShowingHint: c,
-					tournamentId: t,
-					onReveal: () => a(!0)
-				})), !!p && i.a.createElement(f.b, {
+					onReveal: () => x(!0)
+				})), !!T && i.a.createElement(b.b, {
 					className: N.a.modal,
-					isCreatingVote: l,
-					onOverlayClick: P,
-					onCancel: P,
-					onPredict: O,
-					option: p,
+					isCreatingVote: E,
+					onOverlayClick: f,
+					onCancel: f,
+					onPredict: v,
+					option: T,
 					pollId: e.id,
 					subredditId: n,
 					tournamentId: t,
 					withOverlay: !0
+				}), !!h && i.a.createElement(g, {
+					postId: r,
+					subredditId: n
 				}))
 			};
-			var V = n("./src/reddit/helpers/predictions/index.ts");
+			var H = n("./src/reddit/helpers/predictions/index.ts");
 			var F = n("./src/reddit/selectors/posts.ts"),
 				U = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				H = n.n(U);
+				V = n.n(U);
 			const {
-				fbt: R
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = ({
+				fbt: Q
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = ({
 				postId: e
 			}) => {
-				const t = Object(b.a)(),
+				const t = Object(I.a)(),
 					n = Object(u.e)(t => Object(F.R)(t, {
 						postId: e
 					}));
-				return i.a.createElement(m.a, {
-					className: H.a.viewTournament,
+				return i.a.createElement(x.a, {
+					className: V.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
-					onClick: () => t(Object(p.f)(e))
-				}, R._("Go to Tournament", null, {
+					onClick: () => t(Object(E.f)(e))
+				}, Q._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
-			}, K = ({
+			}, G = ({
 				post: e
 			}) => {
 				const {
@@ -281,24 +291,23 @@
 					predictions: n,
 					status: o
 				} = e.predictionTournament, s = function(e) {
-					const t = Object(u.e)(j.db);
+					const t = Object(u.e)(p.db);
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						return e.filter(e => t || !e.isNSFW).sort(V.a)[0]
-					}, [e, t])
+						return e.filter(e => t || !e.isNSFW).sort(H.a)[0]
+					}, [t])
 				}(n);
 				return s && o !== r.a.Closed ? i.a.createElement(l, null, i.a.createElement(M, {
 					subredditId: e.belongsTo.id,
 					tournamentId: t,
+					postId: e.id,
 					prediction: s
-				}), i.a.createElement(T, {
-					post: e
-				})) : i.a.createElement(Q, {
+				})) : i.a.createElement(R, {
 					postId: e.id
 				})
 			};
-			t.default = K
+			t.default = G
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e39bd492243b886ba081.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.bee3fb98384a7f1882aa.js.map
