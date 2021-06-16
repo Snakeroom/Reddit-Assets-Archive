@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.f4924dd8042b8cfe8bc4.js
-// Retrieved at 6/10/2021, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.8b375c574f924e436f89.js
+// Retrieved at 6/16/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -163,7 +163,7 @@
 							buttonAction: f(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), R = Object(s.a)(_), j = Object(s.a)(w), x = e => async (t, o, {
+				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", w = "USER_UNBLOCK__FAILED", C = Object(s.a)(O), j = Object(s.a)(_), R = Object(s.a)(w), x = e => async (t, o, {
 					apiContext: s
 				}) => {
 					const l = o(),
@@ -172,7 +172,7 @@
 						m = l.user.blocked.data.filter(t => t.name === e)[0];
 					u && (t(C({
 						name: e
-					})), (await Object(d.c)(s(), u, e)).ok ? (t(R({
+					})), (await Object(d.c)(s(), u, e)).ok ? (t(j({
 						name: e
 					})), m && m.id && t(Object(n.h)(m.id)), t(i.f({
 						kind: c.b.SuccessCommunity,
@@ -184,7 +184,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(j({
+					})), t(R({
 						name: e
 					}))))
 				}
@@ -273,10 +273,10 @@
 				...w,
 				variables: t
 			});
-			var R = o("./src/reddit/endpoints/messages/index.ts"),
-				j = o("./src/redditGQL/operations/ReportPost.json");
+			var j = o("./src/reddit/endpoints/messages/index.ts"),
+				R = o("./src/redditGQL/operations/ReportPost.json");
 			const x = (e, t) => Object(f.a)(e, {
-				...j,
+				...R,
 				variables: t
 			});
 			var k = o("./src/redditGQL/operations/ReportForm.json");
@@ -289,10 +289,10 @@
 				E = o("./src/reddit/selectors/posts.ts"),
 				S = o("./src/reddit/selectors/user.ts"),
 				A = o("./src/lib/lessComponent.tsx"),
-				D = o("./src/reddit/components/ReportFlow/index.m.less"),
-				N = o.n(D);
-			const B = A.a.div("ReportLoaderWrapper", N.a),
-				q = A.a.img("LoadingIcon", N.a),
+				N = o("./src/reddit/components/ReportFlow/index.m.less"),
+				D = o.n(N);
+			const B = A.a.div("ReportLoaderWrapper", D.a),
+				q = A.a.img("LoadingIcon", D.a),
 				P = "2.0";
 			var T;
 			! function(e) {
@@ -476,7 +476,7 @@
 									messageId: c,
 									...m
 								};
-								b = () => Object(R.a)(o(), {
+								b = () => Object(j.a)(o(), {
 									input: r
 								});
 								break;
@@ -660,20 +660,29 @@
 		"./src/reddit/selectors/blockedRedditors.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
-				return r
-			})), o.d(t, "a", (function() {
 				return s
-			})), o.d(t, "c", (function() {
+			})), o.d(t, "a", (function() {
 				return n
+			})), o.d(t, "d", (function() {
+				return i
+			})), o.d(t, "c", (function() {
+				return d
 			}));
-			const r = e => e.blockedRedditors.api.pending,
-				s = e => e.blockedRedditors.list,
-				n = (e, t) => {
+			var r = o("./src/reddit/selectors/user.ts");
+			const s = e => e.blockedRedditors.api.pending,
+				n = e => e.blockedRedditors.list,
+				i = (e, t) => {
 					const o = (e => {
-						const t = s(e);
+						const t = n(e);
 						return t && t.ids
 					})(e);
 					return !!o && o.includes(t)
+				},
+				d = (e, t) => {
+					const o = Object(r.nb)(e, {
+						userName: t
+					});
+					return !!o && i(e, o.id)
 				}
 		},
 		"./src/redditGQL/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -693,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.f4924dd8042b8cfe8bc4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.8b375c574f924e436f89.js.map

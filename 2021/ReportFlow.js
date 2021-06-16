@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.f041fa669fd318e81070.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.3a4d7c0dc9758ec1fcaa.js
+// Retrieved at 6/16/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, o) {
@@ -4134,20 +4134,29 @@
 		"./src/reddit/selectors/blockedRedditors.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
-				return n
-			})), o.d(t, "a", (function() {
 				return r
-			})), o.d(t, "c", (function() {
+			})), o.d(t, "a", (function() {
 				return s
+			})), o.d(t, "d", (function() {
+				return i
+			})), o.d(t, "c", (function() {
+				return l
 			}));
-			const n = e => e.blockedRedditors.api.pending,
-				r = e => e.blockedRedditors.list,
-				s = (e, t) => {
+			var n = o("./src/reddit/selectors/user.ts");
+			const r = e => e.blockedRedditors.api.pending,
+				s = e => e.blockedRedditors.list,
+				i = (e, t) => {
 					const o = (e => {
-						const t = r(e);
+						const t = s(e);
 						return t && t.ids
 					})(e);
 					return !!o && o.includes(t)
+				},
+				l = (e, t) => {
+					const o = Object(n.nb)(e, {
+						userName: t
+					});
+					return !!o && i(e, o.id)
 				}
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, o) {
@@ -4196,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.f041fa669fd318e81070.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3a4d7c0dc9758ec1fcaa.js.map
