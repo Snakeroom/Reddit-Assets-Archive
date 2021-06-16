@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.03d9673e918e364eab79.js
-// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.f46e1352d07f31e02d7c.js
+// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1665,7 +1665,7 @@
 			}) => i.a.createElement(m.q, {
 				className: e,
 				disabled: b || l,
-				onClick: () => n === u.yd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => n === u.xd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: o,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -4560,7 +4560,7 @@
 								experimentName: i.z,
 								expEventOverride: t
 							});
-							return !!(Object(i.Rd)(n) ? void 0 : n)
+							return !!(Object(i.Qd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -4613,15 +4613,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.zd.Add:
+					case r.yd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.zd.Start:
+					case r.yd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.zd.Create:
+					case r.yd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -6145,21 +6145,21 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const c = e => Object(a.J)(e) || Object(a.K)(e),
 				d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.Bc,
-					experimentEligibilitySelector: c
-				}), o.a),
-				l = Object(s.a)(d, e => e === r.Gc.Enabled),
-				u = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: r.Ac,
 					experimentEligibilitySelector: c
 				}), o.a),
-				m = Object(s.a)(u, e => e === r.Ec.Enabled),
+				l = Object(s.a)(d, e => e === r.Fc.Enabled),
+				u = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: r.zc,
+					experimentEligibilitySelector: c
+				}), o.a),
+				m = Object(s.a)(u, e => e === r.Dc.Enabled),
 				p = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.pd,
+					experimentName: r.od,
 					experimentEligibilitySelector: c
 				}), o.a),
 				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.qd,
+					experimentName: r.pd,
 					experimentEligibilitySelector: c
 				}), o.a)
 		},
@@ -6288,4 +6288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.03d9673e918e364eab79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f46e1352d07f31e02d7c.js.map

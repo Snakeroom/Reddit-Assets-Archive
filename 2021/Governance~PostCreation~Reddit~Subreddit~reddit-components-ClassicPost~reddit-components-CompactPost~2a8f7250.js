@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.4498f072104484bd5b70.js
-// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.12a2d67be26dfd73637a.js
+// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -1506,7 +1506,7 @@
 								experimentName: o.z,
 								expEventOverride: t
 							});
-							return !!(Object(o.Rd)(r) ? void 0 : r)
+							return !!(Object(o.Qd)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2272,9 +2272,9 @@
 			})), r.d(t, "C", (function() {
 				return z
 			})), r.d(t, "J", (function() {
-				return X
-			})), r.d(t, "p", (function() {
 				return Q
+			})), r.d(t, "p", (function() {
+				return X
 			})), r.d(t, "M", (function() {
 				return Y
 			})), r.d(t, "F", (function() {
@@ -2490,10 +2490,10 @@
 				z = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				X = (e, {
+				Q = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				Q = e => e.features.comments.visitHighlightFilter,
+				X = e => e.features.comments.visitHighlightFilter,
 				Y = (e, t) => {
 					const r = Object(p.a)(e, t);
 					if (r) return Object(u.Y)(e, r)
@@ -2574,4 +2574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.4498f072104484bd5b70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.12a2d67be26dfd73637a.js.map

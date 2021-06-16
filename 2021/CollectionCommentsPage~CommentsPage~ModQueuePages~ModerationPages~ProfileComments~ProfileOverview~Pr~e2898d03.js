@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.95ff0316d646f4842f6c.js
-// Retrieved at 6/15/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.948697325d77686ed65a.js
+// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, o) {
@@ -1250,7 +1250,7 @@
 					onHideTooltip: A,
 					onShowTooltip: D,
 					openPowerupsModal: () => {
-						U(Object(b.r)("comment")), S()
+						U(Object(b.q)("comment")), S()
 					},
 					opTooltipId: w,
 					renderContractorBadge: P,
@@ -2190,4 +2190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.95ff0316d646f4842f6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~e2898d03.948697325d77686ed65a.js.map

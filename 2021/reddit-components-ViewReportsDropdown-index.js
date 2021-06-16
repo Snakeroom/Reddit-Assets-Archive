@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.9376377c78d6825ca998.js
-// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.1ecadf4dfecd9804697d.js
+// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -13,7 +13,7 @@
 			})), s.d(t, "h", (function() {
 				return D
 			})), s.d(t, "l", (function() {
-				return U
+				return N
 			})), s.d(t, "q", (function() {
 				return z
 			})), s.d(t, "j", (function() {
@@ -23,11 +23,11 @@
 			})), s.d(t, "f", (function() {
 				return $
 			})), s.d(t, "o", (function() {
-				return V
+				return H
 			})), s.d(t, "p", (function() {
 				return Q
 			})), s.d(t, "d", (function() {
-				return X
+				return Z
 			})), s.d(t, "a", (function() {
 				return G
 			})), s.d(t, "b", (function() {
@@ -126,7 +126,7 @@
 						const s = r.c.end(d);
 						!t && s < P && (clearTimeout(S[e]), delete S[e])
 					}
-				}, B = Object(d.a)(k.x), L = Object(d.a)(k.w), N = Object(d.a)(k.v), U = (e, t) => async (s, n, {
+				}, B = Object(d.a)(k.x), L = Object(d.a)(k.w), U = Object(d.a)(k.v), N = (e, t) => async (s, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
@@ -165,11 +165,11 @@
 						const l = j.body.comments,
 							p = j.body.posts;
 						await s(Object(m.b)(p, l, a)), await s(Object(i.b)(a, l))
-					} else s(N({
+					} else s(U({
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), K = Object(d.a)(k.j), $ = Object(d.a)(k.i), M = Object(d.a)(k.e), H = Object(d.a)(k.f), V = (Object(d.a)(k.c), Object(d.a)(k.d), ({
+				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), K = Object(d.a)(k.j), $ = Object(d.a)(k.i), M = Object(d.a)(k.e), V = Object(d.a)(k.f), H = (Object(d.a)(k.c), Object(d.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -194,11 +194,11 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(H({
+					s(V({
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, X = ({
+				}, Z = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: s,
@@ -215,7 +215,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && n(c, !0), Object(p.d)()
-				}, Z = Object(d.a)(k.r), G = e => t => t(Z({
+				}, X = Object(d.a)(k.r), G = e => t => t(X({
 					draftKey: e
 				})), q = Object(d.a)(k.a), J = Object(d.a)(k.E), W = Object(d.a)(k.b), Y = Object(d.a)(k.u)
 		},
@@ -609,7 +609,7 @@
 		"./src/reddit/components/Reports/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return N
+				return U
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -697,7 +697,7 @@
 				fbt: D
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.div("ReportText", A.a), L = d.a.div("ReportsTitle", A.a);
 
-			function N(e) {
+			function U(e) {
 				const {
 					className: t,
 					modReports: s,
@@ -1059,14 +1059,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Nc
-					}) === n.Xc.Enabled
+						experimentName: n.Mc
+					}) === n.Wc.Enabled
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Mc
-					}) === n.Wc.Enabled
+						experimentName: n.Lc
+					}) === n.Vc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1101,4 +1101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.9376377c78d6825ca998.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.1ecadf4dfecd9804697d.js.map

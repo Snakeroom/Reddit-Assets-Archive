@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0c2d447758d8c9748b11.js
-// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.bf664e7611043964b672.js
+// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2987,28 +2987,26 @@
 				return u
 			})), r.d(t, "j", (function() {
 				return f
-			})), r.d(t, "k", (function() {
-				return _
-			})), r.d(t, "n", (function() {
-				return p
-			})), r.d(t, "q", (function() {
-				return m
 			})), r.d(t, "m", (function() {
-				return b
-			})), r.d(t, "o", (function() {
-				return h
-			})), r.d(t, "g", (function() {
-				return g
+				return _
 			})), r.d(t, "p", (function() {
-				return v
+				return p
 			})), r.d(t, "l", (function() {
-				return O
+				return m
+			})), r.d(t, "n", (function() {
+				return b
+			})), r.d(t, "g", (function() {
+				return h
+			})), r.d(t, "o", (function() {
+				return g
+			})), r.d(t, "k", (function() {
+				return v
 			})), r.d(t, "b", (function() {
-				return y
+				return O
 			})), r.d(t, "a", (function() {
+				return y
+			})), r.d(t, "q", (function() {
 				return I
-			})), r.d(t, "r", (function() {
-				return w
 			}));
 			var i = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/helpers/chooseVariant/index.ts");
@@ -3017,7 +3015,7 @@
 						experimentEligibilitySelector: o.a,
 						experimentName: e
 					});
-					return !(!r || Object(i.Rd)(r))
+					return !(!r || Object(i.Qd)(r))
 				},
 				s = n(i.wb),
 				c = n(i.sb),
@@ -3026,17 +3024,16 @@
 				d = n(i.Cb),
 				u = n(i.Db),
 				f = n(i.Eb),
-				_ = n(i.Fb),
-				p = n(i.Ib),
-				m = n(i.Lb),
-				b = n(i.Gb),
-				h = n(i.Jb),
-				g = n(i.Hb),
-				v = n(i.Kb),
-				O = n(i.Mb),
-				y = n(i.zb),
-				I = n(i.yb),
-				w = (n(i.Ab), n(i.Nb))
+				_ = n(i.Hb),
+				p = n(i.Kb),
+				m = n(i.Fb),
+				b = n(i.Ib),
+				h = n(i.Gb),
+				g = n(i.Jb),
+				v = n(i.Lb),
+				O = n(i.zb),
+				y = n(i.yb),
+				I = (n(i.Ab), n(i.Mb))
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -3050,4 +3047,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0c2d447758d8c9748b11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.bf664e7611043964b672.js.map

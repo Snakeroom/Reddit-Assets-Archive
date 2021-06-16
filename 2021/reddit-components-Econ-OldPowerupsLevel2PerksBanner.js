@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.bf233dae4a5d8dfb4d71.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.c552baff08e82ee5e511.js
+// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-OldPowerupsLevel2PerksBanner"], {
 		"./src/reddit/components/Econ/OldPowerupsLevel2PerksBanner/Navigation/index.m.less": function(e, t, s) {
@@ -257,10 +257,10 @@
 					subredditId: m
 				} = e, p = Object(r.d)(), v = Object(c.a)();
 				Object(a.useEffect)(() => {
-					v(Object(l.l)())
+					v(Object(l.k)())
 				}, [m, v]);
 				const k = () => {
-					v(Object(l.k)()), p(Object(d.d)("in_feed_unit"))
+					v(Object(l.j)()), p(Object(d.d)("in_feed_unit"))
 				};
 				if (!o || 1 === o.tiersInfo.length || !u) return null;
 				const {
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.bf233dae4a5d8dfb4d71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-OldPowerupsLevel2PerksBanner.c552baff08e82ee5e511.js.map
