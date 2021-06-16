@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7406e8cbcbbb6cdc9185.js
-// Retrieved at 6/16/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ee23a7cc8dc11daadb0e.js
+// Retrieved at 6/16/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4631,7 +4631,7 @@
 					if (!e.isTrendingPending && e.isOpen && document.getElementById(te)) {
 						const e = f();
 						b(e), l.forEach((r, s) => {
-							e[s] && t((e, t) => F.F(t(), r, F.a.SEARCH_DROPDOWN))
+							e[s] && t((e, t) => Object(F.F)(t(), r, F.a.SEARCH_DROPDOWN))
 						})
 					}
 				}, [e.isTrendingPending, e.isOpen, t]);
@@ -4660,14 +4660,14 @@
 						if (!e.isTrendingPending && l.length > 0) {
 							const e = f();
 							b(e), l.forEach((r, s) => {
-								e[s] && t((e, t) => F.F(t(), r, F.a.SEARCH_DROPDOWN))
+								e[s] && t((e, t) => Object(F.F)(t(), r, F.a.SEARCH_DROPDOWN))
 							})
 						}
 					},
 					onScroll: () => {
 						const e = f();
 						l.forEach((r, s) => {
-							p[s] || !e[s] || r.post && r.post.isSponsored || t((e, t) => F.F(t(), r, F.a.SEARCH_DROPDOWN))
+							p[s] || !e[s] || r.post && r.post.isSponsored || t((e, t) => Object(F.F)(t(), r, F.a.SEARCH_DROPDOWN))
 						}), b(e)
 					}
 				}, e.typeaheadSuggestions.map((t, r) => a.a.createElement(W, {
@@ -4753,6 +4753,9 @@
 		},
 		"./src/reddit/controls/Search/RelatedSubredditMetaData.tsx": function(e, t, r) {
 			"use strict";
+			r.d(t, "a", (function() {
+				return m
+			}));
 			var s = r("./node_modules/react/index.js"),
 				a = r.n(s),
 				n = r("./node_modules/react-redux/es/index.js"),
@@ -4775,8 +4778,7 @@
 						})
 					}), r
 				})
-			}));
-			t.a = m(e => a.a.createElement("div", {
+			}))(e => a.a.createElement("div", {
 				className: Object(o.a)(b.a.subText, y.a.subText, e.className)
 			}, e.subredditIcons ? e.subredditIcons.map(t => a.a.createElement(i.a, {
 				key: `${t.subredditName}-hoverCard`,
@@ -22057,4 +22059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7406e8cbcbbb6cdc9185.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ee23a7cc8dc11daadb0e.js.map

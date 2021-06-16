@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.34854962eb2302a6ee57.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8998cf3060cb8c3fe6c1.js
+// Retrieved at 6/16/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -3941,6 +3941,9 @@
 		},
 		"./src/reddit/controls/Search/RelatedSubredditMetaData.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return f
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
@@ -3963,8 +3966,7 @@
 						})
 					}), n
 				})
-			}));
-			t.a = f(e => r.a.createElement("div", {
+			}))(e => r.a.createElement("div", {
 				className: Object(i.a)(p.a.subText, h.a.subText, e.className)
 			}, e.subredditIcons ? e.subredditIcons.map(t => r.a.createElement(d.a, {
 				key: `${t.subredditName}-hoverCard`,
@@ -7147,4 +7149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.34854962eb2302a6ee57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8998cf3060cb8c3fe6c1.js.map
