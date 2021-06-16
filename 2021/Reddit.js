@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9d525feed2ea328fffc4.js
-// Retrieved at 6/16/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.14defccc9a195e8a1498.js
+// Retrieved at 6/16/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2213,7 +2213,7 @@
 				d = n("./src/reddit/selectors/user.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(s.a)(Object(c.b)(n)), e(Object(a.r)({
+				Object(s.a)(Object(c.c)(n)), e(Object(a.r)({
 					forceFetch: !0
 				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
@@ -6229,7 +6229,7 @@
 					b = () => s(Object(si.b)("nav")),
 					h = Object(p.e)(fi.i).startsWith("en");
 				if ((null === (n = null == a ? void 0 : a.meta) || void 0 === n ? void 0 : n.name) === v.Jb.AVATAR) return null;
-				!l && d && s(Object(ni.a)()), u && r(bi.c);
+				!l && d && s(Object(ni.a)()), u && r(bi.d);
 				const g = i && i.snoovatarFullBodyAsset ? o.fbt._("Style Avatar", null, {
 					hk: "1HIsKA"
 				}) : o.fbt._("Create Avatar", null, {
@@ -13992,32 +13992,51 @@
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "d", (function() {
 				return c
 			})), n.d(t, "b", (function() {
 				return d
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "e", (function() {
 				return l
+			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "d", (function() {
+				return m
 			}));
 			var s = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				o = n("./src/reddit/selectors/avatarMarketing.ts"),
-				r = n("./src/reddit/selectors/telemetry.ts");
-			const a = {
+				r = n("./src/reddit/selectors/telemetry.ts"),
+				a = n("./src/reddit/selectors/user.ts");
+			const i = {
 					goldPurchase: {
 						offerContext: s.a.AvatarNewGear
 					}
 				},
-				i = e => t => {
+				c = e => t => {
 					const n = {
 						source: e,
 						action: "click",
 						noun: "edit_snoovatar",
 						...r.defaults(t)
 					};
-					return Object(o.a)(t) && Object.assign(n, a), n
+					return Object(o.a)(t) && Object.assign(n, i), n
 				},
-				c = e => ({
+				d = (e, t) => n => {
+					const {
+						id: s
+					} = Object(a.nb)(n, {
+						userName: t
+					});
+					return {
+						source: e,
+						action: "click",
+						noun: "copy_avatar",
+						...r.defaults(n),
+						snoovatar: {
+							userGenerated: s
+						}
+					}
+				},
+				l = e => ({
 					...r.defaults(e),
 					source: "global",
 					action: "view",
@@ -14027,19 +14046,19 @@
 					},
 					snoovatar: r.snoovatarActiveForBuilderEvent(e)
 				}),
-				d = e => ({
+				u = e => ({
 					...r.defaults(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
 					snoovatar: r.snoovatarActiveForBuilderEvent(e)
 				}),
-				l = e => ({
+				m = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
 					...r.defaults(e),
-					...a
+					...i
 				})
 		},
 		"./src/reddit/helpers/wiki/makeWikiPath.ts": function(e, t, n) {
@@ -17962,4 +17981,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9d525feed2ea328fffc4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.14defccc9a195e8a1498.js.map

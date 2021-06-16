@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.bab5ed39bfba49e8855f.js
-// Retrieved at 6/15/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.cdcf9bc5584cee3257cf.js
+// Retrieved at 6/16/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, a, t) {
@@ -24,7 +24,7 @@
 				n.append("platform", "desktop"), Object.entries(a.params).forEach(([e, a]) => n.append(e, a));
 				const u = Object(l.a)();
 				Object(o.useEffect)(() => {
-					u(i.d)
+					u(i.e)
 				}, [u]);
 				const v = Object(s.e)(e => e.user.session),
 					f = Object(o.useRef)(null),
@@ -96,4 +96,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.bab5ed39bfba49e8855f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.cdcf9bc5584cee3257cf.js.map
