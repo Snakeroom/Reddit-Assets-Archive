@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.ca3d32045617570dad3b.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.811181d9a9dce0d6a602.js
+// Retrieved at 6/16/2021, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -281,10 +281,10 @@
 					predictions: n,
 					status: o
 				} = e.predictionTournament, s = function(e) {
-					const t = Object(u.e)(j.C);
+					const t = Object(u.e)(j.db);
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						return e.filter(e => !(t && e.isNSFW)).sort(V.a)[0]
+						return e.filter(e => t || !e.isNSFW).sort(V.a)[0]
 					}, [e, t])
 				}(n);
 				return s && o !== r.a.Closed ? i.a.createElement(l, null, i.a.createElement(M, {
@@ -301,4 +301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ca3d32045617570dad3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.811181d9a9dce0d6a602.js.map
