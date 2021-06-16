@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.6b974192eacaf35fb471.js
-// Retrieved at 6/15/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.177af9802d3180f646b1.js
+// Retrieved at 6/16/2021, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -152,8 +152,10 @@
 					hk: "1DnL4g"
 				})), c.a.createElement("p", {
 					className: A.a.achievementsDescription
-				}, P._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
+				}, r ? P._("Unlocked with Powerups! Choose the achievement you’d like to highlight.", null, {
 					hk: "4iPJwf"
+				}) : P._("Powerup to unlock community achievements", null, {
+					hk: "1oPooH"
 				})), c.a.createElement("div", {
 					className: A.a.achievementsList
 				}, i.map(e => c.a.createElement(w, {
@@ -473,4 +475,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.6b974192eacaf35fb471.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.177af9802d3180f646b1.js.map
