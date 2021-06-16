@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.28fa9645a2399292227c.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.431b048bb0ea87eb974a.js
+// Retrieved at 6/16/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6304,7 +6304,7 @@
 				K = n("./src/lib/loadWithRetries/index.ts"),
 				J = n("./src/reddit/helpers/loadThirdPartyScript.ts");
 			var Y = Object(q.a)({
-					getComponent: () => Object(K.a)(() => Promise.all([n.e("UpdateCardModal").then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(J.d)()])).then(e => e[0].default),
+					getComponent: () => Object(K.a)(() => Promise.all([n.e("UpdateCardModal").then(n.bind(null, "./src/reddit/components/UpdateCardModal/index.tsx")), Object(J.d)().catch(() => {})])).then(e => e[0].default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -14224,4 +14224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.28fa9645a2399292227c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.431b048bb0ea87eb974a.js.map

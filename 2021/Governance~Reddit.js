@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ee23a7cc8dc11daadb0e.js
-// Retrieved at 6/16/2021, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.04e11d132f06cd54b333.js
+// Retrieved at 6/16/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5129,11 +5129,17 @@
 			function d(e, t) {
 				return t() ? Promise.resolve() : new Promise((r, s) => a.a.write(() => {
 					t() && r();
-					const s = document.head;
-					let a = s.querySelector(`script[src='${e}']`);
-					a || ((a = document.createElement("script")).src = e, s.appendChild(a)), a.addEventListener("load", (function e() {
-						this.removeEventListener("load", e), r()
-					}))
+					const a = document.head;
+					let n = a.querySelector(`script[src='${e}']`);
+
+					function c() {
+						this.removeEventListener("load", c), this.removeEventListener("error", o), r()
+					}
+
+					function o() {
+						this.removeEventListener("load", c), this.removeEventListener("error", o), n && a.removeChild(n), s()
+					}
+					n || ((n = document.createElement("script")).src = e, a.appendChild(n)), n.addEventListener("load", c), n.addEventListener("error", o)
 				}))
 			}
 
@@ -22059,4 +22065,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ee23a7cc8dc11daadb0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.04e11d132f06cd54b333.js.map
