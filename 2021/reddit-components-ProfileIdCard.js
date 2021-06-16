@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7be45aa5f70d87ee195b.js
-// Retrieved at 6/16/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4e10379b219a56a83fb4.js
+// Retrieved at 6/16/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1551,9 +1551,7 @@
 		},
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
-				return u
-			})), r.d(t, "b", (function() {
+			r.d(t, "b", (function() {
 				return p
 			}));
 			var n = r("./src/config.ts"),
@@ -1565,13 +1563,10 @@
 				d = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx"),
 				l = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.m.less"),
 				m = r.n(l);
-
-			function u(e) {
-				return !!e && e.indexOf("-nft.png") > 0
-			}
+			const u = /(?:\/|-)nft-([a-z0-9]+)-([a-z]+)(?:-headshot)?\.(?:png|svg)/i;
 
 			function p(e) {
-				return !!e && e.indexOf("nft-headshot") > 0
+				return !!e && u.test(e)
 			}
 			t.a = ({
 				isEmployee: e,
@@ -2356,7 +2351,7 @@
 					prefShowSnoovatar: w,
 					snoovatarFullBodyAsset: y,
 					username: S
-				} = h, U = !!t && t.id === j, T = !(!t || !t.snoovatarFullBodyAsset), F = f && f.bannerBackgroundImage, B = !!l && l.isNSFW, M = B && n, A = !(!u || !u.userIsSubscriber), L = `/user/${S}/`, D = g && g.url === L, R = !u || u.acceptChats, G = !u || u.acceptPms, W = x && Object(J.c)(y);
+				} = h, U = !!t && t.id === j, T = !(!t || !t.snoovatarFullBodyAsset), F = f && f.bannerBackgroundImage, B = !!l && l.isNSFW, M = B && n, A = !(!u || !u.userIsSubscriber), L = `/user/${S}/`, D = g && g.url === L, R = !u || u.acceptChats, G = !u || u.acceptPms, W = x && Object(J.b)(y);
 				return s.a.createElement(m.a, {
 					isEmployee: N,
 					isGold: k,
@@ -3005,4 +3000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7be45aa5f70d87ee195b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4e10379b219a56a83fb4.js.map

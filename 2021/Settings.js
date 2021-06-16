@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9a42ef0be2ab3debf4e8.js
-// Retrieved at 6/16/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.154771995cba61db491c.js
+// Retrieved at 6/16/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5205,9 +5205,7 @@
 		},
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
-				return m
-			})), n.d(t, "b", (function() {
+			n.d(t, "b", (function() {
 				return p
 			}));
 			var r = n("./src/config.ts"),
@@ -5219,13 +5217,10 @@
 				l = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx"),
 				d = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.m.less"),
 				u = n.n(d);
-
-			function m(e) {
-				return !!e && e.indexOf("-nft.png") > 0
-			}
+			const m = /(?:\/|-)nft-([a-z0-9]+)-([a-z]+)(?:-headshot)?\.(?:png|svg)/i;
 
 			function p(e) {
-				return !!e && e.indexOf("nft-headshot") > 0
+				return !!e && m.test(e)
 			}
 			t.a = ({
 				isEmployee: e,
@@ -14232,4 +14227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9a42ef0be2ab3debf4e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.154771995cba61db491c.js.map
