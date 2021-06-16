@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.b40395ff37f5dfd2169b.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.d5d07aea3d74cd8682ad.js
+// Retrieved at 6/16/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -927,7 +927,7 @@
 						followedRedditorsInfo: o
 					} = e.identity;
 				for (const a of o.edges) {
-					if (a.node.__typename !== w.c.AvailableRedditor) continue;
+					if (a.node.__typename !== w.c.AvailableRedditor || !a.node.profile) continue;
 					const e = Object(x.a)(a.node.profile);
 					n[e.id] = e;
 					const {
@@ -7796,4 +7796,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.b40395ff37f5dfd2169b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.d5d07aea3d74cd8682ad.js.map

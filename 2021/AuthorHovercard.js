@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.5236c1c7648ce1f2d231.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.81b495678f6eecfbe0f9.js
+// Retrieved at 6/16/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -494,7 +494,7 @@
 						followedRedditorsInfo: a
 					} = e.identity;
 				for (const i of a.edges) {
-					if (i.node.__typename !== C.c.AvailableRedditor) continue;
+					if (i.node.__typename !== C.c.AvailableRedditor || !i.node.profile) continue;
 					const e = Object(_.a)(i.node.profile);
 					s[e.id] = e;
 					const {
@@ -3602,4 +3602,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5236c1c7648ce1f2d231.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.81b495678f6eecfbe0f9.js.map
