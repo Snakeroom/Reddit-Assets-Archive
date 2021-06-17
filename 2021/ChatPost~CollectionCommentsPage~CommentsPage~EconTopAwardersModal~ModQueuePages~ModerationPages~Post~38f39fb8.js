@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.32c3e2d5d1ba7a351dd6.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.97fd713f57fe048de83e.js
+// Retrieved at 6/16/2021, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, r) {
@@ -1944,7 +1944,7 @@
 						})),
 						Se = Q.e[Pe] === Q.d.Card,
 						_e = te && Se || !!Oe,
-						Ne = ae && _e,
+						Ne = ae && (te || !!Oe),
 						ke = n.a.createElement(n.a.Fragment, null, me && ye && n.a.createElement("div", {
 							className: re.a.flairContainer
 						}, n.a.createElement(y.b, {
@@ -3130,4 +3130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.32c3e2d5d1ba7a351dd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.97fd713f57fe048de83e.js.map
