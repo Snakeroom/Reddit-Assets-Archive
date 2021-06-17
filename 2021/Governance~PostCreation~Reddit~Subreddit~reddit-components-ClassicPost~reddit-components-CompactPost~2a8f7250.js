@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.a051c20ad4d9365587a8.js
-// Retrieved at 6/16/2021, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f174d7322979014d0a5d.js
+// Retrieved at 6/17/2021, 3:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -1024,17 +1024,6 @@
 				ErrorComponent: o,
 				getComponent: () => Object(n.a)(() => r.e("SubredditHovercard").then(r.bind(null, "./src/reddit/components/Hovercards/SubredditHovercard/_SubredditHovercard.tsx"))).then(e => e.default),
 				LoadingComponent: o
-			})
-		},
-		"./src/reddit/components/ImageWithFallback/index.tsx": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return s
-			}));
-			r("./node_modules/react/index.js");
-			const s = e => new Promise((t, r) => {
-				const s = new Image;
-				s.onload = () => t(s), s.onerror = r, s.src = e
 			})
 		},
 		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, r) {
@@ -2574,4 +2563,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.a051c20ad4d9365587a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f174d7322979014d0a5d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.370708e6ad8b2e3c801f.js
-// Retrieved at 6/16/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.82c5e3ea98240fabdf7e.js
+// Retrieved at 6/17/2021, 3:40:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -57,7 +57,7 @@
 				}).apply(this, arguments)
 			}
 			const w = (e => t => ((e, t) => `${e}(${(e=>e.displayName||e.name||"Component")(t)})`)(e, t))("WithMux"),
-				C = {
+				I = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
@@ -79,13 +79,13 @@
 					localStorageSaltKey: p,
 					localStorageViewerUserIdKey: f,
 					playerName: E,
-					playerVersion: I,
+					playerVersion: C,
 					respectDoNotTrack: O,
 					saltLength: S,
 					saltTimeToLive: T,
 					viewerUserIdLength: L
 				} = {
-					...C,
+					...I,
 					...t
 				};
 				class j extends i.Component {
@@ -233,7 +233,7 @@
 						}
 					}
 				}
-				j.displayName = w(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = l, j.DISABLE_COOKIES = u, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = m, j.LOCAL_STORAGE_SALT_KEY = p, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, j.PLAYER_NAME = E, j.PLAYER_VERSION = I, j.RESPECT_DO_NOT_TRACK = O, j.SALT_LENGTH = S, j.SALT_TIME_TO_LIVE = T, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = L;
+				j.displayName = w(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = l, j.DISABLE_COOKIES = u, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = m, j.LOCAL_STORAGE_SALT_KEY = p, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, j.PLAYER_NAME = E, j.PLAYER_VERSION = C, j.RESPECT_DO_NOT_TRACK = O, j.SALT_LENGTH = S, j.SALT_TIME_TO_LIVE = T, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = L;
 				const M = Object(i.forwardRef)((e, t) => n.a.createElement(j, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -271,7 +271,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => Promise.all([s.e("vendors~ClaimFreeAwardModal~CollectionCommentsPage~CommentsPage~PowerupSuccessModal~SubredditWelcome~45b89832"), s.e("index~reddit-components-Econ-Prediction"), s.e("reddit-components-Econ-Prediction")]).then(s.bind(null, "./src/reddit/components/Econ/Prediction/index.tsx")),
+				importAsync: () => Promise.all([s.e("index~reddit-components-Econ-Prediction"), s.e("reddit-components-Econ-Prediction")]).then(s.bind(null, "./src/reddit/components/Econ/Prediction/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -354,8 +354,8 @@
 				v = s("./src/reddit/constants/keycodes.ts"),
 				y = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				w = s("./src/reddit/models/Media/index.ts"),
-				C = s("./src/reddit/selectors/media.ts"),
-				I = s("./src/reddit/components/Media/blurredContent.ts"),
+				I = s("./src/reddit/selectors/media.ts"),
+				C = s("./src/reddit/components/Media/blurredContent.ts"),
 				O = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
 				S = s.n(O);
 			const {
@@ -499,7 +499,7 @@
 						subredditName: B,
 						isVisible: W
 					} = e,
-					F = Object(o.e)(e => Object(C.b)(e, A)),
+					F = Object(o.e)(e => Object(I.b)(e, A)),
 					H = F > 0,
 					U = F < p.length - 1,
 					G = Object(h.a)(),
@@ -612,7 +612,7 @@
 					className: S.a.unblurButtonContainer
 				}, n.a.createElement("button", {
 					className: S.a.unblurButton
-				}, Object(I.a)(!!e.isNSFW, !!e.isSpoiler)))) : n.a.createElement("div", {
+				}, Object(C.a)(!!e.isNSFW, !!e.isSpoiler)))) : n.a.createElement("div", {
 					className: S.a.slideshowContainer,
 					tabIndex: -1,
 					ref: Y,
@@ -649,7 +649,7 @@
 					className: S.a.unblurButtonContainer
 				}, n.a.createElement("button", {
 					className: S.a.unblurButton
-				}, Object(I.a)(!!e.isNSFW, !!e.isSpoiler))), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(M, {
+				}, Object(C.a)(!!e.isNSFW, !!e.isSpoiler))), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(M, {
 					onClick: oe,
 					setFocusTo: Y,
 					hasMoreSlides: H,
@@ -977,8 +977,8 @@
 				v = s("./src/lib/sentry/index.ts"),
 				y = s("./src/lib/truncateText/index.ts"),
 				w = s("./src/reddit/components/AdViewability/index.tsx"),
-				C = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
-				I = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
+				I = s("./src/reddit/components/Governance/VaultActionLink/async.ts"),
+				C = s("./src/reddit/components/HTML5StreamPlayer/index.tsx"),
 				O = s("./src/reddit/components/Media/constants.ts"),
 				S = s("./src/reddit/components/Media/EmbedBox/index.tsx"),
 				T = s("./src/reddit/components/Media/GalleryBox/index.tsx"),
@@ -1042,7 +1042,7 @@
 				}, {
 					ssr: !1
 				}),
-				ne = Object(m.a)(I.b, {
+				ne = Object(m.a)(C.b, {
 					playerName: "Reddit Player"
 				}),
 				oe = 300,
@@ -1345,12 +1345,12 @@
 					} = this.props, {
 						canLoadContent: E,
 						forcePause: y,
-						shouldPause: I,
+						shouldPause: C,
 						shouldStop: O,
 						viewportWidth: V
 					} = this.state;
 					if (!h.media) return null;
-					const k = y || I,
+					const k = y || C,
 						B = O,
 						{
 							source: W,
@@ -1426,7 +1426,7 @@
 								rtJsonElementProps: Ee(this.props),
 								renderMediaAsLinks: d,
 								shouldBlur: ee
-							}), l.a.createElement(C.b, {
+							}), l.a.createElement(I.b, {
 								content: n
 							})), l.a.createElement(M.a, {
 								postId: h.id,
@@ -1552,7 +1552,7 @@
 								alwaysWrapMedia: !0,
 								isVideo: !0
 							}), E && l.a.createElement(ne, {
-								autoPlay: "boolean" == typeof I ? !I : void 0,
+								autoPlay: "boolean" == typeof C ? !C : void 0,
 								isExpando: a,
 								shouldLoad: !0,
 								shouldPause: k,
@@ -1975,4 +1975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.370708e6ad8b2e3c801f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.82c5e3ea98240fabdf7e.js.map
