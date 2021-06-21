@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.bb33a913fe674105b176.js
-// Retrieved at 6/21/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b20dd770f886ca9580a3.js
+// Retrieved at 6/21/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1252,7 +1252,7 @@
 						"translations/es_MX-json": "c098c4b8a56dbea6f443",
 						"translations/fr_FR-json": "29a7b929c5805b65a887",
 						"translations/it_IT-json": "fa78539b47730095431b",
-						"translations/pseudo_ext-json": "e6dd3afe22a9b4e4fa54",
+						"translations/pseudo_ext-json": "05033306e42032fc4738",
 						"translations/pseudo_long-json": "4a8600d374a6030a5d92",
 						"translations/pseudo_short-json": "8691a722c67842756e44",
 						"translations/pt_BR-json": "c4507886e57ea33264c3",
@@ -1265,7 +1265,7 @@
 						FlairEdit: "f1e00408b4d402dc75d0",
 						"vendors~Chat~PostCreation~RedesignChat": "bc666e204513e3f2e137",
 						"vendors~Chat~RedesignChat": "7446d3d9ac2e63b92192",
-						"Chat~RedesignChat": "9b9daf687fb3a86ea068",
+						"Chat~RedesignChat": "351d7bc114749e58b6aa",
 						RedesignChat: "eff131a77bab9564960f",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						CryptoHarbergerTaxManageModal: "f868538ee087631d3c9a",
@@ -1370,7 +1370,7 @@
 						OverlayChannelInvited: "651f5bf07cdffbcc57e6",
 						OverlayChannelRemoval: "49a17760f857ce0e306a",
 						OverlayChatMembers: "c3603999d62e8e042520",
-						OverlayCreateChannel: "2492abb4f5b9caab0176",
+						OverlayCreateChannel: "4a38b7ee7b92ff972bf8",
 						OverlayDeleteMessage: "c755cff228d090e240f2",
 						OverlayDirectsEmptyState: "fdb0696134ff519e5648",
 						OverlayHideChannel: "b7e74a59f45a63644349",
@@ -1489,4 +1489,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bb33a913fe674105b176.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b20dd770f886ca9580a3.js.map
