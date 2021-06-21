@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/ExternalLinkUnit.be09c59869925cb2cfee.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ExternalLinkUnit.6581132b15df5a91ef64.js
+// Retrieved at 6/21/2021, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ExternalLinkUnit"], {
-		"./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less": function(e, a, t) {
+		"./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less": function(e, t, a) {
 			e.exports = {
 				RichUnitWrapper: "ke6TKb33anNYB1yQYgsle",
 				richUnitWrapper: "ke6TKb33anNYB1yQYgsle",
@@ -35,153 +35,142 @@
 				footer: "_7c8971gyJI3QIAAJMZuxo"
 			}
 		},
-		"./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.tsx": function(e, a, t) {
+		"./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.tsx": function(e, t, a) {
 			"use strict";
-			t.r(a);
-			var n = t("./node_modules/react/index.js"),
-				r = t.n(n),
-				l = t("./src/lib/classNames/index.ts"),
-				i = t("./src/lib/lessComponent.tsx"),
-				c = t("./src/lib/opener/index.ts"),
-				s = t("./src/chat/components/Message/LinkedText.tsx"),
-				m = t("./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less"),
-				o = t.n(m);
-			const d = i.a.div("ProviderDisplay", o.a),
-				E = i.a.div("Delimiter", o.a),
-				p = i.a.wrapped(s.a, "Link", o.a),
-				v = i.a.img("Image", o.a),
-				u = i.a.img("Favicon", o.a),
-				_ = i.a.div("Title", o.a),
-				k = i.a.wrapped(e => {
+			a.r(t);
+			var n = a("./node_modules/react/index.js"),
+				r = a.n(n),
+				i = a("./src/lib/classNames/index.ts"),
+				l = a("./src/lib/opener/index.ts"),
+				c = a("./src/chat/components/Message/RichUnit/ExternalLink/ExternalLinkUnit.m.less"),
+				s = a.n(c);
+			const m = e => {
 					const {
-						className: a,
 						faviconUrl: t,
-						title: n
+						title: a
 					} = e;
 					return r.a.createElement("div", {
-						className: a
-					}, t ? r.a.createElement(u, {
+						className: s.a.TitleContent
+					}, t ? r.a.createElement("img", {
+						className: s.a.Favicon,
 						src: t
-					}) : null, r.a.createElement(_, null, n))
-				}, "TitleContent", o.a),
-				C = i.a.wrapped(e => {
+					}) : null, r.a.createElement("div", {
+						className: s.a.Title
+					}, a))
+				},
+				o = e => {
 					const {
-						className: a,
 						title: t,
-						link: n,
-						faviconUrl: l
+						link: a,
+						faviconUrl: n
 					} = e;
 					return r.a.createElement("div", {
-						className: a
-					}, r.a.createElement(k, {
+						className: s.a.HeaderContent
+					}, r.a.createElement(m, {
 						title: t,
-						faviconUrl: l
-					}), r.a.createElement(p, {
-						value: n
-					}))
-				}, "HeaderContent", o.a),
-				U = i.a.wrapped(e => {
+						faviconUrl: n
+					}), r.a.createElement("span", {
+						className: s.a.Link
+					}, a))
+				},
+				d = e => {
 					const {
-						className: a,
 						name: t,
-						link: n,
-						faviconUrl: l
+						link: a,
+						faviconUrl: n
 					} = e;
 					return r.a.createElement("div", {
-						className: a
-					}, r.a.createElement(C, {
+						className: s.a.Header
+					}, r.a.createElement(o, {
 						title: t,
-						link: n,
-						faviconUrl: l
+						link: a,
+						faviconUrl: n
 					}))
-				}, "Header", o.a),
-				x = i.a.wrapped(e => {
+				},
+				E = e => {
 					const {
-						className: a,
 						thumbnailUrl: t,
-						title: n
+						title: a
 					} = e;
 					return r.a.createElement("div", {
-						className: a
-					}, r.a.createElement(L, {
+						className: s.a.ContentContainer
+					}, r.a.createElement(_, {
 						url: t,
-						title: n
+						title: a
 					}))
-				}, "ContentContainer", o.a),
-				F = i.a.wrapped(e => {
+				},
+				v = e => {
 					const {
-						className: a,
 						url: t
 					} = e;
 					return r.a.createElement("div", {
-						className: a
-					}, r.a.createElement(v, {
+						className: s.a.ImageContainer
+					}, r.a.createElement("img", {
+						className: s.a.Image,
 						src: t
 					}))
-				}, "ImageContainer", o.a),
-				L = i.a.wrapped(e => {
+				},
+				_ = e => {
 					const {
-						className: a,
 						url: t,
-						title: n
+						title: a
 					} = e;
 					return r.a.createElement("div", {
-						className: a
-					}, t ? r.a.createElement(F, {
+						className: s.a.Content
+					}, t ? r.a.createElement(v, {
 						url: t
-					}) : null, r.a.createElement(_, null, n))
-				}, "Content", o.a),
-				N = i.a.wrapped(e => {
+					}) : null, r.a.createElement("div", {
+						className: s.a.Title
+					}, a))
+				},
+				k = e => {
 					const {
-						className: a,
 						providerDisplay: t
 					} = e;
 					return r.a.createElement("div", {
-						className: a,
+						className: s.a.Footer,
 						tabIndex: 0
-					}, r.a.createElement(d, null, t))
-				}, "Footer", o.a),
-				g = i.a.wrapped(e => {
+					}, r.a.createElement("div", {
+						className: s.a.ProviderDisplay
+					}, t))
+				},
+				u = e => {
 					const {
-						className: a,
 						darkBackground: t,
-						name: n = "",
-						href: i = "",
-						providerDisplay: s = "",
+						name: a = "",
+						href: n = "",
+						providerDisplay: c = "",
 						thumbnailUrl: m = "",
-						title: d = "",
-						faviconUrl: p = ""
+						title: o = "",
+						faviconUrl: v = ""
 					} = e;
 					return r.a.createElement("button", {
 						onClick: e => {
-							((e, a) => {
-								e.stopPropagation(), Object(c.d)(a, "_blank")
-							})(e, i)
+							((e, t) => {
+								e.stopPropagation(), Object(l.d)(t, "_blank")
+							})(e, n)
 						},
-						className: Object(l.a)(a, {
-							[o.a.dark]: t
+						className: Object(i.a)(s.a.ExternalLinkUnit, {
+							[s.a.dark]: t
 						})
-					}, r.a.createElement(U, {
-						name: n,
-						link: i,
-						faviconUrl: p
-					}), m ? null : r.a.createElement(E, null), r.a.createElement(x, {
+					}, r.a.createElement(d, {
+						name: a,
+						link: n,
+						faviconUrl: v
+					}), m ? null : r.a.createElement("div", {
+						className: s.a.Delimiter
+					}), r.a.createElement(E, {
 						thumbnailUrl: m,
-						title: d,
+						title: o,
 						darkBackground: t
-					}), r.a.createElement(N, {
-						providerDisplay: s
+					}), r.a.createElement(k, {
+						providerDisplay: c
 					}))
-				}, "ExternalLinkUnit", o.a);
-			a.default = i.a.wrapped(e => {
-				const {
-					className: a
-				} = e;
-				return r.a.createElement("div", {
-					className: a
-				}, r.a.createElement(g, e), " ")
-			}, "RichUnitWrapper", o.a)
+				};
+			t.default = e => r.a.createElement("div", {
+				className: s.a.RichUnitWrapper
+			}, r.a.createElement(u, e))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExternalLinkUnit.be09c59869925cb2cfee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExternalLinkUnit.6581132b15df5a91ef64.js.map
