@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.74bdeb324be1bed0cbc4.js
-// Retrieved at 6/21/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.8bd92b2a61a89281d284.js
+// Retrieved at 6/21/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -1701,87 +1701,85 @@
 						isFrontpage: c,
 						isProfilePostListing: d,
 						isTopicPage: l,
-						listingBelowVariant: p,
-						listingKey: m,
-						listingName: b,
-						pageLayer: g,
-						pageReferrer: f,
-						postClickEventFactory: y,
-						redditStyle: S,
-						shouldHideFlair: _,
-						isActionBarAnimationEnabled: v,
-						triggerNewPostPill: C,
-						postIds: O
-					} = this.props, x = 0 === t, E = `post-${n}-${e}-${t}-${s?"last-index":""}-${b}-${m}-${f}`;
-					let j;
-					if (void 0 === (j = this.scrollChildCache.get(E))) {
+						listingKey: p,
+						listingName: m,
+						pageLayer: b,
+						pageReferrer: g,
+						postClickEventFactory: f,
+						redditStyle: y,
+						shouldHideFlair: S,
+						isActionBarAnimationEnabled: _,
+						triggerNewPostPill: v,
+						postIds: C
+					} = this.props, O = 0 === t, x = `post-${n}-${e}-${t}-${s?"last-index":""}-${m}-${p}-${g}`;
+					let E;
+					if (void 0 === (E = this.scrollChildCache.get(x))) {
 						const {
-							inSubredditOrProfile: N,
-							postsById: L
-						} = this.props, T = L[e], D = T.crosspostRootId && L[T.crosspostRootId] ? L[T.crosspostRootId] : T;
-						T.crosspostRootId && !L[T.crosspostRootId] && w.c.withScope(e => {
-							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${T.id} is crosspost of ${T.crosspostRootId}, but ` + `${T.crosspostRootId} details are missing in the state`), w.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: j,
+							postsById: N
+						} = this.props, L = N[e], T = L.crosspostRootId && N[L.crosspostRootId] ? N[L.crosspostRootId] : L;
+						L.crosspostRootId && !N[L.crosspostRootId] && w.c.withScope(e => {
+							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), w.c.captureMessage("Crosspost parent details are missing")
 						});
-						const R = this.props.postComponentForLayout({
-								isCrosspost: !!T.crosspostRootId,
-								isFirstPost: x,
+						const D = this.props.postComponentForLayout({
+								isCrosspost: !!L.crosspostRootId,
+								isFirstPost: O,
 								layout: n,
-								post: D
+								post: T
 							}),
-							U = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
-							A = q(e, n, s, m, b, f, this.props, t),
-							B = z(e, n, this.props, t, g),
-							Y = Q(e, this.props),
-							F = D.media && D.media.type === P.o.EMBED ? D.media.provider : null;
-						j = {
-							estHeight: Object(I.c)(T, n),
+							R = `post-list-item-[layout: ${n}]-[postId: ${e}]`,
+							U = q(e, n, s, p, m, g, this.props, t),
+							A = z(e, n, this.props, t, b),
+							B = Q(e, this.props),
+							Y = T.media && T.media.type === P.o.EMBED ? T.media.provider : null;
+						E = {
+							estHeight: Object(I.c)(L, n),
 							id: e,
-							isFocusable: !(!D.media || !(n === k.g.Large || n === k.g.Classic && Object(P.G)(D.media))) && (P.d.has(D.media.type) && (!F || !P.s.has(F)) && !D.isSpoiler && !D.isNSFW),
-							trackOnEnteredViewport: A,
-							trackOnExitedViewport: B,
+							isFocusable: !(!T.media || !(n === k.g.Large || n === k.g.Classic && Object(P.G)(T.media))) && (P.d.has(T.media.type) && (!Y || !P.s.has(Y)) && !T.isSpoiler && !T.isNSFW),
+							trackOnEnteredViewport: U,
+							trackOnExitedViewport: A,
 							render: ({
 								className: n,
 								height: h,
-								width: f,
+								width: g,
 								remeasure: w,
 								setScrollerChildRef: k,
-								shouldLoadInitially: E
-							}) => u.a.createElement(R, {
+								shouldLoadInitially: x
+							}) => u.a.createElement(D, {
 								className: n,
 								currentProfileName: r,
-								key: U,
-								availableWidth: f,
-								eventFactory: y,
-								first: x,
-								forceLoadMedia: E,
+								key: R,
+								availableWidth: g,
+								eventFactory: f,
+								first: O,
+								forceLoadMedia: x,
 								hostPostData: o,
-								inSubredditOrProfile: N,
-								isActionBarAnimationEnabled: v,
+								inSubredditOrProfile: j,
+								isActionBarAnimationEnabled: _,
 								isCommentPermalink: i,
 								isCommentsPage: a,
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								listingBelowVariant: p,
-								listingKey: m,
-								listingName: b,
-								pageLayer: g,
+								listingKey: p,
+								listingName: m,
+								pageLayer: b,
 								last: s,
-								onClickPost: Y,
+								onClickPost: B,
 								onSizeChanged: w,
 								postId: e,
-								postIds: O,
-								redditStyle: S,
+								postIds: C,
+								redditStyle: y,
 								sendEvent: this.props.sendEvent,
 								scrollerItemRef: k,
-								shouldHideFlair: _,
+								shouldHideFlair: S,
 								onceInViewport: () => {
-									null == C || C(t)
+									null == v || v(t)
 								}
 							})
-						}, this.scrollChildCache.set(E, j)
+						}, this.scrollChildCache.set(x, E)
 					}
-					return j
+					return E
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -2458,4 +2456,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.74bdeb324be1bed0cbc4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.8bd92b2a61a89281d284.js.map
