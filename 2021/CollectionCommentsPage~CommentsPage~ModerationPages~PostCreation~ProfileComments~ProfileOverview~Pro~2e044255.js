@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.e4addd56f09babf8e93c.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.b610bd03aaffd19b2389.js
+// Retrieved at 6/21/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -2103,7 +2103,7 @@
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return h
+				return b
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -2113,29 +2113,31 @@
 				c = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				d = s("./src/reddit/components/SourceLink/index.m.less"),
 				l = s.n(d),
-				u = s("./src/lib/lessComponent.tsx");
-			const m = u.a.wrapped(c.a, "OutboundLinkIcon", l.a),
-				p = u.a.div("SourceLinkWrapper", l.a);
+				u = s("./src/lib/lessComponent.tsx"),
+				m = s("./src/telemetry/models/Outbound.ts");
+			const p = u.a.wrapped(c.a, "OutboundLinkIcon", l.a),
+				h = u.a.div("SourceLinkWrapper", l.a);
 
-			function h(e) {
+			function b(e) {
 				const {
 					className: t,
 					post: s,
 					isCommentsPage: n
-				} = e, {
-					source: c,
-					isSponsored: d
+				} = e, c = n ? m.SourceElement.PostLink : m.SourceElement.ListingPostLink, {
+					source: d,
+					isSponsored: u
 				} = s;
-				return c ? r.a.createElement(p, {
+				return d ? r.a.createElement(h, {
 					className: Object(o.a)({
 						[l.a["m-comment"]]: n
 					}, t)
 				}, r.a.createElement(a.a, {
-					href: c.url,
-					isSponsored: d,
+					href: d.url,
+					isSponsored: u,
 					postId: s.id,
-					source: c
-				}, Object(i.a)(s), r.a.createElement(m, {
+					source: d,
+					sourceElement: c
+				}, Object(i.a)(s), r.a.createElement(p, {
 					isFilled: !0
 				}))) : null
 			}
@@ -2834,4 +2836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.e4addd56f09babf8e93c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.b610bd03aaffd19b2389.js.map

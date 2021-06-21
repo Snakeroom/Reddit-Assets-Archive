@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.fe11b7bf9d83af91c5de.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.83a51a1fff6f284b6119.js
+// Retrieved at 6/21/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1881,7 +1881,8 @@
 				templatePlaceholderImage: x,
 				shouldShowFollowButton: v,
 				isFollowed: y,
-				onFollowPostClick: g
+				isCommentsPage: g,
+				onFollowPostClick: O
 			}) => {
 				return Object(p.a)() ? r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(i.a)(b.a.thumbnailContainer, {
@@ -1891,7 +1892,7 @@
 					className: b.a.thumbnailContainerRow
 				}, v && r.a.createElement(a.a, {
 					isFilled: !!y,
-					onClick: g,
+					onClick: O,
 					hasTooltip: !0,
 					tooltipText: s.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -1907,6 +1908,7 @@
 					small: !0
 				})), r.a.createElement(d.a, {
 					crosspost: e,
+					isCommentsPage: g,
 					post: t,
 					redditStyle: o,
 					forceShowNSFW: n,
@@ -3237,7 +3239,7 @@
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return b
 			}));
 			var o = n("./node_modules/react/index.js"),
 				r = n.n(o),
@@ -3247,29 +3249,31 @@
 				c = n("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				d = n("./src/reddit/components/SourceLink/index.m.less"),
 				l = n.n(d),
-				u = n("./src/lib/lessComponent.tsx");
-			const p = u.a.wrapped(c.a, "OutboundLinkIcon", l.a),
-				m = u.a.div("SourceLinkWrapper", l.a);
+				u = n("./src/lib/lessComponent.tsx"),
+				p = n("./src/telemetry/models/Outbound.ts");
+			const m = u.a.wrapped(c.a, "OutboundLinkIcon", l.a),
+				f = u.a.div("SourceLinkWrapper", l.a);
 
-			function f(e) {
+			function b(e) {
 				const {
 					className: t,
 					post: n,
 					isCommentsPage: o
-				} = e, {
-					source: c,
-					isSponsored: d
+				} = e, c = o ? p.SourceElement.PostLink : p.SourceElement.ListingPostLink, {
+					source: d,
+					isSponsored: u
 				} = n;
-				return c ? r.a.createElement(m, {
+				return d ? r.a.createElement(f, {
 					className: Object(s.a)({
 						[l.a["m-comment"]]: o
 					}, t)
 				}, r.a.createElement(a.a, {
-					href: c.url,
-					isSponsored: d,
+					href: d.url,
+					isSponsored: u,
 					postId: n.id,
-					source: c
-				}, Object(i.a)(n), r.a.createElement(p, {
+					source: d,
+					sourceElement: c
+				}, Object(i.a)(n), r.a.createElement(m, {
 					isFilled: !0
 				}))) : null
 			}
@@ -3810,4 +3814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.fe11b7bf9d83af91c5de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.83a51a1fff6f284b6119.js.map

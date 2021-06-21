@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.af3863a3e26d11e8712e.js
-// Retrieved at 6/17/2021, 3:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.581554aec976272c597b.js
+// Retrieved at 6/21/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4349,7 +4349,8 @@
 				templatePlaceholderImage: f,
 				shouldShowFollowButton: v,
 				isFollowed: C,
-				onFollowPostClick: x
+				isCommentsPage: x,
+				onFollowPostClick: y
 			}) => {
 				return Object(p.a)() ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(i.a)(b.a.thumbnailContainer, {
@@ -4359,7 +4360,7 @@
 					className: b.a.thumbnailContainerRow
 				}, v && n.a.createElement(a.a, {
 					isFilled: !!C,
-					onClick: x,
+					onClick: y,
 					hasTooltip: !0,
 					tooltipText: r.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -4375,6 +4376,7 @@
 					small: !0
 				})), n.a.createElement(c.a, {
 					crosspost: e,
+					isCommentsPage: x,
 					post: t,
 					redditStyle: o,
 					forceShowNSFW: s,
@@ -8586,4 +8588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.af3863a3e26d11e8712e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.581554aec976272c597b.js.map
