@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1512a23309b305aa1521.js
-// Retrieved at 6/21/2021, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.dafa77643a737199fee0.js
+// Retrieved at 6/21/2021, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -15052,32 +15052,40 @@
 					o && t(qn(o))
 				};
 			var Wn = n("./src/reddit/actions/login.ts");
-			const Vn = /account\/magic_link\/landing\/[^\/]+\/?$/;
-			var Kn = n("./src/reddit/actions/notificationsInbox/index.ts"),
-				zn = n("./src/chat/customMiddleware/noop.ts"),
-				Jn = n("./src/lib/cache/index.ts");
-			const Qn = Object(Jn.c)(S.p.RECENT_SUBREDDITS, "recent_subreddits"),
-				Xn = () => Object(Jn.b)(Qn) || [];
-			var Zn = e => "undefined" == typeof window ? zn.a : e => t => {
+			const Vn = /^\/account\/magic_link\/landing\/[^\/]+\/?$/,
+				Kn = () => async (e, t) => {
+					var n;
+					(e => {
+						if (!e) return !1;
+						const t = new URL(e).pathname;
+						return Vn.test(t)
+					})(null === (n = t().platform) || void 0 === n ? void 0 : n.sessionReferrer) && e(Object(Wn.i)())
+				};
+			var zn = n("./src/reddit/actions/notificationsInbox/index.ts"),
+				Jn = n("./src/chat/customMiddleware/noop.ts"),
+				Qn = n("./src/lib/cache/index.ts");
+			const Xn = Object(Qn.c)(S.p.RECENT_SUBREDDITS, "recent_subreddits"),
+				Zn = () => Object(Qn.b)(Xn) || [];
+			var Yn = e => "undefined" == typeof window ? Jn.a : e => t => {
 					const n = e(t);
 					switch (t.type) {
 						case b.e: {
-							const e = Xn() || [],
+							const e = Zn() || [],
 								{
 									id: n
 								} = t.payload || {};
 							if (n) {
-								const s = e.findIndex(e => e.id === n); - 1 !== s && e.splice(s, 1), e.unshift(t.payload), e.splice(b.c), Object(Jn.d)(Qn, e, S.nb)
+								const s = e.findIndex(e => e.id === n); - 1 !== s && e.splice(s, 1), e.unshift(t.payload), e.splice(b.c), Object(Qn.d)(Xn, e, S.nb)
 							}
 							break
 						}
 					}
 					return n
 				},
-				Yn = n("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
-				$n = n("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts");
+				$n = n("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
+				es = n("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts");
 			Object(o.e)(o.b.EntryPointStart);
-			const es = Object(F.a)({
+			const ts = Object(F.a)({
 					actionDispatchers: {
 						reddaidReceived: re.s,
 						loidReceived: re.q,
@@ -15099,20 +15107,20 @@
 					onBeforeRequestFactory: ln.a,
 					statsAppName: S.l.Redesign
 				}),
-				ts = Object(D.a)(es.apiContext),
-				ns = ot();
-			let ss;
+				ns = Object(D.a)(ts.apiContext),
+				ss = ot();
+			let os;
 			Object(I.a)({
 				reducerMap: fn.a,
 				routes: vn.a,
-				apiContext: es.apiContext,
-				gqlContext: ts.gqlContext,
+				apiContext: ts.apiContext,
+				gqlContext: ns.gqlContext,
 				appFactory: (e, t) => u.a.createElement(Ye.a.Provider, {
-					value: ns.broadcaster
+					value: ss.broadcaster
 				}, u.a.createElement($e.a.Provider, {
 					value: {
-						apiContext: es.apiContext,
-						gqlContext: ts.gqlContext
+						apiContext: ts.apiContext,
+						gqlContext: ns.gqlContext
 					}
 				}, u.a.createElement(et.b, null, u.a.createElement(Le, {
 					ok: !0,
@@ -15122,7 +15130,7 @@
 				appName: S.l.Redesign,
 				history: Object(i.a)({
 					getUserConfirmation(e, t) {
-						const n = ss;
+						const n = os;
 						if (!n) return;
 						n.dispatch(Object(Y.k)({
 							allowNavigationCallback: (e = !1) => {
@@ -15133,9 +15141,9 @@
 				}),
 				customMiddleware: [E.a.withExtraArgument({
 					routes: vn.a,
-					apiContext: es.apiContext,
-					gqlContext: ts.gqlContext
-				}), ns.middleware, mt, es.middleware, ts.middleware, Ft, Ot, Ut, nn, Tt, Rt, Zn],
+					apiContext: ts.apiContext,
+					gqlContext: ns.gqlContext
+				}), ss.middleware, mt, ts.middleware, ns.middleware, Ft, Ot, Ut, nn, Tt, Rt, Yn],
 				modifyInitialData: ({
 					initialData: e,
 					browserHistory: t
@@ -15214,7 +15222,7 @@
 					localStorageData: d
 				}) => {
 					var l, u;
-					ss = c;
+					os = c;
 					e.listen((e, t) => {
 						const n = c.getState(),
 							{
@@ -15239,7 +15247,7 @@
 						An.a.publish(Qe.c, r, document)
 					});
 					const m = c.getState(),
-						p = Xn();
+						p = Zn();
 					c.dispatch((e => async t => {
 						const n = {},
 							s = new Set;
@@ -15267,13 +15275,7 @@
 							advertiserCategory: f
 						}), c.dispatch(Hn({
 							localStorageData: d
-						})), Object(xn.f)(m) && Object(z.d)(m), c.dispatch(Object(z.c)()), c.dispatch((() => async (e, t) => {
-							const n = t(),
-								{
-									sessionReferrer: s
-								} = n.platform;
-							s && Vn.test(s) && e(Object(Wn.i)())
-						})()), window.addEventListener("load", () => {
+						})), Object(xn.f)(m) && Object(z.d)(m), c.dispatch(Object(z.c)()), c.dispatch(Kn()), window.addEventListener("load", () => {
 							const t = c.getState(),
 								{
 									currentPage: r
@@ -15371,9 +15373,9 @@
 										Object(U.a)(Object(rn.e)("tab_backgrounded", n)(c.getState(), o, e, t))
 									}(s || e || n || t) && (Ge.ab(), Ge.eb(), Ge.cb(), Ge.bb())
 								}
-								Object($n.a)(c.getState()) && (null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && Yn.d[n.locationState.clickId] && !Yn.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(Yn.b)(n.locationState.clickId) : Object(Yn.c)(n.locationState.clickId))
+								Object(es.a)(c.getState()) && (null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && $n.d[n.locationState.clickId] && !$n.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object($n.b)(n.locationState.clickId) : Object($n.c)(n.locationState.clickId))
 							}), Object(yn.g)(c.getState()) && dn(c.getState), c.dispatch(Object(ne.j)())
-						}), window.history.scrollRestoration = "manual", An.a.attachStore(c), c.dispatch(Object(ee.b)(A.a.PageLoad)), Object(St.f)(c.getState()) && c.dispatch(Object(Kn.e)()), Object(wn.b)(c.getState())) {
+						}), window.history.scrollRestoration = "manual", An.a.attachStore(c), c.dispatch(Object(ee.b)(A.a.PageLoad)), Object(St.f)(c.getState()) && c.dispatch(Object(zn.e)()), Object(wn.b)(c.getState())) {
 						const e = Ge.q(null === (l = c.getState().user.account) || void 0 === l ? void 0 : l.id);
 						c.dispatch(Object($.A)({
 							posts: null != e ? e : []
@@ -17963,4 +17965,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1512a23309b305aa1521.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.dafa77643a737199fee0.js.map
