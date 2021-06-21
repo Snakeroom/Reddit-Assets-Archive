@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.511d90e5f97b5ca28c97.js
-// Retrieved at 6/16/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f0a7ac3b533ce616bffa.js
+// Retrieved at 6/21/2021, 2:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -10739,8 +10739,8 @@
 						case X.SUBREDDIT_FAILED:
 						case je.f:
 						case je.e:
-						case nd.a:
 						case nd.b:
+						case nd.c:
 						case Ce.e:
 						case Ce.d:
 						case Ce.h:
@@ -10914,7 +10914,7 @@
 							}
 						}
 						case we.e:
-						case nd.b:
+						case nd.c:
 						case Ce.e:
 						case je.b:
 						case Pe.b:
@@ -13561,7 +13561,7 @@
 					case Yl.a:
 						return Wl(e, t.payload.posts);
 					case Le.PAGE_LOADED:
-					case nd.b:
+					case nd.c:
 					case Ce.e:
 					case Ce.h:
 					case $.b:
@@ -13964,6 +13964,19 @@
 						return {
 							...e
 						};
+					case nd.a: {
+						const {
+							postId: r,
+							isEligibleForLinkedPosts: s
+						} = t.payload;
+						return {
+							...e,
+							[r]: {
+								...e[r],
+								isEligibleForLinkedPosts: s
+							}
+						}
+					}
 					default:
 						return e
 				}
@@ -17685,7 +17698,7 @@
 					case LE.f:
 					case je.f:
 					case Lc.g:
-					case nd.b:
+					case nd.c:
 					case Ce.e:
 					case Ce.h:
 					case K.k:
@@ -22113,4 +22126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.511d90e5f97b5ca28c97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f0a7ac3b533ce616bffa.js.map
