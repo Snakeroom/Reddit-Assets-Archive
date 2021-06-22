@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7800b702d58010ea7062.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5201a814bd06b55a2cdf.js
+// Retrieved at 6/22/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -23953,7 +23953,13 @@
 				oe = e => {
 					const t = Object(Y.g)(e.destSubreddit.name);
 					return {
-						sr: t,
+						...e.destSubreddit.isProfile ? {
+							sr: `u_${t}`,
+							submit_type: "profile"
+						} : {
+							sr: t,
+							submit_type: "subreddit"
+						},
 						api_type: "json",
 						show_error_list: !0,
 						draft_id: e.draftId || void 0,
@@ -23963,14 +23969,7 @@
 						nsfw: e.isNSFW,
 						...e.kind !== f.o.POLL ? {
 							kind: te(e),
-							original_content: e.isOC,
-							...e.destSubreddit.isProfile ? {
-								sr: `u_${t}`,
-								submit_type: "profile"
-							} : {
-								sr: t,
-								submit_type: "subreddit"
-							}
+							original_content: e.isOC
 						} : {},
 						post_to_twitter: e.postToTwitter,
 						sendreplies: e.sendReplies,
@@ -30198,4 +30197,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7800b702d58010ea7062.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5201a814bd06b55a2cdf.js.map
