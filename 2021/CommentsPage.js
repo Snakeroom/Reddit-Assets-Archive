@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.775f9b56ef62a4ee40ae.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.8540f78d8fd62306232c.js
+// Retrieved at 6/22/2021, 7:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2818,11 +2818,11 @@
 						onClick: P,
 						isSelected: this.props.sendRepliesToggled
 					})))), this.props.isConfirmModalOpen && a.a.createElement(we.a, {
-						actionText: A.fbt._("delete", null, {
-							hk: "1XDeYp"
+						actionText: A.fbt._("Delete", null, {
+							hk: "1bl9Tc"
 						}),
-						cancelActionText: A.fbt._("keep", null, {
-							hk: "bO09f"
+						cancelActionText: A.fbt._("Keep", null, {
+							hk: "3hCBEF"
 						}),
 						headerText: A.fbt._("Delete comment", null, {
 							hk: "2EYJqi"
@@ -8888,4 +8888,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.775f9b56ef62a4ee40ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8540f78d8fd62306232c.js.map

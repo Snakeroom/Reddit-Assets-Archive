@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.89272b1585bd381404d4.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.e5600f3eadfad0395905.js
+// Retrieved at 6/22/2021, 7:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -82,8 +82,8 @@
 						hostPostData: D,
 						isCheckboxSelected: W,
 						isCurrentUserProfilePost: V,
-						isFrontpage: H,
-						isGalleryTileLayoutDefault: q,
+						isFrontpage: q,
+						isGalleryTileLayoutDefault: H,
 						isLoggedIn: K,
 						isOverlay: $,
 						imageGalleryCurrentItem: G,
@@ -110,7 +110,7 @@
 						inSubredditOrProfile: a,
 						isCurrentUserProfilePost: V,
 						isOverlay: $,
-						shouldShowSubscribeButton: !(H && K),
+						shouldShowSubscribeButton: !(q && K),
 						subredditOrProfile: de
 					}, Oe = Object(r.t)(te, G), {
 						source: _e
@@ -224,14 +224,14 @@
 							hide: !ve,
 							report: !ve
 						})
-					})), o.a.createElement(b.d, null))), z(te, oe, n, me, q)));
+					})), o.a.createElement(b.d, null))), z(te, oe, n, me, H)));
 					return o.a.createElement(j.b, null, we)
 				}
 			}
 			const z = (e, t, s, n, r) => s ? e.crosspostRootId ? o.a.createElement("div", {
 					className: B.a.crosspostMediaWrapper
-				}, H(e, t, n, r)) : H(e, t, n, r) : null,
-				H = (e, t, s, n) => o.a.createElement(E.a, {
+				}, q(e, t, n, r)) : q(e, t, n, r) : null,
+				q = (e, t, s, n) => o.a.createElement(E.a, {
 					isExpando: !0,
 					isGalleryTileLayoutDefault: n,
 					isListing: !0,
@@ -244,9 +244,9 @@
 					showCentered: !0,
 					showFull: !0
 				}),
-				q = Object(a.a)(V),
-				K = Object(L.b)(Object(M.a)(q));
-			t.default = Object(N.a)(q)
+				H = Object(a.a)(V),
+				K = Object(L.b)(Object(M.a)(H));
+			t.default = Object(N.a)(H)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -435,8 +435,8 @@
 				U = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				V = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				z = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				H = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				q = s("./src/reddit/helpers/overlay/index.ts"),
+				q = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				H = s("./src/reddit/helpers/overlay/index.ts"),
 				K = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				$ = s("./src/reddit/models/PostDraft/index.ts"),
 				G = s("./src/reddit/selectors/activeModalId.ts"),
@@ -562,7 +562,7 @@
 						moderatorPermissions: s,
 						modModeEnabled: n,
 						showModTools: r
-					} = this.props, i = Object(H.a)(s), a = !!t && t.displayText === e.author;
+					} = this.props, i = Object(q.a)(s), a = !!t && t.displayText === e.author;
 					if (r && i) return n ? o.a.createElement(Pe, {
 						comment: e,
 						isCommentAuthor: a
@@ -600,7 +600,7 @@
 						modModeEnabled: n,
 						onDistinguishComment: r,
 						showModTools: i
-					} = this.props, a = Object(H.a)(s), d = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
+					} = this.props, a = Object(q.a)(s), d = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
 					if (i && d && !e.bannedBy && (c || a && !n)) return o.a.createElement(R.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.activeTooltipId === Te(e.id)
@@ -631,7 +631,7 @@
 						postPermalink: l,
 						subreddit: m,
 						toggleDeleteCommentModal: p
-					} = this.props, u = Object(H.a)(d), h = !!n && n.displayText === e.author, b = !c && !e.isLocked || u && i, x = n && e.isGildable;
+					} = this.props, u = Object(q.a)(d), h = !!n && n.displayText === e.author, b = !c && !e.isLocked || u && i, x = n && e.isGildable;
 					return o.a.createElement("div", {
 						className: t
 					}, o.a.createElement(Ne, null, b && o.a.createElement(Me, {
@@ -679,11 +679,11 @@
 						}),
 						onClick: this.handleDelete
 					}, o.a.createElement(Ce, null))), this.props.isConfirmModalOpen && o.a.createElement(A.a, {
-						actionText: E.fbt._("delete", null, {
-							hk: "3Ene8H"
+						actionText: E.fbt._("Delete", null, {
+							hk: "3hQAl"
 						}),
-						cancelActionText: E.fbt._("keep", null, {
-							hk: "vzNJh"
+						cancelActionText: E.fbt._("Keep", null, {
+							hk: "3vWZkQ"
 						}),
 						headerText: E.fbt._("Delete comment", null, {
 							hk: "2ErmbC"
@@ -731,7 +731,7 @@
 								commentMode: t.media && t.media.rteMode,
 								commentsPageKey: n
 							};
-						e(Object(q.a)(s)), e(Object(P.f)(o))
+						e(Object(H.a)(s)), e(Object(P.f)(o))
 					},
 					handleReply: s => {
 						const n = Object(_.a)(t.postId, t.id, {}),
@@ -739,7 +739,7 @@
 								parentCommentId: t.id,
 								commentsPageKey: n
 							};
-						e(Object(q.a)(s)), e(Object(P.g)(o))
+						e(Object(H.a)(s)), e(Object(P.g)(o))
 					},
 					toggleDeleteCommentModal: () => e(Object(N.i)(Se(t.id)))
 				}))(Object(re.c)(Object(U.b)(Fe)))),
@@ -747,11 +747,11 @@
 				Ue = s("./src/reddit/components/RichTextJson/index.tsx"),
 				Ve = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				ze = s("./src/reddit/selectors/commentSelector.ts"),
-				He = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
-				qe = s.n(He);
-			const Ke = ge.a.wrapped(Be.a, "TopMeta", qe.a),
-				$e = ge.a.div("ProfileCommentWrapper", qe.a),
-				Ge = ge.a.div("CommentBody", qe.a),
+				qe = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
+				He = s.n(qe);
+			const Ke = ge.a.wrapped(Be.a, "TopMeta", He.a),
+				$e = ge.a.div("ProfileCommentWrapper", He.a),
+				Ge = ge.a.div("CommentBody", He.a),
 				Je = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(ze.a)(e, t),
 					flair: J.e
@@ -775,7 +775,7 @@
 				});
 				return o.a.createElement($e, {
 					className: Object(a.a)({
-						[qe.a.isRemoved]: !!t.bannedBy
+						[He.a.isRemoved]: !!t.bannedBy
 					})
 				}, o.a.createElement(Ke, {
 					collapsedBecauseCrowdControl: !1,
@@ -2673,4 +2673,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.89272b1585bd381404d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.e5600f3eadfad0395905.js.map

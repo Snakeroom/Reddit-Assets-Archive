@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f244f178adbf9892bf93.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.8029b9e34586b13ee2b9.js
+// Retrieved at 6/22/2021, 7:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -3199,11 +3199,11 @@
 			const me = Object(c.i)(e => i.a.createElement(Y.a, {
 				toggleModal: e.toggleConfirmDelete,
 				onConfirm: () => e.handleDeletePost(e.location),
-				actionText: s.fbt._("delete post", null, {
-					hk: "49hVoG"
+				actionText: s.fbt._("Delete post", null, {
+					hk: "28hc1p"
 				}),
-				headerText: s.fbt._("Delete post?", null, {
-					hk: "3g7QoX"
+				headerText: s.fbt._("Delete post", null, {
+					hk: "1TTY0e"
 				}),
 				modalText: s.fbt._("Are you sure you want to delete your post? You can't undo this.", null, {
 					hk: "2eDKWP"
@@ -4700,4 +4700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f244f178adbf9892bf93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.8029b9e34586b13ee2b9.js.map

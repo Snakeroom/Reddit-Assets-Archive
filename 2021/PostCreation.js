@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fcd942cd84783fd281ef.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5c89f49a927502a233f6.js
+// Retrieved at 6/22/2021, 7:30:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -4395,7 +4395,7 @@
 						cancelModalText: t === J.c.edit ? o.fbt._("Are you sure that you want to discard your edits?", null, {
 							hk: "1ZfaWW"
 						}) : o.fbt._("Are you sure that you want to discard your comment?", null, {
-							hk: "3d8gJY"
+							hk: "38Df9h"
 						})
 					}
 				}
@@ -30211,4 +30211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fcd942cd84783fd281ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5c89f49a927502a233f6.js.map
