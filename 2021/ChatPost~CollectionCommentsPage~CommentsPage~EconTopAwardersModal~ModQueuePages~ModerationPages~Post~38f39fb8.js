@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.541bb429a69925d19088.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7f9ad061e033b78fdfbe.js
+// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, r) {
@@ -2166,10 +2166,10 @@
 				adHeaderVariant: t,
 				greyTextColor: r
 			}) => {
-				const n = t === l.o.PromotedGrey || t === l.o.NoLockIcon;
+				const n = t === l.p.PromotedGrey || t === l.p.NoLockIcon;
 				return a.a.createElement(u, {
 					className: Object(d.a)(e, {
-						[i.a.isPromotedBlue]: t === l.o.PromotedBlue,
+						[i.a.isPromotedBlue]: t === l.p.PromotedBlue,
 						[i.a.isPromotedGrey]: n
 					})
 				}, a.a.createElement("span", {
@@ -3045,7 +3045,7 @@
 				n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = Object(s.a)(e => Object(a.c)(e, {
-				experimentName: n.P,
+				experimentName: n.R,
 				experimentEligibilitySelector: a.a
 			}), e => e)
 		},
@@ -3062,15 +3062,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.Db
+						experimentName: s.Fb
 					});
 					return !(!t || Object(s.Sd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.Db
-					}) === s.Ub.ListingEnabled
+						experimentName: s.Fb
+					}) === s.Wb.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3130,4 +3130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.541bb429a69925d19088.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.7f9ad061e033b78fdfbe.js.map

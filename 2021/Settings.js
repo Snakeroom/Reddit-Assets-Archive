@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f3454a88210abe1fbc46.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d30713b887c011eb0015.js
+// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -10984,8 +10984,8 @@
 			var Ue = n("./src/reddit/helpers/location.ts");
 			const Fe = Object(c.a)(e => Object(T.c)(e, {
 				experimentEligibilitySelector: M.K,
-				experimentName: A.C
-			}), e => e === A.J.Enabled);
+				experimentName: A.E
+			}), e => e === A.L.Enabled);
 			var De = n("./src/reddit/selectors/meta.ts"),
 				He = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				Ge = n.n(He);
@@ -14256,4 +14256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f3454a88210abe1fbc46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d30713b887c011eb0015.js.map

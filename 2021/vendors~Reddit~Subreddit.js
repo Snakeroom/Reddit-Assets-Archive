@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.41b66b4807b3be94033f.js
-// Retrieved at 4/27/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.95baf436ae2574d22e5b.js
+// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit~Subreddit"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -206,32 +206,6 @@
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, t, r) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
-		},
-		"./node_modules/lodash/_baseRandom.js": function(e, t) {
-			var r = Math.floor,
-				n = Math.random;
-			e.exports = function(e, t) {
-				return e + r(n() * (t - e + 1))
-			}
-		},
-		"./node_modules/lodash/random.js": function(e, t, r) {
-			var n = r("./node_modules/lodash/_baseRandom.js"),
-				o = r("./node_modules/lodash/_isIterateeCall.js"),
-				a = r("./node_modules/lodash/toFinite.js"),
-				i = parseFloat,
-				s = Math.min,
-				l = Math.random;
-			e.exports = function(e, t, r) {
-				if (r && "boolean" != typeof r && o(e, t, r) && (t = r = void 0), void 0 === r && ("boolean" == typeof t ? (r = t, t = void 0) : "boolean" == typeof e && (r = e, e = void 0)), void 0 === e && void 0 === t ? (e = 0, t = 1) : (e = a(e), void 0 === t ? (t = e, e = 0) : t = a(t)), e > t) {
-					var u = e;
-					e = t, t = u
-				}
-				if (r || e % 1 || t % 1) {
-					var c = l();
-					return s(e + c * (t - e + i("1e-" + ((c + "").length - 1))), t)
-				}
-				return n(e, t)
-			}
 		},
 		"./node_modules/react-motion/lib/Motion.js": function(e, t, r) {
 			"use strict";
@@ -1172,14 +1146,14 @@
 				strategy: "absolute"
 			};
 
-			function C() {
+			function W() {
 				for (var e = arguments.length, t = new Array(e), r = 0; r < e; r++) t[r] = arguments[r];
 				return !t.some((function(e) {
 					return !(e && "function" == typeof e.getBoundingClientRect)
 				}))
 			}
 
-			function W(e) {
+			function C(e) {
 				void 0 === e && (e = {});
 				var t = e,
 					r = t.defaultModifiers,
@@ -1251,7 +1225,7 @@
 									var e = l.elements,
 										t = e.reference,
 										r = e.popper;
-									if (C(t, r)) {
+									if (W(t, r)) {
 										l.rects = {
 											reference: m(t, O(r), "fixed" === l.options.strategy),
 											popper: y(r)
@@ -1290,7 +1264,7 @@
 								d(), c = !0
 							}
 						};
-					if (!C(e, t)) return f;
+					if (!W(e, t)) return f;
 
 					function d() {
 						u.forEach((function(e) {
@@ -1560,11 +1534,11 @@
 					},
 					L = e.modifiersData.offset;
 				if (p === k && L) {
-					var C = L[a];
+					var W = L[a];
 					Object.keys(V).forEach((function(e) {
 						var t = [_, j].indexOf(e) >= 0 ? 1 : -1,
 							r = [w, j].indexOf(e) >= 0 ? "y" : "x";
-						V[e] += C[r] * t
+						V[e] += W[r] * t
 					}))
 				}
 				return V
@@ -1591,7 +1565,7 @@
 					return e[t] >= 0
 				}))
 			}
-			var se = W({
+			var se = C({
 					defaultModifiers: [{
 						name: "eventListeners",
 						enabled: !0,
@@ -1793,8 +1767,8 @@
 									var N = g[E],
 										V = B(N),
 										L = q(N) === P,
-										C = [w, j].indexOf(V) >= 0,
-										W = C ? "width" : "height",
+										W = [w, j].indexOf(V) >= 0,
+										C = W ? "width" : "height",
 										U = ne(t, {
 											placement: N,
 											boundary: c,
@@ -1802,8 +1776,8 @@
 											altBoundary: d,
 											padding: u
 										}),
-										H = C ? L ? _ : S : L ? j : w;
-									O[W] > I[W] && (H = Z(H));
+										H = W ? L ? _ : S : L ? j : w;
+									O[C] > I[C] && (H = Z(H));
 									var F = Z(H),
 										z = [];
 									if (a && z.push(U[V] <= 0), s && z.push(U[H] <= 0, U[F] <= 0), z.every((function(e) {
@@ -1880,8 +1854,8 @@
 										N = "y" === T ? j : _,
 										V = "y" === T ? "height" : "width",
 										L = M[T],
-										C = M[T] + v[R],
-										W = M[T] - v[N],
+										W = M[T] + v[R],
+										C = M[T] - v[N],
 										U = p ? -k[V] / 2 : 0,
 										F = g === P ? D[V] : k[V],
 										z = g === P ? -k[V] : -D[V],
@@ -1906,7 +1880,7 @@
 										re = t.modifiersData.offset ? t.modifiersData.offset[t.placement][T] : 0,
 										ae = M[T] + J - re - te,
 										ie = M[T] + Q - re,
-										se = oe(p ? Math.min(C, ae) : C, L, p ? Math.max(W, ie) : W);
+										se = oe(p ? Math.min(W, ae) : W, L, p ? Math.max(C, ie) : C);
 									M[T] = se, A[T] = se - L
 								}
 								if (s) {
@@ -2140,4 +2114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.41b66b4807b3be94033f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~Subreddit.95baf436ae2574d22e5b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5201a814bd06b55a2cdf.js
-// Retrieved at 6/22/2021, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fcd942cd84783fd281ef.js
+// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8181,7 +8181,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), i = Object(U.a)(p.Yb) === p.cc.Enabled;
+					} = t, r = Object(B.a)(), i = Object(U.a)(p.ac) === p.ec.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
@@ -29479,10 +29479,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Ac,
+				experimentName: o.Cc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.Gc.Enabled
+			}) === o.Ic.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -29496,13 +29496,13 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Oc
+						experimentName: o.Pc
 					}) === o.Yc.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Nc
+						experimentName: o.Oc
 					}) === o.Xc.Enabled
 				}
 		},
@@ -30079,6 +30079,20 @@
 					}) && a
 				}
 		},
+		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return r
+			})), n.d(t, "a", (function() {
+				return s
+			})), n.d(t, "c", (function() {
+				return i
+			}));
+			var o = n("./src/lib/constants/index.ts");
+			const r = e => !s(e) && !!e.user.prefs.subscriptionsPinned,
+				s = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== o.Jb.MODERATION_PAGES),
+				i = e => e.user.prefs.reduceAnimationsFromAwards
+		},
 		"./src/reddit/singleton/EventSystem.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/config.ts"),
@@ -30197,4 +30211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5201a814bd06b55a2cdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fcd942cd84783fd281ef.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.3ea7356115913f463549.js
-// Retrieved at 6/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.e20973ad5dd4d841494d.js
+// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -391,7 +391,7 @@
 			n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "d", (function() {
-				return V
+				return B
 			})), n.d(t, "f", (function() {
 				return z
 			})), n.d(t, "a", (function() {
@@ -478,7 +478,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, D = Object(r.a)(O.k), B = Object(r.a)(O.b), V = e => async (t, n, {
+				}, D = Object(r.a)(O.k), V = Object(r.a)(O.b), B = e => async (t, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
@@ -493,7 +493,7 @@
 					const p = await Object(c.b)(o(), u, {
 						moderated_after: i
 					});
-					p.ok ? (t(D(p.body)), p.body.moderatedAfter ? t(V()) : t(B())) : t(Object(d.f)({
+					p.ok ? (t(D(p.body)), p.body.moderatedAfter ? t(B()) : t(V())) : t(Object(d.f)({
 						kind: h.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
@@ -925,8 +925,8 @@
 				F = n("./src/lib/makeApiRequest/index.ts"),
 				L = n("./src/lib/omitHeaders/index.ts"),
 				D = n("./src/reddit/constants/headers.ts"),
-				B = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const V = (e, t) => Object(F.a)(Object(L.a)(e, [D.a]), {
+				V = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const B = (e, t) => Object(F.a)(Object(L.a)(e, [D.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
 					method: k.hb.POST,
 					type: "json",
@@ -937,7 +937,7 @@
 					}
 				}),
 				H = (e, t, n) => Object(F.a)(Object(L.a)(e, [D.a]), {
-					endpoint: Object(B.a)(`${e.apiUrl}/api/v1/modactions/removal_${n}_message/`),
+					endpoint: Object(V.a)(`${e.apiUrl}/api/v1/modactions/removal_${n}_message/`),
 					method: k.hb.POST,
 					type: "json",
 					data: t
@@ -1069,7 +1069,7 @@
 							modNote: o,
 							reasonId: t ? t.id : null
 						},
-						b = await V(a(), h);
+						b = await B(a(), h);
 					if (b.ok) {
 						if (r(fe()), t) {
 							r(ve());
@@ -1163,7 +1163,7 @@
 							modNote: r,
 							reasonId: t ? t.id : null
 						},
-						p = await V(d(), u);
+						p = await B(d(), u);
 					if (p.ok) {
 						const s = {
 							ids: e,
@@ -1598,10 +1598,10 @@
 			var F = n("./src/config.ts"),
 				L = n("./src/reddit/components/InfoTextTooltip/index.tsx");
 			const D = (e, t, n = !1) => `${e}${t}${n?"inOverlay":""}`,
-				B = () => s.fbt._("Reddit admin, speaking officially", null, {
+				V = () => s.fbt._("Reddit admin, speaking officially", null, {
 					hk: "3vg8wE"
 				}),
-				V = () => s.fbt._("Reddit admin emeritus", null, {
+				B = () => s.fbt._("Reddit admin emeritus", null, {
 					hk: "1Md5AV"
 				}),
 				H = e => s.fbt._("Moderator of {subredditDisplayText}, speaking officially", [s.fbt._param("subredditDisplayText", e)], {
@@ -1835,7 +1835,7 @@
 							hk: "QafFM"
 						}),
 						tooltipPrefix: "CommentTopMeta--Admin--",
-						tooltipTemplate: B
+						tooltipTemplate: V
 					},
 					[Oe.Mod]: {
 						color: Ie.c,
@@ -1859,7 +1859,7 @@
 							hk: "QafFM"
 						}),
 						tooltipPrefix: "CommentTopMeta--AdEm--",
-						tooltipTemplate: V
+						tooltipTemplate: B
 					},
 					[Oe.Contractor]: {
 						color: Ie.a,
@@ -2021,14 +2021,14 @@
 				Fe = n("./src/reddit/models/Flair/index.ts"),
 				Le = n("./src/reddit/icons/fonts/Admin/index.tsx"),
 				De = n("./src/reddit/icons/fonts/helpers.tsx"),
-				Be = n("./src/reddit/icons/fonts/Op/index.m.less"),
-				Ve = n.n(Be);
+				Ve = n("./src/reddit/icons/fonts/Op/index.m.less"),
+				Be = n.n(Ve);
 			var He = p.a.wrapped(e => r.a.createElement("i", {
 					className: `${Object(De.b)("author",e.isFilled)} ${e.className}`,
 					id: e.id,
 					onMouseEnter: e.onMouseEnter,
 					onMouseLeave: e.onMouseLeave
-				}, r.a.createElement(De.a, null, e.desc)), "OpIcon", Ve.a),
+				}, r.a.createElement(De.a, null, e.desc)), "OpIcon", Be.a),
 				Ue = n("./src/reddit/selectors/subreddit.ts"),
 				We = n("./src/reddit/selectors/userFlair.ts"),
 				ze = n("./src/reddit/components/Comments/Comment/TopMeta/index.m.less"),
@@ -2112,8 +2112,8 @@
 					renderContractorBadge: F,
 					renderedInOverlay: L,
 					subredditDisplayText: D,
-					topSupporterTooltipId: B,
-					userHasNft: V
+					topSupporterTooltipId: V,
+					userHasNft: B
 				} = e, H = Object(d.a)(), U = r.a.createElement(r.a.Fragment, null, r.a.createElement(Ae.b, {
 					commentId: c.id
 				}), r.a.createElement(Ae.a, {
@@ -2161,7 +2161,7 @@
 					userId: c.authorId,
 					uniqueIdentifier: c.id
 				}), s && s, r.a.createElement(N, {
-					authorClassName: V ? Ge.a.NftAuthor : void 0,
+					authorClassName: B ? Ge.a.NftAuthor : void 0,
 					comment: c,
 					isLivestreaming: g,
 					isStrong: !!p,
@@ -2197,7 +2197,7 @@
 					renderContractorBadge: F,
 					renderedInOverlay: L,
 					subredditDisplayText: D,
-					topSupporterTooltipId: B
+					topSupporterTooltipId: V
 				}), x && r.a.createElement(ye, {
 					className: Ge.a.authorRole,
 					comment: c,
@@ -2319,17 +2319,17 @@
 						commentId: e.id,
 						renderedInOverlay: t
 					}), e.isAdmin && r.a.createElement(Ke, {
-						desc: B(),
+						desc: V(),
 						id: n.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: n.onHideTooltip,
 						isFilled: !0
-					}), e.isAdmin && it(n.adminTooltipId, B()), e.distinguishType === u.E.ALUMNI_ADMIN && r.a.createElement(Qe, {
-						"aria-label": V(),
+					}), e.isAdmin && it(n.adminTooltipId, V()), e.distinguishType === u.E.ALUMNI_ADMIN && r.a.createElement(Qe, {
+						"aria-label": B(),
 						id: n.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
 						onMouseLeave: n.onHideTooltip
-					}, "Δ"), e.distinguishType === u.E.ALUMNI_ADMIN && it(n.adminEmeritusTooltipId, V()), e.isMod && r.a.createElement(me.a, {
+					}, "Δ"), e.distinguishType === u.E.ALUMNI_ADMIN && it(n.adminEmeritusTooltipId, B()), e.isMod && r.a.createElement(me.a, {
 						name: "mod",
 						isFilled: !0,
 						className: Ge.a.ModeratorIcon,
@@ -3102,11 +3102,10 @@
 					redditStyle: C,
 					subreddit: v,
 					isOverlay: x,
-					isActionBarAnimationEnabled: g,
-					postId: O,
-					isForceSelected: I
-				} = e, E = `upvote-button-${t.id}${x?"-overlay":""}`, {
-					moderationPrompt: k
+					isVoteCountAnimation: g,
+					postId: O
+				} = e, I = `upvote-button-${t.id}${x?"-overlay":""}`, {
+					moderationPrompt: E
 				} = t;
 				return o.a.createElement(d.b, {
 					isRemoved: !!t.bannedBy,
@@ -3122,14 +3121,13 @@
 					model: t,
 					onVoteClick: n,
 					redditStyle: C,
-					upvoteTooltipId: E,
-					isActionBarAnimationEnabled: g,
+					upvoteTooltipId: I,
+					isVoteCountAnimation: g,
 					postId: O,
-					isForceSelected: I,
 					scoreClassName: h.a.score
-				}), k && o.a.createElement(a.b, {
-					rightOf: E
-				}, "survey" === k ? o.a.createElement(i.a, {
+				}), E && o.a.createElement(a.b, {
+					rightOf: I
+				}, "survey" === E ? o.a.createElement(i.a, {
 					post: t,
 					subredditName: v.name,
 					isOverlay: !!x
@@ -3319,9 +3317,9 @@
 				F = n("./src/reddit/contexts/InsideOverlay.tsx"),
 				L = n("./src/reddit/selectors/platform.ts"),
 				D = n("./src/telemetry/helpers/sendEvent.ts"),
-				B = n("./src/telemetry/helpers/sendTiming.ts"),
-				V = n("./src/reddit/components/Scroller/Simple.m.less"),
-				H = n.n(V);
+				V = n("./src/telemetry/helpers/sendTiming.ts"),
+				B = n("./src/reddit/components/Scroller/Simple.m.less"),
+				H = n.n(B);
 			const U = A.g,
 				W = 5 * p.I,
 				z = 3,
@@ -3381,7 +3379,7 @@
 						};
 						D.b.enqueue(new _.a({
 							args: [e, t],
-							cb: (e, t) => Object(B.a)(p.l.Redesign, {
+							cb: (e, t) => Object(V.a)(p.l.Redesign, {
 								data: e,
 								meta: t,
 								type: "scrollfps"
@@ -4414,4 +4412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.3ea7356115913f463549.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.e20973ad5dd4d841494d.js.map

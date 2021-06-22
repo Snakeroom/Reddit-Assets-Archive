@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.a30268ec410bcef911b9.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.ab41b58759e2bc4bdfb1.js
+// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -52,7 +52,7 @@
 				N = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				I = s("./src/reddit/icons/fonts/Coin/index.tsx");
-			const T = e => {
+			const L = e => {
 				const {
 					award: t
 				} = e;
@@ -64,13 +64,13 @@
 				}
 				return null
 			};
-			var L = s("./src/reddit/components/AwardTooltip/index.m.less"),
-				k = s.n(L);
+			var T = s("./src/reddit/components/AwardTooltip/index.m.less"),
+				k = s.n(T);
 			const y = Object(d.c)({
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
-						experimentName: w.zb
-					}) === w.Tb.Enabled,
+						experimentName: w.Bb
+					}) === w.Vb.Enabled,
 					currentUser: g.j,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -214,7 +214,7 @@
 						hk: "2QpjYF"
 					})), a.a.createElement("p", {
 						className: k.a.awardDescription
-					}, a.a.createElement(T, {
+					}, a.a.createElement(L, {
 						award: e
 					})), e.awardType === h.f.Community && i && a.a.createElement("div", {
 						className: k.a.subreddit
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.a30268ec410bcef911b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.ab41b58759e2bc4bdfb1.js.map

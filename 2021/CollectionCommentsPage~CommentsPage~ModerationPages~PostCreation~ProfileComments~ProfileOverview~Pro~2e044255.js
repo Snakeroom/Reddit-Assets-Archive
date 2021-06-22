@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.a242e4780aba47863c8c.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.62866857d262bbad8b88.js
+// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -863,7 +863,7 @@
 						caretOnTop: !1
 					},
 					K = Object(i.e)(I.a),
-					q = V.isSponsored && (K === p.o.NoLockIcon || K === p.o.PromotedGrey),
+					q = V.isSponsored && (K === p.p.NoLockIcon || K === p.p.PromotedGrey),
 					Y = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === h.a.SUBREDDIT,
 					z = A("Approve", V.id, G),
 					Z = A("Archived", V.id, G),
@@ -1046,7 +1046,7 @@
 					}
 				}, S.displayText)), S && S.isQuarantined && r.a.createElement(l.a, null), !n && !O.isSponsored && S && j && !g && r.a.createElement(m.a, {
 					className: y.a.SubscribeButton,
-					getEventFactory: e => Object(x.g)(O.id, e ? "unsubscribe" : "subscribe"),
+					getEventFactory: e => Object(x.h)(O.id, e ? "unsubscribe" : "subscribe"),
 					identifier: {
 						name: S.name,
 						type: Object(E.h)(S) ? p.a.PROFILE : p.a.SUBREDDIT
@@ -2836,4 +2836,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.a242e4780aba47863c8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.62866857d262bbad8b88.js.map
