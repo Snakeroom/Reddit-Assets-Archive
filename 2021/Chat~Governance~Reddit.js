@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9d046150f26711f184d1.js
-// Retrieved at 6/22/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8514f375f95b2e31782d.js
+// Retrieved at 6/22/2021, 5:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2473,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("137480"),
+				buildNumber: r("137508"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1624387457"),
+				})("1624395701"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4962,14 +4962,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cfbad25b04a2d2e3bbb3df3be492ddb7f8986273b-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ccb84765c4ad220fd142ba6fa3b1d9d1a786a0598-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "fbad25b04a2d2e3bbb3df3be492ddb7f8986273b-production",
+						release: "cb84765c4ad220fd142ba6fa3b1d9d1a786a0598-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5463,7 +5463,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "fbad25b04a2d2e3bbb3df3be492ddb7f8986273b-production",
+						releaseClient: "cb84765c4ad220fd142ba6fa3b1d9d1a786a0598-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -22407,52 +22407,48 @@
 		"./src/reddit/helpers/chooseVariant/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return v
+				return b
 			})), i.d(t, "b", (function() {
-				return T
+				return y
 			})), i.d(t, "c", (function() {
-				return S
+				return w
 			})), i.d(t, "d", (function() {
-				return O
+				return v
 			}));
 			var n = i("./node_modules/reselect/es/index.js");
 			const r = {},
 				s = {};
 			var o = i("./src/reddit/helpers/featureThrottling/store/index.ts"),
-				d = i("./src/config.ts"),
-				a = i("./src/reddit/selectors/experiments/index.ts"),
-				c = i("./src/reddit/selectors/experiments/removedPosts.ts"),
-				l = i("./src/reddit/selectors/platform.ts"),
-				u = i("./src/reddit/selectors/posts.ts"),
-				_ = i("./src/reddit/selectors/subreddit.ts"),
-				p = i("./src/reddit/selectors/telemetry.ts"),
-				m = i("./src/telemetry/index.ts"),
-				h = i("./src/telemetry/models/Event.ts");
-			const f = e => Object(m.a)(e),
-				b = (e, t, i, n, r) => {
-					Object(m.a)({
-						action: h.d.Expose,
+				d = i("./src/reddit/selectors/experiments/index.ts"),
+				a = i("./src/reddit/selectors/platform.ts"),
+				c = i("./src/reddit/selectors/telemetry.ts"),
+				l = i("./src/telemetry/index.ts"),
+				u = i("./src/telemetry/models/Event.ts");
+			const _ = e => Object(l.a)(e),
+				p = (e, t, i, n, r) => {
+					Object(l.a)({
+						action: u.d.Expose,
 						actionInfo: void 0,
 						app: e,
 						experiment: n,
-						noun: h.e.UserId,
+						noun: u.e.UserId,
 						referrer: void 0,
 						request: i,
 						session: void 0,
-						source: h.f.Experiment,
+						source: u.f.Experiment,
 						user: t,
 						...r
 					})
 				};
-			var g = i("./src/server/helpers/canonicalUrl.tsx");
-			const y = Object(n.a)(e => Object(a.e)(e), e => Object(g.a)(e), (e, t) => !!e && e === t),
-				w = (e, t) => {
+			var m = i("./src/server/helpers/canonicalUrl.tsx");
+			const h = Object(n.a)(e => Object(d.e)(e), e => Object(m.a)(e), (e, t) => !!e && e === t),
+				f = (e, t) => {
 					if (!t.experimentEligibilitySelector(e)) return !1;
 					if (t.isThrottled && o.a.isFeatureThrottled(t.experimentName)) return !1;
 					if (t.throttledVariants) {
 						const i = ((e, t) => {
-								const i = Object(a.c)(e, t),
-									n = Object(a.b)(e, t);
+								const i = Object(d.c)(e, t),
+									n = Object(d.b)(e, t);
 								return void 0 !== n ? n : i && i.name || void 0
 							})(e, t),
 							n = i && t.throttledVariants[i];
@@ -22460,12 +22456,12 @@
 					}
 					return !0
 				},
-				v = () => !0,
-				E = [],
-				T = Object(n.a)(a.c, a.b, w, (e, t) => t.expEventOverride, (e, t) => t.experimentName, a.e, e => Object(g.a)(e), (e, t) => ((e, t) => {
-					const i = Object(a.b)(e, t),
+				b = () => !0,
+				g = [],
+				y = Object(n.a)(d.c, d.b, f, (e, t) => t.expEventOverride, (e, t) => t.experimentName, d.e, e => Object(m.a)(e), (e, t) => ((e, t) => {
+					const i = Object(d.b)(e, t),
 						n = void 0 !== i,
-						r = Object(a.c)(e, t);
+						r = Object(d.c)(e, t);
 					let s;
 					n ? s = {
 						id: -1,
@@ -22477,52 +22473,43 @@
 						...r,
 						isOverride: !1
 					});
-					const o = Object(l.m)(e),
-						m = o ? p.post(e, o) : void 0,
-						f = p.request(e),
-						b = Object(a.e)(e);
-					if (Object(c.a)(s) && o) {
-						const t = Object(u.F)(e, {
-							postId: o
-						});
-						if (t && t.belongsTo) {
-							const i = Object(_.L)(e, {
-								identifier: t.belongsTo
-							});
-							i && (f.canonical_url = `${d.a.redditUrl}${i.url}`)
-						}
-					} else b && (f.canonical_url = b);
+					const o = Object(a.m)(e),
+						l = o ? c.post(e, o) : void 0,
+						_ = {
+							...c.request(e),
+							canonical_url: Object(d.e)(e) || void 0
+						};
 					return {
-						source: h.f.Experiment,
-						action: h.d.Expose,
-						noun: h.e.CanonicalUrl,
+						source: u.f.Experiment,
+						action: u.d.Expose,
+						noun: u.e.CanonicalUrl,
 						actionInfo: void 0,
-						app: p.app(e),
+						app: c.app(e),
 						experiment: s,
-						post: m,
-						request: f,
+						post: l,
+						request: _,
 						referrer: void 0,
 						session: void 0,
-						subreddit: p.subreddit(e),
-						user: p.user(e)
+						subreddit: c.subreddit(e),
+						user: c.user(e)
 					}
-				})(e, t), y, (e, t, i, n, r, o, d, a, c) => {
+				})(e, t), h, (e, t, i, n, r, o, d, a, c) => {
 					if (!c || !i) return;
 					const l = o || d || "",
 						u = (() => s)();
-					let _ = u[l];
-					if (_ || (_ = {}, u[l] = _), !e) return t && _[r] !== t && !1 !== n && (f(a), _[r] = t), t;
-					const p = e.name,
-						m = void 0 !== t ? t : e.variant;
-					if (m) {
-						_[p] === m || !1 === n || (f(a), _[r] = m)
+					let p = u[l];
+					if (p || (p = {}, u[l] = p), !e) return t && p[r] !== t && !1 !== n && (_(a), p[r] = t), t;
+					const m = e.name,
+						h = void 0 !== t ? t : e.variant;
+					if (h) {
+						p[m] === h || !1 === n || (_(a), p[r] = h)
 					}
-					return m
+					return h
 				}),
-				S = Object(n.a)(a.c, a.b, e => p.app(e), e => p.user(e), e => p.request(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), w, (e, t) => t.experimentName, (e, t, i, n, s, o, d = {}, a, c) => {
+				w = Object(n.a)(d.c, d.b, e => c.app(e), e => c.user(e), e => c.request(e), (e, t) => t.expEventOverride, (e, t) => t.customPayloadMaker && t.customPayloadMaker(e), f, (e, t) => t.experimentName, (e, t, i, n, s, o, d = {}, a, c) => {
 					if (!a) return;
 					const l = (() => r)();
-					if (!e) return t && !1 !== o && l[c] !== t && !E.includes(c) && (b(i, n, s, {
+					if (!e) return t && !1 !== o && l[c] !== t && !g.includes(c) && (p(i, n, s, {
 						id: -1,
 						isOverride: !0,
 						name: c,
@@ -22533,31 +22520,31 @@
 						{
 							id: _
 						} = e,
-						p = void 0 !== t,
-						m = p ? t : e.variant;
-					if (m) {
+						m = void 0 !== t,
+						h = m ? t : e.variant;
+					if (h) {
 						const t = -1 === _,
-							r = l[u] === m;
-						t || r || !1 === o || E.includes(c) || (b(i, n, s, {
+							r = l[u] === h;
+						t || r || !1 === o || g.includes(c) || (p(i, n, s, {
 							...e,
-							isOverride: p,
-							variant: m
-						}, d), l[u] = m)
+							isOverride: m,
+							variant: h
+						}, d), l[u] = h)
 					}
-					return p ? t : m
+					return m ? t : h
 				}),
-				O = (e, t) => {
-					const i = p.app(e),
-						n = p.user(e),
-						r = p.request(e),
-						s = Object(a.c)(e, t),
-						o = Object(a.b)(e, t),
-						d = void 0 !== o;
+				v = (e, t) => {
+					const i = c.app(e),
+						n = c.user(e),
+						r = c.request(e),
+						s = Object(d.c)(e, t),
+						o = Object(d.b)(e, t),
+						a = void 0 !== o;
 					if (s) {
-						const e = d ? o : s.variant;
-						e && b(i, n, r, {
+						const e = a ? o : s.variant;
+						e && p(i, n, r, {
 							...s,
-							isOverride: d,
+							isOverride: a,
 							variant: e
 						}, {})
 					}
@@ -37359,68 +37346,6 @@
 					experimentName: n.gd
 				})
 		},
-		"./src/reddit/selectors/experiments/removedPosts.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "b", (function() {
-				return w
-			})), i.d(t, "a", (function() {
-				return v
-			}));
-			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/reddit/constants/experiments.ts"),
-				s = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = i("./src/reddit/helpers/getPostFromRouteMatch/index.ts"),
-				d = i("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
-				a = i("./src/reddit/selectors/platform.ts"),
-				c = (i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./node_modules/fbt/lib/FbtPublic.js")),
-				l = i("./src/reddit/helpers/getRichTextContent/index.ts"),
-				u = i("./src/reddit/models/Media/index.ts"),
-				_ = i("./src/reddit/models/Post/index.ts"),
-				p = i("./src/reddit/selectors/user.ts");
-			const m = new Set([_.g.AntiEvilOps, _.g.AutomodFiltered, _.g.CommunityOps, _.g.ContentTakedown, _.g.CopyrightTakedown, _.g.Moderator, _.g.Reddit]),
-				h = new Set([_.g.Author, _.g.AuthorDeleted]),
-				f = Object(n.a)(o.a, e => {
-					var t;
-					if (!e) return !1;
-					if (e.removedByCategory) {
-						const t = e.removedByCategory;
-						return m.has(t)
-					}
-					if (e.created > Date.UTC(2019, 0)) return !1;
-					const i = c.fbt._("[removed]", null, {
-						hk: "2CBRa4"
-					}).toString();
-					let n = Object(l.b)(e);
-					return n || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== u.o.TEXT || (n = e.media.markdownContent), n === i
-				}),
-				b = Object(n.a)(o.a, e => {
-					var t;
-					if (!e) return !1;
-					if (e.removedByCategory) {
-						const t = e.removedByCategory;
-						return h.has(t)
-					}
-					if (e.created > Date.UTC(2019, 0)) return !1;
-					const i = c.fbt._("[deleted]", null, {
-						hk: "12mOne"
-					}).toString();
-					let n = Object(l.b)(e);
-					return n || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== u.o.TEXT || (n = e.media.markdownContent), n === i
-				}),
-				g = Object(n.a)(p.j, o.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId),
-				y = Object(n.a)(a.f, o.a, f, b, d.a, g, d.b, (e, t, i, n, r, s, o) => {
-					if (!e || !t || r) return !1;
-					if (n) return !0;
-					const d = s || o,
-						a = t.score >= 2 || t.numComments >= 2;
-					return !(!i || d || a)
-				}),
-				w = e => r.md.Redirect === Object(s.b)(e, {
-					experimentEligibilitySelector: y,
-					experimentName: r.dd
-				}),
-				v = e => e && e.name === r.dd
-		},
 		"./src/reddit/selectors/experiments/subredditWelcomeMessage.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
@@ -47739,4 +47664,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9d046150f26711f184d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8514f375f95b2e31782d.js.map
