@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.bee3fb98384a7f1882aa.js
-// Retrieved at 6/16/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.000cec40e2e9b21e66d5.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -69,9 +69,9 @@
 				I = n("./src/reddit/hooks/useTracking.ts"),
 				T = n("./src/reddit/selectors/subreddit.ts"),
 				j = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
-				v = n.n(j);
+				f = n.n(j);
 			const {
-				fbt: f
+				fbt: v
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), g = ({
 				postId: e,
 				subredditId: t
@@ -81,12 +81,12 @@
 						subredditId: t
 					}));
 				return i.a.createElement(x.a, {
-					className: v.a.container,
+					className: f.a.container,
 					to: `${null==o?void 0:o.url}predictions/`,
 					onClick: () => n(Object(E.f)(e))
 				}, i.a.createElement("div", {
-					className: v.a.playTournament
-				}, f._("Keep Playing", null, {
+					className: f.a.playTournament
+				}, v._("Keep Playing", null, {
 					hk: "2HQ7HH"
 				})))
 			};
@@ -129,17 +129,17 @@
 						selectedOptionId: P
 					} = e,
 					[x, T] = i.a.useState(!1),
-					[j, v] = i.a.useState(null),
-					[f, g] = i.a.useState(!1),
+					[j, f] = i.a.useState(null),
+					[v, g] = i.a.useState(!1),
 					B = b < Date.now();
 				return {
 					isLoading: x,
-					isShowingVoteAnimation: f,
+					isShowingVoteAnimation: v,
 					selectedOption: O.find(({
 						id: e
 					}) => e === j),
 					selectOption: e => {
-						B || P || v(e.id)
+						B || P || f(e.id)
 					},
 					predict: async ({
 						coinPackage: e,
@@ -150,7 +150,7 @@
 							p = i ? i.amount : e.coins;
 						if (B) return l(L._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
-						})), void v(null);
+						})), void f(null);
 						if (!m || !j) throw new Error("Invalid arguments, optionId and pollId must be strings");
 						T(!0), c(Object(E.o)({
 							pollId: m,
@@ -164,7 +164,7 @@
 								pollId: m,
 								postId: t,
 								subredditId: n
-							})), s && o(Object(w.bb)(m)), T(!1), v(null), d ? g(!0) : a({
+							})), s && o(Object(w.fb)(m)), T(!1), f(null), d ? g(!0) : a({
 								duration: 5e3,
 								kind: _.b.SuccessCommunity,
 								text: L._("Thanks! See if you're right in {timeToResult}", [L._param("timeToResult", Object(h.a)(new Date(b), !0))], {
@@ -172,13 +172,13 @@
 								})
 							})
 						} catch (O) {
-							T(!1), v(null), l(L._("Error: Failed to make prediction, please try again later", null, {
+							T(!1), f(null), l(L._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
 							}))
 						}
 					},
 					cancelAction: i.a.useCallback(() => {
-						v(null)
+						f(null)
 					}, []),
 					hideAnimation: i.a.useCallback(() => {
 						g(!1)
@@ -204,8 +204,8 @@
 						isShowingVoteAnimation: I,
 						selectedOption: T,
 						selectOption: j,
-						predict: v,
-						cancelAction: f
+						predict: f,
+						cancelAction: v
 					} = D(e, r, n),
 					h = null == a ? void 0 : a.userSelection,
 					{
@@ -250,9 +250,9 @@
 				})), !!T && i.a.createElement(b.b, {
 					className: N.a.modal,
 					isCreatingVote: E,
-					onOverlayClick: f,
-					onCancel: f,
-					onPredict: v,
+					onOverlayClick: v,
+					onCancel: v,
+					onPredict: f,
 					option: T,
 					pollId: e.id,
 					subredditId: n,
@@ -310,4 +310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.bee3fb98384a7f1882aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.000cec40e2e9b21e66d5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.5e71bb486dd8c58ee59f.js
-// Retrieved at 6/16/2021, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.add59cbdc52a0bb5ac92.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1049,7 +1049,7 @@
 				},
 				isNightmodeOn: f.W
 			}), e => ({
-				openPost: t => e(Object(m.I)(t))
+				openPost: t => e(Object(m.M)(t))
 			}));
 			var y = Object(l.a)(C(e => {
 					const {
@@ -2445,10 +2445,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const n = s === a.a.upvoted ? Object(r.bb)(t) : Object(r.u)(t);
+						const n = s === a.a.upvoted ? Object(r.fb)(t) : Object(r.w)(t);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(r.X)(t)),
+					onIgnoreReports: () => e(Object(r.bb)(t)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -2676,4 +2676,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.5e71bb486dd8c58ee59f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.add59cbdc52a0bb5ac92.js.map

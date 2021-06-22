@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6eaf8f679939d1e8cece.js
-// Retrieved at 6/21/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.116e632d4849f885c959.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2841,7 +2841,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				w = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
-					experimentName: b.ad
+					experimentName: b.cd
 				}),
 				j = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -3438,7 +3438,7 @@
 							a = r.fullname;
 						Object(_.a)(Object(E.d)(O, e, a)(f)), t(D({
 							subredditName: y
-						})), await t(Object(s.b)(`${r.path}`)), (null == e ? void 0 : e.isInSrCreationFlowM2Experiment) === c.kb.Upsell && (t(Object(n.h)(o.a.POST_FLOW_UPSELL_MODAL_ID)), Object(_.a)(Object(E.g)()(f))), Object(m.b)(m.a.SubredditCreation)
+						})), await t(Object(s.b)(`${r.path}`)), (null == e ? void 0 : e.isInSrCreationFlowM2Experiment) === c.mb.Upsell && (t(Object(n.h)(o.a.POST_FLOW_UPSELL_MODAL_ID)), Object(_.a)(Object(E.g)()(f))), Object(m.b)(m.a.SubredditCreation)
 					} else I.error && Object(_.a)(Object(E.h)(I.error.type, y)(f)), t(T({
 						subredditName: y,
 						error: I.error
@@ -3846,17 +3846,17 @@
 						...Object(u.defaults)(e)
 					}))(r())), Object(b.c)(r(), {
 						postId: e
-					}) && t(Object(c.bb)(e))
+					}) && t(Object(c.fb)(e))
 				}, h = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.Jd
+						experimentName: d.Ld
 					});
 					let a = "";
-					return (null == r ? void 0 : r.variant) === d.Kd.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.Md.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.Kd.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.Md.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -10986,7 +10986,7 @@
 								[r]: e[r].concat(s)
 							}
 						}
-						case hd.n: {
+						case hd.p: {
 							const {
 								newStickiedPostList: r,
 								listingKey: s
@@ -12817,7 +12817,7 @@
 					case X.SUBREDDIT_LOADED:
 					case W.b:
 					case W.f:
-					case hd.i:
+					case hd.k:
 					case Re.r:
 					case je.f:
 					case Y.e:
@@ -13265,7 +13265,7 @@
 			const jl = [];
 			var Al = (e = jl, t) => {
 				switch (t.type) {
-					case hd.m:
+					case hd.o:
 						return e.find(e => t.payload.id === e.id) ? [...e.filter(e => t.payload.id !== e.id)] : [...e, t.payload];
 					case hd.a:
 						return [...e.filter(e => e.expiresAt > Date.now())];
@@ -13556,7 +13556,7 @@
 							...xt()(t.payload.posts, bp([r, lp, pp, dp, op, sp(e), ap(e), up(e)]))
 						}
 					}
-					case hd.i:
+					case hd.k:
 						return Wl(e, t.payload);
 					case Yl.a:
 						return Wl(e, t.payload.posts);
@@ -13630,7 +13630,7 @@
 							...e
 						}))
 					}
-					case hd.j: {
+					case hd.l: {
 						const r = t.payload;
 						return B()({
 							...e
@@ -13660,6 +13660,40 @@
 								[r]: {
 									...s,
 									numComments: a
+								}
+							}
+						}
+						return e
+					}
+					case hd.i: {
+						const {
+							postId: r,
+							delta: s
+						} = t.payload, a = e[r];
+						if (a) {
+							const t = a.numComments + s;
+							return {
+								...e,
+								[r]: {
+									...a,
+									numComments: t
+								}
+							}
+						}
+						return e
+					}
+					case hd.j: {
+						const {
+							postId: r,
+							delta: s
+						} = t.payload, a = e[r];
+						if (a) {
+							const t = a.score + s;
+							return {
+								...e,
+								[r]: {
+									...a,
+									score: t
 								}
 							}
 						}
@@ -13855,7 +13889,7 @@
 						return {
 							...xt()(t.payload.posts, bp([pp, dp])), ...e
 						};
-					case hd.l: {
+					case hd.n: {
 						const {
 							postId: r,
 							richtextContent: s
@@ -13994,7 +14028,7 @@
 			const Ip = [];
 			var gp = (e = Ip, t) => {
 					switch (t.type) {
-						case hd.k: {
+						case hd.m: {
 							const {
 								postIds: e
 							} = t.payload;
@@ -15747,7 +15781,7 @@
 						return _y(e, t.payload.id);
 					case cy.E:
 						return _y(e, t.payload);
-					case hd.j: {
+					case hd.l: {
 						const r = Object.keys(t.payload).filter(e => t.payload[e].hidden);
 						return Oy(e, r)
 					}
@@ -18540,7 +18574,7 @@
 								...e
 							}, a)
 						}
-						case hd.n: {
+						case hd.p: {
 							const {
 								newStickiedPostList: r,
 								subredditId: s
@@ -21870,7 +21904,7 @@
 				l = e => e === a.L.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(a.Qd)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(a.Sd)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -21884,14 +21918,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Mc
-					}) === s.Wc.Enabled
+						experimentName: s.Oc
+					}) === s.Yc.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Lc
-					}) === s.Vc.Enabled
+						experimentName: s.Nc
+					}) === s.Xc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
@@ -21919,9 +21953,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Jd
+						experimentName: s.Ld
 					});
-					return r === s.Kd.Variant1 || r === s.Kd.Variant2
+					return r === s.Md.Variant1 || r === s.Md.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -22113,4 +22147,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6eaf8f679939d1e8cece.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.116e632d4849f885c959.js.map

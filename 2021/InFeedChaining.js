@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.3d0ca3aba66de9daf64a.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.b1c11aa8ef2418d27011.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4151,12 +4151,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Ad.SmIcon:
+						case b.Cd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Ad.SmIconHc:
+						case b.Cd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4354,10 +4354,10 @@
 					selectedTemplateId: n
 				})),
 				handleVote: s => {
-					const n = s === c.a.upvoted ? Object(i.bb)(t) : Object(i.u)(t);
+					const n = s === c.a.upvoted ? Object(i.fb)(t) : Object(i.w)(t);
 					e(n)
 				},
-				onIgnoreReports: () => e(Object(i.X)(t)),
+				onIgnoreReports: () => e(Object(i.bb)(t)),
 				onOpenReportsDropdown: t => e(Object(a.h)({
 					tooltipId: t
 				}))
@@ -4900,12 +4900,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.sd
+						experimentName: n.ud
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.Ad.SmIcon || t === n.Ad.SmIconHc
+					return t === n.Cd.SmIcon || t === n.Cd.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4928,4 +4928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.3d0ca3aba66de9daf64a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.b1c11aa8ef2418d27011.js.map

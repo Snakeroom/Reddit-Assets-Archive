@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.390c58397e6b47c6bb5c.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1ee65515d2bdf9db4d1c.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -352,7 +352,7 @@
 				he = n("./src/lib/lessComponent.tsx");
 			const fe = Object(c.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(be.a)(t.permalink)),
-					clearLinks: () => e(Object(de.r)())
+					clearLinks: () => e(Object(de.t)())
 				})),
 				_e = he.a.button("ClearButton", ge.a);
 			class ke extends d.a.Component {
@@ -663,10 +663,10 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Le.pc,
+					experimentName: Le.rc,
 					experimentEligibilitySelector: We.a
 				}), Ue.a),
-				Qe = Object(u.a)(qe, e => e === Le.rc.Enabled);
+				Qe = Object(u.a)(qe, e => e === Le.tc.Enabled);
 			var Me = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -698,8 +698,8 @@
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Je.K,
-								experimentName: Le.db
-							}) === Le.Pb
+								experimentName: Le.eb
+							}) === Le.Rb
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.390c58397e6b47c6bb5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1ee65515d2bdf9db4d1c.js.map

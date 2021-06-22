@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.afd7ebaa3320173b2528.js
-// Retrieved at 6/16/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.8369ce9743a9d071dff2.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -770,7 +770,7 @@
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(k({
 								awards: r.awards
-							})), e(Object(u.z)())
+							})), e(Object(u.B)())
 						}
 					} catch (m) {
 						Object(a.b)() || console.error(m), e(Object(d.f)({
@@ -2210,7 +2210,7 @@
 				D = r("./src/reddit/hooks/useTracking.ts"),
 				Q = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
 				W = r.n(Q);
-			const z = {
+			const J = {
 					avatar: () => a.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
@@ -2243,7 +2243,7 @@
 						hk: "2R1mSy"
 					})
 				},
-				J = {
+				z = {
 					avatar: () => a.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
 					}),
@@ -2329,10 +2329,10 @@
 						} = e;
 						return i.a.createElement(q.a, {
 							className: W.a.benefit,
-							description: J[t](u),
+							description: z[t](u),
 							iconUrl: `${n.a.assetPath}/img/gold/premium-marketing/benefits-icons/${t}.png`,
 							key: t,
-							title: z[t](u),
+							title: J[t](u),
 							isNew: a,
 							onClick: () => o && r((e => t => ({
 								source: "premium_marketing",
@@ -2817,4 +2817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.afd7ebaa3320173b2528.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.8369ce9743a9d071dff2.js.map

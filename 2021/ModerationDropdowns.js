@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.25a20f70b4d7f3d97d83.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.0735305bf6d6328ef5a1.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -27,7 +27,7 @@
 			})), s.d(t, "p", (function() {
 				return V
 			})), s.d(t, "d", (function() {
-				return Q
+				return Z
 			})), s.d(t, "a", (function() {
 				return q
 			})), s.d(t, "b", (function() {
@@ -198,7 +198,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, Q = ({
+				}, Z = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: s,
@@ -215,7 +215,7 @@
 						commentsPageKey: t,
 						isCollapsed: c
 					})), 0 === s && o(i, !0), Object(p.d)()
-				}, Z = Object(a.a)(R.r), q = e => t => t(Z({
+				}, Q = Object(a.a)(R.r), q = e => t => t(Q({
 					draftKey: e
 				})), X = Object(a.a)(R.a), $ = Object(a.a)(R.E), J = Object(a.a)(R.b), Y = Object(a.a)(R.u)
 		},
@@ -1252,27 +1252,27 @@
 				F = Object(r.b)(T, (e, {
 					post: t
 				}) => ({
-					onApprovePost: () => e(Object(d.q)(t.id)),
-					onDistinguishPost: s => e(Object(d.t)(t.id, s)),
+					onApprovePost: () => e(Object(d.s)(t.id)),
+					onDistinguishPost: s => e(Object(d.v)(t.id, s)),
 					onFlairChanged: (s, o) => e(Object(l.h)({
 						post: t,
 						previewFlair: s,
 						selectedTemplateId: o
 					})),
 					onFlairPost: t => e(Object(c.i)(t)),
-					onLockPost: () => e(Object(d.C)(t.id)),
-					onNsfwPost: () => e(Object(d.G)(t.id)),
-					onOcPost: () => e(Object(d.H)(t.id)),
+					onLockPost: () => e(Object(d.E)(t.id)),
+					onNsfwPost: () => e(Object(d.I)(t.id)),
+					onOcPost: () => e(Object(d.L)(t.id)),
 					onCcPost: () => {
-						e(Object(c.i)(b.a.CROWD_CONTROL)), e(Object(d.s)(t.id))
+						e(Object(c.i)(b.a.CROWD_CONTROL)), e(Object(d.u)(t.id))
 					},
-					onRemovePost: () => e(Object(d.Q)(t.id, !1)),
+					onRemovePost: () => e(Object(d.U)(t.id, !1)),
 					onModToMemberShareOpened: () => {
-						e(Object(c.i)(b.a.MOD_TO_MEMBER_SHARE)), e(Object(d.D)(t.id))
+						e(Object(c.i)(b.a.MOD_TO_MEMBER_SHARE)), e(Object(d.F)(t.id))
 					},
-					onSpamPost: () => e(Object(d.Q)(t.id, !0)),
-					onSpoilerPost: () => e(Object(d.V)(t.id)),
-					onStickyPost: () => e(Object(d.Z)(t.id))
+					onSpamPost: () => e(Object(d.U)(t.id, !0)),
+					onSpoilerPost: () => e(Object(d.Z)(t.id)),
+					onStickyPost: () => e(Object(d.db)(t.id))
 				})),
 				D = Object(m.a)(x.a),
 				L = S(F(Object(u.c)(e => {
@@ -1422,7 +1422,7 @@
 					tooltipId: C(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
-					Object(x.a)(t.reportedThingId) ? e(Object(d.h)(t.reportedThingId, t.reason, s)) : e(Object(l.Y)(t.reportedThingId, t.reason, s))
+					Object(x.a)(t.reportedThingId) ? e(Object(d.h)(t.reportedThingId, t.reason, s)) : e(Object(l.cb)(t.reportedThingId, t.reason, s))
 				}
 			})), y = Object(p.a)(b.a);
 			class I extends n.a.Component {
@@ -2229,14 +2229,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Mc
-					}) === o.Wc.Enabled
+						experimentName: o.Oc
+					}) === o.Yc.Enabled
 				},
 				a = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Lc
-					}) === o.Vc.Enabled
+						experimentName: o.Nc
+					}) === o.Xc.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -2271,4 +2271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.25a20f70b4d7f3d97d83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.0735305bf6d6328ef5a1.js.map

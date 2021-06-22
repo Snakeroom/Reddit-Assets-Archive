@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.e924f3b54b37ec91115b.js
-// Retrieved at 6/21/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.cb5c9ac8e9b248f12826.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -217,12 +217,12 @@
 					})
 				},
 				j = Object(h.t)(),
-				I = Object(a.c)({
+				w = Object(a.c)({
 					dropdownIsOpen: Object(S.b)(L),
 					postLayout: h.O,
 					redditStyle: h.A
 				}),
-				w = Object(o.b)(I, e => ({
+				I = Object(o.b)(w, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.v)(t, s)),
 					openDropdown: () => e(Object(m.h)({
 						tooltipId: L
@@ -302,7 +302,7 @@
 					}), n.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = j(w(Object(p.c)(Object(l.a)(k))))
+			t.a = j(I(Object(p.c)(Object(l.a)(k))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -346,8 +346,8 @@
 				O = s("./src/reddit/helpers/getClickInfo.ts"),
 				N = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				j = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				I = s("./src/reddit/models/Media/index.ts"),
-				w = s("./src/reddit/helpers/brandSafety/index.ts"),
+				w = s("./src/reddit/models/Media/index.ts"),
+				I = s("./src/reddit/helpers/brandSafety/index.ts"),
 				k = s("./src/reddit/helpers/trackers/ads.ts"),
 				R = s("./src/lib/LRUCache/index.ts"),
 				F = s("./src/telemetry/index.ts"),
@@ -419,7 +419,7 @@
 						r.forEach(e => i.push(e.id));
 						const n = i.map(e => t[e]).filter(Boolean),
 							o = n.map(e => s[e.belongsTo.id]).filter(e => void 0 !== e);
-						this.props.adBrandSafetyStatusReceived(Object(w.a)(n, o))
+						this.props.adBrandSafetyStatusReceived(Object(I.a)(n, o))
 					}, h.d, {
 						leading: !0
 					})
@@ -560,12 +560,12 @@
 						const {
 							inSubredditOrProfile: O,
 							postsById: j
-						} = this.props, w = j[e], k = w.crosspostRootId && j[w.crosspostRootId] ? j[w.crosspostRootId] : w;
-						w.crosspostRootId && !j[w.crosspostRootId] && v.c.withScope(e => {
-							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${w.id} is crosspost of ${w.crosspostRootId}, but ` + `${w.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
+						} = this.props, I = j[e], k = I.crosspostRootId && j[I.crosspostRootId] ? j[I.crosspostRootId] : I;
+						I.crosspostRootId && !j[I.crosspostRootId] && v.c.withScope(e => {
+							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${I.id} is crosspost of ${I.crosspostRootId}, but ` + `${I.crosspostRootId} details are missing in the state`), v.c.captureMessage("Crosspost parent details are missing")
 						});
 						const R = this.props.postComponentForLayout({
-								isCrosspost: !!w.crosspostRootId,
+								isCrosspost: !!I.crosspostRootId,
 								isFirstPost: _,
 								layout: r,
 								post: k
@@ -574,11 +574,11 @@
 							B = K(e, r, s, m, p, g, this.props, t),
 							H = Y(e, r, this.props, t, b),
 							A = Q(e, this.props),
-							W = k.media && k.media.type === I.o.EMBED ? k.media.provider : null;
+							W = k.media && k.media.type === w.o.EMBED ? k.media.provider : null;
 						P = {
-							estHeight: Object(N.c)(w, r),
+							estHeight: Object(N.c)(I, r),
 							id: e,
-							isFocusable: !(!k.media || !(r === C.g.Large || r === C.g.Classic && Object(I.G)(k.media))) && (I.d.has(k.media.type) && (!W || !I.s.has(W)) && !k.isSpoiler && !k.isNSFW),
+							isFocusable: !(!k.media || !(r === C.g.Large || r === C.g.Classic && Object(w.G)(k.media))) && (w.d.has(k.media.type) && (!W || !w.s.has(W)) && !k.isSpoiler && !k.isNSFW),
 							trackOnEnteredViewport: B,
 							trackOnExitedViewport: H,
 							render: ({
@@ -1206,7 +1206,7 @@
 			}
 			var N = Object(b.b)(P)(Object(d.c)(O)),
 				j = s("./src/reddit/helpers/styles/mixins/loading.ts");
-			var I = e => {
+			var w = e => {
 					const {
 						className: t
 					} = e, s = Object(j.b)({
@@ -1228,13 +1228,13 @@
 						className: L.a.SubscribeButton
 					}))
 				},
-				w = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				k = s.n(w);
+				I = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
+				k = s.n(I);
 			const {
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, B = Array.from({
 				length: F
-			}).map((e, t) => i.a.createElement(I, {
+			}).map((e, t) => i.a.createElement(w, {
 				className: k.a.Subreddit,
 				key: t
 			})), H = {
@@ -1404,16 +1404,16 @@
 					openPost: s => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(d.I(s))
+						})), e(d.M(s))
 					},
 					fireAdPixelsOfType: (t, s) => {
-						e(d.x(t, s))
+						e(d.z(t, s))
 					},
 					trackOnPostEnteredViewport: (s, r, i) => {
-						e(d.L(s, i, t.hostPostData))
+						e(d.P(s, i, t.hostPostData))
 					},
 					trackOnPostExitedViewport: (t, s, r, i, n) => {
-						e(d.M(t, r, i, n))
+						e(d.Q(t, r, i, n))
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.h)())
 				}),
@@ -1725,8 +1725,8 @@
 				O = s("./src/reddit/helpers/trackers/screenview.ts"),
 				N = s("./src/reddit/layout/page/Listing/index.tsx"),
 				j = s("./src/reddit/pages/ErrorPages/index.tsx"),
-				I = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				w = s("./src/reddit/controls/Button/index.tsx"),
+				w = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				I = s("./src/reddit/controls/Button/index.tsx"),
 				k = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
 				R = s.n(k);
 			class F extends i.a.Component {
@@ -1867,10 +1867,10 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < K ? null : i.a.createElement(I.a, {
+					return t.length < K ? null : i.a.createElement(w.a, {
 						onClick: this.onClick,
 						to: "#"
-					}, i.a.createElement(w.o, {
+					}, i.a.createElement(I.o, {
 						className: G.a.SeeAllRelatedTopics
 					}, z._("See all {=[Topic name plural]}", [z._param("=[Topic name plural]", i.a.createElement("span", {
 						className: G.a.TopicName
@@ -2054,10 +2054,10 @@
 				Pe = s.n(Le);
 			const {
 				fbt: Oe
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(P.t)(), je = (e, t) => t.match.params.sort || a.V, Ie = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(P.t)(), je = (e, t) => t.match.params.sort || a.V, we = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
-			}, we = Object(d.b)(() => Object(n.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
+			}, Ie = Object(d.b)(() => Object(n.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.c)(e, {
 				topicSlug: t.match.params.topicSlug
@@ -2074,7 +2074,7 @@
 				siblingRelatedTopics: i,
 				sort: o,
 				status: a || 200,
-				tabs: Ie(s),
+				tabs: we(s),
 				timeSort: void 0,
 				topic: s,
 				topicName: e,
@@ -2187,7 +2187,7 @@
 						}))),
 						P = x !== V.RelatedTopics,
 						O = x !== V.Communities && a.includes(V.Communities),
-						I = i.a.createElement("div", {
+						w = i.a.createElement("div", {
 							className: Pe.a.WidgetsContainer
 						}, O && i.a.createElement(_.a, {
 							onSeeMoreCommunities: this.openCommunitiesTab,
@@ -2209,7 +2209,7 @@
 							key: "right",
 							className: Pe.a.SidebarRight,
 							listingName: f
-						}, I)],
+						}, w)],
 						navBar: i.a.createElement(U, {
 							activeTab: x,
 							layout: h,
@@ -2221,7 +2221,7 @@
 					}))
 				}
 			}
-			t.default = Ne(we(Re))
+			t.default = Ne(Ie(Re))
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -2332,4 +2332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e924f3b54b37ec91115b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.cb5c9ac8e9b248f12826.js.map

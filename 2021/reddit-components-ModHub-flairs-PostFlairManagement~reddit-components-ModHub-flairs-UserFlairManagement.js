@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.50a11c451cd6a35f7a7c.js
-// Retrieved at 6/21/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.d4e9086fd2b38e3d7306.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, a) {
@@ -329,8 +329,8 @@
 				w = T("assign_own"),
 				O = T("enable"),
 				I = T("mods_only"),
-				P = T("edit_text"),
-				D = (e, t) => t ? _(e) : S(e),
+				D = T("edit_text"),
+				P = (e, t) => t ? _(e) : S(e),
 				j = e => T("post_flair_template")(f.d.LinkFlair, e),
 				F = (e, t) => a => ({
 					...v(a),
@@ -583,18 +583,18 @@
 				we = a("./src/reddit/actions/tooltip.ts"),
 				Oe = a("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
 				Ie = a("./src/reddit/selectors/tooltip.ts");
-			const Pe = ["right", "top"],
-				De = Object(_e.c)({
+			const De = ["right", "top"],
+				Pe = Object(_e.c)({
 					isDropdownOpen: (e, {
 						tooltipId: t
 					}) => Object(Ie.b)(t)(e)
 				});
-			var je = Object(ke.b)(De, (e, t) => ({
+			var je = Object(ke.b)(Pe, (e, t) => ({
 					onToggleDropdown: () => e(Object(we.h)(t))
 				}))(e => o.a.createElement("div", {
 					id: e.tooltipId
 				}, o.a.createElement(Oe.a, {
-					dropdownPosition: Pe,
+					dropdownPosition: De,
 					isDropdownOpen: e.isDropdownOpen,
 					onChange: e.onChange,
 					onToggleDropdown: e.onToggleDropdown,
@@ -807,7 +807,7 @@
 				ct = Object(ke.b)(dt, (e, t) => ({
 					deleteExamplePost: () => e(Object(Re.b)(u.e)),
 					makeExamplePost: a => e(Object(Re.c)(t.subredditId, a)),
-					updateExamplePost: t => e(Object(Be.P)({
+					updateExamplePost: t => e(Object(Be.T)({
 						[u.e]: {
 							flair: [t]
 						}
@@ -1289,10 +1289,10 @@
 					hk: "1QVXca"
 				}))),
 				It = a("./src/reddit/components/ModHub/flairs/FlairManagement/index.m.less"),
-				Pt = a.n(It);
+				Dt = a.n(It);
 
-			function Dt() {
-				return (Dt = Object.assign || function(e) {
+			function Pt() {
+				return (Pt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
@@ -1411,9 +1411,9 @@
 						flairTemplateType: a
 					} = this.props, s = !e.id;
 					if (!t) return;
-					e.modOnly !== t.modOnly && this.props.sendEvent(I(a, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(P(a, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(j(!!e.styleTemplate));
+					e.modOnly !== t.modOnly && this.props.sendEvent(I(a, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(D(a, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(j(!!e.styleTemplate));
 					const n = e.allowableContent || f.a.All;
-					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(M(a, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(R(a, Object(b.l)(e))), this.props.sendEvent(D(a, s))
+					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(M(a, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(R(a, Object(b.l)(e))), this.props.sendEvent(P(a, s))
 				}
 				render() {
 					const {
@@ -1436,9 +1436,9 @@
 						subredditId: this.props.subredditId
 					}, v = t.length >= u.h;
 					return o.a.createElement("div", {
-						className: Pt.a.container
+						className: Dt.a.container
 					}, o.a.createElement(c.c, {
-						className: Pt.a.topBar
+						className: Dt.a.topBar
 					}, a === Mt.Reordering ? o.a.createElement(o.a.Fragment, null, o.a.createElement(h.l, {
 						onClick: this.onCancelReorderingClick
 					}, B.fbt._("Cancel", null, {
@@ -1449,7 +1449,7 @@
 					}, B.fbt._("Save", null, {
 						hk: "3gwTS0"
 					}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h.l, {
-						className: Pt.a.settingsButton,
+						className: Dt.a.settingsButton,
 						onClick: this.onSettingsButtonClick
 					}, m ? B.fbt._("User flair settings", null, {
 						hk: "nqCOM"
@@ -1469,7 +1469,7 @@
 					}, B.fbt._("Add flair", null, {
 						hk: "4oqbLK"
 					})))), o.a.createElement(c.a, {
-						className: Pt.a.contentContainer
+						className: Dt.a.contentContainer
 					}, o.a.createElement(c.b, null, m ? B.fbt._("User flair management", null, {
 						hk: "2a4oeD"
 					}) : B.fbt._("Post flair management", null, {
@@ -1477,20 +1477,20 @@
 					}), o.a.createElement(r.a, {
 						linkUrl: `${s.a.redditModHelpUrl}/${this.props.helpCenterLink}`
 					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(Q, {
-						className: Pt.a.disabledBanner,
+						className: Dt.a.disabledBanner,
 						flairTemplateType: this.props.flairTemplateType
 					}), o.a.createElement("div", {
-						className: Pt.a.table
+						className: Dt.a.table
 					}, o.a.createElement("div", {
-						className: Pt.a.tableHead
+						className: Dt.a.tableHead
 					}, o.a.createElement("div", {
-						className: Pt.a.flairPreviewColHeader
+						className: Dt.a.flairPreviewColHeader
 					}, m ? B.fbt._("User flair preview", null, {
 						hk: "1RayEx"
 					}) : B.fbt._("Post flair preview", null, {
 						hk: "ykrSg"
 					})), o.a.createElement("div", {
-						className: Pt.a.cssClassColHeader
+						className: Dt.a.cssClassColHeader
 					}, B.fbt._("CSS class", null, {
 						hk: "1iLHCz"
 					}), o.a.createElement(d.a, {
@@ -1498,7 +1498,7 @@
 							hk: "HW6Jx"
 						})
 					})), o.a.createElement("div", {
-						className: Pt.a.settingsColHeader
+						className: Dt.a.settingsColHeader
 					}, B.fbt._("Settings", null, {
 						hk: "3Ibtnu"
 					}), o.a.createElement(d.a, {
@@ -1508,7 +1508,7 @@
 							hk: "4ER9Qm"
 						})
 					})), o.a.createElement("div", {
-						className: Pt.a.flairIdColHeader
+						className: Dt.a.flairIdColHeader
 					}, B.fbt._("Flair ID", null, {
 						hk: "21YCV0"
 					}), o.a.createElement(d.a, {
@@ -1516,7 +1516,7 @@
 							hk: "3BJT9a"
 						})
 					}))), o.a.createElement("div", {
-						className: Pt.a.tableBody
+						className: Dt.a.tableBody
 					}, a === Mt.Default && !t.length && o.a.createElement(Ot, {
 						flairTemplateType: this.props.flairTemplateType
 					}), a === Mt.Reordering ? o.a.createElement(g.a, {
@@ -1524,20 +1524,20 @@
 						onDrop: this.onTemplatesOrderChange,
 						render: (e, t, a, s, n) => o.a.createElement(p.a, {
 							canDrop: n,
-							className: Pt.a.dragItem,
-							iconClassName: Pt.a.dragIcon,
+							className: Dt.a.dragItem,
+							iconClassName: Dt.a.dragIcon,
 							isDragging: a,
 							isOver: s
-						}, o.a.createElement(St, Dt({}, E, {
+						}, o.a.createElement(St, Pt({}, E, {
 							flairTemplate: this.props.templates[e],
 							isReordering: !0
 						})))
-					}) : t.map(e => o.a.createElement(St, Dt({}, E, {
+					}) : t.map(e => o.a.createElement(St, Pt({}, E, {
 						key: e,
 						flairTemplate: e === C ? n : this.props.templates[e],
 						isEditing: e === C,
 						isSavePending: this.state.isTemplateSavePending && e === C
-					}))), a === Mt.AddingTemplate && o.a.createElement(St, Dt({}, E, {
+					}))), a === Mt.AddingTemplate && o.a.createElement(St, Pt({}, E, {
 						flairTemplate: n,
 						isSavePending: this.state.isTemplateSavePending,
 						isEditing: !0
@@ -2001,4 +2001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.50a11c451cd6a35f7a7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.d4e9086fd2b38e3d7306.js.map

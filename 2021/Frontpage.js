@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.874a8f4a2f226a7cca7b.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6b72226e50a5f5852056.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -334,7 +334,7 @@
 								postIds: e,
 								posts: n
 							} = t, r = Object(V.d)(m, {
-								experimentName: l.Gc
+								experimentName: l.Ic
 							});
 							s(Object(i.a)(Object(d.c)(e, n, null == r ? void 0 : r.variant)))
 						}
@@ -464,7 +464,7 @@
 										postIds: e,
 										posts: s
 									} = _, n = Object(V.d)(r, {
-										experimentName: l.Gc
+										experimentName: l.Ic
 									});
 									t(Object(i.a)(Object(d.c)(e, s, null == n ? void 0 : n.variant)))
 								}
@@ -1075,7 +1075,7 @@
 				ge = s("./src/lib/lessComponent.tsx");
 			const fe = Object(d.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink)),
-					clearLinks: () => e(Object(ce.r)())
+					clearLinks: () => e(Object(ce.t)())
 				})),
 				ye = ge.a.button("ClearButton", he.a);
 			class xe extends c.a.Component {
@@ -1386,10 +1386,10 @@
 			}
 			var We = s("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.pc,
+					experimentName: Fe.rc,
 					experimentEligibilitySelector: Ue.a
 				}), We.a),
-				Ge = Object(u.a)(qe, e => e === Fe.rc.Enabled);
+				Ge = Object(u.a)(qe, e => e === Fe.tc.Enabled);
 			var Ve = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ke = s("./src/reddit/selectors/user.ts");
 			var He = s("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1421,8 +1421,8 @@
 						return (!t || !s) && (!Object(He.b)(e) && function(e) {
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: Ke.K,
-								experimentName: Fe.db
-							}) === Fe.Pb
+								experimentName: Fe.eb
+							}) === Fe.Rb
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -4355,7 +4355,7 @@
 				c = e => Object(o.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: n.O
-				}) === n.fb.Treatment
+				}) === n.gb.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, s) {
 			"use strict";
@@ -4403,4 +4403,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.874a8f4a2f226a7cca7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6b72226e50a5f5852056.js.map

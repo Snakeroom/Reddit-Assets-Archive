@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.fecc1697b6122ad99c01.js
-// Retrieved at 6/16/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ca14004c48d2a03486f6.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.vc
+					experimentName: u.xc
 				});
-				return Object(u.Qd)(t) ? void 0 : t
+				return Object(u.Sd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.wc
+					experimentName: u.yc
 				});
-				return Object(u.Qd)(t) ? void 0 : t
-			}, (e, t) => e === u.xc.Enabled && t === u.xc.Enabled);
+				return Object(u.Sd)(t) ? void 0 : t
+			}, (e, t) => e === u.zc.Enabled && t === u.zc.Enabled);
 			var h = r("./src/config.ts");
 			var b = r("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -294,6 +294,17 @@
 					r = null;
 				return (...n) => (null !== t && n.length === t.length && s()(n, (e, r) => e === t[r]) || (t = n, r = e(...n)), r)
 			}
+		},
+		"./src/realtime/GQLSubscription/async.tsx": function(e, t, r) {
+			"use strict";
+			var n = r("./src/higherOrderComponents/makeAsync.tsx"),
+				s = r("./src/lib/loadWithRetries/index.ts");
+			const i = Object(n.a)({
+				ErrorComponent: () => null,
+				LoadingComponent: () => null,
+				getComponent: () => Object(s.a)(() => Promise.all([r.e("vendors~RealtimeGQLSubscriptionAsync"), r.e("RealtimeGQLSubscriptionAsync")]).then(r.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
+			});
+			t.a = i
 		},
 		"./src/reddit/actions/eventPosts/constants.ts": function(e, t, r) {
 			"use strict";
@@ -620,9 +631,9 @@
 				Object(n.useEffect)(() => (void 0 !== w && w !== r && T.current(r - w), () => {
 					clearTimeout(A.current), clearTimeout(R.current), clearTimeout(I.current)
 				}), [r]);
-				const D = Object(n.useCallback)(() => g(!0), [g]),
-					N = 0 === _.length,
-					L = E || N;
+				const N = Object(n.useCallback)(() => g(!0), [g]),
+					D = 0 === _.length,
+					L = E || D;
 				return s.a.createElement("div", {
 					className: l.a.countAnimation,
 					ref: y
@@ -633,7 +644,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: D,
+						onTransitionEnd: N,
 						style: b && _.length > 0 && !E ? {
 							transform: `translateY(-${p&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(p?o.b.disjointAnimationDuration:o.b.animationIncrementDuration)/1e3}s`
@@ -1294,8 +1305,8 @@
 				R = r("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				j = r("./src/reddit/selectors/user.ts"),
 				w = r("./src/reddit/components/ClassicPost/Placeholder.tsx"),
-				D = r("./src/reddit/components/Flatlist/index.tsx"),
-				N = r("./src/reddit/components/Flatlist/constants.ts"),
+				N = r("./src/reddit/components/Flatlist/index.tsx"),
+				D = r("./src/reddit/components/Flatlist/constants.ts"),
 				L = r("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				P = r("./src/reddit/components/HlsVideo/index.tsx"),
 				k = r("./src/reddit/components/OverflowMenu/index.tsx"),
@@ -1586,7 +1597,7 @@
 						className: z.a.flatListContainer
 					}, s.a.createElement(ie, {
 						onClick: this.onHeaderClicked
-					}), s.a.createElement(D.a, {
+					}), s.a.createElement(N.a, {
 						className: z.a.flatlistSeparator
 					}), s.a.createElement("div", null, s.a.createElement(ae, {
 						onClick: this.onHideUnitClicked
@@ -1779,7 +1790,7 @@
 					displayText: q._("Show me less of this", null, {
 						hk: "4t8AKC"
 					}),
-					flatlistItem: N.a.Hide,
+					flatlistItem: D.a.Hide,
 					isLoggedIn: !!t,
 					isUserOp: !1,
 					onClick: e,
@@ -1984,74 +1995,99 @@
 				d = r("./node_modules/react/index.js"),
 				l = r.n(d),
 				u = r("./node_modules/react-redux/es/index.js"),
-				m = r("./src/reddit/components/CountAnimation/index.tsx"),
-				p = r("./src/reddit/components/CountAnimation/config.ts"),
-				h = r("./src/reddit/components/CountAnimation/helpers.ts"),
-				b = r("./src/reddit/constants/colors.ts"),
-				f = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				E = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				g = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				_ = r("./src/reddit/models/Vote/index.ts"),
-				v = r("./src/reddit/selectors/meta.ts"),
-				O = r("./src/reddit/controls/Score/index.m.less"),
-				S = r.n(O);
-			const C = e => e.voteState === _.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === _.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(E.a)(Object(f.a)(e)),
+				m = r("./src/realtime/GQLSubscription/async.tsx"),
+				p = r("./src/reddit/actions/post.ts"),
+				h = r("./src/reddit/components/CountAnimation/index.tsx"),
+				b = r("./src/reddit/components/CountAnimation/config.ts"),
+				f = r("./src/reddit/components/CountAnimation/helpers.ts"),
+				E = r("./src/reddit/constants/colors.ts"),
+				g = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				_ = r("./src/reddit/helpers/styles/smartTextColor.ts"),
+				v = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				O = r("./src/reddit/models/Vote/index.ts"),
+				S = r("./src/reddit/selectors/meta.ts"),
+				C = r("./src/reddit/controls/Score/index.m.less"),
+				y = r.n(C);
+			const T = e => e.voteState === O.a.downvoted ? Object(v.a)(e).voteText.downvote : e.voteState === O.a.upvoted ? Object(v.a)(e).voteText.upvote : Object(_.a)(Object(g.a)(e)),
 				{
 					upvoteCount: {
 						inititalDelayRange: {
-							lower: y,
-							upper: T
-						},
-						subsequentRecurringDelayRange: {
 							lower: I,
 							upper: x
 						},
-						incrementRangeRelativeToTotalDiscount: {
+						subsequentRecurringDelayRange: {
 							lower: A,
 							upper: R
+						},
+						incrementRangeRelativeToTotalDiscount: {
+							lower: j,
+							upper: w
 						}
 					}
-				} = p.b,
-				j = () => c()(y, T),
-				w = () => c()(I, x),
-				D = Object(u.b)(e => ({
-					locale: Object(v.i)(e)
+				} = b.b,
+				N = () => c()(I, x),
+				D = () => c()(A, R),
+				L = Object(u.b)(e => ({
+					locale: Object(S.i)(e)
 				})),
-				N = Object(i.a)(e => {
+				P = Object(i.a)(e => {
 					const t = {
-							color: e.light ? b.b.lightboxHeaderText : C(e)
+							color: e.light ? E.b.lightboxHeaderText : T(e)
 						},
 						{
 							totalDiscount: r,
 							score: i,
 							shouldDisjointAnimation: o,
-							shouldShowPageTransPersistence: u,
-							postId: p = "",
-							locale: f
+							shouldShowPageTransPersistence: b,
+							postId: g = "",
+							locale: _
 						} = e,
-						E = null == f ? void 0 : f.startsWith("en"),
-						g = e.isScoreHidden ? E ? n.fbt._("Vote", null, {
+						v = Object(u.d)(),
+						O = null == _ ? void 0 : _.startsWith("en"),
+						S = e.isScoreHidden ? O ? n.fbt._("Vote", null, {
 							hk: "2TMson"
 						}) : l.a.createElement("span", {
-							className: S.a.dot
+							className: y.a.dot
 						}, "•") : Object(a.b)(i),
-						_ = Object(d.useCallback)(() => c()(Math.ceil((r || 0) * A), Math.ceil((r || 0) * R)), [r]),
-						v = Object(d.useRef)(Object(h.k)(p, h.a.Vote)),
-						O = Object(d.useRef)(u && void 0 !== r && Object(h.e)(v.current));
+						C = Object(d.useCallback)(() => c()(Math.ceil((r || 0) * j), Math.ceil((r || 0) * w)), [r]),
+						I = Object(d.useRef)(Object(f.k)(g, f.a.Vote)),
+						x = Object(d.useRef)(b && void 0 !== r && Object(f.e)(I.current)),
+						A = Object(d.useCallback)(e => {
+							const {
+								voteCountChange: t
+							} = e.subscribe.data;
+							t > 0 && v(Object(p.K)({
+								postId: g,
+								delta: t
+							}))
+						}, [v, g]),
+						R = Object(d.useRef)({
+							input: {
+								channel: {
+									teamOwner: "CONTENT_AND_COMMUNITIES",
+									category: "POST_COUNT_UPDATE",
+									postID: g
+								}
+							}
+						});
 					return l.a.createElement("div", {
-						className: Object(s.a)(S.a.score, e.className),
+						className: Object(s.a)(y.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, e.isScoreHidden || void 0 === r ? g : l.a.createElement(m.a, {
-						initialDisplayCount: O.current || i - r,
+					}, e.isScoreHidden || void 0 === r ? S : l.a.createElement(l.a.Fragment, null, l.a.createElement(h.a, {
+						initialDisplayCount: x.current || i - r,
 						countToUpperBound: i,
-						initialDelay: j,
-						subsequentRecurringDelay: w,
-						incrementDelta: _,
+						initialDelay: N,
+						subsequentRecurringDelay: D,
+						incrementDelta: C,
 						shouldDisjointAnimation: o,
-						id: v.current
-					}))
+						id: I.current
+					}), l.a.createElement(m.a, {
+						variables: R.current,
+						onData: A,
+						queryKey: "postVoteCount"
+					})))
 				});
-			t.a = D(N)
+			t.a = L(P)
 		},
 		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, r) {
 			"use strict";
@@ -2294,9 +2330,9 @@
 			})), r.d(t, "typeMessageInputEvent", (function() {
 				return w
 			})), r.d(t, "clickLearnMoreLinkEvent", (function() {
-				return D
-			})), r.d(t, "clickQuestionMarkEvent", (function() {
 				return N
+			})), r.d(t, "clickQuestionMarkEvent", (function() {
+				return D
 			})), r.d(t, "clickConfirmAwardEvent", (function() {
 				return L
 			})), r.d(t, "clickGetPremiumEvent", (function() {
@@ -2429,13 +2465,13 @@
 					action: "type",
 					noun: "message_input"
 				}),
-				D = e => t => ({
+				N = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "learn_more"
 				}),
-				N = e => t => ({
+				D = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3724,4 +3760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.fecc1697b6122ad99c01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ca14004c48d2a03486f6.js.map

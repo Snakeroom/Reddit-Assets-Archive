@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.7ac80e9deb53f9ebe411.js
-// Retrieved at 6/17/2021, 3:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.e23bd395f70012dd9e8c.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, r) {
@@ -623,7 +623,7 @@
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(j({
 								awards: r.awards
-							})), e(Object(u.z)())
+							})), e(Object(u.B)())
 						}
 					} catch (m) {
 						Object(o.b)() || console.error(m), e(Object(d.f)({
@@ -732,11 +732,11 @@
 				F = r("./src/reddit/selectors/crypto/points.ts"),
 				H = r("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
 				U = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				G = r("./src/reddit/selectors/user.ts"),
-				B = r("./src/reddit/components/LottieAnimation/index.tsx"),
-				z = r("./src/reddit/controls/Button/index.tsx"),
-				$ = r("./src/reddit/components/CompactCoinPurchaseList/ListItem/index.m.less"),
-				K = r.n($);
+				B = r("./src/reddit/selectors/user.ts"),
+				G = r("./src/reddit/components/LottieAnimation/index.tsx"),
+				$ = r("./src/reddit/controls/Button/index.tsx"),
+				z = r("./src/reddit/components/CompactCoinPurchaseList/ListItem/index.m.less"),
+				K = r.n(z);
 			var q = e => {
 					const {
 						className: t,
@@ -749,7 +749,7 @@
 						primaryText: l,
 						subtext: u,
 						subtextCrossout: m
-					} = e, p = r ? z.f : z.i;
+					} = e, p = r ? $.f : $.i;
 					return o.a.createElement("div", {
 						className: Object(s.a)(t, K.a.CompactCoinPurchaseListItem)
 					}, o.a.createElement("div", {
@@ -785,7 +785,7 @@
 						return null === (r = Object(F.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: e => Object(H.a)(e) && Object(U.g)(e),
-					isPremiumSubscriber: G.t,
+					isPremiumSubscriber: B.t,
 					premiumPackages: U.i,
 					purchaseCatalogError: U.j,
 					purchaseCatalogPending: U.k
@@ -921,7 +921,7 @@
 						buttonText: _.fbt._("Claim", null, {
 							hk: "OUYUl"
 						}),
-						icon: o.a.createElement(B.a, {
+						icon: o.a.createElement(G.a, {
 							assetUrl: "https://www.redditstatic.com/gold/awards/animations/free_award/flying.json",
 							className: W.a.presentAnimation,
 							loop: !0,
@@ -1574,4 +1574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.7ac80e9deb53f9ebe411.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.e23bd395f70012dd9e8c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.4aa1289b0b9a6ab7aa54.js
-// Retrieved at 6/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.ea6cce371f8a59c7956c.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -61,9 +61,9 @@
 			})), n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "j", (function() {
-				return b
-			})), n.d(t, "k", (function() {
 				return m
+			})), n.d(t, "k", (function() {
+				return b
 			})), n.d(t, "l", (function() {
 				return p
 			})), n.d(t, "m", (function() {
@@ -100,8 +100,8 @@
 				a = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
 				u = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
 				l = "GOVERNANCE__PROPOSAL_OPTION_VOTE_FAILURE",
-				b = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
-				m = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
+				m = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
+				b = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
 				p = "GOVERNANCE__PUBLIC_WALLET_INFO_FAILURE",
 				f = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				_ = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
@@ -161,8 +161,8 @@
 				a = n("./src/config.ts"),
 				u = n("./src/lib/makeGqlRequest/index.ts"),
 				l = n("./src/reddit/models/Poll/index.ts"),
-				b = n("./src/redditGQL/operations/PollVote.json"),
-				m = n("./src/reddit/endpoints/governance/requester.ts");
+				m = n("./src/redditGQL/operations/PollVote.json"),
+				b = n("./src/reddit/endpoints/governance/requester.ts");
 			var p = n("./src/reddit/endpoints/governance/wallet.ts"),
 				f = n("./src/reddit/models/Toast/index.ts"),
 				_ = n("./src/reddit/models/Vote/index.ts"),
@@ -192,7 +192,7 @@
 					if (n(T({
 							pollId: e
 						})), (i = d.type === l.a.GA ? await ((e, t, n) => Object(u.a)(e, {
-								...b,
+								...m,
 								variables: {
 									input: {
 										postId: t,
@@ -201,7 +201,7 @@
 								}
 							}))(s(), e, t) : await
 							function(e, t, n, r) {
-								return Object(m.a)(e, {
+								return Object(b.a)(e, {
 									method: "put",
 									endpoint: `${a.a.metaUrl}/polls/${t}/${n}/votes/me/${r}`
 								})
@@ -221,7 +221,7 @@
 							const {
 								postId: e
 							} = d, t = o.posts.models[e];
-							t && t.voteState === _.a.notVoted && n(Object(c.bb)(e))
+							t && t.voteState === _.a.notVoted && n(Object(c.fb)(e))
 						}
 					} else n(h({
 						pollId: e,
@@ -233,9 +233,9 @@
 					var u;
 					n(P());
 					const l = o().transfers.communityPoints.contentId || void 0,
-						b = await
+						m = await
 					function(e, t) {
-						return Object(m.a)(e, {
+						return Object(b.a)(e, {
 							data: {
 								amount: t.amount,
 								contentId: t.contentId,
@@ -249,8 +249,8 @@
 						...e,
 						contentId: l
 					});
-					b.ok ? (n(A({
-						...b.body,
+					m.ok ? (n(A({
+						...m.body,
 						subredditId: e.subredditId
 					})), n(Object(d.f)({
 						kind: f.b.SuccessCommunity,
@@ -258,8 +258,8 @@
 							hk: "3klrhq"
 						})
 					})), t && n(Object(i.f)())) : (n(g({
-						error: b.error
-					})), Object(v.a)(n, b.error))
+						error: m.error
+					})), Object(v.a)(n, m.error))
 				}, U = e => async (t, n, {
 					apiContext: r
 				}) => {
@@ -286,12 +286,12 @@
 				a = n("./src/reddit/selectors/crypto/points.ts"),
 				u = n("./src/reddit/components/Governance/Token/index.m.less"),
 				l = n.n(u);
-			const b = Object(i.c)({
+			const m = Object(i.c)({
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(a.b)(e, t)
 			});
-			t.a = Object(s.b)(b)((function(e) {
+			t.a = Object(s.b)(m)((function(e) {
 				var t;
 				const n = null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.images;
 				if (!n) return null;
@@ -335,8 +335,8 @@
 				a = n("./src/reddit/actions/governance/index.ts"),
 				u = n("./src/reddit/actions/tooltip.ts"),
 				l = n("./src/reddit/components/Governance/Token/index.tsx"),
-				b = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				m = n("./src/reddit/featureFlags/index.ts"),
+				m = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				b = n("./src/reddit/featureFlags/index.ts"),
 				p = n("./src/reddit/featureFlags/component.tsx"),
 				f = n("./src/reddit/helpers/governance/tokens.ts"),
 				_ = n("./src/reddit/selectors/crypto/points.ts"),
@@ -349,7 +349,7 @@
 					subredditId: t
 				}) => Object(_.b)(e, t),
 				publicWallet: O.c,
-				tippingEnabled: m.d.spTipping,
+				tippingEnabled: b.d.spTipping,
 				userOptedOut: (e, {
 					subredditId: t
 				}) => Object(E.y)(e, t)
@@ -375,7 +375,7 @@
 					username: a
 				} = e, u = null == i ? void 0 : i.amount;
 				if (!o || !u) return null;
-				const m = `public-wallets-${a}-${c}-${t}`,
+				const b = `public-wallets-${a}-${c}-${t}`,
 					p = null == i ? void 0 : i.publicAddress;
 				if (!p) return null;
 				const _ = Object(f.c)(u, o.displayConversion),
@@ -384,11 +384,11 @@
 					className: Object(d.a)(e.className, N.a.container, {
 						[N.a.tippable]: O
 					}),
-					id: m,
+					id: b,
 					onClick: t => {
 						O && (t.stopPropagation(), e.onTip(e.username, e.contentId, p))
 					},
-					onMouseEnter: () => e.onShowTooltip(m),
+					onMouseEnter: () => e.onShowTooltip(b),
 					onMouseLeave: () => e.onHideTooltip(),
 					title: O ? "" : r.fbt._("{username} has {amount} {token name}", [r.fbt._param("username", e.username), r.fbt._param("amount", _), r.fbt._param("token name", o.name)], {
 						hk: "6WL3V"
@@ -402,9 +402,9 @@
 					subredditId: e.subredditId
 				}), s.a.createElement("span", {
 					className: N.a.amount
-				}, _), n, O && s.a.createElement(b.c, {
+				}, _), n, O && s.a.createElement(m.c, {
 					caretOnTop: !0,
-					tooltipId: m,
+					tooltipId: b,
 					text: r.fbt._("Tip {username} with {tokenname}", [r.fbt._param("username", e.username), r.fbt._param("tokenname", o.name)], {
 						hk: "2Raj4F"
 					})
@@ -437,10 +437,10 @@
 				a = n("./src/reddit/selectors/tooltip.ts"),
 				u = n("./src/reddit/components/InfoTextTooltip/index.m.less"),
 				l = n.n(u),
-				b = n("./src/lib/lessComponent.tsx");
+				m = n("./src/lib/lessComponent.tsx");
 
-			function m() {
-				return (m = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -448,8 +448,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const p = b.a.div("Text", l.a),
-				f = b.a.div("BottomText", l.a),
+			const p = m.a.div("Text", l.a),
+				f = m.a.div("BottomText", l.a),
 				_ = e => o.a.createElement(p, {
 					className: e.className,
 					style: e.style
@@ -476,10 +476,10 @@
 				const {
 					caretOnTop: t
 				} = e;
-				return t ? o.a.createElement(v, m({}, e, {
+				return t ? o.a.createElement(v, b({}, e, {
 					targetPosition: ["center", "bottom"],
 					tooltipPosition: ["center", "top"]
-				})) : o.a.createElement(N, m({}, e, {
+				})) : o.a.createElement(N, b({}, e, {
 					targetPosition: ["center", "top"],
 					tooltipPosition: ["center", "bottom"]
 				}))
@@ -549,9 +549,9 @@
 			})), n.d(t, "m", (function() {
 				return l
 			})), n.d(t, "g", (function() {
-				return b
-			})), n.d(t, "b", (function() {
 				return m
+			})), n.d(t, "b", (function() {
+				return b
 			})), n.d(t, "d", (function() {
 				return p
 			})), n.d(t, "c", (function() {
@@ -626,7 +626,7 @@
 					data: n
 				})
 			}
-			async function b(e, t, n) {
+			async function m(e, t, n) {
 				return await Object(s.a)(e, {
 					method: "delete",
 					endpoint: `${o.a.metaUrl}/crypto/${t}/registrations/${n}`
@@ -634,7 +634,7 @@
 			}! function(e) {
 				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
-			const m = (e, t, n) => ({
+			const b = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
@@ -840,14 +840,14 @@
 					d = null == c ? void 0 : c.unlocked,
 					a = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
 					l = !!(null === (o = e.walletProvider) || void 0 === o ? void 0 : o.inTransition),
-					b = (null == d ? void 0 : d.decimals) || 0,
-					m = "1" + "0".repeat(b);
+					m = (null == d ? void 0 : d.decimals) || 0,
+					b = "1" + "0".repeat(m);
 				return {
 					blockchainProvider: a,
 					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: c,
-					decimals: b,
-					displayConversion: m,
+					decimals: m,
+					displayConversion: b,
 					images: e.images || u,
 					inTransition: l,
 					name: e.name,
@@ -856,7 +856,7 @@
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var b = (e = a, t) => {
+			var m = (e = a, t) => {
 				switch (t.type) {
 					case d.a: {
 						const {
@@ -872,8 +872,8 @@
 						return e
 				}
 			};
-			const m = {};
-			var p = (e = m, t) => {
+			const b = {};
+			var p = (e = b, t) => {
 				switch (t.type) {
 					case d.n: {
 						const {
@@ -899,7 +899,7 @@
 			};
 			t.a = Object(r.c)({
 				claims: c,
-				points: b,
+				points: m,
 				publicWallets: p
 			})
 		},
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.4aa1289b0b9a6ab7aa54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.ea6cce371f8a59c7956c.js.map

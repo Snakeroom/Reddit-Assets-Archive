@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.97fd713f57fe048de83e.js
-// Retrieved at 6/16/2021, 8:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.541bb429a69925d19088.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, r) {
@@ -364,8 +364,8 @@
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				Q = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				z = r.n(Q);
+				z = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
+				Q = r.n(z);
 			const W = 3500,
 				V = 500;
 			class J extends a.a.PureComponent {
@@ -448,31 +448,31 @@
 						shouldAnimate: c
 					} = this.state, l = Object(U.a)(e.id, o.id);
 					return a.a.createElement("span", {
-						className: z.a.awardPillContainer,
+						className: Q.a.awardPillContainer,
 						id: i,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, a.a.createElement("button", {
-						className: Object(k.a)(t, z.a.awardPill, {
-							[z.a.userGiven]: d
+						className: Object(k.a)(t, Q.a.awardPill, {
+							[Q.a.userGiven]: d
 						}),
 						onClick: this.handleOnClick
 					}, a.a.createElement("span", {
-						className: z.a.imageContainer
+						className: Q.a.imageContainer
 					}, a.a.createElement("img", {
 						alt: e.name,
-						className: Object(k.a)(z.a.awardIcon, {
-							[z.a.hidden]: c
+						className: Object(k.a)(Q.a.awardIcon, {
+							[Q.a.hidden]: c
 						}),
 						id: l,
 						ref: this.imageRef,
 						src: n
 					}), c && a.a.createElement("img", {
 						alt: e.name,
-						className: z.a.animationIcon,
+						className: Q.a.animationIcon,
 						src: s
 					})), a.a.createElement("span", {
-						className: z.a.count
+						className: Q.a.count
 					}, r.toLocaleString())), a.a.createElement(q, {
 						award: e,
 						onOpenReportFlow: this.handleOpenReportFlow,
@@ -1819,8 +1819,8 @@
 				D = r("./src/reddit/hooks/useClickSourceData.ts"),
 				G = r("./src/reddit/icons/fonts/Admin/index.tsx"),
 				q = (r("./src/reddit/icons/fonts/Premium/index.tsx"), r("./src/reddit/components/UserIcon/index.tsx")),
-				Q = r("./src/reddit/constants/postLayout.ts"),
-				z = r("./src/reddit/contexts/PageLayer/index.tsx"),
+				z = r("./src/reddit/constants/postLayout.ts"),
+				Q = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				W = r("./src/reddit/models/Flair/index.ts"),
 				V = r("./src/reddit/models/NewStructuredStyles/index.ts"),
 				J = r("./src/reddit/models/Post/index.ts"),
@@ -1844,7 +1844,7 @@
 			const oe = e => Object(U.a)(Object(H.a)(e), V.a.metaText, V.b.metaText),
 				ie = l.a.wrapped(B.b, "MetaSeparator", re.a),
 				de = l.a.span("text", re.a),
-				ce = Object(z.t)(),
+				ce = Object(Q.t)(),
 				le = e => {
 					const t = Object(w.a)(ne),
 						r = se._("Reddit admin, speaking officially", null, {
@@ -1905,7 +1905,7 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: L,
 						tooltipType: F
-					} = e, H = Object(a.d)(), U = Object(g.a)(), G = Object(a.e)($.a), V = Object(a.e)(Z.d), te = Object(a.e)(Z.g) || ["popular", "all"].includes(V || ""), ae = !(!x.isSponsored || !G || Object(m.Qd)(G));
+					} = e, H = Object(a.d)(), U = Object(g.a)(), G = Object(a.e)($.a), V = Object(a.e)(Z.d), te = Object(a.e)(Z.g) || ["popular", "all"].includes(V || ""), ae = !(!x.isSponsored || !G || Object(m.Sd)(G));
 					Object(s.useEffect)(() => {
 						ae && H(Object(b.d)(x.author))
 					}, []);
@@ -1939,10 +1939,10 @@
 						Ie = () => n.a.createElement(ie, {
 							className: e.metaSeparatorClassName
 						}, "•"),
-						Pe = Object(a.e)(e => Object(z.O)(e, {
+						Pe = Object(a.e)(e => Object(Q.O)(e, {
 							pageLayer: l
 						})),
-						Se = Q.e[Pe] === Q.d.Card,
+						Se = z.e[Pe] === z.d.Card,
 						_e = te && Se || !!Oe,
 						Ne = ae && (te || !!Oe),
 						ke = n.a.createElement(n.a.Fragment, null, me && ye && n.a.createElement("div", {
@@ -3062,15 +3062,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.Bb
+						experimentName: s.Db
 					});
-					return !(!t || Object(s.Qd)(t))
+					return !(!t || Object(s.Sd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.K,
-						experimentName: s.Bb
-					}) === s.Sb.ListingEnabled
+						experimentName: s.Db
+					}) === s.Ub.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3130,4 +3130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.97fd713f57fe048de83e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.541bb429a69925d19088.js.map

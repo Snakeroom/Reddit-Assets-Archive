@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.b1061127f482a20ddcf8.js
-// Retrieved at 6/14/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.7abd8fd9084ed6bfeb39.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -575,7 +575,7 @@
 							if (!a.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(v({
 								awards: a.awards
-							})), e(Object(m.z)())
+							})), e(Object(m.B)())
 						}
 					} catch (u) {
 						Object(r.b)() || console.error(u), e(Object(l.f)({
@@ -1749,4 +1749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.b1061127f482a20ddcf8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.7abd8fd9084ed6bfeb39.js.map

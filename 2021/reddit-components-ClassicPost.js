@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.cfda6a6dcfbabaf9aec3.js
-// Retrieved at 6/21/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.30901ffc3904622fe3b9.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -863,11 +863,11 @@
 				passive: !0
 			};
 
-			function W(e) {
+			function Y(e) {
 				return e.split("-")[0]
 			}
 
-			function Y(e) {
+			function W(e) {
 				return e.split("-")[1]
 			}
 
@@ -879,8 +879,8 @@
 				var t, n = e.reference,
 					r = e.element,
 					o = e.placement,
-					s = o ? W(o) : null,
-					i = o ? Y(o) : null,
+					s = o ? Y(o) : null,
+					i = o ? W(o) : null,
 					a = n.x + n.width / 2 - r.width / 2,
 					c = n.y + n.height / 2 - r.height / 2;
 				switch (s) {
@@ -1201,7 +1201,7 @@
 								s = n.adaptive,
 								i = void 0 === s || s,
 								a = {
-									placement: W(t.placement),
+									placement: Y(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: o
@@ -1277,7 +1277,7 @@
 								s = void 0 === o ? [0, 0] : o,
 								i = A.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
-										var r = W(e),
+										var r = Y(e),
 											o = [g, v].indexOf(r) >= 0 ? -1 : 1,
 											s = "function" == typeof n ? n(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -1307,12 +1307,12 @@
 								n = e.options,
 								r = e.name;
 							if (!t.modifiersData[r]._skip) {
-								for (var o = n.mainAxis, s = void 0 === o || o, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, E = W(h), _ = c || (E === h || !f ? [X(h)] : function(e) {
-										if (W(e) === T) return [];
+								for (var o = n.mainAxis, s = void 0 === o || o, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, E = Y(h), _ = c || (E === h || !f ? [X(h)] : function(e) {
+										if (Y(e) === T) return [];
 										var t = X(e);
 										return [Z(e), t, Z(t)]
 									}(h)), x = [h].concat(_).reduce((function(e, n) {
-										return e.concat(W(n) === T ? function(e, t) {
+										return e.concat(Y(n) === T ? function(e, t) {
 											void 0 === t && (t = {});
 											var n = t,
 												r = n.placement,
@@ -1322,9 +1322,9 @@
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
 												d = void 0 === c ? A : c,
-												l = Y(r),
+												l = W(r),
 												u = (l ? a ? L : L.filter((function(e) {
-													return Y(e) === l
+													return W(e) === l
 												})) : C).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -1333,7 +1333,7 @@
 														boundary: o,
 														rootBoundary: s,
 														padding: i
-													})[W(n)], t
+													})[Y(n)], t
 												}), {});
 											return Object.keys(u).sort((function(e, t) {
 												return u[e] - u[t]
@@ -1348,8 +1348,8 @@
 										}) : n)
 									}), []), O = t.rects.reference, k = t.rects.popper, I = new Map, w = !0, P = x[0], N = 0; N < x.length; N++) {
 									var R = x[N],
-										D = W(R),
-										M = Y(R) === j,
+										D = Y(R),
+										M = W(R) === j,
 										F = [v, S].indexOf(D) >= 0,
 										U = F ? "width" : "height",
 										B = re(t, {
@@ -1416,8 +1416,8 @@
 									padding: u,
 									altBoundary: l
 								}),
-								_ = W(t.placement),
-								x = Y(t.placement),
+								_ = Y(t.placement),
+								x = W(t.placement),
 								T = !x,
 								C = G(_),
 								k = "x" === C ? "y" : "x",
@@ -1486,7 +1486,7 @@
 								r = e.name,
 								o = n.elements.arrow,
 								s = n.modifiersData.popperOffsets,
-								i = W(n.placement),
+								i = Y(n.placement),
 								a = G(i),
 								c = [g, y].indexOf(i) >= 0 ? "height" : "width";
 							if (o && s) {
@@ -2239,7 +2239,7 @@
 					apiContext: i
 				}) => {
 					const a = e.flair.filter(e => !Object(d.q)(e.type));
-					if (t && a.unshift(t), r(Object(s.P)({
+					if (t && a.unshift(t), r(Object(s.T)({
 							[e.id]: {
 								flair: a
 							}
@@ -2679,8 +2679,8 @@
 				U = n("./src/reddit/components/ClassicPost/index.m.less"),
 				B = n.n(U);
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function Y() {
+				return (Y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2688,7 +2688,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class Y extends o.a.Component {
+			class W extends o.a.Component {
 				componentDidUpdate(e) {
 					this.props.onSizeChanged && e.isExpanded !== this.props.isExpanded && this.props.onSizeChanged(this.props.post.id)
 				}
@@ -2705,7 +2705,7 @@
 						formatTitle: N,
 						hostPostData: M,
 						isActionBarAnimationEnabled: U,
-						isCheckboxSelected: Y,
+						isCheckboxSelected: W,
 						isCurrentUserProfilePost: V,
 						isFrontpage: H,
 						isGalleryTileLayoutDefault: z,
@@ -2753,7 +2753,7 @@
 						model: ne,
 						handleVote: n,
 						showBulkActionCheckbox: ie,
-						isCheckboxSelected: Y,
+						isCheckboxSelected: W,
 						toggleCheckbox: le,
 						flairStyleTemplate: me,
 						redditStyle: oe,
@@ -2803,7 +2803,7 @@
 						isSponsored: ne.isSponsored,
 						postId: ne.id,
 						source: ne.source
-					}, Object(c.a)(ne))), o.a.createElement(v.a, W({
+					}, Object(c.a)(ne))), o.a.createElement(v.a, Y({
 						key: "PostMeta"
 					}, ye)), J && be && Object(E.c)(ne) && o.a.createElement(h.a, {
 						onIgnoreReports: $,
@@ -2871,7 +2871,7 @@
 					showCentered: !0,
 					showFull: !0
 				}),
-				H = Object(a.a)(Y),
+				H = Object(a.a)(W),
 				z = Object(N.b)(Object(P.a)(H));
 			t.default = Object(w.a)(H)
 		},
@@ -3096,7 +3096,7 @@
 				b = n("./src/reddit/components/ExpandoButton/index.m.less"),
 				h = n.n(b);
 			const E = Object(i.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.v)({
+					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
@@ -3281,14 +3281,14 @@
 					id: _,
 					title: y,
 					onClose: () => {
-						E(!1), S("close", "click"), x(Object(c.E)()), x(Object(c.P)({
+						E(!1), S("close", "click"), x(Object(c.G)()), x(Object(c.T)({
 							[n.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						x(Object(c.E)())
+						x(Object(c.G)())
 					}
 				}, s.a.createElement("p", null, r.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [r.fbt._param("=Reddit", s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -3348,10 +3348,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						_(r.Closed), y("close", "click"), O(Object(d.E)())
+						_(r.Closed), y("close", "click"), O(Object(d.G)())
 					},
 					onClickOutside: () => {
-						O(Object(d.E)())
+						O(Object(d.G)())
 					}
 				};
 				switch (E) {
@@ -3751,7 +3751,7 @@
 			const b = Object(i.b)(() => Object(a.c)({}), (e, {
 				post: t
 			}) => ({
-				onFollow: () => e(Object(d.y)(t.isSponsored ? t.postId : t.id))
+				onFollow: () => e(Object(d.A)(t.isSponsored ? t.postId : t.id))
 			}))(Object(l.c)(f))
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, n) {
@@ -3938,8 +3938,8 @@
 				F = n("./src/config.ts"),
 				U = n("./src/reddit/hooks/useClickSourceData.ts"),
 				B = n("./src/reddit/hooks/useExperimentVariant.ts"),
-				W = n("./src/reddit/hooks/usePostContext.ts"),
-				Y = n("./src/reddit/hooks/useTheme.ts"),
+				Y = n("./src/reddit/hooks/usePostContext.ts"),
+				W = n("./src/reddit/hooks/useTheme.ts"),
 				G = n("./src/telemetry/models/Outbound.ts");
 
 			function V() {
@@ -3962,7 +3962,7 @@
 					className: i,
 					redditStyle: a
 				}) => {
-					const c = Object(Y.a)();
+					const c = Object(W.a)();
 					let d = "";
 					switch (e) {
 						case N.ExtraLarge:
@@ -4030,7 +4030,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, o = Object(U.a)(), i = Object(B.a)(p.Wb) === p.ac.Enabled;
+					} = t, o = Object(U.a)(), i = Object(B.a)(p.Yb) === p.cc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(q, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Z, e));
@@ -4174,14 +4174,14 @@
 			t.c = s.a.memo((function(e) {
 				const t = Object(m.Z)(),
 					n = Object(m.v)(t),
-					r = Object(W.a)(),
+					r = Object(Y.a)(),
 					o = Object(i.e)(o => X(o, {
 						...r,
 						...e,
 						isCommentPermalink: n,
 						pageLayer: t
 					})),
-					a = Object(Y.a)(),
+					a = Object(W.a)(),
 					c = Object(u.b)();
 				return s.a.createElement(K, V({
 					pageLayer: t,
@@ -4236,10 +4236,10 @@
 					postId: t
 				}) => ({
 					handleVote: n => {
-						const r = n === a.a.upvoted ? Object(s.bb)(t) : Object(s.u)(t);
+						const r = n === a.a.upvoted ? Object(s.fb)(t) : Object(s.w)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(s.X)(t)),
+					onIgnoreReports: () => e(Object(s.bb)(t)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -4948,4 +4948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.cfda6a6dcfbabaf9aec3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.30901ffc3904622fe3b9.js.map

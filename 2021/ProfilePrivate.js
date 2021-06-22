@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.affaed64b556cd54bc4a.js
-// Retrieved at 6/21/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.fff07263d45be7a7fb7e.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, s) {
@@ -796,13 +796,13 @@
 				x = Object(o.b)(O, (e, t) => ({
 					onBottomViewed: (t, s) => e(a.c(t, s)),
 					openPost: t => {
-						e(d.I(t))
+						e(d.M(t))
 					},
 					trackOnPostEnteredViewport: (t, s) => {
-						Object(u.a)(t) && e(d.L(t))
+						Object(u.a)(t) && e(d.P(t))
 					},
 					trackOnPostExitedViewport: (t, s, i) => {
-						Object(u.a)(t) && e(d.M(t, i))
+						Object(u.a)(t) && e(d.Q(t, i))
 					},
 					fireAdPixelsOfType: r.a
 				}), (e, t, s) => ({
@@ -938,11 +938,11 @@
 				K = e => ({
 					onBottomViewed: f.a,
 					openPost: t => {
-						e(v.I(t))
+						e(v.M(t))
 					},
 					trackOnPostEnteredViewport: f.a,
 					fireAdPixelsOfType: (t, s) => {
-						e(v.x(t, s))
+						e(v.z(t, s))
 					}
 				}),
 				_ = Object(o.b)(M, K, (e, t, s) => ({
@@ -1154,4 +1154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.affaed64b556cd54bc4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.fff07263d45be7a7fb7e.js.map

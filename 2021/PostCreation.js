@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.76c772bdf99e9d03ab01.js
-// Retrieved at 6/21/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7800b702d58010ea7062.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -701,7 +701,7 @@
 						const r = Object(Q.F)(b(), {
 							postId: e
 						});
-						u(Object(l.x)(r, f.a.CommentSubmitted))
+						u(Object(l.z)(r, f.a.CommentSubmitted))
 					} else {
 						v.error && v.error.type === r.Gb && B.g(E, ae(s), e);
 						const t = v.error && v.error.fields && v.error.fields[0] ? v.error.fields[0].msg : o.fbt._("Something went wrong", null, {
@@ -2282,7 +2282,7 @@
 							const {
 								postId: e
 							} = c, t = r.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(a.bb)(e))
+							t && t.voteState === f.a.notVoted && n(Object(a.fb)(e))
 						}
 					} else n(_({
 						pollId: e,
@@ -8181,7 +8181,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), i = Object(U.a)(p.Wb) === p.ac.Enabled;
+					} = t, r = Object(B.a)(), i = Object(U.a)(p.Yb) === p.cc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
@@ -16059,7 +16059,7 @@
 					shouldShowCollectionEditOptions: E.s
 				}),
 				w = Object(a.b)(T, (e, t) => ({
-					copyLink: () => e(Object(u.B)(t.permalink)),
+					copyLink: () => e(Object(u.D)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -26978,7 +26978,7 @@
 							r && O.g(o(), r, n)
 						})
 					},
-					copyLink: t => e(Object(Na.B)(t)),
+					copyLink: t => e(Object(Na.D)(t)),
 					trackConnectAccountsClick: () => e((e, t) => O.b(t()))
 				}), (e, t, n) => ({
 					...e,
@@ -29480,10 +29480,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.yc,
+				experimentName: o.Ac,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.Ec.Enabled
+			}) === o.Gc.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -29497,14 +29497,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Mc
-					}) === o.Wc.Enabled
+						experimentName: o.Oc
+					}) === o.Yc.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Lc
-					}) === o.Vc.Enabled
+						experimentName: o.Nc
+					}) === o.Xc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -30198,4 +30198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.76c772bdf99e9d03ab01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7800b702d58010ea7062.js.map

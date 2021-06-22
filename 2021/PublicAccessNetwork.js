@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f68c2059aee18ed14492.js
-// Retrieved at 6/21/2021, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f9c5b1dc58d335fbc64c.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.vc
+					experimentName: m.xc
 				});
-				return Object(m.Qd)(t) ? void 0 : t
+				return Object(m.Sd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.wc
+					experimentName: m.yc
 				});
-				return Object(m.Qd)(t) ? void 0 : t
-			}, (e, t) => e === m.xc.Enabled && t === m.xc.Enabled);
+				return Object(m.Sd)(t) ? void 0 : t
+			}, (e, t) => e === m.zc.Enabled && t === m.zc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -954,7 +954,7 @@
 						instanceId: E,
 						include_categories: !0
 					});
-					C && (P.sort = I), P.onOtherDiscussions = k, t(S.p(m)), await t(ye(m, u, P, I));
+					C && (P.sort = I), P.onOtherDiscussions = k, t(S.r(m)), await t(ye(m, u, P, I));
 					const D = s().posts.models[m],
 						V = Object(W.K)(s());
 					if (D && "subreddit" === D.belongsTo.type) {
@@ -1173,7 +1173,7 @@
 						const t = Object(H.F)(i(), {
 							postId: e
 						});
-						if (o(S.x(t, C.a.CommentsView)), t && "subreddit" === t.belongsTo.type && J.body.comments) {
+						if (o(S.z(t, C.a.CommentsView)), t && "subreddit" === t.belongsTo.type && J.body.comments) {
 							const e = Object(ee.i)(() => o(Object(g.a)({
 								commentIds: Object.keys(J.body.comments),
 								postIds: [t.id],
@@ -1762,7 +1762,7 @@
 						l = e[0],
 						m = Object(H.a)(l) ? z.e.Post : z.e.Comment,
 						u = m === z.e.Post ? d.posts.models[l] : d.features.comments.models[l],
-						p = m === z.e.Post ? T.P : R.i;
+						p = m === z.e.Post ? T.T : R.i;
 					if (!u || !c) return !1;
 					n(be()), n(p({
 						[l]: {
@@ -4256,7 +4256,7 @@
 				})),
 				toggleRemovalReasonModal: () => e(Object(E.i)("rpan-add-removal-reason-id")),
 				toggleConfirmationModal: () => e(Object(E.i)("rpan-end-broadcast-confirmation-id")),
-				onRemovePost: () => e(Object(oe.Q)(s, !1))
+				onRemovePost: () => e(Object(oe.U)(s, !1))
 			}));
 			class xe extends o.a.Component {
 				constructor(e) {
@@ -5485,12 +5485,12 @@
 				}
 			}
 			var Js = Object(n.b)(Gs, (e, t) => ({
-					copyLink: t => e(Object(oe.B)(t)),
+					copyLink: t => e(Object(oe.D)(t)),
 					onToggleVideoShareModal: () => {
 						t.currentStreamId && e(Object(E.i)(Object(mt.a)(t.currentStreamId)))
 					},
 					onHide: () => {
-						t.currentStreamId && (e(Object(oe.W)(t.currentStreamId, !0, !0, !0)), e(N(t.currentStreamId)))
+						t.currentStreamId && (e(Object(oe.ab)(t.currentStreamId, !0, !0, !0)), e(N(t.currentStreamId)))
 					},
 					onLockComments: () => {
 						t.currentStreamId && e(it(t.currentStreamId))
@@ -7004,8 +7004,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.J)(e),
-					experimentName: a.Zc
-				}) === a.jd.Enabled
+					experimentName: a.bd
+				}) === a.ld.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -7013,4 +7013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f68c2059aee18ed14492.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f9c5b1dc58d335fbc64c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.4db39e16f333ba2a737a.js
-// Retrieved at 6/16/2021, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.ec205c67c8d9b4bcadb4.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1055,7 +1055,7 @@
 						l = e[0],
 						m = Object(U.a)(l) ? q.e.Post : q.e.Comment,
 						u = m === q.e.Post ? d.posts.models[l] : d.features.comments.models[l],
-						p = m === q.e.Post ? T.P : S.i;
+						p = m === q.e.Post ? T.T : S.i;
 					if (!u || !c) return !1;
 					r(be()), r(p({
 						[l]: {
@@ -2832,14 +2832,14 @@
 					id: v,
 					title: E,
 					onClose: () => {
-						C(!1), I("close", "click"), x(Object(d.E)()), x(Object(d.P)({
+						C(!1), I("close", "click"), x(Object(d.G)()), x(Object(d.T)({
 							[n.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						x(Object(d.E)())
+						x(Object(d.G)())
 					}
 				}, r.a.createElement("p", null, s.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [s.fbt._param("=Reddit", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -2899,10 +2899,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						v(s.Closed), E("close", "click"), g(Object(c.E)())
+						v(s.Closed), E("close", "click"), g(Object(c.G)())
 					},
 					onClickOutside: () => {
-						g(Object(c.E)())
+						g(Object(c.G)())
 					}
 				};
 				switch (C) {
@@ -4410,4 +4410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.4db39e16f333ba2a737a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.ec205c67c8d9b4bcadb4.js.map

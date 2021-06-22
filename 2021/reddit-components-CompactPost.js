@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.572f7e00c43b8dd4f34d.js
-// Retrieved at 6/21/2021, 1:40:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.45e5de595fee68d38bdc.js
+// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2239,7 +2239,7 @@
 					apiContext: a
 				}) => {
 					const i = e.flair.filter(e => !Object(d.q)(e.type));
-					if (t && i.unshift(t), r(Object(s.P)({
+					if (t && i.unshift(t), r(Object(s.T)({
 							[e.id]: {
 								flair: i
 							}
@@ -2763,10 +2763,10 @@
 						selectedTemplateId: r
 					})),
 					handleVote: n => {
-						const r = n === E.a.upvoted ? Object(_.bb)(t) : Object(_.u)(t);
+						const r = n === E.a.upvoted ? Object(_.fb)(t) : Object(_.w)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(_.X)(t)),
+					onIgnoreReports: () => e(Object(_.bb)(t)),
 					onOpenReportsDropdown: t => e(Object(v.h)({
 						tooltipId: t
 					}))
@@ -3256,7 +3256,7 @@
 				b = n("./src/reddit/components/ExpandoButton/index.m.less"),
 				h = n.n(b);
 			const E = Object(a.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.v)({
+					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
@@ -3441,14 +3441,14 @@
 					id: _,
 					title: y,
 					onClose: () => {
-						E(!1), S("close", "click"), x(Object(c.E)()), x(Object(c.P)({
+						E(!1), S("close", "click"), x(Object(c.G)()), x(Object(c.T)({
 							[n.id]: {
 								moderationPrompt: void 0
 							}
 						}))
 					},
 					onClickOutside: () => {
-						x(Object(c.E)())
+						x(Object(c.G)())
 					}
 				}, s.a.createElement("p", null, r.fbt._("Report this post if it's breaking {=Reddit} or {=community} rules.", [r.fbt._param("=Reddit", s.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/content-policy",
@@ -3508,10 +3508,10 @@
 						hk: "2tTiIx"
 					}),
 					onClose: () => {
-						_(r.Closed), y("close", "click"), v(Object(d.E)())
+						_(r.Closed), y("close", "click"), v(Object(d.G)())
 					},
 					onClickOutside: () => {
-						v(Object(d.E)())
+						v(Object(d.G)())
 					}
 				};
 				switch (E) {
@@ -3911,7 +3911,7 @@
 			const b = Object(a.b)(() => Object(i.c)({}), (e, {
 				post: t
 			}) => ({
-				onFollow: () => e(Object(d.y)(t.isSponsored ? t.postId : t.id))
+				onFollow: () => e(Object(d.A)(t.isSponsored ? t.postId : t.id))
 			}))(Object(l.c)(f))
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, n) {
@@ -4121,7 +4121,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, o = Object(U.a)(), a = Object(B.a)(p.Wb) === p.ac.Enabled;
+					} = t, o = Object(U.a)(), a = Object(B.a)(p.Yb) === p.cc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(q, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Q, e));
@@ -5012,4 +5012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.572f7e00c43b8dd4f34d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.45e5de595fee68d38bdc.js.map
