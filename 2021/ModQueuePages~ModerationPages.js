@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.ec205c67c8d9b4bcadb4.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.3ea7356115913f463549.js
+// Retrieved at 6/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -948,8 +948,8 @@
 				G = n("./src/reddit/models/ModQueue/index.ts"),
 				X = n("./src/reddit/models/PostDraft/index.ts"),
 				q = n("./src/reddit/models/RemovalReason/index.ts"),
-				Q = n("./src/reddit/models/Toast/index.ts"),
-				K = n("./src/reddit/selectors/comments.ts"),
+				K = n("./src/reddit/models/Toast/index.ts"),
+				Q = n("./src/reddit/selectors/comments.ts"),
 				J = n("./src/reddit/selectors/platform.ts");
 			Object(o.a)({
 				features: {
@@ -993,7 +993,7 @@
 							subredditId: e,
 							reason: r
 						})), n(Object(A.f)({
-							kind: Q.b.SuccessMod,
+							kind: K.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -1016,7 +1016,7 @@
 						subredditId: e,
 						reason: t
 					})), n(Object(A.f)({
-						kind: Q.b.SuccessMod,
+						kind: K.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -1034,7 +1034,7 @@
 						subredditId: e,
 						reasonId: t
 					})), n(Object(A.f)({
-						kind: Q.b.SuccessMod,
+						kind: K.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -1098,7 +1098,7 @@
 											const n = Object(j.a)(X.c.replyToPost, l);
 											r(Object(P.o)({
 												...t,
-												headCommentId: Object(K.w)(d, {
+												headCommentId: Object(Q.w)(d, {
 													commentsPageKey: o
 												}),
 												commentsPageKey: o,
@@ -1116,7 +1116,7 @@
 											}))
 										} else if (m === q.e.Comment) {
 											const e = Object(j.a)(X.c.replyToComment, u.id),
-												n = Object(K.j)(d, {
+												n = Object(Q.j)(d, {
 													commentId: l,
 													commentsPageKey: o
 												});
@@ -1150,7 +1150,7 @@
 					if (!l) return;
 					i(be());
 					const m = Object(A.f)({
-							kind: Q.b.SuccessMod,
+							kind: K.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -1499,6 +1499,8 @@
 				MetaSeparator: "yJGcpQjpmA13QcuUz2h0B",
 				metaSeparator: "yJGcpQjpmA13QcuUz2h0B",
 				publicPoints: "_2LXcsgibmlCEsBPk8MLy7e",
+				NftAuthor: "kDnKKJWz2PJGoalLInCW1",
+				nftAuthor: "kDnKKJWz2PJGoalLInCW1",
 				MetaLink: "_1sA-1jNHouHDpgCp1fCQ_F",
 				metaLink: "_1sA-1jNHouHDpgCp1fCQ_F",
 				DeletedText: "_2Wu4MNMVl4bsJ9iVnQz0dF",
@@ -1640,8 +1642,8 @@
 				}))
 			};
 			var q = n("./src/lib/addQueryParams/index.ts"),
-				Q = n("./src/lib/humanizeDateTime/index.ts"),
-				K = n("./src/lib/timeAgo/index.ts"),
+				K = n("./src/lib/humanizeDateTime/index.ts"),
+				Q = n("./src/lib/timeAgo/index.ts"),
 				J = n("./src/reddit/actions/comment/index.ts");
 			const Z = e => {
 					const {
@@ -1667,12 +1669,12 @@
 						onMouseLeave: c,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, Object(K.d)(n.created, {
+					}, Object(Q.d)(n.created, {
 						noPostfix: s,
 						shortenedUnit: s
 					}), r.a.createElement(L.c, {
 						tooltipId: d,
-						text: Object(Q.a)(n.created)
+						text: Object(K.a)(n.created)
 					}))
 				},
 				Y = (e, t) => {
@@ -1705,7 +1707,7 @@
 				editedAt: t
 			}) => r.a.createElement(y.a, {
 				className: re.a.editedText
-			}, ie._("edited {time}", [ie._param("time", Object(K.d)(t, {
+			}, ie._("edited {time}", [ie._param("time", Object(Q.d)(t, {
 				noPostfix: e,
 				shortenedUnit: e
 			}))], {
@@ -2042,8 +2044,8 @@
 				}).apply(this, arguments)
 			}
 			const qe = p.a.wrapped(E.b, "RightPositionedAuthorFlair", Ge.a),
-				Qe = p.a.wrapped(Le.a, "AdminIcon", Ge.a),
-				Ke = p.a.div("AdminEmeritus", Ge.a),
+				Ke = p.a.wrapped(Le.a, "AdminIcon", Ge.a),
+				Qe = p.a.div("AdminEmeritus", Ge.a),
 				Je = p.a.wrapped(He, "OpIcon", Ge.a),
 				Ze = p.a.wrapped(Le.a, "ContractorIcon", Ge.a),
 				Ye = p.a.span("DeletedText", Ge.a),
@@ -2110,8 +2112,9 @@
 					renderContractorBadge: F,
 					renderedInOverlay: L,
 					subredditDisplayText: D,
-					topSupporterTooltipId: B
-				} = e, V = Object(d.a)(), H = r.a.createElement(r.a.Fragment, null, r.a.createElement(Ae.b, {
+					topSupporterTooltipId: B,
+					userHasNft: V
+				} = e, H = Object(d.a)(), U = r.a.createElement(r.a.Fragment, null, r.a.createElement(Ae.b, {
 					commentId: c.id
 				}), r.a.createElement(Ae.a, {
 					commentId: c.id,
@@ -2129,7 +2132,7 @@
 					renderedInOverlay: L,
 					subredditDisplayText: D,
 					renderContractorBadge: !!F
-				}), H);
+				}), U);
 				if (c.isDeleted) return r.a.createElement(nt, Xe({}, e, {
 					className: Object(m.a)(o, Ge.a.container, {
 						[Ge.a.collapsed]: i
@@ -2140,7 +2143,7 @@
 						[Ge.a.collapsed]: i
 					})
 				}));
-				const U = !j && C === Fe.b.Left;
+				const W = !j && C === Fe.b.Left;
 				return r.a.createElement("div", {
 					className: Object(m.a)(o, Ge.a.container, {
 						[Ge.a.collapsed]: i,
@@ -2148,7 +2151,7 @@
 						[Ge.a.liveStreaming]: g
 					}),
 					"data-testid": "comment-top-meta"
-				}, f && U && r.a.createElement(E.b, {
+				}, f && W && r.a.createElement(E.b, {
 					flair: f,
 					forceSmallEmojis: p
 				}), !Object(S.f)(c) && r.a.createElement(I.b, {
@@ -2158,6 +2161,7 @@
 					userId: c.authorId,
 					uniqueIdentifier: c.id
 				}), s && s, r.a.createElement(N, {
+					authorClassName: V ? Ge.a.NftAuthor : void 0,
 					comment: c,
 					isLivestreaming: g,
 					isStrong: !!p,
@@ -2165,7 +2169,7 @@
 				}), a && r.a.createElement(se, null), a && r.a.createElement(y.c, {
 					className: Ge.a.metaText,
 					key: "crowdControlSeparator"
-				}), f && !U && r.a.createElement(qe, {
+				}), f && !W && r.a.createElement(qe, {
 					flair: f,
 					forceSmallEmojis: p
 				}), !p && r.a.createElement(k.a, {
@@ -2177,7 +2181,7 @@
 					subredditId: c.subredditId,
 					userId: c.authorId,
 					username: c.author
-				}), r.a.createElement(r.a.Fragment, null, H, !x && r.a.createElement(rt, {
+				}), r.a.createElement(r.a.Fragment, null, U, !x && r.a.createElement(rt, {
 					comment: c,
 					compact: p,
 					adminTooltipId: n,
@@ -2187,7 +2191,7 @@
 					onHideTooltip: w,
 					onShowTooltip: M,
 					openPowerupsModal: () => {
-						V(Object(h.q)("comment")), A()
+						H(Object(h.q)("comment")), A()
 					},
 					opTooltipId: T,
 					renderContractorBadge: F,
@@ -2314,13 +2318,13 @@
 						className: Ge.a.cakeDay,
 						commentId: e.id,
 						renderedInOverlay: t
-					}), e.isAdmin && r.a.createElement(Qe, {
+					}), e.isAdmin && r.a.createElement(Ke, {
 						desc: B(),
 						id: n.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: n.onHideTooltip,
 						isFilled: !0
-					}), e.isAdmin && it(n.adminTooltipId, B()), e.distinguishType === u.E.ALUMNI_ADMIN && r.a.createElement(Ke, {
+					}), e.isAdmin && it(n.adminTooltipId, B()), e.distinguishType === u.E.ALUMNI_ADMIN && r.a.createElement(Qe, {
 						"aria-label": V(),
 						id: n.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
@@ -3145,7 +3149,7 @@
 		"./src/reddit/components/Scroller/Simple.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Q
+				return K
 			}));
 			var s = n("./node_modules/lodash/debounce.js"),
 				o = n.n(s),
@@ -3327,11 +3331,11 @@
 				X = Object(l.b)(G),
 				q = {};
 
-			function Q(e) {
+			function K(e) {
 				return e === document
 			}
 
-			function K(e) {
+			function Q(e) {
 				let t = 0;
 				do {
 					t += e.offsetTop || 0, e = e.offsetParent
@@ -3488,7 +3492,7 @@
 						this.fpsMeter && this.fpsMeter.eventHandler(e);
 						for (const t in this.hiddenChildren) this.remeasureWhenShown[t] = !0;
 						this.measurementsInvalid = !0, this.callOnScrollForItemsChanged()
-					}, this.getTotalOffsetTop = () => this.containerRef ? K(this.containerRef) : 0, this.handleContentContainerResize = o()(() => {
+					}, this.getTotalOffsetTop = () => this.containerRef ? Q(this.containerRef) : 0, this.handleContentContainerResize = o()(() => {
 						this.pendingResizeHandlerRead || (this.pendingResizeHandlerRead = h.a.read(() => {
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
@@ -3724,7 +3728,7 @@
 					return this.props.children.map(e => e.id).join("-")
 				}
 				getScrollTop() {
-					return this.scrollContainer ? Q(this.scrollContainer) ? Object(P.a)() : this.scrollContainer.scrollTop : 0
+					return this.scrollContainer ? K(this.scrollContainer) ? Object(P.a)() : this.scrollContainer.scrollTop : 0
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
@@ -3803,7 +3807,7 @@
 					if (!this.containerRef) return !1;
 					const {
 						viewportTopPadding: e = 0
-					} = this.props, t = K(this.containerRef);
+					} = this.props, t = Q(this.containerRef);
 					return this.getScrollTop() + e - t > 0
 				}
 				render() {
@@ -4410,4 +4414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.ec205c67c8d9b4bcadb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.3ea7356115913f463549.js.map

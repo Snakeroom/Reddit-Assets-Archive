@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.268179449d895dec88c5.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.34296b20e5c37bd41054.js
+// Retrieved at 6/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1030,6 +1030,8 @@
 				MetaSeparator: "yJGcpQjpmA13QcuUz2h0B",
 				metaSeparator: "yJGcpQjpmA13QcuUz2h0B",
 				publicPoints: "_2LXcsgibmlCEsBPk8MLy7e",
+				NftAuthor: "kDnKKJWz2PJGoalLInCW1",
+				nftAuthor: "kDnKKJWz2PJGoalLInCW1",
 				MetaLink: "_1sA-1jNHouHDpgCp1fCQ_F",
 				metaLink: "_1sA-1jNHouHDpgCp1fCQ_F",
 				DeletedText: "_2Wu4MNMVl4bsJ9iVnQz0dF",
@@ -1641,8 +1643,9 @@
 					renderContractorBadge: R,
 					renderedInOverlay: A,
 					subredditDisplayText: D,
-					topSupporterTooltipId: B
-				} = e, U = Object(c.a)(), V = o.a.createElement(o.a.Fragment, null, o.a.createElement(Me.b, {
+					topSupporterTooltipId: B,
+					userHasNft: U
+				} = e, V = Object(c.a)(), W = o.a.createElement(o.a.Fragment, null, o.a.createElement(Me.b, {
 					commentId: d.id
 				}), o.a.createElement(Me.a, {
 					commentId: d.id,
@@ -1660,7 +1663,7 @@
 					renderedInOverlay: A,
 					subredditDisplayText: D,
 					renderContractorBadge: !!R
-				}), V);
+				}), W);
 				if (d.isDeleted) return o.a.createElement(st, Ke({}, e, {
 					className: Object(m.a)(n, ze.a.container, {
 						[ze.a.collapsed]: a
@@ -1671,7 +1674,7 @@
 						[ze.a.collapsed]: a
 					})
 				}));
-				const W = !I && f === Re.b.Left;
+				const H = !I && f === Re.b.Left;
 				return o.a.createElement("div", {
 					className: Object(m.a)(n, ze.a.container, {
 						[ze.a.collapsed]: a,
@@ -1679,7 +1682,7 @@
 						[ze.a.liveStreaming]: y
 					}),
 					"data-testid": "comment-top-meta"
-				}, x && W && o.a.createElement(O.b, {
+				}, x && H && o.a.createElement(O.b, {
 					flair: x,
 					forceSmallEmojis: u
 				}), !Object(P.f)(d) && o.a.createElement(E.b, {
@@ -1689,6 +1692,7 @@
 					userId: d.authorId,
 					uniqueIdentifier: d.id
 				}), r && r, o.a.createElement(F, {
+					authorClassName: U ? ze.a.NftAuthor : void 0,
 					comment: d,
 					isLivestreaming: y,
 					isStrong: !!u,
@@ -1696,7 +1700,7 @@
 				}), i && o.a.createElement(re, null), i && o.a.createElement(_.c, {
 					className: ze.a.metaText,
 					key: "crowdControlSeparator"
-				}), x && !W && o.a.createElement(Ge, {
+				}), x && !H && o.a.createElement(Ge, {
 					flair: x,
 					forceSmallEmojis: u
 				}), !u && o.a.createElement(k.a, {
@@ -1708,7 +1712,7 @@
 					subredditId: d.subredditId,
 					userId: d.authorId,
 					username: d.author
-				}), o.a.createElement(o.a.Fragment, null, V, !v && o.a.createElement(ot, {
+				}), o.a.createElement(o.a.Fragment, null, W, !v && o.a.createElement(ot, {
 					comment: d,
 					compact: u,
 					adminTooltipId: s,
@@ -1718,7 +1722,7 @@
 					onHideTooltip: w,
 					onShowTooltip: T,
 					openPowerupsModal: () => {
-						U(Object(h.q)("comment")), M()
+						V(Object(h.q)("comment")), M()
 					},
 					opTooltipId: L,
 					renderContractorBadge: R,
@@ -9093,4 +9097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.268179449d895dec88c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.34296b20e5c37bd41054.js.map

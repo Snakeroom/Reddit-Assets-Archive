@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.833275803b334aca07a5.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.268ca3bfba59a354d55e.js
+// Retrieved at 6/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -581,6 +581,8 @@
 				MetaSeparator: "yJGcpQjpmA13QcuUz2h0B",
 				metaSeparator: "yJGcpQjpmA13QcuUz2h0B",
 				publicPoints: "_2LXcsgibmlCEsBPk8MLy7e",
+				NftAuthor: "kDnKKJWz2PJGoalLInCW1",
+				nftAuthor: "kDnKKJWz2PJGoalLInCW1",
 				MetaLink: "_1sA-1jNHouHDpgCp1fCQ_F",
 				metaLink: "_1sA-1jNHouHDpgCp1fCQ_F",
 				DeletedText: "_2Wu4MNMVl4bsJ9iVnQz0dF",
@@ -722,8 +724,8 @@
 				}))
 			};
 			var G = o("./src/lib/addQueryParams/index.ts"),
-				Q = o("./src/lib/humanizeDateTime/index.ts"),
-				J = o("./src/lib/timeAgo/index.ts"),
+				J = o("./src/lib/humanizeDateTime/index.ts"),
+				Q = o("./src/lib/timeAgo/index.ts"),
 				X = o("./src/reddit/actions/comment/index.ts");
 			const Y = e => {
 					const {
@@ -749,12 +751,12 @@
 						onMouseLeave: d,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, Object(J.d)(o.created, {
+					}, Object(Q.d)(o.created, {
 						noPostfix: n,
 						shortenedUnit: n
 					}), a.a.createElement(D.c, {
 						tooltipId: c,
-						text: Object(Q.a)(o.created)
+						text: Object(J.a)(o.created)
 					}))
 				},
 				Z = (e, t) => {
@@ -787,7 +789,7 @@
 				editedAt: t
 			}) => a.a.createElement(y.a, {
 				className: ae.a.editedText
-			}, re._("edited {time}", [re._param("time", Object(J.d)(t, {
+			}, re._("edited {time}", [re._param("time", Object(Q.d)(t, {
 				noPostfix: e,
 				shortenedUnit: e
 			}))], {
@@ -1124,8 +1126,8 @@
 				}).apply(this, arguments)
 			}
 			const Ge = u.a.wrapped(I.b, "RightPositionedAuthorFlair", qe.a),
-				Qe = u.a.wrapped(De.a, "AdminIcon", qe.a),
-				Je = u.a.div("AdminEmeritus", qe.a),
+				Je = u.a.wrapped(De.a, "AdminIcon", qe.a),
+				Qe = u.a.div("AdminEmeritus", qe.a),
 				Xe = u.a.wrapped(We, "OpIcon", qe.a),
 				Ye = u.a.wrapped(De.a, "ContractorIcon", qe.a),
 				Ze = u.a.span("DeletedText", qe.a),
@@ -1192,8 +1194,9 @@
 					renderContractorBadge: P,
 					renderedInOverlay: D,
 					subredditDisplayText: F,
-					topSupporterTooltipId: B
-				} = e, U = Object(c.a)(), W = a.a.createElement(a.a.Fragment, null, a.a.createElement(Le.b, {
+					topSupporterTooltipId: B,
+					userHasNft: U
+				} = e, W = Object(c.a)(), H = a.a.createElement(a.a.Fragment, null, a.a.createElement(Le.b, {
 					commentId: d.id
 				}), a.a.createElement(Le.a, {
 					commentId: d.id,
@@ -1211,7 +1214,7 @@
 					renderedInOverlay: D,
 					subredditDisplayText: F,
 					renderContractorBadge: !!P
-				}), W);
+				}), H);
 				if (d.isDeleted) return a.a.createElement(ot, ze({}, e, {
 					className: Object(m.a)(s, qe.a.container, {
 						[qe.a.collapsed]: r
@@ -1222,7 +1225,7 @@
 						[qe.a.collapsed]: r
 					})
 				}));
-				const H = !O && v === Pe.b.Left;
+				const V = !O && v === Pe.b.Left;
 				return a.a.createElement("div", {
 					className: Object(m.a)(s, qe.a.container, {
 						[qe.a.collapsed]: r,
@@ -1230,7 +1233,7 @@
 						[qe.a.liveStreaming]: x
 					}),
 					"data-testid": "comment-top-meta"
-				}, C && H && a.a.createElement(I.b, {
+				}, C && V && a.a.createElement(I.b, {
 					flair: C,
 					forceSmallEmojis: u
 				}), !Object(j.f)(d) && a.a.createElement(E.b, {
@@ -1240,6 +1243,7 @@
 					userId: d.authorId,
 					uniqueIdentifier: d.id
 				}), n && n, a.a.createElement(R, {
+					authorClassName: U ? qe.a.NftAuthor : void 0,
 					comment: d,
 					isLivestreaming: x,
 					isStrong: !!u,
@@ -1247,7 +1251,7 @@
 				}), i && a.a.createElement(ne, null), i && a.a.createElement(y.c, {
 					className: qe.a.metaText,
 					key: "crowdControlSeparator"
-				}), C && !H && a.a.createElement(Ge, {
+				}), C && !V && a.a.createElement(Ge, {
 					flair: C,
 					forceSmallEmojis: u
 				}), !u && a.a.createElement(T.a, {
@@ -1259,7 +1263,7 @@
 					subredditId: d.subredditId,
 					userId: d.authorId,
 					username: d.author
-				}), a.a.createElement(a.a.Fragment, null, W, !g && a.a.createElement(at, {
+				}), a.a.createElement(a.a.Fragment, null, H, !g && a.a.createElement(at, {
 					comment: d,
 					compact: u,
 					adminTooltipId: o,
@@ -1269,7 +1273,7 @@
 					onHideTooltip: w,
 					onShowTooltip: S,
 					openPowerupsModal: () => {
-						U(Object(h.q)("comment")), L()
+						W(Object(h.q)("comment")), L()
 					},
 					opTooltipId: A,
 					renderContractorBadge: P,
@@ -1396,13 +1400,13 @@
 						className: qe.a.cakeDay,
 						commentId: e.id,
 						renderedInOverlay: t
-					}), e.isAdmin && a.a.createElement(Qe, {
+					}), e.isAdmin && a.a.createElement(Je, {
 						desc: B(),
 						id: o.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
 						onMouseLeave: o.onHideTooltip,
 						isFilled: !0
-					}), e.isAdmin && rt(o.adminTooltipId, B()), e.distinguishType === p.E.ALUMNI_ADMIN && a.a.createElement(Je, {
+					}), e.isAdmin && rt(o.adminTooltipId, B()), e.distinguishType === p.E.ALUMNI_ADMIN && a.a.createElement(Qe, {
 						"aria-label": U(),
 						id: o.adminEmeritusTooltipId,
 						onMouseEnter: this.onShowAdminEmeritusTooltip,
@@ -1905,8 +1909,8 @@
 				q = o("./src/reddit/actions/modal.ts"),
 				z = o("./src/reddit/actions/reportFlow/index.ts"),
 				G = o("./src/reddit/actions/tooltip.ts"),
-				Q = o("./src/reddit/actions/userBlocks.ts"),
-				J = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				J = o("./src/reddit/actions/userBlocks.ts"),
+				Q = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				X = o("./src/reddit/constants/tracking.ts"),
 				Y = o("./src/reddit/selectors/telemetry.ts"),
 				Z = o("./src/telemetry/models/Event.ts");
@@ -1975,7 +1979,7 @@
 							...$(o)
 						}))(d, t.id)))
 					}
-				}, e, c.a.createElement(J.c, {
+				}, e, c.a.createElement(Q.c, {
 					tooltipId: r,
 					text: i
 				})),
@@ -2087,8 +2091,8 @@
 						}))
 					},
 					onApproveClick: () => e(Object(K.a)(t.id)),
-					onBlockClick: () => e(Object(Q.h)(t.author)),
-					onUnblockClick: () => e(Object(Q.g)(t.author)),
+					onBlockClick: () => e(Object(J.h)(t.author)),
+					onUnblockClick: () => e(Object(J.g)(t.author)),
 					onUpvoteClick: () => e(Object(b.q)(t.id)),
 					onDownvoteClick: () => e(Object(b.j)(t.id)),
 					onDistinguishClick: o => e(Object(K.b)(t.id, o)),
@@ -2254,8 +2258,8 @@
 				qe = o.n(Ke);
 			const ze = {},
 				Ge = I.a.wrapped(F.a, "ChatIcon", qe.a),
-				Qe = I.a.span("ReplyAuthor", qe.a),
-				Je = I.a.div("ReplyWrapper", qe.a);
+				Je = I.a.span("ReplyAuthor", qe.a),
+				Qe = I.a.div("ReplyWrapper", qe.a);
 			var Xe = Object(d.b)(() => Object(l.c)({
 					comment: Ve.a
 				}))(({
@@ -2263,11 +2267,11 @@
 					commentId: t,
 					isLivestreaming: o,
 					onReplyClick: n
-				}) => e ? e.isDeleted ? c.a.createElement(Je, null, c.a.createElement("span", {
+				}) => e ? e.isDeleted ? c.a.createElement(Qe, null, c.a.createElement("span", {
 					className: Object(E.a)(qe.a.ReplyLinkBubble, qe.a.delete, {
 						[qe.a.Livestreaming]: o
 					})
-				}, c.a.createElement(kt, null))) : c.a.createElement(Je, null, c.a.createElement("a", {
+				}, c.a.createElement(kt, null))) : c.a.createElement(Qe, null, c.a.createElement("a", {
 					className: Object(E.a)(qe.a.ReplyLinkBubble, {
 						[qe.a.Livestreaming]: o
 					}),
@@ -2278,7 +2282,7 @@
 				}, c.a.createElement(Ge, {
 					userId: e.authorId,
 					icon: e.profileImage
-				}), c.a.createElement(Qe, null, e.author), c.a.createElement(He.a, {
+				}), c.a.createElement(Je, null, e.author), c.a.createElement(He.a, {
 					className: qe.a.ReplyComment,
 					key: `rich-text-${t}`,
 					content: Object(j.a)(e),
@@ -3631,4 +3635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.833275803b334aca07a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.268ca3bfba59a354d55e.js.map

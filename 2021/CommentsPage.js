@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.8746b1c7e76a82ca9e6d.js
-// Retrieved at 6/22/2021, 5:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a5e0fb1d9ed9c1f3165a.js
+// Retrieved at 6/22/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1777,6 +1777,8 @@
 				authorHoverDiv: "ZvAy-PJfJmB8pzQxpz1sS",
 				UserIcon: "_13ScjOmi6dGdJw0JAonQEr",
 				userIcon: "_13ScjOmi6dGdJw0JAonQEr",
+				UserIconNft: "_20ZyBb8T475h1qmXRBEL6-",
+				userIconNft: "_20ZyBb8T475h1qmXRBEL6-",
 				topSupporterIcon: "PjnQ0fgBT0oSZ9nR8HeaJ",
 				VerticalVotes: "kB7GZ7EzNg1Msq-nEnY0z",
 				verticalVotes: "kB7GZ7EzNg1Msq-nEnY0z",
@@ -2984,7 +2986,7 @@
 						to: `/user/${o.author}/`
 					}, Ce ? a.a.createElement(_t.a, {
 						isNft: Oe,
-						className: ss.a.UserIcon,
+						className: Object(l.a)(ss.a.UserIcon, Oe ? ss.a.UserIconNft : void 0),
 						iconUrl: o.profileImage,
 						isNSFW: o.profileOver18 || !1,
 						nsfwIconUrl: jt.a,
@@ -3014,6 +3016,7 @@
 					}, a.a.createElement(Kt.a, null, F.fbt._("level {depth}", [F.fbt._param("depth", p + 1)], {
 						hk: "2XnyAV"
 					})), a.a.createElement(ps, {
+						userHasNft: Oe,
 						childrenInfo: t,
 						className: Object(l.a)({
 							[ss.a.collapsed]: r,
@@ -8653,4 +8656,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8746b1c7e76a82ca9e6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a5e0fb1d9ed9c1f3165a.js.map
