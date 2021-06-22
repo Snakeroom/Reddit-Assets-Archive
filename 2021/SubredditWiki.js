@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ed1d133f17837f4e86a9.js
-// Retrieved at 6/17/2021, 3:40:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7083981f490dc28a9740.js
+// Retrieved at 6/22/2021, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -543,89 +543,90 @@
 				a = s("./src/lib/classNames/index.ts"),
 				d = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				c = s("./src/lib/lessComponent.tsx"),
-				l = s("./node_modules/fbt/lib/FbtPublic.js"),
-				u = s("./src/lib/makeActionCreator/index.ts"),
-				m = s("./src/reddit/actions/subreddit/constants.ts"),
-				p = s("./src/reddit/actions/toaster.ts"),
-				b = s("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				h = s("./src/reddit/helpers/localStorage/index.ts"),
-				x = s("./src/reddit/models/Subreddit/index.ts"),
-				f = s("./src/reddit/models/Toast/index.ts");
-			const g = Object(u.a)(m.u),
-				y = Object(u.a)(m.t),
-				v = Object(u.a)(m.s);
-			const E = (e, t) => async (s, n, {
+				l = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				u = s("./node_modules/fbt/lib/FbtPublic.js"),
+				m = s("./src/lib/makeActionCreator/index.ts"),
+				p = s("./src/reddit/actions/subreddit/constants.ts"),
+				b = s("./src/reddit/actions/toaster.ts"),
+				h = s("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				x = s("./src/reddit/helpers/localStorage/index.ts"),
+				f = s("./src/reddit/models/Subreddit/index.ts"),
+				g = s("./src/reddit/models/Toast/index.ts");
+			const y = Object(m.a)(p.u),
+				v = Object(m.a)(p.t),
+				E = Object(m.a)(p.s);
+			const _ = (e, t) => async (s, n, {
 				gqlContext: r
 			}) => {
 				var i, o, a, d;
-				s(y());
+				s(v());
 				const c = n(),
-					u = (e => {
+					l = (e => {
 						switch (e) {
-							case x.b.FREQUENT:
+							case f.b.FREQUENT:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 								};
-							case x.b.LOW:
+							case f.b.LOW:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 								};
-							case x.b.OFF:
+							case f.b.OFF:
 							default:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
 								}
 						}
 					})(t),
-					m = await Object(b.b)(r(), e, u);
+					m = await Object(h.b)(r(), e, l);
 				if ((null === (o = null === (i = m.error) || void 0 === i ? void 0 : i.fields) || void 0 === o ? void 0 : o.length) || function(e) {
 						return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-					}(m.body) && (null === (a = m.body.data.updateSubredditNotificationSettings.errors) || void 0 === a ? void 0 : a.length)) return s(v()), s(Object(p.f)({
-					kind: f.b.Error,
-					text: l.fbt._("Sorry, you’ve encountered an error.", null, {
+					}(m.body) && (null === (a = m.body.data.updateSubredditNotificationSettings.errors) || void 0 === a ? void 0 : a.length)) return s(E()), s(Object(b.f)({
+					kind: g.b.Error,
+					text: u.fbt._("Sorry, you’ve encountered an error.", null, {
 						hk: "4CcZhw"
 					})
 				}));
-				m.ok && (s(g({
+				m.ok && (s(y({
 					subredditAboutInfo: {
 						[e]: {
 							notificationLevel: t
 						}
 					}
-				})), s(Object(p.f)({
-					kind: f.b.SuccessCommunityGreen,
-					text: t === x.b.OFF ? l.fbt._("Unfollowed, You’ll no longer recieve updates", null, {
+				})), s(Object(b.f)({
+					kind: g.b.SuccessCommunityGreen,
+					text: t === f.b.OFF ? u.fbt._("Unfollowed, You’ll no longer recieve updates", null, {
 						hk: "3cvv2O"
-					}) : l.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
+					}) : u.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 						hk: "1fYEVg"
 					})
-				})), t === x.b.FREQUENT && Object(h.Z)(null === (d = c.user.account) || void 0 === d ? void 0 : d.id, e))
+				})), t === f.b.FREQUENT && Object(x.Z)(null === (d = c.user.account) || void 0 === d ? void 0 : d.id, e))
 			};
-			var _ = s("./src/reddit/actions/subredditWelcomeMessage.ts"),
-				C = s("./src/lib/combineRefs/index.tsx"),
-				O = s("./src/lib/hooks/useOnClickOutside.ts"),
-				k = s("./src/lib/hooks/useTooltip.ts"),
-				w = s("./src/reddit/components/CommonTooltip/Hooked.tsx"),
-				j = s("./src/reddit/icons/fonts/index.tsx"),
-				S = s("./src/reddit/components/CommunityIdTopBar/Notifications/index.m.less"),
-				N = s.n(S);
-			const I = e => e === x.b.FREQUENT ? r.a.createElement(j.a, {
+			var C = s("./src/reddit/actions/subredditWelcomeMessage.ts"),
+				O = s("./src/lib/combineRefs/index.tsx"),
+				k = s("./src/lib/hooks/useOnClickOutside.ts"),
+				w = s("./src/lib/hooks/useTooltip.ts"),
+				j = s("./src/reddit/components/CommonTooltip/Hooked.tsx"),
+				S = s("./src/reddit/icons/fonts/index.tsx"),
+				N = s("./src/reddit/components/CommunityIdTopBar/Notifications/index.m.less"),
+				I = s.n(N);
+			const T = e => e === f.b.FREQUENT ? r.a.createElement(S.a, {
 					name: "notification_frequent_fill"
-				}) : r.a.createElement(j.a, {
+				}) : r.a.createElement(S.a, {
 					name: "notification_frequent"
 				}),
-				T = e => e === x.b.LOW ? r.a.createElement(j.a, {
+				P = e => e === f.b.LOW ? r.a.createElement(S.a, {
 					name: "notification_fill"
-				}) : r.a.createElement(j.a, {
+				}) : r.a.createElement(S.a, {
 					name: "notification"
 				}),
-				P = e => e === x.b.OFF ? r.a.createElement(j.a, {
+				B = e => e === f.b.OFF ? r.a.createElement(S.a, {
 					name: "notification_off",
 					isFilled: !0
-				}) : r.a.createElement(j.a, {
+				}) : r.a.createElement(S.a, {
 					name: "notification_off"
 				}),
-				B = {
+				L = {
 					placement: "bottom-start",
 					modifiers: [{
 						name: "offset",
@@ -634,7 +635,7 @@
 						}
 					}]
 				},
-				L = {
+				M = {
 					placement: "bottom-start",
 					modifiers: [{
 						name: "offset",
@@ -643,14 +644,14 @@
 						}
 					}]
 				},
-				M = {
+				F = {
 					placement: "top"
 				};
-			var F = s("./src/reddit/controls/Dropdown/index.tsx"),
-				R = s("./src/reddit/controls/Dropdown/Row.tsx");
+			var R = s("./src/reddit/controls/Dropdown/index.tsx"),
+				D = s("./src/reddit/controls/Dropdown/Row.tsx");
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function W() {
+				return (W = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -658,54 +659,54 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const W = c.a.wrapped(F.a, "StyledDropdown", N.a),
-				A = c.a.wrapped(R.b, "DropdownRow", N.a);
-			var U = e => {
-					return r.a.createElement(W, {
+			const A = c.a.wrapped(R.a, "StyledDropdown", I.a),
+				U = c.a.wrapped(D.b, "DropdownRow", I.a);
+			var H = e => {
+					return r.a.createElement(A, {
 						id: e.dropdownId,
-						className: N.a.notificationDropdown
+						className: I.a.notificationDropdown
 					}, [{
-						displayText: l.fbt._("Frequent", null, {
+						displayText: u.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
-						onClick: () => e.onClick(x.b.FREQUENT),
-						isSelected: e.notificationLevel === x.b.FREQUENT,
-						icon: I(e.notificationLevel)
-					}, {
-						displayText: l.fbt._("Low", null, {
-							hk: "2uGDVq"
-						}),
-						onClick: () => e.onClick(x.b.LOW),
-						isSelected: e.notificationLevel === x.b.LOW,
+						onClick: () => e.onClick(f.b.FREQUENT),
+						isSelected: e.notificationLevel === f.b.FREQUENT,
 						icon: T(e.notificationLevel)
 					}, {
-						displayText: l.fbt._("Off", null, {
+						displayText: u.fbt._("Low", null, {
+							hk: "2uGDVq"
+						}),
+						onClick: () => e.onClick(f.b.LOW),
+						isSelected: e.notificationLevel === f.b.LOW,
+						icon: P(e.notificationLevel)
+					}, {
+						displayText: u.fbt._("Off", null, {
 							hk: "4GiFvg"
 						}),
-						onClick: () => e.onClick(x.b.OFF),
-						isSelected: e.notificationLevel === x.b.OFF,
-						icon: P(e.notificationLevel)
-					}].map(e => r.a.createElement(A, D({
-						iconWrapperClassName: N.a.notificationOverflowIconWrapper,
-						className: Object(a.a)(N.a.notificationDropdown, N.a.notificationRow, {
-							[N.a.isSelected]: e.isSelected
+						onClick: () => e.onClick(f.b.OFF),
+						isSelected: e.notificationLevel === f.b.OFF,
+						icon: B(e.notificationLevel)
+					}].map(e => r.a.createElement(U, W({
+						iconWrapperClassName: I.a.notificationOverflowIconWrapper,
+						className: Object(a.a)(I.a.notificationDropdown, I.a.notificationRow, {
+							[I.a.isSelected]: e.isSelected
 						}),
 						key: e.displayText
 					}, e), e.icon)))
 				},
-				H = s("./src/reddit/controls/Button/index.tsx"),
-				V = s("./src/reddit/selectors/telemetry.ts");
-			const J = e => t => ({
-				...V.defaults(t),
+				V = s("./src/reddit/controls/Button/index.tsx"),
+				J = s("./src/reddit/selectors/telemetry.ts");
+			const K = e => t => ({
+				...J.defaults(t),
 				source: "community",
 				action: "set_frequency",
 				noun: e,
-				subreddit: V.subreddit(t)
+				subreddit: J.subreddit(t)
 			});
-			var K = s("./src/reddit/hooks/useTracking.ts");
+			var G = s("./src/reddit/hooks/useTracking.ts");
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function q() {
+				return (q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -713,226 +714,226 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var q = e => r.a.createElement("svg", G({
+			var z = e => r.a.createElement("svg", q({
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
 			}, e), r.a.createElement("path", {
 				d: "M16.5,2.924,11.264,15.551H9.91L15.461,2.139h.074a9.721,9.721,0,1,0,.967.785ZM8.475,8.435a1.635,1.635,0,0,0-.233.868v4.2H6.629V6.2H8.174v.93h.041a2.927,2.927,0,0,1,1.008-.745,3.384,3.384,0,0,1,1.453-.294,3.244,3.244,0,0,1,.7.068,1.931,1.931,0,0,1,.458.151l-.656,1.558a2.174,2.174,0,0,0-1.067-.246,2.159,2.159,0,0,0-.981.215A1.59,1.59,0,0,0,8.475,8.435Z"
 			}));
-			const z = c.a.img("SubredditIcon", N.a),
-				Y = c.a.wrapped(q, "DefaultIcon", N.a);
-			var Q = ({
+			const Y = c.a.img("SubredditIcon", I.a),
+				Q = c.a.wrapped(z, "DefaultIcon", I.a);
+			var X = ({
 					subredditName: e,
 					shouldShowSubredditIcon: t,
 					subredditIcon: s,
 					onHide: n,
 					onUpdate: i
 				}) => {
-					const o = Object(K.a)(),
-						a = t ? r.a.createElement(z, {
+					const o = Object(G.a)(),
+						a = t ? r.a.createElement(Y, {
 							src: s || void 0
-						}) : r.a.createElement(Y, null),
+						}) : r.a.createElement(Q, null),
 						d = `r/${e}`;
 					return r.a.createElement("div", {
-						className: N.a.notificationPopup
+						className: I.a.notificationPopup
 					}, r.a.createElement("div", {
-						className: N.a.title
-					}, r.a.createElement("h2", null, l.fbt._("Get the best of", null, {
+						className: I.a.title
+					}, r.a.createElement("h2", null, u.fbt._("Get the best of", null, {
 						hk: "3uDkLo"
-					})), r.a.createElement("h3", null, l.fbt._("{subbredit name}", [l.fbt._param("subbredit name", d)], {
+					})), r.a.createElement("h3", null, u.fbt._("{subbredit name}", [u.fbt._param("subbredit name", d)], {
 						hk: "3QhSOM"
 					}))), r.a.createElement("div", {
-						className: N.a.subredditWrapper
+						className: I.a.subredditWrapper
 					}, r.a.createElement("div", {
-						className: N.a.subbreditTitle
-					}, a, r.a.createElement("span", null, d), r.a.createElement(j.a, {
+						className: I.a.subbreditTitle
+					}, a, r.a.createElement("span", null, d), r.a.createElement(S.a, {
 						name: "notification_frequent_fill",
-						className: N.a.notificationIcon
-					})), r.a.createElement(H.q, {
-						className: N.a.subscribeButton,
-						priority: H.b.Primary,
-						size: H.c.M,
-						text: l.fbt._("Get updates", null, {
+						className: I.a.notificationIcon
+					})), r.a.createElement(V.q, {
+						className: I.a.subscribeButton,
+						priority: V.b.Primary,
+						size: V.c.M,
+						text: u.fbt._("Get updates", null, {
 							hk: "3Ntvs6"
 						}),
 						onClick: () => {
-							n(), i(x.b.FREQUENT), o(J(x.b.FREQUENT.toLowerCase()))
+							n(), i(f.b.FREQUENT), o(K(f.b.FREQUENT.toLowerCase()))
 						}
 					})), r.a.createElement("button", {
-						className: N.a.hideButton,
+						className: I.a.hideButton,
 						onClick: n
-					}, l.fbt._("Not now", null, {
+					}, u.fbt._("Not now", null, {
 						hk: "3bTewe"
 					})))
 				},
-				X = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx");
-			var Z = ({
+				Z = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx");
+			var $ = ({
 					arrowProps: e,
 					popperProps: t,
 					visible: s,
 					subredditName: n
-				}) => r.a.createElement(X.a, {
+				}) => r.a.createElement(Z.a, {
 					arrowProps: e,
 					popperProps: t,
 					visible: s
 				}, r.a.createElement("div", {
-					className: N.a.tooltipText
-				}, r.a.createElement("p", null, l.fbt._("Love r/{subreddit name}?", [l.fbt._param("subreddit name", n)], {
+					className: I.a.tooltipText
+				}, r.a.createElement("p", null, u.fbt._("Love r/{subreddit name}?", [u.fbt._param("subreddit name", n)], {
 					hk: "2ftUJw"
-				})), r.a.createElement("p", null, l.fbt._("Get updates on it!", null, {
+				})), r.a.createElement("p", null, u.fbt._("Get updates on it!", null, {
 					hk: "XD60G"
 				})))),
-				$ = s("./src/reddit/hooks/useInfoTextTooltip.ts");
-			var ee = s("./src/lib/localStorageAvailable/index.ts"),
-				te = s("./src/reddit/constants/experiments.ts"),
-				se = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				ne = s("./src/reddit/selectors/experiments/utils.ts"),
-				re = s("./src/reddit/selectors/user.ts");
-			const ie = e => (Object(re.J)(e) || Object(re.K)(e)) && Object(ee.a)(),
-				oe = Object(o.a)(e => Object(se.c)(e, {
-					experimentName: te.V,
-					experimentEligibilitySelector: ie
-				}), ne.a),
-				ae = Object(o.a)(oe, e => e === te.ec.ToolTip_nonSub),
-				de = Object(o.a)(oe, e => e === te.ec.ToolTip_2ndVisit),
-				ce = Object(o.a)(oe, e => e === te.ec.ToolTip_3rdVisit),
-				le = Object(o.a)(oe, e => e === te.ec.HalfSheet_2ndVisit),
-				ue = Object(o.a)(oe, e => e === te.ec.HalfSheet_3rdVisit),
-				me = Object(o.a)(le, ue, de, ce, ae, (e, t, s, n, r) => e || t || s || n || r);
-			var pe = e => {
+				ee = s("./src/reddit/hooks/useInfoTextTooltip.ts");
+			var te = s("./src/lib/localStorageAvailable/index.ts"),
+				se = s("./src/reddit/constants/experiments.ts"),
+				ne = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				re = s("./src/reddit/selectors/experiments/utils.ts"),
+				ie = s("./src/reddit/selectors/user.ts");
+			const oe = e => (Object(ie.J)(e) || Object(ie.K)(e)) && Object(te.a)(),
+				ae = Object(o.a)(e => Object(ne.c)(e, {
+					experimentName: se.V,
+					experimentEligibilitySelector: oe
+				}), re.a),
+				de = Object(o.a)(ae, e => e === se.ec.ToolTip_nonSub),
+				ce = Object(o.a)(ae, e => e === se.ec.ToolTip_2ndVisit),
+				le = Object(o.a)(ae, e => e === se.ec.ToolTip_3rdVisit),
+				ue = Object(o.a)(ae, e => e === se.ec.HalfSheet_2ndVisit),
+				me = Object(o.a)(ae, e => e === se.ec.HalfSheet_3rdVisit),
+				pe = Object(o.a)(ue, me, ce, le, de, (e, t, s, n, r) => e || t || s || n || r);
+			var be = e => {
 					const t = Object(i.d)(),
-						s = Object(K.a)(),
-						o = Object(i.e)(le),
-						a = Object(i.e)(ue),
-						d = Object(i.e)(de),
-						c = Object(i.e)(ce),
-						l = Object(i.e)(ae),
-						u = Object(k.b)(B),
-						m = Object(k.b)(L),
-						p = Object($.a)(M),
-						[b, f] = function(e, t) {
-							const [s, r] = Object(n.useState)(Object(h.L)(e, t));
+						s = Object(G.a)(),
+						o = Object(i.e)(ue),
+						a = Object(i.e)(me),
+						d = Object(i.e)(ce),
+						c = Object(i.e)(le),
+						l = Object(i.e)(de),
+						u = Object(w.b)(L),
+						m = Object(w.b)(M),
+						p = Object(ee.a)(F),
+						[b, h] = function(e, t) {
+							const [s, r] = Object(n.useState)(Object(x.L)(e, t));
 							return [s, Object(n.useCallback)(() => {
-								const s = Object(h.a)(e, t);
+								const s = Object(x.a)(e, t);
 								r(s)
 							}, [e, t, r])]
 						}(e.userId, e.subredditId);
 					Object(n.useEffect)(() => {
-						e.notificationLevel !== x.b.LOW && e.notificationLevel !== x.b.OFF || f()
+						e.notificationLevel !== f.b.LOW && e.notificationLevel !== f.b.OFF || h()
 					}, [e.subredditId]);
 					const g = o && 2 === b || a && 3 === b,
 						y = d && 2 === b || c && 3 === b || l && e.showTooltipAfterSubscription,
 						v = () => {
 							u.hide()
 						},
-						_ = () => {
+						E = () => {
 							m.hide()
 						},
-						S = () => {
+						C = () => {
 							p.hide()
 						};
 					Object(n.useEffect)(() => (g && (m.update && m.update(), m.show()), y && (p.update && p.update(), p.show()), () => {
-						_(), S(), v()
+						E(), C(), v()
 					}), [e.subredditName, g, y]);
-					const I = () => {
-							_(), S(), u.show()
+					const N = () => {
+							E(), C(), u.show()
 						},
 						T = (e => `dropdown-${e}`)(e.subredditName),
 						P = (e => `popup-${e}`)(e.subredditName);
-					Object(O.a)(T, v);
-					const F = Object(n.useCallback)(e => {
-							e.stopPropagation(), u.visible ? v() : I()
-						}, [v, I, u.visible]),
+					Object(k.a)(T, v);
+					const B = Object(n.useCallback)(e => {
+							e.stopPropagation(), u.visible ? v() : N()
+						}, [v, N, u.visible]),
 						R = Object(n.useCallback)(n => {
-							v(), S(), _(), t(E(e.subredditId, n)), s(J(n.toLowerCase()))
-						}, [v, e.subredditId, t, s, S, v]);
+							v(), C(), E(), t(_(e.subredditId, n)), s(K(n.toLowerCase()))
+						}, [v, e.subredditId, t, s, C, v]);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
 						type: "button",
-						className: N.a.notificationButton,
-						ref: Object(C.a)(p.target.ref, u.target.ref, m.target.ref),
-						onClick: F,
+						className: I.a.notificationButton,
+						ref: Object(O.a)(p.target.ref, u.target.ref, m.target.ref),
+						onClick: B,
 						"data-testid": "subredditNotificationButton"
 					}, (e => {
 						switch (e) {
-							case x.b.FREQUENT:
-								return r.a.createElement(j.a, {
+							case f.b.FREQUENT:
+								return r.a.createElement(S.a, {
 									name: "notification_frequent_fill",
-									className: N.a.notificationIcon
+									className: I.a.notificationIcon
 								});
-							case x.b.OFF:
-								return r.a.createElement(j.a, {
+							case f.b.OFF:
+								return r.a.createElement(S.a, {
 									name: "notification_off",
-									className: N.a.notificationIcon
+									className: I.a.notificationIcon
 								});
-							case x.b.LOW:
+							case f.b.LOW:
 							default:
-								return r.a.createElement(j.a, {
+								return r.a.createElement(S.a, {
 									name: "notification",
-									className: N.a.notificationIcon
+									className: I.a.notificationIcon
 								})
 						}
-					})(e.notificationLevel)), y && r.a.createElement(Z, {
+					})(e.notificationLevel)), y && r.a.createElement($, {
 						arrowProps: p.arrowProps,
 						popperProps: p.popperProps,
 						visible: p.visible,
 						subredditName: e.subredditName
-					}), r.a.createElement(w.a, {
+					}), r.a.createElement(j.a, {
 						popperProps: u.popperProps,
 						visible: u.visible,
 						tooltipId: T
-					}, r.a.createElement(U, {
+					}, r.a.createElement(H, {
 						dropdownId: T,
 						notificationLevel: e.notificationLevel,
 						onClick: R
-					})), g && r.a.createElement(w.a, {
+					})), g && r.a.createElement(j.a, {
 						arrowProps: m.arrowProps,
 						popperProps: m.popperProps,
 						visible: m.visible,
 						tooltipId: P,
-						className: N.a.popupTooltip
-					}, r.a.createElement(Q, {
+						className: I.a.popupTooltip
+					}, r.a.createElement(X, {
 						subredditName: e.subredditName,
 						subredditIcon: e.subredditIcon,
 						shouldShowSubredditIcon: e.shouldShowSubredditIcon,
-						onHide: _,
+						onHide: E,
 						onUpdate: R
 					})))
 				},
-				be = s("./src/reddit/components/DownToChatBanner/StartChattingButton/index.tsx"),
-				he = s("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
-				xe = s("./src/reddit/components/SubredditNav/index.tsx"),
-				fe = s("./src/reddit/components/SubscribeButton/index.tsx"),
-				ge = s("./src/reddit/constants/postLayout.ts"),
-				ye = s("./src/reddit/constants/posts.ts"),
-				ve = s("./src/reddit/featureFlags/index.ts"),
-				Ee = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
-				_e = s("./src/reddit/constants/tracking.ts");
-			var Ce = s("./src/reddit/selectors/inlineSubredditEditing.ts"),
-				Oe = s("./src/reddit/selectors/subreddit.ts"),
-				ke = s("./src/reddit/selectors/widgets.ts"),
-				we = s("./src/reddit/components/CommunityIdTopBar/index.m.less"),
-				je = s.n(we);
-			const Se = c.a.img("SubredditIcon", je.a),
-				Ne = Object(o.c)({
-					isHighFrequencyEnabled: me,
-					notificationLevel: Oe.G,
-					spPollsEnabled: ve.d.spPolls,
+				he = s("./src/reddit/components/DownToChatBanner/StartChattingButton/index.tsx"),
+				xe = s("./src/reddit/components/SubredditIcon/EditableSubredditIcon.tsx"),
+				fe = s("./src/reddit/components/SubredditNav/index.tsx"),
+				ge = s("./src/reddit/components/SubscribeButton/index.tsx"),
+				ye = s("./src/reddit/constants/postLayout.ts"),
+				ve = s("./src/reddit/constants/posts.ts"),
+				Ee = s("./src/reddit/featureFlags/index.ts"),
+				_e = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
+				Ce = s("./src/reddit/constants/tracking.ts");
+			var Oe = s("./src/reddit/selectors/inlineSubredditEditing.ts"),
+				ke = s("./src/reddit/selectors/subreddit.ts"),
+				we = s("./src/reddit/selectors/widgets.ts"),
+				je = s("./src/reddit/components/CommunityIdTopBar/index.m.less"),
+				Se = s.n(je);
+			const Ne = c.a.img("SubredditIcon", Se.a),
+				Ie = Object(o.c)({
+					isHighFrequencyEnabled: pe,
+					notificationLevel: ke.G,
+					spPollsEnabled: Ee.d.spPolls,
 					subredditInlineEditingEnabled: (e, {
 						subredditId: t
-					}) => Object(Ce.a)(e, {
+					}) => Object(Oe.a)(e, {
 						subredditId: t
 					}),
 					tournamentsEnabled: (e, {
 						subredditId: t
-					}) => !!t && Object(Oe.N)(e, {
+					}) => !!t && Object(ke.N)(e, {
 						subredditId: t
 					}),
-					userId: re.h,
+					userId: ie.h,
 					userIsSubscriber: (e, {
 						subredditName: t
 					}) => {
 						const s = t;
-						return Object(Oe.fb)(e, {
+						return Object(ke.fb)(e, {
 							identifier: {
 								name: s,
 								type: "subreddit"
@@ -941,23 +942,23 @@
 					},
 					widget: (e, {
 						subredditId: t
-					}) => t ? Object(ke.f)(e, {
+					}) => t ? Object(we.f)(e, {
 						subredditId: t
 					}) : void 0
 				});
-			t.a = Object(i.b)(Ne, (e, t) => ({
+			t.a = Object(i.b)(Ie, (e, t) => ({
 				_onOpenWelcomeMessageModal: () => {
 					var s;
 					const n = t.subredditId || (null === (s = t.subreddit) || void 0 === s ? void 0 : s.id);
-					if (n) return e(Object(_.d)(n))
+					if (n) return e(Object(C.d)(n))
 				},
 				_updateSubredditInfo: () => {
 					var s;
 					const n = t.subredditId || (null === (s = t.subreddit) || void 0 === s ? void 0 : s.id);
-					if (n) return e(g({
+					if (n) return e(y({
 						subredditAboutInfo: {
 							[n]: {
-								notificationLevel: x.b.LOW
+								notificationLevel: f.b.LOW
 							}
 						}
 					}))
@@ -969,80 +970,82 @@
 				onOpenWelcomeMessageModal: () => !e.userIsSubscriber && t._onOpenWelcomeMessageModal(),
 				updateSubredditInfo: () => e.userIsSubscriber && t._updateSubredditInfo()
 			}))(Object(d.a)(e => {
-				const [t, s] = Object(n.useState)(!1), i = e.subreddit ? e.subreddit.id : e.subredditId, o = e.subreddit ? e.subreddit.name : e.subredditName, d = e.subreddit ? e.subreddit.url : e.subredditUrl, c = e.subreddit ? e.subreddit.title : "", l = e.subreddit && Object(Ee.a)(e), u = !(!e.theme || !l), m = e.isHighFrequencyEnabled && e.userIsSubscriber, p = o.charAt(0).toUpperCase() + o.slice(1), b = !!e.subreddit && e.subredditInlineEditingEnabled, x = Object(a.a)(je.a.SubredditIcon, je.a.editableIcon, {
-					[je.a.emptyEditableIcon]: !l
-				}), f = r.a.createElement(he.a, {
-					className: x,
+				const [t, s] = Object(n.useState)(!1), i = e.subreddit ? e.subreddit.id : e.subredditId, o = e.subreddit ? e.subreddit.name : e.subredditName, d = e.subreddit ? e.subreddit.url : e.subredditUrl, c = e.subreddit ? e.subreddit.title : "", u = e.subreddit && Object(_e.a)(e), m = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && u), p = e.isHighFrequencyEnabled && e.userIsSubscriber, b = o.charAt(0).toUpperCase() + o.slice(1), h = !!e.subreddit && e.subredditInlineEditingEnabled, f = Object(a.a)(Se.a.SubredditIcon, Se.a.editableIcon, {
+					[Se.a.emptyEditableIcon]: !u
+				}), g = m ? r.a.createElement(xe.a, {
+					className: f,
 					subreddit: e.subreddit,
-					iconUrl: l || void 0,
+					iconUrl: u || void 0,
 					inTopBar: !0
-				}), g = u ? r.a.createElement(Se, {
-					src: l || void 0
-				}) : r.a.createElement(q, {
-					className: je.a.DefaultIcon
-				}), y = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0), v = e.layout ? e.layout === ge.g.Large ? "984px" : "100%" : "1086px";
+				}) : r.a.createElement(z, {
+					className: Se.a.DefaultIcon
+				}), y = m ? r.a.createElement(Ne, {
+					src: u || void 0
+				}) : r.a.createElement(z, {
+					className: Se.a.DefaultIcon
+				}), v = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0), E = e.layout ? e.layout === ye.g.Large ? "984px" : "100%" : "1086px";
 				Object(n.useEffect)(() => {
 					t && s(!1)
 				}, [i]);
 				return r.a.createElement("div", {
-					className: je.a.container,
+					className: Se.a.container,
 					style: {
-						maxWidth: v
+						maxWidth: E
 					}
 				}, r.a.createElement("div", {
-					className: je.a.subredditMetaContainer
-				}, b ? f : g, r.a.createElement("div", {
-					className: Object(a.a)(je.a.textContainer, {
-						[je.a.textContainerNoIcon]: !u
+					className: Se.a.subredditMetaContainer
+				}, h ? g : y, r.a.createElement("div", {
+					className: Object(a.a)(Se.a.textContainer, {
+						[Se.a.textContainerNoIcon]: !m
 					})
 				}, r.a.createElement("div", {
-					className: je.a.text
+					className: Se.a.text
 				}, r.a.createElement("h1", {
-					className: je.a.title
-				}, c || p), !!c && r.a.createElement("h2", {
-					className: je.a.description
+					className: Se.a.title
+				}, c || b), !!c && r.a.createElement("h2", {
+					className: Se.a.description
 				}, "r/", o)), r.a.createElement("div", {
-					className: je.a.subscribeButtonContainer
-				}, r.a.createElement(fe.a, {
-					className: je.a.subscribeButton,
+					className: Se.a.subscribeButtonContainer
+				}, r.a.createElement(ge.a, {
+					className: Se.a.subscribeButton,
 					getEventFactory: e => {
 						return (e => t => ({
-							...V.defaults(t),
+							...J.defaults(t),
 							source: "id_banner",
-							action: _e.c.CLICK,
+							action: Ce.c.CLICK,
 							noun: e,
-							subreddit: V.subreddit(t)
+							subreddit: J.subreddit(t)
 						}))(e ? "unsubscribe" : "subscribe")
 					},
 					identifier: {
 						name: o,
-						type: ye.a.SUBREDDIT
+						type: ve.a.SUBREDDIT
 					},
 					onClick: e.onOpenWelcomeMessageModal,
 					small: !0,
 					enableNotificationTooltipAfterSubscription: () => s(!0),
 					afterUnsubscribeAction: () => {
-						i && (Object(h.Z)(e.userId, i), e.updateSubredditInfo())
+						i && (Object(x.Z)(e.userId, i), e.updateSubredditInfo())
 					}
-				})), m && i && e.notificationLevel && r.a.createElement("div", {
-					className: je.a.notificationButtonContainer
-				}, r.a.createElement(pe, {
+				})), p && i && e.notificationLevel && r.a.createElement("div", {
+					className: Se.a.notificationButtonContainer
+				}, r.a.createElement(be, {
 					notificationLevel: e.notificationLevel,
 					subredditName: o,
 					subredditId: i,
-					subredditIcon: l,
-					shouldShowSubredditIcon: u,
+					subredditIcon: u,
+					shouldShowSubredditIcon: m,
 					showTooltipAfterSubscription: t,
 					userId: e.userId
-				})), e.subreddit && r.a.createElement(be.a, {
+				})), e.subreddit && r.a.createElement(he.a, {
 					subreddit: e.subreddit,
 					headerButton: !0
-				}))), y && r.a.createElement(xe.a, {
+				}))), v && r.a.createElement(fe.a, {
 					disableFullscreen: !0,
 					isTopBannerVariant: !0,
 					homeUrl: d,
 					subredditId: i,
-					subredditNavContainerClassName: je.a.subredditNavContainer
+					subredditNavContainerClassName: Se.a.subredditNavContainer
 				}))
 			}))
 		},
@@ -6257,4 +6260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ed1d133f17837f4e86a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7083981f490dc28a9740.js.map
