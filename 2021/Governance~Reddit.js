@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1ea11ad0305db319ca88.js
-// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.aef7674f2cdac3a44d07.js
+// Retrieved at 6/23/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4187,6 +4187,7 @@
 				mOpen: "_24x5wRDxU1y38uXQXvLE4m",
 				mNotPinned: "_3rS8YTDjcT7fs0k9W4rxDG",
 				mPinned: "_3NgME2HFZvM-tgAE3s5hXS",
+				containerExp: "_11HXvp3b_PzyK6RcoEr4bJ",
 				containerText: "_1GieMuLljOrqnVpRAwz7VP",
 				defaultIcon: "eZQ5o2PrhR59wkAtPbxMU",
 				customFeedIcon: "_1r2uMQFZw5Hg53NkK6rsKv",
@@ -4798,6 +4799,7 @@
 		"./src/reddit/controls/Search/index.m.less": function(e, t, r) {
 			e.exports = {
 				input: "_2xQx4j6lBnDGQ8QsRnJEJa",
+				inputExp: "_2LYbyIRoAAxzwenb61YLcr",
 				iconContainer: "_2QGKgHKTtOwKHI4B_LI0YM",
 				icon: "_1hdDhVEGWEdVJcgy2XQ2Eq",
 				relativeWrapper: "_1blFGqU8stoZgWSZ8MQNpf",
@@ -22126,4 +22128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1ea11ad0305db319ca88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aef7674f2cdac3a44d07.js.map

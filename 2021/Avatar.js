@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.80c8d4cf819eba04d609.js
-// Retrieved at 6/16/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.b0979f87cea55521c367.js
+// Retrieved at 6/23/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -10,8 +10,8 @@
 				n = a("./node_modules/react-redux/es/index.js"),
 				o = a("./node_modules/react-router/esm/react-router.js"),
 				c = a("./src/config.ts"),
-				d = a("./src/lib/classNames/index.ts"),
-				i = a("./src/reddit/helpers/trackers/snoovatar.ts"),
+				i = a("./src/lib/classNames/index.ts"),
+				d = a("./src/reddit/helpers/trackers/snoovatar.ts"),
 				l = a("./src/reddit/hooks/useTracking.ts"),
 				u = a("./src/reddit/components/SnoovatarModal/index.m.less"),
 				m = a.n(u);
@@ -24,10 +24,10 @@
 				o.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => o.append(e, t));
 				const u = Object(l.a)();
 				Object(s.useEffect)(() => {
-					u(i.e)
+					u(d.e)
 				}, [u]);
 				const v = Object(n.e)(e => e.user.session),
-					f = Object(s.useRef)(null),
+					x = Object(s.useRef)(null),
 					_ = Object(s.useCallback)(e => {
 						v && e && e.postMessage({
 							type: "injectAuth",
@@ -39,16 +39,16 @@
 					}, [v]);
 				return Object(s.useEffect)(() => {
 					var e;
-					return _(null === (e = null == f ? void 0 : f.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [f, _]), Object(s.useEffect)(() => {
+					return _(null === (e = null == x ? void 0 : x.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [x, _]), Object(s.useEffect)(() => {
 					const e = e => {
 						"refreshAuth" === (null == e ? void 0 : e.data) && _(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
 				}, [_]), r.a.createElement("div", {
-					className: Object(d.a)(m.a.iframeContainer, e)
+					className: Object(i.a)(m.a.iframeContainer, e)
 				}, r.a.createElement("iframe", {
-					ref: f,
+					ref: x,
 					src: `${c.a.snoovatarUrl}/static/client/?${o.toString()}`
 				}))
 			})
@@ -64,6 +64,7 @@
 		"./src/reddit/pages/Avatar/index.m.less": function(e, t, a) {
 			e.exports = {
 				container: "_2Moi-yX3bvB_vnqKAGk7hu",
+				containerExp: "_2XQSxcZene8EbyNUVEZqIJ",
 				content: "_3WuQYS3HUXsj1Z3hBTnsdb"
 			}
 		},
@@ -72,17 +73,22 @@
 			a.r(t);
 			var s = a("./node_modules/react/index.js"),
 				r = a.n(s),
-				n = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
-				o = a("./src/reddit/pages/Avatar/index.m.less"),
-				c = a.n(o);
+				n = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/contexts/NavbarExp.ts"),
+				c = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
+				i = a("./src/reddit/pages/Avatar/index.m.less"),
+				d = a.n(i);
 			t.default = function() {
+				const e = Object(s.useContext)(o.a);
 				return r.a.createElement("div", {
-					className: c.a.container
-				}, r.a.createElement(n.a, {
-					className: c.a.content
+					className: Object(n.a)(d.a.container, {
+						[d.a.containerExp]: e
+					})
+				}, r.a.createElement(c.a, {
+					className: d.a.content
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.80c8d4cf819eba04d609.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.b0979f87cea55521c367.js.map

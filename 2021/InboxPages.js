@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.efd7472dac700f283f5e.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.5071a2043c80ff588fbd.js
+// Retrieved at 6/23/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -10,7 +10,8 @@
 		},
 		"./src/reddit/pages/RedditEmbed/index.m.less": function(e, t, s) {
 			e.exports = {
-				wrapper: "e8fTXufFydLy7wHBm6rHP"
+				wrapper: "e8fTXufFydLy7wHBm6rHP",
+				wrapperExp: "IoQ1HVty-IsaMDvgZhGwf"
 			}
 		},
 		"./src/reddit/pages/RedditEmbed/index.tsx": function(e, t, s) {
@@ -20,13 +21,14 @@
 				o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				d = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/lib/addQueryParams/index.ts"),
-				a = s("./src/lib/env/index.ts"),
-				l = s("./src/reddit/actions/platform.ts"),
+				c = s("./node_modules/reselect/es/index.js"),
+				i = s("./src/lib/addQueryParams/index.ts"),
+				a = s("./src/lib/classNames/index.ts"),
+				l = s("./src/lib/env/index.ts"),
+				u = s("./src/reddit/actions/platform.ts"),
 				m = s("./src/reddit/components/IFrame/index.m.less"),
-				u = s.n(m);
-			class p extends n.a.Component {
+				p = s.n(m);
+			class b extends n.a.Component {
 				constructor() {
 					super(...arguments), this.ref = null
 				}
@@ -47,7 +49,7 @@
 						src: e
 					} = this.props;
 					return n.a.createElement("iframe", {
-						className: u.a.IFrame,
+						className: p.a.IFrame,
 						ref: e => this.setRef(e),
 						src: e,
 						onLoad: () => this.onLoad
@@ -55,14 +57,15 @@
 				}
 			}
 			var f = s("./src/reddit/constants/componentSizes.ts"),
-				h = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				b = s("./src/reddit/selectors/user.ts"),
-				O = s("./src/reddit/selectors/userPrefs.ts"),
-				y = s("./src/reddit/pages/RedditEmbed/index.m.less"),
-				g = s.n(y);
+				h = s("./src/reddit/contexts/NavbarExp.ts"),
+				O = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				x = s("./src/reddit/selectors/user.ts"),
+				y = s("./src/reddit/selectors/userPrefs.ts"),
+				g = s("./src/reddit/pages/RedditEmbed/index.m.less"),
+				v = s.n(g);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function L() {
+				return (L = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -70,27 +73,32 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const L = Object(i.c)({
-					isSubscriptionsPinned: O.b,
+			const S = Object(c.c)({
+					isSubscriptionsPinned: y.b,
 					url: e => e.platform.currentPage ? e.platform.currentPage.url : "",
 					servedOrigin: e => `${e.meta.protocol}://${e.meta.domain}`,
-					nightmode: b.W
+					nightmode: x.W
 				}),
-				S = Object(d.b)(L, e => ({
-					onTitleChange: t => e(l.l({
+				j = Object(d.b)(S, e => ({
+					onTitleChange: t => e(u.l({
 						title: t
 					}))
 				})),
-				v = ({
+				w = ({
 					offsetLeft: e,
 					children: t,
 					...s
-				}) => n.a.createElement("div", x({
-					className: g.a.wrapper,
-					style: {
-						left: e
-					}
-				}, s), t);
+				}) => {
+					const r = Object(o.useContext)(h.a);
+					return n.a.createElement("div", L({
+						className: Object(a.a)(v.a.wrapper, {
+							[v.a.wrapperExp]: r
+						}),
+						style: {
+							left: e
+						}
+					}, s), t)
+				};
 			class _ extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -104,7 +112,7 @@
 							marginRight: e
 						} = document.body.style;
 						!!e != !!this.state.bodyScrollOffset && (e ? this.setState({
-							bodyScrollOffset: Object(h.d)(document.body)
+							bodyScrollOffset: Object(O.d)(document.body)
 						}) : this.setState({
 							bodyScrollOffset: 0
 						}))
@@ -132,24 +140,24 @@
 					} = this.props;
 					let o = 0;
 					e && (o += f.u), 0 !== this.state.bodyScrollOffset && (o -= this.state.bodyScrollOffset);
-					const d = Object(a.a)() ? t : "true",
-						i = Object(a.a)() ? r.a.redditUrl : "";
-					let l;
-					return l = s ? i + Object(c.a)(this.props.url, {
+					const d = Object(l.a)() ? t : "true",
+						c = Object(l.a)() ? r.a.redditUrl : "";
+					let a;
+					return a = s ? c + Object(i.a)(this.props.url, {
 						embedded: d,
 						dark: "true"
-					}) : i + Object(c.a)(this.props.url, {
+					}) : c + Object(i.a)(this.props.url, {
 						embedded: d
-					}), n.a.createElement(v, {
+					}), n.a.createElement(w, {
 						offsetLeft: o
-					}, n.a.createElement(p, {
-						src: l,
+					}, n.a.createElement(b, {
+						src: a,
 						onLoad: this.onLoad
 					}))
 				}
 			}
-			t.default = S(_)
+			t.default = j(_)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.efd7472dac700f283f5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.5071a2043c80ff588fbd.js.map
