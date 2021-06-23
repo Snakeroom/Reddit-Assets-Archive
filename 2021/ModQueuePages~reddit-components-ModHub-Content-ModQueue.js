@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.fb9a4aa2c0c7f73369ed.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.643caba01db4db2b519a.js
+// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -1634,83 +1634,86 @@
 						isFrontpage: l,
 						isProfilePostListing: d,
 						isTopicPage: c,
-						listingKey: p,
-						listingName: u,
-						pageLayer: h,
-						pageReferrer: g,
-						postClickEventFactory: x,
-						redditStyle: f,
-						shouldHideFlair: C,
-						triggerNewPostPill: E,
-						postIds: k
-					} = this.props, S = 0 === t, O = `post-${o}-${e}-${t}-${s?"last-index":""}-${u}-${p}-${g}`;
-					let _;
-					if (void 0 === (_ = this.scrollChildCache.get(O))) {
+						listingBelowVariant: p,
+						listingKey: u,
+						listingName: h,
+						pageLayer: g,
+						pageReferrer: x,
+						postClickEventFactory: f,
+						redditStyle: C,
+						shouldHideFlair: E,
+						triggerNewPostPill: k,
+						postIds: S
+					} = this.props, O = 0 === t, _ = `post-${o}-${e}-${t}-${s?"last-index":""}-${h}-${u}-${x}`;
+					let v;
+					if (void 0 === (v = this.scrollChildCache.get(_))) {
 						const {
-							inSubredditOrProfile: v,
-							postsById: P
-						} = this.props, L = P[e], T = L.crosspostRootId && P[L.crosspostRootId] ? P[L.crosspostRootId] : L;
-						L.crosspostRootId && !P[L.crosspostRootId] && y.c.withScope(e => {
-							e.setExtra("errorType", b.r.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: P,
+							postsById: L
+						} = this.props, T = L[e], N = T.crosspostRootId && L[T.crosspostRootId] ? L[T.crosspostRootId] : T;
+						T.crosspostRootId && !L[T.crosspostRootId] && y.c.withScope(e => {
+							e.setExtra("errorType", b.r.API), e.setExtra("description", `Post ${T.id} is crosspost of ${T.crosspostRootId}, but ` + `${T.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
 						});
-						const N = this.props.postComponentForLayout({
-								isCrosspost: !!L.crosspostRootId,
-								isFirstPost: S,
-								layout: o,
-								post: T
-							}),
-							F = `post-list-item-[layout: ${o}]-[postId: ${e}]`,
-							R = q(e, o, s, p, u, g, this.props, t),
-							M = G(e, o, this.props, t, h),
-							B = J(e, this.props),
-							A = T.media && T.media.type === w.o.EMBED ? T.media.provider : null;
-						_ = {
-							estHeight: Object(j.c)(L, o),
+						const F = this.props.postComponentForLayout({
+							isCrosspost: !!T.crosspostRootId,
+							isFirstPost: O,
+							layout: o,
+							post: N
+						});
+						let R = `post-list-item-[layout: ${o}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && u && (R += `--${u}`);
+						const M = q(e, o, s, u, h, x, this.props, t),
+							B = G(e, o, this.props, t, g),
+							A = J(e, this.props),
+							D = N.media && N.media.type === w.o.EMBED ? N.media.provider : null;
+						v = {
+							estHeight: Object(j.c)(T, o),
 							id: e,
-							isFocusable: !(!T.media || !(o === I.g.Large || o === I.g.Classic && Object(w.G)(T.media))) && (w.d.has(T.media.type) && (!A || !w.s.has(A)) && !T.isSpoiler && !T.isNSFW),
-							trackOnEnteredViewport: R,
-							trackOnExitedViewport: M,
+							isFocusable: !(!N.media || !(o === I.g.Large || o === I.g.Classic && Object(w.G)(N.media))) && (w.d.has(N.media.type) && (!D || !w.s.has(D)) && !N.isSpoiler && !N.isNSFW),
+							trackOnEnteredViewport: M,
+							trackOnExitedViewport: B,
 							render: ({
 								className: o,
 								height: b,
-								width: g,
+								width: x,
 								remeasure: y,
-								setScrollerChildRef: O,
-								shouldLoadInitially: I
-							}) => m.a.createElement(N, {
+								setScrollerChildRef: I,
+								shouldLoadInitially: _
+							}) => m.a.createElement(F, {
 								className: o,
 								currentProfileName: n,
-								key: F,
-								availableWidth: g,
-								eventFactory: x,
-								first: S,
-								forceLoadMedia: I,
+								key: R,
+								availableWidth: x,
+								eventFactory: f,
+								first: O,
+								forceLoadMedia: _,
 								hostPostData: r,
-								inSubredditOrProfile: v,
+								inSubredditOrProfile: P,
 								isCommentPermalink: a,
 								isCommentsPage: i,
 								isFrontpage: l,
 								isProfilePostListing: d,
 								isTopicPage: c,
-								listingKey: p,
-								listingName: u,
-								pageLayer: h,
+								listingBelowVariant: p,
+								listingKey: u,
+								listingName: h,
+								pageLayer: g,
 								last: s,
-								onClickPost: B,
+								onClickPost: A,
 								onSizeChanged: y,
 								postId: e,
-								postIds: k,
-								redditStyle: f,
+								postIds: S,
+								redditStyle: C,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: O,
-								shouldHideFlair: C,
+								scrollerItemRef: I,
+								shouldHideFlair: E,
 								onceInViewport: () => {
-									null == E || E(t)
+									null == k || k(t)
 								}
 							})
-						}, this.scrollChildCache.set(O, _)
+						}, this.scrollChildCache.set(_, v)
 					}
-					return _
+					return v
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -2074,4 +2077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.fb9a4aa2c0c7f73369ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.643caba01db4db2b519a.js.map

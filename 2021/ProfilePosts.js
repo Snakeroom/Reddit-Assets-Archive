@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.3f82f10da4147c2153ba.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.4fecfd2e4e3c53d51e40.js
+// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3939,83 +3939,86 @@
 						isFrontpage: d,
 						isProfilePostListing: c,
 						isTopicPage: l,
-						listingKey: m,
-						listingName: p,
-						pageLayer: h,
-						pageReferrer: f,
-						postClickEventFactory: g,
-						redditStyle: _,
-						shouldHideFlair: y,
-						triggerNewPostPill: v,
-						postIds: w
-					} = this.props, E = 0 === t, k = `post-${s}-${e}-${t}-${n?"last-index":""}-${p}-${m}-${f}`;
-					let O;
-					if (void 0 === (O = this.scrollChildCache.get(k))) {
+						listingBelowVariant: m,
+						listingKey: p,
+						listingName: h,
+						pageLayer: f,
+						pageReferrer: g,
+						postClickEventFactory: _,
+						redditStyle: y,
+						shouldHideFlair: v,
+						triggerNewPostPill: w,
+						postIds: E
+					} = this.props, k = 0 === t, O = `post-${s}-${e}-${t}-${n?"last-index":""}-${h}-${p}-${g}`;
+					let j;
+					if (void 0 === (j = this.scrollChildCache.get(O))) {
 						const {
-							inSubredditOrProfile: j,
-							postsById: S
-						} = this.props, P = S[e], L = P.crosspostRootId && S[P.crosspostRootId] ? S[P.crosspostRootId] : P;
-						P.crosspostRootId && !S[P.crosspostRootId] && x.c.withScope(e => {
-							e.setExtra("errorType", b.r.API), e.setExtra("description", `Post ${P.id} is crosspost of ${P.crosspostRootId}, but ` + `${P.crosspostRootId} details are missing in the state`), x.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: S,
+							postsById: P
+						} = this.props, L = P[e], T = L.crosspostRootId && P[L.crosspostRootId] ? P[L.crosspostRootId] : L;
+						L.crosspostRootId && !P[L.crosspostRootId] && x.c.withScope(e => {
+							e.setExtra("errorType", b.r.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), x.c.captureMessage("Crosspost parent details are missing")
 						});
-						const T = this.props.postComponentForLayout({
-								isCrosspost: !!P.crosspostRootId,
-								isFirstPost: E,
-								layout: s,
-								post: L
-							}),
-							D = `post-list-item-[layout: ${s}]-[postId: ${e}]`,
-							F = Y(e, s, n, m, p, f, this.props, t),
-							B = K(e, s, this.props, t, h),
-							R = J(e, this.props),
-							A = L.media && L.media.type === I.o.EMBED ? L.media.provider : null;
-						O = {
-							estHeight: Object(N.c)(P, s),
+						const D = this.props.postComponentForLayout({
+							isCrosspost: !!L.crosspostRootId,
+							isFirstPost: k,
+							layout: s,
+							post: T
+						});
+						let F = `post-list-item-[layout: ${s}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && p && (F += `--${p}`);
+						const B = Y(e, s, n, p, h, g, this.props, t),
+							R = K(e, s, this.props, t, f),
+							A = J(e, this.props),
+							M = T.media && T.media.type === I.o.EMBED ? T.media.provider : null;
+						j = {
+							estHeight: Object(N.c)(L, s),
 							id: e,
-							isFocusable: !(!L.media || !(s === C.g.Large || s === C.g.Classic && Object(I.G)(L.media))) && (I.d.has(L.media.type) && (!A || !I.s.has(A)) && !L.isSpoiler && !L.isNSFW),
-							trackOnEnteredViewport: F,
-							trackOnExitedViewport: B,
+							isFocusable: !(!T.media || !(s === C.g.Large || s === C.g.Classic && Object(I.G)(T.media))) && (I.d.has(T.media.type) && (!M || !I.s.has(M)) && !T.isSpoiler && !T.isNSFW),
+							trackOnEnteredViewport: B,
+							trackOnExitedViewport: R,
 							render: ({
 								className: s,
 								height: b,
-								width: f,
+								width: g,
 								remeasure: x,
-								setScrollerChildRef: k,
-								shouldLoadInitially: C
-							}) => u.a.createElement(T, {
+								setScrollerChildRef: C,
+								shouldLoadInitially: O
+							}) => u.a.createElement(D, {
 								className: s,
 								currentProfileName: r,
-								key: D,
-								availableWidth: f,
-								eventFactory: g,
-								first: E,
-								forceLoadMedia: C,
+								key: F,
+								availableWidth: g,
+								eventFactory: _,
+								first: k,
+								forceLoadMedia: O,
 								hostPostData: o,
-								inSubredditOrProfile: j,
+								inSubredditOrProfile: S,
 								isCommentPermalink: i,
 								isCommentsPage: a,
 								isFrontpage: d,
 								isProfilePostListing: c,
 								isTopicPage: l,
-								listingKey: m,
-								listingName: p,
-								pageLayer: h,
+								listingBelowVariant: m,
+								listingKey: p,
+								listingName: h,
+								pageLayer: f,
 								last: n,
-								onClickPost: R,
+								onClickPost: A,
 								onSizeChanged: x,
 								postId: e,
-								postIds: w,
-								redditStyle: _,
+								postIds: E,
+								redditStyle: y,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: k,
-								shouldHideFlair: y,
+								scrollerItemRef: C,
+								shouldHideFlair: v,
 								onceInViewport: () => {
-									null == v || v(t)
+									null == w || w(t)
 								}
 							})
-						}, this.scrollChildCache.set(k, O)
+						}, this.scrollChildCache.set(O, j)
 					}
-					return O
+					return j
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -7606,4 +7609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.3f82f10da4147c2153ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.4fecfd2e4e3c53d51e40.js.map

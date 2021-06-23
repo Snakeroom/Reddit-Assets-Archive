@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.da00bfed81d3399b6ced.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9bd5efded6e79416002d.js
+// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -588,17 +588,17 @@
 				H = s.n(M);
 			const {
 				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), W = 500, V = new R.a(W), D = new R.a(W), U = new R.a(W), J = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = 500, W = new R.a(V), D = new R.a(V), U = new R.a(V), J = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5
 			}, G = f.a.div("SeeMore", H.a), z = f.a.wrapped(N.a, "ArrowRight", H.a), K = (e, t, s, r, i, n, o, a) => {
 				const c = `entered-${e}-${t}-${s?`last-${r}-${i}`:""}-${n}`;
-				let d = V.get(c);
+				let d = W.get(c);
 				return void 0 === d && (d = () => {
 					s && o.onBottomViewed(r, i), o.trackOnPostEnteredViewport(e, t, a)
-				}, V.set(c, d)), d
+				}, W.set(c, d)), d
 			}, q = (e, t, s, r, i) => {
 				const n = `left-${e}-${t}`;
 				let o = D.get(n);
@@ -631,7 +631,7 @@
 			};
 			class Z extends u.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new R.a(W), this.surveyTriggerCounted = !1, this.viewportHeight = null, this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new R.a(V), this.surveyTriggerCounted = !1, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
@@ -776,83 +776,86 @@
 						isFrontpage: c,
 						isProfilePostListing: d,
 						isTopicPage: l,
-						listingKey: p,
-						listingName: m,
-						pageLayer: b,
-						pageReferrer: g,
-						postClickEventFactory: f,
-						redditStyle: v,
-						shouldHideFlair: _,
-						triggerNewPostPill: y,
-						postIds: T
-					} = this.props, E = 0 === t, S = `post-${r}-${e}-${t}-${s?"last-index":""}-${m}-${p}-${g}`;
-					let L;
-					if (void 0 === (L = this.scrollChildCache.get(S))) {
+						listingBelowVariant: p,
+						listingKey: m,
+						listingName: b,
+						pageLayer: g,
+						pageReferrer: f,
+						postClickEventFactory: v,
+						redditStyle: _,
+						shouldHideFlair: y,
+						triggerNewPostPill: T,
+						postIds: E
+					} = this.props, S = 0 === t, L = `post-${r}-${e}-${t}-${s?"last-index":""}-${b}-${m}-${f}`;
+					let O;
+					if (void 0 === (O = this.scrollChildCache.get(L))) {
 						const {
-							inSubredditOrProfile: O,
-							postsById: P
-						} = this.props, N = P[e], w = N.crosspostRootId && P[N.crosspostRootId] ? P[N.crosspostRootId] : N;
-						N.crosspostRootId && !P[N.crosspostRootId] && x.c.withScope(e => {
-							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${N.id} is crosspost of ${N.crosspostRootId}, but ` + `${N.crosspostRootId} details are missing in the state`), x.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: P,
+							postsById: N
+						} = this.props, w = N[e], k = w.crosspostRootId && N[w.crosspostRootId] ? N[w.crosspostRootId] : w;
+						w.crosspostRootId && !N[w.crosspostRootId] && x.c.withScope(e => {
+							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${w.id} is crosspost of ${w.crosspostRootId}, but ` + `${w.crosspostRootId} details are missing in the state`), x.c.captureMessage("Crosspost parent details are missing")
 						});
-						const k = this.props.postComponentForLayout({
-								isCrosspost: !!N.crosspostRootId,
-								isFirstPost: E,
-								layout: r,
-								post: w
-							}),
-							R = `post-list-item-[layout: ${r}]-[postId: ${e}]`,
-							F = K(e, r, s, p, m, g, this.props, t),
-							B = q(e, r, this.props, t, b),
-							M = Y(e, this.props),
-							H = w.media && w.media.type === j.o.EMBED ? w.media.provider : null;
-						L = {
-							estHeight: Object(I.c)(N, r),
+						const R = this.props.postComponentForLayout({
+							isCrosspost: !!w.crosspostRootId,
+							isFirstPost: S,
+							layout: r,
+							post: k
+						});
+						let F = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && m && (F += `--${m}`);
+						const B = K(e, r, s, m, b, f, this.props, t),
+							M = q(e, r, this.props, t, g),
+							H = Y(e, this.props),
+							A = k.media && k.media.type === j.o.EMBED ? k.media.provider : null;
+						O = {
+							estHeight: Object(I.c)(w, r),
 							id: e,
-							isFocusable: !(!w.media || !(r === C.g.Large || r === C.g.Classic && Object(j.G)(w.media))) && (j.d.has(w.media.type) && (!H || !j.s.has(H)) && !w.isSpoiler && !w.isNSFW),
-							trackOnEnteredViewport: F,
-							trackOnExitedViewport: B,
+							isFocusable: !(!k.media || !(r === C.g.Large || r === C.g.Classic && Object(j.G)(k.media))) && (j.d.has(k.media.type) && (!A || !j.s.has(A)) && !k.isSpoiler && !k.isNSFW),
+							trackOnEnteredViewport: B,
+							trackOnExitedViewport: M,
 							render: ({
 								className: r,
 								height: h,
-								width: g,
+								width: f,
 								remeasure: x,
-								setScrollerChildRef: S,
-								shouldLoadInitially: C
-							}) => u.a.createElement(k, {
+								setScrollerChildRef: C,
+								shouldLoadInitially: L
+							}) => u.a.createElement(R, {
 								className: r,
 								currentProfileName: i,
-								key: R,
-								availableWidth: g,
-								eventFactory: f,
-								first: E,
-								forceLoadMedia: C,
+								key: F,
+								availableWidth: f,
+								eventFactory: v,
+								first: S,
+								forceLoadMedia: L,
 								hostPostData: n,
-								inSubredditOrProfile: O,
+								inSubredditOrProfile: P,
 								isCommentPermalink: o,
 								isCommentsPage: a,
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								listingKey: p,
-								listingName: m,
-								pageLayer: b,
+								listingBelowVariant: p,
+								listingKey: m,
+								listingName: b,
+								pageLayer: g,
 								last: s,
-								onClickPost: M,
+								onClickPost: H,
 								onSizeChanged: x,
 								postId: e,
-								postIds: T,
-								redditStyle: v,
+								postIds: E,
+								redditStyle: _,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: S,
-								shouldHideFlair: _,
+								scrollerItemRef: C,
+								shouldHideFlair: y,
 								onceInViewport: () => {
-									null == y || y(t)
+									null == T || T(t)
 								}
 							})
-						}, this.scrollChildCache.set(S, L)
+						}, this.scrollChildCache.set(L, O)
 					}
-					return L
+					return O
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -1998,12 +2001,12 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: W
+				fbt: V
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var V;
+			var W;
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
-			}(V || (V = {}));
+			}(W || (W = {}));
 			class D extends i.a.Component {
 				renderSubtitleContent() {
 					const {
@@ -2019,7 +2022,7 @@
 					}, i.a.createElement(p.a, {
 						className: H.a.link,
 						to: t
-					}, e)))) : W._("Topic on Reddit", null, {
+					}, e)))) : V._("Topic on Reddit", null, {
 						hk: "3gTFev"
 					})
 				}
@@ -2051,16 +2054,16 @@
 					}, this.renderSubtitleContent())), i.a.createElement("div", {
 						className: H.a.Tabs
 					}, i.a.createElement(B, A({
-						tab: V.Posts
-					}, c), W._("Posts", null, {
+						tab: W.Posts
+					}, c), V._("Posts", null, {
 						hk: "3RLrle"
 					})), i.a.createElement(B, A({
-						tab: V.Communities
-					}, c), W._("Communities", null, {
+						tab: W.Communities
+					}, c), V._("Communities", null, {
 						hk: "KIwd1"
 					})), i.a.createElement(B, A({
-						tab: V.RelatedTopics
-					}, c), W._("Related Topics", null, {
+						tab: W.RelatedTopics
+					}, c), V._("Related Topics", null, {
 						hk: "4go2cr"
 					})))))
 				}
@@ -2078,7 +2081,7 @@
 							openTab: e,
 							relationshipIndex: t
 						} = this.props;
-						e(V.RelatedTopics, t)
+						e(W.RelatedTopics, t)
 					}
 				}
 				render() {
@@ -2210,7 +2213,7 @@
 							index: e,
 							onTabClick: t
 						} = this.props;
-						t(V.RelatedTopics, e)
+						t(W.RelatedTopics, e)
 					}
 				}
 				render() {
@@ -2254,9 +2257,9 @@
 							activeTab: e,
 							topicNamePlural: t
 						} = this.props;
-						return e === V.Posts ? Te._("Posts about {topic name}", [Te._param("topic name", t)], {
+						return e === W.Posts ? Te._("Posts about {topic name}", [Te._param("topic name", t)], {
 							hk: "3AGfU"
-						}) : e === V.Communities ? Te._("Communities related to {topic name}", [Te._param("topic name", t)], {
+						}) : e === W.Communities ? Te._("Communities related to {topic name}", [Te._param("topic name", t)], {
 							hk: "jKM0V"
 						}) : null
 					}
@@ -2265,8 +2268,8 @@
 					const {
 						activeLayout: e,
 						activeTab: t
-					} = this.props, s = t === V.Posts;
-					return t === V.RelatedTopics ? this.renderRelatedTopicsHeader() : i.a.createElement("div", {
+					} = this.props, s = t === W.Posts;
+					return t === W.RelatedTopics ? this.renderRelatedTopicsHeader() : i.a.createElement("div", {
 						className: ye.a.TabHeader
 					}, i.a.createElement("div", {
 						className: ye.a.TabTitle
@@ -2286,7 +2289,7 @@
 				fbt: Pe
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ie = Object(O.t)(), Ne = (e, t) => t.match.params.sort || a.V, je = e => {
 				const t = [];
-				return e ? (e.hasPosts && t.push(V.Posts), e.hasSubreddits && t.push(V.Communities), e.childRelationships.length && t.push(V.RelatedTopics), t) : t
+				return e ? (e.hasPosts && t.push(W.Posts), e.hasSubreddits && t.push(W.Communities), e.childRelationships.length && t.push(W.RelatedTopics), t) : t
 			}, we = Object(d.b)(() => Object(n.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.c)(e, {
@@ -2311,7 +2314,7 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), ke = (e, t) => e === V.Communities ? L.g.Large : t;
+			})), ke = (e, t) => e === W.Communities ? L.g.Large : t;
 			class Re extends i.a.Component {
 				constructor(e) {
 					super(e), this.openTab = (e, t = 0) => {
@@ -2321,7 +2324,7 @@
 							activeTab: e
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
-						this.openTab(V.Communities)
+						this.openTab(W.Communities)
 					}, this.onViewed = (e, t) => {
 						var s;
 						return Object(P.f)(Object(c.a)(C.b.Topic, null, {
@@ -2393,15 +2396,15 @@
 							topicNamePlural: p
 						}), i.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === V.Communities
+								[Oe.a.active]: f === W.Communities
 							})
 						}, i.a.createElement(be, {
 							subredditIds: d.subredditIds
 						})), i.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === V.Posts
+								[Oe.a.active]: f === W.Posts
 							})
-						}, f === V.Posts && i.a.createElement(u.a, {
+						}, f === W.Posts && i.a.createElement(u.a, {
 							forcedLayout: h,
 							listingKey: b,
 							listingName: v,
@@ -2410,13 +2413,13 @@
 							onLoadMore: this.props.onLoadMorePosts
 						})), i.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === V.RelatedTopics
+								[Oe.a.active]: f === W.RelatedTopics
 							})
 						}, i.a.createElement(y, {
 							topics: _
 						}))),
-						O = f !== V.RelatedTopics,
-						P = f !== V.Communities && a.includes(V.Communities),
+						O = f !== W.RelatedTopics,
+						P = f !== W.Communities && a.includes(W.Communities),
 						j = i.a.createElement("div", {
 							className: Oe.a.WidgetsContainer
 						}, P && i.a.createElement(S.a, {
@@ -2562,4 +2565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.da00bfed81d3399b6ced.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9bd5efded6e79416002d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.8a8c905ffde70ceaa46f.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.88c45a0b27158a76ef41.js
+// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6809,83 +6809,86 @@
 						isFrontpage: c,
 						isProfilePostListing: d,
 						isTopicPage: l,
-						listingKey: m,
-						listingName: p,
-						pageLayer: b,
-						pageReferrer: f,
-						postClickEventFactory: x,
-						redditStyle: g,
-						shouldHideFlair: v,
-						triggerNewPostPill: E,
-						postIds: _
-					} = this.props, C = 0 === t, O = `post-${s}-${e}-${t}-${n?"last-index":""}-${p}-${m}-${f}`;
-					let S;
-					if (void 0 === (S = this.scrollChildCache.get(O))) {
+						listingBelowVariant: m,
+						listingKey: p,
+						listingName: b,
+						pageLayer: f,
+						pageReferrer: x,
+						postClickEventFactory: g,
+						redditStyle: v,
+						shouldHideFlair: E,
+						triggerNewPostPill: _,
+						postIds: C
+					} = this.props, O = 0 === t, S = `post-${s}-${e}-${t}-${n?"last-index":""}-${b}-${p}-${x}`;
+					let w;
+					if (void 0 === (w = this.scrollChildCache.get(S))) {
 						const {
-							inSubredditOrProfile: w,
-							postsById: k
-						} = this.props, I = k[e], T = I.crosspostRootId && k[I.crosspostRootId] ? k[I.crosspostRootId] : I;
-						I.crosspostRootId && !k[I.crosspostRootId] && y.c.withScope(e => {
-							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${I.id} is crosspost of ${I.crosspostRootId}, but ` + `${I.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: k,
+							postsById: I
+						} = this.props, T = I[e], L = T.crosspostRootId && I[T.crosspostRootId] ? I[T.crosspostRootId] : T;
+						T.crosspostRootId && !I[T.crosspostRootId] && y.c.withScope(e => {
+							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${T.id} is crosspost of ${T.crosspostRootId}, but ` + `${T.crosspostRootId} details are missing in the state`), y.c.captureMessage("Crosspost parent details are missing")
 						});
-						const L = this.props.postComponentForLayout({
-								isCrosspost: !!I.crosspostRootId,
-								isFirstPost: C,
-								layout: s,
-								post: T
-							}),
-							B = `post-list-item-[layout: ${s}]-[postId: ${e}]`,
-							A = z(e, s, n, m, p, f, this.props, t),
-							D = Y(e, s, this.props, t, b),
-							R = J(e, this.props),
-							F = T.media && T.media.type === P.o.EMBED ? T.media.provider : null;
-						S = {
-							estHeight: Object(N.c)(I, s),
+						const B = this.props.postComponentForLayout({
+							isCrosspost: !!T.crosspostRootId,
+							isFirstPost: O,
+							layout: s,
+							post: L
+						});
+						let A = `post-list-item-[layout: ${s}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && p && (A += `--${p}`);
+						const D = z(e, s, n, p, b, x, this.props, t),
+							R = Y(e, s, this.props, t, f),
+							F = J(e, this.props),
+							M = L.media && L.media.type === P.o.EMBED ? L.media.provider : null;
+						w = {
+							estHeight: Object(N.c)(T, s),
 							id: e,
-							isFocusable: !(!T.media || !(s === j.g.Large || s === j.g.Classic && Object(P.G)(T.media))) && (P.d.has(T.media.type) && (!F || !P.s.has(F)) && !T.isSpoiler && !T.isNSFW),
-							trackOnEnteredViewport: A,
-							trackOnExitedViewport: D,
+							isFocusable: !(!L.media || !(s === j.g.Large || s === j.g.Classic && Object(P.G)(L.media))) && (P.d.has(L.media.type) && (!M || !P.s.has(M)) && !L.isSpoiler && !L.isNSFW),
+							trackOnEnteredViewport: D,
+							trackOnExitedViewport: R,
 							render: ({
 								className: s,
 								height: h,
-								width: f,
+								width: x,
 								remeasure: y,
-								setScrollerChildRef: O,
-								shouldLoadInitially: j
-							}) => u.a.createElement(L, {
+								setScrollerChildRef: j,
+								shouldLoadInitially: S
+							}) => u.a.createElement(B, {
 								className: s,
 								currentProfileName: r,
-								key: B,
-								availableWidth: f,
-								eventFactory: x,
-								first: C,
-								forceLoadMedia: j,
+								key: A,
+								availableWidth: x,
+								eventFactory: g,
+								first: O,
+								forceLoadMedia: S,
 								hostPostData: o,
-								inSubredditOrProfile: w,
+								inSubredditOrProfile: k,
 								isCommentPermalink: a,
 								isCommentsPage: i,
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								listingKey: m,
-								listingName: p,
-								pageLayer: b,
+								listingBelowVariant: m,
+								listingKey: p,
+								listingName: b,
+								pageLayer: f,
 								last: n,
-								onClickPost: R,
+								onClickPost: F,
 								onSizeChanged: y,
 								postId: e,
-								postIds: _,
-								redditStyle: g,
+								postIds: C,
+								redditStyle: v,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: O,
-								shouldHideFlair: v,
+								scrollerItemRef: j,
+								shouldHideFlair: E,
 								onceInViewport: () => {
-									null == E || E(t)
+									null == _ || _(t)
 								}
 							})
-						}, this.scrollChildCache.set(O, S)
+						}, this.scrollChildCache.set(S, w)
 					}
-					return S
+					return w
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -15175,4 +15178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8a8c905ffde70ceaa46f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.88c45a0b27158a76ef41.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f5a16ec9f4a433dee2c6.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fc7054b6f866026f7365.js
+// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -952,7 +952,7 @@
 						r = Object(se.L)(t, {
 							identifier: n
 						}),
-						i = Object(ve.d)(t, {
+						i = Object(ve.c)(t, {
 							identifier: n
 						}),
 						d = {
@@ -961,7 +961,7 @@
 							postImageOCRAltText: !1,
 							postQASchema: !1
 						};
-					return Object(ve.b)(t) && !Object(be.a)(t) ? d.listingBelow = i || a : d.postFeed = (i || a) && (!Object(L.h)(r) && !Object(he.d)(t, {
+					return !!Object(be.c)(t) ? (d.listingBelow = i || a, d.postFeed = d.listingBelow) : d.postFeed = (i || a) && (!Object(L.h)(r) && !Object(he.d)(t, {
 						postId: s
 					}) && !!r || !Object(W.h)(t) && Object(V.f)(t)), e && (d.postImageOCRAltText = Object(V.c)(o) && !!Object(V.b)(t, o, !1), d.postQASchema = Object(V.e)(t)), d
 				},
@@ -1054,9 +1054,8 @@
 							}
 						}
 						const d = Ce(!1, s(), m),
-							c = Object(be.c)(s()),
-							l = k;
-						if (xe(l, d)) {
+							c = k;
+						if (xe(c, d)) {
 							Object(ie.d)(ie.a.LinkedPosts);
 							const e = Object(ie.c)(ie.a.LinkedPosts),
 								a = {
@@ -1074,7 +1073,7 @@
 								},
 								n = {
 									correlationId: e,
-									experimentVariant: c
+									experimentVariant: Object(be.c)(s())
 								},
 								i = je(d);
 							Object(ue.i)(() => t(Object(me.a)({
@@ -1082,7 +1081,7 @@
 								...a,
 								...n,
 								...i,
-								includeOtherDiscussions: l
+								includeOtherDiscussions: c
 							})), {
 								name: "fetchPostFeedAndOtherDiscussions",
 								isLoggedIn: V,
@@ -1093,8 +1092,8 @@
 						t(Object(f.p)()), t(y.l({
 							title: n
 						}));
-						const u = s().posts.instances[m] ? e.queryParams.instanceId : D.postId;
-						t(Object(i.b)(u)); {
+						const l = s().posts.instances[m] ? e.queryParams.instanceId : D.postId;
+						t(Object(i.b)(l)); {
 							const e = Object(A.d)(s(), {
 								subredditName: r.name
 							});
@@ -7058,4 +7057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f5a16ec9f4a433dee2c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fc7054b6f866026f7365.js.map
