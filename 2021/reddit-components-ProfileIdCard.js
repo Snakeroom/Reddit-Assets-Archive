@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cd9f2ce75e8b876c06b6.js
-// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5979d3fcbf0b3486bf0c.js
+// Retrieved at 6/23/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1587,11 +1587,12 @@
 					url: I
 				} = Object(a.useMemo)(() => (function(e) {
 					const t = p.exec(e) || ["", "", ""],
-						r = t[1];
+						r = t[1],
+						n = t[2];
 					return {
 						id: r,
-						url: `https://nft.reddit.com/n/${r}`,
-						badge: t[2]
+						url: "testing" === n ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${r}`,
+						badge: n
 					}
 				})(m), [m]);
 				return o.a.createElement("div", {
@@ -1600,7 +1601,7 @@
 					className: u.a.cardAnimation,
 					assetUrl: `${n.a.assetPath}/img/snoovatars/nft_card_animation.json`,
 					loop: !0
-				}), o.a.createElement("img", {
+				}), "testing" !== g && o.a.createElement("img", {
 					alt: `${g} NFT`,
 					className: u.a.badgeImage,
 					src: `${n.a.assetPath}/img/snoovatars/nft_badge_${g}.svg`
@@ -3029,4 +3030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cd9f2ce75e8b876c06b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5979d3fcbf0b3486bf0c.js.map
