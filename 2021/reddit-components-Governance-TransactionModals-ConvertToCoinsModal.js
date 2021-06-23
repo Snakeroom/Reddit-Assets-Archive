@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0c5aaff35d27b30877c4.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f3a164e16540d2a2fe3e.js
+// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -453,7 +453,7 @@
 					econPurchase: a.a
 				}
 			});
-			const l = Object(s.a)(d.lb),
+			const l = Object(s.a)(d.mb),
 				u = (e, t, r) => async (n, a, {
 					gqlContext: s
 				}) => {
@@ -735,7 +735,7 @@
 					} catch (a) {
 						f.c.captureException(a)
 					}
-				}, S = Object(m.a)(b.N), T = Object(m.a)(b.O), L = Object(m.a)(b.P), z = e => async (t, r) => {
+				}, S = Object(m.a)(b.O), T = Object(m.a)(b.P), L = Object(m.a)(b.Q), z = e => async (t, r) => {
 					await t(S(e)), t(Object(l.f)({
 						kind: p.b.Error,
 						duration: l.a,
@@ -768,12 +768,12 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, R = Object(m.a)(b.R), G = e => async (t, r) => {
+				}, R = Object(m.a)(b.S), G = e => async (t, r) => {
 					t(R(e)), t(Object(x.i)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, U = Object(m.a)(b.V), B = Object(m.a)(b.Z)
+				}, U = Object(m.a)(b.W), B = Object(m.a)(b.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -797,18 +797,18 @@
 				f = r("./src/redditGQL/operations/ProductOffers.json");
 			var p = r("./src/reddit/selectors/gold/productOffers.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const h = Object(a.a)(b.cb),
-				v = Object(a.a)(b.bb),
-				g = Object(a.a)(b.ab),
-				E = Object(a.a)(b.Y),
-				y = Object(a.a)(b.X),
-				x = Object(a.a)(b.W),
-				O = Object(a.a)(b.Cb),
-				C = Object(a.a)(b.Ab),
-				j = Object(a.a)(b.Bb),
-				w = Object(a.a)(b.Fb),
-				N = Object(a.a)(b.Eb),
-				I = Object(a.a)(b.Db),
+			const h = Object(a.a)(b.db),
+				v = Object(a.a)(b.cb),
+				g = Object(a.a)(b.bb),
+				E = Object(a.a)(b.Z),
+				y = Object(a.a)(b.Y),
+				x = Object(a.a)(b.X),
+				O = Object(a.a)(b.Db),
+				C = Object(a.a)(b.Bb),
+				j = Object(a.a)(b.Cb),
+				w = Object(a.a)(b.Gb),
+				N = Object(a.a)(b.Fb),
+				I = Object(a.a)(b.Eb),
 				_ = e => async t => {
 					t(Object(o.f)({
 						kind: i.b.Error,
@@ -2987,7 +2987,7 @@
 			const s = {};
 			var o = (e = s, t) => {
 				switch (t.type) {
-					case a.lb: {
+					case a.mb: {
 						const r = t.payload;
 						return {
 							...e,
@@ -3225,4 +3225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.0c5aaff35d27b30877c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f3a164e16540d2a2fe3e.js.map

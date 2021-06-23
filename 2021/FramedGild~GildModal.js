@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.77333c356d71f46118a8.js
-// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b48329b8626bc997c369.js
+// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -330,7 +330,7 @@
 					econPurchase: r.a
 				}
 			});
-			const l = Object(a.a)(c.lb),
+			const l = Object(a.a)(c.mb),
 				u = (e, t, s) => async (n, r, {
 					gqlContext: a
 				}) => {
@@ -656,7 +656,7 @@
 				r = s("./src/reddit/actions/modal.ts"),
 				a = s("./src/reddit/constants/modals.ts"),
 				o = s("./src/reddit/actions/gold/constants.ts");
-			const i = Object(n.a)(o.kb),
+			const i = Object(n.a)(o.lb),
 				d = Object(n.a)(o.u),
 				c = e => async t => {
 					await t(d({
@@ -4974,7 +4974,7 @@
 			const a = {};
 			var o = (e = a, t) => {
 				switch (t.type) {
-					case r.lb: {
+					case r.mb: {
 						const s = t.payload;
 						return {
 							...e,
@@ -5292,4 +5292,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.77333c356d71f46118a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b48329b8626bc997c369.js.map

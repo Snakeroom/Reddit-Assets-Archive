@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.8cd8c84c98c89ed760ba.js
-// Retrieved at 6/23/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.1ce2e362d7acfd47ea5a.js
+// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2132,7 +2132,7 @@
 					} catch (s) {
 						p.c.captureException(s)
 					}
-				}, T = Object(m.a)(h.N), M = Object(m.a)(h.O), L = Object(m.a)(h.P), B = e => async (t, n) => {
+				}, T = Object(m.a)(h.O), M = Object(m.a)(h.P), L = Object(m.a)(h.Q), B = e => async (t, n) => {
 					await t(T(e)), t(Object(d.f)({
 						kind: b.b.Error,
 						duration: d.a,
@@ -2165,12 +2165,12 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, U = Object(m.a)(h.R), F = e => async (t, n) => {
+				}, U = Object(m.a)(h.S), F = e => async (t, n) => {
 					t(U(e)), t(Object(x.i)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(C.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(C.h)(l.a.ECON_POWERUPS_SUCCESS))
-				}, D = Object(m.a)(h.V), H = Object(m.a)(h.Z)
+				}, D = Object(m.a)(h.W), H = Object(m.a)(h.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -2194,18 +2194,18 @@
 				p = n("./src/redditGQL/operations/ProductOffers.json");
 			var b = n("./src/reddit/selectors/gold/productOffers.ts"),
 				h = n("./src/reddit/actions/gold/constants.ts");
-			const f = Object(s.a)(h.cb),
-				g = Object(s.a)(h.bb),
-				v = Object(s.a)(h.ab),
-				_ = Object(s.a)(h.Y),
-				y = Object(s.a)(h.X),
-				x = Object(s.a)(h.W),
-				C = Object(s.a)(h.Cb),
-				E = Object(s.a)(h.Ab),
-				j = Object(s.a)(h.Bb),
-				w = Object(s.a)(h.Fb),
-				k = Object(s.a)(h.Eb),
-				O = Object(s.a)(h.Db),
+			const f = Object(s.a)(h.db),
+				g = Object(s.a)(h.cb),
+				v = Object(s.a)(h.bb),
+				_ = Object(s.a)(h.Z),
+				y = Object(s.a)(h.Y),
+				x = Object(s.a)(h.X),
+				C = Object(s.a)(h.Db),
+				E = Object(s.a)(h.Bb),
+				j = Object(s.a)(h.Cb),
+				w = Object(s.a)(h.Gb),
+				k = Object(s.a)(h.Fb),
+				O = Object(s.a)(h.Eb),
 				S = e => async t => {
 					t(Object(o.f)({
 						kind: c.b.Error,
@@ -2554,7 +2554,7 @@
 				} = e.params;
 				if (v === a.Wb.Gold) return void t(Object(s.c)("/settings/premium"));
 				const _ = [];
-				v === a.Wb.Profile && (_.push(t(Object(P.a)())), _.push(t(Object(N.g)()))), v === a.Wb.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.Wb.Notifications && _.push(t(O())), v !== a.Wb.Privacy && v !== a.Wb.Messaging || _.push(t(Object(l.b)())), v === a.Wb.Premium && (_.push(t(Object(P.a)())), _.push(t(Object(h.j)(!0)))), await Promise.all(_); {
+				v === a.Wb.Profile && (_.push(t(Object(P.a)())), _.push(t(Object(N.g)()))), v === a.Wb.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.Wb.Notifications && _.push(t(O())), v !== a.Wb.Privacy && v !== a.Wb.Messaging || _.push(t(Object(l.b)())), v === a.Wb.Premium && (_.push(t(Object(P.a)())), _.push(t(Object(h.k)(!0)))), await Promise.all(_); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -14257,4 +14257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8cd8c84c98c89ed760ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1ce2e362d7acfd47ea5a.js.map

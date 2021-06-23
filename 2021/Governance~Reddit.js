@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.aef7674f2cdac3a44d07.js
-// Retrieved at 6/23/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.00dd320fa6c4275ba346.js
+// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -6288,7 +6288,7 @@
 							[r.id]: Ne(r)
 						} : e
 					}
-					case ee.ib: {
+					case ee.jb: {
 						const {
 							awardId: r
 						} = t.payload;
@@ -6357,7 +6357,7 @@
 							...e
 						}, r)
 					}
-					case ee.rb: {
+					case ee.sb: {
 						const r = {},
 							{
 								topAwardedPosts: s
@@ -9157,7 +9157,7 @@
 							[t.payload.subredditId]: Object.keys(a).map(e => a[e]).sort((e, t) => e.position - t.position)
 						}
 					}
-					case ee.nb: {
+					case ee.ob: {
 						const {
 							powerups: r,
 							subredditId: s
@@ -10036,7 +10036,7 @@
 			const Yc = Oe.n;
 			var Zc = (e = Yc, t) => {
 					switch (t.type) {
-						case ee.kb:
+						case ee.lb:
 							return t.payload;
 						case ee.K: {
 							const {
@@ -13679,7 +13679,7 @@
 							}
 						} : e
 					}
-					case ee.rb: {
+					case ee.sb: {
 						const {
 							topAwardedPosts: r
 						} = t.payload;
@@ -14285,10 +14285,10 @@
 				});
 			var Gp = (e = null, t) => {
 				switch (t.type) {
-					case ee.qb:
-						return t.payload;
-					case ee.sb:
 					case ee.rb:
+						return t.payload;
+					case ee.tb:
+					case ee.sb:
 						return null;
 					default:
 						return e
@@ -14296,10 +14296,10 @@
 			};
 			var Fp = (e = !1, t) => {
 					switch (t.type) {
-						case ee.rb:
-						case ee.qb:
-							return !1;
 						case ee.sb:
+						case ee.rb:
+							return !1;
+						case ee.tb:
 							return !0;
 						default:
 							return e
@@ -14312,7 +14312,7 @@
 			const Hp = [];
 			var Vp = (e = Hp, t) => {
 					switch (t.type) {
-						case ee.rb: {
+						case ee.sb: {
 							const {
 								topAwardedPosts: e
 							} = t.payload;
@@ -14322,8 +14322,8 @@
 								score: e.score
 							}))
 						}
-						case ee.qb:
-						case ee.sb:
+						case ee.rb:
+						case ee.tb:
 							return Hp;
 						default:
 							return e
@@ -17182,10 +17182,10 @@
 				});
 			var YE = (e = null, t) => {
 				switch (t.type) {
-					case ee.ab:
-						return t.payload || null;
-					case ee.cb:
 					case ee.bb:
+						return t.payload || null;
+					case ee.db:
+					case ee.cb:
 						return null;
 					default:
 						return e
@@ -17193,10 +17193,10 @@
 			};
 			var ZE = (e = !1, t) => {
 					switch (t.type) {
-						case ee.cb:
+						case ee.db:
 							return !0;
+						case ee.cb:
 						case ee.bb:
-						case ee.ab:
 							return !1;
 						default:
 							return e
@@ -17927,7 +17927,7 @@
 			const y_ = {};
 			var m_ = (e = y_, t) => {
 				switch (t.type) {
-					case ee.nb: {
+					case ee.ob: {
 						const {
 							recentSupporters: r,
 							subredditId: s
@@ -17937,8 +17937,8 @@
 							[s]: r
 						}
 					}
-					case ee.R:
-					case ee.U: {
+					case ee.S:
+					case ee.V: {
 						const {
 							subredditId: r,
 							powerupsCount: s,
@@ -17974,8 +17974,8 @@
 			var h_ = (e = E_, t) => {
 				var r;
 				switch (t.type) {
-					case ee.ob:
-					case ee.nb: {
+					case ee.pb:
+					case ee.ob: {
 						const {
 							powerups: r,
 							subredditId: s
@@ -17993,8 +17993,8 @@
 							[s]: a
 						}
 					}
-					case ee.R:
-					case ee.U: {
+					case ee.S:
+					case ee.V: {
 						const {
 							subredditId: s,
 							powerupsCount: a
@@ -18050,7 +18050,7 @@
 				};
 			var g_ = (e = __, t) => {
 				switch (t.type) {
-					case ee.nb: {
+					case ee.ob: {
 						const {
 							powerups: r,
 							subredditId: s
@@ -18088,7 +18088,7 @@
 				v_ = (e, t) => t.supporterInfo && e.supporterInfo ? 1e15 * t.score + new Date(t.lastSupportedAt).valueOf() - 1e15 * e.score - new Date(e.lastSupportedAt).valueOf() : t.supporterInfo ? 1 : e.supporterInfo ? -1 : 0;
 			var D_ = (e = S_, t) => {
 					switch (t.type) {
-						case ee.nb: {
+						case ee.ob: {
 							const {
 								topSupporters: r,
 								subredditId: s
@@ -18098,8 +18098,8 @@
 								[s]: r.sort(v_)
 							}
 						}
-						case ee.R:
-						case ee.U: {
+						case ee.S:
+						case ee.V: {
 							const {
 								subredditId: r,
 								powerupsCount: s,
@@ -18150,8 +18150,8 @@
 			const w_ = {};
 			var j_ = (e = w_, t) => {
 				switch (t.type) {
-					case ee.bb:
-					case ee.nb: {
+					case ee.cb:
+					case ee.ob: {
 						const {
 							subredditId: r,
 							productOffers: s
@@ -20565,7 +20565,7 @@
 				OS = (e, t) => `${e}_${t||new Date}`;
 			var IS = (e = _S, t) => {
 				switch (t.type) {
-					case ee.yb: {
+					case ee.zb: {
 						const r = t.payload.powerups;
 						if (r) {
 							const {
@@ -20581,7 +20581,7 @@
 						}
 						return e
 					}
-					case ee.nb: {
+					case ee.ob: {
 						const {
 							userPowerups: r
 						} = t.payload, s = ((null == r ? void 0 : r.allocation) || []).filter(e => !!e.subredditInfo).reduce((e, t) => ({
@@ -20593,7 +20593,7 @@
 							...s
 						}
 					}
-					case ee.T: {
+					case ee.U: {
 						const {
 							subredditId: r,
 							powerupsCount: s,
@@ -20614,7 +20614,7 @@
 						}
 						return e
 					}
-					case ee.O: {
+					case ee.P: {
 						const {
 							subredditId: r,
 							allocatedAt: s
@@ -20634,14 +20634,14 @@
 			};
 			var gS = (e = null, t) => {
 				switch (t.type) {
-					case ee.yb: {
+					case ee.zb: {
 						const r = t.payload.powerups;
 						return r ? Rs()({
 							...e,
 							...r
 						}, "allocation") : e
 					}
-					case ee.nb: {
+					case ee.ob: {
 						const {
 							userPowerups: r
 						} = t.payload;
@@ -20650,7 +20650,7 @@
 							...r
 						}, "allocation") : e
 					}
-					case ee.T: {
+					case ee.U: {
 						const {
 							powerupsCount: r
 						} = t.payload;
@@ -20663,7 +20663,7 @@
 						}
 						return e
 					}
-					case ee.U: {
+					case ee.V: {
 						const {
 							powerupsCount: r
 						} = t.payload;
@@ -20682,10 +20682,10 @@
 			};
 			var SS, vS = (e = !1, t) => {
 					switch (t.type) {
-						case ee.xb:
-						case ee.zb:
-							return !1;
 						case ee.yb:
+						case ee.Ab:
+							return !1;
+						case ee.zb:
 							return !0;
 						default:
 							return e
@@ -20706,11 +20706,11 @@
 			};
 			var jS = (e = wS, t) => {
 				switch (t.type) {
-					case ee.Cb:
+					case ee.Db:
 						return {
 							...e, status: SS.PENDING
 						};
-					case ee.Bb: {
+					case ee.Cb: {
 						const {
 							subscriptions: r
 						} = t.payload;
@@ -20720,7 +20720,7 @@
 							status: SS.LOADED
 						} : e
 					}
-					case ee.Ab:
+					case ee.Bb:
 						return {
 							...e, status: SS.FAILED
 						};
@@ -21185,7 +21185,7 @@
 			const dv = {};
 			var iv = (e = dv, t) => {
 				switch (t.type) {
-					case ee.eb: {
+					case ee.fb: {
 						const {
 							userId: r,
 							supportedSubreddits: s
@@ -21203,10 +21203,10 @@
 			};
 			var uv = (e = !1, t) => {
 					switch (t.type) {
-						case ee.db:
-						case ee.fb:
-							return !1;
 						case ee.eb:
+						case ee.gb:
+							return !1;
+						case ee.fb:
 							return !0;
 						default:
 							return e
@@ -21230,10 +21230,10 @@
 			};
 			var yv = (e = null, t) => {
 				switch (t.type) {
-					case ee.tb:
-						return t.payload;
-					case ee.vb:
 					case ee.ub:
+						return t.payload;
+					case ee.wb:
+					case ee.vb:
 						return null;
 					default:
 						return e
@@ -21241,10 +21241,10 @@
 			};
 			var mv = (e = !1, t) => {
 					switch (t.type) {
-						case ee.ub:
-						case ee.tb:
-							return !1;
 						case ee.vb:
+						case ee.ub:
+							return !1;
+						case ee.wb:
 							return !0;
 						default:
 							return e
@@ -21256,7 +21256,7 @@
 				});
 			var hv = (e = null, t) => {
 				switch (t.type) {
-					case ee.wb:
+					case ee.xb:
 						return t.payload.postId;
 					default:
 						return e
@@ -21265,7 +21265,7 @@
 			const _v = {};
 			var Ov = (e = _v, t) => {
 				switch (t.type) {
-					case ee.ub: {
+					case ee.vb: {
 						const {
 							postId: r,
 							currentRank: s
@@ -21282,7 +21282,7 @@
 			const Iv = {};
 			var gv = (e = Iv, t) => {
 					switch (t.type) {
-						case ee.ub: {
+						case ee.vb: {
 							const {
 								postId: r,
 								topAwardersRank: s
@@ -22128,4 +22128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.aef7674f2cdac3a44d07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.00dd320fa6c4275ba346.js.map
