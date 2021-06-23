@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.42c270999d4aee0f8e2c.js
-// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.22d95b934fe6ef921ce4.js
+// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2204,8 +2204,8 @@
 			const C = "create-community-button",
 				E = y.a.wrapped(d.c, "StyledTooltip", v.a),
 				O = Object(a.c)({
-					isInSrCreationEntrypointBehaviorExperiment: x.c,
-					isInSrCreationEntrypointCopyExperiment: x.d,
+					isInSrCreationEntrypointBehaviorExperiment: x.a,
+					isInSrCreationEntrypointCopyExperiment: x.b,
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.hb)(e),
 					userIsSuspended: f.P
 				});
@@ -2233,7 +2233,7 @@
 			}) => o.a.createElement(u.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => s === m.zd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => s === m.vd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: i,
 				onMouseLeave: a,
 				priority: u.b.Secondary,
@@ -9211,9 +9211,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => r.kd.Treatment1 === Object(n.c)(e, {
+			const o = e => r.gd.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.ad
+				experimentName: r.Wc
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -9325,4 +9325,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.42c270999d4aee0f8e2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.22d95b934fe6ef921ce4.js.map

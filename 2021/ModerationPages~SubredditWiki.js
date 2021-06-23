@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2b42462663754ee30b79.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.4f0a1f201bc59bb68849.js
+// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -2783,8 +2783,8 @@
 			const _ = "create-community-button",
 				w = x.a.wrapped(c.c, "StyledTooltip", k.a),
 				O = Object(o.c)({
-					isInSrCreationEntrypointBehaviorExperiment: h.c,
-					isInSrCreationEntrypointCopyExperiment: h.d,
+					isInSrCreationEntrypointBehaviorExperiment: h.a,
+					isInSrCreationEntrypointCopyExperiment: h.b,
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(v.hb)(e),
 					userIsSuspended: v.P
 				});
@@ -2812,7 +2812,7 @@
 			}) => a.a.createElement(m.q, {
 				className: e,
 				disabled: p || l,
-				onClick: () => r === u.zd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => r === u.vd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: m.b.Secondary,
@@ -4696,4 +4696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2b42462663754ee30b79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.4f0a1f201bc59bb68849.js.map

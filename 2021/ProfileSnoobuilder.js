@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.0e3968bf59a6905ac73b.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.c05536c6bd9de9bc930a.js
+// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1150,8 +1150,8 @@
 			const v = "create-community-button",
 				E = y.a.wrapped(d.c, "StyledTooltip", x.a),
 				k = Object(a.c)({
-					isInSrCreationEntrypointBehaviorExperiment: f.c,
-					isInSrCreationEntrypointCopyExperiment: f.d,
+					isInSrCreationEntrypointBehaviorExperiment: f.a,
+					isInSrCreationEntrypointCopyExperiment: f.b,
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.hb)(e),
 					userIsSuspended: _.P
 				});
@@ -1179,7 +1179,7 @@
 			}) => i.a.createElement(m.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => n === u.zd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => n === u.vd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: o,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -4133,12 +4133,12 @@
 						rtJsonElementProps: i
 					});
 					switch (s) {
-						case b.Cd.SmIcon:
+						case b.yd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.Cd.SmIconHc:
+						case b.yd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5379,12 +5379,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.ud
+						experimentName: s.qd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Cd.SmIcon || t === s.Cd.SmIconHc
+					return t === s.yd.SmIcon || t === s.yd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5407,4 +5407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.0e3968bf59a6905ac73b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.c05536c6bd9de9bc930a.js.map

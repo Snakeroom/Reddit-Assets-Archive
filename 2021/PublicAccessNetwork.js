@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fc7054b6f866026f7365.js
-// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9781d2337192e24db269.js
+// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.zc
 				});
-				return Object(m.Sd)(t) ? void 0 : t
+				return Object(m.Od)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Ac
 				});
-				return Object(m.Sd)(t) ? void 0 : t
+				return Object(m.Od)(t) ? void 0 : t
 			}, (e, t) => e === m.Bc.Enabled && t === m.Bc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -1024,9 +1024,9 @@
 							r = Object(se.L)(s(), {
 								identifier: D.belongsTo
 							});
-						if (r && (e => F.md.Redirect === Object(U.b)(e, {
+						if (r && (e => F.id.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: F.dd
+								experimentName: F.Zc
 							}))(s())) return void t(Object(a.c)(r.url));
 						if ((D.media && D.media.type) === T.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===R.a.SUBREDDIT?r.url:"/"}${Object(p.t)(D.id)}`;
@@ -7048,8 +7048,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.J)(e),
-					experimentName: a.bd
-				}) === a.ld.Enabled
+					experimentName: a.Xc
+				}) === a.hd.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -7057,4 +7057,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fc7054b6f866026f7365.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9781d2337192e24db269.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.af8e9f673b276888ab29.js
-// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.9f3f9c57523da9f690ee.js
+// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2407,7 +2407,7 @@
 						postId: Ee,
 						postIds: _e,
 						onceInViewport: Ce
-					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Se = Te ? void 0 : f, Ne = Object(l.a)(le), Ie = ue && Ne, Me = Object(c.a)(le), Ae = Object(d.a)(le), Be = Object(V.c)(ve), Le = !!ve.media && ve.media.type === g.o.RTJSON, Fe = Pe && Le, Re = n ? n - z.a : void 0, De = !(C && X || oe), We = (e => e === ae.Sc.OnlyTitles)(ge) && !Object(se.a)(ve), Ve = (e => e === ae.Sc.MediumHeight)(ge) && !Object(se.a)(ve), He = (e => {
+					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Se = Te ? void 0 : f, Ne = Object(l.a)(le), Ie = ue && Ne, Me = Object(c.a)(le), Ae = Object(d.a)(le), Be = Object(V.c)(ve), Le = !!ve.media && ve.media.type === g.o.RTJSON, Fe = Pe && Le, Re = n ? n - z.a : void 0, De = !(C && X || oe), We = (e => e === ae.Oc.OnlyTitles)(ge) && !Object(se.a)(ve), Ve = (e => e === ae.Oc.MediumHeight)(ge) && !Object(se.a)(ve), He = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -3561,9 +3561,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.xb
 				});
-				return !(!t || Object(o.Sd)(t))
+				return !(!t || Object(o.Od)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.af8e9f673b276888ab29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.9f3f9c57523da9f690ee.js.map
