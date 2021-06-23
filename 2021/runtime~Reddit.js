@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4c2884d6615cc01f468a.js
-// Retrieved at 6/23/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.cf037613e5bc255ad1e0.js
+// Retrieved at 6/23/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1227,7 +1227,7 @@
 						MultiredditAddSubredditModal: "a494dc67f966f334a4d6",
 						MultiredditCreateModal: "1038141168293bc5b879",
 						MultiredditEditModal: "8e840a24c4a6f45ab32d",
-						NotificationUnit: "f107cc8db5daf92abf53",
+						NotificationUnit: "63b01b4ee121ba6cc0dc",
 						NotificationsInbox: "4e87cb0a83b2a6799049",
 						NotificationsPrePromptLoader: "b1df6fb919c422d6fb73",
 						PostFlowUpsellModal: "07aa1033436b4f6e41aa",
@@ -1257,7 +1257,7 @@
 						"translations/es_MX-json": "faf265b07e52058dbb7b",
 						"translations/fr_FR-json": "0e1d17b033477bd6da10",
 						"translations/it_IT-json": "9145ff1dbbb64c0fdc6f",
-						"translations/pseudo_ext-json": "a31ebfd75fbb56c7062e",
+						"translations/pseudo_ext-json": "5ab566cb823926c5b1de",
 						"translations/pseudo_long-json": "a9d3507f13e8bd120f25",
 						"translations/pseudo_short-json": "e60e2d824842fc2cc186",
 						"translations/pt_BR-json": "86a19e51cc586863111f",
@@ -1364,7 +1364,7 @@
 						"reddit-components-CrisisFlow-CrisisFlowPage": "fc4da4117f0a9fe2beee",
 						"reddit-pages-PaypalFinishPage": "12b541278bd6c7a59d19",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "412dbc971908ba22c208",
-						"reddit-components-NotificationUnit-Button": "0529ebe901db0f2d59ff",
+						"reddit-components-NotificationUnit-Button": "3dedee5aa2d0c352e420",
 						CrisisFlow: "7f1cf881babaf9f5a5e5",
 						EmailInvitePaintedDoor: "b27a55884f564d5f65cf",
 						GifTooltip: "6e64167fb2666cd5ed9a",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4c2884d6615cc01f468a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.cf037613e5bc255ad1e0.js.map
