@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6985998302f3abc75cd2.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.85b7a7cd3a335691eebc.js
+// Retrieved at 6/23/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1454,20 +1454,31 @@
 					avatar: d.a
 				}
 			});
-			const l = Object(o.a)(i.o),
-				u = () => async (e, t, {
-					gqlContext: n
-				}) => {
-					try {
-						const t = await Object(a.d)(n());
-						if (!t.ok) throw new Error(`Got bad response in GQL call for special events: ${JSON.stringify(t||{})}`); {
-							const n = t.body.data.econSpecialEvents;
-							await e(l(n))
-						}
-					} catch (o) {
-						Object(s.b)() || console.error(o), r.c.captureException(o)
-					}
+			const l = Object(o.a)(i.o);
+			class SpecialEventsError extends Error {
+				constructor() {
+					super(...arguments), this.response = null
 				}
+			}
+			const u = () => async (e, t, {
+				gqlContext: n
+			}) => {
+				try {
+					const t = await Object(a.d)(n());
+					if (!t.ok) {
+						const e = new SpecialEventsError("Got bad response in GQL call for special events");
+						throw e.response = t, e
+					} {
+						const n = t.body.data.econSpecialEvents;
+						await e(l(n))
+					}
+				} catch (o) {
+					Object(s.b)() || console.error(o), r.c.withScope(e => {
+						var t, n;
+						e.setExtra("response", o.response), e.setExtra("status", null === (t = o.response) || void 0 === t ? void 0 : t.status), e.setExtra("graphql_error", null === (n = o.response) || void 0 === n ? void 0 : n.error), r.c.captureException(o)
+					})
+				}
+			}
 		},
 		"./src/reddit/actions/notificationSettingsLayout/index.ts": function(e, t, n) {
 			"use strict";
@@ -18058,4 +18069,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6985998302f3abc75cd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.85b7a7cd3a335691eebc.js.map
