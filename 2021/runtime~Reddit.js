@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.337b299b63f9518bc153.js
-// Retrieved at 6/23/2021, 1:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d9fc41953ab1d89da73a.js
+// Retrieved at 6/23/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1252,16 +1252,16 @@
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
 						"reddit-components-CoinPurchaseDropdown": "e23bd395f70012dd9e8c",
-						"translations/de_DE-json": "09cf5aa8a2807bdb8ba0",
-						"translations/es_ES-json": "a17c1c7e1d7c3bf7e56c",
-						"translations/es_MX-json": "3a69a45198345c2d7771",
-						"translations/fr_FR-json": "46d5602b59ddda3e8a78",
-						"translations/it_IT-json": "1ca46344904252ab2c38",
-						"translations/pseudo_ext-json": "2726fd4ba70407556d45",
+						"translations/de_DE-json": "dd855eb780ed580a5576",
+						"translations/es_ES-json": "5bac3f5c997c667b4462",
+						"translations/es_MX-json": "1a5ef379183f46f84db8",
+						"translations/fr_FR-json": "6fc715aaaedcd25032cf",
+						"translations/it_IT-json": "1e4f384b5159dbfd068f",
+						"translations/pseudo_ext-json": "5406a8c240a2911f66a9",
 						"translations/pseudo_long-json": "998afcce8f6820454591",
 						"translations/pseudo_short-json": "ec3efe15ce25885529db",
-						"translations/pt_BR-json": "56b2d3be859ad39ad855",
-						"translations/pt_PT-json": "ac430b4a71055db2e13f",
+						"translations/pt_BR-json": "205ec4d7dfe1e5141b8e",
+						"translations/pt_PT-json": "14f69fddd23a04793a32",
 						"vendors~AdminPanel": "9b24840577d41d3b738d",
 						AdminPanel: "2a0916c5fe873a305002",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.337b299b63f9518bc153.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d9fc41953ab1d89da73a.js.map
