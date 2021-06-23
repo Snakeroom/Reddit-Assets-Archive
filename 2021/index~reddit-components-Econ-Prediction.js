@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.63313dd6471724eced0b.js
-// Retrieved at 6/16/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.32e5b10d9cbf15b59e5b.js
+// Retrieved at 6/22/2021, 8:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -131,8 +131,8 @@
 				_ = 16,
 				b = 128,
 				h = 512;
-			e.exports = function e(t, n, E, g, O, j, v, I, k, x) {
-				var N = n & b,
+			e.exports = function e(t, n, E, g, O, j, v, I, k, N) {
+				var x = n & b,
 					y = n & m,
 					C = n & p,
 					w = n & (f | _),
@@ -142,13 +142,13 @@
 					for (var p = arguments.length, f = Array(p), _ = p; _--;) f[_] = arguments[_];
 					if (w) var b = i(m),
 						h = s(f, b);
-					if (g && (f = o(f, g, O, w)), j && (f = r(f, j, v, w)), p -= h, w && p < x) {
+					if (g && (f = o(f, g, O, w)), j && (f = r(f, j, v, w)), p -= h, w && p < N) {
 						var A = l(f, b);
-						return c(t, n, e, m.placeholder, E, f, A, I, k, x - p)
+						return c(t, n, e, m.placeholder, E, f, A, I, k, N - p)
 					}
 					var T = y ? E : this,
 						L = C ? T[t] : t;
-					return p = f.length, I ? f = d(f, I) : P && p > 1 && f.reverse(), N && k < p && (f.length = k), this && this !== u && this instanceof m && (L = S || a(L)), L.apply(T, f)
+					return p = f.length, I ? f = d(f, I) : P && p > 1 && f.reverse(), x && k < p && (f.length = k), this && this !== u && this instanceof m && (L = S || a(L)), L.apply(T, f)
 				}
 			}
 		},
@@ -204,18 +204,18 @@
 				E = 32,
 				g = 64,
 				O = Math.max;
-			e.exports = function(e, t, n, j, v, I, k, x) {
-				var N = t & _;
-				if (!N && "function" != typeof e) throw new TypeError(p);
+			e.exports = function(e, t, n, j, v, I, k, N) {
+				var x = t & _;
+				if (!x && "function" != typeof e) throw new TypeError(p);
 				var y = j ? j.length : 0;
-				if (y || (t &= ~(E | g), j = v = void 0), k = void 0 === k ? k : O(m(k), 0), x = void 0 === x ? x : m(x), y -= v ? v.length : 0, t & g) {
+				if (y || (t &= ~(E | g), j = v = void 0), k = void 0 === k ? k : O(m(k), 0), N = void 0 === N ? N : m(N), y -= v ? v.length : 0, t & g) {
 					var C = j,
 						w = v;
 					j = v = void 0
 				}
-				var P = N ? void 0 : i(e),
-					S = [e, t, n, j, v, C, w, I, k, x];
-				if (P && d(S, P), e = S[0], t = S[1], n = S[2], j = S[3], v = S[4], !(x = S[9] = void 0 === S[9] ? N ? 0 : e.length : O(S[9] - y, 0)) && t & (b | h) && (t &= ~(b | h)), t && t != f) A = t == b || t == h ? s(e, t, x) : t != E && t != (f | E) || v.length ? a.apply(void 0, S) : c(e, t, n, j);
+				var P = x ? void 0 : i(e),
+					S = [e, t, n, j, v, C, w, I, k, N];
+				if (P && d(S, P), e = S[0], t = S[1], n = S[2], j = S[3], v = S[4], !(N = S[9] = void 0 === S[9] ? x ? 0 : e.length : O(S[9] - y, 0)) && t & (b | h) && (t &= ~(b | h)), t && t != f) A = t == b || t == h ? s(e, t, N) : t != E && t != (f | E) || v.length ? a.apply(void 0, S) : c(e, t, n, j);
 				else var A = r(e, t, n);
 				return u((P ? o : l)(A, S), e, t)
 			}
@@ -684,7 +684,7 @@
 			})), n.d(t, "k", (function() {
 				return k
 			})), n.d(t, "j", (function() {
-				return x
+				return N
 			})), n.d(t, "g", (function() {
 				return w
 			})), n.d(t, "b", (function() {
@@ -795,7 +795,7 @@
 						prediction: d.poll,
 						price: o
 					})), d.poll
-				}, x = ({
+				}, N = ({
 					optionId: e,
 					postId: t
 				}) => async (n, o, {
@@ -813,7 +813,7 @@
 						pollId: t,
 						prediction: a.poll
 					})), a.poll
-				}, N = Object(c.a)(h.b), y = Object(c.a)(h.c), C = Object(c.a)(h.f), w = e => async (t, n, {
+				}, x = Object(c.a)(h.b), y = Object(c.a)(h.c), C = Object(c.a)(h.f), w = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -823,7 +823,7 @@
 						})) return Object(b.e)(r, {
 						subredditId: s
 					});
-					t(N({
+					t(x({
 						subredditId: s
 					}));
 					const a = await Object(i.i)(o(), {
@@ -990,9 +990,9 @@
 			})), n.d(t, "g", (function() {
 				return k
 			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "d", (function() {
 				return N
+			})), n.d(t, "d", (function() {
+				return x
 			})), n.d(t, "e", (function() {
 				return y
 			})), n.d(t, "c", (function() {
@@ -1056,7 +1056,7 @@
 					const t = await Object(i.a)(r(), e, s.id);
 					n(Object(O.i)(t))
 				}
-			}, x = e => async (t, n, {
+			}, N = e => async (t, n, {
 				apiContext: o
 			}) => {
 				const r = n(),
@@ -1077,14 +1077,14 @@
 						userId: a.id
 					})), Object(s.a)(t, r.error))
 				}
-			}, N = (e, t) => async (n, o, {
+			}, x = (e, t) => async (n, o, {
 				apiContext: r
 			}) => {
 				await n(k(e, !0));
 				const s = o().economics.subredditPremium[e];
 				if (s && s.status === b.a.Fetched) {
 					const o = s.data.userOwnedBadges.find(e => e.type === t.id);
-					o && (n(x({
+					o && (n(N({
 						badge: o,
 						subredditId: e,
 						placement: o.placement
@@ -1123,7 +1123,7 @@
 							subredditId: e,
 							badge: a
 						});
-						t && await o(x({
+						t && await o(N({
 							badge: t,
 							subredditId: e
 						}))
@@ -1214,9 +1214,9 @@
 			})), n.d(t, "v", (function() {
 				return k
 			})), n.d(t, "w", (function() {
-				return x
-			})), n.d(t, "x", (function() {
 				return N
+			})), n.d(t, "x", (function() {
+				return x
 			}));
 			const o = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				r = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -1240,8 +1240,8 @@
 				v = "GOVERNANCE__TRANSFER_SUCCESS",
 				I = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				k = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				x = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				N = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				x = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
 			"use strict";
@@ -1361,7 +1361,6 @@
 				star3: "VIpS2R-VHBk65WSa6Zcib",
 				star4: "l-AV8_H83Hx_AHDSeTB98",
 				star5: "_1dPwshgIcu7y8Z1FasODrj",
-				star6: "_3NqJmwdfmQTGmPTo_r720g",
 				header: "_12Jw6FeyEt2qhLDDnwSw9i",
 				premium: "_3U4cIVyfUBOzxSWWEj8JYE",
 				title: "_8kYSqIcb9XUa_toG_ha4y",
@@ -1457,7 +1456,7 @@
 				I = n("./src/reddit/controls/Button/index.tsx"),
 				k = n("./src/reddit/icons/fonts/index.tsx");
 
-			function x({
+			function N({
 				className: e
 			}) {
 				return r.a.createElement("svg", {
@@ -1474,56 +1473,56 @@
 				}))
 			}
 			const {
-				fbt: N
+				fbt: x
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = {
-				0: [N._("IT’S LIKE YOU HAVE ESPN OR SOMETHING", null, {
+				0: [x._("IT’S LIKE YOU HAVE ESPN OR SOMETHING", null, {
 					hk: "4uUPl5"
-				}), N._("SOMEONE’S WEARING THEIR SMARTYPANTS", null, {
+				}), x._("SOMEONE’S WEARING THEIR SMARTYPANTS", null, {
 					hk: "qN0k"
-				}), N._("CARE TO MAKE THIS INTERESTING?", null, {
+				}), x._("CARE TO MAKE THIS INTERESTING?", null, {
 					hk: "47Xsve"
-				}), N._("NOT MUCH OF A RISK TAKER ARE YOU?", null, {
+				}), x._("NOT MUCH OF A RISK TAKER ARE YOU?", null, {
 					hk: "2L977G"
-				}), N._("YOU HAVE CHOSEN… WISELY", null, {
+				}), x._("YOU HAVE CHOSEN… WISELY", null, {
 					hk: "2TtWN7"
-				}), N._("EVEN A BROKEN CLOCK…", null, {
+				}), x._("EVEN A BROKEN CLOCK…", null, {
 					hk: "4hICJf"
-				}), N._("THE ONLY DANGEROUS AMOUNT IS NONE", null, {
+				}), x._("THE ONLY DANGEROUS AMOUNT IS NONE", null, {
 					hk: "gXUSY"
-				}), N._("KNOWING IS NOT ENOUGH, WE MUST APPLY", null, {
+				}), x._("KNOWING IS NOT ENOUGH, WE MUST APPLY", null, {
 					hk: "2TKCxt"
-				}), N._("FEEL A SENSE OF PRIDE AND ACCOMPLISHMENT", null, {
+				}), x._("FEEL A SENSE OF PRIDE AND ACCOMPLISHMENT", null, {
 					hk: "Fyuw6"
 				})],
-				10: [N._("YOU’RE GONNA NEED A BIGGER BOAT", null, {
+				10: [x._("YOU’RE GONNA NEED A BIGGER BOAT", null, {
 					hk: "10rVXp"
-				}), N._("MORE COWBELL!!!", null, {
+				}), x._("MORE COWBELL!!!", null, {
 					hk: "2QxBVm"
-				}), N._("THIS X 100", null, {
+				}), x._("THIS X 100", null, {
 					hk: "22KiG6"
-				}), N._("PUT THEM IN COACH, THEY’RE READY TO PLAY", null, {
+				}), x._("PUT THEM IN COACH, THEY’RE READY TO PLAY", null, {
 					hk: "HSHpa"
-				}), N._("LOOK WHO FINALLY DECIDED TO SHOW UP", null, {
+				}), x._("LOOK WHO FINALLY DECIDED TO SHOW UP", null, {
 					hk: "xiCan"
 				})],
-				30: [N._("PLAYER 1 HAS ENTERED THE GAME", null, {
+				30: [x._("PLAYER 1 HAS ENTERED THE GAME", null, {
 					hk: "3ar3RF"
-				}), N._("9/10 WOULD ADD MORE AGAIN", null, {
+				}), x._("9/10 WOULD ADD MORE AGAIN", null, {
 					hk: "4vHoFB"
-				}), N._("HAVING NO LIMITATION AS LIMITATION", null, {
+				}), x._("HAVING NO LIMITATION AS LIMITATION", null, {
 					hk: "XCKKV"
-				}), N._("LIVE, LAUGH, LOVE, ADD MORE", null, {
+				}), x._("LIVE, LAUGH, LOVE, ADD MORE", null, {
 					hk: "108oZP"
 				})],
-				100: [N._("LIKE A BOSS!", null, {
+				100: [x._("LIKE A BOSS!", null, {
 					hk: "1L9c48"
-				}), N._("MAKE IT SO", null, {
+				}), x._("MAKE IT SO", null, {
 					hk: "4l4SGb"
-				}), N._("SOMEBODY’S GOTTA WIN", null, {
+				}), x._("SOMEBODY’S GOTTA WIN", null, {
 					hk: "AYUg5"
-				}), N._("IN IT TO WIN IT", null, {
+				}), x._("IN IT TO WIN IT", null, {
 					hk: "i1Fve"
-				}), N._("WELCOME TO THE CENTURY CLUB", null, {
+				}), x._("WELCOME TO THE CENTURY CLUB", null, {
 					hk: "2crGlm"
 				})]
 			}, C = (e = 0) => {
@@ -1567,9 +1566,9 @@
 					className: Object(i.a)(P.a.highlight, {
 						[P.a.isHighlighting]: u
 					})
-				}, r.a.createElement(x, {
+				}, r.a.createElement(N, {
 					className: P.a.leftStar
-				}), r.a.createElement(x, {
+				}), r.a.createElement(N, {
 					className: P.a.rightStar
 				})))) : r.a.createElement(v.a, {
 					onAddCoins: j.promptUserToBuyMoreCoins,
@@ -1730,7 +1729,7 @@
 				tournamentId: v,
 				userCoins: I
 			}) => {
-				const [k, x] = Object(o.useState)(0), [N, y] = Object(o.useState)(null), [C, w] = Object(o.useState)(null), [P, S] = Object(o.useState)(null), [T, L] = Object(o.useState)(!1), [B, D] = Object(o.useState)(!1), [M, U] = Object(o.useState)(!1), F = Object(h.a)(), H = null == N ? void 0 : N[k], z = null == C ? void 0 : C[k], V = v ? C && k === C.length - 1 : N && k === N.length - 1, W = !!N || "COINS" === (null == z ? void 0 : z.currency), q = W && I < ((null == H ? void 0 : H.coins) || (null == z ? void 0 : z.amount) || 0), Q = !!z && null !== P && P < z.amount, K = null == H ? void 0 : H.coins, X = null == z ? void 0 : z.amount, Z = q || Q, ee = Z || V, te = Object(o.useCallback)(async () => {
+				const [k, N] = Object(o.useState)(0), [x, y] = Object(o.useState)(null), [C, w] = Object(o.useState)(null), [P, S] = Object(o.useState)(null), [T, L] = Object(o.useState)(!1), [B, D] = Object(o.useState)(!1), [M, U] = Object(o.useState)(!1), F = Object(h.a)(), H = null == x ? void 0 : x[k], z = null == C ? void 0 : C[k], V = v ? C && k === C.length - 1 : x && k === x.length - 1, W = !!x || "COINS" === (null == z ? void 0 : z.currency), q = W && I < ((null == H ? void 0 : H.coins) || (null == z ? void 0 : z.amount) || 0), Q = !!z && null !== P && P < z.amount, K = null == H ? void 0 : H.coins, X = null == z ? void 0 : z.amount, Z = q || Q, ee = Z || V, te = Object(o.useCallback)(async () => {
 					try {
 						const t = await e(g);
 						w(t)
@@ -1763,7 +1762,7 @@
 					})()
 				}, [t, c, O, v, P]), Object(o.useEffect)(() => {
 					(async () => {
-						if (!N && !C)
+						if (!x && !C)
 							if (v) null !== P && te();
 							else try {
 								const e = await n(g);
@@ -1784,7 +1783,7 @@
 								}), c()
 							}
 					})()
-				}, [C, N, e, n, c, te, g, O, P, v]);
+				}, [C, x, e, n, c, te, g, O, P, v]);
 				const ne = Object(o.useCallback)(async () => {
 						if (!v) return null;
 						await te(), U(!1), S(Y)
@@ -1825,7 +1824,7 @@
 					disabled: 0 === k,
 					className: R.a.wagerSelectorButton,
 					onClick: e => {
-						e.preventDefault(), (N || C) && 0 !== k && x(k - 1)
+						e.preventDefault(), (x || C) && 0 !== k && N(k - 1)
 					}
 				}, r.a.createElement(f.a, {
 					className: R.a.wagerSelectorButtonIcon
@@ -1848,10 +1847,10 @@
 					"aria-label": $._("Increase", null, {
 						hk: "3OfAwL"
 					}),
-					disabled: !(!N && !C || !V),
+					disabled: !(!x && !C || !V),
 					className: R.a.wagerSelectorButton,
 					onClick: e => {
-						e.preventDefault(), (N || C) && (V || x(k + 1))
+						e.preventDefault(), (x || C) && (V || N(k + 1))
 					}
 				}, r.a.createElement(_.a, {
 					className: R.a.wagerSelectorButtonIcon
@@ -1865,10 +1864,10 @@
 					hk: "1BpnPd"
 				}))), r.a.createElement("button", {
 					className: Object(i.a)(R.a.predictButton, {
-						[R.a.isDisabled]: !N && !C || q,
+						[R.a.isDisabled]: !x && !C || q,
 						[R.a.isCreatingVote]: s
 					}),
-					disabled: !N && !C || s || Q,
+					disabled: !x && !C || s || Q,
 					onClick: e => {
 						e.preventDefault(), (H || z) && d({
 							coinPackage: H,
@@ -1948,11 +1947,10 @@
 				g = n("./src/higherOrderComponents/asModal/index.tsx"),
 				O = n("./src/reddit/controls/Button/index.tsx"),
 				j = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				v = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
-				I = n("./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less"),
-				k = n.n(I);
+				v = n("./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less"),
+				I = n.n(v);
 			const {
-				fbt: x
+				fbt: k
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var N = Object(g.a)(({
 					isPremiumSubscriber: e,
@@ -1995,80 +1993,82 @@
 						tournamentId: t
 					}));
 					return r.a.createElement("div", {
-						className: k.a.modal
+						className: I.a.modal
 					}, r.a.createElement("button", {
-						"aria-label": x._("Close", null, {
+						"aria-label": k._("Close", null, {
 							hk: "10CQyx"
 						}),
-						className: k.a.closeButton,
+						className: I.a.closeButton,
 						onClick: c
 					}, r.a.createElement(j.a, {
-						className: k.a.closeIcon
+						className: I.a.closeIcon
 					})), r.a.createElement("header", {
-						className: k.a.header
+						className: I.a.header
 					}, r.a.createElement("div", {
-						className: k.a.imageWrapper
-					}, r.a.createElement(v.a, {
-						className: k.a.image
+						className: I.a.imageWrapper
+					}, r.a.createElement("img", {
+						className: I.a.image,
+						src: `${E.a.assetPath}/img/econ/predictions/sneak-peek.png`,
+						alt: k._("Snoo peeking behind the curtain", null, {
+							hk: "271pCZ"
+						})
 					}), !s && r.a.createElement(r.a.Fragment, null, r.a.createElement(_, {
-						className: k.a.star1
+						className: I.a.star1
 					}), r.a.createElement(_, {
-						className: k.a.star2
+						className: I.a.star2
 					}), r.a.createElement(_, {
-						className: k.a.star3
+						className: I.a.star3
 					}), r.a.createElement(_, {
-						className: k.a.star4
+						className: I.a.star4
 					}), r.a.createElement(_, {
-						className: k.a.star5
-					}), r.a.createElement(_, {
-						className: k.a.star6
+						className: I.a.star5
 					}))), r.a.createElement("div", {
-						className: k.a.spacer
+						className: I.a.spacer
 					}), r.a.createElement("p", {
-						className: k.a.premium
-					}, x._("Premium Feature", null, {
+						className: I.a.premium
+					}, k._("Premium Feature", null, {
 						hk: "32ZWoW"
 					})), r.a.createElement("div", {
-						className: k.a.smallSpacer
+						className: I.a.smallSpacer
 					}), r.a.createElement("h2", {
-						className: k.a.title
-					}, x._("Sneak Peek", null, {
+						className: I.a.title
+					}, k._("Sneak Peek", null, {
 						hk: "2FAIvU"
 					})), r.a.createElement("h3", {
-						className: k.a.subtitle
-					}, x._("Premium users can see how others have predicted before they make their own Prediction.", null, {
+						className: I.a.subtitle
+					}, k._("Premium users can see how others have predicted before they make their own Prediction.", null, {
 						hk: "1gsyLA"
 					}))), e ? r.a.createElement(O.q, {
 						priority: O.b.Primary,
-						className: k.a.button,
+						className: I.a.button,
 						onClick: () => {
 							p(), a(), c()
 						},
 						isFullWidth: !0
-					}, x._("Continue", null, {
+					}, k._("Continue", null, {
 						hk: "3T00JU"
 					})) : r.a.createElement("a", {
-						className: k.a.link,
+						className: I.a.link,
 						href: `${E.a.redditUrl}/premium`,
 						target: "_blank",
 						rel: "noopener noreferrer",
 						onClick: () => {
 							p(), c()
 						}
-					}, x._("Get Premium", null, {
+					}, k._("Get Premium", null, {
 						hk: "3tW2d3"
 					})), r.a.createElement("div", {
-						className: k.a.spacer
+						className: I.a.spacer
 					}), r.a.createElement("p", {
-						className: k.a.disclaimer
-					}, x._("Only paid Reddit Premium members get a hint.", null, {
-						hk: "2BpR2d"
+						className: I.a.disclaimer
+					}, k._("Only paid Reddit Premium members can get Sneak Peeks. Requirements and availabilty subject to change.", null, {
+						hk: "3yo88n"
 					})))
 				}),
-				y = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
-				C = n.n(y);
+				x = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
+				y = n.n(x);
 			const {
-				fbt: w
+				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = ({
 				disabled: e,
@@ -2079,29 +2079,29 @@
 				pollId: f,
 				onReveal: E
 			}) => {
-				const [g, O] = Object(o.useState)(!1), [j, v] = Object(l.a)("hasSeenPredictionSneakPeek", !1), I = Object(u.a)(), k = Object(s.e)(h.t), x = !!p, y = n && !c;
-				if (!Object(s.e)(e => !t && !y && x && Object(b.m)(e))) return null;
+				const [g, O] = Object(o.useState)(!1), [j, v] = Object(l.a)("hasSeenPredictionSneakPeek", !1), I = Object(u.a)(), k = Object(s.e)(h.t), x = !!p, w = n && !c;
+				if (!Object(s.e)(e => !t && !w && x && Object(b.m)(e))) return null;
 				const P = () => {
 					j || v(!0), O(!1)
 				};
 				return r.a.createElement("div", {
-					className: C.a.optionButtonWrapper
+					className: y.a.optionButtonWrapper
 				}, !j && !e && r.a.createElement(r.a.Fragment, null, r.a.createElement(_, {
-					className: C.a.star1
+					className: y.a.star1
 				}), r.a.createElement(_, {
-					className: C.a.star2
+					className: y.a.star2
 				}), r.a.createElement(_, {
-					className: C.a.star3
+					className: y.a.star3
 				}), r.a.createElement(_, {
-					className: C.a.star4
+					className: y.a.star4
 				}), r.a.createElement(_, {
-					className: C.a.star5
+					className: y.a.star5
 				})), r.a.createElement("button", {
-					"aria-label": w._("Sneak a peek", null, {
+					"aria-label": C._("Sneak a peek", null, {
 						hk: "1VQ7WW"
 					}),
-					className: Object(a.a)(C.a.hintButton, {
-						[C.a.canGetHint]: !e
+					className: Object(a.a)(y.a.hintButton, {
+						[y.a.canGetHint]: !e
 					}),
 					disabled: e,
 					onClick: () => {
@@ -2119,13 +2119,13 @@
 						})), k && j ? E() : O(!0)
 					}
 				}, r.a.createElement("div", {
-					className: C.a.optionBody
+					className: y.a.optionBody
 				}, r.a.createElement(m.a, {
-					className: C.a.eyeIcon
+					className: y.a.eyeIcon
 				}), r.a.createElement("div", {
-					className: C.a.optionText
-				}, w._("See what others think", null, {
-					hk: "2TLT90"
+					className: y.a.optionText
+				}, C._("See what others predicted", null, {
+					hk: "s0o8s"
 				})))), g && r.a.createElement(N, {
 					isPremiumSubscriber: k,
 					tournamentId: p,
@@ -2233,23 +2233,6 @@
 				}, u._("You must be logged in", null, {
 					hk: "18KrL7"
 				}))))
-			})
-		},
-		"./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx": function(e, t, n) {
-			"use strict";
-			var o = n("./node_modules/react/index.js"),
-				r = n.n(o),
-				s = n("./src/config.ts");
-			const {
-				fbt: a
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), c = `\n  ${s.a.assetPath}/img/econ/predictions/waiting.png,\n  ${s.a.assetPath}/img/econ/predictions/waiting@2x.png 2x,\n  ${s.a.assetPath}/img/econ/predictions/waiting@3x.png 3x,\n`;
-			t.a = e => r.a.createElement("img", {
-				className: e.className,
-				srcSet: c,
-				src: `${s.a.assetPath}/img/econ/predictions/waiting@2x.png 2x`,
-				alt: a._("Snoos gazing into a crystal ball", null, {
-					hk: "1XM1Zp"
-				})
 			})
 		},
 		"./src/reddit/components/Econ/Prediction/UnicornIcon/index.tsx": function(e, t, n) {
@@ -2456,9 +2439,9 @@
 			})), n.d(t, "d", (function() {
 				return k
 			})), n.d(t, "e", (function() {
-				return x
-			})), n.d(t, "g", (function() {
 				return N
+			})), n.d(t, "g", (function() {
+				return x
 			}));
 			var o = n("./src/lib/makeGqlRequest/index.ts"),
 				r = n("./src/redditGQL/operations/AddPredictionDrafts.json"),
@@ -2555,11 +2538,11 @@
 						input: t
 					}
 				}),
-				x = (e, t) => Object(o.a)(e, {
+				N = (e, t) => Object(o.a)(e, {
 					...c,
 					variables: t
 				}),
-				N = (e, t) => Object(o.a)(e, {
+				x = (e, t) => Object(o.a)(e, {
 					...d,
 					variables: t
 				})
@@ -2978,9 +2961,9 @@
 			})), n.d(t, "e", (function() {
 				return k
 			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "j", (function() {
 				return N
+			})), n.d(t, "j", (function() {
+				return x
 			})), n.d(t, "h", (function() {
 				return y
 			})), n.d(t, "f", (function() {
@@ -3158,13 +3141,13 @@
 					action: "click",
 					noun: "next"
 				}),
-				x = () => e => ({
+				N = () => e => ({
 					...Object(o.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "add_more"
 				}),
-				N = () => e => ({
+				x = () => e => ({
 					...Object(o.defaults)(e),
 					source: "predictions",
 					action: "click",
@@ -3434,4 +3417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.63313dd6471724eced0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.32e5b10d9cbf15b59e5b.js.map
