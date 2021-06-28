@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.31460e40f439d30224c9.js
-// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.48993adf7375151e1342.js
+// Retrieved at 6/28/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7049,8 +7049,8 @@
 				className: h.a.titleAndDescriptionContainer
 			}, r.a.createElement("h3", {
 				className: h.a.title
-			}, f._("Top broadcast", null, {
-				hk: "HADCh"
+			}, f._("Top livestream", null, {
+				hk: "4od1tZ"
 			}))), r.a.createElement("div", {
 				className: h.a.body
 			}, r.a.createElement("div", {
@@ -15172,4 +15172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.31460e40f439d30224c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.48993adf7375151e1342.js.map
