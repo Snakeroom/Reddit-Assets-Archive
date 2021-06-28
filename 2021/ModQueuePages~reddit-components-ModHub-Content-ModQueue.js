@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.643caba01db4db2b519a.js
-// Retrieved at 6/23/2021, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.4b51ba2c9c6def5cbb53.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -265,7 +265,7 @@
 					currentPageUrl: w.e
 				}),
 				B = Object(l.c)({
-					moderatingSubreddits: N.l,
+					moderatingSubreddits: N.m,
 					origin: I.j
 				}),
 				A = Object(i.b)(B),
@@ -376,7 +376,7 @@
 					}) : null,
 					subreddit: (e, {
 						subredditName: t
-					}) => t ? Object(y.z)(e, {
+					}) => t ? Object(y.A)(e, {
 						subredditName: t
 					}) : null
 				}),
@@ -839,7 +839,7 @@
 					dropdownIsOpen: Object(tt.b)(gt),
 					flairData: $e.d,
 					isApiPending: Ce.a,
-					moderatorPermissions: Ye.k,
+					moderatorPermissions: Ye.l,
 					posts: et.I,
 					selectedItems: Ce.g
 				}),
@@ -1013,7 +1013,7 @@
 					modQueueListingItems: Ce.d,
 					origin: ye.j,
 					selectedItems: Ce.g,
-					subredditId: (e, t) => t.subredditName ? Object(Ee.E)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(Ee.F)(e, t.subredditName) : null
 				}),
 				Mt = Object(d.b)(Rt, e => ({
 					addSelectedItems: t => e(Object(u.a)({
@@ -2077,4 +2077,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.643caba01db4db2b519a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.4b51ba2c9c6def5cbb53.js.map

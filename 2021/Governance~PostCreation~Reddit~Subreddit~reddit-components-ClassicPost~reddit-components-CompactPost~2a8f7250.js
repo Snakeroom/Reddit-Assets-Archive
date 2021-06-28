@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.05c276e5b6ca3bfdcb98.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.ac770f22b1a5d7bf3109.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -149,8 +149,8 @@
 			}
 			var _ = r("./src/reddit/models/Toast/index.ts"),
 				v = r("./src/reddit/selectors/profile.ts"),
-				T = r("./src/reddit/selectors/subreddit.ts"),
-				I = r("./src/reddit/selectors/subscriptions.ts"),
+				I = r("./src/reddit/selectors/subreddit.ts"),
+				T = r("./src/reddit/selectors/subscriptions.ts"),
 				E = r("./src/reddit/selectors/user.ts");
 			const S = () => s.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
@@ -178,7 +178,7 @@
 					apiContext: h
 				}) => {
 					let y = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(T.E)(l(), e.name),
+						id: Object(I.F)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -206,7 +206,7 @@
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
 							subredditModels: l().subreddits.models,
-							subscriptionsCount: Object(I.b)(l()),
+							subscriptionsCount: Object(T.b)(l()),
 							userIsSubscriber: t,
 							widgetId: r
 						})), (await ((e, {
@@ -230,7 +230,7 @@
 						})).ok) {
 						y.filter(e => e.type === m.a.SUBREDDIT).forEach(({
 							id: e
-						}) => o(Object(a.i)(e, {
+						}) => o(Object(a.k)(e, {
 							forceLoad: !0,
 							fullData: !1
 						})));
@@ -248,7 +248,7 @@
 							nameIdentifiers: e,
 							profileModels: l().profiles.models,
 							subredditModels: l().subreddits.models,
-							subscriptionsCount: Object(I.b)(l()),
+							subscriptionsCount: Object(T.b)(l()),
 							userIsSubscriber: !t,
 							widgetId: r
 						}));
@@ -261,7 +261,7 @@
 					apiContext: s
 				}) => {
 					const o = r(),
-						i = Object(T.L)(o, {
+						i = Object(I.M)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -283,7 +283,7 @@
 							type: e.type,
 							name: i.name
 						},
-						g = () => Object(T.fb)(r(), {
+						g = () => Object(I.gb)(r(), {
 							identifier: j
 						});
 					(g() || (await t(R([j], !0)), g())) && ((await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
@@ -551,9 +551,9 @@
 				k = r("./src/reddit/helpers/styles/smartTextColor.ts"),
 				_ = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				v = r("./src/reddit/models/Flair/index.ts"),
-				T = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				I = r("./src/reddit/components/Flair/index.m.less"),
-				E = r.n(I);
+				I = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				T = r("./src/reddit/components/Flair/index.m.less"),
+				E = r.n(T);
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -623,7 +623,7 @@
 						onMouseLeave: this.props.tooltip ? this.onHideTooltip : void 0,
 						ref: this.setTooltipTargetRef,
 						style: {
-							backgroundColor: this.props.backgroundColor || Object(T.a)(this.props).flair,
+							backgroundColor: this.props.backgroundColor || Object(I.a)(this.props).flair,
 							color: `${W(this.props)}`
 						}
 					}, this.props.text, this.props.isSelected && c.a.createElement(w, {
@@ -632,7 +632,7 @@
 					}, c.a.createElement(_.a, {
 						className: E.a.CloseIcon,
 						style: {
-							fill: this.props.backgroundColor || Object(T.a)(this.props).flair
+							fill: this.props.backgroundColor || Object(I.a)(this.props).flair
 						}
 					})), !!this.props.tooltip && c.a.createElement(P, {
 						text: this.props.tooltip,
@@ -682,7 +682,7 @@
 						}),
 						style: {
 							...n,
-							backgroundColor: e.backgroundColor || Object(T.a)(e).flair,
+							backgroundColor: e.backgroundColor || Object(I.a)(e).flair,
 							color: `${W(e)}`
 						}
 					}, s, e.isSelected && c.a.createElement(w, {
@@ -691,7 +691,7 @@
 					}, c.a.createElement(_.a, {
 						className: E.a.CloseIcon,
 						style: {
-							fill: e.backgroundColor || Object(T.a)(e).flair
+							fill: e.backgroundColor || Object(I.a)(e).flair
 						}
 					})));
 					return c.a.createElement(R, {
@@ -706,7 +706,7 @@
 						to: e.to
 					})
 				}),
-				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(T.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(k.a)(Object(T.a)(e).post, j.b.black, j.b.white) : e.textColor === v.e.Dark ? j.b.black : j.b.white,
+				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(I.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(k.a)(Object(I.a)(e).post, j.b.black, j.b.white) : e.textColor === v.e.Dark ? j.b.black : j.b.white,
 				H = p.a.wrapped(M, "TextFlair", E.a),
 				K = p.a.wrapped(U, "RichTextFlair", E.a),
 				B = e => {
@@ -716,7 +716,7 @@
 						case "nsfw":
 							return "#FF585B";
 						default:
-							return Object(i.j)(.1, Object(T.a)(o()(e, "theme", "redditStyle", "data-redditstyle")).button)
+							return Object(i.j)(.1, Object(I.a)(o()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
 				q = p.a.wrapped(e => {
@@ -932,7 +932,7 @@
 					}) => Object(x.w)(e, t),
 					subredditName: (e, {
 						post: t
-					}) => Object(O.T)(e, {
+					}) => Object(O.U)(e, {
 						subredditId: t.belongsTo.id
 					}).name
 				})),
@@ -967,12 +967,12 @@
 				const C = Object(u.b)(),
 					_ = r === h.b.Left,
 					v = j || k(a),
-					T = [];
-				let I = [];
+					I = [];
+				let T = [];
 				_ ? v.map(e => {
-					Object(b.q)(e.type) ? T.push(e) : I.push(e)
-				}) : I = v;
-				const E = i ? g.a.flairNoWrap : T.length > 0 || I.length > 0 || m && x ? g.a.flairWrapper : null,
+					Object(b.q)(e.type) ? I.push(e) : T.push(e)
+				}) : T = v;
+				const E = i ? g.a.flairNoWrap : I.length > 0 || T.length > 0 || m && x ? g.a.flairWrapper : null,
 					S = e => {
 						const t = {
 							id: a.belongsTo.id,
@@ -990,13 +990,13 @@
 				return N || w ? o.a.createElement("div", {
 					className: Object(c.a)(E, e),
 					"data-ignore-click": C
-				}, N && T && o.a.createElement(l.a, {
+				}, N && I && o.a.createElement(l.a, {
 					className: g.a.flairList,
 					isFlairFilter: s,
 					key: "leftFlair",
 					onClick: S,
 					onMouseDown: P,
-					flair: T,
+					flair: I,
 					disabled: !n,
 					subredditName: O
 				}), N && o.a.createElement(l.a, {
@@ -1005,7 +1005,7 @@
 					key: "rightFlair",
 					onClick: S,
 					onMouseDown: P,
-					flair: I,
+					flair: T,
 					disabled: !n,
 					subredditName: O
 				}), w && o.a.createElement(d.a, {
@@ -1227,10 +1227,10 @@
 				k = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				_ = r("./src/telemetry/models/Outbound.ts"),
 				v = r("./src/reddit/components/Thumbnail/index.m.less"),
-				T = r.n(v);
+				I = r.n(v);
 
-			function I() {
-				return (I = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -1240,18 +1240,18 @@
 			}
 			const E = e => e.placeholderImage || Object(k.a)(e).placeholderImage,
 				S = e => e.placeholderImage ? "cover" : Object(k.a)(e).placeholderImagePosition,
-				P = c.a.span("LinkText", T.a),
+				P = c.a.span("LinkText", I.a),
 				N = ({
 					className: e,
 					onClick: t,
 					children: r
 				}) => o.a.createElement("div", {
 					onClick: t,
-					className: Object(i.a)(T.a.linkIcon, e)
+					className: Object(i.a)(I.a.linkIcon, e)
 				}, r),
 				w = e => o.a.createElement("img", {
 					alt: e.alt,
-					className: Object(i.a)(T.a.hiddenImage, e.className)
+					className: Object(i.a)(I.a.hiddenImage, e.className)
 				}),
 				F = e => {
 					const t = o.a.createRef(),
@@ -1263,7 +1263,7 @@
 						t.current && (t.current.style.backgroundImage = `url(${s})`)
 					}), o.a.createElement("div", {
 						"aria-label": e.alt,
-						className: Object(i.a)(T.a.thumbnail, T.a.imageThumbnail, e.className),
+						className: Object(i.a)(I.a.thumbnail, I.a.imageThumbnail, e.className),
 						"data-click-id": "image",
 						ref: t,
 						role: "img",
@@ -1274,7 +1274,7 @@
 					}, e.isOutbound && o.a.createElement(N, {
 						className: e.linkIconClassName
 					}, o.a.createElement(j.a, {
-						className: Object(i.a)(T.a.outboundLinkIcon, e.outboundLinkIconClassName),
+						className: Object(i.a)(I.a.outboundLinkIcon, e.outboundLinkIconClassName),
 						isFilled: !0
 					}), e.text && o.a.createElement(P, {
 						className: e.linkTextClassName
@@ -1290,28 +1290,28 @@
 							background: Object(C.g)(Object(k.a)(e).placeholder, t, S(e))
 						};
 					return o.a.createElement("div", {
-						className: Object(i.a)(T.a.thumbnail, T.a.placeholderThumbnail, e.className),
+						className: Object(i.a)(I.a.thumbnail, I.a.placeholderThumbnail, e.className),
 						"data-click-id": "image",
 						style: {
 							...r,
 							borderColor: L(e)
 						}
 					}, (!e.placeholderImage || e.showContentType) && o.a.createElement(x, {
-						className: Object(i.a)(e.contentTypeClassName, T.a.contentType, {
-							[T.a.hasType]: e.type && !e.isOutbound
+						className: Object(i.a)(e.contentTypeClassName, I.a.contentType, {
+							[I.a.hasType]: e.type && !e.isOutbound
 						}),
 						type: e.isMeta || e.isPoll ? "meta" : e.type
 					}), e.isOutbound && o.a.createElement(N, {
 						className: e.linkIconClassName
 					}, o.a.createElement(j.a, {
-						className: Object(i.a)(T.a.outboundLinkIcon, e.outboundLinkIconClassName),
+						className: Object(i.a)(I.a.outboundLinkIcon, e.outboundLinkIconClassName),
 						isFilled: !0
 					}), e.text && o.a.createElement(P, {
 						className: e.linkTextClassName
 					}, e.text)))
 				},
-				R = e => o.a.createElement(F, I({}, e, {
-					className: Object(i.a)(T.a.blurredThumbnail, e.className)
+				R = e => o.a.createElement(F, T({}, e, {
+					className: Object(i.a)(I.a.blurredThumbnail, e.className)
 				})),
 				A = Object(a.a)(e => {
 					const {
@@ -1333,13 +1333,13 @@
 						text: j,
 						theme: C,
 						usePreview: k
-					} = e, v = !C.subredditContext.shouldShowNSFWContent && (b.isNSFW || !(!a || !a.isNSFW)) && !c, I = E({
+					} = e, v = !C.subredditContext.shouldShowNSFWContent && (b.isNSFW || !(!a || !a.isNSFW)) && !c, T = E({
 						placeholderImage: x,
 						redditStyle: f,
 						theme: C
-					}), S = M(e), P = d ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, N = W(b, t, I, v, j, C, S, l, y, h, f, u, m, p, n), w = Object(g.D)(b);
+					}), S = M(e), P = d ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, N = W(b, t, T, v, j, C, S, l, y, h, f, u, m, p, n), w = Object(g.D)(b);
 					return Object(s.a)(w) && !h && w.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
-						className: Object(i.a)(T.a.container, k ? T.a.usePreview : "", r)
+						className: Object(i.a)(I.a.container, k ? I.a.usePreview : "", r)
 					}, o.a.createElement(O.b, {
 						href: Object(g.D)(b),
 						isSponsored: b.isSponsored,
@@ -1347,7 +1347,7 @@
 						source: b.source,
 						sourceElement: P
 					}, N)) : o.a.createElement("div", {
-						className: Object(i.a)(T.a.container, k ? T.a.usePreview : "", r)
+						className: Object(i.a)(I.a.container, k ? I.a.usePreview : "", r)
 					}, N)
 				}),
 				M = ({
@@ -1373,9 +1373,9 @@
 								errorSrc: d.U
 							} : {},
 							u = Object(i.a)(t, {
-								[T.a.verticallyCenterThumbnail]: r
+								[I.a.verticallyCenterThumbnail]: r
 							});
-						return n ? o.a.createElement(R, I({
+						return n ? o.a.createElement(R, T({
 							"data-click-id": "image",
 							src: l
 						}, s, {
@@ -1387,7 +1387,7 @@
 							redditStyle: b,
 							text: a,
 							theme: c
-						})) : o.a.createElement(F, I({
+						})) : o.a.createElement(F, T({
 							alt: e.title,
 							className: u,
 							src: l
@@ -1674,7 +1674,7 @@
 			t.a = Object(s.c)({
 				subredditAchievements: (e = o, t) => {
 					switch (t.type) {
-						case n.ob:
+						case n.pb:
 							const {
 								subredditId: r, subredditAchievementFlairs: s
 							} = t.payload, o = s.reduce((e, t) => ({
@@ -1930,15 +1930,15 @@
 							return e
 					}
 				},
-				T = r("./node_modules/lodash/mapValues.js"),
-				I = r.n(T),
+				I = r("./node_modules/lodash/mapValues.js"),
+				T = r.n(I),
 				E = r("./src/reddit/helpers/commentList/index.ts"),
 				S = r("./src/reddit/models/Comment/index.ts");
 			const P = {};
 
 			function N(e) {
 				const t = e;
-				return I()(t, ({
+				return T()(t, ({
 					depth: e,
 					next: t,
 					prev: r
@@ -2216,9 +2216,9 @@
 			})), r.d(t, "I", (function() {
 				return v
 			})), r.d(t, "n", (function() {
-				return T
-			})), r.d(t, "o", (function() {
 				return I
+			})), r.d(t, "o", (function() {
+				return T
 			})), r.d(t, "j", (function() {
 				return E
 			})), r.d(t, "l", (function() {
@@ -2341,7 +2341,7 @@
 					const r = e.pages.comments.keyToPostId[t];
 					return r ? e.posts.models[r] : null
 				},
-				T = (e, {
+				I = (e, {
 					commentId: t,
 					commentLink: r,
 					commentsPageKey: s
@@ -2349,11 +2349,11 @@
 					const n = e.pages.comments.keyToCommentThreadLinkSets[s];
 					return n ? r ? n[r.id] : t ? n[t] : null : null
 				},
-				I = (e, {
+				T = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.keyToCommentThreadLinkSets[t],
 				E = (e, t) => {
-					const r = t.commentsPageKey ? T(e, t) : null;
+					const r = t.commentsPageKey ? I(e, t) : null;
 					return r ? r.depth : null
 				},
 				S = (e, {
@@ -2488,7 +2488,7 @@
 				Q = e => e.features.comments.visitHighlightFilter,
 				Y = (e, t) => {
 					const r = Object(p.a)(e, t);
-					if (r) return Object(u.Y)(e, r)
+					if (r) return Object(u.Z)(e, r)
 				},
 				Z = (e, {
 					postId: t
@@ -2566,4 +2566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.05c276e5b6ca3bfdcb98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.ac770f22b1a5d7bf3109.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.3f1262f34edbba8c78f3.js
-// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.e732928197d3eda569df.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -75,16 +75,16 @@
 					moderatorPermissions: (e, {
 						postOrComment: t
 					}) => {
-						const s = Object(f.J)(e, {
+						const s = Object(f.K)(e, {
 							thingId: t.id
 						});
-						return s ? Object(C.k)(e, {
+						return s ? Object(C.l)(e, {
 							subredditId: s.id
 						}) : null
 					},
 					subreddit: (e, {
 						postOrComment: t
-					}) => Object(f.J)(e, {
+					}) => Object(f.K)(e, {
 						thingId: t.id
 					}),
 					awardIcon: (e, {
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.3f1262f34edbba8c78f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.e732928197d3eda569df.js.map

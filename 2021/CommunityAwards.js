@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.6d480deda70e87b2ecc3.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.fd1e644a675db778a336.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -31,7 +31,7 @@
 			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return F
 			})), r.d(t, "removeCommunityAward", (function() {
-				return M
+				return q
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
 				return J
 			})), r.d(t, "disableAwardinCommunity", (function() {
@@ -175,7 +175,7 @@
 						subredditOrProfileId: e
 					}));
 					const s = Object(i.a)(e),
-						o = !!Object(w.bb)(n, {
+						o = !!Object(w.cb)(n, {
 							subredditIds: [e]
 						})[0];
 					let c;
@@ -213,7 +213,7 @@
 						const e = y();
 						t(T(e))
 					}
-				}, E = Object(n.a)(O.I), P = Object(n.a)(O.H), L = Object(n.a)(O.M), N = Object(n.a)(O.G), T = e => async (t, r) => {
+				}, E = Object(n.a)(O.I), P = Object(n.a)(O.H), L = Object(n.a)(O.N), N = Object(n.a)(O.G), T = e => async (t, r) => {
 					await t(N(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -294,10 +294,10 @@
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.d), Q = Object(n.a)(O.b), F = Object(n.a)(O.c), M = (e, t) => async (r, n, {
+				}, U = Object(n.a)(O.d), Q = Object(n.a)(O.b), F = Object(n.a)(O.c), q = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
-					r(q());
+					r(M());
 					try {
 						if ((await Object(m.m)(i(), t)).error) {
 							const e = A();
@@ -323,7 +323,7 @@
 						const e = A();
 						await r(H(e))
 					}
-				}, q = Object(n.a)(O.ib), J = Object(n.a)(O.jb), B = Object(n.a)(O.hb), H = e => async (t, r) => {
+				}, M = Object(n.a)(O.jb), J = Object(n.a)(O.kb), B = Object(n.a)(O.ib), H = e => async (t, r) => {
 					await t(B(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.6d480deda70e87b2ecc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.fd1e644a675db778a336.js.map

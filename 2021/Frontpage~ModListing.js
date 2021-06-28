@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b60e94c885282c56fd4b.js
-// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.56a121e232518e8c09d4.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -1968,7 +1968,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(S.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const s = Object(v.E)(e, t.listingName);
+							const s = Object(v.F)(e, t.listingName);
 							return Object(w.j)(e, {
 								subredditId: s
 							})
@@ -1984,14 +1984,14 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (r) {
-							const t = Object(v.E)(e, s);
+							const t = Object(v.F)(e, s);
 							return Object(w.k)(e, {
 								subredditId: t
 							})
 						}
 						return Object(_.C)(e, t, s, n)
 					}),
-					subredditsById: v.ab,
+					subredditsById: v.bb,
 					viewportDataLoaded: C.a,
 					pageReferrer: m.R,
 					postListPlaceholderComponent: () => g.a,
@@ -2380,7 +2380,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.T)(e, {
+						const t = Object(o.U)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -2393,14 +2393,14 @@
 				u = (e, t) => {
 					const s = p(e, t);
 					if (!s) return l;
-					const r = Object(o.X)(e, {
+					const r = Object(o.Y)(e, {
 						subredditName: s.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : l
 				},
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.T)(e, {
+					return s ? Object(o.U)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -2457,4 +2457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.b60e94c885282c56fd4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.56a121e232518e8c09d4.js.map

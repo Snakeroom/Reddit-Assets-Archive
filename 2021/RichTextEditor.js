@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.d5c046b5890537763d43.js
-// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.240929c501932115accc.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -884,8 +884,8 @@
 				L = o("./src/reddit/models/Comment/index.ts"),
 				N = o("./src/reddit/models/PostDraft/index.ts"),
 				H = o("./src/reddit/models/RichTextJson/index.ts"),
-				q = o("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				U = o("./src/reddit/models/Toast/index.ts"),
+				U = o("./src/reddit/models/RichTextJson/nodeMakers.ts"),
+				q = o("./src/reddit/models/Toast/index.ts"),
 				K = o("./src/reddit/selectors/comments.ts"),
 				X = o("./src/reddit/selectors/commentSelector.ts"),
 				J = o("./src/reddit/selectors/platform.ts"),
@@ -965,7 +965,7 @@
 							error: v.error
 						})), u(Object(h.f)({
 							duration: h.a,
-							kind: U.b.Error,
+							kind: q.b.Error,
 							text: t
 						}))
 					}
@@ -1057,7 +1057,7 @@
 							})), s(Object(u.c)(e))
 						} else s(Object(u.a)(o)), s(Object(h.f)({
 							duration: h.a,
-							kind: U.b.Error,
+							kind: q.b.Error,
 							text: n.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -1090,11 +1090,11 @@
 						const e = f.filter(e => !!e && 10 !== e.charCodeAt(0));
 						if (b === O.h.MARKDOWN) p = e.map(e => `> ${e}\n`).join("");
 						else {
-							const t = e.map(e => q.s(e, null)).map(e => q.l([e])),
-								o = q.s("", null),
-								n = q.l([o]);
+							const t = e.map(e => U.s(e, null)).map(e => U.l([e])),
+								o = U.s("", null),
+								n = U.l([o]);
 							h = {
-								document: [q.c(t), n]
+								document: [U.c(t), n]
 							}
 						}
 					}
@@ -1280,7 +1280,7 @@
 				}) => {
 					var a, i, c, d, l, u;
 					o(Object(G.c)());
-					const m = e => Object(h.f)(Object(h.e)(e, U.b.Error));
+					const m = e => Object(h.f)(Object(h.e)(e, q.b.Error));
 					if (((null === (i = null === (a = s().pages) || void 0 === a ? void 0 : a.comments) || void 0 === i ? void 0 : i.followed) || []).length === _.a) o(m(n.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -1306,7 +1306,7 @@
 								hk: "2fJsVC"
 							});
 							o(Object(h.f)({
-								kind: U.b.SuccessCommunityGreen,
+								kind: q.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else o(Object(G.n)(i)), o(m(n.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -1482,7 +1482,7 @@
 						moreCommentsItem: a,
 						..._.error
 					}))
-				}, W = Object(h.a)(f.b, C.a.upvoted), L = Object(h.a)(f.b, C.a.downvoted), N = Object(a.a)(O.j), H = Object(a.a)(O.i), q = Object(a.a)(O.e), U = Object(a.a)(O.f), K = (Object(a.a)(O.c), Object(a.a)(O.d), ({
+				}, W = Object(h.a)(f.b, C.a.upvoted), L = Object(h.a)(f.b, C.a.downvoted), N = Object(a.a)(O.j), H = Object(a.a)(O.i), U = Object(a.a)(O.e), q = Object(a.a)(O.f), K = (Object(a.a)(O.c), Object(a.a)(O.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: o
@@ -1498,7 +1498,7 @@
 							commentsPageKey: t
 						}),
 						d = i.depth;
-					n(q({
+					n(U({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -1507,7 +1507,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async o => {
-					o(U({
+					o(q({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -1523,7 +1523,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					s(q({
+					s(U({
 						commentId: i,
 						commentsPageKey: t,
 						isCollapsed: c
@@ -1915,8 +1915,8 @@
 				L = o("./src/reddit/constants/keycodes.ts"),
 				N = o("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				H = o("./src/reddit/constants/componentSizes.ts"),
-				q = o("./src/reddit/constants/componentTestIds.ts"),
-				U = o("./src/reddit/selectors/activeModalId.ts"),
+				U = o("./src/reddit/constants/componentTestIds.ts"),
+				q = o("./src/reddit/selectors/activeModalId.ts"),
 				K = o("./src/reddit/selectors/comments.ts"),
 				X = o("./src/reddit/selectors/editorContent.ts"),
 				J = o("./src/reddit/actions/modal.ts"),
@@ -1944,7 +1944,7 @@
 				me = j.a.div("Wrapper", $.a),
 				pe = j.a.div("FormWrapper", $.a),
 				he = Object(i.b)(() => Object(c.c)({
-					activeModalId: U.a,
+					activeModalId: q.a,
 					userName: e => e.user.account ? Object(Q.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					draft: K.i,
@@ -2094,7 +2094,7 @@
 						wrapperHeight: M
 					} = this.state, A = Object(N.a)(b), I = c.draftType === G.c.edit;
 					return r.a.createElement(me, {
-						"data-test-id": q.b,
+						"data-test-id": U.b,
 						className: Object(W.a)(s, {
 							[$.a.isTopLevelComment]: k,
 							[$.a.mExpanded]: j,
@@ -2417,9 +2417,9 @@
 				L = o("./src/reddit/icons/svgs/Smile/index.tsx"),
 				N = o("./src/reddit/selectors/gold/enabledFeatures.ts"),
 				H = o("./src/reddit/selectors/gold/powerups/index.ts"),
-				q = o("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
-				U = o("./src/reddit/components/RichTextEditor/Toolbar/EmoteButton/index.m.less"),
-				K = o.n(U);
+				U = o("./src/reddit/components/RichTextEditor/Toolbar/FormatterButton/index.tsx"),
+				q = o("./src/reddit/components/RichTextEditor/Toolbar/EmoteButton/index.m.less"),
+				K = o.n(q);
 			const X = 5,
 				J = "ProwerupsEmoji--FirstUploadStimulus",
 				Z = 100;
@@ -2475,7 +2475,7 @@
 						className: K.a.addEmojiTooltip
 					}), a.a.createElement("span", {
 						id: J
-					}, a.a.createElement(q.a, {
+					}, a.a.createElement(U.a, {
 						Icon: () => a.a.createElement(L.a, {
 							className: K.a.smile
 						}),
@@ -2506,7 +2506,7 @@
 					onGifButtonClick: o,
 					userCanUseGifs: n
 				} = e, s = t.giphy.isEnabled;
-				return a.a.createElement(q.a, {
+				return a.a.createElement(U.a, {
 					iconName: Q.a.gif_post,
 					className: s && n ? $.a.rainbow : "",
 					tooltip: v.fbt._("Add GIF", null, {
@@ -2852,7 +2852,7 @@
 				Le = o("./src/reddit/models/User/index.ts"),
 				Ne = o("./src/reddit/selectors/experiments/commentBox.ts"),
 				He = o("./src/reddit/selectors/subreddit.ts");
-			const qe = Object(c.c)({
+			const Ue = Object(c.c)({
 					activeModalId: Ce.a,
 					contributorRequestPending: e => Object(He.f)(e, f.e.Comment),
 					isCommentBoxDesignEnabled: Ne.a,
@@ -2862,9 +2862,9 @@
 					errorMsgs: ve.L,
 					draft: ve.i,
 					disableAutofocus: ve.f,
-					showContributorRequestFlow: e => Object(He.q)(e, f.e.Comment)
+					showContributorRequestFlow: e => Object(He.r)(e, f.e.Comment)
 				}),
-				Ue = Object(i.b)(qe, (e, t) => ({
+				qe = Object(i.b)(Ue, (e, t) => ({
 					onMount: () => e(d.a(t.draftKey)),
 					onCancel: () => {
 						t.draftType === pe.c.edit ? e(l.c({
@@ -2893,7 +2893,7 @@
 						t.dispatchSubmit(o, e.draft.commentMode)
 					}
 				}));
-			t.default = Ue(class extends a.a.Component {
+			t.default = qe(class extends a.a.Component {
 				constructor(e) {
 					super(e), this.getInstanceRef = e => this.formInstanceRef = e, this.onCancel = () => {
 						this.props.onCancel()
@@ -3545,13 +3545,13 @@
 					user: S.j,
 					isCommentsPage: f.f
 				}),
-				q = Object(c.b)(H, (e, t) => ({
+				U = Object(c.b)(H, (e, t) => ({
 					onCancel: t => e(g.b(t)),
 					onSubmitDraft: t => e(g.c(t)),
 					onSuccess: t => e(Object(d.b)(t)),
 					onToggleEditorMode: (t, o) => e(x.d(h.g.POST_EDITING, t, o))
 				}));
-			class U extends i.a.Component {
+			class q extends i.a.Component {
 				constructor(e) {
 					super(e), this.onEditorResize = e => {
 						this.setState({
@@ -3721,7 +3721,7 @@
 					}))
 				}
 			}
-			t.default = N(q(U))
+			t.default = N(U(q))
 		},
 		"./src/reddit/components/RequestPendingBanner/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -4429,4 +4429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d5c046b5890537763d43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.240929c501932115accc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.9cf523ac6de2c0b2ceca.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.9a330957f6f7bcd03db1.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -213,8 +213,8 @@
 						return o && (e = i << 2, t = n[a], o > 0 && (c[e] = 255 & t), o > 1 && (c[e + 1] = t >> 8 & 255), o > 2 && (c[e + 2] = t >> 16 & 255)), c
 					};
 					var y = function(e) {
-						var t, r, n, s, o, a, c, u, l, d, f, h, p, m, v, b, g, E, N, _, y, x, I, A, O, w, T, M, j, S, C, U, k, R, D, P, G, L, B, F, V, H, X, z, K, W, J, Y, Z, Q, $, q, ee, te, re, ne, se, oe, ae, ie, ce, ue, le;
-						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], a = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], f = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (a << 1 | c >>> 31), r = (p = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | a >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (u << 1 | l >>> 31), r = o ^ (l << 1 | u >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = a ^ (d << 1 | f >>> 31), r = c ^ (f << 1 | d >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = u ^ (h << 1 | p >>> 31), r = l ^ (p << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = d ^ (s << 1 | o >>> 31), r = f ^ (o << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, m = e[0], v = e[1], W = e[11] << 4 | e[10] >>> 28, J = e[10] << 4 | e[11] >>> 28, M = e[20] << 3 | e[21] >>> 29, j = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, X = e[41] << 18 | e[40] >>> 14, R = e[2] << 1 | e[3] >>> 31, D = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, Y = e[22] << 10 | e[23] >>> 22, Z = e[23] << 10 | e[22] >>> 22, S = e[33] << 13 | e[32] >>> 19, C = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, P = e[14] << 6 | e[15] >>> 26, G = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, N = e[24] << 11 | e[25] >>> 21, Q = e[34] << 15 | e[35] >>> 17, $ = e[35] << 15 | e[34] >>> 17, U = e[45] << 29 | e[44] >>> 3, k = e[44] << 29 | e[45] >>> 3, A = e[6] << 28 | e[7] >>> 4, O = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, L = e[26] << 25 | e[27] >>> 7, B = e[27] << 25 | e[26] >>> 7, _ = e[36] << 21 | e[37] >>> 11, y = e[37] << 21 | e[36] >>> 11, q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, K = e[9] << 27 | e[8] >>> 5, w = e[18] << 20 | e[19] >>> 12, T = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, ae = e[28] << 7 | e[29] >>> 25, F = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, x = e[48] << 14 | e[49] >>> 18, I = e[49] << 14 | e[48] >>> 18, e[0] = m ^ ~b & E, e[1] = v ^ ~g & N, e[10] = A ^ ~w & M, e[11] = O ^ ~T & j, e[20] = R ^ ~P & L, e[21] = D ^ ~G & B, e[30] = z ^ ~W & Y, e[31] = K ^ ~J & Z, e[40] = te ^ ~ne & oe, e[41] = re ^ ~se & ae, e[2] = b ^ ~E & _, e[3] = g ^ ~N & y, e[12] = w ^ ~M & S, e[13] = T ^ ~j & C, e[22] = P ^ ~L & F, e[23] = G ^ ~B & V, e[32] = W ^ ~Y & Q, e[33] = J ^ ~Z & $, e[42] = ne ^ ~oe & ie, e[43] = se ^ ~ae & ce, e[4] = E ^ ~_ & x, e[5] = N ^ ~y & I, e[14] = M ^ ~S & U, e[15] = j ^ ~C & k, e[24] = L ^ ~F & H, e[25] = B ^ ~V & X, e[34] = Y ^ ~Q & q, e[35] = Z ^ ~$ & ee, e[44] = oe ^ ~ie & ue, e[45] = ae ^ ~ce & le, e[6] = _ ^ ~x & m, e[7] = y ^ ~I & v, e[16] = S ^ ~U & A, e[17] = C ^ ~k & O, e[26] = F ^ ~H & R, e[27] = V ^ ~X & D, e[36] = Q ^ ~q & z, e[37] = $ ^ ~ee & K, e[46] = ie ^ ~ue & te, e[47] = ce ^ ~le & re, e[8] = x ^ ~m & b, e[9] = I ^ ~v & g, e[18] = U ^ ~A & w, e[19] = k ^ ~O & T, e[28] = H ^ ~R & P, e[29] = X ^ ~D & G, e[38] = q ^ ~z & W, e[39] = ee ^ ~K & J, e[48] = ue ^ ~te & ne, e[49] = le ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
+						var t, r, n, s, o, a, c, u, l, d, f, h, p, m, v, b, g, E, N, _, y, x, I, A, O, w, M, T, j, S, C, U, k, R, D, P, G, L, B, F, V, H, X, z, K, W, J, Y, Z, Q, $, q, ee, te, re, ne, se, oe, ae, ie, ce, ue, le;
+						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], a = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], f = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (a << 1 | c >>> 31), r = (p = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | a >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (u << 1 | l >>> 31), r = o ^ (l << 1 | u >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = a ^ (d << 1 | f >>> 31), r = c ^ (f << 1 | d >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = u ^ (h << 1 | p >>> 31), r = l ^ (p << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = d ^ (s << 1 | o >>> 31), r = f ^ (o << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, m = e[0], v = e[1], W = e[11] << 4 | e[10] >>> 28, J = e[10] << 4 | e[11] >>> 28, T = e[20] << 3 | e[21] >>> 29, j = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, X = e[41] << 18 | e[40] >>> 14, R = e[2] << 1 | e[3] >>> 31, D = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, g = e[12] << 12 | e[13] >>> 20, Y = e[22] << 10 | e[23] >>> 22, Z = e[23] << 10 | e[22] >>> 22, S = e[33] << 13 | e[32] >>> 19, C = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, P = e[14] << 6 | e[15] >>> 26, G = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, N = e[24] << 11 | e[25] >>> 21, Q = e[34] << 15 | e[35] >>> 17, $ = e[35] << 15 | e[34] >>> 17, U = e[45] << 29 | e[44] >>> 3, k = e[44] << 29 | e[45] >>> 3, A = e[6] << 28 | e[7] >>> 4, O = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, L = e[26] << 25 | e[27] >>> 7, B = e[27] << 25 | e[26] >>> 7, _ = e[36] << 21 | e[37] >>> 11, y = e[37] << 21 | e[36] >>> 11, q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, K = e[9] << 27 | e[8] >>> 5, w = e[18] << 20 | e[19] >>> 12, M = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, ae = e[28] << 7 | e[29] >>> 25, F = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, x = e[48] << 14 | e[49] >>> 18, I = e[49] << 14 | e[48] >>> 18, e[0] = m ^ ~b & E, e[1] = v ^ ~g & N, e[10] = A ^ ~w & T, e[11] = O ^ ~M & j, e[20] = R ^ ~P & L, e[21] = D ^ ~G & B, e[30] = z ^ ~W & Y, e[31] = K ^ ~J & Z, e[40] = te ^ ~ne & oe, e[41] = re ^ ~se & ae, e[2] = b ^ ~E & _, e[3] = g ^ ~N & y, e[12] = w ^ ~T & S, e[13] = M ^ ~j & C, e[22] = P ^ ~L & F, e[23] = G ^ ~B & V, e[32] = W ^ ~Y & Q, e[33] = J ^ ~Z & $, e[42] = ne ^ ~oe & ie, e[43] = se ^ ~ae & ce, e[4] = E ^ ~_ & x, e[5] = N ^ ~y & I, e[14] = T ^ ~S & U, e[15] = j ^ ~C & k, e[24] = L ^ ~F & H, e[25] = B ^ ~V & X, e[34] = Y ^ ~Q & q, e[35] = Z ^ ~$ & ee, e[44] = oe ^ ~ie & ue, e[45] = ae ^ ~ce & le, e[6] = _ ^ ~x & m, e[7] = y ^ ~I & v, e[16] = S ^ ~U & A, e[17] = C ^ ~k & O, e[26] = F ^ ~H & R, e[27] = V ^ ~X & D, e[36] = Q ^ ~q & z, e[37] = $ ^ ~ee & K, e[46] = ie ^ ~ue & te, e[47] = ce ^ ~le & re, e[8] = x ^ ~m & b, e[9] = I ^ ~v & g, e[18] = U ^ ~A & w, e[19] = k ^ ~O & M, e[28] = H ^ ~R & P, e[29] = X ^ ~D & G, e[38] = q ^ ~z & W, e[39] = ee ^ ~K & J, e[48] = ue ^ ~te & ne, e[49] = le ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
 					};
 					if (s) e.exports = p;
 					else
@@ -527,11 +527,11 @@
 				A = r("./src/reddit/selectors/subreddit.ts"),
 				O = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				w = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				T = r("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
-				M = r.n(T);
+				M = r("./src/reddit/components/Governance/TransactionModals/SubscriptionModal/Approval.m.less"),
+				T = r.n(M);
 
 			function j(e) {
-				const t = Object(a.e)(t => Object(A.T)(t, e)),
+				const t = Object(a.e)(t => Object(A.U)(t, e)),
 					r = Object(a.e)(t => Object(I.r)(t, e.subredditId)),
 					s = r.membershipAlt,
 					i = r.prices.points,
@@ -539,14 +539,14 @@
 				return o.a.createElement(w.a, {
 					subredditId: e.subredditId,
 					image: o.a.createElement("div", {
-						className: M.a.membershipFrame
+						className: T.a.membershipFrame
 					}, o.a.createElement(x.a, {
-						className: M.a.userIcon
+						className: T.a.userIcon
 					}), o.a.createElement("img", {
-						className: M.a.frameImage,
+						className: T.a.frameImage,
 						src: c
 					}), o.a.createElement(y.b, {
-						className: M.a.subredditIcon,
+						className: T.a.subredditIcon,
 						subredditOrProfile: t
 					})),
 					title: s,
@@ -614,4 +614,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.9cf523ac6de2c0b2ceca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.9a330957f6f7bcd03db1.js.map

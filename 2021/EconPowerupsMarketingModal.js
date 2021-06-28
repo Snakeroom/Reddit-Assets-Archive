@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.58da3f5d8f5f687ceb13.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.7240d56341eae81e4b17.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -84,7 +84,7 @@
 				const a = Object(r.e)(e => Object(i.i)(e, {
 						subredditId: t
 					})),
-					m = Object(r.e)(e => Object(d.T)(e, {
+					m = Object(r.e)(e => Object(d.U)(e, {
 						subredditId: t
 					})),
 					b = Object(r.e)(e => Object(i.k)(e, {
@@ -333,7 +333,7 @@
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function T({
+			function A({
 				benefits: e,
 				subreddit: t
 			}) {
@@ -401,8 +401,8 @@
 				})))))
 			}
 
-			function A() {
-				return (A = Object.assign || function(e) {
+			function T() {
+				return (T = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
@@ -423,7 +423,7 @@
 				},
 				subreddit: (e, t) => {
 					const s = Object(b.m)(e, t);
-					return s ? Object(x.T)(e, {
+					return s ? Object(x.U)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -507,7 +507,7 @@
 					className: B.a.joinHeroes,
 					subredditId: s,
 					onClick: e => {
-						N(Object(w.c)("powerups_modal")), e ? k(Object(i.e)(c.id)) : v()
+						N(Object(w.c)("powerups_modal")), e ? k(Object(i.g)(c.id)) : v()
 					}
 				})), n.a.createElement("li", {
 					className: B.a.howItWorksStep
@@ -531,12 +531,12 @@
 					priority: h.b.Primary
 				}, U._("Powerup This Community", null, {
 					hk: "3gjy90"
-				}))))) : n.a.createElement(T, {
+				}))))) : n.a.createElement(A, {
 					benefits: y,
 					subreddit: c
 				})
 			}))));
-			t.default = e => n.a.createElement(G, A({}, e, {
+			t.default = e => n.a.createElement(G, T({}, e, {
 				className: Object(l.a)(e.className, B.a.modal)
 			}))
 		},
@@ -635,4 +635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.58da3f5d8f5f687ceb13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.7240d56341eae81e4b17.js.map

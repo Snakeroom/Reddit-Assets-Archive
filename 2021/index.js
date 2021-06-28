@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.98daa38263395dbf5fce.js
-// Retrieved at 6/28/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.57228e5de1ef19ce398e.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -78,7 +78,7 @@
 				isLastPrediction: n
 			}) => {
 				const o = Object(T.a)(),
-					r = Object(u.e)(e => Object(j.T)(e, {
+					r = Object(u.e)(e => Object(j.U)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(x.a, {
@@ -268,17 +268,17 @@
 					isLastPrediction: d
 				}))
 			};
-			var V = n("./src/reddit/helpers/predictions/index.ts");
-			var F = n("./src/reddit/selectors/posts.ts"),
-				U = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				H = n.n(U);
+			var U = n("./src/reddit/helpers/predictions/index.ts");
+			var V = n("./src/reddit/selectors/posts.ts"),
+				F = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				H = n.n(F);
 			const {
 				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = ({
 				postId: e
 			}) => {
 				const t = Object(T.a)(),
-					n = Object(u.e)(t => Object(F.R)(t, {
+					n = Object(u.e)(t => Object(V.R)(t, {
 						postId: e
 					}));
 				return i.a.createElement(x.a, {
@@ -299,7 +299,7 @@
 					const t = Object(u.e)(p.db);
 					return i.a.useMemo(() => {
 						if (!e || !e.length) return;
-						const n = e.filter(e => t || !e.isNSFW).sort(V.a);
+						const n = e.filter(e => t || !e.isNSFW).sort(U.a);
 						return {
 							prediction: n[0],
 							isLastPrediction: n.length <= 1
@@ -320,4 +320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.98daa38263395dbf5fce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.57228e5de1ef19ce398e.js.map

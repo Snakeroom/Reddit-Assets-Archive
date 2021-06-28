@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bc90764b10fa2d95773d.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.96460dcf137eb0c707eb.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -852,7 +852,7 @@
 				p = r("./src/reddit/selectors/subreddit.ts"),
 				f = r("./src/telemetry/index.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const h = Object(n.a)(b.L),
+			const h = Object(n.a)(b.M),
 				g = Object(n.a)(b.g),
 				_ = () => async (e, t) => {
 					const n = t();
@@ -861,7 +861,7 @@
 						clickCloseModalEvent: s
 					} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(f.a)(s()(n))
-				}, E = Object(n.a)(b.K), y = ({
+				}, E = Object(n.a)(b.L), y = ({
 					awardId: e,
 					correlationId: t,
 					thingId: r
@@ -873,7 +873,7 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(i.a.GOLD_GILD_MODAL));
-					const f = Object(p.J)(a, {
+					const f = Object(p.K)(a, {
 						thingId: r
 					});
 					let b = null;
@@ -885,7 +885,7 @@
 						e && (b = e.belongsTo.id)
 					}
 					b && Object(d.a)(b, r)
-				}, v = Object(n.a)(b.f), w = Object(n.a)(b.J), O = () => async (e, t) => {
+				}, v = Object(n.a)(b.f), w = Object(n.a)(b.K), O = () => async (e, t) => {
 					const n = t(),
 						o = Object(a.d)(n);
 					if (Object(a.g)(n)) {
@@ -3276,7 +3276,7 @@
 						});
 					if (!r || !n || !s) return !1;
 					if (s.applied) return !0;
-					const i = Object(o.f)(e, {
+					const i = Object(o.g)(e, {
 							subredditId: t
 						}),
 						{
@@ -3289,4 +3289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bc90764b10fa2d95773d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.96460dcf137eb0c707eb.js.map

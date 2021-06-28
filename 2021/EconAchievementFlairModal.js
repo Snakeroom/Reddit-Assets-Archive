@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.a0b985f34e69ebf1f54f.js
-// Retrieved at 6/28/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.3509adc5daafb95bad13.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -167,7 +167,7 @@
 					className: A.a.powerupButton,
 					isFullWidth: !0,
 					onClick: () => {
-						d(Object(h.d)("user_flair_picker"))
+						d(Object(h.f)("user_flair_picker"))
 					}
 				}, P._("Powerup to Unlock", null, {
 					hk: "M8l7D"
@@ -318,7 +318,7 @@
 						subredditId: t,
 						userId: a
 					})),
-					o = Object(n.e)(e => Object(l.T)(e, {
+					o = Object(n.e)(e => Object(l.U)(e, {
 						subredditId: t
 					}));
 				return c.a.createElement("div", {
@@ -475,4 +475,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.a0b985f34e69ebf1f54f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.3509adc5daafb95bad13.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.3d7ac682cad4db38a275.js
-// Retrieved at 6/23/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.cbf42b4d95e0f4b94ba7.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -444,9 +444,9 @@
 			})), n.d(t, "morePostsLoaded", (function() {
 				return D
 			})), n.d(t, "morePostsFailed", (function() {
-				return H
-			})), n.d(t, "moreModListingRequested", (function() {
 				return A
+			})), n.d(t, "moreModListingRequested", (function() {
+				return H
 			})), n.d(t, "hideSubredditSuccess", (function() {
 				return W
 			})), n.d(t, "hideSubredditPending", (function() {
@@ -559,7 +559,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(j.h)(r(), !0)
-				}, R = Object(a.a)(M.i), D = Object(a.a)(M.h), H = Object(a.a)(M.g), A = e => async (t, n, {
+				}, R = Object(a.a)(M.i), D = Object(a.a)(M.h), A = Object(a.a)(M.g), H = e => async (t, n, {
 					apiContext: s
 				}) => {
 					const r = n(),
@@ -596,7 +596,7 @@
 						fetchedToken: f.token,
 						meta: r.meta,
 						...S
-					})) : t(H({
+					})) : t(A({
 						key: b,
 						error: E.error,
 						fetchedToken: f.token,
@@ -1024,7 +1024,7 @@
 			const b = h.a.wrapped(l.b, "SubredditIcon", p.a),
 				f = h.a.span("Label", p.a),
 				x = Object(c.c)({
-					subredditOrProfile: u.L
+					subredditOrProfile: u.M
 				});
 			var v = Object(d.b)(x)(({
 				children: e,
@@ -2315,12 +2315,12 @@
 				F = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				R = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				D = n("./src/reddit/controls/Button/index.tsx");
-			const H = () => e => ({
+			const A = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "hide_subreddit"
 				}),
-				A = () => e => ({
+				H = () => e => ({
 					source: "r_mod",
 					action: "click",
 					noun: "unhide_subreddit"
@@ -2351,7 +2351,7 @@
 							subredditInput: e
 						})
 					}, this.submitInput = () => {
-						this.canSubmitInput() && (this.props.sendEvent(H()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
+						this.canSubmitInput() && (this.props.sendEvent(A()), this.props.hide(this.state.subredditInput), this.clearSubredditInput())
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
@@ -2402,7 +2402,7 @@
 				ae = Object(d.c)({
 					isApiPending: K,
 					subredditOrProfile: (e, t) => {
-						const n = Object(se.z)(e, {
+						const n = Object(se.A)(e, {
 							subredditName: t.subredditName
 						});
 						if (!n) {
@@ -2417,7 +2417,7 @@
 			class de extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onClickUnhideSubreddit = e => {
-						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(A()), this.props.unhide(this.props.subredditName))
+						e.stopPropagation(), e.preventDefault(), this.props.subredditOrProfile && (this.props.sendEvent(H()), this.props.unhide(this.props.subredditName))
 					}
 				}
 				render() {
@@ -2526,7 +2526,7 @@
 					match: t
 				}) => t.params.sort || c.U.HOT, (e, {
 					match: t
-				}) => Object(W.d)(t.path), Ne.i, Ne.c, (e, t, n, s, o) => {
+				}) => Object(W.d)(t.path), Ne.j, Ne.d, (e, t, n, s, o) => {
 					const i = r()([...Object(l.a)(e)]),
 						a = we.x in i && i[we.x].toUpperCase(),
 						d = "string" == typeof a && a in c.bc ? c.bc[a] : c.cc,
@@ -2592,4 +2592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.3d7ac682cad4db38a275.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.cbf42b4d95e0f4b94ba7.js.map

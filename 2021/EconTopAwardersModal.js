@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4c1b6a681f632ebe104f.js
-// Retrieved at 6/16/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d95ef55f66818557b937.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -365,10 +365,10 @@
 				}, ie = (e, t) => async (a, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(m.a.BAN_USER)(s) && !Object(C.Q)(s, {
+						if (!Object(w.b)(m.a.BAN_USER)(s) && !Object(C.R)(s, {
 								subredditId: e
 							})) {
-							const t = Object(C.T)(s, {
+							const t = Object(C.U)(s, {
 								subredditId: e
 							});
 							await a(Object(d.o)(t.name))
@@ -1078,7 +1078,7 @@
 			const {
 				fbt: J
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(o.c)({
-				hasModMailPermissions: Object(m.a)(Z.c.mail),
+				hasModMailPermissions: Object(m.b)(Z.c.mail),
 				isUserBanned: (e, t) => !!Object(q.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1397,7 +1397,7 @@
 					hideNSFWPref: f.C,
 					moderatorPermissions: (e, {
 						subredditId: t
-					}) => t ? Object(m.k)(e, {
+					}) => t ? Object(m.l)(e, {
 						subredditId: t
 					}) : void 0,
 					origin: l.j,
@@ -1417,7 +1417,7 @@
 					}) => t ? Object(h.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.eb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.fb)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(u.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const a = Object(u.h)(e, {
@@ -2342,7 +2342,7 @@
 				n = a("./src/reddit/actions/subscription/index.ts"),
 				o = a("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2627,4 +2627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4c1b6a681f632ebe104f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d95ef55f66818557b937.js.map

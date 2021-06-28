@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.940bc411b175644aa02b.js
-// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.dbc5d59da090b7b8c6c5.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -2182,7 +2182,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						a = Object(l.z)(e, {
+						a = Object(l.A)(e, {
 							subredditName: n
 						});
 					return a ? {
@@ -2304,7 +2304,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(a.X)(e, {
+					const s = Object(a.Y)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -2312,4 +2312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.940bc411b175644aa02b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.dbc5d59da090b7b8c6c5.js.map

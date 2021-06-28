@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.00fd52e2d7117e63f867.js
-// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e32d35de331280e66556.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1980,7 +1980,7 @@
 					isCurrentUserProfilePost: X.k,
 					isPostChainDismissed: z.c,
 					isPostChained: z.d,
-					moderatorPermissions: q.j,
+					moderatorPermissions: q.k,
 					showAwardsPlaque: W.a,
 					showEditFlair: G.a,
 					showMedia: I.r,
@@ -3421,7 +3421,7 @@
 				s = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(o.b)(() => Object(r.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -3779,4 +3779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.00fd52e2d7117e63f867.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e32d35de331280e66556.js.map

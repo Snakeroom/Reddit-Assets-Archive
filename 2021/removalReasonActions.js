@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.2f69cfb04c3150b6e908.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.620c1c3c30737e58de1b.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -1076,7 +1076,7 @@
 					!t && c || await n(I(e, [o.id]))
 				}, E = (e, t) => async (n, s) => {
 					if (!e) return;
-					await n(Object(l.i)(e, {
+					await n(Object(l.k)(e, {
 						fullData: !0
 					}));
 					const r = s();
@@ -2352,7 +2352,7 @@
 			t.a = Object(s.c)({
 				subredditAchievements: (e = o, t) => {
 					switch (t.type) {
-						case r.ob:
+						case r.pb:
 							const {
 								subredditId: n, subredditAchievementFlairs: s
 							} = t.payload, o = s.reduce((e, t) => ({
@@ -3166,7 +3166,7 @@
 				X = e => e.features.comments.visitHighlightFilter,
 				Y = (e, t) => {
 					const n = Object(b.a)(e, t);
-					if (n) return Object(u.Y)(e, n)
+					if (n) return Object(u.Z)(e, n)
 				},
 				Z = (e, {
 					postId: t
@@ -3299,4 +3299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.2f69cfb04c3150b6e908.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.620c1c3c30737e58de1b.js.map

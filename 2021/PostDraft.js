@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.96049379efb056d4eed8.js
-// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.45b33803451d46081f2b.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1625,7 +1625,7 @@
 					const n = Object(b.q)(e, {
 						pageLayer: t
 					});
-					return n && Object(E.S)(e, {
+					return n && Object(E.T)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => S.has(e.kind))),
@@ -4159,7 +4159,7 @@
 							subredditName: s,
 							[o]: n.id
 						},
-						i = Object(l.z)(e, {
+						i = Object(l.A)(e, {
 							subredditName: s
 						});
 					return i ? {
@@ -4771,7 +4771,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.X)(e, {
+					const n = Object(i.Y)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -4779,4 +4779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.96049379efb056d4eed8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.45b33803451d46081f2b.js.map

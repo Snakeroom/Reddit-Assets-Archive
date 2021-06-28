@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.4248fb11d8c014045d84.js
-// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.afabf7270cc017fd3d3d.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, o) {
@@ -746,9 +746,9 @@
 		"./src/reddit/actions/reportFlow/reportFlow.ts": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "postOrCommentReported", (function() {
-				return D
-			})), o.d(t, "reportFlowTargetSet", (function() {
 				return M
+			})), o.d(t, "reportFlowTargetSet", (function() {
+				return D
 			})), o.d(t, "reportFlowOpenedFromModalPage", (function() {
 				return B
 			})), o.d(t, "reportFlowOpenCategory", (function() {
@@ -939,7 +939,7 @@
 			const L = Object(r.a)(v.e),
 				P = Object(r.a)(v.d),
 				A = Object(r.a)(v.c),
-				D = (e, t) => async (o, r, {
+				M = (e, t) => async (o, r, {
 					apiContext: s
 				}) => {
 					const i = e.id,
@@ -969,10 +969,10 @@
 							buttonText: n.fbt._("Retry", null, {
 								hk: "1QXiG6"
 							}),
-							buttonAction: D(e, t)
+							buttonAction: M(e, t)
 						}))
 					}
-				}, M = Object(r.a)(v.f), B = Object(r.a)(v.a), U = Object(r.a)(v.b), K = (e, t, o) => async (n, r, {
+				}, D = Object(r.a)(v.f), B = Object(r.a)(v.a), U = Object(r.a)(v.b), K = (e, t, o) => async (n, r, {
 					apiContext: c
 				}) => {
 					const u = r(),
@@ -990,7 +990,7 @@
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						v = h && Object(f.o)(w) || p && G(w, u);
-					v || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || n(Object(l.d)()), !v || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || n(Object(l.c)()), g && n(Object(a.o)(g.name, g.type)), n(M(e)), n(B(!!t)), o && n(U(o)), g && n(q(g.name))
+					v || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || n(Object(l.d)()), !v || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || n(Object(l.c)()), g && n(Object(a.o)(g.name, g.type)), n(D(e)), n(B(!!t)), o && n(U(o)), g && n(q(g.name))
 				}, H = Object(r.a)(v.g), q = e => async (t, o, {
 					apiContext: n
 				}) => {
@@ -999,7 +999,7 @@
 				}, W = () => async (e, t, {
 					apiContext: o
 				}) => {
-					e(M(null))
+					e(D(null))
 				}, G = (e, t) => {
 					const o = e.postId,
 						n = o && t.posts.models[o];
@@ -1547,11 +1547,11 @@
 				L = d.a.wrapped(F, "Dropdown", C.a),
 				P = d.a.wrapped(g.b, "DropdownTriangle", C.a),
 				A = d.a.wrapped(w.b, "Row", C.a);
-			var D = o("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
-				M = o.n(D);
-			const B = d.a.div("LinkHolder", M.a),
-				U = d.a.a("Link", M.a),
-				K = d.a.wrapped(_.a, "footer", M.a);
+			var M = o("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
+				D = o.n(M);
+			const B = d.a.div("LinkHolder", D.a),
+				U = d.a.a("Link", D.a),
+				K = d.a.wrapped(_.a, "footer", D.a);
 			var H = e => s.a.createElement("div", null, s.a.createElement(y, null, e.complaintPageTitle), s.a.createElement(E, null, e.complaintPrompt || n.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
 					hk: "4eHLfh"
 				})), s.a.createElement(B, null, s.a.createElement(U, {
@@ -1768,7 +1768,7 @@
 				Re = d.a.wrapped(he.i, "FreeFormTextArea", we.a),
 				ye = Object(l.c)({
 					dropdownIsOpen: Object(ue.b)(ge),
-					freeFormReports: be.D
+					freeFormReports: be.E
 				});
 			class Ee extends s.a.Component {
 				constructor(e) {
@@ -1926,11 +1926,11 @@
 			var Le = Fe,
 				Pe = o("./src/reddit/icons/svgs/Close/index.tsx"),
 				Ae = o("./src/reddit/components/ReportFlow/Title/index.m.less"),
-				De = o.n(Ae);
-			const Me = d.a.wrapped(_.a, "Title", De.a),
-				Be = d.a.div("CloseWrapper", De.a),
-				Ue = d.a.wrapped(Pe.a, "Close", De.a);
-			var Ke = e => s.a.createElement(Me, null, s.a.createElement("div", null, e.title), s.a.createElement(Be, {
+				Me = o.n(Ae);
+			const De = d.a.wrapped(_.a, "Title", Me.a),
+				Be = d.a.div("CloseWrapper", Me.a),
+				Ue = d.a.wrapped(Pe.a, "Close", Me.a);
+			var Ke = e => s.a.createElement(De, null, s.a.createElement("div", null, e.title), s.a.createElement(Be, {
 					onClick: e.onClosePressed
 				}, s.a.createElement(Ue, null))),
 				He = o("./src/reddit/models/Post/index.ts"),
@@ -2184,8 +2184,8 @@
 				L = o("./src/reddit/components/ReportFlow/index.m.less"),
 				P = o.n(L);
 			const A = F.a.div("ReportLoaderWrapper", P.a),
-				D = F.a.img("LoadingIcon", P.a),
-				M = "2.0";
+				M = F.a.img("LoadingIcon", P.a),
+				D = "2.0";
 			var B;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
@@ -2391,7 +2391,7 @@
 						gqlContext: o,
 						hostAppName: n
 					} = this.props;
-					H(o(), e, M, n, t).then(e => {
+					H(o(), e, D, n, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -2430,7 +2430,7 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => this.onBlockAuthor(l),
 						onResize: this.props.onResize
-					}) : a.a.createElement(A, null, a.a.createElement(D, {
+					}) : a.a.createElement(A, null, a.a.createElement(M, {
 						src: e ? `${n.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${n.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: "Loading"
 					}))
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.4248fb11d8c014045d84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.afabf7270cc017fd3d3d.js.map

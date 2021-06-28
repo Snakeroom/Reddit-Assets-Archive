@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.0ce67bf54669fd47aabd.js
-// Retrieved at 6/28/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f28f2b02dc81ae01ad05.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -167,7 +167,7 @@
 				p = r("./src/reddit/selectors/subreddit.ts"),
 				f = r("./src/telemetry/index.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const v = Object(n.a)(b.L),
+			const v = Object(n.a)(b.M),
 				h = Object(n.a)(b.g),
 				g = () => async (e, t) => {
 					const n = t();
@@ -176,7 +176,7 @@
 						clickCloseModalEvent: s
 					} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(f.a)(s()(n))
-				}, O = Object(n.a)(b.K), w = ({
+				}, O = Object(n.a)(b.L), w = ({
 					awardId: e,
 					correlationId: t,
 					thingId: r
@@ -188,7 +188,7 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(c.a.GOLD_GILD_MODAL));
-					const f = Object(p.J)(a, {
+					const f = Object(p.K)(a, {
 						thingId: r
 					});
 					let b = null;
@@ -200,7 +200,7 @@
 						e && (b = e.belongsTo.id)
 					}
 					b && Object(d.a)(b, r)
-				}, j = Object(n.a)(b.f), x = Object(n.a)(b.J), y = () => async (e, t) => {
+				}, j = Object(n.a)(b.f), x = Object(n.a)(b.K), y = () => async (e, t) => {
 					const n = t(),
 						o = Object(a.d)(n);
 					if (Object(a.g)(n)) {
@@ -533,7 +533,7 @@
 			const C = Object(d.a)(e => e && Object(u.c)(e)),
 				k = Object(a.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
-					isModerator: f.f
+					isModerator: f.g
 				}),
 				P = Object(c.b)(k);
 			t.a = P(e => {
@@ -2870,7 +2870,7 @@
 						});
 					if (!r || !n || !s) return !1;
 					if (s.applied) return !0;
-					const c = Object(o.f)(e, {
+					const c = Object(o.g)(e, {
 							subredditId: t
 						}),
 						{
@@ -2953,4 +2953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.0ce67bf54669fd47aabd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f28f2b02dc81ae01ad05.js.map

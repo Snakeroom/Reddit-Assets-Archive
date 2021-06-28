@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.5d863f99c448deb5f979.js
-// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.513f74090ed55e9e6614.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -627,7 +627,7 @@
 											commentId: s
 										}),
 										r = (o.user.account && o.user.account.id) === (n && n.authorId),
-										d = !!e && !!Object(N.j)(o, {
+										d = !!e && !!Object(N.k)(o, {
 											postId: e
 										});
 									!n || n.isRemoved && n.isDeleted || r || d ? V[s] = w.REMOVE_COMMENT : i(D({
@@ -961,7 +961,7 @@
 							postId: s
 						}),
 						r = n.belongsTo,
-						i = Object(se.L)(t, {
+						i = Object(se.M)(t, {
 							identifier: r
 						}),
 						a = Object(fe.c)(t, {
@@ -1013,7 +1013,7 @@
 						D = Object(G.K)(s());
 					if (R && "subreddit" === R.belongsTo.type) {
 						const e = R.belongsTo.id,
-							s = Object(ue.i)(() => t(Object(le.i)(e, {
+							s = Object(ue.i)(() => t(Object(le.k)(e, {
 								fullData: !0,
 								includeIdentity: D
 							})), {
@@ -1033,7 +1033,7 @@
 									});
 								return s && o ? `${e.posts.models[t].title} : ${s.name}` : ""
 							})(s(), m),
-							i = Object(se.L)(s(), {
+							i = Object(se.M)(s(), {
 								identifier: R.belongsTo
 							});
 						if (i && (e => V.id.Redirect === Object(U.b)(e, {
@@ -1054,7 +1054,7 @@
 								await e
 							}
 						} else {
-							if (!!!Object(se.S)(s(), {
+							if (!!!Object(se.T)(s(), {
 									subredditId: R.belongsTo.id
 								})) {
 								const e = Object(ue.i)(() => t(w.o(i.name)), {
@@ -1729,7 +1729,7 @@
 					hasModeratorPostPermissions: (e, {
 						postId: t
 					}) => {
-						const s = Object(B.j)(e, {
+						const s = Object(B.k)(e, {
 							postId: t
 						});
 						return !!s && s.posts
@@ -1740,7 +1740,7 @@
 						postId: t
 					}) => {
 						const s = Object(z.s)(e),
-							o = !!Object(B.j)(e, {
+							o = !!Object(B.k)(e, {
 								postId: t
 							}),
 							n = Object(V.F)(e, {
@@ -2616,7 +2616,7 @@
 					}),
 					subredditAboutInfo: (e, {
 						subreddit: t
-					}) => t ? Object(be.w)(e, {
+					}) => t ? Object(be.x)(e, {
 						subredditName: t.name
 					}) : void 0,
 					subredditOrProfile: (e, {
@@ -3065,7 +3065,7 @@
 					isPresenceTogglePref: M.ib,
 					moderatorPermissions: (e, t) => {
 						const s = Object(L.a)(e, t);
-						return s ? Object(F.k)(e, {
+						return s ? Object(F.l)(e, {
 							subredditId: s.subredditId
 						}) : null
 					},
@@ -3097,7 +3097,7 @@
 						scrollToAndRemeasure: o
 					})),
 					onIgnoreReports: () => e(Object(W.g)(t)),
-					onOpenPowerupsModal: () => e(Object(K.d)("comment_top_supporter_badge")),
+					onOpenPowerupsModal: () => e(Object(K.f)("comment_top_supporter_badge")),
 					onVoteClick: s => {
 						const [o, r] = s === Gt.a.upvoted ? [Object(p.q)(t), "upvote_comment"] : [Object(p.j)(t), "downvote_comment"];
 						n(r, t)(), e(o)
@@ -3488,7 +3488,7 @@
 						});
 					if (!n) return !1;
 					const r = Object(M.s)(e),
-						i = !!Object(F.j)(e, {
+						i = !!Object(F.k)(e, {
 							postId: n.postId
 						}),
 						a = Object(N.F)(e, {
@@ -3990,7 +3990,7 @@
 					isLoggedIn: S.K,
 					postSEOV2IdCardVariant: P.i,
 					shouldShowReredditPromo: j.a,
-					widgets: Object(u.a)(I.r)
+					widgets: Object(u.a)(I.s)
 				}),
 				R = Object(d.b)(A);
 			class D extends a.a.Component {
@@ -4506,8 +4506,8 @@
 					className: b.a.icon
 				}),
 				f = Object(a.c)({
-					subreddit: u.z,
-					subredditAboutInfo: u.w
+					subreddit: u.A,
+					subredditAboutInfo: u.x
 				}),
 				v = Object(i.b)(f);
 			t.a = v(e => {
@@ -5247,7 +5247,7 @@
 				isFollowedExpired: V.n,
 				isPostFollowEnabled: _e.b,
 				post: V.F,
-				moderatorPermissions: D.j,
+				moderatorPermissions: D.k,
 				modModeEnabled: xe.Q,
 				isInCategoriesExperiment: M.a,
 				showAwardsPlaque: A.a,
@@ -7044,7 +7044,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(x.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const s = Object(_.E)(e, t.listingName);
+							const s = Object(_.F)(e, t.listingName);
 							return Object(y.j)(e, {
 								subredditId: s
 							})
@@ -7060,14 +7060,14 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (o) {
-							const t = Object(_.E)(e, s);
+							const t = Object(_.F)(e, s);
 							return Object(y.k)(e, {
 								subredditId: t
 							})
 						}
 						return Object(C.C)(e, t, s, n)
 					}),
-					subredditsById: _.ab,
+					subredditsById: _.bb,
 					viewportDataLoaded: k.a,
 					pageReferrer: p.R,
 					postListPlaceholderComponent: () => g.a,
@@ -7962,7 +7962,7 @@
 					currentUserShowNSFW: ge.db,
 					dismissedSubreddits: ie.a,
 					fullyLoaded: se.u,
-					hasModeratorPostPermissions: me.b,
+					hasModeratorPostPermissions: me.c,
 					headComment: se.x,
 					isActionBarAnimationEnabled: Y.a,
 					isRealtimePresenceLoadTest: Y.c,
@@ -7992,7 +7992,7 @@
 					shouldOpenPostInNewTab: ge.cb,
 					subredditAboutInfo: (e, {
 						subredditName: t
-					}) => t ? Object(he.w)(e, {
+					}) => t ? Object(he.x)(e, {
 						subredditName: t
 					}) : void 0,
 					subredditOrProfile: ue.R,
@@ -8803,7 +8803,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(r.T)(e, {
+						const t = Object(r.U)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -8816,14 +8816,14 @@
 				m = (e, t) => {
 					const s = u(e, t);
 					if (!s) return l;
-					const o = Object(r.X)(e, {
+					const o = Object(r.Y)(e, {
 						subredditName: s.name
 					});
 					return o && o.postIds && o.postIds.length ? o.postIds : l
 				},
 				u = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(r.T)(e, {
+					return s ? Object(r.U)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -8917,4 +8917,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.5d863f99c448deb5f979.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.513f74090ed55e9e6614.js.map

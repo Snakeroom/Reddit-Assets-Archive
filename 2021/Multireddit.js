@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.7b7cfc25101daad3090a.js
-// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.74257885d97b22df073c.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1217,7 +1217,7 @@
 					apiContext: f
 				}) => {
 					let g = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(O.E)(l(), e.name),
+						id: Object(O.F)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -1269,7 +1269,7 @@
 						})).ok) {
 						g.filter(e => e.type === m.a.SUBREDDIT).forEach(({
 							id: e
-						}) => o(Object(a.i)(e, {
+						}) => o(Object(a.k)(e, {
 							forceLoad: !0,
 							fullData: !1
 						})));
@@ -1300,7 +1300,7 @@
 					apiContext: s
 				}) => {
 					const o = n(),
-						i = Object(O.L)(o, {
+						i = Object(O.M)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -1322,7 +1322,7 @@
 							type: e.type,
 							name: i.name
 						},
-						v = () => Object(O.fb)(n(), {
+						v = () => Object(O.gb)(n(), {
 							identifier: y
 						});
 					(v() || (await t(B([y], !0)), v())) && ((await ((e, t, n) => Object(p.a)(Object(h.a)(e, [b.a]), {
@@ -6339,7 +6339,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(y.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const n = Object(w.E)(e, t.listingName);
+							const n = Object(w.F)(e, t.listingName);
 							return Object(x.j)(e, {
 								subredditId: n
 							})
@@ -6355,14 +6355,14 @@
 						inSubredditOrProfile: r
 					}) => {
 						if (s) {
-							const t = Object(w.E)(e, n);
+							const t = Object(w.F)(e, n);
 							return Object(x.k)(e, {
 								subredditId: t
 							})
 						}
 						return Object(v.C)(e, t, n, r)
 					}),
-					subredditsById: w.ab,
+					subredditsById: w.bb,
 					viewportDataLoaded: E.a,
 					pageReferrer: p.R,
 					postListPlaceholderComponent: () => f.a,
@@ -6411,7 +6411,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: i.fb
+				userIsSubscriber: i.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -6930,7 +6930,7 @@
 							subredditName: s,
 							[r]: n.id
 						},
-						i = Object(l.z)(e, {
+						i = Object(l.A)(e, {
 							subredditName: s
 						});
 					return i ? {
@@ -7870,7 +7870,7 @@
 			const a = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(o.T)(e, {
+						const t = Object(o.U)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -7883,14 +7883,14 @@
 				u = (e, t) => {
 					const n = m(e, t);
 					if (!n) return l;
-					const s = Object(o.X)(e, {
+					const s = Object(o.Y)(e, {
 						subredditName: n.name
 					});
 					return s && s.postIds && s.postIds.length ? s.postIds : l
 				},
 				m = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.T)(e, {
+					return n ? Object(o.U)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -7985,7 +7985,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.X)(e, {
+					const n = Object(i.Y)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -7999,4 +7999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7b7cfc25101daad3090a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.74257885d97b22df073c.js.map

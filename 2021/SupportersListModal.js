@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.68ae2dc25e77f02887bc.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.bed9b708a03d5f86b0d9.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, s) {
@@ -322,7 +322,7 @@
 			const I = Object(o.c)({
 				currentUser: P.j,
 				powerups: U(k.i),
-				subreddit: U(C.T),
+				subreddit: U(C.U),
 				topSupporters: U(k.l),
 				userPowerupsData: k.v
 			});
@@ -384,7 +384,7 @@
 					priority: S.b.Primary,
 					className: y.a.ctaButton,
 					onClick: () => {
-						h(Object(N.o)()), p(Object(c.d)("supporters_list_modal"))
+						h(Object(N.o)()), p(Object(c.f)("supporters_list_modal"))
 					}
 				}, b ? z._("Use Your Premium Powerup", null, {
 					hk: "1DC7G3"
@@ -516,4 +516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.68ae2dc25e77f02887bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.bed9b708a03d5f86b0d9.js.map

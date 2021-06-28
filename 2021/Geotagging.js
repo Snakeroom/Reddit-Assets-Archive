@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.88df35d752dec5b7256e.js
-// Retrieved at 6/14/2021, 3:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.574fb2c2cc823b5eb0ad.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -649,7 +649,7 @@
 			}), T = Object(c.c)({
 				isEditing: f.i,
 				isSubscriptionsPinned: x.b,
-				moderatorPermissions: g.k
+				moderatorPermissions: g.l
 			});
 			t.a = Object(o.b)(T)(e => {
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
@@ -961,8 +961,8 @@
 				j = s.n(O);
 			const C = Object(h.c)({
 				isLoggedIn: k.K,
-				subreddit: v.T,
-				subredditAboutInfo: v.v
+				subreddit: v.U,
+				subredditAboutInfo: v.w
 			});
 			class w extends r.a.Component {
 				constructor() {
@@ -1266,7 +1266,7 @@
 				i = s("./src/reddit/actions/subscription/index.ts"),
 				a = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: a.fb
+				userIsSubscriber: a.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -1816,4 +1816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.88df35d752dec5b7256e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.574fb2c2cc823b5eb0ad.js.map

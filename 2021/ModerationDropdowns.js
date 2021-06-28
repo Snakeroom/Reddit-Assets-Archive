@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.429df51e5cf4aafc9c9d.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.71c4ac7c407abf018604.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -484,7 +484,7 @@
 					!t && a || await s(_(e, [r.id]))
 				}, w = (e, t) => async (s, o) => {
 					if (!e) return;
-					await s(Object(p.i)(e, {
+					await s(Object(p.k)(e, {
 						fullData: !0
 					}));
 					const n = o();
@@ -935,8 +935,8 @@
 			const w = (e, t = !1, s = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${s}]`,
 				C = Object(c.c)({
 					flairData: j.d,
-					subreddit: v.T,
-					isMod: (e, t) => !!Object(O.k)(e, t)
+					subreddit: v.U,
+					isMod: (e, t) => !!Object(O.l)(e, t)
 				});
 			class R extends a.a.Component {
 				constructor(e) {
@@ -2271,4 +2271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.429df51e5cf4aafc9c9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.71c4ac7c407abf018604.js.map

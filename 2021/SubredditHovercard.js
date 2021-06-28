@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.4e67db2d6ddbed1a3db4.js
-// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.fb0e6a7444825819d1e0.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, r) {
@@ -367,8 +367,8 @@
 			const Z = Object(m.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.C,
-				subreddit: b.z,
-				subredditAboutInfo: b.w
+				subreddit: b.A,
+				subredditAboutInfo: b.x
 			});
 			var Q = Object(u.b)(Z, e => ({
 				onHideTooltip: () => e(Object(p.i)())
@@ -521,7 +521,7 @@
 				h = r("./src/reddit/selectors/subreddit.ts");
 			const y = (e, t) => {
 				const r = Object(v.a)(e, t),
-					n = Object(h.I)(e, t);
+					n = Object(h.J)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -560,7 +560,7 @@
 			}));
 			const E = (e, t) => {
 				const r = Object(v.a)(e, t),
-					n = Object(h.I)(e, t);
+					n = Object(h.J)(e, t);
 				return {
 					comment: r,
 					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
@@ -586,7 +586,7 @@
 				}
 			}));
 			var O = Object(o.b)(() => Object(i.c)({
-					subreddit: h.T
+					subreddit: h.U
 				}))(e => s.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -693,7 +693,7 @@
 				})
 			};
 			var _ = Object(o.b)(() => Object(i.c)({
-				subreddit: h.T
+				subreddit: h.U
 			}))(e => s.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -706,7 +706,7 @@
 				}
 			}));
 			var T = Object(o.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(h.L)(e, {
+				subredditOrProfile: (e, t) => Object(h.M)(e, {
 					identifier: t
 				})
 			}))(e => s.a.createElement(p, {
@@ -723,7 +723,7 @@
 			var C = Object(o.b)(() => Object(i.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(h.T)(e, {
+				}) => t ? Object(h.U)(e, {
 					subredditId: t
 				}) : null
 			}))(e => s.a.createElement(p, {
@@ -1126,4 +1126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.4e67db2d6ddbed1a3db4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.fb0e6a7444825819d1e0.js.map

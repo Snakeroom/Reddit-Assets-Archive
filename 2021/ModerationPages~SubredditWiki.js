@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f08133356626fc891b64.js
-// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.3fba7d0d7fb931cd9dd9.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -319,8 +319,8 @@
 					}
 				},
 				J = r("./src/lib/omitKey/index.ts");
-			const V = {};
-			var $ = (e = V, t) => {
+			const $ = {};
+			var V = (e = $, t) => {
 				switch (t.type) {
 					case G.b: {
 						const {
@@ -362,7 +362,7 @@
 					}
 				},
 				re = Object(F.c)({
-					error: $,
+					error: V,
 					pending: te
 				}),
 				ne = r("./src/reddit/actions/wiki/wikiEditing/constants.ts");
@@ -956,7 +956,7 @@
 					t(u.l({
 						title: n.wikiPageName ? `${n.wikiPageName} - ${a}` : `wiki - ${a}`
 					})), await t(Xe(n, s));
-					const i = Object(D.z)(r(), {
+					const i = Object(D.A)(r(), {
 							subredditName: a
 						}),
 						o = r();
@@ -970,7 +970,7 @@
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return $
+				return V
 			})), r.d(t, "d", (function() {
 				return ne
 			})), r.d(t, "b", (function() {
@@ -1218,8 +1218,8 @@
 			});
 			const X = Object(i.a)(I.o),
 				J = Object(i.a)(I.n),
-				V = Object(i.a)(I.m),
-				$ = (e, t = {}) => async (r, n, {
+				$ = Object(i.a)(I.m),
+				V = (e, t = {}) => async (r, n, {
 					apiContext: s
 				}) => {
 					const a = n(),
@@ -1236,7 +1236,7 @@
 					l.ok ? r(J({
 						...l.body,
 						fetchedToken: i
-					})) : r(V({
+					})) : r($({
 						subredditId: e,
 						fetchedToken: i
 					}))
@@ -1330,10 +1330,10 @@
 				}, de = (e, t) => async (r, n) => {
 					const s = n();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(s) && !Object(y.Q)(s, {
+						if (!Object(w.b)(u.a.BAN_USER)(s) && !Object(y.R)(s, {
 								subredditId: e
 							})) {
-							const t = Object(y.T)(s, {
+							const t = Object(y.U)(s, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
@@ -1346,7 +1346,7 @@
 						const a = Object(O.h)(s, {
 							subredditId: e
 						});
-						a && a[n.id] || await r($(e, {
+						a && a[n.id] || await r(V(e, {
 							username: t
 						}))
 					})()]), r(Object(d.i)(u.a.BAN_USER))
@@ -1910,8 +1910,8 @@
 							wikiPageName: t
 						},
 						o = await p(s.gqlContext(), a),
-						d = Object(k.E)(n(), e);
-					if (Object(k.V)(n(), d) || await r(Object(i.h)(e, d)), o.ok) {
+						d = Object(k.F)(n(), e);
+					if (Object(k.W)(n(), d) || await r(Object(i.h)(e, d)), o.ok) {
 						const e = o.body,
 							t = e.data.subreddit && e.data.subreddit.wiki;
 						if (t && t.page) {
@@ -2467,7 +2467,7 @@
 				G = r.n(q);
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = l.a.wrapped(D, "PrivateKey", G.a), Q = l.a.div("ButtonsContainer", G.a), Y = l.a.div("Container", G.a), X = l.a.div("ContainerExp", G.a), J = l.a.div("Description", G.a), V = l.a.div("PrivateSubredditDetails", G.a), $ = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(L.k, "LinkRouterButton", G.a), ne = l.a.wrapped(L.j, "LinkButton", G.a), se = l.a.wrapped(L.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(L.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = l.a.wrapped(D, "PrivateKey", G.a), Q = l.a.div("ButtonsContainer", G.a), Y = l.a.div("Container", G.a), X = l.a.div("ContainerExp", G.a), J = l.a.div("Description", G.a), $ = l.a.div("PrivateSubredditDetails", G.a), V = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(L.k, "LinkRouterButton", G.a), ne = l.a.wrapped(L.j, "LinkButton", G.a), se = l.a.wrapped(L.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(L.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
 				isLoggedIn: K.J,
 				origin: M.j,
 				user: K.j,
@@ -2563,7 +2563,7 @@
 					case W.a.PrivateSubreddit:
 						return a.a.createElement("div", null, a.a.createElement(Z, null), a.a.createElement(pe, null, "r/", _, " ", z._("is a private community", null, {
 							hk: "7zZmq"
-						})), x && x.length && a.a.createElement(V, null, a.a.createElement(ee, null, "r/", _), a.a.createElement($, null, a.a.createElement("div", null, x))), a.a.createElement(J, null, z._("The moderators of", null, {
+						})), x && x.length && a.a.createElement($, null, a.a.createElement(ee, null, "r/", _), a.a.createElement(V, null, a.a.createElement("div", null, x))), a.a.createElement(J, null, z._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", _, " ", z._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -2992,7 +2992,7 @@
 			const {
 				fbt: Y
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), X = Object(i.c)({
-				hasModMailPermissions: Object(u.a)(G.c.mail),
+				hasModMailPermissions: Object(u.b)(G.c.mail),
 				isUserBanned: (e, t) => !!Object(z.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -3052,7 +3052,7 @@
 					})))
 				}
 			}
-			var V = Object(a.b)(X, (e, {
+			var $ = Object(a.b)(X, (e, {
 					username: t,
 					subredditId: r,
 					contextId: n
@@ -3076,12 +3076,12 @@
 						})), e(Object(F.i)(K.a.MUTE_USER))
 					}
 				}))(J),
-				$ = r("./src/reddit/actions/userFlair/index.ts");
+				V = r("./src/reddit/actions/userFlair/index.ts");
 			const {
 				fbt: ee
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var te = Object(a.b)(null, (e, t) => ({
-					onToggleUserFlairModal: () => e(Object($.g)(t.subredditId, t.username))
+					onToggleUserFlairModal: () => e(Object(V.g)(t.subredditId, t.username))
 				}))(e => s.a.createElement(M.a, {
 					role: "button",
 					onClick: () => {
@@ -3279,7 +3279,7 @@
 						},
 						getEventFactory: e => Object(P.g)(e ? "unfollow" : "follow", r),
 						small: !0
-					})), S && r && !E && f && s.a.createElement(V, {
+					})), S && r && !E && f && s.a.createElement($, {
 						contextId: r,
 						subredditId: f,
 						sendEvent: m,
@@ -3311,7 +3311,7 @@
 					hideNSFWPref: h.C,
 					moderatorPermissions: (e, {
 						subredditId: t
-					}) => t ? Object(u.k)(e, {
+					}) => t ? Object(u.l)(e, {
 						subredditId: t
 					}) : void 0,
 					origin: l.j,
@@ -3331,7 +3331,7 @@
 					}) => t ? Object(v.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(p.l)(t) && Object(p.eb)(e, t),
+					userIsBanned: (e, t) => !!Object(p.l)(t) && Object(p.fb)(e, t),
 					userProfileStyles: (e, t) => Object(b.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(m.h)(e, {
@@ -4700,4 +4700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f08133356626fc891b64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.3fba7d0d7fb931cd9dd9.js.map

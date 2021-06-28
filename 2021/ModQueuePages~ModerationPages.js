@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.6a8a482b8c52c8080e39.js
-// Retrieved at 6/28/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.a4321af38b0f0851e8ec.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -655,7 +655,7 @@
 						if (e !== p.a.Approve && e !== p.a.Flair) {
 							let t, r;
 							const l = g.platform.currentPage && g.platform.currentPage.queryParams && g.platform.currentPage.queryParams.subreddit,
-								m = l && Object(f.E)(g, l);
+								m = l && Object(f.F)(g, l);
 							e === p.a.Remove && m && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), r = Object(a.fetchReasonsAndOpenModal)(m, O));
@@ -1334,7 +1334,7 @@
 						const {
 							comment: n
 						} = t;
-						return Object(b.g)(e, t) || Object(v.k)(e, {
+						return Object(b.g)(e, t) || Object(v.l)(e, {
 							subredditId: n.subredditId
 						})
 					},
@@ -2066,7 +2066,7 @@
 						comment: t
 					}) => !!Object(Ne.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const n = Object(Ue.I)(e, {
+						const n = Object(Ue.J)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -2082,7 +2082,7 @@
 					onShowTooltip: t => e(Object(l.f)({
 						tooltipId: t
 					})),
-					openPowerupsModal: () => e(Object(c.d)("comment_top_supporter_badge"))
+					openPowerupsModal: () => e(Object(c.f)("comment_top_supporter_badge"))
 				}));
 			t.a = tt(e => {
 				const {
@@ -2431,7 +2431,7 @@
 				M = Object(i.c)({
 					comment: (e, t) => Object(O.a)(e, t),
 					flair: g.e,
-					subreddit: I.I
+					subreddit: I.J
 				}),
 				T = Object(r.b)(M, (e, {
 					commentId: t,
@@ -2673,7 +2673,7 @@
 						subredditId: t,
 						userId: n
 					})),
-					l = Object(r.e)(e => Object(c.T)(e, {
+					l = Object(r.e)(e => Object(c.U)(e, {
 						subredditId: t
 					}));
 				return o.a.createElement("div", {
@@ -4412,4 +4412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.6a8a482b8c52c8080e39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.a4321af38b0f0851e8ec.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1952892ca0a372df2acb.js
-// Retrieved at 6/28/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5b6a62ce09b8e6cfecf7.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2132,7 +2132,7 @@
 					} catch (s) {
 						p.c.captureException(s)
 					}
-				}, T = Object(m.a)(h.O), M = Object(m.a)(h.P), L = Object(m.a)(h.Q), B = e => async (t, n) => {
+				}, T = Object(m.a)(h.P), M = Object(m.a)(h.Q), L = Object(m.a)(h.R), B = e => async (t, n) => {
 					await t(T(e)), t(Object(d.f)({
 						kind: b.b.Error,
 						duration: d.a,
@@ -2165,12 +2165,12 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, U = Object(m.a)(h.S), F = e => async (t, n) => {
-					t(U(e)), t(Object(x.i)(e.subredditId, {
+				}, U = Object(m.a)(h.T), F = e => async (t, n) => {
+					t(U(e)), t(Object(x.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(C.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(C.h)(l.a.ECON_POWERUPS_SUCCESS))
-				}, D = Object(m.a)(h.W), H = Object(m.a)(h.ab)
+				}, D = Object(m.a)(h.X), H = Object(m.a)(h.bb)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -2194,18 +2194,18 @@
 				p = n("./src/redditGQL/operations/ProductOffers.json");
 			var b = n("./src/reddit/selectors/gold/productOffers.ts"),
 				h = n("./src/reddit/actions/gold/constants.ts");
-			const f = Object(s.a)(h.db),
-				g = Object(s.a)(h.cb),
-				v = Object(s.a)(h.bb),
-				_ = Object(s.a)(h.Z),
-				y = Object(s.a)(h.Y),
-				x = Object(s.a)(h.X),
-				C = Object(s.a)(h.Db),
-				E = Object(s.a)(h.Bb),
-				j = Object(s.a)(h.Cb),
-				w = Object(s.a)(h.Gb),
-				k = Object(s.a)(h.Fb),
-				O = Object(s.a)(h.Eb),
+			const f = Object(s.a)(h.eb),
+				g = Object(s.a)(h.db),
+				v = Object(s.a)(h.cb),
+				_ = Object(s.a)(h.ab),
+				y = Object(s.a)(h.Z),
+				x = Object(s.a)(h.Y),
+				C = Object(s.a)(h.Eb),
+				E = Object(s.a)(h.Cb),
+				j = Object(s.a)(h.Db),
+				w = Object(s.a)(h.Hb),
+				k = Object(s.a)(h.Gb),
+				O = Object(s.a)(h.Fb),
 				S = e => async t => {
 					t(Object(o.f)({
 						kind: c.b.Error,
@@ -2554,7 +2554,7 @@
 				} = e.params;
 				if (v === a.Wb.Gold) return void t(Object(s.c)("/settings/premium"));
 				const _ = [];
-				v === a.Wb.Profile && (_.push(t(Object(P.a)())), _.push(t(Object(N.g)()))), v === a.Wb.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.Wb.Notifications && _.push(t(O())), v !== a.Wb.Privacy && v !== a.Wb.Messaging || _.push(t(Object(l.b)())), v === a.Wb.Premium && (_.push(t(Object(P.a)())), _.push(t(Object(h.k)(!0)))), await Promise.all(_); {
+				v === a.Wb.Profile && (_.push(t(Object(P.a)())), _.push(t(Object(N.g)()))), v === a.Wb.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.Wb.Notifications && _.push(t(O())), v !== a.Wb.Privacy && v !== a.Wb.Messaging || _.push(t(Object(l.b)())), v === a.Wb.Premium && (_.push(t(Object(P.a)())), _.push(t(Object(h.m)(!0)))), await Promise.all(_); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -2571,7 +2571,7 @@
 					}
 				}
 				t(Object(S.l)({
-					title: Object(c.h)()
+					title: Object(c.i)()
 				}))
 			}
 		},
@@ -2960,10 +2960,10 @@
 				}, ce = (e, t) => async (n, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(j.Q)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(j.R)(s, {
 								subredditId: e
 							})) {
-							const t = Object(j.T)(s, {
+							const t = Object(j.U)(s, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -3571,7 +3571,7 @@
 			const {
 				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(o.c)({
-				hasModMailPermissions: Object(u.a)(q.c.mail),
+				hasModMailPermissions: Object(u.b)(q.c.mail),
 				isUserBanned: (e, t) => !!Object(K.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -3890,7 +3890,7 @@
 					hideNSFWPref: f.C,
 					moderatorPermissions: (e, {
 						subredditId: t
-					}) => t ? Object(u.k)(e, {
+					}) => t ? Object(u.l)(e, {
 						subredditId: t
 					}) : void 0,
 					origin: d.j,
@@ -3910,7 +3910,7 @@
 					}) => t ? Object(g.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.eb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.fb)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -4249,7 +4249,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const n = Object(h.a)(e, t),
-					r = Object(f.I)(e, t);
+					r = Object(f.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -4288,7 +4288,7 @@
 			}));
 			const _ = (e, t) => {
 				const n = Object(h.a)(e, t),
-					r = Object(f.I)(e, t);
+					r = Object(f.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -4314,7 +4314,7 @@
 				}
 			}));
 			var x = Object(a.b)(() => Object(o.c)({
-					subreddit: f.T
+					subreddit: f.U
 				}))(e => s.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -4421,7 +4421,7 @@
 				})
 			};
 			var k = Object(a.b)(() => Object(o.c)({
-				subreddit: f.T
+				subreddit: f.U
 			}))(e => s.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -4434,7 +4434,7 @@
 				}
 			}));
 			var O = Object(a.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.M)(e, {
 					identifier: t
 				})
 			}))(e => s.a.createElement(p, {
@@ -4451,7 +4451,7 @@
 			var S = Object(a.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.T)(e, {
+				}) => t ? Object(f.U)(e, {
 					subredditId: t
 				}) : null
 			}))(e => s.a.createElement(p, {
@@ -6205,7 +6205,7 @@
 						hk: "2EKYNO"
 					}))), i.a.createElement(x.f, null, i.a.createElement(x.q, {
 						onClick: () => {
-							n.isPremium ? a(Object(_.g)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(y.a)(n.id, s.id, n.allocatedAt)), r()
+							n.isPremium ? a(Object(_.i)(s.id, -n.powerups, n.isAnonymous, n.allocatedAt)) : a(Object(y.a)(n.id, s.id, n.allocatedAt)), r()
 						},
 						"data-redditstyle": !0
 					}, j._("Confirm", null, {
@@ -7953,7 +7953,7 @@
 				a = n("./src/reddit/actions/subscription/index.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -14255,4 +14255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1952892ca0a372df2acb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5b6a62ce09b8e6cfecf7.js.map

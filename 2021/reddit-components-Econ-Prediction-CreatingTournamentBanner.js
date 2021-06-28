@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.1b9443af9807fb202d49.js
-// Retrieved at 6/16/2021, 7:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.b4af1288949df5d6a89a.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -16,7 +16,7 @@
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return p
+				return g
 			}));
 			var i = n("./node_modules/react/index.js"),
 				s = n.n(i),
@@ -32,28 +32,28 @@
 				_ = n("./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less"),
 				x = n.n(_);
 			const {
-				fbt: g
+				fbt: p
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function p({
+			function g({
 				subreddit: e
 			}) {
 				const t = Object(r.d)(),
 					[n, _] = Object(i.useState)(!1),
-					p = Object(r.e)(t => !!e && Object(m.h)(t, {
+					g = Object(r.e)(t => !!e && Object(m.h)(t, {
 						subredditId: e.id
 					}));
-				return Object(r.e)(t => !!e && Object(b.g)(t, {
+				return Object(r.e)(t => !!e && Object(b.h)(t, {
 					subredditId: e.id
-				})) && p ? s.a.createElement("div", {
+				})) && g ? s.a.createElement("div", {
 					className: x.a.creatingTournamentBanner
 				}, s.a.createElement("h1", {
 					className: x.a.title
-				}, g._("Creating predictions posts...", null, {
+				}, p._("Creating predictions posts...", null, {
 					hk: "2r0wY9"
 				})), s.a.createElement("p", {
 					className: x.a.description
-				}, g._("This may take up to a few minutes. No progress will be lost if you leave", null, {
+				}, p._("This may take up to a few minutes. No progress will be lost if you leave", null, {
 					hk: "3vuTHr"
 				})), s.a.createElement(c.i, {
 					className: Object(d.a)(x.a.button, x.a.reloadButton, {
@@ -68,11 +68,11 @@
 				}, n ? s.a.createElement(l.a, {
 					className: x.a.loadingSpinner,
 					sizePx: 16
-				}) : g._("Reload", null, {
+				}) : p._("Reload", null, {
 					hk: "2MIb6e"
 				}))) : null
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.1b9443af9807fb202d49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.b4af1288949df5d6a89a.js.map

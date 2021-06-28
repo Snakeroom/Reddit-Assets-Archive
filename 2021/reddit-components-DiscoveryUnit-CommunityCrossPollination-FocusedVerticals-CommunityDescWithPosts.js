@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.fd04a4a36f183eda2aec.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.727ec186a375cbe76b8b.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -493,8 +493,8 @@
 			const {
 				fbt: y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(c.c)({
-				subreddit: C.T,
-				subredditAboutInfo: C.w
+				subreddit: C.U,
+				subredditAboutInfo: C.x
 			}), f = Object(i.b)(O);
 			class g extends r.a.Component {
 				constructor() {
@@ -1012,7 +1012,7 @@
 				i = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -1196,7 +1196,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						o = Object(u.z)(e, {
+						o = Object(u.A)(e, {
 							subredditName: n
 						});
 					return o ? {
@@ -1278,4 +1278,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.fd04a4a36f183eda2aec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.727ec186a375cbe76b8b.js.map

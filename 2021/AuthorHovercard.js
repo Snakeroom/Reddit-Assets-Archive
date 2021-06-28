@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.73322824a1180307bbf2.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f96d40243f7bca3c2c50.js
+// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -398,10 +398,10 @@
 				}, ce = (e, t) => async (n, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.Q)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.R)(s, {
 								subredditId: e
 							})) {
-							const t = Object(E.T)(s, {
+							const t = Object(E.U)(s, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -552,7 +552,7 @@
 					apiContext: v
 				}) => {
 					let h = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(w.E)(l(), e.name),
+						id: Object(w.F)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -604,7 +604,7 @@
 						})).ok) {
 						h.filter(e => e.type === m.a.SUBREDDIT).forEach(({
 							id: e
-						}) => a(Object(i.i)(e, {
+						}) => a(Object(i.k)(e, {
 							forceLoad: !0,
 							fullData: !1
 						})));
@@ -635,7 +635,7 @@
 					apiContext: r
 				}) => {
 					const a = n(),
-						o = Object(w.L)(a, {
+						o = Object(w.M)(a, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -657,7 +657,7 @@
 							type: e.type,
 							name: o.name
 						},
-						g = () => Object(w.fb)(n(), {
+						g = () => Object(w.gb)(n(), {
 							identifier: I
 						});
 					(g() || (await t(F([I], !0)), g())) && ((await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
@@ -997,7 +997,7 @@
 			const {
 				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(o.c)({
-				hasModMailPermissions: Object(u.a)(q.c.mail),
+				hasModMailPermissions: Object(u.b)(q.c.mail),
 				isUserBanned: (e, t) => !!Object(G.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1316,7 +1316,7 @@
 					hideNSFWPref: v.C,
 					moderatorPermissions: (e, {
 						subredditId: t
-					}) => t ? Object(u.k)(e, {
+					}) => t ? Object(u.l)(e, {
 						subredditId: t
 					}) : void 0,
 					origin: l.j,
@@ -1336,7 +1336,7 @@
 					}) => t ? Object(h.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.eb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.fb)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -2808,7 +2808,7 @@
 				a = n("./src/reddit/actions/subscription/index.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: o.fb
+				userIsSubscriber: o.gb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -3629,4 +3629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.73322824a1180307bbf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f96d40243f7bca3c2c50.js.map
