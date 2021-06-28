@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.0b2f0092c5588e677a86.js
-// Retrieved at 6/28/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.4a9bdfc884c763f84973.js
+// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3390,15 +3390,16 @@
 				u = s("./src/reddit/helpers/postHasSelfText/index.ts"),
 				p = s("./src/reddit/icons/fonts/index.tsx"),
 				h = s("./src/reddit/models/Media/index.ts"),
-				b = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				x = s.n(b);
-			const f = Object(i.b)(null, (e, t) => ({
+				b = s("./src/telemetry/models/Outbound.ts"),
+				x = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				f = s.n(x);
+			const g = Object(i.b)(null, (e, t) => ({
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
-				g = (e, t = !1, s) => {
-					const r = Object(c.a)(x.a.icon, x.a.hideOnHover);
+				v = (e, t = !1, s) => {
+					const r = Object(c.a)(f.a.icon, f.a.hideOnHover);
 					if (t) return o.a.createElement(p.a, {
 						name: "crosspost",
 						className: r
@@ -3442,59 +3443,61 @@
 							})
 					}
 				};
-			t.a = f(e => {
+			t.a = g(e => {
 				const {
 					className: t,
 					crosspost: s,
 					enableCrosspostIcon: n,
-					isExpanded: i,
-					post: l,
-					toggle: h,
-					useMediaIcons: b
-				} = e, f = s || l, v = n && !!s;
-				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(u.a)(f)) || !!l.pollData ? o.a.createElement("button", {
-					"aria-expanded": i,
+					isCommentsPage: i,
+					isExpanded: l,
+					post: h,
+					toggle: x,
+					useMediaIcons: g
+				} = e, y = s || h, C = n && !!s;
+				return y.media && !(("rtjson" === y.media.type || "text" === y.media.type) && !Object(u.a)(y)) || !!h.pollData ? o.a.createElement("button", {
+					"aria-expanded": !!l,
 					"aria-haspopup": !0,
 					"aria-label": r.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(c.a)(t, x.a.outer),
-					"data-click-id": i ? "expando_close" : "expando_open",
-					onClick: h
-				}, i ? o.a.createElement(p.a, {
+					className: Object(c.a)(t, f.a.outer),
+					"data-click-id": l ? "expando_close" : "expando_open",
+					onClick: x
+				}, l ? o.a.createElement(p.a, {
 					name: "collapse",
-					className: x.a.icon
-				}) : b ? o.a.createElement(o.a.Fragment, null, g(f.media && f.media.type, v, l), o.a.createElement(p.a, {
+					className: f.a.icon
+				}) : g ? o.a.createElement(o.a.Fragment, null, v(y.media && y.media.type, C, h), o.a.createElement(p.a, {
 					name: "expand",
-					className: Object(c.a)(x.a.icon, x.a.showOnHover)
+					className: Object(c.a)(f.a.icon, f.a.showOnHover)
 				})) : o.a.createElement(p.a, {
 					name: "expand",
-					className: x.a.icon
-				})) : f.source && f.source.url ? o.a.createElement(m.b, {
+					className: f.a.icon
+				})) : y.source && y.source.url ? o.a.createElement(m.b, {
 					"aria-label": r.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(c.a)(t, x.a.outer),
+					className: Object(c.a)(t, f.a.outer),
 					"data-click-id": "expando_open",
-					href: f.source.url,
-					isSponsored: l.isSponsored,
-					postId: l.id,
-					source: l.source,
+					href: y.source.url,
+					isSponsored: h.isSponsored,
+					postId: h.id,
+					source: h.source,
+					sourceElement: i ? b.SourceElement.PostImage : b.SourceElement.ListingPostImage,
 					target: "_blank"
 				}, o.a.createElement(p.a, {
 					name: "external_link",
-					className: Object(c.a)(x.a.icon, x.a.outboundLinkIcon)
+					className: Object(c.a)(f.a.icon, f.a.outboundLinkIcon)
 				})) : o.a.createElement(a.a, {
 					"aria-label": r.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(c.a)(t, x.a.outer),
+					className: Object(c.a)(t, f.a.outer),
 					"data-click-id": "expando_open",
-					to: Object(d.a)(f.permalink),
+					to: Object(d.a)(y.permalink),
 					rel: "nofollow"
 				}, o.a.createElement(p.a, {
 					name: "text_post",
-					className: x.a.icon
+					className: f.a.icon
 				}))
 			})
 		},
@@ -9325,4 +9328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0b2f0092c5588e677a86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4a9bdfc884c763f84973.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b48329b8626bc997c369.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.db0cba501e0b8ebb4441.js
+// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3287,53 +3287,53 @@
 		"./src/reddit/components/RichTextJson/elements.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "x", (function() {
-				return u
+				return l
 			})), s.d(t, "e", (function() {
-				return m
+				return u
 			})), s.d(t, "h", (function() {
-				return p
+				return m
 			})), s.d(t, "k", (function() {
-				return h
+				return p
 			})), s.d(t, "c", (function() {
-				return b
+				return h
 			})), s.d(t, "j", (function() {
-				return f
+				return b
 			})), s.d(t, "g", (function() {
-				return g
+				return f
 			})), s.d(t, "v", (function() {
-				return w
+				return g
 			})), s.d(t, "i", (function() {
-				return x
+				return w
 			})), s.d(t, "b", (function() {
-				return v
+				return x
 			})), s.d(t, "f", (function() {
-				return O
+				return v
 			})), s.d(t, "u", (function() {
-				return j
+				return O
 			})), s.d(t, "d", (function() {
-				return y
+				return j
 			})), s.d(t, "l", (function() {
-				return E
+				return y
 			})), s.d(t, "m", (function() {
-				return _
+				return E
 			})), s.d(t, "n", (function() {
-				return I
+				return _
 			})), s.d(t, "t", (function() {
-				return C
+				return I
 			})), s.d(t, "p", (function() {
-				return k
+				return C
 			})), s.d(t, "o", (function() {
-				return P
+				return k
 			})), s.d(t, "q", (function() {
-				return N
+				return P
 			})), s.d(t, "s", (function() {
-				return A
+				return N
 			})), s.d(t, "r", (function() {
-				return S
+				return A
 			})), s.d(t, "a", (function() {
-				return T
+				return S
 			})), s.d(t, "w", (function() {
-				return L
+				return T
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -3342,43 +3342,30 @@
 				i = s.n(o),
 				d = s("./src/lib/lessComponent.tsx"),
 				c = s("./src/reddit/components/Governance/VaultActionLink/async.ts");
-
-			function l() {
-				return (l = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const u = [d.a.div("H1", i.a), d.a.div("H2", i.a), d.a.div("H3", i.a), d.a.div("H4", i.a), d.a.div("H5", i.a), d.a.div("H6", i.a)],
-				m = d.a.hr("Hr", i.a),
-				p = d.a.code("M", i.a),
-				h = d.a.pre("Pre", i.a),
-				b = d.a.blockquote("Blockquote", i.a),
-				f = d.a.p("P", i.a),
-				g = d.a.li("Li", i.a),
-				w = d.a.ul("Ul", i.a),
-				x = d.a.ol("Ol", i.a),
-				v = d.a.strong("B", i.a),
-				O = d.a.em("I", i.a),
-				j = d.a.span("U", i.a),
-				y = e => r.a.createElement("del", e),
-				E = d.a.sub("Sub", i.a),
-				_ = d.a.sup("Sup", i.a),
-				I = d.a.table("Table", i.a),
-				C = d.a.tr("Tr", i.a),
-				k = d.a.td("Tdl", i.a),
-				P = d.a.td("Tdc", i.a),
-				N = d.a.td("Tdr", i.a),
-				A = d.a.th("Thl", i.a),
-				S = d.a.th("Thc", i.a),
-				T = (d.a.th("Thr", i.a), d.a.wrapped(e => r.a.createElement(a.b, l({}, e, {
-					isSponsored: !1,
-					source: null
-				})), "A", i.a)),
-				L = d.a.wrapped(c.a, "A", i.a)
+			const l = [d.a.div("H1", i.a), d.a.div("H2", i.a), d.a.div("H3", i.a), d.a.div("H4", i.a), d.a.div("H5", i.a), d.a.div("H6", i.a)],
+				u = d.a.hr("Hr", i.a),
+				m = d.a.code("M", i.a),
+				p = d.a.pre("Pre", i.a),
+				h = d.a.blockquote("Blockquote", i.a),
+				b = d.a.p("P", i.a),
+				f = d.a.li("Li", i.a),
+				g = d.a.ul("Ul", i.a),
+				w = d.a.ol("Ol", i.a),
+				x = d.a.strong("B", i.a),
+				v = d.a.em("I", i.a),
+				O = d.a.span("U", i.a),
+				j = e => r.a.createElement("del", e),
+				y = d.a.sub("Sub", i.a),
+				E = d.a.sup("Sup", i.a),
+				_ = d.a.table("Table", i.a),
+				I = d.a.tr("Tr", i.a),
+				C = d.a.td("Tdl", i.a),
+				k = d.a.td("Tdc", i.a),
+				P = d.a.td("Tdr", i.a),
+				N = d.a.th("Thl", i.a),
+				A = d.a.th("Thc", i.a),
+				S = (d.a.th("Thr", i.a), d.a.wrapped(e => r.a.createElement(a.b, e), "A", i.a)),
+				T = d.a.wrapped(c.a, "A", i.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4107,9 +4094,9 @@
 		"./src/reddit/components/SubredditMention/SubredditIcon/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return u
+				return l
 			})), s.d(t, "a", (function() {
-				return m
+				return u
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -4118,21 +4105,8 @@
 				i = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				d = s("./src/reddit/components/SubredditMention/SubredditIcon/index.m.less"),
 				c = s.n(d);
-
-			function l() {
-				return (l = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const u = a.a.wrapped(o.b, "SubredditIcon", c.a),
-				m = a.a.wrapped(e => r.a.createElement(i.b, l({}, e, {
-					isSponsored: !1,
-					source: null
-				})), "S", c.a)
+			const l = a.a.wrapped(o.b, "SubredditIcon", c.a),
+				u = a.a.wrapped(e => r.a.createElement(i.b, e), "S", c.a)
 		},
 		"./src/reddit/components/SubredditMention/SubredditIconsWeighting/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -5292,4 +5266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b48329b8626bc997c369.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.db0cba501e0b8ebb4441.js.map

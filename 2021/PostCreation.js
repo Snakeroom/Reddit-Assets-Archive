@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3fda8608144d44c96087.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.145e5f968613481e7b9f.js
+// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -27032,9 +27032,7 @@
 						hk: "3SPI4V"
 					}))))), p && !t && !a && r.a.createElement(et.a, null, r.a.createElement(za, {
 						href: "/settings#connected-accounts",
-						isSponsored: !1,
-						onClick: e.trackConnectAccountsClick,
-						source: null
+						onClick: e.trackConnectAccountsClick
 					}, d.fbt._("Connect accounts to share your post", null, {
 						hk: "1nIuWp"
 					})), r.a.createElement(Ga, {
@@ -30227,4 +30225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3fda8608144d44c96087.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.145e5f968613481e7b9f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.b9173044688792460e03.js
-// Retrieved at 6/22/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.639af9a67084b783df4a.js
+// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1343,9 +1343,9 @@
 		"./src/reddit/controls/OutboundLink/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return N
+				return E
 			})), r.d(t, "c", (function() {
-				return C
+				return P
 			}));
 			var i = r("./node_modules/lodash/omit.js"),
 				o = r.n(i),
@@ -1361,20 +1361,18 @@
 			}) : e;
 			var _ = r("./src/lib/opener/index.ts"),
 				p = r("./src/lib/redditId/index.ts"),
-				m = r("./src/lib/serviceWorker/index.ts"),
-				b = r("./src/reddit/actions/post.ts"),
-				h = r("./src/reddit/constants/adEvents.ts"),
-				g = r("./src/reddit/helpers/getVendorMetadata.ts");
-			const v = /^https?:\/\/([\w\.\-]+\.)?(reddit(media|static)?\.com|redd\.it)\//;
-			var O = r("./src/reddit/helpers/pixels.ts"),
-				y = r("./src/reddit/helpers/trackers/ads.ts"),
-				I = r("./src/reddit/selectors/telemetry.ts");
-			var w = r("./src/reddit/selectors/posts.ts"),
-				k = r("./src/reddit/selectors/user.ts"),
-				j = r("./src/telemetry/index.ts");
+				m = r("./src/reddit/actions/post.ts"),
+				b = r("./src/reddit/constants/adEvents.ts"),
+				h = r("./src/reddit/helpers/getVendorMetadata.ts"),
+				g = r("./src/reddit/helpers/pixels.ts"),
+				v = r("./src/reddit/helpers/trackers/ads.ts"),
+				O = r("./src/reddit/hooks/useOutboundClickTracking.ts"),
+				y = r("./src/reddit/selectors/posts.ts"),
+				I = r("./src/reddit/selectors/telemetry.ts"),
+				w = r("./src/reddit/selectors/user.ts");
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function k() {
+				return (k = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var i in r) Object.prototype.hasOwnProperty.call(r, i) && (e[i] = r[i])
@@ -1382,52 +1380,30 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = Object(d.a)(k.a, k.j, (e, {
+			const j = Object(d.a)(w.a, w.j, (e, {
 					isSponsored: t,
 					postId: r
-				}) => t && r ? Object(w.b)(e, r) : null, w.F, I.actionInfo, (e, t, r, i, o) => ({
+				}) => t && r ? Object(y.b)(e, r) : null, y.F, I.actionInfo, (e, t, r, i, o) => ({
 					allowClickTracking: e,
 					basePixelMetadata: r,
 					userId: t ? Object(p.a)(t.id) : null,
 					post: i,
 					pageType: o.pageType
 				})),
-				E = Object(a.b)(S, e => ({
-					fireAdPixelsOfType: (t, r) => e(Object(b.z)(t, r)),
+				x = Object(a.b)(j, e => ({
+					fireAdPixelsOfType: (t, r) => e(Object(m.z)(t, r)),
 					recordClick: (t, r, i) => {
 						const o = t.events.filter(({
 							type: e,
 							url: t
-						}) => e === h.a.Click && Object(O.b)(t));
-						Object(O.c)(o), e(Object(b.q)(String(r), {
+						}) => e === b.a.Click && Object(g.b)(t));
+						Object(g.c)(o), e(Object(m.q)(String(r), {
 							postId: t.id,
 							vendorMetadata: i
 						}))
-					},
-					trackOutboundClickEvent: (t, r, i, o) => {
-						r && function(e) {
-							return !e.startsWith("/") && null == e.match(v)
-						}(t) && e((e, n) => {
-							! function(e) {
-								window && window.navigator && window.navigator.serviceWorker && window.navigator.serviceWorker.controller ? Object(m.b)("sendV2Event", e) : Object(j.a)(e)
-							}(((e, t, r, i, o) => {
-								const n = {
-									noun: "outbound_link",
-									action: "click",
-									source: "link",
-									...I.defaults(e),
-									actionInfo: I.actionInfo(e),
-									geo: I.geo(e),
-									screen: I.screen(e),
-									subreddit: I.subreddit(e),
-									outbound: I.outboundLinkData(e, t, r, o, i)
-								};
-								return i && (n.comment = I.comment(e, i)), o && (n.post = I.post(e, o)), n
-							})(n(), t, r, i, o))
-						})
 					}
 				})),
-				P = (e, t, r, i) => {
+				S = (e, t, r, i) => {
 					const o = t.outboundUrlExpiration && t.outboundUrlExpiration > Date.now();
 					i && t.outboundUrl && o && (e.href = f(t.outboundUrl, r), e.href = function(e) {
 						return Object(u.a)(e, {
@@ -1435,10 +1411,10 @@
 						})
 					}(e.href))
 				},
-				N = (e, t, r) => {
+				E = (e, t, r) => {
 					let i, o = null;
 					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(r)) {
-						o = Object(g.a)(e, t, h.a.Click);
+						o = Object(h.a)(e, t, b.a.Click);
 						const {
 							url: n,
 							query: c
@@ -1456,65 +1432,65 @@
 						metadata: o
 					}
 				},
-				C = (e, t, r) => {
-					const i = N(t, r, e.href);
+				P = (e, t, r) => {
+					const i = E(t, r, e.href);
 					return e.href = i.url, i.metadata
 				},
-				T = ({
+				N = ({
 					isSponsored: e,
 					source: t
 				}) => !!(e && (null == t ? void 0 : t.outboundUrl)),
-				U = E(e => {
+				C = x(e => {
 					const t = Object(c.useRef)(null),
+						r = Object(O.a)(),
 						{
-							allowClickTracking: r,
-							basePixelMetadata: i,
-							commentId: n,
-							fireAdPixelsOfType: s,
-							href: a,
-							isSponsored: d,
-							pageType: u,
-							post: f,
-							postId: p,
-							recordClick: m,
-							source: b,
-							sourceElement: g,
-							trackOutboundClickEvent: v,
-							userId: O
+							allowClickTracking: i,
+							basePixelMetadata: n,
+							commentId: s,
+							fireAdPixelsOfType: a,
+							href: d,
+							isSponsored: u,
+							pageType: f,
+							post: p,
+							postId: m,
+							recordClick: h,
+							source: g,
+							sourceElement: y,
+							userId: I
 						} = e;
-					let I = o()(e, ["allowClickTracking", "basePixelMetadata", "fireAdPixelsOfType", "isSponsored", "postId", "recordClick", "source", "userId", "pageType"]);
-					const w = b && b.outboundUrl && d ? b.outboundUrl : a;
-					return I = {
-						...I,
-						href: w,
+					let w = o()(e, ["allowClickTracking", "basePixelMetadata", "fireAdPixelsOfType", "isSponsored", "postId", "recordClick", "source", "sourceElement", "userId", "pageType"]);
+					const j = g && g.outboundUrl && u ? g.outboundUrl : d;
+					return w = {
+						...w,
+						href: j,
 						rel: _.a,
 						target: _.c.BLANK
-					}, !b || (e => {
+					}, !g || (e => {
 						const {
 							outboundUrlCreated: t,
 							outboundUrlReceived: r
 						} = e;
 						return !(!t || !r) && (t > r + 3e5 || t < r - 36e5)
-					})(b) ? l.a.createElement("a", x({}, I, {
-						onClick: () => v(a, g, n, p)
-					})) : l.a.createElement("a", x({}, I, {
-						onMouseDown: o => {
-							if (!T(e)) return !(1 !== o.button && 2 !== o.button && !o.ctrlKey) || void P(o.currentTarget, b, O, r);
-							t.current = C(o.currentTarget, p, i)
+					})(g) ? l.a.createElement("a", k({}, w, {
+						onClick: () => r(d, y, s, m)
+					})) : l.a.createElement("a", k({}, w, {
+						onMouseDown: r => {
+							if (!N(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void S(r.currentTarget, g, I, i);
+							t.current = P(r.currentTarget, m, n)
 						},
 						onClick: () => {
-							f && (T(e) && (m(f, h.a.Click, t.current), Object(y.a)(f, u)), s(f, h.a.Click), v(a, g, n, p))
+							p && (N(e) && (h(p, b.a.Click, t.current), Object(v.a)(p, f)), a(p, b.a.Click), r(d, y, s, m))
 						},
 						onMouseLeave: e => {
-							d || ((e, t) => {
+							u || ((e, t) => {
 								e.href = t
-							})(e.currentTarget, w)
+							})(e.currentTarget, j)
 						},
-						onTouchStart: e => P(e.currentTarget, b, O, r),
+						onTouchStart: e => S(e.currentTarget, g, I, i),
 						"data-testid": "outbound-link"
 					}))
 				});
-			t.b = U
+			t.b = C
 		},
 		"./src/reddit/helpers/pageActionLoginRedirect.ts": function(e, t, r) {
 			"use strict";
@@ -1613,9 +1589,9 @@
 			})), r.d(t, "h", (function() {
 				return B
 			})), r.d(t, "e", (function() {
-				return W
-			})), r.d(t, "f", (function() {
 				return q
+			})), r.d(t, "f", (function() {
+				return W
 			})), r.d(t, "b", (function() {
 				return F
 			})), r.d(t, "v", (function() {
@@ -1879,14 +1855,14 @@
 						...M(e, t)
 					})
 				},
-				W = (e, t) => {
+				q = (e, t) => {
 					Object(u.a)({
 						noun: t.draftId ? "draft_update" : "draft_create",
 						...m(e),
 						...M(e, t)
 					})
 				},
-				q = (e, t) => {
+				W = (e, t) => {
 					Object(u.a)({
 						noun: "draft_delete",
 						...m(e),
@@ -2080,7 +2056,7 @@
 							break;
 						case n.Jb.SETTINGS: {
 							const o = e;
-							Object(I.a)(q(r, i)(t)), o.match.params.page === n.Wb.Profile && Object(u.k)(t);
+							Object(I.a)(W(r, i)(t)), o.match.params.page === n.Wb.Profile && Object(u.k)(t);
 							break
 						}
 						case n.Jb.POST_CREATION:
@@ -2107,7 +2083,7 @@
 							Object(I.a)(H(r, i)(t)), Object(I.a)(B()(t));
 							break;
 						case n.Jb.APPEAL:
-							Object(I.a)(W(r, i)(t));
+							Object(I.a)(q(r, i)(t));
 							break;
 						case n.Jb.INBOX_PAGES:
 							p && D(t);
@@ -2401,14 +2377,14 @@
 					noun: "screen",
 					...k(e)
 				}),
-				W = (e, t) => r => ({
+				q = (e, t) => r => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
 					...k(r),
 					timer: y.timer(e, t)
 				}),
-				q = (e, t) => r => ({
+				W = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2926,6 +2902,51 @@
 				}, [e, t, r])
 			}
 		},
+		"./src/reddit/hooks/useOutboundClickTracking.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return d
+			}));
+			var i = r("./src/reddit/components/TrackingHelper/index.tsx");
+			const o = /^https?:\/\/([\w\.\-]+\.)?(reddit(media|static)?\.com|redd\.it)\//;
+			var n = r("./src/reddit/selectors/telemetry.ts");
+			const s = (e, t, r, i) => o => {
+				const s = {
+					noun: "outbound_link",
+					action: "click",
+					source: "link",
+					...Object(n.defaults)(o),
+					actionInfo: Object(n.actionInfo)(o),
+					geo: Object(n.geo)(o),
+					screen: Object(n.screen)(o),
+					subreddit: Object(n.subreddit)(o),
+					outbound: Object(n.outboundLinkData)(o, e, t, i, r)
+				};
+				return r && (s.comment = Object(n.comment)(o, r)), i && (s.post = Object(n.post)(o, i)), s
+			};
+			var c = r("./src/lib/serviceWorker/index.ts"),
+				l = r("./node_modules/react-redux/es/index.js");
+			const a = () => {
+				const e = Object(l.f)();
+				return t => {
+					Object(c.b)("sendV2Event", t(e.getState()))
+				}
+			};
+
+			function d() {
+				const e = Object(i.b)(),
+					t = a();
+				return (r, i, n, c) => {
+					var l, a;
+					if (i && function(e) {
+							return !e.startsWith("/") && null == e.match(o)
+						}(r)) {
+						const o = s(r, i, n, c);
+						(null === (a = null === (l = null === window || void 0 === window ? void 0 : window.navigator) || void 0 === l ? void 0 : l.serviceWorker) || void 0 === a ? void 0 : a.controller) ? t(o): e(o)
+					}
+				}
+			}
+		},
 		"./src/reddit/icons/fonts/helpers.m.less": function(e, t, r) {
 			e.exports = {
 				TooltipDesc: "_37iEJpUpWXN00_fpZKHglg",
@@ -3104,4 +3125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.b9173044688792460e03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.639af9a67084b783df4a.js.map

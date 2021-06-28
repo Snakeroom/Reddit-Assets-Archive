@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3484dcf861f113b1fd08.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5d89f420f8aed4f1bd52.js
+// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -2065,8 +2065,6 @@
 				}),
 				y = e => s.a.createElement(l.b, {
 					href: k(e.button),
-					isSponsored: !1,
-					source: null,
 					sourceElement: v.SourceElement.SidebarWidget
 				}, s.a.createElement(E, e)),
 				I = m.a.wrapped(o.a, "RawHTMLDisplay", j.a);
@@ -2240,9 +2238,7 @@
 							src: r.url
 						}));
 					return r.linkUrl ? s.a.createElement(l.b, {
-						href: r.linkUrl,
-						isSponsored: !1,
-						source: null
+						href: r.linkUrl
 					}, n) : n
 				}
 			}
@@ -3181,4 +3177,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3484dcf861f113b1fd08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.5d89f420f8aed4f1bd52.js.map

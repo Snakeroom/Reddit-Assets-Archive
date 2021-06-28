@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.30b22ce95a6e5d6f2013.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.786127bc5560518c6559.js
+// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -2925,8 +2925,6 @@
 						hk: "3WYTu5"
 					}), " ", r.a.createElement(U.a, {
 						className: te.a.communityTopicsHelpLink,
-						isSponsored: !1,
-						source: null,
 						href: "https://mods.reddithelp.com/hc/en-us/articles/360024518712",
 						rel: "noopener noreferrer",
 						target: "_blank"
@@ -2969,8 +2967,6 @@
 						hk: "Qne1T"
 					}), " ", r.a.createElement(U.a, {
 						className: te.a.welcomeMessageHelpLink,
-						isSponsored: !1,
-						source: null,
 						href: "https://mods.reddithelp.com/hc/en-us/articles/360002551551-Welcoming-new-members",
 						rel: "noopener noreferrer",
 						target: "_blank"
@@ -4240,7 +4236,7 @@
 		"./src/reddit/components/CompactPost/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "renderSubredditIcon", (function() {
-				return Ne
+				return Ie
 			}));
 			var n = s("./node_modules/react/index.js"),
 				a = s.n(n),
@@ -4404,15 +4400,15 @@
 						userIsOp: xe,
 						hideModTools: ve,
 						scrollerItemRef: Ce,
-						showBulkActionCheckbox: ke,
-						showEditFlair: ye,
-						toggleCheckbox: Se,
-						tooltipType: Oe,
-						sendEvent: we,
-						shouldShowGalleryTileOption: Ne
-					} = this.props, Me = !!be.media && be.media.type === h.o.RTJSON, Pe = xe && Me, Re = Object(z.b)(be.id, k), Fe = Object(me.a)(te), Ae = Object(le.a)(te), De = Object(ce.a)(te), Le = `-mod-actions-menu-${be.id}`, Ue = `voting-arrows-${be.id}`, Be = !!o && Object(g.e)(o) === be.author, He = Object(B.c)(be), We = Object(R.a)("View--Reports", be.id, Oe), Ze = Object(B.a)(be), Ve = !(k || E || v), qe = be.media && be.media.type === h.o.LIVEVIDEO, {
+						showBulkActionCheckbox: ye,
+						showEditFlair: Se,
+						toggleCheckbox: Oe,
+						tooltipType: we,
+						sendEvent: Ie,
+						shouldShowGalleryTileOption: Te
+					} = this.props, Me = !!be.media && be.media.type === h.o.RTJSON, Pe = xe && Me, Re = Object(z.b)(be.id, k), Fe = Object(me.a)(te), Ae = Object(le.a)(te), De = Object(ce.a)(te), Le = `-mod-actions-menu-${be.id}`, Ue = `voting-arrows-${be.id}`, Be = !!o && Object(g.e)(o) === be.author, He = Object(B.c)(be), We = Object(R.a)("View--Reports", be.id, we), Ze = Object(B.a)(be), Ve = !(k || E || v), qe = be.media && be.media.type === h.o.LIVEVIDEO, {
 						moderationPrompt: ze
-					} = be, Ge = e => we(Object(b.h)(be.id, e)), Ke = Object(d.t)(be, f), {
+					} = be, Ge = e => Ie(Object(b.h)(be.id, e)), Ke = Object(d.t)(be, f), {
 						source: Qe
 					} = Ke, Je = a.a.createElement(q.a, {
 						className: Object(l.a)(Ee.a.compactPostStyles, _e.a.postContainer, Object(p.a)(this.props), t),
@@ -4438,10 +4434,10 @@
 								theme: this.props.theme
 							})
 						}
-					}, ke && a.a.createElement(ie.a, {
+					}, ye && a.a.createElement(ie.a, {
 						className: _e.a.bulkActionCheckbox,
 						isCheckboxSelected: x,
-						toggleCheckbox: Se
+						toggleCheckbox: Oe
 					}), a.a.createElement(ne.a, {
 						className: _e.a.verticalVotes,
 						compact: !0,
@@ -4476,7 +4472,14 @@
 						post: be
 					}), a.a.createElement("div", {
 						className: _e.a.compactPostRow
-					}, !ve && Ie(be, n, _, !1), !M && !be.isSponsored && a.a.createElement(F.h, {
+					}, !ve && a.a.createElement(ke, {
+						crosspost: n,
+						isCommentsPage: E,
+						isCompact: !1,
+						isExpanded: _,
+						post: be,
+						useMediaIcons: !0
+					}), !M && !be.isSponsored && a.a.createElement(F.h, {
 						type: be.belongsTo.type,
 						id: be.belongsTo.id
 					}), a.a.createElement("div", {
@@ -4488,7 +4491,7 @@
 						size: X.b.Small,
 						titleColor: i && i.postTitleColor,
 						isOverlay: !1
-					}), Te(be, he), a.a.createElement(Y.d, {
+					}), Ne(be, he), a.a.createElement(Y.d, {
 						className: _e.a.postTopMeta,
 						flairStyleTemplate: i,
 						post: be,
@@ -4524,13 +4527,13 @@
 						layout: K,
 						modModeEnabled: se,
 						post: be,
-						sendEvent: we,
+						sendEvent: Ie,
 						showIconsOnly: !0
 					}), Fe && a.a.createElement(A.a, {
 						dropdownId: Le,
 						onClick: () => Ge("post_mod_action_menu")
 					}, a.a.createElement(P.b, null), a.a.createElement(Q.a, {
-						canEditFlair: Ae && ye,
+						canEditFlair: Ae && Se,
 						hasModPostPerms: Fe,
 						hasModFullPerms: De,
 						isOverlay: !1,
@@ -4557,9 +4560,9 @@
 						isProfilePostListing: y,
 						layout: K,
 						permalink: be.permalink,
-						sendEvent: we,
+						sendEvent: Ie,
 						showEditPost: Pe,
-						showEditFlair: ye,
+						showEditFlair: Se,
 						dropdownId: `${be.id}-overflow-menu`,
 						useFlatlistBreakpoints: Object(J.b)({
 							share: !1,
@@ -4569,7 +4572,14 @@
 							hide: !1,
 							report: !1
 						})
-					}), !ve && Ie(be, n, _, !0))), be.isSponsored && Qe && Qe.url && a.a.createElement(S.a, {
+					}), !ve && a.a.createElement(ke, {
+						crosspost: n,
+						isCommentsPage: E,
+						isCompact: !0,
+						isExpanded: _,
+						post: be,
+						useMediaIcons: !0
+					}))), be.isSponsored && Qe && Qe.url && a.a.createElement(S.a, {
 						className: _e.a.adLinkWrapper
 					}, a.a.createElement(O.a, {
 						post: be,
@@ -4584,7 +4594,7 @@
 						post: be,
 						scrollerItemRef: Ce,
 						flairStyleTemplate: i,
-						shouldShowGalleryTileOption: Ne,
+						shouldShowGalleryTileOption: Te,
 						isGalleryTileLayoutDefault: C
 					}), e === Re && a.a.createElement(z.a, {
 						flairs: be.flair,
@@ -4614,21 +4624,14 @@
 					showCentered: !0,
 					showFull: !0
 				}),
-				Ie = (e, t, s, n) => a.a.createElement(ke, {
-					crosspost: t,
-					isCompact: n,
-					isExpanded: s,
-					post: e,
-					useMediaIcons: !0
-				}),
-				Ne = e => a.a.createElement(r.a, {
+				Ie = e => a.a.createElement(r.a, {
 					"data-click-id": "subreddit",
 					to: e.url
 				}, a.a.createElement(se.b, {
 					className: _e.a.subredditIcon,
 					subredditOrProfile: e
 				})),
-				Te = (e, t) => a.a.createElement("div", {
+				Ne = (e, t) => a.a.createElement("div", {
 					className: _e.a.responsiveMeta
 				}, a.a.createElement(de.b, {
 					isScoreHidden: e.scoreHidden,
@@ -5032,15 +5035,16 @@
 				u = s("./src/reddit/helpers/postHasSelfText/index.ts"),
 				p = s("./src/reddit/icons/fonts/index.tsx"),
 				b = s("./src/reddit/models/Media/index.ts"),
-				h = s("./src/reddit/components/ExpandoButton/index.m.less"),
-				g = s.n(h);
-			const f = Object(r.b)(null, (e, t) => ({
+				h = s("./src/telemetry/models/Outbound.ts"),
+				g = s("./src/reddit/components/ExpandoButton/index.m.less"),
+				f = s.n(g);
+			const x = Object(r.b)(null, (e, t) => ({
 					toggle: () => e(Object(c.x)({
 						postId: t.post.id
 					}))
 				})),
-				x = (e, t = !1, s) => {
-					const n = Object(d.a)(g.a.icon, g.a.hideOnHover);
+				E = (e, t = !1, s) => {
+					const n = Object(d.a)(f.a.icon, f.a.hideOnHover);
 					if (t) return o.a.createElement(p.a, {
 						name: "crosspost",
 						className: n
@@ -5084,59 +5088,61 @@
 							})
 					}
 				};
-			t.a = f(e => {
+			t.a = x(e => {
 				const {
 					className: t,
 					crosspost: s,
 					enableCrosspostIcon: a,
-					isExpanded: r,
-					post: c,
-					toggle: b,
-					useMediaIcons: h
-				} = e, f = s || c, E = a && !!s;
-				return f.media && !(("rtjson" === f.media.type || "text" === f.media.type) && !Object(u.a)(f)) || !!c.pollData ? o.a.createElement("button", {
-					"aria-expanded": r,
+					isCommentsPage: r,
+					isExpanded: c,
+					post: b,
+					toggle: g,
+					useMediaIcons: x
+				} = e, v = s || b, _ = a && !!s;
+				return v.media && !(("rtjson" === v.media.type || "text" === v.media.type) && !Object(u.a)(v)) || !!b.pollData ? o.a.createElement("button", {
+					"aria-expanded": !!c,
 					"aria-haspopup": !0,
 					"aria-label": n.fbt._("Expand content", null, {
 						hk: "1e35IG"
 					}),
-					className: Object(d.a)(t, g.a.outer),
-					"data-click-id": r ? "expando_close" : "expando_open",
-					onClick: b
-				}, r ? o.a.createElement(p.a, {
+					className: Object(d.a)(t, f.a.outer),
+					"data-click-id": c ? "expando_close" : "expando_open",
+					onClick: g
+				}, c ? o.a.createElement(p.a, {
 					name: "collapse",
-					className: g.a.icon
-				}) : h ? o.a.createElement(o.a.Fragment, null, x(f.media && f.media.type, E, c), o.a.createElement(p.a, {
+					className: f.a.icon
+				}) : x ? o.a.createElement(o.a.Fragment, null, E(v.media && v.media.type, _, b), o.a.createElement(p.a, {
 					name: "expand",
-					className: Object(d.a)(g.a.icon, g.a.showOnHover)
+					className: Object(d.a)(f.a.icon, f.a.showOnHover)
 				})) : o.a.createElement(p.a, {
 					name: "expand",
-					className: g.a.icon
-				})) : f.source && f.source.url ? o.a.createElement(m.b, {
+					className: f.a.icon
+				})) : v.source && v.source.url ? o.a.createElement(m.b, {
 					"aria-label": n.fbt._("Open external content", null, {
 						hk: "2FfpSI"
 					}),
-					className: Object(d.a)(t, g.a.outer),
+					className: Object(d.a)(t, f.a.outer),
 					"data-click-id": "expando_open",
-					href: f.source.url,
-					isSponsored: c.isSponsored,
-					postId: c.id,
-					source: c.source,
+					href: v.source.url,
+					isSponsored: b.isSponsored,
+					postId: b.id,
+					source: b.source,
+					sourceElement: r ? h.SourceElement.PostImage : h.SourceElement.ListingPostImage,
 					target: "_blank"
 				}, o.a.createElement(p.a, {
 					name: "external_link",
-					className: Object(d.a)(g.a.icon, g.a.outboundLinkIcon)
+					className: Object(d.a)(f.a.icon, f.a.outboundLinkIcon)
 				})) : o.a.createElement(i.a, {
 					"aria-label": n.fbt._("View content", null, {
 						hk: "24KLWF"
 					}),
-					className: Object(d.a)(t, g.a.outer),
+					className: Object(d.a)(t, f.a.outer),
 					"data-click-id": "expando_open",
-					to: Object(l.a)(f.permalink),
+					to: Object(l.a)(v.permalink),
 					rel: "nofollow"
 				}, o.a.createElement(p.a, {
 					name: "text_post",
-					className: g.a.icon
+					className: f.a.icon
 				}))
 			})
 		},
@@ -19898,4 +19904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.30b22ce95a6e5d6f2013.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.786127bc5560518c6559.js.map

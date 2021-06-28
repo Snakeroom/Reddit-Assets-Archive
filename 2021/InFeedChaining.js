@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.3d1fda8d8f1f77ed5349.js
-// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.9437510e0f03562b7f71.js
+// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3028,32 +3028,38 @@
 				a = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				c = s("./src/lib/lessComponent.tsx"),
 				l = s("./src/reddit/actions/urlRequested.ts"),
-				d = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				u = s("./src/reddit/components/RawHTMLDisplay/index.m.less"),
-				m = s.n(u);
-			const p = Object(o.b)(null, e => ({
+				d = s("./src/reddit/hooks/useOutboundClickTracking.ts"),
+				u = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				m = s("./src/reddit/components/RawHTMLDisplay/index.m.less"),
+				p = s.n(m);
+			const h = Object(o.b)(null, e => ({
 					onNavigate: t => e(Object(l.a)(t))
 				})),
-				h = c.a.wrapped(e => i.a.createElement("div", {
-					className: e.className,
-					dangerouslySetInnerHTML: {
-						__html: e.html
-					},
-					onClick: t => {
-						((e, t, s) => {
-							if (!e.ctrlKey && !e.metaKey && 1 !== e.button && "A" === e.target.tagName) {
-								e.preventDefault(), t(e.target.getAttribute("href"))
-							}
-							e.target.classList && e.target.classList.contains("md-spoiler-text") && (e.target.dataset.revealed = !0), s && s(e)
-						})(t, e.onNavigate, e.onClick)
-					},
-					style: {
-						...e.style,
-						"--RawHTMLDisplay-tr-even": Object(n.g)(Object(d.a)(e).body, .8),
-						"--RawHTMLDisplay-tr-odd": Object(n.g)(Object(d.a)(e).line, .8)
-					}
-				}), "StyledRawHTMLDisplay", m.a);
-			t.a = p(Object(a.a)(h))
+				b = c.a.wrapped(e => {
+					const t = Object(d.a)();
+					return i.a.createElement("div", {
+						className: e.className,
+						dangerouslySetInnerHTML: {
+							__html: e.html
+						},
+						onClick: s => {
+							((e, t, s, n, r) => {
+								if (!e.ctrlKey && !e.metaKey && 1 !== e.button && "A" === e.target.tagName) {
+									e.preventDefault();
+									const s = e.target.getAttribute("href");
+									r && n(s, r), t(s)
+								}
+								e.target.classList && e.target.classList.contains("md-spoiler-text") && (e.target.dataset.revealed = !0), s && s(e)
+							})(s, e.onNavigate, e.onClick, t, e.sourceElement)
+						},
+						style: {
+							...e.style,
+							"--RawHTMLDisplay-tr-even": Object(n.g)(Object(u.a)(e).body, .8),
+							"--RawHTMLDisplay-tr-odd": Object(n.g)(Object(u.a)(e).line, .8)
+						}
+					})
+				}, "StyledRawHTMLDisplay", p.a);
+			t.a = h(Object(a.a)(b))
 		},
 		"./src/reddit/components/RichTextJson/Emote/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3220,53 +3226,53 @@
 		"./src/reddit/components/RichTextJson/elements.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "x", (function() {
-				return u
+				return d
 			})), s.d(t, "e", (function() {
-				return m
+				return u
 			})), s.d(t, "h", (function() {
-				return p
+				return m
 			})), s.d(t, "k", (function() {
-				return h
+				return p
 			})), s.d(t, "c", (function() {
-				return b
+				return h
 			})), s.d(t, "j", (function() {
-				return f
+				return b
 			})), s.d(t, "g", (function() {
-				return v
+				return f
 			})), s.d(t, "v", (function() {
-				return y
+				return v
 			})), s.d(t, "i", (function() {
-				return x
+				return y
 			})), s.d(t, "b", (function() {
-				return g
+				return x
 			})), s.d(t, "f", (function() {
-				return _
+				return g
 			})), s.d(t, "u", (function() {
-				return w
+				return _
 			})), s.d(t, "d", (function() {
-				return C
+				return w
 			})), s.d(t, "l", (function() {
-				return j
+				return C
 			})), s.d(t, "m", (function() {
-				return O
+				return j
 			})), s.d(t, "n", (function() {
-				return E
+				return O
 			})), s.d(t, "t", (function() {
-				return S
+				return E
 			})), s.d(t, "p", (function() {
-				return P
+				return S
 			})), s.d(t, "o", (function() {
-				return I
+				return P
 			})), s.d(t, "q", (function() {
-				return k
+				return I
 			})), s.d(t, "s", (function() {
-				return N
+				return k
 			})), s.d(t, "r", (function() {
-				return T
+				return N
 			})), s.d(t, "a", (function() {
-				return L
+				return T
 			})), s.d(t, "w", (function() {
-				return M
+				return L
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -3275,43 +3281,30 @@
 				a = s.n(o),
 				c = s("./src/lib/lessComponent.tsx"),
 				l = s("./src/reddit/components/Governance/VaultActionLink/async.ts");
-
-			function d() {
-				return (d = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const u = [c.a.div("H1", a.a), c.a.div("H2", a.a), c.a.div("H3", a.a), c.a.div("H4", a.a), c.a.div("H5", a.a), c.a.div("H6", a.a)],
-				m = c.a.hr("Hr", a.a),
-				p = c.a.code("M", a.a),
-				h = c.a.pre("Pre", a.a),
-				b = c.a.blockquote("Blockquote", a.a),
-				f = c.a.p("P", a.a),
-				v = c.a.li("Li", a.a),
-				y = c.a.ul("Ul", a.a),
-				x = c.a.ol("Ol", a.a),
-				g = c.a.strong("B", a.a),
-				_ = c.a.em("I", a.a),
-				w = c.a.span("U", a.a),
-				C = e => r.a.createElement("del", e),
-				j = c.a.sub("Sub", a.a),
-				O = c.a.sup("Sup", a.a),
-				E = c.a.table("Table", a.a),
-				S = c.a.tr("Tr", a.a),
-				P = c.a.td("Tdl", a.a),
-				I = c.a.td("Tdc", a.a),
-				k = c.a.td("Tdr", a.a),
-				N = c.a.th("Thl", a.a),
-				T = c.a.th("Thc", a.a),
-				L = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(i.b, d({}, e, {
-					isSponsored: !1,
-					source: null
-				})), "A", a.a)),
-				M = c.a.wrapped(l.a, "A", a.a)
+			const d = [c.a.div("H1", a.a), c.a.div("H2", a.a), c.a.div("H3", a.a), c.a.div("H4", a.a), c.a.div("H5", a.a), c.a.div("H6", a.a)],
+				u = c.a.hr("Hr", a.a),
+				m = c.a.code("M", a.a),
+				p = c.a.pre("Pre", a.a),
+				h = c.a.blockquote("Blockquote", a.a),
+				b = c.a.p("P", a.a),
+				f = c.a.li("Li", a.a),
+				v = c.a.ul("Ul", a.a),
+				y = c.a.ol("Ol", a.a),
+				x = c.a.strong("B", a.a),
+				g = c.a.em("I", a.a),
+				_ = c.a.span("U", a.a),
+				w = e => r.a.createElement("del", e),
+				C = c.a.sub("Sub", a.a),
+				j = c.a.sup("Sup", a.a),
+				O = c.a.table("Table", a.a),
+				E = c.a.tr("Tr", a.a),
+				S = c.a.td("Tdl", a.a),
+				P = c.a.td("Tdc", a.a),
+				I = c.a.td("Tdr", a.a),
+				k = c.a.th("Thl", a.a),
+				N = c.a.th("Thc", a.a),
+				T = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
+				L = c.a.wrapped(l.a, "A", a.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4040,9 +4033,9 @@
 		"./src/reddit/components/SubredditMention/SubredditIcon/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return u
+				return d
 			})), s.d(t, "a", (function() {
-				return m
+				return u
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -4051,21 +4044,8 @@
 				a = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				c = s("./src/reddit/components/SubredditMention/SubredditIcon/index.m.less"),
 				l = s.n(c);
-
-			function d() {
-				return (d = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const u = i.a.wrapped(o.b, "SubredditIcon", l.a),
-				m = i.a.wrapped(e => r.a.createElement(a.b, d({}, e, {
-					isSponsored: !1,
-					source: null
-				})), "S", l.a)
+			const d = i.a.wrapped(o.b, "SubredditIcon", l.a),
+				u = i.a.wrapped(e => r.a.createElement(a.b, e), "S", l.a)
 		},
 		"./src/reddit/components/SubredditMention/SubredditIconsWeighting/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4928,4 +4908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.3d1fda8d8f1f77ed5349.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.9437510e0f03562b7f71.js.map
