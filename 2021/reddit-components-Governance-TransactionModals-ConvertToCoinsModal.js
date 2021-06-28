@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f3a164e16540d2a2fe3e.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.9fc41c4e6e9437591eae.js
+// Retrieved at 6/28/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -3212,7 +3212,7 @@
 			e.exports = JSON.parse('{"id":"a20cc8dd230d"}')
 		},
 		"./src/redditGQL/operations/PremiumProductOfferSubscriptions.json": function(e) {
-			e.exports = JSON.parse('{"id":"93a82be72b63"}')
+			e.exports = JSON.parse('{"id":"d0a53057e3e8"}')
 		},
 		"./src/redditGQL/operations/ProductOffers.json": function(e) {
 			e.exports = JSON.parse('{"id":"ddb1f9f5717c"}')
@@ -3225,4 +3225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f3a164e16540d2a2fe3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.9fc41c4e6e9437591eae.js.map

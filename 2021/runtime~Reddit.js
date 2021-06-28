@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.36cb73c099d636b7140e.js
-// Retrieved at 6/28/2021, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.122baf9a8a17969ffcdb.js
+// Retrieved at 6/28/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1232,7 +1232,7 @@
 						NotificationsPrePromptLoader: "b1df6fb919c422d6fb73",
 						PostFlowUpsellModal: "07aa1033436b4f6e41aa",
 						PowerupSuccessModal: "29cb4e8b11b9c30489da",
-						Premium: "5906a80883f3d2b37f1e",
+						Premium: "c8961ee082d7ad0fb5f5",
 						ProfileModeration: "0dbde9115f47b903fefb",
 						PushNotifications: "b4c8a45e15e495e7beb5",
 						Report: "c57bdfe5faf27fdefecd",
@@ -1257,7 +1257,7 @@
 						"translations/es_MX-json": "9e305302856ef603b5bb",
 						"translations/fr_FR-json": "7c6c7da2a30b9b0ea548",
 						"translations/it_IT-json": "3be85715334df418b8ea",
-						"translations/pseudo_ext-json": "3c13eb7440d0d5f02d61",
+						"translations/pseudo_ext-json": "113227d2cc0bf33c55b6",
 						"translations/pseudo_long-json": "28e11e26eb73724e074b",
 						"translations/pseudo_short-json": "cd3709ef2edf4dea863d",
 						"translations/pt_BR-json": "607954f13ba4e9211d72",
@@ -1279,7 +1279,7 @@
 						"vendors~PostCreation": "2ad8c10f7269236ef48f",
 						PostCreation: "145e5f968613481e7b9f",
 						"vendors~ModStatsChart~Settings": "4756d25d069e14bb198b",
-						Settings: "3701f8d549f8bf54b07e",
+						Settings: "1952892ca0a372df2acb",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
 						"ModerationPages~SubredditWiki": "f08133356626fc891b64",
 						ModerationPages: "786127bc5560518c6559",
@@ -1287,7 +1287,7 @@
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0": "8aefaddaa09130b12fda",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "f94652fed04b2ea91ca8",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "8ad6733d3d1c62d9e990",
-						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "f3a164e16540d2a2fe3e",
+						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "9fc41c4e6e9437591eae",
 						"vendors~ExportTheme~ImportTheme": "244a7587332fd38fc7bc",
 						ExportTheme: "22be1ab3948c3464e2ac",
 						ImportTheme: "099317721ef0b4bccdaf",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.36cb73c099d636b7140e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.122baf9a8a17969ffcdb.js.map
