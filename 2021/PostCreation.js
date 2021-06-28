@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.145e5f968613481e7b9f.js
-// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3807032dbe898c9f9da7.js
+// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -4580,9 +4580,7 @@
 						}) : o.fbt._("You have a comment in progress, are you sure you want to discard it?", null, {
 							hk: "rgscd"
 						});
-						return window.confirm(e) ? void 0 : o.fbt._("Are you sure you want to leave?", null, {
-							hk: "1Ua5kc"
-						})
+						return !!window.confirm(e) && void 0
 					}))
 				}
 				render() {
@@ -24923,11 +24921,11 @@
 					} = u || {}, {
 						allOriginalContent: T = !1,
 						eventPostsEnabled: w = !1
-					} = a || {}, I = i.isProfile || Object(En.g)(a), P = l || !I || T || x === m.Rb.CROSSPOST, R = l, M = l || !!y;
+					} = a || {}, I = i.isProfile || Object(En.g)(a), P = l || !I || T || x === m.Rb.CROSSPOST, R = l || !Object(En.i)(a), M = l, N = l || !!y;
 					return r.a.createElement("div", {
 						className: o
 					}, r.a.createElement(Tn, null, p && r.a.createElement(In, {
-						disabled: R,
+						disabled: M,
 						onClick: this.handleChatPostClick,
 						toggled: h,
 						addModifierTooltip: d.fbt._("Use live chat instead of comments", null, {
@@ -24941,7 +24939,7 @@
 							hk: "cZlvm"
 						})
 					}), n && w && r.a.createElement(Nn, {
-						disabled: M,
+						disabled: N,
 						id: Ut.a,
 						onClick: this.handleToggleSchedulePicker,
 						shiftTooltipToRight: !0,
@@ -24977,14 +24975,14 @@
 							hk: "2oj9GI"
 						}),
 						disabledTooltip: I ? "" : d.fbt._("This community does not allow original content tag", null, {
-							hk: "gBN3o"
+							hk: "2ydrVm"
 						}),
 						Icon: Object($e.b)(E ? "checkmark" : "add"),
 						text: d.fbt._("OC", null, {
 							hk: "2GRpRs"
 						})
 					}), r.a.createElement(Pn, {
-						disabled: l,
+						disabled: R,
 						onClick: this.handleSpoilerClick,
 						toggled: g,
 						addModifierTooltip: d.fbt._("Mark as a spoiler", null, {
@@ -24993,9 +24991,12 @@
 						removeModifierTooltip: d.fbt._("Unmark as a spoiler", null, {
 							hk: "34pmqg"
 						}),
+						disabledTooltip: R ? d.fbt._("This community does not allow spoiler tag", null, {
+							hk: "H75tq"
+						}) : "",
 						Icon: Object($e.b)(g ? "checkmark" : "add"),
 						text: d.fbt._("Spoiler", null, {
-							hk: "1K7ROJ"
+							hk: "4CA9TG"
 						})
 					}), r.a.createElement(Rn, {
 						disabled: l,
@@ -30225,4 +30226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.145e5f968613481e7b9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3807032dbe898c9f9da7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.79530af99a6f02a7a605.js
-// Retrieved at 6/28/2021, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2fb324af032f00c654b1.js
+// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2473,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("137967"),
+				buildNumber: r("137978"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1624910947"),
+				})("1624914927"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4962,14 +4962,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c447d7521409f31f5951f8bf0a2f7e6b92a45c436-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c0e25f785b844805e81f547ace7db641e149ee170-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "447d7521409f31f5951f8bf0a2f7e6b92a45c436-production",
+						release: "0e25f785b844805e81f547ace7db641e149ee170-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5463,7 +5463,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "447d7521409f31f5951f8bf0a2f7e6b92a45c436-production",
+						releaseClient: "0e25f785b844805e81f547ace7db641e149ee170-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -20549,13 +20549,13 @@
 						metrics: p
 					}), {
 						...s,
-						ok: !!d.data.subredditInfoByName && !Object(f.i)(d.data.subredditInfoByName),
+						ok: !!d.data.subredditInfoByName && !Object(f.j)(d.data.subredditInfoByName),
 						status: E(d.data),
 						body: u
 					}
 				}, E = e => {
 					if (!e.subredditInfoByName) return 404;
-					if (Object(f.i)(e.subredditInfoByName)) {
+					if (Object(f.j)(e.subredditInfoByName)) {
 						if (e.subredditInfoByName.forbiddenReason === f.c.Banned) return 404;
 						if (e.subredditInfoByName.forbiddenReason === f.c.GoldOnly || e.subredditInfoByName.forbiddenReason === f.c.Private || e.subredditInfoByName.forbiddenReason === f.c.Quarantined) return 403
 					}
@@ -24605,7 +24605,7 @@
 						account: i && Object(g.a)(i) || null
 					}
 				};
-				if (Object(a.i)(c)) {
+				if (Object(a.j)(c)) {
 					const {
 						banMessage: e,
 						publicDescriptionText: t,
@@ -31066,9 +31066,9 @@
 				return r
 			})), i.d(t, "c", (function() {
 				return s
-			})), i.d(t, "i", (function() {
-				return d
 			})), i.d(t, "j", (function() {
+				return d
+			})), i.d(t, "k", (function() {
 				return a
 			})), i.d(t, "h", (function() {
 				return l
@@ -31076,8 +31076,10 @@
 				return c
 			})), i.d(t, "a", (function() {
 				return u
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "i", (function() {
 				return p
+			})), i.d(t, "g", (function() {
+				return m
 			})), i.d(t, "b", (function() {
 				return _
 			}));
@@ -31097,6 +31099,11 @@
 			var c, u, _;
 
 			function p(e) {
+				var t;
+				return !!(null === (t = null == e ? void 0 : e.allowedPostTypes) || void 0 === t ? void 0 : t.spoilers)
+			}
+
+			function m(e) {
 				return !!e && (e.originalContentTagEnabled || !!e.contentCategory)
 			}! function(e) {
 				e.Multi = "MULTI_SELECT", e.SingleNoSubmit = "SINGLE_SELECT_NO_SUBMIT_BUTTON", e.SingleWithSubmit = "SINGLE_SELECT_WITH_SUBMIT_BUTTON"
@@ -38766,7 +38773,12 @@
 				ee = e => e.creations.postEditing.draft.rte,
 				te = e => e.creations.formData.isChatPost,
 				ie = e => e.creations.formData.isNSFW,
-				ne = e => e.creations.formData.isSpoiler,
+				ne = e => {
+					const {
+						isSpoiler: t
+					} = e.creations.formData, i = H(e);
+					return !(i && !Object(w.i)(i)) && t
+				},
 				re = e => {
 					const {
 						isOC: t
@@ -47404,4 +47416,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.79530af99a6f02a7a605.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2fb324af032f00c654b1.js.map

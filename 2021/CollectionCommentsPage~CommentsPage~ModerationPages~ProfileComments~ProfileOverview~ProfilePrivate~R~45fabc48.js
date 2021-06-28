@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.8fd34ed4f6d7e35de062.js
-// Retrieved at 6/23/2021, 2:50:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f176e34fdd69a26fcaa9.js
+// Retrieved at 6/28/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -3069,8 +3069,8 @@
 						toggleAddEventStartTimeModal: m,
 						toggleEditStartTimeModal: b,
 						userIsOp: h
-					} = e, f = e.currentUser && e.currentUser.isEmployee, x = Object(B.a)(e.post), v = e.post.belongsTo.type === j.a.PROFILE || Object(U.g)(e.subredditAboutInfo), C = t && c.isGildable, O = Object(W.a)(e.post);
-					return i.a.createElement("div", null, C && i.a.createElement(ce, {
+					} = e, f = e.currentUser && e.currentUser.isEmployee, x = Object(B.a)(e.post), v = e.post.belongsTo.type === j.a.PROFILE || Object(U.g)(e.subredditAboutInfo), C = Object(U.i)(e.subredditAboutInfo), O = t && c.isGildable, _ = Object(W.a)(e.post);
+					return i.a.createElement("div", null, O && i.a.createElement(ce, {
 						className: this.getBreakpointClass(F.a.Gild),
 						displayText: s.fbt._("Give Award", null, {
 							hk: "3mYeGJ"
@@ -3184,7 +3184,7 @@
 					}, i.a.createElement(y.a, {
 						name: "scheduled",
 						className: ae.a.Icon
-					})), d && !O && m && i.a.createElement(ce, {
+					})), d && !_ && m && i.a.createElement(ce, {
 						displayText: s.fbt._("Add event start time", null, {
 							hk: "1XXqzu"
 						}),
@@ -3226,7 +3226,7 @@
 						}),
 						onClick: this.toggleOC,
 						isSelected: this.props.post.isOriginalContent
-					}), h && i.a.createElement(de, {
+					}), h && C && i.a.createElement(de, {
 						text: s.fbt._("Mark as Spoiler", null, {
 							hk: "3PJk7A"
 						}),
@@ -4764,4 +4764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.8fd34ed4f6d7e35de062.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f176e34fdd69a26fcaa9.js.map
