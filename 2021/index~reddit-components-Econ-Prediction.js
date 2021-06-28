@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.33a9f45aa9b2b5d1d774.js
-// Retrieved at 6/23/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.77ddfaccbc41a87eef78.js
+// Retrieved at 6/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -702,9 +702,9 @@
 			})), n.d(t, "i", (function() {
 				return G
 			})), n.d(t, "d", (function() {
-				return M
-			})), n.d(t, "e", (function() {
 				return R
+			})), n.d(t, "e", (function() {
+				return M
 			})), n.d(t, "l", (function() {
 				return U
 			}));
@@ -937,7 +937,7 @@
 						subredditId: t,
 						tournament: a.tournament
 					})), a.tournament
-				}, M = e => async (t, n, {
+				}, R = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(i.e)(o(), {
@@ -949,7 +949,7 @@
 					} = r.body.data;
 					if (!s.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return s.predictionChipPackages
-				}, R = e => async (t, n, {
+				}, M = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = await Object(i.g)(o(), {
@@ -1353,7 +1353,6 @@
 				smallSpacer: "_2AnpY9wZq41t4cOOg6nl7Z",
 				modal: "gK-Bq6LND2mHlVmm0OyOF",
 				closeButton: "_148SgYhRwbe3yqgXCkao-3",
-				closeIcon: "_2Wfc_WdfJFIr_vf3eEXpZZ",
 				image: "_2-6PRuDsvE0VmeUxPiN4VO",
 				imageWrapper: "_2W3osjGBUyX9KFl62fi7rk",
 				star1: "_2UfVJXiEmwm5iuqWtStET_",
@@ -1614,8 +1613,8 @@
 					hk: "2fEaS6"
 				})) : null)
 			}
-			var M = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
-				R = n.n(M),
+			var R = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.m.less"),
+				M = n.n(R),
 				U = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				F = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				H = n("./src/reddit/helpers/getSubredditOrProfileIconData/index.tsx"),
@@ -1730,7 +1729,7 @@
 				tournamentId: v,
 				userCoins: I
 			}) => {
-				const [k, N] = Object(o.useState)(0), [x, y] = Object(o.useState)(null), [C, w] = Object(o.useState)(null), [P, S] = Object(o.useState)(null), [T, L] = Object(o.useState)(!1), [B, D] = Object(o.useState)(!1), [M, U] = Object(o.useState)(!1), F = Object(h.a)(), H = null == x ? void 0 : x[k], z = null == C ? void 0 : C[k], V = v ? C && k === C.length - 1 : x && k === x.length - 1, W = !!x || "COINS" === (null == z ? void 0 : z.currency), q = W && I < ((null == H ? void 0 : H.coins) || (null == z ? void 0 : z.amount) || 0), Q = !!z && null !== P && P < z.amount, K = null == H ? void 0 : H.coins, X = null == z ? void 0 : z.amount, Z = q || Q, ee = Z || V, te = Object(o.useCallback)(async () => {
+				const [k, N] = Object(o.useState)(0), [x, y] = Object(o.useState)(null), [C, w] = Object(o.useState)(null), [P, S] = Object(o.useState)(null), [T, L] = Object(o.useState)(!1), [B, D] = Object(o.useState)(!1), [R, U] = Object(o.useState)(!1), F = Object(h.a)(), H = null == x ? void 0 : x[k], z = null == C ? void 0 : C[k], V = v ? C && k === C.length - 1 : x && k === x.length - 1, W = !!x || "COINS" === (null == z ? void 0 : z.currency), q = W && I < ((null == H ? void 0 : H.coins) || (null == z ? void 0 : z.amount) || 0), Q = !!z && null !== P && P < z.amount, K = null == H ? void 0 : H.coins, X = null == z ? void 0 : z.amount, Z = q || Q, ee = Z || V, te = Object(o.useCallback)(async () => {
 					try {
 						const t = await e(g);
 						w(t)
@@ -1796,67 +1795,67 @@
 							selectedNumberTokens: X
 						})), c()
 					}, [c, g, K, X, F]);
-				return v && !B ? null : M ? r.a.createElement(J, {
+				return v && !B ? null : R ? r.a.createElement(J, {
 					onCancel: oe,
 					onSubmit: ne,
 					pollId: g,
 					subredditId: j
 				}) : r.a.createElement("div", {
-					className: R.a.modalWrapper
+					className: M.a.modalWrapper
 				}, r.a.createElement(A, {
 					onCancel: oe,
 					selectedChipPack: z,
 					selectedCoinPack: H
 				}), r.a.createElement("div", {
-					className: R.a.modalContent
+					className: M.a.modalContent
 				}, a && r.a.createElement(G, {
 					chipPack: null == C ? void 0 : C[0],
 					isCoinsPrediction: W,
 					option: l,
 					tokenBalance: P
 				}), r.a.createElement("div", {
-					className: R.a.wagerSelectorContainer
+					className: M.a.wagerSelectorContainer
 				}, r.a.createElement("div", {
-					className: R.a.wagerSelector
+					className: M.a.wagerSelector
 				}, r.a.createElement("button", {
 					"aria-label": $._("Decrease amount", null, {
 						hk: "3CJknV"
 					}),
 					disabled: 0 === k,
-					className: R.a.wagerSelectorButton,
+					className: M.a.wagerSelectorButton,
 					onClick: e => {
 						e.preventDefault(), (x || C) && 0 !== k && N(k - 1)
 					}
 				}, r.a.createElement(f.a, {
-					className: R.a.wagerSelectorButtonIcon
+					className: M.a.wagerSelectorButtonIcon
 				})), H ? r.a.createElement("div", {
-					className: R.a.wagerSelectorAmount
+					className: M.a.wagerSelectorAmount
 				}, r.a.createElement(p.a, {
-					className: R.a.coinIcon
+					className: M.a.coinIcon
 				}), " ", H.coins ? H.coins : $._("Free", null, {
 					hk: "2EqRoV"
 				})) : z ? r.a.createElement("div", {
-					className: R.a.wagerSelectorAmount
+					className: M.a.wagerSelectorAmount
 				}, z.amount > 0 ? r.a.createElement(r.a.Fragment, null, r.a.createElement(u.a, {
-					className: R.a.tokenIcon
+					className: M.a.tokenIcon
 				}), " ", z.amount) : $._("Free", null, {
 					hk: "1fDvBk"
 				})) : r.a.createElement(m.a, {
-					className: R.a.loadingIcon,
+					className: M.a.loadingIcon,
 					sizePx: 24
 				}), r.a.createElement("button", {
 					"aria-label": $._("Increase", null, {
 						hk: "3OfAwL"
 					}),
 					disabled: !(!x && !C || !V),
-					className: R.a.wagerSelectorButton,
+					className: M.a.wagerSelectorButton,
 					onClick: e => {
 						e.preventDefault(), (x || C) && (V || N(k + 1))
 					}
 				}, r.a.createElement(b.a, {
-					className: R.a.wagerSelectorButtonIcon
+					className: M.a.wagerSelectorButtonIcon
 				}))), ee && r.a.createElement("div", {
-					className: R.a.amountMessage
+					className: M.a.amountMessage
 				}, q && $._("Insufficient coins", null, {
 					hk: "2Mo83P"
 				}), Q && $._("Insufficient tokens", null, {
@@ -1864,9 +1863,9 @@
 				}), V && !Z && $._("Max amount", null, {
 					hk: "1BpnPd"
 				}))), r.a.createElement("button", {
-					className: Object(i.a)(R.a.predictButton, {
-						[R.a.isDisabled]: !x && !C || q,
-						[R.a.isCreatingVote]: s
+					className: Object(i.a)(M.a.predictButton, {
+						[M.a.isDisabled]: !x && !C || q,
+						[M.a.isCreatingVote]: s
 					}),
 					disabled: !x && !C || s || Q,
 					onClick: e => {
@@ -1882,7 +1881,7 @@
 				}) : $._("Let's do this!", null, {
 					hk: "342MNr"
 				})), r.a.createElement("div", {
-					className: R.a.disclaimer
+					className: M.a.disclaimer
 				}, W && r.a.createElement(r.a.Fragment, null, $._("You must be over 18 to use Predictions. {=Predictions don’t offer an opportunity to win real money or prizes.}", [$._param("=Predictions don’t offer an opportunity to win real money or prizes.", r.a.createElement("a", {
 					href: "https://www.redditinc.com/policies/previews-terms",
 					target: "_blank",
@@ -1947,7 +1946,7 @@
 				E = n("./src/config.ts"),
 				g = n("./src/higherOrderComponents/asModal/index.tsx"),
 				O = n("./src/reddit/controls/Button/index.tsx"),
-				j = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				j = n("./src/reddit/icons/fonts/index.tsx"),
 				v = n("./src/reddit/components/Econ/Prediction/HintUpsellModal/index.m.less"),
 				I = n.n(v);
 			const {
@@ -1959,7 +1958,7 @@
 					pollId: n,
 					hasSeenSneakPeek: s,
 					onReveal: a,
-					closeModal: c
+					onClose: c
 				}) => {
 					const l = e ? "continue" : "premium",
 						m = Object(u.a)();
@@ -1995,15 +1994,15 @@
 					}));
 					return r.a.createElement("div", {
 						className: I.a.modal
-					}, r.a.createElement("button", {
+					}, r.a.createElement(O.q, {
 						"aria-label": k._("Close", null, {
 							hk: "10CQyx"
 						}),
 						className: I.a.closeButton,
-						onClick: c
-					}, r.a.createElement(j.a, {
-						className: I.a.closeIcon
-					})), r.a.createElement("header", {
+						Icon: Object(j.b)("close"),
+						onClick: c,
+						priority: O.b.Plain
+					}), r.a.createElement("header", {
 						className: I.a.header
 					}, r.a.createElement("div", {
 						className: I.a.imageWrapper
@@ -2133,7 +2132,7 @@
 					pollId: f,
 					hasSeenSneakPeek: j,
 					onReveal: E,
-					closeModal: P,
+					onClose: P,
 					withOverlay: !0,
 					onOverlayClick: P
 				}))
@@ -3418,4 +3417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.33a9f45aa9b2b5d1d774.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.77ddfaccbc41a87eef78.js.map
