@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.cd7aaad9c6c0d64a36e2.js
-// Retrieved at 6/23/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.2825e3671a1befca37f5.js
+// Retrieved at 6/28/2021, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -66,30 +66,30 @@
 				O = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
 				E = n("./src/reddit/helpers/trackers/predictions.ts"),
-				v = n("./src/reddit/hooks/useTracking.ts"),
-				T = n("./src/reddit/selectors/subreddit.ts"),
-				I = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
-				j = n.n(I);
+				T = n("./src/reddit/hooks/useTracking.ts"),
+				I = n("./src/reddit/selectors/subreddit.ts"),
+				j = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
+				f = n.n(j);
 			const {
-				fbt: f
+				fbt: v
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), g = ({
 				postId: e,
 				subredditId: t,
 				isLastPrediction: n
 			}) => {
-				const o = Object(v.a)(),
-					r = Object(u.e)(e => Object(T.T)(e, {
+				const o = Object(T.a)(),
+					r = Object(u.e)(e => Object(I.T)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(x.a, {
-					className: j.a.container,
+					className: f.a.container,
 					to: `${null==r?void 0:r.url}predictions/`,
 					onClick: () => o(Object(E.f)(e))
 				}, i.a.createElement("div", {
-					className: j.a.playTournament
-				}, n ? f._("View Tournament", null, {
+					className: f.a.playTournament
+				}, n ? v._("View Tournament", null, {
 					hk: "4rKPbx"
-				}) : f._("Keep Playing", null, {
+				}) : v._("Keep Playing", null, {
 					hk: "Xa82J"
 				})))
 			};
@@ -114,7 +114,7 @@
 					r = Object(u.e)(p.d),
 					s = Object(u.e)(L.l),
 					d = Object(u.e)(L.k),
-					c = Object(v.a)(),
+					c = Object(T.a)(),
 					a = B(),
 					l = function() {
 						const e = B();
@@ -131,18 +131,18 @@
 						options: P,
 						selectedOptionId: O
 					} = e,
-					[x, T] = i.a.useState(!1),
-					[I, j] = i.a.useState(null),
-					[f, g] = i.a.useState(!1),
+					[x, I] = i.a.useState(!1),
+					[j, f] = i.a.useState(null),
+					[v, g] = i.a.useState(!1),
 					C = b < Date.now();
 				return {
 					isLoading: x,
-					isShowingVoteAnimation: f,
+					isShowingVoteAnimation: v,
 					selectedOption: P.find(({
 						id: e
-					}) => e === I),
+					}) => e === j),
 					selectOption: e => {
-						C || O || j(e.id)
+						C || O || f(e.id)
 					},
 					predict: async ({
 						coinPackage: e,
@@ -153,21 +153,21 @@
 							p = i ? i.amount : e.coins;
 						if (C) return l(S._("Error: Failed to make prediction. This prediction has already ended", null, {
 							hk: "22UWEr"
-						})), void j(null);
-						if (!m || !I) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						T(!0), c(Object(E.o)({
+						})), void f(null);
+						if (!m || !j) throw new Error("Invalid arguments, optionId and pollId must be strings");
+						I(!0), c(Object(E.o)({
 							pollId: m,
 							selectedNumberTokens: p
 						}));
 						try {
 							await o(Object(y.l)({
 								coinPackageId: u,
-								selectedOptionId: I,
+								selectedOptionId: j,
 								price: p,
 								pollId: m,
 								postId: t,
 								subredditId: n
-							})), s && o(Object(w.fb)(m)), T(!1), j(null), d ? g(!0) : a({
+							})), s && o(Object(w.fb)(m)), I(!1), f(null), d ? g(!0) : a({
 								duration: 5e3,
 								kind: _.b.SuccessCommunity,
 								text: S._("Thanks! See if you're right in {timeToResult}", [S._param("timeToResult", Object(h.a)(new Date(b), !0))], {
@@ -175,13 +175,13 @@
 								})
 							})
 						} catch (P) {
-							T(!1), j(null), l(S._("Error: Failed to make prediction, please try again later", null, {
+							I(!1), f(null), l(S._("Error: Failed to make prediction, please try again later", null, {
 								hk: "1tECsx"
 							}))
 						}
 					},
 					cancelAction: i.a.useCallback(() => {
-						j(null)
+						f(null)
 					}, []),
 					hideAnimation: i.a.useCallback(() => {
 						g(!1)
@@ -204,65 +204,61 @@
 					})),
 					[x, E] = Object(o.useState)(!1),
 					{
-						isLoading: v,
-						isShowingVoteAnimation: T,
-						selectedOption: I,
-						selectOption: j,
-						predict: f,
+						isLoading: T,
+						isShowingVoteAnimation: I,
+						selectedOption: j,
+						selectOption: f,
+						predict: v,
 						cancelAction: h
-					} = D(e, r, n),
-					_ = null == l ? void 0 : l.userSelection,
-					{
-						endsAt: k,
-						options: y,
-						title: w,
-						resolvedOptionId: L
-					} = e,
-					C = k < Date.now();
+					} = D(e, r, n);
+				if (!l) return null;
+				const {
+					options: _,
+					userSelection: k
+				} = l, {
+					endsAt: y,
+					title: w,
+					resolvedOptionId: L
+				} = e, C = y < Date.now();
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(s.a)(N.a.poll, {
 						[N.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
 					className: N.a.pollQuestion
-				}, w), y.map(e => {
-					const n = null == l ? void 0 : l.options.find(({
-						id: t
-					}) => t === e.id);
-					return i.a.createElement(P.a, {
-						key: `prediction-option-${e.id}`,
-						disabled: T,
-						isEnded: C,
-						isSelected: _ === e.id,
-						needsResolution: !1,
-						option: e,
-						onClick: () => j(e),
-						resolvedOptionId: L,
-						tournamentId: t,
-						userSelection: _,
-						userIsLoggedOut: !c,
-						votePercentage: (_ || C || x) && (null == n ? void 0 : n.voteCount) && (null == l ? void 0 : l.totalVoters) ? Math.floor(n.voteCount / l.totalVoters * 100) : null,
-						isShowingHint: x
-					})
-				}), i.a.createElement(O.a, {
-					disabled: T || x || !!_,
+				}, w), _.map(e => i.a.createElement(P.a, {
+					key: `prediction-option-${e.id}`,
+					disabled: I,
 					isEnded: C,
-					userSelection: _,
+					isSelected: k === e.id,
+					needsResolution: !1,
+					option: e,
+					onClick: () => f(e),
+					resolvedOptionId: L,
+					tournamentId: t,
+					userSelection: k,
+					userIsLoggedOut: !c,
+					votePercentage: (k || C || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					isShowingHint: x
+				})), i.a.createElement(O.a, {
+					disabled: I || x || !!k,
+					isEnded: C,
+					userSelection: k,
 					isShowingHint: x,
 					tournamentId: t,
 					onReveal: () => E(!0)
-				})), !!I && i.a.createElement(b.b, {
+				})), !!j && i.a.createElement(b.b, {
 					className: N.a.modal,
-					isCreatingVote: v,
+					isCreatingVote: T,
 					onOverlayClick: h,
 					onCancel: h,
-					onPredict: f,
-					option: I,
+					onPredict: v,
+					option: j,
 					pollId: e.id,
 					subredditId: n,
 					tournamentId: t,
 					withOverlay: !0
-				}), !!_ && i.a.createElement(g, {
+				}), !!k && i.a.createElement(g, {
 					postId: r,
 					subredditId: n,
 					isLastPrediction: d
@@ -277,7 +273,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = ({
 				postId: e
 			}) => {
-				const t = Object(v.a)(),
+				const t = Object(T.a)(),
 					n = Object(u.e)(t => Object(F.R)(t, {
 						postId: e
 					}));
@@ -320,4 +316,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.cd7aaad9c6c0d64a36e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.2825e3671a1befca37f5.js.map
