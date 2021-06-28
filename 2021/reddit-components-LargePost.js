@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.eb2fd10cea9cfe1c2b91.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.60e203200b0665ddae5e.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2343,7 +2343,7 @@
 					showAwardsPlaque: k.a,
 					isTournamentPost: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(j.p)(e)
+					}) => Boolean(t.predictionTournament) && Object(j.o)(e)
 				}), (e, {
 					listingKey: t,
 					listingName: n,
@@ -2407,7 +2407,7 @@
 						postId: Ee,
 						postIds: _e,
 						onceInViewport: Ce
-					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Se = Te ? void 0 : f, Ne = Object(l.a)(le), Ie = ue && Ne, Me = Object(c.a)(le), Ae = Object(d.a)(le), Be = Object(V.c)(ve), Le = !!ve.media && ve.media.type === g.o.RTJSON, Fe = Pe && Le, Re = n ? n - z.a : void 0, De = !(C && X || oe), We = (e => e === ae.Oc.OnlyTitles)(ge) && !Object(se.a)(ve), Ve = (e => e === ae.Oc.MediumHeight)(ge) && !Object(se.a)(ve), He = (e => {
+					} = e, Te = !!e.redditStyle || !!e["data-redditstyle"], Se = Te ? void 0 : f, Ne = Object(l.a)(le), Ie = ue && Ne, Me = Object(c.a)(le), Ae = Object(d.a)(le), Be = Object(V.c)(ve), Le = !!ve.media && ve.media.type === g.o.RTJSON, Fe = Pe && Le, Re = n ? n - z.a : void 0, De = !(C && X || oe), We = (e => e === ae.Nc.OnlyTitles)(ge) && !Object(se.a)(ve), Ve = (e => e === ae.Nc.MediumHeight)(ge) && !Object(se.a)(ve), He = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -3561,9 +3561,9 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.xb
 				});
-				return !(!t || Object(o.Od)(t))
+				return !(!t || Object(o.Nd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.eb2fd10cea9cfe1c2b91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.60e203200b0665ddae5e.js.map

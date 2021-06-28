@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.57228e5de1ef19ce398e.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.9e87265acf78e5c96e5d.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -66,8 +66,8 @@
 				O = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
 				E = n("./src/reddit/helpers/trackers/predictions.ts"),
-				T = n("./src/reddit/hooks/useTracking.ts"),
-				j = n("./src/reddit/selectors/subreddit.ts"),
+				j = n("./src/reddit/hooks/useTracking.ts"),
+				T = n("./src/reddit/selectors/subreddit.ts"),
 				v = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
 				f = n.n(v);
 			const {
@@ -77,8 +77,8 @@
 				subredditId: t,
 				isLastPrediction: n
 			}) => {
-				const o = Object(T.a)(),
-					r = Object(u.e)(e => Object(j.U)(e, {
+				const o = Object(j.a)(),
+					r = Object(u.e)(e => Object(T.U)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(x.a, {
@@ -112,9 +112,9 @@
 			function D(e, t, n) {
 				const o = Object(u.d)(),
 					r = Object(u.e)(p.d),
-					s = Object(u.e)(L.l),
-					d = Object(u.e)(L.k),
-					c = Object(T.a)(),
+					s = Object(u.e)(L.k),
+					d = Object(u.e)(L.j),
+					c = Object(j.a)(),
 					a = S(),
 					l = function() {
 						const e = S();
@@ -133,7 +133,7 @@
 					} = e,
 					{
 						id: x,
-						voteState: j
+						voteState: T
 					} = t,
 					[v, f] = i.a.useState(!1),
 					[I, g] = i.a.useState(null),
@@ -171,7 +171,7 @@
 								pollId: m,
 								postId: x,
 								subredditId: n
-							})), s && j < 1 && o(Object(w.fb)(m)), f(!1), g(null), d ? D(!0) : a({
+							})), s && T < 1 && o(Object(w.fb)(m)), f(!1), g(null), d ? D(!0) : a({
 								duration: 5e3,
 								kind: _.b.SuccessCommunity,
 								text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(h.a)(new Date(b), !0))], {
@@ -208,8 +208,8 @@
 					})),
 					[x, E] = Object(o.useState)(!1),
 					{
-						isLoading: T,
-						isShowingVoteAnimation: j,
+						isLoading: j,
+						isShowingVoteAnimation: T,
 						selectedOption: v,
 						selectOption: f,
 						predict: I,
@@ -232,7 +232,7 @@
 					className: N.a.pollQuestion
 				}, w), _.map(e => i.a.createElement(P.a, {
 					key: `prediction-option-${e.id}`,
-					disabled: j,
+					disabled: T,
 					isEnded: C,
 					isSelected: k === e.id,
 					needsResolution: !1,
@@ -245,7 +245,7 @@
 					votePercentage: (k || C || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
 					isShowingHint: x
 				})), i.a.createElement(O.a, {
-					disabled: j || x || !!k,
+					disabled: T || x || !!k,
 					isEnded: C,
 					userSelection: k,
 					isShowingHint: x,
@@ -253,7 +253,7 @@
 					onReveal: () => E(!0)
 				})), !!v && i.a.createElement(b.b, {
 					className: N.a.modal,
-					isCreatingVote: T,
+					isCreatingVote: j,
 					onOverlayClick: h,
 					onCancel: h,
 					onPredict: I,
@@ -277,7 +277,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = ({
 				postId: e
 			}) => {
-				const t = Object(T.a)(),
+				const t = Object(j.a)(),
 					n = Object(u.e)(t => Object(V.R)(t, {
 						postId: e
 					}));
@@ -320,4 +320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.57228e5de1ef19ce398e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.9e87265acf78e5c96e5d.js.map

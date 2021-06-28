@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.bed9b708a03d5f86b0d9.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.623a37b5f03a9b6fb78b.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less": function(e, t, s) {
@@ -59,7 +59,7 @@
 					E = !!(null === (t = null == b ? void 0 : b.profile) || void 0 === t ? void 0 : t.isNsfw),
 					x = Object(l.b)(b),
 					N = Object(l.a)(m),
-					v = n.a.createElement(h, {
+					_ = n.a.createElement(h, {
 						userName: f,
 						isNsfw: E,
 						iconUrl: x
@@ -72,9 +72,9 @@
 					onClick: () => {
 						b && s(Object(d.r)(b.id, b.displayName))
 					}
-				}, v) : n.a.createElement("div", {
+				}, _) : n.a.createElement("div", {
 					className: p.a.user
-				}, v), n.a.createElement("div", {
+				}, _), n.a.createElement("div", {
 					className: p.a.counter
 				}, n.a.createElement(N, {
 					className: p.a.powerupIcon
@@ -130,7 +130,7 @@
 					width: 0,
 					motionProgress: 0
 				});
-			class v extends n.a.Component {
+			class _ extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						items: E(e.supporters, e.maxSupporters)
@@ -180,7 +180,7 @@
 					}
 				}
 			}
-			t.a = n.a.memo(v)
+			t.a = n.a.memo(_)
 		},
 		"./src/reddit/components/PowerupsSidebar/SupportersListModal/SupporterListItem/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -233,8 +233,8 @@
 				E = s("./src/reddit/components/UserIcon/index.tsx"),
 				x = s("./src/reddit/controls/InternalLink/index.tsx"),
 				N = s("./src/reddit/helpers/trackers/powerups.ts"),
-				v = s("./src/reddit/hooks/useTracking.ts");
-			const _ = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
+				_ = s("./src/reddit/hooks/useTracking.ts");
+			const v = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
 					className: f.a.supporterImageContainer
 				}, a.a.createElement(E.a, {
 					userName: e.name,
@@ -255,7 +255,7 @@
 				}, e.children),
 				L = e => {
 					var t;
-					const s = Object(v.a)(),
+					const s = Object(_.a)(),
 						{
 							supporter: r,
 							currentUser: n,
@@ -286,7 +286,7 @@
 						onClick: () => {
 							l && s(Object(N.h)(l.id, l.displayName))
 						}
-					}, a.a.createElement(_, {
+					}, a.a.createElement(v, {
 						name: m,
 						iconUrl: b,
 						isNsfw: E,
@@ -324,7 +324,7 @@
 				powerups: U(k.i),
 				subreddit: U(C.U),
 				topSupporters: U(k.l),
-				userPowerupsData: k.v
+				userPowerupsData: k.u
 			});
 			t.default = Object(l.a)(Object(n.b)(I)(({
 				topSupporters: e,
@@ -338,7 +338,7 @@
 					m(null !== (t = null == e ? void 0 : e.map(F)) && void 0 !== t ? t : [])
 				}, [e, m]);
 				const p = Object(n.d)(),
-					h = Object(v.a)();
+					h = Object(_.a)();
 				Object(r.useEffect)(() => {
 					h(Object(N.d)())
 				}, [h]), Object(r.useEffect)(() => {
@@ -516,4 +516,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.bed9b708a03d5f86b0d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.623a37b5f03a9b6fb78b.js.map

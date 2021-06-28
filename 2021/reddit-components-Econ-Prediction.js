@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1e935e9b7cc979fff2a5.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e5aaf660b825827b4081.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(i, a, r) {
@@ -866,9 +866,9 @@
 			const {
 				fbt: Oi
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Ci = Object(n.c)({
-				isAutoVoteEnabled: G.l,
+				isAutoVoteEnabled: G.k,
 				isEditing: B.K,
-				isVoteAnimationEnabled: G.k,
+				isVoteAnimationEnabled: G.j,
 				prediction: A.g,
 				pollId: A.a,
 				post: D.F,
@@ -1813,7 +1813,7 @@
 						commentId: r
 					});
 					if (!!t && Object(k.a)(t)) return !0;
-					if (a && Object(h.o)(i, {
+					if (a && Object(h.n)(i, {
 							subredditId: a,
 							benefit: m.a.CommentsWithGifs
 						})) return !0;
@@ -1831,4 +1831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1e935e9b7cc979fff2a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.e5aaf660b825827b4081.js.map

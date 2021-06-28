@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.513f74090ed55e9e6614.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d5fe4758b17fc6e032aa.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -1036,9 +1036,9 @@
 							i = Object(se.M)(s(), {
 								identifier: R.belongsTo
 							});
-						if (i && (e => V.id.Redirect === Object(U.b)(e, {
+						if (i && (e => V.hd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: V.Zc
+								experimentName: V.Yc
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((R.media && R.media.type) === F.o.LIVEVIDEO) {
 							const e = `/rpan${R.belongsTo.type===I.a.SUBREDDIT?i.url:"/"}${Object(p.t)(R.id)}`;
@@ -5361,7 +5361,7 @@
 					showEditFlair: ae,
 					subredditOrProfile: xe,
 					userIsOp: _e
-				} = e, ke = Object(fe.b)(), Ee = Object(a.e)(e => Boolean(se.predictionTournament) && Object(Oe.p)(e));
+				} = e, ke = Object(fe.b)(), Ee = Object(a.e)(e => Boolean(se.predictionTournament) && Object(Oe.o)(e));
 				Object(r.useEffect)(() => {
 					N && S && B()
 				}, []);
@@ -5418,7 +5418,7 @@
 							crosspost: t,
 							isCommentPermalink: s,
 							post: o
-						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Oe.p)(e));
+						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Oe.o)(e));
 						return s ? ye.g.Classic : n ? ye.g.Large : t ? ye.g.Large : o.media && !tt(o) ? ye.g.Large : ye.g.Medium
 					})(e);
 				if (it === ye.g.Classic) {
@@ -6744,7 +6744,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(v.Od)(t) && !Object(j.a)(t),
+							shouldShowLinkedPosts: n && !Object(v.Nd)(t) && !Object(j.a)(t),
 							subreddit: o
 						}
 					}
@@ -6793,7 +6793,7 @@
 						hostPostData: r,
 						listingBelowVariant: i
 					} = e;
-					if (i && !Object(v.Od)(i) && !Object(j.a)(i) && !n) return a.a.createElement("div", {
+					if (i && !Object(v.Nd)(i) && !Object(j.a)(i) && !n) return a.a.createElement("div", {
 						className: V.a.smallBanner
 					});
 					const {
@@ -8755,7 +8755,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.xb
 				});
-				return !(!t || Object(o.Od)(t))
+				return !(!t || Object(o.Nd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -8768,8 +8768,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.ad
-			}) === o.jd.Enabled
+				experimentName: o.Zc
+			}) === o.id.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -8889,8 +8889,8 @@
 			const c = e => (e => {
 				return Object(a.c)(e, {
 					experimentEligibilitySelector: () => Object(d.J)(e),
-					experimentName: o.Xc
-				}) === o.hd.Enabled
+					experimentName: o.Wc
+				}) === o.gd.Enabled
 			})(e) && (e => {
 				const t = Object(r.d)(e);
 				return !!t && i.has(t.toLowerCase())
@@ -8917,4 +8917,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.513f74090ed55e9e6614.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d5fe4758b17fc6e032aa.js.map

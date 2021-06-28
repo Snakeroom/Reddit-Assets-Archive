@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a0398905e7b4ecb8e235.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4bb35e0cedff26479137.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.zc
+					experimentName: m.yc
 				});
-				return Object(m.Od)(t) ? void 0 : t
+				return Object(m.Nd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Ac
+					experimentName: m.zc
 				});
-				return Object(m.Od)(t) ? void 0 : t
-			}, (e, t) => e === m.Bc.Enabled && t === m.Bc.Enabled);
+				return Object(m.Nd)(t) ? void 0 : t
+			}, (e, t) => e === m.Ac.Enabled && t === m.Ac.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -1024,9 +1024,9 @@
 							r = Object(se.M)(s(), {
 								identifier: D.belongsTo
 							});
-						if (r && (e => F.id.Redirect === Object(U.b)(e, {
+						if (r && (e => F.hd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: F.Zc
+								experimentName: F.Yc
 							}))(s())) return void t(Object(a.c)(r.url));
 						if ((D.media && D.media.type) === T.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===R.a.SUBREDDIT?r.url:"/"}${Object(p.t)(D.id)}`;
@@ -7064,8 +7064,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.J)(e),
-					experimentName: a.Xc
-				}) === a.hd.Enabled
+					experimentName: a.Wc
+				}) === a.gd.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -7073,4 +7073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.a0398905e7b4ecb8e235.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.4bb35e0cedff26479137.js.map

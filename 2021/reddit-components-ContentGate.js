@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.4526df8225e096d7759b.js
-// Retrieved at 6/28/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.092baab67b8eb1c0a095.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -122,8 +122,8 @@
 				E = n.n(_);
 			const {
 				fbt: k
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = u.a.div("FooterContainer", E.a), y = u.a.div("UserAgreement", E.a), g = u.a.a("UserAgreementLink", E.a), f = u.a.a("PrivacyLink", E.a);
-			var x = () => o.a.createElement(v, null, o.a.createElement(y, null, k._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy} . ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [k._param("=User Agreement", o.a.createElement(g, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("FooterContainer", E.a), v = u.a.div("UserAgreement", E.a), g = u.a.a("UserAgreementLink", E.a), f = u.a.a("PrivacyLink", E.a);
+			var x = () => o.a.createElement(y, null, o.a.createElement(v, null, k._("Use of this site constitutes acceptance of our {=User Agreement} and {=Privacy Policy} . ©{year} reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.", [k._param("=User Agreement", o.a.createElement(g, {
 					href: `${r.a.redditUrl}/help/useragreement`
 				}, k._("User Agreement", null, {
 					hk: "2srkM2"
@@ -220,7 +220,7 @@
 					const a = 30 * N.z;
 					return r > Date.now() - a
 				})(e)
-			}), ke = Object(q.t)(), ve = Object(s.b)(Ee, (e, {
+			}), ke = Object(q.t)(), ye = Object(s.b)(Ee, (e, {
 				subredditName: t
 			}) => ({
 				continueToQuarantinedSubreddit: async () => {
@@ -229,7 +229,7 @@
 				setNSFWPreference: async () => {
 					await e(Object(m.l)())
 				}
-			})), ye = e => {
+			})), ve = e => {
 				const {
 					banMessage: t,
 					contentGateType: n,
@@ -244,12 +244,12 @@
 					quarantineMessage: _,
 					quarantineMessageHtml: E,
 					quarantineMessageRTJson: k,
-					setNSFWPreference: v,
-					subredditDescription: y,
+					setNSFWPreference: y,
+					subredditDescription: v,
 					subredditName: g,
 					user: f
 				} = e, x = async () => {
-					s ? await v() : await Object(m.k)(), window.location.reload()
+					s ? await y() : await Object(m.k)(), window.location.reload()
 				};
 				switch (n) {
 					case M.a.GoldSubreddit:
@@ -298,7 +298,7 @@
 					case M.a.PrivateSubreddit:
 						return o.a.createElement("div", null, o.a.createElement(Z, null), o.a.createElement(he, null, "r/", g, " ", K._("is a private community", null, {
 							hk: "7zZmq"
-						})), y && y.length && o.a.createElement(X, null, o.a.createElement(ee, null, "r/", g), o.a.createElement($, null, o.a.createElement("div", null, y))), o.a.createElement(Q, null, K._("The moderators of", null, {
+						})), v && v.length && o.a.createElement(X, null, o.a.createElement(ee, null, "r/", g), o.a.createElement($, null, o.a.createElement("div", null, v))), o.a.createElement(Q, null, K._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", g, " ", K._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -463,9 +463,9 @@
 						}))))
 				}
 			};
-			t.default = ke(ve(Object(i.i)(e => {
+			t.default = ke(ye(Object(i.i)(e => {
 				const t = Object(a.useContext)(l.a) ? V : J;
-				return o.a.createElement(t, null, o.a.createElement("div", null, o.a.createElement(be, null, ye(e))), o.a.createElement(x, null))
+				return o.a.createElement(t, null, o.a.createElement("div", null, o.a.createElement(be, null, ve(e))), o.a.createElement(x, null))
 			})))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, n) {
@@ -517,10 +517,10 @@
 				_ = n("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
 				E = n("./src/reddit/selectors/user.ts"),
 				k = n("./src/reddit/components/CreateCommunityButton/index.m.less"),
-				v = n.n(k),
-				y = n("./src/lib/lessComponent.tsx");
+				y = n.n(k),
+				v = n("./src/lib/lessComponent.tsx");
 			const g = "create-community-button",
-				f = y.a.wrapped(c.c, "StyledTooltip", v.a),
+				f = v.a.wrapped(c.c, "StyledTooltip", y.a),
 				x = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: _.a,
 					isInSrCreationEntrypointCopyExperiment: _.b,
@@ -551,7 +551,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || u,
-				onClick: () => n === d.vd.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
+				onClick: () => n === d.ud.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
 				onMouseEnter: s,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -587,4 +587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.4526df8225e096d7759b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.092baab67b8eb1c0a095.js.map

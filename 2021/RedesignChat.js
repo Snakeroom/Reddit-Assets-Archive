@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.ae9623f1b44e98bc4ffb.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.17ecc2b9f6d67e20e4e7.js
+// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -763,11 +763,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.mc,
+					experimentName: c.lc,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.J)(e) || Object(i.K)(e),
-				u = Object(s.a)(o, e => e === c.pc.Enabled)
+				u = Object(s.a)(o, e => e === c.oc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -794,12 +794,12 @@
 					experimentName: c.ab,
 					experimentEligibilitySelector: o
 				}), a.a),
-				u = Object(s.a)(d, e => e === c.sc.Enabled),
+				u = Object(s.a)(d, e => e === c.rc.Enabled),
 				l = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.nc,
+					experimentName: c.mc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				b = Object(s.a)(u, l, (e, t) => e && t === c.rc.Enabled),
+				b = Object(s.a)(u, l, (e, t) => e && t === c.qc.Enabled),
 				m = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.db,
 					experimentEligibilitySelector: o
@@ -809,13 +809,13 @@
 					experimentName: c.Z,
 					experimentEligibilitySelector: o
 				}), a.a),
-				x = Object(s.a)(p, e => e === c.qc.Banner_1st_time),
-				f = Object(s.a)(p, e => e === c.qc.Tooltip_persist),
-				j = Object(s.a)(p, e => e === c.qc.Tooltip_1st_time)
+				x = Object(s.a)(p, e => e === c.pc.Banner_1st_time),
+				f = Object(s.a)(p, e => e === c.pc.Tooltip_persist),
+				j = Object(s.a)(p, e => e === c.pc.Tooltip_1st_time)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.ae9623f1b44e98bc4ffb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.17ecc2b9f6d67e20e4e7.js.map
