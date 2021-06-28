@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a1a40c77902f17bbf178.js
-// Retrieved at 6/28/2021, 11:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.bfb125d16084d4759ef9.js
+// Retrieved at 6/28/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return r.push.apply(r, c || []), t()
 	}
 
@@ -845,12 +845,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					r = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = a, delete n[e], b.parentNode.removeChild(b), t(r)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = a, delete n[e], P.parentNode.removeChild(P), t(r)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1257,7 +1257,7 @@
 						"translations/es_MX-json": "bcae23ef9c8c905dff49",
 						"translations/fr_FR-json": "f549f245509e8d08af2b",
 						"translations/it_IT-json": "673f6d4428d7be1897b0",
-						"translations/pseudo_ext-json": "351e9ca982f522bc3a09",
+						"translations/pseudo_ext-json": "42998424dcc8f67e6321",
 						"translations/pseudo_long-json": "18d05c260a2b0cd67d6d",
 						"translations/pseudo_short-json": "729243e3e73504e2234c",
 						"translations/pt_BR-json": "bf6ac11486ed3e202276",
@@ -1359,7 +1359,7 @@
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "fd04a4a36f183eda2aec",
 						"reddit-components-InFeedPostCreation": "179861856ba65d80b48d",
 						"reddit-components-TabBadger-Component": "e87cd492a1a4039e19c2",
-						RpanListingUnit: "2389bbed34cf92e7378b",
+						RpanListingUnit: "331716408c7529624d91",
 						StructuredStyles: "f1237b721afb63454fec",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "fc4da4117f0a9fe2beee",
 						"reddit-pages-PaypalFinishPage": "0d48f5c6f6649f7269b8",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a1a40c77902f17bbf178.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.bfb125d16084d4759ef9.js.map

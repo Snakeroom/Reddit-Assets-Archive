@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2389bbed34cf92e7378b.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.331716408c7529624d91.js
+// Retrieved at 6/28/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -619,8 +619,7 @@
 					}, m())
 				}, [r, m, _]);
 				const j = Object(s.useRef)(!1),
-					w = Object(s.useRef)(!1),
-					N = Object(s.useCallback)(e => {
+					w = Object(s.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
@@ -631,14 +630,14 @@
 							}, l()))) : s && (j.current = !1)
 						})
 					}, []);
-				Object(i.a)(y, N);
-				const D = Object(a.a)(r);
-				Object(s.useEffect)(() => (void 0 !== D && D !== r && (T.current(r - D), j.current && !w.current && (w.current = !0, u && u())), () => {
+				Object(i.a)(y, w);
+				const N = Object(a.a)(r);
+				Object(s.useEffect)(() => (void 0 !== N && N !== r && (T.current(r - N), j.current && u && u()), () => {
 					clearTimeout(A.current), clearTimeout(R.current), clearTimeout(I.current)
 				}), [r]);
-				const L = Object(s.useCallback)(() => g(!0), [g]),
-					P = 0 === _.length,
-					k = E || P;
+				const D = Object(s.useCallback)(() => g(!0), [g]),
+					L = 0 === _.length,
+					P = E || L;
 				return n.a.createElement("div", {
 					className: d.a.countAnimation,
 					ref: y
@@ -656,14 +655,14 @@
 						"aria-hidden": !0,
 						className: d.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: L,
+						onTransitionEnd: D,
 						style: b && _.length > 0 && !E ? {
 							transform: `translateY(-${p&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(p?500:750)/1e3}s`
 						} : {
 							transform: "translateY(0)"
 						}
-					}, k ? n.a.createElement("span", {
+					}, P ? n.a.createElement("span", {
 						className: d.a.digitDelta
 					}, e) : r.map((e, t) => {
 						const s = 0 === t || t === r.length - 1;
@@ -3752,4 +3751,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2389bbed34cf92e7378b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.331716408c7529624d91.js.map

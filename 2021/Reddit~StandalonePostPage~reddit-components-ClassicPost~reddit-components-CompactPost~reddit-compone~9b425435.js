@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1addd02de54b6a462a11.js
-// Retrieved at 6/23/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.0ce67bf54669fd47aabd.js
+// Retrieved at 6/28/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -272,8 +272,7 @@
 					}, m())
 				}, [r, m, O]);
 				const S = Object(n.useRef)(!1),
-					T = Object(n.useRef)(!1),
-					A = Object(n.useCallback)(e => {
+					T = Object(n.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
@@ -284,14 +283,14 @@
 							}, l()))) : n && (S.current = !1)
 						})
 					}, []);
-				Object(o.a)(_, A);
-				const N = Object(c.a)(r);
-				Object(n.useEffect)(() => (void 0 !== N && N !== r && (I.current(r - N), S.current && !T.current && (T.current = !0, u && u())), () => {
+				Object(o.a)(_, T);
+				const A = Object(c.a)(r);
+				Object(n.useEffect)(() => (void 0 !== A && A !== r && (I.current(r - A), S.current && u && u()), () => {
 					clearTimeout(P.current), clearTimeout(E.current), clearTimeout(C.current)
 				}), [r]);
-				const F = Object(n.useCallback)(() => g(!0), [g]),
-					M = 0 === O.length,
-					R = h || M;
+				const N = Object(n.useCallback)(() => g(!0), [g]),
+					F = 0 === O.length,
+					M = h || F;
 				return s.a.createElement("div", {
 					className: d.a.countAnimation,
 					ref: _
@@ -309,14 +308,14 @@
 						"aria-hidden": !0,
 						className: d.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: F,
+						onTransitionEnd: N,
 						style: b && O.length > 0 && !h ? {
 							transform: `translateY(-${p&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(p?500:750)/1e3}s`
 						} : {
 							transform: "translateY(0)"
 						}
-					}, R ? s.a.createElement("span", {
+					}, M ? s.a.createElement("span", {
 						className: d.a.digitDelta
 					}, e) : r.map((e, t) => {
 						const n = 0 === t || t === r.length - 1;
@@ -2954,4 +2953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.1addd02de54b6a462a11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.0ce67bf54669fd47aabd.js.map
