@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.fed855a5c431867983c8.js
-// Retrieved at 6/29/2021, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.426c4f4a96c21f9d1a8d.js
+// Retrieved at 6/29/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
+		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return r.push.apply(r, c || []), t()
 	}
 
@@ -845,12 +845,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					r = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = a, delete n[e], P.parentNode.removeChild(P), t(r)
-			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
+				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = a, delete n[e], b.parentNode.removeChild(b), t(r)
+			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1232,7 +1232,7 @@
 						NotificationsPrePromptLoader: "b1df6fb919c422d6fb73",
 						PostFlowUpsellModal: "07aa1033436b4f6e41aa",
 						PowerupSuccessModal: "29cb4e8b11b9c30489da",
-						Powerups: "e738f291937836c8ec23",
+						Powerups: "207babfdd842ae9a4ebd",
 						Premium: "2f493278d9625e5f0b9a",
 						ProfileModeration: "0dbde9115f47b903fefb",
 						PushNotifications: "b4c8a45e15e495e7beb5",
@@ -1253,16 +1253,16 @@
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
 						"reddit-components-CoinPurchaseDropdown": "e23bd395f70012dd9e8c",
-						"translations/de_DE-json": "9936a1933991e1ee3ca5",
-						"translations/es_ES-json": "1d10651a59d47327e92b",
-						"translations/es_MX-json": "9970b252a21043ceab75",
-						"translations/fr_FR-json": "fe56411e13b8993a20e3",
-						"translations/it_IT-json": "de1d01ad87075621db30",
-						"translations/pseudo_ext-json": "8e34d70794cf3702581a",
-						"translations/pseudo_long-json": "dbd4456c4fabb53b4128",
-						"translations/pseudo_short-json": "87ac007337d2da852f95",
-						"translations/pt_BR-json": "bbe442d25e22deeaa306",
-						"translations/pt_PT-json": "8e9145ab2965d793c6e4",
+						"translations/de_DE-json": "295f462d830a35c652a3",
+						"translations/es_ES-json": "35c8b45099d8125f6d8d",
+						"translations/es_MX-json": "039a8b9bcb911ecbacee",
+						"translations/fr_FR-json": "caa3c318d41d885696a5",
+						"translations/it_IT-json": "9e16d99d3acf5d5cabb7",
+						"translations/pseudo_ext-json": "17a9bdb37d70b1ec7fc0",
+						"translations/pseudo_long-json": "65695388d5c77feacf2c",
+						"translations/pseudo_short-json": "d8c0d7086485529a7ba7",
+						"translations/pt_BR-json": "58db0a6f50886448f149",
+						"translations/pt_PT-json": "ce8624d679b97f4e6288",
 						"vendors~AdminPanel": "9b24840577d41d3b738d",
 						AdminPanel: "f13782a20fb36354ccd2",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.fed855a5c431867983c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.426c4f4a96c21f9d1a8d.js.map
