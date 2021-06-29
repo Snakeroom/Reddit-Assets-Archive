@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.a2000e0bb0112873f768.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.a42d0da17bb963d7501f.js
+// Retrieved at 6/29/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -547,10 +547,10 @@
 					to: "/notifications"
 				}, A.fbt._("Activity", null, {
 					hk: "24wHCv"
-				})), s.a.createElement(z, {
+				}), s.a.createElement(z, {
 					isActive: !!n,
 					unreadCount: n
-				})), s.a.createElement("li", null, s.a.createElement(Q, {
+				}))), s.a.createElement("li", null, s.a.createElement(Q, {
 					active: !1,
 					onMouseDown: () => {
 						a(Object(x.m)({
@@ -561,10 +561,10 @@
 					to: i ? "/message/unread" : "/message/messages"
 				}, A.fbt._("Messages", null, {
 					hk: "Xl3Wz"
-				})), s.a.createElement(z, {
+				}), s.a.createElement(z, {
 					isActive: i,
 					unreadCount: t
-				})), s.a.createElement("li", null, s.a.createElement("button", {
+				}))), s.a.createElement("li", null, s.a.createElement("button", {
 					className: G.a.navLink,
 					onClick: () => {
 						e.markAllAsRead(), a(Object(x.e)({
@@ -612,4 +612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a2000e0bb0112873f768.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a42d0da17bb963d7501f.js.map

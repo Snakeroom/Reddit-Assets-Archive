@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.254021bf87de47559b3c.js
-// Retrieved at 6/29/2021, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.3d1ee8a40e7d87e7acd7.js
+// Retrieved at 6/29/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -629,7 +629,7 @@
 					MultiredditCreateModal: "642d82da059ca1681597",
 					MultiredditEditModal: "fc3df74def2afbe1ec50",
 					NotificationUnit: "eb5489e64f8d5546ce11",
-					NotificationsInbox: "92e92a66111e0412939a",
+					NotificationsInbox: "73036e51229ae0069b9a",
 					NotificationsPrePromptLoader: "a97a4ca8feba3044fe8e",
 					PostFlowUpsellModal: "3fa16b2162786a0ceda3",
 					PowerupSuccessModal: "c38b43b84846b889a8b0",
@@ -704,7 +704,7 @@
 					"vendors~SubredditWiki": "31d6cfe0d16ae931b73c",
 					SubredditWiki: "a88fb3ce8424ee20c953",
 					"vendors~xml2js": "31d6cfe0d16ae931b73c",
-					AuthorHovercard: "e62d64a00a75c1501859",
+					AuthorHovercard: "2d6fa01cb1420b4c7aa8",
 					AwardTooltip: "a38b7ba17f1b5f686b54",
 					CustomBadgeHovercardTooltip: "3ed6dc5d02b740fdc998",
 					GovernanceUserPublicPointsDisplay: "bd91d2e1bf782ec87f09",
@@ -1228,7 +1228,7 @@
 						MultiredditCreateModal: "8da43f7d84bf3c151412",
 						MultiredditEditModal: "f51640cc65b90f261804",
 						NotificationUnit: "63b01b4ee121ba6cc0dc",
-						NotificationsInbox: "a2000e0bb0112873f768",
+						NotificationsInbox: "a42d0da17bb963d7501f",
 						NotificationsPrePromptLoader: "b1df6fb919c422d6fb73",
 						PostFlowUpsellModal: "07aa1033436b4f6e41aa",
 						PowerupSuccessModal: "29cb4e8b11b9c30489da",
@@ -1258,7 +1258,7 @@
 						"translations/es_MX-json": "bbe765933e83deda32cc",
 						"translations/fr_FR-json": "7ebbc235e0dff14146a9",
 						"translations/it_IT-json": "b88f047d6cd8f20ef5fe",
-						"translations/pseudo_ext-json": "0410c423f60ece1ed025",
+						"translations/pseudo_ext-json": "2d0a2d166985146eb1a0",
 						"translations/pseudo_long-json": "7e636f3e29fc508fd5f7",
 						"translations/pseudo_short-json": "ef01b4124e8a3911dbee",
 						"translations/pt_BR-json": "466efcfe5100e7aa686b",
@@ -1303,7 +1303,7 @@
 						"vendors~SubredditWiki": "375d2635dafe1308f47b",
 						SubredditWiki: "f97e3215f89b962b60ed",
 						"vendors~xml2js": "88f76e2e07b71eb98128",
-						AuthorHovercard: "e322853a9a89c0d6802d",
+						AuthorHovercard: "c390d0c1cc2ba0733136",
 						AwardTooltip: "5ba1cfcb7a5d2a98ecd8",
 						CustomBadgeHovercardTooltip: "68b421915e59239e4337",
 						GovernanceUserPublicPointsDisplay: "ea6cce371f8a59c7956c",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.254021bf87de47559b3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3d1ee8a40e7d87e7acd7.js.map

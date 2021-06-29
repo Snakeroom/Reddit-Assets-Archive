@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.e322853a9a89c0d6802d.js
-// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.c390d0c1cc2ba0733136.js
+// Retrieved at 6/29/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -1831,11 +1831,11 @@
 						to: l ? "/message/unread" : "/message/messages"
 					}, r.fbt._("Messages", null, {
 						hk: "hulKY"
-					})), a.a.createElement(c.a, {
+					}), a.a.createElement(c.a, {
 						className: b.a.badgeCount,
 						isActive: l,
 						unreadCount: i
-					})), a.a.createElement("button", {
+					}))), a.a.createElement("button", {
 						className: b.a.navLink,
 						onClick: n
 					}, a.a.createElement(B.a, {
@@ -3629,4 +3629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.e322853a9a89c0d6802d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c390d0c1cc2ba0733136.js.map
