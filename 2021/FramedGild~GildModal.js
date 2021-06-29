@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c6d2d11a8c857ec9d095.js
-// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f970da0b09ae99ac9fa4.js
+// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -355,9 +355,9 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return K
+				return J
 			})), s.d(t, "updateMessage", (function() {
-				return z
+				return K
 			})), s.d(t, "gildGqlRequested", (function() {
 				return Y
 			})), s.d(t, "triggerLoader", (function() {
@@ -435,9 +435,9 @@
 				W = s("./src/telemetry/index.ts"),
 				V = s("./src/reddit/actions/gold/awardKarma.ts"),
 				q = s("./src/reddit/actions/gold/constants.ts"),
-				J = s("./src/reddit/actions/gold/econPurchase.ts");
-			const K = Object(r.a)(q.s),
-				z = Object(r.a)(q.w),
+				z = s("./src/reddit/actions/gold/econPurchase.ts");
+			const J = Object(r.a)(q.s),
+				K = Object(r.a)(q.w),
 				Y = (e, t) => async (s, r, {
 					gqlContext: a
 				}) => {
@@ -626,7 +626,7 @@
 					});
 					if (R && Object(C.a)(r, {
 							subredditId: R.id
-						}) && t(Object(J.a)(R.id, R.name, {
+						}) && t(Object(z.a)(R.id, R.name, {
 							force: !0
 						})), 0 === T && R) {
 						t(Object(o.a)(R.id, m, void 0, !0));
@@ -1583,14 +1583,14 @@
 				W = s("./src/lib/loadWithRetries/index.ts"),
 				V = s("./src/reddit/helpers/loadThirdPartyScript.ts");
 			const q = () => Object(W.a)(() => Promise.all([Promise.all([s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(V.d)().catch(() => {})])).then(e => e[0].default);
-			var J = Object(H.a)({
+			var z = Object(H.a)({
 					getComponent: q,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				K = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				z = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
-				Y = s.n(z),
+				J = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				K = s("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
+				Y = s.n(K),
 				X = s("./src/reddit/helpers/awards/message.ts"),
 				Q = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				Z = s("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
@@ -2493,7 +2493,7 @@
 						showPurchaseModalInThisInstance: _
 					} = this.state, I = w && _, C = I && !f.pennyPrice, k = I && !!f.pennyPrice, P = (C || k) && !c;
 					if (C && P) return null;
-					if (k && P) return r.a.createElement(J, null);
+					if (k && P) return r.a.createElement(z, null);
 					const N = x ? x.name : O,
 						A = !(!o || !o.isGold),
 						S = {
@@ -2538,7 +2538,7 @@
 						gildButtonProps: S,
 						subredditName: N,
 						subredditCoins: v
-					})), k && r.a.createElement(J, null))
+					})), k && r.a.createElement(z, null))
 				}
 			}
 			t.a = Object(a.b)(Ue, (e, {
@@ -2576,7 +2576,7 @@
 				subredditAboutRequested: t => e(Object(I.u)(t)),
 				subredditLockedCoinsRequested: (t, s) => e(Object(x.a)(t, s)),
 				updateMessage: t => e(Object(v.updateMessage)(t))
-			}))(Object(K.c)(He))
+			}))(Object(J.c)(He))
 		},
 		"./src/reddit/components/Gold/AwardKarmaToastMessage/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -4192,12 +4192,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case b.xd.SmIcon:
+						case b.zd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.xd.SmIconHc:
+						case b.zd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5229,12 +5229,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.pd
+						experimentName: n.rd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.xd.SmIcon || t === n.xd.SmIconHc
+					return t === n.zd.SmIcon || t === n.zd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5266,4 +5266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c6d2d11a8c857ec9d095.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f970da0b09ae99ac9fa4.js.map

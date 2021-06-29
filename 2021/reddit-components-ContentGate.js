@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.092baab67b8eb1c0a095.js
-// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.e07b5eca01c083c63257.js
+// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -136,8 +136,8 @@
 				}))),
 				C = n("./src/reddit/components/RawHTMLDisplay/index.tsx"),
 				S = n("./src/reddit/components/RichTextJson/index.tsx"),
-				B = n("./node_modules/lodash/flatMap.js"),
-				w = n.n(B),
+				w = n("./node_modules/lodash/flatMap.js"),
+				B = n.n(w),
 				L = n("./src/lib/linkMatchers/index.ts"),
 				R = n("./src/lib/linkMatchers/customLinks.ts"),
 				j = n("./src/reddit/controls/OutboundLink/index.tsx");
@@ -154,7 +154,7 @@
 				};
 			var O = o.a.memo(e => {
 					let t = [e.text];
-					return e.parseMdLinks && (t = w()(t, T)), e.parseRegularLinks && (t = w()(t, e => Array.isArray(e) ? [e] : (e => {
+					return e.parseMdLinks && (t = B()(t, T)), e.parseRegularLinks && (t = B()(t, e => Array.isArray(e) ? [e] : (e => {
 						const t = L.f.add(R.g.subreddit.prefix, R.g.subreddit.config).match(e);
 						if (!t) return [e];
 						const n = [];
@@ -551,7 +551,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || u,
-				onClick: () => n === d.ud.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
+				onClick: () => n === d.wd.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
 				onMouseEnter: s,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -587,4 +587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.092baab67b8eb1c0a095.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.e07b5eca01c083c63257.js.map

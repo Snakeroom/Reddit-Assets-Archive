@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.e453d8a4a11714ef8080.js
-// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.34c6b28bba59f556061c.js
+// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -326,7 +326,7 @@
 			})), n.d(t, "c", (function() {
 				return U
 			})), n.d(t, "h", (function() {
-				return z
+				return G
 			})), n.d(t, "f", (function() {
 				return X
 			})), n.d(t, "d", (function() {
@@ -566,13 +566,13 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, J = Object(i.a)(a.r), V = Object(i.a)(a.n), G = Object(i.a)(a.s), z = (e, t) => async (n, o, {
+				}, J = Object(i.a)(a.r), V = Object(i.a)(a.n), z = Object(i.a)(a.s), G = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					n(J());
 					const i = await _(r(), e, t);
 					let a = !1;
-					if (i.ok) n(G({
+					if (i.ok) n(z({
 						collectionId: e,
 						newTitle: t
 					})), n(Object(d.f)({
@@ -625,7 +625,7 @@
 								hk: "4Ck6Cm"
 							})
 						}))), a
-					})(o, a))), c && n.push(t(z(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
+					})(o, a))), c && n.push(t(G(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
 						apiContext: r
 					}) => {
 						n(Y());
@@ -2965,12 +2965,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.xd.SmIcon:
+						case b.zd.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.xd.SmIconHc:
+						case b.zd.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4705,7 +4705,7 @@
 					})
 				}),
 				V = Object(r.b)(J);
-			class G extends s.Component {
+			class z extends s.Component {
 				render() {
 					const {
 						draft: e,
@@ -4726,7 +4726,7 @@
 					})
 				}
 			}
-			t.default = U(V(G))
+			t.default = U(V(z))
 		},
 		"./src/reddit/selectors/subredditMention.ts": function(e, t, n) {
 			"use strict";
@@ -4751,12 +4751,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.pd
+						experimentName: s.rd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.xd.SmIcon || t === s.xd.SmIconHc
+					return t === s.zd.SmIcon || t === s.zd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4779,4 +4779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.e453d8a4a11714ef8080.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.34c6b28bba59f556061c.js.map
