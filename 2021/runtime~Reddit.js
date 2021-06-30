@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0dfbb37a2381d6d4cd72.js
-// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c04e31388e35851dad86.js
+// Retrieved at 6/30/2021, 3:10:19 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -760,7 +760,7 @@
 					Trending: "88a1eb1d6f3796bacd5d",
 					"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "ddb3287ce946cb29b398",
 					"reddit-components-InFeedPostCreation": "0e244fc4fac29ee24e0a",
-					"reddit-components-TabBadger-Component": "c4e0a6b9db6986371ef8",
+					"reddit-components-TabBadger-Component": "051a5254458574deebdc",
 					RpanListingUnit: "9a6960c43f3c7e63b2d9",
 					StructuredStyles: "af894e236f571c8f4eac",
 					"reddit-components-CrisisFlow-CrisisFlowPage": "ed056d5b0bab2a006468",
@@ -1258,7 +1258,7 @@
 						"translations/es_MX-json": "400cff45b7b3eabf9414",
 						"translations/fr_FR-json": "66b82831f84b70bb0754",
 						"translations/it_IT-json": "7d5977e52b99b7e9f392",
-						"translations/pseudo_ext-json": "a98ea7070a5d8d5c5436",
+						"translations/pseudo_ext-json": "ff7aaf99b95718272d8d",
 						"translations/pseudo_long-json": "3ba621db7dbb2a4d3a06",
 						"translations/pseudo_short-json": "db225007fad37160c641",
 						"translations/pt_BR-json": "3bb24f653e21af0a3182",
@@ -1359,7 +1359,7 @@
 						Trending: "7e5106720a53bcc04663",
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "727ec186a375cbe76b8b",
 						"reddit-components-InFeedPostCreation": "0140808dcd540a6414fa",
-						"reddit-components-TabBadger-Component": "e87cd492a1a4039e19c2",
+						"reddit-components-TabBadger-Component": "5514323ff2704bad8159",
 						RpanListingUnit: "71ebf9eb911acd5487cd",
 						StructuredStyles: "bbbd937b6b49c247aede",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "fc4da4117f0a9fe2beee",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0dfbb37a2381d6d4cd72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c04e31388e35851dad86.js.map
