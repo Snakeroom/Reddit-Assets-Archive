@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c0092a58525672abd54a.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d588b48014e73905edfa.js
+// Retrieved at 6/30/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1175,7 +1175,7 @@
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "42131a521f9dd7b9937e",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "3000ba3c82c5b4a97781",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "26d56f73e7a6952d6969",
-						CommentsPage: "73514c78a3654a1f027e",
+						CommentsPage: "117678946a3503d7d4b3",
 						CollectionCommentsPage: "7b8ad0477f1f648de51a",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "742a0b2c52a00e8940c5",
 						"ProfileComments~ProfileOverview": "1acb3bc41655b6c07672",
@@ -1258,7 +1258,7 @@
 						"translations/es_MX-json": "400cff45b7b3eabf9414",
 						"translations/fr_FR-json": "66b82831f84b70bb0754",
 						"translations/it_IT-json": "7d5977e52b99b7e9f392",
-						"translations/pseudo_ext-json": "07d99648e47a63ba947a",
+						"translations/pseudo_ext-json": "4704f2ce1ed09b55504c",
 						"translations/pseudo_long-json": "3ba621db7dbb2a4d3a06",
 						"translations/pseudo_short-json": "db225007fad37160c641",
 						"translations/pt_BR-json": "3bb24f653e21af0a3182",
@@ -1316,7 +1316,7 @@
 						"reddit-components-LargePost": "8915e1f7dfed7dcb31f3",
 						"reddit-components-ClassicPost": "c91503abbacdd6cfe26b",
 						"reddit-components-CompactPost": "fe243850d8dc04be25db",
-						CommentsPageNativeAd: "a4e52fed3e4ba0ac3dee",
+						CommentsPageNativeAd: "cc284b4fc094cf035bfb",
 						CryptoVault: "466a2d6b57dcdce88d65",
 						EconomicsSubredditPremiumSidebarCards: "87a83fc92094f78eabde",
 						HarbergerTaxBannerPurchaseCTA: "1259a66a2e60f1f80af2",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c0092a58525672abd54a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d588b48014e73905edfa.js.map
