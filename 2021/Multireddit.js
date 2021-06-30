@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.13a739de461e4d3bd3ef.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.9bbb6ee7337f051454f4.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1994,7 +1994,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => n === u.yd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => n === u.Ad.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: i,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -5788,12 +5788,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Bd.SmIcon:
+						case b.Dd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Bd.SmIconHc:
+						case b.Dd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -6603,15 +6603,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.zd.Add:
+					case r.Bd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.zd.Start:
+					case r.Bd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.zd.Create:
+					case r.Bd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -7820,7 +7820,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.Hb
 					});
-					return !(!t || Object(s.Rd)(t))
+					return !(!t || Object(s.Td)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -7843,11 +7843,11 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const c = e => Object(a.J)(e) || Object(a.K)(e),
 				d = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.pd,
+					experimentName: r.rd,
 					experimentEligibilitySelector: c
 				}), i.a),
 				l = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.qd,
+					experimentName: r.sd,
 					experimentEligibilitySelector: c
 				}), i.a)
 		},
@@ -7978,12 +7978,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.td
+						experimentName: s.vd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Bd.SmIcon || t === s.Bd.SmIconHc
+					return t === s.Dd.SmIcon || t === s.Dd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8012,4 +8012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.13a739de461e4d3bd3ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.9bbb6ee7337f051454f4.js.map

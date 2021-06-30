@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.4f6007edbc5902b36b47.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.2f452299662fc096e498.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3190,7 +3190,7 @@
 			const {
 				fbt: f
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = ["center", "top"], x = ["center", "bottom"], w = Object(r.a)(h.b), C = e => {
-				const t = new Date(Object(p.d)(e.revisedAt));
+				const t = new Date(Object(p.e)(e.revisedAt));
 				return Object(c.d)(t.valueOf() / 1e3)
 			};
 			class E extends a.a.Component {
@@ -3216,7 +3216,7 @@
 						showTimeAgo: o = !1
 					} = this.props, {
 						showTooltip: r
-					} = this.state, c = n.authorInfo && n.authorInfo.name || l.C, h = new Date(Object(p.d)(n.revisedAt)), g = a.a.createElement(m.a, {
+					} = this.state, c = n.authorInfo && n.authorInfo.name || l.C, h = new Date(Object(p.e)(n.revisedAt)), g = a.a.createElement(m.a, {
 						tooltipId: "wikipage-revision-author",
 						user: c,
 						sendHoverCardEvent: s.a
@@ -3362,4 +3362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.4f6007edbc5902b36b47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.2f452299662fc096e498.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.b47926b6d8ffecd7d63e.js
-// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.5d1406c8b5f180752f5f.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -839,7 +839,8 @@
 				isFullWidth: m,
 				eventSource: p,
 				onClick: b,
-				onAddUserToQuickReplyList: f
+				onAddUserToQuickReplyList: f,
+				children: v
 			}) => {
 				return a.a.createElement(d.q, {
 					onClick: t => {
@@ -852,7 +853,7 @@
 					Icon: c,
 					redditStyle: u,
 					isFullWidth: m
-				})
+				}, v)
 			};
 			u.displayName = "ChatButton";
 			const m = Object(o.b)(null, (e, {
@@ -2028,8 +2029,10 @@
 				buttonIcon: "_25ecrisK-bGTesa4kIqyHR",
 				ReplyButtonIcon: "_1wAIwQaxmGHWzaHv-8jex_",
 				replyButtonIcon: "_1wAIwQaxmGHWzaHv-8jex_",
-				NotificationButton: "_3Ai1gn9teWMTX_g8CIyRdY",
-				notificationButton: "_3Ai1gn9teWMTX_g8CIyRdY",
+				notificationButton: "_3doOacPPJ-LU-aBSoLl9TV",
+				isUnread: "_2svu3lh5YfWQmYfACdB2J5",
+				replyIcon: "_3LbCSOW9yuZK_CHzTuR9M5",
+				postIcon: "_102yZEdZMcXLlu2Ri0KD9O",
 				postEmbedContainer: "_1cndvAxAFPMUr8IaWuw_we",
 				postEmbedContent: "_2fsQOzhZpW9XNu1RXtgzqW",
 				deleted: "LypGzp3NJwjpkpsRn9Ocn",
@@ -3642,4 +3645,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b47926b6d8ffecd7d63e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5d1406c8b5f180752f5f.js.map

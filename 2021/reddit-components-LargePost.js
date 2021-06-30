@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8915e1f7dfed7dcb31f3.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.59455775e662381faace.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2410,7 +2410,7 @@
 						postId: Ee,
 						postIds: Ce,
 						onceInViewport: Te
-					} = e, Se = !!e.redditStyle || !!e["data-redditstyle"], Ne = Se ? void 0 : f, Ie = Object(l.a)(le), Me = ue && Ie, Ae = Object(c.a)(le), Be = Object(d.a)(le), Le = Object(V.c)(ve), Fe = !!ve.media && ve.media.type === g.o.RTJSON, Re = _e && Fe, De = n ? n - z.a : void 0, We = !(C && X || oe), Ve = (e => e === ae.Rc.OnlyTitles)(xe) && !Object(se.a)(ve), He = (e => e === ae.Rc.MediumHeight)(xe) && !Object(se.a)(ve), Ue = (e => {
+					} = e, Se = !!e.redditStyle || !!e["data-redditstyle"], Ne = Se ? void 0 : f, Ie = Object(l.a)(le), Me = ue && Ie, Ae = Object(c.a)(le), Be = Object(d.a)(le), Le = Object(V.c)(ve), Fe = !!ve.media && ve.media.type === g.o.RTJSON, Re = _e && Fe, De = n ? n - z.a : void 0, We = !(C && X || oe), Ve = (e => e === ae.Tc.OnlyTitles)(xe) && !Object(se.a)(ve), He = (e => e === ae.Tc.MediumHeight)(xe) && !Object(se.a)(ve), Ue = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -3564,7 +3564,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.zb
 				});
-				return !(!t || Object(o.Rd)(t))
+				return !(!t || Object(o.Td)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
@@ -3580,10 +3580,10 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Rd)(t)
+					return Boolean(t) && !Object(r.Td)(t)
 				},
 				c = Object(o.a)(a, s.d, (e, t) => e && !t)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.8915e1f7dfed7dcb31f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.59455775e662381faace.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e919137d334dcd3dbc72.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.862597e1bcaff24f0ae4.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3035,7 +3035,8 @@
 				isFullWidth: m,
 				eventSource: p,
 				onClick: b,
-				onAddUserToQuickReplyList: h
+				onAddUserToQuickReplyList: h,
+				children: f
 			}) => {
 				return a.a.createElement(l.q, {
 					onClick: t => {
@@ -3048,7 +3049,7 @@
 					Icon: c,
 					redditStyle: u,
 					isFullWidth: m
-				})
+				}, f)
 			};
 			u.displayName = "ChatButton";
 			const m = Object(o.b)(null, (e, {
@@ -10999,9 +11000,9 @@
 					language: M.U,
 					shouldShowCreatePasswordModal: B.d,
 					shouldShowGenderCollection: e => Object(T.c)(e, {
-						experimentName: A.od,
+						experimentName: A.qd,
 						experimentEligibilitySelector: L
-					}) === A.xd.Enabled,
+					}) === A.zd.Enabled,
 					showLanguageSection: P.d.langSelect,
 					availableLocales: Re,
 					locale: De.i,
@@ -14256,4 +14257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e919137d334dcd3dbc72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.862597e1bcaff24f0ae4.js.map

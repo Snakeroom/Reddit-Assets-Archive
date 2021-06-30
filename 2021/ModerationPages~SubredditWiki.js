@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.47c76157e392db584dfc.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.e96c3303d01fba40e31d.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -2284,7 +2284,8 @@
 				isFullWidth: m,
 				eventSource: b,
 				onClick: p,
-				onAddUserToQuickReplyList: f
+				onAddUserToQuickReplyList: f,
+				children: h
 			}) => {
 				return a.a.createElement(c.q, {
 					onClick: t => {
@@ -2297,7 +2298,7 @@
 					Icon: d,
 					redditStyle: u,
 					isFullWidth: m
-				})
+				}, h)
 			};
 			u.displayName = "ChatButton";
 			const m = Object(i.b)(null, (e, {
@@ -2816,7 +2817,7 @@
 			}) => a.a.createElement(m.q, {
 				className: e,
 				disabled: p || l,
-				onClick: () => r === u.yd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => r === u.Ad.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: m.b.Secondary,
@@ -4700,4 +4701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.47c76157e392db584dfc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.e96c3303d01fba40e31d.js.map

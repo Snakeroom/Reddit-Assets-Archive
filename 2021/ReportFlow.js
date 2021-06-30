@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.e313b3a1eacc6448c185.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.bd1876f169fee6de016c.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, o) {
@@ -410,6 +410,8 @@
 				refresh_fill: "refresh_fill",
 				remove: "remove",
 				remove_fill: "remove_fill",
+				reply: "reply",
+				reply_fill: "reply_fill",
 				report: "report",
 				report_fill: "report_fill",
 				reverse: "reverse",
@@ -4205,4 +4207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e313b3a1eacc6448c185.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.bd1876f169fee6de016c.js.map

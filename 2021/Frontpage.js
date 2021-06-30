@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0babbb4a9a80d5c221c8.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.9d8e12aed44bd05913ed.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1621,10 +1621,10 @@
 			}
 			var qe = n("./src/reddit/selectors/experiments/utils.ts");
 			const We = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.uc,
+					experimentName: Fe.wc,
 					experimentEligibilitySelector: Ue.a
 				}), qe.a),
-				Ge = Object(u.a)(We, e => e === Fe.wc.Enabled);
+				Ge = Object(u.a)(We, e => e === Fe.yc.Enabled);
 			var Ve = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ke = n("./src/reddit/selectors/user.ts");
 			var He = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -4634,4 +4634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0babbb4a9a80d5c221c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9d8e12aed44bd05913ed.js.map

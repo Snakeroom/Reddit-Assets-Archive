@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.485e0aa2a2ee43568add.js
-// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.287d08aa7929497c6cc1.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -601,7 +601,8 @@
 				isFullWidth: u,
 				eventSource: p,
 				onClick: f,
-				onAddUserToQuickReplyList: b
+				onAddUserToQuickReplyList: b,
+				children: v
 			}) => {
 				return a.a.createElement(d.q, {
 					onClick: t => {
@@ -614,7 +615,7 @@
 					Icon: c,
 					redditStyle: m,
 					isFullWidth: u
-				})
+				}, v)
 			};
 			m.displayName = "ChatButton";
 			const u = Object(o.b)(null, (e, {
@@ -3049,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.485e0aa2a2ee43568add.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.287d08aa7929497c6cc1.js.map

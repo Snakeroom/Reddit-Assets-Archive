@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8af266f0ceaa04163958.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ef2da50c64f2e4f0bc90.js
+// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -414,7 +414,8 @@
 				isFullWidth: u,
 				eventSource: p,
 				onClick: b,
-				onAddUserToQuickReplyList: v
+				onAddUserToQuickReplyList: v,
+				children: f
 			}) => {
 				return n.a.createElement(d.q, {
 					onClick: t => {
@@ -427,7 +428,7 @@
 					Icon: i,
 					redditStyle: m,
 					isFullWidth: u
-				})
+				}, f)
 			};
 			m.displayName = "ChatButton";
 			const u = Object(o.b)(null, (e, {
@@ -2627,4 +2628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8af266f0ceaa04163958.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ef2da50c64f2e4f0bc90.js.map
