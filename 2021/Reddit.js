@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.18d021e2f6f8c0d7b1c8.js
-// Retrieved at 6/30/2021, 11:30:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e167b3dbc7bae051f72a.js
+// Retrieved at 6/30/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3119,25 +3119,25 @@
 						}))
 					})), m.a.createElement("div", {
 						className: _t.a.buttonsRow
-					}, m.a.createElement("div", {
-						className: _t.a.rightSideButtons
-					}, m.a.createElement(Me.i, {
-						disabled: !l,
-						onClick: this.onApply
-					}, o.fbt._("Apply", null, {
-						hk: "ZvO9n"
-					})), r && m.a.createElement(Me.l, {
-						className: _t.a.clearButton,
-						onClick: this.onClear
-					}, o.fbt._("Clear Flair", null, {
-						hk: "23i2at"
-					}))), i && m.a.createElement(Me.q, {
+					}, i && m.a.createElement(Me.q, {
 						className: _t.a.goBackButton,
 						priority: Me.b.Plain,
 						onClick: e.openAchiementFlairModal
 					}, o.fbt._("Go Back", null, {
 						hk: "4fisFS"
-					}))))
+					})), m.a.createElement("div", {
+						className: _t.a.rightSideButtons
+					}, r && m.a.createElement(Me.l, {
+						className: _t.a.clearButton,
+						onClick: this.onClear
+					}, o.fbt._("Clear Flair", null, {
+						hk: "23i2at"
+					})), m.a.createElement(Me.i, {
+						disabled: !l,
+						onClick: this.onApply
+					}, o.fbt._("Apply", null, {
+						hk: "ZvO9n"
+					})))))
 				}
 			}
 			const Tt = Object(p.b)(() => Object(f.c)({
@@ -18202,4 +18202,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.18d021e2f6f8c0d7b1c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e167b3dbc7bae051f72a.js.map
