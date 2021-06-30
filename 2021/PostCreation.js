@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c15ef81ba7b41a5609f1.js
-// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.72d317dac750305f598d.js
+// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8188,7 +8188,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), i = Object(U.a)(p.Zb) === p.dc.Enabled;
+					} = t, r = Object(B.a)(), i = Object(U.a)(p.bc) === p.fc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
@@ -23350,7 +23350,8 @@
 				mLargePostLayout: "_3nSp9cdBpqL13CqjdMr2L_",
 				mDisableFullScreen: "_2udhMC-jldHp_EpAuBeSR1",
 				mClassicWidth: "_1Tc65kRFm7a8piCXHVL4L4",
-				mIsEditing: "_25-JsrYQ-pXWBM8eqpxeN7"
+				mIsEditing: "_25-JsrYQ-pXWBM8eqpxeN7",
+				onlyChildMargin: "_2OVNlZuUd8L9v0yVECZ2iA"
 			}
 		},
 		"./src/reddit/layout/page/Listing/Content.tsx": function(e, t, n) {
@@ -23382,16 +23383,17 @@
 				}),
 				f = Object(s.b)(b),
 				g = ({
-					disableFullscreen: e,
-					dispatch: t,
-					fitPageToContent: n,
-					forcedLayout: o,
-					isCollectionLayout: s,
-					isEditing: i,
-					layout: a,
-					pageLayer: c,
-					...d
-				}) => r.a.createElement("div", d);
+					hideOnlyChildMargin: e,
+					disableFullscreen: t,
+					dispatch: n,
+					fitPageToContent: o,
+					forcedLayout: s,
+					isCollectionLayout: i,
+					isEditing: a,
+					layout: c,
+					pageLayer: d,
+					...l
+				}) => r.a.createElement("div", l);
 			t.a = h(f(({
 				className: e,
 				...t
@@ -23401,7 +23403,8 @@
 					[p.a.mDisableFullScreen]: t.disableFullscreen && !t.isCollectionLayout,
 					[p.a.mClassicWidth]: t.isCollectionLayout,
 					[p.a.mIsEditing]: !!t.isEditing,
-					[p.a.mCanFlexFullWidth]: !t.fitPageToContent
+					[p.a.mCanFlexFullWidth]: !t.fitPageToContent,
+					[p.a.onlyChildMargin]: !t.hideOnlyChildMargin
 				})
 			}, t))))
 		},
@@ -23496,6 +23499,7 @@
 						style: n
 					}, e.sidebar),
 					c = r.a.createElement(s.a, {
+						hideOnlyChildMargin: e.hideOnlyChildMargin,
 						className: e.contentClassName,
 						disableFullscreen: e.disableFullscreen,
 						fitPageToContent: e.fitPageToContent,
@@ -29496,10 +29500,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Bc,
+				experimentName: o.Dc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.Gc.Enabled
+			}) === o.Ic.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -29513,14 +29517,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Mc
-					}) === o.Vc.Enabled
+						experimentName: o.Oc
+					}) === o.Xc.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Lc
-					}) === o.Uc.Enabled
+						experimentName: o.Nc
+					}) === o.Wc.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -30228,4 +30232,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c15ef81ba7b41a5609f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.72d317dac750305f598d.js.map

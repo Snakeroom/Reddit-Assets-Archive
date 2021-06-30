@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.43b5a633048049340895.js
-// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.4939f614debb409982c7.js
+// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -763,11 +763,11 @@
 				a = n("./src/reddit/selectors/experiments/utils.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.lc,
+					experimentName: c.nc,
 					experimentEligibilitySelector: d
 				}), a.a),
 				d = e => Object(i.J)(e) || Object(i.K)(e),
-				u = Object(s.a)(o, e => e === c.oc.Enabled)
+				u = Object(s.a)(o, e => e === c.qc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -794,28 +794,28 @@
 					experimentName: c.ab,
 					experimentEligibilitySelector: o
 				}), a.a),
-				u = Object(s.a)(d, e => e === c.rc.Enabled),
+				u = Object(s.a)(d, e => e === c.tc.Enabled),
 				l = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: c.mc,
+					experimentName: c.oc,
 					experimentEligibilitySelector: o
 				}), a.a),
-				b = Object(s.a)(u, l, (e, t) => e && t === c.qc.Enabled),
+				b = Object(s.a)(u, l, (e, t) => e && t === c.sc.Enabled),
 				m = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.db,
 					experimentEligibilitySelector: o
 				}), a.a),
-				h = Object(s.a)(u, m, (e, t) => e && t === c.mb.Enabled),
+				h = Object(s.a)(u, m, (e, t) => e && t === c.nb.Enabled),
 				p = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: c.Z,
 					experimentEligibilitySelector: o
 				}), a.a),
-				x = Object(s.a)(p, e => e === c.pc.Banner_1st_time),
-				f = Object(s.a)(p, e => e === c.pc.Tooltip_persist),
-				j = Object(s.a)(p, e => e === c.pc.Tooltip_1st_time)
+				x = Object(s.a)(p, e => e === c.rc.Banner_1st_time),
+				f = Object(s.a)(p, e => e === c.rc.Tooltip_persist),
+				j = Object(s.a)(p, e => e === c.rc.Tooltip_1st_time)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.43b5a633048049340895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.4939f614debb409982c7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.355b8b396286022473b9.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ec7960581b9fdaa998ab.js
+// Retrieved at 6/30/2021, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2841,7 +2841,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				w = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
-					experimentName: b.Zc
+					experimentName: b.bd
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				j = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -3438,7 +3438,7 @@
 							a = r.fullname;
 						Object(_.a)(Object(E.d)(O, e, a)(f)), t(D({
 							subredditName: y
-						})), await t(Object(s.b)(`${r.path}`)), (null == e ? void 0 : e.isInSrCreationFlowM2Experiment) === c.ob.Upsell && (t(Object(n.h)(o.a.POST_FLOW_UPSELL_MODAL_ID)), Object(_.a)(Object(E.g)()(f))), Object(m.b)(m.a.SubredditCreation)
+						})), await t(Object(s.b)(`${r.path}`)), (null == e ? void 0 : e.isInSrCreationFlowM2Experiment) === c.qb.Upsell && (t(Object(n.h)(o.a.POST_FLOW_UPSELL_MODAL_ID)), Object(_.a)(Object(E.g)()(f))), Object(m.b)(m.a.SubredditCreation)
 					} else I.error && Object(_.a)(Object(E.h)(I.error.type, y)(f)), t(T({
 						subredditName: y,
 						error: I.error
@@ -3849,14 +3849,14 @@
 					}) && t(Object(c.fb)(e))
 				}, h = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.Id
+						experimentName: d.Kd
 					});
 					let a = "";
-					return (null == r ? void 0 : r.variant) === d.Jd.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.Ld.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.Jd.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.Ld.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -21972,7 +21972,7 @@
 				l = e => e === a.N.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(a.Pd)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(a.Rd)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -21986,14 +21986,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Mc
-					}) === s.Vc.Enabled
+						experimentName: s.Oc
+					}) === s.Xc.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Lc
-					}) === s.Uc.Enabled
+						experimentName: s.Nc
+					}) === s.Wc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
@@ -22021,9 +22021,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Id
+						experimentName: s.Kd
 					});
-					return r === s.Jd.Variant1 || r === s.Jd.Variant2
+					return r === s.Ld.Variant1 || r === s.Ld.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -22215,4 +22215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.355b8b396286022473b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ec7960581b9fdaa998ab.js.map
