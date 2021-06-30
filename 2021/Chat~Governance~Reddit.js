@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4d5bc55788dbe5f1f346.js
-// Retrieved at 6/30/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.386f6ef3dee96ce8e513.js
+// Retrieved at 6/30/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2473,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("138238"),
+				buildNumber: r("138239"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1625067085"),
+				})("1625068019"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4965,14 +4965,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cb72b91c66d94a058a65439cbb6aaebb007fb2109-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd75daacb70656869aee5c0efabf83221edf86aa9-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b72b91c66d94a058a65439cbb6aaebb007fb2109-production",
+						release: "d75daacb70656869aee5c0efabf83221edf86aa9-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5466,7 +5466,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "b72b91c66d94a058a65439cbb6aaebb007fb2109-production",
+						releaseClient: "d75daacb70656869aee5c0efabf83221edf86aa9-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -28497,7 +28497,14 @@
 			}
 			i.d(t, "a", (function() {
 				return n
-			}))
+			})), i.d(t, "b", (function() {
+				return s
+			}));
+			const r = /(?:\/|-)nft-([a-z0-9]+)-([a-z]+)(?:-headshot)?\.(?:png|svg)/i;
+
+			function s(e) {
+				return !!e && r.test(e)
+			}
 		},
 		"./src/reddit/models/ApiRequestState/index.ts": function(e, t, i) {
 			"use strict";
@@ -42253,7 +42260,8 @@
 						})) || void 0 === r ? void 0 : r.accountIcon : null
 					}
 					return {
-						snoovatarActive: Object(Q.a)(s)
+						snoovatarActive: Object(Q.a)(s),
+						userHasNft: Object(Q.b)(s)
 					}
 				},
 				gt = (e, t) => {
@@ -45672,15 +45680,15 @@
 			"use strict";
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
-				s = (n.Q, i("./node_modules/node-int64/Int64.js"), i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Snoovatar = function(e) {
-					this.gear_id = null, this.gear_ids = null, this.snoovatar_active = null, this.id = null, this.full_image_url = null, this.headshot_image_url = null, this.gear_expression = null, this.gear_hair = null, this.gear_hair_acc = null, this.gear_face = null, this.gear_face_acc = null, this.gear_top = null, this.gear_top_acc = null, this.gear_bottom = null, this.gear_bottom_acc = null, this.has_premium_gear = null, this.gear_status = null, this.user_generated = null, this.user_generated_source = null, e && (void 0 !== e.gear_id && null !== e.gear_id && (this.gear_id = e.gear_id), void 0 !== e.gear_ids && null !== e.gear_ids && (this.gear_ids = r.copyList(e.gear_ids, [null])), void 0 !== e.snoovatar_active && null !== e.snoovatar_active && (this.snoovatar_active = e.snoovatar_active), void 0 !== e.id && null !== e.id && (this.id = e.id), void 0 !== e.full_image_url && null !== e.full_image_url && (this.full_image_url = e.full_image_url), void 0 !== e.headshot_image_url && null !== e.headshot_image_url && (this.headshot_image_url = e.headshot_image_url), void 0 !== e.gear_expression && null !== e.gear_expression && (this.gear_expression = e.gear_expression), void 0 !== e.gear_hair && null !== e.gear_hair && (this.gear_hair = e.gear_hair), void 0 !== e.gear_hair_acc && null !== e.gear_hair_acc && (this.gear_hair_acc = e.gear_hair_acc), void 0 !== e.gear_face && null !== e.gear_face && (this.gear_face = e.gear_face), void 0 !== e.gear_face_acc && null !== e.gear_face_acc && (this.gear_face_acc = e.gear_face_acc), void 0 !== e.gear_top && null !== e.gear_top && (this.gear_top = e.gear_top), void 0 !== e.gear_top_acc && null !== e.gear_top_acc && (this.gear_top_acc = e.gear_top_acc), void 0 !== e.gear_bottom && null !== e.gear_bottom && (this.gear_bottom = e.gear_bottom), void 0 !== e.gear_bottom_acc && null !== e.gear_bottom_acc && (this.gear_bottom_acc = e.gear_bottom_acc), void 0 !== e.has_premium_gear && null !== e.has_premium_gear && (this.has_premium_gear = e.has_premium_gear), void 0 !== e.gear_status && null !== e.gear_status && (this.gear_status = e.gear_status), void 0 !== e.user_generated && null !== e.user_generated && (this.user_generated = e.user_generated), void 0 !== e.user_generated_source && null !== e.user_generated_source && (this.user_generated_source = e.user_generated_source))
+				s = (n.Q, i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Snoovatar = function(e) {
+					this.gear_id = null, this.gear_ids = null, this.snoovatar_active = null, this.id = null, this.full_image_url = null, this.headshot_image_url = null, this.gear_expression = null, this.gear_hair = null, this.gear_hair_acc = null, this.gear_face = null, this.gear_face_acc = null, this.gear_top = null, this.gear_top_acc = null, this.gear_bottom = null, this.gear_bottom_acc = null, this.has_premium_gear = null, this.gear_status = null, this.user_generated = null, this.user_generated_source = null, this.user_has_nft = null, this.nft_name = null, e && (void 0 !== e.gear_id && null !== e.gear_id && (this.gear_id = e.gear_id), void 0 !== e.gear_ids && null !== e.gear_ids && (this.gear_ids = r.copyList(e.gear_ids, [null])), void 0 !== e.snoovatar_active && null !== e.snoovatar_active && (this.snoovatar_active = e.snoovatar_active), void 0 !== e.id && null !== e.id && (this.id = e.id), void 0 !== e.full_image_url && null !== e.full_image_url && (this.full_image_url = e.full_image_url), void 0 !== e.headshot_image_url && null !== e.headshot_image_url && (this.headshot_image_url = e.headshot_image_url), void 0 !== e.gear_expression && null !== e.gear_expression && (this.gear_expression = e.gear_expression), void 0 !== e.gear_hair && null !== e.gear_hair && (this.gear_hair = e.gear_hair), void 0 !== e.gear_hair_acc && null !== e.gear_hair_acc && (this.gear_hair_acc = e.gear_hair_acc), void 0 !== e.gear_face && null !== e.gear_face && (this.gear_face = e.gear_face), void 0 !== e.gear_face_acc && null !== e.gear_face_acc && (this.gear_face_acc = e.gear_face_acc), void 0 !== e.gear_top && null !== e.gear_top && (this.gear_top = e.gear_top), void 0 !== e.gear_top_acc && null !== e.gear_top_acc && (this.gear_top_acc = e.gear_top_acc), void 0 !== e.gear_bottom && null !== e.gear_bottom && (this.gear_bottom = e.gear_bottom), void 0 !== e.gear_bottom_acc && null !== e.gear_bottom_acc && (this.gear_bottom_acc = e.gear_bottom_acc), void 0 !== e.has_premium_gear && null !== e.has_premium_gear && (this.has_premium_gear = e.has_premium_gear), void 0 !== e.gear_status && null !== e.gear_status && (this.gear_status = e.gear_status), void 0 !== e.user_generated && null !== e.user_generated && (this.user_generated = e.user_generated), void 0 !== e.user_generated_source && null !== e.user_generated_source && (this.user_generated_source = e.user_generated_source), void 0 !== e.user_has_nft && null !== e.user_has_nft && (this.user_has_nft = e.user_has_nft), void 0 !== e.nft_name && null !== e.nft_name && (this.nft_name = e.nft_name))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
 				if (e.writeStructBegin("Snoovatar"), null !== this.gear_id && void 0 !== this.gear_id && (e.writeFieldBegin("gear_id", r.Type.STRING, 1), e.writeString(this.gear_id), e.writeFieldEnd()), null !== this.gear_ids && void 0 !== this.gear_ids) {
 					for (var t in e.writeFieldBegin("gear_ids", r.Type.LIST, 2), e.writeListBegin(r.Type.STRING, this.gear_ids.length), this.gear_ids) this.gear_ids.hasOwnProperty(t) && (t = this.gear_ids[t], e.writeString(t));
 					e.writeListEnd(), e.writeFieldEnd()
 				}
-				null !== this.snoovatar_active && void 0 !== this.snoovatar_active && (e.writeFieldBegin("snoovatar_active", r.Type.BOOL, 3), e.writeBool(this.snoovatar_active), e.writeFieldEnd()), null !== this.id && void 0 !== this.id && (e.writeFieldBegin("id", r.Type.I64, 4), e.writeI64(this.id), e.writeFieldEnd()), null !== this.full_image_url && void 0 !== this.full_image_url && (e.writeFieldBegin("full_image_url", r.Type.STRING, 5), e.writeString(this.full_image_url), e.writeFieldEnd()), null !== this.headshot_image_url && void 0 !== this.headshot_image_url && (e.writeFieldBegin("headshot_image_url", r.Type.STRING, 6), e.writeString(this.headshot_image_url), e.writeFieldEnd()), null !== this.gear_expression && void 0 !== this.gear_expression && (e.writeFieldBegin("gear_expression", r.Type.STRING, 7), e.writeString(this.gear_expression), e.writeFieldEnd()), null !== this.gear_hair && void 0 !== this.gear_hair && (e.writeFieldBegin("gear_hair", r.Type.STRING, 8), e.writeString(this.gear_hair), e.writeFieldEnd()), null !== this.gear_hair_acc && void 0 !== this.gear_hair_acc && (e.writeFieldBegin("gear_hair_acc", r.Type.STRING, 9), e.writeString(this.gear_hair_acc), e.writeFieldEnd()), null !== this.gear_face && void 0 !== this.gear_face && (e.writeFieldBegin("gear_face", r.Type.STRING, 10), e.writeString(this.gear_face), e.writeFieldEnd()), null !== this.gear_face_acc && void 0 !== this.gear_face_acc && (e.writeFieldBegin("gear_face_acc", r.Type.STRING, 11), e.writeString(this.gear_face_acc), e.writeFieldEnd()), null !== this.gear_top && void 0 !== this.gear_top && (e.writeFieldBegin("gear_top", r.Type.STRING, 12), e.writeString(this.gear_top), e.writeFieldEnd()), null !== this.gear_top_acc && void 0 !== this.gear_top_acc && (e.writeFieldBegin("gear_top_acc", r.Type.STRING, 13), e.writeString(this.gear_top_acc), e.writeFieldEnd()), null !== this.gear_bottom && void 0 !== this.gear_bottom && (e.writeFieldBegin("gear_bottom", r.Type.STRING, 14), e.writeString(this.gear_bottom), e.writeFieldEnd()), null !== this.gear_bottom_acc && void 0 !== this.gear_bottom_acc && (e.writeFieldBegin("gear_bottom_acc", r.Type.STRING, 15), e.writeString(this.gear_bottom_acc), e.writeFieldEnd()), null !== this.has_premium_gear && void 0 !== this.has_premium_gear && (e.writeFieldBegin("has_premium_gear", r.Type.BOOL, 16), e.writeBool(this.has_premium_gear), e.writeFieldEnd()), null !== this.gear_status && void 0 !== this.gear_status && (e.writeFieldBegin("gear_status", r.Type.STRING, 17), e.writeString(this.gear_status), e.writeFieldEnd()), null !== this.user_generated && void 0 !== this.user_generated && (e.writeFieldBegin("user_generated", r.Type.STRING, 18), e.writeString(this.user_generated), e.writeFieldEnd()), null !== this.user_generated_source && void 0 !== this.user_generated_source && (e.writeFieldBegin("user_generated_source", r.Type.STRING, 19), e.writeString(this.user_generated_source), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
+				null !== this.snoovatar_active && void 0 !== this.snoovatar_active && (e.writeFieldBegin("snoovatar_active", r.Type.BOOL, 3), e.writeBool(this.snoovatar_active), e.writeFieldEnd()), null !== this.id && void 0 !== this.id && (e.writeFieldBegin("id", r.Type.I64, 4), e.writeI64(this.id), e.writeFieldEnd()), null !== this.full_image_url && void 0 !== this.full_image_url && (e.writeFieldBegin("full_image_url", r.Type.STRING, 5), e.writeString(this.full_image_url), e.writeFieldEnd()), null !== this.headshot_image_url && void 0 !== this.headshot_image_url && (e.writeFieldBegin("headshot_image_url", r.Type.STRING, 6), e.writeString(this.headshot_image_url), e.writeFieldEnd()), null !== this.gear_expression && void 0 !== this.gear_expression && (e.writeFieldBegin("gear_expression", r.Type.STRING, 7), e.writeString(this.gear_expression), e.writeFieldEnd()), null !== this.gear_hair && void 0 !== this.gear_hair && (e.writeFieldBegin("gear_hair", r.Type.STRING, 8), e.writeString(this.gear_hair), e.writeFieldEnd()), null !== this.gear_hair_acc && void 0 !== this.gear_hair_acc && (e.writeFieldBegin("gear_hair_acc", r.Type.STRING, 9), e.writeString(this.gear_hair_acc), e.writeFieldEnd()), null !== this.gear_face && void 0 !== this.gear_face && (e.writeFieldBegin("gear_face", r.Type.STRING, 10), e.writeString(this.gear_face), e.writeFieldEnd()), null !== this.gear_face_acc && void 0 !== this.gear_face_acc && (e.writeFieldBegin("gear_face_acc", r.Type.STRING, 11), e.writeString(this.gear_face_acc), e.writeFieldEnd()), null !== this.gear_top && void 0 !== this.gear_top && (e.writeFieldBegin("gear_top", r.Type.STRING, 12), e.writeString(this.gear_top), e.writeFieldEnd()), null !== this.gear_top_acc && void 0 !== this.gear_top_acc && (e.writeFieldBegin("gear_top_acc", r.Type.STRING, 13), e.writeString(this.gear_top_acc), e.writeFieldEnd()), null !== this.gear_bottom && void 0 !== this.gear_bottom && (e.writeFieldBegin("gear_bottom", r.Type.STRING, 14), e.writeString(this.gear_bottom), e.writeFieldEnd()), null !== this.gear_bottom_acc && void 0 !== this.gear_bottom_acc && (e.writeFieldBegin("gear_bottom_acc", r.Type.STRING, 15), e.writeString(this.gear_bottom_acc), e.writeFieldEnd()), null !== this.has_premium_gear && void 0 !== this.has_premium_gear && (e.writeFieldBegin("has_premium_gear", r.Type.BOOL, 16), e.writeBool(this.has_premium_gear), e.writeFieldEnd()), null !== this.gear_status && void 0 !== this.gear_status && (e.writeFieldBegin("gear_status", r.Type.STRING, 17), e.writeString(this.gear_status), e.writeFieldEnd()), null !== this.user_generated && void 0 !== this.user_generated && (e.writeFieldBegin("user_generated", r.Type.STRING, 18), e.writeString(this.user_generated), e.writeFieldEnd()), null !== this.user_generated_source && void 0 !== this.user_generated_source && (e.writeFieldBegin("user_generated_source", r.Type.STRING, 19), e.writeString(this.user_generated_source), e.writeFieldEnd()), null !== this.user_has_nft && void 0 !== this.user_has_nft && (e.writeFieldBegin("user_has_nft", r.Type.BOOL, 20), e.writeBool(this.user_has_nft), e.writeFieldEnd()), null !== this.nft_name && void 0 !== this.nft_name && (e.writeFieldBegin("nft_name", r.Type.STRING, 21), e.writeString(this.nft_name), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			}
 		},
 		"./src/telemetry/eventSchemas/spamurai_types.js": function(e, t, i) {
@@ -47087,7 +47095,9 @@
 					has_premium_gear: e.hasPremiumGear,
 					gear_status: e.gearStatus,
 					user_generated: e.userGenerated,
-					user_generated_source: e.userGeneratedSource
+					user_generated_source: e.userGeneratedSource,
+					user_has_nft: e.userHasNft,
+					nft_name: e.nftName
 				})
 			}
 			var di = i("./src/telemetry/models/Subreddit.ts"),
@@ -47522,4 +47532,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4d5bc55788dbe5f1f346.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.386f6ef3dee96ce8e513.js.map
