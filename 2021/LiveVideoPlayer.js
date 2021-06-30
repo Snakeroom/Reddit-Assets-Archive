@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.50a0b2912f424ebc795d.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.cb19fdfc00b0e5c64357.js
+// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -216,7 +216,7 @@
 		"./src/reddit/actions/subscription/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "e", (function() {
-				return T
+				return D
 			})), s.d(t, "d", (function() {
 				return A
 			})), s.d(t, "c", (function() {
@@ -295,7 +295,7 @@
 				N = Object(o.a)(l.b),
 				M = Object(o.a)(l.a),
 				P = Object(o.a)(l.h),
-				T = (Object(o.a)(l.i), Object(o.a)(l.g), () => async (e, t, {
+				D = (Object(o.a)(l.i), Object(o.a)(l.g), () => async (e, t, {
 					gqlContext: s
 				}) => {
 					const n = t();
@@ -309,7 +309,7 @@
 						error: r.error
 					}))
 				}),
-				D = (e, t) => t.type === m.a.PROFILE && e.displayText === t.name.replace("u_", ""),
+				T = (e, t) => t.type === m.a.PROFILE && e.displayText === t.name.replace("u_", ""),
 				A = (e, t, s) => async (o, l, {
 					apiContext: f
 				}) => {
@@ -329,7 +329,7 @@
 					if (O) {
 						const t = v.length,
 							s = e.length;
-						if (v = v.filter(e => !D(O, e)), (e = e.filter(e => !D(O, e))).length !== s || v.length !== t) {
+						if (v = v.filter(e => !T(O, e)), (e = e.filter(e => !T(O, e))).length !== s || v.length !== t) {
 							const e = n.fbt._("You cannot follow yourself!", null, {
 								hk: "3tfSaq"
 							});
@@ -370,13 +370,26 @@
 							forceLoad: !0,
 							fullData: !1
 						})));
-						const s = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : `${n.fbt.plural("community",e.length,{many:"communities",name:"communities",showCount:"yes"})}`;
+						const s = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : n.fbt._({
+								"*": "{communities} communities",
+								_1: "1 community"
+							}, [n.fbt._plural(e.length, "communities")], {
+								hk: "IgDzJ"
+							}),
+							r = n.fbt._("Sucсessfully followed {communityname}", [n.fbt._param("communityname", s)], {
+								hk: "1S5AXJ"
+							}),
+							c = n.fbt._("Sucсessfully unfollowed {communityname}", [n.fbt._param("communityname", s)], {
+								hk: "2XWHyB"
+							}),
+							d = n.fbt._("Sucсessfully joined {communityname}", [n.fbt._param("communityname", s)], {
+								hk: "3Al8aF"
+							}),
+							l = n.fbt._("Sucсessfully left {communityname}", [n.fbt._param("communityname", s)], {
+								hk: "2w5JFZ"
+							});
 						o(Object(u.f)({
-							text: 1 === e.length && "profile" === e[0].type ? n.fbt._("Sucсessfully {verb} {communityname}", [n.fbt._param("verb", t ? "followed" : "unfollowed"), n.fbt._param("communityname", s)], {
-								hk: "1hY5KX"
-							}) : n.fbt._("Sucсessfully {verb} {communityname}", [n.fbt._param("verb", t ? "joined" : "left"), n.fbt._param("communityname", s)], {
-								hk: "1hY5KX"
-							})
+							text: 1 === e.length && "profile" === e[0].type ? t ? r : c : t ? d : l
 						}))
 					} else {
 						o(P({
@@ -690,8 +703,8 @@
 				M = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
 				P = s.n(M);
 			const {
-				fbt: T
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), D = Object(d.a)(v.a, {
+				fbt: D
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = Object(d.a)(v.a, {
 				playerName: "RPAN Listing Player"
 			}), A = 3e3, V = Object(c.c)({
 				autoplay: k.b,
@@ -978,7 +991,7 @@
 					} = this.props;
 					return i.a.createElement("div", {
 						className: Object(l.a)(P.a.clip9x16, t)
-					}, i.a.createElement(D, {
+					}, i.a.createElement(T, {
 						autoplay: e,
 						controls: !1,
 						isPaused: this.shouldPause,
@@ -1299,9 +1312,9 @@
 			})), s.d(t, "d", (function() {
 				return P
 			})), s.d(t, "e", (function() {
-				return T
-			})), s.d(t, "v", (function() {
 				return D
+			})), s.d(t, "v", (function() {
+				return T
 			})), s.d(t, "E", (function() {
 				return A
 			})), s.d(t, "f", (function() {
@@ -1560,14 +1573,14 @@
 					playback: c(s, e, t),
 					...a(s, e)
 				}),
-				T = (e, t) => s => ({
+				D = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: c(s, e, t),
 					...a(s, e)
 				}),
-				D = (e, t) => s => ({
+				T = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
@@ -1860,9 +1873,9 @@
 			})), s.d(t, "h", (function() {
 				return P
 			})), s.d(t, "k", (function() {
-				return T
-			})), s.d(t, "c", (function() {
 				return D
+			})), s.d(t, "c", (function() {
+				return T
 			})), s.d(t, "f", (function() {
 				return A
 			})), s.d(t, "a", (function() {
@@ -2017,8 +2030,8 @@
 				}),
 				M = Object(r.a)(Object(n.a)(C, _, (e, t) => e ? t[e] : void 0)),
 				P = Object(r.a)(Object(n.a)(k, _, (e, t) => e ? t[e] : void 0)),
-				T = Object(r.a)(Object(n.a)(N, _, (e, t) => e ? t[e] : void 0)),
-				D = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, _, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
+				D = Object(r.a)(Object(n.a)(N, _, (e, t) => e ? t[e] : void 0)),
+				T = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, _, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
 				})))), Object(n.a)(C, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
@@ -2079,4 +2092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.50a0b2912f424ebc795d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.cb19fdfc00b0e5c64357.js.map

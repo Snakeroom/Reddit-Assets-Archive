@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.59bf024e5be54877bea9.js
-// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.9283f9ce7920047f379d.js
+// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1273,13 +1273,26 @@
 							forceLoad: !0,
 							fullData: !1
 						})));
-						const n = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : `${s.fbt.plural("community",e.length,{many:"communities",name:"communities",showCount:"yes"})}`;
+						const n = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : s.fbt._({
+								"*": "{communities} communities",
+								_1: "1 community"
+							}, [s.fbt._plural(e.length, "communities")], {
+								hk: "IgDzJ"
+							}),
+							r = s.fbt._("Sucсessfully followed {communityname}", [s.fbt._param("communityname", n)], {
+								hk: "1S5AXJ"
+							}),
+							c = s.fbt._("Sucсessfully unfollowed {communityname}", [s.fbt._param("communityname", n)], {
+								hk: "2XWHyB"
+							}),
+							d = s.fbt._("Sucсessfully joined {communityname}", [s.fbt._param("communityname", n)], {
+								hk: "3Al8aF"
+							}),
+							l = s.fbt._("Sucсessfully left {communityname}", [s.fbt._param("communityname", n)], {
+								hk: "2w5JFZ"
+							});
 						o(Object(u.f)({
-							text: 1 === e.length && "profile" === e[0].type ? s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "followed" : "unfollowed"), s.fbt._param("communityname", n)], {
-								hk: "1hY5KX"
-							}) : s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "joined" : "left"), s.fbt._param("communityname", n)], {
-								hk: "1hY5KX"
-							})
+							text: 1 === e.length && "profile" === e[0].type ? t ? r : c : t ? d : l
 						}))
 					} else {
 						o(P({
@@ -7999,4 +8012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.59bf024e5be54877bea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.9283f9ce7920047f379d.js.map

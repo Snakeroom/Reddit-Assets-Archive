@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c889af5f23aaacb523b1.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.128a0e6cbb2c353f0fcd.js
+// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -1560,9 +1560,11 @@
 					className: Object(o.a)(c.a.Button, e.className),
 					disabled: e.disabled,
 					id: e.id,
-					onClick: e.disabled ? void 0 : e.onClick
+					onClick: e.disabled ? void 0 : e.onClick,
+					onMouseEnter: e.onMouseEnter,
+					onMouseLeave: e.onMouseLeave
 				}, e.children, e.text && s.a.createElement("span", {
-					className: c.a.TextWrapper
+					className: Object(o.a)(c.a.TextWrapper, e.textClassName)
 				}, e.text, " ")),
 				l = i.a.wrapped(d, "ApproveButton", c.a),
 				u = i.a.wrapped(d, "RemoveButton", c.a),
@@ -3289,4 +3291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c889af5f23aaacb523b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.128a0e6cbb2c353f0fcd.js.map

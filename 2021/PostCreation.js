@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d6c6f9cec652186402b1.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c15ef81ba7b41a5609f1.js
+// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8771,9 +8771,11 @@
 					className: Object(s.a)(c.a.Button, e.className),
 					disabled: e.disabled,
 					id: e.id,
-					onClick: e.disabled ? void 0 : e.onClick
+					onClick: e.disabled ? void 0 : e.onClick,
+					onMouseEnter: e.onMouseEnter,
+					onMouseLeave: e.onMouseLeave
 				}, e.children, e.text && r.a.createElement("span", {
-					className: c.a.TextWrapper
+					className: Object(s.a)(c.a.TextWrapper, e.textClassName)
 				}, e.text, " ")),
 				l = i.a.wrapped(d, "ApproveButton", c.a),
 				u = i.a.wrapped(d, "RemoveButton", c.a),
@@ -30226,4 +30228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d6c6f9cec652186402b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c15ef81ba7b41a5609f1.js.map

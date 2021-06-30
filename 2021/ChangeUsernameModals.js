@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.56518b54693f760d1a38.js
-// Retrieved at 6/10/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.dda58f9a9abbd52a1150.js
+// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -256,7 +256,9 @@
 						validityState: r || void 0
 					}), o.a.createElement(w, {
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
-					}), o.a.createElement("div", null, o.a.createElement(S.i, {
+					}), o.a.createElement("div", {
+						className: T.a.buttonWrapper
+					}, o.a.createElement(S.i, {
 						className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 						disabled: !c,
 						onClick: this.handleContinue
@@ -825,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.56518b54693f760d1a38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.dda58f9a9abbd52a1150.js.map

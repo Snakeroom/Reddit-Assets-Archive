@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.1faea66a38093cd64212.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.af799935ca39836cc2b6.js
+// Retrieved at 6/30/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -88,7 +88,7 @@
 			})), r.d(t, "a", (function() {
 				return W
 			})), r.d(t, "b", (function() {
-				return K
+				return B
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/constants/index.ts"),
@@ -234,13 +234,26 @@
 							forceLoad: !0,
 							fullData: !1
 						})));
-						const r = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : `${s.fbt.plural("community",e.length,{many:"communities",name:"communities",showCount:"yes"})}`;
+						const r = 1 === e.length ? `${"subreddit"===e[0].type?i.d.subreddit:i.d.profile}${e[0].name}` : s.fbt._({
+								"*": "{communities} communities",
+								_1: "1 community"
+							}, [s.fbt._plural(e.length, "communities")], {
+								hk: "IgDzJ"
+							}),
+							n = s.fbt._("Sucсessfully followed {communityname}", [s.fbt._param("communityname", r)], {
+								hk: "1S5AXJ"
+							}),
+							c = s.fbt._("Sucсessfully unfollowed {communityname}", [s.fbt._param("communityname", r)], {
+								hk: "2XWHyB"
+							}),
+							d = s.fbt._("Sucсessfully joined {communityname}", [s.fbt._param("communityname", r)], {
+								hk: "3Al8aF"
+							}),
+							l = s.fbt._("Sucсessfully left {communityname}", [s.fbt._param("communityname", r)], {
+								hk: "2w5JFZ"
+							});
 						o(Object(u.f)({
-							text: 1 === e.length && "profile" === e[0].type ? s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "followed" : "unfollowed"), s.fbt._param("communityname", r)], {
-								hk: "1hY5KX"
-							}) : s.fbt._("Sucсessfully {verb} {communityname}", [s.fbt._param("verb", t ? "joined" : "left"), s.fbt._param("communityname", r)], {
-								hk: "1hY5KX"
-							})
+							text: 1 === e.length && "profile" === e[0].type ? t ? n : c : t ? d : l
 						}))
 					} else {
 						o(F({
@@ -333,7 +346,7 @@
 						multiredditPath: e,
 						multiredditsModelsState: o
 					})), i())
-				}, H = Object(o.a)(l.e), K = e => async (t, r, {
+				}, H = Object(o.a)(l.e), B = e => async (t, r, {
 					apiContext: o
 				}) => {
 					const i = r(),
@@ -708,8 +721,8 @@
 				}),
 				W = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(I.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(k.a)(Object(I.a)(e).post, j.b.black, j.b.white) : e.textColor === v.e.Dark ? j.b.black : j.b.white,
 				H = p.a.wrapped(M, "TextFlair", E.a),
-				K = p.a.wrapped(U, "RichTextFlair", E.a),
-				B = e => {
+				B = p.a.wrapped(U, "RichTextFlair", E.a),
+				K = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -720,7 +733,7 @@
 					}
 				},
 				q = p.a.wrapped(e => {
-					const t = B(e),
+					const t = K(e),
 						r = c.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -755,7 +768,7 @@
 				}, t);
 				switch (n.type) {
 					case v.f.Richtext:
-						return r || !n.richtext ? null : c.a.createElement(K, {
+						return r || !n.richtext ? null : c.a.createElement(B, {
 							backgroundColor: n.backgroundColor,
 							className: h,
 							forceSmallEmojis: b,
@@ -2248,9 +2261,9 @@
 			})), r.d(t, "G", (function() {
 				return H
 			})), r.d(t, "r", (function() {
-				return K
-			})), r.d(t, "e", (function() {
 				return B
+			})), r.d(t, "e", (function() {
+				return K
 			})), r.d(t, "v", (function() {
 				return q
 			})), r.d(t, "L", (function() {
@@ -2444,10 +2457,10 @@
 					}
 					return null
 				},
-				K = (e, {
+				B = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				B = (e, {
+				K = (e, {
 					commentId: t
 				}) => {
 					const r = t ? e.features.comments.models[t] : void 0;
@@ -2566,4 +2579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.1faea66a38093cd64212.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.af799935ca39836cc2b6.js.map
