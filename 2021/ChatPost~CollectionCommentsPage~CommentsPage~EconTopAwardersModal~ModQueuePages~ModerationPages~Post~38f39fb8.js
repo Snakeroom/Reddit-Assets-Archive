@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.eec98788e309f471cb41.js
-// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.511defe4a9ea36db5838.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, r) {
@@ -65,7 +65,7 @@
 				a = r("./src/reddit/constants/modals.ts"),
 				o = r("./src/reddit/actions/gold/constants.ts");
 			const i = Object(s.a)(o.mb),
-				d = Object(s.a)(o.u),
+				d = Object(s.a)(o.t),
 				c = e => async t => {
 					await t(d({
 						id: e
@@ -291,7 +291,7 @@
 				m = r("./src/reddit/actions/gold/constants.ts"),
 				p = r("./src/reddit/actions/toaster.ts"),
 				h = r("./src/reddit/models/Toast/index.ts");
-			const b = Object(l.a)(m.E),
+			const b = Object(l.a)(m.D),
 				f = ({
 					awardId: e,
 					thingId: t
@@ -3130,4 +3130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.eec98788e309f471cb41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.511defe4a9ea36db5838.js.map

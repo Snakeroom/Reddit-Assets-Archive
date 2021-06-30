@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.45f735814ce9aea14ee5.js
-// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c889af5f23aaacb523b1.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -852,8 +852,8 @@
 				p = r("./src/reddit/selectors/subreddit.ts"),
 				f = r("./src/telemetry/index.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const h = Object(n.a)(b.M),
-				g = Object(n.a)(b.g),
+			const h = Object(n.a)(b.L),
+				g = Object(n.a)(b.f),
 				_ = () => async (e, t) => {
 					const n = t();
 					e(g()), Object(c.b)(c.a.GiftPremiumFlow);
@@ -861,7 +861,7 @@
 						clickCloseModalEvent: s
 					} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(f.a)(s()(n))
-				}, E = Object(n.a)(b.L), y = ({
+				}, E = Object(n.a)(b.K), y = ({
 					awardId: e,
 					correlationId: t,
 					thingId: r
@@ -885,7 +885,7 @@
 						e && (b = e.belongsTo.id)
 					}
 					b && Object(d.a)(b, r)
-				}, v = Object(n.a)(b.f), w = Object(n.a)(b.K), O = () => async (e, t) => {
+				}, v = Object(n.a)(b.e), w = Object(n.a)(b.J), O = () => async (e, t) => {
 					const n = t(),
 						o = Object(a.d)(n);
 					if (Object(a.g)(n)) {
@@ -3289,4 +3289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.45f735814ce9aea14ee5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c889af5f23aaacb523b1.js.map

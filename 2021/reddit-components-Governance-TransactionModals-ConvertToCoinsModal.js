@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6f87c421d1d533f9780e.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f7db87c267612e645b6e.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -735,7 +735,7 @@
 					} catch (a) {
 						f.c.captureException(a)
 					}
-				}, S = Object(m.a)(b.P), T = Object(m.a)(b.Q), L = Object(m.a)(b.R), z = e => async (t, r) => {
+				}, S = Object(m.a)(b.O), T = Object(m.a)(b.P), L = Object(m.a)(b.Q), z = e => async (t, r) => {
 					await t(S(e)), t(Object(l.f)({
 						kind: p.b.Error,
 						duration: l.a,
@@ -768,12 +768,12 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, R = Object(m.a)(b.T), G = e => async (t, r) => {
+				}, R = Object(m.a)(b.S), G = e => async (t, r) => {
 					t(R(e)), t(Object(x.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, U = Object(m.a)(b.X), B = Object(m.a)(b.bb)
+				}, U = Object(m.a)(b.W), B = Object(m.a)(b.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -797,12 +797,12 @@
 				f = r("./src/redditGQL/operations/ProductOffers.json");
 			var p = r("./src/reddit/selectors/gold/productOffers.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const h = Object(a.a)(b.eb),
-				v = Object(a.a)(b.db),
-				g = Object(a.a)(b.cb),
-				E = Object(a.a)(b.ab),
-				y = Object(a.a)(b.Z),
-				x = Object(a.a)(b.Y),
+			const h = Object(a.a)(b.db),
+				v = Object(a.a)(b.cb),
+				g = Object(a.a)(b.bb),
+				E = Object(a.a)(b.Z),
+				y = Object(a.a)(b.Y),
+				x = Object(a.a)(b.X),
 				O = Object(a.a)(b.Eb),
 				C = Object(a.a)(b.Cb),
 				j = Object(a.a)(b.Db),
@@ -3225,4 +3225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6f87c421d1d533f9780e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f7db87c267612e645b6e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.64b2b09b5b7bcb54c4f3.js
-// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.14186c48c5350a1c2dc7.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -382,33 +382,34 @@
 				N = n("./src/reddit/selectors/user.ts"),
 				C = n("./src/redditGQL/operations/Frontpage.json");
 			const S = (e, t) => {
+					var n;
 					const {
-						after: n,
-						dist: s,
-						isMobile: r,
-						layout: o,
-						limit: i,
-						sort: a,
-						t: l
-					} = t, u = Object(N.R)(e) || Object(N.K)(e), b = Object(E.o)(e), h = Object.values(d.y).map(e => e), g = Object(j.b)(e), f = h.includes(g) ? g : d.y.Everywhere, y = {
+						after: s,
+						dist: r,
+						isMobile: o,
+						layout: i,
+						limit: a,
+						sort: l,
+						t: u
+					} = t, b = Object(N.R)(e) || Object(N.K)(e), h = Object(E.o)(e), g = Object.values(d.y).map(e => e), f = Object(j.b)(e), y = g.includes(f) ? f : d.y.Everywhere, _ = {
 						adContext: {
-							layout: o ? o.toUpperCase() : m.a.Card,
+							layout: i ? i.toUpperCase() : m.a.Card,
 							reddaid: e.user.reddaid,
-							distance: s
+							distance: r
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
-						includeIdentity: u && !e.user.account,
+						includeIdentity: b && !(null === (n = e.user.account) || void 0 === n ? void 0 : n.totalKarma),
 						includePostRecommendations: !1,
-						includeSubredditQuestions: u,
+						includeSubredditQuestions: b,
 						recentPostIds: e.posts.recent,
-						region: f
+						region: y
 					};
-					return a && (y.sort = a.toUpperCase()), l && (y.range = l.toUpperCase()), r ? y.pageSize = Object(p.a)(o) : i && (y.pageSize = i), b && b.ad && (y.forceAds = {
-						ad: b.ad
-					}), n && (y.after = Object(c.a)(n)), y
+					return l && (_.sort = l.toUpperCase()), u && (_.range = u.toUpperCase()), o ? _.pageSize = Object(p.a)(i) : a && (_.pageSize = a), h && h.ad && (_.forceAds = {
+						ad: h.ad
+					}), s && (_.after = Object(c.a)(s)), _
 				},
 				P = async (e, t, n, s) => {
 					const r = Date.now(),
@@ -4633,4 +4634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.64b2b09b5b7bcb54c4f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.14186c48c5350a1c2dc7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.9f8e466eadcb4ad58ecf.js
-// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.71ebf9eb911acd5487cd.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -392,8 +392,8 @@
 				p = r("./src/reddit/selectors/subreddit.ts"),
 				h = r("./src/telemetry/index.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const f = Object(s.a)(b.M),
-				E = Object(s.a)(b.g),
+			const f = Object(s.a)(b.L),
+				E = Object(s.a)(b.f),
 				g = () => async (e, t) => {
 					const s = t();
 					e(E()), Object(c.b)(c.a.GiftPremiumFlow);
@@ -401,7 +401,7 @@
 						clickCloseModalEvent: n
 					} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(h.a)(n()(s))
-				}, _ = Object(s.a)(b.L), v = ({
+				}, _ = Object(s.a)(b.K), v = ({
 					awardId: e,
 					correlationId: t,
 					thingId: r
@@ -425,7 +425,7 @@
 						e && (b = e.belongsTo.id)
 					}
 					b && Object(d.a)(b, r)
-				}, O = Object(s.a)(b.f), S = Object(s.a)(b.K), C = () => async (e, t) => {
+				}, O = Object(s.a)(b.e), S = Object(s.a)(b.J), C = () => async (e, t) => {
 					const s = t(),
 						i = Object(o.d)(s);
 					if (Object(o.g)(s)) {
@@ -3745,4 +3745,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9f8e466eadcb4ad58ecf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.71ebf9eb911acd5487cd.js.map

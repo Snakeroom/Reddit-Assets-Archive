@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b4242ab12f68e410947b.js
-// Retrieved at 6/30/2021, 11:30:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.355b8b396286022473b9.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -6043,7 +6043,7 @@
 			const te = {};
 			var re = (e = te, t) => {
 				switch (t.type) {
-					case ee.e: {
+					case ee.d: {
 						const {
 							disabled: r,
 							subredditOrProfileId: s
@@ -6059,10 +6059,10 @@
 			};
 			var se = (e = null, t) => {
 				switch (t.type) {
-					case ee.i:
-					case ee.j:
-						return null;
 					case ee.h:
+					case ee.i:
+						return null;
+					case ee.g:
 						return t.payload;
 					default:
 						return e
@@ -6071,10 +6071,10 @@
 			var ae = (e = !1, t) => {
 					switch (t.type) {
 						case u.a:
-						case ee.j:
-						case ee.h:
-							return !1;
 						case ee.i:
+						case ee.g:
+							return !1;
+						case ee.h:
 							return !0;
 						default:
 							return e
@@ -6089,10 +6089,10 @@
 				});
 			var oe = (e = null, t) => {
 				switch (t.type) {
-					case ee.I:
 					case ee.H:
-						return null;
 					case ee.G:
+						return null;
+					case ee.F:
 						return t.payload;
 					default:
 						return e
@@ -6101,7 +6101,7 @@
 			const de = {};
 			var ie = (e = de, t) => {
 					switch (t.type) {
-						case ee.I: {
+						case ee.H: {
 							const {
 								subredditOrProfileId: r
 							} = t.payload;
@@ -6110,10 +6110,10 @@
 								[r]: !0
 							}
 						}
-						case ee.e:
-						case ee.H:
-						case ee.N:
-						case ee.G: {
+						case ee.d:
+						case ee.G:
+						case ee.M:
+						case ee.F: {
 							const {
 								subredditOrProfileId: r
 							} = t.payload;
@@ -6133,7 +6133,7 @@
 			const le = {};
 			var pe = (e = le, t) => {
 				switch (t.type) {
-					case ee.N: {
+					case ee.M: {
 						const {
 							awards: r,
 							subredditOrProfileId: s
@@ -6145,7 +6145,7 @@
 							[s]: a
 						}
 					}
-					case ee.m: {
+					case ee.l: {
 						const {
 							awardId: r,
 							subredditId: s
@@ -6158,7 +6158,7 @@
 							}
 						}
 					}
-					case ee.p: {
+					case ee.o: {
 						const {
 							awardId: r,
 							subredditId: s
@@ -6178,7 +6178,7 @@
 			const be = {};
 			var fe = (e = be, t) => {
 					switch (t.type) {
-						case ee.H: {
+						case ee.G: {
 							const {
 								awards: r,
 								subredditOrProfileId: s
@@ -6188,7 +6188,7 @@
 								[s]: a
 							}
 						}
-						case ee.j: {
+						case ee.i: {
 							const {
 								award: r,
 								subredditId: s
@@ -6252,13 +6252,13 @@
 			var xe = (e = Le, t) => {
 				var r;
 				switch (t.type) {
-					case ee.H: {
+					case ee.G: {
 						const {
 							awards: r
 						} = t.payload;
 						return ke(e, r)
 					}
-					case ee.N: {
+					case ee.M: {
 						const r = t.payload.awards.reduce((e, t) => (e[t.id] = {
 							...Ne(t),
 							isEnabled: !0
@@ -6267,7 +6267,7 @@
 							...e
 						}, r)
 					}
-					case ee.c: {
+					case ee.b: {
 						const {
 							awards: r
 						} = t.payload, s = r.reduce((e, t) => (e[t.award.id] = Ne(t.award), e), {});
@@ -6275,7 +6275,7 @@
 							...e
 						}, s)
 					}
-					case ee.j: {
+					case ee.i: {
 						const {
 							award: r
 						} = t.payload;
@@ -6393,7 +6393,7 @@
 			const Ue = {};
 			var Me = (e = Ue, t) => {
 					switch (t.type) {
-						case ee.d: {
+						case ee.c: {
 							const {
 								subredditOrProfileId: r,
 								thingId: s
@@ -6406,8 +6406,8 @@
 								}
 							}
 						}
-						case ee.c:
-						case ee.b: {
+						case ee.b:
+						case ee.a: {
 							const {
 								subredditOrProfileId: r,
 								thingId: s
@@ -6430,7 +6430,7 @@
 			const Fe = {};
 			var Be = (e = Fe, t) => {
 					switch (t.type) {
-						case ee.c: {
+						case ee.b: {
 							const {
 								awards: r,
 								subredditOrProfileId: s,
@@ -6463,7 +6463,7 @@
 			const He = {};
 			var qe = (e = He, t) => {
 					switch (t.type) {
-						case ee.c: {
+						case ee.b: {
 							const {
 								tags: r,
 								subredditOrProfileId: s
@@ -9919,12 +9919,12 @@
 			};
 			var Vc = (e = null, t) => {
 				switch (t.type) {
-					case ee.q:
+					case ee.p:
 						return t.payload;
-					case ee.f:
+					case ee.e:
 					case u.a:
-					case ee.L:
-					case ee.t:
+					case ee.K:
+					case ee.s:
 						return null;
 					default:
 						return e
@@ -9932,12 +9932,12 @@
 			};
 			var Hc = (e = !1, t) => {
 				switch (t.type) {
-					case ee.f:
+					case ee.e:
 					case u.a:
-					case ee.t:
-					case ee.q:
+					case ee.s:
+					case ee.p:
 						return !1;
-					case ee.r:
+					case ee.q:
 						return !0;
 					default:
 						return e
@@ -9945,13 +9945,13 @@
 			};
 			var qc = (e = !1, t) => {
 					switch (t.type) {
-						case ee.r:
-						case ee.f:
-						case u.a:
-						case ee.t:
 						case ee.q:
+						case ee.e:
+						case u.a:
+						case ee.s:
+						case ee.p:
 							return !1;
-						case ee.v:
+						case ee.u:
 							return !0;
 						default:
 							return e
@@ -9964,16 +9964,16 @@
 				});
 			var Wc = (e = null, t) => {
 				switch (t.type) {
-					case ee.M:
-					case ee.L: {
+					case ee.L:
+					case ee.K: {
 						if (!t.payload) return null;
 						const {
 							correlationId: e
 						} = t.payload;
 						return e
 					}
-					case ee.g:
 					case ee.f:
+					case ee.e:
 						return null;
 					default:
 						return e
@@ -9981,7 +9981,7 @@
 			};
 			var $c = (e = null, t) => {
 				switch (t.type) {
-					case ee.u: {
+					case ee.t: {
 						const {
 							id: e
 						} = t.payload;
@@ -9994,12 +9994,12 @@
 			var Qc = (e = null, t) => {
 				const r = t.payload;
 				switch (t.type) {
+					case ee.J:
 					case ee.K:
-					case ee.L:
 						return r.thingId;
-					case ee.t:
+					case ee.s:
 					case u.a:
-					case ee.f:
+					case ee.e:
 						return null;
 					default:
 						return e
@@ -10007,9 +10007,9 @@
 			};
 			var Jc = (e = !1, t) => {
 				switch (t.type) {
-					case ee.s:
+					case ee.r:
 						return t.payload;
-					case ee.L:
+					case ee.K:
 						return !1;
 					default:
 						return e
@@ -10017,7 +10017,7 @@
 			};
 			var zc = (e = !1, t) => {
 				switch (t.type) {
-					case ee.K:
+					case ee.J:
 						return !0;
 					default:
 						return e
@@ -10025,9 +10025,9 @@
 			};
 			var Xc = (e = "", t) => {
 				switch (t.type) {
-					case ee.w:
+					case ee.v:
 						return t.payload;
-					case ee.L:
+					case ee.K:
 						return "";
 					default:
 						return e
@@ -10038,7 +10038,7 @@
 					switch (t.type) {
 						case ee.mb:
 							return t.payload;
-						case ee.L: {
+						case ee.K: {
 							const {
 								award: e
 							} = t.payload;
@@ -10060,12 +10060,12 @@
 				});
 			var to = (e = null, t) => {
 				switch (t.type) {
-					case ee.x:
+					case ee.w:
 						return t.payload.error && t.payload.error.fields && t.payload.error.fields[0] && t.payload.error.fields[0].msg || "An unknown error occurred";
-					case ee.g:
+					case ee.f:
 					case u.a:
-					case ee.M:
-					case ee.C:
+					case ee.L:
+					case ee.B:
 						return null;
 					default:
 						return e
@@ -10073,12 +10073,12 @@
 			};
 			var ro = (e = !1, t) => {
 					switch (t.type) {
-						case ee.g:
+						case ee.f:
 						case u.a:
-						case ee.C:
-						case ee.x:
+						case ee.B:
+						case ee.w:
 							return !1;
-						case ee.y:
+						case ee.x:
 							return !0;
 						default:
 							return e
@@ -10090,15 +10090,15 @@
 				});
 			var ao = (e = "", t) => {
 					switch (t.type) {
-						case ee.M: {
+						case ee.L: {
 							const {
 								profileName: e
 							} = t.payload;
 							return e
 						}
 						case u.a:
-						case ee.g:
-						case ee.C:
+						case ee.f:
+						case ee.B:
 							return "";
 						default:
 							return e
@@ -13715,7 +13715,7 @@
 							...r.reduce((e, t) => (e[t.post.id] = op([cp])(Object(qs.e)(t.post)), e), {})
 						}
 					}
-					case ee.t: {
+					case ee.s: {
 						const {
 							id: r,
 							awardings: s,
@@ -13730,7 +13730,7 @@
 							}
 						} : e
 					}
-					case ee.E: {
+					case ee.D: {
 						const {
 							awardId: r,
 							thingId: s
@@ -17027,7 +17027,7 @@
 							...r
 						}
 					}
-					case ee.t: {
+					case ee.s: {
 						const {
 							subredditId: r,
 							subredditCoins: s
@@ -17236,10 +17236,10 @@
 				});
 			var XE = (e = null, t) => {
 				switch (t.type) {
-					case ee.cb:
+					case ee.bb:
 						return t.payload || null;
-					case ee.eb:
 					case ee.db:
+					case ee.cb:
 						return null;
 					default:
 						return e
@@ -17247,10 +17247,10 @@
 			};
 			var YE = (e = !1, t) => {
 					switch (t.type) {
-						case ee.eb:
-							return !0;
 						case ee.db:
+							return !0;
 						case ee.cb:
+						case ee.bb:
 							return !1;
 						default:
 							return e
@@ -17992,8 +17992,8 @@
 							[s]: r
 						}
 					}
-					case ee.T:
-					case ee.W: {
+					case ee.S:
+					case ee.V: {
 						const {
 							subredditId: r,
 							powerupsCount: s,
@@ -18048,7 +18048,7 @@
 							[s]: a
 						}
 					}
-					case ee.J: {
+					case ee.I: {
 						const {
 							subredditsPowerupsInfo: r
 						} = t.payload, s = r.reduce((e, {
@@ -18063,8 +18063,8 @@
 							...s
 						}
 					}
-					case ee.T:
-					case ee.W: {
+					case ee.S:
+					case ee.V: {
 						const {
 							subredditId: s,
 							powerupsCount: a
@@ -18168,8 +18168,8 @@
 								[s]: r.sort(S_)
 							}
 						}
-						case ee.T:
-						case ee.W: {
+						case ee.S:
+						case ee.V: {
 							const {
 								subredditId: r,
 								powerupsCount: s,
@@ -18220,7 +18220,7 @@
 			const T_ = {};
 			var w_ = (e = T_, t) => {
 				switch (t.type) {
-					case ee.db:
+					case ee.cb:
 					case ee.pb: {
 						const {
 							subredditId: r,
@@ -19503,7 +19503,7 @@
 							} = t.payload;
 							return e === r ? null : e
 						}
-						case ee.L:
+						case ee.K:
 						case yI.d:
 						case u.a:
 						case oo.b:
@@ -19893,16 +19893,18 @@
 				const {
 					awardeeKarma: a,
 					awarderKarma: n,
-					commentKarma: c,
-					postKarma: o,
+					postKarma: c,
+					commentKarma: o,
 					totalKarma: d
-				} = t, i = (null == s ? void 0 : s.awardeeKarma) || 0, u = (null == s ? void 0 : s.awarderKarma) || 0, l = a || i, p = n || u, b = d || l + p + o + c;
+				} = t, i = a || (null == s ? void 0 : s.awardeeKarma) || 0, u = n || (null == s ? void 0 : s.awarderKarma) || 0, l = c || (null == s ? void 0 : s.postKarma) || 0, p = o || (null == s ? void 0 : s.commentKarma) || 0, b = d || (null == s ? void 0 : s.totalKarma) || 0;
 				return {
 					...t,
-					awardeeKarma: l,
-					awarderKarma: p,
-					gender: r,
-					totalKarma: b
+					awardeeKarma: i,
+					awarderKarma: u,
+					postKarma: l,
+					commentKarma: p,
+					totalKarma: b,
+					gender: r
 				}
 			};
 			var ig = Object(_b.a)((e = null, t) => {
@@ -19996,8 +19998,8 @@
 							accountIcon: r.imageUrl
 						} : e
 					}
-					case ee.C:
-					case ee.t: {
+					case ee.B:
+					case ee.s: {
 						const {
 							coins: r
 						} = t.payload;
@@ -20006,21 +20008,28 @@
 							coins: r
 						} : e
 					}
-					case ee.a: {
+					case ee.eb: {
 						const {
 							userName: r,
 							awarderKarma: s,
-							awardeeKarma: a
+							awardeeKarma: a,
+							postKarma: n,
+							commentKarma: c,
+							totalKarma: o
 						} = t.payload;
 						if (r.toLowerCase() !== (e && Object(J.e)(e).toLowerCase())) return e;
-						const n = a || (e ? e.awardeeKarma : 0) || 0,
-							c = s || (e ? e.awarderKarma : 0) || 0,
-							o = n + c + (e ? e.postKarma : 0) + (e ? e.commentKarma : 0);
+						const d = a || (null == e ? void 0 : e.awardeeKarma) || 0,
+							i = s || (null == e ? void 0 : e.awarderKarma) || 0,
+							u = n || (null == e ? void 0 : e.postKarma) || 0,
+							l = c || (null == e ? void 0 : e.commentKarma) || 0,
+							p = o || (null == e ? void 0 : e.totalKarma) || 0;
 						return e && {
 							...e,
-							awardeeKarma: n,
-							awarderKarma: c,
-							totalKarma: o
+							awardeeKarma: d,
+							awarderKarma: i,
+							postKarma: u,
+							commentKarma: l,
+							totalKarma: p
 						}
 					}
 					case Se.w: {
@@ -20663,7 +20672,7 @@
 							...s
 						}
 					}
-					case ee.V: {
+					case ee.U: {
 						const {
 							subredditId: r,
 							powerupsCount: s,
@@ -20684,7 +20693,7 @@
 						}
 						return e
 					}
-					case ee.Q: {
+					case ee.P: {
 						const {
 							subredditId: r,
 							allocatedAt: s
@@ -20720,7 +20729,7 @@
 							...r
 						}, "allocation") : e
 					}
-					case ee.V: {
+					case ee.U: {
 						const {
 							powerupsCount: r
 						} = t.payload;
@@ -20733,7 +20742,7 @@
 						}
 						return e
 					}
-					case ee.W: {
+					case ee.V: {
 						const {
 							powerupsCount: r
 						} = t.payload;
@@ -21149,7 +21158,7 @@
 								[r.username]: r
 							})
 						}
-						case ee.t: {
+						case ee.s: {
 							const {
 								gildee: r
 							} = t.payload;
@@ -21169,21 +21178,29 @@
 								}
 							}) : e
 						}
-						case ee.a: {
+						case ee.eb: {
 							const {
 								userName: r,
 								awardeeKarma: s,
-								awarderKarma: a
-							} = t.payload, n = e[r.toLowerCase()];
-							if (!n) return e;
-							const c = s || n.awardeeKarma,
-								o = a || n.awarderKarma;
+								awarderKarma: a,
+								postKarma: n,
+								commentKarma: c,
+								totalKarma: o
+							} = t.payload, d = e[r.toLowerCase()];
+							if (!d) return e;
+							const i = s || d.awardeeKarma,
+								u = a || d.awarderKarma,
+								l = n || d.postKarma,
+								p = c || d.commentKarma,
+								b = o || d.totalKarma;
 							return rv(e, {
 								[r.toLowerCase()]: {
-									...n,
-									awardeeKarma: c,
-									awarderKarma: o,
-									totalKarma: c + o + n.postKarma + n.commentKarma
+									...d,
+									awardeeKarma: i,
+									awarderKarma: u,
+									postKarma: l,
+									commentKarma: p,
+									totalKarma: b
 								}
 							})
 						}
@@ -21362,7 +21379,7 @@
 								[r]: (s || []).sort((e, t) => e.rank - t.rank)
 							}
 						}
-						case ee.t: {
+						case ee.s: {
 							const {
 								id: r
 							} = t.payload;
@@ -22198,4 +22215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b4242ab12f68e410947b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.355b8b396286022473b9.js.map

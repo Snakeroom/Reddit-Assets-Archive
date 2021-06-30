@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.bba45d2abc6bd8837de2.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.2b56a419ce1db8181987.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -125,8 +125,8 @@
 				W = s("./src/reddit/actions/gold/awardKarma.ts"),
 				z = s("./src/reddit/actions/gold/constants.ts"),
 				U = s("./src/reddit/actions/gold/econPurchase.ts");
-			const B = Object(a.a)(z.s),
-				Z = Object(a.a)(z.w),
+			const B = Object(a.a)(z.r),
+				Z = Object(a.a)(z.v),
 				H = (e, t) => async (s, a, {
 					gqlContext: d
 				}) => {
@@ -191,17 +191,17 @@
 					} finally {
 						Object(M.b)(M.a.GildingFlow)
 					}
-				}, J = Object(a.a)(z.v), V = Object(a.a)(z.r), $ = () => async (e, t) => {
+				}, J = Object(a.a)(z.u), V = Object(a.a)(z.q), $ = () => async (e, t) => {
 					e(V()), window.setTimeout(() => {
 						t().gild.api.pending && e(J())
 					}, 2e3)
-				}, X = Object(a.a)(z.q), ee = e => async (t, s) => {
+				}, X = Object(a.a)(z.p), ee = e => async (t, s) => {
 					await t(X(e)), t(Object(l.f)({
 						kind: y.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, te = Object(a.a)(z.t), se = (e, t) => {
+				}, te = Object(a.a)(z.s), se = (e, t) => {
 					const {
 						id: s
 					} = t, r = Object(N.a)(s) ? Object(G.F)(e, {
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.bba45d2abc6bd8837de2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.2b56a419ce1db8181987.js.map

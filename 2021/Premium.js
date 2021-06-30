@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.2f493278d9625e5f0b9a.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.35a015617378533bd5fb.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -58,9 +58,9 @@
 			})), r.d(t, "f", (function() {
 				return I
 			})), r.d(t, "e", (function() {
-				return N
-			})), r.d(t, "d", (function() {
 				return S
+			})), r.d(t, "d", (function() {
+				return N
 			})), r.d(t, "c", (function() {
 				return M
 			})), r.d(t, "a", (function() {
@@ -142,14 +142,14 @@
 					let w, C, I = "";
 					try {
 						I = await c(E(t, a, _))
-					} catch (S) {
-						return p.c.captureException(S), void(S.message && c(Object(h.stripeApiError)(S.message)))
+					} catch (N) {
+						return p.c.captureException(N), void(N.message && c(Object(h.stripeApiError)(N.message)))
 					}
 					c(Object(h.stripeTokenPending)());
-					const N = Object(y.y)(m);
-					if (N || (w = await c(Object(h.validateAndCreateStripeToken)(e)), C = Object(y.v)(m), w)) try {
+					const S = Object(y.y)(m);
+					if (S || (w = await c(Object(h.validateAndCreateStripeToken)(e)), C = Object(y.v)(m), w)) try {
 						const t = s()(),
-							n = N || C ? w && C ? Object(O.h)(l(), t, I, w.id) : N ? Object(O.j)(l(), t, I, N) : null : Object(O.i)(l(), t, I, w.id),
+							n = S || C ? w && C ? Object(O.h)(l(), t, I, w.id) : S ? Object(O.j)(l(), t, I, S) : null : Object(O.i)(l(), t, I, w.id),
 							o = await n;
 						if (!(null == o ? void 0 : o.ok)) return void f();
 						const m = o.body.data.createEconPayment;
@@ -168,7 +168,7 @@
 								} = t;
 							if (r) return void(r.message ? c(Object(h.stripeApiError)(r.message)) : f());
 							let n;
-							if (!(n = N ? await Object(O.e)(l(), s()(), g.id, N) : await Object(O.d)(l(), s()(), g.id, w.id, C)).ok) return void f();
+							if (!(n = S ? await Object(O.e)(l(), s()(), g.id, S) : await Object(O.d)(l(), s()(), g.id, w.id, C)).ok) return void f();
 							const a = n.body;
 							if (!a.data.confirmEconPayment.ok || a.data.confirmEconPayment.payment.status !== O.a.Paid) return void f()
 						} else if (p && g.status !== O.a.Paid) return void f();
@@ -181,8 +181,8 @@
 						})) : b && c(q({
 							user: v
 						})))
-					} catch (S) {
-						p.c.captureException(S), f()
+					} catch (N) {
+						p.c.captureException(N), f()
 					}
 				}, I = (e, t, r, n, a) => async (o, i, {
 					gqlContext: d
@@ -256,7 +256,7 @@
 						p.c.captureException(I)
 					}
 					return o(Object(h.paypalApiError)(w())), null
-				}, N = (e, t) => async (r, n, {
+				}, S = (e, t) => async (r, n, {
 					gqlContext: a
 				}) => {
 					var o;
@@ -272,7 +272,7 @@
 						p.c.captureException(i)
 					}
 					return r(Object(h.paypalApiError)(w())), !1
-				}, S = () => async (e, t, {
+				}, N = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					e(Object(h.savedCardsPending)());
@@ -309,7 +309,7 @@
 					} catch (a) {
 						p.c.captureException(a)
 					}
-				}, B = Object(m.a)(b.P), T = Object(m.a)(b.Q), L = Object(m.a)(b.R), A = e => async (t, r) => {
+				}, B = Object(m.a)(b.O), T = Object(m.a)(b.P), L = Object(m.a)(b.Q), A = e => async (t, r) => {
 					await t(B(e)), t(Object(l.f)({
 						kind: f.b.Error,
 						duration: l.a,
@@ -342,12 +342,12 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, R = Object(m.a)(b.T), U = e => async (t, r) => {
+				}, R = Object(m.a)(b.S), U = e => async (t, r) => {
 					t(R(e)), t(Object(k.k)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(_.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(_.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, q = Object(m.a)(b.X), F = Object(m.a)(b.bb)
+				}, q = Object(m.a)(b.W), F = Object(m.a)(b.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -371,12 +371,12 @@
 				p = r("./src/redditGQL/operations/ProductOffers.json");
 			var f = r("./src/reddit/selectors/gold/productOffers.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const h = Object(a.a)(b.eb),
-				g = Object(a.a)(b.db),
-				y = Object(a.a)(b.cb),
-				P = Object(a.a)(b.ab),
-				v = Object(a.a)(b.Z),
-				k = Object(a.a)(b.Y),
+			const h = Object(a.a)(b.db),
+				g = Object(a.a)(b.cb),
+				y = Object(a.a)(b.bb),
+				P = Object(a.a)(b.Z),
+				v = Object(a.a)(b.Y),
+				k = Object(a.a)(b.X),
 				_ = Object(a.a)(b.Eb),
 				O = Object(a.a)(b.Cb),
 				j = Object(a.a)(b.Db),
@@ -390,8 +390,8 @@
 						text: e
 					}))
 				}, I = (e, t) => async r => {
-					e === s.c.Premium ? r(S()) : t && r(N(e, t))
-				}, N = (e, t) => async (r, a, {
+					e === s.c.Premium ? r(N()) : t && r(S(e, t))
+				}, S = (e, t) => async (r, a, {
 					gqlContext: o
 				}) => {
 					const i = a();
@@ -425,7 +425,7 @@
 							r(y(e)), r(C(e))
 						}
 					}
-				}, S = () => async (e, t, {
+				}, N = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					var a, i;
@@ -1109,9 +1109,9 @@
 			})), r.d(t, "h", (function() {
 				return I
 			})), r.d(t, "d", (function() {
-				return N
-			})), r.d(t, "g", (function() {
 				return S
+			})), r.d(t, "g", (function() {
+				return N
 			}));
 			var n = r("./node_modules/react/index.js"),
 				a = r.n(n),
@@ -1275,14 +1275,14 @@
 					kind: f.Button,
 					className: Object(o.a)(e, c.a.PremiumButtonColors)
 				}, t)),
-				N = ({
+				S = ({
 					className: e,
 					...t
 				}) => a.a.createElement(b, d({
 					kind: f.Button,
 					className: Object(o.a)(e, c.a.ChatButton)
 				}, t)),
-				S = ({
+				N = ({
 					className: e,
 					...t
 				}) => a.a.createElement(b, d({
@@ -2195,8 +2195,8 @@
 				E = r("./src/reddit/actions/login.ts"),
 				C = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				I = r("./src/reddit/actions/gold/productOffers.ts"),
-				N = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				S = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				S = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
+				N = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				M = r("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				B = r("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
 				T = r("./src/reddit/models/Gold/ProductOffer.ts"),
@@ -2478,14 +2478,14 @@
 				oe = Object(s.b)(ae, (e, t) => ({
 					onManagePremium: () => e(Object(c.b)("/settings/premium")),
 					onOpenLoginModal: () => e(Object(E.h)()),
-					onPurchasePremium: (t, r) => e(Object(N.openWithBlob)({
+					onPurchasePremium: (t, r) => e(Object(S.openWithBlob)({
 						correlationId: r,
 						packageId: t
 					})),
 					onSetPremiumRenewalInterval: t => e(Object(C.i)({
 						renewInterval: t
 					})),
-					requestPurchaseCatalog: t => e(Object(S.b)(t)),
+					requestPurchaseCatalog: t => e(Object(N.b)(t)),
 					premiumProductOffersRequested: () => e(Object(I.c)(T.c.Premium))
 				}));
 			class ie extends i.a.Component {
@@ -2724,7 +2724,7 @@
 			})), r.d(t, "e", (function() {
 				return I
 			})), r.d(t, "d", (function() {
-				return N
+				return S
 			}));
 			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				a = r("./src/lib/initializeClient/installReducer.ts"),
@@ -2762,7 +2762,7 @@
 				E = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				C = e => e.features.goldPurchase.payment.stripeToken.pending,
 				I = e => e.features.goldPurchase.payment.paypal.passthrough,
-				N = e => e.features.goldPurchase.payment.paypal.errorMessage
+				S = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2817,4 +2817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.2f493278d9625e5f0b9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.35a015617378533bd5fb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.fd1e644a675db778a336.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.761ba1d7481adbc71c71.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -31,7 +31,7 @@
 			})), r.d(t, "awardSheetInfoLoaded", (function() {
 				return F
 			})), r.d(t, "removeCommunityAward", (function() {
-				return q
+				return M
 			})), r.d(t, "removeCommunityAwardSuccessful", (function() {
 				return J
 			})), r.d(t, "disableAwardinCommunity", (function() {
@@ -141,13 +141,13 @@
 						const e = j();
 						await A(C(e))
 					}
-				}, _ = Object(n.a)(O.i), x = Object(n.a)(O.h), C = e => async (t, r) => {
+				}, _ = Object(n.a)(O.h), x = Object(n.a)(O.g), C = e => async (t, r) => {
 					await t(x(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
 					}))
-				}, R = Object(n.a)(O.j), G = ({
+				}, R = Object(n.a)(O.i), G = ({
 					award: e,
 					subredditId: t
 				}) => async (r, n) => {
@@ -213,13 +213,13 @@
 						const e = y();
 						t(T(e))
 					}
-				}, E = Object(n.a)(O.I), P = Object(n.a)(O.H), L = Object(n.a)(O.N), N = Object(n.a)(O.G), T = e => async (t, r) => {
+				}, E = Object(n.a)(O.H), P = Object(n.a)(O.G), L = Object(n.a)(O.M), N = Object(n.a)(O.F), T = e => async (t, r) => {
 					await t(N(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
 						text: e
 					}))
-				}, D = Object(n.a)(O.e), k = e => e.map(({
+				}, D = Object(n.a)(O.d), k = e => e.map(({
 					tag: e,
 					content: t
 				}) => ({
@@ -294,10 +294,10 @@
 							}))
 						}
 					}
-				}, U = Object(n.a)(O.d), Q = Object(n.a)(O.b), F = Object(n.a)(O.c), q = (e, t) => async (r, n, {
+				}, U = Object(n.a)(O.c), Q = Object(n.a)(O.a), F = Object(n.a)(O.b), M = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
-					r(M());
+					r(q());
 					try {
 						if ((await Object(m.m)(i(), t)).error) {
 							const e = A();
@@ -323,7 +323,7 @@
 						const e = A();
 						await r(H(e))
 					}
-				}, M = Object(n.a)(O.jb), J = Object(n.a)(O.kb), B = Object(n.a)(O.ib), H = e => async (t, r) => {
+				}, q = Object(n.a)(O.jb), J = Object(n.a)(O.kb), B = Object(n.a)(O.ib), H = e => async (t, r) => {
 					await t(B(e)), t(Object(o.f)({
 						kind: c.b.Error,
 						duration: o.a,
@@ -354,7 +354,7 @@
 							kind: b
 						}))
 					}
-				}, V = Object(n.a)(O.l), z = Object(n.a)(O.m), K = Object(n.a)(O.k), X = (e, t) => async (r, n, {
+				}, V = Object(n.a)(O.k), z = Object(n.a)(O.l), K = Object(n.a)(O.j), X = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
 					r(Y());
@@ -379,7 +379,7 @@
 							kind: b
 						}))
 					}
-				}, Y = Object(n.a)(O.o), $ = Object(n.a)(O.p), Z = Object(n.a)(O.n)
+				}, Y = Object(n.a)(O.n), $ = Object(n.a)(O.o), Z = Object(n.a)(O.m)
 		},
 		"./src/reddit/constants/gold.ts": function(e, t, r) {
 			"use strict";
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.fd1e644a675db778a336.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.761ba1d7481adbc71c71.js.map

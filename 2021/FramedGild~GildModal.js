@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f970da0b09ae99ac9fa4.js
-// Retrieved at 6/29/2021, 1:30:17 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7dd28fb42194123e96f9.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -436,8 +436,8 @@
 				V = s("./src/reddit/actions/gold/awardKarma.ts"),
 				q = s("./src/reddit/actions/gold/constants.ts"),
 				z = s("./src/reddit/actions/gold/econPurchase.ts");
-			const J = Object(r.a)(q.s),
-				K = Object(r.a)(q.w),
+			const J = Object(r.a)(q.r),
+				K = Object(r.a)(q.v),
 				Y = (e, t) => async (s, r, {
 					gqlContext: a
 				}) => {
@@ -502,17 +502,17 @@
 					} finally {
 						Object(F.b)(F.a.GildingFlow)
 					}
-				}, X = Object(r.a)(q.v), Q = Object(r.a)(q.r), Z = () => async (e, t) => {
+				}, X = Object(r.a)(q.u), Q = Object(r.a)(q.q), Z = () => async (e, t) => {
 					e(Q()), window.setTimeout(() => {
 						t().gild.api.pending && e(X())
 					}, 2e3)
-				}, $ = Object(r.a)(q.q), ee = e => async (t, s) => {
+				}, $ = Object(r.a)(q.p), ee = e => async (t, s) => {
 					await t($(e)), t(Object(l.f)({
 						kind: O.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, te = Object(r.a)(q.t), se = (e, t) => {
+				}, te = Object(r.a)(q.s), se = (e, t) => {
 					const {
 						id: s
 					} = t, n = Object(U.a)(s) ? Object(P.F)(e, {
@@ -657,7 +657,7 @@
 				a = s("./src/reddit/constants/modals.ts"),
 				o = s("./src/reddit/actions/gold/constants.ts");
 			const i = Object(n.a)(o.mb),
-				d = Object(n.a)(o.u),
+				d = Object(n.a)(o.t),
 				c = e => async t => {
 					await t(d({
 						id: e
@@ -5266,4 +5266,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f970da0b09ae99ac9fa4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.7dd28fb42194123e96f9.js.map

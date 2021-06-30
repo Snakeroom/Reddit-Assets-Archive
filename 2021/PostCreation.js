@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c8c449591fcd956613b7.js
-// Retrieved at 6/30/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d6c6f9cec652186402b1.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -2048,8 +2048,8 @@
 				m = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/telemetry/index.ts"),
 				b = n("./src/reddit/actions/gold/constants.ts");
-			const f = Object(o.a)(b.M),
-				g = Object(o.a)(b.g),
+			const f = Object(o.a)(b.L),
+				g = Object(o.a)(b.f),
 				E = () => async (e, t) => {
 					const o = t();
 					e(g()), Object(c.b)(c.a.GiftPremiumFlow);
@@ -2057,7 +2057,7 @@
 						clickCloseModalEvent: r
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(h.a)(r()(o))
-				}, C = Object(o.a)(b.L), y = ({
+				}, C = Object(o.a)(b.K), y = ({
 					awardId: e,
 					correlationId: t,
 					thingId: n
@@ -2081,7 +2081,7 @@
 						e && (b = e.belongsTo.id)
 					}
 					b && Object(d.a)(b, n)
-				}, x = Object(o.a)(b.f), v = Object(o.a)(b.K), O = () => async (e, t) => {
+				}, x = Object(o.a)(b.e), v = Object(o.a)(b.J), O = () => async (e, t) => {
 					const o = t(),
 						s = Object(a.d)(o);
 					if (Object(a.g)(o)) {
@@ -30226,4 +30226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c8c449591fcd956613b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d6c6f9cec652186402b1.js.map

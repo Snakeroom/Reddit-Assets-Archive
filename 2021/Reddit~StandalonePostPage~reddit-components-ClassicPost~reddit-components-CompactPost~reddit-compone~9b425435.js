@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f28f2b02dc81ae01ad05.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.650b88b4884a9b43aac7.js
+// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -167,8 +167,8 @@
 				p = r("./src/reddit/selectors/subreddit.ts"),
 				f = r("./src/telemetry/index.ts"),
 				b = r("./src/reddit/actions/gold/constants.ts");
-			const v = Object(n.a)(b.M),
-				h = Object(n.a)(b.g),
+			const v = Object(n.a)(b.L),
+				h = Object(n.a)(b.f),
 				g = () => async (e, t) => {
 					const n = t();
 					e(h()), Object(i.b)(i.a.GiftPremiumFlow);
@@ -176,7 +176,7 @@
 						clickCloseModalEvent: s
 					} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(f.a)(s()(n))
-				}, O = Object(n.a)(b.L), w = ({
+				}, O = Object(n.a)(b.K), w = ({
 					awardId: e,
 					correlationId: t,
 					thingId: r
@@ -200,7 +200,7 @@
 						e && (b = e.belongsTo.id)
 					}
 					b && Object(d.a)(b, r)
-				}, j = Object(n.a)(b.f), x = Object(n.a)(b.K), y = () => async (e, t) => {
+				}, j = Object(n.a)(b.e), x = Object(n.a)(b.J), y = () => async (e, t) => {
 					const n = t(),
 						o = Object(a.d)(n);
 					if (Object(a.g)(n)) {
@@ -2953,4 +2953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.f28f2b02dc81ae01ad05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.650b88b4884a9b43aac7.js.map
