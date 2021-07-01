@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.103f13f70b9d8d62f521.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.a94f1375bdd653b3b2c6.js
+// Retrieved at 7/1/2021, 2:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -94,8 +94,8 @@
 				E = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				x = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				g = n("./src/reddit/models/PostCreationForm/index.ts"),
-				C = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				k = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
+				k = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				C = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const A = (e, t, n, s) => {
 					let r, o;
 					if (s === g.h.MARKDOWN) r = n.text, o = null;
@@ -131,7 +131,7 @@
 					}
 					return Object(h.a)(Object(S.a)(e, [R.a]), {
 						method: r.hb.POST,
-						endpoint: Object(I.a)(Object(C.a)(Object(k.a)(`${e.apiUrl}/api/comment.json`))),
+						endpoint: Object(I.a)(Object(k.a)(Object(C.a)(`${e.apiUrl}/api/comment.json`))),
 						data: c
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 						...e,
@@ -473,7 +473,7 @@
 								})
 							}
 							return Object(h.a)(Object(S.a)(e, [R.a]), {
-								endpoint: Object(I.a)(Object(k.a)(Object(C.a)(`${e.apiUrl}/api/editusertext`))),
+								endpoint: Object(I.a)(Object(C.a)(Object(k.a)(`${e.apiUrl}/api/editusertext`))),
 								method: r.hb.POST,
 								data: d
 							}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
@@ -510,7 +510,7 @@
 						draftKey: s,
 						error: u.error
 					}))
-				}, ge = Object(o.a)(X.z), Ce = Object(o.a)(X.y), ke = Object(o.a)(X.A), Ae = (e, t) => async (n, s, {
+				}, ge = Object(o.a)(X.z), ke = Object(o.a)(X.y), Ce = Object(o.a)(X.A), Ae = (e, t) => async (n, s, {
 					apiContext: o
 				}) => {
 					const c = s();
@@ -534,10 +534,10 @@
 						...e,
 						error: e.error || Object(_.a)()
 					}))(o(), e);
-					d.ok ? n(ke({
+					d.ok ? n(Ce({
 						id: e,
 						postId: t
-					})) : n(Ce({
+					})) : n(ke({
 						id: e,
 						error: d.error
 					}))
@@ -597,7 +597,7 @@
 		"./src/reddit/actions/comment/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "i", (function() {
-				return k
+				return C
 			})), n.d(t, "m", (function() {
 				return A
 			})), n.d(t, "e", (function() {
@@ -657,8 +657,8 @@
 				E = n("./src/reddit/selectors/moderatingComments.ts"),
 				x = n("./src/reddit/selectors/user.ts"),
 				g = n("./src/reddit/actions/comment/constants.ts");
-			const C = {},
-				k = Object(c.a)(g.o),
+			const k = {},
+				C = Object(c.a)(g.o),
 				A = e => async (t, n, {
 					apiContext: s
 				}) => {
@@ -671,7 +671,7 @@
 					const o = n().features.comments.models[e];
 					if (!o) return;
 					const c = o.isSaved ? f.k : f.g;
-					if (t(k({
+					if (t(C({
 							[e]: {
 								isSaved: !o.isSaved
 							}
@@ -690,7 +690,7 @@
 							buttonText: s,
 							buttonAction: A(e)
 						}))
-					} else t(k({
+					} else t(C({
 						[e]: {
 							isSaved: o.isSaved
 						}
@@ -708,7 +708,7 @@
 						state: r,
 						commentId: e
 					}), T);
-					C[e] = c
+					k[e] = c
 				}, D = (e, t) => async (n, s) => {
 					const r = s(),
 						c = P(e);
@@ -716,7 +716,7 @@
 							commentId: e
 						}) && o.c.has(c)) {
 						const n = o.c.end(c);
-						!t && n < T && (clearTimeout(C[e]), delete C[e])
+						!t && n < T && (clearTimeout(k[e]), delete k[e])
 					}
 				}, L = Object(c.a)(g.x), N = Object(c.a)(g.w), K = Object(c.a)(g.v), M = (e, t) => async (n, s, {
 					apiContext: r
@@ -1101,13 +1101,14 @@
 					n(v(u));
 					try {
 						await (async (e, t, n) => {
-							if (!(await Object(c.a)(e, {
-									...i,
-									variables: {
-										subredditId: t,
-										achievementType: n
-									}
-								})).ok) throw new Error("Unable to update the preferred achievement flair")
+							const s = await Object(c.a)(e, {
+								...i,
+								variables: {
+									subredditId: t,
+									achievementType: n
+								}
+							});
+							if (!s.ok || !s.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
 						})(d(), u.subredditId, u.achievementType), n(S(u))
 					} catch (l) {
 						n(R(u)), o.c.captureException(l), n(Object(b.f)({
@@ -1509,8 +1510,8 @@
 				E = n("./src/lib/makeActionCreator/index.ts"),
 				x = n("./src/lib/makeCommentsPageKey/index.ts"),
 				g = n("./src/lib/makeDraftKey/index.ts"),
-				C = n("./src/reddit/actions/bulkActions/index.ts"),
-				k = n("./src/reddit/actions/comment/index.ts"),
+				k = n("./src/reddit/actions/bulkActions/index.ts"),
+				C = n("./src/reddit/actions/comment/index.ts"),
 				A = n("./src/reddit/actions/comment/authoring.ts"),
 				P = n("./src/reddit/actions/comment/moderation.ts"),
 				T = n("./src/reddit/actions/modal.ts"),
@@ -1650,7 +1651,7 @@
 						m = e[0],
 						u = Object(G.a)(m) ? H.e.Post : H.e.Comment,
 						l = u === H.e.Post ? i.posts.models[m] : i.features.comments.models[m],
-						b = u === H.e.Post ? w.T : k.i;
+						b = u === H.e.Post ? w.T : C.i;
 					if (!l || !a) return !1;
 					o(fe()), o(b({
 						[m]: {
@@ -1704,7 +1705,7 @@
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: r
-											})), s && s !== e.id && o(Object(k.i)({
+											})), s && s !== e.id && o(Object(C.i)({
 												[s]: {
 													isStickied: !1
 												}
@@ -1769,7 +1770,7 @@
 								removalReason: t && t.title
 							}
 						};
-						if (c(Object(C.b)(s)), t) {
+						if (c(Object(k.b)(s)), t) {
 							const s = {
 									itemId: e,
 									message: n,
@@ -2610,8 +2611,8 @@
 				},
 				x = n("./node_modules/lodash/mapValues.js"),
 				g = n.n(x),
-				C = n("./src/reddit/helpers/commentList/index.ts"),
-				k = n("./src/reddit/models/Comment/index.ts");
+				k = n("./src/reddit/helpers/commentList/index.ts"),
+				C = n("./src/reddit/models/Comment/index.ts");
 			const A = {};
 
 			function P(e) {
@@ -2656,13 +2657,13 @@
 							}
 						}
 						if (i.head && i.tail) {
-							const e = Object(C.c)({
+							const e = Object(k.c)({
 									commentLink: i.head,
 									commentsDict: n,
 									moreCommentsDict: d,
 									continueThreadDict: r
 								}),
-								t = Object(C.c)({
+								t = Object(k.c)({
 									commentLink: i.tail,
 									commentsDict: n,
 									moreCommentsDict: d,
@@ -2706,8 +2707,8 @@
 						let u = null;
 						if (i) return o && (m[o] = {
 							...a[o],
-							prev: Object(k.h)(n.id)
-						}, u = Object(k.h)(o)), {
+							prev: Object(C.h)(n.id)
+						}, u = Object(C.h)(o)), {
 							...e,
 							[s]: {
 								...e[s],
@@ -2727,11 +2728,11 @@
 									const c = a[o].next;
 									return c && (m[c.id] = {
 										...a[c.id],
-										prev: Object(k.i)(n)
+										prev: Object(C.i)(n)
 									}, u = c), m[o] = {
 										...a[o],
-										next: Object(k.i)(n)
-									}, t = Object(k.h)(o), {
+										next: Object(C.i)(n)
+									}, t = Object(C.h)(o), {
 										...e,
 										[s]: {
 											...e[s],
@@ -2756,8 +2757,8 @@
 							let d = null;
 							return r && (c[r] = {
 								...o[r],
-								prev: Object(k.h)(n.id)
-							}, d = Object(k.h)(r)), {
+								prev: Object(C.h)(n.id)
+							}, d = Object(C.h)(r)), {
 								...e,
 								[s]: {
 									...e[s],
@@ -2782,10 +2783,10 @@
 							const a = c[r].next;
 							return a && (d[a.id] = {
 								...c[a.id],
-								prev: Object(k.h)(n.id)
+								prev: Object(C.h)(n.id)
 							}, i = a), d[r] = {
 								...c[r],
-								next: Object(k.h)(n.id)
+								next: Object(C.h)(n.id)
 							}, {
 								...e,
 								[s]: {
@@ -2794,7 +2795,7 @@
 									[n.id]: {
 										depth: o,
 										next: i,
-										prev: Object(k.h)(r)
+										prev: Object(C.h)(r)
 									}
 								}
 							}
@@ -2898,9 +2899,9 @@
 			})), n.d(t, "o", (function() {
 				return g
 			})), n.d(t, "j", (function() {
-				return C
-			})), n.d(t, "l", (function() {
 				return k
+			})), n.d(t, "l", (function() {
+				return C
 			})), n.d(t, "h", (function() {
 				return A
 			})), n.d(t, "a", (function() {
@@ -3030,11 +3031,11 @@
 				g = (e, {
 					commentsPageKey: t
 				}) => e.pages.comments.keyToCommentThreadLinkSets[t],
-				C = (e, t) => {
+				k = (e, t) => {
 					const n = t.commentsPageKey ? x(e, t) : null;
 					return n ? n.depth : null
 				},
-				k = (e, {
+				C = (e, {
 					commentLink: t
 				}) => {
 					const {
@@ -3093,7 +3094,7 @@
 						r = Object(b.a)(e, {
 							commentId: s
 						}),
-						o = r && C(e, {
+						o = r && k(e, {
 							commentId: r.id,
 							commentLink: void 0,
 							commentsPageKey: t
@@ -3299,4 +3300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.103f13f70b9d8d62f521.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.a94f1375bdd653b3b2c6.js.map

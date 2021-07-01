@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.a106395f1c64761da594.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2395fbb7effbc34367fc.js
+// Retrieved at 7/1/2021, 2:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -55,8 +55,8 @@
 				f = s("./src/reddit/endpoints/comment/index.tsx"),
 				O = s("./src/reddit/helpers/commentList/index.ts"),
 				j = s("./src/reddit/helpers/trackers/comment.ts"),
-				x = s("./src/reddit/models/Comment/index.ts"),
-				h = s("./src/reddit/models/Post/index.ts"),
+				h = s("./src/reddit/models/Comment/index.ts"),
+				x = s("./src/reddit/models/Post/index.ts"),
 				g = s("./src/reddit/models/Toast/index.ts"),
 				v = s("./src/reddit/models/Vote/index.ts"),
 				w = s("./src/reddit/selectors/comments.ts"),
@@ -138,7 +138,7 @@
 							partialPostId: u
 						} = p ? p.params : null;
 					if (!u) return;
-					const b = Object(h.s)(u);
+					const b = Object(x.s)(u);
 					s(B({
 						moreCommentsId: d.id
 					}));
@@ -175,7 +175,7 @@
 					scrollToAndRemeasure: s
 				}) => async (n, o) => {
 					const r = o(),
-						d = Object(x.h)(e),
+						d = Object(h.h)(e),
 						c = Object(w.n)(r, {
 							commentLink: d,
 							commentsPageKey: t
@@ -253,13 +253,13 @@
 				f = s("./src/reddit/selectors/commentSelector.ts"),
 				O = s("./src/reddit/selectors/user.ts"),
 				j = s("./src/reddit/actions/comment/index.ts"),
-				x = s("./src/reddit/actions/comment/constants.ts");
-			const h = Object(r.a)(x.n),
+				h = s("./src/reddit/actions/comment/constants.ts");
+			const x = Object(r.a)(h.n),
 				g = e => async (t, s, {
 					apiContext: n
 				}) => {
 					s().features.comments.models[e] && (await Object(m.h)(n(), e)).ok && t((e => async t => {
-						t(h({
+						t(x({
 							commentId: e
 						}))
 					})(e))
@@ -279,7 +279,7 @@
 							isLocked: o.isLocked
 						}
 					}))
-				}, w = Object(r.a)(x.F), R = e => async (t, s, {
+				}, w = Object(r.a)(h.F), R = e => async (t, s, {
 					apiContext: n
 				}) => {
 					const o = s(),
@@ -440,16 +440,16 @@
 				f = s("./src/reddit/selectors/gold/powerups/index.ts"),
 				O = s("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				j = s("./src/reddit/selectors/user.ts"),
-				x = s("./src/reddit/actions/economics/powerups/constants.ts");
+				h = s("./src/reddit/actions/economics/powerups/constants.ts");
 			Object(l.a)({
 				features: {
 					powerups: m.a
 				}
 			});
-			const h = Object(o.a)(x.d),
-				g = Object(o.a)(x.f),
-				v = Object(o.a)(x.g),
-				w = Object(o.a)(x.e),
+			const x = Object(o.a)(h.d),
+				g = Object(o.a)(h.f),
+				v = Object(o.a)(h.g),
+				w = Object(o.a)(h.e),
 				R = (e, t) => async (s, n, {
 					gqlContext: o
 				}) => {
@@ -466,7 +466,7 @@
 							if (!n.ok) throw new Error("Unable to fetch user achievements");
 							return n.body.data.subredditInfoById
 						})(o(), e, i);
-						await s(h(t))
+						await s(x(t))
 					} catch (a) {
 						r.c.captureException(a)
 					}
@@ -509,13 +509,14 @@
 					s(g(m));
 					try {
 						await (async (e, t, s) => {
-							if (!(await Object(d.a)(e, {
-									...i,
-									variables: {
-										subredditId: t,
-										achievementType: s
-									}
-								})).ok) throw new Error("Unable to update the preferred achievement flair")
+							const n = await Object(d.a)(e, {
+								...i,
+								variables: {
+									subredditId: t,
+									achievementType: s
+								}
+							});
+							if (!n.ok || !n.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
 						})(c(), m.subredditId, m.achievementType), s(v(m))
 					} catch (p) {
 						s(w(m)), r.c.captureException(p), s(Object(u.f)({
@@ -626,8 +627,8 @@
 				f = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				O = s("./src/reddit/helpers/isComment.ts"),
 				j = s("./src/reddit/helpers/trackers/modTools.ts"),
-				x = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				h = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				h = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				x = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				g = s("./src/reddit/icons/svgs/Clock/index.tsx"),
 				v = s("./src/reddit/icons/svgs/Undo/index.tsx"),
 				w = s("./src/reddit/selectors/tooltip.ts"),
@@ -672,7 +673,7 @@
 					}, o.a.createElement("label", {
 						htmlFor: c,
 						className: y.a.DropdownLabel
-					}, d ? "Reporter snoozed" : `${t}: ${e}`, r ? o.a.createElement(h.a, null) : o.a.createElement(x.a, null))), o.a.createElement(S, {
+					}, d ? "Reporter snoozed" : `${t}: ${e}`, r ? o.a.createElement(x.a, null) : o.a.createElement(h.a, null))), o.a.createElement(S, {
 						isOpen: r,
 						tooltipTarget: this.tooltipTarget,
 						renderContentsHidden: !0,
@@ -761,12 +762,12 @@
 				f = s("./src/reddit/components/ViewReportsDropdown/ReportsList.m.less"),
 				O = s.n(f);
 			const j = c.a.wrapped(b.a, "Footer", O.a),
-				x = c.a.wrapped(u.c, "FooterButton", O.a);
-			var h = e => o.a.createElement("div", null, o.a.createElement(p.a, {
+				h = c.a.wrapped(u.c, "FooterButton", O.a);
+			var x = e => o.a.createElement("div", null, o.a.createElement(p.a, {
 					modReports: e.modReports,
 					userReports: e.userReports,
 					reportedThingId: e.reportedThingId
-				}), !e.isShowingHistoricalReports && o.a.createElement(j, null, o.a.createElement(x, {
+				}), !e.isShowingHistoricalReports && o.a.createElement(j, null, o.a.createElement(h, {
 					onClick: e.onIgnoreReports,
 					text: e.ignoreReports ? m.fbt._("Restore reports", null, {
 						hk: "3wbqh7"
@@ -792,7 +793,7 @@
 						className: e.className,
 						isOpen: e.isDropdownOpen,
 						tooltipId: e.tooltipId
-					}, o.a.createElement(h, {
+					}, o.a.createElement(x, {
 						ignoreReports: e.model.ignoreReports,
 						modReports: s,
 						onIgnoreReports: e.onIgnoreReports,
@@ -818,9 +819,9 @@
 			})), s.d(t, "f", (function() {
 				return j
 			})), s.d(t, "c", (function() {
-				return x
-			})), s.d(t, "i", (function() {
 				return h
+			})), s.d(t, "i", (function() {
+				return x
 			})), s.d(t, "h", (function() {
 				return g
 			})), s.d(t, "e", (function() {
@@ -880,14 +881,14 @@
 						spam: s
 					}
 				}),
-				x = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				h = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: `${e.apiUrl}/api/ignore_reports`,
 					method: o.hb.POST,
 					data: {
 						id: t
 					}
 				}),
-				h = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
+				x = (e, t) => Object(r.a)(Object(d.a)(e, [c.a]), {
 					endpoint: `${e.apiUrl}/api/unignore_reports`,
 					method: o.hb.POST,
 					data: {
@@ -1101,4 +1102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.a106395f1c64761da594.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2395fbb7effbc34367fc.js.map

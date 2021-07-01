@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b2e1a9f42b28c63947d3.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.98159d2b759b93675488.js
+// Retrieved at 7/1/2021, 2:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -890,13 +890,14 @@
 					n(x(u));
 					try {
 						await (async (e, t, n) => {
-							if (!(await Object(c.a)(e, {
-									...i,
-									variables: {
-										subredditId: t,
-										achievementType: n
-									}
-								})).ok) throw new Error("Unable to update the preferred achievement flair")
+							const r = await Object(c.a)(e, {
+								...i,
+								variables: {
+									subredditId: t,
+									achievementType: n
+								}
+							});
+							if (!r.ok || !r.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
 						})(d(), u.subredditId, u.achievementType), n(I(u))
 					} catch (l) {
 						n(v(u)), s.c.captureException(l), n(Object(b.f)({
@@ -2777,4 +2778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b2e1a9f42b28c63947d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.98159d2b759b93675488.js.map

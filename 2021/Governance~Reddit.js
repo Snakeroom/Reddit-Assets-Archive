@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.c96d8af704efc2e11c8f.js
-// Retrieved at 7/1/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7bec6dada924fada968c.js
+// Retrieved at 7/1/2021, 2:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1307,13 +1307,14 @@
 					r(O(l));
 					try {
 						await (async (e, t, r) => {
-							if (!(await Object(c.a)(e, {
-									...d,
-									variables: {
-										subredditId: t,
-										achievementType: r
-									}
-								})).ok) throw new Error("Unable to update the preferred achievement flair")
+							const s = await Object(c.a)(e, {
+								...d,
+								variables: {
+									subredditId: t,
+									achievementType: r
+								}
+							});
+							if (!s.ok || !s.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
 						})(o(), l.subredditId, l.achievementType), r(I(l))
 					} catch (p) {
 						r(g(l)), n.c.captureException(p), r(Object(b.f)({
@@ -22215,4 +22216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c96d8af704efc2e11c8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7bec6dada924fada968c.js.map

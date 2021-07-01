@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.026c56c971c0e52afb28.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d5fccc1c2a69685f0e6a.js
+// Retrieved at 7/1/2021, 2:50:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -509,13 +509,14 @@
 					s(v(m));
 					try {
 						await (async (e, t, s) => {
-							if (!(await Object(a.a)(e, {
-									...c,
-									variables: {
-										subredditId: t,
-										achievementType: s
-									}
-								})).ok) throw new Error("Unable to update the preferred achievement flair")
+							const o = await Object(a.a)(e, {
+								...c,
+								variables: {
+									subredditId: t,
+									achievementType: s
+								}
+							});
+							if (!o.ok || !o.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
 						})(i(), m.subredditId, m.achievementType), s(k(m))
 					} catch (p) {
 						s(g(m)), r.c.captureException(p), s(Object(u.f)({
@@ -2301,4 +2302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.026c56c971c0e52afb28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d5fccc1c2a69685f0e6a.js.map
