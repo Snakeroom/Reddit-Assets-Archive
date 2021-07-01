@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f7db87c267612e645b6e.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.ba8c6ee1f371a8cd99b4.js
+// Retrieved at 7/1/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/ethers/_version.js": function(e, t, r) {
@@ -889,7 +889,7 @@
 							const r = t.body;
 							if (null === (a = r.errors) || void 0 === a ? void 0 : a.length) throw new Error(r.errors[0].message);
 							return void e(j({
-								subscriptions: null !== (c = null === (o = r.data.identity) || void 0 === o ? void 0 : o.subscriptions) && void 0 !== c ? c : []
+								subscriptions: null !== (c = null === (o = r.data.identity) || void 0 === o ? void 0 : o.econSubscriptions) && void 0 !== c ? c : []
 							}))
 						}
 					} catch (i) {
@@ -3225,4 +3225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f7db87c267612e645b6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.ba8c6ee1f371a8cd99b4.js.map

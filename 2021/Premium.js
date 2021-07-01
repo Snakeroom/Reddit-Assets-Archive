@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.35a015617378533bd5fb.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.a8174a80e5bcf0dc5d47.js
+// Retrieved at 7/1/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -463,7 +463,7 @@
 							const r = t.body;
 							if (null === (a = r.errors) || void 0 === a ? void 0 : a.length) throw new Error(r.errors[0].message);
 							return void e(j({
-								subscriptions: null !== (s = null === (i = r.data.identity) || void 0 === i ? void 0 : i.subscriptions) && void 0 !== s ? s : []
+								subscriptions: null !== (s = null === (i = r.data.identity) || void 0 === i ? void 0 : i.econSubscriptions) && void 0 !== s ? s : []
 							}))
 						}
 					} catch (c) {
@@ -2817,4 +2817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.35a015617378533bd5fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.a8174a80e5bcf0dc5d47.js.map
