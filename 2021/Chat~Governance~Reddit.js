@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3846fc330dd1fdb5180f.js
-// Retrieved at 7/1/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7774c9a7ba0df8d22424.js
+// Retrieved at 7/1/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2473,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("138410"),
+				buildNumber: r("138419"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1625156505"),
+				})("1625158294"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3657,19 +3657,22 @@
 		},
 		"./src/lib/constants/euCookiePolicy.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
+			i.d(t, "d", (function() {
 				return n
-			})), i.d(t, "a", (function() {
-				return r
 			})), i.d(t, "b", (function() {
+				return r
+			})), i.d(t, "a", (function() {
 				return s
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "c", (function() {
 				return o
+			})), i.d(t, "e", (function() {
+				return d
 			}));
 			const n = ["AT", "BE", "BG", "BL", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GF", "GG", "GI", "GP", "GR", "HR", "HU", "IE", "IM", "IS", "IT", "JE", "LI", "LT", "LU", "LV", "MF", "MQ", "MT", "NL", "NO", "PL", "PM", "PT", "RE", "RO", "SE", "SI", "SK", "UK", "YT"],
-				r = ["AT", "AU", "BE", "BG", "BR", "CA", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "NL", "PH", "PL", "PT", "RO", "SE", "SI", "SK"],
-				s = "eu_cookie",
-				o = "eu-cookies-opted"
+				r = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "GB", "IS", "LI", "NO", "GI", "AX", "PM", "BL", "SX", "CW", "BM", "KY", "MS", "CH", "AD", "MC", "SM", "VA", "JE", "GF", "GP", "IM", "MF", "MQ", "YT", "RE", "GG", "VG", "SH"],
+				s = ["AT", "AU", "BE", "BG", "BR", "CA", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "NL", "PH", "PL", "PT", "RO", "SE", "SI", "SK"],
+				o = "eu_cookie",
+				d = "eu-cookies-opted"
 		},
 		"./src/lib/constants/headers.ts": function(e, t, i) {
 			"use strict";
@@ -4433,15 +4436,15 @@
 					expires: new Date
 				},
 				u = e => {
-					const t = e ? e.cookies.get(o.b) : r.a.get(o.b);
+					const t = e ? e.cookies.get(o.c) : r.a.get(o.c);
 					let i = _(t);
 					return (null == i ? void 0 : i.opted) || (i = (e => {
 						if (e) {
-							const t = _(e.cookies.get(o.d));
-							if (t) return e.cookies.set(o.b, JSON.stringify(t), Object(d.a)(10)), e.cookies.set(o.d, "", c), t
+							const t = _(e.cookies.get(o.e));
+							if (t) return e.cookies.set(o.c, JSON.stringify(t), Object(d.a)(10)), e.cookies.set(o.e, "", c), t
 						} else {
-							const e = _(r.a.get(o.d));
-							if (e) return r.a.set(o.b, JSON.stringify(e), Object(d.a)(10)), r.a.remove(o.d), e
+							const e = _(r.a.get(o.e));
+							if (e) return r.a.set(o.c, JSON.stringify(e), Object(d.a)(10)), r.a.remove(o.e), e
 						}
 						return null
 					})(e)), i || {
@@ -4460,10 +4463,10 @@
 					return null
 				},
 				p = (e, t, i, n) => e.nonessential ? (r.a.set(t, i, n), !0) : (console.log("Cookie lacking consent, not setting"), !1),
-				m = e => (r.a.set(o.b, JSON.stringify(e), Object(d.a)(10)), l.setConsent(e), !0),
+				m = e => (r.a.set(o.c, JSON.stringify(e), Object(d.a)(10)), l.setConsent(e), !0),
 				h = async e => {
 					const t = u();
-					return void 0 !== e.cookieContext.country && o.c.includes(e.cookieContext.country) ? t.opted ? (p(t, e.name, e.value, e.cookieOptions), Promise.resolve(t)) : b().then(t => (p(t, e.name, e.value, e.cookieOptions), t)) : (r.a.set(e.name, e.value, e.cookieOptions), Promise.resolve(t))
+					return void 0 !== e.cookieContext.country && o.d.includes(e.cookieContext.country) ? t.opted ? (p(t, e.name, e.value, e.cookieOptions), Promise.resolve(t)) : b().then(t => (p(t, e.name, e.value, e.cookieOptions), t)) : (r.a.set(e.name, e.value, e.cookieOptions), Promise.resolve(t))
 				};
 			let f;
 			const b = () => f = f || l.consent;
@@ -4965,14 +4968,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c057753c1ebc7b3d5746c109386c515e40220a40e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7955db9d44784b2e1ab0e5a6163ea082c0e45abc-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "057753c1ebc7b3d5746c109386c515e40220a40e-production",
+						release: "7955db9d44784b2e1ab0e5a6163ea082c0e45abc-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5466,7 +5469,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "057753c1ebc7b3d5746c109386c515e40220a40e-production",
+						releaseClient: "7955db9d44784b2e1ab0e5a6163ea082c0e45abc-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -21831,7 +21834,7 @@
 					subredditMentionD2xExperiment: l.l,
 					privacySettingLocationBasedRecommendations: l.l,
 					langSelect: l.l,
-					reCaptchaEnterprise: Object(l.d)(Object(l.b)(...d.c)),
+					reCaptchaEnterprise: Object(l.d)(Object(l.b)(...d.d)),
 					realtimeCommentsExperiment: l.l,
 					automatedReportingEnabled: e => {
 						const t = Object(m.d)(e);
@@ -47582,4 +47585,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3846fc330dd1fdb5180f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7774c9a7ba0df8d22424.js.map

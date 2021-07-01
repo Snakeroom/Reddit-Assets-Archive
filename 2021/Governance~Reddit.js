@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ae7820c57ab0565500bb.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c96d8af704efc2e11c8f.js
+// Retrieved at 7/1/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2840,7 +2840,7 @@
 				D = r("./src/reddit/selectors/meta.ts");
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(D.d)(e),
 				w = e => !!Object(v.c)(e, {
-					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.c)),
+					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.d)),
 					experimentName: b.dd
 				}),
 				A = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
@@ -22215,4 +22215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ae7820c57ab0565500bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c96d8af704efc2e11c8f.js.map
