@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.407efb84535f043a6fc9.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.026c56c971c0e52afb28.js
+// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -476,7 +476,7 @@
 						r = Object(h.j)(n);
 					if (!r || !Object(f.f)(n, {
 							subredditId: e
-						}) || !Object(d.h)(n)) return;
+						}) || !Object(d.g)(n)) return;
 					const a = !!Object(x.b)(n, {
 						subredditId: e,
 						userId: r.id
@@ -490,7 +490,7 @@
 					const n = o();
 					if (!Object(f.f)(n, {
 							subredditId: e
-						}) || !t || !Object(d.h)(n)) return;
+						}) || !t || !Object(d.g)(n)) return;
 					const r = new Set;
 					Object.values(t).forEach(e => {
 						r.add(e.authorId)
@@ -2301,4 +2301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.407efb84535f043a6fc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.026c56c971c0e52afb28.js.map

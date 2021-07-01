@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9e49cbf983b8b87c3fa9.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.db0237289899201a1fc5.js
+// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3148,7 +3148,7 @@
 				userFlairData: jt.c,
 				isComingFromAchievementsModal: (e, t) => Object(Ot.f)(e, {
 					subredditId: t.subredditId
-				}) && Object(xt.h)(e)
+				}) && Object(xt.g)(e)
 			}), (e, t) => ({
 				activeFlairChanged: (n, s, o, r) => e(Object(dt.f)(n, s, o, r.username, t.subredditId)),
 				closeModal: () => e(Object(it.b)({
@@ -18216,4 +18216,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9e49cbf983b8b87c3fa9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.db0237289899201a1fc5.js.map

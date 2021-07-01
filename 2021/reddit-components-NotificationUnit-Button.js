@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d7c695e89f08be1e0bd3.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b2e1a9f42b28c63947d3.js
+// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -857,7 +857,7 @@
 						s = Object(j.j)(o);
 					if (!s || !Object(f.f)(o, {
 							subredditId: e
-						}) || !Object(a.h)(o)) return;
+						}) || !Object(a.g)(o)) return;
 					const c = !!Object(O.b)(o, {
 						subredditId: e,
 						userId: s.id
@@ -871,7 +871,7 @@
 					const o = r();
 					if (!Object(f.f)(o, {
 							subredditId: e
-						}) || !t || !Object(a.h)(o)) return;
+						}) || !t || !Object(a.g)(o)) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
@@ -2777,4 +2777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d7c695e89f08be1e0bd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.b2e1a9f42b28c63947d3.js.map

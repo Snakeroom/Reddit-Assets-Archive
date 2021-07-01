@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.30bcdc74177b89f89068.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f9aa602d5559a4576002.js
+// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1682,7 +1682,7 @@
 					renderContractorBadge: h
 				} = e, x = Object(c.a)(), f = n.subredditId, v = Object(i.e)(e => Object(N.f)(e, {
 					subredditId: f
-				}) && Object(g.h)(e));
+				}) && Object(g.g)(e));
 				if (n.isDeleted) return o.a.createElement("div", {
 					className: Object(m.a)(Te.a.container, t),
 					"data-testid": "post-comment-header-deleted"
@@ -8756,7 +8756,7 @@
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
 							const s = Object(O.F)(e, t.listingName);
-							return Object(v.j)(e, {
+							return Object(v.k)(e, {
 								subredditId: s
 							})
 						}
@@ -8772,7 +8772,7 @@
 					}) => {
 						if (r) {
 							const t = Object(O.F)(e, s);
-							return Object(v.k)(e, {
+							return Object(v.l)(e, {
 								subredditId: t
 							})
 						}
@@ -9964,4 +9964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.30bcdc74177b89f89068.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f9aa602d5559a4576002.js.map

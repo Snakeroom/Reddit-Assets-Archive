@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.82034b2d29f6f94afff0.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7311acc7df0eeb90b62d.js
+// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -412,7 +412,7 @@
 						o = Object(x.j)(r);
 					if (!o || !Object(h.f)(r, {
 							subredditId: e
-						}) || !Object(d.h)(r)) return;
+						}) || !Object(d.g)(r)) return;
 					const a = !!Object(f.b)(r, {
 						subredditId: e,
 						userId: o.id
@@ -426,7 +426,7 @@
 					const r = s();
 					if (!Object(h.f)(r, {
 							subredditId: e
-						}) || !t || !Object(d.h)(r)) return;
+						}) || !t || !Object(d.g)(r)) return;
 					const o = new Set;
 					Object.values(t).forEach(e => {
 						o.add(e.authorId)
@@ -3808,7 +3808,7 @@
 			function f({
 				subredditId: e
 			}) {
-				const t = Object(o.e)(t => !!e && Object(u.i)(t, {
+				const t = Object(o.e)(t => !!e && Object(u.j)(t, {
 						subredditId: e
 					})),
 					n = Object(l.a)();
@@ -9568,7 +9568,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(lt.c)(e, t),
-					isPredictionsLeaderboardsEnabled: ut.m,
+					isPredictionsLeaderboardsEnabled: ut.l,
 					showGovernance: it.d.spPoints,
 					showLeaderboard: it.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -10397,7 +10397,7 @@
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
 							const n = Object(_.F)(e, t.listingName);
-							return Object(y.j)(e, {
+							return Object(y.k)(e, {
 								subredditId: n
 							})
 						}
@@ -10413,7 +10413,7 @@
 					}) => {
 						if (s) {
 							const t = Object(_.F)(e, n);
-							return Object(y.k)(e, {
+							return Object(y.l)(e, {
 								subredditId: t
 							})
 						}
@@ -15128,4 +15128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.82034b2d29f6f94afff0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7311acc7df0eeb90b62d.js.map

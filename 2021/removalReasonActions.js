@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.cb7392caefe80466c369.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.103f13f70b9d8d62f521.js
+// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -1068,7 +1068,7 @@
 						o = Object(j.j)(r);
 					if (!o || !Object(f.f)(r, {
 							subredditId: e
-						}) || !Object(a.h)(r)) return;
+						}) || !Object(a.g)(r)) return;
 					const c = !!Object(O.b)(r, {
 						subredditId: e,
 						userId: o.id
@@ -1082,7 +1082,7 @@
 					const r = s();
 					if (!Object(f.f)(r, {
 							subredditId: e
-						}) || !t || !Object(a.h)(r)) return;
+						}) || !t || !Object(a.g)(r)) return;
 					const o = new Set;
 					Object.values(t).forEach(e => {
 						o.add(e.authorId)
@@ -3299,4 +3299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.cb7392caefe80466c369.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.103f13f70b9d8d62f521.js.map

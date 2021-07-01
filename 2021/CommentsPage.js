@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.405a9f98147143fdd3c3.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.e0e722d733a2b95f0f82.js
+// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3090,7 +3090,7 @@
 						return !!o && Object(Zt.a)(e, {
 							subredditId: o.id,
 							userId: s.authorId
-						}) && !Object(Qt.h)(e)
+						}) && !Object(Qt.g)(e)
 					},
 					modModeEnabled: Tt.Q,
 					errorMsgs: S.H,
@@ -5374,7 +5374,7 @@
 					showEditFlair: ae,
 					subredditOrProfile: xe,
 					userIsOp: _e
-				} = e, ke = Object(fe.b)(), Ee = Object(a.e)(e => Boolean(se.predictionTournament) && Object(Oe.o)(e));
+				} = e, ke = Object(fe.b)(), Ee = Object(a.e)(e => Boolean(se.predictionTournament) && Object(Oe.n)(e));
 				Object(r.useEffect)(() => {
 					N && S && B()
 				}, []);
@@ -5431,7 +5431,7 @@
 							crosspost: t,
 							isCommentPermalink: s,
 							post: o
-						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Oe.o)(e));
+						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Oe.n)(e));
 						return s ? ve.g.Classic : n ? ve.g.Large : t ? ve.g.Large : o.media && !tt(o) ? ve.g.Large : ve.g.Medium
 					})(e);
 				if (it === ve.g.Classic) {
@@ -6677,7 +6677,7 @@
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
 							const s = Object(_.F)(e, t.listingName);
-							return Object(v.j)(e, {
+							return Object(v.k)(e, {
 								subredditId: s
 							})
 						}
@@ -6693,7 +6693,7 @@
 					}) => {
 						if (o) {
 							const t = Object(_.F)(e, s);
-							return Object(v.k)(e, {
+							return Object(v.l)(e, {
 								subredditId: t
 							})
 						}
@@ -8496,4 +8496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.405a9f98147143fdd3c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e0e722d733a2b95f0f82.js.map
