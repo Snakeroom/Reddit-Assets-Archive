@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.626867ee849bdf4720d9.js
-// Retrieved at 7/1/2021, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.228d3e96591568be544a.js
+// Retrieved at 7/1/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -9229,6 +9229,7 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			const r = {
 					ZZ: "No country identified",
+					XZ: "No country identified",
 					AF: "Afghanistan",
 					AX: "Aland Islands",
 					AL: "Albania",
@@ -9482,7 +9483,7 @@
 					value: e,
 					displayName: r[e]
 				}],
-				a = Object.keys(r).map(e => ({
+				a = Object.keys(r).filter(e => "ZZ" !== e).map(e => ({
 					value: e,
 					displayName: r[e]
 				}))
@@ -14263,4 +14264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.626867ee849bdf4720d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.228d3e96591568be544a.js.map
