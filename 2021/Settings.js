@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a305b87135022bb11e6d.js
-// Retrieved at 7/1/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.480c9c76f7f105b369fd.js
+// Retrieved at 7/1/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3851,7 +3851,8 @@
 						userId: v.id,
 						text: _.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
-						})
+						}),
+						isFullWidth: !0
 					}), v.hasUserProfile && !C && !w && s.a.createElement(oe, {
 						identifier: {
 							name: e.user.username,
@@ -14276,4 +14277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a305b87135022bb11e6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.480c9c76f7f105b369fd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.71796ca7a5713193388c.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.1c9fa57d2426b61981a9.js
+// Retrieved at 7/1/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -3272,7 +3272,8 @@
 						userId: g.id,
 						text: k.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
-						})
+						}),
+						isFullWidth: !0
 					}), g.hasUserProfile && !w && !E && s.a.createElement(ie, {
 						identifier: {
 							name: e.user.username,
@@ -4701,4 +4702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.71796ca7a5713193388c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.1c9fa57d2426b61981a9.js.map

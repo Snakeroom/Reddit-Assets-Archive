@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.906aa2d6a19f3a47af12.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e68bfeb60db9cc43de59.js
+// Retrieved at 7/1/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -1358,7 +1358,8 @@
 						userId: x.id,
 						text: E.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
-						})
+						}),
+						isFullWidth: !0
 					}), x.hasUserProfile && !w && !N && s.a.createElement(oe, {
 						identifier: {
 							name: e.user.username,
@@ -2628,4 +2629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.906aa2d6a19f3a47af12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e68bfeb60db9cc43de59.js.map

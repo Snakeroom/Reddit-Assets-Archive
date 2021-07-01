@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ad0b5cab78bcf3fd781c.js
-// Retrieved at 7/1/2021, 5:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3893e1e15b867ce2f63b.js
+// Retrieved at 7/1/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7937,7 +7937,7 @@
 					className: Wc.a.loggedOutRow
 				}, m.a.createElement(Me.m, {
 					redditStyle: !0,
-					className: Object(v.a)(Wc.a.login, Wc.a.button),
+					className: Wc.a.button,
 					href: `${n}/login/?dest=${o}`,
 					onClick: t => {
 						Object(j.a)(t) && (t.stopPropagation(), t.preventDefault(), e.closeUserDropdown(), e.onOpenLoginModal(), e.sendEvent(Object(Lr.a)("nav")))
@@ -7946,7 +7946,7 @@
 					hk: "4Cxw0g"
 				})), m.a.createElement(Me.j, {
 					redditStyle: !0,
-					className: Object(v.a)(Wc.a.separator, Wc.a.register, Wc.a.button),
+					className: Object(v.a)(Wc.a.separator, Wc.a.button),
 					href: `${n}/register/?dest=${o}`,
 					onClick: t => {
 						Object(j.a)(t) && (t.stopPropagation(), t.preventDefault(), e.closeUserDropdown(), e.onOpenRegisterModal(), e.sendEvent(Object(Lr.c)("nav")))
@@ -18216,4 +18216,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ad0b5cab78bcf3fd781c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3893e1e15b867ce2f63b.js.map
