@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.f3e9079f1130cc00837f.js
-// Retrieved at 6/28/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.5c02bd0040a467fc1320.js
+// Retrieved at 7/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -113,23 +113,23 @@
 				this.schema = e.__schema__.toLowerCase(), this.index = s + t, this.lastIndex = r + t, this.raw = n, this.text = n, this.url = n
 			}
 
-			function h(e, t) {
+			function p(e, t) {
 				var s = new m(e, t);
 				return e.__compiled__[s.schema].normalize(s, e), s
 			}
 
-			function p(e, t) {
-				if (!(this instanceof p)) return new p(e, t);
+			function h(e, t) {
+				if (!(this instanceof h)) return new h(e, t);
 				var s;
 				t || (s = e, Object.keys(s || {}).reduce((function(e, t) {
 					return e || i.hasOwnProperty(t)
 				}), !1) && (t = e, e = {})), this.__opts__ = r({}, i, t), this.__index__ = -1, this.__last_index__ = -1, this.__schema__ = "", this.__text_cache__ = "", this.__schemas__ = r({}, c, e), this.__compiled__ = {}, this.__tlds__ = d, this.__tlds_replaced__ = !1, this.re = {}, l(this)
 			}
-			p.prototype.add = function(e, t) {
+			h.prototype.add = function(e, t) {
 				return this.__schemas__[e] = t, l(this), this
-			}, p.prototype.set = function(e) {
+			}, h.prototype.set = function(e) {
 				return this.__opts__ = r(this.__opts__, e), this
-			}, p.prototype.test = function(e) {
+			}, h.prototype.test = function(e) {
 				if (this.__text_cache__ = e, this.__index__ = -1, !e.length) return !1;
 				var t, s, r, n, a, o, i, c;
 				if (this.re.schema_test.test(e))
@@ -138,23 +138,23 @@
 							this.__schema__ = t[2], this.__index__ = t.index + t[1].length, this.__last_index__ = t.index + t[0].length + n;
 							break
 						} return this.__opts__.fuzzyLink && this.__compiled__["http:"] && (c = e.search(this.re.host_fuzzy_test)) >= 0 && (this.__index__ < 0 || c < this.__index__) && null !== (s = e.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy)) && (a = s.index + s[1].length, (this.__index__ < 0 || a < this.__index__) && (this.__schema__ = "", this.__index__ = a, this.__last_index__ = s.index + s[0].length)), this.__opts__.fuzzyEmail && this.__compiled__["mailto:"] && e.indexOf("@") >= 0 && null !== (r = e.match(this.re.email_fuzzy)) && (a = r.index + r[1].length, o = r.index + r[0].length, (this.__index__ < 0 || a < this.__index__ || a === this.__index__ && o > this.__last_index__) && (this.__schema__ = "mailto:", this.__index__ = a, this.__last_index__ = o)), this.__index__ >= 0
-			}, p.prototype.pretest = function(e) {
+			}, h.prototype.pretest = function(e) {
 				return this.re.pretest.test(e)
-			}, p.prototype.testSchemaAt = function(e, t, s) {
+			}, h.prototype.testSchemaAt = function(e, t, s) {
 				return this.__compiled__[t.toLowerCase()] ? this.__compiled__[t.toLowerCase()].validate(e, s, this) : 0
-			}, p.prototype.match = function(e) {
+			}, h.prototype.match = function(e) {
 				var t = 0,
 					s = [];
-				this.__index__ >= 0 && this.__text_cache__ === e && (s.push(h(this, t)), t = this.__last_index__);
-				for (var r = t ? e.slice(t) : e; this.test(r);) s.push(h(this, t)), r = r.slice(this.__last_index__), t += this.__last_index__;
+				this.__index__ >= 0 && this.__text_cache__ === e && (s.push(p(this, t)), t = this.__last_index__);
+				for (var r = t ? e.slice(t) : e; this.test(r);) s.push(p(this, t)), r = r.slice(this.__last_index__), t += this.__last_index__;
 				return s.length ? s : null
-			}, p.prototype.tlds = function(e, t) {
+			}, h.prototype.tlds = function(e, t) {
 				return e = Array.isArray(e) ? e : [e], t ? (this.__tlds__ = this.__tlds__.concat(e).sort().filter((function(e, t, s) {
 					return e !== s[t - 1]
 				})).reverse(), l(this), this) : (this.__tlds__ = e.slice(), this.__tlds_replaced__ = !0, l(this), this)
-			}, p.prototype.normalize = function(e) {
+			}, h.prototype.normalize = function(e) {
 				e.schema || (e.url = "http://" + e.url), "mailto:" !== e.schema || /^mailto:/i.test(e.url) || (e.url = "mailto:" + e.url)
-			}, p.prototype.onCompile = function() {}, e.exports = p
+			}, h.prototype.onCompile = function() {}, e.exports = h
 		},
 		"./node_modules/linkify-it/lib/re.js": function(e, t, s) {
 			"use strict";
@@ -410,9 +410,9 @@
 			})), s.d(t, "f", (function() {
 				return m
 			})), s.d(t, "g", (function() {
-				return h
-			})), s.d(t, "h", (function() {
 				return p
+			})), s.d(t, "h", (function() {
+				return h
 			})), s.d(t, "i", (function() {
 				return _
 			})), s.d(t, "j", (function() {
@@ -428,8 +428,8 @@
 				d = Object(r.a)(o.d),
 				l = Object(r.a)(o.e),
 				m = Object(r.a)(o.f),
-				h = Object(r.a)(o.g),
-				p = Object(r.a)(o.h),
+				p = Object(r.a)(o.g),
+				h = Object(r.a)(o.h),
 				_ = Object(r.a)(o.i),
 				b = e => Object(n.h)(a.a.SUBREDDIT_PREMIUM_UPLOAD_MODAL, {
 					uploadAssetType: e
@@ -524,8 +524,8 @@
 				d = s("./node_modules/react-redux/es/index.js"),
 				l = s("./node_modules/reselect/es/index.js"),
 				m = s("./src/lib/classNames/index.ts"),
-				h = s("./src/lib/lessComponent.tsx"),
-				p = s("./src/reddit/models/PostDraft/index.ts"),
+				p = s("./src/lib/lessComponent.tsx"),
+				h = s("./src/reddit/models/PostDraft/index.ts"),
 				_ = s("./src/reddit/actions/comment/authoring.ts"),
 				b = s("./src/reddit/actions/gold/modals.ts"),
 				f = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
@@ -533,8 +533,8 @@
 				y = s("./src/reddit/components/RichTextEditor/index.tsx"),
 				v = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				x = s("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
-				k = s("./src/reddit/controls/Button/index.tsx"),
-				j = s("./src/reddit/controls/ErrorText/index.tsx"),
+				j = s("./src/reddit/controls/Button/index.tsx"),
+				k = s("./src/reddit/controls/ErrorText/index.tsx"),
 				C = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				w = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				F = s("./src/reddit/helpers/richTextEditor/index.ts"),
@@ -660,14 +660,14 @@
 			const J = {},
 				X = 1e3,
 				$ = "chat_submission_from_rte",
-				Q = h.a.form("Form", H.a),
-				Y = h.a.wrapped(k.d, "ChatButton", H.a),
-				ee = h.a.div("CloseIconWrap", H.a),
-				te = h.a.div("Reply", H.a),
-				se = h.a.div("ReplyAuthor", H.a),
-				re = h.a.div("ReplyComment", H.a),
-				ne = h.a.wrapped(y.a, "RichTextEditor", H.a),
-				ae = h.a.wrapped(g.a, "SmallChatUserIcon", H.a),
+				Q = p.a.form("Form", H.a),
+				Y = p.a.wrapped(j.d, "ChatButton", H.a),
+				ee = p.a.div("CloseIconWrap", H.a),
+				te = p.a.div("Reply", H.a),
+				se = p.a.div("ReplyAuthor", H.a),
+				re = p.a.div("ReplyComment", H.a),
+				ne = p.a.wrapped(y.a, "RichTextEditor", H.a),
+				ae = p.a.wrapped(g.a, "SmallChatUserIcon", H.a),
 				oe = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
 					errorMsgs: O.L,
@@ -752,7 +752,7 @@
 						if (this.canSubmit()) {
 							const e = {
 								commentMode: I.h.RICH_TEXT,
-								draftType: p.c.replyToComment,
+								draftType: h.c.replyToComment,
 								rteState: this.state.rteState,
 								hasFocus: !0,
 								text: ""
@@ -802,7 +802,7 @@
 						hk: "RIcb6"
 					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), h = i.isGildable && s && !t, p = s;
+					}), p = i.isGildable && s && !t, h = s;
 					return u.a.createElement("div", {
 						className: Object(m.a)(H.a.FormWrapper, {
 							[H.a.LivestreamingWrapper]: s
@@ -850,7 +850,7 @@
 						onSubmit: this.onSubmit,
 						placeholderText: l,
 						readOnly: o,
-						showSubmitButton: p,
+						showSubmitButton: h,
 						submitButtonClassName: Object(m.a)(H.a.insetSubmitButton, H.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: a.a,
@@ -862,7 +862,7 @@
 							[H.a.LivestreamingResetButton]: s
 						}),
 						type: "reset"
-					}, u.a.createElement(D.a, null)), !p && u.a.createElement(Y, {
+					}, u.a.createElement(D.a, null)), !h && u.a.createElement(Y, {
 						className: Object(m.a)(H.a.ChatButton, {
 							[H.a.LivestreamingChatButton]: s && !t,
 							[H.a.LivestreamingResetButton]: s && t
@@ -872,10 +872,10 @@
 						"aria-label": r.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, u.a.createElement(A.a, null))), h && u.a.createElement(Y, {
+					}, u.a.createElement(A.a, null))), p && u.a.createElement(Y, {
 						className: Object(m.a)(H.a.ChatButton, {
 							[H.a.LivestreamingChatButton]: s,
-							[H.a.leftPad]: !p
+							[H.a.leftPad]: !h
 						}),
 						"aria-label": r.fbt._("give award", null, {
 							hk: "1nXRWY"
@@ -883,7 +883,7 @@
 						onClick: this.onClickGiveAward
 					}, u.a.createElement(G, {
 						postId: c
-					}))), this.state.showError && Object(j.c)(e))
+					}))), this.state.showError && Object(k.c)(e))
 				}
 			}
 			const ce = ({
@@ -1030,9 +1030,9 @@
 			})), s.d(t, "j", (function() {
 				return m
 			})), s.d(t, "C", (function() {
-				return h
-			})), s.d(t, "z", (function() {
 				return p
+			})), s.d(t, "z", (function() {
+				return h
 			})), s.d(t, "D", (function() {
 				return _
 			})), s.d(t, "B", (function() {
@@ -1048,9 +1048,9 @@
 			})), s.d(t, "q", (function() {
 				return x
 			})), s.d(t, "o", (function() {
-				return k
-			})), s.d(t, "p", (function() {
 				return j
+			})), s.d(t, "p", (function() {
+				return k
 			})), s.d(t, "n", (function() {
 				return C
 			})), s.d(t, "y", (function() {
@@ -1162,7 +1162,7 @@
 						position: t || 0
 					})
 				}),
-				h = (e, t) => s => ({
+				p = (e, t) => s => ({
 					source: "stream_player",
 					action: "fail",
 					noun: "stream",
@@ -1172,7 +1172,7 @@
 						...i(s, e)
 					}
 				}),
-				p = (e, t) => s => ({
+				h = (e, t) => s => ({
 					source: "stream_player",
 					action: "heartbeat",
 					noun: "stream",
@@ -1238,7 +1238,7 @@
 					...u(s),
 					...i(s, e)
 				}),
-				k = (e, t) => s => ({
+				j = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "downvote",
@@ -1246,7 +1246,7 @@
 					...u(s),
 					...i(s, e)
 				}),
-				j = (e, t) => s => ({
+				k = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "report",
@@ -1481,7 +1481,7 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "l", (function() {
-				return k
+				return j
 			})), s.d(t, "m", (function() {
 				return w
 			})), s.d(t, "i", (function() {
@@ -1518,15 +1518,15 @@
 			const d = e => e.publicAccessNetwork.listings,
 				l = s.n(u)()(e => Object(n.a)(Object(r.a)(d, t => e && t.hasOwnProperty(e) ? t[e] : [])));
 			var m = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
-			const h = e => e.publicAccessNetwork.models,
-				p = e => e.publicAccessNetwork.reports.reported,
+			const p = e => e.publicAccessNetwork.models,
+				h = e => e.publicAccessNetwork.reports.reported,
 				_ = e => e.publicAccessNetwork.history,
 				b = e => e.publicAccessNetwork.history.cursor,
 				f = e => e.publicAccessNetwork.history.visitOrder,
 				g = e => e.publicAccessNetwork.hlsStreams,
 				y = Object(r.a)(g, e => e.ended),
 				v = Object(r.a)(g, e => e.removed),
-				x = Object(r.a)(h, y, v, (e, t, s) => {
+				x = Object(r.a)(p, y, v, (e, t, s) => {
 					const r = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
@@ -1564,12 +1564,12 @@
 						}
 					}, r)
 				}),
-				k = (e, t) => {
+				j = (e, t) => {
 					return x(e)[Object(a.g)(t)]
 				},
-				j = Object(r.a)((e, {
+				k = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => l(t.listingName)(e, t), x, p, i.h, (e, t, s, r, n) => {
+				}) => t, (e, t) => l(t.listingName)(e, t), x, h, i.h, (e, t, s, r, n) => {
 					const i = [];
 					if (e) {
 						const t = Object(a.g)(e);
@@ -1588,7 +1588,7 @@
 				}) => t, x, (e, {
 					listingName: t,
 					streamIdFromPath: s
-				}) => j(e, {
+				}) => k(e, {
 					listingName: t,
 					streamIdFromPath: s
 				}), (e, t, s) => {
@@ -1634,7 +1634,7 @@
 				D = Object(n.a)(Object(r.a)(E, x, (e, t) => e ? t[e] : void 0)),
 				A = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(a.g)(t) : void 0, E, p, i.h, (e, {
+				}) => t ? Object(a.g)(t) : void 0, E, h, i.h, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
@@ -1655,7 +1655,7 @@
 				})))), Object(r.a)(A, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				N = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? k(e, t) : void 0, e => !e || e.chat_disabled);
+				}) => t ? j(e, t) : void 0, e => !e || e.chat_disabled);
 
 			function B(e, t) {
 				const s = {
@@ -1684,7 +1684,7 @@
 				Z = Object(r.a)(S, M, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === T.LIVE || t === T.VOD ? e.stream.hls_url : n : void 0),
 				U = Object(r.a)(S, M, R, (e, t, s) => e ? t === T.LIVE ? e.broadcast_time : t === T.VOD && s < e.broadcast_time ? s : 0 : 0),
 				q = (e, t) => {
-					const s = h(e);
+					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
 		},
@@ -1720,9 +1720,9 @@
 			})), s.d(t, "i", (function() {
 				return x
 			})), s.d(t, "q", (function() {
-				return k
-			})), s.d(t, "h", (function() {
 				return j
+			})), s.d(t, "h", (function() {
+				return k
 			})), s.d(t, "y", (function() {
 				return C
 			})), s.d(t, "l", (function() {
@@ -1764,17 +1764,17 @@
 				a = s("./src/reddit/helpers/richTextJson/index.ts"),
 				o = s("./src/reddit/models/Badge/index.ts"),
 				i = s("./src/reddit/models/Badge/managementPage.ts"),
-				c = s("./src/reddit/models/Gold/Powerups/index.ts"),
-				u = s("./src/reddit/models/Payments/index.ts"),
-				d = s("./src/reddit/models/Product/index.ts"),
-				l = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
-				m = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
-				h = s("./src/reddit/selectors/commentSelector.ts"),
-				p = s("./src/reddit/selectors/gold/powerups/index.ts");
+				c = s("./src/reddit/models/Payments/index.ts"),
+				u = s("./src/reddit/models/Product/index.ts"),
+				d = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
+				l = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
+				m = s("./src/reddit/selectors/commentSelector.ts"),
+				p = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				h = s("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
 			const _ = [],
 				b = (e, t) => {
 					const s = e.economics.subredditPremium[t];
-					if (s && s.status === m.a.Fetched) {
+					if (s && s.status === l.a.Fetched) {
 						const e = s.data.subscription,
 							t = e && e.active;
 						if (t) {
@@ -1794,7 +1794,7 @@
 			}(g || (g = {}));
 			const y = (e, t) => {
 					const s = e.economics.subredditPremium[t];
-					if (s && s.status === m.a.Fetched) {
+					if (s && s.status === l.a.Fetched) {
 						const s = f(e, t),
 							r = Date.now();
 						return s && r < s ? g.Subscribed : g.NotSubscribed
@@ -1804,7 +1804,7 @@
 				v = (e, t) => {
 					const s = e.user.account,
 						r = e.economics.subredditPremium[t];
-					if (s && r && r.status === m.a.Fetched) {
+					if (s && r && r.status === l.a.Fetched) {
 						const r = ((e.users.appliedBadges[s.id] || {})[t] || _).map(t => e.badges.models[t]).filter(Boolean);
 						if (r) return {
 							[i.a.Loyalty]: r.find(e => e.placement === o.a.First),
@@ -1822,14 +1822,14 @@
 			function x(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(n.a)(e.map(e => t[e]).filter(Boolean)) : _
 			}
-			const k = (e, t, s) => {
+			const j = (e, t, s) => {
 					var n;
 					if (!r.d.spBadges(e)) return _;
 					return x(null === (n = e.users.appliedBadges[s]) || void 0 === n ? void 0 : n[t], e.badges.models)
 				},
-				j = (e, t) => {
+				k = (e, t) => {
 					const s = e.economics.subredditPremium[t.subredditId];
-					if (s && s.status === m.a.Fetched) {
+					if (s && s.status === l.a.Fetched) {
 						const e = s.raw.collections[t.collectionId];
 						if (e) return {
 							highlight: e.extra && e.extra.style && e.extra.style.color,
@@ -1857,7 +1857,7 @@
 
 			function F(e, t, s, r) {
 				const n = e.economics.subredditPremium[t];
-				if (n && n.status === m.a.Fetched) {
+				if (n && n.status === l.a.Fetched) {
 					if (s === i.a.Loyalty || s === i.a.Achievement) return n.data.collections[s];
 					if (s === i.a.Cosmetic && r) return n.data.collections[s][r]
 				}
@@ -1871,7 +1871,7 @@
 
 			function D(e, t) {
 				const s = e.economics.subredditPremium[t];
-				if (s && s.status === m.a.Fetched) {
+				if (s && s.status === l.a.Fetched) {
 					const e = s.data.collections[i.a.Cosmetic];
 					return Object.values(e).reduce((e, t) => e.concat(t), []).reduce((e, t) => e.concat(t.locked, t.unlocked), []).filter(o.f)
 				}
@@ -1884,25 +1884,25 @@
 			const I = e => {
 				const t = [],
 					s = e.economics.paymentSystems;
-				if (s.status === l.a.Fetched && s.data.stripe && s.data.stripe.sources) {
+				if (s.status === d.a.Fetched && s.data.stripe && s.data.stripe.sources) {
 					const e = s.data.stripe.sources;
 					for (const s in e) {
 						const r = e[s];
 						t.push({
 							display: `${r.brand} •••• ${r.last4}`,
 							id: s,
-							type: u.a.SavedStripe
+							type: c.a.SavedStripe
 						})
 					}
 				}
-				if (s.status === l.a.Fetched && s.data.braintree && s.data.braintree.sources) {
+				if (s.status === d.a.Fetched && s.data.braintree && s.data.braintree.sources) {
 					const e = s.data.braintree.sources;
 					for (const s in e) {
 						const r = e[s];
 						"PayPal" === r.brand && t.push({
 							display: "PayPal",
 							id: r.id,
-							type: u.a.SavedPayPal
+							type: c.a.SavedPayPal
 						})
 					}
 				}
@@ -1921,7 +1921,7 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				z = (e, t) => Object.values(e.products.models).filter(e => e.type === d.a.Membership && t && e.subredditId === t),
+				z = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
 				P = (e, t) => {
 					if (!t) return {};
 					const s = S.prices;
@@ -1946,7 +1946,7 @@
 				},
 				N = e => {
 					const t = e.economics.paymentSystems;
-					return !!(t.status === l.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
+					return !!(t.status === d.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
 				},
 				B = (e, t) => {
 					const s = e.user.ownedBadges[t] || {};
@@ -1954,7 +1954,7 @@
 				},
 				R = e => {
 					const t = e.economics.paymentSystems;
-					return t.status === l.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
+					return t.status === d.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
 				T = (e, {
 					subredditId: t
@@ -1967,17 +1967,19 @@
 					return !!s && s.hasGifProduct
 				},
 				Z = (e, t, s) => {
-					const n = "replyToPost" !== s && Object(h.a)(e, {
+					if (!Object(h.b)(e, {
+							subredditId: t
+						})) return !1;
+					if (Object(p.p)(e, {
+							subredditId: t
+						})) return !0;
+					const n = "replyToPost" !== s && Object(m.a)(e, {
 						commentId: s
 					});
-					if (!!n && Object(a.a)(n)) return !0;
-					if (t && Object(p.n)(e, {
-							subredditId: t,
-							benefit: c.a.CommentsWithGifs
-						})) return !0;
+					if (n && Object(a.a)(n)) return !0;
 					const o = r.d.spGiphy(e),
 						i = M(e, t);
-					return o && i
+					return !(!o || !i) || o && i
 				},
 				U = (e, t, s) => {
 					if (t) {
@@ -1989,4 +1991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.f3e9079f1130cc00837f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.5c02bd0040a467fc1320.js.map
