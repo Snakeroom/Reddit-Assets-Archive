@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.46ad3f61c40b66473ea3.js
-// Retrieved at 7/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.03c4ac07dfa8c3a37c9a.js
+// Retrieved at 7/1/2021, 11:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -3277,6 +3277,9 @@
 					onClick: () => n(!S, E.a.CommentsWithGifs),
 					label: T.fbt._("Allow GIFs in comments", null, {
 						hk: "2nJiHt"
+					}),
+					subtext: T.fbt._("It may take a few minutes to update", null, {
+						hk: "aU7tk"
 					})
 				}), r.a.createElement(D.k, {
 					label: T.fbt._("Spam filter strength", null, {
@@ -19966,4 +19969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.46ad3f61c40b66473ea3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.03c4ac07dfa8c3a37c9a.js.map
