@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.727ec186a375cbe76b8b.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.55dc488fa1e443d59224.js
+// Retrieved at 7/1/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -231,8 +231,8 @@
 				O = s("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.tsx"),
 				g = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				I = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				j = s("./src/reddit/constants/posts.ts"),
+				j = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				I = s("./src/reddit/constants/posts.ts"),
 				k = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
 				N = s.n(P);
@@ -313,21 +313,21 @@
 						onClick: this.onSubredditNameClick
 					}, i.displayText), n ? r.a.createElement("div", {
 						className: N.a.subredditSubscribeLargeButton
-					}, r.a.createElement(I.a, {
+					}, r.a.createElement(j.a, {
 						identifier: {
 							name: i.name,
-							type: j.a.SUBREDDIT
+							type: I.a.SUBREDDIT
 						},
 						postId: e.id,
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
-					})) : r.a.createElement(I.a, {
+					})) : r.a.createElement(j.a, {
 						className: N.a.subredditSubscribeButton,
 						getEventFactory: this.getSubscribeEventFactory,
 						doNotHideOtherSubscribeButtons: !0,
 						identifier: {
 							name: i.name,
-							type: j.a.SUBREDDIT
+							type: I.a.SUBREDDIT
 						},
 						postId: e.id,
 						small: !0
@@ -657,7 +657,7 @@
 				O = x.a.wrapped(m, "CalendarIcon", v.a),
 				f = x.a.wrapped(h, "LiveIcon", v.a),
 				g = x.a.div("LoadingState", v.a);
-			class I extends n.Component {
+			class j extends n.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mounted: !1
@@ -715,7 +715,7 @@
 					}, m)
 				}
 			}
-			t.a = I
+			t.a = j
 		},
 		"./src/reddit/components/PostContainer/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1127,44 +1127,59 @@
 					source: "gallery"
 				})
 		},
+		"./src/reddit/helpers/trackers/getRichTextSourceElement.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return c
+			}));
+			var n = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				r = s("./src/reddit/helpers/isComment.ts"),
+				i = s("./src/reddit/helpers/isPost.ts"),
+				o = s("./src/telemetry/models/Outbound.ts");
+			const c = ({
+				renderingObjectInfo: e,
+				pageLayer: t
+			}) => {
+				if (e && (Object(r.b)(e) || Object(i.b)(e))) return Object(r.b)(e) ? o.SourceElement.Comment : Object(n.w)(t) ? o.SourceElement.PostDetail : Object(n.E)(t) ? o.SourceElement.ListingPostDetail : void 0
+			}
+		},
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return x
+				return E
 			})), s.d(t, "f", (function() {
-				return C
+				return v
 			})), s.d(t, "g", (function() {
-				return _
+				return x
 			})), s.d(t, "b", (function() {
-				return S
+				return C
 			})), s.d(t, "c", (function() {
-				return y
+				return _
 			})), s.d(t, "d", (function() {
-				return O
+				return S
 			})), s.d(t, "e", (function() {
-				return f
+				return y
 			}));
 			var n, r, i = s("./src/reddit/constants/tracking.ts"),
-				o = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				c = s("./src/reddit/helpers/isComment.ts"),
-				d = s("./src/reddit/helpers/isPost.ts"),
+				o = s("./src/reddit/helpers/isComment.ts"),
+				c = s("./src/reddit/helpers/isPost.ts"),
+				d = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts"),
 				a = s("./src/reddit/models/DiscoveryUnit/index.ts"),
 				u = s("./src/reddit/selectors/subreddit.ts"),
-				l = s("./src/reddit/selectors/telemetry.ts"),
-				b = s("./src/telemetry/models/Outbound.ts");
+				l = s("./src/reddit/selectors/telemetry.ts");
 			! function(e) {
 				e.INTERNAL_LINK = "internal_link", e.SUBREDDIT_HOVERCARD = "subreddit_mentions_hovercard", e.HEADER_SUBREDDIT = "header_subreddit", e.HEADER_SUBREDDIT_SUBSCRIBE = "header_subreddit_subscribe", e.HEADER_SUBREDDIT_UNSUBSCRIBE = "header_subreddit_unsubscribe", e.ITEM_POST = "item_post"
 			}(n || (n = {})),
 			function(e) {
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(r || (r = {}));
-			const p = e => ({
+			const b = e => ({
 					...l.defaults(e),
 					source: r.LINK,
 					action: i.c.CLICK,
 					noun: n.INTERNAL_LINK
 				}),
-				m = e => ({
+				p = e => ({
 					...l.defaults(e),
 					source: r,
 					screen: l.screen(e),
@@ -1175,35 +1190,29 @@
 						title: n.SUBREDDIT_HOVERCARD
 					}
 				}),
-				h = (e, {
-					renderingObjectInfo: t,
-					pageLayer: s
-				}) => {
-					if (t && (Object(c.b)(t) || Object(d.b)(t))) return Object(c.b)(t) ? b.SourceElement.Comment : Object(o.w)(s) ? b.SourceElement.PostDetail : Object(o.E)(s) ? b.SourceElement.ListingPostDetail : void 0
-				},
-				E = (e, t) => {
+				m = (e, t) => {
 					const {
 						renderingObjectInfo: s,
 						subredditName: n
 					} = t;
-					if (!s || !Object(d.b)(s) && !Object(c.b)(s)) return {
+					if (!s || !Object(c.b)(s) && !Object(o.b)(s)) return {
 						outbound: void 0
 					};
-					const r = Object(d.b)(s) ? "postId" : "commentId",
+					const r = Object(c.b)(s) ? "postId" : "commentId",
 						i = {
 							url: `/r/${n}/`,
-							sourceElement: h(0, t),
+							sourceElement: Object(d.a)(t),
 							subredditName: n,
 							[r]: s.id
 						},
-						o = Object(u.A)(e, {
+						a = Object(u.A)(e, {
 							subredditName: n
 						});
-					return o ? {
+					return a ? {
 						outbound: {
 							...i,
-							url: o.url,
-							subredditId: o.id
+							url: a.url,
+							subredditId: a.id
 						}
 					} : {
 						outbound: {
@@ -1211,32 +1220,32 @@
 						}
 					}
 				},
-				v = (e, t) => {
+				h = (e, t) => {
 					const {
 						renderingObjectInfo: s
 					} = t;
-					if (!s || !Object(d.b)(s) && !Object(c.b)(s)) return {};
-					const n = Object(d.b)(s) ? s.belongsTo.id : s.subredditId;
+					if (!s || !Object(c.b)(s) && !Object(o.b)(s)) return {};
+					const n = Object(c.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
 						post: l.post(e, s.id),
 						subreddit: l.subredditById(e, n),
-						...E(e, t)
+						...m(e, t)
 					}
 				},
-				x = e => t => ({
-					...p(t),
-					...v(t, e)
+				E = e => t => ({
+					...b(t),
+					...h(t, e)
 				}),
-				C = e => t => ({
-					...m(t),
+				v = e => t => ({
+					...p(t),
 					source: "global",
 					action: i.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
 					subreddit: l.subredditByName(t, e),
 					screen: l.screen(t)
 				}),
-				_ = (e, t) => s => ({
-					...m(s),
+				x = (e, t) => s => ({
+					...p(s),
 					source: r.DISCOVERY_UNIT,
 					action: i.c.VIEW,
 					noun: n.ITEM_POST,
@@ -1244,8 +1253,8 @@
 					subreddit: l.subredditByName(s, e),
 					screen: l.screen(s)
 				}),
-				S = (e, t) => s => ({
-					...m(s),
+				C = (e, t) => s => ({
+					...p(s),
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: n.ITEM_POST,
@@ -1253,22 +1262,22 @@
 					subreddit: l.subredditByName(s, e),
 					screen: l.screen(s)
 				}),
-				y = e => t => ({
-					...m(t),
+				_ = e => t => ({
+					...p(t),
 					subreddit: l.subredditById(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
-				O = e => t => ({
-					...m(t),
+				S = e => t => ({
+					...p(t),
 					subreddit: l.subredditById(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
-				f = e => t => ({
-					...m(t),
+				y = e => t => ({
+					...p(t),
 					subreddit: l.subredditById(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: i.c.CLICK,
@@ -1278,4 +1287,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.727ec186a375cbe76b8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.55dc488fa1e443d59224.js.map
