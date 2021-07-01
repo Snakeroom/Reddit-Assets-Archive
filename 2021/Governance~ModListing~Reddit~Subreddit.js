@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e28c9b39c031b156ded2.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f826d620a230458301d8.js
+// Retrieved at 7/1/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -615,42 +615,44 @@
 						className: l,
 						hidden: a,
 						loop: d,
-						onClick: u,
-						prefersReducedAnimation: f
+						useCanvasRenderer: u,
+						onClick: f,
+						prefersReducedAnimation: _
 					} = e,
-					[_, p] = Object(n.useState)(r);
+					[p, m] = Object(n.useState)(r);
 				Object(n.useEffect)(() => {
-					i ? Object(c.a)(i).then(p) : r && p(r)
+					i ? Object(c.a)(i).then(m) : r && m(r)
 				}, [i, r]);
-				const [m, b] = Object(n.useState)(null);
+				const [b, h] = Object(n.useState)(null);
 				Object(n.useEffect)(() => {
 					const e = t.current;
-					if (!e || 0 !== e.childElementCount || m || !_) return;
+					if (!e || 0 !== e.childElementCount || b || !p) return;
 					const r = o.a.loadAnimation({
 						autoplay: !1,
+						renderer: u ? "canvas" : "svg",
 						loop: d,
 						container: e,
-						animationData: _
+						animationData: p
 					});
-					b(r)
-				}, [d, t, m, _]), Object(n.useEffect)(() => {
-					if (m)
-						if (a) m.stop();
-						else if (f) {
-						const e = m.getDuration(!0);
-						m.goToAndPlay(e, !0)
-					} else m.goToAndPlay(0)
-				}, [a, f, m]);
-				const h = Object(n.useCallback)(() => {
-					m && m.goToAndPlay(0)
-				}, [m]);
+					h(r)
+				}, [d, t, b, p]), Object(n.useEffect)(() => {
+					if (b)
+						if (a) b.stop();
+						else if (_) {
+						const e = b.getDuration(!0);
+						b.goToAndPlay(e, !0)
+					} else b.goToAndPlay(0)
+				}, [a, _, b]);
+				const g = Object(n.useCallback)(() => {
+					b && b.goToAndPlay(0)
+				}, [b]);
 				return s.a.createElement("div", {
 					className: l,
 					style: {
 						display: a ? "none" : "block"
 					},
 					ref: t,
-					onClick: u || h
+					onClick: f || g
 				})
 			});
 			t.a = l
@@ -1438,11 +1440,11 @@
 					const i = E(t, r, e.href);
 					return e.href = i.url, i.metadata
 				},
-				N = ({
+				C = ({
 					isSponsored: e,
 					source: t
 				}) => !!(e && (null == t ? void 0 : t.outboundUrl)),
-				C = x(e => {
+				N = x(e => {
 					const t = Object(c.useRef)(null),
 						r = Object(O.a)(),
 						{
@@ -1477,11 +1479,11 @@
 						onClick: () => r(d, y, s, m)
 					})) : l.a.createElement("a", k({}, w, {
 						onMouseDown: r => {
-							if (!N(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void S(r.currentTarget, g, I, i);
+							if (!C(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void S(r.currentTarget, g, I, i);
 							t.current = P(r.currentTarget, m, n)
 						},
 						onClick: () => {
-							p && (N(e) && (h(p, b.a.Click, t.current), Object(v.a)(p, f)), a(p, b.a.Click), r(d, y, s, m))
+							p && (C(e) && (h(p, b.a.Click, t.current), Object(v.a)(p, f)), a(p, b.a.Click), r(d, y, s, m))
 						},
 						onMouseLeave: e => {
 							u || ((e, t) => {
@@ -1492,7 +1494,7 @@
 						"data-testid": "outbound-link"
 					}))
 				});
-			t.b = C
+			t.b = N
 		},
 		"./src/reddit/helpers/pageActionLoginRedirect.ts": function(e, t, r) {
 			"use strict";
@@ -1575,9 +1577,9 @@
 			})), r.d(t, "o", (function() {
 				return P
 			})), r.d(t, "n", (function() {
-				return N
-			})), r.d(t, "y", (function() {
 				return C
+			})), r.d(t, "y", (function() {
+				return N
 			})), r.d(t, "k", (function() {
 				return T
 			})), r.d(t, "j", (function() {
@@ -1738,7 +1740,7 @@
 						})
 					})
 				},
-				N = (e, t, r) => {
+				C = (e, t, r) => {
 					Object(u.a)({
 						...m(e),
 						noun: "input",
@@ -1749,7 +1751,7 @@
 						actionInfo: a.chatPostActionInfo(e)
 					})
 				},
-				C = (e, t, r) => {
+				N = (e, t, r) => {
 					Object(u.a)({
 						...m(e),
 						noun: r,
@@ -1909,9 +1911,9 @@
 			})), r.d(t, "s", (function() {
 				return P
 			})), r.d(t, "c", (function() {
-				return N
-			})), r.d(t, "l", (function() {
 				return C
+			})), r.d(t, "l", (function() {
+				return N
 			})), r.d(t, "p", (function() {
 				return T
 			})), r.d(t, "i", (function() {
@@ -1982,7 +1984,7 @@
 								{
 									sortToUse: u
 								} = Object(l.a)(t, s);
-							Object(I.a)(N(c, s, d, r, i, u)(t));
+							Object(I.a)(C(c, s, d, r, i, u)(t));
 							break
 						}
 						case n.Jb.INDEX:
@@ -2064,7 +2066,7 @@
 						case n.Jb.POST_CREATION:
 							if (p && d) {
 								const e = Object(b.a)(d);
-								Object(I.a)(C(e, r, i)(t))
+								Object(I.a)(N(e, r, i)(t))
 							}
 							break;
 						case n.Jb.POST_DRAFT: {
@@ -2236,7 +2238,7 @@
 						adblock: y.adblock(i)
 					}
 				},
-				N = (e, t, r, i, o, n) => s => {
+				C = (e, t, r, i, o, n) => s => {
 					const {
 						api: c
 					} = s.pages.comments, l = !c.error[e] && !c.pending[e], a = {
@@ -2265,7 +2267,7 @@
 					};
 					return r && (a.comment = y.comment(s, r)), a
 				},
-				C = (e, t, r) => i => {
+				N = (e, t, r) => i => {
 					const o = i.creations.api.page.fetched[e],
 						n = i.platform.currentPage ? i.platform.currentPage.queryParams.source_id : void 0;
 					return {
@@ -2536,7 +2538,7 @@
 			})), r.d(t, "e", (function() {
 				return P
 			})), r.d(t, "j", (function() {
-				return N
+				return C
 			})), r.d(t, "d", (function() {
 				return T
 			})), r.d(t, "o", (function() {
@@ -2745,7 +2747,7 @@
 				E = (e, t, r, i, o) => n => P(n, e, t, r, i, o),
 				P = (e, t, r, i, o, c) => {
 					const l = a.paneName(e, i),
-						u = C(e, t, o, c),
+						u = N(e, t, o, c),
 						f = a.amountOfElementsBeforePost(e, r, o, c, l),
 						_ = null !== u ? f + u : null,
 						p = a.structureType(i),
@@ -2776,8 +2778,8 @@
 						discoveryUnit: c ? a.discoveryUnit(c) : null
 					}
 				},
-				N = (e, t, r, i, o, n) => s => T(s, e, t, r, i, o, n),
-				C = (e, t, r, i) => {
+				C = (e, t, r, i, o, n) => s => T(s, e, t, r, i, o, n),
+				N = (e, t, r, i) => {
 					var o;
 					return (null === (o = null == i ? void 0 : i.layout) || void 0 === o ? void 0 : o.viewTypeWeb) === c.b.Hero ? 0 : (null == i ? void 0 : i.postOrder) ? i.postOrder.indexOf(t) : r ? a.getRelativePostOrder(e, t, r) : null
 				},
@@ -2790,7 +2792,7 @@
 					const _ = a.paneName(e, r);
 					let p, m;
 					if (u) {
-						p = C(e, u, c, f);
+						p = N(e, u, c, f);
 						const r = a.amountOfElementsBeforePost(e, t, c, f, _);
 						m = null !== p ? r + p : null
 					} else {
@@ -3127,4 +3129,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e28c9b39c031b156ded2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f826d620a230458301d8.js.map

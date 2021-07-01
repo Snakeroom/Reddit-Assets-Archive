@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.228d3e96591568be544a.js
-// Retrieved at 7/1/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.47d4093493d794c1b9c2.js
+// Retrieved at 7/1/2021, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -4966,8 +4966,10 @@
 						title: h,
 						userCreated: g,
 						username: v,
-						url: f
-					}), a) : s.a.createElement(A, {
+						actions: e,
+						url: f,
+						footer: a
+					})) : s.a.createElement(A, {
 						className: r
 					}, s.a.createElement(P, {
 						bannerBackgroundImage: O ? void 0 : t,
@@ -5193,54 +5195,61 @@
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.m.less": function(e, t, n) {
 			e.exports = {
 				container: "_1EcFK4dFoEcSJ97pB5pOOU",
-				badgeImage: "_1lfIyNaIhBqLPhINtdgyar",
+				footer: "_1Kgb3W_zNnEh31kMBVmE8P",
+				inner: "_3y5mp8nbvcVpPPsIMMPy7I",
 				cardAnimation: "F8BKwLEVngSa9Mnbhrh5O",
+				badgeImage: "_1lfIyNaIhBqLPhINtdgyar",
 				nftIcon: "_2QX-qTkkdeCQTZc8F_jzSH",
+				cutout: "_31NukdfV7zdnSSZAdgi4tH",
 				nftIconImage: "_3EGHrS2jJIdFIfFHkrelY9",
-				snoovatar: "_3UdV4UIL74T4JgYYSF7uuA",
 				snoovatarImage: "_2eA2Gqtco1MTIW8ciy89hm",
 				username: "_1jzwWcdNR0oe0D59lSILCw",
 				subUsername: "_1LL19cRuUqTadh1-miEt-t",
 				snoovatarButton: "_1BpuPYvrp51NlrYGgxbx9D",
-				highlight: "_1IKngTFY9eM7GVrB7cJAYY"
+				highlight: "_1IKngTFY9eM7GVrB7cJAYY",
+				actions: "_1Xz5f0CORkQlgzeYxV3itr"
 			}
 		},
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return b
+				return f
 			}));
-			var r = n("./src/config.ts"),
-				s = n("./src/lib/classNames/index.ts"),
-				a = n("./node_modules/react/index.js"),
-				o = n.n(a),
-				i = n("./src/reddit/components/LottieAnimation/index.tsx"),
-				c = n("./src/reddit/components/ProfileIdCard/Highlights.tsx"),
-				l = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserName.tsx"),
-				d = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx"),
-				u = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.m.less"),
-				m = n.n(u);
-			const p = /(?:\/|-)nft-([a-z0-9]+)-([a-z]+)(?:-headshot)?\.(?:png|svg)/i;
+			var r = n("./node_modules/react/index.js"),
+				s = n.n(r),
+				a = n("./node_modules/react-redux/es/index.js"),
+				o = n("./src/config.ts"),
+				i = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/components/LottieAnimation/index.tsx"),
+				l = n("./src/reddit/selectors/user.ts"),
+				d = n("./src/reddit/components/ProfileIdCard/Highlights.tsx"),
+				u = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserName.tsx"),
+				m = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx"),
+				p = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/NftCard/index.m.less"),
+				b = n.n(p);
+			const h = /(?:\/|-)nft-([a-z0-9]+)-([a-z]+)(?:-headshot)?\.(?:png|svg)/i;
 
-			function b(e) {
-				return !!e && p.test(e)
+			function f(e) {
+				return !!e && h.test(e)
 			}
 			t.a = ({
 				isEmployee: e,
 				isGold: t,
 				isNSFW: n,
-				snoovatarUrl: u,
-				title: b,
-				userCreated: h,
-				username: f,
-				url: g,
-				className: v
+				snoovatarUrl: p,
+				title: f,
+				userCreated: g,
+				username: v,
+				url: _,
+				className: y,
+				actions: x,
+				footer: C
 			}) => {
 				const {
-					badge: _,
-					url: y
-				} = Object(a.useMemo)(() => (function(e) {
-					const t = p.exec(e) || ["", "", ""],
+					badge: E,
+					url: j
+				} = Object(r.useMemo)(() => (function(e) {
+					const t = h.exec(e) || ["", "", ""],
 						n = t[1],
 						r = t[2];
 					return {
@@ -5248,55 +5257,58 @@
 						url: "testing" === r ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${n}`,
 						badge: r
 					}
-				})(u), [u]);
-				return o.a.createElement("div", {
-					className: Object(s.a)(m.a.container, v)
-				}, o.a.createElement(i.a, {
-					className: m.a.cardAnimation,
-					assetUrl: `${r.a.assetPath}/img/snoovatars/nft_card_animation.json`,
+				})(p), [p]), w = Object(a.e)(l.W);
+				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+					className: Object(i.a)(b.a.container, y)
+				}, s.a.createElement(c.a, {
+					className: b.a.cardAnimation,
+					useCanvasRenderer: !0,
+					assetUrl: `${o.a.assetPath}/img/snoovatars/nft_card_animation.json`,
 					loop: !0
-				}), "testing" !== _ && o.a.createElement("img", {
-					alt: `${_} NFT`,
-					className: m.a.badgeImage,
-					src: `${r.a.assetPath}/img/snoovatars/nft_badge_${_}.svg`
-				}), o.a.createElement("a", {
-					href: y,
+				}), s.a.createElement("div", {
+					className: b.a.inner
+				}, "testing" !== E && s.a.createElement("img", {
+					alt: `${E} NFT`,
+					className: b.a.badgeImage,
+					src: `${o.a.assetPath}/img/snoovatars/nft_badge_${E}.svg`
+				}), s.a.createElement("img", {
+					className: b.a.cutout,
+					src: `${o.a.assetPath}/img/snoovatars/hole-cutout-${w?"black":"white"}.svg`
+				}), s.a.createElement("a", {
+					href: j,
 					target: "_blank",
-					className: m.a.nftIcon,
+					className: b.a.nftIcon,
 					rel: "noopener noreferrer"
-				}, o.a.createElement("img", {
-					className: m.a.nftIconImage,
+				}, s.a.createElement("img", {
+					className: b.a.nftIconImage,
 					alt: "View this NFT",
-					src: `${r.a.assetPath}/img/snoovatars/nft_icon.svg`
-				})), o.a.createElement("div", {
-					className: m.a.content
-				}, o.a.createElement("a", {
-					className: m.a.snoovatar,
-					href: "/avatar/nft",
-					target: "_blank",
-					rel: "noopener noreferrer"
-				}, o.a.createElement("img", {
-					className: m.a.snoovatarImage,
-					src: u,
+					src: `${o.a.assetPath}/img/snoovatars/nft_icon.svg`
+				})), s.a.createElement("img", {
+					className: b.a.snoovatarImage,
+					src: p,
 					alt: "Avatar NFT Image"
-				})), o.a.createElement(d.a, {
+				}), s.a.createElement(m.a, {
 					isEmployee: e,
 					isGold: t,
 					isNSFW: n,
-					title: b,
-					username: f
-				}), o.a.createElement(l.a, {
-					className: m.a.subUsername,
+					title: f,
+					username: v
+				}), s.a.createElement(u.a, {
+					className: b.a.subUsername,
 					shouldDisplaySnoovatar: !0,
-					username: f,
-					userCreated: h,
-					url: g
-				}), o.a.createElement(c.a, {
-					className: m.a.highlights,
-					highlightClassName: m.a.highlight,
-					profileName: f,
+					username: v,
+					userCreated: g,
+					url: _
+				}), s.a.createElement(d.a, {
+					className: b.a.highlights,
+					highlightClassName: b.a.highlight,
+					profileName: v,
 					isOverlay: !1
-				})))
+				}), s.a.createElement("nav", {
+					className: b.a.actions
+				}, x))), s.a.createElement("div", {
+					className: Object(i.a)(b.a.footer, y)
+				}, C))
 			}
 		},
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.m.less": function(e, t, n) {
@@ -14264,4 +14276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.228d3e96591568be544a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.47d4093493d794c1b9c2.js.map
