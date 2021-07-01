@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80f2e1025760732e3d5e.js
-// Retrieved at 7/1/2021, 12:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3846fc330dd1fdb5180f.js
+// Retrieved at 7/1/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2473,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("138405"),
+				buildNumber: r("138410"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1625155454"),
+				})("1625156505"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4965,14 +4965,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cafba9898f36f1bfb53ed14685750dc337a73d31a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c057753c1ebc7b3d5746c109386c515e40220a40e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "afba9898f36f1bfb53ed14685750dc337a73d31a-production",
+						release: "057753c1ebc7b3d5746c109386c515e40220a40e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5466,7 +5466,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "afba9898f36f1bfb53ed14685750dc337a73d31a-production",
+						releaseClient: "057753c1ebc7b3d5746c109386c515e40220a40e-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -33736,7 +33736,8 @@
 						return e
 				}
 			};
-			var z = (e = null, t) => {
+			const z = e => Math.round(new Date(e).getTime() / 1e3);
+			var $ = (e = null, t) => {
 				switch (t.type) {
 					case r.k: {
 						const {
@@ -33748,12 +33749,15 @@
 						const {
 							coinSale: i
 						} = t.payload;
-						return i || null;
+						return i ? {
+							...i,
+							endsAt: i.endsAt ? z(i.endsAt) : void 0
+						} : null;
 					default:
 						return e
 				}
 			};
-			var $ = (e = null, t) => {
+			var K = (e = null, t) => {
 				switch (t.type) {
 					case r.n:
 					case r.m:
@@ -33767,7 +33771,7 @@
 						return e
 				}
 			};
-			var K = (e = !1, t) => {
+			var J = (e = !1, t) => {
 				switch (t.type) {
 					case r.l:
 					case r.n:
@@ -33778,7 +33782,7 @@
 						return e
 				}
 			};
-			var J = (e = !1, t) => {
+			var Q = (e = !1, t) => {
 					switch (t.type) {
 						case r.i:
 						case r.k:
@@ -33789,13 +33793,13 @@
 							return e
 					}
 				},
-				Q = Object(n.c)({
-					errorMessage: $,
-					recommendedPending: K,
-					storefrontPending: J
+				Y = Object(n.c)({
+					errorMessage: K,
+					recommendedPending: J,
+					storefrontPending: Q
 				});
-			const Y = [];
-			var X = (e = Y, t) => {
+			const X = [];
+			var Z = (e = X, t) => {
 				switch (t.type) {
 					case r.k: {
 						const {
@@ -33807,8 +33811,8 @@
 						return e
 				}
 			};
-			const Z = {};
-			var ee = (e = Z, t) => {
+			const ee = {};
+			var te = (e = ee, t) => {
 				switch (t.type) {
 					case r.n: {
 						const {
@@ -33833,8 +33837,8 @@
 						return e
 				}
 			};
-			const te = [];
-			var ie = (e = te, t) => {
+			const ie = [];
+			var ne = (e = ie, t) => {
 				switch (t.type) {
 					case r.n: {
 						const {
@@ -33843,13 +33847,13 @@
 						return e.map(e => e.mobileId)
 					}
 					case r.m:
-						return te;
+						return ie;
 					default:
 						return e
 				}
 			};
-			const ne = [];
-			var re = (e = ne, t) => {
+			const re = [];
+			var se = (e = re, t) => {
 					switch (t.type) {
 						case r.k: {
 							const {
@@ -33861,13 +33865,13 @@
 							return e
 					}
 				},
-				se = Object(n.c)({
-					models: ee,
-					dealPackageIds: X,
-					recommendedPackageIds: ie,
-					storefrontPackageIds: re
+				oe = Object(n.c)({
+					models: te,
+					dealPackageIds: Z,
+					recommendedPackageIds: ne,
+					storefrontPackageIds: se
 				});
-			var oe = (e = null, t) => {
+			var de = (e = null, t) => {
 				var i;
 				switch (t.type) {
 					case b.s: {
@@ -33899,8 +33903,8 @@
 						return e
 				}
 			};
-			const de = [];
-			var ae = (e = de, t) => {
+			const ae = [];
+			var le = (e = ae, t) => {
 					switch (t.type) {
 						case r.k:
 							return t.payload.premiumPackages;
@@ -33908,14 +33912,14 @@
 							return e
 					}
 				},
-				le = Object(n.c)({
-					activeSaleConfig: z,
-					api: Q,
-					coinPackages: se,
-					freeAwardEvent: oe,
-					premiumPackages: ae
+				ce = Object(n.c)({
+					activeSaleConfig: $,
+					api: Y,
+					coinPackages: oe,
+					freeAwardEvent: de,
+					premiumPackages: le
 				});
-			var ce = (e = "selectPayment", t) => {
+			var ue = (e = "selectPayment", t) => {
 				switch (t.type) {
 					case r.q:
 					case r.r:
@@ -33926,7 +33930,7 @@
 						return e
 				}
 			};
-			var ue = (e = null, t) => {
+			var _e = (e = null, t) => {
 				switch (t.type) {
 					case r.t:
 					case r.u:
@@ -33947,7 +33951,7 @@
 						return e
 				}
 			};
-			var _e = (e = null, t) => {
+			var pe = (e = null, t) => {
 				switch (t.type) {
 					case r.c:
 					case r.d:
@@ -33966,7 +33970,7 @@
 						return e
 				}
 			};
-			var pe = (e = null, t) => {
+			var me = (e = null, t) => {
 				switch (t.type) {
 					case r.q: {
 						const {
@@ -33981,7 +33985,7 @@
 						return e
 				}
 			};
-			var me = (e = !1, t) => {
+			var he = (e = !1, t) => {
 					switch (t.type) {
 						case r.q:
 						case r.r:
@@ -33995,12 +33999,12 @@
 							return e
 					}
 				},
-				he = Object(n.c)({
-					activePage: ce,
-					correlationId: ue,
-					gildThingId: _e,
-					packageId: pe,
-					showModal: me
+				fe = Object(n.c)({
+					activePage: ue,
+					correlationId: _e,
+					gildThingId: pe,
+					packageId: me,
+					showModal: he
 				});
 			t.a = Object(n.c)({
 				packageOfferModal: o,
@@ -34008,8 +34012,8 @@
 				powerupsPurchaseModal: B,
 				premiumPurchaseModal: q,
 				productOffers: W,
-				purchaseCatalog: le,
-				purchaseModal: he
+				purchaseCatalog: ce,
+				purchaseModal: fe
 			})
 		},
 		"./src/reddit/reducers/features/powerupsBenefitSettings/index.ts": function(e, t, i) {
@@ -47578,4 +47582,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80f2e1025760732e3d5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3846fc330dd1fdb5180f.js.map

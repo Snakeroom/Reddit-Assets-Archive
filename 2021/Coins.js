@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.7abd8fd9084ed6bfeb39.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.1d44dabbb100bfff52e4.js
+// Retrieved at 7/1/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -1511,7 +1511,7 @@
 						className: Object(D.a)(re.a.heroTitle, re.a.activeSale)
 					}, r), o.a.createElement("p", {
 						className: Object(D.a)(re.a.heroDescription, re.a.activeSale)
-					}, n), o.a.createElement(ae.a, {
+					}, n), e && o.a.createElement(ae.a, {
 						className: re.a.expiresText,
 						expirationDate: new Date(1e3 * e)
 					})))
@@ -1749,4 +1749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.7abd8fd9084ed6bfeb39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.1d44dabbb100bfff52e4.js.map
