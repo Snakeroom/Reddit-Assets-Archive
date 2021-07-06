@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayHideChannel.2efc7a3689bdf96600b3.js
-// Retrieved at 7/6/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayHideChannel.8cf8e1ae07c8dce637e9.js
+// Retrieved at 7/6/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayHideChannel"], {
 		"./src/chat/components/OverlayHideChannel/index.m.less": function(e, t, n) {
@@ -43,7 +43,7 @@
 								return Object(d.b)(`Error hiding channel: ${r.message}`)
 							}
 							e(Object(l.K)(a.channelId)), e(Object(l.P)(a.channelState)), e(Object(i.b)())
-						})()), e(Object(m.z)())
+						})()), e(Object(m.y)())
 					}
 				})),
 				B = ({
@@ -119,4 +119,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayHideChannel.2efc7a3689bdf96600b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayHideChannel.8cf8e1ae07c8dce637e9.js.map

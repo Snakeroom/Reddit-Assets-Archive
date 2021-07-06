@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.ea1be3abb755833938be.js
-// Retrieved at 7/6/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.07851bf8f6d50a3b2c26.js
+// Retrieved at 7/6/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "OverlayReport", (function() {
-				return M
+				return H
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./node_modules/lodash/map.js"),
@@ -56,7 +56,7 @@
 				}),
 				K = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
-						e(Object(m.J)(s.id)), e((e => async (t, s, {
+						e(Object(m.H)(s.id)), e((e => async (t, s, {
 							apiContext: n
 						}) => {
 							const {
@@ -73,7 +73,7 @@
 						})).then(() => e(Object(i.a)()))
 					},
 					onReportMessage: (t, s, n) => {
-						e(Object(m.L)(s.messageId, t)), e(((e, t, s) => async (n, a, {
+						e(Object(m.J)(s.messageId, t)), e(((e, t, s) => async (n, a, {
 							apiContext: r
 						}) => {
 							const o = Object(u.a)(e, t),
@@ -82,7 +82,7 @@
 						})(t, s, n))
 					}
 				}));
-			class M extends o.Component {
+			class H extends o.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
@@ -197,7 +197,7 @@
 					}))
 				}
 			}
-			t.default = K(M)
+			t.default = K(H)
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -382,4 +382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.ea1be3abb755833938be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.07851bf8f6d50a3b2c26.js.map

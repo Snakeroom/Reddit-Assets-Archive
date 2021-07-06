@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e53c9451fcff4dd1634c.js
-// Retrieved at 7/6/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1a5d529968ecce0f6657.js
+// Retrieved at 7/6/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -49,26 +49,6 @@
 					if (!r) throw new Error("Could not open pop-out: current page not defined");
 					window.open(r.url, "_blank", "width=1024, height=768"), e(o(n.a.MINIMIZED))
 				}
-		},
-		"./src/chat/actions/editNickname/index.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "c", (function() {
-				return r
-			})), i.d(t, "a", (function() {
-				return s
-			})), i.d(t, "b", (function() {
-				return o
-			})), i.d(t, "e", (function() {
-				return d
-			})), i.d(t, "d", (function() {
-				return a
-			}));
-			var n = i("./src/lib/makeActionCreator/index.ts");
-			const r = "EDIT_NICKNAME__SET_POPUP_VISIBILITY_COUNT",
-				s = "EDIT_NICKNAME__CLOSE_POPUP",
-				o = 5,
-				d = Object(n.a)(r),
-				a = Object(n.a)(s)
 		},
 		"./src/chat/actions/promo/constants.ts": function(e, t, i) {
 			"use strict";
@@ -367,7 +347,7 @@
 					} = t,
 					n = i && i.id || "unknown";
 				_ = Object(s.c)(o.o.CHAT, o.w.CHAT_THEME_KEY, n), p = Object(s.c)(o.o.CHAT, o.w.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown");
-				const r = Object(u.f)(t);
+				const r = Object(u.d)(t);
 				return e => t => {
 					const i = e(t);
 					switch (t.type) {
@@ -509,45 +489,6 @@
 							}
 							break
 						}
-					}
-					return i
-				}
-			}
-		},
-		"./src/chat/customMiddleware/editNickname.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "b", (function() {
-				return c
-			}));
-			var n = i("./node_modules/lodash/once.js"),
-				r = i.n(n),
-				s = i("./src/lib/cache/index.ts"),
-				o = i("./src/lib/constants/index.ts"),
-				d = i("./src/chat/actions/editNickname/index.ts"),
-				a = i("./src/chat/customMiddleware/noop.ts");
-			let l;
-			const c = r()(e => {
-				var t;
-				const i = e.getState(),
-					n = i.user.account && i.user.account.id;
-				l = Object(s.c)(o.o.CHAT, o.w.CHAT_EDIT_NICKNAME_KEY, n || "unknown");
-				let r = null !== (t = Object(s.b)(l)) && void 0 !== t ? t : 0;
-				e.dispatch(Object(d.e)(++r))
-			});
-			t.a = e => {
-				if ("undefined" == typeof window) return a.a;
-				const t = e.getState(),
-					{
-						user: {
-							account: i
-						}
-					} = t,
-					n = i && i.id || "unknown";
-				return l = Object(s.c)(o.o.CHAT, o.w.CHAT_EDIT_NICKNAME_KEY, n || "unknown"), e => t => {
-					const i = e(t);
-					switch (t.type) {
-						case d.c:
-							t.payload <= d.b && Object(s.d)(l, t.payload, o.kc)
 					}
 					return i
 				}
@@ -1811,24 +1752,20 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "i", (function() {
+			i.d(t, "g", (function() {
 				return _
-			})), i.d(t, "e", (function() {
-				return m
 			})), i.d(t, "c", (function() {
-				return b
-			})), i.d(t, "h", (function() {
-				return g
-			})), i.d(t, "d", (function() {
-				return y
-			})), i.d(t, "g", (function() {
-				return w
-			})), i.d(t, "f", (function() {
-				return v
+				return m
 			})), i.d(t, "a", (function() {
-				return E
+				return b
+			})), i.d(t, "f", (function() {
+				return g
 			})), i.d(t, "b", (function() {
-				return S
+				return y
+			})), i.d(t, "e", (function() {
+				return w
+			})), i.d(t, "d", (function() {
+				return v
 			}));
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
@@ -1868,9 +1805,7 @@
 				g = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => Boolean(p(e))),
 				y = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Prompt),
 				w = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Sparkles),
-				v = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Sparkles || e === l.Prompt),
-				E = Object(d.a)(e => f(e, n.D2xChatNicknamePainted), e => Boolean(e && [c.NicknamePaintedEditPopup, c.NicknamePaintedEditButton].includes(e))),
-				S = Object(d.a)(e => f(e, n.D2xChatNicknamePainted), e => e === c.NicknamePaintedEditPopup)
+				v = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Sparkles || e === l.Prompt)
 		},
 		"./src/chat/selectors/members.ts": function(e, t, i) {
 			"use strict";
@@ -2475,11 +2410,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("138674"),
+				buildNumber: r("138679"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1625595046"),
+				})("1625597118"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4970,14 +4905,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c74be800d2ac88541ce8b3e961d9cad3f89a329f7-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ced3faec47e1077cd8c2738aced1a3ab8cecc5792-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "74be800d2ac88541ce8b3e961d9cad3f89a329f7-production",
+						release: "ed3faec47e1077cd8c2738aced1a3ab8cecc5792-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5471,7 +5406,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "74be800d2ac88541ce8b3e961d9cad3f89a329f7-production",
+						releaseClient: "ed3faec47e1077cd8c2738aced1a3ab8cecc5792-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7599,38 +7534,37 @@
 		"./src/reddit/actions/chat/init.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return u
+				return c
 			})), i.d(t, "a", (function() {
-				return _
+				return u
 			})), i.d(t, "c", (function() {
-				return m
+				return p
 			}));
 			var n = i("./src/lib/loadWithRetries/index.ts"),
 				r = i("./src/lib/makeActionCreator/index.ts"),
 				s = i("./src/chat/customMiddleware/chatThemeKey.ts"),
 				o = i("./src/chat/customMiddleware/containerSize.ts"),
 				d = i("./src/chat/customMiddleware/draftMessageText.ts"),
-				a = i("./src/chat/customMiddleware/editNickname.ts"),
-				l = i("./src/chat/reducers/subscribe.ts");
+				a = i("./src/chat/reducers/subscribe.ts");
+			let l;
 			let c;
-			let u;
-			const _ = "CHAT__INITED",
-				p = Object(r.a)(_),
-				m = async (e, t, r) => u ? {
-					chatStore: u,
+			const u = "CHAT__INITED",
+				_ = Object(r.a)(u),
+				p = async (e, t, r) => c ? {
+					chatStore: c,
 					firstInit: !1
-				} : (u = await (async (e, t, r) => {
+				} : (c = await (async (e, t, r) => {
 					const s = Date.now(),
 						o = await Object(n.a)(() => Promise.all([i.e("vendors~Chat~PostCreation~RedesignChat"), i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/chat/initializer.tsx"))).then(e => e.default);
 					return (await o(t(), s, r)).store
-				})(0, t, r), Object(o.b)(u), Object(d.b)(u), Object(a.b)(u), Object(s.b)(u), Object(s.c)(u), await (async (e, t, r) => {
-					if (!c) {
+				})(0, t, r), Object(o.b)(c), Object(d.b)(c), Object(s.b)(c), Object(s.c)(c), await (async (e, t, r) => {
+					if (!l) {
 						const s = (await Object(n.a)(() => Promise.all([i.e("vendors~Chat~PostCreation~RedesignChat"), i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/reddit/actions/chat/proxy.ts"))).then(e => e.default))(t, r),
-							o = Object(l.b)(e, s);
-						c = e.subscribe(o)
+							o = Object(a.b)(e, s);
+						l = e.subscribe(o)
 					}
-				})(u, e, t), e(p()), {
-					chatStore: u,
+				})(c, e, t), e(_()), {
+					chatStore: c,
 					firstInit: !0
 				})
 		},
@@ -47600,4 +47534,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e53c9451fcff4dd1634c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1a5d529968ecce0f6657.js.map

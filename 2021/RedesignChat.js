@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.4cb3250a5c9ebceac08a.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.3ab5ae18adc832aed9a2.js
+// Retrieved at 7/6/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -25,7 +25,7 @@
 		"./src/chat/initializer.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return ge
+				return Oe
 			}));
 			var s = n("./node_modules/react/index.js"),
 				c = n.n(s),
@@ -58,8 +58,8 @@
 				A = n("./src/chat/components/PortalContainer/index.m.less"),
 				P = n.n(A);
 			const {
-				embed: M,
-				hidden: D
+				embed: D,
+				hidden: M
 			} = w.b;
 
 			function B(e) {
@@ -71,15 +71,15 @@
 				U = v.a.wrapped(e => c.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${B(M.width)}px`,
-						height: `${B(M.height)}px`
+						width: `${B(D.width)}px`,
+						height: `${B(D.height)}px`
 					}
 				}, e.children), "EmbedPortalContainer", P.a),
 				k = v.a.wrapped(e => c.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${B(D.width)}px`,
-						height: `${B(D.height)}px`
+						width: `${B(M.width)}px`,
+						height: `${B(M.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", P.a),
 				q = v.a.wrapped(N.a, "MinimizedRedesignPortalContainer", P.a),
@@ -202,9 +202,8 @@
 					}, e
 				};
 			var pe = n("./src/chat/reducers/index.ts"),
-				xe = n("./src/chat/routes/index.ts"),
-				je = n("./src/chat/customMiddleware/editNickname.ts");
-			const fe = Object(x.a)({
+				xe = n("./src/chat/routes/index.ts");
+			const je = Object(x.a)({
 					actionDispatchers: {
 						reddaidReceived: _.r,
 						loidReceived: _.q,
@@ -222,20 +221,20 @@
 					},
 					statsAppName: l.l.Chat
 				}),
-				Oe = Object(j.a)(fe.apiContext);
+				fe = Object(j.a)(je.apiContext);
 
-			function ge(e, t, n = "/chat/minimize") {
+			function Oe(e, t, n = "/chat/minimize") {
 				const s = document.getElementById("2x-container"),
 					a = document.createElement("div");
 				return s.appendChild(a), Object(m.a)({
 					reducerMap: pe.a,
 					routes: xe.a,
-					apiContext: fe.apiContext,
-					gqlContext: Oe.gqlContext,
+					apiContext: je.apiContext,
+					gqlContext: fe.gqlContext,
 					appFactory: (e, t) => c.a.createElement(p.a.Provider, {
 						value: {
-							apiContext: fe.apiContext,
-							gqlContext: Oe.gqlContext
+							apiContext: je.apiContext,
+							gqlContext: fe.gqlContext
 						}
 					}, function(e, t) {
 						const n = Object(y.b)(z)(G);
@@ -248,9 +247,9 @@
 					}),
 					customMiddleware: [u.a.withExtraArgument({
 						routes: xe.a,
-						apiContext: fe.apiContext,
-						gqlContext: Oe.gqlContext
-					}), fe.middleware, J.a, V.a, Q.a, Y.a, Object(X.a)(t), H.a, F.a, K.a, je.a, Z.a, $.a, W.a],
+						apiContext: je.apiContext,
+						gqlContext: fe.gqlContext
+					}), je.middleware, J.a, V.a, Q.a, Y.a, Object(X.a)(t), H.a, F.a, K.a, Z.a, $.a, W.a],
 					postRender: ({
 						store: e
 					}) => {
@@ -825,4 +824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.4cb3250a5c9ebceac08a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.3ab5ae18adc832aed9a2.js.map
