@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1de447f57c7c018c0431.js
-// Retrieved at 7/6/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ddd4d95334868d7d0712.js
+// Retrieved at 7/6/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1572,7 +1572,7 @@
 					className: T.a.selection
 				}, L._("You picked {lineBreak}{optionText} !", [L._param("lineBreak", r.a.createElement("br", null)), L._param("optionText", `‘${Object(P.a)(t.text,40,"...")}’`)], {
 					hk: "2egxpe"
-				})), n ? r.a.createElement("div", {
+				})), null !== n ? r.a.createElement("div", {
 					className: T.a.tokenBalance
 				}, L._({
 					"*": "You have {=[tokenImage][tokenBalance]} tournament tokens",
@@ -3414,4 +3414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1de447f57c7c018c0431.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ddd4d95334868d7d0712.js.map
