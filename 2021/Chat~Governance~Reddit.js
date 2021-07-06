@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c85bde78f59c643f5337.js
-// Retrieved at 7/1/2021, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.77073ea8f14a7a349b17.js
+// Retrieved at 7/6/2021, 9:40:13 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2473,11 +2473,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("138482"),
+				buildNumber: r("138649"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1625177067"),
+				})("1625577501"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4968,14 +4968,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c8ec7f16d05780ea0cb842e67d8c719f17e195b78-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9880625e8ffe7fb44a2056d8226243bba802e920-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8ec7f16d05780ea0cb842e67d8c719f17e195b78-production",
+						release: "9880625e8ffe7fb44a2056d8226243bba802e920-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5469,7 +5469,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "8ec7f16d05780ea0cb842e67d8c719f17e195b78-production",
+						releaseClient: "9880625e8ffe7fb44a2056d8226243bba802e920-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -20405,25 +20405,26 @@
 		"./src/reddit/endpoints/modQueue/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return l
-			})), i.d(t, "a", (function() {
 				return c
+			})), i.d(t, "a", (function() {
+				return u
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./src/lib/constants/index.ts"),
 				s = i("./src/lib/makeApiRequest/index.ts"),
 				o = i("./src/lib/omitHeaders/index.ts"),
 				d = i("./src/reddit/constants/headers.ts"),
-				a = i("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const l = (e, t, i) => Object(s.a)(e, {
-					endpoint: Object(a.a)(`${n.a.gatewayUrl}/desktopapi/v1/${t}`),
+				a = i("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				l = i("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const c = (e, t, i) => Object(s.a)(e, {
+					endpoint: Object(l.a)(Object(a.a)(`${n.a.gatewayUrl}/desktopapi/v1/${t}`)),
 					method: r.hb.GET,
 					data: {
 						moderated_limit: 25,
 						...i
 					}
 				}),
-				c = (e, t, i) => Object(s.a)(Object(o.a)(e, [d.a]), {
+				u = (e, t, i) => Object(s.a)(Object(o.a)(e, [d.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/${t}`,
 					method: r.hb.POST,
 					type: "json",
@@ -47585,4 +47586,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c85bde78f59c643f5337.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.77073ea8f14a7a349b17.js.map

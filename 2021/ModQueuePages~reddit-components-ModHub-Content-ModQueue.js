@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.4b51ba2c9c6def5cbb53.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c16fd8d2c5f7b59305d4.js
+// Retrieved at 7/6/2021, 9:40:13 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -600,6 +600,7 @@
 						comment: s
 					}, l.a.createElement(A.a, {
 						content: Object(V.a)(s),
+						mediaMetadata: s.media && s.media.mediaMetadata,
 						rtJsonElementProps: te(e)
 					}), l.a.createElement(R.a, {
 						comment: s,
@@ -655,6 +656,7 @@
 						comment: s
 					}, l.a.createElement(ce, null, l.a.createElement(A.a, {
 						content: Object(V.a)(s),
+						mediaMetadata: s.media && s.media.mediaMetadata,
 						rtJsonElementProps: me(e)
 					})), n && l.a.createElement(B.a, {
 						onIgnoreReports: a,
@@ -2077,4 +2079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.4b51ba2c9c6def5cbb53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c16fd8d2c5f7b59305d4.js.map
