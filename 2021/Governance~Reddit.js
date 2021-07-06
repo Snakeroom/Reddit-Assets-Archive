@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1c668676274ccb84e682.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.3d4b23003b5a41811249.js
+// Retrieved at 7/6/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5828,8 +5828,14 @@
 							return _(e, t.payload.postId, t.payload.vendorMetadata, "adUnloaded");
 						case m.s:
 							return _(e, t.payload.postId, t.payload.vendorMetadata, "groupMViewable");
-						case m.c:
-							return _(e, t.payload.postId, t.payload.vendorMetadata, "adGalleryItemImpression");
+						case m.c: {
+							const {
+								postId: r,
+								vendorMetadata: s,
+								eventType: a
+							} = t.payload;
+							return _(e, r, s, `adGalleryItemImpression${a}`)
+						}
 						default:
 							return e
 					}
@@ -22216,4 +22222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1c668676274ccb84e682.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3d4b23003b5a41811249.js.map

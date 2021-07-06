@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.4ff471b6b9b3c1392096.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.b15aa16aab8d17c6c5aa.js
+// Retrieved at 7/6/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -531,8 +531,8 @@
 							index: e
 						}))
 					}, [t, A]),
-					se = Object(i.useCallback)(() => {
-						t(Object(f.z)(P, E.a.GalleryItemImpression))
+					se = Object(i.useCallback)(e => {
+						t(Object(f.z)(P, E.a.GalleryItemImpression, `Slide${e}`))
 					}, [t, P]),
 					ie = Object(i.useCallback)(() => {
 						t(Object(x.i)({
@@ -547,7 +547,7 @@
 							const e = D(J, p.length);
 							e !== J && q(e)
 						}
-						te(e), G(u.b(A, e)), G(u.d(A, e + 1)), se()
+						te(e), G(u.b(A, e)), G(u.d(A, e + 1)), se(e)
 					}, [U, F, se, te, G, A, J, p.length]),
 					oe = Object(i.useCallback)(() => {
 						if (!H) return;
@@ -557,7 +557,7 @@
 							e !== Y && $(e)
 						}
 						const t = F + 1;
-						te(e), G(u.a(A, t)), G(u.d(A, t - 1)), se()
+						te(e), G(u.a(A, t)), G(u.d(A, t - 1)), se(e)
 					}, [H, F, se, te, G, A, Y]),
 					ae = Object(i.useCallback)(() => {
 						const e = p[F] && p[F].outboundUrl;
@@ -1975,4 +1975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.4ff471b6b9b3c1392096.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.b15aa16aab8d17c6c5aa.js.map
