@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.36ab7449a0455b4a78a0.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.f0e7359ea1ea0e3d93c6.js
+// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -3011,11 +3011,11 @@
 				o = s("./src/reddit/selectors/experiments/utils.ts"),
 				d = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.nc,
+					experimentName: r.oc,
 					experimentEligibilitySelector: c
 				}), o.a),
 				c = e => Object(d.J)(e) || Object(d.K)(e),
-				u = Object(n.a)(a, e => e === r.rc.Enabled)
+				u = Object(n.a)(a, e => e === r.sc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, s) {
 			"use strict";
@@ -3023,7 +3023,7 @@
 				return u
 			})), s.d(t, "d", (function() {
 				return b
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "g", (function() {
 				return p
 			})), s.d(t, "b", (function() {
 				return f
@@ -3031,6 +3031,8 @@
 				return _
 			})), s.d(t, "a", (function() {
 				return E
+			})), s.d(t, "f", (function() {
+				return T
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				r = s("./src/reddit/constants/experiments.ts"),
@@ -3039,27 +3041,32 @@
 				d = s("./src/reddit/selectors/user.ts");
 			const a = e => Object(d.J)(e) || Object(d.K)(e),
 				c = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.ab,
+					experimentName: r.bb,
 					experimentEligibilitySelector: a
 				}), o.a),
-				u = Object(n.a)(c, e => e === r.vc.Enabled),
+				u = Object(n.a)(c, e => e === r.xc.Enabled),
 				l = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.pc,
+					experimentName: r.qc,
 					experimentEligibilitySelector: a
 				}), o.a),
-				b = Object(n.a)(u, l, (e, t) => e && t === r.uc.Enabled),
+				b = Object(n.a)(u, l, (e, t) => e && t === r.wc.Enabled),
 				m = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: r.db,
+					experimentName: r.eb,
 					experimentEligibilitySelector: a
 				}), o.a),
-				p = Object(n.a)(u, m, (e, t) => e && t === r.nb.Enabled),
+				p = Object(n.a)(u, m, (e, t) => e && t === r.ob.Enabled),
 				O = Object(n.a)(e => Object(i.c)(e, {
 					experimentName: r.Z,
 					experimentEligibilitySelector: a
 				}), o.a),
-				f = Object(n.a)(O, e => e === r.tc.Banner_1st_time),
-				_ = Object(n.a)(O, e => e === r.tc.Tooltip_persist),
-				E = Object(n.a)(O, e => e === r.tc.Tooltip_1st_time)
+				f = Object(n.a)(O, e => e === r.uc.Banner_1st_time),
+				_ = Object(n.a)(O, e => e === r.uc.Tooltip_persist),
+				E = Object(n.a)(O, e => e === r.uc.Tooltip_1st_time),
+				h = Object(n.a)(e => Object(i.c)(e, {
+					experimentName: r.ab,
+					experimentEligibilitySelector: a
+				}), o.a),
+				T = Object(n.a)(h, e => e === r.vc.ContinuousScroll)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
@@ -3075,4 +3082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.36ab7449a0455b4a78a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.f0e7359ea1ea0e3d93c6.js.map
