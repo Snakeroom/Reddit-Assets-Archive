@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.13f2d34466b4b0c6bddc.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a4650da74f78f47def07.js
+// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -4002,7 +4002,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, s = Object(F.a)(), i = Object(B.a)(p.cc) === p.gc.Enabled;
+					} = t, s = Object(F.a)(), i = Object(B.a)(p.ec) === p.ic.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Z, e));
@@ -4920,4 +4920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.13f2d34466b4b0c6bddc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a4650da74f78f47def07.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.5a5884d5aab9993024e3.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.6ce5f1fb62b44a60b4c2.js
+// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -21,7 +21,7 @@
 			const g = () => async (e, t) => {
 				const n = t();
 				if (!(Object(p.K)(n) || Object(p.J)(n))) return Object(d.a)(e, n);
-				Object(m.e)(n) ? (e(b()), e(f()), await e(h())) : e(Object(a.c)("/"))
+				Object(m.g)(n) ? (e(b()), e(f()), await e(h())) : e(Object(a.c)("/"))
 			}, b = () => Object(i.k)({
 				actionSource: i.a.NotificationsInbox,
 				redirectUrl: l.b
@@ -32,7 +32,7 @@
 					a = Object(u.g)(t()),
 					s = !(!a || !a.length),
 					i = Object(p.K)(n) || Object(p.J)(n);
-				if (s || !i || !Object(m.e)(n)) return;
+				if (s || !i || !Object(m.g)(n)) return;
 				const o = {
 					first: 10
 				};
@@ -500,7 +500,7 @@
 				earlierNotifications: T.b,
 				hasNextPage: T.d,
 				inboxBadgeCount: S.g,
-				isInboxPostEmbedEnabled: I.d,
+				isInboxPostEmbedEnabled: I.f,
 				isPending: T.e,
 				todayNotifications: T.h
 			});
@@ -612,4 +612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.5a5884d5aab9993024e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.6ce5f1fb62b44a60b4c2.js.map

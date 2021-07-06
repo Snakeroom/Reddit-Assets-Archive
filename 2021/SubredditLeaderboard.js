@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e18dc5f81d50e8dbb2f0.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5776a038ee6de7ddbc96.js
+// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -2035,8 +2035,8 @@
 				z = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				K = n.n(z);
 
-			function U() {
-				return (U = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2044,7 +2044,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = e => {
+			const U = e => {
 				const {
 					category: t,
 					children: n,
@@ -2052,7 +2052,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(q.a, U({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2112,7 +2112,7 @@
 						}
 					}, s, e && e.map((e, r) => {
 						const s = a + r * n;
-						return i.a.createElement(V, {
+						return i.a.createElement(U, {
 							category: e,
 							className: t,
 							isActive: b(e.name),
@@ -2214,7 +2214,7 @@
 				ke = (e, {
 					match: t
 				}) => Object(h.b)(t.params.categoryName || ""),
-				_e = Object(u.Td)(g.i),
+				_e = Object(u.Vd)(g.i),
 				Ee = Object(d.c)({
 					categories: e => Object(be.c)(e, {
 						categoriesOrder: _e
@@ -2343,4 +2343,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.e18dc5f81d50e8dbb2f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.5776a038ee6de7ddbc96.js.map

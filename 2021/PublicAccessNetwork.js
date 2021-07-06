@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d5e2abac10ca2d69eb9c.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c98ab92a8bdb28a5624a.js
+// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Ec
+					experimentName: m.Gc
 				});
-				return Object(m.Vd)(t) ? void 0 : t
+				return Object(m.Xd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Fc
+					experimentName: m.Hc
 				});
-				return Object(m.Vd)(t) ? void 0 : t
-			}, (e, t) => e === m.Gc.Enabled && t === m.Gc.Enabled);
+				return Object(m.Xd)(t) ? void 0 : t
+			}, (e, t) => e === m.Ic.Enabled && t === m.Ic.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -1030,9 +1030,9 @@
 							r = Object(se.M)(s(), {
 								identifier: D.belongsTo
 							});
-						if (r && (e => F.pd.Redirect === Object(U.b)(e, {
+						if (r && (e => F.rd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: F.gd
+								experimentName: F.id
 							}))(s())) return void t(Object(o.c)(r.url));
 						if ((D.media && D.media.type) === T.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===R.a.SUBREDDIT?r.url:"/"}${Object(p.t)(D.id)}`;
@@ -7076,7 +7076,7 @@
 				r = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(r.a)(e);
-					return Boolean(t) && !Object(a.Vd)(t)
+					return Boolean(t) && !Object(a.Xd)(t)
 				},
 				d = Object(o.a)(i, n.d, (e, t) => e && !t)
 		},
@@ -7094,8 +7094,8 @@
 			const c = e => (e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: () => Object(d.J)(e),
-					experimentName: o.ed
-				}) === o.od.Enabled
+					experimentName: o.gd
+				}) === o.qd.Enabled
 			})(e) && (e => {
 				const t = Object(n.d)(e);
 				return !!t && r.has(t.toLowerCase())
@@ -7103,4 +7103,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.d5e2abac10ca2d69eb9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c98ab92a8bdb28a5624a.js.map

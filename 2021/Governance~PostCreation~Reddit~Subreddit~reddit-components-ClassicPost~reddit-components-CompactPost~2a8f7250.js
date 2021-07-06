@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.2b743fa392f3c8f217ed.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0340f2948c9c67472c38.js
+// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -521,7 +521,7 @@
 			})), r.d(t, "a", (function() {
 				return H
 			})), r.d(t, "b", (function() {
-				return q
+				return V
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./node_modules/lodash/pick.js"),
@@ -732,7 +732,7 @@
 							return Object(i.j)(.1, Object(I.a)(o()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				V = p.a.wrapped(e => {
+				q = p.a.wrapped(e => {
 					const t = K(e),
 						r = c.a.createElement("span", {
 							className: e.className,
@@ -747,7 +747,7 @@
 					})
 				}, "MetaFlair", E.a);
 
-			function q(e) {
+			function V(e) {
 				const {
 					className: t,
 					disabled: r = !1,
@@ -811,7 +811,7 @@
 						});
 					case v.f.Nsfw:
 					case v.f.Spoiler:
-						return c.a.createElement(V, {
+						return c.a.createElement(q, {
 							className: t,
 							text: n.text,
 							type: n.type
@@ -1511,7 +1511,7 @@
 								experimentName: o.B,
 								expEventOverride: t
 							});
-							return !!(Object(o.Vd)(r) ? void 0 : r)
+							return !!(Object(o.Xd)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2265,9 +2265,9 @@
 			})), r.d(t, "e", (function() {
 				return K
 			})), r.d(t, "v", (function() {
-				return V
-			})), r.d(t, "L", (function() {
 				return q
+			})), r.d(t, "L", (function() {
+				return V
 			})), r.d(t, "f", (function() {
 				return $
 			})), r.d(t, "i", (function() {
@@ -2468,10 +2468,10 @@
 					const s = e.authorFlair.models[r.subredditId];
 					return s ? s[r.author] : null
 				},
-				V = (e, {
+				q = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				q = (e, {
+				V = (e, {
 					draftKey: t
 				}) => {
 					const r = e.features.comments.submit.error[t];
@@ -2579,4 +2579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.2b743fa392f3c8f217ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0340f2948c9c67472c38.js.map

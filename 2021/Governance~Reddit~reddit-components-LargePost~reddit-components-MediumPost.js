@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.fd25680d5c96a21d1caf.js
-// Retrieved at 7/6/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.37a6dcc0dcfe21ea6d53.js
+// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -1544,7 +1544,7 @@
 						subreddit: s
 					} = t, {
 						isSponsored: n
-					} = e, r = Object(w.a)(), i = Object(G.a)(b.cc) === b.gc.Enabled;
+					} = e, r = Object(w.a)(), i = Object(G.a)(b.ec) === b.ic.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return o.a.createElement(W, {
 						nowrap: t.nowrap
 					}, o.a.createElement($, t));
@@ -2783,4 +2783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.fd25680d5c96a21d1caf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.37a6dcc0dcfe21ea6d53.js.map
