@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fdc81e2fd3decd846815.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1de447f57c7c018c0431.js
+// Retrieved at 7/6/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -2122,6 +2122,7 @@
 				hintButton: "_20VllfWHKGUSG02wR_TCKW",
 				optionBody: "X-1krr1vt__mfLM_N6-fc",
 				optionText: "_2EtRvWvspf1e95m4nOww3i",
+				hasUserAmount: "_3wXSxiiYC12UpeBidcrWMm",
 				canGetHint: "_13IbSA1qE2L9xvRdrE-MI4",
 				isVote: "_4SUCBqznJCIiyL9k_52hC",
 				optionStake: "_13IxX5Ek1VDFfqrZVhO_Xz",
@@ -2190,7 +2191,9 @@
 				}, g && r.a.createElement(c.a, {
 					className: l.a.checkmarkIcon
 				}), r.a.createElement("div", {
-					className: l.a.optionText
+					className: Object(s.a)(l.a.optionText, {
+						[l.a.hasUserAmount]: Boolean(m.userStakeAmount)
+					})
 				}, m.text), !!m.userStakeAmount && r.a.createElement("div", {
 					className: l.a.optionStake
 				}, j ? r.a.createElement(a.a, {
@@ -3411,4 +3414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fdc81e2fd3decd846815.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1de447f57c7c018c0431.js.map
