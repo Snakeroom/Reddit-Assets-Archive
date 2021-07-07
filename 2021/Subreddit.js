@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.27ce9eefeea1da9a28c0.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4aa6b5971f95f07b4e56.js
+// Retrieved at 7/7/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7826,23 +7826,23 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return I
-			})), n.d(t, "d", (function() {
-				return P
-			})), n.d(t, "a", (function() {
 				return T
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return L
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "a", (function() {
 				return B
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "b", (function() {
+				return A
+			})), n.d(t, "f", (function() {
 				return D
-			})), n.d(t, "g", (function() {
-				return R
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return F
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return M
+			})), n.d(t, "i", (function() {
+				return U
+			})), n.d(t, "e", (function() {
+				return W
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -7936,42 +7936,44 @@
 				j = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				S = n("./src/reddit/components/SubredditMention/index.tsx"),
 				w = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				k = n("./src/reddit/helpers/richTextJson/index.ts"),
-				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
-			const I = (e, t, n) => {
+				k = n("./src/reddit/helpers/isComment.ts"),
+				N = n("./src/reddit/helpers/isPost.ts"),
+				I = n("./src/reddit/helpers/richTextJson/index.ts"),
+				P = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+			const T = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						o = [],
 						a = s.length;
 					for (let i = 0; i < a; i++) {
 						const e = s[i];
-						o.push(e.e === p.w ? e.t : M(e, t, i))
+						o.push(e.e === p.w ? e.t : W(e, t, i))
 					}
 					const d = c.x[r - 1];
 					return i.a.createElement(d, {
 						key: n
 					}, o)
 				},
-				P = e => i.a.createElement(c.e, {
+				L = e => i.a.createElement(c.e, {
 					key: e
 				}),
-				T = (e, t, n, s) => {
+				B = (e, t, n, s) => {
 					const r = e.c;
 					if (!r) return;
 					const o = r.length,
 						a = [];
-					for (let i = 0; i < o; i++) a.push(A(r[i], t, n, i));
+					for (let i = 0; i < o; i++) a.push(R(r[i], t, n, i));
 					return i.a.createElement(c.c, {
 						key: s
 					}, a)
 				},
-				L = (e, t) => {
+				A = (e, t) => {
 					const n = e.c;
 					return i.a.createElement(c.k, {
 						key: t
 					}, i.a.createElement(c.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				B = (e, t, n, s) => {
+				D = (e, t, n, s) => {
 					const r = e.c,
 						o = [],
 						a = r.length;
@@ -7979,32 +7981,32 @@
 						const e = r[l].c;
 						e && e.length && o.push(i.a.createElement(c.g, {
 							key: l
-						}, e.map((e, s) => A(e, t, n, s))))
+						}, e.map((e, s) => R(e, t, n, s))))
 					}
 					const d = e.o ? c.i : c.v;
 					return i.a.createElement(d, {
 						key: s
 					}, o)
 				},
-				A = (e, t, n, s) => {
+				R = (e, t, n, s) => {
 					switch (e.e) {
 						case p.b:
-							return T(e, t, n, s);
-						case p.c:
-							return L(e, s);
-						case p.k:
-							return I(e, n, s);
-						case p.l:
-							return P(s);
-						case p.p:
 							return B(e, t, n, s);
+						case p.c:
+							return A(e, s);
+						case p.k:
+							return T(e, n, s);
+						case p.l:
+							return L(s);
+						case p.p:
+							return D(e, t, n, s);
 						case p.u:
-							return R(e, t, n, s);
+							return M(e, t, n, s);
 						case p.z:
-							return D(e, t, n, s)
+							return F(e, t, n, s)
 					}
 				},
-				D = (e, t, n, s) => {
+				F = (e, t, n, s) => {
 					const r = e.c,
 						o = e.h,
 						a = r.length,
@@ -8017,13 +8019,13 @@
 							{
 								H: s,
 								D: r
-							} = V(e.a),
+							} = K(e.a),
 							{
 								c: a = []
 							} = e;
 						l.push(i.a.createElement(s, {
 							key: c
-						}, F(a, t, n))), m[c] = r
+						}, U(a, t, n))), m[c] = r
 					}
 					for (let p = 0; p < a; p++) {
 						const e = r[p],
@@ -8036,7 +8038,7 @@
 								} = e[r];
 							o.push(i.a.createElement(s, {
 								key: r
-							}, F(a, t, n)))
+							}, U(a, t, n)))
 						}
 						u.push(i.a.createElement(c.t, {
 							key: p
@@ -8046,24 +8048,24 @@
 						key: s
 					}, i.a.createElement("thead", null, i.a.createElement(c.t, null, l)), i.a.createElement("tbody", null, u))
 				},
-				R = (e, t, n, s) => {
+				M = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => i.a.createElement(c.j, {
 						key: e
 					}, i.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(k.f)(r.id) ? i.a.createElement(c.j, {
+					return r.e !== p.m && r.e !== p.a || !Object(I.f)(r.id) ? i.a.createElement(c.j, {
 						key: s
-					}, F(e.c, t, n)) : Object(O.b)(r, s, t)
+					}, U(e.c, t, n)) : Object(O.b)(r, s, t)
 				},
-				F = (e, t, n) => {
+				U = (e, t, n) => {
 					const s = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === p.A) s.push(U(r, o));
+						if (r.e === p.A) s.push(H(r, o));
 						else if (r.e === p.x) s.push(i.a.createElement(j.a, {
 							key: o
-						}, F(r.c, t, n)));
+						}, U(r.c, t, n)));
 						else if (r.e === p.n) s.push(i.a.createElement("br", {
 							key: o
 						}));
@@ -8076,14 +8078,14 @@
 									media: e
 								}))
 							}
-						} else s.push(M(r, n, o))
+						} else s.push(W(r, n, o))
 					}
 					return s
 				},
-				M = (e, t, n) => {
+				W = (e, t, n) => {
 					switch (e.e) {
 						case p.o:
-							const s = U({
+							const s = H({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -8092,12 +8094,16 @@
 								key: n,
 								title: e.a
 							}, s);
-							const r = Object(N.a)(t);
-							return i.a.createElement(c.a, {
+							let r, o;
+							const a = Object(P.a)(t),
+								d = t.renderingObjectInfo;
+							return d && Object(N.b)(d) && (r = d.postId), d && Object(k.b)(d) && (o = d.id, r = d.postId), i.a.createElement(c.a, {
 								href: e.u,
 								key: n,
 								title: e.a,
-								sourceElement: r
+								sourceElement: a,
+								postId: r,
+								commentId: o
 							}, s);
 						case p.y:
 							return i.a.createElement(S.b, {
@@ -8119,23 +8125,23 @@
 							}, e.t)
 					}
 				},
-				U = (e, t) => {
+				H = (e, t) => {
 					const {
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return H(0, r, t);
+					if (!n) return q(0, r, t);
 					const a = Object(s.a)(r);
 					let i = 0,
 						c = 0;
 					const d = n.length;
 					for (; i < d; i++) {
 						const [e, t, s] = n[i], d = t + s, l = a[t], u = a[d] - l;
-						l > c && o.push(H(0, r.substr(c, l - c), `between${i}`)), o.push(H(e, r.substr(l, u), i)), c = l + u
+						l > c && o.push(q(0, r.substr(c, l - c), `between${i}`)), o.push(q(e, r.substr(l, u), i)), c = l + u
 					}
-					return c < r.length && o.push(H(0, r.substr(c), `remaining${i}`)), o
+					return c < r.length && o.push(q(0, r.substr(c), `remaining${i}`)), o
 				},
-				W = {
+				V = {
 					[p.j.monospace]: c.h,
 					[p.j.bold]: c.b,
 					[p.j.italic]: c.f,
@@ -8144,13 +8150,13 @@
 					[p.j.subscript]: c.l,
 					[p.j.superscript]: c.m
 				},
-				H = (e, t, n) => {
+				q = (e, t, n) => {
 					let s = t;
-					return s = o()(W, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
+					return s = o()(V, (t, s, r) => e & parseInt(r, 10) ? i.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				V = e => {
+				K = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -15143,4 +15149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.27ce9eefeea1da9a28c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4aa6b5971f95f07b4e56.js.map

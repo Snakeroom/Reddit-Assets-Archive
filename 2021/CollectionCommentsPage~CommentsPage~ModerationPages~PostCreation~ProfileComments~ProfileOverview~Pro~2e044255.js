@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.67b2646d1079c82b9b61.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.02989035892fac11ba29.js
+// Retrieved at 7/7/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -1741,23 +1741,23 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return L
-			})), s.d(t, "d", (function() {
-				return P
-			})), s.d(t, "a", (function() {
 				return w
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return M
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "a", (function() {
 				return N
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "b", (function() {
+				return R
+			})), s.d(t, "f", (function() {
 				return B
-			})), s.d(t, "g", (function() {
-				return D
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "h", (function() {
 				return H
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "g", (function() {
 				return F
+			})), s.d(t, "i", (function() {
+				return A
+			})), s.d(t, "e", (function() {
+				return U
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				r = s("./node_modules/lodash/reduce.js"),
@@ -1851,42 +1851,44 @@
 				S = s("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				C = s("./src/reddit/components/SubredditMention/index.tsx"),
 				k = s("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				T = s("./src/reddit/helpers/richTextJson/index.ts"),
-				I = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
-			const L = (e, t, s) => {
+				T = s("./src/reddit/helpers/isComment.ts"),
+				I = s("./src/reddit/helpers/isPost.ts"),
+				L = s("./src/reddit/helpers/richTextJson/index.ts"),
+				P = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+			const w = (e, t, s) => {
 					const n = e.c || [],
 						r = e.l,
 						o = [],
 						i = n.length;
 					for (let a = 0; a < i; a++) {
 						const e = n[a];
-						o.push(e.e === p.w ? e.t : F(e, t, a))
+						o.push(e.e === p.w ? e.t : U(e, t, a))
 					}
 					const d = c.x[r - 1];
 					return a.a.createElement(d, {
 						key: s
 					}, o)
 				},
-				P = e => a.a.createElement(c.e, {
+				M = e => a.a.createElement(c.e, {
 					key: e
 				}),
-				w = (e, t, s, n) => {
+				N = (e, t, s, n) => {
 					const r = e.c;
 					if (!r) return;
 					const o = r.length,
 						i = [];
-					for (let a = 0; a < o; a++) i.push(R(r[a], t, s, a));
+					for (let a = 0; a < o; a++) i.push(D(r[a], t, s, a));
 					return a.a.createElement(c.c, {
 						key: n
 					}, i)
 				},
-				M = (e, t) => {
+				R = (e, t) => {
 					const s = e.c;
 					return a.a.createElement(c.k, {
 						key: t
 					}, a.a.createElement(c.h, null, s.reduce((e, t, s, n) => e += t.t + (s < n.length ? "\n" : ""), "")))
 				},
-				N = (e, t, s, n) => {
+				B = (e, t, s, n) => {
 					const r = e.c,
 						o = [],
 						i = r.length;
@@ -1894,32 +1896,32 @@
 						const e = r[l].c;
 						e && e.length && o.push(a.a.createElement(c.g, {
 							key: l
-						}, e.map((e, n) => R(e, t, s, n))))
+						}, e.map((e, n) => D(e, t, s, n))))
 					}
 					const d = e.o ? c.i : c.v;
 					return a.a.createElement(d, {
 						key: n
 					}, o)
 				},
-				R = (e, t, s, n) => {
+				D = (e, t, s, n) => {
 					switch (e.e) {
 						case p.b:
-							return w(e, t, s, n);
-						case p.c:
-							return M(e, n);
-						case p.k:
-							return L(e, s, n);
-						case p.l:
-							return P(n);
-						case p.p:
 							return N(e, t, s, n);
+						case p.c:
+							return R(e, n);
+						case p.k:
+							return w(e, s, n);
+						case p.l:
+							return M(n);
+						case p.p:
+							return B(e, t, s, n);
 						case p.u:
-							return D(e, t, s, n);
+							return F(e, t, s, n);
 						case p.z:
-							return B(e, t, s, n)
+							return H(e, t, s, n)
 					}
 				},
-				B = (e, t, s, n) => {
+				H = (e, t, s, n) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -1932,13 +1934,13 @@
 							{
 								H: n,
 								D: r
-							} = J(e.a),
+							} = G(e.a),
 							{
 								c: i = []
 							} = e;
 						l.push(a.a.createElement(n, {
 							key: c
-						}, H(i, t, s))), m[c] = r
+						}, A(i, t, s))), m[c] = r
 					}
 					for (let p = 0; p < i; p++) {
 						const e = r[p],
@@ -1951,7 +1953,7 @@
 								} = e[r];
 							o.push(a.a.createElement(n, {
 								key: r
-							}, H(i, t, s)))
+							}, A(i, t, s)))
 						}
 						u.push(a.a.createElement(c.t, {
 							key: p
@@ -1961,24 +1963,24 @@
 						key: n
 					}, a.a.createElement("thead", null, a.a.createElement(c.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				D = (e, t, s, n) => {
+				F = (e, t, s, n) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(c.j, {
 						key: e
 					}, a.a.createElement("br", null)))(n);
 					const r = e.c[0];
-					return r.e !== p.m && r.e !== p.a || !Object(T.f)(r.id) ? a.a.createElement(c.j, {
+					return r.e !== p.m && r.e !== p.a || !Object(L.f)(r.id) ? a.a.createElement(c.j, {
 						key: n
-					}, H(e.c, t, s)) : Object(j.b)(r, n, t)
+					}, A(e.c, t, s)) : Object(j.b)(r, n, t)
 				},
-				H = (e, t, s) => {
+				A = (e, t, s) => {
 					const n = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === p.A) n.push(A(r, o));
+						if (r.e === p.A) n.push(W(r, o));
 						else if (r.e === p.x) n.push(a.a.createElement(S.a, {
 							key: o
-						}, H(r.c, t, s)));
+						}, A(r.c, t, s)));
 						else if (r.e === p.n) n.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -1991,14 +1993,14 @@
 									media: e
 								}))
 							}
-						} else n.push(F(r, s, o))
+						} else n.push(U(r, s, o))
 					}
 					return n
 				},
-				F = (e, t, s) => {
+				U = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = A({
+							const n = W({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2007,12 +2009,16 @@
 								key: s,
 								title: e.a
 							}, n);
-							const r = Object(I.a)(t);
-							return a.a.createElement(c.a, {
+							let r, o;
+							const i = Object(P.a)(t),
+								d = t.renderingObjectInfo;
+							return d && Object(I.b)(d) && (r = d.postId), d && Object(T.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
 								href: e.u,
 								key: s,
 								title: e.a,
-								sourceElement: r
+								sourceElement: i,
+								postId: r,
+								commentId: o
 							}, n);
 						case p.y:
 							return a.a.createElement(C.b, {
@@ -2034,23 +2040,23 @@
 							}, e.t)
 					}
 				},
-				A = (e, t) => {
+				W = (e, t) => {
 					const {
 						f: s,
 						t: r
 					} = e, o = [];
-					if (!s) return W(0, r, t);
+					if (!s) return V(0, r, t);
 					const i = Object(n.a)(r);
 					let a = 0,
 						c = 0;
 					const d = s.length;
 					for (; a < d; a++) {
 						const [e, t, n] = s[a], d = t + n, l = i[t], u = i[d] - l;
-						l > c && o.push(W(0, r.substr(c, l - c), `between${a}`)), o.push(W(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(V(0, r.substr(c, l - c), `between${a}`)), o.push(V(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(W(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
 				},
-				U = {
+				J = {
 					[p.j.monospace]: c.h,
 					[p.j.bold]: c.b,
 					[p.j.italic]: c.f,
@@ -2059,13 +2065,13 @@
 					[p.j.subscript]: c.l,
 					[p.j.superscript]: c.m
 				},
-				W = (e, t, s) => {
+				V = (e, t, s) => {
 					let n = t;
-					return n = o()(U, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = o()(J, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
-				J = e => {
+				G = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -2825,4 +2831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.67b2646d1079c82b9b61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.02989035892fac11ba29.js.map

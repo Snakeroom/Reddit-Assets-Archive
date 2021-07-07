@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.347cf0475d6f5ea2c5e3.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.26c6397e7b3fe89f58d4.js
+// Retrieved at 7/7/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2068,23 +2068,23 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return S
-			})), n.d(t, "d", (function() {
-				return N
-			})), n.d(t, "a", (function() {
 				return M
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return L
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "a", (function() {
 				return R
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "b", (function() {
+				return P
+			})), n.d(t, "f", (function() {
 				return B
-			})), n.d(t, "g", (function() {
-				return D
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "h", (function() {
 				return H
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return A
+			})), n.d(t, "i", (function() {
+				return F
+			})), n.d(t, "e", (function() {
+				return U
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2178,42 +2178,44 @@
 				O = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				I = n("./src/reddit/components/SubredditMention/index.tsx"),
 				C = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				T = n("./src/reddit/helpers/richTextJson/index.ts"),
-				k = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
-			const S = (e, t, n) => {
+				T = n("./src/reddit/helpers/isComment.ts"),
+				k = n("./src/reddit/helpers/isPost.ts"),
+				S = n("./src/reddit/helpers/richTextJson/index.ts"),
+				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+			const M = (e, t, n) => {
 					const s = e.c || [],
 						r = e.l,
 						o = [],
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : A(e, t, a))
+						o.push(e.e === h.w ? e.t : U(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
 						key: n
 					}, o)
 				},
-				N = e => a.a.createElement(d.e, {
+				L = e => a.a.createElement(d.e, {
 					key: e
 				}),
-				M = (e, t, n, s) => {
+				R = (e, t, n, s) => {
 					const r = e.c;
 					if (!r) return;
 					const o = r.length,
 						i = [];
-					for (let a = 0; a < o; a++) i.push(P(r[a], t, n, a));
+					for (let a = 0; a < o; a++) i.push(D(r[a], t, n, a));
 					return a.a.createElement(d.c, {
 						key: s
 					}, i)
 				},
-				L = (e, t) => {
+				P = (e, t) => {
 					const n = e.c;
 					return a.a.createElement(d.k, {
 						key: t
 					}, a.a.createElement(d.h, null, n.reduce((e, t, n, s) => e += t.t + (n < s.length ? "\n" : ""), "")))
 				},
-				R = (e, t, n, s) => {
+				B = (e, t, n, s) => {
 					const r = e.c,
 						o = [],
 						i = r.length;
@@ -2221,32 +2223,32 @@
 						const e = r[l].c;
 						e && e.length && o.push(a.a.createElement(d.g, {
 							key: l
-						}, e.map((e, s) => P(e, t, n, s))))
+						}, e.map((e, s) => D(e, t, n, s))))
 					}
 					const c = e.o ? d.i : d.v;
 					return a.a.createElement(c, {
 						key: s
 					}, o)
 				},
-				P = (e, t, n, s) => {
+				D = (e, t, n, s) => {
 					switch (e.e) {
 						case h.b:
-							return M(e, t, n, s);
-						case h.c:
-							return L(e, s);
-						case h.k:
-							return S(e, n, s);
-						case h.l:
-							return N(s);
-						case h.p:
 							return R(e, t, n, s);
+						case h.c:
+							return P(e, s);
+						case h.k:
+							return M(e, n, s);
+						case h.l:
+							return L(s);
+						case h.p:
+							return B(e, t, n, s);
 						case h.u:
-							return D(e, t, n, s);
+							return A(e, t, n, s);
 						case h.z:
-							return B(e, t, n, s)
+							return H(e, t, n, s)
 					}
 				},
-				B = (e, t, n, s) => {
+				H = (e, t, n, s) => {
 					const r = e.c,
 						o = e.h,
 						i = r.length,
@@ -2259,13 +2261,13 @@
 							{
 								H: s,
 								D: r
-							} = W(e.a),
+							} = J(e.a),
 							{
 								c: i = []
 							} = e;
 						l.push(a.a.createElement(s, {
 							key: d
-						}, H(i, t, n))), m[d] = r
+						}, F(i, t, n))), m[d] = r
 					}
 					for (let h = 0; h < i; h++) {
 						const e = r[h],
@@ -2278,7 +2280,7 @@
 								} = e[r];
 							o.push(a.a.createElement(s, {
 								key: r
-							}, H(i, t, n)))
+							}, F(i, t, n)))
 						}
 						u.push(a.a.createElement(d.t, {
 							key: h
@@ -2288,24 +2290,24 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				D = (e, t, n, s) => {
+				A = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
-					return r.e !== h.m && r.e !== h.a || !Object(T.f)(r.id) ? a.a.createElement(d.j, {
+					return r.e !== h.m && r.e !== h.a || !Object(S.f)(r.id) ? a.a.createElement(d.j, {
 						key: s
-					}, H(e.c, t, n)) : Object(j.b)(r, s, t)
+					}, F(e.c, t, n)) : Object(j.b)(r, s, t)
 				},
-				H = (e, t, n) => {
+				F = (e, t, n) => {
 					const s = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) s.push(F(r, o));
+						if (r.e === h.A) s.push(V(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(O.a, {
 							key: o
-						}, H(r.c, t, n)));
+						}, F(r.c, t, n)));
 						else if (r.e === h.n) s.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2318,14 +2320,14 @@
 									media: e
 								}))
 							}
-						} else s.push(A(r, n, o))
+						} else s.push(U(r, n, o))
 					}
 					return s
 				},
-				A = (e, t, n) => {
+				U = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
-							const s = F({
+							const s = V({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2334,12 +2336,16 @@
 								key: n,
 								title: e.a
 							}, s);
-							const r = Object(k.a)(t);
-							return a.a.createElement(d.a, {
+							let r, o;
+							const i = Object(N.a)(t),
+								c = t.renderingObjectInfo;
+							return c && Object(k.b)(c) && (r = c.postId), c && Object(T.b)(c) && (o = c.id, r = c.postId), a.a.createElement(d.a, {
 								href: e.u,
 								key: n,
 								title: e.a,
-								sourceElement: r
+								sourceElement: i,
+								postId: r,
+								commentId: o
 							}, s);
 						case h.y:
 							return a.a.createElement(I.b, {
@@ -2361,23 +2367,23 @@
 							}, e.t)
 					}
 				},
-				F = (e, t) => {
+				V = (e, t) => {
 					const {
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return V(0, r, t);
+					if (!n) return G(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						d = 0;
 					const c = n.length;
 					for (; a < c; a++) {
 						const [e, t, s] = n[a], c = t + s, l = i[t], u = i[c] - l;
-						l > d && o.push(V(0, r.substr(d, l - d), `between${a}`)), o.push(V(e, r.substr(l, u), a)), d = l + u
+						l > d && o.push(G(0, r.substr(d, l - d), `between${a}`)), o.push(G(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && o.push(V(0, r.substr(d), `remaining${a}`)), o
+					return d < r.length && o.push(G(0, r.substr(d), `remaining${a}`)), o
 				},
-				U = {
+				W = {
 					[h.j.monospace]: d.h,
 					[h.j.bold]: d.b,
 					[h.j.italic]: d.f,
@@ -2386,13 +2392,13 @@
 					[h.j.subscript]: d.l,
 					[h.j.superscript]: d.m
 				},
-				V = (e, t, n) => {
+				G = (e, t, n) => {
 					let s = t;
-					return s = o()(U, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
+					return s = o()(W, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				W = e => {
+				J = e => {
 					switch (e) {
 						case h.f:
 							return {
@@ -2990,4 +2996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.347cf0475d6f5ea2c5e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.26c6397e7b3fe89f58d4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.36d09f264c5cb5d86e77.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f800551c8dd610667e15.js
+// Retrieved at 7/7/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -2721,23 +2721,23 @@
 		"./src/reddit/components/RichTextJson/renderers.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return T
-			})), s.d(t, "d", (function() {
-				return P
-			})), s.d(t, "a", (function() {
 				return I
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "d", (function() {
 				return L
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "a", (function() {
 				return R
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "b", (function() {
+				return M
+			})), s.d(t, "f", (function() {
 				return B
-			})), s.d(t, "g", (function() {
-				return W
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "h", (function() {
 				return F
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "g", (function() {
 				return D
+			})), s.d(t, "i", (function() {
+				return H
+			})), s.d(t, "e", (function() {
+				return A
 			}));
 			var n = s("./src/lib/unicodeUtils/index.ts"),
 				i = s("./node_modules/lodash/reduce.js"),
@@ -2831,42 +2831,44 @@
 				w = s("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				O = s("./src/reddit/components/SubredditMention/index.tsx"),
 				j = s("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				N = s("./src/reddit/helpers/richTextJson/index.ts"),
-				S = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
-			const T = (e, t, s) => {
+				N = s("./src/reddit/helpers/isComment.ts"),
+				S = s("./src/reddit/helpers/isPost.ts"),
+				T = s("./src/reddit/helpers/richTextJson/index.ts"),
+				P = s("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
+			const I = (e, t, s) => {
 					const n = e.c || [],
 						i = e.l,
 						r = [],
 						o = n.length;
 					for (let a = 0; a < o; a++) {
 						const e = n[a];
-						r.push(e.e === p.w ? e.t : D(e, t, a))
+						r.push(e.e === p.w ? e.t : A(e, t, a))
 					}
 					const c = d.x[i - 1];
 					return a.a.createElement(c, {
 						key: s
 					}, r)
 				},
-				P = e => a.a.createElement(d.e, {
+				L = e => a.a.createElement(d.e, {
 					key: e
 				}),
-				I = (e, t, s, n) => {
+				R = (e, t, s, n) => {
 					const i = e.c;
 					if (!i) return;
 					const r = i.length,
 						o = [];
-					for (let a = 0; a < r; a++) o.push(M(i[a], t, s, a));
+					for (let a = 0; a < r; a++) o.push(W(i[a], t, s, a));
 					return a.a.createElement(d.c, {
 						key: n
 					}, o)
 				},
-				L = (e, t) => {
+				M = (e, t) => {
 					const s = e.c;
 					return a.a.createElement(d.k, {
 						key: t
 					}, a.a.createElement(d.h, null, s.reduce((e, t, s, n) => e += t.t + (s < n.length ? "\n" : ""), "")))
 				},
-				R = (e, t, s, n) => {
+				B = (e, t, s, n) => {
 					const i = e.c,
 						r = [],
 						o = i.length;
@@ -2874,32 +2876,32 @@
 						const e = i[l].c;
 						e && e.length && r.push(a.a.createElement(d.g, {
 							key: l
-						}, e.map((e, n) => M(e, t, s, n))))
+						}, e.map((e, n) => W(e, t, s, n))))
 					}
 					const c = e.o ? d.i : d.v;
 					return a.a.createElement(c, {
 						key: n
 					}, r)
 				},
-				M = (e, t, s, n) => {
+				W = (e, t, s, n) => {
 					switch (e.e) {
 						case p.b:
-							return I(e, t, s, n);
-						case p.c:
-							return L(e, n);
-						case p.k:
-							return T(e, s, n);
-						case p.l:
-							return P(n);
-						case p.p:
 							return R(e, t, s, n);
+						case p.c:
+							return M(e, n);
+						case p.k:
+							return I(e, s, n);
+						case p.l:
+							return L(n);
+						case p.p:
+							return B(e, t, s, n);
 						case p.u:
-							return W(e, t, s, n);
+							return D(e, t, s, n);
 						case p.z:
-							return B(e, t, s, n)
+							return F(e, t, s, n)
 					}
 				},
-				B = (e, t, s, n) => {
+				F = (e, t, s, n) => {
 					const i = e.c,
 						r = e.h,
 						o = i.length,
@@ -2912,13 +2914,13 @@
 							{
 								H: n,
 								D: i
-							} = V(e.a),
+							} = G(e.a),
 							{
 								c: o = []
 							} = e;
 						l.push(a.a.createElement(n, {
 							key: d
-						}, F(o, t, s))), u[d] = i
+						}, H(o, t, s))), u[d] = i
 					}
 					for (let p = 0; p < o; p++) {
 						const e = i[p],
@@ -2931,7 +2933,7 @@
 								} = e[i];
 							r.push(a.a.createElement(n, {
 								key: i
-							}, F(o, t, s)))
+							}, H(o, t, s)))
 						}
 						m.push(a.a.createElement(d.t, {
 							key: p
@@ -2941,24 +2943,24 @@
 						key: n
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, m))
 				},
-				W = (e, t, s, n) => {
+				D = (e, t, s, n) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(n);
 					const i = e.c[0];
-					return i.e !== p.m && i.e !== p.a || !Object(N.f)(i.id) ? a.a.createElement(d.j, {
+					return i.e !== p.m && i.e !== p.a || !Object(T.f)(i.id) ? a.a.createElement(d.j, {
 						key: n
-					}, F(e.c, t, s)) : Object(C.b)(i, n, t)
+					}, H(e.c, t, s)) : Object(C.b)(i, n, t)
 				},
-				F = (e, t, s) => {
+				H = (e, t, s) => {
 					const n = [],
 						i = e.length;
 					for (let r = 0; r < i; r++) {
 						const i = e[r];
-						if (i.e === p.A) n.push(H(i, r));
+						if (i.e === p.A) n.push(U(i, r));
 						else if (i.e === p.x) n.push(a.a.createElement(w.a, {
 							key: r
-						}, F(i.c, t, s)));
+						}, H(i.c, t, s)));
 						else if (i.e === p.n) n.push(a.a.createElement("br", {
 							key: r
 						}));
@@ -2971,14 +2973,14 @@
 									media: e
 								}))
 							}
-						} else n.push(D(i, s, r))
+						} else n.push(A(i, s, r))
 					}
 					return n
 				},
-				D = (e, t, s) => {
+				A = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = H({
+							const n = U({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2987,12 +2989,16 @@
 								key: s,
 								title: e.a
 							}, n);
-							const i = Object(S.a)(t);
-							return a.a.createElement(d.a, {
+							let i, r;
+							const o = Object(P.a)(t),
+								c = t.renderingObjectInfo;
+							return c && Object(S.b)(c) && (i = c.postId), c && Object(N.b)(c) && (r = c.id, i = c.postId), a.a.createElement(d.a, {
 								href: e.u,
 								key: s,
 								title: e.a,
-								sourceElement: i
+								sourceElement: o,
+								postId: i,
+								commentId: r
 							}, n);
 						case p.y:
 							return a.a.createElement(O.b, {
@@ -3014,23 +3020,23 @@
 							}, e.t)
 					}
 				},
-				H = (e, t) => {
+				U = (e, t) => {
 					const {
 						f: s,
 						t: i
 					} = e, r = [];
-					if (!s) return U(0, i, t);
+					if (!s) return z(0, i, t);
 					const o = Object(n.a)(i);
 					let a = 0,
 						d = 0;
 					const c = s.length;
 					for (; a < c; a++) {
 						const [e, t, n] = s[a], c = t + n, l = o[t], m = o[c] - l;
-						l > d && r.push(U(0, i.substr(d, l - d), `between${a}`)), r.push(U(e, i.substr(l, m), a)), d = l + m
+						l > d && r.push(z(0, i.substr(d, l - d), `between${a}`)), r.push(z(e, i.substr(l, m), a)), d = l + m
 					}
-					return d < i.length && r.push(U(0, i.substr(d), `remaining${a}`)), r
+					return d < i.length && r.push(z(0, i.substr(d), `remaining${a}`)), r
 				},
-				A = {
+				V = {
 					[p.j.monospace]: d.h,
 					[p.j.bold]: d.b,
 					[p.j.italic]: d.f,
@@ -3039,13 +3045,13 @@
 					[p.j.subscript]: d.l,
 					[p.j.superscript]: d.m
 				},
-				U = (e, t, s) => {
+				z = (e, t, s) => {
 					let n = t;
-					return n = r()(A, (t, n, i) => e & parseInt(i, 10) ? a.a.createElement(n, {
+					return n = r()(V, (t, n, i) => e & parseInt(i, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
-				V = e => {
+				G = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -7729,4 +7735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.36d09f264c5cb5d86e77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f800551c8dd610667e15.js.map
