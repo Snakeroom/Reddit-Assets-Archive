@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.9e676db7f48b064bd4cf.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.0aa50886a37073db209d.js
+// Retrieved at 7/7/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -10517,9 +10517,9 @@
 				N = n("./src/reddit/helpers/trackers/profileSettings.ts");
 			var A = n("./src/reddit/constants/experiments.ts"),
 				T = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				M = n("./src/reddit/selectors/user.ts");
-			const L = Object(c.a)(M.K, M.J, (e, t) => e || t);
-			var B = n("./src/reddit/selectors/sso.ts"),
+				M = n("./src/reddit/selectors/experiments/index.ts");
+			var L = n("./src/reddit/selectors/sso.ts"),
+				B = n("./src/reddit/selectors/user.ts"),
 				R = n("./src/lib/validateEmail/index.ts"),
 				U = n("./src/reddit/actions/toaster.ts"),
 				F = n("./src/reddit/components/Settings/shared/FatInput.tsx"),
@@ -10533,7 +10533,7 @@
 			const J = Object(c.c)({
 					emailSent: e => e.user.accountSettings.sendResetEmail.api.emailSent,
 					username: e => {
-						const t = Object(M.j)(e);
+						const t = Object(B.j)(e);
 						return t && Object(z.e)(t) || ""
 					}
 				}),
@@ -10991,14 +10991,14 @@
 						rtl: !1
 					})
 				}),
-				Re = Object(c.a)(M.H, Te.b, (e, t) => e || t ? {
+				Re = Object(c.a)(B.H, Te.b, (e, t) => e || t ? {
 					...Me,
 					...Le,
 					...Be
 				} : Me);
 			var Ue = n("./src/reddit/helpers/location.ts");
 			const Fe = Object(c.a)(e => Object(T.c)(e, {
-				experimentEligibilitySelector: M.K,
+				experimentEligibilitySelector: B.K,
 				experimentName: A.E
 			}), e => e === A.L.Enabled);
 			var De = n("./src/reddit/selectors/meta.ts"),
@@ -11009,19 +11009,19 @@
 						var t, n;
 						return null === (n = null === (t = null == e ? void 0 : e.user) || void 0 === t ? void 0 : t.account) || void 0 === n ? void 0 : n.gender
 					},
-					hasVerifiedEmail: M.A,
-					isFPR: M.I,
-					language: M.U,
-					shouldShowCreatePasswordModal: B.d,
+					hasVerifiedEmail: B.A,
+					isFPR: B.I,
+					language: B.U,
+					shouldShowCreatePasswordModal: L.d,
 					shouldShowGenderCollection: e => Object(T.c)(e, {
 						experimentName: A.sd,
-						experimentEligibilitySelector: L
+						experimentEligibilitySelector: M.e
 					}) === A.Bd.Enabled,
 					showLanguageSection: P.d.langSelect,
 					availableLocales: Re,
 					locale: De.i,
 					shouldShowCountrySection: Fe,
-					country: M.f
+					country: B.f
 				}),
 				ze = Object(o.b)(We, e => ({
 					changeAccountGender: t => e(Object(k.a)(t)),
@@ -11218,8 +11218,8 @@
 				})()
 			}
 			const gt = Object(c.c)({
-				issuerId: B.a,
-				shouldShowCreatePasswordModal: B.d
+				issuerId: L.a,
+				shouldShowCreatePasswordModal: L.d
 			});
 			var vt = Object(o.b)(gt, e => ({
 					openSSOCreatePasswordForLinkAppleModal: () => e(Object(y.h)(Pe.i)),
@@ -11282,8 +11282,8 @@
 				})()
 			}
 			const Ot = Object(c.c)({
-				hasGoogleIdentity: B.b,
-				shouldShowCreatePasswordModal: B.d
+				hasGoogleIdentity: L.b,
+				shouldShowCreatePasswordModal: L.d
 			});
 			var St = Object(o.b)(Ot, e => ({
 					openSSOCreatePasswordForLinkGoogleModal: () => e(Object(y.h)(Pe.m)),
@@ -11423,7 +11423,7 @@
 				}).apply(this, arguments)
 			}
 			const Jt = Object(c.c)({
-				isEmployee: M.H
+				isEmployee: B.H
 			});
 			var Yt = Object(o.b)(Jt)(e => {
 					const t = !e.isEmployee;
@@ -11446,12 +11446,12 @@
 						path: Xe.c.ChangePassword
 					}),
 					deactivateModalOpen: Object(nt.b)("deactivate_modal_id"),
-					email: M.m,
-					hasGoogleIdentity: B.b,
-					inRedesignBeta: M.E,
+					email: B.m,
+					hasGoogleIdentity: L.b,
+					inRedesignBeta: B.E,
 					optoutModalOpen: Object(nt.b)("settins_optout_modal_id"),
-					shouldShowCreatePasswordModal: B.d,
-					user: M.j
+					shouldShowCreatePasswordModal: L.d,
+					user: B.j
 				}),
 				an = Object(o.b)(sn, (e, t) => ({
 					deactivate: t => {
@@ -12356,7 +12356,7 @@
 					experimentEligibilitySelector: T.a,
 					experimentName: A.h
 				}), e => e === A.c.Enabled),
-				os = Object(c.a)(e => Object(M.f)(e), e => ss.b.includes(e)),
+				os = Object(c.a)(e => Object(B.f)(e), e => ss.b.includes(e)),
 				is = Object(c.a)(e => Object(T.c)(e, {
 					experimentEligibilitySelector: T.a,
 					experimentName: A.f
@@ -12371,7 +12371,7 @@
 					whitelist: e => e.user.whitelist.data,
 					whitelistApi: e => e.user.whitelist.api,
 					shouldShowLocationBasedSetting: P.d.privacySettingLocationBasedRecommendations,
-					shouldShowCreatePasswordModal: B.d,
+					shouldShowCreatePasswordModal: L.d,
 					shouldConsolidateAdsPreferences: is,
 					shouldRemoveAdsPreferences: as,
 					shouldKeepAdsPreferencesForGDPR: os
@@ -12636,7 +12636,7 @@
 				Ss = n.n(Os);
 			const {
 				fbt: Is
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ps = 30, Ns = 200, As = Object(c.a)(M.j, ws.a, M.vb, js.n, nt.a, (e, t, n, r, s) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ps = 30, Ns = 200, As = Object(c.a)(B.j, ws.a, B.vb, js.n, nt.a, (e, t, n, r, s) => {
 				const a = e && e.profileId,
 					o = a && r[a] ? r[a].bannerBackgroundImage : void 0;
 				return {
@@ -12975,7 +12975,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const oa = Object(c.c)({
 				userId: e => {
-					const t = Object(M.j)(e);
+					const t = Object(B.j)(e);
 					return t ? t.id : ""
 				}
 			});
@@ -14277,4 +14277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9e676db7f48b064bd4cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0aa50886a37073db209d.js.map

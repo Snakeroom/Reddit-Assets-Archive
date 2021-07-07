@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.444d5073360d178fd431.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d7be5d12c6f63f350d96.js
+// Retrieved at 7/7/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9849,105 +9849,107 @@
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "i", (function() {
-				return a
-			})), s.d(t, "h", (function() {
 				return c
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "h", (function() {
 				return d
+			})), s.d(t, "a", (function() {
+				return l
 			})), s.d(t, "k", (function() {
-				return m
-			})), s.d(t, "j", (function() {
 				return u
+			})), s.d(t, "j", (function() {
+				return p
 			})), s.d(t, "b", (function() {
-				return b
-			})), s.d(t, "e", (function() {
 				return x
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "e", (function() {
 				return f
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "f", (function() {
 				return g
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "c", (function() {
 				return v
-			})), s.d(t, "d", (function() {
+			})), s.d(t, "g", (function() {
 				return y
+			})), s.d(t, "d", (function() {
+				return C
 			}));
-			var r = s("./src/reddit/featureFlags/index.ts"),
-				n = s("./src/reddit/selectors/posts.ts"),
-				o = s("./src/reddit/selectors/subreddit.ts"),
-				i = s("./src/reddit/selectors/user.ts");
-			const a = (e, t) => {
+			var r = s("./src/lib/objectSelector/index.ts"),
+				n = s("./src/reddit/featureFlags/index.ts"),
+				o = s("./src/reddit/selectors/posts.ts"),
+				i = s("./src/reddit/selectors/subreddit.ts"),
+				a = s("./src/reddit/selectors/user.ts");
+			const c = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.S)(e, {
+						const t = Object(i.S)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
 					}
 					return ""
 				},
-				c = (e, t) => e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t] || "",
-				d = e => e.focusedVerticals.components.dismissed,
-				l = [],
-				m = (e, t) => {
-					const s = u(e, t);
-					if (!s) return l;
-					const r = Object(o.W)(e, {
+				d = (e, t) => e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t] || "",
+				l = e => e.focusedVerticals.components.dismissed,
+				m = [],
+				u = Object(r.a)((e, t) => {
+					const s = p(e, t);
+					if (!s) return m;
+					const r = Object(i.W)(e, {
 						subredditName: s.name
 					});
-					return r && r.postIds && r.postIds.length ? r.postIds : l
-				},
-				u = (e, t) => {
+					return r && r.postIds && r.postIds.length ? r.postIds : m
+				}),
+				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.S)(e, {
+					return s ? Object(i.S)(e, {
 						subredditId: s
 					}) : null
 				},
-				p = (e, t, s, r, o) => {
-					const i = o.find(e => e <= t) || -1,
-						a = o.find(e => e > t) || 1 / 0;
+				h = (e, t, s, r, n) => {
+					const i = n.find(e => e <= t) || -1,
+						a = n.find(e => e > t) || 1 / 0;
 					return t !== a && t !== i && (!(i + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const r = s[t - 1],
-							o = s[t],
-							i = o && Object(n.F)(e, {
+							n = s[t],
+							i = n && Object(o.F)(e, {
 								postId: r
 							}) || null,
-							a = o && Object(n.F)(e, {
-								postId: o
+							a = n && Object(o.F)(e, {
+								postId: n
 							}) || null;
 						return i && i.isSponsored || a && a.isSponsored
 					})(e, t, r)))
 				},
-				h = [3],
-				b = (e, t, {
-					listingKey: s
+				b = [3],
+				x = Object(r.a)((e, {
+					existingDUPositions: t,
+					listingProps: s
 				}) => {
 					const r = t.slice().sort();
-					let o = -1;
-					const i = Object(n.y)(e, {
-							listingKey: s
+					let n = -1;
+					const i = Object(o.y)(e, {
+							listingKey: s.listingKey
 						}),
 						a = [];
-					return h.forEach(t => {
-						let s = o + t;
+					return b.forEach(t => {
+						let s = n + t;
 						if (!(s >= i.length)) {
-							for (; s < i.length && !p(e, s, t, i, r);) s += 1;
-							s < i.length && (a.push(s), o = s)
+							for (; s < i.length && !h(e, s, t, i, r);) s += 1;
+							s < i.length && (a.push(s), n = s)
 						}
 					}), a
-				},
-				x = e => {
+				}),
+				f = e => {
 					return e.focusedVerticals.api.pending.focusedVerticalGqlPending
 				},
-				f = e => {
+				g = e => {
 					return e.focusedVerticals.api.error.focusedVerticalGqlError
 				},
-				g = e => e.focusedVerticals.category,
-				v = e => e.focusedVerticals.lastLoadedEnv,
-				y = e => {
-					const t = Object(i.J)(e),
-						s = r.d.geoSubredditRecommendationDULoggedIn(e),
-						n = r.d.geoSubredditRecommendationDULoggedOut(e);
-					return t && s || !t && n
+				v = e => e.focusedVerticals.category,
+				y = e => e.focusedVerticals.lastLoadedEnv,
+				C = e => {
+					const t = Object(a.J)(e),
+						s = n.d.geoSubredditRecommendationDULoggedIn(e),
+						r = n.d.geoSubredditRecommendationDULoggedOut(e);
+					return t && s || !t && r
 				}
 		},
 		"./src/reddit/selectors/searchFix.ts": function(e, t, s) {
@@ -9980,4 +9982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.444d5073360d178fd431.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d7be5d12c6f63f350d96.js.map

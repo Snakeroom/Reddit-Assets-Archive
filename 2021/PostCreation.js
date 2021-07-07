@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b1f8456af2dae7cd923e.js
-// Retrieved at 7/7/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b47b315a778a49d4159a.js
+// Retrieved at 7/7/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -29540,33 +29540,34 @@
 		"./src/reddit/selectors/gold/awardIcon.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return u
-			})), n.d(t, "b", (function() {
 				return p
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "b", (function() {
 				return m
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "a", (function() {
 				return h
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return b
+			})), n.d(t, "d", (function() {
+				return f
 			}));
-			var o = n("./src/reddit/models/Gold/Award.ts"),
-				r = n("./src/reddit/selectors/commentSelector.ts"),
-				s = n("./src/reddit/selectors/gold/giveAwards.ts"),
-				i = n("./src/reddit/selectors/posts.ts"),
-				a = n("./src/reddit/selectors/user.ts"),
-				c = n("./src/reddit/selectors/userPrefs.ts");
-			const d = [32, 48, 64, 128],
-				l = (e, t, n) => {
+			var o = n("./src/lib/objectSelector/index.ts"),
+				r = n("./src/reddit/models/Gold/Award.ts"),
+				s = n("./src/reddit/selectors/commentSelector.ts"),
+				i = n("./src/reddit/selectors/gold/giveAwards.ts"),
+				a = n("./src/reddit/selectors/posts.ts"),
+				c = n("./src/reddit/selectors/user.ts"),
+				d = n("./src/reddit/selectors/userPrefs.ts");
+			const l = [32, 48, 64, 128],
+				u = (e, t, n) => {
 					const o = t ? e[`staticIcon${n}`] : e[`icon${n}`];
 					return (null == o ? void 0 : o.url) ? o.url : t ? e.staticIcon.url : e.icon.url
 				},
-				u = ({
+				p = ({
 					award: e,
 					size: t,
 					prefersReducedMotion: n,
-					postOrComment: r
-				}) => e.awardSubType === o.d.Group ? (({
+					postOrComment: o
+				}) => e.awardSubType === r.d.Group ? (({
 					award: e,
 					size: t,
 					prefersReducedMotion: n,
@@ -29577,57 +29578,57 @@
 						const t = o.awardCountsById[e.id];
 						r = e.tiers.reduce((e, n) => t >= n.awardingsRequired ? n : e)
 					}
-					return l(r, n, t)
+					return u(r, n, t)
 				})({
 					award: e,
 					size: t,
 					prefersReducedMotion: n,
-					postOrComment: r
-				}) : l(e, n, t),
-				p = (e, {
+					postOrComment: o
+				}) : u(e, n, t),
+				m = Object(o.a)((e, {
 					awards: t,
 					minSize: n,
 					postOrCommentId: o
 				}) => {
-					const s = Object(c.c)(e),
-						a = d.find(e => e >= n),
-						l = o ? Object(i.F)(e, {
+					const r = Object(d.c)(e),
+						i = l.find(e => e >= n),
+						c = o ? Object(a.F)(e, {
 							postId: o
-						}) || Object(r.a)(e, {
+						}) || Object(s.a)(e, {
 							commentId: o
 						}) : void 0;
-					return t.reduce((e, t) => (t && (e[t.id] = u({
+					return t.reduce((e, t) => (t && (e[t.id] = p({
 						award: t,
-						size: a,
-						prefersReducedMotion: s,
-						postOrComment: l
+						size: i,
+						prefersReducedMotion: r,
+						postOrComment: c
 					})), e), {})
-				},
-				m = (e, {
+				}),
+				h = (e, {
 					award: t,
 					minSize: n,
 					postOrCommentId: o
-				}) => t ? p(e, {
+				}) => t ? m(e, {
 					awards: [t],
 					minSize: n,
 					postOrCommentId: o
 				})[t.id] : void 0,
-				h = (e, {
+				b = (e, {
 					minSize: t,
 					userName: n
 				}) => {
-					const o = Object(a.nb)(e, {
+					const o = Object(c.nb)(e, {
 						userName: n
 					});
-					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return m(e, {
+					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return h(e, {
 						award: o.awardedLastMonth.topAward,
 						minSize: t
 					})
 				},
-				b = e => {
-					const t = Object(s.b)(e),
-						n = Object(s.a)(e);
-					return m(e, {
+				f = e => {
+					const t = Object(i.b)(e),
+						n = Object(i.a)(e);
+					return h(e, {
 						award: t,
 						postOrCommentId: n || void 0,
 						minSize: 512
@@ -30162,4 +30163,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b1f8456af2dae7cd923e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b47b315a778a49d4159a.js.map
