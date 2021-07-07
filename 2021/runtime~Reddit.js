@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.ec1d03d2b1a8b8a57b8d.js
-// Retrieved at 7/7/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.3fedf436e62479d93653.js
+// Retrieved at 7/7/2021, 7:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1254,16 +1254,16 @@
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
 						"reddit-components-CoinPurchaseDropdown": "e23bd395f70012dd9e8c",
-						"translations/de_DE-json": "cd63de08336382b98eeb",
-						"translations/es_ES-json": "a2c1912b31107d95257e",
-						"translations/es_MX-json": "9223084f713bc2cf0d56",
-						"translations/fr_FR-json": "618dc9fa187a8749292a",
-						"translations/it_IT-json": "e8e8bd6ca0443594cb58",
-						"translations/pseudo_ext-json": "942c0b71c0080d2b3ae9",
-						"translations/pseudo_long-json": "8b48ff56f1b2639ccab5",
-						"translations/pseudo_short-json": "4b8e952443b526c25dde",
-						"translations/pt_BR-json": "504bdf782d08a7ab6ba3",
-						"translations/pt_PT-json": "1e58a60273f0e86935e2",
+						"translations/de_DE-json": "5e1ab40c651bfcba598a",
+						"translations/es_ES-json": "469e0378485ea05f820e",
+						"translations/es_MX-json": "771e080ffa4a4d0c5fe9",
+						"translations/fr_FR-json": "14846a35ba2044e1e4ab",
+						"translations/it_IT-json": "8eb95f932ccce6f0ecd3",
+						"translations/pseudo_ext-json": "ae33ca5e73b33dfa04db",
+						"translations/pseudo_long-json": "ac62a3abf7eea3ce55cf",
+						"translations/pseudo_short-json": "1a3fbf5a5036102c280b",
+						"translations/pt_BR-json": "b698a13771a68c587c96",
+						"translations/pt_PT-json": "9e7b2f3e9a09e61f0889",
 						"vendors~AdminPanel": "9b24840577d41d3b738d",
 						AdminPanel: "b51095334ea38a6c2ed1",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
@@ -1505,4 +1505,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ec1d03d2b1a8b8a57b8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3fedf436e62479d93653.js.map
