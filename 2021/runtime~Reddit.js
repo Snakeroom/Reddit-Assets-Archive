@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5706b38b84f1fa166a1d.js
-// Retrieved at 7/7/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.739e878111e4b20749d6.js
+// Retrieved at 7/7/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
+		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return r.push.apply(r, c || []), t()
 	}
 
@@ -671,8 +671,8 @@
 					FlairEdit: "da4992efe0a35a4bcfd8",
 					"vendors~Chat~PostCreation~RedesignChat": "31d6cfe0d16ae931b73c",
 					"vendors~Chat~RedesignChat": "31d6cfe0d16ae931b73c",
-					"Chat~RedesignChat": "f2a2c84382d4ed6a64b2",
-					RedesignChat: "d7dff5f1e60e7e74cf6c",
+					"Chat~RedesignChat": "6b36bf0cd605b5a68168",
+					RedesignChat: "6565fde54e4c1d8a98b0",
 					"vendors~CollectionCommentsPage~CommentsPage": "31d6cfe0d16ae931b73c",
 					"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "d51d8192cd8600e80f7d",
 					CollectionCommentsPage: "1c88aeb12ebf1c5684b4",
@@ -848,12 +848,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					r = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = a, delete n[e], P.parentNode.removeChild(P), t(r)
-			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
+				r.code = "CSS_CHUNK_LOAD_FAILED", r.request = a, delete n[e], b.parentNode.removeChild(b), t(r)
+			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1259,7 +1259,7 @@
 						"translations/es_MX-json": "9223084f713bc2cf0d56",
 						"translations/fr_FR-json": "618dc9fa187a8749292a",
 						"translations/it_IT-json": "e8e8bd6ca0443594cb58",
-						"translations/pseudo_ext-json": "5939095b6e213448d074",
+						"translations/pseudo_ext-json": "64a70785800eb6b5eb93",
 						"translations/pseudo_long-json": "8b48ff56f1b2639ccab5",
 						"translations/pseudo_short-json": "4b8e952443b526c25dde",
 						"translations/pt_BR-json": "504bdf782d08a7ab6ba3",
@@ -1272,8 +1272,8 @@
 						FlairEdit: "cc3470f3e73e23c456e7",
 						"vendors~Chat~PostCreation~RedesignChat": "bc666e204513e3f2e137",
 						"vendors~Chat~RedesignChat": "fd973ea1092707bcf345",
-						"Chat~RedesignChat": "856b1747cb5162487b80",
-						RedesignChat: "aa517f9758eb4f8e7623",
+						"Chat~RedesignChat": "bd73d0feea222f64d133",
+						RedesignChat: "d429b435ccb61fd24056",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "2a72b7e5b4af59a29249",
 						CollectionCommentsPage: "237961f381ee0632a8be",
@@ -1380,7 +1380,7 @@
 						OverlayLeaveChannel: "9e2dc02fd8a81e8eee5b",
 						OverlayNSFWWarning: "8f45b19d857f4ed3f977",
 						OverlayReport: "07851bf8f6d50a3b2c26",
-						ThemePanel: "098384b619b51368eecf",
+						ThemePanel: "ea9cb272a528c3e4ccf1",
 						CommentRichUnit: "388bb1d46c0812ea12bf",
 						PostRichUnit: "a8cbc902fd823b5e8889",
 						"vendors~chat-components-FormBuilder~reddit-components-FormBuilder": "cca9dd8299ce922e5b7c",
@@ -1505,4 +1505,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5706b38b84f1fa166a1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.739e878111e4b20749d6.js.map

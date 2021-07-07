@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.aa517f9758eb4f8e7623.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.d429b435ccb61fd24056.js
+// Retrieved at 7/7/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -250,12 +250,6 @@
 						apiContext: je.apiContext,
 						gqlContext: fe.gqlContext
 					}), je.middleware, J.a, V.a, Q.a, Y.a, Object(X.a)(t), H.a, F.a, K.a, Z.a, $.a, W.a],
-					postRender: ({
-						store: e
-					}) => {
-						const t = d()([...Object(b.a)(Object(r.e)(location))]);
-						e.dispatch(Object(O.d)(t))
-					},
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -265,6 +259,10 @@
 						routes: t,
 						store: n
 					}) => {
+						const c = d()([...Object(b.a)(Object(r.e)(location))]);
+						n.dispatch(Object(O.d)(c)).then(() => {
+							Object(F.c)(n)
+						});
 						return n.dispatch(Object(_.l)()), e.listen((e, c) => {
 							const s = Object(h.a)(Object(r.e)(e), t);
 							n.dispatch(Object(C.d)(e, c, s)), n.dispatch(Object(_.l)())
@@ -834,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.aa517f9758eb4f8e7623.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.d429b435ccb61fd24056.js.map

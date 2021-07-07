@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.acba41d657bbb2105410.js
-// Retrieved at 7/7/2021, 4:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6a0d6f5d8e07e43e7d5b.js
+// Retrieved at 7/7/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -103,26 +103,32 @@
 				return _
 			})), i.d(t, "CHAT_THEME_PROMPT_CLICKED", (function() {
 				return p
-			})), i.d(t, "CHAT_THEME_SHOW_PROMPT_COUNT_SET", (function() {
+			})), i.d(t, "CHAT_THEME_SETTINGS_CLICKED", (function() {
 				return m
+			})), i.d(t, "CHAT_THEME_SHOW_PROMPT_COUNT_SET", (function() {
+				return h
 			})), i.d(t, "MAX_SHOW_PROMPT_COUNT", (function() {
-				return b
-			})), i.d(t, "changeChatThemeAction", (function() {
 				return g
-			})), i.d(t, "chatThemeShowPromptCountSetAction", (function() {
+			})), i.d(t, "MAX_SHOW_COLORED_SETTINGS", (function() {
 				return y
+			})), i.d(t, "changeChatThemeAction", (function() {
+				return w
+			})), i.d(t, "chatThemeShowPromptCountSetAction", (function() {
+				return v
 			})), i.d(t, "clickThemePrompt", (function() {
-				return T
-			})), i.d(t, "chatThemeRestoredAction", (function() {
-				return O
-			})), i.d(t, "themeToggle", (function() {
-				return I
-			})), i.d(t, "switchTheme", (function() {
 				return j
-			})), i.d(t, "applyChatTheme", (function() {
+			})), i.d(t, "clickThemeSettings", (function() {
 				return R
-			})), i.d(t, "cancelChatTheme", (function() {
+			})), i.d(t, "chatThemeRestoredAction", (function() {
 				return F
+			})), i.d(t, "themeToggle", (function() {
+				return x
+			})), i.d(t, "switchTheme", (function() {
+				return C
+			})), i.d(t, "applyChatTheme", (function() {
+				return k
+			})), i.d(t, "cancelChatTheme", (function() {
+				return N
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
 				r = i("./src/chat/actions/sidebar.ts"),
@@ -135,38 +141,43 @@
 				u = "THEMES__CHAT_THEME_CANCELED",
 				_ = "THEMES__CHAT_THEME_RESTORED",
 				p = "THEMES__CHAT_THEME_PROMPT_CLICKED",
-				m = "THEMES__CHAT_THEME_SHOW_PROMPT_COUNT_SET",
+				m = "THEMES__CHAT_THEME_SETTINGS_CLICKED",
+				h = "THEMES__CHAT_THEME_SHOW_PROMPT_COUNT_SET",
 				{
-					REDDIT: h,
-					NIGHT: f
+					REDDIT: f,
+					NIGHT: b
 				} = s.b,
-				b = 2,
-				g = Object(n.a)(l),
-				y = Object(n.a)(m),
-				w = Object(n.a)(a),
-				v = Object(n.a)(c),
-				E = Object(n.a)(u),
-				S = Object(n.a)(p),
-				T = () => async (e, t) => {
-					e(Object(r.f)(o.a.THEMES)), e(S())
-				}, O = Object(n.a)(_), I = () => async (e, t) => {
+				g = 3,
+				y = 6,
+				w = Object(n.a)(l),
+				v = Object(n.a)(h),
+				E = Object(n.a)(a),
+				S = Object(n.a)(c),
+				T = Object(n.a)(u),
+				O = Object(n.a)(p),
+				I = Object(n.a)(m),
+				j = () => async (e, t) => {
+					e(Object(r.f)(o.a.THEMES)), e(O())
+				}, R = () => async (e, t) => {
+					e(Object(r.f)(o.a.THEMES)), e(I())
+				}, F = Object(n.a)(_), x = () => async (e, t) => {
 					const {
 						globalTheme: i
 					} = t().user.prefs;
-					e(w({
-						themeKey: i === h ? f : h
+					e(E({
+						themeKey: i === f ? b : f
 					}))
-				}, j = e => async (t, i) => {
-					t(w({
-						themeKey: e ? f : h
+				}, C = e => async (t, i) => {
+					t(E({
+						themeKey: e ? b : f
 					}))
-				}, R = () => async (e, t) => {
+				}, k = () => async (e, t) => {
 					const i = Object(d.a)(t());
-					e(v({
+					e(S({
 						themeKey: i
 					})), e(Object(r.f)(o.a.CHANNELS))
-				}, F = () => async (e, t) => {
-					e(E()), e(Object(r.f)(o.a.CHANNELS))
+				}, N = () => async (e, t) => {
+					e(T()), e(Object(r.f)(o.a.CHANNELS))
 				}
 		},
 		"./src/chat/constants/channels.ts": function(e, t, i) {
@@ -330,12 +341,12 @@
 					}))
 				}),
 				h = r()(e => {
-					var t;
-					const i = e.getState(),
-						n = i.user.account && i.user.account.id;
-					p = Object(s.c)(o.o.CHAT, o.w.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown");
-					let r = null !== (t = Object(s.b)(p)) && void 0 !== t ? t : 0;
-					e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
+					const t = e.getState(),
+						i = t.user.account && t.user.account.id;
+					p = Object(s.c)(o.o.CHAT, o.w.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
+					const n = Object(s.b)(p);
+					let r = null == n ? 0 : n;
+					Object(u.b)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
 				if ("undefined" == typeof window) return l.a;
@@ -346,19 +357,20 @@
 						}
 					} = t,
 					n = i && i.id || "unknown";
-				_ = Object(s.c)(o.o.CHAT, o.w.CHAT_THEME_KEY, n), p = Object(s.c)(o.o.CHAT, o.w.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown");
-				const r = Object(u.d)(t);
-				return e => t => {
+				return _ = Object(s.c)(o.o.CHAT, o.w.CHAT_THEME_KEY, n), p = Object(s.c)(o.o.CHAT, o.w.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown"), e => t => {
 					const i = e(t);
 					switch (t.type) {
 						case a.CHAT_THEME_APPLIED:
 							Object(s.d)(_, t.payload.themeKey, o.kc);
 							break;
 						case a.CHAT_THEME_SHOW_PROMPT_COUNT_SET:
-							r && t.payload <= a.MAX_SHOW_PROMPT_COUNT && Object(s.d)(p, t.payload, o.kc);
+							t.payload <= a.MAX_SHOW_COLORED_SETTINGS && Object(s.d)(p, t.payload, o.kc);
 							break;
 						case a.CHAT_THEME_PROMPT_CLICKED:
 							Object(s.d)(p, a.MAX_SHOW_PROMPT_COUNT, o.kc);
+							break;
+						case a.CHAT_THEME_SETTINGS_CLICKED:
+							Object(s.d)(p, a.MAX_SHOW_COLORED_SETTINGS, o.kc);
 							break;
 						case d.c:
 							t.payload === c.a.THEMES && Object(s.d)(p, a.MAX_SHOW_PROMPT_COUNT, o.kc)
@@ -1752,20 +1764,16 @@
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "g", (function() {
+			i.d(t, "e", (function() {
 				return _
 			})), i.d(t, "c", (function() {
 				return m
 			})), i.d(t, "a", (function() {
 				return b
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "d", (function() {
 				return g
 			})), i.d(t, "b", (function() {
 				return y
-			})), i.d(t, "e", (function() {
-				return w
-			})), i.d(t, "d", (function() {
-				return v
 			}));
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
@@ -1781,7 +1789,7 @@
 				e.InputOnly = "input_only", e.InputAndGifs = "input_and_gifs"
 			}(a || (a = {})),
 			function(e) {
-				e.JustEnabled = "just_enabled", e.Prompt = "prompt", e.Sparkles = "sparkles"
+				e.JustEnabled = "just_enabled", e.Prompt = "prompt"
 			}(l || (l = {})),
 			function(e) {
 				e.NicknamePaintedEditButton = "nickname_painted_edit_button", e.NicknamePaintedEditPopup = "nickname_painted_edit_popup"
@@ -1803,9 +1811,7 @@
 				}),
 				b = Object(d.a)(e => f(e, n.ChatMediaGiphy), e => e === a.InputAndGifs),
 				g = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => Boolean(p(e))),
-				y = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Prompt),
-				w = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Sparkles),
-				v = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Sparkles || e === l.Prompt)
+				y = Object(d.a)(e => f(e, n.UiRefreshBubblePreset), e => e === l.Prompt)
 		},
 		"./src/chat/selectors/members.ts": function(e, t, i) {
 			"use strict";
@@ -2015,12 +2021,14 @@
 				return d
 			})), i.d(t, "c", (function() {
 				return a
+			})), i.d(t, "d", (function() {
+				return l
 			}));
 			var n = i("./src/chat/constants/theme.ts"),
 				r = i("./node_modules/reselect/es/index.js");
 			const {
 				NIGHT: s
-			} = n.b, o = e => !(e.user.prefs.globalTheme !== s), d = Object(r.a)(e => e.themes, e => e.chatPreviewThemeKey), a = Object(r.a)(e => e.themes, e => e.isShowPrompt)
+			} = n.b, o = e => !(e.user.prefs.globalTheme !== s), d = Object(r.a)(e => e.themes, e => e.chatPreviewThemeKey), a = Object(r.a)(e => e.themes, e => e.isShowPrompt), l = Object(r.a)(e => e.themes, e => e.isShowSparkles)
 		},
 		"./src/chat/selectors/unreadCounter.ts": function(e, t, i) {
 			"use strict";
@@ -2410,11 +2418,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("138762"),
+				buildNumber: r("138763"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1625689248"),
+				})("1625690823"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4905,14 +4913,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c8787c9126dfed16ef44d2da05ce79968fa35c010-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc36dd73be712c9507e9e8e0850f7b8e2b4701548-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "8787c9126dfed16ef44d2da05ce79968fa35c010-production",
+						release: "c36dd73be712c9507e9e8e0850f7b8e2b4701548-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(P.d)(), new d.Integrations.Breadcrumbs({
@@ -5406,7 +5414,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "8787c9126dfed16ef44d2da05ce79968fa35c010-production",
+						releaseClient: "c36dd73be712c9507e9e8e0850f7b8e2b4701548-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7557,7 +7565,7 @@
 					const s = Date.now(),
 						o = await Object(n.a)(() => Promise.all([i.e("vendors~Chat~PostCreation~RedesignChat"), i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/chat/initializer.tsx"))).then(e => e.default);
 					return (await o(t(), s, r)).store
-				})(0, t, r), Object(o.b)(c), Object(d.b)(c), Object(s.b)(c), Object(s.c)(c), await (async (e, t, r) => {
+				})(0, t, r), Object(o.b)(c), Object(d.b)(c), Object(s.b)(c), await (async (e, t, r) => {
 					if (!l) {
 						const s = (await Object(n.a)(() => Promise.all([i.e("vendors~Chat~PostCreation~RedesignChat"), i.e("vendors~Chat~RedesignChat"), i.e("Chat~RedesignChat"), i.e("RedesignChat")]).then(i.bind(null, "./src/reddit/actions/chat/proxy.ts"))).then(e => e.default))(t, r),
 							o = Object(a.b)(e, s);
@@ -47515,4 +47523,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.acba41d657bbb2105410.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6a0d6f5d8e07e43e7d5b.js.map
