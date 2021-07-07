@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.e6eeab75672c97aedbf3.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a532bf8a20ae75cc3c16.js
+// Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -712,25 +712,6 @@
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
-		"./node_modules/shallowequal/index.js": function(e, t) {
-			e.exports = function(e, t, o, n) {
-				var s = o ? o.call(n, e, t) : void 0;
-				if (void 0 !== s) return !!s;
-				if (e === t) return !0;
-				if ("object" != typeof e || !e || "object" != typeof t || !t) return !1;
-				var r = Object.keys(e),
-					a = Object.keys(t);
-				if (r.length !== a.length) return !1;
-				for (var i = Object.prototype.hasOwnProperty.bind(t), c = 0; c < r.length; c++) {
-					var d = r[c];
-					if (!i(d)) return !1;
-					var l = e[d],
-						u = t[d];
-					if (!1 === (s = o ? o.call(n, l, u, d) : void 0) || void 0 === s && l !== u) return !1
-				}
-				return !0
-			}
-		},
 		"./node_modules/tlds/index.js": function(e, t) {
 			e.exports = ["aaa", "aarp", "abarth", "abb", "abbott", "abbvie", "abc", "able", "abogado", "abudhabi", "ac", "academy", "accenture", "accountant", "accountants", "aco", "active", "actor", "ad", "adac", "ads", "adult", "ae", "aeg", "aero", "aetna", "af", "afamilycompany", "afl", "africa", "ag", "agakhan", "agency", "ai", "aig", "aigo", "airbus", "airforce", "airtel", "akdn", "al", "alfaromeo", "alibaba", "alipay", "allfinanz", "allstate", "ally", "alsace", "alstom", "am", "americanexpress", "americanfamily", "amex", "amfam", "amica", "amsterdam", "analytics", "android", "anquan", "anz", "ao", "aol", "apartments", "app", "apple", "aq", "aquarelle", "ar", "arab", "aramco", "archi", "army", "arpa", "art", "arte", "as", "asda", "asia", "associates", "at", "athleta", "attorney", "au", "auction", "audi", "audible", "audio", "auspost", "author", "auto", "autos", "avianca", "aw", "aws", "ax", "axa", "az", "azure", "ba", "baby", "baidu", "banamex", "bananarepublic", "band", "bank", "bar", "barcelona", "barclaycard", "barclays", "barefoot", "bargains", "baseball", "basketball", "bauhaus", "bayern", "bb", "bbc", "bbt", "bbva", "bcg", "bcn", "bd", "be", "beats", "beauty", "beer", "bentley", "berlin", "best", "bestbuy", "bet", "bf", "bg", "bh", "bharti", "bi", "bible", "bid", "bike", "bing", "bingo", "bio", "biz", "bj", "black", "blackfriday", "blanco", "blockbuster", "blog", "bloomberg", "blue", "bm", "bms", "bmw", "bn", "bnl", "bnpparibas", "bo", "boats", "boehringer", "bofa", "bom", "bond", "boo", "book", "booking", "boots", "bosch", "bostik", "boston", "bot", "boutique", "box", "br", "bradesco", "bridgestone", "broadway", "broker", "brother", "brussels", "bs", "bt", "budapest", "bugatti", "build", "builders", "business", "buy", "buzz", "bv", "bw", "by", "bz", "bzh", "ca", "cab", "cafe", "cal", "call", "calvinklein", "cam", "camera", "camp", "cancerresearch", "canon", "capetown", "capital", "capitalone", "car", "caravan", "cards", "care", "career", "careers", "cars", "cartier", "casa", "case", "caseih", "cash", "casino", "cat", "catering", "catholic", "cba", "cbn", "cbre", "cbs", "cc", "cd", "ceb", "center", "ceo", "cern", "cf", "cfa", "cfd", "cg", "ch", "chanel", "channel", "chase", "chat", "cheap", "chintai", "chloe", "christmas", "chrome", "chrysler", "church", "ci", "cipriani", "circle", "cisco", "citadel", "citi", "citic", "city", "cityeats", "ck", "cl", "claims", "cleaning", "click", "clinic", "clinique", "clothing", "cloud", "club", "clubmed", "cm", "cn", "co", "coach", "codes", "coffee", "college", "cologne", "com", "comcast", "commbank", "community", "company", "compare", "computer", "comsec", "condos", "construction", "consulting", "contact", "contractors", "cooking", "cookingchannel", "cool", "coop", "corsica", "country", "coupon", "coupons", "courses", "cr", "credit", "creditcard", "creditunion", "cricket", "crown", "crs", "cruise", "cruises", "csc", "cu", "cuisinella", "cv", "cw", "cx", "cy", "cymru", "cyou", "cz", "dabur", "dad", "dance", "data", "date", "dating", "datsun", "day", "dclk", "dds", "de", "deal", "dealer", "deals", "degree", "delivery", "dell", "deloitte", "delta", "democrat", "dental", "dentist", "desi", "design", "dev", "dhl", "diamonds", "diet", "digital", "direct", "directory", "discount", "discover", "dish", "diy", "dj", "dk", "dm", "dnp", "do", "docs", "doctor", "dodge", "dog", "doha", "domains", "dot", "download", "drive", "dtv", "dubai", "duck", "dunlop", "duns", "dupont", "durban", "dvag", "dvr", "dz", "earth", "eat", "ec", "eco", "edeka", "edu", "education", "ee", "eg", "email", "emerck", "energy", "engineer", "engineering", "enterprises", "epost", "epson", "equipment", "er", "ericsson", "erni", "es", "esq", "estate", "esurance", "et", "etisalat", "eu", "eurovision", "eus", "events", "everbank", "exchange", "expert", "exposed", "express", "extraspace", "fage", "fail", "fairwinds", "faith", "family", "fan", "fans", "farm", "farmers", "fashion", "fast", "fedex", "feedback", "ferrari", "ferrero", "fi", "fiat", "fidelity", "fido", "film", "final", "finance", "financial", "fire", "firestone", "firmdale", "fish", "fishing", "fit", "fitness", "fj", "fk", "flickr", "flights", "flir", "florist", "flowers", "fly", "fm", "fo", "foo", "food", "foodnetwork", "football", "ford", "forex", "forsale", "forum", "foundation", "fox", "fr", "free", "fresenius", "frl", "frogans", "frontdoor", "frontier", "ftr", "fujitsu", "fujixerox", "fun", "fund", "furniture", "futbol", "fyi", "ga", "gal", "gallery", "gallo", "gallup", "game", "games", "gap", "garden", "gb", "gbiz", "gd", "gdn", "ge", "gea", "gent", "genting", "george", "gf", "gg", "ggee", "gh", "gi", "gift", "gifts", "gives", "giving", "gl", "glade", "glass", "gle", "global", "globo", "gm", "gmail", "gmbh", "gmo", "gmx", "gn", "godaddy", "gold", "goldpoint", "golf", "goo", "goodhands", "goodyear", "goog", "google", "gop", "got", "gov", "gp", "gq", "gr", "grainger", "graphics", "gratis", "green", "gripe", "group", "gs", "gt", "gu", "guardian", "gucci", "guge", "guide", "guitars", "guru", "gw", "gy", "hair", "hamburg", "hangout", "haus", "hbo", "hdfc", "hdfcbank", "health", "healthcare", "help", "helsinki", "here", "hermes", "hgtv", "hiphop", "hisamitsu", "hitachi", "hiv", "hk", "hkt", "hm", "hn", "hockey", "holdings", "holiday", "homedepot", "homegoods", "homes", "homesense", "honda", "honeywell", "horse", "hospital", "host", "hosting", "hot", "hoteles", "hotels", "hotmail", "house", "how", "hr", "hsbc", "ht", "htc", "hu", "hughes", "hyatt", "hyundai", "ibm", "icbc", "ice", "icu", "id", "ie", "ieee", "ifm", "ikano", "il", "im", "imamat", "imdb", "immo", "immobilien", "in", "industries", "infiniti", "info", "ing", "ink", "institute", "insurance", "insure", "int", "intel", "international", "intuit", "investments", "io", "ipiranga", "iq", "ir", "irish", "is", "iselect", "ismaili", "ist", "istanbul", "it", "itau", "itv", "iveco", "iwc", "jaguar", "java", "jcb", "jcp", "je", "jeep", "jetzt", "jewelry", "jio", "jlc", "jll", "jm", "jmp", "jnj", "jo", "jobs", "joburg", "jot", "joy", "jp", "jpmorgan", "jprs", "juegos", "juniper", "kaufen", "kddi", "ke", "kerryhotels", "kerrylogistics", "kerryproperties", "kfh", "kg", "kh", "ki", "kia", "kim", "kinder", "kindle", "kitchen", "kiwi", "km", "kn", "koeln", "komatsu", "kosher", "kp", "kpmg", "kpn", "kr", "krd", "kred", "kuokgroup", "kw", "ky", "kyoto", "kz", "la", "lacaixa", "ladbrokes", "lamborghini", "lamer", "lancaster", "lancia", "lancome", "land", "landrover", "lanxess", "lasalle", "lat", "latino", "latrobe", "law", "lawyer", "lb", "lc", "lds", "lease", "leclerc", "lefrak", "legal", "lego", "lexus", "lgbt", "li", "liaison", "lidl", "life", "lifeinsurance", "lifestyle", "lighting", "like", "lilly", "limited", "limo", "lincoln", "linde", "link", "lipsy", "live", "living", "lixil", "lk", "loan", "loans", "locker", "locus", "loft", "lol", "london", "lotte", "lotto", "love", "lpl", "lplfinancial", "lr", "ls", "lt", "ltd", "ltda", "lu", "lundbeck", "lupin", "luxe", "luxury", "lv", "ly", "ma", "macys", "madrid", "maif", "maison", "makeup", "man", "management", "mango", "market", "marketing", "markets", "marriott", "marshalls", "maserati", "mattel", "mba", "mc", "mcd", "mcdonalds", "mckinsey", "md", "me", "med", "media", "meet", "melbourne", "meme", "memorial", "men", "menu", "meo", "metlife", "mg", "mh", "miami", "microsoft", "mil", "mini", "mint", "mit", "mitsubishi", "mk", "ml", "mlb", "mls", "mm", "mma", "mn", "mo", "mobi", "mobile", "mobily", "moda", "moe", "moi", "mom", "monash", "money", "monster", "montblanc", "mopar", "mormon", "mortgage", "moscow", "moto", "motorcycles", "mov", "movie", "movistar", "mp", "mq", "mr", "ms", "msd", "mt", "mtn", "mtr", "mu", "museum", "mutual", "mv", "mw", "mx", "my", "mz", "na", "nab", "nadex", "nagoya", "name", "nationwide", "natura", "navy", "nba", "nc", "ne", "nec", "net", "netbank", "netflix", "network", "neustar", "new", "newholland", "news", "next", "nextdirect", "nexus", "nf", "nfl", "ng", "ngo", "nhk", "ni", "nico", "nike", "nikon", "ninja", "nissan", "nissay", "nl", "no", "nokia", "northwesternmutual", "norton", "now", "nowruz", "nowtv", "np", "nr", "nra", "nrw", "ntt", "nu", "nyc", "nz", "obi", "observer", "off", "office", "okinawa", "olayan", "olayangroup", "oldnavy", "ollo", "om", "omega", "one", "ong", "onl", "online", "onyourside", "ooo", "open", "oracle", "orange", "org", "organic", "origins", "osaka", "otsuka", "ott", "ovh", "pa", "page", "pamperedchef", "panasonic", "panerai", "paris", "pars", "partners", "parts", "party", "passagens", "pay", "pccw", "pe", "pet", "pf", "pfizer", "pg", "ph", "pharmacy", "philips", "phone", "photo", "photography", "photos", "physio", "piaget", "pics", "pictet", "pictures", "pid", "pin", "ping", "pink", "pioneer", "pizza", "pk", "pl", "place", "play", "playstation", "plumbing", "plus", "pm", "pn", "pnc", "pohl", "poker", "politie", "porn", "post", "pr", "pramerica", "praxi", "press", "prime", "pro", "prod", "productions", "prof", "progressive", "promo", "properties", "property", "protection", "pru", "prudential", "ps", "pt", "pub", "pw", "pwc", "py", "qa", "qpon", "quebec", "quest", "qvc", "racing", "radio", "raid", "re", "read", "realestate", "realtor", "realty", "recipes", "red", "redstone", "redumbrella", "rehab", "reise", "reisen", "reit", "reliance", "ren", "rent", "rentals", "repair", "report", "republican", "rest", "restaurant", "review", "reviews", "rexroth", "rich", "richardli", "ricoh", "rightathome", "ril", "rio", "rip", "rmit", "ro", "rocher", "rocks", "rodeo", "rogers", "room", "rs", "rsvp", "ru", "rugby", "ruhr", "run", "rw", "rwe", "ryukyu", "sa", "saarland", "safe", "safety", "sakura", "sale", "salon", "samsclub", "samsung", "sandvik", "sandvikcoromant", "sanofi", "sap", "sapo", "sarl", "sas", "save", "saxo", "sb", "sbi", "sbs", "sc", "sca", "scb", "schaeffler", "schmidt", "scholarships", "school", "schule", "schwarz", "science", "scjohnson", "scor", "scot", "sd", "se", "seat", "secure", "security", "seek", "select", "sener", "services", "ses", "seven", "sew", "sex", "sexy", "sfr", "sg", "sh", "shangrila", "sharp", "shaw", "shell", "shia", "shiksha", "shoes", "shop", "shopping", "shouji", "show", "showtime", "shriram", "si", "silk", "sina", "singles", "site", "sj", "sk", "ski", "skin", "sky", "skype", "sl", "sling", "sm", "smart", "smile", "sn", "sncf", "so", "soccer", "social", "softbank", "software", "sohu", "solar", "solutions", "song", "sony", "soy", "space", "spiegel", "spot", "spreadbetting", "sr", "srl", "srt", "st", "stada", "staples", "star", "starhub", "statebank", "statefarm", "statoil", "stc", "stcgroup", "stockholm", "storage", "store", "stream", "studio", "study", "style", "su", "sucks", "supplies", "supply", "support", "surf", "surgery", "suzuki", "sv", "swatch", "swiftcover", "swiss", "sx", "sy", "sydney", "symantec", "systems", "sz", "tab", "taipei", "talk", "taobao", "target", "tatamotors", "tatar", "tattoo", "tax", "taxi", "tc", "tci", "td", "tdk", "team", "tech", "technology", "tel", "telecity", "telefonica", "temasek", "tennis", "teva", "tf", "tg", "th", "thd", "theater", "theatre", "tiaa", "tickets", "tienda", "tiffany", "tips", "tires", "tirol", "tj", "tjmaxx", "tjx", "tk", "tkmaxx", "tl", "tm", "tmall", "tn", "to", "today", "tokyo", "tools", "top", "toray", "toshiba", "total", "tours", "town", "toyota", "toys", "tr", "trade", "trading", "training", "travel", "travelchannel", "travelers", "travelersinsurance", "trust", "trv", "tt", "tube", "tui", "tunes", "tushu", "tv", "tvs", "tw", "tz", "ua", "ubank", "ubs", "uconnect", "ug", "uk", "unicom", "university", "uno", "uol", "ups", "us", "uy", "uz", "va", "vacations", "vana", "vanguard", "vc", "ve", "vegas", "ventures", "verisign", "versicherung", "vet", "vg", "vi", "viajes", "video", "vig", "viking", "villas", "vin", "vip", "virgin", "visa", "vision", "vista", "vistaprint", "viva", "vivo", "vlaanderen", "vn", "vodka", "volkswagen", "volvo", "vote", "voting", "voto", "voyage", "vu", "vuelos", "wales", "walmart", "walter", "wang", "wanggou", "warman", "watch", "watches", "weather", "weatherchannel", "webcam", "weber", "website", "wed", "wedding", "weibo", "weir", "wf", "whoswho", "wien", "wiki", "williamhill", "win", "windows", "wine", "winners", "wme", "wolterskluwer", "woodside", "work", "works", "world", "wow", "ws", "wtc", "wtf", "xbox", "xerox", "xfinity", "xihuan", "xin", "कॉम", "セール", "佛山", "慈善", "集团", "在线", "한국", "大众汽车", "点看", "คอม", "ভারত", "八卦", "موقع", "বাংলা", "公益", "公司", "香格里拉", "网站", "移动", "我爱你", "москва", "қаз", "католик", "онлайн", "сайт", "联通", "срб", "бг", "бел", "קום", "时尚", "微博", "淡马锡", "ファッション", "орг", "नेट", "ストア", "삼성", "சிங்கப்பூர்", "商标", "商店", "商城", "дети", "мкд", "ею", "ポイント", "新闻", "工行", "家電", "كوم", "中文网", "中信", "中国", "中國", "娱乐", "谷歌", "భారత్", "ලංකා", "電訊盈科", "购物", "クラウド", "ભારત", "通販", "भारत", "网店", "संगठन", "餐厅", "网络", "ком", "укр", "香港", "诺基亚", "食品", "飞利浦", "台湾", "台灣", "手表", "手机", "мон", "الجزائر", "عمان", "ارامكو", "ایران", "العليان", "اتصالات", "امارات", "بازار", "پاکستان", "الاردن", "موبايلي", "بھارت", "المغرب", "ابوظبي", "السعودية", "كاثوليك", "سودان", "همراه", "عراق", "مليسيا", "澳門", "닷컴", "政府", "شبكة", "بيتك", "عرب", "გე", "机构", "组织机构", "健康", "ไทย", "سورية", "рус", "рф", "珠宝", "تونس", "大拿", "みんな", "グーグル", "ελ", "世界", "書籍", "ਭਾਰਤ", "网址", "닷넷", "コム", "天主教", "游戏", "vermögensberater", "vermögensberatung", "企业", "信息", "嘉里大酒店", "嘉里", "مصر", "قطر", "广东", "இலங்கை", "இந்தியா", "հայ", "新加坡", "فلسطين", "政务", "xperia", "xxx", "xyz", "yachts", "yahoo", "yamaxun", "yandex", "ye", "yodobashi", "yoga", "yokohama", "you", "youtube", "yt", "yun", "za", "zappos", "zara", "zero", "zip", "zippo", "zm", "zone", "zuerich", "zw"]
 		},
@@ -809,8 +790,8 @@
 				x = o("./src/lib/makeApiRequest/index.ts"),
 				y = o("./src/lib/makeGqlRequest/index.ts"),
 				C = o("./src/lib/omitHeaders/index.ts"),
-				v = o("./src/reddit/constants/headers.ts"),
-				E = o("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				E = o("./src/reddit/constants/headers.ts"),
+				v = o("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				j = o("./src/reddit/helpers/genericServerError/index.ts"),
 				k = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				w = o("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
@@ -850,9 +831,9 @@
 							document: e
 						})
 					}
-					return Object(x.a)(Object(C.a)(e, [v.a]), {
+					return Object(x.a)(Object(C.a)(e, [E.a]), {
 						method: s.hb.POST,
-						endpoint: Object(E.a)(Object(T.a)(Object(F.a)(`${e.apiUrl}/api/comment.json`))),
+						endpoint: Object(v.a)(Object(T.a)(Object(F.a)(`${e.apiUrl}/api/comment.json`))),
 						data: a
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 						...e,
@@ -937,13 +918,13 @@
 					}));
 					const y = g.user.account.displayText,
 						C = r.commentMode;
-					let v;
-					if (c ? (v = await Object(I.i)(_(), e, r, y), u(Object(m.a)({
+					let E;
+					if (c ? (E = await Object(I.i)(_(), e, r, y), u(Object(m.a)({
 							streamId: e,
-							level: v.body.automuteLevel
-						}))) : v = await S(_(), e, r, y, C), v.ok) {
+							level: E.body.automuteLevel
+						}))) : E = await S(_(), e, r, y, C), E.ok) {
 						let n;
-						n = v.body, u(te({
+						n = E.body, u(te({
 							...n,
 							headCommentId: Object(K.w)(g, {
 								commentsPageKey: t
@@ -956,20 +937,20 @@
 						});
 						u(Object(l.z)(s, f.a.CommentSubmitted))
 					} else {
-						v.error && v.error.type === s.Gb && W.g(g, ie(r), e);
-						const t = v.error && v.error.fields && v.error.fields[0] ? v.error.fields[0].msg : n.fbt._("Something went wrong", null, {
+						E.error && E.error.type === s.Gb && W.g(g, ie(r), e);
+						const t = E.error && E.error.fields && E.error.fields[0] ? E.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
 						u(ne({
 							draftKey: o,
-							error: v.error
+							error: E.error
 						})), u(Object(h.f)({
 							duration: h.a,
 							kind: q.b.Error,
 							text: t
 						}))
 					}
-					se(b(), t, a, v), i || Object(p.d)()
+					se(b(), t, a, E), i || Object(p.d)()
 				}, de = e => async (t, o, {
 					gqlContext: n
 				}) => {
@@ -1163,7 +1144,7 @@
 							hasFocus: !0
 						}
 					})))
-				}, ve = Object(r.a)(Q.C), Ee = Object(r.a)(Q.B), je = Object(r.a)(Q.D), ke = Object(r.a)(Q.h), we = ({
+				}, Ee = Object(r.a)(Q.C), ve = Object(r.a)(Q.B), je = Object(r.a)(Q.D), ke = Object(r.a)(Q.h), we = ({
 					id: e,
 					commentsPageKey: t,
 					depth: o,
@@ -1174,7 +1155,7 @@
 				}) => {
 					const c = a();
 					if (!c.user.account) return;
-					o(ve({
+					o(Ee({
 						draftKey: n
 					})), W.d(c);
 					const d = c.user.account.displayText || "",
@@ -1193,8 +1174,8 @@
 									document: e
 								})
 							}
-							return Object(x.a)(Object(C.a)(e, [v.a]), {
-								endpoint: Object(E.a)(Object(F.a)(Object(T.a)(`${e.apiUrl}/api/editusertext`))),
+							return Object(x.a)(Object(C.a)(e, [E.a]), {
+								endpoint: Object(v.a)(Object(F.a)(Object(T.a)(`${e.apiUrl}/api/editusertext`))),
 								method: s.hb.POST,
 								data: i
 							}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
@@ -1227,7 +1208,7 @@
 								...s.comment
 							}
 						}))
-					} else o(Ee({
+					} else o(ve({
 						draftKey: n,
 						error: u.error
 					}))
@@ -1238,8 +1219,8 @@
 					o(Oe({
 						id: e
 					})), W.a(e, a);
-					const i = await ((e, t) => Object(x.a)(Object(C.a)(e, [v.a]), {
-						endpoint: Object(E.a)(`${e.apiUrl}/api/del`),
+					const i = await ((e, t) => Object(x.a)(Object(C.a)(e, [E.a]), {
+						endpoint: Object(v.a)(`${e.apiUrl}/api/del`),
 						method: s.hb.POST,
 						data: {
 							id: t
@@ -1372,8 +1353,8 @@
 				x = o("./src/reddit/models/Post/index.ts"),
 				y = o("./src/reddit/models/Toast/index.ts"),
 				C = o("./src/reddit/models/Vote/index.ts"),
-				v = o("./src/reddit/selectors/comments.ts"),
-				E = o("./src/reddit/selectors/commentSelector.ts"),
+				E = o("./src/reddit/selectors/comments.ts"),
+				v = o("./src/reddit/selectors/commentSelector.ts"),
 				j = o("./src/reddit/selectors/experiments/avatarsInComments.ts"),
 				k = o("./src/reddit/selectors/moderatingComments.ts"),
 				w = o("./src/reddit/selectors/user.ts"),
@@ -1385,7 +1366,7 @@
 				}) => {
 					if (!Object(w.K)(o())) return t(Object(d.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
-						redirectUrl: Object(v.m)(o(), {
+						redirectUrl: Object(E.m)(o(), {
 							commentId: e
 						})
 					}));
@@ -1418,7 +1399,7 @@
 					}))
 				}, S = e => `viewing-comment-${e}`, D = n.a.telemetry.commentConsumedThreshold, M = e => async (t, o) => {
 					const s = o();
-					if (!Object(E.a)(s, {
+					if (!Object(v.a)(s, {
 							commentId: e
 						}) || Math.random() > n.a.telemetry.commentSampleRate) return;
 					_.c({
@@ -1433,7 +1414,7 @@
 				}, A = (e, t) => async (o, n) => {
 					const s = n(),
 						a = S(e);
-					if (Object(E.a)(s, {
+					if (Object(v.a)(s, {
 							commentId: e
 						}) && r.c.has(a)) {
 						const o = r.c.end(a);
@@ -1489,7 +1470,7 @@
 				}) => async (n, s) => {
 					const r = s(),
 						a = Object(g.h)(e),
-						i = Object(v.n)(r, {
+						i = Object(E.n)(r, {
 							commentLink: a,
 							commentsPageKey: t
 						}),
@@ -1845,11 +1826,11 @@
 				x = o("./src/reddit/components/CommentCreation/ExpandingFormDiv.tsx"),
 				y = o("./src/reddit/components/CommentCreation/FormFooter/index.tsx"),
 				C = o("./src/lib/fastdom/index.ts"),
-				v = o("./src/reddit/components/CommentCreation/ToolbarSelector.m.less"),
-				E = o.n(v),
+				E = o("./src/reddit/components/CommentCreation/ToolbarSelector.m.less"),
+				v = o.n(E),
 				j = o("./src/lib/lessComponent.tsx");
 			const k = 310,
-				w = j.a.div("Container", E.a);
+				w = j.a.div("Container", v.a);
 			class O extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -2080,8 +2061,8 @@
 						errorMsgs: g,
 						pending: y,
 						modalSeen: C,
-						submitButtonText: v,
-						isCommentBoxDesignEnabled: E,
+						submitButtonText: E,
+						isCommentBoxDesignEnabled: v,
 						isExpanded: j,
 						isTopLevelComment: k,
 						onSwitchMode: w,
@@ -2098,13 +2079,13 @@
 						className: Object(W.a)(s, {
 							[$.a.isTopLevelComment]: k,
 							[$.a.mExpanded]: j,
-							[$.a.mRedesign]: E
+							[$.a.mRedesign]: v
 						}),
 						ref: this.setWrapperRef,
 						style: {
 							height: D ? M : void 0
 						}
-					}, !E && k && r.a.createElement(oe, null, r.a.createElement(ne, null, n.fbt._("Comment as {authorLink}", [n.fbt._param("authorLink", r.a.createElement(l.a, {
+					}, !v && k && r.a.createElement(oe, null, r.a.createElement(ne, null, n.fbt._("Comment as {authorLink}", [n.fbt._param("authorLink", r.a.createElement(l.a, {
 						author: T,
 						isAdmin: !1,
 						isAdminEmeritus: !1,
@@ -2117,7 +2098,7 @@
 						breakOut: D,
 						depth: i,
 						isEditing: I
-					}, E && r.a.createElement("div", {
+					}, v && r.a.createElement("div", {
 						className: $.a.userIcon
 					}, r.a.createElement(ce, null)), r.a.createElement(pe, {
 						className: Object(W.a)({
@@ -2134,18 +2115,18 @@
 						onEditorResize: this.props.onEditorResize,
 						onFocus: this.onFocus,
 						onKeyDown: this.handleKeyDown,
-						placeholder: E ? n.fbt._("Add a comment", null, {
+						placeholder: v ? n.fbt._("Add a comment", null, {
 							hk: "39ZBm0"
 						}) : n.fbt._("What are your thoughts?", null, {
 							hk: "4or1AH"
 						}),
 						value: S
-					}), (!E || j) && r.a.createElement(ie, {
+					}), (!v || j) && r.a.createElement(ie, {
 						cancelButtonEnabled: _ !== G.c.replyToPost,
 						onSubmit: this.onSubmit,
 						onCancel: this.onCancel,
 						pending: y,
-						submitButtonText: v,
+						submitButtonText: E,
 						canSubmit: this.userHasEnteredText()
 					}, r.a.createElement(O, null, e => "compact" === e ? r.a.createElement(B, {
 						buttonRef: e => this.switchModeBtn = e,
@@ -2311,8 +2292,8 @@
 				});
 			var C = o("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
 			const {
-				fbt: v
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), E = Object(r.b)(null, (e, t) => ({
+				fbt: E
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), v = Object(r.b)(null, (e, t) => ({
 				closeModal: () => {
 					e(Object(l.g)(d.q))
 				},
@@ -2330,32 +2311,32 @@
 					this.props.modalSeen(), this.props.sendEvent(_(this.state.correlationId))
 				}
 				render() {
-					return s.a.createElement(u.d, null, s.a.createElement(u.h, null, s.a.createElement(C.a, null, s.a.createElement(u.p, null, v._("Are you sure you want to post that?", null, {
+					return s.a.createElement(u.d, null, s.a.createElement(u.h, null, s.a.createElement(C.a, null, s.a.createElement(u.p, null, E._("Are you sure you want to post that?", null, {
 						hk: "4yXqtu"
 					})), s.a.createElement(p.a, {
 						onClick: () => {
 							this.props.sendEvent(y(this.state.correlationId)), this.props.closeModal()
 						}
-					}, s.a.createElement(u.b, null)))), s.a.createElement(u.k, null, s.a.createElement(u.o, null, v._("A reminder from the mods: Please follow community rules when commenting.", null, {
+					}, s.a.createElement(u.b, null)))), s.a.createElement(u.k, null, s.a.createElement(u.o, null, E._("A reminder from the mods: Please follow community rules when commenting.", null, {
 						hk: "Hdi9f"
 					}))), s.a.createElement(u.f, null, s.a.createElement(u.a, {
 						onClick: () => {
 							this.props.sendEvent(x(this.state.correlationId)), this.props.closeModal()
 						},
 						"data-redditstyle": !0
-					}, v._("Go back and edit", null, {
+					}, E._("Go back and edit", null, {
 						hk: "3nGNI7"
 					})), s.a.createElement(u.q, {
 						onClick: () => {
 							this.props.sendEvent(g(this.state.correlationId)), this.props.continue()
 						},
 						"data-redditstyle": !0
-					}, v._("Comment", null, {
+					}, E._("Comment", null, {
 						hk: "1leYg7"
 					}))))
 				}
 			}
-			t.a = Object(c.a)(E(Object(m.c)(j)))
+			t.a = Object(c.a)(v(Object(m.c)(j)))
 		},
 		"./src/reddit/components/CommentCreation/getCancelModalId.ts": function(e, t, o) {
 			"use strict";
@@ -2396,9 +2377,9 @@
 					className: g.a.requestButton,
 					eventSource: f.b.Comment
 				})),
-				v = o("./node_modules/fbt/lib/FbtPublic.js"),
-				E = o("./node_modules/lodash/noop.js"),
-				j = o.n(E),
+				E = o("./node_modules/fbt/lib/FbtPublic.js"),
+				v = o("./node_modules/lodash/noop.js"),
+				j = o.n(v),
 				k = o("./src/lib/classNames/index.ts"),
 				w = o("./src/lib/fastdom/index.ts"),
 				O = o("./src/lib/memoizeByReference/index.ts"),
@@ -2462,14 +2443,14 @@
 							}))
 						}, Z)
 					}, [b, p, l]);
-					const f = d ? v.fbt._("Add Emoji", null, {
+					const f = d ? E.fbt._("Add Emoji", null, {
 						hk: "3EV4aU"
-					}) : v.fbt._("Add Emote", null, {
+					}) : E.fbt._("Add Emote", null, {
 						hk: "3dXLr8"
 					});
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement(P.c, {
 						tooltipId: J,
-						text: v.fbt._("NEW! Add custom emojis", null, {
+						text: E.fbt._("NEW! Add custom emojis", null, {
 							hk: "1C510K"
 						}),
 						className: K.a.addEmojiTooltip
@@ -2509,10 +2490,10 @@
 				return a.a.createElement(U.a, {
 					iconName: Q.a.gif_post,
 					className: s && n ? $.a.rainbow : "",
-					tooltip: v.fbt._("Add GIF", null, {
+					tooltip: E.fbt._("Add GIF", null, {
 						hk: "3uH3vO"
 					}),
-					disabledTooltip: v.fbt._("Limit 1 GIF / comment", null, {
+					disabledTooltip: E.fbt._("Limit 1 GIF / comment", null, {
 						hk: "7T6gq"
 					}),
 					enabled: s,
@@ -2590,8 +2571,8 @@
 				xe = o("./src/reddit/contexts/PageLayer/selectors.ts"),
 				ye = o("./src/reddit/models/Subreddit/index.ts"),
 				Ce = o("./src/reddit/selectors/activeModalId.ts"),
-				ve = o("./src/reddit/selectors/comments.ts"),
-				Ee = o("./src/reddit/selectors/economics.ts"),
+				Ee = o("./src/reddit/selectors/comments.ts"),
+				ve = o("./src/reddit/selectors/economics.ts"),
 				je = o("./src/reddit/components/CommentCreation/RichtextCommentForm/index.m.less"),
 				ke = o.n(je);
 			const we = 16,
@@ -2641,10 +2622,10 @@
 							id: o.id
 						} : void 0
 					},
-					draft: ve.i,
+					draft: Ee.i,
 					userCanUseGifs: (e, t) => {
 						const o = Object(xe.p)(e, t);
-						return Object(Ee.s)(e, o ? o.id : void 0, t.parentCommentId)
+						return Object(ve.s)(e, o ? o.id : void 0, t.parentCommentId)
 					}
 				}), (e, t) => ({
 					cancelModalToggled: () => e(Object(he.i)(Object(ue.a)(t.draftKey)))
@@ -2721,9 +2702,9 @@
 					} = e;
 					this.state = {
 						breakOut: !1,
-						cancelModalText: o === pe.c.edit ? v.fbt._("Are you sure that you want to discard your edits?", null, {
+						cancelModalText: o === pe.c.edit ? E.fbt._("Are you sure that you want to discard your edits?", null, {
 							hk: "1ZfaWW"
-						}) : v.fbt._("Are you sure that you want to discard your comment?", null, {
+						}) : E.fbt._("Are you sure that you want to discard your comment?", null, {
 							hk: "38Df9h"
 						}),
 						rteState: !r && t && t.rteState ? t.rteState : _e.a.createInitial(r, s),
@@ -2776,7 +2757,7 @@
 						cancelModalText: x,
 						breakOut: y,
 						formHeight: C,
-						rteState: E
+						rteState: v
 					} = this.state, w = Object(ue.a)(i), O = r.draftType === pe.c.edit, S = c !== pe.c.replyToPost;
 					return a.a.createElement(Oe, {
 						className: Object(k.a)(o, {
@@ -2787,7 +2768,7 @@
 						style: {
 							height: y ? C : void 0
 						}
-					}, !u && f && a.a.createElement(Te, null, a.a.createElement(Ae, null, v.fbt._("Comment as {authorLink}", [v.fbt._param("authorLink", a.a.createElement(T.a, {
+					}, !u && f && a.a.createElement(Te, null, a.a.createElement(Ae, null, E.fbt._("Comment as {authorLink}", [E.fbt._param("authorLink", a.a.createElement(T.a, {
 						author: g,
 						isAdmin: !1,
 						isAdminEmeritus: !1,
@@ -2808,7 +2789,7 @@
 						initialHeight: this.props.initialHeight,
 						isCommentBoxDesignEnabled: u,
 						isExpanded: m,
-						rteState: E,
+						rteState: v,
 						rteRef: this.setRTEComponentRef,
 						domRef: this.setRTEDomElementRef,
 						onBlur: this.handleBlur,
@@ -2817,9 +2798,9 @@
 						onChange: this.handleChange,
 						onSubmit: this.onSubmit,
 						onSwitchEditorMode: this.onSwitchEditorMode,
-						placeholderText: u ? v.fbt._("Add a comment", null, {
+						placeholderText: u ? E.fbt._("Add a comment", null, {
 							hk: "39ZBm0"
-						}) : v.fbt._("What are your thoughts?", null, {
+						}) : E.fbt._("What are your thoughts?", null, {
 							hk: "4or1AH"
 						}),
 						readOnly: h,
@@ -2827,10 +2808,10 @@
 						toolbarPosition: "bottom",
 						renderToolbar: this.getToolbarRenderer(S, i, h, b, u)
 					})), this.state.showError ? Object(ce.c)(d) : null, e === w && a.a.createElement(F.a, {
-						actionText: v.fbt._("Discard", null, {
+						actionText: E.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
-						cancelActionText: v.fbt._("keep", null, {
+						cancelActionText: E.fbt._("keep", null, {
 							hk: "J0ER1"
 						}),
 						modalText: x,
@@ -2843,7 +2824,7 @@
 						withOverlay: !0
 					}), a.a.createElement(be.a, {
 						editKey: i,
-						hasValue: _e.a.hasContent(E)
+						hasValue: _e.a.hasContent(v)
 					}))
 				}
 			}
@@ -2858,10 +2839,10 @@
 					isCommentBoxDesignEnabled: Ne.a,
 					userName: e => e.user.account ? Object(Le.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					hasError: ve.v,
-					errorMsgs: ve.L,
-					draft: ve.i,
-					disableAutofocus: ve.f,
+					hasError: Ee.v,
+					errorMsgs: Ee.L,
+					draft: Ee.i,
+					disableAutofocus: Ee.f,
 					showContributorRequestFlow: e => Object(He.r)(e, f.e.Comment)
 				}),
 				qe = Object(i.b)(Ue, (e, t) => ({
@@ -3084,8 +3065,8 @@
 				x = o("./src/lib/lessComponent.tsx");
 			const y = "Markdown_Help__Modal",
 				C = x.a.wrapped(b.a, "Section", g.a),
-				v = x.a.div("Container", g.a),
-				E = x.a.table("Table", g.a),
+				E = x.a.div("Container", g.a),
+				v = x.a.table("Table", g.a),
 				j = x.a.p("P", g.a);
 			class k extends r.a.Component {
 				render() {
@@ -3112,7 +3093,7 @@
 						title: n.fbt._("Markdown Help", null, {
 							hk: "w08E2"
 						})
-					}), r.a.createElement(v, null, r.a.createElement(E, {
+					}), r.a.createElement(E, null, r.a.createElement(v, {
 						className: g.a.helpTable
 					}, r.a.createElement("tr", null, r.a.createElement(d.s, null, r.a.createElement(d.j, null, n.fbt._("Type this:", null, {
 						hk: "VDjXQ"
@@ -3182,16 +3163,16 @@
 				x = o("./src/reddit/selectors/editorContent.ts"),
 				y = o("./src/reddit/components/PostCreationForm/MarkdownEditor/index.m.less"),
 				C = o.n(y),
-				v = o("./src/lib/lessComponent.tsx");
-			const E = v.a.wrapped(f.a, "LoadingIcon", C.a),
+				E = o("./src/lib/lessComponent.tsx");
+			const v = E.a.wrapped(f.a, "LoadingIcon", C.a),
 				j = ({
 					isFilled: e,
 					...t
-				}) => r.a.createElement(E, t),
-				k = v.a.span("ModeDescription", C.a),
-				w = v.a.div("ModeWrapper", C.a),
-				O = v.a.wrapped(d.a, "MarkdownHelpButton", C.a),
-				T = v.a.div("Toolbar", C.a),
+				}) => r.a.createElement(v, t),
+				k = E.a.span("ModeDescription", C.a),
+				w = E.a.div("ModeWrapper", C.a),
+				O = E.a.wrapped(d.a, "MarkdownHelpButton", C.a),
+				T = E.a.div("Toolbar", C.a),
 				F = Object(i.c)({
 					activeModalId: g.a,
 					isConverting: e => Object(x.a)(e)
@@ -3486,14 +3467,14 @@
 				x = o("./src/reddit/actions/postCreation/editorContent.ts"),
 				y = o("./src/reddit/components/CommentCreation/NavigationModule/index.ts"),
 				C = o("./src/lib/constants/index.ts"),
-				v = o("./src/lib/memoizeByReference/index.ts"),
-				E = o("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			const j = Object(v.a)((e, t) => {
+				E = o("./src/lib/memoizeByReference/index.ts"),
+				v = o("./src/reddit/components/RichTextEditor/media/helpers.ts");
+			const j = Object(E.a)((e, t) => {
 				const o = e.name,
 					{
 						allowedPostTypes: s
 					} = e,
-					r = Object(E.g)(t),
+					r = Object(v.g)(t),
 					a = ((e, t, o) => {
 						if (!t) return null;
 						let s = "";
@@ -3664,11 +3645,11 @@
 						hk: "E1dIP"
 					}) : n.fbt._("Text (optional)", null, {
 						hk: "4jfNex"
-					}), C = this.getMediaValidationErrors(), v = [...t, ...C];
-					o && !v.length && v.push(n.fbt._("Something went wrong. Just don't panic.", null, {
+					}), C = this.getMediaValidationErrors(), E = [...t, ...C];
+					o && !E.length && E.push(n.fbt._("Something went wrong. Just don't panic.", null, {
 						hk: "FsWrq"
 					}));
-					const E = !O.a.isAllMediaUploaded(g, l);
+					const v = !O.a.isAllMediaUploaded(g, l);
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement(B, null, e === h.h.RICH_TEXT ? i.a.createElement(w.a, {
 						allowMediaUploads: !0,
 						className: Object(u.a)(I.a.Editor, {
@@ -3702,7 +3683,7 @@
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), i.a.createElement(W, {
-						disabled: !!a || !!C.length || !this.hasChanged() || E,
+						disabled: !!a || !!C.length || !this.hasChanged() || v,
 						onClick: this.onSubmit
 					}, a ? i.a.createElement(L, {
 						sizePx: 10
@@ -3710,7 +3691,7 @@
 						hk: "1RZ7vw"
 					}))), i.a.createElement(F.a, {
 						className: I.a.errorMessages,
-						messages: v
+						messages: E
 					}), i.a.createElement(y.a, {
 						editKey: c.id,
 						hasValue: !(!f && !_),
@@ -4011,7 +3992,7 @@
 			})), o.d(t, "e", (function() {
 				return C
 			})), o.d(t, "b", (function() {
-				return v
+				return E
 			}));
 			var n = o("./src/config.ts"),
 				s = o("./src/lib/constants/index.ts"),
@@ -4096,7 +4077,7 @@
 						traceRequestName: "more_comments"
 					})
 				},
-				v = (e, t, o, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
+				E = (e, t, o, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 					endpoint: Object(c.a)(`${e.apiUrl}/api/distinguish/${o}`),
 					method: s.hb.POST,
 					data: {
@@ -4429,4 +4410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.e6eeab75672c97aedbf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a532bf8a20ae75cc3c16.js.map

@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/vendors~Subreddit.48beb026f0ff54421372.js
+// https://www.redditstatic.com/desktop2x/vendors~CollectionCommentsPage~CommentsPage.74fecf4322147c824f67.js
 // Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["vendors~Subreddit"], {
+	["vendors~CollectionCommentsPage~CommentsPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, o) {
 			var i;
 			i = function() {
@@ -629,17 +629,18 @@
 				return t.src_pseudo_letter = "(?:(?![><｜]|" + t.src_ZPCc + ")" + t.src_Any + ")", t.src_ip4 = "(?:(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)", t.src_auth = "(?:(?:(?!" + t.src_ZCc + "|[@/\\[\\]()]).)+@)?", t.src_port = "(?::(?:6(?:[0-4]\\d{3}|5(?:[0-4]\\d{2}|5(?:[0-2]\\d|3[0-5])))|[1-5]?\\d{1,4}))?", t.src_host_terminator = "(?=$|[><｜]|" + t.src_ZPCc + ")(?!-|_|:\\d|\\.-|\\.(?!$|" + t.src_ZPCc + "))", t.src_path = "(?:[/?#](?:(?!" + t.src_ZCc + "|[><｜]|[()[\\]{}.,\"'?!\\-]).|\\[(?:(?!" + t.src_ZCc + "|\\]).)*\\]|\\((?:(?!" + t.src_ZCc + "|[)]).)*\\)|\\{(?:(?!" + t.src_ZCc + '|[}]).)*\\}|\\"(?:(?!' + t.src_ZCc + '|["]).)+\\"|\\\'(?:(?!' + t.src_ZCc + "|[']).)+\\'|\\'(?=" + t.src_pseudo_letter + "|[-]).|\\.{2,3}[a-zA-Z0-9%/]|\\.(?!" + t.src_ZCc + "|[.]).|" + (e && e["---"] ? "\\-(?!--(?:[^-]|$))(?:-*)|" : "\\-+|") + "\\,(?!" + t.src_ZCc + ").|\\!(?!" + t.src_ZCc + "|[!]).|\\?(?!" + t.src_ZCc + "|[?]).)+|\\/)?", t.src_email_name = '[\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]+', t.src_xn = "xn--[a-z0-9\\-]{1,59}", t.src_domain_root = "(?:" + t.src_xn + "|" + t.src_pseudo_letter + "{1,63})", t.src_domain = "(?:" + t.src_xn + "|(?:" + t.src_pseudo_letter + ")|(?:" + t.src_pseudo_letter + "(?:-(?!-)|" + t.src_pseudo_letter + "){0,61}" + t.src_pseudo_letter + "))", t.src_host = "(?:(?:(?:(?:" + t.src_domain + ")\\.)*" + t.src_domain + "))", t.tpl_host_fuzzy = "(?:" + t.src_ip4 + "|(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%)))", t.tpl_host_no_ip_fuzzy = "(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%))", t.src_host_strict = t.src_host + t.src_host_terminator, t.tpl_host_fuzzy_strict = t.tpl_host_fuzzy + t.src_host_terminator, t.src_host_port_strict = t.src_host + t.src_port + t.src_host_terminator, t.tpl_host_port_fuzzy_strict = t.tpl_host_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_port_no_ip_fuzzy_strict = t.tpl_host_no_ip_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_fuzzy_test = "localhost|www\\.|\\.\\d{1,3}\\.|(?:\\.(?:%TLDS%)(?:" + t.src_ZPCc + "|>|$))", t.tpl_email_fuzzy = "(^|[><｜]|\\(|" + t.src_ZCc + ")(" + t.src_email_name + "@" + t.tpl_host_fuzzy_strict + ")", t.tpl_link_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_fuzzy_strict + t.src_path + ")", t.tpl_link_no_ip_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_no_ip_fuzzy_strict + t.src_path + ")", t
 			}
 		},
-		"./node_modules/lodash/_arraySampleSize.js": function(e, t, o) {
-			var i = o("./node_modules/lodash/_baseClamp.js"),
-				s = o("./node_modules/lodash/_copyArray.js"),
-				r = o("./node_modules/lodash/_shuffleSelf.js");
-			e.exports = function(e, t) {
-				return r(s(e), i(t, 0, e.length))
-			}
-		},
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
 			e.exports = function(e, t, o) {
 				return e == e && (void 0 !== o && (e = e <= o ? e : o), void 0 !== t && (e = e >= t ? e : t)), e
+			}
+		},
+		"./node_modules/lodash/_baseDelay.js": function(e, t) {
+			var o = "Expected a function";
+			e.exports = function(e, t, i) {
+				if ("function" != typeof e) throw new TypeError(o);
+				return setTimeout((function() {
+					e.apply(void 0, i)
+				}), t)
 			}
 		},
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -656,29 +657,6 @@
 				})), o
 			}
 		},
-		"./node_modules/lodash/_baseSampleSize.js": function(e, t, o) {
-			var i = o("./node_modules/lodash/_baseClamp.js"),
-				s = o("./node_modules/lodash/_shuffleSelf.js"),
-				r = o("./node_modules/lodash/values.js");
-			e.exports = function(e, t) {
-				var o = r(e);
-				return s(o, i(t, 0, o.length))
-			}
-		},
-		"./node_modules/lodash/_shuffleSelf.js": function(e, t, o) {
-			var i = o("./node_modules/lodash/_baseRandom.js");
-			e.exports = function(e, t) {
-				var o = -1,
-					s = e.length,
-					r = s - 1;
-				for (t = void 0 === t ? s : t; ++o < t;) {
-					var n = i(o, r),
-						a = e[n];
-					e[n] = e[o], e[o] = a
-				}
-				return e.length = t, e
-			}
-		},
 		"./node_modules/lodash/clamp.js": function(e, t, o) {
 			var i = o("./node_modules/lodash/_baseClamp.js"),
 				s = o("./node_modules/lodash/toNumber.js");
@@ -686,12 +664,12 @@
 				return void 0 === o && (o = t, t = void 0), void 0 !== o && (o = (o = s(o)) == o ? o : 0), void 0 !== t && (t = (t = s(t)) == t ? t : 0), i(s(e), t, o)
 			}
 		},
-		"./node_modules/lodash/flatMap.js": function(e, t, o) {
-			var i = o("./node_modules/lodash/_baseFlatten.js"),
-				s = o("./node_modules/lodash/map.js");
-			e.exports = function(e, t) {
-				return i(s(e, t), 1)
-			}
+		"./node_modules/lodash/defer.js": function(e, t, o) {
+			var i = o("./node_modules/lodash/_baseDelay.js"),
+				s = o("./node_modules/lodash/_baseRest.js")((function(e, t) {
+					return i(e, 1, t)
+				}));
+			e.exports = s
 		},
 		"./node_modules/lodash/random.js": function(e, t, o) {
 			var i = o("./node_modules/lodash/_baseRandom.js"),
@@ -724,16 +702,6 @@
 				return u(e, r(t, 4), o, c, s)
 			}
 		},
-		"./node_modules/lodash/sampleSize.js": function(e, t, o) {
-			var i = o("./node_modules/lodash/_arraySampleSize.js"),
-				s = o("./node_modules/lodash/_baseSampleSize.js"),
-				r = o("./node_modules/lodash/isArray.js"),
-				n = o("./node_modules/lodash/_isIterateeCall.js"),
-				a = o("./node_modules/lodash/toInteger.js");
-			e.exports = function(e, t, o) {
-				return t = (o ? n(e, t, o) : void 0 === t) ? 1 : a(t), (r(e) ? i : s)(e, t)
-			}
-		},
 		"./node_modules/lodash/times.js": function(e, t, o) {
 			var i = o("./node_modules/lodash/_baseTimes.js"),
 				s = o("./node_modules/lodash/_castFunction.js"),
@@ -748,6 +716,14 @@
 				t = s(t), e -= a;
 				for (var l = i(c, t); ++o < e;) t(o);
 				return l
+			}
+		},
+		"./node_modules/lodash/uniqueId.js": function(e, t, o) {
+			var i = o("./node_modules/lodash/toString.js"),
+				s = 0;
+			e.exports = function(e) {
+				var t = ++s;
+				return i(e) + t
 			}
 		},
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -824,4 +800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Subreddit.48beb026f0ff54421372.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~CollectionCommentsPage~CommentsPage.74fecf4322147c824f67.js.map
