@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.49b7f75d916deb98992d.js
-// Retrieved at 7/6/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6595e22a94913045b0a4.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1585,7 +1585,7 @@
 			})), r.d(t, "j", (function() {
 				return U
 			})), r.d(t, "l", (function() {
-				return L
+				return D
 			})), r.d(t, "d", (function() {
 				return R
 			})), r.d(t, "m", (function() {
@@ -1759,10 +1759,10 @@
 						actionInfo: a.chatPostActionInfo(e)
 					})
 				},
-				T = e => D("input", e),
-				U = () => D("add"),
-				L = () => D("remove"),
-				D = (e, t) => r => ({
+				T = e => L("input", e),
+				U = () => L("add"),
+				D = () => L("remove"),
+				L = (e, t) => r => ({
 					...m(r),
 					noun: e,
 					postComposer: {
@@ -1919,9 +1919,9 @@
 			})), r.d(t, "i", (function() {
 				return U
 			})), r.d(t, "j", (function() {
-				return L
-			})), r.d(t, "g", (function() {
 				return D
+			})), r.d(t, "g", (function() {
+				return L
 			})), r.d(t, "b", (function() {
 				return A
 			})), r.d(t, "a", (function() {
@@ -2090,7 +2090,7 @@
 							Object(I.a)(q(r, i)(t));
 							break;
 						case n.Jb.INBOX_PAGES:
-							p && D(t);
+							p && L(t);
 							break;
 						case n.Jb.MODERATION_PAGES:
 							p && U(t, !0, d ? d.subredditName : null, d ? d.profileName : null);
@@ -2099,7 +2099,7 @@
 							p && X(t, !0);
 							break;
 						case n.Jb.MODQUEUE_PAGES:
-							p && L(t, d ? d.subredditName : null, d ? d.profileName : null);
+							p && D(t, d ? d.subredditName : null, d ? d.profileName : null);
 							break;
 						case n.Jb.SUBREDDIT_LEADERBOARD:
 							p && Object(I.a)(J()(t));
@@ -2306,24 +2306,24 @@
 							success: t
 						}),
 						profile: y.profileById(e, Object(p.m)(e, i)),
-						subreddit: y.subredditById(e, Object(m.F)(e, r)),
+						subreddit: y.subredditById(e, Object(m.D)(e, r)),
 						userSubreddit: y.userSubreddit(e),
 						adblock: y.adblock(e)
 					})
 				},
-				L = (e, t, r) => {
+				D = (e, t, r) => {
 					Object(I.a)({
 						source: "global",
 						action: "view",
 						noun: "screen",
 						...k(e),
 						profile: y.profileById(e, Object(p.m)(e, r)),
-						subreddit: y.subredditById(e, Object(m.F)(e, t)),
+						subreddit: y.subredditById(e, Object(m.D)(e, t)),
 						userSubreddit: y.userSubreddit(e),
 						adblock: y.adblock(e)
 					})
 				},
-				D = e => {
+				L = e => {
 					Object(I.a)({
 						source: "global",
 						action: "view",
@@ -2544,9 +2544,9 @@
 			})), r.d(t, "o", (function() {
 				return U
 			})), r.d(t, "n", (function() {
-				return L
-			})), r.d(t, "l", (function() {
 				return D
+			})), r.d(t, "l", (function() {
+				return L
 			})), r.d(t, "m", (function() {
 				return R
 			})), r.d(t, "b", (function() {
@@ -2845,11 +2845,11 @@
 					},
 					subreddit: a.subreddit(r)
 				}),
-				L = (e, t, r, i, o) => s => ({
+				D = (e, t, r, i, o) => s => ({
 					...P(s, t, r, i, e, o),
 					action: n.c.VIEW
 				}),
-				D = (e, t, r, i) => o => ({
+				L = (e, t, r, i) => o => ({
 					...f(o, r),
 					source: d,
 					action: "view",
@@ -3129,4 +3129,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.49b7f75d916deb98992d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6595e22a94913045b0a4.js.map

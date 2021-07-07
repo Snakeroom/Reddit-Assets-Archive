@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.e578f9c083c0d447ecd8.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.6aecafda39686c0c5e3a.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -318,7 +318,7 @@
 					measureScrollFPS: $.d.measureScrollFPS,
 					layout: I.O,
 					loadMore: Z.d,
-					subredditsById: z.bb,
+					subredditsById: z.Z,
 					viewportDataLoaded: Y.a,
 					commentsById: Q.q,
 					itemIds: Z.f,
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.e578f9c083c0d447ecd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.6aecafda39686c0c5e3a.js.map

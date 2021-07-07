@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e68bfeb60db9cc43de59.js
-// Retrieved at 7/1/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.10d138ec4dd93aafee47.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -365,10 +365,10 @@
 				}, ie = (e, t) => async (a, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(m.a.BAN_USER)(s) && !Object(C.R)(s, {
+						if (!Object(w.b)(m.a.BAN_USER)(s) && !Object(C.P)(s, {
 								subredditId: e
 							})) {
-							const t = Object(C.U)(s, {
+							const t = Object(C.S)(s, {
 								subredditId: e
 							});
 							await a(Object(d.o)(t.name))
@@ -1419,7 +1419,7 @@
 					}) => t ? Object(h.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.fb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.db)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(u.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const a = Object(u.h)(e, {
@@ -2344,7 +2344,7 @@
 				n = a("./src/reddit/actions/subscription/index.ts"),
 				o = a("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: o.gb
+				userIsSubscriber: o.eb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2629,4 +2629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e68bfeb60db9cc43de59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.10d138ec4dd93aafee47.js.map

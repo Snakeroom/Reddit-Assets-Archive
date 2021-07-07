@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.f2d0ff6aea41392a32a5.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.5d1a33adbe5c838e91e9.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1769,18 +1769,18 @@
 						f: s,
 						t: r
 					} = e, o = [];
-					if (!s) return W(0, r, t);
+					if (!s) return F(0, r, t);
 					const i = Object(n.a)(r);
 					let a = 0,
 						d = 0;
 					const c = s.length;
 					for (; a < c; a++) {
 						const [e, t, n] = s[a], c = t + n, l = i[t], u = i[c] - l;
-						l > d && o.push(W(0, r.substr(d, l - d), `between${a}`)), o.push(W(e, r.substr(l, u), a)), d = l + u
+						l > d && o.push(F(0, r.substr(d, l - d), `between${a}`)), o.push(F(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && o.push(W(0, r.substr(d), `remaining${a}`)), o
+					return d < r.length && o.push(F(0, r.substr(d), `remaining${a}`)), o
 				},
-				F = {
+				W = {
 					[p.j.monospace]: d.h,
 					[p.j.bold]: d.b,
 					[p.j.italic]: d.f,
@@ -1789,9 +1789,9 @@
 					[p.j.subscript]: d.l,
 					[p.j.superscript]: d.m
 				},
-				W = (e, t, s) => {
+				F = (e, t, s) => {
 					let n = t;
-					return n = o()(F, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = o()(W, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -2191,7 +2191,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						c = Object(l.A)(e, {
+						c = Object(l.y)(e, {
 							subredditName: n
 						});
 					return c ? {
@@ -2345,7 +2345,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(i.Y)(e, {
+					const s = Object(i.W)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -2353,4 +2353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.f2d0ff6aea41392a32a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.5d1a33adbe5c838e91e9.js.map

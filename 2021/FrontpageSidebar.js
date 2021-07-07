@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.26844814632f459463dc.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.2eb4e9fb544ea30c34f6.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -155,7 +155,7 @@
 				O = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
-			const P = ({
+			const A = ({
 					to: e,
 					title: t
 				}) => d.a.createElement(T.a, {
@@ -166,7 +166,7 @@
 					to: e,
 					title: t
 				}, t)),
-				A = ({
+				P = ({
 					title: e,
 					isOpened: t,
 					isExpanded: n,
@@ -223,11 +223,11 @@
 					}, this.renderLink = ({
 						url: e,
 						title: t
-					}) => d.a.createElement(P, {
+					}) => d.a.createElement(A, {
 						key: t,
 						to: e,
 						title: t
-					}), this.renderSection = (e, t) => d.a.createElement(A, {
+					}), this.renderSection = (e, t) => d.a.createElement(P, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -605,7 +605,7 @@
 			}];
 			var we = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
 				Fe = n.n(we);
-			const Pe = () => {
+			const Ae = () => {
 					const e = `${Se.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = v.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
@@ -620,13 +620,13 @@
 						className: Fe.a.bannerText
 					}, t))
 				},
-				Ae = e => `/t/${e}?activeTab=communities`,
+				Pe = e => `/t/${e}?activeTab=communities`,
 				Ie = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Fe.a.itemContainer
 					}, d.a.createElement(Ce.a, {
-						to: Ae(e.topic.url),
+						to: Pe(e.topic.url),
 						onClick: () => e.sendEvent(Object(Te.c)(t))
 					}, t))
 				};
@@ -642,7 +642,7 @@
 						noGradient: !0,
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
-					}, d.a.createElement(Pe, null), d.a.createElement("div", {
+					}, d.a.createElement(Ae, null), d.a.createElement("div", {
 						className: Fe.a.container
 					}, n.map(e => d.a.createElement(Ie, {
 						key: e.url,
@@ -691,10 +691,10 @@
 					},
 					bffsLeaderboardVariant: Ge,
 					inRpanTopVideoEntrypointExperiment: Me.e,
-					rankings: e => Object(Ve.P)(e, Ye),
+					rankings: e => Object(Ve.N)(e, Ye),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Me.e)(e),
-							n = !!Object(Ve.P)(e, Ye);
+							n = !!Object(Ve.N)(e, Ye);
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Je.K,
@@ -852,7 +852,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.M)(e, {
+						subredditOrProfile: Object(g.K)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.26844814632f459463dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.2eb4e9fb544ea30c34f6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f647a01902b2ccce7408.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.bdff173f06c68cf9becb.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2085,7 +2085,7 @@
 					apiContext: o
 				}) => {
 					const s = r(),
-						a = Object(m.U)(s, {
+						a = Object(m.S)(s, {
 							subredditId: e
 						}).name;
 					n(b());
@@ -2101,7 +2101,7 @@
 					apiContext: o
 				}) => {
 					const s = r(),
-						a = Object(m.U)(s, {
+						a = Object(m.S)(s, {
 							subredditId: e
 						}).name;
 					n(x());
@@ -2117,7 +2117,7 @@
 					apiContext: s
 				}) => {
 					const d = o(),
-						p = Object(m.U)(d, {
+						p = Object(m.S)(d, {
 							subredditId: t
 						}).name;
 					n(g());
@@ -2153,7 +2153,7 @@
 					apiContext: s
 				}) => {
 					const a = o(),
-						d = Object(m.U)(a, {
+						d = Object(m.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(j()), (await Object(c.b)(s(), e, d)).ok) {
@@ -2181,7 +2181,7 @@
 						d = Object(p.d)(a, {
 							subredditId: t
 						}).templateIds,
-						f = Object(m.U)(a, {
+						f = Object(m.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(P({
@@ -2259,7 +2259,7 @@
 				imageData: r
 			}) => async (o, s, a) => {
 				const i = s(),
-					c = Object(_.U)(i, {
+					c = Object(_.S)(i, {
 						subredditId: e
 					});
 				if (!c) return !1;
@@ -2292,7 +2292,7 @@
 					...g
 				} = n;
 				let y = g;
-				const T = Object(_.U)(u, {
+				const T = Object(_.S)(u, {
 					subredditId: e
 				});
 				if (!T) return !1;
@@ -2365,7 +2365,7 @@
 				apiContext: o
 			}) => {
 				const s = r(),
-					a = Object(_.U)(s, {
+					a = Object(_.S)(s, {
 						subredditId: e
 					});
 				if (!a) return !1;
@@ -4996,4 +4996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f647a01902b2ccce7408.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.bdff173f06c68cf9becb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.69bfbb07e5300535a4cd.js
-// Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7898b10e23ba4d920c39.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2006,7 +2006,7 @@
 						Object(c.K)(l) || n.push(e(Object(a.r)()));
 						const u = Object(s.a)(d, null);
 						n.push(e(Object(r.subredditDataRequested)(u, d, {}))), await Promise.all(n);
-						const m = Object(i.F)(t(), d);
+						const m = Object(i.D)(t(), d);
 						await e(Object(o.a)({
 							subredditId: m,
 							skip: ["badges", "tips", "wallets"]
@@ -3955,7 +3955,7 @@
 						const n = Object(Qt.n)(e, {
 								pageLayer: t
 							}) || Ss.e,
-							s = Object(ks.A)(e, {
+							s = Object(ks.y)(e, {
 								subredditName: n
 							});
 						if (s) return {
@@ -4040,7 +4040,6 @@
 				multis: e => e.subscriptions.multiredditOrder.map(t => Object(qs.e)(e, t)).filter(Boolean),
 				multisPending: e => e.multireddits.api.forUser.pending || !e.multireddits.api.forUser.fetched,
 				profiles: e => e.subscriptions.profileOrder.map(t => e.profiles.models[t]).filter(Boolean),
-				isUserEnrolledInOldModmail: ks.n,
 				subscriptions: e => e.subscriptions.subredditOrder.map(t => e.subreddits.models[t]).filter(Boolean),
 				subscriptionsPending: e => e.subscriptions.api.pending || !e.subscriptions.api.fetched
 			});
@@ -4318,15 +4317,12 @@
 						}))
 					},
 					telemetryNoun: "mod_queue"
-				}), (e, t) => {
-					const n = !!(null == t ? void 0 : t.isUserEnrolledInOldModmail),
-						s = n ? "/message/moderator" : "https://mod.reddit.com/mail/all",
-						r = n ? "modmail" : "modmail_beta";
+				}), e => {
 					return {
 						id: ds.ModMail,
 						type: Ks.GenericLink,
 						model: {
-							url: s,
+							url: "https://mod.reddit.com/mail/all",
 							displayText: o.fbt._("Modmail", null, {
 								hk: "1BtYh4"
 							}).toString(),
@@ -4341,7 +4337,7 @@
 								hk: "2QQ3dU"
 							}))
 						},
-						telemetryNoun: r
+						telemetryNoun: "modmail_beta"
 					}
 				}];
 
@@ -4607,83 +4603,71 @@
 							i = Object(Gs.a)(e);
 						if (n.account) {
 							const c = n.account;
-							if ((n.favoriteSubreddits.length || n.favoriteProfiles.length || n.favoriteMultireddits.length) && (s.push({
-									id: "header-favorites",
-									type: Ks.Header,
-									model: {
-										displayText: o.fbt._("favorites", null, {
-											hk: "4Gg0k2"
-										}).toString()
-									}
-								}), n.favoriteSubreddits.forEach(e => s.push({
-									id: "fav" + e.id,
-									type: Ks.Subreddit,
-									model: e,
-									telemetryNoun: "community_favorite"
-								})), n.favoriteProfiles.forEach(e => s.push({
-									id: "fav" + e.id,
-									type: Ks.Profile,
-									model: e,
-									telemetryNoun: "community_favorite"
-								})), n.favoriteMultireddits.forEach(e => s.push({
-									id: "fav" + e.url,
-									type: Ks.Multi,
-									model: e,
-									telemetryNoun: "custom_feed"
-								}))), n.multisPending && s.push({
-									id: "multis-pending",
-									type: Ks.LoadingState,
-									model: {
-										displayText: ""
-									}
-								}), n.moderatingSubredditsPending) s.push({
+							(n.favoriteSubreddits.length || n.favoriteProfiles.length || n.favoriteMultireddits.length) && (s.push({
+								id: "header-favorites",
+								type: Ks.Header,
+								model: {
+									displayText: o.fbt._("favorites", null, {
+										hk: "4Gg0k2"
+									}).toString()
+								}
+							}), n.favoriteSubreddits.forEach(e => s.push({
+								id: "fav" + e.id,
+								type: Ks.Subreddit,
+								model: e,
+								telemetryNoun: "community_favorite"
+							})), n.favoriteProfiles.forEach(e => s.push({
+								id: "fav" + e.id,
+								type: Ks.Profile,
+								model: e,
+								telemetryNoun: "community_favorite"
+							})), n.favoriteMultireddits.forEach(e => s.push({
+								id: "fav" + e.url,
+								type: Ks.Multi,
+								model: e,
+								telemetryNoun: "custom_feed"
+							}))), n.multisPending && s.push({
+								id: "multis-pending",
+								type: Ks.LoadingState,
+								model: {
+									displayText: ""
+								}
+							}), n.moderatingSubredditsPending ? s.push({
 								id: "moderatingSubreddits-pending",
 								type: Ks.LoadingState,
 								model: {
 									displayText: ""
 								}
-							});
-							else if (n.moderatingSubreddits.length) {
-								if (s.push({
-										id: "header-moderating",
-										type: Ks.Header,
-										model: {
-											displayText: o.fbt._("moderating", null, {
-												hk: "2du7dx"
-											}).toString()
-										}
-									}), c.isMod) {
-									const {
-										isUserEnrolledInOldModmail: e
-									} = n;
-									$s.forEach(t => s.push(t(c, {
-										isUserEnrolledInOldModmail: e
-									})))
+							}) : n.moderatingSubreddits.length && (s.push({
+								id: "header-moderating",
+								type: Ks.Header,
+								model: {
+									displayText: o.fbt._("moderating", null, {
+										hk: "2du7dx"
+									}).toString()
 								}
-								s.push({
-									id: ds.ModListing,
-									type: Ks.GenericLink,
-									model: {
-										url: Ds.a,
-										displayText: "r/Mod",
-										icon: e => m.a.createElement(bs.a, Ws({
-											name: "mod_queue"
-										}, e)),
-										text: ({
-											className: e
-										}) => m.a.createElement("span", {
-											className: e
-										}, "r/Mod")
-									},
-									telemetryNoun: "r_mod"
-								}), n.moderatingSubreddits.forEach(e => s.push({
-									id: "mod" + e.id,
-									type: Ks.Subreddit,
-									model: e,
-									telemetryNoun: "community_moderate"
-								}))
-							}
-							n.multis.length > 0 && ((e, t, n) => {
+							}), c.isMod && $s.forEach(e => s.push(e(c))), s.push({
+								id: ds.ModListing,
+								type: Ks.GenericLink,
+								model: {
+									url: Ds.a,
+									displayText: "r/Mod",
+									icon: e => m.a.createElement(bs.a, Ws({
+										name: "mod_queue"
+									}, e)),
+									text: ({
+										className: e
+									}) => m.a.createElement("span", {
+										className: e
+									}, "r/Mod")
+								},
+								telemetryNoun: "r_mod"
+							}), n.moderatingSubreddits.forEach(e => s.push({
+								id: "mod" + e.id,
+								type: Ks.Subreddit,
+								model: e,
+								telemetryNoun: "community_moderate"
+							}))), n.multis.length > 0 && ((e, t, n) => {
 								e.push({
 									id: "header-multis",
 									type: Ks.Header,
@@ -7573,8 +7557,7 @@
 						className: Oa.a.moderationDropdown,
 						isOpen: e,
 						unreadNotifications: t.unreadNotifications,
-						sendEventWithName: t.sendEventWithName,
-						showLegacyModmailIcon: t.showLegacyModmailIcon
+						sendEventWithName: t.sendEventWithName
 					}))
 				})),
 				Tc = m.a.memo((function(e) {
@@ -7753,7 +7736,6 @@
 						pageLayer: t
 					}) => Object(Qt.K)(t) && !!Object(Pt.m)(e) && !Object(Pt.A)(e) && Object(Pt.K)(e) && !Object(Pt.I)(e),
 					shouldShowChangeUsernameModals: wc.c,
-					shouldShowLegacyModmailIcon: ks.n,
 					unreadNotifications: Pt.lb
 				}),
 				Bc = Object(p.b)(Uc, (e, t) => ({
@@ -7840,13 +7822,12 @@
 						resendEmail: P,
 						shouldOpenEmailVerificationTooltip: j,
 						shouldShowChangeUsernameModals: S,
-						shouldShowLegacyModmailIcon: _,
-						toggleChangeEmailModal: k,
-						unreadNotifications: w,
-						user: I
+						toggleChangeEmailModal: _,
+						unreadNotifications: k,
+						user: w
 					} = this.props, {
-						googleOneTapIFrame: M
-					} = this.state, N = !(!w || !w.hasUnreadModmail && !w.hasUnreadOldModmail), T = I && Object(vt.e)(I) || "", A = Object(v.a)({
+						googleOneTapIFrame: I
+					} = this.state, M = !(!k || !k.hasUnreadModmail && !k.hasUnreadOldModmail), N = w && Object(vt.e)(w) || "", T = Object(v.a)({
 						[Oa.a["m-responsive"]]: f
 					});
 					return m.a.createElement(gt.a, {
@@ -7857,13 +7838,12 @@
 						className: Oa.a.headerLinks,
 						id: Ic
 					}, h && m.a.createElement(Nc, {
-						isModerateIconLit: N,
+						isModerateIconLit: M,
 						moderationDropdownOpen: e === vc.a,
 						onOpenModerationDropdown: this.onOpenModerationDropdown,
 						sendEventWithName: this.sendEventWithName,
-						showLegacyModmailIcon: !!_,
-						unreadNotifications: w
-					}), I && m.a.createElement(u.Fragment, null, m.a.createElement(Tc, {
+						unreadNotifications: k
+					}), w && m.a.createElement(u.Fragment, null, m.a.createElement(Tc, {
 						onClickChat: this.onClickChat,
 						badgeCount: t,
 						hasUnreadMessages: a
@@ -7871,19 +7851,19 @@
 						sendNavClickInbox: this.sendNavClickInbox,
 						unreadCount: i,
 						pageUrl: null == E ? void 0 : E.url,
-						userId: I.id
+						userId: w.id
 					}) : m.a.createElement(Ac, {
 						onClickMail: this.onClickMail,
-						unreadNotifications: w
+						unreadNotifications: k
 					}), m.a.createElement(Fc, {
 						onClickCreatePost: this.onClickCreatePost
 					}), m.a.createElement("span", {
 						className: Oa.a.iconWrapper
 					}, m.a.createElement(pa.a, null)))), m.a.createElement(cc, {
 						className: Oa.a.headerUserDropdown,
-						googleOneTapIFrame: M,
+						googleOneTapIFrame: I,
 						onClick: x,
-						user: I,
+						user: w,
 						sendEventWithName: this.sendEventWithName
 					}), p && m.a.createElement("div", {
 						className: Oa.a.loggedInGoogleOneTap
@@ -7896,7 +7876,7 @@
 						email: r,
 						isOpen: j && l,
 						resendEmail: P,
-						toggleChangeEmailModal: k,
+						toggleChangeEmailModal: _,
 						tooltipId: Mc
 					}), m.a.createElement(ea, {
 						email: r,
@@ -7907,11 +7887,11 @@
 						openChangeUsernameModal: O,
 						openKeepUsernameModal: y,
 						tooltipId: Ic,
-						username: T
+						username: N
 					}), S && m.a.createElement(Zr.a, {
 						isResponsiveSettingsEnabled: f,
-						overlayClassName: A,
-						username: T,
+						overlayClassName: T,
+						username: N,
 						withOverlay: !0
 					}), m.a.createElement(Xr.a, {
 						confirmNavigate: this.confirmNavigate
@@ -11727,7 +11707,7 @@
 				if (Object(p.i)(e) || Object(h.kb)(e)) return;
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.F)(e, n);
+				const s = Object(b.D)(e, n);
 				if (!s) return;
 				if (Object(h.jb)(e, {
 						subredditId: s
@@ -11737,7 +11717,7 @@
 			}), (e, t) => {
 				const n = v(e, t);
 				if (!n) return;
-				const s = Object(b.x)(e, {
+				const s = Object(b.v)(e, {
 					subredditName: n
 				});
 				return s ? s.emojisCustomSize : void 0
@@ -11749,7 +11729,7 @@
 				if (Object(h.K)(e)) return !n.hideNSFW;
 				const s = v(e, t);
 				if (s) {
-					const t = Object(b.A)(e, {
+					const t = Object(b.y)(e, {
 						subredditName: s
 					});
 					return !(!t || !t.isNSFW)
@@ -15066,7 +15046,7 @@
 					if (n.type === Y.a) {
 						const s = e.getState(),
 							o = (s.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-							a = Object(sn.F)(s, o) || "",
+							a = Object(sn.D)(s, o) || "",
 							i = (s.subreddits.about[a] || {}).advertiserCategory;
 						r.trigger("pageview", {
 							...ft()(n.payload.location, "pathname", "search", "hash"),
@@ -15478,7 +15458,7 @@
 								queryParams: o
 							},
 							a = s.subredditName,
-							i = Object(sn.F)(n, a) || "";
+							i = Object(sn.D)(n, a) || "";
 						if (fn(i, {
 								country: n.meta.country
 							}), i) {
@@ -15498,13 +15478,13 @@
 						}), t(O(n)), t(y(Array.from(s)))
 					})(p));
 					const b = (m.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-						h = Object(sn.F)(m, b) || "";
+						h = Object(sn.D)(m, b) || "";
 					if (b) {
 						c.dispatch(C(h, b));
 						const e = Object(Nt.e)(m);
 						e && c.dispatch(x(e))
 					}
-					const g = Object(sn.F)(m, b) || "",
+					const g = Object(sn.D)(m, b) || "",
 						f = (m.subreddits.about[g] || {}).advertiserCategory;
 					if (r.setup({
 							jailUrl: "https://www.redditmedia.com/gtm/jail",
@@ -15523,7 +15503,7 @@
 									currentPage: r
 								} = t.platform,
 								a = (r.urlParams.subredditName || "").toLowerCase(),
-								d = Object(sn.F)(t, a) || "";
+								d = Object(sn.D)(t, a) || "";
 							if (fn(d, {
 									country: t.meta.country
 								}), r && r.meta) {
@@ -18307,4 +18287,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.69bfbb07e5300535a4cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7898b10e23ba4d920c39.js.map

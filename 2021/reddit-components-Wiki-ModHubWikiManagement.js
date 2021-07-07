@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.2f452299662fc096e498.js
-// Retrieved at 6/30/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.a4510c59f88d50cee7f6.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -433,7 +433,7 @@
 					hk: "2To19l"
 				})],
 				g = Object(r.c)({
-					subredditRules: m.T
+					subredditRules: m.R
 				}),
 				k = Object(a.b)(g);
 			class f extends o.a.Component {
@@ -1314,8 +1314,8 @@
 			var De = Be(Ae);
 			const Ue = Object(E.c)({
 				subredditSettings: (e, t) => {
-					const n = Object(_e.F)(e, t.subredditName);
-					return Object(_e.W)(e, n)
+					const n = Object(_e.D)(e, t.subredditName);
+					return Object(_e.U)(e, n)
 				},
 				wikiPageSettings: A.d
 			});
@@ -1813,7 +1813,7 @@
 			const J = Object(r.c)({
 				hasError: P.o,
 				hasWikiModPerms: (e, t) => {
-					const n = Object(N.A)(e, t);
+					const n = Object(N.y)(e, t);
 					return !!n && Object(_.i)(e, {
 						subredditId: n.id
 					})
@@ -2991,7 +2991,7 @@
 				j = n.n(O);
 			const W = Object(d.c)({
 					hasWikiModPerms: (e, t) => {
-						const n = Object(v.A)(e, t);
+						const n = Object(v.y)(e, t);
 						return !!n && Object(f.i)(e, {
 							subredditId: n.id
 						})
@@ -3362,4 +3362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.2f452299662fc096e498.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.a4510c59f88d50cee7f6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.bbbd937b6b49c247aede.js
-// Retrieved at 6/30/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.e6b9e21d236c29fb528e.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -374,7 +374,7 @@
 				v = e => async (t, s) => {
 					t(p());
 					const i = s(),
-						o = Object(c.U)(i, {
+						o = Object(c.S)(i, {
 							subredditId: e
 						}).name,
 						u = i.structuredStyles.models[e],
@@ -529,7 +529,7 @@
 					});
 					if (u.ok) {
 						const n = t(),
-							a = u.body && u.body.length ? u.body.map(e => Object(d.F)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							a = u.body && u.body.length ? u.body.map(e => Object(d.D)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(h({
 							subredditIds: a
 						}))
@@ -756,7 +756,7 @@
 				b = n("./src/reddit/selectors/subreddit.ts");
 			const f = (e, t) => {
 				const n = Object(g.a)(e, t),
-					a = Object(b.J)(e, t);
+					a = Object(b.H)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -795,7 +795,7 @@
 			}));
 			const x = (e, t) => {
 				const n = Object(g.a)(e, t),
-					a = Object(b.J)(e, t);
+					a = Object(b.H)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -821,7 +821,7 @@
 				}
 			}));
 			var _ = Object(s.b)(() => Object(i.c)({
-					subreddit: b.U
+					subreddit: b.S
 				}))(e => r.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -928,7 +928,7 @@
 				})
 			};
 			var I = Object(s.b)(() => Object(i.c)({
-				subreddit: b.U
+				subreddit: b.S
 			}))(e => r.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -941,7 +941,7 @@
 				}
 			}));
 			var w = Object(s.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(b.M)(e, {
+				subredditOrProfile: (e, t) => Object(b.K)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(h, {
@@ -958,7 +958,7 @@
 			var D = Object(s.b)(() => Object(i.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(b.U)(e, {
+				}) => t ? Object(b.S)(e, {
 					subredditId: t
 				}) : null
 			}))(e => r.a.createElement(h, {
@@ -1216,7 +1216,7 @@
 				isImportExportThemesEnabled: Y.d.importExportThemes,
 				isStylingRestrictedDueToQuarantine: J.j,
 				moderatorPermissions: Q.l,
-				subreddit: X.U
+				subreddit: X.S
 			});
 			class ee extends r.a.Component {
 				constructor() {
@@ -1765,7 +1765,7 @@
 						activeModalId: M.a,
 						draftStyles: (e, n) => St()(e.structuredStyles.draft, t),
 						savedStyles: (e, t) => e.structuredStyles.models[t.subredditId],
-						subreddit: X.U,
+						subreddit: X.S,
 						isExportPending: J.d
 					}),
 					a = Object(o.b)(n, (e, n) => ({
@@ -5005,7 +5005,7 @@
 					postFlairData: vs.d,
 					subredditName: (e, {
 						subredditId: t
-					}) => Object(X.U)(e, {
+					}) => Object(X.S)(e, {
 						subredditId: t
 					}).name
 				})),
@@ -5110,7 +5110,7 @@
 			const Ti = s.a.wrapped(Z.b, "FormElementDescription", Di.a),
 				Oi = Object(c.c)({
 					rulesWidget: re.h,
-					subreddit: X.U
+					subreddit: X.S
 				});
 			var ji = Object(o.b)(Oi, e => ({
 					refreshRulesWidget: (t, n) => e(Object(en.f)(t, n))
@@ -9099,4 +9099,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.bbbd937b6b49c247aede.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.e6b9e21d236c29fb528e.js.map

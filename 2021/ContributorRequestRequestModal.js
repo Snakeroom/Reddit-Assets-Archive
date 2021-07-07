@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.353fa5a283d97562fd08.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.a62f4d15ca5f38bf6c66.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -131,7 +131,7 @@
 			}
 			t.default = I.a.wrapped(Object(r.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
 				subredditAboutInfo: g.h,
-				restrictions: g.o,
+				restrictions: g.m,
 				subreddit: q.e,
 				subredditIcon: R.b
 			}), e => ({
@@ -319,4 +319,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.353fa5a283d97562fd08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.a62f4d15ca5f38bf6c66.js.map

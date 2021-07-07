@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ba49ec876cc0f04e94e6.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.08ba8ed1537275b90334.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -239,7 +239,7 @@
 				}) => {
 					const d = t && t.after || "",
 						c = t && t.before || "",
-						m = Object(f.F)(a(), e),
+						m = Object(f.D)(a(), e),
 						u = Object(b.d)(m, d, c);
 					if (!!a().pages.modHub.flairedUsers.userOrder[u]) return;
 					s(E());
@@ -268,7 +268,7 @@
 				}, k = Object(a.a)(x.l), y = Object(a.a)(x.k), S = Object(a.a)(x.j), O = (e, t) => async (s, a, {
 					gqlContext: i
 				}) => {
-					const d = Object(f.U)(a(), {
+					const d = Object(f.S)(a(), {
 						subredditId: e
 					}).name;
 					s(k());
@@ -292,7 +292,7 @@
 					apiContext: o
 				}) => {
 					const r = a(),
-						i = Object(f.U)(r, {
+						i = Object(f.S)(r, {
 							subredditId: t
 						}).name;
 					s(j());
@@ -327,7 +327,7 @@
 							applied: s
 						},
 						p = s && s.templateId,
-						b = Object(f.U)(i, {
+						b = Object(f.S)(i, {
 							subredditId: t
 						}),
 						x = s && Object(c.g)(s),
@@ -393,7 +393,7 @@
 						if (t && t.actions) {
 							const a = n(),
 								o = Object(_.b)(t.actions),
-								r = Object(k.F)(a, e),
+								r = Object(k.D)(a, e),
 								{
 									hasNextPage: i,
 									hasPreviousPage: d,
@@ -473,7 +473,7 @@
 				oe = e => async (t, s, {
 					gqlContext: n
 				}) => {
-					const a = Object(k.U)(s(), {
+					const a = Object(k.S)(s(), {
 						subredditId: e
 					}).name;
 					t(ne({
@@ -645,12 +645,12 @@
 				const ee = s(),
 					te = !!C && Object(ue.hb)(ee),
 					se = Object(he.H)(ee),
-					ne = C ? Object(k.X)(ee, {
+					ne = C ? Object(k.V)(ee, {
 						subredditName: C.toLowerCase()
 					}) : Object(pe.q)(ee, {
 						profileName: _.toLowerCase()
 					}),
-					ae = C && Object(k.F)(ee, C),
+					ae = C && Object(k.D)(ee, C),
 					de = _ && Object(pe.m)(ee, _),
 					ge = ae || de;
 				ae && !Object(be.b)(Z, ae) && await t(Object(R.g)(ae));
@@ -658,11 +658,11 @@
 					xe = Object(le.l)(ee, {
 						subredditId: ge
 					}),
-					Ee = C && Object(k.x)(ee, {
+					Ee = C && Object(k.v)(ee, {
 						subredditName: C
 					}),
 					ve = !(!Ee || !Ee.userIsContributor),
-					_e = Object(k.Z)(ee, {
+					_e = Object(k.X)(ee, {
 						subredditId: ge
 					});
 				if (Object(l.a)({
@@ -3579,9 +3579,9 @@
 				isChatPostsCreationEnabled: (e, t) => Object(_.c)(e, t.subredditId),
 				isEmployee: I.H,
 				notificationSettings: j.b,
-				restrictions: O.o,
-				settings: (e, t) => Object(O.W)(e, t.subredditId),
-				subreddit: O.U,
+				restrictions: O.m,
+				settings: (e, t) => Object(O.U)(e, t.subredditId),
+				subreddit: O.S,
 				selectedPrimaryTag: w.w,
 				hasSecondaryTags: w.p,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
@@ -4770,7 +4770,7 @@
 					ratingResponse: n,
 					subredditId: r,
 					children: g
-				} = e, f = null !== (t = Object(o.e)(e => Object(b.U)(e, {
+				} = e, f = null !== (t = Object(o.e)(e => Object(b.S)(e, {
 					subredditId: r
 				}))) && void 0 !== t ? t : {}, x = Object(c.a)();
 				return a.a.createElement("div", {
@@ -7004,10 +7004,10 @@
 				xe = m.a.wrapped(Q.f, "modalFooter", M.a),
 				Ee = m.a.wrapped(C.i, "modalSubmitButton", M.a),
 				ve = Object(c.c)({
-					emojisCustomSize: (e, t) => Object($.x)(e, {
+					emojisCustomSize: (e, t) => Object($.v)(e, {
 						subredditName: t.subreddit.name
 					}).emojisCustomSize,
-					isEmojisEnabled: (e, t) => Object($.x)(e, {
+					isEmojisEnabled: (e, t) => Object($.v)(e, {
 						subredditName: t.subreddit.name
 					}).emojisEnabled
 				}),
@@ -7699,7 +7699,7 @@
 					backgroundImage: e.url
 				}), d.a.createElement(gs, null, e.emojiName)),
 				Es = Object(c.c)({
-					emojisCustomSize: (e, t) => Object($.x)(e, {
+					emojisCustomSize: (e, t) => Object($.v)(e, {
 						subredditName: t.subreddit.name
 					}).emojisCustomSize
 				}),
@@ -9567,7 +9567,7 @@
 						gqlContext: n
 					}) => {
 						const a = s(),
-							o = Object(u.F)(a, e);
+							o = Object(u.D)(a, e);
 						if (a.pages.modHub.moderationLog.moderators[o]) return;
 						const r = await Object(c.b)(n(), e);
 						if (r.body) {
@@ -11921,7 +11921,7 @@
 				removalReasons: v.c,
 				subredditName: (e, {
 					subredditId: t
-				}) => Object(_.U)(e, {
+				}) => Object(_.S)(e, {
 					subredditId: t
 				}).name
 			}), T = Object(o.b)(N, I), M = d.a.wrapped(c.a, "CharacterCountdown", S.a), P = d.a.div("EmptyState", S.a), R = d.a.wrapped(m.n, "ModNoteDescription", S.a), F = d.a.wrapped(u.i, "PrimaryButton", S.a), A = d.a.wrapped(h.a, "RadioOption", S.a), D = d.a.span("BoldText", S.a), L = d.a.wrapped(m.s, "ModNoteInput", S.a), U = d.a.wrapped(m.s, "MessageInput", S.a), B = d.a.wrapped(f.a, "Info", S.a), H = d.a.div("SmallInfoText", S.a), W = d.a.div("FormOptionsContainer", S.a), Z = d.a.wrapped(m.f, "ModalFooter", S.a), V = d.a.div("FooterRow", S.a), q = d.a.wrapped(V, "ButtonRow", S.a);
@@ -14990,7 +14990,7 @@
 				C = (e, t) => async (s, a, {
 					apiContext: o
 				}) => {
-					const r = Object(v.U)(a(), {
+					const r = Object(v.S)(a(), {
 							subredditId: e
 						}).name,
 						i = `success-block-${t.rule}`,
@@ -15018,10 +15018,10 @@
 				}, k = Object(h.a)(g.f), y = Object(h.a)(g.g), S = Object(h.a)(g.d), O = (e, t) => async (s, a, {
 					apiContext: o
 				}) => {
-					const r = Object(v.U)(a(), {
+					const r = Object(v.S)(a(), {
 							subredditId: e
 						}).name,
-						i = Object(v.Q)(a(), {
+						i = Object(v.O)(a(), {
 							subredditId: e
 						}),
 						d = `success-block-${e}`,
@@ -15126,7 +15126,7 @@
 					updateRule: (s, a) => e(((e, t, s) => async (a, o, {
 						apiContext: r
 					}) => {
-						const i = Object(v.U)(o(), {
+						const i = Object(v.S)(o(), {
 								subredditId: e
 							}).name,
 							d = `success-block-${t.rule}`,
@@ -15474,11 +15474,11 @@
 					}),
 					isConfirmModalOpen: e => "SubredditRule--Modal--DeleteConfirmation" === Object(W.a)(e),
 					isRuleEditorOpen: e => "SubredditRule--Editor--Modal" === Object(W.a)(e),
-					isSubredditRulesPending: e => Object(v.S)(e),
-					ruleOrder: (e, t) => Object(v.Q)(e, {
+					isSubredditRulesPending: e => Object(v.Q)(e),
+					ruleOrder: (e, t) => Object(v.O)(e, {
 						subredditId: t.subreddit.id
 					}),
-					subredditRules: (e, t) => Object(v.T)(e, {
+					subredditRules: (e, t) => Object(v.R)(e, {
 						subredditId: t.subreddit.id
 					})
 				}),
@@ -15486,10 +15486,10 @@
 					removeRule: (s, a) => e(((e, t, s) => async (a, o, {
 						apiContext: r
 					}) => {
-						const i = Object(v.U)(o(), {
+						const i = Object(v.S)(o(), {
 								subredditId: e
 							}).name,
-							d = Object(v.T)(o(), {
+							d = Object(v.R)(o(), {
 								subredditId: e
 							})[s],
 							l = `success-block-${t}`,
@@ -18577,11 +18577,6 @@
 			const Ae = Object(d.c)({
 				isBadgesAndEmotesEnabled: V.d.spCustomBadgesAndEmotes,
 				isContentTagEnabled: (e, t) => !!e.subreddits.survey[t.subreddit.id],
-				isUsingNewModMail: (e, {
-					subreddit: t
-				}) => Object(N.m)(e, {
-					subredditId: t.id
-				}),
 				isEligibleForScheduledPosts: V.d.scheduledPosts,
 				isEmailInviteExperimentEnabled: J.a,
 				isBroadcastingEnabled: (e, {
@@ -18589,16 +18584,13 @@
 				}) => Object(I.c)(e, t.id),
 				isTournamentsEnabled: (e, {
 					subreddit: t
-				}) => Object(N.O)(e, {
+				}) => Object(N.M)(e, {
 					subredditId: t.id
 				})
 			});
 			class De extends r.a.Component {
 				constructor(e, t) {
-					super(e, t), this.trackClick = e => this.props.sendEvent(y.b(e)), this.trackCommunitySettingsNavItemClick = e => this.props.sendEvent(Object(z.a)(e)), this.onClickAwards = () => this.trackClick("awards"), this.onClickStreaming = () => this.trackClick("streaming"), this.onClickModQueue = () => this.trackClick("mod_queue"), this.onClickReports = () => this.trackClick("reports"), this.onClickSpam = () => this.trackClick("spam"), this.onClickEdited = () => this.trackClick("edited"), this.onClickUnmoderated = () => this.trackClick("unmoderated"), this.onClickBannedUsers = () => this.trackClick("ban_users"), this.onClickMutedUsers = () => this.trackClick("mute_users"), this.onClickApprovedSubmitters = () => this.trackClick("approved_submitters"), this.onClickEmojis = () => this.trackClick("emoji"), this.onClickModerators = () => this.trackClick("moderators"), this.onClickChatSettings = () => this.trackClick("chat_settings"), this.onClickCommunitySettings = () => this.trackClick("community_settings"), this.onClickCommunityAppearance = () => this.trackClick("community_appearance"), this.onClickModMail = () => {
-						const e = this.props.isUsingNewModMail ? "mod_mail" : "old_modmail";
-						this.trackClick(e)
-					}, this.onClickRemovalReasons = () => this.trackClick("removal_reasons"), this.onClickRules = () => this.trackClick("rules"), this.onClickPostRequirements = () => this.trackClick("post_requirements"), this.onClickAutomodConfig = () => this.trackClick("automod_config"), this.onClickWikiPages = () => this.trackClick("wiki"), this.onClickTraffic = () => this.trackClick("traffic"), this.onClickModLog = () => this.trackClick("mod_log"), this.onClickModSupport = () => this.trackClick("r_mod_support"), this.onClickModHelp = () => this.trackClick("mod_help"), this.onClickContactReddit = () => this.trackClick("contact_reddit"), this.onClickModGuidelines = () => this.trackClick("mod_guidelines"), this.onClickModHelpCenter = () => this.trackClick("mod_help_center"), this.onClickPostFlair = () => this.trackClick("post_flair"), this.onClickUserFlair = () => this.trackClick("user_flair"), this.onClickGrantUserFlair = () => this.trackClick("grant_user_flair"), this.onClickBadges = () => this.trackClick("badges"), this.onClickEmotes = () => this.trackClick("emotes"), this.onClickScheduledPosts = () => this.props.sendEvent(Object(K.k)()), this.onClickEventPosts = () => this.props.sendEvent(Object(K.f)()), this.onClickPredictions = () => this.trackClick("predictions"), this.onGoToModHub = () => {
+					super(e, t), this.trackClick = e => this.props.sendEvent(y.b(e)), this.trackCommunitySettingsNavItemClick = e => this.props.sendEvent(Object(z.a)(e)), this.onClickAwards = () => this.trackClick("awards"), this.onClickStreaming = () => this.trackClick("streaming"), this.onClickModQueue = () => this.trackClick("mod_queue"), this.onClickReports = () => this.trackClick("reports"), this.onClickSpam = () => this.trackClick("spam"), this.onClickEdited = () => this.trackClick("edited"), this.onClickUnmoderated = () => this.trackClick("unmoderated"), this.onClickBannedUsers = () => this.trackClick("ban_users"), this.onClickMutedUsers = () => this.trackClick("mute_users"), this.onClickApprovedSubmitters = () => this.trackClick("approved_submitters"), this.onClickEmojis = () => this.trackClick("emoji"), this.onClickModerators = () => this.trackClick("moderators"), this.onClickChatSettings = () => this.trackClick("chat_settings"), this.onClickCommunitySettings = () => this.trackClick("community_settings"), this.onClickCommunityAppearance = () => this.trackClick("community_appearance"), this.onClickModMail = () => this.trackClick("mod_mail"), this.onClickRemovalReasons = () => this.trackClick("removal_reasons"), this.onClickRules = () => this.trackClick("rules"), this.onClickPostRequirements = () => this.trackClick("post_requirements"), this.onClickAutomodConfig = () => this.trackClick("automod_config"), this.onClickWikiPages = () => this.trackClick("wiki"), this.onClickTraffic = () => this.trackClick("traffic"), this.onClickModLog = () => this.trackClick("mod_log"), this.onClickModSupport = () => this.trackClick("r_mod_support"), this.onClickModHelp = () => this.trackClick("mod_help"), this.onClickContactReddit = () => this.trackClick("contact_reddit"), this.onClickModGuidelines = () => this.trackClick("mod_guidelines"), this.onClickModHelpCenter = () => this.trackClick("mod_help_center"), this.onClickPostFlair = () => this.trackClick("post_flair"), this.onClickUserFlair = () => this.trackClick("user_flair"), this.onClickGrantUserFlair = () => this.trackClick("grant_user_flair"), this.onClickBadges = () => this.trackClick("badges"), this.onClickEmotes = () => this.trackClick("emotes"), this.onClickScheduledPosts = () => this.props.sendEvent(Object(K.k)()), this.onClickEventPosts = () => this.props.sendEvent(Object(K.f)()), this.onClickPredictions = () => this.trackClick("predictions"), this.onGoToModHub = () => {
 						const e = this.props.moderatorPermissions && this.props.moderatorPermissions.posts,
 							t = `${this.props.subreddit.url}about/`,
 							s = e ? `${t}modqueue` : t;
@@ -18933,7 +18925,7 @@
 									hk: "3Xkgqo"
 								}),
 								onClick: this.onClickModMail,
-								path: e.isUsingNewModMail ? "https://mod.reddit.com" : `${B.a.redditUrl}/message/moderator/`
+								path: "https://mod.reddit.com"
 							})), e.moderatorPermissions.config && !e.isProfile && r.a.createElement("div", {
 								className: ee.a.navSection
 							}, r.a.createElement("div", {
@@ -19037,7 +19029,7 @@
 						const {
 							subredditName: n,
 							profileName: a
-						} = t.match.params, o = n ? Object(N.F)(e, n) : null === (s = Object(w.j)(e, {
+						} = t.match.params, o = n ? Object(N.D)(e, n) : null === (s = Object(w.j)(e, {
 							profileName: a
 						})) || void 0 === s ? void 0 : s.id;
 						if (o) return Object(O.l)(e, {
@@ -19051,7 +19043,7 @@
 							subredditName: s
 						} = t.match.params;
 						if (s) {
-							const t = Object(N.x)(e, {
+							const t = Object(N.v)(e, {
 								subredditName: s
 							});
 							if (t) return t.userIsContributor
@@ -19060,7 +19052,7 @@
 					}
 				}),
 				Xe = Object(d.c)({
-					subreddit: (e, t) => t.match.params.subredditName ? Object(N.A)(e, {
+					subreddit: (e, t) => t.match.params.subredditName ? Object(N.y)(e, {
 						subredditName: t.match.params.subredditName
 					}) : Object(w.j)(e, {
 						profileName: t.match.params.profileName
@@ -19969,4 +19961,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ba49ec876cc0f04e94e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.08ba8ed1537275b90334.js.map

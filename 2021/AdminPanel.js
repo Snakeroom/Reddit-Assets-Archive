@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.f81f01550e4c902fe74f.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.7d25733a796907c5d350.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -1163,7 +1163,7 @@
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(In.A)(e, {
+							return Object(In.y)(e, {
 								subredditName: n
 							})
 						}
@@ -1189,7 +1189,7 @@
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(In.A)(e, {
+							return Object(In.y)(e, {
 								subredditName: n
 							})
 						}
@@ -1214,7 +1214,7 @@
 					const t = e.platform.currentPage;
 					if (t && t.meta && "subreddit" === t.meta.name) {
 						const n = t.urlParams.subredditName;
-						return Object(In.A)(e, {
+						return Object(In.y)(e, {
 							subredditName: n
 						})
 					}
@@ -1860,4 +1860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.f81f01550e4c902fe74f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.7d25733a796907c5d350.js.map

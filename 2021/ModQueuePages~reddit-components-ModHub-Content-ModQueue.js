@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.7064aa00afd7c66bcc52.js
-// Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c5cca200b52ba8732454.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -395,7 +395,7 @@
 					}) : null,
 					subreddit: (e, {
 						subredditName: t
-					}) => t ? Object(y.A)(e, {
+					}) => t ? Object(y.y)(e, {
 						subredditName: t
 					}) : null
 				}),
@@ -1034,7 +1034,7 @@
 					modQueueListingItems: Ce.d,
 					origin: ye.j,
 					selectedItems: Ce.g,
-					subredditId: (e, t) => t.subredditName ? Object(Ee.F)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(Ee.D)(e, t.subredditName) : null
 				}),
 				Mt = Object(d.b)(Rt, e => ({
 					addSelectedItems: t => e(Object(u.a)({
@@ -2104,4 +2104,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.7064aa00afd7c66bcc52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.c5cca200b52ba8732454.js.map

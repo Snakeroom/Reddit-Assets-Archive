@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b6ef4cd980cbaa9c4523.js
-// Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.27ce9eefeea1da9a28c0.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -655,7 +655,7 @@
 					apiContext: r
 				}) => {
 					const o = s(),
-						a = Object(p.U)(o, {
+						a = Object(p.S)(o, {
 							subredditId: e
 						}).name;
 					n(h());
@@ -671,7 +671,7 @@
 					apiContext: r
 				}) => {
 					const o = s(),
-						a = Object(p.U)(o, {
+						a = Object(p.S)(o, {
 							subredditId: e
 						}).name;
 					n(y());
@@ -687,7 +687,7 @@
 					apiContext: o
 				}) => {
 					const d = r(),
-						m = Object(p.U)(d, {
+						m = Object(p.S)(d, {
 							subredditId: t
 						}).name;
 					n(C());
@@ -723,7 +723,7 @@
 					apiContext: o
 				}) => {
 					const a = r(),
-						d = Object(p.U)(a, {
+						d = Object(p.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(w()), (await Object(c.b)(o(), e, d)).ok) {
@@ -751,7 +751,7 @@
 						d = Object(m.d)(a, {
 							subredditId: t
 						}).templateIds,
-						b = Object(p.U)(a, {
+						b = Object(p.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(T({
@@ -829,7 +829,7 @@
 				imageData: s
 			}) => async (r, o, a) => {
 				const i = o(),
-					c = Object(g.U)(i, {
+					c = Object(g.S)(i, {
 						subredditId: e
 					});
 				if (!c) return !1;
@@ -862,7 +862,7 @@
 					...C
 				} = n;
 				let O = C;
-				const j = Object(g.U)(u, {
+				const j = Object(g.S)(u, {
 					subredditId: e
 				});
 				if (!j) return !1;
@@ -935,7 +935,7 @@
 				apiContext: r
 			}) => {
 				const o = s(),
-					a = Object(g.U)(o, {
+					a = Object(g.S)(o, {
 						subredditId: e
 					});
 				if (!a) return !1;
@@ -1013,7 +1013,7 @@
 				f = Object(r.a)(a.x),
 				x = Object(r.a)(a.v),
 				g = (e, t, n) => async (s, r, o) => {
-					const a = Object(p.A)(r(), {
+					const a = Object(p.y)(r(), {
 						subredditName: e
 					});
 					if (a) return v(a, t, n)(s, r, o)
@@ -1711,7 +1711,7 @@
 			const Ne = d.a.img("SubredditIcon", ke.a),
 				Ie = Object(a.c)({
 					isHighFrequencyEnabled: pe,
-					notificationLevel: je.H,
+					notificationLevel: je.F,
 					spPollsEnabled: Ee.d.spPolls,
 					subredditInlineEditingEnabled: (e, {
 						subredditId: t
@@ -1720,7 +1720,7 @@
 					}),
 					tournamentsEnabled: (e, {
 						subredditId: t
-					}) => !!t && Object(je.O)(e, {
+					}) => !!t && Object(je.M)(e, {
 						subredditId: t
 					}),
 					userId: oe.h,
@@ -1728,7 +1728,7 @@
 						subredditName: t
 					}) => {
 						const n = t;
-						return Object(je.gb)(e, {
+						return Object(je.eb)(e, {
 							identifier: {
 								name: n,
 								type: "subreddit"
@@ -2779,7 +2779,7 @@
 						subreddit: n
 					} = t;
 					if (n && n.name) {
-						const t = Object(h.x)(e, {
+						const t = Object(h.v)(e, {
 							subredditName: n.name
 						});
 						return t && t.accountsActive
@@ -3561,7 +3561,7 @@
 				const t = Object(o.e)(t => Object(p.d)(t, {
 						subredditId: e
 					})),
-					n = Object(o.e)(t => Object(b.U)(t, {
+					n = Object(o.e)(t => Object(b.S)(t, {
 						subredditId: e
 					})),
 					s = Object(l.a)({
@@ -5296,8 +5296,8 @@
 					className: h.a.icon
 				}),
 				x = Object(i.c)({
-					subreddit: m.A,
-					subredditAboutInfo: m.x
+					subreddit: m.y,
+					subredditAboutInfo: m.v
 				}),
 				g = Object(a.b)(x);
 			t.a = g(e => {
@@ -5452,7 +5452,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const x = (e, t) => {
 				const n = Object(h.a)(e, t),
-					s = Object(f.J)(e, t);
+					s = Object(f.H)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -5491,7 +5491,7 @@
 			}));
 			const y = (e, t) => {
 				const n = Object(h.a)(e, t),
-					s = Object(f.J)(e, t);
+					s = Object(f.H)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -5517,7 +5517,7 @@
 				}
 			}));
 			var E = Object(o.b)(() => Object(a.c)({
-					subreddit: f.U
+					subreddit: f.S
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -5624,7 +5624,7 @@
 				})
 			};
 			var S = Object(o.b)(() => Object(a.c)({
-				subreddit: f.U
+				subreddit: f.S
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -5637,7 +5637,7 @@
 				}
 			}));
 			var w = Object(o.b)(() => Object(a.c)({
-				subredditOrProfile: (e, t) => Object(f.M)(e, {
+				subredditOrProfile: (e, t) => Object(f.K)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -5654,7 +5654,7 @@
 			var k = Object(o.b)(() => Object(a.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(f.U)(e, {
+				}) => t ? Object(f.S)(e, {
 					subredditId: t
 				}) : null
 			}))(e => r.a.createElement(p, {
@@ -9259,7 +9259,7 @@
 							listingKey: n
 						})
 					},
-					subreddit: me.A
+					subreddit: me.y
 				});
 			class ge extends i.a.Component {
 				constructor() {
@@ -9580,12 +9580,12 @@
 					showLeaderboard: it.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
 						subredditId: t
-					}) => Object(me.N)(e, {
+					}) => Object(me.L)(e, {
 						subredditId: t
-					}) && !Object(me.O)(e, {
+					}) && !Object(me.M)(e, {
 						subredditId: t
 					}),
-					widgets: me.s
+					widgets: me.q
 				}),
 				yt = Object(c.b)(gt);
 			class vt extends a.Component {
@@ -10402,7 +10402,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(y.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const n = Object(E.F)(e, t.listingName);
+							const n = Object(E.D)(e, t.listingName);
 							return Object(g.k)(e, {
 								subredditId: n
 							})
@@ -10418,14 +10418,14 @@
 						inSubredditOrProfile: r
 					}) => {
 						if (s) {
-							const t = Object(E.F)(e, n);
+							const t = Object(E.D)(e, n);
 							return Object(g.l)(e, {
 								subredditId: t
 							})
 						}
 						return Object(v.C)(e, t, n, r)
 					}),
-					subredditsById: E.bb,
+					subredditsById: E.Z,
 					viewportDataLoaded: _.a,
 					pageReferrer: p.R,
 					postListPlaceholderComponent: () => h.a,
@@ -10474,7 +10474,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				a = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: a.gb
+				userIsSubscriber: a.eb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -11185,7 +11185,7 @@
 				subredditsByName: Object(c.a)((e, t) => {
 					const n = {};
 					return t.subredditIcons && t.subredditIcons.map(t => {
-						n[t.subredditName] = Object(u.A)(e, {
+						n[t.subredditName] = Object(u.y)(e, {
 							subredditName: t.subredditName
 						})
 					}), n
@@ -12797,7 +12797,7 @@
 							subredditName: s,
 							[r]: n.id
 						},
-						d = Object(l.A)(e, {
+						d = Object(l.y)(e, {
 							subredditName: s
 						});
 					return d ? {
@@ -13902,7 +13902,7 @@
 			}), Ke = Object(m.c)({
 				isTopContentDismissed: Ne.Q
 			}), Ge = Object(m.c)({
-				subreddit: (e, t) => Object(ke.A)(e, {
+				subreddit: (e, t) => Object(ke.y)(e, {
 					subredditName: t.match.params.subredditName
 				})
 			}), Ye = Object(m.c)({
@@ -13985,7 +13985,7 @@
 					subreddit: i
 				} = Ge(e, t);
 				if (i) {
-					const t = Object(ke.D)(e, {
+					const t = Object(ke.B)(e, {
 						subredditId: i.id
 					});
 					return Object(y.d)(t)
@@ -13995,7 +13995,7 @@
 				const {
 					subredditName: n
 				} = t.match.params;
-				return Object(ke.Y)(e, {
+				return Object(ke.W)(e, {
 					subredditName: n
 				})
 			}), nt = Object(m.c)({
@@ -14031,7 +14031,7 @@
 				isReducedAnimation: Ie.c
 			}), rt = () => Object(m.a)(Ne.db, ze, Ve, Ke, Ye, Ge, (e, {
 				match: t
-			}) => Object(ke.x)(e, {
+			}) => Object(ke.v)(e, {
 				subredditName: t.params.subredditName
 			}), Je, (e, {
 				match: t
@@ -14507,7 +14507,7 @@
 					let s;
 					if (-1 === [o.R, "r/popular"].indexOf(t)) {
 						const r = t.replace(/^r\//, ""),
-							o = Object(a.F)(e, r),
+							o = Object(a.D)(e, r),
 							i = n.subreddit[o];
 						if (!i) return !1;
 						s = i
@@ -14941,7 +14941,7 @@
 			const i = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(o.U)(e, {
+						const t = Object(o.S)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -14954,14 +14954,14 @@
 				u = (e, t) => {
 					const n = m(e, t);
 					if (!n) return l;
-					const s = Object(o.Y)(e, {
+					const s = Object(o.W)(e, {
 						subredditName: n.name
 					});
 					return s && s.postIds && s.postIds.length ? s.postIds : l
 				},
 				m = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(o.U)(e, {
+					return n ? Object(o.S)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -15056,7 +15056,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(a.Y)(e, {
+					const n = Object(a.W)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -15143,4 +15143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b6ef4cd980cbaa9c4523.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.27ce9eefeea1da9a28c0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0340f2948c9c67472c38.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.508c3f04bbf3ec3597b3.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -178,7 +178,7 @@
 					apiContext: h
 				}) => {
 					let y = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(I.F)(l(), e.name),
+						id: Object(I.D)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -274,7 +274,7 @@
 					apiContext: s
 				}) => {
 					const o = r(),
-						i = Object(I.M)(o, {
+						i = Object(I.K)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -296,7 +296,7 @@
 							type: e.type,
 							name: i.name
 						},
-						g = () => Object(I.gb)(r(), {
+						g = () => Object(I.eb)(r(), {
 							identifier: j
 						});
 					(g() || (await t(R([j], !0)), g())) && ((await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
@@ -945,7 +945,7 @@
 					}) => Object(x.w)(e, t),
 					subredditName: (e, {
 						post: t
-					}) => Object(O.U)(e, {
+					}) => Object(O.S)(e, {
 						subredditId: t.belongsTo.id
 					}).name
 				})),
@@ -2501,7 +2501,7 @@
 				Q = e => e.features.comments.visitHighlightFilter,
 				Y = (e, t) => {
 					const r = Object(p.a)(e, t);
-					if (r) return Object(u.Z)(e, r)
+					if (r) return Object(u.X)(e, r)
 				},
 				Z = (e, {
 					postId: t
@@ -2579,4 +2579,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0340f2948c9c67472c38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.508c3f04bbf3ec3597b3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.a87717cc05b029d49d51.js
-// Retrieved at 6/28/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.41dbee0f29b5208c9a01.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -365,10 +365,10 @@
 				}, ie = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(v.R)(r, {
+						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(v.P)(r, {
 								subredditId: e
 							})) {
-							const t = Object(v.U)(r, {
+							const t = Object(v.S)(r, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
@@ -467,7 +467,7 @@
 					hk: "2To19l"
 				})],
 				x = Object(d.c)({
-					subredditRules: m.T
+					subredditRules: m.R
 				}),
 				f = Object(o.b)(x);
 			class g extends a.a.Component {
@@ -1185,4 +1185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.a87717cc05b029d49d51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.41dbee0f29b5208c9a01.js.map

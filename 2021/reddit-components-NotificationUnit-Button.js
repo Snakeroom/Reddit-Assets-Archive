@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dc26457461c8f1223582.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfb0cecc8e3a3590840e.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -2645,7 +2645,7 @@
 				z = e => e.features.comments.visitHighlightFilter,
 				X = (e, t) => {
 					const n = Object(b.a)(e, t);
-					if (n) return Object(u.Z)(e, n)
+					if (n) return Object(u.X)(e, n)
 				},
 				Z = (e, {
 					postId: t
@@ -2778,4 +2778,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dc26457461c8f1223582.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfb0cecc8e3a3590840e.js.map

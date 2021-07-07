@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.60252372ab52bdc6c89d.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0301a2b116b902eeb675.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -135,9 +135,9 @@
 			})), r.d(t, "h", (function() {
 				return M
 			})), r.d(t, "d", (function() {
-				return R
-			})), r.d(t, "e", (function() {
 				return D
+			})), r.d(t, "e", (function() {
+				return R
 			})), r.d(t, "k", (function() {
 				return B
 			}));
@@ -233,7 +233,7 @@
 					gqlContext: n
 				}) => {
 					const s = r(),
-						i = Object(m.F)(s, e);
+						i = Object(m.D)(s, e);
 					if (Object(h.j)(s, {
 							subredditId: i
 						})) return Object(h.f)(s, {
@@ -353,7 +353,7 @@
 						subredditId: t,
 						tournament: a.tournament
 					})), a.tournament
-				}, R = e => async (t, r, {
+				}, D = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = await Object(d.e)(n(), {
@@ -365,7 +365,7 @@
 					} = s.body.data;
 					if (!i.predictionChipPackages) throw new Error("Failed to fetch prediction chip packages");
 					return i.predictionChipPackages
-				}, D = e => async (t, r, {
+				}, R = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = await Object(d.f)(n(), {
@@ -1041,7 +1041,7 @@
 					w = Object(a.e)(e => Object(h.i)(e, {
 						subredditId: t
 					})),
-					j = Object(a.e)(e => Object(f.U)(e, {
+					j = Object(a.e)(e => Object(f.S)(e, {
 						subredditId: t
 					})),
 					E = Object(a.e)(e => Object(h.l)(e, {
@@ -1446,8 +1446,8 @@
 					rel: "noopener"
 				}, e.text))),
 				M = r("./src/reddit/actions/economics/predictions/index.ts"),
-				R = r("./src/reddit/contexts/PageLayer/selectors.ts"),
-				D = r("./src/reddit/helpers/trackers/predictions.ts"),
+				D = r("./src/reddit/contexts/PageLayer/selectors.ts"),
+				R = r("./src/reddit/helpers/trackers/predictions.ts"),
 				B = r("./src/reddit/hooks/usePageLayer.ts"),
 				A = r("./src/reddit/hooks/useTracking.ts"),
 				W = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
@@ -1462,12 +1462,12 @@
 				const t = Object(i.d)(),
 					r = Object(B.a)(),
 					a = Object(A.a)(),
-					o = Object(R.L)(r),
+					o = Object(D.L)(r),
 					[d, c] = Object(n.useState)(!1),
-					l = Object(i.e)(t => Object(H.U)(t, {
+					l = Object(i.e)(t => Object(H.S)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(H.O)(t, {
+					u = Object(i.e)(t => Object(H.M)(t, {
 						subredditId: e
 					})),
 					m = Object(i.e)(t => Object(W.c)(t, {
@@ -1477,7 +1477,7 @@
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
-					o && a(Object(D.x)())
+					o && a(Object(R.x)())
 				}, [o, a]), Object(n.useEffect)(() => {
 					(async () => {
 						u && !d && (t(Object(M.g)(l.name)), c(!0))
@@ -1485,7 +1485,7 @@
 				}, [u, d, t, l.name]), u && m ? s.a.createElement(O, {
 					className: x.a.predictionsFilter,
 					isActive: o,
-					onClick: () => a(Object(D.h)()),
+					onClick: () => a(Object(R.h)()),
 					to: `${l.url}predictions/`
 				}, z._("Predictions", null, {
 					hk: "Cv5GC"
@@ -1740,7 +1740,7 @@
 					url: e => Object(h.Y)(e)
 				}),
 				I = Object(o.c)({
-					subredditId: (e, t) => Object(j.F)(e, t.subredditName)
+					subredditId: (e, t) => Object(j.D)(e, t.subredditName)
 				}),
 				C = Object(a.b)(I),
 				N = l.a.div("WidgetContent", O.a),
@@ -1974,7 +1974,7 @@
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return Re
+				return De
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -2087,8 +2087,8 @@
 				M = {
 					isExpanded: !1
 				},
-				R = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
-				D = m.a.div("EventContainer", L.a),
+				D = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
+				R = m.a.div("EventContainer", L.a),
 				B = m.a.div("EventTitle", L.a),
 				A = m.a.div("EventDate", L.a),
 				W = m.a.div("EventLocation", L.a),
@@ -2121,16 +2121,16 @@
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, e.widget.data.map((t, r) => s.a.createElement(D, {
+				}, e.widget.data.map((t, r) => s.a.createElement(R, {
 					key: `${r}-${t.title}`
-				}, s.a.createElement(B, null, t.titleHtml ? s.a.createElement(R, {
+				}, s.a.createElement(B, null, t.titleHtml ? s.a.createElement(D, {
 					html: t.titleHtml
 				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(A, null, Object(S.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
 					const t = new Date(1e3 * e),
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(R, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(D, {
 					html: t.locationHtml
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(G, {
 					text: t.description
@@ -2267,7 +2267,7 @@
 				Oe = m.a.wrapped(ue.a, "InternalLink", fe.a),
 				Ee = m.a.div("LinkContainer", fe.a),
 				ye = Object(a.c)({
-					userIsBanned: be.eb,
+					userIsBanned: be.cb,
 					userIsLoggedIn: x.K
 				});
 			var ke = Object(i.b)(ye)(e => {
@@ -2345,7 +2345,7 @@
 				Fe = r("./src/reddit/components/Widgets/Base/index.tsx");
 			var Me = e => s.a.createElement(Fe.b, null, "This widget hasn't been implemented yet!");
 
-			function Re(e) {
+			function De(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
@@ -3164,4 +3164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.60252372ab52bdc6c89d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0301a2b116b902eeb675.js.map

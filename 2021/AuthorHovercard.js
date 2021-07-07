@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.b86443109c865a70526f.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.2e67fea1a6f492f347d3.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -91,7 +91,7 @@
 				}
 			};
 			const S = {};
-			var U = (e = S, t) => {
+			var P = (e = S, t) => {
 					switch (t.type) {
 						case w.o: {
 							const {
@@ -118,9 +118,9 @@
 							return e
 					}
 				},
-				P = Object(N.c)({
+				U = Object(N.c)({
 					error: k,
-					pending: U
+					pending: P
 				});
 			const B = {};
 			var A = (e = B, t) => {
@@ -271,7 +271,7 @@
 					}
 				},
 				V = Object(N.c)({
-					api: P,
+					api: U,
 					fetchedTokens: A,
 					inContext: F,
 					loadMore: H,
@@ -398,10 +398,10 @@
 				}, ce = (e, t) => async (n, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.R)(s, {
+						if (!Object(C.b)(u.a.BAN_USER)(s) && !Object(E.P)(s, {
 								subredditId: e
 							})) {
-							const t = Object(E.U)(s, {
+							const t = Object(E.S)(s, {
 								subredditId: e
 							});
 							await n(Object(d.o)(t.name))
@@ -530,20 +530,20 @@
 					hk: "40XHkp"
 				}),
 				S = Object(a.a)(l.c),
-				U = Object(a.a)(l.b),
-				P = Object(a.a)(l.a),
+				P = Object(a.a)(l.b),
+				U = Object(a.a)(l.a),
 				B = Object(a.a)(l.h),
 				A = (Object(a.a)(l.i), Object(a.a)(l.g), () => async (e, t, {
 					gqlContext: n
 				}) => {
 					const r = t();
 					if (!r.user.account || r.subscriptions.api.fetched) return;
-					e(U());
+					e(P());
 					const s = await (e => Object(v.a)(e, h))(n());
 					if (s.ok) {
 						const t = O(s.body.data);
 						e(S(t))
-					} else e(P({
+					} else e(U({
 						error: s.error
 					}))
 				}),
@@ -552,7 +552,7 @@
 					apiContext: h
 				}) => {
 					let v = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(w.F)(l(), e.name),
+						id: Object(w.D)(l(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -648,7 +648,7 @@
 					apiContext: r
 				}) => {
 					const a = n(),
-						o = Object(w.M)(a, {
+						o = Object(w.K)(a, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -670,7 +670,7 @@
 							type: e.type,
 							name: o.name
 						},
-						g = () => Object(w.gb)(n(), {
+						g = () => Object(w.eb)(n(), {
 							identifier: I
 						});
 					(g() || (await t(F([I], !0)), g())) && ((await ((e, t, n) => Object(p.a)(Object(b.a)(e, [f.a]), {
@@ -983,8 +983,8 @@
 				N = n("./src/reddit/components/SubscribeButton/index.tsx"),
 				k = n("./src/reddit/components/UserIcon/index.tsx"),
 				S = n("./src/reddit/helpers/trackers/authorHovercard.ts"),
-				U = n("./src/reddit/icons/fonts/Info/index.tsx"),
-				P = n("./src/reddit/icons/svgs/Admin/index.tsx");
+				P = n("./src/reddit/icons/fonts/Info/index.tsx"),
+				U = n("./src/reddit/icons/svgs/Admin/index.tsx");
 			var B = e => s.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 20 20",
@@ -1149,7 +1149,7 @@
 				ye = C.a.div("Container", re.a),
 				Ne = e => s.a.createElement("div", null, s.a.createElement("div", null, s.a.createElement(le, {
 					to: `/user/${e.userName}/`
-				}, `u/${e.userName}`), e.user.isEmployee && s.a.createElement(P.a, {
+				}, `u/${e.userName}`), e.user.isEmployee && s.a.createElement(U.a, {
 					className: re.a.adminIcon,
 					title: _.fbt._("Reddit admin", null, {
 						hk: "15wBTE"
@@ -1181,7 +1181,7 @@
 						href: T.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, s.a.createElement(U.a, {
+					}, s.a.createElement(P.a, {
 						className: re.a.infoIcon
 					})))), s.a.createElement(_e, null, s.a.createElement(ge, null, Object(O.b)(n.awarderKarma)), s.a.createElement(Oe, null, _.fbt._({
 						"*": "Awarder Karma",
@@ -1192,7 +1192,7 @@
 						href: T.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, s.a.createElement(U.a, {
+					}, s.a.createElement(P.a, {
 						className: re.a.infoIcon
 					}))))) : s.a.createElement(fe, null, s.a.createElement(ce, null), s.a.createElement(he, null, s.a.createElement(ge, null, Object(O.b)(n.postKarma)), s.a.createElement(Ce, null, _.fbt._({
 						"*": "Post Karma",
@@ -1237,8 +1237,8 @@
 						y = !!(null == r ? void 0 : r.snoovatarFullBodyAsset),
 						N = x.accountIcon || `${I.a.assetPath}/img/snoo_user_placeholder.png`,
 						k = l && l.flair,
-						U = l && l.access,
-						P = g && g.templateIds && g.templateIds.length > 0,
+						P = l && l.access,
+						U = g && g.templateIds && g.templateIds.length > 0,
 						B = g && g.displaySettings && g.displaySettings.isEnabled,
 						{
 							awardedLastMonth: A
@@ -1299,12 +1299,12 @@
 						},
 						getEventFactory: e => Object(S.g)(e ? "unfollow" : "follow", n),
 						small: !0
-					})), U && n && !j && f && s.a.createElement(Q, {
+					})), P && n && !j && f && s.a.createElement(Q, {
 						contextId: n,
 						subredditId: f,
 						sendEvent: m,
 						username: v
-					}), k && n && P && B && f && s.a.createElement(te, {
+					}), k && n && U && B && f && s.a.createElement(te, {
 						contextId: n,
 						subredditId: f,
 						sendEvent: m,
@@ -1313,17 +1313,17 @@
 						contextId: n,
 						subredditId: f,
 						user: x
-					}), !(U || i) && s.a.createElement(we, null))
+					}), !(P || i) && s.a.createElement(we, null))
 				},
-				Ue = Object(y.a)(Se),
-				Pe = e => {
+				Pe = Object(y.a)(Se),
+				Ue = e => {
 					const t = e.activeTooltipId === e.tooltipId;
-					return s.a.createElement(Ue, se({
+					return s.a.createElement(Pe, se({
 						isOpen: t
 					}, e))
 				};
-			Pe.WrappedComponent = Se;
-			var Be = Pe;
+			Ue.WrappedComponent = Se;
+			var Be = Ue;
 			const Ae = Object(o.c)({
 					activeTooltipId: f.a,
 					currentUser: h.j,
@@ -1351,7 +1351,7 @@
 					}) => t ? Object(v.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.fb)(e, t),
+					userIsBanned: (e, t) => !!Object(b.l)(t) && Object(b.db)(e, t),
 					userProfileStyles: (e, t) => Object(p.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(m.h)(e, {
@@ -1765,8 +1765,8 @@
 			}
 			const k = {},
 				S = "",
-				U = 0,
-				P = "200px",
+				P = 0,
+				U = "200px",
 				B = "250px",
 				A = 100,
 				T = .5,
@@ -1777,14 +1777,14 @@
 						notificationHeights: k,
 						currentNotificationCursorIndex: -1
 					}, this.resetOverflowMenu = () => {
-						this.props.activeOverflowMenuId.length > U && this.props.setActiveOverflowMenuId(S)
+						this.props.activeOverflowMenuId.length > P && this.props.setActiveOverflowMenuId(S)
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
 						} = this.state;
 						let t = 0;
 						for (const n in e) t += e[n];
-						return this.props.isInboxExposureBannerEnabled && (t += A), 0 === t ? this.props.isInboxExposureBannerEnabled ? B : P : t
+						return this.props.isInboxExposureBannerEnabled && (t += A), 0 === t ? this.props.isInboxExposureBannerEnabled ? B : U : t
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -2604,10 +2604,10 @@
 			}
 			const k = y("particleDelay", j.a),
 				S = y("particleX", j.a),
-				U = y("particleFloat", j.a),
-				P = () => {
+				P = y("particleFloat", j.a),
+				U = () => {
 					const e = N(S),
-						t = N(U),
+						t = N(P),
 						n = N(k);
 					return Object(o.a)(j.a.particle, e, t, n)
 				};
@@ -2626,7 +2626,7 @@
 				createParticle(e) {
 					return s.a.createElement("div", {
 						key: e,
-						className: `${P()}`
+						className: `${U()}`
 					})
 				}
 			}
@@ -2916,7 +2916,7 @@
 				a = n("./src/reddit/actions/subscription/index.ts"),
 				o = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(s.c)({
-				userIsSubscriber: o.gb
+				userIsSubscriber: o.eb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -3737,4 +3737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b86443109c865a70526f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2e67fea1a6f492f347d3.js.map

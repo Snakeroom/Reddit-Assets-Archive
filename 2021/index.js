@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.8c4da5a14549958fed1b.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.318172508113ca279fa1.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -78,7 +78,7 @@
 				isLastPrediction: n
 			}) => {
 				const o = Object(T.a)(),
-					s = Object(u.e)(e => Object(j.U)(e, {
+					s = Object(u.e)(e => Object(j.S)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(x.a, {
@@ -198,37 +198,37 @@
 					}(e, s, n);
 				if (!l) return null;
 				const {
-					options: U,
-					userSelection: V
+					options: V,
+					userSelection: F
 				} = l, {
-					endsAt: F,
+					endsAt: U,
 					title: H,
 					resolvedOptionId: K
-				} = e, Q = F < Date.now();
+				} = e, Q = U < Date.now();
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(r.a)(A.a.poll, {
 						[A.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
 					className: A.a.pollQuestion
-				}, H), U.map(e => i.a.createElement(P.a, {
+				}, H), V.map(e => i.a.createElement(P.a, {
 					key: `prediction-option-${e.id}`,
 					disabled: I,
 					isEnded: Q,
-					isSelected: V === e.id,
+					isSelected: F === e.id,
 					needsResolution: !1,
 					option: e,
 					onClick: () => D(e),
 					resolvedOptionId: K,
 					tournamentId: t,
-					userSelection: V,
+					userSelection: F,
 					userIsLoggedOut: !c,
-					votePercentage: (V || Q || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					votePercentage: (F || Q || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
 					isShowingHint: x
 				})), i.a.createElement(O.a, {
-					disabled: I || x || !!V,
+					disabled: I || x || !!F,
 					isEnded: Q,
-					userSelection: V,
+					userSelection: F,
 					isShowingHint: x,
 					tournamentId: t,
 					onReveal: () => j(!0)
@@ -243,27 +243,27 @@
 					subredditId: n,
 					tournamentId: t,
 					withOverlay: !0
-				}), !!V && i.a.createElement(_, {
+				}), !!F && i.a.createElement(_, {
 					postId: s.id,
 					subredditId: n,
 					isLastPrediction: d
 				}))
 			};
 			var M = n("./src/reddit/helpers/predictions/index.ts");
-			var U = n("./src/reddit/selectors/posts.ts"),
-				V = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				F = n.n(V);
+			var V = n("./src/reddit/selectors/posts.ts"),
+				F = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				U = n.n(F);
 			const {
 				fbt: H
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = ({
 				postId: e
 			}) => {
 				const t = Object(T.a)(),
-					n = Object(u.e)(t => Object(U.R)(t, {
+					n = Object(u.e)(t => Object(V.R)(t, {
 						postId: e
 					}));
 				return i.a.createElement(x.a, {
-					className: F.a.viewTournament,
+					className: U.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
 					onClick: () => t(Object(E.f)(e))
 				}, H._("Go to Tournament", null, {
@@ -301,4 +301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.8c4da5a14549958fed1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.318172508113ca279fa1.js.map

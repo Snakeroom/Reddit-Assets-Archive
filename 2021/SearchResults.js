@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7081ad309cbd768b4e0c.js
-// Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.b215dc5d055c25a1eb36.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -836,7 +836,7 @@
 				x = Object(n.a)(i.x),
 				f = Object(n.a)(i.v),
 				g = (e, t, s) => async (r, n, o) => {
-					const i = Object(p.A)(n(), {
+					const i = Object(p.y)(n(), {
 						subredditName: e
 					});
 					if (i) return y(i, t, s)(r, n, o)
@@ -1845,7 +1845,7 @@
 						comment: t
 					}) => !!Object(Fe.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const s = Object(We.J)(e, {
+						const s = Object(We.H)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -3167,7 +3167,7 @@
 						subredditId: t,
 						userId: s
 					})),
-					l = Object(o.e)(e => Object(d.U)(e, {
+					l = Object(o.e)(e => Object(d.S)(e, {
 						subredditId: t
 					}));
 				return n.a.createElement("div", {
@@ -5137,9 +5137,9 @@
 			const H = Object(k.t)(),
 				q = Object(u.c)({
 					hideNSFWPref: U.C,
-					subredditOrProfile: B.M,
-					subredditOrProfileAboutInfo: B.I,
-					userIsSubscriber: B.gb
+					subredditOrProfile: B.K,
+					subredditOrProfileAboutInfo: B.G,
+					userIsSubscriber: B.eb
 				}),
 				K = Object(m.b)(q),
 				z = H(K(e => {
@@ -6146,7 +6146,7 @@
 				we = Object(i.c)({
 					fromSubreddit: (e, t) => {
 						const s = Object(je.a)(e, t);
-						return s ? Object(S.A)(e, {
+						return s ? Object(S.y)(e, {
 							subredditName: s
 						}) : null
 					},
@@ -6278,7 +6278,7 @@
 			const ft = Object(i.c)({
 					comment: (e, t) => Object(ht.a)(e, t),
 					flair: pt.e,
-					subreddit: S.J
+					subreddit: S.H
 				}),
 				gt = Object(o.b)(ft),
 				vt = Object(Ue.b)(e => ({
@@ -6472,7 +6472,7 @@
 				post: (e, t) => Jt(e, t.searchDiscoveryUnit.postOrder),
 				subredditOrProfile: Object(Ue.a)((e, t) => {
 					const s = Jt(e, t.searchDiscoveryUnit.postOrder);
-					if (s) return Object(S.M)(e, {
+					if (s) return Object(S.K)(e, {
 						identifier: s.belongsTo
 					})
 				})
@@ -7434,11 +7434,11 @@
 				isLoggedIn: x.K,
 				subredditId: (e, {
 					listingName: t
-				}) => Object(b.F)(e, t),
+				}) => Object(b.D)(e, t),
 				postFlairWidgets: (e, {
 					listingName: t
 				}) => {
-					const s = Object(b.F)(e, t);
+					const s = Object(b.D)(e, t);
 					return Object(f.g)(e, {
 						subredditId: s
 					})
@@ -7487,11 +7487,11 @@
 					isLoggedIn: x.K,
 					subredditId: (e, {
 						listingName: t
-					}) => Object(b.F)(e, t),
+					}) => Object(b.D)(e, t),
 					postFlairWidgets: (e, {
 						listingName: t
 					}) => {
-						const s = Object(b.F)(e, t);
+						const s = Object(b.D)(e, t);
 						return Object(f.g)(e, {
 							subredditId: s
 						})
@@ -7726,7 +7726,7 @@
 					url: H.Y
 				}),
 				ae = Object(c.c)({
-					subreddit: Q.A,
+					subreddit: Q.y,
 					shouldSeeNSFW: Y.db
 				}),
 				ce = Object(i.b)(ae),
@@ -8449,7 +8449,7 @@
 					url: e => Object(b.Y)(e)
 				}),
 				I = Object(a.c)({
-					subredditId: (e, t) => Object(C.F)(e, t.subredditName)
+					subredditId: (e, t) => Object(C.D)(e, t.subredditName)
 				}),
 				S = Object(i.b)(I),
 				P = l.a.div("WidgetContent", E.a),
@@ -8779,7 +8779,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const s = Object(C.F)(e, t.listingName);
+							const s = Object(C.D)(e, t.listingName);
 							return Object(g.k)(e, {
 								subredditId: s
 							})
@@ -8795,14 +8795,14 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (r) {
-							const t = Object(C.F)(e, s);
+							const t = Object(C.D)(e, s);
 							return Object(g.l)(e, {
 								subredditId: t
 							})
 						}
 						return Object(y.C)(e, t, s, n)
 					}),
-					subredditsById: C.bb,
+					subredditsById: C.Z,
 					viewportDataLoaded: O.a,
 					pageReferrer: p.R,
 					postListPlaceholderComponent: () => b.a,
@@ -9598,7 +9598,7 @@
 					headerContent: I.c,
 					isInFollowExperiment: _.a,
 					origin: k.j,
-					subreddit: (e, t) => Object(S.A)(e, {
+					subreddit: (e, t) => Object(S.y)(e, {
 						subredditName: t.match.params.subredditName
 					}),
 					viewTreatment: I.k
@@ -9752,7 +9752,7 @@
 				}),
 				L = () => Object(d.c)({
 					origin: k.j,
-					subreddit: (e, t) => Object(I.A)(e, {
+					subreddit: (e, t) => Object(I.y)(e, {
 						subredditName: t.match.params.subredditName
 					})
 				}),
@@ -9886,7 +9886,7 @@
 			const a = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.U)(e, {
+						const t = Object(o.S)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -9899,14 +9899,14 @@
 				m = (e, t) => {
 					const s = u(e, t);
 					if (!s) return l;
-					const r = Object(o.Y)(e, {
+					const r = Object(o.W)(e, {
 						subredditName: s.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : l
 				},
 				u = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.U)(e, {
+					return s ? Object(o.S)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -9988,4 +9988,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7081ad309cbd768b4e0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b215dc5d055c25a1eb36.js.map

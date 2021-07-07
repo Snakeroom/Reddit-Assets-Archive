@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.67a8ecdc8e8219d7384d.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.7ad5611026375065272c.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -956,7 +956,7 @@
 					t(u.l({
 						title: n.wikiPageName ? `${n.wikiPageName} - ${a}` : `wiki - ${a}`
 					})), await t(Xe(n, s));
-					const i = Object(D.A)(r(), {
+					const i = Object(D.y)(r(), {
 							subredditName: a
 						}),
 						o = r();
@@ -1330,10 +1330,10 @@
 				}, de = (e, t) => async (r, n) => {
 					const s = n();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(s) && !Object(y.R)(s, {
+						if (!Object(w.b)(u.a.BAN_USER)(s) && !Object(y.P)(s, {
 								subredditId: e
 							})) {
-							const t = Object(y.U)(s, {
+							const t = Object(y.S)(s, {
 								subredditId: e
 							});
 							await r(Object(c.o)(t.name))
@@ -1910,8 +1910,8 @@
 							wikiPageName: t
 						},
 						o = await p(s.gqlContext(), a),
-						d = Object(k.F)(n(), e);
-					if (Object(k.W)(n(), d) || await r(Object(i.h)(e, d)), o.ok) {
+						d = Object(k.D)(n(), e);
+					if (Object(k.U)(n(), d) || await r(Object(i.h)(e, d)), o.ok) {
 						const e = o.body,
 							t = e.data.subreddit && e.data.subreddit.wiki;
 						if (t && t.page) {
@@ -3333,7 +3333,7 @@
 					}) => t ? Object(v.c)(e, {
 						subredditId: t
 					}) : void 0,
-					userIsBanned: (e, t) => !!Object(p.l)(t) && Object(p.fb)(e, t),
+					userIsBanned: (e, t) => !!Object(p.l)(t) && Object(p.db)(e, t),
 					userProfileStyles: (e, t) => Object(b.m)(e, Object(m.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(m.h)(e, {
@@ -4702,4 +4702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.67a8ecdc8e8219d7384d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.7ad5611026375065272c.js.map

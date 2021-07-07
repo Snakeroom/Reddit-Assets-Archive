@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.9760975bac7dffd0139a.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.745844e6bc52c3bdfec0.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -93,7 +93,7 @@
 					source: "community_tagging",
 					action: "view",
 					noun: "verify_topics_module",
-					subreddit: Object(m.U)(n, {
+					subreddit: Object(m.S)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -102,7 +102,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
-					subreddit: Object(m.U)(r, {
+					subreddit: Object(m.S)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -111,7 +111,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
-					subreddit: Object(m.U)(r, {
+					subreddit: Object(m.S)(r, {
 						subredditId: n
 					}),
 					raterTag: b(e, t)
@@ -120,7 +120,7 @@
 					source: "community_tagging",
 					action: "click",
 					noun: "close",
-					subreddit: Object(m.U)(n, {
+					subreddit: Object(m.S)(n, {
 						subredditId: t
 					}),
 					raterTag: b(e)
@@ -197,10 +197,10 @@
 					rtJsonElementProps: {}
 				}), n[2])
 			}
-			var U = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
-				M = n.n(U);
+			var M = n("./src/reddit/components/CommunityTopicSurvey/index.m.less"),
+				R = n.n(M);
 			const {
-				fbt: R
+				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function A(e) {
@@ -212,18 +212,18 @@
 					onClose: d
 				} = e, [c, a] = Object(s.useState)([]);
 				return o.a.createElement("div", {
-					className: Object(C.a)(M.a.survey, i && M.a.inFeed),
+					className: Object(C.a)(R.a.survey, i && R.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
 				}, o.a.createElement(k.a, {
-					className: M.a.closeButton,
+					className: R.a.closeButton,
 					onClick: () => d(t)
 				}, o.a.createElement(I.b, null), o.a.createElement("span", {
-					className: M.a.closeText
-				}, R._("Close", null, {
+					className: R.a.closeText
+				}, U._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
-					className: M.a.question
+					className: R.a.question
 				}, o.a.createElement(D, null, n)), o.a.createElement(w, {
 					options: r,
 					onChange: function(n) {
@@ -231,14 +231,14 @@
 						a(n), null === (r = e.onSelect) || void 0 === r || r.call(e, t, n)
 					}
 				}), o.a.createElement(y.i, {
-					className: M.a.submitButton,
+					className: R.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
 					onClick: async function() {
 						await e.onSubmit(t, c)
 					},
 					disabled: 0 === c.length
-				}, R._("Submit", null, {
+				}, U._("Submit", null, {
 					hk: "7ztww"
 				})))
 			}
@@ -256,20 +256,20 @@
 					inFeed: c
 				} = e, [a, u] = Object(s.useState)([]);
 				return o.a.createElement("div", {
-					className: Object(C.a)(M.a.survey, c && M.a.inFeed),
+					className: Object(C.a)(R.a.survey, c && R.a.inFeed),
 					"data-survey": !0,
 					onClick: e => e.stopPropagation()
 				}, o.a.createElement(k.a, {
-					className: M.a.closeButton,
+					className: R.a.closeButton,
 					onClick: () => i(t)
 				}, o.a.createElement(I.b, null), o.a.createElement("span", {
-					className: M.a.closeText
+					className: R.a.closeText
 				}, F._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
-					className: M.a.question
+					className: R.a.question
 				}, o.a.createElement(D, null, n)), o.a.createElement("div", {
-					className: M.a.buttonGroup
+					className: R.a.buttonGroup
 				}, o.a.createElement(w, {
 					onChange: function(n) {
 						var r;
@@ -280,7 +280,7 @@
 						isMutuallyExclusive: !0
 					}))
 				})), !d && o.a.createElement(y.i, {
-					className: M.a.submitButton,
+					className: R.a.submitButton,
 					redditStyle: !0,
 					role: "submit",
 					onClick: async function() {
@@ -960,7 +960,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						a = Object(u.A)(e, {
+						a = Object(u.y)(e, {
 							subredditName: r
 						});
 					return a ? {
@@ -1123,7 +1123,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.Y)(e, {
+					const n = Object(i.W)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.9760975bac7dffd0139a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.745844e6bc52c3bdfec0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.a532bf8a20ae75cc3c16.js
-// Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.59f25156a3c86e25f5b7.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2843,7 +2843,7 @@
 					errorMsgs: Ee.L,
 					draft: Ee.i,
 					disableAutofocus: Ee.f,
-					showContributorRequestFlow: e => Object(He.r)(e, f.e.Comment)
+					showContributorRequestFlow: e => Object(He.p)(e, f.e.Comment)
 				}),
 				qe = Object(i.b)(Ue, (e, t) => ({
 					onMount: () => e(d.a(t.draftKey)),
@@ -3728,7 +3728,7 @@
 				h = o.n(p);
 			const b = c.a.wrapped(d.a, "Banner", h.a),
 				f = Object(a.b)(() => Object(i.c)({
-					restrictions: m.o,
+					restrictions: m.m,
 					subreddit: u.e
 				}));
 			t.a = f(({
@@ -4410,4 +4410,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a532bf8a20ae75cc3c16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.59f25156a3c86e25f5b7.js.map

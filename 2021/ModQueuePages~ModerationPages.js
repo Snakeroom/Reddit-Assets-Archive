@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.0f1e3254ede1cb16aeb4.js
-// Retrieved at 7/6/2021, 9:40:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.7990f00aecd58a98b8da.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -655,7 +655,7 @@
 						if (e !== p.a.Approve && e !== p.a.Flair) {
 							let t, r;
 							const l = g.platform.currentPage && g.platform.currentPage.queryParams && g.platform.currentPage.queryParams.subreddit,
-								m = l && Object(f.F)(g, l);
+								m = l && Object(f.D)(g, l);
 							e === p.a.Remove && m && O.length > 1 && (t = s.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), r = Object(a.fetchReasonsAndOpenModal)(m, O));
@@ -2066,7 +2066,7 @@
 						comment: t
 					}) => !!Object(Ne.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const n = Object(Ue.J)(e, {
+						const n = Object(Ue.H)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -2431,7 +2431,7 @@
 				M = Object(i.c)({
 					comment: (e, t) => Object(O.a)(e, t),
 					flair: g.e,
-					subreddit: I.J
+					subreddit: I.H
 				}),
 				T = Object(r.b)(M, (e, {
 					commentId: t,
@@ -2674,7 +2674,7 @@
 						subredditId: t,
 						userId: n
 					})),
-					l = Object(r.e)(e => Object(c.U)(e, {
+					l = Object(r.e)(e => Object(c.S)(e, {
 						subredditId: t
 					}));
 				return o.a.createElement("div", {
@@ -4413,4 +4413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.0f1e3254ede1cb16aeb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.7990f00aecd58a98b8da.js.map

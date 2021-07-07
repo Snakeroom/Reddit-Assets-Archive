@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.3c6880f781c2c9bafa9d.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.5d73d659566db3a236bf.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, o) {
@@ -1770,7 +1770,7 @@
 				Re = d.a.wrapped(he.i, "FreeFormTextArea", we.a),
 				ye = Object(l.c)({
 					dropdownIsOpen: Object(ue.b)(ge),
-					freeFormReports: be.E
+					freeFormReports: be.C
 				});
 			class Ee extends s.a.Component {
 				constructor(e) {
@@ -4207,4 +4207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3c6880f781c2c9bafa9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.5d73d659566db3a236bf.js.map

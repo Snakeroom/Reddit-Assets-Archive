@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e5e794d63319d7af950f.js
-// Retrieved at 7/7/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.479ad189159fa3f45c6b.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -895,8 +895,8 @@
 					text: d
 				}))
 			};
-			var J = n("./src/lib/addQueryParams/index.ts"),
-				G = n("./src/lib/humanizeDateTime/index.ts"),
+			var G = n("./src/lib/addQueryParams/index.ts"),
+				J = n("./src/lib/humanizeDateTime/index.ts"),
 				Z = n("./src/lib/timeAgo/index.ts"),
 				Y = n("./src/reddit/actions/comment/index.ts");
 			const q = e => {
@@ -910,7 +910,7 @@
 					}));
 					return r.a.createElement("a", {
 						className: t,
-						href: Object(J.a)(n.permalink, {
+						href: Object(G.a)(n.permalink, {
 							utm_source: "reddit",
 							utm_medium: "web2x",
 							context: 3
@@ -928,7 +928,7 @@
 						shortenedUnit: o
 					}), r.a.createElement(P.c, {
 						tooltipId: c,
-						text: Object(G.a)(n.created)
+						text: Object(J.a)(n.created)
 					}))
 				},
 				K = (e, t) => {
@@ -1297,8 +1297,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Je = p.a.wrapped(_.b, "RightPositionedAuthorFlair", ze.a),
-				Ge = p.a.wrapped(Pe.a, "AdminIcon", ze.a),
+			const Ge = p.a.wrapped(_.b, "RightPositionedAuthorFlair", ze.a),
+				Je = p.a.wrapped(Pe.a, "AdminIcon", ze.a),
 				Ze = p.a.div("AdminEmeritus", ze.a),
 				Ye = p.a.wrapped(Ue, "OpIcon", ze.a),
 				qe = p.a.wrapped(Pe.a, "ContractorIcon", ze.a),
@@ -1320,7 +1320,7 @@
 						comment: t
 					}) => !!Object(De.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const n = Object(We.J)(e, {
+						const n = Object(We.H)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -1423,7 +1423,7 @@
 				}), i && r.a.createElement(oe, null), i && r.a.createElement(I.c, {
 					className: ze.a.metaText,
 					key: "crowdControlSeparator"
-				}), h && !V && r.a.createElement(Je, {
+				}), h && !V && r.a.createElement(Ge, {
 					flair: h,
 					forceSmallEmojis: p
 				}), !p && r.a.createElement(y.a, {
@@ -1572,7 +1572,7 @@
 						className: ze.a.cakeDay,
 						commentId: e.id,
 						renderedInOverlay: t
-					}), e.isAdmin && r.a.createElement(Ge, {
+					}), e.isAdmin && r.a.createElement(Je, {
 						desc: R(),
 						id: n.adminTooltipId,
 						onMouseEnter: this.onShowAdminTooltip,
@@ -1788,7 +1788,7 @@
 						subredditId: t,
 						userId: n
 					})),
-					l = Object(r.e)(e => Object(d.U)(e, {
+					l = Object(r.e)(e => Object(d.S)(e, {
 						subredditId: t
 					}));
 				return s.a.createElement("div", {
@@ -3446,4 +3446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e5e794d63319d7af950f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.479ad189159fa3f45c6b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.42b018d1fb7fb05e0d3a.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.7d74e908cb664ca1fba2.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1433,7 +1433,7 @@
 					subredditId: t
 				}) => async (r, s, a) => {
 					const n = s(),
-						l = Object(g.U)(n, {
+						l = Object(g.S)(n, {
 							subredditId: t
 						}).name;
 					r(Object(b.k)(e));
@@ -1471,7 +1471,7 @@
 						subredditId: i,
 						emojiName: l,
 						settings: p
-					} = e, y = Object(m.a)(n.url), E = s(), h = Object(g.U)(E, {
+					} = e, y = Object(m.a)(n.url), E = s(), h = Object(g.S)(E, {
 						subredditId: i
 					}).name, O = await (async (e, t, r, s, a) => Object(o.a)(Object(d.a)(e, [u.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -1529,7 +1529,7 @@
 				}) => {
 					const a = r();
 					if (Object(I.a)(a, e)) return;
-					const n = Object(g.U)(a, {
+					const n = Object(g.S)(a, {
 						subredditId: e
 					}).name;
 					t(P(e));
@@ -1552,7 +1552,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.U)(i, {
+						l = Object(g.S)(i, {
 							subredditId: t
 						}).name,
 						p = await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1580,7 +1580,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.U)(i, {
+						l = Object(g.S)(i, {
 							subredditId: e
 						}).name;
 					if ((await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1605,7 +1605,7 @@
 					apiContext: n
 				}) => {
 					const i = a(),
-						l = Object(g.U)(i, {
+						l = Object(g.S)(i, {
 							subredditId: e
 						}).name;
 					(await (async (e, t, r) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1625,7 +1625,7 @@
 					apiContext: l
 				}) => {
 					const p = i(),
-						b = Object(g.U)(p, {
+						b = Object(g.S)(p, {
 							subredditId: a
 						}).name;
 					(await (async (e, t, r, s) => Object(o.a)(Object(d.a)(e, [u.a]), {
@@ -1704,7 +1704,7 @@
 				O = e => async (t, n) => {
 					t(f());
 					const c = n(),
-						d = Object(u.U)(c, {
+						d = Object(u.S)(c, {
 							subredditId: e
 						}).name,
 						l = c.structuredStyles.models[e],
@@ -3251,7 +3251,7 @@
 				_ = e => async (t, r, {
 					gqlContext: a
 				}) => {
-					const n = Object(l.U)(r(), {
+					const n = Object(l.S)(r(), {
 						subredditId: e
 					});
 					if (void 0 === n) {
@@ -3518,7 +3518,7 @@
 					});
 					if (l.ok) {
 						const r = t(),
-							s = l.body && l.body.length ? l.body.map(e => Object(i.F)(r, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							s = l.body && l.body.length ? l.body.map(e => Object(i.D)(r, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(b({
 							subredditIds: s
 						}))
@@ -4775,7 +4775,7 @@
 				subredditsByName: Object(d.a)((e, t) => {
 					const r = {};
 					return t.subredditIcons && t.subredditIcons.map(t => {
-						r[t.subredditName] = Object(l.A)(e, {
+						r[t.subredditName] = Object(l.y)(e, {
 							subredditName: t.subredditName
 						})
 					}), r
@@ -5193,7 +5193,7 @@
 							n = e.platform.currentPage,
 							c = n && n.urlParams.subredditName,
 							d = a || c || "",
-							i = Object(o.F)(e, d);
+							i = Object(o.D)(e, d);
 						i && e.structuredStyles.models[i] || s.add("structuredStyles"), e.user.prefs.subreddit[i] || s.add("prefsSubreddit")
 					}
 					return [...s].join(",")
@@ -21937,7 +21937,7 @@
 				}),
 				p = Object(n.a)(l, o.c, (e, t) => t.isFlairModOnly, (e, t) => t.flairTemplateType, (e, t, r, s) => e.filter(e => !(e.modFlairOnly && !t || e.modFlairOnly && !r) && (!(!e.userFlairAllowed && s === c.d.UserFlair) && !(!e.postFlairAllowed && s === c.d.LinkFlair)))),
 				b = Object(n.a)(u, (e, t) => t.subredditId, (e, t) => Object.keys(e[t].snoomojis)),
-				f = (e, t) => Object(d.x)(e, {
+				f = (e, t) => Object(d.v)(e, {
 					subredditName: t
 				}).emojisEnabled,
 				y = {
@@ -22222,4 +22222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.42b018d1fb7fb05e0d3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7d74e908cb664ca1fba2.js.map

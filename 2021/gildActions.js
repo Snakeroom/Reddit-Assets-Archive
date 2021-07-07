@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.2b56a419ce1db8181987.js
-// Retrieved at 6/30/2021, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.11c2bcbe962bc208dc75.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -92,8 +92,8 @@
 				y = s("./src/reddit/models/Toast/index.ts"),
 				v = s("./src/reddit/models/User/index.ts"),
 				k = s("./src/reddit/selectors/commentSelector.ts"),
-				_ = s("./src/reddit/selectors/communityAwards.ts"),
-				I = s("./src/reddit/selectors/gild.ts"),
+				I = s("./src/reddit/selectors/communityAwards.ts"),
+				_ = s("./src/reddit/selectors/gild.ts"),
 				A = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				x = s("./src/reddit/selectors/gold/econPurchase.ts"),
 				C = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -102,16 +102,16 @@
 				S = s("./src/reddit/selectors/user.ts"),
 				L = s("./src/lib/makeGqlRequest/index.ts"),
 				R = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				K = s("./src/redditGQL/operations/GildComment.json"),
-				T = s("./src/redditGQL/operations/GildPost.json");
+				T = s("./src/redditGQL/operations/GildComment.json"),
+				K = s("./src/redditGQL/operations/GildPost.json");
 			const D = (e, t, s) => Object(L.a)(e, {
-					...T,
+					...K,
 					variables: t
 				}, {
 					query: s ? {} : Object(R.b)()
 				}),
 				q = (e, t, s) => Object(L.a)(e, {
-					...K,
+					...T,
 					variables: t
 				}, {
 					query: s ? {} : Object(R.b)()
@@ -210,7 +210,7 @@
 						commentId: s
 					}), a = Object(S.j)(e), d = e.gild, {
 						isAnonymous: n
-					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.K)(e, {
+					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.I)(e, {
 						thingId: s
 					});
 					return te({
@@ -225,11 +225,11 @@
 							awardId: u,
 							id: m
 						} = e,
-						h = Object(_.a)(a, u),
+						h = Object(I.a)(a, u),
 						w = e.awardKarmaReceived,
 						f = Object(S.j)(a),
-						k = Object(I.b)(a) || Object(M.d)(M.a.GildingFlow, !1);
-					if (Object(I.g)(a)) {
+						k = Object(_.b)(a) || Object(M.d)(M.a.GildingFlow, !1);
+					if (Object(_.g)(a)) {
 						const e = "success.gild",
 							t = {},
 							s = Object(A.a)(a, {
@@ -243,10 +243,10 @@
 						})
 					}
 					if (h.awardType === b.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(P.K)(a, {
+						const t = Object(P.I)(a, {
 								thingId: m
 							}),
-							s = t && Object(P.C)(a, {
+							s = t && Object(P.A)(a, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - h.coinPrice)
@@ -277,13 +277,13 @@
 						numberCoins: R,
 						thingId: m
 					})(a)), t(Object(c.g)(g.a.GOLD_GILD_MODAL));
-					const K = Object(A.a)(a, {
+					const T = Object(A.a)(a, {
 						award: h,
 						minSize: 64,
 						postOrCommentId: m
 					});
 					t(Object(l.f)({
-						customIconAsset: K,
+						customIconAsset: T,
 						kind: y.b.SuccessAward,
 						text: w > 0 ? p({
 							awarderKarmaReceived: w
@@ -293,9 +293,9 @@
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
-					const T = Date.now();
+					const K = Date.now();
 					await t(Object(i.b)(k));
-					const D = Date.now() - T;
+					const D = Date.now() - K;
 					if (R > 0) {
 						const e = Object(C.f)(s()).filter(e => j.a.has(e.dealInfo.type));
 						if (e.length) {
@@ -310,7 +310,7 @@
 							})), d ? s : r)
 						}
 					}
-					const q = Object(P.K)(a, {
+					const q = Object(P.I)(a, {
 						thingId: m
 					});
 					if (q && Object(x.a)(a, {
@@ -485,4 +485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.2b56a419ce1db8181987.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.11c2bcbe962bc208dc75.js.map

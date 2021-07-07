@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.36b2c6909fb96a0f89d0.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.74fe2d98d796f6780b6d.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4505,7 +4505,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						l = Object(d.A)(e, {
+						l = Object(d.y)(e, {
 							subredditName: n
 						});
 					return l ? {
@@ -4909,7 +4909,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(o.Y)(e, {
+					const s = Object(o.W)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -4917,4 +4917,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.36b2c6909fb96a0f89d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.74fe2d98d796f6780b6d.js.map

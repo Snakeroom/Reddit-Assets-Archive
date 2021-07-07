@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.faa31af9bffa85059540.js
-// Retrieved at 7/1/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.178fcea4eab3967c8b8f.js
+// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -64,7 +64,7 @@
 			})), n.d(t, "e", (function() {
 				return B
 			})), n.d(t, "k", (function() {
-				return q
+				return D
 			}));
 			var o = n("./node_modules/uuid/index.js"),
 				r = n.n(o),
@@ -158,7 +158,7 @@
 					gqlContext: o
 				}) => {
 					const r = n(),
-						i = Object(p.F)(r, e);
+						i = Object(p.D)(r, e);
 					if (Object(f.j)(r, {
 							subredditId: i
 						})) return Object(f.f)(r, {
@@ -302,7 +302,7 @@
 					} = r.body.data;
 					if (!i.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return i.predictionTokens
-				}, q = ({
+				}, D = ({
 					coinPackageId: e,
 					selectedOptionId: t,
 					price: n,
@@ -1032,4 +1032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.faa31af9bffa85059540.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.178fcea4eab3967c8b8f.js.map
