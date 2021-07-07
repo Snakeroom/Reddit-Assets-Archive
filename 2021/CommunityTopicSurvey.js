@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.745844e6bc52c3bdfec0.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.c303399dfa6c9cc132a2.js
+// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -61,7 +61,7 @@
 		"./src/reddit/components/CommunityTopicSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return q
+				return L
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -98,7 +98,7 @@
 					}),
 					raterTag: b(e)
 				}),
-				f = (e, t, n) => r => ({
+				x = (e, t, n) => r => ({
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
@@ -107,7 +107,7 @@
 					}),
 					raterTag: b(e, t)
 				}),
-				x = (e, t, n) => r => ({
+				f = (e, t, n) => r => ({
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
@@ -192,7 +192,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(B.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: N.Hd.SmIconHc,
+					userVariant: N.Fd.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -203,7 +203,7 @@
 				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function A(e) {
+			function F(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -243,10 +243,10 @@
 				})))
 			}
 			const {
-				fbt: F
+				fbt: A
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function H(e) {
+			function q(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -264,7 +264,7 @@
 					onClick: () => i(t)
 				}, o.a.createElement(I.b, null), o.a.createElement("span", {
 					className: R.a.closeText
-				}, F._("Close", null, {
+				}, A._("Close", null, {
 					hk: "4gbyAA"
 				}))), o.a.createElement("p", {
 					className: R.a.question
@@ -287,12 +287,12 @@
 						await e.onSubmit(t, a)
 					},
 					disabled: 0 === a.length
-				}, F._("Submit", null, {
+				}, A._("Submit", null, {
 					hk: "7ztww"
 				})))
 			}
 
-			function q(e) {
+			function L(e) {
 				var t;
 				const {
 					subredditId: n,
@@ -333,7 +333,7 @@
 							subredditId: n,
 							questionId: e
 						}
-					}), u(x(O, t, n)), C(Object(c.f)({
+					}), u(f(O, t, n)), C(Object(c.f)({
 						text: r.fbt._("Thank you for your help!", null, {
 							hk: "1asBUQ"
 						}),
@@ -342,11 +342,11 @@
 				}
 
 				function w(e, t) {
-					u(f(O, t, n))
+					u(x(O, t, n))
 				}
 				switch (O.type) {
 					case E.d.Multi:
-						return o.a.createElement(A, {
+						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -357,7 +357,7 @@
 							inFeed: a
 						});
 					case E.d.SingleWithSubmit:
-						return o.a.createElement(H, {
+						return o.a.createElement(q, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -368,7 +368,7 @@
 							inFeed: a
 						});
 					case E.d.SingleNoSubmit:
-						return o.a.createElement(H, {
+						return o.a.createElement(q, {
 							key: O.id,
 							questionId: O.id,
 							questionText: O.questionText,
@@ -510,9 +510,9 @@
 			})), n.d(t, "c", (function() {
 				return p
 			})), n.d(t, "j", (function() {
-				return f
-			})), n.d(t, "g", (function() {
 				return x
+			})), n.d(t, "g", (function() {
+				return f
 			})), n.d(t, "v", (function() {
 				return _
 			})), n.d(t, "i", (function() {
@@ -560,8 +560,8 @@
 				m = c.a.code("M", d.a),
 				b = c.a.pre("Pre", d.a),
 				p = c.a.blockquote("Blockquote", d.a),
-				f = c.a.p("P", d.a),
-				x = c.a.li("Li", d.a),
+				x = c.a.p("P", d.a),
+				f = c.a.li("Li", d.a),
 				_ = c.a.ul("Ul", d.a),
 				h = c.a.ol("Ol", d.a),
 				g = c.a.strong("B", d.a),
@@ -618,7 +618,7 @@
 		"./src/reddit/components/StructuredStyles/StyledComponents/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return x
+				return f
 			})), n.d(t, "g", (function() {
 				return _
 			})), n.d(t, "a", (function() {
@@ -655,8 +655,8 @@
 				b = n("./src/reddit/components/StructuredStyles/StyledComponents/index.m.less"),
 				p = n.n(b);
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -664,14 +664,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const x = i.a.wrapped(m.a, "CloseIcon", p.a),
+			const f = i.a.wrapped(m.a, "CloseIcon", p.a),
 				_ = i.a.wrapped(l.a, "ThemedChevron", p.a),
 				h = i.a.wrapped(d.i, "Button", p.a),
 				g = i.a.wrapped(d.o, "TertiaryButton", p.a),
 				E = i.a.div("SubFormTitle", p.a),
 				S = i.a.wrapped(d.l, "SecondaryButton", p.a),
 				v = i.a.wrapped(g, "DeleteButton", p.a),
-				C = (i.a.section("ModalBody", p.a), i.a.header("ModalHeader", p.a), i.a.h2("ModalTitle", p.a), i.a.div("ModalMain", p.a), i.a.p("ModalText", p.a), i.a.footer("ModalFooter", p.a), e => s.a.createElement(u, f({}, e, {
+				C = (i.a.section("ModalBody", p.a), i.a.header("ModalHeader", p.a), i.a.h2("ModalTitle", p.a), i.a.div("ModalMain", p.a), i.a.p("ModalText", p.a), i.a.footer("ModalFooter", p.a), e => s.a.createElement(u, x({}, e, {
 					className: Object(o.a)(p.a.ToggleInput, {
 						[p.a.selected]: !!e.selected
 					})
@@ -741,8 +741,8 @@
 					}, s.a.createElement(u.b, null)), `r/${e}`))
 				}),
 				p = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				f = n("./src/reddit/constants/experiments.ts"),
-				x = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				x = n("./src/reddit/constants/experiments.ts"),
+				f = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
 				_ = n("./src/reddit/selectors/subredditMention.ts");
 			class h extends s.a.PureComponent {
 				constructor() {
@@ -752,7 +752,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(x.a)({
+						t(Object(f.a)({
 							...e,
 							subredditName: n
 						}))
@@ -787,12 +787,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case f.Hd.SmIcon:
+						case x.Fd.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case f.Hd.SmIconHc:
+						case x.Fd.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -901,7 +901,7 @@
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return x
+				return f
 			})), n.d(t, "f", (function() {
 				return _
 			})), n.d(t, "g", (function() {
@@ -975,7 +975,7 @@
 						}
 					}
 				},
-				f = (e, t) => {
+				x = (e, t) => {
 					const {
 						renderingObjectInfo: n
 					} = t;
@@ -987,9 +987,9 @@
 						...p(e, t)
 					}
 				},
-				x = e => t => ({
+				f = e => t => ({
 					...m(t),
-					...f(t, e)
+					...x(t, e)
 				}),
 				_ = e => t => ({
 					...b(t),
@@ -1103,12 +1103,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.zd
+						experimentName: r.xd
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.Hd.SmIcon || t === r.Hd.SmIconHc
+					return t === r.Fd.SmIcon || t === r.Fd.SmIconHc
 				},
 				u = (e, {
 					subredditName: t
@@ -1134,4 +1134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.745844e6bc52c3bdfec0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.c303399dfa6c9cc132a2.js.map

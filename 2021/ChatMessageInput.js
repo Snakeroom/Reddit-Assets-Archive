@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.5c02bd0040a467fc1320.js
-// Retrieved at 7/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.ddbacd9bb97d7649f7d2.js
+// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -614,18 +614,18 @@
 						postAwardCount: s.awardCountsById ? Object.values(s.awardCountsById).reduce((e, t) => e + t, 0) : s.allAwardings ? s.allAwardings.reduce((e, t) => e + t.count, 0) : 0
 					}
 				})),
-				V = e => ({
+				K = e => ({
 					initialCommentAwardIds: e.isFullyLoaded ? [...e.commentAwardIds] : [],
 					initialPostAwardCount: e.isFullyLoaded ? e.postAwardCount : 0,
 					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
-			class K extends c.Component {
+			class V extends c.Component {
 				constructor(e) {
-					super(e), this.state = V(e)
+					super(e), this.state = K(e)
 				}
 				static getDerivedStateFromProps(e, t) {
-					return t.prevPostId !== e.postId || !t.prevIsFullyLoaded && e.isFullyLoaded ? V(e) : null
+					return t.prevPostId !== e.postId || !t.prevIsFullyLoaded && e.isFullyLoaded ? K(e) : null
 				}
 				render() {
 					const {
@@ -654,7 +654,7 @@
 					})
 				}
 			}
-			var G = q(K),
+			var G = q(V),
 				W = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
 				H = s.n(W);
 			const J = {},
@@ -670,7 +670,7 @@
 				ae = p.a.wrapped(g.a, "SmallChatUserIcon", H.a),
 				oe = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
-					errorMsgs: O.L,
+					errorMsgs: O.K,
 					hasError: O.v,
 					liveStreamingChatCharacterLimit: z.a,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
@@ -1991,4 +1991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.5c02bd0040a467fc1320.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.ddbacd9bb97d7649f7d2.js.map
