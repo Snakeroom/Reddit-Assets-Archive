@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.b62ec58eb62ddfe22b36.js
-// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.046b82de7154b88dfbfa.js
+// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, o) {
@@ -750,9 +750,9 @@
 			o.r(t), o.d(t, "postOrCommentReported", (function() {
 				return M
 			})), o.d(t, "reportFlowTargetSet", (function() {
-				return D
-			})), o.d(t, "reportFlowOpenedFromModalPage", (function() {
 				return B
+			})), o.d(t, "reportFlowOpenedFromModalPage", (function() {
+				return D
 			})), o.d(t, "reportFlowOpenCategory", (function() {
 				return U
 			})), o.d(t, "reportFlowOpened", (function() {
@@ -974,7 +974,7 @@
 							buttonAction: M(e, t)
 						}))
 					}
-				}, D = Object(r.a)(v.f), B = Object(r.a)(v.a), U = Object(r.a)(v.b), K = (e, t, o) => async (n, r, {
+				}, B = Object(r.a)(v.f), D = Object(r.a)(v.a), U = Object(r.a)(v.b), K = (e, t, o) => async (n, r, {
 					apiContext: c
 				}) => {
 					const u = r(),
@@ -992,7 +992,7 @@
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						v = h && Object(f.o)(w) || p && G(w, u);
-					v || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || n(Object(l.d)()), !v || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || n(Object(l.c)()), g && n(Object(a.o)(g.name, g.type)), n(D(e)), n(B(!!t)), o && n(U(o)), g && n(q(g.name))
+					v || u.reportRules.sitewideRules && u.reportRules.sitewideRules.length || n(Object(l.d)()), !v || u.reportRules.liveStreamingRules && u.reportRules.liveStreamingRules.length || n(Object(l.c)()), g && n(Object(a.o)(g.name, g.type)), n(B(e)), n(D(!!t)), o && n(U(o)), g && n(q(g.name))
 				}, H = Object(r.a)(v.g), q = e => async (t, o, {
 					apiContext: n
 				}) => {
@@ -1001,7 +1001,7 @@
 				}, W = () => async (e, t, {
 					apiContext: o
 				}) => {
-					e(D(null))
+					e(B(null))
 				}, G = (e, t) => {
 					const o = e.postId,
 						n = o && t.posts.models[o];
@@ -1550,13 +1550,13 @@
 				P = d.a.wrapped(g.b, "DropdownTriangle", C.a),
 				A = d.a.wrapped(w.b, "Row", C.a);
 			var M = o("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
-				D = o.n(M);
-			const B = d.a.div("LinkHolder", D.a),
-				U = d.a.a("Link", D.a),
-				K = d.a.wrapped(_.a, "footer", D.a);
+				B = o.n(M);
+			const D = d.a.div("LinkHolder", B.a),
+				U = d.a.a("Link", B.a),
+				K = d.a.wrapped(_.a, "footer", B.a);
 			var H = e => s.a.createElement("div", null, s.a.createElement(y, null, e.complaintPageTitle), s.a.createElement(E, null, e.complaintPrompt || n.fbt._("If you think content on Reddit violates your intellectual property, you can file a complaint. Use the link bellow:", null, {
 					hk: "4eHLfh"
-				})), s.a.createElement(B, null, s.a.createElement(U, {
+				})), s.a.createElement(D, null, s.a.createElement(U, {
 					target: "_blank",
 					href: e.complaintUrl
 				}, e.complaintButtonText)), s.a.createElement(K, null, s.a.createElement(R, null, s.a.createElement(m.a, {
@@ -1929,10 +1929,10 @@
 				Pe = o("./src/reddit/icons/svgs/Close/index.tsx"),
 				Ae = o("./src/reddit/components/ReportFlow/Title/index.m.less"),
 				Me = o.n(Ae);
-			const De = d.a.wrapped(_.a, "Title", Me.a),
-				Be = d.a.div("CloseWrapper", Me.a),
+			const Be = d.a.wrapped(_.a, "Title", Me.a),
+				De = d.a.div("CloseWrapper", Me.a),
 				Ue = d.a.wrapped(Pe.a, "Close", Me.a);
-			var Ke = e => s.a.createElement(De, null, s.a.createElement("div", null, e.title), s.a.createElement(Be, {
+			var Ke = e => s.a.createElement(Be, null, s.a.createElement("div", null, e.title), s.a.createElement(De, {
 					onClick: e.onClosePressed
 				}, s.a.createElement(Ue, null))),
 				He = o("./src/reddit/models/Post/index.ts"),
@@ -2141,7 +2141,7 @@
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "ValidThingReportTypes", (function() {
-				return B
+				return D
 			}));
 			var n = o("./src/config.ts"),
 				r = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2187,11 +2187,11 @@
 				P = o.n(L);
 			const A = F.a.div("ReportLoaderWrapper", P.a),
 				M = F.a.img("LoadingIcon", P.a),
-				D = "2.0";
-			var B;
+				B = "2.0";
+			var D;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
-			}(B || (B = {}));
+			}(D || (D = {}));
 			const U = Object(d.c)({
 					post: (e, {
 						postId: t
@@ -2276,11 +2276,11 @@
 							messageId: o
 						} = this.props;
 						let n, r, s;
-						if (this.props.author && (s = this.props.author), t) n = t, r = B.Comment, this.props.comment && !s && (s = this.props.comment.author);
-						else if (e) n = e, r = B.Post, this.props.post && !s && (s = this.props.post.author);
+						if (this.props.author && (s = this.props.author), t) n = t, r = D.Comment, this.props.comment && !s && (s = this.props.comment.author);
+						else if (e) n = e, r = D.Post, this.props.post && !s && (s = this.props.post.author);
 						else {
 							if (!o) throw new Error("Invalid object type passed to reporting flow");
-							n = o, r = B.Message
+							n = o, r = D.Message
 						}
 						return {
 							itemId: n,
@@ -2336,7 +2336,7 @@
 						}
 						let _;
 						switch (c) {
-							case B.Post:
+							case D.Post:
 								if (s && l) {
 									const e = {
 										postId: a,
@@ -2356,7 +2356,7 @@
 									input: e
 								});
 								break;
-							case B.Comment:
+							case D.Comment:
 								const t = {
 									commentId: a,
 									...m
@@ -2365,7 +2365,7 @@
 									input: t
 								});
 								break;
-							case B.Message:
+							case D.Message:
 								const n = {
 									messageId: a,
 									...m
@@ -2393,7 +2393,7 @@
 						gqlContext: o,
 						hostAppName: n
 					} = this.props;
-					H(o(), e, D, n, t).then(e => {
+					H(o(), e, B, n, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -2934,7 +2934,7 @@
 					e[e.ArrowDown = 40] = "ArrowDown", e[e.ArrowLeft = 37] = "ArrowLeft", e[e.ArrowRight = 39] = "ArrowRight", e[e.ArrowUp = 38] = "ArrowUp", e[e.Backspace = 8] = "Backspace", e[e.Delete = 46] = "Delete", e[e.Enter = 13] = "Enter", e[e.Escape = 27] = "Escape", e[e.F = 70] = "F", e[e.K = 75] = "K", e[e.Space = 32] = "Space", e[e.Tab = 9] = "Tab", e[e.Comma = 188] = "Comma"
 				}(n || (n = {})),
 				function(e) {
-					e.ArrowDown = "ArrowDown", e.ArrowLeft = "ArrowLeft", e.ArrowRight = "ArrowRight", e.ArrowUp = "ArrowUp", e.Enter = "Enter", e.Escape = "Escape", e.F = "f", e.Tab = "Tab", e.Space = " ", e.Comma = ","
+					e.ArrowDown = "ArrowDown", e.ArrowLeft = "ArrowLeft", e.ArrowRight = "ArrowRight", e.ArrowUp = "ArrowUp", e.Backspace = "Backspace", e.Enter = "Enter", e.Escape = "Escape", e.F = "f", e.Tab = "Tab", e.Space = " ", e.Comma = ","
 				}(r || (r = {}))
 		},
 		"./src/reddit/constants/shortcuts.ts": function(e, t, o) {
@@ -4207,4 +4207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.b62ec58eb62ddfe22b36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.046b82de7154b88dfbfa.js.map

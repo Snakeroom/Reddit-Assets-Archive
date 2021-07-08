@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.06279f438b196eb04823.js
-// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.d14594da31ca29df9ab2.js
+// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1451,8 +1451,8 @@
 						small: !0
 					}))
 				},
-				J = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				G = s.n(J),
+				G = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				J = s.n(G),
 				q = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
 				Y = s.n(q);
 			const X = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
@@ -1486,7 +1486,7 @@
 						subscribedSubreddits: h
 					});
 					return r.a.createElement(d.a, {
-						className: Object(o.a)(Y.a.container, G.a.largeAndMediumActiveStyles, G.a.largeAndMediumPostStyles, G.a.mUseRedditTheme, O.a.postContainer, Object(p.a)(this.props), e),
+						className: Object(o.a)(Y.a.container, J.a.largeAndMediumActiveStyles, J.a.largeAndMediumPostStyles, J.a.mUseRedditTheme, O.a.postContainer, Object(p.a)(this.props), e),
 						eventFactory: s,
 						onClick: i,
 						post: a,
@@ -1913,8 +1913,8 @@
 				F = s("./src/reddit/connectors/miniCardPost.ts"),
 				V = s("./src/reddit/contexts/Post/index.tsx"),
 				H = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				J = s("./src/reddit/helpers/styles/mixins/index.tsx"),
-				G = s("./src/reddit/models/Media/index.ts"),
+				G = s("./src/reddit/helpers/styles/mixins/index.tsx"),
+				J = s("./src/reddit/models/Media/index.ts"),
 				q = s("./src/reddit/models/Subreddit/index.ts"),
 				Y = s("./src/reddit/models/Widgets/index.ts"),
 				X = s("./src/reddit/components/MiniCardPost/index.m.less"),
@@ -1961,7 +1961,7 @@
 							autoplayPref: e,
 							availableWidth: t,
 							className: z.a.media,
-							forceAspectRatio: G.c,
+							forceAspectRatio: J.c,
 							imageBoxClassName: z.a.mediaImageBox,
 							imageBoxContentImageClassName: z.a.mediaImageBoxContentImage,
 							isListing: !0,
@@ -1975,7 +1975,7 @@
 							showFull: !1
 						}),
 						E = !1;
-					C && O && (C.type !== G.o.RTJSON && C.type !== G.o.TEXT ? (O = i.a.createElement("div", {
+					C && O && (C.type !== J.o.RTJSON && C.type !== J.o.TEXT ? (O = i.a.createElement("div", {
 						className: $.a.mediaWrapper
 					}, O), E = !0) : C && C.content && Object(H.a)(p) && (O = i.a.createElement("div", {
 						className: $.a.textWrapper
@@ -1983,13 +1983,13 @@
 					const S = !E && !j;
 					let I;
 					return w && (I = Object(q.h)(w) ? Object(Y.h)(w) : Object(Y.i)(w)), i.a.createElement(W.a, {
-						className: Object(c.a)($.a.container, Q.a.largeAndMediumActiveStyles, Q.a.largeAndMediumPostStyles, z.a.postContainer, Object(J.a)(this.props), s),
+						className: Object(c.a)($.a.container, Q.a.largeAndMediumActiveStyles, Q.a.largeAndMediumPostStyles, z.a.postContainer, Object(G.a)(this.props), s),
 						post: p,
 						onClick: m,
 						eventFactory: o,
 						style: {
-							...Object(J.b)(this.props.flairStyleTemplate),
-							...Object(J.d)(this.props),
+							...Object(G.b)(this.props.flairStyleTemplate),
+							...Object(G.d)(this.props),
 							...this.props.style
 						},
 						"data-click-id": this.props["data-click-id"]
@@ -3873,7 +3873,7 @@
 							{
 								H: n,
 								D: r
-							} = G(e.a),
+							} = J(e.a),
 							{
 								c: o = []
 							} = e;
@@ -3984,16 +3984,16 @@
 						f: s,
 						t: r
 					} = e, i = [];
-					if (!s) return J(0, r, t);
+					if (!s) return G(0, r, t);
 					const o = Object(n.a)(r);
 					let a = 0,
 						c = 0;
 					const l = s.length;
 					for (; a < l; a++) {
 						const [e, t, n] = s[a], l = t + n, d = o[t], u = o[l] - d;
-						d > c && i.push(J(0, r.substr(c, d - c), `between${a}`)), i.push(J(e, r.substr(d, u), a)), c = d + u
+						d > c && i.push(G(0, r.substr(c, d - c), `between${a}`)), i.push(G(e, r.substr(d, u), a)), c = d + u
 					}
-					return c < r.length && i.push(J(0, r.substr(c), `remaining${a}`)), i
+					return c < r.length && i.push(G(0, r.substr(c), `remaining${a}`)), i
 				},
 				H = {
 					[p.j.monospace]: c.h,
@@ -4004,13 +4004,13 @@
 					[p.j.subscript]: c.l,
 					[p.j.superscript]: c.m
 				},
-				J = (e, t, s) => {
+				G = (e, t, s) => {
 					let n = t;
 					return n = i()(H, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
-				G = e => {
+				J = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -4137,12 +4137,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Ed.SmIcon:
+						case b.Gd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Ed.SmIconHc:
+						case b.Gd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4895,12 +4895,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.wd
+						experimentName: n.yd
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.Ed.SmIcon || t === n.Ed.SmIconHc
+					return t === n.Gd.SmIcon || t === n.Gd.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4923,4 +4923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.06279f438b196eb04823.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.d14594da31ca29df9ab2.js.map

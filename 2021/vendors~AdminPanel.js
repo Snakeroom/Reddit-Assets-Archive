@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~AdminPanel.9b24840577d41d3b738d.js
-// Retrieved at 5/11/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~AdminPanel.a5bc90ca020df1ed6380.js
+// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~AdminPanel"], {
 		"./node_modules/@reddit/event-helpers-typescript/dist/esm/index.js": function(e, t, i) {
@@ -208,15 +208,15 @@
 										$ = !1,
 										k = void 0;
 									try {
-										for (var x, P = e[Symbol.iterator](); !(j = (x = P.next()).done); j = !0) {
-											var q = x.value;
-											q >= s && q < w && (w = q)
+										for (var x, q = e[Symbol.iterator](); !(j = (x = q.next()).done); j = !0) {
+											var P = x.value;
+											P >= s && P < w && (w = P)
 										}
 									} catch (L) {
 										$ = !0, k = L
 									} finally {
 										try {
-											!j && P.return && P.return()
+											!j && q.return && q.return()
 										} finally {
 											if ($) throw k
 										}
@@ -227,9 +227,9 @@
 										S = !1,
 										A = void 0;
 									try {
-										for (var D, I = e[Symbol.iterator](); !(T = (D = I.next()).done); T = !0) {
-											var R = D.value;
-											if (R < s && ++n > c && u("overflow"), R == s) {
+										for (var R, D = e[Symbol.iterator](); !(T = (R = D.next()).done); T = !0) {
+											var I = R.value;
+											if (I < s && ++n > c && u("overflow"), I == s) {
 												for (var F = n, O = 36;; O += 36) {
 													var C = O <= o ? 1 : O >= o + 26 ? 26 : O - o;
 													if (F < C) break;
@@ -244,7 +244,7 @@
 										S = !0, A = L
 									} finally {
 										try {
-											!T && I.return && I.return()
+											!T && D.return && D.return()
 										} finally {
 											if (S) throw A
 										}
@@ -286,7 +286,7 @@
 							return t < 16 ? "%0" + t.toString(16).toUpperCase() : t < 128 ? "%" + t.toString(16).toUpperCase() : t < 2048 ? "%" + (t >> 6 | 192).toString(16).toUpperCase() + "%" + (63 & t | 128).toString(16).toUpperCase() : "%" + (t >> 12 | 224).toString(16).toUpperCase() + "%" + (t >> 6 & 63 | 128).toString(16).toUpperCase() + "%" + (63 & t | 128).toString(16).toUpperCase()
 						}
 
-						function P(e) {
+						function q(e) {
 							for (var t = "", i = 0, s = e.length; i < s;) {
 								var n = parseInt(e.substr(i + 1, 2), 16);
 								if (n < 128) t += String.fromCharCode(n), i += 3;
@@ -308,9 +308,9 @@
 							return t
 						}
 
-						function q(e, t) {
+						function P(e, t) {
 							function i(e) {
-								var i = P(e);
+								var i = q(e);
 								return i.match(t.UNRESERVED) ? i : e
 							}
 							return e.scheme && (e.scheme = String(e.scheme).replace(t.PCT_ENCODED, i).toLowerCase().replace(t.NOT_SCHEME, "")), void 0 !== e.userinfo && (e.userinfo = String(e.userinfo).replace(t.PCT_ENCODED, i).replace(t.NOT_USERINFO, x).replace(t.PCT_ENCODED, n)), void 0 !== e.host && (e.host = String(e.host).replace(t.PCT_ENCODED, i).toLowerCase().replace(t.NOT_HOST, x).replace(t.PCT_ENCODED, n)), void 0 !== e.path && (e.path = String(e.path).replace(t.PCT_ENCODED, i).replace(e.scheme ? t.NOT_PATH : t.NOT_PATH_NOSCHEME, x).replace(t.PCT_ENCODED, n)), void 0 !== e.query && (e.query = String(e.query).replace(t.PCT_ENCODED, i).replace(t.NOT_QUERY, x).replace(t.PCT_ENCODED, n)), void 0 !== e.fragment && (e.fragment = String(e.fragment).replace(t.PCT_ENCODED, i).replace(t.NOT_FRAGMENT, x).replace(t.PCT_ENCODED, n)), e
@@ -357,38 +357,38 @@
 							return e
 						}
 						var A = /^(?:([^:\/?#]+):)?(?:\/\/((?:([^\/?#@]*)@)?(\[[^\/?#\]]+\]|[^\/?#:]*)(?:\:(\d*))?))?([^?#]*)(?:\?([^#]*))?(?:#((?:.|\n|\r)*))?/i,
-							D = void 0 === "".match(/(){0}/)[1];
+							R = void 0 === "".match(/(){0}/)[1];
 
-						function I(e) {
+						function D(e) {
 							var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
 								i = {},
 								s = !1 !== t.iri ? a : r;
 							"suffix" === t.reference && (e = (t.scheme ? t.scheme + ":" : "") + "//" + e);
 							var n = e.match(A);
 							if (n) {
-								D ? (i.scheme = n[1], i.userinfo = n[3], i.host = n[4], i.port = parseInt(n[5], 10), i.path = n[6] || "", i.query = n[7], i.fragment = n[8], isNaN(i.port) && (i.port = n[5])) : (i.scheme = n[1] || void 0, i.userinfo = -1 !== e.indexOf("@") ? n[3] : void 0, i.host = -1 !== e.indexOf("//") ? n[4] : void 0, i.port = parseInt(n[5], 10), i.path = n[6] || "", i.query = -1 !== e.indexOf("?") ? n[7] : void 0, i.fragment = -1 !== e.indexOf("#") ? n[8] : void 0, isNaN(i.port) && (i.port = e.match(/\/\/(?:.|\n)*\:(?:\/|\?|\#|$)/) ? n[4] : void 0)), i.host && (i.host = S(T(i.host, s), s)), void 0 !== i.scheme || void 0 !== i.userinfo || void 0 !== i.host || void 0 !== i.port || i.path || void 0 !== i.query ? void 0 === i.scheme ? i.reference = "relative" : void 0 === i.fragment ? i.reference = "absolute" : i.reference = "uri" : i.reference = "same-document", t.reference && "suffix" !== t.reference && t.reference !== i.reference && (i.error = i.error || "URI is not a " + t.reference + " reference.");
+								R ? (i.scheme = n[1], i.userinfo = n[3], i.host = n[4], i.port = parseInt(n[5], 10), i.path = n[6] || "", i.query = n[7], i.fragment = n[8], isNaN(i.port) && (i.port = n[5])) : (i.scheme = n[1] || void 0, i.userinfo = -1 !== e.indexOf("@") ? n[3] : void 0, i.host = -1 !== e.indexOf("//") ? n[4] : void 0, i.port = parseInt(n[5], 10), i.path = n[6] || "", i.query = -1 !== e.indexOf("?") ? n[7] : void 0, i.fragment = -1 !== e.indexOf("#") ? n[8] : void 0, isNaN(i.port) && (i.port = e.match(/\/\/(?:.|\n)*\:(?:\/|\?|\#|$)/) ? n[4] : void 0)), i.host && (i.host = S(T(i.host, s), s)), void 0 !== i.scheme || void 0 !== i.userinfo || void 0 !== i.host || void 0 !== i.port || i.path || void 0 !== i.query ? void 0 === i.scheme ? i.reference = "relative" : void 0 === i.fragment ? i.reference = "absolute" : i.reference = "uri" : i.reference = "same-document", t.reference && "suffix" !== t.reference && t.reference !== i.reference && (i.error = i.error || "URI is not a " + t.reference + " reference.");
 								var o = k[(t.scheme || i.scheme || "").toLowerCase()];
-								if (t.unicodeSupport || o && o.unicodeSupport) q(i, s);
+								if (t.unicodeSupport || o && o.unicodeSupport) P(i, s);
 								else {
 									if (i.host && (t.domainHost || o && o.domainHost)) try {
-										i.host = $.toASCII(i.host.replace(s.PCT_ENCODED, P).toLowerCase())
+										i.host = $.toASCII(i.host.replace(s.PCT_ENCODED, q).toLowerCase())
 									} catch (d) {
 										i.error = i.error || "Host's domain name can not be converted to ASCII via punycode: " + d
 									}
-									q(i, r)
+									P(i, r)
 								}
 								o && o.parse && o.parse(i, t)
 							} else i.error = i.error || "URI can not be parsed.";
 							return i
 						}
-						var R = /^\.\.?\//,
+						var I = /^\.\.?\//,
 							F = /^\/\.(\/|$)/,
 							O = /^\/\.\.(\/|$)/,
 							C = /^\/?(?:.|\n)*?(?=\/|$)/;
 
 						function U(e) {
 							for (var t = []; e.length;)
-								if (e.match(R)) e = e.replace(R, "");
+								if (e.match(I)) e = e.replace(I, "");
 								else if (e.match(F)) e = e.replace(F, "/");
 							else if (e.match(O)) e = e.replace(O, "/"), t.pop();
 							else if ("." === e || ".." === e) e = "";
@@ -409,11 +409,11 @@
 							if (n && n.serialize && n.serialize(e, t), e.host)
 								if (i.IPV6ADDRESS.test(e.host));
 								else if (t.domainHost || n && n.domainHost) try {
-								e.host = t.iri ? $.toUnicode(e.host) : $.toASCII(e.host.replace(i.PCT_ENCODED, P).toLowerCase())
+								e.host = t.iri ? $.toUnicode(e.host) : $.toASCII(e.host.replace(i.PCT_ENCODED, q).toLowerCase())
 							} catch (c) {
 								e.error = e.error || "Host's domain name can not be converted to " + (t.iri ? "Unicode" : "ASCII") + " via punycode: " + c
 							}
-							q(e, i), "suffix" !== t.reference && e.scheme && (s.push(e.scheme), s.push(":"));
+							P(e, i), "suffix" !== t.reference && e.scheme && (s.push(e.scheme), s.push(":"));
 							var o = function(e, t) {
 								var i = !1 !== t.iri ? a : r,
 									s = [];
@@ -431,11 +431,11 @@
 						function L(e, t) {
 							var i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
 								s = {};
-							return arguments[3] || (e = I(z(e, i), i), t = I(z(t, i), i)), !(i = i || {}).tolerant && t.scheme ? (s.scheme = t.scheme, s.userinfo = t.userinfo, s.host = t.host, s.port = t.port, s.path = U(t.path || ""), s.query = t.query) : (void 0 !== t.userinfo || void 0 !== t.host || void 0 !== t.port ? (s.userinfo = t.userinfo, s.host = t.host, s.port = t.port, s.path = U(t.path || ""), s.query = t.query) : (t.path ? ("/" === t.path.charAt(0) ? s.path = U(t.path) : (void 0 === e.userinfo && void 0 === e.host && void 0 === e.port || e.path ? e.path ? s.path = e.path.slice(0, e.path.lastIndexOf("/") + 1) + t.path : s.path = t.path : s.path = "/" + t.path, s.path = U(s.path)), s.query = t.query) : (s.path = e.path, void 0 !== t.query ? s.query = t.query : s.query = e.query), s.userinfo = e.userinfo, s.host = e.host, s.port = e.port), s.scheme = e.scheme), s.fragment = t.fragment, s
+							return arguments[3] || (e = D(z(e, i), i), t = D(z(t, i), i)), !(i = i || {}).tolerant && t.scheme ? (s.scheme = t.scheme, s.userinfo = t.userinfo, s.host = t.host, s.port = t.port, s.path = U(t.path || ""), s.query = t.query) : (void 0 !== t.userinfo || void 0 !== t.host || void 0 !== t.port ? (s.userinfo = t.userinfo, s.host = t.host, s.port = t.port, s.path = U(t.path || ""), s.query = t.query) : (t.path ? ("/" === t.path.charAt(0) ? s.path = U(t.path) : (void 0 === e.userinfo && void 0 === e.host && void 0 === e.port || e.path ? e.path ? s.path = e.path.slice(0, e.path.lastIndexOf("/") + 1) + t.path : s.path = t.path : s.path = "/" + t.path, s.path = U(s.path)), s.query = t.query) : (s.path = e.path, void 0 !== t.query ? s.query = t.query : s.query = e.query), s.userinfo = e.userinfo, s.host = e.host, s.port = e.port), s.scheme = e.scheme), s.fragment = t.fragment, s
 						}
 
 						function N(e, t) {
-							return e && e.toString().replace(t && t.iri ? a.PCT_ENCODED : r.PCT_ENCODED, P)
+							return e && e.toString().replace(t && t.iri ? a.PCT_ENCODED : r.PCT_ENCODED, q)
 						}
 						var M = {
 								scheme: "http",
@@ -465,7 +465,7 @@
 							X = Z;
 
 						function ee(e) {
-							var t = P(e);
+							var t = q(e);
 							return t.match(J) ? t : e
 						}
 						var te = {
@@ -569,7 +569,7 @@
 									return i.nss = (e.uuid || "").toLowerCase(), i
 								}
 							};
-						k[M.scheme] = M, k[H.scheme] = H, k[te.scheme] = te, k[se.scheme] = se, k[oe.scheme] = oe, e.SCHEMES = k, e.pctEncChar = x, e.pctDecChars = P, e.parse = I, e.removeDotSegments = U, e.serialize = z, e.resolveComponents = L, e.resolve = function(e, t, i) {
+						k[M.scheme] = M, k[H.scheme] = H, k[te.scheme] = te, k[se.scheme] = se, k[oe.scheme] = oe, e.SCHEMES = k, e.pctEncChar = x, e.pctDecChars = q, e.parse = D, e.removeDotSegments = U, e.serialize = z, e.resolveComponents = L, e.resolve = function(e, t, i) {
 							var s = function(e, t) {
 								var i = e;
 								if (t)
@@ -578,11 +578,11 @@
 							}({
 								scheme: "null"
 							}, i);
-							return z(L(I(e, s), I(t, s), s, !0), s)
+							return z(L(D(e, s), D(t, s), s, !0), s)
 						}, e.normalize = function(e, t) {
-							return "string" == typeof e ? e = z(I(e, t), t) : "object" === s(e) && (e = I(z(e, t), t)), e
+							return "string" == typeof e ? e = z(D(e, t), t) : "object" === s(e) && (e = D(z(e, t), t)), e
 						}, e.equal = function(e, t, i) {
-							return "string" == typeof e ? e = z(I(e, i), i) : "object" === s(e) && (e = z(e, i)), "string" == typeof t ? t = z(I(t, i), i) : "object" === s(t) && (t = z(t, i)), e === t
+							return "string" == typeof e ? e = z(D(e, i), i) : "object" === s(e) && (e = z(e, i)), "string" == typeof t ? t = z(D(t, i), i) : "object" === s(t) && (t = z(t, i)), e === t
 						}, e.escapeComponent = function(e, t) {
 							return e && e.toString().replace(t && t.iri ? a.ESCAPE : r.ESCAPE, x)
 						}, e.unescapeComponent = N, Object.defineProperty(e, "__esModule", {
@@ -667,7 +667,7 @@
 						finalCleanUpCode: function(e, t) {
 							var i = e.match(v);
 							i && 2 == i.length && (e = t ? e.replace(w, "").replace(k, x) : e.replace(b, "").replace(j, $));
-							return (i = e.match(P)) && 3 === i.length ? e.replace(q, "") : e
+							return (i = e.match(q)) && 3 === i.length ? e.replace(P, "") : e
 						},
 						schemaHasRules: function(e, t) {
 							if ("boolean" == typeof e) return !e;
@@ -689,7 +689,7 @@
 							return A(e, i ? "'/' + " + t + (s ? "" : ".replace(/~/g, '~0').replace(/\\//g, '~1')") : s ? "'[' + " + t + " + ']'" : "'[\\'' + " + t + " + '\\']'")
 						},
 						getPath: function(e, t, i) {
-							var s = E(i ? "/" + D(t) : f(t));
+							var s = E(i ? "/" + R(t) : f(t));
 							return A(e, s)
 						},
 						getData: function(e, t, i) {
@@ -709,18 +709,18 @@
 							}
 							for (var a = o, d = n.split("/"), c = 0; c < d.length; c++) {
 								var p = d[c];
-								p && (o += f(I(p)), a += " && " + o)
+								p && (o += f(D(p)), a += " && " + o)
 							}
 							return a
 						},
 						unescapeFragment: function(e) {
-							return I(decodeURIComponent(e))
+							return D(decodeURIComponent(e))
 						},
-						unescapeJsonPointer: I,
+						unescapeJsonPointer: D,
 						escapeFragment: function(e) {
-							return encodeURIComponent(D(e))
+							return encodeURIComponent(R(e))
 						},
-						escapeJsonPointer: D
+						escapeJsonPointer: R
 					};
 
 				function c(e, t, i) {
@@ -767,8 +767,8 @@
 					$ = "validate.errors = null; return true;",
 					k = /if \(errors === 0\) return data;\s*else throw new ValidationError\(vErrors\);/,
 					x = "return data;",
-					P = /[^A-Za-z_$]rootData[^A-Za-z0-9_$]/g,
-					q = /if \(rootData === undefined\) rootData = data;/;
+					q = /[^A-Za-z_$]rootData[^A-Za-z0-9_$]/g,
+					P = /if \(rootData === undefined\) rootData = data;/;
 
 				function E(e) {
 					return "'" + l(e) + "'"
@@ -780,14 +780,14 @@
 					return '""' == e ? t : (e + " + " + t).replace(/' \+ '/g, "")
 				}
 
-				function D(e) {
+				function R(e) {
 					return e.replace(/~/g, "~0").replace(/\//g, "~1")
 				}
 
-				function I(e) {
+				function D(e) {
 					return e.replace(/~1/g, "/").replace(/~0/g, "~")
 				}
-				var R = function(e) {
+				var I = function(e) {
 					d.copy(e, this)
 				};
 				var F = s((function(e) {
@@ -855,9 +855,9 @@
 						if (!this._refs[s]) return C.call(this, e, t, s);
 						s = this._refs[s]
 					}
-					if ((s = s || this._schemas[i]) instanceof R) return H(s.schema, this._opts.inlineRefs) ? s.schema : s.validate || this._compile(s);
+					if ((s = s || this._schemas[i]) instanceof I) return H(s.schema, this._opts.inlineRefs) ? s.schema : s.validate || this._compile(s);
 					var n, o, r, a = U.call(this, t, i);
-					return a && (n = a.schema, t = a.root, r = a.baseId), n instanceof R ? o = n.validate || e.call(this, n.schema, t, void 0, r) : void 0 !== n && (o = H(n, this._opts.inlineRefs) ? n : e.call(this, n, t, void 0, r)), o
+					return a && (n = a.schema, t = a.root, r = a.baseId), n instanceof I ? o = n.validate || e.call(this, n.schema, t, void 0, r) : void 0 !== n && (o = H(n, this._opts.inlineRefs) ? n : e.call(this, n, t, void 0, r)), o
 				}
 
 				function U(e, t) {
@@ -868,9 +868,9 @@
 						var o = Q(s),
 							a = this._refs[o];
 						if ("string" == typeof a) return z.call(this, e, a, i);
-						if (a instanceof R) a.validate || this._compile(a), e = a;
+						if (a instanceof I) a.validate || this._compile(a), e = a;
 						else {
-							if (!((a = this._schemas[o]) instanceof R)) return;
+							if (!((a = this._schemas[o]) instanceof I)) return;
 							if (a.validate || this._compile(a), o == Q(t)) return {
 								schema: a,
 								root: e,
@@ -1112,20 +1112,20 @@
 							var x = e.RULES.types[j];
 							if (k || $ || !0 === x || x && !Z(x)) {
 								_ = e.schemaPath + ".type", h = e.errSchemaPath + "/type", _ = e.schemaPath + ".type", h = e.errSchemaPath + "/type";
-								var P = $ ? "checkDataTypes" : "checkDataType";
-								if (s += " if (" + e.util[P](j, l, !0) + ") { ", k) {
-									var q = "dataType" + c,
+								var q = $ ? "checkDataTypes" : "checkDataType";
+								if (s += " if (" + e.util[q](j, l, !0) + ") { ", k) {
+									var P = "dataType" + c,
 										E = "coerced" + c;
-									s += " var " + q + " = typeof " + l + "; ", "array" == e.opts.coerceTypes && (s += " if (" + q + " == 'object' && Array.isArray(" + l + ")) " + q + " = 'array'; "), s += " var " + E + " = undefined; ";
+									s += " var " + P + " = typeof " + l + "; ", "array" == e.opts.coerceTypes && (s += " if (" + P + " == 'object' && Array.isArray(" + l + ")) " + P + " = 'array'; "), s += " var " + E + " = undefined; ";
 									var T = "",
 										S = k;
 									if (S)
-										for (var A, D = -1, I = S.length - 1; D < I;) A = S[D += 1], D && (s += " if (" + E + " === undefined) { ", T += "}"), "array" == e.opts.coerceTypes && "array" != A && (s += " if (" + q + " == 'array' && " + l + ".length == 1) { " + E + " = " + l + " = " + l + "[0]; " + q + " = typeof " + l + ";  } "), "string" == A ? s += " if (" + q + " == 'number' || " + q + " == 'boolean') " + E + " = '' + " + l + "; else if (" + l + " === null) " + E + " = ''; " : "number" == A || "integer" == A ? (s += " if (" + q + " == 'boolean' || " + l + " === null || (" + q + " == 'string' && " + l + " && " + l + " == +" + l + " ", "integer" == A && (s += " && !(" + l + " % 1)"), s += ")) " + E + " = +" + l + "; ") : "boolean" == A ? s += " if (" + l + " === 'false' || " + l + " === 0 || " + l + " === null) " + E + " = false; else if (" + l + " === 'true' || " + l + " === 1) " + E + " = true; " : "null" == A ? s += " if (" + l + " === '' || " + l + " === 0 || " + l + " === false) " + E + " = null; " : "array" == e.opts.coerceTypes && "array" == A && (s += " if (" + q + " == 'string' || " + q + " == 'number' || " + q + " == 'boolean' || " + l + " == null) " + E + " = [" + l + "]; ");
+										for (var A, R = -1, D = S.length - 1; R < D;) A = S[R += 1], R && (s += " if (" + E + " === undefined) { ", T += "}"), "array" == e.opts.coerceTypes && "array" != A && (s += " if (" + P + " == 'array' && " + l + ".length == 1) { " + E + " = " + l + " = " + l + "[0]; " + P + " = typeof " + l + ";  } "), "string" == A ? s += " if (" + P + " == 'number' || " + P + " == 'boolean') " + E + " = '' + " + l + "; else if (" + l + " === null) " + E + " = ''; " : "number" == A || "integer" == A ? (s += " if (" + P + " == 'boolean' || " + l + " === null || (" + P + " == 'string' && " + l + " && " + l + " == +" + l + " ", "integer" == A && (s += " && !(" + l + " % 1)"), s += ")) " + E + " = +" + l + "; ") : "boolean" == A ? s += " if (" + l + " === 'false' || " + l + " === 0 || " + l + " === null) " + E + " = false; else if (" + l + " === 'true' || " + l + " === 1) " + E + " = true; " : "null" == A ? s += " if (" + l + " === '' || " + l + " === 0 || " + l + " === false) " + E + " = null; " : "array" == e.opts.coerceTypes && "array" == A && (s += " if (" + P + " == 'string' || " + P + " == 'number' || " + P + " == 'boolean' || " + l + " == null) " + E + " = [" + l + "]; ");
 									s += " " + T + " if (" + E + " === undefined) {   ", (K = K || []).push(s), s = "", !1 !== e.createErrors ? (s += " { keyword: 'type' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(h) + " , params: { type: '", s += $ ? "" + j.join(",") : "" + j, s += "' } ", !1 !== e.opts.messages && (s += " , message: 'should be ", s += $ ? "" + j.join(",") : "" + j, s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + _ + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + l + " "), s += " } ") : s += " {} ";
 									g = s;
 									s = K.pop(), !e.compositeRule && f ? e.async ? s += " throw new ValidationError([" + g + "]); " : s += " validate.errors = [" + g + "]; return false; " : s += " var err = " + g + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", s += " } else {  ";
-									var R = p ? "data" + (p - 1 || "") : "parentData";
-									s += " " + l + " = " + E + "; ", p || (s += "if (" + R + " !== undefined)"), s += " " + R + "[" + (p ? e.dataPathArr[p] : "parentDataProperty") + "] = " + E + "; } "
+									var I = p ? "data" + (p - 1 || "") : "parentData";
+									s += " " + l + " = " + E + "; ", p || (s += "if (" + I + " !== undefined)"), s += " " + I + "[" + (p ? e.dataPathArr[p] : "parentDataProperty") + "] = " + E + "; } "
 								} else {
 									(K = K || []).push(s), s = "", !1 !== e.createErrors ? (s += " { keyword: 'type' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(h) + " , params: { type: '", s += $ ? "" + j.join(",") : "" + j, s += "' } ", !1 !== e.opts.messages && (s += " , message: 'should be ", s += $ ? "" + j.join(",") : "" + j, s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + _ + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + l + " "), s += " } ") : s += " {} ";
 									g = s;
@@ -1160,10 +1160,10 @@
 											} else if ("array" == x.type && Array.isArray(e.schema.items)) {
 											var H = e.schema.items;
 											if (H) {
-												D = -1;
-												for (var B, W = H.length - 1; D < W;)
-													if (void 0 !== (B = H[D += 1]).default) {
-														M = l + "[" + D + "]";
+												R = -1;
+												for (var B, W = H.length - 1; R < W;)
+													if (void 0 !== (B = H[R += 1]).default) {
+														M = l + "[" + R + "]";
 														if (e.compositeRule) {
 															if (e.opts.strictDefaults) {
 																v = "default is ignored for: " + M;
@@ -1260,8 +1260,8 @@
 									util: d,
 									resolve: O,
 									resolveRef: $,
-									usePattern: P,
-									useDefault: q,
+									usePattern: q,
+									useDefault: P,
 									useCustomRule: E,
 									opts: r,
 									formats: y,
@@ -1320,12 +1320,12 @@
 							}
 						}
 
-						function P(e) {
+						function q(e) {
 							var t = _[e];
 							return void 0 === t && (t = _[e] = m.length, m[t] = e), "pattern" + t
 						}
 
-						function q(e) {
+						function P(e) {
 							switch (typeof e) {
 								case "boolean":
 								case "number":
@@ -1461,7 +1461,7 @@
 					}(i) ? 29 : he[s])
 				}
 
-				function Pe(e, t) {
+				function qe(e, t) {
 					var i = e.match(fe);
 					if (!i) return !1;
 					var s = i[1],
@@ -1489,10 +1489,10 @@
 					"relative-json-pointer": je
 				}, ke.full = {
 					date: xe,
-					time: Pe,
+					time: qe,
 					"date-time": function(e) {
-						var t = e.split(qe);
-						return 2 == t.length && xe(t[0]) && Pe(t[1], !0)
+						var t = e.split(Pe);
+						return 2 == t.length && xe(t[0]) && qe(t[1], !0)
 					},
 					uri: function(e) {
 						return Ee.test(e) && ue.test(e)
@@ -1510,7 +1510,7 @@
 					"json-pointer-uri-fragment": we,
 					"relative-json-pointer": je
 				};
-				var qe = /t|\s/i;
+				var Pe = /t|\s/i;
 				var Ee = /\/|:/;
 				var Te = /[^\\]\\Z/;
 
@@ -1545,29 +1545,29 @@
 								w = "exclusive" + o,
 								j = "exclType" + o,
 								$ = "exclIsNumber" + o,
-								k = "' + " + (q = "op" + o) + " + '";
+								k = "' + " + (P = "op" + o) + " + '";
 							n += " var schemaExcl" + o + " = " + b + "; ", n += " var " + w + "; var " + j + " = typeof " + (b = "schemaExcl" + o) + "; if (" + j + " != 'boolean' && " + j + " != 'undefined' && " + j + " != 'number') { ";
 							var x;
 							v = f;
 							(x = x || []).push(n), n = "", !1 !== e.createErrors ? (n += " { keyword: '" + (v || "_exclusiveLimit") + "' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(c) + " , params: {} ", !1 !== e.opts.messages && (n += " , message: '" + f + " should be boolean' "), e.opts.verbose && (n += " , schema: validate.schema" + d + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + m + " "), n += " } ") : n += " {} ";
-							var P = n;
-							n = x.pop(), !e.compositeRule && p ? e.async ? n += " throw new ValidationError([" + P + "]); " : n += " validate.errors = [" + P + "]; return false; " : n += " var err = " + P + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", n += " } else if ( ", _ && (n += " (" + s + " !== undefined && typeof " + s + " != 'number') || "), n += " " + j + " == 'number' ? ( (" + w + " = " + s + " === undefined || " + b + " " + g + "= " + s + ") ? " + m + " " + y + "= " + b + " : " + m + " " + y + " " + s + " ) : ( (" + w + " = " + b + " === true) ? " + m + " " + y + "= " + s + " : " + m + " " + y + " " + s + " ) || " + m + " !== " + m + ") { var op" + o + " = " + w + " ? '" + g + "' : '" + g + "='; ", void 0 === a && (v = f, c = e.errSchemaPath + "/" + f, s = b, _ = u)
+							var q = n;
+							n = x.pop(), !e.compositeRule && p ? e.async ? n += " throw new ValidationError([" + q + "]); " : n += " validate.errors = [" + q + "]; return false; " : n += " var err = " + q + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", n += " } else if ( ", _ && (n += " (" + s + " !== undefined && typeof " + s + " != 'number') || "), n += " " + j + " == 'number' ? ( (" + w + " = " + s + " === undefined || " + b + " " + g + "= " + s + ") ? " + m + " " + y + "= " + b + " : " + m + " " + y + " " + s + " ) : ( (" + w + " = " + b + " === true) ? " + m + " " + y + "= " + s + " : " + m + " " + y + " " + s + " ) || " + m + " !== " + m + ") { var op" + o + " = " + w + " ? '" + g + "' : '" + g + "='; ", void 0 === a && (v = f, c = e.errSchemaPath + "/" + f, s = b, _ = u)
 						} else {
 							k = g;
 							if (($ = "number" == typeof l) && _) {
-								var q = "'" + k + "'";
+								var P = "'" + k + "'";
 								n += " if ( ", _ && (n += " (" + s + " !== undefined && typeof " + s + " != 'number') || "), n += " ( " + s + " === undefined || " + l + " " + g + "= " + s + " ? " + m + " " + y + "= " + l + " : " + m + " " + y + " " + s + " ) || " + m + " !== " + m + ") { "
 							} else {
 								$ && void 0 === a ? (w = !0, v = f, c = e.errSchemaPath + "/" + f, s = l, y += "=") : ($ && (s = Math[h ? "min" : "max"](l, a)), l === (!$ || s) ? (w = !0, v = f, c = e.errSchemaPath + "/" + f, y += "=") : (w = !1, k += "="));
-								q = "'" + k + "'";
+								P = "'" + k + "'";
 								n += " if ( ", _ && (n += " (" + s + " !== undefined && typeof " + s + " != 'number') || "), n += " " + m + " " + y + " " + s + " || " + m + " !== " + m + ") { "
 							}
 						}
-						v = v || t, (x = x || []).push(n), n = "", !1 !== e.createErrors ? (n += " { keyword: '" + (v || "_limit") + "' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(c) + " , params: { comparison: " + q + ", limit: " + s + ", exclusive: " + w + " } ", !1 !== e.opts.messages && (n += " , message: 'should be " + k + " ", n += _ ? "' + " + s : s + "'"), e.opts.verbose && (n += " , schema:  ", n += _ ? "validate.schema" + d : "" + a, n += "         , parentSchema: validate.schema" + e.schemaPath + " , data: " + m + " "), n += " } ") : n += " {} ";
-						P = n;
-						return n = x.pop(), !e.compositeRule && p ? e.async ? n += " throw new ValidationError([" + P + "]); " : n += " validate.errors = [" + P + "]; return false; " : n += " var err = " + P + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", n += " } ", p && (n += " else { "), n
+						v = v || t, (x = x || []).push(n), n = "", !1 !== e.createErrors ? (n += " { keyword: '" + (v || "_limit") + "' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(c) + " , params: { comparison: " + P + ", limit: " + s + ", exclusive: " + w + " } ", !1 !== e.opts.messages && (n += " , message: 'should be " + k + " ", n += _ ? "' + " + s : s + "'"), e.opts.verbose && (n += " , schema:  ", n += _ ? "validate.schema" + d : "" + a, n += "         , parentSchema: validate.schema" + e.schemaPath + " , data: " + m + " "), n += " } ") : n += " {} ";
+						q = n;
+						return n = x.pop(), !e.compositeRule && p ? e.async ? n += " throw new ValidationError([" + q + "]); " : n += " validate.errors = [" + q + "]; return false; " : n += " var err = " + q + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", n += " } ", p && (n += " else { "), n
 					},
-					De = function(e, t, i) {
+					Re = function(e, t, i) {
 						var s, n = " ",
 							o = e.level,
 							r = e.dataLevel,
@@ -1584,7 +1584,7 @@
 						var l = n;
 						return n = f.pop(), !e.compositeRule && p ? e.async ? n += " throw new ValidationError([" + l + "]); " : n += " validate.errors = [" + l + "]; return false; " : n += " var err = " + l + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", n += "} ", p && (n += " else { "), n
 					},
-					Ie = function(e, t, i) {
+					De = function(e, t, i) {
 						var s, n = " ",
 							o = e.level,
 							r = e.dataLevel,
@@ -1603,7 +1603,7 @@
 						var u = n;
 						return n = l.pop(), !e.compositeRule && p ? e.async ? n += " throw new ValidationError([" + u + "]); " : n += " validate.errors = [" + u + "]; return false; " : n += " var err = " + u + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", n += "} ", p && (n += " else { "), n
 					},
-					Re = function(e, t, i) {
+					Ie = function(e, t, i) {
 						var s, n = " ",
 							o = e.level,
 							r = e.dataLevel,
@@ -1794,25 +1794,25 @@
 										var j = v;
 										if (j)
 											for (var $ = -1, k = j.length - 1; $ < k;) {
-												S = j[$ += 1], $ && (s += " || "), s += " ( ( " + (R = p + (I = e.util.getProperty(S))) + " === undefined ", g && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(S) + "') "), s += ") && (missing" + n + " = " + e.util.toQuotedString(e.opts.jsonPointers ? S : I) + ") ) "
+												S = j[$ += 1], $ && (s += " || "), s += " ( ( " + (I = p + (D = e.util.getProperty(S))) + " === undefined ", g && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(S) + "') "), s += ") && (missing" + n + " = " + e.util.toQuotedString(e.opts.jsonPointers ? S : D) + ") ) "
 											}
 										s += ")) {  ";
 										var x = "missing" + n,
-											P = "' + " + x + " + '";
+											q = "' + " + x + " + '";
 										e.opts._errorDataPathProperty && (e.errorPath = e.opts.jsonPointers ? e.util.getPathExpr(b, x, !0) : b + " + " + x);
-										var q = q || [];
-										q.push(s), s = "", !1 !== e.createErrors ? (s += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { property: '" + e.util.escapeQuotes(w) + "', missingProperty: '" + P + "', depsCount: " + v.length + ", deps: '" + e.util.escapeQuotes(1 == v.length ? v[0] : v.join(", ")) + "' } ", !1 !== e.opts.messages && (s += " , message: 'should have ", 1 == v.length ? s += "property " + e.util.escapeQuotes(v[0]) : s += "properties " + e.util.escapeQuotes(v.join(", ")), s += " when property " + e.util.escapeQuotes(w) + " is present' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ";
+										var P = P || [];
+										P.push(s), s = "", !1 !== e.createErrors ? (s += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { property: '" + e.util.escapeQuotes(w) + "', missingProperty: '" + q + "', depsCount: " + v.length + ", deps: '" + e.util.escapeQuotes(1 == v.length ? v[0] : v.join(", ")) + "' } ", !1 !== e.opts.messages && (s += " , message: 'should have ", 1 == v.length ? s += "property " + e.util.escapeQuotes(v[0]) : s += "properties " + e.util.escapeQuotes(v.join(", ")), s += " when property " + e.util.escapeQuotes(w) + " is present' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ";
 										var E = s;
-										s = q.pop(), !e.compositeRule && c ? e.async ? s += " throw new ValidationError([" + E + "]); " : s += " validate.errors = [" + E + "]; return false; " : s += " var err = " + E + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; "
+										s = P.pop(), !e.compositeRule && c ? e.async ? s += " throw new ValidationError([" + E + "]); " : s += " validate.errors = [" + E + "]; return false; " : s += " var err = " + E + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; "
 									} else {
 										s += " ) { ";
 										var T = v;
 										if (T)
-											for (var S, A = -1, D = T.length - 1; A < D;) {
+											for (var S, A = -1, R = T.length - 1; A < R;) {
 												S = T[A += 1];
-												var I = e.util.getProperty(S),
-													R = (P = e.util.escapeQuotes(S), p + I);
-												e.opts._errorDataPathProperty && (e.errorPath = e.util.getPath(b, S, e.opts.jsonPointers)), s += " if ( " + R + " === undefined ", g && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(S) + "') "), s += ") {  var err =   ", !1 !== e.createErrors ? (s += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { property: '" + e.util.escapeQuotes(w) + "', missingProperty: '" + P + "', depsCount: " + v.length + ", deps: '" + e.util.escapeQuotes(1 == v.length ? v[0] : v.join(", ")) + "' } ", !1 !== e.opts.messages && (s += " , message: 'should have ", 1 == v.length ? s += "property " + e.util.escapeQuotes(v[0]) : s += "properties " + e.util.escapeQuotes(v.join(", ")), s += " when property " + e.util.escapeQuotes(w) + " is present' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ", s += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } "
+												var D = e.util.getProperty(S),
+													I = (q = e.util.escapeQuotes(S), p + D);
+												e.opts._errorDataPathProperty && (e.errorPath = e.util.getPath(b, S, e.opts.jsonPointers)), s += " if ( " + I + " === undefined ", g && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(S) + "') "), s += ") {  var err =   ", !1 !== e.createErrors ? (s += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { property: '" + e.util.escapeQuotes(w) + "', missingProperty: '" + q + "', depsCount: " + v.length + ", deps: '" + e.util.escapeQuotes(1 == v.length ? v[0] : v.join(", ")) + "' } ", !1 !== e.opts.messages && (s += " , message: 'should have ", 1 == v.length ? s += "property " + e.util.escapeQuotes(v[0]) : s += "properties " + e.util.escapeQuotes(v.join(", ")), s += " when property " + e.util.escapeQuotes(w) + " is present' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ", s += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } "
 											}
 									}
 									s += " }   ", c && (h += "}", s += " else { ")
@@ -1946,11 +1946,11 @@
 								}
 								var k = r;
 								if (k)
-									for (var x, P = -1, q = k.length - 1; P < q;)
-										if (x = k[P += 1], e.opts.strictKeywords ? "object" == typeof x && Object.keys(x).length > 0 : e.util.schemaHasRules(x, e.RULES.all)) {
-											s += " " + l + " = true; if (" + p + ".length > " + P + ") { ";
-											var E = p + "[" + P + "]";
-											h.schema = x, h.schemaPath = a + "[" + P + "]", h.errSchemaPath = d + "/" + P, h.errorPath = e.util.getPathExpr(e.errorPath, P, e.opts.jsonPointers, !0), h.dataPathArr[g] = P;
+									for (var x, q = -1, P = k.length - 1; q < P;)
+										if (x = k[q += 1], e.opts.strictKeywords ? "object" == typeof x && Object.keys(x).length > 0 : e.util.schemaHasRules(x, e.RULES.all)) {
+											s += " " + l + " = true; if (" + p + ".length > " + q + ") { ";
+											var E = p + "[" + q + "]";
+											h.schema = x, h.schemaPath = a + "[" + q + "]", h.errSchemaPath = d + "/" + q, h.errorPath = e.util.getPathExpr(e.errorPath, q, e.opts.jsonPointers, !0), h.dataPathArr[g] = q;
 											var T = e.validate(h);
 											h.baseId = v, e.util.varOccurences(T, y) < 2 ? s += " " + e.util.varReplace(T, y, E) + " " : s += " var " + y + " = " + E + "; " + T + " ", s += " }  ", c && (s += " if (" + l + ") { ", f += "}")
 										} if ("object" == typeof b && (e.opts.strictKeywords ? "object" == typeof b && Object.keys(b).length > 0 : e.util.schemaHasRules(b, e.RULES.all))) {
@@ -1971,12 +1971,12 @@
 						},
 						maximum: Ae,
 						minimum: Ae,
-						maxItems: De,
-						minItems: De,
-						maxLength: Ie,
-						minLength: Ie,
-						maxProperties: Re,
-						minProperties: Re,
+						maxItems: Re,
+						minItems: Re,
+						maxLength: De,
+						minLength: De,
+						maxProperties: Ie,
+						minProperties: Ie,
 						multipleOf: function(e, t, i) {
 							var s, n = " ",
 								o = e.level,
@@ -2084,21 +2084,21 @@
 								$ = e.schema.additionalProperties,
 								k = b.length || j.length,
 								x = !1 === $,
-								P = "object" == typeof $ && Object.keys($).length,
-								q = e.opts.removeAdditional,
-								E = x || P || q,
+								q = "object" == typeof $ && Object.keys($).length,
+								P = e.opts.removeAdditional,
+								E = x || q || P,
 								T = e.opts.ownProperties,
 								S = e.baseId,
 								A = e.schema.required;
-							if (A && (!e.opts.$data || !A.$data) && A.length < e.opts.loopRequired) var D = e.util.toHash(A);
+							if (A && (!e.opts.$data || !A.$data) && A.length < e.opts.loopRequired) var R = e.util.toHash(A);
 							if (s += "var " + m + " = errors;var " + f + " = true;", T && (s += " var " + v + " = undefined;"), E) {
 								if (s += T ? " " + v + " = " + v + " || Object.keys(" + p + "); for (var " + u + "=0; " + u + "<" + v + ".length; " + u + "++) { var " + l + " = " + v + "[" + u + "]; " : " for (var " + l + " in " + p + ") { ", k) {
 									if (s += " var isAdditional" + n + " = !(false ", b.length)
 										if (b.length > 8) s += " || validate.schema" + a + ".hasOwnProperty(" + l + ") ";
 										else {
-											var I = b;
-											if (I)
-												for (var R = -1, F = I.length - 1; R < F;) G = I[R += 1], s += " || " + l + " == " + e.util.toQuotedString(G) + " "
+											var D = b;
+											if (D)
+												for (var I = -1, F = D.length - 1; I < F;) G = D[I += 1], s += " || " + l + " == " + e.util.toQuotedString(G) + " "
 										} if (j.length) {
 										var O = j;
 										if (O)
@@ -2106,12 +2106,12 @@
 									}
 									s += " ); if (isAdditional" + n + ") { "
 								}
-								if ("all" == q) s += " delete " + p + "[" + l + "]; ";
+								if ("all" == P) s += " delete " + p + "[" + l + "]; ";
 								else {
 									var z = e.errorPath,
 										L = "' + " + l + " + '";
 									if (e.opts._errorDataPathProperty && (e.errorPath = e.util.getPathExpr(e.errorPath, l, e.opts.jsonPointers)), x)
-										if (q) s += " delete " + p + "[" + l + "]; ";
+										if (P) s += " delete " + p + "[" + l + "]; ";
 										else {
 											s += " " + f + " = false; ";
 											var N = d;
@@ -2119,8 +2119,8 @@
 											var M = s;
 											s = te.pop(), !e.compositeRule && c ? e.async ? s += " throw new ValidationError([" + M + "]); " : s += " validate.errors = [" + M + "]; return false; " : s += " var err = " + M + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", d = N, c && (s += " break; ")
 										}
-									else if (P)
-										if ("failing" == q) {
+									else if (q)
+										if ("failing" == P) {
 											s += " var " + m + " = errors;  ";
 											var H = e.compositeRule;
 											e.compositeRule = _.compositeRule = !0, _.schema = $, _.schemaPath = e.schemaPath + ".additionalProperties", _.errSchemaPath = e.errSchemaPath + "/additionalProperties", _.errorPath = e.opts._errorDataPathProperty ? e.errorPath : e.util.getPathExpr(e.errorPath, l, e.opts.jsonPointers);
@@ -2158,7 +2158,7 @@
 											}
 											if (X) s += " " + W + " ";
 											else {
-												if (D && D[G]) {
+												if (R && R[G]) {
 													s += " if ( " + ee + " === undefined ", T && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(G) + "') "), s += ") { " + f + " = false; ";
 													z = e.errorPath, N = d;
 													var te, ie = e.util.escapeQuotes(G);
@@ -2251,16 +2251,16 @@
 								if (c)
 									if (s += " var missing" + n + "; ", w) {
 										_ || (s += " var " + h + " = validate.schema" + a + "; ");
-										var $ = "' + " + (T = "schema" + n + "[" + (P = "i" + n) + "]") + " + '";
-										e.opts._errorDataPathProperty && (e.errorPath = e.util.getPathExpr(b, T, e.opts.jsonPointers)), s += " var " + m + " = true; ", _ && (s += " if (schema" + n + " === undefined) " + m + " = true; else if (!Array.isArray(schema" + n + ")) " + m + " = false; else {"), s += " for (var " + P + " = 0; " + P + " < " + h + ".length; " + P + "++) { " + m + " = " + p + "[" + h + "[" + P + "]] !== undefined ", j && (s += " &&   Object.prototype.hasOwnProperty.call(" + p + ", " + h + "[" + P + "]) "), s += "; if (!" + m + ") break; } ", _ && (s += "  }  "), s += "  if (!" + m + ") {   ", (E = E || []).push(s), s = "", !1 !== e.createErrors ? (s += " { keyword: 'required' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { missingProperty: '" + $ + "' } ", !1 !== e.opts.messages && (s += " , message: '", e.opts._errorDataPathProperty ? s += "is a required property" : s += "should have required property \\'" + $ + "\\'", s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ";
+										var $ = "' + " + (T = "schema" + n + "[" + (q = "i" + n) + "]") + " + '";
+										e.opts._errorDataPathProperty && (e.errorPath = e.util.getPathExpr(b, T, e.opts.jsonPointers)), s += " var " + m + " = true; ", _ && (s += " if (schema" + n + " === undefined) " + m + " = true; else if (!Array.isArray(schema" + n + ")) " + m + " = false; else {"), s += " for (var " + q + " = 0; " + q + " < " + h + ".length; " + q + "++) { " + m + " = " + p + "[" + h + "[" + q + "]] !== undefined ", j && (s += " &&   Object.prototype.hasOwnProperty.call(" + p + ", " + h + "[" + q + "]) "), s += "; if (!" + m + ") break; } ", _ && (s += "  }  "), s += "  if (!" + m + ") {   ", (E = E || []).push(s), s = "", !1 !== e.createErrors ? (s += " { keyword: 'required' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { missingProperty: '" + $ + "' } ", !1 !== e.opts.messages && (s += " , message: '", e.opts._errorDataPathProperty ? s += "is a required property" : s += "should have required property \\'" + $ + "\\'", s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ";
 										var k = s;
 										s = E.pop(), !e.compositeRule && c ? e.async ? s += " throw new ValidationError([" + k + "]); " : s += " validate.errors = [" + k + "]; return false; " : s += " var err = " + k + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", s += " } else { "
 									} else {
 										s += " if ( ";
 										var x = f;
 										if (x)
-											for (var P = -1, q = x.length - 1; P < q;) {
-												A = x[P += 1], P && (s += " || "), s += " ( ( " + (F = p + (R = e.util.getProperty(A))) + " === undefined ", j && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(A) + "') "), s += ") && (missing" + n + " = " + e.util.toQuotedString(e.opts.jsonPointers ? A : R) + ") ) "
+											for (var q = -1, P = x.length - 1; q < P;) {
+												A = x[q += 1], q && (s += " || "), s += " ( ( " + (F = p + (I = e.util.getProperty(A))) + " === undefined ", j && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(A) + "') "), s += ") && (missing" + n + " = " + e.util.toQuotedString(e.opts.jsonPointers ? A : I) + ") ) "
 											}
 										s += ") {  ";
 										var E;
@@ -2272,15 +2272,15 @@
 								else if (w) {
 									_ || (s += " var " + h + " = validate.schema" + a + "; ");
 									var T;
-									$ = "' + " + (T = "schema" + n + "[" + (P = "i" + n) + "]") + " + '";
-									e.opts._errorDataPathProperty && (e.errorPath = e.util.getPathExpr(b, T, e.opts.jsonPointers)), _ && (s += " if (" + h + " && !Array.isArray(" + h + ")) {  var err =   ", !1 !== e.createErrors ? (s += " { keyword: 'required' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { missingProperty: '" + $ + "' } ", !1 !== e.opts.messages && (s += " , message: '", e.opts._errorDataPathProperty ? s += "is a required property" : s += "should have required property \\'" + $ + "\\'", s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ", s += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } else if (" + h + " !== undefined) { "), s += " for (var " + P + " = 0; " + P + " < " + h + ".length; " + P + "++) { if (" + p + "[" + h + "[" + P + "]] === undefined ", j && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", " + h + "[" + P + "]) "), s += ") {  var err =   ", !1 !== e.createErrors ? (s += " { keyword: 'required' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { missingProperty: '" + $ + "' } ", !1 !== e.opts.messages && (s += " , message: '", e.opts._errorDataPathProperty ? s += "is a required property" : s += "should have required property \\'" + $ + "\\'", s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ", s += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } } ", _ && (s += "  }  ")
+									$ = "' + " + (T = "schema" + n + "[" + (q = "i" + n) + "]") + " + '";
+									e.opts._errorDataPathProperty && (e.errorPath = e.util.getPathExpr(b, T, e.opts.jsonPointers)), _ && (s += " if (" + h + " && !Array.isArray(" + h + ")) {  var err =   ", !1 !== e.createErrors ? (s += " { keyword: 'required' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { missingProperty: '" + $ + "' } ", !1 !== e.opts.messages && (s += " , message: '", e.opts._errorDataPathProperty ? s += "is a required property" : s += "should have required property \\'" + $ + "\\'", s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ", s += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } else if (" + h + " !== undefined) { "), s += " for (var " + q + " = 0; " + q + " < " + h + ".length; " + q + "++) { if (" + p + "[" + h + "[" + q + "]] === undefined ", j && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", " + h + "[" + q + "]) "), s += ") {  var err =   ", !1 !== e.createErrors ? (s += " { keyword: 'required' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { missingProperty: '" + $ + "' } ", !1 !== e.opts.messages && (s += " , message: '", e.opts._errorDataPathProperty ? s += "is a required property" : s += "should have required property \\'" + $ + "\\'", s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ", s += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } } ", _ && (s += "  }  ")
 								} else {
 									var S = f;
 									if (S)
-										for (var A, D = -1, I = S.length - 1; D < I;) {
-											A = S[D += 1];
-											var R = e.util.getProperty(A),
-												F = ($ = e.util.escapeQuotes(A), p + R);
+										for (var A, R = -1, D = S.length - 1; R < D;) {
+											A = S[R += 1];
+											var I = e.util.getProperty(A),
+												F = ($ = e.util.escapeQuotes(A), p + I);
 											e.opts._errorDataPathProperty && (e.errorPath = e.util.getPath(b, A, e.opts.jsonPointers)), s += " if ( " + F + " === undefined ", j && (s += " || ! Object.prototype.hasOwnProperty.call(" + p + ", '" + e.util.escapeQuotes(A) + "') "), s += ") {  var err =   ", !1 !== e.createErrors ? (s += " { keyword: 'required' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(d) + " , params: { missingProperty: '" + $ + "' } ", !1 !== e.opts.messages && (s += " , message: '", e.opts._errorDataPathProperty ? s += "is a required property" : s += "should have required property \\'" + $ + "\\'", s += "' "), e.opts.verbose && (s += " , schema: validate.schema" + a + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + p + " "), s += " } ") : s += " {} ", s += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } "
 										}
 								}
@@ -2455,8 +2455,8 @@
 							n = "validate.schema" + c, b = v.code, u = j.compile, g = j.inline, y = j.macro
 						}
 						var x = b + ".errors",
-							P = "i" + r,
-							q = "ruleErr" + r,
+							q = "i" + r,
+							P = "ruleErr" + r,
 							E = j.async;
 						if (E && !e.async) throw new Error("async keyword in sync schema");
 						if (g || y || (o += x + " = null;"), o += "var " + f + " = errors;var " + h + ";", l && j.$data && ($ += "}", o += " if (" + n + " === undefined) { " + h + " = true; } else { ", k && ($ += "}", o += " " + h + " = " + w + ".validateSchema(" + n + "); if (" + h + ") { ")), g) j.statements ? o += " " + v.validate + " " : o += " " + h + " = " + v.validate + "; ";
@@ -2468,23 +2468,23 @@
 							T.schema = v.validate, T.schemaPath = "";
 							var A = e.compositeRule;
 							e.compositeRule = T.compositeRule = !0;
-							var D = e.validate(T).replace(/validate\.schema/g, b);
-							e.compositeRule = T.compositeRule = A, o += " " + D
+							var R = e.validate(T).replace(/validate\.schema/g, b);
+							e.compositeRule = T.compositeRule = A, o += " " + R
 						} else {
 							(O = O || []).push(o), o = "", o += "  " + b + ".call( ", e.opts.passContext ? o += "this" : o += "self", u || !1 === j.schema ? o += " , " + _ + " " : o += " , " + n + " , " + _ + " , validate.schema" + e.schemaPath + " ", o += " , (dataPath || '')", '""' != e.errorPath && (o += " + " + e.errorPath);
-							var I = a ? "data" + (a - 1 || "") : "parentData",
-								R = a ? e.dataPathArr[a] : "parentDataProperty",
-								F = o += " , " + I + " , " + R + " , rootData )  ";
+							var D = a ? "data" + (a - 1 || "") : "parentData",
+								I = a ? e.dataPathArr[a] : "parentDataProperty",
+								F = o += " , " + D + " , " + I + " , rootData )  ";
 							o = O.pop(), !1 === j.errors ? (o += " " + h + " = ", E && (o += "await "), o += F + "; ") : o += E ? " var " + (x = "customErrors" + r) + " = null; try { " + h + " = await " + F + "; } catch (e) { " + h + " = false; if (e instanceof ValidationError) " + x + " = e.errors; else throw e; } " : " " + x + " = null; " + h + " = " + F + "; "
 						}
-						if (j.modifying && (o += " if (" + I + ") " + _ + " = " + I + "[" + R + "];"), o += "" + $, j.valid) m && (o += " if (true) { ");
+						if (j.modifying && (o += " if (" + D + ") " + _ + " = " + D + "[" + I + "];"), o += "" + $, j.valid) m && (o += " if (true) { ");
 						else {
 							var O;
 							o += " if ( ", void 0 === j.valid ? (o += " !", o += y ? "" + S : "" + h) : o += " " + !j.valid + " ", o += ") { ", s = this.keyword, (O = O || []).push(o), o = "", (O = O || []).push(o), o = "", !1 !== e.createErrors ? (o += " { keyword: '" + (s || "custom") + "' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(p) + " , params: { keyword: '" + this.keyword + "' } ", !1 !== e.opts.messages && (o += " , message: 'should pass \"" + this.keyword + "\" keyword validation' "), e.opts.verbose && (o += " , schema: validate.schema" + c + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + _ + " "), o += " } ") : o += " {} ";
 							var C = o;
 							o = O.pop(), !e.compositeRule && m ? e.async ? o += " throw new ValidationError([" + C + "]); " : o += " validate.errors = [" + C + "]; return false; " : o += " var err = " + C + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
 							var U = o;
-							o = O.pop(), g ? j.errors ? "full" != j.errors && (o += "  for (var " + P + "=" + f + "; " + P + "<errors; " + P + "++) { var " + q + " = vErrors[" + P + "]; if (" + q + ".dataPath === undefined) " + q + ".dataPath = (dataPath || '') + " + e.errorPath + "; if (" + q + ".schemaPath === undefined) { " + q + '.schemaPath = "' + p + '"; } ', e.opts.verbose && (o += " " + q + ".schema = " + n + "; " + q + ".data = " + _ + "; "), o += " } ") : !1 === j.errors ? o += " " + U + " " : (o += " if (" + f + " == errors) { " + U + " } else {  for (var " + P + "=" + f + "; " + P + "<errors; " + P + "++) { var " + q + " = vErrors[" + P + "]; if (" + q + ".dataPath === undefined) " + q + ".dataPath = (dataPath || '') + " + e.errorPath + "; if (" + q + ".schemaPath === undefined) { " + q + '.schemaPath = "' + p + '"; } ', e.opts.verbose && (o += " " + q + ".schema = " + n + "; " + q + ".data = " + _ + "; "), o += " } } ") : y ? (o += "   var err =   ", !1 !== e.createErrors ? (o += " { keyword: '" + (s || "custom") + "' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(p) + " , params: { keyword: '" + this.keyword + "' } ", !1 !== e.opts.messages && (o += " , message: 'should pass \"" + this.keyword + "\" keyword validation' "), e.opts.verbose && (o += " , schema: validate.schema" + c + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + _ + " "), o += " } ") : o += " {} ", o += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", !e.compositeRule && m && (e.async ? o += " throw new ValidationError(vErrors); " : o += " validate.errors = vErrors; return false; ")) : !1 === j.errors ? o += " " + U + " " : (o += " if (Array.isArray(" + x + ")) { if (vErrors === null) vErrors = " + x + "; else vErrors = vErrors.concat(" + x + "); errors = vErrors.length;  for (var " + P + "=" + f + "; " + P + "<errors; " + P + "++) { var " + q + " = vErrors[" + P + "]; if (" + q + ".dataPath === undefined) " + q + ".dataPath = (dataPath || '') + " + e.errorPath + ";  " + q + '.schemaPath = "' + p + '";  ', e.opts.verbose && (o += " " + q + ".schema = " + n + "; " + q + ".data = " + _ + "; "), o += " } } else { " + U + " } "), o += " } ", m && (o += " else { ")
+							o = O.pop(), g ? j.errors ? "full" != j.errors && (o += "  for (var " + q + "=" + f + "; " + q + "<errors; " + q + "++) { var " + P + " = vErrors[" + q + "]; if (" + P + ".dataPath === undefined) " + P + ".dataPath = (dataPath || '') + " + e.errorPath + "; if (" + P + ".schemaPath === undefined) { " + P + '.schemaPath = "' + p + '"; } ', e.opts.verbose && (o += " " + P + ".schema = " + n + "; " + P + ".data = " + _ + "; "), o += " } ") : !1 === j.errors ? o += " " + U + " " : (o += " if (" + f + " == errors) { " + U + " } else {  for (var " + q + "=" + f + "; " + q + "<errors; " + q + "++) { var " + P + " = vErrors[" + q + "]; if (" + P + ".dataPath === undefined) " + P + ".dataPath = (dataPath || '') + " + e.errorPath + "; if (" + P + ".schemaPath === undefined) { " + P + '.schemaPath = "' + p + '"; } ', e.opts.verbose && (o += " " + P + ".schema = " + n + "; " + P + ".data = " + _ + "; "), o += " } } ") : y ? (o += "   var err =   ", !1 !== e.createErrors ? (o += " { keyword: '" + (s || "custom") + "' , dataPath: (dataPath || '') + " + e.errorPath + " , schemaPath: " + e.util.toQuotedString(p) + " , params: { keyword: '" + this.keyword + "' } ", !1 !== e.opts.messages && (o += " , message: 'should pass \"" + this.keyword + "\" keyword validation' "), e.opts.verbose && (o += " , schema: validate.schema" + c + " , parentSchema: validate.schema" + e.schemaPath + " , data: " + _ + " "), o += " } ") : o += " {} ", o += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ", !e.compositeRule && m && (e.async ? o += " throw new ValidationError(vErrors); " : o += " validate.errors = vErrors; return false; ")) : !1 === j.errors ? o += " " + U + " " : (o += " if (Array.isArray(" + x + ")) { if (vErrors === null) vErrors = " + x + "; else vErrors = vErrors.concat(" + x + "); errors = vErrors.length;  for (var " + q + "=" + f + "; " + q + "<errors; " + q + "++) { var " + P + " = vErrors[" + q + "]; if (" + P + ".dataPath === undefined) " + P + ".dataPath = (dataPath || '') + " + e.errorPath + ";  " + P + '.schemaPath = "' + p + '";  ', e.opts.verbose && (o += " " + P + ".schema = " + n + "; " + P + ".data = " + _ + "; "), o += " } } else { " + U + " } "), o += " } ", m && (o += " else { ")
 						}
 						return o
 					},
@@ -2930,7 +2930,7 @@
 										n = i.root,
 										o = i.baseId,
 										r = ie.call(e, s, n, void 0, o);
-									return e._fragments[t] = new R({
+									return e._fragments[t] = new I({
 										ref: t,
 										fragment: !0,
 										schema: s,
@@ -2979,7 +2979,7 @@
 					var d, c = !1 !== this._opts.validateSchema && !t;
 					c && !(d = a && a == O.normalizeId(e.$schema)) && this.validateSchema(e, !0);
 					var p = O.ids.call(this, e),
-						m = new R({
+						m = new I({
 							id: a,
 							schema: e,
 							localRefs: p,
@@ -3133,9 +3133,53 @@
 		"./node_modules/@reddit/event-schema-registry/dist/esm/index.js": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return ti
+				return _i
 			}));
 			var s = {
+					firing_logic: "Fires when bulk messenger job finishes execution",
+					$id: "http://com.reddit/schemas/event_schemas/admin_tool__bulk_message__subreddit.json",
+					properties: {
+						source: {
+							const: "admin_tool"
+						},
+						action: {
+							const: "bulk_message"
+						},
+						noun: {
+							const: "subreddit"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/19sAyx-9pc8aqyL_f_Z7EyfN-_zfGZb7wjH4fmnBA7UA/edit#"],
+					owner: "anti-evil-eng@reddit.com",
+					required: ["add_admin_note", "subject", "recipient_count", "sender_id", "give_coins", "distinguished", "message_type", "message_body", "add_to_sent_box", "repliable", "recipient_type", "admin_note"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				n = {
+					firing_logic: "Fires when bulk messenger job finishes execution",
+					$id: "http://com.reddit/schemas/event_schemas/admin_tool__bulk_message__user.json",
+					properties: {
+						source: {
+							const: "admin_tool"
+						},
+						action: {
+							const: "bulk_message"
+						},
+						noun: {
+							const: "user"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/19sAyx-9pc8aqyL_f_Z7EyfN-_zfGZb7wjH4fmnBA7UA/edit#"],
+					owner: "anti-evil-eng@reddit.com",
+					required: ["add_admin_note", "subject", "recipient_count", "sender_id", "give_coins", "distinguished", "message_type", "message_body", "add_to_sent_box", "repliable", "recipient_type", "admin_note"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				o = {
 					firing_logic: "Fired when an individual message tile is displayed (if the user scrolls through the carousel, fires once for each message the user sees)",
 					$id: "http://com.reddit/schemas/event_schemas/announcement__view__announcement.json",
 					properties: {
@@ -3157,7 +3201,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				n = {
+				r = {
 					firing_logic: "Comment search endpoint hit in GQL.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__comment_search.json",
 					properties: {
@@ -3179,7 +3223,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				o = {
+				a = {
 					firing_logic: "Rails/Best Tab makes a search request.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__full_search.json",
 					properties: {
@@ -3201,7 +3245,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				r = {
+				d = {
 					firing_logic: "Only for requests to /search, so when a user issues a post search.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__post_search.json",
 					properties: {
@@ -3223,7 +3267,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				a = {
+				c = {
 					firing_logic: "Fires on a request to one of the subreddit search endpoints.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__subreddit_search.json",
 					properties: {
@@ -3245,7 +3289,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				d = {
+				p = {
 					firing_logic: "Strictly for a typeahead request.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__typeahead_search.json",
 					properties: {
@@ -3267,7 +3311,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				c = {
+				m = {
 					firing_logic: "User submits a comment.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__submit__comment.json",
 					properties: {
@@ -3289,7 +3333,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				p = {
+				_ = {
 					firing_logic: "User submits a post.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__submit__post.json",
 					properties: {
@@ -3311,7 +3355,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				m = {
+				h = {
 					firing_logic: "User auto-upvotes content (aka the initial vote).",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__auto_upvote.json",
 					properties: {
@@ -3333,7 +3377,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				_ = {
+				f = {
 					firing_logic: "User clears his or her previous downvote.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__clear_downvote.json",
 					properties: {
@@ -3355,7 +3399,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				h = {
+				l = {
 					firing_logic: "User clears his or her previous upvote.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__clear_upvote.json",
 					properties: {
@@ -3377,7 +3421,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				f = {
+				u = {
 					firing_logic: "User downvotes content.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__downvote.json",
 					properties: {
@@ -3399,7 +3443,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				l = {
+				g = {
 					firing_logic: "User upvotes content.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__upvote.json",
 					properties: {
@@ -3421,7 +3465,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				u = {
+				y = {
 					firing_logic: "Fired on Coins package block click on /coins marketing page and top nav coins dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/coins_marketing__click__coins_package.json",
 					properties: {
@@ -3443,7 +3487,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				g = {
+				v = {
 					firing_logic: "User views Coins Marketing page.",
 					$id: "http://com.reddit/schemas/event_schemas/coins_marketing__view__page.json",
 					properties: {
@@ -3465,7 +3509,51 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				y = {
+				b = {
+					firing_logic: "Fire when a given comment has been in view for 2 continuous seconds.",
+					$id: "http://com.reddit/schemas/event_schemas/comment__consume__comment.json",
+					properties: {
+						source: {
+							const: "comment"
+						},
+						action: {
+							const: "consume"
+						},
+						noun: {
+							const: "comment"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1dRP6DXjRxE04Hsc80xF2TkYsBSOoAfz2mm5wUXzr3GY/edit#heading=h.y6w2ct9vq108"],
+					owner: "ads-engineering@reddit.com",
+					required: ["user_has_premium", "source", "session_id", "comment_post_id", "client_timestamp", "uuid", "comment_created_timestamp", "comment_score", "comment_parent_id", "comment_id", "user_id", "user_is_premium_subscriber", "noun", "user_logged_in", "comment_author_id", "request_base_url", "action_info_page_type", "screen_view_type", "comment_number_gildings", "app_name", "session_created_timestamp", "request_domain", "action"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				w = {
+					firing_logic: "Fire when a given comment scrolls into view",
+					$id: "http://com.reddit/schemas/event_schemas/comment__view__comment.json",
+					properties: {
+						source: {
+							const: "comment"
+						},
+						action: {
+							const: "view"
+						},
+						noun: {
+							const: "comment"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1dRP6DXjRxE04Hsc80xF2TkYsBSOoAfz2mm5wUXzr3GY/edit#heading=h.y6w2ct9vq108"],
+					owner: "ads-engineering@reddit.com",
+					required: ["user_has_premium", "source", "session_id", "comment_post_id", "client_timestamp", "uuid", "comment_created_timestamp", "comment_score", "comment_parent_id", "comment_id", "user_id", "user_is_premium_subscriber", "noun", "user_logged_in", "comment_author_id", "request_base_url", "action_info_page_type", "screen_view_type", "comment_number_gildings", "app_name", "session_created_timestamp", "request_domain", "action"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				j = {
 					firing_logic: "User taps on Premium from the top nav.",
 					$id: "http://com.reddit/schemas/event_schemas/community_nav__click__premium.json",
 					properties: {
@@ -3486,7 +3574,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				v = {
+				$ = {
 					firing_logic: "User clicks No on location verification prompt",
 					$id: "http://com.reddit/schemas/event_schemas/crowdsource__click__reject_location.json",
 					properties: {
@@ -3508,7 +3596,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				b = {
+				k = {
 					firing_logic: "Canonical location is being modified",
 					$id: "http://com.reddit/schemas/event_schemas/crowdsource__save__location.json",
 					properties: {
@@ -3530,7 +3618,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				w = {
+				x = {
 					firing_logic: "User submits location (not guaranteed source of truth)",
 					$id: "http://com.reddit/schemas/event_schemas/crowdsource__submit__location.json",
 					properties: {
@@ -3552,7 +3640,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				j = {
+				q = {
 					firing_logic: "Expose events are emitted when a user reaches an experiment code fork",
 					$id: "http://com.reddit/schemas/event_schemas/experiment__expose__user_id.json",
 					properties: {
@@ -3574,7 +3662,28 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				$ = {
+				P = {
+					firing_logic: "User selects account gender in settings page",
+					$id: "http://com.reddit/schemas/event_schemas/gender_app_settings__select__gender.json",
+					properties: {
+						source: {
+							const: "gender_app_settings"
+						},
+						action: {
+							const: "select"
+						},
+						noun: {
+							const: "gender"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1M-hcrD2WCkdpHxwwRA82iN-qUoCNbMA0SomMxcKmTlc"],
+					owner: "growth@reddit.com",
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				E = {
 					firing_logic: "User clicks Award button to award the post / comment (because they have enough Coins).",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__confirm.json",
 					properties: {
@@ -3596,7 +3705,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				k = {
+				T = {
 					firing_logic: "User clicks Silver award type",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__gid_1.json",
 					properties: {
@@ -3618,7 +3727,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				x = {
+				S = {
 					firing_logic: "User clicks Gold award type",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__gid_2.json",
 					properties: {
@@ -3640,7 +3749,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				P = {
+				A = {
 					firing_logic: "User clicks Platinum award type",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__gid_3.json",
 					properties: {
@@ -3662,7 +3771,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				q = {
+				R = {
 					firing_logic: "User clicks 'Next' button (because they don't have enough Coins)",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__next.json",
 					properties: {
@@ -3684,7 +3793,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				E = {
+				D = {
 					firing_logic: "User views Give Gold modal",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__view__page.json",
 					properties: {
@@ -3706,7 +3815,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				T = {
+				I = {
 					firing_logic: "Fired when a user leaves/exits Reddit",
 					$id: "http://com.reddit/schemas/event_schemas/global__leave__app.json",
 					properties: {
@@ -3728,7 +3837,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				S = {
+				F = {
 					firing_logic: "Fires when the page/content loads for a user",
 					$id: "http://com.reddit/schemas/event_schemas/global__view__screen.json",
 					properties: {
@@ -3750,7 +3859,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				A = {
+				O = {
 					firing_logic: "User clicks credit card option",
 					$id: "http://com.reddit/schemas/event_schemas/gold_payment__click__credit_card.json",
 					properties: {
@@ -3772,7 +3881,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				D = {
+				C = {
 					firing_logic: "User views Gold Payment modal",
 					$id: "http://com.reddit/schemas/event_schemas/gold_payment__view__page.json",
 					properties: {
@@ -3794,7 +3903,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				I = {
+				U = {
 					firing_logic: "User clicks on the user dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/nav__click__user.json",
 					properties: {
@@ -3815,7 +3924,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				R = {
+				z = {
 					firing_logic: "User click 'Give Gold' on post",
 					$id: "http://com.reddit/schemas/event_schemas/post__click__give_gold.json",
 					properties: {
@@ -3837,7 +3946,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				F = {
+				L = {
 					firing_logic: "User clicks on a post flair on a post.",
 					$id: "http://com.reddit/schemas/event_schemas/post__click__post_flair.json",
 					properties: {
@@ -3859,7 +3968,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				O = {
+				N = {
 					firing_logic: "Fired when a post that was >0% visible for at least 2 seconds becomes 0% visible (i.e. goes off screen).",
 					$id: "http://com.reddit/schemas/event_schemas/post__consume__post.json",
 					properties: {
@@ -3881,7 +3990,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				C = {
+				M = {
 					firing_logic: "Fired immediately when a post becomes >0% visible.",
 					$id: "http://com.reddit/schemas/event_schemas/post__view__post.json",
 					properties: {
@@ -3903,7 +4012,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				U = {
+				H = {
 					firing_logic: "User clicks top 'Get Reddit Premium' button to scroll to purchase section below",
 					$id: "http://com.reddit/schemas/event_schemas/premium_marketing__click__get_premium.json",
 					properties: {
@@ -3925,7 +4034,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				z = {
+				B = {
 					firing_logic: "User clicks bottom '$5.99 / Month' button to enter purchase flow",
 					$id: "http://com.reddit/schemas/event_schemas/premium_marketing__click__price.json",
 					properties: {
@@ -3947,7 +4056,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				L = {
+				W = {
 					firing_logic: "User views Premium Marketing page.",
 					$id: "http://com.reddit/schemas/event_schemas/premium_marketing__view__page.json",
 					properties: {
@@ -3969,7 +4078,51 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				N = {
+				V = {
+					firing_logic: "User clicks block button on another user's profile to block them.",
+					$id: "http://com.reddit/schemas/event_schemas/profile__click__block_user.json",
+					properties: {
+						source: {
+							const: "profile"
+						},
+						action: {
+							const: "click"
+						},
+						noun: {
+							const: "block_user"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1h0gdN9fwcXF7pORauoRy-2lGYm4scrEpa73Quv42eos/edit?usp=sharing"],
+					owner: "anti-evil-eng@reddit.com",
+					required: ["target_user"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				Q = {
+					firing_logic: "User clicks unblock button on another user's profile to unblock them.",
+					$id: "http://com.reddit/schemas/event_schemas/profile__click__unblock_user.json",
+					properties: {
+						source: {
+							const: "profile"
+						},
+						action: {
+							const: "click"
+						},
+						noun: {
+							const: "unblock_user"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1h0gdN9fwcXF7pORauoRy-2lGYm4scrEpa73Quv42eos/edit?usp=sharing"],
+					owner: "anti-evil-eng@reddit.com",
+					required: ["target_user"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				G = {
 					firing_logic: "User clicks on an ad on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__ad.json",
 					properties: {
@@ -3991,7 +4144,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				M = {
+				J = {
 					firing_logic: "User executes a query from the search bar. This fires when the query is explicitly fired.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__full_search_button.json",
 					properties: {
@@ -4013,7 +4166,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				H = {
+				Y = {
 					firing_logic: "User clicks on a post on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__post.json",
 					properties: {
@@ -4035,7 +4188,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				B = {
+				K = {
 					firing_logic: "User clicks on a profile on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__profile.json",
 					properties: {
@@ -4057,7 +4210,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				W = {
+				Z = {
 					firing_logic: "User clicks on a recent search (can be a full search, subreddit, or profile) in the search dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__recent_search.json",
 					properties: {
@@ -4079,7 +4232,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				V = {
+				X = {
 					firing_logic: "User clicks on the search bar.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__search_bar.json",
 					properties: {
@@ -4101,7 +4254,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				Q = {
+				ee = {
 					firing_logic: "A user changes the sort on the search results page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__sort_change.json",
 					properties: {
@@ -4123,7 +4276,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				G = {
+				te = {
 					firing_logic: "User clicks on a subreddit on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__subreddit.json",
 					properties: {
@@ -4145,7 +4298,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				J = {
+				ie = {
 					firing_logic: "User clicks on a trend within the r/popular carousel or the search dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__trending.json",
 					properties: {
@@ -4167,7 +4320,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				Y = {
+				se = {
 					firing_logic: "User clicks on an item returned by the typeahead endpoint.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__typeahead.json",
 					properties: {
@@ -4189,7 +4342,29 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				K = {
+				ne = {
+					firing_logic: "User disables community specific search, changing search to results from all of Reddit",
+					$id: "http://com.reddit/schemas/event_schemas/search__disable__subreddit_search.json",
+					properties: {
+						source: {
+							const: "search"
+						},
+						action: {
+							const: "disable"
+						},
+						noun: {
+							const: "subreddit_search"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1zQXcNhChy_xqISO08_lFwOxHhfA65NpYz8mLSKuK48g/edit#heading=h.r0otu5jpacz6"],
+					owner: "fset@reddit.com",
+					required: ["subreddit_nsfw", "subreddit_quarantined", "subreddit_id", "subreddit_name"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				oe = {
 					firing_logic: "User views an ad on their screen on the search results page, this only fires when the ad is within view of the user. If the ad leaves the view then reenters, this should fire again.",
 					$id: "http://com.reddit/schemas/event_schemas/search__view__ad.json",
 					properties: {
@@ -4211,7 +4386,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				Z = {
+				re = {
 					firing_logic: "User views a post on their screen on the search results page. This only fires when the post is within view of the user.",
 					$id: "http://com.reddit/schemas/event_schemas/search__view__post.json",
 					properties: {
@@ -4233,7 +4408,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				X = {
+				ae = {
 					firing_logic: "User sees a trend within the r/popular carousel or the search dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/search__view__trending.json",
 					properties: {
@@ -4255,7 +4430,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ee = {
+				de = {
 					firing_logic: "Gazette powered home feed is constructed for a user.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_one_feed__predict__feed.json",
 					properties: {
@@ -4277,7 +4452,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				te = {
+				ce = {
 					firing_logic: "One feed model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_one_feed__predict__one_feed_feature.json",
 					properties: {
@@ -4299,7 +4474,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ie = {
+				pe = {
 					firing_logic: "Gazette powered popular feed is constructed for a user.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_popular__predict__feed.json",
 					properties: {
@@ -4321,7 +4496,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				se = {
+				me = {
 					firing_logic: "Popular model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_popular__predict__popular_feature.json",
 					properties: {
@@ -4343,7 +4518,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ne = {
+				_e = {
 					firing_logic: "Push notification model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_push_notification__predict__push_notification_feature.json",
 					properties: {
@@ -4365,7 +4540,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				oe = {
+				he = {
 					firing_logic: "Video feed model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_video__predict__video_feature.json",
 					properties: {
@@ -4387,7 +4562,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				re = {
+				fe = {
 					firing_logic: "User clicks Coins from user dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/user_dropdown__click__coins.json",
 					properties: {
@@ -4409,7 +4584,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ae = {
+				le = {
 					firing_logic: "User saves user flair.",
 					$id: "http://com.reddit/schemas/event_schemas/user_flair_picker__save__user_flair.json",
 					properties: {
@@ -4431,7 +4606,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				de = {
+				ue = {
 					$id: "http://com.reddit/schemas/field_definitions/account_label/account_label.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A label associated with reddit account.",
@@ -4450,7 +4625,7 @@
 						}
 					}
 				},
-				ce = {
+				ge = {
 					$id: "http://com.reddit/schemas/field_definitions/action/action_info.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Informational fields about different actions that occur on Reddit.\n\nThis struct is deliberately left generic, because many of the fields here could be used between\ndifferent types of user actions.\n\nIt is also deliberately named, to avoid conflict with the top level `action` field.",
@@ -4501,7 +4676,7 @@
 						}
 					}
 				},
-				pe = {
+				ye = {
 					$id: "http://com.reddit/schemas/field_definitions/action/expand.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Metadata fields about post expands.",
@@ -4512,7 +4687,7 @@
 						}
 					}
 				},
-				me = {
+				ve = {
 					$id: "http://com.reddit/schemas/field_definitions/action/share.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to sharing content. *",
@@ -4531,7 +4706,7 @@
 						}
 					}
 				},
-				_e = {
+				be = {
 					$id: "http://com.reddit/schemas/field_definitions/action/widget.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Metadata for widgets.",
@@ -4550,7 +4725,7 @@
 						}
 					}
 				},
-				he = {
+				we = {
 					$id: "http://com.reddit/schemas/field_definitions/ad/programmatic.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Unique identifier for the ad being acted on. */\n    1: optional string id\n    /** The name of this ad set by the advertiser. */\n    2: optional string name\n    /** The outbound URL to direct to when this ad is clicked. */\n    3: optional string click_url\n    /** A list of third party trackers attached to this ad. */\n    4: optional list<string> third_party_trackers\n    /** The status of the ad as configured by the advertiser. */\n    5: optional adtypedefs.ConfiguredStatus configured_status\n    /** The status of the ad as calculated by the backend. */\n    6: optional adtypedefs.EffectiveStatus effective_status\n    /**\n    The approval status of this ad.\n\n    Examples:\n    approval,deferred,pending,rejected,running,suspended,whitelisted\n    */\n    7: optional string admin_approval\n    /** A list of third party pixel URLs to fire when the user clicks on this ad. */\n    8: optional list<string> click_trackers\n    /** A list of classifications for an ad. */\n    9: optional list<adtypedefs.Classification> classifications\n    /**\n    The reason that this ad was rejected.\n\n    There are a large number of possible values for this field.\n    Please check events we currently have in BigQuery for values already in use.\n    */\n    10: optional string rejection_reason\n    /** Expiration date of forced Ad Preview */\n    11: optional typedefs.Timestamp preview_expiry_timestamp\n}\n\n/** Fields related to programmatic ads. *",
@@ -4573,7 +4748,7 @@
 						}
 					}
 				},
-				fe = {
+				je = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_brand_safety.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the brand safety properties of an ad.",
@@ -4596,7 +4771,7 @@
 						}
 					}
 				},
-				le = {
+				$e = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_click.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the post click properties of an ad",
@@ -4607,7 +4782,7 @@
 						}
 					}
 				},
-				ue = {
+				ke = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_decision.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the properties of any decision to not show an ad.",
@@ -4646,7 +4821,7 @@
 						}
 					}
 				},
-				ge = {
+				xe = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_metadata.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents additional information from the ad that was served to the user",
@@ -4657,7 +4832,26 @@
 						}
 					}
 				},
-				ye = {
+				qe = {
+					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_pixel.json",
+					$schema: "http://json-schema.org/draft-07/schema#",
+					description: "Represents information about an ad pixel",
+					definitions: {
+						event_timestamp: {
+							type: "number",
+							description: "The time when the pixel originally tried to fire. \n\n    This is different than the field called client_timestamp, which is intended to be the point in time at which the v2 event was created. This timestamp may differ because the user action that triggered the pixel to be generated may have occurred when\n    the device was unable to upload the pixel to our server."
+						},
+						deferred: {
+							type: "boolean",
+							description: "Boolean indicating whether it was a retry attempt to upload pixel"
+						},
+						tracking_type: {
+							type: "integer",
+							description: "Type of pixel (click, impresion, etc). Numeric value to match other ad event tables\n\n    Link enumerating values:\n    https://docs.google.com/spreadsheets/d/1Xni0eoCpB7VR9cfs7Uaku0f32ZrJ1U9OZUYOV2AyGeo/edit#gid=0"
+						}
+					}
+				},
+				Pe = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_push.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the properties of any reason to shift the placement of an ad.",
@@ -4688,7 +4882,7 @@
 						}
 					}
 				},
-				ve = {
+				Ee = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the attributes of an ad request.",
@@ -4731,7 +4925,7 @@
 						}
 					}
 				},
-				be = {
+				Te = {
 					$id: "http://com.reddit/schemas/field_definitions/admin/admin.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A reddit-employeed administrator account.",
@@ -4746,7 +4940,7 @@
 						}
 					}
 				},
-				we = {
+				Se = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/admin_action.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding AE admin actions.",
@@ -4802,7 +4996,7 @@
 						}
 					}
 				},
-				je = {
+				Ae = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/admin_team.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Reported url extracted from ticket. Can be valid reddit url or an external url.\n    **/\n    1: optional string reported_url\n    /**\n    Content url associated with reported_url. Can be blank in case we cannot find associated content.\n    */\n    2: optional string content_url\n    /**\n    The reddit ID of content associated with this ticket content.\n    Can be empty in case reported url doesn't resolve to valid reddit content.\n    */\n    3: optional typedefs.Fullname target_id\n    /**\n    Type of reddit content.\n\n    Examples:\n    post,comment,message\n    */\n    4: optional typedefs.StringLower target_type\n    /**\n    ID given by google csai / microsoft photodna to track the event.\n\n    examples:\n    photodna: 1_photodna_a0e3d02b-1a0a-4b38-827f-764acd288c25\n    google_csai: 17986187222943498570_1534786098\n    */\n    5: optional string tracking_id\n    /**\n    Populate information about if post/comment/third_party_link was already removed by a moderator.\n\n    Reflects values defined in admin-service admin.thrift RemovedByType.\n\n    Examples:\n    null_value,copyright_takedown,content_takedown,author,moderator\n    community_ops,anti_evil_ops,reddit,deleted,automod_filter\n    */\n    6: optional string removed_by_user_type\n    /**\n    The type of content that is reported.\n\n    Reflects values defined in admin-service admin.thrift ContentType.\n\n    Examples:\n    image,video,post,comment,third_party_link,thumbnail,preview,subreddit_icon\n    **/\n    7: optional typedefs.StringLower content_type\n    /** User who deleted the content. Fullname of user. */\n    8: optional typedefs.Fullname removed_by_user_id\n    /** Subreddit id where content was reported. Fullname of subreddt. */\n    9: optional typedefs.Fullname subreddit_id\n    /**\n    The identifier for a reddar queue from where ticket is moved. i.e. Minor Sexualization\n\n    This field is a reddar queue's reddit_id. Prefix 'queues__'\n    followed by base36 value.\n    For example: 'queues__23b'\n    */\n    10: optional string original_queue_id\n    /**\n    The identifier for a reddar queue where ticket is moved. i.e. CP internal\n\n    This field is a reddar queue's reddit_id. Prefix 'queues__'\n    followed by base36 value.\n    For example: 'queues__23b'\n    */\n    11: optional string dest_queue_id\n    /** Indicates if reported content is confirmed CSAI or not. */\n    12: optional bool confirmed_csai\n    /** Indicates if content is reported to ncmec. If not null, then the value is ncmec_id. */\n    13: optional i64 ncmec_report_number\n    /** Full name of user who reported content. */\n    14: optional typedefs.Fullname reporter_id\n    /**\n    Permalink of post/comment/message url. Can be valid reddit url or an external url.\n    **/\n    15: optional string permalink\n}\n\n/**\nInformation regarding reroute rules in Reddar.\n\nA reroute rule defines how to reroute tickets from the original queue to a new queue\nwhen tickets match some specific reroute contitions.\n*/\nstruct RerouteRule{\n    /**\n    Required identifier for a reddar routing set.\n\n    This field is a reddar routing set's reddit_id. Prefix 'routing_sets__'\n    followed by base36 value.\n    For example: 'routing_sets__3a'\n    */\n    1: optional string id\n    /**\n    Type of tickets the routing set works on.\n\n    There are a large number of possible values for this field.\n    Please check events we currently have in BigQuery for values already in use.\n    */\n    2: optional typedefs.StringLower ticket_type\n    /**\n    Priority of the routing set when multiple routing sets match a ticket.\n\n    A lower number means higher priority.\n    */\n    3: optional i32 priority\n    /** ID of the queue the routing set will route tickets to. */\n    4: optional string target_queue_id\n}\n\n/** Information regarding queues in Reddar. */\nstruct ReddarQueue{\n    /**\n    The identifier for a reddar queue.\n\n    This field is a reddar queue's reddit_id. Prefix 'queues__'\n    followed by base36 value.\n    For example: 'queues__23b'\n    */\n    1: optional typedefs.StringLower id\n    /**\n    Type of a reddar queue.\n\n    Examples:\n    private_message_abuse,harassment,violence,ban_evasion,csai\n    appeal,legal_export,login_bot,configurable,photodna\n    bulk_action_job,delete_media,live_stream,terrorism\n    dmca,user_data_request,geo_block\n    */\n    2: optional typedefs.StringLower type\n    /**\n    Type of tickets a reddar queue contains.\n\n    There are a large number of possible values for this field.\n    Please check events we currently have in BigQuery for values already in use.\n    */\n    3: optional typedefs.StringLower ticket_type\n    /**\n    The group a reddar queue belongs to.\n\n    Examples:\n    anti_evil,ae_ops,legal_ops,community,swat,chat,reddar_tools,live_stream,award\n    */\n    4: optional typedefs.StringLower group_type\n    /** The human readable freeform text name of the queue. */\n    5: optional typedefs.StringLower name\n    /**\n    The level of priority the queue has.\n    P0 Blocker: Drop everything, this must be completed immediately.\n    P1 Critical: This is complex/important and must be done in a rush.\n    P2 Major: This is complex/important and has a fixed deadline.\n    P3 Minor: This needs to get done, but is not very time sensitive.\n\n    Examples:\n    p0,p1,p2,p3\n    */\n    6: optional typedefs.StringLower priority\n    /*\n    The numerical team ID which has access, represents a team based on teams from Okta.\n    */\n    // 7: optional i32 team_id DEPRECATED\n    /*\n    The human readable name of the team.\n    */\n    // 8: optional typedefs.StringLower team_name DEPRECATED\n    /*\n    The type of access granted or removed.\n\n    Examples:\n    readonly,write,restricted\n    */\n    // 9: optional typedefs.StringLower access_type DEPRECATED\n}\n\n/** Information regarding Admin teams at reddit and what kind of access they have.",
@@ -4821,7 +5015,7 @@
 						}
 					}
 				},
-				$e = {
+				Re = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/c_s_a_i_media.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding google csai / microsoft photodna.",
@@ -4868,7 +5062,7 @@
 						}
 					}
 				},
-				ke = {
+				De = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/n_c_m_e_c_report.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding NCMEC reports, associated with content identification and takedown.",
@@ -4951,7 +5145,7 @@
 						}
 					}
 				},
-				xe = {
+				Ie = {
 					$id: "http://com.reddit/schemas/field_definitions/afd_second/a_f_d_second.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represent the actions of Second, April Fools 2021",
@@ -5010,7 +5204,7 @@
 						}
 					}
 				},
-				Pe = {
+				Fe = {
 					$id: "http://com.reddit/schemas/field_definitions/announcement/announcement.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "An announcement, shown in the top carousel conditionally on all platforms.",
@@ -5029,7 +5223,7 @@
 						}
 					}
 				},
-				qe = {
+				Oe = {
 					$id: "http://com.reddit/schemas/field_definitions/app_icons/app_icon.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Alternate App Icons",
@@ -5052,7 +5246,7 @@
 						}
 					}
 				},
-				Ee = {
+				Ce = {
 					$id: "http://com.reddit/schemas/field_definitions/atc/a_t_c.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "An Air Traffic Controller event.",
@@ -5087,7 +5281,7 @@
 						}
 					}
 				},
-				Te = {
+				Ue = {
 					$id: "http://com.reddit/schemas/field_definitions/audit/reddar_audit.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A struct representing a Reddar audit.",
@@ -5126,7 +5320,7 @@
 						}
 					}
 				},
-				Se = {
+				ze = {
 					$id: "http://com.reddit/schemas/field_definitions/audit/reddar_audit_ticket.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A struct representing a Reddar audit ticket.",
@@ -5169,7 +5363,7 @@
 						}
 					}
 				},
-				Ae = {
+				Le = {
 					$id: "http://com.reddit/schemas/field_definitions/banner/banner.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A banner, either in web or mobile platforms.",
@@ -5184,7 +5378,7 @@
 						}
 					}
 				},
-				De = {
+				Ne = {
 					$id: "http://com.reddit/schemas/field_definitions/bot_detection/bot_detection.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for bot detection.",
@@ -5203,7 +5397,7 @@
 						}
 					}
 				},
-				Ie = {
+				Me = {
 					$id: "http://com.reddit/schemas/field_definitions/bulk_action_job/bulk_action_job.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for Reddar bulk action jobs.",
@@ -5254,7 +5448,62 @@
 						}
 					}
 				},
-				Re = {
+				He = {
+					$id: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json",
+					$schema: "http://json-schema.org/draft-07/schema#",
+					description: "Information regarding Bulk Messenger job.",
+					definitions: {
+						add_admin_note: {
+							type: "boolean",
+							description: "message should attach admin note or not\n\n    Examples:\n    true | false"
+						},
+						subject: {
+							type: "string",
+							description: "plaintext subject of message\n\n    Examples: \n    market survey"
+						},
+						recipient_count: {
+							type: "integer",
+							description: "total number of users (or communities in recipient list)\n\n    Examples:\n    1000"
+						},
+						sender_id: {
+							type: "string",
+							description: "user or subreddit who is the sender of bulk messenger job\n    user name should be converted to user_id\n\n    Examples:\n    user_id or subreddit_id"
+						},
+						give_coins: {
+							type: "integer",
+							description: "sender could award coins in message \n\n    Examples:\n    100"
+						},
+						distinguished: {
+							type: "boolean",
+							description: "sender is a distinguished user or not\n\n    Examples:\n    true | false"
+						},
+						message_type: {
+							type: "string",
+							description: "type of the message\n\n    Examples:\n    survey,newsletter,mod guidelines, or other"
+						},
+						message_body: {
+							type: "string",
+							description: "body of the message, might be in markdown format\n\n    Examples:\n    hello, username"
+						},
+						add_to_sent_box: {
+							type: "boolean",
+							description: "message should be added to sender's sent box\n\n    Examples:\n    true | false"
+						},
+						repliable: {
+							type: "boolean",
+							description: "recipient should replay this message or not\n\n    Examples:\n    true | false"
+						},
+						recipient_type: {
+							type: "string",
+							description: "type of recipient\n\n    Examples:\n    user or subreddit"
+						},
+						admin_note: {
+							type: "string",
+							description: "context of admin note attached by sender\n    \n    Examples:\n    this is a admin note"
+						}
+					}
+				},
+				Be = {
 					$id: "http://com.reddit/schemas/field_definitions/carousel/carousel.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A carousel is a horizontally scrolling content view.\n\nMost carousels are used to display posts and subreddits for discovery of new content.",
@@ -5269,7 +5518,7 @@
 						}
 					}
 				},
-				Fe = {
+				We = {
 					$id: "http://com.reddit/schemas/field_definitions/category_header/category_header.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "The header used for certain categories on search results.",
@@ -5292,7 +5541,7 @@
 						}
 					}
 				},
-				Oe = {
+				Ve = {
 					$id: "http://com.reddit/schemas/field_definitions/chat/chat.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields about live user chat.",
@@ -5411,7 +5660,7 @@
 						}
 					}
 				},
-				Ce = {
+				Qe = {
 					$id: "http://com.reddit/schemas/field_definitions/chat/chat_home_feed_boosting.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields about chat home feed boosting event.",
@@ -5434,7 +5683,7 @@
 						}
 					}
 				},
-				Ue = {
+				Ge = {
 					$id: "http://com.reddit/schemas/field_definitions/comment_draft/comment_draft.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Text of a comment before it is submitted.",
@@ -5445,7 +5694,7 @@
 						}
 					}
 				},
-				ze = {
+				Je = {
 					$id: "http://com.reddit/schemas/components/common.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields that apply to all event types.",
@@ -5505,7 +5754,7 @@
 						}
 					}
 				},
-				Le = {
+				Ye = {
 					$id: "http://com.reddit/schemas/field_definitions/content/comment.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics we would send as part of a comment.",
@@ -5560,7 +5809,7 @@
 						}
 					}
 				},
-				Ne = {
+				Ke = {
 					$id: "http://com.reddit/schemas/field_definitions/content/comment_composer.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields specific to the comment creation form.",
@@ -5571,7 +5820,7 @@
 						}
 					}
 				},
-				Me = {
+				Ze = {
 					$id: "http://com.reddit/schemas/field_definitions/content/edit.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details of an edit made by a user to a piece of content.",
@@ -5582,7 +5831,7 @@
 						}
 					}
 				},
-				He = {
+				Xe = {
 					$id: "http://com.reddit/schemas/field_definitions/content/gallery.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents a Media Gallery post, which collects many Media objects.",
@@ -5613,7 +5862,7 @@
 						}
 					}
 				},
-				Be = {
+				et = {
 					$id: "http://com.reddit/schemas/field_definitions/content/listing.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics we would send as part of a listing page.",
@@ -5676,7 +5925,7 @@
 						}
 					}
 				},
-				We = {
+				tt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/media.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields used in posted media.",
@@ -5795,7 +6044,7 @@
 						}
 					}
 				},
-				Ve = {
+				it = {
 					$id: "http://com.reddit/schemas/field_definitions/content/message.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'Type of discovery unit.\n\n    The type of carousel, usually "listing" or "subreddit_listing" or "comments_listing". However, some older\n    units have grandfathered unique types. This is an arbitrary lowercase string without spaces.\n    */\n    2: required typedefs.StringLower type\n    // 3: optional i64 number_posts DEPRECATED\n    // 4: optional list<typedefs.Fullname> posts_shown DEPRECATED\n    // 6: optional i64 post_position DEPRECATED\n    // 7: optional typedefs.StringLower post_type DEPRECATED\n    // 8: optional typedefs.StringLower post_subreddit DEPRECATED\n    /**\n    The unique identifier of the discovery unit as outlined on the config wiki.\n\n    This is an arbitrary string, but generally should be in the format of "xd_X"\n    where X is a number or text identifier.\n    */\n    9: required string id\n    /** The displayed title of the carousel, this will be an arbitrary string. */\n    10: optional string title\n    /**\n    The carousel\'s unique english name used for analytics.\n\n    This is an arbitrary lowercase string without spaces.\n    */\n    11: required typedefs.StringLower name\n    /** A list of fullnames for each item presented in the discovery unit. */\n    12: optional list<typedefs.Fullname> items\n}\n\n/** A private message sent between Redditors.',
@@ -5858,7 +6107,7 @@
 						}
 					}
 				},
-				Qe = {
+				st = {
 					$id: "http://com.reddit/schemas/field_definitions/content/news.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents news topics and subtopics.",
@@ -5881,7 +6130,7 @@
 						}
 					}
 				},
-				Ge = {
+				nt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/notification.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents a notification, mostly used for mobile platforms.",
@@ -5916,7 +6165,7 @@
 						}
 					}
 				},
-				Je = {
+				ot = {
 					$id: "http://com.reddit/schemas/field_definitions/content/onboarding.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to the onboarding flow.",
@@ -6027,7 +6276,7 @@
 						}
 					}
 				},
-				Ye = {
+				rt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a post (aka a link).",
@@ -6170,7 +6419,7 @@
 						}
 					}
 				},
-				Ke = {
+				at = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post_collection.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details of a PostCollection (collection of posts).",
@@ -6197,7 +6446,7 @@
 						}
 					}
 				},
-				Ze = {
+				dt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post_composer.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields specific to the post creation form.",
@@ -6232,7 +6481,7 @@
 						}
 					}
 				},
-				Xe = {
+				ct = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post_event.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details of a PostEvent (scheduled post) for amas/shows.",
@@ -6255,7 +6504,7 @@
 						}
 					}
 				},
-				et = {
+				pt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/view_stats.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Describing stats about a user's browsing experience on a page",
@@ -6270,7 +6519,7 @@
 						}
 					}
 				},
-				tt = {
+				mt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/vote.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details about a vote, e.g. if it affects karma.",
@@ -6285,7 +6534,7 @@
 						}
 					}
 				},
-				it = {
+				_t = {
 					$id: "http://com.reddit/schemas/field_definitions/content_tag/content_tag.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'Model for ContentTag data.\n\nThis struct is used to capture event tracking data based on the subreddits "Content Rating".\nSee https://reddit.atlassian.net/browse/CACTI-4464.\n\nThe subreddit moderators can take a survey we render to them in the UI, and upon submission we will fire v2 events that\ncontain some information about their survey responses and the associated mature themes.',
@@ -6308,7 +6557,7 @@
 						}
 					}
 				},
-				st = {
+				ht = {
 					$id: "http://com.reddit/schemas/field_definitions/crawler/crawler.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to crawlers.",
@@ -6319,7 +6568,7 @@
 						}
 					}
 				},
-				nt = {
+				ft = {
 					$id: "http://com.reddit/schemas/field_definitions/crowd_control/crowd_control.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Data associated with the Crowd Control feature",
@@ -6334,7 +6583,7 @@
 						}
 					}
 				},
-				ot = {
+				lt = {
 					$id: "http://com.reddit/schemas/field_definitions/crowd_source/crowd_source.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for Crowd-sourced data.",
@@ -6373,7 +6622,7 @@
 						}
 					}
 				},
-				rt = {
+				ut = {
 					$id: "http://com.reddit/schemas/field_definitions/custom_feed/custom_feed.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to custom feeds, a.k.a. multi-reddits.",
@@ -6408,7 +6657,7 @@
 						}
 					}
 				},
-				at = {
+				gt = {
 					$id: "http://com.reddit/schemas/field_definitions/device/app.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Application information.",
@@ -6435,7 +6684,7 @@
 						}
 					}
 				},
-				dt = {
+				yt = {
 					$id: "http://com.reddit/schemas/field_definitions/device/platform.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Platform information.",
@@ -6494,7 +6743,7 @@
 						}
 					}
 				},
-				ct = {
+				vt = {
 					$id: "http://com.reddit/schemas/field_definitions/device/screen.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Client machine display/screen characteristics.",
@@ -6553,7 +6802,7 @@
 						}
 					}
 				},
-				pt = {
+				bt = {
 					$id: "http://com.reddit/schemas/field_definitions/domain_ban/domain_ban.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding Domain Bans.",
@@ -6600,7 +6849,7 @@
 						}
 					}
 				},
-				mt = {
+				wt = {
 					$id: "http://com.reddit/schemas/field_definitions/econ/purchase.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Attributes of buy or cancel actions for digital products.",
@@ -6651,7 +6900,7 @@
 						}
 					}
 				},
-				_t = {
+				jt = {
 					$id: "http://com.reddit/schemas/field_definitions/email/email.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the attributes of email and posts sent in an email.",
@@ -6682,7 +6931,7 @@
 						}
 					}
 				},
-				ht = {
+				$t = {
 					$id: "http://com.reddit/schemas/field_definitions/experiment/click_test.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Tracks outcomes from dialog test modals we show to site visitors.\n\nFor example, we might ask users if they would pay for a certain new feature,\nor assess relative interest across a few potential product plans.",
@@ -6717,7 +6966,7 @@
 						}
 					}
 				},
-				ft = {
+				kt = {
 					$id: "http://com.reddit/schemas/field_definitions/experiment/experiment.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Struct for experiment related fields.",
@@ -6792,7 +7041,7 @@
 						}
 					}
 				},
-				lt = {
+				xt = {
 					$id: "http://com.reddit/schemas/field_definitions/feature/feature.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the feature (code) that sends the event.\n\nThis struct can be used to distinguish between events sent from\ndifferent versions of the same feature.\n\nThis is especially useful for events that would be otherwise\nimpossible to distinguish which version of the code/feature\nfired the event.",
@@ -6811,7 +7060,7 @@
 						}
 					}
 				},
-				ut = {
+				qt = {
 					$id: "http://com.reddit/schemas/field_definitions/feed/feed.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a feed (home, popular, all).",
@@ -6830,7 +7079,7 @@
 						}
 					}
 				},
-				gt = {
+				Pt = {
 					$id: "http://com.reddit/schemas/field_definitions/funding_instrument/funding_instrument.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Funding instrument - entity that back all advertisers ad delivery with a funding source",
@@ -6977,7 +7226,7 @@
 						}
 					}
 				},
-				yt = {
+				Et = {
 					$id: "http://com.reddit/schemas/field_definitions/geo_block/geo_block.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for Geo Blocks.",
@@ -6996,7 +7245,7 @@
 						}
 					}
 				},
-				vt = {
+				Tt = {
 					$id: "http://com.reddit/schemas/field_definitions/gold/gold_purchase.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of gold purchase actions.",
@@ -7101,7 +7350,7 @@
 						}
 					}
 				},
-				bt = {
+				St = {
 					$id: "http://com.reddit/schemas/field_definitions/grapeshot_classification/grapeshot_classification.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a post classification from Grapeshot.",
@@ -7112,7 +7361,7 @@
 						}
 					}
 				},
-				wt = {
+				At = {
 					$id: "http://com.reddit/schemas/field_definitions/imposter/imposter.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represent the actions of Imposter, April Fools 2020",
@@ -7147,7 +7396,7 @@
 						}
 					}
 				},
-				jt = {
+				Rt = {
 					$id: "http://com.reddit/schemas/field_definitions/inbox/inbox.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields for the client and server side notifications inbox.",
@@ -7174,7 +7423,7 @@
 						}
 					}
 				},
-				$t = {
+				Dt = {
 					$id: "http://com.reddit/schemas/field_definitions/legal_export_request/legal_export_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for legal export requests.",
@@ -7249,7 +7498,7 @@
 						}
 					}
 				},
-				kt = {
+				It = {
 					$id: "http://com.reddit/schemas/field_definitions/live_thread/live_thread.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Live Threads are ongoing events that pop up in reddit.com/live\n\nLive threads are also used for annoucements for some reason.",
@@ -7264,7 +7513,7 @@
 						}
 					}
 				},
-				xt = {
+				Ft = {
 					$id: "http://com.reddit/schemas/field_definitions/liveaudio/live_audio_room.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Room used for real-time voice communication",
@@ -7287,7 +7536,7 @@
 						}
 					}
 				},
-				Pt = {
+				Ot = {
 					$id: "http://com.reddit/schemas/field_definitions/liveaudio/live_audio_room_user.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "User that communicates in liveaudio room",
@@ -7302,7 +7551,7 @@
 						}
 					}
 				},
-				qt = {
+				Ct = {
 					$id: "http://com.reddit/schemas/field_definitions/metaflair/meta_flair.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'Flairs defined by Reddit.\n\nMeta Flair is the more generalized replacement for Subreddit Categories. Meta Flairs have an ID and a title, and\nshould be viewed in a similar scope to a "Post" or a "Subreddit" as it is a specific piece of content that the user\nmay click or view.',
@@ -7317,7 +7566,7 @@
 						}
 					}
 				},
-				Et = {
+				Ut = {
 					$id: "http://com.reddit/schemas/field_definitions/metasearch/meta_search.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'A content item used to represent a "Search" item, such as a trending search item.',
@@ -7372,7 +7621,7 @@
 						}
 					}
 				},
-				Tt = {
+				zt = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/content_metadata.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas content metadata.",
@@ -7391,7 +7640,7 @@
 						}
 					}
 				},
-				St = {
+				Lt = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/geo.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-enriched geographical fields.",
@@ -7438,7 +7687,7 @@
 						}
 					}
 				},
-				At = {
+				Nt = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/inferred.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-inferred fields. Like all Midas-enriched fields, this should never be set by clients.",
@@ -7469,7 +7718,7 @@
 						}
 					}
 				},
-				Dt = {
+				Mt = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/link_sharing.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-enriched link sharing.",
@@ -7480,7 +7729,7 @@
 						}
 					}
 				},
-				It = {
+				Ht = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/url_parsed.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-enriched url parsing.",
@@ -7519,7 +7768,7 @@
 						}
 					}
 				},
-				Rt = {
+				Bt = {
 					$id: "http://com.reddit/schemas/field_definitions/ml_model/m_l_model.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A prediction made by an internal machine learning model.",
@@ -7562,7 +7811,7 @@
 						}
 					}
 				},
-				Ft = {
+				Wt = {
 					$id: "http://com.reddit/schemas/field_definitions/moderator/mod_action.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a moderator action.",
@@ -7585,7 +7834,7 @@
 						}
 					}
 				},
-				Ot = {
+				Vt = {
 					$id: "http://com.reddit/schemas/field_definitions/mute/mute.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents information about mute history and length for the associated mute.",
@@ -7604,7 +7853,7 @@
 						}
 					}
 				},
-				Ct = {
+				Qt = {
 					$id: "http://com.reddit/schemas/field_definitions/navigation_session/navigation_session.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents a series of chained engagements with posts for full bleed player",
@@ -7623,7 +7872,7 @@
 						}
 					}
 				},
-				Ut = {
+				Gt = {
 					$id: "http://com.reddit/schemas/field_definitions/notification/mailroom_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields for the Mailroom service that may trigger sending one or more notifications.",
@@ -7666,7 +7915,7 @@
 						}
 					}
 				},
-				zt = {
+				Jt = {
 					$id: "http://com.reddit/schemas/field_definitions/notification/messenger_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields for the Messenger service that may trigger sending one or more notifications.",
@@ -7685,7 +7934,7 @@
 						}
 					}
 				},
-				Lt = {
+				Yt = {
 					$id: "http://com.reddit/schemas/field_definitions/notification/notification_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields about notifications or manage notification resources such as push tokens.",
@@ -7720,7 +7969,7 @@
 						}
 					}
 				},
-				Nt = {
+				Kt = {
 					$id: "http://com.reddit/schemas/field_definitions/outbound/outbound.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information about visiting outbound urls.",
@@ -7751,7 +8000,7 @@
 						}
 					}
 				},
-				Mt = {
+				Zt = {
 					$id: "http://com.reddit/schemas/field_definitions/payment/payment.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of any event that involves a purchase.",
@@ -7778,7 +8027,7 @@
 						}
 					}
 				},
-				Ht = {
+				Xt = {
 					$id: "http://com.reddit/schemas/field_definitions/perspective/perspective.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Perspective is an API provided by TODO that does NLP on comments provides\nlabels",
@@ -7921,7 +8170,7 @@
 						}
 					}
 				},
-				Bt = {
+				ei = {
 					$id: "http://com.reddit/schemas/field_definitions/playback/playback.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields related to a specific user's interactions with a video.",
@@ -7980,7 +8229,7 @@
 						}
 					}
 				},
-				Wt = {
+				ti = {
 					$id: "http://com.reddit/schemas/field_definitions/poll/poll.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details about a poll in poll post.",
@@ -8023,7 +8272,7 @@
 						}
 					}
 				},
-				Vt = {
+				ii = {
 					$id: "http://com.reddit/schemas/field_definitions/popup/popup.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A popup, either in web or mobile platforms.\n\nThis can take the form of a system popup or client popup and may require the\nuser to perform an action.",
@@ -8042,7 +8291,7 @@
 						}
 					}
 				},
-				Qt = {
+				si = {
 					$id: "http://com.reddit/schemas/field_definitions/post_draft/post_draft.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a post draft.",
@@ -8101,7 +8350,7 @@
 						}
 					}
 				},
-				Gt = {
+				ni = {
 					$id: "http://com.reddit/schemas/field_definitions/post_requirement/post_requirement.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Requirements for a post to be submitted to a subreddit.",
@@ -8160,7 +8409,7 @@
 						}
 					}
 				},
-				Jt = {
+				oi = {
 					$id: "http://com.reddit/schemas/field_definitions/postflair/post_flair.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Flairs defined by users for a subreddit.\n\nPost flair is the flair that users assign to a post. Post flair is unique to a subreddit.",
@@ -8175,7 +8424,7 @@
 						}
 					}
 				},
-				Yt = {
+				ri = {
 					$id: "http://com.reddit/schemas/field_definitions/powerups/powerups.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Attributes of powerups related actions: allocation, deallocation, subreddit tier up and down.",
@@ -8226,7 +8475,7 @@
 						}
 					}
 				},
-				Kt = {
+				ai = {
 					$id: "http://com.reddit/schemas/field_definitions/predictions/predictions.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Attributes of predictions related actions: end, save, submit, discard.",
@@ -8241,7 +8490,7 @@
 						}
 					}
 				},
-				Zt = {
+				di = {
 					$id: "http://com.reddit/schemas/field_definitions/progress_module/progress_module.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields specific to Communnity Progress Module.\n\nA Community Progress Module is a series of action cards on iOS, Android, and d2x that\nhelp moderators to take actions that are most likely to build a successful community.",
@@ -8256,7 +8505,7 @@
 						}
 					}
 				},
-				Xt = {
+				ci = {
 					$id: "http://com.reddit/schemas/field_definitions/pwa/p_w_a.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to Progressive Web App (PWA) features.",
@@ -8275,7 +8524,7 @@
 						}
 					}
 				},
-				ei = {
+				pi = {
 					$id: "http://com.reddit/schemas/field_definitions/rater_tag/rater_tag.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "This struct is used to capture community topic tag info.",
@@ -8321,42 +8570,43 @@
 							description: "An identifier for the type of community tagging module used"
 						}
 					}
-				};
-			const ti = [s, n, o, r, a, d, c, p, m, _, h, f, l, u, g, y, v, b, w, j, $, k, x, P, q, E, T, S, A, D, I, R, F, O, C, U, z, L, N, M, H, B, W, V, Q, G, J, Y, K, Z, X, ee, te, ie, se, ne, oe, re, ae, de, ce, pe, me, _e, he, fe, le, ue, ge, ye, ve, be, we, je, $e, ke, xe, Pe, qe, Ee, Te, Se, Ae, De, Ie, Re, Fe, Oe, Ce, Ue, ze, Le, Ne, Me, He, Be, We, Ve, Qe, Ge, Je, Ye, Ke, Ze, Xe, et, tt, it, st, nt, ot, rt, at, dt, ct, pt, mt, _t, ht, ft, lt, ut, gt, yt, vt, bt, wt, jt, $t, kt, xt, Pt, qt, Et, Tt, St, At, Dt, It, Rt, Ft, Ot, Ct, Ut, zt, Lt, Nt, Mt, Ht, Bt, Wt, Vt, Qt, Gt, Jt, Yt, Kt, Zt, Xt, ei, {
-				$id: "http://com.reddit/schemas/field_definitions/relevance/relevance_model.json",
-				$schema: "http://json-schema.org/draft-07/schema#",
-				description: "Relevance model schema.\n\nInformation about the usage and performance of relevance models.",
-				definitions: {
-					result_duration: {
-						type: "integer",
-						description: "Time took to make the result in milliseconds."
-					},
-					identifier: {
-						type: "string",
-						description: "The name or identifier of the model."
-					},
-					number_max_recommendations: {
-						type: "integer",
-						description: "Max number of results returned."
-					},
-					version: {
-						type: "string",
-						description: "The version of the model family. For example, 2018-03-11-comment-features."
-					},
-					result_blob: {
-						type: "string",
-						description: "JSON text blob of result specific to each model."
-					},
-					family: {
-						type: "string",
-						description: "The model family -- e.g. LogisticRegression, RandomForest, Perceptron ;)"
-					},
-					feature_blob: {
-						type: "string",
-						description: "JSON text blob of features specific to each model."
+				},
+				mi = {
+					$id: "http://com.reddit/schemas/field_definitions/relevance/relevance_model.json",
+					$schema: "http://json-schema.org/draft-07/schema#",
+					description: "Relevance model schema.\n\nInformation about the usage and performance of relevance models.",
+					definitions: {
+						result_duration: {
+							type: "integer",
+							description: "Time took to make the result in milliseconds."
+						},
+						identifier: {
+							type: "string",
+							description: "The name or identifier of the model."
+						},
+						number_max_recommendations: {
+							type: "integer",
+							description: "Max number of results returned."
+						},
+						version: {
+							type: "string",
+							description: "The version of the model family. For example, 2018-03-11-comment-features."
+						},
+						result_blob: {
+							type: "string",
+							description: "JSON text blob of result specific to each model."
+						},
+						family: {
+							type: "string",
+							description: "The model family -- e.g. LogisticRegression, RandomForest, Perceptron ;)"
+						},
+						feature_blob: {
+							type: "string",
+							description: "JSON text blob of features specific to each model."
+						}
 					}
-				}
-			}, {
+				};
+			const _i = [s, n, o, r, a, d, c, p, m, _, h, f, l, u, g, y, v, b, w, j, $, k, x, q, P, E, T, S, A, R, D, I, F, O, C, U, z, L, N, M, H, B, W, V, Q, G, J, Y, K, Z, X, ee, te, ie, se, ne, oe, re, ae, de, ce, pe, me, _e, he, fe, le, ue, ge, ye, ve, be, we, je, $e, ke, xe, qe, Pe, Ee, Te, Se, Ae, Re, De, Ie, Fe, Oe, Ce, Ue, ze, Le, Ne, Me, He, Be, We, Ve, Qe, Ge, Je, Ye, Ke, Ze, Xe, et, tt, it, st, nt, ot, rt, at, dt, ct, pt, mt, _t, ht, ft, lt, ut, gt, yt, vt, bt, wt, jt, $t, kt, xt, qt, Pt, Et, Tt, St, At, Rt, Dt, It, Ft, Ot, Ct, Ut, zt, Lt, Nt, Mt, Ht, Bt, Wt, Vt, Qt, Gt, Jt, Yt, Kt, Zt, Xt, ei, ti, ii, si, ni, oi, ri, ai, di, ci, pi, mi, {
 				$id: "http://com.reddit/schemas/field_definitions/report/report.json",
 				$schema: "http://json-schema.org/draft-07/schema#",
 				description: "Represents the characteristics of a user report of content on site.",
@@ -8463,6 +8713,10 @@
 						type: "boolean",
 						description: "Is login request coming from a login bot?"
 					},
+					tls_fingerprint: {
+						type: "string",
+						description: "TLS fingerprint from Fastly - hash of the ciphersuite and extensions used for HTTPS request"
+					},
 					robots_meta_tag: {
 						type: "string",
 						description: 'A directive used for "robots" meta tag if such tag exists in page\'s DOM.'
@@ -8470,6 +8724,10 @@
 					canonical_url: {
 						type: "string",
 						description: "The request canonical url."
+					},
+					ratelimit_count: {
+						type: "integer",
+						description: "The number of requests counted in the current ratelimit time-bucket."
 					},
 					domain: {
 						type: "string",
@@ -8527,6 +8785,10 @@
 						type: "boolean",
 						description: "Were there cookies present in the request?"
 					},
+					ratelimit_type: {
+						type: "string",
+						description: 'Which ratelimit ruleset applies to this request.\n\n    One of "oauth", "api", or "web" depending on how the request was\n    classified.'
+					},
 					accept_language_header: {
 						type: "string",
 						description: "Accept-Language header contents.\n\n    Note that this field is named as such to avoid collision with the accept_language field."
@@ -8538,6 +8800,10 @@
 					client_ip: {
 						type: "string",
 						description: "Hashed IP of the client sending the event. This value will never be populated in BigQuery.\n\n    Note that this field is passed in as a plain IP as Midas relies on this field to do geo enrichment.\n    Both IPv4 and IPv6 are accepted. The event pipeline will then sanitize this field as required."
+					},
+					ratelimit_exceeded: {
+						type: "boolean",
+						description: "Was this request made in excess of ratelimits?\n\n    If true, this request would be / was rejected depending on if enforcement\n    is enabled."
 					}
 				}
 			}, {
@@ -8576,6 +8842,60 @@
 					night_mode: {
 						type: "boolean",
 						description: "Is night mode enabled in RES?"
+					}
+				}
+			}, {
+				$id: "http://com.reddit/schemas/field_definitions/restrict/restrict.json",
+				$schema: "http://json-schema.org/draft-07/schema#",
+				description: "Type of settings that can be restricted through reddar admin tools.\n\nWhen True, the setting has been toggled to be in its restricted state.\nWhen False, the setting has been toggled to be in its not restricted state.\nWhen None, the setting has not been toggled.",
+				definitions: {
+					unverified_email_viewers: {
+						type: "boolean",
+						description: "Set to true when an admin requires verified email to opt-in to view the\n    subreddit via Reddar's quarantine panel.\n\n    Corresponds with (Subreddit.quarantine_require_email_for_optin) in the thing service"
+					},
+					poll_posts: {
+						type: "boolean",
+						description: "Set to true when an admin disables poll posts via Reddar's restrict panel.\n\n    Corresponds with thing service's Subreddit.admin_frozen_fields.allow_polls"
+					},
+					subreddit_linking: {
+						type: "boolean",
+						description: "Set to true when an admin disables subreddit linking via Reddar's restrict panel.\n\n    Corresponds with (not Subreddit.allow_subreddit_linking) in the thing service"
+					},
+					media_embeds: {
+						type: "boolean",
+						description: "Set to true when an admin disables media embeds via Reddar's quarantine panel.\n\n    Corresponds with (not Subreddit.quarantine_allow_media) in thing service"
+					},
+					unverified_email_interaction: {
+						type: "boolean",
+						description: "Set to true when an admin requires verified email to interact with the subreddit via Reddar's quarantine panel.\n\n    Corresponds with (Subreddit.quarantine_require_email_for_interaction) in the thing service"
+					},
+					video_posts: {
+						type: "boolean",
+						description: "Set to true when an admin disables video posts via Reddar's restrict panel.\n\n    Corresponds with thing service's Subreddit.admin_frozen_fields.allow_videos"
+					},
+					crossposts: {
+						type: "boolean",
+						description: "Set to true when an admin disables crossposts via Reddar's quarantine panel.\n\n    Corresponds with (not Subreddit.quarantine_allow_crossposts) in thing service"
+					},
+					subreddit_images: {
+						type: "boolean",
+						description: "Set to true when an admin disables the sub's banner image and icon via Reddar's quarantine panel.\n\n    Corresponds with (not Subreddit.quarantine_allow_images) in thing service"
+					},
+					username_linking: {
+						type: "boolean",
+						description: "Set to true when an admin disables username linking via Reddar's restrict panel.\n\n    Corresponds with (not Subreddit.allow_username_linking) in the thing service"
+					},
+					image_posts: {
+						type: "boolean",
+						description: "Set to true when an admin disables image posts via Reddar's restrict panel.\n\n    Corresponds with thing service's Subreddit.admin_frozen_fields.allow_images"
+					},
+					subreddit_styles: {
+						type: "boolean",
+						description: "Set to true when an admin disables the sub's styles via Reddar's quarantine panel.\n\n    Corresponds with (not Subreddit.quarantine_allow_styles) in thing service"
+					},
+					subscriber_count_visibility: {
+						type: "boolean",
+						description: "Set to true when an admin hides the subscriber count via Reddar's quarantine panel.\n\n    Corresponds with (not Subreddit.quarantine_allow_subscriber_count) in thing service"
 					}
 				}
 			}, {
@@ -8853,6 +9173,10 @@
 				$schema: "http://json-schema.org/draft-07/schema#",
 				description: "Snoovatar",
 				definitions: {
+					user_generated: {
+						type: "string",
+						description: "The t2_id of the original avatar author (in case avatar was created on the base of some existing one)"
+					},
 					has_premium_gear: {
 						type: "boolean",
 						description: "Boolean field indicating if the snoovatar at the time of saving included at least one premium gear item"
@@ -8869,9 +9193,17 @@
 						type: "string",
 						description: "String containing one or more comma-separated bottom accessory gear ids"
 					},
+					nft_name: {
+						type: "string",
+						description: "String referring to the name of an nft avatar *"
+					},
 					full_image_url: {
 						type: "string",
 						description: "The URL of a rendered full Snoovatar image"
+					},
+					user_generated_source: {
+						type: "string",
+						description: "Identifies where the user generated avatar is sourced from.\n\n    Examples:\n    copy,share"
 					},
 					id: {
 						type: "integer",
@@ -8888,6 +9220,10 @@
 					snoovatar_active: {
 						type: "boolean",
 						description: "Whether or not a user has a Snoovatar"
+					},
+					user_has_nft: {
+						type: "boolean",
+						description: "Whether or not a user has an nft set as an avatar *"
 					},
 					headshot_image_url: {
 						type: "string",
@@ -9035,6 +9371,10 @@
 						type: "integer",
 						description: "Coin balance of the subreddit"
 					},
+					subscriber_count: {
+						type: "integer",
+						description: "The subscriber count at the time the event is sent."
+					},
 					whitelist_status: {
 						type: "string",
 						description: "Whitelist status, used to classify what types of advertisements should be shown in this subreddit.\n\n    More details here: https://reddit.atlassian.net/wiki/spaces/ADS/pages/120337999/Whitelist+Statuses\n\n    Value definitions:\n        * no_ads - No ads of any kind will show on this subreddit.\n        * house_only - Only ads set to the house priority will show.\n        * promo_specified - (Deprecated) Only ads targeting that subreddit will appear.\n        * promo_adult_nsfw - (Deprecated) Subreddits in this category must be age-gated.\n        * promo_adult_sfw - (Deprecated) Subreddits in this category are not age-gated, but still adult themed.\n        * promo_all - (Deprecated) All promoted posts (self-serve or managed) will show on this subreddit.\n        * all_ads - All promoted posts and banners will show on this subreddit.\n        * some_ads - Some promoted posts and banners will show on this subreddit."
@@ -9139,6 +9479,14 @@
 						type: "string",
 						description: "Required identifier for a reddar ticket.\n\n    This field is a reddar ticket's reddit_id. Prefix 'tickets__'\n    followed by base36 value.\n    For example: 'tickets__23b'"
 					},
+					content_review_time: {
+						type: "integer",
+						description: "Amount of time in milliseconds that an admin worked on ticket, per content."
+					},
+					reddar_features_used: {
+						type: "array",
+						description: "A list of reddar features that were used while the user was actioning tickets."
+					},
 					status: {
 						type: "string",
 						description: "Used by admin tickets to specify the current state of the ticket.\n\n    Examples:\n    open,assigned,in_review,closed"
@@ -9151,9 +9499,17 @@
 						type: "string",
 						description: "The ID of the requestor associated with this ticket.\n\n    Prefix 'requestors__' followed by base36 value.\n    For example: 'requestors__23b'"
 					},
+					num_content_items: {
+						type: "integer",
+						description: "How many pieces of content were on the ticket at the time of review."
+					},
 					type: {
 						type: "string",
 						description: "Used by admin tickets to specify the complaint type, e.g. harassment.\n\n    There are a large number of possible values for this field.\n    Please check events we currently have in BigQuery for values already in use."
+					},
+					ticket_review_time: {
+						type: "integer",
+						description: "Amount of time in milliseconds that an admin worked on a ticket."
 					},
 					requestor_name: {
 						type: "string",
@@ -9640,6 +9996,9 @@
 					account_label_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/account_label/account_label.json#/definitions/id"
 					},
+					bulk_messenger_give_coins: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/give_coins"
+					},
 					gold_purchase_purchased_coins: {
 						$ref: "http://com.reddit/schemas/field_definitions/gold/gold_purchase.json#/definitions/purchased_coins"
 					},
@@ -9696,6 +10055,9 @@
 					},
 					legal_export_request_requestor_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/legal_export_request/legal_export_request.json#/definitions/requestor_id"
+					},
+					subreddit_subscriber_count: {
+						$ref: "http://com.reddit/schemas/field_definitions/subreddit/subreddit.json#/definitions/subscriber_count"
 					},
 					user_comment_karma: {
 						$ref: "http://com.reddit/schemas/field_definitions/user/user.json#/definitions/comment_karma"
@@ -9907,6 +10269,9 @@
 					d_o_m_timers_request: {
 						$ref: "http://com.reddit/schemas/field_definitions/timer/d_o_m_timers.json#/definitions/request"
 					},
+					bulk_messenger_recipient_count: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/recipient_count"
+					},
 					messenger_request_message_type: {
 						$ref: "http://com.reddit/schemas/field_definitions/notification/messenger_request.json#/definitions/message_type"
 					},
@@ -9927,6 +10292,9 @@
 					},
 					rater_tag_tagging_job_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/rater_tag/rater_tag.json#/definitions/tagging_job_id"
+					},
+					bulk_messenger_sender_id: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/sender_id"
 					},
 					subreddit_nsfw: {
 						$ref: "http://com.reddit/schemas/field_definitions/subreddit/subreddit.json#/definitions/nsfw"
@@ -9963,6 +10331,9 @@
 					},
 					chat_sender_user_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/chat/chat.json#/definitions/sender_user_id"
+					},
+					snoovatar_user_generated_source: {
+						$ref: "http://com.reddit/schemas/field_definitions/snoovatar/snoovatar.json#/definitions/user_generated_source"
 					},
 					request_reddaid: {
 						$ref: "http://com.reddit/schemas/field_definitions/request/request.json#/definitions/reddaid"
@@ -10084,11 +10455,17 @@
 					purchase_count: {
 						$ref: "http://com.reddit/schemas/field_definitions/econ/purchase.json#/definitions/count"
 					},
+					restrict_unverified_email_interaction: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/unverified_email_interaction"
+					},
 					reddar_audit_included_agent_ids: {
 						$ref: "http://com.reddit/schemas/field_definitions/audit/reddar_audit.json#/definitions/included_agent_ids"
 					},
 					post_original_content: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/post.json#/definitions/original_content"
+					},
+					restrict_crossposts: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/crossposts"
 					},
 					onboarding_subreddit_name: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/onboarding.json#/definitions/subreddit_name"
@@ -10143,6 +10520,9 @@
 					},
 					perspective_incoherent: {
 						$ref: "http://com.reddit/schemas/field_definitions/perspective/perspective.json#/definitions/incoherent"
+					},
+					bulk_messenger_admin_note: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/admin_note"
 					},
 					perspective_max_identity_attack: {
 						$ref: "http://com.reddit/schemas/field_definitions/perspective/perspective.json#/definitions/max_identity_attack"
@@ -10255,6 +10635,9 @@
 					powerups_benefit: {
 						$ref: "http://com.reddit/schemas/field_definitions/powerups/powerups.json#/definitions/benefit"
 					},
+					bulk_messenger_recipient_type: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/recipient_type"
+					},
 					live_thread_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/live_thread/live_thread.json#/definitions/id"
 					},
@@ -10275,6 +10658,9 @@
 					},
 					bulk_action_job_bigquery_job_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/bulk_action_job/bulk_action_job.json#/definitions/bigquery_job_id"
+					},
+					reddar_ticket_content_review_time: {
+						$ref: "http://com.reddit/schemas/field_definitions/ticket/reddar_ticket.json#/definitions/content_review_time"
 					},
 					spamurai_action_channel: {
 						$ref: "http://com.reddit/schemas/field_definitions/spamurai/spamurai_action.json#/definitions/channel"
@@ -10408,6 +10794,12 @@
 					perspective_max_spam: {
 						$ref: "http://com.reddit/schemas/field_definitions/perspective/perspective.json#/definitions/max_spam"
 					},
+					request_ratelimit_type: {
+						$ref: "http://com.reddit/schemas/field_definitions/request/request.json#/definitions/ratelimit_type"
+					},
+					reddar_ticket_num_content_items: {
+						$ref: "http://com.reddit/schemas/field_definitions/ticket/reddar_ticket.json#/definitions/num_content_items"
+					},
 					chat_shown_history: {
 						$ref: "http://com.reddit/schemas/field_definitions/chat/chat.json#/definitions/shown_history"
 					},
@@ -10483,6 +10875,9 @@
 					funding_instrument_estimated_spending_micros: {
 						$ref: "http://com.reddit/schemas/field_definitions/funding_instrument/funding_instrument.json#/definitions/estimated_spending_micros"
 					},
+					restrict_video_posts: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/video_posts"
+					},
 					crowd_source_geo_country: {
 						$ref: "http://com.reddit/schemas/field_definitions/crowd_source/crowd_source.json#/definitions/geo_country"
 					},
@@ -10494,6 +10889,9 @@
 					},
 					geo_region: {
 						$ref: "http://com.reddit/schemas/field_definitions/midas/geo.json#/definitions/region"
+					},
+					restrict_image_posts: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/image_posts"
 					},
 					topic_metadata_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/topic_metadata/topic_metadata.json#/definitions/id"
@@ -10540,8 +10938,14 @@
 					snoovatar_snoovatar_active: {
 						$ref: "http://com.reddit/schemas/field_definitions/snoovatar/snoovatar.json#/definitions/snoovatar_active"
 					},
+					restrict_subreddit_styles: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/subreddit_styles"
+					},
 					experiment_qa_proxy_event: {
 						$ref: "http://com.reddit/schemas/field_definitions/experiment/experiment.json#/definitions/qa_proxy_event"
+					},
+					bulk_messenger_add_to_sent_box: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/add_to_sent_box"
 					},
 					share_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/action/share.json#/definitions/id"
@@ -10599,6 +11003,9 @@
 					},
 					navigation_session_source: {
 						$ref: "http://com.reddit/schemas/field_definitions/navigation_session/navigation_session.json#/definitions/source"
+					},
+					request_ratelimit_exceeded: {
+						$ref: "http://com.reddit/schemas/field_definitions/request/request.json#/definitions/ratelimit_exceeded"
 					},
 					comment_created_timestamp: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/comment.json#/definitions/created_timestamp"
@@ -10834,6 +11241,9 @@
 					post_composer_type: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/post_composer.json#/definitions/type"
 					},
+					restrict_username_linking: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/username_linking"
+					},
 					comment_score: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/comment.json#/definitions/score"
 					},
@@ -10921,6 +11331,9 @@
 					email_header_text: {
 						$ref: "http://com.reddit/schemas/field_definitions/email/email.json#/definitions/header_text"
 					},
+					restrict_poll_posts: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/poll_posts"
+					},
 					profile_about: {
 						$ref: "http://com.reddit/schemas/field_definitions/subreddit/profile.json#/definitions/about"
 					},
@@ -10968,6 +11381,12 @@
 					},
 					powerups_subscription_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/powerups/powerups.json#/definitions/subscription_id"
+					},
+					snoovatar_nft_name: {
+						$ref: "http://com.reddit/schemas/field_definitions/snoovatar/snoovatar.json#/definitions/nft_name"
+					},
+					bulk_messenger_add_admin_note: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/add_admin_note"
 					},
 					post_number_posts_from_ad: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/post.json#/definitions/number_posts_from_ad"
@@ -11251,6 +11670,9 @@
 					post_subreddit_name: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/post.json#/definitions/subreddit_name"
 					},
+					snoovatar_user_has_nft: {
+						$ref: "http://com.reddit/schemas/field_definitions/snoovatar/snoovatar.json#/definitions/user_has_nft"
+					},
 					admin_team_access_type: {
 						$ref: "http://com.reddit/schemas/field_definitions/admin_action/admin_team.json#/definitions/access_type"
 					},
@@ -11343,6 +11765,9 @@
 					},
 					a_f_d_second_vote_counts: {
 						$ref: "http://com.reddit/schemas/field_definitions/afd_second/a_f_d_second.json#/definitions/vote_counts"
+					},
+					bulk_messenger_distinguished: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/distinguished"
 					},
 					news_subtopic_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/news.json#/definitions/subtopic_id"
@@ -11464,6 +11889,9 @@
 					popup_text: {
 						$ref: "http://com.reddit/schemas/field_definitions/popup/popup.json#/definitions/text"
 					},
+					restrict_subscriber_count_visibility: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/subscriber_count_visibility"
+					},
 					profile_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/subreddit/profile.json#/definitions/id"
 					},
@@ -11575,6 +12003,9 @@
 					mailroom_request_message_type: {
 						$ref: "http://com.reddit/schemas/field_definitions/notification/mailroom_request.json#/definitions/message_type"
 					},
+					request_tls_fingerprint: {
+						$ref: "http://com.reddit/schemas/field_definitions/request/request.json#/definitions/tls_fingerprint"
+					},
 					message_first_message_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/message.json#/definitions/first_message_id"
 					},
@@ -11641,6 +12072,9 @@
 					ad_push_push_nsfw: {
 						$ref: "http://com.reddit/schemas/field_definitions/adevent/ad_push.json#/definitions/push_nsfw"
 					},
+					reddar_ticket_reddar_features_used: {
+						$ref: "http://com.reddit/schemas/field_definitions/ticket/reddar_ticket.json#/definitions/reddar_features_used"
+					},
 					chat_channel_name: {
 						$ref: "http://com.reddit/schemas/field_definitions/chat/chat.json#/definitions/channel_name"
 					},
@@ -11670,6 +12104,9 @@
 					},
 					onboarding_captcha_num_screens: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/onboarding.json#/definitions/captcha_num_screens"
+					},
+					ad_pixel_event_timestamp: {
+						$ref: "http://com.reddit/schemas/field_definitions/adevent/ad_pixel.json#/definitions/event_timestamp"
 					},
 					geo_tor_exit_node: {
 						$ref: "http://com.reddit/schemas/field_definitions/midas/geo.json#/definitions/tor_exit_node"
@@ -11731,8 +12168,14 @@
 					playback_heartbeat_duration_ms: {
 						$ref: "http://com.reddit/schemas/field_definitions/playback/playback.json#/definitions/heartbeat_duration_ms"
 					},
+					bulk_messenger_repliable: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/repliable"
+					},
 					n_c_m_e_c_report_post_possible_proxy: {
 						$ref: "http://com.reddit/schemas/field_definitions/admin_action/n_c_m_e_c_report.json#/definitions/post_possible_proxy"
+					},
+					restrict_subreddit_linking: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/subreddit_linking"
 					},
 					a_f_d_second_winning_image_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/afd_second/a_f_d_second.json#/definitions/winning_image_id"
@@ -11856,6 +12299,9 @@
 					},
 					subreddit_topic_tag_contents: {
 						$ref: "http://com.reddit/schemas/field_definitions/subreddit/subreddit.json#/definitions/topic_tag_contents"
+					},
+					bulk_messenger_message_type: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/message_type"
 					},
 					session_anonymous_browsing_mode: {
 						$ref: "http://com.reddit/schemas/field_definitions/session/session.json#/definitions/anonymous_browsing_mode"
@@ -12016,6 +12462,9 @@
 					app_icon_prev_icon_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/app_icons/app_icon.json#/definitions/prev_icon_id"
 					},
+					restrict_subreddit_images: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/subreddit_images"
+					},
 					user_number_creddits: {
 						$ref: "http://com.reddit/schemas/field_definitions/user/user.json#/definitions/number_creddits"
 					},
@@ -12040,11 +12489,20 @@
 					reddar_ticket_requestor_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/ticket/reddar_ticket.json#/definitions/requestor_id"
 					},
+					ad_pixel_tracking_type: {
+						$ref: "http://com.reddit/schemas/field_definitions/adevent/ad_pixel.json#/definitions/tracking_type"
+					},
+					ad_pixel_deferred: {
+						$ref: "http://com.reddit/schemas/field_definitions/adevent/ad_pixel.json#/definitions/deferred"
+					},
 					scheduled_post_recurring_intervals: {
 						$ref: "http://com.reddit/schemas/field_definitions/scheduled_post/scheduled_post.json#/definitions/recurring_intervals"
 					},
 					legal_export_request_has_ndo: {
 						$ref: "http://com.reddit/schemas/field_definitions/legal_export_request/legal_export_request.json#/definitions/has_ndo"
+					},
+					restrict_media_embeds: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/media_embeds"
 					},
 					ad_request_top_comment_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/adevent/ad_request.json#/definitions/top_comment_id"
@@ -12151,6 +12609,9 @@
 					onboarding_subreddit_position: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/onboarding.json#/definitions/subreddit_position"
 					},
+					request_ratelimit_count: {
+						$ref: "http://com.reddit/schemas/field_definitions/request/request.json#/definitions/ratelimit_count"
+					},
 					upload_file_size: {
 						$ref: "http://com.reddit/schemas/field_definitions/upload/upload.json#/definitions/file_size"
 					},
@@ -12175,6 +12636,9 @@
 					snoovatar_gear_status: {
 						$ref: "http://com.reddit/schemas/field_definitions/snoovatar/snoovatar.json#/definitions/gear_status"
 					},
+					restrict_unverified_email_viewers: {
+						$ref: "http://com.reddit/schemas/field_definitions/restrict/restrict.json#/definitions/unverified_email_viewers"
+					},
 					media_type: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/media.json#/definitions/type"
 					},
@@ -12183,6 +12647,9 @@
 					},
 					funding_instrument_start_timestamp: {
 						$ref: "http://com.reddit/schemas/field_definitions/funding_instrument/funding_instrument.json#/definitions/start_timestamp"
+					},
+					reddar_ticket_ticket_review_time: {
+						$ref: "http://com.reddit/schemas/field_definitions/ticket/reddar_ticket.json#/definitions/ticket_review_time"
 					},
 					experiment_bucketing_type: {
 						$ref: "http://com.reddit/schemas/field_definitions/experiment/experiment.json#/definitions/bucketing_type"
@@ -12319,6 +12786,9 @@
 					news_subtopic_name: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/news.json#/definitions/subtopic_name"
 					},
+					snoovatar_user_generated: {
+						$ref: "http://com.reddit/schemas/field_definitions/snoovatar/snoovatar.json#/definitions/user_generated"
+					},
 					live_audio_room_creator_id: {
 						$ref: "http://com.reddit/schemas/field_definitions/liveaudio/live_audio_room.json#/definitions/creator_id"
 					},
@@ -12327,6 +12797,9 @@
 					},
 					setting_value: {
 						$ref: "http://com.reddit/schemas/field_definitions/setting/setting.json#/definitions/value"
+					},
+					bulk_messenger_message_body: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/message_body"
 					},
 					onboarding_end_timestamp: {
 						$ref: "http://com.reddit/schemas/field_definitions/content/onboarding.json#/definitions/end_timestamp"
@@ -12498,6 +12971,9 @@
 					},
 					platform_primary_language: {
 						$ref: "http://com.reddit/schemas/field_definitions/device/platform.json#/definitions/primary_language"
+					},
+					bulk_messenger_subject: {
+						$ref: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json#/definitions/subject"
 					},
 					action_info_reason: {
 						$ref: "http://com.reddit/schemas/field_definitions/action/action_info.json#/definitions/reason"
@@ -12751,4 +13227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~AdminPanel.9b24840577d41d3b738d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~AdminPanel.a5bc90ca020df1ed6380.js.map
