@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0bf1be632b65960312f2.js
-// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.24480b4211256cb51fd8.js
+// Retrieved at 7/8/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -1948,150 +1948,157 @@
 						hostPostData: D,
 						isCheckboxSelected: U,
 						isCurrentUserProfilePost: W,
-						isFrontpage: V,
-						isGalleryTileLayoutDefault: q,
-						isLoggedIn: z,
-						isOverlay: G,
-						imageGalleryCurrentItem: K,
-						moderatorPermissions: Q,
-						modModeEnabled: X,
-						onClickPost: J,
-						onIgnoreReports: Y,
-						onOpenReportsDropdown: $,
-						poll: ee,
-						post: te,
-						postId: se,
-						redditStyle: ne,
-						scrollerItemRef: ae,
-						showBulkActionCheckbox: oe,
-						showEditFlair: re,
-						showMedia: ie,
-						subredditOrProfile: de,
-						toggleCheckbox: le,
-						userIsOp: ce,
-						shouldShowGalleryTileOption: me
-					} = this.props, ue = ne ? void 0 : T, pe = this.props.crosspost || void 0, be = Object(F.a)(Q), he = Object(P.a)(Q), ge = Object(R.a)(Q), fe = X && F.a, xe = !!te.media && te.media.type === w.o.RTJSON, Ee = ce && xe, ve = i && !ie, _e = !!te.media && Object(w.G)(te.media), Ce = {
-						flairStyleTemplate: ue,
-						post: te,
+						isCommentCountAnimationEnabled: V,
+						isVoteCountAnimationEnabled: q,
+						isCountAnimShadowTestEnabled: z,
+						isFrontpage: G,
+						isGalleryTileLayoutDefault: K,
+						isLoggedIn: Q,
+						isOverlay: X,
+						imageGalleryCurrentItem: J,
+						moderatorPermissions: Y,
+						modModeEnabled: $,
+						onClickPost: ee,
+						onIgnoreReports: te,
+						onOpenReportsDropdown: se,
+						poll: ne,
+						post: ae,
+						postId: oe,
+						redditStyle: re,
+						scrollerItemRef: ie,
+						showBulkActionCheckbox: de,
+						showEditFlair: le,
+						showMedia: ce,
+						subredditOrProfile: me,
+						toggleCheckbox: ue,
+						userIsOp: pe,
+						shouldShowGalleryTileOption: be
+					} = this.props, he = re ? void 0 : T, ge = this.props.crosspost || void 0, fe = Object(F.a)(Y), xe = Object(P.a)(Y), Ee = Object(R.a)(Y), ve = $ && F.a, _e = !!ae.media && ae.media.type === w.o.RTJSON, Ce = pe && _e, ke = i && !ce, ye = !!ae.media && Object(w.G)(ae.media), Se = {
+						flairStyleTemplate: he,
+						post: ae,
 						inSubredditOrProfile: i,
 						isCurrentUserProfilePost: W,
-						isOverlay: G,
-						shouldShowSubscribeButton: !(V && z),
-						subredditOrProfile: de
-					}, ke = Object(o.t)(te, K), {
-						source: ye
-					} = ke, Se = a.a.createElement(E.a, {
+						isOverlay: X,
+						shouldShowSubscribeButton: !(G && Q),
+						subredditOrProfile: me
+					}, Oe = Object(o.t)(ae, J), {
+						source: je
+					} = Oe, we = a.a.createElement(E.a, {
 						className: Object(r.a)(L.a.classicPostStyles, B.a.postContainer, Object(A.a)(this.props), N ? B.a.mFirst : void 0, e),
-						isOverlay: G,
+						isOverlay: X,
 						style: {
 							...Object(A.d)(this.props),
 							...Object(A.b)(this.props.flairStyleTemplate)
 						},
-						post: te,
-						onClick: J,
+						post: ae,
+						onClick: ee,
 						eventFactory: v
 					}, a.a.createElement(k.a, {
-						model: te,
+						model: ae,
 						handleVote: s,
-						showBulkActionCheckbox: oe,
+						showBulkActionCheckbox: de,
 						isCheckboxSelected: U,
-						toggleCheckbox: le,
-						flairStyleTemplate: ue,
-						redditStyle: ne,
-						subreddit: de,
-						postId: se
+						isCountAnimShadowTestEnabled: z,
+						isVoteCountAnimation: q,
+						toggleCheckbox: ue,
+						flairStyleTemplate: he,
+						redditStyle: re,
+						subreddit: me,
+						postId: oe
 					}), a.a.createElement(x.a, {
 						"data-click-id": "background",
-						flairStyleTemplate: ue
+						flairStyleTemplate: he
 					}, a.a.createElement(u.a, {
 						className: B.a.eventMeta,
-						post: te
+						post: ae
 					}), a.a.createElement("div", {
 						className: B.a.mainBody
 					}, a.a.createElement("div", {
-						className: ve ? B.a.expandoContainer : B.a.thumbnailContainer
-					}, !ve && a.a.createElement(I.a, {
+						className: ke ? B.a.expandoContainer : B.a.thumbnailContainer
+					}, !ke && a.a.createElement(I.a, {
 						className: B.a.classicThumbnail,
-						crosspost: pe && te,
-						isMeta: te.isMeta,
-						post: pe || te,
-						redditStyle: ne,
-						templatePlaceholderImage: ue && ue.postPlaceholderImage,
-						removeLink: _e
+						crosspost: ge && ae,
+						isMeta: ae.isMeta,
+						post: ge || ae,
+						redditStyle: re,
+						templatePlaceholderImage: he && he.postPlaceholderImage,
+						removeLink: ye
 					}), a.a.createElement(p.a, {
-						crosspost: pe,
+						crosspost: ge,
 						className: B.a.rightExpando,
 						isExpanded: !!n,
-						post: te,
+						post: ae,
 						useMediaIcons: !1
 					})), a.a.createElement("div", {
 						className: Object(r.a)(B.a.content, {
-							[B.a.showBulkActionCheckbox]: oe
+							[B.a.showBulkActionCheckbox]: de
 						}),
 						"data-click-id": "body"
 					}, a.a.createElement(y.c, {
-						className: ee ? B.a.titleWithPoll : void 0,
+						className: ne ? B.a.titleWithPoll : void 0,
 						format: M,
-						poll: ee,
-						post: te,
-						redditStyle: ne,
+						poll: ne,
+						post: ae,
+						redditStyle: re,
 						size: y.b.Medium,
-						titleColor: ue && ue.postTitleColor,
-						isOverlay: G
-					}, te.source && !pe && a.a.createElement(j.a, {
-						href: te.source.url,
-						isSponsored: te.isSponsored,
-						postId: te.id,
-						source: te.source
-					}, Object(d.a)(te))), a.a.createElement(_.a, H({
+						titleColor: he && he.postTitleColor,
+						isOverlay: X
+					}, ae.source && !ge && a.a.createElement(j.a, {
+						href: ae.source.url,
+						isSponsored: ae.isSponsored,
+						postId: ae.id,
+						source: ae.source
+					}, Object(d.a)(ae))), a.a.createElement(_.a, H({
 						key: "PostMeta"
-					}, Ce)), X && be && Object(f.c)(te) && a.a.createElement(g.a, {
-						onIgnoreReports: Y,
-						reportable: te
-					}), te.isSponsored && ye && ye.url && a.a.createElement(l.a, {
+					}, Se)), $ && fe && Object(f.c)(ae) && a.a.createElement(g.a, {
+						onIgnoreReports: te,
+						reportable: ae
+					}), ae.isSponsored && je && je.url && a.a.createElement(l.a, {
 						className: B.a.adLinkWrapper
 					}, a.a.createElement(c.a, {
-						post: te,
-						adLinkContent: ke
+						post: ae,
+						adLinkContent: Oe
 					})), a.a.createElement("div", {
 						className: B.a.flatlistContainer
 					}, a.a.createElement(p.a, {
 						className: B.a.leftExpando,
-						crosspost: pe,
+						crosspost: ge,
 						isExpanded: !!n,
-						post: te,
+						post: ae,
 						useMediaIcons: !1
 					}), a.a.createElement(m.a, {
 						className: B.a.horizontalVotes,
 						compact: !1,
-						flairStyleTemplate: ue,
-						model: te,
+						flairStyleTemplate: he,
+						model: ae,
 						onVoteClick: s
 					}), a.a.createElement(b.a, {
 						className: B.a.flatlistSeparator
 					}), a.a.createElement(b.c, {
 						className: B.a.flatlist,
 						currentUser: t,
-						hasModFlairPerms: he,
-						hasModPostPerms: be,
-						hasModFullPerms: ge,
+						hasModFlairPerms: xe,
+						hasModPostPerms: fe,
+						hasModFullPerms: Ee,
 						hostPostData: D,
-						isOverlay: !!G,
-						modModeEnabled: X,
-						onIgnoreReports: Y,
-						onOpenReportsDropdown: $,
-						post: te,
-						showEditPost: Ee,
-						showEditFlair: re,
-						tooltipType: G ? S.c.Lightbox : void 0,
+						isCommentCountAnimation: V,
+						isCountAnimShadowTestEnabled: z,
+						isOverlay: !!X,
+						modModeEnabled: $,
+						onIgnoreReports: te,
+						onOpenReportsDropdown: se,
+						post: ae,
+						showEditPost: Ce,
+						showEditFlair: le,
+						tooltipType: X ? S.c.Lightbox : void 0,
 						useFlatlistBreakpoints: Object(C.b)({
-							editPost: !fe,
-							save: !fe,
-							hide: !fe,
-							report: !fe
+							editPost: !ve,
+							save: !ve,
+							hide: !ve,
+							report: !ve
 						})
-					})), a.a.createElement(h.d, null))), Z(te, ae, n, me, q)));
-					return a.a.createElement(O.b, null, Se)
+					})), a.a.createElement(h.d, null))), Z(ae, ie, n, be, K)));
+					return a.a.createElement(O.b, null, we)
 				}
 			}
 			const Z = (e, t, s, n, o) => s ? e.crosspostRootId ? a.a.createElement("div", {
@@ -19960,4 +19967,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0bf1be632b65960312f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.24480b4211256cb51fd8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.75a3f18b50ec14481022.js
-// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a24556a4c08fc67d7562.js
+// Retrieved at 7/8/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2024,25 +2024,26 @@
 							score: r,
 							postId: i = "",
 							locale: h,
-							isVoteCountAnimation: b
+							isVoteCountAnimation: b,
+							isCountAnimShadowTestEnabled: g
 						} = e,
-						g = Object(d.d)(),
-						_ = null == h ? void 0 : h.startsWith("en"),
-						v = e.isScoreHidden ? _ ? s.fbt._("Vote", null, {
+						_ = Object(d.d)(),
+						v = null == h ? void 0 : h.startsWith("en"),
+						O = e.isScoreHidden ? v ? s.fbt._("Vote", null, {
 							hk: "2TMson"
 						}) : c.a.createElement("span", {
 							className: S.a.dot
 						}, "•") : Object(a.b)(r),
-						O = Object(o.useCallback)(e => {
+						I = Object(o.useCallback)(e => {
 							const {
 								voteCountChange: t
 							} = e.subscribe.data;
-							0 !== t && g(Object(u.K)({
+							0 !== t && _(Object(u.K)({
 								postId: i,
 								delta: t
 							}))
-						}, [g, i]),
-						I = Object(o.useRef)({
+						}, [_, i]),
+						T = Object(o.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -2051,26 +2052,27 @@
 								}
 							}
 						}),
-						T = Object(E.a)(),
-						x = Object(o.useCallback)(() => {
-							T(Object(f.m)(i))
-						}, [T, i]);
+						x = Object(E.a)(),
+						A = Object(o.useCallback)(() => {
+							x(Object(f.m)(i))
+						}, [x, i]),
+						R = !e.isScoreHidden && b;
 					return c.a.createElement("div", {
 						className: Object(n.a)(S.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, !e.isScoreHidden && b ? c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
+					}, R ? c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
 						initialDisplayCount: r,
 						countToUpperBound: r,
 						initialDelay: y,
 						subsequentRecurringDelay: y,
 						incrementDelta: y,
 						shouldDisjointAnimation: !0,
-						inViewPortAnimatingCallbackOnce: x
-					}), c.a.createElement(l.a, {
-						variables: I.current,
-						onData: O,
+						inViewPortAnimatingCallbackOnce: A
+					})) : O, (R || g) && c.a.createElement(l.a, {
+						variables: T.current,
+						onData: R ? I : y,
 						queryKey: "postVoteCount"
-					})) : v)
+					}))
 				});
 			t.a = I(T)
 		},
@@ -3745,4 +3747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.75a3f18b50ec14481022.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a24556a4c08fc67d7562.js.map

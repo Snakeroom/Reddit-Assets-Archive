@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.fca3d38472a6caaff59a.js
-// Retrieved at 7/8/2021, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.b5960e2bb2597e91c148.js
+// Retrieved at 7/8/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -10757,7 +10757,7 @@
 						const s = t && Object(j.l)(e, {
 							page: t
 						}) || n;
-						return !!s && Object(P.e)(e, {
+						return !!s && Object(P.g)(e, {
 							post: s
 						})
 					}
@@ -17925,54 +17925,63 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return i
-			})), n.d(t, "e", (function() {
-				return c
-			})), n.d(t, "d", (function() {
-				return d
 			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "h", (function() {
+				return d
+			})), n.d(t, "d", (function() {
 				return l
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "g", (function() {
 				return u
+			})), n.d(t, "f", (function() {
+				return m
+			})), n.d(t, "c", (function() {
+				return p
+			})), n.d(t, "e", (function() {
+				return b
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/userPrefs.ts");
-			const i = e => {
+			const i = 1e4,
+				c = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.l
 					});
 					return t === s.q.VoteCountOnly || t === s.q.CommentCountOnly || t === s.q.VoteAndCommentCount
 				},
-				c = (e, {
+				d = e => !1,
+				l = e => !1,
+				u = (e, {
 					post: t
-				}) => d(e, {
+				}) => m(e, {
 					postId: t.id
 				}),
-				d = (e, {
+				m = (e, {
 					postId: t
 				}) => {
 					const n = e.posts.models[t];
-					if (Object(a.c)(e) || !n || n.isSponsored || n.isScoreHidden || n.score >= 1e4) return !1;
+					if (Object(a.c)(e) || !n || n.isSponsored || n.isScoreHidden || n.score >= i) return !1;
 					const o = Object(r.d)(e, {
 							experimentName: s.l
 						}),
-						i = null == o ? void 0 : o.variant;
-					return i === s.q.VoteCountOnly || i === s.q.VoteAndCommentCount
+						c = null == o ? void 0 : o.variant;
+					return c === s.q.VoteCountOnly || c === s.q.VoteAndCommentCount
 				},
-				l = (e, {
+				p = (e, {
 					postId: t
 				}) => {
 					const n = e.posts.models[t];
-					if (Object(a.c)(e) || !n || n.isSponsored || n.numComments >= 1e4) return !1;
+					if (Object(a.c)(e) || !n || n.isSponsored || n.numComments >= i) return !1;
 					const o = Object(r.d)(e, {
 							experimentName: s.l
 						}),
-						i = null == o ? void 0 : o.variant;
-					return i === s.q.CommentCountOnly || i === s.q.VoteAndCommentCount
+						c = null == o ? void 0 : o.variant;
+					return c === s.q.CommentCountOnly || c === s.q.VoteAndCommentCount
 				},
-				u = e => {
+				b = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.eb
@@ -18243,6 +18252,20 @@
 			}));
 			const s = e => e.trending.models
 		},
+		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "a", (function() {
+				return r
+			})), n.d(t, "c", (function() {
+				return a
+			}));
+			var s = n("./src/lib/constants/index.ts");
+			const o = e => !r(e) && !!e.user.prefs.subscriptionsPinned,
+				r = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Jb.MODERATION_PAGES),
+				a = e => e.user.prefs.reduceAnimationsFromAwards
+		},
 		"./src/redditGQL/operations/BlockAwarder.json": function(e) {
 			e.exports = JSON.parse('{"id":"9769ffbb7031"}')
 		},
@@ -18284,4 +18307,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.fca3d38472a6caaff59a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b5960e2bb2597e91c148.js.map

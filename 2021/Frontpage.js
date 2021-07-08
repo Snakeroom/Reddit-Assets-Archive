@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.f6eb45d634f491df71f8.js
-// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2a930f0ce06b0b229b76.js
+// Retrieved at 7/8/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4115,22 +4115,23 @@
 				I = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				A = n("./src/reddit/helpers/trackers/screenview.ts"),
 				L = n("./src/reddit/layout/page/Listing/index.tsx"),
-				D = n("./src/reddit/selectors/experiments/trending.ts"),
-				F = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
-				R = n("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
-				B = n("./src/reddit/selectors/frontpage.ts"),
-				U = n("./src/reddit/selectors/meta.ts"),
-				M = n("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
-				q = n("./src/reddit/selectors/user.ts"),
-				W = n("./src/lib/constants/index.ts"),
-				V = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				G = n("./src/lib/objectSelector/index.ts"),
-				K = n("./src/reddit/constants/page.ts"),
-				H = n("./src/reddit/pages/Frontpage/index.m.less"),
-				Q = n.n(H);
+				D = n("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				F = n("./src/reddit/selectors/experiments/trending.ts"),
+				R = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
+				B = n("./src/reddit/selectors/focusedVerticalSuggestion.ts"),
+				U = n("./src/reddit/selectors/frontpage.ts"),
+				M = n("./src/reddit/selectors/meta.ts"),
+				q = n("./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts"),
+				W = n("./src/reddit/selectors/user.ts"),
+				V = n("./src/lib/constants/index.ts"),
+				G = n("./src/reddit/actions/publicAccessNetwork/constants.ts"),
+				K = n("./src/lib/objectSelector/index.ts"),
+				H = n("./src/reddit/constants/page.ts"),
+				Q = n("./src/reddit/pages/Frontpage/index.m.less"),
+				z = n.n(Q);
 
-			function z() {
-				return (z = Object.assign || function(e) {
+			function J() {
+				return (J = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -4139,36 +4140,39 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: J
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = Object(T.t)(), X = Object(d.c)({
-				queryParams: Object(G.a)((e, {
+				fbt: Z
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), X = Object(T.t)(), Y = Object(d.c)({
+				queryParams: Object(K.a)((e, {
 					location: t
 				}) => o()([...Object(u.a)(t.search)])),
 				sort: (e, {
 					match: t
 				}) => {
-					const n = Object(B.a)(e);
+					const n = Object(U.a)(e);
 					return t.params.sort || n
 				}
-			}), Y = Object(d.c)({
-				countryMeta: U.b,
-				geopopular: q.n
 			}), $ = Object(d.c)({
-				isInTrendingEntrypointExperiment: D.a,
-				isLoggedIn: q.K,
+				countryMeta: M.b,
+				geopopular: W.n
+			}), ee = Object(d.c)({
+				isCommentCountAnimationEnabled: D.d,
+				isVoteCountAnimationEnabled: D.h,
+				isCountAnimShadowTestEnabled: D.e,
+				isInTrendingEntrypointExperiment: F.a,
+				isLoggedIn: W.K,
 				isPopular: T.C,
-				isRpanDuVisible: e => Object(M.a)(e, {
-					listingName: V.R
+				isRpanDuVisible: e => Object(q.a)(e, {
+					listingName: G.R
 				}),
-				rpanInjectionIndex: e => Object(M.b)(e, {
-					listingName: V.R
+				rpanInjectionIndex: e => Object(q.b)(e, {
+					listingName: G.R
 				}),
 				layout: T.O,
-				isInUISimplificationI18NExperiment: F.a
-			}), ee = () => Object(d.a)(Y, X, $, e => Object(M.a)(e, {
-				listingName: V.R
-			}), e => Object(M.b)(e, {
-				listingName: V.R
+				isInUISimplificationI18NExperiment: R.a
+			}), te = () => Object(d.a)($, Y, ee, e => Object(q.a)(e, {
+				listingName: G.R
+			}), e => Object(q.b)(e, {
+				listingName: G.R
 			}), e => e, I.a, ({
 				countryMeta: e,
 				geopopular: t
@@ -4177,9 +4181,9 @@
 				sort: s
 			}, r, o, i, a, c) => {
 				const d = P.x in n && n[P.x].toUpperCase(),
-					l = "string" == typeof d && d in W.bc ? W.bc[d] : W.cc,
-					u = Object(p.a)(K.a, s, n),
-					m = e || W.y.Everywhere,
+					l = "string" == typeof d && d in V.bc ? V.bc[d] : V.cc,
+					u = Object(p.a)(H.a, s, n),
+					m = e || V.y.Everywhere,
 					b = t || m,
 					h = P.h in n ? n[P.h].toUpperCase() : b,
 					g = [];
@@ -4189,7 +4193,7 @@
 					listingKey: u,
 					sort: s,
 					timeSort: l,
-					focusedVerticalPositions: Object(R.b)(a, {
+					focusedVerticalPositions: Object(B.b)(a, {
 						existingDUPositions: g,
 						listingProps: {
 							listingKey: u
@@ -4197,14 +4201,14 @@
 					}),
 					...r
 				}
-			}), te = (e, t) => ({
+			}), ne = (e, t) => ({
 				onLoadMorePosts: () => e(h.morePostsRequested({
 					sort: t.match.params.sort
 				})),
 				refreshFeed: () => e(h.refreshFeed({
 					sort: t.match.params.sort
 				}))
-			}), ne = Object(c.b)(ee, te), se = Object(s.a)({
+			}), se = Object(c.b)(te, ne), re = Object(s.a)({
 				resolved: {},
 				chunkName: () => "Trending",
 				isReady(e) {
@@ -4225,15 +4229,15 @@
 				}
 			}, {
 				ssr: !1
-			}), re = e => a.a.createElement(se, z({}, e, {
+			}), oe = e => a.a.createElement(re, J({}, e, {
 				fallback: a.a.createElement(N.a, {
 					showCardView: !!e.showCardView
 				})
 			}));
-			class oe extends a.a.Component {
+			class ie extends a.a.Component {
 				constructor(e) {
 					super(e), this.renderEmptySubreddit = () => a.a.createElement(f.a, {
-						listingName: K.b,
+						listingName: H.b,
 						sort: this.props.sort
 					}), this.onListingViewed = (e, t) => Object(A.f)(this.props.listingKey, this.props.sort, t, e, this.props.timeSort), this.componentDidMount = () => {
 						const {
@@ -4251,76 +4255,82 @@
 				render() {
 					const {
 						focusedVerticalPositions: e,
-						isInTrendingEntrypointExperiment: t,
-						isLoggedIn: n,
-						isPopular: s,
-						isRpanDuVisible: r,
-						layout: o,
-						listingKey: c,
-						rpanInjectionIndex: d,
-						sendEvent: u,
-						isInUISimplificationI18NExperiment: m
-					} = this.props, p = s && !n && t && !m, b = {
+						isCommentCountAnimationEnabled: t,
+						isCountAnimShadowTestEnabled: n,
+						isInTrendingEntrypointExperiment: s,
+						isInUISimplificationI18NExperiment: r,
+						isLoggedIn: o,
+						isPopular: c,
+						isRpanDuVisible: d,
+						isVoteCountAnimationEnabled: u,
+						layout: m,
+						listingKey: p,
+						rpanInjectionIndex: b,
+						sendEvent: h
+					} = this.props, f = c && !o && s && !r, N = {
 						baseUrl: "",
 						countrySort: this.props.countrySort,
 						sort: this.props.sort,
 						timeSort: this.props.timeSort
-					}, h = {};
-					if (o === w.g.Large && e.forEach((e, t) => {
-							h[e] = Object(g.a)({
+					}, S = {};
+					if (m === w.g.Large && e.forEach((e, t) => {
+							S[e] = Object(g.a)({
 								numInstance: t,
-								layout: o,
-								listingKey: c,
-								listingName: K.b,
+								layout: m,
+								listingKey: p,
+								listingName: H.b,
 								listingPosition: e
 							})
-						}), r) {
+						}), d) {
 						const {
 							child: e,
 							idx: t
 						} = Object(j.a)({
-							children: h,
-							desiredIndex: d,
-							layout: o,
-							listingKey: c,
-							listingName: V.R,
-							sendEvent: u
+							children: S,
+							desiredIndex: b,
+							layout: m,
+							listingKey: p,
+							listingName: G.R,
+							sendEvent: h
 						});
-						h[t] = e
+						S[t] = e
 					}
-					const f = a.a.createElement(_.default, {
-						className: Q.a.sidebar,
-						listingKey: c,
-						listingName: K.b
+					const P = a.a.createElement(_.default, {
+						className: z.a.sidebar,
+						listingKey: p,
+						listingName: H.b
 					});
 					return a.a.createElement(L.a, {
-						className: Object(l.a)(Q.a.Container, this.props.className),
+						className: Object(l.a)(z.a.Container, this.props.className),
 						fitPageToContent: !0,
-						trendingUnit: p && a.a.createElement(re, {
-							showCardView: o === w.g.Large
+						trendingUnit: f && a.a.createElement(oe, {
+							showCardView: m === w.g.Large
 						}),
-						content: a.a.createElement(i.Fragment, null, p && a.a.createElement(E.a, {
-							className: Q.a.duHeader
-						}, J._("Popular posts", null, {
+						content: a.a.createElement(i.Fragment, null, f && a.a.createElement(E.a, {
+							className: z.a.duHeader
+						}, Z._("Popular posts", null, {
 							hk: "36DJb4"
-						})), a.a.createElement(y.a, null), n && a.a.createElement(v.a, null), a.a.createElement(x.a, b), a.a.createElement(k.a, null), a.a.createElement(C.a, {
+						})), a.a.createElement(y.a, null), o && a.a.createElement(v.a, null), a.a.createElement(x.a, N), a.a.createElement(k.a, null), a.a.createElement(C.a, {
 							listingKey: this.props.listingKey,
 							shortTimer: !0,
 							handlePillClick: this.props.refreshFeed
 						}), a.a.createElement(O.a, {
-							injectChildren: h,
+							injectChildren: S,
+							isCommentCountAnimationEnabled: t,
+							isVoteCountAnimationEnabled: u,
+							isCountAnimShadowTestEnabled: n,
 							noPostsComponent: this.renderEmptySubreddit,
 							key: "listing",
-							listingKey: c,
-							listingName: K.b,
+							listingKey: p,
+							listingName: H.b,
 							listingViewed: this.onListingViewed,
 							onLoadMore: this.props.onLoadMorePosts
 						})),
-						sidebar: f
+						sidebar: P
 					})
 				}
 			}
-			t.default = Z(ne(Object(S.c)(oe)))
+			t.default = X(se(Object(S.c)(ie)))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/discoveryUnit.ts": function(e, t, n) {
 			"use strict";
@@ -4656,4 +4666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f6eb45d634f491df71f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2a930f0ce06b0b229b76.js.map

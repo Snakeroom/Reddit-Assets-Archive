@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.6734f9d971d440f73e4e.js
-// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.6f13bebd9dcd8457efcb.js
+// Retrieved at 7/8/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -471,9 +471,9 @@
 			})), n.d(t, "hideSubredditPending", (function() {
 				return V
 			})), n.d(t, "hideSubredditFailed", (function() {
-				return K
-			})), n.d(t, "unhideSubredditSuccess", (function() {
 				return q
+			})), n.d(t, "unhideSubredditSuccess", (function() {
+				return K
 			})), n.d(t, "unhideSubredditPending", (function() {
 				return Q
 			})), n.d(t, "unhideSubredditFailed", (function() {
@@ -629,8 +629,8 @@
 			}
 			const W = Object(a.a)(k.c),
 				V = Object(a.a)(k.b),
-				K = Object(a.a)(k.a),
-				q = Object(a.a)(k.l),
+				q = Object(a.a)(k.a),
+				K = Object(a.a)(k.l),
 				Q = Object(a.a)(k.k),
 				G = Object(a.a)(k.j),
 				J = (e, t) => async (n, r, {
@@ -638,7 +638,7 @@
 				}) => {
 					const o = r(),
 						i = Object(M.j)(o),
-						[a, d, c, l] = t ? [V, W, K, E] : [Q, q, G, O];
+						[a, d, c, l] = t ? [V, W, q, E] : [Q, K, G, O];
 					if (!i || !i.displayText) return;
 					const {
 						currentPage: u
@@ -2355,8 +2355,8 @@
 				});
 			var W = n("./src/reddit/routes/modListing/index.ts");
 			const V = e => e.modListingPage.filteredSubreddits.api.pending;
-			var K = n("./src/reddit/constants/keycodes.ts"),
-				q = n("./src/reddit/layout/row/Inline/index.tsx"),
+			var q = n("./src/reddit/constants/keycodes.ts"),
+				K = n("./src/reddit/layout/row/Inline/index.tsx"),
 				Q = n("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				G = n.n(Q);
 			const J = Object(d.c)({
@@ -2378,14 +2378,14 @@
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
-						e.key === K.b.Enter && this.submitInput()
+						e.key === q.b.Enter && this.submitInput()
 					}, this.canSubmitInput = () => this.state.subredditInput && !this.props.isApiPending
 				}
 				render() {
 					const {
 						props: e
 					} = this;
-					return i.a.createElement(i.a.Fragment, null, i.a.createElement(q.a, null, i.a.createElement("input", {
+					return i.a.createElement(i.a.Fragment, null, i.a.createElement(K.a, null, i.a.createElement("input", {
 						className: G.a.input,
 						onChange: this.onChange,
 						onKeyPress: this.onKeyPress,
@@ -2612,7 +2612,88 @@
 				experimentEligibilitySelector: s.a,
 				expEventOverride: !1
 			}) === r.Nc.Enabled
+		},
+		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "b", (function() {
+				return d
+			})), n.d(t, "h", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return l
+			})), n.d(t, "g", (function() {
+				return u
+			})), n.d(t, "f", (function() {
+				return m
+			})), n.d(t, "c", (function() {
+				return p
+			})), n.d(t, "e", (function() {
+				return h
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				o = n("./src/reddit/selectors/experiments/index.ts"),
+				i = n("./src/reddit/selectors/userPrefs.ts");
+			const a = 1e4,
+				d = e => {
+					const t = Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.l
+					});
+					return t === r.q.VoteCountOnly || t === r.q.CommentCountOnly || t === r.q.VoteAndCommentCount
+				},
+				c = e => !1,
+				l = e => !1,
+				u = (e, {
+					post: t
+				}) => m(e, {
+					postId: t.id
+				}),
+				m = (e, {
+					postId: t
+				}) => {
+					const n = e.posts.models[t];
+					if (Object(i.c)(e) || !n || n.isSponsored || n.isScoreHidden || n.score >= a) return !1;
+					const s = Object(o.d)(e, {
+							experimentName: r.l
+						}),
+						d = null == s ? void 0 : s.variant;
+					return d === r.q.VoteCountOnly || d === r.q.VoteAndCommentCount
+				},
+				p = (e, {
+					postId: t
+				}) => {
+					const n = e.posts.models[t];
+					if (Object(i.c)(e) || !n || n.isSponsored || n.numComments >= a) return !1;
+					const s = Object(o.d)(e, {
+							experimentName: r.l
+						}),
+						d = null == s ? void 0 : s.variant;
+					return d === r.q.CommentCountOnly || d === r.q.VoteAndCommentCount
+				},
+				h = e => {
+					return Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: r.eb
+					}) === r.ob.Enabled
+				}
+		},
+		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return s
+			})), n.d(t, "a", (function() {
+				return o
+			})), n.d(t, "c", (function() {
+				return i
+			}));
+			var r = n("./src/lib/constants/index.ts");
+			const s = e => !o(e) && !!e.user.prefs.subscriptionsPinned,
+				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== r.Jb.MODERATION_PAGES),
+				i = e => e.user.prefs.reduceAnimationsFromAwards
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.6734f9d971d440f73e4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.6f13bebd9dcd8457efcb.js.map

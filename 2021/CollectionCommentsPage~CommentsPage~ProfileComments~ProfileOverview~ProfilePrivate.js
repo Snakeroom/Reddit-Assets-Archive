@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.429971ca989502bce93b.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.39b174899150c3db7b96.js
+// Retrieved at 7/8/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -2764,44 +2764,46 @@
 					handleVote: n,
 					showBulkActionCheckbox: o = !1,
 					isCheckboxSelected: p = !1,
-					toggleCheckbox: x = (() => {}),
-					flairStyleTemplate: h,
-					redditStyle: f,
-					subreddit: E,
-					isOverlay: v,
-					isVoteCountAnimation: C,
-					postId: k
-				} = e, O = `upvote-button-${t.id}${v?"-overlay":""}`, {
-					moderationPrompt: _
+					isCountAnimShadowTestEnabled: x,
+					toggleCheckbox: h = (() => {}),
+					flairStyleTemplate: f,
+					redditStyle: E,
+					subreddit: v,
+					isOverlay: C,
+					isVoteCountAnimation: k,
+					postId: O
+				} = e, _ = `upvote-button-${t.id}${C?"-overlay":""}`, {
+					moderationPrompt: y
 				} = t;
 				return s.a.createElement(c.b, {
 					isRemoved: !!t.bannedBy,
 					isReported: Object(u.a)(t),
 					isSponsored: !!Object(m.b)(t) && t.isSponsored,
-					redditStyle: f
+					redditStyle: E
 				}, o && s.a.createElement(l.a, {
 					className: b.a.checkbox,
 					isCheckboxSelected: p,
-					toggleCheckbox: x
+					toggleCheckbox: h
 				}), s.a.createElement(d.a, {
-					flairStyleTemplate: h,
+					flairStyleTemplate: f,
 					model: t,
 					onVoteClick: n,
-					redditStyle: f,
-					upvoteTooltipId: O,
-					isVoteCountAnimation: C,
-					postId: k,
+					redditStyle: E,
+					upvoteTooltipId: _,
+					isVoteCountAnimation: k,
+					isCountAnimShadowTestEnabled: x,
+					postId: O,
 					scoreClassName: b.a.score
-				}), _ && s.a.createElement(i.b, {
-					rightOf: O
-				}, "survey" === _ ? s.a.createElement(a.a, {
+				}), y && s.a.createElement(i.b, {
+					rightOf: _
+				}, "survey" === y ? s.a.createElement(a.a, {
 					post: t,
-					subredditName: E.name,
-					isOverlay: !!v
+					subredditName: v.name,
+					isOverlay: !!C
 				}) : s.a.createElement(r.a, {
 					post: t,
-					subredditName: E.name,
-					isOverlay: !!v
+					subredditName: v.name,
+					isOverlay: !!C
 				})))
 			}
 		},
@@ -3446,4 +3448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.429971ca989502bce93b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.39b174899150c3db7b96.js.map
