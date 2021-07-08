@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.e780d35f9dce2be08c6d.js
-// Retrieved at 6/30/2021, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.b70587bdbc77aab2c7c8.js
+// Retrieved at 7/8/2021, 1:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./src/reddit/components/MarketingPageFooter/index.m.less": function(e, a, t) {
@@ -378,13 +378,14 @@
 					onChange: a,
 					subredditIdsSelected: t,
 					subredditsInfo: l,
-					wasSuccessful: r
-				} = e, c = l.filter(e => !e.hasPowerups), i = l.filter(e => e.hasPowerups), o = c.length === t.length;
+					wasSuccessful: r,
+					allEnabled: c
+				} = e, i = l.filter(e => !e.hasPowerups), o = l.filter(e => e.hasPowerups), m = i.length === t.length;
 				return n.a.createElement("div", {
 					className: y.a.container
 				}, n.a.createElement("div", {
 					className: y.a.checkboxList
-				}, i.map(({
+				}, o.map(({
 					id: e,
 					displayText: a
 				}) => n.a.createElement(N.a, {
@@ -394,7 +395,7 @@
 					onClick: () => {},
 					text: a,
 					disabled: !0
-				})), c.map(({
+				})), i.map(({
 					id: e,
 					displayText: l
 				}) => {
@@ -412,16 +413,16 @@
 						text: l,
 						disabled: r
 					})
-				})), !r && n.a.createElement(d.q, {
+				})), !r && !c && n.a.createElement(d.q, {
 					className: y.a.selectAllButton,
 					onClick: () => {
-						a(o ? [] : c.map(({
+						a(m ? [] : i.map(({
 							id: e
 						}) => e))
 					},
 					priority: d.b.Secondary,
 					isFullWidth: !0
-				}, o ? f._("Deselect all", null, {
+				}, m ? f._("Deselect all", null, {
 					hk: "46i6br"
 				}) : f._("Select all", null, {
 					hk: "2Eo4n2"
@@ -469,10 +470,12 @@
 					l = Object(g.a)(),
 					s = Object(c.e)(b),
 					i = null !== (a = 1 === (null == s ? void 0 : s.length)) && void 0 !== a && a,
-					o = i && s[0].hasPowerups,
+					o = null == s ? void 0 : s.every(({
+						hasPowerups: e
+					}) => e),
 					[_, w] = Object(r.useState)(s && i ? [s[0].id] : []),
 					[E, N] = Object(r.useState)(!1),
-					[v, y] = Object(r.useState)(o),
+					[v, y] = Object(r.useState)(!1),
 					[f, S] = Object(r.useState)(!1);
 				if (!(null == s ? void 0 : s.length)) return e(), null;
 				const O = async e => {
@@ -486,7 +489,7 @@
 							error: a.message
 						}
 					}
-				}, P = v ? T._("{=[r/community]}{=has Powerups}", [T._param("=[r/community]", n.a.createElement("div", null, T._("{r/community}", [T._param("r/community", s[0].displayText)], {
+				}, P = v || o ? T._("{=[r/community]}{=has Powerups}", [T._param("=[r/community]", n.a.createElement("div", null, T._("{r/community}", [T._param("r/community", s[0].displayText)], {
 					hk: "1TzAG8"
 				}))), T._param("=has Powerups", n.a.createElement("div", null, T._("has Powerups", null, {
 					hk: "2zYYns"
@@ -498,7 +501,7 @@
 					hk: "2Pz0Sn"
 				})))], {
 					hk: "p9zKt"
-				}), j = v ? T._("{=Your communities}{=have Powerups}", [T._param("=Your communities", n.a.createElement("div", null, T._("Your communities", null, {
+				}), j = v || o ? T._("{=Your communities}{=have Powerups}", [T._param("=Your communities", n.a.createElement("div", null, T._("Your communities", null, {
 					hk: "3ySkxw"
 				}))), T._param("=have Powerups", n.a.createElement("div", null, T._("have Powerups", null, {
 					hk: "4rHX2f"
@@ -549,7 +552,8 @@
 					onChange: w,
 					subredditIdsSelected: _,
 					subredditsInfo: s,
-					wasSuccessful: v
+					wasSuccessful: v,
+					allEnabled: o
 				}), f && n.a.createElement("div", {
 					className: F.a.errorContainer
 				}, n.a.createElement(k.a, {
@@ -558,7 +562,7 @@
 					className: F.a.errorText
 				}, T._("Something went wrong.", null, {
 					hk: "N6RFp"
-				}))), !v && n.a.createElement(I, {
+				}))), !v && !o && n.a.createElement(I, {
 					disabled: 0 === _.length,
 					onClick: async () => {
 						l((e => a => ({
@@ -577,7 +581,7 @@
 					},
 					isLoading: E,
 					wasError: f
-				}), v && i && n.a.createElement(n.a.Fragment, null, n.a.createElement("p", {
+				}), (v || o) && i && n.a.createElement(n.a.Fragment, null, n.a.createElement("p", {
 					className: F.a.successText
 				}, T._("Let your community know about Powerups with a pinned post", null, {
 					hk: "3bII20"
@@ -853,4 +857,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.e780d35f9dce2be08c6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.b70587bdbc77aab2c7c8.js.map
