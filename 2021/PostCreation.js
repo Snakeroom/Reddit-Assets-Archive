@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5813729ad25561ed68c4.js
-// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.18a262f8d5b3ba60dd71.js
+// Retrieved at 7/8/2021, 3:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -29649,15 +29649,10 @@
 				r = n("./src/reddit/featureFlags/index.ts"),
 				s = n("./src/reddit/selectors/economics.ts"),
 				i = n("./src/reddit/selectors/gold/powerups/index.ts");
-			const a = Object(o.a)(r.d.spEmotes, s.b, i.f, (e, {
-					subredditId: t
-				}) => {
-					var n;
-					return t && (null === (n = e.subreddits.about[t]) || void 0 === n ? void 0 : n.userIsSubscriber) || !1
-				}, (e, t, n, o) => {
-					if (n && o) return !0;
-					const r = !(!t || !Object.keys(t).length);
-					return e && r
+			const a = Object(o.a)(r.d.spEmotes, s.b, i.f, (e, t, n) => {
+					if (n) return !0;
+					const o = !(!t || !Object.keys(t).length);
+					return e && o
 				}),
 				c = Object(o.a)(s.b, i.g, i.h, i.f, (e, t, n, o) => {
 					if (o) return [...t, ...n].slice(0, 3);
@@ -30163,4 +30158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5813729ad25561ed68c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.18a262f8d5b3ba60dd71.js.map
