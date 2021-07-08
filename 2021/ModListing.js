@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.09d54b7d9b4e878a2717.js
-// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.0656de529f3ef614fe8b.js
+// Retrieved at 7/8/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -232,25 +232,6 @@
 				t = s(t), e -= a;
 				for (var l = r(c, t); ++n < e;) t(n);
 				return l
-			}
-		},
-		"./node_modules/shallowequal/index.js": function(e, t) {
-			e.exports = function(e, t, n, r) {
-				var s = n ? n.call(r, e, t) : void 0;
-				if (void 0 !== s) return !!s;
-				if (e === t) return !0;
-				if ("object" != typeof e || !e || "object" != typeof t || !t) return !1;
-				var o = Object.keys(e),
-					i = Object.keys(t);
-				if (o.length !== i.length) return !1;
-				for (var a = Object.prototype.hasOwnProperty.bind(t), d = 0; d < o.length; d++) {
-					var c = o[d];
-					if (!a(c)) return !1;
-					var l = e[c],
-						u = t[c];
-					if (!1 === (s = n ? n.call(r, l, u, c) : void 0) || void 0 === s && l !== u) return !1
-				}
-				return !0
 			}
 		},
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -2696,4 +2677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.09d54b7d9b4e878a2717.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.0656de529f3ef614fe8b.js.map
