@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.a2d2c4ec1c5a3766de84.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d8f66e9c939779ca06f4.js
+// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -463,11 +463,11 @@
 					experimentName: se.Y,
 					experimentEligibilitySelector: oe
 				}), ie.a),
-				de = Object(o.a)(ae, e => e === se.mc.ToolTip_nonSub),
-				ce = Object(o.a)(ae, e => e === se.mc.ToolTip_2ndVisit),
-				le = Object(o.a)(ae, e => e === se.mc.ToolTip_3rdVisit),
-				me = Object(o.a)(ae, e => e === se.mc.HalfSheet_2ndVisit),
-				ue = Object(o.a)(ae, e => e === se.mc.HalfSheet_3rdVisit),
+				de = Object(o.a)(ae, e => e === se.lc.ToolTip_nonSub),
+				ce = Object(o.a)(ae, e => e === se.lc.ToolTip_2ndVisit),
+				le = Object(o.a)(ae, e => e === se.lc.ToolTip_3rdVisit),
+				me = Object(o.a)(ae, e => e === se.lc.HalfSheet_2ndVisit),
+				ue = Object(o.a)(ae, e => e === se.lc.HalfSheet_3rdVisit),
 				pe = Object(o.a)(me, ue, ce, le, de, (e, t, s, n, i) => e || t || s || n || i);
 			var be = e => {
 					const t = Object(r.d)(),
@@ -3876,12 +3876,12 @@
 						rtJsonElementProps: r
 					});
 					switch (n) {
-						case h.Fd.SmIcon:
+						case h.Ed.SmIcon:
 							return i.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: r
 							});
-						case h.Fd.SmIconHc:
+						case h.Ed.SmIconHc:
 							return i.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7707,12 +7707,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.xd
+						experimentName: n.wd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Fd.SmIcon || t === n.Fd.SmIconHc
+					return t === n.Ed.SmIcon || t === n.Ed.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7735,4 +7735,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a2d2c4ec1c5a3766de84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d8f66e9c939779ca06f4.js.map

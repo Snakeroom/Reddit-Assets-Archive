@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.e34dc321362bd8631eb9.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.2913806855dbdb4b0e28.js
+// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -506,15 +506,15 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, F = Object(i.a)(a.a), W = Object(i.a)(a.t), A = (e, t) => async (n, o, {
+				}, W = Object(i.a)(a.a), F = Object(i.a)(a.t), A = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					const i = o();
 					if ((await h(r(), e, t)).ok) {
-						n(F({
+						n(W({
 							collectionId: e,
 							postId: t
-						})), n(W({
+						})), n(F({
 							collectionId: e,
 							postId: t
 						}));
@@ -2364,9 +2364,9 @@
 			})), n.d(t, "f", (function() {
 				return D
 			})), n.d(t, "h", (function() {
-				return F
-			})), n.d(t, "g", (function() {
 				return W
+			})), n.d(t, "g", (function() {
+				return F
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "e", (function() {
@@ -2529,12 +2529,12 @@
 						case p.p:
 							return D(e, t, n, s);
 						case p.u:
-							return W(e, t, n, s);
+							return F(e, t, n, s);
 						case p.z:
-							return F(e, t, n, s)
+							return W(e, t, n, s)
 					}
 				},
-				F = (e, t, n, s) => {
+				W = (e, t, n, s) => {
 					const o = e.c,
 						r = e.h,
 						i = o.length,
@@ -2576,7 +2576,7 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				W = (e, t, n, s) => {
+				F = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
@@ -2971,12 +2971,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.Fd.SmIcon:
+						case b.Ed.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.Fd.SmIconHc:
+						case b.Ed.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4707,8 +4707,8 @@
 						draft: t
 					}), o.a.createElement(O, null)))
 				})),
-				F = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				W = n("./src/reddit/layout/page/Listing/index.tsx"),
+				W = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				F = n("./src/reddit/layout/page/Listing/index.tsx"),
 				A = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				H = n("./src/reddit/selectors/postDraft.ts");
 			const U = Object(l.t)(),
@@ -4728,14 +4728,14 @@
 					} = this.props;
 					if (!t || !e) return o.a.createElement(A.b, null);
 					const n = e.subredditId;
-					return o.a.createElement(W.a, {
+					return o.a.createElement(F.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: o.a.createElement("div", null),
 						content: o.a.createElement(B, {
 							draft: e
 						}),
-						sidebar: n && o.a.createElement(F.a, {
+						sidebar: n && o.a.createElement(W.a, {
 							subredditOrProfileId: n
 						})
 					})
@@ -4766,12 +4766,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.xd
+						experimentName: s.wd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.Fd.SmIcon || t === s.Fd.SmIconHc
+					return t === s.Ed.SmIcon || t === s.Ed.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4794,4 +4794,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.e34dc321362bd8631eb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.2913806855dbdb4b0e28.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.bb3efe1c492a5e2098b2.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.d2013998fcf6959aaa96.js
+// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -155,7 +155,7 @@
 				O = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
-			const A = ({
+			const P = ({
 					to: e,
 					title: t
 				}) => d.a.createElement(T.a, {
@@ -166,7 +166,7 @@
 					to: e,
 					title: t
 				}, t)),
-				P = ({
+				A = ({
 					title: e,
 					isOpened: t,
 					isExpanded: n,
@@ -223,11 +223,11 @@
 					}, this.renderLink = ({
 						url: e,
 						title: t
-					}) => d.a.createElement(A, {
+					}) => d.a.createElement(P, {
 						key: t,
 						to: e,
 						title: t
-					}), this.renderSection = (e, t) => d.a.createElement(P, {
+					}), this.renderSection = (e, t) => d.a.createElement(A, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -267,10 +267,10 @@
 				K = n("./src/reddit/featureFlags/component.tsx"),
 				Z = n("./src/reddit/helpers/localStorage/index.ts"),
 				V = n("./src/reddit/helpers/name/index.ts"),
-				X = n("./src/lib/makeApiRequest/index.ts"),
-				H = n("./src/lib/omitHeaders/index.ts"),
+				H = n("./src/lib/makeApiRequest/index.ts"),
+				X = n("./src/lib/omitHeaders/index.ts"),
 				z = n("./src/reddit/constants/headers.ts");
-			const Y = e => Object(X.a)(Object(H.a)(e, [z.a]), {
+			const Y = e => Object(H.a)(Object(X.a)(e, [z.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: q.hb.GET,
 				type: "json"
@@ -605,7 +605,7 @@
 			}];
 			var we = n("./src/reddit/components/Widgets/Aggregate/TopicsList/index.m.less"),
 				Fe = n.n(we);
-			const Ae = () => {
+			const Pe = () => {
 					const e = `${Se.a.assetPath}/img/banner/banner-medium@2x.png`,
 						t = v.fbt._("Find Your Next Community!", null, {
 							hk: "4tZ6vB"
@@ -620,13 +620,13 @@
 						className: Fe.a.bannerText
 					}, t))
 				},
-				Pe = e => `/t/${e}?activeTab=communities`,
+				Ae = e => `/t/${e}?activeTab=communities`,
 				Ie = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Fe.a.itemContainer
 					}, d.a.createElement(Ce.a, {
-						to: Pe(e.topic.url),
+						to: Ae(e.topic.url),
 						onClick: () => e.sendEvent(Object(Te.c)(t))
 					}, t))
 				};
@@ -642,7 +642,7 @@
 						noGradient: !0,
 						styles: e.widget && e.widget.styles,
 						widgetKind: e.widget && e.widget.kind
-					}, d.a.createElement(Ae, null), d.a.createElement("div", {
+					}, d.a.createElement(Pe, null), d.a.createElement("div", {
 						className: Fe.a.container
 					}, n.map(e => d.a.createElement(Ie, {
 						key: e.url,
@@ -663,18 +663,18 @@
 			}
 			var Ue = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Le.Ac,
+					experimentName: Le.zc,
 					experimentEligibilitySelector: We.a
 				}), Ue.a),
-				Qe = Object(u.a)(qe, e => e === Le.Cc.Enabled);
+				Qe = Object(u.a)(qe, e => e === Le.Bc.Enabled);
 			var Me = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
 				Ve = n("./src/reddit/selectors/subreddit.ts"),
-				Xe = n("./src/reddit/selectors/subredditLeaderboard.ts");
+				He = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
-			var He = n("./src/reddit/helpers/createBannerProperties/index.ts"),
+			var Xe = n("./src/reddit/helpers/createBannerProperties/index.ts"),
 				ze = n("./src/reddit/selectors/meta.ts");
 			const Ye = "c1020",
 				$e = "videos",
@@ -699,7 +699,7 @@
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Je.K,
 								experimentName: Le.jb
-							}) === Le.Xb
+							}) === Le.Wb
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -778,7 +778,7 @@
 						placement: q.c.ABOVE_THE_FOLD,
 						listingName: r,
 						removeSidebarSpacer: !m,
-						position: He.a.FIRST,
+						position: Xe.a.FIRST,
 						sizes: q.h,
 						placementIndex: e++
 					}), nt(this.props) && d.a.createElement(S, null), o && d.a.createElement(h.a, null, d.a.createElement(Be, null)), a && d.a.createElement(h.a, null, d.a.createElement(p.a, {
@@ -789,7 +789,7 @@
 						adComponent: d.a.createElement(L.a, {
 							placement: q.c.BELOW_THE_FOLD,
 							listingName: r,
-							position: He.a.BOTTOM,
+							position: Xe.a.BOTTOM,
 							sizes: q.n,
 							placementIndex: e++
 						})
@@ -809,7 +809,7 @@
 							},
 							isOnlyModIncluded: !1
 						},
-						n = Object(Xe.d)(Ye, $e);
+						n = Object(He.d)(Ye, $e);
 					e(Object(b.a)(t, n))
 				},
 				subredditAboutRequested: t => e(Object(m.u)(t))
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.bb3efe1c492a5e2098b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.d2013998fcf6959aaa96.js.map

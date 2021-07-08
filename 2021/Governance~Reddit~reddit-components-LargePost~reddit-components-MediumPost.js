@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.5d72c0cf5bb9b4f00eac.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.f6058bc56e16a80eab05.js
+// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -272,7 +272,7 @@
 			})), s.d(e, "a", (function() {
 				return j
 			})), s.d(e, "e", (function() {
-				return y
+				return h
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -312,7 +312,7 @@
 					const T = m.name.toLowerCase(),
 						C = t === T;
 					if (!(t === _.f || t === _.b || C)) return;
-					if (C) return void h(m, e, s)(n, i, l);
+					if (C) return void y(m, e, s)(n, i, l);
 					0 === L(o.nb).length && Object(E.Eb)(!1);
 					let D = i();
 					if (Object(S.d)(D, {
@@ -334,12 +334,12 @@
 						}) || (t => {
 							return L(o.z).some(e => e.subredditId === t)
 						})(m.id)) return;
-					const y = {
+					const h = {
 						subredditIds: [m.id],
 						count: b.b
 					};
-					await n(Object(a.b)(y));
-					const R = Object(a.a)(y);
+					await n(Object(a.b)(h));
+					const R = Object(a.a)(h);
 					D = i();
 					const g = Object(O.t)(D, {
 						key: R
@@ -367,7 +367,7 @@
 						listingKey: e,
 						postId: s
 					})))) : Object(r.a)(Object(p.c)(A, "no_chaining", m)(D))
-				}, D = "FEED_CHAINING__CHAIN_TOGGLED", j = (Object(i.a)(D), "FEED_CHAINING__CHAINING_TOGGLED"), A = Object(i.a)(j), y = () => async t => {
+				}, D = "FEED_CHAINING__CHAIN_TOGGLED", j = (Object(i.a)(D), "FEED_CHAINING__CHAINING_TOGGLED"), A = Object(i.a)(j), h = () => async t => {
 					Object(E.Eb)(!0), t(A({
 						isDismissed: !0
 					})), t(Object(l.f)(Object(l.e)(n.fbt._("You'll see this less often.", null, {
@@ -379,7 +379,7 @@
 							isDismissed: !1
 						}))
 					})))
-				}, h = (t, e, s) => async (t, e, s) => {}
+				}, y = (t, e, s) => async (t, e, s) => {}
 		},
 		"./src/reddit/actions/linkedPosts/constants.ts": function(t, e, s) {
 			"use strict";
@@ -519,8 +519,8 @@
 				D = Object(r.a)(L),
 				j = Object(r.a)("STRUCTURED_STYLES__POSTFLAIR_SAVETEMPLATE_FAILED"),
 				A = "STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_SUCCESS",
-				y = Object(r.a)("STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_PENDING"),
-				h = Object(r.a)(A),
+				h = Object(r.a)("STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_PENDING"),
+				y = Object(r.a)(A),
 				R = Object(r.a)("STRUCTURED_STYLES__POSTFLAIR_DELETETEMPLATE_FAILED"),
 				g = "STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_PENDING",
 				N = "STRUCTURED_STYLES__POSTFLAIR_REORDERTEMPLATES_FAILED",
@@ -602,8 +602,8 @@
 						a = Object(_.S)(i, {
 							subredditId: e
 						}).name;
-					if (s(y()), (await Object(d.b)(o(), t, a)).ok) {
-						s(h({
+					if (s(h()), (await Object(d.b)(o(), t, a)).ok) {
+						s(y({
 							subredditId: e,
 							templateId: t
 						}));
@@ -765,11 +765,11 @@
 					})(D, I, o())
 				}
 				l = o();
-				let y = null,
-					h = null;
+				let h = null,
+					y = null;
 				const R = [];
 				try {
-					(y = await Object(u.f)(l, S.a.FlairTemplates)) && (h = Object(u.m)(y)(n, o, c), R.push(...d()(y.imagesByKey)))
+					(h = await Object(u.f)(l, S.a.FlairTemplates)) && (y = Object(u.m)(h)(n, o, c), R.push(...d()(h.imagesByKey)))
 				} catch (U) {
 					return !1
 				}
@@ -782,8 +782,8 @@
 					P = Object(m.e)(l, N);
 				if (g.ok) {
 					let t;
-					if (h) try {
-						await h, t = ((t, e, s) => {
+					if (y) try {
+						await y, t = ((t, e, s) => {
 							const n = {
 								...t
 							};
@@ -799,7 +799,7 @@
 						flairId: e,
 						template: t || D
 					}))
-				} else y && y.websocket.close();
+				} else h && h.websocket.close();
 				return Object(O.a)({
 					...P,
 					actionInfo: {
@@ -1005,7 +1005,7 @@
 			var D = s("./src/reddit/actions/subreddit/constants.ts"),
 				j = s("./src/redditGQL/operations/PostFeedAndOtherDiscussions.json"),
 				A = (s("./src/redditGQL/operations/SubredditPosts.json"), s("./src/redditGQL/operations/SubredditsPosts.json"));
-			var y = ({
+			var h = ({
 					getState: t,
 					onSuccess: e,
 					onFailure: s,
@@ -1021,7 +1021,7 @@
 						s(o)
 					}
 				},
-				h = s("./src/lib/makeLinkedPostsListingKey/index.ts");
+				y = s("./src/lib/makeLinkedPostsListingKey/index.ts");
 			var R = ({
 					getState: t,
 					onSuccess: e,
@@ -1036,7 +1036,7 @@
 						if (!r || !r.linked) return;
 						const c = t(),
 							d = c.posts && c.posts.models,
-							a = Object(h.a)(n),
+							a = Object(y.a)(n),
 							u = r.linked.posts && r.linked.posts.edges || [];
 						for (const {
 								node: t
@@ -1097,7 +1097,7 @@
 								sort: p,
 								subredditName: m
 							} = i,
-							S = t && c ? Object(h.a)(c, !0) : Object(o.a)(m, n.U[p], {
+							S = t && c ? Object(y.a)(c, !0) : Object(o.a)(m, n.U[p], {
 								t: E
 							});
 						s({
@@ -1211,7 +1211,7 @@
 						includeOtherDiscussions: O,
 						includePostFeed: D,
 						includePostQASchemaEligibilityFlag: A,
-						listingBelowExperimentVariant: h,
+						listingBelowExperimentVariant: y,
 						postId: g,
 						range: N,
 						sort: x,
@@ -1236,7 +1236,7 @@
 							variables: e
 						}))(r(), t),
 						nt = st.body,
-						rt = Object(k.a)(h),
+						rt = Object(k.a)(y),
 						ot = Z && !!(null === (_ = null === (a = null === (i = nt.data) || void 0 === i ? void 0 : i.post) || void 0 === a ? void 0 : a.linked) || void 0 === _ ? void 0 : _.isEligible),
 						it = Z && (rt || !ot);
 					A && (st.ok ? nt.data && nt.data.post && e(c({
@@ -1268,7 +1268,7 @@
 						onSuccess: t => e(B(t)),
 						postId: g,
 						post: nt.data.post
-					}), et && st.ok && nt.data && y({
+					}), et && st.ok && nt.data && h({
 						getState: s,
 						onFailure: t => e(G(t)),
 						onSuccess: t => e(w(t)),
@@ -1420,8 +1420,8 @@
 				D = s("./src/lib/getShortenedLink.ts"),
 				j = s("./src/reddit/components/FlairWrapper/index.tsx"),
 				A = s("./node_modules/fbt/lib/FbtPublic.js"),
-				y = s("./src/lib/prettyPrintNumber/index.ts"),
-				h = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
+				h = s("./src/lib/prettyPrintNumber/index.ts"),
+				y = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				R = s("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
 				g = s.n(R);
 			const N = Object(d.c)({
@@ -1438,9 +1438,9 @@
 					}, o.a.createElement("span", null, A.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
-					}, [A.fbt._param("count", Object(y.a)(n)), A.fbt._plural(parseInt(n))], {
+					}, [A.fbt._param("count", Object(h.a)(n)), A.fbt._plural(parseInt(n))], {
 						hk: "4rP1VK"
-					})), e && o.a.createElement(h.a, {
+					})), e && o.a.createElement(y.a, {
 						className: g.a.proposalExpiry,
 						poll: e
 					}))
@@ -1544,7 +1544,7 @@
 						subreddit: s
 					} = t, {
 						isSponsored: n
-					} = e, r = Object(w.a)(), i = Object(G.a)(b.ec) === b.ic.Enabled;
+					} = e, r = Object(w.a)(), i = Object(G.a)(b.dc) === b.hc.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return o.a.createElement(W, {
 						nowrap: t.nowrap
 					}, o.a.createElement($, t));
@@ -1816,9 +1816,9 @@
 			})), s.d(e, "F", (function() {
 				return j
 			})), s.d(e, "M", (function() {
-				return y
-			})), s.d(e, "B", (function() {
 				return h
+			})), s.d(e, "B", (function() {
+				return y
 			})), s.d(e, "C", (function() {
 				return R
 			})), s.d(e, "D", (function() {
@@ -1990,7 +1990,7 @@
 						}
 					}
 				},
-				y = (t, e, s, n, r, o, c) => {
+				h = (t, e, s, n, r, o, c) => {
 					Object(E.a)({
 						...b.defaults(t),
 						...Object(d.e)(t, s, n, r, o, e),
@@ -1998,7 +1998,7 @@
 						noun: c ? "ad" : "post"
 					})
 				},
-				h = (t, e, s, n) => {
+				y = (t, e, s, n) => {
 					Object(E.a)(I(t, e, s, n))
 				},
 				R = (t, e, s, n) => r => I(r, t, e, s, n),
@@ -2783,4 +2783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.5d72c0cf5bb9b4f00eac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.f6058bc56e16a80eab05.js.map

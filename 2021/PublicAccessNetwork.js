@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0fc57630a7d071dde895.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7e3a235ebe8bee31b154.js
+// Retrieved at 7/8/2021, 12:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Gc
+					experimentName: m.Fc
 				});
-				return Object(m.Vd)(t) ? void 0 : t
+				return Object(m.Ud)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Hc
+					experimentName: m.Gc
 				});
-				return Object(m.Vd)(t) ? void 0 : t
-			}, (e, t) => e === m.Ic.Enabled && t === m.Ic.Enabled);
+				return Object(m.Ud)(t) ? void 0 : t
+			}, (e, t) => e === m.Hc.Enabled && t === m.Hc.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -1029,9 +1029,9 @@
 							a = Object(se.K)(s(), {
 								identifier: D.belongsTo
 							});
-						if (a && (e => F.pd.Redirect === Object(U.b)(e, {
+						if (a && (e => F.od.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: F.hd
+								experimentName: F.gd
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((D.media && D.media.type) === T.o.LIVEVIDEO) {
 							const e = `/rpan${D.belongsTo.type===j.a.SUBREDDIT?a.url:"/"}${Object(p.t)(D.id)}`;
@@ -7075,10 +7075,10 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.Vd)(t)
+					return Boolean(t) && !Object(n.Ud)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0fc57630a7d071dde895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7e3a235ebe8bee31b154.js.map
