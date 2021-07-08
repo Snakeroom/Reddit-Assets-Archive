@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.0a0ff4a27b10c5e0abf9.js
-// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.103ce7ce574876dd989f.js
+// Retrieved at 7/8/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -24727,7 +24727,7 @@
 					} = u || {}, {
 						allOriginalContent: T = !1,
 						eventPostsEnabled: w = !1
-					} = a || {}, I = i.isProfile || Object(qt.g)(a), P = l || !I || T || x === m.Rb.CROSSPOST, R = l || !Object(qt.i)(a), M = l, N = l || !!y;
+					} = a || {}, I = i.isProfile || Object(qt.g)(a), P = l || !I || T || x === m.Rb.CROSSPOST, R = l || !(i.isProfile || Object(qt.i)(a)), M = l, N = l || !!y;
 					return r.a.createElement("div", {
 						className: o
 					}, r.a.createElement(nn, null, p && r.a.createElement(rn, {
@@ -30154,4 +30154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0a0ff4a27b10c5e0abf9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.103ce7ce574876dd989f.js.map
