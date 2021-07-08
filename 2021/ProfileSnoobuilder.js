@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.67ba279b5f7c33f5b2b2.js
-// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7714fe322a37ae933741.js
+// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -3352,10 +3352,6 @@
 			}, p._("help", null, {
 				hk: "4lyYaD"
 			})), r.a.createElement(h, {
-				href: "https://www.reddit.com/mobile/download"
-			}, p._("Reddit App", null, {
-				hk: "1ehrjP"
-			})), r.a.createElement(h, {
 				href: "https://www.reddit.com/coins"
 			}, p._("Reddit coins", null, {
 				hk: "32iMaN"
@@ -5404,4 +5400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.67ba279b5f7c33f5b2b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.7714fe322a37ae933741.js.map

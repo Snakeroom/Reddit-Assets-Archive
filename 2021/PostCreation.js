@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e6bf4cf0275c4def4ef4.js
-// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0a0ff4a27b10c5e0abf9.js
+// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -15661,10 +15661,6 @@
 			}, m._("help", null, {
 				hk: "4lyYaD"
 			})), r.a.createElement(h, {
-				href: "https://www.reddit.com/mobile/download"
-			}, m._("Reddit App", null, {
-				hk: "1ehrjP"
-			})), r.a.createElement(h, {
 				href: "https://www.reddit.com/coins"
 			}, m._("Reddit coins", null, {
 				hk: "32iMaN"
@@ -30158,4 +30154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e6bf4cf0275c4def4ef4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0a0ff4a27b10c5e0abf9.js.map

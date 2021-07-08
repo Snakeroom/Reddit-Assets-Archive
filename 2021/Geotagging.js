@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.90ec034ebe5a94d64424.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.0ef17377976048ec9db9.js
+// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -110,17 +110,17 @@
 						isClosed: a,
 						setClosed: o
 					}
-				}(f, s, i), w = `location-input-${d}`;
+				}(f, s, i), N = `location-input-${d}`;
 				return r.a.createElement("div", {
 					className: y.a.autocompleteInput
 				}, r.a.createElement("label", {
 					className: y.a.geoLabel,
-					htmlFor: w
+					htmlFor: N
 				}, r.a.createElement(E.a, {
 					className: y.a.locationIcon
 				})), r.a.createElement("input", {
 					className: Object(o.a)(y.a.geoInput, u),
-					name: w,
+					name: N,
 					disabled: a,
 					onKeyDown: O,
 					value: S && S.name || t,
@@ -358,10 +358,6 @@
 			}, b._("help", null, {
 				hk: "4lyYaD"
 			})), r.a.createElement(p, {
-				href: "https://www.reddit.com/mobile/download"
-			}, b._("Reddit App", null, {
-				hk: "1ehrjP"
-			})), r.a.createElement(p, {
 				href: "https://www.reddit.com/coins"
 			}, b._("Reddit coins", null, {
 				hk: "32iMaN"
@@ -507,7 +503,7 @@
 						top: "calc(100vh - 8px)"
 					}
 				}, s)), "BackToTop", E.a),
-				w = ({
+				N = ({
 					children: e,
 					className: t,
 					isFakeOverlay: s,
@@ -518,7 +514,7 @@
 						[E.a.StickyStylesFakeOverlay]: !!s
 					})
 				}, e);
-			class N extends a.Component {
+			class w extends a.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > O,
@@ -566,7 +562,7 @@
 					return o.a.createElement(j, {
 						className: r,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(w, {
+					}, o.a.createElement(N, {
 						isFakeOverlay: s,
 						isSticky: c
 					}, t, n, !i && o.a.createElement(g.a, null)), !this.props.hideBackToTop && o.a.createElement(C, {
@@ -575,7 +571,7 @@
 				}
 			}
 			const T = Object(x.t)();
-			t.a = T(N)
+			t.a = T(w)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -624,7 +620,7 @@
 				E = s.n(_);
 			const {
 				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", E.a), v = u.a.wrapped(h.a, "CloseIcon", E.a), k = u.a.div("LoadingTitleContainer", E.a), O = u.a.div("LoadingNavContainer", E.a), j = u.a.div("ShortLoadingNav", E.a), C = u.a.wrapped(p.a, "ThemedChevron", E.a), w = ({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", E.a), v = u.a.wrapped(h.a, "CloseIcon", E.a), k = u.a.div("LoadingTitleContainer", E.a), O = u.a.div("LoadingNavContainer", E.a), j = u.a.div("ShortLoadingNav", E.a), C = u.a.wrapped(p.a, "ThemedChevron", E.a), N = ({
 				...e
 			}) => a.a.createElement(y, null, a.a.createElement(v, null), a.a.createElement(b.k, null, a.a.createElement(b.p, null, S._("Back to mod tools", null, {
 				hk: "1YCI0W"
@@ -636,13 +632,13 @@
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
 			}), a.a.createElement(C, null)), a.a.createElement(O, null, a.a.createElement(j, null), a.a.createElement(C, null)), a.a.createElement(O, null, a.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), a.a.createElement(C, null))))), N = Object(d.a)({
+			}), a.a.createElement(C, null))))), w = Object(d.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => a.a.createElement(w, {
+				ErrorComponent: () => a.a.createElement(N, {
 					gradientType: "posts",
 					isLoading: !1
 				}),
-				LoadingComponent: () => a.a.createElement(w, {
+				LoadingComponent: () => a.a.createElement(N, {
 					gradientType: "posts",
 					isLoading: !0
 				})
@@ -655,7 +651,7 @@
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? a.a.createElement("div", {
 					className: Object(l.a)(E.a.Container, e.isSubscriptionsPinned && E.a.isSubscriptionPinned)
-				}, e.children, a.a.createElement(N, {
+				}, e.children, a.a.createElement(w, {
 					subredditId: e.subredditId
 				})) : a.a.createElement(i.Fragment, null, e.children)
 			})
@@ -964,7 +960,7 @@
 				subreddit: v.S,
 				subredditAboutInfo: v.u
 			});
-			class w extends r.a.Component {
+			class N extends r.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditClick = () => {
 						const {
@@ -1017,7 +1013,7 @@
 					})) : null
 				}
 			}
-			var N = Object(p.b)(C)(Object(d.c)(w)),
+			var w = Object(p.b)(C)(Object(d.c)(N)),
 				T = s("./src/reddit/helpers/styles/mixins/loading.ts");
 			var P = e => {
 					const {
@@ -1081,7 +1077,7 @@
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: L.a.SubredditList
-					}, n.length > 0 ? n.map(e => r.a.createElement(N, {
+					}, n.length > 0 ? n.map(e => r.a.createElement(w, {
 						className: L.a.Subreddit,
 						discoveryUnit: R,
 						key: e,
@@ -1171,7 +1167,7 @@
 				O = s.n(k);
 			const {
 				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(u.t)(), w = Object(i.b)(() => Object(a.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = Object(u.t)(), N = Object(i.b)(() => Object(a.c)({
 				forceRedditStyle: (e, t) => {
 					const s = Object(u.m)(e, t) || void 0,
 						n = t.redditStyle || Object(g.l)(e, {
@@ -1184,7 +1180,7 @@
 				subredditId: u.m,
 				topPostVariant: h.d
 			}));
-			class N extends r.a.Component {
+			class w extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1257,7 +1253,7 @@
 					})))
 				}
 			}
-			t.a = C(w(Object(c.a)(Object(l.c)(N))))
+			t.a = C(N(Object(c.a)(Object(l.c)(w))))
 		},
 		"./src/reddit/connectors/SubscribeButton/index.ts": function(e, t, s) {
 			"use strict";
@@ -1554,8 +1550,8 @@
 				}))))
 			}
 			var C = s("./src/reddit/actions/toaster.ts"),
-				w = s("./src/reddit/components/GeoForm/GeoForm.tsx"),
-				N = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				N = s("./src/reddit/components/GeoForm/GeoForm.tsx"),
+				w = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				T = s("./src/reddit/endpoints/geotagging/setSubredditGeoPlace.ts"),
 				P = s("./src/redditGQL/operations/SuggestSubredditGeoPlace.json"),
 				I = async (e, t) => Object(l.a)(e, {
@@ -1658,7 +1654,7 @@
 					className: S.a.subredditGeotag
 				}, r.a.createElement("div", {
 					className: S.a.subredditTitle
-				}, r.a.createElement(N.b, {
+				}, r.a.createElement(w.b, {
 					className: S.a.icon,
 					subredditOrProfile: Object(L.a)(t),
 					linkTo: t.path
@@ -1687,7 +1683,7 @@
 					onClick: function() {
 						Y(t.id), E(D(t, t.geoPlace.id)), f(), s(t.id), y()
 					}
-				}, "Yes")) : r.a.createElement(w.a, {
+				}, "Yes")) : r.a.createElement(N.a, {
 					disabled: l,
 					onFocus: () => E(M(t)),
 					onPlace: function(e) {
@@ -1816,4 +1812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.90ec034ebe5a94d64424.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.0ef17377976048ec9db9.js.map

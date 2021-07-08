@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.102ee90f1a1a9ec4448c.js
-// Retrieved at 7/8/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.78ca26217eb2833873ad.js
+// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -936,13 +936,6 @@
 			}, a.a.createElement("ul", {
 				className: i.a.linkColInner
 			}, a.a.createElement("li", {
-				className: i.a.linkItem
-			}, a.a.createElement("a", {
-				className: i.a.link,
-				href: "https://www.reddit.com/mobile/download"
-			}, c._("the reddit app", null, {
-				hk: "OcJ1f"
-			}))), a.a.createElement("li", {
 				className: i.a.linkItem
 			}, a.a.createElement("a", {
 				className: i.a.link,
@@ -2210,7 +2203,7 @@
 				D = r("./src/reddit/hooks/useTracking.ts"),
 				Q = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
 				W = r.n(Q);
-			const J = {
+			const z = {
 					"premium-avatars": () => a.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
@@ -2243,7 +2236,7 @@
 						hk: "2R1mSy"
 					})
 				},
-				z = {
+				J = {
 					"premium-avatars": () => a.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
 					}),
@@ -2329,10 +2322,10 @@
 						} = e;
 						return i.a.createElement(q.a, {
 							className: W.a.benefit,
-							description: z[t](u),
+							description: J[t](u),
 							iconUrl: `${n.a.assetPath}/img/gold/premium-marketing/benefits-icons/${t}.png`,
 							key: t,
-							title: J[t](u),
+							title: z[t](u),
 							isNew: a,
 							onClick: () => o && r((e => t => ({
 								source: "premium_marketing",
@@ -2817,4 +2810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.102ee90f1a1a9ec4448c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.78ca26217eb2833873ad.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.1d44dabbb100bfff52e4.js
-// Retrieved at 7/1/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.a83768683afb9b56304c.js
+// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -798,13 +798,6 @@
 			}, r.a.createElement("ul", {
 				className: c.a.linkColInner
 			}, r.a.createElement("li", {
-				className: c.a.linkItem
-			}, r.a.createElement("a", {
-				className: c.a.link,
-				href: "https://www.reddit.com/mobile/download"
-			}, o._("the reddit app", null, {
-				hk: "OcJ1f"
-			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
@@ -1749,4 +1742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.1d44dabbb100bfff52e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.a83768683afb9b56304c.js.map

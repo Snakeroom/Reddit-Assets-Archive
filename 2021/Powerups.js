@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.b70587bdbc77aab2c7c8.js
-// Retrieved at 7/8/2021, 1:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.c25ae680ce7a6a2d6150.js
+// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./src/reddit/components/MarketingPageFooter/index.m.less": function(e, a, t) {
@@ -88,13 +88,6 @@
 			}, r.a.createElement("ul", {
 				className: c.a.linkColInner
 			}, r.a.createElement("li", {
-				className: c.a.linkItem
-			}, r.a.createElement("a", {
-				className: c.a.link,
-				href: "https://www.reddit.com/mobile/download"
-			}, i._("the reddit app", null, {
-				hk: "OcJ1f"
-			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
@@ -346,8 +339,8 @@
 			var p = t("./src/reddit/hooks/useThunkDispatch.ts"),
 				g = t("./src/reddit/hooks/useTracking.ts"),
 				h = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				k = t("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
-				_ = t("./src/reddit/featureFlags/subredditPoints.ts"),
+				_ = t("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
+				k = t("./src/reddit/featureFlags/subredditPoints.ts"),
 				w = t("./src/reddit/selectors/moderatorPermissions.ts"),
 				E = t("./src/reddit/selectors/gold/powerups/index.ts");
 			const b = e => {
@@ -360,7 +353,7 @@
 					const r = Object(E.f)(e, {
 						subredditId: l
 					});
-					_.b.has(a.name) || a.isNSFW || t.push({
+					k.b.has(a.name) || a.isNSFW || t.push({
 						id: l,
 						displayText: a.displayText,
 						hasPowerups: r
@@ -473,7 +466,7 @@
 					o = null == s ? void 0 : s.every(({
 						hasPowerups: e
 					}) => e),
-					[_, w] = Object(r.useState)(s && i ? [s[0].id] : []),
+					[k, w] = Object(r.useState)(s && i ? [s[0].id] : []),
 					[E, N] = Object(r.useState)(!1),
 					[v, y] = Object(r.useState)(!1),
 					[f, S] = Object(r.useState)(!1);
@@ -550,20 +543,20 @@
 					className: F.a.subtitleText
 				}, q)), !i && n.a.createElement(x, {
 					onChange: w,
-					subredditIdsSelected: _,
+					subredditIdsSelected: k,
 					subredditsInfo: s,
 					wasSuccessful: v,
 					allEnabled: o
 				}), f && n.a.createElement("div", {
 					className: F.a.errorContainer
-				}, n.a.createElement(k.a, {
+				}, n.a.createElement(_.a, {
 					className: F.a.errorIcon
 				}), n.a.createElement("span", {
 					className: F.a.errorText
 				}, T._("Something went wrong.", null, {
 					hk: "N6RFp"
 				}))), !v && !o && n.a.createElement(I, {
-					disabled: 0 === _.length,
+					disabled: 0 === k.length,
 					onClick: async () => {
 						l((e => a => ({
 							...u.defaults(a),
@@ -573,8 +566,8 @@
 							powerups: {
 								subredditIds: e.join(",")
 							}
-						}))(_)), N(!0);
-						const e = (await Promise.all(_.map(O))).every(({
+						}))(k)), N(!0);
+						const e = (await Promise.all(k.map(O))).every(({
 							success: e
 						}) => e);
 						y(e), S(!e), N(!1)
@@ -857,4 +850,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.b70587bdbc77aab2c7c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.c25ae680ce7a6a2d6150.js.map
