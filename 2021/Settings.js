@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2c86a34d3ec6bc2f02a0.js
-// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3cbea696935386da5fbf.js
+// Retrieved at 7/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -12465,15 +12465,6 @@
 					subtext: r.fbt._("Allow us to use the links to other sites you click on for operational purposes (that help us better understand how you and others use Reddit) and to show you better ads and recommendations.", null, {
 						hk: "DnCX0"
 					})
-				}), !u || m && a.a.createElement(we.o, {
-					on: n,
-					onClick: () => s(!n, "activityRelevantAds"),
-					label: r.fbt._("Personalize ads based on your Reddit activity", null, {
-						hk: "OqV13"
-					}),
-					subtext: r.fbt._("Allow us to use your interactions on Reddit to show you better ads.", null, {
-						hk: "4C7zO1"
-					})
 				}), !u && a.a.createElement(we.o, {
 					on: d,
 					onClick: () => s(!d, "thirdPartySiteDataPersonalizedContent"),
@@ -12497,7 +12488,16 @@
 					})
 				}), a.a.createElement(Ne.a, null, r.fbt._("Personalize Ads", null, {
 					hk: "2FxbeI"
-				})), a.a.createElement(we.o, {
+				})), !u || m && a.a.createElement(we.o, {
+					on: n,
+					onClick: () => s(!n, "activityRelevantAds"),
+					label: r.fbt._("Personalize ads based on your Reddit activity", null, {
+						hk: "OqV13"
+					}),
+					subtext: r.fbt._("Allow us to use your interactions on Reddit to show you better ads.", null, {
+						hk: "4C7zO1"
+					})
+				}), a.a.createElement(we.o, {
 					on: p,
 					onClick: () => s(!p, "thirdPartyPersonalizedAds"),
 					label: r.fbt._("Personalize ads based on your activity and information from our partners", null, {
@@ -14277,4 +14277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2c86a34d3ec6bc2f02a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3cbea696935386da5fbf.js.map
