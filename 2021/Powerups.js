@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.617031b5ecef237bd591.js
-// Retrieved at 7/12/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.a2d433b6c3b59af007b7.js
+// Retrieved at 7/12/2021, 4:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./src/reddit/components/MarketingPageFooter/index.m.less": function(e, a, t) {
@@ -342,31 +342,33 @@
 				_ = t("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
 				k = t("./src/reddit/featureFlags/subredditPoints.ts"),
 				w = t("./src/reddit/selectors/moderatorPermissions.ts"),
+				b = t("./src/reddit/selectors/user.ts"),
 				E = t("./src/reddit/selectors/gold/powerups/index.ts");
-			const b = e => {
+			const N = e => {
 				const a = Object(w.a)(e);
 				if (!a) return null;
-				const t = [];
-				for (const l of a) {
-					const a = e.subreddits.models[l];
+				const t = Object(b.H)(e),
+					l = [];
+				for (const r of a) {
+					const a = e.subreddits.models[r];
 					if (!a) return null;
-					const r = Object(E.f)(e, {
-						subredditId: l
+					const n = Object(E.f)(e, {
+						subredditId: r
 					});
-					k.b.has(a.name) || a.isNSFW || t.push({
-						id: l,
+					k.b.has(a.name) || a.isNSFW || a.subscribers < 1e3 && !t || l.push({
+						id: r,
 						displayText: a.displayText,
-						hasPowerups: r
+						hasPowerups: n
 					})
 				}
-				return t
+				return l
 			};
-			var N = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				v = t("./src/reddit/components/PowerupsSignUpModal/MultiSubredditForm.m.less"),
-				y = t.n(v);
+			var v = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				y = t("./src/reddit/components/PowerupsSignUpModal/MultiSubredditForm.m.less"),
+				f = t.n(y);
 			const {
-				fbt: f
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), x = e => {
+				fbt: x
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), S = e => {
 				const {
 					onChange: a,
 					subredditIdsSelected: t,
@@ -375,14 +377,14 @@
 					allEnabled: c
 				} = e, i = l.filter(e => !e.hasPowerups), o = l.filter(e => e.hasPowerups), m = i.length === t.length;
 				return n.a.createElement("div", {
-					className: y.a.container
+					className: f.a.container
 				}, n.a.createElement("div", {
-					className: y.a.checkboxList
+					className: f.a.checkboxList
 				}, o.map(({
 					id: e,
 					displayText: a
-				}) => n.a.createElement(N.a, {
-					className: Object(s.a)(y.a.checkbox, y.a.disabled),
+				}) => n.a.createElement(v.a, {
+					className: Object(s.a)(f.a.checkbox, f.a.disabled),
 					key: e,
 					isSelected: !0,
 					onClick: () => {},
@@ -393,9 +395,9 @@
 					displayText: l
 				}) => {
 					const c = t.includes(e);
-					return n.a.createElement(N.a, {
-						className: Object(s.a)(y.a.checkbox, {
-							[y.a.disabled]: r
+					return n.a.createElement(v.a, {
+						className: Object(s.a)(f.a.checkbox, {
+							[f.a.disabled]: r
 						}),
 						key: e,
 						isSelected: c,
@@ -407,7 +409,7 @@
 						disabled: r
 					})
 				})), !r && !c && n.a.createElement(d.q, {
-					className: y.a.selectAllButton,
+					className: f.a.selectAllButton,
 					onClick: () => {
 						a(m ? [] : i.map(({
 							id: e
@@ -415,61 +417,61 @@
 					},
 					priority: d.b.Secondary,
 					isFullWidth: !0
-				}, m ? f._("Deselect all", null, {
+				}, m ? x._("Deselect all", null, {
 					hk: "46i6br"
-				}) : f._("Select all", null, {
+				}) : x._("Select all", null, {
 					hk: "2Eo4n2"
 				})))
 			};
-			var S = t("./src/reddit/controls/LoadingIcon/index.tsx"),
-				O = t("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
-				P = t.n(O);
+			var O = t("./src/reddit/controls/LoadingIcon/index.tsx"),
+				P = t("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
+				j = t.n(P);
 			const {
-				fbt: j
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = ({
+				fbt: I
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), C = ({
 				className: e,
 				disabled: a,
 				onClick: t,
 				isLoading: l,
 				wasError: r
 			}) => {
-				const c = r ? j._("Try again", null, {
+				const c = r ? I._("Try again", null, {
 					hk: "1cKOSe"
-				}) : j._("Turn on Powerups", null, {
+				}) : I._("Turn on Powerups", null, {
 					hk: "AuDZE"
 				});
 				return n.a.createElement(d.h, {
-					className: Object(s.a)(e, P.a.button, {
-						[P.a.loading]: l
+					className: Object(s.a)(e, j.a.button, {
+						[j.a.loading]: l
 					}),
 					disabled: a || l,
 					onClick: t,
 					priority: d.b.Primary,
 					isFullWidth: !0
-				}, l ? n.a.createElement(S.a, {
+				}, l ? n.a.createElement(O.a, {
 					sizePx: 12,
 					center: !0
 				}) : c)
 			};
-			var C = t("./src/reddit/components/PowerupsSignUpModal/index.m.less"),
-				F = t.n(C);
+			var F = t("./src/reddit/components/PowerupsSignUpModal/index.m.less"),
+				T = t.n(F);
 			const {
-				fbt: T
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), q = Object(o.a)(({
+				fbt: q
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(o.a)(({
 				closeModal: e
 			}) => {
 				var a;
 				const t = Object(p.a)(),
 					l = Object(g.a)(),
-					s = Object(c.e)(b),
+					s = Object(c.e)(N),
 					i = null !== (a = 1 === (null == s ? void 0 : s.length)) && void 0 !== a && a,
 					o = null == s ? void 0 : s.every(({
 						hasPowerups: e
 					}) => e),
 					[k, w] = Object(r.useState)(s && i ? [s[0].id] : []),
-					[E, N] = Object(r.useState)(!1),
+					[b, E] = Object(r.useState)(!1),
 					[v, y] = Object(r.useState)(!1),
-					[f, S] = Object(r.useState)(!1);
+					[f, x] = Object(r.useState)(!1);
 				if (!(null == s ? void 0 : s.length)) return e(), null;
 				const O = async e => {
 					try {
@@ -482,80 +484,80 @@
 							error: a.message
 						}
 					}
-				}, P = v || o ? T._("{=[r/community]}{=has Powerups}", [T._param("=[r/community]", n.a.createElement("div", null, T._("{r/community}", [T._param("r/community", s[0].displayText)], {
+				}, P = v || o ? q._("{=[r/community]}{=has Powerups}", [q._param("=[r/community]", n.a.createElement("div", null, q._("{r/community}", [q._param("r/community", s[0].displayText)], {
 					hk: "1TzAG8"
-				}))), T._param("=has Powerups", n.a.createElement("div", null, T._("has Powerups", null, {
+				}))), q._param("=has Powerups", n.a.createElement("div", null, q._("has Powerups", null, {
 					hk: "2zYYns"
 				})))], {
 					hk: "2bu88V"
-				}) : T._("{=Power up}{=[r/community]}", [T._param("=Power up", n.a.createElement("div", null, T._("Power up", null, {
+				}) : q._("{=Power up}{=[r/community]}", [q._param("=Power up", n.a.createElement("div", null, q._("Power up", null, {
 					hk: "3qh4XT"
-				}))), T._param("=[r/community]", n.a.createElement("div", null, T._("{r/community}", [T._param("r/community", s[0].displayText)], {
+				}))), q._param("=[r/community]", n.a.createElement("div", null, q._("{r/community}", [q._param("r/community", s[0].displayText)], {
 					hk: "2Pz0Sn"
 				})))], {
 					hk: "p9zKt"
-				}), j = v || o ? T._("{=Your communities}{=have Powerups}", [T._param("=Your communities", n.a.createElement("div", null, T._("Your communities", null, {
+				}), j = v || o ? q._("{=Your communities}{=have Powerups}", [q._param("=Your communities", n.a.createElement("div", null, q._("Your communities", null, {
 					hk: "3ySkxw"
-				}))), T._param("=have Powerups", n.a.createElement("div", null, T._("have Powerups", null, {
+				}))), q._param("=have Powerups", n.a.createElement("div", null, q._("have Powerups", null, {
 					hk: "4rHX2f"
 				})))], {
 					hk: "E4Lct"
-				}) : T._("{=Power up}{=your communities}", [T._param("=Power up", n.a.createElement("div", null, T._("Power up", null, {
+				}) : q._("{=Power up}{=your communities}", [q._param("=Power up", n.a.createElement("div", null, q._("Power up", null, {
 					hk: "Jrn2T"
-				}))), T._param("=your communities", n.a.createElement("div", null, T._("your communities", null, {
+				}))), q._param("=your communities", n.a.createElement("div", null, q._("your communities", null, {
 					hk: "4EPQY"
 				})))], {
 					hk: "1K9FOM"
-				}), C = i ? P : j, q = E || v || f ? T._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [T._param("=Hold tight! It can take up to 5 minutes for", n.a.createElement("div", null, T._("Hold tight! It can take up to 5 minutes for", null, {
+				}), I = i ? P : j, F = b || v || f ? q._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [q._param("=Hold tight! It can take up to 5 minutes for", n.a.createElement("div", null, q._("Hold tight! It can take up to 5 minutes for", null, {
 					hk: "1cFoaI"
-				}))), T._param("=Powerups to appear in yourcommunity.", n.a.createElement("div", null, T._({
+				}))), q._param("=Powerups to appear in yourcommunity.", n.a.createElement("div", null, q._({
 					"*": "Powerups to appear in your communities.",
 					_1: "Powerups to appear in your community."
-				}, [T._plural(s.length)], {
+				}, [q._plural(s.length)], {
 					hk: "1ky0qH"
 				})))], {
 					hk: "4tvqU7"
-				}) : T._("{=Harness the power of yourcommunity to}{=unlock special perks and advanced features.}", [T._param("=Harness the power of yourcommunity to", n.a.createElement("div", null, T._({
+				}) : q._("{=Harness the power of yourcommunity to}{=unlock special perks and advanced features.}", [q._param("=Harness the power of yourcommunity to", n.a.createElement("div", null, q._({
 					"*": "Harness the power of your communities to",
 					_1: "Harness the power of your community to"
-				}, [T._plural(s.length)], {
+				}, [q._plural(s.length)], {
 					hk: "2rOtDZ"
-				}))), T._param("=unlock special perks and advanced features.", n.a.createElement("div", null, T._("unlock special perks and advanced features.", null, {
+				}))), q._param("=unlock special perks and advanced features.", n.a.createElement("div", null, q._("unlock special perks and advanced features.", null, {
 					hk: "2Xj3Tx"
 				})))], {
 					hk: "2cx1IK"
 				});
 				return n.a.createElement("div", {
-					className: F.a.container,
+					className: T.a.container,
 					"data-testid": "powerups-signup-modal"
-				}, n.a.createElement(Y, null), n.a.createElement("button", {
-					className: F.a.closeButton,
+				}, n.a.createElement(B, null), n.a.createElement("button", {
+					className: T.a.closeButton,
 					onClick: e
 				}, n.a.createElement(h.a, {
-					className: F.a.closeIcon
+					className: T.a.closeIcon
 				})), n.a.createElement("div", {
-					className: F.a.body
+					className: T.a.body
 				}, n.a.createElement("div", {
-					className: F.a.titleContainer
+					className: T.a.titleContainer
 				}, n.a.createElement("h1", {
-					className: F.a.titleText
-				}, C), n.a.createElement("h2", {
-					className: F.a.subtitleText
-				}, q)), !i && n.a.createElement(x, {
+					className: T.a.titleText
+				}, I), n.a.createElement("h2", {
+					className: T.a.subtitleText
+				}, F)), !i && n.a.createElement(S, {
 					onChange: w,
 					subredditIdsSelected: k,
 					subredditsInfo: s,
 					wasSuccessful: v,
 					allEnabled: o
 				}), f && n.a.createElement("div", {
-					className: F.a.errorContainer
+					className: T.a.errorContainer
 				}, n.a.createElement(_.a, {
-					className: F.a.errorIcon
+					className: T.a.errorIcon
 				}), n.a.createElement("span", {
-					className: F.a.errorText
-				}, T._("Something went wrong.", null, {
+					className: T.a.errorText
+				}, q._("Something went wrong.", null, {
 					hk: "N6RFp"
-				}))), !v && !o && n.a.createElement(I, {
+				}))), !v && !o && n.a.createElement(C, {
 					disabled: 0 === k.length,
 					onClick: async () => {
 						l((e => a => ({
@@ -566,77 +568,77 @@
 							powerups: {
 								subredditIds: e.join(",")
 							}
-						}))(k)), N(!0);
+						}))(k)), E(!0);
 						const e = (await Promise.all(k.map(O))).every(({
 							success: e
 						}) => e);
-						y(e), S(!e), N(!1)
+						y(e), x(!e), E(!1)
 					},
-					isLoading: E,
+					isLoading: b,
 					wasError: f
 				}), (v || o) && i && n.a.createElement(n.a.Fragment, null, n.a.createElement("p", {
-					className: F.a.successText
-				}, T._("Let your community know about Powerups with a pinned post", null, {
+					className: T.a.successText
+				}, q._("Let your community know about Powerups with a pinned post", null, {
 					hk: "3bII20"
 				})), n.a.createElement(d.q, {
-					className: F.a.successButton,
+					className: T.a.successButton,
 					to: `/${s[0].displayText}/submit`,
 					kind: d.a.InternalLink,
 					priority: d.b.Primary,
 					isFullWidth: !0
-				}, T._("Spread the word", null, {
+				}, q._("Spread the word", null, {
 					hk: "1f68Nj"
 				}))), n.a.createElement("footer", {
-					className: F.a.footer
-				}, T._("Heads up—once you turn on Powerups you can’t turn it off.", null, {
+					className: T.a.footer
+				}, q._("Heads up—once you turn on Powerups you can’t turn it off.", null, {
 					hk: "3YQxrF"
 				}))))
-			}), Y = () => n.a.createElement("div", {
-				className: F.a.background
+			}), B = () => n.a.createElement("div", {
+				className: T.a.background
 			}, n.a.createElement("div", {
-				className: F.a.diagonalLayoutSecondary
+				className: T.a.diagonalLayoutSecondary
 			}), n.a.createElement("div", {
-				className: F.a.diagonalLayoutPrimary
+				className: T.a.diagonalLayoutPrimary
 			}), n.a.createElement("div", {
-				className: Object(s.a)(F.a.circle, F.a.lineCircle),
+				className: Object(s.a)(T.a.circle, T.a.lineCircle),
 				style: {
 					backgroundImage: `url(${l.a.assetPath}/img/powerups/linecircle.png)`
 				}
 			}), n.a.createElement("div", {
-				className: Object(s.a)(F.a.circle, F.a.circleOrangeHollow)
+				className: Object(s.a)(T.a.circle, T.a.circleOrangeHollow)
 			}), n.a.createElement("div", {
-				className: Object(s.a)(F.a.circle, F.a.dotCircle1),
+				className: Object(s.a)(T.a.circle, T.a.dotCircle1),
 				style: {
 					backgroundImage: `url(${l.a.assetPath}/img/powerups/dotcircle.png)`
 				}
 			}), n.a.createElement("div", {
-				className: Object(s.a)(F.a.circle, F.a.circleGreenFilled)
+				className: Object(s.a)(T.a.circle, T.a.circleGreenFilled)
 			}), n.a.createElement("div", {
-				className: Object(s.a)(F.a.circle, F.a.circleGreenHollow)
+				className: Object(s.a)(T.a.circle, T.a.circleGreenHollow)
 			}), n.a.createElement("div", {
-				className: Object(s.a)(F.a.circle, F.a.circleYellowHollow)
+				className: Object(s.a)(T.a.circle, T.a.circleYellowHollow)
 			}), n.a.createElement("div", {
-				className: Object(s.a)(F.a.circle, F.a.dotCircle2),
+				className: Object(s.a)(T.a.circle, T.a.dotCircle2),
 				style: {
 					backgroundImage: `url(${l.a.assetPath}/img/powerups/dotcircle.png)`
 				}
 			}), n.a.createElement("div", {
-				className: F.a.headerImageContainer
+				className: T.a.headerImageContainer
 			}, n.a.createElement("img", {
-				className: F.a.headerImage,
+				className: T.a.headerImage,
 				alt: "Powerup heroes",
 				src: `${l.a.assetPath}/img/powerups/powerups-rangers-static.png`
 			})));
-			var B = t("./src/reddit/icons/fonts/index.tsx"),
-				M = t("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				H = t("./src/reddit/pages/Powerups/index.m.less"),
-				L = t.n(H);
+			var M = t("./src/reddit/icons/fonts/index.tsx"),
+				H = t("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				L = t("./src/reddit/pages/Powerups/index.m.less"),
+				W = t.n(L);
 			const {
-				fbt: W
+				fbt: U
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = () => {
 				const e = Object(g.a)(),
-					a = Object(c.e)(b),
+					a = Object(c.e)(N),
 					[t, o] = Object(r.useState)(!1);
 				Object(r.useEffect)(() => {
 					e((() => e => ({
@@ -651,58 +653,58 @@
 				}, [e]);
 				const m = () => o(!1);
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-					className: L.a.headingSection
+					className: W.a.headingSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(L.a.background, L.a.contentWrapper)
+					className: Object(s.a)(W.a.background, W.a.contentWrapper)
 				}, n.a.createElement("div", {
-					className: L.a.diagonalLayoutSecondary
+					className: W.a.diagonalLayoutSecondary
 				}), n.a.createElement("div", {
-					className: L.a.diagonalLayoutPrimary
+					className: W.a.diagonalLayoutPrimary
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleDotted),
+					className: Object(s.a)(W.a.circle, W.a.circleDotted),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/dotcircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.animatedCircle, L.a.circleStripped),
+					className: Object(s.a)(W.a.circle, W.a.animatedCircle, W.a.circleStripped),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/linecircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleOrangeFull, L.a.animatedCircle)
+					className: Object(s.a)(W.a.circle, W.a.circleOrangeFull, W.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleYellowSmall, L.a.top, L.a.animatedCircle)
+					className: Object(s.a)(W.a.circle, W.a.circleYellowSmall, W.a.top, W.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleYellowBig, L.a.animatedCircle)
+					className: Object(s.a)(W.a.circle, W.a.circleYellowBig, W.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleYellowHollow, L.a.animatedCircle)
+					className: Object(s.a)(W.a.circle, W.a.circleYellowHollow, W.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleYellowSmall, L.a.bottom, L.a.animatedCircle)
+					className: Object(s.a)(W.a.circle, W.a.circleYellowSmall, W.a.bottom, W.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleOrangeHollow, L.a.animatedCircle)
+					className: Object(s.a)(W.a.circle, W.a.circleOrangeHollow, W.a.animatedCircle)
 				})), n.a.createElement("div", {
-					className: Object(s.a)(L.a.contentWrapper, L.a.headingContent)
+					className: Object(s.a)(W.a.contentWrapper, W.a.headingContent)
 				}, n.a.createElement("div", {
-					className: L.a.headingText
+					className: W.a.headingText
 				}, n.a.createElement("h1", {
-					className: L.a.heading
-				}, n.a.createElement(M.a, {
-					className: L.a.snoo
+					className: W.a.heading
+				}, n.a.createElement(H.a, {
+					className: W.a.snoo
 				}), "Powerups"), n.a.createElement("h2", {
-					className: L.a.subheading
-				}, W._("Come together to level up the whole community", null, {
+					className: W.a.subheading
+				}, U._("Come together to level up the whole community", null, {
 					hk: "3C0qLA"
 				})), n.a.createElement("p", {
-					className: Object(s.a)(L.a.description, L.a.bodyText)
-				}, W._("Harness the power of your community to unlock special perks and advanced features.", null, {
+					className: Object(s.a)(W.a.description, W.a.bodyText)
+				}, U._("Harness the power of your community to unlock special perks and advanced features.", null, {
 					hk: "1NgNS2"
 				})), n.a.createElement("div", {
-					className: Object(s.a)(L.a.modWarning, L.a.bodyText)
+					className: Object(s.a)(W.a.modWarning, W.a.bodyText)
 				}, n.a.createElement("div", {
-					className: L.a.modWarningTop
-				}, n.a.createElement(B.a, {
+					className: W.a.modWarningTop
+				}, n.a.createElement(M.a, {
 					name: "mod",
-					className: L.a.modWarningIcon
+					className: W.a.modWarningIcon
 				})), "Only moderators can turn on Powerups."), n.a.createElement(d.h, {
 					onClick: () => {
 						e((() => e => ({
@@ -714,15 +716,15 @@
 					},
 					disabled: !(null == a ? void 0 : a.length),
 					priority: d.b.Primary,
-					className: L.a.ctaButton
-				}, W._("Turn on Powerups", null, {
+					className: W.a.ctaButton
+				}, U._("Turn on Powerups", null, {
 					hk: "4E97KH"
 				}))), n.a.createElement("div", {
-					className: L.a.headingArt
+					className: W.a.headingArt
 				}, n.a.createElement("div", {
-					className: L.a.powerupsMarketingImageContainer
+					className: W.a.powerupsMarketingImageContainer
 				}, n.a.createElement("picture", {
-					className: L.a.powerupsMarketingImage
+					className: W.a.powerupsMarketingImage
 				}, n.a.createElement("source", {
 					srcSet: `${l.a.assetPath}/img/powerups/powerups-rangers.webp`,
 					type: "image/webp"
@@ -731,123 +733,123 @@
 					type: "image/png"
 				}), n.a.createElement("img", {
 					alt: "Powerup heroes",
-					className: L.a.fallbackStaticImage,
+					className: W.a.fallbackStaticImage,
 					src: `${l.a.assetPath}/img/powerups/powerups-rangers-static.png`
 				})))))), n.a.createElement("div", {
-					className: L.a.pioneerSection
+					className: W.a.pioneerSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(L.a.contentWrapper, L.a.powerupsPioneerContent)
+					className: Object(s.a)(W.a.contentWrapper, W.a.powerupsPioneerContent)
 				}, n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circlePioneersYellowFull)
+					className: Object(s.a)(W.a.circle, W.a.circlePioneersYellowFull)
 				}), n.a.createElement("h2", {
-					className: L.a.pioneerHeading
-				}, W._("Be a Powerups pioneer", null, {
+					className: W.a.pioneerHeading
+				}, U._("Be a Powerups pioneer", null, {
 					hk: "2P7QON"
 				})), n.a.createElement("h3", {
-					className: L.a.pioneerSubheading
-				}, W._("Be one of the first communities to turn on Powerups and have an influence on what perks and advanced features we create next.", null, {
+					className: W.a.pioneerSubheading
+				}, U._("Be one of the first communities to turn on Powerups and have an influence on what perks and advanced features we create next.", null, {
 					hk: "2wFnM6"
 				})))), n.a.createElement("div", {
-					className: L.a.powerupStepsSection
+					className: W.a.powerupStepsSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(L.a.powerupStepsSectionContent, L.a.contentWrapper)
+					className: Object(s.a)(W.a.powerupStepsSectionContent, W.a.contentWrapper)
 				}, n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleStepsYellowFull)
+					className: Object(s.a)(W.a.circle, W.a.circleStepsYellowFull)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleStepsStripped),
+					className: Object(s.a)(W.a.circle, W.a.circleStepsStripped),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/linecircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: L.a.powerupStep
+					className: W.a.powerupStep
 				}, n.a.createElement("div", {
-					className: L.a.powerupStepCounter
+					className: W.a.powerupStepCounter
 				}, "1"), n.a.createElement("div", {
-					className: L.a.powerupStepName
-				}, W._("Turn on powerups", null, {
+					className: W.a.powerupStepName
+				}, U._("Turn on powerups", null, {
 					hk: "q0dHV"
 				})), n.a.createElement("div", {
-					className: L.a.powerupStepDescription
-				}, W._("Just tap that big Turn on Powerups button and add Powerups to your community.", null, {
+					className: W.a.powerupStepDescription
+				}, U._("Just tap that big Turn on Powerups button and add Powerups to your community.", null, {
 					hk: "oZMHo"
 				}))), n.a.createElement("div", {
-					className: L.a.powerupStep
+					className: W.a.powerupStep
 				}, n.a.createElement("div", {
-					className: L.a.powerupStepCounter
+					className: W.a.powerupStepCounter
 				}, "2"), n.a.createElement("div", {
-					className: L.a.powerupStepName
-				}, W._("Rally the community", null, {
+					className: W.a.powerupStepName
+				}, U._("Rally the community", null, {
 					hk: "4m8BDG"
 				})), n.a.createElement("div", {
-					className: L.a.powerupStepDescription
-				}, W._("Spread the word! You only need 25 powerups to give perks to the whole community.", null, {
+					className: W.a.powerupStepDescription
+				}, U._("Spread the word! You only need 25 powerups to give perks to the whole community.", null, {
 					hk: "4eSNsf"
 				}))), n.a.createElement("div", {
-					className: L.a.powerupStep
+					className: W.a.powerupStep
 				}, n.a.createElement("div", {
-					className: L.a.powerupStepCounter
+					className: W.a.powerupStepCounter
 				}, "3"), n.a.createElement("div", {
-					className: L.a.powerupStepName
-				}, W._("Unlock perks", null, {
+					className: W.a.powerupStepName
+				}, U._("Unlock perks", null, {
 					hk: "20u0vD"
 				})), n.a.createElement("div", {
-					className: L.a.powerupStepDescription
-				}, W._("Once your community is powered up, the perks are unlocked for everyone to use.", null, {
+					className: W.a.powerupStepDescription
+				}, U._("Once your community is powered up, the perks are unlocked for everyone to use.", null, {
 					hk: "3Fs5Gm"
 				}))))), n.a.createElement("div", {
-					className: L.a.faqSection
+					className: W.a.faqSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(L.a.faqSectionContent, L.a.contentWrapper)
+					className: Object(s.a)(W.a.faqSectionContent, W.a.contentWrapper)
 				}, n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleFaqCyanSmall)
+					className: Object(s.a)(W.a.circle, W.a.circleFaqCyanSmall)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleFaqDotted),
+					className: Object(s.a)(W.a.circle, W.a.circleFaqDotted),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/dotcircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleFaqYellowSmall)
+					className: Object(s.a)(W.a.circle, W.a.circleFaqYellowSmall)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleFaqCyanBig)
+					className: Object(s.a)(W.a.circle, W.a.circleFaqCyanBig)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleFaqOrange)
+					className: Object(s.a)(W.a.circle, W.a.circleFaqOrange)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.circle, L.a.circleFaqYellowBig)
+					className: Object(s.a)(W.a.circle, W.a.circleFaqYellowBig)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkTopLeft)
+					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkTopLeft)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkTopRight)
+					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkTopRight)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkBottomRight)
+					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkBottomRight)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkBottomLeft)
+					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkBottomLeft)
 				}), n.a.createElement("h2", {
-					className: L.a.faqHeading
-				}, W._("Questions about Powerups", null, {
+					className: W.a.faqHeading
+				}, U._("Questions about Powerups", null, {
 					hk: "nzxYw"
 				})), n.a.createElement("h3", {
-					className: L.a.faqSubheading
-				}, W._("We’ve got answers.", null, {
+					className: W.a.faqSubheading
+				}, U._("We’ve got answers.", null, {
 					hk: "4kIK64"
 				})), n.a.createElement(d.q, {
-					className: L.a.faqButton,
+					className: W.a.faqButton,
 					priority: d.b.Secondary,
 					href: "https://mods.reddithelp.com/hc/en-us/articles/4403699823629",
 					kind: d.a.ExternalLink,
 					target: "_blank"
-				}, W._("Powerups FAQs", null, {
+				}, U._("Powerups FAQs", null, {
 					hk: "2lWZQq"
 				})))), n.a.createElement(i.a, {
-					className: L.a.footer
-				}), t && n.a.createElement(q, {
+					className: W.a.footer
+				}), t && n.a.createElement(Y, {
 					withOverlay: !0,
 					closeModal: m,
 					onOverlayClick: m,
-					className: L.a.modalBody,
-					overlayClassName: L.a.modalOverlay
+					className: W.a.modalBody,
+					overlayClassName: W.a.modalOverlay
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.617031b5ecef237bd591.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.a2d433b6c3b59af007b7.js.map
