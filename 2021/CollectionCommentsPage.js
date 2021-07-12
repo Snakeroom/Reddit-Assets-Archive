@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2c6ad3559a485ff6a06a.js
-// Retrieved at 7/12/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.240af00b5d022e5ddb50.js
+// Retrieved at 7/12/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5691,33 +5691,6 @@
 				d: "M16,9H15V7A5,5,0,0,0,5,7V9H4a1,1,0,0,0-1,1v7a1,1,0,0,0,1,1H16a1,1,0,0,0,1-1V10A1,1,0,0,0,16,9ZM7,7a3,3,0,0,1,6,0V9H7Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, s) {
-			e.exports = {
-				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
-			}
-		},
-		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return d
-			}));
-			var o = s("./node_modules/react/index.js"),
-				n = s.n(o),
-				r = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				a = s.n(i);
-			const d = e => n.a.createElement("svg", {
-				className: Object(r.a)(a.a.icon, e.className),
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, n.a.createElement("path", {
-				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
-			}), n.a.createElement("path", {
-				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
-			}));
-			t.b = d
-		},
 		"./src/reddit/icons/svgs/Trophy/index.tsx": function(e, t, s) {
 			"use strict";
 			var o = s("./node_modules/react/index.js"),
@@ -7107,4 +7080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.2c6ad3559a485ff6a06a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.240af00b5d022e5ddb50.js.map
