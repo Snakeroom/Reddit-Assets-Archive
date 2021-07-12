@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.44dd3bed86d3ddbe25a1.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.8027479bed20d3078eaf.js
+// Retrieved at 7/12/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -177,7 +177,7 @@
 					[j, k] = Object(r.useState)(!1);
 				if (Object(r.useEffect)(() => {
 						k(!g && !(e => {
-							return Object(m.k)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= 5
+							return Object(m.k)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= 2
 						})(e))
 					}, [g, e, k]), Object(r.useEffect)(() => {
 						j && (Object(m.Q)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), w(Object(p.k)()))
@@ -217,4 +217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.44dd3bed86d3ddbe25a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.8027479bed20d3078eaf.js.map

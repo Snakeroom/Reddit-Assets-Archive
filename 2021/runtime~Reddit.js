@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.36b80d202aad04fa8538.js
-// Retrieved at 7/12/2021, 3:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.42764bb2914a2ec1f20a.js
+// Retrieved at 7/12/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1259,7 +1259,7 @@
 						"translations/es_MX-json": "f20126f608206fdb00e0",
 						"translations/fr_FR-json": "e1e8dfe600bbebab6d43",
 						"translations/it_IT-json": "06e391506ba0a092c799",
-						"translations/pseudo_ext-json": "1d6b0c923b27a4a40aef",
+						"translations/pseudo_ext-json": "c682691e8a9a6cbc18a6",
 						"translations/pseudo_long-json": "e94da57c6d90be95bcd0",
 						"translations/pseudo_short-json": "26d1f2d25046b4c1035d",
 						"translations/pt_BR-json": "915e9af23991de852534",
@@ -1418,7 +1418,7 @@
 						FrontpageSidebar: "8542994f803fc5be0191",
 						"reddit-components-AdHocMultiredditSidebar": "272420a022cda8cb3ce0",
 						SubredditPremiumNewUserWelcome: "bccc1faf2db2a83f1596",
-						"reddit-components-Econ-PowerupsInFeedUnit-index-tsx": "44dd3bed86d3ddbe25a1",
+						"reddit-components-Econ-PowerupsInFeedUnit-index-tsx": "8027479bed20d3078eaf",
 						"reddit-components-Econ-Prediction-CreatingTournamentBanner": "619c5ef1438a15b47b95",
 						"reddit-components-Economics-SubredditPremium-LFGBanner": "660fd092bb404c6aae2a",
 						"reddit-components-Governance-ClaimPointsBanner": "8945a586abc674f5b1ea",
@@ -1501,4 +1501,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.36b80d202aad04fa8538.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.42764bb2914a2ec1f20a.js.map
