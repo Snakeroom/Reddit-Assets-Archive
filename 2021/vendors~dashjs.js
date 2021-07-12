@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~dashjs.eaddad42f8a005c77562.js
-// Retrieved at 6/22/2021, 5:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~dashjs.d51bd9db31280a668946.js
+// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~dashjs"], {
 		"./node_modules/codem-isoboxer/dist/iso_boxer.js": function(e, t, n) {
@@ -20710,7 +20710,7 @@
 						writable: !0
 					}) : String.fromCodePoint = M)
 				}(t)
-			}).call(this, n("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
+			}).call(this, n("./node_modules/buffer/index.js").Buffer)
 		},
 		"./node_modules/imsc/src/main/js/doc.js": function(e, t, n) {
 			! function(e, t, n, r, s) {
@@ -21924,4 +21924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~dashjs.eaddad42f8a005c77562.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~dashjs.d51bd9db31280a668946.js.map

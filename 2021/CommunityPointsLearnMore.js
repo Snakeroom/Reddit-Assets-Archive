@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c5d8551ad674fc12177b.js
-// Retrieved at 7/1/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.518349b3179b5771e2f3.js
+// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -602,7 +602,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = r("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = r("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
+				i = r("./node_modules/buffer/index.js").Buffer;
 
 			function a(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -2008,4 +2008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.c5d8551ad674fc12177b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.518349b3179b5771e2f3.js.map

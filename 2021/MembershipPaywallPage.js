@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a2f44d77fd2b367817d9.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.3601cc6308e14f9c58bd.js
+// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -664,9 +664,9 @@
 				r = s("./node_modules/lodash/_charsEndIndex.js"),
 				a = s("./node_modules/lodash/_stringToArray.js"),
 				o = s("./node_modules/lodash/toString.js"),
-				c = /\s+$/;
+				c = s("./node_modules/lodash/_trimmedEndIndex.js");
 			e.exports = function(e, t, s) {
-				if ((e = o(e)) && (s || void 0 === t)) return e.replace(c, "");
+				if ((e = o(e)) && (s || void 0 === t)) return e.slice(0, c(e) + 1);
 				if (!e || !(t = n(t))) return e;
 				var d = a(e),
 					l = r(d, a(t)) + 1;
@@ -7198,4 +7198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a2f44d77fd2b367817d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.3601cc6308e14f9c58bd.js.map

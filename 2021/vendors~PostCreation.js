@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.2ad8c10f7269236ef48f.js
-// Retrieved at 6/14/2021, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.4d0d0c59573098378c57.js
+// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -832,9 +832,9 @@
 				s = o("./node_modules/lodash/_charsEndIndex.js"),
 				i = o("./node_modules/lodash/_stringToArray.js"),
 				a = o("./node_modules/lodash/toString.js"),
-				l = /\s+$/;
+				l = o("./node_modules/lodash/_trimmedEndIndex.js");
 			e.exports = function(e, t, o) {
-				if ((e = a(e)) && (o || void 0 === t)) return e.replace(l, "");
+				if ((e = a(e)) && (o || void 0 === t)) return e.slice(0, l(e) + 1);
 				if (!e || !(t = n(t))) return e;
 				var u = i(e),
 					d = s(u, i(t)) + 1;
@@ -1890,4 +1890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.2ad8c10f7269236ef48f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.4d0d0c59573098378c57.js.map

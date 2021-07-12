@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.dfe82fea86f3a1237aad.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e88d30b30c07cc855575.js
+// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -916,7 +916,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, n) {
 			var r = n("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				s = n("./node_modules/qrcode/lib/core/polynomial.js"),
-				a = n("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
+				a = n("./node_modules/buffer/index.js").Buffer;
 
 			function o(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -14277,4 +14277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.dfe82fea86f3a1237aad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e88d30b30c07cc855575.js.map

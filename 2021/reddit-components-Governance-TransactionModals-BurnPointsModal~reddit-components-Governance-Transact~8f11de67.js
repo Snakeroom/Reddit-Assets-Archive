@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.f94652fed04b2ea91ca8.js
-// Retrieved at 6/2/2021, 4:10:16 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.7d12a41dc18c83dcfcab.js
+// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -876,7 +876,7 @@
 				function I(A) {
 					return Object(r.arrayify)(A.startsWith("0x") ? A : `0x${A}`)
 				}
-			}).call(this, t("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
+			}).call(this, t("./node_modules/buffer/index.js").Buffer)
 		},
 		"./src/reddit/helpers/crypto/vaultTransactions.ts": function(A, e, t) {
 			"use strict";
@@ -1056,4 +1056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.f94652fed04b2ea91ca8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.7d12a41dc18c83dcfcab.js.map

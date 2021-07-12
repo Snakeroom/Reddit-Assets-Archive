@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.fd973ea1092707bcf345.js
-// Retrieved at 7/7/2021, 9:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.93645164e9516680d1d7.js
+// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/axios/index.js": function(e, n, t) {
@@ -12465,13 +12465,13 @@
 							}]), e
 						}();
 					return ot
-				}(t("./node_modules/axios/index.js"), t("./node_modules/sendbird/node_modules/form-data/lib/browser.js"), t("./node_modules/sendbird/node_modules/ws/browser.js"))
-			}).call(this, t("./node_modules/process/browser.js"), t("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer, t("./node_modules/webpack/buildin/global.js"))
+				}(t("./node_modules/axios/index.js"), t("./node_modules/sendbird/node_modules/form-data/lib/browser.js"), t("./node_modules/ws/browser.js"))
+			}).call(this, t("./node_modules/process/browser.js"), t("./node_modules/buffer/index.js").Buffer, t("./node_modules/webpack/buildin/global.js"))
 		},
 		"./node_modules/sendbird/node_modules/form-data/lib/browser.js": function(e, n) {
 			e.exports = "object" == typeof self ? self.FormData : window.FormData
 		},
-		"./node_modules/sendbird/node_modules/ws/browser.js": function(e, n, t) {
+		"./node_modules/ws/browser.js": function(e, n, t) {
 			"use strict";
 			e.exports = function() {
 				throw new Error("ws does not work in the browser. Browser clients must use the native WebSocket object")
@@ -12479,4 +12479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.fd973ea1092707bcf345.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.93645164e9516680d1d7.js.map
