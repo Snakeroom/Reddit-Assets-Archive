@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.8076ab0a16e0b12cc56b.js
-// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.136f954fbff982349fa5.js
+// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -153,8 +153,8 @@
 				U = r("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
 				L = r("./src/reddit/models/Toast/index.ts"),
 				B = r("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				D = r("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
-				A = r("./src/reddit/selectors/subreddit.ts"),
+				A = r("./src/reddit/routes/subredditWiki/normalizeWikiUrl.ts"),
+				D = r("./src/reddit/selectors/subreddit.ts"),
 				W = r("./src/lib/initializeClient/installReducer.ts"),
 				F = r("./node_modules/redux/es/redux.js");
 			const H = {};
@@ -752,8 +752,8 @@
 						return e
 				}
 			};
-			const De = {};
-			var Ae = (e = De, t) => {
+			const Ae = {};
+			var De = (e = Ae, t) => {
 					switch (t.type) {
 						case je.c:
 						case je.a: {
@@ -794,7 +794,7 @@
 					afterToken: Ce,
 					api: Ue,
 					models: Be,
-					userOrder: Ae
+					userOrder: De
 				});
 			const Fe = {};
 			var He = (e = Fe, t) => {
@@ -882,7 +882,7 @@
 						url: s
 					} = e, {
 						wikiPageName: a
-					} = n, o = Object(D.a)(s, n);
+					} = n, o = Object(A.a)(s, n);
 					let d = !1;
 					return S.l.includes(a || "") ? (await (async (e, t) => {
 						const r = `${l.a.oldRedditUrl}${Object(m.b)(e)}`;
@@ -956,7 +956,7 @@
 					t(u.l({
 						title: n.wikiPageName ? `${n.wikiPageName} - ${a}` : `wiki - ${a}`
 					})), await t(Xe(n, s));
-					const i = Object(A.y)(r(), {
+					const i = Object(D.y)(r(), {
 							subredditName: a
 						}),
 						o = r();
@@ -1080,8 +1080,8 @@
 						return e
 				}
 			};
-			const D = {};
-			var A = (e = D, t) => {
+			const A = {};
+			var D = (e = A, t) => {
 					switch (t.type) {
 						case I.n: {
 							const {
@@ -1206,7 +1206,7 @@
 					api: T,
 					fetchedTokens: U,
 					inContext: B,
-					loadMore: A,
+					loadMore: D,
 					models: H,
 					search: z,
 					userOrder: Q
@@ -2445,8 +2445,8 @@
 				L = r("./src/reddit/controls/Button/index.tsx"),
 				B = r("./src/chat/controls/Svg/index.tsx");
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -2454,7 +2454,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var A = e => a.a.createElement(B.a, D({}, e, {
+			var D = e => a.a.createElement(B.a, A({}, e, {
 					viewBox: "-1 -1 21 21"
 				}), a.a.createElement("path", {
 					d: "M16.64,2.32a4.5,4.5,0,0,0-7,5.57L4.85,12.69,3.59,13.95h0L2.34,15.2a1,1,0,0,0,0,1.41l1.25,1.25h0l.42.42a1,1,0,0,0,1.41-1.41L5,16.46H5a.78.78,0,0,1,0-1.09.79.79,0,0,1,1.09,0h0l.42.42a1,1,0,0,0,1.41-1.41L7.52,14h0L7,13.4l4.1-4.1a4.5,4.5,0,0,0,5.57-7Zm-1.41,5a2.5,2.5,0,1,1,0-3.54A2.5,2.5,0,0,1,15.22,7.27Z"
@@ -2468,7 +2468,7 @@
 				G = r.n(q);
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = l.a.wrapped(A, "PrivateKey", G.a), Q = l.a.div("ButtonsContainer", G.a), Y = l.a.div("Container", G.a), X = l.a.div("ContainerExp", G.a), J = l.a.div("Description", G.a), $ = l.a.div("PrivateSubredditDetails", G.a), V = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(L.k, "LinkRouterButton", G.a), ne = l.a.wrapped(L.j, "LinkButton", G.a), se = l.a.wrapped(L.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(L.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = l.a.wrapped(D, "PrivateKey", G.a), Q = l.a.div("ButtonsContainer", G.a), Y = l.a.div("Container", G.a), X = l.a.div("ContainerExp", G.a), J = l.a.div("Description", G.a), $ = l.a.div("PrivateSubredditDetails", G.a), V = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(L.k, "LinkRouterButton", G.a), ne = l.a.wrapped(L.j, "LinkButton", G.a), se = l.a.wrapped(L.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(L.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
 				isLoggedIn: K.J,
 				origin: M.j,
 				user: K.j,
@@ -2817,7 +2817,7 @@
 			}) => a.a.createElement(m.q, {
 				className: e,
 				disabled: p || l,
-				onClick: () => r === u.Dd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => r === u.Ed.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: m.b.Secondary,
@@ -2978,8 +2978,8 @@
 				U = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				L = r("./src/reddit/models/Gold/Award.ts"),
 				B = r("./src/reddit/models/User/index.ts"),
-				D = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
-				A = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
+				A = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				D = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				W = r("./src/reddit/actions/inContextModeration.ts"),
 				F = r("./src/reddit/actions/modal.ts"),
 				H = r("./src/reddit/actions/subredditModeration/ban.ts"),
@@ -3236,7 +3236,7 @@
 						style: {
 							backgroundImage: `url('${F}')`
 						}
-					}), s.a.createElement(Ee, null, L ? s.a.createElement(A.a, {
+					}), s.a.createElement(Ee, null, L ? s.a.createElement(D.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: F,
 						compact: !0,
@@ -3263,7 +3263,7 @@
 					})), s.a.createElement(Ce, {
 						showAwardKarma: b,
 						user: g
-					}), U && s.a.createElement(D.a, {
+					}), U && s.a.createElement(A.a, {
 						recentAwardings: U,
 						topAwardIcon: h,
 						username: v
@@ -4071,7 +4071,7 @@
 			var U = R,
 				L = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
 				B = r.n(L),
-				D = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
+				A = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
 			t.a = ({
 				bannerBackgroundImage: e,
 				compact: t,
@@ -4117,7 +4117,7 @@
 				}, s.a.createElement(d.a, {
 					name: "settings",
 					className: B.a.settingsIcon
-				})), s.a.createElement(D.a, {
+				})), s.a.createElement(A.a, {
 					isEmployee: m,
 					isGold: b,
 					isNSFW: p,
@@ -4702,4 +4702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.8076ab0a16e0b12cc56b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.136f954fbff982349fa5.js.map

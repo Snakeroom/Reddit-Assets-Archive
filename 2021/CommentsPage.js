@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.fe5a3debb64eb9840574.js
-// Retrieved at 7/8/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.686d491756120c4c1485.js
+// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -337,9 +337,9 @@
 							i = Object(se.K)(s(), {
 								identifier: F.belongsTo
 							});
-						if (i && (e => V.qd.Redirect === Object(U.b)(e, {
+						if (i && (e => V.rd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: V.id
+								experimentName: V.jd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((F.media && F.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${F.belongsTo.type===_.a.SUBREDDIT?i.url:"/"}${Object(u.t)(F.id)}`;
@@ -4954,7 +4954,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.Wd)(t) && !Object(I.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.Xd)(t) && !Object(I.a)(t),
 							subreddit: o
 						}
 					}
@@ -5009,7 +5009,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.Wd)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.Xd)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -5020,9 +5020,9 @@
 						hk: "2g363L"
 					}) : Object(I.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.Nc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
+					}) : t === x.Oc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
 						hk: "w3BDa"
-					}) : t === x.Nc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.Oc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -6733,8 +6733,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.jd
-			}) === o.rd.Enabled
+				experimentName: o.kd
+			}) === o.sd.Enabled
 		},
 		"./src/reddit/selectors/seo/reredditPromo.ts": function(e, t, s) {
 			"use strict";
@@ -6754,4 +6754,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fe5a3debb64eb9840574.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.686d491756120c4c1485.js.map

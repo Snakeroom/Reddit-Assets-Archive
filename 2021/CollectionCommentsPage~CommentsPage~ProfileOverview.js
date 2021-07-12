@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.edc9e00a105230a6b756.js
-// Retrieved at 7/8/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.32526fb2b91180f63a2b.js
+// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileOverview"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -434,7 +434,7 @@
 			s.d(t, "b", (function() {
 				return J
 			})), s.d(t, "a", (function() {
-				return X
+				return Q
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var i = s("./node_modules/history/esm/history.js"),
@@ -511,13 +511,13 @@
 						clickInfo: Object(j.a)(e)
 					})
 				}, $.set(s, i)), i
-			}, Q = (e, t) => {
+			}, X = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
 					s.splice(e, 0, t[e])
 				}), s
 			};
-			class X extends u.a.Component {
+			class Q extends u.a.Component {
 				constructor() {
 					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new L.a(M), this.surveyTriggerCounted = !1, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
@@ -820,7 +820,7 @@
 						const i = t === d.length - 1;
 						return this.scrollChildForPost(e, t, i, n)
 					});
-					r && (g = Q(g, r));
+					r && (g = X(g, r));
 					const b = this.props.measureScrollFPS ? `post-listings-${n}` : void 0,
 						f = a ? Object(i.e)(a) : null,
 						y = f || o;
@@ -853,7 +853,7 @@
 					}), u.a.createElement(G, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
-			X.defaultProps = {
+			Q.defaultProps = {
 				enableElementHiding: !0,
 				listingKey: "",
 				listingName: "",
@@ -1140,9 +1140,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: i.Eb
+					experimentName: i.Fb
 				});
-				return !(!t || Object(i.Wd)(t))
+				return !(!t || Object(i.Xd)(t))
 			}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -1264,7 +1264,7 @@
 				n = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(n.a)(e);
-					return Boolean(t) && !Object(r.Wd)(t)
+					return Boolean(t) && !Object(r.Xd)(t)
 				},
 				c = Object(i.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -1273,4 +1273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.edc9e00a105230a6b756.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileOverview.32526fb2b91180f63a2b.js.map

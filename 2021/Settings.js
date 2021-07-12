@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3cbea696935386da5fbf.js
-// Retrieved at 7/12/2021, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.dfe82fea86f3a1237aad.js
+// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -11014,9 +11014,9 @@
 					language: B.U,
 					shouldShowCreatePasswordModal: L.d,
 					shouldShowGenderCollection: e => Object(T.c)(e, {
-						experimentName: A.td,
+						experimentName: A.ud,
 						experimentEligibilitySelector: M.e
-					}) === A.Cd.Enabled,
+					}) === A.Dd.Enabled,
 					showLanguageSection: P.d.langSelect,
 					availableLocales: Re,
 					locale: De.i,
@@ -14277,4 +14277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3cbea696935386da5fbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.dfe82fea86f3a1237aad.js.map

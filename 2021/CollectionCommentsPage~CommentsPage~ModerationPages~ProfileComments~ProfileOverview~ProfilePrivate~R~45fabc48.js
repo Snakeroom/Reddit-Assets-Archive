@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.1179f053a5ef0cc36877.js
-// Retrieved at 7/12/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ef888a7b2e5980bbb671.js
+// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -1029,7 +1029,7 @@
 					postId: I,
 					isCommentCountAnimation: y,
 					isCountAnimShadowTestEnabled: T
-				} = e, N = c && !i && !u, M = i && !p, F = Object(O.a)(), R = Object(_.a)(f.fc) === f.jc.Enabled, A = r.a.createElement(S, {
+				} = e, N = c && !i && !u, M = i && !p, F = Object(O.a)(), R = Object(_.a)(f.gc) === f.kc.Enabled, A = r.a.createElement(S, {
 					hasModPostPerms: o,
 					isCountAnimShadowTestEnabled: !!T,
 					isChatPost: n,
@@ -4837,4 +4837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.1179f053a5ef0cc36877.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ef888a7b2e5980bbb671.js.map
