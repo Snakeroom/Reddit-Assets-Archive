@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.abe0b6b057ecef92d356.js
-// Retrieved at 7/8/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.1179f053a5ef0cc36877.js
+// Retrieved at 7/12/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -2153,9 +2153,13 @@
 					showIconsOnly: T
 				} = e, N = Object(i.d)(), M = Object(x.a)(l), L = Object(b.b)(y), D = !(!y.approvedBy || !L), B = Object(h.b)(y.id, a), W = M && g && !y.isSponsored, V = t && g;
 				let U, G;
-				const q = R("Remove", y.id, a),
-					H = () => N(Object(p.h)({
+				const q = R("Approve", y.id, a),
+					H = R("Spam", y.id, a),
+					K = () => N(Object(p.h)({
 						tooltipId: q
+					})),
+					J = () => N(Object(p.h)({
+						tooltipId: H
 					}));
 				T || (U = ((e, t) => e ? s.fbt._("reapprove", null, {
 					hk: "OJvB1"
@@ -2168,18 +2172,18 @@
 				}) : s.fbt._("spam", null, {
 					hk: "3ebJLg"
 				}))(y.isSpam));
-				const K = a ? void 0 : d;
+				const z = a ? void 0 : d;
 				return r.a.createElement("div", {
 					className: Object(c.a)(S.a.container, o)
 				}, W && r.a.createElement(n.Fragment, null, r.a.createElement(f.b, {
-					className: A(j.a.Approve, K),
+					className: A(j.a.Approve, z),
 					key: "approveButton",
 					text: U,
-					textClassName: Object(w.c)(K),
+					textClassName: Object(w.c)(z),
 					disabled: !!y.approvedBy && !L,
 					id: q,
-					onMouseEnter: H,
-					onMouseLeave: H,
+					onMouseEnter: K,
+					onMouseLeave: K,
 					onClick: () => {
 						k(), P(Object(v.h)(y.id, "approve"))
 					}
@@ -2188,22 +2192,29 @@
 					tooltipId: q,
 					text: U
 				})), r.a.createElement(F, {
-					className: A(j.a.Remove, K),
-					textClassName: Object(w.c)(K),
+					className: A(j.a.Remove, z),
+					textClassName: Object(w.c)(z),
 					isOverlay: a,
 					iconOnly: T,
 					post: y
 				}), r.a.createElement(f.d, {
-					className: A(j.a.Spam, K),
+					className: A(j.a.Spam, z),
 					key: "removeSpamButton",
 					text: G,
-					textClassName: Object(w.c)(K),
+					textClassName: Object(w.c)(z),
 					disabled: y.isSpam,
+					id: H,
+					onMouseEnter: J,
+					onMouseLeave: J,
 					onClick: () => {
 						I(), P(Object(v.h)(y.id, "spam"))
 					}
-				}, r.a.createElement(O.a, null))), V && r.a.createElement(f.c, {
-					className: A(j.a.Flair, K),
+				}, r.a.createElement(O.a, null), r.a.createElement(u.c, {
+					className: S.a.tooltip,
+					tooltipId: H,
+					text: G
+				}))), V && r.a.createElement(f.c, {
+					className: A(j.a.Flair, z),
 					key: "tagButton",
 					onClick: () => {
 						E(B)(), P(Object(v.h)(y.id, "post_flair_picker"))
@@ -4826,4 +4837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.abe0b6b057ecef92d356.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.1179f053a5ef0cc36877.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.1517184b451d0adf5bf4.js
-// Retrieved at 7/12/2021, 9:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.319716967ca0b1d99696.js
+// Retrieved at 7/12/2021, 10:10:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1171,7 +1171,7 @@
 						CoinsMobile: "7e0361977b199069aa54",
 						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "f66f6863456018b86d9d",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86": "31530d2a1dd5084e0c28",
-						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "abe0b6b057ecef92d356",
+						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "1179f053a5ef0cc36877",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "1a7c0326c04fb24e3ce9",
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "55e2e95f460963bd5dbd",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "9e194178d1a601f84bce",
@@ -1259,7 +1259,7 @@
 						"translations/es_MX-json": "7a4b5383fb0d77ac8dba",
 						"translations/fr_FR-json": "105bf5b13936493aaa30",
 						"translations/it_IT-json": "d5ea64183755ddb53c7f",
-						"translations/pseudo_ext-json": "5f5d1f0fa6671ed66785",
+						"translations/pseudo_ext-json": "e3f2492c7c49d3a5368b",
 						"translations/pseudo_long-json": "937fa4b3699ec4d17a14",
 						"translations/pseudo_short-json": "f8dcdb7880003c01de5e",
 						"translations/pt_BR-json": "5462282ffb18fd9a2b6b",
@@ -1501,4 +1501,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1517184b451d0adf5bf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.319716967ca0b1d99696.js.map
