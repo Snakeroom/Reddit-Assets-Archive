@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1035542adb2542dee278.js
-// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46abc77bdf679197ec29.js
+// Retrieved at 7/13/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -3622,66 +3622,66 @@
 				Qe = n("./src/chat/components/OverlayReport/index.m.less"),
 				Je = n.n(Qe),
 				Ye = n("./src/chat/actions/user.ts"),
-				Xe = n("./src/redditGQL/operations/ReportChatMessage.json");
-			const $e = (e, t) => Object(We.a)(e, {
-				...Xe,
-				variables: t
-			});
-			var et = n("./src/chat/routes/chat.ts"),
-				tt = n("./src/chat/selectors/messages.ts");
-			var nt;
-			! function(e) {
-				e.Enabled = "enabled"
-			}(nt || (nt = {}));
-			const st = Object(Fe.a)(e => e.experiments.models, e => {
-				var t;
-				return (null === (t = e.ae_reporting_revamp_d2x_chat) || void 0 === t ? void 0 : t.variant) === nt.Enabled
-			});
-			var at = n("./src/chat/selectors/user.ts"),
-				rt = n("./src/chat/components/CrisisFlow/CrisisFlowPage.tsx"),
-				ct = n("./src/chat/components/CrisisFlow/CrisisFooter/index.m.less"),
-				ot = n.n(ct);
+				Xe = n("./src/chat/components/CrisisFlow/CrisisFlowPage.tsx"),
+				$e = n("./src/chat/components/CrisisFlow/CrisisFooter/index.m.less"),
+				et = n.n($e);
 			const {
-				fbt: it
+				fbt: tt
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function lt(e) {
+			function nt(e) {
 				const {
 					thankYouControls: t,
 					onCloseReportFlow: n,
 					onCrisisFlowSubmit: s
 				} = e;
 				return c.a.createElement("div", {
-					className: ot.a.CrisisFooter
+					className: et.a.CrisisFooter
 				}, t ? null : c.a.createElement("a", {
-					className: ot.a.CrisisButton,
+					className: et.a.CrisisButton,
 					"data-redditstyle": !0,
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, it._("Other Options", null, {
+				}, tt._("Other Options", null, {
 					hk: "1RadlV"
 				})), c.a.createElement("button", {
-					className: ot.a.CrisisSubmitButton,
+					className: et.a.CrisisSubmitButton,
 					"data-redditstyle": !0,
 					onClick: t ? n : s
-				}, t ? it._("Ok", null, {
+				}, t ? tt._("Ok", null, {
 					hk: "3Pp8M4"
-				}) : it._("Yes", null, {
+				}) : tt._("Yes", null, {
 					hk: "12gtn"
 				})))
 			}
+			var st = n("./src/redditGQL/operations/ReportChatMessage.json");
+			const at = (e, t) => Object(We.a)(e, {
+				...st,
+				variables: t
+			});
+			var rt = n("./src/chat/routes/chat.ts"),
+				ct = n("./src/chat/selectors/messages.ts");
+			var ot;
+			! function(e) {
+				e.Enabled = "enabled"
+			}(ot || (ot = {}));
+			const it = Object(Fe.a)(e => e.experiments.models, e => {
+				var t;
+				return (null === (t = e.ae_reporting_revamp_d2x_chat) || void 0 === t ? void 0 : t.variant) === ot.Enabled
+			});
+			var lt = n("./src/chat/selectors/user.ts");
 			const dt = l.a.div("ReportLoaderWrapper", Je.a),
 				ut = l.a.img("LoadingIcon", Je.a),
 				ht = "2.0",
 				mt = Object(Fe.c)({
-					user: (e, t) => t.attr === et.a.User ? e.contacts.models[t.attrId] : void 0,
-					message: (e, t) => t.attr === et.a.Invite || t.attr === et.a.Message ? Object(tt.b)(e, Number(t.attrId)) : void 0,
+					user: (e, t) => t.attr === rt.a.User ? e.contacts.models[t.attrId] : void 0,
+					message: (e, t) => t.attr === rt.a.Invite || t.attr === rt.a.Message ? Object(ct.b)(e, Number(t.attrId)) : void 0,
 					messageList: e => Object(R.y)(e),
-					currentUserId: (e, t) => Object(at.a)(e),
+					currentUserId: (e, t) => Object(lt.a)(e),
 					container: e => e && e.container && e.container.size,
 					isNightMode: e => Object($.b)(e),
-					inReportingRevampSelector: e => st(e)
+					inReportingRevampSelector: e => it(e)
 				}),
 				pt = Object(o.b)(mt, (e, {
 					timestamp: t
@@ -3698,7 +3698,8 @@
 							hk: "1BEFhz"
 						})
 					})),
-					onCancel: () => e(Object(Be.a)())
+					onCancel: () => e(Object(Be.a)()),
+					submitReportMessage: (t, n) => e(Object(M.L)(t, n))
 				})),
 				bt = async (e, t, n) => {
 					var s;
@@ -3739,34 +3740,36 @@
 							props: {
 								gqlContext: n,
 								showFailToast: s,
-								message: a
+								message: a,
+								submitReportMessage: r
 							}
 						} = this;
 						if (!a || !a.sender) return;
 						if (!e) throw new Error("Report data not provided");
 						const {
-							ruleId: r,
-							ruleType: c
-						} = e, o = {
+							ruleId: c,
+							ruleType: o
+						} = e, i = {
 							fromHelpDesk: !1,
 							senderRedditorId: a.sender.userId,
 							sendbirdId: String(a.messageId),
 							channelUrl: a.channelSendbirdUrl
 						};
-						"site" === c && (o.siteRule = Ue()(t, r.ref).value || Ue()(t, r.ref));
-						(await (() => $e(n(), {
-							input: o
-						}))()).ok || s()
+						"site" === o && (i.siteRule = Ue()(t, c.ref).value || Ue()(t, c.ref));
+						(await (() => at(n(), {
+							input: i
+						}))()).ok || s(), i.siteRule && r(a.messageId, i.siteRule)
 					}, this.onCrisisFlowSubmit = async () => {
 						const {
 							props: {
 								gqlContext: e,
 								showFailToast: t,
-								message: n
+								message: n,
+								submitReportMessage: s
 							}
 						} = this;
 						if (!n || !n.sender) return;
-						const s = {
+						const a = {
 							fromHelpDesk: !1,
 							senderRedditorId: n.sender.userId,
 							sendbirdId: String(n.messageId),
@@ -3775,9 +3778,9 @@
 						};
 						this.setState({
 							showCrisisFlowThankYouPage: !0
-						}), (await (() => $e(e(), {
-							input: s
-						}))()).ok || t()
+						}), (await (() => at(e(), {
+							input: a
+						}))()).ok || t(), s(n.messageId, qe.b.SELF_HARM)
 					}, this.state = {
 						ctlFlowOpened: !1,
 						hasLoaded: !1,
@@ -3815,10 +3818,10 @@
 							showCrisisFlowThankYouPage: u
 						}
 					} = this, h = null === (e = null == n ? void 0 : n.sender) || void 0 === e ? void 0 : e.nickname, m = null === (t = null == n ? void 0 : n.sender) || void 0 === t ? void 0 : t.userId;
-					return l && h ? c.a.createElement(c.a.Fragment, null, c.a.createElement(rt.a, {
+					return l && h ? c.a.createElement(c.a.Fragment, null, c.a.createElement(Xe.a, {
 						username: h,
 						ctlSubmitted: u
-					}), r && c.a.createElement(lt, {
+					}), r && c.a.createElement(nt, {
 						onCrisisFlowSubmit: this.onCrisisFlowSubmit,
 						onCloseReportFlow: this.handleReportFlowClose,
 						thankYouControls: u
@@ -3875,7 +3878,7 @@
 					container: e => e && e.container && e.container.size,
 					isUserAccountEmpty: e => !e.user.account,
 					isSidebarVisible: e => Object(Ct.b)(e),
-					inReportingRevampSelector: e => st(e)
+					inReportingRevampSelector: e => it(e)
 				}),
 				xt = Object(o.b)(It, e => ({
 					setInternalPromos: () => e(Object(d.b)())
@@ -14249,4 +14252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.1035542adb2542dee278.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46abc77bdf679197ec29.js.map
