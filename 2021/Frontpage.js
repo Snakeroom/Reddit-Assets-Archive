@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.fc355f9caf105efdca69.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f22e5a23a11237d2f316.js
+// Retrieved at 7/13/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -326,6 +326,25 @@
 				t = r(t), e -= a;
 				for (var l = s(d, t); ++n < e;) t(n);
 				return l
+			}
+		},
+		"./node_modules/shallowequal/index.js": function(e, t) {
+			e.exports = function(e, t, n, s) {
+				var r = n ? n.call(s, e, t) : void 0;
+				if (void 0 !== r) return !!r;
+				if (e === t) return !0;
+				if ("object" != typeof e || !e || "object" != typeof t || !t) return !1;
+				var o = Object.keys(e),
+					i = Object.keys(t);
+				if (o.length !== i.length) return !1;
+				for (var a = Object.prototype.hasOwnProperty.bind(t), c = 0; c < o.length; c++) {
+					var d = o[c];
+					if (!a(d)) return !1;
+					var l = e[d],
+						u = t[d];
+					if (!1 === (r = n ? n.call(s, l, u, d) : void 0) || void 0 === r && l !== u) return !1
+				}
+				return !0
 			}
 		},
 		"./src/reddit/actions/frontpage/index.ts": function(e, t, n) {
@@ -4217,7 +4236,10 @@
 			}));
 			class ie extends a.a.Component {
 				constructor(e) {
-					super(e), this.componentDidMount = () => {
+					super(e), this.renderEmptySubreddit = () => a.a.createElement(f.a, {
+						listingName: H.b,
+						sort: this.props.sort
+					}), this.onListingViewed = (e, t) => Object(A.f)(this.props.listingKey, this.props.sort, t, e, this.props.timeSort), this.componentDidMount = () => {
 						const {
 							cardViewExperimentVariant: e,
 							isLoggedIn: t,
@@ -4245,14 +4267,14 @@
 						listingKey: p,
 						rpanInjectionIndex: b,
 						sendEvent: h
-					} = this.props, N = c && !o && s && !r, S = {
+					} = this.props, f = c && !o && s && !r, N = {
 						baseUrl: "",
 						countrySort: this.props.countrySort,
 						sort: this.props.sort,
 						timeSort: this.props.timeSort
-					}, P = {};
+					}, S = {};
 					if (m === w.g.Large && e.forEach((e, t) => {
-							P[e] = Object(g.a)({
+							S[e] = Object(g.a)({
 								numInstance: t,
 								layout: m,
 								listingKey: p,
@@ -4264,16 +4286,16 @@
 							child: e,
 							idx: t
 						} = Object(j.a)({
-							children: P,
+							children: S,
 							desiredIndex: b,
 							layout: m,
 							listingKey: p,
 							listingName: G.R,
 							sendEvent: h
 						});
-						P[t] = e
+						S[t] = e
 					}
-					const T = a.a.createElement(_.default, {
+					const P = a.a.createElement(_.default, {
 						className: z.a.sidebar,
 						listingKey: p,
 						listingName: H.b
@@ -4281,33 +4303,30 @@
 					return a.a.createElement(L.a, {
 						className: Object(l.a)(z.a.Container, this.props.className),
 						fitPageToContent: !0,
-						trendingUnit: N && a.a.createElement(oe, {
+						trendingUnit: f && a.a.createElement(oe, {
 							showCardView: m === w.g.Large
 						}),
-						content: a.a.createElement(i.Fragment, null, N && a.a.createElement(E.a, {
+						content: a.a.createElement(i.Fragment, null, f && a.a.createElement(E.a, {
 							className: z.a.duHeader
 						}, Z._("Popular posts", null, {
 							hk: "36DJb4"
-						})), a.a.createElement(y.a, null), o && a.a.createElement(v.a, null), a.a.createElement(x.a, S), a.a.createElement(k.a, null), a.a.createElement(C.a, {
+						})), a.a.createElement(y.a, null), o && a.a.createElement(v.a, null), a.a.createElement(x.a, N), a.a.createElement(k.a, null), a.a.createElement(C.a, {
 							listingKey: this.props.listingKey,
 							shortTimer: !0,
 							handlePillClick: this.props.refreshFeed
 						}), a.a.createElement(O.a, {
-							injectChildren: P,
+							injectChildren: S,
 							isCommentCountAnimationEnabled: t,
 							isVoteCountAnimationEnabled: u,
 							isCountAnimShadowTestEnabled: n,
-							noPostsComponent: () => a.a.createElement(f.a, {
-								listingName: H.b,
-								sort: this.props.sort
-							}),
+							noPostsComponent: this.renderEmptySubreddit,
 							key: "listing",
 							listingKey: p,
 							listingName: H.b,
-							listingViewed: (e, t) => Object(A.f)(p, this.props.sort, t, e, this.props.timeSort),
+							listingViewed: this.onListingViewed,
 							onLoadMore: this.props.onLoadMorePosts
 						})),
-						sidebar: T
+						sidebar: P
 					})
 				}
 			}
@@ -4647,4 +4666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fc355f9caf105efdca69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f22e5a23a11237d2f316.js.map

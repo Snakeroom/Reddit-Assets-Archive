@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.22ac5dbe488e28ebb4b2.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.7eb47cb8009792dea483.js
+// Retrieved at 7/13/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -59,8 +59,8 @@
 							const {
 								data: t
 							} = r.body;
-							if (O(t)) {
-								if (v(t)) {
+							if (v(t)) {
+								if (O(t)) {
 									e(y({
 										recommendedSubredditIds: [],
 										interactedSubredditIds: [],
@@ -99,10 +99,10 @@
 							type: "Focused vertical experiment GQL API failed or caught by try and catch"
 						}
 					}))
-				}, O = e => {
+				}, v = e => {
 					const t = e.focusVerticalSubredditRecommendations;
 					return !(!t || !t.focusRecommendations)
-				}, v = e => {
+				}, O = e => {
 					const t = e.focusVerticalSubredditRecommendations,
 						s = t && t.focusRecommendations;
 					return !(!s || 0 !== s.length)
@@ -110,7 +110,7 @@
 					const t = e.focusVerticalSubredditRecommendations,
 						s = t && t.focusRecommendations,
 						n = t && t.type;
-					return !!(s && !v(e) && n === d.GEO && s[0] && s[0].recommendedSubreddit && s[0].interactedSubreddit)
+					return !!(s && !O(e) && n === d.GEO && s[0] && s[0].recommendedSubreddit && s[0].interactedSubreddit)
 				}, x = () => async (e, t, s) => {
 					var n, r;
 					const i = t(),
@@ -355,7 +355,7 @@
 						hk: "1vnCSW"
 					}))))
 				},
-				O = () => a.a.createElement("div", {
+				v = () => a.a.createElement("div", {
 					className: h.a.MainContent
 				}, a.a.createElement("img", {
 					className: h.a.SnooImg,
@@ -378,7 +378,7 @@
 				layout: u.g.Classic
 			}), a.a.createElement("div", {
 				className: h.a.MainContentWrapper
-			}, e.subreddit ? a.a.createElement(C, e) : a.a.createElement(O, null))))
+			}, e.subreddit ? a.a.createElement(C, e) : a.a.createElement(v, null))))
 		},
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -425,10 +425,10 @@
 				S = s("./src/reddit/selectors/telemetry.ts"),
 				_ = s("./src/reddit/selectors/tooltip.ts"),
 				C = s("./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less"),
-				O = s.n(C);
+				v = s.n(C);
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -441,17 +441,17 @@
 				E = Object(c.a)(f.a),
 				j = {
 					[b.d.Card]: function(e) {
-						return o.a.createElement(w.a, v({}, e, {
+						return o.a.createElement(w.a, O({}, e, {
 							name: "view_card"
 						}))
 					},
 					[b.d.Classic]: function(e) {
-						return o.a.createElement(w.a, v({}, e, {
+						return o.a.createElement(w.a, O({}, e, {
 							name: "view_classic"
 						}))
 					},
 					[b.d.Compact]: function(e) {
-						return o.a.createElement(w.a, v({}, e, {
+						return o.a.createElement(w.a, O({}, e, {
 							name: "view_compact"
 						}))
 					}
@@ -501,20 +501,20 @@
 							onLayoutClick: n,
 							postLayout: r
 						} = this.props, i = s || b.e[r], a = e === i, c = j[e], l = N[e];
-						return o.a.createElement(y.b, v({}, t, {
-							className: Object(d.a)(O.a.LayoutItem, {
-								[O.a.selected]: a,
-								[O.a.DropdownButton]: null == t ? void 0 : t.showDropdownTriangle
+						return o.a.createElement(y.b, O({}, t, {
+							className: Object(d.a)(v.a.LayoutItem, {
+								[v.a.selected]: a,
+								[v.a.DropdownButton]: null == t ? void 0 : t.showDropdownTriangle
 							}),
 							"data-layout": e,
 							displayText: l(),
-							iconWrapperClassName: O.a.LayoutItemIconWrapper,
+							iconWrapperClassName: v.a.LayoutItemIconWrapper,
 							isSelected: a,
 							noHover: a,
 							onClick: a ? void 0 : () => this.changeLayout(e),
-							textClassName: O.a.LayoutItemTextClassName
+							textClassName: v.a.LayoutItemTextClassName
 						}), o.a.createElement(c, {
-							className: O.a.LayoutIcon,
+							className: v.a.LayoutIcon,
 							onClick: a ? void 0 : n,
 							isFilled: a && (!t || !1 !== t.forceIconFill)
 						}))
@@ -522,13 +522,13 @@
 						const {
 							dropdownIsOpen: t
 						} = this.props;
-						return o.a.createElement(E, v({}, e, {
-							className: O.a.Dropdown,
+						return o.a.createElement(E, O({}, e, {
+							className: v.a.Dropdown,
 							isOpen: t,
 							renderContentsHidden: !0,
-							rowClassName: O.a.DropdownRow,
-							rowIconClassName: O.a.DropdownRowIcon,
-							rowSelectedClassName: O.a.DropdownRowSelected,
+							rowClassName: v.a.DropdownRow,
+							rowIconClassName: v.a.DropdownRowIcon,
+							rowSelectedClassName: v.a.DropdownRowSelected,
 							tooltipId: x
 						}), this.renderItem(b.d.Card), this.renderItem(b.d.Classic), this.renderItem(b.d.Compact))
 					}
@@ -541,10 +541,10 @@
 						postLayout: n
 					} = this.props, r = t || b.e[n];
 					return o.a.createElement("div", {
-						className: Object(d.a)(O.a.Container, e),
+						className: Object(d.a)(v.a.Container, e),
 						id: k
 					}, o.a.createElement("div", {
-						className: O.a.DropdownContainer,
+						className: v.a.DropdownContainer,
 						onClick: s
 					}, this.renderItem(r, {
 						id: x,
@@ -619,8 +619,8 @@
 				S = s("./src/reddit/constants/listingSorts.ts"),
 				_ = s("./src/reddit/contexts/Tooltip.ts"),
 				C = s("./src/reddit/controls/Dropdown/index.tsx"),
-				O = s("./src/reddit/controls/Dropdown/Row.tsx"),
-				v = s("./src/reddit/helpers/path/index.ts"),
+				v = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				O = s("./src/reddit/helpers/path/index.ts"),
 				k = s("./src/reddit/helpers/trackers/navigation.ts"),
 				x = s("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				E = s("./src/reddit/selectors/experiments/bestSortPopular.ts"),
@@ -645,11 +645,11 @@
 				A = Object(w.a)(D.a.wrapped(C.a, "Dropdown", T.a)),
 				B = D.a.wrapped(P.a, "ListingSortIcon", T.a),
 				Y = (D.a.wrapped(x.b, "DropdownTriangle", T.a), D.a.div("Title", T.a)),
-				H = D.a.wrapped(e => r.a.createElement(O.b, R({}, e, {
+				F = D.a.wrapped(e => r.a.createElement(v.b, R({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", T.a),
-				F = ({
+				H = ({
 					disabled: e,
 					...t
 				}) => r.a.createElement("div", R({}, t, {
@@ -683,9 +683,9 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(Y, null, y.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), r.a.createElement(F, {
+				})), r.a.createElement(H, {
 					disabled: e.disabled
-				}, e.children || r.a.createElement(H, {
+				}, e.children || r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: Object(S.a)(e.sort),
 					id: e.dropdownId || U,
@@ -703,7 +703,7 @@
 				})) : (e.sortOptions || ((e, t, s, n, r) => {
 					const o = [b.U.HOT, b.U.NEW, b.U.TOP, b.U.RISING];
 					return (e && (s || n) || t && n) && o.unshift(b.U.BEST), t && r && o.splice(3, 0, b.U.AWARDED), o
-				})(e.isFrontpage, e.isPopularPage, e.user, e.isBestSortPopularEnabled, e.isAwardListingExperimentEnabled)).map(t => r.a.createElement(O.b, {
+				})(e.isFrontpage, e.isPopularPage, e.user, e.isBestSortPopularEnabled, e.isAwardListingExperimentEnabled)).map(t => r.a.createElement(v.b, {
 					className: Object(i.a)(e.rowClassName, e.sort === t ? e.rowSelectedClassName : void 0),
 					displayText: Object(S.a)(t),
 					onClick: () => {
@@ -711,7 +711,7 @@
 					},
 					href: e.isProfilePage ? Object(m.a)(e.baseUrl, {
 						sort: t
-					}) : Object(v.a)(e.baseUrl, `${t}/`),
+					}) : Object(O.a)(e.baseUrl, `${t}/`),
 					isSelected: e.sort === t,
 					key: t
 				}, r.a.createElement(B, {
@@ -932,10 +932,10 @@
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(F, {
+				}, r.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, r.a.createElement(H, {
+				}, r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : z(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -950,7 +950,7 @@
 					const n = b.Yb[s];
 					return r.a.createElement("div", {
 						onClick: () => e.onClickLink((e => e === b.Yb.AllStates ? t : `${t}_${e}`)(n), re(n))
-					}, r.a.createElement(O.b, {
+					}, r.a.createElement(v.b, {
 						className: Object(i.a)(e.rowClassName, e.sort === n ? e.rowSelectedClassName : void 0),
 						displayText: z(n),
 						isSelected: e.sort === n
@@ -1101,10 +1101,10 @@
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(i.a)(ue.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(me) : e.onOpenDropdown(me)
-					}, r.a.createElement(F, {
+					}, r.a.createElement(H, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, r.a.createElement(H, {
+					}, r.a.createElement(F, {
 						className: e.buttonClassName,
 						displayText: (() => t in de ? de[t]() : de[b.y.Everywhere]())(),
 						id: me,
@@ -1120,7 +1120,7 @@
 						return r.a.createElement("div", {
 							key: o,
 							onClick: () => e.onClickLink(`${n}${re(o)}`, o)
-						}, r.a.createElement(O.b, {
+						}, r.a.createElement(v.b, {
 							className: Object(i.a)(e.rowClassName, t === o ? e.rowSelectedClassName : void 0),
 							displayText: de[o](),
 							isSelected: t === o
@@ -1153,13 +1153,13 @@
 				}).apply(this, arguments)
 			}
 			const Ce = Object(w.a)(C.a),
-				Oe = (e, t, s) => {
+				ve = (e, t, s) => {
 					let n = e.url;
 					return e.urlParams.sort || Object(l.G)(e) || (n = ye.a.join(n, t)), Object(m.a)(n, {
 						[q.x]: s
 					})
 				},
-				ve = D.a.div("ListingSortContainer", Se.a),
+				Oe = D.a.div("ListingSortContainer", Se.a),
 				ke = Object(l.t)(),
 				xe = Object(g.c)({
 					dropdownIsOpen: Object(N.b)("TimeSort--SortPicker")
@@ -1168,13 +1168,13 @@
 					onOpenDropdown: () => e(Object(f.h)({
 						tooltipId: "TimeSort--SortPicker"
 					}))
-				}))(Object(d.c)(e => r.a.createElement(ve, {
+				}))(Object(d.c)(e => r.a.createElement(Oe, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(F, {
+				}, r.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, r.a.createElement(H, {
+				}, r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: Object(S.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1183,10 +1183,10 @@
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: "TimeSort--SortPicker"
-				}, t), [b.bc.HOUR, b.bc.DAY, b.bc.WEEK, b.bc.MONTH, b.bc.YEAR, b.bc.ALL].map(t => r.a.createElement(O.b, {
+				}, t), [b.bc.HOUR, b.bc.DAY, b.bc.WEEK, b.bc.MONTH, b.bc.YEAR, b.bc.ALL].map(t => r.a.createElement(v.b, {
 					className: Object(i.a)(e.rowClassName, e.timeSort === t ? e.rowSelectedClassName : void 0),
 					displayText: Object(S.b)(t),
-					href: Oe(e.pageLayer, e.listingSort, t),
+					href: ve(e.pageLayer, e.listingSort, t),
 					isSelected: e.timeSort === t,
 					onClick: () => {
 						e.onChange(t), e.sendEvent(Object(k.c)(t))
@@ -1229,7 +1229,7 @@
 						locale: i
 					}
 				});
-			class He extends r.a.Component {
+			class Fe extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(k.a)(e))
@@ -1240,7 +1240,7 @@
 						} = this.props;
 						return s ? Object(m.a)(t, {
 							sort: e
-						}) : Object(v.a)(t, `${e}/`)
+						}) : Object(O.a)(t, `${e}/`)
 					}, this.renderSortButton = e => {
 						const {
 							sort: t
@@ -1340,7 +1340,7 @@
 					}))))
 				}
 			}
-			var Fe = Be(Object(o.b)(Ye)(Object(d.c)(He))),
+			var He = Be(Object(o.b)(Ye)(Object(d.c)(Fe))),
 				Me = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ve = s.n(Me);
 			const Ke = Object(l.t)({
@@ -1391,7 +1391,7 @@
 						className: Object(i.a)(Ve.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, r.a.createElement(Fe, {
+					}, r.a.createElement(He, {
 						baseUrl: e,
 						disabled: n,
 						geopopularSort: s,
@@ -1470,9 +1470,9 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return Z
-			})), s.d(t, "a", (function() {
 				return X
+			})), s.d(t, "a", (function() {
+				return ee
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/history/esm/history.js"),
@@ -1484,80 +1484,83 @@
 				d = s.n(c),
 				l = s("./node_modules/react/index.js"),
 				u = s.n(l),
-				p = s("./src/lib/addQueryParams/index.ts"),
-				m = s("./src/lib/ads/index.ts"),
-				b = s("./src/lib/classNames/index.ts"),
-				h = s("./src/lib/constants/index.ts"),
-				g = s("./src/lib/fastdom/index.ts"),
-				f = s("./src/lib/lessComponent.tsx"),
-				y = s("./src/lib/opener/index.ts"),
-				w = s("./src/lib/sentry/index.ts"),
-				S = s("./src/reddit/components/PostList/LoadMore.tsx"),
-				_ = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
-				C = s("./src/reddit/components/Scroller/Simple.tsx"),
-				O = s("./src/reddit/constants/adEvents.ts"),
-				v = s("./src/reddit/constants/componentSizes.ts"),
-				k = s("./src/reddit/constants/postLayout.ts"),
-				x = s("./src/reddit/controls/InternalLink/index.tsx"),
-				E = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				j = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				N = s("./src/reddit/helpers/getClickInfo.ts"),
-				I = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				P = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				L = s("./src/reddit/models/Media/index.ts"),
-				T = s("./src/reddit/helpers/brandSafety/index.ts"),
-				D = s("./src/reddit/helpers/trackers/ads.ts"),
-				R = s("./src/lib/LRUCache/index.ts"),
-				U = s("./src/telemetry/index.ts"),
-				A = s("./src/telemetry/models/Timer.ts"),
-				B = s("./src/reddit/components/PostList/index.m.less"),
-				Y = s.n(B);
+				p = s("./node_modules/shallowequal/index.js"),
+				m = s.n(p),
+				b = s("./src/lib/addQueryParams/index.ts"),
+				h = s("./src/lib/ads/index.ts"),
+				g = s("./src/lib/classNames/index.ts"),
+				f = s("./src/lib/constants/index.ts"),
+				y = s("./src/lib/fastdom/index.ts"),
+				w = s("./src/lib/lessComponent.tsx"),
+				S = s("./src/lib/opener/index.ts"),
+				_ = s("./src/lib/sentry/index.ts"),
+				C = s("./src/reddit/components/PostList/LoadMore.tsx"),
+				v = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
+				O = s("./src/reddit/components/Scroller/Simple.tsx"),
+				k = s("./src/reddit/constants/adEvents.ts"),
+				x = s("./src/reddit/constants/componentSizes.ts"),
+				E = s("./src/reddit/constants/postLayout.ts"),
+				j = s("./src/reddit/controls/InternalLink/index.tsx"),
+				N = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				I = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				P = s("./src/reddit/helpers/getClickInfo.ts"),
+				L = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				T = s("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				D = s("./src/reddit/models/Media/index.ts"),
+				R = s("./src/reddit/helpers/brandSafety/index.ts"),
+				U = s("./src/reddit/helpers/trackers/ads.ts"),
+				A = s("./src/lib/LRUCache/index.ts"),
+				B = s("./src/telemetry/index.ts"),
+				Y = s("./src/telemetry/models/Timer.ts"),
+				F = s("./src/reddit/components/PostList/index.m.less"),
+				H = s.n(F);
 			const {
-				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 500, M = new R.a(F), V = new R.a(F), K = new R.a(F), G = {
+				fbt: M
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = 500, K = new A.a(V), G = new A.a(V), W = new A.a(V), q = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5
-			}, W = f.a.div("SeeMore", Y.a), q = f.a.wrapped(P.a, "ArrowRight", Y.a), z = (e, t, s, n, r, o, i, a) => {
-				const c = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
-				let d = M.get(c);
-				return void 0 === d && (d = () => {
-					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a)
-				}, M.set(c, d)), d
-			}, Q = (e, t, s, n, r) => {
+			}, z = w.a.div("SeeMore", H.a), Q = w.a.wrapped(T.a, "ArrowRight", H.a), Z = (e, t, s, n, r, o, i, a, c) => {
+				const d = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
+				let l = K.get(d);
+				return void 0 === l && (l = () => {
+					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a, c)
+				}, K.set(d, l)), l
+			}, J = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
-				let i = V.get(o);
+				let i = G.get(o);
 				return void 0 === i && (i = o => {
 					s.trackOnPostExitedViewport(e, t, o, n, r)
-				}, V.set(o, i)), i
-			}, Z = (e, t) => {
-				const s = `click-${e}`;
-				let n = K.get(s);
-				return void 0 === n && (n = (e, s, n, r, o) => {
-					if (s.isSponsored) {
-						t.fireAdPixelsOfType(s, O.a.Click);
+				}, G.set(o, i)), i
+			}, X = (e, t, s = !1) => {
+				const n = `click-${e}`;
+				let r = W.get(n);
+				return void 0 === r && (r = (e, n, r, o, i) => {
+					if (n.isSponsored) {
+						t.fireAdPixelsOfType(n, k.a.Click);
 						const {
 							source: e
-						} = Object(m.t)(s, r);
+						} = Object(h.t)(n, o);
 						if (e && e.outboundUrl) {
 							let t = e.outboundUrl;
-							n && (t = Object(E.a)(s.id, n, t).url), Object(D.a)(s, o), Object(y.d)(t, y.c.BLANK)
+							r && (t = Object(N.a)(n.id, r, t).url), Object(U.a)(n, i), Object(S.d)(t, S.c.BLANK)
 						}
 					} else t.openPost({
-						postOrComment: s,
-						clickInfo: Object(N.a)(e)
+						postOrComment: n,
+						clickInfo: Object(P.a)(e),
+						isFrontpage: s
 					})
-				}, K.set(s, n)), n
-			}, J = (e, t) => {
+				}, W.set(n, r)), r
+			}, $ = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
 					s.splice(e, 0, t[e])
 				}), s
 			};
-			class X extends u.a.Component {
+			class ee extends u.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new R.a(F), this.surveyTriggerCounted = !1, this.viewportHeight = null, this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new A.a(V), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
@@ -1577,18 +1580,18 @@
 						n.forEach(e => r.push(e.id));
 						const o = r.map(e => t[e]).filter(Boolean),
 							i = o.map(e => s[e.belongsTo.id]).filter(e => void 0 !== e);
-						this.props.adBrandSafetyStatusReceived(Object(T.a)(o, i))
-					}, h.d, {
+						this.props.adBrandSafetyStatusReceived(Object(R.a)(o, i))
+					}, f.d, {
 						leading: !0
-					})
+					}), this.eventFactoryHandler = (e, t, s) => this.props.postClickEventFactory(e, t, s, this.props)
 				}
 				UNSAFE_componentWillMount() {
-					this.timerId && U.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = U.c.start())
+					void 0 !== this.timerId && B.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = B.c.start())
 				}
 				componentDidMount() {
-					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, this.timerId) {
-						const e = U.c.end(this.timerId);
-						setTimeout(() => Object(U.b)(h.l.Redesign, {
+					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, void 0 !== this.timerId) {
+						const e = B.c.end(this.timerId);
+						setTimeout(() => Object(B.b)(f.l.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -1596,14 +1599,14 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					this.timerId && U.c.cancel(this.timerId), e.postIds.length && (this.timerId = U.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					void 0 !== this.timerId && B.c.cancel(this.timerId), e.postIds.length && (this.timerId = B.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
 					var t, s;
-					if (g.a.read(() => this.checkAndSendScreenview()), this.timerId && U.c.has(this.timerId)) {
-						const e = U.c.end(this.timerId);
+					if (y.a.read(() => this.checkAndSendScreenview()), this.timerId && B.c.has(this.timerId)) {
+						const e = B.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(U.b)(h.l.Redesign, {
+						setTimeout(() => Object(B.b)(f.l.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -1614,7 +1617,7 @@
 					n && n !== (null === (s = e.postIds) || void 0 === s ? void 0 : s[0]) && this.props.onFirstPostChanged(n)
 				}
 				componentWillUnmount() {
-					this.timerId && U.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && B.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -1627,7 +1630,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return U.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return B.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -1636,9 +1639,9 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
-					const n = U.c.end(e);
+					const n = B.c.end(e);
 					setTimeout(() => {
-						s(t(n, A.TimerType.InApp))
+						s(t(n, Y.TimerType.InApp))
 					}, 0)
 				}
 				showPlaceholder() {
@@ -1670,7 +1673,10 @@
 						...i
 					} = e, a = Object.keys(n), c = Object.keys(i);
 					if (c.length !== a.length) return !0;
-					if (c.some(e => n[e] !== i[e])) return !0;
+					if (c.some(e => {
+							let t = !1;
+							return t = "function" == typeof n[e] || "object" == typeof n[e] ? !m()(n[e], i[e]) : n[e] !== i[e]
+						})) return !0;
 					if (t === r) return !1;
 					if (s !== o) return !0;
 					if (this.props.postIds && this.props.postIds.length) {
@@ -1705,91 +1711,90 @@
 						isCommentCountAnimationEnabled: p,
 						isVoteCountAnimationEnabled: m,
 						isCountAnimShadowTestEnabled: b,
-						listingBelowVariant: g,
-						listingKey: f,
+						listingBelowVariant: h,
+						listingKey: g,
 						listingName: y,
-						pageLayer: S,
-						pageReferrer: _,
-						postClickEventFactory: C,
-						redditStyle: O,
+						pageLayer: w,
+						pageReferrer: S,
+						redditStyle: C,
 						shouldHideFlair: v,
-						triggerNewPostPill: x,
-						postIds: E
-					} = this.props, N = 0 === t, P = `post-${n}-${e}-${t}-${s?"last-index":""}-${y}-${f}-${_}`;
-					let T;
-					if (void 0 === (T = this.scrollChildCache.get(P))) {
+						triggerNewPostPill: O,
+						postIds: k
+					} = this.props, x = 0 === t, j = `post-${n}-${e}-${t}-${s?"last-index":""}-${y}-${g}-${S}`;
+					let N;
+					if (void 0 === (N = this.scrollChildCache.get(j))) {
 						const {
-							inSubredditOrProfile: D,
-							postsById: R
-						} = this.props, U = R[e], A = U.crosspostRootId && R[U.crosspostRootId] ? R[U.crosspostRootId] : U;
-						U.crosspostRootId && !R[U.crosspostRootId] && w.c.withScope(e => {
-							e.setExtra("errorType", h.r.API), e.setExtra("description", `Post ${U.id} is crosspost of ${U.crosspostRootId}, but ` + `${U.crosspostRootId} details are missing in the state`), w.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: P,
+							postsById: T
+						} = this.props, R = T[e], U = R.crosspostRootId && T[R.crosspostRootId] ? T[R.crosspostRootId] : R;
+						R.crosspostRootId && !T[R.crosspostRootId] && _.c.withScope(e => {
+							e.setExtra("errorType", f.r.API), e.setExtra("description", `Post ${R.id} is crosspost of ${R.crosspostRootId}, but ` + `${R.crosspostRootId} details are missing in the state`), _.c.captureMessage("Crosspost parent details are missing")
 						});
-						const B = this.props.postComponentForLayout({
-							isCrosspost: !!U.crosspostRootId,
-							isFirstPost: N,
+						const A = this.props.postComponentForLayout({
+							isCrosspost: !!R.crosspostRootId,
+							isFirstPost: x,
 							layout: n,
-							post: A
+							post: U
 						});
-						let Y = `post-list-item-[layout: ${n}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && f && (Y += `--${f}`);
-						const H = z(e, n, s, f, y, _, this.props, t),
-							F = Q(e, n, this.props, t, S),
-							M = Z(e, this.props),
-							V = A.media && A.media.type === L.o.EMBED ? A.media.provider : null,
-							K = p && !U.isSponsored && U.numComments < j.a,
-							G = m && !U.isSponsored && !U.isScoreHidden && U.score < j.a;
-						T = {
-							estHeight: Object(I.c)(U, n),
+						let B = `post-list-item-[layout: ${n}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && g && (B += `--${g}`);
+						const Y = Z(e, n, s, g, y, S, this.props, t, this.props.hostPostData),
+							F = J(e, n, this.props, t, w),
+							H = X(e, this.props, c),
+							M = U.media && U.media.type === D.o.EMBED ? U.media.provider : null,
+							V = p && !R.isSponsored && R.numComments < I.a,
+							K = m && !R.isSponsored && !R.isScoreHidden && R.score < I.a;
+						N = {
+							estHeight: Object(L.c)(R, n),
 							id: e,
-							isFocusable: !(!A.media || !(n === k.g.Large || n === k.g.Classic && Object(L.G)(A.media))) && (L.d.has(A.media.type) && (!V || !L.s.has(V)) && !A.isSpoiler && !A.isNSFW),
-							trackOnEnteredViewport: H,
+							isFocusable: !(!U.media || !(n === E.g.Large || n === E.g.Classic && Object(D.G)(U.media))) && (D.d.has(U.media.type) && (!M || !D.s.has(M)) && !U.isSpoiler && !U.isNSFW),
+							trackOnEnteredViewport: Y,
 							trackOnExitedViewport: F,
 							render: ({
 								className: n,
 								height: p,
 								width: m,
-								remeasure: h,
-								setScrollerChildRef: w,
+								remeasure: f,
+								setScrollerChildRef: S,
 								shouldLoadInitially: _
-							}) => u.a.createElement(B, {
+							}) => u.a.createElement(A, {
 								className: n,
 								currentProfileName: r,
-								key: Y,
+								key: B,
 								availableWidth: m,
-								eventFactory: C,
-								first: N,
+								eventFactory: this.eventFactoryHandler,
+								first: x,
 								forceLoadMedia: _,
 								hostPostData: o,
-								inSubredditOrProfile: D,
+								inSubredditOrProfile: P,
 								isCommentPermalink: i,
 								isCommentsPage: a,
 								isFrontpage: c,
 								isProfilePostListing: d,
 								isTopicPage: l,
-								isCommentCountAnimationEnabled: K,
-								isVoteCountAnimationEnabled: G,
+								isCommentCountAnimationEnabled: V,
+								isVoteCountAnimationEnabled: K,
 								isCountAnimShadowTestEnabled: b,
-								listingBelowVariant: g,
-								listingKey: f,
+								listingBelowVariant: h,
+								listingKey: g,
 								listingName: y,
-								pageLayer: S,
+								pageLayer: w,
 								last: s,
-								onClickPost: M,
-								onSizeChanged: h,
+								onClickPost: H,
+								onSizeChanged: f,
 								postId: e,
-								postIds: E,
-								redditStyle: O,
+								postIds: k,
+								redditStyle: C,
 								sendEvent: this.props.sendEvent,
-								scrollerItemRef: w,
+								scrollerItemRef: S,
 								shouldHideFlair: v,
 								onceInViewport: () => {
-									null == x || x(t)
+									null == O || O(t)
 								}
 							})
-						}, this.scrollChildCache.set(P, T)
+						}, this.scrollChildCache.set(j, N)
 					}
-					return T
+					return N
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -1810,12 +1815,12 @@
 					if (s) return;
 					const i = o;
 					return u.a.createElement("div", {
-						className: Y.a.placeholder
+						className: H.a.placeholder
 					}, u.a.createElement(i, {
 						className: t,
 						isLoading: !e,
 						layout: n
-					}), !!e && u.a.createElement(_.a, {
+					}), !!e && u.a.createElement(v.a, {
 						apiError: e,
 						onTryAgain: r
 					}))
@@ -1830,13 +1835,13 @@
 						onLoadMore: o
 					} = this.props;
 					if (!s) return u.a.createElement("div", {
-						className: Y.a.placeholder
-					}, u.a.createElement(S.a, {
+						className: H.a.placeholder
+					}, u.a.createElement(C.a, {
 						className: r,
 						isLoading: !!t,
 						layout: n,
-						countOverride: G[n]
-					}), !!e && u.a.createElement(_.a, {
+						countOverride: q[n]
+					}), !!e && u.a.createElement(v.a, {
 						apiError: e,
 						onTryAgain: o
 					}))
@@ -1852,19 +1857,19 @@
 						location: a,
 						loadMore: c,
 						postIds: d,
-						onLoadMore: m
+						onLoadMore: p
 					} = this.props;
-					let g = d.map((e, t, s) => {
+					let m = d.map((e, t, s) => {
 						const n = t === d.length - 1;
 						return this.scrollChildForPost(e, t, n, i)
 					});
-					r && (g = J(g, r));
-					const f = this.props.measureScrollFPS ? `post-listings-${i}` : void 0,
+					r && (m = $(m, r));
+					const h = this.props.measureScrollFPS ? `post-listings-${i}` : void 0,
 						y = a ? Object(n.e)(a) : null,
 						w = y || o;
-					return u.a.createElement(l.Fragment, null, u.a.createElement(C.b, {
+					return u.a.createElement(l.Fragment, null, u.a.createElement(O.b, {
 						innerRef: this.updateScrollerRef,
-						className: w ? Y.a.truncatedPostList : Object(b.a)(Y.a.postList, this.props.className),
+						className: w ? H.a.truncatedPostList : Object(g.a)(H.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -1874,24 +1879,24 @@
 						layoutKey: this.props.layout,
 						loadMoreToken: c && c.token ? c.token : void 0,
 						onLastVisibleChildRendered: this.setLastVisibleChildRendered,
-						onLoadMore: m,
+						onLoadMore: p,
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
-						trackingName: f,
-						viewportTopPadding: v.f
-					}, g), y && u.a.createElement(W, {
-						className: Y.a.seeMoreButton
-					}, u.a.createElement(x.a, {
-						className: Y.a.seeMorePostsText,
-						to: Object(p.a)(y, {
-							type: h.Vb.Posts
+						trackingName: h,
+						viewportTopPadding: x.f
+					}, m), y && u.a.createElement(z, {
+						className: H.a.seeMoreButton
+					}, u.a.createElement(j.a, {
+						className: H.a.seeMorePostsText,
+						to: Object(b.a)(y, {
+							type: f.Vb.Posts
 						})
-					}, H._("See More Posts", null, {
+					}, M._("See More Posts", null, {
 						hk: "3o0CqI"
-					}), u.a.createElement(q, null))), this.isLoadingMore() && this.renderLoadMore())
+					}), u.a.createElement(Q, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
-			X.defaultProps = {
+			ee.defaultProps = {
 				enableElementHiding: !0,
 				listingKey: "",
 				listingName: "",
@@ -1928,7 +1933,7 @@
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return v
+				return O
 			})), s.d(t, "d", (function() {
 				return x
 			})), s.d(t, "b", (function() {
@@ -1954,9 +1959,9 @@
 				S = s("./src/reddit/selectors/listings.ts"),
 				_ = s("./src/reddit/selectors/posts.ts"),
 				C = s("./src/reddit/selectors/subreddit.ts"),
-				O = s("./src/reddit/selectors/tracking.ts");
+				v = s("./src/reddit/selectors/tracking.ts");
 
-			function v() {
+			function O() {
 				return Object(m.t)({
 					currentProfileName: m.h,
 					isCommentPermalink: m.v,
@@ -1968,7 +1973,7 @@
 					pageLayer: e => e
 				})
 			}
-			const k = v(),
+			const k = O(),
 				x = {
 					apiError: S.c,
 					apiPending: S.d,
@@ -2001,13 +2006,13 @@
 						return Object(_.C)(e, t, s, r)
 					}),
 					subredditsById: C.Z,
-					viewportDataLoaded: O.a,
+					viewportDataLoaded: v.a,
 					pageReferrer: m.R,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: y.d
 				},
 				E = Object(r.c)(x),
-				j = (e, t) => ({
+				j = e => ({
 					onBottomViewed: (t, s) => e(l.c(t, s)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -2015,32 +2020,41 @@
 							isViewSafe: t
 						}))
 					},
-					openPost: s => {
+					openPost: t => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(d.M(s))
+						})), e(d.M(t))
 					},
 					fireAdPixelsOfType: (t, s) => {
 						e(d.z(t, s))
 					},
-					trackOnPostEnteredViewport: (s, n, r) => {
-						e(d.P(s, r, t.hostPostData))
+					trackOnPostEnteredViewport: (t, s, n, r) => {
+						e(d.P(t, n, r))
 					},
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
 						e(d.Q(t, n, r, o))
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.h)())
 				}),
-				N = Object(n.b)(E, j, (e, t, s) => ({
+				N = e => Object(b.b)({
+					...e
+				}),
+				I = (e, t, s, n) => {
+					const {
+						listingKey: r,
+						hostPostData: o,
+						listingBelowVariant: i
+					} = n;
+					return Object(h.h)(e, t, "post", r, o, i, void 0)
+				},
+				P = Object(n.b)(E, j, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(h.h)(e, t, "post", s.listingKey, s.hostPostData, s.listingBelowVariant, void 0),
-					postComponentForLayout: e => Object(b.b)({
-						...e
-					})
+					postComponentForLayout: N,
+					postClickEventFactory: I
 				}));
-			t.a = e => Object(p.c)(k(N(e)))
+			t.a = e => Object(p.c)(k(P(e)))
 		},
 		"./src/reddit/constants/listingSorts.ts": function(e, t, s) {
 			"use strict";
@@ -2468,4 +2482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.22ac5dbe488e28ebb4b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.7eb47cb8009792dea483.js.map
