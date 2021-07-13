@@ -1,92 +1,92 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.07851bf8f6d50a3b2c26.js
-// Retrieved at 7/6/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.24e465695ab85ffc3794.js
+// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "OverlayReport", (function() {
-				return H
+				return K
 			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				a = s("./node_modules/lodash/map.js"),
-				r = s.n(a),
+			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/lodash/map.js"),
+				r = s.n(n),
 				o = s("./node_modules/react/index.js"),
 				c = s.n(o),
 				l = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/react-router-redux/es/index.js"),
 				d = s("./src/lib/lessComponent.tsx"),
-				h = s("./src/chat/endpoints/users/index.ts"),
-				u = s("./src/chat/models/Message/report.ts");
+				u = s("./src/chat/endpoints/users/index.ts"),
+				h = s("./src/chat/models/Message/report.ts");
 			var m = s("./src/chat/actions/tracking.ts"),
 				p = s("./src/chat/components/OverlayNav/index.tsx"),
 				b = s("./src/higherOrderComponents/makeAsync.tsx"),
-				C = s("./src/lib/loadWithRetries/index.ts");
-			const x = () => null;
+				x = s("./src/lib/loadWithRetries/index.ts");
+			const C = () => null;
 			var y = Object(b.a)({
-					ErrorComponent: x,
-					getComponent: () => Object(C.a)(() => s.e("ChatReportFlow").then(s.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
-					LoadingComponent: x
+					ErrorComponent: C,
+					getComponent: () => Object(x.a)(() => s.e("ChatReportFlow").then(s.bind(null, "./src/chat/components/ReportFlow/index.tsx"))).then(e => e.default),
+					LoadingComponent: C
 				}),
-				O = s("./src/chat/components/Scroller/index.tsx"),
-				g = s("./src/chat/constants/messages.ts");
-			const _ = "reportReason";
-			var v;
+				g = s("./src/chat/components/Scroller/index.tsx"),
+				O = s("./src/chat/constants/messages.ts");
+			const k = "reportReason";
+			var _;
 			! function(e) {
 				e.Threats = "threats", e.Violence = "violence", e.Personal = "personal", e.Impersonation = "impersonation", e.MinorSexualization = "minorSexualization"
-			}(v || (v = {}));
-			var k = s("./src/chat/controls/Checkbox/index.tsx"),
+			}(_ || (_ = {}));
+			var v = s("./src/chat/controls/Checkbox/index.tsx"),
 				f = s("./src/chat/controls/Overlay/index.tsx"),
-				w = s("./src/chat/controls/OverlayControlBar/index.tsx"),
+				B = s("./src/chat/controls/OverlayControlBar/index.tsx"),
 				S = s("./src/chat/helpers/chatSelector.ts"),
 				E = s("./src/chat/helpers/dom.ts"),
 				R = s("./src/chat/models/ReportFlow/index.ts"),
-				j = s("./src/chat/routes/chat.ts"),
-				B = s("./src/chat/selectors/channels.ts"),
-				I = s("./src/chat/selectors/user.ts"),
-				L = s("./src/chat/components/OverlayReport/index.m.less"),
-				F = s.n(L),
+				w = s("./src/chat/routes/chat.ts"),
+				j = s("./src/chat/selectors/channels.ts"),
+				L = s("./src/chat/selectors/user.ts"),
+				I = s("./src/chat/components/OverlayReport/index.m.less"),
+				F = s.n(I),
 				T = s("./src/chat/selectors/messages.ts");
-			const D = d.a.wrapped(k.a, "Checkbox", F.a),
-				U = d.a.div("ListItem", F.a),
+			const U = d.a.wrapped(v.a, "Checkbox", F.a),
+				D = d.a.div("ListItem", F.a),
 				N = Object(S.a)({
-					user: (e, t) => t.attr === j.a.User ? e.contacts.models[t.attrId] : void 0,
-					message: (e, t) => t.attr === j.a.Invite || t.attr === j.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
-					messageList: e => Object(B.x)(e),
-					currentUserId: (e, t) => Object(I.a)(e)
+					user: (e, t) => t.attr === w.a.User ? e.contacts.models[t.attrId] : void 0,
+					message: (e, t) => t.attr === w.a.Invite || t.attr === w.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
+					messageList: e => Object(j.y)(e),
+					currentUserId: (e, t) => Object(L.a)(e)
 				}),
-				K = Object(l.b)(N, e => ({
+				H = Object(l.b)(N, e => ({
 					onReportUser: (t, s) => {
-						e(Object(m.H)(s.id)), e((e => async (t, s, {
-							apiContext: n
+						e(Object(m.J)(s.id)), e((e => async (t, s, {
+							apiContext: a
 						}) => {
 							const {
-								user: a,
+								user: n,
 								reason: r
 							} = e, o = {
 								reason: r,
-								userNickname: a.name
+								userNickname: n.name
 							};
-							await Object(h.b)(n(), o)
+							await Object(u.b)(a(), o)
 						})({
 							user: s,
 							reason: t
 						})).then(() => e(Object(i.a)()))
 					},
-					onReportMessage: (t, s, n) => {
-						e(Object(m.J)(s.messageId, t)), e(((e, t, s) => async (n, a, {
+					onReportMessage: (t, s, a) => {
+						e(Object(m.L)(s.messageId, t)), e(((e, t, s) => async (a, n, {
 							apiContext: r
 						}) => {
-							const o = Object(u.a)(e, t),
-								c = Object(u.b)(e, t, s);
-							o && await Object(h.c)(r(), o, c)
-						})(t, s, n))
+							const o = Object(h.a)(e, t),
+								c = Object(h.b)(e, t, s);
+							o && await Object(u.c)(r(), o, c)
+						})(t, s, a))
 					}
 				}));
-			class H extends o.Component {
+			class K extends o.Component {
 				constructor(e) {
 					super(e), this.selectReason = e => this.setState({
 						selectedReason: e
-					}), this.isMessageReportFlow = () => this.props.attr === j.a.Invite || this.props.attr === j.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === R.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === R.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === R.a.BlockUser || this.state.currentFlow === R.a.FileComplaint, this.nextReportFlow = () => {
+					}), this.isMessageReportFlow = () => this.props.attr === w.a.Invite || this.props.attr === w.a.Message, this.isSubmitDisabled = () => !this.state.selectedReason, this.isCTLControls = () => this.state.currentFlow === R.a.CrisisTextLine && !this.state.ctlSubmitted, this.isSingleButton = () => this.state.currentFlow === R.a.CrisisTextLine && !0 === this.state.ctlSubmitted || this.state.currentFlow === R.a.BlockUser || this.state.currentFlow === R.a.FileComplaint, this.nextReportFlow = () => {
 						const {
 							selectedReason: e
 						} = this.state, t = e && e.requestCrisisSupport ? R.a.CrisisTextLine : e && e.fileComplaint ? R.a.FileComplaint : R.a.BlockUser;
@@ -106,35 +106,35 @@
 						})
 					}, this.getReportReasonText = e => {
 						switch (e) {
-							case v.Threats:
-								return n.fbt._("Threatens, harrasses, or bullies", null, {
+							case _.Threats:
+								return a.fbt._("Threatens, harrasses, or bullies", null, {
 									hk: "9lzw2"
 								});
-							case v.Violence:
-								return n.fbt._("It threatens violence or physical harm", null, {
+							case _.Violence:
+								return a.fbt._("It threatens violence or physical harm", null, {
 									hk: "2LziPg"
 								});
-							case v.Personal:
-								return n.fbt._("It's personal and confidential information", null, {
+							case _.Personal:
+								return a.fbt._("It's personal and confidential information", null, {
 									hk: "2w0qDN"
 								});
-							case v.Impersonation:
-								return n.fbt._("Impersonation", null, {
+							case _.Impersonation:
+								return a.fbt._("Impersonation", null, {
 									hk: "2dg9bu"
 								});
-							case v.MinorSexualization:
-								return n.fbt._("It's sexual or suggestive content involving minors", null, {
+							case _.MinorSexualization:
+								return a.fbt._("It's sexual or suggestive content involving minors", null, {
 									hk: "Ofq3r"
 								})
 						}
-					}, this.getUserReportFlow = () => r()(v, e => {
+					}, this.getUserReportFlow = () => r()(_, e => {
 						const t = this.getReportReasonText(e);
-						return c.a.createElement(U, {
+						return c.a.createElement(D, {
 							key: t
-						}, c.a.createElement(D, {
+						}, c.a.createElement(U, {
 							type: "radio",
 							value: t,
-							name: _,
+							name: k,
 							onChange: e => this.selectReason({
 								reasonText: e.target.value
 							})
@@ -153,16 +153,16 @@
 							messageList: t,
 							onReportMessage: s
 						} = this.props, {
-							currentFlow: n,
-							selectedReason: a
+							currentFlow: a,
+							selectedReason: n
 						} = this.state;
-						if (a && a.requestCrisisSupport && e && e.messageType === g.d.USER) return n === R.a.CrisisTextLine ? (s(a.reasonText, e, t), this.setState({
+						if (n && n.requestCrisisSupport && e && e.messageType === O.d.USER) return a === R.a.CrisisTextLine ? (s(n.reasonText, e, t), this.setState({
 							ctlSubmitted: !0
 						})) : this.nextReportFlow();
-						a && a.reasonText && e && e.messageType === g.d.USER && (s(a.reasonText, e, t), this.nextReportFlow())
+						n && n.reasonText && e && e.messageType === O.d.USER && (s(n.reasonText, e, t), this.nextReportFlow())
 					}, this.state = {
 						selectedReason: void 0,
-						currentFlow: this.props.attr === j.a.Invite ? R.a.Invite : R.a.Default,
+						currentFlow: this.props.attr === w.a.Invite ? R.a.Invite : R.a.Default,
 						ctlSubmitted: !1
 					}
 				}
@@ -177,27 +177,27 @@
 						form: !0
 					}, c.a.createElement(p.a, {
 						channelId: e,
-						title: n.fbt._("Reason for report", null, {
+						title: a.fbt._("Reason for report", null, {
 							hk: "EqHEf"
 						})
-					}), c.a.createElement(O.a, null, this.isMessageReportFlow() ? t && this.getMessageReportFlow() : s && this.getUserReportFlow()), c.a.createElement(w.a, {
-						primaryButtonText: this.isCTLControls() ? n.fbt._("Yes", null, {
+					}), c.a.createElement(g.a, null, this.isMessageReportFlow() ? t && this.getMessageReportFlow() : s && this.getUserReportFlow()), c.a.createElement(B.a, {
+						primaryButtonText: this.isCTLControls() ? a.fbt._("Yes", null, {
 							hk: "1nxheD"
-						}) : n.fbt._("Submit", null, {
+						}) : a.fbt._("Submit", null, {
 							hk: "2Iwjdv"
 						}),
 						primaryButtonDisabled: this.isSubmitDisabled(),
 						secondaryButtonOnly: this.isSingleButton(),
 						secondaryButtonCTLOptions: this.isCTLControls(),
-						secondaryButtonText: this.isSingleButton() ? n.fbt._("Close", null, {
+						secondaryButtonText: this.isSingleButton() ? a.fbt._("Close", null, {
 							hk: "4gbyAA"
-						}) : n.fbt._("Cancel", null, {
+						}) : a.fbt._("Cancel", null, {
 							hk: "2TSLl5"
 						})
 					}))
 				}
 			}
-			t.default = K(H)
+			t.default = H(K)
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -219,8 +219,8 @@
 		},
 		"./src/chat/controls/Checkbox/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				a = s.n(n),
+			var a = s("./node_modules/react/index.js"),
+				n = s.n(a),
 				r = s("./src/lib/classNames/index.ts"),
 				o = s("./src/lib/lessComponent.tsx"),
 				c = s("./src/chat/controls/Svg/index.tsx"),
@@ -231,63 +231,63 @@
 				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const h = o.a.wrapped(e => a.a.createElement("circle", {
+			const u = o.a.wrapped(e => n.a.createElement("circle", {
 					className: e.className,
 					cy: "10",
 					cx: "10",
 					r: "10"
 				}), "StyledCircle", i.a),
-				u = o.a.wrapped(e => a.a.createElement("path", {
+				h = o.a.wrapped(e => n.a.createElement("path", {
 					className: e.className,
 					d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z"
 				}), "StyledCheckmark", i.a);
-			var m = e => a.a.createElement(c.a, d({}, e, {
+			var m = e => n.a.createElement(c.a, d({}, e, {
 					viewBox: "0 0 20 20"
-				}), a.a.createElement("g", null, a.a.createElement(h, null), a.a.createElement(u, null))),
+				}), n.a.createElement("g", null, n.a.createElement(u, null), n.a.createElement(h, null))),
 				p = s("./src/chat/icons/svgs/Checkbox/unchecked.m.less"),
 				b = s.n(p);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
-						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
+						for (var a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const x = o.a.wrapped(e => a.a.createElement("circle", {
+			const C = o.a.wrapped(e => n.a.createElement("circle", {
 				className: e.className,
 				cy: "10",
 				cx: "10",
 				r: "9"
 			}), "StyledCircle", b.a);
-			var y = e => a.a.createElement(c.a, C({}, e, {
+			var y = e => n.a.createElement(c.a, x({}, e, {
 					viewBox: "0 0 20 20"
-				}), a.a.createElement("g", null, a.a.createElement(x, null))),
-				O = s("./src/chat/controls/Checkbox/index.m.less"),
-				g = s.n(O);
-			const _ = o.a.input("HiddenInput", g.a),
-				v = o.a.wrapped(m, "Checked", g.a),
-				k = o.a.wrapped(y, "Unchecked", g.a),
-				f = o.a.span("Wrapper", g.a),
-				w = o.a.span("Content", g.a),
-				S = o.a.span("Control", g.a),
-				E = o.a.label("CheckInput", g.a);
-			t.a = e => a.a.createElement(E, {
+				}), n.a.createElement("g", null, n.a.createElement(C, null))),
+				g = s("./src/chat/controls/Checkbox/index.m.less"),
+				O = s.n(g);
+			const k = o.a.input("HiddenInput", O.a),
+				_ = o.a.wrapped(m, "Checked", O.a),
+				v = o.a.wrapped(y, "Unchecked", O.a),
+				f = o.a.span("Wrapper", O.a),
+				B = o.a.span("Content", O.a),
+				S = o.a.span("Control", O.a),
+				E = o.a.label("CheckInput", O.a);
+			t.a = e => n.a.createElement(E, {
 				className: Object(r.a)(e.className, {
-					[g.a.checked]: e.checked
+					[O.a.checked]: e.checked
 				}),
 				style: {
 					height: e.height || void 0,
 					width: e.width || void 0
 				}
-			}, a.a.createElement(f, null, e.children && !e.rightPosition && a.a.createElement(w, null, e.children), a.a.createElement(S, null, a.a.createElement(_, {
+			}, n.a.createElement(f, null, e.children && !e.rightPosition && n.a.createElement(B, null, e.children), n.a.createElement(S, null, n.a.createElement(k, {
 				tabIndex: 0,
 				type: e.type || "checkbox",
 				checked: e.checked,
@@ -296,60 +296,79 @@
 				value: e.value,
 				onChange: e.onChange,
 				id: e.id
-			}), a.a.createElement(v, null), a.a.createElement(k, null)), e.children && e.rightPosition && a.a.createElement(w, null, e.children)))
+			}), n.a.createElement(_, null), n.a.createElement(v, null)), e.children && e.rightPosition && n.a.createElement(B, null, e.children)))
 		},
 		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, s) {
 			e.exports = {
 				Button: "jKsK0jQWRidPglQ7Czk8y",
 				button: "jKsK0jQWRidPglQ7Czk8y",
+				NoBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
+				noBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
 				OverlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
 				overlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
-				primary: "_3fM86Pr7r-ObXeea2Dms_o"
+				NoHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				noHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				ButtonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				buttonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				HeaderText: "_3kD8pfjcLZgRDsMewcOmc4",
+				headerText: "_3kD8pfjcLZgRDsMewcOmc4"
 			}
 		},
 		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, s) {
 			"use strict";
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				a = s("./node_modules/react/index.js"),
-				r = s.n(a),
+			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/react/index.js"),
+				r = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
 				c = s("./node_modules/react-router-redux/es/index.js"),
-				l = s("./src/lib/classNames/index.ts"),
-				i = s("./src/lib/lessComponent.tsx"),
+				l = s("./src/config.ts"),
+				i = s("./src/lib/classNames/index.ts"),
 				d = s("./src/chat/controls/Button/index.tsx"),
-				h = s("./src/chat/helpers/dom.ts"),
-				u = s("./src/chat/controls/OverlayControlBar/index.m.less"),
-				m = s.n(u);
-			const p = i.a.wrapped(d.a, "Button", m.a),
-				b = Object(o.b)(void 0, e => ({
-					onSubmit: () => {},
-					onCancel: Object(h.b)(() => e(Object(c.a)()))
-				})),
-				C = i.a.div("OverlayControlBar", m.a),
-				x = b(e => r.a.createElement(C, {
-					className: Object(l.a)({
-						[m.a.primary]: e.primaryButtonOnly
-					}, e.className)
-				}, !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(p, {
-					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
-					secondary: !0
-				}, n.fbt._("Other Options", null, {
-					hk: "1RadlV"
-				})) : r.a.createElement(p, {
-					onClick: e.secondaryButtonAction || e.onCancel,
-					primary: !!e.secondaryButtonOnly,
-					secondary: !e.secondaryButtonOnly
-				}, e.secondaryButtonText || n.fbt._("Cancel", null, {
-					hk: "2TSLl5"
-				}))), !e.secondaryButtonOnly && r.a.createElement(p, {
-					type: "submit",
-					primary: !0,
-					onClick: e.primaryButtonAction || e.onSubmit,
-					disabled: e.primaryButtonDisabled
-				}, e.primaryButtonText || n.fbt._("Submit", null, {
-					hk: "2Iwjdv"
-				}))));
-			x.displayName = "OverlayControlBar", t.a = x
+				u = s("./src/chat/helpers/dom.ts"),
+				h = s("./src/chat/controls/OverlayControlBar/index.m.less"),
+				m = s.n(h);
+			const p = Object(o.b)(void 0, e => ({
+				onSubmit: () => {},
+				onCancel: Object(u.b)(() => e(Object(c.a)()))
+			}))(e => r.a.createElement("div", {
+				className: Object(i.a)({
+					[m.a.primary]: e.primaryButtonOnly,
+					[m.a.NoHeaderText]: !e.children
+				}, m.a.OverlayControlBar, e.className)
+			}, e.children && r.a.createElement("span", {
+				className: m.a.HeaderText
+			}, e.children), r.a.createElement("div", {
+				className: m.a.ButtonsWrapper
+			}, e.primaryButtonBlock && r.a.createElement(d.a, {
+				onClick: e.primaryButtonBlockAction || e.onCancel,
+				className: Object(i.a)(m.a.Button, m.a.NoBorderPrimaryButton),
+				secondary: !0,
+				noBorder: !0
+			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
+				hk: "4CA4VX"
+			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(d.a, {
+				className: m.a.Button,
+				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
+				secondary: !0
+			}, a.fbt._("Other Options", null, {
+				hk: "1RadlV"
+			})) : r.a.createElement(d.a, {
+				className: m.a.Button,
+				onClick: e.secondaryButtonAction || e.onCancel,
+				primary: !!e.secondaryButtonOnly,
+				secondary: !e.secondaryButtonOnly
+			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
+				hk: "2TSLl5"
+			}))), !e.secondaryButtonOnly && r.a.createElement(d.a, {
+				className: m.a.Button,
+				type: "submit",
+				primary: !0,
+				onClick: e.primaryButtonAction || e.onSubmit,
+				disabled: e.primaryButtonDisabled
+			}, e.primaryButtonText || a.fbt._("Submit", null, {
+				hk: "2Iwjdv"
+			})))));
+			p.displayName = "OverlayControlBar", t.a = p
 		},
 		"./src/chat/icons/svgs/Checkbox/checked.m.less": function(e, t, s) {
 			e.exports = {
@@ -368,18 +387,21 @@
 		"./src/chat/models/ReportFlow/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return n
+				return a
 			}));
-			var n, a;
+			var a, n, r;
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			! function(e) {
 				e[e.Default = 0] = "Default", e[e.BlockUser = 1] = "BlockUser", e[e.FileComplaint = 2] = "FileComplaint", e[e.CrisisTextLine = 3] = "CrisisTextLine", e[e.Invite = 4] = "Invite"
+			}(a || (a = {})),
+			function(e) {
+				e.UnsolicitedMessaging = "Unsolicited messaging"
 			}(n || (n = {})),
 			function(e) {
 				e.R2 = "R2"
-			}(a || (a = {}));
-			new Set(Object.values(a))
+			}(r || (r = {}));
+			new Set(Object.values(r))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.07851bf8f6d50a3b2c26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.24e465695ab85ffc3794.js.map

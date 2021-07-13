@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.fdb0696134ff519e5648.js
-// Retrieved at 6/1/2021, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.f421d926de5e4b0c49ec.js
+// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDirectsEmptyState"], {
-		"./src/chat/components/OverlayDirectsEmptyState/index.m.less": function(e, t, n) {
+		"./src/chat/components/OverlayDirectsEmptyState/index.m.less": function(e, t, a) {
 			e.exports = {
 				OverlayContent: "_1q866gGcJPftLTxyLf0X3g",
 				overlayContent: "_1q866gGcJPftLTxyLf0X3g",
@@ -16,106 +16,125 @@
 				text: "_2qqSe8MO2ASeWjo69rQv-U"
 			}
 		},
-		"./src/chat/components/OverlayDirectsEmptyState/index.tsx": function(e, t, n) {
+		"./src/chat/components/OverlayDirectsEmptyState/index.tsx": function(e, t, a) {
 			"use strict";
-			n.r(t);
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				s = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/react-router-redux/es/index.js"),
-				c = n("./src/config.ts"),
-				i = n("./src/lib/lessComponent.tsx"),
-				d = n("./src/chat/components/OverlayNav/index.tsx"),
-				m = n("./src/chat/controls/Overlay/index.tsx"),
-				u = n("./src/chat/controls/OverlayControlBar/index.tsx"),
-				y = n("./src/chat/helpers/urls/index.ts"),
-				h = n("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
-				x = n.n(h);
-			const b = i.a.div("OverlayContent", x.a),
-				p = i.a.img("Image", x.a),
-				_ = i.a.div("Info", x.a),
-				O = i.a.h4("Header", x.a),
-				f = i.a.p("Text", x.a),
-				v = Object(s.b)(null, e => ({
+			a.r(t);
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./node_modules/react/index.js"),
+				o = a.n(r),
+				s = a("./node_modules/react-redux/es/index.js"),
+				c = a("./node_modules/react-router-redux/es/index.js"),
+				l = a("./src/config.ts"),
+				i = a("./src/lib/lessComponent.tsx"),
+				d = a("./src/chat/components/OverlayNav/index.tsx"),
+				m = a("./src/chat/controls/Overlay/index.tsx"),
+				u = a("./src/chat/controls/OverlayControlBar/index.tsx"),
+				y = a("./src/chat/helpers/urls/index.ts"),
+				h = a("./src/chat/components/OverlayDirectsEmptyState/index.m.less"),
+				p = a.n(h);
+			const x = i.a.div("OverlayContent", p.a),
+				B = i.a.img("Image", p.a),
+				_ = i.a.div("Info", p.a),
+				O = i.a.h4("Header", p.a),
+				b = i.a.p("Text", p.a),
+				f = Object(s.b)(null, e => ({
 					onCreateMessage: () => {
 						const t = Object(y.getRedirectURL)(Object(y.channelUrl)("create"));
-						return e(Object(l.b)(t))
+						return e(Object(c.b)(t))
 					}
 				}));
-			t.default = v(e => o.a.createElement(m.a, {
+			t.default = f(e => o.a.createElement(m.a, {
 				innerContent: !0
 			}, o.a.createElement(d.a, {
-				title: a.fbt._("Start chatting", null, {
+				title: n.fbt._("Start chatting", null, {
 					hk: "3B5dRm"
 				})
-			}), o.a.createElement(b, null, o.a.createElement(p, {
-				src: `${c.a.assetPath}/img/chat/empty-hero.png`
-			}), o.a.createElement(_, null, o.a.createElement(O, null, a.fbt._("Start a direct chat", null, {
+			}), o.a.createElement(x, null, o.a.createElement(B, {
+				src: `${l.a.assetPath}/img/chat/empty-hero.png`
+			}), o.a.createElement(_, null, o.a.createElement(O, null, n.fbt._("Start a direct chat", null, {
 				hk: "4qVzlj"
-			})), o.a.createElement(f, null, a.fbt._("You can start a new direct chat with the button below or from someone's profile", null, {
+			})), o.a.createElement(b, null, n.fbt._("You can start a new direct chat with the button below or from someone's profile", null, {
 				hk: "3wS0vs"
 			})))), o.a.createElement(u.a, {
-				primaryButtonText: a.fbt._("New Chat", null, {
+				primaryButtonText: n.fbt._("New Chat", null, {
 					hk: "33WSw"
 				}),
 				primaryButtonAction: e.onCreateMessage,
 				primaryButtonOnly: !0
 			})))
 		},
-		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, n) {
+		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, a) {
 			e.exports = {
 				Button: "jKsK0jQWRidPglQ7Czk8y",
 				button: "jKsK0jQWRidPglQ7Czk8y",
+				NoBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
+				noBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
 				OverlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
 				overlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
-				primary: "_3fM86Pr7r-ObXeea2Dms_o"
+				NoHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				noHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				ButtonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				buttonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				HeaderText: "_3kD8pfjcLZgRDsMewcOmc4",
+				headerText: "_3kD8pfjcLZgRDsMewcOmc4"
 			}
 		},
-		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, n) {
+		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				s = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/react-router-redux/es/index.js"),
-				c = n("./src/lib/classNames/index.ts"),
-				i = n("./src/lib/lessComponent.tsx"),
-				d = n("./src/chat/controls/Button/index.tsx"),
-				m = n("./src/chat/helpers/dom.ts"),
-				u = n("./src/chat/controls/OverlayControlBar/index.m.less"),
-				y = n.n(u);
-			const h = i.a.wrapped(d.a, "Button", y.a),
-				x = Object(s.b)(void 0, e => ({
-					onSubmit: () => {},
-					onCancel: Object(m.b)(() => e(Object(l.a)()))
-				})),
-				b = i.a.div("OverlayControlBar", y.a),
-				p = x(e => o.a.createElement(b, {
-					className: Object(c.a)({
-						[y.a.primary]: e.primaryButtonOnly
-					}, e.className)
-				}, !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? o.a.createElement(h, {
-					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
-					secondary: !0
-				}, a.fbt._("Other Options", null, {
-					hk: "1RadlV"
-				})) : o.a.createElement(h, {
-					onClick: e.secondaryButtonAction || e.onCancel,
-					primary: !!e.secondaryButtonOnly,
-					secondary: !e.secondaryButtonOnly
-				}, e.secondaryButtonText || a.fbt._("Cancel", null, {
-					hk: "2TSLl5"
-				}))), !e.secondaryButtonOnly && o.a.createElement(h, {
-					type: "submit",
-					primary: !0,
-					onClick: e.primaryButtonAction || e.onSubmit,
-					disabled: e.primaryButtonDisabled
-				}, e.primaryButtonText || a.fbt._("Submit", null, {
-					hk: "2Iwjdv"
-				}))));
-			p.displayName = "OverlayControlBar", t.a = p
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./node_modules/react/index.js"),
+				o = a.n(r),
+				s = a("./node_modules/react-redux/es/index.js"),
+				c = a("./node_modules/react-router-redux/es/index.js"),
+				l = a("./src/config.ts"),
+				i = a("./src/lib/classNames/index.ts"),
+				d = a("./src/chat/controls/Button/index.tsx"),
+				m = a("./src/chat/helpers/dom.ts"),
+				u = a("./src/chat/controls/OverlayControlBar/index.m.less"),
+				y = a.n(u);
+			const h = Object(s.b)(void 0, e => ({
+				onSubmit: () => {},
+				onCancel: Object(m.b)(() => e(Object(c.a)()))
+			}))(e => o.a.createElement("div", {
+				className: Object(i.a)({
+					[y.a.primary]: e.primaryButtonOnly,
+					[y.a.NoHeaderText]: !e.children
+				}, y.a.OverlayControlBar, e.className)
+			}, e.children && o.a.createElement("span", {
+				className: y.a.HeaderText
+			}, e.children), o.a.createElement("div", {
+				className: y.a.ButtonsWrapper
+			}, e.primaryButtonBlock && o.a.createElement(d.a, {
+				onClick: e.primaryButtonBlockAction || e.onCancel,
+				className: Object(i.a)(y.a.Button, y.a.NoBorderPrimaryButton),
+				secondary: !0,
+				noBorder: !0
+			}, e.primaryButtonBlockText || n.fbt._("Block", null, {
+				hk: "4CA4VX"
+			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? o.a.createElement(d.a, {
+				className: y.a.Button,
+				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
+				secondary: !0
+			}, n.fbt._("Other Options", null, {
+				hk: "1RadlV"
+			})) : o.a.createElement(d.a, {
+				className: y.a.Button,
+				onClick: e.secondaryButtonAction || e.onCancel,
+				primary: !!e.secondaryButtonOnly,
+				secondary: !e.secondaryButtonOnly
+			}, e.secondaryButtonText || n.fbt._("Cancel", null, {
+				hk: "2TSLl5"
+			}))), !e.secondaryButtonOnly && o.a.createElement(d.a, {
+				className: y.a.Button,
+				type: "submit",
+				primary: !0,
+				onClick: e.primaryButtonAction || e.onSubmit,
+				disabled: e.primaryButtonDisabled
+			}, e.primaryButtonText || n.fbt._("Submit", null, {
+				hk: "2Iwjdv"
+			})))));
+			h.displayName = "OverlayControlBar", t.a = h
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.fdb0696134ff519e5648.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.f421d926de5e4b0c49ec.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ThemePanel.ea9cb272a528c3e4ccf1.js
-// Retrieved at 7/7/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ThemePanel.d78a22f4a423b28e8102.js
+// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ThemePanel"], {
 		"./src/chat/components/Sidebar/ThemePanel/index.m.less": function(e, t, a) {
@@ -80,7 +80,7 @@
 					t = t => {
 						e(Object(m.changeChatThemeAction)({
 							themeKey: t
-						})), e(Object(u.v)(t))
+						})), e(Object(u.w)(t))
 					};
 				return s.a.createElement("div", {
 					className: C.a.ThemePanel
@@ -107,7 +107,7 @@
 					secondary: !0,
 					className: C.a.CancelButton,
 					onClick: () => {
-						e(Object(o.h)(!1)), e(Object(m.cancelChatTheme)())
+						e(Object(o.f)(!1)), e(Object(m.cancelChatTheme)())
 					}
 				}, n.fbt._("Cancel", null, {
 					hk: "D28iw"
@@ -115,7 +115,7 @@
 					primary: !0,
 					className: C.a.ApplyButton,
 					onClick: () => {
-						e(Object(o.h)(!1)), e(Object(m.applyChatTheme)())
+						e(Object(o.f)(!1)), e(Object(m.applyChatTheme)())
 					}
 				}, n.fbt._("Apply", null, {
 					hk: "2BPQTZ"
@@ -124,4 +124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ThemePanel.ea9cb272a528c3e4ccf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ThemePanel.d78a22f4a423b28e8102.js.map

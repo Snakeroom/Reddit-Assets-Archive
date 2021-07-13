@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChatMembers.5358a75827a642bfc3d2.js
-// Retrieved at 7/6/2021, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChatMembers.eee046e138b31ad069e5.js
+// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChatMembers"], {
 		"./src/chat/components/OverlayChatMembers/index.m.less": function(e, t, r) {
@@ -13,9 +13,9 @@
 		"./src/chat/components/OverlayChatMembers/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t);
-			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
-				a = r("./node_modules/react/index.js"),
-				s = r.n(a),
+			var a = r("./node_modules/fbt/lib/FbtPublic.js"),
+				n = r("./node_modules/react/index.js"),
+				s = r.n(n),
 				o = r("./node_modules/react-redux/es/index.js"),
 				c = r("./src/lib/lessComponent.tsx"),
 				l = r("./src/chat/actions/members.ts"),
@@ -25,31 +25,31 @@
 				u = r("./src/chat/controls/Overlay/index.tsx"),
 				b = r("./src/chat/controls/OverlayControlBar/index.tsx"),
 				h = r("./src/chat/controls/OverlayHeader/index.tsx"),
-				y = r("./src/chat/helpers/chatSelector.ts"),
-				p = r("./src/chat/selectors/channels.ts"),
+				p = r("./src/chat/helpers/chatSelector.ts"),
+				y = r("./src/chat/selectors/channels.ts"),
 				x = r("./src/chat/selectors/members.ts"),
-				O = r("./src/chat/components/OverlayChatMembers/index.m.less"),
-				_ = r.n(O);
-			const C = c.a.wrapped(i.b, "Scroller", _.a),
-				f = c.a.div("LoadingIndicator", _.a),
-				v = Object(y.a)({
-					channelType: e => Object(p.w)(e, "type"),
-					currentChannel: p.j,
-					memberCount: e => Object(p.w)(e, "memberCount"),
+				_ = r("./src/chat/components/OverlayChatMembers/index.m.less"),
+				O = r.n(_);
+			const B = c.a.wrapped(i.b, "Scroller", O.a),
+				C = c.a.div("LoadingIndicator", O.a),
+				f = Object(p.a)({
+					channelType: e => Object(y.x)(e, "type"),
+					currentChannel: y.k,
+					memberCount: e => Object(y.x)(e, "memberCount"),
 					members: e => Object(x.f)(e),
 					fetchingMembers: x.a,
 					hasMoreMembers: x.d
 				}),
-				B = Object(o.b)(v, e => ({
+				v = Object(o.b)(f, e => ({
 					fetchChannelMembers: t => e(Object(l.e)({
 						loadMore: t
 					}))
 				}));
-			t.default = B((function(e) {
+			t.default = v((function(e) {
 				const {
 					channelId: t,
 					currentChannel: r,
-					memberCount: a,
+					memberCount: n,
 					members: o,
 					fetchChannelMembers: c,
 					fetchingMembers: l,
@@ -58,37 +58,37 @@
 				if (r) {
 					const {
 						channelState: e
-					} = r, y = e === d.b.INVITED, p = e === d.b.JOINED, x = () => {
+					} = r, p = e === d.b.INVITED, y = e === d.b.JOINED, x = () => {
 						!l && i && c({
 							loadMore: !0
 						})
-					}, O = () => !!l;
+					}, _ = () => !!l;
 					return l || o.length || c(), s.a.createElement(u.a, {
 						form: !0,
 						innerContent: !0
 					}, s.a.createElement(h.a, {
-						title: n.fbt._({
+						title: a.fbt._({
 							"*": "{number of members} group members",
 							_1: "1 group member"
-						}, [n.fbt._plural(a, "number of members")], {
+						}, [a.fbt._plural(n, "number of members")], {
 							hk: "4phXDa"
 						})
-					}), s.a.createElement(C, {
+					}), s.a.createElement(B, {
 						loadMoreRows: x,
-						isLoadMoreRowsComplete: O,
+						isLoadMoreRowsComplete: _,
 						threshold: 0
 					}, s.a.createElement(m.a, {
 						channelId: t,
 						members: o,
 						modIndicator: !0,
-						useNSFWIcons: y || p
-					}), l && s.a.createElement(f, {
+						useNSFWIcons: p || y
+					}), l && s.a.createElement(C, {
 						role: "progressbar"
-					}, n.fbt._("Loading members...", null, {
+					}, a.fbt._("Loading members...", null, {
 						hk: "2sCDrM"
 					}))), s.a.createElement(b.a, {
 						secondaryButtonOnly: !0,
-						secondaryButtonText: n.fbt._("Done", null, {
+						secondaryButtonText: a.fbt._("Done", null, {
 							hk: "2xerWP"
 						})
 					}))
@@ -100,54 +100,73 @@
 			e.exports = {
 				Button: "jKsK0jQWRidPglQ7Czk8y",
 				button: "jKsK0jQWRidPglQ7Czk8y",
+				NoBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
+				noBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
 				OverlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
 				overlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
-				primary: "_3fM86Pr7r-ObXeea2Dms_o"
+				NoHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				noHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				ButtonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				buttonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				HeaderText: "_3kD8pfjcLZgRDsMewcOmc4",
+				headerText: "_3kD8pfjcLZgRDsMewcOmc4"
 			}
 		},
 		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, r) {
 			"use strict";
-			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
-				a = r("./node_modules/react/index.js"),
-				s = r.n(a),
+			var a = r("./node_modules/fbt/lib/FbtPublic.js"),
+				n = r("./node_modules/react/index.js"),
+				s = r.n(n),
 				o = r("./node_modules/react-redux/es/index.js"),
 				c = r("./node_modules/react-router-redux/es/index.js"),
-				l = r("./src/lib/classNames/index.ts"),
-				m = r("./src/lib/lessComponent.tsx"),
+				l = r("./src/config.ts"),
+				m = r("./src/lib/classNames/index.ts"),
 				i = r("./src/chat/controls/Button/index.tsx"),
 				d = r("./src/chat/helpers/dom.ts"),
 				u = r("./src/chat/controls/OverlayControlBar/index.m.less"),
 				b = r.n(u);
-			const h = m.a.wrapped(i.a, "Button", b.a),
-				y = Object(o.b)(void 0, e => ({
-					onSubmit: () => {},
-					onCancel: Object(d.b)(() => e(Object(c.a)()))
-				})),
-				p = m.a.div("OverlayControlBar", b.a),
-				x = y(e => s.a.createElement(p, {
-					className: Object(l.a)({
-						[b.a.primary]: e.primaryButtonOnly
-					}, e.className)
-				}, !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? s.a.createElement(h, {
-					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
-					secondary: !0
-				}, n.fbt._("Other Options", null, {
-					hk: "1RadlV"
-				})) : s.a.createElement(h, {
-					onClick: e.secondaryButtonAction || e.onCancel,
-					primary: !!e.secondaryButtonOnly,
-					secondary: !e.secondaryButtonOnly
-				}, e.secondaryButtonText || n.fbt._("Cancel", null, {
-					hk: "2TSLl5"
-				}))), !e.secondaryButtonOnly && s.a.createElement(h, {
-					type: "submit",
-					primary: !0,
-					onClick: e.primaryButtonAction || e.onSubmit,
-					disabled: e.primaryButtonDisabled
-				}, e.primaryButtonText || n.fbt._("Submit", null, {
-					hk: "2Iwjdv"
-				}))));
-			x.displayName = "OverlayControlBar", t.a = x
+			const h = Object(o.b)(void 0, e => ({
+				onSubmit: () => {},
+				onCancel: Object(d.b)(() => e(Object(c.a)()))
+			}))(e => s.a.createElement("div", {
+				className: Object(m.a)({
+					[b.a.primary]: e.primaryButtonOnly,
+					[b.a.NoHeaderText]: !e.children
+				}, b.a.OverlayControlBar, e.className)
+			}, e.children && s.a.createElement("span", {
+				className: b.a.HeaderText
+			}, e.children), s.a.createElement("div", {
+				className: b.a.ButtonsWrapper
+			}, e.primaryButtonBlock && s.a.createElement(i.a, {
+				onClick: e.primaryButtonBlockAction || e.onCancel,
+				className: Object(m.a)(b.a.Button, b.a.NoBorderPrimaryButton),
+				secondary: !0,
+				noBorder: !0
+			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
+				hk: "4CA4VX"
+			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? s.a.createElement(i.a, {
+				className: b.a.Button,
+				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
+				secondary: !0
+			}, a.fbt._("Other Options", null, {
+				hk: "1RadlV"
+			})) : s.a.createElement(i.a, {
+				className: b.a.Button,
+				onClick: e.secondaryButtonAction || e.onCancel,
+				primary: !!e.secondaryButtonOnly,
+				secondary: !e.secondaryButtonOnly
+			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
+				hk: "2TSLl5"
+			}))), !e.secondaryButtonOnly && s.a.createElement(i.a, {
+				className: b.a.Button,
+				type: "submit",
+				primary: !0,
+				onClick: e.primaryButtonAction || e.onSubmit,
+				disabled: e.primaryButtonDisabled
+			}, e.primaryButtonText || a.fbt._("Submit", null, {
+				hk: "2Iwjdv"
+			})))));
+			h.displayName = "OverlayControlBar", t.a = h
 		},
 		"./src/chat/controls/OverlayHeader/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -165,8 +184,8 @@
 		},
 		"./src/chat/controls/OverlayHeader/index.tsx": function(e, t, r) {
 			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				a = r.n(n),
+			var a = r("./node_modules/react/index.js"),
+				n = r.n(a),
 				s = r("./src/lib/lessComponent.tsx"),
 				o = r("./src/chat/components/ToastNotification/index.tsx"),
 				c = r("./src/chat/controls/OverlayHeader/index.m.less"),
@@ -180,10 +199,10 @@
 				title: t,
 				warning: r
 			}) => {
-				const n = r ? u : d;
-				return a.a.createElement(m, null, a.a.createElement(i, null, t), a.a.createElement(n, null, e), a.a.createElement(o.a, null))
+				const a = r ? u : d;
+				return n.a.createElement(m, null, n.a.createElement(i, null, t), n.a.createElement(a, null, e), n.a.createElement(o.a, null))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.5358a75827a642bfc3d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.eee046e138b31ad069e5.js.map

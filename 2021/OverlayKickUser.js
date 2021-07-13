@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/OverlayKickUser.72472e244c8cb2e682d9.js
-// Retrieved at 7/6/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayKickUser.a97210cdb7604600f53c.js
+// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayKickUser"], {
-		"./src/chat/components/OverlayKickUser/index.m.less": function(e, t, n) {
+		"./src/chat/components/OverlayKickUser/index.m.less": function(e, t, a) {
 			e.exports = {
 				SubHeader: "jGKnqvkzsltpANG0DJlgO",
 				subHeader: "jGKnqvkzsltpANG0DJlgO",
@@ -18,62 +18,62 @@
 				overlayContent: "_33MAHgxzLWMgmJnRELO8em"
 			}
 		},
-		"./src/chat/components/OverlayKickUser/index.tsx": function(e, t, n) {
+		"./src/chat/components/OverlayKickUser/index.tsx": function(e, t, a) {
 			"use strict";
-			n.r(t);
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				c = n.n(r),
-				s = n("./node_modules/react-redux/es/index.js"),
-				l = n("./src/lib/lessComponent.tsx"),
-				o = n("./src/chat/actions/tracking.ts"),
-				i = n("./src/chat/actions/user.ts"),
-				d = n("./src/chat/components/OverlayNav/index.tsx"),
-				m = n("./src/chat/components/Scroller/index.tsx"),
-				h = n("./src/chat/controls/Checkbox/index.tsx"),
-				u = n("./src/chat/controls/Overlay/index.tsx"),
-				p = n("./src/chat/controls/OverlayControlBar/index.tsx"),
-				y = n("./src/chat/helpers/chatSelector.ts"),
-				b = n("./src/chat/helpers/dom.ts"),
-				C = n("./src/chat/routes/chat.ts"),
-				O = n("./src/chat/components/OverlayKickUser/index.m.less"),
-				k = n.n(O);
-			const _ = "kickUser",
-				x = l.a.p("SubHeader", k.a),
-				E = l.a.span("Title", k.a),
-				v = l.a.span("Header", k.a),
-				f = l.a.wrapped(h.a, "Checkbox", k.a),
-				j = l.a.div("ListItem", k.a),
-				g = l.a.div("OverlayContent", k.a);
-			var B;
+			a.r(t);
+			a("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./node_modules/react/index.js"),
+				c = a.n(r),
+				s = a("./node_modules/react-redux/es/index.js"),
+				o = a("./src/lib/lessComponent.tsx"),
+				l = a("./src/chat/actions/tracking.ts"),
+				i = a("./src/chat/actions/user.ts"),
+				d = a("./src/chat/components/OverlayNav/index.tsx"),
+				u = a("./src/chat/components/Scroller/index.tsx"),
+				m = a("./src/chat/controls/Checkbox/index.tsx"),
+				h = a("./src/chat/controls/Overlay/index.tsx"),
+				p = a("./src/chat/controls/OverlayControlBar/index.tsx"),
+				k = a("./src/chat/helpers/chatSelector.ts"),
+				y = a("./src/chat/helpers/dom.ts"),
+				b = a("./src/chat/routes/chat.ts"),
+				_ = a("./src/chat/components/OverlayKickUser/index.m.less"),
+				O = a.n(_);
+			const C = "kickUser",
+				x = o.a.p("SubHeader", O.a),
+				E = o.a.span("Title", O.a),
+				v = o.a.span("Header", O.a),
+				B = o.a.wrapped(m.a, "Checkbox", O.a),
+				f = o.a.div("ListItem", O.a),
+				g = o.a.div("OverlayContent", O.a);
+			var j;
 			! function(e) {
 				e[e.TenMins = 600] = "TenMins", e[e.OneHour = 3600] = "OneHour", e[e.OneDay = 86400] = "OneDay", e[e.ThreeDays = 259200] = "ThreeDays", e[e.Permanently = -1] = "Permanently"
-			}(B || (B = {}));
-			const S = () => ({
-					[B.TenMins]: a.fbt._("10 minutes", null, {
+			}(j || (j = {}));
+			const H = () => ({
+					[j.TenMins]: n.fbt._("10 minutes", null, {
 						hk: "3y8skZ"
 					}),
-					[B.OneHour]: a.fbt._("1 hour", null, {
+					[j.OneHour]: n.fbt._("1 hour", null, {
 						hk: "mgKhy"
 					}),
-					[B.OneDay]: a.fbt._("1 day", null, {
+					[j.OneDay]: n.fbt._("1 day", null, {
 						hk: "37HQV9"
 					}),
-					[B.ThreeDays]: a.fbt._("3 days", null, {
+					[j.ThreeDays]: n.fbt._("3 days", null, {
 						hk: "2R7GCT"
 					}),
-					[B.Permanently]: a.fbt._("Permanently", null, {
+					[j.Permanently]: n.fbt._("Permanently", null, {
 						hk: "2CHcpm"
 					})
 				}),
-				L = Object(y.a)({
-					message: (e, t) => t.attr === C.a.Message ? e.messages.models[t.attrId] : void 0,
-					user: (e, t) => t.attr === C.a.User ? e.contacts.models[t.attrId] : void 0
+				L = Object(k.a)({
+					message: (e, t) => t.attr === b.a.Message ? e.messages.models[t.attrId] : void 0,
+					user: (e, t) => t.attr === b.a.User ? e.contacts.models[t.attrId] : void 0
 				}),
-				H = Object(s.b)(L, e => ({
-					onKickUser: (t, n, a) => {
-						e(Object(i.p)(t, n, a)), e(Object(o.C)(a))
+				S = Object(s.b)(L, e => ({
+					onKickUser: (t, a, n) => {
+						e(Object(i.p)(t, a, n)), e(Object(l.D)(n))
 					}
 				}));
 			class K extends r.Component {
@@ -81,16 +81,16 @@
 					super(e), this.onSubmit = e => {
 						const {
 							attrId: t,
-							channelId: n,
-							onKickUser: a
+							channelId: a,
+							onKickUser: n
 						} = this.props;
-						e.target[_].forEach(({
+						e.target[C].forEach(({
 							checked: e,
 							value: r
 						}) => {
 							if (e) {
 								const e = Number(r);
-								a(n, t, e)
+								n(a, t, e)
 							}
 						})
 					}, this.renderIntro = this.renderIntro.bind(this)
@@ -99,48 +99,48 @@
 					const {
 						message: e,
 						user: t
-					} = this.props, n = e && e.sender ? e.sender.nickname : t ? "u/" + t.name : "this user";
-					return c.a.createElement(c.a.Fragment, null, c.a.createElement(v, null, a.fbt._("Are you sure you want to kick {username} from this room?", [a.fbt._param("username", n)], {
+					} = this.props, a = e && e.sender ? e.sender.nickname : t ? "u/" + t.name : "this user";
+					return c.a.createElement(c.a.Fragment, null, c.a.createElement(v, null, n.fbt._("Are you sure you want to kick {username} from this room?", [n.fbt._param("username", a)], {
 						hk: "n1L3B"
-					})), c.a.createElement(x, null, a.fbt._("They'll be able to join again once the kick duration is over.", null, {
+					})), c.a.createElement(x, null, n.fbt._("They'll be able to join again once the kick duration is over.", null, {
 						hk: "4zi1U1"
 					})))
 				}
 				render() {
-					const e = S(),
+					const e = H(),
 						{
 							channelId: t
 						} = this.props;
-					return c.a.createElement(u.a, {
-						onSubmit: Object(b.a)(this.onSubmit),
+					return c.a.createElement(h.a, {
+						onSubmit: Object(y.a)(this.onSubmit),
 						form: !0,
 						innerContent: !0
 					}, c.a.createElement(d.a, {
 						channelId: t,
-						title: a.fbt._("Confirm Kick", null, {
+						title: n.fbt._("Confirm Kick", null, {
 							hk: "1upcSi"
 						})
-					}), c.a.createElement(g, null, c.a.createElement(m.b, null, this.renderIntro(), c.a.createElement(E, null, a.fbt._("Kick Duration", null, {
+					}), c.a.createElement(g, null, c.a.createElement(u.b, null, this.renderIntro(), c.a.createElement(E, null, n.fbt._("Kick Duration", null, {
 						hk: "4nENS8"
-					})), Object.keys(e).map(t => c.a.createElement(j, {
+					})), Object.keys(e).map(t => c.a.createElement(f, {
 						key: t
-					}, c.a.createElement(f, {
+					}, c.a.createElement(B, {
 						type: "radio",
-						name: _,
+						name: C,
 						value: t
 					}, e[t]))))), c.a.createElement(p.a, {
-						primaryButtonText: a.fbt._("Kick", null, {
+						primaryButtonText: n.fbt._("Kick", null, {
 							hk: "10O2jX"
 						}),
-						secondaryButtonText: a.fbt._("Cancel", null, {
+						secondaryButtonText: n.fbt._("Cancel", null, {
 							hk: "2TSLl5"
 						})
 					}))
 				}
 			}
-			t.default = H(K)
+			t.default = S(K)
 		},
-		"./src/chat/controls/Checkbox/index.m.less": function(e, t, n) {
+		"./src/chat/controls/Checkbox/index.m.less": function(e, t, a) {
 			e.exports = {
 				CheckInput: "_1_de1ouiEaWxe0lu0R54Zf",
 				checkInput: "_1_de1ouiEaWxe0lu0R54Zf",
@@ -158,77 +158,77 @@
 				wrapper: "_1SMteSSKECXjIaZTOLZ2z-"
 			}
 		},
-		"./src/chat/controls/Checkbox/index.tsx": function(e, t, n) {
+		"./src/chat/controls/Checkbox/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				r = n.n(a),
-				c = n("./src/lib/classNames/index.ts"),
-				s = n("./src/lib/lessComponent.tsx"),
-				l = n("./src/chat/controls/Svg/index.tsx"),
-				o = n("./src/chat/icons/svgs/Checkbox/checked.m.less"),
-				i = n.n(o);
+			var n = a("./node_modules/react/index.js"),
+				r = a.n(n),
+				c = a("./src/lib/classNames/index.ts"),
+				s = a("./src/lib/lessComponent.tsx"),
+				o = a("./src/chat/controls/Svg/index.tsx"),
+				l = a("./src/chat/icons/svgs/Checkbox/checked.m.less"),
+				i = a.n(l);
 
 			function d() {
 				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const m = s.a.wrapped(e => r.a.createElement("circle", {
+			const u = s.a.wrapped(e => r.a.createElement("circle", {
 					className: e.className,
 					cy: "10",
 					cx: "10",
 					r: "10"
 				}), "StyledCircle", i.a),
-				h = s.a.wrapped(e => r.a.createElement("path", {
+				m = s.a.wrapped(e => r.a.createElement("path", {
 					className: e.className,
 					d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z"
 				}), "StyledCheckmark", i.a);
-			var u = e => r.a.createElement(l.a, d({}, e, {
+			var h = e => r.a.createElement(o.a, d({}, e, {
 					viewBox: "0 0 20 20"
-				}), r.a.createElement("g", null, r.a.createElement(m, null), r.a.createElement(h, null))),
-				p = n("./src/chat/icons/svgs/Checkbox/unchecked.m.less"),
-				y = n.n(p);
+				}), r.a.createElement("g", null, r.a.createElement(u, null), r.a.createElement(m, null))),
+				p = a("./src/chat/icons/svgs/Checkbox/unchecked.m.less"),
+				k = a.n(p);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
+						var a = arguments[t];
+						for (var n in a) Object.prototype.hasOwnProperty.call(a, n) && (e[n] = a[n])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const C = s.a.wrapped(e => r.a.createElement("circle", {
+			const b = s.a.wrapped(e => r.a.createElement("circle", {
 				className: e.className,
 				cy: "10",
 				cx: "10",
 				r: "9"
-			}), "StyledCircle", y.a);
-			var O = e => r.a.createElement(l.a, b({}, e, {
+			}), "StyledCircle", k.a);
+			var _ = e => r.a.createElement(o.a, y({}, e, {
 					viewBox: "0 0 20 20"
-				}), r.a.createElement("g", null, r.a.createElement(C, null))),
-				k = n("./src/chat/controls/Checkbox/index.m.less"),
-				_ = n.n(k);
-			const x = s.a.input("HiddenInput", _.a),
-				E = s.a.wrapped(u, "Checked", _.a),
-				v = s.a.wrapped(O, "Unchecked", _.a),
-				f = s.a.span("Wrapper", _.a),
-				j = s.a.span("Content", _.a),
-				g = s.a.span("Control", _.a),
-				B = s.a.label("CheckInput", _.a);
-			t.a = e => r.a.createElement(B, {
+				}), r.a.createElement("g", null, r.a.createElement(b, null))),
+				O = a("./src/chat/controls/Checkbox/index.m.less"),
+				C = a.n(O);
+			const x = s.a.input("HiddenInput", C.a),
+				E = s.a.wrapped(h, "Checked", C.a),
+				v = s.a.wrapped(_, "Unchecked", C.a),
+				B = s.a.span("Wrapper", C.a),
+				f = s.a.span("Content", C.a),
+				g = s.a.span("Control", C.a),
+				j = s.a.label("CheckInput", C.a);
+			t.a = e => r.a.createElement(j, {
 				className: Object(c.a)(e.className, {
-					[_.a.checked]: e.checked
+					[C.a.checked]: e.checked
 				}),
 				style: {
 					height: e.height || void 0,
 					width: e.width || void 0
 				}
-			}, r.a.createElement(f, null, e.children && !e.rightPosition && r.a.createElement(j, null, e.children), r.a.createElement(g, null, r.a.createElement(x, {
+			}, r.a.createElement(B, null, e.children && !e.rightPosition && r.a.createElement(f, null, e.children), r.a.createElement(g, null, r.a.createElement(x, {
 				tabIndex: 0,
 				type: e.type || "checkbox",
 				checked: e.checked,
@@ -237,62 +237,81 @@
 				value: e.value,
 				onChange: e.onChange,
 				id: e.id
-			}), r.a.createElement(E, null), r.a.createElement(v, null)), e.children && e.rightPosition && r.a.createElement(j, null, e.children)))
+			}), r.a.createElement(E, null), r.a.createElement(v, null)), e.children && e.rightPosition && r.a.createElement(f, null, e.children)))
 		},
-		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, n) {
+		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, a) {
 			e.exports = {
 				Button: "jKsK0jQWRidPglQ7Czk8y",
 				button: "jKsK0jQWRidPglQ7Czk8y",
+				NoBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
+				noBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
 				OverlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
 				overlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
-				primary: "_3fM86Pr7r-ObXeea2Dms_o"
+				NoHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				noHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				ButtonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				buttonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				HeaderText: "_3kD8pfjcLZgRDsMewcOmc4",
+				headerText: "_3kD8pfjcLZgRDsMewcOmc4"
 			}
 		},
-		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, n) {
+		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, a) {
 			"use strict";
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				c = n.n(r),
-				s = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/react-router-redux/es/index.js"),
-				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/lib/lessComponent.tsx"),
-				d = n("./src/chat/controls/Button/index.tsx"),
-				m = n("./src/chat/helpers/dom.ts"),
-				h = n("./src/chat/controls/OverlayControlBar/index.m.less"),
-				u = n.n(h);
-			const p = i.a.wrapped(d.a, "Button", u.a),
-				y = Object(s.b)(void 0, e => ({
-					onSubmit: () => {},
-					onCancel: Object(m.b)(() => e(Object(l.a)()))
-				})),
-				b = i.a.div("OverlayControlBar", u.a),
-				C = y(e => c.a.createElement(b, {
-					className: Object(o.a)({
-						[u.a.primary]: e.primaryButtonOnly
-					}, e.className)
-				}, !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? c.a.createElement(p, {
-					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
-					secondary: !0
-				}, a.fbt._("Other Options", null, {
-					hk: "1RadlV"
-				})) : c.a.createElement(p, {
-					onClick: e.secondaryButtonAction || e.onCancel,
-					primary: !!e.secondaryButtonOnly,
-					secondary: !e.secondaryButtonOnly
-				}, e.secondaryButtonText || a.fbt._("Cancel", null, {
-					hk: "2TSLl5"
-				}))), !e.secondaryButtonOnly && c.a.createElement(p, {
-					type: "submit",
-					primary: !0,
-					onClick: e.primaryButtonAction || e.onSubmit,
-					disabled: e.primaryButtonDisabled
-				}, e.primaryButtonText || a.fbt._("Submit", null, {
-					hk: "2Iwjdv"
-				}))));
-			C.displayName = "OverlayControlBar", t.a = C
+			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
+				r = a("./node_modules/react/index.js"),
+				c = a.n(r),
+				s = a("./node_modules/react-redux/es/index.js"),
+				o = a("./node_modules/react-router-redux/es/index.js"),
+				l = a("./src/config.ts"),
+				i = a("./src/lib/classNames/index.ts"),
+				d = a("./src/chat/controls/Button/index.tsx"),
+				u = a("./src/chat/helpers/dom.ts"),
+				m = a("./src/chat/controls/OverlayControlBar/index.m.less"),
+				h = a.n(m);
+			const p = Object(s.b)(void 0, e => ({
+				onSubmit: () => {},
+				onCancel: Object(u.b)(() => e(Object(o.a)()))
+			}))(e => c.a.createElement("div", {
+				className: Object(i.a)({
+					[h.a.primary]: e.primaryButtonOnly,
+					[h.a.NoHeaderText]: !e.children
+				}, h.a.OverlayControlBar, e.className)
+			}, e.children && c.a.createElement("span", {
+				className: h.a.HeaderText
+			}, e.children), c.a.createElement("div", {
+				className: h.a.ButtonsWrapper
+			}, e.primaryButtonBlock && c.a.createElement(d.a, {
+				onClick: e.primaryButtonBlockAction || e.onCancel,
+				className: Object(i.a)(h.a.Button, h.a.NoBorderPrimaryButton),
+				secondary: !0,
+				noBorder: !0
+			}, e.primaryButtonBlockText || n.fbt._("Block", null, {
+				hk: "4CA4VX"
+			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? c.a.createElement(d.a, {
+				className: h.a.Button,
+				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
+				secondary: !0
+			}, n.fbt._("Other Options", null, {
+				hk: "1RadlV"
+			})) : c.a.createElement(d.a, {
+				className: h.a.Button,
+				onClick: e.secondaryButtonAction || e.onCancel,
+				primary: !!e.secondaryButtonOnly,
+				secondary: !e.secondaryButtonOnly
+			}, e.secondaryButtonText || n.fbt._("Cancel", null, {
+				hk: "2TSLl5"
+			}))), !e.secondaryButtonOnly && c.a.createElement(d.a, {
+				className: h.a.Button,
+				type: "submit",
+				primary: !0,
+				onClick: e.primaryButtonAction || e.onSubmit,
+				disabled: e.primaryButtonDisabled
+			}, e.primaryButtonText || n.fbt._("Submit", null, {
+				hk: "2Iwjdv"
+			})))));
+			p.displayName = "OverlayControlBar", t.a = p
 		},
-		"./src/chat/icons/svgs/Checkbox/checked.m.less": function(e, t, n) {
+		"./src/chat/icons/svgs/Checkbox/checked.m.less": function(e, t, a) {
 			e.exports = {
 				StyledCircle: "_2QEVbfgOdAh_E_UteGSdz9",
 				styledCircle: "_2QEVbfgOdAh_E_UteGSdz9",
@@ -300,7 +319,7 @@
 				styledCheckmark: "_2hHL8LCEXapDOjiChO0JWH"
 			}
 		},
-		"./src/chat/icons/svgs/Checkbox/unchecked.m.less": function(e, t, n) {
+		"./src/chat/icons/svgs/Checkbox/unchecked.m.less": function(e, t, a) {
 			e.exports = {
 				StyledCircle: "_2WDOoyLYNQZODKF6ScpgSO",
 				styledCircle: "_2WDOoyLYNQZODKF6ScpgSO"
@@ -308,4 +327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.72472e244c8cb2e682d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.a97210cdb7604600f53c.js.map

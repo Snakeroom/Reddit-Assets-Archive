@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.982253ea416a52c19289.js
-// Retrieved at 7/6/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.a371cb9f7c19809ce703.js
+// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -52,32 +52,32 @@
 				_ = n("./node_modules/lodash/last.js"),
 				y = n.n(_),
 				f = n("./src/lib/lessComponent.tsx"),
-				E = n("./src/chat/constants/keys.ts"),
+				k = n("./src/chat/constants/keys.ts"),
 				g = n("./src/chat/helpers/dom.ts"),
-				k = n("./src/chat/components/SearchBar/index.m.less"),
-				O = n.n(k);
-			const v = f.a.span("Bubble", O.a),
-				U = f.a.span("SearchBarLabel", O.a),
-				S = f.a.span("SearchBarField", O.a),
-				N = f.a.input("SearchBarInput", O.a),
-				B = f.a.wrapped(x.b, "SearchBarWrapper", O.a);
+				E = n("./src/chat/components/SearchBar/index.m.less"),
+				B = n.n(E);
+			const O = f.a.span("Bubble", B.a),
+				v = f.a.span("SearchBarLabel", B.a),
+				U = f.a.span("SearchBarField", B.a),
+				N = f.a.input("SearchBarInput", B.a),
+				S = f.a.wrapped(x.b, "SearchBarWrapper", B.a);
 			class L extends i.a.Component {
 				constructor(e) {
 					super(e), this.bubbleRefs = {}, this.timeoutToken = null, this.onBubbleKey = e => t => {
 						switch (t.key) {
-							case E.f:
-							case E.e: {
+							case k.f:
+							case k.e: {
 								const t = this.searchBarInputRef.current;
 								return t && t.focus(), this.props.onUnselect(e.id)
 							}
-							case E.b: {
+							case k.b: {
 								const e = t.target;
 								if (e.previousElementSibling) {
 									e.previousElementSibling.focus()
 								}
 								break
 							}
-							case E.c: {
+							case k.c: {
 								const e = t.target;
 								if (e.nextElementSibling) {
 									e.nextElementSibling.focus()
@@ -87,7 +87,7 @@
 					}, this.onBubbleKey = this.onBubbleKey.bind(this), this.onFilterChange = this.onFilterChange.bind(this), this.stopEnter = this.stopEnter.bind(this), this.searchKeyHandler = this.searchKeyHandler.bind(this), this.searchBarInputRef = i.a.createRef()
 				}
 				stopEnter(e) {
-					e.key === E.g && e.preventDefault()
+					e.key === k.g && e.preventDefault()
 				}
 				onFilterChange(e) {
 					this.props.onFilterContacts(e.currentTarget.value)
@@ -103,11 +103,11 @@
 					switch (this.timeoutToken && clearTimeout(this.timeoutToken), this.timeoutToken = setTimeout(() => {
 						r() && n(r())
 					}, a), e.key) {
-						case E.g:
+						case k.g:
 							return n(r());
-						case E.b:
-						case E.f:
-						case E.e:
+						case k.b:
+						case k.f:
+						case k.e:
 							if (0 === r().length) {
 								const e = y()(this.props.selectedContacts);
 								if (e && e.name) {
@@ -127,11 +127,11 @@
 							onFilterReset: s
 						}
 					} = this, r = t ? "" : e;
-					return i.a.createElement(B, {
+					return i.a.createElement(S, {
 						autoScrollBottom: !0
-					}, i.a.createElement(U, null, a.fbt._("To:", null, {
+					}, i.a.createElement(v, null, a.fbt._("To:", null, {
 						hk: "2eyFcf"
-					})), i.a.createElement(S, null, n && n.length > 0 && n.map((e, t) => i.a.createElement(v, {
+					})), i.a.createElement(U, null, n && n.length > 0 && n.map((e, t) => i.a.createElement(O, {
 						key: `selected-contact-${t}`,
 						tabIndex: 0,
 						onKeyDown: Object(g.a)(this.onBubbleKey(e)),
@@ -156,12 +156,12 @@
 			};
 			var I = n("./src/chat/controls/Checkbox/index.tsx"),
 				j = n("./src/chat/icons/Userpic/index.tsx"),
-				w = n("./src/chat/components/SelectableUser/index.m.less"),
-				H = n.n(w);
-			const T = f.a.wrapped(I.a, "Checkbox", H.a),
-				R = f.a.wrapped(j.a, "UserPic", H.a),
-				F = f.a.span("Name", H.a);
-			class A extends l.Component {
+				H = n("./src/chat/components/SelectableUser/index.m.less"),
+				w = n.n(H);
+			const T = f.a.wrapped(I.a, "Checkbox", w.a),
+				R = f.a.wrapped(j.a, "UserPic", w.a),
+				F = f.a.span("Name", w.a);
+			class D extends l.Component {
 				constructor() {
 					super(...arguments), this.CONTACT_FORM_NAME = "contactForm"
 				}
@@ -187,14 +187,14 @@
 					}), i.a.createElement(F, null, t))
 				}
 			}
-			var D = n("./src/chat/components/UnselectableUser/index.m.less"),
-				M = n.n(D);
-			const P = f.a.span("Wrapper", M.a),
-				K = f.a.span("Content", M.a),
-				W = f.a.wrapped(j.a, "UserPic", M.a),
-				z = f.a.span("Name", M.a),
-				G = f.a.span("Context", M.a);
-			class Q extends l.Component {
+			var A = n("./src/chat/components/UnselectableUser/index.m.less"),
+				P = n.n(A);
+			const M = f.a.span("Wrapper", P.a),
+				W = f.a.span("Content", P.a),
+				K = f.a.wrapped(j.a, "UserPic", P.a),
+				G = f.a.span("Name", P.a),
+				Q = f.a.span("Context", P.a);
+			class z extends l.Component {
 				render() {
 					const {
 						contact: {
@@ -203,9 +203,9 @@
 						},
 						context: n
 					} = this.props;
-					return i.a.createElement(P, null, i.a.createElement(K, null, i.a.createElement(W, {
+					return i.a.createElement(M, null, i.a.createElement(W, null, i.a.createElement(K, {
 						userId: e
-					}), i.a.createElement(z, null, t)), i.a.createElement(G, null, n))
+					}), i.a.createElement(G, null, t)), i.a.createElement(Q, null, n))
 				}
 			}
 			var Z = n("./src/chat/constants/channels.ts"),
@@ -234,17 +234,17 @@
 				le = e => e.toLocaleLowerCase(),
 				ie = Object($.a)({
 					channelAction: e => Object(ne.c)(e),
-					channel: e => Object(ee.j)(e),
+					channel: e => Object(ee.k)(e),
 					contacts: te.h,
 					currentUserName: ae.b,
 					existingGroupUsers: e => {
-						const t = Object(ee.w)(e, "members");
+						const t = Object(ee.x)(e, "members");
 						return t && t.map(e => e.id)
 					},
-					isCreatingChannel: ee.J,
+					isCreatingChannel: ee.I,
 					loadedContacts: te.i,
 					knownContacts: te.g,
-					memberCount: e => Object(ee.w)(e, "memberCount"),
+					memberCount: e => Object(ee.x)(e, "memberCount"),
 					selectedUsers: te.j,
 					selectedUsersCount: te.k
 				}),
@@ -409,7 +409,7 @@
 						onContactsSelect: p,
 						onSubmit: C,
 						onCancel: b
-					} = this, _ = this.getSelectedContacts(), y = this.getFilteredContacts(), f = this.getLoadedContact(), E = !!s && !f, k = !!f, O = !this.getIsValidUser(s), v = this.handleChannelNameInput, U = this.availableCharacters(l), S = this.isSubmitDisabled(U), N = this.primaryButtonText(), B = this.isCreateChannelURLAction(), j = n >= Z.f;
+					} = this, _ = this.getSelectedContacts(), y = this.getFilteredContacts(), f = this.getLoadedContact(), k = !!s && !f, E = !!f, B = !this.getIsValidUser(s), O = this.handleChannelNameInput, v = this.availableCharacters(l), U = this.isSubmitDisabled(v), N = this.primaryButtonText(), S = this.isCreateChannelURLAction(), j = n >= Z.f;
 					return i.a.createElement(V.a, {
 						className: e,
 						onSubmit: Object(g.a)(C),
@@ -423,16 +423,16 @@
 						warning: j
 					}), i.a.createElement("div", {
 						className: re.a.Content
-					}, B && i.a.createElement(oe, {
+					}, S && i.a.createElement(oe, {
 						isShown: n > 1
 					}, i.a.createElement(q.a, {
 						className: re.a.ChannelNameInput,
-						handleChannelNameInput: v,
+						handleChannelNameInput: O,
 						placeholder: a.fbt._("Group name", null, {
 							hk: "3YSrvu"
 						})
 					}, i.a.createElement(X.a, {
-						count: U
+						count: v
 					}))), i.a.createElement(L, {
 						innerRef: this.searchBarElement,
 						filter: s,
@@ -448,21 +448,21 @@
 					}, o()(y, e => e.name).map(e => i.a.createElement("div", {
 						className: re.a.ListItem,
 						key: e.name
-					}, d(e.id) || e.isBlocked || !1 === e.acceptChats ? i.a.createElement(Q, {
+					}, d(e.id) || e.isBlocked || !1 === e.acceptChats ? i.a.createElement(z, {
 						contact: e,
 						context: this.getBlockedContactText(e)
-					}) : i.a.createElement(A, {
+					}) : i.a.createElement(D, {
 						formName: ce,
 						contact: e,
 						onChange: p,
 						isChecked: h
-					}))), (E || k) && i.a.createElement("div", {
+					}))), (k || E) && i.a.createElement("div", {
 						className: re.a.ListItemHeader
 					}, i.a.createElement("h4", {
 						className: re.a.ChatListHeader
 					}, a.fbt._("Click to add", null, {
 						hk: "4khdH7"
-					}))), E && !k && i.a.createElement("div", {
+					}))), k && !E && i.a.createElement("div", {
 						className: re.a.ListItem
 					}, i.a.createElement(I.a, {
 						className: re.a.Checkbox,
@@ -473,23 +473,23 @@
 						onChange: p
 					}, i.a.createElement("span", {
 						className: re.a.Name
-					}, s, O && i.a.createElement("span", {
+					}, s, B && i.a.createElement("span", {
 						className: re.a.Error
 					}, a.fbt._("User doesn't exist", null, {
 						hk: "2nKv7P"
-					}))))), k && f && i.a.createElement("div", {
+					}))))), E && f && i.a.createElement("div", {
 						className: re.a.ListItem
-					}, !B && (d(f.id) || f.isBlocked) || !1 === f.acceptChats ? i.a.createElement(Q, {
+					}, !S && (d(f.id) || f.isBlocked) || !1 === f.acceptChats ? i.a.createElement(z, {
 						contact: f,
 						context: this.getBlockedContactText(f)
-					}) : i.a.createElement(A, {
+					}) : i.a.createElement(D, {
 						formName: ce,
 						contact: f,
 						onChange: p,
 						isChecked: h
 					})))), i.a.createElement(Y.a, {
 						primaryButtonText: N,
-						primaryButtonDisabled: S,
+						primaryButtonDisabled: U,
 						secondaryButtonAction: b
 					})))
 				}
@@ -608,14 +608,14 @@
 				}), s.a.createElement("g", null, s.a.createElement(x, null))),
 				y = n("./src/chat/controls/Checkbox/index.m.less"),
 				f = n.n(y);
-			const E = c.a.input("HiddenInput", f.a),
+			const k = c.a.input("HiddenInput", f.a),
 				g = c.a.wrapped(u, "Checked", f.a),
-				k = c.a.wrapped(_, "Unchecked", f.a),
-				O = c.a.span("Wrapper", f.a),
-				v = c.a.span("Content", f.a),
-				U = c.a.span("Control", f.a),
-				S = c.a.label("CheckInput", f.a);
-			t.a = e => s.a.createElement(S, {
+				E = c.a.wrapped(_, "Unchecked", f.a),
+				B = c.a.span("Wrapper", f.a),
+				O = c.a.span("Content", f.a),
+				v = c.a.span("Control", f.a),
+				U = c.a.label("CheckInput", f.a);
+			t.a = e => s.a.createElement(U, {
 				className: Object(r.a)(e.className, {
 					[f.a.checked]: e.checked
 				}),
@@ -623,7 +623,7 @@
 					height: e.height || void 0,
 					width: e.width || void 0
 				}
-			}, s.a.createElement(O, null, e.children && !e.rightPosition && s.a.createElement(v, null, e.children), s.a.createElement(U, null, s.a.createElement(E, {
+			}, s.a.createElement(B, null, e.children && !e.rightPosition && s.a.createElement(O, null, e.children), s.a.createElement(v, null, s.a.createElement(k, {
 				tabIndex: 0,
 				type: e.type || "checkbox",
 				checked: e.checked,
@@ -632,15 +632,22 @@
 				value: e.value,
 				onChange: e.onChange,
 				id: e.id
-			}), s.a.createElement(g, null), s.a.createElement(k, null)), e.children && e.rightPosition && s.a.createElement(v, null, e.children)))
+			}), s.a.createElement(g, null), s.a.createElement(E, null)), e.children && e.rightPosition && s.a.createElement(O, null, e.children)))
 		},
 		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, n) {
 			e.exports = {
 				Button: "jKsK0jQWRidPglQ7Czk8y",
 				button: "jKsK0jQWRidPglQ7Czk8y",
+				NoBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
+				noBorderPrimaryButton: "_2_xFtB6XsnUOGk0YPukDeu",
 				OverlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
 				overlayControlBar: "_3GhQcGD7m0hf9mkUK6I1JG",
-				primary: "_3fM86Pr7r-ObXeea2Dms_o"
+				NoHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				noHeaderText: "_1KR6Li0ovE5q7gSH0Rl19G",
+				ButtonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				buttonsWrapper: "_2-kvEgGOQg3X-keFfUpUa",
+				HeaderText: "_3kD8pfjcLZgRDsMewcOmc4",
+				headerText: "_3kD8pfjcLZgRDsMewcOmc4"
 			}
 		},
 		"./src/chat/controls/OverlayControlBar/index.tsx": function(e, t, n) {
@@ -650,42 +657,54 @@
 				r = n.n(s),
 				c = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/react-router-redux/es/index.js"),
-				l = n("./src/lib/classNames/index.ts"),
-				i = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/config.ts"),
+				i = n("./src/lib/classNames/index.ts"),
 				h = n("./src/chat/controls/Button/index.tsx"),
 				d = n("./src/chat/helpers/dom.ts"),
 				m = n("./src/chat/controls/OverlayControlBar/index.m.less"),
 				u = n.n(m);
-			const p = i.a.wrapped(h.a, "Button", u.a),
-				C = Object(c.b)(void 0, e => ({
-					onSubmit: () => {},
-					onCancel: Object(d.b)(() => e(Object(o.a)()))
-				})),
-				b = i.a.div("OverlayControlBar", u.a),
-				x = C(e => r.a.createElement(b, {
-					className: Object(l.a)({
-						[u.a.primary]: e.primaryButtonOnly
-					}, e.className)
-				}, !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(p, {
-					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
-					secondary: !0
-				}, a.fbt._("Other Options", null, {
-					hk: "1RadlV"
-				})) : r.a.createElement(p, {
-					onClick: e.secondaryButtonAction || e.onCancel,
-					primary: !!e.secondaryButtonOnly,
-					secondary: !e.secondaryButtonOnly
-				}, e.secondaryButtonText || a.fbt._("Cancel", null, {
-					hk: "2TSLl5"
-				}))), !e.secondaryButtonOnly && r.a.createElement(p, {
-					type: "submit",
-					primary: !0,
-					onClick: e.primaryButtonAction || e.onSubmit,
-					disabled: e.primaryButtonDisabled
-				}, e.primaryButtonText || a.fbt._("Submit", null, {
-					hk: "2Iwjdv"
-				}))));
-			x.displayName = "OverlayControlBar", t.a = x
+			const p = Object(c.b)(void 0, e => ({
+				onSubmit: () => {},
+				onCancel: Object(d.b)(() => e(Object(o.a)()))
+			}))(e => r.a.createElement("div", {
+				className: Object(i.a)({
+					[u.a.primary]: e.primaryButtonOnly,
+					[u.a.NoHeaderText]: !e.children
+				}, u.a.OverlayControlBar, e.className)
+			}, e.children && r.a.createElement("span", {
+				className: u.a.HeaderText
+			}, e.children), r.a.createElement("div", {
+				className: u.a.ButtonsWrapper
+			}, e.primaryButtonBlock && r.a.createElement(h.a, {
+				onClick: e.primaryButtonBlockAction || e.onCancel,
+				className: Object(i.a)(u.a.Button, u.a.NoBorderPrimaryButton),
+				secondary: !0,
+				noBorder: !0
+			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
+				hk: "4CA4VX"
+			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? r.a.createElement(h.a, {
+				className: u.a.Button,
+				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
+				secondary: !0
+			}, a.fbt._("Other Options", null, {
+				hk: "1RadlV"
+			})) : r.a.createElement(h.a, {
+				className: u.a.Button,
+				onClick: e.secondaryButtonAction || e.onCancel,
+				primary: !!e.secondaryButtonOnly,
+				secondary: !e.secondaryButtonOnly
+			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
+				hk: "2TSLl5"
+			}))), !e.secondaryButtonOnly && r.a.createElement(h.a, {
+				className: u.a.Button,
+				type: "submit",
+				primary: !0,
+				onClick: e.primaryButtonAction || e.onSubmit,
+				disabled: e.primaryButtonDisabled
+			}, e.primaryButtonText || a.fbt._("Submit", null, {
+				hk: "2Iwjdv"
+			})))));
+			p.displayName = "OverlayControlBar", t.a = p
 		},
 		"./src/chat/controls/OverlayHeader/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -738,4 +757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.982253ea416a52c19289.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.a371cb9f7c19809ce703.js.map
