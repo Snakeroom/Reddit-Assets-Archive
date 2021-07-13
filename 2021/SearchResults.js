@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.2606799c7bb7f4a78332.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.9ffe17da5ab48a692ff6.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5143,11 +5143,11 @@
 						searchOptions: n,
 						subredditOrProfile: o
 					} = e, i = Object(M.a)(), a = Object(F.a)(), c = Object(d.useCallback)(() => {
-						i(Object(v.m)(t.type, n, Object(D.b)({
+						i(Object(v.n)(t.type, n, Object(D.b)({
 							pageLayer: r
-						}))), i(Object(v.j)(n, r, t, s))
+						}))), i(Object(v.k)(n, r, t, s))
 					}, [i, n, r, s, t]), m = Object(d.useCallback)(e => {
-						e.preventDefault(), e.stopPropagation(), i(Object(v.j)(n, r, t, s))
+						e.preventDefault(), e.stopPropagation(), i(Object(v.k)(n, r, t, s))
 					}, [i, n, r, t, s]);
 					if (!o) return null;
 					const u = e.subredditOrProfile.displayText,
@@ -5239,14 +5239,14 @@
 			const te = 32,
 				se = 250,
 				re = Object(u.c)({
-					apiError: Q.g,
-					apiPending: Q.h,
-					loadMore: Q.i,
+					apiError: Q.h,
+					apiPending: Q.i,
+					loadMore: Q.j,
 					viewportDataLoaded: Y.a
 				}),
 				ne = [b.Vb.Subreddits, b.Vb.Users],
 				oe = Object(m.b)(re, e => ({
-					onLoadMore: () => e(Object(x.k)(ne))
+					onLoadMore: () => e(Object(x.o)(ne))
 				}));
 			class ie extends l.a.Component {
 				constructor() {
@@ -5382,10 +5382,10 @@
 				pageLayer: e => e,
 				queryParams: k.T
 			}), he = Object(u.c)({
-				apiError: Q.g,
-				apiPending: Q.h,
+				apiError: Q.h,
+				apiPending: Q.i,
 				identifiers: Q.d,
-				loadMore: Q.i
+				loadMore: Q.j
 			}), be = 36, xe = 5, ge = Object(m.b)(he), fe = (e, t) => () => e(e => ({
 				...Object(v.c)(e),
 				source: "search",
@@ -5673,11 +5673,11 @@
 				f = Object(n.b)(g, (e, t) => ({
 					...Object(b.b)(e, t),
 					trackOnPostEnteredViewport: e => {
-						t.sendEvent(Object(m.l)(t.listingKey, e, {
+						t.sendEvent(Object(m.m)(t.listingKey, e, {
 							...t.searchOptions,
 							id: e,
 							eventType: "post"
-						}, Object(p.b)(t))), t.sendEvent(Object(m.n)(t.listingKey, e, {
+						}, Object(p.b)(t))), t.sendEvent(Object(m.o)(t.listingKey, e, {
 							...t.searchOptions,
 							id: e,
 							eventType: "post"
@@ -5688,24 +5688,24 @@
 					...t,
 					...s,
 					openPost: e => t.openPost(e),
-					postClickEventFactory: (e, t, r) => r ? Object(l.h)(e, t) : ("body" === t || "background" === t || "expando_open" === t || "image" === t || "timestamp" === t ? (s.sendEvent(Object(m.i)(s.listingKey, e, {
+					postClickEventFactory: (e, t, r) => r ? Object(l.h)(e, t) : ("body" === t || "background" === t || "expando_open" === t || "image" === t || "timestamp" === t ? (s.sendEvent(Object(m.j)(s.listingKey, e, {
 						...s.searchOptions,
 						id: e,
 						eventType: "post"
-					}, Object(p.b)(s))), s.sendEvent(Object(m.k)(e, {
+					}, Object(p.b)(s))), s.sendEvent(Object(m.l)(e, {
 						...s.searchOptions,
 						id: e,
 						eventType: "post"
-					}, s.pageLayer, s.listingKey, s.searchDiscoveryUnit))) : "subreddit" === t ? (s.sendEvent(Object(m.o)({
+					}, s.pageLayer, s.listingKey, s.searchDiscoveryUnit))) : "subreddit" === t ? (s.sendEvent(Object(m.p)({
 						...s.searchOptions,
 						id: e,
 						eventType: "subreddit"
-					}, Object(p.b)(s))), s.sendEvent(Object(m.j)(s.searchOptions, s.pageLayer, void 0, s.listingKey, e, s.searchDiscoveryUnit))) : "comments" === t && (((e, t, s = "post") => e(e => ({
+					}, Object(p.b)(s))), s.sendEvent(Object(m.k)(s.searchOptions, s.pageLayer, void 0, s.listingKey, e, s.searchDiscoveryUnit))) : "comments" === t && (((e, t, s = "post") => e(e => ({
 						...Object(m.c)(e, t),
 						action: "click",
 						noun: s,
 						source: "search_results"
-					})))(s.sendEvent, s.searchOptions, "comments"), s.sendEvent(Object(m.k)(e, {
+					})))(s.sendEvent, s.searchOptions, "comments"), s.sendEvent(Object(m.l)(e, {
 						...s.searchOptions,
 						id: e,
 						eventType: "post"
@@ -6164,7 +6164,7 @@
 							queryParams: f
 						} = e,
 						v = Object(r.useCallback)(e => {
-							t(Object(Ee.j)(h, u, void 0, a, e))
+							t(Object(Ee.k)(h, u, void 0, a, e))
 						}, [a, u, h, t]),
 						y = Object(d.a)(h[ve.c]),
 						E = h.category,
@@ -6484,7 +6484,7 @@
 							post: t,
 							pageLayer: s
 						} = this.props;
-						t && (this.props.sendEvent(Object(Ee.p)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, Qe.a.Click), t.source ? t.source.outboundUrl ? Object(Ve.d)(t.source.outboundUrl, Ve.c.BLANK) : Object(Ve.d)(t.source.url, Ve.c.BLANK) : Object(Ve.d)(t.permalink, Ve.c.BLANK)) : this.props.openLightbox({
+						t && (this.props.sendEvent(Object(Ee.q)(t.id, "search_result_post", this.props.searchOptions, this.props.searchDiscoveryUnit)), t.isSponsored ? (this.props.fireAdPixelsOfType(t, Qe.a.Click), t.source ? t.source.outboundUrl ? Object(Ve.d)(t.source.outboundUrl, Ve.c.BLANK) : Object(Ve.d)(t.source.url, Ve.c.BLANK) : Object(Ve.d)(t.permalink, Ve.c.BLANK)) : this.props.openLightbox({
 							pathname: Object($e.b)(t.permalink),
 							state: Object(k.a)(s)
 						}))
@@ -6497,7 +6497,7 @@
 							searchOptions: n,
 							searchDiscoveryUnit: o
 						} = this.props;
-						r && this.props.sendEvent(Object(Ee.r)(r.id, n, o, t, s))
+						r && this.props.sendEvent(Object(Ee.s)(r.id, n, o, t, s))
 					}, this.itemPostClickEventFactory = (e, t) => {
 						const {
 							listingKey: s,
@@ -6513,7 +6513,7 @@
 				componentDidMount() {
 					this.ref && De.a(this.ref, (e, t) => {
 						this.scrollerItemRef && (t ? this.scrollerItemRef.focusContent() : this.scrollerItemRef.pauseContent())
-					}), Object(Ee.g)(this.props.listingKey, this.props.searchOptions, this.props.searchDiscoveryUnit)
+					}), Object(Ee.h)(this.props.listingKey, this.props.searchOptions, this.props.searchDiscoveryUnit)
 				}
 				componentWillUnmount() {
 					this.ref && De.b(this.ref), this.scrollerItemRef && this.scrollerItemRef.stopContent(), this.ref = null, this.scrollerItemRef = null
@@ -6654,7 +6654,7 @@
 					searchOptions: o,
 					searchDiscoveryUnit: i
 				} = e, a = Object(Oe.a)(), c = Object(r.useCallback)(e => {
-					a(Object(Ee.j)(o, s, void 0, t, e, i))
+					a(Object(Ee.k)(o, s, void 0, t, e, i))
 				}, [a, o, s, t, i]);
 				return n.a.createElement(P.b.Provider, {
 					value: c
@@ -6803,10 +6803,10 @@
 							s = e.searchDiscoveryUnits.order[t];
 						return s || f
 					},
-					viewTreatment: ms.k
+					viewTreatment: ms.l
 				}),
 				bs = Object(o.b)(hs, e => ({
-					morePostsRequested: () => e(Object(c.k)([a.Vb.Posts]))
+					morePostsRequested: () => e(Object(c.o)([a.Vb.Posts]))
 				})),
 				xs = Object(j.t)();
 			class gs extends n.a.PureComponent {
@@ -6902,7 +6902,7 @@
 					hasPostResults: b.b
 				}),
 				g = Object(o.b)(x, e => ({
-					morePostsRequested: () => e(Object(c.k)([a.Vb.Posts]))
+					morePostsRequested: () => e(Object(c.o)([a.Vb.Posts]))
 				})),
 				f = Object(u.t)()(g(({
 					hasCommunityResults: e,
@@ -7092,13 +7092,13 @@
 			class k extends i.a.Component {
 				constructor(e) {
 					super(e), this.onFollow = () => {
-						this.props.sendEvent(Object(v.f)("trending_header", this.state.isFollowed ? "unfollow" : "follow", this.props.searchOptions)), this.setState({
+						this.props.sendEvent(Object(v.g)("trending_header", this.state.isFollowed ? "unfollow" : "follow", this.props.searchOptions)), this.setState({
 							isFollowed: !this.state.isFollowed
 						})
 					}, this.onShare = () => {
-						this.props.sendEvent(Object(v.f)("trending_header", "share", this.props.searchOptions))
+						this.props.sendEvent(Object(v.g)("trending_header", "share", this.props.searchOptions))
 					}, this.onShareMenuClick = e => {
-						this.props.sendEvent(Object(v.x)(e, this.props.searchOptions))
+						this.props.sendEvent(Object(v.y)(e, this.props.searchOptions))
 					}, this.state = {
 						isFollowed: !1
 					}
@@ -7183,11 +7183,11 @@
 			class U extends i.a.Component {
 				constructor() {
 					super(...arguments), this.sendTopTabClickEvent = () => {
-						this.props.tab === L.g.Top && this.props.sendEvent(Object(v.h)(v.a.TopResults, this.props.searchOptions))
+						this.props.tab === L.g.Top && this.props.sendEvent(Object(v.i)(v.a.TopResults, this.props.searchOptions))
 					}, this.sendPostsTabClickEvent = () => {
-						this.props.tab === L.g.Posts && this.props.sendEvent(Object(v.h)(v.a.Posts, this.props.searchOptions))
+						this.props.tab === L.g.Posts && this.props.sendEvent(Object(v.i)(v.a.Posts, this.props.searchOptions))
 					}, this.sendCommunitiesTabClickEvent = () => {
-						this.props.tab === L.g.Listings && this.props.sendEvent(Object(v.h)(v.a.CommunitiesAndUsers, this.props.searchOptions))
+						this.props.tab === L.g.Listings && this.props.sendEvent(Object(v.i)(v.a.CommunitiesAndUsers, this.props.searchOptions))
 					}
 				}
 				render() {
@@ -7388,7 +7388,7 @@
 				}, !d && i.a.createElement(i.a.Fragment, null, !Object(P.a)(c) && i.a.createElement(y, {
 					active: o === S.g.Posts,
 					onClick: () => {
-						o === S.g.Posts && s(Object(w.h)(w.a.Posts, t))
+						o === S.g.Posts && s(Object(w.i)(w.a.Posts, t))
 					},
 					key: "posts",
 					to: Object(N.a)(e, c, a.Vb.Posts)
@@ -7397,7 +7397,7 @@
 				})), !Object(P.a)(c) && !t.is_multi && i.a.createElement(y, {
 					active: o === S.g.Listings,
 					onClick: () => {
-						o === S.g.Listings && s(Object(w.h)(w.a.CommunitiesAndUsers, t))
+						o === S.g.Listings && s(Object(w.i)(w.a.CommunitiesAndUsers, t))
 					},
 					key: "listings",
 					to: Object(N.a)(e, c, [a.Vb.Subreddits, a.Vb.Users].join(","))
@@ -7438,7 +7438,7 @@
 				},
 				relatedQueries: (e, {
 					searchOptions: t
-				}) => Object(h.j)(e, t.q)
+				}) => Object(h.k)(e, t.q)
 			});
 			t.a = Object(o.b)(f)(e => n.a.createElement(d.a, {
 				className: e.className
@@ -7491,7 +7491,7 @@
 					},
 					relatedQueries: (e, {
 						searchOptions: t
-					}) => Object(h.j)(e, t.q)
+					}) => Object(h.k)(e, t.q)
 				}),
 				v = Object(o.b)(f)(({
 					className: e,
@@ -7716,7 +7716,7 @@
 				oe = l.a.wrapped(ne, "AllRedditResultsButton", Z.a),
 				ie = Object(H.t)({
 					queryParams: H.T,
-					url: H.Y
+					url: H.Z
 				}),
 				ae = Object(c.c)({
 					subreddit: Q.y,
@@ -7848,7 +7848,7 @@
 							sendEvent: t,
 							subreddit: s
 						} = this.props;
-						t(Object(p.v)(!!s, e))
+						t(Object(p.w)(!!s, e))
 					}
 				}
 				render() {
@@ -8439,7 +8439,7 @@
 			const j = 129,
 				k = Object(b.t)({
 					filterName: e => Object(b.T)(e)[h.g],
-					url: e => Object(b.Y)(e)
+					url: e => Object(b.Z)(e)
 				}),
 				S = Object(a.c)({
 					subredditId: (e, t) => Object(C.D)(e, t.subredditName)
@@ -8597,7 +8597,7 @@
 						hk: "tjjwf"
 					})
 				}, s.slice(0, 8).map(e => {
-					a(Object(l.q)("view", n));
+					a(Object(l.r)("view", n));
 					const t = {
 						...n,
 						q: e.q
@@ -8605,7 +8605,7 @@
 					return o.a.createElement(d.a, {
 						className: p.a.relatedQuery,
 						key: e.q,
-						onClick: e => a(Object(l.q)("click", t)),
+						onClick: e => a(Object(l.r)("click", t)),
 						to: Object(i.a)("/search", {
 							q: e.q
 						})
@@ -9586,7 +9586,7 @@
 				L = Object(C.t)({
 					currentPageUrl: C.e,
 					queryParams: C.T,
-					shouldShowCovidBanner: C.X
+					shouldShowCovidBanner: C.Y
 				}),
 				R = () => Object(d.c)({
 					headerContent: S.c,
@@ -9595,7 +9595,7 @@
 					subreddit: (e, t) => Object(I.y)(e, {
 						subredditName: t.match.params.subredditName
 					}),
-					viewTreatment: S.k
+					viewTreatment: S.l
 				}),
 				F = e => ({
 					searchViewedTrigger: () => e(Object(u.f)())
@@ -9753,7 +9753,7 @@
 				T = Object(y.t)({
 					currentPageUrl: y.e,
 					queryParams: y.T,
-					shouldShowCovidBanner: y.X
+					shouldShowCovidBanner: y.Y
 				}),
 				L = ({
 					location: e,
@@ -9976,4 +9976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.2606799c7bb7f4a78332.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.9ffe17da5ab48a692ff6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.47ba3e5ecbf77b66b0f6.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0b4b1731f37f0f2a76aa.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -1532,8 +1532,8 @@
 					}))
 				}))),
 				Q = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				Y = r("./src/higherOrderComponents/makeAsync.tsx");
-			var $ = Object(Y.a)({
+				$ = r("./src/higherOrderComponents/makeAsync.tsx");
+			var Y = Object($.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => r.e("HarbergerTaxBannerPurchaseCTA").then(r.bind(null, "./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.tsx")).then(e => e.default)
@@ -1565,7 +1565,7 @@
 					style: {
 						maxWidth: e.disableFullscreen || e.layout === X.g.Large ? `${e.maxWidth||ee.a}px` : "100%"
 					}
-				}, s.a.createElement("div", null, e.children), s.a.createElement($, null))),
+				}, s.a.createElement("div", null, e.children), s.a.createElement(Y, null))),
 				ie = r("./src/reddit/constants/wiki.ts"),
 				ae = r("./src/reddit/helpers/trackers/subredditWiki.ts");
 			const {
@@ -1737,7 +1737,7 @@
 			const y = 129,
 				k = Object(h.t)({
 					filterName: e => Object(h.T)(e)[b.g],
-					url: e => Object(h.Y)(e)
+					url: e => Object(h.Z)(e)
 				}),
 				I = Object(o.c)({
 					subredditId: (e, t) => Object(j.D)(e, t.subredditName)
@@ -2150,7 +2150,7 @@
 				}),
 				K = Object(i.b)(Z),
 				Q = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
-			class Y extends s.a.Component {
+			class $ extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
 						this.iframe = e
@@ -2187,7 +2187,7 @@
 					}))
 				}
 			}
-			var $ = K(Y),
+			var Y = K($),
 				X = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				ee = r.n(X);
 			var te = m.a.div("ImageFrame", ee.a),
@@ -2363,7 +2363,7 @@
 						case "image":
 							return ae;
 						case "custom":
-							return $;
+							return Y;
 						case "post-flair":
 							return Ie.a;
 						default:
@@ -2889,7 +2889,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, r) {
 			"use strict";
 			var n = r("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = n.Z
+			t.a = n.ab
 		},
 		"./src/reddit/icons/svgs/CircledPlanet/index.tsx": function(e, t, r) {
 			"use strict";
@@ -3164,4 +3164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.47ba3e5ecbf77b66b0f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0b4b1731f37f0f2a76aa.js.map

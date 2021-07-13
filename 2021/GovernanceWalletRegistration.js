@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.cd6b21775b6920bb1334.js
-// Retrieved at 6/22/2021, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.10a51c5eb970fcbcbc49.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -953,7 +953,7 @@
 					className: g.a.buttonIcon
 				}))))
 			}
-			var Z, J = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
+			var J, Z = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
 				Q = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
 				z = n.n(Q);
 
@@ -969,34 +969,34 @@
 				}, t)
 			}! function(e) {
 				e[e.About = 0] = "About", e[e.MetaMask = 1] = "MetaMask", e[e.Wallet = 2] = "Wallet", e[e.Connect = 3] = "Connect", e[e.Verify = 4] = "Verify", e[e.Registered = 5] = "Registered"
-			}(Z || (Z = {}));
+			}(J || (J = {}));
 			const K = [{
-				id: Z.About,
+				id: J.About,
 				name: () => F.fbt._("About", null, {
 					hk: "1jX7pr"
 				})
 			}, {
-				id: Z.MetaMask,
+				id: J.MetaMask,
 				name: () => F.fbt._("MetaMask", null, {
 					hk: "2Y184A"
 				})
 			}, {
-				id: Z.Wallet,
+				id: J.Wallet,
 				name: () => F.fbt._("Wallet", null, {
 					hk: "3qALAf"
 				})
 			}, {
-				id: Z.Connect,
+				id: J.Connect,
 				name: () => F.fbt._("Connect", null, {
 					hk: "3GMXUP"
 				})
 			}, {
-				id: Z.Verify,
+				id: J.Verify,
 				name: () => F.fbt._("Verify", null, {
 					hk: "WHMgJ"
 				})
 			}, {
-				id: Z.Registered,
+				id: J.Registered,
 				name: () => F.fbt._("Registered", null, {
 					hk: "1U7VpD"
 				})
@@ -1043,7 +1043,7 @@
 						const {
 							activeTab: e
 						} = this.state;
-						if (e === Z.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
+						if (e === J.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
 							const t = m.defaults(e);
 							return {
 								source: "meta",
@@ -1054,14 +1054,14 @@
 								subreddit: m.subreddit(e)
 							}
 						});
-						const t = e === Z.About ? Z.MetaMask : e === Z.MetaMask ? Z.Wallet : e === Z.Wallet ? Z.Connect : e === Z.Connect ? Z.Verify : Z.Registered;
+						const t = e === J.About ? J.MetaMask : e === J.MetaMask ? J.Wallet : e === J.Wallet ? J.Connect : e === J.Connect ? J.Verify : J.Registered;
 						this.setState({
 							activeTab: t
 						}), this.sendViewTabEvent(t)
 					}, this.correlationId = p()();
 					const t = Object(j.b)(e.pageLayer);
 					this.state = {
-						activeTab: t && Object(l.e)() ? Z.Wallet : Z.About
+						activeTab: t && Object(l.e)() ? J.Wallet : J.About
 					}
 				}
 				async componentDidMount() {
@@ -1092,10 +1092,10 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === Z.About ? _ : s === Z.MetaMask ? R : s === Z.Wallet ? Y : s === Z.Connect ? k : s === Z.Verify ? $ : T;
+					} = this.state, i = s === J.About ? _ : s === J.MetaMask ? R : s === J.Wallet ? Y : s === J.Connect ? k : s === J.Verify ? $ : T;
 					return a.a.createElement("article", {
 						className: Object(o.a)(z.a.container, e)
-					}, a.a.createElement(J.a, {
+					}, a.a.createElement(Z.a, {
 						subredditId: r
 					}), a.a.createElement("button", {
 						className: z.a.closeButton,
@@ -1873,7 +1873,7 @@
 			};
 
 			function d() {
-				const e = Object(a.Z)(),
+				const e = Object(a.ab)(),
 					t = Object(r.e)(t => Object(a.q)(t, {
 						pageLayer: e
 					})),
@@ -1946,4 +1946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.cd6b21775b6920bb1334.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.10a51c5eb970fcbcbc49.js.map

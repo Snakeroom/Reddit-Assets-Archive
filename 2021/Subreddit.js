@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.2028b5e270eced39e0b7.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7e48317446fafda521f2.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -11896,7 +11896,7 @@
 				w = (e, t, n, s, r, o, i) => {
 					Object(b.a)({
 						...m.defaults(e),
-						...Object(c.e)(e, n, s, r, o, t),
+						...Object(c.f)(e, n, s, r, o, t),
 						action: a.c.VIEW,
 						noun: i ? "ad" : "post"
 					})
@@ -11934,10 +11934,10 @@
 						post: m.post(o, t)
 					}
 				},
-				B = (e, t, n, s) => r => o => Object(c.e)(o, r, e, t, n, s),
-				A = (e, t, n, s) => r => o => Object(c.d)(o, e, t, void 0, n, r, s),
+				B = (e, t, n, s) => r => o => Object(c.f)(o, r, e, t, n, s),
+				A = (e, t, n, s) => r => o => Object(c.e)(o, e, t, void 0, n, r, s),
 				D = (e, t, n, s) => r => o => ({
-					...Object(c.e)(o, r, e, t, n, s),
+					...Object(c.f)(o, r, e, t, n, s),
 					noun: "ad"
 				}),
 				R = (e, t) => n => r => ({
@@ -11991,7 +11991,7 @@
 				H = (e, t, n, s, r, o) => {
 					Object(b.a)({
 						...m.defaults(e),
-						...Object(c.d)(e, t, n, s, r, void 0, o)
+						...Object(c.e)(e, t, n, s, r, void 0, o)
 					})
 				},
 				V = (e, t, n) => {
@@ -14112,7 +14112,7 @@
 						subredditName: t.match.params.subredditName
 					}))
 				},
-				onLoadMoreSearchResults: () => e(Object(S.k)([h.Vb.Posts])),
+				onLoadMoreSearchResults: () => e(Object(S.o)([h.Vb.Posts])),
 				refreshFeed: () => e(w.s({
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
@@ -15227,4 +15227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2028b5e270eced39e0b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7e48317446fafda521f2.js.map

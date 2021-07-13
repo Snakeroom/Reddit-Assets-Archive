@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.294d0c68fda010c54d00.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d40d20655fbfcc2821d8.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(i, a, r) {
@@ -542,9 +542,9 @@
 					})
 				}))
 			}
-			var Z = r("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
-				J = r("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
-				q = r.n(J);
+			var J = r("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
+				Z = r("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
+				q = r.n(Z);
 			const {
 				fbt: X
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), Q = ({
@@ -553,7 +553,7 @@
 				isCoins: r
 			}) => Date.now() > i ? t.a.createElement("div", {
 				className: q.a.statusBar
-			}, r && t.a.createElement(Z.a, {
+			}, r && t.a.createElement(J.a, {
 				className: q.a.clockIcon
 			}), a ? X._("Prediction ended", null, {
 				hk: "3o79Ig"
@@ -561,7 +561,7 @@
 				hk: "1szagh"
 			})) : t.a.createElement("div", {
 				className: q.a.statusBar
-			}, r && t.a.createElement(Z.a, {
+			}, r && t.a.createElement(J.a, {
 				className: q.a.clockIcon
 			}), X._("Prediction ends in {expirationDuration}", [X._param("expirationDuration", Object(l.a)(new Date(i), !0))], {
 				hk: "3ysXEE"
@@ -905,7 +905,7 @@
 				userIsLoggedIn: v
 			}) => {
 				var P;
-				const [T, _] = Object(x.useState)(!1), [O, C] = Object(x.useState)(null), [I, U] = Object(x.useState)(null), [W, Y] = Object(x.useState)(!1), [K, H] = Object(x.useState)(!1), Z = Object(y.a)(), J = Object(x.useCallback)(() => {
+				const [T, _] = Object(x.useState)(!1), [O, C] = Object(x.useState)(null), [I, U] = Object(x.useState)(null), [W, Y] = Object(x.useState)(!1), [K, H] = Object(x.useState)(!1), J = Object(y.a)(), Z = Object(x.useCallback)(() => {
 					Y(!1)
 				}, []), q = Object(x.useCallback)(() => {
 					C(null), U(null)
@@ -950,7 +950,7 @@
 					endsAt: Q,
 					key: `prediction-option-${i.id}`,
 					isShowingVoteAnimation: W && ki === i.id,
-					onAnimationEnd: J
+					onAnimationEnd: Z
 				}, t.a.createElement(L.a, {
 					disabled: W,
 					isEnded: si,
@@ -992,7 +992,7 @@
 					onOverlayClick: q,
 					onCancel: q,
 					onPredict: async i => {
-						if ((null == i ? void 0 : i.currency) === E.a.Coins && i.amount > b) return Object(p.promptUserToBuyMoreCoins)(), void Z(u.a);
+						if ((null == i ? void 0 : i.currency) === E.a.Coins && i.amount > b) return Object(p.promptUserToBuyMoreCoins)(), void J(u.a);
 						const r = i.amount;
 						if (si) return D({
 							duration: 5e3,
@@ -1002,7 +1002,7 @@
 							})
 						}), void C(null);
 						if (!G || !O) throw new Error("Invalid arguments, optionId and pollId must be strings");
-						_(!0), Z(ti ? Object(u.o)({
+						_(!0), J(ti ? Object(u.o)({
 							pollId: G,
 							selectedNumberTokens: r
 						}) : Object(u.n)({
@@ -1190,7 +1190,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(i, a, r) {
 			"use strict";
 			var x = r("./src/reddit/contexts/PageLayer/index.tsx");
-			a.a = x.Z
+			a.a = x.ab
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(i, a, r) {
 			"use strict";
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.294d0c68fda010c54d00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d40d20655fbfcc2821d8.js.map

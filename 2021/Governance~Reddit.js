@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6008b7b5d871f7e7bcef.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.063248e91b2a4cb97a4c.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -6333,7 +6333,7 @@
 					case H.i:
 					case H.g:
 					case "RECOMMENDED_POSTS_LOADED":
-					case Pe.e:
+					case Pe.g:
 					case $.i:
 					case K.SUBREDDIT_LOADED: {
 						const r = {},
@@ -10348,8 +10348,8 @@
 			const xo = {};
 			var Uo = (e = xo, t) => {
 				switch (t.type) {
-					case Pe.d:
-					case Pe.e:
+					case Pe.f:
+					case Pe.g:
 					case q.SEARCH_PENDING:
 					case q.SEARCH_RESULTS_RECEIVED: {
 						const {
@@ -10361,7 +10361,7 @@
 							[r]: null
 						}
 					}
-					case Pe.c:
+					case Pe.e:
 					case q.SEARCH_FAILED: {
 						const {
 							key: r,
@@ -10400,7 +10400,7 @@
 			const Mo = {};
 			var Go = (e = Mo, t) => {
 					switch (t.type) {
-						case Pe.d:
+						case Pe.f:
 						case q.SEARCH_PENDING: {
 							const {
 								key: r,
@@ -10411,8 +10411,8 @@
 								[r]: !0
 							}
 						}
+						case Pe.g:
 						case Pe.e:
-						case Pe.c:
 						case q.SEARCH_RESULTS_RECEIVED:
 						case q.SEARCH_FAILED: {
 							const {
@@ -10454,7 +10454,7 @@
 			const Bo = {};
 			var Vo = (e = Bo, t) => {
 				switch (t.type) {
-					case Pe.e: {
+					case Pe.g: {
 						const {
 							fetchedToken: r,
 							key: s,
@@ -10490,7 +10490,7 @@
 			const Ho = {};
 			var qo = (e = Ho, t) => {
 				switch (t.type) {
-					case Pe.e: {
+					case Pe.g: {
 						const {
 							key: r,
 							listingOrder: s,
@@ -10519,7 +10519,7 @@
 			const Ko = {};
 			var Wo = (e = Ko, t) => {
 					switch (t.type) {
-						case Pe.e:
+						case Pe.g:
 						case q.SEARCH_RESULTS_RECEIVED: {
 							const {
 								key: r,
@@ -10604,8 +10604,8 @@
 						}
 						case q.SEARCH_PENDING:
 						case q.SEARCH_RESULTS_RECEIVED:
-						case Pe.d:
-						case Pe.e: {
+						case Pe.f:
+						case Pe.g: {
 							const {
 								key: r,
 								type: s
@@ -10640,7 +10640,7 @@
 							}
 						}
 						case q.SEARCH_FAILED:
-						case Pe.c: {
+						case Pe.e: {
 							const {
 								error: r,
 								key: s,
@@ -10685,7 +10685,7 @@
 							}
 						}
 						case q.SEARCH_PENDING:
-						case Pe.d: {
+						case Pe.f: {
 							const {
 								key: r,
 								type: s
@@ -10752,8 +10752,8 @@
 						}
 						case q.SEARCH_RESULTS_RECEIVED:
 						case q.SEARCH_FAILED:
-						case Pe.e:
-						case Pe.c: {
+						case Pe.g:
+						case Pe.e: {
 							const {
 								key: r,
 								type: s
@@ -10839,7 +10839,7 @@
 								}
 							}
 						}
-						case Pe.e: {
+						case Pe.g: {
 							const {
 								fetchedToken: r,
 								key: s,
@@ -10946,7 +10946,7 @@
 								[r]: s
 							}
 						}
-						case Pe.e: {
+						case Pe.g: {
 							const {
 								key: r,
 								postOrder: s,
@@ -11036,7 +11036,7 @@
 							}
 						} : Object(Gt.a)(e, r)
 					}
-					case Pe.e:
+					case Pe.g:
 					case q.SEARCH_RESULTS_RECEIVED: {
 						const {
 							key: r,
@@ -12786,7 +12786,7 @@
 					case W.e:
 					case "RECOMMENDED_POSTS_LOADED":
 					case $.i:
-					case Pe.e:
+					case Pe.g:
 					case je.b:
 					case q.SEARCH_RESULTS_RECEIVED:
 					case kr.f: {
@@ -13015,8 +13015,8 @@
 						case V.MORE_POSTS_LOADED:
 						case V.PROFILE_POSTS_LOADED:
 						case "RECOMMENDED_POSTS_LOADED":
-						case Pe.e:
-						case Pe.e:
+						case Pe.g:
+						case Pe.g:
 						case $.i:
 							return nl(e, t.payload.postFlair);
 						case tl.c: {
@@ -13249,7 +13249,7 @@
 						case W.e:
 						case "RECOMMENDED_POSTS_LOADED":
 						case $.i:
-						case Pe.e:
+						case Pe.g:
 						case q.SEARCH_RESULTS_RECEIVED:
 							return k()({
 								...e
@@ -13566,7 +13566,7 @@
 						}
 					}
 					case Ie.e:
-					case Pe.e:
+					case Pe.g:
 					case q.SEARCH_RESULTS_RECEIVED: {
 						const r = zl(t.payload.meta),
 							s = Rt()(t.payload.posts, cp([r, np, ap, ep, sp(e)]));
@@ -15130,7 +15130,7 @@
 			var Ef = (e = mf, t) => {
 					switch (t.type) {
 						case q.SEARCH_RESULTS_RECEIVED:
-						case Pe.e:
+						case Pe.g:
 							return {
 								...e, ...t.payload.profileAboutInfo
 							};
@@ -15194,7 +15194,7 @@
 					case ve.u:
 					case Wi.h:
 					case Jo.b:
-					case Pe.e:
+					case Pe.g:
 					case $.i:
 					case Wi.m:
 					case W.b:
@@ -15208,7 +15208,7 @@
 					case "RECOMMENDED_POSTS_LOADED":
 					case Ji.c:
 						return Object(L.merge)(e, t.payload.profiles);
-					case Pe.g: {
+					case Pe.i: {
 						const {
 							typeaheadSuggestions: r
 						} = t.payload, s = Object.values(r).reduce((e, t) => Object(hf.h)(t) ? {
@@ -16138,7 +16138,7 @@
 				tm = r("./src/reddit/components/SearchDropdown/index.tsx");
 			var rm = (e = !1, t) => {
 				switch (t.type) {
-					case Pe.b:
+					case Pe.c:
 						return !e;
 					case oo.b: {
 						const {
@@ -16146,7 +16146,7 @@
 						} = t.payload, s = r.target, a = document.getElementById(tm.b), n = document.getElementById(tm.a);
 						return !(!s || !((null == a ? void 0 : a.contains(s)) || (null == n ? void 0 : n.contains(s)))) && e
 					}
-					case Pe.a:
+					case Pe.b:
 					case oo.a:
 					case oo.c:
 						return !1;
@@ -16157,7 +16157,7 @@
 			const sm = Object.create(null);
 			var am = (e = sm, t) => {
 				switch (null !== Object.getPrototypeOf(e) && (e = Object.assign(Object.create(null), e)), t.type) {
-					case Pe.f: {
+					case Pe.h: {
 						const {
 							relatedQueries: r,
 							query: s
@@ -16177,7 +16177,7 @@
 			var nm = (e = null, t) => {
 				switch (t.type) {
 					case q.SEARCH_RESULTS_RECEIVED:
-					case Pe.h: {
+					case Pe.j: {
 						const {
 							searchQuery: e
 						} = t.payload;
@@ -16190,7 +16190,7 @@
 			const cm = Object.create(null);
 			var om = (e = cm, t) => {
 					switch (null !== Object.getPrototypeOf(e) && (e = Object.assign(Object.create(null), e)), t.type) {
-						case Pe.g: {
+						case Pe.i: {
 							const {
 								order: r,
 								searchQuery: s
@@ -16208,7 +16208,7 @@
 			const im = {};
 			var um = (e = im, t) => {
 					switch (t.type) {
-						case Pe.g: {
+						case Pe.i: {
 							const {
 								typeaheadSuggestions: r
 							} = t.payload, s = {};
@@ -16247,6 +16247,16 @@
 				},
 				fm = Object(v.c)({
 					isDropdownOpen: rm,
+					isSubredditSearchEnabled: (e = !0, t) => {
+						switch (t.type) {
+							case Pe.a:
+								return !1;
+							case Pe.d:
+								return !0;
+							default:
+								return e
+						}
+					},
 					relatedQueries: am,
 					searchQuery: nm,
 					typeahead: lm,
@@ -16580,7 +16590,7 @@
 						case F.b:
 						case F.f:
 						case q.SEARCH_RESULTS_RECEIVED:
-						case Pe.e:
+						case Pe.g:
 						case we.PAGE_LOADED:
 						case Cs.PAGE_LOADED: {
 							const {
@@ -16696,7 +16706,7 @@
 								[a]: n
 							}
 						}
-						case Pe.e:
+						case Pe.g:
 						case q.SEARCH_RESULTS_RECEIVED: {
 							const {
 								payload: r
@@ -16899,7 +16909,7 @@
 					case V.PROFILE_POSTS_LOADED:
 					case W.b:
 					case W.e:
-					case Pe.e:
+					case Pe.g:
 					case zo.TOPIC_DATA_LOADED:
 					case td.u: {
 						const r = t.payload.subredditAboutInfo;
@@ -17742,7 +17752,7 @@
 					case W.e:
 					case je.b:
 					case "RECOMMENDED_POSTS_LOADED":
-					case Pe.e:
+					case Pe.g:
 					case $.c:
 					case $.f:
 					case $.i:
@@ -17764,7 +17774,7 @@
 						} = r;
 						return r_(e, s)
 					}
-					case Pe.g: {
+					case Pe.i: {
 						const {
 							typeaheadSuggestions: r
 						} = t.payload;
@@ -19319,7 +19329,7 @@
 						case ge.f:
 						case cI.b:
 						case $.i:
-						case Pe.e:
+						case Pe.g:
 						case q.SEARCH_RESULTS_RECEIVED:
 						case jr.i:
 						case we.PAGE_LOADED:
@@ -19904,8 +19914,8 @@
 					case q.SEARCH_RESULTS_RECEIVED:
 					case we.PAGE_LOADED:
 					case Cs.PAGE_LOADED:
-					case Pe.c:
 					case Pe.e:
+					case Pe.g:
 					case cI.a:
 					case cI.b:
 					case jr.i:
@@ -22168,4 +22178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6008b7b5d871f7e7bcef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.063248e91b2a4cb97a4c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.8236885af9d5d7b78f6d.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.dcbf253e245154c001ee.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1440,11 +1440,11 @@
 					const i = E(t, r, e.href);
 					return e.href = i.url, i.metadata
 				},
-				C = ({
+				N = ({
 					isSponsored: e,
 					source: t
 				}) => !!(e && (null == t ? void 0 : t.outboundUrl)),
-				N = x(e => {
+				C = x(e => {
 					const t = Object(c.useRef)(null),
 						r = Object(O.a)(),
 						{
@@ -1479,11 +1479,11 @@
 						onClick: () => r(d, y, s, m)
 					})) : l.a.createElement("a", k({}, w, {
 						onMouseDown: r => {
-							if (!C(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void S(r.currentTarget, g, I, i);
+							if (!N(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void S(r.currentTarget, g, I, i);
 							t.current = P(r.currentTarget, m, n)
 						},
 						onClick: () => {
-							p && (C(e) && (h(p, b.a.Click, t.current), Object(v.a)(p, f)), a(p, b.a.Click), r(d, y, s, m))
+							p && (N(e) && (h(p, b.a.Click, t.current), Object(v.a)(p, f)), a(p, b.a.Click), r(d, y, s, m))
 						},
 						onMouseLeave: e => {
 							u || ((e, t) => {
@@ -1494,7 +1494,7 @@
 						"data-testid": "outbound-link"
 					}))
 				});
-			t.b = N
+			t.b = C
 		},
 		"./src/reddit/helpers/pageActionLoginRedirect.ts": function(e, t, r) {
 			"use strict";
@@ -1577,9 +1577,9 @@
 			})), r.d(t, "o", (function() {
 				return P
 			})), r.d(t, "n", (function() {
-				return C
-			})), r.d(t, "y", (function() {
 				return N
+			})), r.d(t, "y", (function() {
+				return C
 			})), r.d(t, "k", (function() {
 				return T
 			})), r.d(t, "j", (function() {
@@ -1740,7 +1740,7 @@
 						})
 					})
 				},
-				C = (e, t, r) => {
+				N = (e, t, r) => {
 					Object(u.a)({
 						...m(e),
 						noun: "input",
@@ -1751,7 +1751,7 @@
 						actionInfo: a.chatPostActionInfo(e)
 					})
 				},
-				N = (e, t, r) => {
+				C = (e, t, r) => {
 					Object(u.a)({
 						...m(e),
 						noun: r,
@@ -1911,9 +1911,9 @@
 			})), r.d(t, "s", (function() {
 				return P
 			})), r.d(t, "c", (function() {
-				return C
-			})), r.d(t, "l", (function() {
 				return N
+			})), r.d(t, "l", (function() {
+				return C
 			})), r.d(t, "p", (function() {
 				return T
 			})), r.d(t, "i", (function() {
@@ -1984,7 +1984,7 @@
 								{
 									sortToUse: u
 								} = Object(l.a)(t, s);
-							Object(I.a)(C(c, s, d, r, i, u)(t));
+							Object(I.a)(N(c, s, d, r, i, u)(t));
 							break
 						}
 						case n.Jb.INDEX:
@@ -2066,7 +2066,7 @@
 						case n.Jb.POST_CREATION:
 							if (p && d) {
 								const e = Object(b.a)(d);
-								Object(I.a)(N(e, r, i)(t))
+								Object(I.a)(C(e, r, i)(t))
 							}
 							break;
 						case n.Jb.POST_DRAFT: {
@@ -2238,7 +2238,7 @@
 						adblock: y.adblock(i)
 					}
 				},
-				C = (e, t, r, i, o, n) => s => {
+				N = (e, t, r, i, o, n) => s => {
 					const {
 						api: c
 					} = s.pages.comments, l = !c.error[e] && !c.pending[e], a = {
@@ -2267,7 +2267,7 @@
 					};
 					return r && (a.comment = y.comment(s, r)), a
 				},
-				N = (e, t, r) => i => {
+				C = (e, t, r) => i => {
 					const o = i.creations.api.page.fetched[e],
 						n = i.platform.currentPage ? i.platform.currentPage.queryParams.source_id : void 0;
 					return {
@@ -2505,52 +2505,54 @@
 			"use strict";
 			r.d(t, "c", (function() {
 				return f
-			})), r.d(t, "q", (function() {
-				return _
-			})), r.d(t, "p", (function() {
-				return p
 			})), r.d(t, "r", (function() {
-				return m
-			})), r.d(t, "g", (function() {
-				return b
-			})), r.d(t, "t", (function() {
-				return h
+				return _
+			})), r.d(t, "q", (function() {
+				return p
 			})), r.d(t, "s", (function() {
-				return g
+				return m
+			})), r.d(t, "h", (function() {
+				return b
 			})), r.d(t, "u", (function() {
+				return h
+			})), r.d(t, "t", (function() {
+				return g
+			})), r.d(t, "v", (function() {
 				return v
-			})), r.d(t, "w", (function() {
+			})), r.d(t, "x", (function() {
 				return O
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "g", (function() {
 				return I
 			})), r.d(t, "a", (function() {
 				return w
-			})), r.d(t, "h", (function() {
-				return k
-			})), r.d(t, "x", (function() {
-				return j
-			})), r.d(t, "v", (function() {
-				return x
 			})), r.d(t, "i", (function() {
-				return S
-			})), r.d(t, "k", (function() {
-				return E
-			})), r.d(t, "e", (function() {
-				return P
+				return k
+			})), r.d(t, "y", (function() {
+				return j
+			})), r.d(t, "w", (function() {
+				return x
 			})), r.d(t, "j", (function() {
-				return C
-			})), r.d(t, "d", (function() {
-				return T
-			})), r.d(t, "o", (function() {
-				return U
-			})), r.d(t, "n", (function() {
-				return D
+				return S
 			})), r.d(t, "l", (function() {
-				return L
+				return E
+			})), r.d(t, "f", (function() {
+				return P
+			})), r.d(t, "k", (function() {
+				return N
+			})), r.d(t, "e", (function() {
+				return T
+			})), r.d(t, "p", (function() {
+				return U
+			})), r.d(t, "o", (function() {
+				return D
 			})), r.d(t, "m", (function() {
+				return L
+			})), r.d(t, "n", (function() {
 				return R
 			})), r.d(t, "b", (function() {
 				return A
+			})), r.d(t, "d", (function() {
+				return M
 			}));
 			var i = r("./src/lib/constants/index.ts"),
 				o = r("./src/reddit/constants/posts.ts"),
@@ -2747,7 +2749,7 @@
 				E = (e, t, r, i, o) => n => P(n, e, t, r, i, o),
 				P = (e, t, r, i, o, c) => {
 					const l = a.paneName(e, i),
-						u = N(e, t, o, c),
+						u = C(e, t, o, c),
 						f = a.amountOfElementsBeforePost(e, r, o, c, l),
 						_ = null !== u ? f + u : null,
 						p = a.structureType(i),
@@ -2778,8 +2780,8 @@
 						discoveryUnit: c ? a.discoveryUnit(c) : null
 					}
 				},
-				C = (e, t, r, i, o, n) => s => T(s, e, t, r, i, o, n),
-				N = (e, t, r, i) => {
+				N = (e, t, r, i, o, n) => s => T(s, e, t, r, i, o, n),
+				C = (e, t, r, i) => {
 					var o;
 					return (null === (o = null == i ? void 0 : i.layout) || void 0 === o ? void 0 : o.viewTypeWeb) === c.b.Hero ? 0 : (null == i ? void 0 : i.postOrder) ? i.postOrder.indexOf(t) : r ? a.getRelativePostOrder(e, t, r) : null
 				},
@@ -2792,7 +2794,7 @@
 					const _ = a.paneName(e, r);
 					let p, m;
 					if (u) {
-						p = N(e, u, c, f);
+						p = C(e, u, c, f);
 						const r = a.amountOfElementsBeforePost(e, t, c, f, _);
 						m = null !== p ? r + p : null
 					} else {
@@ -2890,6 +2892,17 @@
 					correlationId: Object(s.c)(s.a.SearchResults),
 					actionInfo: a.actionInfo(r),
 					search: a.search(r, t)
+				}),
+				M = e => ({
+					action: n.c.DISABLE,
+					noun: "subreddit_search",
+					source: "search",
+					subreddit: {
+						id: null == e ? void 0 : e.id,
+						name: null == e ? void 0 : e.name,
+						nsfw: null == e ? void 0 : e.isNSFW,
+						quarantined: null == e ? void 0 : e.isQuarantined
+					}
 				})
 		},
 		"./src/reddit/hooks/useIntersectionObserver.ts": function(e, t, r) {
@@ -3129,4 +3142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.8236885af9d5d7b78f6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.dcbf253e245154c001ee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.c4650da766957f0202ec.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.1573621eef4f5750be72.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -1224,10 +1224,10 @@
 						t: N
 					}), $ = Object(F.y)(H, {
 						listingKey: z
-					}), X = D && (f || !$ || 0 === $.length), Z = f, J = S, tt = Object(F.F)(H, {
+					}), X = D && (f || !$ || 0 === $.length), J = f, Z = S, tt = Object(F.F)(H, {
 						postId: g
 					}), et = m && !!tt && !!tt.media && (Object(U.H)(tt.media) || Object(U.F)(tt.media)) && !tt.media.altText;
-					if (!(Q || X || Z || J || et || A)) return;
+					if (!(Q || X || J || Z || et || A)) return;
 					Q && e(C({
 						key: Y
 					}));
@@ -1237,8 +1237,8 @@
 						}))(r(), t),
 						nt = st.body,
 						rt = Object(k.a)(h),
-						ot = Z && !!(null === (_ = null === (a = null === (i = nt.data) || void 0 === i ? void 0 : i.post) || void 0 === a ? void 0 : a.linked) || void 0 === _ ? void 0 : _.isEligible),
-						it = Z && (rt || !ot);
+						ot = J && !!(null === (_ = null === (a = null === (i = nt.data) || void 0 === i ? void 0 : i.post) || void 0 === a ? void 0 : a.linked) || void 0 === _ ? void 0 : _.isEligible),
+						it = J && (rt || !ot);
 					A && (st.ok ? nt.data && nt.data.post && e(c({
 						postId: g,
 						isEligibleForQASchema: null !== (p = nt.data.post.isEligibleForQASchema) && void 0 !== p && p
@@ -1248,7 +1248,7 @@
 						onSuccess: t => e(L(t)),
 						postId: g,
 						response: st
-					}), (X && !Z || it) && (st.ok ? nt.data && P({
+					}), (X && !J || it) && (st.ok ? nt.data && P({
 						getState: s,
 						isLinkedPostsFallback: it,
 						onFailure: t => e(V(t)),
@@ -1256,13 +1256,13 @@
 						options: t,
 						postId: g,
 						subreddit: nt.data.subreddit
-					}) : e(V(st.error))), Z && ot && !rt && st.ok && nt.data && R({
+					}) : e(V(st.error))), J && ot && !rt && st.ok && nt.data && R({
 						getState: s,
 						onFailure: t => e(b(t)),
 						onSuccess: t => e(l(t)),
 						postId: g,
 						post: nt.data.post
-					}), J && st.ok && M({
+					}), Z && st.ok && M({
 						getState: s,
 						onFailure: t => e(K(t)),
 						onSuccess: t => e(B(t)),
@@ -1274,7 +1274,7 @@
 						onSuccess: t => e(w(t)),
 						postId: g,
 						post: nt.data.post
-					}), Z && e(u({
+					}), J && e(u({
 						postId: g,
 						isEligibleForLinkedPosts: ot
 					}))
@@ -1637,7 +1637,7 @@
 					}));
 					return null
 				};
-			class Z extends o.a.Component {
+			class J extends o.a.Component {
 				getDynamicStyleTags() {
 					return o.a.createElement("style", {
 						dangerouslySetInnerHTML: {
@@ -1686,7 +1686,7 @@
 				}
 			}
 			e.c = o.a.memo((function(t) {
-				const e = Object(_.Z)(),
+				const e = Object(_.ab)(),
 					s = Object(_.v)(e),
 					n = Object(Y.a)(),
 					r = Object(i.e)(r => Q(r, {
@@ -1697,7 +1697,7 @@
 					})),
 					c = Object(B.a)(),
 					d = Object(l.b)();
-				return o.a.createElement(Z, q({
+				return o.a.createElement(J, q({
 					pageLayer: e,
 					isCommentPermalink: s
 				}, n, r, t, {
@@ -1862,9 +1862,9 @@
 			})), s.d(e, "e", (function() {
 				return z
 			})), s.d(e, "s", (function() {
-				return Z
-			})), s.d(e, "m", (function() {
 				return J
+			})), s.d(e, "m", (function() {
+				return Z
 			})), s.d(e, "r", (function() {
 				return tt
 			})), s.d(e, "k", (function() {
@@ -1993,7 +1993,7 @@
 				y = (t, e, s, n, r, o, c) => {
 					Object(E.a)({
 						...b.defaults(t),
-						...Object(d.e)(t, s, n, r, o, e),
+						...Object(d.f)(t, s, n, r, o, e),
 						action: i.c.VIEW,
 						noun: c ? "ad" : "post"
 					})
@@ -2031,10 +2031,10 @@
 						post: b.post(o, e)
 					}
 				},
-				k = (t, e, s, n) => r => o => Object(d.e)(o, r, t, e, s, n),
-				F = (t, e, s, n) => r => o => Object(d.d)(o, t, e, void 0, s, r, n),
+				k = (t, e, s, n) => r => o => Object(d.f)(o, r, t, e, s, n),
+				F = (t, e, s, n) => r => o => Object(d.e)(o, t, e, void 0, s, r, n),
 				x = (t, e, s, n) => r => o => ({
-					...Object(d.e)(o, r, t, e, s, n),
+					...Object(d.f)(o, r, t, e, s, n),
 					noun: "ad"
 				}),
 				M = (t, e) => s => r => ({
@@ -2088,7 +2088,7 @@
 				B = (t, e, s, n, r, o) => {
 					Object(E.a)({
 						...b.defaults(t),
-						...Object(d.d)(t, e, s, n, r, void 0, o)
+						...Object(d.e)(t, e, s, n, r, void 0, o)
 					})
 				},
 				K = (t, e, s) => {
@@ -2157,7 +2157,7 @@
 				X = (t, e, s) => b.actionInfo(t, {
 					position: s
 				}),
-				Z = (t, e, s) => {
+				J = (t, e, s) => {
 					const n = $();
 					return t => ({
 						...S(t, n),
@@ -2165,7 +2165,7 @@
 						subreddit: b.subredditById(t, e)
 					})
 				},
-				J = (t, e, s) => {
+				Z = (t, e, s) => {
 					const n = $();
 					return t => ({
 						...I(t, n, e),
@@ -2783,4 +2783,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.c4650da766957f0202ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.1573621eef4f5750be72.js.map

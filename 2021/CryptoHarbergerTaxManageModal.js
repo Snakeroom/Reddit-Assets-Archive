@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.f868538ee087631d3c9a.js
-// Retrieved at 6/15/2021, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.647a4660f6773da7ac87.js
+// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -535,8 +535,8 @@
 				V = Object(i.b)(W, e => ({
 					onUpdateBanner: t => e(Object(l.c)(t))
 				})),
-				Z = Object(m.t)();
-			t.default = Object(p.a)("spHarberger", Object(c.a)(Z(V(z))))
+				Q = Object(m.t)();
+			t.default = Object(p.a)("spHarberger", Object(c.a)(Q(V(z))))
 		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1231,7 +1231,7 @@
 			};
 
 			function c() {
-				const e = Object(a.Z)(),
+				const e = Object(a.ab)(),
 					t = Object(r.e)(t => Object(a.q)(t, {
 						pageLayer: e
 					})),
@@ -1301,4 +1301,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.f868538ee087631d3c9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.647a4660f6773da7ac87.js.map
