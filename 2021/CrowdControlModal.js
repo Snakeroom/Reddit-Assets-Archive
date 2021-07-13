@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.24f5c348d60b468fe378.js
-// Retrieved at 7/12/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.9de65fb3fe2f01f01bdd.js
+// Retrieved at 7/13/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -638,15 +638,15 @@
 			})), n.d(t, "a", (function() {
 				return he
 			})), n.d(t, "d", (function() {
-				return _e
+				return fe
 			})), n.d(t, "h", (function() {
-				return ke
+				return ve
 			})), n.d(t, "c", (function() {
-				return Ne
+				return ge
 			})), n.d(t, "e", (function() {
-				return ye
+				return Ee
 			})), n.d(t, "g", (function() {
-				return Oe
+				return we
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./node_modules/react/index.js"),
@@ -874,15 +874,10 @@
 				}, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(K, null, r.a.createElement($, {
 					onClick: e.onClick
 				}, r.a.createElement(ee, null)))),
-				Ce = C.a.div("DropdownWrapper", A.a),
-				fe = C.a.wrapped(b.b, "DropdownRow", A.a),
-				ve = C.a.span("Row", A.a),
-				ge = C.a.wrapped(f.b, "DropdownTriangle", A.a),
-				Ee = C.a.div("DescriptionsRow", A.a),
-				we = Object(l.c)({
+				Ce = Object(l.c)({
 					isOpen: (e, t) => Object(P.b)(t.id)(e)
 				}),
-				_e = Object(s.b)(we, (e, t) => ({
+				fe = Object(s.b)(Ce, (e, t) => ({
 					openDropdown: () => {
 						e(Object(d.h)({
 							tooltipId: t.id
@@ -892,23 +887,31 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(K, null, (e => r.a.createElement(Ce, {
+				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(K, null, (e => r.a.createElement("div", {
+					className: A.a.DropdownWrapper,
 					onClick: e.openDropdown
-				}, r.a.createElement(ve, {
+				}, r.a.createElement("span", {
+					className: A.a.Row,
 					id: `SettingDropdown--${e.id}`
-				}, e.displayTitle || e.selected), r.a.createElement(ge, null), r.a.createElement(H, {
+				}, e.displayTitle || e.selected), r.a.createElement(f.b, {
+					className: A.a.DropdownTriangle
+				}), r.a.createElement(H, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
 					isOverlay: !1,
 					tooltipId: `SettingDropdown--${e.id}`
-				}, e.items.map((t, n) => r.a.createElement(fe, {
+				}, e.items.map((t, n) => r.a.createElement(b.b, {
+					className: A.a.DropdownRow,
 					displayText: e.displayItems ? e.displayItems[n] : t,
 					isSelected: e.selected === t,
 					onClick: () => e.onClick(t),
-					key: n
-				}))), e.descriptions && r.a.createElement(Ee, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
-				ke = ({
+					key: "row--" + n,
+					item: t
+				}))), e.descriptions && r.a.createElement("div", {
+					className: A.a.DescriptionsRow
+				}, e.descriptions[e.items.indexOf(e.selected)] || e.displayItems && e.descriptions[e.displayItems.indexOf(e.selected)])))(e)))),
+				ve = ({
 					disabled: e,
 					last: t,
 					onClick: n,
@@ -945,14 +948,14 @@
 						value: e
 					}, t)))))
 				},
-				Ne = e => r.a.createElement(J, {
+				ge = e => r.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
 				}, r.a.createElement(q, null, r.a.createElement(V, null, e.label), r.a.createElement(Q, null, e.subtext)), r.a.createElement(K, null, e.children)),
-				ye = e => r.a.createElement(te, {
+				Ee = e => r.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -974,7 +977,7 @@
 					maxChars: e.maxChars,
 					text: e.value
 				})),
-				Oe = e => r.a.createElement(te, {
+				we = e => r.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -1839,4 +1842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.24f5c348d60b468fe378.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.9de65fb3fe2f01f01bdd.js.map

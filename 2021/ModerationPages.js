@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.873378afabb0c7c1e5d3.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.88d90b5c92e348f938da.js
+// Retrieved at 7/13/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -2678,77 +2678,127 @@
 		"./src/reddit/components/CommunitySettings/helpers.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return n
-			})), s.d(t, "d", (function() {
 				return a
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "d", (function() {
 				return o
-			})), s.d(t, "f", (function() {
+			})), s.d(t, "e", (function() {
 				return r
-			})), s.d(t, "a", (function() {
+			})), s.d(t, "f", (function() {
 				return i
-			})), s.d(t, "k", (function() {
+			})), s.d(t, "a", (function() {
 				return d
-			})), s.d(t, "l", (function() {
+			})), s.d(t, "k", (function() {
 				return l
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "l", (function() {
 				return c
-			})), s.d(t, "m", (function() {
+			})), s.d(t, "n", (function() {
 				return m
-			})), s.d(t, "h", (function() {
+			})), s.d(t, "m", (function() {
 				return u
-			})), s.d(t, "g", (function() {
+			})), s.d(t, "h", (function() {
 				return p
-			})), s.d(t, "j", (function() {
+			})), s.d(t, "g", (function() {
 				return b
-			})), s.d(t, "b", (function() {
+			})), s.d(t, "j", (function() {
 				return h
-			})), s.d(t, "i", (function() {
+			})), s.d(t, "b", (function() {
 				return g
-			})), s.d(t, "o", (function() {
+			})), s.d(t, "i", (function() {
 				return f
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			const n = 500,
-				a = 100,
-				o = 5e3,
-				r = 0,
-				i = 1440,
-				d = 36600,
-				l = 1e9,
-				c = {
-					Disabled: "disabled",
-					"Mods only": "modonly",
-					Anyone: "anyone"
+			var n = s("./node_modules/fbt/lib/FbtPublic.js");
+			const a = 500,
+				o = 100,
+				r = 5e3,
+				i = 0,
+				d = 1440,
+				l = 36600,
+				c = 1e9,
+				m = {
+					disabled: n.fbt._("Disabled", null, {
+						hk: "1KaunG"
+					}).toString(),
+					modonly: n.fbt._("Mods only", null, {
+						hk: "2yA6R8"
+					}).toString(),
+					anyone: n.fbt._("Anyone", null, {
+						hk: "4gPsEy"
+					}).toString()
 				},
-				m = ["Wiki is disabled for all users except mods", "Only mods, approved wiki contributors, or those on a page's edit list may edit", "Anyone who can submit to the community may edit"],
-				u = {
-					Any: "any",
-					"Links only": "link",
-					"Text posts only": "self"
+				u = [n.fbt._("Wiki is disabled for all users except mods", null, {
+					hk: "2loUiE"
+				}).toString(), n.fbt._("Only mods, approved wiki contributors, or those on a page's edit list may edit", null, {
+					hk: "1WUeVN"
+				}).toString(), n.fbt._("Anyone who can submit to the community may edit", null, {
+					hk: "3hxotT"
+				}).toString()],
+				p = {
+					any: n.fbt._("Any", null, {
+						hk: "hVUT8"
+					}),
+					link: n.fbt._("Links only", null, {
+						hk: "3upkyk"
+					}),
+					self: n.fbt._("Text posts only", null, {
+						hk: "1VZn8Y"
+					})
 				},
-				p = ["Any post type is allowed", "Only links to external sites are allowed", "Only text posts are allowed"],
-				b = {
-					Low: "low",
-					"High (default)": "high",
-					All: "all"
-				},
+				b = [n.fbt._("Any post type is allowed", null, {
+					hk: "1rOxtJ"
+				}), n.fbt._("Only links to external sites are allowed", null, {
+					hk: "OJQdj"
+				}), n.fbt._("Only text posts are allowed", null, {
+					hk: "3q3v14"
+				})],
 				h = {
-					"Low (default)": "low",
-					High: "high",
-					All: "all"
+					low: n.fbt._("Low", null, {
+						hk: "4k3iTe"
+					}),
+					high: n.fbt._("High (default)", null, {
+						hk: "2GOHsH"
+					}),
+					all: n.fbt._("All", null, {
+						hk: "gl6gc"
+					})
 				},
 				g = {
-					"none (recommended)": null,
-					best: "confidence",
-					old: "old",
-					top: "top",
-					"q&a": "qa",
-					"live (beta)": "live",
-					controversial: "controversial",
-					new: "new"
+					low: n.fbt._("Low (default)", null, {
+						hk: "2tqJd7"
+					}),
+					high: n.fbt._("High", null, {
+						hk: "ABfkc"
+					}),
+					all: n.fbt._("All", null, {
+						hk: "3bPDOM"
+					})
 				},
-				f = (e, t) => Object.keys(e).find(s => e[s] === t)
+				f = {
+					nullValue: n.fbt._("none (recommended)", null, {
+						hk: "2FMwQH"
+					}),
+					confidence: n.fbt._("best", null, {
+						hk: "13cLYH"
+					}),
+					old: n.fbt._("old", null, {
+						hk: "3V0QN8"
+					}),
+					top: n.fbt._("top", null, {
+						hk: "40R5FY"
+					}),
+					qa: n.fbt._("q&a", null, {
+						hk: "3cm6YL"
+					}),
+					live: n.fbt._("live (beta)", null, {
+						hk: "2EVYAd"
+					}),
+					controversial: n.fbt._("controversial", null, {
+						hk: "1uFV5F"
+					}),
+					new: n.fbt._("new", null, {
+						hk: "39TZi6"
+					})
+				}
 		},
 		"./src/reddit/components/CommunitySettings/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3222,7 +3272,7 @@
 					spamSelfposts: C,
 					spoilersEnabled: k,
 					suggestedCommentSort: y
-				} = t, S = (null == o ? void 0 : o[E.a.CommentsWithGifs]) || !1;
+				} = t, S = (null == o ? void 0 : o[E.a.CommentsWithGifs]) || !1, O = null === y ? "nullValue" : y;
 				return r.a.createElement(b.a, null, r.a.createElement(V.a, null, r.a.createElement(b.b, null, T.fbt._("Post and Comment settings", null, {
 					hk: "14OI7p"
 				})), r.a.createElement(A.a, null, T.fbt._("Posts", null, {
@@ -3232,8 +3282,10 @@
 						hk: "M9AdT"
 					}),
 					items: Object.keys(q.h),
-					selected: Object(q.o)(q.h, x),
-					onClick: e => n(q.h[e], "contentOptions"),
+					displayItems: Object.values(q.h),
+					displayTitle: q.h[x],
+					selected: x,
+					onClick: e => n(e, "contentOptions"),
 					id: "contentOptions",
 					descriptions: q.g
 				}), r.a.createElement(D.o, {
@@ -3300,26 +3352,32 @@
 						hk: "1SdpTj"
 					}),
 					items: Object.keys(q.j),
+					displayItems: Object.values(q.j),
+					displayTitle: q.j[C],
 					id: "spamSelfposts",
-					selected: Object(q.o)(q.j, C),
-					onClick: e => n(q.j[e], "spamSelfposts"),
+					selected: C,
+					onClick: e => n(e, "spamSelfposts"),
 					indent: !0
 				}), r.a.createElement(D.d, {
 					label: T.fbt._("Links", null, {
 						hk: "Ia7TU"
 					}),
 					items: Object.keys(q.j),
+					displayItems: Object.values(q.j),
+					displayTitle: q.j[_],
 					id: "spamLinks",
-					selected: Object(q.o)(q.j, _),
-					onClick: e => n(q.j[e], "spamLinks"),
+					selected: _,
+					onClick: e => n(e, "spamLinks"),
 					indent: !0
 				}), r.a.createElement(D.d, {
 					label: T.fbt._("Comments", null, {
 						hk: "1X5Fv2"
 					}),
 					items: Object.keys(q.b),
-					selected: Object(q.o)(q.b, v),
-					onClick: e => n(q.b[e], "spamComments"),
+					displayItems: Object.values(q.b),
+					displayTitle: q.b[v],
+					selected: v,
+					onClick: e => n(e, "spamComments"),
 					indent: !0,
 					id: "spamComments"
 				}), r.a.createElement(A.a, null, T.fbt._("Comments", null, {
@@ -3332,8 +3390,10 @@
 						hk: "4grj1W"
 					}),
 					items: Object.keys(q.i),
-					selected: Object(q.o)(q.i, y),
-					onClick: e => n(q.i[e], "suggestedCommentSort"),
+					displayItems: Object.values(q.i),
+					displayTitle: q.i[O],
+					selected: O,
+					onClick: e => n("nullValue" === e ? null : e, "suggestedCommentSort"),
 					id: "suggestedCommentSort"
 				}), r.a.createElement(D.o, {
 					on: h,
@@ -3530,9 +3590,11 @@
 					label: T.fbt._("Wikis can be edited by", null, {
 						hk: "3brAqG"
 					}),
+					displayItems: Object.values(q.n),
+					displayTitle: q.n[i],
 					items: Object.keys(q.n),
-					selected: Object(q.o)(q.n, i),
-					onClick: e => n(q.n[e], "wikimode"),
+					selected: i,
+					onClick: e => n(e, "wikimode"),
 					id: "wikimode",
 					descriptions: q.m
 				}), r.a.createElement(D.k, {
@@ -13141,15 +13203,15 @@
 			})), s.d(t, "a", (function() {
 				return ge
 			})), s.d(t, "d", (function() {
-				return ke
+				return xe
 			})), s.d(t, "h", (function() {
-				return ye
+				return Ee
 			})), s.d(t, "c", (function() {
-				return Se
+				return ve
 			})), s.d(t, "e", (function() {
-				return Oe
+				return _e
 			})), s.d(t, "g", (function() {
-				return je
+				return Ce
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/react/index.js"),
@@ -13377,15 +13439,10 @@
 				}, e.label), a.a.createElement(V, null, e.subtext)), a.a.createElement(K, null, a.a.createElement($, {
 					onClick: e.onClick
 				}, a.a.createElement(ee, null)))),
-				fe = f.a.div("DropdownWrapper", U.a),
-				xe = f.a.wrapped(h.b, "DropdownRow", U.a),
-				Ee = f.a.span("Row", U.a),
-				ve = f.a.wrapped(x.b, "DropdownTriangle", U.a),
-				_e = f.a.div("DescriptionsRow", U.a),
-				Ce = Object(i.c)({
+				fe = Object(i.c)({
 					isOpen: (e, t) => Object(A.b)(t.id)(e)
 				}),
-				ke = Object(o.b)(Ce, (e, t) => ({
+				xe = Object(o.b)(fe, (e, t) => ({
 					openDropdown: () => {
 						e(Object(l.h)({
 							tooltipId: t.id
@@ -13395,23 +13452,31 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(G, null, a.a.createElement(Z, null, e.label), a.a.createElement(V, null, e.subtext)), a.a.createElement(K, null, (e => a.a.createElement(fe, {
+				}, a.a.createElement(G, null, a.a.createElement(Z, null, e.label), a.a.createElement(V, null, e.subtext)), a.a.createElement(K, null, (e => a.a.createElement("div", {
+					className: U.a.DropdownWrapper,
 					onClick: e.openDropdown
-				}, a.a.createElement(Ee, {
+				}, a.a.createElement("span", {
+					className: U.a.Row,
 					id: `SettingDropdown--${e.id}`
-				}, e.displayTitle || e.selected), a.a.createElement(ve, null), a.a.createElement(H, {
+				}, e.displayTitle || e.selected), a.a.createElement(x.b, {
+					className: U.a.DropdownTriangle
+				}), a.a.createElement(H, {
 					container: void 0,
 					isOpen: e.isOpen,
 					renderContentsHidden: !0,
 					isOverlay: !1,
 					tooltipId: `SettingDropdown--${e.id}`
-				}, e.items.map((t, s) => a.a.createElement(xe, {
+				}, e.items.map((t, s) => a.a.createElement(h.b, {
+					className: U.a.DropdownRow,
 					displayText: e.displayItems ? e.displayItems[s] : t,
 					isSelected: e.selected === t,
 					onClick: () => e.onClick(t),
-					key: s
-				}))), e.descriptions && a.a.createElement(_e, null, e.descriptions[e.items.indexOf(e.selected)])))(e)))),
-				ye = ({
+					key: "row--" + s,
+					item: t
+				}))), e.descriptions && a.a.createElement("div", {
+					className: U.a.DescriptionsRow
+				}, e.descriptions[e.items.indexOf(e.selected)] || e.displayItems && e.descriptions[e.displayItems.indexOf(e.selected)])))(e)))),
+				Ee = ({
 					disabled: e,
 					last: t,
 					onClick: s,
@@ -13448,14 +13513,14 @@
 						value: e
 					}, t)))))
 				},
-				Se = e => a.a.createElement(Q, {
+				ve = e => a.a.createElement(Q, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
 				}, a.a.createElement(G, null, a.a.createElement(Z, null, e.label), a.a.createElement(V, null, e.subtext)), a.a.createElement(K, null, e.children)),
-				Oe = e => a.a.createElement(te, {
+				_e = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -13477,7 +13542,7 @@
 					maxChars: e.maxChars,
 					text: e.value
 				})),
-				je = e => a.a.createElement(te, {
+				Ce = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
 					label: e.label,
@@ -19967,4 +20032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.873378afabb0c7c1e5d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.88d90b5c92e348f938da.js.map
