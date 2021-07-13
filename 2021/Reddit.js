@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d4e8a3b8ef325e52c3d1.js
-// Retrieved at 7/13/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ab661a922573e3cf515c.js
+// Retrieved at 7/13/2021, 4:10:32 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5458,7 +5458,12 @@
 			var wo = n("./src/reddit/controls/Search/SearchBar/index.m.less"),
 				Io = n.n(wo);
 			const No = Object(A.c)(e => {
-					const t = m.a.useContext(g.a);
+					const t = m.a.useContext(g.a),
+						n = e.showCommunityPill && e.subreddit ? r.fbt._("Search within {subredditName}", [r.fbt._param("subredditName", e.subreddit.displayText)], {
+							hk: "2B6J3t"
+						}) : r.fbt._("Search all of Reddit", null, {
+							hk: "1Fi1f5"
+						});
 					return m.a.createElement("form", {
 						action: "/search/",
 						autoComplete: "off",
@@ -5468,15 +5473,19 @@
 						onFocus: e.onFocusSearchBar,
 						role: "search"
 					}, m.a.createElement("label", {
-						className: Io.a.iconContainer,
+						className: Io.a.inputLabel,
 						htmlFor: "header-search-bar"
-					}, m.a.createElement(bs.a, {
+					}, m.a.createElement("div", {
 						"aria-hidden": !0,
+						className: Io.a.iconContainer
+					}, m.a.createElement(bs.a, {
 						name: "search",
 						className: Io.a.icon
-					})), e.showCommunityPill && e.subreddit && m.a.createElement(ko, {
+					})), m.a.createElement(Fr.a, {
+						"aria-live": "assertive"
+					}, n), e.showCommunityPill && e.subreddit && m.a.createElement(ko, {
 						subreddit: e.subreddit
-					}), m.a.createElement("input", {
+					})), m.a.createElement("input", {
 						id: "header-search-bar",
 						name: "q",
 						className: Io.a.input,
@@ -12635,6 +12644,7 @@
 			e.exports = {
 				searchBar: "_1DeR7_QiQnu2UK0e2dDfYD",
 				searchBarExp: "_2cQyXGCHzUUwjteF5E1eO7",
+				inputLabel: "_1t0x2fnX0IYp1-sp47CSHI",
 				input: "_1K7ubH9z5v9E6C19j2fjQU",
 				iconContainer: "cNtxQ5c1PdvcDe82u_yz9",
 				icon: "_3ylUT2QX58nnEl8r4H26ys"
@@ -18406,4 +18416,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d4e8a3b8ef325e52c3d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ab661a922573e3cf515c.js.map
