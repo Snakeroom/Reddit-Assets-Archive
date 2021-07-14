@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c11a79a9ba633e578117.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.894b8f2d0a6ea4be390c.js
+// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -800,8 +800,9 @@
 						pageType: h,
 						sendEvent: E,
 						style: x,
-						ref: C
-					} = this.props, _ = r.a.createElement("div", {
+						ref: C,
+						shouldAddGalleryViewability: _ = !0
+					} = this.props, y = r.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
 						style: x,
 						ref: C,
@@ -823,13 +824,13 @@
 						}),
 						id: a ? a(u.id) : u.id,
 						tabIndex: -1
-					}, s), y = !!u.media && u.media.type === m.o.VIDEO;
-					return u.isSponsored || y ? r.a.createElement(c.a, {
+					}, s), f = !!u.media && u.media.type === m.o.VIDEO;
+					return u.isSponsored || f ? r.a.createElement(c.a, {
 						post: u,
 						trackDisplay: !0
-					}, _) : u.media && Object(m.E)(u.media) ? r.a.createElement(l, {
+					}, y) : u.media && Object(m.E)(u.media) && _ ? r.a.createElement(l, {
 						postId: u.id
-					}, _) : _
+					}, y) : y
 				}
 			}
 			t.a = y(Object(C.c)(Object(b.c)(f)))
@@ -1287,4 +1288,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.c11a79a9ba633e578117.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.894b8f2d0a6ea4be390c.js.map

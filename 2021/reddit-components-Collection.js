@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.3c114b93b87ac478d5fd.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.6784addadf5398a35a8d.js
+// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -261,7 +261,8 @@
 						post: b,
 						onClick: m,
 						eventFactory: s,
-						style: h
+						style: h,
+						shouldAddGalleryViewability: !1
 					}, n.a.createElement("div", {
 						className: W.a.scrollToContainer,
 						ref: d && C || void 0
@@ -387,13 +388,13 @@
 						Y && e(Y.editEventTimeRequested(s, t))
 					}
 				}))(Object(b.c)(Z))),
-				K = o("./src/reddit/components/Collection/index.m.less"),
-				V = o.n(K);
+				V = o("./src/reddit/components/Collection/index.m.less"),
+				K = o.n(V);
 			const {
 				fbt: $
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ee = e => n.a.createElement(m.a, {
 				author: e.author,
-				className: V.a.author,
+				className: K.a.author,
 				"data-click-id": "user",
 				isAuthorDeleted: e.isDeleted,
 				isUnstyled: !0
@@ -458,14 +459,14 @@
 							id: C
 						} = t;
 						return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-							className: Object(a.a)(V.a.collectionTitleWrapper, {
-								[V.a.isProfilePage]: d,
-								[V.a.collectionTitleWrapperExp]: e
+							className: Object(a.a)(K.a.collectionTitleWrapper, {
+								[K.a.isProfilePage]: d,
+								[K.a.collectionTitleWrapperExp]: e
 							})
 						}, n.a.createElement("div", {
-							className: V.a.collectionMetaData
+							className: K.a.collectionMetaData
 						}, n.a.createElement("span", {
-							className: V.a.collectionBy
+							className: K.a.collectionBy
 						}, $._("Collection by {authorName}", [$._param("authorName", n.a.createElement(ee, {
 							author: m,
 							isDeleted: Object(_.n)(m)
@@ -474,38 +475,38 @@
 						})), n.a.createElement(v.a, {
 							isSmall: !0
 						}), n.a.createElement("span", {
-							className: V.a.postCount
+							className: K.a.postCount
 						}, $._({
 							"*": "{number} posts",
 							_1: "1 post"
 						}, [$._plural(h.length, "number")], {
 							hk: "2gFsfn"
 						}))), n.a.createElement("div", {
-							className: V.a.collectionTitleOptions
+							className: K.a.collectionTitleOptions
 						}, n.a.createElement("span", {
-							className: V.a.collectionTitle
+							className: K.a.collectionTitle
 						}, n.a.createElement(u.b, {
 							type: u.a.Collection
 						}, t.title)), s && n.a.createElement(p.a, {
 							post: s,
 							isEventFollow: d
 						}), n.a.createElement(P.a, {
-							className: V.a.overflowMenu,
+							className: K.a.overflowMenu,
 							collectionId: C,
 							isSubmitPage: !1,
 							permalink: t.permalink,
 							shouldShowCreatePost: !0
 						}))), n.a.createElement("div", {
-							className: V.a.postListWrapper
+							className: K.a.postListWrapper
 						}, n.a.createElement("div", {
 							id: E.b,
 							style: se(this.props),
-							className: V.a.collectionList
+							className: K.a.collectionList
 						}, b && b.trim() && n.a.createElement("div", {
-							className: V.a.collectionDescription
+							className: K.a.collectionDescription
 						}, b), n.a.createElement("div", {
 							className: Object(a.a)({
-								[V.a.galleryContainer]: o === g.a.GALLERY
+								[K.a.galleryContainer]: o === g.a.GALLERY
 							})
 						}, h.map(e => n.a.createElement(q, {
 							collectionId: C,
@@ -733,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.3c114b93b87ac478d5fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.6784addadf5398a35a8d.js.map

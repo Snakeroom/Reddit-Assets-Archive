@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6f2798e7cfc62bc4cf11.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ff73312547a427d4ce0e.js
+// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3615,8 +3615,9 @@
 						pageType: b,
 						sendEvent: h,
 						style: _,
-						ref: x
-					} = this.props, O = s.a.createElement("div", {
+						ref: x,
+						shouldAddGalleryViewability: O = !0
+					} = this.props, S = s.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
 						style: _,
 						ref: x,
@@ -3638,13 +3639,13 @@
 						}),
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
-					}, n), S = !!l.media && l.media.type === f.o.VIDEO;
-					return l.isSponsored || S ? s.a.createElement(a.a, {
+					}, n), g = !!l.media && l.media.type === f.o.VIDEO;
+					return l.isSponsored || g ? s.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, O) : l.media && Object(f.E)(l.media) ? s.a.createElement(u, {
+					}, S) : l.media && Object(f.E)(l.media) && O ? s.a.createElement(u, {
 						postId: l.id
-					}, O) : O
+					}, S) : S
 				}
 			}
 			t.a = S(Object(x.c)(Object(p.c)(g)))
@@ -4929,4 +4930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6f2798e7cfc62bc4cf11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ff73312547a427d4ce0e.js.map

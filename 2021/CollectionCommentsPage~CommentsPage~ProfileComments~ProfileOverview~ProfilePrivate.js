@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.540c80174ed2f129c01f.js
-// Retrieved at 7/14/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.add03c4c1a74c2448b4e.js
+// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -2535,8 +2535,9 @@
 						pageType: x,
 						sendEvent: h,
 						style: E,
-						ref: v
-					} = this.props, C = s.a.createElement("div", {
+						ref: v,
+						shouldAddGalleryViewability: C = !0
+					} = this.props, O = s.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
 						style: E,
 						ref: v,
@@ -2558,13 +2559,13 @@
 						}),
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
-					}, n), O = !!l.media && l.media.type === b.o.VIDEO;
-					return l.isSponsored || O ? s.a.createElement(i.a, {
+					}, n), y = !!l.media && l.media.type === b.o.VIDEO;
+					return l.isSponsored || y ? s.a.createElement(i.a, {
 						post: l,
 						trackDisplay: !0
-					}, C) : l.media && Object(b.E)(l.media) ? s.a.createElement(m, {
+					}, O) : l.media && Object(b.E)(l.media) && C ? s.a.createElement(m, {
 						postId: l.id
-					}, C) : C
+					}, O) : O
 				}
 			}
 			t.a = O(Object(v.c)(Object(u.c)(y)))
@@ -3428,4 +3429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.540c80174ed2f129c01f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.add03c4c1a74c2448b4e.js.map

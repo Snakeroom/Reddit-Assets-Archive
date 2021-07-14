@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.88d90b5c92e348f938da.js
-// Retrieved at 7/13/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e3d21f87d3d98fb9da0c.js
+// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -11379,8 +11379,9 @@
 						pageType: h,
 						sendEvent: g,
 						style: x,
-						ref: E
-					} = this.props, v = a.a.createElement("div", {
+						ref: E,
+						shouldAddGalleryViewability: v = !0
+					} = this.props, C = a.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
 						style: x,
 						ref: E,
@@ -11402,13 +11403,13 @@
 						}),
 						id: l ? l(c.id) : c.id,
 						tabIndex: -1
-					}, s), C = !!c.media && c.media.type === b.o.VIDEO;
-					return c.isSponsored || C ? a.a.createElement(i.a, {
+					}, s), y = !!c.media && c.media.type === b.o.VIDEO;
+					return c.isSponsored || y ? a.a.createElement(i.a, {
 						post: c,
 						trackDisplay: !0
-					}, v) : c.media && Object(b.E)(c.media) ? a.a.createElement(m, {
+					}, C) : c.media && Object(b.E)(c.media) && v ? a.a.createElement(m, {
 						postId: c.id
-					}, v) : v
+					}, C) : C
 				}
 			}
 			t.a = C(Object(E.c)(Object(u.c)(y)))
@@ -20032,4 +20033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.88d90b5c92e348f938da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e3d21f87d3d98fb9da0c.js.map

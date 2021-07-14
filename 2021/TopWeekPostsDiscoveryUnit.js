@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4e1e85d89383a936022a.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.83f04c8e2d2e1801c5eb.js
+// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1507,8 +1507,9 @@
 						pageType: h,
 						sendEvent: x,
 						style: g,
-						ref: C
-					} = this.props, y = r.a.createElement("div", {
+						ref: C,
+						shouldAddGalleryViewability: y = !0
+					} = this.props, E = r.a.createElement("div", {
 						"data-click-id": this.props["data-click-id"],
 						style: g,
 						ref: C,
@@ -1530,13 +1531,13 @@
 						}),
 						id: l ? l(d.id) : d.id,
 						tabIndex: -1
-					}, s), E = !!d.media && d.media.type === b.o.VIDEO;
-					return d.isSponsored || E ? r.a.createElement(o.a, {
+					}, s), O = !!d.media && d.media.type === b.o.VIDEO;
+					return d.isSponsored || O ? r.a.createElement(o.a, {
 						post: d,
 						trackDisplay: !0
-					}, y) : d.media && Object(b.E)(d.media) ? r.a.createElement(m, {
+					}, E) : d.media && Object(b.E)(d.media) && y ? r.a.createElement(m, {
 						postId: d.id
-					}, y) : y
+					}, E) : E
 				}
 			}
 			t.a = E(Object(C.c)(Object(u.c)(O)))
@@ -2399,4 +2400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4e1e85d89383a936022a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.83f04c8e2d2e1801c5eb.js.map
