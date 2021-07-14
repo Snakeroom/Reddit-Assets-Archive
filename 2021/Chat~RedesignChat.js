@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46abc77bdf679197ec29.js
-// Retrieved at 7/13/2021, 11:20:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.07036429cd9531a094c2.js
+// Retrieved at 7/14/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -9386,20 +9386,14 @@
 			"use strict";
 			var s = n("./src/chat/actions/message/unreadCount.ts"),
 				a = n("./src/chat/customMiddleware/noop.ts"),
-				r = n("./src/chat/helpers/errors.ts"),
-				c = n("./src/chat/selectors/app.ts");
-			const o = /^\([\d*]+?\)\s+/,
-				i = e => {
-					const t = null === window || void 0 === window ? void 0 : window.navigator;
-					if (t && "setAppBadge" in t && "clearAppBadge" in t) {
-						(e >= 0 ? t.setAppBadge(e) : t.clearAppBadge()).catch(e => Object(r.b)(e))
-					}
-				};
+				r = n("./src/chat/selectors/app.ts"),
+				c = n("./src/lib/safeBadgeUpdate.ts");
+			const o = /^\([\d*]+?\)\s+/;
 			t.a = e => {
 				return "undefined" != typeof window ? t => n => {
 					const a = t(n),
-						r = e.getState();
-					if (!Object(c.d)(r) && n.type === s.a) {
+						i = e.getState();
+					if (!Object(r.d)(i) && n.type === s.a) {
 						const {
 							basicChannelCount: e,
 							subredditChannelCount: t
@@ -9407,7 +9401,7 @@
 						((e, t) => {
 							var n, s;
 							const a = null === (s = null === (n = null === window || void 0 === window ? void 0 : window.document) || void 0 === n ? void 0 : n.title) || void 0 === s ? void 0 : s.replace(o, "");
-							e > 0 ? (i(e), window.document.title = `(${e}) ${a}`) : t > 0 ? (i(1), window.document.title = `(*) ${a}`) : (i(0), window.document.title = a)
+							e > 0 ? (Object(c.a)(e), window.document.title = `(${e}) ${a}`) : t > 0 ? (Object(c.a)(1), window.document.title = `(*) ${a}`) : (Object(c.a)(0), window.document.title = a)
 						})(e, t)
 					}
 					return a
@@ -14102,6 +14096,19 @@
 				}
 			}
 		},
+		"./src/lib/safeBadgeUpdate.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			var s = n("./src/lib/throwDevError.ts");
+			const a = e => {
+				const t = null === window || void 0 === window ? void 0 : window.navigator;
+				if (t && "setAppBadge" in t && "clearAppBadge" in t) {
+					(e >= 0 ? t.setAppBadge(e) : t.clearAppBadge()).catch(e => Object(s.a)(e))
+				}
+			}
+		},
 		"./src/reddit/actions/reportFlow/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -14252,4 +14259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.46abc77bdf679197ec29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.07036429cd9531a094c2.js.map
