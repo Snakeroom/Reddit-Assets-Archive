@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.573a14a842b8ae9ce046.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.36eaba71b4982fb7c9be.js
+// Retrieved at 7/14/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -696,7 +696,7 @@
 			n.d(t, "a", (function() {
 				return y
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/core/esm/api.js"),
 				i = n("./node_modules/@sentry/core/esm/baseclient.js"),
 				s = n("./node_modules/@sentry/utils/esm/misc.js"),
@@ -712,7 +712,7 @@
 					function t() {
 						return null !== e && e.apply(this, arguments) || this
 					}
-					return r.c(t, e), t.prototype._setupTransport = function() {
+					return r.b(t, e), t.prototype._setupTransport = function() {
 						if (!this._options.dsn) return e.prototype._setupTransport.call(this);
 						var t = r.a({}, this._options.transportOptions, {
 							dsn: this._options.dsn
@@ -741,10 +741,10 @@
 					function t(t) {
 						return void 0 === t && (t = {}), e.call(this, m, t) || this
 					}
-					return r.c(t, e), t.prototype._prepareEvent = function(t, n, o) {
+					return r.b(t, e), t.prototype._prepareEvent = function(t, n, o) {
 						return t.platform = t.platform || "javascript", t.sdk = r.a({}, t.sdk, {
 							name: b.a,
-							packages: r.g(t.sdk && t.sdk.packages || [], [{
+							packages: r.c(t.sdk && t.sdk.packages || [], [{
 								name: "npm:@sentry/browser",
 								version: b.b
 							}]),
@@ -825,7 +825,7 @@
 			})), n.d(t, "b", (function() {
 				return y
 			}));
-			var r, o, i = n("./node_modules/tslib/tslib.es6.js"),
+			var r, o, i = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				s = n("./node_modules/@sentry/minimal/esm/index.js"),
 				a = n("./node_modules/@sentry/hub/esm/hub.js"),
 				u = n("./node_modules/@sentry/utils/esm/misc.js"),
@@ -942,7 +942,7 @@
 			n.r(t), n.d(t, "Integrations", (function() {
 				return v
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/types/esm/severity.js");
 			n.d(t, "Severity", (function() {
 				return o.a
@@ -1042,7 +1042,7 @@
 			n.d(t, "a", (function() {
 				return b
 			}));
-			var r, o = n("./node_modules/tslib/tslib.es6.js"),
+			var r, o = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				i = n("./node_modules/@sentry/hub/esm/hub.js"),
 				s = n("./node_modules/@sentry/core/esm/api.js"),
 				a = n("./node_modules/@sentry/types/esm/severity.js"),
@@ -1286,7 +1286,7 @@
 			n.d(t, "a", (function() {
 				return d
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/hub/esm/hub.js"),
 				i = n("./node_modules/@sentry/types/esm/severity.js"),
 				s = n("./node_modules/@sentry/utils/esm/misc.js"),
@@ -1413,7 +1413,7 @@
 			n.d(t, "a", (function() {
 				return l
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/hub/esm/scope.js"),
 				i = n("./node_modules/@sentry/hub/esm/hub.js"),
 				s = n("./node_modules/@sentry/browser/esm/parsers.js"),
@@ -1432,12 +1432,12 @@
 					}, e.prototype._handler = function(e, t) {
 						if (!(e.exception && e.exception.values && t && t.originalException instanceof Error)) return e;
 						var n = this._walkErrorTree(t.originalException, this._key);
-						return e.exception.values = r.g(n, e.exception.values), e
+						return e.exception.values = r.c(n, e.exception.values), e
 					}, e.prototype._walkErrorTree = function(e, t, n) {
 						if (void 0 === n && (n = []), !(e[t] instanceof Error) || n.length + 1 >= this._limit) return n;
 						var o = Object(a.a)(e[t]),
 							i = Object(s.c)(o);
-						return this._walkErrorTree(e[t], t, r.g([i], n))
+						return this._walkErrorTree(e[t], t, r.c([i], n))
 					}, e.id = "LinkedErrors", e
 				}()
 		},
@@ -1539,7 +1539,7 @@
 			n.d(t, "a", (function() {
 				return u
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/hub/esm/scope.js"),
 				i = n("./node_modules/@sentry/hub/esm/hub.js"),
 				s = n("./node_modules/@sentry/utils/esm/misc.js"),
@@ -1712,7 +1712,7 @@
 			n.d(t, "a", (function() {
 				return l
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = "?",
 				i = /^\s*at (?:(.*?) ?\()?((?:file|https?|blob|chrome-extension|native|eval|webpack|<anonymous>|[-a-z]+:|\/).*?)(?::(\d+))?(?::(\d+))?\)?\s*$/i,
 				s = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)?((?:file|https?|blob|chrome|webpack|resource|moz-extension).*?:\/.*?|\[native code\]|[^@]*(?:bundle|\d+\.js))(?::(\d+))?(?::(\d+))?\s*$/i,
@@ -1867,7 +1867,7 @@
 			n.d(t, "a", (function() {
 				return c
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/types/esm/status.js"),
 				i = n("./node_modules/@sentry/utils/esm/misc.js"),
 				s = n("./node_modules/@sentry/utils/esm/supports.js"),
@@ -1877,7 +1877,7 @@
 					function t() {
 						return null !== e && e.apply(this, arguments) || this
 					}
-					return r.c(t, e), t.prototype.sendEvent = function(e) {
+					return r.b(t, e), t.prototype.sendEvent = function(e) {
 						var t = {
 							body: JSON.stringify(e),
 							method: "POST",
@@ -1912,14 +1912,14 @@
 			n.d(t, "a", (function() {
 				return s
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/types/esm/status.js"),
 				i = n("./node_modules/@sentry/utils/esm/syncpromise.js"),
 				s = function(e) {
 					function t() {
 						return null !== e && e.apply(this, arguments) || this
 					}
-					return r.c(t, e), t.prototype.sendEvent = function(e) {
+					return r.b(t, e), t.prototype.sendEvent = function(e) {
 						var t = this;
 						return this._buffer.add(new i.a((function(n, r) {
 							var i = new XMLHttpRequest;
@@ -1941,6 +1941,67 @@
 			}));
 			var r = "sentry.javascript.browser",
 				o = "5.7.1"
+		},
+		"./node_modules/@sentry/browser/node_modules/tslib/tslib.es6.js": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "c", (function() {
+				return a
+			}));
+			var r = function(e, t) {
+				return (r = Object.setPrototypeOf || {
+						__proto__: []
+					}
+					instanceof Array && function(e, t) {
+						e.__proto__ = t
+					} || function(e, t) {
+						for (var n in t) t.hasOwnProperty(n) && (e[n] = t[n])
+					})(e, t)
+			};
+
+			function o(e, t) {
+				function n() {
+					this.constructor = e
+				}
+				r(e, t), e.prototype = null === t ? Object.create(t) : (n.prototype = t.prototype, new n)
+			}
+			var i = function() {
+				return (i = Object.assign || function(e) {
+					for (var t, n = 1, r = arguments.length; n < r; n++)
+						for (var o in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
+					return e
+				}).apply(this, arguments)
+			};
+
+			function s(e, t) {
+				var n = "function" == typeof Symbol && e[Symbol.iterator];
+				if (!n) return e;
+				var r, o, i = n.call(e),
+					s = [];
+				try {
+					for (;
+						(void 0 === t || t-- > 0) && !(r = i.next()).done;) s.push(r.value)
+				} catch (a) {
+					o = {
+						error: a
+					}
+				} finally {
+					try {
+						r && !r.done && (n = i.return) && n.call(i)
+					} finally {
+						if (o) throw o.error
+					}
+				}
+				return s
+			}
+
+			function a() {
+				for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(s(arguments[t]));
+				return e
+			}
 		},
 		"./node_modules/@sentry/core/esm/api.js": function(e, t, n) {
 			"use strict";
@@ -2024,7 +2085,7 @@
 			n.d(t, "a", (function() {
 				return p
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/core/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/utils/esm/logger.js"),
 				i = n("./node_modules/@sentry/utils/esm/is.js"),
 				s = n("./node_modules/@sentry/utils/esm/syncpromise.js"),
@@ -2038,7 +2099,7 @@
 			function h(e) {
 				var t = {};
 				return function(e) {
-					var t = e.defaultIntegrations && r.g(e.defaultIntegrations) || [],
+					var t = e.defaultIntegrations && r.c(e.defaultIntegrations) || [],
 						n = e.integrations,
 						o = [];
 					if (Array.isArray(n)) {
@@ -2052,7 +2113,7 @@
 							-1 === s.indexOf(e.name) && (o.push(e), s.push(e.name))
 						}))
 					} else {
-						if ("function" != typeof n) return r.g(t);
+						if ("function" != typeof n) return r.c(t);
 						o = n(t), o = Array.isArray(o) ? o : [o]
 					}
 					return o
@@ -2202,7 +2263,7 @@
 			n.d(t, "a", (function() {
 				return s
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/core/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/utils/esm/error.js"),
 				i = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+))?@)([\w\.-]+)(?::(\d+))?\/(.+)/,
 				s = function() {
@@ -2221,7 +2282,7 @@
 					}, e.prototype._fromString = function(e) {
 						var t = i.exec(e);
 						if (!t) throw new o.a("Invalid Dsn");
-						var n = r.e(t.slice(1), 6),
+						var n = r.b(t.slice(1), 6),
 							s = n[0],
 							a = n[1],
 							u = n[2],
@@ -2275,7 +2336,7 @@
 						}
 					}, e.id = "FunctionToString", e
 				}(),
-				s = n("./node_modules/tslib/tslib.es6.js"),
+				s = n("./node_modules/@sentry/core/node_modules/tslib/tslib.es6.js"),
 				a = n("./node_modules/@sentry/hub/esm/scope.js"),
 				u = n("./node_modules/@sentry/hub/esm/hub.js"),
 				c = n("./node_modules/@sentry/utils/esm/logger.js"),
@@ -2328,10 +2389,10 @@
 						}))
 					}, e.prototype._mergeOptions = function(e) {
 						return void 0 === e && (e = {}), {
-							blacklistUrls: s.g(this._options.blacklistUrls || [], e.blacklistUrls || []),
-							ignoreErrors: s.g(this._options.ignoreErrors || [], e.ignoreErrors || [], f),
+							blacklistUrls: s.c(this._options.blacklistUrls || [], e.blacklistUrls || []),
+							ignoreErrors: s.c(this._options.ignoreErrors || [], e.ignoreErrors || [], f),
 							ignoreInternal: void 0 === this._options.ignoreInternal || this._options.ignoreInternal,
-							whitelistUrls: s.g(this._options.whitelistUrls || [], e.whitelistUrls || [])
+							whitelistUrls: s.c(this._options.whitelistUrls || [], e.whitelistUrls || [])
 						}
 					}, e.prototype._getPossibleEventMessages = function(e) {
 						if (e.message) return [e.message];
@@ -2392,6 +2453,50 @@
 					}, e
 				}()
 		},
+		"./node_modules/@sentry/core/node_modules/tslib/tslib.es6.js": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			})), n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "c", (function() {
+				return i
+			}));
+			var r = function() {
+				return (r = Object.assign || function(e) {
+					for (var t, n = 1, r = arguments.length; n < r; n++)
+						for (var o in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
+					return e
+				}).apply(this, arguments)
+			};
+
+			function o(e, t) {
+				var n = "function" == typeof Symbol && e[Symbol.iterator];
+				if (!n) return e;
+				var r, o, i = n.call(e),
+					s = [];
+				try {
+					for (;
+						(void 0 === t || t-- > 0) && !(r = i.next()).done;) s.push(r.value)
+				} catch (a) {
+					o = {
+						error: a
+					}
+				} finally {
+					try {
+						r && !r.done && (n = i.return) && n.call(i)
+					} finally {
+						if (o) throw o.error
+					}
+				}
+				return s
+			}
+
+			function i() {
+				for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(o(arguments[t]));
+				return e
+			}
+		},
 		"./node_modules/@sentry/hub/esm/hub.js": function(e, t, n) {
 			"use strict";
 			(function(e) {
@@ -2402,7 +2507,7 @@
 				})), n.d(t, "c", (function() {
 					return h
 				}));
-				var r = n("./node_modules/tslib/tslib.es6.js"),
+				var r = n("./node_modules/@sentry/hub/node_modules/tslib/tslib.es6.js"),
 					o = n("./node_modules/@sentry/utils/esm/misc.js"),
 					i = n("./node_modules/@sentry/utils/esm/logger.js"),
 					s = n("./node_modules/@sentry/hub/esm/scope.js"),
@@ -2417,7 +2522,7 @@
 						return e.prototype._invokeClient = function(e) {
 							for (var t, n = [], o = 1; o < arguments.length; o++) n[o - 1] = arguments[o];
 							var i = this.getStackTop();
-							i && i.client && i.client[e] && (t = i.client)[e].apply(t, r.g(n, [i.scope]))
+							i && i.client && i.client[e] && (t = i.client)[e].apply(t, r.b(n, [i.scope]))
 						}, e.prototype.isOlderThan = function(e) {
 							return this._version < e
 						}, e.prototype.bindClient = function(e) {
@@ -2607,7 +2712,7 @@
 			})), n.d(t, "b", (function() {
 				return d
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
+			var r = n("./node_modules/@sentry/hub/node_modules/tslib/tslib.es6.js"),
 				o = n("./node_modules/@sentry/utils/esm/syncpromise.js"),
 				i = n("./node_modules/@sentry/utils/esm/is.js"),
 				s = n("./node_modules/@sentry/utils/esm/object.js"),
@@ -2669,7 +2774,7 @@
 						return this._span
 					}, e.clone = function(t) {
 						var n = new e;
-						return t && (n._breadcrumbs = r.g(t._breadcrumbs), n._tags = r.a({}, t._tags), n._extra = r.a({}, t._extra), n._context = r.a({}, t._context), n._user = t._user, n._level = t._level, n._span = t._span, n._transaction = t._transaction, n._fingerprint = t._fingerprint, n._eventProcessors = r.g(t._eventProcessors)), n
+						return t && (n._breadcrumbs = r.b(t._breadcrumbs), n._tags = r.a({}, t._tags), n._extra = r.a({}, t._extra), n._context = r.a({}, t._context), n._user = t._user, n._level = t._level, n._span = t._span, n._transaction = t._transaction, n._fingerprint = t._fingerprint, n._eventProcessors = r.b(t._eventProcessors)), n
 					}, e.prototype.clear = function() {
 						return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._context = {}, this._level = void 0, this._transaction = void 0, this._fingerprint = void 0, this._span = void 0, this._notifyScopeListeners(), this
 					}, e.prototype.addBreadcrumb = function(e, t) {
@@ -2677,13 +2782,13 @@
 							o = r.a({
 								timestamp: n
 							}, e);
-						return this._breadcrumbs = void 0 !== t && t >= 0 ? r.g(this._breadcrumbs, [Object(s.c)(o)]).slice(-t) : r.g(this._breadcrumbs, [Object(s.c)(o)]), this._notifyScopeListeners(), this
+						return this._breadcrumbs = void 0 !== t && t >= 0 ? r.b(this._breadcrumbs, [Object(s.c)(o)]).slice(-t) : r.b(this._breadcrumbs, [Object(s.c)(o)]), this._notifyScopeListeners(), this
 					}, e.prototype.clearBreadcrumbs = function() {
 						return this._breadcrumbs = [], this._notifyScopeListeners(), this
 					}, e.prototype._applyFingerprint = function(e) {
 						e.fingerprint = e.fingerprint ? Array.isArray(e.fingerprint) ? e.fingerprint : [e.fingerprint] : [], this._fingerprint && (e.fingerprint = e.fingerprint.concat(this._fingerprint)), e.fingerprint && !e.fingerprint.length && delete e.fingerprint
 					}, e.prototype.applyToEvent = function(e, t) {
-						return this._extra && Object.keys(this._extra).length && (e.extra = r.a({}, this._extra, e.extra)), this._tags && Object.keys(this._tags).length && (e.tags = r.a({}, this._tags, e.tags)), this._user && Object.keys(this._user).length && (e.user = r.a({}, this._user, e.user)), this._context && Object.keys(this._context).length && (e.contexts = r.a({}, this._context, e.contexts)), this._level && (e.level = this._level), this._transaction && (e.transaction = this._transaction), this._span && (e.contexts = e.contexts || {}, e.contexts.trace = this._span), this._applyFingerprint(e), e.breadcrumbs = r.g(e.breadcrumbs || [], this._breadcrumbs), e.breadcrumbs = e.breadcrumbs.length > 0 ? e.breadcrumbs : void 0, this._notifyEventProcessors(r.g(l(), this._eventProcessors), e, t)
+						return this._extra && Object.keys(this._extra).length && (e.extra = r.a({}, this._extra, e.extra)), this._tags && Object.keys(this._tags).length && (e.tags = r.a({}, this._tags, e.tags)), this._user && Object.keys(this._user).length && (e.user = r.a({}, this._user, e.user)), this._context && Object.keys(this._context).length && (e.contexts = r.a({}, this._context, e.contexts)), this._level && (e.level = this._level), this._transaction && (e.transaction = this._transaction), this._span && (e.contexts = e.contexts || {}, e.contexts.trace = this._span), this._applyFingerprint(e), e.breadcrumbs = r.b(e.breadcrumbs || [], this._breadcrumbs), e.breadcrumbs = e.breadcrumbs.length > 0 ? e.breadcrumbs : void 0, this._notifyEventProcessors(r.b(l(), this._eventProcessors), e, t)
 					}, e
 				}();
 
@@ -2731,6 +2836,48 @@
 						}
 					}, e
 				}()
+		},
+		"./node_modules/@sentry/hub/node_modules/tslib/tslib.es6.js": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			})), n.d(t, "b", (function() {
+				return i
+			}));
+			var r = function() {
+				return (r = Object.assign || function(e) {
+					for (var t, n = 1, r = arguments.length; n < r; n++)
+						for (var o in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
+					return e
+				}).apply(this, arguments)
+			};
+
+			function o(e, t) {
+				var n = "function" == typeof Symbol && e[Symbol.iterator];
+				if (!n) return e;
+				var r, o, i = n.call(e),
+					s = [];
+				try {
+					for (;
+						(void 0 === t || t-- > 0) && !(r = i.next()).done;) s.push(r.value)
+				} catch (a) {
+					o = {
+						error: a
+					}
+				} finally {
+					try {
+						r && !r.done && (n = i.return) && n.call(i)
+					} finally {
+						if (o) throw o.error
+					}
+				}
+				return s
+			}
+
+			function i() {
+				for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(o(arguments[t]));
+				return e
+			}
 		},
 		"./node_modules/@sentry/integrations/esm/dedupe.js": function(e, t, n) {
 			"use strict";
@@ -2881,104 +3028,130 @@
 		"./node_modules/@sentry/minimal/esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return s
-			})), n.d(t, "d", (function() {
 				return a
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "a", (function() {
+			})), n.d(t, "e", (function() {
 				return l
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "f", (function() {
 				return f
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "h", (function() {
 				return h
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "j", (function() {
 				return p
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "g", (function() {
 				return m
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "i", (function() {
 				return b
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "k", (function() {
 				return y
+			})), n.d(t, "l", (function() {
+				return _
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
-				o = n("./node_modules/@sentry/hub/esm/hub.js");
 
-			function i(e) {
+			function r(e, t) {
+				var n = "function" == typeof Symbol && e[Symbol.iterator];
+				if (!n) return e;
+				var r, o, i = n.call(e),
+					s = [];
+				try {
+					for (;
+						(void 0 === t || t-- > 0) && !(r = i.next()).done;) s.push(r.value)
+				} catch (a) {
+					o = {
+						error: a
+					}
+				} finally {
+					try {
+						r && !r.done && (n = i.return) && n.call(i)
+					} finally {
+						if (o) throw o.error
+					}
+				}
+				return s
+			}
+
+			function o() {
+				for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(r(arguments[t]));
+				return e
+			}
+			var i = n("./node_modules/@sentry/hub/esm/hub.js");
+
+			function s(e) {
 				for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-				var i = Object(o.b)();
-				if (i && i[e]) return i[e].apply(i, r.g(t));
+				var r = Object(i.b)();
+				if (r && r[e]) return r[e].apply(r, o(t));
 				throw new Error("No hub defined or " + e + " was not found on the hub, please open a bug report.")
 			}
 
-			function s(e) {
+			function a(e) {
 				var t;
 				try {
 					throw new Error("Sentry syntheticException")
 				} catch (e) {
 					t = e
 				}
-				return i("captureException", e, {
+				return s("captureException", e, {
 					originalException: e,
 					syntheticException: t
 				})
 			}
 
-			function a(e, t) {
+			function u(e, t) {
 				var n;
 				try {
 					throw new Error(e)
 				} catch (r) {
 					n = r
 				}
-				return i("captureMessage", e, t, {
+				return s("captureMessage", e, t, {
 					originalException: e,
 					syntheticException: n
 				})
 			}
 
-			function u(e) {
-				return i("captureEvent", e)
-			}
-
 			function c(e) {
-				i("configureScope", e)
+				return s("captureEvent", e)
 			}
 
 			function l(e) {
-				i("addBreadcrumb", e)
+				s("configureScope", e)
 			}
 
-			function d(e, t) {
-				i("setContext", e, t)
+			function d(e) {
+				s("addBreadcrumb", e)
 			}
 
-			function f(e) {
-				i("setExtras", e)
+			function f(e, t) {
+				s("setContext", e, t)
 			}
 
 			function h(e) {
-				i("setTags", e)
+				s("setExtras", e)
 			}
 
-			function p(e, t) {
-				i("setExtra", e, t)
+			function p(e) {
+				s("setTags", e)
 			}
 
 			function m(e, t) {
-				i("setTag", e, t)
+				s("setExtra", e, t)
 			}
 
-			function b(e) {
-				i("setUser", e)
+			function b(e, t) {
+				s("setTag", e, t)
 			}
 
 			function y(e) {
-				i("withScope", e)
+				s("setUser", e)
+			}
+
+			function _(e) {
+				s("withScope", e)
 			}
 		},
 		"./node_modules/@sentry/types/esm/severity.js": function(e, t, n) {
@@ -3033,23 +3206,37 @@
 			n.d(t, "a", (function() {
 				return i
 			}));
-			var r = n("./node_modules/tslib/tslib.es6.js"),
-				o = Object.setPrototypeOf || ({
+			var r = function(e, t) {
+				return (r = Object.setPrototypeOf || {
 						__proto__: []
 					}
-					instanceof Array ? function(e, t) {
-						return e.__proto__ = t, e
-					} : function(e, t) {
-						for (var n in t) e.hasOwnProperty(n) || (e[n] = t[n]);
-						return e
-					});
+					instanceof Array && function(e, t) {
+						e.__proto__ = t
+					} || function(e, t) {
+						for (var n in t) t.hasOwnProperty(n) && (e[n] = t[n])
+					})(e, t)
+			};
+			var o = Object.setPrototypeOf || ({
+					__proto__: []
+				}
+				instanceof Array ? function(e, t) {
+					return e.__proto__ = t, e
+				} : function(e, t) {
+					for (var n in t) e.hasOwnProperty(n) || (e[n] = t[n]);
+					return e
+				});
 			var i = function(e) {
 				function t(t) {
 					var n = this.constructor,
 						r = e.call(this, t) || this;
 					return r.message = t, r.name = n.prototype.constructor.name, o(r, n.prototype), r
 				}
-				return r.c(t, e), t
+				return function(e, t) {
+					function n() {
+						this.constructor = e
+					}
+					r(e, t), e.prototype = null === t ? Object.create(t) : (n.prototype = t.prototype, new n)
+				}(t, e), t
 			}(Error)
 		},
 		"./node_modules/@sentry/utils/esm/is.js": function(e, t, n) {
@@ -32314,200 +32501,6 @@
 				}
 			}
 		},
-		"./node_modules/tslib/tslib.es6.js": function(e, t, n) {
-			"use strict";
-			n.d(t, "c", (function() {
-				return o
-			})), n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "f", (function() {
-				return s
-			})), n.d(t, "b", (function() {
-				return a
-			})), n.d(t, "d", (function() {
-				return u
-			})), n.d(t, "e", (function() {
-				return c
-			})), n.d(t, "g", (function() {
-				return l
-			})), n.d(t, "h", (function() {
-				return d
-			}));
-			var r = function(e, t) {
-				return (r = Object.setPrototypeOf || {
-						__proto__: []
-					}
-					instanceof Array && function(e, t) {
-						e.__proto__ = t
-					} || function(e, t) {
-						for (var n in t) t.hasOwnProperty(n) && (e[n] = t[n])
-					})(e, t)
-			};
-
-			function o(e, t) {
-				function n() {
-					this.constructor = e
-				}
-				r(e, t), e.prototype = null === t ? Object.create(t) : (n.prototype = t.prototype, new n)
-			}
-			var i = function() {
-				return (i = Object.assign || function(e) {
-					for (var t, n = 1, r = arguments.length; n < r; n++)
-						for (var o in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, o) && (e[o] = t[o]);
-					return e
-				}).apply(this, arguments)
-			};
-
-			function s(e, t) {
-				var n = {};
-				for (var r in e) Object.prototype.hasOwnProperty.call(e, r) && t.indexOf(r) < 0 && (n[r] = e[r]);
-				if (null != e && "function" == typeof Object.getOwnPropertySymbols) {
-					var o = 0;
-					for (r = Object.getOwnPropertySymbols(e); o < r.length; o++) t.indexOf(r[o]) < 0 && Object.prototype.propertyIsEnumerable.call(e, r[o]) && (n[r[o]] = e[r[o]])
-				}
-				return n
-			}
-
-			function a(e, t, n, r) {
-				return new(n || (n = Promise))((function(o, i) {
-					function s(e) {
-						try {
-							u(r.next(e))
-						} catch (t) {
-							i(t)
-						}
-					}
-
-					function a(e) {
-						try {
-							u(r.throw(e))
-						} catch (t) {
-							i(t)
-						}
-					}
-
-					function u(e) {
-						var t;
-						e.done ? o(e.value) : (t = e.value, t instanceof n ? t : new n((function(e) {
-							e(t)
-						}))).then(s, a)
-					}
-					u((r = r.apply(e, t || [])).next())
-				}))
-			}
-
-			function u(e, t) {
-				var n, r, o, i, s = {
-					label: 0,
-					sent: function() {
-						if (1 & o[0]) throw o[1];
-						return o[1]
-					},
-					trys: [],
-					ops: []
-				};
-				return i = {
-					next: a(0),
-					throw: a(1),
-					return: a(2)
-				}, "function" == typeof Symbol && (i[Symbol.iterator] = function() {
-					return this
-				}), i;
-
-				function a(i) {
-					return function(a) {
-						return function(i) {
-							if (n) throw new TypeError("Generator is already executing.");
-							for (; s;) try {
-								if (n = 1, r && (o = 2 & i[0] ? r.return : i[0] ? r.throw || ((o = r.return) && o.call(r), 0) : r.next) && !(o = o.call(r, i[1])).done) return o;
-								switch (r = 0, o && (i = [2 & i[0], o.value]), i[0]) {
-									case 0:
-									case 1:
-										o = i;
-										break;
-									case 4:
-										return s.label++, {
-											value: i[1],
-											done: !1
-										};
-									case 5:
-										s.label++, r = i[1], i = [0];
-										continue;
-									case 7:
-										i = s.ops.pop(), s.trys.pop();
-										continue;
-									default:
-										if (!(o = (o = s.trys).length > 0 && o[o.length - 1]) && (6 === i[0] || 2 === i[0])) {
-											s = 0;
-											continue
-										}
-										if (3 === i[0] && (!o || i[1] > o[0] && i[1] < o[3])) {
-											s.label = i[1];
-											break
-										}
-										if (6 === i[0] && s.label < o[1]) {
-											s.label = o[1], o = i;
-											break
-										}
-										if (o && s.label < o[2]) {
-											s.label = o[2], s.ops.push(i);
-											break
-										}
-										o[2] && s.ops.pop(), s.trys.pop();
-										continue
-								}
-								i = t.call(e, s)
-							} catch (a) {
-								i = [6, a], r = 0
-							} finally {
-								n = o = 0
-							}
-							if (5 & i[0]) throw i[1];
-							return {
-								value: i[0] ? i[1] : void 0,
-								done: !0
-							}
-						}([i, a])
-					}
-				}
-			}
-
-			function c(e, t) {
-				var n = "function" == typeof Symbol && e[Symbol.iterator];
-				if (!n) return e;
-				var r, o, i = n.call(e),
-					s = [];
-				try {
-					for (;
-						(void 0 === t || t-- > 0) && !(r = i.next()).done;) s.push(r.value)
-				} catch (a) {
-					o = {
-						error: a
-					}
-				} finally {
-					try {
-						r && !r.done && (n = i.return) && n.call(i)
-					} finally {
-						if (o) throw o.error
-					}
-				}
-				return s
-			}
-
-			function l() {
-				for (var e = [], t = 0; t < arguments.length; t++) e = e.concat(c(arguments[t]));
-				return e
-			}
-
-			function d() {
-				for (var e = 0, t = 0, n = arguments.length; t < n; t++) e += arguments[t].length;
-				var r = Array(e),
-					o = 0;
-				for (t = 0; t < n; t++)
-					for (var i = arguments[t], s = 0, a = i.length; s < a; s++, o++) r[o] = i[s];
-				return r
-			}
-		},
 		"./node_modules/ua-parser-js/src/ua-parser.js": function(e, t, n) {
 			var r;
 			! function(o, i) {
@@ -35202,4 +35195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.573a14a842b8ae9ce046.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.36eaba71b4982fb7c9be.js.map
