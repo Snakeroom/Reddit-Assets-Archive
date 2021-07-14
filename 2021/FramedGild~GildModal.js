@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.20a3a80eb2b4f7f8115c.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.426a5b1a445497af317e.js
+// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -434,10 +434,10 @@
 				H = s("./src/reddit/helpers/trackers/gild.ts"),
 				W = s("./src/telemetry/index.ts"),
 				V = s("./src/reddit/actions/gold/awardKarma.ts"),
-				q = s("./src/reddit/actions/gold/constants.ts"),
-				J = s("./src/reddit/actions/gold/econPurchase.ts");
-			const z = Object(n.a)(q.r),
-				K = Object(n.a)(q.v),
+				J = s("./src/reddit/actions/gold/constants.ts"),
+				q = s("./src/reddit/actions/gold/econPurchase.ts");
+			const z = Object(n.a)(J.r),
+				K = Object(n.a)(J.v),
 				Y = (e, t) => async (s, n, {
 					gqlContext: a
 				}) => {
@@ -502,17 +502,17 @@
 					} finally {
 						Object(F.b)(F.a.GildingFlow)
 					}
-				}, X = Object(n.a)(q.u), Q = Object(n.a)(q.q), Z = () => async (e, t) => {
+				}, X = Object(n.a)(J.u), Q = Object(n.a)(J.q), Z = () => async (e, t) => {
 					e(Q()), window.setTimeout(() => {
 						t().gild.api.pending && e(X())
 					}, 2e3)
-				}, $ = Object(n.a)(q.p), ee = e => async (t, s) => {
+				}, $ = Object(n.a)(J.p), ee = e => async (t, s) => {
 					await t($(e)), t(Object(l.f)({
 						kind: v.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, te = Object(n.a)(q.s), se = (e, t) => {
+				}, te = Object(n.a)(J.s), se = (e, t) => {
 					const {
 						id: s
 					} = t, r = Object(U.a)(s) ? Object(P.F)(e, {
@@ -626,7 +626,7 @@
 					});
 					if (R && Object(C.a)(n, {
 							subredditId: R.id
-						}) && t(Object(J.a)(R.id, R.name, {
+						}) && t(Object(q.a)(R.id, R.name, {
 							force: !0
 						})), 0 === T && R) {
 						t(Object(o.a)(R.id, m, void 0, !0));
@@ -1582,9 +1582,9 @@
 				H = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/higherOrderComponents/makeAsync.tsx")),
 				W = s("./src/lib/loadWithRetries/index.ts"),
 				V = s("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const q = () => Object(W.a)(() => Promise.all([Promise.all([s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(V.d)().catch(() => {})])).then(e => e[0].default);
-			var J = Object(H.a)({
-					getComponent: q,
+			const J = () => Object(W.a)(() => Promise.all([Promise.all([s.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"), s.e("PennyPurchaseModal")]).then(s.bind(null, "./src/reddit/components/PennyPurchaseModal/index.tsx")), Object(V.d)().catch(() => {})])).then(e => e[0].default);
+			var q = Object(H.a)({
+					getComponent: J,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
@@ -2460,7 +2460,7 @@
 					if (I && t(I), Re(e, l) && (E(), c(b.n)), w || j) {
 						x(w ? w.name : j)
 					}
-					w && w.type !== f.f.User && v(w.id, w.name), a && (l.pennyPrice ? q() : Object(U.a)(), i || d(s))
+					w && w.type !== f.f.User && v(w.id, w.name), a && (l.pennyPrice ? J() : Object(U.a)(), i || d(s))
 				}
 				componentDidUpdate(e) {
 					e.awardingsPending && !this.props.awardingsPending && Re(this.props.awardings, this.props.selectedAward) && (this.props.displayUnusableAwardError(), this.props.selectAward(b.n))
@@ -2493,7 +2493,7 @@
 						showPurchaseModalInThisInstance: I
 					} = this.state, _ = w && I, C = _ && !f.pennyPrice, k = _ && !!f.pennyPrice, P = (C || k) && !c;
 					if (C && P) return null;
-					if (k && P) return n.a.createElement(J, null);
+					if (k && P) return n.a.createElement(q, null);
 					const N = x ? x.name : v,
 						A = !(!o || !o.isGold),
 						S = {
@@ -2538,7 +2538,7 @@
 						gildButtonProps: S,
 						subredditName: N,
 						subredditCoins: O
-					})), k && n.a.createElement(J, null))
+					})), k && n.a.createElement(q, null))
 				}
 			}
 			t.a = Object(a.b)(Ue, (e, {
@@ -3934,7 +3934,7 @@
 							{
 								H: r,
 								D: n
-							} = q(e.a),
+							} = J(e.a),
 							{
 								c: o = []
 							} = e;
@@ -4071,7 +4071,7 @@
 						key: s
 					}, t) : t, r)
 				},
-				q = e => {
+				J = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -4198,12 +4198,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case b.Hd.SmIcon:
+						case b.Jd.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Hd.SmIconHc:
+						case b.Jd.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5244,12 +5244,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.zd
+						experimentName: r.Bd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Hd.SmIcon || t === r.Hd.SmIconHc
+					return t === r.Jd.SmIcon || t === r.Jd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5281,4 +5281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.20a3a80eb2b4f7f8115c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.426a5b1a445497af317e.js.map

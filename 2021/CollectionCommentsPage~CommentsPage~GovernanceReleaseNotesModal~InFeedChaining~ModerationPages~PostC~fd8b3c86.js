@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.7591b1816296bfa297b3.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.3f4028035f8f7f657073.js
+// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86"], {
 		"./src/higherOrderComponents/withMux/index.tsx": function(e, t, s) {
@@ -19,13 +19,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Ic
 				});
-				return Object(u.Xd)(t) ? void 0 : t
+				return Object(u.Zd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Jc
 				});
-				return Object(u.Xd)(t) ? void 0 : t
+				return Object(u.Zd)(t) ? void 0 : t
 			}, (e, t) => e === u.Kc.Enabled && t === u.Kc.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -507,11 +507,11 @@
 					z = Object(i.useRef)(null),
 					[Y, $] = Object(i.useState)(W ? F : -1),
 					[J, q] = Object(i.useState)(W ? F : -1),
-					X = Object(r.a)(W),
-					Q = Object(r.a)(F);
+					Q = Object(r.a)(W),
+					X = Object(r.a)(F);
 				Object(i.useEffect)(() => {
-					(void 0 !== X && X !== W && W && Y < 0 && J < 0 || void 0 !== Q && Q !== F && W && (Y > F || J < F)) && ($(R(F, 1)), q(D(F, p.length, 1)))
-				}, [X, F, W, Y, J, Q, p.length, A]);
+					(void 0 !== Q && Q !== W && W && Y < 0 && J < 0 || void 0 !== X && X !== F && W && (Y > F || J < F)) && ($(R(F, 1)), q(D(F, p.length, 1)))
+				}, [Q, F, W, Y, J, X, p.length, A]);
 				const Z = Object(i.useRef)(),
 					ee = Object(i.useCallback)(e => {
 						e.forEach(e => {
@@ -1005,8 +1005,8 @@
 				$ = s("./src/reddit/selectors/experiments/postSeo.ts"),
 				J = s("./src/reddit/selectors/media.ts"),
 				q = s("./src/reddit/selectors/postCreations.ts"),
-				X = s("./src/reddit/selectors/posts.ts"),
-				Q = s("./src/reddit/selectors/seo/index.ts"),
+				Q = s("./src/reddit/selectors/posts.ts"),
+				X = s("./src/reddit/selectors/seo/index.ts"),
 				Z = s("./src/reddit/components/Media/getResolution.ts"),
 				ee = s("./src/reddit/components/Media/index.m.less"),
 				te = s.n(ee);
@@ -1064,14 +1064,14 @@
 				}) => !!e.media && pe.has(e.media.type),
 				ge = Object(W.t)(),
 				xe = Object(u.c)({
-					imgOCRAltTextVariant: (e, t) => Object(Q.d)(e, t) ? Object($.b)(e, t.post, !0) : void 0,
+					imgOCRAltTextVariant: (e, t) => Object(X.d)(e, t) ? Object($.b)(e, t.post, !0) : void 0,
 					OCRAltText: (e, {
 						post: t
 					}) => Object($.a)(e, t.id),
 					subredditOrProfileDisplayText: (e, t) => Object($.k)(e, t),
 					subredditOrProfile: (e, {
 						post: t
-					}) => Object(X.R)(e, {
+					}) => Object(Q.R)(e, {
 						postId: t.id
 					}),
 					isEditing: (e, {
@@ -1079,7 +1079,7 @@
 					}) => Object(q.K)(e, {
 						postId: t.id
 					}),
-					shouldShowAltText: (e, t) => Object(Q.d)(e, t),
+					shouldShowAltText: (e, t) => Object(X.d)(e, t),
 					isGalleryTileLayout: (e, {
 						shouldShowGalleryTileOption: t,
 						post: s,
@@ -1357,9 +1357,9 @@
 							obfuscated: $,
 							height: J,
 							width: q,
-							needsBackgroundBlur: X
+							needsBackgroundBlur: Q
 						} = this.getMediaInfo(this.props, this.state),
-						Q = {
+						X = {
 							showCentered: p,
 							isListing: d,
 							showFull: b,
@@ -1367,7 +1367,7 @@
 							width: q
 						},
 						Z = {
-							...Q,
+							...X,
 							className: t,
 							forceAspectRatio: n,
 							viewportWidth: V
@@ -1379,7 +1379,7 @@
 						blurSrc: $
 					}), l.a.createElement(ue, {
 						isVisible: E
-					}, l.a.createElement(L.a, se({}, Q, {
+					}, l.a.createElement(L.a, se({}, X, {
 						altText: this.getAltText(),
 						className: this.props.imageBoxClassName,
 						contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1464,7 +1464,7 @@
 								alwaysWrapMedia: !0
 							}), l.a.createElement(ue, {
 								isVisible: E
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(L.a, se({}, Q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(L.a, se({}, X, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1502,7 +1502,7 @@
 								title: h.title
 							})) : l.a.createElement(j.a, se({}, Z, {
 								alwaysWrapMedia: !0
-							}), E && l.a.createElement(S.a, se({}, Q, {
+							}), E && l.a.createElement(S.a, se({}, X, {
 								isResponsive: a || h.media.provider === Y.v.IFrameEmbed,
 								title: h.title,
 								childRef: this.storeChildRef,
@@ -1514,10 +1514,10 @@
 							let e = J,
 								t = q;
 							return e > Y.j && (t = q / J * (e = Y.j)), l.a.createElement(j.a, se({}, Z, {
-								blurSrc: X ? h.media.gifBackgroundImage : void 0
+								blurSrc: Q ? h.media.gifBackgroundImage : void 0
 							}), l.a.createElement(ue, {
 								isVisible: E
-							}, l.a.createElement(R.a, se({}, Q, {
+							}, l.a.createElement(R.a, se({}, X, {
 								isNotCardView: u,
 								height: a ? void 0 : e,
 								width: a ? void 0 : t,
@@ -1534,7 +1534,7 @@
 								alwaysWrapMedia: !0
 							}), l.a.createElement(ue, {
 								isVisible: E
-							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(L.a, se({}, Q, {
+							}, l.a.createElement(l.a.Fragment, null, l.a.createElement(L.a, se({}, X, {
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
 								imageClassName: this.props.imageBoxClassName,
@@ -1592,11 +1592,11 @@
 								O = this.state.viewportWidth - 2 * de;
 							let V = W;
 							return this.props.isMiniCard && !this.props.isMiniCardHQPreviews && (h.thumbnail && Object(x.a)(h.thumbnail.url) ? V = h.thumbnail.url : h.preview && Object(x.a)(h.preview.url) && (V = h.preview.url)), l.a.createElement(j.a, se({}, Z, {
-								blurSrc: X ? V : void 0,
+								blurSrc: Q ? V : void 0,
 								isExpando: !!a
 							}), l.a.createElement(ue, {
 								isVisible: E
-							}, l.a.createElement(L.a, se({}, Q, {
+							}, l.a.createElement(L.a, se({}, X, {
 								altText: this.getAltText(),
 								className: this.props.imageBoxClassName,
 								contentImageClassName: this.props.imageBoxContentImageClassName,
@@ -1619,7 +1619,7 @@
 							const $ = Object(U.b)(h.media.mediaMetadata || {}, Object(U.c)(d), Y.p, q),
 								re = Object(U.a)(h.media.gallery, h.isSponsored);
 							return l.a.createElement(j.a, se({}, Z, {
-								blurSrc: X ? W : void 0,
+								blurSrc: Q ? W : void 0,
 								isExpando: !!a,
 								maxGalleryHeight: $ + re,
 								className: te.a.galleryMediaContainer,
@@ -1975,4 +1975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.7591b1816296bfa297b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86.3f4028035f8f7f657073.js.map
