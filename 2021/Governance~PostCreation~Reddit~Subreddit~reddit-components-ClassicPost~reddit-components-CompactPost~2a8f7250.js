@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.744b01f540c3a79fb81e.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.9f3f6942a60df59004ac.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -185,7 +185,7 @@
 						name: `${n.dc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(I.K)(d())) return o(Object(c.k)({
+					if (!Object(I.J)(d())) return o(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void o(Object(a.j)());
 					const x = Object(I.j)(d());
@@ -344,7 +344,7 @@
 				}) => {
 					const i = r(),
 						a = i.multireddits.models;
-					if (!Object(I.K)(i)) return;
+					if (!Object(I.J)(i)) return;
 					const c = (e = !0) => {
 							t(Object(l.f)({
 								text: s.fbt._("Sorry, failed to {followAction}", [s.fbt._param("followAction", e ? s.fbt._("follow", null, {
@@ -462,7 +462,7 @@
 			var j = r("./src/reddit/components/CategoryTagList/index.m.less"),
 				C = r.n(j);
 			const k = Object(o.b)(() => Object(i.c)({
-				labelNSFW: c.T
+				labelNSFW: c.S
 			}));
 			t.a = k(Object(a.c)(({
 				postCategories: e,
@@ -849,7 +849,7 @@
 				u = r("./src/reddit/models/Flair/index.ts"),
 				m = r("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.T
+					labelNSFW: m.S
 				}),
 				b = Object(a.b)(p),
 				f = e => {
@@ -2213,11 +2213,11 @@
 			})), r.d(t, "K", (function() {
 				return V
 			})), r.d(t, "f", (function() {
-				return $
-			})), r.d(t, "i", (function() {
-				return G
-			})), r.d(t, "G", (function() {
 				return J
+			})), r.d(t, "i", (function() {
+				return $
+			})), r.d(t, "G", (function() {
+				return G
 			})), r.d(t, "C", (function() {
 				return z
 			})), r.d(t, "I", (function() {
@@ -2419,16 +2419,16 @@
 					const r = e.features.comments.submit.error[t];
 					return r && r.fields ? r.fields.map(e => e.msg) : []
 				},
-				$ = (e, {
+				J = (e, {
 					draftKey: t
 				}) => {
 					const r = e.features.comments.drafts[t];
 					return !!r && r.autofocusDisabled
 				},
-				G = (e, {
+				$ = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				J = (e, {
+				G = (e, {
 					commentId: t
 				}) => {
 					const r = t ? e.features.comments.submit.error[t] : void 0;
@@ -2452,7 +2452,7 @@
 							commentId: t
 						}),
 						s = r && r.authorId || "";
-					return Object(m.S)(e, s)
+					return Object(m.R)(e, s)
 				},
 				ee = (e, {
 					commentId: t
@@ -2518,4 +2518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.744b01f540c3a79fb81e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.9f3f6942a60df59004ac.js.map

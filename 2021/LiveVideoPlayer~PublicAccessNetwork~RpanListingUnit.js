@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.6d167bf4d0d9daafbb17.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.61d4a965bf41dcbb7e11.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -399,7 +399,7 @@
 				apiContext: r
 			}) => {
 				const u = a();
-				if (Object(d.K)(u))
+				if (Object(d.J)(u))
 					if (Object(c.f)(u)) await Object(n.g)(r(), e, t);
 					else {
 						await Object(o.d)(e);
@@ -993,8 +993,8 @@
 				O = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
-				D = s("./src/reddit/models/Vote/index.ts"),
-				B = s("./src/reddit/selectors/subreddit.ts"),
+				B = s("./src/reddit/models/Vote/index.ts"),
+				D = s("./src/reddit/selectors/subreddit.ts"),
 				P = s("./src/reddit/selectors/user.ts"),
 				H = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/Buttons.tsx"),
 				F = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.m.less"),
@@ -1266,10 +1266,10 @@
 			}))(class extends a.Component {
 				constructor(e) {
 					super(e), this.handleUpVote = () => {
-						const e = this.toggleVoteState(D.a.upvoted);
+						const e = this.toggleVoteState(B.a.upvoted);
 						this.vote(e)
 					}, this.handleDownVote = () => {
-						const e = this.toggleVoteState(D.a.downvoted);
+						const e = this.toggleVoteState(B.a.downvoted);
 						this.vote(e)
 					}, this.state = {
 						voteStates: new Map
@@ -1283,7 +1283,7 @@
 						score: e,
 						voteState: t
 					} = this.props.broadcast.post;
-					return null == e ? null : t && void 0 !== this.voteState ? e - Object(D.e)(t) + this.voteState : e
+					return null == e ? null : t && void 0 !== this.voteState ? e - Object(B.e)(t) + this.voteState : e
 				}
 				componentDidMount() {
 					this.setVoteStateFromBroadcastProp()
@@ -1295,8 +1295,8 @@
 					s && !a && this.setVoteStateFromBroadcastProp()
 				}
 				render() {
-					const e = this.voteState === D.a.upvoted,
-						t = this.voteState === D.a.downvoted;
+					const e = this.voteState === B.a.upvoted,
+						t = this.voteState === B.a.downvoted;
 					return r.a.createElement("div", {
 						className: W.a.votePanel
 					}, r.a.createElement(ie, {
@@ -1314,7 +1314,7 @@
 						id: e,
 						voteState: t
 					} = this.props.broadcast.post;
-					this.setVoteState(e, Object(D.e)(t))
+					this.setVoteState(e, Object(B.e)(t))
 				}
 				setVoteState(e, t) {
 					const {
@@ -1328,7 +1328,7 @@
 					}
 				}
 				toggleVoteState(e) {
-					return e === this.voteState ? D.a.notVoted : e
+					return e === this.voteState ? B.a.notVoted : e
 				}
 				vote(e) {
 					const {
@@ -1338,7 +1338,7 @@
 					} = this.props, {
 						id: r
 					} = t.post;
-					this.setVoteState(r, e), this.props.vote(r, e), e === D.a.upvoted ? s() : e === D.a.downvoted && a()
+					this.setVoteState(r, e), this.props.vote(r, e), e === B.a.upvoted ? s() : e === B.a.downvoted && a()
 				}
 			}), ie = ({
 				onClick: e,
@@ -1434,7 +1434,7 @@
 				}), r.a.createElement(Ee, {
 					isSubscribed: o
 				}))
-			}, Ce = e => Object(o.e)(t => Object(B.eb)(t, {
+			}, Ce = e => Object(o.e)(t => Object(D.eb)(t, {
 				identifier: {
 					name: e,
 					type: b.a.PROFILE
@@ -1453,7 +1453,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, a = Object(o.e)(e => Object(P.nb)(e, {
+				} = e, a = Object(o.e)(e => Object(P.mb)(e, {
 					userName: s
 				})), i = Ie(a), c = i && Object(x.a)(a.accountIcon);
 				return r.a.createElement("div", {
@@ -1485,8 +1485,8 @@
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), Ie = e => {
 				const t = Object(o.e)(P.j),
-					s = Object(o.e)(P.C),
-					a = Object(o.e)(P.db);
+					s = Object(o.e)(P.B),
+					a = Object(o.e)(P.cb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1662,4 +1662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.6d167bf4d0d9daafbb17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.61d4a965bf41dcbb7e11.js.map

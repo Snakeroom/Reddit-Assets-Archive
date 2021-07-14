@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.95d3e7f4a2ab91dfe164.js
-// Retrieved at 7/13/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.6bdc3a0d53a597e225b9.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -17,9 +17,9 @@
 			})), r.d(t, "moreItemsLoaded", (function() {
 				return D
 			})), r.d(t, "moreItemsFailed", (function() {
-				return K
-			})), r.d(t, "moreItemsRequested", (function() {
 				return R
+			})), r.d(t, "moreItemsRequested", (function() {
+				return G
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/lodash/difference.js"),
@@ -110,7 +110,7 @@
 						meta: r().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(g)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(g))])
-				}, M = Object(i.a)(T.c), D = Object(i.a)(T.b), K = Object(i.a)(T.a), R = () => async (e, t, {
+				}, M = Object(i.a)(T.c), D = Object(i.a)(T.b), R = Object(i.a)(T.a), G = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const s = t(),
@@ -164,7 +164,7 @@
 							meta: s.meta,
 							...r
 						}))
-					} else e(K({
+					} else e(R({
 						account: C.body.data ? C.body.data.account : null,
 						error: C.error,
 						fetchedToken: b.token,
@@ -295,9 +295,9 @@
 				}
 			}, e.children));
 			var D = r("./src/reddit/components/ProfileItemList/index.tsx"),
-				K = r("./node_modules/lodash/noop.js"),
-				R = r.n(K),
-				G = r("./src/reddit/actions/ads/index.ts"),
+				R = r("./node_modules/lodash/noop.js"),
+				G = r.n(R),
+				K = r("./src/reddit/actions/ads/index.ts"),
 				J = r("./src/reddit/actions/comment/list.ts"),
 				H = r("./src/reddit/actions/post.ts"),
 				U = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -350,13 +350,13 @@
 				oe = Object(i.b)(se, e => ({
 					onBottomViewed: (t, r) => e(Object(J.c)(t, r)),
 					adBrandSafetyStatusReceived: t => {
-						e(G.d({
+						e(K.d({
 							isViewSafe: t
 						}))
 					},
 					openPost: t => e(Object(H.M)(t)),
-					fireAdPixelsOfType: R.a,
-					trackOnPostEnteredViewport: R.a
+					fireAdPixelsOfType: G.a,
+					trackOnPostEnteredViewport: G.a
 				}), (e, t, r) => ({
 					...e,
 					...t,
@@ -399,7 +399,7 @@
 				}).apply(this, arguments)
 			}
 			const je = Object(I.t)(),
-				ye = Object(c.a)(I.B, ee.db, (e, {
+				ye = Object(c.a)(I.B, ee.cb, (e, {
 					location: t
 				}) => o()([...Object(m.a)(t.search)]), I.O, (e, {
 					match: t
@@ -407,7 +407,7 @@
 					match: t
 				}) => Object(be.j)(e, {
 					profileName: t.params.profileName
-				}), ee.K, (e, {
+				}), ee.J, (e, {
 					match: t
 				}) => Object(ee.e)(e, d.dc + t.params.profileName), (e, t, r, s, o, n, a, i) => {
 					const {
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.95d3e7f4a2ab91dfe164.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.6bdc3a0d53a597e225b9.js.map

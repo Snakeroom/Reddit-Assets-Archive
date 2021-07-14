@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0b4b1731f37f0f2a76aa.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.969e3eac5036c1e01cb5.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -167,7 +167,7 @@
 				j = (e, t, r, n) => async (s, i, {
 					gqlContext: a
 				}) => {
-					const o = Object(p.K)(i()),
+					const o = Object(p.J)(i()),
 						c = await Object(d.g)(a(), {
 							subredditId: e,
 							period: t,
@@ -1506,7 +1506,7 @@
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && J.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.L)(t.pageLayer)
 				});
-			var K = q(Object(i.b)(Z, (e, t) => ({
+			var Q = q(Object(i.b)(Z, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(u.p)({
 						subredditId: t.subredditId,
 						forceState: !1
@@ -1531,7 +1531,7 @@
 						hk: "36nXSp"
 					}))
 				}))),
-				Q = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				K = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
 				$ = r("./src/higherOrderComponents/makeAsync.tsx");
 			var Y = Object($.a)({
 					ErrorComponent: () => null,
@@ -1542,7 +1542,7 @@
 				ee = r("./src/reddit/constants/screenWidths.ts"),
 				te = r("./src/reddit/models/Theme/index.ts"),
 				re = r("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const ne = Object(Q.a)(({
+			const ne = Object(K.a)(({
 				className: e,
 				children: t,
 				isTopBannerVariant: r,
@@ -1599,7 +1599,7 @@
 				layout: e.layout,
 				disableFullscreen: e.disableFullscreen,
 				maxWidth: e.maxWidth
-			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(K, {
+			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(Q, {
 				homeUrl: e.homeUrl,
 				isTopBannerVariant: e.isTopBannerVariant,
 				subredditId: e.subredditId
@@ -2065,7 +2065,7 @@
 				I = m.a.wrapped(o.a, "RawHTMLDisplay", j.a);
 			var C = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: g.l,
-					isNightmodeOn: x.W
+					isNightmodeOn: x.V
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -2148,8 +2148,8 @@
 			const Z = Object(a.c)({
 					stylesheet: e => e.stylesheets
 				}),
-				K = Object(i.b)(Z),
-				Q = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
+				Q = Object(i.b)(Z),
+				K = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
 			class $ extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
@@ -2169,7 +2169,7 @@
 					this.iframe && this.iframe.contentWindow && this.iframeContent && (this.iframe.contentWindow.document.body && this.iframe.contentWindow.document.body.childNodes.length || this.writeIFrameDocument())
 				}
 				renderIframeContent(e) {
-					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = Q(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
+					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = K(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
 				}
 				render() {
 					const {
@@ -2187,7 +2187,7 @@
 					}))
 				}
 			}
-			var Y = K($),
+			var Y = Q($),
 				X = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				ee = r.n(X);
 			var te = m.a.div("ImageFrame", ee.a),
@@ -2268,7 +2268,7 @@
 				Ee = m.a.div("LinkContainer", fe.a),
 				ye = Object(a.c)({
 					userIsBanned: be.cb,
-					userIsLoggedIn: x.K
+					userIsLoggedIn: x.J
 				});
 			var ke = Object(i.b)(ye)(e => {
 					const {
@@ -3164,4 +3164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0b4b1731f37f0f2a76aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.969e3eac5036c1e01cb5.js.map

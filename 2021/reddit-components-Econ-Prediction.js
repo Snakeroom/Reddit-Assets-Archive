@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d40d20655fbfcc2821d8.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.14ca2728fbfbff148833.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(i, a, r) {
@@ -875,8 +875,8 @@
 				post: V.F,
 				subredditOrProfile: V.R,
 				userCoins: b.d,
-				userIsLoggedIn: b.K,
-				userId: b.pb
+				userIsLoggedIn: b.J,
+				userId: b.ob
 			}), Ni = {
 				onPredictionResolve: h.i,
 				onPredictionVote: h.j,
@@ -1101,9 +1101,9 @@
 				subredditId: r
 			}) {
 				var x;
-				const p = Object(k.e)(c.W),
+				const p = Object(k.e)(c.V),
 					f = Object(k.e)(c.j),
-					d = Object(k.e)(c.C),
+					d = Object(k.e)(c.B),
 					u = Object(k.e)(i => Object(l.a)(i, {
 						subredditId: r
 					}));
@@ -1830,4 +1830,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d40d20655fbfcc2821d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.14ca2728fbfbff148833.js.map

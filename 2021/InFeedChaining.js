@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.5d3244a5831fd0373f82.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.b529e130dfd72dbb6957.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2423,7 +2423,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(i.b)(() => Object(o.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -2522,7 +2522,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(g.E, w.cb, (e, {
+				N = Object(o.b)(() => Object(c.a)(g.E, w.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.F, (e, t, s, n, r, i) => ({
@@ -4322,7 +4322,7 @@
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: l.S,
-				hideNSFWPref: h.C,
+				hideNSFWPref: h.B,
 				isActive: p.j,
 				moderatorPermissions: u.k,
 				modModeEnabled: l.Q,
@@ -4923,4 +4923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.5d3244a5831fd0373f82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.b529e130dfd72dbb6957.js.map

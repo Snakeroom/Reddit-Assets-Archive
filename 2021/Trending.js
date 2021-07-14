@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.7d669785fd99a830c15a.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.c1517a0da10369fd86c9.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -400,7 +400,7 @@
 				crosspostRoot: u.d,
 				crosspostSubredditOrProfile: u.e,
 				flairStyleTemplate: c.S,
-				hideNSFWPref: b.C,
+				hideNSFWPref: b.B,
 				isActive: u.j,
 				moderatorPermissions: m.k,
 				modModeEnabled: c.Q,
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.7d669785fd99a830c15a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.c1517a0da10369fd86c9.js.map

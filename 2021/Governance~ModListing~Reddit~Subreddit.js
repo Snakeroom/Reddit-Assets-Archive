@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.dcbf253e245154c001ee.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9d2d37703b3c74f3bff7.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -818,7 +818,7 @@
 				I = l.a.div("BackupImage", h.a),
 				w = Object(u.t)();
 			t.b = w(e => {
-				const t = Object(s.e)(m.W);
+				const t = Object(s.e)(m.V);
 				let r, o, l;
 				if (e.subredditOrProfile) {
 					const {
@@ -1072,9 +1072,9 @@
 			}
 			const v = Object(l.c)({
 					currentUser: p.j,
-					isNightMode: p.W,
-					shouldHideNSFW: p.C,
-					user: p.nb
+					isNightMode: p.V,
+					shouldHideNSFW: p.B,
+					user: p.mb
 				}),
 				O = Object(c.b)(v);
 			t.a = O(e => {
@@ -1937,7 +1937,7 @@
 			})), r.d(t, "e", (function() {
 				return J
 			})), r.d(t, "d", (function() {
-				return V
+				return z
 			})), r.d(t, "u", (function() {
 				return G
 			})), r.d(t, "v", (function() {
@@ -2078,7 +2078,7 @@
 							break
 						}
 						case n.Jb.SUBREDDIT_WIKI:
-							Object(I.a)(z(r, i)(t));
+							Object(I.a)(V(r, i)(t));
 							break;
 						case n.Jb.COINS:
 							Object(I.a)(A(r, i)(t)), Object(I.a)(M()(t));
@@ -2115,7 +2115,7 @@
 							p && Object(I.a)(F()(t));
 							break;
 						case n.Jb.GEOTAGGING:
-							p && Object(I.a)(V()(t));
+							p && Object(I.a)(z()(t));
 							break;
 						case n.Jb.SUBREDDIT_CREATION:
 							p && Object(I.a)(K()(t));
@@ -2414,7 +2414,7 @@
 					noun: "screen",
 					...k(e)
 				}),
-				z = (e, t) => r => ({
+				V = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2425,7 +2425,7 @@
 					userSubreddit: y.userSubreddit(r),
 					adblock: y.adblock(r)
 				}),
-				V = () => e => ({
+				z = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3142,4 +3142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.dcbf253e245154c001ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9d2d37703b3c74f3bff7.js.map

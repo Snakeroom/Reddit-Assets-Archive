@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.04745ecaf3c66654a8ef.js
-// Retrieved at 7/13/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.ddcf71ebceb1a454eb06.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -471,11 +471,11 @@
 			const {
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = u.a.wrapped(I, "PrivateKey", W.a), K = u.a.div("ButtonsContainer", W.a), V = u.a.div("Container", W.a), J = u.a.div("ContainerExp", W.a), X = u.a.div("Description", W.a), Q = u.a.div("PrivateSubredditDetails", W.a), $ = u.a.div("PrivateSubredditDescription", W.a), ee = u.a.h3("PrivateSubredditName", W.a), te = u.a.a("Link", W.a), ne = u.a.wrapped(A.k, "LinkRouterButton", W.a), re = u.a.wrapped(A.j, "LinkButton", W.a), ae = u.a.wrapped(A.n, "SecondaryLinkRouterButton", W.a), oe = u.a.wrapped(A.m, "SecondaryLinkButton", W.a), se = u.a.wrapped(ne, "GoHomeLinkButton", W.a), ie = u.a.wrapped(_.a, "CreateCommunityButton", W.a), le = u.a.img("Image", W.a), ce = u.a.img("ImagePlaceholder", W.a), ue = u.a.wrapped(ne, "LeftLinkRouterButton", W.a), de = u.a.wrapped(re, "LeftLinkButton", W.a), me = u.a.wrapped(oe, "SecondaryLeftLinkButton", W.a), pe = u.a.wrapped(ae, "SecondaryLeftLinkRouterButton", W.a), he = u.a.h3("Title", W.a), _e = u.a.div("PageBody", W.a), be = u.a.div("QuarantineMessageWrapper", W.a), fe = Object(c.c)({
-				isLoggedIn: H.J,
+				isLoggedIn: H.I,
 				origin: q.j,
 				user: H.j,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(H.K)(e)) return !1;
+					if (!Object(H.J)(e)) return !1;
 					const t = Object(Y.d)(e);
 					if (!t) return !1;
 					const n = Object(H.e)(e, t);
@@ -797,8 +797,8 @@
 				v = Object(i.c)({
 					isInSrCreationEntrypointBehaviorExperiment: b.a,
 					isInSrCreationEntrypointCopyExperiment: b.b,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.hb)(e),
-					userIsSuspended: f.P
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.gb)(e),
+					userIsSuspended: f.O
 				});
 			t.a = Object(s.b)(v, (e, {
 				eventSource: t
@@ -2024,7 +2024,7 @@
 							return n && n.coinPrice >= c.g
 						})
 					},
-					isNightmodeOn: g.W
+					isNightmodeOn: g.V
 				}), e => ({
 					openPost: t => e(Object(h.M)(t))
 				}));
@@ -2248,4 +2248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.04745ecaf3c66654a8ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.ddcf71ebceb1a454eb06.js.map

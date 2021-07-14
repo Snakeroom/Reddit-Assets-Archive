@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.cb4530e8fcf7650a0d77.js
-// Retrieved at 7/7/2021, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.66016e16ea186e525dd5.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -64,7 +64,7 @@
 				}, E = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(f.K)(s())) return void t(Object(d.i)(u.a.LOGIN_MODAL_ID));
+					if (!Object(f.J)(s())) return void t(Object(d.i)(u.a.LOGIN_MODAL_ID));
 					const n = s().features.comments.models[e];
 					if (!n) return;
 					const r = n.isLocked ? m.j : m.d;
@@ -220,9 +220,9 @@
 			})), s.d(t, "d", (function() {
 				return V
 			})), s.d(t, "f", (function() {
-				return K
-			})), s.d(t, "a", (function() {
 				return G
+			})), s.d(t, "a", (function() {
+				return K
 			})), s.d(t, "b", (function() {
 				return $
 			})), s.d(t, "c", (function() {
@@ -326,7 +326,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, F = Object(r.a)(E.t), Q = Object(r.a)(E.s), H = Object(r.a)(E.r), K = (e, t, s) => async (n, r, {
+				}, F = Object(r.a)(E.t), Q = Object(r.a)(E.s), H = Object(r.a)(E.r), G = (e, t, s) => async (n, r, {
 					apiContext: S
 				}) => {
 					n(Object(a.c)());
@@ -524,7 +524,7 @@
 						}), p.b.Error);
 						n(Object(c.f)(e))
 					}
-				}, G = Object(r.a)(E.a), $ = Object(r.a)(E.c), q = Object(r.a)(E.d)
+				}, K = Object(r.a)(E.a), $ = Object(r.a)(E.c), q = Object(r.a)(E.d)
 		},
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, s) {
 			"use strict";
@@ -820,8 +820,8 @@
 				});
 			var Q = s("./src/reddit/helpers/isPost.ts"),
 				H = s("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				K = s("./src/reddit/helpers/routeKey/index.ts"),
-				G = s("./src/reddit/models/ModQueue/index.ts"),
+				G = s("./src/reddit/helpers/routeKey/index.ts"),
+				K = s("./src/reddit/models/ModQueue/index.ts"),
 				$ = s("./src/reddit/models/PostDraft/index.ts"),
 				q = s("./src/reddit/models/RemovalReason/index.ts"),
 				z = s("./src/reddit/models/Toast/index.ts"),
@@ -966,7 +966,7 @@
 											},
 											s = Object(J.f)(c),
 											o = c.platform.currentPage && c.platform.currentPage.routeMatch;
-										let n = s && o && Object(K.a)(o, c, c.posts.models[e.postId]);
+										let n = s && o && Object(G.a)(o, c, c.posts.models[e.postId]);
 										if (n || (n = Object(g.a)(e.postId, null, {
 												sort: v.t,
 												hasSortParam: !0
@@ -1043,7 +1043,7 @@
 					if (b.ok) {
 						const o = {
 							ids: e,
-							operation: G.a.RemovalReason,
+							operation: K.a.RemovalReason,
 							username: u,
 							options: {
 								modNote: r,
@@ -1106,4 +1106,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.cb4530e8fcf7650a0d77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.66016e16ea186e525dd5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2117f222deb8639d4afc.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.20a3a80eb2b4f7f8115c.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1335,7 +1335,7 @@
 				}) => {
 					t(p());
 					const c = s(),
-						l = Object(d.K)(c);
+						l = Object(d.J)(c);
 					try {
 						const s = !l,
 							r = await Object(i.b)({
@@ -2285,7 +2285,7 @@
 					isAnonymous: A.f,
 					iFramed: A.g,
 					isGildPending: A.e,
-					isEmployee: F.H,
+					isEmployee: F.G,
 					isRecommendedCoinPackagePending: M.l,
 					message: A.c,
 					postOrComment: (e, {
@@ -2658,7 +2658,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -2757,7 +2757,7 @@
 						style: t
 					}, e.children)
 				},
-				A = Object(o.b)(() => Object(d.a)(O.E, j.cb, (e, {
+				A = Object(o.b)(() => Object(d.a)(O.E, j.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(O.b)(e, s) : null, x.a, v.actionInfo, O.F, (e, t, s, r, n, a) => ({
@@ -5281,4 +5281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2117f222deb8639d4afc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.20a3a80eb2b4f7f8115c.js.map

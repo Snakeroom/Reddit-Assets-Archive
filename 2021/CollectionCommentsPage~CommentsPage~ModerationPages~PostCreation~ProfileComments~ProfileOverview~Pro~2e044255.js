@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.f33c3d7b02777a7155ba.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.5f8ea03e5445352dd58b.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -115,7 +115,7 @@
 				M = Object(c.c)({
 					isCurrentUserProfilePost: E.k,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Jb.TOPIC),
-					shouldOpenPostInNewTab: g.cb
+					shouldOpenPostInNewTab: g.bb
 				}),
 				N = Object(i.b)(M);
 			t.a = Object(f.b)(N(e => {
@@ -276,7 +276,7 @@
 				h = s.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.V
 				}));
 			t.a = x(e => {
 				const t = {
@@ -375,7 +375,7 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(c.a)(y.E, v.cb, (e, {
+				P = Object(i.b)(() => Object(c.a)(y.E, v.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(y.b)(e, s) : null, g.a, _.actionInfo, y.F, (e, t, s, n, r, o) => ({
@@ -2831,4 +2831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.f33c3d7b02777a7155ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.5f8ea03e5445352dd58b.js.map

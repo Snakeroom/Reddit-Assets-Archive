@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.bf2b82015c4da10982dc.js
-// Retrieved at 7/13/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.cd6e285191c972916e42.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -93,7 +93,7 @@
 					title: Object(s.k)()
 				})), await e(Object(i.r)());
 				const n = t();
-				Object(l.K)(n) ? await e(Object(o.f)()) : Object(r.a)(e, n)
+				Object(l.J)(n) ? await e(Object(o.f)()) : Object(r.a)(e, n)
 			}
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -1187,8 +1187,8 @@
 				}).apply(this, arguments)
 			}
 			const W = Object(d.a)(h.a),
-				K = f.a.wrapped(I.a, "Circle", A.a),
-				V = f.a.h3("Label", A.a),
+				V = f.a.wrapped(I.a, "Circle", A.a),
+				K = f.a.h3("Label", A.a),
 				G = f.a.wrapped(T.c, "Subtext", A.a),
 				q = f.a.wrapped(m.a, "HoverTooltip", A.a),
 				Q = f.a.div("ControlContainer", A.a),
@@ -1228,7 +1228,7 @@
 					last: e.last
 				}, a.a.createElement(J, {
 					className: e.textContainerClassName
-				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(K, null)), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, e.children)),
+				}, a.a.createElement(K, null, e.label, e.isRequired && a.a.createElement(V, null)), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, e.children)),
 				ne = f.a.div("StyledFlair", A.a),
 				se = f.a.wrapped(ne, "SpoilerFlair", A.a),
 				ae = f.a.wrapped(ne, "NSFWFlair", A.a),
@@ -1251,7 +1251,7 @@
 						last: e.last
 					}, a.a.createElement(J, null, a.a.createElement(M.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(V, null, e.label))), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(q, {
+					}, a.a.createElement(K, null, e.label))), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, e.tooltip && a.a.createElement(q, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), a.a.createElement(S.a, {
@@ -1268,7 +1268,7 @@
 				de = f.a.div("TickText", A.a),
 				pe = f.a.div("PreSubText", A.a),
 				me = Object(r.c)({
-					isNightModeOn: L.W
+					isNightModeOn: L.V
 				}),
 				ue = Object(o.b)(me)(e => a.a.createElement(Y, {
 					last: e.last,
@@ -1281,7 +1281,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(M.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(G, null, " ", a.a.createElement(pe, {
+				}, !e.inModal && a.a.createElement(M.a, null, a.a.createElement(K, null, e.label)), a.a.createElement(G, null, " ", a.a.createElement(pe, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -1312,7 +1312,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(J, null, a.a.createElement(M.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, a.a.createElement(D.l, {
+				}, a.a.createElement(J, null, a.a.createElement(M.a, null, a.a.createElement(K, null, e.label)), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, a.a.createElement(Q, null, a.a.createElement(D.l, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				xe = e => a.a.createElement(Y, {
@@ -1352,7 +1352,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(J, null, a.a.createElement(V, null, e.label), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, (e => a.a.createElement("div", {
+				}, a.a.createElement(J, null, a.a.createElement(K, null, e.label), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, (e => a.a.createElement("div", {
 					className: A.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, a.a.createElement("span", {
@@ -1391,7 +1391,7 @@
 						disabled: e
 					}, a.a.createElement(J, null, a.a.createElement("label", {
 						htmlFor: i.id
-					}, a.a.createElement(V, {
+					}, a.a.createElement(K, {
 						className: i.labelClassname
 					}, i.label)), a.a.createElement(G, null, i.subtext)), a.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
@@ -1419,7 +1419,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(J, null, a.a.createElement(V, null, e.label), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, e.children)),
+				}, a.a.createElement(J, null, a.a.createElement(K, null, e.label), a.a.createElement(G, null, e.subtext)), a.a.createElement(z, null, e.children)),
 				Oe = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -2796,8 +2796,8 @@
 				A = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				H = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				W = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				K = n("./src/reddit/icons/svgs/Eye/index.tsx"),
-				V = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				V = n("./src/reddit/icons/svgs/Eye/index.tsx"),
+				K = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				G = n("./src/reddit/icons/svgs/Lock/index.tsx"),
 				q = n("./src/reddit/icons/svgs/User/index.tsx"),
 				Q = n("./src/reddit/models/Subreddit/index.ts"),
@@ -2852,11 +2852,11 @@
 			const ue = 21,
 				he = 500,
 				xe = "create-title-info",
-				be = me.a.wrapped(V.a, "Info", pe.a),
+				be = me.a.wrapped(K.a, "Info", pe.a),
 				fe = me.a.wrapped(P.a, "RadioOption", pe.a),
 				Ce = me.a.wrapped(S.c, "Tooltip", pe.a),
 				ve = me.a.wrapped(q.a, "Public", pe.a),
-				ge = me.a.wrapped(K.a, "Restricted", pe.a),
+				ge = me.a.wrapped(V.a, "Restricted", pe.a),
 				Oe = me.a.wrapped(G.a, "Private", pe.a),
 				Ee = me.a.wrapped(H.a, "Employee", pe.a),
 				ye = me.a.wrapped(W.a, "CloseButton", pe.a),
@@ -2865,12 +2865,12 @@
 					error: le.g,
 					isCreatePending: le.j,
 					isEmailInviteExperimentEnabled: ie.a,
-					isEmployee: ce.H,
+					isEmployee: ce.G,
 					isInSrCreationFlowM2Experiment: re,
 					isTopicOptional: ae,
 					isTopicRemoved: oe,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ce.hb)(e),
-					userIsSuspended: ce.P,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(ce.gb)(e),
+					userIsSuspended: ce.O,
 					allTags: v.e,
 					existingTags: v.h,
 					newTags: v.i,
@@ -3273,4 +3273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.bf2b82015c4da10982dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.cd6e285191c972916e42.js.map

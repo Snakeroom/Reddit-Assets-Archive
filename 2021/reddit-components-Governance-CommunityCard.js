@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d051f17f97b0573bbf60.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d078ef49c93ae158f071.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -565,8 +565,8 @@
 				}, e.body))
 			}
 			var X = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				z = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts"),
-				J = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				J = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts"),
+				z = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				K = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				ee = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/UnclaimedPoints/index.m.less"),
 				te = n.n(ee);
@@ -607,12 +607,12 @@
 					disabled: c
 				}, c ? i.a.createElement(i.a.Fragment, null, ne._("Claiming", null, {
 					hk: "3iQUgE"
-				}), i.a.createElement(J.a, {
+				}), i.a.createElement(z.a, {
 					className: te.a.loadingIcon,
 					sizePx: 6
 				})) : ne._("Claim My Points", null, {
 					hk: "1QwLXK"
-				})), r && i.a.createElement(z.a, {
+				})), r && i.a.createElement(J.a, {
 					subredditId: n,
 					onClose: () => s(!1)
 				}))
@@ -722,7 +722,7 @@
 				isEthereumProvider: (e, {
 					subredditId: t
 				}) => Object(d.a)(e, t),
-				isLoggedIn: g.K,
+				isLoggedIn: g.J,
 				nextAvailableClaim: x.b
 			});
 			var de = Object(a.b)(ce, e => ({
@@ -1774,4 +1774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d051f17f97b0573bbf60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.d078ef49c93ae158f071.js.map

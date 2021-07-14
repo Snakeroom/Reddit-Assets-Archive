@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.444c85447353f703bc1b.js
-// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.a19539c6426d781d5c93.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -936,7 +936,7 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.H)(e) || g.Id.ShowTopContent === Object(f.c)(e, {
+			const y = e => Object(C.G)(e) || g.Id.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
 				experimentName: g.Ad
 			});
@@ -1445,7 +1445,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: D.cb
+					shouldOpenPostInNewTab: D.bb
 				}),
 				Z = e => {
 					const {
@@ -2000,4 +2000,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.444c85447353f703bc1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.a19539c6426d781d5c93.js.map

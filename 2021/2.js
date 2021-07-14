@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.c69edd6867b4025615c4.js
-// Retrieved at 5/26/2021, 1:20:15 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.bc74a58bcd0868d435be.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./src/reddit/actions/pages/emailVerification.ts": function(e, t, i) {
@@ -20,11 +20,11 @@
 				const _ = i(),
 					l = e.params.verificationToken,
 					m = e.queryParams && e.queryParams.source;
-				if (m && Object(o.a)(Object(a.b)(m)(_)), !Object(d.K)(_)) return Object(c.a)(t, _);
+				if (m && Object(o.a)(Object(a.b)(m)(_)), !Object(d.J)(_)) return Object(c.a)(t, _);
 				const O = await t(Object(u.b)(l));
 				O === n.a.Success && Object(o.a)(Object(a.d)()(_)), t(Object(r.c)(`/?verifiedEmail=${O}`))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.c69edd6867b4025615c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.bc74a58bcd0868d435be.js.map

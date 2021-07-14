@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.b6104f1359cfcffb75af.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.5270d9d4d1ac26a18a8b.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -606,7 +606,7 @@
 					apiContext: a
 				}) => {
 					const c = d();
-					if (!Object(P.K)(c)) return;
+					if (!Object(P.J)(c)) return;
 					n(ue());
 					const l = await (({
 						context: e,
@@ -1917,9 +1917,9 @@
 			}
 			const f = Object(o.c)({
 					currentUser: c.j,
-					isNightMode: c.W,
-					isPresenceUserPrefEnabled: c.ib,
-					shouldHideNSFW: c.C
+					isNightMode: c.V,
+					isPresenceUserPrefEnabled: c.hb,
+					shouldHideNSFW: c.B
 				}),
 				x = Object(d.b)(f);
 			t.a = x(e => {
@@ -2553,4 +2553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.b6104f1359cfcffb75af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.5270d9d4d1ac26a18a8b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.df7a5837028941ff1120.js
-// Retrieved at 7/13/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.55c21ed89395dfa502e6.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -293,7 +293,7 @@
 					const i = t(),
 						n = Object(p.e)(i),
 						o = Object(p.d)(i),
-						d = Object(b.J)(i);
+						d = Object(b.I)(i);
 					if (n || !o) return;
 					e(f());
 					let m = !1;
@@ -368,7 +368,7 @@
 						a = Object(p.g)(o);
 					if (Object(p.f)(o) || null === a || "client" === a) {
 						const s = null === (i = null === (r = Object(m.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
-							a = Object(b.K)(o);
+							a = Object(b.J)(o);
 						return Object(n.i)(() => e(E()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -610,12 +610,12 @@
 				W = s.n(V);
 			const {
 				fbt: D
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = 500, J = new M.a(U), G = new M.a(U), z = new M.a(U), K = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), U = 500, J = new M.a(U), G = new M.a(U), z = new M.a(U), q = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5
-			}, q = x.a.div("SeeMore", W.a), Y = x.a.wrapped(k.a, "ArrowRight", W.a), Q = (e, t, s, r, i, n, o, a, c) => {
+			}, K = x.a.div("SeeMore", W.a), Y = x.a.wrapped(k.a, "ArrowRight", W.a), Q = (e, t, s, r, i, n, o, a, c) => {
 				const d = `entered-${e}-${t}-${s?`last-${r}-${i}`:""}-${n}`;
 				let l = J.get(d);
 				return void 0 === l && (l = () => {
@@ -934,7 +934,7 @@
 						className: i,
 						isLoading: !!t,
 						layout: r,
-						countOverride: K[r]
+						countOverride: q[r]
 					}), !!e && u.a.createElement(T.a, {
 						apiError: e,
 						onTryAgain: n
@@ -978,7 +978,7 @@
 						preventScrollOnMount: this.props.preventScrollOnMount,
 						trackingName: h,
 						viewportTopPadding: L.f
-					}, m), v && u.a.createElement(q, {
+					}, m), v && u.a.createElement(K, {
 						className: W.a.seeMoreButton
 					}, u.a.createElement(P.a, {
 						className: W.a.seeMorePostsText,
@@ -1413,7 +1413,7 @@
 				C = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				L = s.n(C);
 			const O = Object(h.c)({
-				isLoggedIn: S.K,
+				isLoggedIn: S.J,
 				subreddit: T.S,
 				subredditAboutInfo: T.u
 			});
@@ -2115,8 +2115,8 @@
 				G = s.n(J);
 			const {
 				fbt: z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = 5;
-			class q extends i.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
+			class K extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2132,7 +2132,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return i.a.createElement(y, {
-						limit: K,
+						limit: q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2142,7 +2142,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < K ? null : i.a.createElement(N.a, {
+					return t.length < q ? null : i.a.createElement(N.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, i.a.createElement(w.o, {
@@ -2156,7 +2156,7 @@
 					})))
 				}
 			}
-			var Y = q,
+			var Y = K,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2171,7 +2171,7 @@
 			const {
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(n.c)({
-				isLoggedIn: ie.K,
+				isLoggedIn: ie.J,
 				subreddit: re.S,
 				subredditAboutInfo: (e, {
 					subredditId: t
@@ -2598,7 +2598,7 @@
 				x = e => e.focusedVerticals.category,
 				_ = e => e.focusedVerticals.lastLoadedEnv,
 				y = e => {
-					const t = Object(a.J)(e),
+					const t = Object(a.I)(e),
 						s = i.d.geoSubredditRecommendationDULoggedIn(e),
 						r = i.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && r
@@ -2609,4 +2609,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.df7a5837028941ff1120.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.55c21ed89395dfa502e6.js.map

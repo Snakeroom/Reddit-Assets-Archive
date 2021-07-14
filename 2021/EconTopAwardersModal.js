@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.10d138ec4dd93aafee47.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ba54a40c6ab3f277370f.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -374,7 +374,7 @@
 							await a(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(N.nb)(s, {
+						const r = Object(N.mb)(s, {
 							userName: t
 						});
 						if (!r) return;
@@ -1084,7 +1084,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(f.nb)(e, {
+				user: (e, t) => Object(f.mb)(e, {
 					userName: t.username
 				})
 			});
@@ -1395,8 +1395,8 @@
 			const Me = Object(o.c)({
 					activeTooltipId: v.a,
 					currentUser: f.j,
-					isLoggedIn: f.K,
-					hideNSFWPref: f.C,
+					isLoggedIn: f.J,
+					hideNSFWPref: f.B,
 					moderatorPermissions: (e, {
 						subredditId: t
 					}) => t ? Object(m.l)(e, {
@@ -1413,7 +1413,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: f.nb,
+					user: f.mb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(h.c)(e, {
@@ -1785,7 +1785,7 @@
 				o = a("./src/reddit/selectors/user.ts");
 			const c = Object(s.c)({
 					currentUser: o.j,
-					hideNSFWPref: o.C
+					hideNSFWPref: o.B
 				}),
 				i = Object(r.b)(c, e => ({
 					imageUpdateRequested: (t, a) => e(Object(n.z)(t, a))
@@ -2629,4 +2629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.10d138ec4dd93aafee47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ba54a40c6ab3f277370f.js.map

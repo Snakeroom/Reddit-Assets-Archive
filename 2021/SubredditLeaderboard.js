@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.06d6b96d191b076bca73.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ce32dc086b440cf70ecf.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -98,7 +98,7 @@
 				}, y = e => async (t, n) => {
 					await t(Object(s.a)());
 					const r = n(),
-						a = Object(h.L)(r);
+						a = Object(h.K)(r);
 					if (Object(p.a)(r, e)) return;
 					const i = e && Object(g.f)(r, {
 							categoryName: e
@@ -1176,10 +1176,10 @@
 						r = t.redditStyle || Object(b.l)(e, {
 							subredditId: n
 						}),
-						s = Object(f.W)(e);
+						s = Object(f.V)(e);
 					return r || s
 				},
-				nigtmode: f.W,
+				nigtmode: f.V,
 				subredditId: u.m,
 				topPostVariant: h.d
 			}));
@@ -1944,7 +1944,7 @@
 					hasNextPage: (e, {
 						categoryId: t
 					}) => Object(W.b)(e, t),
-					isMod: R.L,
+					isMod: R.K,
 					rankings: (e, {
 						categoryId: t
 					}) => Object(D.N)(e, t),
@@ -2339,4 +2339,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.06d6b96d191b076bca73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ce32dc086b440cf70ecf.js.map

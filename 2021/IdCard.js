@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.846c45a35b2719876ed2.js
-// Retrieved at 7/13/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.c1a01cc9ab5bfc077cfe.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -795,7 +795,7 @@
 						name: `${r.dc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(j.K)(c())) return i(Object(d.k)({
+					if (!Object(j.J)(c())) return i(Object(d.k)({
 						actionSource: d.a.Subscribe
 					})), void i(Object(a.j)());
 					const _ = Object(j.j)(c());
@@ -954,7 +954,7 @@
 				}) => {
 					const o = n(),
 						a = o.multireddits.models;
-					if (!Object(j.K)(o)) return;
+					if (!Object(j.J)(o)) return;
 					const d = (e = !0) => {
 							t(Object(l.f)({
 								text: s.fbt._("Sorry, failed to {followAction}", [s.fbt._param("followAction", e ? s.fbt._("follow", null, {
@@ -1309,7 +1309,7 @@
 			var E = n("./src/reddit/components/CategoryTagList/index.m.less"),
 				v = n.n(E);
 			const C = Object(i.b)(() => Object(o.c)({
-				labelNSFW: d.T
+				labelNSFW: d.S
 			}));
 			t.a = C(Object(a.c)(({
 				postCategories: e,
@@ -1695,8 +1695,8 @@
 				C = Object(a.c)({
 					isInSrCreationEntrypointBehaviorExperiment: f.a,
 					isInSrCreationEntrypointCopyExperiment: f.b,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(g.hb)(e),
-					userIsSuspended: g.P
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(g.gb)(e),
+					userIsSuspended: g.O
 				});
 			t.a = Object(o.b)(C, (e, {
 				eventSource: t
@@ -2693,7 +2693,7 @@
 				}).apply(this, arguments)
 			}
 			const A = Object(u.c)({
-				isLoggedIn: P.K
+				isLoggedIn: P.J
 			});
 			var L = Object(o.b)(A, e => ({
 				openLoginModal: () => {
@@ -3076,8 +3076,8 @@
 			const It = G.a.wrapped(w.q, "TertiaryButton", Ot.a),
 				jt = Object(u.c)({
 					canChangeUserFlair: rt.b,
-					stylesDisabledForSubreddit: P.jb,
-					stylesDisabledGlobally: P.kb,
+					stylesDisabledForSubreddit: P.ib,
+					stylesDisabledGlobally: P.jb,
 					canChangeAchievementFlair: (e, t) => Object(st.f)(e, {
 						subredditId: t.subredditId
 					}) && Object(nt.g)(e)
@@ -3172,9 +3172,9 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(se.f)(e, Ae.e.Post),
-					isGQLLoggedIn: P.J,
+					isGQLLoggedIn: P.I,
 					isInCategoriesExperiment: Be.a,
-					isLoggedIn: P.K,
+					isLoggedIn: P.J,
 					moderatorPermissions: (e, t) => {
 						const n = Object(se.D)(e, t.listingName);
 						if (n) return Object(He.l)(e, {
@@ -6099,7 +6099,7 @@
 							commentId: t
 						}),
 						s = n && n.authorId || "";
-					return Object(m.S)(e, s)
+					return Object(m.R)(e, s)
 				},
 				ee = (e, {
 					commentId: t
@@ -6124,7 +6124,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.H)(e) || s.G.Treatment1 === Object(r.c)(e, {
+				return Object(i.G)(e) || s.G.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.z
 				})
@@ -6276,4 +6276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.846c45a35b2719876ed2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.c1a01cc9ab5bfc077cfe.js.map

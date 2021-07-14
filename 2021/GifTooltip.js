@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GifTooltip.6e64167fb2666cd5ed9a.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GifTooltip.84379fb8870d1eb6c4aa.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GifTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less": function(e, t, s) {
@@ -108,7 +108,7 @@
 				}
 			}
 			const P = Object(h.c)({
-				isNightMode: j.W
+				isNightMode: j.V
 			});
 			var H = Object(l.b)(P)(M),
 				U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -498,4 +498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.6e64167fb2666cd5ed9a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GifTooltip.84379fb8870d1eb6c4aa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.3013ce2239367b08fcf5.js
-// Retrieved at 7/12/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.4c8715d71295a689395a.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -1053,7 +1053,7 @@
 				_n = Object(h.c)({
 					city: bn.a,
 					country: bn.b,
-					region: bn.k
+					region: bn.l
 				});
 			class yn extends a.a.Component {
 				constructor(e) {
@@ -1114,7 +1114,7 @@
 				}
 			}
 			var fn = Object(u.b)(_n, e => ({
-					changeGeo: (t, n, s) => e(Object(pn.e)({
+					changeGeo: (t, n, s) => e(Object(pn.f)({
 						city: t,
 						country: n,
 						region: s
@@ -1860,4 +1860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.3013ce2239367b08fcf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.4c8715d71295a689395a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.a5f7f6e69f0799f41e8e.js
-// Retrieved at 7/13/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.eb8cb9279ca5280394e8.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2547,7 +2547,7 @@
 					}))
 				})())), await Promise.all(f); {
 					const e = n();
-					if (!Object(C.K)(e)) return Object(L.a)(t, e)
+					if (!Object(C.J)(e)) return Object(L.a)(t, e)
 				}
 				const {
 					page: v = a.Wb.Account
@@ -2969,7 +2969,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(w.nb)(s, {
+						const r = Object(w.mb)(s, {
 							userName: t
 						});
 						if (!r) return;
@@ -3577,7 +3577,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(f.nb)(e, {
+				user: (e, t) => Object(f.mb)(e, {
 					userName: t.username
 				})
 			});
@@ -3888,8 +3888,8 @@
 			const Me = Object(o.c)({
 					activeTooltipId: h.a,
 					currentUser: f.j,
-					isLoggedIn: f.K,
-					hideNSFWPref: f.C,
+					isLoggedIn: f.J,
+					hideNSFWPref: f.B,
 					moderatorPermissions: (e, {
 						subredditId: t
 					}) => t ? Object(u.l)(e, {
@@ -3906,7 +3906,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: f.nb,
+					user: f.mb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(g.c)(e, {
@@ -4651,7 +4651,7 @@
 				I = n.n(S);
 			const P = Object(i.a)(h.j, (e, {
 					profileName: t
-				}) => Object(f.ub)(e, t), (e, t) => ({
+				}) => Object(f.tb)(e, t), (e, t) => ({
 					awardeeKarma: t ? t.awardeeKarma : 0,
 					awarderKarma: t ? t.awarderKarma : 0,
 					commentKarma: t ? t.commentKarma : 0,
@@ -5132,7 +5132,7 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
 					currentUser: o.j,
-					hideNSFWPref: o.C
+					hideNSFWPref: o.B
 				}),
 				c = Object(r.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(a.z)(t, n))
@@ -5258,7 +5258,7 @@
 						url: "testing" === r ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${n}`,
 						badge: r
 					}
-				})(p), [p]), w = Object(a.e)(l.W);
+				})(p), [p]), w = Object(a.e)(l.V);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: Object(i.a)(b.a.container, y)
 				}, s.a.createElement(c.a, {
@@ -6366,13 +6366,13 @@
 			const se = "update_card_modal_id",
 				ae = Object(d.c)({
 					cancelSubscriptionModalIsOpen: Object($.b)("settings_optout_modal_id"),
-					goldExpiration: te.o,
-					hasAndroidSubscription: te.p,
-					hasIOSSubscription: te.u,
-					hasStripeSubscription: te.y,
-					hasPaypalSubscription: te.w,
-					isGold: te.s,
-					isPremiumSubscriber: te.t,
+					goldExpiration: te.n,
+					hasAndroidSubscription: te.o,
+					hasIOSSubscription: te.t,
+					hasStripeSubscription: te.x,
+					hasPaypalSubscription: te.v,
+					isGold: te.r,
+					isPremiumSubscriber: te.s,
 					premiumProductOfferSubscription: ee.f,
 					premiumProductOfferSubscriptionIsCanceled: ee.e,
 					updateCardModalIsOpen: Object($.b)(se)
@@ -7192,7 +7192,7 @@
 				de = g.a.div("TickText", F.a),
 				ue = g.a.div("PreSubText", F.a),
 				me = Object(i.c)({
-					isNightModeOn: R.W
+					isNightModeOn: R.V
 				}),
 				pe = Object(a.b)(me)(e => s.a.createElement(V, {
 					last: e.last,
@@ -9798,7 +9798,7 @@
 					action: "view",
 					noun: "page",
 					goldPurchase: {
-						type: Object(s.t)(e) ? a.GoldPurchaseType.Cancel : a.GoldPurchaseType.GetPremium
+						type: Object(s.s)(e) ? a.GoldPurchaseType.Cancel : a.GoldPurchaseType.GetPremium
 					}
 				}),
 				d = () => e => ({
@@ -10993,14 +10993,14 @@
 						rtl: !1
 					})
 				}),
-				Be = Object(c.a)(L.H, Ae.b, (e, t) => e || t ? {
+				Be = Object(c.a)(L.G, Ae.b, (e, t) => e || t ? {
 					...Te,
 					...Me,
 					...Le
 				} : Te);
 			var Re = n("./src/reddit/helpers/location.ts");
 			const Ue = Object(c.a)(e => Object(A.c)(e, {
-				experimentEligibilitySelector: L.K,
+				experimentEligibilitySelector: L.J,
 				experimentName: N.E
 			}), e => e === N.L.Enabled);
 			var Fe = n("./src/reddit/selectors/meta.ts"),
@@ -11011,9 +11011,9 @@
 						var t, n;
 						return null === (n = null === (t = null == e ? void 0 : e.user) || void 0 === t ? void 0 : t.account) || void 0 === n ? void 0 : n.gender
 					},
-					hasVerifiedEmail: L.A,
-					isFPR: L.I,
-					language: L.U,
+					hasVerifiedEmail: L.z,
+					isFPR: L.H,
+					language: L.T,
 					shouldShowCreatePasswordModal: M.d,
 					shouldShowGenderCollection: e => Object(A.c)(e, {
 						experimentName: N.ud,
@@ -11027,7 +11027,7 @@
 				}),
 				We = Object(o.b)(Ge, e => ({
 					changeAccountGender: t => e(Object(w.a)(t)),
-					changeLanguage: t => e(Object(k.d)(t)),
+					changeLanguage: t => e(Object(k.e)(t)),
 					openChangeEmailModal: () => e(Object(y.i)(Ie.a)),
 					openSSOCreatePasswordForEmailModal: () => e(Object(y.h)(Ie.l)),
 					resendEmail: () => e(Object(x.v)())
@@ -11429,7 +11429,7 @@
 				}).apply(this, arguments)
 			}
 			const qt = Object(c.c)({
-				isEmployee: L.H
+				isEmployee: L.G
 			});
 			var Kt = Object(o.b)(qt)(e => {
 					const t = !e.isEmployee;
@@ -11454,7 +11454,7 @@
 					deactivateModalOpen: Object($e.b)("deactivate_modal_id"),
 					email: L.m,
 					hasGoogleIdentity: M.b,
-					inRedesignBeta: L.E,
+					inRedesignBeta: L.D,
 					optoutModalOpen: Object($e.b)("settins_optout_modal_id"),
 					shouldShowCreatePasswordModal: M.d,
 					user: L.j
@@ -12641,7 +12641,7 @@
 				ks = n.n(ws);
 			const {
 				fbt: Os
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ss = 30, Is = 200, Ps = Object(c.a)(L.j, Es.a, L.vb, Cs.n, $e.a, (e, t, n, r, s) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ss = 30, Is = 200, Ps = Object(c.a)(L.j, Es.a, L.ub, Cs.n, $e.a, (e, t, n, r, s) => {
 				const a = e && e.profileId,
 					o = a && r[a] ? r[a].bannerBackgroundImage : void 0;
 				return {
@@ -14282,4 +14282,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a5f7f6e69f0799f41e8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.eb8cb9279ca5280394e8.js.map

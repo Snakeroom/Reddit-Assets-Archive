@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b04109037606e4d84722.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.e46a9602f267ca932f62.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -19,9 +19,9 @@
 			})), s.d(t, "j", (function() {
 				return F
 			})), s.d(t, "g", (function() {
-				return K
-			})), s.d(t, "f", (function() {
 				return $
+			})), s.d(t, "f", (function() {
+				return K
 			})), s.d(t, "o", (function() {
 				return M
 			})), s.d(t, "p", (function() {
@@ -31,9 +31,9 @@
 			})), s.d(t, "a", (function() {
 				return G
 			})), s.d(t, "b", (function() {
-				return q
-			})), s.d(t, "n", (function() {
 				return J
+			})), s.d(t, "n", (function() {
+				return q
 			})), s.d(t, "c", (function() {
 				return W
 			})), s.d(t, "k", (function() {
@@ -70,7 +70,7 @@
 				_ = e => async (t, s, {
 					apiContext: n
 				}) => {
-					if (!Object(C.K)(s())) return t(Object(a.j)()), void t(Object(l.k)({
+					if (!Object(C.J)(s())) return t(Object(a.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(w.m)(s(), {
 							commentId: e
@@ -169,7 +169,7 @@
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, v.a.upvoted), F = Object(b.a)(O.b, v.a.downvoted), K = Object(d.a)(k.j), $ = Object(d.a)(k.i), V = Object(d.a)(k.e), H = Object(d.a)(k.f), M = (Object(d.a)(k.c), Object(d.a)(k.d), ({
+				}, z = Object(b.a)(O.b, v.a.upvoted), F = Object(b.a)(O.b, v.a.downvoted), $ = Object(d.a)(k.j), K = Object(d.a)(k.i), V = Object(d.a)(k.e), H = Object(d.a)(k.f), M = (Object(d.a)(k.c), Object(d.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -217,7 +217,7 @@
 					})), 0 === s && n(c, !0), Object(p.d)()
 				}, X = Object(d.a)(k.r), G = e => t => t(X({
 					draftKey: e
-				})), q = Object(d.a)(k.a), J = Object(d.a)(k.E), W = Object(d.a)(k.b), Y = Object(d.a)(k.u)
+				})), J = Object(d.a)(k.a), q = Object(d.a)(k.E), W = Object(d.a)(k.b), Y = Object(d.a)(k.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -266,7 +266,7 @@
 				}, v = e => async (t, s, {
 					apiContext: n
 				}) => {
-					if (!Object(O.K)(s())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(O.J)(s())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
 					const o = s().features.comments.models[e];
 					if (!o) return;
 					const r = o.isLocked ? m.j : m.d;
@@ -1102,4 +1102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b04109037606e4d84722.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.e46a9602f267ca932f62.js.map

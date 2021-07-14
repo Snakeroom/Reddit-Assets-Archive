@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.82c4a90f6d870714f5e5.js
-// Retrieved at 7/8/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.de69e82b068df3d6586c.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -780,7 +780,7 @@
 				v = r("./src/reddit/components/VerticalVotes/index.m.less"),
 				h = r.n(v);
 			const g = Object(a.c)({
-					isNightMode: b.W
+					isNightMode: b.V
 				}),
 				w = Object(c.b)(g),
 				O = e => !e.isCustomIconDisabled && !0 !== e.redditStyle && Object(p.a)(e).voteIcons.upvoteInactive && Object(p.a)(e).voteIcons.upvoteActive,
@@ -2698,7 +2698,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(i.nb)(e, {
+					const n = Object(i.mb)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return f(e, {
@@ -2944,4 +2944,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.82c4a90f6d870714f5e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.de69e82b068df3d6586c.js.map

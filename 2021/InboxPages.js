@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.5071a2043c80ff588fbd.js
-// Retrieved at 6/23/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.fdb90e2dd2cad2f31839.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -77,7 +77,7 @@
 					isSubscriptionsPinned: y.b,
 					url: e => e.platform.currentPage ? e.platform.currentPage.url : "",
 					servedOrigin: e => `${e.meta.protocol}://${e.meta.domain}`,
-					nightmode: x.W
+					nightmode: x.V
 				}),
 				j = Object(d.b)(S, e => ({
 					onTitleChange: t => e(u.l({
@@ -160,4 +160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.5071a2043c80ff588fbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.fdb90e2dd2cad2f31839.js.map

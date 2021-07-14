@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bbdd206b7ea22c24241f.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.87c0339647698714b9f6.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -732,7 +732,7 @@
 				g = (e, t, n, o) => async (r, s, {
 					gqlContext: a
 				}) => {
-					const c = Object(p.K)(s()),
+					const c = Object(p.J)(s()),
 						i = await Object(d.g)(a(), {
 							subredditId: e,
 							period: t,
@@ -2054,7 +2054,7 @@
 				pollId: f,
 				onReveal: E
 			}) => {
-				const [O, j] = Object(o.useState)(!1), [g, v] = Object(l.a)("hasSeenPredictionSneakPeek", !1), I = Object(u.a)(), k = Object(s.e)(h.t), N = !!p, w = n && !c;
+				const [O, j] = Object(o.useState)(!1), [g, v] = Object(l.a)("hasSeenPredictionSneakPeek", !1), I = Object(u.a)(), k = Object(s.e)(h.s), N = !!p, w = n && !c;
 				if (!Object(s.e)(e => !t && !w && N && Object(_.k)(e))) return null;
 				const S = () => {
 					g || v(!0), j(!1)
@@ -3414,4 +3414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.bbdd206b7ea22c24241f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.87c0339647698714b9f6.js.map

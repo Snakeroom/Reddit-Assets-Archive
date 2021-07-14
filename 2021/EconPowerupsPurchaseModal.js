@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d2f10eb48cb44dc0b466.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ffd93ebbf92d019fdc98.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -350,8 +350,8 @@
 			};
 			var R = r("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				q = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
-				X = r.n(q);
-			var V = function(e) {
+				V = r.n(q);
+			var X = function(e) {
 					const {
 						className: t,
 						onChange: r,
@@ -361,30 +361,30 @@
 						max: c
 					} = e, l = e => r(Math.max(Math.min(s + e, c || Number.POSITIVE_INFINITY), o || 0)), i = c === o, u = Object(R.a)(s);
 					return n.a.createElement("div", {
-						className: Object(d.a)(t, X.a.container),
+						className: Object(d.a)(t, V.a.container),
 						style: a
 					}, n.a.createElement("div", {
-						className: Object(d.a)(X.a.control, {
-							[X.a.locked]: i
+						className: Object(d.a)(V.a.control, {
+							[V.a.locked]: i
 						})
 					}, !i && n.a.createElement("button", {
-						className: Object(d.a)(X.a.button, X.a.decrementButton),
+						className: Object(d.a)(V.a.button, V.a.decrementButton),
 						onClick: () => l(-1)
 					}), n.a.createElement("div", {
-						className: X.a.value
+						className: V.a.value
 					}, n.a.createElement(u, {
-						className: X.a.icon
+						className: V.a.icon
 					}), n.a.createElement("span", null, s)), !i && n.a.createElement("button", {
-						className: Object(d.a)(X.a.button, X.a.incrementButton),
+						className: Object(d.a)(V.a.button, V.a.incrementButton),
 						onClick: () => l(1)
 					})))
 				},
 				K = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
 				Z = r.n(K);
 			const {
-				fbt: W
+				fbt: $
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			var $ = e => {
+			var W = e => {
 					const {
 						additionalCount: t,
 						className: r,
@@ -398,7 +398,7 @@
 						className: r
 					}, n.a.createElement("div", {
 						className: Z.a.titleRow
-					}, n.a.createElement("span", null, W._("Powerups", null, {
+					}, n.a.createElement("span", null, $._("Powerups", null, {
 						hk: "DrcXp"
 					})), n.a.createElement("span", null, a < s ? `${a}/${s}` : a)), n.a.createElement("div", {
 						className: Z.a.barRow
@@ -434,12 +434,12 @@
 				const u = Math.min(i, i / 2 + o.count / 2, o.count + (r || 0) / 2) / i;
 				return n.a.createElement("div", {
 					className: Object(d.a)(t, G.a.container)
-				}, n.a.createElement($, {
+				}, n.a.createElement(W, {
 					additionalCount: r,
 					className: G.a.bar,
 					count: o.count,
 					maxCount: i
-				}), n.a.createElement(V, {
+				}), n.a.createElement(X, {
 					className: G.a.count,
 					style: {
 						left: `${100*u}%`
@@ -486,7 +486,7 @@
 				fbt: se
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), oe = 100, ce = Object(o.c)({
 				isAnonymous: _.c,
-				isNightMode: M.W,
+				isNightMode: M.V,
 				paypalErrorMessage: y.d,
 				powerups: _.i,
 				powerupsCount: _.d,
@@ -852,4 +852,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d2f10eb48cb44dc0b466.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ffd93ebbf92d019fdc98.js.map

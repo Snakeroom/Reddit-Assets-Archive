@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.3aed1fae81aaf9573459.js
-// Retrieved at 7/14/2021, 1:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.10ce71deff565b431582.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -20,7 +20,7 @@
 				p = n("./src/reddit/selectors/user.ts");
 			const g = () => async (e, t) => {
 				const n = t();
-				if (!(Object(p.K)(n) || Object(p.J)(n))) return Object(d.a)(e, n);
+				if (!(Object(p.J)(n) || Object(p.I)(n))) return Object(d.a)(e, n);
 				Object(m.g)(n) ? (e(b()), e(f()), await e(h())) : e(Object(a.c)("/"))
 			}, b = () => Object(s.k)({
 				actionSource: s.a.NotificationsInbox,
@@ -31,7 +31,7 @@
 				const n = t(),
 					a = Object(u.g)(t()),
 					i = !(!a || !a.length),
-					s = Object(p.K)(n) || Object(p.J)(n);
+					s = Object(p.J)(n) || Object(p.I)(n);
 				if (i || !s || !Object(m.g)(n)) return;
 				const o = {
 					first: 10
@@ -586,23 +586,23 @@
 				messagesTabBadgeCount: S.h,
 				notificationsTabBadgeCount: S.a
 			});
-			var K = Object(d.b)(D, e => ({
+			var q = Object(d.b)(D, e => ({
 				clearMessageTabBadgeCount: () => e(Object(m.b)()),
 				markAllAsRead: () => e(Object(u.g)())
 			}))(e => i.a.createElement(Q, e));
-			const q = Object(o.t)();
-			class X extends i.a.Component {
+			const X = Object(o.t)();
+			class K extends i.a.Component {
 				render() {
 					return i.a.createElement(s.a, null, i.a.createElement(c.a, {
 						hideOnlyChildMargin: !0,
 						content: i.a.createElement(F, null),
 						disableFullscreen: !0,
-						navBar: i.a.createElement(K, null)
+						navBar: i.a.createElement(q, null)
 					}))
 				}
 			}
-			t.default = q(Object(r.c)(X))
+			t.default = X(Object(r.c)(K))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.3aed1fae81aaf9573459.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.10ce71deff565b431582.js.map

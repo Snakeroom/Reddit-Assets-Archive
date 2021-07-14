@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.f68f8512a34b4d49ce8c.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.21a60e056616f23357c3.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -506,15 +506,15 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, W = Object(i.a)(a.a), F = Object(i.a)(a.t), A = (e, t) => async (n, o, {
+				}, F = Object(i.a)(a.a), W = Object(i.a)(a.t), A = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					const i = o();
 					if ((await h(r(), e, t)).ok) {
-						n(W({
+						n(F({
 							collectionId: e,
 							postId: t
-						})), n(F({
+						})), n(W({
 							collectionId: e,
 							postId: t
 						}));
@@ -896,7 +896,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(r.b)(() => Object(i.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.V
 				}));
 			t.a = f(e => {
 				const t = {
@@ -995,7 +995,7 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(d.a)(_.E, y.cb, (e, {
+				P = Object(i.b)(() => Object(d.a)(_.E, y.bb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.F, (e, t, n, s, o, r) => ({
@@ -2364,9 +2364,9 @@
 			})), n.d(t, "f", (function() {
 				return D
 			})), n.d(t, "h", (function() {
-				return W
-			})), n.d(t, "g", (function() {
 				return F
+			})), n.d(t, "g", (function() {
+				return W
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "e", (function() {
@@ -2529,12 +2529,12 @@
 						case p.p:
 							return D(e, t, n, s);
 						case p.u:
-							return F(e, t, n, s);
+							return W(e, t, n, s);
 						case p.z:
-							return W(e, t, n, s)
+							return F(e, t, n, s)
 					}
 				},
-				W = (e, t, n, s) => {
+				F = (e, t, n, s) => {
 					const o = e.c,
 						r = e.h,
 						i = o.length,
@@ -2576,7 +2576,7 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				F = (e, t, n, s) => {
+				W = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
@@ -3509,10 +3509,10 @@
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						o = Object(x.W)(e);
+						o = Object(x.V)(e);
 					return s || o
 				},
-				nigtmode: x.W,
+				nigtmode: x.V,
 				subredditId: u.m,
 				topPostVariant: b.d
 			}));
@@ -4703,8 +4703,8 @@
 						draft: t
 					}), o.a.createElement(O, null)))
 				})),
-				W = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				F = n("./src/reddit/layout/page/Listing/index.tsx"),
+				F = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				W = n("./src/reddit/layout/page/Listing/index.tsx"),
 				A = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				H = n("./src/reddit/selectors/postDraft.ts");
 			const U = Object(l.t)(),
@@ -4724,14 +4724,14 @@
 					} = this.props;
 					if (!t || !e) return o.a.createElement(A.b, null);
 					const n = e.subredditId;
-					return o.a.createElement(F.a, {
+					return o.a.createElement(W.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: o.a.createElement("div", null),
 						content: o.a.createElement(B, {
 							draft: e
 						}),
-						sidebar: n && o.a.createElement(W.a, {
+						sidebar: n && o.a.createElement(F.a, {
 							subredditOrProfileId: n
 						})
 					})
@@ -4790,4 +4790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.f68f8512a34b4d49ce8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.21a60e056616f23357c3.js.map

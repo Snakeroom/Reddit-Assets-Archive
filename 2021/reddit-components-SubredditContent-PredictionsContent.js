@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.178fcea4eab3967c8b8f.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.6cccaf82f3e6901a3320.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -92,7 +92,7 @@
 				k = (e, t, n, o) => async (r, i, {
 					gqlContext: d
 				}) => {
-					const c = Object(m.K)(i()),
+					const c = Object(m.J)(i()),
 						s = await Object(a.g)(d(), {
 							subredditId: e,
 							period: t,
@@ -1032,4 +1032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.178fcea4eab3967c8b8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.6cccaf82f3e6901a3320.js.map

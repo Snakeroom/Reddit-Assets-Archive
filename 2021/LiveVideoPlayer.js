@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.68e4491ee7973314d750.js
-// Retrieved at 7/12/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1cac8bc54b7318cef904.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -321,7 +321,7 @@
 						name: `${r.dc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(I.K)(d())) return o(Object(c.k)({
+					if (!Object(I.J)(d())) return o(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void o(Object(a.j)());
 					const y = Object(I.j)(d());
@@ -480,7 +480,7 @@
 				}) => {
 					const i = s(),
 						a = i.multireddits.models;
-					if (!Object(I.K)(i)) return;
+					if (!Object(I.J)(i)) return;
 					const c = (e = !0) => {
 							t(Object(l.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
@@ -2085,4 +2085,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.68e4491ee7973314d750.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1cac8bc54b7318cef904.js.map

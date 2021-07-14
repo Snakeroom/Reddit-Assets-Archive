@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.099c63847bd43de065cb.js
-// Retrieved at 7/8/2021, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.d53cfdb603b7359d0a06.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -8,7 +8,7 @@
 				s = n("./src/reddit/selectors/user.ts"),
 				a = n("./src/reddit/actions/login.ts");
 			t.a = () => async (e, t) => {
-				await e(Object(r.r)()), Object(s.K)(t()) || e(Object(a.h)())
+				await e(Object(r.r)()), Object(s.J)(t()) || e(Object(a.h)())
 			}
 		},
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -32,7 +32,7 @@
 				})), await e(Object(a.g)(i.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
 				const o = n();
-				Object(r.a)(Object(c.a)(e)(o)), Object(d.K)(o) ? await t(Object(a.h)(i.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
+				Object(r.a)(Object(c.a)(e)(o)), Object(d.J)(o) ? await t(Object(a.h)(i.a.SNOOVATAR_MODAL)) : await t(Object(s.h)())
 			}
 		},
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -407,7 +407,7 @@
 							await n(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(j.nb)(s, {
+						const r = Object(j.mb)(s, {
 							userName: t
 						});
 						if (!r) return;
@@ -559,7 +559,7 @@
 						name: `${s.dc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(y.K)(d())) return a(Object(c.k)({
+					if (!Object(y.J)(d())) return a(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void a(Object(i.j)());
 					const x = Object(y.j)(d());
@@ -718,7 +718,7 @@
 				}) => {
 					const o = n(),
 						i = o.multireddits.models;
-					if (!Object(y.K)(o)) return;
+					if (!Object(y.J)(o)) return;
 					const c = (e = !0) => {
 							t(Object(l.f)({
 								text: r.fbt._("Sorry, failed to {followAction}", [r.fbt._param("followAction", e ? r.fbt._("follow", null, {
@@ -1009,7 +1009,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(h.nb)(e, {
+				user: (e, t) => Object(h.mb)(e, {
 					userName: t.username
 				})
 			});
@@ -1320,8 +1320,8 @@
 			const Ae = Object(o.c)({
 					activeTooltipId: f.a,
 					currentUser: h.j,
-					isLoggedIn: h.K,
-					hideNSFWPref: h.C,
+					isLoggedIn: h.J,
+					hideNSFWPref: h.B,
 					moderatorPermissions: (e, {
 						subredditId: t
 					}) => t ? Object(u.l)(e, {
@@ -1338,7 +1338,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: h.nb,
+					user: h.mb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(v.c)(e, {
@@ -2309,7 +2309,7 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
 					currentUser: o.j,
-					hideNSFWPref: o.C
+					hideNSFWPref: o.B
 				}),
 				c = Object(r.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(a.z)(t, n))
@@ -3325,7 +3325,7 @@
 				d = (e, t) => n => {
 					const {
 						id: r
-					} = Object(o.nb)(n, {
+					} = Object(o.mb)(n, {
 						userName: t
 					});
 					return {
@@ -3697,7 +3697,7 @@
 					subredditId: t,
 					username: n
 				}) => {
-					const r = Object(o.nb)(e, {
+					const r = Object(o.mb)(e, {
 						userName: n
 					});
 					if (!r) return;
@@ -3730,4 +3730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.099c63847bd43de065cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.d53cfdb603b7359d0a06.js.map

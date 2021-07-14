@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.36356fbacec340380b1b.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.9c9cdafd5844c1093407.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -179,7 +179,7 @@
 				}) => async (n, s) => {
 					const r = s();
 					if (!!r.features.comments.drafts[t])
-						if (Object(z.M)(r) && e) {
+						if (Object(z.L)(r) && e) {
 							const s = Y({
 								hasFocus: e,
 								draftKey: t
@@ -349,7 +349,7 @@
 				}) => async (s, r) => {
 					const o = r(),
 						m = Object(c.a)(V.c.replyToComment, t);
-					if (!Object(z.K)(r())) return s(Object(i.j)()), void s(Object(a.k)({
+					if (!Object(z.J)(r())) return s(Object(i.j)()), void s(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object($.m)(r(), {
 							commentId: t
@@ -389,7 +389,7 @@
 							draftType: V.c.replyToComment,
 							rtJson: p,
 							text: ""
-						}, Object(z.M)(o)) {
+						}, Object(z.L)(o)) {
 						const n = ue({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -662,7 +662,7 @@
 				A = e => async (t, n, {
 					apiContext: s
 				}) => {
-					if (!Object(x.K)(n())) return t(Object(a.j)()), void t(Object(m.k)({
+					if (!Object(x.J)(n())) return t(Object(a.j)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(S.m)(n(), {
 							commentId: e
@@ -858,7 +858,7 @@
 				}, R = e => async (t, n, {
 					apiContext: s
 				}) => {
-					if (!Object(O.K)(n())) return void t(Object(d.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(O.J)(n())) return void t(Object(d.i)(m.a.LOGIN_MODAL_ID));
 					const r = n().features.comments.models[e];
 					if (!r) return;
 					const o = r.isLocked ? u.j : u.d;
@@ -3125,7 +3125,7 @@
 							commentId: t
 						}),
 						s = n && n.authorId || "";
-					return Object(l.S)(e, s)
+					return Object(l.R)(e, s)
 				},
 				ee = (e, {
 					commentId: t
@@ -3246,4 +3246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.36356fbacec340380b1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.9c9cdafd5844c1093407.js.map

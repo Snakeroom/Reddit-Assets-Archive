@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.e6930dfb7a840b838ad5.js
-// Retrieved at 7/8/2021, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.72c6bdb0721aa3a12220.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, r) {
@@ -704,8 +704,8 @@
 				})),
 				q = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				X = r("./src/reddit/components/StripePaymentForm/index.tsx"),
-				Q = r("./src/reddit/hooks/useStripe.ts");
-			var V = e => o.a.createElement("div", {
+				V = r("./src/reddit/hooks/useStripe.ts");
+			var Q = e => o.a.createElement("div", {
 				className: I.a.premiumPurchaseHeader,
 				style: {
 					backgroundImage: `url("${s.a.assetPath}/img/gold/premium-hero-g.jpg")`
@@ -731,7 +731,7 @@
 				"data-redditstyle": !0
 			})));
 			var z = e => {
-				const t = Object(Q.a)(),
+				const t = Object(V.a)(),
 					r = (e.total / 100).toLocaleString(),
 					n = e.isAnnualPremium ? C.fbt._("yearly", null, {
 						hk: "10Ao7X"
@@ -748,7 +748,7 @@
 					i = c ? U : Y;
 				return o.a.createElement(N.StripeProvider, {
 					stripe: t
-				}, o.a.createElement(N.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(V, {
+				}, o.a.createElement(N.Elements, null, o.a.createElement(o.a.Fragment, null, o.a.createElement(Q, {
 					onCloseClick: e.onCloseModal,
 					userName: e.userName
 				}), o.a.createElement("div", {
@@ -816,7 +816,7 @@
 						const t = Object(P.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: _.W,
+					nightmode: _.V,
 					passthrough: w.e,
 					selectedPayment: w.c,
 					stripeErrorMessage: w.j,
@@ -1974,4 +1974,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.e6930dfb7a840b838ad5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.72c6bdb0721aa3a12220.js.map

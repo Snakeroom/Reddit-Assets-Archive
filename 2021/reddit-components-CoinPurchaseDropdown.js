@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b0b70cf564e767d4268d.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.ef27109bfdac359d39d9.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, r) {
@@ -571,7 +571,7 @@
 				}) => {
 					t(p());
 					const d = r(),
-						l = Object(i.K)(d);
+						l = Object(i.J)(d);
 					try {
 						const r = !l,
 							n = await Object(c.b)({
@@ -785,7 +785,7 @@
 						return null === (r = Object(F.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: e => Object(H.a)(e) && Object(U.g)(e),
-					isPremiumSubscriber: B.t,
+					isPremiumSubscriber: B.s,
 					premiumPackages: U.i,
 					purchaseCatalogError: U.j,
 					purchaseCatalogPending: U.k
@@ -1574,4 +1574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.b0b70cf564e767d4268d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.ef27109bfdac359d39d9.js.map

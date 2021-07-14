@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.78ca26217eb2833873ad.js
-// Retrieved at 7/8/2021, 4:40:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.303bc6f99db12887f174.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -718,7 +718,7 @@
 				}) => {
 					t(p());
 					const d = r(),
-						l = Object(c.K)(d);
+						l = Object(c.J)(d);
 					try {
 						const r = !l,
 							n = await Object(s.b)({
@@ -2203,7 +2203,7 @@
 				D = r("./src/reddit/hooks/useTracking.ts"),
 				Q = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
 				W = r.n(Q);
-			const z = {
+			const J = {
 					"premium-avatars": () => a.fbt._("Exclusive Avatar Gear", null, {
 						hk: "1f1QJb"
 					}),
@@ -2236,7 +2236,7 @@
 						hk: "2R1mSy"
 					})
 				},
-				J = {
+				z = {
 					"premium-avatars": () => a.fbt._("Outfit your avatar with the best gear and accessories", null, {
 						hk: "2HjLMS"
 					}),
@@ -2322,10 +2322,10 @@
 						} = e;
 						return i.a.createElement(q.a, {
 							className: W.a.benefit,
-							description: J[t](u),
+							description: z[t](u),
 							iconUrl: `${n.a.assetPath}/img/gold/premium-marketing/benefits-icons/${t}.png`,
 							key: t,
-							title: z[t](u),
+							title: J[t](u),
 							isNew: a,
 							onClick: () => o && r((e => t => ({
 								source: "premium_marketing",
@@ -2352,7 +2352,7 @@
 					var o, c;
 					const d = Object(s.e)(h.i),
 						l = Object(s.e)(V.d);
-					if (Object(s.e)(A.t)) return i.a.createElement("div", {
+					if (Object(s.e)(A.s)) return i.a.createElement("div", {
 						className: Object(U.a)($.a.buttons, e, {
 							[$.a.hero]: !!t
 						})
@@ -2461,9 +2461,9 @@
 				},
 				ae = Object(d.c)({
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
-					isGold: A.s,
-					isPremiumSubscriber: A.t,
-					isLoggedIn: A.K,
+					isGold: A.r,
+					isPremiumSubscriber: A.s,
+					isLoggedIn: A.J,
 					premiumPackages: h.i,
 					purchaseCatalogPending: h.k,
 					shouldShowPremiumPurchaseModal: L.o
@@ -2810,4 +2810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.78ca26217eb2833873ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.303bc6f99db12887f174.js.map

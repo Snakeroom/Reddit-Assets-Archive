@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.05bb450553d7e774b36c.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.1fa9c796f96e84e95e62.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/ClassicPost/index.tsx": function(e, t, s) {
@@ -78,8 +78,8 @@
 						isCommentCountAnimationEnabled: H,
 						isVoteCountAnimationEnabled: K,
 						isCountAnimShadowTestEnabled: G,
-						isFrontpage: Z,
-						isGalleryTileLayoutDefault: J,
+						isFrontpage: J,
+						isGalleryTileLayoutDefault: Z,
 						isLoggedIn: Q,
 						isOverlay: Y,
 						imageGalleryCurrentItem: q,
@@ -106,7 +106,7 @@
 						inSubredditOrProfile: i,
 						isCurrentUserProfilePost: D,
 						isOverlay: Y,
-						shouldShowSubscribeButton: !(Z && Q),
+						shouldShowSubscribeButton: !(J && Q),
 						subredditOrProfile: me
 					}, je = Object(a.t)(re, q), {
 						source: Se
@@ -224,7 +224,7 @@
 							hide: !Ee,
 							report: !Ee
 						})
-					})), r.a.createElement(b.d, null))), z(re, ie, o, xe, J)));
+					})), r.a.createElement(b.d, null))), z(re, ie, o, xe, Z)));
 					return r.a.createElement(j.b, null, Ne)
 				}
 			}
@@ -426,7 +426,7 @@
 					e(Object(x.d)(t.post.author))
 				}
 			}));
-			class Z extends a.a.Component {
+			class J extends a.a.Component {
 				componentDidMount() {
 					this.props.iconUrl || this.props.fetchProfile()
 				}
@@ -525,9 +525,9 @@
 					}))
 				}
 			}
-			const J = Object(l.a)(Z),
-				Q = Object(D.a)(J);
-			t.default = Object(U.a)(G(J))
+			const Z = Object(l.a)(J),
+				Q = Object(D.a)(Z);
+			t.default = Object(U.a)(G(Z))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -601,7 +601,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.l,
-					isLoggedIn: h.K,
+					isLoggedIn: h.J,
 					moderatorPermissions: u.k,
 					modModeEnabled: c.Q,
 					poll: (e, t) => {
@@ -727,4 +727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.05bb450553d7e774b36c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.1fa9c796f96e84e95e62.js.map

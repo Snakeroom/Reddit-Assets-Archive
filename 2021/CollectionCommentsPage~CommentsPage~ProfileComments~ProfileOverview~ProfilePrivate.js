@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.add03c4c1a74c2448b4e.js
-// Retrieved at 7/14/2021, 3:10:26 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fd627381226485e47efb.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -181,7 +181,7 @@
 				}, k = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(h.K)(n())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(h.J)(n())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const s = n().features.comments.models[e];
 					if (!s) return;
 					const r = s.isLocked ? m.j : m.d;
@@ -870,7 +870,7 @@
 				});
 			var X = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
 				z = n.n(X);
-			const Q = ({
+			const J = ({
 				className: e,
 				commentId: t,
 				renderedInOverlay: n
@@ -896,7 +896,7 @@
 					text: d
 				}))
 			};
-			var J = n("./src/lib/addQueryParams/index.ts"),
+			var Q = n("./src/lib/addQueryParams/index.ts"),
 				G = n("./src/lib/humanizeDateTime/index.ts"),
 				Z = n("./src/lib/timeAgo/index.ts"),
 				Y = n("./src/reddit/actions/comment/index.ts");
@@ -911,7 +911,7 @@
 					}));
 					return r.a.createElement("a", {
 						className: t,
-						href: Object(J.a)(n.permalink, {
+						href: Object(Q.a)(n.permalink, {
 							utm_source: "reddit",
 							utm_medium: "web2x",
 							context: 3
@@ -1229,7 +1229,7 @@
 					renderContractorBadge: b,
 					renderedInOverlay: u,
 					areAchievementsEnabled: v
-				}), s.isAuthorCakeday ? r.a.createElement(Q, {
+				}), s.isAuthorCakeday ? r.a.createElement(J, {
 					className: Se.a.cakeDay,
 					commentId: s.id,
 					renderedInOverlay: u
@@ -1293,10 +1293,10 @@
 				Ve = n("./src/reddit/selectors/subreddit.ts"),
 				Xe = n("./src/reddit/selectors/userFlair.ts"),
 				ze = n("./src/reddit/components/Comments/Comment/TopMeta/index.m.less"),
-				Qe = n.n(ze);
+				Je = n.n(ze);
 
-			function Je() {
-				return (Je = Object.assign || function(e) {
+			function Qe() {
+				return (Qe = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -1304,13 +1304,13 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Ge = p.a.wrapped(_.b, "RightPositionedAuthorFlair", Qe.a),
-				Ze = p.a.wrapped(Le.a, "AdminIcon", Qe.a),
-				Ye = p.a.div("AdminEmeritus", Qe.a),
-				qe = p.a.wrapped(We, "OpIcon", Qe.a),
-				Ke = p.a.wrapped(Le.a, "ContractorIcon", Qe.a),
-				$e = p.a.span("DeletedText", Qe.a),
-				et = p.a.wrapped(I.a, "MetaSeparator", Qe.a),
+			const Ge = p.a.wrapped(_.b, "RightPositionedAuthorFlair", Je.a),
+				Ze = p.a.wrapped(Le.a, "AdminIcon", Je.a),
+				Ye = p.a.div("AdminEmeritus", Je.a),
+				qe = p.a.wrapped(We, "OpIcon", Je.a),
+				Ke = p.a.wrapped(Le.a, "ContractorIcon", Je.a),
+				$e = p.a.span("DeletedText", Je.a),
+				et = p.a.wrapped(I.a, "MetaSeparator", Je.a),
 				tt = e => (t, {
 					comment: n,
 					renderedInOverlay: o
@@ -1383,7 +1383,7 @@
 				}));
 				if (k && v) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Fe, {
 					className: Object(m.a)(s, {
-						[Qe.a.collapsed]: a
+						[Je.a.collapsed]: a
 					}),
 					collapsedBecauseCrowdControl: i,
 					comment: d,
@@ -1394,50 +1394,50 @@
 					subredditDisplayText: L,
 					renderContractorBadge: !!B
 				}), W);
-				if (d.isDeleted) return r.a.createElement(ot, Je({}, e, {
-					className: Object(m.a)(s, Qe.a.container, {
-						[Qe.a.collapsed]: a
+				if (d.isDeleted) return r.a.createElement(ot, Qe({}, e, {
+					className: Object(m.a)(s, Je.a.container, {
+						[Je.a.collapsed]: a
 					})
 				}));
-				if (a) return r.a.createElement(st, Je({}, e, {
-					className: Object(m.a)(s, Qe.a.container, {
-						[Qe.a.collapsed]: a
+				if (a) return r.a.createElement(st, Qe({}, e, {
+					className: Object(m.a)(s, Je.a.container, {
+						[Je.a.collapsed]: a
 					})
 				}));
 				const V = !j && f === Pe.b.Left;
 				return r.a.createElement("div", {
-					className: Object(m.a)(s, Qe.a.container, {
-						[Qe.a.collapsed]: a,
-						[Qe.a.hasBadges]: E,
-						[Qe.a.liveStreaming]: C
+					className: Object(m.a)(s, Je.a.container, {
+						[Je.a.collapsed]: a,
+						[Je.a.hasBadges]: E,
+						[Je.a.liveStreaming]: C
 					}),
 					"data-testid": "comment-top-meta"
 				}, h && V && r.a.createElement(_.b, {
 					flair: h,
 					forceSmallEmojis: p
 				}), !Object(N.f)(d) && r.a.createElement(O.b, {
-					className: Qe.a.userBadges,
+					className: Je.a.userBadges,
 					showAddCustom: !0,
 					subredditId: d.subredditId,
 					userId: d.authorId,
 					uniqueIdentifier: d.id
 				}), o && o, r.a.createElement(D, {
-					authorClassName: H ? Qe.a.NftAuthor : void 0,
+					authorClassName: H ? Je.a.NftAuthor : void 0,
 					comment: d,
 					isLivestreaming: C,
 					isStrong: !!p,
 					renderedInOverlay: P
 				}), i && r.a.createElement(oe, null), i && r.a.createElement(I.c, {
-					className: Qe.a.metaText,
+					className: Je.a.metaText,
 					key: "crowdControlSeparator"
 				}), h && !V && r.a.createElement(Ge, {
 					flair: h,
 					forceSmallEmojis: p
 				}), !p && r.a.createElement(y.a, {
-					className: Qe.a.publicPoints,
+					className: Je.a.publicPoints,
 					contentId: d.id,
 					metaSeparator: r.a.createElement(I.c, {
-						className: Qe.a.metaText
+						className: Je.a.metaText
 					}),
 					subredditId: d.subredditId,
 					userId: d.authorId,
@@ -1460,27 +1460,27 @@
 					subredditDisplayText: L,
 					topSupporterTooltipId: R
 				}), v && r.a.createElement(Ie, {
-					className: Qe.a.authorRole,
+					className: Je.a.authorRole,
 					comment: d,
 					subredditDisplayText: L,
 					renderContractorBadge: !!B,
 					renderedInOverlay: P
 				})), !p && r.a.createElement(r.a.Fragment, null, !d.isDeleted && !k && r.a.createElement(r.a.Fragment, null, r.a.createElement(I.b, {
-					className: Qe.a.metaText,
+					className: Je.a.metaText,
 					isScoreHidden: d.isScoreHidden,
 					score: d.score
 				}), r.a.createElement(I.c, {
-					className: Qe.a.metaText,
+					className: Je.a.metaText,
 					key: "scoreCreatedSeparator"
 				})), r.a.createElement(q, {
 					key: "Created",
-					className: Qe.a.MetaLink,
+					className: Je.a.MetaLink,
 					comment: d,
 					renderedInOverlay: P
 				}), d.isStickied && r.a.createElement(r.a.Fragment, null, r.a.createElement(I.c, {
-					className: Qe.a.separator
+					className: Je.a.separator
 				}), r.a.createElement(Me, null)), d.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(I.c, {
-					className: Qe.a.separator
+					className: Je.a.separator
 				}), r.a.createElement(ie, {
 					editedAt: d.editedAt
 				}))), r.a.createElement(Ce, {
@@ -1508,7 +1508,7 @@
 						hk: "E1t49"
 					})), r.a.createElement(q, {
 						key: "Created",
-						className: Qe.a.MetaLink,
+						className: Je.a.MetaLink,
 						comment: a,
 						renderedInOverlay: i
 					}), n && rt({
@@ -1528,15 +1528,15 @@
 						comment: t,
 						isAuthorDeleted: Object(N.f)(t)
 					})), r.a.createElement(I.b, {
-						className: Qe.a.metaText,
+						className: Je.a.metaText,
 						isScoreHidden: t.isScoreHidden,
 						score: t.score
 					}), r.a.createElement(I.c, {
-						className: Qe.a.metaText,
+						className: Je.a.metaText,
 						key: "scoreCreatedSeparator"
 					}), r.a.createElement(q, {
 						key: "Created",
-						className: Qe.a.MetaLink,
+						className: Je.a.MetaLink,
 						comment: t,
 						renderedInOverlay: s
 					}), rt({
@@ -1552,7 +1552,7 @@
 						numChildren: 0
 					};
 					return r.a.createElement(et, {
-						className: Qe.a.metaText
+						className: Je.a.metaText
 					}, t ? o.fbt._({
 						"*": "More than {number} children",
 						_1: "More than 1 child"
@@ -1575,8 +1575,8 @@
 						renderedInOverlay: t,
 						...n
 					} = this.props;
-					return r.a.createElement(s.Fragment, null, e.isAuthorCakeday && r.a.createElement(Q, {
-						className: Qe.a.cakeDay,
+					return r.a.createElement(s.Fragment, null, e.isAuthorCakeday && r.a.createElement(J, {
+						className: Je.a.cakeDay,
 						commentId: e.id,
 						renderedInOverlay: t
 					}), e.isAdmin && r.a.createElement(Ze, {
@@ -1593,7 +1593,7 @@
 					}, "Δ"), e.distinguishType === u.E.ALUMNI_ADMIN && it(n.adminEmeritusTooltipId, H()), e.isMod && r.a.createElement(me.a, {
 						name: "mod",
 						isFilled: !0,
-						className: Qe.a.ModeratorIcon,
+						className: Je.a.ModeratorIcon,
 						"aria-label": U(n.subredditDisplayText),
 						id: n.modTooltipId,
 						onMouseEnter: this.onShowModTooltip,
@@ -3052,8 +3052,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(c.c)({
-					hideNSFWPref: k.C,
-					nightmode: k.W
+					hideNSFWPref: k.B,
+					nightmode: k.V
 				}),
 				T = Object(a.b)(j)(e => r.a.createElement("div", {
 					className: Object(d.a)(y.a.communityItemContainer, {
@@ -3429,4 +3429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.add03c4c1a74c2448b4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fd627381226485e47efb.js.map

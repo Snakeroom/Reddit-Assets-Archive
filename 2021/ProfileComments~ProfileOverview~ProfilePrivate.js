@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.7b4cabff8ee155565419.js
-// Retrieved at 7/13/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f82faab6eaf5526699c4.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1017,7 +1017,7 @@
 					}) => Object(J.C)(e, {
 						commentId: t.postId
 					}),
-					isLoggedIn: ee.K,
+					isLoggedIn: ee.J,
 					moderatorPermissions: (e, {
 						comment: t
 					}) => Object(Q.l)(e, {
@@ -1579,7 +1579,7 @@
 						return s && s.coinPrice >= d.g
 					})
 				},
-				isNightmodeOn: v.W
+				isNightmodeOn: v.V
 			}), e => ({
 				openPost: t => e(Object(m.M)(t))
 			}));
@@ -2149,7 +2149,7 @@
 				}),
 				L = Object(m.c)({
 					isDropdownMenuOpen: e => Object(O.a)(e) === S,
-					isOwnProfile: (e, t) => Object(k.O)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(k.N)(e, t.profileName),
 					isSnoovatar30Enabled: C.d.snoovatar30,
 					isSubscriptionsPinned: I.b
 				}),
@@ -2691,7 +2691,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.nb)(e, {
+					const s = Object(p.mb)(e, {
 							userName: t
 						}),
 						n = Object(m.e)(e);
@@ -2904,7 +2904,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(h.nb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(h.mb)(e, {
 					userName: t.name
 				}) : null
 			}), I = Object(r.b)(k, e => ({
@@ -2960,7 +2960,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.k,
 					isExpanded: b.l,
-					isLoggedIn: f.K,
+					isLoggedIn: f.J,
 					moderatorPermissions: u.k,
 					modModeEnabled: c.Q,
 					poll: (e, t) => {
@@ -3129,4 +3129,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.7b4cabff8ee155565419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f82faab6eaf5526699c4.js.map

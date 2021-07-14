@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b824c2b4792a3c931d39.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.9554a0fadac112384ed0.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, r) {
@@ -3063,14 +3063,14 @@
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => {
 					const t = Object(n.c)(e, {
-						experimentEligibilitySelector: a.K,
+						experimentEligibilitySelector: a.J,
 						experimentName: s.Nb
 					});
 					return !(!t || Object(s.Xd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
-						experimentEligibilitySelector: a.K,
+						experimentEligibilitySelector: a.J,
 						experimentName: s.Nb
 					}) === s.cc.ListingEnabled
 				}
@@ -3132,4 +3132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b824c2b4792a3c931d39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.9554a0fadac112384ed0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.af660355b295126ff530.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3b71869b1fd62824f378.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -144,12 +144,12 @@
 				K = n("./src/reddit/featureFlags/index.ts"),
 				U = n("./src/reddit/helpers/dom/index.ts"),
 				L = n("./src/reddit/helpers/localStorage/index.ts"),
-				M = n("./src/reddit/helpers/trackers/commentsPage.ts"),
-				F = n("./src/reddit/models/Comment/index.ts"),
+				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
+				M = n("./src/reddit/models/Comment/index.ts"),
 				G = n("./src/reddit/models/PostDraft/index.ts"),
-				W = n("./src/reddit/models/RichTextJson/index.ts"),
-				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				J = n("./src/reddit/models/Toast/index.ts"),
+				J = n("./src/reddit/models/RichTextJson/index.ts"),
+				W = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
+				B = n("./src/reddit/models/Toast/index.ts"),
 				H = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
 				V = n("./src/reddit/selectors/platform.ts"),
@@ -164,7 +164,7 @@
 				}) => async (n, r) => {
 					const o = r();
 					if (!!o.features.comments.drafts[t])
-						if (Object(Y.M)(o) && e) {
+						if (Object(Y.L)(o) && e) {
 							const r = X({
 								hasFocus: e,
 								draftKey: t
@@ -177,7 +177,7 @@
 				}, ee = Object(s.a)(z.H), te = Object(s.a)(z.J), ne = Object(s.a)(z.I), re = Object(s.a)(z.G), oe = (e, t, n, r) => {
 					const o = r.ok && r.body,
 						s = o && o.comment && o.comment.id;
-					M.f(e, n, t, s)
+					F.f(e, n, t, s)
 				}, se = "Toxicity_Warning__Modal", ce = (e, t, n, r, o, s) => async (c, d, {
 					gqlContext: i
 				}) => {
@@ -220,7 +220,7 @@
 						});
 						u(Object(m.z)(o, O.a.CommentSubmitted))
 					} else {
-						v.error && v.error.type === o.Gb && M.g(y, de(s), e);
+						v.error && v.error.type === o.Gb && F.g(y, de(s), e);
 						const t = v.error && v.error.fields && v.error.fields[0] ? v.error.fields[0].msg : r.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -229,7 +229,7 @@
 							error: v.error
 						})), u(Object(f.f)({
 							duration: f.a,
-							kind: J.b.Error,
+							kind: B.b.Error,
 							text: t
 						}))
 					}
@@ -292,7 +292,7 @@
 								commentId: s
 							});
 							if (!e) return;
-							M.g(l, de(m), e.postId, s)
+							F.g(l, de(m), e.postId, s)
 						}
 						t(re({
 							draftKey: i,
@@ -304,10 +304,10 @@
 					apiContext: c
 				}) => {
 					const d = e === _.h.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(W.G)(t)) o(fe({
+					if (!t || "object" == typeof t && Object(J.G)(t)) o(fe({
 						editorMode: e,
 						draftKey: n,
-						content: d ? W.i : ""
+						content: d ? J.i : ""
 					})), o(Object(u.c)(e));
 					else {
 						o(Object(u.b)(n));
@@ -321,7 +321,7 @@
 							})), o(Object(u.c)(e))
 						} else o(Object(u.a)(n)), o(Object(f.f)({
 							duration: f.a,
-							kind: J.b.Error,
+							kind: B.b.Error,
 							text: r.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -334,7 +334,7 @@
 				}) => async (r, o) => {
 					const s = o(),
 						m = Object(c.a)(G.c.replyToComment, t);
-					if (!Object(Y.K)(o())) return r(Object(i.j)()), void r(Object(a.k)({
+					if (!Object(Y.J)(o())) return r(Object(i.j)()), void r(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(H.m)(o(), {
 							commentId: t
@@ -354,11 +354,11 @@
 						const e = O.filter(e => !!e && 10 !== e.charCodeAt(0));
 						if (p === _.h.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
 						else {
-							const t = e.map(e => B.s(e, null)).map(e => B.l([e])),
-								n = B.s("", null),
-								r = B.l([n]);
+							const t = e.map(e => W.s(e, null)).map(e => W.l([e])),
+								n = W.s("", null),
+								r = W.l([n]);
 							f = {
-								document: [B.c(t), r]
+								document: [W.c(t), r]
 							}
 						}
 					}
@@ -374,7 +374,7 @@
 							draftType: G.c.replyToComment,
 							rtJson: f,
 							text: ""
-						}, Object(Y.M)(s)) {
+						}, Object(Y.L)(s)) {
 						const n = ue({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -415,7 +415,7 @@
 					text: o
 				}) => async (s, c) => {
 					const d = c();
-					d.user.account && (M.c(d), s(xe({
+					d.user.account && (F.c(d), s(xe({
 						commentId: e,
 						commentsPageKey: n,
 						draftKey: r,
@@ -440,7 +440,7 @@
 					if (!i.user.account) return;
 					n(ve({
 						draftKey: r
-					})), M.d(i);
+					})), F.d(i);
 					const a = i.user.account.displayText || "",
 						m = s.commentMode,
 						u = await (async (e, t, n, r, s, c) => {
@@ -501,7 +501,7 @@
 					const c = r();
 					n(_e({
 						id: e
-					})), M.a(e, c);
+					})), F.a(e, c);
 					const d = await ((e, t) => Object(h.a)(Object(I.a)(e, [v.a]), {
 						endpoint: Object(g.a)(`${e.apiUrl}/api/del`),
 						method: o.hb.POST,
@@ -544,12 +544,12 @@
 				}) => {
 					var c, d, i, a, m, u;
 					n(Object(Q.c)());
-					const l = e => Object(f.f)(Object(f.e)(e, J.b.Error));
+					const l = e => Object(f.f)(Object(f.e)(e, B.b.Error));
 					if (((null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) || []).length === j.a) n(l(r.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
 					else {
-						const c = t === F.a.FOLLOWED,
+						const c = t === M.a.FOLLOWED,
 							d = {
 								id: e,
 								expiresAt: Date.now() + 6048e5
@@ -570,7 +570,7 @@
 								hk: "2fJsVC"
 							});
 							n(Object(f.f)({
-								kind: J.b.SuccessCommunityGreen,
+								kind: B.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else n(Object(Q.n)(d)), n(l(r.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -592,13 +592,13 @@
 			})), n.d(t, "l", (function() {
 				return L
 			})), n.d(t, "q", (function() {
-				return M
-			})), n.d(t, "j", (function() {
 				return F
+			})), n.d(t, "j", (function() {
+				return M
 			})), n.d(t, "g", (function() {
 				return G
 			})), n.d(t, "f", (function() {
-				return W
+				return J
 			})), n.d(t, "o", (function() {
 				return H
 			})), n.d(t, "p", (function() {
@@ -647,7 +647,7 @@
 				P = e => async (t, n, {
 					apiContext: r
 				}) => {
-					if (!Object(E.K)(n())) return t(Object(a.j)()), void t(Object(m.k)({
+					if (!Object(E.J)(n())) return t(Object(a.j)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(v.m)(n(), {
 							commentId: e
@@ -746,7 +746,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, M = Object(f.a)(O.b, I.a.upvoted), F = Object(f.a)(O.b, I.a.downvoted), G = Object(c.a)(_.j), W = Object(c.a)(_.i), B = Object(c.a)(_.e), J = Object(c.a)(_.f), H = (Object(c.a)(_.c), Object(c.a)(_.d), ({
+				}, F = Object(f.a)(O.b, I.a.upvoted), M = Object(f.a)(O.b, I.a.downvoted), G = Object(c.a)(_.j), J = Object(c.a)(_.i), W = Object(c.a)(_.e), B = Object(c.a)(_.f), H = (Object(c.a)(_.c), Object(c.a)(_.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -762,7 +762,7 @@
 							commentsPageKey: t
 						}),
 						a = d.depth;
-					r(B({
+					r(W({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -771,7 +771,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(J({
+					n(B({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -787,7 +787,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o(B({
+					o(W({
 						commentId: d,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -1187,8 +1187,8 @@
 					K = null === (t = null == T ? void 0 : T.post) || void 0 === t ? void 0 : t.permalink,
 					U = D === O.a.PostReply ? A : null === (n = null == T ? void 0 : T.comment) || void 0 === n ? void 0 : n.id,
 					L = (null === (o = null == T ? void 0 : T.post) || void 0 === o ? void 0 : o.id) || (null === (y = null === (j = null == T ? void 0 : T.comment) || void 0 === j ? void 0 : j.postInfo) || void 0 === y ? void 0 : y.id),
-					M = null === (I = null == T ? void 0 : T.awarding) || void 0 === I ? void 0 : I.award.id,
-					F = null === (g = null === (v = null == T ? void 0 : T.awarding) || void 0 === v ? void 0 : v.awarder) || void 0 === g ? void 0 : g.id;
+					F = null === (I = null == T ? void 0 : T.awarding) || void 0 === I ? void 0 : I.award.id,
+					M = null === (g = null === (v = null == T ? void 0 : T.awarding) || void 0 === v ? void 0 : v.awarder) || void 0 === g ? void 0 : g.id;
 				return (() => {
 					switch (D) {
 						case O.a.LifecyclePostSuggestions:
@@ -1247,16 +1247,16 @@
 							}))
 						}
 						case O.a.AwardReceived: {
-							if (!F) return null;
+							if (!M) return null;
 							const e = e => {
-								e.preventDefault(), F ? N({
+								e.preventDefault(), M ? N({
 									position: f.b.SECOND,
-									awardId: M
+									awardId: F
 								}) : C(Object(m.f)(x))
 							};
 							return s.a.createElement(u.b, {
-								userId: F,
-								contextId: F,
+								userId: M,
+								contextId: M,
 								onClick: e,
 								isFullWidth: _,
 								priority: l.b.Tertiary,
@@ -2350,17 +2350,17 @@
 			})), n.d(t, "s", (function() {
 				return L
 			})), n.d(t, "D", (function() {
-				return M
-			})), n.d(t, "E", (function() {
 				return F
+			})), n.d(t, "E", (function() {
+				return M
 			})), n.d(t, "F", (function() {
 				return G
 			})), n.d(t, "r", (function() {
-				return W
-			})), n.d(t, "e", (function() {
-				return B
-			})), n.d(t, "v", (function() {
 				return J
+			})), n.d(t, "e", (function() {
+				return W
+			})), n.d(t, "v", (function() {
+				return B
 			})), n.d(t, "K", (function() {
 				return H
 			})), n.d(t, "f", (function() {
@@ -2531,10 +2531,10 @@
 						depth: s
 					}
 				},
-				M = (e, {
+				F = (e, {
 					moreCommentsId: t
 				}) => e.moreComments.models[t],
-				F = (e, {
+				M = (e, {
 					moreCommentsId: t
 				}) => !!e.moreComments.api.pending[t],
 				G = (e, {
@@ -2550,10 +2550,10 @@
 					}
 					return null
 				},
-				W = (e, {
+				J = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				B = (e, {
+				W = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.models[t] : void 0;
@@ -2561,7 +2561,7 @@
 					const r = e.authorFlair.models[n.subredditId];
 					return r ? r[n.author] : null
 				},
-				J = (e, {
+				B = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
 				H = (e, {
@@ -2603,7 +2603,7 @@
 							commentId: t
 						}),
 						r = n && n.authorId || "";
-					return Object(l.S)(e, r)
+					return Object(l.R)(e, r)
 				},
 				ee = (e, {
 					commentId: t
@@ -2724,4 +2724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.af660355b295126ff530.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3b71869b1fd62824f378.js.map

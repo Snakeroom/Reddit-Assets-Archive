@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0ab6d8538ce7cc88649f.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.63a43462abd0f8849ec9.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -286,7 +286,7 @@
 				p = s.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.V
 				}));
 			t.a = x(e => {
 				const t = {
@@ -385,7 +385,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(c.a)(_.E, j.cb, (e, {
+				N = Object(a.b)(() => Object(c.a)(_.E, j.bb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(_.b)(e, s) : null, E.a, C.actionInfo, _.F, (e, t, s, n, r, o) => ({
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.0ab6d8538ce7cc88649f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.63a43462abd0f8849ec9.js.map

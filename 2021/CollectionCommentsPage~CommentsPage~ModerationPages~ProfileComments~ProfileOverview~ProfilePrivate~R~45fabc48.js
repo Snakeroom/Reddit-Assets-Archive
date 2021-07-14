@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a7c41ec25ad1f9428610.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.32773d7e8970ee01b766.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -436,13 +436,13 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, G = Object(i.a)(a.r), q = Object(i.a)(a.n), H = Object(i.a)(a.s), K = (e, t) => async (o, n, {
+				}, G = Object(i.a)(a.r), H = Object(i.a)(a.n), q = Object(i.a)(a.s), K = (e, t) => async (o, n, {
 					apiContext: r
 				}) => {
 					o(G());
 					const i = await O(r(), e, t);
 					let a = !1;
-					if (i.ok) o(H({
+					if (i.ok) o(q({
 						collectionId: e,
 						newTitle: t
 					})), o(Object(c.f)({
@@ -453,7 +453,7 @@
 					})), a = !0;
 					else {
 						const e = i.error;
-						o(q(e)), o(Object(c.f)({
+						o(H(e)), o(Object(c.f)({
 							kind: w.b.Error,
 							text: s.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
@@ -939,7 +939,7 @@
 					isChatPost: E.d,
 					isPostSEOEligible: j.f,
 					postPermalink: w.E,
-					shouldOpenPostInNewTab: I.cb
+					shouldOpenPostInNewTab: I.bb
 				})),
 				S = ({
 					hasModPostPerms: e,
@@ -1476,8 +1476,8 @@
 				V = o("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				U = o("./src/reddit/helpers/styles/smartTextColor.ts"),
 				G = o("./src/reddit/selectors/user.ts"),
-				q = o("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				H = o("./src/reddit/helpers/correlationIdTracker.ts"),
+				H = o("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				q = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				K = o("./src/reddit/helpers/trackers/modTools.ts"),
 				J = o("./src/reddit/helpers/trackers/post.ts"),
 				z = o("./src/reddit/icons/fonts/index.tsx"),
@@ -1533,7 +1533,7 @@
 					activeModalId: ce.a,
 					claimedFreeAward: k.b,
 					layout: W.O,
-					userIsOp: G.qb,
+					userIsOp: G.pb,
 					subreddit: W.q
 				}),
 				Oe = Object(i.b)(Ce, (e, {
@@ -1580,7 +1580,7 @@
 							post: s,
 							sendEvent: n
 						} = this.props;
-						t(Object(H.d)(H.a.GildingFlow, !0), null === (e = this.props.claimedFreeAward) || void 0 === e ? void 0 : e.id);
+						t(Object(q.d)(q.a.GildingFlow, !0), null === (e = this.props.claimedFreeAward) || void 0 === e ? void 0 : e.id);
 						const {
 							clickGildEvent: r
 						} = await Promise.resolve().then(o.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
@@ -1641,7 +1641,7 @@
 						showEditFlair: V,
 						showEditPost: U,
 						subreddit: G,
-						toggleEditStartTimeModal: H,
+						toggleEditStartTimeModal: q,
 						tooltipType: Q,
 						userIsOp: Z,
 						searchIgnoreClick: ne,
@@ -1661,7 +1661,7 @@
 						numComments: L.numComments,
 						isCommentCountAnimation: ae,
 						isCountAnimShadowTestEnabled: f
-					}), Ee && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
+					}), Ee && r.a.createElement(r.a.Fragment, null, r.a.createElement(H.a, {
 						displayText: s.fbt._("Award", null, {
 							hk: "2fZCpE"
 						}),
@@ -1698,7 +1698,7 @@
 						className: le.a.shareText
 					}, s.fbt._("share", null, {
 						hk: "1eAfZg"
-					})))), U && !_e && r.a.createElement(q.a, {
+					})))), U && !_e && r.a.createElement(H.a, {
 						displayText: s.fbt._("Edit post", null, {
 							hk: "Jq2Cr"
 						}),
@@ -1710,7 +1710,7 @@
 						skipRoleAttr: !0
 					}, r.a.createElement(z.a, {
 						name: "edit"
-					})), (!m || !E) && r.a.createElement(q.a, {
+					})), (!m || !E) && r.a.createElement(H.a, {
 						displayText: L.saved ? s.fbt._("unsave", null, {
 							hk: "4Dn4IT"
 						}) : s.fbt._("save", null, {
@@ -1726,7 +1726,7 @@
 					}, r.a.createElement(z.a, {
 						name: L.saved ? "saved" : "save",
 						className: le.a.saveIcon
-					})), !L.isSponsored && !_e && r.a.createElement(q.a, {
+					})), !L.isSponsored && !_e && r.a.createElement(H.a, {
 						displayText: L.hidden ? s.fbt._("unhide", null, {
 							hk: "151XLs"
 						}) : s.fbt._("hide", null, {
@@ -1742,7 +1742,7 @@
 					}, r.a.createElement(z.a, {
 						name: "hide",
 						isFilled: L.hidden
-					})), !ce && !L.isSponsored && !_e && r.a.createElement(q.a, {
+					})), !ce && !L.isSponsored && !_e && r.a.createElement(H.a, {
 						displayText: s.fbt._("report", null, {
 							hk: "1phfns"
 						}),
@@ -1806,8 +1806,8 @@
 						showEditPost: !!U,
 						showEditFlair: !!V,
 						useFlatlistBreakpoints: this.props.useFlatlistBreakpoints,
-						toggleAddEventStartTimeModal: H,
-						toggleEditStartTimeModal: H
+						toggleAddEventStartTimeModal: q,
+						toggleEditStartTimeModal: q
 					})), e === Object($.s)(L.id, v) && r.a.createElement(re.a, {
 						subredditId: L.belongsTo.id,
 						onClose: this.onToggleCurrentModal,
@@ -1822,7 +1822,7 @@
 						isOverlay: v
 					}), e === Object($.r)(L.id, v, $.j.POST_OVERFLOW_MENU) && ue && r.a.createElement(ue, {
 						onChange: t,
-						onClose: H,
+						onClose: q,
 						schedule: Object(u.c)(L),
 						shouldShowDeleteButton: !1
 					}), e === Object($.t)(L.id, v) && r.a.createElement(ie.a, {
@@ -2153,13 +2153,13 @@
 					showIconsOnly: T
 				} = e, N = Object(i.d)(), M = Object(x.a)(l), L = Object(b.b)(y), D = !(!y.approvedBy || !L), B = Object(h.b)(y.id, a), W = M && g && !y.isSponsored, V = t && g;
 				let U, G;
-				const q = R("Approve", y.id, a),
-					H = R("Spam", y.id, a),
+				const H = R("Approve", y.id, a),
+					q = R("Spam", y.id, a),
 					K = () => N(Object(p.h)({
-						tooltipId: q
+						tooltipId: H
 					})),
 					J = () => N(Object(p.h)({
-						tooltipId: H
+						tooltipId: q
 					}));
 				T || (U = ((e, t) => e ? s.fbt._("reapprove", null, {
 					hk: "OJvB1"
@@ -2181,7 +2181,7 @@
 					text: U,
 					textClassName: Object(w.c)(z),
 					disabled: !!y.approvedBy && !L,
-					id: q,
+					id: H,
 					onMouseEnter: K,
 					onMouseLeave: K,
 					onClick: () => {
@@ -2189,7 +2189,7 @@
 					}
 				}, r.a.createElement(C.a, null), r.a.createElement(u.c, {
 					className: S.a.tooltip,
-					tooltipId: q,
+					tooltipId: H,
 					text: U
 				})), r.a.createElement(F, {
 					className: A(j.a.Remove, z),
@@ -2203,7 +2203,7 @@
 					text: G,
 					textClassName: Object(w.c)(z),
 					disabled: y.isSpam,
-					id: H,
+					id: q,
 					onMouseEnter: J,
 					onMouseLeave: J,
 					onClick: () => {
@@ -2211,7 +2211,7 @@
 					}
 				}, r.a.createElement(O.a, null), r.a.createElement(u.c, {
 					className: S.a.tooltip,
-					tooltipId: H,
+					tooltipId: q,
 					text: G
 				}))), V && r.a.createElement(f.c, {
 					className: A(j.a.Flair, z),
@@ -2430,8 +2430,8 @@
 				V = o("./src/reddit/helpers/trackers/postCollection.ts"),
 				U = o("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
 				G = o.n(U);
-			const q = `${s.a.assetPath}/img/snoo-drafts.png`,
-				H = N.a.div("TopRow", G.a),
+			const H = `${s.a.assetPath}/img/snoo-drafts.png`,
+				q = N.a.div("TopRow", G.a),
 				K = N.a.div("TitleRow", G.a),
 				J = N.a.div("DetailsContainer", G.a),
 				z = N.a.wrapped(C.a, "ButtonRow", G.a),
@@ -2492,7 +2492,7 @@
 				}
 				renderNoCollections() {
 					return i.a.createElement(X, null, i.a.createElement(Z, {
-						src: q
+						src: H
 					}), i.a.createElement($, null, n.fbt._("Your collections will live here", null, {
 						hk: "FCxWg"
 					})))
@@ -2516,7 +2516,7 @@
 					return i.a.createElement("div", {
 						className: G.a.wrapper,
 						"data-redditstyle": !0
-					}, i.a.createElement(H, null, i.a.createElement(K, {
+					}, i.a.createElement(q, null, i.a.createElement(K, {
 						"data-redditstyle": !0
 					}, t || n.fbt._("My collections", null, {
 						hk: "3yKovS"
@@ -2888,8 +2888,8 @@
 				V = o("./src/reddit/helpers/trackers/post.ts"),
 				U = o("./src/reddit/models/Post/index.ts"),
 				G = o("./src/reddit/models/Subreddit/index.ts"),
-				q = o("./src/reddit/selectors/activeModalId.ts"),
-				H = o("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				H = o("./src/reddit/selectors/activeModalId.ts"),
+				q = o("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				K = o("./src/reddit/selectors/posts.ts"),
 				J = o("./src/reddit/selectors/subreddit.ts"),
 				z = o("./src/reddit/selectors/user.ts"),
@@ -2964,10 +2964,10 @@
 					[F.a.Hide]: r
 				}),
 				ue = Object(a.b)(() => Object(c.c)({
-					claimedFreeAward: H.b,
+					claimedFreeAward: q.b,
 					isConfirmDeleteOpen: (e, {
 						postId: t
-					}) => Object(q.a)(e) === `POST_OVERFLOW_DELETE_CONFIRMATION_${t}`,
+					}) => Object(H.a)(e) === `POST_OVERFLOW_DELETE_CONFIRMATION_${t}`,
 					isFutureEvent: oe.i,
 					isPinned: K.p,
 					subredditAboutInfo: K.G,
@@ -2985,7 +2985,7 @@
 						pageLayer: n
 					}) => Object(N.B)(e, {
 						pageLayer: n
-					}) && t && o && Object(z.ob)(e, {
+					}) && t && o && Object(z.nb)(e, {
 						userName: s.author
 					}),
 					hasSubredditRules: J.i,
@@ -3002,7 +3002,7 @@
 					reportingRevampEnabled: Q.a,
 					videoShareModalOpen: (e, {
 						postId: t
-					}) => Object(q.a)(e) === Object(A.a)(t)
+					}) => Object(H.a)(e) === Object(A.a)(t)
 				}), (e, {
 					postId: t,
 					isOverlay: o,
@@ -4828,7 +4828,7 @@
 				r = o("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = o("./src/reddit/selectors/user.ts");
 			const a = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.K,
+				experimentEligibilitySelector: i.J,
 				experimentName: s.i
 			}) === s.e.Enabled
 		},
@@ -4837,4 +4837,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a7c41ec25ad1f9428610.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.32773d7e8970ee01b766.js.map

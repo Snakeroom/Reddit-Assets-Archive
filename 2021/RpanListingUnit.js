@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.5ed6011206a6e62b1848.js
-// Retrieved at 7/12/2021, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.fc4f16088974105461ef.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1336,7 +1336,7 @@
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(a.c)({
 				autoplay: j.b,
-				isLoggedIn: j.K,
+				isLoggedIn: j.J,
 				isOverlayOpen: A.h,
 				location: (e, {
 					listingName: t
@@ -3747,4 +3747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.5ed6011206a6e62b1848.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.fc4f16088974105461ef.js.map

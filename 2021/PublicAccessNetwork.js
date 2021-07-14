@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.aeced06b22ce45e4e4aa.js
-// Retrieved at 7/12/2021, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.eda942b7ffec3422375b.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -641,7 +641,7 @@
 				}, O = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(v.K)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(v.J)(s())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const n = s().features.comments.models[e];
 					if (!n) return;
 					const r = n.isLocked ? m.j : m.d;
@@ -922,7 +922,7 @@
 						sortToUse: r
 					} = Object(M.a)(e, n);
 				return (!r || r === h.s.CONFIDENCE) && Object(U.c)(e, {
-					experimentEligibilitySelector: () => Object(X.J)(e),
+					experimentEligibilitySelector: () => Object(X.I)(e),
 					experimentName: F.w
 				}) === F.y.Enabled
 			};
@@ -1003,7 +1003,7 @@
 					});
 					x && (P.sort = I), P.onOtherDiscussions = _, t(O.r(m)), await t(Me(m, u, P, I));
 					const D = s().posts.models[m],
-						V = Object(X.K)(s());
+						V = Object(X.J)(s());
 					if (D && "subreddit" === D.belongsTo.type) {
 						const e = D.belongsTo.id,
 							s = Object(ue.i)(() => t(Object(le.k)(e, {
@@ -1129,7 +1129,7 @@
 						R = S.pages.comments.api.fullyLoaded[E],
 						j = S.pages.comments.api.error[E],
 						M = S.pages.comments.api.pending[E],
-						N = !Object(X.J)(S),
+						N = !Object(X.I)(S),
 						T = Object(X.j)(S),
 						L = o === h.s.CHAT,
 						A = !!S.platform.lastPage;
@@ -1255,7 +1255,7 @@
 					var a;
 					const i = Object(ne.a)(e, t, s),
 						c = n(),
-						m = Object(X.K)(c),
+						m = Object(X.J)(c),
 						p = Object(X.j)(c),
 						h = Object(l.a)(r.apiContext(), e, t, s, Object(D.a)(c), pe(c)),
 						b = m && p && Object(u.d)(r.gqlContext(), Object(P.e)(p)) || null,
@@ -1314,7 +1314,7 @@
 					i = o.h();
 				e(n.l({
 					title: i
-				})), Object(a.K)(s) || await e(r.r())
+				})), Object(a.J)(s) || await e(r.r())
 			}
 		},
 		"./src/reddit/actions/publicAccessNetwork/streams.ts": function(e, t, s) {
@@ -5791,7 +5791,7 @@
 				isDisabled: (e, t) => Object(qe.f)(e, {
 					streamIdFromPath: t.postId
 				}),
-				isLoggedIn: Vo.K,
+				isLoggedIn: Vo.J,
 				isPostDataLoaded: (e, {
 					postId: t
 				}) => !!Object(Co.F)(e, {
@@ -7058,7 +7058,7 @@
 				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				a = s("./src/reddit/selectors/user.ts");
 			const i = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: a.K,
+				experimentEligibilitySelector: a.J,
 				experimentName: o.i
 			}) === o.e.Enabled
 		},
@@ -7081,4 +7081,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.aeced06b22ce45e4e4aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.eda942b7ffec3422375b.js.map

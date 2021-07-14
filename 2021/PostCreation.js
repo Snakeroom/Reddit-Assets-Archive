@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.36a3ac45f63a82d701d3.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e095593af5e99f20b6b8.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -647,7 +647,7 @@
 				}) => async (n, o) => {
 					const r = o();
 					if (!!r.features.comments.drafts[t])
-						if (Object(Y.M)(r) && e) {
+						if (Object(Y.L)(r) && e) {
 							const o = Z({
 								hasFocus: e,
 								draftKey: t
@@ -817,7 +817,7 @@
 				}) => async (o, r) => {
 					const s = r(),
 						l = Object(i.a)(K.c.replyToComment, t);
-					if (!Object(Y.K)(r())) return o(Object(c.j)()), void o(Object(d.k)({
+					if (!Object(Y.J)(r())) return o(Object(c.j)()), void o(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(V.m)(r(), {
 							commentId: t
@@ -857,7 +857,7 @@
 							draftType: K.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(Y.M)(s)) {
+						}, Object(Y.L)(s)) {
 						const n = ue({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -1130,7 +1130,7 @@
 				I = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(S.K)(n())) return t(Object(d.j)()), void t(Object(l.k)({
+					if (!Object(S.J)(n())) return t(Object(d.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(v.m)(n(), {
 							commentId: e
@@ -1542,7 +1542,7 @@
 				x = (e, t, n, o) => async (r, s, {
 					gqlContext: i
 				}) => {
-					const a = Object(m.K)(s()),
+					const a = Object(m.J)(s()),
 						d = await Object(c.g)(i(), {
 							subredditId: e,
 							period: t,
@@ -8157,7 +8157,7 @@
 					}) => Object(m.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: D.cb
+					shouldOpenPostInNewTab: D.bb
 				}),
 				Y = e => {
 					const {
@@ -15974,9 +15974,9 @@
 			}
 			const f = Object(a.c)({
 					currentUser: d.j,
-					isNightMode: d.W,
-					isPresenceUserPrefEnabled: d.ib,
-					shouldHideNSFW: d.C
+					isNightMode: d.V,
+					isPresenceUserPrefEnabled: d.hb,
+					shouldHideNSFW: d.B
 				}),
 				g = Object(i.b)(f);
 			t.a = g(e => {
@@ -16523,10 +16523,10 @@
 						o = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						r = Object(g.W)(e);
+						r = Object(g.V)(e);
 					return o || r
 				},
-				nigtmode: g.W,
+				nigtmode: g.V,
 				subredditId: u.m,
 				topPostVariant: b.d
 			}));
@@ -25304,7 +25304,7 @@
 					if (!r) return d.fbt._("A destination community is required to crosspost", null, {
 						hk: "3haidF"
 					});
-					const a = s ? Object(w.eb)(e, {
+					const a = s ? Object(w.db)(e, {
 						userId: r
 					}) : r;
 					if (a) {
@@ -25648,7 +25648,7 @@
 				Wo = n.n(Ko);
 			const Go = Qe.a.wrapped(Bo.a, "SubredditPicker", Wo.a),
 				Ho = Qe.a.wrapped(et.a, "ControlRow", Wo.a),
-				Vo = Object(i.a)(S.h, _.a, S.X, w.j, v.q, w.C, (e, t, n, o, r, s) => {
+				Vo = Object(i.a)(S.h, _.a, S.X, w.j, v.q, w.B, (e, t, n, o, r, s) => {
 					const i = n && !t ? n : e;
 					if (!i || !i.name) return Object(Uo.b)("", null, null, s);
 					const {
@@ -25882,7 +25882,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Gr = `${K.a.assetPath}/img/snoo-drafts.png`, Hr = 3, Vr = Qe.a.div("Wrapper", Ur.a), qr = Qe.a.div("TitleRow", Ur.a), zr = Qe.a.span("DraftsNumber", Ur.a), Qr = Qe.a.div("DetailsContainer", Ur.a), Yr = Qe.a.wrapped(et.a, "ButtonRow", Ur.a), Jr = Qe.a.wrapped(it.l, "CancelButton", Ur.a), Xr = Qe.a.div("CloseWrapper", Ur.a), Zr = Qe.a.wrapped(Zo.a, "Close", Ur.a), $r = Qe.a.div("Empty", Ur.a), es = Qe.a.img("EmptyImage", Ur.a), ts = Qe.a.p("EmptyText", Ur.a), ns = Object(i.c)({
 				drafts: j.c,
 				isPending: j.b,
-				maxDrafts: w.V
+				maxDrafts: w.U
 			}), os = Object(s.b)(ns);
 			class rs extends r.a.PureComponent {
 				constructor() {
@@ -28483,7 +28483,7 @@
 					eventSchedule: S.p,
 					includeUserProfile: w.g,
 					isChanged: S.F,
-					isNameEditable: w.M,
+					isNameEditable: w.L,
 					isPostSubmitEnabled: wo,
 					isScheduledPost: S.Q,
 					flair: S.r,
@@ -28492,7 +28492,7 @@
 					linkBody: S.S,
 					markdownBody: S.T,
 					rteBody: S.eb,
-					maxDrafts: w.V,
+					maxDrafts: w.U,
 					modalId: _.a,
 					needsCaptcha: S.W,
 					nextSubreddit: S.X,
@@ -29613,7 +29613,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const o = Object(c.nb)(e, {
+					const o = Object(c.mb)(e, {
 						userName: n
 					});
 					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return h(e, {
@@ -30154,4 +30154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.36a3ac45f63a82d701d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e095593af5e99f20b6b8.js.map

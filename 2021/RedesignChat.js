@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.df6d374bd4d5a57af9e6.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.115b318f570fd5f3b09b.js
+// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -419,7 +419,7 @@
 					apiContext: n
 				}) => {
 					const c = t();
-					if (!Object(d.K)(c) || !Object(o.d)(c)) return clearTimeout(j);
+					if (!Object(d.J)(c) || !Object(o.d)(c)) return clearTimeout(j);
 					j || e((() => async (e, t, {
 						apiContext: n
 					}) => {
@@ -427,7 +427,7 @@
 							{
 								session: s
 							} = c.user;
-						if (s && Object(d.K)(c) && Object(o.d)(c)) {
+						if (s && Object(d.J)(c) && Object(o.d)(c)) {
 							e(x());
 							const t = await Object(a.g)(n(), s);
 							t && t.ok ? (e(f({
@@ -499,7 +499,7 @@
 				C = e => {
 					const t = Object(m.a)(e);
 					return {
-						inboxCount: t ? Object(l.h)(e) : Object(p.F)(e) || 0,
+						inboxCount: t ? Object(l.h)(e) : Object(p.E)(e) || 0,
 						basicChannelCount: t ? Object(l.e)(e) : Object(b.a)(e) || 0
 					}
 				},
@@ -507,7 +507,7 @@
 					const n = t(),
 						c = Object(o.e)(n, {}),
 						s = Object(m.a)(n),
-						r = Object(p.J)(n) || Object(p.K)(n),
+						r = Object(p.I)(n) || Object(p.J)(n),
 						a = Object(h.g)(n);
 					let i = 0;
 					r && c && (i = s ? a ? Object(l.i)(n) : Object(l.j)(n) : (e => {
@@ -551,7 +551,7 @@
 					} else {
 						const n = Object(b.a)(c),
 							s = Object(b.b)(c),
-							r = Object(p.F)(c),
+							r = Object(p.E)(c),
 							{
 								basicChannelCount: o,
 								inboxCount: d
@@ -817,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.df6d374bd4d5a57af9e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.115b318f570fd5f3b09b.js.map
