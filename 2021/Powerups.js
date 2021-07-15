@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.d33029fc24cbc7793e8c.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.74eacd014c69561ebd41.js
+// Retrieved at 7/15/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./src/reddit/components/MarketingPageFooter/index.m.less": function(e, a, t) {
@@ -25,7 +25,7 @@
 				c = t.n(n),
 				s = t("./src/lib/classNames/index.ts");
 			const {
-				fbt: i
+				fbt: o
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.a = e => r.a.createElement("div", {
 				className: Object(s.a)(e.className, c.a.marketingPageFooter)
@@ -42,21 +42,21 @@
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://about.reddit.com"
-			}, i._("about", null, {
+			}, o._("about", null, {
 				hk: "3IO4c7"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://about.reddit.com/careers/"
-			}, i._("careers", null, {
+			}, o._("careers", null, {
 				hk: "2GATRU"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://about.reddit.com/press/"
-			}, i._("press", null, {
+			}, o._("press", null, {
 				hk: "iUiGg"
 			}))))), r.a.createElement("div", {
 				className: c.a.linkCol
@@ -67,21 +67,21 @@
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://www.redditinc.com/advertising"
-			}, i._("advertise", null, {
+			}, o._("advertise", null, {
 				hk: "RYuIn"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "http://www.redditblog.com/"
-			}, i._("blog", null, {
+			}, o._("blog", null, {
 				hk: "4xzWuA"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://www.reddithelp.com"
-			}, i._("help", null, {
+			}, o._("help", null, {
 				hk: "36XyzA"
 			}))))), r.a.createElement("div", {
 				className: Object(s.a)(c.a.linkCol, c.a.linkBoldCol)
@@ -92,21 +92,21 @@
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://www.reddit.com/coins"
-			}, i._("reddit coins", null, {
+			}, o._("reddit coins", null, {
 				hk: "3Ts6tu"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://www.reddit.com/premium"
-			}, i._("reddit premium", null, {
+			}, o._("reddit premium", null, {
 				hk: "3vPbLO"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://redditgifts.com/"
-			}, i._("reddit gifts", null, {
+			}, o._("reddit gifts", null, {
 				hk: "3WNNEy"
 			}))))), r.a.createElement("div", {
 				className: Object(s.a)(c.a.linkCol, c.a.linkBoldCol)
@@ -117,21 +117,21 @@
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://www.facebook.com/reddit/"
-			}, i._("Facebook", null, {
+			}, o._("Facebook", null, {
 				hk: "47DT2F"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://twitter.com/reddit"
-			}, i._("Twitter", null, {
+			}, o._("Twitter", null, {
 				hk: "3aUv7u"
 			}))), r.a.createElement("li", {
 				className: c.a.linkItem
 			}, r.a.createElement("a", {
 				className: c.a.link,
 				href: "https://www.instagram.com/reddit/"
-			}, i._("Instagram", null, {
+			}, o._("Instagram", null, {
 				hk: "dVIRX"
 			})))))), r.a.createElement("ul", {
 				className: c.a.legal
@@ -140,32 +140,32 @@
 			}, r.a.createElement("a", {
 				className: c.a.legalLink,
 				href: "https://www.redditinc.com/policies/content-policy"
-			}, i._("content policy", null, {
+			}, o._("content policy", null, {
 				hk: "4ptiaZ"
 			}))), r.a.createElement("li", {
 				className: c.a.legalItem
 			}, r.a.createElement("a", {
 				className: c.a.legalLink,
 				href: "https://www.reddit.com/help/privacypolicy"
-			}, i._("privacy policy", null, {
+			}, o._("privacy policy", null, {
 				hk: "1ybjnz"
 			}))), r.a.createElement("li", {
 				className: c.a.legalItem
 			}, r.a.createElement("a", {
 				className: c.a.legalLink,
 				href: "https://www.redditinc.com/policies/user-agreement"
-			}, i._("user agreement", null, {
+			}, o._("user agreement", null, {
 				hk: "4puRxC"
 			}))), r.a.createElement("li", {
 				className: c.a.legalItem
 			}, r.a.createElement("a", {
 				className: c.a.legalLink,
 				href: "https://www.reddit.com/help/healthycommunities/"
-			}, i._("mod policy", null, {
+			}, o._("mod policy", null, {
 				hk: "1VvAdM"
 			}))), r.a.createElement("li", {
 				className: c.a.legalItem
-			}, i._("© {year} Reddit, Inc. All rights reserved", [i._param("year", (new Date).getFullYear().toString())], {
+			}, o._("© {year} Reddit, Inc. All rights reserved", [o._param("year", (new Date).getFullYear().toString())], {
 				hk: "23FUx6"
 			})))))
 		},
@@ -285,6 +285,8 @@
 				subheading: "tJ01nrUeIibPLtvHf4n1Z",
 				description: "_86QWvEglWWuqLFZMfXGgG",
 				modWarning: "d3Nxc9efGC2tIyFFSPD_w",
+				modWarningItalic: "_1n72yu3o7zjePGJgXqTrMp",
+				modWarningFooter: "_3MGHLQUzFt1vaqX_qVvilR",
 				modWarningTop: "_265wuoNoe98zlt0Y3SN6I5",
 				modWarningIcon: "_2tIDi1LByghlwuY5AIrRu0",
 				powerupsHeadingImg: "_3YE0rPo3AxLcTHATYQY95X",
@@ -331,8 +333,8 @@
 				n = t.n(r),
 				c = t("./node_modules/react-redux/es/index.js"),
 				s = t("./src/lib/classNames/index.ts"),
-				i = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
-				o = (t("./node_modules/core-js/modules/web.dom.iterable.js"), t("./src/higherOrderComponents/asModal/index.tsx")),
+				o = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
+				i = (t("./node_modules/core-js/modules/web.dom.iterable.js"), t("./src/higherOrderComponents/asModal/index.tsx")),
 				m = t("./src/reddit/actions/gold/powerups.ts"),
 				d = t("./src/reddit/controls/Button/index.tsx"),
 				u = t("./src/reddit/selectors/telemetry.ts");
@@ -344,7 +346,7 @@
 				w = t("./src/reddit/selectors/moderatorPermissions.ts"),
 				b = t("./src/reddit/selectors/user.ts"),
 				E = t("./src/reddit/selectors/gold/powerups/index.ts");
-			const N = e => {
+			const v = e => {
 				const a = Object(w.a)(e);
 				if (!a) return null;
 				const t = Object(b.G)(e),
@@ -363,39 +365,39 @@
 				}
 				return l
 			};
-			var v = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+			var N = t("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				y = t("./src/reddit/components/PowerupsSignUpModal/MultiSubredditForm.m.less"),
 				f = t.n(y);
 			const {
-				fbt: x
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), S = e => {
+				fbt: S
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), x = e => {
 				const {
 					onChange: a,
 					subredditIdsSelected: t,
 					subredditsInfo: l,
 					wasSuccessful: r,
 					allEnabled: c
-				} = e, i = l.filter(e => !e.hasPowerups), o = l.filter(e => e.hasPowerups), m = i.length === t.length;
+				} = e, o = l.filter(e => !e.hasPowerups), i = l.filter(e => e.hasPowerups), m = o.length === t.length;
 				return n.a.createElement("div", {
 					className: f.a.container
 				}, n.a.createElement("div", {
 					className: f.a.checkboxList
-				}, o.map(({
+				}, i.map(({
 					id: e,
 					displayText: a
-				}) => n.a.createElement(v.a, {
+				}) => n.a.createElement(N.a, {
 					className: Object(s.a)(f.a.checkbox, f.a.disabled),
 					key: e,
 					isSelected: !0,
 					onClick: () => {},
 					text: a,
 					disabled: !0
-				})), i.map(({
+				})), o.map(({
 					id: e,
 					displayText: l
 				}) => {
 					const c = t.includes(e);
-					return n.a.createElement(v.a, {
+					return n.a.createElement(N.a, {
 						className: Object(s.a)(f.a.checkbox, {
 							[f.a.disabled]: r
 						}),
@@ -411,15 +413,15 @@
 				})), !r && !c && n.a.createElement(d.q, {
 					className: f.a.selectAllButton,
 					onClick: () => {
-						a(m ? [] : i.map(({
+						a(m ? [] : o.map(({
 							id: e
 						}) => e))
 					},
 					priority: d.b.Secondary,
 					isFullWidth: !0
-				}, m ? x._("Deselect all", null, {
+				}, m ? S._("Deselect all", null, {
 					hk: "46i6br"
-				}) : x._("Select all", null, {
+				}) : S._("Select all", null, {
 					hk: "2Eo4n2"
 				})))
 			};
@@ -457,21 +459,21 @@
 				T = t.n(F);
 			const {
 				fbt: q
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), Y = Object(o.a)(({
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), M = Object(i.a)(({
 				closeModal: e
 			}) => {
 				var a;
 				const t = Object(p.a)(),
 					l = Object(g.a)(),
-					s = Object(c.e)(N),
-					i = null !== (a = 1 === (null == s ? void 0 : s.length)) && void 0 !== a && a,
-					o = null == s ? void 0 : s.every(({
+					s = Object(c.e)(v),
+					o = null !== (a = 1 === (null == s ? void 0 : s.length)) && void 0 !== a && a,
+					i = null == s ? void 0 : s.every(({
 						hasPowerups: e
 					}) => e),
-					[k, w] = Object(r.useState)(s && i ? [s[0].id] : []),
+					[k, w] = Object(r.useState)(s && o ? [s[0].id] : []),
 					[b, E] = Object(r.useState)(!1),
-					[v, y] = Object(r.useState)(!1),
-					[f, x] = Object(r.useState)(!1);
+					[N, y] = Object(r.useState)(!1),
+					[f, S] = Object(r.useState)(!1);
 				if (!(null == s ? void 0 : s.length)) return e(), null;
 				const O = async e => {
 					try {
@@ -484,7 +486,7 @@
 							error: a.message
 						}
 					}
-				}, P = v || o ? q._("{=[r/community]}{=has Powerups}", [q._param("=[r/community]", n.a.createElement("div", null, q._("{r/community}", [q._param("r/community", s[0].displayText)], {
+				}, P = N || i ? q._("{=[r/community]}{=has Powerups}", [q._param("=[r/community]", n.a.createElement("div", null, q._("{r/community}", [q._param("r/community", s[0].displayText)], {
 					hk: "1TzAG8"
 				}))), q._param("=has Powerups", n.a.createElement("div", null, q._("has Powerups", null, {
 					hk: "2zYYns"
@@ -496,7 +498,7 @@
 					hk: "2Pz0Sn"
 				})))], {
 					hk: "p9zKt"
-				}), j = v || o ? q._("{=Your communities}{=have Powerups}", [q._param("=Your communities", n.a.createElement("div", null, q._("Your communities", null, {
+				}), j = N || i ? q._("{=Your communities}{=have Powerups}", [q._param("=Your communities", n.a.createElement("div", null, q._("Your communities", null, {
 					hk: "3ySkxw"
 				}))), q._param("=have Powerups", n.a.createElement("div", null, q._("have Powerups", null, {
 					hk: "4rHX2f"
@@ -508,7 +510,7 @@
 					hk: "4EPQY"
 				})))], {
 					hk: "1K9FOM"
-				}), I = i ? P : j, F = b || v || f ? q._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [q._param("=Hold tight! It can take up to 5 minutes for", n.a.createElement("div", null, q._("Hold tight! It can take up to 5 minutes for", null, {
+				}), I = o ? P : j, F = b || N || f ? q._("{=Hold tight! It can take up to 5 minutes for}{=Powerups to appear in yourcommunity.}", [q._param("=Hold tight! It can take up to 5 minutes for", n.a.createElement("div", null, q._("Hold tight! It can take up to 5 minutes for", null, {
 					hk: "1cFoaI"
 				}))), q._param("=Powerups to appear in yourcommunity.", n.a.createElement("div", null, q._({
 					"*": "Powerups to appear in your communities.",
@@ -530,7 +532,7 @@
 				return n.a.createElement("div", {
 					className: T.a.container,
 					"data-testid": "powerups-signup-modal"
-				}, n.a.createElement(B, null), n.a.createElement("button", {
+				}, n.a.createElement(W, null), n.a.createElement("button", {
 					className: T.a.closeButton,
 					onClick: e
 				}, n.a.createElement(h.a, {
@@ -543,12 +545,12 @@
 					className: T.a.titleText
 				}, I), n.a.createElement("h2", {
 					className: T.a.subtitleText
-				}, F)), !i && n.a.createElement(S, {
+				}, F)), !o && n.a.createElement(x, {
 					onChange: w,
 					subredditIdsSelected: k,
 					subredditsInfo: s,
-					wasSuccessful: v,
-					allEnabled: o
+					wasSuccessful: N,
+					allEnabled: i
 				}), f && n.a.createElement("div", {
 					className: T.a.errorContainer
 				}, n.a.createElement(_.a, {
@@ -557,7 +559,7 @@
 					className: T.a.errorText
 				}, q._("Something went wrong.", null, {
 					hk: "N6RFp"
-				}))), !v && !o && n.a.createElement(C, {
+				}))), !N && !i && n.a.createElement(C, {
 					disabled: 0 === k.length,
 					onClick: async () => {
 						l((e => a => ({
@@ -572,11 +574,11 @@
 						const e = (await Promise.all(k.map(O))).every(({
 							success: e
 						}) => e);
-						y(e), x(!e), E(!1)
+						y(e), S(!e), E(!1)
 					},
 					isLoading: b,
 					wasError: f
-				}), (v || o) && i && n.a.createElement(n.a.Fragment, null, n.a.createElement("p", {
+				}), (N || i) && o && n.a.createElement(n.a.Fragment, null, n.a.createElement("p", {
 					className: T.a.successText
 				}, q._("Let your community know about Powerups with a pinned post", null, {
 					hk: "3bII20"
@@ -593,7 +595,7 @@
 				}, q._("Heads up—once you turn on Powerups you can’t turn it off.", null, {
 					hk: "3YQxrF"
 				}))))
-			}), B = () => n.a.createElement("div", {
+			}), W = () => n.a.createElement("div", {
 				className: T.a.background
 			}, n.a.createElement("div", {
 				className: T.a.diagonalLayoutSecondary
@@ -629,17 +631,17 @@
 				alt: "Powerup heroes",
 				src: `${l.a.assetPath}/img/powerups/powerups-rangers-static.png`
 			})));
-			var M = t("./src/reddit/icons/fonts/index.tsx"),
-				H = t("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				L = t("./src/reddit/pages/Powerups/index.m.less"),
-				W = t.n(L);
+			var Y = t("./src/reddit/icons/fonts/index.tsx"),
+				B = t("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				H = t("./src/reddit/pages/Powerups/index.m.less"),
+				L = t.n(H);
 			const {
 				fbt: U
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = () => {
 				const e = Object(g.a)(),
-					a = Object(c.e)(N),
-					[t, o] = Object(r.useState)(!1);
+					a = Object(c.e)(v),
+					[t, i] = Object(r.useState)(!1);
 				Object(r.useEffect)(() => {
 					e((() => e => ({
 						...u.defaults(e),
@@ -651,80 +653,92 @@
 						}
 					}))())
 				}, [e]);
-				const m = () => o(!1);
+				const m = () => i(!1);
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-					className: W.a.headingSection
+					className: L.a.headingSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(W.a.background, W.a.contentWrapper)
+					className: Object(s.a)(L.a.background, L.a.contentWrapper)
 				}, n.a.createElement("div", {
-					className: W.a.diagonalLayoutSecondary
+					className: L.a.diagonalLayoutSecondary
 				}), n.a.createElement("div", {
-					className: W.a.diagonalLayoutPrimary
+					className: L.a.diagonalLayoutPrimary
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleDotted),
+					className: Object(s.a)(L.a.circle, L.a.circleDotted),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/dotcircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.animatedCircle, W.a.circleStripped),
+					className: Object(s.a)(L.a.circle, L.a.animatedCircle, L.a.circleStripped),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/linecircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleOrangeFull, W.a.animatedCircle)
+					className: Object(s.a)(L.a.circle, L.a.circleOrangeFull, L.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleYellowSmall, W.a.top, W.a.animatedCircle)
+					className: Object(s.a)(L.a.circle, L.a.circleYellowSmall, L.a.top, L.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleYellowBig, W.a.animatedCircle)
+					className: Object(s.a)(L.a.circle, L.a.circleYellowBig, L.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleYellowHollow, W.a.animatedCircle)
+					className: Object(s.a)(L.a.circle, L.a.circleYellowHollow, L.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleYellowSmall, W.a.bottom, W.a.animatedCircle)
+					className: Object(s.a)(L.a.circle, L.a.circleYellowSmall, L.a.bottom, L.a.animatedCircle)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleOrangeHollow, W.a.animatedCircle)
+					className: Object(s.a)(L.a.circle, L.a.circleOrangeHollow, L.a.animatedCircle)
 				})), n.a.createElement("div", {
-					className: Object(s.a)(W.a.contentWrapper, W.a.headingContent)
+					className: Object(s.a)(L.a.contentWrapper, L.a.headingContent)
 				}, n.a.createElement("div", {
-					className: W.a.headingText
+					className: L.a.headingText
 				}, n.a.createElement("h1", {
-					className: W.a.heading
-				}, n.a.createElement(H.a, {
-					className: W.a.snoo
+					className: L.a.heading
+				}, n.a.createElement(B.a, {
+					className: L.a.snoo
 				}), "Powerups"), n.a.createElement("h2", {
-					className: W.a.subheading
+					className: L.a.subheading
 				}, U._("Come together to level up the whole community", null, {
 					hk: "3C0qLA"
 				})), n.a.createElement("p", {
-					className: Object(s.a)(W.a.description, W.a.bodyText)
+					className: Object(s.a)(L.a.description, L.a.bodyText)
 				}, U._("Harness the power of your community to unlock special perks and advanced features.", null, {
 					hk: "1NgNS2"
 				})), n.a.createElement("div", {
-					className: Object(s.a)(W.a.modWarning, W.a.bodyText)
+					className: Object(s.a)(L.a.modWarning, L.a.bodyText)
 				}, n.a.createElement("div", {
-					className: W.a.modWarningTop
-				}, n.a.createElement(M.a, {
+					className: L.a.modWarningTop
+				}, n.a.createElement(Y.a, {
 					name: "mod",
-					className: W.a.modWarningIcon
-				})), "Only moderators can turn on Powerups."), n.a.createElement(d.h, {
+					className: L.a.modWarningIcon
+				})), U._("{=Only moderators with theManage Settings permission can turn on Powerups.}{=Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.}", [U._param("=Only moderators with theManage Settings permission can turn on Powerups.", n.a.createElement("div", null, U._("Only moderators with the {=Manage Settings} permission can turn on Powerups.", [U._param("=Manage Settings", n.a.createElement("span", {
+					className: L.a.modWarningItalic
+				}, U._("Manage Settings", null, {
+					hk: "4AauR"
+				})))], {
+					hk: "1sKKo7"
+				}))), U._param("=Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.", n.a.createElement("div", {
+					className: L.a.modWarningFooter
+				}, U._("Heads up—Only Safe for Work (SFW) communities with 1,000 members or more can enable Powerups.", null, {
+					hk: "2euXqd"
+				})))], {
+					hk: "2FL5at"
+				})), n.a.createElement(d.h, {
 					onClick: () => {
 						e((() => e => ({
 							...u.defaults(e),
 							source: "powerups_landing_page",
 							action: "click",
 							noun: "open_signup_modal"
-						}))()), o(!0)
+						}))()), i(!0)
 					},
 					disabled: !(null == a ? void 0 : a.length),
 					priority: d.b.Primary,
-					className: W.a.ctaButton
+					className: L.a.ctaButton
 				}, U._("Turn on Powerups", null, {
 					hk: "4E97KH"
 				}))), n.a.createElement("div", {
-					className: W.a.headingArt
+					className: L.a.headingArt
 				}, n.a.createElement("div", {
-					className: W.a.powerupsMarketingImageContainer
+					className: L.a.powerupsMarketingImageContainer
 				}, n.a.createElement("picture", {
-					className: W.a.powerupsMarketingImage
+					className: L.a.powerupsMarketingImage
 				}, n.a.createElement("source", {
 					srcSet: `${l.a.assetPath}/img/powerups/powerups-rangers.webp`,
 					type: "image/webp"
@@ -733,123 +747,123 @@
 					type: "image/png"
 				}), n.a.createElement("img", {
 					alt: "Powerup heroes",
-					className: W.a.fallbackStaticImage,
+					className: L.a.fallbackStaticImage,
 					src: `${l.a.assetPath}/img/powerups/powerups-rangers-static.png`
 				})))))), n.a.createElement("div", {
-					className: W.a.pioneerSection
+					className: L.a.pioneerSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(W.a.contentWrapper, W.a.powerupsPioneerContent)
+					className: Object(s.a)(L.a.contentWrapper, L.a.powerupsPioneerContent)
 				}, n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circlePioneersYellowFull)
+					className: Object(s.a)(L.a.circle, L.a.circlePioneersYellowFull)
 				}), n.a.createElement("h2", {
-					className: W.a.pioneerHeading
+					className: L.a.pioneerHeading
 				}, U._("Be a Powerups pioneer", null, {
 					hk: "2P7QON"
 				})), n.a.createElement("h3", {
-					className: W.a.pioneerSubheading
+					className: L.a.pioneerSubheading
 				}, U._("Be one of the first communities to turn on Powerups and have an influence on what perks and advanced features we create next.", null, {
 					hk: "2wFnM6"
 				})))), n.a.createElement("div", {
-					className: W.a.powerupStepsSection
+					className: L.a.powerupStepsSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(W.a.powerupStepsSectionContent, W.a.contentWrapper)
+					className: Object(s.a)(L.a.powerupStepsSectionContent, L.a.contentWrapper)
 				}, n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleStepsYellowFull)
+					className: Object(s.a)(L.a.circle, L.a.circleStepsYellowFull)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleStepsStripped),
+					className: Object(s.a)(L.a.circle, L.a.circleStepsStripped),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/linecircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: W.a.powerupStep
+					className: L.a.powerupStep
 				}, n.a.createElement("div", {
-					className: W.a.powerupStepCounter
+					className: L.a.powerupStepCounter
 				}, "1"), n.a.createElement("div", {
-					className: W.a.powerupStepName
+					className: L.a.powerupStepName
 				}, U._("Turn on powerups", null, {
 					hk: "q0dHV"
 				})), n.a.createElement("div", {
-					className: W.a.powerupStepDescription
+					className: L.a.powerupStepDescription
 				}, U._("Just tap that big Turn on Powerups button and add Powerups to your community.", null, {
 					hk: "oZMHo"
 				}))), n.a.createElement("div", {
-					className: W.a.powerupStep
+					className: L.a.powerupStep
 				}, n.a.createElement("div", {
-					className: W.a.powerupStepCounter
+					className: L.a.powerupStepCounter
 				}, "2"), n.a.createElement("div", {
-					className: W.a.powerupStepName
+					className: L.a.powerupStepName
 				}, U._("Rally the community", null, {
 					hk: "4m8BDG"
 				})), n.a.createElement("div", {
-					className: W.a.powerupStepDescription
+					className: L.a.powerupStepDescription
 				}, U._("Spread the word! You only need 25 powerups to give perks to the whole community.", null, {
 					hk: "4eSNsf"
 				}))), n.a.createElement("div", {
-					className: W.a.powerupStep
+					className: L.a.powerupStep
 				}, n.a.createElement("div", {
-					className: W.a.powerupStepCounter
+					className: L.a.powerupStepCounter
 				}, "3"), n.a.createElement("div", {
-					className: W.a.powerupStepName
+					className: L.a.powerupStepName
 				}, U._("Unlock perks", null, {
 					hk: "20u0vD"
 				})), n.a.createElement("div", {
-					className: W.a.powerupStepDescription
+					className: L.a.powerupStepDescription
 				}, U._("Once your community is powered up, the perks are unlocked for everyone to use.", null, {
 					hk: "3Fs5Gm"
 				}))))), n.a.createElement("div", {
-					className: W.a.faqSection
+					className: L.a.faqSection
 				}, n.a.createElement("div", {
-					className: Object(s.a)(W.a.faqSectionContent, W.a.contentWrapper)
+					className: Object(s.a)(L.a.faqSectionContent, L.a.contentWrapper)
 				}, n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleFaqCyanSmall)
+					className: Object(s.a)(L.a.circle, L.a.circleFaqCyanSmall)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleFaqDotted),
+					className: Object(s.a)(L.a.circle, L.a.circleFaqDotted),
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/powerups/dotcircle.png)`
 					}
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleFaqYellowSmall)
+					className: Object(s.a)(L.a.circle, L.a.circleFaqYellowSmall)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleFaqCyanBig)
+					className: Object(s.a)(L.a.circle, L.a.circleFaqCyanBig)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleFaqOrange)
+					className: Object(s.a)(L.a.circle, L.a.circleFaqOrange)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.circle, W.a.circleFaqYellowBig)
+					className: Object(s.a)(L.a.circle, L.a.circleFaqYellowBig)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkTopLeft)
+					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkTopLeft)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkTopRight)
+					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkTopRight)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkBottomRight)
+					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkBottomRight)
 				}), n.a.createElement("div", {
-					className: Object(s.a)(W.a.faqQuestionMark, W.a.faqQuestionMarkBottomLeft)
+					className: Object(s.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkBottomLeft)
 				}), n.a.createElement("h2", {
-					className: W.a.faqHeading
+					className: L.a.faqHeading
 				}, U._("Questions about Powerups", null, {
 					hk: "nzxYw"
 				})), n.a.createElement("h3", {
-					className: W.a.faqSubheading
+					className: L.a.faqSubheading
 				}, U._("We’ve got answers.", null, {
 					hk: "4kIK64"
 				})), n.a.createElement(d.q, {
-					className: W.a.faqButton,
+					className: L.a.faqButton,
 					priority: d.b.Secondary,
 					href: "https://mods.reddithelp.com/hc/en-us/articles/4403699823629",
 					kind: d.a.ExternalLink,
 					target: "_blank"
 				}, U._("Powerups FAQs", null, {
 					hk: "2lWZQq"
-				})))), n.a.createElement(i.a, {
-					className: W.a.footer
-				}), t && n.a.createElement(Y, {
+				})))), n.a.createElement(o.a, {
+					className: L.a.footer
+				}), t && n.a.createElement(M, {
 					withOverlay: !0,
 					closeModal: m,
 					onOverlayClick: m,
-					className: W.a.modalBody,
-					overlayClassName: W.a.modalOverlay
+					className: L.a.modalBody,
+					overlayClassName: L.a.modalOverlay
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.d33029fc24cbc7793e8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.74eacd014c69561ebd41.js.map
