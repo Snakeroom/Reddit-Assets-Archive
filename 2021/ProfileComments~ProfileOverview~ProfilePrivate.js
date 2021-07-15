@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f829c9aec38542fb5ac0.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.bb6172166ced703d9adb.js
+// Retrieved at 7/15/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1173,7 +1173,7 @@
 						dropdownId: `${s}--${e.id}-comment-share-menu`,
 						permalink: Object(w.a)(l, e.id),
 						sendEventWithName: this.sendCommentEventWithName,
-						subreddit: m
+						subredditType: null == m ? void 0 : m.type
 					}, n.a.createElement(we, {
 						onClick: this.sendCommentEventWithNameShare
 					}, y.fbt._("share", null, {
@@ -3132,4 +3132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.f829c9aec38542fb5ac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.bb6172166ced703d9adb.js.map

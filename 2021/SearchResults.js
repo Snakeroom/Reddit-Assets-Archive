@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.0dece6e275df2d0d75e3.js
-// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.94203660e420c04939d8.js
+// Retrieved at 7/15/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7194,7 +7194,7 @@
 						dropdownId: "rails-share-button",
 						permalink: e,
 						sendEventWithName: this.onShareMenuClick,
-						subreddit: null
+						subredditType: null
 					}, i.a.createElement(S, {
 						onClick: this.onShare
 					}))))
@@ -10049,4 +10049,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0dece6e275df2d0d75e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.94203660e420c04939d8.js.map

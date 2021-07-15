@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.039ad8a4153f8454826b.js
-// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.06d8d88ab3dfd921ea50.js
+// Retrieved at 7/15/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -2862,7 +2862,7 @@
 						permalink: x.permalink,
 						post: x,
 						sendEventWithName: O,
-						subreddit: v
+						subredditType: null == v ? void 0 : v.type
 					}, i.a.createElement(ut, null, i.a.createElement(nt.a, {
 						className: dt.a.shareIcon
 					}), i.a.createElement("span", {
@@ -3588,4 +3588,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.039ad8a4153f8454826b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.06d8d88ab3dfd921ea50.js.map
