@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.912a1236c7cf2c3cf4d4.js
-// Retrieved at 7/15/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.578451940c4ed416512e.js
+// Retrieved at 7/15/2021, 6:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5502,8 +5502,8 @@
 						onChange: e.onChange,
 						onClick: e.toggleDropdownAndGetTrending,
 						onKeyDown: e.onKeyDown,
-						placeholder: r.fbt._("Search", null, {
-							hk: "44xF6n"
+						placeholder: r.fbt._("Search Reddit", null, {
+							hk: "34Vfom"
 						}),
 						type: "search",
 						value: e.searchQuery
@@ -7486,24 +7486,26 @@
 						}
 					}, m.a.createElement("span", {
 						className: lc.a.accountDisplayText
-					}, (e => e ? m.a.createElement("span", {
+					}, (n => n ? m.a.createElement("span", {
 						className: Object(v.a)(lc.a.accountWrapper, lc.a.isLoggedIn),
 						id: "email-collection-tooltip-id"
-					}, e.accountIcon && m.a.createElement(Cs.a, {
-						className: lc.a.imgIcon,
+					}, n.accountIcon && m.a.createElement(Cs.a, {
+						className: Object(v.a)(lc.a.imgIcon, {
+							[lc.a.navbarLikeMweb]: e.navbarLikeMweb
+						}),
 						wrapperClassName: lc.a.imgIconWrapper,
 						shouldShowPresenceIndicator: t && s
 					}), m.a.createElement("span", {
 						className: lc.a.accountDetails
 					}, m.a.createElement("span", {
 						className: lc.a.username
-					}, e.displayText, e.isGold && m.a.createElement(Ka.a, {
+					}, n.displayText, n.isGold && m.a.createElement(Ka.a, {
 						className: lc.a.premiumFontIcon,
 						title: r.fbt._("Reddit Premium", null, {
 							hk: "4Dwpyn"
 						}),
 						isFilled: !0
-					})), m.a.createElement(m.a.Fragment, null, m.a.createElement("span", {
+					})), !e.navbarLikeMweb && m.a.createElement(m.a.Fragment, null, m.a.createElement("span", {
 						className: lc.a.accountKarma
 					}, m.a.createElement(ms.a, {
 						name: "karma",
@@ -7518,7 +7520,7 @@
 						}, [r.fbt._plural(t, "karma count", n)], {
 							hk: "ndlXe"
 						})
-					})(e))), !!e.coins && m.a.createElement("span", {
+					})(n))), !!n.coins && m.a.createElement("span", {
 						className: lc.a.accountCoins
 					}, m.a.createElement(Qa.a, {
 						className: lc.a.coinFontIcon,
@@ -7526,7 +7528,7 @@
 					}), m.a.createElement("span", null, (e => Object(Ga.b)(e.coins || 0, {
 						displayFull: !1,
 						roundDown: !0
-					}))(e)))))) : m.a.createElement("span", {
+					}))(n)))))) : e.navbarLikeMweb ? null : m.a.createElement("span", {
 						className: Object(v.a)(lc.a.accountWrapper, lc.a.isLoggedOut)
 					}, m.a.createElement(ms.a, {
 						name: "user",
@@ -10232,13 +10234,13 @@
 				karmaIcon: "_2wYneOcJEB6o4mj1NedmsR",
 				dropdownTriangle: "_50RxI-5rW1xzwoC42vhzM",
 				imgIcon: "-z42jjKOFdAdFhdJ8mmI4",
+				navbarLikeMweb: "_2XkHtsPtFuTExJyk9JQUAp",
 				imgIconWrapper: "_1zyV-XmoYeSNGWjfZiXbPc",
 				defaultProfileIcon: "_3-lF5kPDkSGfnVUW_GtvUV",
 				modModeIcon: "_2Az3JCV8DZZ1S6CU8cR-bl",
 				nightIcon: "gRVZlDl2ZHFThtPLjYYzD",
 				inlineButton: "_18X7KoiaLuKbuLqg4zE8BH",
 				dropdownOpen: "_3F3oKTToidUQ0CbMS1cccX",
-				navbarLikeMweb: "_2XkHtsPtFuTExJyk9JQUAp",
 				premiumFontIcon: "pztXT07fzqRz6IEE6thRV",
 				Dropdown: "_1HSQGYlfPWzs40LP4_oFi5",
 				dropdown: "_1HSQGYlfPWzs40LP4_oFi5",
@@ -18462,4 +18464,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.912a1236c7cf2c3cf4d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.578451940c4ed416512e.js.map
