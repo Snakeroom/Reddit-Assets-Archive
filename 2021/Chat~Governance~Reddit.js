@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cebd5cda3aa022e82607.js
-// Retrieved at 7/15/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30804a8e93b83f45057d.js
+// Retrieved at 7/15/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2416,11 +2416,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("139443"),
+				buildNumber: r("139448"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1626383224"),
+				})("1626384322"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4911,14 +4911,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cb2bdba4662ac7d3ad3cf77505fc8bd3235eb8ea2-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c34f0b6d4892cb41c8b808a4f22b59ef38ab45a89-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b2bdba4662ac7d3ad3cf77505fc8bd3235eb8ea2-production",
+						release: "34f0b6d4892cb41c8b808a4f22b59ef38ab45a89-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -5412,7 +5412,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "b2bdba4662ac7d3ad3cf77505fc8bd3235eb8ea2-production",
+						releaseClient: "34f0b6d4892cb41c8b808a4f22b59ef38ab45a89-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -41493,50 +41493,54 @@
 				return xt
 			})), i.d(t, "OriginElement", (function() {
 				return Nt
-			})), i.d(t, "search", (function() {
+			})), i.d(t, "searchOriginPageTypeSelector", (function() {
 				return Dt
-			})), i.d(t, "discoveryUnit", (function() {
+			})), i.d(t, "searchOptionsToTelemetryModelParams", (function() {
 				return At
-			})), i.d(t, "smartSearch", (function() {
+			})), i.d(t, "search", (function() {
 				return Pt
-			})), i.d(t, "metaSearch", (function() {
+			})), i.d(t, "discoveryUnit", (function() {
 				return kt
-			})), i.d(t, "postFlairClickToSearch", (function() {
+			})), i.d(t, "smartSearch", (function() {
 				return Bt
-			})), i.d(t, "currentProfileModelSelector", (function() {
+			})), i.d(t, "metaSearch", (function() {
 				return Lt
-			})), i.d(t, "notification", (function() {
+			})), i.d(t, "postFlairClickToSearch", (function() {
 				return Ut
-			})), i.d(t, "postEventI13nSelector", (function() {
+			})), i.d(t, "currentProfileModelSelector", (function() {
 				return Mt
-			})), i.d(t, "postCollectionI13nByCollectionIdSelector", (function() {
+			})), i.d(t, "notification", (function() {
+				return Gt
+			})), i.d(t, "postEventI13nSelector", (function() {
 				return qt
+			})), i.d(t, "postCollectionI13nByCollectionIdSelector", (function() {
+				return Ht
 			})), i.d(t, "postCollectionI13nSelector", (function() {
-				return Vt
-			})), i.d(t, "topicMetadata", (function() {
 				return Wt
-			})), i.d(t, "topicMetaSearch", (function() {
-				return $t
-			})), i.d(t, "topicFields", (function() {
+			})), i.d(t, "topicMetadata", (function() {
 				return zt
-			})), i.d(t, "PaneName", (function() {
+			})), i.d(t, "topicMetaSearch", (function() {
 				return Kt
-			})), i.d(t, "paneName", (function() {
+			})), i.d(t, "topicFields", (function() {
 				return Jt
-			})), i.d(t, "amountOfElementsBeforePost", (function() {
+			})), i.d(t, "PaneName", (function() {
 				return Qt
-			})), i.d(t, "amountOfElementsBeforeCommunity", (function() {
+			})), i.d(t, "paneName", (function() {
 				return Yt
-			})), i.d(t, "structureType", (function() {
+			})), i.d(t, "amountOfElementsBeforePost", (function() {
 				return Xt
-			})), i.d(t, "subredditPowerups", (function() {
+			})), i.d(t, "amountOfElementsBeforeCommunity", (function() {
 				return Zt
-			})), i.d(t, "outboundLinkData", (function() {
+			})), i.d(t, "structureType", (function() {
 				return ei
-			})), i.d(t, "listingBelowMlModel", (function() {
+			})), i.d(t, "subredditPowerups", (function() {
 				return ti
-			})), i.d(t, "geo", (function() {
+			})), i.d(t, "outboundLinkData", (function() {
 				return ii
+			})), i.d(t, "listingBelowMlModel", (function() {
+				return ni
+			})), i.d(t, "geo", (function() {
+				return ri
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n, r, s = i("./node_modules/js-cookie/src/js.cookie.js"),
@@ -41951,7 +41955,7 @@
 					session: ct(e),
 					screen: at(e),
 					user: Et(e),
-					...zt(e)
+					...Jt(e)
 				}),
 				Ge = (e, t) => {
 					const i = Object(ne.c)(e, {
@@ -42572,7 +42576,14 @@
 			function(e) {
 				e.SearchBar = "search_bar"
 			}(Nt || (Nt = {}));
-			const Dt = (e, t, i, n) => {
+			const Dt = (e, t) => t && t.locationState ? t.locationState[P.a.SearchOriginPage] : e.platform.currentPage && e.platform.currentPage.locationState ? e.platform.currentPage.locationState[P.a.SearchOriginPage] : void 0,
+				At = e => ({
+					query: e.q ? decodeURIComponent(e.q) : e.q,
+					range: e.t,
+					sort: e.sort,
+					structureType: e.structureType
+				}),
+				Pt = (e, t, i, n) => {
 					let r, s;
 					if ((!i || t.restrict_sr) && t.eventType && t.id) {
 						let i;
@@ -42589,23 +42600,20 @@
 						i && (r = i.name, s = i.id)
 					}
 					return {
-						originPageType: n && n.locationState ? n.locationState[P.a.SearchOriginPage] : e.platform.currentPage && e.platform.currentPage.locationState ? e.platform.currentPage.locationState[P.a.SearchOriginPage] : void 0,
-						query: t.q ? decodeURIComponent(t.q) : t.q,
-						range: t.t,
-						sort: t.sort,
-						structureType: t.structureType,
+						originPageType: Dt(e, n),
+						...At(t),
 						subredditId: s,
 						subredditName: r
 					}
 				},
-				At = e => ({
+				kt = e => ({
 					id: e.name,
 					name: e.name,
 					title: e.name,
 					type: e.type,
 					items: e.type === te.a.Posts ? e.postOrder : e.type === te.a.Communities ? e.subredditOrder : void 0
 				}),
-				Pt = (e, t) => {
+				Bt = (e, t) => {
 					const i = e.platform.currentPage ? Ie(e.platform.currentPage) : void 0;
 					return {
 						originElement: Nt.SearchBar,
@@ -42614,7 +42622,7 @@
 						typeaheadActive: !0
 					}
 				},
-				kt = e => ({
+				Lt = e => ({
 					displayQuery: e.displayQuery,
 					rawQuery: e.rawQuery,
 					structureType: e.structureType,
@@ -42626,7 +42634,7 @@
 					metaFlairId: e.metaFlairId,
 					metaFlairName: e.metaFlairName
 				}),
-				Bt = (e, t) => {
+				Ut = (e, t) => {
 					let i, n;
 					if (t.eventType && t.id) {
 						let r;
@@ -42651,7 +42659,7 @@
 						};
 					return t.postFlairName ? s.postFlairName = t.postFlairName : t.metaFlairName && (s.metaFlairName = t.metaFlairName), s
 				},
-				Lt = Object(l.a)(Ee.j, e => e, (e, t) => {
+				Mt = Object(l.a)(Ee.j, e => e, (e, t) => {
 					if (!e || !e.profileId) return;
 					const i = Object(ce.i)(t, e.profileId),
 						n = Object(ce.g)(t, e.profileId),
@@ -42672,11 +42680,11 @@
 						communities_visible: o ? o.showActiveCommunities : void 0
 					}
 				}),
-				Ut = (e, t, i) => {
+				Gt = (e, t, i) => {
 					const n = {};
 					return n.id = t, n.type = i ? i.toLowerCase() : void 0, n
 				},
-				Mt = (e, {
+				qt = (e, {
 					postId: t
 				}) => {
 					let i;
@@ -42696,7 +42704,7 @@
 					} else i = void 0;
 					return i
 				},
-				Gt = e => {
+				Vt = e => {
 					if (!e) return;
 					const {
 						id: t,
@@ -42712,12 +42720,12 @@
 						displayLayout: Object(de.f)(e).toLowerCase()
 					}
 				},
-				qt = (e, {
+				Ht = (e, {
 					collectionId: t
-				}) => Gt(Object(de.q)(e, {
+				}) => Vt(Object(de.q)(e, {
 					collectionId: t
 				})),
-				Vt = (e, {
+				Wt = (e, {
 					postId: t
 				}) => {
 					const i = Object(ae.F)(e, {
@@ -42727,39 +42735,39 @@
 						const i = Object(de.n)(e, {
 							postId: t
 						});
-						return i ? Gt(i) : void 0
+						return i ? Vt(i) : void 0
 					}
 				},
-				Ht = e => {
+				$t = e => {
 					const t = e.platform.currentPage && e.platform.currentPage.urlParams.topicSlug;
 					return t && Object(ve.c)(e, {
 						topicSlug: t
 					})
 				},
-				Wt = Object(l.a)(Ht, e => e ? {
+				zt = Object(l.a)($t, e => e ? {
 					id: e.id,
 					...e.namePlural && {
 						displayName: e.namePlural
 					}
 				} : null),
-				$t = Object(l.a)(Ht, e => e ? {
+				Kt = Object(l.a)($t, e => e ? {
 					range: "all",
 					sort: m.Tb.Relevance,
 					structureType: xt.Topics
 				} : null),
-				zt = Object(l.a)(Wt, $t, e => e.platform.currentPage && Ie(e.platform.currentPage), (e, t, i) => "topic" === i ? {
+				Jt = Object(l.a)(zt, Kt, e => e.platform.currentPage && Ie(e.platform.currentPage), (e, t, i) => "topic" === i ? {
 					metaSearch: t,
 					topicMetadata: e
 				} : null);
-			var Kt;
+			var Qt;
 			! function(e) {
 				e.Post = "posts", e.Community = "communities", e.Best = "best"
-			}(Kt || (Kt = {}));
-			const Jt = (e, t) => {
+			}(Qt || (Qt = {}));
+			const Yt = (e, t) => {
 					const i = t || e.platform.currentPage;
-					return i ? i.queryParams.type ? "link" === i.queryParams.type ? Kt.Post : "sr,user" === i.queryParams.type ? Kt.Community : void 0 : Kt.Best : void 0
+					return i ? i.queryParams.type ? "link" === i.queryParams.type ? Qt.Post : "sr,user" === i.queryParams.type ? Qt.Community : void 0 : Qt.Best : void 0
 				},
-				Qt = (e, t, i, n, r) => {
+				Xt = (e, t, i, n, r) => {
 					let s, o, d = 0;
 					if (n && i && e.searchDiscoveryUnits && e.searchDiscoveryUnits.models[i]) {
 						const t = e.searchDiscoveryUnits.models[i],
@@ -42770,13 +42778,13 @@
 							d += i ? i.length : 0
 						}
 					} else if (t.restrict_sr) d = 0;
-					else if (r === Kt.Best && i) {
+					else if (r === Qt.Best && i) {
 						const t = e.listings.listingOrder.identifiers[i];
 						d = t ? t.length : 0
 					}
 					return d
 				},
-				Yt = (e, t, i) => {
+				Zt = (e, t, i) => {
 					let n, r, s = 0;
 					if (i && t && e.searchDiscoveryUnits && e.searchDiscoveryUnits.models[t]) {
 						const o = e.searchDiscoveryUnits.models[t],
@@ -42789,8 +42797,8 @@
 					} else s = 0;
 					return s
 				},
-				Xt = e => e && e.queryParams ? e.queryParams.source ? e.queryParams.source === N.a.Recent ? xt.Recent : e.queryParams.source === N.a.Trending ? xt.Trending : e.queryParams.source === N.a.PromotedTrend ? xt.PromotedTrend : void 0 : xt.Search : void 0,
-				Zt = e => {
+				ei = e => e && e.queryParams ? e.queryParams.source ? e.queryParams.source === N.a.Recent ? xt.Recent : e.queryParams.source === N.a.Trending ? xt.Trending : e.queryParams.source === N.a.PromotedTrend ? xt.PromotedTrend : void 0 : xt.Search : void 0,
+				ti = e => {
 					const t = Object(oe.e)(e);
 					if (t) {
 						const i = Object(me.i)(e, {
@@ -42802,7 +42810,7 @@
 					}
 					return null
 				},
-				ei = (e, t, i, n, r) => {
+				ii = (e, t, i, n, r) => {
 					const s = {
 							url: t,
 							postId: n,
@@ -42812,13 +42820,13 @@
 						o = ft(e);
 					return o && (s.subredditId = o.id, s.subredditName = o.name), s
 				},
-				ti = (e, t) => ({
+				ni = (e, t) => ({
 					features: JSON.stringify({
 						host_post_id: t || null
 					}),
 					name: e
 				}),
-				ii = Object(l.c)({
+				ri = Object(l.c)({
 					city: se.a,
 					country_code: se.b,
 					region: se.l
@@ -47607,4 +47615,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.cebd5cda3aa022e82607.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30804a8e93b83f45057d.js.map

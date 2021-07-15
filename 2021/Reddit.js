@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.01144fa6ed19eb6f192e.js
-// Retrieved at 7/15/2021, 5:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.912a1236c7cf2c3cf4d4.js
+// Retrieved at 7/15/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5513,16 +5513,25 @@
 					searchQuery: zt.W,
 					pageLayer: e => e
 				}),
-				No = (e, t, n, s) => e(e => ({
+				No = ({
+					sendEvent: e,
+					target: t,
+					searchOptions: n,
+					pageLayer: s,
+					subreddit: r
+				}) => e(e => ({
 					...Object(oo.c)(e),
 					source: "search",
 					action: "click",
 					noun: t,
 					actionInfo: Object(Ot.actionInfo)(e),
 					search: {
-						...Object(Ot.search)(e, n, !0, s || void 0),
+						queryId: Object(fr.c)(fr.a.SearchResults),
+						originPageType: Object(Ot.searchOriginPageTypeSelector)(e, s),
+						...Object(Ot.searchOptionsToTelemetryModelParams)(n),
 						structureType: Object(Ot.structureType)(s),
-						queryId: Object(fr.c)(fr.a.SearchResults)
+						subredditId: null == r ? void 0 : r.id,
+						subredditName: null == r ? void 0 : r.name
 					}
 				})),
 				Mo = Object(p.b)(() => Object(f.c)({
@@ -5594,7 +5603,12 @@
 						const e = n.searchOptions || Object(Hr.c)({
 							q: n.searchQuery
 						});
-						No(n.sendEvent, Ot.OriginElement.SearchBar, e, n.pageLayer ? n.pageLayer : void 0)
+						No({
+							sendEvent: n.sendEvent,
+							target: Ot.OriginElement.SearchBar,
+							searchOptions: e,
+							pageLayer: n.pageLayer ? n.pageLayer : void 0
+						})
 					}
 				}));
 			class To extends m.a.Component {
@@ -5748,7 +5762,12 @@
 						if (e.preventDefault(), !this.state.searchQuery.trim()) return;
 						this.onSearch(e);
 						const t = this.props.searchOptions || Object(Hr.c)({});
-						t.q || (t.q = this.state.searchQuery), No(this.props.sendEvent, "full_search_button", t), this.close()
+						t.q || (t.q = this.state.searchQuery), No({
+							sendEvent: this.props.sendEvent,
+							target: "full_search_button",
+							searchOptions: t,
+							subreddit: this.props.shouldSearchSubreddit ? this.props.subreddit : void 0
+						}), this.close()
 					}, this.state = {
 						fetchedTrending: !1,
 						focusedItemIndex: -1,
@@ -18443,4 +18462,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.01144fa6ed19eb6f192e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.912a1236c7cf2c3cf4d4.js.map
