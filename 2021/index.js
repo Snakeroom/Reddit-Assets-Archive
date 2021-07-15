@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.914f59766bec0167410e.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.1f1a175d4284b700206e.js
+// Retrieved at 7/15/2021, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -93,8 +93,8 @@
 					hk: "Xa82J"
 				})))
 			};
-			var f = n("./src/lib/timeUntil/index.ts"),
-				g = n("./src/reddit/models/Toast/index.ts"),
+			var g = n("./src/lib/timeUntil/index.ts"),
+				f = n("./src/reddit/models/Toast/index.ts"),
 				y = n("./src/reddit/actions/economics/helpers/index.ts"),
 				k = n("./src/reddit/actions/economics/predictions/index.ts"),
 				w = n("./src/reddit/actions/post.ts"),
@@ -177,8 +177,8 @@
 										subredditId: n
 									})), r && j < 1 && o(Object(w.fb)(m)), I(!1), _(null), d ? A(!0) : a({
 										duration: 5e3,
-										kind: g.b.SuccessCommunity,
-										text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(f.a)(new Date(b), !0))], {
+										kind: f.b.SuccessCommunity,
+										text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(g.a)(new Date(b), !0))], {
 											hk: "3ZSdoo"
 										})
 									})
@@ -195,26 +195,29 @@
 								A(!1)
 							}, [])
 						}
-					}(e, s, n);
-				if (!l) return null;
-				const {
-					options: V,
-					userSelection: F
-				} = l, {
-					endsAt: U,
-					title: H,
-					resolvedOptionId: Q
-				} = e, R = U < Date.now();
+					}(e, s, n),
+					{
+						options: V,
+						userSelection: F
+					} = l || {},
+					{
+						endsAt: U,
+						title: H,
+						resolvedOptionId: Q,
+						options: R
+					} = e,
+					G = U < Date.now(),
+					K = null != V ? V : R;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(r.a)(A.a.poll, {
 						[A.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
 					className: A.a.pollQuestion
-				}, H), V.map(e => i.a.createElement(P.a, {
+				}, H), K.map(e => i.a.createElement(P.a, {
 					key: `prediction-option-${e.id}`,
 					disabled: I,
-					isEnded: R,
+					isEnded: G,
 					isSelected: F === e.id,
 					needsResolution: !1,
 					option: e,
@@ -223,11 +226,11 @@
 					tournamentId: t,
 					userSelection: F,
 					userIsLoggedOut: !c,
-					votePercentage: (F || R || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					votePercentage: (F || G || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
 					isShowingHint: x
 				})), i.a.createElement(O.a, {
 					disabled: I || x || !!F,
-					isEnded: R,
+					isEnded: G,
 					userSelection: F,
 					isShowingHint: x,
 					tournamentId: t,
@@ -301,4 +304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.914f59766bec0167410e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.1f1a175d4284b700206e.js.map
