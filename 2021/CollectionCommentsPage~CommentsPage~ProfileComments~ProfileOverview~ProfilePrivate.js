@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.bde147b33175c4eec703.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.246c7675a5d2088caf9f.js
+// Retrieved at 7/15/2021, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1148,7 +1148,7 @@
 						id: d,
 						onMouseEnter: b,
 						onMouseLeave: b
-					}, r.a.createElement("span", null, i), n === Oe.Mod && e.areAchievementsEnabled && r.a.createElement(je, null)), r.a.createElement(P.c, {
+					}, r.a.createElement("span", null, i), n === Oe.Mod && r.a.createElement(je, null)), r.a.createElement(P.c, {
 						tooltipId: d,
 						text: p
 					}))
@@ -1227,8 +1227,7 @@
 					comment: s,
 					subredditDisplayText: p,
 					renderContractorBadge: b,
-					renderedInOverlay: u,
-					areAchievementsEnabled: v
+					renderedInOverlay: u
 				}), s.isAuthorCakeday ? r.a.createElement(J, {
 					className: Se.a.cakeDay,
 					commentId: s.id,
@@ -3443,4 +3442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.bde147b33175c4eec703.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.246c7675a5d2088caf9f.js.map

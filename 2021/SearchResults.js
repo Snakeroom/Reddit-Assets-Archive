@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.66de5022f17339a260be.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.c6f1e5ffe23f16826c91.js
+// Retrieved at 7/15/2021, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1681,7 +1681,7 @@
 						id: d,
 						onMouseEnter: h,
 						onMouseLeave: h
-					}, o.a.createElement("span", null, a), s === Ce.Mod && e.areAchievementsEnabled && o.a.createElement(Se, null)), o.a.createElement(A.c, {
+					}, o.a.createElement("span", null, a), s === Ce.Mod && o.a.createElement(Se, null)), o.a.createElement(A.c, {
 						tooltipId: d,
 						text: p
 					}))
@@ -1760,8 +1760,7 @@
 					comment: n,
 					subredditDisplayText: p,
 					renderContractorBadge: h,
-					renderedInOverlay: u,
-					areAchievementsEnabled: v
+					renderedInOverlay: u
 				}), n.isAuthorCakeday ? o.a.createElement(K, {
 					className: Le.a.cakeDay,
 					commentId: n.id,
@@ -10050,4 +10049,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.66de5022f17339a260be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c6f1e5ffe23f16826c91.js.map

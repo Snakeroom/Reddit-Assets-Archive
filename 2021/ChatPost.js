@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.a2f5100f395dbaa1d5c9.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.5485d2870b3f037733e9.js
+// Retrieved at 7/15/2021, 9:50:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -575,7 +575,7 @@
 						id: d,
 						onMouseEnter: h,
 						onMouseLeave: h
-					}, a.a.createElement("span", null, i), o === _e.Mod && e.areAchievementsEnabled && a.a.createElement(Oe, null)), a.a.createElement(D.c, {
+					}, a.a.createElement("span", null, i), o === _e.Mod && a.a.createElement(Oe, null)), a.a.createElement(D.c, {
 						tooltipId: d,
 						text: u
 					}))
@@ -654,8 +654,7 @@
 					comment: s,
 					subredditDisplayText: u,
 					renderContractorBadge: h,
-					renderedInOverlay: p,
-					areAchievementsEnabled: g
+					renderedInOverlay: p
 				}), s.isAuthorCakeday ? a.a.createElement(z, {
 					className: Le.a.cakeDay,
 					commentId: s.id,
@@ -3595,4 +3594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.a2f5100f395dbaa1d5c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5485d2870b3f037733e9.js.map
