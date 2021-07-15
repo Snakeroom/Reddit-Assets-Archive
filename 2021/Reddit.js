@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.df13e3fbbf28f14186da.js
-// Retrieved at 7/15/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.dc20804f6641b41e2c80.js
+// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -18078,73 +18078,6 @@
 				expEventOverride: !1
 			}) === s.Oc.Enabled
 		},
-		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
-				return c
-			})), n.d(t, "h", (function() {
-				return d
-			})), n.d(t, "d", (function() {
-				return l
-			})), n.d(t, "g", (function() {
-				return u
-			})), n.d(t, "f", (function() {
-				return m
-			})), n.d(t, "c", (function() {
-				return p
-			})), n.d(t, "e", (function() {
-				return b
-			}));
-			var s = n("./src/reddit/constants/experiments.ts"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/selectors/experiments/index.ts"),
-				a = n("./src/reddit/selectors/userPrefs.ts");
-			const i = 1e4,
-				c = e => {
-					const t = Object(r.c)(e, {
-						experimentEligibilitySelector: r.a,
-						experimentName: s.l
-					});
-					return t === s.q.VoteCountOnly || t === s.q.CommentCountOnly || t === s.q.VoteAndCommentCount
-				},
-				d = e => !1,
-				l = e => !1,
-				u = (e, {
-					post: t
-				}) => m(e, {
-					postId: t.id
-				}),
-				m = (e, {
-					postId: t
-				}) => {
-					const n = e.posts.models[t];
-					if (Object(a.c)(e) || !n || n.isSponsored || n.isScoreHidden || n.score >= i) return !1;
-					const r = Object(o.d)(e, {
-							experimentName: s.l
-						}),
-						c = null == r ? void 0 : r.variant;
-					return c === s.q.VoteCountOnly || c === s.q.VoteAndCommentCount
-				},
-				p = (e, {
-					postId: t
-				}) => {
-					const n = e.posts.models[t];
-					if (Object(a.c)(e) || !n || n.isSponsored || n.numComments >= i) return !1;
-					const r = Object(o.d)(e, {
-							experimentName: s.l
-						}),
-						c = null == r ? void 0 : r.variant;
-					return c === s.q.CommentCountOnly || c === s.q.VoteAndCommentCount
-				},
-				b = e => {
-					return Object(r.c)(e, {
-						experimentEligibilitySelector: r.a,
-						experimentName: s.eb
-					}) === s.pb.Enabled
-				}
-		},
 		"./src/reddit/selectors/experiments/postCommentFollow.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -18409,20 +18342,6 @@
 			}));
 			const s = e => e.trending.models
 		},
-		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return r
-			})), n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "c", (function() {
-				return a
-			}));
-			var s = n("./src/lib/constants/index.ts");
-			const r = e => !o(e) && !!e.user.prefs.subscriptionsPinned,
-				o = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Jb.MODERATION_PAGES),
-				a = e => e.user.prefs.reduceAnimationsFromAwards
-		},
 		"./src/redditGQL/operations/BlockAwarder.json": function(e) {
 			e.exports = JSON.parse('{"id":"9769ffbb7031"}')
 		},
@@ -18464,4 +18383,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.df13e3fbbf28f14186da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.dc20804f6641b41e2c80.js.map

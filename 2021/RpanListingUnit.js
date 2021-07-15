@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.55f97341add9d6922cd2.js
-// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.9b5a3d3f0a2240917274.js
+// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -618,26 +618,33 @@
 						parseInt(e) < r && x.current()
 					}, m())
 				}, [r, m, _]);
-				const j = Object(s.useRef)(!1),
-					w = Object(s.useCallback)(e => {
+				const j = Object(s.useRef)(0),
+					w = Object(s.useRef)(!1),
+					N = Object(s.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
 								intersectionRatio: r
 							} = e, s = 1 !== r;
-							t ? (j.current = !0, C.current || (C.current = !0, A.current = setTimeout(() => {
+							t ? (w.current = !0, C.current || (C.current = !0, A.current = setTimeout(() => {
 								I.current(), x.current()
-							}, l()))) : s && (j.current = !1)
+							}, l())), j.current > 0 && (I.current(j.current), j.current = 0)) : s && (w.current = !1)
 						})
 					}, []);
-				Object(i.a)(y, w);
-				const N = Object(a.a)(r);
-				Object(s.useEffect)(() => (void 0 !== N && N !== r && (I.current(r - N), j.current && u && u()), () => {
-					clearTimeout(A.current), clearTimeout(R.current), clearTimeout(T.current)
-				}), [r]);
-				const D = Object(s.useCallback)(() => g(!0), [g]),
-					L = 0 === _.length,
-					P = E || L;
+				Object(i.a)(y, N);
+				const D = Object(a.a)(r);
+				Object(s.useEffect)(() => {
+					if (void 0 !== D && D !== r) {
+						const e = r - D;
+						w.current ? (I.current(e), u && u()) : j.current += e
+					}
+					return () => {
+						clearTimeout(A.current), clearTimeout(R.current), clearTimeout(T.current)
+					}
+				}, [r]);
+				const L = Object(s.useCallback)(() => g(!0), [g]),
+					P = 0 === _.length,
+					k = E || P;
 				return n.a.createElement("div", {
 					className: d.a.countAnimation,
 					ref: y
@@ -655,14 +662,14 @@
 						"aria-hidden": !0,
 						className: d.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: D,
+						onTransitionEnd: L,
 						style: b && _.length > 0 && !E ? {
 							transform: `translateY(-${p&&r.length>1?100:100*(r.length-1)}%)`,
 							transitionDuration: `${(p?500:750)/1e3}s`
 						} : {
 							transform: "translateY(0)"
 						}
-					}, P ? n.a.createElement("span", {
+					}, k ? n.a.createElement("span", {
 						className: d.a.digitDelta
 					}, e) : r.map((e, t) => {
 						const s = 0 === t || t === r.length - 1;
@@ -2008,17 +2015,19 @@
 				E = r("./src/reddit/hooks/useTracking.ts"),
 				g = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				_ = r("./src/reddit/models/Vote/index.ts"),
-				v = r("./src/reddit/selectors/meta.ts"),
-				O = r("./src/reddit/controls/Score/index.m.less"),
-				S = r.n(O);
-			const C = e => e.voteState === _.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === _.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(b.a)(Object(h.a)(e)),
-				y = () => 0,
-				I = Object(d.b)(e => ({
-					locale: Object(v.i)(e)
+				v = r("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				O = r("./src/reddit/selectors/meta.ts"),
+				S = r("./src/reddit/selectors/platform.ts"),
+				C = r("./src/reddit/controls/Score/index.m.less"),
+				y = r.n(C);
+			const I = e => e.voteState === _.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === _.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(b.a)(Object(h.a)(e)),
+				T = () => 0,
+				x = Object(d.b)(e => ({
+					locale: Object(O.i)(e)
 				})),
-				T = Object(i.a)(e => {
+				A = Object(i.a)(e => {
 					const t = {
-							color: e.light ? p.b.lightboxHeaderText : C(e)
+							color: e.light ? p.b.lightboxHeaderText : I(e)
 						},
 						{
 							score: r,
@@ -2028,13 +2037,13 @@
 							isCountAnimShadowTestEnabled: g
 						} = e,
 						_ = Object(d.d)(),
-						v = null == h ? void 0 : h.startsWith("en"),
-						O = e.isScoreHidden ? v ? s.fbt._("Vote", null, {
+						O = null == h ? void 0 : h.startsWith("en"),
+						C = e.isScoreHidden ? O ? s.fbt._("Vote", null, {
 							hk: "2TMson"
 						}) : c.a.createElement("span", {
-							className: S.a.dot
+							className: y.a.dot
 						}, "•") : Object(a.b)(r),
-						I = Object(o.useCallback)(e => {
+						x = Object(o.useCallback)(e => {
 							const {
 								voteCountChange: t
 							} = e.subscribe.data;
@@ -2043,7 +2052,7 @@
 								delta: t
 							}))
 						}, [_, i]),
-						T = Object(o.useRef)({
+						A = Object(o.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -2052,29 +2061,30 @@
 								}
 							}
 						}),
-						x = Object(E.a)(),
-						A = Object(o.useCallback)(() => {
-							x(Object(f.m)(i))
-						}, [x, i]),
-						R = !e.isScoreHidden && b;
+						R = Object(E.a)(),
+						j = Object(o.useCallback)(() => {
+							R(Object(f.m)(i))
+						}, [R, i]),
+						w = Object(d.e)(S.f),
+						N = !e.isScoreHidden && b && r < v.a;
 					return c.a.createElement("div", {
-						className: Object(n.a)(S.a.score, e.className),
+						className: Object(n.a)(y.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, R ? c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
+					}, N ? c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
 						initialDisplayCount: r,
 						countToUpperBound: r,
-						initialDelay: y,
-						subsequentRecurringDelay: y,
-						incrementDelta: y,
-						shouldDisjointAnimation: !0,
-						inViewPortAnimatingCallbackOnce: A
-					})) : O, (R || g) && c.a.createElement(l.a, {
-						variables: T.current,
-						onData: R ? I : y,
+						initialDelay: T,
+						subsequentRecurringDelay: T,
+						incrementDelta: T,
+						shouldDisjointAnimation: !w,
+						inViewPortAnimatingCallbackOnce: j
+					})) : C, (N || g) && c.a.createElement(l.a, {
+						variables: A.current,
+						onData: N ? x : T,
 						queryKey: "postVoteCount"
 					}))
 				});
-			t.a = I(T)
+			t.a = x(A)
 		},
 		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, r) {
 			"use strict";
@@ -3747,4 +3757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.55f97341add9d6922cd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9b5a3d3f0a2240917274.js.map
