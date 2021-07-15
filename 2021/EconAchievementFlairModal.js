@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.3f80d43a29debae44ea5.js
-// Retrieved at 7/15/2021, 9:50:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.4348cac106a44efaeaef.js
+// Retrieved at 7/15/2021, 10:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -66,9 +66,9 @@
 				_ = a("./src/reddit/selectors/gold/powerups/achievements.ts"),
 				I = a("./src/lib/classNames/index.ts"),
 				f = a("./src/reddit/actions/tooltip.ts"),
-				N = a("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				j = a("./src/reddit/helpers/trackers/userFlair.ts"),
-				F = a("./src/reddit/hooks/useTracking.ts"),
+				F = a("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				N = a("./src/reddit/helpers/trackers/userFlair.ts"),
+				j = a("./src/reddit/hooks/useTracking.ts"),
 				O = a("./src/reddit/icons/fonts/index.tsx"),
 				x = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less"),
 				A = a.n(x);
@@ -79,7 +79,7 @@
 				onSelect: t
 			}) => {
 				const a = Object(n.d)(),
-					s = Object(F.a)(),
+					s = Object(j.a)(),
 					i = `achievement-locked-${e.type}`,
 					r = k._("To use this achievement, you gotta earn it!", null, {
 						hk: "2RYhLB"
@@ -94,7 +94,7 @@
 					onMouseEnter: d,
 					onMouseLeave: d,
 					onClick: () => {
-						l && t(e.type), e.isPreferred || s(Object(j.b)({
+						l && t(e.type), e.isPreferred || s(Object(N.b)({
 							achievementFlair: e
 						}))
 					},
@@ -119,7 +119,7 @@
 					className: A.a.achievementLock
 				}))), c.a.createElement("div", {
 					className: A.a.achievementName
-				}, c.a.createElement("span", null, e.name)), e.isLocked && c.a.createElement(N.c, {
+				}, c.a.createElement("span", null, e.name)), e.isLocked && c.a.createElement(F.c, {
 					tooltipId: i,
 					text: r,
 					className: A.a.achievementTooltip
@@ -212,7 +212,7 @@
 				flairData: a
 			}) => {
 				const s = Object(n.d)(),
-					i = Object(F.a)(),
+					i = Object(j.a)(),
 					r = Object(n.e)(m.j);
 				return r ? c.a.createElement("div", {
 					className: Object(I.a)(R.a.container, e)
@@ -227,9 +227,10 @@
 					priority: b.b.Plain,
 					onClick: () => {
 						const e = r ? Object(l.e)(r) : null;
-						i(Object(j.a)()), s(Object(H.b)({
+						i(Object(N.a)()), s(Object(H.b)({
 							username: e,
-							subredditId: t
+							subredditId: t,
+							isOpenedFromAchievementsModal: !0
 						}))
 					},
 					"data-testid": "edit-user-flair-button"
@@ -475,4 +476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.3f80d43a29debae44ea5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.4348cac106a44efaeaef.js.map
