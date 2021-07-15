@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.454622a39833014ae4bb.js
-// Retrieved at 7/15/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.55f97341add9d6922cd2.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ic
+					experimentName: u.Gc
 				});
-				return Object(u.Zd)(t) ? void 0 : t
+				return Object(u.Xd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Jc
+					experimentName: u.Hc
 				});
-				return Object(u.Zd)(t) ? void 0 : t
-			}, (e, t) => e === u.Kc.Enabled && t === u.Kc.Enabled);
+				return Object(u.Xd)(t) ? void 0 : t
+			}, (e, t) => e === u.Ic.Enabled && t === u.Ic.Enabled);
 			var h = r("./src/config.ts");
 			var b = r("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1331,8 +1331,8 @@
 				K = r("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				z = r.n(K);
 			const {
-				fbt: Z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), q = 20, J = l.jc, X = l.jc, Q = Object(c.a)(P.a, {
+				fbt: q
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.jc, X = l.jc, Q = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(a.c)({
 				autoplay: j.b,
@@ -1374,11 +1374,11 @@
 				}))
 			})), ee = () => n.a.createElement("h3", {
 				className: z.a.title
-			}, Z._("Top livestream", null, {
+			}, q._("Top livestream", null, {
 				hk: "4od1tZ"
 			})), te = () => n.a.createElement("p", {
 				className: z.a.description
-			}, Z._("Live from the internet, this is RPAN", null, {
+			}, q._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class re extends s.Component {
@@ -1488,7 +1488,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && o.c.has(this.timerId)) {
-						Math.round(o.c.end(this.timerId)) / 1e3 >= q ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(o.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -1646,10 +1646,10 @@
 					const t = Math.max(1, (null === (e = this.props.stream) || void 0 === e ? void 0 : e.continuous_watchers) || 0);
 					return n.a.createElement("span", {
 						className: z.a.watchingCount
-					}, Z._({
+					}, q._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [Z._plural(t, "number")], {
+					}, [q._plural(t, "number")], {
 						hk: "33zJ5F"
 					}))
 				}
@@ -1792,7 +1792,7 @@
 					onClick: e,
 					isLoggedIn: t
 				}) => n.a.createElement(L.a, {
-					displayText: Z._("Show me less of this", null, {
+					displayText: q._("Show me less of this", null, {
 						hk: "4t8AKC"
 					}),
 					flatlistItem: D.a.Hide,
@@ -1811,7 +1811,7 @@
 					dropdownId: "rpan-du-overflow"
 				}, n.a.createElement(V.b, {
 					className: z.a.overflowItem,
-					displayText: Z._("Show me less of this", null, {
+					displayText: q._("Show me less of this", null, {
 						hk: "2c4uFK"
 					}),
 					iconWrapperClassName: z.a.overflowItemIconWrapper,
@@ -3747,4 +3747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.454622a39833014ae4bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.55f97341add9d6922cd2.js.map

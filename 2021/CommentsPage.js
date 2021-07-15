@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.8c091f1d2a78beded5d5.js
-// Retrieved at 7/15/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.fc07be33ae73a63166e7.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -308,33 +308,30 @@
 					const o = !e,
 						n = Object(te.F)(t, {
 							postId: s
+						}).belongsTo,
+						r = Object(se.K)(t, {
+							identifier: n
 						}),
-						r = n.belongsTo,
-						i = Object(se.K)(t, {
-							identifier: r
+						i = Object(ge.c)(t, {
+							identifier: n
 						}),
-						a = Object(ge.c)(t, {
-							identifier: r
-						}),
-						d = !!Object(be.c)(t),
-						c = Object(Oe.a)(t),
-						l = {
+						a = !!Object(be.c)(t),
+						d = Object(Oe.a)(t),
+						c = {
 							listingBelow: !1,
 							nsfwListingBelow: !1,
 							postFeed: !1,
-							postImageOCRAltText: !1,
 							postQASchema: !1
 						};
-					return d ? (l.listingBelow = a || o, l.postFeed = l.listingBelow) : c ? l.nsfwListingBelow = !0 : l.postFeed = (a || o) && (!Object(M.h)(i) && !Object(he.d)(t, {
+					return a ? (c.listingBelow = i || o, c.postFeed = c.listingBelow) : d ? c.nsfwListingBelow = !0 : c.postFeed = (i || o) && (!Object(M.h)(r) && !Object(he.d)(t, {
 						postId: s
-					}) && !!i || !Object(K.h)(t) && Object(B.f)(t)), e && (l.postImageOCRAltText = Object(B.c)(n) && !!Object(B.b)(t, n, !1), l.postQASchema = Object(B.e)(t)), l
+					}) && !!r || !Object(K.h)(t) && Object(B.e)(t)), e && (c.postQASchema = Object(B.d)(t)), c
 				},
-				je = (e, t) => e || t.postFeed || t.listingBelow || t.nsfwListingBelow || t.postImageOCRAltText || t.postQASchema,
+				je = (e, t) => e || t.postFeed || t.listingBelow || t.nsfwListingBelow || t.postQASchema,
 				_e = e => ({
 					includePostFeed: e.postFeed,
 					includeNSFWListingBelowExperiment: e.nsfwListingBelow,
 					includeListingBelowExperiment: e.listingBelow,
-					includePostImageOCRAltText: e.postImageOCRAltText,
 					includePostQASchemaEligibilityFlag: e.postQASchema
 				}),
 				Se = e => async (t, s) => {
@@ -389,9 +386,9 @@
 							i = Object(se.K)(s(), {
 								identifier: A.belongsTo
 							});
-						if (i && (e => D.td.Redirect === Object(U.b)(e, {
+						if (i && (e => D.rd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: D.ld
+								experimentName: D.jd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((A.media && A.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${A.belongsTo.type===_.a.SUBREDDIT?i.url:"/"}${Object(u.t)(A.id)}`;
@@ -3319,7 +3316,7 @@
 				}),
 				F = Object(c.c)({
 					isLoggedIn: S.J,
-					postSEOV2IdCardVariant: I.i,
+					postSEOV2IdCardVariant: I.h,
 					shouldShowReredditPromo: j.a,
 					widgets: Object(p.a)(_.q)
 				}),
@@ -3346,7 +3343,7 @@
 						post: n,
 						isFakeOverlay: r,
 						postSEOV2IdCardVariant: i
-					} = this.props, d = !Object(I.d)(i) && !Object(I.g)(i);
+					} = this.props, d = !Object(I.c)(i) && !Object(I.f)(i);
 					return a.a.createElement(v.a, {
 						adComponentOnFakeOverlay: r,
 						adComponent: d ? a.a.createElement(x.a, {
@@ -3376,7 +3373,7 @@
 						widgets: p
 					} = this.props;
 					let h = 0;
-					const b = Object(I.d)(r) || Object(I.g)(r),
+					const b = Object(I.c)(r) || Object(I.f)(r),
 						v = a.a.createElement(x.a, {
 							postId: n.id,
 							isOverlay: o,
@@ -3460,8 +3457,8 @@
 				hasDismissedTruncation: u.b,
 				isGQLLoggedIn: b.I,
 				isLoggedIn: b.J,
-				isPostSEOEligible: h.f,
-				postSEOV2TruncatedVariant: h.j
+				isPostSEOEligible: h.e,
+				postSEOV2TruncatedVariant: h.i
 			}), y = Object(r.b)(O);
 			class P extends n.a.Component {
 				render() {
@@ -5699,7 +5696,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.Zd)(t) && !Object(j.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.Xd)(t) && !Object(j.a)(t),
 							subreddit: o
 						}
 					}
@@ -5754,7 +5751,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.Zd)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.Xd)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -5765,9 +5762,9 @@
 						hk: "2g363L"
 					}) : Object(j.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.Oc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
+					}) : t === x.Mc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
 						hk: "w3BDa"
-					}) : t === x.Oc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.Mc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -6893,7 +6890,7 @@
 					isTooltipOpen: (e, t) => !!Object(ue.a)(e),
 					origin: ce.j,
 					post: me.F,
-					postSEOV2IdCardVariant: ae.i,
+					postSEOV2IdCardVariant: ae.h,
 					profileCollectionsEnabled: Q.a,
 					replyComment: (e, {
 						postId: t,
@@ -7207,7 +7204,7 @@
 						sendEvent: h,
 						sort: b,
 						subredditOrProfile: g
-					} = this.props, C = Object(ae.g)(p);
+					} = this.props, C = Object(ae.f)(p);
 					if (!c) {
 						if (t) return m.a.createElement(ve.f, null);
 						const s = this.renderPageError();
@@ -7662,7 +7659,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.Fb
 				});
-				return !(!t || Object(o.Zd)(t))
+				return !(!t || Object(o.Xd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -7675,8 +7672,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.md
-			}) === o.ud.Enabled
+				experimentName: o.kd
+			}) === o.sd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -7797,7 +7794,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.Zd)(t)
+					return Boolean(t) && !Object(n.Xd)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -7822,4 +7819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.8c091f1d2a78beded5d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fc07be33ae73a63166e7.js.map

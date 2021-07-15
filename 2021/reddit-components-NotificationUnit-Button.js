@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a10ee70be8b100888b37.js
-// Retrieved at 7/15/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.814d163d6a2c375ffbc7.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -148,8 +148,8 @@
 				M = n("./src/reddit/models/Comment/index.ts"),
 				G = n("./src/reddit/models/PostDraft/index.ts"),
 				J = n("./src/reddit/models/RichTextJson/index.ts"),
-				W = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				B = n("./src/reddit/models/Toast/index.ts"),
+				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
+				W = n("./src/reddit/models/Toast/index.ts"),
 				H = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
 				V = n("./src/reddit/selectors/platform.ts"),
@@ -229,7 +229,7 @@
 							error: v.error
 						})), u(Object(f.f)({
 							duration: f.a,
-							kind: B.b.Error,
+							kind: W.b.Error,
 							text: t
 						}))
 					}
@@ -321,7 +321,7 @@
 							})), o(Object(u.c)(e))
 						} else o(Object(u.a)(n)), o(Object(f.f)({
 							duration: f.a,
-							kind: B.b.Error,
+							kind: W.b.Error,
 							text: r.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -354,11 +354,11 @@
 						const e = O.filter(e => !!e && 10 !== e.charCodeAt(0));
 						if (p === _.h.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
 						else {
-							const t = e.map(e => W.s(e, null)).map(e => W.l([e])),
-								n = W.s("", null),
-								r = W.l([n]);
+							const t = e.map(e => B.s(e, null)).map(e => B.l([e])),
+								n = B.s("", null),
+								r = B.l([n]);
 							f = {
-								document: [W.c(t), r]
+								document: [B.c(t), r]
 							}
 						}
 					}
@@ -544,7 +544,7 @@
 				}) => {
 					var c, d, i, a, m, u;
 					n(Object(Q.c)());
-					const l = e => Object(f.f)(Object(f.e)(e, B.b.Error));
+					const l = e => Object(f.f)(Object(f.e)(e, W.b.Error));
 					if (((null === (d = null === (c = o().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) || []).length === j.a) n(l(r.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -570,7 +570,7 @@
 								hk: "2fJsVC"
 							});
 							n(Object(f.f)({
-								kind: B.b.SuccessCommunityGreen,
+								kind: W.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else n(Object(Q.n)(d)), n(l(r.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -746,7 +746,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, F = Object(f.a)(O.b, I.a.upvoted), M = Object(f.a)(O.b, I.a.downvoted), G = Object(c.a)(_.j), J = Object(c.a)(_.i), W = Object(c.a)(_.e), B = Object(c.a)(_.f), H = (Object(c.a)(_.c), Object(c.a)(_.d), ({
+				}, F = Object(f.a)(O.b, I.a.upvoted), M = Object(f.a)(O.b, I.a.downvoted), G = Object(c.a)(_.j), J = Object(c.a)(_.i), B = Object(c.a)(_.e), W = Object(c.a)(_.f), H = (Object(c.a)(_.c), Object(c.a)(_.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -762,7 +762,7 @@
 							commentsPageKey: t
 						}),
 						a = d.depth;
-					r(W({
+					r(B({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -771,7 +771,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(B({
+					n(W({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -787,7 +787,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o(W({
+					o(B({
 						commentId: d,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -1472,7 +1472,7 @@
 								experimentName: s.B,
 								expEventOverride: t
 							});
-							return !!(Object(s.Zd)(n) ? void 0 : n)
+							return !!(Object(s.Xd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2358,9 +2358,9 @@
 			})), n.d(t, "r", (function() {
 				return J
 			})), n.d(t, "e", (function() {
-				return W
-			})), n.d(t, "v", (function() {
 				return B
+			})), n.d(t, "v", (function() {
+				return W
 			})), n.d(t, "K", (function() {
 				return H
 			})), n.d(t, "f", (function() {
@@ -2553,7 +2553,7 @@
 				J = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				W = (e, {
+				B = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.models[t] : void 0;
@@ -2561,7 +2561,7 @@
 					const r = e.authorFlair.models[n.subredditId];
 					return r ? r[n.author] : null
 				},
-				B = (e, {
+				W = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
 				H = (e, {
@@ -2631,14 +2631,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Wc
-					}) === r.gd.Enabled
+						experimentName: r.Uc
+					}) === r.ed.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Vc
-					}) === r.fd.Enabled
+						experimentName: r.Tc
+					}) === r.dd.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -2724,4 +2724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a10ee70be8b100888b37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.814d163d6a2c375ffbc7.js.map

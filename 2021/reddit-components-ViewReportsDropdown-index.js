@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b2b6a7c4e43fc3eda373.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7e69e66d1e9a55ed89e2.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -23,7 +23,7 @@
 			})), s.d(t, "f", (function() {
 				return K
 			})), s.d(t, "o", (function() {
-				return M
+				return V
 			})), s.d(t, "p", (function() {
 				return Q
 			})), s.d(t, "d", (function() {
@@ -126,7 +126,7 @@
 						const s = r.c.end(d);
 						!t && s < P && (clearTimeout(S[e]), delete S[e])
 					}
-				}, B = Object(d.a)(k.x), L = Object(d.a)(k.w), U = Object(d.a)(k.v), N = (e, t) => async (s, n, {
+				}, B = Object(d.a)(k.x), U = Object(d.a)(k.w), L = Object(d.a)(k.v), N = (e, t) => async (s, n, {
 					apiContext: o
 				}) => {
 					const r = n(),
@@ -148,7 +148,7 @@
 					if (j.ok) {
 						const t = j.body,
 							n = Object(O.a)(t, b, r);
-						s(L({
+						s(U({
 							key: e,
 							moreCommentsItem: d,
 							shouldCollapse: n,
@@ -165,11 +165,11 @@
 						const l = j.body.comments,
 							p = j.body.posts;
 						await s(Object(m.b)(p, l, a)), await s(Object(i.b)(a, l))
-					} else s(U({
+					} else s(L({
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, v.a.upvoted), F = Object(b.a)(O.b, v.a.downvoted), $ = Object(d.a)(k.j), K = Object(d.a)(k.i), V = Object(d.a)(k.e), H = Object(d.a)(k.f), M = (Object(d.a)(k.c), Object(d.a)(k.d), ({
+				}, z = Object(b.a)(O.b, v.a.upvoted), F = Object(b.a)(O.b, v.a.downvoted), $ = Object(d.a)(k.j), K = Object(d.a)(k.i), H = Object(d.a)(k.e), M = Object(d.a)(k.f), V = (Object(d.a)(k.c), Object(d.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -185,7 +185,7 @@
 							commentsPageKey: t
 						}),
 						a = c.depth;
-					n(V({
+					n(H({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -194,7 +194,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(H({
+					s(M({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -210,7 +210,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o(V({
+					o(H({
 						commentId: c,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -610,7 +610,7 @@
 		"./src/reddit/components/Reports/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return U
+				return L
 			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
@@ -696,9 +696,9 @@
 				A = s.n(P);
 			const {
 				fbt: D
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.div("ReportText", A.a), L = d.a.div("ReportsTitle", A.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.div("ReportText", A.a), U = d.a.div("ReportsTitle", A.a);
 
-			function U(e) {
+			function L(e) {
 				const {
 					className: t,
 					modReports: s,
@@ -709,13 +709,13 @@
 					className: t
 				}, s && s.length > 0 && o.a.createElement("div", {
 					className: A.a.Reports
-				}, o.a.createElement(L, null, D._("Moderator Reports", null, {
+				}, o.a.createElement(U, null, D._("Moderator Reports", null, {
 					hk: "3hZ0oX"
 				})), s.map(([e, t]) => o.a.createElement(B, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), n && n.length > 0 && o.a.createElement("div", {
 					className: A.a.Reports
-				}, o.a.createElement(L, null, D._("User Reports", null, {
+				}, o.a.createElement(U, null, D._("User Reports", null, {
 					hk: "2KeCLz"
 				})), o.a.createElement("div", {
 					className: A.a.UserReports
@@ -1060,14 +1060,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Wc
-					}) === n.gd.Enabled
+						experimentName: n.Uc
+					}) === n.ed.Enabled
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Vc
-					}) === n.fd.Enabled
+						experimentName: n.Tc
+					}) === n.dd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1102,4 +1102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b2b6a7c4e43fc3eda373.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7e69e66d1e9a55ed89e2.js.map

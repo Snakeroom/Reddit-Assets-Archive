@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.25f474fadb42a2a77261.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.ee45bbcea379b634e52a.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -51,16 +51,16 @@
 				y = n("./node_modules/react-redux/es/index.js"),
 				S = n("./src/lib/CSSVariableProvider/index.tsx"),
 				v = n("./src/lib/lessComponent.tsx"),
-				N = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				T = n("./src/chat/components/Root/index.tsx"),
-				w = n("./src/chat/constants/container.ts"),
+				w = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
+				N = n("./src/chat/components/Root/index.tsx"),
+				T = n("./src/chat/constants/container.ts"),
 				R = n("./src/chat/helpers/chatSelector.ts"),
 				A = n("./src/chat/components/PortalContainer/index.m.less"),
 				P = n.n(A);
 			const {
 				embed: D,
 				hidden: M
-			} = w.b;
+			} = T.b;
 
 			function B(e) {
 				return void 0 !== e ? e : -1
@@ -82,7 +82,7 @@
 						height: `${B(M.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", P.a),
-				q = v.a.wrapped(N.a, "MinimizedRedesignPortalContainer", P.a),
+				q = v.a.wrapped(w.a, "MinimizedRedesignPortalContainer", P.a),
 				L = U,
 				z = Object(R.a)({
 					container: e => e && e.container && e.container.size
@@ -90,13 +90,13 @@
 
 			function G(e) {
 				switch (e.container) {
-					case w.a.EMBED:
+					case T.a.EMBED:
 						return s.a.createElement(I, null, e.children);
-					case w.a.HIDDEN:
+					case T.a.HIDDEN:
 						return s.a.createElement(k, null, e.children);
-					case w.a.FULL:
+					case T.a.FULL:
 						return s.a.createElement(L, null, e.children);
-					case w.a.MINIMIZED:
+					case T.a.MINIMIZED:
 						return s.a.createElement(q, null);
 					default:
 						return s.a.createElement(I, null, e.children)
@@ -225,7 +225,7 @@
 						}
 					}, function(e, t) {
 						const n = Object(y.b)(z)(G);
-						return s.a.createElement("div", null, Object(S.d)(s.a.createElement(n, null, Object(T.a)(e, t)), document.body))
+						return s.a.createElement("div", null, Object(S.d)(s.a.createElement(n, null, Object(N.a)(e, t)), document.body))
 					}(e, t)),
 					appName: l.l.Chat,
 					history: Object(r.d)({
@@ -747,10 +747,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.sc,
+					experimentName: s.rc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.wc.Enabled)
+				d = Object(c.a)(o, e => e === s.uc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -782,12 +782,12 @@
 					experimentName: s.cb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.Bc.Enabled),
+				d = Object(c.a)(o, e => e === s.zc.Enabled),
 				u = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.uc,
+					experimentName: s.tc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(c.a)(d, u, (e, t) => e && t === s.Ac.Enabled),
+				l = Object(c.a)(d, u, (e, t) => e && t === s.yc.Enabled),
 				b = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.fb,
 					experimentEligibilitySelector: a.e
@@ -797,14 +797,14 @@
 					experimentName: s.ab,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				p = Object(c.a)(h, e => e === s.yc.Banner_1st_time),
-				x = Object(c.a)(h, e => e === s.yc.Tooltip_persist),
-				f = Object(c.a)(h, e => e === s.yc.Tooltip_1st_time),
+				p = Object(c.a)(h, e => e === s.wc.Banner_1st_time),
+				x = Object(c.a)(h, e => e === s.wc.Tooltip_persist),
+				f = Object(c.a)(h, e => e === s.wc.Tooltip_1st_time),
 				j = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.bb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				O = Object(c.a)(j, e => e === s.zc.ContinuousScroll),
+				O = Object(c.a)(j, e => e === s.xc.ContinuousScroll),
 				g = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.U,
 					experimentEligibilitySelector: a.e
@@ -817,4 +817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.25f474fadb42a2a77261.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.ee45bbcea379b634e52a.js.map

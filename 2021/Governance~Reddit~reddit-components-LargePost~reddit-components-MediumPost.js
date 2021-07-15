@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.ae95bafffb9528b9587d.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.2c7617ee4d28aebab2e6.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(t, e) {
@@ -1205,78 +1205,77 @@
 				}) => {
 					var i, a, _, p;
 					const {
-						includePostImageOCRAltText: m,
-						includeNSFWListingBelowExperiment: S,
-						includeListingBelowExperiment: f,
-						includeOtherDiscussions: O,
-						includePostFeed: D,
-						includePostQASchemaEligibilityFlag: A,
-						listingBelowExperimentVariant: h,
-						postId: g,
-						range: N,
-						sort: x,
-						subredditName: v
-					} = t, Y = Object(o.a)(g, null, {
+						includeNSFWListingBelowExperiment: m,
+						includeListingBelowExperiment: S,
+						includeOtherDiscussions: f,
+						includePostFeed: O,
+						includePostQASchemaEligibilityFlag: D,
+						listingBelowExperimentVariant: A,
+						postId: h,
+						range: g,
+						sort: N,
+						subredditName: x
+					} = t, v = Object(o.a)(h, null, {
 						isOtherDiscussions: !0
-					}), H = s(), W = Object(F.y)(H, {
-						listingKey: Y
-					}), Q = O && (!W || 0 === W.length), z = Object(o.a)(v, n.U[x], {
-						t: N
-					}), $ = Object(F.y)(H, {
-						listingKey: z
-					}), X = D && (f || !$ || 0 === $.length), J = f, Z = S, tt = Object(F.F)(H, {
-						postId: g
-					}), et = m && !!tt && !!tt.media && (Object(U.H)(tt.media) || Object(U.F)(tt.media)) && !tt.media.altText;
-					if (!(Q || X || J || Z || et || A)) return;
-					Q && e(C({
-						key: Y
+					}), Y = s(), H = Object(F.y)(Y, {
+						listingKey: v
+					}), W = f && (!H || 0 === H.length), Q = Object(o.a)(x, n.U[N], {
+						t: g
+					}), z = Object(F.y)(Y, {
+						listingKey: Q
+					}), $ = O && (S || !z || 0 === z.length), X = S, J = m, Z = Object(F.F)(Y, {
+						postId: h
+					}), tt = !!Z && !!Z.media && (Object(U.H)(Z.media) || Object(U.F)(Z.media)) && !Z.media.altText;
+					if (!(W || $ || X || J || tt || D)) return;
+					W && e(C({
+						key: v
 					}));
-					const st = await ((t, e) => Object(E.a)(t, {
+					const et = await ((t, e) => Object(E.a)(t, {
 							...j,
 							variables: e
 						}))(r(), t),
-						nt = st.body,
-						rt = Object(k.a)(h),
-						ot = J && !!(null === (_ = null === (a = null === (i = nt.data) || void 0 === i ? void 0 : i.post) || void 0 === a ? void 0 : a.linked) || void 0 === _ ? void 0 : _.isEligible),
-						it = J && (rt || !ot);
-					A && (st.ok ? nt.data && nt.data.post && e(c({
-						postId: g,
-						isEligibleForQASchema: null !== (p = nt.data.post.isEligibleForQASchema) && void 0 !== p && p
-					})) : e(d())), Q && T({
+						st = et.body,
+						nt = Object(k.a)(A),
+						rt = X && !!(null === (_ = null === (a = null === (i = st.data) || void 0 === i ? void 0 : i.post) || void 0 === a ? void 0 : a.linked) || void 0 === _ ? void 0 : _.isEligible),
+						ot = X && (nt || !rt);
+					D && (et.ok ? st.data && st.data.post && e(c({
+						postId: h,
+						isEligibleForQASchema: null !== (p = st.data.post.isEligibleForQASchema) && void 0 !== p && p
+					})) : e(d())), W && T({
 						getState: s,
 						onFailure: t => e(I(t)),
 						onSuccess: t => e(L(t)),
-						postId: g,
-						response: st
-					}), (X && !J || it) && (st.ok ? nt.data && P({
+						postId: h,
+						response: et
+					}), ($ && !X || ot) && (et.ok ? st.data && P({
 						getState: s,
-						isLinkedPostsFallback: it,
+						isLinkedPostsFallback: ot,
 						onFailure: t => e(V(t)),
 						onSuccess: t => e(q(t)),
 						options: t,
-						postId: g,
-						subreddit: nt.data.subreddit
-					}) : e(V(st.error))), J && ot && !rt && st.ok && nt.data && R({
+						postId: h,
+						subreddit: st.data.subreddit
+					}) : e(V(et.error))), X && rt && !nt && et.ok && st.data && R({
 						getState: s,
 						onFailure: t => e(b(t)),
 						onSuccess: t => e(l(t)),
-						postId: g,
-						post: nt.data.post
-					}), Z && st.ok && M({
+						postId: h,
+						post: st.data.post
+					}), J && et.ok && M({
 						getState: s,
 						onFailure: t => e(K(t)),
 						onSuccess: t => e(B(t)),
-						postId: g,
-						post: nt.data.post
-					}), et && st.ok && nt.data && y({
+						postId: h,
+						post: st.data.post
+					}), tt && et.ok && st.data && y({
 						getState: s,
 						onFailure: t => e(G(t)),
 						onSuccess: t => e(w(t)),
-						postId: g,
-						post: nt.data.post
-					}), J && e(u({
-						postId: g,
-						isEligibleForLinkedPosts: ot
+						postId: h,
+						post: st.data.post
+					}), X && e(u({
+						postId: h,
+						isEligibleForLinkedPosts: rt
 					}))
 				}
 		},
@@ -2773,7 +2772,7 @@
 			t.exports = JSON.parse('{"id":"34405b6a52ad"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(t) {
-			t.exports = JSON.parse('{"id":"56a49e1cca48"}')
+			t.exports = JSON.parse('{"id":"278069b2d44c"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(t) {
 			t.exports = JSON.parse('{"id":"b4f6fa9fde8b"}')
@@ -2783,4 +2782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.ae95bafffb9528b9587d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost.2c7617ee4d28aebab2e6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.0559a1705116d01679d9.js
-// Retrieved at 7/15/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.231c78687f757448f7e2.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -167,8 +167,8 @@
 				J = n("./src/reddit/models/Toast/index.ts"),
 				$ = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
-				W = n("./src/reddit/selectors/platform.ts"),
-				H = n("./src/reddit/selectors/posts.ts"),
+				H = n("./src/reddit/selectors/platform.ts"),
+				W = n("./src/reddit/selectors/posts.ts"),
 				z = n("./src/reddit/selectors/user.ts"),
 				Q = n("./src/reddit/actions/comment/index.ts"),
 				X = n("./src/reddit/actions/comment/constants.ts");
@@ -197,7 +197,7 @@
 					gqlContext: i
 				}) => {
 					const m = d(),
-						u = Object(W.e)(m);
+						u = Object(H.e)(m);
 					let l = "";
 					if (u && (l = u.name), N.d.enableToxicityWarning(m)) {
 						if (!(await A(i(), l, s, r))) return void c(Object(a.i)(oe))
@@ -230,7 +230,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const r = Object(H.F)(f(), {
+						const r = Object(W.F)(f(), {
 							postId: e
 						});
 						u(Object(m.z)(r, O.a.CommentSubmitted))
@@ -259,7 +259,7 @@
 						draftKey: d,
 						formData: i,
 						editorMode: m
-					} = e, u = n(), l = Object(W.e)(u);
+					} = e, u = n(), l = Object(H.e)(u);
 					let b = "";
 					if (l && (b = l.name), N.d.enableToxicityWarning(u)) {
 						if (!(await A(s(), b, i, m))) return void t(Object(a.i)(oe))
@@ -619,7 +619,7 @@
 			})), n.d(t, "p", (function() {
 				return q
 			})), n.d(t, "d", (function() {
-				return W
+				return H
 			})), n.d(t, "a", (function() {
 				return z
 			})), n.d(t, "b", (function() {
@@ -790,7 +790,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, W = ({
+				}, H = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: n,
@@ -807,7 +807,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === n && s(d, !0), Object(l.d)()
-				}, H = Object(c.a)(g.r), z = e => t => t(H({
+				}, W = Object(c.a)(g.r), z = e => t => t(W({
 					draftKey: e
 				})), Q = Object(c.a)(g.a), X = Object(c.a)(g.E), Y = Object(c.a)(g.b), Z = Object(c.a)(g.u)
 		},
@@ -1543,8 +1543,8 @@
 				J = n("./src/reddit/helpers/routeKey/index.ts"),
 				$ = n("./src/reddit/models/ModQueue/index.ts"),
 				q = n("./src/reddit/models/PostDraft/index.ts"),
-				W = n("./src/reddit/models/RemovalReason/index.ts"),
-				H = n("./src/reddit/models/Toast/index.ts"),
+				H = n("./src/reddit/models/RemovalReason/index.ts"),
+				W = n("./src/reddit/models/Toast/index.ts"),
 				z = n("./src/reddit/selectors/comments.ts"),
 				Q = n("./src/reddit/selectors/platform.ts");
 			Object(r.a)({
@@ -1589,7 +1589,7 @@
 							subredditId: e,
 							reason: o
 						})), n(Object(D.f)({
-							kind: H.b.SuccessMod,
+							kind: W.b.SuccessMod,
 							text: s.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -1612,7 +1612,7 @@
 						subredditId: e,
 						reason: t
 					})), n(Object(D.f)({
-						kind: H.b.SuccessMod,
+						kind: W.b.SuccessMod,
 						text: s.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -1630,7 +1630,7 @@
 						subredditId: e,
 						reasonId: t
 					})), n(Object(D.f)({
-						kind: H.b.SuccessMod,
+						kind: W.b.SuccessMod,
 						text: s.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -1649,9 +1649,9 @@
 					const i = c(),
 						a = i.user.account && i.user.account.displayText,
 						m = e[0],
-						u = Object(G.a)(m) ? W.e.Post : W.e.Comment,
-						l = u === W.e.Post ? i.posts.models[m] : i.features.comments.models[m],
-						b = u === W.e.Post ? w.T : C.i;
+						u = Object(G.a)(m) ? H.e.Post : H.e.Comment,
+						l = u === H.e.Post ? i.posts.models[m] : i.features.comments.models[m],
+						b = u === H.e.Post ? w.T : C.i;
 					if (!l || !a) return !1;
 					o(fe()), o(b({
 						[m]: {
@@ -1675,9 +1675,9 @@
 									title: t.title,
 									type: s
 								},
-								c = await V(d(), Object(W.h)(r, u), u);
+								c = await V(d(), Object(H.h)(r, u), u);
 							if (c.ok) {
-								if (s === W.f.Public) {
+								if (s === H.f.Public) {
 									if (o(ve()), c.body) {
 										const e = Object(B.a)(c.body, a),
 											t = {
@@ -1690,7 +1690,7 @@
 										if (r || (r = Object(x.a)(e.postId, null, {
 												sort: I.t,
 												hasSortParam: !0
-											})), u === W.e.Post) {
+											})), u === H.e.Post) {
 											const n = Object(g.a)(q.c.replyToPost, m);
 											o(Object(A.o)({
 												...t,
@@ -1710,7 +1710,7 @@
 													isStickied: !1
 												}
 											}))
-										} else if (u === W.e.Comment) {
+										} else if (u === H.e.Comment) {
 											const e = Object(g.a)(q.c.replyToComment, l.id),
 												n = Object(z.j)(i, {
 													commentId: m,
@@ -1746,7 +1746,7 @@
 					if (!m) return;
 					c(fe());
 					const u = Object(D.f)({
-							kind: H.b.SuccessMod,
+							kind: W.b.SuccessMod,
 							text: s.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -1777,7 +1777,7 @@
 									title: t.title,
 									type: r
 								},
-								o = await V(i(), Object(W.h)(s, W.e.Bulk), W.e.Bulk);
+								o = await V(i(), Object(H.h)(s, H.e.Bulk), H.e.Bulk);
 							o.ok ? (c(he()), c(u)) : c(Re(o.error))
 						} else c(u)
 					} else c(je(b.error))
@@ -1976,7 +1976,7 @@
 								experimentName: o.B,
 								expEventOverride: t
 							});
-							return !!(Object(o.Zd)(n) ? void 0 : n)
+							return !!(Object(o.Xd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2888,9 +2888,9 @@
 			})), n.d(t, "f", (function() {
 				return q
 			})), n.d(t, "i", (function() {
-				return W
-			})), n.d(t, "G", (function() {
 				return H
+			})), n.d(t, "G", (function() {
+				return W
 			})), n.d(t, "C", (function() {
 				return z
 			})), n.d(t, "I", (function() {
@@ -3098,10 +3098,10 @@
 					const n = e.features.comments.drafts[t];
 					return !!n && n.autofocusDisabled
 				},
-				W = (e, {
+				H = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				H = (e, {
+				W = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
@@ -3153,14 +3153,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Wc
-					}) === s.gd.Enabled
+						experimentName: s.Uc
+					}) === s.ed.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Vc
-					}) === s.fd.Enabled
+						experimentName: s.Tc
+					}) === s.dd.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -3246,4 +3246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.0559a1705116d01679d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.231c78687f757448f7e2.js.map

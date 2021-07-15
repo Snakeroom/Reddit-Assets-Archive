@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f2435962cf441f5a7678.js
-// Retrieved at 7/14/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.a1ec37e0810faff5e9b5.js
+// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1673,18 +1673,18 @@
 						f: s,
 						t: r
 					} = e, o = [];
-					if (!s) return V(0, r, t);
+					if (!s) return J(0, r, t);
 					const a = Object(n.a)(r);
 					let i = 0,
 						c = 0;
 					const d = s.length;
 					for (; i < d; i++) {
 						const [e, t, n] = s[i], d = t + n, l = a[t], u = a[d] - l;
-						l > c && o.push(V(0, r.substr(c, l - c), `between${i}`)), o.push(V(e, r.substr(l, u), i)), c = l + u
+						l > c && o.push(J(0, r.substr(c, l - c), `between${i}`)), o.push(J(e, r.substr(l, u), i)), c = l + u
 					}
-					return c < r.length && o.push(V(0, r.substr(c), `remaining${i}`)), o
+					return c < r.length && o.push(J(0, r.substr(c), `remaining${i}`)), o
 				},
-				J = {
+				V = {
 					[h.j.monospace]: c.h,
 					[h.j.bold]: c.b,
 					[h.j.italic]: c.f,
@@ -1693,9 +1693,9 @@
 					[h.j.subscript]: c.l,
 					[h.j.superscript]: c.m
 				},
-				V = (e, t, s) => {
+				J = (e, t, s) => {
 					let n = t;
-					return n = o()(J, (t, n, r) => e & parseInt(r, 10) ? i.a.createElement(n, {
+					return n = o()(V, (t, n, r) => e & parseInt(r, 10) ? i.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -1901,12 +1901,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Jd.SmIcon:
+						case b.Hd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Jd.SmIconHc:
+						case b.Hd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2299,12 +2299,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Bd
+						experimentName: n.zd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Jd.SmIcon || t === n.Jd.SmIconHc
+					return t === n.Hd.SmIcon || t === n.Hd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2327,4 +2327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.f2435962cf441f5a7678.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.a1ec37e0810faff5e9b5.js.map
