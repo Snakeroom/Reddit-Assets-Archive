@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.56d57f64245b9361a996.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.852a41bd17b38b771f94.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -250,9 +250,9 @@
 			})), n.d(t, "d", (function() {
 				return v
 			})), n.d(t, "e", (function() {
-				return A
-			})), n.d(t, "c", (function() {
 				return P
+			})), n.d(t, "c", (function() {
+				return A
 			})), n.d(t, "f", (function() {
 				return I
 			}));
@@ -346,7 +346,7 @@
 						placement: r.placement
 					})), n(Object(O.d)(p.c.MyBadges)))
 				}
-			}, A = e => async (t, n, {
+			}, P = e => async (t, n, {
 				apiContext: r
 			}) => {
 				const i = n().user.account,
@@ -367,7 +367,7 @@
 						products: d
 					}))
 				}
-			}, P = (e, t, n) => async (r, s, {
+			}, A = (e, t, n) => async (r, s, {
 				apiContext: o
 			}) => {
 				if (await r(N(e, !0)), n && t) {
@@ -725,15 +725,15 @@
 				})))
 			}
 			var v = n("./src/reddit/pages/meta/MembershipPaywallPage/WhatDoYouGet/CommentThread/Footer/index.tsx"),
-				A = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
-				P = n.n(A);
+				P = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Jumper/index.m.less"),
+				A = n.n(P);
 			const I = [0, 500];
 
 			function w(e) {
 				return s.a.createElement("div", {
-					className: Object(d.a)(P.a.container, e.className)
+					className: Object(d.a)(A.a.container, e.className)
 				}, s.a.createElement(v.a, {
-					className: P.a.assets,
+					className: A.a.assets,
 					scrollRange: I,
 					subreddit: e.subreddit
 				}))
@@ -909,7 +909,7 @@
 						const n = e.user.account,
 							r = Object(p.q)(e, t);
 						if (!n) return !1;
-						if (Object(p.O)(e, t) !== m.g.Large) return !1;
+						if (Object(p.P)(e, t) !== m.g.Large) return !1;
 						if (r) {
 							const t = Object(h.f)(e, r.id)[g.a.Achievement];
 							if (t && t.type === H) return !1
@@ -2082,9 +2082,9 @@
 			})), n.d(t, "n", (function() {
 				return v
 			})), n.d(t, "e", (function() {
-				return A
-			})), n.d(t, "d", (function() {
 				return P
+			})), n.d(t, "d", (function() {
+				return A
 			})), n.d(t, "j", (function() {
 				return I
 			})), n.d(t, "p", (function() {
@@ -2216,12 +2216,12 @@
 				return f
 			}
 
-			function A(e, t) {
+			function P(e, t) {
 				const n = v(e, t, i.a.Loyalty).find(e => "membership" === e.id);
 				return n ? [].concat(n.locked, n.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : f
 			}
 
-			function P(e, t) {
+			function A(e, t) {
 				const n = e.economics.subredditPremium[t];
 				if (n && n.status === l.a.Fetched) {
 					const e = n.data.collections[i.a.Cosmetic];
@@ -2374,4 +2374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.56d57f64245b9361a996.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.852a41bd17b38b771f94.js.map

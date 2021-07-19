@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aa54bb862e21cf230436.js
-// Retrieved at 7/19/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e10251decd5281278b05.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1977,7 +1977,7 @@
 			}
 			const ne = () => Object(i.c)({
 					crosspost: X.d,
-					flairStyleTemplate: I.S,
+					flairStyleTemplate: I.T,
 					isActive: X.j,
 					isCurrentUserProfilePost: X.k,
 					isPostChainDismissed: z.c,
@@ -2654,7 +2654,7 @@
 					}) => Object(T.p)(e, {
 						postId: t.id
 					}),
-					modModeEnabled: b.Q
+					modModeEnabled: b.R
 				}),
 				H = Object(i.b)(V, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -3827,4 +3827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aa54bb862e21cf230436.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e10251decd5281278b05.js.map

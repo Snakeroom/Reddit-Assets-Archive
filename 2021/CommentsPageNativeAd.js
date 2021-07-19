@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.34c3a5dac9ed2fef740f.js
-// Retrieved at 7/19/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.0e760480618e0e4c222d.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -33,7 +33,7 @@
 		"./src/reddit/components/CommentsPageNativeAd/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SearchResultsCommentsPageNativeAd", (function() {
-				return J
+				return Q
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -60,11 +60,11 @@
 				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				P = s("./src/reddit/components/AuthorLink/index.tsx"),
 				N = s("./src/reddit/components/SponsoredLabel/index.tsx"),
-				S = s("./src/reddit/components/UserIcon/index.tsx"),
-				_ = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				_ = s("./src/reddit/components/UserIcon/index.tsx"),
+				S = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				w = s("./src/reddit/components/CommentsPageNativeAd/index.m.less"),
 				A = s.n(w);
-			var L = e => a.a.createElement(o.Fragment, null, a.a.createElement(S.a, {
+			var L = e => a.a.createElement(o.Fragment, null, a.a.createElement(_.a, {
 					iconUrl: e.iconUrl,
 					isNSFW: !1,
 					userName: e.author,
@@ -74,7 +74,7 @@
 					className: A.a.authorLink,
 					"data-click-id": "user",
 					author: e.author
-				}, `u/${e.author}`), a.a.createElement(_.a, {
+				}, `u/${e.author}`), a.a.createElement(S.a, {
 					isSmall: !0,
 					className: A.a.metaSeparator
 				}), a.a.createElement(N.a, {
@@ -279,9 +279,9 @@
 					}))
 				}
 			}
-			const Q = Object(l.a)(Z),
-				J = Object(D.a)(Q);
-			t.default = Object(F.a)(G(Q))
+			const J = Object(l.a)(Z),
+				Q = Object(D.a)(J);
+			t.default = Object(F.a)(G(J))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -359,14 +359,14 @@
 					isLoggedIn: g.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: u.k,
-					modModeEnabled: d.Q,
+					modModeEnabled: d.R,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: x.a,
 					showMedia: d.r,
-					flairStyleTemplate: d.S
+					flairStyleTemplate: d.T
 				},
 				v = (e, {
 					postId: t
@@ -398,7 +398,7 @@
 				c = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				d = s("./src/reddit/connectors/ClassicPost/index.tsx");
 			const l = Object(c.t)({
-					searchQuery: c.W
+					searchQuery: c.X
 				}),
 				m = new i.a(250),
 				p = e => {
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.34c3a5dac9ed2fef740f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.0e760480618e0e4c222d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.92af1e0fc5113852e995.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BadgePurchaseModal.f659d892b3cc8df8879e.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BadgePurchaseModal"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, r) {
@@ -751,7 +751,7 @@
 			};
 
 			function i() {
-				const e = Object(s.ab)(),
+				const e = Object(s.bb)(),
 					t = Object(n.e)(t => Object(s.q)(t, {
 						pageLayer: e
 					})),
@@ -852,4 +852,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.92af1e0fc5113852e995.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BadgePurchaseModal.f659d892b3cc8df8879e.js.map

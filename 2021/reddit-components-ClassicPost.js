@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6795cceac5152b88b7e6.js
-// Retrieved at 7/19/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.31826e8ba45cb16fd2bc.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -841,11 +841,11 @@
 				return e.split("-")[0]
 			}
 
-			function W(e) {
+			function V(e) {
 				return e.split("-")[1]
 			}
 
-			function V(e) {
+			function W(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
@@ -854,7 +854,7 @@
 					r = e.element,
 					s = e.placement,
 					o = s ? Y(s) : null,
-					i = s ? W(s) : null,
+					i = s ? V(s) : null,
 					a = n.x + n.width / 2 - r.width / 2,
 					c = n.y + n.height / 2 - r.height / 2;
 				switch (o) {
@@ -888,7 +888,7 @@
 							y: n.y
 						}
 				}
-				var d = o ? V(o) : null;
+				var d = o ? W(o) : null;
 				if (null != d) {
 					var l = "y" === d ? "height" : "width";
 					switch (i) {
@@ -1296,9 +1296,9 @@
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
 												d = void 0 === c ? L : c,
-												l = W(r),
+												l = V(r),
 												u = (l ? a ? A : A.filter((function(e) {
-													return W(e) === l
+													return V(e) === l
 												})) : C).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -1323,7 +1323,7 @@
 									}), []), O = t.rects.reference, k = t.rects.popper, w = new Map, I = !0, P = x[0], N = 0; N < x.length; N++) {
 									var R = x[N],
 										D = Y(R),
-										M = W(R) === j,
+										M = V(R) === j,
 										F = [v, S].indexOf(D) >= 0,
 										U = F ? "width" : "height",
 										B = re(t, {
@@ -1333,11 +1333,11 @@
 											altBoundary: p,
 											padding: d
 										}),
-										V = F ? M ? y : g : M ? S : v;
-									O[U] > k[U] && (V = X(V));
-									var G = X(V),
+										W = F ? M ? y : g : M ? S : v;
+									O[U] > k[U] && (W = X(W));
+									var G = X(W),
 										H = [];
-									if (o && H.push(B[D] <= 0), a && H.push(B[V] <= 0, B[G] <= 0), H.every((function(e) {
+									if (o && H.push(B[D] <= 0), a && H.push(B[W] <= 0, B[G] <= 0), H.every((function(e) {
 											return e
 										}))) {
 										P = R, I = !1;
@@ -1391,9 +1391,9 @@
 									altBoundary: l
 								}),
 								_ = Y(t.placement),
-								x = W(t.placement),
+								x = V(t.placement),
 								T = !x,
-								C = V(_),
+								C = W(_),
 								k = "x" === C ? "y" : "x",
 								w = t.modifiersData.popperOffsets,
 								I = t.rects.reference,
@@ -1461,7 +1461,7 @@
 								s = n.elements.arrow,
 								o = n.modifiersData.popperOffsets,
 								i = Y(n.placement),
-								a = V(i),
+								a = W(i),
 								c = [g, y].indexOf(i) >= 0 ? "height" : "width";
 							if (s && o) {
 								var d = n.modifiersData[r + "#persistent"].padding,
@@ -2652,8 +2652,8 @@
 				B = n("./src/reddit/components/ClassicPost/index.m.less"),
 				Y = n.n(B);
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2661,7 +2661,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = Object(a.a)(e => {
+			const W = Object(a.a)(e => {
 					const {
 						className: t,
 						crosspost: n,
@@ -2671,7 +2671,7 @@
 						inSubredditOrProfile: P,
 						eventFactory: F,
 						first: B,
-						flairStyleTemplate: V,
+						flairStyleTemplate: W,
 						formatTitle: G,
 						hostPostData: H,
 						isCheckboxSelected: z,
@@ -2707,7 +2707,7 @@
 					Object(r.useEffect)(() => {
 						ae && ve !== I && ae(de.id)
 					}, [I, ae, de.id, ve]);
-					const Se = ue ? void 0 : V,
+					const Se = ue ? void 0 : W,
 						ye = n || void 0,
 						ge = Object(L.a)(ne),
 						Te = Object(N.a)(ne),
@@ -2795,7 +2795,7 @@
 							isSponsored: de.isSponsored,
 							postId: de.id,
 							source: de.source
-						}, Object(c.a)(de))), s.a.createElement(O.a, W({
+						}, Object(c.a)(de))), s.a.createElement(O.a, V({
 							key: "PostMeta"
 						}, Ne)), re && ge && Object(E.c)(de) && s.a.createElement(h.a, {
 							onIgnoreReports: oe,
@@ -2847,8 +2847,8 @@
 						})), s.a.createElement(b.d, null))), Object(R.a)(de, Y.a, pe, I, xe, K)));
 					return s.a.createElement(T.b, null, Re)
 				}),
-				G = Object(P.b)(Object(I.a)(V));
-			t.default = Object(w.a)(V)
+				G = Object(P.b)(Object(I.a)(W));
+			t.default = Object(w.a)(W)
 		},
 		"./src/reddit/components/CompactPost/HorizontalVotes/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3919,8 +3919,8 @@
 				U = n("./src/reddit/hooks/useClickSourceData.ts"),
 				B = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				Y = n("./src/reddit/hooks/usePostContext.ts"),
-				W = n("./src/reddit/hooks/useTheme.ts"),
-				V = n("./src/telemetry/models/Outbound.ts");
+				V = n("./src/reddit/hooks/useTheme.ts"),
+				W = n("./src/telemetry/models/Outbound.ts");
 
 			function G() {
 				return (G = Object.assign || function(e) {
@@ -3942,7 +3942,7 @@
 					className: i,
 					redditStyle: a
 				}) => {
-					const c = Object(W.a)();
+					const c = Object(V.a)();
 					let d = "";
 					switch (e) {
 						case N.ExtraLarge:
@@ -4077,7 +4077,7 @@
 						post: n
 					} = e, {
 						isSponsored: r
-					} = n, s = e.isCommentsPage ? V.SourceElement.PostLink : V.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== N.Large && !n.isSponsored && !(n.media && Object(S.G)(n.media)) && (n.source || n.media && (n.media.type === S.o.GIFVIDEO || n.media.type === S.o.IMAGE || n.media.type === S.o.EMBED));
+					} = n, s = e.isCommentsPage ? W.SourceElement.PostLink : W.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== N.Large && !n.isSponsored && !(n.media && Object(S.G)(n.media)) && (n.source || n.media && (n.media.type === S.o.GIFVIDEO || n.media.type === S.o.IMAGE || n.media.type === S.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (i) return o.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
@@ -4152,7 +4152,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(m.ab)(),
+				const t = Object(m.bb)(),
 					n = Object(m.v)(t),
 					r = Object(Y.a)(),
 					s = Object(i.e)(s => X(s, {
@@ -4161,7 +4161,7 @@
 						isCommentPermalink: n,
 						pageLayer: t
 					})),
-					a = Object(W.a)(),
+					a = Object(V.a)(),
 					c = Object(u.b)();
 				return o.a.createElement(K, G({
 					pageLayer: t,
@@ -4205,14 +4205,14 @@
 					isLoggedIn: E.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: m.k,
-					modModeEnabled: d.Q,
+					modModeEnabled: d.R,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
 						return n ? e.polls.models[n] : null
 					},
 					showEditFlair: f.a,
 					showMedia: d.r,
-					flairStyleTemplate: d.S
+					flairStyleTemplate: d.T
 				},
 				x = (e, {
 					postId: t
@@ -4244,7 +4244,7 @@
 				c = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				d = n("./src/reddit/connectors/ClassicPost/index.tsx");
 			const l = Object(c.t)({
-					searchQuery: c.W
+					searchQuery: c.X
 				}),
 				u = new a.a(250),
 				p = e => {
@@ -4969,4 +4969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6795cceac5152b88b7e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.31826e8ba45cb16fd2bc.js.map

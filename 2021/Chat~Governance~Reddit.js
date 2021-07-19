@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b4ff1a75a551b16d63c2.js
-// Retrieved at 7/19/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.681c102644aa8dd3aac2.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2416,11 +2416,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("139624"),
+				buildNumber: r("139625"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1626708890"),
+				})("1626709984"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4921,14 +4921,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ce32b367d006dff88e70ae3b34e865765c70ae636-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c04184a756230ab3816718973e2a9c932e8d6aa26-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e32b367d006dff88e70ae3b34e865765c70ae636-production",
+						release: "04184a756230ab3816718973e2a9c932e8d6aa26-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -5422,7 +5422,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "e32b367d006dff88e70ae3b34e865765c70ae636-production",
+						releaseClient: "04184a756230ab3816718973e2a9c932e8d6aa26-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -10666,7 +10666,7 @@
 					...i,
 					recentPostIds: T.posts.recent
 				};
-				x.layout = ee.e[Object(te.O)(T, {})], t === X.c.Popular && (x.forceGeopopular = !0), o(Re({
+				x.layout = ee.e[Object(te.P)(T, {})], t === X.c.Popular && (x.forceGeopopular = !0), o(Re({
 					key: e
 				}));
 				const N = Object(ge.b)(T);
@@ -14231,7 +14231,7 @@
 							after: f.token,
 							dist: f.dist,
 							forceGeopopular: a === b.c.Popular,
-							layout: w.e[Object(y.O)(_, {})],
+							layout: w.e[Object(y.P)(_, {})],
 							sort: S,
 							t: u,
 							...s()(m, [...g.l, g.h])
@@ -19412,7 +19412,7 @@
 				return o
 			})), i.d(t, "t", (function() {
 				return a
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "bb", (function() {
 				return c
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -19519,6 +19519,8 @@
 				return s.Y
 			})), i.d(t, "Z", (function() {
 				return s.Z
+			})), i.d(t, "ab", (function() {
+				return s.ab
 			}));
 			const o = r.a.createContext(null);
 
@@ -19560,9 +19562,9 @@
 				return L
 			})), i.d(t, "E", (function() {
 				return U
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "O", (function() {
 				return M
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "Q", (function() {
 				return G
 			})), i.d(t, "x", (function() {
 				return q
@@ -19570,7 +19572,7 @@
 				return V
 			})), i.d(t, "A", (function() {
 				return H
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "W", (function() {
 				return W
 			})), i.d(t, "w", (function() {
 				return $
@@ -19624,40 +19626,42 @@
 				return be
 			})), i.d(t, "h", (function() {
 				return ge
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "S", (function() {
 				return we
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "U", (function() {
 				return ye
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "X", (function() {
 				return ve
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "ab", (function() {
 				return Ee
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "P", (function() {
 				return Se
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "R", (function() {
 				return Te
 			})), i.d(t, "s", (function() {
 				return Oe
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "T", (function() {
 				return Ie
 			})), i.d(t, "b", (function() {
 				return je
 			})), i.d(t, "u", (function() {
 				return Re
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "V", (function() {
 				return Fe
 			})), i.d(t, "g", (function() {
 				return Ce
 			})), i.d(t, "m", (function() {
 				return xe
-			})), i.d(t, "Y", (function() {
+			})), i.d(t, "Z", (function() {
 				return Ne
 			})), i.d(t, "e", (function() {
 				return De
 			})), i.d(t, "L", (function() {
 				return Ae
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "Y", (function() {
 				return Pe
+			})), i.d(t, "N", (function() {
+				return ke
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/isEmpty.js"),
@@ -19795,7 +19799,10 @@
 				$ = e => !(!e || !e.meta || e.meta.name !== o.Jb.COMMENTS),
 				z = e => !!(e && e.meta && e.meta.name === o.Jb.COMMENTS && e.urlParams.partialCommentId),
 				K = e => !(!e || !e.meta || e.meta.name !== o.Jb.SEARCH_RESULTS || e.urlParams.subredditName),
-				J = e => !!(e && e.meta && e.meta.name === o.Jb.SEARCH_RESULTS && e.urlParams.subredditName),
+				J = e => {
+					var t;
+					return Boolean((null === (t = null == e ? void 0 : e.meta) || void 0 === t ? void 0 : t.name) === o.Jb.SEARCH_RESULTS && e.urlParams.subredditName)
+				},
 				Q = e => !(!e || !e.meta || e.meta.name !== o.Jb.COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE),
 				Y = e => !(!e || !e.meta || e.meta.name !== o.Jb.POST_CREATION),
 				X = e => !(!e || !e.meta || e.meta.name !== o.Jb.POST_DRAFT),
@@ -20078,7 +20085,15 @@
 				}) => J(t), R.a, ae, A.g, (e, t, i, n) => {
 					const r = e || t && Boolean(i);
 					return Boolean(r && n)
-				})(e, t)
+				})(e, t),
+				ke = (e, t) => Object(s.a)((e, {
+					pageLayer: t
+				}) => J(t), (e, {
+					pageLayer: t
+				}) => (e => {
+					var t;
+					return Boolean((null === (t = null == e ? void 0 : e.meta) || void 0 === t ? void 0 : t.name) === o.Jb.SUBREDDIT && e.urlParams.subredditName)
+				})(t), (e, t) => e || t)(e, t)
 		},
 		"./src/reddit/endpoints/category/subreddits.ts": function(e, t, i) {
 			"use strict";
@@ -42218,7 +42233,7 @@
 					return null
 				},
 				at = (e, t) => {
-					const i = Object(B.O)(e, {});
+					const i = Object(B.P)(e, {});
 					let n;
 					Object(oe.f)(e) && (n = Object(oe.h)(e) ? "lightbox" : "post_detail");
 					let r = "default";
@@ -47627,4 +47642,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b4ff1a75a551b16d63c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.681c102644aa8dd3aac2.js.map

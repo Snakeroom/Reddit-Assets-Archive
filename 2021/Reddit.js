@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.b0b4c7c1d6c4988c2100.js
-// Retrieved at 7/19/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.61cdd0a0f5d2c079ad81.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3827,7 +3827,7 @@
 					pageLayer: t
 				}) => {
 					const n = !!e.user.account,
-						s = Object(zt.V)(t);
+						s = Object(zt.W)(t);
 					switch (s) {
 						case "index":
 						case "listing":
@@ -3916,7 +3916,7 @@
 								type: is.Settings, model: r
 							}
 					}
-					const o = Object(zt.P)(e, {
+					const o = Object(zt.Q)(e, {
 						pageLayer: t
 					});
 					if ("all" === o) return {
@@ -5510,7 +5510,7 @@
 					}))
 				}),
 				Io = Object(zt.t)({
-					searchQuery: zt.W,
+					searchQuery: zt.X,
 					pageLayer: e => e
 				}),
 				No = ({
@@ -5545,11 +5545,11 @@
 					isInUISimplificationI18NExperiment: mo.a,
 					isLoggedIn: yt.J,
 					isSubredditSearchEnabled: bo.g,
-					isWithinCommunitySearchEnabled: po.a,
+					isWithinCommunitySearchEnabled: (e, t) => Object(zt.N)(e, t) && Object(po.a)(e),
 					multireddit: zt.d,
 					nightmode: yt.V,
 					routeName: Lt.p,
-					shouldSearchSubreddit: zt.X,
+					shouldSearchSubreddit: (e, t) => Object(zt.N)(e, t) && Object(zt.Y)(e, t),
 					subreddit: zt.q,
 					trendingItems: ho.a,
 					typeaheadSuggestions: bo.m
@@ -5746,7 +5746,7 @@
 								searchQuery: s,
 								selectedItem: n
 							})
-						} else e.key === gr.b.Backspace && !this.state.searchQuery && this.props.isSubredditSearchEnabled && (this.props.sendEvent(() => Object(oo.d)(this.props.subreddit)), this.props.setSubredditSearchDisabled())
+						} else e.key === gr.b.Backspace && !this.state.searchQuery && this.props.isWithinCommunitySearchEnabled && this.props.shouldSearchSubreddit && this.props.isSubredditSearchEnabled && (this.props.sendEvent(() => Object(oo.d)(this.props.subreddit)), this.props.setSubredditSearchDisabled())
 					}, this.toggleDropdownAndGetTrending = () => {
 						if (!this.props.trendingItems.length && this.props.isInTrendingExperiment && this.makeTrendingApiRequest(), this.props.currentUser) {
 							const e = Object(Bt.J)(this.props.currentUser.id);
@@ -6347,7 +6347,7 @@
 				var n;
 				const s = Object(p.d)(),
 					o = Object(qo.a)(),
-					a = Object(zt.ab)(),
+					a = Object(zt.bb)(),
 					i = Object(p.e)(e => e.user.account),
 					c = Object(p.e)(bs.c),
 					d = Object(p.e)(Ni.c),
@@ -13323,7 +13323,7 @@
 				d = n("./src/reddit/selectors/user.ts");
 
 			function l(e) {
-				return Object(i.O)(e, {}) === o.g.Large && !Object(d.I)(e) && !Object(c.d)(e)
+				return Object(i.P)(e, {}) === o.g.Large && !Object(d.I)(e) && !Object(c.d)(e)
 			}
 
 			function u(e) {
@@ -15817,7 +15817,7 @@
 			const b = Object(d.t)(),
 				h = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.O)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.P)(e, t)
 				}),
 				g = Object(o.b)(h),
 				f = ({
@@ -18392,4 +18392,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.b0b4c7c1d6c4988c2100.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.61cdd0a0f5d2c079ad81.js.map

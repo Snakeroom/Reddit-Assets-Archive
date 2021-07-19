@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.ef27109bfdac359d39d9.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.28f03c914fb2661a092f.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, r) {
@@ -1556,7 +1556,7 @@
 			};
 
 			function d() {
-				const e = Object(o.ab)(),
+				const e = Object(o.bb)(),
 					t = Object(n.e)(t => Object(o.q)(t, {
 						pageLayer: e
 					})),
@@ -1574,4 +1574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.ef27109bfdac359d39d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.28f03c914fb2661a092f.js.map

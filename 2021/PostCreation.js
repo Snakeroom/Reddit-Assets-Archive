@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3108fc6155ea78153b62.js
-// Retrieved at 7/15/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f9eeb0f98abcebcd2a95.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8307,7 +8307,7 @@
 				}
 			}
 			t.c = s.a.memo((function(e) {
-				const t = Object(m.ab)(),
+				const t = Object(m.bb)(),
 					n = Object(m.v)(t),
 					o = Object(K.a)(),
 					r = Object(i.e)(r => Q(r, {
@@ -22200,7 +22200,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.ab
+			t.a = o.bb
 		},
 		"./src/reddit/hooks/usePrevious.ts": function(e, t, n) {
 			"use strict";
@@ -23348,7 +23348,7 @@
 			const h = Object(d.t)(),
 				b = Object(i.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.O)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.P)(e, t)
 				}),
 				f = Object(s.b)(b),
 				g = ({
@@ -28464,7 +28464,7 @@
 					draftId: v.u,
 					isPostCreationPage: v.D,
 					pageLayer: e => e,
-					sourcePostId: e => Object(v.U)(e).source_id
+					sourcePostId: e => Object(v.V)(e).source_id
 				}),
 				uu = Object(i.c)({
 					submissionType: S.a,
@@ -28473,7 +28473,7 @@
 					discardGoesBack: (e, {
 						pageLayer: t
 					}) => {
-						const n = Object(v.R)(e, {
+						const n = Object(v.S)(e, {
 							pageLayer: t
 						});
 						return !!n && "/" === n[0]
@@ -29398,7 +29398,7 @@
 			};
 
 			function d() {
-				const e = Object(r.ab)(),
+				const e = Object(r.bb)(),
 					t = Object(o.e)(t => Object(r.q)(t, {
 						pageLayer: e
 					})),
@@ -30155,4 +30155,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3108fc6155ea78153b62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f9eeb0f98abcebcd2a95.js.map

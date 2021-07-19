@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.91a9ae3c4853d365bc10.js
-// Retrieved at 7/19/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.4f6d2cf4ece0cda6d0e2.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -391,7 +391,7 @@
 			}));
 			const Y = c.a.img("SubredditIcon", T.a),
 				Z = c.a.wrapped(q, "DefaultIcon", T.a);
-			var Q = ({
+			var X = ({
 					subredditName: e,
 					shouldShowSubredditIcon: t,
 					subredditIcon: s,
@@ -435,13 +435,13 @@
 						hk: "3bTewe"
 					})))
 				},
-				X = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx");
+				Q = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx");
 			var $ = ({
 					arrowProps: e,
 					popperProps: t,
 					visible: s,
 					subredditName: n
-				}) => i.a.createElement(X.a, {
+				}) => i.a.createElement(Q.a, {
 					arrowProps: e,
 					popperProps: t,
 					visible: s
@@ -560,7 +560,7 @@
 						visible: u.visible,
 						tooltipId: I,
 						className: T.a.popupTooltip
-					}, i.a.createElement(Q, {
+					}, i.a.createElement(X, {
 						subredditName: e.subredditName,
 						subredditIcon: e.subredditIcon,
 						shouldShowSubredditIcon: e.shouldShowSubredditIcon,
@@ -4034,13 +4034,13 @@
 					}))))
 				}
 			}
-			var Q = Object(d.b)(Y, e => ({
+			var X = Object(d.b)(Y, e => ({
 					openLightbox: t => e(Object(I.a)(t.permalink))
 				}), null, {
 					forwardRef: !0
 				})(Z),
-				X = s("./src/reddit/components/SidebarPostList/index.m.less"),
-				$ = s.n(X);
+				Q = s("./src/reddit/components/SidebarPostList/index.m.less"),
+				$ = s.n(Q);
 			const {
 				fbt: ee
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(R.L, e => e.filter(e => !e.isSponsored)), ie = Object(c.c)({
@@ -4079,7 +4079,7 @@
 							key: e.id,
 							onPostVisible: n,
 							postId: e.id
-						}, a.a.createElement(Q, {
+						}, a.a.createElement(X, {
 							className: Object(N.a)($.a.smallPost, r),
 							containerOnClick: s,
 							postId: e.id,
@@ -4417,14 +4417,14 @@
 				}) => ({
 					toggleCloseMenuModal: () => e(Object(ye.i)(Je))
 				}))(Object(ae.c)(Ye)),
-				Qe = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
-				Xe = s("./src/reddit/constants/tracking.ts"),
+				Xe = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
+				Qe = s("./src/reddit/constants/tracking.ts"),
 				$e = s("./src/reddit/selectors/seo/linksModule.ts"),
 				et = s("./src/reddit/selectors/telemetry.ts"),
 				tt = s("./src/telemetry/models/Subreddit.ts");
 			const st = e => t => ({
 					...et.defaults(t),
-					action: Xe.c.CLICK,
+					action: Qe.c.CLICK,
 					noun: "link",
 					source: "subreddit_subreddit_link",
 					subreddit: {
@@ -4434,7 +4434,7 @@
 				}),
 				nt = e => t => s => ({
 					...et.defaults(s),
-					action: Xe.c.CLICK,
+					action: Qe.c.CLICK,
 					noun: Object(tt.getSubscribeEventNoun)(e.type, t),
 					source: "subreddit_subreddit_link",
 					subreddit: {
@@ -4447,7 +4447,7 @@
 				});
 			var rt = Object(d.b)(it)(e => {
 					const t = Object(ae.b)();
-					return e.communities && e.communities.length ? a.a.createElement(C.a, null, a.a.createElement(Qe.b, {
+					return e.communities && e.communities.length ? a.a.createElement(C.a, null, a.a.createElement(Xe.b, {
 						className: e.className,
 						communities: e.communities,
 						getClickEventFactory: st,
@@ -5356,7 +5356,7 @@
 				isRevertConfirmationModalOpen: Object(_.b)("wiki-revert-confirmation"),
 				listingInfo: O.p
 			});
-			class Q extends r.a.Component {
+			class X extends r.a.Component {
 				constructor() {
 					super(...arguments), this.containerRef = r.a.createRef(), this.state = {
 						selectedRevisions: []
@@ -5528,7 +5528,7 @@
 					}))
 				}
 			}
-			const X = Object(o.b)(Z, (e, t) => ({
+			const Q = Object(o.b)(Z, (e, t) => ({
 				toggleRevetConfirmationModal: () => e(Object(c.i)("wiki-revert-confirmation")),
 				onRevertToRevision: t => e(Object(l.a)(t)),
 				onLoadMoreRevisions: () => e(Object(l.c)({
@@ -5537,7 +5537,7 @@
 					canShowFailToast: !0,
 					isRecent: !!t.isRecentRevisionsMode
 				}))
-			}))(Object(p.c)(Q));
+			}))(Object(p.c)(X));
 
 			function $(e) {
 				const t = !!e.isRecentRevisionsMode,
@@ -5545,7 +5545,7 @@
 						...e,
 						isRecent: t
 					});
-				return r.a.createElement(X, Y({
+				return r.a.createElement(Q, Y({
 					key: s,
 					listingKey: s
 				}, e))
@@ -6091,8 +6091,8 @@
 				q = s("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
 				Y = s.n(q);
 			const Z = "Discard-wiki-page-changes",
-				Q = "Add-wiki-revision-reason",
-				X = 2,
+				X = "Add-wiki-revision-reason",
+				Q = 2,
 				$ = (e, t, s) => {
 					const i = t.status,
 						r = {
@@ -6121,7 +6121,7 @@
 				},
 				ee = Object(a.c)({
 					allowNavigationCallback: F.a,
-					isRevisionReasonModalOpen: Object(W.b)(Q),
+					isRevisionReasonModalOpen: Object(W.b)(X),
 					isSaveBeforeLeaveModalOpen: Object(W.b)(Z),
 					wikiPage: D.c
 				}),
@@ -6220,7 +6220,7 @@
 					}, this.onCancelAddingRevisionReason = () => {
 						this.finishPendingNavTransition(!1), this.props.closeAllModals()
 					}, this.showRevisionReasonModal = () => {
-						this.props.isRevisionReasonModalOpen || this.props.toggleModal(Q)
+						this.props.isRevisionReasonModalOpen || this.props.toggleModal(X)
 					}, this.onCancel = () => {
 						this.props.onFinishWikiEdit(!0)
 					}, this.onTextChange = e => {
@@ -6274,7 +6274,7 @@
 								hk: "4qKJob"
 							})
 						}) : r.a.createElement(P.a, {
-							paragraphsCount: X
+							paragraphsCount: Q
 						})), s && r.a.createElement(K, {
 							withOverlay: !0,
 							onCancel: this.onCancelAddingRevisionReason,
@@ -6815,11 +6815,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: c.S,
+				flairStyleTemplate: c.T,
 				hideNSFWPref: b.B,
 				isActive: p.j,
 				moderatorPermissions: m.k,
-				modModeEnabled: c.Q,
+				modModeEnabled: c.R,
 				showEditFlair: u.a
 			}), (e, {
 				postId: t
@@ -7610,7 +7610,7 @@
 					contentGateInfo: (e, {
 						match: t
 					}) => Object(W.e)(e, t.params.subredditName),
-					layout: E.O,
+					layout: E.P,
 					over18Pref: W.cb,
 					subreddit: (e, {
 						match: t
@@ -7731,4 +7731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.91a9ae3c4853d365bc10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.4f6d2cf4ece0cda6d0e2.js.map

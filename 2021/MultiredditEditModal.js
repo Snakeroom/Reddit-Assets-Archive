@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.337867a38bf5b3e83975.js
-// Retrieved at 7/15/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.30f96ea33ba4d09bba4b.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -602,7 +602,7 @@
 					if (b.listings.postOrder.api.pending[e]) return;
 					d(F({
 						key: e
-					})), s.layout = f.e[Object(h.O)(b, {})];
+					})), s.layout = f.e[Object(h.P)(b, {})];
 					const x = {
 							path: Object(g.h)(t, i).replace(/\/$/, ""),
 							includeIdentity: !0,
@@ -1570,4 +1570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.337867a38bf5b3e83975.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.30f96ea33ba4d09bba4b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.96bd0e700e757ed69289.js
-// Retrieved at 7/19/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9df782070707c7f633be.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1998,9 +1998,9 @@
 			})), s.d(t, "a", (function() {
 				return B
 			})), s.d(t, "b", (function() {
-				return L
-			})), s.d(t, "f", (function() {
 				return P
+			})), s.d(t, "f", (function() {
+				return L
 			})), s.d(t, "h", (function() {
 				return D
 			})), s.d(t, "g", (function() {
@@ -2133,13 +2133,13 @@
 						key: n
 					}, i)
 				},
-				L = (e, t) => {
+				P = (e, t) => {
 					const s = e.c;
 					return a.a.createElement(d.k, {
 						key: t
 					}, a.a.createElement(d.h, null, s.reduce((e, t, s, n) => e += t.t + (s < n.length ? "\n" : ""), "")))
 				},
-				P = (e, t, s, n) => {
+				L = (e, t, s, n) => {
 					const r = e.c,
 						o = [],
 						i = r.length;
@@ -2159,13 +2159,13 @@
 						case p.b:
 							return B(e, t, s, n);
 						case p.c:
-							return L(e, n);
+							return P(e, n);
 						case p.k:
 							return M(e, s, n);
 						case p.l:
 							return R(n);
 						case p.p:
-							return P(e, t, s, n);
+							return L(e, t, s, n);
 						case p.u:
 							return H(e, t, s, n);
 						case p.z:
@@ -3097,10 +3097,10 @@
 				M = s("./src/lib/lessComponent.tsx"),
 				R = s("./src/lib/opener/index.ts"),
 				B = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				L = s("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
-				P = s.n(L);
-			const F = M.a.a("ExternalLink", P.a),
-				D = M.a.wrapped(w.a, "InternalLink", P.a);
+				P = s("./src/reddit/components/Widgets/ModSupportLinks/index.m.less"),
+				L = s.n(P);
+			const F = M.a.a("ExternalLink", L.a),
+				D = M.a.wrapped(w.a, "InternalLink", L.a);
 			var H = () => i.a.createElement(B.a, {
 				title: v.fbt._("Moderator resources", null, {
 					hk: "1i4sLY"
@@ -3152,7 +3152,7 @@
 						location: t
 					}) => r()([...Object(c.a)(t.search)])
 				}),
-				V = Object(d.a)(W, h.O, x.m, (e, {
+				V = Object(d.a)(W, h.P, x.m, (e, {
 					match: t
 				}) => t.params.pageName, ({
 					queryParams: e
@@ -3279,4 +3279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.96bd0e700e757ed69289.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9df782070707c7f633be.js.map

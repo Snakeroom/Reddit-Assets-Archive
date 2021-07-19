@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bd694dc8cda2725073dd.js
-// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3290889258b2823d0e75.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -2646,7 +2646,7 @@
 							userId: s.authorId
 						}) && !Object(Qt.g)(e)
 					},
-					modModeEnabled: Tt.Q,
+					modModeEnabled: Tt.R,
 					errorMsgs: S.G,
 					replyFormOpen: S.J,
 					subreddit: Tt.q,
@@ -4808,7 +4808,7 @@
 				pageLayer: e => e
 			}), tt = Object(a.b)(() => Object(c.c)({
 				activeModalId: M.a,
-				flairStyleTemplate: Oe.S,
+				flairStyleTemplate: Oe.T,
 				currentUser: H.j,
 				crosspost: D.d,
 				hideNSFWPref: H.B,
@@ -4829,7 +4829,7 @@
 				showPromotedCTA: U.a,
 				post: D.F,
 				moderatorPermissions: B.k,
-				modModeEnabled: Oe.Q,
+				modModeEnabled: Oe.R,
 				isInCategoriesExperiment: R.a,
 				showAwardsPlaque: F.a,
 				showEditFlair: Ee.a,
@@ -6245,7 +6245,7 @@
 					isFrontpage: u.y,
 					isPredictionsPage: u.L,
 					isProfilePostListing: u.I,
-					isTopicPage: u.N,
+					isTopicPage: u.O,
 					pageLayer: e => e
 				})
 			}
@@ -6254,7 +6254,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: C.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(u.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(u.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -6283,7 +6283,7 @@
 					}),
 					subredditsById: y.Z,
 					viewportDataLoaded: P.a,
-					pageReferrer: u.R,
+					pageReferrer: u.S,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.d
 				},
@@ -8144,4 +8144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bd694dc8cda2725073dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3290889258b2823d0e75.js.map

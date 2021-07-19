@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.de2e4e81d075144d0cee.js
-// Retrieved at 7/13/2021, 11:50:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.9a92bbb76d824389b69d.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -928,7 +928,7 @@
 			};
 
 			function a() {
-				const e = Object(o.ab)(),
+				const e = Object(o.bb)(),
 					t = Object(r.e)(t => Object(o.q)(t, {
 						pageLayer: e
 					})),
@@ -978,4 +978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.de2e4e81d075144d0cee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.9a92bbb76d824389b69d.js.map

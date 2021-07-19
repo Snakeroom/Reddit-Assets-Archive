@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.95e444978fe98a65ca30.js
-// Retrieved at 7/19/2021, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.50dad6e158d271d63822.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2714,11 +2714,11 @@
 				Te = () => Object(a.c)({
 					activeModalId: v.a,
 					crosspost: g.d,
-					flairStyleTemplate: se.S,
+					flairStyleTemplate: se.T,
 					isActive: g.j,
 					isExpanded: g.l,
 					showPromotedCTA: _e.a,
-					layout: se.O,
+					layout: se.P,
 					moderatorPermissions: S.k,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
@@ -4252,7 +4252,7 @@
 				}
 			}
 			t.c = s.a.memo((function(e) {
-				const t = Object(m.ab)(),
+				const t = Object(m.bb)(),
 					n = Object(m.v)(t),
 					r = Object(G.a)(),
 					o = Object(i.e)(o => X(o, {
@@ -5015,4 +5015,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.95e444978fe98a65ca30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.50dad6e158d271d63822.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.03d8280db73e6dc0f5c0.js
-// Retrieved at 7/19/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2e3240bbdb21fe10dfb7.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3947,7 +3947,7 @@
 				I = Object(h.t)(),
 				P = Object(i.c)({
 					dropdownIsOpen: Object(E.b)(S),
-					postLayout: h.O,
+					postLayout: h.P,
 					redditStyle: h.A
 				}),
 				T = Object(a.b)(P, e => ({
@@ -10403,7 +10403,7 @@
 					isFrontpage: p.y,
 					isPredictionsPage: p.L,
 					isProfilePostListing: p.I,
-					isTopicPage: p.N,
+					isTopicPage: p.O,
 					pageLayer: e => e
 				})
 			}
@@ -10412,7 +10412,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: x.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -10441,7 +10441,7 @@
 					}),
 					subredditsById: _.Z,
 					viewportDataLoaded: C.a,
-					pageReferrer: p.R,
+					pageReferrer: p.S,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: g.d
 				},
@@ -10545,11 +10545,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: d.S,
+				flairStyleTemplate: d.T,
 				hideNSFWPref: b.B,
 				isActive: p.j,
 				moderatorPermissions: u.k,
-				modModeEnabled: d.Q,
+				modModeEnabled: d.R,
 				showEditFlair: m.a
 			}), (e, {
 				postId: t
@@ -13426,7 +13426,7 @@
 			const b = Object(d.t)(),
 				h = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.O)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.P)(e, t)
 				}),
 				f = Object(o.b)(h),
 				x = ({
@@ -13955,7 +13955,7 @@
 				return !1
 			}), Qe = (e, t) => {
 				const n = qe(e),
-					s = Object(se.O)(e, t),
+					s = Object(se.P)(e, t),
 					{
 						sort: r
 					} = $e(e, t);
@@ -14020,7 +14020,7 @@
 			}), nt = Object(m.c)({
 				showCreatePostBanner: Je,
 				contentGateInfo: (e, t) => Object(Ne.e)(e, t.match.params.subredditName),
-				layout: se.O,
+				layout: se.P,
 				isRpanDuVisible: (e, {
 					match: t
 				}) => Object(we.a)(e, {
@@ -15236,4 +15236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.03d8280db73e6dc0f5c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2e3240bbdb21fe10dfb7.js.map

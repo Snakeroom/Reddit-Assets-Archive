@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.3dc603337fe1d859fdb0.js
-// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.6df4e4f4aad3838add71.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2487,7 +2487,7 @@
 				T = Object(b.t)(),
 				N = Object(a.c)({
 					dropdownIsOpen: Object(v.b)(O),
-					postLayout: b.O,
+					postLayout: b.P,
 					redditStyle: b.A
 				}),
 				D = Object(i.b)(N, e => ({
@@ -6370,7 +6370,7 @@
 					isFrontpage: p.y,
 					isPredictionsPage: p.L,
 					isProfilePostListing: p.I,
-					isTopicPage: p.N,
+					isTopicPage: p.O,
 					pageLayer: e => e
 				})
 			}
@@ -6379,7 +6379,7 @@
 					apiError: y.c,
 					apiPending: y.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(y.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -6408,7 +6408,7 @@
 					}),
 					subredditsById: w.Z,
 					viewportDataLoaded: E.a,
-					pageReferrer: p.R,
+					pageReferrer: p.S,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: _.d
 				},
@@ -7083,7 +7083,7 @@
 				a = n("./src/reddit/selectors/telemetry.ts");
 
 			function c() {
-				const e = Object(i.ab)(),
+				const e = Object(i.bb)(),
 					t = e ? Object(a.getPageTypeFromCurrentPage)(e) : void 0,
 					n = "search_results" === t && Object(a.structureType)(e) === a.StructureType.Trending;
 				return {
@@ -7686,7 +7686,7 @@
 				fbt: Ne
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), De = Object(d.c)({
 				isLoggedIn: V.J,
-				layout: (e, t) => R.e[Object(M.O)(e, t)],
+				layout: (e, t) => R.e[Object(M.P)(e, t)],
 				userIsOwner: (e, t) => Object(H.c)(e, t.multireddit.url)
 			}), Pe = Object(c.b)(De), Le = Object(M.t)(), Fe = {};
 			var Be = Le(Pe(e => a.a.createElement("div", {
@@ -8062,4 +8062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.3dc603337fe1d859fdb0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.6df4e4f4aad3838add71.js.map

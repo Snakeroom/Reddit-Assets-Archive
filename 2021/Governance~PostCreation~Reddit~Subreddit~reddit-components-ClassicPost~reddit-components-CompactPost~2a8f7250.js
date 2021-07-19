@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.e322a0cbc82e5750a080.js
-// Retrieved at 7/15/2021, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.4ae7290712d3776f5388.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -1625,7 +1625,7 @@
 				a = r("./src/reddit/selectors/telemetry.ts");
 
 			function c() {
-				const e = Object(i.ab)(),
+				const e = Object(i.bb)(),
 					t = e ? Object(a.getPageTypeFromCurrentPage)(e) : void 0,
 					r = "search_results" === t && Object(a.structureType)(e) === a.StructureType.Trending;
 				return {
@@ -2518,4 +2518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.e322a0cbc82e5750a080.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.4ae7290712d3776f5388.js.map

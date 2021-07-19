@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.85922944ce4c3b9da8f6.js
-// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.d802d5d2437b24a6fb22.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -470,7 +470,7 @@
 				j = Object(h.t)(),
 				N = Object(a.c)({
 					dropdownIsOpen: Object(y.b)(L),
-					postLayout: h.O,
+					postLayout: h.P,
 					redditStyle: h.A
 				}),
 				w = Object(o.b)(N, e => ({
@@ -1615,7 +1615,7 @@
 					isFrontpage: m.y,
 					isPredictionsPage: m.L,
 					isProfilePostListing: m.I,
-					isTopicPage: m.N,
+					isTopicPage: m.O,
 					pageLayer: e => e
 				})
 			}
@@ -1624,7 +1624,7 @@
 					apiError: _.c,
 					apiPending: _.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(m.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(_.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -1653,7 +1653,7 @@
 					}),
 					subredditsById: E.Z,
 					viewportDataLoaded: T.a,
-					pageReferrer: m.R,
+					pageReferrer: m.S,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: v.d
 				},
@@ -2339,7 +2339,7 @@
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), O.O, je, e => {
+			}), O.P, je, e => {
 				var t;
 				return null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status
 			}, (e, t, s, r, i, n, o, a) => ({
@@ -2608,4 +2608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.85922944ce4c3b9da8f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.d802d5d2437b24a6fb22.js.map

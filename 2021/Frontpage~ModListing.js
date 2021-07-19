@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.22fe97480f8c93d1595a.js
-// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.a7a8134b814eff661644.js
+// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -470,7 +470,7 @@
 				N = Object(h.t)(),
 				P = Object(a.c)({
 					dropdownIsOpen: Object(_.b)(x),
-					postLayout: h.O,
+					postLayout: h.P,
 					redditStyle: h.A
 				}),
 				L = Object(i.b)(P, e => ({
@@ -1968,7 +1968,7 @@
 					isFrontpage: m.y,
 					isPredictionsPage: m.L,
 					isProfilePostListing: m.I,
-					isTopicPage: m.N,
+					isTopicPage: m.O,
 					pageLayer: e => e
 				})
 			}
@@ -1977,7 +1977,7 @@
 					apiError: S.c,
 					apiPending: S.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(m.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(S.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -2006,7 +2006,7 @@
 					}),
 					subredditsById: C.Z,
 					viewportDataLoaded: v.a,
-					pageReferrer: m.R,
+					pageReferrer: m.S,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: y.d
 				},
@@ -2481,4 +2481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.22fe97480f8c93d1595a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.a7a8134b814eff661644.js.map
