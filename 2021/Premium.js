@@ -1,22 +1,28 @@
-// https://www.redditstatic.com/desktop2x/Premium.303bc6f99db12887f174.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.38f4713b13934a720a9c.js
+// Retrieved at 7/19/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
 			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			}));
+			var n = r("./src/lib/constants/index.ts");
 
-			function n(e, t, r, n) {
-				const a = new Date(1e3 * e);
-				return new Intl.DateTimeFormat("default", {
-					month: n ? "short" : "long",
+			function a(e, {
+				showDay: t,
+				useUtc: r,
+				shortMonths: a,
+				locale: o = n.B
+			} = {}) {
+				const i = new Date(e * n.Nb);
+				return new Intl.DateTimeFormat(o, {
+					month: a ? "short" : "long",
 					day: t ? "numeric" : void 0,
 					year: "numeric",
 					timeZone: r ? "UTC" : void 0
-				}).format(a)
+				}).format(i)
 			}
-			r.d(t, "a", (function() {
-				return n
-			}))
 		},
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, r) {
 			"use strict";
@@ -2558,7 +2564,9 @@
 						onClickManagePremium: this.onClickManagePremium
 					}), !r && t && i.a.createElement("div", {
 						className: w.a.heroPremiumExpiration
-					}, Object(f.a)(a.fbt._("Your Premium membership is valid until {Premium expiration date}. Manage it :here:.", [a.fbt._param("Premium expiration date", Object(u.a)(e, !0))], {
+					}, Object(f.a)(a.fbt._("Your Premium membership is valid until {Premium expiration date}. Manage it :here:.", [a.fbt._param("Premium expiration date", Object(u.a)(e, {
+						showDay: !0
+					}))], {
 						hk: "yMI3j"
 					}).toString(), {
 						":here:": i.a.createElement("a", {
@@ -2810,4 +2818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.303bc6f99db12887f174.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.38f4713b13934a720a9c.js.map

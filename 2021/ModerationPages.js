@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e4ca3af4d6b29777b48b.js
-// Retrieved at 7/15/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.cec4314f4d6187fc7756.js
+// Retrieved at 7/19/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, s) {
@@ -5026,37 +5026,29 @@
 			var n = s("./node_modules/react/index.js"),
 				a = s.n(n),
 				o = s("./src/lib/eventTools/index.ts"),
-				r = s("./node_modules/fbt/lib/FbtPublic.js"),
-				i = s("./src/lib/constants/index.ts");
-
-			function d(e) {
-				return e.toLocaleDateString(void 0, {
-					month: "numeric",
-					day: "numeric"
-				})
-			}
-			var l = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				c = s("./src/lib/classNames/index.ts"),
-				m = s("./src/reddit/icons/fonts/helpers.tsx"),
-				u = s("./src/reddit/icons/fonts/commonStyles.m.less"),
-				p = s.n(u);
-			var b = e => a.a.createElement("i", {
-				className: Object(c.a)(Object(m.b)("scheduled", e.isFilled), p.a.calendarIcon, e.className)
+				r = s("./src/lib/humanizeEventTime/index.ts"),
+				i = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				d = s("./src/lib/classNames/index.ts"),
+				l = s("./src/reddit/icons/fonts/helpers.tsx"),
+				c = s("./src/reddit/icons/fonts/commonStyles.m.less"),
+				m = s.n(c);
+			var u = e => a.a.createElement("i", {
+				className: Object(d.a)(Object(l.b)("scheduled", e.isFilled), m.a.calendarIcon, e.className)
 			});
-			var h = e => a.a.createElement("i", {
-					className: Object(c.a)(Object(m.b)("live", e.isFilled), p.a.liveIcon, e.className)
+			var p = e => a.a.createElement("i", {
+					className: Object(d.a)(Object(l.b)("live", e.isFilled), m.a.liveIcon, e.className)
 				}),
-				g = s("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
-				f = s.n(g),
-				x = s("./src/lib/lessComponent.tsx");
-			const E = x.a.span("PostEventFutureText", f.a),
-				v = x.a.span("PostEventPastText", f.a),
-				_ = x.a.span("PostEventNowText", f.a),
-				C = x.a.span("Container", f.a),
-				k = x.a.wrapped(b, "CalendarIcon", f.a),
-				y = x.a.wrapped(h, "LiveIcon", f.a),
-				S = x.a.div("LoadingState", f.a);
-			class O extends n.Component {
+				b = s("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
+				h = s.n(b),
+				g = s("./src/lib/lessComponent.tsx");
+			const f = g.a.span("PostEventFutureText", h.a),
+				x = g.a.span("PostEventPastText", h.a),
+				E = g.a.span("PostEventNowText", h.a),
+				v = g.a.span("Container", h.a),
+				_ = g.a.wrapped(u, "CalendarIcon", h.a),
+				C = g.a.wrapped(p, "LiveIcon", h.a),
+				k = g.a.div("LoadingState", h.a);
+			class y extends n.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mounted: !1
@@ -5077,44 +5069,31 @@
 					if (!s) return null;
 					const {
 						eventEnd: n,
-						eventIsLive: c,
-						eventStart: m
-					} = s, u = Object(o.e)(m, n);
-					let p, b;
-					if (this.state.mounted || u === o.a.Live) p = function(e, t, s) {
-						const n = Object(o.e)(e, t),
-							a = new Date(e * i.Nb);
-						let l;
-						return n === o.a.Live || s ? r.fbt._("Now", null, {
-							hk: "Prpcg"
-						}) : (n === o.a.Future ? l = Object(o.d)(e) ? r.fbt._("Today", null, {
-							hk: "1sZpnp"
-						}).toString() : Object(o.b)(e) >= 5 ? d(a) : a.toLocaleDateString(void 0, {
-							weekday: "long"
-						}) : n === o.a.Past && (l = Object(o.d)(e) ? r.fbt._("Today", null, {
-							hk: "1sZpnp"
-						}).toString() : d(a)), `${l} @ ${function(e){return e.toLocaleTimeString(void 0,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(a)}`)
-					}(m, n, c);
+						eventIsLive: d,
+						eventStart: l
+					} = s, c = Object(o.e)(l, n);
+					let m, u;
+					if (this.state.mounted || c === o.a.Live) m = Object(r.a)(l, n, d);
 					else {
-						const e = Object(l.a)({
+						const e = Object(i.a)({
 							isLoading: !0
 						});
-						p = a.a.createElement(S, {
+						m = a.a.createElement(k, {
 							className: e
 						})
 					}
-					if (c) b = a.a.createElement(_, null, a.a.createElement(y, null), p);
-					else if (u === o.a.Future) b = a.a.createElement(E, null, a.a.createElement(k, null), p);
+					if (d) u = a.a.createElement(E, null, a.a.createElement(C, null), m);
+					else if (c === o.a.Future) u = a.a.createElement(f, null, a.a.createElement(_, null), m);
 					else {
-						if (u !== o.a.Past) return null;
-						b = a.a.createElement(v, null, a.a.createElement(k, null), p)
+						if (c !== o.a.Past) return null;
+						u = a.a.createElement(x, null, a.a.createElement(_, null), m)
 					}
-					return a.a.createElement(C, {
+					return a.a.createElement(v, {
 						className: e
-					}, b)
+					}, u)
 				}
 			}
-			t.a = O
+			t.a = y
 		},
 		"./src/reddit/components/ExpandoButton/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -15409,19 +15388,13 @@
 			var re = Object(J.a)(ae(oe)),
 				ie = s("./src/reddit/components/RawHTMLDisplay/index.tsx"),
 				de = s("./src/reddit/components/RichTextJson/index.tsx"),
-				le = s("./src/lib/constants/index.ts"),
-				ce = s("./src/lib/humanizeUTCDate/index.tsx"),
-				me = s("./src/lib/timeAgo/index.ts");
-			var ue = e => {
-					const t = (e => e - 8 * le.O / le.Nb)(e);
-					return Object(me.c)(t) >= 1 ? Object(ce.a)(t) : Object(me.d)(t)
-				},
-				pe = s("./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.tsx"),
-				be = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
-				he = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				ge = s("./src/reddit/models/RichTextJson/index.ts");
-			const fe = {};
-			class xe extends c.a.Component {
+				le = s("./src/reddit/helpers/dayAgoFormatDate/index.tsx"),
+				ce = s("./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.tsx"),
+				me = s("./src/reddit/icons/fonts/Expandos/Arrows/Expand/index.tsx"),
+				ue = s("./src/reddit/icons/svgs/Pencil/index.tsx"),
+				pe = s("./src/reddit/models/RichTextJson/index.ts");
+			const be = {};
+			class he extends c.a.Component {
 				constructor(e) {
 					super(e), this.toggleExpandDetails = () => {
 						this.setState(e => ({
@@ -15449,7 +15422,7 @@
 					}, e && c.a.createElement("button", {
 						className: q.a.iconButton,
 						onClick: s
-					}, c.a.createElement(he.a, {
+					}, c.a.createElement(ue.a, {
 						className: q.a.icon,
 						title: n.fbt._("Edit", null, {
 							hk: "1nftDt"
@@ -15457,12 +15430,12 @@
 					})), c.a.createElement("button", {
 						className: q.a.iconButton,
 						onClick: this.toggleExpandDetails
-					}, this.state.isExpanded ? c.a.createElement(pe.a, {
+					}, this.state.isExpanded ? c.a.createElement(ce.a, {
 						className: q.a.icon,
 						title: n.fbt._("Collapse", null, {
 							hk: "eGqwd"
 						})
-					}) : c.a.createElement(be.a, {
+					}) : c.a.createElement(me.a, {
 						className: q.a.icon,
 						title: n.fbt._("Expand", null, {
 							hk: "4dMVPg"
@@ -15501,7 +15474,7 @@
 						hk: "gSE9w"
 					})), c.a.createElement("div", {
 						className: q.a.ruleMetaText
-					}, ue(a.createdUtc)))), c.a.createElement("span", {
+					}, Object(le.a)(a.createdUtc)))), c.a.createElement("span", {
 						className: q.a.metadata
 					}, c.a.createElement("span", {
 						className: q.a.ruleMetaTitle
@@ -15509,23 +15482,23 @@
 						hk: "20Lgcg"
 					})), c.a.createElement("span", {
 						className: q.a.ruleMetaText
-					}, o && !Object(ge.G)({
+					}, o && !Object(pe.G)({
 						document: o
 					}) ? c.a.createElement(de.a, {
 						className: q.a.ruleMetaText,
 						content: {
 							document: o
 						},
-						rtJsonElementProps: fe
+						rtJsonElementProps: be
 					}) : a.descriptionHtml ? c.a.createElement(ie.a, {
 						className: q.a.ruleMetaText,
 						html: a.descriptionHtml
 					}) : a.description))))
 				}
 			}
-			var Ee = xe;
-			const ve = p.a.wrapped(M.i, "PrimaryButton", q.a),
-				_e = () => c.a.createElement(U.a, {
+			var ge = he;
+			const fe = p.a.wrapped(M.i, "PrimaryButton", q.a),
+				xe = () => c.a.createElement(U.a, {
 					className: q.a.placeholderRow
 				}, c.a.createElement("span", {
 					className: q.a.emptyWrapper
@@ -15540,12 +15513,12 @@
 				}), c.a.createElement("span", {
 					className: q.a.emptyRightIcon
 				}))),
-				Ce = () => c.a.createElement("div", {
+				Ee = () => c.a.createElement("div", {
 					className: q.a.loadingContainer
-				}, d()(15, e => c.a.createElement(_e, {
+				}, d()(15, e => c.a.createElement(xe, {
 					key: e
 				}))),
-				ke = Object(u.c)({
+				ve = Object(u.c)({
 					hasModConfigPerms: (e, t) => Object(Z.b)(B.c.config)(e, {
 						subredditId: t.subreddit.id
 					}),
@@ -15559,7 +15532,7 @@
 						subredditId: t.subreddit.id
 					})
 				}),
-				ye = Object(m.b)(ke, (e, t) => ({
+				_e = Object(m.b)(ve, (e, t) => ({
 					removeRule: (s, a) => e(((e, t, s) => async (a, o, {
 						apiContext: r
 					}) => {
@@ -15607,7 +15580,7 @@
 					toggleConfirmationModal: () => e(Object(b.i)("SubredditRule--Modal--DeleteConfirmation")),
 					toggleRuleEditorModal: () => e(Object(b.i)("SubredditRule--Editor--Modal"))
 				}));
-			class Se extends c.a.Component {
+			class Ce extends c.a.Component {
 				constructor(e) {
 					super(e), this.deleteRule = () => {
 						const e = this.state.ruleToEdit;
@@ -15664,12 +15637,12 @@
 						disabled: d.length <= 1
 					}, n.fbt._("Reorder rules", null, {
 						hk: "1qh7V6"
-					})), this.state.isReordering ? c.a.createElement(ve, {
+					})), this.state.isReordering ? c.a.createElement(fe, {
 						onClick: this.reorderRules,
 						disabled: r()(d.map(e => e.shortName), this.state.ruleOrder)
 					}, n.fbt._("Save", null, {
 						hk: "3nstB"
-					})) : c.a.createElement(ve, {
+					})) : c.a.createElement(fe, {
 						onClick: this.toggleEditorModal,
 						disabled: o || d.length >= H.e
 					}, n.fbt._("Add rule", null, {
@@ -15696,7 +15669,7 @@
 							shortName: e
 						}),
 						onDrop: this.handleDrop
-					}) : d.map((t, s) => c.a.createElement(Ee, {
+					}) : d.map((t, s) => c.a.createElement(ge, {
 						hasConfigPerms: e,
 						index: s,
 						key: `${i.name}-${t.shortName}`,
@@ -15710,7 +15683,7 @@
 						hk: "41SmPR"
 					}), c.a.createElement(I.a, {
 						linkUrl: `${a.a.redditModHelpUrl}/hc/en-us/articles/360023379211`
-					}))), o ? c.a.createElement(Ce, null) : c.a.createElement(w.c, {
+					}))), o ? c.a.createElement(Ee, null) : c.a.createElement(w.c, {
 						text: n.fbt._("No rules yet", null, {
 							hk: "pYLkV"
 						})
@@ -15742,7 +15715,7 @@
 					}))
 				}
 			}
-			t.a = ye(Object(T.c)(Se))
+			t.a = _e(Object(T.c)(Ce))
 		},
 		"./src/reddit/components/UserNameAndIcon/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -20053,4 +20026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e4ca3af4d6b29777b48b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cec4314f4d6187fc7756.js.map

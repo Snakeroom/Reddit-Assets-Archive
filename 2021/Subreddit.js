@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.03d8280db73e6dc0f5c0.js
-// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5b22089ec730e0b94e4d.js
+// Retrieved at 7/19/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -324,6 +324,28 @@
 					visible: u,
 					update: y
 				}), [l, x, c, b, p, g, t, n, h, u, y])
+			}
+		},
+		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var s = n("./src/lib/constants/index.ts");
+
+			function r(e, {
+				showDay: t,
+				useUtc: n,
+				shortMonths: r,
+				locale: o = s.B
+			} = {}) {
+				const a = new Date(e * s.Nb);
+				return new Intl.DateTimeFormat(o, {
+					month: r ? "short" : "long",
+					day: t ? "numeric" : void 0,
+					year: "numeric",
+					timeZone: n ? "UTC" : void 0
+				}).format(a)
 			}
 		},
 		"./src/lib/unicodeUtils/index.ts": function(e, t, n) {
@@ -15236,4 +15258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.03d8280db73e6dc0f5c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5b22089ec730e0b94e4d.js.map
