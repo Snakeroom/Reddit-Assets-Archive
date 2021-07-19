@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.30ec018e691663b1b845.js
-// Retrieved at 7/19/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.28127bec24a2638f6bf3.js
+// Retrieved at 7/19/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3125,29 +3125,37 @@
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				s = n("./src/lib/eventTools/index.ts"),
-				i = n("./src/lib/humanizeEventTime/index.ts"),
-				a = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				c = n("./src/lib/classNames/index.ts"),
-				d = n("./src/reddit/icons/fonts/helpers.tsx"),
-				l = n("./src/reddit/icons/fonts/commonStyles.m.less"),
-				u = n.n(l);
-			var p = e => o.a.createElement("i", {
-				className: Object(c.a)(Object(d.b)("scheduled", e.isFilled), u.a.calendarIcon, e.className)
+				i = n("./node_modules/fbt/lib/FbtPublic.js"),
+				a = n("./src/lib/constants/index.ts");
+
+			function c(e) {
+				return e.toLocaleDateString(void 0, {
+					month: "numeric",
+					day: "numeric"
+				})
+			}
+			var d = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				l = n("./src/lib/classNames/index.ts"),
+				u = n("./src/reddit/icons/fonts/helpers.tsx"),
+				p = n("./src/reddit/icons/fonts/commonStyles.m.less"),
+				m = n.n(p);
+			var f = e => o.a.createElement("i", {
+				className: Object(l.a)(Object(u.b)("scheduled", e.isFilled), m.a.calendarIcon, e.className)
 			});
-			var m = e => o.a.createElement("i", {
-					className: Object(c.a)(Object(d.b)("live", e.isFilled), u.a.liveIcon, e.className)
+			var b = e => o.a.createElement("i", {
+					className: Object(l.a)(Object(u.b)("live", e.isFilled), m.a.liveIcon, e.className)
 				}),
-				f = n("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
-				b = n.n(f),
-				h = n("./src/lib/lessComponent.tsx");
-			const E = h.a.span("PostEventFutureText", b.a),
-				_ = h.a.span("PostEventPastText", b.a),
-				x = h.a.span("PostEventNowText", b.a),
-				O = h.a.span("Container", b.a),
-				v = h.a.wrapped(p, "CalendarIcon", b.a),
-				S = h.a.wrapped(m, "LiveIcon", b.a),
-				y = h.a.div("LoadingState", b.a);
-			class g extends r.Component {
+				h = n("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
+				E = n.n(h),
+				_ = n("./src/lib/lessComponent.tsx");
+			const x = _.a.span("PostEventFutureText", E.a),
+				O = _.a.span("PostEventPastText", E.a),
+				v = _.a.span("PostEventNowText", E.a),
+				S = _.a.span("Container", E.a),
+				y = _.a.wrapped(f, "CalendarIcon", E.a),
+				g = _.a.wrapped(b, "LiveIcon", E.a),
+				T = _.a.div("LoadingState", E.a);
+			class C extends r.Component {
 				constructor(e) {
 					super(e), this.state = {
 						mounted: !1
@@ -3168,31 +3176,44 @@
 					if (!n) return null;
 					const {
 						eventEnd: r,
-						eventIsLive: c,
-						eventStart: d
-					} = n, l = Object(s.e)(d, r);
-					let u, p;
-					if (this.state.mounted || l === s.a.Live) u = Object(i.a)(d, r, c);
+						eventIsLive: l,
+						eventStart: u
+					} = n, p = Object(s.e)(u, r);
+					let m, f;
+					if (this.state.mounted || p === s.a.Live) m = function(e, t, n) {
+						const r = Object(s.e)(e, t),
+							o = new Date(e * a.Nb);
+						let d;
+						return r === s.a.Live || n ? i.fbt._("Now", null, {
+							hk: "Prpcg"
+						}) : (r === s.a.Future ? d = Object(s.d)(e) ? i.fbt._("Today", null, {
+							hk: "1sZpnp"
+						}).toString() : Object(s.b)(e) >= 5 ? c(o) : o.toLocaleDateString(void 0, {
+							weekday: "long"
+						}) : r === s.a.Past && (d = Object(s.d)(e) ? i.fbt._("Today", null, {
+							hk: "1sZpnp"
+						}).toString() : c(o)), `${d} @ ${function(e){return e.toLocaleTimeString(void 0,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o)}`)
+					}(u, r, l);
 					else {
-						const e = Object(a.a)({
+						const e = Object(d.a)({
 							isLoading: !0
 						});
-						u = o.a.createElement(y, {
+						m = o.a.createElement(T, {
 							className: e
 						})
 					}
-					if (c) p = o.a.createElement(x, null, o.a.createElement(S, null), u);
-					else if (l === s.a.Future) p = o.a.createElement(E, null, o.a.createElement(v, null), u);
+					if (l) f = o.a.createElement(v, null, o.a.createElement(g, null), m);
+					else if (p === s.a.Future) f = o.a.createElement(x, null, o.a.createElement(y, null), m);
 					else {
-						if (l !== s.a.Past) return null;
-						p = o.a.createElement(_, null, o.a.createElement(v, null), u)
+						if (p !== s.a.Past) return null;
+						f = o.a.createElement(O, null, o.a.createElement(y, null), m)
 					}
-					return o.a.createElement(O, {
+					return o.a.createElement(S, {
 						className: e
-					}, p)
+					}, f)
 				}
 			}
-			t.a = g
+			t.a = C
 		},
 		"./src/reddit/components/ExpandoButton/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4993,4 +5014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.30ec018e691663b1b845.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.28127bec24a2638f6bf3.js.map

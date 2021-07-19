@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b9bd4bcdb327581d7d7.js
-// Retrieved at 7/19/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.195800f558fd61c92162.js
+// Retrieved at 7/19/2021, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2416,11 +2416,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("139613"),
+				buildNumber: r("139621"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1626706302"),
+				})("1626707604"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4921,14 +4921,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cccf13b07cdbee6470e0a0b961f6ec3eaa6eb2efa-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cf6c3cb0782f549a72f2244f3017c8c4262ac8556-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ccf13b07cdbee6470e0a0b961f6ec3eaa6eb2efa-production",
+						release: "f6c3cb0782f549a72f2244f3017c8c4262ac8556-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -5422,7 +5422,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "ccf13b07cdbee6470e0a0b961f6ec3eaa6eb2efa-production",
+						releaseClient: "f6c3cb0782f549a72f2244f3017c8c4262ac8556-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -6696,249 +6696,216 @@
 		"./src/lib/timeAgo/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
-				return _
+				return u
 			})), i.d(t, "e", (function() {
-				return p
+				return _
 			})), i.d(t, "c", (function() {
-				return m
+				return p
 			})), i.d(t, "a", (function() {
-				return h
+				return m
 			})), i.d(t, "b", (function() {
-				return f
+				return h
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
-				r = i("./src/lib/sentry/index.ts"),
-				s = i("./src/lib/constants/index.ts");
-			const o = {
-					[s.ib]: s.Nb,
-					[s.O]: s.ib,
-					[s.z]: s.O,
-					[s.nb]: s.z,
-					[s.kc]: s.nb
+				r = i("./src/lib/constants/index.ts");
+			const s = {
+					[r.ib]: r.Nb,
+					[r.O]: r.ib,
+					[r.z]: r.O,
+					[r.nb]: r.z,
+					[r.kc]: r.nb
 				},
-				d = {
-					[s.Nb]: e => n.fbt._({
+				o = {
+					[r.Nb]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "1Z9CfH"
 					}),
-					[s.ib]: e => n.fbt._({
+					[r.ib]: e => n.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3FAWqJ"
 					}),
-					[s.O]: e => n.fbt._({
+					[r.O]: e => n.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "2EMZXz"
 					}),
-					[s.z]: e => n.fbt._({
+					[r.z]: e => n.fbt._({
 						"*": "{number} days",
 						_1: "1 day"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "4feu1g"
 					}),
-					[s.nb]: e => n.fbt._({
+					[r.nb]: e => n.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "2jqQGm"
 					}),
-					[s.kc]: e => n.fbt._({
+					[r.kc]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "3rMhN9"
 					})
 				},
-				a = {
-					[s.Nb]: e => n.fbt._({
+				d = {
+					[r.Nb]: e => n.fbt._({
 						"*": "{number} seconds ago",
 						_1: "1 second ago"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "rJZ1O"
 					}),
-					[s.ib]: e => n.fbt._({
+					[r.ib]: e => n.fbt._({
 						"*": "{number} minutes ago",
 						_1: "1 minute ago"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "4yGI4N"
 					}),
-					[s.O]: e => n.fbt._({
+					[r.O]: e => n.fbt._({
 						"*": "{number} hours ago",
 						_1: "1 hour ago"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "1Fr9Xx"
 					}),
-					[s.z]: e => n.fbt._({
+					[r.z]: e => n.fbt._({
 						"*": "{number} days ago",
 						_1: "1 day ago"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "4lK3UT"
 					}),
-					[s.nb]: e => n.fbt._({
+					[r.nb]: e => n.fbt._({
 						"*": "{number} months ago",
 						_1: "1 month ago"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "32PB2y"
 					}),
-					[s.kc]: e => n.fbt._({
+					[r.kc]: e => n.fbt._({
 						"*": "{number} years ago",
 						_1: "1 year ago"
 					}, [n.fbt._plural(e, "number")], {
 						hk: "S0Gnf"
 					})
 				},
-				c = {
-					[s.Nb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+				a = {
+					[r.Nb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "1wpxaX"
 					}),
-					[s.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[r.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "3XgTJP"
 					}),
-					[s.O]: e => n.fbt._("{amount}h", [n.fbt._param("amount", String(e))], {
+					[r.O]: e => n.fbt._("{amount}h", [n.fbt._param("amount", String(e))], {
 						hk: "2e5Zug"
 					}),
-					[s.z]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
+					[r.z]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
 						hk: "1M1jhY"
 					}),
-					[s.nb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[r.nb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "3cNGfu"
 					}),
-					[s.kc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[r.kc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "8gNOa"
 					})
 				},
-				l = {
-					[s.Nb]: e => n.fbt._("{amount}s ago", [n.fbt._param("amount", String(e))], {
+				c = {
+					[r.Nb]: e => n.fbt._("{amount}s ago", [n.fbt._param("amount", String(e))], {
 						hk: "g6jbi"
 					}),
-					[s.ib]: e => n.fbt._("{amount}m ago", [n.fbt._param("amount", String(e))], {
+					[r.ib]: e => n.fbt._("{amount}m ago", [n.fbt._param("amount", String(e))], {
 						hk: "3fMUq7"
 					}),
-					[s.O]: e => n.fbt._("{amount}h ago", [n.fbt._param("amount", String(e))], {
+					[r.O]: e => n.fbt._("{amount}h ago", [n.fbt._param("amount", String(e))], {
 						hk: "1HZHiX"
 					}),
-					[s.z]: e => n.fbt._("{amount}d ago", [n.fbt._param("amount", String(e))], {
+					[r.z]: e => n.fbt._("{amount}d ago", [n.fbt._param("amount", String(e))], {
 						hk: "3WIJYN"
 					}),
-					[s.nb]: e => n.fbt._("{amount}m ago", [n.fbt._param("amount", String(e))], {
+					[r.nb]: e => n.fbt._("{amount}m ago", [n.fbt._param("amount", String(e))], {
 						hk: "7g1Ut"
 					}),
-					[s.kc]: e => n.fbt._("{amount}y ago", [n.fbt._param("amount", String(e))], {
+					[r.kc]: e => n.fbt._("{amount}y ago", [n.fbt._param("amount", String(e))], {
 						hk: "4piT6o"
 					})
 				},
-				u = {
-					[s.Nb]: e => n.fbt._("{amount}s left", [n.fbt._param("amount", String(e))], {
+				l = {
+					[r.Nb]: e => n.fbt._("{amount}s left", [n.fbt._param("amount", String(e))], {
 						hk: "1ZSXLq"
 					}),
-					[s.ib]: e => n.fbt._("{amount}m left", [n.fbt._param("amount", String(e))], {
+					[r.ib]: e => n.fbt._("{amount}m left", [n.fbt._param("amount", String(e))], {
 						hk: "1Oe8PO"
 					}),
-					[s.O]: e => n.fbt._("{amount}h left", [n.fbt._param("amount", String(e))], {
+					[r.O]: e => n.fbt._("{amount}h left", [n.fbt._param("amount", String(e))], {
 						hk: "1z3Oub"
 					}),
-					[s.z]: e => n.fbt._("{amount}d left", [n.fbt._param("amount", String(e))], {
+					[r.z]: e => n.fbt._("{amount}d left", [n.fbt._param("amount", String(e))], {
 						hk: "3d5R8E"
 					})
 				};
 
-			function _(e, t = {}) {
-				try {
-					return function(e, {
-						shortenedUnit: t,
-						noPostfix: i,
-						locale: r = s.B
-					} = {}) {
-						const o = Date.now(),
-							d = e * s.Nb - o,
-							a = Math.abs(d);
-						if (Math.abs(d) < s.ib) return n.fbt._("just now", null, {
-							hk: "WMsPx"
-						}).toString();
-						let c, l;
-						const u = t ? i ? "narrow" : "short" : "long";
-						if (Math.round(a / s.ib) < 60 ? (l = d / s.ib, c = "minute") : Math.round(a / s.O) < 24 ? (l = d / s.O, c = "hour") : Math.round(a / s.z) < 29 ? (l = d / s.z, c = "day") : Math.round(a / s.nb) < 12 ? (l = d / s.nb, c = "month") : (l = d / s.kc, c = "year"), l = Math.round(l), i) {
-							return new Intl.NumberFormat(r, {
-								style: "unit",
-								unit: c,
-								unitDisplay: u
-							}).format(Math.abs(l))
-						}
-						return new Intl.RelativeTimeFormat(r, {
-							localeMatcher: "best fit",
-							numeric: "always",
-							style: u
-						}).format(l, c)
-					}(e, t)
-				} catch (i) {
-					return Math.random() < .25 && r.c.captureException(i),
-						function(e, t = {}) {
-							const i = Date.now(),
-								r = Math.abs(i - 1e3 * e);
-							if (r < s.ib) return n.fbt._("just now", null, {
-								hk: "WMsPx"
-							}).toString();
-							let u = a;
-							t.noPostfix && t.shortenedUnit ? u = c : t.noPostfix ? u = d : t.shortenedUnit && (u = l);
-							for (const n of [s.O, s.z, s.nb, s.kc])
-								if (r < n) {
-									const e = Math.floor(r / o[n]);
-									return (0, u[o[n]])(e).toString()
-								} const _ = Math.floor(r / s.kc);
-							return u[s.kc](_).toString()
-						}(e, t)
-				}
+			function u(e, t = {}) {
+				const i = Date.now(),
+					l = Math.abs(i - 1e3 * e);
+				if (l < r.ib) return n.fbt._("just now", null, {
+					hk: "WMsPx"
+				}).toString();
+				let u = d;
+				t.noPostfix && t.shortenedUnit ? u = a : t.noPostfix ? u = o : t.shortenedUnit && (u = c);
+				for (const n of [r.O, r.z, r.nb, r.kc])
+					if (l < n) {
+						const e = Math.floor(l / s[n]);
+						return (0, u[s[n]])(e).toString()
+					} const _ = Math.floor(l / r.kc);
+				return u[r.kc](_).toString()
+			}
+
+			function _(e) {
+				const t = Date.now(),
+					i = "number" == typeof e ? e : new Date(e).valueOf();
+				return Math.trunc(Math.abs(t - i) / r.O)
 			}
 
 			function p(e) {
 				const t = Date.now(),
-					i = "number" == typeof e ? e : new Date(e).valueOf();
-				return Math.trunc(Math.abs(t - i) / s.O)
-			}
-
-			function m(e) {
-				const t = Date.now(),
 					i = "number" == typeof e ? e : new Date(e).valueOf(),
 					n = Math.abs(t - 1e3 * i);
-				return Math.floor(n / s.z)
+				return Math.floor(n / r.z)
 			}
 
-			function h(e, t) {
+			function m(e, t) {
 				const i = Date.now(),
-					r = Math.abs(i - 1e3 * e),
+					o = Math.abs(i - 1e3 * e),
 					d = new Date(1e3 * e),
-					a = new Date(i);
-				if (r < s.ib) return n.fbt._("now", null, {
+					l = new Date(i);
+				if (o < r.ib) return n.fbt._("now", null, {
 					hk: "1hZvPT"
 				}).toString();
-				if (r < s.jc)
-					for (const n of [s.O, s.z, s.nb])
-						if (r < n) {
-							const e = Math.floor(r / o[n]);
-							return (t ? c : l)[o[n]](e).toString()
-						} return d.getFullYear() !== a.getFullYear() ? d.toLocaleDateString() : new Intl.DateTimeFormat("default", {
+				if (o < r.jc)
+					for (const n of [r.O, r.z, r.nb])
+						if (o < n) {
+							const e = Math.floor(o / s[n]);
+							return (t ? a : c)[s[n]](e).toString()
+						} return d.getFullYear() !== l.getFullYear() ? d.toLocaleDateString() : new Intl.DateTimeFormat("default", {
 					month: "short",
 					day: "numeric"
 				}).format(d)
 			}
 
-			function f(e) {
+			function h(e) {
 				const t = Date.now(),
 					i = Math.abs(1e3 * e - t),
-					r = new Date(1e3 * e),
+					o = new Date(1e3 * e),
 					d = new Date(t);
-				if (i < s.nb)
-					for (const n of [s.O, s.z, s.nb])
+				if (i < r.nb)
+					for (const n of [r.O, r.z, r.nb])
 						if (i < n) {
-							const e = Math.floor(i / o[n]);
-							return u[o[n]](e).toString()
-						} if (r.getFullYear() !== d.getFullYear()) {
-					const e = r.toLocaleDateString();
+							const e = Math.floor(i / s[n]);
+							return l[s[n]](e).toString()
+						} if (o.getFullYear() !== d.getFullYear()) {
+					const e = o.toLocaleDateString();
 					return n.fbt._("Expires {Expiration date}", [n.fbt._param("Expiration date", e)], {
 						hk: "4nE1rV"
 					}).toString()
@@ -6946,7 +6913,7 @@
 				return new Intl.DateTimeFormat("default", {
 					month: "short",
 					day: "numeric"
-				}).format(r)
+				}).format(o)
 			}
 		},
 		"./src/lib/timezone/index.ts": function(e, t, i) {
@@ -47660,4 +47627,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7b9bd4bcdb327581d7d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.195800f558fd61c92162.js.map
