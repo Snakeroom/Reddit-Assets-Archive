@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.be55b2f698991bdc86bc.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.fbef1bf7ea1c9881800e.js
+// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDateTime/index.ts": function(e, t, r) {
@@ -482,8 +482,8 @@
 					}))
 				}
 			}
-			var K = J,
-				Y = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
+			var Y = J,
+				K = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				$ = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				X = r.n($);
 			var Z = a.a.memo(e => {
@@ -504,7 +504,7 @@
 					className: X.a.scrollButton,
 					name: o ? d : i,
 					onClick: n
-				}, a.a.createElement(Y.a, {
+				}, a.a.createElement(K.a, {
 					className: X.a.chevronIcon
 				})))
 			});
@@ -676,7 +676,7 @@
 						const {
 							awardCountsById: t = {}
 						} = d, r = t[e.id], s = n.icon32[e.id], o = n.icon128[e.id];
-						return a.a.createElement(K, {
+						return a.a.createElement(Y, {
 							award: e,
 							className: le.a.clickablePlaqueItem,
 							count: r,
@@ -1824,8 +1824,8 @@
 				W = r("./src/reddit/models/Flair/index.ts"),
 				V = r("./src/reddit/models/NewStructuredStyles/index.ts"),
 				J = r("./src/reddit/models/Post/index.ts"),
-				K = r("./src/reddit/models/Subreddit/index.ts"),
-				Y = r("./src/reddit/selectors/authorFlair.ts"),
+				Y = r("./src/reddit/models/Subreddit/index.ts"),
+				K = r("./src/reddit/selectors/authorFlair.ts"),
 				$ = r("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
 				X = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				Z = r("./src/reddit/selectors/platform.ts"),
@@ -1905,12 +1905,12 @@
 						showTimestamp: B = !0,
 						subredditOrProfile: L,
 						tooltipType: F
-					} = e, H = Object(a.d)(), U = Object(g.a)(), G = Object(a.e)($.a), V = Object(a.e)(Z.d), te = Object(a.e)(Z.g) || ["popular", "all"].includes(V || ""), ae = !(!x.isSponsored || !G || Object(m.Xd)(G));
+					} = e, H = Object(a.d)(), U = Object(g.a)(), G = Object(a.e)($.a), V = Object(a.e)(Z.d), te = Object(a.e)(Z.g) || ["popular", "all"].includes(V || ""), ae = !(!x.isSponsored || !G || Object(m.Yd)(G));
 					Object(s.useEffect)(() => {
 						ae && H(Object(b.d)(x.author))
 					}, []);
 					const ce = x.belongsTo.id,
-						ue = Object(s.useCallback)(e => Object(Y.a)(e, {
+						ue = Object(s.useCallback)(e => Object(K.a)(e, {
 							post: x
 						}), [x]),
 						me = Object(a.e)(ue),
@@ -1933,7 +1933,7 @@
 						Oe = l && l.meta && l.meta.name === i.Jb.COMMENTS,
 						je = Object(f.a)(x),
 						ye = Ae === W.b.Left,
-						Ee = x.authorIsContractor && !!L && L.type === K.f.EmployeesOnly,
+						Ee = x.authorIsContractor && !!L && L.type === Y.f.EmployeesOnly,
 						Te = !!L && we,
 						Ce = !d && !Oe,
 						Ie = () => n.a.createElement(ie, {
@@ -3066,13 +3066,13 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.Nb
 					});
-					return !(!t || Object(s.Xd)(t))
+					return !(!t || Object(s.Yd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
 						experimentName: s.Nb
-					}) === s.cc.ListingEnabled
+					}) === s.dc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3132,4 +3132,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.be55b2f698991bdc86bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.fbef1bf7ea1c9881800e.js.map
