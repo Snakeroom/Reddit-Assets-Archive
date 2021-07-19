@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.f9eeb0f98abcebcd2a95.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e2ecf06b4f1c907d3779.js
+// Retrieved at 7/19/2021, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -22050,6 +22050,9 @@
 						action: "hover",
 						noun: "achieve_flair",
 						...i.defaults(a),
+						subreddit: {
+							id: t
+						},
 						userFlair: {
 							id: null == c ? void 0 : c.templateId,
 							title: c ? Object(o.g)(c) : void 0,
@@ -30155,4 +30158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f9eeb0f98abcebcd2a95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e2ecf06b4f1c907d3779.js.map

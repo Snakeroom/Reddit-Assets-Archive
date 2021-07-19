@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.9b5a3d3f0a2240917274.js
-// Retrieved at 7/15/2021, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.44ae11e24f5bb1c0a6ed.js
+// Retrieved at 7/19/2021, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2999,6 +2999,9 @@
 						action: "hover",
 						noun: "achieve_flair",
 						...a.defaults(o),
+						subreddit: {
+							id: t
+						},
 						userFlair: {
 							id: null == c ? void 0 : c.templateId,
 							title: c ? Object(s.g)(c) : void 0,
@@ -3757,4 +3760,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9b5a3d3f0a2240917274.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.44ae11e24f5bb1c0a6ed.js.map
