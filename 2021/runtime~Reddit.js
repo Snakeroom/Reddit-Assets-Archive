@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.cfa1b5551afa645ea6d9.js
-// Retrieved at 7/15/2021, 8:00:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d7566da000242671da76.js
+// Retrieved at 7/19/2021, 10:50:11 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -628,7 +628,7 @@
 					NotificationsPrePromptLoader: "a97a4ca8feba3044fe8e",
 					PostFlowUpsellModal: "3fa16b2162786a0ceda3",
 					PowerupSuccessModal: "c38b43b84846b889a8b0",
-					Powerups: "ee60eede02fad8a0a940",
+					Powerups: "e258fc61c22773027d03",
 					Premium: "57c14ba60a517b9cca48",
 					ProfileModeration: "d8a320121ff28ef9599f",
 					PushNotifications: "31d6cfe0d16ae931b73c",
@@ -1225,7 +1225,7 @@
 						NotificationsPrePromptLoader: "b1df6fb919c422d6fb73",
 						PostFlowUpsellModal: "07aa1033436b4f6e41aa",
 						PowerupSuccessModal: "29cb4e8b11b9c30489da",
-						Powerups: "74eacd014c69561ebd41",
+						Powerups: "817d0be7e2b921873a84",
 						Premium: "303bc6f99db12887f174",
 						ProfileModeration: "6a6a735757e7baa11d47",
 						PushNotifications: "89032e1d9dd3add50b69",
@@ -1246,16 +1246,16 @@
 						"css-vars-ponyfill": "18b8ed7e7877c1f91961",
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
 						"reddit-components-CoinPurchaseDropdown": "ef27109bfdac359d39d9",
-						"translations/de_DE-json": "1fa95c9a0db15a84967f",
-						"translations/es_ES-json": "3477ad9abf54bb5ce743",
-						"translations/es_MX-json": "d47d17515696a96cbd29",
-						"translations/fr_FR-json": "3e9d83c96b0ebb1dc573",
-						"translations/it_IT-json": "8b10a461b67f2d05e368",
-						"translations/pseudo_ext-json": "0a76eff801a1243ba073",
-						"translations/pseudo_long-json": "079c6856e1d882164fd3",
-						"translations/pseudo_short-json": "53b6ca8c7a85263531f0",
-						"translations/pt_BR-json": "8b0ac9060a790aab3a8d",
-						"translations/pt_PT-json": "7c09e2b7429a2a9c08a3",
+						"translations/de_DE-json": "a5d94e19b5f0081b41b6",
+						"translations/es_ES-json": "6c6a9ec67a0363151645",
+						"translations/es_MX-json": "72138e1256043d0147bc",
+						"translations/fr_FR-json": "8e52bd2c73929ef9581f",
+						"translations/it_IT-json": "ecddd6ea12dad63d6549",
+						"translations/pseudo_ext-json": "27fe5da3f35bcb7d8542",
+						"translations/pseudo_long-json": "c91e7e227cc5caa95510",
+						"translations/pseudo_short-json": "6d15eec2d0d41c6e92af",
+						"translations/pt_BR-json": "2dc30012125a854f55d5",
+						"translations/pt_PT-json": "32a46df51846a3b465c6",
 						"vendors~AdminPanel": "a5bc90ca020df1ed6380",
 						AdminPanel: "8c6c97ae1677dba76643",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
@@ -1495,4 +1495,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.cfa1b5551afa645ea6d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d7566da000242671da76.js.map
