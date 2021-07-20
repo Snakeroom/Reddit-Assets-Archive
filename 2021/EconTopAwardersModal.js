@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4957257047b355eb07d7.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.7a442e2c55bf38d54a15.js
+// Retrieved at 7/20/2021, 6:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -1366,6 +1366,7 @@
 							type: "profile"
 						},
 						getEventFactory: e => Object(U.g)(e ? "unfollow" : "follow", a),
+						isFullWidth: !0,
 						small: !0
 					})), P && a && !N && v && s.a.createElement(V, {
 						contextId: a,
@@ -2049,7 +2050,8 @@
 						to: `${h.a}/${t}`
 					}, s.a.createElement(b.q, {
 						onClick: n,
-						className: Object(o.a)(E.a.snoovatarButton, E.a.snoovatarExtraPadding, E.a.compactButtonLayout)
+						className: Object(o.a)(E.a.snoovatarButton, E.a.snoovatarExtraPadding, E.a.compactButtonLayout),
+						isFullWidth: !0
 					}, s.a.createElement(f.a, {
 						className: E.a.shirtIcon
 					}), I._("Try this Look", null, {
@@ -2629,4 +2631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4957257047b355eb07d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.7a442e2c55bf38d54a15.js.map

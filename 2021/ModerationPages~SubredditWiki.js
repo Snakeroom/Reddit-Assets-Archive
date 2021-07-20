@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0f5d6cf2894355be43ef.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2a283f6f887e230ce45f.js
+// Retrieved at 7/20/2021, 6:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -3280,6 +3280,7 @@
 							type: "profile"
 						},
 						getEventFactory: e => Object(P.g)(e ? "unfollow" : "follow", r),
+						isFullWidth: !0,
 						small: !0
 					})), S && r && !E && f && s.a.createElement($, {
 						contextId: r,
@@ -4018,7 +4019,8 @@
 						to: `${v.a}/${t}`
 					}, s.a.createElement(p.q, {
 						onClick: a,
-						className: Object(i.a)(k.a.snoovatarButton, k.a.snoovatarExtraPadding, k.a.compactButtonLayout)
+						className: Object(i.a)(k.a.snoovatarButton, k.a.snoovatarExtraPadding, k.a.compactButtonLayout),
+						isFullWidth: !0
 					}, s.a.createElement(h.a, {
 						className: k.a.shirtIcon
 					}), x._("Try this Look", null, {
@@ -4702,4 +4704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0f5d6cf2894355be43ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2a283f6f887e230ce45f.js.map

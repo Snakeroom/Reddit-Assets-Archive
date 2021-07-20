@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3ef536ba9fd0dbab95ad.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ad4d92daae8db778820e.js
+// Retrieved at 7/20/2021, 6:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3859,6 +3859,7 @@
 							type: "profile"
 						},
 						getEventFactory: e => Object(P.g)(e ? "unfollow" : "follow", n),
+						isFullWidth: !0,
 						small: !0
 					})), N && n && !w && h && s.a.createElement(X, {
 						contextId: n,
@@ -5526,7 +5527,8 @@
 						to: `${g.a}/${t}`
 					}, s.a.createElement(b.q, {
 						onClick: a,
-						className: Object(o.a)(_.a.snoovatarButton, _.a.snoovatarExtraPadding, _.a.compactButtonLayout)
+						className: Object(o.a)(_.a.snoovatarButton, _.a.snoovatarExtraPadding, _.a.compactButtonLayout),
+						isFullWidth: !0
 					}, s.a.createElement(f.a, {
 						className: _.a.shirtIcon
 					}), y._("Try this Look", null, {
@@ -14282,4 +14284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3ef536ba9fd0dbab95ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ad4d92daae8db778820e.js.map

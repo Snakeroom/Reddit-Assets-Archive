@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.a8e5ae3aeb481979548b.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.d54b202cccdddf89bb7d.js
+// Retrieved at 7/20/2021, 6:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
@@ -1291,6 +1291,7 @@
 							type: "profile"
 						},
 						getEventFactory: e => Object(S.g)(e ? "unfollow" : "follow", n),
+						isFullWidth: !0,
 						small: !0
 					})), P && n && !j && f && s.a.createElement(Q, {
 						contextId: n,
@@ -2573,7 +2574,8 @@
 						to: `${v.a}/${t}`
 					}, s.a.createElement(b.q, {
 						onClick: a,
-						className: Object(o.a)(_.a.snoovatarButton, _.a.snoovatarExtraPadding, _.a.compactButtonLayout)
+						className: Object(o.a)(_.a.snoovatarButton, _.a.snoovatarExtraPadding, _.a.compactButtonLayout),
+						isFullWidth: !0
 					}, s.a.createElement(h.a, {
 						className: _.a.shirtIcon
 					}), I._("Try this Look", null, {
@@ -3730,4 +3732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a8e5ae3aeb481979548b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.d54b202cccdddf89bb7d.js.map
