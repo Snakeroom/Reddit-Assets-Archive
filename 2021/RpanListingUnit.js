@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.38a03268dd190f01de1e.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.82945c1b113929a76e8d.js
+// Retrieved at 7/20/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2017,17 +2017,16 @@
 				_ = r("./src/reddit/models/Vote/index.ts"),
 				v = r("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				O = r("./src/reddit/selectors/meta.ts"),
-				S = r("./src/reddit/selectors/platform.ts"),
-				C = r("./src/reddit/controls/Score/index.m.less"),
-				y = r.n(C);
-			const I = e => e.voteState === _.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === _.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(b.a)(Object(h.a)(e)),
-				T = () => 0,
-				x = Object(d.b)(e => ({
+				S = r("./src/reddit/controls/Score/index.m.less"),
+				C = r.n(S);
+			const y = e => e.voteState === _.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === _.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(b.a)(Object(h.a)(e)),
+				I = () => 0,
+				T = Object(d.b)(e => ({
 					locale: Object(O.i)(e)
 				})),
-				A = Object(i.a)(e => {
+				x = Object(i.a)(e => {
 					const t = {
-							color: e.light ? p.b.lightboxHeaderText : I(e)
+							color: e.light ? p.b.lightboxHeaderText : y(e)
 						},
 						{
 							score: r,
@@ -2038,12 +2037,12 @@
 						} = e,
 						_ = Object(d.d)(),
 						O = null == h ? void 0 : h.startsWith("en"),
-						C = e.isScoreHidden ? O ? s.fbt._("Vote", null, {
+						S = e.isScoreHidden ? O ? s.fbt._("Vote", null, {
 							hk: "2TMson"
 						}) : c.a.createElement("span", {
-							className: y.a.dot
+							className: C.a.dot
 						}, "•") : Object(a.b)(r),
-						x = Object(o.useCallback)(e => {
+						T = Object(o.useCallback)(e => {
 							const {
 								voteCountChange: t
 							} = e.subscribe.data;
@@ -2052,7 +2051,7 @@
 								delta: t
 							}))
 						}, [_, i]),
-						A = Object(o.useRef)({
+						x = Object(o.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -2061,30 +2060,29 @@
 								}
 							}
 						}),
-						R = Object(E.a)(),
-						j = Object(o.useCallback)(() => {
-							R(Object(f.m)(i))
-						}, [R, i]),
-						w = Object(d.e)(S.f),
-						N = !e.isScoreHidden && b && r < v.a;
+						A = Object(E.a)(),
+						R = Object(o.useCallback)(() => {
+							A(Object(f.m)(i))
+						}, [A, i]),
+						j = !e.isScoreHidden && b && r < v.a;
 					return c.a.createElement("div", {
-						className: Object(n.a)(y.a.score, e.className),
+						className: Object(n.a)(C.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, N ? c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
+					}, j ? c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
 						initialDisplayCount: r,
 						countToUpperBound: r,
-						initialDelay: T,
-						subsequentRecurringDelay: T,
-						incrementDelta: T,
-						shouldDisjointAnimation: !w,
-						inViewPortAnimatingCallbackOnce: j
-					})) : C, (N || g) && c.a.createElement(l.a, {
-						variables: A.current,
-						onData: N ? x : T,
+						initialDelay: I,
+						subsequentRecurringDelay: I,
+						incrementDelta: I,
+						shouldDisjointAnimation: !0,
+						inViewPortAnimatingCallbackOnce: R
+					})) : S, (j || g) && c.a.createElement(l.a, {
+						variables: x.current,
+						onData: j ? T : I,
 						queryKey: "postVoteCount"
 					}))
 				});
-			t.a = x(A)
+			t.a = T(x)
 		},
 		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, r) {
 			"use strict";
@@ -3760,4 +3758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.38a03268dd190f01de1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.82945c1b113929a76e8d.js.map

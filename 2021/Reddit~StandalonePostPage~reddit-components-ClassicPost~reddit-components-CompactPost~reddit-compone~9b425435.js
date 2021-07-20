@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.5e4f46afbdbddbad7ac9.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.38bacc57d7e986af2119.js
+// Retrieved at 7/20/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -1209,17 +1209,16 @@
 				O = r("./src/reddit/models/Vote/index.ts"),
 				w = r("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				j = r("./src/reddit/selectors/meta.ts"),
-				x = r("./src/reddit/selectors/platform.ts"),
-				y = r("./src/reddit/controls/Score/index.m.less"),
-				_ = r.n(y);
-			const C = e => e.voteState === O.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === O.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(b.a)(Object(f.a)(e)),
-				I = () => 0,
-				k = Object(d.b)(e => ({
+				x = r("./src/reddit/controls/Score/index.m.less"),
+				y = r.n(x);
+			const _ = e => e.voteState === O.a.downvoted ? Object(g.a)(e).voteText.downvote : e.voteState === O.a.upvoted ? Object(g.a)(e).voteText.upvote : Object(b.a)(Object(f.a)(e)),
+				C = () => 0,
+				I = Object(d.b)(e => ({
 					locale: Object(j.i)(e)
 				})),
-				P = Object(o.a)(e => {
+				k = Object(o.a)(e => {
 					const t = {
-							color: e.light ? p.b.lightboxHeaderText : C(e)
+							color: e.light ? p.b.lightboxHeaderText : _(e)
 						},
 						{
 							score: r,
@@ -1230,12 +1229,12 @@
 						} = e,
 						O = Object(d.d)(),
 						j = null == f ? void 0 : f.startsWith("en"),
-						y = e.isScoreHidden ? j ? n.fbt._("Vote", null, {
+						x = e.isScoreHidden ? j ? n.fbt._("Vote", null, {
 							hk: "2TMson"
 						}) : a.a.createElement("span", {
-							className: _.a.dot
+							className: y.a.dot
 						}, "•") : Object(c.b)(r),
-						k = Object(i.useCallback)(e => {
+						I = Object(i.useCallback)(e => {
 							const {
 								voteCountChange: t
 							} = e.subscribe.data;
@@ -1244,7 +1243,7 @@
 								delta: t
 							}))
 						}, [O, o]),
-						P = Object(i.useRef)({
+						k = Object(i.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -1253,30 +1252,29 @@
 								}
 							}
 						}),
-						E = Object(h.a)(),
-						S = Object(i.useCallback)(() => {
-							E(Object(v.m)(o))
-						}, [E, o]),
-						A = Object(d.e)(x.f),
-						T = !e.isScoreHidden && b && r < w.a;
+						P = Object(h.a)(),
+						E = Object(i.useCallback)(() => {
+							P(Object(v.m)(o))
+						}, [P, o]),
+						S = !e.isScoreHidden && b && r < w.a;
 					return a.a.createElement("div", {
-						className: Object(s.a)(_.a.score, e.className),
+						className: Object(s.a)(y.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t
-					}, T ? a.a.createElement(a.a.Fragment, null, a.a.createElement(m.a, {
+					}, S ? a.a.createElement(a.a.Fragment, null, a.a.createElement(m.a, {
 						initialDisplayCount: r,
 						countToUpperBound: r,
-						initialDelay: I,
-						subsequentRecurringDelay: I,
-						incrementDelta: I,
-						shouldDisjointAnimation: !A,
-						inViewPortAnimatingCallbackOnce: S
-					})) : y, (T || g) && a.a.createElement(l.a, {
-						variables: P.current,
-						onData: T ? k : I,
+						initialDelay: C,
+						subsequentRecurringDelay: C,
+						incrementDelta: C,
+						shouldDisjointAnimation: !0,
+						inViewPortAnimatingCallbackOnce: E
+					})) : x, (S || g) && a.a.createElement(l.a, {
+						variables: k.current,
+						onData: S ? I : C,
 						queryKey: "postVoteCount"
 					}))
 				});
-			t.a = k(P)
+			t.a = I(k)
 		},
 		"./src/reddit/controls/Upvote/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -3052,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.5e4f46afbdbddbad7ac9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.38bacc57d7e986af2119.js.map

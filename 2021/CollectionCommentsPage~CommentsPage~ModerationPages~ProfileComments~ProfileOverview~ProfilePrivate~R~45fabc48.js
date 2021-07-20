@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.65a34cc4cd3085b91aad.js
-// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.38e35c36e09fa0f1b05e.js
+// Retrieved at 7/20/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -931,19 +931,18 @@
 				k = o("./src/reddit/selectors/chatPost.ts"),
 				E = o("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
 				w = o("./src/reddit/selectors/experiments/postSeo.ts"),
-				I = o("./src/reddit/selectors/platform.ts"),
-				y = o("./src/reddit/selectors/posts.ts"),
-				P = o("./src/reddit/selectors/user.ts"),
-				T = o("./src/reddit/components/CommentsLink/index.m.less"),
-				N = o.n(T);
-			const S = () => 0,
-				M = Object(i.b)(() => Object(c.c)({
+				I = o("./src/reddit/selectors/posts.ts"),
+				y = o("./src/reddit/selectors/user.ts"),
+				P = o("./src/reddit/components/CommentsLink/index.m.less"),
+				T = o.n(P);
+			const N = () => 0,
+				S = Object(i.b)(() => Object(c.c)({
 					isChatPost: k.d,
 					isPostSEOEligible: w.e,
-					postPermalink: y.E,
-					shouldOpenPostInNewTab: P.bb
+					postPermalink: I.E,
+					shouldOpenPostInNewTab: y.bb
 				})),
-				F = ({
+				M = ({
 					hasModPostPerms: e,
 					isCountAnimShadowTestEnabled: t,
 					isChatPost: o,
@@ -964,7 +963,7 @@
 						hk: "1QeOde"
 					}));
 					const w = Object(i.d)(),
-						y = Object(n.useCallback)(e => {
+						I = Object(n.useCallback)(e => {
 							const {
 								commentCountChange: t
 							} = e.subscribe.data;
@@ -973,7 +972,7 @@
 								delta: t
 							}))
 						}, [w, h]),
-						P = Object(n.useRef)({
+						y = Object(n.useRef)({
 							input: {
 								channel: {
 									teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -982,36 +981,35 @@
 								}
 							}
 						}),
-						T = Object(g.a)(),
-						M = Object(n.useCallback)(() => {
-							T(Object(O.a)(h))
-						}, [T, h]),
-						F = Object(i.e)(I.f),
-						R = a && l < E.a;
+						P = Object(g.a)(),
+						S = Object(n.useCallback)(() => {
+							P(Object(O.a)(h))
+						}, [P, h]),
+						M = a && l < E.a;
 					return r.a.createElement(n.Fragment, null, f && r.a.createElement(j.a, {
-						className: N.a.commentIcon,
+						className: T.a.commentIcon,
 						role: "presentation"
 					}), v && r.a.createElement("span", {
-						className: N.a.text
-					}, R ? r.a.createElement(b.a, {
+						className: T.a.text
+					}, M ? r.a.createElement(b.a, {
 						initialDisplayCount: l,
 						countToUpperBound: l,
-						initialDelay: S,
-						subsequentRecurringDelay: S,
-						incrementDelta: S,
-						shouldDisjointAnimation: !F,
-						inViewPortAnimatingCallbackOnce: M
-					}) : k, (R || t) && r.a.createElement(u.a, {
-						variables: P.current,
-						onData: R ? y : S,
+						initialDelay: N,
+						subsequentRecurringDelay: N,
+						incrementDelta: N,
+						shouldDisjointAnimation: !0,
+						inViewPortAnimatingCallbackOnce: S
+					}) : k, (M || t) && r.a.createElement(u.a, {
+						variables: y.current,
+						onData: M ? I : N,
 						queryKey: "postCommentCount"
-					})), v && (!c || !e) && a && r.a.createElement("span", {
-						className: Object(d.a)(N.a.text, N.a.commentsText)
+					})), v && (!c || !e) && M && r.a.createElement("span", {
+						className: Object(d.a)(T.a.text, T.a.commentsText)
 					}, s.fbt._("comments", null, {
 						hk: "ZQ8MY"
 					})))
 				};
-			t.a = M(e => {
+			t.a = S(e => {
 				const {
 					className: t,
 					hasModPostPerms: o,
@@ -1033,7 +1031,7 @@
 					postId: I,
 					isCommentCountAnimation: y,
 					isCountAnimShadowTestEnabled: P
-				} = e, T = c && !i && !u, S = i && !p, M = Object(C.a)(), R = Object(_.a)(f.hc) === f.lc.Enabled, A = r.a.createElement(F, {
+				} = e, N = c && !i && !u, S = i && !p, F = Object(C.a)(), R = Object(_.a)(f.hc) === f.lc.Enabled, A = r.a.createElement(M, {
 					hasModPostPerms: o,
 					isCountAnimShadowTestEnabled: !!P,
 					isChatPost: n,
@@ -1046,16 +1044,16 @@
 					text: E,
 					type: w
 				});
-				return T ? r.a.createElement("div", {
-					className: Object(d.a)(N.a.commentsLink, N.a.defaultCursorWrapper, t),
+				return N ? r.a.createElement("div", {
+					className: Object(d.a)(T.a.commentsLink, T.a.defaultCursorWrapper, t),
 					onClick: x
 				}, A) : r.a.createElement(a.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
 					"data-test-id": h.a,
-					className: Object(d.a)(N.a.commentsLink, N.a.link, t),
+					className: Object(d.a)(T.a.commentsLink, T.a.link, t),
 					target: s || g ? "_blank" : void 0,
-					to: S ? Object(v.b)(O) : R ? Object(l.a)(O, !0, M) : Object(l.a)(O),
+					to: S ? Object(v.b)(O) : R ? Object(l.a)(O, !0, F) : Object(l.a)(O),
 					onClick: x
 				}, A)
 			})
@@ -4825,4 +4823,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.65a34cc4cd3085b91aad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.38e35c36e09fa0f1b05e.js.map
