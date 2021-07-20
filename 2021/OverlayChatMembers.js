@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayChatMembers.eee046e138b31ad069e5.js
-// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayChatMembers.6561f8d0d7910d17ee21.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayChatMembers"], {
 		"./src/chat/components/OverlayChatMembers/index.m.less": function(e, t, r) {
@@ -23,8 +23,8 @@
 				i = r("./src/chat/components/Scroller/index.tsx"),
 				d = r("./src/chat/constants/channels.ts"),
 				u = r("./src/chat/controls/Overlay/index.tsx"),
-				b = r("./src/chat/controls/OverlayControlBar/index.tsx"),
-				h = r("./src/chat/controls/OverlayHeader/index.tsx"),
+				h = r("./src/chat/controls/OverlayControlBar/index.tsx"),
+				b = r("./src/chat/controls/OverlayHeader/index.tsx"),
 				p = r("./src/chat/helpers/chatSelector.ts"),
 				y = r("./src/chat/selectors/channels.ts"),
 				x = r("./src/chat/selectors/members.ts"),
@@ -66,7 +66,7 @@
 					return l || o.length || c(), s.a.createElement(u.a, {
 						form: !0,
 						innerContent: !0
-					}, s.a.createElement(h.a, {
+					}, s.a.createElement(b.a, {
 						title: a.fbt._({
 							"*": "{number of members} group members",
 							_1: "1 group member"
@@ -86,7 +86,7 @@
 						role: "progressbar"
 					}, a.fbt._("Loading members...", null, {
 						hk: "2sCDrM"
-					}))), s.a.createElement(b.a, {
+					}))), s.a.createElement(h.a, {
 						secondaryButtonOnly: !0,
 						secondaryButtonText: a.fbt._("Done", null, {
 							hk: "2xerWP"
@@ -124,49 +124,49 @@
 				i = r("./src/chat/controls/Button/index.tsx"),
 				d = r("./src/chat/helpers/dom.ts"),
 				u = r("./src/chat/controls/OverlayControlBar/index.m.less"),
-				b = r.n(u);
-			const h = Object(o.b)(void 0, e => ({
+				h = r.n(u);
+			const b = Object(o.b)(void 0, e => ({
 				onSubmit: () => {},
 				onCancel: Object(d.b)(() => e(Object(c.a)()))
 			}))(e => s.a.createElement("div", {
 				className: Object(m.a)({
-					[b.a.primary]: e.primaryButtonOnly,
-					[b.a.NoHeaderText]: !e.children
-				}, b.a.OverlayControlBar, e.className)
+					[h.a.primary]: e.primaryButtonOnly,
+					[h.a.NoHeaderText]: !e.children
+				}, h.a.OverlayControlBar, e.className)
 			}, e.children && s.a.createElement("span", {
-				className: b.a.HeaderText
+				className: h.a.HeaderText
 			}, e.children), s.a.createElement("div", {
-				className: b.a.ButtonsWrapper
+				className: h.a.ButtonsWrapper
 			}, e.primaryButtonBlock && s.a.createElement(i.a, {
 				onClick: e.primaryButtonBlockAction || e.onCancel,
-				className: Object(m.a)(b.a.Button, b.a.NoBorderPrimaryButton),
+				className: Object(m.a)(h.a.Button, h.a.NoBorderPrimaryButton),
 				secondary: !0,
 				noBorder: !0
 			}, e.primaryButtonBlockText || a.fbt._("Block", null, {
 				hk: "4CA4VX"
 			})), !e.primaryButtonOnly && (e.secondaryButtonCTLOptions ? s.a.createElement(i.a, {
-				className: b.a.Button,
+				className: h.a.Button,
 				href: `${l.a.redditHelpUrl}/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting`,
 				secondary: !0
 			}, a.fbt._("Other Options", null, {
 				hk: "1RadlV"
 			})) : s.a.createElement(i.a, {
-				className: b.a.Button,
+				className: h.a.Button,
 				onClick: e.secondaryButtonAction || e.onCancel,
 				primary: !!e.secondaryButtonOnly,
 				secondary: !e.secondaryButtonOnly
 			}, e.secondaryButtonText || a.fbt._("Cancel", null, {
 				hk: "2TSLl5"
 			}))), !e.secondaryButtonOnly && s.a.createElement(i.a, {
-				className: b.a.Button,
+				className: h.a.Button,
 				type: "submit",
 				primary: !0,
 				onClick: e.primaryButtonAction || e.onSubmit,
 				disabled: e.primaryButtonDisabled
 			}, e.primaryButtonText || a.fbt._("Submit", null, {
-				hk: "2Iwjdv"
+				hk: "4aU3dh"
 			})))));
-			h.displayName = "OverlayControlBar", t.a = h
+			b.displayName = "OverlayControlBar", t.a = b
 		},
 		"./src/chat/controls/OverlayHeader/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -205,4 +205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.eee046e138b31ad069e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayChatMembers.6561f8d0d7910d17ee21.js.map

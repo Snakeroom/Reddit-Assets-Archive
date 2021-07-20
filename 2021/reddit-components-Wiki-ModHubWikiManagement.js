@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b7d6406bda5602f38144.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.6e63f0ed51b7a432a4c6.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -718,8 +718,8 @@
 				R = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				T = n("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
 				M = n("./src/reddit/components/Scroller/Simple.tsx"),
-				S = n("./src/reddit/components/SubredditModerationSearch/index.tsx"),
-				O = n("./src/reddit/components/SubredditModerationTopBar/index.tsx"),
+				O = n("./src/reddit/components/SubredditModerationSearch/index.tsx"),
+				S = n("./src/reddit/components/SubredditModerationTopBar/index.tsx"),
 				j = n("./src/reddit/components/SubredditModerationUserItem/index.tsx"),
 				W = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				L = n("./src/reddit/constants/componentSizes.ts"),
@@ -727,18 +727,18 @@
 				H = n("./src/reddit/helpers/trackers/subredditWiki.ts"),
 				I = n("./src/reddit/selectors/activeModalId.ts"),
 				A = n("./src/reddit/selectors/subredditWiki.ts"),
-				D = n("./src/higherOrderComponents/asModal/index.tsx"),
-				U = n("./src/reddit/components/CharacterCountdown/index.tsx"),
+				U = n("./src/higherOrderComponents/asModal/index.tsx"),
+				D = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				z = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				F = n("./src/reddit/controls/TextButton/index.tsx"),
 				V = n("./src/reddit/helpers/isValidUsername/index.tsx"),
-				X = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				G = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				q = n("./src/reddit/models/SubredditModeration/index.ts"),
+				q = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
+				X = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				G = n("./src/reddit/models/SubredditModeration/index.ts"),
 				K = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
 				Z = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
-				J = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
-				Y = n.n(J);
+				Y = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
+				J = n.n(Y);
 			const Q = 300,
 				$ = Object(C.b)(null, (e, {
 					subredditName: t
@@ -761,7 +761,7 @@
 						})
 					}, this.onChangeBanDuration = e => {
 						const t = Number(e.currentTarget.value);
-						"number" == typeof t && (t < 0 || t > q.b || this.setState({
+						"number" == typeof t && (t < 0 || t > G.b || this.setState({
 							duration: t
 						}))
 					}, this.togglePermanent = e => {
@@ -770,7 +770,7 @@
 							duration: void 0
 						})
 					}, this.onSubmit = () => {
-						const e = Object(X.a)(this.state.username),
+						const e = Object(q.a)(this.state.username),
 							{
 								note: t,
 								banReason: n,
@@ -797,7 +797,7 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(z.d, null, s.a.createElement(z.h, null, s.a.createElement(G.a, null, s.a.createElement(z.p, null, w.fbt._("Ban wiki contributor", null, {
+					return s.a.createElement(z.d, null, s.a.createElement(z.h, null, s.a.createElement(X.a, null, s.a.createElement(z.p, null, w.fbt._("Ban wiki contributor", null, {
 						hk: "1d5Hrk"
 					}), e.bannedUser && `: u/${e.bannedUser.username}`), s.a.createElement(F.a, {
 						onClick: e.toggleModal
@@ -823,7 +823,7 @@
 							hk: "1dzUjv"
 						}),
 						value: t.note
-					}), s.a.createElement(U.a, {
+					}), s.a.createElement(D.a, {
 						maxChars: Q,
 						text: t.note
 					})), s.a.createElement(K.a, {
@@ -836,7 +836,7 @@
 					}, w.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), s.a.createElement(B.i, {
-						className: Y.a.primaryButton,
+						className: J.a.primaryButton,
 						onClick: this.onSubmit,
 						disabled: !Object(V.a)(t.username)
 					}, w.fbt._("Ban user", null, {
@@ -844,7 +844,7 @@
 					}))))
 				}
 			}
-			var te = Object(D.a)($(ee));
+			var te = Object(U.a)($(ee));
 			const ne = Object(E.c)({
 				isAddBannedContributorModalOpen: e => "WikiBannedContributers--BanContributorModal" === Object(I.a)(e),
 				isConfirmModalOpen: e => "WikiBannedContributers--RemoveBannedWikiContributor" === Object(I.a)(e),
@@ -909,7 +909,7 @@
 							tertiaryButton: s.a.createElement(B.o, {
 								onClick: () => this.onClickRemove(t.id)
 							}, w.fbt._("Remove", null, {
-								hk: "1P1gt2"
+								hk: "3tYl0U"
 							})),
 							timeAgo: `${i} (${o})`,
 							key: t.id
@@ -918,7 +918,7 @@
 						text: w.fbt._("No banned wiki contributors in {subredditName}", [w.fbt._param("subredditName", this.props.subredditName)], {
 							hk: "x9Dwq"
 						})
-					}), this.renderSearchState = () => s.a.createElement(S.a, {
+					}), this.renderSearchState = () => s.a.createElement(O.a, {
 						cancelSearch: this.cancelSearch,
 						noResultsFound: !this.props.searchResult,
 						searchPending: this.state.isSearchPending,
@@ -940,7 +940,7 @@
 						hk: "1vQTTH"
 					}))), s.a.createElement(p.a, null, s.a.createElement(p.b, null, w.fbt._("Banned wiki contributors", null, {
 						hk: "338WU8"
-					})), s.a.createElement(O.b, {
+					})), s.a.createElement(S.b, {
 						activeSearchQuery: this.state.searchTerm,
 						onSearch: this.onSearch
 					}), e.wikiContributors.length ? t.searchTerm ? this.renderSearchState() : s.a.createElement(M.b, {
@@ -962,7 +962,7 @@
 						withOverlay: !0
 					}), t.userToRemove && e.isConfirmModalOpen && s.a.createElement(R.a, {
 						actionText: w.fbt._("Remove", null, {
-							hk: "1P1gt2"
+							hk: "3tYl0U"
 						}),
 						headerText: w.fbt._("Remove banned wiki contributor?", null, {
 							hk: "4E1qjp"
@@ -1001,7 +1001,7 @@
 							username: e.currentTarget.value
 						})
 					}, this.onSubmit = () => {
-						const e = Object(X.a)(this.state.username);
+						const e = Object(q.a)(this.state.username);
 						this.props.addWikiContributor(e), this.props.sendEvent(H.b), this.props.toggleModal()
 					}, this.state = {
 						username: ""
@@ -1012,7 +1012,7 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(z.d, null, s.a.createElement(z.h, null, s.a.createElement(G.a, null, s.a.createElement(z.p, null, w.fbt._("Add wiki contributor", null, {
+					return s.a.createElement(z.d, null, s.a.createElement(z.h, null, s.a.createElement(X.a, null, s.a.createElement(z.p, null, w.fbt._("Add wiki contributor", null, {
 						hk: "4Df0lQ"
 					})), s.a.createElement(F.a, {
 						onClick: e.toggleModal
@@ -1040,7 +1040,7 @@
 					}))))
 				}
 			}
-			var ue = Object(D.a)(le(ce));
+			var ue = Object(U.a)(le(ce));
 			const me = Object(E.c)({
 				isAddContributorModalOpen: e => "WikiContributers--AddContributorModal" === Object(I.a)(e),
 				isConfirmModalOpen: e => "WikiContributers--RemoveContributor" === Object(I.a)(e),
@@ -1088,7 +1088,7 @@
 							secondaryButton: s.a.createElement(B.o, {
 								onClick: () => this.onClickRemove(e.id)
 							}, w.fbt._("Remove", null, {
-								hk: "2trU4Z"
+								hk: "3tYl0U"
 							})),
 							timeAgo: n
 						})
@@ -1096,7 +1096,7 @@
 						text: w.fbt._("No wiki contributors in {subredditName}", [w.fbt._param("subredditName", this.props.subredditName)], {
 							hk: "37wxec"
 						})
-					}), this.renderSearchState = () => s.a.createElement(S.a, {
+					}), this.renderSearchState = () => s.a.createElement(O.a, {
 						cancelSearch: this.cancelSearch,
 						noResultsFound: !this.props.searchResult,
 						searchPending: this.state.isSearchPending,
@@ -1119,7 +1119,7 @@
 						hk: "4v9hcQ"
 					}))), s.a.createElement(p.a, null, s.a.createElement(p.b, null, w.fbt._("Added wiki contributors", null, {
 						hk: "4FzyZs"
-					})), s.a.createElement(O.b, {
+					})), s.a.createElement(S.b, {
 						activeSearchQuery: this.state.searchTerm,
 						onSearch: this.onSearch
 					}), e.wikiContributors.length ? t.searchTerm ? this.renderSearchState() : s.a.createElement(M.b, {
@@ -1139,7 +1139,7 @@
 						withOverlay: !0
 					}), t.userToRemove && e.isConfirmModalOpen && s.a.createElement(R.a, {
 						actionText: w.fbt._("Remove", null, {
-							hk: "3xHSJ8"
+							hk: "3tYl0U"
 						}),
 						headerText: w.fbt._("Remove wiki contributor?", null, {
 							hk: "kQXBL"
@@ -1178,8 +1178,8 @@
 				Re = n.n(ye),
 				Te = n("./src/lib/classNames/index.ts"),
 				Me = n("./src/reddit/components/UserNameAndIcon/index.tsx"),
-				Se = n("./src/reddit/constants/keycodes.ts"),
-				Oe = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Oe = n("./src/reddit/constants/keycodes.ts"),
+				Se = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				je = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiPageSettings/index.m.less"),
 				We = n.n(je);
 			const Le = Object(E.c)({
@@ -1203,7 +1203,7 @@
 					toggleConfirmModal: () => e(Object(N.i)("WikiPageSettings--RemoveContributor"))
 				})),
 				He = e => s.a.createElement("div", {
-					className: Object(Te.a)(e.className, Object(Oe.b)({
+					className: Object(Te.a)(e.className, Object(Se.b)({
 						isLoading: !0
 					}))
 				}),
@@ -1222,9 +1222,9 @@
 							newContributor: e.target.value
 						})
 					}, this.onKeyDown = e => {
-						e.keyCode === Se.a.Enter && this.canAdd() && this.onAddContributor()
+						e.keyCode === Oe.a.Enter && this.canAdd() && this.onAddContributor()
 					}, this.canAdd = () => !!this.state.newContributor, this.onAddContributor = () => {
-						const e = Object(X.a)(this.state.newContributor);
+						const e = Object(q.a)(this.state.newContributor);
 						this.props.addWikiPageContributor(e), this.props.sendEvent(H.c), this.setState({
 							newContributor: ""
 						})
@@ -1246,7 +1246,7 @@
 						className: We.a.removeButton,
 						onClick: () => this.onClickRemove(e.username)
 					}, w.fbt._("Remove", null, {
-						hk: "hgHlN"
+						hk: "3tYl0U"
 					}))), this.onLoadMore = async () => {
 						this.props.afterToken && !this.state.isFetchMoreContributorsPending && (this.setState({
 							isFetchMoreContributorsPending: !0
@@ -1297,7 +1297,7 @@
 						render: () => this.renderContributor(e)
 					}))), t.isFetchMoreContributorsPending && s.a.createElement(Ie, null), t.userToRemove && e.isConfirmModalOpen && s.a.createElement(R.a, {
 						actionText: w.fbt._("Remove", null, {
-							hk: "4bYR3Z"
+							hk: "3tYl0U"
 						}),
 						headerText: w.fbt._("Remove wiki contributor?", null, {
 							hk: "hADrb"
@@ -1311,8 +1311,8 @@
 					}))
 				}
 			}
-			var De = Be(Ae);
-			const Ue = Object(E.c)({
+			var Ue = Be(Ae);
+			const De = Object(E.c)({
 				subredditSettings: (e, t) => {
 					const n = Object(_e.D)(e, t.subredditName);
 					return Object(_e.U)(e, n)
@@ -1373,7 +1373,7 @@
 						disabled: t.isSavePending,
 						onClick: this.onSave
 					}, w.fbt._("Save", null, {
-						hk: "mmRlX"
+						hk: "4yMsMq"
 					})))), s.a.createElement(ke.a, {
 						title: w.fbt._("Wiki page settings", null, {
 							hk: "2l88sE"
@@ -1444,7 +1444,7 @@
 						className: We.a.inputOptionText
 					}, w.fbt._("Only approved wiki contributors for this page may edit", null, {
 						hk: "16QJXW"
-					}))))), o && s.a.createElement(De, {
+					}))))), o && s.a.createElement(Ue, {
 						afterToken: e.wikiPageSettings.afterToken,
 						sendEvent: this.props.sendEvent,
 						subredditName: e.subredditName,
@@ -1453,7 +1453,7 @@
 					})))
 				}
 			}
-			var Fe = Object(C.b)(Ue, (e, {
+			var Fe = Object(C.b)(De, (e, {
 					subredditName: t,
 					wikiPageName: n
 				}) => ({
@@ -1465,14 +1465,14 @@
 					}))
 				}))(Object(W.c)(ze)),
 				Ve = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
-				Xe = n.n(Ve);
-			const Ge = Object(u.t)(),
-				qe = () => {
+				qe = n.n(Ve);
+			const Xe = Object(u.t)(),
+				Ge = () => {
 					document.body.scrollTop = 0, document.documentElement.scrollTop = 0
 				};
 			class Ke extends s.a.Component {
 				scrollToTopIfNeeded() {
-					location.hash || qe()
+					location.hash || Ge()
 				}
 				componentDidMount() {
 					this.scrollToTopIfNeeded()
@@ -1498,10 +1498,10 @@
 						case c.m.Create:
 						case c.m.Edit:
 							return s.a.createElement(r.a, {
-								contentClassName: Xe.a.modHubPageEditorContent,
+								contentClassName: qe.a.modHubPageEditorContent,
 								isCreation: u === c.m.Create,
 								subredditName: e.name,
-								topBarClassName: Xe.a.modHubTopBar,
+								topBarClassName: qe.a.modHubTopBar,
 								wikiPageName: p
 							});
 						case c.m.Revisions:
@@ -1542,7 +1542,7 @@
 					}
 				}
 			}
-			t.default = Ge(Ke)
+			t.default = Xe(Ke)
 		},
 		"./src/reddit/components/Wiki/RevisionsHistory/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1623,16 +1623,16 @@
 				R = n.n(y),
 				T = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				M = n("./src/reddit/components/Wiki/RevisionsHistory/index.m.less"),
-				S = n.n(M);
-			var O = () => {
+				O = n.n(M);
+			var S = () => {
 					const e = s.createElement("div", {
-						className: Object(d.a)(S.a.loadingShimmer, Object(T.b)({
+						className: Object(d.a)(O.a.loadingShimmer, Object(T.b)({
 							isLoading: !0
 						}))
 					});
 					return s.createElement("div", null, R()(4, t => s.createElement("div", {
 						key: t,
-						className: S.a.loadingRow
+						className: O.a.loadingRow
 					}, e)))
 				},
 				j = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js");
@@ -1665,13 +1665,13 @@
 				H = n("./src/reddit/components/AuthorLink/index.tsx"),
 				I = n("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
 				A = n("./src/reddit/components/Wiki/common/RevisionInfo/index.tsx"),
-				D = n("./src/reddit/controls/Checkbox/index.tsx"),
-				U = n("./src/reddit/controls/InternalLink/index.tsx"),
+				U = n("./src/reddit/controls/Checkbox/index.tsx"),
+				D = n("./src/reddit/controls/InternalLink/index.tsx"),
 				z = n("./node_modules/lodash/forEach.js"),
 				F = n.n(z),
 				V = n("./src/lib/fastdom/index.ts");
 
-			function X(e) {
+			function q(e) {
 				V.a.read(() => {
 					F()(e, e => {
 						if (e instanceof HTMLElement && e.parentElement) {
@@ -1685,10 +1685,10 @@
 					})
 				})
 			}
-			const G = Object(r.c)({
+			const X = Object(r.c)({
 				revision: P.n
 			});
-			class q extends o.a.Component {
+			class G extends o.a.Component {
 				constructor() {
 					super(...arguments), this.reasonElementRef = o.a.createRef(), this.state = {}, this.onToggleHiddenClick = async () => {
 						const {
@@ -1718,7 +1718,7 @@
 					}
 				}
 				componentDidMount() {
-					this.reasonElementRef.current && X([this.reasonElementRef.current])
+					this.reasonElementRef.current && q([this.reasonElementRef.current])
 				}
 				render() {
 					const {
@@ -1737,52 +1737,52 @@
 						revision: a.id
 					}), g = !s && e, k = l.split("/").slice(-1)[0];
 					return o.a.createElement("tr", {
-						className: Object(d.a)(S.a.row, c ? S.a.mHidden : null)
+						className: Object(d.a)(O.a.row, c ? O.a.mHidden : null)
 					}, !s && o.a.createElement("td", {
-						className: S.a.cellCheckbox
-					}, o.a.createElement(D.a, {
-						className: S.a.checkbox,
+						className: O.a.cellCheckbox
+					}, o.a.createElement(U.a, {
+						className: O.a.checkbox,
 						isCheckboxSelected: t,
 						toggleCheckbox: this.onCheckboxToggle
 					})), o.a.createElement("td", {
-						className: S.a.cellTime
+						className: O.a.cellTime
 					}, Object(A.b)(a)), s && o.a.createElement("td", {
-						className: S.a.cellPage
-					}, o.a.createElement(U.a, {
-						className: S.a.wikiPageLink,
+						className: O.a.cellPage
+					}, o.a.createElement(D.a, {
+						className: O.a.wikiPageLink,
 						title: `/${l}`,
 						to: h
 					}, k)), o.a.createElement("td", {
-						className: S.a.cellUser
+						className: O.a.cellUser
 					}, m && o.a.createElement(I.a, {
 						sendHoverCardEvent: B.a,
 						tooltipId: `revision-${a.id}`,
 						user: m
 					}, o.a.createElement(H.a, {
 						author: m,
-						className: S.a.usernameLink
+						className: O.a.usernameLink
 					}, m))), o.a.createElement("td", {
-						className: S.a.cellReason
+						className: O.a.cellReason
 					}, o.a.createElement("div", {
-						className: Object(d.a)(S.a.reasonTextWrapper, u ? S.a.mExpanded : null)
+						className: Object(d.a)(O.a.reasonTextWrapper, u ? O.a.mExpanded : null)
 					}, o.a.createElement("div", {
 						ref: this.reasonElementRef,
-						className: S.a.reasonText
+						className: O.a.reasonText
 					}, a.reason), !u && o.a.createElement(b.g, {
-						className: S.a.moreButton,
+						className: O.a.moreButton,
 						onClick: this.onShowMoreButtonClick
 					}, i.fbt._("more", null, {
 						hk: "2IGYPS"
 					})))), o.a.createElement("td", null, o.a.createElement("div", {
-						className: S.a.buttons
+						className: O.a.buttons
 					}, o.a.createElement(b.p, {
-						className: S.a.viewButton,
+						className: O.a.viewButton,
 						onClick: this.onViewClick,
 						to: p
 					}, i.fbt._("View", null, {
 						hk: "4imNnh"
 					})), g && o.a.createElement(o.a.Fragment, null, o.a.createElement(b.o, {
-						className: S.a.hideShowButton,
+						className: O.a.hideShowButton,
 						disabled: this.state.isHideRequestPending,
 						onClick: this.onToggleHiddenClick
 					}, c ? i.fbt._("Show", null, {
@@ -1790,16 +1790,16 @@
 					}) : i.fbt._("Hide", null, {
 						hk: "30nwHP"
 					})), o.a.createElement(b.o, {
-						className: S.a.revertButton,
+						className: O.a.revertButton,
 						onClick: this.onRevertClick
 					}, i.fbt._("Revert", null, {
 						hk: "5mbFS"
 					}))))))
 				}
 			}
-			var K = Object(a.b)(G, e => ({
+			var K = Object(a.b)(X, e => ({
 				toggleIsHidden: t => e(Object(c.b)(t))
-			}))(q);
+			}))(G);
 
 			function Z() {
 				return (Z = Object.assign || function(e) {
@@ -1810,7 +1810,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const J = Object(r.c)({
+			const Y = Object(r.c)({
 				hasError: P.o,
 				hasWikiModPerms: (e, t) => {
 					const n = Object(N.y)(e, t);
@@ -1822,7 +1822,7 @@
 				isRevertConfirmationModalOpen: Object(E.b)("wiki-revert-confirmation"),
 				listingInfo: P.p
 			});
-			class Y extends o.a.Component {
+			class J extends o.a.Component {
 				constructor() {
 					super(...arguments), this.containerRef = o.a.createRef(), this.state = {
 						selectedRevisions: []
@@ -1845,7 +1845,7 @@
 						}), this.props.toggleRevetConfirmationModal()
 					}, this.handleResize = () => {
 						this.containerRef.current && function(e) {
-							X(e.getElementsByClassName(S.a.reasonText))
+							q(e.getElementsByClassName(O.a.reasonText))
 						}(this.containerRef.current)
 					}, this.onLoadMore = () => {
 						this.props.onLoadMoreRevisions()
@@ -1912,29 +1912,29 @@
 					const E = !a && t;
 					return o.a.createElement("div", {
 						ref: this.containerRef,
-						className: Object(d.a)(S.a.container, {
-							[S.a.mModHub]: n,
-							[S.a.mShowActionButtons]: E
+						className: Object(d.a)(O.a.container, {
+							[O.a.mModHub]: n,
+							[O.a.mShowActionButtons]: E
 						})
 					}, o.a.createElement(p.a, {
 						buttonText: a ? void 0 : i.fbt._("Go to wiki page", null, {
 							hk: "3tJUXk"
 						}),
 						buttonLink: v,
-						className: S.a.pageTitle,
+						className: O.a.pageTitle,
 						title: o.a.createElement("span", {
-							className: S.a.pageTitleText
+							className: O.a.pageTitleText
 						}, a ? i.fbt._("Recent revisions", null, {
 							hk: "VsZfq"
 						}) : i.fbt._("Page history for {pageName}", [i.fbt._param("pageName", `/${h}`)], {
 							hk: "y2LqH"
 						}))
 					}), o.a.createElement("div", {
-						className: S.a.content
+						className: O.a.content
 					}, !a && o.a.createElement("div", {
-						className: S.a.compareBar
+						className: O.a.compareBar
 					}, o.a.createElement(b.p, {
-						className: S.a.compareButton,
+						className: O.a.compareButton,
 						disabled: g.length < 2,
 						onClick: this.onCompareClick,
 						to: w
@@ -1943,27 +1943,27 @@
 					})), i.fbt._("{selectedCnt}/2 selected to compare", [i.fbt._param("selectedCnt", g.length.toString())], {
 						hk: "1PfMOM"
 					})), o.a.createElement("table", {
-						className: S.a.table
+						className: O.a.table
 					}, o.a.createElement("thead", null, o.a.createElement("tr", null, !a && o.a.createElement("th", {
-						className: S.a.colHeaderCheckbox
+						className: O.a.colHeaderCheckbox
 					}), o.a.createElement("th", {
-						className: S.a.colHeaderTime
+						className: O.a.colHeaderTime
 					}, i.fbt._("time", null, {
 						hk: "231ZTq"
 					})), a && o.a.createElement("th", {
-						className: S.a.colHeaderPage
+						className: O.a.colHeaderPage
 					}, i.fbt._("Wiki page", null, {
 						hk: "2CzzvU"
 					})), o.a.createElement("th", {
-						className: S.a.colHeaderUser
+						className: O.a.colHeaderUser
 					}, i.fbt._("Username", null, {
 						hk: "3dJxeH"
 					})), o.a.createElement("th", {
-						className: S.a.colHeaderReason
+						className: O.a.colHeaderReason
 					}, i.fbt._("Revision Reason", null, {
 						hk: "3Z0slk"
 					})), o.a.createElement("th", {
-						className: S.a.colHeaderActions
+						className: O.a.colHeaderActions
 					}, E && o.a.createElement(o.a.Fragment, null, i.fbt._("Actions", null, {
 						hk: "1V50p1"
 					}), o.a.createElement(m.a, null, i.fbt._("View: View current version", null, {
@@ -1973,8 +1973,8 @@
 					}), o.a.createElement("br", null), i.fbt._("Revert: Revert page to an older version", null, {
 						hk: "2IMILE"
 					})))))), o.a.createElement("tbody", {
-						className: S.a.tableBody
-					}, k.map(this.renderRowItem))), s && o.a.createElement(O, null), f && o.a.createElement(W, {
+						className: O.a.tableBody
+					}, k.map(this.renderRowItem))), s && o.a.createElement(S, null), f && o.a.createElement(W, {
 						hasError: e,
 						isLoading: s,
 						onLoadMore: this.onLoadMore
@@ -1994,7 +1994,7 @@
 					}))
 				}
 			}
-			const Q = Object(a.b)(J, (e, t) => ({
+			const Q = Object(a.b)(Y, (e, t) => ({
 				toggleRevetConfirmationModal: () => e(Object(l.i)("wiki-revert-confirmation")),
 				onRevertToRevision: t => e(Object(c.a)(t)),
 				onLoadMoreRevisions: () => e(Object(c.c)({
@@ -2003,7 +2003,7 @@
 					canShowFailToast: !0,
 					isRecent: !!t.isRecentRevisionsMode
 				}))
-			}))(Object(h.c)(Y));
+			}))(Object(h.c)(J));
 
 			function $(e) {
 				const t = !!e.isRecentRevisionsMode,
@@ -2104,9 +2104,9 @@
 					}))))
 				},
 				M = n("./src/reddit/components/Wiki/WikiPageContent/PageContent/index.m.less"),
-				S = n.n(M);
+				O = n.n(M);
 			const {
-				fbt: O
+				fbt: S
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function j(e) {
@@ -2125,23 +2125,23 @@
 					subredditName: s,
 					wikiDirectory: a
 				}) : r && r.content && l === h.h ? c = o.a.createElement("div", {
-					className: S.a.automodContent
+					className: O.a.automodContent
 				}, r.content.markdown) : r && r.content && (c = o.a.createElement(x.a, {
-					className: S.a.wikiHtmlContent,
+					className: O.a.wikiHtmlContent,
 					html: r.content.html,
 					sourceElement: C.SourceElement.Wiki
 				})), o.a.createElement("div", {
-					className: Object(d.a)(t, S.a.container)
+					className: Object(d.a)(t, O.a.container)
 				}, l === h.h && o.a.createElement("div", {
-					className: S.a.automodInfoBanner
-				}, O._("This page is used to configure AutoModerator for the subreddit, please see the {=full documentation} for information", [O._param("=full documentation", o.a.createElement("a", {
+					className: O.a.automodInfoBanner
+				}, S._("This page is used to configure AutoModerator for the subreddit, please see the {=full documentation} for information", [S._param("=full documentation", o.a.createElement("a", {
 					href: "/wiki/automoderator/full-documentation"
-				}, O._("full documentation", null, {
+				}, S._("full documentation", null, {
 					hk: "1iIGFO"
 				})))], {
 					hk: "C2ew1"
 				})), c, i && r && r.revision && o.a.createElement("div", {
-					className: S.a.revisionInfo
+					className: O.a.revisionInfo
 				}, o.a.createElement(w.a, {
 					showTimeAgo: !0,
 					isLastRevision: !0,
@@ -2470,8 +2470,8 @@
 				R = n("./src/reddit/components/ResizableAutosizeTextarea/index.tsx"),
 				T = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				M = n("./src/reddit/components/Wiki/common/ContentPlaceholder/index.tsx"),
-				S = n("./src/reddit/components/Wiki/common/LoadingPlaceholder/index.tsx"),
-				O = n("./src/reddit/contexts/NavbarExp.ts"),
+				O = n("./src/reddit/components/Wiki/common/LoadingPlaceholder/index.tsx"),
+				S = n("./src/reddit/contexts/NavbarExp.ts"),
 				j = n("./src/reddit/controls/Button/index.tsx"),
 				W = n("./src/reddit/helpers/trackers/subredditWiki.ts"),
 				L = n("./src/reddit/helpers/wiki/validatePageName.ts"),
@@ -2479,13 +2479,13 @@
 				H = n("./src/reddit/selectors/activeModalId.ts"),
 				I = n("./src/reddit/selectors/platform.ts"),
 				A = n("./src/reddit/selectors/subredditWiki.ts"),
-				D = n("./src/higherOrderComponents/asModal/index.tsx"),
-				U = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				U = n("./src/higherOrderComponents/asModal/index.tsx"),
+				D = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				z = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				F = n("./src/reddit/controls/TextButton/index.tsx"),
 				V = n("./src/reddit/components/Wiki/WikiPageEditor/AddRevisionReasonModal/index.m.less"),
-				X = n.n(V);
-			class G extends o.a.PureComponent {
+				q = n.n(V);
+			class X extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						text: ""
@@ -2507,22 +2507,22 @@
 						text: t
 					} = this.state, n = p.g - t.length;
 					return o.a.createElement("div", {
-						className: X.a.container
-					}, o.a.createElement(U.h, {
-						className: X.a.modalHeader
-					}, o.a.createElement(U.p, null, i.fbt._("Add a reason for your revision", null, {
+						className: q.a.container
+					}, o.a.createElement(D.h, {
+						className: q.a.modalHeader
+					}, o.a.createElement(D.p, null, i.fbt._("Add a reason for your revision", null, {
 						hk: "3ozq8e"
 					})), o.a.createElement(F.a, {
 						onClick: this.props.onCancel
-					}, o.a.createElement(U.b, null))), o.a.createElement("div", {
-						className: X.a.contentBlock
+					}, o.a.createElement(D.b, null))), o.a.createElement("div", {
+						className: q.a.contentBlock
 					}, o.a.createElement("label", null, o.a.createElement("span", {
-						className: X.a.labelText
+						className: q.a.labelText
 					}, i.fbt._("Revision reason", null, {
 						hk: "W55mK"
 					})), o.a.createElement("input", {
 						autoFocus: !0,
-						className: X.a.reasonInput,
+						className: q.a.reasonInput,
 						maxLength: p.g,
 						onChange: this.onTextChange,
 						placeholder: i.fbt._("Ex: Added source to appendix", null, {
@@ -2530,15 +2530,15 @@
 						}),
 						value: t
 					})), o.a.createElement("div", {
-						className: X.a.details
+						className: q.a.details
 					}, i.fbt._({
 						"*": "{number} characters left",
 						_1: "1 character left"
 					}, [i.fbt._plural(n, "number")], {
 						hk: "1Ra9c8"
-					}))), o.a.createElement(U.f, {
-						className: X.a.modalFooter
-					}, o.a.createElement(U.a, {
+					}))), o.a.createElement(D.f, {
+						className: q.a.modalFooter
+					}, o.a.createElement(D.a, {
 						onClick: this.props.onCancel
 					}, i.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -2546,18 +2546,18 @@
 						onClick: this.onSaveButtonClick,
 						disabled: e
 					}, e ? o.a.createElement(z.a, {
-						className: X.a.loadingIcon,
+						className: q.a.loadingIcon,
 						sizePx: 10
 					}) : i.fbt._("Save", null, {
-						hk: "1zNlod"
+						hk: "4yMsMq"
 					}))))
 				}
 			}
-			var q = Object(D.a)(G),
+			var G = Object(U.a)(X),
 				K = n("./src/reddit/components/Wiki/WikiPageEditor/index.m.less"),
 				Z = n.n(K);
-			const J = "Discard-wiki-page-changes",
-				Y = "Add-wiki-revision-reason",
+			const Y = "Discard-wiki-page-changes",
+				J = "Add-wiki-revision-reason",
 				Q = 2,
 				$ = (e, t, n) => {
 					const s = t.status,
@@ -2587,8 +2587,8 @@
 				},
 				ee = Object(r.c)({
 					allowNavigationCallback: I.a,
-					isRevisionReasonModalOpen: Object(H.b)(Y),
-					isSaveBeforeLeaveModalOpen: Object(H.b)(J),
+					isRevisionReasonModalOpen: Object(H.b)(J),
+					isSaveBeforeLeaveModalOpen: Object(H.b)(Y),
 					wikiPage: A.c
 				}),
 				te = Object(a.b)(ee, (e, t) => ({
@@ -2686,7 +2686,7 @@
 					}, this.onCancelAddingRevisionReason = () => {
 						this.finishPendingNavTransition(!1), this.props.closeAllModals()
 					}, this.showRevisionReasonModal = () => {
-						this.props.isRevisionReasonModalOpen || this.props.toggleModal(Y)
+						this.props.isRevisionReasonModalOpen || this.props.toggleModal(J)
 					}, this.onCancel = () => {
 						this.props.onFinishWikiEdit(!0)
 					}, this.onTextChange = e => {
@@ -2720,7 +2720,7 @@
 							disabled: !v,
 							onClick: this.showRevisionReasonModal
 						}, i.fbt._("Save", null, {
-							hk: "1zXyaJ"
+							hk: "4yMsMq"
 						}))), o.a.createElement("div", {
 							className: Object(d.a)(this.props.contentClassName, Z.a.content)
 						}, a ? f ? o.a.createElement(R.a, {
@@ -2739,16 +2739,16 @@
 							}) : i.fbt._('"{pageName}" cannot be edited', [i.fbt._param("pageName", r)], {
 								hk: "4qKJob"
 							})
-						}) : o.a.createElement(S.a, {
+						}) : o.a.createElement(O.a, {
 							paragraphsCount: Q
-						})), n && o.a.createElement(q, {
+						})), n && o.a.createElement(G, {
 							withOverlay: !0,
 							onCancel: this.onCancelAddingRevisionReason,
 							onSave: this.onSaveWithReason,
 							isPending: c
 						}), o.a.createElement(P.a, {
 							blockOnBeforeUnload: !0,
-							dialogId: J,
+							dialogId: Y,
 							enabled: p && !l
 						}), s && o.a.createElement(y.a, {
 							actionText: i.fbt._("Discard", null, {
@@ -2790,7 +2790,7 @@
 					this.props.allowNavigationCallback && this.props.allowNavigationCallback(e)
 				}
 				render() {
-					return o.a.createElement(O.a.Consumer, null, this.renderWikiPageEditor)
+					return o.a.createElement(S.a.Consumer, null, this.renderWikiPageEditor)
 				}
 			}
 			t.a = te(Object(T.c)(ne))
@@ -2986,9 +2986,9 @@
 					}))
 				}
 			}
-			var S = M,
-				O = n("./src/reddit/components/Wiki/WikiPageTopBar/index.m.less"),
-				j = n.n(O);
+			var O = M,
+				S = n("./src/reddit/components/Wiki/WikiPageTopBar/index.m.less"),
+				j = n.n(S);
 			const W = Object(d.c)({
 					hasWikiModPerms: (e, t) => {
 						const n = Object(v.y)(e, t);
@@ -3036,7 +3036,7 @@
 						})
 					}, i.fbt._("Edit", null, {
 						hk: "1nftDt"
-					})), c && a.a.createElement(S, {
+					})), c && a.a.createElement(O, {
 						className: j.a.overflowMenu,
 						dropdownId: `wikiPage-OverflowMenu-${o}-${t}`,
 						isModHub: t,
@@ -3362,4 +3362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.b7d6406bda5602f38144.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.6e63f0ed51b7a432a4c6.js.map

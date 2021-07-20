@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.4c99337939d4706fd611.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.b27c4192fd9fce032ec1.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2897,7 +2897,7 @@
 						className: V.a.save,
 						onClick: this.onSave
 					}, s.fbt._("Save", null, {
-						hk: "3bWn72"
+						hk: "4yMsMq"
 					}))))
 				}
 				hasPendingChanges() {
@@ -4128,20 +4128,20 @@
 			n.d(t, "a", (function() {
 				return m
 			}));
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				i = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/higherOrderComponents/asModal/index.tsx"),
-				a = n("./src/reddit/actions/modal.ts"),
-				d = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				c = n("./src/reddit/controls/TextButton/index.tsx"),
-				l = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
-			const {
-				fbt: u
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), m = "subreddit-unsaved-changes-modal", p = Object(i.b)(null, e => ({
-				closeModal: () => e(Object(a.g)(m))
-			}));
-			class b extends r.a.Component {
+			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/react/index.js"),
+				i = n.n(r),
+				o = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/higherOrderComponents/asModal/index.tsx"),
+				d = n("./src/reddit/actions/modal.ts"),
+				c = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				l = n("./src/reddit/controls/TextButton/index.tsx"),
+				u = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+			const m = "subreddit-unsaved-changes-modal",
+				p = Object(o.b)(null, e => ({
+					closeModal: () => e(Object(d.g)(m))
+				}));
+			class b extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onDiscardClick = async () => {
 						this.props.onDiscard(), this.props.closeModal()
@@ -4152,26 +4152,26 @@
 					}
 				}
 				render() {
-					return r.a.createElement(d.d, null, r.a.createElement(d.h, null, r.a.createElement(l.a, null, r.a.createElement(d.p, null, u._("Save changes before leaving?", null, {
+					return i.a.createElement(c.d, null, i.a.createElement(c.h, null, i.a.createElement(u.a, null, i.a.createElement(c.p, null, s.fbt._("Save changes before leaving?", null, {
 						hk: "34wJXL"
-					})), r.a.createElement(c.a, {
+					})), i.a.createElement(l.a, {
 						onClick: this.onCancelClick
-					}, r.a.createElement(d.b, null)))), r.a.createElement(d.k, null, r.a.createElement(d.o, null, u._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
+					}, i.a.createElement(c.b, null)))), i.a.createElement(c.k, null, i.a.createElement(c.o, null, s.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
 						hk: "2SOiAP"
-					}))), r.a.createElement(d.f, null, r.a.createElement(d.a, {
+					}))), i.a.createElement(c.f, null, i.a.createElement(c.a, {
 						onClick: this.onDiscardClick,
 						"data-redditstyle": !0
-					}, u._("Discard", null, {
+					}, s.fbt._("Discard", null, {
 						hk: "ViASy"
-					})), r.a.createElement(d.q, {
+					})), i.a.createElement(c.q, {
 						onClick: this.onSaveClick,
 						"data-redditstyle": !0
-					}, u._("Save", null, {
-						hk: "nbpNh"
+					}, s.fbt._("Save", null, {
+						hk: "4yMsMq"
 					}))))
 				}
 			}
-			t.b = Object(o.a)(p(b))
+			t.b = Object(a.a)(p(b))
 		},
 		"./src/reddit/components/SubscribeButton/Base.m.less": function(e, t, n) {
 			e.exports = {
@@ -6279,4 +6279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.4c99337939d4706fd611.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.b27c4192fd9fce032ec1.js.map

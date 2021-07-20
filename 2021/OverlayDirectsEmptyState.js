@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.f421d926de5e4b0c49ec.js
-// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.08faa3ebb8c51567230b.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDirectsEmptyState"], {
 		"./src/chat/components/OverlayDirectsEmptyState/index.m.less": function(e, t, a) {
@@ -131,10 +131,10 @@
 				onClick: e.primaryButtonAction || e.onSubmit,
 				disabled: e.primaryButtonDisabled
 			}, e.primaryButtonText || n.fbt._("Submit", null, {
-				hk: "2Iwjdv"
+				hk: "4aU3dh"
 			})))));
 			h.displayName = "OverlayControlBar", t.a = h
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.f421d926de5e4b0c49ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDirectsEmptyState.08faa3ebb8c51567230b.js.map

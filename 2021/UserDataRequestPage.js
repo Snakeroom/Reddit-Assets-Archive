@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.e3f36e9a9a6a91244e86.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.d05a01c9a962cc74694f.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/reddit/actions/userDataRequest.ts": function(e, t, a) {
@@ -481,7 +481,7 @@
 						className: N.a.submitButton,
 						disabled: e
 					}, s.fbt._("Submit", null, {
-						hk: "3BVOia"
+						hk: "4aU3dh"
 					}))))), this.renderConfirmationPage = () => n.a.createElement(c.a, {
 						className: N.a.userDataRequestForm
 					}, n.a.createElement("div", {
@@ -552,4 +552,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.e3f36e9a9a6a91244e86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.d05a01c9a962cc74694f.js.map

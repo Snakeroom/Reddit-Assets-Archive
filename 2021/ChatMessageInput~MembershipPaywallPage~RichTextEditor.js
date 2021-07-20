@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.38cd0afcac0a811ed9eb.js
-// Retrieved at 7/15/2021, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0995f17ab18d3ff2e774.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -3591,7 +3591,7 @@
 						key: "remove",
 						onClick: s
 					}, r.fbt._("Remove", null, {
-						hk: "3LUKPE"
+						hk: "3tYl0U"
 					})), a.a.createElement(oe, {
 						kind: Zt.a.Button,
 						priority: Zt.b.Plain,
@@ -3868,7 +3868,7 @@
 						Icon: Pe,
 						onClick: () => s(Object(I.d)(o, c)),
 						tooltip: r.fbt._("Remove", null, {
-							hk: "2aF1Zw"
+							hk: "3tYl0U"
 						}),
 						tooltipBelow: !0
 					})))
@@ -5342,7 +5342,7 @@
 					onClick: () => t.onRemove(),
 					role: "button"
 				}, r.fbt._("Remove", null, {
-					hk: "3nPt5D"
+					hk: "3tYl0U"
 				})))),
 				qr = n("./src/reddit/controls/Input/index.tsx"),
 				Vr = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
@@ -8307,4 +8307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.38cd0afcac0a811ed9eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.0995f17ab18d3ff2e774.js.map

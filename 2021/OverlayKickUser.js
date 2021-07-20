@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayKickUser.a97210cdb7604600f53c.js
-// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayKickUser.8492a90a51b407160047.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayKickUser"], {
 		"./src/chat/components/OverlayKickUser/index.m.less": function(e, t, a) {
@@ -42,8 +42,8 @@
 			const C = "kickUser",
 				x = o.a.p("SubHeader", O.a),
 				E = o.a.span("Title", O.a),
-				v = o.a.span("Header", O.a),
-				B = o.a.wrapped(m.a, "Checkbox", O.a),
+				B = o.a.span("Header", O.a),
+				v = o.a.wrapped(m.a, "Checkbox", O.a),
 				f = o.a.div("ListItem", O.a),
 				g = o.a.div("OverlayContent", O.a);
 			var j;
@@ -100,7 +100,7 @@
 						message: e,
 						user: t
 					} = this.props, a = e && e.sender ? e.sender.nickname : t ? "u/" + t.name : "this user";
-					return c.a.createElement(c.a.Fragment, null, c.a.createElement(v, null, n.fbt._("Are you sure you want to kick {username} from this room?", [n.fbt._param("username", a)], {
+					return c.a.createElement(c.a.Fragment, null, c.a.createElement(B, null, n.fbt._("Are you sure you want to kick {username} from this room?", [n.fbt._param("username", a)], {
 						hk: "n1L3B"
 					})), c.a.createElement(x, null, n.fbt._("They'll be able to join again once the kick duration is over.", null, {
 						hk: "4zi1U1"
@@ -124,7 +124,7 @@
 						hk: "4nENS8"
 					})), Object.keys(e).map(t => c.a.createElement(f, {
 						key: t
-					}, c.a.createElement(B, {
+					}, c.a.createElement(v, {
 						type: "radio",
 						name: C,
 						value: t
@@ -215,8 +215,8 @@
 				C = a.n(O);
 			const x = s.a.input("HiddenInput", C.a),
 				E = s.a.wrapped(h, "Checked", C.a),
-				v = s.a.wrapped(_, "Unchecked", C.a),
-				B = s.a.span("Wrapper", C.a),
+				B = s.a.wrapped(_, "Unchecked", C.a),
+				v = s.a.span("Wrapper", C.a),
 				f = s.a.span("Content", C.a),
 				g = s.a.span("Control", C.a),
 				j = s.a.label("CheckInput", C.a);
@@ -228,7 +228,7 @@
 					height: e.height || void 0,
 					width: e.width || void 0
 				}
-			}, r.a.createElement(B, null, e.children && !e.rightPosition && r.a.createElement(f, null, e.children), r.a.createElement(g, null, r.a.createElement(x, {
+			}, r.a.createElement(v, null, e.children && !e.rightPosition && r.a.createElement(f, null, e.children), r.a.createElement(g, null, r.a.createElement(x, {
 				tabIndex: 0,
 				type: e.type || "checkbox",
 				checked: e.checked,
@@ -237,7 +237,7 @@
 				value: e.value,
 				onChange: e.onChange,
 				id: e.id
-			}), r.a.createElement(E, null), r.a.createElement(v, null)), e.children && e.rightPosition && r.a.createElement(f, null, e.children)))
+			}), r.a.createElement(E, null), r.a.createElement(B, null)), e.children && e.rightPosition && r.a.createElement(f, null, e.children)))
 		},
 		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -307,7 +307,7 @@
 				onClick: e.primaryButtonAction || e.onSubmit,
 				disabled: e.primaryButtonDisabled
 			}, e.primaryButtonText || n.fbt._("Submit", null, {
-				hk: "2Iwjdv"
+				hk: "4aU3dh"
 			})))));
 			p.displayName = "OverlayControlBar", t.a = p
 		},
@@ -327,4 +327,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.a97210cdb7604600f53c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayKickUser.8492a90a51b407160047.js.map

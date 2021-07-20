@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.2ca9ec9c554fae0725c8.js
-// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.9606de6585fa17239fb6.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayDeleteMessage"], {
 		"./src/chat/components/OverlayDeleteMessage/index.m.less": function(e, t, a) {
@@ -75,7 +75,7 @@
 						isChatEmbedded: n
 					})), r.a.createElement(b.a, {
 						primaryButtonText: s.fbt._("Delete", null, {
-							hk: "NyHQz"
+							hk: "4lt26q"
 						}),
 						primaryButtonAction: () => a()
 					}))
@@ -151,10 +151,10 @@
 				onClick: e.primaryButtonAction || e.onSubmit,
 				disabled: e.primaryButtonDisabled
 			}, e.primaryButtonText || s.fbt._("Submit", null, {
-				hk: "2Iwjdv"
+				hk: "4aU3dh"
 			})))));
 			b.displayName = "OverlayControlBar", t.a = b
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.2ca9ec9c554fae0725c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayDeleteMessage.9606de6585fa17239fb6.js.map

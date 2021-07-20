@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.7dcd4071a5ae3c68cd7d.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.19b6d3c90256d72d7862.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -30,16 +30,16 @@
 		"./src/reddit/components/GeoForm/GeoForm.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return C
+				return j
 			}));
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				i = s("./node_modules/uuid/v4.js"),
-				a = s.n(i),
-				o = s("./src/lib/classNames/index.ts"),
-				c = s("./src/reddit/controls/Button/index.tsx");
-			var d, l = s("./node_modules/fbt/lib/FbtPublic.js"),
-				u = s("./node_modules/p-debounce/index.js"),
+			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
+				r = s("./node_modules/react/index.js"),
+				i = s.n(r),
+				a = s("./node_modules/uuid/v4.js"),
+				o = s.n(a),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/controls/Button/index.tsx");
+			var l, u = s("./node_modules/p-debounce/index.js"),
 				m = s.n(u),
 				b = s("./src/lib/hooks/useOnClickOutside.ts"),
 				p = s("./src/reddit/constants/keycodes.ts"),
@@ -48,7 +48,7 @@
 				f = s("./src/redditGQL/operations/GeoPlaceAutocomplete.json");
 			! function(e) {
 				e.GoogleMaps = "GOOGLE_MAPS", e.Geonames = "GEONAMES"
-			}(d || (d = {}));
+			}(l || (l = {}));
 			const x = (e, t) => async s => {
 				let n;
 				try {
@@ -75,71 +75,71 @@
 				const {
 					value: t,
 					setValue: s,
-					setPlace: i,
-					disabled: a,
-					onFocus: c,
-					sessionId: d,
+					setPlace: a,
+					disabled: o,
+					onFocus: d,
+					sessionId: l,
 					className: u
-				} = e, b = Object(_.a)(), [h, g] = Object(n.useState)(!1), f = function(e, t, s) {
-					const [r, i] = Object(n.useState)([]), a = Object(n.useMemo)(() => m()(s, 300), [s]);
-					return Object(n.useEffect)(() => {
+				} = e, b = Object(_.a)(), [h, g] = Object(r.useState)(!1), f = function(e, t, s) {
+					const [n, i] = Object(r.useState)([]), a = Object(r.useMemo)(() => m()(s, 300), [s]);
+					return Object(r.useEffect)(() => {
 						e && t && a(e).then(e => {
 							i(e)
 						}).catch(() => i([]))
-					}, [e]), r
-				}(t, h, x(b, d)), {
+					}, [e]), n
+				}(t, h, x(b, l)), {
 					highlightValue: S,
 					selectedIndex: v,
 					onKeyDown: O,
 					isClosed: j,
 					setClosed: C
 				} = function(e, t, s) {
-					const [r, i] = Object(n.useState)(-1), [a, o] = Object(n.useState)(!!e.length), [c, d] = Object(n.useState)(void 0);
+					const [n, i] = Object(r.useState)(-1), [a, o] = Object(r.useState)(!!e.length), [c, d] = Object(r.useState)(void 0);
 					return {
 						highlightValue: c,
-						selectedIndex: r,
-						onKeyDown: n => {
-							if (n.key === p.b.ArrowDown) {
-								const t = Math.min(r + 1, e.length - 1);
+						selectedIndex: n,
+						onKeyDown: r => {
+							if (r.key === p.b.ArrowDown) {
+								const t = Math.min(n + 1, e.length - 1);
 								i(t), d(e[t])
-							} else if (n.key === p.b.ArrowUp) {
-								const t = Math.max(r - 1, -1);
+							} else if (r.key === p.b.ArrowUp) {
+								const t = Math.max(n - 1, -1);
 								i(t), d(e[t])
-							} else n.key === p.b.Enter && r > -1 ? (i(-1), t(e[r].name), s(e[r]), o(!0), n.preventDefault()) : n.key === p.b.Escape ? (i(-1), o(!0)) : d(void 0)
+							} else r.key === p.b.Enter && n > -1 ? (i(-1), t(e[n].name), s(e[n]), o(!0), r.preventDefault()) : r.key === p.b.Escape ? (i(-1), o(!0)) : d(void 0)
 						},
 						isClosed: a,
 						setClosed: o
 					}
-				}(f, s, i), N = `location-input-${d}`;
-				return r.a.createElement("div", {
+				}(f, s, a), N = `location-input-${l}`;
+				return i.a.createElement("div", {
 					className: y.a.autocompleteInput
-				}, r.a.createElement("label", {
+				}, i.a.createElement("label", {
 					className: y.a.geoLabel,
 					htmlFor: N
-				}, r.a.createElement(E.a, {
+				}, i.a.createElement(E.a, {
 					className: y.a.locationIcon
-				})), r.a.createElement("input", {
-					className: Object(o.a)(y.a.geoInput, u),
+				})), i.a.createElement("input", {
+					className: Object(c.a)(y.a.geoInput, u),
 					name: N,
-					disabled: a,
+					disabled: o,
 					onKeyDown: O,
 					value: S && S.name || t,
-					placeholder: l.fbt._("Add location", null, {
+					placeholder: n.fbt._("Add location", null, {
 						hk: "1BaqFd"
 					}),
 					onChange: e => {
-						s(e.currentTarget.value), i(void 0), C(!1)
+						s(e.currentTarget.value), a(void 0), C(!1)
 					},
 					onFocus: () => {
-						g(!0), c()
+						g(!0), d()
 					},
 					onBlur: () => g(!1)
-				}), f.length && !j ? r.a.createElement(k, {
-					id: d,
+				}), f.length && !j ? i.a.createElement(k, {
+					id: l,
 					items: f.map(e => e.name),
 					selectedIndex: v,
 					selectValue: e => {
-						s(f[e].name), i(f[e]), C(!0)
+						s(f[e].name), a(f[e]), C(!0)
 					},
 					onClickOutside: () => C(!0)
 				}) : null)
@@ -150,65 +150,63 @@
 					id: t,
 					items: s,
 					selectedIndex: n,
-					selectValue: i,
+					selectValue: r,
 					onClickOutside: a
 				} = e;
-				return Object(b.a)(`autocomplete-dropdown-${t}`, a), r.a.createElement("ul", {
+				return Object(b.a)(`autocomplete-dropdown-${t}`, a), i.a.createElement("ul", {
 					className: y.a.autocompleteDropdown,
 					id: `autocomplete-dropdown-${t}`
-				}, s.map((e, t) => r.a.createElement("li", {
+				}, s.map((e, t) => i.a.createElement("li", {
 					key: `${e}${t}`,
-					onClick: () => i(t),
-					className: Object(o.a)({
+					onClick: () => r(t),
+					className: Object(c.a)({
 						[y.a.highlight]: t === n
 					})
 				}, e)))
 			}
-			const {
-				fbt: O
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = () => {};
+			const O = () => {};
 
-			function C(e) {
+			function j(e) {
 				const {
 					className: t,
 					initialValue: s,
-					initialPlace: i,
-					disabled: d = !1,
-					onFocus: l = j,
-					onPlace: u = j,
-					onValue: m = j,
-					inputClassName: b
-				} = e, p = function() {
-					const [e, t] = Object(n.useState)(!1);
-					return Object(n.useEffect)(() => t(!0), []), e
-				}(), [h] = Object(n.useState)(() => a()()), [g, f] = Object(n.useState)(s || ""), [x, _] = Object(n.useState)(i);
-				return p ? r.a.createElement("form", {
-					className: Object(o.a)(y.a.geoForm, t),
+					initialPlace: a,
+					disabled: l = !1,
+					onFocus: u = O,
+					onPlace: m = O,
+					onValue: b = O,
+					inputClassName: p
+				} = e, h = function() {
+					const [e, t] = Object(r.useState)(!1);
+					return Object(r.useEffect)(() => t(!0), []), e
+				}(), [g] = Object(r.useState)(() => o()()), [f, x] = Object(r.useState)(s || ""), [_, E] = Object(r.useState)(a);
+				return h ? i.a.createElement("form", {
+					className: Object(c.a)(y.a.geoForm, t),
 					onSubmit: t => {
-						t.preventDefault(), (null == i ? void 0 : i.id) !== (null == x ? void 0 : x.id) && e.onSubmit({
-							name: g,
-							place: x,
-							sessionId: h
+						t.preventDefault(), (null == a ? void 0 : a.id) !== (null == _ ? void 0 : _.id) && e.onSubmit({
+							name: f,
+							place: _,
+							sessionId: g
 						})
 					}
-				}, r.a.createElement(v, {
-					className: b,
-					value: g,
-					sessionId: h,
+				}, i.a.createElement(v, {
+					className: p,
+					value: f,
+					sessionId: g,
 					setValue: e => {
-						f(e), m(e)
+						x(e), b(e)
 					},
 					setPlace: e => {
-						_(e), u(e)
+						E(e), m(e)
 					},
-					disabled: d,
-					onFocus: l
-				}), x && x.id !== (null == i ? void 0 : i.id) && r.a.createElement(c.l, {
+					disabled: l,
+					onFocus: u
+				}), _ && _.id !== (null == a ? void 0 : a.id) && i.a.createElement(d.l, {
 					className: y.a.submitButton,
 					type: "submit",
-					disabled: d
-				}, O._("Submit", null, {
-					hk: "3kKxBt"
+					disabled: l
+				}, n.fbt._("Submit", null, {
+					hk: "4aU3dh"
 				}))) : null
 			}
 		},
@@ -1812,4 +1810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.7dcd4071a5ae3c68cd7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.19b6d3c90256d72d7862.js.map

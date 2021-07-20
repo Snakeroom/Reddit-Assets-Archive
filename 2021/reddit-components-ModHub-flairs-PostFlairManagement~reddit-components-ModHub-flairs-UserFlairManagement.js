@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.002685b93a785302f1e8.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.715e6ce1554ae98c6bbc.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -384,10 +384,10 @@
 					})
 				}),
 				J = s("./node_modules/lodash/isEqual.js"),
-				z = s.n(J),
-				G = s("./src/higherOrderComponents/asModal/index.tsx"),
-				Y = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				q = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				q = s.n(J),
+				z = s("./src/higherOrderComponents/asModal/index.tsx"),
+				G = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Y = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				K = s("./src/reddit/controls/TextButton/index.tsx"),
 				X = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				Z = s("./src/lib/classNames/index.ts"),
@@ -416,7 +416,7 @@
 						const {
 							settings: e
 						} = this.state;
-						if (z()(this.props.settings, e)) return void this.props.onClose();
+						if (q()(this.props.settings, e)) return void this.props.onClose();
 						this.setState({
 							isPending: !0
 						}), this.sendOnSaveEvents();
@@ -474,16 +474,16 @@
 						s = t !== this.props.settings;
 					return o.a.createElement("div", {
 						className: ne.a.container
-					}, o.a.createElement(Y.h, {
+					}, o.a.createElement(G.h, {
 						className: ne.a.modalHeader
-					}, o.a.createElement(Y.p, null, e ? B.fbt._("User flair settings", null, {
+					}, o.a.createElement(G.p, null, e ? B.fbt._("User flair settings", null, {
 						hk: "RXint"
 					}) : B.fbt._("Post flair settings", null, {
 						hk: "2mhOeo"
 					})), o.a.createElement(K.a, {
 						className: ne.a.modalCloseButton,
 						onClick: this.props.onClose
-					}, o.a.createElement(Y.b, null))), o.a.createElement("div", {
+					}, o.a.createElement(G.b, null))), o.a.createElement("div", {
 						className: ne.a.contentBlock
 					}, o.a.createElement(se, {
 						label: e ? B.fbt._("Enable user flair in this community", null, {
@@ -510,24 +510,24 @@
 						hk: "L2y8H"
 					}) : B.fbt._("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair.", null, {
 						hk: "20qd2P"
-					}))), o.a.createElement(Y.f, {
+					}))), o.a.createElement(G.f, {
 						className: ne.a.modalFooter
-					}, o.a.createElement(Y.a, {
+					}, o.a.createElement(G.a, {
 						onClick: this.props.onClose
 					}, B.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), o.a.createElement(h.i, {
 						onClick: this.onSaveButtonClick,
 						disabled: this.state.isPending || !s
-					}, this.state.isPending ? o.a.createElement(q.a, {
+					}, this.state.isPending ? o.a.createElement(Y.a, {
 						className: ne.a.loadingIcon,
 						sizePx: 10
 					}) : B.fbt._("Save", null, {
-						hk: "vz5hv"
+						hk: "4yMsMq"
 					}))))
 				}
 			}
-			var ie = Object(G.a)(oe),
+			var ie = Object(z.a)(oe),
 				le = s("./src/reddit/helpers/validateFlairCssClass.ts");
 			const re = e => !e || e === L.c,
 				de = e => ({
@@ -631,10 +631,10 @@
 				We = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				Qe = s("./src/reddit/selectors/posts.ts"),
 				Je = s("./src/lib/omitKey/index.ts"),
-				ze = s("./src/reddit/actions/imageUploads.ts"),
-				Ge = s("./src/reddit/models/Image/index.tsx"),
-				Ye = s("./src/reddit/models/StructuredStyles/index.ts"),
-				qe = s("./src/reddit/selectors/structuredStyles.ts"),
+				qe = s("./src/reddit/actions/imageUploads.ts"),
+				ze = s("./src/reddit/models/Image/index.tsx"),
+				Ge = s("./src/reddit/models/StructuredStyles/index.ts"),
+				Ye = s("./src/reddit/selectors/structuredStyles.ts"),
 				Ke = s("./src/reddit/components/StructuredStyles/ImageUpload/index.tsx"),
 				Xe = s("./src/reddit/components/StructuredStyles/UploadedImage/index.tsx");
 			var Ze = e => e.imageData ? o.a.createElement(Xe.e, {
@@ -660,12 +660,12 @@
 					return a ? t.imageUploads[a] : void 0
 				},
 				at = Object(_e.c)({
-					subredditDefaultStyles: qe.o,
-					postBackgroundImage: st(Ye.e),
-					postPlaceholderImage: st(Ye.f)
+					subredditDefaultStyles: Ye.o,
+					postBackgroundImage: st(Ge.e),
+					postPlaceholderImage: st(Ge.f)
 				}),
 				nt = {
-					cancelUpload: ze.h
+					cancelUpload: qe.h
 				};
 			class ot extends o.a.Component {
 				constructor() {
@@ -682,13 +682,13 @@
 						};
 						this.props.onChange(t)
 					}, this.onPostBackgroundImageInput = e => {
-						this.addImage(tt(e), Ye.e)
+						this.addImage(tt(e), Ge.e)
 					}, this.onPostPlaceholderImageInput = e => {
-						this.addImage(tt(e), Ye.f)
-					}, this.onRemoveBackgroundImage = () => this.removeImage(Ye.e), this.onRemovePlaceholderImage = () => this.removeImage(Ye.f), this.addImage = async (e, t) => {
+						this.addImage(tt(e), Ge.f)
+					}, this.onRemoveBackgroundImage = () => this.removeImage(Ge.e), this.onRemovePlaceholderImage = () => this.removeImage(Ge.f), this.addImage = async (e, t) => {
 						const {
 							styleTemplate: s
-						} = this.props, a = await Object(Ge.f)(e);
+						} = this.props, a = await Object(ze.f)(e);
 						this.props.onChange({
 							...s,
 							[t]: a.url,
@@ -722,12 +722,12 @@
 								width: 0,
 								height: 0
 							};
-							return Object(Ge.g)(e)
+							return Object(ze.g)(e)
 						}
 					}
 				}
 				componentWillUnmount() {
-					this.cancelUpload(Ye.e), this.cancelUpload(Ye.f)
+					this.cancelUpload(Ge.e), this.cancelUpload(Ge.f)
 				}
 				render() {
 					const {
@@ -738,7 +738,7 @@
 					} = this.props, {
 						postTitleColor: n = s.postTitleColor,
 						postBackgroundColor: i = s.postBackgroundColor
-					} = t, l = this.getImageUpload(Ye.e), r = this.getImageUpload(Ye.f);
+					} = t, l = this.getImageUpload(Ge.e), r = this.getImageUpload(Ge.f);
 					return o.a.createElement("div", {
 						className: Object(Z.a)(e, et.a.container)
 					}, o.a.createElement("fieldset", {
@@ -844,7 +844,7 @@
 				componentDidUpdate(e) {
 					const t = Object(b.c)(this.props.templateDraft),
 						s = Object(b.c)(e.templateDraft);
-					z()(t, s) || this.props.updateExamplePost(t), this.disableTabNavigationForPreviewPost()
+					q()(t, s) || this.props.updateExamplePost(t), this.disableTabNavigationForPreviewPost()
 				}
 				componentWillUnmount() {
 					this.props.deleteExamplePost()
@@ -1187,11 +1187,11 @@
 					})), o.a.createElement(h.i, {
 						disabled: this.props.isSavePending || r,
 						onClick: this.props.onSave
-					}, this.props.isSavePending ? o.a.createElement(q.a, {
+					}, this.props.isSavePending ? o.a.createElement(Y.a, {
 						className: ht.a.loadingIcon,
 						sizePx: 10
 					}) : B.fbt._("Save", null, {
-						hk: "40s1bl"
+						hk: "4yMsMq"
 					}))))
 				}
 			}
@@ -1449,7 +1449,7 @@
 						disabled: !this.state.numTemplatesReordered,
 						onClick: this.onSaveCurrentOrderClick
 					}, B.fbt._("Save", null, {
-						hk: "3gwTS0"
+						hk: "4yMsMq"
 					}))) : o.a.createElement(o.a.Fragment, null, o.a.createElement(h.l, {
 						className: Pt.a.settingsButton,
 						onClick: this.onSettingsButtonClick
@@ -1566,7 +1566,7 @@
 						withOverlay: !0
 					}), this.props.activeModalId === Ft && o.a.createElement(l.a, {
 						actionText: B.fbt._("Delete", null, {
-							hk: "3nBb5n"
+							hk: "4lt26q"
 						}),
 						headerText: m ? B.fbt._("Delete user flair?", null, {
 							hk: "oY3En"
@@ -2003,4 +2003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.002685b93a785302f1e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.715e6ce1554ae98c6bbc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.a3312d91f374764becb4.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.f11167c17ca7744fd3e4.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -941,8 +941,8 @@
 				v = c.a.div("OptionHeader", y.a),
 				S = c.a.div("OptionDescription", y.a),
 				P = c.a.header("Header", u.a),
-				F = c.a.footer("Footer", u.a),
-				k = c.a.div("Description", u.a),
+				k = c.a.footer("Footer", u.a),
+				F = c.a.div("Description", u.a),
 				w = c.a.a("Link", u.a),
 				O = c.a.a("RedirectToRedditLink", u.a),
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
@@ -957,9 +957,9 @@
 						hk: "1bc2jS"
 					})))], {
 						hk: "3sQZ0g"
-					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
+					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(F, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
 						hk: "2tRkyQ"
-					})), s.a.createElement(F, null, s.a.createElement(O, {
+					})), s.a.createElement(k, null, s.a.createElement(O, {
 						href: "/"
 					}, p.fbt._("Redirect back to your home in Reddit universe", null, {
 						hk: "1pMLva"
@@ -973,7 +973,7 @@
 						className: e.className
 					}, s.a.createElement(P, null, p.fbt._("Thank you for your report.", null, {
 						hk: "2l8iOp"
-					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
+					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(F, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "12EkwP"
 					})), this.renderAbuseOfReportButtonOption()) : this.renderWithoutOptions())
 				}
@@ -1379,11 +1379,12 @@
 				be = n("./src/reddit/models/RulesSequence/index.ts"),
 				Re = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
 				ye = n.n(Re);
-			const {
-				fbt: _e
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ve = c.a.header("Header", u.a), Se = c.a.wrapped(Ee.a, "Footer", ye.a), Pe = c.a.wrapped(Ce.i, "SubmitButton", ye.a), Fe = Object(o.c)({
-				initialReason: e => e.reportPage.initialReason
-			});
+			const _e = c.a.header("Header", u.a),
+				ve = c.a.wrapped(Ee.a, "Footer", ye.a),
+				Se = c.a.wrapped(Ce.i, "SubmitButton", ye.a),
+				Pe = Object(o.c)({
+					initialReason: e => e.reportPage.initialReason
+				});
 			class ke extends s.a.Component {
 				constructor(e) {
 					super(e), this.onSubmit = () => {
@@ -1429,17 +1430,17 @@
 					} = e;
 					return t && t.length ? s.a.createElement("div", {
 						className: e.className
-					}, s.a.createElement(ve, null, _e._("How can we help?", null, {
+					}, s.a.createElement(_e, null, p.fbt._("How can we help?", null, {
 						hk: "1iOApB"
-					})), t.map((e, t) => this.renderRulesSection(e, t)), s.a.createElement(Se, null, s.a.createElement("div", {
+					})), t.map((e, t) => this.renderRulesSection(e, t)), s.a.createElement(ve, null, s.a.createElement("div", {
 						className: ye.a.contentPolicyHolder
-					}, s.a.createElement(T.a, null)), s.a.createElement(Pe, {
+					}, s.a.createElement(T.a, null)), s.a.createElement(Se, {
 						onClick: this.onSubmit,
 						disabled: !e.isReasonChosen
-					}, e.isReportPending ? _e._("Pending", null, {
+					}, e.isReportPending ? p.fbt._("Pending", null, {
 						hk: "2w0p3b"
-					}) : _e._("Submit", null, {
-						hk: "3ydLzW"
+					}) : p.fbt._("Submit", null, {
+						hk: "4aU3dh"
 					})))) : null
 				}
 				renderRulesSection(e, t) {
@@ -1470,23 +1471,23 @@
 					}))
 				}
 			}
-			var we = Object(a.b)(Fe)(ke),
-				Oe = n("./src/reddit/contexts/ApiContext.tsx"),
-				Ne = n("./src/reddit/endpoints/accounts/index.ts"),
-				Ie = n("./src/reddit/endpoints/post/index.tsx"),
-				Ue = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
-				Te = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				Le = n("./src/reddit/selectors/user.ts"),
-				je = n("./src/reddit/pages/ReportPage/index.m.less"),
-				De = n.n(je);
+			var Fe = Object(a.b)(Pe)(ke),
+				we = n("./src/reddit/contexts/ApiContext.tsx"),
+				Oe = n("./src/reddit/endpoints/accounts/index.ts"),
+				Ne = n("./src/reddit/endpoints/post/index.tsx"),
+				Ie = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
+				Ue = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				Te = n("./src/reddit/selectors/user.ts"),
+				Le = n("./src/reddit/pages/ReportPage/index.m.less"),
+				je = n.n(Le);
 			const {
-				fbt: Me
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ae = Object(o.c)({
-				currentUser: Le.j,
+				fbt: De
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Me = Object(o.c)({
+				currentUser: Te.j,
 				reportPageRules: e => e.reportPage.reportPageRules,
-				crisisFlowEnabled: Te.b
-			}), Ve = Object(a.b)(Ae);
-			class He extends s.a.Component {
+				crisisFlowEnabled: Ue.b
+			}), Ae = Object(a.b)(Me);
+			class Ve extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						dirtyFields: {},
@@ -1554,7 +1555,7 @@
 						e.ok ? t() : (e.body.json && e.body.json.errors.length && (e = {
 							...e,
 							ok: !1,
-							error: Object(Ue.a)(e)
+							error: Object(Ie.a)(e)
 						}), this.setState({
 							reportError: e.error,
 							reportPending: !1
@@ -1582,7 +1583,7 @@
 									reportError: null
 								});
 								const t = this.getCleanUsername(n.usernames[0]),
-									r = await Object(Ne.b)(e.apiContext(), t);
+									r = await Object(Oe.b)(e.apiContext(), t);
 								return r.error && "NOT_FOUND_ERROR" === r.error.type && (r.error = {
 									type: "USER_DOESNT_EXIST_HELPCENTER",
 									fields: [{
@@ -1604,7 +1605,7 @@
 							this.setState({
 								reportPending: !0
 							});
-							const r = await Object(Ie.o)(e.apiContext(), n, !0);
+							const r = await Object(Ne.o)(e.apiContext(), n, !0);
 							this.checkResponse(r, () => {
 								this.setState({
 									reportSuccess: !0
@@ -1620,14 +1621,14 @@
 					return e.currentUser ? s.a.createElement("div", {
 						className: e.className
 					}, s.a.createElement("div", {
-						className: De.a.content
+						className: je.a.content
 					}, s.a.createElement("h1", {
-						className: De.a.header
-					}, Me._("Submit a report", null, {
+						className: je.a.header
+					}, De._("Submit a report", null, {
 						hk: "3IySnr"
 					})), e.reportPageRules && e.reportPageRules.length ? s.a.createElement("div", {
-						className: De.a.form
-					}, this.getContentWithModal()) : s.a.createElement("div", null, Me._("Loading...", null, {
+						className: je.a.form
+					}, this.getContentWithModal()) : s.a.createElement("div", null, De._("Loading...", null, {
 						hk: "47z90C"
 					})))) : null
 				}
@@ -1668,7 +1669,7 @@
 					} = this, {
 						chosenReasonPayload: n
 					} = t;
-					return s.a.createElement(we, {
+					return s.a.createElement(Fe, {
 						chosenReasonPayload: n,
 						dirtyFields: t.dirtyFields,
 						fieldsValidity: t.fieldsValidity,
@@ -1684,7 +1685,7 @@
 					})
 				}
 			}
-			t.default = Object(Oe.b)(Ve(He))
+			t.default = Object(we.b)(Ae(Ve))
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
 			"use strict";
@@ -1707,4 +1708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.a3312d91f374764becb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.f11167c17ca7744fd3e4.js.map

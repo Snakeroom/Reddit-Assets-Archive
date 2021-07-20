@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.a1d4463bb44195194e50.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.de7c470673da8e8ad6a0.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -278,7 +278,7 @@
 					onClick: t,
 					disabled: void 0 === n
 				}, o.fbt._("Next", null, {
-					hk: "35vbtd"
+					hk: "2mEXAi"
 				}))),
 				E = ({
 					step: e,
@@ -370,7 +370,7 @@
 					isLeavingModalShowing: j,
 					onClose: L,
 					onLeaveCancel: M,
-					onLeaveConfirm: P
+					onLeaveConfirm: A
 				} = Object(u.a)({
 					activeSurvey: e,
 					activeStepNum: x,
@@ -402,7 +402,7 @@
 						hk: "377HNX"
 					}),
 					onConfirm: M,
-					onCancel: P,
+					onCancel: A,
 					onClose: M
 				}), s.a.createElement("div", {
 					className: F,
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.a1d4463bb44195194e50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.de7c470673da8e8ad6a0.js.map

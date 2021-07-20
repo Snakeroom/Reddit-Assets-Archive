@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.ce0a92e1c824a72d4761.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.954558139109346bbd35.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2171,14 +2171,14 @@
 						tooltipText: t.bannedBy === m.k ? te.fbt._("Confirm removal", null, {
 							hk: "3q7g1J"
 						}) : te.fbt._("Remove", null, {
-							hk: "1f2QZ6"
+							hk: "3tYl0U"
 						}),
 						trackingNoun: t.bannedBy === m.k ? "confirm_remove" : "remove"
 					}, H), c.a.createElement(bt, null)) : F && c.a.createElement(Ve, dt({
 						onClick: v,
 						tooltipId: r,
 						tooltipText: te.fbt._("Delete", null, {
-							hk: "48iIX1"
+							hk: "4lt26q"
 						}),
 						trackingNoun: "delete"
 					}, e), c.a.createElement(bt, null)), l && c.a.createElement(qe.a, {
@@ -3594,4 +3594,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.ce0a92e1c824a72d4761.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.954558139109346bbd35.js.map

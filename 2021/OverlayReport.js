@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.24e465695ab85ffc3794.js
-// Retrieved at 7/13/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.3901a90a2e9ef0513f7e.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
@@ -184,7 +184,7 @@
 						primaryButtonText: this.isCTLControls() ? a.fbt._("Yes", null, {
 							hk: "1nxheD"
 						}) : a.fbt._("Submit", null, {
-							hk: "2Iwjdv"
+							hk: "4aU3dh"
 						}),
 						primaryButtonDisabled: this.isSubmitDisabled(),
 						secondaryButtonOnly: this.isSingleButton(),
@@ -366,7 +366,7 @@
 				onClick: e.primaryButtonAction || e.onSubmit,
 				disabled: e.primaryButtonDisabled
 			}, e.primaryButtonText || a.fbt._("Submit", null, {
-				hk: "2Iwjdv"
+				hk: "4aU3dh"
 			})))));
 			p.displayName = "OverlayControlBar", t.a = p
 		},
@@ -404,4 +404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.24e465695ab85ffc3794.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.3901a90a2e9ef0513f7e.js.map

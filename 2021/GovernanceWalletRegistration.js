@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.af3466059d6781690b15.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.5c31b647a8f9d0c293c3.js
+// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -919,11 +919,8 @@
 					text: t
 				}))
 			}))(H));
-			const {
-				fbt: q
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Y(e) {
+			function q(e) {
 				const t = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/wallet.svg)`;
 				return a.a.createElement("div", {
 					className: Object(o.a)(g.a.card, g.a.walletCard)
@@ -931,11 +928,11 @@
 					className: g.a.text
 				}, a.a.createElement("div", {
 					className: g.a.header
-				}, q._("Create a Wallet", null, {
+				}, F.fbt._("Create a Wallet", null, {
 					hk: "M5zQ2"
 				})), a.a.createElement("div", {
 					className: g.a.body
-				}, q._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
+				}, F.fbt._("Create your MetaMask account and Ethereum wallet by following the instructions in MetaMask after you install the extension.", null, {
 					hk: "4DQsB7"
 				}))), a.a.createElement("div", {
 					className: g.a.cta
@@ -947,15 +944,15 @@
 				}), a.a.createElement(f.l, {
 					className: g.a.button,
 					onClick: e.onNextStep
-				}, q._("Next", null, {
-					hk: "3KNR6B"
+				}, F.fbt._("Next", null, {
+					hk: "2mEXAi"
 				}), a.a.createElement(v.a, {
 					className: g.a.buttonIcon
 				}))))
 			}
-			var J, Z = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
-				Q = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
-				z = n.n(Q);
+			var Y, J = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
+				Z = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
+				Q = n.n(Z);
 
 			function X(e) {
 				const {
@@ -963,45 +960,45 @@
 					isActive: n
 				} = e;
 				return a.a.createElement("div", {
-					className: Object(o.a)(z.a.tab, {
-						[z.a.tabActive]: n
+					className: Object(o.a)(Q.a.tab, {
+						[Q.a.tabActive]: n
 					})
 				}, t)
 			}! function(e) {
 				e[e.About = 0] = "About", e[e.MetaMask = 1] = "MetaMask", e[e.Wallet = 2] = "Wallet", e[e.Connect = 3] = "Connect", e[e.Verify = 4] = "Verify", e[e.Registered = 5] = "Registered"
-			}(J || (J = {}));
-			const K = [{
-				id: J.About,
+			}(Y || (Y = {}));
+			const z = [{
+				id: Y.About,
 				name: () => F.fbt._("About", null, {
 					hk: "1jX7pr"
 				})
 			}, {
-				id: J.MetaMask,
+				id: Y.MetaMask,
 				name: () => F.fbt._("MetaMask", null, {
 					hk: "2Y184A"
 				})
 			}, {
-				id: J.Wallet,
+				id: Y.Wallet,
 				name: () => F.fbt._("Wallet", null, {
 					hk: "3qALAf"
 				})
 			}, {
-				id: J.Connect,
+				id: Y.Connect,
 				name: () => F.fbt._("Connect", null, {
 					hk: "3GMXUP"
 				})
 			}, {
-				id: J.Verify,
+				id: Y.Verify,
 				name: () => F.fbt._("Verify", null, {
 					hk: "WHMgJ"
 				})
 			}, {
-				id: J.Registered,
+				id: Y.Registered,
 				name: () => F.fbt._("Registered", null, {
 					hk: "1U7VpD"
 				})
 			}];
-			class ee extends a.a.Component {
+			class K extends a.a.Component {
 				constructor() {
 					super(...arguments), this.setRef = e => {
 						this.el = e, this.updateActiveTabLine()
@@ -1013,9 +1010,9 @@
 				updateActiveTabLine() {
 					const e = this.el;
 					if (!e) return;
-					const t = e.getElementsByClassName(z.a.tabActive)[0];
+					const t = e.getElementsByClassName(Q.a.tabActive)[0];
 					if (t) {
-						const n = e.getElementsByClassName(z.a.activeTabLine)[0];
+						const n = e.getElementsByClassName(Q.a.activeTabLine)[0];
 						n.style.left = t.offsetLeft + "px", n.style.top = t.offsetTop + t.offsetHeight - 3 + "px", n.style.width = t.offsetWidth + "px"
 					}
 				}
@@ -1024,26 +1021,26 @@
 						activeTab: e
 					} = this.props;
 					return a.a.createElement("div", {
-						className: z.a.tabBar,
+						className: Q.a.tabBar,
 						ref: this.setRef
-					}, K.map(t => a.a.createElement(X, {
+					}, z.map(t => a.a.createElement(X, {
 						isActive: e === t.id,
 						key: t.id
 					}, t.name())), a.a.createElement("div", {
-						className: z.a.activeTabLine
+						className: Q.a.activeTabLine
 					}))
 				}
 			}
 			const {
-				fbt: te
+				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class ne extends a.a.Component {
+			class te extends a.a.Component {
 				constructor(e) {
 					super(e), this.onNextStep = () => {
 						const {
 							activeTab: e
 						} = this.state;
-						if (e === J.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
+						if (e === Y.Registered) return this.props.onRefreshWallet(), this.props.onComplete(), void this.props.sendEvent(e => {
 							const t = m.defaults(e);
 							return {
 								source: "meta",
@@ -1054,14 +1051,14 @@
 								subreddit: m.subreddit(e)
 							}
 						});
-						const t = e === J.About ? J.MetaMask : e === J.MetaMask ? J.Wallet : e === J.Wallet ? J.Connect : e === J.Connect ? J.Verify : J.Registered;
+						const t = e === Y.About ? Y.MetaMask : e === Y.MetaMask ? Y.Wallet : e === Y.Wallet ? Y.Connect : e === Y.Connect ? Y.Verify : Y.Registered;
 						this.setState({
 							activeTab: t
 						}), this.sendViewTabEvent(t)
 					}, this.correlationId = p()();
 					const t = Object(j.b)(e.pageLayer);
 					this.state = {
-						activeTab: t && Object(l.e)() ? J.Wallet : J.About
+						activeTab: t && Object(l.e)() ? Y.Wallet : Y.About
 					}
 				}
 				async componentDidMount() {
@@ -1092,21 +1089,21 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === J.About ? _ : s === J.MetaMask ? R : s === J.Wallet ? Y : s === J.Connect ? k : s === J.Verify ? $ : T;
+					} = this.state, i = s === Y.About ? _ : s === Y.MetaMask ? R : s === Y.Wallet ? q : s === Y.Connect ? k : s === Y.Verify ? $ : T;
 					return a.a.createElement("article", {
-						className: Object(o.a)(z.a.container, e)
-					}, a.a.createElement(Z.a, {
+						className: Object(o.a)(Q.a.container, e)
+					}, a.a.createElement(J.a, {
 						subredditId: r
 					}), a.a.createElement("button", {
-						className: z.a.closeButton,
+						className: Q.a.closeButton,
 						onClick: t
 					}, a.a.createElement(u.a, {
-						className: z.a.closeIcon
+						className: Q.a.closeIcon
 					})), a.a.createElement("div", {
-						className: z.a.title
-					}, te._("Register for Donuts Distribution on the Ethereum Blockchain", null, {
+						className: Q.a.title
+					}, ee._("Register for Donuts Distribution on the Ethereum Blockchain", null, {
 						hk: "3kf8PF"
-					})), a.a.createElement(ee, {
+					})), a.a.createElement(K, {
 						activeTab: s
 					}), a.a.createElement(i, {
 						onNextStep: this.onNextStep,
@@ -1114,12 +1111,12 @@
 					}))
 				}
 			}
-			const re = Object(s.b)(void 0, (e, t) => ({
+			const ne = Object(s.b)(void 0, (e, t) => ({
 				onRefreshWallet: () => e(Object(i.h)({
 					subredditId: t.subredditId
 				}))
 			}));
-			t.a = re(Object(c.c)(Object(d.t)()(ne)))
+			t.a = ne(Object(c.c)(Object(d.t)()(te)))
 		},
 		"./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts": function(e, t, n) {
 			"use strict";
@@ -1946,4 +1943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.af3466059d6781690b15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.5c31b647a8f9d0c293c3.js.map
