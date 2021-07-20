@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8d299cbef46454b74af1.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.0ed4d2899a37292ffad5.js
+// Retrieved at 7/20/2021, 12:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -9059,15 +9059,21 @@
 							t(e.state[Qr.a.CloseLocation])
 						}
 					}, this.onOverlayMouseDown = e => {
-						this.mouseDownInWrapper = e.target === this.state.overlayScrollContainerEl && e.clientX <= window.innerWidth - 17
+						y.a.read(() => {
+							this.mouseDownInWrapper = e.target === this.state.overlayScrollContainerEl && e.clientX <= window.innerWidth - 17
+						})
 					}, this.state = {
 						overlayScrollContainerEl: null,
 						mediaIsFullscreen: !1
 					}
 				}
 				componentDidMount() {
-					document.addEventListener("webkitfullscreenchange", this.handleWebkitFullscreenChange), this.lightboxHeaderEl && (this.lightboxHeaderEl.focus(), this.listingFocusSubscriptionId = Ru.a.subscribe(e => {
-						e.isListingFocused && this.lightboxHeaderEl.querySelector(E.a).focus()
+					document.addEventListener("webkitfullscreenchange", this.handleWebkitFullscreenChange), this.lightboxHeaderEl && (y.a.write(() => {
+						this.lightboxHeaderEl.focus()
+					}), this.listingFocusSubscriptionId = Ru.a.subscribe(e => {
+						e.isListingFocused && y.a.write(() => {
+							this.lightboxHeaderEl.querySelector(E.a).focus()
+						})
 					}))
 				}
 				componentWillUnmount() {
@@ -18421,4 +18427,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8d299cbef46454b74af1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0ed4d2899a37292ffad5.js.map
