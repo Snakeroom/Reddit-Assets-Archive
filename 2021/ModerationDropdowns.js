@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.ecae0d3d308deba7b32d.js
-// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d86ab88902a32910b7f1.js
+// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -1186,7 +1186,7 @@
 						onStickyPost: T,
 						onSpoilerPost: D,
 						post: F
-					} = e, L = Object(r.e)(w.k), B = F.flair.filter(e => e.type !== C.f.Nsfw && e.type !== C.f.Spoiler).length > 0, A = Object(k.b)(F), U = !(!F.approvedBy || !A), z = d ? void 0 : p, W = Object(E.a)(e.post), K = u ? y : I;
+					} = e, L = Object(r.e)(w.l), B = F.flair.filter(e => e.type !== C.f.Nsfw && e.type !== C.f.Spoiler).length > 0, A = Object(k.b)(F), U = !(!F.approvedBy || !A), z = d ? void 0 : p, W = Object(E.a)(e.post), K = u ? y : I;
 					return n.a.createElement(R.g, null, a && n.a.createElement(n.a.Fragment, null, !F.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(R.e, {
 						className: K(g.a.Approve, z),
 						displayText: U ? v.fbt._("reapprove", null, {
@@ -2271,14 +2271,14 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Uc
-					}) === o.ed.Enabled
+						experimentName: o.Vc
+					}) === o.fd.Enabled
 				},
 				a = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Tc
-					}) === o.dd.Enabled
+						experimentName: o.Uc
+					}) === o.ed.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -2313,4 +2313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.ecae0d3d308deba7b32d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d86ab88902a32910b7f1.js.map

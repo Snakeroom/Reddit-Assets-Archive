@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.adafee76a2839b396bbd.js
-// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.670bcd85c62c833bfcc8.js
+// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6344,7 +6344,7 @@
 			var B = n("./src/reddit/components/Settings/Powerups/index.m.less"),
 				R = n.n(B);
 			const U = Object(d.c)({
-				allocationByKey: h.t
+				allocationByKey: h.u
 			});
 			var F = Object(c.b)(U)((function(e) {
 					const {
@@ -11033,9 +11033,9 @@
 					language: L.T,
 					shouldShowCreatePasswordModal: M.d,
 					shouldShowGenderCollection: e => Object(A.c)(e, {
-						experimentName: N.ud,
+						experimentName: N.vd,
 						experimentEligibilitySelector: T.e
-					}) === N.Dd.Enabled,
+					}) === N.Ed.Enabled,
 					showLanguageSection: I.d.langSelect,
 					availableLocales: Be,
 					locale: Fe.i,
@@ -14299,4 +14299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.adafee76a2839b396bbd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.670bcd85c62c833bfcc8.js.map

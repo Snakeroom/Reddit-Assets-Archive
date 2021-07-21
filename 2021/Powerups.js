@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.dd3bcb69a94de6107f9f.js
-// Retrieved at 7/21/2021, 9:50:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.449655b95d0e8d8f2e7d.js
+// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -1150,4 +1150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.dd3bcb69a94de6107f9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.449655b95d0e8d8f2e7d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.3c7f9a9b9cdfc7fd0eca.js
-// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.ea6b4cf8e3ee58f8ee46.js
+// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -95,8 +95,8 @@
 			};
 			var g = n("./src/lib/timeUntil/index.ts"),
 				f = n("./src/reddit/models/Toast/index.ts"),
-				y = n("./src/reddit/actions/economics/helpers/index.ts"),
-				k = n("./src/reddit/actions/economics/predictions/index.ts"),
+				k = n("./src/reddit/actions/economics/helpers/index.ts"),
+				y = n("./src/reddit/actions/economics/predictions/index.ts"),
 				w = n("./src/reddit/actions/post.ts"),
 				C = n("./src/reddit/models/Prediction/index.ts"),
 				L = n("./src/reddit/selectors/experiments/econ/index.ts"),
@@ -129,8 +129,8 @@
 					} = function(e, t, n) {
 						const o = Object(u.d)(),
 							s = Object(u.e)(p.d),
-							r = Object(u.e)(L.j),
-							d = Object(u.e)(L.i),
+							r = Object(u.e)(L.k),
+							d = Object(u.e)(L.j),
 							c = Object(T.a)(),
 							a = Object(S.b)(),
 							l = Object(S.a)(),
@@ -158,7 +158,7 @@
 								N || O || _(e.id)
 							},
 							predict: async e => {
-								if (e.currency === C.a.Coins && e.amount > s) return Object(y.promptUserToBuyMoreCoins)(), void c(E.a);
+								if (e.currency === C.a.Coins && e.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(E.a);
 								if (N) return l(B._("Error: Failed to make prediction. This prediction has already ended", null, {
 									hk: "22UWEr"
 								})), void _(null);
@@ -168,7 +168,7 @@
 									selectedNumberTokens: e.amount
 								}));
 								try {
-									await o(Object(k.k)({
+									await o(Object(y.k)({
 										coinPackageId: e.id,
 										selectedOptionId: h,
 										price: e.amount,
@@ -304,4 +304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.3c7f9a9b9cdfc7fd0eca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ea6b4cf8e3ee58f8ee46.js.map

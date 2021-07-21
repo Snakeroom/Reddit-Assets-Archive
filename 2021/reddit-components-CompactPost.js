@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.ce2b4f3e14a466a7765b.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.9fcc87272d687eae3f65.js
+// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -845,11 +845,11 @@
 				return e.split("-")[1]
 			}
 
-			function V(e) {
+			function W(e) {
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
-			function W(e) {
+			function V(e) {
 				var t, n = e.reference,
 					r = e.element,
 					o = e.placement,
@@ -888,7 +888,7 @@
 							y: n.y
 						}
 				}
-				var d = s ? V(s) : null;
+				var d = s ? W(s) : null;
 				if (null != d) {
 					var l = "y" === d ? "height" : "width";
 					switch (i) {
@@ -1075,7 +1075,7 @@
 					T = e.elements[b ? x : m],
 					j = ee(a(T) ? T : T.contextElement || l(e.elements.popper), c, u),
 					k = o(O),
-					L = W({
+					L = V({
 						reference: k,
 						element: g,
 						strategy: "absolute",
@@ -1155,7 +1155,7 @@
 						fn: function(e) {
 							var t = e.state,
 								n = e.name;
-							t.modifiersData[n] = W({
+							t.modifiersData[n] = V({
 								reference: t.rects.reference,
 								element: t.rects.popper,
 								strategy: "absolute",
@@ -1333,11 +1333,11 @@
 											altBoundary: p,
 											padding: d
 										}),
-										V = F ? M ? y : g : M ? S : v;
-									O[U] > k[U] && (V = X(V));
-									var W = X(V),
+										W = F ? M ? y : g : M ? S : v;
+									O[U] > k[U] && (W = X(W));
+									var V = X(W),
 										H = [];
-									if (s && H.push(B[D] <= 0), a && H.push(B[V] <= 0, B[W] <= 0), H.every((function(e) {
+									if (s && H.push(B[D] <= 0), a && H.push(B[W] <= 0, B[V] <= 0), H.every((function(e) {
 											return e
 										}))) {
 										N = R, w = !1;
@@ -1393,7 +1393,7 @@
 								_ = G(t.placement),
 								x = Y(t.placement),
 								T = !x,
-								C = V(_),
+								C = W(_),
 								k = "x" === C ? "y" : "x",
 								I = t.modifiersData.popperOffsets,
 								w = t.rects.reference,
@@ -1414,7 +1414,7 @@
 										F = I[C] + E[A],
 										U = I[C] - E[R],
 										B = m ? -N[D] / 2 : 0,
-										W = x === j ? w[D] : N[D],
+										V = x === j ? w[D] : N[D],
 										H = x === j ? -N[D] : -w[D],
 										z = t.elements.arrow,
 										q = m && z ? b(z) : {
@@ -1430,7 +1430,7 @@
 										Z = X[A],
 										Q = X[R],
 										K = oe(0, w[D], q[D]),
-										J = T ? w[D] / 2 - B - K - Z - P : W - K - Z - P,
+										J = T ? w[D] / 2 - B - K - Z - P : V - K - Z - P,
 										$ = T ? -w[D] / 2 + B + K + Q + P : H + K + Q + P,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
@@ -1461,7 +1461,7 @@
 								o = n.elements.arrow,
 								s = n.modifiersData.popperOffsets,
 								i = G(n.placement),
-								a = V(i),
+								a = W(i),
 								c = [g, y].indexOf(i) >= 0 ? "height" : "width";
 							if (o && s) {
 								var d = n.modifiersData[r + "#persistent"].padding,
@@ -2658,8 +2658,8 @@
 				B = n("./src/reddit/components/ModModeReports/helpers.ts"),
 				G = n("./src/reddit/components/ModToolsFlatlist/index.tsx"),
 				Y = n("./src/reddit/components/PopupPortal/index.tsx"),
-				V = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				W = n("./src/reddit/components/PostBadges/index.tsx"),
+				W = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				V = n("./src/reddit/components/PostBadges/index.tsx"),
 				H = n("./src/reddit/components/PostContainer/index.tsx"),
 				z = n("./src/reddit/components/PostFlairPicker/index.tsx"),
 				q = n("./src/reddit/components/PostLeftRail/index.tsx"),
@@ -2789,7 +2789,7 @@
 						sendEvent: Ie,
 						shouldShowGalleryTileOption: we,
 						showPromotedCTA: Pe
-					} = this.props, Le = !!fe.media && fe.media.type === b.o.RTJSON, Ae = _e && Le, Re = Object(z.b)(fe.id, y), De = Object(ue.a)(te), Me = Object(de.a)(te), Fe = Object(le.a)(te), Ue = `-mod-actions-menu-${fe.id}`, Be = `voting-arrows-${fe.id}`, Ge = !!s && Object(h.e)(s) === fe.author, Ye = Object(B.c)(fe), Ve = Object(A.a)("View--Reports", fe.id, je), We = Object(B.a)(fe), He = !(y || x || O), ze = fe.media && fe.media.type === b.o.LIVEVIDEO, {
+					} = this.props, Le = !!fe.media && fe.media.type === b.o.RTJSON, Ae = _e && Le, Re = Object(z.b)(fe.id, y), De = Object(ue.a)(te), Me = Object(de.a)(te), Fe = Object(le.a)(te), Ue = `-mod-actions-menu-${fe.id}`, Be = `voting-arrows-${fe.id}`, Ge = !!s && Object(h.e)(s) === fe.author, Ye = Object(B.c)(fe), We = Object(A.a)("View--Reports", fe.id, je), Ve = Object(B.a)(fe), He = !(y || x || O), ze = fe.media && fe.media.type === b.o.LIVEVIDEO, {
 						moderationPrompt: qe
 					} = fe, Xe = e => Ie(Object(f.h)(fe.id, e)), Ze = Object(c.t)(fe, E), {
 						source: Qe
@@ -2844,7 +2844,7 @@
 						post: fe,
 						subredditName: be.name,
 						isOverlay: !!y
-					})))), o.a.createElement(V.a, {
+					})))), o.a.createElement(W.a, {
 						className: Object(d.a)(Se.a.content, {
 							[Se.a.isEvent]: Object(pe.a)(fe)
 						}),
@@ -2880,7 +2880,7 @@
 						post: fe,
 						showSub: !!be && !P && !fe.isSponsored,
 						subredditOrProfile: be
-					}), o.a.createElement(W.a, {
+					}), o.a.createElement(V.a, {
 						className: Se.a.postBadges,
 						displayText: be ? be.displayText : null,
 						inSubredditOrProfile: P,
@@ -2925,17 +2925,17 @@
 						post: fe,
 						tooltipId: Ue
 					})), De && Ye && !ne && o.a.createElement(ee.c, {
-						text: `${We}`,
+						text: `${Ve}`,
 						onClick: () => {
-							this.props.onOpenReportsDropdown(Ve), Xe("post_report_menu")
+							this.props.onOpenReportsDropdown(We), Xe("post_report_menu")
 						},
-						id: Ve
+						id: We
 					}, o.a.createElement(oe.a, {
 						model: fe,
 						onIgnoreReports: () => {
 							ce(), Xe(fe.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
-						tooltipId: Ve
+						tooltipId: We
 					}), fe.ignoreReports ? o.a.createElement(he.a, null) : o.a.createElement(Ee.a, null)), o.a.createElement(Q.a, {
 						currentProfileName: n,
 						isCommentsPage: x,
@@ -2988,7 +2988,7 @@
 					return o.a.createElement($.b, null, Ke)
 				}
 			}
-			const ke = e => o.a.createElement(V.a, {
+			const ke = e => o.a.createElement(W.a, {
 					className: Object(d.a)(e.className, Se.a.expandedContentWrapper),
 					flairStyleTemplate: e.flairStyleTemplate
 				}, e.post.crosspostRootId ? o.a.createElement("div", {
@@ -4020,10 +4020,10 @@
 				B = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				G = n("./src/reddit/hooks/usePostContext.ts"),
 				Y = n("./src/reddit/hooks/useTheme.ts"),
-				V = n("./src/telemetry/models/Outbound.ts");
+				W = n("./src/telemetry/models/Outbound.ts");
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -4080,7 +4080,7 @@
 					titleColor: n,
 					children: r,
 					...o
-				}) => s.a.createElement(a.a, W({}, o, {
+				}) => s.a.createElement(a.a, V({}, o, {
 					className: Object(l.a)(e, M.a.styledLink, {
 						[M.a.isVisitedEnabled]: !t
 					})
@@ -4110,7 +4110,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, o = Object(U.a)(), i = Object(B.a)(p.gc) === p.kc.Enabled;
+					} = t, o = Object(U.a)(), i = Object(B.a)(p.hc) === p.lc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(q, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Q, e));
@@ -4177,7 +4177,7 @@
 						post: n
 					} = e, {
 						isSponsored: r
-					} = n, o = e.isCommentsPage ? V.SourceElement.PostLink : V.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== P.Large && !n.isSponsored && !(n.media && Object(S.G)(n.media)) && (n.source || n.media && (n.media.type === S.o.GIFVIDEO || n.media.type === S.o.IMAGE || n.media.type === S.o.EMBED));
+					} = n, o = e.isCommentsPage ? W.SourceElement.PostLink : W.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== P.Large && !n.isSponsored && !(n.media && Object(S.G)(n.media)) && (n.source || n.media && (n.media.type === S.o.GIFVIDEO || n.media.type === S.o.IMAGE || n.media.type === S.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (i) return s.a.createElement(b.a, {
 							className: e.outboundLinkClassName,
@@ -4231,7 +4231,7 @@
 						post: a,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), s.a.createElement(Z, W({}, this.props, {
+					}), s.a.createElement(Z, V({}, this.props, {
 						leftFlair: c ? p : void 0
 					})), i && s.a.createElement(L, {
 						className: M.a.pollMeta,
@@ -4263,7 +4263,7 @@
 					})),
 					a = Object(Y.a)(),
 					c = Object(u.b)();
-				return s.a.createElement(J, W({
+				return s.a.createElement(J, V({
 					pageLayer: t,
 					isCommentPermalink: n
 				}, r, o, e, {
@@ -5009,10 +5009,10 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = Object(r.a)(e => Object(s.c)(e, {
-				experimentName: o.Vc,
+				experimentName: o.Wc,
 				experimentEligibilitySelector: s.a
-			}), i.F, (e, t) => e === o.fd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.F, (e, t) => e === o.gd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.ce2b4f3e14a466a7765b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.9fcc87272d687eae3f65.js.map

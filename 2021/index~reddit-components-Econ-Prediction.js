@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fc342d7839d6f63fd43b.js
-// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.66cfc605313932d1eb04.js
+// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1517,7 +1517,7 @@
 				onCancel: e,
 				selectedChipPack: t
 			}) {
-				const n = Object(s.e)(h.n),
+				const n = Object(s.e)(h.o),
 					a = Object(s.e)(E.d),
 					[c, i] = Object(o.useState)(null),
 					[l, u] = Object(o.useState)(!1),
@@ -1692,7 +1692,7 @@
 			const {
 				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), X = 1e3, Z = Object(a.c)({
-				isNewPredictionsSheet: h.n,
+				isNewPredictionsSheet: h.o,
 				userCoins: E.d
 			});
 			t.b = Object(s.b)(Z)(Object(c.a)(({
@@ -2055,7 +2055,7 @@
 				onReveal: E
 			}) => {
 				const [O, j] = Object(o.useState)(!1), [g, v] = Object(l.a)("hasSeenPredictionSneakPeek", !1), I = Object(u.a)(), k = Object(s.e)(h.s), N = !!p, w = n && !c;
-				if (!Object(s.e)(e => !t && !w && N && Object(_.l)(e))) return null;
+				if (!Object(s.e)(e => !t && !w && N && Object(_.m)(e))) return null;
 				const S = () => {
 					g || v(!0), j(!1)
 				};
@@ -3414,4 +3414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.fc342d7839d6f63fd43b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.66cfc605313932d1eb04.js.map
