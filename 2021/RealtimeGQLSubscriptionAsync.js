@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.76ec43a121dd3a4f2690.js
-// Retrieved at 7/14/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.70d01d12f4a0876073c6.js
+// Retrieved at 7/21/2021, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RealtimeGQLSubscriptionAsync"], {
 		"./src/realtime/GQLSubscription/index.tsx": function(e, n, t) {
@@ -20,7 +20,7 @@
         id
         ... on BasicMessage {
           data {
-            ... on PostCountUpdateMessageData {
+            ... on VoteCountUpdateMessageData {
               voteCountChange
             }
           }
@@ -34,7 +34,7 @@
         id
         ... on BasicMessage {
           data {
-            ... on PostCountUpdateMessageData {
+            ... on CommentCountUpdateMessageData {
               commentCountChange
             }
           }
@@ -89,7 +89,7 @@
 				});
 			n.default = e => {
 				const [n, t] = Object(r.useState)(_), i = Object(u.e)(e => e.user.session);
-				return Object(r.useEffect)(() => {
+				Object(r.useEffect)(() => {
 					_ || (_ = function() {
 						let e;
 						return {
@@ -108,12 +108,21 @@
 							}()), e)
 						}
 					}(), t(_)), _ && !n && t(_)
-				}, [i, t, n]), n && n.getInstance() && d ? c.a.createElement(c.a.Fragment, null, n && c.a.createElement(j, m({}, e, {
+				}, [i, t, n]);
+				const l = Object(r.useRef)((e => {
+					if (e) {
+						return !!document.getElementById(e)
+					}
+					return !1
+				})(e.uniqueKey));
+				return n && n.getInstance() && d && !l.current ? n && c.a.createElement(c.a.Fragment, null, c.a.createElement(j, m({}, e, {
 					apolloClient: n.getInstance(),
 					subscriptionQueries: d
-				}))) : null
+				})), c.a.createElement("span", {
+					id: e.uniqueKey
+				})) : null
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.76ec43a121dd3a4f2690.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RealtimeGQLSubscriptionAsync.70d01d12f4a0876073c6.js.map

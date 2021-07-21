@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.3bc05ba2d87bf7fbdd22.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.adb63216f3f1b35b608d.js
+// Retrieved at 7/21/2021, 6:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1183,7 +1183,7 @@
 						CoinsMobile: "7e0361977b199069aa54",
 						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "411a7f51580a03d6f97e",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86": "476a8d6f7bbfcd61e7e4",
-						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "8118c3591acefc622078",
+						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "8f79ceaf856756282fea",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "8c61ff1d73ee45a5ccef",
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "2623b1392b18d5aa90fe",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "ab2942f4477c188db9fc",
@@ -1269,7 +1269,7 @@
 						"translations/es_MX-json": "d6dbf61573bcd0184f58",
 						"translations/fr_FR-json": "2d323a84b401edca0a04",
 						"translations/it_IT-json": "dd60dcf2dad2e8106c48",
-						"translations/pseudo_ext-json": "415b2490dcb43dfdfbb5",
+						"translations/pseudo_ext-json": "ca6d60186299fc7168c8",
 						"translations/pseudo_long-json": "210f17ecba77338e7608",
 						"translations/pseudo_short-json": "8d17709f50aadf13f2c5",
 						"translations/pt_BR-json": "297446631d261bde93b5",
@@ -1286,8 +1286,8 @@
 						RedesignChat: "665084393f363d361f98",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "e30e08b898e0cbf4b413",
-						CollectionCommentsPage: "b44b7ab413f8401d07be",
-						CommentsPage: "897e346421ad1fc635f8",
+						CollectionCommentsPage: "6b4f630c9c1c7410f675",
+						CommentsPage: "0b2e94841f5b5e526bf4",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						CryptoHarbergerTaxManageModal: "c14ee11a2a9faebe1901",
 						HarbergerTaxManageModal: "27ef4c5d080ac06b8982",
@@ -1315,7 +1315,7 @@
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "3f8a8da5f497bd872b51",
 						PublicAccessNetwork: "9f6f5d18a6110028de1b",
 						"vendors~RealtimeGQLSubscriptionAsync": "dde5d6c76d2de17601f0",
-						RealtimeGQLSubscriptionAsync: "76ec43a121dd3a4f2690",
+						RealtimeGQLSubscriptionAsync: "70d01d12f4a0876073c6",
 						"vendors~SubredditWiki": "375d2635dafe1308f47b",
 						SubredditWiki: "0d893a236ff52ca5cd6b",
 						"vendors~xml2js": "2811349dbc1fc6bf5a4b",
@@ -1362,7 +1362,7 @@
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "ffd1df939253f78c0611",
 						"reddit-components-InFeedPostCreation": "58f57f379dfff2436a19",
 						"reddit-components-TabBadger-Component": "66444215ca0c0311560e",
-						RpanListingUnit: "9fa90236ecdabae2ca67",
+						RpanListingUnit: "14437489c61f1be493d5",
 						StructuredStyles: "246a904b6379808f84d1",
 						CryptoLibEthers: "7b5d1da5dad293dde61e",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "fc4da4117f0a9fe2beee",
@@ -1517,4 +1517,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3bc05ba2d87bf7fbdd22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.adb63216f3f1b35b608d.js.map

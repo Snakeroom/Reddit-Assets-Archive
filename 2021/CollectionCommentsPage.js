@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b44b7ab413f8401d07be.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6b4f630c9c1c7410f675.js
+// Retrieved at 7/21/2021, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -4923,83 +4923,84 @@
 					isAdminOrMod: E,
 					isCommentCountAnimation: w,
 					isCommentsPage: j,
-					isCurrentUserProfilePost: I,
-					isEditing: k,
-					isExpanded: _,
-					isFollowed: S,
-					isFollowedExpired: L,
-					isOverlay: M,
-					isPostFollowEnabled: R,
-					isVoteCountAnimation: F,
-					moderatorPermissions: A,
-					modModeEnabled: B,
-					onFollowPost: V,
-					onFollowPostExpired: D,
-					onIgnoreReports: U,
-					onOpenReportsDropdown: W,
-					openPost: H,
-					onVoteClick: Y,
-					post: Z,
-					scrollerItemRef: ne,
-					sendEvent: ie,
-					showAwardsPlaque: ae,
-					showEditFlair: de,
-					showPromotedCTA: ce,
-					subredditOrProfile: ye,
-					userIsOp: Ee
-				} = e, we = Object(fe.b)(), ke = Object(a.e)(e => Boolean(Z.predictionTournament) && Object(Ie.q)(e)), _e = Object(c.a)(Z);
+					isCountAnimShadowTestEnabled: I,
+					isCurrentUserProfilePost: k,
+					isEditing: _,
+					isExpanded: S,
+					isFollowed: L,
+					isFollowedExpired: M,
+					isOverlay: R,
+					isPostFollowEnabled: F,
+					isVoteCountAnimation: A,
+					moderatorPermissions: B,
+					modModeEnabled: V,
+					onFollowPost: D,
+					onFollowPostExpired: U,
+					onIgnoreReports: W,
+					onOpenReportsDropdown: H,
+					openPost: Y,
+					onVoteClick: Z,
+					post: ne,
+					scrollerItemRef: ie,
+					sendEvent: ae,
+					showAwardsPlaque: de,
+					showEditFlair: ce,
+					showPromotedCTA: ye,
+					subredditOrProfile: Ee,
+					userIsOp: we
+				} = e, ke = Object(fe.b)(), _e = Object(a.e)(e => Boolean(ne.predictionTournament) && Object(Ie.q)(e)), Se = Object(c.a)(ne);
 				Object(r.useEffect)(() => {
-					R && L && D()
+					F && M && U()
 				}, []);
-				const Se = Z.isSponsored ? Object(me.b)(Z.id, {
+				const Le = ne.isSponsored ? Object(me.b)(ne.id, {
 						fireAdPixelsOfType: d,
-						openPost: H
+						openPost: Y
 					}) : n.a,
-					Le = Object(v.a)(A),
-					Te = Object(x.a)(A),
-					Ne = Object(f.a)(A),
-					Me = Le || Te,
-					Re = ((e, t, s) => {
+					Te = Object(v.a)(B),
+					Ne = Object(x.a)(B),
+					Me = Object(f.a)(B),
+					Re = Te || Ne,
+					Fe = ((e, t, s) => {
 						const [o, n] = e ? [Object(C.e)(e) === s.author, e.isEmployee] : [!1, !1];
 						return o || t || n
-					})(o, Me, Z),
-					Fe = !!Z.media && (Z.media.type === T.o.RTJSON || Z.media.type === T.o.TEXT),
-					Ae = Ee && Fe,
-					Be = Object(oe.c)(Z);
-				let Ve;
-				const De = !(B && v.a),
-					We = Object(ue.b)({
-						hide: De,
-						editPost: De,
-						save: De,
-						report: De
+					})(o, Re, ne),
+					Ae = !!ne.media && (ne.media.type === T.o.RTJSON || ne.media.type === T.o.TEXT),
+					Be = we && Ae,
+					Ve = Object(oe.c)(ne);
+				let De;
+				const We = !(V && v.a),
+					He = Object(ue.b)({
+						hide: We,
+						editPost: We,
+						save: We,
+						report: We
 					}),
-					He = Z.removedByCategory === N.g.AuthorDeleted,
-					Ke = o && (o.displayText === Z.author || o.username === Z.author),
-					qe = !He && !ot(Z) && (Ke || E || !(Z.removedByCategory && Z.media && (Object(T.J)(Z.media) || Object(T.H)(Z.media)))),
-					Ye = Object(m.t)(Z, O),
+					Ke = ne.removedByCategory === N.g.AuthorDeleted,
+					qe = o && (o.displayText === ne.author || o.username === ne.author),
+					Ye = !Ke && !ot(ne) && (qe || E || !(ne.removedByCategory && ne.media && (Object(T.J)(ne.media) || Object(T.H)(ne.media)))),
+					Qe = Object(m.t)(ne, O),
 					{
-						source: Qe
-					} = Ye,
-					Xe = Z.removedByCategory === N.g.Reddit && Object(h.e)(Z.created) > 24,
-					tt = Z.removedByCategory && Z.removedByCategory !== N.g.Reddit || Xe,
-					st = R && !tt && !Z.isArchived,
-					nt = Object(r.useCallback)(() => {
-						V(S ? N.f.UNFOLLOWED : N.f.FOLLOWED), we(S ? Object(P.i)(Z.id) : Object(P.c)(Z.id))
-					}, [V, we, S, Z.id]),
-					at = i.a.createElement(Je, {
-						post: Z,
+						source: Xe
+					} = Qe,
+					tt = ne.removedByCategory === N.g.Reddit && Object(h.e)(ne.created) > 24,
+					st = ne.removedByCategory && ne.removedByCategory !== N.g.Reddit || tt,
+					nt = F && !st && !ne.isArchived,
+					at = Object(r.useCallback)(() => {
+						D(L ? N.f.UNFOLLOWED : N.f.FOLLOWED), ke(L ? Object(P.i)(ne.id) : Object(P.c)(ne.id))
+					}, [D, ke, L, ne.id]),
+					dt = i.a.createElement(Je, {
+						post: ne,
 						size: be.b.ExtraLarge,
-						showCategoryTag: M,
-						isOverlay: M,
+						showCategoryTag: R,
+						isOverlay: R,
 						disableVisited: !0,
 						isCommentsPage: !0
 					}),
-					dt = i.a.createElement(Ge, {
-						post: Z,
-						showViewCount: Re
+					ct = i.a.createElement(Ge, {
+						post: ne,
+						showViewCount: Fe
 					}),
-					ct = (e => {
+					lt = (e => {
 						const {
 							crosspost: t,
 							isCommentPermalink: s,
@@ -5007,261 +5008,267 @@
 						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(Ie.q)(e));
 						return s ? Oe.g.Classic : n ? Oe.g.Large : t ? Oe.g.Large : o.media && !ot(o) ? Oe.g.Large : Oe.g.Medium
 					})(e);
-				if (ct === Oe.g.Classic) {
-					const t = Object(g.a)(Z);
-					Ve = i.a.createElement("div", {
+				if (lt === Oe.g.Classic) {
+					const t = Object(g.a)(ne);
+					De = i.a.createElement("div", {
 						"data-test-id": ve.e
 					}, i.a.createElement(he.a, {
-						model: Z,
-						handleVote: Y,
-						subreddit: ye,
-						isOverlay: M,
-						isVoteCountAnimation: F,
-						postId: Z.id
+						model: ne,
+						handleVote: Z,
+						subreddit: Ee,
+						isCountAnimShadowTestEnabled: I,
+						isOverlay: R,
+						isVoteCountAnimation: A,
+						postId: ne.id
 					}), i.a.createElement("div", {
 						className: ze.a.mainBody
 					}, i.a.createElement("div", {
 						className: ze.a.content
 					}, i.a.createElement(ge.a, {
-						hideAwards: ae,
+						hideAwards: de,
 						hideNSFWPref: b,
 						inSubredditOrProfile: !0,
 						isCommentsPage: j,
-						isCurrentUserProfilePost: I,
-						isOverlay: !!M,
+						isCurrentUserProfilePost: k,
+						isOverlay: !!R,
 						isTopicPage: !1,
-						post: Z,
+						post: ne,
 						shouldShowSubscribeButton: !1,
-						showSubreddit: !!M && !Z.isSponsored,
+						showSubreddit: !!R && !ne.isSponsored,
 						showSubredditIcon: !0,
-						subredditOrProfile: ye,
-						shouldShowFollowButton: st && !t,
-						isFollowed: S,
-						onFollowPostClick: nt
-					}), at, i.a.createElement(X.a, {
+						subredditOrProfile: Ee,
+						shouldShowFollowButton: nt && !t,
+						isFollowed: L,
+						onFollowPostClick: at
+					}), dt, i.a.createElement(X.a, {
 						className: j ? ze.a.leftPadding : void 0,
-						post: Z,
+						post: ne,
 						showCategoryTag: e.isInCategoriesExperiment && j,
-						sendEvent: ie
-					}), B && Le && Be && i.a.createElement(se.a, {
-						onIgnoreReports: U,
-						reportable: Z
+						sendEvent: ae
+					}), V && Te && Ve && i.a.createElement(se.a, {
+						onIgnoreReports: W,
+						reportable: ne
 					}), i.a.createElement(ee.d, null), i.a.createElement("div", {
 						className: ze.a.FlatlistContainer
 					}, i.a.createElement(Ze, {
 						crosspost: s || void 0,
-						isExpanded: !!_,
-						post: Z,
+						isExpanded: !!S,
+						post: ne,
 						useMediaIcons: !1
-					}), it(e), ae && i.a.createElement(G.a, {
+					}), it(e), de && i.a.createElement(G.a, {
 						awardsPlaqueStyle: !0,
 						isPostDetail: !0,
-						thing: Z,
-						tooltipType: M ? Ce.c.Lightbox : void 0
+						thing: ne,
+						tooltipType: R ? Ce.c.Lightbox : void 0
 					}), i.a.createElement($e, {
 						currentUser: o,
-						hasModFlairPerms: Te,
-						hasModFullPerms: Ne,
-						hasModPostPerms: Le,
-						isOverlay: M,
-						onIgnoreReports: U,
-						onOpenReportsDropdown: W,
-						modModeEnabled: B,
-						post: Z,
+						hasModFlairPerms: Ne,
+						hasModFullPerms: Me,
+						hasModPostPerms: Te,
+						isOverlay: R,
+						onIgnoreReports: W,
+						onOpenReportsDropdown: H,
+						modModeEnabled: V,
+						post: ne,
 						showUpvotePercent: !0,
-						showViewCount: Re,
-						useFlatlistBreakpoints: We,
-						isCommentCountAnimation: w
+						showViewCount: Fe,
+						useFlatlistBreakpoints: He,
+						isCommentCountAnimation: w,
+						isCountAnimShadowTestEnabled: I
 					}))), t && i.a.createElement(rt, {
-						post: Z,
+						post: ne,
 						templatePlaceholderImage: l && l.postPlaceholderImage,
-						shouldShowFollowButton: st,
-						isFollowed: S,
-						onFollowPostClick: nt
+						shouldShowFollowButton: nt,
+						isFollowed: L,
+						onFollowPostClick: at
 					})))
-				} else if (ct === Oe.g.Medium) {
-					const t = Object(g.a)(Z);
-					Ve = i.a.createElement("div", {
+				} else if (lt === Oe.g.Medium) {
+					const t = Object(g.a)(ne);
+					De = i.a.createElement("div", {
 						"data-test-id": ve.e
 					}, i.a.createElement(he.a, {
-						model: Z,
-						handleVote: Y,
-						subreddit: ye,
-						isOverlay: M,
-						isVoteCountAnimation: F,
-						postId: Z.id
+						model: ne,
+						handleVote: Z,
+						subreddit: Ee,
+						isCountAnimShadowTestEnabled: I,
+						isOverlay: R,
+						isVoteCountAnimation: A,
+						postId: ne.id
 					}), i.a.createElement("div", {
 						className: ze.a.mainBody
 					}, i.a.createElement("div", {
 						className: ze.a.content
 					}, i.a.createElement(ge.a, {
-						hideAwards: ae,
+						hideAwards: de,
 						hideNSFWPref: b,
 						inSubredditOrProfile: !0,
 						isCommentsPage: j,
-						isCurrentUserProfilePost: I,
-						isOverlay: !!M,
+						isCurrentUserProfilePost: k,
+						isOverlay: !!R,
 						isTopicPage: !1,
-						post: Z,
+						post: ne,
 						shouldShowSubscribeButton: !1,
-						showSubreddit: !!M && !Z.isSponsored,
+						showSubreddit: !!R && !ne.isSponsored,
 						showSubredditIcon: !0,
-						subredditOrProfile: ye,
-						shouldShowFollowButton: st && !t,
-						isFollowed: S,
-						onFollowPostClick: nt
-					}), at, Z.source && i.a.createElement(xe.a, {
-						post: Z,
+						subredditOrProfile: Ee,
+						shouldShowFollowButton: nt && !t,
+						isFollowed: L,
+						onFollowPostClick: at
+					}), dt, ne.source && i.a.createElement(xe.a, {
+						post: ne,
 						isCommentsPage: j
-					}), Object(T.L)(Z) && et, i.a.createElement(X.a, {
+					}), Object(T.L)(ne) && et, i.a.createElement(X.a, {
 						className: j ? ze.a.leftPadding : void 0,
-						post: Z,
+						post: ne,
 						showCategoryTag: e.isInCategoriesExperiment && j,
-						sendEvent: ie
-					}), ye && tt && i.a.createElement(Ue, {
+						sendEvent: ae
+					}), Ee && st && i.a.createElement(Ue, {
 						isAdminOrMod: E,
-						post: Z,
-						subredditOrProfile: ye
-					}), B && Le && Be && i.a.createElement(se.a, {
-						onIgnoreReports: U,
-						reportable: Z
-					})), t && !_e && i.a.createElement(te.a, {
-						post: Z,
+						post: ne,
+						subredditOrProfile: Ee
+					}), V && Te && Ve && i.a.createElement(se.a, {
+						onIgnoreReports: W,
+						reportable: ne
+					})), t && !Se && i.a.createElement(te.a, {
+						post: ne,
 						forceShowNSFW: !0,
-						hasModPostPerms: Me,
+						hasModPostPerms: Re,
 						isCommentsPage: j,
 						isOverlay: !0,
-						modModeEnabled: B,
+						modModeEnabled: V,
 						templatePlaceholderImage: l && l.postPlaceholderImage,
-						subredditOrProfile: ye,
-						shouldShowFollowButton: st,
-						isFollowed: S,
-						onFollowPostClick: nt
-					})), i.a.createElement(ee.d, null), ae && i.a.createElement(G.a, {
+						subredditOrProfile: Ee,
+						shouldShowFollowButton: nt,
+						isFollowed: L,
+						onFollowPostClick: at
+					})), i.a.createElement(ee.d, null), de && i.a.createElement(G.a, {
 						awardsPlaqueStyle: !0,
 						isPostDetail: !0,
-						thing: Z,
-						tooltipType: M ? Ce.c.Lightbox : void 0
+						thing: ne,
+						tooltipType: R ? Ce.c.Lightbox : void 0
 					}), i.a.createElement("div", {
 						className: ze.a.controlsContainer
 					}, i.a.createElement($.c, {
 						currentUser: o,
-						hasModFlairPerms: Te,
-						hasModFullPerms: Ne,
-						hasModPostPerms: Le,
-						isOverlay: M,
-						modModeEnabled: B,
-						onIgnoreReports: U,
-						onOpenReportsDropdown: W,
-						post: Z,
-						showEditPost: Ae,
-						showEditFlair: de,
-						tooltipType: M ? Ce.c.Lightbox : void 0,
-						useFlatlistBreakpoints: We,
-						isCommentCountAnimation: w
-					}), dt))
-				} else ct === Oe.g.Large && (Ve = i.a.createElement("div", {
+						hasModFlairPerms: Ne,
+						hasModFullPerms: Me,
+						hasModPostPerms: Te,
+						isOverlay: R,
+						modModeEnabled: V,
+						onIgnoreReports: W,
+						onOpenReportsDropdown: H,
+						post: ne,
+						showEditPost: Be,
+						showEditFlair: ce,
+						tooltipType: R ? Ce.c.Lightbox : void 0,
+						useFlatlistBreakpoints: He,
+						isCommentCountAnimation: w,
+						isCountAnimShadowTestEnabled: I
+					}), ct))
+				} else lt === Oe.g.Large && (De = i.a.createElement("div", {
 					"data-test-id": ve.e
 				}, i.a.createElement(he.a, {
-					model: Z,
-					handleVote: Y,
-					subreddit: ye,
-					isOverlay: M,
-					isVoteCountAnimation: F,
-					postId: Z.id
-				}), ke && Object(je.b)(Z) && i.a.createElement(i.a.Fragment, null, i.a.createElement(Q.a, {
-					post: Z
+					model: ne,
+					handleVote: Z,
+					subreddit: Ee,
+					isCountAnimShadowTestEnabled: I,
+					isOverlay: R,
+					isVoteCountAnimation: A,
+					postId: ne.id
+				}), _e && Object(je.b)(ne) && i.a.createElement(i.a.Fragment, null, i.a.createElement(Q.a, {
+					post: ne
 				}), i.a.createElement(z.a, {
-					post: Z
-				})), !ke && i.a.createElement(i.a.Fragment, null, i.a.createElement(ge.a, {
+					post: ne
+				})), !_e && i.a.createElement(i.a.Fragment, null, i.a.createElement(ge.a, {
 					forceOpenInNewTab: u,
-					hideAwards: ae,
+					hideAwards: de,
 					hideNSFWPref: b,
 					inSubredditOrProfile: !0,
 					isCommentsPage: j,
-					isCurrentUserProfilePost: I,
-					isOverlay: !!M,
+					isCurrentUserProfilePost: k,
+					isOverlay: !!R,
 					isTopicPage: !1,
-					post: Z,
+					post: ne,
 					shouldShowSubscribeButton: !1,
-					showSubreddit: !!M && !Z.isSponsored,
+					showSubreddit: !!R && !ne.isSponsored,
 					showSubredditIcon: !0,
-					subredditOrProfile: ye,
-					shouldShowFollowButton: st,
-					isFollowed: S,
-					onFollowPostClick: nt
-				}), at, ((e, t, s, o) => e.source && !t && (s || o))(Z, s, M, j) && i.a.createElement(xe.a, {
-					post: Z,
+					subredditOrProfile: Ee,
+					shouldShowFollowButton: nt,
+					isFollowed: L,
+					onFollowPostClick: at
+				}), dt, ((e, t, s, o) => e.source && !t && (s || o))(ne, s, R, j) && i.a.createElement(xe.a, {
+					post: ne,
 					isCommentsPage: j
 				})), i.a.createElement(X.a, {
 					className: j ? ze.a.leftPadding : void 0,
-					post: Z,
+					post: ne,
 					showCategoryTag: e.isInCategoriesExperiment && j,
-					sendEvent: ie
-				}), ye && tt && i.a.createElement(Ue, {
+					sendEvent: ae
+				}), Ee && st && i.a.createElement(Ue, {
 					isAdminOrMod: E,
-					post: Z,
-					subredditOrProfile: ye
-				}), k ? i.a.createElement(le, {
-					post: Z
-				}) : qe && i.a.createElement(pe.a, {
+					post: ne,
+					subredditOrProfile: Ee
+				}), _ ? i.a.createElement(le, {
+					post: ne
+				}) : Ye && i.a.createElement(pe.a, {
 					className: Object(p.a)(ze.a.LargePostMedia, {
 						[ze.a.isCommentsPage]: j
 					}),
 					isCommentsPage: !0,
 					isListing: !1,
-					isNotCardView: M,
-					isOverlay: M,
-					post: Z,
+					isNotCardView: R,
+					isOverlay: R,
+					post: ne,
 					shouldLoad: !0,
 					showFull: !0,
-					shouldPause: !M,
+					shouldPause: !R,
 					showCentered: !0,
-					scrollerItemRef: ne
-				}), ce && Qe && Qe.url && i.a.createElement(K.a, {
+					scrollerItemRef: ie
+				}), ye && Xe && Xe.url && i.a.createElement(K.a, {
 					className: ze.a.adLinkWrapper
 				}, i.a.createElement(q.a, {
-					post: Z,
-					adLinkContent: Ye
-				})), B && Le && Be && i.a.createElement(se.a, {
-					onIgnoreReports: U,
-					reportable: Z
-				}), i.a.createElement(ee.d, null), ae && i.a.createElement(G.a, {
+					post: ne,
+					adLinkContent: Qe
+				})), V && Te && Ve && i.a.createElement(se.a, {
+					onIgnoreReports: W,
+					reportable: ne
+				}), i.a.createElement(ee.d, null), de && i.a.createElement(G.a, {
 					awardsPlaqueStyle: !0,
 					isPostDetail: !0,
-					thing: Z,
-					tooltipType: M ? Ce.c.Lightbox : void 0
+					thing: ne,
+					tooltipType: R ? Ce.c.Lightbox : void 0
 				}), i.a.createElement("div", {
 					className: ze.a.controlsContainer
 				}, i.a.createElement($.c, {
 					currentUser: o,
 					forceOpenInNewTab: u,
-					hasModFlairPerms: Te,
-					hasModFullPerms: Ne,
-					hasModPostPerms: Le,
-					isOverlay: M,
-					modModeEnabled: B,
-					onIgnoreReports: U,
-					onOpenReportsDropdown: W,
-					post: Z,
-					showEditPost: Ae,
-					showEditFlair: de,
-					tooltipType: M ? Ce.c.Lightbox : void 0,
-					useFlatlistBreakpoints: We,
-					isCommentCountAnimation: w
-				}), dt)));
-				const lt = Object(r.useCallback)((e, t) => Object(P.h)(e, t), []);
+					hasModFlairPerms: Ne,
+					hasModFullPerms: Me,
+					hasModPostPerms: Te,
+					isOverlay: R,
+					modModeEnabled: V,
+					onIgnoreReports: W,
+					onOpenReportsDropdown: H,
+					post: ne,
+					showEditPost: Be,
+					showEditFlair: ce,
+					tooltipType: R ? Ce.c.Lightbox : void 0,
+					useFlatlistBreakpoints: He,
+					isCommentCountAnimation: w,
+					isCountAnimShadowTestEnabled: I
+				}), ct)));
+				const mt = Object(r.useCallback)((e, t) => Object(P.h)(e, t), []);
 				return i.a.createElement(re.a, {
 					className: Object(p.a)(t, ze.a.postContainer, {
-						[ze.a.hasEventMeta]: Object(Pe.a)(Z)
+						[ze.a.hasEventMeta]: Object(Pe.a)(ne)
 					}),
-					isOverlay: M,
-					post: Z,
-					eventFactory: M ? y.b : lt,
-					onClick: Se
+					isOverlay: R,
+					post: ne,
+					eventFactory: R ? y.b : mt,
+					onClick: Le
 				}, i.a.createElement(J.a, {
-					post: Z
-				}), Ve)
+					post: ne
+				}), De)
 			}))
 		},
 		"./src/reddit/components/PostContent/viewCount.m.less": function(e, t, s) {
@@ -7206,6 +7213,7 @@
 					headComment: te.x,
 					isActionBarAnimationEnabled: Y.b,
 					isAvatarsInCommentsEnabled: ie.a,
+					isCountAnimShadowTestEnabled: Y.e,
 					isChatPost: ee.d,
 					isCommentsListTruncated: oe.a,
 					isLoggedIn: he.J,
@@ -7517,87 +7525,89 @@
 						commentId: o,
 						commentsPageKey: n,
 						isActionBarAnimationEnabled: r,
-						isLoggedIn: i,
-						isNightmodeOn: a,
-						isOverlay: d,
-						post: c,
-						postId: l,
-						postSEOV2IdCardVariant: p,
-						profileCollectionsEnabled: u,
-						sendEvent: h,
-						sort: b,
-						subredditOrProfile: g
-					} = this.props, C = Object(ae.f)(p);
-					if (!c) {
+						isCountAnimShadowTestEnabled: i,
+						isLoggedIn: a,
+						isNightmodeOn: d,
+						isOverlay: c,
+						post: l,
+						postId: p,
+						postSEOV2IdCardVariant: u,
+						profileCollectionsEnabled: h,
+						sendEvent: b,
+						sort: g,
+						subredditOrProfile: C
+					} = this.props, v = Object(ae.f)(u);
+					if (!l) {
 						if (t) return m.a.createElement(ve.f, null);
 						const s = this.renderPageError();
 						return s || (e ? e.type === f.m ? m.a.createElement(at, {
 							contentGateType: ze.a.PostBlockedForLegalReason
 						}) : m.a.createElement(ve.d, {
-							postId: l,
+							postId: p,
 							commentId: o,
 							apiError: e,
-							sort: b
+							sort: g
 						}) : m.a.createElement(ve.f, null))
 					} {
 						const e = this.renderPageError();
 						if (e) return e
 					}
-					const v = this.isCommentPermalink(),
-						O = c.belongsTo.type === W.a.PROFILE,
-						y = Object(Ue.a)(c) && (!O || u),
-						P = !i;
-					return et.input.channel.postID = l, m.a.createElement(Ct, {
+					const O = this.isCommentPermalink(),
+						y = l.belongsTo.type === W.a.PROFILE,
+						P = Object(Ue.a)(l) && (!y || h),
+						E = !a;
+					return et.input.channel.postID = p, m.a.createElement(Ct, {
 						closeLocation: s,
 						commentsPageKey: n,
 						containerRef: this.setLayoutRef,
 						handleFakeLightboxClick: this.handleFakeLightboxClick,
 						handleFakeLightboxOverlayClick: this.handleFakeLightboxOverlayClick,
-						isLoggedIn: i,
-						isOverlay: d,
-						isSwapVariant: C,
-						post: c,
-						subredditOrProfile: g,
-						shouldFitPageToContent: P,
-						isCollectionLayout: y
-					}, g && g.isQuarantined && m.a.createElement(Le.a, {
-						subredditName: g.name
+						isLoggedIn: a,
+						isOverlay: c,
+						isSwapVariant: v,
+						post: l,
+						subredditOrProfile: C,
+						shouldFitPageToContent: E,
+						isCollectionLayout: P
+					}, C && C.isQuarantined && m.a.createElement(Le.a, {
+						subredditName: C.name
 					}), m.a.createElement(Te.a, null), m.a.createElement("div", {
 						className: Object(x.a)(Xe.a.PageContentWrapper, {
-							[Xe.a.LargePageContent]: y,
+							[Xe.a.LargePageContent]: P,
 							[Xe.a.ChatPage]: this.props.isChatPost
 						}),
 						key: "PostContentWrapper"
-					}, y && m.a.createElement(it, {
-						isOverlay: d,
-						isNightmodeOn: a,
-						postId: l
+					}, P && m.a.createElement(it, {
+						isOverlay: c,
+						isNightmodeOn: d,
+						postId: p
 					}), m.a.createElement(tt, {
-						condition: y,
+						condition: P,
 						wrap: e => m.a.createElement("div", {
 							ref: this.updateCollPostWrapperRef,
 							className: Xe.a.CollectionBodyWrapper
 						}, e)
 					}, m.a.createElement(Ne.a, {
-						isCommentPermalink: v,
-						isOverlay: d,
-						postId: l,
-						redditStyle: d,
+						isCommentPermalink: O,
+						isOverlay: c,
+						postId: p,
+						redditStyle: c,
 						scrollerItemRef: this.setPostScrollItemRef,
-						sendEvent: h,
-						isActionBarAnimationEnabled: r
+						sendEvent: b,
+						isActionBarAnimationEnabled: r,
+						isCountAnimShadowTestEnabled: i
 					}), this.state.commentNativeAdId && m.a.createElement("div", {
 						ref: this.setCommentAdRef
 					}, m.a.createElement(R.a, {
-						key: `event-post-id-${c.id}`,
-						isOverlay: d,
+						key: `event-post-id-${l.id}`,
+						isOverlay: c,
 						postId: this.state.commentNativeAdId,
 						scrollerItemRef: this.setAdScrollItemRef
-					})), this.renderCommentPanes())), g && !Object($.h)(g) && m.a.createElement(A.a, {
+					})), this.renderCommentPanes())), C && !Object($.h)(C) && m.a.createElement(A.a, {
 						contentContainerRef: this.state.layoutRef,
-						isOverlay: d,
-						post: c,
-						subredditOrProfile: g
+						isOverlay: c,
+						post: l,
+						subredditOrProfile: C
 					}))
 				}
 				renderCommentPanes() {
@@ -8142,4 +8152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b44b7ab413f8401d07be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6b4f630c9c1c7410f675.js.map
