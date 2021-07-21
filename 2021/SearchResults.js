@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d31844a9a7b198ca41dc.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d771e7de5e2243b971db.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4236,7 +4236,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(b.i)(e, {
+					}) => Object(b.j)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(x.actionInfo)(e).pageType
@@ -5711,7 +5711,7 @@
 				q = s("./src/reddit/selectors/user.ts");
 			const z = {
 					crosspost: H.d,
-					isActive: H.j,
+					isActive: H.k,
 					isLoggedIn: q.J,
 					moderatorPermissions: U.k,
 					modModeEnabled: j.R,
@@ -5864,14 +5864,14 @@
 						if (i && i.length > 0) {
 							if (t) {
 								const s = i.indexOf(t);
-								if (s > -1) return i.splice(s, 1), Object(H.T)(e, i)
+								if (s > -1) return i.splice(s, 1), Object(H.U)(e, i)
 							}
-							return Object(H.T)(e, i)
+							return Object(H.U)(e, i)
 						}
 						const {
 							models: a
 						} = e.posts;
-						return Object(H.C)(e, s, r, !!n).filter(e => a && a[e] && !a[e].isSponsored)
+						return Object(H.D)(e, s, r, !!n).filter(e => a && a[e] && !a[e].isSponsored)
 					}
 				}),
 				pe = (e, t, s, r) => {
@@ -6666,7 +6666,7 @@
 				Kt = s("./src/reddit/selectors/showPromotedCTA.ts");
 			const {
 				fbt: Gt
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Jt = `${Ae.a.assetPath}/img/link-placeholder.png`, Qt = (e, t) => t && t.length ? Object(tt.F)(e, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Jt = `${Ae.a.assetPath}/img/link-placeholder.png`, Qt = (e, t) => t && t.length ? Object(tt.G)(e, {
 				postId: t[0]
 			}) : void 0, Yt = {
 				fireAdPixelsOfType: We.z,
@@ -8813,10 +8813,10 @@
 					autoplayPref: f.b,
 					activeModalId: m.a,
 					crosspost: b.d,
-					isActive: b.j,
+					isActive: b.k,
 					isChatPost: u.d,
-					isCurrentUserProfilePost: b.k,
-					isExpanded: b.l,
+					isCurrentUserProfilePost: b.l,
+					isExpanded: b.m,
 					isLoggedIn: f.J,
 					showPromotedCTA: x.a,
 					moderatorPermissions: p.k,
@@ -8949,7 +8949,7 @@
 								subredditId: s
 							})
 						}
-						return Object(C.P)(e, {
+						return Object(C.Q)(e, {
 							...t
 						})
 					},
@@ -8965,7 +8965,7 @@
 								subredditId: t
 							})
 						}
-						return Object(C.C)(e, t, s, n)
+						return Object(C.D)(e, t, s, n)
 					}),
 					subredditsById: O.Z,
 					viewportDataLoaded: E.a,
@@ -9039,7 +9039,7 @@
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: d.T,
 				hideNSFWPref: h.B,
-				isActive: p.j,
+				isActive: p.k,
 				moderatorPermissions: m.k,
 				modModeEnabled: d.R,
 				showEditFlair: u.a
@@ -10102,10 +10102,10 @@
 					return t !== a && t !== i && (!(i + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const r = s[t - 1],
 							n = s[t],
-							i = n && Object(o.F)(e, {
+							i = n && Object(o.G)(e, {
 								postId: r
 							}) || null,
-							a = n && Object(o.F)(e, {
+							a = n && Object(o.G)(e, {
 								postId: n
 							}) || null;
 						return i && i.isSponsored || a && a.isSponsored
@@ -10118,7 +10118,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let n = -1;
-					const i = Object(o.y)(e, {
+					const i = Object(o.z)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -10182,11 +10182,11 @@
 			const a = Object(r.a)(e => Object(o.c)(e, {
 				experimentName: n.Xc,
 				experimentEligibilitySelector: o.a
-			}), i.F, (e, t) => e === n.hd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.G, (e, t) => e === n.hd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"0c0a6fd04a2c"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d31844a9a7b198ca41dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d771e7de5e2243b971db.js.map

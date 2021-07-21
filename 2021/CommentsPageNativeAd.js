@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.7c7cde7404ea31b5a5ec.js
-// Retrieved at 7/20/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bfcfec3410d9ea1346c3.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -54,8 +54,8 @@
 				v = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.tsx"),
 				O = s("./src/reddit/components/PostTitle/index.tsx"),
-				j = s("./src/reddit/constants/componentTestIds.ts"),
-				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
+				y = s("./src/reddit/constants/componentTestIds.ts"),
+				j = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				k = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				P = s("./src/reddit/components/AuthorLink/index.tsx"),
@@ -193,7 +193,7 @@
 						post: o
 					} = this.props;
 					let n = Object(m.a)(o);
-					return o.media && Object(u.E)(o.media) && (null === (s = null === (t = null === (e = null == o ? void 0 : o.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (n = o.media.gallery.items[0].displayUrl), o.source && o.isLocked ? a.a.createElement(y.b, {
+					return o.media && Object(u.E)(o.media) && (null === (s = null === (t = null === (e = null == o ? void 0 : o.media) || void 0 === e ? void 0 : e.gallery) || void 0 === t ? void 0 : t.items[0]) || void 0 === s ? void 0 : s.displayUrl) && (n = o.media.gallery.items[0].displayUrl), o.source && o.isLocked ? a.a.createElement(j.b, {
 						className: A.a.styledOutboundLink,
 						href: o.source.url,
 						postId: o.id,
@@ -203,7 +203,7 @@
 						className: A.a.styledOutboundLink,
 						rel: "nofollow",
 						"data-click-id": "comments",
-						"data-test-id": j.a,
+						"data-test-id": y.a,
 						to: this.props.isOverlay ? Object(p.a)(o.permalink, !0) : Object(K.b)(o.permalink),
 						onClick: this.props.onClick
 					}, r.fbt._("Join the conversation", null, {
@@ -354,10 +354,10 @@
 					autoplayPref: g.b,
 					activeModalId: m.a,
 					crosspost: b.d,
-					isActive: b.j,
+					isActive: b.k,
 					isChatPost: p.d,
-					isCurrentUserProfilePost: b.k,
-					isExpanded: b.l,
+					isCurrentUserProfilePost: b.l,
+					isExpanded: b.m,
 					isLoggedIn: g.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: u.k,
@@ -510,4 +510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.7c7cde7404ea31b5a5ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bfcfec3410d9ea1346c3.js.map

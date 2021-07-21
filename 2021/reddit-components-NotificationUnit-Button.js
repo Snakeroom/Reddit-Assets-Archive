@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ebe944fbc84b3430c284.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfad6db36d5c37a35946.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -215,7 +215,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const o = Object($.F)(p(), {
+						const o = Object($.G)(p(), {
 							postId: e
 						});
 						u(Object(m.z)(o, O.a.CommentSubmitted))
@@ -2503,7 +2503,7 @@
 					const n = Object(b.a)(e, {
 						commentId: t
 					});
-					return n ? Object(c.a)(Object(m.E)(e, n), t) : ""
+					return n ? Object(c.a)(Object(m.F)(e, n), t) : ""
 				},
 				D = (e, {
 					commentId: t
@@ -2727,4 +2727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ebe944fbc84b3430c284.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.dfad6db36d5c37a35946.js.map

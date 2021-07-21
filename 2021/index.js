@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.6b6eea4eb4a35f10c8ad.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.d55e0c5411312ef29953.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -29,7 +29,7 @@
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "TournamentPostBody", (function() {
-				return R
+				return G
 			}));
 			var o = n("./node_modules/react/index.js"),
 				i = n.n(o),
@@ -204,20 +204,20 @@
 						endsAt: U,
 						title: H,
 						resolvedOptionId: Q,
-						options: R
+						options: G
 					} = e,
-					G = U < Date.now(),
-					K = null != V ? V : R;
+					K = U < Date.now(),
+					R = null != V ? V : G;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(r.a)(A.a.poll, {
 						[A.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
 					className: A.a.pollQuestion
-				}, H), K.map(e => i.a.createElement(P.a, {
+				}, H), R.map(e => i.a.createElement(P.a, {
 					key: `prediction-option-${e.id}`,
 					disabled: I,
-					isEnded: G,
+					isEnded: K,
 					isSelected: F === e.id,
 					needsResolution: !1,
 					option: e,
@@ -226,11 +226,11 @@
 					tournamentId: t,
 					userSelection: F,
 					userIsLoggedOut: !c,
-					votePercentage: (F || G || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					votePercentage: (F || K || x) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
 					isShowingHint: x
 				})), i.a.createElement(O.a, {
 					disabled: I || x || !!F,
-					isEnded: G,
+					isEnded: K,
 					userSelection: F,
 					isShowingHint: x,
 					tournamentId: t,
@@ -262,7 +262,7 @@
 				postId: e
 			}) => {
 				const t = Object(T.a)(),
-					n = Object(u.e)(t => Object(V.R)(t, {
+					n = Object(u.e)(t => Object(V.S)(t, {
 						postId: e
 					}));
 				return i.a.createElement(x.a, {
@@ -272,7 +272,7 @@
 				}, H._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
-			}, R = ({
+			}, G = ({
 				post: e
 			}) => {
 				const {
@@ -300,8 +300,8 @@
 					postId: e.id
 				})
 			};
-			t.default = R
+			t.default = G
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.6b6eea4eb4a35f10c8ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.d55e0c5411312ef29953.js.map

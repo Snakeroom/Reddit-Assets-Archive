@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c40bdb05ce6f826283b2.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c4e8382cbbdfb3a457e0.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -879,7 +879,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.F)(a, {
+						const e = Object(m.G)(a, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -1104,7 +1104,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(b.i)(e, {
+					}) => Object(b.j)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(h.actionInfo)(e).pageType
@@ -3265,7 +3265,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						i = l.find(e => e >= r),
-						c = n ? Object(a.F)(e, {
+						c = n ? Object(a.G)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3480,4 +3480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c40bdb05ce6f826283b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c4e8382cbbdfb3a457e0.js.map

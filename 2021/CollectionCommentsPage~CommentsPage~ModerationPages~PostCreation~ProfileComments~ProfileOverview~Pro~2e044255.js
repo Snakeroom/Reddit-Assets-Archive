@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.8c61ff1d73ee45a5ccef.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.0d9828706b6fcf3e424a.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
@@ -119,7 +119,7 @@
 				L = y.a.div("Content", _.a),
 				w = y.a.div("ThumbnailContainer", _.a),
 				N = Object(c.c)({
-					isCurrentUserProfilePost: E.k,
+					isCurrentUserProfilePost: E.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Jb.TOPIC),
 					shouldOpenPostInNewTab: g.bb
 				}),
@@ -381,10 +381,10 @@
 						style: t
 					}, e.children)
 				},
-				L = Object(i.b)(() => Object(c.a)(v.E, y.bb, (e, {
+				L = Object(i.b)(() => Object(c.a)(v.F, y.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, g.a, _.actionInfo, v.F, (e, t, s, n, r, o) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, g.a, _.actionInfo, v.G, (e, t, s, n, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -836,7 +836,7 @@
 				J = Object(a.c)({
 					isPinned: (e, {
 						post: t
-					}) => Object(P.p)(e, {
+					}) => Object(P.q)(e, {
 						postId: t.id
 					}),
 					modModeEnabled: b.R
@@ -868,8 +868,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					K = Object(i.e)(T.a),
-					q = V.isSponsored && (K === p.p.NoLockIcon || K === p.p.PromotedGrey),
+					q = Object(i.e)(T.a),
+					K = V.isSponsored && (q === p.p.NoLockIcon || q === p.p.PromotedGrey),
 					Y = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === h.a.SUBREDDIT,
 					z = A("Approve", V.id, G),
 					Z = A("Archived", V.id, G),
@@ -901,7 +901,7 @@
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
 					text: B()
-				}, X))), V.isLocked && !q && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
+				}, X))), V.isLocked && !K && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
 					className: Object(c.a)(w.a.icon, w.a.lockIcon),
 					desc: R(),
@@ -2965,4 +2965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.8c61ff1d73ee45a5ccef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.0d9828706b6fcf3e424a.js.map

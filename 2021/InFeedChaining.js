@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.47ad560ab204fce4dd79.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.2101e2d7297f3fc7ad10.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1587,7 +1587,7 @@
 				D = Object(c.c)({
 					discoveryUnit: C.b,
 					postChain: C.f,
-					postSubreddit: O.R,
+					postSubreddit: O.S,
 					routeName: j.p,
 					subscribedProfiles: E.c,
 					subscribedSubreddits: E.d
@@ -2522,10 +2522,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(g.E, w.bb, (e, {
+				N = Object(o.b)(() => Object(c.a)(g.F, w.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.F, (e, t, s, n, r, i) => ({
+				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.G, (e, t, s, n, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -4323,7 +4323,7 @@
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: l.T,
 				hideNSFWPref: h.B,
-				isActive: p.j,
+				isActive: p.k,
 				moderatorPermissions: u.k,
 				modModeEnabled: l.R,
 				showEditFlair: m.a
@@ -4923,4 +4923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.47ad560ab204fce4dd79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.2101e2d7297f3fc7ad10.js.map

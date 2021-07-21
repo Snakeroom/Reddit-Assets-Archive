@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.404559c2919f5d287411.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f7610e37be72ee5e8f44.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -935,7 +935,7 @@
 					}),
 					postCategories: (e, {
 						post: t
-					}) => Object(x.w)(e, t),
+					}) => Object(x.x)(e, t),
 					subredditName: (e, {
 						post: t
 					}) => Object(O.S)(e, {
@@ -2349,7 +2349,7 @@
 					const r = Object(p.a)(e, {
 						commentId: t
 					});
-					return r ? Object(i.a)(Object(l.E)(e, r), t) : ""
+					return r ? Object(i.a)(Object(l.F)(e, r), t) : ""
 				},
 				D = (e, {
 					commentId: t
@@ -2518,4 +2518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.404559c2919f5d287411.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.f7610e37be72ee5e8f44.js.map

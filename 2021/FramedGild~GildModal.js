@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9c52d177a82abd44fb19.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.dfc4e27cb7b1fa366ab3.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -515,7 +515,7 @@
 				}, te = Object(n.a)(J.s), se = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(U.a)(s) ? Object(P.F)(e, {
+					} = t, r = Object(U.a)(s) ? Object(P.G)(e, {
 						postId: s
 					}) : Object(y.a)(e, {
 						commentId: s
@@ -612,7 +612,7 @@
 						if (e.length) {
 							const s = Math.max(900 - B, 10),
 								r = Math.max(300 - B, 10),
-								a = Object(U.a)(m) && Object(O.o)(Object(P.F)(n, {
+								a = Object(U.a)(m) && Object(O.o)(Object(P.G)(n, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -1841,7 +1841,7 @@
 			}));
 			var xe = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const s = Object(R.F)(e, {
+						const s = Object(R.G)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -2223,7 +2223,7 @@
 						r = s && s.id
 					}
 					if (!r && Object(l.a)(t)) {
-						const s = Object(R.F)(e, {
+						const s = Object(R.G)(e, {
 							postId: t
 						});
 						r = s && s.belongsTo.id
@@ -2290,7 +2290,7 @@
 					message: A.c,
 					postOrComment: (e, {
 						thingId: t
-					}) => Object(l.a)(t) ? Object(R.F)(e, {
+					}) => Object(l.a)(t) ? Object(R.G)(e, {
 						postId: t
 					}) : Object(k.a)(e, {
 						commentId: t
@@ -2323,7 +2323,7 @@
 							r = s && s.id
 						}
 						if (!r && Object(l.a)(t)) {
-							const s = Object(R.F)(e, {
+							const s = Object(R.G)(e, {
 								postId: t
 							});
 							r = s && s.belongsTo.id
@@ -2757,10 +2757,10 @@
 						style: t
 					}, e.children)
 				},
-				A = Object(o.b)(() => Object(d.a)(O.E, j.bb, (e, {
+				A = Object(o.b)(() => Object(d.a)(O.F, j.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(O.b)(e, s) : null, x.a, v.actionInfo, O.F, (e, t, s, r, n, a) => ({
+				}) => t && s ? Object(O.b)(e, s) : null, x.a, v.actionInfo, O.G, (e, t, s, r, n, a) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -5069,7 +5069,7 @@
 				},
 				y = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => u(t.listingName)(e, t), v, h, i.h, (e, t, s, r, n) => {
+				}) => t, (e, t) => u(t.listingName)(e, t), v, h, i.i, (e, t, s, r, n) => {
 					const i = [];
 					if (e) {
 						const t = Object(a.g)(e);
@@ -5134,7 +5134,7 @@
 				k = Object(n.a)(Object(r.a)(C, v, (e, t) => e ? t[e] : void 0)),
 				P = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(a.g)(t) : void 0, C, h, i.h, (e, {
+				}) => t ? Object(a.g)(t) : void 0, C, h, i.i, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
@@ -5281,4 +5281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9c52d177a82abd44fb19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.dfc4e27cb7b1fa366ab3.js.map

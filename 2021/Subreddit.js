@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6960eb288e999718146a.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.319206c8283e510c412b.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5935,10 +5935,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(a.b)(() => Object(c.a)(v.E, _.bb, (e, {
+				P = Object(a.b)(() => Object(c.a)(v.F, _.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(v.b)(e, n) : null, y.a, E.actionInfo, v.F, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(v.b)(e, n) : null, y.a, E.actionInfo, v.G, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -9073,8 +9073,8 @@
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = e => e.type === V.f.Nsfw || e.type === V.f.Spoiler, J = Object(d.c)({
-				post: B.F,
-				subredditOrProfile: B.R
+				post: B.G,
+				subredditOrProfile: B.S
 			});
 			class Q extends i.a.PureComponent {
 				constructor() {
@@ -9152,7 +9152,7 @@
 				$ = n.n(X);
 			const {
 				fbt: ee
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = 10, ne = 2, se = Object(d.a)(B.L, e => e.filter(e => !e.isSponsored)), re = Object(d.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = 10, ne = 2, se = Object(d.a)(B.M, e => e.filter(e => !e.isSponsored)), re = Object(d.c)({
 				posts: (e, t) => se(e, {
 					...t
 				})
@@ -9268,7 +9268,7 @@
 					listingKey: fe,
 					posts: (e, t) => {
 						const n = fe(e, t);
-						return Object(B.L)(e, {
+						return Object(B.M)(e, {
 							listingKey: n
 						})
 					},
@@ -9931,7 +9931,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(a.c)({
-					postCount: l.K,
+					postCount: l.L,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -10421,7 +10421,7 @@
 								subredditId: n
 							})
 						}
-						return Object(E.P)(e, {
+						return Object(E.Q)(e, {
 							...t
 						})
 					},
@@ -10437,7 +10437,7 @@
 								subredditId: t
 							})
 						}
-						return Object(E.C)(e, t, n, r)
+						return Object(E.D)(e, t, n, r)
 					}),
 					subredditsById: _.Z,
 					viewportDataLoaded: C.a,
@@ -10547,7 +10547,7 @@
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: d.T,
 				hideNSFWPref: b.B,
-				isActive: p.j,
+				isActive: p.k,
 				moderatorPermissions: u.k,
 				modModeEnabled: d.R,
 				showEditFlair: m.a
@@ -13946,7 +13946,7 @@
 						r = Object(je.b)(me.c.config)(e, {
 							subredditId: n.id
 						}),
-						o = Object(Se.C)(e, t, s, !0),
+						o = Object(Se.D)(e, t, s, !0),
 						a = !Object(Ce.d)(e, {
 							listingKey: t
 						});
@@ -14633,7 +14633,7 @@
 				},
 				C = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => u(t.listingName)(e, t), E, b, i.h, (e, t, n, s, r) => {
+				}) => t, (e, t) => u(t.listingName)(e, t), E, b, i.i, (e, t, n, s, r) => {
 					const i = [];
 					if (e) {
 						const t = Object(o.g)(e);
@@ -14698,7 +14698,7 @@
 				k = Object(r.a)(Object(s.a)(w, E, (e, t) => e ? t[e] : void 0)),
 				N = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.g)(t) : void 0, w, b, i.h, (e, {
+				}) => t ? Object(o.g)(t) : void 0, w, b, i.i, (e, {
 					related: t,
 					streamIdFromPath: n,
 					subreddit: s
@@ -14835,7 +14835,7 @@
 							layout: n,
 							sort: r,
 							listingKey: a
-						} = t, c = (Object(i.y)(e, {
+						} = t, c = (Object(i.z)(e, {
 							listingKey: a
 						}) || []).length;
 						return n === o.g.Large && r !== s.U.NEW && c >= 20
@@ -15063,10 +15063,10 @@
 					return t !== i && t !== a && (!(a + n > t) && (!(t + n > i) && !((e, t, n) => {
 						const s = n[t - 1],
 							r = n[t],
-							a = r && Object(o.F)(e, {
+							a = r && Object(o.G)(e, {
 								postId: s
 							}) || null,
-							i = r && Object(o.F)(e, {
+							i = r && Object(o.G)(e, {
 								postId: r
 							}) || null;
 						return a && a.isSponsored || i && i.isSponsored
@@ -15079,7 +15079,7 @@
 				}) => {
 					const s = t.slice().sort();
 					let r = -1;
-					const a = Object(o.y)(e, {
+					const a = Object(o.z)(e, {
 							listingKey: n.listingKey
 						}),
 						i = [];
@@ -15236,4 +15236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6960eb288e999718146a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.319206c8283e510c412b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.9ac03420f62f55e62aeb.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b578ce3d567e9ab7f9c6.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1353,7 +1353,7 @@
 			var xe = fe(_e),
 				ve = n("./src/reddit/selectors/posts.ts");
 			const ke = Object(u.c)({
-				recentPosts: ve.O
+				recentPosts: ve.P
 			});
 			var je = Object(d.b)(ke, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink))
@@ -1876,7 +1876,7 @@
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				g = n("./src/reddit/components/MiniPost/index.m.less"),
 				f = n.n(g);
-			const y = Object(a.a)(e => e, b.F, b.d, (e, t, n) => {
+			const y = Object(a.a)(e => e, b.G, b.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -2572,7 +2572,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.K,
+					postCount: l.L,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -4464,7 +4464,7 @@
 				},
 				j = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => u(t.listingName)(e, t), v, b, a.h, (e, t, n, s, r) => {
+				}) => t, (e, t) => u(t.listingName)(e, t), v, b, a.i, (e, t, n, s, r) => {
 					const a = [];
 					if (e) {
 						const t = Object(o.g)(e);
@@ -4529,7 +4529,7 @@
 				S = Object(r.a)(Object(s.a)(C, v, (e, t) => e ? t[e] : void 0)),
 				P = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.g)(t) : void 0, C, b, a.h, (e, {
+				}) => t ? Object(o.g)(t) : void 0, C, b, a.i, (e, {
 					related: t,
 					streamIdFromPath: n,
 					subreddit: s
@@ -4661,4 +4661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9ac03420f62f55e62aeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b578ce3d567e9ab7f9c6.js.map

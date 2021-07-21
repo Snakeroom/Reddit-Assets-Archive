@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.2a168b535296f9eb0bb9.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.e67aa0d2d3b10e71518a.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -1598,7 +1598,7 @@
 				},
 				_ = Object(a.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => m(t.listingName)(e, t), E, v, c.h, (e, t, s, a, n) => {
+				}) => t, (e, t) => m(t.listingName)(e, t), E, v, c.i, (e, t, s, a, n) => {
 					const c = [];
 					if (e) {
 						const t = Object(r.g)(e);
@@ -1663,7 +1663,7 @@
 				j = Object(n.a)(Object(a.a)(L, E, (e, t) => e ? t[e] : void 0)),
 				O = Object(a.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(r.g)(t) : void 0, L, v, c.h, (e, {
+				}) => t ? Object(r.g)(t) : void 0, L, v, c.i, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: a
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.2a168b535296f9eb0bb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.e67aa0d2d3b10e71518a.js.map

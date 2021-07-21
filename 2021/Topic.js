@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.d802d5d2437b24a6fb22.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.e5ec46b3de89238f7ebc.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1633,7 +1633,7 @@
 								subredditId: s
 							})
 						}
-						return Object(y.P)(e, {
+						return Object(y.Q)(e, {
 							...t
 						})
 					},
@@ -1649,7 +1649,7 @@
 								subredditId: t
 							})
 						}
-						return Object(y.C)(e, t, s, i)
+						return Object(y.D)(e, t, s, i)
 					}),
 					subredditsById: E.Z,
 					viewportDataLoaded: T.a,
@@ -2560,10 +2560,10 @@
 					return t !== a && t !== o && (!(o + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const r = s[t - 1],
 							i = s[t],
-							o = i && Object(n.F)(e, {
+							o = i && Object(n.G)(e, {
 								postId: r
 							}) || null,
-							a = i && Object(n.F)(e, {
+							a = i && Object(n.G)(e, {
 								postId: i
 							}) || null;
 						return o && o.isSponsored || a && a.isSponsored
@@ -2576,7 +2576,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let i = -1;
-					const o = Object(n.y)(e, {
+					const o = Object(n.z)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -2608,4 +2608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.d802d5d2437b24a6fb22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.e5ec46b3de89238f7ebc.js.map

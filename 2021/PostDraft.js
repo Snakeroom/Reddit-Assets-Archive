@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.9e0222b1bd70c14d60eb.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.6e9e813f91061a3f92a9.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -468,7 +468,7 @@
 				}) => {
 					if ((await E(i(), e, t)).ok) {
 						const i = r(),
-							a = Object(I.F)(i, {
+							a = Object(I.G)(i, {
 								postId: t
 							}),
 							c = a && a.title || "",
@@ -485,7 +485,7 @@
 									collectionId: e
 								}),
 								s = n && n.postIds && n.postIds[u] || "",
-								i = Object(I.F)(t, {
+								i = Object(I.G)(t, {
 									postId: s
 								});
 							i && i.permalink && o(Object(w.a)(i.permalink))
@@ -506,19 +506,19 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, F = Object(i.a)(a.a), W = Object(i.a)(a.t), A = (e, t) => async (n, o, {
+				}, W = Object(i.a)(a.a), F = Object(i.a)(a.t), A = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					const i = o();
 					if ((await h(r(), e, t)).ok) {
-						n(F({
+						n(W({
 							collectionId: e,
 							postId: t
-						})), n(W({
+						})), n(F({
 							collectionId: e,
 							postId: t
 						}));
-						const o = Object(I.F)(i, {
+						const o = Object(I.G)(i, {
 								postId: t
 							}),
 							r = Object(O.q)(i, {
@@ -995,10 +995,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(d.a)(_.E, y.bb, (e, {
+				P = Object(i.b)(() => Object(d.a)(_.F, y.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.F, (e, t, n, s, o, r) => ({
+				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.G, (e, t, n, s, o, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -2364,9 +2364,9 @@
 			})), n.d(t, "f", (function() {
 				return D
 			})), n.d(t, "h", (function() {
-				return F
-			})), n.d(t, "g", (function() {
 				return W
+			})), n.d(t, "g", (function() {
+				return F
 			})), n.d(t, "i", (function() {
 				return A
 			})), n.d(t, "e", (function() {
@@ -2529,12 +2529,12 @@
 						case p.p:
 							return D(e, t, n, s);
 						case p.u:
-							return W(e, t, n, s);
+							return F(e, t, n, s);
 						case p.z:
-							return F(e, t, n, s)
+							return W(e, t, n, s)
 					}
 				},
-				F = (e, t, n, s) => {
+				W = (e, t, n, s) => {
 					const o = e.c,
 						r = e.h,
 						i = o.length,
@@ -2576,7 +2576,7 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				W = (e, t, n, s) => {
+				F = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
@@ -3281,7 +3281,7 @@
 			const O = ["right", "bottom"],
 				I = ["right", "top"];
 			var S = Object(a.b)(() => Object(d.c)({
-					post: E.F
+					post: E.G
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(g.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -4703,8 +4703,8 @@
 						draft: t
 					}), o.a.createElement(O, null)))
 				})),
-				F = n("./src/reddit/components/PostingSidebar/index.tsx"),
-				W = n("./src/reddit/layout/page/Listing/index.tsx"),
+				W = n("./src/reddit/components/PostingSidebar/index.tsx"),
+				F = n("./src/reddit/layout/page/Listing/index.tsx"),
 				A = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				H = n("./src/reddit/selectors/postDraft.ts");
 			const U = Object(l.t)(),
@@ -4724,14 +4724,14 @@
 					} = this.props;
 					if (!t || !e) return o.a.createElement(A.b, null);
 					const n = e.subredditId;
-					return o.a.createElement(W.a, {
+					return o.a.createElement(F.a, {
 						redditStyle: !0,
 						disableFullscreen: !0,
 						navBar: o.a.createElement("div", null),
 						content: o.a.createElement(B, {
 							draft: e
 						}),
-						sidebar: n && o.a.createElement(F.a, {
+						sidebar: n && o.a.createElement(W.a, {
 							subredditOrProfileId: n
 						})
 					})
@@ -4790,4 +4790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.9e0222b1bd70c14d60eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.6e9e813f91061a3f92a9.js.map

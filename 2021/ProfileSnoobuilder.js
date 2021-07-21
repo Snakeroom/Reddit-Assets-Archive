@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.02f7737464b499bf4c27.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1ecd3e398e16550f65bf.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1488,10 +1488,10 @@
 						style: t
 					}, e.children)
 				},
-				L = Object(o.b)(() => Object(c.a)(y.E, E.bb, (e, {
+				L = Object(o.b)(() => Object(c.a)(y.F, E.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(y.b)(e, n) : null, x.a, v.actionInfo, y.F, (e, t, n, s, r, i) => ({
+				}) => t && n ? Object(y.b)(e, n) : null, x.a, v.actionInfo, y.G, (e, t, n, s, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -5400,4 +5400,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.02f7737464b499bf4c27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.1ecd3e398e16550f65bf.js.map

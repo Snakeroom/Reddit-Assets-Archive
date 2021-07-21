@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.1fe77c48e10988da5849.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.6b22d03e56c010808e51.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -151,9 +151,9 @@
 			const {
 				fbt: U
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			let X, Y;
-			const z = e => `${e}--collectionItem`,
-				G = e => {
+			let X, G;
+			const Y = e => `${e}--collectionItem`,
+				z = e => {
 					const {
 						activeModalId: t,
 						addEventStartTime: o,
@@ -181,7 +181,7 @@
 							[W.a.isProfilePage]: O
 						}),
 						isOverlay: r,
-						makePostContainerId: z,
+						makePostContainerId: Y,
 						post: b,
 						onClick: d,
 						eventFactory: s,
@@ -257,7 +257,7 @@
 							[W.a.isProfilePage]: v
 						}),
 						isOverlay: c,
-						makePostContainerId: z,
+						makePostContainerId: Y,
 						post: b,
 						onClick: m,
 						eventFactory: s,
@@ -343,7 +343,7 @@
 						displayLayout: e,
 						post: t
 					} = this.props;
-					return t ? e === g.a.TIMELINE ? n.a.createElement(G, H({}, this.props, {
+					return t ? e === g.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow,
@@ -368,9 +368,9 @@
 					galleryThumbnail: y.e,
 					isFutureEvent: y.i,
 					layout: v.P,
-					post: f.F,
+					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
-					subredditOrProfile: f.R
+					subredditOrProfile: f.S
 				}), (e, {
 					collectionId: t,
 					postId: s,
@@ -379,13 +379,13 @@
 				}) => ({
 					onRemovePostFromCollection: () => e(Object(d.g)(t, s, n)),
 					onStartEventNow: async () => {
-						Y || (Y = await Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))), e(Y.startEventNowRequested(s))
+						G || (G = await Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))), e(G.startEventNowRequested(s))
 					},
 					toggleEditStartTimeModal: async () => {
-						X && Y || ([X, Y] = await Promise.all([o.e("schedulePickerModal").then(o.bind(null, "./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx")).then(e => e.default), Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))])), e(w.i(Object(F.r)(s, l, F.j.COLLECTION_INFO_POST)))
+						X && G || ([X, G] = await Promise.all([o.e("schedulePickerModal").then(o.bind(null, "./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx")).then(e => e.default), Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))])), e(w.i(Object(F.r)(s, l, F.j.COLLECTION_INFO_POST)))
 					},
 					addEventStartTime: t => {
-						Y && e(Y.editEventTimeRequested(s, t))
+						G && e(G.editEventTimeRequested(s, t))
 					}
 				}))(Object(b.c)(Z))),
 				V = o("./src/reddit/components/Collection/index.m.less"),
@@ -416,11 +416,11 @@
 							postId: t
 						}),
 						s = o && (o.primaryPostId || o.postIds[0]);
-					return s && Object(f.F)(e, {
+					return s && Object(f.G)(e, {
 						postId: s
 					}) || null
 				},
-				post: f.F,
+				post: f.G,
 				shouldShowThumbnail: (e, {
 					postId: t
 				}) => {
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.1fe77c48e10988da5849.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.6b22d03e56c010808e51.js.map

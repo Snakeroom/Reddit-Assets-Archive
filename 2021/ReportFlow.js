@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.366043c280e761e79dd2.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.1ca0299f3f2537b8e9e1.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, o) {
@@ -989,7 +989,7 @@
 						redirectUrl: w.permalink
 					}));
 					n(Object(d.y)(w.author));
-					const g = Object(b.R)(u, {
+					const g = Object(b.S)(u, {
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						v = h && Object(f.o)(w) || p && G(w, u);
@@ -1961,7 +1961,7 @@
 					rulesCategory: e => e.features.reportFlow.rulesCategory,
 					post: (e, {
 						postId: t
-					}) => t ? Object(ze.F)(e, {
+					}) => t ? Object(ze.G)(e, {
 						postId: t
 					}) : null,
 					reportedPending: e => e.features.reportFlow.api.pending,
@@ -1969,7 +1969,7 @@
 					sitewideRules: e => e.reportRules.sitewideRules,
 					subredditOrProfile: (e, {
 						postId: t
-					}) => t ? Object(ze.R)(e, {
+					}) => t ? Object(ze.S)(e, {
 						postId: t
 					}) : null,
 					subredditRules: e => e.subreddits.rules,
@@ -2196,7 +2196,7 @@
 			const U = Object(d.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(N.F)(e, {
+					}) => t ? Object(N.G)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -2217,7 +2217,7 @@
 							postId: r
 						} = t, s = n ? Object(I.a)(e, {
 							commentId: n
-						}) : null, i = r ? Object(N.F)(e, {
+						}) : null, i = r ? Object(N.G)(e, {
 							postId: r
 						}) : null;
 						(s ? s.author : i ? i.author : null) || t.author;
@@ -4208,4 +4208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.366043c280e761e79dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.1ca0299f3f2537b8e9e1.js.map

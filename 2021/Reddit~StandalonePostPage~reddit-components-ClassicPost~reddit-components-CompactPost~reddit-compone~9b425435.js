@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.398fc3cc13f7866bf9b0.js
-// Retrieved at 7/21/2021, 6:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.88a5bb2e6cff013c77e6.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, r) {
@@ -183,7 +183,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.F)(c, {
+						const e = Object(m.G)(c, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -2979,7 +2979,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						a = l.find(e => e >= r),
-						i = n ? Object(c.F)(e, {
+						i = n ? Object(c.G)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3264,4 +3264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.398fc3cc13f7866bf9b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.88a5bb2e6cff013c77e6.js.map

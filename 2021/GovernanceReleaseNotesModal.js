@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5265e35bde3ef8b66f52.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.eab2103125e6d8f91d53.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1036,10 +1036,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(i.b)(() => Object(d.a)(y.E, w.bb, (e, {
+				N = Object(i.b)(() => Object(d.a)(y.F, w.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(y.b)(e, n) : null, v.a, _.actionInfo, y.F, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(y.b)(e, n) : null, v.a, _.actionInfo, y.G, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -2261,7 +2261,7 @@
 							{
 								H: s,
 								D: r
-							} = G(e.a),
+							} = J(e.a),
 							{
 								c: i = []
 							} = e;
@@ -2372,16 +2372,16 @@
 						f: n,
 						t: r
 					} = e, o = [];
-					if (!n) return J(0, r, t);
+					if (!n) return G(0, r, t);
 					const i = Object(s.a)(r);
 					let a = 0,
 						d = 0;
 					const c = n.length;
 					for (; a < c; a++) {
 						const [e, t, s] = n[a], c = t + s, l = i[t], u = i[c] - l;
-						l > d && o.push(J(0, r.substr(d, l - d), `between${a}`)), o.push(J(e, r.substr(l, u), a)), d = l + u
+						l > d && o.push(G(0, r.substr(d, l - d), `between${a}`)), o.push(G(e, r.substr(l, u), a)), d = l + u
 					}
-					return d < r.length && o.push(J(0, r.substr(d), `remaining${a}`)), o
+					return d < r.length && o.push(G(0, r.substr(d), `remaining${a}`)), o
 				},
 				W = {
 					[h.j.monospace]: d.h,
@@ -2392,13 +2392,13 @@
 					[h.j.subscript]: d.l,
 					[h.j.superscript]: d.m
 				},
-				J = (e, t, n) => {
+				G = (e, t, n) => {
 					let s = t;
 					return s = o()(W, (t, s, r) => e & parseInt(r, 10) ? a.a.createElement(s, {
 						key: n
 					}, t) : t, s)
 				},
-				G = e => {
+				J = e => {
 					switch (e) {
 						case h.f:
 							return {
@@ -2996,4 +2996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.5265e35bde3ef8b66f52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.eab2103125e6d8f91d53.js.map

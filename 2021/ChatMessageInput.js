@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.e37aa6f9ab70d5fd2268.js
-// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.a3d4eaac86970126987a.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -113,23 +113,23 @@
 				this.schema = e.__schema__.toLowerCase(), this.index = s + t, this.lastIndex = r + t, this.raw = n, this.text = n, this.url = n
 			}
 
-			function h(e, t) {
+			function p(e, t) {
 				var s = new m(e, t);
 				return e.__compiled__[s.schema].normalize(s, e), s
 			}
 
-			function p(e, t) {
-				if (!(this instanceof p)) return new p(e, t);
+			function h(e, t) {
+				if (!(this instanceof h)) return new h(e, t);
 				var s;
 				t || (s = e, Object.keys(s || {}).reduce((function(e, t) {
 					return e || i.hasOwnProperty(t)
 				}), !1) && (t = e, e = {})), this.__opts__ = r({}, i, t), this.__index__ = -1, this.__last_index__ = -1, this.__schema__ = "", this.__text_cache__ = "", this.__schemas__ = r({}, c, e), this.__compiled__ = {}, this.__tlds__ = d, this.__tlds_replaced__ = !1, this.re = {}, l(this)
 			}
-			p.prototype.add = function(e, t) {
+			h.prototype.add = function(e, t) {
 				return this.__schemas__[e] = t, l(this), this
-			}, p.prototype.set = function(e) {
+			}, h.prototype.set = function(e) {
 				return this.__opts__ = r(this.__opts__, e), this
-			}, p.prototype.test = function(e) {
+			}, h.prototype.test = function(e) {
 				if (this.__text_cache__ = e, this.__index__ = -1, !e.length) return !1;
 				var t, s, r, n, o, a, i, c;
 				if (this.re.schema_test.test(e))
@@ -138,23 +138,23 @@
 							this.__schema__ = t[2], this.__index__ = t.index + t[1].length, this.__last_index__ = t.index + t[0].length + n;
 							break
 						} return this.__opts__.fuzzyLink && this.__compiled__["http:"] && (c = e.search(this.re.host_fuzzy_test)) >= 0 && (this.__index__ < 0 || c < this.__index__) && null !== (s = e.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy)) && (o = s.index + s[1].length, (this.__index__ < 0 || o < this.__index__) && (this.__schema__ = "", this.__index__ = o, this.__last_index__ = s.index + s[0].length)), this.__opts__.fuzzyEmail && this.__compiled__["mailto:"] && e.indexOf("@") >= 0 && null !== (r = e.match(this.re.email_fuzzy)) && (o = r.index + r[1].length, a = r.index + r[0].length, (this.__index__ < 0 || o < this.__index__ || o === this.__index__ && a > this.__last_index__) && (this.__schema__ = "mailto:", this.__index__ = o, this.__last_index__ = a)), this.__index__ >= 0
-			}, p.prototype.pretest = function(e) {
+			}, h.prototype.pretest = function(e) {
 				return this.re.pretest.test(e)
-			}, p.prototype.testSchemaAt = function(e, t, s) {
+			}, h.prototype.testSchemaAt = function(e, t, s) {
 				return this.__compiled__[t.toLowerCase()] ? this.__compiled__[t.toLowerCase()].validate(e, s, this) : 0
-			}, p.prototype.match = function(e) {
+			}, h.prototype.match = function(e) {
 				var t = 0,
 					s = [];
-				this.__index__ >= 0 && this.__text_cache__ === e && (s.push(h(this, t)), t = this.__last_index__);
-				for (var r = t ? e.slice(t) : e; this.test(r);) s.push(h(this, t)), r = r.slice(this.__last_index__), t += this.__last_index__;
+				this.__index__ >= 0 && this.__text_cache__ === e && (s.push(p(this, t)), t = this.__last_index__);
+				for (var r = t ? e.slice(t) : e; this.test(r);) s.push(p(this, t)), r = r.slice(this.__last_index__), t += this.__last_index__;
 				return s.length ? s : null
-			}, p.prototype.tlds = function(e, t) {
+			}, h.prototype.tlds = function(e, t) {
 				return e = Array.isArray(e) ? e : [e], t ? (this.__tlds__ = this.__tlds__.concat(e).sort().filter((function(e, t, s) {
 					return e !== s[t - 1]
 				})).reverse(), l(this), this) : (this.__tlds__ = e.slice(), this.__tlds_replaced__ = !0, l(this), this)
-			}, p.prototype.normalize = function(e) {
+			}, h.prototype.normalize = function(e) {
 				e.schema || (e.url = "http://" + e.url), "mailto:" !== e.schema || /^mailto:/i.test(e.url) || (e.url = "mailto:" + e.url)
-			}, p.prototype.onCompile = function() {}, e.exports = p
+			}, h.prototype.onCompile = function() {}, e.exports = h
 		},
 		"./node_modules/linkify-it/lib/re.js": function(e, t, s) {
 			"use strict";
@@ -410,9 +410,9 @@
 			})), s.d(t, "f", (function() {
 				return m
 			})), s.d(t, "g", (function() {
-				return h
-			})), s.d(t, "h", (function() {
 				return p
+			})), s.d(t, "h", (function() {
+				return h
 			})), s.d(t, "i", (function() {
 				return _
 			})), s.d(t, "j", (function() {
@@ -428,8 +428,8 @@
 				d = Object(r.a)(a.d),
 				l = Object(r.a)(a.e),
 				m = Object(r.a)(a.f),
-				h = Object(r.a)(a.g),
-				p = Object(r.a)(a.h),
+				p = Object(r.a)(a.g),
+				h = Object(r.a)(a.h),
 				_ = Object(r.a)(a.i),
 				b = e => Object(n.h)(o.a.SUBREDDIT_PREMIUM_UPLOAD_MODAL, {
 					uploadAssetType: e
@@ -524,8 +524,8 @@
 				d = s("./node_modules/react-redux/es/index.js"),
 				l = s("./node_modules/reselect/es/index.js"),
 				m = s("./src/lib/classNames/index.ts"),
-				h = s("./src/lib/lessComponent.tsx"),
-				p = s("./src/reddit/models/PostDraft/index.ts"),
+				p = s("./src/lib/lessComponent.tsx"),
+				h = s("./src/reddit/models/PostDraft/index.ts"),
 				_ = s("./src/reddit/actions/comment/authoring.ts"),
 				b = s("./src/reddit/actions/gold/modals.ts"),
 				f = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
@@ -592,7 +592,7 @@
 					postId: t
 				}) => Object(O.g)(e, {
 					commentsPageKey: Object(P.a)(t)
-				}), S.F, (e, {
+				}), S.G, (e, {
 					postId: t
 				}) => Object(O.u)(e, {
 					commentsPageKey: Object(P.a)(t)
@@ -660,21 +660,21 @@
 			const J = {},
 				X = 1e3,
 				$ = "chat_submission_from_rte",
-				Q = h.a.form("Form", H.a),
-				Y = h.a.wrapped(j.d, "ChatButton", H.a),
-				ee = h.a.div("CloseIconWrap", H.a),
-				te = h.a.div("Reply", H.a),
-				se = h.a.div("ReplyAuthor", H.a),
-				re = h.a.div("ReplyComment", H.a),
-				ne = h.a.wrapped(y.a, "RichTextEditor", H.a),
-				oe = h.a.wrapped(g.a, "SmallChatUserIcon", H.a),
+				Q = p.a.form("Form", H.a),
+				Y = p.a.wrapped(j.d, "ChatButton", H.a),
+				ee = p.a.div("CloseIconWrap", H.a),
+				te = p.a.div("Reply", H.a),
+				se = p.a.div("ReplyAuthor", H.a),
+				re = p.a.div("ReplyComment", H.a),
+				ne = p.a.wrapped(y.a, "RichTextEditor", H.a),
+				oe = p.a.wrapped(g.a, "SmallChatUserIcon", H.a),
 				ae = Object(d.b)(() => Object(l.c)({
 					draft: O.i,
 					errorMsgs: O.K,
 					hasError: O.v,
 					liveStreamingChatCharacterLimit: z.a,
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: S.F
+					post: S.G
 				}), (e, {
 					isEditing: t,
 					comment: s,
@@ -752,7 +752,7 @@
 						if (this.canSubmit()) {
 							const e = {
 								commentMode: I.h.RICH_TEXT,
-								draftType: p.c.replyToComment,
+								draftType: h.c.replyToComment,
 								rteState: this.state.rteState,
 								hasFocus: !0,
 								text: ""
@@ -802,7 +802,7 @@
 						hk: "RIcb6"
 					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), h = i.isGildable && s && !t, p = s;
+					}), p = i.isGildable && s && !t, h = s;
 					return u.a.createElement("div", {
 						className: Object(m.a)(H.a.FormWrapper, {
 							[H.a.LivestreamingWrapper]: s
@@ -850,7 +850,7 @@
 						onSubmit: this.onSubmit,
 						placeholderText: l,
 						readOnly: a,
-						showSubmitButton: p,
+						showSubmitButton: h,
 						submitButtonClassName: Object(m.a)(H.a.insetSubmitButton, H.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: o.a,
@@ -862,7 +862,7 @@
 							[H.a.LivestreamingResetButton]: s
 						}),
 						type: "reset"
-					}, u.a.createElement(D.a, null)), !p && u.a.createElement(Y, {
+					}, u.a.createElement(D.a, null)), !h && u.a.createElement(Y, {
 						className: Object(m.a)(H.a.ChatButton, {
 							[H.a.LivestreamingChatButton]: s && !t,
 							[H.a.LivestreamingResetButton]: s && t
@@ -872,10 +872,10 @@
 						"aria-label": r.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, u.a.createElement(A.a, null))), h && u.a.createElement(Y, {
+					}, u.a.createElement(A.a, null))), p && u.a.createElement(Y, {
 						className: Object(m.a)(H.a.ChatButton, {
 							[H.a.LivestreamingChatButton]: s,
-							[H.a.leftPad]: !p
+							[H.a.leftPad]: !h
 						}),
 						"aria-label": r.fbt._("give award", null, {
 							hk: "1nXRWY"
@@ -1030,9 +1030,9 @@
 			})), s.d(t, "j", (function() {
 				return m
 			})), s.d(t, "C", (function() {
-				return h
-			})), s.d(t, "z", (function() {
 				return p
+			})), s.d(t, "z", (function() {
+				return h
 			})), s.d(t, "D", (function() {
 				return _
 			})), s.d(t, "B", (function() {
@@ -1162,7 +1162,7 @@
 						position: t || 0
 					})
 				}),
-				h = (e, t) => s => ({
+				p = (e, t) => s => ({
 					source: "stream_player",
 					action: "fail",
 					noun: "stream",
@@ -1172,7 +1172,7 @@
 						...i(s, e)
 					}
 				}),
-				p = (e, t) => s => ({
+				h = (e, t) => s => ({
 					source: "stream_player",
 					action: "heartbeat",
 					noun: "stream",
@@ -1518,15 +1518,15 @@
 			const d = e => e.publicAccessNetwork.listings,
 				l = s.n(u)()(e => Object(n.a)(Object(r.a)(d, t => e && t.hasOwnProperty(e) ? t[e] : [])));
 			var m = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
-			const h = e => e.publicAccessNetwork.models,
-				p = e => e.publicAccessNetwork.reports.reported,
+			const p = e => e.publicAccessNetwork.models,
+				h = e => e.publicAccessNetwork.reports.reported,
 				_ = e => e.publicAccessNetwork.history,
 				b = e => e.publicAccessNetwork.history.cursor,
 				f = e => e.publicAccessNetwork.history.visitOrder,
 				g = e => e.publicAccessNetwork.hlsStreams,
 				y = Object(r.a)(g, e => e.ended),
 				v = Object(r.a)(g, e => e.removed),
-				x = Object(r.a)(h, y, v, (e, t, s) => {
+				x = Object(r.a)(p, y, v, (e, t, s) => {
 					const r = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
@@ -1569,7 +1569,7 @@
 				},
 				k = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => l(t.listingName)(e, t), x, p, i.h, (e, t, s, r, n) => {
+				}) => t, (e, t) => l(t.listingName)(e, t), x, h, i.i, (e, t, s, r, n) => {
 					const i = [];
 					if (e) {
 						const t = Object(o.g)(e);
@@ -1634,7 +1634,7 @@
 				D = Object(n.a)(Object(r.a)(E, x, (e, t) => e ? t[e] : void 0)),
 				A = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.g)(t) : void 0, E, p, i.h, (e, {
+				}) => t ? Object(o.g)(t) : void 0, E, h, i.i, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
@@ -1684,7 +1684,7 @@
 				Z = Object(r.a)(S, M, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === T.LIVE || t === T.VOD ? e.stream.hls_url : n : void 0),
 				U = Object(r.a)(S, M, R, (e, t, s) => e ? t === T.LIVE ? e.broadcast_time : t === T.VOD && s < e.broadcast_time ? s : 0 : 0),
 				q = (e, t) => {
-					const s = h(e);
+					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
 		},
@@ -1769,8 +1769,8 @@
 				d = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
 				l = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
 				m = s("./src/reddit/selectors/commentSelector.ts"),
-				h = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				p = s("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
+				p = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				h = s("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
 			const _ = [],
 				b = (e, t) => {
 					const s = e.economics.subredditPremium[t];
@@ -1967,10 +1967,10 @@
 					return !!s && s.hasGifProduct
 				},
 				Z = (e, t, s) => {
-					if (!Object(p.b)(e, {
+					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(h.p)(e, {
+					if (Object(p.p)(e, {
 							subredditId: t
 						})) return !0;
 					const n = "replyToPost" !== s && Object(m.a)(e, {
@@ -1991,4 +1991,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.e37aa6f9ab70d5fd2268.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.a3d4eaac86970126987a.js.map

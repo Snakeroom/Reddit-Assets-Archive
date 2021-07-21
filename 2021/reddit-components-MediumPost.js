@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0ae85bea8f848cce75c8.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.13d379284a93436fb88f.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1985,8 +1985,8 @@
 			const oe = () => Object(a.c)({
 					crosspost: Z.d,
 					flairStyleTemplate: N.T,
-					isActive: Z.j,
-					isCurrentUserProfilePost: Z.k,
+					isActive: Z.k,
+					isCurrentUserProfilePost: Z.l,
 					isPostChainDismissed: q.c,
 					isPostChained: q.d,
 					showPromotedCTA: J.a,
@@ -2661,7 +2661,7 @@
 				V = Object(a.c)({
 					isPinned: (e, {
 						post: t
-					}) => Object(I.p)(e, {
+					}) => Object(I.q)(e, {
 						postId: t.id
 					}),
 					modModeEnabled: b.R
@@ -2876,7 +2876,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(b.i)(e, {
+					}) => Object(b.j)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(h.actionInfo)(e).pageType
@@ -3961,8 +3961,8 @@
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentName: s.Xc,
 				experimentEligibilitySelector: r.a
-			}), i.F, (e, t) => e === s.hd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.G, (e, t) => e === s.hd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.0ae85bea8f848cce75c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.13d379284a93436fb88f.js.map

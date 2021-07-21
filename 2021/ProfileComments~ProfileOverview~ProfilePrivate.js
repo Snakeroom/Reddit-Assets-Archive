@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.104a287afe6ce5227200.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c53553c1821aebd174ab.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1016,12 +1016,12 @@
 					modModeEnabled: V.R,
 					postIsLocked: (e, {
 						comment: t
-					}) => Object(Z.A)(e, {
+					}) => Object(Z.B)(e, {
 						postId: t.postId
 					}),
 					postPermalink: (e, {
 						comment: t
-					}) => Object(Z.E)(e, {
+					}) => Object(Z.F)(e, {
 						postId: t.postId
 					}),
 					reportFlowIsOpen: (e, {
@@ -1033,7 +1033,7 @@
 					subreddit: V.q,
 					subredditOrProfile: (e, {
 						comment: t
-					}) => Object(Z.R)(e, {
+					}) => Object(Z.S)(e, {
 						postId: t.postId
 					}),
 					reportingRevampEnabled: X.a
@@ -2946,10 +2946,10 @@
 					autoplayPref: x.b,
 					activeModalId: m.a,
 					crosspost: b.d,
-					isActive: b.j,
+					isActive: b.k,
 					isChatPost: p.d,
-					isCurrentUserProfilePost: b.k,
-					isExpanded: b.l,
+					isCurrentUserProfilePost: b.l,
+					isExpanded: b.m,
 					isLoggedIn: x.J,
 					showPromotedCTA: f.a,
 					moderatorPermissions: u.k,
@@ -3145,4 +3145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.104a287afe6ce5227200.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c53553c1821aebd174ab.js.map

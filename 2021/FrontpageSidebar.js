@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.39c9c4f62223139b5f86.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.6ed321a016e568563d23.js
+// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -373,7 +373,7 @@
 			var xe = fe(ke),
 				ye = n("./src/reddit/selectors/posts.ts");
 			const Ne = Object(u.c)({
-				recentPosts: ye.O
+				recentPosts: ye.P
 			});
 			var Ee = Object(c.b)(Ne, (e, t) => ({
 					openLightbox: t => () => e(Object(be.a)(t.permalink))
@@ -848,7 +848,7 @@
 				g = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				f = n.n(h);
-			const _ = Object(o.a)(e => e, p.F, p.d, (e, t, n) => {
+			const _ = Object(o.a)(e => e, p.G, p.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.39c9c4f62223139b5f86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.6ed321a016e568563d23.js.map
