@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.84f06be4f5ebe46e268a.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f82e56edcd573da93166.js
+// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -19415,7 +19415,7 @@
 					case o.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case o.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -19429,7 +19429,7 @@
 					case o.EthTraderRinkeby:
 						return "rinkeby";
 					case o.ArbitrumRinkeby:
-						return 42161
+						return 5391184
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
@@ -19460,7 +19460,7 @@
 					endpoint: `${r.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(o || (o = {}));
 			const m = (e, t, n) => ({
 					type: "burn-link",
@@ -30340,4 +30340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.84f06be4f5ebe46e268a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f82e56edcd573da93166.js.map

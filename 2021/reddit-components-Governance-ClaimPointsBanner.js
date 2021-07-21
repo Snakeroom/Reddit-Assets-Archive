@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.140dc4c413da07b100c7.js
-// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.f1214df158e3a28738d9.js
+// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -507,7 +507,7 @@
 					const e = this.resolve(A);
 					return !1 !== this.resolved[e] && !!t.m[e]
 				},
-				importAsync: () => Promise.all([t.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~15384a17"), t.e("vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~339111b0"), t.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(t.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
+				importAsync: () => Promise.all([t.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), t.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal"), t.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(t.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
 				requireAsync(A) {
 					const e = this.resolve(A);
 					return this.resolved[e] = !1, this.importAsync(A).then(A => (this.resolved[e] = !0, A))
@@ -626,7 +626,7 @@
 					case n.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case n.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
 				}
 				throw new Error(`No JSON RPC url for provider: ${A}`)
 			}
@@ -640,7 +640,7 @@
 					case n.EthTraderRinkeby:
 						return "rinkeby";
 					case n.ArbitrumRinkeby:
-						return 42161
+						return 5391184
 				}
 				throw new Error(`No ethereum network for provider: ${A}`)
 			}
@@ -671,7 +671,7 @@
 					endpoint: `${r.a.metaUrl}/crypto/${e}/registrations/${t}`
 				})
 			}! function(A) {
-				A.Ethereum = "ethereum:1", A.Rinkeby = "ethereum:4", A.ArbitrumRinkeby = "ethereum:29199749760514", A.EthTraderEthereum = "ethereum:1:ethtrader", A.EthTraderRinkeby = "ethereum:4:ethtrader"
+				A.Ethereum = "ethereum:1", A.Rinkeby = "ethereum:4", A.ArbitrumRinkeby = "ethereum:5391184", A.EthTraderEthereum = "ethereum:1:ethtrader", A.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(n || (n = {}));
 			const p = (A, e, t) => ({
 					type: "burn-link",
@@ -1612,4 +1612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.140dc4c413da07b100c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.f1214df158e3a28738d9.js.map

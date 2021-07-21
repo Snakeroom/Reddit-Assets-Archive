@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.eb68970c91a9fbc5c8f6.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.6a45ddccd27672504d9a.js
+// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -46,9 +46,9 @@
 			})), n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "j", (function() {
-				return _
-			})), n.d(t, "k", (function() {
 				return b
+			})), n.d(t, "k", (function() {
+				return _
 			})), n.d(t, "l", (function() {
 				return E
 			})), n.d(t, "m", (function() {
@@ -85,8 +85,8 @@
 				u = "GOVERNANCE__PROPOSAL_CREATION_PENDING",
 				a = "GOVERNANCE__PROPOSAL_CREATION_SUCCESS",
 				l = "GOVERNANCE__PROPOSAL_OPTION_VOTE_FAILURE",
-				_ = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
-				b = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
+				b = "GOVERNANCE__PROPOSAL_OPTION_VOTE_PENDING",
+				_ = "GOVERNANCE__PROPOSAL_OPTION_VOTE_SUCCESS",
 				E = "GOVERNANCE__PUBLIC_WALLET_INFO_FAILURE",
 				f = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				m = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
@@ -118,9 +118,9 @@
 			})), n.d(t, "g", (function() {
 				return l
 			})), n.d(t, "h", (function() {
-				return _
-			})), n.d(t, "i", (function() {
 				return b
+			})), n.d(t, "i", (function() {
+				return _
 			})), n.d(t, "j", (function() {
 				return E
 			}));
@@ -133,8 +133,8 @@
 				u = Object(r.a)(s.d),
 				a = Object(r.a)(s.f),
 				l = Object(r.a)(s.g),
-				_ = Object(r.a)(s.h),
-				b = Object(r.a)(s.i),
+				b = Object(r.a)(s.h),
+				_ = Object(r.a)(s.i),
 				E = Object(r.a)(s.j)
 		},
 		"./src/reddit/actions/harbergerTax/constants.ts": function(e, t, n) {
@@ -158,7 +158,7 @@
 			})), n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "j", (function() {
-				return _
+				return b
 			}));
 			const r = "HARBERGER_TAX__BANNER_MANAGE_MODAL_OPENED",
 				s = "HARBERGER_TAX__BANNER_PURCHASE_MODAL_OPENED",
@@ -169,7 +169,7 @@
 				u = "HARBERGER_TAX__BANNER_PURCHASE_SUCCESS",
 				a = "HARBERGER_TAX__BANNER_UPDATE_FAILURE",
 				l = "HARBERGER_TAX__BANNER_UPDATE_PENDING",
-				_ = "HARBERGER_TAX__BANNER_UPDATE_SUCCESS"
+				b = "HARBERGER_TAX__BANNER_UPDATE_SUCCESS"
 		},
 		"./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -190,8 +190,8 @@
 				u = n("./src/lib/prettyPrintNumber/index.ts"),
 				a = n("./src/reddit/actions/harbergerTax/actionCreators.ts"),
 				l = n("./src/reddit/actions/tooltip.ts"),
-				_ = n("./src/reddit/components/Governance/Token/index.tsx"),
-				b = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				b = n("./src/reddit/components/Governance/Token/index.tsx"),
+				_ = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				E = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				f = n("./src/reddit/featureFlags/component.tsx"),
 				m = n("./src/reddit/helpers/governance/ethereum.ts"),
@@ -260,7 +260,7 @@
 					pointsDetails: p
 				} = e;
 				if (!t || !p || !o) return null;
-				const N = Object(m.e)(),
+				const N = Object(m.f)(),
 					A = !c && (!N || !!!n || p.inTransition),
 					h = `harberger-cta-${o.id}`;
 				return i.a.createElement("div", {
@@ -279,10 +279,10 @@
 					hk: "aHDWM"
 				}) : i.a.createElement(s.Fragment, null, r.fbt._("Buy Banner", null, {
 					hk: "3Mp8CG"
-				}), i.a.createElement(_.a, {
+				}), i.a.createElement(b.a, {
 					className: v.a.token,
 					subredditId: o.id
-				}), Object(u.a)(Object(O.b)(t, p.displayConversion))), A && i.a.createElement(b.c, {
+				}), Object(u.a)(Object(O.b)(t, p.displayConversion))), A && i.a.createElement(_.c, {
 					tooltipId: h,
 					text: N ? r.fbt._("You must register your wallet address to purchase the banner", null, {
 						hk: "38o58h"
@@ -308,12 +308,12 @@
 				u = n("./src/reddit/selectors/crypto/points.ts"),
 				a = n("./src/reddit/components/Governance/Token/index.m.less"),
 				l = n.n(a);
-			const _ = Object(o.c)({
+			const b = Object(o.c)({
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(u.b)(e, t)
 			});
-			t.a = Object(i.b)(_)((function(e) {
+			t.a = Object(i.b)(b)((function(e) {
 				var t;
 				const n = null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.images;
 				if (!n) return null;
@@ -352,9 +352,9 @@
 			})), n.d(t, "m", (function() {
 				return l
 			})), n.d(t, "g", (function() {
-				return _
-			})), n.d(t, "b", (function() {
 				return b
+			})), n.d(t, "b", (function() {
+				return _
 			})), n.d(t, "d", (function() {
 				return E
 			})), n.d(t, "c", (function() {
@@ -390,7 +390,7 @@
 					case r.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case r.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -404,7 +404,7 @@
 					case r.EthTraderRinkeby:
 						return "rinkeby";
 					case r.ArbitrumRinkeby:
-						return 42161
+						return 5391184
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
@@ -429,15 +429,15 @@
 					data: n
 				})
 			}
-			async function _(e, t, n) {
+			async function b(e, t, n) {
 				return await Object(i.a)(e, {
 					method: "delete",
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
-			const b = (e, t, n) => ({
+			const _ = (e, t, n) => ({
 					type: "burn-link",
 					subredditId: e,
 					amount: t,
@@ -472,23 +472,25 @@
 		},
 		"./src/reddit/helpers/governance/ethereum.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "c", (function() {
+				return s
+			})), n.d(t, "f", (function() {
 				return i
-			})), n.d(t, "c", (function() {
-				return o
 			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "e", (function() {
 				return c
 			})), n.d(t, "b", (function() {
 				return d
 			})), n.d(t, "a", (function() {
 				return u
-			})), n.d(t, "f", (function() {
-				return b
 			})), n.d(t, "g", (function() {
-				return f
+				return _
 			})), n.d(t, "h", (function() {
-				return m
+				return f
 			})), n.d(t, "i", (function() {
+				return m
+			})), n.d(t, "j", (function() {
 				return O
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -509,7 +511,8 @@
 			}
 
 			function c() {
-				return s().networkVersion || null
+				const e = s();
+				return (null == e ? void 0 : e.networkVersion) || null
 			}
 
 			function d() {
@@ -519,7 +522,7 @@
 			}
 			const u = 4001;
 			async function a(e, t, r, i) {
-				const [o, c] = await Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~15384a17").then(n.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, c] = await Promise.all([Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await d();
 				const u = new o.providers.Web3Provider(s()).getSigner(),
 					a = new o.Contract(e, c, u),
@@ -546,18 +549,20 @@
 					type: "function"
 				}]
 			};
-			const _ = 1;
-			async function b(e, t, r, s, i) {
-				const o = await n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~15384a17").then(n.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers),
+			const b = 1;
+			async function _(e, t, r, s, i) {
+				const o = await Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
-						bigNumberify: c,
+						BigNumber: c
+					} = o,
+					{
 						hexlify: d,
 						hexZeroPad: u,
-						toUtf8Bytes: b
+						toUtf8Bytes: _
 					} = o.utils,
-					E = c(r).add(i),
-					f = _,
-					m = "0x" + [d(1)].concat([f, c(s), c(i)].map(d).map(e => u(e, 32))).concat(d(b(""))).map(e => e.substr(2)).join("");
+					E = c.from(r).add(i),
+					f = b,
+					m = "0x" + [d(1)].concat([d(f), c.from(s).toHexString(), c.from(i).toHexString()].map(e => u(e, 32))).concat(d(_(""))).map(e => e.substr(2)).join("");
 				return async function(e, t, n, r) {
 					return a(e, Promise.resolve(l), "send", [t, n, r])
 				}(e, t, E.toString(), m)
@@ -703,14 +708,14 @@
 					d = null == c ? void 0 : c.unlocked,
 					u = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
 					l = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
-					_ = (null == d ? void 0 : d.decimals) || 0,
-					b = "1" + "0".repeat(_);
+					b = (null == d ? void 0 : d.decimals) || 0,
+					_ = "1" + "0".repeat(b);
 				return {
 					blockchainProvider: u,
 					contractAddress: (null == d ? void 0 : d.address) || "",
 					contracts: c,
-					decimals: _,
-					displayConversion: b,
+					decimals: b,
+					displayConversion: _,
 					images: e.images || a,
 					inTransition: l,
 					name: e.name,
@@ -719,7 +724,7 @@
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var _ = (e = u, t) => {
+			var b = (e = u, t) => {
 				switch (t.type) {
 					case d.a: {
 						const {
@@ -735,8 +740,8 @@
 						return e
 				}
 			};
-			const b = {};
-			var E = (e = b, t) => {
+			const _ = {};
+			var E = (e = _, t) => {
 				switch (t.type) {
 					case d.n: {
 						const {
@@ -762,7 +767,7 @@
 			};
 			t.a = Object(r.c)({
 				claims: c,
-				points: _,
+				points: b,
 				publicWallets: E
 			})
 		},
@@ -851,21 +856,21 @@
 			})), n.d(t, "e", (function() {
 				return l
 			})), n.d(t, "f", (function() {
-				return _
+				return b
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
 			const s = [],
 				i = {},
 				o = (e, t) => {
-					const n = b(e, t);
+					const n = _(e, t);
 					if (n) return n.mainHeader
 				},
 				c = (e, t) => {
-					const n = b(e, t);
+					const n = _(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
 				d = (e, t) => {
-					const n = b(e, t);
+					const n = _(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
@@ -882,12 +887,12 @@
 					const n = u(e, t);
 					return n && n.amount || "0"
 				},
-				_ = (e, t) => {
+				b = (e, t) => {
 					const n = Object(r.m)(e, t);
 					return n && e.subreddits.gov.releaseNotes[n] || s
 				},
-				b = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
+				_ = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.eb68970c91a9fbc5c8f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.6a45ddccd27672504d9a.js.map

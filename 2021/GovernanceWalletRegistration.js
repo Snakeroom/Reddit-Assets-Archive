@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.5c31b647a8f9d0c293c3.js
-// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.577030225c987a575e79.js
+// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -206,9 +206,9 @@
 			})), n.d(t, "g", (function() {
 				return L
 			})), n.d(t, "d", (function() {
-				return T
-			})), n.d(t, "e", (function() {
 				return P
+			})), n.d(t, "e", (function() {
+				return T
 			})), n.d(t, "h", (function() {
 				return G
 			}));
@@ -244,7 +244,7 @@
 				R = Object(a.a)(C.v),
 				S = Object(a.a)(C.w),
 				L = Object(a.a)(C.x),
-				T = (e, t) => async (n, r, {
+				P = (e, t) => async (n, r, {
 					apiContext: a,
 					gqlContext: s
 				}) => {
@@ -287,7 +287,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(g.a)(n, o.error || o.errors[0].messsage)
-				}, P = (e, t) => async (n, a, {
+				}, T = (e, t) => async (n, a, {
 					apiContext: i
 				}) => {
 					var l;
@@ -631,7 +631,7 @@
 			class k extends a.a.Component {
 				componentDidMount() {
 					this.intervalId = window.setInterval(() => {
-						Object(l.c)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
+						Object(l.d)() && (this.props.onNextStep(), window.clearInterval(this.intervalId))
 					}, 500)
 				}
 				componentWillUnmount() {
@@ -679,7 +679,7 @@
 				constructor() {
 					super(...arguments), this.state = {
 						clickedInstallButton: !1,
-						isMetaMaskInstalled: Object(l.e)()
+						isMetaMaskInstalled: Object(l.f)()
 					}
 				}
 				render() {
@@ -762,7 +762,7 @@
 				fbt: L
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function T(e) {
+			function P(e) {
 				const t = `url(${h.a.assetPath}/img/communityPoints/registration/ethtrader/registered.svg)`,
 					{
 						onNextStep: n,
@@ -808,7 +808,7 @@
 								decimals: r.decimals,
 								image: null === (t = null === (e = r.contracts) || void 0 === e ? void 0 : e.unlocked) || void 0 === t ? void 0 : t.image
 							};
-							Object(l.i)(a).then(n)
+							Object(l.j)(a).then(n)
 						} else n()
 					}
 				}, r ? L._("Track Donuts", null, {
@@ -819,7 +819,7 @@
 					className: g.a.buttonIcon
 				}))))
 			}
-			var P = n("./src/reddit/actions/governance/errorToast.ts"),
+			var T = n("./src/reddit/actions/governance/errorToast.ts"),
 				G = n("./src/reddit/actions/toaster.ts"),
 				W = n("./src/reddit/contexts/ApiContext.tsx"),
 				B = n("./src/reddit/controls/Checkbox/index.tsx"),
@@ -837,13 +837,13 @@
 						})
 					}, this.runVerification = async () => {
 						var e;
-						const t = Object(l.c)();
+						const t = Object(l.d)();
 						if (!t) return void this.props.onError(F.fbt._("Please select an Ethereum wallet in your provider", null, {
 							hk: "25u6on"
 						}));
 						const n = null === (e = this.props.points) || void 0 === e ? void 0 : e.blockchainProvider;
 						if (!n || !n.startsWith("ethereum")) throw new Error("expected Ethereum provider");
-						if (n.split(":")[1] !== Object(l.d)()) {
+						if (n.split(":")[1] !== Object(l.e)()) {
 							const e = Object(D.j)(n);
 							return void this.props.onError(F.fbt._("Please select the {providerName} in MetaMask", [F.fbt._param("providerName", e)], {
 								hk: "2uEOyT"
@@ -854,7 +854,7 @@
 						const a = r.body.payload;
 						let s;
 						try {
-							s = await Object(l.h)(a)
+							s = await Object(l.i)(a)
 						} catch (i) {
 							return console.error(i), void(i.code !== l.a && this.props.onError(i.message || F.fbt._("An error occured while trying to sign the registration message.", null, {
 								hk: "30ALRP"
@@ -912,7 +912,7 @@
 				}
 			}
 			var $ = Object(W.b)(Object(s.b)(void 0, e => ({
-				onGovernanceError: t => Object(P.a)(e, t),
+				onGovernanceError: t => Object(T.a)(e, t),
 				onError: t => e(Object(G.f)({
 					duration: 5e3,
 					kind: U.b.Error,
@@ -1058,7 +1058,7 @@
 					}, this.correlationId = p()();
 					const t = Object(j.b)(e.pageLayer);
 					this.state = {
-						activeTab: t && Object(l.e)() ? Y.Wallet : Y.About
+						activeTab: t && Object(l.f)() ? Y.Wallet : Y.About
 					}
 				}
 				async componentDidMount() {
@@ -1089,7 +1089,7 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === Y.About ? _ : s === Y.MetaMask ? R : s === Y.Wallet ? q : s === Y.Connect ? k : s === Y.Verify ? $ : T;
+					} = this.state, i = s === Y.About ? _ : s === Y.MetaMask ? R : s === Y.Wallet ? q : s === Y.Connect ? k : s === Y.Verify ? $ : P;
 					return a.a.createElement("article", {
 						className: Object(o.a)(Q.a.container, e)
 					}, a.a.createElement(J.a, {
@@ -1351,7 +1351,7 @@
 					case r.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case r.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:29199749760514"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
 				}
 				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
@@ -1365,7 +1365,7 @@
 					case r.EthTraderRinkeby:
 						return "rinkeby";
 					case r.ArbitrumRinkeby:
-						return 42161
+						return 5391184
 				}
 				throw new Error(`No ethereum network for provider: ${e}`)
 			}
@@ -1396,7 +1396,7 @@
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:29199749760514", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -1479,23 +1479,25 @@
 		},
 		"./src/reddit/helpers/governance/ethereum.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "c", (function() {
+				return a
+			})), n.d(t, "f", (function() {
 				return s
-			})), n.d(t, "c", (function() {
-				return o
 			})), n.d(t, "d", (function() {
+				return o
+			})), n.d(t, "e", (function() {
 				return i
 			})), n.d(t, "b", (function() {
 				return c
 			})), n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "f", (function() {
-				return b
 			})), n.d(t, "g", (function() {
-				return h
+				return b
 			})), n.d(t, "h", (function() {
-				return f
+				return h
 			})), n.d(t, "i", (function() {
+				return f
+			})), n.d(t, "j", (function() {
 				return v
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -1516,7 +1518,8 @@
 			}
 
 			function i() {
-				return a().networkVersion || null
+				const e = a();
+				return (null == e ? void 0 : e.networkVersion) || null
 			}
 
 			function c() {
@@ -1526,7 +1529,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, r, s) {
-				const [o, i] = await Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~15384a17").then(n.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new o.providers.Web3Provider(a()).getSigner(),
 					l = new o.Contract(e, i, d),
@@ -1555,16 +1558,18 @@
 			};
 			const m = 1;
 			async function b(e, t, r, a, s) {
-				const o = await n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~15384a17").then(n.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers),
+				const o = await Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
-						bigNumberify: i,
+						BigNumber: i
+					} = o,
+					{
 						hexlify: c,
 						hexZeroPad: d,
 						toUtf8Bytes: b
 					} = o.utils,
-					p = i(r).add(s),
+					p = i.from(r).add(s),
 					h = m,
-					f = "0x" + [c(1)].concat([h, i(a), i(s)].map(c).map(e => d(e, 32))).concat(c(b(""))).map(e => e.substr(2)).join("");
+					f = "0x" + [c(1)].concat([c(h), i.from(a).toHexString(), i.from(s).toHexString()].map(e => d(e, 32))).concat(c(b(""))).map(e => e.substr(2)).join("");
 				return async function(e, t, n, r) {
 					return l(e, Promise.resolve(u), "send", [t, n, r])
 				}(e, t, p.toString(), f)
@@ -1943,4 +1948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.5c31b647a8f9d0c293c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.577030225c987a575e79.js.map

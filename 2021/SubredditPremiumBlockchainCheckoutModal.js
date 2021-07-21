@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.cedbf0236f1f7d732554.js
-// Retrieved at 7/19/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.4e2c30abcfacca279fd7.js
+// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -86,11 +86,11 @@
 				v = s("./src/reddit/components/Governance/Token/index.tsx"),
 				x = s("./src/reddit/helpers/governance/tokens.ts"),
 				g = s("./src/reddit/selectors/crypto/points.ts"),
-				w = s("./src/reddit/selectors/gov.ts"),
-				E = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
-				_ = s.n(E);
+				E = s("./src/reddit/selectors/gov.ts"),
+				w = s("./src/reddit/components/Governance/WalletAmount/index.m.less"),
+				_ = s.n(w);
 			const N = Object(l.c)({
-				latestWallet: w.d,
+				latestWallet: E.d,
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(g.b)(e, t)
@@ -142,9 +142,9 @@
 						hk: "4oPviM"
 					}))
 				})),
-				G = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				H = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
-				W = s.n(H);
+				H = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				G = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
+				W = s.n(G);
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -163,7 +163,7 @@
 						className: W.a.text
 					}, U._("Purchase {membership name}", [U._param("membership name", t.membershipAlt)], {
 						hk: "OO3Gk"
-					})), c.a.createElement(G.a, {
+					})), c.a.createElement(H.a, {
 						className: W.a.close,
 						onClick: e.onClose
 					}))
@@ -195,7 +195,7 @@
 						if (!n) throw new Error("could not find subscription contract address");
 						this.setState({
 							purchasePending: !0
-						}), Object(P.g)(n, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
+						}), Object(P.h)(n, this.props.wallet.publicAddress, this.state.numMonths).then(() => {
 							this.pollForMembership()
 						}).catch(e => {
 							this.props.onError(e.message), this.setState({
@@ -310,7 +310,7 @@
 						subredditId: t
 					}) => Object(T.o)(e, t),
 					subreddit: S.S,
-					wallet: w.d
+					wallet: E.d
 				}),
 				$ = Object(d.b)(Q, (e, t) => ({
 					onFetchSubredditMembership: () => e(Object(m.g)(t.subredditId, !0)),
@@ -461,7 +461,7 @@
 				v = s("./src/reddit/layout/row/Inline/index.tsx"),
 				x = s("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
 				g = s.n(x);
-			var w = Object(b.a)(e => {
+			var E = Object(b.a)(e => {
 					const {
 						children: t,
 						title: s
@@ -481,8 +481,8 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				E = s("./src/reddit/controls/ErrorText/index.m.less"),
-				_ = s.n(E);
+				w = s("./src/reddit/controls/ErrorText/index.m.less"),
+				_ = s.n(w);
 			const N = Object(u.c)({
 				activeModalId: h.a
 			});
@@ -535,7 +535,7 @@
 					}, e), c && d.a.createElement("span", {
 						className: _.a.moreText,
 						onClick: this.toggleModal
-					}, a), t === i && d.a.createElement(w, {
+					}, a), t === i && d.a.createElement(E, {
 						onConfirmed: this.toggleModal,
 						title: o
 					}, r || e))
@@ -765,23 +765,25 @@
 		},
 		"./src/reddit/helpers/governance/ethereum.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "e", (function() {
+			s.d(t, "c", (function() {
+				return r
+			})), s.d(t, "f", (function() {
 				return o
-			})), s.d(t, "c", (function() {
-				return a
 			})), s.d(t, "d", (function() {
+				return a
+			})), s.d(t, "e", (function() {
 				return i
 			})), s.d(t, "b", (function() {
 				return c
 			})), s.d(t, "a", (function() {
 				return d
-			})), s.d(t, "f", (function() {
-				return p
 			})), s.d(t, "g", (function() {
-				return b
+				return p
 			})), s.d(t, "h", (function() {
-				return f
+				return b
 			})), s.d(t, "i", (function() {
+				return f
+			})), s.d(t, "j", (function() {
 				return v
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -802,7 +804,8 @@
 			}
 
 			function i() {
-				return r().networkVersion || null
+				const e = r();
+				return (null == e ? void 0 : e.networkVersion) || null
 			}
 
 			function c() {
@@ -812,7 +815,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, n, o) {
-				const [a, i] = await Promise.all([s.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~15384a17").then(s.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers), t.then(e => e.abi)]);
+				const [a, i] = await Promise.all([Promise.all([s.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new a.providers.Web3Provider(r()).getSigner(),
 					l = new a.Contract(e, i, d),
@@ -841,16 +844,18 @@
 			};
 			const m = 1;
 			async function p(e, t, n, r, o) {
-				const a = await s.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~15384a17").then(s.t.bind(null, "./node_modules/ethers/dist/ethers.min.js", 7)).then(e => e.ethers),
+				const a = await Promise.all([s.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
-						bigNumberify: i,
+						BigNumber: i
+					} = a,
+					{
 						hexlify: c,
 						hexZeroPad: d,
 						toUtf8Bytes: p
 					} = a.utils,
-					h = i(n).add(o),
+					h = i.from(n).add(o),
 					b = m,
-					f = "0x" + [c(1)].concat([b, i(r), i(o)].map(c).map(e => d(e, 32))).concat(c(p(""))).map(e => e.substr(2)).join("");
+					f = "0x" + [c(1)].concat([c(b), i.from(r).toHexString(), i.from(o).toHexString()].map(e => d(e, 32))).concat(c(p(""))).map(e => e.substr(2)).join("");
 				return async function(e, t, s, n) {
 					return l(e, Promise.resolve(u), "send", [t, s, n])
 				}(e, t, h.toString(), f)
@@ -1056,4 +1061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.cedbf0236f1f7d732554.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.4e2c30abcfacca279fd7.js.map
