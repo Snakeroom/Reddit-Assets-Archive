@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.feacb3c270dddd62e3a1.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.22e871fb6bb6a609fec7.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1690,7 +1690,7 @@
 					renderContractorBadge: h
 				} = e, S = Object(E.a)(), P = n.subredditId, I = Object(i.e)(e => Object(k.f)(e, {
 					subredditId: P
-				}) && Object(_.f)(e));
+				}) && Object(_.g)(e));
 				if (n.isDeleted) return o.a.createElement("div", {
 					className: Object(c.a)(ke.a.container, t),
 					"data-testid": "post-comment-header-deleted"
@@ -10189,4 +10189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.feacb3c270dddd62e3a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.22e871fb6bb6a609fec7.js.map

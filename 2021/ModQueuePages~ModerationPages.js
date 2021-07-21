@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.71fcb730d2e7d75060b9.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.61b82c464de8eea0e96b.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1915,7 +1915,7 @@
 					renderContractorBadge: h
 				} = e, R = Object(E.a)(), j = o.subredditId, P = Object(a.e)(e => Object(y.f)(e, {
 					subredditId: j
-				}) && Object(_.f)(e));
+				}) && Object(_.g)(e));
 				if (o.isDeleted) return r.a.createElement("div", {
 					className: Object(d.a)(ye.a.container, t),
 					"data-testid": "post-comment-header-deleted"
@@ -4291,4 +4291,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.71fcb730d2e7d75060b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~ModerationPages.61b82c464de8eea0e96b.js.map

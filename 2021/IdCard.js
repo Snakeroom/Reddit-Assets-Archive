@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.a54a67fb2e1eae7fabb1.js
-// Retrieved at 7/21/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.cb7624f2aa60f49f2016.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -449,7 +449,7 @@
 						i = Object(g.j)(r);
 					if (!i || !Object(h.f)(r, {
 							subredditId: e
-						}) || !Object(c.f)(r)) return;
+						}) || !Object(c.g)(r)) return;
 					const o = !!Object(f.b)(r, {
 						subredditId: e,
 						userId: i.id
@@ -463,7 +463,7 @@
 					const r = s();
 					if (!Object(h.f)(r, {
 							subredditId: e
-						}) || !t || !Object(c.f)(r)) return;
+						}) || !t || !Object(c.g)(r)) return;
 					const i = new Set;
 					Object.values(t).forEach(e => {
 						i.add(e.authorId)
@@ -3000,7 +3000,7 @@
 				currentUser: P.j,
 				isAchievementFlairModalEnabled: (e, t) => Object(st.f)(e, {
 					subredditId: t.subredditId
-				}) && Object(nt.f)(e),
+				}) && Object(nt.g)(e),
 				userFlairData: rt.c,
 				userHasBadge: (e, t) => {
 					const n = e.user.account;
@@ -3080,7 +3080,7 @@
 					stylesDisabledGlobally: P.jb,
 					canChangeAchievementFlair: (e, t) => Object(st.f)(e, {
 						subredditId: t.subredditId
-					}) && Object(nt.f)(e)
+					}) && Object(nt.g)(e)
 				});
 			class St extends i.a.Component {
 				constructor(e) {
@@ -6279,4 +6279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.a54a67fb2e1eae7fabb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.cb7624f2aa60f49f2016.js.map

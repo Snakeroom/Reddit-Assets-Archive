@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1f60e03cb3348ff97251.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.24c86142843a8a8770a8.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -412,7 +412,7 @@
 						o = Object(x.j)(r);
 					if (!o || !Object(h.f)(r, {
 							subredditId: e
-						}) || !Object(d.f)(r)) return;
+						}) || !Object(d.g)(r)) return;
 					const a = !!Object(f.b)(r, {
 						subredditId: e,
 						userId: o.id
@@ -426,7 +426,7 @@
 					const r = s();
 					if (!Object(h.f)(r, {
 							subredditId: e
-						}) || !t || !Object(d.f)(r)) return;
+						}) || !t || !Object(d.g)(r)) return;
 					const o = new Set;
 					Object.values(t).forEach(e => {
 						o.add(e.authorId)
@@ -9588,7 +9588,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(lt.c)(e, t),
-					isPredictionsLeaderboardsEnabled: ut.l,
+					isPredictionsLeaderboardsEnabled: ut.m,
 					showGovernance: it.d.spPoints,
 					showLeaderboard: it.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -15236,4 +15236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1f60e03cb3348ff97251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.24c86142843a8a8770a8.js.map

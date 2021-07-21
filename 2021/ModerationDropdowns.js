@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.504bd9a5926d5d3e57c6.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.ecae0d3d308deba7b32d.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -476,7 +476,7 @@
 						r = Object(h.j)(n);
 					if (!r || !Object(f.f)(n, {
 							subredditId: e
-						}) || !Object(d.f)(n)) return;
+						}) || !Object(d.g)(n)) return;
 					const a = !!Object(x.b)(n, {
 						subredditId: e,
 						userId: r.id
@@ -490,7 +490,7 @@
 					const n = o();
 					if (!Object(f.f)(n, {
 							subredditId: e
-						}) || !t || !Object(d.f)(n)) return;
+						}) || !t || !Object(d.g)(n)) return;
 					const r = new Set;
 					Object.values(t).forEach(e => {
 						r.add(e.authorId)
@@ -1186,7 +1186,7 @@
 						onStickyPost: T,
 						onSpoilerPost: D,
 						post: F
-					} = e, L = Object(r.e)(w.j), B = F.flair.filter(e => e.type !== C.f.Nsfw && e.type !== C.f.Spoiler).length > 0, A = Object(k.b)(F), U = !(!F.approvedBy || !A), z = d ? void 0 : p, W = Object(E.a)(e.post), K = u ? y : I;
+					} = e, L = Object(r.e)(w.k), B = F.flair.filter(e => e.type !== C.f.Nsfw && e.type !== C.f.Spoiler).length > 0, A = Object(k.b)(F), U = !(!F.approvedBy || !A), z = d ? void 0 : p, W = Object(E.a)(e.post), K = u ? y : I;
 					return n.a.createElement(R.g, null, a && n.a.createElement(n.a.Fragment, null, !F.isSponsored && n.a.createElement(n.a.Fragment, null, n.a.createElement(R.e, {
 						className: K(g.a.Approve, z),
 						displayText: U ? v.fbt._("reapprove", null, {
@@ -2313,4 +2313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.504bd9a5926d5d3e57c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.ecae0d3d308deba7b32d.js.map

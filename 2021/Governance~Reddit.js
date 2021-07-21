@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.485db168b27630527548.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9635ad62023b49cdedca.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -945,7 +945,7 @@
 						n = Object(E.j)(a);
 					if (!n || !Object(f.f)(a, {
 							subredditId: e
-						}) || !Object(i.f)(a)) return;
+						}) || !Object(i.g)(a)) return;
 					const c = !!Object(m.b)(a, {
 						subredditId: e,
 						userId: n.id
@@ -959,7 +959,7 @@
 					const a = s();
 					if (!Object(f.f)(a, {
 							subredditId: e
-						}) || !t || !Object(i.f)(a)) return;
+						}) || !t || !Object(i.g)(a)) return;
 					const n = new Set;
 					Object.values(t).forEach(e => {
 						n.add(e.authorId)
@@ -21810,4 +21810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.485db168b27630527548.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9635ad62023b49cdedca.js.map

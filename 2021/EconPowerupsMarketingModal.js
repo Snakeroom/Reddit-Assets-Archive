@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0160d9bda6cb31fe8a59.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.452fa4a0544ef0a3eef2.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -96,10 +96,10 @@
 					count: w,
 					tiersInfo: E,
 					supportersCount: _
-				} = n, x = E[1].powerupsCost, f = h >= 2, k = (null == b ? void 0 : b.filter(e => {
+				} = n, x = E[1].powerupsCost, f = h >= 2, g = (null == b ? void 0 : b.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], N = Math.min(w, x) / x, g = x - w;
+				}).slice(0, 2)) || [], k = Math.min(w, x) / x, N = x - w;
 				return r.a.createElement("div", {
 					className: Object(a.a)(u.a.container, e, {
 						[u.a.containerClickable]: !!s
@@ -108,11 +108,11 @@
 					onClick: () => null == s ? void 0 : s(w)
 				}, r.a.createElement("div", {
 					className: u.a.heroes
-				}, !!k.length && r.a.createElement("div", {
+				}, !!g.length && r.a.createElement("div", {
 					className: Object(a.a)(u.a.heroesAvatarContainer, {
-						[u.a.twoAvatarsContainer]: k.length > 1
+						[u.a.twoAvatarsContainer]: g.length > 1
 					})
-				}, k.map(e => {
+				}, g.map(e => {
 					var t, s;
 					return r.a.createElement("div", {
 						className: u.a.heroesAvatar,
@@ -136,11 +136,11 @@
 					className: u.a.title
 				}, f ? p._("Community perks are now unlocked!", null, {
 					hk: "3xbTTM"
-				}) : p._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [p._param("subredditName", m.displayText), p._param("powerups needed", g)], {
+				}) : p._("{subredditName} needs {powerups needed} more Powerups to unlock perks for the entire community", [p._param("subredditName", m.displayText), p._param("powerups needed", N)], {
 					hk: "4h33rf"
 				})), r.a.createElement(c.a, {
 					className: u.a.progressBar,
-					progress: N
+					progress: k
 				}))
 			}
 		},
@@ -275,9 +275,9 @@
 				_ = s("./src/reddit/hooks/useTracking.ts"),
 				x = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				f = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				k = s("./src/reddit/selectors/subreddit.ts"),
-				N = s("./src/config.ts"),
-				g = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
+				g = s("./src/reddit/selectors/subreddit.ts"),
+				k = s("./src/config.ts"),
+				N = s("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				P = s("./src/reddit/models/Gold/Powerups/index.ts"),
 				j = s("./src/reddit/selectors/experiments/econ/index.ts"),
 				O = s("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
@@ -291,13 +291,13 @@
 			var y = function(e) {
 					const {
 						className: t
-					} = e, s = Object(_.a)(), n = Object(o.e)(j.f), a = I(n);
+					} = e, s = Object(_.a)(), n = Object(o.e)(j.g), a = I(n);
 					return r.a.createElement("div", {
 						className: Object(i.a)(C.a.container, t)
-					}, a.map(e => P.d[e] && r.a.createElement(g.a, {
+					}, a.map(e => P.d[e] && r.a.createElement(N.a, {
 						className: C.a.benefit,
 						description: P.c[e](),
-						iconUrl: `${N.a.assetPath}/img/powerups/${e}_v3.png`,
+						iconUrl: `${k.a.assetPath}/img/powerups/${e}_v3.png`,
 						key: `cell_${e}`,
 						onClick: () => {
 							s(Object(E.e)(e))
@@ -330,7 +330,7 @@
 				},
 				subreddit: (e, t) => {
 					const s = Object(b.m)(e, t);
-					return s ? Object(k.S)(e, {
+					return s ? Object(g.S)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -340,16 +340,16 @@
 					currentSubredditId: t,
 					powerups: s,
 					subreddit: a
-				} = e, c = Object(o.d)(), b = Object(_.a)(), f = Object(n.useRef)(null), [k, N] = Object(n.useState)(!1), g = () => {
+				} = e, c = Object(o.d)(), b = Object(_.a)(), f = Object(n.useRef)(null), [g, k] = Object(n.useState)(!1), N = () => {
 					if (!f.current) return;
 					const e = Math.ceil(f.current.scrollTop) + f.current.clientHeight >= f.current.scrollHeight,
 						t = f.current.clientHeight < f.current.scrollHeight;
-					N(t && !e)
+					k(t && !e)
 				};
 				Object(n.useEffect)(() => {
 					Object(u.a)()
 				}, []), Object(n.useLayoutEffect)(() => {
-					g()
+					N()
 				});
 				const P = () => c(Object(d.g)(p.a.ECON_POWERUPS_MARKETING)),
 					j = () => {
@@ -366,7 +366,7 @@
 					className: Object(i.a)(H.a.main),
 					ref: f,
 					onScroll: e => {
-						g()
+						N()
 					}
 				}, r.a.createElement(L.a, {
 					title: B._("Powerup {r/community}", [B._param("r/community", a.displayText)], {
@@ -421,7 +421,7 @@
 					hk: "3uxTLG"
 				})))), r.a.createElement("div", {
 					className: Object(i.a)(H.a.gradient, {
-						[H.a.hidden]: !k
+						[H.a.hidden]: !g
 					})
 				})), r.a.createElement("div", {
 					className: H.a.footer
@@ -532,4 +532,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.0160d9bda6cb31fe8a59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.452fa4a0544ef0a3eef2.js.map

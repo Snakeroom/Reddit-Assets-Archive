@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2b9247f36ad89241d67e.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.03a14e5b09a71c9b054e.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1432,7 +1432,7 @@
 						s = Object(g.j)(r);
 					if (!s || !Object(b.f)(r, {
 							subredditId: e
-						}) || !Object(d.f)(r)) return;
+						}) || !Object(d.g)(r)) return;
 					const i = !!Object(f.b)(r, {
 						subredditId: e,
 						userId: s.id
@@ -1446,7 +1446,7 @@
 					const r = o();
 					if (!Object(b.f)(r, {
 							subredditId: e
-						}) || !t || !Object(d.f)(r)) return;
+						}) || !t || !Object(d.g)(r)) return;
 					const s = new Set;
 					Object.values(t).forEach(e => {
 						s.add(e.authorId)
@@ -2312,6 +2312,15 @@
 						error: r.error
 					}))
 				}
+		},
+		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
+			"use strict";
+			var o = n("./src/reddit/actions/users.ts"),
+				r = n("./src/reddit/selectors/user.ts"),
+				s = n("./src/reddit/actions/login.ts");
+			t.a = () => async (e, t) => {
+				await e(Object(o.r)()), Object(r.J)(t()) || e(Object(s.h)())
+			}
 		},
 		"./src/reddit/actions/polls.ts": function(e, t, n) {
 			"use strict";
@@ -21949,6 +21958,78 @@
 					}
 				}
 		},
+		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return d
+			})), n.d(t, "e", (function() {
+				return l
+			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "d", (function() {
+				return p
+			}));
+			var o = n("./src/reddit/models/Gold/ProductOffer.ts"),
+				r = n("./src/reddit/selectors/avatarMarketing.ts"),
+				s = n("./src/reddit/selectors/telemetry.ts"),
+				i = n("./src/reddit/selectors/user.ts");
+			const a = {
+					goldPurchase: {
+						offerContext: o.a.AvatarNewGear
+					}
+				},
+				c = e => t => {
+					const n = {
+						source: e,
+						action: "click",
+						noun: "edit_snoovatar",
+						...s.defaults(t)
+					};
+					return Object(r.a)(t) && Object.assign(n, a), n
+				},
+				d = (e, t) => n => {
+					const {
+						id: o
+					} = Object(i.mb)(n, {
+						userName: t
+					});
+					return {
+						source: e,
+						action: "click",
+						noun: "copy_avatar",
+						...s.defaults(n),
+						snoovatar: {
+							userGenerated: o
+						}
+					}
+				},
+				l = e => ({
+					...s.defaults(e),
+					source: "global",
+					action: "view",
+					noun: "screen",
+					actionInfo: {
+						pageType: "snoovatar_builder"
+					},
+					snoovatar: s.snoovatarActiveForBuilderEvent(e)
+				}),
+				u = e => ({
+					...s.defaults(e),
+					source: "avatar_builder",
+					action: "click",
+					noun: "close",
+					snoovatar: s.snoovatarActiveForBuilderEvent(e)
+				}),
+				p = e => ({
+					source: "nav",
+					action: "view",
+					noun: "avatar_marketing",
+					...s.defaults(e),
+					...a
+				})
+		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
@@ -29075,6 +29156,44 @@
 				}
 			}
 		},
+		"./src/reddit/reducers/features/avatar/index.ts": function(e, t, n) {
+			"use strict";
+			var o = n("./node_modules/redux/es/redux.js"),
+				r = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				s = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/constants/modals.ts");
+			const a = {
+				active: !1,
+				assetUrls: null
+			};
+			var c = (e = null, t) => {
+				var n;
+				switch (t.type) {
+					case r.o:
+						const {
+							avatarMarketingEvent: o
+						} = t.payload;
+						return o ? function(e) {
+							const {
+								startsAt: t,
+								endsAt: n,
+								webAssetUrls: o
+							} = e, r = t && new Date(t) <= new Date, s = !!n && new Date(n) < new Date, i = o || null;
+							return {
+								active: !!r && !s && !!i,
+								assetUrls: i
+							}
+						}(o) : a;
+					case s.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === i.a.SNOOVATAR_MODAL ? a : e;
+					default:
+						return e
+				}
+			};
+			t.a = Object(o.c)({
+				marketing: c
+			})
+		},
 		"./src/reddit/reducers/features/crypto/index.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./node_modules/redux/es/redux.js"),
@@ -29342,6 +29461,47 @@
 				}
 			}
 		},
+		"./src/reddit/routes/avatar/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
+			var o = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				r = n("./src/lib/constants/index.ts"),
+				s = n("./src/reddit/actions/pages/avatar.ts");
+			const i = "/avatar",
+				a = [i, `${i}/:username`, `${i}/:username/:avatarId`],
+				c = {
+					action: s.a,
+					chunk: r.q.AVATAR,
+					component: Object(o.a)({
+						resolved: {},
+						chunkName: () => "Avatar",
+						isReady(e) {
+							const t = this.resolve(e);
+							return !1 !== this.resolved[t] && !!n.m[t]
+						},
+						importAsync: () => n.e("Avatar").then(n.bind(null, "./src/reddit/pages/Avatar/index.tsx")),
+						requireAsync(e) {
+							const t = this.resolve(e);
+							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+						},
+						requireSync(e) {
+							const t = this.resolve(e);
+							return n(t)
+						},
+						resolve() {
+							return "./src/reddit/pages/Avatar/index.tsx"
+						}
+					}),
+					exact: !0,
+					meta: {
+						name: r.Jb.AVATAR
+					},
+					path: a
+				};
+			t.b = c
+		},
 		"./src/reddit/selectors/authorFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -29371,6 +29531,32 @@
 					return o ? o[n] : null
 				},
 				s = e => e.authorFlair.inContext
+		},
+		"./src/reddit/selectors/avatarMarketing.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "b", (function() {
+				return a
+			})), n.d(t, "a", (function() {
+				return c
+			}));
+			var o = n("./node_modules/reselect/es/index.js"),
+				r = n("./src/lib/initializeClient/installReducer.ts"),
+				s = n("./src/reddit/reducers/features/avatar/index.ts"),
+				i = n("./src/reddit/selectors/experiments/econ/index.ts");
+			Object(r.a)({
+				features: {
+					avatar: s.a
+				}
+			});
+			const a = e => {
+					var t, n;
+					return !!(null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing)
+				},
+				c = Object(o.a)(i.c, e => {
+					var t, n;
+					const o = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing;
+					return (null == o ? void 0 : o.active) ? o.assetUrls && o.assetUrls[0] : null
+				}, (e, t) => e ? t : null)
 		},
 		"./src/reddit/selectors/crypto/points.ts": function(e, t, n) {
 			"use strict";
@@ -30154,4 +30340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2b9247f36ad89241d67e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.03a14e5b09a71c9b054e.js.map

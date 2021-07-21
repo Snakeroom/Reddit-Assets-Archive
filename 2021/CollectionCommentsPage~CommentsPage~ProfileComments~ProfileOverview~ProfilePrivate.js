@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.cdc67b9bd6c2c0fbb5ea.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.8dfdfa3aa02d819a6df5.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1169,7 +1169,7 @@
 					renderContractorBadge: b
 				} = e, I = Object(O.a)(), N = o.subredditId, w = Object(a.e)(e => Object(j.f)(e, {
 					subredditId: N
-				}) && Object(g.f)(e));
+				}) && Object(g.g)(e));
 				if (o.isDeleted) return r.a.createElement("div", {
 					className: Object(c.a)(je.a.container, t),
 					"data-testid": "post-comment-header-deleted"
@@ -3319,4 +3319,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.cdc67b9bd6c2c0fbb5ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.8dfdfa3aa02d819a6df5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cec2b1ace18b764651c0.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7766350804aa5547ad27.js
+// Retrieved at 7/21/2021, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -476,7 +476,7 @@
 						r = Object(j.j)(o);
 					if (!r || !Object(f.f)(o, {
 							subredditId: e
-						}) || !Object(a.f)(o)) return;
+						}) || !Object(a.g)(o)) return;
 					const d = !!Object(O.b)(o, {
 						subredditId: e,
 						userId: r.id
@@ -490,7 +490,7 @@
 					const o = n();
 					if (!Object(f.f)(o, {
 							subredditId: e
-						}) || !t || !Object(a.f)(o)) return;
+						}) || !t || !Object(a.g)(o)) return;
 					const r = new Set;
 					Object.values(t).forEach(e => {
 						r.add(e.authorId)
@@ -1101,4 +1101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cec2b1ace18b764651c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7766350804aa5547ad27.js.map
