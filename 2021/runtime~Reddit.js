@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.cc1811ba0ddcd1e6f8eb.js
-// Retrieved at 7/21/2021, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.036a84765f62fff71a58.js
+// Retrieved at 7/21/2021, 2:50:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) n = i[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -758,8 +758,8 @@
 					CrisisFlow: "70ed8d7c6f38eff4f913",
 					EmailInvitePaintedDoor: "e2e558b698b54df826be",
 					GifTooltip: "737dfc7d5f53f9f7fbc4",
-					PowerupsEmotesTooltip: "2fff64b102154ff25724",
-					SpecialMembershipsEmotesTooltip: "f03c52f069e1bc9724ac",
+					PowerupsEmotesTooltip: "e66cb8edf6b61645fab1",
+					SpecialMembershipsEmotesTooltip: "7d6e352aea700486ce48",
 					SubredditPremiumBlockchainCheckoutModal: "fc4ce69ed1f6282cc84f",
 					"reddit-components-Governance-TransactionModals-SubscriptionModal": "1fe3f63ce452a851c0fb",
 					ChatEmpty: "51bb1b1da3aa6e2c9062",
@@ -1256,7 +1256,7 @@
 						"translations/es_MX-json": "713a6d38bba7aa9d001f",
 						"translations/fr_FR-json": "a8ba1297e95136dbd954",
 						"translations/it_IT-json": "9c82bea0ad12fed6ab6f",
-						"translations/pseudo_ext-json": "22804994fbe7dd82f25b",
+						"translations/pseudo_ext-json": "ed6b87f1177a35cb59ca",
 						"translations/pseudo_long-json": "6c0cee29b35a38f25709",
 						"translations/pseudo_short-json": "1eb83c04fd330a3ae104",
 						"translations/pt_BR-json": "7c13106b1ecc4428b149",
@@ -1357,8 +1357,8 @@
 						CrisisFlow: "7f1cf881babaf9f5a5e5",
 						EmailInvitePaintedDoor: "b27a55884f564d5f65cf",
 						GifTooltip: "84379fb8870d1eb6c4aa",
-						PowerupsEmotesTooltip: "c743cf84db58e61f9d96",
-						SpecialMembershipsEmotesTooltip: "af2ac56400c0942dea11",
+						PowerupsEmotesTooltip: "f64cb9a9a935e8342e2b",
+						SpecialMembershipsEmotesTooltip: "db982cdbbcf4154c141a",
 						SubredditPremiumBlockchainCheckoutModal: "cedbf0236f1f7d732554",
 						"reddit-components-Governance-TransactionModals-SubscriptionModal": "dbe53e7e3f6948252a3d",
 						ChatEmpty: "e288e91c6334c8b3e705",
@@ -1500,4 +1500,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.cc1811ba0ddcd1e6f8eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.036a84765f62fff71a58.js.map
