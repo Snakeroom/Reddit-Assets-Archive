@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.a338d909067f4824e795.js
-// Retrieved at 7/21/2021, 12:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.edbb507b614f402ec5a4.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -1068,7 +1068,7 @@
 						o = Object(j.j)(r);
 					if (!o || !Object(f.f)(r, {
 							subredditId: e
-						}) || !Object(a.g)(r)) return;
+						}) || !Object(a.f)(r)) return;
 					const c = !!Object(O.b)(r, {
 						subredditId: e,
 						userId: o.id
@@ -1082,7 +1082,7 @@
 					const r = s();
 					if (!Object(f.f)(r, {
 							subredditId: e
-						}) || !t || !Object(a.g)(r)) return;
+						}) || !t || !Object(a.f)(r)) return;
 					const o = new Set;
 					Object.values(t).forEach(e => {
 						o.add(e.authorId)
@@ -1976,7 +1976,7 @@
 								experimentName: o.B,
 								expEventOverride: t
 							});
-							return !!(Object(o.Yd)(n) ? void 0 : n)
+							return !!(Object(o.Xd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -3156,14 +3156,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Vc
-					}) === s.fd.Enabled
+						experimentName: s.Uc
+					}) === s.ed.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Uc
-					}) === s.ed.Enabled
+						experimentName: s.Tc
+					}) === s.dd.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -3249,4 +3249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.a338d909067f4824e795.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.edbb507b614f402ec5a4.js.map

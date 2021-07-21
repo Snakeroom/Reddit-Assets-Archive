@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.7a442e2c55bf38d54a15.js
-// Retrieved at 7/20/2021, 6:00:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.dec7b0af9eb5e9b47a31.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
@@ -2125,7 +2125,7 @@
 				url: O,
 				isHovercard: y
 			}) => {
-				const k = Object(n.e)(e => !v && !!E && Object(d.e)(e));
+				const k = Object(n.e)(e => !v && !!E && Object(d.d)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(w.a, {
 					bannerBackgroundImage: e,
 					editMode: !!r,
@@ -2631,4 +2631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.7a442e2c55bf38d54a15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.dec7b0af9eb5e9b47a31.js.map

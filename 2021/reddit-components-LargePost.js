@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2054ebfaa0d684ea1a51.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1005c0839ab655956764.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -931,13 +931,13 @@
 				end: "start"
 			};
 
-			function Z(e) {
+			function J(e) {
 				return e.replace(/start|end/g, (function(e) {
 					return Y[e]
 				}))
 			}
 
-			function J(e, t) {
+			function Z(e, t) {
 				var n = Boolean(t.getRootNode && t.getRootNode().host);
 				if (e.contains(t)) return !0;
 				if (n) {
@@ -999,7 +999,7 @@
 						var t = v(e),
 							n = ["absolute", "fixed"].indexOf(p(e).position) >= 0 && c(e) ? y(e) : e;
 						return a(n) ? t.filter((function(e) {
-							return a(e) && J(e, n)
+							return a(e) && Z(e, n)
 						})) : []
 					}(e) : [].concat(t),
 					r = [].concat(o, [n]),
@@ -1257,7 +1257,7 @@
 								for (var r = n.mainAxis, s = void 0 === r || r, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, v = V(h), x = c || (v === h || !f ? [K(h)] : function(e) {
 										if (V(e) === P) return [];
 										var t = K(e);
-										return [Z(e), t, Z(t)]
+										return [J(e), t, J(t)]
 									}(h)), g = [h].concat(x).reduce((function(e, n) {
 										return e.concat(V(n) === P ? function(e, t) {
 											void 0 === t && (t = {});
@@ -1401,10 +1401,10 @@
 											left: 0
 										},
 										Y = K[A],
-										Z = K[B],
-										J = re(0, S[L], X[L]),
-										Q = P ? S[L] / 2 - W - J - Y - I : z - J - Y - I,
-										$ = P ? -S[L] / 2 + W + J + Z + I : q + J + Z + I,
+										J = K[B],
+										Z = re(0, S[L], X[L]),
+										Q = P ? S[L] / 2 - W - Z - Y - I : z - Z - Y - I,
+										$ = P ? -S[L] / 2 + W + Z + J + I : q + Z + J + I,
 										ee = t.elements.arrow && y(t.elements.arrow),
 										te = ee ? "y" === E ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][E] : 0,
@@ -1462,7 +1462,7 @@
 								s = void 0 === r ? "[data-popper-arrow]" : r,
 								i = n.padding,
 								a = void 0 === i ? 0 : i;
-							null != s && ("string" != typeof s || (s = t.elements.popper.querySelector(s))) && J(t.elements.popper, s) && (t.elements.arrow = s, t.modifiersData[o + "#persistent"] = {
+							null != s && ("string" != typeof s || (s = t.elements.popper.querySelector(s))) && Z(t.elements.popper, s) && (t.elements.arrow = s, t.modifiersData[o + "#persistent"] = {
 								padding: te("number" != typeof a ? a : ne(a, E))
 							})
 						},
@@ -2274,16 +2274,16 @@
 				K = n("./src/reddit/components/PostPinnedHeader/index.m.less"),
 				Y = n.n(K);
 			const {
-				fbt: Z
+				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var J = () => r.a.createElement("div", {
+			var Z = () => r.a.createElement("div", {
 					className: Y.a.container
 				}, r.a.createElement(X.a, {
 					className: Y.a.pinnedIcon,
 					isFilled: !0
 				}), r.a.createElement("span", {
 					className: Y.a.metaText
-				}, Z._("pinned by moderators", null, {
+				}, J._("pinned by moderators", null, {
 					hk: "1qU8t4"
 				}))),
 				Q = n("./src/reddit/components/PostRailAndVotes/index.tsx"),
@@ -2347,7 +2347,7 @@
 					showAwardsPlaque: k.a,
 					isTournamentPost: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(j.o)(e)
+					}) => Boolean(t.predictionTournament) && Object(j.n)(e)
 				}), (e, {
 					listingKey: t,
 					listingName: n,
@@ -2389,7 +2389,7 @@
 						isGalleryTileLayoutDefault: X,
 						isLoggedIn: K,
 						isOverlay: Y,
-						isPostChainDismissed: Z,
+						isPostChainDismissed: J,
 						isPostChained: ne,
 						isTopicPage: oe,
 						isTournamentPost: re,
@@ -2416,7 +2416,7 @@
 						postIds: Ne,
 						onceInViewport: Ie,
 						showPromotedCTA: Me
-					} = e, Ae = !!e.redditStyle || !!e["data-redditstyle"], Be = Ae ? void 0 : f, Le = Object(l.a)(me), Fe = fe && Le, Re = Object(c.a)(me), De = Object(d.a)(me), We = Object(V.c)(Oe), Ve = !!Oe.media && Oe.media.type === g.o.RTJSON, He = Te && Ve, Ue = n ? n - z.a : void 0, ze = !(C && K || oe), qe = (e => e === ae.Zc.OnlyTitles)(we) && !Object(se.a)(Oe), Ge = (e => e === ae.Zc.MediumHeight)(we) && !Object(se.a)(Oe), Xe = (e => {
+					} = e, Ae = !!e.redditStyle || !!e["data-redditstyle"], Be = Ae ? void 0 : f, Le = Object(l.a)(me), Fe = fe && Le, Re = Object(c.a)(me), De = Object(d.a)(me), We = Object(V.c)(Oe), Ve = !!Oe.media && Oe.media.type === g.o.RTJSON, He = Te && Ve, Ue = n ? n - z.a : void 0, ze = !(C && K || oe), qe = (e => e === ae.Yc.OnlyTitles)(we) && !Object(se.a)(Oe), Ge = (e => e === ae.Yc.MediumHeight)(we) && !Object(se.a)(Oe), Xe = (e => {
 						const {
 							post: t,
 							postIds: n,
@@ -2431,9 +2431,9 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), Ke = !!(null == j ? void 0 : j.shouldShowLinkedPosts), Ye = (!P || Ke || Pe) && !Oe.isSponsored, Ze = Object(T.t)(Oe, k), {
-						source: Je
-					} = Ze, Qe = Object(o.useRef)(null), $e = Object(o.useCallback)(e => {
+					})(e), Ke = !!(null == j ? void 0 : j.shouldShowLinkedPosts), Ye = (!P || Ke || Pe) && !Oe.isSponsored, Je = Object(T.t)(Oe, k), {
+						source: Ze
+					} = Je, Qe = Object(o.useRef)(null), $e = Object(o.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
@@ -2479,7 +2479,7 @@
 						redditStyle: Ae
 					}, r.a.createElement(F.a, {
 						post: Oe
-					}), Xe && Xe.showPinnnedHeader && r.a.createElement(J, null), re && Object(i.b)(Oe) && r.a.createElement(r.a.Fragment, null, r.a.createElement(h.a, {
+					}), Xe && Xe.showPinnnedHeader && r.a.createElement(Z, null), re && Object(i.b)(Oe) && r.a.createElement(r.a.Fragment, null, r.a.createElement(h.a, {
 						post: Oe
 					}), r.a.createElement(b.a, {
 						post: Oe
@@ -2527,11 +2527,11 @@
 						scrollerItemRef: je,
 						autoplayPref: t,
 						shouldShowGalleryTileOption: ke
-					})), Me && Je && Je.url && r.a.createElement(N.a, {
+					})), Me && Ze && Ze.url && r.a.createElement(N.a, {
 						className: ye.a.adLinkWrapper
 					}, r.a.createElement(I.a, {
 						post: Oe,
-						adLinkContent: Ze
+						adLinkContent: Je
 					})), fe && Le && We && r.a.createElement(W.a, {
 						onIgnoreReports: xe,
 						reportable: Oe
@@ -2576,7 +2576,7 @@
 						postIds: null != Ne ? Ne : [],
 						subredditId: null == Ce ? void 0 : Ce.id
 					}));
-					return r.a.createElement(v.b, null, et, ne && !Z && r.a.createElement(L.a, {
+					return r.a.createElement(v.b, null, et, ne && !J && r.a.createElement(L.a, {
 						className: ye.a.chain,
 						listingKey: ue,
 						listingName: pe,
@@ -3578,7 +3578,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.Fb
 				});
-				return !(!t || Object(o.Yd)(t))
+				return !(!t || Object(o.Xd)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
@@ -3594,7 +3594,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Yd)(t)
+					return Boolean(t) && !Object(r.Xd)(t)
 				},
 				c = Object(o.a)(a, s.d, (e, t) => e && !t)
 		},
@@ -3608,10 +3608,10 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = Object(o.a)(e => Object(s.c)(e, {
-				experimentName: r.Wc,
+				experimentName: r.Vc,
 				experimentEligibilitySelector: s.a
-			}), i.F, (e, t) => e === r.gd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.F, (e, t) => e === r.fd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2054ebfaa0d684ea1a51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.1005c0839ab655956764.js.map

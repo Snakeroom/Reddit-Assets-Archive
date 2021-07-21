@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.66448ef4ccea50ae383e.js
-// Retrieved at 7/20/2021, 4:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ba59a2db050fb5e29694.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2402,7 +2402,7 @@
 					}
 				}),
 				v = e => {
-					const t = Object(i.e)(e => Object(f.h)(e));
+					const t = Object(i.e)(e => Object(f.g)(e));
 					return r.a.createElement(a.a, {
 						className: e.className
 					}, r.a.createElement(x, {
@@ -3145,4 +3145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.66448ef4ccea50ae383e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ba59a2db050fb5e29694.js.map

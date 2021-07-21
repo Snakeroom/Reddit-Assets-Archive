@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.ad4d92daae8db778820e.js
-// Retrieved at 7/20/2021, 6:00:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.4abdfa2673e1c5814db4.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5602,7 +5602,7 @@
 				url: O,
 				isHovercard: S
 			}) => {
-				const I = Object(a.e)(e => !h && !!_ && Object(l.e)(e));
+				const I = Object(a.e)(e => !h && !!_ && Object(l.d)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(C.a, {
 					bannerBackgroundImage: e,
 					editMode: !!r,
@@ -11018,9 +11018,9 @@
 					language: L.T,
 					shouldShowCreatePasswordModal: M.d,
 					shouldShowGenderCollection: e => Object(A.c)(e, {
-						experimentName: N.vd,
+						experimentName: N.ud,
 						experimentEligibilitySelector: T.e
-					}) === N.Ed.Enabled,
+					}) === N.Dd.Enabled,
 					showLanguageSection: I.d.langSelect,
 					availableLocales: Be,
 					locale: Fe.i,
@@ -14284,4 +14284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ad4d92daae8db778820e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4abdfa2673e1c5814db4.js.map

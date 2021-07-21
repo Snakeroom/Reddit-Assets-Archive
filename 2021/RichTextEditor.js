@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.6e46b31d9c95c619062e.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.1f0fdfdb07edb853a71f.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2087,11 +2087,7 @@
 						}
 					}, !v && k && r.a.createElement(oe, null, r.a.createElement(ne, null, n.fbt._("Comment as {authorLink}", [n.fbt._param("authorLink", r.a.createElement(l.a, {
 						author: T,
-						isAdmin: !1,
-						isAdminEmeritus: !1,
-						isAuthorDeleted: !1,
-						isMod: !1,
-						isOp: !1
+						isAuthorDeleted: !1
 					}, T))], {
 						hk: "4pMWAk"
 					}))), r.a.createElement(x.a, {
@@ -2770,11 +2766,7 @@
 						}
 					}, !u && f && a.a.createElement(Te, null, a.a.createElement(Ie, null, E.fbt._("Comment as {authorLink}", [E.fbt._param("authorLink", a.a.createElement(T.a, {
 						author: g,
-						isAdmin: !1,
-						isAdminEmeritus: !1,
-						isAuthorDeleted: !1,
-						isMod: !1,
-						isOp: !1
+						isAuthorDeleted: !1
 					}, g))], {
 						hk: "4pMWAk"
 					}))), a.a.createElement(de.a, {
@@ -4410,4 +4402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6e46b31d9c95c619062e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.1f0fdfdb07edb853a71f.js.map

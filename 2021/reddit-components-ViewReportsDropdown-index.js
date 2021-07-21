@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cfedc3281fb48a1d5828.js
-// Retrieved at 7/19/2021, 5:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cec2b1ace18b764651c0.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -23,7 +23,7 @@
 			})), s.d(t, "f", (function() {
 				return K
 			})), s.d(t, "o", (function() {
-				return M
+				return V
 			})), s.d(t, "p", (function() {
 				return Q
 			})), s.d(t, "d", (function() {
@@ -169,7 +169,7 @@
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), $ = Object(d.a)(k.j), K = Object(d.a)(k.i), V = Object(d.a)(k.e), H = Object(d.a)(k.f), M = (Object(d.a)(k.c), Object(d.a)(k.d), ({
+				}, z = Object(b.a)(O.b, g.a.upvoted), F = Object(b.a)(O.b, g.a.downvoted), $ = Object(d.a)(k.j), K = Object(d.a)(k.i), H = Object(d.a)(k.e), M = Object(d.a)(k.f), V = (Object(d.a)(k.c), Object(d.a)(k.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -185,7 +185,7 @@
 							commentsPageKey: t
 						}),
 						a = c.depth;
-					n(V({
+					n(H({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -194,7 +194,7 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
-					s(H({
+					s(M({
 						commentId: e,
 						commentsPageKey: t
 					}))
@@ -210,7 +210,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o(V({
+					o(H({
 						commentId: c,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -476,7 +476,7 @@
 						r = Object(j.j)(o);
 					if (!r || !Object(f.f)(o, {
 							subredditId: e
-						}) || !Object(a.g)(o)) return;
+						}) || !Object(a.f)(o)) return;
 					const d = !!Object(O.b)(o, {
 						subredditId: e,
 						userId: r.id
@@ -490,7 +490,7 @@
 					const o = n();
 					if (!Object(f.f)(o, {
 							subredditId: e
-						}) || !t || !Object(a.g)(o)) return;
+						}) || !t || !Object(a.f)(o)) return;
 					const r = new Set;
 					Object.values(t).forEach(e => {
 						r.add(e.authorId)
@@ -1059,14 +1059,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Vc
-					}) === n.fd.Enabled
+						experimentName: n.Uc
+					}) === n.ed.Enabled
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Uc
-					}) === n.ed.Enabled
+						experimentName: n.Tc
+					}) === n.dd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1101,4 +1101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cfedc3281fb48a1d5828.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.cec2b1ace18b764651c0.js.map

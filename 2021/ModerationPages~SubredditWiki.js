@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2a283f6f887e230ce45f.js
-// Retrieved at 7/20/2021, 6:00:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.5a5d7953f5c040a96b4c.js
+// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -2817,7 +2817,7 @@
 			}) => a.a.createElement(m.q, {
 				className: e,
 				disabled: p || l,
-				onClick: () => r === u.Fd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => r === u.Ed.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: m.b.Secondary,
@@ -4094,7 +4094,7 @@
 				url: j,
 				isHovercard: N
 			}) => {
-				const C = Object(a.e)(e => !f && !!k && Object(c.e)(e));
+				const C = Object(a.e)(e => !f && !!k && Object(c.d)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(w.a, {
 					bannerBackgroundImage: e,
 					editMode: !!n,
@@ -4704,4 +4704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.2a283f6f887e230ce45f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.5a5d7953f5c040a96b4c.js.map
