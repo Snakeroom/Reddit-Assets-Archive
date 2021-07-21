@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.ea6b4cf8e3ee58f8ee46.js
-// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.6b6eea4eb4a35f10c8ad.js
+// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -129,8 +129,8 @@
 					} = function(e, t, n) {
 						const o = Object(u.d)(),
 							s = Object(u.e)(p.d),
-							r = Object(u.e)(L.k),
-							d = Object(u.e)(L.j),
+							r = Object(u.e)(L.l),
+							d = Object(u.e)(L.k),
 							c = Object(T.a)(),
 							a = Object(S.b)(),
 							l = Object(S.a)(),
@@ -304,4 +304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ea6b4cf8e3ee58f8ee46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.6b6eea4eb4a35f10c8ad.js.map
