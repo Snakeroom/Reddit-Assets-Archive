@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.edbb507b614f402ec5a4.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.4ba3eccecda10e51a325.js
+// Retrieved at 7/21/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -2371,39 +2371,39 @@
 					}
 				},
 				subredditUserAchievements: (e = i, t) => {
-					var n, s;
+					var n, s, r;
 					switch (t.type) {
 						case d.d: {
 							const {
-								id: r,
-								userAchievementFlairsByRedditorIds: o
+								id: o,
+								userAchievementFlairsByRedditorIds: c
 							} = t.payload;
-							let c = e[r] || {};
+							let d = e[o] || {};
 							for (const {
 									redditorId: e,
 									userAchievementFlairs: t
-								} of o) {
-								const r = t.map(({
+								} of c) {
+								const o = t.map(({
 										type: e
 									}) => e),
-									o = null === (n = t.find(({
+									c = (null === (n = t.find(({
 										isPreferred: e
-									}) => e)) || void 0 === n ? void 0 : n.type,
-									d = null === (s = t.find(({
+									}) => e)) || void 0 === n ? void 0 : n.type) || (null === (s = t[0]) || void 0 === s ? void 0 : s.type),
+									i = null === (r = t.find(({
 										type: e
-									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === s ? void 0 : s.type;
-								c = {
-									...c,
+									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === r ? void 0 : r.type;
+								d = {
+									...d,
 									[e]: {
-										achievementTypes: r,
-										preferredType: o,
-										supporterType: d
+										achievementTypes: o,
+										preferredType: c,
+										supporterType: i
 									}
 								}
 							}
 							return {
 								...e,
-								[r]: c
+								[o]: d
 							}
 						}
 						case d.f: {
@@ -3249,4 +3249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.edbb507b614f402ec5a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.4ba3eccecda10e51a325.js.map

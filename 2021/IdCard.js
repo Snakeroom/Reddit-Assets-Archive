@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.66360226b86d69365ac4.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.a54a67fb2e1eae7fabb1.js
+// Retrieved at 7/21/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5191,39 +5191,39 @@
 					}
 				},
 				subredditUserAchievements: (e = d, t) => {
-					var n, s;
+					var n, s, r;
 					switch (t.type) {
 						case a.d: {
 							const {
-								id: r,
-								userAchievementFlairsByRedditorIds: i
+								id: i,
+								userAchievementFlairsByRedditorIds: o
 							} = t.payload;
-							let o = e[r] || {};
+							let a = e[i] || {};
 							for (const {
 									redditorId: e,
 									userAchievementFlairs: t
-								} of i) {
-								const r = t.map(({
+								} of o) {
+								const i = t.map(({
 										type: e
 									}) => e),
-									i = null === (n = t.find(({
+									o = (null === (n = t.find(({
 										isPreferred: e
-									}) => e)) || void 0 === n ? void 0 : n.type,
-									a = null === (s = t.find(({
+									}) => e)) || void 0 === n ? void 0 : n.type) || (null === (s = t[0]) || void 0 === s ? void 0 : s.type),
+									d = null === (r = t.find(({
 										type: e
-									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === s ? void 0 : s.type;
-								o = {
-									...o,
+									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === r ? void 0 : r.type;
+								a = {
+									...a,
 									[e]: {
-										achievementTypes: r,
-										preferredType: i,
-										supporterType: a
+										achievementTypes: i,
+										preferredType: o,
+										supporterType: d
 									}
 								}
 							}
 							return {
 								...e,
-								[r]: o
+								[i]: a
 							}
 						}
 						case a.f: {
@@ -6279,4 +6279,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.66360226b86d69365ac4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.a54a67fb2e1eae7fabb1.js.map

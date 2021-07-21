@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0ea2df5f1ad5ea54724d.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.396099944401310ab29f.js
+// Retrieved at 7/21/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -1695,39 +1695,39 @@
 					}
 				},
 				subredditUserAchievements: (e = c, t) => {
-					var r, s;
+					var r, s, n;
 					switch (t.type) {
 						case a.d: {
 							const {
-								id: n,
-								userAchievementFlairsByRedditorIds: o
+								id: o,
+								userAchievementFlairsByRedditorIds: i
 							} = t.payload;
-							let i = e[n] || {};
+							let a = e[o] || {};
 							for (const {
 									redditorId: e,
 									userAchievementFlairs: t
-								} of o) {
-								const n = t.map(({
+								} of i) {
+								const o = t.map(({
 										type: e
 									}) => e),
-									o = null === (r = t.find(({
+									i = (null === (r = t.find(({
 										isPreferred: e
-									}) => e)) || void 0 === r ? void 0 : r.type,
-									a = null === (s = t.find(({
+									}) => e)) || void 0 === r ? void 0 : r.type) || (null === (s = t[0]) || void 0 === s ? void 0 : s.type),
+									c = null === (n = t.find(({
 										type: e
-									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === s ? void 0 : s.type;
-								i = {
-									...i,
+									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === n ? void 0 : n.type;
+								a = {
+									...a,
 									[e]: {
-										achievementTypes: n,
-										preferredType: o,
-										supporterType: a
+										achievementTypes: o,
+										preferredType: i,
+										supporterType: c
 									}
 								}
 							}
 							return {
 								...e,
-								[n]: i
+								[o]: a
 							}
 						}
 						case a.f: {
@@ -2518,4 +2518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.0ea2df5f1ad5ea54724d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.396099944401310ab29f.js.map

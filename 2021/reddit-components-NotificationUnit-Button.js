@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.07898aeed39f79800d79.js
-// Retrieved at 7/21/2021, 12:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e8821ab95b71012fc00d.js
+// Retrieved at 7/21/2021, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -1849,39 +1849,39 @@
 					}
 				},
 				subredditUserAchievements: (e = i, t) => {
-					var n, r;
+					var n, r, o;
 					switch (t.type) {
 						case d.d: {
 							const {
-								id: o,
-								userAchievementFlairsByRedditorIds: s
+								id: s,
+								userAchievementFlairsByRedditorIds: c
 							} = t.payload;
-							let c = e[o] || {};
+							let d = e[s] || {};
 							for (const {
 									redditorId: e,
 									userAchievementFlairs: t
-								} of s) {
-								const o = t.map(({
+								} of c) {
+								const s = t.map(({
 										type: e
 									}) => e),
-									s = null === (n = t.find(({
+									c = (null === (n = t.find(({
 										isPreferred: e
-									}) => e)) || void 0 === n ? void 0 : n.type,
-									d = null === (r = t.find(({
+									}) => e)) || void 0 === n ? void 0 : n.type) || (null === (r = t[0]) || void 0 === r ? void 0 : r.type),
+									i = null === (o = t.find(({
 										type: e
-									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === r ? void 0 : r.type;
-								c = {
-									...c,
+									}) => e.startsWith("POWERUPS_SUPPORTER"))) || void 0 === o ? void 0 : o.type;
+								d = {
+									...d,
 									[e]: {
-										achievementTypes: o,
-										preferredType: s,
-										supporterType: d
+										achievementTypes: s,
+										preferredType: c,
+										supporterType: i
 									}
 								}
 							}
 							return {
 								...e,
-								[o]: c
+								[s]: d
 							}
 						}
 						case d.f: {
@@ -2727,4 +2727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.07898aeed39f79800d79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e8821ab95b71012fc00d.js.map
