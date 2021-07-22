@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.449655b95d0e8d8f2e7d.js
-// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.b06b02761f6972aa7d00.js
+// Retrieved at 7/22/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -346,6 +346,8 @@
 				faqQuestionMarkWithBolt: "_3xet1Sbc6baqNEbgRNs3il",
 				faqHeading: "_2rgbJ2uCJrqPWAl9PE5G-9",
 				faqs: "_2bP1iHgOFrtA_3AK9RRT36",
+				faqMoreQuestionsHeading: "ttDZSbQIXUGMeea-vo2hp",
+				fullFaqsButton: "_2XtfRS9mnRStbRWQaYUcCP",
 				faqTryOutHeading: "_3k8SqLlh0ukFnY9V8FwM3R",
 				faqTryOutSubheading: "_3PesDeGd65rVhZz2neXjlF",
 				ctaLetsDoThisButton: "_16zoFIrRalpDu0fjqJ65Xm",
@@ -824,7 +826,19 @@
 				defaultClosed: !0,
 				question: e(),
 				key: t
-			}, a()))), r.a.createElement("h2", {
+			}, a()))), r.a.createElement("h3", {
+				className: L.a.faqMoreQuestionsHeading
+			}, D._("Have more questions? We've got answers.", null, {
+				hk: "3Entyj"
+			})), r.a.createElement(u.q, {
+				className: L.a.fullFaqsButton,
+				priority: u.b.Secondary,
+				href: "https://mods.reddithelp.com/hc/en-us/articles/4403699823629",
+				kind: u.a.ExternalLink,
+				target: "_blank"
+			}, D._("View Full FAQs", null, {
+				hk: "1eOLlL"
+			})), r.a.createElement("h2", {
 				className: L.a.faqTryOutHeading
 			}, D._("Try out Powerups today", null, {
 				hk: "17RjMt"
@@ -839,7 +853,7 @@
 				className: L.a.ctaLetsDoThisButton
 			}, D._("Let's Do This!", null, {
 				hk: "6CnFH"
-			})), r.a.createElement(V, null))), Q = () => r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+			})), r.a.createElement(X, null))), Q = () => r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 				className: Object(o.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkWithBolt)
 			}), r.a.createElement("div", {
 				className: L.a.circleFaqYellowWithBolt
@@ -870,7 +884,7 @@
 				className: Object(o.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkLeft)
 			}), r.a.createElement("div", {
 				className: Object(o.a)(L.a.faqQuestionMark, L.a.faqQuestionMarkBottomRight)
-			})), V = () => r.a.createElement("div", {
+			})), X = () => r.a.createElement("div", {
 				className: L.a.ctaButtonCirlcesAndBolt
 			}, r.a.createElement("div", {
 				className: L.a.circleFaqCtaStriped,
@@ -886,8 +900,8 @@
 			})), r.a.createElement("div", {
 				className: L.a.circleFaqCtaCyanHollow
 			}));
-			var X = t("./src/reddit/pages/Powerups/index.m.less"),
-				J = t.n(X),
+			var V = t("./src/reddit/pages/Powerups/index.m.less"),
+				J = t.n(V),
 				Z = t("./src/reddit/pages/Powerups/PerksSection.m.less"),
 				K = t.n(Z);
 			const {
@@ -1150,4 +1164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.449655b95d0e8d8f2e7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.b06b02761f6972aa7d00.js.map
