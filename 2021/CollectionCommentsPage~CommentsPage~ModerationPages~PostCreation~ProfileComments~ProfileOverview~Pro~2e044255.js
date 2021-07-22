@@ -1,13 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.63180d22da8d18e9d55a.js
-// Retrieved at 7/22/2021, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7c8ccd8765f4557567d9.js
+// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
-		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, s) {
-			"use strict";
-			t.a = e => {
-				return new Date(1e3 * e).toUTCString().replace("GMT", "UTC")
-			}
-		},
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -2974,4 +2968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.63180d22da8d18e9d55a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7c8ccd8765f4557567d9.js.map

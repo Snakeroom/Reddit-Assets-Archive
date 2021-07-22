@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8652bae834b0a87c539b.js
-// Retrieved at 7/22/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9f174b3b760015e32ee0.js
+// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2416,11 +2416,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("140192"),
+				buildNumber: r("140202"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1626989190"),
+				})("1626990631"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4923,14 +4923,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c24ea53f22de23c6fede09e8f14bafb5b7f08df48-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7f79d2d9294a4911da23780c889ff748e2613d59-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "24ea53f22de23c6fede09e8f14bafb5b7f08df48-production",
+						release: "7f79d2d9294a4911da23780c889ff748e2613d59-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -5424,7 +5424,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "24ea53f22de23c6fede09e8f14bafb5b7f08df48-production",
+						releaseClient: "7f79d2d9294a4911da23780c889ff748e2613d59-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -6849,19 +6849,50 @@
 				};
 
 			function u(e, t = {}) {
-				const i = Date.now(),
-					l = Math.abs(i - 1e3 * e);
-				if (l < r.ib) return n.fbt._("just now", null, {
-					hk: "WMsPx"
-				}).toString();
-				let u = d;
-				t.noPostfix && t.shortenedUnit ? u = a : t.noPostfix ? u = o : t.shortenedUnit && (u = c);
-				for (const n of [r.O, r.z, r.nb, r.kc])
-					if (l < n) {
-						const e = Math.floor(l / s[n]);
-						return (0, u[s[n]])(e).toString()
-					} const _ = Math.floor(l / r.kc);
-				return u[r.kc](_).toString()
+				try {
+					return function(e, {
+						shortenedUnit: t,
+						noPostfix: i,
+						locale: s = r.B
+					} = {}) {
+						const o = Date.now(),
+							d = e * r.Nb - o,
+							a = Math.abs(d);
+						if (Math.abs(d) < r.ib) return n.fbt._("just now", null, {
+							hk: "WMsPx"
+						}).toString();
+						let c, l;
+						const u = t ? i ? "narrow" : "short" : "long";
+						if (Math.round(a / r.ib) < 60 ? (l = d / r.ib, c = "minute") : Math.round(a / r.O) < 24 ? (l = d / r.O, c = "hour") : Math.round(a / r.z) < 29 ? (l = d / r.z, c = "day") : Math.round(a / r.nb) < 12 ? (l = d / r.nb, c = "month") : (l = d / r.kc, c = "year"), l = Math.round(l), i) {
+							return new Intl.NumberFormat(s, {
+								style: "unit",
+								unit: c,
+								unitDisplay: u
+							}).format(Math.abs(l))
+						}
+						return new Intl.RelativeTimeFormat(s, {
+							localeMatcher: "best fit",
+							numeric: "always",
+							style: u
+						}).format(l, c)
+					}(e, t)
+				} catch (i) {
+					return function(e, t = {}) {
+						const i = Date.now(),
+							l = Math.abs(i - 1e3 * e);
+						if (l < r.ib) return n.fbt._("just now", null, {
+							hk: "WMsPx"
+						}).toString();
+						let u = d;
+						t.noPostfix && t.shortenedUnit ? u = a : t.noPostfix ? u = o : t.shortenedUnit && (u = c);
+						for (const n of [r.O, r.z, r.nb, r.kc])
+							if (l < n) {
+								const e = Math.floor(l / s[n]);
+								return (0, u[s[n]])(e).toString()
+							} const _ = Math.floor(l / r.kc);
+						return u[r.kc](_).toString()
+					}(e, t)
+				}
 			}
 
 			function _(e) {
@@ -47713,4 +47744,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8652bae834b0a87c539b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9f174b3b760015e32ee0.js.map

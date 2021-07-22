@@ -1,23 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.418294c0e54a0aaf6c38.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.98df5e89ae95aa0b097e.js
+// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
-		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
-			"use strict";
-
-			function n(e, t, r, n) {
-				const s = new Date(1e3 * e);
-				return new Intl.DateTimeFormat("default", {
-					month: n ? "short" : "long",
-					day: t ? "numeric" : void 0,
-					year: "numeric",
-					timeZone: r ? "UTC" : void 0
-				}).format(s)
-			}
-			r.d(t, "a", (function() {
-				return n
-			}))
-		},
 		"./src/lib/linkMatchers/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "f", (function() {
@@ -1474,10 +1458,10 @@
 				W = r("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				H = r("./src/reddit/selectors/subreddit.ts");
 			const {
-				fbt: z
+				fbt: G
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function G({
+			function z({
 				subredditId: e
 			}) {
 				const t = Object(i.d)(),
@@ -1508,11 +1492,11 @@
 					isActive: o,
 					onClick: () => a(Object(R.h)()),
 					to: `${l.url}predictions/`
-				}, z._("Predictions", null, {
+				}, G._("Predictions", null, {
 					hk: "Cv5GC"
 				}), p && s.a.createElement("span", {
 					className: x.a.liveIcon
-				}, z._("Live", null, {
+				}, G._("Live", null, {
 					hk: "1o89m4"
 				}))) : null
 			}
@@ -1626,7 +1610,7 @@
 				subredditId: e.subredditId
 			}), s.a.createElement(ce, {
 				subredditId: e.subredditId
-			}), s.a.createElement(G, {
+			}), s.a.createElement(z, {
 				subredditId: e.subredditId
 			})), e.widget && s.a.createElement(s.a.Fragment, null, e.widget.showWiki && s.a.createElement(de, {
 				homeUrl: e.homeUrl,
@@ -2114,8 +2098,8 @@
 				A = m.a.div("EventDate", L.a),
 				W = m.a.div("EventLocation", L.a),
 				H = m.a.div("EventDescription", L.a),
-				z = m.a.wrapped(P.a, "ToggleDescription", L.a);
-			class G extends s.a.Component {
+				G = m.a.wrapped(P.a, "ToggleDescription", L.a);
+			class z extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -2128,7 +2112,7 @@
 						props: e,
 						state: t
 					} = this;
-					return e.text.length > F ? s.a.createElement(H, null, t.isExpanded ? e.text : e.text.slice(0, F), s.a.createElement(z, {
+					return e.text.length > F ? s.a.createElement(H, null, t.isExpanded ? e.text : e.text.slice(0, F), s.a.createElement(G, {
 						onClick: this.toggleDescriptionView
 					}, t.isExpanded ? N.fbt._("read less", null, {
 						hk: "2KdNS6"
@@ -2146,14 +2130,16 @@
 					key: `${r}-${t.title}`
 				}, s.a.createElement(B, null, t.titleHtml ? s.a.createElement(D, {
 					html: t.titleHtml
-				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(A, null, Object(S.a)(t.startTime, !0), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
+				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(A, null, Object(S.a)(t.startTime, {
+					showDay: !0
+				}), !t.allDay && e.widget.configuration.showTime && s.a.createElement("span", null, " • ", (e => {
 					const t = new Date(1e3 * e),
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
 				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(D, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(G, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(z, {
 					text: t.description
 				})))),
 				U = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -3185,4 +3171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.418294c0e54a0aaf6c38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.98df5e89ae95aa0b097e.js.map
