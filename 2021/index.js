@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.d55e0c5411312ef29953.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.843b8abf1cce256262ae.js
+// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -139,63 +139,62 @@
 								endsAt: b,
 								options: P,
 								selectedOptionId: O
-							} = e,
-							{
-								id: x,
-								voteState: j
 							} = t,
-							[v, I] = i.a.useState(!1),
-							[h, _] = i.a.useState(null),
-							[D, A] = i.a.useState(!1),
-							N = b < Date.now();
+							{
+								voteState: x
+							} = n,
+							[j, v] = i.a.useState(!1),
+							[I, h] = i.a.useState(null),
+							[_, D] = i.a.useState(!1),
+							A = b < Date.now();
 						return {
-							isLoading: v,
-							isShowingVoteAnimation: D,
+							isLoading: j,
+							isShowingVoteAnimation: _,
 							selectedOption: P.find(({
 								id: e
-							}) => e === h),
+							}) => e === I),
 							selectOption: e => {
-								N || O || _(e.id)
+								A || O || h(e.id)
 							},
-							predict: async e => {
-								if (e.currency === C.a.Coins && e.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(E.a);
-								if (N) return l(B._("Error: Failed to make prediction. This prediction has already ended", null, {
+							predict: async t => {
+								if (t.currency === C.a.Coins && t.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(E.a);
+								if (A) return l(B._("Error: Failed to make prediction. This prediction has already ended", null, {
 									hk: "22UWEr"
-								})), void _(null);
-								if (!m || !h) throw new Error("Invalid arguments, optionId and pollId must be strings");
-								I(!0), c(Object(E.o)({
+								})), void h(null);
+								if (!m || !I) throw new Error("Invalid arguments, optionId and pollId must be strings");
+								v(!0), c(Object(E.o)({
 									pollId: m,
-									selectedNumberTokens: e.amount
+									selectedNumberTokens: t.amount
 								}));
 								try {
 									await o(Object(y.k)({
-										coinPackageId: e.id,
-										selectedOptionId: h,
-										price: e.amount,
+										coinPackageId: t.id,
+										selectedOptionId: I,
+										price: t.amount,
 										pollId: m,
-										postId: x,
-										subredditId: n
-									})), r && j < 1 && o(Object(w.fb)(m)), I(!1), _(null), d ? A(!0) : a({
+										tournamentId: e,
+										tournamentPostId: n.id
+									})), r && x < 1 && o(Object(w.fb)(m)), v(!1), h(null), d ? D(!0) : a({
 										duration: 5e3,
 										kind: f.b.SuccessCommunity,
 										text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(g.a)(new Date(b), !0))], {
 											hk: "3ZSdoo"
 										})
 									})
-								} catch (t) {
-									I(!1), _(null), l(B._("Error: Failed to make prediction, please try again later", null, {
+								} catch (i) {
+									v(!1), h(null), l(B._("Error: Failed to make prediction, please try again later", null, {
 										hk: "1tECsx"
 									}))
 								}
 							},
 							cancelAction: i.a.useCallback(() => {
-								_(null)
+								h(null)
 							}, []),
 							hideAnimation: i.a.useCallback(() => {
-								A(!1)
+								D(!1)
 							}, [])
 						}
-					}(e, s, n),
+					}(t, e, s),
 					{
 						options: V,
 						userSelection: F
@@ -304,4 +303,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.d55e0c5411312ef29953.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.843b8abf1cce256262ae.js.map

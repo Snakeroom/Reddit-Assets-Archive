@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.64ec74c1dc336c803bc2.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82b8009ffba62afb61ca.js
+// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -328,35 +328,29 @@
 					if (null === (a = l.errors) || void 0 === a ? void 0 : a.length) throw new Error(l.errors[0].message);
 					if (!(null == l ? void 0 : l.tournament)) throw new Error("Failed to create prediction");
 					return l.tournament
-				}, M = Object(o.a)(x.l), D = (e, t, r) => async (n, s, {
-					gqlContext: i
+				}, M = Object(o.a)(x.l), D = (e, t, r) => async (t, n, {
+					gqlContext: s
 				}) => {
-					const a = await Object(d.j)(i(), {
+					const i = await Object(d.j)(s(), {
 							tournamentId: e,
 							name: r
 						}),
 						{
-							updatePredictionTournament: o
-						} = a.body.data;
-					if (!o.tournament) throw new Error("Failed to update prediction name");
-					return n(M({
-						subredditId: t,
-						tournament: o.tournament
-					})), o.tournament
-				}, R = (e, t) => async (r, n, {
-					gqlContext: s
+							updatePredictionTournament: a
+						} = i.body.data;
+					if (!a.tournament) throw new Error("Failed to update prediction name");
+					return t(M(a.tournament)), a.tournament
+				}, R = e => async (t, r, {
+					gqlContext: n
 				}) => {
-					const i = await Object(d.d)(s(), {
+					const s = await Object(d.d)(n(), {
 							tournamentId: e
 						}),
 						{
-							endPredictionTournament: a
-						} = i.body.data;
-					if (!a.tournament) throw new Error("Failed to update prediction name");
-					return r(M({
-						subredditId: t,
-						tournament: a.tournament
-					})), a.tournament
+							endPredictionTournament: i
+						} = s.body.data;
+					if (!i.tournament) throw new Error("Failed to update prediction name");
+					return t(M(i.tournament)), i.tournament
 				}, B = e => async (t, r, {
 					gqlContext: n
 				}) => {
@@ -386,8 +380,8 @@
 					selectedOptionId: t,
 					price: r,
 					pollId: n,
-					postId: s,
-					subredditId: i
+					tournamentId: s,
+					tournamentPostId: i
 				}) => async a => {
 					const o = await a(E({
 						coinPackageId: e,
@@ -396,10 +390,10 @@
 						price: r
 					}));
 					return a(_({
-						postId: s,
 						predictionId: n,
 						selectedOptionId: t,
-						subredditId: i
+						tournamentId: s,
+						tournamentPostId: i
 					})), o
 				}, H = e => Object(l.h)(u.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
 					postId: e
@@ -1497,10 +1491,10 @@
 					u = Object(i.e)(t => Object(H.M)(t, {
 						subredditId: e
 					})),
-					m = Object(i.e)(t => Object(W.c)(t, {
+					m = Object(i.e)(t => Object(W.d)(t, {
 						subredditId: e
 					})),
-					p = Object(i.e)(t => Object(W.b)(t, {
+					p = Object(i.e)(t => Object(W.c)(t, {
 						subredditId: e
 					}));
 				return Object(n.useEffect)(() => {
@@ -3191,4 +3185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.64ec74c1dc336c803bc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.82b8009ffba62afb61ca.js.map

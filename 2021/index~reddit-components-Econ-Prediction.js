@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ba9284582047f0032123.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5bce5e34fffa88c60cc7.js
+// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -893,35 +893,29 @@
 					if (null === (a = l.errors) || void 0 === a ? void 0 : a.length) throw new Error(l.errors[0].message);
 					if (!(null == l ? void 0 : l.tournament)) throw new Error("Failed to create prediction");
 					return l.tournament
-				}, B = Object(c.a)(E.l), D = (e, t, n) => async (o, r, {
-					gqlContext: s
+				}, B = Object(c.a)(E.l), D = (e, t, n) => async (t, o, {
+					gqlContext: r
 				}) => {
-					const a = await Object(d.j)(s(), {
+					const s = await Object(d.j)(r(), {
 							tournamentId: e,
 							name: n
 						}),
 						{
-							updatePredictionTournament: c
-						} = a.body.data;
-					if (!c.tournament) throw new Error("Failed to update prediction name");
-					return o(B({
-						subredditId: t,
-						tournament: c.tournament
-					})), c.tournament
-				}, G = (e, t) => async (n, o, {
-					gqlContext: r
+							updatePredictionTournament: a
+						} = s.body.data;
+					if (!a.tournament) throw new Error("Failed to update prediction name");
+					return t(B(a.tournament)), a.tournament
+				}, G = e => async (t, n, {
+					gqlContext: o
 				}) => {
-					const s = await Object(d.d)(r(), {
+					const r = await Object(d.d)(o(), {
 							tournamentId: e
 						}),
 						{
-							endPredictionTournament: a
-						} = s.body.data;
-					if (!a.tournament) throw new Error("Failed to update prediction name");
-					return n(B({
-						subredditId: t,
-						tournament: a.tournament
-					})), a.tournament
+							endPredictionTournament: s
+						} = r.body.data;
+					if (!s.tournament) throw new Error("Failed to update prediction name");
+					return t(B(s.tournament)), s.tournament
 				}, M = e => async (t, n, {
 					gqlContext: o
 				}) => {
@@ -951,8 +945,8 @@
 					selectedOptionId: t,
 					price: n,
 					pollId: o,
-					postId: r,
-					subredditId: s
+					tournamentId: r,
+					tournamentPostId: s
 				}) => async a => {
 					const c = await a(k({
 						coinPackageId: e,
@@ -961,10 +955,10 @@
 						price: n
 					}));
 					return a(g({
-						postId: r,
 						predictionId: o,
 						selectedOptionId: t,
-						subredditId: s
+						tournamentId: r,
+						tournamentPostId: s
 					})), c
 				}, H = e => Object(l.h)(u.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
 					postId: e
@@ -1626,7 +1620,7 @@
 			}) {
 				const c = Object(V.b)(),
 					d = Object(s.d)(),
-					u = Object(s.e)(e => Object(M.d)(e, {
+					u = Object(s.e)(e => Object(M.e)(e, {
 						subredditId: a
 					})),
 					m = Object(s.e)(e => Object(q.S)(e, {
@@ -1712,24 +1706,21 @@
 				tournamentId: O,
 				userCoins: j
 			}) => {
-				const g = function(e, t, n, o) {
-						const [a, c] = r.a.useState([]), d = Object(G.a)(), i = Object(s.d)(), l = Object(s.e)(n => t ? Object(M.e)(n, {
-							subredditId: e,
-							tournamentId: t
-						}) : null), u = r.a.useCallback(async () => {
+				const g = function(e, t, n) {
+						const [o, a] = r.a.useState([]), c = Object(G.a)(), d = Object(s.d)(), i = Object(s.e)(t => e ? Object(M.a)(t, e) : null), l = r.a.useCallback(async () => {
 							try {
-								const e = await i(Object(D.d)(n));
-								c(e)
+								const e = await d(Object(D.d)(t));
+								a(e)
 							} catch (e) {
-								d(R._("Error: Failed to get chip packs for post", null, {
+								c(R._("Error: Failed to get chip packs for post", null, {
 									hk: "1wR7Zy"
-								})), o()
+								})), n()
 							}
-						}, [n, i, d, o]);
+						}, [t, d, c, n]);
 						return r.a.useEffect(() => {
-							(null == l ? void 0 : l.predictionChipPackages) ? c(l.predictionChipPackages): u()
-						}, [l, u]), a
-					}(E, O, h, n),
+							(null == i ? void 0 : i.predictionChipPackages) ? a(i.predictionChipPackages): l()
+						}, [i, l]), o
+					}(O, h, n),
 					{
 						tokensBalance: v,
 						setTokensBalance: I,
@@ -3420,4 +3411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ba9284582047f0032123.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.5bce5e34fffa88c60cc7.js.map

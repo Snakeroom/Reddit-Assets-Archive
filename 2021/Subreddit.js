@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.319206c8283e510c412b.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c8c31de613698b434c08.js
+// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3135,7 +3135,7 @@
 				const v = Object(p.a)(),
 					E = Object(m.a)(),
 					_ = Object(c.w)(E),
-					C = Object(o.e)(e => Object(b.d)(e, {
+					C = Object(o.e)(e => Object(b.e)(e, {
 						subredditId: n
 					}));
 				Object(s.useEffect)(() => {
@@ -3485,7 +3485,7 @@
 				const p = Object(o.e)(m.V),
 					h = Object(o.e)(m.j),
 					f = Object(o.e)(m.B),
-					x = Object(o.e)(e => Object(u.a)(e, {
+					x = Object(o.e)(e => Object(u.b)(e, {
 						subredditId: n
 					}));
 				return (null === (s = null == x ? void 0 : x.latestParticipants) || void 0 === s ? void 0 : s.length) ? r.a.createElement("div", {
@@ -3558,7 +3558,7 @@
 			function g({
 				subredditId: e
 			}) {
-				const t = Object(o.e)(t => Object(p.d)(t, {
+				const t = Object(o.e)(t => Object(p.e)(t, {
 						subredditId: e
 					})),
 					n = Object(o.e)(t => Object(b.S)(t, {
@@ -3614,7 +3614,7 @@
 			function v({
 				subredditId: e
 			}) {
-				const t = Object(o.e)(t => Object(p.d)(t, {
+				const t = Object(o.e)(t => Object(p.e)(t, {
 					subredditId: e
 				}));
 				return t ? r.a.createElement(y.default, {
@@ -15236,4 +15236,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.319206c8283e510c412b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c8c31de613698b434c08.js.map

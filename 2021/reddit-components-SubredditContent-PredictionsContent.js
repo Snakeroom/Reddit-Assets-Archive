@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.403b92ae1668cb8034c7.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.c257d00cce7df70569f5.js
+// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -38,11 +38,11 @@
 		"./src/reddit/actions/economics/predictions/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "f", (function() {
-				return g
+				return I
 			})), n.d(t, "j", (function() {
 				return _
 			})), n.d(t, "i", (function() {
-				return y
+				return P
 			})), n.d(t, "g", (function() {
 				return w
 			})), n.d(t, "b", (function() {
@@ -92,8 +92,8 @@
 			const x = Object(c.a)(h.d),
 				v = Object(c.a)(h.h),
 				k = Object(c.a)(h.k),
-				I = Object(c.a)(h.g),
-				g = (e, t, n, o) => async (r, i, {
+				g = Object(c.a)(h.g),
+				I = (e, t, n, o) => async (r, i, {
 					gqlContext: d
 				}) => {
 					const c = Object(f.J)(i()),
@@ -140,7 +140,7 @@
 						prediction: s.poll,
 						price: o
 					})), s.poll
-				}, y = ({
+				}, P = ({
 					optionId: e,
 					postId: t
 				}) => async (n, o, {
@@ -154,11 +154,11 @@
 							resolvePrediction: d
 						} = i.body.data;
 					if (!(null == d ? void 0 : d.poll)) throw new Error("Failed to resolve prediction");
-					return n(I({
+					return n(g({
 						pollId: t,
 						prediction: d.poll
 					})), d.poll
-				}, P = Object(c.a)(h.b), E = Object(c.a)(h.c), C = Object(c.a)(h.f), w = e => async (t, n, {
+				}, y = Object(c.a)(h.b), E = Object(c.a)(h.c), C = Object(c.a)(h.f), w = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -168,7 +168,7 @@
 						})) return Object(O.f)(r, {
 						subredditId: i
 					});
-					t(P({
+					t(y({
 						subredditId: i
 					}));
 					const d = await Object(a.h)(o(), {
@@ -253,35 +253,29 @@
 					if (null === (d = u.errors) || void 0 === d ? void 0 : d.length) throw new Error(u.errors[0].message);
 					if (!(null == u ? void 0 : u.tournament)) throw new Error("Failed to create prediction");
 					return u.tournament
-				}, A = Object(c.a)(h.l), F = (e, t, n) => async (o, r, {
-					gqlContext: i
+				}, A = Object(c.a)(h.l), F = (e, t, n) => async (t, o, {
+					gqlContext: r
 				}) => {
-					const d = await Object(a.j)(i(), {
+					const i = await Object(a.j)(r(), {
 							tournamentId: e,
 							name: n
 						}),
 						{
-							updatePredictionTournament: c
-						} = d.body.data;
-					if (!c.tournament) throw new Error("Failed to update prediction name");
-					return o(A({
-						subredditId: t,
-						tournament: c.tournament
-					})), c.tournament
-				}, D = (e, t) => async (n, o, {
-					gqlContext: r
+							updatePredictionTournament: d
+						} = i.body.data;
+					if (!d.tournament) throw new Error("Failed to update prediction name");
+					return t(A(d.tournament)), d.tournament
+				}, D = e => async (t, n, {
+					gqlContext: o
 				}) => {
-					const i = await Object(a.d)(r(), {
+					const r = await Object(a.d)(o(), {
 							tournamentId: e
 						}),
 						{
-							endPredictionTournament: d
-						} = i.body.data;
-					if (!d.tournament) throw new Error("Failed to update prediction name");
-					return n(A({
-						subredditId: t,
-						tournament: d.tournament
-					})), d.tournament
+							endPredictionTournament: i
+						} = r.body.data;
+					if (!i.tournament) throw new Error("Failed to update prediction name");
+					return t(A(i.tournament)), i.tournament
 				}, B = e => async (t, n, {
 					gqlContext: o
 				}) => {
@@ -311,8 +305,8 @@
 					selectedOptionId: t,
 					price: n,
 					pollId: o,
-					postId: r,
-					subredditId: i
+					tournamentId: r,
+					tournamentPostId: i
 				}) => async d => {
 					const c = await d(_({
 						coinPackageId: e,
@@ -321,10 +315,10 @@
 						price: n
 					}));
 					return d(k({
-						postId: r,
 						predictionId: o,
 						selectedOptionId: t,
-						subredditId: i
+						tournamentId: r,
+						tournamentPostId: i
 					})), c
 				}, M = e => Object(u.h)(l.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
 					postId: e
@@ -454,11 +448,11 @@
 				const t = Object(d.d)(),
 					n = Object(m.a)(),
 					[j, h] = Object(r.useState)(""),
-					[k, I] = Object(r.useState)(!1),
-					[g, _] = Object(r.useState)(!1),
-					[y, P] = Object(r.useState)(!1),
+					[k, g] = Object(r.useState)(!1),
+					[I, _] = Object(r.useState)(!1),
+					[P, y] = Object(r.useState)(!1),
 					[E, C] = Object(r.useState)(null),
-					w = Object(d.e)(t => Object(f.a)(t, {
+					w = Object(d.e)(t => Object(f.b)(t, {
 						subredditId: e.id
 					})),
 					T = Object(d.e)(t => Object(f.j)(t, {
@@ -475,7 +469,7 @@
 					w && (h(w.name), C(v - w.name.length))
 				}, [w]);
 				const N = Object(r.useCallback)(() => {
-						n(Object(p.c)()), P(!0)
+						n(Object(p.c)()), y(!0)
 					}, [n]),
 					L = !!j && ((null == w ? void 0 : w.name) !== j && j.length > 3);
 				return i.a.createElement("div", {
@@ -522,7 +516,7 @@
 					disabled: !j || !w || T || !L,
 					onClick: async () => {
 						if (!w || !j) return null;
-						n(Object(p.i)()), I(!0);
+						n(Object(p.i)()), g(!0);
 						try {
 							await t(Object(a.o)(w.tournamentId, e.id, j))
 						} catch (r) {
@@ -533,7 +527,7 @@
 								})
 							}))
 						}
-						I(!1)
+						g(!1)
 					}
 				}, k ? i.a.createElement(l.a, {
 					sizePx: 16
@@ -553,17 +547,17 @@
 					onClick: N
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
-				})), y && i.a.createElement(O, {
-					isEnding: g,
+				})), P && i.a.createElement(O, {
+					isEnding: I,
 					onClose: () => {
-						P(!1)
+						y(!1)
 					},
 					onConfirm: async () => {
 						if (!w || !S) return null;
 						_(!0);
 						try {
-							await t(Object(a.h)(w.tournamentId, e.id))
-						} catch (n) {
+							await t(Object(a.h)(w.tournamentId))
+						} catch (e) {
 							t(Object(s.f)({
 								kind: b.b.Error,
 								text: o.fbt._("Failed to end tournament, please try again later", null, {
@@ -571,7 +565,7 @@
 								})
 							}))
 						}
-						_(!1), P(!1)
+						_(!1), y(!1)
 					}
 				}))))
 			}
@@ -595,9 +589,9 @@
 			})), n.d(t, "j", (function() {
 				return k
 			})), n.d(t, "d", (function() {
-				return I
-			})), n.d(t, "e", (function() {
 				return g
+			})), n.d(t, "e", (function() {
+				return I
 			})), n.d(t, "f", (function() {
 				return _
 			}));
@@ -682,13 +676,13 @@
 						input: t
 					}
 				}),
-				I = (e, t) => Object(o.a)(e, {
+				g = (e, t) => Object(o.a)(e, {
 					...d,
 					variables: {
 						input: t
 					}
 				}),
-				g = (e, t) => Object(o.a)(e, {
+				I = (e, t) => Object(o.a)(e, {
 					...c,
 					variables: t
 				}),
@@ -732,15 +726,15 @@
 			})), n.d(t, "w", (function() {
 				return k
 			})), n.d(t, "u", (function() {
-				return I
-			})), n.d(t, "c", (function() {
 				return g
+			})), n.d(t, "c", (function() {
+				return I
 			})), n.d(t, "i", (function() {
 				return _
 			})), n.d(t, "e", (function() {
-				return y
-			})), n.d(t, "b", (function() {
 				return P
+			})), n.d(t, "b", (function() {
+				return y
 			})), n.d(t, "j", (function() {
 				return E
 			})), n.d(t, "h", (function() {
@@ -898,7 +892,7 @@
 						reason: "predictions_tab"
 					}
 				}),
-				I = () => e => ({
+				g = () => e => ({
 					...Object(r.defaults)(e),
 					source: "global",
 					action: "view",
@@ -907,7 +901,7 @@
 						pageType: "mod_tool_predict"
 					}
 				}),
-				g = () => e => ({
+				I = () => e => ({
 					...Object(r.defaults)(e),
 					source: "mod_tool_predict",
 					action: "click",
@@ -919,13 +913,13 @@
 					action: "click",
 					noun: "rename_tournament"
 				}),
-				y = () => e => ({
+				P = () => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions",
 					action: "click",
 					noun: "next"
 				}),
-				P = () => e => ({
+				y = () => e => ({
 					...Object(r.defaults)(e),
 					source: "predictions",
 					action: "click",
@@ -1038,4 +1032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.403b92ae1668cb8034c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.c257d00cce7df70569f5.js.map

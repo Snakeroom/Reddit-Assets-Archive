@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9765478a6582d1f277d8.js
-// Retrieved at 7/22/2021, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.57451756a30c18a929b9.js
+// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2416,11 +2416,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("140074"),
+				buildNumber: r("140079"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1626962774"),
+				})("1626965237"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4923,14 +4923,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd7ca62b7631790b323b725a57f1b04ae2f6c4f69-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c12584eb4aeb188170d1ae5de59c70a537154401a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d7ca62b7631790b323b725a57f1b04ae2f6c4f69-production",
+						release: "12584eb4aeb188170d1ae5de59c70a537154401a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -5424,7 +5424,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "d7ca62b7631790b323b725a57f1b04ae2f6c4f69-production",
+						releaseClient: "12584eb4aeb188170d1ae5de59c70a537154401a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(c.a)(i)) : void 0
 					},
@@ -34159,28 +34159,78 @@
 			};
 			const c = {};
 			var l = (e = c, t) => {
-					switch (t.type) {
-						case o.d: {
-							const {
+				switch (t.type) {
+					case o.d: {
+						const {
+							currentRank: i,
+							subredditId: n,
+							topPredictorsRank: r
+						} = t.payload;
+						return {
+							...e,
+							[n]: {
 								currentRank: i,
-								subredditId: n,
 								topPredictorsRank: r
-							} = t.payload;
-							return {
-								...e,
-								[n]: {
-									currentRank: i,
-									topPredictorsRank: r
-								}
 							}
 						}
-						default:
-							return e
 					}
-				},
-				u = i("./src/reddit/models/Prediction/Tournament/index.ts");
-			const _ = {};
-			var p = (e = _, t) => {
+					default:
+						return e
+				}
+			};
+			const u = {};
+			var _ = (e = u, t) => {
+				var i, n;
+				switch (t.type) {
+					case o.c: {
+						const {
+							tournaments: i
+						} = t.payload;
+						return {
+							...e,
+							...i.reduce((e, t) => ({
+								...e,
+								[t.tournamentId]: t
+							}), {})
+						}
+					}
+					case o.l: {
+						const i = t.payload;
+						return e[i.tournamentId] ? {
+							...e,
+							[i.tournamentId]: {
+								...e[i.tournamentId],
+								name: i.name,
+								status: i.status
+							}
+						} : e
+					}
+					case o.k: {
+						const {
+							predictionId: r,
+							selectedOptionId: s,
+							tournamentId: o
+						} = t.payload;
+						return e[o] ? {
+							...e,
+							[o]: {
+								...e[o],
+								predictionPosts: null === (n = null === (i = e[o]) || void 0 === i ? void 0 : i.predictionPosts) || void 0 === n ? void 0 : n.map(e => e.id === r ? {
+									...e,
+									pollData: {
+										...e.pollData,
+										userSelection: s
+									}
+								} : e)
+							}
+						} : e
+					}
+					default:
+						return e
+				}
+			};
+			const p = {};
+			var m = (e = p, t) => {
 				var i;
 				switch (t.type) {
 					case o.b: {
@@ -34204,52 +34254,9 @@
 							...e,
 							[i]: {
 								isFetching: !1,
-								tournaments: n
+								tournaments: n.map(e => e.tournamentId)
 							}
 						}
-					}
-					case o.l: {
-						const {
-							subredditId: i,
-							tournament: n
-						} = t.payload;
-						return {
-							...e,
-							[i]: {
-								...e[i],
-								tournaments: e[i].tournaments.map(e => e.tournamentId === n.tournamentId ? {
-									...e,
-									name: n.name,
-									status: n.status
-								} : e)
-							}
-						}
-					}
-					case o.k: {
-						const {
-							predictionId: i,
-							selectedOptionId: n,
-							subredditId: r
-						} = t.payload;
-						return e[r] ? {
-							...e,
-							[r]: {
-								...e[r],
-								tournaments: e[r].tournaments.map((e, t) => {
-									var r;
-									return e.status === u.a.Live || e.status === u.a.LiveInProgress ? {
-										...e,
-										predictionPosts: null === (r = e.predictionPosts) || void 0 === r ? void 0 : r.map(e => e.id === i ? {
-											...e,
-											pollData: {
-												...e.pollData,
-												userSelection: n
-											}
-										} : e)
-									} : e
-								})
-							}
-						} : e
 					}
 					default:
 						return e
@@ -34258,7 +34265,8 @@
 			t.a = Object(n.c)({
 				creation: a,
 				leaderboards: l,
-				tournaments: p
+				tournaments: _,
+				tournamentsBySubreddit: m
 			})
 		},
 		"./src/reddit/reducers/pages/modHub/index.ts": function(e, t, i) {
@@ -37504,30 +37512,30 @@
 		},
 		"./src/reddit/selectors/features/predictions/tournaments/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "h", (function() {
+			i.d(t, "a", (function() {
 				return _
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "h", (function() {
 				return p
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "j", (function() {
 				return m
-			})), i.d(t, "e", (function() {
-				return h
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "f", (function() {
 				return f
-			})), i.d(t, "a", (function() {
-				return g
-			})), i.d(t, "c", (function() {
-				return w
+			})), i.d(t, "e", (function() {
+				return b
 			})), i.d(t, "b", (function() {
+				return w
+			})), i.d(t, "d", (function() {
 				return y
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "c", (function() {
 				return v
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return E
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "l", (function() {
 				return S
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "g", (function() {
 				return T
+			})), i.d(t, "i", (function() {
+				return O
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
@@ -37546,28 +37554,34 @@
 			});
 			const _ = (e, t) => {
 					var i, n;
-					return !!(null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId])
+					return (null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t]) || null
 				},
 				p = (e, t) => {
-					var i, n, r;
-					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.isFetching) || !1
+					var i, n;
+					return !!(null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournamentsBySubreddit[t.subredditId])
 				},
 				m = (e, t) => {
-					var i, n, r, s;
-					return null !== (s = null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) && void 0 !== s ? s : []
+					var i, n, r;
+					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournamentsBySubreddit[t.subredditId]) || void 0 === r ? void 0 : r.isFetching) || !1
 				},
 				h = (e, t) => {
-					return m(e, t).find(e => e.tournamentId === t.tournamentId)
+					var i, n, r;
+					return (null === (r = null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournamentsBySubreddit[t.subredditId]) || void 0 === r ? void 0 : r.tournaments) || []
 				},
-				f = (e, t) => {
-					const i = m(e, t);
-					return i.length ? i[i.length - 1] : null
+				f = (e, t) => ((e, t) => {
+					var i, n;
+					const r = (null === (n = null === (i = e.features) || void 0 === i ? void 0 : i.predictions) || void 0 === n ? void 0 : n.tournaments) || {};
+					return t.map(e => r[e])
+				})(e, h(e, t)),
+				b = (e, t) => {
+					const i = h(e, t);
+					return i.length ? _(e, i[i.length - 1]) : null
 				},
-				b = Object(n.a)(m, e => e.filter(e => e.status === d.a.Live || e.status === d.a.LiveInProgress)),
-				g = (e, t) => b(e, t)[0],
-				w = (e, t) => !!m(e, t).length,
-				y = (e, t) => !!b(e, t).length,
-				v = Object(n.a)(f, a.i, a.J, c.cb, (e, t, i, n) => {
+				g = Object(n.a)(f, e => e.filter(e => e.status === d.a.Live || e.status === d.a.LiveInProgress)),
+				w = (e, t) => g(e, t)[0],
+				y = (e, t) => !!h(e, t).length,
+				v = (e, t) => !!g(e, t).length,
+				E = Object(n.a)(b, a.i, a.J, c.cb, (e, t, i, n) => {
 					var r;
 					return (null === (r = null == e ? void 0 : e.predictionPosts) || void 0 === r ? void 0 : r.length) ? null == e ? void 0 : e.predictionPosts.reduce((e, {
 						id: r
@@ -37577,12 +37591,12 @@
 						return !s || !n && s.isNSFW || (e[r] = s), e
 					}, {}) : {}
 				}),
-				E = Object(n.a)(v, e => Object.keys(e).sort((t, i) => Object(o.b)(e[t], e[i]))),
-				S = Object(n.a)(g, e => {
+				S = Object(n.a)(E, e => Object.keys(e).sort((t, i) => Object(o.b)(e[t], e[i]))),
+				T = Object(n.a)(w, e => {
 					var t;
 					return null !== (t = !(null == e ? void 0 : e.predictionPosts) || 0 === (null == e ? void 0 : e.predictionPosts.length) || (null == e ? void 0 : e.predictionPosts.every(e => !u()(e.pollData.resolvedOptionId)))) && void 0 !== t && t
 				}),
-				T = Object(n.a)(f, e => !!e && e.status === d.a.LiveInProgress)
+				O = Object(n.a)(b, e => !!e && e.status === d.a.LiveInProgress)
 		},
 		"./src/reddit/selectors/frontpage.ts": function(e, t, i) {
 			"use strict";
@@ -39374,8 +39388,8 @@
 						return i && n
 					})(e) || t
 				},
-				He = (e, t) => Object(F.M)(e, t) && !Object(T.b)(e, t) && (e => e.creations.formData.govType === b.a.Prediction)(e),
-				We = (e, t) => Object(F.M)(e, t) && Object(T.b)(e, t),
+				He = (e, t) => Object(F.M)(e, t) && !Object(T.c)(e, t) && (e => e.creations.formData.govType === b.a.Prediction)(e),
+				We = (e, t) => Object(F.M)(e, t) && Object(T.c)(e, t),
 				$e = e => {
 					var t;
 					const i = null === (t = e.creations.formData.polls) || void 0 === t ? void 0 : t.options;
@@ -47695,4 +47709,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9765478a6582d1f277d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.57451756a30c18a929b9.js.map

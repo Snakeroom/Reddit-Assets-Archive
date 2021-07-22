@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.61fbbe0d8ea147df36aa.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d749883140a77ac24f67.js
+// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(i, a, r) {
@@ -820,7 +820,7 @@
 					s = Object(k.e)(a => Object(gi.h)(a, {
 						subredditId: i
 					})),
-					l = Object(k.e)(a => Object(gi.a)(a, {
+					l = Object(k.e)(a => Object(gi.b)(a, {
 						subredditId: i
 					})),
 					p = Object(c.w)(o),
@@ -1101,7 +1101,7 @@
 				const p = Object(k.e)(c.V),
 					f = Object(k.e)(c.j),
 					d = Object(k.e)(c.B),
-					u = Object(k.e)(i => Object(l.a)(i, {
+					u = Object(k.e)(i => Object(l.b)(i, {
 						subredditId: r
 					}));
 				return (null === (x = null == u ? void 0 : u.latestParticipants) || void 0 === x ? void 0 : x.length) ? t.a.createElement("div", {
@@ -1827,4 +1827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.61fbbe0d8ea147df36aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.d749883140a77ac24f67.js.map
