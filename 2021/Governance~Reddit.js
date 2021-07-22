@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.dcbee3a3ed1a897e95ea.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f8f06cc080e7d3f7a665.js
+// Retrieved at 7/22/2021, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4673,10 +4673,13 @@
 		},
 		"./src/reddit/helpers/getSearchUrl/index.ts": function(e, t, r) {
 			"use strict";
+			r.d(t, "b", (function() {
+				return c
+			}));
 			var s = r("./src/lib/search/index.ts"),
 				a = r("./src/reddit/constants/parameters.ts"),
 				n = r("./src/reddit/models/Search/index.ts");
-			t.a = (e, t, r, c, o, d) => {
+			const c = (e, t, r, c, o, d) => {
 				let i, u;
 				if ("" !== c.searchQuery) {
 					if (c.isTypeaheadSuggestion) i = `/${c.isProfile?c.searchQuery.replace("u/","user/"):c.searchQuery}`;
@@ -4691,7 +4694,8 @@
 						qs: u
 					}
 				}
-			}
+			};
+			t.a = c
 		},
 		"./src/reddit/helpers/governanceErrorText/index.ts": function(e, t, r) {
 			"use strict";
@@ -21812,4 +21816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.dcbee3a3ed1a897e95ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f8f06cc080e7d3f7a665.js.map
