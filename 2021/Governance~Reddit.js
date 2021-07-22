@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a261582b3553febc48a5.js
-// Retrieved at 7/22/2021, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.dcbee3a3ed1a897e95ea.js
+// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -13011,19 +13011,21 @@
 				totalVoteCount: c,
 				userSelection: o,
 				isNSFW: d,
-				options: i
+				isSpoiler: i,
+				options: u
 			}) {
 				return {
 					id: e,
 					title: t,
 					endsAt: s,
 					isNSFW: d,
+					isSpoiler: i,
 					totalVoteCount: c,
 					totalStakeAmount: n,
 					wonAmount: a,
 					resolvedOptionId: r,
 					selectedOptionId: o,
-					options: i.map(Jl)
+					options: u.map(Jl)
 				}
 			}
 
@@ -21785,7 +21787,7 @@
 			e.exports = JSON.parse('{"id":"63d6a697b823"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"0290a261578c"}')
+			e.exports = JSON.parse('{"id":"291b4dfbc023"}')
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"9995fe64fd5a"}')
@@ -21810,4 +21812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a261582b3553febc48a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.dcbee3a3ed1a897e95ea.js.map
