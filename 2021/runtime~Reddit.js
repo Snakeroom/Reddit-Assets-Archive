@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.3e0e36dee65d3c80a1c6.js
-// Retrieved at 7/22/2021, 9:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.a55c581d066311548051.js
+// Retrieved at 7/22/2021, 10:10:06 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, b = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
@@ -1269,7 +1269,7 @@
 						"translations/es_MX-json": "fc0035f27ce38dd8cd8f",
 						"translations/fr_FR-json": "904143a5d380c10a660d",
 						"translations/it_IT-json": "dc1e3bea1e0a610ed0d9",
-						"translations/pseudo_ext-json": "793a49e9ee20b8d66774",
+						"translations/pseudo_ext-json": "d14109c4239ab867c310",
 						"translations/pseudo_long-json": "085c99c167216b3914a5",
 						"translations/pseudo_short-json": "eedd2aaef212c9389575",
 						"translations/pt_BR-json": "5fa2cc4e48d33c2ce7ce",
@@ -1277,7 +1277,7 @@
 						"vendors~AdminPanel": "a5bc90ca020df1ed6380",
 						AdminPanel: "2857f0e27698ef29401f",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
-						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "e73b5996cf599e80a7b7",
+						"ChatMessageInput~MembershipPaywallPage~RichTextEditor": "eb83a7446d5398883672",
 						MembershipPaywallPage: "9adf08bcf67d7db107a0",
 						FlairEdit: "cc3470f3e73e23c456e7",
 						"vendors~Chat~PostCreation~RedesignChat": "bc666e204513e3f2e137",
@@ -1293,7 +1293,7 @@
 						HarbergerTaxManageModal: "27ef4c5d080ac06b8982",
 						SubredditPremiumUploadModal: "01c600ede497b6a852ff",
 						"vendors~PostCreation": "4d0d0c59573098378c57",
-						PostCreation: "8c4dbe2af7f8d853b1bc",
+						PostCreation: "fe842ec9fbe9ad7d71a9",
 						"vendors~ModStatsChart~Settings": "4756d25d069e14bb198b",
 						Settings: "a33b824230533640aab2",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
@@ -1517,4 +1517,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3e0e36dee65d3c80a1c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a55c581d066311548051.js.map

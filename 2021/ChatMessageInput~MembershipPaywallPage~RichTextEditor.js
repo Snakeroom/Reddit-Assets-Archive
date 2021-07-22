@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.e73b5996cf599e80a7b7.js
-// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.eb83a7446d5398883672.js
+// Retrieved at 7/22/2021, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -8246,30 +8246,31 @@
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "b", (function() {
-				return c
-			})), n.d(e, "a", (function() {
 				return a
-			})), n.d(e, "c", (function() {
+			})), n.d(e, "a", (function() {
 				return l
+			})), n.d(e, "c", (function() {
+				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/featureFlags/index.ts"),
 				s = n("./src/reddit/selectors/economics.ts"),
-				i = n("./src/reddit/selectors/gold/powerups/index.ts");
-			const c = Object(o.a)(r.d.spEmotes, s.b, i.f, (t, e, n) => {
+				i = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				c = n("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
+			const a = Object(o.a)(r.d.spEmotes, s.b, i.f, (t, e, n) => {
 					if (n) return !0;
 					const o = !(!e || !Object.keys(e).length);
 					return t && o
 				}),
-				a = Object(o.a)(s.b, i.g, i.h, i.f, (t, e, n, o) => {
+				l = Object(o.a)(s.b, i.g, i.h, i.f, (t, e, n, o) => {
 					if (o) return [...e, ...n].slice(0, 3);
 					let r = [];
 					for (const s of t || [])
 						if ((r = [...r, ...Object.values(s.emotes)]).length > 3) break;
 					return r.slice(0, 3)
 				}),
-				l = Object(o.a)(r.d.spGiphy, i.p, (t, e) => t || e)
+				d = Object(o.a)(r.d.spGiphy, c.b, i.p, (t, e, n) => t || e && n)
 		},
 		"./src/reddit/selectors/products.ts": function(t, e, n) {
 			"use strict";
@@ -8307,4 +8308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.e73b5996cf599e80a7b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.eb83a7446d5398883672.js.map

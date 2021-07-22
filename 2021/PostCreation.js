@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8c4dbe2af7f8d853b1bc.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fe842ec9fbe9ad7d71a9.js
+// Retrieved at 7/22/2021, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -29873,30 +29873,31 @@
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return a
-			})), n.d(t, "a", (function() {
 				return c
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "a", (function() {
 				return d
+			})), n.d(t, "c", (function() {
+				return l
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/featureFlags/index.ts"),
 				s = n("./src/reddit/selectors/economics.ts"),
-				i = n("./src/reddit/selectors/gold/powerups/index.ts");
-			const a = Object(o.a)(r.d.spEmotes, s.b, i.f, (e, t, n) => {
+				i = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				a = n("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
+			const c = Object(o.a)(r.d.spEmotes, s.b, i.f, (e, t, n) => {
 					if (n) return !0;
 					const o = !(!t || !Object.keys(t).length);
 					return e && o
 				}),
-				c = Object(o.a)(s.b, i.g, i.h, i.f, (e, t, n, o) => {
+				d = Object(o.a)(s.b, i.g, i.h, i.f, (e, t, n, o) => {
 					if (o) return [...t, ...n].slice(0, 3);
 					let r = [];
 					for (const s of e || [])
 						if ((r = [...r, ...Object.values(s.emotes)]).length > 3) break;
 					return r.slice(0, 3)
 				}),
-				d = Object(o.a)(r.d.spGiphy, i.p, (e, t) => e || t)
+				l = Object(o.a)(r.d.spGiphy, a.b, i.p, (e, t, n) => e || t && n)
 		},
 		"./src/reddit/selectors/gold/giveAwards.ts": function(e, t, n) {
 			"use strict";
@@ -30393,4 +30394,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8c4dbe2af7f8d853b1bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fe842ec9fbe9ad7d71a9.js.map
