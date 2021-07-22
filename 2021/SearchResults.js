@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6b4758b1eb877be5cb9c.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3d06e1f0ff4a4c25dfaf.js
+// Retrieved at 7/22/2021, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7181,7 +7181,7 @@
 					listingName: r,
 					searchOptions: l,
 					tab: m
-				} = e, u = !l.is_multi && !l.category;
+				} = e, u = l.is_multi || l.category;
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(c.a, {
 					key: "subNav",
 					searchOptions: l,
@@ -7236,7 +7236,7 @@
 						shouldShowSrSearchSwitcher: f,
 						tab: g,
 						queryParams: v
-					} = e, y = Object(a.a)(x[u.c]), C = x.category, O = !C && !y;
+					} = e, y = Object(a.a)(x[u.c]), C = x.category, O = !C && !y, E = C && y, j = E ? y : Object(a.a)(x.q || "");
 					return n.a.createElement(n.a.Fragment, null, f && n.a.createElement(m.a, {
 						searchOptions: x,
 						url: Object(h.a)(v)
@@ -7257,8 +7257,8 @@
 						onLoadMore: i,
 						searchOptions: x
 					}) : n.a.createElement(c.a, {
-						query: y,
-						type: C && y ? c.b.Category : c.b.Posts
+						query: j,
+						type: E ? c.b.Category : c.b.Posts
 					}))
 				}))
 		},
@@ -10189,4 +10189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6b4758b1eb877be5cb9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3d06e1f0ff4a4c25dfaf.js.map
