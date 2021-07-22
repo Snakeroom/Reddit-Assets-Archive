@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.2685e2dfe53a9db36bd4.js
-// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.1922ad2e97128bcba3c4.js
+// Retrieved at 7/22/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -93,7 +93,6 @@
 				modalTitle: "cz4nQZS4-Ah1NDdX2DwsF",
 				closeWrapper: "_3eU1gMlNmVM6fygUFKjuXD",
 				bodyContainer: "_15q7Fm7-gLiuxQpuG0mBvp",
-				primaryButton: "_1JQwuN4Z0Hw0Kc90fF73R3",
 				loadingIcon: "qZqo2u0zIYBRClHOmC3Cq",
 				dragItem: "_3ePcD9lWiNU6gMBmmMTGQ6",
 				layoutTypeTitle: "AHrUrG7C9xmrBKgefWdnP",
@@ -123,37 +122,36 @@
 		"./src/reddit/components/EditCollectionModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "EditCollectionModal", (function() {
-				return R
+				return B
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/lib/lessComponent.tsx"),
-				r = n("./node_modules/react/index.js"),
-				i = n.n(r),
-				c = n("./node_modules/react-redux/es/index.js"),
-				l = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/higherOrderComponents/asModal/index.tsx"),
-				u = n("./src/reddit/actions/postCollection/index.ts"),
-				m = n("./src/reddit/components/CharacterCountdown/index.tsx"),
-				p = n("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
-				h = n("./src/reddit/components/StructuredStyles/DragItem/index.tsx"),
-				x = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				C = n("./src/reddit/constants/keycodes.ts"),
-				v = n("./src/reddit/constants/postCreation.ts"),
-				g = n("./src/reddit/controls/Button/index.tsx"),
-				f = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				_ = n("./src/reddit/controls/RadioInput/index.tsx"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				i = n("./node_modules/react-redux/es/index.js"),
+				c = n("./node_modules/reselect/es/index.js"),
+				l = n("./src/higherOrderComponents/asModal/index.tsx"),
+				d = n("./src/reddit/actions/postCollection/index.ts"),
+				u = n("./src/reddit/components/CharacterCountdown/index.tsx"),
+				m = n("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
+				p = n("./src/reddit/components/StructuredStyles/DragItem/index.tsx"),
+				h = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
+				x = n("./src/reddit/constants/keycodes.ts"),
+				C = n("./src/reddit/constants/postCreation.ts"),
+				v = n("./src/reddit/controls/Button/index.tsx"),
+				g = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				f = n("./src/reddit/controls/RadioInput/index.tsx"),
 				E = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				b = n("./src/reddit/controls/Sortable/index.tsx"),
-				y = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				S = n("./src/reddit/layout/row/Inline/index.tsx"),
-				L = n("./src/reddit/models/PostCollection/index.ts"),
-				N = n("./src/reddit/selectors/postCollection.ts"),
-				P = n("./src/reddit/components/EditCollectionModal/index.m.less"),
-				O = n.n(P);
+				_ = n("./src/reddit/controls/Sortable/index.tsx"),
+				b = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				y = n("./src/reddit/layout/row/Inline/index.tsx"),
+				S = n("./src/reddit/models/PostCollection/index.ts"),
+				L = n("./src/reddit/selectors/postCollection.ts"),
+				N = n("./src/reddit/components/EditCollectionModal/index.m.less"),
+				P = n.n(N);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -161,75 +159,75 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = 10,
-				j = ({
+			const T = 10,
+				D = ({
 					label: e,
 					...t
-				}) => i.a.createElement("div", {
-					className: O.a.fieldWrapper
-				}, i.a.createElement("label", {
-					className: O.a.Label
-				}, e), i.a.createElement(x.i, T({
-					className: O.a.textArea,
+				}) => r.a.createElement("div", {
+					className: P.a.fieldWrapper
+				}, r.a.createElement("label", {
+					className: P.a.Label
+				}, e), r.a.createElement(h.i, O({
+					className: P.a.textArea,
 					disabled: !1
-				}, t)), i.a.createElement(m.a, {
+				}, t)), r.a.createElement(u.a, {
 					maxChars: t.maxLength,
 					text: t.value
 				})),
-				k = ({
+				j = ({
 					onLayoutChange: e,
 					displayLayout: t
-				}) => i.a.createElement("div", {
-					className: O.a.layoutTypeWrapper
-				}, i.a.createElement("div", {
-					className: O.a.layoutTypeTitle
+				}) => r.a.createElement("div", {
+					className: P.a.layoutTypeWrapper
+				}, r.a.createElement("div", {
+					className: P.a.layoutTypeTitle
 				}, s.fbt._("Layout type", null, {
 					hk: "39DMVQ"
-				})), i.a.createElement(_.a, {
+				})), r.a.createElement(f.a, {
 					name: "type",
 					onChange: e,
 					value: t
-				}, i.a.createElement(E.a, {
-					className: O.a.layoutOptionWrapper,
-					key: L.a.TIMELINE,
+				}, r.a.createElement(E.a, {
+					className: P.a.layoutOptionWrapper,
+					key: S.a.TIMELINE,
 					showButton: !0,
-					value: L.a.TIMELINE
-				}, i.a.createElement("div", {
-					className: O.a.optionTextWrapper
-				}, i.a.createElement("div", {
-					className: O.a.layoutTitle
+					value: S.a.TIMELINE
+				}, r.a.createElement("div", {
+					className: P.a.optionTextWrapper
+				}, r.a.createElement("div", {
+					className: P.a.layoutTitle
 				}, s.fbt._("Standard", null, {
 					hk: "4opAgU"
-				})), i.a.createElement("div", {
-					className: O.a.layoutSubTitle
+				})), r.a.createElement("div", {
+					className: P.a.layoutSubTitle
 				}, s.fbt._("Best for event or discussion collections", null, {
 					hk: "3v88sS"
-				})))), i.a.createElement(E.a, {
-					className: O.a.layoutOptionWrapper,
-					key: L.a.GALLERY,
+				})))), r.a.createElement(E.a, {
+					className: P.a.layoutOptionWrapper,
+					key: S.a.GALLERY,
 					showButton: !0,
-					value: L.a.GALLERY
-				}, i.a.createElement("div", {
-					className: O.a.optionTextWrapper
-				}, i.a.createElement("div", {
-					className: O.a.layoutTitle
+					value: S.a.GALLERY
+				}, r.a.createElement("div", {
+					className: P.a.optionTextWrapper
+				}, r.a.createElement("div", {
+					className: P.a.layoutTitle
 				}, s.fbt._("Gallery", null, {
 					hk: "sR5xJ"
-				})), i.a.createElement("div", {
-					className: O.a.layoutSubTitle
+				})), r.a.createElement("div", {
+					className: P.a.layoutSubTitle
 				}, s.fbt._("Best for image heavy or meme collections", null, {
 					hk: "4Btcmq"
 				})))))),
-				w = ({
+				k = ({
 					onTitleChange: e,
 					onDescriptionChange: t,
 					onLayoutChange: n,
 					title: a,
 					description: o,
-					displayLayout: r
-				}) => i.a.createElement("div", {
-					className: O.a.editCollectionWrapper
-				}, i.a.createElement(j, {
+					displayLayout: i
+				}) => r.a.createElement("div", {
+					className: P.a.editCollectionWrapper
+				}, r.a.createElement(D, {
 					label: s.fbt._("Title", null, {
 						hk: "1cdKLH"
 					}),
@@ -237,10 +235,10 @@
 					placeholder: s.fbt._("Enter title", null, {
 						hk: "bWrfF"
 					}),
-					maxLength: v.e,
+					maxLength: C.e,
 					rows: 1,
 					value: a
-				}), i.a.createElement(j, {
+				}), r.a.createElement(D, {
 					label: s.fbt._("Description", null, {
 						hk: "iNZtt"
 					}),
@@ -248,29 +246,29 @@
 					placeholder: s.fbt._("Give some detail on what the collection is about.", null, {
 						hk: "4DPX2P"
 					}),
-					maxLength: v.b,
+					maxLength: C.b,
 					rows: 4,
 					value: o
-				}), i.a.createElement(k, {
+				}), r.a.createElement(j, {
 					onLayoutChange: n,
-					displayLayout: r
+					displayLayout: i
 				})),
-				I = o.a.wrapped(e => i.a.createElement("button", {
-					className: Object(a.a)(e.className, {
-						[O.a.selected]: e.active
+				I = e => r.a.createElement("button", {
+					className: Object(a.a)(e.className, P.a.Tab, {
+						[P.a.selected]: e.active
 					}),
 					onClick: e.onClick
-				}, e.children), "Tab", O.a),
-				F = Object(l.c)({
-					collection: N.q,
-					displayLayout: N.b,
-					isPending: e => Object(N.g)(e) || Object(N.h)(e) || Object(N.j)(e) || Object(N.l)(e),
-					postsByIds: N.o
+				}, e.children),
+				w = Object(c.c)({
+					collection: L.q,
+					displayLayout: L.b,
+					isPending: e => Object(L.g)(e) || Object(L.h)(e) || Object(L.j)(e) || Object(L.l)(e),
+					postsByIds: L.o
 				}),
-				M = Object(c.b)(F, (e, t) => ({
-					editCollection: t => e(Object(u.d)(t))
+				F = Object(i.b)(w, (e, t) => ({
+					editCollection: t => e(Object(d.d)(t))
 				}));
-			class B extends i.a.PureComponent {
+			class M extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.hasUnsavedTitle = () => {
 						const e = this.props.collection,
@@ -324,7 +322,7 @@
 						};
 						await t(i) && n && n()
 					}, this.handleEscapeKey = e => {
-						e.keyCode === C.a.Escape && this.props.onClose()
+						e.keyCode === x.a.Escape && this.props.onClose()
 					}, this.onCollectionTabClick = () => this.setState({
 						isPostsSelected: !1
 					}), this.onPostsTabClick = () => this.setState({
@@ -357,16 +355,16 @@
 						postsByIds: o
 					} = this.props;
 					if (!o) return;
-					const r = o[e];
-					return r && i.a.createElement(h.a, {
-						className: O.a.dragItem,
+					const i = o[e];
+					return i && r.a.createElement(p.a, {
+						className: P.a.dragItem,
 						isDragging: n,
 						isOver: s,
 						canDrop: a
-					}, i.a.createElement("div", {
-						className: O.a.PostTitle
-					}, r.title), i.a.createElement(p.b, {
-						post: r
+					}, r.a.createElement("div", {
+						className: P.a.PostTitle
+					}, i.title), r.a.createElement(m.b, {
+						post: i
 					}))
 				}
 				render() {
@@ -377,62 +375,63 @@
 						displayLayout: n,
 						isPostsSelected: a,
 						reorderedPostIds: o,
-						title: r
+						title: i
 					} = this.state, c = this.hasUnsavedTitle() || this.hasUnsavedDescription() || this.hasUnsavedOrder() || this.hasUnsavedLayout();
-					return i.a.createElement("div", {
-						className: O.a.Wrapper
-					}, i.a.createElement("div", {
-						className: O.a.TopRow
-					}, i.a.createElement("div", {
-						className: O.a.modalTitle
+					return r.a.createElement("div", {
+						className: P.a.Wrapper
+					}, r.a.createElement("div", {
+						className: P.a.TopRow
+					}, r.a.createElement("div", {
+						className: P.a.modalTitle
 					}, s.fbt._("Edit collection", null, {
 						hk: "2uoDhJ"
-					}), i.a.createElement("div", {
-						className: O.a.closeWrapper,
+					}), r.a.createElement("div", {
+						className: P.a.closeWrapper,
 						onClick: this.props.onClose
-					}, i.a.createElement(y.a, {
-						className: O.a.Close
-					})))), i.a.createElement(S.a, {
-						className: O.a.InlineRow
-					}, i.a.createElement(I, {
+					}, r.a.createElement(b.a, {
+						className: P.a.Close
+					})))), r.a.createElement(y.a, {
+						className: P.a.InlineRow
+					}, r.a.createElement(I, {
 						active: !a,
 						onClick: this.onCollectionTabClick
 					}, s.fbt._("Collection", null, {
 						hk: "BbAzW"
-					})), i.a.createElement(I, {
+					})), r.a.createElement(I, {
 						active: a,
 						onClick: this.onPostsTabClick
 					}, s.fbt._("Posts", null, {
 						hk: "1ojLYW"
-					}))), i.a.createElement("div", {
-						className: O.a.bodyContainer
-					}, a ? i.a.createElement(b.a, {
+					}))), r.a.createElement("div", {
+						className: P.a.bodyContainer
+					}, a ? r.a.createElement(_.a, {
 						getReactKey: this.getReactKey,
 						onDrop: this.handleReorder,
 						render: this.renderPost,
 						values: o
-					}) : i.a.createElement(w, {
+					}) : r.a.createElement(k, {
 						onTitleChange: this.onTitleChange,
 						onDescriptionChange: this.onDescriptionChange,
-						title: r,
+						title: i,
 						description: t,
 						displayLayout: n,
 						onLayoutChange: this.onLayoutChange
-					})), i.a.createElement("div", {
-						className: O.a.FooterWrapper
-					}, i.a.createElement(g.i, {
-						className: O.a.primaryButton,
+					})), r.a.createElement("div", {
+						className: P.a.FooterWrapper
+					}, r.a.createElement(v.q, {
+						kind: v.a.Button,
+						priority: v.b.Primary,
 						onClick: this.handleSave,
 						disabled: !c || e
-					}, e ? i.a.createElement(f.a, {
-						className: O.a.loadingIcon,
-						sizePx: D
+					}, e ? r.a.createElement(g.a, {
+						className: P.a.loadingIcon,
+						sizePx: T
 					}) : s.fbt._("Save", null, {
 						hk: "26UTYg"
 					}))))
 				}
 			}
-			const R = Object(d.a)(M(B))
+			const B = Object(l.a)(F(M))
 		},
 		"./src/reddit/components/EventPost/PostEventMeta/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -475,8 +474,8 @@
 			const v = C.a.span("PostEventFutureText", x.a),
 				g = C.a.span("PostEventPastText", x.a),
 				f = C.a.span("PostEventNowText", x.a),
-				_ = C.a.span("Container", x.a),
-				E = C.a.wrapped(m, "CalendarIcon", x.a),
+				E = C.a.span("Container", x.a),
+				_ = C.a.wrapped(m, "CalendarIcon", x.a),
 				b = C.a.wrapped(p, "LiveIcon", x.a),
 				y = C.a.div("LoadingState", x.a);
 			class S extends s.Component {
@@ -514,12 +513,12 @@
 						})
 					}
 					if (c) m = a.a.createElement(f, null, a.a.createElement(b, null), u);
-					else if (d === o.a.Future) m = a.a.createElement(v, null, a.a.createElement(E, null), u);
+					else if (d === o.a.Future) m = a.a.createElement(v, null, a.a.createElement(_, null), u);
 					else {
 						if (d !== o.a.Past) return null;
-						m = a.a.createElement(g, null, a.a.createElement(E, null), u)
+						m = a.a.createElement(g, null, a.a.createElement(_, null), u)
 					}
-					return a.a.createElement(_, {
+					return a.a.createElement(E, {
 						className: e
 					}, m)
 				}
@@ -629,9 +628,9 @@
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
-				return _
-			})), n.d(t, "j", (function() {
 				return E
+			})), n.d(t, "j", (function() {
+				return _
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
 				a = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -650,8 +649,8 @@
 				v = s.a.h3("FormElementTitle", o.a),
 				g = s.a.div("FormElementDescription", o.a),
 				f = s.a.div("FormElementError", o.a),
-				_ = s.a.div("FormElementSubGroup", o.a),
-				E = s.a.li("FormListItem", o.a)
+				E = s.a.div("FormElementSubGroup", o.a),
+				_ = s.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -977,4 +976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.2685e2dfe53a9db36bd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.1922ad2e97128bcba3c4.js.map

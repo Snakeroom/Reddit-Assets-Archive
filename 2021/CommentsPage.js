@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.880ea1e58401b6d63848.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.92055926953cf47b9637.js
+// Retrieved at 7/22/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -773,12 +773,14 @@
 				copy: "_3xhJYY30L68x0pxk-8uTYD",
 				LiveStreamingCopy: "_11HjWCkxXrGJ_6388VQT0L",
 				liveStreamingCopy: "_11HjWCkxXrGJ_6388VQT0L",
+				CTAButtons: "_3xkBSA_W2UZqPF31GQZ9K",
+				ctaButtons: "_3xkBSA_W2UZqPF31GQZ9K",
+				LoginLink: "_3fM1M9rFBqKwfG-KJLnxPY",
+				loginLink: "_3fM1M9rFBqKwfG-KJLnxPY",
 				SignupLink: "_1k97Y32qzGNtuVGyt73TpR",
 				signupLink: "_1k97Y32qzGNtuVGyt73TpR",
 				LiveStreamingSignupLink: "_2aWoCIxf0NRE4nRAy6aFDQ",
-				liveStreamingSignupLink: "_2aWoCIxf0NRE4nRAy6aFDQ",
-				LoginLink: "_3fM1M9rFBqKwfG-KJLnxPY",
-				loginLink: "_3fM1M9rFBqKwfG-KJLnxPY"
+				liveStreamingSignupLink: "_2aWoCIxf0NRE4nRAy6aFDQ"
 			}
 		},
 		"./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.tsx": function(e, t, s) {
@@ -787,54 +789,60 @@
 				n = s.n(o),
 				r = s("./src/lib/classNames/index.ts"),
 				i = s("./src/lib/isSimpleClick/index.ts"),
-				a = s("./src/lib/lessComponent.tsx"),
-				d = s("./src/lib/loginHref/index.ts"),
-				c = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				l = s("./src/reddit/controls/Button/index.tsx"),
-				m = s("./src/reddit/helpers/trackers/authControls.ts"),
-				p = s("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.m.less"),
-				u = s.n(p);
+				a = s("./src/lib/loginHref/index.ts"),
+				d = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				c = s("./src/reddit/controls/Button/index.tsx"),
+				l = s("./src/reddit/helpers/trackers/authControls.ts"),
+				m = s("./src/reddit/components/CommentCreation/LoggedOutCommentForm/index.m.less"),
+				p = s.n(m);
 			const {
-				fbt: h
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = a.a.div("Wrapper", u.a), g = a.a.span("Copy", u.a), C = a.a.wrapped(l.j, "SignupLink", u.a), x = a.a.wrapped(l.m, "LoginLink", u.a);
-			t.a = Object(c.c)(({
+				fbt: u
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
+			t.a = Object(d.c)(({
 				className: e,
 				isLiveStreaming: t,
 				location: s,
 				openLoginModal: o,
-				openRegisterModal: a,
-				origin: c,
-				sendEvent: l
-			}) => n.a.createElement(b, {
-				className: Object(r.a)(e, {
-					[u.a.LiveStreamingWrapper]: t
+				openRegisterModal: d,
+				origin: m,
+				sendEvent: h
+			}) => n.a.createElement("div", {
+				className: Object(r.a)(e, p.a.Wrapper, {
+					[p.a.LiveStreamingWrapper]: t
 				})
-			}, n.a.createElement(g, {
-				className: Object(r.a)({
-					[u.a.LiveStreamingCopy]: t
+			}, n.a.createElement("span", {
+				className: Object(r.a)(p.a.Copy, {
+					[p.a.LiveStreamingCopy]: t
 				})
-			}, h._("Log in or sign up to leave a comment", null, {
+			}, u._("Log in or sign up to leave a comment", null, {
 				hk: "1KD7Eh"
-			})), n.a.createElement(x, {
-				href: Object(d.a)(s, c, "/login"),
+			})), n.a.createElement("div", {
+				className: p.a.CTAButtons
+			}, n.a.createElement(c.q, {
+				className: p.a.LoginLink,
+				kind: c.a.ExternalLink,
+				priority: c.b.Secondary,
+				href: Object(a.a)(s, m, "/login"),
 				onClick: e => {
-					Object(i.a)(e) && (e.preventDefault(), e.stopPropagation(), o(), l(Object(m.a)("user_convert")))
+					Object(i.a)(e) && (e.preventDefault(), e.stopPropagation(), o(), h(Object(l.a)("user_convert")))
 				},
 				"data-redditstyle": !0
-			}, h._("Log In", null, {
+			}, u._("Log In", null, {
 				hk: "ZR3pC"
-			})), n.a.createElement(C, {
-				className: Object(r.a)({
-					[u.a.LiveStreamingSignupLink]: t
+			})), n.a.createElement(c.q, {
+				className: Object(r.a)(p.a.SignupLink, {
+					[p.a.LiveStreamingSignupLink]: t
 				}),
-				href: Object(d.a)(s, c, "/register"),
+				kind: c.a.ExternalLink,
+				priority: c.b.Primary,
+				href: Object(a.a)(s, m, "/register"),
 				onClick: e => {
-					Object(i.a)(e) && (e.preventDefault(), e.stopPropagation(), a(), l(Object(m.c)("user_convert")))
+					Object(i.a)(e) && (e.preventDefault(), e.stopPropagation(), d(), h(Object(l.c)("user_convert")))
 				},
 				"data-redditstyle": !0
-			}, h._("Sign Up", null, {
+			}, u._("Sign Up", null, {
 				hk: "48wH4o"
-			}))))
+			})))))
 		},
 		"./src/reddit/components/CommentSort/CommentSort.m.less": function(e, t, s) {
 			e.exports = {
@@ -7826,4 +7834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.880ea1e58401b6d63848.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.92055926953cf47b9637.js.map
