@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.19b6d3c90256d72d7862.js
-// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.0d3a4ff397a7b0ebd575.js
+// Retrieved at 7/22/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -758,7 +758,7 @@
 		"./src/reddit/components/SubscribeButton/Base.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return h
+				return g
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -778,16 +778,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = ({
+			const m = (e, t, s) => null != s ? s : t ? e : a.b.Plain,
+				b = ({
 					border: e,
-					small: t,
-					...s
-				}) => i.a.createElement(a.q, u({}, s, {
-					priority: e ? a.b.Primary : a.b.Plain,
-					className: Object(l.a)(s.className, d.a.BaseButton),
-					size: t ? a.c.S : a.c.M
+					priority: t,
+					small: s,
+					...n
+				}) => i.a.createElement(a.q, u({}, n, {
+					priority: m(a.b.Primary, e, t),
+					className: Object(l.a)(n.className, d.a.BaseButton),
+					size: s ? a.c.S : a.c.M
 				})),
-				b = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("span", {
+				p = e => i.a.createElement(i.a.Fragment, null, i.a.createElement("span", {
 					className: d.a.UnsubscribeButtonDefault
 				}, "subreddit" === e ? n.fbt._("Joined", null, {
 					hk: "1MTmIz"
@@ -800,18 +802,19 @@
 				}) : n.fbt._("Unfollow", null, {
 					hk: "2b5ERD"
 				}))),
-				p = ({
+				h = ({
 					buttonType: e,
 					border: t,
-					small: s,
-					...n
-				}) => i.a.createElement(a.q, u({}, n, {
-					priority: t ? a.b.Secondary : a.b.Plain,
-					className: Object(l.a)(n.className, d.a.BaseButton),
-					size: s ? a.c.S : a.c.M,
-					text: b(e)
+					priority: s,
+					small: n,
+					...r
+				}) => i.a.createElement(a.q, u({}, r, {
+					priority: m(a.b.Secondary, t, s),
+					className: Object(l.a)(r.className, d.a.BaseButton),
+					size: n ? a.c.S : a.c.M,
+					text: p(e)
 				}));
-			class h extends i.a.Component {
+			class g extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
 						if (this.props.userIsSubscriber ? (this.props.onUnsubscribe(), this.props.afterUnsubscribeAction && this.props.afterUnsubscribeAction()) : (this.props.onSubscribe(), this.props.enableNotificationTooltipAfterSubscription && this.props.enableNotificationTooltipAfterSubscription()), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
@@ -828,18 +831,20 @@
 						border: e = !0,
 						className: t,
 						id: s,
-						small: n = !1,
-						isFullWidth: r = !1
-					} = this.props, a = {
+						priority: n,
+						small: r = !1,
+						isFullWidth: a = !1
+					} = this.props, c = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: n,
-						isFullWidth: r
+						priority: n,
+						small: r,
+						isFullWidth: a
 					};
-					return this.props.userIsSubscriber ? i.a.createElement(p, u({}, a, {
+					return this.props.userIsSubscriber ? i.a.createElement(h, u({}, c, {
 						buttonType: this.props.identifier.type
-					})) : i.a.createElement(m, u({}, a, {
+					})) : i.a.createElement(b, u({}, c, {
 						id: s
 					}), this.props.children, Object(o.a)({
 						type: this.props.identifier.type,
@@ -1810,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.19b6d3c90256d72d7862.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.0d3a4ff397a7b0ebd575.js.map

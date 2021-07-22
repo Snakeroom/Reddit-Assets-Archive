@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.a6e9f1f311a1945ecd30.js
-// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.6339b0f700af8c0d8553.js
+// Retrieved at 7/22/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -2704,7 +2704,7 @@
 		"./src/reddit/components/SubscribeButton/Base.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return x
+				return h
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
@@ -2724,16 +2724,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const u = ({
+			const u = (e, t, n) => null != n ? n : t ? e : a.b.Plain,
+				p = ({
 					border: e,
-					small: t,
-					...n
-				}) => r.a.createElement(a.q, m({}, n, {
-					priority: e ? a.b.Primary : a.b.Plain,
-					className: Object(l.a)(n.className, d.a.BaseButton),
-					size: t ? a.c.S : a.c.M
+					priority: t,
+					small: n,
+					...s
+				}) => r.a.createElement(a.q, m({}, s, {
+					priority: u(a.b.Primary, e, t),
+					className: Object(l.a)(s.className, d.a.BaseButton),
+					size: n ? a.c.S : a.c.M
 				})),
-				p = e => r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
+				b = e => r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
 					className: d.a.UnsubscribeButtonDefault
 				}, "subreddit" === e ? s.fbt._("Joined", null, {
 					hk: "1MTmIz"
@@ -2746,18 +2748,19 @@
 				}) : s.fbt._("Unfollow", null, {
 					hk: "2b5ERD"
 				}))),
-				b = ({
+				x = ({
 					buttonType: e,
 					border: t,
-					small: n,
-					...s
-				}) => r.a.createElement(a.q, m({}, s, {
-					priority: t ? a.b.Secondary : a.b.Plain,
-					className: Object(l.a)(s.className, d.a.BaseButton),
-					size: n ? a.c.S : a.c.M,
-					text: p(e)
+					priority: n,
+					small: s,
+					...o
+				}) => r.a.createElement(a.q, m({}, o, {
+					priority: u(a.b.Secondary, t, n),
+					className: Object(l.a)(o.className, d.a.BaseButton),
+					size: s ? a.c.S : a.c.M,
+					text: b(e)
 				}));
-			class x extends r.a.Component {
+			class h extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
 						if (this.props.userIsSubscriber ? (this.props.onUnsubscribe(), this.props.afterUnsubscribeAction && this.props.afterUnsubscribeAction()) : (this.props.onSubscribe(), this.props.enableNotificationTooltipAfterSubscription && this.props.enableNotificationTooltipAfterSubscription()), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
@@ -2774,18 +2777,20 @@
 						border: e = !0,
 						className: t,
 						id: n,
-						small: s = !1,
-						isFullWidth: o = !1
-					} = this.props, a = {
+						priority: s,
+						small: o = !1,
+						isFullWidth: a = !1
+					} = this.props, c = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: s,
-						isFullWidth: o
+						priority: s,
+						small: o,
+						isFullWidth: a
 					};
-					return this.props.userIsSubscriber ? r.a.createElement(b, m({}, a, {
+					return this.props.userIsSubscriber ? r.a.createElement(x, m({}, c, {
 						buttonType: this.props.identifier.type
-					})) : r.a.createElement(u, m({}, a, {
+					})) : r.a.createElement(p, m({}, c, {
 						id: n
 					}), this.props.children, Object(i.a)({
 						type: this.props.identifier.type,
@@ -3300,4 +3305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.a6e9f1f311a1945ecd30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.6339b0f700af8c0d8553.js.map

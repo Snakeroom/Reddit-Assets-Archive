@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7de74c5111515f0fc350.js
-// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8dfca3293b7885790787.js
+// Retrieved at 7/22/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9778,7 +9778,7 @@
 		"./src/reddit/components/SubscribeButton/Base.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return h
+				return f
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -9798,16 +9798,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = ({
+			const m = (e, t, n) => null != n ? n : t ? e : a.b.Plain,
+				p = ({
 					border: e,
-					small: t,
-					...n
-				}) => o.a.createElement(a.q, u({}, n, {
-					priority: e ? a.b.Primary : a.b.Plain,
-					className: Object(l.a)(n.className, d.a.BaseButton),
-					size: t ? a.c.S : a.c.M
+					priority: t,
+					small: n,
+					...s
+				}) => o.a.createElement(a.q, u({}, s, {
+					priority: m(a.b.Primary, e, t),
+					className: Object(l.a)(s.className, d.a.BaseButton),
+					size: n ? a.c.S : a.c.M
 				})),
-				p = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
+				b = e => o.a.createElement(o.a.Fragment, null, o.a.createElement("span", {
 					className: d.a.UnsubscribeButtonDefault
 				}, "subreddit" === e ? s.fbt._("Joined", null, {
 					hk: "1MTmIz"
@@ -9820,18 +9822,19 @@
 				}) : s.fbt._("Unfollow", null, {
 					hk: "2b5ERD"
 				}))),
-				b = ({
+				h = ({
 					buttonType: e,
 					border: t,
-					small: n,
-					...s
-				}) => o.a.createElement(a.q, u({}, s, {
-					priority: t ? a.b.Secondary : a.b.Plain,
-					className: Object(l.a)(s.className, d.a.BaseButton),
-					size: n ? a.c.S : a.c.M,
-					text: p(e)
+					priority: n,
+					small: s,
+					...r
+				}) => o.a.createElement(a.q, u({}, r, {
+					priority: m(a.b.Secondary, t, n),
+					className: Object(l.a)(r.className, d.a.BaseButton),
+					size: s ? a.c.S : a.c.M,
+					text: b(e)
 				}));
-			class h extends o.a.Component {
+			class f extends o.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
 						if (this.props.userIsSubscriber ? (this.props.onUnsubscribe(), this.props.afterUnsubscribeAction && this.props.afterUnsubscribeAction()) : (this.props.onSubscribe(), this.props.enableNotificationTooltipAfterSubscription && this.props.enableNotificationTooltipAfterSubscription()), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
@@ -9848,18 +9851,20 @@
 						border: e = !0,
 						className: t,
 						id: n,
-						small: s = !1,
-						isFullWidth: r = !1
-					} = this.props, a = {
+						priority: s,
+						small: r = !1,
+						isFullWidth: a = !1
+					} = this.props, c = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: s,
-						isFullWidth: r
+						priority: s,
+						small: r,
+						isFullWidth: a
 					};
-					return this.props.userIsSubscriber ? o.a.createElement(b, u({}, a, {
+					return this.props.userIsSubscriber ? o.a.createElement(h, u({}, c, {
 						buttonType: this.props.identifier.type
-					})) : o.a.createElement(m, u({}, a, {
+					})) : o.a.createElement(p, u({}, c, {
 						id: n
 					}), this.props.children, Object(i.a)({
 						type: this.props.identifier.type,
@@ -15258,4 +15263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7de74c5111515f0fc350.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8dfca3293b7885790787.js.map

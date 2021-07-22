@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.96446602221ec1bf7c5b.js
-// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.87ac598853bcb043e4bb.js
+// Retrieved at 7/22/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
@@ -68,8 +68,8 @@
 				E = n("./src/reddit/selectors/subreddit.ts"),
 				j = n("./src/reddit/selectors/user.ts"),
 				w = n("./src/reddit/actions/subredditModeration/constants.ts"),
-				N = n("./src/lib/initializeClient/installReducer.ts"),
-				y = n("./node_modules/redux/es/redux.js");
+				y = n("./src/lib/initializeClient/installReducer.ts"),
+				N = n("./node_modules/redux/es/redux.js");
 			var S = (e = null, t) => {
 				switch (t.type) {
 					case w.o:
@@ -109,7 +109,7 @@
 							return e
 					}
 				},
-				U = Object(y.c)({
+				U = Object(N.c)({
 					error: S,
 					pending: P
 				});
@@ -202,7 +202,7 @@
 							return e
 					}
 				},
-				W = Object(y.c)({
+				W = Object(N.c)({
 					error: K,
 					pending: z
 				});
@@ -219,7 +219,7 @@
 							return e
 					}
 				},
-				Z = Object(y.c)({
+				Z = Object(N.c)({
 					api: W,
 					result: q
 				});
@@ -261,7 +261,7 @@
 							return e
 					}
 				},
-				V = Object(y.c)({
+				V = Object(N.c)({
 					api: U,
 					fetchedTokens: T,
 					inContext: F,
@@ -270,7 +270,7 @@
 					search: Z,
 					userOrder: G
 				});
-			Object(N.a)({
+			Object(y.a)({
 				features: {
 					banned: V
 				}
@@ -515,8 +515,8 @@
 				E = n("./src/reddit/selectors/profile.ts"),
 				j = n("./src/reddit/selectors/subreddit.ts"),
 				w = n("./src/reddit/selectors/subscriptions.ts"),
-				N = n("./src/reddit/selectors/user.ts");
-			const y = () => s.fbt._("Sorry, failed to update favorites.", null, {
+				y = n("./src/reddit/selectors/user.ts");
+			const N = () => s.fbt._("Sorry, failed to update favorites.", null, {
 					hk: "40XHkp"
 				}),
 				S = Object(a.a)(d.c),
@@ -550,10 +550,10 @@
 						name: `${r.dc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(N.J)(d())) return a(Object(c.k)({
+					if (!Object(y.J)(d())) return a(Object(c.k)({
 						actionSource: c.a.Subscribe
 					})), void a(Object(i.j)());
-					const v = Object(N.j)(d());
+					const v = Object(y.j)(d());
 					if (v) {
 						const t = h.length,
 							n = e.length;
@@ -671,7 +671,7 @@
 						subredditModels: v,
 						profileModels: I
 					})), t(Object(l.f)({
-						text: y(),
+						text: N(),
 						kind: O.b.Error
 					}))))
 				}, H = Object(a.a)(d.d), M = e => async (t, n, {
@@ -680,7 +680,7 @@
 					const a = n().multireddits.models,
 						o = () => {
 							t(Object(l.f)({
-								text: y(),
+								text: N(),
 								kind: O.b.Error
 							}))
 						},
@@ -709,7 +709,7 @@
 				}) => {
 					const o = n(),
 						i = o.multireddits.models;
-					if (!Object(N.J)(o)) return;
+					if (!Object(y.J)(o)) return;
 					const c = (e = !0) => {
 							t(Object(l.f)({
 								text: s.fbt._("Sorry, failed to {followAction}", [s.fbt._param("followAction", e ? s.fbt._("follow", null, {
@@ -963,8 +963,8 @@
 				E = n("./src/reddit/components/ChatButton/index.tsx"),
 				j = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				w = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
-				N = n("./src/reddit/components/SubscribeButton/index.tsx"),
-				y = n("./src/reddit/components/UserIcon/index.tsx"),
+				y = n("./src/reddit/components/SubscribeButton/index.tsx"),
+				N = n("./src/reddit/components/UserIcon/index.tsx"),
 				S = n("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				k = n("./src/reddit/icons/fonts/Info/index.tsx"),
 				P = n("./src/reddit/icons/svgs/Admin/index.tsx");
@@ -1108,8 +1108,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ae = C.a.wrapped(y.a, "UserIcon", se.a),
-				oe = C.a.wrapped(N.a, "SubscribeButton", se.a),
+			const ae = C.a.wrapped(N.a, "UserIcon", se.a),
+				oe = C.a.wrapped(y.a, "SubscribeButton", se.a),
 				ie = C.a.wrapped(E.b, "ChatButton", se.a),
 				ce = C.a.wrapped(U, "KarmaIcon", se.a),
 				de = C.a.wrapped(B.a, "PremiumIcon", se.a),
@@ -1130,8 +1130,8 @@
 				Ee = C.a.div("BannerImage", se.a),
 				je = C.a.div("UserContainer", se.a),
 				we = C.a.div("BottomSpacer", se.a),
-				Ne = C.a.div("Container", se.a),
-				ye = e => r.a.createElement("div", null, r.a.createElement("div", null, r.a.createElement(le, {
+				ye = C.a.div("Container", se.a),
+				Ne = e => r.a.createElement("div", null, r.a.createElement("div", null, r.a.createElement(le, {
 					to: `/user/${e.userName}/`
 				}, `u/${e.userName}`), e.user.isEmployee && r.a.createElement(P.a, {
 					className: se.a.adminIcon,
@@ -1216,12 +1216,12 @@
 						userProfileStyles: O,
 						acceptChats: E
 					} = e;
-					if (!v) return r.a.createElement(Ne, {
+					if (!v) return r.a.createElement(ye, {
 						style: b
 					});
 					const w = !!s && Object(A.e)(s) === x,
-						N = !!(null == s ? void 0 : s.snoovatarFullBodyAsset),
-						y = v.accountIcon || `${_.a.assetPath}/img/snoo_user_placeholder.png`,
+						y = !!(null == s ? void 0 : s.snoovatarFullBodyAsset),
+						N = v.accountIcon || `${_.a.assetPath}/img/snoo_user_placeholder.png`,
 						k = l && l.flair,
 						P = l && l.access,
 						U = g && g.templateIds && g.templateIds.length > 0,
@@ -1232,7 +1232,7 @@
 						F = !!v.snoovatarFullBodyAsset,
 						M = v.isNSFW && a;
 					let R;
-					return R = F ? !M && O && O.bannerBackgroundImage || void 0 : M ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, r.a.createElement(Ne, {
+					return R = F ? !M && O && O.bannerBackgroundImage || void 0 : M ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, r.a.createElement(ye, {
 						className: t,
 						id: o,
 						style: b
@@ -1244,7 +1244,7 @@
 						isHovercard: !0,
 						bannerBackgroundImage: R,
 						compact: !0,
-						currentUserHasSnoovatar: N,
+						currentUserHasSnoovatar: y,
 						isEmployee: v.isEmployee,
 						isGold: v.isGold,
 						isNSFW: v.isNSFW,
@@ -1257,10 +1257,10 @@
 						username: x,
 						url: `/user/${e.userName}/`
 					}) : r.a.createElement(be, null, r.a.createElement(ae, {
-						iconUrl: y,
+						iconUrl: N,
 						isNSFW: v.isNSFW,
 						userName: x
-					}), r.a.createElement(ye, {
+					}), r.a.createElement(Ne, {
 						origin: d,
 						user: v,
 						userName: x
@@ -1739,10 +1739,10 @@
 					})))
 				};
 			var w = n("./src/reddit/components/NotificationUnit/Placeholder.tsx"),
-				N = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx");
+				y = n("./src/reddit/pages/NotificationsInbox/Content/EmptyState.tsx");
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function N() {
+				return (N = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1799,7 +1799,7 @@
 								notifications: r
 							} = this.props,
 							o = r.length > n + F;
-						return (s && r.length > 0 && o ? r.slice(0, n + 1) : r).map((n, s) => a.a.createElement(C, y({}, e, {
+						return (s && r.length > 0 && o ? r.slice(0, n + 1) : r).map((n, s) => a.a.createElement(C, N({}, e, {
 							index: s,
 							key: s,
 							notification: n,
@@ -1851,7 +1851,7 @@
 						onClose: s
 					}), t && a.a.createElement(v, {
 						onClose: u.a
-					}), a.a.createElement(N.a, {
+					}), a.a.createElement(y.a, {
 						isInboxExposureBannerEnabled: n
 					})), c && a.a.createElement(a.a.Fragment, null, n && a.a.createElement(j, {
 						onClose: s
@@ -2643,7 +2643,7 @@
 			var E = O,
 				j = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
 				w = n.n(j),
-				N = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
+				y = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
 			t.a = ({
 				bannerBackgroundImage: e,
 				compact: t,
@@ -2659,7 +2659,7 @@
 				prefersReducedAnimations: C,
 				snoovatarUrl: O,
 				title: j,
-				userCreated: y,
+				userCreated: N,
 				username: S,
 				url: k,
 				isHovercard: P
@@ -2689,7 +2689,7 @@
 				}, r.a.createElement(c.a, {
 					name: "settings",
 					className: w.a.settingsIcon
-				})), r.a.createElement(N.a, {
+				})), r.a.createElement(y.a, {
 					isEmployee: h,
 					isGold: x,
 					isNSFW: v,
@@ -2699,7 +2699,7 @@
 					className: f.a.snoovatarUserName,
 					shouldDisplaySnoovatar: !0,
 					username: S,
-					userCreated: y,
+					userCreated: N,
 					url: k
 				}), (I || !n && !!O) && r.a.createElement(l.a, {
 					compact: t,
@@ -2782,7 +2782,7 @@
 		"./src/reddit/components/SubscribeButton/Base.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
+				return h
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -2802,16 +2802,18 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = ({
+			const m = (e, t, n) => null != n ? n : t ? e : o.b.Plain,
+				p = ({
 					border: e,
-					small: t,
-					...n
-				}) => a.a.createElement(o.q, u({}, n, {
-					priority: e ? o.b.Primary : o.b.Plain,
-					className: Object(l.a)(n.className, d.a.BaseButton),
-					size: t ? o.c.S : o.c.M
+					priority: t,
+					small: n,
+					...s
+				}) => a.a.createElement(o.q, u({}, s, {
+					priority: m(o.b.Primary, e, t),
+					className: Object(l.a)(s.className, d.a.BaseButton),
+					size: n ? o.c.S : o.c.M
 				})),
-				p = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
+				b = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("span", {
 					className: d.a.UnsubscribeButtonDefault
 				}, "subreddit" === e ? s.fbt._("Joined", null, {
 					hk: "1MTmIz"
@@ -2824,18 +2826,19 @@
 				}) : s.fbt._("Unfollow", null, {
 					hk: "2b5ERD"
 				}))),
-				b = ({
+				f = ({
 					buttonType: e,
 					border: t,
-					small: n,
-					...s
-				}) => a.a.createElement(o.q, u({}, s, {
-					priority: t ? o.b.Secondary : o.b.Plain,
-					className: Object(l.a)(s.className, d.a.BaseButton),
-					size: n ? o.c.S : o.c.M,
-					text: p(e)
+					priority: n,
+					small: s,
+					...r
+				}) => a.a.createElement(o.q, u({}, r, {
+					priority: m(o.b.Secondary, t, n),
+					className: Object(l.a)(r.className, d.a.BaseButton),
+					size: s ? o.c.S : o.c.M,
+					text: b(e)
 				}));
-			class f extends a.a.Component {
+			class h extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = e => {
 						if (this.props.userIsSubscriber ? (this.props.onUnsubscribe(), this.props.afterUnsubscribeAction && this.props.afterUnsubscribeAction()) : (this.props.onSubscribe(), this.props.enableNotificationTooltipAfterSubscription && this.props.enableNotificationTooltipAfterSubscription()), this.props.onClick && this.props.onClick(e), this.props.getEventFactory) {
@@ -2852,18 +2855,20 @@
 						border: e = !0,
 						className: t,
 						id: n,
-						small: s = !1,
-						isFullWidth: r = !1
-					} = this.props, o = {
+						priority: s,
+						small: r = !1,
+						isFullWidth: o = !1
+					} = this.props, c = {
 						border: e,
 						className: t,
 						onClick: this.onClick,
-						small: s,
-						isFullWidth: r
+						priority: s,
+						small: r,
+						isFullWidth: o
 					};
-					return this.props.userIsSubscriber ? a.a.createElement(b, u({}, o, {
+					return this.props.userIsSubscriber ? a.a.createElement(f, u({}, c, {
 						buttonType: this.props.identifier.type
-					})) : a.a.createElement(m, u({}, o, {
+					})) : a.a.createElement(p, u({}, c, {
 						id: n
 					}), this.props.children, Object(i.a)({
 						type: this.props.identifier.type,
@@ -3570,4 +3575,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.96446602221ec1bf7c5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.87ac598853bcb043e4bb.js.map
