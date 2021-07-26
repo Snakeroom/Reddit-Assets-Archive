@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.61b2da4ef7dcecb195a0.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c7f560f9a9369241a67c.js
+// Retrieved at 7/26/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(i, a, r) {
@@ -606,10 +606,10 @@
 						className: ti.a.content
 					}, t.a.createElement("p", {
 						className: ti.a.message
-					}, a ? I.fbt._("Once you hit Submit, the answer is final and tokens will be distributed to the winners", null, {
-						hk: "4cSIyE"
-					}) : I.fbt._("Once you hit Submit, the answer is final and coins will be distributed to the winners", null, {
-						hk: "3Nutvx"
+					}, a ? I.fbt._("Once you hit Submit, the answer is final and tokens will be distributed to the winners. After resolving this prediction you will not be able to delete or remove it.", null, {
+						hk: "1rtAzB"
+					}) : I.fbt._("Once you hit Submit, the answer is final and coins will be distributed to the winners. After resolving this prediction you will not be able to delete or remove it.", null, {
+						hk: "1M6iWL"
 					})), t.a.createElement("div", {
 						className: ti.a.actions
 					}, t.a.createElement(ai.l, {
@@ -1827,4 +1827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.61b2da4ef7dcecb195a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c7f560f9a9369241a67c.js.map
