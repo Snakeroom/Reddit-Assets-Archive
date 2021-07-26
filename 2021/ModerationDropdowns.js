@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.1bdb07e98faf17a2e8ce.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.64cd111ba07c631f4f91.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, s) {
@@ -56,9 +56,9 @@
 			})), s.d(t, "f", (function() {
 				return z
 			})), s.d(t, "o", (function() {
-				return K
-			})), s.d(t, "p", (function() {
 				return H
+			})), s.d(t, "p", (function() {
+				return K
 			})), s.d(t, "d", (function() {
 				return V
 			})), s.d(t, "a", (function() {
@@ -202,7 +202,7 @@
 						moreCommentsItem: i,
 						...h.error
 					}))
-				}, A = Object(b.a)(x.b, k.a.upvoted), G = Object(b.a)(x.b, k.a.downvoted), U = Object(i.a)(I.j), z = Object(i.a)(I.i), W = Object(i.a)(I.e), Q = Object(i.a)(I.f), K = (Object(i.a)(I.c), Object(i.a)(I.d), ({
+				}, A = Object(b.a)(x.b, k.a.upvoted), G = Object(b.a)(x.b, k.a.downvoted), U = Object(i.a)(I.j), z = Object(i.a)(I.i), W = Object(i.a)(I.e), Q = Object(i.a)(I.f), H = (Object(i.a)(I.c), Object(i.a)(I.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -223,7 +223,7 @@
 						commentsPageKey: t,
 						isCollapsed: d
 					})), d || 0 !== c || s(e, !0), Object(p.d)()
-				}), H = ({
+				}), K = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
@@ -1613,28 +1613,28 @@
 				D = Object(r.b)(F, (e, {
 					post: t
 				}) => ({
-					onApprovePost: () => e(Object(l.s)(t.id)),
+					onApprovePost: () => e(Object(l.q)(t.id)),
 					onEditPredictionEnd: () => e(Object(d.l)(t.id)),
-					onDistinguishPost: s => e(Object(l.v)(t.id, s)),
+					onDistinguishPost: s => e(Object(l.t)(t.id, s)),
 					onFlairChanged: (s, n) => e(Object(m.h)({
 						post: t,
 						previewFlair: s,
 						selectedTemplateId: n
 					})),
 					onFlairPost: t => e(Object(c.i)(t)),
-					onLockPost: () => e(Object(l.E)(t.id)),
-					onNsfwPost: () => e(Object(l.I)(t.id)),
-					onOcPost: () => e(Object(l.L)(t.id)),
+					onLockPost: () => e(Object(l.C)(t.id)),
+					onNsfwPost: () => e(Object(l.E)(t.id)),
+					onOcPost: () => e(Object(l.H)(t.id)),
 					onCcPost: () => {
-						e(Object(c.i)(f.a.CROWD_CONTROL)), e(Object(l.u)(t.id))
+						e(Object(c.i)(f.a.CROWD_CONTROL)), e(Object(l.s)(t.id))
 					},
-					onRemovePost: () => e(Object(l.U)(t.id, !1)),
+					onRemovePost: () => e(Object(l.Q)(t.id, !1)),
 					onModToMemberShareOpened: () => {
-						e(Object(c.i)(f.a.MOD_TO_MEMBER_SHARE)), e(Object(l.F)(t.id))
+						e(Object(c.i)(f.a.MOD_TO_MEMBER_SHARE)), e(Object(l.D)(t.id))
 					},
-					onSpamPost: () => e(Object(l.U)(t.id, !0)),
-					onSpoilerPost: () => e(Object(l.Z)(t.id)),
-					onStickyPost: () => e(Object(l.db)(t.id))
+					onSpamPost: () => e(Object(l.Q)(t.id, !0)),
+					onSpoilerPost: () => e(Object(l.V)(t.id)),
+					onStickyPost: () => e(Object(l.Z)(t.id))
 				})),
 				L = Object(p.a)(h.a),
 				B = M(D(Object(b.c)(e => {
@@ -1786,7 +1786,7 @@
 					tooltipId: C(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
-					Object(x.a)(t.reportedThingId) ? e(Object(c.h)(t.reportedThingId, t.reason, s)) : e(Object(l.cb)(t.reportedThingId, t.reason, s))
+					Object(x.a)(t.reportedThingId) ? e(Object(c.h)(t.reportedThingId, t.reason, s)) : e(Object(l.Y)(t.reportedThingId, t.reason, s))
 				}
 			})), y = Object(p.a)(b.a);
 			class P extends o.a.Component {
@@ -2715,14 +2715,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Wc
-					}) === n.gd.Enabled
+						experimentName: n.Vc
+					}) === n.fd.Enabled
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Vc
-					}) === n.fd.Enabled
+						experimentName: n.Uc
+					}) === n.ed.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, s) {
@@ -2839,4 +2839,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.1bdb07e98faf17a2e8ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.64cd111ba07c631f4f91.js.map

@@ -1,7 +1,24 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f76910dcbffe18e66f69.js
-// Retrieved at 7/22/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8eed1dfe5aa10c3de8b9.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
+		"./src/reddit/actions/inContextModeration.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return s
+			})), a.d(t, "b", (function() {
+				return n
+			})), a.d(t, "c", (function() {
+				return o
+			})), a.d(t, "d", (function() {
+				return c
+			}));
+			var r = a("./src/lib/makeActionCreator/index.ts");
+			const s = "INCONTEXT__BANNED",
+				n = "INCONTEXT__MUTED",
+				o = Object(r.a)(s),
+				c = Object(r.a)(n)
+		},
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "c", (function() {
@@ -1827,7 +1844,7 @@
 					to: `${b.a}/${t}`
 				}, s.a.createElement(m.q, {
 					onClick: () => {
-						a ? c && h(Object(i.fb)(c)) : E()
+						a ? c && h(Object(i.bb)(c)) : E()
 					},
 					className: Object(d.a)(f.a.snoovatarButton, f.a.snoovatarExtraPadding, f.a.compactButtonLayout, {
 						[f.a.avatarPostifyButton]: a
@@ -2660,4 +2677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f76910dcbffe18e66f69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8eed1dfe5aa10c3de8b9.js.map

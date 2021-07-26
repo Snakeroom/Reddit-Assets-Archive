@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.665084393f363d361f98.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.95637025706df4c9606a.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -747,10 +747,10 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.tc,
+					experimentName: s.sc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.wc.Enabled)
+				d = Object(c.a)(o, e => e === s.vc.Enabled)
 		},
 		"./src/reddit/selectors/experiments/inboxRedesign.ts": function(e, t, n) {
 			"use strict";
@@ -782,12 +782,12 @@
 					experimentName: s.cb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				d = Object(c.a)(o, e => e === s.Bc.Enabled),
+				d = Object(c.a)(o, e => e === s.Ac.Enabled),
 				u = Object(c.a)(e => Object(r.c)(e, {
-					experimentName: s.vc,
+					experimentName: s.uc,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				l = Object(c.a)(d, u, (e, t) => e && t === s.Ac.Enabled),
+				l = Object(c.a)(d, u, (e, t) => e && t === s.zc.Enabled),
 				b = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.fb,
 					experimentEligibilitySelector: a.e
@@ -797,24 +797,24 @@
 					experimentName: s.ab,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				p = Object(c.a)(h, e => e === s.yc.Banner_1st_time),
-				x = Object(c.a)(h, e => e === s.yc.Tooltip_persist),
-				f = Object(c.a)(h, e => e === s.yc.Tooltip_1st_time),
+				p = Object(c.a)(h, e => e === s.xc.Banner_1st_time),
+				x = Object(c.a)(h, e => e === s.xc.Tooltip_persist),
+				f = Object(c.a)(h, e => e === s.xc.Tooltip_1st_time),
 				j = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.bb,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				O = Object(c.a)(j, e => e === s.zc.ContinuousScroll),
+				O = Object(c.a)(j, e => e === s.yc.ContinuousScroll),
 				g = Object(c.a)(e => Object(r.c)(e, {
 					experimentName: s.U,
 					experimentEligibilitySelector: a.e
 				}), i.a),
-				C = Object(c.a)(g, e => e === s.Ab.Banner1stTime),
-				E = Object(c.a)(g, e => e === s.Ab.BannerPersist)
+				C = Object(c.a)(g, e => e === s.zb.Banner1stTime),
+				E = Object(c.a)(g, e => e === s.zb.BannerPersist)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"712476d48c90"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.665084393f363d361f98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.95637025706df4c9606a.js.map

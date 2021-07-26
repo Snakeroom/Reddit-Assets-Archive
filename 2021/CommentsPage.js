@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.92055926953cf47b9637.js
-// Retrieved at 7/22/2021, 7:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.6d851a0ab99e177ce4dc.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -358,7 +358,7 @@
 						instanceId: w,
 						include_categories: !0
 					});
-					k && (R.sort = S), R.onOtherDiscussions = y, t(O.r(m)), await t(Le(m, p, R, S));
+					k && (R.sort = S), R.onOtherDiscussions = y, t(O.p(m)), await t(Le(m, p, R, S));
 					const F = s().posts.models[m],
 						B = Object(Y.J)(s());
 					if (F && "subreddit" === F.belongsTo.type) {
@@ -386,9 +386,9 @@
 							i = Object(se.K)(s(), {
 								identifier: F.belongsTo
 							});
-						if (i && (e => D.td.Redirect === Object(U.b)(e, {
+						if (i && (e => D.sd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: D.ld
+								experimentName: D.kd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((F.media && F.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${F.belongsTo.type===_.a.SUBREDDIT?i.url:"/"}${Object(u.t)(F.id)}`;
@@ -586,7 +586,7 @@
 						const t = Object(te.G)(a(), {
 							postId: e
 						});
-						if (n(O.z(t, k.a.CommentsView)), t && "subreddit" === t.belongsTo.type && H.body.comments) {
+						if (n(O.x(t, k.a.CommentsView)), t && "subreddit" === t.belongsTo.type && H.body.comments) {
 							const e = Object(pe.i)(() => n(Object(g.a)({
 								commentIds: Object.keys(H.body.comments),
 								postIds: [t.id],
@@ -919,7 +919,7 @@
 					a = `error-block-${t}`,
 					d = `success-block-${t}`;
 				if (i.ok) {
-					s(Object(u.T)({
+					s(Object(u.P)({
 						[e]: {
 							suggestedSort: t
 						}
@@ -1123,7 +1123,7 @@
 					},
 					onSetSuggestedSort: s => e(f(t, s)),
 					hideTooltip: () => e(Object(l.i)()),
-					setContestMode: s => e(Object(u.X)(s, t)),
+					setContestMode: s => e(Object(u.T)(s, t)),
 					showTooltip: () => e(Object(l.h)({
 						tooltipId: Z
 					})),
@@ -4607,18 +4607,18 @@
 				pageLayer: t,
 				postId: s
 			}) => ({
-				onIgnoreReports: () => e(Object(b.bb)(s)),
+				onIgnoreReports: () => e(Object(b.X)(s)),
 				onOpenReportsDropdown: t => e(Object(E.h)({
 					tooltipId: t
 				})),
 				onVoteClick: t => {
-					const o = t === M.a.upvoted ? Object(b.fb)(s) : Object(b.w)(s);
+					const o = t === M.a.upvoted ? Object(b.bb)(s) : Object(b.u)(s);
 					e(o)
 				},
-				fireAdPixelsOfType: (t, s) => e(Object(b.z)(t, s)),
-				openPost: t => e(Object(b.M)(t)),
-				onFollowPost: t => e(Object(b.eb)(s, t)),
-				onFollowPostExpired: () => e(Object(b.Y)({
+				fireAdPixelsOfType: (t, s) => e(Object(b.x)(t, s)),
+				openPost: t => e(Object(b.I)(t)),
+				onFollowPost: t => e(Object(b.ab)(s, t)),
+				onFollowPostExpired: () => e(Object(b.U)({
 					id: s,
 					expiresAt: 0
 				}))
@@ -4772,7 +4772,6 @@
 					}, i.a.createElement(he.a, {
 						model: ne,
 						handleVote: Z,
-						subreddit: Ee,
 						isCountAnimShadowTestEnabled: I,
 						isOverlay: R,
 						isVoteCountAnimation: F,
@@ -4846,7 +4845,6 @@
 					}, i.a.createElement(he.a, {
 						model: ne,
 						handleVote: Z,
-						subreddit: Ee,
 						isCountAnimShadowTestEnabled: I,
 						isOverlay: R,
 						isVoteCountAnimation: F,
@@ -4927,7 +4925,6 @@
 				}, i.a.createElement(he.a, {
 					model: ne,
 					handleVote: Z,
-					subreddit: Ee,
 					isCountAnimShadowTestEnabled: I,
 					isOverlay: R,
 					isVoteCountAnimation: F,
@@ -5714,7 +5711,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.Zd)(t) && !Object(j.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.Yd)(t) && !Object(j.a)(t),
 							subreddit: o
 						}
 					}
@@ -5769,7 +5766,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.Zd)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.Yd)(c) && !Object(j.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -5780,9 +5777,9 @@
 						hk: "2g363L"
 					}) : Object(j.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.Oc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
+					}) : t === x.Nc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
 						hk: "w3BDa"
-					}) : t === x.Oc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.Nc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -6067,16 +6064,16 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(c.M(t))
+						})), e(c.I(t))
 					},
 					fireAdPixelsOfType: (t, s) => {
-						e(c.z(t, s))
+						e(c.x(t, s))
 					},
 					trackOnPostEnteredViewport: (t, s, o, n) => {
-						e(c.P(t, o, n))
+						e(c.L(t, o, n))
 					},
 					trackOnPostExitedViewport: (t, s, o, n, r) => {
-						e(c.Q(t, o, n, r))
+						e(c.M(t, o, n, r))
 					},
 					surveyTriggerScrollCounted: () => e(Object(m.h)())
 				}),
@@ -7672,9 +7669,9 @@
 			const r = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.Fb
+					experimentName: o.Eb
 				});
-				return !(!t || Object(o.Zd)(t))
+				return !(!t || Object(o.Yd)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -7687,8 +7684,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.md
-			}) === o.ud.Enabled
+				experimentName: o.ld
+			}) === o.td.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -7809,7 +7806,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.Zd)(t)
+					return Boolean(t) && !Object(n.Yd)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -7834,4 +7831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.92055926953cf47b9637.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.6d851a0ab99e177ce4dc.js.map

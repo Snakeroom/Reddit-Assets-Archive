@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bfcfec3410d9ea1346c3.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.54f8367e6a0caf5f3c7a.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -374,10 +374,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const r = s === i.a.upvoted ? Object(a.fb)(t) : Object(a.w)(t);
+						const r = s === i.a.upvoted ? Object(a.bb)(t) : Object(a.u)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.bb)(t)),
+					onIgnoreReports: () => e(Object(a.X)(t)),
 					onOpenReportsDropdown: t => e(Object(n.h)({
 						tooltipId: t
 					}))
@@ -510,4 +510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.bfcfec3410d9ea1346c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.54f8367e6a0caf5f3c7a.js.map

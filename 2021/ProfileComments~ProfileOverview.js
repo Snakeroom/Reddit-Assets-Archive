@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.3c465981dd4ab22ab5eb.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.99dc61ce318950a39dff.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -824,7 +824,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || u,
-				onClick: () => n === d.Gd.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
+				onClick: () => n === d.Fd.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
 				onMouseEnter: s,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -2026,7 +2026,7 @@
 					},
 					isNightmodeOn: g.V
 				}), e => ({
-					openPost: t => e(Object(h.M)(t))
+					openPost: t => e(Object(h.I)(t))
 				}));
 			class S extends s.a.Component {
 				render() {
@@ -2248,4 +2248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.3c465981dd4ab22ab5eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.99dc61ce318950a39dff.js.map

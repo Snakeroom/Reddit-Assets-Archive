@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6dec5431b70c43b8718b.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e6fd5cce978f3ca59340.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -711,7 +711,7 @@
 							const {
 								postId: e
 							} = i, t = a.posts.models[e];
-							t && t.voteState === v.a.notVoted && r(Object(o.fb)(e))
+							t && t.voteState === v.a.notVoted && r(Object(o.bb)(e))
 						}
 					} else r(C({
 						pollId: e,
@@ -2816,4 +2816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.6dec5431b70c43b8718b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e6fd5cce978f3ca59340.js.map

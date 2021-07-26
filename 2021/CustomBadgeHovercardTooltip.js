@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.2dfd563e499bde51810b.js
-// Retrieved at 7/21/2021, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.c8115f8fadbfa068f370.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -914,4 +914,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.2dfd563e499bde51810b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.c8115f8fadbfa068f370.js.map

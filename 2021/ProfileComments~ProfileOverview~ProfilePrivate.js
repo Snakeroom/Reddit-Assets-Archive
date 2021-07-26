@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c53553c1821aebd174ab.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.57f9ed23f341e154f077.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -673,7 +673,6 @@
 							toggleCheckbox: he,
 							flairStyleTemplate: ge,
 							redditStyle: de,
-							subreddit: ue,
 							postId: ae
 						}), n.a.createElement(v.a, {
 							"data-click-id": "background",
@@ -1570,7 +1569,7 @@
 				},
 				isNightmodeOn: v.V
 			}), e => ({
-				openPost: t => e(Object(m.M)(t))
+				openPost: t => e(Object(m.I)(t))
 			}));
 			var _ = Object(l.a)(E(e => {
 					const {
@@ -2966,10 +2965,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const o = s === a.a.upvoted ? Object(r.fb)(t) : Object(r.w)(t);
+						const o = s === a.a.upvoted ? Object(r.bb)(t) : Object(r.u)(t);
 						e(o)
 					},
-					onIgnoreReports: () => e(Object(r.bb)(t)),
+					onIgnoreReports: () => e(Object(r.X)(t)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -3145,4 +3144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c53553c1821aebd174ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.57f9ed23f341e154f077.js.map

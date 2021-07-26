@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.2857f0e27698ef29401f.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.6b9b1aa57c4bcbd0f4a4.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -717,7 +717,7 @@
 			var at = e => {
 					const t = ["control_1", "control_2", ...He.k[e.experimentName]];
 					if (!t) return null;
-					const n = He.cc.has(e.experimentName);
+					const n = He.bc.has(e.experimentName);
 					return a.a.createElement(G.a, {
 						className: e.className
 					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -806,7 +806,7 @@
 				}
 			}
 			var ut = Object(u.b)(mt, e => ({
-					linkCopied: t => e(Fe.D(t)),
+					linkCopied: t => e(Fe.B(t)),
 					onSetExperimentOverride: (t, n) => e(Be.c({
 						experimentName: t,
 						override: n
@@ -1860,4 +1860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.2857f0e27698ef29401f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.6b9b1aa57c4bcbd0f4a4.js.map

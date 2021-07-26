@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.bc35b662ecf71a224e77.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.274de0bb005d8e609b38.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -174,7 +174,7 @@
 										pollId: m,
 										tournamentId: e,
 										tournamentPostId: n.id
-									})), s && x < 1 && o(Object(w.fb)(m)), j(!1), h(null), d ? D(!0) : a({
+									})), s && x < 1 && o(Object(w.bb)(m)), j(!1), h(null), d ? D(!0) : a({
 										duration: 5e3,
 										kind: f.b.SuccessCommunity,
 										text: B._("Thanks! See if you're right in {timeToResult}", [B._param("timeToResult", Object(g.a)(new Date(b), !0))], {
@@ -302,4 +302,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.bc35b662ecf71a224e77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.274de0bb005d8e609b38.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a75b895f0028bdc397be.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.3d18cd5da98666209382.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, a) {
@@ -115,7 +115,7 @@
 							const {
 								postId: e
 							} = o, t = r.posts.models[e];
-							t && t.voteState === v.a.notVoted && a(Object(s.fb)(e))
+							t && t.voteState === v.a.notVoted && a(Object(s.bb)(e))
 						}
 					} else a(N({
 						pollId: e,
@@ -1715,4 +1715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a75b895f0028bdc397be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.3d18cd5da98666209382.js.map

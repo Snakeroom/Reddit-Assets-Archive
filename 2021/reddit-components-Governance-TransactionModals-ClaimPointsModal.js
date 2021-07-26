@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.67c8b8ad82691ba40e67.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.af51d4ae9a0064903c42.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -122,7 +122,7 @@
 							const {
 								postId: e
 							} = c, t = r.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(i.fb)(e))
+							t && t.voteState === f.a.notVoted && n(Object(i.bb)(e))
 						}
 					} else n(E({
 						pollId: e,
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.67c8b8ad82691ba40e67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.af51d4ae9a0064903c42.js.map

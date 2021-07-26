@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.23615abcc4c2f18a8b8f.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.787ea4216f54394dd6e9.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -666,8 +666,7 @@
 						handleVote: i,
 						showBulkActionCheckbox: m,
 						isCheckboxSelected: r,
-						toggleCheckbox: p,
-						subreddit: c
+						toggleCheckbox: p
 					}), l.a.createElement(ae, null, l.a.createElement(ie, null, l.a.createElement(de, null, s.postAuthor && l.a.createElement(M.a, {
 						comment: s,
 						subredditOrProfile: c
@@ -758,7 +757,7 @@
 				}, l.a.createElement(y.a, null, e.buttonText)), "StatusItem", nt.a),
 				at = p.a.div("StatusContainer", nt.a),
 				it = Object(c.c)({
-					selectedItems: Ce.g
+					selectedItems: Ce.f
 				}),
 				lt = Object(d.b)(it, e => ({
 					onIgnoreReports: () => e(Object(u.f)(fe.a.IgnoreReports)),
@@ -862,7 +861,7 @@
 					isApiPending: Ce.a,
 					moderatorPermissions: Ye.l,
 					posts: et.J,
-					selectedItems: Ce.g
+					selectedItems: Ce.f
 				}),
 				vt = Object(d.b)(Ot, e => ({
 					onApprove: () => e(Object(u.f)(fe.a.Approve)),
@@ -1029,11 +1028,11 @@
 				}),
 				Rt = Object(c.c)({
 					currentPage: e => e.platform.currentPage,
-					isModQueueListingPending: Ce.c,
-					loadMore: Ce.e,
-					modQueueListingItems: Ce.d,
+					isModQueueListingPending: Ce.b,
+					loadMore: Ce.d,
+					modQueueListingItems: Ce.c,
 					origin: ye.j,
-					selectedItems: Ce.g,
+					selectedItems: Ce.f,
 					subredditId: (e, t) => t.subredditName ? Object(Ee.D)(e, t.subredditName) : null
 				}),
 				Mt = Object(d.b)(Rt, e => ({
@@ -1046,8 +1045,8 @@
 					bulkUnselectItems: t => e(Object(u.c)({
 						ids: t
 					})),
-					fireAdPixelsOfType: (t, s) => e(Object(h.z)(t, s)),
-					openPost: t => e(Object(h.M)(t))
+					fireAdPixelsOfType: (t, s) => e(Object(h.x)(t, s)),
+					openPost: t => e(Object(h.I)(t))
 				})),
 				Bt = e => e.page ? parseInt(e.page, 10) : fe.b,
 				At = e => Bt(e) + 1,
@@ -2111,4 +2110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.23615abcc4c2f18a8b8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.787ea4216f54394dd6e9.js.map

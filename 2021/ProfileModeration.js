@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.6a6a735757e7baa11d47.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.02d1a6faf329900351f8.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -918,7 +918,7 @@
 					right: 0,
 					top: u.f,
 					willChange: "transform",
-					zIndex: m.g
+					zIndex: m.f
 				};
 			class S extends i.a.Component {
 				constructor(e) {
@@ -1877,4 +1877,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.6a6a735757e7baa11d47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.02d1a6faf329900351f8.js.map

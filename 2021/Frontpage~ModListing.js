@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.2927e629c9a02c0673d5.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.feff27cae3526d1dbb7c.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -881,8 +881,8 @@
 						hk: "1QaJzt"
 					})
 				};
-			var Z = s("./src/reddit/components/StateSort/index.m.less"),
-				J = s.n(Z);
+			var J = s("./src/reddit/components/StateSort/index.m.less"),
+				Z = s.n(J);
 
 			function X() {
 				return (X = Object.assign || function(e) {
@@ -893,7 +893,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const $ = D.a.wrapped(C.a, "_Dropdown", J.a),
+			const $ = D.a.wrapped(C.a, "_Dropdown", Z.a),
 				ee = Object(w.a)($),
 				te = e => {
 					return e.indexOf("_") > 0 && ne(e) === b.y.UnitedStates
@@ -956,7 +956,7 @@
 						isSelected: e.sort === n
 					}))
 				}))))
-			})), "Component", J.a);
+			})), "Component", Z.a);
 			const ce = {
 				[b.y.Everywhere]: () => y.fbt._("Everywhere", null, {
 					hk: "3ysAHX"
@@ -1470,7 +1470,7 @@
 		"./src/reddit/components/PostList/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return J
+				return Z
 			})), s.d(t, "a", (function() {
 				return $
 			}));
@@ -1526,13 +1526,13 @@
 				return void 0 === l && (l = () => {
 					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a, d)
 				}, V.set(c, l)), l
-			}, Z = (e, t, s, n, r) => {
+			}, J = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
 				let i = K.get(o);
 				return void 0 === i && (i = o => {
 					s.trackOnPostExitedViewport(e, t, o, n, r)
 				}, K.set(o, i)), i
-			}, J = (e, t, s = !1) => {
+			}, Z = (e, t, s = !1) => {
 				const n = `click-${e}`;
 				let r = G.get(n);
 				return void 0 === r && (r = (e, n, r, o, i) => {
@@ -1738,8 +1738,8 @@
 						let A = `post-list-item-[layout: ${n}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && g && (A += `--${g}`);
 						const B = Q(e, n, s, g, y, S, this.props, t, this.props.hostPostData),
-							Y = Z(e, n, this.props, t, w),
-							H = J(e, this.props, d),
+							Y = J(e, n, this.props, t, w),
+							H = Z(e, this.props, d),
 							F = R.media && R.media.type === T.o.EMBED ? R.media.provider : null,
 							M = p && !D.isSponsored,
 							V = m && !D.isSponsored && !D.isScoreHidden;
@@ -2022,16 +2022,16 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(c.M(t))
+						})), e(c.I(t))
 					},
 					fireAdPixelsOfType: (t, s) => {
-						e(c.z(t, s))
+						e(c.x(t, s))
 					},
 					trackOnPostEnteredViewport: (t, s, n, r) => {
-						e(c.P(t, n, r))
+						e(c.L(t, n, r))
 					},
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
-						e(c.Q(t, n, r, o))
+						e(c.M(t, n, r, o))
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.h)())
 				}),
@@ -2359,15 +2359,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Mb
+						experimentName: n.Lb
 					});
-					return !(!t || Object(n.Zd)(t))
+					return !(!t || Object(n.Yd)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Mb
-					}) === n.ec.ListingEnabled
+						experimentName: n.Lb
+					}) === n.dc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2481,4 +2481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.2927e629c9a02c0673d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.feff27cae3526d1dbb7c.js.map

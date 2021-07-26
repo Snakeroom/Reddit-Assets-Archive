@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.94d3bdfc2ee61dd1fcfb.js
-// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a1862ae12ea6fa493c6f.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -558,10 +558,10 @@
 				}
 			}
 			var $ = J,
-				K = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				Y = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
-				Z = r.n(Y);
-			var X = a.a.memo(e => {
+				Y = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				K = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
+				X = r.n(K);
+			var Z = a.a.memo(e => {
 				const {
 					className: t,
 					direction: r,
@@ -572,15 +572,15 @@
 					hk: "3xdEc5"
 				});
 				return a.a.createElement("div", {
-					className: Object(k.a)(Z.a.buttonContainer, {
-						[Z.a.right]: o
+					className: Object(k.a)(X.a.buttonContainer, {
+						[X.a.right]: o
 					}, t)
 				}, a.a.createElement("button", {
-					className: Z.a.scrollButton,
+					className: X.a.scrollButton,
 					name: o ? d : i,
 					onClick: n
-				}, a.a.createElement(K.a, {
-					className: Z.a.chevronIcon
+				}, a.a.createElement(Y.a, {
+					className: X.a.chevronIcon
 				})))
 			});
 			const ee = (e, t) => {
@@ -741,7 +741,7 @@
 							[le.a.multiline]: i
 						}),
 						ref: this.plaqueRef
-					}, f && a.a.createElement(X, {
+					}, f && a.a.createElement(Z, {
 						direction: "left",
 						onClick: this.handleScrollLeft
 					}), (d.topAwardedType === B.a.Active || d.topAwardedType === B.a.Inactive) && !s && o && a.a.createElement(de, {
@@ -773,7 +773,7 @@
 						onAddAward: l
 					}), !i && a.a.createElement("div", {
 						className: le.a.spacer
-					}), w && a.a.createElement(X, {
+					}), w && a.a.createElement(Z, {
 						direction: "right",
 						onClick: this.handleScrollRight
 					}))
@@ -1963,10 +1963,10 @@
 				V = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				J = r("./src/reddit/models/Flair/index.ts"),
 				$ = r("./src/reddit/models/NewStructuredStyles/index.ts"),
-				K = r("./src/reddit/models/Post/index.ts"),
-				Y = r("./src/reddit/models/Subreddit/index.ts"),
-				Z = r("./src/reddit/selectors/authorFlair.ts"),
-				X = r("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
+				Y = r("./src/reddit/models/Post/index.ts"),
+				K = r("./src/reddit/models/Subreddit/index.ts"),
+				X = r("./src/reddit/selectors/authorFlair.ts"),
+				Z = r("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
 				ee = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				te = r("./src/reddit/selectors/platform.ts"),
 				re = r("./src/reddit/selectors/userFlair.ts"),
@@ -2042,12 +2042,12 @@
 						showTimestamp: M = !0,
 						subredditOrProfile: B,
 						tooltipType: L
-					} = e, R = Object(a.d)(), H = Object(f.a)(), U = Object(a.e)(X.a), G = Object(a.e)(te.d), z = Object(a.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !U || Object(l.Zd)(U));
+					} = e, R = Object(a.d)(), H = Object(f.a)(), U = Object(a.e)(Z.a), G = Object(a.e)(te.d), z = Object(a.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !U || Object(l.Yd)(U));
 					Object(s.useEffect)(() => {
 						q && R(Object(p.d)(v.author))
 					}, []);
 					const $ = v.belongsTo.id,
-						se = Object(s.useCallback)(e => Object(Z.a)(e, {
+						se = Object(s.useCallback)(e => Object(X.a)(e, {
 							post: v
 						}), [v]),
 						ie = Object(a.e)(se),
@@ -2070,7 +2070,7 @@
 						Ae = c && c.meta && c.meta.name === i.Jb.COMMENTS,
 						Oe = Object(h.a)(v),
 						ye = ge === J.b.Left,
-						je = v.authorIsContractor && !!B && B.type === Y.f.EmployeesOnly,
+						je = v.authorIsContractor && !!B && B.type === K.f.EmployeesOnly,
 						Ee = !!B && fe,
 						Te = !d && !Ae,
 						Ce = () => n.a.createElement(ce, {
@@ -2089,7 +2089,7 @@
 							flair: ie,
 							forceSmallEmojis: !0,
 							usesCommunityStyles: Te
-						})), Object(K.n)(v.author) ? n.a.createElement(me, {
+						})), Object(Y.n)(v.author) ? n.a.createElement(me, {
 							post: v,
 							isDeleted: !0,
 							renderContractorBadge: je,
@@ -2140,7 +2140,7 @@
 							flair: ie,
 							forceSmallEmojis: !0,
 							usesCommunityStyles: Te
-						})), v.belongsTo.type === N.a.SUBREDDIT && !Object(K.n)(v.author) && n.a.createElement(y.a, {
+						})), v.belongsTo.type === N.a.SUBREDDIT && !Object(Y.n)(v.author) && n.a.createElement(y.a, {
 							className: ne.a.publicWallet,
 							contentId: v.id,
 							metaSeparator: n.a.createElement(Ce, null),
@@ -3202,15 +3202,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.Mb
+						experimentName: s.Lb
 					});
-					return !(!t || Object(s.Zd)(t))
+					return !(!t || Object(s.Yd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.J,
-						experimentName: s.Mb
-					}) === s.ec.ListingEnabled
+						experimentName: s.Lb
+					}) === s.dc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3270,4 +3270,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.94d3bdfc2ee61dd1fcfb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a1862ae12ea6fa493c6f.js.map

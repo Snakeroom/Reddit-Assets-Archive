@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.c9689c7e9d8fff457b5d.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.6cb14e1938301254d43f.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -935,7 +935,7 @@
 						const s = Object(Z.G)(b(), {
 							postId: e
 						});
-						u(Object(l.z)(s, f.a.CommentSubmitted))
+						u(Object(l.x)(s, f.a.CommentSubmitted))
 					} else {
 						E.error && E.error.type === s.Gb && W.g(g, ie(r), e);
 						const t = E.error && E.error.fields && E.error.fields[0] ? E.error.fields[0].msg : n.fbt._("Something went wrong", null, {
@@ -4402,4 +4402,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c9689c7e9d8fff457b5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6cb14e1938301254d43f.js.map

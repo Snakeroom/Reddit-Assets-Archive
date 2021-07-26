@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.fbe635a923afc5a977ed.js
-// Retrieved at 7/15/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.15c0c4f1cdfa4f52fe0a.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -1314,7 +1314,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							a = Object(R.c)(n);
-						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.j(r)), e(T.e(r))) : i && (t(j.w(i)), e(T.f(i))))
+						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.j(r)), e(T.e(r))) : i && (t(j.u(i)), e(T.f(i))))
 					},
 					[m.c.Expando]: e => async (t, o, {
 						apiContext: s
@@ -1324,7 +1324,7 @@
 							i = w.b[n.user.prefs.layout];
 						if (r && (i === w.g.Compact || i === w.g.Classic)) {
 							const o = n.posts.models[r].crosspostRootId;
-							(n.posts.models[r].media || o && n.posts.models[o] && n.posts.models[o].media) && (t(j.x({
+							(n.posts.models[r].media || o && n.posts.models[o] && n.posts.models[o].media) && (t(j.v({
 								postId: r
 							})), e(T.g(r)))
 						}
@@ -1334,7 +1334,7 @@
 					}) => {
 						const n = o(),
 							r = n.shortcuts.activePostId;
-						r && !n.posts.models[r].isSponsored && (t(j.ab(r, !n.posts.models[r].hidden, n.shortcuts.namespace === m.d.Lightbox, !0)), t(L(e)), e(T.i(r)))
+						r && !n.posts.models[r].isSponsored && (t(j.W(r, !n.posts.models[r].hidden, n.shortcuts.namespace === m.d.Lightbox, !0)), t(L(e)), e(T.i(r)))
 					},
 					[m.c.NextComment]: e => async (t, o, {
 						apiContext: s
@@ -1441,7 +1441,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							a = Object(R.c)(n);
-						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.m(r)), e(T.q(r))) : i && (t(j.V(i)), e(T.r(i))))
+						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.m(r)), e(T.q(r))) : i && (t(j.R(i)), e(T.r(i))))
 					},
 					[m.c.Upvote]: e => async (t, o, {
 						apiContext: s
@@ -1452,7 +1452,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							a = Object(R.c)(n);
-						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.q(r)), e(T.t(r))) : i && (t(j.fb(i)), e(T.u(i))))
+						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.q(r)), e(T.t(r))) : i && (t(j.bb(i)), e(T.u(i))))
 					},
 					[m.c.Konami]: null
 				},
@@ -1507,4 +1507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.fbe635a923afc5a977ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.15c0c4f1cdfa4f52fe0a.js.map

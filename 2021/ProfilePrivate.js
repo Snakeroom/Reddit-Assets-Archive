@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.09918d191898f1e299a9.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.d9d1035c2c5e55587f9a.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -217,11 +217,11 @@
 				},
 				k = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
 				N = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
-				M = s("./src/lib/initializeClient/installReducer.ts"),
-				A = s("./src/reddit/reducers/features/comments/index.ts");
-			Object(M.a)({
+				A = s("./src/lib/initializeClient/installReducer.ts"),
+				M = s("./src/reddit/reducers/features/comments/index.ts");
+			Object(A.a)({
 				features: {
-					comments: A.a
+					comments: M.a
 				}
 			});
 			const K = {
@@ -394,14 +394,14 @@
 				G = s("./src/reddit/models/Media/index.ts"),
 				k = s("./src/reddit/helpers/brandSafety/index.ts"),
 				N = s("./src/reddit/helpers/trackers/ads.ts"),
-				M = s("./src/lib/LRUCache/index.ts"),
-				A = s("./src/telemetry/index.ts"),
+				A = s("./src/lib/LRUCache/index.ts"),
+				M = s("./src/telemetry/index.ts"),
 				K = s("./src/telemetry/models/Timer.ts"),
 				_ = s("./src/reddit/components/PostList/index.m.less"),
 				B = s.n(_);
 			const {
 				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = 500, D = new M.a(V), q = new M.a(V), $ = new M.a(V), U = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = 500, D = new A.a(V), q = new A.a(V), $ = new A.a(V), U = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -445,7 +445,7 @@
 			};
 			class Y extends p.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new M.a(V), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new A.a(V), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
@@ -471,12 +471,12 @@
 					}), this.eventFactoryHandler = (e, t, s) => this.props.postClickEventFactory(e, t, s, this.props)
 				}
 				UNSAFE_componentWillMount() {
-					void 0 !== this.timerId && A.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = A.c.start())
+					void 0 !== this.timerId && M.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = M.c.start())
 				}
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, void 0 !== this.timerId) {
-						const e = A.c.end(this.timerId);
-						setTimeout(() => Object(A.b)(b.l.Redesign, {
+						const e = M.c.end(this.timerId);
+						setTimeout(() => Object(M.b)(b.l.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -484,14 +484,14 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					void 0 !== this.timerId && A.c.cancel(this.timerId), e.postIds.length && (this.timerId = A.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					void 0 !== this.timerId && M.c.cancel(this.timerId), e.postIds.length && (this.timerId = M.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
 					var t, s;
-					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && A.c.has(this.timerId)) {
-						const e = A.c.end(this.timerId);
+					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && M.c.has(this.timerId)) {
+						const e = M.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(A.b)(b.l.Redesign, {
+						setTimeout(() => Object(M.b)(b.l.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -502,7 +502,7 @@
 					i && i !== (null === (s = e.postIds) || void 0 === s ? void 0 : s[0]) && this.props.onFirstPostChanged(i)
 				}
 				componentWillUnmount() {
-					this.timerId && A.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && M.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -515,7 +515,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return A.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return M.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -524,7 +524,7 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
-					const i = A.c.end(e);
+					const i = M.c.end(e);
 					setTimeout(() => {
 						s(t(i, K.TimerType.InApp))
 					}, 0)
@@ -615,14 +615,14 @@
 						k.crosspostRootId && !F[k.crosspostRootId] && O.c.withScope(e => {
 							e.setExtra("errorType", b.r.API), e.setExtra("description", `Post ${k.id} is crosspost of ${k.crosspostRootId}, but ` + `${k.crosspostRootId} details are missing in the state`), O.c.captureMessage("Crosspost parent details are missing")
 						});
-						const M = this.props.postComponentForLayout({
+						const A = this.props.postComponentForLayout({
 							isCrosspost: !!k.crosspostRootId,
 							isFirstPost: C,
 							layout: i,
 							post: N
 						});
-						let A = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && f && (A += `--${f}`);
+						let M = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && f && (M += `--${f}`);
 						const K = J(e, i, s, f, v, y, this.props, t, this.props.hostPostData),
 							_ = W(e, i, this.props, t, P),
 							B = X(e, this.props, a),
@@ -642,10 +642,10 @@
 								remeasure: b,
 								setScrollerChildRef: y,
 								shouldLoadInitially: O
-							}) => p.a.createElement(M, {
+							}) => p.a.createElement(A, {
 								className: i,
 								currentProfileName: r,
-								key: A,
+								key: M,
 								availableWidth: m,
 								eventFactory: this.eventFactoryHandler,
 								first: C,
@@ -829,13 +829,13 @@
 				x = Object(o.b)(O, (e, t) => ({
 					onBottomViewed: (t, s) => e(a.c(t, s)),
 					openPost: t => {
-						e(d.M(t))
+						e(d.I(t))
 					},
 					trackOnPostEnteredViewport: (t, s) => {
-						Object(u.a)(t) && e(d.P(t))
+						Object(u.a)(t) && e(d.L(t))
 					},
 					trackOnPostExitedViewport: (t, s, i) => {
-						Object(u.a)(t) && e(d.Q(t, i))
+						Object(u.a)(t) && e(d.M(t, i))
 					},
 					fireAdPixelsOfType: r.a
 				}), (e, t, s) => ({
@@ -950,7 +950,7 @@
 					postsById: e => e.posts.models,
 					viewportDataLoaded: (e, t) => !E(e, t) && !T(e, t)
 				},
-				M = Object(n.c)({
+				A = Object(n.c)({
 					...N,
 					currentUser: F.j,
 					commentsById: e => e.features.comments.models,
@@ -960,7 +960,7 @@
 					itemIdToPostId: R,
 					estimateItemHeight: O.b
 				}),
-				A = Object(n.c)({
+				M = Object(n.c)({
 					...N,
 					measureScrollFPS: j.d.measureScrollFPS,
 					postIds: (e, {
@@ -971,20 +971,20 @@
 				K = e => ({
 					onBottomViewed: f.a,
 					openPost: t => {
-						e(v.M(t))
+						e(v.I(t))
 					},
 					trackOnPostEnteredViewport: f.a,
 					fireAdPixelsOfType: (t, s) => {
-						e(v.z(t, s))
+						e(v.x(t, s))
 					}
 				}),
-				_ = Object(o.b)(M, K, (e, t, s) => ({
+				_ = Object(o.b)(A, K, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
 					postClickEventFactory: (e, t) => Object(I.h)(e, t)
 				})),
-				B = Object(o.b)(A, e => ({
+				B = Object(o.b)(M, e => ({
 					...K(e),
 					onFirstPostChanged: f.a,
 					adBrandSafetyStatusReceived: f.a,
@@ -1187,4 +1187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.09918d191898f1e299a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d9d1035c2c5e55587f9a.js.map

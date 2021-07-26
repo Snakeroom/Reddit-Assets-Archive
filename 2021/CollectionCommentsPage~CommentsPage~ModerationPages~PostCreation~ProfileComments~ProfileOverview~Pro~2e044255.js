@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7c8ccd8765f4557567d9.js
-// Retrieved at 7/22/2021, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.febe552df6ae28fc68b6.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -827,7 +827,7 @@
 					isSubreddit: h.K,
 					pageLayer: e => e
 				}),
-				J = Object(a.c)({
+				W = Object(a.c)({
 					isPinned: (e, {
 						post: t
 					}) => Object(P.q)(e, {
@@ -835,7 +835,7 @@
 					}),
 					modModeEnabled: h.R
 				}),
-				W = Object(i.b)(J, (e, t) => ({
+				J = Object(i.b)(W, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
 					onOpenRemovalReasonModal: () => {
 						s.e("removalReasonActions").then(s.bind(null, "./src/reddit/actions/removalReasons/index.ts")).then(s => e(s.fetchReasonsAndOpenModal(t.post.belongsTo.id, [t.post.id])))
@@ -844,7 +844,7 @@
 						tooltipId: t
 					}))
 				}));
-			t.a = U(W(({
+			t.a = U(J(({
 				className: e,
 				displayText: t,
 				isSubreddit: s,
@@ -854,8 +854,8 @@
 				isProfilePostListing: P,
 				modModeEnabled: L,
 				onHideTooltip: U,
-				onOpenRemovalReasonModal: J,
-				onShowTooltip: W,
+				onOpenRemovalReasonModal: W,
+				onShowTooltip: J,
 				post: V,
 				tooltipType: G
 			}) => {
@@ -890,7 +890,7 @@
 					className: Object(c.a)(w.a.icon, w.a.archivedIcon),
 					desc: B(),
 					id: Z,
-					onMouseEnter: W(Z),
+					onMouseEnter: J(Z),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
@@ -900,7 +900,7 @@
 					className: Object(c.a)(w.a.icon, w.a.lockIcon),
 					desc: R(),
 					id: Q,
-					onMouseEnter: W(Q),
+					onMouseEnter: J(Q),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: Q,
@@ -910,7 +910,7 @@
 					className: Object(c.a)(w.a.icon, w.a.stickyIcon),
 					desc: F(),
 					id: re,
-					onMouseEnter: W(re),
+					onMouseEnter: J(re),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: re,
@@ -920,7 +920,7 @@
 					className: Object(c.a)(w.a.icon, w.a.stickyIcon),
 					desc: H(),
 					id: oe,
-					onMouseEnter: W(oe),
+					onMouseEnter: J(oe),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: oe,
@@ -930,7 +930,7 @@
 					className: Object(c.a)(w.a.icon, w.a.approveIcon),
 					desc: Object(f.a)(V),
 					id: z,
-					onMouseEnter: W(z),
+					onMouseEnter: J(z),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: z,
@@ -940,16 +940,16 @@
 					className: Object(c.a)(w.a.icon, w.a.removeIcon),
 					desc: Object(f.c)(V),
 					id: te,
-					onMouseEnter: W(te),
+					onMouseEnter: J(te),
 					onMouseLeave: U
 				}), Y && o.a.createElement(m.a, {
 					className: w.a.addRemovalReason,
-					onClick: J,
+					onClick: W,
 					text: n.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
 				}), (V.modRemovalReason || V.modNote) && o.a.createElement(M, {
-					onMouseEnter: W(te),
+					onMouseEnter: J(te),
 					onMouseLeave: U
 				}, n.fbt._("Removal reason", null, {
 					hk: "2DhKVZ"
@@ -961,7 +961,7 @@
 					className: Object(c.a)(w.a.icon, w.a.spamIcon),
 					desc: Object(f.e)(V),
 					id: ne,
-					onMouseEnter: W(ne),
+					onMouseEnter: J(ne),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: ne,
@@ -982,7 +982,7 @@
 					className: Object(c.a)(w.a.icon, w.a.reportIcon),
 					desc: Object(f.d)(V.numReports),
 					id: se,
-					onMouseEnter: W(se),
+					onMouseEnter: J(se),
 					onMouseLeave: U
 				}), o.a.createElement(u.c, N({
 					tooltipId: se,
@@ -1106,7 +1106,7 @@
 					to: `${b.a}/${t}`
 				}, r.a.createElement(u.q, {
 					onClick: () => {
-						s ? a && E(Object(c.fb)(a)) : g()
+						s ? a && E(Object(c.bb)(a)) : g()
 					},
 					className: Object(d.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
 						[x.a.avatarPostifyButton]: s
@@ -2038,7 +2038,7 @@
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === p.A) n.push(J(r, o));
+						if (r.e === p.A) n.push(W(r, o));
 						else if (r.e === p.x) n.push(a.a.createElement(S.a, {
 							key: o
 						}, A(r.c, t, s)));
@@ -2061,7 +2061,7 @@
 				U = (e, t, s) => {
 					switch (e.e) {
 						case p.o:
-							const n = J({
+							const n = W({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2101,7 +2101,7 @@
 							}, e.t)
 					}
 				},
-				J = (e, t) => {
+				W = (e, t) => {
 					const {
 						f: s,
 						t: r
@@ -2117,7 +2117,7 @@
 					}
 					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
 				},
-				W = {
+				J = {
 					[p.j.monospace]: c.h,
 					[p.j.bold]: c.b,
 					[p.j.italic]: c.f,
@@ -2128,7 +2128,7 @@
 				},
 				V = (e, t, s) => {
 					let n = t;
-					return n = o()(W, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
+					return n = o()(J, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
@@ -2342,12 +2342,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.Jd.SmIcon:
+						case h.Id.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.Jd.SmIconHc:
+						case h.Id.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2940,12 +2940,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Bd
+						experimentName: n.Ad
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Jd.SmIcon || t === n.Jd.SmIconHc
+					return t === n.Id.SmIcon || t === n.Id.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2968,4 +2968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7c8ccd8765f4557567d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.febe552df6ae28fc68b6.js.map

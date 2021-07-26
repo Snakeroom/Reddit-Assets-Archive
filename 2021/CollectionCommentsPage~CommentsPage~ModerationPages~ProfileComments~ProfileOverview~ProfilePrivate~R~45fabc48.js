@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a979e88769671beb2380.js
-// Retrieved at 7/22/2021, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.176621042a40a2953c48.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -198,7 +198,7 @@
 			})), o.d(t, "h", (function() {
 				return K
 			})), o.d(t, "f", (function() {
-				return Q
+				return Y
 			})), o.d(t, "d", (function() {
 				return se
 			}));
@@ -461,7 +461,7 @@
 						}))
 					}
 					return a
-				}, J = Object(i.a)(a.l), z = Object(i.a)(a.m), Y = Object(i.a)(a.k), Q = e => async (t, o) => {
+				}, J = Object(i.a)(a.l), z = Object(i.a)(a.m), Q = Object(i.a)(a.k), Y = e => async (t, o) => {
 					const s = o().platform.currentPage.locationState;
 					t(!(!s || !s[d.a.IsOverlay]) ? Object(k.a)(e.permalink) : Object(n.b)(Object(E.b)(e.permalink)))
 				}, X = Object(i.a)(a.i), Z = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), oe = Object(i.a)(a.q), se = e => async t => {
@@ -512,7 +512,7 @@
 						})), a = !0;
 						else {
 							const e = i.error;
-							o(Y(e)), o(Object(c.f)({
+							o(Q(e)), o(Object(c.f)({
 								kind: w.b.Error,
 								text: s.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -650,7 +650,7 @@
 							})
 						})), t(F(a.id));
 						const e = Object(C.a)(d.body);
-						t(Object(r.T)({
+						t(Object(r.P)({
 							[a.id]: e
 						}))
 					} else t(N(d.error))
@@ -966,7 +966,7 @@
 							const {
 								commentCountChange: t
 							} = e.subscribe.data;
-							0 !== t && E(Object(u.J)({
+							0 !== t && E(Object(u.F)({
 								postId: b,
 								delta: t
 							}))
@@ -1032,7 +1032,7 @@
 					postId: I,
 					isCommentCountAnimation: y,
 					isCountAnimShadowTestEnabled: T
-				} = e, N = c && !i && !u, M = i && !p, F = Object(v.a)(), R = Object(C.a)(h.ic) === h.mc.Enabled, A = r.a.createElement(S, {
+				} = e, N = c && !i && !u, M = i && !p, F = Object(v.a)(), R = Object(C.a)(h.hc) === h.lc.Enabled, A = r.a.createElement(S, {
 					hasModPostPerms: o,
 					isCountAnimShadowTestEnabled: !!T,
 					isChatPost: n,
@@ -1484,8 +1484,8 @@
 				K = o("./src/reddit/helpers/trackers/modTools.ts"),
 				J = o("./src/reddit/helpers/trackers/post.ts"),
 				z = o("./src/reddit/icons/fonts/index.tsx"),
-				Y = o("./src/reddit/icons/fonts/ModActions/index.tsx"),
-				Q = o("./src/reddit/icons/fonts/Share/index.tsx"),
+				Q = o("./src/reddit/icons/fonts/ModActions/index.tsx"),
+				Y = o("./src/reddit/icons/fonts/Share/index.tsx"),
 				X = o("./src/reddit/models/Media/index.ts"),
 				Z = o("./src/reddit/models/NewStructuredStyles/index.ts"),
 				$ = o("./src/reddit/models/PostCreationForm/index.ts"),
@@ -1516,7 +1516,7 @@
 				fe = Object(l.a)(({
 					className: e,
 					...t
-				}) => r.a.createElement(Y.a, pe({}, t, {
+				}) => r.a.createElement(Q.a, pe({}, t, {
 					className: Object(c.a)(le.a.modActionsIcon, e),
 					style: {
 						color: Object(G.a)(Object(V.a)(t), Z.a.actionIcon, Z.b.actionIcon)
@@ -1546,8 +1546,8 @@
 				}) => ({
 					addPostToCollection: (t, o) => e(Object(ne.a)(t, o)),
 					onToggleModal: t => e(Object(b.i)(t)),
-					onToggleSave: () => e(Object(h.V)(t.postId)),
-					onHide: o => e(Object(h.ab)(t.postId, !t.hidden, s, !0)),
+					onToggleSave: () => e(Object(h.R)(t.postId)),
+					onHide: o => e(Object(h.W)(t.postId, !t.hidden, s, !0)),
 					onReportClick: () => e(Object(O.c)(t.postId, s)),
 					onEdit: () => {
 						const o = !s && !n;
@@ -1600,7 +1600,7 @@
 						pageLayer: V,
 						post: G,
 						sendEvent: U,
-						showEditFlair: Y,
+						showEditFlair: Q,
 						showEditPost: Z,
 						subreddit: ne,
 						toggleEditStartTimeModal: ae,
@@ -1641,7 +1641,7 @@
 						we(), Ne("report")
 					}, [we, Ne]), Re = Object(n.useMemo)(() => r.a.createElement(be, {
 						"data-click-id": "share"
-					}, r.a.createElement(Q.a, {
+					}, r.a.createElement(Y.a, {
 						className: le.a.shareIcon
 					}), r.a.createElement("span", {
 						className: le.a.shareText
@@ -1758,7 +1758,7 @@
 						dropdownId: We,
 						onClick: () => U(Object(J.h)(G.id, "post_mod_action_menu"))
 					}, r.a.createElement(fe, null), r.a.createElement(M.a, {
-						canEditFlair: b && !!Y,
+						canEditFlair: b && !!Q,
 						hasModFullPerms: h,
 						hasModPostPerms: f,
 						isOverlay: !!j,
@@ -1797,7 +1797,7 @@
 						postId: Ge,
 						sendEvent: U,
 						showEditPost: !!Z,
-						showEditFlair: !!Y,
+						showEditFlair: !!Q,
 						useFlatlistBreakpoints: e.useFlatlistBreakpoints,
 						toggleAddEventStartTimeModal: ae,
 						toggleEditStartTimeModal: ae
@@ -2062,7 +2062,7 @@
 				}) => {
 					var c;
 					const [d, m] = r.a.useState(!1), b = Object(P.a)(), h = Object(i.d)(), x = () => {
-						m(!1), h(Object(l.U)(a.id, !1)), a.isRemoved && a.bannedBy === I.k ? b(Object(O.h)(a.id, "confirm_remove")) : b(Object(O.h)(a.id, "remove"))
+						m(!1), h(Object(l.Q)(a.id, !1)), a.isRemoved && a.bannedBy === I.k ? b(Object(O.h)(a.id, "confirm_remove")) : b(Object(O.h)(a.id, "remove"))
 					}, v = () => h(Object(p.h)({
 						tooltipId: C
 					})), C = R("Remove", a.id, o), _ = r.a.useMemo(() => {
@@ -2123,11 +2123,11 @@
 				}), (e, {
 					post: t
 				}) => ({
-					onApprovePost: () => e(Object(l.s)(t.id)),
+					onApprovePost: () => e(Object(l.q)(t.id)),
 					onOpenPostModModeDropdown: t => e(Object(p.h)({
 						tooltipId: t
 					})),
-					onSpamPost: () => e(Object(l.U)(t.id, !0)),
+					onSpamPost: () => e(Object(l.Q)(t.id, !0)),
 					onFlairPost: t => () => e(Object(d.i)(t))
 				}));
 			t.a = L(e => {
@@ -2428,8 +2428,8 @@
 				K = N.a.div("TitleRow", U.a),
 				J = N.a.div("DetailsContainer", U.a),
 				z = N.a.wrapped(v.a, "ButtonRow", U.a),
-				Y = N.a.div("CloseWrapper", U.a),
-				Q = N.a.wrapped(f.a, "Close", U.a),
+				Q = N.a.div("CloseWrapper", U.a),
+				Y = N.a.wrapped(f.a, "Close", U.a),
 				X = N.a.div("Empty", U.a),
 				Z = N.a.img("EmptyImage", U.a),
 				$ = N.a.p("EmptyText", U.a),
@@ -2513,9 +2513,9 @@
 						"data-redditstyle": !0
 					}, t || n.fbt._("My collections", null, {
 						hk: "3yKovS"
-					}), i.a.createElement(Y, {
+					}), i.a.createElement(Q, {
 						onClick: this.close
-					}, i.a.createElement(Q, {
+					}, i.a.createElement(Y, {
 						"data-redditstyle": !0
 					}))), i.a.createElement(ee, null, i.a.createElement(oe, null), i.a.createElement(te, {
 						placeholder: n.fbt._("Find a collection", null, {
@@ -2886,8 +2886,8 @@
 				K = o("./src/reddit/selectors/posts.ts"),
 				J = o("./src/reddit/selectors/subreddit.ts"),
 				z = o("./src/reddit/selectors/user.ts"),
-				Y = o("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
-				Q = o("./src/reddit/components/PostFlairPicker/index.tsx"),
+				Q = o("./src/reddit/selectors/experiments/reportingRevampDesktop.ts"),
+				Y = o("./src/reddit/components/PostFlairPicker/index.tsx"),
 				X = o("./src/reddit/components/ReportFlow/new.tsx"),
 				Z = o("./src/reddit/actions/postCollection/index.ts"),
 				$ = o("./src/reddit/contexts/Post/index.tsx"),
@@ -2992,7 +2992,7 @@
 						const s = o.type === U.f.User;
 						return Object(oe.r)(e, o.name, s)
 					},
-					reportingRevampEnabled: Y.a,
+					reportingRevampEnabled: Q.a,
 					videoShareModalOpen: (e, {
 						postId: t
 					}) => Object(q.a)(e) === Object(A.a)(t)
@@ -3001,20 +3001,20 @@
 					isOverlay: o,
 					isCommentsPage: s
 				}) => ({
-					onCopyLink: t => e(Object(C.D)(t)),
-					onDelete: s => e(Object(C.O)(t, s, o)),
-					onDistinguishPost: o => e(Object(C.v)(t, o)),
+					onCopyLink: t => e(Object(C.B)(t)),
+					onDelete: s => e(Object(C.K)(t, s, o)),
+					onDistinguishPost: o => e(Object(C.t)(t, o)),
 					onGildClick: (o, s) => e(Object(x.d)({
 						awardId: s,
 						correlationId: o,
 						thingId: t
 					})),
-					onToggleSave: () => e(Object(C.V)(t)),
-					onToggleNSFW: () => e(Object(C.I)(t)),
-					onToggleOC: () => e(Object(C.L)(t)),
+					onToggleSave: () => e(Object(C.R)(t)),
+					onToggleNSFW: () => e(Object(C.E)(t)),
+					onToggleOC: () => e(Object(C.H)(t)),
 					onTogglePinned: () => e(Object(v.i)(t)),
-					onToggleSpoiler: () => e(Object(C.Z)(t)),
-					onHide: s => e(Object(C.ab)(t, !s, o, !0)),
+					onToggleSpoiler: () => e(Object(C.V)(t)),
+					onHide: s => e(Object(C.W)(t, !s, o, !0)),
 					onReportClick: () => e(Object(g.c)(t, o)),
 					onStartEventNow: () => {
 						e((e, t) => Object(d.a)(Object(I.l)()(t()))), e(Object(f.startEventNowRequested)(t))
@@ -3023,8 +3023,8 @@
 						const n = !o && !s;
 						e(Object(_.a)(t, n))
 					},
-					onFlairPost: () => e(Object(O.i)(Object(Q.b)(t, o))),
-					onToggleSendReplies: () => e(Object(C.W)(t)),
+					onFlairPost: () => e(Object(O.i)(Object(Y.b)(t, o))),
+					onToggleSendReplies: () => e(Object(C.S)(t)),
 					showCollectionsList: (t, s) => {
 						e(Object(Z.e)(t)).then(() => {
 							const t = Object(te.s)(s, o);
@@ -3590,7 +3590,7 @@
 								tooltipId: e.dropdownId
 							}))
 						}, [t, e.dropdownId]),
-						a = e => t(Object(m.D)(e)),
+						a = e => t(Object(m.B)(e)),
 						c = Object(n.useCallback)(() => {
 							e.post && (t(Object(b.d)(e.post.id)), t(Object(u.i)(Object(x.a)(e.post.id))))
 						}, [t, e.post]),
@@ -4824,4 +4824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.a979e88769671beb2380.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.176621042a40a2953c48.js.map

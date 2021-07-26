@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.4b3574939b44f46c3018.js
-// Retrieved at 7/22/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c96aa90510df0020ba9c.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -2529,6 +2529,23 @@
 						...a.body
 					}))
 				}
+		},
+		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			})), n.d(t, "b", (function() {
+				return a
+			})), n.d(t, "c", (function() {
+				return o
+			})), n.d(t, "d", (function() {
+				return i
+			}));
+			var r = n("./src/lib/makeActionCreator/index.ts");
+			const s = "INCONTEXT__BANNED",
+				a = "INCONTEXT__MUTED",
+				o = Object(r.a)(s),
+				i = Object(r.a)(a)
 		},
 		"./src/reddit/actions/pages/settings.ts": function(e, t, n) {
 			"use strict";
@@ -5313,7 +5330,7 @@
 					to: `${b.a}/${t}`
 				}, s.a.createElement(u.q, {
 					onClick: () => {
-						n ? i && v(Object(c.fb)(i)) : _()
+						n ? i && v(Object(c.bb)(i)) : _()
 					},
 					className: Object(l.a)(f.a.snoovatarButton, f.a.snoovatarExtraPadding, f.a.compactButtonLayout, {
 						[f.a.avatarPostifyButton]: n
@@ -8013,7 +8030,7 @@
 					right: 0,
 					top: u.f,
 					willChange: "transform",
-					zIndex: m.g
+					zIndex: m.f
 				};
 			class O extends i.a.Component {
 				constructor(e) {
@@ -11198,9 +11215,9 @@
 					language: L.T,
 					shouldShowCreatePasswordModal: M.d,
 					shouldShowGenderCollection: e => Object(A.c)(e, {
-						experimentName: N.wd,
+						experimentName: N.vd,
 						experimentEligibilitySelector: T.e
-					}) === N.Fd.Enabled,
+					}) === N.Ed.Enabled,
 					showLanguageSection: I.d.langSelect,
 					availableLocales: Be,
 					locale: Fe.i,
@@ -14464,4 +14481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.4b3574939b44f46c3018.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c96aa90510df0020ba9c.js.map

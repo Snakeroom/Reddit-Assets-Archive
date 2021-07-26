@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.28a0b5cb5f33112e3729.js
-// Retrieved at 7/22/2021, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.bbfb72116132c8f1e519.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1674,16 +1674,16 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(d.M(t))
+						})), e(d.I(t))
 					},
 					fireAdPixelsOfType: (t, s) => {
-						e(d.z(t, s))
+						e(d.x(t, s))
 					},
 					trackOnPostEnteredViewport: (t, s, r, i) => {
-						e(d.P(t, r, i))
+						e(d.L(t, r, i))
 					},
 					trackOnPostExitedViewport: (t, s, r, i, n) => {
-						e(d.Q(t, r, i, n))
+						e(d.M(t, r, i, n))
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.h)())
 				}),
@@ -2613,4 +2613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.28a0b5cb5f33112e3729.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.bbfb72116132c8f1e519.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.11d520d449f850660510.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.4f4102355c5ca1d88062.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -465,8 +465,8 @@
 				V = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				W = s("./src/reddit/components/PostContainer/index.tsx"),
 				F = s("./src/reddit/components/PostTitle/index.tsx"),
-				R = s("./src/reddit/connectors/miniCardPost.ts"),
-				B = s("./src/reddit/contexts/Post/index.tsx"),
+				B = s("./src/reddit/connectors/miniCardPost.ts"),
+				R = s("./src/reddit/contexts/Post/index.tsx"),
 				H = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				Q = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				z = s("./src/reddit/models/Media/index.ts"),
@@ -600,7 +600,7 @@
 					}))))), r.a.createElement(M.d, null))
 				}
 			}
-			const se = Object(B.b)(Object(R.a)(Object(C.a)(te)));
+			const se = Object(R.b)(Object(B.a)(Object(C.a)(te)));
 			class ne extends r.a.Component {
 				render() {
 					return r.a.createElement(se, this.props)
@@ -936,9 +936,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.G)(e) || g.Kd.ShowTopContent === Object(f.c)(e, {
+			const y = e => Object(C.G)(e) || g.Jd.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.Cd
+				experimentName: g.Bd
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1362,8 +1362,8 @@
 				V = s("./src/config.ts"),
 				W = s("./src/reddit/hooks/useClickSourceData.ts"),
 				F = s("./src/reddit/hooks/useExperimentVariant.ts"),
-				R = s("./src/reddit/hooks/usePostContext.ts"),
-				B = s("./src/reddit/hooks/useTheme.ts"),
+				B = s("./src/reddit/hooks/usePostContext.ts"),
+				R = s("./src/reddit/hooks/useTheme.ts"),
 				H = s("./src/telemetry/models/Outbound.ts");
 
 			function Q() {
@@ -1386,7 +1386,7 @@
 					className: i,
 					redditStyle: o
 				}) => {
-					const c = Object(B.a)();
+					const c = Object(R.a)();
 					let l = "";
 					switch (e) {
 						case I.ExtraLarge:
@@ -1454,7 +1454,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(W.a)(), i = Object(F.a)(u.ic) === u.mc.Enabled;
+					} = t, a = Object(W.a)(), i = Object(F.a)(u.hc) === u.lc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(G, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -1598,14 +1598,14 @@
 			t.c = r.a.memo((function(e) {
 				const t = Object(p.bb)(),
 					s = Object(p.v)(t),
-					n = Object(R.a)(),
+					n = Object(B.a)(),
 					a = Object(i.e)(a => K(a, {
 						...n,
 						...e,
 						isCommentPermalink: s,
 						pageLayer: t
 					})),
-					o = Object(B.a)(),
+					o = Object(R.a)(),
 					c = Object(m.b)();
 				return r.a.createElement(X, Q({
 					pageLayer: t,
@@ -2001,4 +2001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.11d520d449f850660510.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.4f4102355c5ca1d88062.js.map

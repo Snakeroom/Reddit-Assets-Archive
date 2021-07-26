@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.ee2a98144eecffd18b09.js
-// Retrieved at 7/23/2021, 6:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.c06ae31cd5403119265d.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -988,7 +988,7 @@
 							const {
 								postId: e
 							} = c, t = s.posts.models[e];
-							t && t.voteState === f.a.notVoted && n(Object(i.fb)(e))
+							t && t.voteState === f.a.notVoted && n(Object(i.bb)(e))
 						}
 					} else n(O({
 						pollId: e,
@@ -2741,4 +2741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.ee2a98144eecffd18b09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.c06ae31cd5403119265d.js.map

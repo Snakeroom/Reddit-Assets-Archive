@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.3277960268cb6d182306.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.4b70ee58d034aef04982.js
+// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -233,7 +233,7 @@
 						const r = Object(H.G)(f(), {
 							postId: e
 						});
-						u(Object(m.z)(r, O.a.CommentSubmitted))
+						u(Object(m.x)(r, O.a.CommentSubmitted))
 					} else {
 						S.error && S.error.type === r.Gb && U.g(y, de(o), e);
 						const t = S.error && S.error.fields && S.error.fields[0] ? S.error.fields[0].msg : s.fbt._("Something went wrong", null, {
@@ -1651,7 +1651,7 @@
 						m = e[0],
 						u = Object(G.a)(m) ? W.e.Post : W.e.Comment,
 						l = u === W.e.Post ? i.posts.models[m] : i.features.comments.models[m],
-						b = u === W.e.Post ? w.T : C.i;
+						b = u === W.e.Post ? w.P : C.i;
 					if (!l || !a) return !1;
 					o(fe()), o(b({
 						[m]: {
@@ -1976,7 +1976,7 @@
 								experimentName: o.B,
 								expEventOverride: t
 							});
-							return !!(Object(o.Zd)(n) ? void 0 : n)
+							return !!(Object(o.Yd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -3156,14 +3156,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Wc
-					}) === s.gd.Enabled
+						experimentName: s.Vc
+					}) === s.fd.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Vc
-					}) === s.fd.Enabled
+						experimentName: s.Uc
+					}) === s.ed.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -3249,4 +3249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.3277960268cb6d182306.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.4b70ee58d034aef04982.js.map
