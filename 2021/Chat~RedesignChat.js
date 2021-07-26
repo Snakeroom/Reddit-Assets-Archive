@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4e48cd0064d07a8ba3a7.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6b0fb5c9e0a1a70d68f2.js
+// Retrieved at 7/26/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -219,34 +219,34 @@
 					}));
 					const p = Object(I.getRedirectURL)(Object(I.channelUrl)(e));
 					t(Object(r.b)(p))
-				}, pe = (e, t) => async (n, s, {
-					gqlContext: a
+				}, pe = (e, t, n) => async (s, a, {
+					gqlContext: r
 				}) => {
-					var r, c, o;
-					const i = s(),
+					var c, o, i;
+					const l = a(),
 						{
 							user: {
-								session: l
+								session: u
 							}
-						} = i;
-					if (!Object(T.g)(i, e) || !t) return;
-					if (!l) throw new _.a("session", l);
-					const u = Object(D.c)(i),
-						m = Object(D.e)(i),
-						p = {
+						} = l;
+					if (!Object(T.g)(l, e) || !t) return;
+					if (!u) throw new _.a("session", u);
+					const m = Object(D.c)(l),
+						p = Object(D.e)(l),
+						b = {
 							channelSendbirdId: e,
 							inviterUserId: t.id,
-							shouldBlockInviter: u || m,
-							shouldReportInviter: m
+							shouldBlockInviter: !n && (m || p),
+							shouldReportInviter: !n && p
 						},
-						b = await ((e, t) => Object(E.a)(e, {
+						f = await ((e, t) => Object(E.a)(e, {
 							...C,
 							variables: t
-						}))(a(), {
-							input: p
+						}))(r(), {
+							input: b
 						});
-					if ((null === (c = null === (r = b.error) || void 0 === r ? void 0 : r.fields) || void 0 === c ? void 0 : c.length) || (e => Boolean(e && e.data && e.data.declineChatChannelInvite))(b.body) && (null === (o = b.body.data.declineChatChannelInvite.errors) || void 0 === o ? void 0 : o.length)) return n(Object(h.e)()), Object(_.b)(`Error declining invite: ${b.error}`);
-					n(Object(d.b)()), await n(Re(g.b.INVITED, e)), n((e => async t => t(ue(e)))(e))
+					if ((null === (o = null === (c = f.error) || void 0 === c ? void 0 : c.fields) || void 0 === o ? void 0 : o.length) || (e => Boolean(e && e.data && e.data.declineChatChannelInvite))(f.body) && (null === (i = f.body.data.declineChatChannelInvite.errors) || void 0 === i ? void 0 : i.length)) return s(Object(h.e)()), Object(_.b)(`Error declining invite: ${f.error}`);
+					s(Object(d.b)()), await s(Re(g.b.INVITED, e)), s((e => async t => t(ue(e)))(e))
 				}, be = Object(o.a)(J), ge = Object(o.a)(Y), fe = Object(o.a)(Q), Oe = e => async t => {
 					t(fe({
 						channel: e
@@ -14259,4 +14259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.4e48cd0064d07a8ba3a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6b0fb5c9e0a1a70d68f2.js.map
