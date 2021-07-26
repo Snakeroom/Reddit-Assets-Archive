@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e7e0e0fb8660cf6bb98e.js
-// Retrieved at 7/26/2021, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d7b0d8d16b20a21592b5.js
+// Retrieved at 7/26/2021, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7244,11 +7244,7 @@
 						title: o.fbt._("Popular Posts", null, {
 							hk: "1bbqfg"
 						})
-					}), null), m.a.createElement(nc, dc({}, f(mc.MoreMenu), {
-						isLoggedIn: v,
-						url: l,
-						sendEvent: c
-					})), m.a.createElement(Yi, f(mc.Settings)), m.a.createElement(() => m.a.createElement(Bi, {
+					}), null), m.a.createElement(Yi, f(mc.Settings)), m.a.createElement(() => m.a.createElement(Bi, {
 						href: "https://www.reddithelp.com/hc/en-us",
 						icon: m.a.createElement(us.a, {
 							name: "help"
@@ -7256,7 +7252,11 @@
 						title: o.fbt._("Help Center", null, {
 							hk: "4sGjc0"
 						})
-					}), null), m.a.createElement($i, f(mc.TermsAndPolicies)), m.a.createElement(() => v ? m.a.createElement(Ui, {
+					}), null), m.a.createElement(nc, dc({}, f(mc.MoreMenu), {
+						isLoggedIn: v,
+						url: l,
+						sendEvent: c
+					})), m.a.createElement($i, f(mc.TermsAndPolicies)), m.a.createElement(() => v ? m.a.createElement(Ui, {
 						icon: m.a.createElement(us.a, {
 							name: "logout"
 						}),
@@ -18394,4 +18394,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e7e0e0fb8660cf6bb98e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d7b0d8d16b20a21592b5.js.map
