@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.af51d4ae9a0064903c42.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1e7e49f34c2886e541d2.js
+// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -37,7 +37,7 @@
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
+				return j
 			})), n.d(t, "b", (function() {
 				return O
 			})), n.d(t, "c", (function() {
@@ -69,8 +69,8 @@
 				f = n("./src/reddit/models/Vote/index.ts"),
 				v = n("./src/reddit/selectors/crypto/points.ts"),
 				h = n("./src/reddit/actions/governance/constants.ts"),
-				j = n("./src/reddit/actions/governance/errorToast.ts");
-			const C = Object(r.a)(h.b),
+				C = n("./src/reddit/actions/governance/errorToast.ts");
+			const j = Object(r.a)(h.b),
 				O = Object(r.a)(h.c),
 				g = Object(r.a)(h.e),
 				w = (Object(r.a)(h.f), Object(r.a)(h.g), Object(r.a)(h.h)),
@@ -82,8 +82,8 @@
 				T = Object(r.a)(h.s),
 				M = Object(r.a)(h.t),
 				k = Object(r.a)(h.u),
-				S = Object(r.a)(h.v),
-				A = Object(r.a)(h.w),
+				A = Object(r.a)(h.v),
+				S = Object(r.a)(h.w),
 				P = Object(r.a)(h.x),
 				B = (e, t) => async (n, s, {
 					apiContext: r,
@@ -127,7 +127,7 @@
 					} else n(E({
 						pollId: e,
 						error: o.error || o.errors[0].message
-					})), Object(j.a)(n, o.error || o.errors[0].messsage)
+					})), Object(C.a)(n, o.error || o.errors[0].messsage)
 				}, D = (e, t) => async (n, r, {
 					apiContext: i
 				}) => {
@@ -160,13 +160,13 @@
 						})
 					})), t && n(Object(o.f)())) : (n(I({
 						error: m.error
-					})), Object(j.a)(n, m.error))
+					})), Object(C.a)(n, m.error))
 				}, R = e => async (t, n, {
 					apiContext: s
 				}) => {
-					t(S());
+					t(A());
 					const r = await Object(b.a)(s(), e);
-					r.ok ? t(A(r.body)) : t(k({
+					r.ok ? t(S(r.body)) : t(k({
 						error: r.error
 					}))
 				}
@@ -268,8 +268,8 @@
 				f = n("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				v = n("./src/reddit/endpoints/governance/crypto.ts"),
 				h = n("./src/reddit/helpers/crypto/transactions.ts"),
-				j = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				C = n("./src/reddit/helpers/governance/tokens.ts"),
+				C = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
+				j = n("./src/reddit/helpers/governance/tokens.ts"),
 				O = n("./src/reddit/helpers/trackers/crypto.ts"),
 				g = n("./src/reddit/hooks/useTracking.ts"),
 				w = n("./src/reddit/models/Toast/index.ts"),
@@ -281,9 +281,9 @@
 				T = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				M = n("./src/reddit/selectors/subreddit.ts"),
 				k = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				S = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				A = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
-				P = n.n(A);
+				A = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
+				S = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
+				P = n.n(S);
 
 			function B(e) {
 				const {
@@ -292,7 +292,7 @@
 				} = e, r = Object(o.e)(t => Object(E.b)(t, e)), i = r && r.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
 				const c = Object(o.e)(t => Object(M.S)(t, e));
-				return a.a.createElement(S.a, {
+				return a.a.createElement(A.a, {
 					subredditId: t,
 					image: a.a.createElement(T.b, {
 						className: P.a.subredditIcon,
@@ -337,7 +337,7 @@
 					k = e => {
 						c(Object(O.a)("points_claim", n, T.displayConversion, e))
 					},
-					S = Object(C.b)(l.pointsToClaim, T.displayConversion);
+					A = Object(j.b)(l.pointsToClaim, T.displayConversion);
 				return a.a.createElement(y.a, {
 					approvalOverview: a.a.createElement(B, {
 						pointsDetails: T,
@@ -353,7 +353,7 @@
 						}), w.b.SuccessCommunity))), r(m({
 							subredditId: n
 						})), async function(e, t, n, s, r) {
-							await Object(j.a)(t, n), await e(Object(f.a)(Object(b.h)({
+							await Object(C.a)(t, n), await e(Object(f.a)(Object(b.h)({
 								subredditId: s
 							}), async e => {
 								const t = Object(N.e)(e(), {
@@ -364,7 +364,7 @@
 								forceFetch: !0
 							}))
 						}(r, T, e.hash, n, d).then(() => {
-							c(Object(O.b)("points_claim", n, S)), r(function(e) {
+							c(Object(O.b)("points_claim", n, A)), r(function(e) {
 								return Object(x.f)(Object(x.e)(s.fbt._("Your {pointsName} are ready!", [s.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), w.b.SuccessCommunityGreen))
@@ -559,22 +559,22 @@
 				f = n("./src/reddit/controls/Button/index.tsx"),
 				v = n("./src/reddit/layout/row/Inline/index.tsx"),
 				h = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				j = n.n(h);
-			var C = Object(x.a)(e => {
+				C = n.n(h);
+			var j = Object(x.a)(e => {
 					const {
 						children: t,
 						title: n
 					} = e;
 					return d.a.createElement("div", {
-						className: j.a.wrapper
+						className: C.a.wrapper
 					}, d.a.createElement(v.a, {
-						className: j.a.titleRow
+						className: C.a.titleRow
 					}, n), d.a.createElement("div", {
-						className: j.a.detailsContainer
+						className: C.a.detailsContainer
 					}, t), d.a.createElement(v.a, {
-						className: j.a.buttonRow
+						className: C.a.buttonRow
 					}, d.a.createElement(f.i, {
-						className: j.a.confirmButton,
+						className: C.a.confirmButton,
 						onClick: e.onConfirmed
 					}, s.fbt._("Ok", null, {
 						hk: "2Giu9U"
@@ -634,7 +634,7 @@
 					}, e), c && d.a.createElement("span", {
 						className: g.a.moreText,
 						onClick: this.toggleModal
-					}, o), t === i && d.a.createElement(C, {
+					}, o), t === i && d.a.createElement(j, {
 						onConfirmed: this.toggleModal,
 						title: a
 					}, r || e))
@@ -693,7 +693,7 @@
 			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
-				return j
+				return C
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/react/index.js"),
@@ -775,7 +775,7 @@
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
 			}(h || (h = {}));
-			class j extends r.a.Component {
+			class C extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						addingNewInputs: !1
@@ -933,6 +933,21 @@
 				return "message" in e ? `${t}: ${e.message}` : t
 			}
 		},
+		"./src/reddit/hooks/useApiContext.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			var s = n("./node_modules/react/index.js"),
+				r = n("./src/reddit/contexts/ApiContext.tsx");
+
+			function a() {
+				const {
+					apiContext: e
+				} = Object(s.useContext)(r.a);
+				return e
+			}
+		},
 		"./src/reddit/hooks/useSafeState.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1074,4 +1089,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.af51d4ae9a0064903c42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.1e7e49f34c2886e541d2.js.map
