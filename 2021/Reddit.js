@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f909b2e7aa62629a1bc8.js
-// Retrieved at 7/26/2021, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.6630a62abd16fad849f1.js
+// Retrieved at 7/26/2021, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -10561,10 +10561,13 @@
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
-						} = this.state;
-						let t = 0;
-						for (const n in e) t += e[n];
-						return this.props.isInboxExposureBannerEnabled && (t += R), 0 === t ? this.props.isInboxExposureBannerEnabled ? T : N : t
+						} = this.state, {
+							isInboxExposureBannerEnabled: t,
+							isDNInboxPromptBannerEnabled: n
+						} = this.props;
+						let s = 0;
+						for (const o in e) s += e[o];
+						return 0 === s ? t || n ? T : N : ((t || n) && (s += R), s)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -10645,7 +10648,7 @@
 					}), t && r.a.createElement(v, {
 						onClose: u.a
 					}), r.a.createElement(_.a, {
-						isInboxExposureBannerEnabled: n
+						isBannerEnabled: n || t
 					})), c && r.a.createElement(r.a.Fragment, null, n && r.a.createElement(j, {
 						onClose: s
 					}), t && r.a.createElement(v, {
@@ -16204,7 +16207,7 @@
 				l = n.n(d);
 			const u = i.a.wrapped(c, "BellOutline", l.a),
 				m = ({
-					isInboxExposureBannerEnabled: e
+					isBannerEnabled: e
 				}) => r.a.createElement("div", {
 					className: Object(a.a)(l.a.emptyState, {
 						[l.a.emptyStateWithBanner]: Boolean(e)
@@ -18409,4 +18412,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f909b2e7aa62629a1bc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6630a62abd16fad849f1.js.map
