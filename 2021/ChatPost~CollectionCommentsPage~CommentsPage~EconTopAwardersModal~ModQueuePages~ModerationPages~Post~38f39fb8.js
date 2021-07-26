@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a1862ae12ea6fa493c6f.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.15842a4cf9d06355024c.js
+// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -558,9 +558,9 @@
 				}
 			}
 			var $ = J,
-				Y = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				K = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
-				X = r.n(K);
+				K = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				Y = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
+				X = r.n(Y);
 			var Z = a.a.memo(e => {
 				const {
 					className: t,
@@ -579,7 +579,7 @@
 					className: X.a.scrollButton,
 					name: o ? d : i,
 					onClick: n
-				}, a.a.createElement(Y.a, {
+				}, a.a.createElement(K.a, {
 					className: X.a.chevronIcon
 				})))
 			});
@@ -1963,8 +1963,8 @@
 				V = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				J = r("./src/reddit/models/Flair/index.ts"),
 				$ = r("./src/reddit/models/NewStructuredStyles/index.ts"),
-				Y = r("./src/reddit/models/Post/index.ts"),
-				K = r("./src/reddit/models/Subreddit/index.ts"),
+				K = r("./src/reddit/models/Post/index.ts"),
+				Y = r("./src/reddit/models/Subreddit/index.ts"),
 				X = r("./src/reddit/selectors/authorFlair.ts"),
 				Z = r("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
 				ee = r("./src/reddit/selectors/gold/powerups/index.ts"),
@@ -2042,7 +2042,7 @@
 						showTimestamp: M = !0,
 						subredditOrProfile: B,
 						tooltipType: L
-					} = e, R = Object(a.d)(), H = Object(f.a)(), U = Object(a.e)(Z.a), G = Object(a.e)(te.d), z = Object(a.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !U || Object(l.Yd)(U));
+					} = e, R = Object(a.d)(), H = Object(f.a)(), U = Object(a.e)(Z.a), G = Object(a.e)(te.d), z = Object(a.e)(te.g) || ["popular", "all"].includes(G || ""), q = !(!v.isSponsored || !U || Object(l.Wd)(U));
 					Object(s.useEffect)(() => {
 						q && R(Object(p.d)(v.author))
 					}, []);
@@ -2070,7 +2070,7 @@
 						Ae = c && c.meta && c.meta.name === i.Jb.COMMENTS,
 						Oe = Object(h.a)(v),
 						ye = ge === J.b.Left,
-						je = v.authorIsContractor && !!B && B.type === K.f.EmployeesOnly,
+						je = v.authorIsContractor && !!B && B.type === Y.f.EmployeesOnly,
 						Ee = !!B && fe,
 						Te = !d && !Ae,
 						Ce = () => n.a.createElement(ce, {
@@ -2089,7 +2089,7 @@
 							flair: ie,
 							forceSmallEmojis: !0,
 							usesCommunityStyles: Te
-						})), Object(Y.n)(v.author) ? n.a.createElement(me, {
+						})), Object(K.n)(v.author) ? n.a.createElement(me, {
 							post: v,
 							isDeleted: !0,
 							renderContractorBadge: je,
@@ -2140,7 +2140,7 @@
 							flair: ie,
 							forceSmallEmojis: !0,
 							usesCommunityStyles: Te
-						})), v.belongsTo.type === N.a.SUBREDDIT && !Object(Y.n)(v.author) && n.a.createElement(y.a, {
+						})), v.belongsTo.type === N.a.SUBREDDIT && !Object(K.n)(v.author) && n.a.createElement(y.a, {
 							className: ne.a.publicWallet,
 							contentId: v.id,
 							metaSeparator: n.a.createElement(Ce, null),
@@ -3204,7 +3204,7 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.Lb
 					});
-					return !(!t || Object(s.Yd)(t))
+					return !(!t || Object(s.Wd)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -3270,4 +3270,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a1862ae12ea6fa493c6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.15842a4cf9d06355024c.js.map

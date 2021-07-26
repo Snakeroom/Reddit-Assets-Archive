@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.658ceb5067d5cf0c6dda.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.dc99ad0b0c89c20f4e09.js
+// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
@@ -4094,12 +4094,12 @@
 						rtJsonElementProps: r
 					});
 					switch (n) {
-						case h.Id.SmIcon:
+						case h.Gd.SmIcon:
 							return i.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: r
 							});
-						case h.Id.SmIconHc:
+						case h.Gd.SmIconHc:
 							return i.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7736,12 +7736,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ad
+						experimentName: n.zd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Id.SmIcon || t === n.Id.SmIconHc
+					return t === n.Gd.SmIcon || t === n.Gd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7764,4 +7764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.658ceb5067d5cf0c6dda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.dc99ad0b0c89c20f4e09.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0a7ab5a57f86aca54771.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.101d46f33cdf4e28c901.js
+// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -931,13 +931,13 @@
 				end: "start"
 			};
 
-			function Y(e) {
+			function Z(e) {
 				return e.replace(/start|end/g, (function(e) {
 					return X[e]
 				}))
 			}
 
-			function Z(e, t) {
+			function Y(e, t) {
 				var n = Boolean(t.getRootNode && t.getRootNode().host);
 				if (e.contains(t)) return !0;
 				if (n) {
@@ -999,7 +999,7 @@
 						var t = v(e),
 							n = ["absolute", "fixed"].indexOf(p(e).position) >= 0 && c(e) ? y(e) : e;
 						return a(n) ? t.filter((function(e) {
-							return a(e) && Z(e, n)
+							return a(e) && Y(e, n)
 						})) : []
 					}(e) : [].concat(t),
 					r = [].concat(o, [n]),
@@ -1257,7 +1257,7 @@
 								for (var r = n.mainAxis, s = void 0 === r || r, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, h = n.allowedAutoPlacements, b = t.options.placement, v = V(b), x = c || (v === b || !f ? [J(b)] : function(e) {
 										if (V(e) === E) return [];
 										var t = J(e);
-										return [Y(e), t, Y(t)]
+										return [Z(e), t, Z(t)]
 									}(b)), g = [b].concat(x).reduce((function(e, n) {
 										return e.concat(V(n) === E ? function(e, t) {
 											void 0 === t && (t = {});
@@ -1401,10 +1401,10 @@
 											left: 0
 										},
 										X = J[M],
-										Y = J[L],
-										Z = re(0, S[F], K[F]),
-										Q = E ? S[F] / 2 - D - Z - X - I : q - Z - X - I,
-										$ = E ? -S[F] / 2 + D + Z + Y + I : z + Z + Y + I,
+										Z = J[L],
+										Y = re(0, S[F], K[F]),
+										Q = E ? S[F] / 2 - D - Y - X - I : q - Y - X - I,
+										$ = E ? -S[F] / 2 + D + Y + Z + I : z + Y + Z + I,
 										ee = t.elements.arrow && y(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][C] : 0,
@@ -1462,7 +1462,7 @@
 								s = void 0 === r ? "[data-popper-arrow]" : r,
 								i = n.padding,
 								a = void 0 === i ? 0 : i;
-							null != s && ("string" != typeof s || (s = t.elements.popper.querySelector(s))) && Z(t.elements.popper, s) && (t.elements.arrow = s, t.modifiersData[o + "#persistent"] = {
+							null != s && ("string" != typeof s || (s = t.elements.popper.querySelector(s))) && Y(t.elements.popper, s) && (t.elements.arrow = s, t.modifiersData[o + "#persistent"] = {
 								padding: te("number" != typeof a ? a : ne(a, C))
 							})
 						},
@@ -2253,16 +2253,16 @@
 				J = n("./src/reddit/components/PostPinnedHeader/index.m.less"),
 				X = n.n(J);
 			const {
-				fbt: Y
+				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var Z = () => r.a.createElement("div", {
+			var Y = () => r.a.createElement("div", {
 					className: X.a.container
 				}, r.a.createElement(K.a, {
 					className: X.a.pinnedIcon,
 					isFilled: !0
 				}), r.a.createElement("span", {
 					className: X.a.metaText
-				}, Y._("pinned by moderators", null, {
+				}, Z._("pinned by moderators", null, {
 					hk: "1qU8t4"
 				}))),
 				Q = n("./src/reddit/components/PostRailAndVotes/index.tsx"),
@@ -2368,7 +2368,7 @@
 						isGalleryTileLayoutDefault: K,
 						isLoggedIn: J,
 						isOverlay: X,
-						isPostChainDismissed: Y,
+						isPostChainDismissed: Z,
 						isPostChained: ne,
 						isTopicPage: oe,
 						isTournamentPost: re,
@@ -2410,9 +2410,9 @@
 							hasBottomCompactPostStyles: s,
 							showPinnnedHeader: r
 						}
-					})(e), Je = !!(null == j ? void 0 : j.shouldShowLinkedPosts), Xe = (!E || Je || Ee) && !we.isSponsored, Ye = Object(_.t)(we, P), {
-						source: Ze
-					} = Ye, Qe = Object(o.useRef)(null), $e = Object(o.useCallback)(e => {
+					})(e), Je = !!(null == j ? void 0 : j.shouldShowLinkedPosts), Xe = (!E || Je || Ee) && !we.isSponsored, Ze = Object(_.t)(we, P), {
+						source: Ye
+					} = Ze, Qe = Object(o.useRef)(null), $e = Object(o.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
@@ -2457,7 +2457,7 @@
 						redditStyle: Me
 					}, r.a.createElement(B.a, {
 						post: we
-					}), Ke && Ke.showPinnnedHeader && r.a.createElement(Z, null), re && Object(i.b)(we) && r.a.createElement(r.a.Fragment, null, r.a.createElement(b.a, {
+					}), Ke && Ke.showPinnnedHeader && r.a.createElement(Y, null), re && Object(i.b)(we) && r.a.createElement(r.a.Fragment, null, r.a.createElement(b.a, {
 						post: we
 					}), r.a.createElement(h.a, {
 						post: we
@@ -2505,11 +2505,11 @@
 						scrollerItemRef: je,
 						autoplayPref: t,
 						shouldShowGalleryTileOption: Pe
-					})), Ae && Ze && Ze.url && r.a.createElement(N.a, {
+					})), Ae && Ye && Ye.url && r.a.createElement(N.a, {
 						className: ye.a.adLinkWrapper
 					}, r.a.createElement(I.a, {
 						post: we,
-						adLinkContent: Ye
+						adLinkContent: Ze
 					})), fe && Fe && De && r.a.createElement(D.a, {
 						onIgnoreReports: xe,
 						reportable: we
@@ -2554,7 +2554,7 @@
 						postIds: null != Ne ? Ne : [],
 						subredditId: null == Te ? void 0 : Te.id
 					}));
-					return r.a.createElement(v.b, null, et, ne && !Y && r.a.createElement(F.a, {
+					return r.a.createElement(v.b, null, et, ne && !Z && r.a.createElement(F.a, {
 						className: ye.a.chain,
 						listingKey: ue,
 						listingName: pe,
@@ -3281,7 +3281,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.Eb
 				});
-				return !(!t || Object(o.Yd)(t))
+				return !(!t || Object(o.Wd)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
@@ -3297,7 +3297,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Yd)(t)
+					return Boolean(t) && !Object(r.Wd)(t)
 				},
 				c = Object(o.a)(a, s.d, (e, t) => e && !t)
 		},
@@ -3317,4 +3317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.0a7ab5a57f86aca54771.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.101d46f33cdf4e28c901.js.map
