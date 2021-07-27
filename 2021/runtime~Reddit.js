@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.96d80811791ee08713fc.js
-// Retrieved at 7/27/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.8288dc02733292dbe19a.js
+// Retrieved at 7/27/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -692,7 +692,7 @@
 					"ModerationPages~SubredditWiki": "3b9ef6d524930e3bbbf2",
 					ModerationPages: "ebe6a5f443477c3b6db2",
 					"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732": "31d6cfe0d16ae931b73c",
-					"reddit-pages-meta-ArbitrumPointsMigrationPage": "f59b082065d5cf3e550a",
+					"reddit-pages-meta-ArbitrumPointsMigrationPage": "6e6f4058b2db952866be",
 					"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033": "31d6cfe0d16ae931b73c",
 					"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "eab2bc67da77fe17839e",
 					"reddit-components-Governance-TransactionModals-BurnPointsModal": "f3fcefbd7984441854f8",
@@ -1268,7 +1268,7 @@
 						"translations/es_MX-json": "f3b5e5e830c90c6c40a6",
 						"translations/fr_FR-json": "b65869b915e7ed97e320",
 						"translations/it_IT-json": "d49f3db0ea6948e7bf6f",
-						"translations/pseudo_ext-json": "05f1ef8c22117d285c4b",
+						"translations/pseudo_ext-json": "72842e4cb28f6925eead",
 						"translations/pseudo_long-json": "491025b7091c1ec13f43",
 						"translations/pseudo_short-json": "d85bc0ef9ca9aa23d8c7",
 						"translations/pt_BR-json": "9c09856c257af7c23f4f",
@@ -1299,7 +1299,7 @@
 						"ModerationPages~SubredditWiki": "4b1486a6b32495e57603",
 						ModerationPages: "3cee7625a15e082aed2d",
 						"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732": "7911e63de13ba06455be",
-						"reddit-pages-meta-ArbitrumPointsMigrationPage": "6ddb829913698d94c25b",
+						"reddit-pages-meta-ArbitrumPointsMigrationPage": "4e9c2685992275ed3275",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033": "85674ed57b5e29059ef5",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "b1ebeb05ba1b196dfb50",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "5c7436fa1cb3d4bb0d1b",
@@ -1516,4 +1516,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.96d80811791ee08713fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8288dc02733292dbe19a.js.map
