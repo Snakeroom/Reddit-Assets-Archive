@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.a5c209af03a90905dd43.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8697ed01d41dbb9a4da8.js
+// Retrieved at 7/27/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1728,6 +1728,7 @@
 								isVoteCountAnimationEnabled: W,
 								isCountAnimShadowTestEnabled: h,
 								listingBelowVariant: b,
+								listingIndex: t,
 								listingKey: g,
 								listingName: f,
 								pageLayer: y,
@@ -1740,9 +1741,7 @@
 								sendEvent: this.props.sendEvent,
 								scrollerItemRef: C,
 								shouldHideFlair: S,
-								onceInViewport: () => {
-									null == O || O(t)
-								}
+								onceInViewport: O
 							})
 						}, this.scrollChildCache.set(P, j)
 					}
@@ -2110,4 +2109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.a5c209af03a90905dd43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8697ed01d41dbb9a4da8.js.map
