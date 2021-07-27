@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.7a07febca031177d3272.js
-// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c45f0b9c0ca6a0fe3d5f.js
+// Retrieved at 7/27/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -11986,7 +11986,7 @@
 					case ge.f:
 					case F.b:
 					case F.f:
-					case Cu.f: {
+					case Cu.g: {
 						const {
 							governance: r,
 							posts: s
@@ -12089,10 +12089,11 @@
 							...a
 						}
 					}
-					case Cu.h:
-					case Cu.g:
+					case Cu.i:
+					case Cu.h: {
 						const {
-							pollId: r, prediction: {
+							pollId: r,
+							prediction: {
 								options: s,
 								selectedOptionId: a,
 								totalVoteCount: n,
@@ -12100,7 +12101,8 @@
 							}
 						} = t.payload;
 						return {
-							...e, [r]: {
+							...e,
+							[r]: {
 								...e[r],
 								...c,
 								userSelection: a,
@@ -12117,7 +12119,21 @@
 								})),
 								totalVoters: n
 							}
-						};
+						}
+					}
+					case Cu.b: {
+						const {
+							endsAt: r,
+							pollId: s
+						} = t.payload;
+						return {
+							...e,
+							[s]: {
+								...e[s],
+								endsAt: r
+							}
+						}
+					}
 					default:
 						return e
 				}
@@ -12907,7 +12923,7 @@
 						case ge.f:
 						case F.b:
 						case F.f:
-						case Cu.f: {
+						case Cu.g: {
 							const {
 								governance: r,
 								posts: s
@@ -13149,7 +13165,7 @@
 					case zo.MORE_POSTS_LOADED:
 					case $o.c:
 					case $o.d:
-					case Cu.f: {
+					case Cu.g: {
 						const r = Jl(t.payload.meta);
 						return {
 							...e,
@@ -13521,7 +13537,7 @@
 							}
 						}
 					}
-					case Cu.k: {
+					case Cu.l: {
 						const {
 							tournamentPostId: r,
 							predictionId: s,
@@ -13566,6 +13582,13 @@
 							selectedOptionId: a,
 							predictionId: s
 						})), n
+					}
+					case Cu.b: {
+						const {
+							pollId: r,
+							endsAt: s
+						} = t.payload;
+						return Object(L.setIn)(e, [r, "pollData", "votingEndTimestamp"], s)
 					}
 					case Nl.a:
 						return {
@@ -19621,7 +19644,7 @@
 							coins: r
 						} : e
 					}
-					case Cu.h: {
+					case Cu.i: {
 						const {
 							price: r
 						} = t.payload;
@@ -21794,4 +21817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.7a07febca031177d3272.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c45f0b9c0ca6a0fe3d5f.js.map

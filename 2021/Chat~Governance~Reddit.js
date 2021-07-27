@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2eb8575389eb40fe93eb.js
-// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.325b355ea18285c4c751.js
+// Retrieved at 7/27/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2411,11 +2411,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("140580"),
+				buildNumber: r("140653"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1627394551"),
+				})("1627411275"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4862,14 +4862,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c54d1aab84847f8fd48d94725b0f69915acda6e6b-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc68730b673ab04d5fe85c203533cbf810a9d7cc8-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "54d1aab84847f8fd48d94725b0f69915acda6e6b-production",
+						release: "c68730b673ab04d5fe85c203533cbf810a9d7cc8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5363,7 +5363,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "54d1aab84847f8fd48d94725b0f69915acda6e6b-production",
+						releaseClient: "c68730b673ab04d5fe85c203533cbf810a9d7cc8-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -5780,10 +5780,12 @@
 		},
 		"./src/lib/makeRequest/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "c", (function() {
 				return u
+			})), i.d(t, "a", (function() {
+				return c
 			})), i.d(t, "b", (function() {
-				return _
+				return m
 			}));
 			var n = i("./node_modules/lodash/get.js"),
 				r = i.n(n),
@@ -5793,8 +5795,12 @@
 				a = i.n(d),
 				l = i("./src/lib/constants/index.ts");
 			i("./src/lib/logs/console.ts");
+
+			function u(e) {
+				return e.ok
+			}
 			a.a.parse["application/xml"] = e => e;
-			const u = {
+			const c = {
 					error: null,
 					ok: !1,
 					status: -1,
@@ -5802,7 +5808,7 @@
 					headers: {},
 					details: ""
 				},
-				c = (e, t) => {
+				_ = (e, t) => {
 					switch (e) {
 						case l.hb.PUT:
 							return a.a.put(t);
@@ -5819,22 +5825,22 @@
 					}
 				};
 
-			function _({
+			function m({
 				data: e,
 				endpoint: t,
 				headers: i,
 				method: n,
 				redirects: s,
 				withCredentials: d,
-				query: _,
+				query: u,
 				type: m = "form",
 				setup: p,
 				sync: h = !1,
 				timeoutMs: f
 			}) {
 				return new Promise(b => {
-					let g = c(n, t);
-					if ("number" == typeof f && g.timeout(f), d && g.withCredentials(), m && (g = g.type(m)), null !== m && g.type(m), n === l.hb.GET ? e && (g = g.query(e)) : (_ && (g = g.query(_)), e && (g = g.send(e))), i && g.set(i), o()(s) || g.redirects(s), p && (g = p(g)), h) {
+					let g = _(n, t);
+					if ("number" == typeof f && g.timeout(f), d && g.withCredentials(), m && (g = g.type(m)), null !== m && g.type(m), n === l.hb.GET ? e && (g = g.query(e)) : (u && (g = g.query(u)), e && (g = g.send(e))), i && g.set(i), o()(s) || g.redirects(s), p && (g = p(g)), h) {
 						const {
 							_end: e
 						} = g;
@@ -5852,7 +5858,7 @@
 					}
 					g.end((e, t) => {
 						if (e) b({
-							...u,
+							...c,
 							body: r()(e, "response.body", {}),
 							error: e,
 							status: e.status,
@@ -5861,7 +5867,7 @@
 						else {
 							const e = t.body && t.body.json && t.body.json.data ? t.body.json.data.details : "";
 							b({
-								...u,
+								...c,
 								body: t.body,
 								ok: !0,
 								status: t.status,
@@ -8208,30 +8214,32 @@
 		},
 		"./src/reddit/actions/economics/predictions/constants.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "d", (function() {
+			i.d(t, "e", (function() {
 				return n
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "i", (function() {
 				return r
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return s
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "h", (function() {
 				return o
-			})), i.d(t, "b", (function() {
-				return d
 			})), i.d(t, "c", (function() {
+				return d
+			})), i.d(t, "d", (function() {
 				return a
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "g", (function() {
 				return l
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return u
 			})), i.d(t, "a", (function() {
 				return c
-			})), i.d(t, "i", (function() {
-				return _
 			})), i.d(t, "j", (function() {
+				return _
+			})), i.d(t, "k", (function() {
 				return m
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return p
+			})), i.d(t, "b", (function() {
+				return h
 			}));
 			const n = "FETCH_SUBREDDIT_TOP_PREDICTORS_SUCCESS",
 				r = "PREDICTION_VOTE_SUCCESS",
@@ -8244,7 +8252,8 @@
 				c = "ADD_PREDICTION_TO_TOURNAMENT",
 				_ = "REMOVE_LAST_PREDICTION_FROM_TOURNAMENT",
 				m = "RESET_TOURNAMENT_PREDICTIONS",
-				p = "UPDATE_PREDICTION_TOURNAMENT_SUCCESS"
+				p = "UPDATE_PREDICTION_TOURNAMENT_SUCCESS",
+				h = "EDIT_PREDICTION_END_TIME_SUCCESS"
 		},
 		"./src/reddit/actions/emailVerificationTooltip.ts": function(e, t, i) {
 			"use strict";
@@ -28898,7 +28907,7 @@
 			const d = [];
 			var a = (e = d, t) => {
 				switch (t.type) {
-					case o.j:
+					case o.k:
 						return d;
 					case o.a: {
 						const {
@@ -28906,7 +28915,7 @@
 						} = t.payload;
 						return [...e, s()(i)]
 					}
-					case o.i:
+					case o.j:
 						return e.slice(0, -1);
 					default:
 						return e
@@ -28915,7 +28924,7 @@
 			const l = {};
 			var u = (e = l, t) => {
 				switch (t.type) {
-					case o.d: {
+					case o.e: {
 						const {
 							currentRank: i,
 							subredditId: n,
@@ -28937,7 +28946,7 @@
 			var _ = (e = c, t) => {
 				var i, n;
 				switch (t.type) {
-					case o.c: {
+					case o.d: {
 						const {
 							tournaments: i
 						} = t.payload;
@@ -28949,7 +28958,7 @@
 							}), {})
 						}
 					}
-					case o.l: {
+					case o.m: {
 						const i = t.payload;
 						return e[i.tournamentId] ? {
 							...e,
@@ -28960,7 +28969,7 @@
 							}
 						} : e
 					}
-					case o.k: {
+					case o.l: {
 						const {
 							predictionId: r,
 							selectedOptionId: s,
@@ -28988,7 +28997,7 @@
 			var p = (e = m, t) => {
 				var i;
 				switch (t.type) {
-					case o.b: {
+					case o.c: {
 						const {
 							subredditId: n
 						} = t.payload, r = (null === (i = e[n]) || void 0 === i ? void 0 : i.tournaments) || [];
@@ -29000,7 +29009,7 @@
 							}
 						}
 					}
-					case o.c: {
+					case o.d: {
 						const {
 							subredditId: i,
 							tournaments: n
@@ -39705,4 +39714,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2eb8575389eb40fe93eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.325b355ea18285c4c751.js.map
