@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.7f1cf881babaf9f5a5e5.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.f09d12c8cd55ea64f662.js
+// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -12,9 +12,9 @@
 				return o
 			}));
 			var r = t("./src/lib/loadableAction/index.ts");
-			const n = Object(r.a)(() => t.e("ReportFlow").then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
-				i = Object(r.a)(() => t.e("ReportFlow").then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
-				o = Object(r.a)(() => t.e("ReportFlow").then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
+			const n = Object(r.a)(() => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
+				i = Object(r.a)(() => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
+				o = Object(r.a)(() => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
 		},
 		"./src/reddit/components/CrisisFlow/CrisisFlowPage.m.less": function(e, s, t) {
 			e.exports = {
@@ -40,10 +40,10 @@
 				c = t("./src/reddit/components/CrisisFlow/CrisisFooter/index.m.less"),
 				d = t.n(c);
 			const {
-				fbt: u
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), C = 10;
+				fbt: m
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), u = 10;
 
-			function m(e) {
+			function C(e) {
 				const {
 					thankYouControls: s,
 					onCloseReportFlow: t,
@@ -56,7 +56,7 @@
 					"data-redditstyle": !0,
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank"
-				}, u._("Other Options", null, {
+				}, m._("Other Options", null, {
 					hk: "1RadlV"
 				})), n.a.createElement(a.i, {
 					className: d.a.CrisisButton,
@@ -64,10 +64,10 @@
 					onClick: s ? t : r
 				}, e.pending ? n.a.createElement(l.a, {
 					className: d.a.loadingIcon,
-					sizePx: C
-				}) : s ? u._("Ok", null, {
+					sizePx: u
+				}) : s ? m._("Ok", null, {
 					hk: "3Pp8M4"
-				}) : u._("Yes", null, {
+				}) : m._("Yes", null, {
 					hk: "12gtn"
 				})))
 			}
@@ -91,34 +91,34 @@
 				}, "Crisis Text Line")), E._param("username", n.a.createElement("strong", null, "u/", e.username))], {
 					hk: "srFNa"
 				}))),
-				T = t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"),
-				R = t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"),
+				R = t("./src/reddit/icons/svgs/ArrowHeadsRight/index.tsx"),
+				T = t("./src/reddit/icons/svgs/ChatBubbles/index.tsx"),
 				y = t("./src/reddit/icons/svgs/Person/index.tsx"),
 				j = t("./src/reddit/icons/svgs/TickCircled/index.tsx"),
 				A = t("./src/reddit/components/CrisisFlow/CrisisThankYouPage/index.m.less"),
 				D = t.n(A);
 			const {
 				fbt: O
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = w.a.div("CrisisImageContainer", g.a), N = w.a.h2("CrisisTitle", g.a), z = w.a.p("CrisisDescription", g.a), S = w.a.div("CrisisOtherActions", D.a), V = w.a.h4("CrisisOtherActionsTitle", D.a), H = w.a.div("CrisisLinkIconContainer", D.a), W = w.a.div("CrisisLinkText", D.a), Y = w.a.h3("CrisisLinkTitle", D.a), M = w.a.p("CrisisLinkDescription", D.a);
-			var B = e => n.a.createElement("div", {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), I = w.a.div("CrisisImageContainer", g.a), N = w.a.h2("CrisisTitle", g.a), S = w.a.p("CrisisDescription", g.a), z = w.a.div("CrisisOtherActions", D.a), V = w.a.h4("CrisisOtherActionsTitle", D.a), H = w.a.div("CrisisLinkIconContainer", D.a), W = w.a.div("CrisisLinkText", D.a), Y = w.a.h3("CrisisLinkTitle", D.a), B = w.a.p("CrisisLinkDescription", D.a);
+			var M = e => n.a.createElement("div", {
 					className: D.a.CrisisThankYouPage
 				}, n.a.createElement(I, null, n.a.createElement(j.a, {
 					className: D.a.CrisisTickImage
 				})), n.a.createElement(N, null, O._("Thanks for caring about your fellow redditor", null, {
 					hk: "1ePh84"
-				})), n.a.createElement(z, null, O._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [O._param("username", n.a.createElement("span", null, "u/", e.username))], {
+				})), n.a.createElement(S, null, O._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [O._param("username", n.a.createElement("span", null, "u/", e.username))], {
 					hk: "3X1mGY"
-				})), n.a.createElement(S, null, n.a.createElement(V, null, O._("Other things you can do", null, {
+				})), n.a.createElement(z, null, n.a.createElement(V, null, O._("Other things you can do", null, {
 					hk: "4oCunD"
 				})), n.a.createElement(p.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
 					target: "_blank",
 					className: D.a.CrisisLink
-				}, n.a.createElement(H, null, n.a.createElement(R.a, null)), n.a.createElement(W, null, n.a.createElement(Y, null, O._("Learn how to help someone in crisis", null, {
+				}, n.a.createElement(H, null, n.a.createElement(T.a, null)), n.a.createElement(W, null, n.a.createElement(Y, null, O._("Learn how to help someone in crisis", null, {
 					hk: "3HohFx"
-				})), n.a.createElement(M, null, O._("Get advice on what you can say and how to be supportive.", null, {
+				})), n.a.createElement(B, null, O._("Get advice on what you can say and how to be supportive.", null, {
 					hk: "1NHS5d"
-				}))), n.a.createElement(T.a, {
+				}))), n.a.createElement(R.a, {
 					className: D.a.CrisisLinkArrow
 				})), n.a.createElement(p.a, {
 					href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/how-do-i-get-myself-support-after-helping-someone",
@@ -126,14 +126,14 @@
 					className: D.a.CrisisLink
 				}, n.a.createElement(H, null, n.a.createElement(y.a, null)), n.a.createElement(W, null, n.a.createElement(Y, null, O._("Get yourself support", null, {
 					hk: "kTT0U"
-				})), n.a.createElement(M, null, O._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
+				})), n.a.createElement(B, null, O._("If this has brought up difficult emotions, there are people and resources here for you too.", null, {
 					hk: "37R4JZ"
-				}))), n.a.createElement(T.a, {
+				}))), n.a.createElement(R.a, {
 					className: D.a.CrisisLinkArrow
 				})))),
-				q = t("./src/reddit/actions/reportFlow/index.ts"),
-				K = t("./src/reddit/endpoints/post/index.tsx");
-			const G = {
+				G = t("./src/reddit/actions/reportFlow/index.ts"),
+				q = t("./src/reddit/endpoints/post/index.tsx");
+			const K = {
 					usernamesInputTitle: "Username",
 					reasonTextToShow: "Someone is considering suicide or serious self-harm.",
 					canSpecifyUsernames: !0,
@@ -147,7 +147,7 @@
 					timestamp: s
 				}) => ({
 					onReportPostOrComment: (t, r, n) => {
-						e(Object(q.a)({
+						e(Object(G.a)({
 							id: t,
 							reportFlowPayload: r,
 							timestamp: s
@@ -165,13 +165,13 @@
 								rule: "self harm",
 								kind: "siteRule"
 							};
-							e.onReportPostOrComment(e.thingId, s, G)
+							e.onReportPostOrComment(e.thingId, s, K)
 						} else {
 							const s = {
-								reason: G,
+								reason: K,
 								usernames: [this.props.username]
 							};
-							e.fromUserProfile ? Object(K.o)(e.apiContext(), s, !1) : e.fromReportPage && e.iframed && Object(K.o)(e.apiContext(), s, !0)
+							e.fromUserProfile ? Object(q.o)(e.apiContext(), s, !1) : e.fromReportPage && e.iframed && Object(q.o)(e.apiContext(), s, !0)
 						}
 						e.postMessage && e.postMessage({
 							type: "ctlSuccess"
@@ -189,11 +189,11 @@
 						props: s,
 						onCrisisFlowSubmit: t
 					} = this;
-					return n.a.createElement(Z, null, e.showThankYouPage ? n.a.createElement(B, {
+					return n.a.createElement(Z, null, e.showThankYouPage ? n.a.createElement(M, {
 						username: s.username
 					}) : n.a.createElement(P, {
 						username: s.username
-					}), n.a.createElement(m, {
+					}), n.a.createElement(C, {
 						onCrisisFlowSubmit: t,
 						onCloseReportFlow: s.onCloseReportFlow,
 						pending: e.requestProcessing,
@@ -267,12 +267,12 @@
 				l = t("./src/higherOrderComponents/asModal/index.tsx"),
 				c = t("./src/lib/lessComponent.tsx"),
 				d = t("./src/reddit/components/CrisisFlow/CrisisFlowPage.tsx"),
-				u = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				C = t("./src/reddit/components/CrisisFlow/_CrisisFlow.m.less"),
-				m = t.n(C);
-			const p = c.a.div("Wrapper", m.a),
-				h = c.a.div("CloseWrapper", m.a),
-				w = c.a.wrapped(u.a, "Close", m.a),
+				m = t("./src/reddit/icons/svgs/Close/index.tsx"),
+				u = t("./src/reddit/components/CrisisFlow/_CrisisFlow.m.less"),
+				C = t.n(u);
+			const p = c.a.div("Wrapper", C.a),
+				h = c.a.div("CloseWrapper", C.a),
+				w = c.a.wrapped(m.a, "Close", C.a),
 				x = Object(o.c)({
 					reportedPending: e => e.features.reportFlow.api.pending,
 					reportedSuccess: e => e.features.reportFlow.api.success
@@ -303,7 +303,7 @@
 				}
 			}
 			const _ = Object(a.b)(g(f));
-			s.default = c.a.wrapped(Object(l.a)(_), "Component", m.a)
+			s.default = c.a.wrapped(Object(l.a)(_), "Component", C.a)
 		},
 		"./src/reddit/contexts/ApiContext.tsx": function(e, s, t) {
 			"use strict";
@@ -467,4 +467,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.7f1cf881babaf9f5a5e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.f09d12c8cd55ea64f662.js.map

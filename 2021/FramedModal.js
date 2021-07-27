@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedModal.68fadbc7723eb259f91a.js
-// Retrieved at 6/10/2021, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedModal.9522e688817a60f0fe46.js
+// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedModal"], {
 		"./src/reddit/components/CrisisFlow/async.tsx": function(e, s, t) {
@@ -29,21 +29,21 @@
 		"./src/reddit/components/ReportFlow/new.tsx": function(e, s, t) {
 			"use strict";
 			t.d(s, "a", (function() {
-				return n
+				return i
 			}));
 			var r = t("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				o = t("./src/reddit/constants/colors.ts");
-			const i = {
+			const n = {
 					backgroundColor: o.b.overlayReportFlow
 				},
-				n = Object(r.a)({
+				i = Object(r.a)({
 					resolved: {},
 					chunkName: () => "ReportFlow",
 					isReady(e) {
 						const s = this.resolve(e);
 						return !1 !== this.resolved[s] && !!t.m[s]
 					},
-					importAsync: () => t.e("ReportFlow").then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
+					importAsync: () => Promise.all([t.e("Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"), t.e("ReportFlow")]).then(t.bind(null, "./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx")),
 					requireAsync(e) {
 						const s = this.resolve(e);
 						return this.resolved[s] = !1, this.importAsync(e).then(e => (this.resolved[s] = !0, e))
@@ -85,9 +85,9 @@
 			})), t.d(s, "b", (function() {
 				return o
 			})), t.d(s, "c", (function() {
-				return n
+				return i
 			}));
-			var r, o, i;
+			var r, o, n;
 			t("./node_modules/core-js/modules/web.dom.iterable.js");
 			! function(e) {
 				e.All = "all", e.Comment = "comment", e.Post = "post"
@@ -97,8 +97,8 @@
 			}(o || (o = {})),
 			function(e) {
 				e.R2 = "R2"
-			}(i || (i = {}));
-			const n = new Set(Object.values(i))
+			}(n || (n = {}));
+			const i = new Set(Object.values(n))
 		},
 		"./src/reddit/pages/FramedModalPage/index.m.less": function(e, s, t) {
 			e.exports = {
@@ -110,8 +110,8 @@
 			t.r(s);
 			var r = t("./node_modules/lodash/fromPairs.js"),
 				o = t.n(r),
-				i = t("./node_modules/react/index.js"),
-				n = t.n(i),
+				n = t("./node_modules/react/index.js"),
+				i = t.n(n),
 				a = t("./src/lib/extractQueryParams/index.ts"),
 				d = t("./src/lib/postParentMessage/index.ts"),
 				l = t("./src/reddit/pages/FramedModalPage/index.m.less"),
@@ -119,10 +119,10 @@
 				_ = t("./src/reddit/components/CrisisFlow/async.tsx"),
 				m = t("./src/reddit/components/ReportFlow/new.tsx"),
 				h = t("./src/reddit/models/ReportFlow/index.ts"),
-				O = t("./src/reddit/pages/PaypalFinishPage/async.tsx");
+				p = t("./src/reddit/pages/PaypalFinishPage/async.tsx");
 
-			function p() {
-				return (p = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var s = 1; s < arguments.length; s++) {
 						var t = arguments[s];
 						for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r])
@@ -140,7 +140,7 @@
 					PAYPAL_FINISH: "paypal-finish",
 					REPORT: "report"
 				};
-			class N extends n.a.Component {
+			class N extends i.a.Component {
 				constructor(e) {
 					if (super(e), this.element = null, this.iframeWidth = null, this.iframeHeight = null, this.onContentResize = () => {
 							this.maybeResize()
@@ -156,7 +156,7 @@
 				componentForIframe() {
 					switch (this.modalType) {
 						case u.CTL:
-							return n.a.createElement(_.a, p({
+							return i.a.createElement(_.a, O({
 								iframed: !0,
 								username: this.queryParams.author,
 								onCloseReportFlow: () => this.postMessage({
@@ -165,13 +165,13 @@
 								postMessage: e => this.postMessage(e)
 							}, this.queryParams));
 						case u.PAYPAL_FINISH:
-							return n.a.createElement(O.a, {
+							return i.a.createElement(p.a, {
 								params: this.queryParams,
 								postMessage: e => this.postMessage(e)
 							});
 						case u.REPORT: {
 							const e = this.queryParams.host_app_name;
-							return n.a.createElement(m.b, {
+							return i.a.createElement(m.b, {
 								hostAppName: h.c.has(e) ? e : void 0,
 								postId: this.queryParams.post_id,
 								commentId: this.queryParams.comment_id,
@@ -189,7 +189,7 @@
 					}
 				}
 				render() {
-					return n.a.createElement("div", {
+					return i.a.createElement("div", {
 						className: c.a.fullScreen,
 						ref: e => this.setElement(e)
 					}, this.componentForIframe())
@@ -255,4 +255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.68fadbc7723eb259f91a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedModal.9522e688817a60f0fe46.js.map

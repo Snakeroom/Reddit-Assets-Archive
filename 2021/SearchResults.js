@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5b7592f6e2893422c9cd.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.dd3e0ab11f10b40a6b98.js
+// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -9773,7 +9773,7 @@
 						const {
 							queryParams: e,
 							sendEvent: t
-						} = this.props, s = s => t(Object(O.b)(s, Object(m.c)(a()(e || {}, v.t))));
+						} = this.props, s = s => t(Object(O.b)(s, Object(m.e)(a()(e || {}, v.t))));
 						return this.state.didSendCovidSeenEvent || (s("view"), this.setState({
 							didSendCovidSeenEvent: !0
 						})), o.a.createElement(T, {
@@ -9817,7 +9817,7 @@
 						viewTreatment: x
 					} = this.props, {
 						isCovidBannerHidden: f
-					} = this.state, y = n.params.subredditName || n.params.multiredditName || "", E = n.params.username, O = Object(m.c)(a()(c || {}, v.t)), _ = {
+					} = this.state, y = n.params.subredditName || n.params.multiredditName || "", E = n.params.username, O = Object(m.e)(a()(c || {}, v.t)), _ = {
 						...O,
 						sort: O.category ? l.Tb.Relevance : O.sort,
 						t: O.category ? l.bc.DAY : O.t
@@ -9946,7 +9946,7 @@
 					}, [s, F]);
 					const M = t.params.subredditName || t.params.multiredditName || "",
 						A = t.params.username,
-						D = Object(l.c)(a()(s || {}, g.t)),
+						D = Object(l.e)(a()(s || {}, g.t)),
 						B = T && D.restrict_sr,
 						U = !B && Object(E.a)(D.type) ? f.g.Listings : f.g.Posts,
 						V = {
@@ -9962,7 +9962,7 @@
 						hideOnlyChildMargin: !0,
 						className: n,
 						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(u.a, null), r && !L && (() => {
-							const e = e => C(Object(O.b)(e, Object(l.c)(a()(s || {}, g.t))));
+							const e = e => C(Object(O.b)(e, Object(l.e)(a()(s || {}, g.t))));
 							return S.current || (e("view"), S.current = !0), o.a.createElement(N, {
 								announcement: x.a,
 								className: I.a.announcement,
@@ -10156,4 +10156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5b7592f6e2893422c9cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.dd3e0ab11f10b40a6b98.js.map
