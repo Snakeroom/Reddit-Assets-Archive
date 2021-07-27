@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.a65ae3f5939f7f6738f2.js
-// Retrieved at 7/26/2021, 4:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.a4be4bccb97819866be7.js
+// Retrieved at 7/27/2021, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7196,15 +7196,7 @@
 						title: o.fbt._("Powerups", null, {
 							hk: "2rTyID"
 						})
-					}), null), !v && m.a.createElement(rc, f(uc.RecentCommunitiesMenu)), m.a.createElement(Vi, f(uc.ExploreMenu)), m.a.createElement(() => m.a.createElement(Ui, {
-						href: Is.c.popular,
-						icon: m.a.createElement(us.a, {
-							name: "rising"
-						}),
-						title: o.fbt._("Popular Posts", null, {
-							hk: "1bbqfg"
-						})
-					}), null), m.a.createElement(Yi, f(uc.Settings)), m.a.createElement(() => m.a.createElement(Ui, {
+					}), null), !v && m.a.createElement(rc, f(uc.RecentCommunitiesMenu)), m.a.createElement(Vi, f(uc.ExploreMenu)), m.a.createElement(Yi, f(uc.Settings)), m.a.createElement(() => m.a.createElement(Ui, {
 						href: "https://www.reddithelp.com/hc/en-us",
 						icon: m.a.createElement(us.a, {
 							name: "help"
@@ -18375,4 +18367,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~Subreddit", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~Subreddit", "Governance~Reddit~reddit-components-LargePost~reddit-components-MediumPost", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a65ae3f5939f7f6738f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.a4be4bccb97819866be7.js.map
