@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.77266de29fa3d3ab413a.js
-// Retrieved at 7/27/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.71b0dc9fd110c7413bf8.js
+// Retrieved at 7/28/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -6415,7 +6415,8 @@
 			}
 			const O = Object(r.b)(() => Object(i.c)({
 					showFPR: C.H,
-					showSuspended: C.O
+					showSuspended: C.O,
+					showOffline: e => "recent" !== e.connection.contentState
 				})),
 				y = Object(d.a)(({
 					className: e,
@@ -6441,7 +6442,8 @@
 						const t = {
 							browserInfo: e,
 							showSuspended: this.props.showSuspended,
-							showFPR: this.props.showFPR
+							showFPR: this.props.showFPR,
+							showOffline: this.props.showOffline
 						};
 						return n.a.createElement(m.a, {
 							className: Object(a.a)(f.a.fakeOverlayLightboxHeaderWrapper, {
@@ -6481,7 +6483,8 @@
 				showDeprecated: "_2NxbeazXeXu0bSJRcwSxd8",
 				showFPR: "Hpitc80wLQqDqDh9A37wr",
 				showFpr: "Hpitc80wLQqDqDh9A37wr",
-				showSuspended: "_39xFv40KohPmMxYVnMJmp"
+				showSuspended: "_39xFv40KohPmMxYVnMJmp",
+				offline: "Jvy6k8geBbRljwIwFTLRo"
 			}
 		},
 		"./src/reddit/layout/page/Lightbox/index.tsx": function(e, t, s) {
@@ -7830,4 +7833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.77266de29fa3d3ab413a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.71b0dc9fd110c7413bf8.js.map
