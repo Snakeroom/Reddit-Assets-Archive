@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.06fb3279f8d94ffbf76c.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.407cea5dbfe57f531e3c.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -2122,7 +2122,7 @@
 							onMouseEnter: xe.show,
 							onMouseLeave: xe.hide,
 							onClick: () => {
-								H(Object(u.r)(L ? "post" : "postlist")), R(Object(m.f)("post_top_supporter_badge"))
+								H(Object(u.s)(L ? "post" : "postlist")), R(Object(m.f)("post_top_supporter_badge"))
 							},
 							ref: xe.target.ref
 						}, n.a.createElement(g.a, {
@@ -3270,4 +3270,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.06fb3279f8d94ffbf76c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.407cea5dbfe57f531e3c.js.map

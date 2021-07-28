@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e2d861b0926fda0f89e0.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.ad70465d8b72859c76a8.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -335,7 +335,7 @@
 				});
 				const M = Object(h.b)(T.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
 					k = e => {
-						c(Object(O.a)("points_claim", n, T.displayConversion, e))
+						c(Object(O.c)("points_claim", n, T.displayConversion, e))
 					},
 					S = Object(C.b)(l.pointsToClaim, T.displayConversion);
 				return a.a.createElement(y.a, {
@@ -364,7 +364,7 @@
 								forceFetch: !0
 							}))
 						}(r, T, e.hash, n, d).then(() => {
-							c(Object(O.b)("points_claim", n, S)), r(function(e) {
+							c(Object(O.d)("points_claim", n, S)), r(function(e) {
 								return Object(x.f)(Object(x.e)(s.fbt._("Your {pointsName} are ready!", [s.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), w.b.SuccessCommunityGreen))
@@ -1074,4 +1074,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e2d861b0926fda0f89e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.ad70465d8b72859c76a8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.2b84352996fddb5f6ca2.js
-// Retrieved at 7/21/2021, 5:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.bba25d8199de2d744fda.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsCtaButton/index.tsx": function(e, t, s) {
@@ -103,7 +103,7 @@
 					className: p.a.user,
 					to: `/user/${x}/`,
 					onClick: () => {
-						h && s(Object(d.s)(h.id, h.displayName))
+						h && s(Object(d.t)(h.id, h.displayName))
 					}
 				}, _) : n.a.createElement("div", {
 					className: p.a.user
@@ -402,7 +402,7 @@
 				}), a.a.createElement(m.a, {
 					className: y.a.ctaButton,
 					onClick: () => {
-						h(Object(_.o)()), b(Object(i.f)("supporters_list_modal"))
+						h(Object(_.p)()), b(Object(i.f)("supporters_list_modal"))
 					}
 				}))) : (b(Object(d.f)({
 					kind: j.b.Error,
@@ -536,4 +536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.2b84352996fddb5f6ca2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.bba25d8199de2d744fda.js.map

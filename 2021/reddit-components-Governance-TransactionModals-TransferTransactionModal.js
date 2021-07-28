@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.b309259ef978e4ed8714.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.e02865568a4714cf2adf.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1386,7 +1386,7 @@
 					O = Object(m.e)(q, S, c),
 					L = Object(v.b)(c, I.displayConversion),
 					k = e => {
-						x(Object(b.a)("transfer", i, L, e))
+						x(Object(b.c)("transfer", i, L, e))
 					},
 					U = I.name;
 				return s.a.createElement(T.a, {
@@ -1419,7 +1419,7 @@
 								userIds: [i]
 							}))
 						}(B, I, e.hash, i, C, null == P ? void 0 : P.id).then(() => {
-							x(Object(b.b)("transfer", i, L)), B(function(e) {
+							x(Object(b.d)("transfer", i, L)), B(function(e) {
 								return Object(f.f)(Object(f.e)(o.fbt._("Your {pointsName} were sent!", [o.fbt._param("pointsName", e)], {
 									hk: "4yssJA"
 								}), w.b.SuccessCommunityGreen))
@@ -1455,4 +1455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.b309259ef978e4ed8714.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.e02865568a4714cf2adf.js.map

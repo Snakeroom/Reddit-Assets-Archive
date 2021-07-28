@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.5c7436fa1cb3d4bb0d1b.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.e4e74e54258a428dad3b.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, a) {
@@ -744,7 +744,7 @@
 				} = e, s = Object(l.d)(), o = Object(k.a)(), d = () => s(Object(M.f)()), u = n.id, m = Object(l.e)(e => Object(z.e)(e, {
 					subredditId: u
 				})), p = new x.BigNumber(m).isGreaterThanOrEqualTo(t), h = Object(O.b)(t, null == c ? void 0 : c.displayConversion), b = c.contractAddress, v = Object(y.a)(b, t, a), f = e => {
-					o(Object(_.a)("burn_link", u, h, e))
+					o(Object(_.c)("burn_link", u, h, e))
 				}, E = c.name;
 				return r.a.createElement(T.a, {
 					approvalOverview: r.a.createElement(R, {
@@ -778,7 +778,7 @@
 								})), e(Object(g.h)({
 									subredditId: n
 								}))
-							}(s, c, e.hash, n.id, m), o(Object(_.b)("burn_link", u, h)), s(function(e) {
+							}(s, c, e.hash, n.id, m), o(Object(_.d)("burn_link", u, h)), s(function(e) {
 								const t = Object(C.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), I.b.SuccessCommunityGreen);
@@ -1715,4 +1715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.5c7436fa1cb3d4bb0d1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.e4e74e54258a428dad3b.js.map

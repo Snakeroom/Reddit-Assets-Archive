@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.c7dc99220ed4e6d4331d.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.4ee55abaeb3b2cf807de.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, r) {
@@ -1492,7 +1492,7 @@
 				}, [h]);
 				const q = s.displayConversion,
 					Q = e => {
-						E(Object(S.a)("coins", u, new j.a(O).dividedBy(q).toFixed(), e))
+						E(Object(S.c)("coins", u, new j.a(O).dividedBy(q).toFixed(), e))
 					},
 					H = () => g(Object(M.f)());
 				return a.a.createElement(B.a, {
@@ -1532,7 +1532,7 @@
 								subredditId: n.id
 							}))
 						}(g, s, e.hash, c, v).then(() => {
-							E(Object(S.b)("coins", u, new j.a(O).dividedBy(q).toFixed())), g(function() {
+							E(Object(S.d)("coins", u, new j.a(O).dividedBy(q).toFixed())), g(function() {
 								const e = Object(N.e)(l.fbt._("Your Coins are ready!", null, {
 									hk: "7ewJ6"
 								}), L.b.SuccessCommunityGreen);
@@ -2816,4 +2816,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.c7dc99220ed4e6d4331d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.4ee55abaeb3b2cf807de.js.map

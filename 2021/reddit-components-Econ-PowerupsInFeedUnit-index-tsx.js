@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.b6879ba2c69de7d0f2fe.js
-// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ecd3beff39ef680e8e18.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -180,7 +180,7 @@
 							return Object(m.k)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= 2
 						})(e))
 					}, [g, e, k]), Object(r.useEffect)(() => {
-						j && (Object(m.R)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), w(Object(p.k)()))
+						j && (Object(m.R)(l.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), w(Object(p.l)()))
 					}, [j, w, e]), !j) return null;
 				const O = !!(null == N ? void 0 : N.freeCount);
 				return o.a.createElement("div", {
@@ -205,7 +205,7 @@
 					priority: u.b.Primary,
 					className: h.a.button,
 					onClick: () => {
-						w(Object(p.j)()), s(Object(c.f)("in_feed_unit"))
+						w(Object(p.k)()), s(Object(c.f)("in_feed_unit"))
 					},
 					isFullWidth: !0
 				}, O ? x._("Use Your Premium Powerup", null, {
@@ -217,4 +217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.b6879ba2c69de7d0f2fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ecd3beff39ef680e8e18.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.b49d6bdd63715c462007.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.8dcc1d04b983174d6d15.js
+// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, s) {
@@ -190,7 +190,7 @@
 							subredditId: s,
 							price: t,
 							providerArgs: a
-						})), A(Object(b.b)("subscribe", s, g)), r(Object(l.f)({
+						})), A(Object(b.d)("subscribe", s, g)), r(Object(l.f)({
 							duration: 1e4,
 							kind: j.b.SuccessCommunityGreen,
 							text: n.fbt._("Your purchase was successful! Thank you for your support!", null, {
@@ -202,7 +202,7 @@
 						})), e.onPaymentComplete()
 					},
 					onTransactionFailure: e => {
-						A(Object(b.a)("subscribe", s, g, e))
+						A(Object(b.c)("subscribe", s, g, e))
 					},
 					subredditId: s,
 					transaction: w,
@@ -213,4 +213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.b49d6bdd63715c462007.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.8dcc1d04b983174d6d15.js.map
