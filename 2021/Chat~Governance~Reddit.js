@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b0ecd2eeb75be847bb5.js
-// Retrieved at 7/28/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80e36399c2d455f1fd42.js
+// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2526,11 +2526,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("140967"),
+				buildNumber: r("140980"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1627511180"),
+				})("1627513183"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4977,14 +4977,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c6ae69f424c982152d29f285b436729d8fb68e082-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2d3ce5e34033ddda4854414ffb39233e0e824f37-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6ae69f424c982152d29f285b436729d8fb68e082-production",
+						release: "2d3ce5e34033ddda4854414ffb39233e0e824f37-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5478,7 +5478,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "6ae69f424c982152d29f285b436729d8fb68e082-production",
+						releaseClient: "2d3ce5e34033ddda4854414ffb39233e0e824f37-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11478,9 +11478,6 @@
 					return {
 						accountIcon: e.icon_img,
 						awardedLastMonth: e.awarded_last_month ? Object(v.c)(e.awarded_last_month) : null,
-						awardeeKarma: t,
-						awarderKarma: i,
-						commentKarma: n,
 						created: e.created,
 						createdUtc: e.created_utc,
 						displayName: e.name,
@@ -11495,11 +11492,16 @@
 						isAdmin: e.is_admin,
 						isMod: e.is_mod,
 						isNSFW: !(!e.subreddit || !e.subreddit.over_18),
+						karma: {
+							fromAwardsReceived: t,
+							fromAwardsGiven: i,
+							fromComments: n,
+							fromPosts: s,
+							total: o
+						},
 						prefShowSnoovatar: e.pref_show_snoovatar,
 						prefShowTwitter: e.pref_show_twitter,
-						postKarma: s,
 						snoovatarFullBodyAsset: e.snoovatar_img || null,
-						totalKarma: o,
 						url: `/user/${e.name}/`,
 						username: e.name,
 						...e.subreddit ? {
@@ -11516,14 +11518,16 @@
 					return {
 						acceptChats: !1 !== e.accept_chats,
 						acceptPms: !1 !== e.accept_pms,
-						awardeeKarma: t,
-						awarderKarma: i,
-						commentKarma: n,
 						hasExternalAccount: e.has_external_account,
-						postKarma: r,
+						karma: {
+							fromAwardsReceived: t,
+							fromAwardsGiven: i,
+							fromComments: n,
+							fromPosts: r,
+							total: s
+						},
 						prefShowTwitter: e.pref_show_twitter,
 						publicDescription: e.subreddit ? e.subreddit.public_description : "",
-						totalKarma: s,
 						userIsSubscriber: e.subreddit && e.subreddit.user_is_subscriber || !1
 					}
 				},
@@ -11567,19 +11571,19 @@
 					apiContext: o,
 					gqlContext: d
 				}) => {
-					var a, l, c;
+					var a;
 					if (e === r.C) return;
-					const _ = n();
-					if (!!(Object(I.j)(_, {
+					const l = n();
+					if (!!(Object(I.j)(l, {
 							profileName: e
-						}) && Object(I.h)(_, {
+						}) && Object(I.h)(l, {
 							profileName: e
-						}) && Object(R.mb)(_, {
+						}) && Object(R.mb)(l, {
 							userName: e
-						}) && (null === (a = _.user.account) || void 0 === a ? void 0 : a.totalKarma)) && !t) return;
-					const [p, m] = await Promise.all([Object(u.c)(o(), e), Object(u.d)(d(), e)]);
-					if (p.ok) {
-						p.body && p.body.data && p.body.data.is_suspended && i(Object(s.u)({
+						}) && (null === (a = l.user.account) || void 0 === a ? void 0 : a.karma.total)) && !t) return;
+					const [c, _] = await Promise.all([Object(u.c)(o(), e), Object(u.d)(d(), e)]);
+					if (c.ok) {
+						c.body && c.body.data && c.body.data.is_suspended && i(Object(s.u)({
 							profileName: e
 						}));
 						const t = function(e) {
@@ -11599,22 +11603,28 @@
 									profile: Object(S.a)(t.subreddit, t.name)
 								} : null
 							}
-						}(p.body);
-						if (m.ok && (null === (l = m.body.data.redditorInfoByName) || void 0 === l ? void 0 : l.karma)) {
-							const e = null === (c = m.body.data.redditorInfoByName) || void 0 === c ? void 0 : c.karma,
-								i = e ? {
-									awardeeKarma: e.fromAwardsReceived,
-									awarderKarma: e.fromAwardsGiven,
-									commentKarma: e.fromComments,
-									postKarma: e.fromPosts,
-									totalKarma: e.total
-								} : u.a;
+						}(c.body);
+						if (_.ok && _.body) {
+							const {
+								data: e
+							} = _.body, i = {
+								karma: {
+									...u.a
+								}
+							};
+							if (Object(u.e)(e.redditorInfoByName)) {
+								const t = e.redditorInfoByName.karma;
+								i.karma = {
+									...i.karma,
+									...t
+								}
+							}
 							Object.assign(t.about, i), Object.assign(t.user, i)
 						}
 						i(C(t))
-					} else p.error && p.error.type === r.m && i(Object(s.s)({
+					} else c.error && c.error.type === r.m && i(Object(s.s)({
 						profileName: e
-					})), i(x(p.body))
+					})), i(x(c.body))
 				}, G = e => async (t, i, {
 					apiContext: n
 				}) => {
@@ -11740,18 +11750,26 @@
 						error: c.error
 					}))
 				}, Y = e => async (t, i, n) => {
-					var r;
-					const s = e.toLowerCase(),
-						d = await Object(u.d)(n.gqlContext(), s);
-					if (d.ok && d.body) {
-						const e = null === (r = d.body.data.redditorInfoByName) || void 0 === r ? void 0 : r.karma;
+					const r = e.toLowerCase(),
+						s = await Object(u.d)(n.gqlContext(), r);
+					if (s.ok && s.body) {
+						const {
+							data: e
+						} = s.body, i = {
+							karma: {
+								...u.a
+							}
+						};
+						if (Object(u.e)(e.redditorInfoByName)) {
+							const t = e.redditorInfoByName.karma;
+							i.karma = {
+								...i.karma,
+								...t
+							}
+						}
 						t(Object(o.a)({
-							awardeeKarma: (null == e ? void 0 : e.fromAwardsReceived) || 0,
-							awarderKarma: (null == e ? void 0 : e.fromAwardsGiven) || 0,
-							postKarma: (null == e ? void 0 : e.fromPosts) || 0,
-							commentKarma: (null == e ? void 0 : e.fromComments) || 0,
-							totalKarma: (null == e ? void 0 : e.total) || 0,
-							userName: s
+							...i,
+							userName: r
 						}))
 					}
 				}
@@ -17394,14 +17412,16 @@
 		},
 		"./src/reddit/endpoints/profile/info.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "c", (function() {
+			i.d(t, "e", (function() {
 				return c
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "c", (function() {
 				return _
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "a", (function() {
 				return p
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return m
+			})), i.d(t, "b", (function() {
+				return h
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/makeApiRequest/index.ts"),
@@ -17411,7 +17431,8 @@
 				a = i("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				l = i("./src/redditGQL/operations/ProfileModHubPage.json"),
 				u = i("./src/redditGQL/operations/RedditorKarma.json");
-			const c = (e, t) => Object(r.a)(Object(o.a)(e, [d.a]), {
+			const c = e => !!e.karma,
+				_ = (e, t) => Object(r.a)(Object(o.a)(e, [d.a]), {
 					endpoint: Object(a.a)(`${e.apiUrl}/user/${t}/about.json`),
 					method: n.hb.GET,
 					data: {
@@ -17420,20 +17441,20 @@
 						raw_json: 1
 					}
 				}),
-				_ = {
-					awardeeKarma: 0,
-					awarderKarma: 0,
-					commentKarma: 0,
-					postKarma: 0,
-					totalKarma: 0
+				p = {
+					fromAwardsReceived: 0,
+					fromAwardsGiven: 0,
+					fromComments: 0,
+					fromPosts: 0,
+					total: 0
 				},
-				p = (e, t) => Object(s.a)(e, {
+				m = (e, t) => Object(s.a)(e, {
 					...u,
 					variables: {
 						name: t
 					}
 				}),
-				m = (e, t) => Object(s.a)(e, {
+				h = (e, t) => Object(s.a)(e, {
 					...l,
 					variables: {
 						name: t
@@ -20671,88 +20692,84 @@
 		"./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return l
+				return u
 			}));
-			var n = i("./src/reddit/models/User/index.ts"),
-				r = i("./src/reddit/helpers/graphql/helpers.ts");
-			const s = e => e && e.expiresAt && Object(r.e)(e.expiresAt, r.a.Seconds) / 1e3 || null,
-				o = e => e && e.unreadCount ? e.unreadCount : 0,
-				d = /^u\//,
-				a = e => e.replace(d, "/user/"),
-				l = e => e.__typename === n.c.DeletedRedditor ? null : "name" in e && e.name || null;
+			var n = i("./src/reddit/endpoints/profile/info.ts"),
+				r = i("./src/reddit/models/User/index.ts"),
+				s = i("./src/reddit/helpers/graphql/helpers.ts");
+			const o = e => e && e.expiresAt && Object(s.e)(e.expiresAt, s.a.Seconds) / 1e3 || null,
+				d = e => e && e.unreadCount ? e.unreadCount : 0,
+				a = /^u\//,
+				l = e => e.replace(a, "/user/"),
+				u = e => e.__typename === r.c.DeletedRedditor ? null : "name" in e && e.name || null;
 			t.a = ({
 				redditor: e,
 				inbox: t,
 				premium: i,
-				preferences: d,
-				coins: l,
-				...u
+				preferences: a,
+				coins: u,
+				...c
 			}) => {
-				var c, _;
-				let p = {
-					awardeeKarma: 0,
-					awarderKarma: 0,
-					commentKarma: 0,
+				var _, p;
+				let m = {
+					karma: n.a,
 					hasUserProfile: !1,
 					id: e.id,
 					isGold: !1,
-					postKarma: 0,
-					totalKarma: 0,
 					url: ""
 				};
-				if (e.__typename === n.c.AvailableRedditor) {
+				if (e.__typename === r.c.AvailableRedditor) {
 					const {
 						karma: t,
 						profile: i,
-						snoovatarIcon: n
-					} = e, r = null === (_ = null === (c = null == i ? void 0 : i.styles) || void 0 === c ? void 0 : c.legacyIcon) || void 0 === _ ? void 0 : _.url, s = n && n.url || null;
-					p = {
-						...p,
-						...r && {
-							accountIcon: r
+						snoovatarIcon: r
+					} = e, s = null === (p = null === (_ = null == i ? void 0 : i.styles) || void 0 === _ ? void 0 : _.legacyIcon) || void 0 === p ? void 0 : p.url, o = r && r.url || null;
+					m = {
+						...m,
+						...s && {
+							accountIcon: s
 						},
-						awardeeKarma: t ? t.fromAwardsReceived : 0,
-						awarderKarma: t ? t.fromAwardsGiven : 0,
-						commentKarma: t ? t.fromComments : 0,
+						karma: {
+							...n.a,
+							...t
+						},
 						displayText: e.name,
 						hasExternalAccount: e.isLinkedToExternalAccount,
 						hasUserProfile: !!i,
 						isGold: !!e.isGilded,
-						postKarma: t ? t.fromPosts : 0,
-						snoovatarFullBodyAsset: s,
-						totalKarma: t ? t.total : 0,
+						snoovatarFullBodyAsset: o,
 						profileId: i && i.id || void 0,
-						url: e.prefixedName && a(e.prefixedName) || void 0
+						url: e.prefixedName && l(e.prefixedName) || void 0
 					}
 				}
 				const {
-					interactions: m,
-					modMail: h
-				} = u;
+					interactions: h,
+					modMail: f
+				} = c;
 				return {
-					...p,
-					canCreateSubreddit: !!u.isSubredditCreationAllowed,
-					coins: l,
-					created: Object(r.e)(u.createdAt, r.a.Seconds) / 1e3,
-					goldExpiration: s(i),
-					hasUnreadMail: o(t) > 0,
-					hasUnreadModmail: !!h && h.isUnread,
-					hasUnreadOldModmail: !!h && h.isUnread,
-					hasVerifiedEmail: !!u.isEmailVerified,
-					inboxCount: o(t),
-					inRedesignBeta: d.isInRedesignBeta,
-					isEmployee: !!u.isEmployee,
-					isFPR: !!u.isForcePasswordReset,
-					isNameEditable: !!u.isNameEditable,
-					isMod: !!u.isModerator,
-					isPasswordSet: !!u.isPasswordSet,
-					isSuspended: u.isSuspended,
-					nightmode: d.isNightModeEnabled,
-					seenLayoutSwitch: !!m && m.isLayoutSwitchAware,
-					seenRedesignModal: !!m && m.isRedesignModalAware,
-					seenSubredditChatFtux: !!m && m.isSubredditChatAware,
-					showRecentPosts: d.isRecentPostsShown,
-					showTrending: d.isTrendingSubredditsShown,
+					...m,
+					canCreateSubreddit: !!c.isSubredditCreationAllowed,
+					coins: u,
+					created: Object(s.e)(c.createdAt, s.a.Seconds) / 1e3,
+					goldExpiration: o(i),
+					hasUnreadMail: d(t) > 0,
+					hasUnreadModmail: !!f && f.isUnread,
+					hasUnreadOldModmail: !!f && f.isUnread,
+					hasVerifiedEmail: !!c.isEmailVerified,
+					inboxCount: d(t),
+					inRedesignBeta: a.isInRedesignBeta,
+					isEmployee: !!c.isEmployee,
+					isFPR: !!c.isForcePasswordReset,
+					isNameEditable: !!c.isNameEditable,
+					isMod: !!c.isModerator,
+					isPasswordSet: !!c.isPasswordSet,
+					isSuspended: c.isSuspended,
+					nightmode: a.isNightModeEnabled,
+					seenLayoutSwitch: !!h && h.isLayoutSwitchAware,
+					seenRedesignModal: !!h && h.isRedesignModalAware,
+					seenSubredditChatFtux: !!h && h.isSubredditChatAware,
+					showRecentPosts: a.isRecentPostsShown,
+					showTrending: a.isTrendingSubredditsShown,
 					...i && i.subscription && {
 						hasAndroidSubscription: i.subscription.isAndroidAvailable,
 						hasGoldSubscription: i.subscription.isGoldAvailable,
@@ -35685,7 +35702,7 @@
 					const t = C(e);
 					if (t) {
 						if (t.canCreateSubreddit) return !0;
-						return (Object(_.d)(t) || (new Date).getTime()) < (new Date).getTime() - u.nb && (t.postKarma >= 5 || t.commentKarma >= 10)
+						return (Object(_.d)(t) || (new Date).getTime()) < (new Date).getTime() - u.nb && (t.karma.fromPosts >= 5 || t.karma.fromComments >= 10)
 					}
 					return !1
 				},
@@ -39894,4 +39911,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8b0ecd2eeb75be847bb5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80e36399c2d455f1fd42.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.bb69656180181aaf9021.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.3dcde42b90b5ece59814.js
+// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -68,14 +68,14 @@
 			const U = v.a.wrapped(e => s.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", P.a),
-				I = v.a.wrapped(e => s.a.createElement("div", {
+				k = v.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${B(D.width)}px`,
 						height: `${B(D.height)}px`
 					}
 				}, e.children), "EmbedPortalContainer", P.a),
-				k = v.a.wrapped(e => s.a.createElement("div", {
+				I = v.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${B(M.width)}px`,
@@ -91,24 +91,24 @@
 			function G(e) {
 				switch (e.container) {
 					case w.a.EMBED:
-						return s.a.createElement(I, null, e.children);
-					case w.a.HIDDEN:
 						return s.a.createElement(k, null, e.children);
+					case w.a.HIDDEN:
+						return s.a.createElement(I, null, e.children);
 					case w.a.FULL:
 						return s.a.createElement(L, null, e.children);
 					case w.a.MINIMIZED:
 						return s.a.createElement(q, null);
 					default:
-						return s.a.createElement(I, null, e.children)
+						return s.a.createElement(k, null, e.children)
 				}
 			}
 			var F = n("./src/chat/customMiddleware/channelsFilter.ts"),
 				Q = n("./src/chat/customMiddleware/chatThemeKey.ts"),
 				H = n("./src/chat/customMiddleware/containerSize.ts"),
 				$ = n("./src/chat/customMiddleware/draftMessageText.ts"),
-				K = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
-				Y = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
-				W = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
+				Y = n("./src/chat/customMiddleware/iframeDispatcher.ts"),
+				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				V = n("./src/chat/customMiddleware/sendbirdToken.ts"),
 				J = n("./src/chat/customMiddleware/title.ts"),
 				X = n("./src/chat/customMiddleware/tokenRefresher.ts"),
@@ -138,12 +138,12 @@
 					return t.user = {
 						...t.user,
 						account: n ? {
-							commentKarma: n.commentKarma,
+							commentKarma: n.karma.fromComments,
 							created: n.created,
 							inChat: n.inChat,
 							id: n.id,
 							isNSFW: n.isNSFW,
-							linkKarma: n.postKarma,
+							linkKarma: n.karma.fromPosts,
 							name: n.displayText || "",
 							prefNightmode: e.user.prefs.nightmode,
 							profileImg: n.accountIcon
@@ -237,7 +237,7 @@
 						routes: he.a,
 						apiContext: pe.apiContext,
 						gqlContext: xe.gqlContext
-					}), pe.middleware, X.a, V.a, K.a, W.a, Object(Z.a)(t), H.a, Q.a, F.a, $.a, ee.a, Y.a, J.a],
+					}), pe.middleware, X.a, V.a, Y.a, K.a, Object(Z.a)(t), H.a, Q.a, F.a, $.a, ee.a, W.a, J.a],
 					modifyInitialData: ({
 						initialData: t,
 						browserHistory: n
@@ -825,4 +825,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.bb69656180181aaf9021.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.3dcde42b90b5ece59814.js.map

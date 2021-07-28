@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f6326a175833cecc7e32.js
-// Retrieved at 7/28/2021, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.cd9bc1feb06743d44480.js
+// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -8223,7 +8223,8 @@
 						}), e(Object(Na.b)(!0))) : window.location.host = "old.reddit.com"
 					},
 					requestAwardKarma: () => {
-						t.user && !t.user.totalKarma && e(Object(Ra.f)(Object(vt.e)(t.user)))
+						var n;
+						!t.user || null !== (n = t.user.karma) && void 0 !== n && n.total || e(Object(Ra.f)(Object(vt.e)(t.user)))
 					},
 					dispatchOpenLoginModal: () => e(Object(Lr.h)()),
 					logoutUser: () => {
@@ -14336,7 +14337,15 @@
 			n.d(t, "a", (function() {
 				return s
 			}));
-			const s = e => e ? e.totalKarma || e.postKarma + e.commentKarma + e.awardeeKarma + e.awarderKarma : 0
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			const s = e => {
+				if (!e || !e.karma) return 0;
+				const {
+					total: t,
+					...n
+				} = e.karma;
+				return t || Object.values(n).reduce((e, t) => e + (t || 0), 0)
+			}
 		},
 		"./src/reddit/helpers/makeHeaderUserDropdownItem/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -19186,4 +19195,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f6326a175833cecc7e32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cd9bc1feb06743d44480.js.map

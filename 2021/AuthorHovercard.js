@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.a7e28df6ec0e2f285045.js
-// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.7264273a66fc7afbd39d.js
+// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -223,7 +223,7 @@
 					error: K,
 					pending: z
 				});
-			var q = (e = null, t) => {
+			var G = (e = null, t) => {
 					switch (t.type) {
 						case y.r:
 						case y.p:
@@ -236,9 +236,9 @@
 							return e
 					}
 				},
-				G = Object(w.c)({
+				q = Object(w.c)({
 					api: W,
-					result: q
+					result: G
 				});
 			const Z = {};
 			var J = (e = Z, t) => {
@@ -284,7 +284,7 @@
 					inContext: F,
 					loadMore: H,
 					models: D,
-					search: G,
+					search: q,
 					userOrder: J
 				});
 			Object(N.a)({
@@ -1005,15 +1005,15 @@
 				K = n("./src/reddit/constants/modals.ts"),
 				z = n("./src/reddit/components/Hovercards/helpers.ts"),
 				W = n("./src/reddit/icons/fonts/index.tsx"),
-				q = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				G = n("./src/reddit/selectors/bannedUser.ts"),
+				G = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				q = n("./src/reddit/selectors/bannedUser.ts"),
 				Z = n("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				J = n.n(Z);
 			const {
 				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), X = Object(o.c)({
-				hasModMailPermissions: Object(u.b)(q.c.mail),
-				isUserBanned: (e, t) => !!Object(G.b)(e, {
+				hasModMailPermissions: Object(u.b)(G.c.mail),
+				isUserBanned: (e, t) => !!Object(q.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
@@ -1163,22 +1163,24 @@
 				ke = e => {
 					const {
 						showAwardKarma: t,
-						user: n
+						user: {
+							karma: n
+						}
 					} = e;
-					return t ? s.a.createElement(ve, null, s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.postKarma)), s.a.createElement(Oe, null, I.fbt._({
+					return t ? s.a.createElement(ve, null, s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.fromPosts)), s.a.createElement(Oe, null, I.fbt._({
 						"*": "Post Karma",
 						_1: " Post Karma"
-					}, [I.fbt._plural(n.postKarma)], {
+					}, [I.fbt._plural(n.fromPosts)], {
 						hk: "3K4oaH"
-					}))), s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.commentKarma)), s.a.createElement(Oe, null, I.fbt._({
+					}))), s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.fromComments)), s.a.createElement(Oe, null, I.fbt._({
 						"*": "Comment Karma",
 						_1: " Comment Karma"
-					}, [I.fbt._plural(n.commentKarma)], {
+					}, [I.fbt._plural(n.fromComments)], {
 						hk: "3gKRx9"
-					}))), s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.awardeeKarma)), s.a.createElement(Oe, null, I.fbt._({
+					}))), s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.fromAwardsReceived)), s.a.createElement(Oe, null, I.fbt._({
 						"*": "Awardee Karma",
 						_1: " Awardee Karma"
-					}, [I.fbt._plural(n.awardeeKarma)], {
+					}, [I.fbt._plural(n.fromAwardsReceived)], {
 						hk: "3nzm9q"
 					}), s.a.createElement(_e, {
 						href: T.a,
@@ -1186,10 +1188,10 @@
 						rel: "noopener noreferrer"
 					}, s.a.createElement(S.a, {
 						className: re.a.infoIcon
-					})))), s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.awarderKarma)), s.a.createElement(Oe, null, I.fbt._({
+					})))), s.a.createElement(Ie, null, s.a.createElement(Ce, null, Object(O.b)(n.fromAwardsGiven)), s.a.createElement(Oe, null, I.fbt._({
 						"*": "Awarder Karma",
 						_1: " Awarder Karma"
-					}, [I.fbt._plural(n.awarderKarma)], {
+					}, [I.fbt._plural(n.fromAwardsGiven)], {
 						hk: "4zXN3B"
 					}), s.a.createElement(_e, {
 						href: T.a,
@@ -1197,15 +1199,15 @@
 						rel: "noopener noreferrer"
 					}, s.a.createElement(S.a, {
 						className: re.a.infoIcon
-					}))))) : s.a.createElement(fe, null, s.a.createElement(ce, null), s.a.createElement(he, null, s.a.createElement(Ce, null, Object(O.b)(n.postKarma)), s.a.createElement(ge, null, I.fbt._({
+					}))))) : s.a.createElement(fe, null, s.a.createElement(ce, null), s.a.createElement(he, null, s.a.createElement(Ce, null, Object(O.b)(n.fromPosts)), s.a.createElement(ge, null, I.fbt._({
 						"*": "Post Karma",
 						_1: " Post Karma"
-					}, [I.fbt._plural(n.postKarma)], {
+					}, [I.fbt._plural(n.fromPosts)], {
 						hk: "3K4oaH"
-					}))), s.a.createElement(xe, null, s.a.createElement(Ce, null, Object(O.b)(n.commentKarma)), s.a.createElement(ge, null, I.fbt._({
+					}))), s.a.createElement(xe, null, s.a.createElement(Ce, null, Object(O.b)(n.fromComments)), s.a.createElement(ge, null, I.fbt._({
 						"*": "Comment Karma",
 						_1: " Comment Karma"
-					}, [I.fbt._plural(n.commentKarma)], {
+					}, [I.fbt._plural(n.fromComments)], {
 						hk: "3gKRx9"
 					}))))
 				},
@@ -1728,7 +1730,7 @@
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return q
+				return G
 			})), n.d(t, "b", (function() {
 				return V
 			}));
@@ -1979,8 +1981,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const q = [],
-				G = i.a.div("StyledDropdown", O.a),
+			const G = [],
+				q = i.a.div("StyledDropdown", O.a),
 				Z = ({
 					onMessagesClick: e,
 					onBarClick: t,
@@ -2061,7 +2063,7 @@
 						[b, f] = Object(R.a)(p),
 						[h, x] = Object(D.a)(p),
 						v = !(!i || !i.length);
-					return a.a.createElement(G, null, a.a.createElement("div", {
+					return a.a.createElement(q, null, a.a.createElement("div", {
 						className: O.a.tooltipContainer
 					}, a.a.createElement(Z, {
 						markAllAsRead: () => {
@@ -3705,4 +3707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a7e28df6ec0e2f285045.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7264273a66fc7afbd39d.js.map

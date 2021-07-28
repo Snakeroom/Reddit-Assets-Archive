@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.cc31ead7135fdc9e5526.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.d1dc8e55f91f2e950e08.js
+// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -400,33 +400,33 @@
 				E = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/redditGQL/operations/Frontpage.json");
 			const C = (e, t) => {
-					var n;
+					var n, s;
 					const {
-						after: s,
-						dist: r,
-						isMobile: o,
-						layout: i,
-						limit: a,
-						sort: d,
-						t: l
-					} = t, u = Object(E.Q)(e) || Object(E.J)(e), b = Object(O.o)(e), h = {
+						after: r,
+						dist: o,
+						isMobile: i,
+						layout: a,
+						limit: d,
+						sort: l,
+						t: u
+					} = t, b = Object(E.Q)(e) || Object(E.J)(e), h = Object(O.o)(e), g = {
 						adContext: {
-							layout: i ? i.toUpperCase() : m.a.Card,
+							layout: a ? a.toUpperCase() : m.a.Card,
 							reddaid: e.user.reddaid,
-							distance: r
+							distance: o
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
-						includeIdentity: u && !(null === (n = e.user.account) || void 0 === n ? void 0 : n.totalKarma),
+						includeIdentity: b && !(null === (s = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === s ? void 0 : s.total),
 						includePostRecommendations: !1,
-						includeSubredditQuestions: u,
+						includeSubredditQuestions: b,
 						recentPostIds: e.posts.recent
 					};
-					return d && (h.sort = d.toUpperCase()), l && (h.range = l.toUpperCase()), o ? h.pageSize = Object(p.a)(i) : a && (h.pageSize = a), b && b.ad && (h.forceAds = {
-						ad: b.ad
-					}), s && (h.after = Object(c.a)(s)), h
+					return l && (g.sort = l.toUpperCase()), u && (g.range = u.toUpperCase()), i ? g.pageSize = Object(p.a)(a) : d && (g.pageSize = d), h && h.ad && (g.forceAds = {
+						ad: h.ad
+					}), r && (g.after = Object(c.a)(r)), g
 				},
 				S = async (e, t, n, s) => {
 					const r = Date.now(),
@@ -4661,4 +4661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.cc31ead7135fdc9e5526.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d1dc8e55f91f2e950e08.js.map
