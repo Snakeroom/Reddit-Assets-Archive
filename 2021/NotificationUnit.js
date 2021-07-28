@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.7ec73f5ccf12609bcf4e.js
-// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.9a983b11462c9a384620.js
+// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, n) {
@@ -411,9 +411,9 @@
 						L = Object(E.e)(O.b),
 						B = Object(E.e)(O.c),
 						F = Object(E.e)(O.a),
-						[V, W] = Object(o.useState)(!1),
+						[V, z] = Object(o.useState)(!1),
 						{
-							activeOverflowMenuId: z,
+							activeOverflowMenuId: W,
 							isInboxPostEmbedEnabled: Y,
 							isInTooltip: Z,
 							notification: G,
@@ -434,7 +434,7 @@
 						readAt: oe,
 						sentAt: se,
 						title: re
-					} = G, le = null == Q ? void 0 : Q.messageType, de = null === (n = null === (t = null == Q ? void 0 : Q.comment) || void 0 === t ? void 0 : t.parent) || void 0 === n ? void 0 : n.id, ce = null === (i = null == Q ? void 0 : Q.post) || void 0 === i ? void 0 : i.id, me = null == Q ? void 0 : Q.post, ue = null === (T = null == Q ? void 0 : Q.subreddit) || void 0 === T ? void 0 : T.id, pe = null == Q ? void 0 : Q.isBodyHidden, be = null == Q ? void 0 : Q.isPostHidden, fe = !oe, ve = `notif-${Z?"tooltip":""}-menu-${ae}`, Ee = ve === z, Ne = le === v.a.CommentReply ? de : ce, xe = Object(r.a)(e.className, g.a.notificationItem, {
+					} = G, le = null == Q ? void 0 : Q.messageType, de = null === (n = null === (t = null == Q ? void 0 : Q.comment) || void 0 === t ? void 0 : t.parent) || void 0 === n ? void 0 : n.id, ce = null === (i = null == Q ? void 0 : Q.post) || void 0 === i ? void 0 : i.id, me = null == Q ? void 0 : Q.post, ue = null === (T = null == Q ? void 0 : Q.subreddit) || void 0 === T ? void 0 : T.id, pe = null == Q ? void 0 : Q.isBodyHidden, be = null == Q ? void 0 : Q.isPostHidden, fe = !oe, ve = `notif-${Z?"tooltip":""}-menu-${ae}`, Ee = ve === W, Ne = le === v.a.CommentReply ? de : ce, xe = Object(r.a)(e.className, g.a.notificationItem, {
 						[g.a.unread]: fe,
 						[g.a.isNightMode]: D
 					}), Oe = L || F || B, he = {
@@ -542,7 +542,7 @@
 						tooltipId: ve
 					}), s.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !V && (R(Object(b.q)(he)), W(!0))
+							e.isIntersecting && !V && (R(Object(b.q)(he)), z(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: C
@@ -718,13 +718,13 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.I)(e) || Object(r.J)(e),
 				d = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.uc,
+					experimentName: a.wc,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(i.a)(d, e => e === a.xc.SeePostCTAs),
-				m = Object(i.a)(d, e => e === a.xc.ReplyCTAs),
-				u = Object(i.a)(d, e => e === a.xc.AllCTAs)
+				c = Object(i.a)(d, e => e === a.zc.SeePostCTAs),
+				m = Object(i.a)(d, e => e === a.zc.ReplyCTAs),
+				u = Object(i.a)(d, e => e === a.zc.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.7ec73f5ccf12609bcf4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.9a983b11462c9a384620.js.map

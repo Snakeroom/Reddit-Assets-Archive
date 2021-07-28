@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.b1ebeb05ba1b196dfb50.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.46d0cdfabd605b21b63d.js
+// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -225,8 +225,8 @@
 				c = t("./src/reddit/endpoints/governance/requester.ts");
 			var d = t("./src/reddit/helpers/crypto/vaultBackup.ts"),
 				l = t("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				u = t("./src/reddit/hooks/useApiContext.ts"),
-				p = t("./src/reddit/hooks/useSafeState.ts"),
+				u = t("./src/reddit/contexts/ApiContext.tsx");
+			var p = t("./src/reddit/hooks/useSafeState.ts"),
 				I = t("./src/reddit/selectors/crypto/points.ts"),
 				m = t("./src/reddit/selectors/gov.ts"),
 				E = t("./node_modules/fbt/lib/FbtPublic.js"),
@@ -537,7 +537,12 @@
 					subredditId: t,
 					transaction: E,
 					transactionIntent: k
-				} = A, g = Object(a.useRef)(!0), [x, B] = Object(p.a)(nA.LOADING_BACKUP, g), [C, b] = Object(p.a)(rA.NOT_LOADED, g), [y, h] = Object(p.a)(null, g), [f, X] = Object(p.a)("", g), w = Object(u.a)(), R = Object(s.e)(e => Object(m.g)(e, A)).toLowerCase(), N = Object(s.e)(e => Object(I.b)(e, A.subredditId));
+				} = A, g = Object(a.useRef)(!0), [x, B] = Object(p.a)(nA.LOADING_BACKUP, g), [C, b] = Object(p.a)(rA.NOT_LOADED, g), [y, h] = Object(p.a)(null, g), [f, X] = Object(p.a)("", g), w = function() {
+					const {
+						apiContext: A
+					} = Object(a.useContext)(u.a);
+					return A
+				}(), R = Object(s.e)(e => Object(m.g)(e, A)).toLowerCase(), N = Object(s.e)(e => Object(I.b)(e, A.subredditId));
 				Object(a.useEffect)(() => (A.transactionIsBlockedOnIOS ? v().then(A => {
 					A && Object(d.b)(A) ? B(nA.REQUEST_VAULT_PASSWORD) : Q()
 				}) : Q(), () => {
@@ -1066,4 +1071,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.b1ebeb05ba1b196dfb50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.46d0cdfabd605b21b63d.js.map

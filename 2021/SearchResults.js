@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b29dddb63d985f9b5493.js
-// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.4875b87bd8c46c983ee6.js
+// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2131,7 +2131,7 @@
 			}) => a.a.createElement(u.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => s === m.Fd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => s === m.Hd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: u.b.Secondary,
@@ -5040,7 +5040,7 @@
 				}),
 				be = [b.Vb.Subreddits, b.Vb.Users],
 				Ce = Object(m.b)(he, e => ({
-					onLoadMore: () => e(Object(C.o)(be))
+					onLoadMore: () => e(Object(C.p)(be))
 				}));
 			class xe extends l.a.Component {
 				constructor() {
@@ -7011,7 +7011,7 @@
 					viewTreatment: us.l
 				}),
 				Cs = Object(a.b)(bs, e => ({
-					morePostsRequested: () => e(Object(c.o)([o.Vb.Posts]))
+					morePostsRequested: () => e(Object(c.p)([o.Vb.Posts]))
 				})),
 				xs = Object(_.t)();
 			class fs extends n.a.PureComponent {
@@ -7107,7 +7107,7 @@
 					hasPostResults: b.b
 				}),
 				x = Object(a.b)(C, e => ({
-					morePostsRequested: () => e(Object(c.o)([o.Vb.Posts]))
+					morePostsRequested: () => e(Object(c.p)([o.Vb.Posts]))
 				})),
 				f = Object(u.t)()(x(({
 					hasCommunityResults: e,
@@ -10000,9 +10000,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.td.Treatment1 === Object(n.c)(e, {
+			const a = e => r.vd.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.kd
+				experimentName: r.md
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -10146,13 +10146,13 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const o = Object(r.a)(e => Object(a.c)(e, {
-				experimentName: n.Yc,
+				experimentName: n.ad,
 				experimentEligibilitySelector: a.a
-			}), i.G, (e, t) => e === n.id.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.G, (e, t) => e === n.kd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"ab012381577a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b29dddb63d985f9b5493.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4875b87bd8c46c983ee6.js.map

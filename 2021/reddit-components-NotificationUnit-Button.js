@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.35dfdbc7d91e0178369c.js
-// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0c43ca017c6b18f059b5.js
+// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -147,8 +147,8 @@
 				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				M = n("./src/reddit/models/Comment/index.ts"),
 				G = n("./src/reddit/models/PostDraft/index.ts"),
-				W = n("./src/reddit/models/RichTextJson/index.ts"),
-				J = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
+				J = n("./src/reddit/models/RichTextJson/index.ts"),
+				W = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				B = n("./src/reddit/models/Toast/index.ts"),
 				H = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
@@ -304,10 +304,10 @@
 					apiContext: c
 				}) => {
 					const d = e === _.h.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(W.G)(t)) o(fe({
+					if (!t || "object" == typeof t && Object(J.G)(t)) o(fe({
 						editorMode: e,
 						draftKey: n,
-						content: d ? W.i : ""
+						content: d ? J.i : ""
 					})), o(Object(u.c)(e));
 					else {
 						o(Object(u.b)(n));
@@ -354,11 +354,11 @@
 						const e = O.filter(e => !!e && 10 !== e.charCodeAt(0));
 						if (p === _.h.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
 						else {
-							const t = e.map(e => J.s(e, null)).map(e => J.l([e])),
-								n = J.s("", null),
-								r = J.l([n]);
+							const t = e.map(e => W.s(e, null)).map(e => W.l([e])),
+								n = W.s("", null),
+								r = W.l([n]);
 							f = {
-								document: [J.c(t), r]
+								document: [W.c(t), r]
 							}
 						}
 					}
@@ -598,7 +598,7 @@
 			})), n.d(t, "g", (function() {
 				return G
 			})), n.d(t, "f", (function() {
-				return W
+				return J
 			})), n.d(t, "o", (function() {
 				return H
 			})), n.d(t, "p", (function() {
@@ -746,7 +746,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, F = Object(f.a)(O.b, I.a.upvoted), M = Object(f.a)(O.b, I.a.downvoted), G = Object(c.a)(_.j), W = Object(c.a)(_.i), J = Object(c.a)(_.e), B = Object(c.a)(_.f), H = (Object(c.a)(_.c), Object(c.a)(_.d), ({
+				}, F = Object(f.a)(O.b, I.a.upvoted), M = Object(f.a)(O.b, I.a.downvoted), G = Object(c.a)(_.j), J = Object(c.a)(_.i), W = Object(c.a)(_.e), B = Object(c.a)(_.f), H = (Object(c.a)(_.c), Object(c.a)(_.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -762,7 +762,7 @@
 							commentsPageKey: t
 						}),
 						a = d.depth;
-					r(J({
+					r(W({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -787,7 +787,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					o(J({
+					o(W({
 						commentId: d,
 						commentsPageKey: t,
 						isCollapsed: i
@@ -1472,7 +1472,7 @@
 								experimentName: s.B,
 								expEventOverride: t
 							});
-							return !!(Object(s.Yd)(n) ? void 0 : n)
+							return !!(Object(s.ae)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2359,9 +2359,9 @@
 			})), n.d(t, "F", (function() {
 				return G
 			})), n.d(t, "r", (function() {
-				return W
-			})), n.d(t, "e", (function() {
 				return J
+			})), n.d(t, "e", (function() {
+				return W
 			})), n.d(t, "v", (function() {
 				return B
 			})), n.d(t, "K", (function() {
@@ -2553,10 +2553,10 @@
 					}
 					return null
 				},
-				W = (e, {
+				J = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				J = (e, {
+				W = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.models[t] : void 0;
@@ -2634,14 +2634,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Xc
-					}) === r.hd.Enabled
+						experimentName: r.Zc
+					}) === r.jd.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Wc
-					}) === r.gd.Enabled
+						experimentName: r.Yc
+					}) === r.id.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -2727,4 +2727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.35dfdbc7d91e0178369c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0c43ca017c6b18f059b5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e2bb659d3fbac4b60f8f.js
-// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0d7f66ee1ea60fffccbc.js
+// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -22286,7 +22286,7 @@
 				oe = Object(d.a)(ne, e => e === $.K.Remove);
 			var re = s("./src/reddit/selectors/experiments/emailInvite.ts");
 			const ie = Object(d.a)(e => Object(ee.c)(e, {
-				experimentName: $.jb,
+				experimentName: $.kb,
 				experimentEligibilitySelector: te.e
 			}), se.a);
 			var de = s("./src/reddit/selectors/subreddit.ts"),
@@ -22711,9 +22711,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.ac
+					experimentName: n.cc
 				});
-				return !(!t || Object(n.Yd)(t))
+				return !(!t || Object(n.ae)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22726,9 +22726,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.Yc,
+				experimentName: a.ad,
 				experimentEligibilitySelector: o.a
-			}), r.G, (e, t) => e === a.id.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.G, (e, t) => e === a.kd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22864,4 +22864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e2bb659d3fbac4b60f8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0d7f66ee1ea60fffccbc.js.map
