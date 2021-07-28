@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.bba25d8199de2d744fda.js
-// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.f2194bae19c2cf352395.js
+// Retrieved at 7/28/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsCtaButton/index.tsx": function(e, t, s) {
@@ -49,69 +49,70 @@
 		"./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return b
+				return h
 			}));
-			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
-				a = s("./node_modules/react/index.js"),
-				n = s.n(a),
+			var r = s("./node_modules/react/index.js"),
+				a = s.n(r),
+				n = s("./node_modules/react-redux/es/index.js"),
 				o = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				i = s("./src/reddit/components/UserIcon/index.tsx"),
 				c = s("./src/reddit/controls/InternalLink/index.tsx"),
 				d = s("./src/reddit/helpers/trackers/powerups.ts"),
 				u = s("./src/reddit/hooks/useTracking.ts"),
-				m = s("./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less"),
-				p = s.n(m);
-			const b = e => n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-				className: Object(o.a)(p.a.userIconContainer, e.iconClassName)
-			}, n.a.createElement(i.a, {
+				m = s("./src/reddit/selectors/experiments/econ/index.ts"),
+				p = s("./src/reddit/components/PowerupsSidebar/Supporters/Supporter/index.m.less"),
+				b = s.n(p);
+			const h = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
+				className: Object(o.a)(b.a.userIconContainer, e.iconClassName)
+			}, a.a.createElement(i.a, {
 				userName: e.userName || "",
 				iconUrl: e.iconUrl,
-				className: p.a.userIcon,
+				className: b.a.userIcon,
 				isNSFW: e.isNsfw
-			})), n.a.createElement("h4", {
-				className: Object(o.a)(p.a.name, e.textClassName)
+			})), a.a.createElement("h4", {
+				className: Object(o.a)(b.a.name, e.textClassName)
 			}, e.displayName || e.userName));
 			t.b = function(e) {
 				var t;
-				const s = Object(u.a)(),
+				const s = Object(n.e)(m.h),
+					r = Object(u.a)(),
 					{
-						className: a,
-						supporter: i
+						className: i,
+						supporter: p
 					} = e,
 					{
-						score: m,
-						supporterInfo: h
-					} = i,
-					x = (null == h ? void 0 : h.displayName) || r.fbt._({
-						"*": "Anonymous Heroes",
-						_1: "Anonymous Hero"
-					}, [r.fbt._plural(m)], {
-						hk: "8kyEI"
-					}).toString(),
-					f = !!(null === (t = null == h ? void 0 : h.profile) || void 0 === t ? void 0 : t.isNsfw),
-					E = Object(l.b)(h),
-					N = Object(l.a)(m),
-					_ = n.a.createElement(b, {
-						userName: x,
-						isNsfw: f,
-						iconUrl: E
+						score: x,
+						supporterInfo: f
+					} = p,
+					E = Object(l.b)({
+						displayName: null == f ? void 0 : f.displayName,
+						isAltruismMessagingEnabled: s,
+						score: x
+					}),
+					N = !!(null === (t = null == f ? void 0 : f.profile) || void 0 === t ? void 0 : t.isNsfw),
+					_ = Object(l.c)(f),
+					g = Object(l.a)(x),
+					v = a.a.createElement(h, {
+						userName: E,
+						isNsfw: N,
+						iconUrl: _
 					});
-				return n.a.createElement("div", {
-					className: Object(o.a)(a, p.a.container)
-				}, h ? n.a.createElement(c.a, {
-					className: p.a.user,
-					to: `/user/${x}/`,
+				return a.a.createElement("div", {
+					className: Object(o.a)(i, b.a.container)
+				}, f ? a.a.createElement(c.a, {
+					className: b.a.user,
+					to: `/user/${E}/`,
 					onClick: () => {
-						h && s(Object(d.t)(h.id, h.displayName))
+						f && r(Object(d.t)(f.id, f.displayName))
 					}
-				}, _) : n.a.createElement("div", {
-					className: p.a.user
-				}, _), n.a.createElement("div", {
-					className: p.a.counter
-				}, n.a.createElement(N, {
-					className: p.a.powerupIcon
-				}), m))
+				}, v) : a.a.createElement("div", {
+					className: b.a.user
+				}, v), a.a.createElement("div", {
+					className: b.a.counter
+				}, a.a.createElement(g, {
+					className: b.a.powerupIcon
+				}), x))
 			}
 		},
 		"./src/reddit/components/PowerupsSidebar/Supporters/index.m.less": function(e, t, s) {
@@ -173,8 +174,9 @@
 					const {
 						className: e,
 						supporters: t,
-						onShowFullSupportersList: s
-					} = this.props, a = this.state.items.length < t.length;
+						onShowFullSupportersList: s,
+						isAltruismMessagingEnabled: a
+					} = this.props, i = this.state.items.length < t.length;
 					return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 						className: Object(r.a)(c.a.container, e)
 					}, n.a.createElement(o.TransitionMotion, {
@@ -198,12 +200,14 @@
 						}
 					}, n.a.createElement(d.b, {
 						supporter: e.data.supporter
-					}))))))), a && n.a.createElement(l.q, {
+					}))))))), i && n.a.createElement(l.q, {
 						priority: l.b.Secondary,
 						className: c.a.expandButton,
 						onClick: s,
 						isFullWidth: !0
-					}, u._("See All Heroes", null, {
+					}, a ? u._("See All Supporters", null, {
+						hk: "1QZ823"
+					}) : u._("See All Heroes", null, {
 						hk: "1VUmH9"
 					})))
 				}
@@ -260,183 +264,204 @@
 				u = s("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"),
 				m = s("./src/reddit/components/PowerupsCtaButton/index.tsx"),
 				p = s("./src/reddit/components/PowerupsSidebar/Supporters/index.tsx"),
-				b = s("./node_modules/fbt/lib/FbtPublic.js"),
-				h = s("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
-				x = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/SupporterListItem/index.m.less"),
-				f = s.n(x),
-				E = s("./src/reddit/components/UserIcon/index.tsx"),
-				N = s("./src/reddit/controls/InternalLink/index.tsx"),
-				_ = s("./src/reddit/helpers/trackers/powerups.ts"),
-				v = s("./src/reddit/hooks/useTracking.ts");
-			const w = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-					className: f.a.supporterImageContainer
-				}, a.a.createElement(E.a, {
-					userName: e.name,
-					iconUrl: e.iconUrl,
-					isNSFW: e.isNsfw,
-					className: f.a.supporterImage
-				})), a.a.createElement("div", {
-					className: f.a.supporterName
-				}, e.name, " ", e.isCurrentUser && b.fbt._("(you)", null, {
-					hk: "3foyZr"
-				}))),
-				g = e => e.isAnonymousUser ? a.a.createElement("div", {
-					className: e.className
-				}, e.children) : a.a.createElement(N.a, {
-					className: e.className,
-					to: `/user/${e.name}/`,
-					onClick: e.onClick
-				}, e.children),
-				L = e => {
-					var t;
-					const s = Object(v.a)(),
-						{
-							supporter: r,
-							currentUser: n,
-							rank: o
-						} = e,
-						l = r.supporterInfo,
-						i = null == l ? void 0 : l.displayName,
-						c = !!n && n.id === (null == l ? void 0 : l.id),
-						d = r.score,
-						u = i ? Math.min(o, 999) : null,
-						m = i || b.fbt._({
-							"*": "Anonymous Heroes",
-							_1: "Anonymous Hero"
-						}, [b.fbt._plural(d)], {
-							hk: "8kyEI"
-						}).toString(),
-						p = Object(h.b)(l),
-						x = Boolean(null === (t = null == l ? void 0 : l.profile) || void 0 === t ? void 0 : t.isNsfw),
-						E = Object(h.a)(d);
-					return a.a.createElement("div", {
-						className: f.a.supporter
-					}, a.a.createElement("div", {
-						className: f.a.supporterRank
-					}, u), a.a.createElement(g, {
-						className: f.a.user,
-						name: m,
-						isAnonymousUser: !l,
-						onClick: () => {
-							l && s(Object(_.h)(l.id, l.displayName))
-						}
-					}, a.a.createElement(w, {
-						name: m,
-						iconUrl: p,
-						isNsfw: x,
-						isCurrentUser: c
-					})), a.a.createElement(E, {
-						className: f.a.powerupIcon
-					}), a.a.createElement("div", {
-						className: f.a.score
-					}, d))
-				};
-			var S = s("./src/reddit/constants/modals.ts"),
-				M = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				j = s("./src/reddit/models/Toast/index.ts"),
-				k = s("./src/reddit/selectors/gold/powerups/index.ts"),
-				C = s("./src/reddit/selectors/platform.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
-				P = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/index.m.less"),
-				y = s.n(P);
+				b = s("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
+				h = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/SupporterListItem/index.m.less"),
+				x = s.n(h),
+				f = s("./src/reddit/components/UserIcon/index.tsx"),
+				E = s("./src/reddit/controls/InternalLink/index.tsx"),
+				N = s("./src/reddit/helpers/trackers/powerups.ts"),
+				_ = s("./src/reddit/hooks/useTracking.ts"),
+				g = s("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
-				fbt: F
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = e => ({
+				fbt: v
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = e => a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
+				className: x.a.supporterImageContainer
+			}, a.a.createElement(f.a, {
+				userName: e.name,
+				iconUrl: e.iconUrl,
+				isNSFW: e.isNsfw,
+				className: x.a.supporterImage
+			})), a.a.createElement("div", {
+				className: x.a.supporterName
+			}, e.name, " ", e.isCurrentUser && v._("(you)", null, {
+				hk: "3foyZr"
+			}))), S = e => e.isAnonymousUser ? a.a.createElement("div", {
+				className: e.className
+			}, e.children) : a.a.createElement(E.a, {
+				className: e.className,
+				to: `/user/${e.name}/`,
+				onClick: e.onClick
+			}, e.children), L = e => {
+				var t;
+				const s = Object(n.e)(g.h),
+					r = Object(_.a)(),
+					{
+						supporter: o,
+						currentUser: l,
+						rank: i
+					} = e,
+					c = o.supporterInfo,
+					d = null == c ? void 0 : c.displayName,
+					u = !!l && l.id === (null == c ? void 0 : c.id),
+					m = o.score,
+					p = d ? Math.min(i, 999) : null,
+					h = Object(b.b)({
+						displayName: d,
+						isAltruismMessagingEnabled: s,
+						score: m
+					}),
+					f = Object(b.c)(c),
+					E = Boolean(null === (t = null == c ? void 0 : c.profile) || void 0 === t ? void 0 : t.isNsfw),
+					v = Object(b.a)(m);
+				return a.a.createElement("div", {
+					className: x.a.supporter
+				}, a.a.createElement("div", {
+					className: x.a.supporterRank
+				}, p), a.a.createElement(S, {
+					className: x.a.user,
+					name: h,
+					isAnonymousUser: !c,
+					onClick: () => {
+						c && r(Object(N.h)(c.id, c.displayName))
+					}
+				}, a.a.createElement(w, {
+					name: h,
+					iconUrl: f,
+					isNsfw: E,
+					isCurrentUser: u
+				})), a.a.createElement(v, {
+					className: x.a.powerupIcon
+				}), a.a.createElement("div", {
+					className: x.a.score
+				}, m))
+			};
+			var M = s("./src/reddit/constants/modals.ts"),
+				j = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				k = s("./src/reddit/models/Toast/index.ts"),
+				O = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				C = s("./src/reddit/selectors/platform.ts"),
+				P = s("./src/reddit/selectors/user.ts"),
+				y = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/index.m.less"),
+				F = s.n(y);
+			const {
+				fbt: z
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), A = e => ({
 				data: e,
 				key: Object(p.b)(e)
 			});
 			t.default = Object(o.a)(() => {
-				const e = Object(n.e)(O.j),
+				const e = Object(n.e)(P.j),
 					t = Object(n.e)(C.q),
-					s = Object(n.e)(e => t ? Object(k.l)(e, {
+					s = Object(n.e)(e => t ? Object(O.l)(e, {
 						subredditId: t.id
 					}) : []),
-					[o, p] = Object(r.useState)([]);
+					o = Object(n.e)(g.h),
+					[p, b] = Object(r.useState)([]);
 				Object(r.useEffect)(() => {
 					var e;
-					p(null !== (e = null == s ? void 0 : s.map(z)) && void 0 !== e ? e : [])
-				}, [s, p]);
-				const b = Object(n.d)(),
-					h = Object(v.a)();
+					b(null !== (e = null == s ? void 0 : s.map(A)) && void 0 !== e ? e : [])
+				}, [s, b]);
+				const h = Object(n.d)(),
+					x = Object(_.a)();
 				Object(r.useEffect)(() => {
-					h(Object(_.d)())
-				}, [h]), Object(r.useEffect)(() => {
+					x(Object(N.d)())
+				}, [x]), Object(r.useEffect)(() => {
 					Object(u.a)()
 				}, []);
-				const x = () => {
-						b(Object(c.g)(S.a.ECON_SUPPORTERS_LIST))
+				const f = () => {
+						h(Object(c.g)(M.a.ECON_SUPPORTERS_LIST))
 					},
-					[f, E] = Object(r.useState)(!1);
+					[E, v] = Object(r.useState)(!1);
 				return t ? a.a.createElement("div", {
-					className: y.a.container
+					className: F.a.container
 				}, a.a.createElement("div", {
-					className: y.a.header
-				}, a.a.createElement(M.a, {
-					className: y.a.close,
-					onClick: x
+					className: F.a.header
+				}, a.a.createElement(j.a, {
+					className: F.a.close,
+					onClick: f
 				}), a.a.createElement("h3", {
-					className: y.a.heading
-				}, F._("Community Heroes", null, {
+					className: F.a.heading
+				}, o ? z._("Community Supporters", null, {
+					hk: "4fsBdg"
+				}) : z._("Community Heroes", null, {
 					hk: "2ssat0"
 				})), a.a.createElement("h4", {
-					className: y.a.subheading
+					className: F.a.subheading
 				}, t.displayText)), a.a.createElement("div", {
-					className: y.a.supportersContainer,
+					className: F.a.supportersContainer,
 					onScroll: e => {
 						const t = e.currentTarget,
 							s = t.getBoundingClientRect().height,
 							r = Math.ceil(t.scrollTop + s) >= t.scrollHeight;
-						E(r)
+						v(r)
 					}
-				}, o.map((t, s) => a.a.createElement(L, {
+				}, p.map((t, s) => a.a.createElement(L, {
 					key: t.key,
 					supporter: t.data,
 					currentUser: e,
 					rank: s + 1
 				}))), a.a.createElement("div", {
-					className: y.a.footer
+					className: F.a.footer
 				}, a.a.createElement("div", {
-					className: Object(l.a)(y.a.scrollGradient, {
-						[y.a.gradientHidden]: f
+					className: Object(l.a)(F.a.scrollGradient, {
+						[F.a.gradientHidden]: E
 					})
 				}), a.a.createElement(m.a, {
-					className: y.a.ctaButton,
+					className: F.a.ctaButton,
 					onClick: () => {
-						h(Object(_.p)()), b(Object(i.f)("supporters_list_modal"))
+						x(Object(N.p)()), h(Object(i.f)("supporters_list_modal"))
 					}
-				}))) : (b(Object(d.f)({
-					kind: j.b.Error,
+				}))) : (h(Object(d.f)({
+					kind: k.b.Error,
 					duration: d.a,
-					text: F._("Something went wrong", null, {
+					text: z._("Something went wrong", null, {
 						hk: "1IJNeH"
 					})
-				})), x(), null)
+				})), f(), null)
 			})
 		},
 		"./src/reddit/components/PowerupsSidebar/common/utils.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
-			})), s.d(t, "b", (function() {
 				return d
+			})), s.d(t, "c", (function() {
+				return u
+			})), s.d(t, "b", (function() {
+				return m
 			}));
 			var r = s("./src/config.ts"),
-				a = s("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
-				n = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				o = s("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
-			const l = 2,
-				i = 5;
-
-			function c(e) {
-				return e >= i ? o.a : e >= l ? n.a : a.a
-			}
+				a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./src/reddit/icons/svgs/PowerupTier1/index.tsx"),
+				o = s("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				l = s("./src/reddit/icons/svgs/PowerupTier3/index.tsx");
+			const i = 2,
+				c = 5;
 
 			function d(e) {
+				return e >= c ? l.a : e >= i ? o.a : n.a
+			}
+
+			function u(e) {
 				var t;
 				const s = !e,
 					a = `${r.a.assetPath}/img/powerups/snoovatar_anonymous.svg`;
 				return s ? a : null === (t = null == e ? void 0 : e.icon) || void 0 === t ? void 0 : t.url
 			}
+			const m = ({
+				displayName: e,
+				score: t,
+				isAltruismMessagingEnabled: s
+			}) => e || (s ? a.fbt._({
+				"*": "Anonymous Supporters",
+				_1: "Anonymous Supporter"
+			}, [a.fbt._plural(t)], {
+				hk: "42rXDr"
+			}).toString() : a.fbt._({
+				"*": "Anonymous Heroes",
+				_1: "Anonymous Hero"
+			}, [a.fbt._plural(t)], {
+				hk: "8kyEI"
+			}).toString())
 		},
 		"./src/reddit/icons/svgs/PowerupTier1/index.tsx": function(e, t, s) {
 			"use strict";
@@ -536,4 +561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.bba25d8199de2d744fda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.f2194bae19c2cf352395.js.map

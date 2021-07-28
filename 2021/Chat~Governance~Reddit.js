@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0225dedccbe555cdf154.js
-// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.054613b3471cdf379164.js
+// Retrieved at 7/28/2021, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2526,11 +2526,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("140953"),
+				buildNumber: r("140954"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1627507390"),
+				})("1627508971"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4977,14 +4977,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ce5c430491f522b23166bc623e396a0034f4b3010-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb24210f8f3b428c76c44dcd43d935288e7c4480c-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "e5c430491f522b23166bc623e396a0034f4b3010-production",
+						release: "b24210f8f3b428c76c44dcd43d935288e7c4480c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5478,7 +5478,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "e5c430491f522b23166bc623e396a0034f4b3010-production",
+						releaseClient: "b24210f8f3b428c76c44dcd43d935288e7c4480c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -24294,7 +24294,9 @@
 					[o.PostsImageUpload]: () => r.fbt._("Upload images", null, {
 						hk: "1P6ot7"
 					}),
-					[o.HeroStatus]: () => r.fbt._("Hero Status", null, {
+					[o.HeroStatus]: e => e ? r.fbt._("Supporter Status", null, {
+						hk: "Ktd1n"
+					}) : r.fbt._("Hero Status", null, {
 						hk: "miGwE"
 					}),
 					[o.More]: () => r.fbt._("More to come...", null, {
@@ -24316,7 +24318,9 @@
 						hk: "4cQwCT"
 					}),
 					[o.PostsImageUpload]: () => "",
-					[o.HeroStatus]: () => r.fbt._("Get on the heroes list and instantly access all perks", null, {
+					[o.HeroStatus]: e => e ? r.fbt._("Get on the supporters list and instantly access all perks", null, {
+						hk: "1Hzfaa"
+					}) : r.fbt._("Get on the heroes list and instantly access all perks", null, {
 						hk: "2bnnTY"
 					}),
 					[o.More]: () => void 0
@@ -39890,4 +39894,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.0225dedccbe555cdf154.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.054613b3471cdf379164.js.map
