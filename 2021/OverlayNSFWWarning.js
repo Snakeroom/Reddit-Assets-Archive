@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.5ed06b7d78a04d209b94.js
-// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.5a3763abf6f22ac0bd24.js
+// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayNSFWWarning"], {
 		"./src/chat/components/OverlayNSFWWarning/index.m.less": function(e, t, n) {
@@ -121,4 +121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.5ed06b7d78a04d209b94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayNSFWWarning.5a3763abf6f22ac0bd24.js.map

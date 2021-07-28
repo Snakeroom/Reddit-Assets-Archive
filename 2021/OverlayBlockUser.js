@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayBlockUser.26934074a391f7aa0e52.js
-// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayBlockUser.d380f540e7c9abb79990.js
+// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayBlockUser"], {
 		"./src/chat/components/OverlayBlockUser/index.m.less": function(e, t, n) {
@@ -136,4 +136,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.26934074a391f7aa0e52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayBlockUser.d380f540e7c9abb79990.js.map

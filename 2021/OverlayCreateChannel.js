@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.66590db66bf2380dd1f7.js
-// Retrieved at 7/20/2021, 12:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.e0471d3aeae526d4af76.js
+// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -55,12 +55,12 @@
 				k = n("./src/chat/constants/keys.ts"),
 				g = n("./src/chat/helpers/dom.ts"),
 				E = n("./src/chat/components/SearchBar/index.m.less"),
-				B = n.n(E);
-			const O = f.a.span("Bubble", B.a),
-				U = f.a.span("SearchBarLabel", B.a),
-				v = f.a.span("SearchBarField", B.a),
-				N = f.a.input("SearchBarInput", B.a),
-				S = f.a.wrapped(x.b, "SearchBarWrapper", B.a);
+				O = n.n(E);
+			const B = f.a.span("Bubble", O.a),
+				U = f.a.span("SearchBarLabel", O.a),
+				v = f.a.span("SearchBarField", O.a),
+				N = f.a.input("SearchBarInput", O.a),
+				S = f.a.wrapped(x.b, "SearchBarWrapper", O.a);
 			class L extends i.a.Component {
 				constructor(e) {
 					super(e), this.bubbleRefs = {}, this.timeoutToken = null, this.onBubbleKey = e => t => {
@@ -131,7 +131,7 @@
 						autoScrollBottom: !0
 					}, i.a.createElement(U, null, a.fbt._("To:", null, {
 						hk: "2eyFcf"
-					})), i.a.createElement(v, null, n && n.length > 0 && n.map((e, t) => i.a.createElement(O, {
+					})), i.a.createElement(v, null, n && n.length > 0 && n.map((e, t) => i.a.createElement(B, {
 						key: `selected-contact-${t}`,
 						tabIndex: 0,
 						onKeyDown: Object(g.a)(this.onBubbleKey(e)),
@@ -161,7 +161,7 @@
 			const w = f.a.wrapped(I.a, "Checkbox", T.a),
 				R = f.a.wrapped(j.a, "UserPic", T.a),
 				F = f.a.span("Name", T.a);
-			class D extends l.Component {
+			class A extends l.Component {
 				constructor() {
 					super(...arguments), this.CONTACT_FORM_NAME = "contactForm"
 				}
@@ -187,11 +187,11 @@
 					}), i.a.createElement(F, null, t))
 				}
 			}
-			var A = n("./src/chat/components/UnselectableUser/index.m.less"),
-				P = n.n(A);
+			var D = n("./src/chat/components/UnselectableUser/index.m.less"),
+				P = n.n(D);
 			const M = f.a.span("Wrapper", P.a),
-				W = f.a.span("Content", P.a),
-				K = f.a.wrapped(j.a, "UserPic", P.a),
+				K = f.a.span("Content", P.a),
+				W = f.a.wrapped(j.a, "UserPic", P.a),
 				G = f.a.span("Name", P.a),
 				Q = f.a.span("Context", P.a);
 			class z extends l.Component {
@@ -203,7 +203,7 @@
 						},
 						context: n
 					} = this.props;
-					return i.a.createElement(M, null, i.a.createElement(W, null, i.a.createElement(K, {
+					return i.a.createElement(M, null, i.a.createElement(K, null, i.a.createElement(W, {
 						userId: e
 					}), i.a.createElement(G, null, t)), i.a.createElement(Q, null, n))
 				}
@@ -234,28 +234,28 @@
 				le = e => e.toLocaleLowerCase(),
 				ie = Object($.a)({
 					channelAction: e => Object(ne.c)(e),
-					channel: e => Object(ee.k)(e),
+					channel: e => Object(ee.m)(e),
 					contacts: te.h,
 					currentUserName: ae.b,
 					existingGroupUsers: e => {
-						const t = Object(ee.x)(e, "members");
+						const t = Object(ee.A)(e, "members");
 						return t && t.map(e => e.id)
 					},
-					isCreatingChannel: ee.I,
+					isCreatingChannel: ee.K,
 					loadedContacts: te.i,
 					knownContacts: te.g,
-					memberCount: e => Object(ee.x)(e, "memberCount"),
+					memberCount: e => Object(ee.A)(e, "memberCount"),
 					selectedUsers: te.j,
 					selectedUsersCount: te.k
 				}),
 				he = Object(h.b)(ie, e => ({
-					onCreateNewChannel: (t, n) => e(Object(u.B)(t, n)),
-					onInviteUsersToExistingChannel: t => e(Object(u.H)(t)),
+					onCreateNewChannel: (t, n) => e(Object(u.A)(t, n)),
+					onInviteUsersToExistingChannel: t => e(Object(u.F)(t)),
 					onIdentifyContact: t => e(Object(p.k)({
 						username: t
 					})),
 					onCancelAndGoBack: () => {
-						e(Object(d.a)()), e(Object(C.h)())
+						e(Object(d.a)()), e(Object(C.i)())
 					},
 					onSelectUser: t => e(Object(b.m)(t)),
 					onUnselectUser: t => e(Object(b.t)(t)),
@@ -409,7 +409,7 @@
 						onContactsSelect: p,
 						onSubmit: C,
 						onCancel: b
-					} = this, _ = this.getSelectedContacts(), y = this.getFilteredContacts(), f = this.getLoadedContact(), k = !!s && !f, E = !!f, B = !this.getIsValidUser(s), O = this.handleChannelNameInput, U = this.availableCharacters(l), v = this.isSubmitDisabled(U), N = this.primaryButtonText(), S = this.isCreateChannelURLAction(), j = n >= Z.f;
+					} = this, _ = this.getSelectedContacts(), y = this.getFilteredContacts(), f = this.getLoadedContact(), k = !!s && !f, E = !!f, O = !this.getIsValidUser(s), B = this.handleChannelNameInput, U = this.availableCharacters(l), v = this.isSubmitDisabled(U), N = this.primaryButtonText(), S = this.isCreateChannelURLAction(), j = n >= Z.f;
 					return i.a.createElement(V.a, {
 						className: e,
 						onSubmit: Object(g.a)(C),
@@ -427,7 +427,7 @@
 						isShown: n > 1
 					}, i.a.createElement(q.a, {
 						className: re.a.ChannelNameInput,
-						handleChannelNameInput: O,
+						handleChannelNameInput: B,
 						placeholder: a.fbt._("Group name", null, {
 							hk: "3YSrvu"
 						})
@@ -451,7 +451,7 @@
 					}, d(e.id) || e.isBlocked || !1 === e.acceptChats ? i.a.createElement(z, {
 						contact: e,
 						context: this.getBlockedContactText(e)
-					}) : i.a.createElement(D, {
+					}) : i.a.createElement(A, {
 						formName: ce,
 						contact: e,
 						onChange: p,
@@ -473,7 +473,7 @@
 						onChange: p
 					}, i.a.createElement("span", {
 						className: re.a.Name
-					}, s, B && i.a.createElement("span", {
+					}, s, O && i.a.createElement("span", {
 						className: re.a.Error
 					}, a.fbt._("User doesn't exist", null, {
 						hk: "2nKv7P"
@@ -482,7 +482,7 @@
 					}, !S && (d(f.id) || f.isBlocked) || !1 === f.acceptChats ? i.a.createElement(z, {
 						contact: f,
 						context: this.getBlockedContactText(f)
-					}) : i.a.createElement(D, {
+					}) : i.a.createElement(A, {
 						formName: ce,
 						contact: f,
 						onChange: p,
@@ -611,8 +611,8 @@
 			const k = c.a.input("HiddenInput", f.a),
 				g = c.a.wrapped(u, "Checked", f.a),
 				E = c.a.wrapped(_, "Unchecked", f.a),
-				B = c.a.span("Wrapper", f.a),
-				O = c.a.span("Content", f.a),
+				O = c.a.span("Wrapper", f.a),
+				B = c.a.span("Content", f.a),
 				U = c.a.span("Control", f.a),
 				v = c.a.label("CheckInput", f.a);
 			t.a = e => s.a.createElement(v, {
@@ -623,7 +623,7 @@
 					height: e.height || void 0,
 					width: e.width || void 0
 				}
-			}, s.a.createElement(B, null, e.children && !e.rightPosition && s.a.createElement(O, null, e.children), s.a.createElement(U, null, s.a.createElement(k, {
+			}, s.a.createElement(O, null, e.children && !e.rightPosition && s.a.createElement(B, null, e.children), s.a.createElement(U, null, s.a.createElement(k, {
 				tabIndex: 0,
 				type: e.type || "checkbox",
 				checked: e.checked,
@@ -632,7 +632,7 @@
 				value: e.value,
 				onChange: e.onChange,
 				id: e.id
-			}), s.a.createElement(g, null), s.a.createElement(E, null)), e.children && e.rightPosition && s.a.createElement(O, null, e.children)))
+			}), s.a.createElement(g, null), s.a.createElement(E, null)), e.children && e.rightPosition && s.a.createElement(B, null, e.children)))
 		},
 		"./src/chat/controls/OverlayControlBar/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -757,4 +757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.66590db66bf2380dd1f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.e0471d3aeae526d4af76.js.map
