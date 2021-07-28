@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.0fcc87c809f445c1682d.js
-// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.7ec73f5ccf12609bcf4e.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, n) {
@@ -443,13 +443,13 @@
 						isViewed: !0,
 						type: le
 					}, Te = Q.messageType === v.a.AwardReceived, ge = Te ? null === (_ = null == Q ? void 0 : Q.awarding) || void 0 === _ ? void 0 : _.id : "", we = null === (S = null === (U = null == Q ? void 0 : Q.awarding) || void 0 === U ? void 0 : U.target) || void 0 === S ? void 0 : S.permalink, Ie = null === (y = null == Q ? void 0 : Q.awarding) || void 0 === y ? void 0 : y.award.id, Ae = null === (M = null == Q ? void 0 : Q.post) || void 0 === M ? void 0 : M.permalink, Ce = Te && we ? we : Ae || X, _e = null === (H = null === (j = null == Q ? void 0 : Q.awarding) || void 0 === j ? void 0 : j.awarder) || void 0 === H ? void 0 : H.isAcceptingChats, Ue = e => {
-						R(Object(b.i)({
+						R(Object(b.k)({
 							...he,
 							actionInfoType: e
 						}))
 					}, Se = () => {
 						e.markNotificationAsRead(ae, le)
-					}, ye = e => R(Object(b.g)({
+					}, ye = e => R(Object(b.i)({
 						...he,
 						...e
 					})), Me = s.a.createElement(s.a.Fragment, null, s.a.createElement(d.a, {
@@ -465,7 +465,7 @@
 						isOverflowMenuOpen: Ee,
 						isToggleNotificationUpdateEligible: te,
 						isToggleUpdateFromSubredditEligible: ne,
-						sendInboxClickOverflow: () => R(Object(b.h)({
+						sendInboxClickOverflow: () => R(Object(b.j)({
 							...he,
 							awardId: Ie
 						})),
@@ -499,7 +499,7 @@
 								duration: N.a
 							}))) : Z && q && q(), ye({
 								awardId: Ie,
-								position: b.b.FIRST
+								position: b.c.FIRST
 							})
 						},
 						onMouseDown: Se,
@@ -515,22 +515,22 @@
 						rel: "noopener noreferrer"
 					}), Me)), s.a.createElement(c.a, {
 						disableNotificationUpdates: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(A), e.disableNotificationUpdates(Ne), Ue(b.c.HideSubreddit)
+							e.isInTooltip && e.setActiveOverflowMenuId(A), e.disableNotificationUpdates(Ne), Ue(b.d.HideSubreddit)
 						},
 						hideNotification: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(A), e.hideNotification(ae), Ue(b.c.HideUpdates)
+							e.isInTooltip && e.setActiveOverflowMenuId(A), e.hideNotification(ae), Ue(b.d.HideUpdates)
 						},
 						hideSubredditNotifications: () => {
-							const t = b.c.HideSubreddit;
+							const t = b.d.HideSubreddit;
 							e.isInTooltip && e.setActiveOverflowMenuId(A), e.hideSubredditNotifications(ue, () => (e => {
-								R(Object(b.r)({
+								R(Object(b.t)({
 									...he,
 									actionInfoType: e
 								}))
 							})(t)), Ue(t)
 						},
 						blockAwarder: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(A), e.blockAwarder(ge), Ue(b.c.BlockAwarder)
+							e.isInTooltip && e.setActiveOverflowMenuId(A), e.blockAwarder(ge), Ue(b.d.BlockAwarder)
 						},
 						isInTooltip: Z,
 						isHideNotifEligible: ee,
@@ -538,11 +538,11 @@
 						isToggleNotificationUpdateEligible: te,
 						isToggleUpdateFromSubredditEligible: !(!ne || !ue),
 						isBlockAwarderEligible: Te,
-						sendInboxViewOverflow: () => R(Object(b.p)(he)),
+						sendInboxViewOverflow: () => R(Object(b.r)(he)),
 						tooltipId: ve
 					}), s.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !V && (R(Object(b.o)(he)), W(!0))
+							e.isIntersecting && !V && (R(Object(b.q)(he)), W(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: C
@@ -718,13 +718,13 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.I)(e) || Object(r.J)(e),
 				d = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.tc,
+					experimentName: a.uc,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(i.a)(d, e => e === a.wc.SeePostCTAs),
-				m = Object(i.a)(d, e => e === a.wc.ReplyCTAs),
-				u = Object(i.a)(d, e => e === a.wc.AllCTAs)
+				c = Object(i.a)(d, e => e === a.xc.SeePostCTAs),
+				m = Object(i.a)(d, e => e === a.xc.ReplyCTAs),
+				u = Object(i.a)(d, e => e === a.xc.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.0fcc87c809f445c1682d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.7ec73f5ccf12609bcf4e.js.map

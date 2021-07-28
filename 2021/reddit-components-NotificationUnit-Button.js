@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e6fe11b371502dd507c4.js
-// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.35dfdbc7d91e0178369c.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -563,7 +563,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(L.pb)(null !== (m = null === (a = null === (i = o().pages) || void 0 === i ? void 0 : i.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
+							Object(L.qb)(null !== (m = null === (a = null === (i = o().pages) || void 0 === i ? void 0 : i.comments) || void 0 === a ? void 0 : a.followed) && void 0 !== m ? m : [], null === (u = o().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? r.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : r.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1008,7 +1008,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: i
-					})), Object(d.mb)(o + 1)
+					})), Object(d.nb)(o + 1)
 				}
 		},
 		"./src/reddit/actions/presence.ts": function(e, t, n) {
@@ -1196,7 +1196,7 @@
 							if (!R && !S) return null;
 							const e = e => {
 								K ? N({
-									position: f.b.SECOND
+									position: f.c.SECOND
 								}) : (e.preventDefault(), C(Object(m.f)(x)))
 							};
 							return s.a.createElement(l.q, {
@@ -1226,7 +1226,7 @@
 											commentsPageKey: e
 										};
 									C(Object(a.g)(t)), N({
-										position: f.b.SECOND
+										position: f.c.SECOND
 									})
 								} else e.preventDefault(), C(Object(m.f)(x))
 							};
@@ -1250,7 +1250,7 @@
 							if (!M) return null;
 							const e = e => {
 								e.preventDefault(), M ? N({
-									position: f.b.SECOND,
+									position: f.c.SECOND,
 									awardId: F
 								}) : C(Object(m.f)(x))
 							};
@@ -1472,7 +1472,7 @@
 								experimentName: s.B,
 								expEventOverride: t
 							});
-							return !!(Object(s.Wd)(n) ? void 0 : n)
+							return !!(Object(s.Yd)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2634,14 +2634,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Vc
-					}) === r.fd.Enabled
+						experimentName: r.Xc
+					}) === r.hd.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Uc
-					}) === r.ed.Enabled
+						experimentName: r.Wc
+					}) === r.gd.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -2727,4 +2727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e6fe11b371502dd507c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.35dfdbc7d91e0178369c.js.map

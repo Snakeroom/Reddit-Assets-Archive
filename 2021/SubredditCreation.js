@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.99d156d3149c825806b6.js
-// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.2a5e3dd0b35d00fd2d3a.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -184,10 +184,10 @@
 			}
 			var v = Object(i.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.tb)()
+					e(Object(c.i)()), Object(u.vb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Nb)()
+					Object(u.Pb)()
 				}
 			}))(Object(p.c)(C));
 			const g = "editable-primary-topic-idcard";
@@ -2841,7 +2841,7 @@
 				oe = Object(l.a)(se, e => e === $.K.Remove);
 			var ie = n("./src/reddit/selectors/experiments/emailInvite.ts");
 			const re = Object(l.a)(e => Object(ee.c)(e, {
-				experimentName: $.ib,
+				experimentName: $.jb,
 				experimentEligibilitySelector: te.e
 			}), ne.a);
 			var le = n("./src/reddit/selectors/subreddit.ts"),
@@ -3266,11 +3266,11 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Zb
+					experimentName: s.ac
 				});
-				return !(!t || Object(s.Wd)(t))
+				return !(!t || Object(s.Yd)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.99d156d3149c825806b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.2a5e3dd0b35d00fd2d3a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.b79f5899bdaa198458d4.js
-// Retrieved at 7/28/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.b6fe0805d9d22026085a.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -534,9 +534,9 @@
 			})), r.d(t, "moreModListingRequested", (function() {
 				return U
 			})), r.d(t, "hideSubredditSuccess", (function() {
-				return K
-			})), r.d(t, "hideSubredditPending", (function() {
 				return q
+			})), r.d(t, "hideSubredditPending", (function() {
+				return K
 			})), r.d(t, "hideSubredditFailed", (function() {
 				return W
 			})), r.d(t, "unhideSubredditSuccess", (function() {
@@ -694,8 +694,8 @@
 				const t = m.x in e && e[m.x].toUpperCase() || "";
 				return t in i.bc && i.bc[t]
 			}
-			const K = Object(a.a)(M.c),
-				q = Object(a.a)(M.b),
+			const q = Object(a.a)(M.c),
+				K = Object(a.a)(M.b),
 				W = Object(a.a)(M.a),
 				V = Object(a.a)(M.l),
 				Q = Object(a.a)(M.k),
@@ -705,7 +705,7 @@
 				}) => {
 					const o = n(),
 						i = Object(N.j)(o),
-						[a, d, c, l] = t ? [q, K, W, O] : [Q, V, G, E];
+						[a, d, c, l] = t ? [K, q, W, O] : [Q, V, G, E];
 					if (!i || !i.displayText) return;
 					const {
 						currentPage: u
@@ -2433,15 +2433,15 @@
 					action: "click",
 					noun: e ? "unfiltered_subreddits" : "filtered_subreddits"
 				});
-			var K = r("./src/reddit/routes/modListing/index.ts");
-			const q = e => e.modListingPage.filteredSubreddits.api.pending;
+			var q = r("./src/reddit/routes/modListing/index.ts");
+			const K = e => e.modListingPage.filteredSubreddits.api.pending;
 			var W = r("./src/reddit/constants/keycodes.ts"),
 				V = r("./src/reddit/layout/row/Inline/index.tsx"),
 				Q = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				G = r.n(Q);
 			const J = Object(d.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
-				isApiPending: q
+				isApiPending: K
 			});
 			class X extends i.a.Component {
 				constructor() {
@@ -2503,7 +2503,7 @@
 				oe = r.n(se);
 			const ie = Y.a.wrapped(Z.b, "SubredditIcon", oe.a),
 				ae = Object(d.c)({
-					isApiPending: q,
+					isApiPending: K,
 					subredditOrProfile: (e, t) => {
 						const r = Object(ne.y)(e, {
 							subredditName: t.subredditName
@@ -2571,7 +2571,7 @@
 			const {
 				fbt: fe
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ye = Object(F.t)({
-				filtered: e => !!e && Object(K.d)(e.url)
+				filtered: e => !!e && Object(q.d)(e.url)
 			}), ve = Object(d.c)({
 				hiddenSubredditsNames: e => e.modListingPage.filteredSubreddits.names
 			});
@@ -2608,7 +2608,7 @@
 			var xe = ye(Object(a.b)(ve, (e, {
 					filtered: t
 				}) => ({
-					toggleFiltered: () => e(Object(P.b)(t ? K.a : K.b))
+					toggleFiltered: () => e(Object(P.b)(t ? q.a : q.b))
 				}))(Object(R.c)(ge))),
 				_e = r("./src/reddit/components/SidebarContainer/index.tsx"),
 				Oe = r("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -2629,7 +2629,7 @@
 					match: t
 				}) => t.params.sort || c.U.HOT, (e, {
 					match: t
-				}) => Object(K.d)(t.path), ke.j, ke.d, (e, t, r, n, o) => {
+				}) => Object(q.d)(t.path), ke.j, ke.d, (e, t, r, n, o) => {
 					const i = s()([...Object(l.a)(e)]),
 						a = we.x in i && i[we.x].toUpperCase(),
 						d = "string" == typeof a && a in c.bc ? c.bc[a] : c.cc,
@@ -2657,7 +2657,7 @@
 					})
 				}
 				render() {
-					const e = this.props.filtered ? K.b : K.a;
+					const e = this.props.filtered ? q.b : q.a;
 					return i.a.createElement("div", null, this.props.isModeratorWithPostPerms ? i.a.createElement(Ce.a, {
 						className: this.props.className,
 						fitPageToContent: !0,
@@ -3012,8 +3012,8 @@
 					api: A,
 					result: U
 				});
-			const K = {};
-			var q = (e = K, t) => {
+			const q = {};
+			var K = (e = q, t) => {
 					switch (t.type) {
 						case j.g: {
 							const {
@@ -3056,7 +3056,7 @@
 					models: B,
 					pageInfo: R,
 					search: H,
-					userOrder: q
+					userOrder: K
 				}),
 				V = r("./src/reddit/actions/moderationLog/constants.ts");
 			const Q = {};
@@ -3584,7 +3584,7 @@
 				}
 			};
 			const He = {};
-			var Ke = (e = He, t) => {
+			var qe = (e = He, t) => {
 					switch (t.type) {
 						case s.E:
 						case s.F: {
@@ -3611,9 +3611,9 @@
 							return e
 					}
 				},
-				qe = Object(n.c)({
+				Ke = Object(n.c)({
 					error: Ue,
-					pending: Ke
+					pending: qe
 				});
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			const We = {};
@@ -3651,7 +3651,7 @@
 				},
 				Qe = Object(n.c)({
 					data: Ve,
-					api: qe
+					api: Ke
 				}),
 				Ge = Object(n.c)({
 					editableModerators: ae,
@@ -4103,7 +4103,7 @@
 				}
 			};
 			const Ht = {};
-			var Kt = (e = Ht, t) => {
+			var qt = (e = Ht, t) => {
 					switch (t.type) {
 						case ze.p: {
 							const {
@@ -4121,10 +4121,10 @@
 							return e
 					}
 				},
-				qt = Object(n.c)({
+				Kt = Object(n.c)({
 					api: Dt,
 					itemOrder: Ut,
-					loadMore: Kt
+					loadMore: qt
 				});
 			var Wt = (e = null, t) => {
 				switch (t.type) {
@@ -4205,7 +4205,7 @@
 					moderatedCommunitiesOrder: gt,
 					modqueue: St,
 					reports: Pt,
-					spam: qt,
+					spam: Kt,
 					unmoderated: Yt
 				});
 			var $t = (e = null, t) => {
@@ -4424,10 +4424,10 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: n.Kc,
+				experimentName: n.Mc,
 				experimentEligibilitySelector: s.a,
 				expEventOverride: !1
-			}) === n.Pc.Enabled
+			}) === n.Rc.Enabled
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
@@ -4491,4 +4491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.b79f5899bdaa198458d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.b6fe0805d9d22026085a.js.map

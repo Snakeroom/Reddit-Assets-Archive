@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.c1ff9a8562c376c88df6.js
-// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.34de18626897346012af.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, s) {
@@ -309,7 +309,7 @@
 				I = Object(o.a)(T),
 				D = t => {
 					const e = Date.now() - t,
-						s = Object(b.F)();
+						s = Object(b.G)();
 					return Object.keys(s).filter(t => s[t].when >= e).map(t => s[t])
 				},
 				L = ({
@@ -326,12 +326,12 @@
 						L = t === T;
 					if (!(t === E.f || t === E.b || L)) return;
 					if (L) return void h(m, e, s)(n, o, l);
-					0 === D(i.nb).length && Object(b.Eb)(!1);
+					0 === D(i.nb).length && Object(b.Gb)(!1);
 					let C = o();
 					if (Object(p.d)(C, {
 							listingKey: e,
 							postId: s
-						}) || Object(p.a)(C).length >= _.a || Object(b.T)() || D(i.z).length >= _.a) return;
+						}) || Object(p.a)(C).length >= _.a || Object(b.U)() || D(i.z).length >= _.a) return;
 					const A = Object(f.w)(C, {
 						listingKey: e,
 						postId: s
@@ -381,14 +381,14 @@
 						postId: s
 					})))) : Object(r.a)(Object(S.c)(R, "no_chaining", m)(C))
 				}, C = "FEED_CHAINING__CHAIN_TOGGLED", A = (Object(o.a)(C), "FEED_CHAINING__CHAINING_TOGGLED"), R = Object(o.a)(A), j = () => async t => {
-					Object(b.Eb)(!0), t(R({
+					Object(b.Gb)(!0), t(R({
 						isDismissed: !0
 					})), t(Object(l.f)(Object(l.e)(n.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), m.b.Undo, n.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(b.Eb)(!1), t(R({
+						Object(b.Gb)(!1), t(R({
 							isDismissed: !1
 						}))
 					})))
@@ -1556,7 +1556,7 @@
 						subreddit: s
 					} = t, {
 						isSponsored: n
-					} = e, r = Object(w.a)(), o = Object(G.a)(_.hc) === _.lc.Enabled;
+					} = e, r = Object(w.a)(), o = Object(G.a)(_.ic) === _.mc.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return i.a.createElement(W, {
 						nowrap: t.nowrap
 					}, i.a.createElement($, t));
@@ -2807,4 +2807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.c1ff9a8562c376c88df6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.34de18626897346012af.js.map

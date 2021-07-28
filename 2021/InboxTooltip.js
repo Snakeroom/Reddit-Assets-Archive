@@ -1,23 +1,23 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.eacd2f3ca1c9ee71e463.js
-// Retrieved at 7/6/2021, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.8c9944a153697b655bc4.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
-		"./src/reddit/components/InboxTooltip/index.tsx": function(e, t, i) {
+		"./src/reddit/components/InboxTooltip/index.tsx": function(e, i, t) {
 			"use strict";
-			i.r(t);
-			var n = i("./node_modules/react/index.js"),
-				o = i.n(n),
-				s = i("./node_modules/react-redux/es/index.js"),
-				a = i("./node_modules/reselect/es/index.js"),
-				d = i("./src/reddit/actions/appBadgeIndicators/index.ts"),
-				r = i("./src/reddit/actions/notificationsInbox/index.ts"),
-				c = i("./src/reddit/components/InboxTooltip/Component.tsx"),
-				b = i("./src/reddit/helpers/trackers/inbox.ts"),
-				l = i("./src/reddit/hooks/useTracking.ts"),
-				x = i("./src/reddit/selectors/appBadges.ts"),
-				f = i("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				u = i("./src/reddit/selectors/notificationsInbox.tsx");
-			const g = Object(a.c)({
+			t.r(i);
+			var n = t("./node_modules/react/index.js"),
+				o = t.n(n),
+				s = t("./node_modules/react-redux/es/index.js"),
+				a = t("./node_modules/reselect/es/index.js"),
+				d = t("./src/reddit/actions/appBadgeIndicators/index.ts"),
+				r = t("./src/reddit/actions/notificationsInbox/index.ts"),
+				c = t("./src/reddit/components/InboxTooltip/Component.tsx"),
+				b = t("./src/reddit/helpers/trackers/inbox.ts"),
+				l = t("./src/reddit/hooks/useTracking.ts"),
+				x = t("./src/reddit/selectors/appBadges.ts"),
+				f = t("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				u = t("./src/reddit/selectors/notificationsInbox.tsx");
+			const I = Object(a.c)({
 					cursor: u.c,
 					hasNextPage: u.d,
 					inboxBadgeCount: x.g,
@@ -25,26 +25,27 @@
 					isDNInboxPromptBannerPersistEnabled: f.b,
 					isInboxExposureBannerEnabled: f.d,
 					isInboxInfiniteScrollEnabled: f.h,
+					isInboxPolicyBannerEnabled: f.i,
 					isInboxPostEmbedEnabled: f.f,
 					isPending: u.e,
 					messagesBadgeCount: x.h,
 					notifications: e => Object(f.h)(e) ? Object(u.f)(e) : Object(u.g)(e)
 				}),
-				p = Object(s.b)(g, e => ({
+				p = Object(s.b)(I, e => ({
 					clearMessageTabBadgeCount: () => e(Object(d.b)()),
-					disableNotificationUpdates: t => e(Object(r.c)(t)),
-					fetchNotifications: t => e(Object(r.d)(t)),
-					hideNotification: t => e(Object(r.b)(t)),
-					hideSubredditNotifications: (t, i) => e(Object(r.f)(t, i)),
+					disableNotificationUpdates: i => e(Object(r.c)(i)),
+					fetchNotifications: i => e(Object(r.d)(i)),
+					hideNotification: i => e(Object(r.b)(i)),
+					hideSubredditNotifications: (i, t) => e(Object(r.f)(i, t)),
 					markAllAsRead: () => e(Object(r.g)()),
-					markNotificationAsRead: (t, i) => e(Object(r.h)(t, i)),
+					markNotificationAsRead: (i, t) => e(Object(r.h)(i, t)),
 					updateInboxActivitySeenState: () => e(Object(r.i)()),
-					blockAwarder: t => e(Object(r.a)(t))
+					blockAwarder: i => e(Object(r.a)(i))
 				}));
-			t.default = p(({
+			i.default = p(({
 				clearMessageTabBadgeCount: e,
-				cursor: t,
-				disableNotificationUpdates: i,
+				cursor: i,
+				disableNotificationUpdates: t,
 				fetchNotifications: s,
 				hasNextPage: a,
 				hideNotification: d,
@@ -52,58 +53,60 @@
 				blockAwarder: x,
 				inboxBadgeCount: f,
 				isInboxInfiniteScrollEnabled: u,
-				isDNInboxPromptBannerFirstTimeEnabled: g,
+				isDNInboxPromptBannerFirstTimeEnabled: I,
 				isDNInboxPromptBannerPersistEnabled: p,
-				isInboxExposureBannerEnabled: I,
+				isInboxExposureBannerEnabled: g,
+				isInboxPolicyBannerEnabled: E,
 				isInboxPostEmbedEnabled: m,
-				isOpen: E,
-				isPending: N,
+				isOpen: N,
+				isPending: B,
 				markAllAsRead: O,
 				markNotificationAsRead: h,
-				messagesBadgeCount: B,
-				notifications: j,
-				updateInboxActivitySeenState: A,
-				hideTooltip: P,
-				userId: _
+				messagesBadgeCount: j,
+				notifications: A,
+				updateInboxActivitySeenState: P,
+				hideTooltip: _,
+				userId: C
 			}) => {
-				const C = Object(l.a)(),
-					[S, k] = Object(n.useState)("");
+				const S = Object(l.a)(),
+					[k, D] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (E && !j.length) {
+					if (N && !A.length) {
 						s({
 							first: 5
 						})
 					}
-					E && (A(), C(Object(b.n)({
+					N && (P(), S(Object(b.p)({
 						badgeCount: f
 					})))
-				}, [E]), o.a.createElement(c.b, {
-					activeOverflowMenuId: S,
+				}, [N]), o.a.createElement(c.b, {
+					activeOverflowMenuId: k,
 					clearMessageTabBadgeCount: e,
-					disableNotificationUpdates: i,
+					disableNotificationUpdates: t,
 					hideNotification: d,
 					hideSubredditNotifications: r,
 					blockAwarder: x,
 					inboxBadgeCount: f,
-					isDNInboxPromptBannerFirstTimeEnabled: g,
+					isDNInboxPromptBannerFirstTimeEnabled: I,
 					isDNInboxPromptBannerPersistEnabled: p,
-					isInboxExposureBannerEnabled: I,
+					isInboxExposureBannerEnabled: g,
+					isInboxPolicyBannerEnabled: E,
 					isInboxPostEmbedEnabled: m,
-					isPending: N,
+					isPending: B,
 					markAllAsRead: O,
 					markNotificationAsRead: h,
-					messagesBadgeCount: B,
-					notifications: j,
-					setActiveOverflowMenuId: k,
-					hideTooltip: P,
-					userId: _,
+					messagesBadgeCount: j,
+					notifications: A,
+					setActiveOverflowMenuId: D,
+					hideTooltip: _,
+					userId: C,
 					isInboxInfiniteScrollEnabled: u,
 					hasNextPage: a,
-					cursor: t,
+					cursor: i,
 					fetchNotifications: s
 				})
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.eacd2f3ca1c9ee71e463.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.8c9944a153697b655bc4.js.map

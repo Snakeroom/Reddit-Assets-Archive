@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.00854c016b0519c6b865.js
-// Retrieved at 7/26/2021, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.43df6987b57d23fa7074.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Hc
+					experimentName: u.Jc
 				});
-				return Object(u.Wd)(t) ? void 0 : t
+				return Object(u.Yd)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ic
+					experimentName: u.Kc
 				});
-				return Object(u.Wd)(t) ? void 0 : t
-			}, (e, t) => e === u.Jc.Enabled && t === u.Jc.Enabled);
+				return Object(u.Yd)(t) ? void 0 : t
+			}, (e, t) => e === u.Lc.Enabled && t === u.Lc.Enabled);
 			var h = r("./src/config.ts");
 			var b = r("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -1458,19 +1458,19 @@
 			class re extends n.Component {
 				constructor(e) {
 					super(e), this.observableElement = s.a.createRef(), this.videoRef = s.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(S.W)()
+						Object(S.X)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(S.K)());
+						const e = Number(Object(S.L)());
 						if (e) {
 							if (Date.now() - e >= J) {
-								Object(S.W)();
+								Object(S.X)();
 								const e = 30 * l.z,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(S.Jb)(Date.now())
+						} else Object(S.Lb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -3826,4 +3826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.00854c016b0519c6b865.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.43df6987b57d23fa7074.js.map

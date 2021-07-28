@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.0bbb4650736493decb2f.js
-// Retrieved at 7/14/2021, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.4ba36eec3cf5d219ac58.js
+// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -13,17 +13,17 @@
 				o = n("./node_modules/react/index.js"),
 				a = n.n(o),
 				c = n("./src/lib/classNames/index.ts"),
-				r = n("./src/reddit/helpers/createEmojiText/index.tsx"),
-				i = n("./src/reddit/icons/fonts/Coin/index.tsx"),
+				i = n("./src/reddit/helpers/createEmojiText/index.tsx"),
+				r = n("./src/reddit/icons/fonts/Coin/index.tsx"),
 				l = n("./src/reddit/components/CoinBalance/index.m.less"),
 				d = n.n(l);
 			t.a = e => a.a.createElement("div", {
 				className: Object(c.a)(d.a.coinBalance, e.className),
 				"data-redditstyle": !0
-			}, Object(r.a)(s.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [s.fbt._param("Coin icon placeholder", ":coin:"), s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
+			}, Object(i.a)(s.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [s.fbt._param("Coin icon placeholder", ":coin:"), s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
 				hk: "2x0upn"
 			}), {
-				":coin:": a.a.createElement(i.a, null)
+				":coin:": a.a.createElement(r.a, null)
 			}), " ", a.a.createElement("a", {
 				href: "/coins",
 				onClick: e.onWhatAreCoinsLinkClick,
@@ -55,9 +55,9 @@
 				o = n("./node_modules/react/index.js"),
 				a = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
-				r = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/components/GivePremiumModal/index.m.less"),
-				l = n.n(i),
+				i = n("./node_modules/reselect/es/index.js"),
+				r = n("./src/reddit/components/GivePremiumModal/index.m.less"),
+				l = n.n(r),
 				d = n("./src/higherOrderComponents/asModal/index.tsx"),
 				m = n("./src/lib/classNames/index.ts"),
 				u = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -149,7 +149,7 @@
 				}).apply(this, arguments)
 			}
 			const W = 10,
-				X = Object(r.c)({
+				X = Object(i.c)({
 					coinBalance: F.d,
 					isEmployee: F.G,
 					isPending: y.b,
@@ -169,8 +169,8 @@
 									const e = a.body;
 									await o(M(e)), Object(O.b)(O.a.GiftPremiumFlow)
 								}
-							} catch (r) {
-								await o(N(r))
+							} catch (i) {
+								await o(N(i))
 							}
 						})(t, n, s, o ? a : ""))
 					}
@@ -253,7 +253,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.rb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.sb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -273,8 +273,8 @@
 						recipientName: o
 					} = this.props, {
 						includeMessage: c,
-						isAnonymous: r,
-						message: i,
+						isAnonymous: i,
+						message: r,
 						selectedPackage: d
 					} = this.state, u = Object(K.e)(d), p = c ? [l.a.messageInputOpen] : "";
 					return a.a.createElement(P.d, {
@@ -298,7 +298,7 @@
 						className: Object(m.a)(l.a.menuContent, p)
 					}, a.a.createElement("div", null, a.a.createElement(R.a, {
 						className: l.a.checkbox,
-						isSelected: r,
+						isSelected: i,
 						text: s.fbt._("Make my gift anonymous", null, {
 							hk: "2XfgGX"
 						}),
@@ -313,7 +313,7 @@
 					})), a.a.createElement(P.s, {
 						className: Object(m.a)(l.a.textArea, p),
 						"data-redditstyle": !0,
-						value: i,
+						value: r,
 						maxLength: 2048,
 						name: "message",
 						onClick: this.handleClickMessageInput,
@@ -366,9 +366,9 @@
 				o = n.n(s),
 				a = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				r = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
-				i = n("./src/reddit/controls/CheckboxWithLabel/index.m.less"),
-				l = n.n(i);
+				i = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				r = n("./src/reddit/controls/CheckboxWithLabel/index.m.less"),
+				l = n.n(r);
 			t.a = e => o.a.createElement("button", {
 				"aria-checked": e.isSelected,
 				"aria-disabled": e.disabled,
@@ -381,7 +381,7 @@
 			}, o.a.createElement("span", {
 				tabIndex: -1,
 				className: l.a.labelContent
-			}, e.isSelected ? o.a.createElement(r.a, {
+			}, e.isSelected ? o.a.createElement(i.a, {
 				className: l.a.checkboxSelected
 			}) : o.a.createElement(c.a, {
 				className: l.a.checkbox
@@ -396,8 +396,8 @@
 				o = n.n(s),
 				a = n("./node_modules/react/index.js"),
 				c = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/controls/UnstyledInternalLink/index.tsx"),
+				i = n("./src/lib/classNames/index.ts"),
+				r = n("./src/reddit/controls/UnstyledInternalLink/index.tsx"),
 				l = n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
 				d = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				m = n("./src/reddit/layout/row/InlineButton/index.tsx"),
@@ -429,8 +429,8 @@
 						props: e
 					} = this, t = e.skipRoleAttr ? null : {
 						role: "menuitem"
-					}, n = Object(r.a)(x.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? c.a.createElement(i.a, b({}, t, {
+					}, n = Object(i.a)(x.a.iconWrapper, e.iconWrapperClassName);
+					return e.href ? c.a.createElement(r.a, b({}, t, {
 						id: e.id,
 						className: e.className,
 						onBlur: e.onBlur,
@@ -443,7 +443,7 @@
 					}), e.children && c.a.createElement("span", {
 						className: n
 					}, e.children), c.a.createElement("span", {
-						className: Object(r.a)(x.a.text, e.textClassName)
+						className: Object(i.a)(x.a.text, e.textClassName)
 					}, e.displayText)) : c.a.createElement(m.a, b({}, t, {
 						id: e.id,
 						className: e.className,
@@ -455,7 +455,7 @@
 					}), e.children && (e.noIcon ? c.a.createElement("div", null, e.children) : c.a.createElement("span", {
 						className: n
 					}, e.children)), e.displayText && c.a.createElement("span", {
-						className: Object(r.a)(x.a.text, e.textClassName)
+						className: Object(i.a)(x.a.text, e.textClassName)
 					}, e.displayText), e.showSelectedCheckmark && e.isSelected && c.a.createElement(d.a, {
 						className: x.a.checkmark
 					}), e.showDropdownTriangle && c.a.createElement(l.a, {
@@ -467,7 +467,7 @@
 				className: e,
 				...t
 			}) => {
-				const n = Object(r.a)(x.a.row, e, {
+				const n = Object(i.a)(x.a.row, e, {
 					[x.a.mIsInteractive]: !t.noHover,
 					[x.a.mIsSelected]: t.isSelected,
 					[x.a.topics]: t.isTopicsStyle
@@ -510,8 +510,8 @@
 				o = n.n(s),
 				a = n("./src/reddit/controls/DropdownSelector/index.m.less"),
 				c = n.n(a),
-				r = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				i = n("./src/lib/classNames/index.ts"),
+				r = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				l = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				d = n("./src/reddit/icons/fonts/index.tsx");
 			const m = e => {
@@ -582,9 +582,9 @@
 						showSelectedCheckmark: t,
 						isTopicsStyle: n
 					} = this.props;
-					return e.map((e, s) => o.a.createElement(i.b, {
+					return e.map((e, s) => o.a.createElement(r.b, {
 						key: s + e.displayText,
-						className: Object(r.a)(c.a.menuOption, {
+						className: Object(i.a)(c.a.menuOption, {
 							[c.a.topics]: n
 						}),
 						noIcon: !0,
@@ -603,7 +603,7 @@
 						displayText: n,
 						isCompactStyle: s,
 						isTopicsStyle: a,
-						menuItemsClassName: i,
+						menuItemsClassName: r,
 						name: u,
 						isSaving: p
 					} = this.props, {
@@ -612,12 +612,12 @@
 					return o.a.createElement("div", {
 						ref: this.containerRef,
 						id: this.props.id,
-						className: Object(r.a)(c.a.dropdownMenu, t, {
+						className: Object(i.a)(c.a.dropdownMenu, t, {
 							[c.a.topics]: a
 						})
 					}, o.a.createElement("button", {
 						onClick: this.handleDropdownClick,
-						className: Object(r.a)(e, c.a.selector, {
+						className: Object(i.a)(e, c.a.selector, {
 							[c.a.compact]: s
 						}, {
 							[c.a.topics]: a
@@ -636,7 +636,7 @@
 					}) : o.a.createElement(d.a, {
 						name: "caret_down"
 					})), o.a.createElement("div", {
-						className: Object(r.a)(c.a.menuItems, i, {
+						className: Object(i.a)(c.a.menuItems, r, {
 							[c.a.topics]: a
 						}),
 						onMouseDown: m,
@@ -724,9 +724,9 @@
 		"./src/reddit/helpers/trackers/givePremium.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "clickGivePremiumEvent", (function() {
-				return r
-			})), n.d(t, "viewGivePremiumModalEvent", (function() {
 				return i
+			})), n.d(t, "viewGivePremiumModalEvent", (function() {
+				return r
 			})), n.d(t, "selectPremiumPackageEvent", (function() {
 				return l
 			})), n.d(t, "triggerAnonymousEvent", (function() {
@@ -749,13 +749,13 @@
 					screen: s.screen(e),
 					subreddit: s.subreddit(e)
 				}),
-				r = () => e => ({
+				i = () => e => ({
 					...c(e),
 					source: "profile",
 					action: "click",
 					noun: "give_premium"
 				}),
-				i = () => e => ({
+				r = () => e => ({
 					...c(e),
 					source: "give_premium",
 					action: "view",
@@ -810,11 +810,11 @@
 				o = n.n(s),
 				a = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/constants/colors.ts"),
-				r = n("./src/reddit/icons/fonts/helpers.tsx"),
-				i = n("./src/reddit/icons/fonts/Coin/index.m.less"),
-				l = n.n(i);
+				i = n("./src/reddit/icons/fonts/helpers.tsx"),
+				r = n("./src/reddit/icons/fonts/Coin/index.m.less"),
+				l = n.n(r);
 			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
-				className: Object(a.a)(e.className, Object(r.b)("coins", e.isFilled)),
+				className: Object(a.a)(e.className, Object(i.b)("coins", e.isFilled)),
 				style: {
 					color: e.fillColor || c.b.gold
 				}
@@ -845,4 +845,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.0bbb4650736493decb2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.4ba36eec3cf5d219ac58.js.map
