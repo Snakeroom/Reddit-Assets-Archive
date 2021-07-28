@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d83baf77f8bf36790f61.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2cefe94e6120666e3ebc.js
+// Retrieved at 7/28/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -7593,7 +7593,7 @@
 						className: Ue.a.Title
 					}, l), a.a.createElement("span", {
 						className: Ue.a.SubTitle
-					}, i)), t && a.a.createElement(je, {
+					}, i)), a.a.createElement(je, {
 						channelId: t,
 						toggleChannelNameInput: O,
 						showMenu: !!o,
@@ -14370,4 +14370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.d83baf77f8bf36790f61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.2cefe94e6120666e3ebc.js.map
