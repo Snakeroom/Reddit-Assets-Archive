@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4fb810ed3a3fa0498540.js
-// Retrieved at 7/28/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a7784c7cacbd350f5c6b.js
+// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, a) {
@@ -1847,7 +1847,7 @@
 					to: `${v.a}/${t}`
 				}, n.a.createElement(m.q, {
 					onClick: () => {
-						a ? I && _ === b.a.notVoted && E(Object(d.bb)(I)) : w()
+						a ? I && _ === b.a.notVoted && (f(u.c), E(Object(d.bb)(I))) : w()
 					},
 					className: Object(r.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
 						[x.a.avatarPostifyButton]: a
@@ -2680,4 +2680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4fb810ed3a3fa0498540.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a7784c7cacbd350f5c6b.js.map

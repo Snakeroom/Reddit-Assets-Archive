@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.bc9773c9c585af686a86.js
-// Retrieved at 7/28/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.0cc0c8b077cdcee70e63.js
+// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3007,7 +3007,7 @@
 				l = n("./src/reddit/selectors/user.ts");
 			const d = () => async (e, t) => {
 				const n = t();
-				Object(s.a)(Object(c.c)(n)), e(Object(a.r)({
+				Object(s.a)(Object(c.d)(n)), e(Object(a.r)({
 					forceFetch: !0
 				})), await e(Object(r.g)(i.a.SNOOVATAR_MODAL))
 			}, u = e => async (t, n) => {
@@ -7109,7 +7109,7 @@
 					b = () => s(Object(hi.b)("nav")),
 					h = Object(p.e)(Ni.i).startsWith("en");
 				if ((null === (n = null == a ? void 0 : a.meta) || void 0 === n ? void 0 : n.name) === y.Jb.AVATAR) return null;
-				!d && l && s(Object(bi.a)()), u && r(ki.d);
+				!d && l && s(Object(bi.a)()), u && r(ki.e);
 				const f = i && i.snoovatarFullBodyAsset ? o.fbt._("Style Avatar", null, {
 					hk: "1HIsKA"
 				}) : o.fbt._("Create Avatar", null, {
@@ -19295,4 +19295,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bc9773c9c585af686a86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0cc0c8b077cdcee70e63.js.map

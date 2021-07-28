@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b6015bff6253e192c339.js
-// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.6aef64b40d011ba489e4.js
+// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -1991,12 +1991,14 @@
 				return i
 			})), r.d(t, "b", (function() {
 				return d
-			})), r.d(t, "e", (function() {
-				return l
 			})), r.d(t, "c", (function() {
+				return l
+			})), r.d(t, "f", (function() {
 				return u
 			})), r.d(t, "d", (function() {
 				return m
+			})), r.d(t, "e", (function() {
+				return p
 			}));
 			var n = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				s = r("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2034,6 +2036,13 @@
 				},
 				l = e => ({
 					...o.defaults(e),
+					source: "avatar",
+					action: "click",
+					noun: "try_this_look_post",
+					snoovatar: o.snoovatarActiveForBuilderEvent(e)
+				}),
+				u = e => ({
+					...o.defaults(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2042,14 +2051,14 @@
 					},
 					snoovatar: o.snoovatarActiveForBuilderEvent(e)
 				}),
-				u = e => ({
+				m = e => ({
 					...o.defaults(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
 					snoovatar: o.snoovatarActiveForBuilderEvent(e)
 				}),
-				m = e => ({
+				p = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
@@ -3180,4 +3189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b6015bff6253e192c339.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.6aef64b40d011ba489e4.js.map

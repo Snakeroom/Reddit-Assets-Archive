@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e1f068b1f39bd0b2f5eb.js
-// Retrieved at 7/28/2021, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d382dc2bd8a8a71c3fbe.js
+// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1622,7 +1622,7 @@
 					to: `${x.a}/${t}`
 				}, r.a.createElement(u.q, {
 					onClick: () => {
-						s ? E && O === b.a.notVoted && y(Object(d.bb)(E)) : g()
+						s ? E && O === b.a.notVoted && (h(m.c), y(Object(d.bb)(E))) : g()
 					},
 					className: Object(o.a)(v.a.snoovatarButton, v.a.snoovatarExtraPadding, v.a.compactButtonLayout, {
 						[v.a.avatarPostifyButton]: s
@@ -2311,4 +2311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e1f068b1f39bd0b2f5eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d382dc2bd8a8a71c3fbe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5081873176275809bcfc.js
-// Retrieved at 7/28/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8b77a69e289a5478a73a.js
+// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -204,7 +204,7 @@
 				d = r("./src/reddit/selectors/user.ts");
 			const l = () => async (e, t) => {
 				const r = t();
-				Object(n.a)(Object(c.c)(r)), e(Object(o.r)({
+				Object(n.a)(Object(c.d)(r)), e(Object(o.r)({
 					forceFetch: !0
 				})), await e(Object(a.g)(i.a.SNOOVATAR_MODAL))
 			}, m = e => async (t, r) => {
@@ -1655,7 +1655,7 @@
 					to: `${b.a}/${t}`
 				}, a.a.createElement(m.q, {
 					onClick: () => {
-						r ? I && _ === f.a.notVoted && v(Object(d.bb)(I)) : O()
+						r ? I && _ === f.a.notVoted && (x(u.c), v(Object(d.bb)(I))) : O()
 					},
 					className: Object(n.a)(h.a.snoovatarButton, h.a.snoovatarExtraPadding, h.a.compactButtonLayout, {
 						[h.a.avatarPostifyButton]: r
@@ -3046,4 +3046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5081873176275809bcfc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8b77a69e289a5478a73a.js.map

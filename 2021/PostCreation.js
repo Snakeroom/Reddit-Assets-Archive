@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6062a52358b733ca1149.js
-// Retrieved at 7/28/2021, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.77c8742a49db1581c2df.js
+// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -22077,12 +22077,14 @@
 				return c
 			})), n.d(t, "b", (function() {
 				return d
-			})), n.d(t, "e", (function() {
-				return l
 			})), n.d(t, "c", (function() {
+				return l
+			})), n.d(t, "f", (function() {
 				return u
 			})), n.d(t, "d", (function() {
 				return p
+			})), n.d(t, "e", (function() {
+				return m
 			}));
 			var o = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -22120,6 +22122,13 @@
 				},
 				l = e => ({
 					...s.defaults(e),
+					source: "avatar",
+					action: "click",
+					noun: "try_this_look_post",
+					snoovatar: s.snoovatarActiveForBuilderEvent(e)
+				}),
+				u = e => ({
+					...s.defaults(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -22128,14 +22137,14 @@
 					},
 					snoovatar: s.snoovatarActiveForBuilderEvent(e)
 				}),
-				u = e => ({
+				p = e => ({
 					...s.defaults(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
 					snoovatar: s.snoovatarActiveForBuilderEvent(e)
 				}),
-				p = e => ({
+				m = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
@@ -30440,4 +30449,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6062a52358b733ca1149.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.77c8742a49db1581c2df.js.map

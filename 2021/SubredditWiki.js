@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.307dfad38a000b0b749a.js
-// Retrieved at 7/28/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.88afdc3850f7cfa19eab.js
+// Retrieved at 7/28/2021, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
@@ -2153,7 +2153,7 @@
 					to: `${h.a}/${t}`
 				}, r.a.createElement(u.q, {
 					onClick: () => {
-						s ? v && E === b.a.notVoted && k(Object(c.bb)(v)) : y()
+						s ? v && E === b.a.notVoted && (g(m.c), k(Object(c.bb)(v))) : y()
 					},
 					className: Object(n.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
 						[x.a.avatarPostifyButton]: s
@@ -7767,4 +7767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.307dfad38a000b0b749a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.88afdc3850f7cfa19eab.js.map
