@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8288dc02733292dbe19a.js
-// Retrieved at 7/27/2021, 6:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.1156882c89ac0ed1a651.js
+// Retrieved at 7/28/2021, 9:20:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, i = o[0], s = o[1], c = o[2], l = 0, P = []; l < i.length; l++) a = i[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1263,16 +1263,16 @@
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
 						"reddit-components-CoinPurchaseDropdown": "57a39a6b1369c765b6ba",
 						"reddit-components-Econ-Prediction-EndTimeModal": "9a0d957ee1a70d3bd1a9",
-						"translations/de_DE-json": "8f238fefd82c19374bc9",
-						"translations/es_ES-json": "7cf5361c6fd2b200b400",
-						"translations/es_MX-json": "f3b5e5e830c90c6c40a6",
-						"translations/fr_FR-json": "b65869b915e7ed97e320",
-						"translations/it_IT-json": "d49f3db0ea6948e7bf6f",
-						"translations/pseudo_ext-json": "72842e4cb28f6925eead",
-						"translations/pseudo_long-json": "491025b7091c1ec13f43",
-						"translations/pseudo_short-json": "d85bc0ef9ca9aa23d8c7",
-						"translations/pt_BR-json": "9c09856c257af7c23f4f",
-						"translations/pt_PT-json": "467d4cc53dd2ba98a435",
+						"translations/de_DE-json": "5ea080659fb9ca8701fd",
+						"translations/es_ES-json": "21bdf45c0611c15ebc65",
+						"translations/es_MX-json": "a766d9e55312d54c67bc",
+						"translations/fr_FR-json": "1861f17143153676482e",
+						"translations/it_IT-json": "91682552684c5139ba6d",
+						"translations/pseudo_ext-json": "15851cf4cb7767160c71",
+						"translations/pseudo_long-json": "2d70d8a0ddbd44edf7c3",
+						"translations/pseudo_short-json": "ffef6570457c1f9fa5e7",
+						"translations/pt_BR-json": "927739a9b40efbac0820",
+						"translations/pt_PT-json": "3515d7a8c0d350ab5583",
 						"vendors~AdminPanel": "a5bc90ca020df1ed6380",
 						AdminPanel: "afe0642eaa18e0f66ce9",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "d4d1e0ef95d4318ae4e8",
@@ -1516,4 +1516,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8288dc02733292dbe19a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1156882c89ac0ed1a651.js.map
