@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.8efbc6e20d2515d1ce56.js
-// Retrieved at 8/2/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.658d10b4c0855c61cc8d.js
+// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -42,8 +42,8 @@
 				b = s("./src/reddit/helpers/chooseVariant/index.ts");
 			var x = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				C = s("./src/reddit/selectors/moderatorPermissions.ts"),
-				g = s("./src/reddit/selectors/subreddit.ts"),
-				f = s("./src/reddit/selectors/user.ts"),
+				f = s("./src/reddit/selectors/subreddit.ts"),
+				g = s("./src/reddit/selectors/user.ts"),
 				_ = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				O = s("./src/reddit/components/SubredditIcon/index.tsx"),
 				P = s("./src/reddit/controls/Button/index.tsx"),
@@ -70,12 +70,12 @@
 					canFlagAwards: e => Object(b.c)(e, {
 						experimentEligibilitySelector: b.a,
 						experimentName: w.Kb
-					}) === w.gc.Enabled,
-					currentUser: f.j,
+					}) === w.hc.Enabled,
+					currentUser: g.j,
 					moderatorPermissions: (e, {
 						postOrComment: t
 					}) => {
-						const s = Object(g.I)(e, {
+						const s = Object(f.I)(e, {
 							thingId: t.id
 						});
 						return s ? Object(C.l)(e, {
@@ -84,7 +84,7 @@
 					},
 					subreddit: (e, {
 						postOrComment: t
-					}) => Object(g.I)(e, {
+					}) => Object(f.I)(e, {
 						thingId: t.id
 					}),
 					awardIcon: (e, {
@@ -285,7 +285,7 @@
 							return "top"
 					}
 				},
-				g = Object(l.a)(e => {
+				f = Object(l.a)(e => {
 					const {
 						children: t,
 						className: s,
@@ -309,13 +309,13 @@
 						}
 					}, d), t)
 				}),
-				f = Object(i.c)({
+				g = Object(i.c)({
 					isOpen: (e, {
 						tooltipId: t
 					}) => Object(u.b)(t)(e)
 				}),
-				_ = Object(d.a)(g, [r.a.Click, r.a.Keydown]),
-				O = Object(n.b)(f);
+				_ = Object(d.a)(f, [r.a.Click, r.a.Keydown]),
+				O = Object(n.b)(g);
 			class P extends a.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.8efbc6e20d2515d1ce56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.658d10b4c0855c61cc8d.js.map
