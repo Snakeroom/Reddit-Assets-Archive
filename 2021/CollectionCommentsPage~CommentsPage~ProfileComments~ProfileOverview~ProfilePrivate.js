@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.611528152c070ac66ed1.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.3dc374c8ddafd7d7236e.js
+// Retrieved at 8/2/2021, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -795,11 +795,11 @@
 					style: l,
 					collapsed: u
 				} = e;
-				return u && o && a.a.createElement("p", {
+				return u && o ? a.a.createElement("p", {
 					className: Object(c.a)(p.a.commentAuthorLink, t)
 				}, s.fbt._("Blocked account", null, {
 					hk: "2KVMxM"
-				})), a.a.createElement(m.a, {
+				})) : a.a.createElement(m.a, {
 					className: Object(c.a)(p.a.commentAuthorLink, t),
 					author: n.author,
 					isCommentAuthorBlocked: o,
@@ -3048,4 +3048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.611528152c070ac66ed1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.3dc374c8ddafd7d7236e.js.map

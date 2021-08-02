@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f203a9b62cdf34389738.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.e51c849d3a046ab71835.js
+// Retrieved at 8/2/2021, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1104,11 +1104,11 @@
 					style: l,
 					collapsed: u
 				} = e;
-				return u && r && o.a.createElement("p", {
+				return u && r ? o.a.createElement("p", {
 					className: Object(d.a)(h.a.commentAuthorLink, t)
 				}, n.fbt._("Blocked account", null, {
 					hk: "2KVMxM"
-				})), o.a.createElement(m.a, {
+				})) : o.a.createElement(m.a, {
 					className: Object(d.a)(h.a.commentAuthorLink, t),
 					author: s.author,
 					isCommentAuthorBlocked: r,
@@ -6239,4 +6239,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f203a9b62cdf34389738.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.e51c849d3a046ab71835.js.map

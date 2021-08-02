@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.e404b642a47ac367005f.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.eee6d33953d780f25e3e.js
+// Retrieved at 8/2/2021, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -216,11 +216,11 @@
 					style: l,
 					collapsed: u
 				} = e;
-				return u && o && a.a.createElement("p", {
+				return u && o ? a.a.createElement("p", {
 					className: Object(c.a)(p.a.commentAuthorLink, t)
 				}, s.fbt._("Blocked account", null, {
 					hk: "2KVMxM"
-				})), a.a.createElement(m.a, {
+				})) : a.a.createElement(m.a, {
 					className: Object(c.a)(p.a.commentAuthorLink, t),
 					author: n.author,
 					isCommentAuthorBlocked: o,
@@ -3479,4 +3479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.e404b642a47ac367005f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.eee6d33953d780f25e3e.js.map

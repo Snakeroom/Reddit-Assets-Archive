@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.efd132c86b60753197da.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b7d020777a8ca2677e62.js
+// Retrieved at 8/2/2021, 3:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -2640,11 +2640,11 @@
 					style: c,
 					collapsed: u
 				} = e;
-				return u && a && o.a.createElement("p", {
+				return u && a ? o.a.createElement("p", {
 					className: Object(d.a)(p.a.commentAuthorLink, t)
 				}, n.fbt._("Blocked account", null, {
 					hk: "2KVMxM"
-				})), o.a.createElement(m.a, {
+				})) : o.a.createElement(m.a, {
 					className: Object(d.a)(p.a.commentAuthorLink, t),
 					author: s.author,
 					isCommentAuthorBlocked: a,
@@ -22890,4 +22890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.efd132c86b60753197da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b7d020777a8ca2677e62.js.map
