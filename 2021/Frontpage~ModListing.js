@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.a112604acf70f81a7c30.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f4d02f9050008892e50d.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -645,11 +645,11 @@
 				A = Object(w.a)(D.a.wrapped(C.a, "Dropdown", T.a)),
 				B = D.a.wrapped(P.a, "ListingSortIcon", T.a),
 				Y = (D.a.wrapped(x.b, "DropdownTriangle", T.a), D.a.div("Title", T.a)),
-				H = D.a.wrapped(e => r.a.createElement(v.b, R({}, e, {
+				F = D.a.wrapped(e => r.a.createElement(v.b, R({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", T.a),
-				F = ({
+				H = ({
 					disabled: e,
 					...t
 				}) => r.a.createElement("div", R({}, t, {
@@ -683,9 +683,9 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(Y, null, y.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), r.a.createElement(F, {
+				})), r.a.createElement(H, {
 					disabled: e.disabled
-				}, e.children || r.a.createElement(H, {
+				}, e.children || r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: Object(S.a)(e.sort),
 					id: e.dropdownId || U,
@@ -932,10 +932,10 @@
 				return r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(F, {
+				}, r.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, r.a.createElement(H, {
+				}, r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : z(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -1101,10 +1101,10 @@
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(i.a)(ue.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(me) : e.onOpenDropdown(me)
-					}, r.a.createElement(F, {
+					}, r.a.createElement(H, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, r.a.createElement(H, {
+					}, r.a.createElement(F, {
 						className: e.buttonClassName,
 						displayText: (() => t in ce ? ce[t]() : ce[b.y.Everywhere]())(),
 						id: me,
@@ -1171,10 +1171,10 @@
 				}))(Object(c.c)(e => r.a.createElement(Oe, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, r.a.createElement(F, {
+				}, r.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, r.a.createElement(H, {
+				}, r.a.createElement(F, {
 					className: e.buttonClassName,
 					displayText: Object(S.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1229,7 +1229,7 @@
 						locale: i
 					}
 				});
-			class He extends r.a.Component {
+			class Fe extends r.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(k.a)(e))
@@ -1340,7 +1340,7 @@
 					}))))
 				}
 			}
-			var Fe = Be(Object(o.b)(Ye)(Object(c.c)(He))),
+			var He = Be(Object(o.b)(Ye)(Object(c.c)(Fe))),
 				Me = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ve = s.n(Me);
 			const Ke = Object(l.t)({
@@ -1391,7 +1391,7 @@
 						className: Object(i.a)(Ve.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, r.a.createElement(Fe, {
+					}, r.a.createElement(He, {
 						baseUrl: e,
 						disabled: n,
 						geopopularSort: s,
@@ -1512,15 +1512,15 @@
 				A = s("./src/telemetry/index.ts"),
 				B = s("./src/telemetry/models/Timer.ts"),
 				Y = s("./src/reddit/components/PostList/index.m.less"),
-				H = s.n(Y);
+				F = s.n(Y);
 			const {
-				fbt: F
+				fbt: H
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = 500, V = new U.a(M), K = new U.a(M), G = new U.a(M), W = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5
-			}, q = w.a.div("SeeMore", H.a), z = w.a.wrapped(L.a, "ArrowRight", H.a), Q = (e, t, s, n, r, o, i, a, d) => {
+			}, q = w.a.div("SeeMore", F.a), z = w.a.wrapped(L.a, "ArrowRight", F.a), Q = (e, t, s, n, r, o, i, a, d) => {
 				const c = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
 				let l = V.get(c);
 				return void 0 === l && (l = () => {
@@ -1739,14 +1739,14 @@
 						this.props.listingBelowVariant && g && (A += `--${g}`);
 						const B = Q(e, n, s, g, y, S, this.props, t, this.props.hostPostData),
 							Y = J(e, n, this.props, t, w),
-							H = Z(e, this.props, d),
-							F = R.media && R.media.type === T.o.EMBED ? R.media.provider : null,
+							F = Z(e, this.props, d),
+							H = R.media && R.media.type === T.o.EMBED ? R.media.provider : null,
 							M = p && !D.isSponsored,
 							V = m && !D.isSponsored && !D.isScoreHidden;
 						I = {
 							estHeight: Object(P.c)(D, n),
 							id: e,
-							isFocusable: !(!R.media || !(n === E.g.Large || n === E.g.Classic && Object(T.G)(R.media))) && (T.d.has(R.media.type) && (!F || !T.s.has(F)) && !R.isSpoiler && !R.isNSFW),
+							isFocusable: !(!R.media || !(n === E.g.Large || n === E.g.Classic && Object(T.G)(R.media))) && (T.d.has(R.media.type) && (!H || !T.s.has(H)) && !R.isSpoiler && !R.isNSFW),
 							trackOnEnteredViewport: B,
 							trackOnExitedViewport: Y,
 							render: ({
@@ -1780,7 +1780,7 @@
 								listingName: y,
 								pageLayer: w,
 								last: s,
-								onClickPost: H,
+								onClickPost: F,
 								onSizeChanged: f,
 								postId: e,
 								postIds: k,
@@ -1813,7 +1813,7 @@
 					if (s) return;
 					const i = o;
 					return u.a.createElement("div", {
-						className: H.a.placeholder
+						className: F.a.placeholder
 					}, u.a.createElement(i, {
 						className: t,
 						isLoading: !e,
@@ -1833,7 +1833,7 @@
 						onLoadMore: o
 					} = this.props;
 					if (!s) return u.a.createElement("div", {
-						className: H.a.placeholder
+						className: F.a.placeholder
 					}, u.a.createElement(C.a, {
 						className: r,
 						isLoading: !!t,
@@ -1867,7 +1867,7 @@
 						w = y || o;
 					return u.a.createElement(l.Fragment, null, u.a.createElement(O.b, {
 						innerRef: this.updateScrollerRef,
-						className: w ? H.a.truncatedPostList : Object(g.a)(H.a.postList, this.props.className),
+						className: w ? F.a.truncatedPostList : Object(g.a)(F.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -1883,13 +1883,13 @@
 						trackingName: h,
 						viewportTopPadding: x.f
 					}, m), y && u.a.createElement(q, {
-						className: H.a.seeMoreButton
+						className: F.a.seeMoreButton
 					}, u.a.createElement(j.a, {
-						className: H.a.seeMorePostsText,
+						className: F.a.seeMorePostsText,
 						to: Object(b.a)(y, {
 							type: f.Vb.Posts
 						})
-					}, F._("See More Posts", null, {
+					}, H._("See More Posts", null, {
 						hk: "3o0CqI"
 					}), u.a.createElement(z, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
@@ -2001,7 +2001,7 @@
 								subredditId: t
 							})
 						}
-						return Object(_.D)(e, t, s, r)
+						return Object(_.C)(e, t, s, r)
 					}),
 					subredditsById: C.Z,
 					viewportDataLoaded: v.a,
@@ -2360,13 +2360,13 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: n.Ob
 					});
-					return !(!t || Object(n.ae)(t))
+					return !(!t || Object(n.be)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
 						experimentName: n.Ob
-					}) === n.gc.ListingEnabled
+					}) === n.hc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2432,10 +2432,10 @@
 					return t !== a && t !== i && (!(i + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const n = s[t - 1],
 							r = s[t],
-							i = r && Object(o.G)(e, {
+							i = r && Object(o.F)(e, {
 								postId: n
 							}) || null,
-							a = r && Object(o.G)(e, {
+							a = r && Object(o.F)(e, {
 								postId: r
 							}) || null;
 						return i && i.isSponsored || a && a.isSponsored
@@ -2448,7 +2448,7 @@
 				}) => {
 					const n = t.slice().sort();
 					let r = -1;
-					const i = Object(o.z)(e, {
+					const i = Object(o.y)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -2476,8 +2476,8 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"ab012381577a"}')
+			e.exports = JSON.parse('{"id":"12994770759e"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.a112604acf70f81a7c30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.f4d02f9050008892e50d.js.map

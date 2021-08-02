@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0c43ca017c6b18f059b5.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.46839b6fa1c6c6a5a227.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -215,7 +215,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const o = Object($.G)(p(), {
+						const o = Object($.F)(p(), {
 							postId: e
 						});
 						u(Object(m.x)(o, O.a.CommentSubmitted))
@@ -1472,7 +1472,7 @@
 								experimentName: s.B,
 								expEventOverride: t
 							});
-							return !!(Object(s.ae)(n) ? void 0 : n)
+							return !!(Object(s.be)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2503,7 +2503,7 @@
 					const n = Object(b.a)(e, {
 						commentId: t
 					});
-					return n ? Object(c.a)(Object(m.F)(e, n), t) : ""
+					return n ? Object(c.a)(Object(m.E)(e, n), t) : ""
 				},
 				D = (e, {
 					commentId: t
@@ -2634,14 +2634,14 @@
 			const s = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Zc
-					}) === r.jd.Enabled
+						experimentName: r.ad
+					}) === r.kd.Enabled
 				},
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Yc
-					}) === r.id.Enabled
+						experimentName: r.Zc
+					}) === r.jd.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -2727,4 +2727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0c43ca017c6b18f059b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.46839b6fa1c6c6a5a227.js.map

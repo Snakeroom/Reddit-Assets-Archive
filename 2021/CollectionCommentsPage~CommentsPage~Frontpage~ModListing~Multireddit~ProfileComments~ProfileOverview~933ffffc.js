@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.6639ea6decf73105e904.js
-// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.1cb10f0e5a4ba1fe4306.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -1711,7 +1711,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && r.a.createElement("span", {
 						className: s
 					}, e.children), r.a.createElement("span", {
@@ -1719,6 +1720,7 @@
 					}, e.displayText)) : r.a.createElement(h.a, g({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -2111,4 +2113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.6639ea6decf73105e904.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc.1cb10f0e5a4ba1fe4306.js.map

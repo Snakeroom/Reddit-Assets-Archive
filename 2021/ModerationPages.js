@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.629ceb2022033aa43283.js
-// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.cb332076c46dbb3e9727.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -5920,8 +5920,8 @@
 					activeModalId: C.a,
 					crosspost: y.d,
 					flairStyleTemplate: se.T,
-					isActive: y.k,
-					isExpanded: y.m,
+					isActive: y.j,
+					isExpanded: y.l,
 					showPromotedCTA: be.a,
 					layout: se.P,
 					moderatorPermissions: _.k,
@@ -12985,7 +12985,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(b.j)(e, {
+					}) => Object(b.i)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(g.actionInfo)(e).pageType
@@ -18319,10 +18319,10 @@
 					autoplayPref: f.b,
 					activeModalId: m.a,
 					crosspost: b.d,
-					isActive: b.k,
+					isActive: b.j,
 					isChatPost: u.d,
-					isCurrentUserProfilePost: b.l,
-					isExpanded: b.m,
+					isCurrentUserProfilePost: b.k,
+					isExpanded: b.l,
 					isLoggedIn: f.J,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.k,
@@ -22711,9 +22711,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.cc
+					experimentName: n.dc
 				});
-				return !(!t || Object(n.ae)(t))
+				return !(!t || Object(n.be)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22726,9 +22726,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.ad,
+				experimentName: a.bd,
 				experimentEligibilitySelector: o.a
-			}), r.G, (e, t) => e === a.kd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.F, (e, t) => e === a.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22864,4 +22864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.629ceb2022033aa43283.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cb332076c46dbb3e9727.js.map

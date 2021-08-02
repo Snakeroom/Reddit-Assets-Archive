@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.8dd93fc7753d14ec1ef7.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.947d6f9847d955cf0563.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
@@ -566,11 +566,11 @@
 					experimentName: se.Y,
 					experimentEligibilitySelector: oe
 				}), ie.a),
-				de = Object(o.a)(ae, e => e === se.sc.ToolTip_nonSub),
-				ce = Object(o.a)(ae, e => e === se.sc.ToolTip_2ndVisit),
-				le = Object(o.a)(ae, e => e === se.sc.ToolTip_3rdVisit),
-				ue = Object(o.a)(ae, e => e === se.sc.HalfSheet_2ndVisit),
-				me = Object(o.a)(ae, e => e === se.sc.HalfSheet_3rdVisit),
+				de = Object(o.a)(ae, e => e === se.tc.ToolTip_nonSub),
+				ce = Object(o.a)(ae, e => e === se.tc.ToolTip_2ndVisit),
+				le = Object(o.a)(ae, e => e === se.tc.ToolTip_3rdVisit),
+				ue = Object(o.a)(ae, e => e === se.tc.HalfSheet_2ndVisit),
+				me = Object(o.a)(ae, e => e === se.tc.HalfSheet_3rdVisit),
 				pe = Object(o.a)(ue, me, ce, le, de, (e, t, s, n, i) => e || t || s || n || i);
 			var be = e => {
 					const t = Object(r.d)(),
@@ -1661,10 +1661,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(o.b)(() => Object(d.a)(v.F, y.bb, (e, {
+				P = Object(o.b)(() => Object(d.a)(v.E, y.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, k.a, E.actionInfo, v.G, (e, t, s, n, i, r) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, k.a, E.actionInfo, v.F, (e, t, s, n, i, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -4097,12 +4097,12 @@
 						rtJsonElementProps: r
 					});
 					switch (n) {
-						case h.Kd.SmIcon:
+						case h.Ld.SmIcon:
 							return i.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: r
 							});
-						case h.Kd.SmIconHc:
+						case h.Ld.SmIconHc:
 							return i.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4189,7 +4189,7 @@
 			const {
 				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = e => e.type === V.f.Nsfw || e.type === V.f.Spoiler, Y = Object(c.c)({
-				post: R.G,
+				post: R.F,
 				subredditOrProfile: R.S
 			});
 			class Z extends a.a.PureComponent {
@@ -4268,7 +4268,7 @@
 				$ = s.n(Q);
 			const {
 				fbt: ee
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(R.M, e => e.filter(e => !e.isSponsored)), ie = Object(c.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(R.L, e => e.filter(e => !e.isSponsored)), ie = Object(c.c)({
 				posts: (e, t) => ne(e, {
 					...t
 				})
@@ -4384,7 +4384,7 @@
 					listingKey: ge,
 					posts: (e, t) => {
 						const s = ge(e, t);
-						return Object(R.M)(e, {
+						return Object(R.L)(e, {
 							listingKey: s
 						})
 					},
@@ -4704,7 +4704,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(lt.c)(e, t),
-					isPredictionsLeaderboardsEnabled: ut.o,
+					isPredictionsLeaderboardsEnabled: ut.p,
 					showGovernance: at.d.spPoints,
 					showLeaderboard: at.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -7042,7 +7042,7 @@
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: c.T,
 				hideNSFWPref: b.B,
-				isActive: p.k,
+				isActive: p.j,
 				moderatorPermissions: u.k,
 				modModeEnabled: c.R,
 				showEditFlair: m.a
@@ -7739,12 +7739,12 @@
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Dd
+						experimentName: n.Ed
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Kd.SmIcon || t === n.Kd.SmIconHc
+					return t === n.Ld.SmIcon || t === n.Ld.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -7767,4 +7767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8dd93fc7753d14ec1ef7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.947d6f9847d955cf0563.js.map

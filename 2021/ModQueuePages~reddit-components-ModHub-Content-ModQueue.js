@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8697ed01d41dbb9a4da8.js
-// Retrieved at 7/27/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.ef058c9d192fda4eda4a.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -356,8 +356,8 @@
 				X = s("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
 				K = s.n(X);
 			const q = Object(m.a)(h.a),
-				J = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
-				G = "MODQ--POST_TYPE_FILTER_DROPDOWN",
+				G = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
+				J = "MODQ--POST_TYPE_FILTER_DROPDOWN",
 				z = p.a.wrapped(x.a, "Inline", K.a),
 				Z = p.a.div("Filter", K.a),
 				Y = p.a.wrapped(b.a, "LayoutSwitch", K.a),
@@ -386,8 +386,8 @@
 					}
 				},
 				ee = Object(l.c)({
-					isPostTypeFilterDropdownOpen: Object(C.b)(G),
-					isSubredditFilterDropdownOpen: Object(C.b)(J),
+					isPostTypeFilterDropdownOpen: Object(C.b)(J),
+					isSubredditFilterDropdownOpen: Object(C.b)(G),
 					profile: (e, {
 						profileName: t
 					}) => t ? Object(f.j)(e, {
@@ -408,9 +408,9 @@
 			class se extends a.a.Component {
 				constructor() {
 					super(...arguments), this.onOpenSubredditFilterDropdown = () => {
-						this.props.loadAllSubreddits(), this.props.onOpenDropdown(J), this.props.sendEventWithName("subreddit")
+						this.props.loadAllSubreddits(), this.props.onOpenDropdown(G), this.props.sendEventWithName("subreddit")
 					}, this.onOpenPostTypeFilterDropdown = () => {
-						this.props.onOpenDropdown(G), this.props.sendEventWithName("content_type")
+						this.props.onOpenDropdown(J), this.props.sendEventWithName("content_type")
 					}
 				}
 				render() {
@@ -422,13 +422,13 @@
 						hk: "2BGBVi"
 					});
 					return a.a.createElement(z, null, !e.hideSubredditFilter && a.a.createElement(a.a.Fragment, null, a.a.createElement(Z, {
-						id: J,
+						id: G,
 						onClick: this.onOpenSubredditFilterDropdown
 					}, t, a.a.createElement(g.a, {
 						name: "caret_down"
 					})), a.a.createElement(q, {
 						isOpen: e.isSubredditFilterDropdownOpen,
-						tooltipId: J
+						tooltipId: G
 					}, a.a.createElement(H, {
 						profileName: e.profileName,
 						subredditName: e.subredditName
@@ -437,13 +437,13 @@
 							[K.a.filterMargin]: !e.hideSubredditFilter
 						})
 					}, a.a.createElement(Z, {
-						id: G,
+						id: J,
 						onClick: this.onOpenPostTypeFilterDropdown
 					}, s, a.a.createElement(g.a, {
 						name: "caret_down"
 					})), a.a.createElement(q, {
 						isOpen: e.isPostTypeFilterDropdownOpen,
-						tooltipId: G
+						tooltipId: J
 					}, a.a.createElement(L, {
 						postTypeFilter: e.postTypeFilter,
 						sendEventWithName: e.sendEventWithName
@@ -571,8 +571,8 @@
 			const X = p.a.div("LeftRail", H.a),
 				K = p.a.wrapped(V.a, "BulkActionCheckbox", H.a),
 				q = p.a.wrapped(N.a, "UnthreadedCommentContainer", H.a),
-				J = p.a.div("CommentColumn", H.a),
-				G = p.a.div("VoteColumn", H.a),
+				G = p.a.div("CommentColumn", H.a),
+				J = p.a.div("VoteColumn", H.a),
 				z = p.a.wrapped(w.a, "ModToolsFlatlist", H.a),
 				Z = p.a.wrapped(D.a, "Votes", H.a),
 				Y = p.a.div("CommentContentWrapper", H.a),
@@ -608,12 +608,12 @@
 					}, c && l.a.createElement(K, {
 						isCheckboxSelected: n,
 						toggleCheckbox: m
-					})), l.a.createElement(G, null, l.a.createElement(Z, {
+					})), l.a.createElement(J, null, l.a.createElement(Z, {
 						compact: !1,
 						model: s,
 						onVoteClick: a,
 						scoreClassName: H.a.score
-					})), l.a.createElement(J, null, l.a.createElement(ee, null, s.postTitle && l.a.createElement($, null, s.postTitle), s.postAuthor && l.a.createElement(M.a, {
+					})), l.a.createElement(G, null, l.a.createElement(ee, null, s.postTitle && l.a.createElement($, null, s.postTitle), s.postAuthor && l.a.createElement(M.a, {
 						comment: s
 					})), l.a.createElement(Y, null, l.a.createElement(F.a, {
 						comment: s
@@ -736,8 +736,8 @@
 				Xe = s("./src/reddit/actions/modal.ts"),
 				Ke = s("./src/reddit/components/PostFlairPicker/index.tsx"),
 				qe = s("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
-				Je = s("./src/reddit/controls/Dropdown/index.tsx"),
-				Ge = s("./src/reddit/controls/Dropdown/Row.tsx"),
+				Ge = s("./src/reddit/controls/Dropdown/index.tsx"),
+				Je = s("./src/reddit/controls/Dropdown/Row.tsx"),
 				ze = s("./src/reddit/helpers/flair.ts"),
 				Ze = s("./src/reddit/selectors/activeModalId.ts"),
 				Ye = s("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -844,10 +844,10 @@
 				bt = s.n(ht);
 			const gt = "BulkAction--BulkItemFilter",
 				xt = "BulkActions--PostFlair--Modal",
-				ft = Object(He.a)(Je.a),
+				ft = Object(He.a)(Ge.a),
 				yt = p.a.div("CheckboxContainer", bt.a),
 				Ct = p.a.wrapped(V.a, "Checkbox", bt.a),
-				Et = p.a.wrapped(e => l.a.createElement(Ge.b, {
+				Et = p.a.wrapped(e => l.a.createElement(Je.b, {
 					className: e.className,
 					displayText: e.displayText,
 					onClick: e.onClick
@@ -860,7 +860,7 @@
 					flairData: $e.d,
 					isApiPending: Ce.a,
 					moderatorPermissions: Ye.l,
-					posts: et.J,
+					posts: et.I,
 					selectedItems: Ce.f
 				}),
 				vt = Object(d.b)(Ot, e => ({
@@ -1473,7 +1473,7 @@
 				MEDIUM: 1,
 				CLASSIC: 3,
 				COMPACT: 5
-			}, q = y.a.div("SeeMore", V.a), J = y.a.wrapped(T.a, "ArrowRight", V.a), G = (e, t, s, o, n, r, a, i, l) => {
+			}, q = y.a.div("SeeMore", V.a), G = y.a.wrapped(T.a, "ArrowRight", V.a), J = (e, t, s, o, n, r, a, i, l) => {
 				const d = `entered-${e}-${t}-${s?`last-${o}-${n}`:""}-${r}`;
 				let c = W.get(d);
 				return void 0 === c && (c = () => {
@@ -1690,7 +1690,7 @@
 						});
 						let B = `post-list-item-[layout: ${o}]-[postId: ${e}]`;
 						this.props.listingBelowVariant && g && (B += `--${g}`);
-						const A = G(e, o, s, g, f, C, this.props, t, this.props.hostPostData),
+						const A = J(e, o, s, g, f, C, this.props, t, this.props.hostPostData),
 							D = z(e, o, this.props, t, y),
 							V = Z(e, this.props, l),
 							Q = R.media && R.media.type === N.o.EMBED ? R.media.provider : null,
@@ -1844,7 +1844,7 @@
 						})
 					}, Q._("See More Posts", null, {
 						hk: "3o0CqI"
-					}), m.a.createElement(J, null))), this.isLoadingMore() && this.renderLoadMore())
+					}), m.a.createElement(G, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
 			$.defaultProps = {
@@ -2109,4 +2109,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.8697ed01d41dbb9a4da8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.ef058c9d192fda4eda4a.js.map

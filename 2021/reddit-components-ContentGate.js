@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.bd4904679d9db3c49d8a.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.a5b3fb1681afba050622.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -195,22 +195,22 @@
 				})),
 				M = n("./src/reddit/models/ContentGate.ts"),
 				N = n("./src/lib/constants/index.ts"),
-				H = n("./src/reddit/selectors/platform.ts"),
-				I = n("./src/reddit/selectors/user.ts");
+				I = n("./src/reddit/selectors/platform.ts"),
+				H = n("./src/reddit/selectors/user.ts");
 			var z = n("./src/reddit/selectors/meta.ts"),
 				G = n("./src/reddit/components/ContentGate/index.m.less"),
 				W = n.n(G);
 			const {
 				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = u.a.wrapped(A, "PrivateKey", W.a), Y = u.a.div("ButtonsContainer", W.a), J = u.a.div("Container", W.a), V = u.a.div("ContainerExp", W.a), Q = u.a.div("Description", W.a), X = u.a.div("PrivateSubredditDetails", W.a), $ = u.a.div("PrivateSubredditDescription", W.a), ee = u.a.h3("PrivateSubredditName", W.a), te = u.a.a("Link", W.a), ne = u.a.wrapped(D.k, "LinkRouterButton", W.a), re = u.a.wrapped(D.j, "LinkButton", W.a), ae = u.a.wrapped(D.n, "SecondaryLinkRouterButton", W.a), oe = u.a.wrapped(D.m, "SecondaryLinkButton", W.a), se = u.a.wrapped(ne, "GoHomeLinkButton", W.a), ie = u.a.wrapped(b.a, "CreateCommunityButton", W.a), le = u.a.img("Image", W.a), ce = u.a.img("ImagePlaceholder", W.a), ue = u.a.wrapped(ne, "LeftLinkRouterButton", W.a), de = u.a.wrapped(re, "LeftLinkButton", W.a), me = u.a.wrapped(oe, "SecondaryLeftLinkButton", W.a), pe = u.a.wrapped(ae, "SecondaryLeftLinkRouterButton", W.a), he = u.a.h3("Title", W.a), be = u.a.div("PageBody", W.a), _e = u.a.div("QuarantineMessageWrapper", W.a), Ee = Object(c.c)({
-				isLoggedIn: I.I,
+				isLoggedIn: H.I,
 				origin: z.j,
-				user: I.j,
+				user: H.j,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(I.J)(e)) return !1;
-					const t = Object(H.d)(e);
+					if (!Object(H.J)(e)) return !1;
+					const t = Object(I.d)(e);
 					if (!t) return !1;
-					const n = Object(I.e)(e, t);
+					const n = Object(H.e)(e, t);
 					if (!n) return !1;
 					if (!n.privateSubreddit) return !1;
 					const {
@@ -551,7 +551,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: h || u,
-				onClick: () => n === d.Hd.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
+				onClick: () => n === d.Id.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
 				onMouseEnter: s,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -587,4 +587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.bd4904679d9db3c49d8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.a5b3fb1681afba050622.js.map

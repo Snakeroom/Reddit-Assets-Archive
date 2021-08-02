@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.263e7e140234ca654ec0.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.c0337fba546578908fe1.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -1190,7 +1190,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && i.a.createElement("span", {
 						className: s
 					}, e.children), i.a.createElement("span", {
@@ -1198,6 +1199,7 @@
 					}, e.displayText)) : i.a.createElement(u.a, f({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -1944,7 +1946,7 @@
 				},
 				j = Object(n.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => u(t.listingName)(e, t), _, h, a.i, (e, t, s, n, r) => {
+				}) => t, (e, t) => u(t.listingName)(e, t), _, h, a.h, (e, t, s, n, r) => {
 					const a = [];
 					if (e) {
 						const t = Object(o.g)(e);
@@ -2009,7 +2011,7 @@
 				L = Object(r.a)(Object(n.a)(I, _, (e, t) => e ? t[e] : void 0)),
 				C = Object(n.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.g)(t) : void 0, I, h, a.i, (e, {
+				}) => t ? Object(o.g)(t) : void 0, I, h, a.h, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: n
@@ -2085,4 +2087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.263e7e140234ca654ec0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.c0337fba546578908fe1.js.map

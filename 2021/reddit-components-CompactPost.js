@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6ffeade351dd452af95a.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f0d0d39ab7d273bb3d99.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -741,7 +741,7 @@
 					let f = null;
 					if (b) f = b.id;
 					else if (Object(o.a)(n)) {
-						const e = Object(m.G)(i, {
+						const e = Object(m.F)(i, {
 							postId: n
 						});
 						e && (f = e.belongsTo.id)
@@ -1570,8 +1570,8 @@
 					activeModalId: x.a,
 					crosspost: C.d,
 					flairStyleTemplate: ne.T,
-					isActive: C.k,
-					isExpanded: C.m,
+					isActive: C.j,
+					isExpanded: C.l,
 					showPromotedCTA: fe.a,
 					layout: ne.P,
 					moderatorPermissions: S.k,
@@ -2801,7 +2801,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(f.j)(e, {
+					}) => Object(f.i)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(E.actionInfo)(e).pageType
@@ -3208,7 +3208,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), a = Object(G.a)(m.kc) === m.oc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(G.a)(m.lc) === m.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(Q, e));
@@ -6268,7 +6268,7 @@
 				}) => {
 					const r = Object(d.c)(e),
 						a = l.find(e => e >= n),
-						c = s ? Object(i.G)(e, {
+						c = s ? Object(i.F)(e, {
 							postId: s
 						}) || Object(o.a)(e, {
 							commentId: s
@@ -6422,9 +6422,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.ad,
+				experimentName: r.bd,
 				experimentEligibilitySelector: o.a
-			}), a.G, (e, t) => e === r.kd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), a.F, (e, t) => e === r.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -6567,4 +6567,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6ffeade351dd452af95a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f0d0d39ab7d273bb3d99.js.map

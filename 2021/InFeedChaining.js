@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.15cc54873e660ee9d563.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.b81d1e0e064372fc2180.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1455,11 +1455,11 @@
 				G = s.n(J),
 				q = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/index.m.less"),
 				Y = s.n(q);
-			const K = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
+			const X = Object(i.a)(e => e.subredditOrProfile, e => e.subscribedProfiles, e => e.subscribedSubreddits, (e, t, s) => {
 				if (!e) return !1;
 				return (Object(h.h)(e) ? t : s).some(t => t.id === e.id)
 			});
-			class X extends r.a.Component {
+			class z extends r.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditOrProfileClicked = e => {
 						e.stopPropagation(), this.props.onSubredditOrProfileClick(this.props.postId)
@@ -1480,7 +1480,7 @@
 						subredditOrProfile: u,
 						subscribedProfiles: m,
 						subscribedSubreddits: h
-					} = t, b = !K({
+					} = t, b = !X({
 						subredditOrProfile: u,
 						subscribedProfiles: m,
 						subscribedSubreddits: h
@@ -1509,10 +1509,10 @@
 					})), r.a.createElement(c.d, null))
 				}
 			}
-			const z = Object(m.b)(Object(u.a)(Object(a.a)(X)));
+			const K = Object(m.b)(Object(u.a)(Object(a.a)(z)));
 			class Q extends r.a.Component {
 				render() {
-					return r.a.createElement(z, this.props)
+					return r.a.createElement(K, this.props)
 				}
 			}
 		},
@@ -1917,10 +1917,10 @@
 				G = s("./src/reddit/models/Media/index.ts"),
 				q = s("./src/reddit/models/Subreddit/index.ts"),
 				Y = s("./src/reddit/models/Widgets/index.ts"),
-				K = s("./src/reddit/components/MiniCardPost/index.m.less"),
-				X = s.n(K),
-				z = s("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Q = s.n(z),
+				X = s("./src/reddit/components/MiniCardPost/index.m.less"),
+				z = s.n(X),
+				K = s("./src/reddit/helpers/styles/mixins/index.m.less"),
+				Q = s.n(K),
 				Z = s("./src/reddit/components/DiscoveryUnit/Layout/Posts/TopPostsLargePost/index.m.less"),
 				$ = s.n(Z);
 
@@ -1960,10 +1960,10 @@
 					let O = C && i.a.createElement(D.a, {
 							autoplayPref: e,
 							availableWidth: t,
-							className: X.a.media,
+							className: z.a.media,
 							forceAspectRatio: G.c,
-							imageBoxClassName: X.a.mediaImageBox,
-							imageBoxContentImageClassName: X.a.mediaImageBoxContentImage,
+							imageBoxClassName: z.a.mediaImageBox,
+							imageBoxContentImageClassName: z.a.mediaImageBoxContentImage,
 							isListing: !0,
 							isMiniCard: u,
 							isNotCardView: !0,
@@ -1983,7 +1983,7 @@
 					const S = !E && !j;
 					let I;
 					return w && (I = Object(q.h)(w) ? Object(Y.h)(w) : Object(Y.i)(w)), i.a.createElement(W.a, {
-						className: Object(c.a)($.a.container, Q.a.largeAndMediumActiveStyles, Q.a.largeAndMediumPostStyles, X.a.postContainer, Object(J.a)(this.props), s),
+						className: Object(c.a)($.a.container, Q.a.largeAndMediumActiveStyles, Q.a.largeAndMediumPostStyles, z.a.postContainer, Object(J.a)(this.props), s),
 						post: p,
 						onClick: m,
 						eventFactory: o,
@@ -1994,10 +1994,10 @@
 						},
 						"data-click-id": this.props["data-click-id"]
 					}, i.a.createElement(B.a, {
-						className: X.a.backgroundWrapper,
+						className: z.a.backgroundWrapper,
 						flairStyleTemplate: a
 					}, i.a.createElement("div", {
-						className: Object(c.a)($.a.innerContainer, X.a.innerContainer)
+						className: Object(c.a)($.a.innerContainer, z.a.innerContainer)
 					}, _ && w && i.a.createElement(L, ee({
 						created: p.created
 					}, I)), y && w && i.a.createElement(P, ee({
@@ -2522,10 +2522,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(g.F, w.bb, (e, {
+				N = Object(o.b)(() => Object(c.a)(g.E, w.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.G, (e, t, s, n, r, i) => ({
+				}) => t && s ? Object(g.b)(e, s) : null, y.a, _.actionInfo, g.F, (e, t, s, n, r, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -4137,12 +4137,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Kd.SmIcon:
+						case b.Ld.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Kd.SmIconHc:
+						case b.Ld.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4323,7 +4323,7 @@
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: l.T,
 				hideNSFWPref: h.B,
-				isActive: p.k,
+				isActive: p.j,
 				moderatorPermissions: u.k,
 				modModeEnabled: l.R,
 				showEditFlair: m.a
@@ -4895,12 +4895,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Dd
+						experimentName: n.Ed
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.Kd.SmIcon || t === n.Kd.SmIconHc
+					return t === n.Ld.SmIcon || t === n.Ld.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4923,4 +4923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.15cc54873e660ee9d563.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.b81d1e0e064372fc2180.js.map

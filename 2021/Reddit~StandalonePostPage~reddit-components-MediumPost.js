@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.55ec52c5ec7793a984c6.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.1510d36a2089dd75daae.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -163,7 +163,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.G)(c, {
+						const e = Object(m.F)(c, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -2904,7 +2904,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						a = l.find(e => e >= r),
-						i = n ? Object(c.G)(e, {
+						i = n ? Object(c.F)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3189,4 +3189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.55ec52c5ec7793a984c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.1510d36a2089dd75daae.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.d1dc8e55f91f2e950e08.js
-// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.a4b934c1cf0d6539cabc.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1353,7 +1353,7 @@
 			var xe = fe(_e),
 				ve = n("./src/reddit/selectors/posts.ts");
 			const ke = Object(u.c)({
-				recentPosts: ve.P
+				recentPosts: ve.O
 			});
 			var je = Object(d.b)(ke, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink))
@@ -1643,10 +1643,10 @@
 			}
 			var qe = n("./src/reddit/selectors/experiments/utils.ts");
 			const We = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.Fc,
+					experimentName: Fe.Gc,
 					experimentEligibilitySelector: Ue.a
 				}), qe.a),
-				Ve = Object(u.a)(We, e => e === Fe.Hc.Enabled);
+				Ve = Object(u.a)(We, e => e === Fe.Ic.Enabled);
 			var Ge = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1679,7 +1679,7 @@
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: He.J,
 								experimentName: Fe.lb
-							}) === Fe.dc
+							}) === Fe.ec
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -1876,7 +1876,7 @@
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				g = n("./src/reddit/components/MiniPost/index.m.less"),
 				f = n.n(g);
-			const y = Object(a.a)(e => e, b.G, b.d, (e, t, n) => {
+			const y = Object(a.a)(e => e, b.F, b.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -2572,7 +2572,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.L,
+					postCount: l.K,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -4464,7 +4464,7 @@
 				},
 				j = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => u(t.listingName)(e, t), v, b, a.i, (e, t, n, s, r) => {
+				}) => t, (e, t) => u(t.listingName)(e, t), v, b, a.h, (e, t, n, s, r) => {
 					const a = [];
 					if (e) {
 						const t = Object(o.g)(e);
@@ -4529,7 +4529,7 @@
 				S = Object(r.a)(Object(s.a)(C, v, (e, t) => e ? t[e] : void 0)),
 				P = Object(s.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(o.g)(t) : void 0, C, b, a.i, (e, {
+				}) => t ? Object(o.g)(t) : void 0, C, b, a.h, (e, {
 					related: t,
 					streamIdFromPath: n,
 					subreddit: s
@@ -4651,7 +4651,7 @@
 				}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
-			e.exports = JSON.parse('{"id":"e8745a6c92ee"}')
+			e.exports = JSON.parse('{"id":"355dce594989"}')
 		},
 		"./src/redditGQL/operations/GetNearbySubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"26ddd553d11e"}')
@@ -4661,4 +4661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d1dc8e55f91f2e950e08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a4b934c1cf0d6539cabc.js.map

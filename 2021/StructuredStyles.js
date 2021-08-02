@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.d78ded85711f963f947f.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.96dfccad579439845b85.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -7046,7 +7046,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && i.a.createElement("span", {
 						className: n
 					}, e.children), i.a.createElement("span", {
@@ -7054,6 +7055,7 @@
 					}, e.displayText)) : i.a.createElement(u.a, b({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -9096,4 +9098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.d78ded85711f963f947f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.96dfccad579439845b85.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ce8659e02fb813e13268.js
-// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4f668250f527537e792c.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -810,7 +810,7 @@
 					pending: a,
 					post: null
 				};
-				const n = Object(h.G)(e, {
+				const n = Object(h.F)(e, {
 						postId: t
 					}),
 					o = Object(x.b)(e, t),
@@ -2682,4 +2682,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ce8659e02fb813e13268.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.4f668250f527537e792c.js.map

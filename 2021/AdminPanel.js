@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.1ad0ecb3868f83b44826.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.c7e507ef4aced2e1293a.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -455,7 +455,7 @@
 				ce = n("./src/reddit/selectors/trending.ts");
 			const le = Object(h.c)({
 				ads: oe.b,
-				posts: ie.J,
+				posts: ie.I,
 				trends: ce.a
 			});
 			class de extends a.a.Component {
@@ -717,7 +717,7 @@
 			var at = e => {
 					const t = ["control_1", "control_2", ...He.k[e.experimentName]];
 					if (!t) return null;
-					const n = He.ec.has(e.experimentName);
+					const n = He.fc.has(e.experimentName);
 					return a.a.createElement(G.a, {
 						className: e.className
 					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -1444,7 +1444,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && o.a.createElement("span", {
 						className: n
 					}, e.children), o.a.createElement("span", {
@@ -1452,6 +1453,7 @@
 					}, e.displayText)) : o.a.createElement(m.a, x({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -1860,4 +1862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.1ad0ecb3868f83b44826.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.c7e507ef4aced2e1293a.js.map

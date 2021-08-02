@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.6aed891d44142eb0e52a.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.8d4b9e6ef672c7dc9b69.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -562,7 +562,7 @@
 				}) => {
 					if ((await E(i(), e, t)).ok) {
 						const i = r(),
-							a = Object(S.G)(i, {
+							a = Object(S.F)(i, {
 								postId: t
 							}),
 							d = a && a.title || "",
@@ -579,7 +579,7 @@
 									collectionId: e
 								}),
 								s = n && n.postIds && n.postIds[u] || "",
-								i = Object(S.G)(t, {
+								i = Object(S.F)(t, {
 									postId: s
 								});
 							i && i.permalink && o(Object(C.a)(i.permalink))
@@ -612,7 +612,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const o = Object(S.G)(i, {
+						const o = Object(S.F)(i, {
 								postId: t
 							}),
 							r = Object(O.q)(i, {
@@ -685,7 +685,7 @@
 						}))
 					}
 					return a
-				}, K = Object(i.a)(a.l), Y = Object(i.a)(a.m), q = Object(i.a)(a.k), X = e => async (t, n) => {
+				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), q = Object(i.a)(a.k), X = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[d.a.IsOverlay]) ? Object(C.a)(e.permalink) : Object(o.b)(Object(j.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -722,10 +722,10 @@
 					})(o, a))), d && n.push(t(G(o, d))), void 0 !== r && n.push(t(((e, t) => async (n, o, {
 						apiContext: r
 					}) => {
-						n(K());
+						n(Y());
 						const i = await y(r(), e, t);
 						let a = !1;
-						if (i.ok) n(Y({
+						if (i.ok) n(K({
 							collectionId: e,
 							newDescription: t
 						})), n(Object(c.f)({
@@ -1147,10 +1147,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(c.a)(_.F, y.bb, (e, {
+				P = Object(i.b)(() => Object(c.a)(_.E, y.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.G, (e, t, n, s, o, r) => ({
+				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.F, (e, t, n, s, o, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -3119,12 +3119,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.Kd.SmIcon:
+						case b.Ld.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.Kd.SmIconHc:
+						case b.Ld.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -3433,7 +3433,7 @@
 			const O = ["right", "bottom"],
 				S = ["right", "top"];
 			var I = Object(a.b)(() => Object(c.c)({
-					post: E.G
+					post: E.F
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(g.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -3795,7 +3795,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && i.a.createElement("span", {
 						className: n
 					}, e.children), i.a.createElement("span", {
@@ -3803,6 +3804,7 @@
 					}, e.displayText)) : i.a.createElement(u.a, f({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -4922,12 +4924,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Dd
+						experimentName: s.Ed
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Kd.SmIcon || t === s.Kd.SmIconHc
+					return t === s.Ld.SmIcon || t === s.Ld.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4950,4 +4952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.6aed891d44142eb0e52a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.8d4b9e6ef672c7dc9b69.js.map

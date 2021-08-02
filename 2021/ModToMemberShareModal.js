@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.4eb89218f2d9b74f2895.js
-// Retrieved at 7/21/2021, 7:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.94d7eb975562ec54d9af.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -60,7 +60,7 @@
 				h = s("./src/reddit/selectors/subreddit.ts"),
 				x = s("./src/reddit/components/MiniPost/index.m.less"),
 				_ = s.n(x);
-			const f = Object(a.a)(e => e, b.G, b.d, (e, t, s) => {
+			const f = Object(a.a)(e => e, b.F, b.d, (e, t, s) => {
 					return {
 						crosspost: s,
 						post: t,
@@ -193,13 +193,13 @@
 				N = s("./src/reddit/selectors/posts.ts"),
 				E = s("./src/reddit/selectors/telemetry.ts"),
 				P = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
-				v = s.n(P);
-			const O = 400,
-				j = Object(a.c)({
-					post: N.u,
-					subreddit: N.v
+				O = s.n(P);
+			const j = 400,
+				v = Object(a.c)({
+					post: N.t,
+					subreddit: N.u
 				}),
-				F = Object(i.b)(j, (e, t) => ({
+				F = Object(i.b)(v, (e, t) => ({
 					onClose: () => e(Object(c.f)()),
 					showSuccessToast: () => e(Object(m.f)({
 						text: n.fbt._("Messages sent!", null, {
@@ -277,35 +277,35 @@
 						}
 					} = this;
 					if (e && t) return o.a.createElement(p.d, {
-						className: v.a.body
+						className: O.a.body
 					}, o.a.createElement(p.h, {
-						className: v.a.header
+						className: O.a.header
 					}, o.a.createElement(p.p, {
-						className: v.a.title
+						className: O.a.title
 					}, n.fbt._("Send message with link", null, {
 						hk: "mnEN"
 					})), o.a.createElement("button", {
 						onClick: this.onCloseClicked
 					}, o.a.createElement(p.b, null))), o.a.createElement(p.k, {
-						className: v.a.main
+						className: O.a.main
 					}, o.a.createElement(u.a, {
-						className: v.a.miniPost,
+						className: O.a.miniPost,
 						openLinksNewTab: !0,
 						postId: e.id,
 						showSubreddit: !0,
 						subredditSameLine: !0
 					}), o.a.createElement(p.s, {
-						className: v.a.textarea,
-						maxLength: O,
+						className: O.a.textarea,
+						maxLength: j,
 						onChange: this.onMessageChange,
 						onFocus: this.onMessageFocus,
 						required: !0,
 						value: s
 					}), o.a.createElement(l.a, {
 						text: s,
-						maxChars: O
+						maxChars: j
 					})), o.a.createElement(p.f, null, !1 === i && o.a.createElement("p", {
-						className: v.a.errorText
+						className: O.a.errorText
 					}, "Something went wrong. Try again in a bit."), o.a.createElement(p.a, {
 						onClick: this.onCloseClicked
 					}, n.fbt._("Cancel", null, {
@@ -457,4 +457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.4eb89218f2d9b74f2895.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.94d7eb975562ec54d9af.js.map

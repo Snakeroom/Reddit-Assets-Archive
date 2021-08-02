@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.aea349d87d01002f8f29.js
-// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.36a1d06c381043c0fd55.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -515,7 +515,7 @@
 				}, te = Object(n.a)(q.s), se = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(U.a)(s) ? Object(P.G)(e, {
+					} = t, r = Object(U.a)(s) ? Object(P.F)(e, {
 						postId: s
 					}) : Object(y.a)(e, {
 						commentId: s
@@ -615,7 +615,7 @@
 						if (e.length) {
 							const s = Math.max(900 - B, 10),
 								r = Math.max(300 - B, 10),
-								a = Object(U.a)(m) && Object(v.o)(Object(P.G)(n, {
+								a = Object(U.a)(m) && Object(v.o)(Object(P.F)(n, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -1844,7 +1844,7 @@
 			}));
 			var xe = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const s = Object(R.G)(e, {
+						const s = Object(R.F)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -2226,7 +2226,7 @@
 						r = s && s.id
 					}
 					if (!r && Object(l.a)(t)) {
-						const s = Object(R.G)(e, {
+						const s = Object(R.F)(e, {
 							postId: t
 						});
 						r = s && s.belongsTo.id
@@ -2293,7 +2293,7 @@
 					message: A.c,
 					postOrComment: (e, {
 						thingId: t
-					}) => Object(l.a)(t) ? Object(R.G)(e, {
+					}) => Object(l.a)(t) ? Object(R.F)(e, {
 						postId: t
 					}) : Object(k.a)(e, {
 						commentId: t
@@ -2326,7 +2326,7 @@
 							r = s && s.id
 						}
 						if (!r && Object(l.a)(t)) {
-							const s = Object(R.G)(e, {
+							const s = Object(R.F)(e, {
 								postId: t
 							});
 							r = s && s.belongsTo.id
@@ -2760,10 +2760,10 @@
 						style: t
 					}, e.children)
 				},
-				A = Object(o.b)(() => Object(d.a)(v.F, j.bb, (e, {
+				A = Object(o.b)(() => Object(d.a)(v.E, j.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, x.a, O.actionInfo, v.G, (e, t, s, r, n, a) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, x.a, O.actionInfo, v.F, (e, t, s, r, n, a) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -4201,12 +4201,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case b.Kd.SmIcon:
+						case b.Ld.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Kd.SmIconHc:
+						case b.Ld.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5072,7 +5072,7 @@
 				},
 				y = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => u(t.listingName)(e, t), O, h, i.i, (e, t, s, r, n) => {
+				}) => t, (e, t) => u(t.listingName)(e, t), O, h, i.h, (e, t, s, r, n) => {
 					const i = [];
 					if (e) {
 						const t = Object(a.g)(e);
@@ -5137,7 +5137,7 @@
 				k = Object(n.a)(Object(r.a)(C, O, (e, t) => e ? t[e] : void 0)),
 				P = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(a.g)(t) : void 0, C, h, i.i, (e, {
+				}) => t ? Object(a.g)(t) : void 0, C, h, i.h, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: r
@@ -5247,12 +5247,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Dd
+						experimentName: r.Ed
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Kd.SmIcon || t === r.Kd.SmIconHc
+					return t === r.Ld.SmIcon || t === r.Ld.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5284,4 +5284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.aea349d87d01002f8f29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.36a1d06c381043c0fd55.js.map

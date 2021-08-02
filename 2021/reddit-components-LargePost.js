@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6a82050c6f99bebc82a9.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.06446bf6d498c10091f9.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -754,7 +754,7 @@
 					let f = null;
 					if (b) f = b.id;
 					else if (Object(o.a)(s)) {
-						const e = Object(m.G)(a, {
+						const e = Object(m.F)(a, {
 							postId: s
 						});
 						e && (f = e.belongsTo.id)
@@ -898,7 +898,7 @@
 							listingKey: t,
 							postId: s
 						}) || Object(_.a)(y).length >= m.a || Object(b.U)() || x(o.z).length >= m.a) return;
-					const I = Object(E.w)(y, {
+					const I = Object(E.v)(y, {
 						listingKey: t,
 						postId: s
 					});
@@ -930,7 +930,7 @@
 										t: n
 									}),
 									r = s();
-								return 0 === Object(E.z)(r, {
+								return 0 === Object(E.y)(r, {
 									listingKey: t
 								}).length
 							});
@@ -1805,13 +1805,13 @@
 						subredditName: R
 					} = e, U = Object(o.a)(C, null, {
 						isOtherDiscussions: !0
-					}), G = s(), H = Object(D.z)(G, {
+					}), G = s(), H = Object(D.y)(G, {
 						listingKey: U
 					}), K = E && (!H || 0 === H.length), z = Object(o.a)(R, n.U[k], {
 						t: w
-					}), Q = Object(D.z)(G, {
+					}), Q = Object(D.y)(G, {
 						listingKey: z
-					}), J = O && (_ || !Q || 0 === Q.length), Z = _, X = h, $ = Object(D.G)(G, {
+					}), J = O && (_ || !Q || 0 === Q.length), Z = _, X = h, $ = Object(D.F)(G, {
 						postId: C
 					}), ee = !!$ && !!$.media && (Object(N.H)($.media) || Object(N.F)($.media)) && !$.media.altText;
 					if (!(K || J || Z || X || ee || y)) return;
@@ -2932,7 +2932,7 @@
 				ae = s("./src/reddit/constants/experiments.ts"),
 				ce = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				de = s("./src/reddit/helpers/getRichTextContent/index.ts");
-			const le = Object(a.a)(T.M, e => e.some(de.c)),
+			const le = Object(a.a)(T.L, e => e.some(de.c)),
 				ue = Object(a.a)(le, e => e),
 				me = (e, t) => Object(ce.c)(e, {
 					experimentName: ae.Ab,
@@ -2957,7 +2957,7 @@
 					const {
 						listingKey: s
 					} = t;
-					return s ? Object(T.M)(e, {
+					return s ? Object(T.L)(e, {
 						listingKey: s
 					}) : void 0
 				},
@@ -2966,9 +2966,9 @@
 					activeModalId: x.a,
 					hideNSFWPref: C.B,
 					flairStyleTemplate: ne.T,
-					isCurrentUserProfilePost: T.l,
+					isCurrentUserProfilePost: T.k,
 					isLoggedIn: C.J,
-					isActive: T.k,
+					isActive: T.j,
 					isPostChainDismissed: I.c,
 					isPostChained: I.d,
 					showPromotedCTA: be.a,
@@ -2981,7 +2981,7 @@
 					showAwardsPlaque: y.a,
 					isTournamentPost: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(S.q)(e)
+					}) => Boolean(t.predictionTournament) && Object(S.r)(e)
 				}), (e, {
 					listingKey: t,
 					listingName: s,
@@ -3051,7 +3051,7 @@
 						postIds: Ae,
 						onceInViewport: Ne,
 						showPromotedCTA: Le
-					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = he && Fe, Me = Object(c.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(xe), Ve = !!xe.media && xe.media.type === O.o.RTJSON, We = we && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ae.dd.OnlyTitles)(Se) && !Object(oe.a)(xe), Ke = (e => e === ae.dd.MediumHeight)(Se) && !Object(oe.a)(xe), ze = (e => {
+					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = he && Fe, Me = Object(c.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(xe), Ve = !!xe.media && xe.media.type === O.o.RTJSON, We = we && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ae.ed.OnlyTitles)(Se) && !Object(oe.a)(xe), Ke = (e => e === ae.ed.MediumHeight)(Se) && !Object(oe.a)(xe), ze = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -3436,7 +3436,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(f.j)(e, {
+					}) => Object(f.i)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(h.actionInfo)(e).pageType
@@ -3903,7 +3903,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(M.a)(), i = Object(B.a)(m.kc) === m.oc.Enabled;
+					} = t, r = Object(M.a)(), i = Object(B.a)(m.lc) === m.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(J, e));
@@ -7348,7 +7348,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.Hb
 				});
-				return !(!t || Object(n.ae)(t))
+				return !(!t || Object(n.be)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, s) {
@@ -7512,7 +7512,7 @@
 				}) => {
 					const r = Object(d.c)(e),
 						i = l.find(e => e >= s),
-						c = n ? Object(a.G)(e, {
+						c = n ? Object(a.F)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -7669,7 +7669,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.ae)(t)
+					return Boolean(t) && !Object(r.be)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -7725,12 +7725,12 @@
 						n = Object(o.a)(t, r.U.TOP, {
 							t: s
 						}),
-						i = Object(l.z)(e, {
+						i = Object(l.y)(e, {
 							listingKey: n
 						});
 					if (0 !== i.length)
 						for (const r of i) {
-							const t = Object(l.G)(e, {
+							const t = Object(l.F)(e, {
 								postId: r
 							});
 							if (t && !t.hidden && !t.isSponsored) return t
@@ -7742,7 +7742,7 @@
 					const s = ((e, {
 							postId: t
 						}) => {
-							const s = Object(l.G)(e, {
+							const s = Object(l.F)(e, {
 								postId: t
 							});
 							if (!s) return m;
@@ -7786,9 +7786,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: r.ad,
+				experimentName: r.bd,
 				experimentEligibilitySelector: o.a
-			}), i.G, (e, t) => e === r.kd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.F, (e, t) => e === r.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, s) {
 			"use strict";
@@ -7930,17 +7930,17 @@
 			t.a = u
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"d34220dd47d5"}')
+			e.exports = JSON.parse('{"id":"a223754adec7"}')
 		},
 		"./src/redditGQL/operations/PostFeedAndOtherDiscussions.json": function(e) {
-			e.exports = JSON.parse('{"id":"e5e49cffd895"}')
+			e.exports = JSON.parse('{"id":"0788c75cdf14"}')
 		},
 		"./src/redditGQL/operations/SubredditPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"569849c7c5b7"}')
+			e.exports = JSON.parse('{"id":"1116f1546b92"}')
 		},
 		"./src/redditGQL/operations/SubredditsPosts.json": function(e) {
-			e.exports = JSON.parse('{"id":"7d9d9c6fcf2a"}')
+			e.exports = JSON.parse('{"id":"a6f0f5e585cc"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6a82050c6f99bebc82a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.06446bf6d498c10091f9.js.map

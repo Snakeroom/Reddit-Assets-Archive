@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bc055cb61eae6337e2ae.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.462e458c8b8767566cc1.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -879,7 +879,7 @@
 					let b = null;
 					if (f) b = f.id;
 					else if (Object(o.a)(r)) {
-						const e = Object(m.G)(a, {
+						const e = Object(m.F)(a, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -1144,7 +1144,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(b.j)(e, {
+					}) => Object(b.i)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(h.actionInfo)(e).pageType
@@ -1415,7 +1415,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(U.a)(), i = Object(B.a)(m.kc) === m.oc.Enabled;
+					} = t, s = Object(U.a)(), i = Object(B.a)(m.lc) === m.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Y, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -3314,7 +3314,7 @@
 				}) => {
 					const s = Object(d.c)(e),
 						i = l.find(e => e >= r),
-						c = n ? Object(a.G)(e, {
+						c = n ? Object(a.F)(e, {
 							postId: n
 						}) || Object(o.a)(e, {
 							commentId: n
@@ -3529,4 +3529,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.bc055cb61eae6337e2ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.462e458c8b8767566cc1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.9f76233399a9269f0cf3.js
-// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.bf67caad8522e891f4fa.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2131,7 +2131,7 @@
 			}) => a.a.createElement(u.q, {
 				className: e,
 				disabled: h || l,
-				onClick: () => s === m.Hd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => s === m.Id.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: u.b.Secondary,
@@ -3980,7 +3980,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(b.j)(e, {
+					}) => Object(b.i)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(C.actionInfo)(e).pageType
@@ -5698,7 +5698,7 @@
 				q = s("./src/reddit/selectors/user.ts");
 			const z = {
 					crosspost: H.d,
-					isActive: H.k,
+					isActive: H.j,
 					isLoggedIn: q.J,
 					moderatorPermissions: U.k,
 					modModeEnabled: j.R,
@@ -5858,7 +5858,7 @@
 						const {
 							models: o
 						} = e.posts;
-						return Object(H.D)(e, s, r, !!n).filter(e => o && o[e] && !o[e].isSponsored)
+						return Object(H.C)(e, s, r, !!n).filter(e => o && o[e] && !o[e].isSponsored)
 					}
 				}),
 				pe = (e, t, s, r) => {
@@ -6653,7 +6653,7 @@
 				Kt = s("./src/reddit/selectors/showPromotedCTA.ts");
 			const {
 				fbt: Gt
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Jt = `${Ae.a.assetPath}/img/link-placeholder.png`, Qt = (e, t) => t && t.length ? Object(tt.G)(e, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Jt = `${Ae.a.assetPath}/img/link-placeholder.png`, Qt = (e, t) => t && t.length ? Object(tt.F)(e, {
 				postId: t[0]
 			}) : void 0, Zt = {
 				fireAdPixelsOfType: We.x,
@@ -8804,10 +8804,10 @@
 					autoplayPref: x.b,
 					activeModalId: m.a,
 					crosspost: b.d,
-					isActive: b.k,
+					isActive: b.j,
 					isChatPost: u.d,
-					isCurrentUserProfilePost: b.l,
-					isExpanded: b.m,
+					isCurrentUserProfilePost: b.k,
+					isExpanded: b.l,
 					isLoggedIn: x.J,
 					showPromotedCTA: C.a,
 					moderatorPermissions: p.k,
@@ -8956,7 +8956,7 @@
 								subredditId: t
 							})
 						}
-						return Object(y.D)(e, t, s, n)
+						return Object(y.C)(e, t, s, n)
 					}),
 					subredditsById: E.Z,
 					viewportDataLoaded: O.a,
@@ -9030,7 +9030,7 @@
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: d.T,
 				hideNSFWPref: h.B,
-				isActive: p.k,
+				isActive: p.j,
 				moderatorPermissions: m.k,
 				modModeEnabled: d.R,
 				showEditFlair: u.a
@@ -10002,9 +10002,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.vd.Treatment1 === Object(n.c)(e, {
+			const a = e => r.wd.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.md
+				experimentName: r.nd
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -10070,10 +10070,10 @@
 					return t !== o && t !== i && (!(i + s > t) && (!(t + s > o) && !((e, t, s) => {
 						const r = s[t - 1],
 							n = s[t],
-							i = n && Object(a.G)(e, {
+							i = n && Object(a.F)(e, {
 								postId: r
 							}) || null,
-							o = n && Object(a.G)(e, {
+							o = n && Object(a.F)(e, {
 								postId: n
 							}) || null;
 						return i && i.isSponsored || o && o.isSponsored
@@ -10086,7 +10086,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let n = -1;
-					const i = Object(a.z)(e, {
+					const i = Object(a.y)(e, {
 							listingKey: s.listingKey
 						}),
 						o = [];
@@ -10148,13 +10148,13 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const o = Object(r.a)(e => Object(a.c)(e, {
-				experimentName: n.ad,
+				experimentName: n.bd,
 				experimentEligibilitySelector: a.a
-			}), i.G, (e, t) => e === n.kd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.F, (e, t) => e === n.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"ab012381577a"}')
+			e.exports = JSON.parse('{"id":"12994770759e"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.9f76233399a9269f0cf3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bf67caad8522e891f4fa.js.map

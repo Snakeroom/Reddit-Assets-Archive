@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d5a36881bc1e2120009f.js
-// Retrieved at 7/28/2021, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.82db454e8ff9dc295dc1.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -2817,7 +2817,7 @@
 			}) => a.a.createElement(m.q, {
 				className: e,
 				disabled: p || l,
-				onClick: () => r === u.Hd.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => r === u.Id.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: m.b.Secondary,
@@ -4322,7 +4322,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && i.a.createElement("span", {
 						className: r
 					}, e.children), i.a.createElement("span", {
@@ -4330,6 +4331,7 @@
 					}, e.displayText)) : i.a.createElement(u.a, h({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -4875,4 +4877,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d5a36881bc1e2120009f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.82db454e8ff9dc295dc1.js.map

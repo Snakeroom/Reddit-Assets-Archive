@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.0d7500b7f25105fcc6db.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.6f5dc6681c662508ee82.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -936,9 +936,9 @@
 				g = s("./src/reddit/constants/experiments.ts"),
 				f = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.G)(e) || g.Ld.ShowTopContent === Object(f.c)(e, {
+			const y = e => Object(C.G)(e) || g.Md.ShowTopContent === Object(f.c)(e, {
 				experimentEligibilitySelector: f.a,
-				experimentName: g.Ed
+				experimentName: g.Fd
 			});
 			var E = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1210,7 +1210,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(h.j)(e, {
+					}) => Object(h.i)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(x.actionInfo)(e).pageType
@@ -1454,7 +1454,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, a = Object(W.a)(), i = Object(F.a)(u.kc) === u.oc.Enabled;
+					} = t, a = Object(W.a)(), i = Object(F.a)(u.lc) === u.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(G, {
 						nowrap: e.nowrap
 					}, r.a.createElement(Y, e));
@@ -2001,4 +2001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.0d7500b7f25105fcc6db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.6f5dc6681c662508ee82.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.6b7ce8b06fa26dc43bc8.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1bb27cc67d7dffa24cc4.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1227,7 +1227,7 @@
 			}
 			const {
 				fbt: C
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = [], v = () => {}, E = () => void 0, k = c.a.button("CloseButton", f.a), O = Object(i.a)(p.z, e => e.filter(e => 9 === e.length)), P = Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = [], v = () => {}, E = () => void 0, k = c.a.button("CloseButton", f.a), O = Object(i.a)(p.y, e => e.filter(e => 9 === e.length)), P = Object(i.c)({
 				discoveryUnit: e => Object(u.c)(e, {
 					unitName: m.k
 				}),
@@ -1479,7 +1479,7 @@
 					}) => t.id,
 					imageGalleryCurrentItem: (e, {
 						post: t
-					}) => Object(h.j)(e, {
+					}) => Object(h.i)(e, {
 						postId: t.id
 					}),
 					pageType: e => Object(x.actionInfo)(e).pageType
@@ -1723,7 +1723,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(A.a)(), i = Object(B.a)(u.kc) === u.oc.Enabled;
+					} = t, r = Object(A.a)(), i = Object(B.a)(u.lc) === u.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(G, {
 						nowrap: e.nowrap
 					}, a.a.createElement(Z, e));
@@ -2401,4 +2401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.6b7ce8b06fa26dc43bc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1bb27cc67d7dffa24cc4.js.map

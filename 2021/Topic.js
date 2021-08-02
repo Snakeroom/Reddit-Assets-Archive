@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.1f0413dae241a471ec0d.js
-// Retrieved at 7/27/2021, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9b268c5281011db4a7f0.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1653,7 +1653,7 @@
 								subredditId: t
 							})
 						}
-						return Object(y.D)(e, t, s, i)
+						return Object(y.C)(e, t, s, i)
 					}),
 					subredditsById: E.Z,
 					viewportDataLoaded: T.a,
@@ -2564,10 +2564,10 @@
 					return t !== a && t !== o && (!(o + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const r = s[t - 1],
 							i = s[t],
-							o = i && Object(n.G)(e, {
+							o = i && Object(n.F)(e, {
 								postId: r
 							}) || null,
-							a = i && Object(n.G)(e, {
+							a = i && Object(n.F)(e, {
 								postId: i
 							}) || null;
 						return o && o.isSponsored || a && a.isSponsored
@@ -2580,7 +2580,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let i = -1;
-					const o = Object(n.z)(e, {
+					const o = Object(n.y)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -2608,8 +2608,8 @@
 				}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"ab012381577a"}')
+			e.exports = JSON.parse('{"id":"12994770759e"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1f0413dae241a471ec0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9b268c5281011db4a7f0.js.map

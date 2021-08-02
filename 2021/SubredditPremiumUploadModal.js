@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.ba40ad6c65cd33fda218.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.97b27203c19291999907.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, s) {
@@ -884,7 +884,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && o.a.createElement("span", {
 						className: s
 					}, e.children), o.a.createElement("span", {
@@ -892,6 +893,7 @@
 					}, e.displayText)) : o.a.createElement(m.a, b({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -1239,4 +1241,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.ba40ad6c65cd33fda218.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.97b27203c19291999907.js.map

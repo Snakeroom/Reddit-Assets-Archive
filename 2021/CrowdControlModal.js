@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.f945aa4d848c1f4caa7c.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.395eba30dfc894fabf92.js
+// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -412,7 +412,7 @@
 				b = n("./src/reddit/selectors/subreddit.ts"),
 				h = n("./src/reddit/components/MiniPost/index.m.less"),
 				C = n.n(h);
-			const f = Object(l.a)(e => e, x.G, x.d, (e, t, n) => {
+			const f = Object(l.a)(e => e, x.F, x.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -1225,7 +1225,8 @@
 						onMouseMove: this.handleMouseMove,
 						onKeyDown: e.onKeydown,
 						rel: e.rel,
-						to: e.href
+						to: e.href,
+						disabled: e.disabled
 					}), e.children && o.a.createElement("span", {
 						className: n
 					}, e.children), o.a.createElement("span", {
@@ -1233,6 +1234,7 @@
 					}, e.displayText)) : o.a.createElement(m.a, h({}, t, {
 						id: e.id,
 						className: e.className,
+						disabled: e.disabled,
 						onBlur: e.onBlur,
 						onClick: e.onClick,
 						onKeyDown: e.onKeydown,
@@ -1842,4 +1844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.f945aa4d848c1f4caa7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.395eba30dfc894fabf92.js.map
