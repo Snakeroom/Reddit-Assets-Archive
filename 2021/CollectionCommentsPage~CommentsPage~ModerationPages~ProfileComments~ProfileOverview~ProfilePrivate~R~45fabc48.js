@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.9aa2cf5f2db40cf57071.js
-// Retrieved at 7/28/2021, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.17ba7f2a9fac22447183.js
+// Retrieved at 8/2/2021, 10:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -376,15 +376,15 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, B = Object(i.a)(a.a), D = Object(i.a)(a.t), W = (e, t) => async (o, n, {
+				}, D = Object(i.a)(a.a), B = Object(i.a)(a.t), W = (e, t) => async (o, n, {
 					apiContext: r
 				}) => {
 					const i = n();
 					if ((await b(r(), e, t)).ok) {
-						o(B({
+						o(D({
 							collectionId: e,
 							postId: t
-						})), o(D({
+						})), o(B({
 							collectionId: e,
 							postId: t
 						}));
@@ -1473,8 +1473,8 @@
 				R = o("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
 				A = o("./src/reddit/components/ShareMenu/index.tsx"),
 				L = o("./src/reddit/components/TrackingHelper/index.tsx"),
-				B = o("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
-				D = o("./src/reddit/constants/postLayout.ts"),
+				D = o("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
+				B = o("./src/reddit/constants/postLayout.ts"),
 				W = o("./src/reddit/contexts/PageLayer/index.tsx"),
 				V = o("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				U = o("./src/reddit/helpers/styles/smartTextColor.ts"),
@@ -1647,7 +1647,7 @@
 						className: le.a.shareText
 					}, s.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), Ae = !!p && Object(ee.e)(p) === U.author, Le = Object(se.a)("View--Reports", U.id, ce), Be = Object(se.a)(d.ic, U.id, ce), De = Object(T.c)(U), We = ge("-mod-actions-menu", U.id, k, E), Ve = Object(T.a)(U), Ue = U.postId, Ge = w === D.g.Large, qe = !C && Ge || f && I, He = !(k || C || x), Ke = p && U.isGildable, Je = U.media && U.media.type === Y.o.LIVEVIDEO;
+					}))), []), Ae = !!p && Object(ee.e)(p) === U.author, Le = Object(se.a)("View--Reports", U.id, ce), De = Object(se.a)(d.ic, U.id, ce), Be = Object(T.c)(U), We = ge("-mod-actions-menu", U.id, k, E), Ve = Object(T.a)(U), Ue = U.postId, Ge = w === B.g.Large, qe = !C && Ge || f && I, He = !(k || C || x), Ke = p && U.isGildable, Je = U.media && U.media.type === Y.o.LIVEVIDEO;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(le.a.flatlistContainer, a)
 					}, r.a.createElement(v.a, {
@@ -1676,10 +1676,10 @@
 					}, r.a.createElement(z.a, {
 						name: "award",
 						className: le.a.awardIcon,
-						id: Be
+						id: De
 					})), r.a.createElement(y, {
 						postOrComment: U,
-						tooltipId: Be
+						tooltipId: De
 					})), r.a.createElement(he, {
 						className: Object(c.a)(le.a.rowContainer, Object(oe.b)({
 							flatlistItem: te.a.Share,
@@ -1766,13 +1766,13 @@
 						modModeEnabled: I,
 						post: U,
 						tooltipId: We
-					})), f && De && !I && r.a.createElement(R.c, {
+					})), f && Be && !I && r.a.createElement(R.c, {
 						text: `${Ve}`,
 						onClick: () => {
 							W(Le), G(Object(J.h)(U.id, "post_report_menu"))
 						},
 						id: Le
-					}, r.a.createElement(B.a, {
+					}, r.a.createElement(D.a, {
 						model: U,
 						onIgnoreReports: () => {
 							L(), G(Object(K.k)(U.ignoreReports ? "restore_reports" : "ignore_reports", U.id))
@@ -2120,7 +2120,7 @@
 					flatlistItem: e,
 					postLayout: t
 				}),
-				B = Object(i.b)(() => Object(a.c)({
+				D = Object(i.b)(() => Object(a.c)({
 					activeModalId: g.a,
 					canEditFlair: (e, {
 						post: t
@@ -2140,7 +2140,7 @@
 					onSpamPost: () => e(Object(l.Q)(t.id, !0)),
 					onFlairPost: t => () => e(Object(d.i)(t))
 				}));
-			t.a = B(e => {
+			t.a = D(e => {
 				const {
 					canEditFlair: t,
 					className: o,
@@ -2154,7 +2154,7 @@
 					post: y,
 					sendEvent: P,
 					showIconsOnly: T
-				} = e, S = Object(i.d)(), N = Object(x.a)(l), F = Object(b.b)(y), B = !(!y.approvedBy || !F), D = Object(h.b)(y.id, a), W = N && g && !y.isSponsored, V = t && g;
+				} = e, S = Object(i.d)(), N = Object(x.a)(l), F = Object(b.b)(y), D = !(!y.approvedBy || !F), B = Object(h.b)(y.id, a), W = N && g && !y.isSponsored, V = t && g;
 				let U, G;
 				const q = A("Approve", y.id, a),
 					H = A("Spam", y.id, a),
@@ -2170,7 +2170,7 @@
 					hk: "2bWAFI"
 				}) : s.fbt._("approve", null, {
 					hk: "2DIHcM"
-				}))(B, y.approvedBy), G = (e => e ? s.fbt._("spammed", null, {
+				}))(D, y.approvedBy), G = (e => e ? s.fbt._("spammed", null, {
 					hk: "3GPrkZ"
 				}) : s.fbt._("spam", null, {
 					hk: "3ebJLg"
@@ -2220,7 +2220,7 @@
 					className: L(E.a.Flair, z),
 					key: "tagButton",
 					onClick: () => {
-						j(D)(), P(Object(C.h)(y.id, "post_flair_picker"))
+						j(B)(), P(Object(C.h)(y.id, "post_flair_picker"))
 					}
 				}, r.a.createElement(_.a, null)), r.a.createElement(m.f, null))
 			})
@@ -2425,7 +2425,7 @@
 				S = o("./src/lib/lessComponent.tsx");
 			const {
 				fbt: N
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), M = S.a.div("Container", T.a), F = S.a.h2("PostTitle", T.a), R = S.a.div("MetaLine", T.a), A = S.a.span("SubredditName", T.a), L = S.a.time("InfoSpan", T.a), B = Object(c.c)({
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), M = S.a.div("Container", T.a), F = S.a.h2("PostTitle", T.a), R = S.a.div("MetaLine", T.a), A = S.a.span("SubredditName", T.a), L = S.a.time("InfoSpan", T.a), D = Object(c.c)({
 				subreddit: (e, {
 					collection: {
 						subredditId: t
@@ -2435,7 +2435,7 @@
 				}) : void 0,
 				user: y.j
 			});
-			class D extends i.a.PureComponent {
+			class B extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						this.props.onClick(this.props.collection.id)
@@ -2469,7 +2469,7 @@
 					}, i.a.createElement("span", null, s)))
 				}
 			}
-			var W = Object(a.b)(B)(D),
+			var W = Object(a.b)(D)(B),
 				V = o("./src/reddit/helpers/trackers/postCollection.ts"),
 				U = o("./src/reddit/components/PostCreationForm/CollectionListModal/index.m.less"),
 				G = o.n(U);
@@ -2652,12 +2652,12 @@
 				R = k.a.wrapped(m.i, "PrimaryActionButton", g.a),
 				A = k.a.wrapped(f.a, "LoadingIcon", g.a),
 				L = k.a.wrapped(b.b, "ErrorText", g.a),
-				B = Object(a.c)({
+				D = Object(a.c)({
 					collection: v.q,
 					error: v.c,
 					isPending: v.g
 				}),
-				D = Object(i.b)(B, (e, t) => ({
+				B = Object(i.b)(D, (e, t) => ({
 					onCreate: (t, o) => e(Object(l.b)(t, o)),
 					onUpdate: o => e(Object(l.h)(t.collectionId, o))
 				}));
@@ -2729,7 +2729,7 @@
 					}) : a)), t && r.a.createElement(L, null, Object(d.a)(t))))
 				}
 			}
-			t.a = Object(c.a)(D(W))
+			t.a = Object(c.a)(B(W))
 		},
 		"./src/reddit/components/PostFlairPicker/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -2925,8 +2925,8 @@
 				R = o("./src/reddit/components/Flatlist/getFlatlistBreakpoints.ts"),
 				A = o("./src/reddit/components/PublicAccessNetwork/Modals/VideoShare/Loader.tsx"),
 				L = o("./src/reddit/constants/postLayout.ts"),
-				B = o("./src/reddit/helpers/correlationIdTracker.ts"),
-				D = o("./src/reddit/helpers/isCrosspost.ts"),
+				D = o("./src/reddit/helpers/correlationIdTracker.ts"),
+				B = o("./src/reddit/helpers/isCrosspost.ts"),
 				W = o("./src/reddit/helpers/postEvent.ts"),
 				V = o("./src/reddit/helpers/trackers/post.ts"),
 				U = o("./src/reddit/models/Post/index.ts"),
@@ -2981,8 +2981,8 @@
 					title: s.fbt._("This post can't be deleted", null, {
 						hk: "1sZ013"
 					}),
-					body: s.fbt._("Sorry, about that. Once a prediction has been resolved, you can't deleted its post.", null, {
-						hk: "38EZMX"
+					body: s.fbt._("Sorry, about that. Once a prediction has been resolved, you can't delete its post.", null, {
+						hk: "hkjDg"
 					}),
 					onClose: t
 				}) : i.a.createElement(ne.a, {
@@ -3110,7 +3110,7 @@
 						this.handlePostEvent("edit"), this.props.onEdit()
 					}, this.handleGild = async () => {
 						var e;
-						const t = Object(B.d)(B.a.GildingFlow, !0);
+						const t = Object(D.d)(D.a.GildingFlow, !0);
 						this.props.onGildClick(t, null === (e = this.props.claimedFreeAward) || void 0 === e ? void 0 : e.id);
 						const {
 							clickGildEvent: s
@@ -3192,7 +3192,7 @@
 						toggleAddEventStartTimeModal: m,
 						toggleEditStartTimeModal: b,
 						userIsOp: h
-					} = e, f = e.currentUser && e.currentUser.isEmployee, x = Object(D.a)(e.post), C = e.post.belongsTo.type === E.a.PROFILE || Object(G.g)(e.subredditAboutInfo), O = e.post.belongsTo.type === E.a.PROFILE || Object(G.i)(e.subredditAboutInfo), v = t && c.isGildable, _ = Object(W.a)(e.post);
+					} = e, f = e.currentUser && e.currentUser.isEmployee, x = Object(B.a)(e.post), C = e.post.belongsTo.type === E.a.PROFILE || Object(G.g)(e.subredditAboutInfo), O = e.post.belongsTo.type === E.a.PROFILE || Object(G.i)(e.subredditAboutInfo), v = t && c.isGildable, _ = Object(W.a)(e.post);
 					return i.a.createElement("div", null, v && i.a.createElement(de, {
 						className: this.getBreakpointClass(F.a.Gild),
 						displayText: s.fbt._("Give Award", null, {
@@ -4883,4 +4883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.9aa2cf5f2db40cf57071.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.17ba7f2a9fac22447183.js.map
