@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.624a2f6acf24a70d1b3a.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.126396b621833d7acb88.js
+// Retrieved at 8/2/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5154,7 +5154,7 @@
 				})))
 			}
 			const Ys = (e, t, n, s) => {
-				const r = n === Jt.Id.Modals,
+				const r = n === Jt.Jd.Modals,
 					a = {
 						id: as.CreateCommunity,
 						telemetryNoun: "create_community"
@@ -6176,9 +6176,9 @@
 				Yo = n("./src/reddit/models/Search/index.ts"),
 				$o = n("./src/reddit/selectors/experiments/trending.ts"),
 				er = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const tr = e => Object(xt.G)(e) || Jt.Td.Treatment1 === Object(er.c)(e, {
+			const tr = e => Object(xt.G)(e) || Jt.Vd.Treatment1 === Object(er.c)(e, {
 				experimentEligibilitySelector: er.a,
-				experimentName: Jt.Qd
+				experimentName: Jt.Sd
 			});
 			var nr, sr = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
 				or = n("./src/reddit/selectors/experiments/withinCommunitySearch.ts"),
@@ -7881,7 +7881,7 @@
 							name: "community"
 						}),
 						onClick: () => {
-							s === Jt.Id.Tabs ? window.open("/subreddits/create", "_blank") : i(), c(Object(Ya.a)())
+							s === Jt.Jd.Tabs ? window.open("/subreddits/create", "_blank") : i(), c(Object(Ya.a)())
 						},
 						title: Object(Ts.a)(r, o.fbt._("Create a Community", null, {
 							hk: "3QGru4"
@@ -8128,7 +8128,7 @@
 				})), g && m.a.createElement(M, {
 					className: ac.a.entrypointLink,
 					onClick: () => {
-						f === Jt.Id.Tabs ? window.open("/subreddits/create", "_blank") : v(), e.sendEvent(Object(Ya.a)())
+						f === Jt.Jd.Tabs ? window.open("/subreddits/create", "_blank") : v(), e.sendEvent(Object(Ya.a)())
 					}
 				}), m.a.createElement(u.Fragment, null, m.a.createElement(k, {
 					href: "/coins",
@@ -14316,15 +14316,15 @@
 				o = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case o.Jd.Add:
+					case o.Kd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case o.Jd.Start:
+					case o.Kd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case o.Jd.Create:
+					case o.Kd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -18865,7 +18865,7 @@
 					experimentEligibilitySelector: r.J,
 					experimentName: s.cc
 				});
-				return !(!t || Object(s.be)(t))
+				return !(!t || Object(s.de)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -18971,9 +18971,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(r.G)(e) || !(s.Sd.Holdout === Object(o.c)(e, {
+			const a = e => Object(r.G)(e) || !(s.Ud.Holdout === Object(o.c)(e, {
 				experimentEligibilitySelector: o.a,
-				experimentName: s.Pd
+				experimentName: s.Rd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -19224,4 +19224,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.624a2f6acf24a70d1b3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.126396b621833d7acb88.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.fd8a4434a542027a1456.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.c05605d161086b330d56.js
+// Retrieved at 8/2/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -510,10 +510,10 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(x.a)(e.post, e.pageType)
 					}
-				}, L(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
+				}, P(e)) : e.isListing && e.postPermalink ? o.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
-				}, L(e)) : L(e)
+				}, P(e)) : P(e)
 			});
 			const N = (e, t) => o.a.createElement(T, {
 					altText: t.altText,
@@ -532,7 +532,7 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				L = ({
+				P = ({
 					onClick: e,
 					...t
 				}) => {
@@ -1063,7 +1063,7 @@
 			})), s.d(t, "a", (function() {
 				return N
 			})), s.d(t, "w", (function() {
-				return L
+				return P
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1095,7 +1095,7 @@
 				I = d.a.th("Thl", a.a),
 				M = d.a.th("Thc", a.a),
 				N = (d.a.th("Thr", a.a), d.a.wrapped(e => r.a.createElement(o.b, e), "A", a.a)),
-				L = d.a.wrapped(c.a, "A", a.a)
+				P = d.a.wrapped(c.a, "A", a.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1473,9 +1473,9 @@
 			s.d(t, "c", (function() {
 				return N
 			})), s.d(t, "d", (function() {
-				return L
-			})), s.d(t, "a", (function() {
 				return P
+			})), s.d(t, "a", (function() {
+				return L
 			})), s.d(t, "b", (function() {
 				return B
 			})), s.d(t, "f", (function() {
@@ -1599,10 +1599,10 @@
 						key: s
 					}, o)
 				},
-				L = e => a.a.createElement(d.e, {
+				P = e => a.a.createElement(d.e, {
 					key: e
 				}),
-				P = (e, t, s, n) => {
+				L = (e, t, s, n) => {
 					const r = e.c;
 					if (!r) return;
 					const o = r.length,
@@ -1636,13 +1636,13 @@
 				D = (e, t, s, n) => {
 					switch (e.e) {
 						case p.b:
-							return P(e, t, s, n);
+							return L(e, t, s, n);
 						case p.c:
 							return B(e, n);
 						case p.k:
 							return N(e, s, n);
 						case p.l:
-							return L(n);
+							return P(n);
 						case p.p:
 							return R(e, t, s, n);
 						case p.u:
@@ -1928,12 +1928,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Ld.SmIcon:
+						case b.Nd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Ld.SmIconHc:
+						case b.Nd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2331,12 +2331,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ed
+						experimentName: n.Fd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Ld.SmIcon || t === n.Ld.SmIconHc
+					return t === n.Nd.SmIcon || t === n.Nd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2359,4 +2359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.fd8a4434a542027a1456.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.c05605d161086b330d56.js.map

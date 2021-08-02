@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.6cb5b4e7b0b49c96e2a2.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.3f35826fdbcacaae7b82.js
+// Retrieved at 8/2/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4910,12 +4910,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Ld.SmIcon:
+						case b.Nd.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Ld.SmIconHc:
+						case b.Nd.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -6193,12 +6193,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ed
+						experimentName: n.Fd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Ld.SmIcon || t === n.Ld.SmIconHc
+					return t === n.Nd.SmIcon || t === n.Nd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -6221,4 +6221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6cb5b4e7b0b49c96e2a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3f35826fdbcacaae7b82.js.map

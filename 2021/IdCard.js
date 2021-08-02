@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.ad44ffc2072b50a34e73.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.70bd92919114f6a1c6d1.js
+// Retrieved at 8/2/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1840,7 +1840,7 @@
 			}) => i.a.createElement(m.q, {
 				className: e,
 				disabled: b || l,
-				onClick: () => n === u.Id.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => n === u.Jd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: o,
 				onMouseLeave: a,
 				priority: m.b.Secondary,
@@ -4803,7 +4803,7 @@
 								experimentName: i.B,
 								expEventOverride: t
 							});
-							return !!(Object(i.be)(n) ? void 0 : n)
+							return !!(Object(i.de)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -4868,15 +4868,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.Jd.Add:
+					case r.Kd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.Jd.Start:
+					case r.Kd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.Jd.Create:
+					case r.Kd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -6477,4 +6477,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ad44ffc2072b50a34e73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.70bd92919114f6a1c6d1.js.map
