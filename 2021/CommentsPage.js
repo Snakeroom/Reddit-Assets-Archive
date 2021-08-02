@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.288adfca2f5c20d3dcd4.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.b83fa3d609bfb150d75b.js
+// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -341,7 +341,7 @@
 						partialCommentId: c
 					} = e.params, {
 						subredditName: l
-					} = e.params || "", m = d ? Object(u.s)(d) : "", p = c && Object(T.g)(c), {
+					} = e.params || "", m = d ? Object(u.s)(d) : "", p = c && Object(T.h)(c), {
 						path: g,
 						queryParams: C
 					} = e, y = Object(f.d)(g), {
@@ -2498,7 +2498,7 @@
 						subredditType: J,
 						onPresenceIndicatorInViewport: Z,
 						allowNFTs: X
-					} = e, $ = Object(R.a)(), ee = o.isDeleted, te = !y && !ee && !!u && u.length > 0, se = Object(V.a)(B.c.edit, o.id), oe = Object(V.a)(B.c.replyToComment, o.id), ne = Object(de.a)(L), re = o.authorIsContractor && J === Ht.f.EmployeesOnly, ie = o.isLocked, ae = ne && T, ce = !y && !ee && (k || O), me = !!m && Object(Kt.e)(m) === o.author, [pe, ue] = Object(i.useState)(null), [he, be] = Object(i.useState)(null), ge = Object(le.f)(o) ? xs : Dt.a, Ce = Object(le.f)(o) ? fs : hs;
+					} = e, $ = Object(R.a)(), ee = o.isDeleted, te = !y && !ee && !!u && u.length > 0, se = Object(V.a)(B.c.edit, o.id), oe = Object(V.a)(B.c.replyToComment, o.id), ne = Object(de.a)(L), re = o.authorIsContractor && J === Ht.f.EmployeesOnly, ie = o.isLocked, ae = ne && T, ce = !y && !ee && (k || O), me = !!m && Object(Kt.e)(m) === o.author, [pe, ue] = Object(i.useState)(null), [he, be] = Object(i.useState)(null), ge = Object(le.f)(o) || Object(le.g)(o) ? xs : Dt.a, Ce = Object(le.f)(o) ? fs : hs;
 					Object(i.useEffect)(() => {
 						if (!y && !ee && (g && ue(a.a.createElement(Ct, null)), null !== x)) {
 							if (x.glowHexColor) {
@@ -2555,7 +2555,9 @@
 						hoverDivClassName: es.a.AuthorHoverDiv,
 						postOrComment: o,
 						tooltipIdPrefix: "AvatarUserInfoTooltip",
-						tooltipType: Q ? Pt.c.Lightbox : void 0
+						tooltipType: Q ? Pt.c.Lightbox : void 0,
+						collapsed: r,
+						isCommentAuthorBlocked: Object(le.g)(o)
 					}, a.a.createElement(ge, {
 						className: es.a.UserIconContainer,
 						to: `/user/${o.author}/`
@@ -2568,7 +2570,9 @@
 						userName: o.author,
 						isHighlighted: w,
 						shouldShowPresenceIndicator: fe,
-						onPresenceIndicatorInViewport: ve
+						onPresenceIndicatorInViewport: ve,
+						isCommentAuthorBlocked: Object(le.g)(o),
+						collapsed: r
 					}) : a.a.createElement("div", {
 						className: es.a.UserIcon
 					}), S && a.a.createElement(It.a, {
@@ -6962,7 +6966,7 @@
 						partialCommentId: r,
 						partialPostId: i,
 						subredditName: d
-					} = e.match.params, c = Object(X.s)(i), l = r && Object(Z.g)(r);
+					} = e.match.params, c = Object(X.s)(i), l = r && Object(Z.h)(r);
 					return m.a.createElement(J.a, {
 						postId: c
 					}, m.a.createElement(gt, {
@@ -7679,7 +7683,7 @@
 							const {
 								partialCommentId: t
 							} = e.match.params;
-							return t && Object(u.g)(t)
+							return t && Object(u.h)(t)
 						})(e),
 						i = (e => {
 							const {
@@ -7943,4 +7947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.288adfca2f5c20d3dcd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b83fa3d609bfb150d75b.js.map

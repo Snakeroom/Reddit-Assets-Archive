@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.72c447982eddd7e6bde1.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e06f4a4939b005dc1ebe.js
+// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -752,7 +752,7 @@
 					scrollToAndRemeasure: n
 				}) => async (r, o) => {
 					const s = o(),
-						c = Object(y.h)(e),
+						c = Object(y.i)(e),
 						d = Object(v.n)(s, {
 							commentLink: c,
 							commentsPageKey: t
@@ -2190,8 +2190,8 @@
 						let d = null;
 						return o && (c[o] = {
 							...s[o],
-							prev: Object(S.h)(n.id)
-						}, d = Object(S.h)(o)), {
+							prev: Object(S.i)(n.id)
+						}, d = Object(S.i)(o)), {
 							...e,
 							[r]: {
 								...e[r],
@@ -2216,10 +2216,10 @@
 						const a = c[o].next;
 						return a && (d[a.id] = {
 							...c[a.id],
-							prev: Object(S.h)(n.id)
+							prev: Object(S.i)(n.id)
 						}, i = a), d[o] = {
 							...c[o],
-							next: Object(S.h)(n.id)
+							next: Object(S.i)(n.id)
 						}, {
 							...e,
 							[r]: {
@@ -2228,7 +2228,7 @@
 								[n.id]: {
 									depth: s,
 									next: i,
-									prev: Object(S.h)(o)
+									prev: Object(S.i)(o)
 								}
 							}
 						}
@@ -2727,4 +2727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.72c447982eddd7e6bde1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e06f4a4939b005dc1ebe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.31c8dae43caead34fe72.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e5f0d6287eec946a6c75.js
+// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1943,38 +1943,40 @@
 				O = Object(c.b)(v);
 			t.a = O(e => {
 				const {
-					currentUser: t,
-					iconUrl: r,
-					isHighlighted: o,
-					isNSFW: c,
-					shouldShowPresenceIndicator: a,
-					user: p,
-					userName: b,
-					onPresenceIndicatorInViewport: v,
-					omitResponsivePresenceWrapper: O,
-					isNft: I,
-					...y
-				} = e, j = !!t && Object(d.e)(t) === b, k = j ? t : p, S = k && k.accountIcon || r, w = p ? p.isNSFW : c, E = Object(l.a)(S), x = E ? i.a.createElement(f.a, {
-					headshot: S,
+					collapsed: t,
+					currentUser: r,
+					iconUrl: o,
+					isCommentAuthorBlocked: c,
+					isHighlighted: a,
+					isNSFW: p,
+					shouldShowPresenceIndicator: b,
+					user: v,
+					userName: O,
+					onPresenceIndicatorInViewport: I,
+					omitResponsivePresenceWrapper: y,
+					isNft: j,
+					...k
+				} = e, S = !!r && Object(d.e)(r) === O, w = S ? r : v, E = w && w.accountIcon || o, x = v ? v.isNSFW : p, T = Object(l.a)(E) && !c, C = T ? i.a.createElement(f.a, {
+					headshot: E,
 					className: e.className
-				}) : i.a.createElement(_.b, h({}, y, {
-					iconUrl: S,
-					isCurrentUser: j,
-					isNSFW: w
+				}) : i.a.createElement(_.b, h({}, k, {
+					iconUrl: c && t ? "https://www.redditstatic.com/avatars/defaults/avatar_default_3.png" : E,
+					isCurrentUser: S,
+					isNSFW: x
 				}));
-				return O ? x : i.a.createElement("div", {
+				return y ? C : i.a.createElement("div", {
 					className: Object(n.a)(g.a.userIconWrapper, {
-						[g.a.nftUserIcon]: I,
-						[g.a.hasHeadShotWrapper]: E
+						[g.a.nftUserIcon]: j,
+						[g.a.hasHeadShotWrapper]: T
 					})
-				}, I && i.a.createElement(m.a, {
+				}, j && i.a.createElement(m.a, {
 					className: g.a.nftAnimation,
 					assetUrl: `${s.a.assetPath}/img/snoovatars/nft_comment_animation.json`,
 					loop: !0
-				}), x, a && i.a.createElement(u.a, {
+				}), C, b && i.a.createElement(u.a, {
 					showPresence: !0,
-					isHighlighted: o,
-					onceInViewport: v
+					isHighlighted: a,
+					onceInViewport: I
 				}))
 			})
 		},
@@ -3016,7 +3018,7 @@
 								partialPostId: i
 							} = e.match.params, s = Object(_.s)(i), c = Object(l.a)(e, t, t.posts.models[s]);
 							if (!c) return;
-							const d = o && Object(f.g)(o),
+							const d = o && Object(f.h)(o),
 								{
 									sortToUse: u
 								} = Object(a.a)(t, s);
@@ -4221,4 +4223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.31c8dae43caead34fe72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e5f0d6287eec946a6c75.js.map

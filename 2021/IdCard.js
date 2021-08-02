@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.5e9e6dd21aa775b5e961.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ba784b9d6982e94fb3d0.js
+// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5884,8 +5884,8 @@
 						let a = null;
 						return r && (o[r] = {
 							...i[r],
-							prev: Object(k.h)(n.id)
-						}, a = Object(k.h)(r)), {
+							prev: Object(k.i)(n.id)
+						}, a = Object(k.i)(r)), {
 							...e,
 							[s]: {
 								...e[s],
@@ -5910,10 +5910,10 @@
 						const d = o[r].next;
 						return d && (a[d.id] = {
 							...o[d.id],
-							prev: Object(k.h)(n.id)
+							prev: Object(k.i)(n.id)
 						}, c = d), a[r] = {
 							...o[r],
-							next: Object(k.h)(n.id)
+							next: Object(k.i)(n.id)
 						}, {
 							...e,
 							[s]: {
@@ -5922,7 +5922,7 @@
 								[n.id]: {
 									depth: i,
 									next: c,
-									prev: Object(k.h)(r)
+									prev: Object(k.i)(r)
 								}
 							}
 						}
@@ -6477,4 +6477,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.5e9e6dd21aa775b5e961.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ba784b9d6982e94fb3d0.js.map

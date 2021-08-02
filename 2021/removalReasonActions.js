@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.6f348521dec2661452f5.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.37eec4cdead2fd395cae.js
+// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -767,7 +767,7 @@
 					scrollToAndRemeasure: n
 				}) => async (s, r) => {
 					const o = r(),
-						c = Object(y.h)(e),
+						c = Object(y.i)(e),
 						d = Object(S.n)(o, {
 							commentLink: c,
 							commentsPageKey: t
@@ -2712,8 +2712,8 @@
 						let d = null;
 						return r && (c[r] = {
 							...o[r],
-							prev: Object(C.h)(n.id)
-						}, d = Object(C.h)(r)), {
+							prev: Object(C.i)(n.id)
+						}, d = Object(C.i)(r)), {
 							...e,
 							[s]: {
 								...e[s],
@@ -2738,10 +2738,10 @@
 						const a = c[r].next;
 						return a && (d[a.id] = {
 							...c[a.id],
-							prev: Object(C.h)(n.id)
+							prev: Object(C.i)(n.id)
 						}, i = a), d[r] = {
 							...c[r],
-							next: Object(C.h)(n.id)
+							next: Object(C.i)(n.id)
 						}, {
 							...e,
 							[s]: {
@@ -2750,7 +2750,7 @@
 								[n.id]: {
 									depth: o,
 									next: i,
-									prev: Object(C.h)(r)
+									prev: Object(C.i)(r)
 								}
 							}
 						}
@@ -3249,4 +3249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6f348521dec2661452f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.37eec4cdead2fd395cae.js.map

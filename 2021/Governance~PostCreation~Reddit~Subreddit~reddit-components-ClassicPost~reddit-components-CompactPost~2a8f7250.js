@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.c40613683e2194ad2c93.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.81edf06c5c4677444c0e.js
+// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, r) {
@@ -2036,8 +2036,8 @@
 						let a = null;
 						return n && (i[n] = {
 							...o[n],
-							prev: Object(S.h)(r.id)
-						}, a = Object(S.h)(n)), {
+							prev: Object(S.i)(r.id)
+						}, a = Object(S.i)(n)), {
 							...e,
 							[s]: {
 								...e[s],
@@ -2062,10 +2062,10 @@
 						const d = i[n].next;
 						return d && (a[d.id] = {
 							...i[d.id],
-							prev: Object(S.h)(r.id)
+							prev: Object(S.i)(r.id)
 						}, c = d), a[n] = {
 							...i[n],
-							next: Object(S.h)(r.id)
+							next: Object(S.i)(r.id)
 						}, {
 							...e,
 							[s]: {
@@ -2074,7 +2074,7 @@
 								[r.id]: {
 									depth: o,
 									next: c,
-									prev: Object(S.h)(n)
+									prev: Object(S.i)(n)
 								}
 							}
 						}
@@ -2518,4 +2518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.c40613683e2194ad2c93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.81edf06c5c4677444c0e.js.map
