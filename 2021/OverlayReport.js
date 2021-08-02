@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayReport.e67bca30589a79ebfa92.js
-// Retrieved at 7/28/2021, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayReport.5016ba06ca6394e69141.js
+// Retrieved at 8/2/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayReport"], {
 		"./src/chat/components/OverlayReport/index.tsx": function(e, t, s) {
@@ -37,8 +37,8 @@
 			var v = s("./src/chat/controls/Checkbox/index.tsx"),
 				f = s("./src/chat/controls/Overlay/index.tsx"),
 				B = s("./src/chat/controls/OverlayControlBar/index.tsx"),
-				S = s("./src/chat/helpers/chatSelector.ts"),
-				E = s("./src/chat/helpers/dom.ts"),
+				E = s("./src/chat/helpers/chatSelector.ts"),
+				S = s("./src/chat/helpers/dom.ts"),
 				R = s("./src/chat/models/ReportFlow/index.ts"),
 				w = s("./src/chat/routes/chat.ts"),
 				j = s("./src/chat/selectors/channels.ts"),
@@ -48,7 +48,7 @@
 				T = s("./src/chat/selectors/messages.ts");
 			const U = d.a.wrapped(v.a, "Checkbox", F.a),
 				D = d.a.div("ListItem", F.a),
-				N = Object(S.a)({
+				N = Object(E.a)({
 					user: (e, t) => t.attr === w.a.User ? e.contacts.models[t.attrId] : void 0,
 					message: (e, t) => t.attr === w.a.Invite || t.attr === w.a.Message ? Object(T.b)(e, Number(t.attrId)) : void 0,
 					messageList: e => Object(j.B)(e),
@@ -173,7 +173,7 @@
 						user: s
 					} = this.props;
 					return c.a.createElement(f.a, {
-						onSubmit: Object(E.a)(this.onSubmit),
+						onSubmit: Object(S.a)(this.onSubmit),
 						form: !0
 					}, c.a.createElement(p.a, {
 						channelId: e,
@@ -277,9 +277,9 @@
 				v = o.a.wrapped(g, "Unchecked", O.a),
 				f = o.a.span("Wrapper", O.a),
 				B = o.a.span("Content", O.a),
-				S = o.a.span("Control", O.a),
-				E = o.a.label("CheckInput", O.a);
-			t.a = e => n.a.createElement(E, {
+				E = o.a.span("Control", O.a),
+				S = o.a.label("CheckInput", O.a);
+			t.a = e => n.a.createElement(S, {
 				className: Object(r.a)(e.className, {
 					[O.a.checked]: e.checked
 				}),
@@ -287,7 +287,7 @@
 					height: e.height || void 0,
 					width: e.width || void 0
 				}
-			}, n.a.createElement(f, null, e.children && !e.rightPosition && n.a.createElement(B, null, e.children), n.a.createElement(S, null, n.a.createElement(k, {
+			}, n.a.createElement(f, null, e.children && !e.rightPosition && n.a.createElement(B, null, e.children), n.a.createElement(E, null, n.a.createElement(k, {
 				tabIndex: 0,
 				type: e.type || "checkbox",
 				checked: e.checked,
@@ -398,10 +398,10 @@
 				e.UnsolicitedMessaging = "Unsolicited messaging"
 			}(n || (n = {})),
 			function(e) {
-				e.R2 = "R2"
+				e.R2 = "R2", e.MWEB = "MWEB", e.D2X = "D2X"
 			}(r || (r = {}));
 			new Set(Object.values(r))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.e67bca30589a79ebfa92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayReport.5016ba06ca6394e69141.js.map

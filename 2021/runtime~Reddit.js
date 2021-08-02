@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8524486e54c0c8064541.js
-// Retrieved at 8/2/2021, 3:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.0d9fb4d1b596e90f7e49.js
+// Retrieved at 8/2/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1238,7 +1238,7 @@
 						EconPowerupsMarketingModal: "5919f2a353267d770957",
 						EmailCollectionBanner: "0e746c4b5fc2167096a2",
 						EmailVerificationModals: "e1c3de4557b7c7707988",
-						FramedModal: "9522e688817a60f0fe46",
+						FramedModal: "4a067d239367cb4d9b64",
 						FrontpageLinks: "a53c04d928d033c9bd28",
 						Geotagging: "f0eeff48691236d321d6",
 						GlobalModalContainer: "57ef2b4ab349b31f953b",
@@ -1288,7 +1288,7 @@
 						"translations/es_MX-json": "a88b207d467f7fc7f68e",
 						"translations/fr_FR-json": "c95460acb8d75a488660",
 						"translations/it_IT-json": "bce3a4500247c42de2ab",
-						"translations/pseudo_ext-json": "49e2cbfd73ae2b289c61",
+						"translations/pseudo_ext-json": "b4c8fea96c6331e640cd",
 						"translations/pseudo_long-json": "49ad3eb300f28de23e14",
 						"translations/pseudo_short-json": "85910562a0ee6a0c4e9a",
 						"translations/pt_BR-json": "b23676021403c59b8650",
@@ -1301,7 +1301,7 @@
 						FlairEdit: "9557dfc8f70e083c8741",
 						"vendors~Chat~PostCreation~RedesignChat": "bc666e204513e3f2e137",
 						"vendors~Chat~RedesignChat": "586978443e67abc13d40",
-						"Chat~RedesignChat": "2cefe94e6120666e3ebc",
+						"Chat~RedesignChat": "99444b3c705aeeccf530",
 						RedesignChat: "29c2db7ff3e5307e1dd7",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "e49fe1f971f94d678e11",
@@ -1346,7 +1346,7 @@
 						gildActions: "81c1cf23ea5030c05ef1",
 						ContributorRequestButton: "a3b92b38594608a83c56",
 						CryptoVault: "3e6f93981a6f57e4093c",
-						ReportFlow: "775a6560d3f688dc0985",
+						ReportFlow: "a2d4ce48775873282402",
 						MuxEmbed: "ff75e8d29e1058ba0d77",
 						ReportFlowNew: "bbf95b900bd5d297e330",
 						RichTextJsonEmoteTooltip: "65d06a406a6ec05d2803",
@@ -1410,7 +1410,7 @@
 						OverlayDirectsEmptyState: "08faa3ebb8c51567230b",
 						OverlayKickUser: "69f2dbf70082cfcec90e",
 						OverlayNSFWWarning: "5a3763abf6f22ac0bd24",
-						OverlayReport: "e67bca30589a79ebfa92",
+						OverlayReport: "5016ba06ca6394e69141",
 						ThemePanel: "ed10c5f736f23c3348a1",
 						CommentRichUnit: "388bb1d46c0812ea12bf",
 						PostRichUnit: "a8cbc902fd823b5e8889",
@@ -1540,4 +1540,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8524486e54c0c8064541.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0d9fb4d1b596e90f7e49.js.map
