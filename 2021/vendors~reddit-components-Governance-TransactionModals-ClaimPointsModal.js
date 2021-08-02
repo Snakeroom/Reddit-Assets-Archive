@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.3b99f290b21c2292754f.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.45c45dc2b0aa3d257b7c.js
+// Retrieved at 8/2/2021, 12:50:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal", "vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033", "CryptoLibEthers", "vendors~reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, r, t) {
@@ -1475,7 +1475,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, r, t) {
 			var n = t("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = t("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = t("./node_modules/buffer/index.js").Buffer;
+				i = t("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
 
 			function s(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -2050,4 +2050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.3b99f290b21c2292754f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal.45c45dc2b0aa3d257b7c.js.map

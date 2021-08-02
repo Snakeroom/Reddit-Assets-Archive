@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~xml2js.2811349dbc1fc6bf5a4b.js
-// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~xml2js.88f76e2e07b71eb98128.js
+// Retrieved at 8/2/2021, 12:50:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~xml2js"], {
 		"./node_modules/sax/lib/sax.js": function(t, e, i) {
@@ -72,7 +72,7 @@
 									}
 									continue;
 								case v.SGML_DECL:
-									(this.sgmlDecl + n).toUpperCase() === u ? (A(this, "onopencdata"), this.state = v.CDATA, this.sgmlDecl = "", this.cdata = "") : this.sgmlDecl + n === "--" ? (this.state = v.COMMENT, this.comment = "", this.sgmlDecl = "") : (this.sgmlDecl + n).toUpperCase() === l ? (this.state = v.DOCTYPE, (this.doctype || this.sawRoot) && P(this, "Inappropriately located doctype declaration"), this.doctype = "", this.sgmlDecl = "") : ">" === n ? (A(this, "onsgmldeclaration", this.sgmlDecl), this.sgmlDecl = "", this.state = v.TEXT) : _(n) ? (this.state = v.SGML_DECL_QUOTED, this.sgmlDecl += n) : this.sgmlDecl += n;
+									(this.sgmlDecl + n).toUpperCase() === l ? (A(this, "onopencdata"), this.state = v.CDATA, this.sgmlDecl = "", this.cdata = "") : this.sgmlDecl + n === "--" ? (this.state = v.COMMENT, this.comment = "", this.sgmlDecl = "") : (this.sgmlDecl + n).toUpperCase() === u ? (this.state = v.DOCTYPE, (this.doctype || this.sawRoot) && P(this, "Inappropriately located doctype declaration"), this.doctype = "", this.sgmlDecl = "") : ">" === n ? (A(this, "onsgmldeclaration", this.sgmlDecl), this.sgmlDecl = "", this.state = v.TEXT) : _(n) ? (this.state = v.SGML_DECL_QUOTED, this.sgmlDecl += n) : this.sgmlDecl += n;
 									continue;
 								case v.SGML_DECL_QUOTED:
 									n === this.q && (this.state = v.SGML_DECL, this.q = ""), this.sgmlDecl += n;
@@ -212,8 +212,8 @@
 									}
 									n = Math.max(n, a)
 								}
-								var u = e.MAX_BUFFER_LENGTH - n;
-								t.bufferCheckPosition = u + t.position
+								var l = e.MAX_BUFFER_LENGTH - n;
+								t.bufferCheckPosition = l + t.position
 							}(this);
 							return this
 						},
@@ -281,8 +281,8 @@
 							e.splice(0, 0, t), i.emit.apply(i, e)
 						}), n.prototype.on.call(i, t, e)
 					};
-					var u = "[CDATA[",
-						l = "DOCTYPE",
+					var l = "[CDATA[",
+						u = "DOCTYPE",
 						c = "http://www.w3.org/XML/1998/namespace",
 						h = "http://www.w3.org/2000/xmlns/",
 						p = {
@@ -704,20 +704,20 @@
 							}));
 							for (var s = 0, o = t.attribList.length; s < o; s++) {
 								var a = t.attribList[s],
-									u = a[0],
-									l = a[1],
-									c = S(u, !0),
+									l = a[0],
+									u = a[1],
+									c = S(l, !0),
 									h = c.prefix,
 									p = c.local,
 									d = "" === h ? "" : i.ns[h] || "",
 									f = {
-										name: u,
-										value: l,
+										name: l,
+										value: u,
 										prefix: h,
 										local: p,
 										uri: d
 									};
-								h && "xmlns" !== h && !d && (P(t, "Unbound namespace prefix: " + JSON.stringify(h)), f.uri = h), t.tag.attributes[u] = f, A(t, "onattribute", f)
+								h && "xmlns" !== h && !d && (P(t, "Unbound namespace prefix: " + JSON.stringify(h)), f.uri = h), t.tag.attributes[l] = f, A(t, "onattribute", f)
 							}
 							t.attribList.length = 0
 						}
@@ -744,8 +744,8 @@
 							t.tagName = t.tag.name, A(t, "onclosetag", t.tagName);
 							var o = {};
 							for (var a in s.ns) o[a] = s.ns[a];
-							var u = t.tags[t.tags.length - 1] || t;
-							t.opt.xmlns && s.ns !== u.ns && Object.keys(s.ns).forEach((function(e) {
+							var l = t.tags[t.tags.length - 1] || t;
+							t.opt.xmlns && s.ns !== l.ns && Object.keys(s.ns).forEach((function(e) {
 								var i = s.ns[e];
 								A(t, "onclosenamespace", {
 									prefix: e,
@@ -789,7 +789,7 @@
 						writable: !0
 					}) : String.fromCodePoint = x)
 				}(e)
-			}).call(this, i("./node_modules/buffer/index.js").Buffer)
+			}).call(this, i("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./node_modules/xml2js/lib/bom.js": function(t, e) {
 			(function() {
@@ -816,29 +816,29 @@
 						for (e in t) a.call(t, e) && (r = t[e], this.options[e] = r)
 					}
 					return e.prototype.buildObject = function(e) {
-						var i, r, u, l, c, h;
-						return i = this.options.attrkey, r = this.options.charkey, 1 === Object.keys(e).length && this.options.rootName === n[.2].rootName ? e = e[c = Object.keys(e)[0]] : c = this.options.rootName, h = this, u = function(t, e) {
-							var n, l, c, p, d, f;
+						var i, r, l, u, c, h;
+						return i = this.options.attrkey, r = this.options.charkey, 1 === Object.keys(e).length && this.options.rootName === n[.2].rootName ? e = e[c = Object.keys(e)[0]] : c = this.options.rootName, h = this, l = function(t, e) {
+							var n, u, c, p, d, f;
 							if ("object" != typeof e) h.options.cdata && s(e) ? t.raw(o(e)) : t.txt(e);
 							else if (Array.isArray(e)) {
 								for (p in e)
 									if (a.call(e, p))
-										for (d in l = e[p]) c = l[d], t = u(t.ele(d), c).up()
+										for (d in u = e[p]) c = u[d], t = l(t.ele(d), c).up()
 							} else
 								for (d in e)
 									if (a.call(e, d))
-										if (l = e[d], d === i) {
-											if ("object" == typeof l)
-												for (n in l) f = l[n], t = t.att(n, f)
-										} else if (d === r) t = h.options.cdata && s(l) ? t.raw(o(l)) : t.txt(l);
-							else if (Array.isArray(l))
-								for (p in l) a.call(l, p) && (t = "string" == typeof(c = l[p]) ? h.options.cdata && s(c) ? t.ele(d).raw(o(c)).up() : t.ele(d, c).up() : u(t.ele(d), c).up());
-							else "object" == typeof l ? t = u(t.ele(d), l).up() : "string" == typeof l && h.options.cdata && s(l) ? t = t.ele(d).raw(o(l)).up() : (null == l && (l = ""), t = t.ele(d, l.toString()).up());
+										if (u = e[d], d === i) {
+											if ("object" == typeof u)
+												for (n in u) f = u[n], t = t.att(n, f)
+										} else if (d === r) t = h.options.cdata && s(u) ? t.raw(o(u)) : t.txt(u);
+							else if (Array.isArray(u))
+								for (p in u) a.call(u, p) && (t = "string" == typeof(c = u[p]) ? h.options.cdata && s(c) ? t.ele(d).raw(o(c)).up() : t.ele(d, c).up() : l(t.ele(d), c).up());
+							else "object" == typeof u ? t = l(t.ele(d), u).up() : "string" == typeof u && h.options.cdata && s(u) ? t = t.ele(d).raw(o(u)).up() : (null == u && (u = ""), t = t.ele(d, u.toString()).up());
 							return t
-						}, l = t.create(c, this.options.xmldec, this.options.doctype, {
+						}, u = t.create(c, this.options.xmldec, this.options.doctype, {
 							headless: this.options.headless,
 							allowSurrogateChars: this.options.allowSurrogateChars
-						}), u(l, e).end(this.options.renderOpts)
+						}), l(u, e).end(this.options.renderOpts)
 					}, e
 				}()
 			}).call(this)
@@ -918,13 +918,13 @@
 		"./node_modules/xml2js/lib/parser.js": function(t, e, i) {
 			(function() {
 				"use strict";
-				var t, n, r, s, o, a, u, l, c = function(t, e) {
+				var t, n, r, s, o, a, l, u, c = function(t, e) {
 						return function() {
 							return t.apply(e, arguments)
 						}
 					},
 					h = {}.hasOwnProperty;
-				u = i("./node_modules/sax/lib/sax.js"), r = i("./node_modules/node-libs-browser/node_modules/events/events.js"), t = i("./node_modules/xml2js/lib/bom.js"), a = i("./node_modules/xml2js/lib/processors.js"), l = i("./node_modules/timers-browserify/main.js").setImmediate, n = i("./node_modules/xml2js/lib/defaults.js").defaults, s = function(t) {
+				l = i("./node_modules/sax/lib/sax.js"), r = i("./node_modules/node-libs-browser/node_modules/events/events.js"), t = i("./node_modules/xml2js/lib/bom.js"), a = i("./node_modules/xml2js/lib/processors.js"), u = i("./node_modules/timers-browserify/main.js").setImmediate, n = i("./node_modules/xml2js/lib/defaults.js").defaults, s = function(t) {
 					return "object" == typeof t && null != t && 0 === Object.keys(t).length
 				}, o = function(t, e, i) {
 					var n, r;
@@ -948,7 +948,7 @@
 					}(r, i), r.prototype.processAsync = function() {
 						var t, e;
 						try {
-							return this.remaining.length <= this.options.chunkSize ? (t = this.remaining, this.remaining = "", this.saxParser = this.saxParser.write(t), this.saxParser.close()) : (t = this.remaining.substr(0, this.options.chunkSize), this.remaining = this.remaining.substr(this.options.chunkSize, this.remaining.length), this.saxParser = this.saxParser.write(t), l(this.processAsync))
+							return this.remaining.length <= this.options.chunkSize ? (t = this.remaining, this.remaining = "", this.saxParser = this.saxParser.write(t), this.saxParser.close()) : (t = this.remaining.substr(0, this.options.chunkSize), this.remaining = this.remaining.substr(this.options.chunkSize, this.remaining.length), this.saxParser = this.saxParser.write(t), u(this.processAsync))
 						} catch (i) {
 							if (e = i, !this.saxParser.errThrown) return this.saxParser.errThrown = !0, this.emit(e)
 						}
@@ -956,7 +956,7 @@
 						return e in t ? (t[e] instanceof Array || (t[e] = [t[e]]), t[e].push(i)) : this.options.explicitArray ? t[e] = [i] : t[e] = i
 					}, r.prototype.reset = function() {
 						var t, e, i, n, r;
-						return this.removeAllListeners(), this.saxParser = u.parser(this.options.strict, {
+						return this.removeAllListeners(), this.saxParser = l.parser(this.options.strict, {
 							trim: !1,
 							normalize: !1,
 							xmlns: this.options.xmlns
@@ -968,25 +968,25 @@
 							}
 						}(this), this.saxParser.ended = !1, this.EXPLICIT_CHARKEY = this.options.explicitCharkey, this.resultObject = null, n = [], t = this.options.attrkey, e = this.options.charkey, this.saxParser.onopentag = function(i) {
 							return function(r) {
-								var s, a, u, l, c;
-								if ((u = {})[e] = "", !i.options.ignoreAttrs)
-									for (s in c = r.attributes) h.call(c, s) && (t in u || i.options.mergeAttrs || (u[t] = {}), a = i.options.attrValueProcessors ? o(i.options.attrValueProcessors, r.attributes[s], s) : r.attributes[s], l = i.options.attrNameProcessors ? o(i.options.attrNameProcessors, s) : s, i.options.mergeAttrs ? i.assignOrPush(u, l, a) : u[t][l] = a);
-								return u["#name"] = i.options.tagNameProcessors ? o(i.options.tagNameProcessors, r.name) : r.name, i.options.xmlns && (u[i.options.xmlnskey] = {
+								var s, a, l, u, c;
+								if ((l = {})[e] = "", !i.options.ignoreAttrs)
+									for (s in c = r.attributes) h.call(c, s) && (t in l || i.options.mergeAttrs || (l[t] = {}), a = i.options.attrValueProcessors ? o(i.options.attrValueProcessors, r.attributes[s], s) : r.attributes[s], u = i.options.attrNameProcessors ? o(i.options.attrNameProcessors, s) : s, i.options.mergeAttrs ? i.assignOrPush(l, u, a) : l[t][u] = a);
+								return l["#name"] = i.options.tagNameProcessors ? o(i.options.tagNameProcessors, r.name) : r.name, i.options.xmlns && (l[i.options.xmlnskey] = {
 									uri: r.uri,
 									local: r.local
-								}), n.push(u)
+								}), n.push(l)
 							}
 						}(this), this.saxParser.onclosetag = function(t) {
 							return function() {
-								var i, r, a, u, l, c, p, d, f, m;
-								if (c = n.pop(), l = c["#name"], t.options.explicitChildren && t.options.preserveChildrenOrder || delete c["#name"], !0 === c.cdata && (i = c.cdata, delete c.cdata), f = n[n.length - 1], c[e].match(/^\s*$/) && !i ? (r = c[e], delete c[e]) : (t.options.trim && (c[e] = c[e].trim()), t.options.normalize && (c[e] = c[e].replace(/\s{2,}/g, " ").trim()), c[e] = t.options.valueProcessors ? o(t.options.valueProcessors, c[e], l) : c[e], 1 === Object.keys(c).length && e in c && !t.EXPLICIT_CHARKEY && (c = c[e])), s(c) && (c = "" !== t.options.emptyTag ? t.options.emptyTag : r), null != t.options.validator && (m = "/" + function() {
+								var i, r, a, l, u, c, p, d, f, m;
+								if (c = n.pop(), u = c["#name"], t.options.explicitChildren && t.options.preserveChildrenOrder || delete c["#name"], !0 === c.cdata && (i = c.cdata, delete c.cdata), f = n[n.length - 1], c[e].match(/^\s*$/) && !i ? (r = c[e], delete c[e]) : (t.options.trim && (c[e] = c[e].trim()), t.options.normalize && (c[e] = c[e].replace(/\s{2,}/g, " ").trim()), c[e] = t.options.valueProcessors ? o(t.options.valueProcessors, c[e], u) : c[e], 1 === Object.keys(c).length && e in c && !t.EXPLICIT_CHARKEY && (c = c[e])), s(c) && (c = "" !== t.options.emptyTag ? t.options.emptyTag : r), null != t.options.validator && (m = "/" + function() {
 										var t, e, i;
-										for (i = [], t = 0, e = n.length; t < e; t++) u = n[t], i.push(u["#name"]);
+										for (i = [], t = 0, e = n.length; t < e; t++) l = n[t], i.push(l["#name"]);
 										return i
-									}().concat(l).join("/"), function() {
+									}().concat(u).join("/"), function() {
 										var e;
 										try {
-											c = t.options.validator(m, f && f[l], c)
+											c = t.options.validator(m, f && f[u], c)
 										} catch (i) {
 											return e = i, t.emit("error", e)
 										}
@@ -996,8 +996,8 @@
 											for (a in f[t.options.childkey] = f[t.options.childkey] || [], p = {}, c) h.call(c, a) && (p[a] = c[a]);
 											f[t.options.childkey].push(p), delete c["#name"], 1 === Object.keys(c).length && e in c && !t.EXPLICIT_CHARKEY && (c = c[e])
 										}
-									} else u = {}, t.options.attrkey in c && (u[t.options.attrkey] = c[t.options.attrkey], delete c[t.options.attrkey]), !t.options.charsAsChildren && t.options.charkey in c && (u[t.options.charkey] = c[t.options.charkey], delete c[t.options.charkey]), Object.getOwnPropertyNames(c).length > 0 && (u[t.options.childkey] = c), c = u;
-								return n.length > 0 ? t.assignOrPush(f, l, c) : (t.options.explicitRoot && (d = c, (c = {})[l] = d), t.resultObject = c, t.saxParser.ended = !0, t.emit("end", t.resultObject))
+									} else l = {}, t.options.attrkey in c && (l[t.options.attrkey] = c[t.options.attrkey], delete c[t.options.attrkey]), !t.options.charsAsChildren && t.options.charkey in c && (l[t.options.charkey] = c[t.options.charkey], delete c[t.options.charkey]), Object.getOwnPropertyNames(c).length > 0 && (l[t.options.childkey] = c), c = l;
+								return n.length > 0 ? t.assignOrPush(f, u, c) : (t.options.explicitRoot && (d = c, (c = {})[u] = d), t.resultObject = c, t.saxParser.ended = !0, t.emit("end", t.resultObject))
 							}
 						}(this), i = function(t) {
 							return function(i) {
@@ -1018,7 +1018,7 @@
 							return this.reset(), i(t)
 						})));
 						try {
-							return "" === (e = e.toString()).trim() ? (this.emit("end", null), !0) : (e = t.stripBOM(e), this.options.async ? (this.remaining = e, l(this.processAsync), this.saxParser) : this.saxParser.write(e).close())
+							return "" === (e = e.toString()).trim() ? (this.emit("end", null), !0) : (e = t.stripBOM(e), this.options.async ? (this.remaining = e, u(this.processAsync), this.saxParser) : this.saxParser.write(e).close())
 						} catch (r) {
 							if (n = r, !this.saxParser.errThrown && !this.saxParser.ended) return this.emit("error", n), this.saxParser.errThrown = !0;
 							if (this.saxParser.ended) throw n
@@ -1069,14 +1069,14 @@
 		"./node_modules/xmlbuilder/lib/Utility.js": function(t, e) {
 			(function() {
 				var e, i, n, r, s, o, a = [].slice,
-					u = {}.hasOwnProperty;
+					l = {}.hasOwnProperty;
 				e = function() {
 					var t, e, i, n, s, o;
 					if (o = arguments[0], s = 2 <= arguments.length ? a.call(arguments, 1) : [], r(Object.assign)) Object.assign.apply(null, arguments);
 					else
 						for (t = 0, i = s.length; t < i; t++)
 							if (null != (n = s[t]))
-								for (e in n) u.call(n, e) && (o[e] = n[e]);
+								for (e in n) l.call(n, e) && (o[e] = n[e]);
 					return o
 				}, r = function(t) {
 					return !!t && "[object Function]" === Object.prototype.toString.call(t)
@@ -1089,7 +1089,7 @@
 					var e;
 					if (i(t)) return !t.length;
 					for (e in t)
-						if (u.call(t, e)) return !1;
+						if (l.call(t, e)) return !1;
 					return !0
 				}, o = function(t) {
 					var e, i;
@@ -1277,14 +1277,14 @@
 		},
 		"./node_modules/xmlbuilder/lib/XMLDocType.js": function(t, e, i) {
 			(function() {
-				var e, n, r, s, o, a, u = {}.hasOwnProperty;
+				var e, n, r, s, o, a, l = {}.hasOwnProperty;
 				a = i("./node_modules/xmlbuilder/lib/Utility.js").isObject, o = i("./node_modules/xmlbuilder/lib/XMLNode.js"), e = i("./node_modules/xmlbuilder/lib/XMLDTDAttList.js"), r = i("./node_modules/xmlbuilder/lib/XMLDTDEntity.js"), n = i("./node_modules/xmlbuilder/lib/XMLDTDElement.js"), s = i("./node_modules/xmlbuilder/lib/XMLDTDNotation.js"), t.exports = function(t) {
 					function i(t, e, n) {
 						var r, s;
 						i.__super__.constructor.call(this, t), this.documentObject = t, a(e) && (e = (r = e).pubID, n = r.sysID), null == n && (n = (s = [e, n])[0], e = s[1]), null != e && (this.pubID = this.stringify.dtdPubID(e)), null != n && (this.sysID = this.stringify.dtdSysID(n))
 					}
 					return function(t, e) {
-						for (var i in e) u.call(e, i) && (t[i] = e[i]);
+						for (var i in e) l.call(e, i) && (t[i] = e[i]);
 
 						function n() {
 							this.constructor = t
@@ -1348,8 +1348,8 @@
 		},
 		"./node_modules/xmlbuilder/lib/XMLDocumentCB.js": function(t, e, i) {
 			(function() {
-				var e, n, r, s, o, a, u, l, c, h, p, d, f, m, y, b, _, g, w, T = {}.hasOwnProperty;
-				w = i("./node_modules/xmlbuilder/lib/Utility.js"), _ = w.isObject, b = w.isFunction, g = w.isPlainObject, h = i("./node_modules/xmlbuilder/lib/XMLElement.js"), n = i("./node_modules/xmlbuilder/lib/XMLCData.js"), r = i("./node_modules/xmlbuilder/lib/XMLComment.js"), d = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), y = i("./node_modules/xmlbuilder/lib/XMLText.js"), p = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"), l = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), c = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), s = i("./node_modules/xmlbuilder/lib/XMLDTDAttList.js"), a = i("./node_modules/xmlbuilder/lib/XMLDTDEntity.js"), o = i("./node_modules/xmlbuilder/lib/XMLDTDElement.js"), u = i("./node_modules/xmlbuilder/lib/XMLDTDNotation.js"), e = i("./node_modules/xmlbuilder/lib/XMLAttribute.js"), m = i("./node_modules/xmlbuilder/lib/XMLStringifier.js"), f = i("./node_modules/xmlbuilder/lib/XMLStringWriter.js"), t.exports = function() {
+				var e, n, r, s, o, a, l, u, c, h, p, d, f, m, y, b, _, g, w, T = {}.hasOwnProperty;
+				w = i("./node_modules/xmlbuilder/lib/Utility.js"), _ = w.isObject, b = w.isFunction, g = w.isPlainObject, h = i("./node_modules/xmlbuilder/lib/XMLElement.js"), n = i("./node_modules/xmlbuilder/lib/XMLCData.js"), r = i("./node_modules/xmlbuilder/lib/XMLComment.js"), d = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), y = i("./node_modules/xmlbuilder/lib/XMLText.js"), p = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"), u = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), c = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), s = i("./node_modules/xmlbuilder/lib/XMLDTDAttList.js"), a = i("./node_modules/xmlbuilder/lib/XMLDTDEntity.js"), o = i("./node_modules/xmlbuilder/lib/XMLDTDElement.js"), l = i("./node_modules/xmlbuilder/lib/XMLDTDNotation.js"), e = i("./node_modules/xmlbuilder/lib/XMLAttribute.js"), m = i("./node_modules/xmlbuilder/lib/XMLStringifier.js"), f = i("./node_modules/xmlbuilder/lib/XMLStringWriter.js"), t.exports = function() {
 					function t(t, e, i) {
 						var n;
 						t || (t = {}), t.writer ? g(t.writer) && (n = t.writer, t.writer = new f(n)) : t.writer = new f(t), this.options = t, this.writer = t.writer, this.stringify = new m(t), this.onDataCallback = e || function() {}, this.onEndCallback = i || function() {}, this.currentNode = null, this.currentLevel = -1, this.openTags = {}, this.documentStarted = !1, this.documentCompleted = !1, this.root = null
@@ -1391,7 +1391,7 @@
 					}, t.prototype.declaration = function(t, e, i) {
 						var n;
 						if (this.openCurrent(), this.documentStarted) throw new Error("declaration() must be the first node");
-						return n = new l(this, t, e, i), this.onData(this.writer.declaration(n, this.currentLevel + 1)), this
+						return n = new u(this, t, e, i), this.onData(this.writer.declaration(n, this.currentLevel + 1)), this
 					}, t.prototype.doctype = function(t, e, i) {
 						if (this.openCurrent(), null == t) throw new Error("Missing root node name");
 						if (this.root) throw new Error("dtd() must come before the root node");
@@ -1410,7 +1410,7 @@
 						return this.openCurrent(), i = new a(this, !0, t, e), this.onData(this.writer.dtdEntity(i, this.currentLevel + 1)), this
 					}, t.prototype.notation = function(t, e) {
 						var i;
-						return this.openCurrent(), i = new u(this, t, e), this.onData(this.writer.dtdNotation(i, this.currentLevel + 1)), this
+						return this.openCurrent(), i = new l(this, t, e), this.onData(this.writer.dtdNotation(i, this.currentLevel + 1)), this
 					}, t.prototype.up = function() {
 						if (this.currentLevel < 0) throw new Error("The document node has no parent");
 						return this.currentNode ? (this.currentNode.children ? this.closeNode(this.currentNode) : this.openNode(this.currentNode), this.currentNode = null) : this.closeNode(this.openTags[this.currentLevel]), delete this.openTags[this.currentLevel], this.currentLevel--, this
@@ -1518,26 +1518,26 @@
 		},
 		"./node_modules/xmlbuilder/lib/XMLNode.js": function(t, e, i) {
 			(function() {
-				var e, n, r, s, o, a, u, l, c, h, p, d, f = {}.hasOwnProperty;
-				d = i("./node_modules/xmlbuilder/lib/Utility.js"), p = d.isObject, h = d.isFunction, c = d.isEmpty, o = null, e = null, n = null, r = null, s = null, u = null, l = null, a = null, t.exports = function() {
+				var e, n, r, s, o, a, l, u, c, h, p, d, f = {}.hasOwnProperty;
+				d = i("./node_modules/xmlbuilder/lib/Utility.js"), p = d.isObject, h = d.isFunction, c = d.isEmpty, o = null, e = null, n = null, r = null, s = null, l = null, u = null, a = null, t.exports = function() {
 					function t(t) {
-						this.parent = t, this.parent && (this.options = this.parent.options, this.stringify = this.parent.stringify), this.children = [], o || (o = i("./node_modules/xmlbuilder/lib/XMLElement.js"), e = i("./node_modules/xmlbuilder/lib/XMLCData.js"), n = i("./node_modules/xmlbuilder/lib/XMLComment.js"), r = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), s = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), u = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), l = i("./node_modules/xmlbuilder/lib/XMLText.js"), a = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"))
+						this.parent = t, this.parent && (this.options = this.parent.options, this.stringify = this.parent.stringify), this.children = [], o || (o = i("./node_modules/xmlbuilder/lib/XMLElement.js"), e = i("./node_modules/xmlbuilder/lib/XMLCData.js"), n = i("./node_modules/xmlbuilder/lib/XMLComment.js"), r = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), s = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), l = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), u = i("./node_modules/xmlbuilder/lib/XMLText.js"), a = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"))
 					}
 					return t.prototype.element = function(t, e, i) {
-						var n, r, s, o, a, u, l, d, m, y;
-						if (u = null, null == e && (e = {}), e = e.valueOf(), p(e) || (i = (m = [e, i])[0], e = m[1]), null != t && (t = t.valueOf()), Array.isArray(t))
-							for (s = 0, l = t.length; s < l; s++) r = t[s], u = this.element(r);
-						else if (h(t)) u = this.element(t.apply());
+						var n, r, s, o, a, l, u, d, m, y;
+						if (l = null, null == e && (e = {}), e = e.valueOf(), p(e) || (i = (m = [e, i])[0], e = m[1]), null != t && (t = t.valueOf()), Array.isArray(t))
+							for (s = 0, u = t.length; s < u; s++) r = t[s], l = this.element(r);
+						else if (h(t)) l = this.element(t.apply());
 						else if (p(t)) {
 							for (a in t)
 								if (f.call(t, a))
-									if (y = t[a], h(y) && (y = y.apply()), p(y) && c(y) && (y = null), !this.options.ignoreDecorators && this.stringify.convertAttKey && 0 === a.indexOf(this.stringify.convertAttKey)) u = this.attribute(a.substr(this.stringify.convertAttKey.length), y);
+									if (y = t[a], h(y) && (y = y.apply()), p(y) && c(y) && (y = null), !this.options.ignoreDecorators && this.stringify.convertAttKey && 0 === a.indexOf(this.stringify.convertAttKey)) l = this.attribute(a.substr(this.stringify.convertAttKey.length), y);
 									else if (!this.options.separateArrayItems && Array.isArray(y))
-								for (o = 0, d = y.length; o < d; o++) r = y[o], (n = {})[a] = r, u = this.element(n);
-							else p(y) ? (u = this.element(a)).element(y) : u = this.element(a, y)
-						} else u = !this.options.ignoreDecorators && this.stringify.convertTextKey && 0 === t.indexOf(this.stringify.convertTextKey) ? this.text(i) : !this.options.ignoreDecorators && this.stringify.convertCDataKey && 0 === t.indexOf(this.stringify.convertCDataKey) ? this.cdata(i) : !this.options.ignoreDecorators && this.stringify.convertCommentKey && 0 === t.indexOf(this.stringify.convertCommentKey) ? this.comment(i) : !this.options.ignoreDecorators && this.stringify.convertRawKey && 0 === t.indexOf(this.stringify.convertRawKey) ? this.raw(i) : !this.options.ignoreDecorators && this.stringify.convertPIKey && 0 === t.indexOf(this.stringify.convertPIKey) ? this.instruction(t.substr(this.stringify.convertPIKey.length), i) : this.node(t, e, i);
-						if (null == u) throw new Error("Could not create any elements with: " + t);
-						return u
+								for (o = 0, d = y.length; o < d; o++) r = y[o], (n = {})[a] = r, l = this.element(n);
+							else p(y) ? (l = this.element(a)).element(y) : l = this.element(a, y)
+						} else l = !this.options.ignoreDecorators && this.stringify.convertTextKey && 0 === t.indexOf(this.stringify.convertTextKey) ? this.text(i) : !this.options.ignoreDecorators && this.stringify.convertCDataKey && 0 === t.indexOf(this.stringify.convertCDataKey) ? this.cdata(i) : !this.options.ignoreDecorators && this.stringify.convertCommentKey && 0 === t.indexOf(this.stringify.convertCommentKey) ? this.comment(i) : !this.options.ignoreDecorators && this.stringify.convertRawKey && 0 === t.indexOf(this.stringify.convertRawKey) ? this.raw(i) : !this.options.ignoreDecorators && this.stringify.convertPIKey && 0 === t.indexOf(this.stringify.convertPIKey) ? this.instruction(t.substr(this.stringify.convertPIKey.length), i) : this.node(t, e, i);
+						if (null == l) throw new Error("Could not create any elements with: " + t);
+						return l
 					}, t.prototype.insertBefore = function(t, e, i) {
 						var n, r, s;
 						if (this.isRoot) throw new Error("Cannot insert elements at root level");
@@ -1555,7 +1555,7 @@
 						return null != t && (t = t.valueOf()), e || (e = {}), e = e.valueOf(), p(e) || (i = (r = [e, i])[0], e = r[1]), n = new o(this, t, e), null != i && n.text(i), this.children.push(n), n
 					}, t.prototype.text = function(t) {
 						var e;
-						return e = new l(this, t), this.children.push(e), this
+						return e = new u(this, t), this.children.push(e), this
 					}, t.prototype.cdata = function(t) {
 						var i;
 						return i = new e(this, t), this.children.push(i), this
@@ -1570,7 +1570,7 @@
 						return e = this.parent.children.indexOf(this), i = this.parent.children.splice(e + 1), this.parent.comment(t), Array.prototype.push.apply(this.parent.children, i), this
 					}, t.prototype.raw = function(t) {
 						var e;
-						return e = new u(this, t), this.children.push(e), this
+						return e = new l(this, t), this.children.push(e), this
 					}, t.prototype.instruction = function(t, e) {
 						var i, n, r, s, o;
 						if (null != t && (t = t.valueOf()), null != e && (e = e.valueOf()), Array.isArray(t))
@@ -1589,10 +1589,10 @@
 						var n, s;
 						return n = this.document(), s = new r(n, t, e, i), n.children[0] instanceof r ? n.children[0] = s : n.children.unshift(s), n.root() || n
 					}, t.prototype.doctype = function(t, e) {
-						var i, n, r, o, a, u, l, c, h;
-						for (i = this.document(), n = new s(i, t, e), r = o = 0, u = (c = i.children).length; o < u; r = ++o)
+						var i, n, r, o, a, l, u, c, h;
+						for (i = this.document(), n = new s(i, t, e), r = o = 0, l = (c = i.children).length; o < l; r = ++o)
 							if (c[r] instanceof s) return i.children[r] = n, n;
-						for (r = a = 0, l = (h = i.children).length; a < l; r = ++a)
+						for (r = a = 0, u = (h = i.children).length; a < u; r = ++a)
 							if (h[r].isRoot) return i.children.splice(r, 0, n), n;
 						return i.children.push(n), n
 					}, t.prototype.up = function() {
@@ -1712,8 +1712,8 @@
 		},
 		"./node_modules/xmlbuilder/lib/XMLStreamWriter.js": function(t, e, i) {
 			(function() {
-				var e, n, r, s, o, a, u, l, c, h, p, d, f, m = {}.hasOwnProperty;
-				u = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), l = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), e = i("./node_modules/xmlbuilder/lib/XMLCData.js"), n = i("./node_modules/xmlbuilder/lib/XMLComment.js"), c = i("./node_modules/xmlbuilder/lib/XMLElement.js"), p = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), d = i("./node_modules/xmlbuilder/lib/XMLText.js"), h = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"), r = i("./node_modules/xmlbuilder/lib/XMLDTDAttList.js"), s = i("./node_modules/xmlbuilder/lib/XMLDTDElement.js"), o = i("./node_modules/xmlbuilder/lib/XMLDTDEntity.js"), a = i("./node_modules/xmlbuilder/lib/XMLDTDNotation.js"), f = i("./node_modules/xmlbuilder/lib/XMLWriterBase.js"), t.exports = function(t) {
+				var e, n, r, s, o, a, l, u, c, h, p, d, f, m = {}.hasOwnProperty;
+				l = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), u = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), e = i("./node_modules/xmlbuilder/lib/XMLCData.js"), n = i("./node_modules/xmlbuilder/lib/XMLComment.js"), c = i("./node_modules/xmlbuilder/lib/XMLElement.js"), p = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), d = i("./node_modules/xmlbuilder/lib/XMLText.js"), h = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"), r = i("./node_modules/xmlbuilder/lib/XMLDTDAttList.js"), s = i("./node_modules/xmlbuilder/lib/XMLDTDElement.js"), o = i("./node_modules/xmlbuilder/lib/XMLDTDEntity.js"), a = i("./node_modules/xmlbuilder/lib/XMLDTDNotation.js"), f = i("./node_modules/xmlbuilder/lib/XMLWriterBase.js"), t.exports = function(t) {
 					function i(t, e) {
 						i.__super__.constructor.call(this, e), this.stream = t
 					}
@@ -1728,10 +1728,10 @@
 						var e, i, r, s, o, a, c, p;
 						for (i = 0, s = (a = t.children).length; i < s; i++)(e = a[i]).isLastRootNode = !1;
 						for (t.children[t.children.length - 1].isLastRootNode = !0, p = [], r = 0, o = (c = t.children).length; r < o; r++) switch (e = c[r], !1) {
-							case !(e instanceof u):
+							case !(e instanceof l):
 								p.push(this.declaration(e));
 								break;
-							case !(e instanceof l):
+							case !(e instanceof u):
 								p.push(this.docType(e));
 								break;
 							case !(e instanceof n):
@@ -1753,39 +1753,39 @@
 					}, i.prototype.declaration = function(t, e) {
 						return this.stream.write(this.space(e)), this.stream.write('<?xml version="' + t.version + '"'), null != t.encoding && this.stream.write(' encoding="' + t.encoding + '"'), null != t.standalone && this.stream.write(' standalone="' + t.standalone + '"'), this.stream.write(this.spacebeforeslash + "?>"), this.stream.write(this.endline(t))
 					}, i.prototype.docType = function(t, i) {
-						var u, l, c, p;
+						var l, u, c, p;
 						if (i || (i = 0), this.stream.write(this.space(i)), this.stream.write("<!DOCTYPE " + t.root().name), t.pubID && t.sysID ? this.stream.write(' PUBLIC "' + t.pubID + '" "' + t.sysID + '"') : t.sysID && this.stream.write(' SYSTEM "' + t.sysID + '"'), t.children.length > 0) {
-							for (this.stream.write(" ["), this.stream.write(this.endline(t)), l = 0, c = (p = t.children).length; l < c; l++) switch (u = p[l], !1) {
-								case !(u instanceof r):
-									this.dtdAttList(u, i + 1);
+							for (this.stream.write(" ["), this.stream.write(this.endline(t)), u = 0, c = (p = t.children).length; u < c; u++) switch (l = p[u], !1) {
+								case !(l instanceof r):
+									this.dtdAttList(l, i + 1);
 									break;
-								case !(u instanceof s):
-									this.dtdElement(u, i + 1);
+								case !(l instanceof s):
+									this.dtdElement(l, i + 1);
 									break;
-								case !(u instanceof o):
-									this.dtdEntity(u, i + 1);
+								case !(l instanceof o):
+									this.dtdEntity(l, i + 1);
 									break;
-								case !(u instanceof a):
-									this.dtdNotation(u, i + 1);
+								case !(l instanceof a):
+									this.dtdNotation(l, i + 1);
 									break;
-								case !(u instanceof e):
-									this.cdata(u, i + 1);
+								case !(l instanceof e):
+									this.cdata(l, i + 1);
 									break;
-								case !(u instanceof n):
-									this.comment(u, i + 1);
+								case !(l instanceof n):
+									this.comment(l, i + 1);
 									break;
-								case !(u instanceof h):
-									this.processingInstruction(u, i + 1);
+								case !(l instanceof h):
+									this.processingInstruction(l, i + 1);
 									break;
 								default:
-									throw new Error("Unknown DTD node type: " + u.constructor.name)
+									throw new Error("Unknown DTD node type: " + l.constructor.name)
 							}
 							this.stream.write("]")
 						}
 						return this.stream.write(this.spacebeforeslash + ">"), this.stream.write(this.endline(t))
 					}, i.prototype.element = function(t, i) {
-						var r, s, o, a, u, l, f, y;
-						for (u in i || (i = 0), y = this.space(i), this.stream.write(y + "<" + t.name), l = t.attributes) m.call(l, u) && (r = l[u], this.attribute(r));
+						var r, s, o, a, l, u, f, y;
+						for (l in i || (i = 0), y = this.space(i), this.stream.write(y + "<" + t.name), u = t.attributes) m.call(u, l) && (r = u[l], this.attribute(r));
 						if (0 === t.children.length || t.children.every((function(t) {
 								return "" === t.value
 							}))) this.allowEmpty ? this.stream.write("></" + t.name + ">") : this.stream.write(this.spacebeforeslash + "/>");
@@ -1838,8 +1838,8 @@
 		},
 		"./node_modules/xmlbuilder/lib/XMLStringWriter.js": function(t, e, i) {
 			(function() {
-				var e, n, r, s, o, a, u, l, c, h, p, d, f, m = {}.hasOwnProperty;
-				u = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), l = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), e = i("./node_modules/xmlbuilder/lib/XMLCData.js"), n = i("./node_modules/xmlbuilder/lib/XMLComment.js"), c = i("./node_modules/xmlbuilder/lib/XMLElement.js"), p = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), d = i("./node_modules/xmlbuilder/lib/XMLText.js"), h = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"), r = i("./node_modules/xmlbuilder/lib/XMLDTDAttList.js"), s = i("./node_modules/xmlbuilder/lib/XMLDTDElement.js"), o = i("./node_modules/xmlbuilder/lib/XMLDTDEntity.js"), a = i("./node_modules/xmlbuilder/lib/XMLDTDNotation.js"), f = i("./node_modules/xmlbuilder/lib/XMLWriterBase.js"), t.exports = function(t) {
+				var e, n, r, s, o, a, l, u, c, h, p, d, f, m = {}.hasOwnProperty;
+				l = i("./node_modules/xmlbuilder/lib/XMLDeclaration.js"), u = i("./node_modules/xmlbuilder/lib/XMLDocType.js"), e = i("./node_modules/xmlbuilder/lib/XMLCData.js"), n = i("./node_modules/xmlbuilder/lib/XMLComment.js"), c = i("./node_modules/xmlbuilder/lib/XMLElement.js"), p = i("./node_modules/xmlbuilder/lib/XMLRaw.js"), d = i("./node_modules/xmlbuilder/lib/XMLText.js"), h = i("./node_modules/xmlbuilder/lib/XMLProcessingInstruction.js"), r = i("./node_modules/xmlbuilder/lib/XMLDTDAttList.js"), s = i("./node_modules/xmlbuilder/lib/XMLDTDElement.js"), o = i("./node_modules/xmlbuilder/lib/XMLDTDEntity.js"), a = i("./node_modules/xmlbuilder/lib/XMLDTDNotation.js"), f = i("./node_modules/xmlbuilder/lib/XMLWriterBase.js"), t.exports = function(t) {
 					function i(t) {
 						i.__super__.constructor.call(this, t)
 					}
@@ -1854,9 +1854,9 @@
 						var e, i, r, s, o;
 						for (this.textispresent = !1, s = "", i = 0, r = (o = t.children).length; i < r; i++) e = o[i], s += function() {
 							switch (!1) {
-								case !(e instanceof u):
-									return this.declaration(e);
 								case !(e instanceof l):
+									return this.declaration(e);
+								case !(e instanceof u):
 									return this.docType(e);
 								case !(e instanceof n):
 									return this.comment(e);
@@ -1877,33 +1877,33 @@
 						var i;
 						return i = this.space(e), i += '<?xml version="' + t.version + '"', null != t.encoding && (i += ' encoding="' + t.encoding + '"'), null != t.standalone && (i += ' standalone="' + t.standalone + '"'), i += this.spacebeforeslash + "?>", i += this.newline
 					}, i.prototype.docType = function(t, i) {
-						var u, l, c, p, d;
+						var l, u, c, p, d;
 						if (i || (i = 0), p = this.space(i), p += "<!DOCTYPE " + t.root().name, t.pubID && t.sysID ? p += ' PUBLIC "' + t.pubID + '" "' + t.sysID + '"' : t.sysID && (p += ' SYSTEM "' + t.sysID + '"'), t.children.length > 0) {
-							for (p += " [", p += this.newline, l = 0, c = (d = t.children).length; l < c; l++) u = d[l], p += function() {
+							for (p += " [", p += this.newline, u = 0, c = (d = t.children).length; u < c; u++) l = d[u], p += function() {
 								switch (!1) {
-									case !(u instanceof r):
-										return this.dtdAttList(u, i + 1);
-									case !(u instanceof s):
-										return this.dtdElement(u, i + 1);
-									case !(u instanceof o):
-										return this.dtdEntity(u, i + 1);
-									case !(u instanceof a):
-										return this.dtdNotation(u, i + 1);
-									case !(u instanceof e):
-										return this.cdata(u, i + 1);
-									case !(u instanceof n):
-										return this.comment(u, i + 1);
-									case !(u instanceof h):
-										return this.processingInstruction(u, i + 1);
+									case !(l instanceof r):
+										return this.dtdAttList(l, i + 1);
+									case !(l instanceof s):
+										return this.dtdElement(l, i + 1);
+									case !(l instanceof o):
+										return this.dtdEntity(l, i + 1);
+									case !(l instanceof a):
+										return this.dtdNotation(l, i + 1);
+									case !(l instanceof e):
+										return this.cdata(l, i + 1);
+									case !(l instanceof n):
+										return this.comment(l, i + 1);
+									case !(l instanceof h):
+										return this.processingInstruction(l, i + 1);
 									default:
-										throw new Error("Unknown DTD node type: " + u.constructor.name)
+										throw new Error("Unknown DTD node type: " + l.constructor.name)
 								}
 							}.call(this);
 							p += "]"
 						}
 						return p += this.spacebeforeslash + ">", p += this.newline
 					}, i.prototype.element = function(t, i) {
-						var r, s, o, a, u, l, f, y, b, _, g, w, T;
+						var r, s, o, a, l, u, f, y, b, _, g, w, T;
 						for (f in i || (i = 0), T = !1, this.textispresent ? (this.newline = "", this.pretty = !1) : (this.newline = this.newlinedefault, this.pretty = this.prettydefault), y = "", y += (w = this.space(i)) + "<" + t.name, b = t.attributes) m.call(b, f) && (r = b[f], y += this.attribute(r));
 						if (0 === t.children.length || t.children.every((function(t) {
 								return "" === t.value
@@ -1911,11 +1911,11 @@
 						else if (this.pretty && 1 === t.children.length && null != t.children[0].value) y += ">", y += t.children[0].value, y += "</" + t.name + ">" + this.newline;
 						else {
 							if (this.dontprettytextnodes)
-								for (o = 0, u = (_ = t.children).length; o < u; o++)
+								for (o = 0, l = (_ = t.children).length; o < l; o++)
 									if (null != (s = _[o]).value) {
 										this.textispresent++, T = !0;
 										break
-									} for (this.textispresent && (this.newline = "", this.pretty = !1, w = this.space(i)), y += ">" + this.newline, a = 0, l = (g = t.children).length; a < l; a++) s = g[a], y += function() {
+									} for (this.textispresent && (this.newline = "", this.pretty = !1, w = this.space(i)), y += ">" + this.newline, a = 0, u = (g = t.children).length; a < u; a++) s = g[a], y += function() {
 								switch (!1) {
 									case !(s instanceof e):
 										return this.cdata(s, i + 1);
@@ -1965,7 +1965,7 @@
 						switch (e || (e = 0), !1) {
 							case !(t instanceof c):
 								return this.space(e) + "</" + t.name + ">" + this.newline;
-							case !(t instanceof l):
+							case !(t instanceof u):
 								return this.space(e) + "]>" + this.newline
 						}
 					}, i
@@ -2069,8 +2069,8 @@
 				var e = {}.hasOwnProperty;
 				t.exports = function() {
 					function t(t) {
-						var i, n, r, s, o, a, u, l, c;
-						for (i in t || (t = {}), this.pretty = t.pretty || !1, this.allowEmpty = null != (n = t.allowEmpty) && n, this.pretty ? (this.indent = null != (r = t.indent) ? r : "  ", this.newline = null != (s = t.newline) ? s : "\n", this.offset = null != (o = t.offset) ? o : 0, this.dontprettytextnodes = null != (a = t.dontprettytextnodes) ? a : 0) : (this.indent = "", this.newline = "", this.offset = 0, this.dontprettytextnodes = 0), this.spacebeforeslash = null != (u = t.spacebeforeslash) ? u : "", !0 === this.spacebeforeslash && (this.spacebeforeslash = " "), this.newlinedefault = this.newline, this.prettydefault = this.pretty, l = t.writer || {}) e.call(l, i) && (c = l[i], this[i] = c)
+						var i, n, r, s, o, a, l, u, c;
+						for (i in t || (t = {}), this.pretty = t.pretty || !1, this.allowEmpty = null != (n = t.allowEmpty) && n, this.pretty ? (this.indent = null != (r = t.indent) ? r : "  ", this.newline = null != (s = t.newline) ? s : "\n", this.offset = null != (o = t.offset) ? o : 0, this.dontprettytextnodes = null != (a = t.dontprettytextnodes) ? a : 0) : (this.indent = "", this.newline = "", this.offset = 0, this.dontprettytextnodes = 0), this.spacebeforeslash = null != (l = t.spacebeforeslash) ? l : "", !0 === this.spacebeforeslash && (this.spacebeforeslash = " "), this.newlinedefault = this.newline, this.prettydefault = this.pretty, u = t.writer || {}) e.call(u, i) && (c = u[i], this[i] = c)
 					}
 					return t.prototype.set = function(t) {
 						var i, n, r;
@@ -2085,8 +2085,8 @@
 		},
 		"./node_modules/xmlbuilder/lib/index.js": function(t, e, i) {
 			(function() {
-				var e, n, r, s, o, a, u;
-				u = i("./node_modules/xmlbuilder/lib/Utility.js"), o = u.assign, a = u.isFunction, e = i("./node_modules/xmlbuilder/lib/XMLDocument.js"), n = i("./node_modules/xmlbuilder/lib/XMLDocumentCB.js"), s = i("./node_modules/xmlbuilder/lib/XMLStringWriter.js"), r = i("./node_modules/xmlbuilder/lib/XMLStreamWriter.js"), t.exports.create = function(t, i, n, r) {
+				var e, n, r, s, o, a, l;
+				l = i("./node_modules/xmlbuilder/lib/Utility.js"), o = l.assign, a = l.isFunction, e = i("./node_modules/xmlbuilder/lib/XMLDocument.js"), n = i("./node_modules/xmlbuilder/lib/XMLDocumentCB.js"), s = i("./node_modules/xmlbuilder/lib/XMLStringWriter.js"), r = i("./node_modules/xmlbuilder/lib/XMLStreamWriter.js"), t.exports.create = function(t, i, n, r) {
 					var s, a;
 					if (null == t) throw new Error("Root element needs a name");
 					return r = o({}, i, n, r), a = (s = new e(r)).element(t), r.headless || (s.declaration(r), null == r.pubID && null == r.sysID || s.doctype(r)), a
@@ -2102,4 +2102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~xml2js.2811349dbc1fc6bf5a4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~xml2js.88f76e2e07b71eb98128.js.map

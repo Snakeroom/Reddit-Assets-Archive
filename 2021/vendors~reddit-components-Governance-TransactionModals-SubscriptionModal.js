@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.3f8bca14b3d46b4ba7d0.js
-// Retrieved at 7/21/2021, 5:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.07583133165e88b80278.js
+// Retrieved at 8/2/2021, 12:50:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~reddit-components-Governance-TransactionModals-SubscriptionModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(r, e, t) {
@@ -1467,7 +1467,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(r, e, t) {
 			var n = t("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = t("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = t("./node_modules/buffer/index.js").Buffer;
+				i = t("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
 
 			function s(r) {
 				this.genPoly = void 0, this.degree = r, this.degree && this.initialize(this.degree)
@@ -2042,4 +2042,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.3f8bca14b3d46b4ba7d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.07583133165e88b80278.js.map

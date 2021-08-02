@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.e02865568a4714cf2adf.js
-// Retrieved at 7/28/2021, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.b9c8af0c461358c7f955.js
+// Retrieved at 8/2/2021, 12:50:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -602,7 +602,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = r("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = r("./node_modules/buffer/index.js").Buffer;
+				i = r("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
 
 			function s(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -1455,4 +1455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.e02865568a4714cf2adf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.b9c8af0c461358c7f955.js.map

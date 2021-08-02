@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.6d53e817df883512ae98.js
-// Retrieved at 7/14/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.586978443e67abc13d40.js
+// Retrieved at 8/2/2021, 12:50:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~RedesignChat"], {
 		"./node_modules/axios/index.js": function(e, n, t) {
@@ -12469,7 +12469,7 @@
 						}();
 					return ot
 				}(t("./node_modules/axios/index.js"), t("./node_modules/form-data/lib/browser.js"), t("./node_modules/ws/browser.js"))
-			}).call(this, t("./node_modules/process/browser.js"), t("./node_modules/buffer/index.js").Buffer, t("./node_modules/webpack/buildin/global.js"))
+			}).call(this, t("./node_modules/process/browser.js"), t("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer, t("./node_modules/webpack/buildin/global.js"))
 		},
 		"./node_modules/ws/browser.js": function(e, n, t) {
 			"use strict";
@@ -12479,4 +12479,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.6d53e817df883512ae98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~RedesignChat.586978443e67abc13d40.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~dashjs.d51bd9db31280a668946.js
-// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~dashjs.536210f860c89db757de.js
+// Retrieved at 8/2/2021, 12:50:26 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~dashjs"], {
 		"./node_modules/codem-isoboxer/dist/iso_boxer.js": function(e, t, n) {
@@ -19090,7 +19090,7 @@
 				value: !0
 			});
 			var r = i(n("./node_modules/dashjs/build/es5/src/core/FactoryMaker.js")),
-				s = i(n("./node_modules/fast-deep-equal/index.js"));
+				s = i(n("./node_modules/dashjs/node_modules/fast-deep-equal/index.js"));
 
 			function i(e) {
 				return e && e.__esModule ? e : {
@@ -19884,7 +19884,7 @@
 				}(this, e), this.mediaType = null, this.t = null, this.type = null, this.startTime = null, this.availabilityStartTime = null, this.duration = null, this.quality = null, this.range = null, this.state = null
 			}
 		},
-		"./node_modules/fast-deep-equal/index.js": function(e, t, n) {
+		"./node_modules/dashjs/node_modules/fast-deep-equal/index.js": function(e, t, n) {
 			"use strict";
 			var r = Array.isArray,
 				s = Object.keys,
@@ -20710,7 +20710,7 @@
 						writable: !0
 					}) : String.fromCodePoint = M)
 				}(t)
-			}).call(this, n("./node_modules/buffer/index.js").Buffer)
+			}).call(this, n("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
 		},
 		"./node_modules/imsc/src/main/js/doc.js": function(e, t, n) {
 			! function(e, t, n, r, s) {
@@ -21924,4 +21924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~dashjs.d51bd9db31280a668946.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~dashjs.536210f860c89db757de.js.map
