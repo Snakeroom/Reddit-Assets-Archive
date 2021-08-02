@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a53d9242b7eb4a860a9d.js
-// Retrieved at 8/2/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.1149351687b7702d7835.js
+// Retrieved at 8/2/2021, 11:30:08 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -593,7 +593,7 @@
 					ProfileComments: "bdabe6f79c50d6529c04",
 					ProfileOverview: "70d9774fce9e1f5a4d1f",
 					ProfilePrivate: "bc562e1e0e902c70dd9e",
-					SearchResults: "d7938c64c84ca947d0a5",
+					SearchResults: "5bda40d095c7c54b5e97",
 					"ModQueue~ModQueuePages~ModerationPages": "31d6cfe0d16ae931b73c",
 					"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "37171365c1cd5799ef76",
 					ModQueuePages: "c0777b8bd13dba4d18e0",
@@ -1205,12 +1205,12 @@
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "4df0f9dc1dbff6ddff0f",
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "1cb10f0e5a4ba1fe4306",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "ba75a77789cbbf8b8e04",
-						"ProfileComments~ProfileOverview~ProfilePrivate": "e92ebd862ccfeb10de92",
+						"ProfileComments~ProfileOverview~ProfilePrivate": "a16c3efdd1c0ff0d3e91",
 						"ProfileComments~ProfileOverview": "8a9b89dba04c99c51618",
 						ProfileComments: "16f7a0ad007158ed8cc1",
 						ProfileOverview: "c48a0a438b8689f0994f",
 						ProfilePrivate: "958c1473fc48d40fc9e5",
-						SearchResults: "12b7bae4f57d5f311cb7",
+						SearchResults: "67fea3b48ca65931ed5c",
 						"ModQueue~ModQueuePages~ModerationPages": "a719f652c4ed09ca074c",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "ef058c9d192fda4eda4a",
 						ModQueuePages: "3f35826fdbcacaae7b82",
@@ -1288,7 +1288,7 @@
 						"translations/es_MX-json": "14440a1c11d35a52d519",
 						"translations/fr_FR-json": "578891fdb1868999d5ad",
 						"translations/it_IT-json": "c06c40457ad739cc2643",
-						"translations/pseudo_ext-json": "180b443827a63af20d96",
+						"translations/pseudo_ext-json": "37ca9673cb5b7fd2f6aa",
 						"translations/pseudo_long-json": "e99d8a733a20e5791af7",
 						"translations/pseudo_short-json": "606bd1bb792422c0e3cb",
 						"translations/pt_BR-json": "246ff232c4e764476ea6",
@@ -1317,7 +1317,7 @@
 						Settings: "51e4150bc7b1a44c9e75",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
 						"ModerationPages~SubredditWiki": "305848bae021017051ee",
-						ModerationPages: "1ca1cd154a06001ad99c",
+						ModerationPages: "ec7ae1e5019a8d814bd4",
 						"vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732": "7911e63de13ba06455be",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "ab8f189e0b5abb5f361d",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033": "85674ed57b5e29059ef5",
@@ -1369,7 +1369,7 @@
 						index: "b4d776d420004822c20a",
 						FeaturedLiveEntrypointLegacyAnnouncement: "804db7c97da99aaf7c05",
 						IdCard: "70bd92919114f6a1c6d1",
-						"reddit-components-ClassicPost": "d8aa690c248a273f2fab",
+						"reddit-components-ClassicPost": "9b26c5496ca124fe3af9",
 						"reddit-components-BlankPost": "d05ff48f271ebc680085",
 						PennyPurchaseModal: "e9504d2e5ab201aeec4c",
 						editCollectionModal: "b199a267d938a3c7119d",
@@ -1418,7 +1418,7 @@
 						"chat-components-FormBuilder": "3ef82adafcbf0360edb8",
 						"ChatMessageInput~ChatPost": "a90bd516518faa8bdd65",
 						ChatPost: "d29977d18d824298d0c5",
-						CommentsPageNativeAd: "da5c5b0cd1a4a2d6e91f",
+						CommentsPageNativeAd: "a60dc6780dc1d79e75d9",
 						EconomicsSubredditPremiumSidebarCards: "a185c23e8e71629c8dde",
 						HarbergerTaxBannerPurchaseCTA: "763d02083ea02e0c85e3",
 						ReredditLink: "0809c4e06cc108fe7650",
@@ -1540,4 +1540,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a53d9242b7eb4a860a9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1149351687b7702d7835.js.map

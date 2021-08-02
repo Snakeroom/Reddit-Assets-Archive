@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.d8aa690c248a273f2fab.js
-// Retrieved at 8/2/2021, 11:00:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9b26c5496ca124fe3af9.js
+// Retrieved at 8/2/2021, 11:30:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3597,42 +3597,50 @@
 				r = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/lib/LRUCache/index.ts"),
-				c = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				i = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				c = s("./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx"),
 				d = s("./src/reddit/connectors/ClassicPost/index.tsx");
-			const l = Object(c.t)({
-					searchQuery: c.X
+			const l = Object(i.t)({
+					searchQuery: i.X
 				}),
-				u = new i.a(250),
-				m = e => {
-					const t = e.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-					return e => {
-						const s = `${e.id}-${t}`;
-						let n = u.get(s);
-						if (void 0 === n) {
-							const o = new RegExp(`(\\b${t}\\b)`, "gi"),
-								a = e.title.split(o);
-							for (let e = 1; e < a.length; e += 2) a[e] = r.a.createElement("em", {
-								style: {
-									fontWeight: 700
-								}
-							}, a[e]);
-							n = r.a.createElement("span", {
-								style: {
-									fontWeight: "normal"
-								}
-							}, r.a.Children.toArray(a)), u.set(s, n)
-						}
-						return n
-					}
-				},
-				p = Object(o.b)(() => Object(a.c)(d.c), d.b, (e, t, s) => ({
+				u = Object(o.b)(() => Object(a.c)(d.c), d.b, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					formatTitle: m(s.searchQuery || "")
+					formatTitle: Object(c.a)(s.searchQuery || "", e => r.a.createElement("em", {
+						style: {
+							fontWeight: 700
+						}
+					}, e), e => r.a.createElement("span", {
+						style: {
+							fontWeight: "normal"
+						}
+					}, e))
 				}));
-			t.a = e => l(p(e))
+			t.a = e => l(u(e))
+		},
+		"./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return i
+			}));
+			var n = s("./src/lib/LRUCache/index.ts"),
+				r = s("./node_modules/react/index.js"),
+				o = s.n(r);
+			const a = new n.a(250),
+				i = (e, t, s) => {
+					const n = e.trim().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+					return e => {
+						const r = `${e.id}-${n}`;
+						let i = a.get(r);
+						if (void 0 === i) {
+							const c = new RegExp(`(\\b${n}\\b)`, "gi"),
+								d = e.title.split(c);
+							i = s(o.a.createElement(o.a.Fragment, null, o.a.Children.toArray(d.map((e, s) => s % 2 != 0 ? t(e) : e)))), a.set(r, i)
+						}
+						return i
+					}
+				}
 		},
 		"./src/reddit/constants/jsapiEvents.ts": function(e, t, s) {
 			"use strict";
@@ -6511,4 +6519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.d8aa690c248a273f2fab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9b26c5496ca124fe3af9.js.map
