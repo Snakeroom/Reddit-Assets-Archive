@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7ddb22549846db6ddbaa.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.8a19ff1cb76034b6e63e.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -35,9 +35,9 @@
 			})), s.d(t, "n", (function() {
 				return q
 			})), s.d(t, "c", (function() {
-				return Y
-			})), s.d(t, "k", (function() {
 				return W
+			})), s.d(t, "k", (function() {
+				return Y
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/config.ts"),
@@ -217,7 +217,7 @@
 					})), 0 === s && n(i, !0), Object(p.d)()
 				}, X = Object(d.a)(k.r), G = e => t => t(X({
 					draftKey: e
-				})), J = Object(d.a)(k.a), q = Object(d.a)(k.E), Y = Object(d.a)(k.b), W = Object(d.a)(k.u)
+				})), J = Object(d.a)(k.a), q = Object(d.a)(k.E), W = Object(d.a)(k.b), Y = Object(d.a)(k.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -643,7 +643,7 @@
 					tooltipId: C(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: s => {
-					Object(O.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, s)) : e(Object(l.Y)(t.reportedThingId, t.reason, s))
+					Object(O.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, s)) : e(Object(l.ab)(t.reportedThingId, t.reason, s))
 				}
 			})), E = Object(p.a)(b.a);
 			class S extends o.a.Component {
@@ -1101,4 +1101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.7ddb22549846db6ddbaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.8a19ff1cb76034b6e63e.js.map

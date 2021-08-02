@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.99099d281c7f9d1e6ea2.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.c7eab6577383fdbdaed2.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -113,7 +113,7 @@
 				L = y.a.div("Content", _.a),
 				w = y.a.div("ThumbnailContainer", _.a),
 				N = Object(c.c)({
-					isCurrentUserProfilePost: E.k,
+					isCurrentUserProfilePost: E.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Jb.TOPIC),
 					shouldOpenPostInNewTab: g.bb
 				}),
@@ -375,10 +375,10 @@
 						style: t
 					}, e.children)
 				},
-				L = Object(i.b)(() => Object(c.a)(v.E, y.bb, (e, {
+				L = Object(i.b)(() => Object(c.a)(v.F, y.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, g.a, _.actionInfo, v.F, (e, t, s, n, r, o) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, g.a, _.actionInfo, v.G, (e, t, s, n, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -830,7 +830,7 @@
 				W = Object(a.c)({
 					isPinned: (e, {
 						post: t
-					}) => Object(P.p)(e, {
+					}) => Object(P.q)(e, {
 						postId: t.id
 					}),
 					modModeEnabled: h.R
@@ -862,8 +862,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					K = Object(i.e)(T.a),
-					q = V.isSponsored && (K === p.p.NoLockIcon || K === p.p.PromotedGrey),
+					q = Object(i.e)(T.a),
+					K = V.isSponsored && (q === p.p.NoLockIcon || q === p.p.PromotedGrey),
 					Y = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === b.a.SUBREDDIT,
 					z = A("Approve", V.id, G),
 					Z = A("Archived", V.id, G),
@@ -895,7 +895,7 @@
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
 					text: B()
-				}, X))), V.isLocked && !q && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
+				}, X))), V.isLocked && !K && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
 					className: Object(c.a)(w.a.icon, w.a.lockIcon),
 					desc: R(),
@@ -1109,7 +1109,7 @@
 					to: `${h.a}/${t}`
 				}, o.a.createElement(u.q, {
 					onClick: () => {
-						s ? v && _ === b.a.notVoted && (x(m.c), g(Object(d.bb)(v))) : y()
+						s ? v && _ === b.a.notVoted && (x(m.c), g(Object(d.db)(v))) : y()
 					},
 					className: Object(n.a)(f.a.snoovatarButton, f.a.snoovatarExtraPadding, f.a.compactButtonLayout, {
 						[f.a.avatarPostifyButton]: s
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.99099d281c7f9d1e6ea2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.c7eab6577383fdbdaed2.js.map

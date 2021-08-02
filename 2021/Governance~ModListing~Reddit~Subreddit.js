@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e5f0d6287eec946a6c75.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.fa9c9e686b50700b203b.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -950,10 +950,10 @@
 							success: I.ok
 						}
 					})
-				}, W = Object(d.a)(A.l), G = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
+				}, G = Object(d.a)(A.l), W = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
 					apiContext: n
 				}) => {
-					t(W({
+					t(G({
 						subredditId: e
 					}));
 					const o = Object(g.S)(r(), {
@@ -963,7 +963,7 @@
 					if (i.ok) {
 						const n = r().structuredStyles.models[e],
 							o = n ? n.mobileKeyColor : null;
-						t(G({
+						t(W({
 							subredditId: e,
 							styles: {
 								mobileKeyColor: o
@@ -2250,7 +2250,7 @@
 			const S = Object(d.a)(j.a, j.j, (e, {
 					isSponsored: t,
 					postId: r
-				}) => t && r ? Object(I.b)(e, r) : null, I.F, y.actionInfo, (e, t, r, n, o) => ({
+				}) => t && r ? Object(I.b)(e, r) : null, I.G, y.actionInfo, (e, t, r, n, o) => ({
 					allowClickTracking: e,
 					basePixelMetadata: r,
 					userId: t ? Object(p.a)(t.id) : null,
@@ -2258,13 +2258,13 @@
 					pageType: o.pageType
 				})),
 				w = Object(l.b)(S, e => ({
-					fireAdPixelsOfType: (t, r) => e(Object(m.x)(t, r)),
+					fireAdPixelsOfType: (t, r) => e(Object(m.z)(t, r)),
 					recordClick: (t, r, n) => {
 						const o = t.events.filter(({
 							type: e,
 							url: t
 						}) => e === b.a.Click && Object(h.b)(t));
-						Object(h.c)(o), e(Object(m.o)(String(r), {
+						Object(h.c)(o), e(Object(m.p)(String(r), {
 							postId: t.id,
 							vendorMetadata: n
 						}))
@@ -2633,9 +2633,9 @@
 			})), r.d(t, "e", (function() {
 				return H
 			})), r.d(t, "f", (function() {
-				return W
-			})), r.d(t, "b", (function() {
 				return G
+			})), r.d(t, "b", (function() {
+				return W
 			})), r.d(t, "v", (function() {
 				return q
 			})), r.d(t, "g", (function() {
@@ -2904,14 +2904,14 @@
 						...B(e, t)
 					})
 				},
-				W = (e, t) => {
+				G = (e, t) => {
 					Object(u.a)({
 						noun: "draft_delete",
 						...m(e),
 						...M(e, t)
 					})
 				},
-				G = e => {
+				W = e => {
 					Object(u.a)({
 						...m(e),
 						noun: "social_connect_link",
@@ -2969,7 +2969,7 @@
 			})), r.d(t, "m", (function() {
 				return F
 			})), r.d(t, "t", (function() {
-				return G
+				return W
 			})), r.d(t, "w", (function() {
 				return q
 			})), r.d(t, "e", (function() {
@@ -3098,7 +3098,7 @@
 							break;
 						case i.Jb.SETTINGS: {
 							const o = e;
-							Object(y.a)(W(r, n)(t)), o.match.params.page === i.Wb.Profile && Object(u.k)(t);
+							Object(y.a)(G(r, n)(t)), o.match.params.page === i.Wb.Profile && Object(u.k)(t);
 							break
 						}
 						case i.Jb.POST_CREATION:
@@ -3150,7 +3150,7 @@
 							}
 							break;
 						case i.Jb.PUBLIC_ACCESS_NETWORK:
-							p && Object(y.a)(G()(t));
+							p && Object(y.a)(W()(t));
 							break;
 						case i.Jb.GEOTAGGING:
 							p && Object(y.a)(V()(t));
@@ -3426,14 +3426,14 @@
 					...k(r),
 					timer: I.timer(e, t)
 				}),
-				W = (e, t) => r => ({
+				G = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(r),
 					timer: I.timer(e, t)
 				}),
-				G = () => e => ({
+				W = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3825,7 +3825,7 @@
 				},
 				D = (e, t, r, n, c, u, f) => {
 					if (!n) {
-						n = Object(a.F)(e, {
+						n = Object(a.G)(e, {
 							postId: u
 						}).belongsTo
 					}
@@ -4223,4 +4223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e5f0d6287eec946a6c75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.fa9c9e686b50700b203b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e3a443c3b88fc96cc6bd.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.efd132c86b60753197da.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -5939,7 +5939,7 @@
 					crosspost: y.d,
 					flairStyleTemplate: se.T,
 					isActive: y.j,
-					isExpanded: y.l,
+					isExpanded: y.m,
 					showPromotedCTA: be.a,
 					layout: se.P,
 					moderatorPermissions: _.k,
@@ -5962,10 +5962,10 @@
 						selectedTemplateId: n
 					})),
 					handleVote: s => {
-						const n = s === f.a.upvoted ? Object(x.bb)(t) : Object(x.u)(t);
+						const n = s === f.a.upvoted ? Object(x.db)(t) : Object(x.w)(t);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(x.X)(t)),
+					onIgnoreReports: () => e(Object(x.Z)(t)),
 					onOpenReportsDropdown: t => e(Object(v.h)({
 						tooltipId: t
 					}))
@@ -6742,7 +6742,7 @@
 				g = s("./src/reddit/components/ExpandoButton/index.m.less"),
 				f = s.n(g);
 			const x = Object(r.b)(null, (e, t) => ({
-					toggle: () => e(Object(c.v)({
+					toggle: () => e(Object(c.x)({
 						postId: t.post.id
 					}))
 				})),
@@ -13150,7 +13150,7 @@
 			const b = Object(r.b)(() => Object(i.c)({}), (e, {
 				post: t
 			}) => ({
-				onFollow: () => e(Object(l.y)(t.isSponsored ? t.postId : t.id))
+				onFollow: () => e(Object(l.A)(t.isSponsored ? t.postId : t.id))
 			}))(Object(c.c)(h))
 		},
 		"./src/reddit/components/PostLeftRail/index.m.less": function(e, t, s) {
@@ -18339,8 +18339,8 @@
 					crosspost: b.d,
 					isActive: b.j,
 					isChatPost: u.d,
-					isCurrentUserProfilePost: b.k,
-					isExpanded: b.l,
+					isCurrentUserProfilePost: b.l,
+					isExpanded: b.m,
 					isLoggedIn: f.J,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.k,
@@ -18357,10 +18357,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const n = s === i.a.upvoted ? Object(o.bb)(t) : Object(o.u)(t);
+						const n = s === i.a.upvoted ? Object(o.db)(t) : Object(o.w)(t);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(o.X)(t)),
+					onIgnoreReports: () => e(Object(o.Z)(t)),
 					onOpenReportsDropdown: t => e(Object(r.h)({
 						tooltipId: t
 					}))
@@ -22754,7 +22754,7 @@
 			const i = Object(n.a)(e => Object(o.c)(e, {
 				experimentName: a.cd,
 				experimentEligibilitySelector: o.a
-			}), r.F, (e, t) => e === a.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.G, (e, t) => e === a.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22890,4 +22890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e3a443c3b88fc96cc6bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.efd132c86b60753197da.js.map

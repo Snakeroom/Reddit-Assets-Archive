@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.a719f652c4ed09ca074c.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.fff2e79d4a11de5c27f4.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -909,7 +909,7 @@
 						i = e[0],
 						l = Object(Q.a)(i) ? $.e.Post : $.e.Comment,
 						m = l === $.e.Post ? c.posts.models[i] : c.features.comments.models[i],
-						p = l === $.e.Post ? L.P : w.i;
+						p = l === $.e.Post ? L.R : w.i;
 					if (!m || !u) return !1;
 					n(fe()), n(p({
 						[i]: {
@@ -2891,4 +2891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.a719f652c4ed09ca074c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.fff2e79d4a11de5c27f4.js.map

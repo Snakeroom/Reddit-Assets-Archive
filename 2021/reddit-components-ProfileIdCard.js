@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8f67cc317643469c5f5d.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d11966627881f1a2ee70.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1652,7 +1652,7 @@
 					to: `${b.a}/${t}`
 				}, a.a.createElement(m.q, {
 					onClick: () => {
-						r ? I && _ === f.a.notVoted && (x(u.c), v(Object(d.bb)(I))) : O()
+						r ? I && _ === f.a.notVoted && (x(u.c), v(Object(d.db)(I))) : O()
 					},
 					className: Object(n.a)(h.a.snoovatarButton, h.a.snoovatarExtraPadding, h.a.compactButtonLayout, {
 						[h.a.avatarPostifyButton]: r
@@ -3051,4 +3051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.8f67cc317643469c5f5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d11966627881f1a2ee70.js.map

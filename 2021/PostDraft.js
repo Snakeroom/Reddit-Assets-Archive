@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.76fb9f8ba3292334557d.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.b49debb4a85f430a0c5a.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -562,7 +562,7 @@
 				}) => {
 					if ((await E(i(), e, t)).ok) {
 						const i = r(),
-							a = Object(S.F)(i, {
+							a = Object(S.G)(i, {
 								postId: t
 							}),
 							d = a && a.title || "",
@@ -579,7 +579,7 @@
 									collectionId: e
 								}),
 								s = n && n.postIds && n.postIds[u] || "",
-								i = Object(S.F)(t, {
+								i = Object(S.G)(t, {
 									postId: s
 								});
 							i && i.permalink && o(Object(C.a)(i.permalink))
@@ -612,7 +612,7 @@
 							collectionId: e,
 							postId: t
 						}));
-						const o = Object(S.F)(i, {
+						const o = Object(S.G)(i, {
 								postId: t
 							}),
 							r = Object(O.q)(i, {
@@ -1147,10 +1147,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(c.a)(_.E, y.bb, (e, {
+				P = Object(i.b)(() => Object(c.a)(_.F, y.bb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.F, (e, t, n, s, o, r) => ({
+				}) => t && n ? Object(_.b)(e, n) : null, E.a, v.actionInfo, _.G, (e, t, n, s, o, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -3179,7 +3179,7 @@
 					shouldShowCollectionEditOptions: g.s
 				}),
 				I = Object(a.b)(S, (e, t) => ({
-					copyLink: () => e(Object(u.B)(t.permalink)),
+					copyLink: () => e(Object(u.D)(t.permalink)),
 					onCreatePost: n => {
 						t.shouldShowCreatePost && e(Object(c.b)(n))
 					},
@@ -3433,7 +3433,7 @@
 			const O = ["right", "bottom"],
 				S = ["right", "top"];
 			var I = Object(a.b)(() => Object(c.c)({
-					post: E.F
+					post: E.G
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(g.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -4952,4 +4952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.76fb9f8ba3292334557d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b49debb4a85f430a0c5a.js.map

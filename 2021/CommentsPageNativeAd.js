@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.a60dc6780dc1d79e75d9.js
-// Retrieved at 8/2/2021, 11:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.80c206d424775f4bb8ba.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -56,8 +56,8 @@
 				O = s("./src/reddit/components/PostTitle/index.tsx"),
 				j = s("./src/reddit/constants/componentTestIds.ts"),
 				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
-				k = s("./src/reddit/helpers/search/renderMedia.tsx"),
-				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
+				E = s("./src/reddit/helpers/search/renderMedia.tsx"),
+				k = s("./src/reddit/components/PostTopMeta/index.tsx"),
 				P = s("./src/reddit/components/AuthorLink/index.tsx"),
 				N = s("./src/reddit/components/SponsoredLabel/index.tsx"),
 				S = s("./src/reddit/components/UserIcon/index.tsx"),
@@ -167,7 +167,7 @@
 				H = s("./src/reddit/helpers/path/index.ts"),
 				K = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
 				z = s("./src/reddit/selectors/profile.ts");
-			const G = Object(n.b)(() => Object(c.c)({
+			const Z = Object(n.b)(() => Object(c.c)({
 				iconUrl: (e, t) => {
 					const s = Object(z.j)(e, {
 						profileName: t.post.author
@@ -180,7 +180,7 @@
 					e(Object(x.d)(t.post.author))
 				}
 			}));
-			class Z extends a.a.Component {
+			class G extends a.a.Component {
 				componentDidMount() {
 					this.props.iconUrl || this.props.fetchProfile()
 				}
@@ -245,7 +245,7 @@
 						author: l.author,
 						iconUrl: o,
 						adHeaderVariant: e,
-						greyTextColor: Object(E.e)(this.props)
+						greyTextColor: Object(k.e)(this.props)
 					}), a.a.createElement("div", {
 						className: A.a.contentRow
 					}, !(n && !x) && a.a.createElement(F, {
@@ -276,14 +276,14 @@
 						postId: l.id
 					}, l.callToAction)))), a.a.createElement("div", {
 						className: A.a.spacer
-					}), a.a.createElement(C.d, null))), Object(k.a)(l, A.a, p, s, !1, !1))), a.a.createElement("div", {
+					}), a.a.createElement(C.d, null))), Object(E.a)(l, A.a, p, s, !1, !1))), a.a.createElement("div", {
 						className: A.a.commentsSpacer
 					}))
 				}
 			}
-			const J = Object(l.a)(Z),
+			const J = Object(l.a)(G),
 				Q = Object(D.a)(J);
-			t.default = Object(U.a)(G(J))
+			t.default = Object(U.a)(Z(J))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -356,8 +356,8 @@
 					crosspost: b.d,
 					isActive: b.j,
 					isChatPost: p.d,
-					isCurrentUserProfilePost: b.k,
-					isExpanded: b.l,
+					isCurrentUserProfilePost: b.l,
+					isExpanded: b.m,
 					isLoggedIn: g.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: u.k,
@@ -374,10 +374,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const r = s === i.a.upvoted ? Object(a.bb)(t) : Object(a.u)(t);
+						const r = s === i.a.upvoted ? Object(a.db)(t) : Object(a.w)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.X)(t)),
+					onIgnoreReports: () => e(Object(a.Z)(t)),
 					onOpenReportsDropdown: t => e(Object(n.h)({
 						tooltipId: t
 					}))
@@ -518,4 +518,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.a60dc6780dc1d79e75d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.80c206d424775f4bb8ba.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.0c879554dbfa5d4b4adf.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d5295fb2caeabafee05a.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5335,7 +5335,7 @@
 					to: `${h.a}/${t}`
 				}, a.a.createElement(u.q, {
 					onClick: () => {
-						n ? y && x === b.a.notVoted && (f(m.c), _(Object(l.bb)(y))) : C()
+						n ? y && x === b.a.notVoted && (f(m.c), _(Object(l.db)(y))) : C()
 					},
 					className: Object(r.a)(g.a.snoovatarButton, g.a.snoovatarExtraPadding, g.a.compactButtonLayout, {
 						[g.a.avatarPostifyButton]: n
@@ -14481,4 +14481,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0c879554dbfa5d4b4adf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d5295fb2caeabafee05a.js.map

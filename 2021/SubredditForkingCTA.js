@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.f60398d5a63c75ee4b16.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.1da8bc5b3511260e99a1.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/SubredditForkingCTA/SubredditForkingCTA.tsx": function(t, _, e) {
@@ -921,7 +921,7 @@
 			var g = e("./src/reddit/components/SubredditForkingCTA/index.m.less"),
 				f = e.n(g);
 			const p = (t, _) => {
-					const e = Object(h.S)(t, {
+					const e = Object(h.T)(t, {
 						..._,
 						disallowProfile: !0
 					});
@@ -980,4 +980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.f60398d5a63c75ee4b16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.1da8bc5b3511260e99a1.js.map

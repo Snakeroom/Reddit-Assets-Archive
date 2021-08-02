@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e06f4a4939b005dc1ebe.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.05cb0329d2092d7bb3fc.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -215,10 +215,10 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const o = Object($.F)(p(), {
+						const o = Object($.G)(p(), {
 							postId: e
 						});
-						u(Object(m.x)(o, O.a.CommentSubmitted))
+						u(Object(m.z)(o, O.a.CommentSubmitted))
 					} else {
 						v.error && v.error.type === o.Gb && F.g(y, de(s), e);
 						const t = v.error && v.error.fields && v.error.fields[0] ? v.error.fields[0].msg : r.fbt._("Something went wrong", null, {
@@ -2503,7 +2503,7 @@
 					const n = Object(b.a)(e, {
 						commentId: t
 					});
-					return n ? Object(c.a)(Object(m.E)(e, n), t) : ""
+					return n ? Object(c.a)(Object(m.F)(e, n), t) : ""
 				},
 				D = (e, {
 					commentId: t
@@ -2727,4 +2727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e06f4a4939b005dc1ebe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.05cb0329d2092d7bb3fc.js.map

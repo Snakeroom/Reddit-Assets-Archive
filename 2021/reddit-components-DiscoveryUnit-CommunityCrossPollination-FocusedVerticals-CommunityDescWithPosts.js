@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.216b32cca698859b9562.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4b9f504bd0294b0ca40a.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -272,8 +272,8 @@
 				T = s.n(P);
 			const N = e => `${e}--FocusedVerticalRecommendationItem`,
 				D = Object(o.c)({
-					post: k.F,
-					subreddit: k.S
+					post: k.G,
+					subreddit: k.T
 				});
 			class B extends r.a.Component {
 				constructor() {
@@ -386,7 +386,7 @@
 					onPostClick: t => {
 						e(Object(d.a)({
 							lastLoadedEnv: "server"
-						})), e(Object(S.I)({
+						})), e(Object(S.K)({
 							postOrComment: t
 						}))
 					}
@@ -1302,4 +1302,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.216b32cca698859b9562.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4b9f504bd0294b0ca40a.js.map

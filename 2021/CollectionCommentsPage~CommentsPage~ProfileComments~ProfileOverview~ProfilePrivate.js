@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.41ed4c03ee3972a0d527.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.611528152c070ac66ed1.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1938,7 +1938,7 @@
 				h = n("./src/reddit/components/ExpandoButton/index.m.less"),
 				E = n.n(h);
 			const v = Object(r.b)(null, (e, t) => ({
-					toggle: () => e(Object(l.v)({
+					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					}))
 				})),
@@ -2292,7 +2292,7 @@
 			const x = Object(r.b)(() => Object(i.c)({}), (e, {
 				post: t
 			}) => ({
-				onFollow: () => e(Object(d.y)(t.isSponsored ? t.postId : t.id))
+				onFollow: () => e(Object(d.A)(t.isSponsored ? t.postId : t.id))
 			}))(Object(l.c)(b))
 		},
 		"./src/reddit/components/PostMedia/index.tsx": function(e, t, n) {
@@ -3044,8 +3044,8 @@
 			const i = Object(s.a)(e => Object(a.c)(e, {
 				experimentName: o.cd,
 				experimentEligibilitySelector: a.a
-			}), r.F, (e, t) => e === o.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.G, (e, t) => e === o.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.41ed4c03ee3972a0d527.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.611528152c070ac66ed1.js.map

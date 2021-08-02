@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.37eec4cdead2fd395cae.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.7bd9b7d8b1e3b273f691.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -230,10 +230,10 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const r = Object(H.F)(f(), {
+						const r = Object(H.G)(f(), {
 							postId: e
 						});
-						u(Object(m.x)(r, O.a.CommentSubmitted))
+						u(Object(m.z)(r, O.a.CommentSubmitted))
 					} else {
 						S.error && S.error.type === r.Gb && U.g(y, de(o), e);
 						const t = S.error && S.error.fields && S.error.fields[0] ? S.error.fields[0].msg : s.fbt._("Something went wrong", null, {
@@ -1651,7 +1651,7 @@
 						m = e[0],
 						u = Object(G.a)(m) ? W.e.Post : W.e.Comment,
 						l = u === W.e.Post ? i.posts.models[m] : i.features.comments.models[m],
-						b = u === W.e.Post ? w.P : C.i;
+						b = u === W.e.Post ? w.R : C.i;
 					if (!l || !a) return !1;
 					o(fe()), o(b({
 						[m]: {
@@ -3025,7 +3025,7 @@
 					const n = Object(b.a)(e, {
 						commentId: t
 					});
-					return n ? Object(c.a)(Object(m.E)(e, n), t) : ""
+					return n ? Object(c.a)(Object(m.F)(e, n), t) : ""
 				},
 				L = (e, {
 					commentId: t
@@ -3249,4 +3249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.37eec4cdead2fd395cae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7bd9b7d8b1e3b273f691.js.map

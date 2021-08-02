@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.34918004afa732c15c60.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.79ed808129f86a93bfbc.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -278,7 +278,7 @@
 				}
 			}
 			var y = Object(i.b)(null, e => ({
-					fireAdPixelsOfType: (t, s) => e(Object(m.x)(t, s)),
+					fireAdPixelsOfType: (t, s) => e(Object(m.z)(t, s)),
 					trackPostClick: t => e((e, s) => b.E(s(), t, b.a.POPULAR_CAROUSEL))
 				}))(C),
 				O = s("./src/reddit/contexts/ApiContext.tsx"),
@@ -418,10 +418,10 @@
 					selectedTemplateId: r
 				})),
 				handleVote: s => {
-					const r = s === d.a.upvoted ? Object(i.bb)(t) : Object(i.u)(t);
+					const r = s === d.a.upvoted ? Object(i.db)(t) : Object(i.w)(t);
 					e(r)
 				},
-				onIgnoreReports: () => e(Object(i.X)(t)),
+				onIgnoreReports: () => e(Object(i.Z)(t)),
 				onOpenReportsDropdown: t => e(Object(a.h)({
 					tooltipId: t
 				}))
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.34918004afa732c15c60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.79ed808129f86a93bfbc.js.map

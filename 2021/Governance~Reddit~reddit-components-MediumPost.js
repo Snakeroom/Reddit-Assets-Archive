@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.a78367538af5a4fb57f1.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.5e534e2afa31a16b6461.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, s) {
@@ -318,7 +318,7 @@
 					postId: s
 				}) => async (n, o, l) => {
 					if (!s) return;
-					const m = Object(f.S)(o(), {
+					const m = Object(f.T)(o(), {
 						postId: s
 					});
 					if (!m) return;
@@ -332,7 +332,7 @@
 							listingKey: e,
 							postId: s
 						}) || Object(p.a)(C).length >= _.a || Object(b.U)() || D(i.z).length >= _.a) return;
-					const A = Object(f.v)(C, {
+					const A = Object(f.w)(C, {
 						listingKey: e,
 						postId: s
 					});
@@ -364,7 +364,7 @@
 										t: n
 									}),
 									r = s();
-								return 0 === Object(f.y)(r, {
+								return 0 === Object(f.z)(r, {
 									listingKey: e
 								}).length
 							});
@@ -672,7 +672,7 @@
 					apiContext: o
 				}) => {
 					const c = t.flair.filter(t => !Object(a.q)(t.type));
-					if (e && c.unshift(e), n(Object(i.P)({
+					if (e && c.unshift(e), n(Object(i.R)({
 							[t.id]: {
 								flair: c
 							}
@@ -911,9 +911,9 @@
 		"./src/reddit/actions/subreddit/subredditPosts.ts": function(t, e, s) {
 			"use strict";
 			s.d(e, "b", (function() {
-				return Q
-			})), s.d(e, "a", (function() {
 				return z
+			})), s.d(e, "a", (function() {
+				return Q
 			}));
 			var n = s("./src/lib/constants/index.ts"),
 				r = s("./src/lib/makeActionCreator/index.ts"),
@@ -1181,7 +1181,7 @@
 				H = Object(r.a)(C.i),
 				V = Object(r.a)(C.r),
 				W = Object(r.a)(C.q),
-				Q = t => async (e, s, {
+				z = t => async (e, s, {
 					gqlContext: n
 				}) => {
 					const r = (await ((t, e) => Object(b.a)(t, {
@@ -1213,7 +1213,7 @@
 					} catch (d) {
 						e(W(d))
 					}
-				}, z = t => async (e, s, {
+				}, Q = t => async (e, s, {
 					gqlContext: r
 				}) => {
 					var o, a, E, S;
@@ -1230,13 +1230,13 @@
 						subredditName: x
 					} = t, v = Object(i.a)(h, null, {
 						isOtherDiscussions: !0
-					}), B = s(), V = Object(k.y)(B, {
+					}), B = s(), V = Object(k.z)(B, {
 						listingKey: v
-					}), W = f && (!V || 0 === V.length), Q = Object(i.a)(x, n.U[g], {
+					}), W = f && (!V || 0 === V.length), z = Object(i.a)(x, n.U[g], {
 						t: N
-					}), z = Object(k.y)(B, {
-						listingKey: Q
-					}), $ = O && (p || !z || 0 === z.length), X = p, J = m, Z = Object(k.F)(B, {
+					}), Q = Object(k.z)(B, {
+						listingKey: z
+					}), $ = O && (p || !Q || 0 === Q.length), X = p, J = m, Z = Object(k.G)(B, {
 						postId: h
 					}), tt = !!Z && !!Z.media && (Object(P.H)(Z.media) || Object(P.F)(Z.media)) && !Z.media.altText;
 					if (!(W || $ || X || J || tt || C)) return;
@@ -1542,7 +1542,7 @@
 						[M.a.isVisitedEnabled]: !t
 					})
 				}, n),
-				Q = Object(d.c)({
+				z = Object(d.c)({
 					flairPosition: (t, {
 						pageLayer: e
 					}) => Object(E.p)(t, {
@@ -1550,7 +1550,7 @@
 					}),
 					shouldOpenPostInNewTab: k.bb
 				}),
-				z = t => {
+				Q = t => {
 					const {
 						post: e,
 						subreddit: s
@@ -1677,7 +1677,7 @@
 						post: c,
 						sendEvent: this.props.sendEvent,
 						showCategoryTag: !1
-					}), i.a.createElement(z, q({}, this.props, {
+					}), i.a.createElement(Q, q({}, this.props, {
 						leftFlair: d ? _ : void 0
 					})), o && i.a.createElement(P, {
 						className: M.a.pollMeta,
@@ -1701,7 +1701,7 @@
 				const e = Object(E.bb)(),
 					s = Object(E.v)(e),
 					n = Object(B.a)(),
-					r = Object(o.e)(r => Q(r, {
+					r = Object(o.e)(r => z(r, {
 						...n,
 						...t,
 						isCommentPermalink: s,
@@ -1882,9 +1882,9 @@
 			})), s.d(e, "b", (function() {
 				return W
 			})), s.d(e, "f", (function() {
-				return Q
-			})), s.d(e, "e", (function() {
 				return z
+			})), s.d(e, "e", (function() {
+				return Q
 			})), s.d(e, "s", (function() {
 				return J
 			})), s.d(e, "m", (function() {
@@ -2157,12 +2157,12 @@
 					action: "click",
 					noun: "close"
 				}),
-				Q = (t, e, s) => n => ({
+				z = (t, e, s) => n => ({
 					...T(n, t, e, s),
 					action: "click",
 					noun: "scroll"
 				}),
-				z = (t, e) => s => ({
+				Q = (t, e) => s => ({
 					...m(s, t, e),
 					action: "click",
 					noun: "overflow_menu"
@@ -2729,7 +2729,7 @@
 					subredditId: e
 				}) => {
 					return S(t).some(s => {
-						const n = Object(u.S)(t, {
+						const n = Object(u.T)(t, {
 							postId: s
 						});
 						return !!n && n.id === e
@@ -2742,12 +2742,12 @@
 						n = Object(i.a)(e, r.U.TOP, {
 							t: s
 						}),
-						o = Object(u.y)(t, {
+						o = Object(u.z)(t, {
 							listingKey: n
 						});
 					if (0 !== o.length)
 						for (const r of o) {
-							const e = Object(u.F)(t, {
+							const e = Object(u.G)(t, {
 								postId: r
 							});
 							if (e && !e.hidden && !e.isSponsored) return e
@@ -2759,7 +2759,7 @@
 					const s = ((t, {
 							postId: e
 						}) => {
-							const s = Object(u.F)(t, {
+							const s = Object(u.G)(t, {
 								postId: e
 							});
 							if (!s) return _;
@@ -2807,4 +2807,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.a78367538af5a4fb57f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.5e534e2afa31a16b6461.js.map

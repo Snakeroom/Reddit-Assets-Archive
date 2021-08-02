@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.cc748d9b7a33292faa0f.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.2cfe0426119ef270eb3b.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -133,8 +133,8 @@
 				M = o("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.tsx"),
 				L = o("./src/reddit/helpers/path/index.ts"),
 				D = o("./src/reddit/helpers/postEvent.ts"),
-				F = o("./src/reddit/helpers/trackers/postCollection.ts"),
-				R = o("./src/reddit/models/PostCreationForm/index.ts"),
+				R = o("./src/reddit/helpers/trackers/postCollection.ts"),
+				F = o("./src/reddit/models/PostCreationForm/index.ts"),
 				A = o("./src/reddit/selectors/activeModalId.ts"),
 				B = o("./src/reddit/components/Collection/PostItem/index.m.less"),
 				W = o.n(B);
@@ -151,9 +151,9 @@
 			const {
 				fbt: U
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			let X, Y;
-			const z = e => `${e}--collectionItem`,
-				G = e => {
+			let X, G;
+			const Y = e => `${e}--collectionItem`,
+				z = e => {
 					const {
 						activeModalId: t,
 						addEventStartTime: o,
@@ -181,7 +181,7 @@
 							[W.a.isProfilePage]: O
 						}),
 						isOverlay: r,
-						makePostContainerId: z,
+						makePostContainerId: Y,
 						post: b,
 						onClick: d,
 						eventFactory: s,
@@ -222,7 +222,7 @@
 						onEditStartTime: C,
 						onAddEventStartTime: C,
 						shouldShowAddEventStartTime: !Object(D.a)(b)
-					}))))), t === Object(R.r)(b.id, r, R.j.COLLECTION_INFO_POST) && X && n.a.createElement(X, {
+					}))))), t === Object(F.r)(b.id, r, F.j.COLLECTION_INFO_POST) && X && n.a.createElement(X, {
 						onChange: o,
 						onClose: C,
 						schedule: Object(N.c)(b),
@@ -257,7 +257,7 @@
 							[W.a.isProfilePage]: v
 						}),
 						isOverlay: c,
-						makePostContainerId: z,
+						makePostContainerId: Y,
 						post: b,
 						onClick: m,
 						eventFactory: s,
@@ -303,7 +303,7 @@
 						onEditStartTime: E,
 						onAddEventStartTime: E,
 						shouldShowAddEventStartTime: !Object(D.a)(b)
-					})))), t === Object(R.r)(b.id, c, R.j.COLLECTION_INFO_POST) && X && n.a.createElement(X, {
+					})))), t === Object(F.r)(b.id, c, F.j.COLLECTION_INFO_POST) && X && n.a.createElement(X, {
 						onChange: o,
 						onClose: E,
 						schedule: Object(N.c)(b),
@@ -318,19 +318,19 @@
 							postId: s,
 							sendEvent: n
 						} = this.props;
-						n(Object(F.h)(s)), o && o(e, t)
+						n(Object(R.h)(s)), o && o(e, t)
 					}, this.onRemovePost = () => {
 						const {
 							post: e,
 							sendEvent: t
 						} = this.props;
-						this.props.onRemovePostFromCollection(), t(Object(F.p)(e.id))
+						this.props.onRemovePostFromCollection(), t(Object(R.p)(e.id))
 					}, this.onStartEventNow = () => {
 						const {
 							post: e,
 							sendEvent: t
 						} = this.props;
-						this.props.onStartEventNow(), t(Object(F.i)(e.id))
+						this.props.onStartEventNow(), t(Object(R.i)(e.id))
 					}, this.onPostTitleClick = e => {
 						const {
 							post: t
@@ -343,7 +343,7 @@
 						displayLayout: e,
 						post: t
 					} = this.props;
-					return t ? e === g.a.TIMELINE ? n.a.createElement(G, H({}, this.props, {
+					return t ? e === g.a.TIMELINE ? n.a.createElement(z, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow,
@@ -368,9 +368,9 @@
 					galleryThumbnail: y.e,
 					isFutureEvent: y.i,
 					layout: v.P,
-					post: f.F,
+					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
-					subredditOrProfile: f.S
+					subredditOrProfile: f.T
 				}), (e, {
 					collectionId: t,
 					postId: s,
@@ -379,13 +379,13 @@
 				}) => ({
 					onRemovePostFromCollection: () => e(Object(d.g)(t, s, n)),
 					onStartEventNow: async () => {
-						Y || (Y = await Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))), e(Y.startEventNowRequested(s))
+						G || (G = await Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))), e(G.startEventNowRequested(s))
 					},
 					toggleEditStartTimeModal: async () => {
-						X && Y || ([X, Y] = await Promise.all([o.e("schedulePickerModal").then(o.bind(null, "./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx")).then(e => e.default), Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))])), e(w.i(Object(R.r)(s, l, R.j.COLLECTION_INFO_POST)))
+						X && G || ([X, G] = await Promise.all([o.e("schedulePickerModal").then(o.bind(null, "./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx")).then(e => e.default), Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))])), e(w.i(Object(F.r)(s, l, F.j.COLLECTION_INFO_POST)))
 					},
 					addEventStartTime: t => {
-						Y && e(Y.editEventTimeRequested(s, t))
+						G && e(G.editEventTimeRequested(s, t))
 					}
 				}))(Object(b.c)(Z))),
 				V = o("./src/reddit/components/Collection/index.m.less"),
@@ -416,11 +416,11 @@
 							postId: t
 						}),
 						s = o && (o.primaryPostId || o.postIds[0]);
-					return s && Object(f.F)(e, {
+					return s && Object(f.G)(e, {
 						postId: s
 					}) || null
 				},
-				post: f.F,
+				post: f.G,
 				shouldShowThumbnail: (e, {
 					postId: t
 				}) => {
@@ -581,7 +581,7 @@
 					shouldShowCollectionEditOptions: C.s
 				}),
 				w = Object(a.b)(N, (e, t) => ({
-					copyLink: () => e(Object(m.B)(t.permalink)),
+					copyLink: () => e(Object(m.D)(t.permalink)),
 					onCreatePost: o => {
 						t.shouldShowCreatePost && e(Object(r.b)(o))
 					},
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.cc748d9b7a33292faa0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.2cfe0426119ef270eb3b.js.map

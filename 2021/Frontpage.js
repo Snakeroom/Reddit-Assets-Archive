@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1cbbbf1b6051c19280f9.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.aa31439b113fe45a5895.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1332,7 +1332,7 @@
 				ge = n("./src/lib/lessComponent.tsx");
 			const fe = Object(d.b)(null, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink)),
-					clearLinks: () => e(Object(ce.r)())
+					clearLinks: () => e(Object(ce.t)())
 				})),
 				ye = ge.a.button("ClearButton", he.a);
 			class _e extends c.a.Component {
@@ -1353,7 +1353,7 @@
 			var xe = fe(_e),
 				ve = n("./src/reddit/selectors/posts.ts");
 			const ke = Object(u.c)({
-				recentPosts: ve.O
+				recentPosts: ve.P
 			});
 			var je = Object(d.b)(ke, (e, t) => ({
 					openLightbox: t => () => e(Object(pe.a)(t.permalink))
@@ -1876,7 +1876,7 @@
 				h = n("./src/reddit/selectors/subreddit.ts"),
 				g = n("./src/reddit/components/MiniPost/index.m.less"),
 				f = n.n(g);
-			const y = Object(a.a)(e => e, b.F, b.d, (e, t, n) => {
+			const y = Object(a.a)(e => e, b.G, b.d, (e, t, n) => {
 					return {
 						crosspost: n,
 						post: t,
@@ -2572,7 +2572,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				l = n("./src/reddit/selectors/posts.ts");
 			const u = Object(i.c)({
-					postCount: l.K,
+					postCount: l.L,
 					previousPageIsOverlay: d.n,
 					tabBadged: e => e.tabBadged
 				}),
@@ -4661,4 +4661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1cbbbf1b6051c19280f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.aa31439b113fe45a5895.js.map

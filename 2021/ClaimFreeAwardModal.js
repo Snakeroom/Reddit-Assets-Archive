@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.29fa361ffdd76e08c2b1.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.4047538ce896935cff65.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -81,7 +81,7 @@
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(_({
 								awards: r.awards
-							})), e(Object(u.z)())
+							})), e(Object(u.B)())
 						}
 					} catch (m) {
 						Object(n.b)() || console.error(m), e(Object(i.f)({
@@ -230,4 +230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.29fa361ffdd76e08c2b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.4047538ce896935cff65.js.map

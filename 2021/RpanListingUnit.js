@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2edda303dd9dfe5d0b2a.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.b05568e49ab13db1ea55.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -408,7 +408,7 @@
 					let b = null;
 					if (h) b = h.id;
 					else if (Object(i.a)(r)) {
-						const e = Object(m.F)(o, {
+						const e = Object(m.G)(o, {
 							postId: r
 						});
 						e && (b = e.belongsTo.id)
@@ -2112,7 +2112,7 @@
 							const {
 								voteCountChange: t
 							} = e.subscribe.data;
-							0 !== t && _(Object(l.G)({
+							0 !== t && _(Object(l.I)({
 								postId: i,
 								delta: t
 							}))
@@ -3826,4 +3826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2edda303dd9dfe5d0b2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b05568e49ab13db1ea55.js.map

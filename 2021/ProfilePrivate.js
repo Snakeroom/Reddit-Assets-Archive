@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.7b315c0b255374b7d13a.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.767f15c3a381311625a2.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -219,13 +219,13 @@
 				k = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
 				N = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
 				A = s("./src/lib/initializeClient/installReducer.ts"),
-				M = s("./src/reddit/reducers/features/comments/index.ts");
+				K = s("./src/reddit/reducers/features/comments/index.ts");
 			Object(A.a)({
 				features: {
-					comments: M.a
+					comments: K.a
 				}
 			});
-			const K = {
+			const M = {
 					[f.a.Downvoted]: (e, t) => Object(d.a)(e, {
 						...a,
 						variables: t
@@ -295,7 +295,7 @@
 							first: N.h,
 							after: null
 						},
-						v = await K[a](i.gqlContext(), b);
+						v = await M[a](i.gqlContext(), b);
 					if (v.ok && v.body) {
 						const e = B({
 							rawData: _(a, v),
@@ -331,7 +331,7 @@
 					t(U({
 						listingKey: n
 					}));
-					const a = await K[e](i.gqlContext(), d);
+					const a = await M[e](i.gqlContext(), d);
 					if (a.ok && a.body) {
 						const s = B({
 							includeIdentity: !1,
@@ -396,8 +396,8 @@
 				k = s("./src/reddit/helpers/brandSafety/index.ts"),
 				N = s("./src/reddit/helpers/trackers/ads.ts"),
 				A = s("./src/lib/LRUCache/index.ts"),
-				M = s("./src/telemetry/index.ts"),
-				K = s("./src/telemetry/models/Timer.ts"),
+				K = s("./src/telemetry/index.ts"),
+				M = s("./src/telemetry/models/Timer.ts"),
 				_ = s("./src/reddit/components/PostList/index.m.less"),
 				B = s.n(_);
 			const {
@@ -472,12 +472,12 @@
 					}), this.eventFactoryHandler = (e, t, s) => this.props.postClickEventFactory(e, t, s, this.props)
 				}
 				UNSAFE_componentWillMount() {
-					void 0 !== this.timerId && M.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = M.c.start())
+					void 0 !== this.timerId && K.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = K.c.start())
 				}
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, void 0 !== this.timerId) {
-						const e = M.c.end(this.timerId);
-						setTimeout(() => Object(M.b)(b.l.Redesign, {
+						const e = K.c.end(this.timerId);
+						setTimeout(() => Object(K.b)(b.l.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -485,14 +485,14 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					void 0 !== this.timerId && M.c.cancel(this.timerId), e.postIds.length && (this.timerId = M.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					void 0 !== this.timerId && K.c.cancel(this.timerId), e.postIds.length && (this.timerId = K.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
 					var t, s;
-					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && M.c.has(this.timerId)) {
-						const e = M.c.end(this.timerId);
+					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && K.c.has(this.timerId)) {
+						const e = K.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(M.b)(b.l.Redesign, {
+						setTimeout(() => Object(K.b)(b.l.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -503,7 +503,7 @@
 					i && i !== (null === (s = e.postIds) || void 0 === s ? void 0 : s[0]) && this.props.onFirstPostChanged(i)
 				}
 				componentWillUnmount() {
-					this.timerId && M.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && K.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -516,7 +516,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return M.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return K.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -525,9 +525,9 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
-					const i = M.c.end(e);
+					const i = K.c.end(e);
 					setTimeout(() => {
-						s(t(i, K.TimerType.InApp))
+						s(t(i, M.TimerType.InApp))
 					}, 0)
 				}
 				showPlaceholder() {
@@ -622,9 +622,9 @@
 							layout: i,
 							post: N
 						});
-						let M = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && f && (M += `--${f}`);
-						const K = J(e, i, s, f, v, y, this.props, t, this.props.hostPostData),
+						let K = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && f && (K += `--${f}`);
+						const M = J(e, i, s, f, v, y, this.props, t, this.props.hostPostData),
 							_ = W(e, i, this.props, t, P),
 							B = X(e, this.props, a),
 							H = N.media && N.media.type === G.o.EMBED ? N.media.provider : null,
@@ -634,7 +634,7 @@
 							estHeight: Object(R.c)(k, i),
 							id: e,
 							isFocusable: !(!N.media || !(i === L.g.Large || i === L.g.Classic && Object(G.G)(N.media))) && (G.d.has(N.media.type) && (!H || !G.s.has(H)) && !N.isSpoiler && !N.isNSFW),
-							trackOnEnteredViewport: K,
+							trackOnEnteredViewport: M,
 							trackOnExitedViewport: _,
 							render: ({
 								className: i,
@@ -646,7 +646,7 @@
 							}) => p.a.createElement(A, {
 								className: i,
 								currentProfileName: r,
-								key: M,
+								key: K,
 								availableWidth: m,
 								eventFactory: this.eventFactoryHandler,
 								first: C,
@@ -829,13 +829,13 @@
 				x = Object(o.b)(O, (e, t) => ({
 					onBottomViewed: (t, s) => e(a.c(t, s)),
 					openPost: t => {
-						e(d.I(t))
+						e(d.K(t))
 					},
 					trackOnPostEnteredViewport: (t, s) => {
-						Object(u.a)(t) && e(d.L(t))
+						Object(u.a)(t) && e(d.N(t))
 					},
 					trackOnPostExitedViewport: (t, s, i) => {
-						Object(u.a)(t) && e(d.M(t, i))
+						Object(u.a)(t) && e(d.O(t, i))
 					},
 					fireAdPixelsOfType: r.a
 				}), (e, t, s) => ({
@@ -960,7 +960,7 @@
 					itemIdToPostId: R,
 					estimateItemHeight: O.b
 				}),
-				M = Object(n.c)({
+				K = Object(n.c)({
 					...N,
 					measureScrollFPS: j.d.measureScrollFPS,
 					postIds: (e, {
@@ -968,24 +968,24 @@
 					}) => t.indexOf(S.a.Saved) > -1 || t.indexOf(S.a.ReceivedGildings) > -1 || t.indexOf(S.a.GivenGildings) > -1 ? [] : e.profilePrivatePage.ids[t] || [],
 					postListPlaceholderComponent: () => y.a
 				}),
-				K = e => ({
+				M = e => ({
 					onBottomViewed: f.a,
 					openPost: t => {
-						e(v.I(t))
+						e(v.K(t))
 					},
 					trackOnPostEnteredViewport: f.a,
 					fireAdPixelsOfType: (t, s) => {
-						e(v.x(t, s))
+						e(v.z(t, s))
 					}
 				}),
-				_ = Object(o.b)(A, K, (e, t, s) => ({
+				_ = Object(o.b)(A, M, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
 					postClickEventFactory: (e, t) => Object(I.h)(e, t)
 				})),
-				B = Object(o.b)(M, e => ({
-					...K(e),
+				B = Object(o.b)(K, e => ({
+					...M(e),
 					onFirstPostChanged: f.a,
 					adBrandSafetyStatusReceived: f.a,
 					trackOnPostExitedViewport: f.a
@@ -1187,4 +1187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.7b315c0b255374b7d13a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.767f15c3a381311625a2.js.map

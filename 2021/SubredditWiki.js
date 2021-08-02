@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.2872bc390f32597751e0.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d5e8bafb4c66a965c2f4.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, s) {
@@ -1661,10 +1661,10 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(o.b)(() => Object(d.a)(v.E, y.bb, (e, {
+				P = Object(o.b)(() => Object(d.a)(v.F, y.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(v.b)(e, s) : null, k.a, E.actionInfo, v.F, (e, t, s, n, i, r) => ({
+				}) => t && s ? Object(v.b)(e, s) : null, k.a, E.actionInfo, v.G, (e, t, s, n, i, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -2153,7 +2153,7 @@
 					to: `${h.a}/${t}`
 				}, r.a.createElement(u.q, {
 					onClick: () => {
-						s ? v && E === b.a.notVoted && (g(m.c), k(Object(c.bb)(v))) : y()
+						s ? v && E === b.a.notVoted && (g(m.c), k(Object(c.db)(v))) : y()
 					},
 					className: Object(n.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
 						[x.a.avatarPostifyButton]: s
@@ -4189,8 +4189,8 @@
 			const {
 				fbt: q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = e => e.type === V.f.Nsfw || e.type === V.f.Spoiler, Y = Object(c.c)({
-				post: R.F,
-				subredditOrProfile: R.S
+				post: R.G,
+				subredditOrProfile: R.T
 			});
 			class Z extends a.a.PureComponent {
 				constructor() {
@@ -4268,7 +4268,7 @@
 				$ = s.n(Q);
 			const {
 				fbt: ee
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(R.L, e => e.filter(e => !e.isSponsored)), ie = Object(c.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), te = 10, se = 2, ne = Object(c.a)(R.M, e => e.filter(e => !e.isSponsored)), ie = Object(c.c)({
 				posts: (e, t) => ne(e, {
 					...t
 				})
@@ -4384,7 +4384,7 @@
 					listingKey: ge,
 					posts: (e, t) => {
 						const s = ge(e, t);
-						return Object(R.L)(e, {
+						return Object(R.M)(e, {
 							listingKey: s
 						})
 					},
@@ -7059,10 +7059,10 @@
 					selectedTemplateId: n
 				})),
 				handleVote: s => {
-					const n = s === d.a.upvoted ? Object(r.bb)(t) : Object(r.u)(t);
+					const n = s === d.a.upvoted ? Object(r.db)(t) : Object(r.w)(t);
 					e(n)
 				},
-				onIgnoreReports: () => e(Object(r.X)(t)),
+				onIgnoreReports: () => e(Object(r.Z)(t)),
 				onOpenReportsDropdown: t => e(Object(a.h)({
 					tooltipId: t
 				}))
@@ -7767,4 +7767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.2872bc390f32597751e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d5e8bafb4c66a965c2f4.js.map

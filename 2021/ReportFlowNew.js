@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.9e2fb76b0eff60a2cdbe.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.bbf95b900bd5d297e330.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -280,8 +280,8 @@
 				variables: t
 			});
 			var x = o("./src/redditGQL/operations/ReportForm.json");
-			var F = o("./src/reddit/contexts/ApiContext.tsx"),
-				v = o("./src/reddit/models/Post/index.ts"),
+			var v = o("./src/reddit/contexts/ApiContext.tsx"),
+				F = o("./src/reddit/models/Post/index.ts"),
 				y = o("./src/reddit/models/Toast/index.ts"),
 				g = o("./src/reddit/models/WhitelistAndBlocked.ts"),
 				I = o("./src/reddit/selectors/commentSelector.ts"),
@@ -301,7 +301,7 @@
 			const U = Object(l.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(S.F)(e, {
+					}) => t ? Object(S.G)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -313,7 +313,7 @@
 						postId: t
 					}) => {
 						const o = t && e.posts.models[t];
-						return !!o && Object(v.o)(o)
+						return !!o && Object(F.o)(o)
 					},
 					blockUserPending: e => e.user.blocked.api,
 					blockedUser: (e, t) => e.user.blocked.data.find(o => {
@@ -322,7 +322,7 @@
 							postId: s
 						} = t, n = r ? Object(I.a)(e, {
 							commentId: r
-						}) : null, i = s ? Object(S.F)(e, {
+						}) : null, i = s ? Object(S.G)(e, {
 							postId: s
 						}) : null;
 						(n ? n.author : i ? i.author : null) || t.author;
@@ -544,7 +544,7 @@
 					}))
 				}
 			}
-			t.default = Object(F.b)(G(M))
+			t.default = Object(v.b)(G(M))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -702,4 +702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.9e2fb76b0eff60a2cdbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.bbf95b900bd5d297e330.js.map

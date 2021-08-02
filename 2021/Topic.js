@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.9b268c5281011db4a7f0.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0232d3adb934df5810f0.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1637,7 +1637,7 @@
 								subredditId: s
 							})
 						}
-						return Object(y.Q)(e, {
+						return Object(y.R)(e, {
 							...t
 						})
 					},
@@ -1653,7 +1653,7 @@
 								subredditId: t
 							})
 						}
-						return Object(y.C)(e, t, s, i)
+						return Object(y.D)(e, t, s, i)
 					}),
 					subredditsById: E.Z,
 					viewportDataLoaded: T.a,
@@ -1673,16 +1673,16 @@
 					openPost: t => {
 						t.isFrontpage && e(Object(a.a)({
 							lastLoadedEnv: "server"
-						})), e(d.I(t))
+						})), e(d.K(t))
 					},
 					fireAdPixelsOfType: (t, s) => {
-						e(d.x(t, s))
+						e(d.z(t, s))
 					},
 					trackOnPostEnteredViewport: (t, s, r, i) => {
-						e(d.L(t, r, i))
+						e(d.N(t, r, i))
 					},
 					trackOnPostExitedViewport: (t, s, r, i, n) => {
-						e(d.M(t, r, i, n))
+						e(d.O(t, r, i, n))
 					},
 					surveyTriggerScrollCounted: () => e(Object(u.h)())
 				}),
@@ -2564,10 +2564,10 @@
 					return t !== a && t !== o && (!(o + s > t) && (!(t + s > a) && !((e, t, s) => {
 						const r = s[t - 1],
 							i = s[t],
-							o = i && Object(n.F)(e, {
+							o = i && Object(n.G)(e, {
 								postId: r
 							}) || null,
-							a = i && Object(n.F)(e, {
+							a = i && Object(n.G)(e, {
 								postId: i
 							}) || null;
 						return o && o.isSponsored || a && a.isSponsored
@@ -2580,7 +2580,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let i = -1;
-					const o = Object(n.y)(e, {
+					const o = Object(n.z)(e, {
 							listingKey: s.listingKey
 						}),
 						a = [];
@@ -2612,4 +2612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9b268c5281011db4a7f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.0232d3adb934df5810f0.js.map

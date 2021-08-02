@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.fdf3d990cfff9db9f38a.js
-// Retrieved at 8/2/2021, 12:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.666bbfaaed1b31092d75.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -515,7 +515,7 @@
 				}, te = Object(n.a)(q.s), se = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(U.a)(s) ? Object(P.F)(e, {
+					} = t, r = Object(U.a)(s) ? Object(P.G)(e, {
 						postId: s
 					}) : Object(y.a)(e, {
 						commentId: s
@@ -615,7 +615,7 @@
 						if (e.length) {
 							const s = Math.max(900 - B, 10),
 								r = Math.max(300 - B, 10),
-								a = Object(U.a)(m) && Object(O.o)(Object(P.F)(n, {
+								a = Object(U.a)(m) && Object(O.o)(Object(P.G)(n, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -1390,7 +1390,7 @@
 							if (!s.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(v({
 								awards: s.awards
-							})), e(Object(u.z)())
+							})), e(Object(u.B)())
 						}
 					} catch (m) {
 						Object(n.b)() || console.error(m), e(Object(c.f)({
@@ -1844,7 +1844,7 @@
 			}));
 			var xe = Object(a.b)((e, t) => {
 					if (Object(l.a)(t.thingId)) {
-						const s = Object(R.F)(e, {
+						const s = Object(R.G)(e, {
 							postId: t.thingId
 						});
 						if (!s) return {};
@@ -2226,7 +2226,7 @@
 						r = s && s.id
 					}
 					if (!r && Object(l.a)(t)) {
-						const s = Object(R.F)(e, {
+						const s = Object(R.G)(e, {
 							postId: t
 						});
 						r = s && s.belongsTo.id
@@ -2293,7 +2293,7 @@
 					message: A.c,
 					postOrComment: (e, {
 						thingId: t
-					}) => Object(l.a)(t) ? Object(R.F)(e, {
+					}) => Object(l.a)(t) ? Object(R.G)(e, {
 						postId: t
 					}) : Object(k.a)(e, {
 						commentId: t
@@ -2326,7 +2326,7 @@
 							r = s && s.id
 						}
 						if (!r && Object(l.a)(t)) {
-							const s = Object(R.F)(e, {
+							const s = Object(R.G)(e, {
 								postId: t
 							});
 							r = s && s.belongsTo.id
@@ -2760,10 +2760,10 @@
 						style: t
 					}, e.children)
 				},
-				A = Object(o.b)(() => Object(d.a)(O.E, j.bb, (e, {
+				A = Object(o.b)(() => Object(d.a)(O.F, j.bb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(O.b)(e, s) : null, x.a, v.actionInfo, O.F, (e, t, s, r, n, a) => ({
+				}) => t && s ? Object(O.b)(e, s) : null, x.a, v.actionInfo, O.G, (e, t, s, r, n, a) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -5284,4 +5284,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.fdf3d990cfff9db9f38a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.666bbfaaed1b31092d75.js.map

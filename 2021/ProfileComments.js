@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.16f7a0ad007158ed8cc1.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.c1b3d68153166b8a7673.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -17,9 +17,9 @@
 			})), r.d(t, "moreItemsLoaded", (function() {
 				return D
 			})), r.d(t, "moreItemsFailed", (function() {
-				return R
+				return K
 			})), r.d(t, "moreItemsRequested", (function() {
-				return G
+				return R
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/lodash/difference.js"),
@@ -110,7 +110,7 @@
 						meta: r().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(g)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(g))])
-				}, M = Object(i.a)(T.c), D = Object(i.a)(T.b), R = Object(i.a)(T.a), G = () => async (e, t, {
+				}, M = Object(i.a)(T.c), D = Object(i.a)(T.b), K = Object(i.a)(T.a), R = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const s = t(),
@@ -164,7 +164,7 @@
 							meta: s.meta,
 							...r
 						}))
-					} else e(R({
+					} else e(K({
 						account: C.body.data ? C.body.data.account : null,
 						error: C.error,
 						fetchedToken: b.token,
@@ -295,9 +295,9 @@
 				}
 			}, e.children));
 			var D = r("./src/reddit/components/ProfileItemList/index.tsx"),
-				R = r("./node_modules/lodash/noop.js"),
-				G = r.n(R),
-				K = r("./src/reddit/actions/ads/index.ts"),
+				K = r("./node_modules/lodash/noop.js"),
+				R = r.n(K),
+				G = r("./src/reddit/actions/ads/index.ts"),
 				J = r("./src/reddit/actions/comment/list.ts"),
 				H = r("./src/reddit/actions/post.ts"),
 				U = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -323,7 +323,7 @@
 					commentsById: Q.q,
 					itemIds: Z.f,
 					itemIdToPostId: Z.e,
-					postsById: X.I,
+					postsById: X.J,
 					estimateItemHeight: e => (e, t, r) => {
 						if (r) switch (t) {
 							case v.g.Medium:
@@ -350,13 +350,13 @@
 				oe = Object(i.b)(se, e => ({
 					onBottomViewed: (t, r) => e(Object(J.c)(t, r)),
 					adBrandSafetyStatusReceived: t => {
-						e(K.d({
+						e(G.d({
 							isViewSafe: t
 						}))
 					},
-					openPost: t => e(Object(H.I)(t)),
-					fireAdPixelsOfType: G.a,
-					trackOnPostEnteredViewport: G.a
+					openPost: t => e(Object(H.K)(t)),
+					fireAdPixelsOfType: R.a,
+					trackOnPostEnteredViewport: R.a
 				}), (e, t, r) => ({
 					...e,
 					...t,
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.16f7a0ad007158ed8cc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.c1b3d68153166b8a7673.js.map

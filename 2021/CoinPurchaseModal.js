@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.93bc389d00f86dc6e064.js
-// Retrieved at 7/26/2021, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f632cdd1c038ace39e57.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -756,7 +756,7 @@
 							if (!a.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(f({
 								awards: a.awards
-							})), e(Object(p.z)())
+							})), e(Object(p.B)())
 						}
 					} catch (u) {
 						Object(n.b)() || console.error(u), e(Object(d.f)({
@@ -1604,4 +1604,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.93bc389d00f86dc6e064.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f632cdd1c038ace39e57.js.map

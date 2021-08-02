@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.dad0009ce6e246f70b52.js
-// Retrieved at 8/2/2021, 1:00:11 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.8f2c78f08f923de66f27.js
+// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -2445,7 +2445,7 @@
 					to: `${f.a}/${t}`
 				}, a.a.createElement(u.q, {
 					onClick: () => {
-						n ? _ && C === b.a.notVoted && (h(m.c), I(Object(d.bb)(_))) : g()
+						n ? _ && C === b.a.notVoted && (h(m.c), I(Object(d.db)(_))) : g()
 					},
 					className: Object(s.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
 						[x.a.avatarPostifyButton]: n
@@ -3712,4 +3712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.dad0009ce6e246f70b52.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.8f2c78f08f923de66f27.js.map
