@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.c0342addae6f1e13e501.js
-// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.5af60108b3263375a543.js
+// Retrieved at 8/3/2021, 12:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
@@ -118,20 +118,20 @@
 				o = t("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
 				f = t("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
 				s = t("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
-				g = t("./src/lib/makeGqlRequest/index.ts");
-			const E = (C, e) => Object(g.a)(C, {
+				E = t("./src/lib/makeGqlRequest/index.ts");
+			const g = (C, e) => Object(E.a)(C, {
 					...f,
 					variables: e
 				}),
-				m = (C, e) => Object(g.a)(C, {
+				m = (C, e) => Object(E.a)(C, {
 					...s,
 					variables: e
 				}),
-				p = (C, e) => Object(g.a)(C, {
+				p = (C, e) => Object(E.a)(C, {
 					...d,
 					variables: e
 				}),
-				B = (C, e) => Object(g.a)(C, {
+				B = (C, e) => Object(E.a)(C, {
 					...o,
 					variables: e
 				});
@@ -1448,8 +1448,8 @@
 					onClose: o = (() => {}),
 					isNightMode: f,
 					subredditUrl: s,
-					progressModule: g,
-					primaryButton: E,
+					progressModule: E,
+					primaryButton: g,
 					progress: m,
 					status: p
 				}, B) => {
@@ -1464,10 +1464,10 @@
 					function Q(e) {
 						(function(C) {
 							return "CommunityProgressShareButton" === C.__typename
-						})(e) && (Object(Y.a)(`https://reddit.com${s}`), b(Object(V.f)(Object(V.e)("Copied community URL to clipboard!", z.b.SuccessCommunityGreen)))), n && o(H.b.CTA_BUTTON_CLICK), w(D(g, C, e.buttonText))
+						})(e) && (Object(Y.a)(`https://reddit.com${s}`), b(Object(V.f)(Object(V.e)("Copied community URL to clipboard!", z.b.SuccessCommunityGreen)))), n && o(H.b.CTA_BUTTON_CLICK), w(D(E, C, e.buttonText))
 					}
 					const k = (null == m ? void 0 : m.done) / (null == m ? void 0 : m.total) * 100 || 0,
-						j = lC(E, s);
+						j = lC(g, s);
 					return l.a.createElement("a", CC({
 						className: Object(L.a)(c.a.ncpCard, {
 							[c.a.v2]: !n,
@@ -1476,8 +1476,8 @@
 						})
 					}, j && {
 						href: j
-					}, E && {
-						onClick: () => Q(E)
+					}, g && {
+						onClick: () => Q(g)
 					}, {
 						rel: "noopener noreferrer",
 						target: "_blank",
@@ -1543,19 +1543,29 @@
 					}), l.a.createElement("div", null, eC._("Close", null, {
 						hk: "4gbyAA"
 					}))), r.length > 0 && l.a.createElement("div", null, r.map(C => {
-						const e = lC(C, s);
-						return l.a.createElement(U.q, {
-							kind: e ? U.a.ExternalLink : void 0,
-							key: C.buttonText,
-							className: c.a.button,
-							href: e,
-							onClick: () => Q(C),
-							style: n ? {
+						const e = lC(C, s),
+							t = n ? {
 								backgroundColor: Z,
 								borderColor: Z,
 								color: "white"
-							} : {}
-						}, C.buttonText)
+							} : {},
+							a = {
+								className: c.a.button,
+								onClick: () => Q(C),
+								style: t
+							},
+							A = !!(null == e ? void 0 : e.startsWith(y.a.redditUrl));
+						return e ? A ? l.a.createElement(U.q, CC({}, a, {
+							key: C.buttonText,
+							kind: U.a.InternalLink,
+							to: e
+						}), C.buttonText) : l.a.createElement(U.q, CC({}, a, {
+							key: C.buttonText,
+							kind: U.a.ExternalLink,
+							href: e
+						}), C.buttonText) : l.a.createElement(U.q, CC({}, a, {
+							key: C.buttonText
+						}), C.buttonText)
 					}))))
 				}),
 				LC = t("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1648,15 +1658,15 @@
 					className: c.a.arrowIcon
 				}))),
 				sC = t("./src/reddit/components/NewCommunityProgress/icons/Progress.m.less"),
-				gC = t.n(sC);
-			var EC = C => {
+				EC = t.n(sC);
+			var gC = C => {
 				let e = C.percentage;
 				e < 0 && (e = 0), e > 100 && (e = 100);
 				const t = (100 - e) / 100 * (80 * Math.PI);
 				return l.a.createElement("div", {
 					id: "cont",
 					"data-pct": C.ratioString,
-					className: Object(L.a)(C.className, gC.a.cont)
+					className: Object(L.a)(C.className, EC.a.cont)
 				}, l.a.createElement("svg", {
 					id: "svg",
 					width: "64",
@@ -1665,7 +1675,7 @@
 					version: "1.1",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, l.a.createElement("circle", {
-					className: gC.a.innerCircle,
+					className: EC.a.innerCircle,
 					r: "40",
 					cx: "50",
 					cy: "50",
@@ -1674,7 +1684,7 @@
 					strokeDashoffset: "0"
 				}), l.a.createElement("circle", {
 					strokeDashoffset: t,
-					className: gC.a.outerCircle,
+					className: EC.a.outerCircle,
 					id: "bar",
 					r: "40",
 					cx: "50",
@@ -1710,14 +1720,14 @@
 				let f;
 				f = t.cards;
 				const s = Object(a.useRef)(null),
-					[g, M] = Object(a.useState)(!C),
+					[E, M] = Object(a.useState)(!C),
 					h = Object(A.e)(N.V),
 					D = Object(A.e)(C => Object(O.Y)(C, e)),
 					y = Object(I.a)();
 				Object(a.useEffect)(() => {
-					y(b(t, g ? "expanded_module" : "collapses_module"))
-				}, [g]);
-				const [x] = Object(Q.a)(E), T = Object(A.d)();
+					y(b(t, E ? "expanded_module" : "collapses_module"))
+				}, [E]);
+				const [x] = Object(Q.a)(g), T = Object(A.d)();
 				const [F] = Object(Q.a)(m);
 				const [G, Y] = Object(a.useState)(void 0), [V] = Object(Q.a)(p);
 				const X = Object(A.e)(j.a) === BC;
@@ -1732,7 +1742,7 @@
 				if (Object(a.useEffect)(() => {
 						const C = (null == K ? void 0 : K.current) || J.current;
 						(null == C ? void 0 : C.parentNode) && (C.parentNode.scrollTop = (null == C ? void 0 : C.offsetTop) - C.parentNode.offsetTop - 20)
-					}, [K, t, g]), 0 === t.cards.length) return null;
+					}, [K, t, E]), 0 === t.cards.length) return null;
 				const W = () => f.map((C, a) => {
 						if (o && a > 2) return;
 						const A = {
@@ -1763,7 +1773,7 @@
 					_ = t.cards.find(C => C.status === H.a.INITIAL || C.status === H.a.ACTIONED);
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement("details", {
 					ref: s,
-					open: g,
+					open: E,
 					className: Object(L.a)(c.a.ncpWidget, {
 						[c.a.og]: o
 					}),
@@ -1786,12 +1796,12 @@
 						className: c.a.titleText
 					}, t.displayText), l.a.createElement("div", {
 						className: c.a.descriptionText
-					}, t.description)), void 0 !== q && l.a.createElement(EC, {
+					}, t.description)), void 0 !== q && l.a.createElement(gC, {
 						className: c.a.progressCircle,
 						percentage: q,
 						ratioString: `${null===(C=t.progress)||void 0===C?void 0:C.done}/${null===(e=t.progress)||void 0===e?void 0:e.total}`
 					}))
-				})(), g ? l.a.createElement(k.c, {
+				})(), E ? l.a.createElement(k.c, {
 					className: Object(L.a)(c.a.chevron, {
 						[c.a.v2]: !o
 					})
@@ -1799,7 +1809,7 @@
 					className: Object(L.a)(c.a.chevron, {
 						[c.a.v2]: !o
 					})
-				}), !g && l.a.createElement("div", {
+				}), !E && l.a.createElement("div", {
 					className: Object(L.a)(c.a.dot, {
 						[c.a.v2]: !o
 					})
@@ -1958,4 +1968,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.c0342addae6f1e13e501.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.5af60108b3263375a543.js.map
