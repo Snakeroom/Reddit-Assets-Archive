@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.560b3af4766cac91c91b.js
-// Retrieved at 8/3/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3489c04174f87863d091.js
+// Retrieved at 8/3/2021, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -21758,7 +21758,8 @@
 					actionInfo: {
 						pageType: "community",
 						paneName: "predictions"
-					}
+					},
+					subreddit: Object(r.subreddit)(e)
 				}),
 				y = () => e => ({
 					...Object(r.defaults)(e),
@@ -30513,4 +30514,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.560b3af4766cac91c91b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3489c04174f87863d091.js.map
