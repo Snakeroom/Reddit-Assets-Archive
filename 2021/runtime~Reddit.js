@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0d9fb4d1b596e90f7e49.js
-// Retrieved at 8/2/2021, 5:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.59b7e4e674f2237494df.js
+// Retrieved at 8/3/2021, 9:50:08 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -643,7 +643,7 @@
 					NotificationsPrePromptLoader: "a97a4ca8feba3044fe8e",
 					PostFlowUpsellModal: "3fa16b2162786a0ceda3",
 					PowerupSuccessModal: "c38b43b84846b889a8b0",
-					Powerups: "447ccf7c6594caa0cf0b",
+					Powerups: "4f86538127f74b98c217",
 					Premium: "57c14ba60a517b9cca48",
 					ProfileModeration: "229d9034de2cc9931eaa",
 					PushNotifications: "31d6cfe0d16ae931b73c",
@@ -1260,7 +1260,7 @@
 						NotificationsPrePromptLoader: "b1df6fb919c422d6fb73",
 						PostFlowUpsellModal: "07aa1033436b4f6e41aa",
 						PowerupSuccessModal: "29cb4e8b11b9c30489da",
-						Powerups: "b06b02761f6972aa7d00",
+						Powerups: "9fa08860fa1b0d313ee2",
 						Premium: "14f9249372c23b910ad9",
 						ProfileModeration: "5251c5f3c4bac5ba4df0",
 						PushNotifications: "89032e1d9dd3add50b69",
@@ -1288,7 +1288,7 @@
 						"translations/es_MX-json": "a88b207d467f7fc7f68e",
 						"translations/fr_FR-json": "c95460acb8d75a488660",
 						"translations/it_IT-json": "bce3a4500247c42de2ab",
-						"translations/pseudo_ext-json": "b4c8fea96c6331e640cd",
+						"translations/pseudo_ext-json": "30ac5396d84652e9ddb6",
 						"translations/pseudo_long-json": "49ad3eb300f28de23e14",
 						"translations/pseudo_short-json": "85910562a0ee6a0c4e9a",
 						"translations/pt_BR-json": "b23676021403c59b8650",
@@ -1540,4 +1540,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0d9fb4d1b596e90f7e49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.59b7e4e674f2237494df.js.map
