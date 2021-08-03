@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bb35660bbc4ad691e2cf.js
-// Retrieved at 8/3/2021, 12:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f90baee704c8a4251cc9.js
+// Retrieved at 8/3/2021, 12:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2526,11 +2526,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("141394"),
+				buildNumber: r("141397"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628005554"),
+				})("1628006917"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -3813,162 +3813,164 @@
 				return z
 			})), i.d(t, "gc", (function() {
 				return K
-			})), i.d(t, "qb", (function() {
+			})), i.d(t, "nc", (function() {
 				return J
-			})), i.d(t, "ob", (function() {
+			})), i.d(t, "qb", (function() {
 				return Y
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "ob", (function() {
 				return Q
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return X
-			})), i.d(t, "eb", (function() {
+			})), i.d(t, "b", (function() {
 				return Z
-			})), i.d(t, "cb", (function() {
+			})), i.d(t, "eb", (function() {
 				return ee
-			})), i.d(t, "kb", (function() {
+			})), i.d(t, "cb", (function() {
 				return te
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "kb", (function() {
 				return ie
-			})), i.d(t, "fb", (function() {
+			})), i.d(t, "S", (function() {
 				return ne
-			})), i.d(t, "db", (function() {
+			})), i.d(t, "fb", (function() {
 				return re
-			})), i.d(t, "jb", (function() {
+			})), i.d(t, "db", (function() {
 				return se
-			})), i.d(t, "mb", (function() {
+			})), i.d(t, "jb", (function() {
 				return oe
-			})), i.d(t, "lb", (function() {
+			})), i.d(t, "mb", (function() {
 				return de
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "lb", (function() {
 				return ae
-			})), i.d(t, "X", (function() {
+			})), i.d(t, "Z", (function() {
 				return le
-			})), i.d(t, "Y", (function() {
+			})), i.d(t, "X", (function() {
 				return ue
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "Y", (function() {
 				return ce
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "bb", (function() {
 				return _e
-			})), i.d(t, "hc", (function() {
+			})), i.d(t, "R", (function() {
 				return pe
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "hc", (function() {
 				return me
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "P", (function() {
 				return he
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "J", (function() {
 				return fe
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "E", (function() {
 				return be
-			})), i.d(t, "Pb", (function() {
+			})), i.d(t, "g", (function() {
 				return ge
-			})), i.d(t, "Ob", (function() {
+			})), i.d(t, "Pb", (function() {
 				return we
+			})), i.d(t, "Ob", (function() {
+				return ye
 			})), i.d(t, "xb", (function() {
-				return ve
-			})), i.d(t, "Ab", (function() {
 				return Ee
+			})), i.d(t, "Ab", (function() {
+				return Te
 			})), i.d(t, "Bb", (function() {
-				return Se
-			})), i.d(t, "Cb", (function() {
 				return Oe
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "Cb", (function() {
 				return Ie
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "ab", (function() {
 				return Fe
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "C", (function() {
 				return Re
-			})), i.d(t, "Hb", (function() {
+			})), i.d(t, "D", (function() {
 				return je
+			})), i.d(t, "Hb", (function() {
+				return Ce
 			})), i.d(t, "Nb", (function() {
-				return xe
-			})), i.d(t, "ib", (function() {
 				return Ne
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "ib", (function() {
 				return Ae
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "O", (function() {
 				return Pe
-			})), i.d(t, "jc", (function() {
+			})), i.d(t, "z", (function() {
 				return De
-			})), i.d(t, "nb", (function() {
+			})), i.d(t, "jc", (function() {
 				return Be
-			})), i.d(t, "kc", (function() {
+			})), i.d(t, "nb", (function() {
 				return ke
-			})), i.d(t, "hb", (function() {
+			})), i.d(t, "kc", (function() {
 				return Le
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "hb", (function() {
 				return Me
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "d", (function() {
 				return Ue
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "e", (function() {
 				return Ge
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "h", (function() {
 				return qe
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "n", (function() {
 				return Ve
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "c", (function() {
 				return He
-			})), i.d(t, "Jb", (function() {
+			})), i.d(t, "f", (function() {
 				return We
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "Jb", (function() {
 				return $e
-			})), i.d(t, "zb", (function() {
+			})), i.d(t, "T", (function() {
 				return ze
-			})), i.d(t, "yb", (function() {
+			})), i.d(t, "zb", (function() {
 				return Ke
-			})), i.d(t, "wb", (function() {
+			})), i.d(t, "yb", (function() {
 				return Je
-			})), i.d(t, "Sb", (function() {
+			})), i.d(t, "wb", (function() {
 				return Ye
-			})), i.d(t, "Rb", (function() {
+			})), i.d(t, "Sb", (function() {
 				return Qe
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "Rb", (function() {
 				return Xe
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "F", (function() {
 				return Ze
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "H", (function() {
 				return et
-			})), i.d(t, "ec", (function() {
+			})), i.d(t, "r", (function() {
 				return tt
-			})), i.d(t, "Zb", (function() {
+			})), i.d(t, "ec", (function() {
 				return it
-			})), i.d(t, "ac", (function() {
+			})), i.d(t, "Zb", (function() {
 				return nt
-			})), i.d(t, "pb", (function() {
+			})), i.d(t, "ac", (function() {
 				return rt
-			})), i.d(t, "Wb", (function() {
+			})), i.d(t, "pb", (function() {
 				return st
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "Wb", (function() {
 				return ot
-			})), i.d(t, "Qb", (function() {
+			})), i.d(t, "Q", (function() {
 				return dt
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "Qb", (function() {
 				return at
-			})), i.d(t, "ub", (function() {
+			})), i.d(t, "I", (function() {
 				return lt
+			})), i.d(t, "ub", (function() {
+				return ut
 			})), i.d(t, "A", (function() {
-				return ct
-			})), i.d(t, "k", (function() {
 				return _t
-			})), i.d(t, "Eb", (function() {
+			})), i.d(t, "k", (function() {
 				return pt
-			})), i.d(t, "Db", (function() {
+			})), i.d(t, "Eb", (function() {
 				return mt
-			})), i.d(t, "ic", (function() {
+			})), i.d(t, "Db", (function() {
 				return ht
-			})), i.d(t, "vb", (function() {
+			})), i.d(t, "ic", (function() {
 				return ft
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "vb", (function() {
 				return bt
-			})), i.d(t, "gb", (function() {
+			})), i.d(t, "v", (function() {
 				return gt
-			})), i.d(t, "Ib", (function() {
+			})), i.d(t, "gb", (function() {
 				return wt
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "Ib", (function() {
 				return yt
+			})), i.d(t, "K", (function() {
+				return vt
 			})), i.d(t, "L", (function() {
-				return Et
-			})), i.d(t, "M", (function() {
 				return Tt
+			})), i.d(t, "M", (function() {
+				return St
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -4207,10 +4209,14 @@
 					ALL: "all"
 				},
 				$ = "day",
-				z = "all",
-				K = (W.DAY, new Set(o()(W))),
-				J = 5,
-				Y = {
+				z = W.ALL,
+				K = (W.DAY, new Set(o()(W)));
+
+			function J(e) {
+				return K.has(e)
+			}
+			const Y = 5,
+				Q = {
 					CROSSPOST: "crosspost",
 					TEXT: "text",
 					IMAGE: "image",
@@ -4218,74 +4224,74 @@
 					EMBED: "embed",
 					GIFVIDEO: "gifvideo"
 				},
-				Q = new Set(["image/png", "image/gif", "image/jpeg"]),
-				X = new Set(["video/mp4", "video/quicktime"]),
-				Z = 60,
-				ee = 900,
-				te = 2,
-				ie = 1024,
-				ne = 1024 * ie,
-				re = 1 * (1024 * ne),
-				se = 1 * ie,
-				oe = 50,
+				X = new Set(["image/png", "image/gif", "image/jpeg"]),
+				Z = new Set(["video/mp4", "video/quicktime"]),
+				ee = 60,
+				te = 900,
+				ie = 2,
+				ne = 1024,
+				re = 1024 * ne,
+				se = 1 * (1024 * re),
+				oe = 1 * ne,
 				de = 50,
-				ae = 20 * ne,
-				le = 100 * ne,
-				ue = 20,
-				ce = 5,
-				_e = "INVALID_MEDIA_TYPE_ERROR",
-				pe = "VIDEO_SIZE_LIMIT_EXCEEDED_ERROR",
-				me = "IMAGE_SIZE_LIMIT_EXCEEDED_ERROR",
-				he = "GIF_SIZE_LIMIT_EXCEEDED_ERROR",
-				fe = {
+				ae = 50,
+				le = 20 * re,
+				ue = 100 * re,
+				ce = 20,
+				_e = 5,
+				pe = "INVALID_MEDIA_TYPE_ERROR",
+				me = "VIDEO_SIZE_LIMIT_EXCEEDED_ERROR",
+				he = "IMAGE_SIZE_LIMIT_EXCEEDED_ERROR",
+				fe = "GIF_SIZE_LIMIT_EXCEEDED_ERROR",
+				be = {
 					ADMIN: "admin",
 					MODERATOR: "moderator",
 					ALUMNI_ADMIN: "special",
 					NONE: ""
 				},
-				be = {
-					[fe.MODERATOR]: "yes",
-					[fe.NONE]: "no",
-					[fe.ADMIN]: "admin"
+				ge = {
+					[be.MODERATOR]: "yes",
+					[be.NONE]: "no",
+					[be.ADMIN]: "admin"
 				},
-				ge = 21,
-				we = 3,
-				ye = {
+				we = 21,
+				ye = 3,
+				ve = {
 					HOT: "hot",
 					NEW: "new",
 					TOP: "top",
 					CONTROVERSIAL: "controversial"
 				},
-				ve = [ye.NEW, ye.HOT, ye.TOP],
-				Ee = [ye.NEW, ye.HOT, ye.TOP],
-				Te = {
+				Ee = [ve.NEW, ve.HOT, ve.TOP],
+				Te = [ve.NEW, ve.HOT, ve.TOP],
+				Se = {
 					HOT: "hot",
 					NEW: "new",
 					TOP: "top",
 					CONTROVERSIAL: "controversial"
 				},
-				Se = (new Set(o()(ye)), new Set(o()(Te)), ye.NEW),
-				Oe = W.ALL,
-				Ie = (new Set(o()({
+				Oe = (new Set(o()(ve)), new Set(o()(Se)), ve.NEW),
+				Ie = W.ALL,
+				Fe = (new Set(o()({
 					OVERVIEW: "overview",
 					POSTS: "posts",
 					COMMENTS: "comments"
 				})), 4),
-				Fe = "[deleted]",
 				Re = "[deleted]",
-				je = "[removed]";
-			var Ce;
+				je = "[deleted]",
+				Ce = "[removed]";
+			var xe;
 			! function(e) {
 				e[e.subreddit = 0] = "subreddit", e[e.on = 1] = "on", e[e.off = 2] = "off"
-			}(Ce || (Ce = {}));
-			const xe = 1e3,
-				Ne = 60 * xe,
+			}(xe || (xe = {}));
+			const Ne = 1e3,
 				Ae = 60 * Ne,
-				Pe = 24 * Ae,
-				De = 7 * Pe,
-				Be = 30 * Pe,
-				ke = 365 * Pe,
-				Le = {
+				Pe = 60 * Ae,
+				De = 24 * Pe,
+				Be = 7 * De,
+				ke = 30 * De,
+				Le = 365 * De,
+				Me = {
 					HEAD: "head",
 					GET: "get",
 					POST: "post",
@@ -4293,19 +4299,19 @@
 					PATCH: "patch",
 					DELETE: "delete"
 				},
-				Me = 900,
-				Ue = [300, 250],
-				Ge = [Ue, [300, 600]],
-				qe = [Ue],
-				Ve = {
+				Ue = 900,
+				Ge = [300, 250],
+				qe = [Ge, [300, 600]],
+				Ve = [Ge],
+				He = {
 					ABOVE_THE_FOLD: "atf",
 					BELOW_THE_FOLD: "btf"
 				},
-				He = {
+				We = {
 					HOUSE_AD: "house_ad",
 					SWITCH_HOUSE_AD: "switch_house_ad"
 				},
-				We = {
+				$e = {
 					ACKNOWLEDGEMENTS: "acknowledgements",
 					APPEAL: "appeal",
 					AVATAR: "avatar",
@@ -4376,12 +4382,12 @@
 					STANDALONE_POST_PAGE: "standAlonePostPage",
 					USER_DATA_REQUEST: "userDataRequest"
 				},
-				$e = new Set([We.INDEX, We.LISTING, We.MULTIREDDIT, We.SEARCH_RESULTS, We.SUBREDDIT, We.PROFILE, We.PROFILE_COMMENTS, We.PROFILE_OVERVIEW, We.PROFILE_POSTS, We.PROFILE_PRIVATE, We.TOPIC]),
-				ze = new Set([We.PROFILE, We.PROFILE_COMMENTS, We.PROFILE_HOMEPAGE, We.PROFILE_POST_COMMENTS, We.PROFILE_PRIVACY, We.PROFILE_ME, We.PROFILE_MODERATION, We.PROFILE_OVERVIEW, We.PROFILE_POSTS, We.PROFILE_PRIVATE, We.PROFILE_SETTINGS, We.PROFILE_REDIRECT]),
-				Ke = new Set([We.PROFILE_OVERVIEW, We.PROFILE_POSTS, We.PROFILE_PRIVATE]),
-				Je = new Set([We.PROFILE_COMMENTS, We.PROFILE_OVERVIEW, We.PROFILE_POSTS, We.PROFILE_PRIVATE]),
-				Ye = new Set([We.INDEX, We.LISTING, We.MULTIREDDIT, We.SUBREDDIT]),
-				Qe = {
+				ze = new Set([$e.INDEX, $e.LISTING, $e.MULTIREDDIT, $e.SEARCH_RESULTS, $e.SUBREDDIT, $e.PROFILE, $e.PROFILE_COMMENTS, $e.PROFILE_OVERVIEW, $e.PROFILE_POSTS, $e.PROFILE_PRIVATE, $e.TOPIC]),
+				Ke = new Set([$e.PROFILE, $e.PROFILE_COMMENTS, $e.PROFILE_HOMEPAGE, $e.PROFILE_POST_COMMENTS, $e.PROFILE_PRIVACY, $e.PROFILE_ME, $e.PROFILE_MODERATION, $e.PROFILE_OVERVIEW, $e.PROFILE_POSTS, $e.PROFILE_PRIVATE, $e.PROFILE_SETTINGS, $e.PROFILE_REDIRECT]),
+				Je = new Set([$e.PROFILE_OVERVIEW, $e.PROFILE_POSTS, $e.PROFILE_PRIVATE]),
+				Ye = new Set([$e.PROFILE_COMMENTS, $e.PROFILE_OVERVIEW, $e.PROFILE_POSTS, $e.PROFILE_PRIVATE]),
+				Qe = new Set([$e.INDEX, $e.LISTING, $e.MULTIREDDIT, $e.SUBREDDIT]),
+				Xe = {
 					CROSSPOST: "crosspost",
 					IMAGE_ONLY: "imageOnly",
 					LINK_ONLY: "linkOnly",
@@ -4389,30 +4395,30 @@
 					POLL: "poll",
 					POST: "post"
 				},
-				Xe = new Set([Qe.IMAGE_ONLY, Qe.LINK_ONLY, Qe.POST]),
-				Ze = 27,
-				et = {
+				Ze = new Set([Xe.IMAGE_ONLY, Xe.LINK_ONLY, Xe.POST]),
+				et = 27,
+				tt = {
 					NOT_ALLOWED_ACCESS: "not-allowed-access",
 					LOGGEDIN_HAS_REDESIGN_COOKIE: "loggedin_has_redesign_cookie",
 					API: "api",
 					JS: "js",
 					GQL: "gql"
 				},
-				tt = new Set(o()(et));
-			var it, nt, rt, st;
+				it = new Set(o()(tt));
+			var nt, rt, st, ot;
 			! function(e) {
 				e.Awards = "awards", e.Powerups = "powerups", e.Muted = "muted", e.Badges = "badges", e.Banned = "banned", e.ChatSettings = "chat", e.ContentControls = "settings", e.Contributors = "contributors", e.Emojis = "emojis", e.Emotes = "emotes", e.EventPostContent = "eventposts", e.Moderators = "moderators", e.SubredditRules = "rules", e.Removal = "removal", e.Modqueue = "modqueue", e.Reports = "reports", e.Spam = "spam", e.Unmoderated = "unmoderated", e.Edited = "edited", e.PostFlair = "postflair", e.Modlog = "log", e.Flair = "flair", e.CommunitySettings = "edit", e.UserFlair = "userflair", e.Wiki = "wiki", e.WikiContributors = "wikicontributors", e.WikiBanned = "wikibanned", e.Traffic = "traffic", e.ScheduledPostContent = "scheduledposts", e.Streaming = "broadcasting", e.SubredditContent = "content", e.Predictions = "predictions"
-			}(it || (it = {})),
-			function(e) {
-				e.Community = "community", e.Notifications = "notifications", e.Safety = "safety", e.Posts = "posts", e.Wikis = "wikis", e.ContentTag = "content_tag"
 			}(nt || (nt = {})),
 			function(e) {
-				e.Edited = "edited", e.Modqueue = "modqueue", e.Reports = "reports", e.Spam = "spam", e.Unmoderated = "unmoderated"
+				e.Community = "community", e.Notifications = "notifications", e.Safety = "safety", e.Posts = "posts", e.Wikis = "wikis", e.ContentTag = "content_tag"
 			}(rt || (rt = {})),
 			function(e) {
+				e.Edited = "edited", e.Modqueue = "modqueue", e.Reports = "reports", e.Spam = "spam", e.Unmoderated = "unmoderated"
+			}(st || (st = {})),
+			function(e) {
 				e.Account = "account", e.Messaging = "messaging", e.Profile = "profile", e.Privacy = "privacy", e.Notifications = "notifications", e.Feed = "feed", e.Gold = "gold", e.Payments = "payments", e.Premium = "premium", e.Creator = "creator", e.SpecialMembership = "special"
-			}(st || (st = {}));
-			const ot = {
+			}(ot || (ot = {}));
+			const dt = {
 					ALL: "inbox",
 					UNREAD: "unread",
 					MESSAGES: "messages",
@@ -4423,38 +4429,38 @@
 					SENT: "sent",
 					MODERATOR: "moderator"
 				},
-				dt = "snoomoji",
-				at = Math.ceil(1e3 / 60);
-			var lt, ut;
+				at = "snoomoji",
+				lt = Math.ceil(1e3 / 60);
+			var ut, ct;
 			! function(e) {
 				e.TITLE = "title", e.BODY = "body", e.LINK = "link", e.FLAIR = "flair"
-			}(lt || (lt = {})),
+			}(ut || (ut = {})),
 			function(e) {
 				e.On = "1", e.Off = "0"
-			}(ut || (ut = {}));
-			const ct = {
+			}(ct || (ct = {}));
+			const _t = {
 					domain: r.a.cookieDomain,
 					secure: r.a.https,
 					httpOnly: !1
 				},
-				_t = "AutoModerator",
-				pt = "paypal",
-				mt = "creditCard",
-				ht = "View--GiveAward",
-				ft = 599,
-				bt = {
+				pt = "AutoModerator",
+				mt = "paypal",
+				ht = "creditCard",
+				ft = "View--GiveAward",
+				bt = 599,
+				gt = {
 					CLIENT_ID_CONSUMED: "clientIdConsumed",
 					CLIENT_ID_REJECTED: "clientIdRejected",
 					NUMBER_OF_DIFFS: "gql_numberofdiffs",
 					DETAILED_DIFFS: "gql_detaileddiffs",
 					CLIENT_SCREENVIEW: "client-screenview"
 				},
-				gt = " …",
-				wt = ["politics", "askreddit", "amitheasshole", "movies", "soccer", "memes", "news", "funny", "relationshipadvice", "wallstreetbets", "pics", "aww", "doctorwho", "porsche", "barista", "bourbon", "barefootrunning", "dexter", "fitmeals", "tifu", "coronavirus"],
-				yt = new Set(["search_results", "search_results_trending", "typeahead", "search_dropdown"]),
-				vt = new Set(["home", "popular", "news", "community"]),
-				Et = new Set([...yt, ...vt]),
-				Tt = new Set(["post_detail", "single_comment_thread", "community", "profile_overview"])
+				wt = " …",
+				yt = ["politics", "askreddit", "amitheasshole", "movies", "soccer", "memes", "news", "funny", "relationshipadvice", "wallstreetbets", "pics", "aww", "doctorwho", "porsche", "barista", "bourbon", "barefootrunning", "dexter", "fitmeals", "tifu", "coronavirus"],
+				vt = new Set(["search_results", "search_results_trending", "typeahead", "search_dropdown"]),
+				Et = new Set(["home", "popular", "news", "community"]),
+				Tt = new Set([...vt, ...Et]),
+				St = new Set(["post_detail", "single_comment_thread", "community", "profile_overview"])
 		},
 		"./src/lib/cookieConsent/index.ts": function(e, t, i) {
 			"use strict";
@@ -4977,14 +4983,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ca65d22a49e7e30df84af6092b42a950208593265-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd3ddaeb5331f35a63118d5313ad101b65e722371-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "a65d22a49e7e30df84af6092b42a950208593265-production",
+						release: "d3ddaeb5331f35a63118d5313ad101b65e722371-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5478,7 +5484,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "a65d22a49e7e30df84af6092b42a950208593265-production",
+						releaseClient: "d3ddaeb5331f35a63118d5313ad101b65e722371-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -39972,4 +39978,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bb35660bbc4ad691e2cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f90baee704c8a4251cc9.js.map
