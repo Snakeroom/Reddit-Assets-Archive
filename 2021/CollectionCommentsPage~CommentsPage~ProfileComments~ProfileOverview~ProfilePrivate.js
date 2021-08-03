@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.18413696fa360b3bac04.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ccdafb9ec8b246823ca4.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -912,7 +912,7 @@
 						onMouseLeave: d,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, a.a.createElement(W.c, {
+					}, a.a.createElement(W.d, {
 						seconds: n.created,
 						noPostfix: s,
 						shortenedUnit: s
@@ -952,7 +952,7 @@
 				editedAt: t
 			}) => a.a.createElement(C.a, {
 				className: q.a.editedText
-			}, K._("edited {time}", [K._param("time", a.a.createElement(W.c, {
+			}, K._("edited {time}", [K._param("time", a.a.createElement(W.d, {
 				seconds: t,
 				noPostfix: e,
 				shortenedUnit: e
@@ -1888,18 +1888,18 @@
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
 				a = n("./src/lib/eventTools/index.ts"),
-				r = n("./src/lib/humanizeEventTime/index.ts"),
-				i = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				c = n("./src/lib/classNames/index.ts"),
-				d = n("./src/reddit/icons/fonts/helpers.tsx"),
-				l = n("./src/reddit/icons/fonts/commonStyles.m.less"),
-				m = n.n(l);
-			var u = e => o.a.createElement("i", {
-				className: Object(c.a)(Object(d.b)("scheduled", e.isFilled), m.a.calendarIcon, e.className)
+				r = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				i = n("./src/lib/classNames/index.ts"),
+				c = n("./src/reddit/icons/fonts/helpers.tsx"),
+				d = n("./src/reddit/icons/fonts/commonStyles.m.less"),
+				l = n.n(d);
+			var m = e => o.a.createElement("i", {
+				className: Object(i.a)(Object(c.b)("scheduled", e.isFilled), l.a.calendarIcon, e.className)
 			});
-			var p = e => o.a.createElement("i", {
-					className: Object(c.a)(Object(d.b)("live", e.isFilled), m.a.liveIcon, e.className)
+			var u = e => o.a.createElement("i", {
+					className: Object(i.a)(Object(c.b)("live", e.isFilled), l.a.liveIcon, e.className)
 				}),
+				p = n("./src/reddit/components/HumanDate/index.tsx"),
 				b = n("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
 				x = n.n(b),
 				h = n("./src/lib/lessComponent.tsx");
@@ -1907,8 +1907,8 @@
 				f = h.a.span("PostEventPastText", x.a),
 				v = h.a.span("PostEventNowText", x.a),
 				C = h.a.span("Container", x.a),
-				O = h.a.wrapped(u, "CalendarIcon", x.a),
-				k = h.a.wrapped(p, "LiveIcon", x.a),
+				O = h.a.wrapped(m, "CalendarIcon", x.a),
+				k = h.a.wrapped(u, "LiveIcon", x.a),
 				_ = h.a.div("LoadingState", x.a);
 			class g extends s.Component {
 				constructor(e) {
@@ -1931,28 +1931,32 @@
 					if (!n) return null;
 					const {
 						eventEnd: s,
-						eventIsLive: c,
-						eventStart: d
-					} = n, l = Object(a.e)(d, s);
-					let m, u;
-					if (this.state.mounted || l === a.a.Live) m = Object(r.a)(d, s, c);
+						eventIsLive: i,
+						eventStart: c
+					} = n, d = Object(a.e)(c, s);
+					let l, m;
+					if (this.state.mounted || d === a.a.Live) l = o.a.createElement(p.c, {
+						startTime: c,
+						endTime: s,
+						isLive: i
+					});
 					else {
-						const e = Object(i.a)({
+						const e = Object(r.a)({
 							isLoading: !0
 						});
-						m = o.a.createElement(_, {
+						l = o.a.createElement(_, {
 							className: e
 						})
 					}
-					if (c) u = o.a.createElement(v, null, o.a.createElement(k, null), m);
-					else if (l === a.a.Future) u = o.a.createElement(E, null, o.a.createElement(O, null), m);
+					if (i) m = o.a.createElement(v, null, o.a.createElement(k, null), l);
+					else if (d === a.a.Future) m = o.a.createElement(E, null, o.a.createElement(O, null), l);
 					else {
-						if (l !== a.a.Past) return null;
-						u = o.a.createElement(f, null, o.a.createElement(O, null), m)
+						if (d !== a.a.Past) return null;
+						m = o.a.createElement(f, null, o.a.createElement(O, null), l)
 					}
 					return o.a.createElement(C, {
 						className: e
-					}, u)
+					}, m)
 				}
 			}
 			t.a = g
@@ -3093,4 +3097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.18413696fa360b3bac04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.ccdafb9ec8b246823ca4.js.map

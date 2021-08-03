@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.cbd34429a40fe122231e.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7a66b653264351cdd477.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -5984,19 +5984,24 @@
 		"./src/reddit/components/Poll/PollExpiry/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return d
 			}));
-			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./src/lib/timeAgo/index.ts"),
+			var o = n("./src/lib/constants/index.ts"),
+				r = n("./src/reddit/components/HumanDate/index.tsx"),
 				s = n("./src/lib/timeUntil/index.ts"),
 				i = n("./node_modules/react/index.js"),
 				a = n.n(i);
+			const {
+				fbt: c
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function c(e) {
+			function d(e) {
 				const t = new Date(e.poll.endsAt).getTime() - Date.now() <= 0;
 				return a.a.createElement("span", {
 					className: e.className
-				}, t ? o.fbt._("Voting closed {timeAgo}", [o.fbt._param("timeAgo", Object(r.d)(e.poll.endsAt / 1e3))], {
+				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(r.d, {
+					seconds: e.poll.endsAt / o.Nb
+				}))], {
 					hk: "3OERID"
 				}) : Object(s.a)(new Date(e.poll.endsAt)))
 			}
@@ -6214,8 +6219,8 @@
 				C = n("./src/reddit/layout/row/Inline/index.tsx"),
 				y = n("./src/reddit/models/PostCreationForm/index.ts"),
 				x = n("./src/reddit/selectors/postCollection.ts"),
-				v = n("./src/lib/timeAgo/index.ts"),
-				O = n("./src/reddit/controls/MetaSeparator/index.tsx"),
+				v = n("./src/reddit/controls/MetaSeparator/index.tsx"),
+				O = n("./src/reddit/components/HumanDate/index.tsx"),
 				_ = n("./src/reddit/helpers/name/index.ts"),
 				k = n("./src/reddit/models/Subreddit/index.ts"),
 				S = n("./src/reddit/models/User/index.ts"),
@@ -6258,12 +6263,14 @@
 						"data-redditstyle": !0
 					}, r && i.a.createElement(L, {
 						"data-redditstyle": !0
-					}, r), r && i.a.createElement(O.b, null), i.a.createElement(A, null, R._({
+					}, r), r && i.a.createElement(v.b, null), i.a.createElement(A, null, R._({
 						"*": "{number of posts} posts",
 						_1: "1 post"
 					}, [R._plural(s, "number of posts")], {
 						hk: "1Uy96U"
-					})), i.a.createElement(O.b, null), i.a.createElement(A, null, R._("created {time}", [R._param("time", Object(v.d)(e.createdAtUTC))], {
+					})), i.a.createElement(v.b, null), i.a.createElement(A, null, R._("created {time}", [R._param("time", i.a.createElement(O.d, {
+						seconds: e.createdAtUTC
+					}))], {
 						hk: "2cUc5m"
 					}))), o && i.a.createElement("div", {
 						className: I.a.onHoverActionText
@@ -16419,11 +16426,11 @@
 						hk: "2w5fAf"
 					})))
 				}),
-				b = n("./node_modules/fbt/lib/FbtPublic.js"),
-				f = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				g = n("./src/lib/timeAgo/index.ts"),
-				E = n("./src/reddit/actions/postCollection/index.ts"),
-				C = n("./src/reddit/selectors/posts.ts"),
+				b = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				f = n("./src/reddit/actions/postCollection/index.ts"),
+				g = n("./src/reddit/selectors/posts.ts"),
+				E = n("./src/reddit/components/HumanDate/index.tsx"),
+				C = n("./src/lib/constants/index.ts"),
 				y = n("./src/reddit/components/Widgets/PostCollection/PostItem/index.m.less"),
 				x = n.n(y),
 				v = n("./src/reddit/components/Widgets/PostCollection/PostItem/OverflowMenu/index.tsx"),
@@ -16448,12 +16455,13 @@
 					className: Object(s.a)(k.a.Secondary, n)
 				})))
 			}
-			const j = ["right", "bottom"],
-				T = ["right", "top"];
-			var w = Object(a.b)(() => Object(c.c)({
-					post: C.G
+			const {
+				fbt: j
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), T = ["right", "bottom"], w = ["right", "top"];
+			var I = Object(a.b)(() => Object(c.c)({
+					post: g.G
 				}), (e, t) => ({
-					onRemovePostFromCollection: () => e(Object(E.g)(t.collectionId, t.postId))
+					onRemovePostFromCollection: () => e(Object(f.g)(t.collectionId, t.postId))
 				}))(e => {
 					const {
 						post: t,
@@ -16463,34 +16471,36 @@
 						className: x.a.container
 					}, r.a.createElement("div", {
 						className: x.a.content
-					}, r.a.createElement(f.a, {
+					}, r.a.createElement(b.a, {
 						className: x.a.title,
 						target: "_blank",
 						to: t.permalink
 					}, t.title), r.a.createElement("div", {
 						className: x.a.metaLine
-					}, b.fbt._("Posted · {timeAgo}", [b.fbt._param("timeAgo", Object(g.d)(t.created / 1e3))], {
+					}, j._("Posted · {timeAgo}", [j._param("timeAgo", r.a.createElement(E.d, {
+						seconds: t.created / C.Nb
+					}))], {
 						hk: "ZVJpV"
 					}))), r.a.createElement(v.a, {
 						onRemoveClick: n,
 						className: x.a.overflowMenu,
 						dropdownId: "collection-widget-item" + t.id,
 						postPermalink: t.permalink,
-						targetPosition: j,
-						tooltipPosition: T
+						targetPosition: T,
+						tooltipPosition: w
 					})) : r.a.createElement(S, {
 						className: x.a.container,
 						isLoading: !0
 					})
 				}),
-				I = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
-				P = n.n(I);
+				P = n("./src/reddit/components/Widgets/PostCollection/index.m.less"),
+				R = n.n(P);
 			const {
-				fbt: R
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), D = ["right", "bottom"], M = ["right", "top"];
-			class N extends r.a.PureComponent {
+				fbt: D
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = ["right", "bottom"], N = ["right", "top"];
+			class L extends r.a.PureComponent {
 				constructor() {
-					super(...arguments), this.renderItem = (e, t) => r.a.createElement(w, {
+					super(...arguments), this.renderItem = (e, t) => r.a.createElement(I, {
 						collectionId: this.props.collection.id,
 						key: e,
 						postId: e
@@ -16502,28 +16512,28 @@
 						collection: t
 					} = this.props, n = t.postIds.map(this.renderItem).reverse();
 					return r.a.createElement("div", {
-						className: Object(s.a)(e, P.a.container)
+						className: Object(s.a)(e, R.a.container)
 					}, r.a.createElement("div", {
-						className: P.a.topRow
-					}, R._("Collection", null, {
+						className: R.a.topRow
+					}, D._("Collection", null, {
 						hk: "1pY1s2"
 					}), r.a.createElement(i.a, {
-						className: P.a.menuButton,
+						className: R.a.menuButton,
 						collectionId: t.id,
 						isSubmitPage: !0,
 						permalink: t.permalink,
-						targetPosition: D,
-						tooltipPosition: M
+						targetPosition: M,
+						tooltipPosition: N
 					})), r.a.createElement("h4", {
-						className: P.a.collectionDescription
+						className: R.a.collectionDescription
 					}, t.title), r.a.createElement("div", {
-						className: P.a.listWrapper
+						className: R.a.listWrapper
 					}, r.a.createElement("div", {
-						className: P.a.listContainer
+						className: R.a.listContainer
 					}, n)), r.a.createElement(h, null))
 				}
 			}
-			t.a = N
+			t.a = L
 		},
 		"./src/reddit/components/Widgets/SubredditRules/Rule/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -25987,9 +25997,9 @@
 				Jo = n("./node_modules/lodash/range.js"),
 				Xo = n.n(Jo),
 				Zo = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				$o = n("./src/lib/timeAgo/index.ts"),
-				er = n("./src/reddit/controls/MetaSeparator/index.tsx"),
-				tr = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				$o = n("./src/reddit/controls/MetaSeparator/index.tsx"),
+				er = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
+				tr = n("./src/reddit/components/HumanDate/index.tsx"),
 				nr = n("./src/reddit/models/PostDraft/index.ts"),
 				or = n("./src/reddit/components/PostCreationForm/DraftListModal/DraftListItem/Icon.m.less"),
 				rr = n.n(or),
@@ -26031,7 +26041,7 @@
 				gr = Qe.a.div("MetaLine", lr.a),
 				Er = Qe.a.span("SubredditName", lr.a),
 				Cr = Qe.a.time("DraftSavedTime", lr.a),
-				yr = Qe.a.wrapped(tr.b, "TrashIcon", lr.a),
+				yr = Qe.a.wrapped(er.b, "TrashIcon", lr.a),
 				xr = Qe.a.div("InteractiveDiv", lr.a),
 				vr = Qe.a.button("ConfirmDelete", lr.a),
 				Or = Object(i.c)({
@@ -26102,7 +26112,9 @@
 						"data-redditstyle": !0
 					}, i && r.a.createElement(Er, {
 						"data-redditstyle": !0
-					}, i.displayText), i && r.a.createElement(er.b, null), r.a.createElement(Cr, null, d.fbt._("Draft saved {draftSavedAtTime}", [d.fbt._param("draftSavedAtTime", Object($o.d)((e.modified || e.created) / Sr))], {
+					}, i.displayText), i && r.a.createElement($o.b, null), r.a.createElement(Cr, null, d.fbt._("Draft saved {draftSavedAtTime}", [d.fbt._param("draftSavedAtTime", r.a.createElement(tr.d, {
+						seconds: (e.modified || e.created) / Sr
+					}))], {
 						hk: "2HjAWY"
 					})))), r.a.createElement(hr, null, this.state.showConfirmText ? r.a.createElement(vr, {
 						onClick: this.onConfirmClick,
@@ -27466,7 +27478,7 @@
 					onBlur: e.onBlur,
 					onChange: t => e.onTextChange(t.currentTarget.value),
 					onFocus: e.onFocus
-				}), e.removable && r.a.createElement(tr.a, {
+				}), e.removable && r.a.createElement(er.a, {
 					className: Ac.a.trash,
 					onClick: e.onRemove
 				}))
@@ -30491,4 +30503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cbd34429a40fe122231e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7a66b653264351cdd477.js.map

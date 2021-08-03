@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.8cea176d4352dad03df2.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ac4dcf47e2f0800c737b.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -373,61 +373,6 @@
 					year: "numeric",
 					timeZone: n ? "UTC" : void 0
 				}).format(o)
-			}
-		},
-		"./src/lib/humanizeDateTime/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			}));
-			var s = n("./src/lib/constants/index.ts");
-
-			function r(e, t = s.B) {
-				const n = e * s.Nb;
-				return new Date(n).toLocaleString(t, {
-					weekday: "short",
-					month: "short",
-					year: "numeric",
-					day: "2-digit",
-					hour: "2-digit",
-					minute: "2-digit",
-					second: "2-digit",
-					timeZoneName: "long"
-				})
-			}
-		},
-		"./src/lib/humanizeEventTime/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return a
-			}));
-			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./src/lib/constants/index.ts"),
-				i = n("./src/lib/eventTools/index.ts");
-
-			function o(e, t = r.B) {
-				return e.toLocaleDateString(t, {
-					month: "numeric",
-					day: "numeric"
-				})
-			}
-
-			function a(e, t, n, a = r.B) {
-				const c = Object(i.e)(e, t),
-					d = new Date(e * r.Nb);
-				let l;
-				if (c === i.a.Live || n) return s.fbt._("Now", null, {
-					hk: "Prpcg"
-				});
-				return c === i.a.Future ? l = Object(i.d)(e) ? s.fbt._("Today", null, {
-					hk: "1sZpnp"
-				}).toString() : Object(i.b)(e) >= 5 ? o(d, a) : function(e, t = r.B) {
-					return e.toLocaleDateString(t, {
-						weekday: "long"
-					})
-				}(d, a) : c === i.a.Past && (l = Object(i.d)(e) ? s.fbt._("Today", null, {
-					hk: "1sZpnp"
-				}).toString() : o(d, a)), `${l} @ ${function(e,t=r.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(d,a)}`
 			}
 		},
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, n) {
@@ -812,7 +757,7 @@
 			})), n.d(t, "d", (function() {
 				return D
 			})), n.d(t, "c", (function() {
-				return L
+				return A
 			})), n.d(t, "a", (function() {
 				return B
 			})), n.d(t, "b", (function() {
@@ -991,7 +936,7 @@
 						});
 						i(Object(l.f)(Object(l.e)(r, C.b.Error)))
 					}
-				}, A = Object(i.a)(d.f), L = e => async (t, n, {
+				}, L = Object(i.a)(d.f), A = e => async (t, n, {
 					apiContext: s
 				}) => {
 					const i = n(),
@@ -1007,7 +952,7 @@
 						g = -1 === h && -1 === f,
 						_ = i.subreddits.models,
 						x = i.profiles.models;
-					t(A({
+					t(L({
 						makeFavorite: g,
 						identifier: e,
 						subredditModels: _,
@@ -1028,7 +973,7 @@
 							sr_name: t,
 							api_type: "json"
 						}
-					}))(s(), a, g)).ok || (t(A({
+					}))(s(), a, g)).ok || (t(L({
 						makeFavorite: !g,
 						identifier: e,
 						subredditModels: _,
@@ -2222,14 +2167,14 @@
 						[y.s]: t ? "1" : ""
 					})
 				},
-				A = e => e.isFlairFilter ? c.a.createElement(v.a, {
+				L = e => e.isFlairFilter ? c.a.createElement(v.a, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
 				}, e.flair) : e.onClick ? c.a.createElement(v.a, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: D(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
-			class L extends c.a.Component {
+			class A extends c.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTargetElement = null, this.state = {
 						isTooltipOpen: !1
@@ -2270,7 +2215,7 @@
 						targetPosition: ["center", "top"],
 						tooltipPosition: ["center", "bottom"]
 					}));
-					return c.a.createElement(A, {
+					return c.a.createElement(L, {
 						flair: e,
 						isFlairFilter: this.props.isFlairFilter,
 						onClick: this.props.onClick,
@@ -2281,7 +2226,7 @@
 					})
 				}
 			}
-			const U = Object(m.a)(L),
+			const U = Object(m.a)(A),
 				B = Object(m.a)(e => {
 					let t = "",
 						n = !1;
@@ -2323,7 +2268,7 @@
 							fill: e.backgroundColor || Object(O.a)(e).flair
 						}
 					})));
-					return c.a.createElement(A, {
+					return c.a.createElement(L, {
 						flair: i,
 						isFlairFilter: e.isFlairFilter,
 						onClick: e.onClick ? () => {
@@ -2357,7 +2302,7 @@
 								color: t
 							}
 						}, e.text);
-					return c.a.createElement(A, {
+					return c.a.createElement(L, {
 						flair: n,
 						searchableTerm: e.text
 					})
@@ -2461,12 +2406,14 @@
 		},
 		"./src/reddit/components/HumanDate/index.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "d", (function() {
 				return l
 			})), n.d(t, "a", (function() {
 				return m
 			})), n.d(t, "b", (function() {
-				return b
+				return p
+			})), n.d(t, "c", (function() {
+				return _
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -2480,41 +2427,87 @@
 				return document.documentElement.lang || o.B
 			};
 			var l = function({
-				seconds: e,
-				...t
-			}) {
-				var n;
-				const s = d(),
-					o = {
-						...t,
-						locale: null !== (n = t.locale) && void 0 !== n ? n : s
-					};
-				return r.a.createElement(r.a.Fragment, null, Object(i.d)(e, o))
-			};
-			n("./src/reddit/helpers/dayAgoFormatDate/index.tsx");
-			var u = n("./src/lib/humanizeDate/index.ts");
-			var m = function({
 					seconds: e,
 					...t
 				}) {
 					var n;
 					const s = d(),
-						i = {
+						o = {
 							...t,
 							locale: null !== (n = t.locale) && void 0 !== n ? n : s
 						};
-					return r.a.createElement(r.a.Fragment, null, Object(u.a)(e, i))
+					return r.a.createElement(r.a.Fragment, null, Object(i.d)(e, o))
 				},
-				p = n("./src/lib/humanizeDateTime/index.ts");
-			var b = function({
+				u = n("./src/lib/humanizeDate/index.ts");
+			var m = function({
 				seconds: e,
-				locale: t
+				...t
 			}) {
-				const n = d(),
-					s = null != t ? t : n;
-				return r.a.createElement(r.a.Fragment, null, Object(p.a)(e, s))
+				var n;
+				const s = d(),
+					i = {
+						...t,
+						locale: null !== (n = t.locale) && void 0 !== n ? n : s
+					};
+				return r.a.createElement(r.a.Fragment, null, Object(u.a)(e, i))
 			};
-			n("./src/lib/humanizeEventTime/index.ts");
+			var p = function({
+					seconds: e,
+					locale: t
+				}) {
+					const n = d(),
+						s = null != t ? t : n;
+					return r.a.createElement(r.a.Fragment, null, function(e, t = o.B) {
+						const n = e * o.Nb;
+						return new Date(n).toLocaleString(t, {
+							weekday: "short",
+							month: "short",
+							year: "numeric",
+							day: "2-digit",
+							hour: "2-digit",
+							minute: "2-digit",
+							second: "2-digit",
+							timeZoneName: "long"
+						})
+					}(e, s))
+				},
+				b = n("./node_modules/fbt/lib/FbtPublic.js"),
+				h = n("./src/lib/eventTools/index.ts");
+
+			function f(e, t = o.B) {
+				return e.toLocaleDateString(t, {
+					month: "numeric",
+					day: "numeric"
+				})
+			}
+
+			function g(e, t, n, s = o.B) {
+				const r = Object(h.e)(e, t),
+					i = new Date(e * o.Nb);
+				let a;
+				if (r === h.a.Live || n) return b.fbt._("Now", null, {
+					hk: "Prpcg"
+				});
+				return r === h.a.Future ? a = Object(h.d)(e) ? b.fbt._("Today", null, {
+					hk: "1sZpnp"
+				}).toString() : Object(h.b)(e) >= 5 ? f(i, s) : function(e, t = o.B) {
+					return e.toLocaleDateString(t, {
+						weekday: "long"
+					})
+				}(i, s) : r === h.a.Past && (a = Object(h.d)(e) ? b.fbt._("Today", null, {
+					hk: "1sZpnp"
+				}).toString() : f(i, s)), `${a} @ ${function(e,t=o.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(i,s)}`
+			}
+			var _ = function({
+				startTime: e,
+				endTime: t,
+				isLive: n,
+				locale: s
+			}) {
+				const i = d(),
+					o = null != s ? s : i;
+				return r.a.createElement(r.a.Fragment, null, g(e, t, n, o))
+			};
 			n("./src/lib/humanizeUTCDate/index.tsx")
 		},
 		"./src/reddit/components/IdCard/Banner.tsx": function(e, t, n) {
@@ -2948,8 +2941,8 @@
 						hk: "4k3RsQ"
 					}))
 				})),
-				A = n("./src/reddit/components/HumanDate/index.tsx");
-			const L = Object(y.a)({
+				L = n("./src/reddit/components/HumanDate/index.tsx");
+			const A = Object(y.a)({
 				getComponent: () => Object(v.a)(() => n.e("CreatePollButton").then(n.bind(null, "./src/reddit/components/IdCard/CreatePollButton/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => null,
 				LoadingComponent: () => null
@@ -3189,8 +3182,8 @@
 				}),
 				Re = n("./src/reddit/models/ApiRequestState/index.ts"),
 				De = n("./src/reddit/models/SubredditRestrictions/index.ts"),
-				Ae = n("./src/reddit/selectors/category.ts"),
-				Le = n("./src/reddit/selectors/experiments/categories.ts"),
+				Le = n("./src/reddit/selectors/category.ts"),
+				Ae = n("./src/reddit/selectors/experiments/categories.ts"),
 				Ue = n("./src/reddit/constants/experiments.ts"),
 				Be = n("./src/reddit/helpers/chooseVariant/index.ts");
 			var Me = n("./src/reddit/selectors/moderatorPermissions.ts"),
@@ -3384,16 +3377,16 @@
 				Pt = n("./src/reddit/components/IdCard/TopicLinksContainer/async.tsx"),
 				Rt = n("./src/reddit/components/IdCard/index.m.less"),
 				Dt = n.n(Rt);
-			const At = "IDCARD_OVERFLOW_DROPDOWN_ID",
-				Lt = Object(o.b)(() => Object(u.c)({
-					postCategories: (e, t) => Object(Ae.o)(e, t.postId),
+			const Lt = "IDCARD_OVERFLOW_DROPDOWN_ID",
+				At = Object(o.b)(() => Object(u.c)({
+					postCategories: (e, t) => Object(Le.o)(e, t.postId),
 					favoriteSubredditsIds: qe.a,
 					idCardWidget: (e, t) => Object(We.d)(e, {
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(ne.f)(e, De.e.Post),
 					isGQLLoggedIn: N.I,
-					isInCategoriesExperiment: Le.a,
+					isInCategoriesExperiment: Ae.a,
 					isLoggedIn: N.J,
 					moderatorPermissions: (e, t) => {
 						const n = Object(ne.D)(e, t.listingName);
@@ -3482,7 +3475,7 @@
 							isContributorRequestPending: e,
 							listingName: t,
 							subreddit: r
-						}), !e && !o && n && i.a.createElement(L, {
+						}), !e && !o && n && i.a.createElement(A, {
 							listingName: t
 						}))
 					}, this.renderButtons = () => {
@@ -3551,8 +3544,8 @@
 						currentlyViewingText: P,
 						description: R,
 						snooBackground: D,
-						subscribersCount: A,
-						subscribersText: L,
+						subscribersCount: L,
+						subscribersText: A,
 						titleText: U,
 						url: B
 					} = Object(kt.a)({
@@ -3586,7 +3579,7 @@
 							hk: "3tJVME"
 						})), l && y && i.a.createElement(me.b, {
 							className: Dt.a.overflowButton,
-							dropdownId: At,
+							dropdownId: Lt,
 							targetPosition: ["right", "bottom"],
 							tooltipPosition: ["right", "top"]
 						}, !y.isQuarantined && i.a.createElement(Ee.b, {
@@ -3622,7 +3615,7 @@
 						subreddit: y,
 						titleText: U,
 						onOpenFilePicker: this.openIconFilePicker
-					}) : null, Z, !w && !V && Mt(A, L, z, F, P, G, q, W, K, S), Q && i.a.createElement(Pt.a, {
+					}) : null, Z, !w && !V && Mt(L, A, z, F, P, G, q, W, K, S), Q && i.a.createElement(Pt.a, {
 						subredditId: H
 					}), !w && i.a.createElement("div", {
 						className: Dt.a.CommunityTypeContainer
@@ -3656,7 +3649,7 @@
 					}))))), Y && i.a.createElement(ue, {
 						context: Oe.a.idCard,
 						subredditId: H
-					}), !w && V && Bt(y, A, F), this.renderButtons(), d && _ && x && (r || p) && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
+					}), !w && V && Bt(y, L, F), this.renderButtons(), d && _ && x && (r || p) && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
 						className: Dt.a.HorizontalLine
 					}), i.a.createElement("div", {
 						className: Dt.a.CategoryContainer
@@ -3755,7 +3748,7 @@
 				}, i.a.createElement(ee.a, {
 					name: "cake",
 					className: Dt.a.cakeIcon
-				}), s.fbt._("Created {cakeday}", [s.fbt._param("cakeday", i.a.createElement(A.a, {
+				}), s.fbt._("Created {cakeday}", [s.fbt._param("cakeday", i.a.createElement(L.a, {
 					seconds: c,
 					showDay: !0,
 					shortMonths: !0,
@@ -3765,10 +3758,10 @@
 				})), i.a.createElement(ae.c, {
 					caretOnTop: !0,
 					tooltipId: l
-				}, i.a.createElement(A.c, {
+				}, i.a.createElement(L.d, {
 					seconds: c
 				})))));
-			t.default = Object(F.c)(Lt(Object(p.a)(Ut)))
+			t.default = Object(F.c)(At(Object(p.a)(Ut)))
 		},
 		"./src/reddit/components/IdCard/placeholder.m.less": function(e, t, n) {
 			e.exports = {
@@ -4852,18 +4845,6 @@
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
-		},
-		"./src/reddit/helpers/dayAgoFormatDate/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./src/lib/constants/index.ts"),
-				r = n("./src/lib/humanizeUTCDate/index.tsx"),
-				i = n("./src/lib/timeAgo/index.ts");
-			t.a = (e, t) => {
-				const n = (e => e - 8 * s.O / s.Nb)(e);
-				return Object(i.c)(n) >= 1 ? Object(r.a)(n, t) : Object(i.d)(n, {
-					locale: t
-				})
-			}
 		},
 		"./src/reddit/helpers/economics/sortBadges.ts": function(e, t, n) {
 			"use strict";
@@ -6016,7 +5997,7 @@
 				}
 			};
 			const D = {};
-			var A = (e = D, t) => {
+			var L = (e = D, t) => {
 				switch (t.type) {
 					case a.d:
 					case a.b:
@@ -6051,7 +6032,7 @@
 				keyToChatCommentLinks: I,
 				keyToCommentThreadLinkSets: F,
 				keyToHeadCommentId: R,
-				keyToPostId: A,
+				keyToPostId: L,
 				ads: o
 			})
 		},
@@ -6094,9 +6075,9 @@
 			})), n.d(t, "t", (function() {
 				return D
 			})), n.d(t, "A", (function() {
-				return A
-			})), n.d(t, "J", (function() {
 				return L
+			})), n.d(t, "J", (function() {
+				return A
 			})), n.d(t, "s", (function() {
 				return U
 			})), n.d(t, "D", (function() {
@@ -6255,11 +6236,11 @@
 				D = (e, {
 					commentId: t
 				}) => !!(t && e.features.comments.focused && e.features.comments.focused[t]),
-				A = (e, {
+				L = (e, {
 					commentId: t,
 					commentsPageKey: n
 				}) => !!(t && e.features.comments.isEditing[n] && e.features.comments.isEditing[n][t]),
-				L = (e, {
+				A = (e, {
 					commentId: t,
 					commentsPageKey: n
 				}) => !!(t && e.features.comments.replyFormOpen[n] && e.features.comments.replyFormOpen[n][t]),
@@ -6530,4 +6511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8cea176d4352dad03df2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ac4dcf47e2f0800c737b.js.map

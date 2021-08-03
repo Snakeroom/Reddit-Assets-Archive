@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.497bdcd3c525f7ebc214.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.32ea5ede92198707f4cb.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2478,18 +2478,18 @@
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				o = s("./src/lib/eventTools/index.ts"),
-				i = s("./src/lib/humanizeEventTime/index.ts"),
-				a = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/reddit/icons/fonts/helpers.tsx"),
-				l = s("./src/reddit/icons/fonts/commonStyles.m.less"),
-				u = s.n(l);
-			var m = e => r.a.createElement("i", {
-				className: Object(c.a)(Object(d.b)("scheduled", e.isFilled), u.a.calendarIcon, e.className)
+				i = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				a = s("./src/lib/classNames/index.ts"),
+				c = s("./src/reddit/icons/fonts/helpers.tsx"),
+				d = s("./src/reddit/icons/fonts/commonStyles.m.less"),
+				l = s.n(d);
+			var u = e => r.a.createElement("i", {
+				className: Object(a.a)(Object(c.b)("scheduled", e.isFilled), l.a.calendarIcon, e.className)
 			});
-			var p = e => r.a.createElement("i", {
-					className: Object(c.a)(Object(d.b)("live", e.isFilled), u.a.liveIcon, e.className)
+			var m = e => r.a.createElement("i", {
+					className: Object(a.a)(Object(c.b)("live", e.isFilled), l.a.liveIcon, e.className)
 				}),
+				p = s("./src/reddit/components/HumanDate/index.tsx"),
 				b = s("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
 				f = s.n(b),
 				h = s("./src/lib/lessComponent.tsx");
@@ -2497,8 +2497,8 @@
 				E = h.a.span("PostEventPastText", f.a),
 				O = h.a.span("PostEventNowText", f.a),
 				v = h.a.span("Container", f.a),
-				g = h.a.wrapped(m, "CalendarIcon", f.a),
-				S = h.a.wrapped(p, "LiveIcon", f.a),
+				g = h.a.wrapped(u, "CalendarIcon", f.a),
+				S = h.a.wrapped(m, "LiveIcon", f.a),
 				x = h.a.div("LoadingState", f.a);
 			class I extends n.Component {
 				constructor(e) {
@@ -2521,28 +2521,32 @@
 					if (!s) return null;
 					const {
 						eventEnd: n,
-						eventIsLive: c,
-						eventStart: d
-					} = s, l = Object(o.e)(d, n);
-					let u, m;
-					if (this.state.mounted || l === o.a.Live) u = Object(i.a)(d, n, c);
+						eventIsLive: a,
+						eventStart: c
+					} = s, d = Object(o.e)(c, n);
+					let l, u;
+					if (this.state.mounted || d === o.a.Live) l = r.a.createElement(p.c, {
+						startTime: c,
+						endTime: n,
+						isLive: a
+					});
 					else {
-						const e = Object(a.a)({
+						const e = Object(i.a)({
 							isLoading: !0
 						});
-						u = r.a.createElement(x, {
+						l = r.a.createElement(x, {
 							className: e
 						})
 					}
-					if (c) m = r.a.createElement(O, null, r.a.createElement(S, null), u);
-					else if (l === o.a.Future) m = r.a.createElement(_, null, r.a.createElement(g, null), u);
+					if (a) u = r.a.createElement(O, null, r.a.createElement(S, null), l);
+					else if (d === o.a.Future) u = r.a.createElement(_, null, r.a.createElement(g, null), l);
 					else {
-						if (l !== o.a.Past) return null;
-						m = r.a.createElement(E, null, r.a.createElement(g, null), u)
+						if (d !== o.a.Past) return null;
+						u = r.a.createElement(E, null, r.a.createElement(g, null), l)
 					}
 					return r.a.createElement(v, {
 						className: e
-					}, m)
+					}, u)
 				}
 			}
 			t.a = I
@@ -3333,19 +3337,24 @@
 		"./src/reddit/components/Poll/PollExpiry/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return d
 			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				r = s("./src/lib/timeAgo/index.ts"),
+			var n = s("./src/lib/constants/index.ts"),
+				r = s("./src/reddit/components/HumanDate/index.tsx"),
 				o = s("./src/lib/timeUntil/index.ts"),
 				i = s("./node_modules/react/index.js"),
 				a = s.n(i);
+			const {
+				fbt: c
+			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
-			function c(e) {
+			function d(e) {
 				const t = new Date(e.poll.endsAt).getTime() - Date.now() <= 0;
 				return a.a.createElement("span", {
 					className: e.className
-				}, t ? n.fbt._("Voting closed {timeAgo}", [n.fbt._param("timeAgo", Object(r.d)(e.poll.endsAt / 1e3))], {
+				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(r.d, {
+					seconds: e.poll.endsAt / n.Nb
+				}))], {
 					hk: "3OERID"
 				}) : Object(o.a)(new Date(e.poll.endsAt)))
 			}
@@ -7934,4 +7943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.497bdcd3c525f7ebc214.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.32ea5ede92198707f4cb.js.map

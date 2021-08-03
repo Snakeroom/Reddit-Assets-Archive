@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ba180c334c35d54a247b.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.01e0f4806d8f594789e3.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -2413,8 +2413,8 @@
 				O = o("./src/reddit/layout/row/Inline/index.tsx"),
 				v = o("./src/reddit/models/PostCreationForm/index.ts"),
 				_ = o("./src/reddit/selectors/postCollection.ts"),
-				g = o("./src/lib/timeAgo/index.ts"),
-				k = o("./src/reddit/controls/MetaSeparator/index.tsx"),
+				g = o("./src/reddit/controls/MetaSeparator/index.tsx"),
+				k = o("./src/reddit/components/HumanDate/index.tsx"),
 				j = o("./src/reddit/helpers/name/index.ts"),
 				E = o("./src/reddit/models/Subreddit/index.ts"),
 				w = o("./src/reddit/models/User/index.ts"),
@@ -2457,12 +2457,14 @@
 						"data-redditstyle": !0
 					}, n && i.a.createElement(A, {
 						"data-redditstyle": !0
-					}, n), n && i.a.createElement(k.b, null), i.a.createElement(L, null, N._({
+					}, n), n && i.a.createElement(g.b, null), i.a.createElement(L, null, N._({
 						"*": "{number of posts} posts",
 						_1: "1 post"
 					}, [N._plural(r, "number of posts")], {
 						hk: "1Uy96U"
-					})), i.a.createElement(k.b, null), i.a.createElement(L, null, N._("created {time}", [N._param("time", Object(g.d)(e.createdAtUTC))], {
+					})), i.a.createElement(g.b, null), i.a.createElement(L, null, N._("created {time}", [N._param("time", i.a.createElement(k.d, {
+						seconds: e.createdAtUTC
+					}))], {
 						hk: "2cUc5m"
 					}))), s && i.a.createElement("div", {
 						className: T.a.onHoverActionText
@@ -4883,4 +4885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ba180c334c35d54a247b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.01e0f4806d8f594789e3.js.map

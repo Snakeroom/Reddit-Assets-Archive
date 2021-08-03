@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4b9f504bd0294b0ca40a.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.089c8811c9d5016b24f8.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -72,40 +72,6 @@
 					return s || (e === t ? null : !!e.parentElement && b(e.parentElement, t))
 				},
 				p = (e, t) => "true" === e.dataset.ignoreClick || e !== t && (!!e.parentElement && p(e.parentElement, t))
-		},
-		"./src/lib/humanizeEventTime/index.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return c
-			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				r = s("./src/lib/constants/index.ts"),
-				i = s("./src/lib/eventTools/index.ts");
-
-			function o(e, t = r.B) {
-				return e.toLocaleDateString(t, {
-					month: "numeric",
-					day: "numeric"
-				})
-			}
-
-			function c(e, t, s, c = r.B) {
-				const d = Object(i.e)(e, t),
-					a = new Date(e * r.Nb);
-				let u;
-				if (d === i.a.Live || s) return n.fbt._("Now", null, {
-					hk: "Prpcg"
-				});
-				return d === i.a.Future ? u = Object(i.d)(e) ? n.fbt._("Today", null, {
-					hk: "1sZpnp"
-				}).toString() : Object(i.b)(e) >= 5 ? o(a, c) : function(e, t = r.B) {
-					return e.toLocaleDateString(t, {
-						weekday: "long"
-					})
-				}(a, c) : d === i.a.Past && (u = Object(i.d)(e) ? n.fbt._("Today", null, {
-					hk: "1sZpnp"
-				}).toString() : o(a, c)), `${u} @ ${function(e,t=r.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(a,c)}`
-			}
 		},
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -264,9 +230,9 @@
 				y = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				O = s("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
 				f = s("./src/reddit/components/PostContainer/index.tsx"),
-				g = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				j = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				I = s("./src/reddit/constants/posts.ts"),
+				I = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				g = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				j = s("./src/reddit/constants/posts.ts"),
 				k = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
 				T = s.n(P);
@@ -341,27 +307,27 @@
 						className: T.a.postBodyWrapper
 					}, !s && i && r.a.createElement("div", {
 						className: Object(c.a)(T.a.subredditContainer)
-					}, r.a.createElement(g.a, {
+					}, r.a.createElement(I.a, {
 						className: T.a.subredditLink,
 						to: i.url,
 						onClick: this.onSubredditNameClick
 					}, i.displayText), n ? r.a.createElement("div", {
 						className: T.a.subredditSubscribeLargeButton
-					}, r.a.createElement(j.a, {
+					}, r.a.createElement(g.a, {
 						identifier: {
 							name: i.name,
-							type: I.a.SUBREDDIT
+							type: j.a.SUBREDDIT
 						},
 						postId: e.id,
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
-					})) : r.a.createElement(j.a, {
+					})) : r.a.createElement(g.a, {
 						className: T.a.subredditSubscribeButton,
 						getEventFactory: this.getSubscribeEventFactory,
 						doNotHideOtherSubscribeButtons: !0,
 						identifier: {
 							name: i.name,
-							type: I.a.SUBREDDIT
+							type: j.a.SUBREDDIT
 						},
 						postId: e.id,
 						small: !0
@@ -406,7 +372,7 @@
 					numInstance: t
 				}) => Object(m.k)(e, t)
 			}), A = Object(i.b)(R);
-			class M extends r.a.PureComponent {
+			class H extends r.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -453,7 +419,7 @@
 					})))
 				}
 			}
-			t.default = A(M)
+			t.default = A(H)
 		},
 		"./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/FocusedVerticals/Wrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -530,7 +496,7 @@
 				subreddit: C.S,
 				subredditAboutInfo: C.v
 			}), f = Object(i.b)(O);
-			class g extends r.a.Component {
+			class I extends r.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
 						const {
@@ -636,7 +602,7 @@
 					}, c))))
 				}
 			}
-			t.a = f(Object(m.c)(g))
+			t.a = f(Object(m.c)(I))
 		},
 		"./src/reddit/components/EventPost/PostEventMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -661,18 +627,18 @@
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./src/lib/eventTools/index.ts"),
-				o = s("./src/lib/humanizeEventTime/index.ts"),
-				c = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				d = s("./src/lib/classNames/index.ts"),
-				a = s("./src/reddit/icons/fonts/helpers.tsx"),
-				u = s("./src/reddit/icons/fonts/commonStyles.m.less"),
-				l = s.n(u);
-			var b = e => r.a.createElement("i", {
-				className: Object(d.a)(Object(a.b)("scheduled", e.isFilled), l.a.calendarIcon, e.className)
+				o = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/reddit/icons/fonts/helpers.tsx"),
+				a = s("./src/reddit/icons/fonts/commonStyles.m.less"),
+				u = s.n(a);
+			var l = e => r.a.createElement("i", {
+				className: Object(c.a)(Object(d.b)("scheduled", e.isFilled), u.a.calendarIcon, e.className)
 			});
-			var p = e => r.a.createElement("i", {
-					className: Object(d.a)(Object(a.b)("live", e.isFilled), l.a.liveIcon, e.className)
+			var b = e => r.a.createElement("i", {
+					className: Object(c.a)(Object(d.b)("live", e.isFilled), u.a.liveIcon, e.className)
 				}),
+				p = s("./src/reddit/components/HumanDate/index.tsx"),
 				m = s("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
 				h = s.n(m),
 				E = s("./src/lib/lessComponent.tsx");
@@ -680,8 +646,8 @@
 				x = E.a.span("PostEventPastText", h.a),
 				C = E.a.span("PostEventNowText", h.a),
 				_ = E.a.span("Container", h.a),
-				S = E.a.wrapped(b, "CalendarIcon", h.a),
-				y = E.a.wrapped(p, "LiveIcon", h.a),
+				S = E.a.wrapped(l, "CalendarIcon", h.a),
+				y = E.a.wrapped(b, "LiveIcon", h.a),
 				O = E.a.div("LoadingState", h.a);
 			class f extends n.Component {
 				constructor(e) {
@@ -704,28 +670,32 @@
 					if (!s) return null;
 					const {
 						eventEnd: n,
-						eventIsLive: d,
-						eventStart: a
-					} = s, u = Object(i.e)(a, n);
-					let l, b;
-					if (this.state.mounted || u === i.a.Live) l = Object(o.a)(a, n, d);
+						eventIsLive: c,
+						eventStart: d
+					} = s, a = Object(i.e)(d, n);
+					let u, l;
+					if (this.state.mounted || a === i.a.Live) u = r.a.createElement(p.c, {
+						startTime: d,
+						endTime: n,
+						isLive: c
+					});
 					else {
-						const e = Object(c.a)({
+						const e = Object(o.a)({
 							isLoading: !0
 						});
-						l = r.a.createElement(O, {
+						u = r.a.createElement(O, {
 							className: e
 						})
 					}
-					if (d) b = r.a.createElement(C, null, r.a.createElement(y, null), l);
-					else if (u === i.a.Future) b = r.a.createElement(v, null, r.a.createElement(S, null), l);
+					if (c) l = r.a.createElement(C, null, r.a.createElement(y, null), u);
+					else if (a === i.a.Future) l = r.a.createElement(v, null, r.a.createElement(S, null), u);
 					else {
-						if (u !== i.a.Past) return null;
-						b = r.a.createElement(x, null, r.a.createElement(S, null), l)
+						if (a !== i.a.Past) return null;
+						l = r.a.createElement(x, null, r.a.createElement(S, null), u)
 					}
 					return r.a.createElement(_, {
 						className: e
-					}, b)
+					}, l)
 				}
 			}
 			t.a = f
@@ -1302,4 +1272,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.4b9f504bd0294b0ca40a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.089c8811c9d5016b24f8.js.map

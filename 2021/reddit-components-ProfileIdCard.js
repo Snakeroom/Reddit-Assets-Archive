@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d3c8143420dd5e61eccc.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f5577257fa99dd853990.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -31,61 +31,6 @@
 					year: "numeric",
 					timeZone: r ? "UTC" : void 0
 				}).format(o)
-			}
-		},
-		"./src/lib/humanizeDateTime/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return s
-			}));
-			var n = r("./src/lib/constants/index.ts");
-
-			function s(e, t = n.B) {
-				const r = e * n.Nb;
-				return new Date(r).toLocaleString(t, {
-					weekday: "short",
-					month: "short",
-					year: "numeric",
-					day: "2-digit",
-					hour: "2-digit",
-					minute: "2-digit",
-					second: "2-digit",
-					timeZoneName: "long"
-				})
-			}
-		},
-		"./src/lib/humanizeEventTime/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return i
-			}));
-			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
-				s = r("./src/lib/constants/index.ts"),
-				a = r("./src/lib/eventTools/index.ts");
-
-			function o(e, t = s.B) {
-				return e.toLocaleDateString(t, {
-					month: "numeric",
-					day: "numeric"
-				})
-			}
-
-			function i(e, t, r, i = s.B) {
-				const c = Object(a.e)(e, t),
-					d = new Date(e * s.Nb);
-				let l;
-				if (c === a.a.Live || r) return n.fbt._("Now", null, {
-					hk: "Prpcg"
-				});
-				return c === a.a.Future ? l = Object(a.d)(e) ? n.fbt._("Today", null, {
-					hk: "1sZpnp"
-				}).toString() : Object(a.b)(e) >= 5 ? o(d, i) : function(e, t = s.B) {
-					return e.toLocaleDateString(t, {
-						weekday: "long"
-					})
-				}(d, i) : c === a.a.Past && (l = Object(a.d)(e) ? n.fbt._("Today", null, {
-					hk: "1sZpnp"
-				}).toString() : o(d, i)), `${l} @ ${function(e,t=s.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(d,i)}`
 			}
 		},
 		"./src/lib/humanizeUTCDate/index.tsx": function(e, t, r) {
@@ -226,9 +171,9 @@
 			})), r.d(t, "d", (function() {
 				return T
 			})), r.d(t, "c", (function() {
-				return D
+				return L
 			})), r.d(t, "a", (function() {
-				return A
+				return R
 			})), r.d(t, "b", (function() {
 				return G
 			}));
@@ -405,7 +350,7 @@
 						});
 						a(Object(l.f)(Object(l.e)(s, C.b.Error)))
 					}
-				}, M = Object(a.a)(d.f), D = e => async (t, r, {
+				}, M = Object(a.a)(d.f), L = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const a = r(),
@@ -451,7 +396,7 @@
 						text: k(),
 						kind: C.b.Error
 					}))))
-				}, L = Object(a.a)(d.d), A = e => async (t, r, {
+				}, D = Object(a.a)(d.d), R = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const a = r().multireddits.models,
@@ -464,7 +409,7 @@
 						i = a[e];
 					if (!i) return void o();
 					const c = !i.isFavorited;
-					t(L({
+					t(D({
 						makeFavorite: c,
 						multiredditPath: e,
 						multiredditsModelsState: a
@@ -476,12 +421,12 @@
 							multipath: t,
 							api_type: "json"
 						}
-					}))(n(), e, c)).ok || (t(L({
+					}))(n(), e, c)).ok || (t(D({
 						makeFavorite: !c,
 						multiredditPath: e,
 						multiredditsModelsState: a
 					})), o())
-				}, R = Object(a.a)(d.e), G = e => async (t, r, {
+				}, A = Object(a.a)(d.e), G = e => async (t, r, {
 					apiContext: a
 				}) => {
 					const o = r(),
@@ -502,7 +447,7 @@
 						d = i[e];
 					if (!d) return void c();
 					const m = !d.isFollowed;
-					t(R({
+					t(A({
 						follow: m,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -515,7 +460,7 @@
 							api_type: "json"
 						},
 						type: "json"
-					}))(a(), e, m)).ok || (t(R({
+					}))(a(), e, m)).ok || (t(A({
 						follow: !m,
 						multiredditPath: e,
 						multiredditsModelsState: i
@@ -786,12 +731,14 @@
 		},
 		"./src/reddit/components/HumanDate/index.tsx": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
+			r.d(t, "d", (function() {
 				return l
 			})), r.d(t, "a", (function() {
 				return u
 			})), r.d(t, "b", (function() {
-				return f
+				return p
+			})), r.d(t, "c", (function() {
+				return g
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -805,41 +752,87 @@
 				return document.documentElement.lang || o.B
 			};
 			var l = function({
-				seconds: e,
-				...t
-			}) {
-				var r;
-				const n = d(),
-					o = {
-						...t,
-						locale: null !== (r = t.locale) && void 0 !== r ? r : n
-					};
-				return s.a.createElement(s.a.Fragment, null, Object(a.d)(e, o))
-			};
-			r("./src/reddit/helpers/dayAgoFormatDate/index.tsx");
-			var m = r("./src/lib/humanizeDate/index.ts");
-			var u = function({
 					seconds: e,
 					...t
 				}) {
 					var r;
 					const n = d(),
-						a = {
+						o = {
 							...t,
 							locale: null !== (r = t.locale) && void 0 !== r ? r : n
 						};
-					return s.a.createElement(s.a.Fragment, null, Object(m.a)(e, a))
+					return s.a.createElement(s.a.Fragment, null, Object(a.d)(e, o))
 				},
-				p = r("./src/lib/humanizeDateTime/index.ts");
-			var f = function({
+				m = r("./src/lib/humanizeDate/index.ts");
+			var u = function({
 				seconds: e,
-				locale: t
+				...t
 			}) {
-				const r = d(),
-					n = null != t ? t : r;
-				return s.a.createElement(s.a.Fragment, null, Object(p.a)(e, n))
+				var r;
+				const n = d(),
+					a = {
+						...t,
+						locale: null !== (r = t.locale) && void 0 !== r ? r : n
+					};
+				return s.a.createElement(s.a.Fragment, null, Object(m.a)(e, a))
 			};
-			r("./src/lib/humanizeEventTime/index.ts");
+			var p = function({
+					seconds: e,
+					locale: t
+				}) {
+					const r = d(),
+						n = null != t ? t : r;
+					return s.a.createElement(s.a.Fragment, null, function(e, t = o.B) {
+						const r = e * o.Nb;
+						return new Date(r).toLocaleString(t, {
+							weekday: "short",
+							month: "short",
+							year: "numeric",
+							day: "2-digit",
+							hour: "2-digit",
+							minute: "2-digit",
+							second: "2-digit",
+							timeZoneName: "long"
+						})
+					}(e, n))
+				},
+				f = r("./node_modules/fbt/lib/FbtPublic.js"),
+				b = r("./src/lib/eventTools/index.ts");
+
+			function x(e, t = o.B) {
+				return e.toLocaleDateString(t, {
+					month: "numeric",
+					day: "numeric"
+				})
+			}
+
+			function h(e, t, r, n = o.B) {
+				const s = Object(b.e)(e, t),
+					a = new Date(e * o.Nb);
+				let i;
+				if (s === b.a.Live || r) return f.fbt._("Now", null, {
+					hk: "Prpcg"
+				});
+				return s === b.a.Future ? i = Object(b.d)(e) ? f.fbt._("Today", null, {
+					hk: "1sZpnp"
+				}).toString() : Object(b.b)(e) >= 5 ? x(a, n) : function(e, t = o.B) {
+					return e.toLocaleDateString(t, {
+						weekday: "long"
+					})
+				}(a, n) : s === b.a.Past && (i = Object(b.d)(e) ? f.fbt._("Today", null, {
+					hk: "1sZpnp"
+				}).toString() : x(a, n)), `${i} @ ${function(e,t=o.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(a,n)}`
+			}
+			var g = function({
+				startTime: e,
+				endTime: t,
+				isLive: r,
+				locale: n
+			}) {
+				const a = d(),
+					o = null != n ? n : a;
+				return s.a.createElement(s.a.Fragment, null, h(e, t, r, o))
+			};
 			r("./src/lib/humanizeUTCDate/index.tsx")
 		},
 		"./src/reddit/components/InfoTextTooltip/index.m.less": function(e, t, r) {
@@ -1161,7 +1154,7 @@
 						hk: "4x2LB5"
 					}),
 					tooltipId: u,
-					tooltip: a.a.createElement(l.c, {
+					tooltip: a.a.createElement(l.d, {
 						seconds: r
 					})
 				}), o > 0 && a.a.createElement(j, {
@@ -1903,7 +1896,7 @@
 				username: c,
 				...d
 			}) {
-				const l = t ? s.a.createElement(s.a.Fragment, null, "u/", c, " · ", s.a.createElement(o.c, {
+				const l = t ? s.a.createElement(s.a.Fragment, null, "u/", c, " · ", s.a.createElement(o.d, {
 					seconds: n,
 					noPostfix: !0,
 					shortenedUnit: !0
@@ -2200,10 +2193,10 @@
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				D = r("./src/reddit/constants/modals.ts"),
-				L = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				A = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				R = r("./src/reddit/models/Gold/Premium/index.ts"),
+				L = r("./src/reddit/constants/modals.ts"),
+				D = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				R = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				A = r("./src/reddit/models/Gold/Premium/index.ts"),
 				G = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				W = r("./src/reddit/selectors/premium.ts"),
 				H = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
@@ -2232,7 +2225,7 @@
 					isLoading: e,
 					...t
 				}) => s.a.createElement("div", q({}, t, {
-					className: Object(k.a)(z.a.Shimmer, Object(A.b)({
+					className: Object(k.a)(z.a.Shimmer, Object(R.b)({
 						isLoading: e
 					}))
 				}));
@@ -2246,7 +2239,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						e(Object(L.d)(L.a.GiftPremiumFlow));
+						e(Object(D.d)(D.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -2276,7 +2269,7 @@
 							onClickBlockUser: u,
 							onClickUnblockUser: p,
 							isUserBlocked: f
-						} = this.props, b = a && Object(R.d)(r, s).length && !i || s, x = N()([(i || o) && n ? {
+						} = this.props, b = a && Object(A.d)(r, s).length && !i || s, x = N()([(i || o) && n ? {
 							text: P.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2401,7 +2394,7 @@
 					profileName: t
 				}) => ({
 					addToMultiClicked: () => {
-						e(Object(y.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), r.e("Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(w.h)(D.a.MULTIREDDIT_ADD_SUBREDDIT))
+						e(Object(y.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), r.e("Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(w.h)(L.a.MULTIREDDIT_ADD_SUBREDDIT))
 					},
 					onClickGivePremium: r => e(Object(S.e)({
 						correlationId: r,
@@ -2533,7 +2526,7 @@
 					prefShowSnoovatar: y,
 					snoovatarFullBodyAsset: S,
 					username: w
-				} = g, U = !!t && t.id === N, F = !(!t || !t.snoovatarFullBodyAsset), B = f && f.bannerBackgroundImage, T = !!l && l.isNSFW, M = T && n, D = !(!u || !u.userIsSubscriber), L = `/user/${w}/`, A = v && v.url === L, R = !u || u.acceptChats, G = !u || u.acceptPms, W = h && Object(Y.b)(S);
+				} = g, U = !!t && t.id === N, F = !(!t || !t.snoovatarFullBodyAsset), B = f && f.bannerBackgroundImage, T = !!l && l.isNSFW, M = T && n, L = !(!u || !u.userIsSubscriber), D = `/user/${w}/`, R = v && v.url === D, A = !u || u.acceptChats, G = !u || u.acceptPms, W = h && Object(Y.b)(S);
 				return s.a.createElement(m.a, {
 					isEmployee: j,
 					isGold: k,
@@ -2543,7 +2536,7 @@
 					isOwnProfile: U,
 					publicDescription: u ? u.publicDescription : void 0,
 					title: l ? l.title : void 0,
-					url: A ? null : L,
+					url: R ? null : D,
 					userCreated: E,
 					username: w,
 					recentAwardings: P,
@@ -2557,10 +2550,10 @@
 					}), !U && x && re({
 						profileName: w,
 						onToggleFollow: d,
-						userIsSubscriber: D,
+						userIsSubscriber: L,
 						isUserBlocked: _,
 						onClickUnblockUser: O
-					}), !!t && !U && R && ne({
+					}), !!t && !U && A && ne({
 						userId: N
 					})),
 					footer: s.a.createElement(J, {
@@ -2740,18 +2733,6 @@
 					raw_json: 1
 				}
 			})
-		},
-		"./src/reddit/helpers/dayAgoFormatDate/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./src/lib/constants/index.ts"),
-				s = r("./src/lib/humanizeUTCDate/index.tsx"),
-				a = r("./src/lib/timeAgo/index.ts");
-			t.a = (e, t) => {
-				const r = (e => e - 8 * n.O / n.Nb)(e);
-				return Object(a.c)(r) >= 1 ? Object(s.a)(r, t) : Object(a.d)(r, {
-					locale: t
-				})
-			}
 		},
 		"./src/reddit/helpers/karma.ts": function(e, t, r) {
 			"use strict";
@@ -3032,4 +3013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d3c8143420dd5e61eccc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f5577257fa99dd853990.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b1a75bfec448b68f511a.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c7c6c48a9c46b3220146.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -389,18 +389,18 @@
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/lib/eventTools/index.ts"),
-				i = s("./src/lib/humanizeEventTime/index.ts"),
-				a = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				c = s("./src/lib/classNames/index.ts"),
-				d = s("./src/reddit/icons/fonts/helpers.tsx"),
-				l = s("./src/reddit/icons/fonts/commonStyles.m.less"),
-				u = s.n(l);
-			var m = e => n.a.createElement("i", {
-				className: Object(c.a)(Object(d.b)("scheduled", e.isFilled), u.a.calendarIcon, e.className)
+				i = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				a = s("./src/lib/classNames/index.ts"),
+				c = s("./src/reddit/icons/fonts/helpers.tsx"),
+				d = s("./src/reddit/icons/fonts/commonStyles.m.less"),
+				l = s.n(d);
+			var u = e => n.a.createElement("i", {
+				className: Object(a.a)(Object(c.b)("scheduled", e.isFilled), l.a.calendarIcon, e.className)
 			});
-			var p = e => n.a.createElement("i", {
-					className: Object(c.a)(Object(d.b)("live", e.isFilled), u.a.liveIcon, e.className)
+			var m = e => n.a.createElement("i", {
+					className: Object(a.a)(Object(c.b)("live", e.isFilled), l.a.liveIcon, e.className)
 				}),
+				p = s("./src/reddit/components/HumanDate/index.tsx"),
 				b = s("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
 				x = s.n(b),
 				h = s("./src/lib/lessComponent.tsx");
@@ -408,8 +408,8 @@
 				f = h.a.span("PostEventPastText", x.a),
 				y = h.a.span("PostEventNowText", x.a),
 				E = h.a.span("Container", x.a),
-				O = h.a.wrapped(m, "CalendarIcon", x.a),
-				g = h.a.wrapped(p, "LiveIcon", x.a),
+				O = h.a.wrapped(u, "CalendarIcon", x.a),
+				g = h.a.wrapped(m, "LiveIcon", x.a),
 				j = h.a.div("LoadingState", x.a);
 			class S extends o.Component {
 				constructor(e) {
@@ -432,28 +432,32 @@
 					if (!s) return null;
 					const {
 						eventEnd: o,
-						eventIsLive: c,
-						eventStart: d
-					} = s, l = Object(r.e)(d, o);
-					let u, m;
-					if (this.state.mounted || l === r.a.Live) u = Object(i.a)(d, o, c);
+						eventIsLive: a,
+						eventStart: c
+					} = s, d = Object(r.e)(c, o);
+					let l, u;
+					if (this.state.mounted || d === r.a.Live) l = n.a.createElement(p.c, {
+						startTime: c,
+						endTime: o,
+						isLive: a
+					});
 					else {
-						const e = Object(a.a)({
+						const e = Object(i.a)({
 							isLoading: !0
 						});
-						u = n.a.createElement(j, {
+						l = n.a.createElement(j, {
 							className: e
 						})
 					}
-					if (c) m = n.a.createElement(y, null, n.a.createElement(g, null), u);
-					else if (l === r.a.Future) m = n.a.createElement(v, null, n.a.createElement(O, null), u);
+					if (a) u = n.a.createElement(y, null, n.a.createElement(g, null), l);
+					else if (d === r.a.Future) u = n.a.createElement(v, null, n.a.createElement(O, null), l);
 					else {
-						if (l !== r.a.Past) return null;
-						m = n.a.createElement(f, null, n.a.createElement(O, null), u)
+						if (d !== r.a.Past) return null;
+						u = n.a.createElement(f, null, n.a.createElement(O, null), l)
 					}
 					return n.a.createElement(E, {
 						className: e
-					}, m)
+					}, u)
 				}
 			}
 			t.a = S
@@ -2316,4 +2320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.b1a75bfec448b68f511a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.c7c6c48a9c46b3220146.js.map

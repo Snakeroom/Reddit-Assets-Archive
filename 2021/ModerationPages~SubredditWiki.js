@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.81d71190ae864f609b5a.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.b631d091bef0257d970f.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -3138,7 +3138,7 @@
 					})
 				}), e.user.isGold && s.a.createElement(w.a, {
 					to: "/premium"
-				}, s.a.createElement(ce, null))), s.a.createElement(ue, null, e.user.username && s.a.createElement(me, null, e.user.username, s.a.createElement(be, null, "•")), s.a.createElement(me, null, s.a.createElement(B.c, {
+				}, s.a.createElement(ce, null))), s.a.createElement(ue, null, e.user.username && s.a.createElement(me, null, e.user.username, s.a.createElement(be, null, "•")), s.a.createElement(me, null, s.a.createElement(B.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Ne = e => {
@@ -3883,7 +3883,7 @@
 				username: d,
 				...c
 			}) {
-				const l = t ? s.a.createElement(s.a.Fragment, null, "u/", d, " · ", s.a.createElement(i.c, {
+				const l = t ? s.a.createElement(s.a.Fragment, null, "u/", d, " · ", s.a.createElement(i.d, {
 					seconds: n,
 					noPostfix: !0,
 					shortenedUnit: !0
@@ -4883,4 +4883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.81d71190ae864f609b5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.b631d091bef0257d970f.js.map

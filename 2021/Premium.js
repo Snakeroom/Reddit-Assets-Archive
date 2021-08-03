@@ -1,29 +1,7 @@
-// https://www.redditstatic.com/desktop2x/Premium.14f9249372c23b910ad9.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.3262348993598906db17.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
-		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return a
-			}));
-			var n = r("./src/lib/constants/index.ts");
-
-			function a(e, {
-				showDay: t,
-				useUtc: r,
-				shortMonths: a,
-				locale: o = n.B
-			} = {}) {
-				const i = new Date(e * n.Nb);
-				return new Intl.DateTimeFormat(o, {
-					month: a ? "short" : "long",
-					day: t ? "numeric" : void 0,
-					year: "numeric",
-					timeZone: r ? "UTC" : void 0
-				}).format(i)
-			}
-		},
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -64,9 +42,9 @@
 			})), r.d(t, "f", (function() {
 				return I
 			})), r.d(t, "e", (function() {
-				return N
-			})), r.d(t, "d", (function() {
 				return S
+			})), r.d(t, "d", (function() {
+				return N
 			})), r.d(t, "c", (function() {
 				return M
 			})), r.d(t, "a", (function() {
@@ -148,14 +126,14 @@
 					let x, C, I = "";
 					try {
 						I = await c(E(t, a, _))
-					} catch (S) {
-						return p.c.captureException(S), void(S.message && c(Object(h.stripeApiError)(S.message)))
+					} catch (N) {
+						return p.c.captureException(N), void(N.message && c(Object(h.stripeApiError)(N.message)))
 					}
 					c(Object(h.stripeTokenPending)());
-					const N = Object(y.y)(m);
-					if (N || (x = await c(Object(h.validateAndCreateStripeToken)(e)), C = Object(y.v)(m), x)) try {
+					const S = Object(y.y)(m);
+					if (S || (x = await c(Object(h.validateAndCreateStripeToken)(e)), C = Object(y.v)(m), x)) try {
 						const t = s()(),
-							n = N || C ? x && C ? Object(O.h)(l(), t, I, x.id) : N ? Object(O.j)(l(), t, I, N) : null : Object(O.i)(l(), t, I, x.id),
+							n = S || C ? x && C ? Object(O.h)(l(), t, I, x.id) : S ? Object(O.j)(l(), t, I, S) : null : Object(O.i)(l(), t, I, x.id),
 							o = await n;
 						if (!(null == o ? void 0 : o.ok)) return void b();
 						const m = o.body.data.createEconPayment;
@@ -174,7 +152,7 @@
 								} = t;
 							if (r) return void(r.message ? c(Object(h.stripeApiError)(r.message)) : b());
 							let n;
-							if (!(n = N ? await Object(O.e)(l(), s()(), g.id, N) : await Object(O.d)(l(), s()(), g.id, x.id, C)).ok) return void b();
+							if (!(n = S ? await Object(O.e)(l(), s()(), g.id, S) : await Object(O.d)(l(), s()(), g.id, x.id, C)).ok) return void b();
 							const a = n.body;
 							if (!a.data.confirmEconPayment.ok || a.data.confirmEconPayment.payment.status !== O.a.Paid) return void b()
 						} else if (p && g.status !== O.a.Paid) return void b();
@@ -187,8 +165,8 @@
 						})) : f && c(q({
 							user: v
 						})))
-					} catch (S) {
-						p.c.captureException(S), b()
+					} catch (N) {
+						p.c.captureException(N), b()
 					}
 				}, I = (e, t, r, n, a) => async (o, i, {
 					gqlContext: d
@@ -262,7 +240,7 @@
 						p.c.captureException(I)
 					}
 					return o(Object(h.paypalApiError)(x())), null
-				}, N = (e, t) => async (r, n, {
+				}, S = (e, t) => async (r, n, {
 					gqlContext: a
 				}) => {
 					var o;
@@ -278,7 +256,7 @@
 						p.c.captureException(i)
 					}
 					return r(Object(h.paypalApiError)(x())), !1
-				}, S = () => async (e, t, {
+				}, N = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					e(Object(h.savedCardsPending)());
@@ -396,8 +374,8 @@
 						text: e
 					}))
 				}, I = (e, t) => async r => {
-					e === s.c.Premium ? r(S()) : t && r(N(e, t))
-				}, N = (e, t) => async (r, a, {
+					e === s.c.Premium ? r(N()) : t && r(S(e, t))
+				}, S = (e, t) => async (r, a, {
 					gqlContext: o
 				}) => {
 					const i = a();
@@ -431,7 +409,7 @@
 							r(y(e)), r(C(e))
 						}
 					}
-				}, S = () => async (e, t, {
+				}, N = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					var a, i;
@@ -1108,9 +1086,9 @@
 			})), r.d(t, "h", (function() {
 				return I
 			})), r.d(t, "d", (function() {
-				return N
-			})), r.d(t, "g", (function() {
 				return S
+			})), r.d(t, "g", (function() {
+				return N
 			}));
 			var n = r("./node_modules/react/index.js"),
 				a = r.n(n),
@@ -1274,14 +1252,14 @@
 					kind: b.Button,
 					className: Object(o.a)(e, c.a.PremiumButtonColors)
 				}, t)),
-				N = ({
+				S = ({
 					className: e,
 					...t
 				}) => a.a.createElement(f, d({
 					kind: b.Button,
 					className: Object(o.a)(e, c.a.ChatButton)
 				}, t)),
-				S = ({
+				N = ({
 					className: e,
 					...t
 				}) => a.a.createElement(f, d({
@@ -2194,8 +2172,8 @@
 				E = r("./src/reddit/actions/login.ts"),
 				C = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				I = r("./src/reddit/actions/gold/productOffers.ts"),
-				N = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
-				S = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
+				S = r("./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts"),
+				N = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
 				M = r("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				T = r("./src/reddit/components/PremiumPurchaseModal/Loader.tsx"),
 				B = r("./src/reddit/models/Gold/ProductOffer.ts"),
@@ -2206,8 +2184,8 @@
 				U = r("./src/lib/classNames/index.ts"),
 				q = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				F = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				D = r("./src/reddit/hooks/useTracking.ts"),
-				Q = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				Q = r("./src/reddit/hooks/useTracking.ts"),
+				D = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				W = r("./src/reddit/pages/Premium/BenefitsSection/index.m.less"),
 				J = r.n(W);
 			const z = {
@@ -2280,8 +2258,8 @@
 					className: e
 				}) => {
 					const t = Object(s.e)(h.i),
-						r = Object(s.e)(Q.h),
-						a = Object(D.a)();
+						r = Object(s.e)(D.h),
+						a = Object(Q.a)();
 					if (!(null == t ? void 0 : t.length)) return i.a.createElement("div", null, i.a.createElement(F.a, {
 						sizePx: 80
 					}));
@@ -2451,7 +2429,7 @@
 				re = r("./src/reddit/pages/Premium/RedeemGiftCode/index.m.less"),
 				ne = r.n(re);
 			const ae = () => {
-					const e = Object(D.a)(),
+					const e = Object(Q.a)(),
 						t = Object(s.d)(),
 						r = Object(s.e)(te.a),
 						n = Object(s.e)(te.b);
@@ -2508,14 +2486,14 @@
 				ie = Object(s.b)(oe, (e, t) => ({
 					onManagePremium: () => e(Object(c.b)("/settings/premium")),
 					onOpenLoginModal: () => e(Object(E.h)()),
-					onPurchasePremium: (t, r) => e(Object(N.openWithBlob)({
+					onPurchasePremium: (t, r) => e(Object(S.openWithBlob)({
 						correlationId: r,
 						packageId: t
 					})),
 					onSetPremiumRenewalInterval: t => e(Object(C.i)({
 						renewInterval: t
 					})),
-					requestPurchaseCatalog: t => e(Object(S.b)(t)),
+					requestPurchaseCatalog: t => e(Object(N.b)(t)),
 					premiumProductOffersRequested: () => e(Object(I.c)(B.c.Premium))
 				}));
 			class se extends i.a.Component {
@@ -2756,7 +2734,7 @@
 			})), r.d(t, "e", (function() {
 				return I
 			})), r.d(t, "d", (function() {
-				return N
+				return S
 			}));
 			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				a = r("./src/lib/initializeClient/installReducer.ts"),
@@ -2794,7 +2772,7 @@
 				E = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				C = e => e.features.goldPurchase.payment.stripeToken.pending,
 				I = e => e.features.goldPurchase.payment.paypal.passthrough,
-				N = e => e.features.goldPurchase.payment.paypal.errorMessage
+				S = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2849,4 +2827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.14f9249372c23b910ad9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.3262348993598906db17.js.map

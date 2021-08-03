@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.03dfe1879408c2ef7776.js
-// Retrieved at 8/3/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8a19f2129f550c02b791.js
+// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -1241,7 +1241,7 @@
 					})
 				}), e.user.isGold && s.a.createElement(_.a, {
 					to: "/premium"
-				}, s.a.createElement(de, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(ue, null, e.user.username, s.a.createElement(pe, null, "•")), s.a.createElement(ue, null, s.a.createElement(T.c, {
+				}, s.a.createElement(de, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(ue, null, e.user.username, s.a.createElement(pe, null, "•")), s.a.createElement(ue, null, s.a.createElement(T.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				ke = e => {
@@ -1997,7 +1997,7 @@
 				username: i,
 				...d
 			}) {
-				const l = t ? s.a.createElement(s.a.Fragment, null, "u/", i, " · ", s.a.createElement(o.c, {
+				const l = t ? s.a.createElement(s.a.Fragment, null, "u/", i, " · ", s.a.createElement(o.d, {
 					seconds: a,
 					noPostfix: !0,
 					shortenedUnit: !0
@@ -2690,4 +2690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.03dfe1879408c2ef7776.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8a19f2129f550c02b791.js.map
