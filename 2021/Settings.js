@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.fea5e7160cd95e1e616c.js
-// Retrieved at 8/3/2021, 12:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a6cb557dd595a323e3d7.js
+// Retrieved at 8/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5306,51 +5306,53 @@
 				s = n("./node_modules/react/index.js"),
 				a = n.n(s),
 				o = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				c = n("./node_modules/react-router/esm/react-router.js"),
-				l = n("./src/reddit/actions/post.ts"),
+				i = n("./node_modules/react-router/esm/react-router.js"),
+				c = n("./src/reddit/actions/post.ts"),
+				l = n("./src/reddit/actions/snoovatar.ts"),
 				d = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = n("./src/reddit/controls/Button/index.tsx"),
 				m = n("./src/reddit/helpers/trackers/snoovatar.ts"),
 				p = n("./src/reddit/icons/svgs/Shirt/index.tsx"),
 				b = n("./src/reddit/models/Vote/index.ts"),
-				h = n("./src/reddit/routes/avatar/index.ts"),
-				f = n("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.m.less"),
-				g = n.n(f);
+				h = n("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.m.less"),
+				f = n.n(h);
 			const {
-				fbt: v
+				fbt: g
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = Object(c.i)(({
+			t.a = Object(i.i)(({
 				isHovercard: e,
 				username: t,
 				isAvatarPost: n,
-				post: c
+				post: i,
+				share: h
 			}) => {
-				const f = Object(d.b)(),
+				const v = Object(d.b)(),
 					_ = Object(o.d)(),
-					y = c && c.id,
-					x = c && c.voteState,
-					C = Object(s.useCallback)(() => f(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, f, t]);
-				return a.a.createElement(i.a, {
-					to: `${h.a}/${t}`
-				}, a.a.createElement(u.q, {
+					y = i && i.id,
+					x = i && i.voteState;
+				let C = null;
+				y || (C = e ? "user_hovercard" : "profile_overview");
+				const E = Object(s.useCallback)(() => v(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				return a.a.createElement(u.q, {
 					onClick: () => {
-						n ? y && x === b.a.notVoted && (f(m.c), _(Object(l.db)(y))) : C()
+						n ? y && x === b.a.notVoted && (v(m.c), _(Object(c.db)(y))) : E(), _(Object(l.b)(C, h, {
+							postId: y
+						}))
 					},
-					className: Object(r.a)(g.a.snoovatarButton, g.a.snoovatarExtraPadding, g.a.compactButtonLayout, {
-						[g.a.avatarPostifyButton]: n
+					className: Object(r.a)(f.a.snoovatarButton, f.a.snoovatarExtraPadding, f.a.compactButtonLayout, {
+						[f.a.avatarPostifyButton]: n
 					}),
 					isFullWidth: !0
 				}, a.a.createElement(p.a, {
 					className: Object(r.a)({
-						[g.a.shirtIcon]: !n,
-						[g.a.avatarPostButtonShirtIcon]: n
+						[f.a.shirtIcon]: !n,
+						[f.a.avatarPostButtonShirtIcon]: n
 					})
-				}), v._("Try this Look", null, {
+				}), g._("Try this Look", null, {
 					hk: "dOuPb"
 				}), a.a.createElement("div", {
-					className: g.a.chevronIcon
-				})))
+					className: f.a.chevronIcon
+				}))
 			})
 		},
 		"./src/reddit/components/ProfileIdCard/SnoovatarButton/index.m.less": function(e, t, n) {
@@ -5831,7 +5833,10 @@
 					onClick: y
 				}), A && s.a.createElement(u.a, {
 					username: P,
-					isHovercard: !!N
+					isHovercard: !!N,
+					share: {
+						username: P
+					}
 				}))
 			}
 		},
@@ -14481,4 +14486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.fea5e7160cd95e1e616c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a6cb557dd595a323e3d7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.38efb170614d9d3c5dd1.js
-// Retrieved at 8/3/2021, 12:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.91744440afc17b0afd33.js
+// Retrieved at 8/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1593,51 +1593,53 @@
 				n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./node_modules/react-redux/es/index.js"),
-				a = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				c = s("./node_modules/react-router/esm/react-router.js"),
-				d = s("./src/reddit/actions/post.ts"),
+				a = s("./node_modules/react-router/esm/react-router.js"),
+				c = s("./src/reddit/actions/post.ts"),
+				d = s("./src/reddit/actions/snoovatar.ts"),
 				l = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				u = s("./src/reddit/controls/Button/index.tsx"),
 				m = s("./src/reddit/helpers/trackers/snoovatar.ts"),
 				p = s("./src/reddit/icons/svgs/Shirt/index.tsx"),
 				b = s("./src/reddit/models/Vote/index.ts"),
-				x = s("./src/reddit/routes/avatar/index.ts"),
-				h = s("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.m.less"),
-				v = s.n(h);
+				x = s("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.m.less"),
+				h = s.n(x);
 			const {
-				fbt: f
+				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = Object(c.i)(({
+			t.a = Object(a.i)(({
 				isHovercard: e,
 				username: t,
 				isAvatarPost: s,
-				post: c
+				post: a,
+				share: x
 			}) => {
-				const h = Object(l.b)(),
+				const f = Object(l.b)(),
 					y = Object(i.d)(),
-					E = c && c.id,
-					O = c && c.voteState,
-					g = Object(n.useCallback)(() => h(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, h, t]);
-				return r.a.createElement(a.a, {
-					to: `${x.a}/${t}`
-				}, r.a.createElement(u.q, {
+					E = a && a.id,
+					O = a && a.voteState;
+				let g = null;
+				E || (g = e ? "user_hovercard" : "profile_overview");
+				const j = Object(n.useCallback)(() => f(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, f, t]);
+				return r.a.createElement(u.q, {
 					onClick: () => {
-						s ? E && O === b.a.notVoted && (h(m.c), y(Object(d.db)(E))) : g()
+						s ? E && O === b.a.notVoted && (f(m.c), y(Object(c.db)(E))) : j(), y(Object(d.b)(g, x, {
+							postId: E
+						}))
 					},
-					className: Object(o.a)(v.a.snoovatarButton, v.a.snoovatarExtraPadding, v.a.compactButtonLayout, {
-						[v.a.avatarPostifyButton]: s
+					className: Object(o.a)(h.a.snoovatarButton, h.a.snoovatarExtraPadding, h.a.compactButtonLayout, {
+						[h.a.avatarPostifyButton]: s
 					}),
 					isFullWidth: !0
 				}, r.a.createElement(p.a, {
 					className: Object(o.a)({
-						[v.a.shirtIcon]: !s,
-						[v.a.avatarPostButtonShirtIcon]: s
+						[h.a.shirtIcon]: !s,
+						[h.a.avatarPostButtonShirtIcon]: s
 					})
-				}), f._("Try this Look", null, {
+				}), v._("Try this Look", null, {
 					hk: "dOuPb"
 				}), r.a.createElement("div", {
-					className: v.a.chevronIcon
-				})))
+					className: h.a.chevronIcon
+				}))
 			})
 		},
 		"./src/reddit/components/ProfileIdCard/SnoovatarButton/index.m.less": function(e, t, s) {
@@ -1679,13 +1681,12 @@
 					username: t,
 					post: s
 				}) => {
-					const o = e.lastIndexOf("/") + 1,
-						r = `https://i.redd.it/snoovatar/snoovatars/shared/${e.slice(o)}.png`;
+					const [o, r] = new URL(e).pathname.split("/").slice(2), i = `https://i.redd.it/snoovatar/snoovatars/shared/${r}.png`;
 					return n.a.createElement("div", {
 						className: l.a.avatarPostContainer
 					}, n.a.createElement("img", {
 						className: l.a.avatarPostImage,
-						src: r,
+						src: i,
 						alt: a.fbt._("User Shared Avatar", null, {
 							hk: "FDRaA"
 						})
@@ -1693,7 +1694,11 @@
 						isHovercard: !1,
 						username: t,
 						isAvatarPost: !0,
-						post: s
+						post: s,
+						share: {
+							username: o,
+							avatarId: r
+						}
 					}))
 				},
 				m = s("./src/reddit/controls/OutboundLink/styled.tsx"),
@@ -2311,4 +2316,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.38efb170614d9d3c5dd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.91744440afc17b0afd33.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.13656d511d375ce19243.js
-// Retrieved at 8/3/2021, 12:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b97c4b148e67f67f2e32.js
+// Retrieved at 8/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -189,13 +189,31 @@
 					})
 				}
 		},
-		"./src/reddit/actions/pages/avatar.ts": function(e, t, r) {
+		"./src/reddit/actions/snoovatar.ts": function(e, t, r) {
 			"use strict";
-			var n = r("./src/reddit/actions/users.ts"),
-				s = r("./src/reddit/selectors/user.ts"),
-				o = r("./src/reddit/actions/login.ts");
-			t.a = () => async (e, t) => {
-				await e(Object(n.r)()), Object(s.J)(t()) || e(Object(o.h)())
+			r.d(t, "a", (function() {
+				return l
+			})), r.d(t, "b", (function() {
+				return u
+			}));
+			var n = r("./src/telemetry/index.ts"),
+				s = r("./src/reddit/actions/login.ts"),
+				o = r("./src/reddit/actions/modal.ts"),
+				a = r("./src/reddit/actions/users.ts"),
+				c = r("./src/reddit/constants/modals.ts"),
+				i = r("./src/reddit/helpers/trackers/snoovatar.ts"),
+				d = r("./src/reddit/selectors/user.ts");
+			const l = () => async (e, t) => {
+				const r = t();
+				Object(n.a)(Object(i.d)(r)), e(Object(a.r)({
+					forceFetch: !0
+				})), await e(Object(o.g)(c.a.SNOOVATAR_MODAL))
+			}, u = (e, t, r) => async (a, l) => {
+				const u = l();
+				e && Object(n.a)(Object(i.a)(e)(u)), Object(d.J)(u) ? await a(Object(o.h)(c.a.SNOOVATAR_MODAL, {
+					share: t,
+					source: r
+				})) : await a(Object(s.h)())
 			}
 		},
 		"./src/reddit/components/CountAnimation/index.m.less": function(e, t, r) {
@@ -271,7 +289,7 @@
 				}, [t, w, I]);
 				const D = Object(n.useRef)(0),
 					G = Object(n.useRef)(!1),
-					V = Object(n.useCallback)(e => {
+					L = Object(n.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t,
@@ -282,8 +300,8 @@
 							}, a())), D.current > 0 && (T.current(D.current), D.current = 0)) : n && (G.current = !1)
 						})
 					}, []);
-				Object(i.a)(S, V);
-				const [L, U] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
+				Object(i.a)(S, L);
+				const [V, U] = Object(n.useState)(!1), B = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -346,7 +364,7 @@
 					role: "screen-reader"
 				}, [...P].reverse().join(""))), s.a.createElement("span", {
 					ref: S
-				}), L && s.a.createElement(c, {
+				}), V && s.a.createElement(c, {
 					variables: O,
 					onData: b ? f : v,
 					queryKey: g,
@@ -1430,9 +1448,9 @@
 			})), r.d(t, "clickCloseGildModalEvent", (function() {
 				return G
 			})), r.d(t, "viewKarmaSuccessEvent", (function() {
-				return V
-			})), r.d(t, "clickFilterEvent", (function() {
 				return L
+			})), r.d(t, "clickFilterEvent", (function() {
+				return V
 			})), r.d(t, "clickNextFiltersEvent", (function() {
 				return U
 			})), r.d(t, "clickPreviousFiltersEvent", (function() {
@@ -1601,7 +1619,7 @@
 					action: "click",
 					noun: "close"
 				}),
-				V = ({
+				L = ({
 					award: e,
 					awardeeKarmaEarned: t,
 					awarderKarmaEarned: r,
@@ -1620,7 +1638,7 @@
 						...l(e)
 					}
 				}),
-				L = e => t => ({
+				V = e => t => ({
 					...u(t),
 					source: "give_gold",
 					action: "click",
@@ -2660,47 +2678,6 @@
 				}
 			}
 		},
-		"./src/reddit/routes/avatar/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return a
-			}));
-			var n = r("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				s = r("./src/lib/constants/index.ts"),
-				o = r("./src/reddit/actions/pages/avatar.ts");
-			const a = "/avatar",
-				c = [a, `${a}/:username`, `${a}/:username/:avatarId`],
-				i = {
-					action: o.a,
-					chunk: s.q.AVATAR,
-					component: Object(n.a)({
-						resolved: {},
-						chunkName: () => "Avatar",
-						isReady(e) {
-							const t = this.resolve(e);
-							return !1 !== this.resolved[t] && !!r.m[t]
-						},
-						importAsync: () => r.e("Avatar").then(r.bind(null, "./src/reddit/pages/Avatar/index.tsx")),
-						requireAsync(e) {
-							const t = this.resolve(e);
-							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-						},
-						requireSync(e) {
-							const t = this.resolve(e);
-							return r(t)
-						},
-						resolve() {
-							return "./src/reddit/pages/Avatar/index.tsx"
-						}
-					}),
-					exact: !0,
-					meta: {
-						name: s.Jb.AVATAR
-					},
-					path: c
-				};
-			t.b = i
-		},
 		"./src/reddit/selectors/authorFlair.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -3203,4 +3180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.13656d511d375ce19243.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.b97c4b148e67f67f2e32.js.map

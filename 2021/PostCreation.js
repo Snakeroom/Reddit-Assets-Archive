@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.049a8362db89e89675e0.js
-// Retrieved at 8/3/2021, 12:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.592bacfa7dc9dffcd6a8.js
+// Retrieved at 8/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -2379,15 +2379,6 @@
 				m = "SUBREDDIT__FLAIRED_USERS_DELETE_COMPLETED",
 				h = "SUBREDDIT__FLAIRED_USERS_DELETE_FAILED"
 		},
-		"./src/reddit/actions/pages/avatar.ts": function(e, t, n) {
-			"use strict";
-			var o = n("./src/reddit/actions/users.ts"),
-				r = n("./src/reddit/selectors/user.ts"),
-				s = n("./src/reddit/actions/login.ts");
-			t.a = () => async (e, t) => {
-				await e(Object(o.r)()), Object(r.J)(t()) || e(Object(s.h)())
-			}
-		},
 		"./src/reddit/actions/polls.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -3663,6 +3654,33 @@
 				d = () => {
 					c(o.b)
 				}
+		},
+		"./src/reddit/actions/snoovatar.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return l
+			})), n.d(t, "b", (function() {
+				return u
+			}));
+			var o = n("./src/telemetry/index.ts"),
+				r = n("./src/reddit/actions/login.ts"),
+				s = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/actions/users.ts"),
+				a = n("./src/reddit/constants/modals.ts"),
+				c = n("./src/reddit/helpers/trackers/snoovatar.ts"),
+				d = n("./src/reddit/selectors/user.ts");
+			const l = () => async (e, t) => {
+				const n = t();
+				Object(o.a)(Object(c.d)(n)), e(Object(i.r)({
+					forceFetch: !0
+				})), await e(Object(s.g)(a.a.SNOOVATAR_MODAL))
+			}, u = (e, t, n) => async (i, l) => {
+				const u = l();
+				e && Object(o.a)(Object(c.a)(e)(u)), Object(d.J)(u) ? await i(Object(s.h)(a.a.SNOOVATAR_MODAL, {
+					share: t,
+					source: n
+				})) : await i(Object(r.h)())
+			}
 		},
 		"./src/reddit/actions/subredditAutocomplete/constants.ts": function(e, t, n) {
 			"use strict";
@@ -29628,47 +29646,6 @@
 				}
 			}
 		},
-		"./src/reddit/routes/avatar/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var o = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				r = n("./src/lib/constants/index.ts"),
-				s = n("./src/reddit/actions/pages/avatar.ts");
-			const i = "/avatar",
-				a = [i, `${i}/:username`, `${i}/:username/:avatarId`],
-				c = {
-					action: s.a,
-					chunk: r.q.AVATAR,
-					component: Object(o.a)({
-						resolved: {},
-						chunkName: () => "Avatar",
-						isReady(e) {
-							const t = this.resolve(e);
-							return !1 !== this.resolved[t] && !!n.m[t]
-						},
-						importAsync: () => n.e("Avatar").then(n.bind(null, "./src/reddit/pages/Avatar/index.tsx")),
-						requireAsync(e) {
-							const t = this.resolve(e);
-							return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
-						},
-						requireSync(e) {
-							const t = this.resolve(e);
-							return n(t)
-						},
-						resolve() {
-							return "./src/reddit/pages/Avatar/index.tsx"
-						}
-					}),
-					exact: !0,
-					meta: {
-						name: r.Jb.AVATAR
-					},
-					path: a
-				};
-			t.b = c
-		},
 		"./src/reddit/selectors/authorFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -30514,4 +30491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.049a8362db89e89675e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.592bacfa7dc9dffcd6a8.js.map
