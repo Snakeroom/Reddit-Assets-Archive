@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2183400c97e58ca4d45e.js
-// Retrieved at 8/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.badcb1bacce75d6b66c8.js
+// Retrieved at 8/3/2021, 1:50:09 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
+		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
 		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -801,7 +801,7 @@
 					"chat-components-FormBuilder": "19e343ae653f6cf5c44c",
 					"ChatMessageInput~ChatPost": "768159e738fae8042723",
 					ChatPost: "05163a8c5666e64a3a48",
-					CommentsPageNativeAd: "47e9b2a379260795ed9c",
+					CommentsPageNativeAd: "19732084e543e8eee702",
 					EconomicsSubredditPremiumSidebarCards: "a44fdfe118e2d2974673",
 					HarbergerTaxBannerPurchaseCTA: "a8576f0c16cb09aecc82",
 					ReredditLink: "3e28d2c18e37eb5d3c53",
@@ -867,12 +867,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var n = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			a[e] = 0
 		})));
@@ -1288,7 +1288,7 @@
 						"translations/es_MX-json": "db3248bbef2b7626002f",
 						"translations/fr_FR-json": "9ecc85f3cd1b2ea78ca5",
 						"translations/it_IT-json": "b5392a61167183fff388",
-						"translations/pseudo_ext-json": "07ec9e5f44d0f266a0cb",
+						"translations/pseudo_ext-json": "a46fec17ad63b7f5fe46",
 						"translations/pseudo_long-json": "7ecb00876ab239c24307",
 						"translations/pseudo_short-json": "89cea621643580e7605a",
 						"translations/pt_BR-json": "c267a1d977872c3ba7eb",
@@ -1418,7 +1418,7 @@
 						"chat-components-FormBuilder": "3ef82adafcbf0360edb8",
 						"ChatMessageInput~ChatPost": "7b048050d21e7880c887",
 						ChatPost: "4a4c4ed5ba6c186354d6",
-						CommentsPageNativeAd: "80c206d424775f4bb8ba",
+						CommentsPageNativeAd: "ea2ee68c962768fe9c9b",
 						EconomicsSubredditPremiumSidebarCards: "616e77f6f813213574cc",
 						HarbergerTaxBannerPurchaseCTA: "763d02083ea02e0c85e3",
 						ReredditLink: "0809c4e06cc108fe7650",
@@ -1540,4 +1540,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2183400c97e58ca4d45e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.badcb1bacce75d6b66c8.js.map
