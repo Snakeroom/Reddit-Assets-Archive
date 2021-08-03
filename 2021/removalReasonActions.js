@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.7bd9b7d8b1e3b273f691.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.21a79bab70c614c23c9a.js
+// Retrieved at 8/3/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -2146,7 +2146,7 @@
 						commentComposer: {
 							editorMode: t
 						},
-						userFlair: Object(r.d)(e)
+						userFlair: Object(r.e)(e)
 					})
 				},
 				l = (e, t, n, s) => {
@@ -2197,7 +2197,7 @@
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "e", (function() {
 				return a
 			})), n.d(t, "c", (function() {
 				return m
@@ -2205,8 +2205,10 @@
 				return u
 			})), n.d(t, "a", (function() {
 				return l
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return b
+			})), n.d(t, "d", (function() {
+				return p
 			}));
 			var s = n("./src/reddit/helpers/flair.ts"),
 				r = n("./src/reddit/selectors/comments.ts"),
@@ -2302,7 +2304,13 @@
 							achievementFlairTitle: null == a ? void 0 : a.name
 						}
 					}
-				}
+				},
+				p = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "view_your_achievements",
+					...c.defaults(e)
+				})
 		},
 		"./src/reddit/models/RemovalReason/index.ts": function(e, t, n) {
 			"use strict";
@@ -3249,4 +3257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7bd9b7d8b1e3b273f691.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.21a79bab70c614c23c9a.js.map

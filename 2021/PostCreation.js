@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.fa19112bf1b4202ec571.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.560b3af4766cac91c91b.js
+// Retrieved at 8/3/2021, 10:20:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -20694,7 +20694,7 @@
 						commentComposer: {
 							editorMode: t
 						},
-						userFlair: Object(r.d)(e)
+						userFlair: Object(r.e)(e)
 					})
 				},
 				p = (e, t, n, o) => {
@@ -22209,7 +22209,7 @@
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "e", (function() {
 				return d
 			})), n.d(t, "c", (function() {
 				return l
@@ -22217,8 +22217,10 @@
 				return u
 			})), n.d(t, "a", (function() {
 				return p
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return m
+			})), n.d(t, "d", (function() {
+				return h
 			}));
 			var o = n("./src/reddit/helpers/flair.ts"),
 				r = n("./src/reddit/selectors/comments.ts"),
@@ -22314,7 +22316,13 @@
 							achievementFlairTitle: null == d ? void 0 : d.name
 						}
 					}
-				}
+				},
+				h = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "view_your_achievements",
+					...i.defaults(e)
+				})
 		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, n) {
 			"use strict";
@@ -30505,4 +30513,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fa19112bf1b4202ec571.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.560b3af4766cac91c91b.js.map
