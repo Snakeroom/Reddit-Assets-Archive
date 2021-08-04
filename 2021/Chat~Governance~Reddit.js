@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b97cb0d9c3d234724499.js
-// Retrieved at 8/4/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9fc30b6ec62d1f68f831.js
+// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2526,11 +2526,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("141567"),
+				buildNumber: r("141581"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628104238"),
+				})("1628105532"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4983,14 +4983,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c2837a199052ccc9255689b7bee901f96bd734ef3-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c12328ce18ab949378ef34ca913d7115dc940d676-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "2837a199052ccc9255689b7bee901f96bd734ef3-production",
+						release: "12328ce18ab949378ef34ca913d7115dc940d676-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5484,7 +5484,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "2837a199052ccc9255689b7bee901f96bd734ef3-production",
+						releaseClient: "12328ce18ab949378ef34ca913d7115dc940d676-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11584,19 +11584,19 @@
 					apiContext: o,
 					gqlContext: d
 				}) => {
-					var a;
+					var a, l;
 					if (e === r.C) return;
-					const l = n();
-					if (!!(Object(I.j)(l, {
+					const c = n();
+					if (!!(Object(I.j)(c, {
 							profileName: e
-						}) && Object(I.h)(l, {
+						}) && Object(I.h)(c, {
 							profileName: e
-						}) && Object(R.mb)(l, {
+						}) && Object(R.mb)(c, {
 							userName: e
-						}) && (null === (a = l.user.account) || void 0 === a ? void 0 : a.karma.total)) && !t) return;
-					const [c, _] = await Promise.all([Object(u.c)(o(), e), Object(u.d)(d(), e)]);
-					if (c.ok) {
-						c.body && c.body.data && c.body.data.is_suspended && i(Object(s.u)({
+						}) && (null === (l = null === (a = c.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === l ? void 0 : l.total)) && !t) return;
+					const [_, p] = await Promise.all([Object(u.c)(o(), e), Object(u.d)(d(), e)]);
+					if (_.ok) {
+						_.body && _.body.data && _.body.data.is_suspended && i(Object(s.u)({
 							profileName: e
 						}));
 						const t = function(e) {
@@ -11616,11 +11616,11 @@
 									profile: Object(S.a)(t.subreddit, t.name)
 								} : null
 							}
-						}(c.body);
-						if (_.ok && _.body) {
+						}(_.body);
+						if (p.ok && p.body) {
 							const {
 								data: e
-							} = _.body, i = {
+							} = p.body, i = {
 								karma: {
 									...u.a
 								}
@@ -11635,9 +11635,9 @@
 							Object.assign(t.about, i), Object.assign(t.user, i)
 						}
 						i(C(t))
-					} else c.error && c.error.type === r.m && i(Object(s.s)({
+					} else _.error && _.error.type === r.m && i(Object(s.s)({
 						profileName: e
-					})), i(x(c.body))
+					})), i(x(_.body))
 				}, G = e => async (t, i, {
 					apiContext: n
 				}) => {
@@ -17468,7 +17468,10 @@
 				a = i("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				l = i("./src/redditGQL/operations/ProfileModHubPage.json"),
 				u = i("./src/redditGQL/operations/RedditorKarma.json");
-			const c = e => !!e.karma,
+			const c = e => {
+					var t;
+					return !!(null === (t = e) || void 0 === t ? void 0 : t.karma)
+				},
 				_ = (e, t) => Object(r.a)(Object(o.a)(e, [d.a]), {
 					endpoint: Object(a.a)(`${e.apiUrl}/user/${t}/about.json`),
 					method: n.hb.GET,
@@ -35508,151 +35511,151 @@
 		"./src/reddit/selectors/user.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "n", (function() {
-				return g
-			})), i.d(t, "r", (function() {
 				return w
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "r", (function() {
 				return y
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "o", (function() {
 				return v
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return E
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "t", (function() {
 				return T
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "x", (function() {
 				return S
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "v", (function() {
 				return O
-			})), i.d(t, "J", (function() {
+			})), i.d(t, "T", (function() {
 				return I
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "J", (function() {
 				return F
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "Q", (function() {
 				return R
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "z", (function() {
 				return j
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "m", (function() {
 				return C
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "j", (function() {
 				return x
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "h", (function() {
 				return N
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "d", (function() {
 				return A
-			})), i.d(t, "ub", (function() {
+			})), i.d(t, "w", (function() {
 				return P
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "ub", (function() {
 				return D
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "a", (function() {
 				return B
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "V", (function() {
 				return k
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "W", (function() {
 				return L
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "b", (function() {
 				return M
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "B", (function() {
 				return U
-			})), i.d(t, "cb", (function() {
+			})), i.d(t, "C", (function() {
 				return G
-			})), i.d(t, "bb", (function() {
+			})), i.d(t, "cb", (function() {
 				return q
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "bb", (function() {
 				return V
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "l", (function() {
 				return H
-			})), i.d(t, "hb", (function() {
+			})), i.d(t, "S", (function() {
 				return W
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "hb", (function() {
 				return $
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "f", (function() {
 				return z
-			})), i.d(t, "fb", (function() {
+			})), i.d(t, "P", (function() {
 				return K
-			})), i.d(t, "jb", (function() {
+			})), i.d(t, "fb", (function() {
 				return J
-			})), i.d(t, "ib", (function() {
+			})), i.d(t, "jb", (function() {
 				return Y
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "ib", (function() {
 				return Q
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "G", (function() {
 				return X
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "I", (function() {
 				return Z
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "K", (function() {
 				return ee
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "A", (function() {
 				return te
-			})), i.d(t, "mb", (function() {
+			})), i.d(t, "D", (function() {
 				return ie
-			})), i.d(t, "lb", (function() {
+			})), i.d(t, "mb", (function() {
 				return ne
-			})), i.d(t, "db", (function() {
+			})), i.d(t, "lb", (function() {
 				return re
-			})), i.d(t, "eb", (function() {
+			})), i.d(t, "db", (function() {
 				return se
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "eb", (function() {
 				return oe
-			})), i.d(t, "pb", (function() {
+			})), i.d(t, "e", (function() {
 				return de
-			})), i.d(t, "gb", (function() {
+			})), i.d(t, "pb", (function() {
 				return ae
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "gb", (function() {
 				return le
-			})), i.d(t, "kb", (function() {
+			})), i.d(t, "u", (function() {
 				return ue
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "kb", (function() {
 				return ce
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "E", (function() {
 				return _e
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "N", (function() {
 				return pe
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "k", (function() {
 				return me
-			})), i.d(t, "nb", (function() {
+			})), i.d(t, "U", (function() {
 				return he
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "nb", (function() {
 				return fe
-			})), i.d(t, "tb", (function() {
+			})), i.d(t, "g", (function() {
 				return be
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "tb", (function() {
 				return ge
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "M", (function() {
 				return we
-			})), i.d(t, "rb", (function() {
+			})), i.d(t, "i", (function() {
 				return ye
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "rb", (function() {
 				return ve
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "O", (function() {
 				return Ee
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "H", (function() {
 				return Te
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "F", (function() {
 				return Se
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "c", (function() {
 				return Oe
-			})), i.d(t, "qb", (function() {
+			})), i.d(t, "y", (function() {
 				return Ie
-			})), i.d(t, "ob", (function() {
+			})), i.d(t, "qb", (function() {
 				return Fe
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "ob", (function() {
 				return Re
+			})), i.d(t, "L", (function() {
+				return je
 			})), i.d(t, "X", (function() {
-				return Ce
-			})), i.d(t, "Y", (function() {
 				return xe
+			})), i.d(t, "Y", (function() {
+				return Ne
 			})), i.d(t, "Z", (function() {
-				return Ae
-			})), i.d(t, "ab", (function() {
 				return Pe
+			})), i.d(t, "ab", (function() {
+				return De
 			})), i.d(t, "q", (function() {
-				return Be
-			})), i.d(t, "p", (function() {
 				return ke
-			})), i.d(t, "sb", (function() {
+			})), i.d(t, "p", (function() {
 				return Le
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "sb", (function() {
 				return Me
+			})), i.d(t, "R", (function() {
+				return Ue
 			}));
 			var n = i("./node_modules/lodash/find.js"),
 				r = i.n(n),
@@ -35663,48 +35666,49 @@
 				l = i("./node_modules/reselect/es/index.js"),
 				u = i("./src/lib/constants/index.ts"),
 				c = i("./src/lib/objectSelector/index.ts"),
-				_ = i("./src/reddit/models/User/index.ts"),
-				p = i("./src/reddit/selectors/platform.ts"),
-				m = i("./src/reddit/selectors/profile.ts"),
-				h = i("./src/reddit/selectors/runTimeEnvVars.ts");
-			const f = [],
-				b = {},
-				g = e => e.user.account ? e.user.account.goldExpiration : null,
-				w = e => !!e.user.account && e.user.account.isGold,
-				y = e => !!e.user.account && e.user.account.hasAndroidSubscription,
-				v = e => !!e.user.account && e.user.account.hasGoldSubscription,
-				E = e => !!e.user.account && e.user.account.hasIOSSubscription,
-				T = e => !!e.user.account && e.user.account.hasStripeSubscription,
-				S = e => !!e.user.account && e.user.account.hasPaypalSubscription,
-				O = e => e.user.language,
-				I = e => !!e.user.account,
-				F = e => !!e.user.session && !e.user.session.unsafeLoggedOut,
-				R = e => !!e.user.account && e.user.account.hasVerifiedEmail,
-				j = e => e.user.account ? e.user.account.email : null,
-				C = e => e.user.account,
-				x = Object(l.a)(e => e.user.account, e => e && e.id),
-				N = e => {
-					const t = C(e);
+				_ = i("./src/reddit/endpoints/profile/info.ts"),
+				p = i("./src/reddit/models/User/index.ts"),
+				m = i("./src/reddit/selectors/platform.ts"),
+				h = i("./src/reddit/selectors/profile.ts"),
+				f = i("./src/reddit/selectors/runTimeEnvVars.ts");
+			const b = [],
+				g = {},
+				w = e => e.user.account ? e.user.account.goldExpiration : null,
+				y = e => !!e.user.account && e.user.account.isGold,
+				v = e => !!e.user.account && e.user.account.hasAndroidSubscription,
+				E = e => !!e.user.account && e.user.account.hasGoldSubscription,
+				T = e => !!e.user.account && e.user.account.hasIOSSubscription,
+				S = e => !!e.user.account && e.user.account.hasStripeSubscription,
+				O = e => !!e.user.account && e.user.account.hasPaypalSubscription,
+				I = e => e.user.language,
+				F = e => !!e.user.account,
+				R = e => !!e.user.session && !e.user.session.unsafeLoggedOut,
+				j = e => !!e.user.account && e.user.account.hasVerifiedEmail,
+				C = e => e.user.account ? e.user.account.email : null,
+				x = e => e.user.account,
+				N = Object(l.a)(e => e.user.account, e => e && e.id),
+				A = e => {
+					const t = x(e);
 					return t && t.coins || 0
 				},
-				A = e => {
-					const t = C(e);
+				P = e => {
+					const t = x(e);
 					return !!t && t.seenRedesignModal
 				},
-				P = e => e.user.prefs,
-				D = e => e.user.prefs.allowClickTracking || !I(e),
-				B = e => e.user.prefs.nightmode,
-				k = e => !!e.user.prefs.nightmodeTempUpdated,
-				L = e => e.user.prefs && e.user.prefs.autoplayVideo,
-				M = e => e.user.prefs.hideNSFW,
-				U = e => P(e).ignoreSuggestedSort,
-				G = e => P(e).over18,
-				q = e => P(e).openPostInNewTab,
-				V = e => P(e).emailDigests,
-				H = e => e.user.prefs.labelNSFW,
-				W = e => !!P(e).showPresence,
-				$ = e => P(e).countryCode,
-				z = e => {
+				D = e => e.user.prefs,
+				B = e => e.user.prefs.allowClickTracking || !F(e),
+				k = e => e.user.prefs.nightmode,
+				L = e => !!e.user.prefs.nightmodeTempUpdated,
+				M = e => e.user.prefs && e.user.prefs.autoplayVideo,
+				U = e => e.user.prefs.hideNSFW,
+				G = e => D(e).ignoreSuggestedSort,
+				q = e => D(e).over18,
+				V = e => D(e).openPostInNewTab,
+				H = e => D(e).emailDigests,
+				W = e => e.user.prefs.labelNSFW,
+				$ = e => !!D(e).showPresence,
+				z = e => D(e).countryCode,
+				K = e => {
 					const t = e.user.prefs ? e.user.prefs.topContentTimesDismissed : 0;
 					if (t < 1) return !1;
 					if (t < 2) {
@@ -35716,146 +35720,149 @@
 					}
 					return !0
 				},
-				K = e => e.user.prefs.rememberCommunityLayout,
-				J = e => !P(e).stylesEnabled,
-				Y = (e, {
+				J = e => e.user.prefs.rememberCommunityLayout,
+				Y = e => !D(e).stylesEnabled,
+				Q = (e, {
 					subredditId: t
 				}) => {
-					const i = P(e).subreddit[t];
+					const i = D(e).subreddit[t];
 					return !!i && !i.stylesEnabled
 				},
-				Q = e => {
+				X = e => {
 					var t, i;
 					return !!(null === (i = null === (t = null == e ? void 0 : e.user) || void 0 === t ? void 0 : t.temporaryGQL) || void 0 === i ? void 0 : i.isEmployee)
 				},
-				X = e => !(!e.user.temporaryGQL || !e.user.temporaryGQL.isLoggedIn),
-				Z = e => {
-					const t = C(e);
+				Z = e => !(!e.user.temporaryGQL || !e.user.temporaryGQL.isLoggedIn),
+				ee = e => {
+					const t = x(e);
 					return !!t && t.isMod
 				},
-				ee = e => {
-					const t = C(e);
+				te = e => {
+					const t = x(e);
 					return !!t && !t.isEmployee && t.isGold
 				},
-				te = e => {
-					const t = C(e);
+				ie = e => {
+					const t = x(e);
 					return !!t && t.inRedesignBeta
 				},
-				ie = (e, {
+				ne = (e, {
 					userName: t
 				}) => e.users.models[t.toLowerCase()],
-				ne = (e, {
-					userId: t
-				}) => r()(a()(e.users.models), e => e.id === t),
 				re = (e, {
 					userId: t
+				}) => r()(a()(e.users.models), e => e.id === t),
+				se = (e, {
+					userId: t
 				}) => {
-					const i = ne(e, {
+					const i = re(e, {
 						userId: t
 					});
 					return i ? i.profileId : void 0
 				},
-				se = (e, {
+				oe = (e, {
 					userName: t
 				}) => {
-					const i = ie(e, {
+					const i = ne(e, {
 						userName: t
 					});
 					return i ? i.profileId : void 0
 				},
-				oe = (e, t) => {
+				de = (e, t) => {
 					const i = t ? t.toLowerCase() : "";
 					return t && e.contentGate[i] ? e.contentGate[i] : null
 				},
-				de = (e, t) => {
-					const i = C(e),
+				ae = (e, t) => {
+					const i = x(e),
 						n = t.post || t.postId && e.posts.models[t.postId];
-					return !(!i || !n) && Object(_.e)(i) === n.author
+					return !(!i || !n) && Object(p.e)(i) === n.author
 				},
-				ae = e => {
-					const t = C(e);
+				le = e => {
+					const t = x(e);
 					if (t) {
-						if (t.canCreateSubreddit) return !0;
-						return (Object(_.d)(t) || (new Date).getTime()) < (new Date).getTime() - u.nb && (t.karma.fromPosts >= 5 || t.karma.fromComments >= 10)
+						const e = {
+							..._.a,
+							...t.karma
+						};
+						return !!t.canCreateSubreddit || (Object(p.d)(t) || (new Date).getTime()) < (new Date).getTime() - u.nb && (e.fromPosts >= 5 || e.fromComments >= 10)
 					}
 					return !1
 				},
-				le = e => e.user.sessionRefreshFailed,
-				ue = Object(c.a)(e => {
+				ue = e => e.user.sessionRefreshFailed,
+				ce = Object(c.a)(e => {
 					if (!e.user || !e.user.account) return;
 					const t = o()(e.user.account, ["hasUnreadOldModmail", "hasUnreadMail", "hasUnreadModmail", "hasUnreadMessages", "hasUnreadNotifs", "inboxCount"]);
-					return e.platform.currentPage && e.platform.currentPage.routeMatch && Object(p.p)(e) === u.Jb.INBOX_PAGES && e.user.prefs.markMessagesRead && (t.inboxCount = 0), t
+					return e.platform.currentPage && e.platform.currentPage.routeMatch && Object(m.p)(e) === u.Jb.INBOX_PAGES && e.user.prefs.markMessagesRead && (t.inboxCount = 0), t
 				}),
-				ce = e => {
-					const t = ue(e, b);
+				_e = e => {
+					const t = ce(e, g);
 					return t && t.inboxCount
 				},
-				_e = (e, t) => {
-					const i = C(e);
+				pe = (e, t) => {
+					const i = x(e);
 					if (i) {
-						return Object(_.e)(i).toLowerCase() === t.toLowerCase()
+						return Object(p.e)(i).toLowerCase() === t.toLowerCase()
 					}
 					return !1
 				},
-				pe = e => e.user.drafts && e.user.drafts.count || 0,
-				me = e => e.user.drafts && e.user.drafts.limit || 20,
-				he = (e, {
+				me = e => e.user.drafts && e.user.drafts.count || 0,
+				he = e => e.user.drafts && e.user.drafts.limit || 20,
+				fe = (e, {
 					userName: t
 				}) => {
-					const i = ie(e, {
+					const i = ne(e, {
 						userName: t
 					});
 					return !!i && !!i.hasUserProfile
 				},
-				fe = e => {
-					const t = C(e);
+				be = e => {
+					const t = x(e);
 					return !!t && t.hasUserProfile
 				},
-				be = Object(l.a)(e => e.user.account, e => e.users.models, (e, t) => t, (e, t, i) => {
+				ge = Object(l.a)(e => e.user.account, e => e.users.models, (e, t) => t, (e, t, i) => {
 					const n = i.toLowerCase();
-					return e && Object(_.e)(e) === n ? e : t[n]
+					return e && Object(p.e)(e) === n ? e : t[n]
 				}),
-				ge = e => {
-					return Object(h.a)(e) - parseInt(e.user.loid.loidCreated) < u.z
-				},
 				we = e => {
-					const t = C(e);
-					if (!t) return f;
-					const i = Object(_.e)(t);
-					return Object(m.n)(e, {
+					return Object(f.a)(e) - parseInt(e.user.loid.loidCreated) < u.z
+				},
+				ye = e => {
+					const t = x(e);
+					if (!t) return b;
+					const i = Object(p.e)(t);
+					return Object(h.n)(e, {
 						profileName: i
 					})
 				},
-				ye = e => e.user.loid.loid,
-				ve = e => {
-					const t = C(e);
+				ve = e => e.user.loid.loid,
+				Ee = e => {
+					const t = x(e);
 					return !!t && (t.isSuspended && !t.isFPR)
 				},
-				Ee = e => {
-					const t = C(e);
+				Te = e => {
+					const t = x(e);
 					return !!t && t.isFPR
 				},
-				Te = (e, t) => e.user.accountSettings[`${t}`].api.pending,
-				Se = e => e.user.accountSettings.changeEmail.api.error,
-				Oe = e => e.user && e.user.account && e.user.account.isPasswordSet,
-				Ie = e => e.user && e.user.account && e.user.account.linkedIdentities,
-				Fe = e => e.user && e.user.account && e.user.account.id,
-				Re = e => !!e.user.account && e.user.account.isNameEditable,
-				je = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.emailSettingsLayout,
-				Ce = Object(l.a)(je, e => e.rows),
-				xe = Object(l.a)(je, e => e.sections),
-				Ne = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.pushSettingsLayout,
-				Ae = Object(l.a)(Ne, e => e.rows),
-				Pe = Object(l.a)(Ne, e => e.sections),
-				De = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.api && e.user.notificationPrefs.api.getPreferences,
-				Be = e => {
-					return !!De(e).error
-				},
+				Se = (e, t) => e.user.accountSettings[`${t}`].api.pending,
+				Oe = e => e.user.accountSettings.changeEmail.api.error,
+				Ie = e => e.user && e.user.account && e.user.account.isPasswordSet,
+				Fe = e => e.user && e.user.account && e.user.account.linkedIdentities,
+				Re = e => e.user && e.user.account && e.user.account.id,
+				je = e => !!e.user.account && e.user.account.isNameEditable,
+				Ce = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.emailSettingsLayout,
+				xe = Object(l.a)(Ce, e => e.rows),
+				Ne = Object(l.a)(Ce, e => e.sections),
+				Ae = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.pushSettingsLayout,
+				Pe = Object(l.a)(Ae, e => e.rows),
+				De = Object(l.a)(Ae, e => e.sections),
+				Be = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.api && e.user.notificationPrefs.api.getPreferences,
 				ke = e => {
-					return !!De(e).error
+					return !!Be(e).error
 				},
-				Le = e => e.user.loid,
-				Me = (e, t) => !!e.users.presence[t]
+				Le = e => {
+					return !!Be(e).error
+				},
+				Me = e => e.user.loid,
+				Ue = (e, t) => !!e.users.presence[t]
 		},
 		"./src/reddit/selectors/video.ts": function(e, t, i) {
 			"use strict";
@@ -39986,4 +39993,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b97cb0d9c3d234724499.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9fc30b6ec62d1f68f831.js.map

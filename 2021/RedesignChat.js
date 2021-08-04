@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.7f92a9417e5c264506f2.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.b5eb49f973cb077c1ba8.js
+// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -49,8 +49,8 @@
 				E = n("./src/chat/actions/session.ts"),
 				_ = n("./src/chat/actions/user.ts"),
 				y = n("./node_modules/react-redux/es/index.js"),
-				S = n("./src/lib/CSSVariableProvider/index.tsx"),
-				v = n("./src/lib/lessComponent.tsx"),
+				v = n("./src/lib/CSSVariableProvider/index.tsx"),
+				S = n("./src/lib/lessComponent.tsx"),
 				N = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
 				T = n("./src/chat/components/Root/index.tsx"),
 				w = n("./src/chat/constants/container.ts"),
@@ -65,24 +65,24 @@
 			function B(e) {
 				return void 0 !== e ? e : -1
 			}
-			const U = v.a.wrapped(e => s.a.createElement("div", {
+			const U = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", A.a),
-				k = v.a.wrapped(e => s.a.createElement("div", {
+				k = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${B(D.width)}px`,
 						height: `${B(D.height)}px`
 					}
 				}, e.children), "EmbedPortalContainer", A.a),
-				I = v.a.wrapped(e => s.a.createElement("div", {
+				I = S.a.wrapped(e => s.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${B(M.width)}px`,
 						height: `${B(M.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", A.a),
-				q = v.a.wrapped(N.a, "MinimizedRedesignPortalContainer", A.a),
+				q = S.a.wrapped(N.a, "MinimizedRedesignPortalContainer", A.a),
 				L = U,
 				z = Object(R.a)({
 					container: e => e && e.container && e.container.size
@@ -126,34 +126,35 @@
 					...e.chat.promos
 				}), t),
 				de = (e, t) => {
+					var n, c;
 					const {
-						account: n,
-						language: c,
-						loid: s,
-						prefs: r,
-						reddaid: a,
-						session: i,
-						sessionTracker: o
+						account: s,
+						language: r,
+						loid: a,
+						prefs: i,
+						reddaid: o,
+						session: d,
+						sessionTracker: u
 					} = e.user;
 					return t.user = {
 						...t.user,
-						account: n ? {
-							commentKarma: n.karma.fromComments,
-							created: n.created,
-							inChat: n.inChat,
-							id: n.id,
-							isNSFW: n.isNSFW,
-							linkKarma: n.karma.fromPosts,
-							name: n.displayText || "",
+						account: s ? {
+							commentKarma: (null === (n = s.karma) || void 0 === n ? void 0 : n.fromComments) || 0,
+							created: s.created,
+							inChat: s.inChat,
+							id: s.id,
+							isNSFW: s.isNSFW,
+							linkKarma: (null === (c = s.karma) || void 0 === c ? void 0 : c.fromPosts) || 0,
+							name: s.displayText || "",
 							prefNightmode: e.user.prefs.nightmode,
-							profileImg: n.accountIcon
+							profileImg: s.accountIcon
 						} : null,
-						language: c,
-						loid: s,
-						prefs: r,
-						reddaid: a,
-						sessionTracker: o,
-						session: i && i.unsafeLoggedOut ? null : i
+						language: r,
+						loid: a,
+						prefs: i,
+						reddaid: o,
+						sessionTracker: u,
+						session: d && d.unsafeLoggedOut ? null : d
 					}, t
 				},
 				ue = e => (e.meta = {
@@ -226,7 +227,7 @@
 						}
 					}, function(e, t) {
 						const n = Object(y.b)(z)(G);
-						return s.a.createElement("div", null, Object(S.d)(s.a.createElement(n, null, Object(T.a)(e, t)), document.body))
+						return s.a.createElement("div", null, Object(v.d)(s.a.createElement(n, null, Object(T.a)(e, t)), document.body))
 					}(e, t)),
 					appName: l.l.Chat,
 					history: Object(r.d)({
@@ -825,4 +826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.7f92a9417e5c264506f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b5eb49f973cb077c1ba8.js.map

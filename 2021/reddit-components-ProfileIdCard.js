@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f8b0862843a3c13656a5.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cf18e7e5cb9cb5a49f74.js
+// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1119,7 +1119,10 @@
 					subscribers: o,
 					className: i,
 					highlightClassName: c
-				} = e, m = U(s, "karma"), u = U(s, "cakeday"), p = `${n.fbt._({"*":"{number} Post Karma",_1:"1 Post Karma"},[n.fbt._plural(t.fromPosts,"number",Object(d.b)(t.fromPosts,{displayFull:!0}))],{hk:"husfU"})}\n${n.fbt._({"*":"{number} Comment Karma",_1:"1 Comment Karma"},[n.fbt._plural(t.fromComments,"number",Object(d.b)(t.fromComments,{displayFull:!0}))],{hk:"26iPTL"})}\n${n.fbt._({"*":"{number} Awardee Karma",_1:"1 Awardee Karma"},[n.fbt._plural(t.fromAwardsReceived,"number",Object(d.b)(t.fromAwardsReceived,{displayFull:!0}))],{hk:"2Ww5MR"})}\n${n.fbt._({"*":"{number} Awarder Karma",_1:"1 Awarder Karma"},[n.fbt._plural(t.fromAwardsGiven,"number",Object(d.b)(t.fromAwardsGiven,{displayFull:!0}))],{hk:"2F1chz"})}`;
+				} = e, m = {
+					...u.a,
+					...t
+				}, p = U(s, "karma"), b = U(s, "cakeday"), x = `${n.fbt._({"*":"{number} Post Karma",_1:"1 Post Karma"},[n.fbt._plural(m.fromPosts,"number",Object(d.b)(m.fromPosts,{displayFull:!0}))],{hk:"husfU"})}\n${n.fbt._({"*":"{number} Comment Karma",_1:"1 Comment Karma"},[n.fbt._plural(m.fromComments,"number",Object(d.b)(m.fromComments,{displayFull:!0}))],{hk:"26iPTL"})}\n${n.fbt._({"*":"{number} Awardee Karma",_1:"1 Awardee Karma"},[n.fbt._plural(m.fromAwardsReceived,"number",Object(d.b)(m.fromAwardsReceived,{displayFull:!0}))],{hk:"2Ww5MR"})}\n${n.fbt._({"*":"{number} Awarder Karma",_1:"1 Awarder Karma"},[n.fbt._plural(m.fromAwardsGiven,"number",Object(d.b)(m.fromAwardsGiven,{displayFull:!0}))],{hk:"2F1chz"})}`;
 				return a.a.createElement(w, {
 					className: i
 				}, a.a.createElement(j, {
@@ -1130,14 +1133,14 @@
 						className: y.a.icon,
 						key: "karma"
 					}),
-					label: Object(d.b)(t.total, {
+					label: Object(d.b)(m.total, {
 						displayFull: !0
 					}),
 					title: n.fbt._("Karma", null, {
 						hk: "RtSgN"
 					}),
-					tooltipId: m,
-					tooltip: p
+					tooltipId: p,
+					tooltip: x
 				}), a.a.createElement(j, {
 					className: c,
 					icon: a.a.createElement(f.a, {
@@ -1153,7 +1156,7 @@
 					title: n.fbt._("Cake day", null, {
 						hk: "4x2LB5"
 					}),
-					tooltipId: u,
+					tooltipId: b,
 					tooltip: a.a.createElement(l.d, {
 						seconds: r
 					})
@@ -3013,4 +3016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f8b0862843a3c13656a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.cf18e7e5cb9cb5a49f74.js.map

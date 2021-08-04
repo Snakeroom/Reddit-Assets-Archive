@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.81c1cf23ea5030c05ef1.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.b7ac21cf4e48cbbdf335.js
+// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -44,19 +44,19 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return B
-			})), s.d(t, "updateMessage", (function() {
 				return Z
-			})), s.d(t, "gildGqlRequested", (function() {
+			})), s.d(t, "updateMessage", (function() {
 				return H
-			})), s.d(t, "triggerLoader", (function() {
+			})), s.d(t, "gildGqlRequested", (function() {
 				return J
+			})), s.d(t, "triggerLoader", (function() {
+				return V
 			})), s.d(t, "gildPending", (function() {
-				return $
+				return X
 			})), s.d(t, "gildFailed", (function() {
-				return ee
+				return te
 			})), s.d(t, "gildSuccessful", (function() {
-				return re
+				return ae
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
@@ -122,12 +122,13 @@
 				F = s("./src/reddit/helpers/isPost.ts"),
 				Y = s("./src/reddit/helpers/trackers/gild.ts"),
 				Q = s("./src/telemetry/index.ts"),
-				W = s("./src/reddit/actions/gold/awardKarma.ts"),
-				z = s("./src/reddit/actions/gold/constants.ts"),
-				U = s("./src/reddit/actions/gold/econPurchase.ts");
-			const B = Object(a.a)(z.r),
-				Z = Object(a.a)(z.v),
-				H = (e, t) => async (s, a, {
+				W = s("./src/reddit/endpoints/profile/info.ts"),
+				z = s("./src/reddit/actions/gold/awardKarma.ts"),
+				U = s("./src/reddit/actions/gold/constants.ts"),
+				B = s("./src/reddit/actions/gold/econPurchase.ts");
+			const Z = Object(a.a)(U.r),
+				H = Object(a.a)(U.v),
+				J = (e, t) => async (s, a, {
 					gqlContext: d
 				}) => {
 					const n = a().gild,
@@ -135,7 +136,7 @@
 							isOldReddit: o,
 							isLivestream: i
 						} = t;
-					s($());
+					s(X());
 					try {
 						const t = {
 								gildingTypeId: n.selectedAward.id,
@@ -165,7 +166,7 @@
 									awardings: d,
 									treatmentTags: o
 								} = a;
-							await s(re({
+							await s(ae({
 								awardId: n.selectedAward.id,
 								awardings: d,
 								awardKarmaReceived: r.awardKarmaReceived,
@@ -180,28 +181,28 @@
 								a = e || t || r.fbt._("An unknown error occurred", null, {
 									hk: "2oAbwZ"
 								});
-							await s(ee(a))
+							await s(te(a))
 						}
 					} catch (c) {
 						const e = c,
 							t = e && e.message || r.fbt._("An unknown error occurred", null, {
 								hk: "2oAbwZ"
 							});
-						await s(ee(t))
+						await s(te(t))
 					} finally {
 						Object(N.b)(N.a.GildingFlow)
 					}
-				}, J = Object(a.a)(z.u), V = Object(a.a)(z.q), $ = () => async (e, t) => {
-					e(V()), window.setTimeout(() => {
-						t().gild.api.pending && e(J())
+				}, V = Object(a.a)(U.u), $ = Object(a.a)(U.q), X = () => async (e, t) => {
+					e($()), window.setTimeout(() => {
+						t().gild.api.pending && e(V())
 					}, 2e3)
-				}, X = Object(a.a)(z.p), ee = e => async (t, s) => {
-					await t(X(e)), t(Object(l.f)({
+				}, ee = Object(a.a)(U.p), te = e => async (t, s) => {
+					await t(ee(e)), t(Object(l.f)({
 						kind: v.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, te = Object(a.a)(z.s), se = (e, t) => {
+				}, se = Object(a.a)(U.s), re = (e, t) => {
 					const {
 						id: s
 					} = t, r = Object(F.a)(s) ? Object(C.G)(e, {
@@ -213,13 +214,13 @@
 					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.I)(e, {
 						thingId: s
 					});
-					return te({
+					return se({
 						...t,
 						gilder: o,
 						gildee: i,
 						subredditId: c && c.id
 					})
-				}, re = e => async (t, s) => {
+				}, ae = e => async (t, s) => {
 					const a = s(),
 						{
 							awardId: u,
@@ -251,18 +252,22 @@
 							});
 						s && (e.subredditCoins = s - h.coinPrice)
 					}
-					if (t(se(a, e)), f) {
-						const e = f.karma.fromAwardsReceived + w,
-							s = Object(y.e)(f);
-						t(Object(W.a)({
-							userName: s,
+					if (t(re(a, e)), f) {
+						const e = {
+								...W.a,
+								...f.karma
+							},
+							s = e.fromAwardsReceived + w,
+							r = Object(y.e)(f);
+						t(Object(z.a)({
+							userName: r,
 							karma: {
-								...f.karma,
-								fromAwardsReceived: e
+								...e,
+								fromAwardsReceived: s
 							}
 						}))
 					}(a.posts.instances[m] || []).forEach(s => {
-						t(se(a, {
+						t(re(a, {
 							...e,
 							id: s
 						}))
@@ -318,7 +323,7 @@
 					});
 					if (q && Object(x.a)(a, {
 							subredditId: q.id
-						}) && t(Object(U.a)(q.id, q.name, {
+						}) && t(Object(B.a)(q.id, q.name, {
 							force: !0
 						})), 0 === L && q) {
 						t(Object(n.a)(q.id, m, void 0, !0));
@@ -488,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.81c1cf23ea5030c05ef1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.b7ac21cf4e48cbbdf335.js.map
