@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.e33720cf544b2f33a1ea.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.7a3c310ed8af20ed073e.js
+// Retrieved at 8/4/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4750,11 +4750,11 @@
 				o = n("./src/reddit/controls/Button/index.tsx"),
 				a = n("./src/reddit/controls/ToggleSwitch/index.m.less"),
 				c = n.n(a);
-			t.a = r.a.memo(e => {
-				const t = e.size || o.c.XS;
+			t.a = Object(s.memo)(Object(s.forwardRef)((e, t) => {
+				const n = e.size || o.c.XS;
 				return r.a.createElement("button", {
 					"aria-checked": e.on,
-					className: Object(i.a)(c.a.toggleSwitch, e.className, c.a[t], {
+					className: Object(i.a)(c.a.toggleSwitch, e.className, c.a[n], {
 						[c.a.mActive]: e.on && !e.disabled || e.forceOn && e.on,
 						[c.a.mDisabled]: e.disabled,
 						[c.a.redditStyle]: e.redditStyle
@@ -4766,11 +4766,12 @@
 					role: "switch",
 					tabIndex: e.tabIndex,
 					type: "button",
-					onClick: () => !e.disabled && e.onToggle && e.onToggle()
+					onClick: () => !e.disabled && e.onToggle && e.onToggle(),
+					ref: t
 				}, r.a.createElement("div", {
 					className: c.a.toggleDisplay
 				}))
-			})
+			}))
 		},
 		"./src/reddit/helpers/awards/isEligibleForCommunityAwards.ts": function(e, t, n) {
 			"use strict";
@@ -6511,4 +6512,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e33720cf544b2f33a1ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.7a3c310ed8af20ed073e.js.map
