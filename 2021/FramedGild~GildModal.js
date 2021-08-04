@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.aeb5b40638f8bdd0f281.js
-// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0d56006b4ff16bfb6118.js
+// Retrieved at 8/4/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -740,14 +740,14 @@
 				}, N = (e, t, s) => async (n, a) => {
 					await n(Object(c.c)(e, s));
 					const o = a(),
-						i = Object(x.m)(o);
+						i = Object(x.n)(o);
 					if (0 !== i.length) n(E({
 						correlationId: s,
 						packageId: i[0].mobileId,
 						thingId: t
 					}));
 					else {
-						const e = Object(x.j)(o),
+						const e = Object(x.k)(o),
 							t = r.fbt._("Unable to create purchase request.", null, {
 								hk: "lgfDj"
 							});
@@ -2294,7 +2294,7 @@
 					iFramed: A.g,
 					isGildPending: A.e,
 					isEmployee: F.G,
-					isRecommendedCoinPackagePending: M.l,
+					isRecommendedCoinPackagePending: M.m,
 					message: A.c,
 					postOrComment: (e, {
 						thingId: t
@@ -2303,7 +2303,7 @@
 					}) : Object(k.a)(e, {
 						commentId: t
 					}),
-					purchaseCatalogPending: M.k,
+					purchaseCatalogPending: M.l,
 					showPurchaseModal: B.u,
 					selectedAward: L.b,
 					subreddit: G.I,
@@ -5289,4 +5289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.aeb5b40638f8bdd0f281.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0d56006b4ff16bfb6118.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.36c297e6ab65a46fc798.js
-// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.011f373f67175583dcec.js
+// Retrieved at 8/4/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -4230,7 +4230,7 @@
 				onOverlayClick: e,
 				withOverlay: !0
 			}));
-			n("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/async.tsx"), n("./src/reddit/components/Econ/ClaimFreeAwardModal/async.tsx"), n("./src/reddit/components/Econ/CoinPackageOfferModal/async.tsx"), n("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"), n("./src/reddit/components/Econ/PowerupsPurchaseModal/async.tsx"), n("./src/reddit/components/Econ/PowerupsSuccess/async.tsx"), n("./src/reddit/components/Econ/Prediction/CancelPredictionModal/async.tsx"), n("./src/reddit/components/Econ/Prediction/ChangePredictionOutcomeModal/async.tsx"), n("./src/reddit/components/Econ/Prediction/EndTimeModal/async.tsx"), n("./src/reddit/components/Econ/TopAwardersModal/async.tsx");
+			n("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/async.tsx"), n("./src/reddit/components/Econ/ClaimFreeAwardModal/async.tsx"), n("./src/reddit/components/Econ/CoinPackageOfferModal/async.tsx"), n("./src/reddit/components/Econ/PowerupsMarketingModal/async.tsx"), n("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"), n("./src/reddit/components/Econ/PowerupsPurchaseModal/async.tsx"), n("./src/reddit/components/Econ/PowerupsSuccess/async.tsx"), n("./src/reddit/components/Econ/Prediction/CancelPredictionModal/async.tsx"), n("./src/reddit/components/Econ/Prediction/ChangePredictionOutcomeModal/async.tsx"), n("./src/reddit/components/Econ/Prediction/EndTimeModal/async.tsx"), n("./src/reddit/components/Econ/TopAwardersModal/async.tsx");
 			const un = Object(Se.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
@@ -4391,7 +4391,7 @@
 				onOverlayClick: e,
 				withOverlay: !0
 			}));
-			n("./src/reddit/components/PostFlowUpsellModal/async.tsx"), n("./src/reddit/components/PowerupsSidebar/SupportersListModal/async.tsx");
+			n("./src/reddit/components/PostFlowUpsellModal/async.tsx"), n("./src/reddit/components/PowerupsSidebar/SupportersListModal/async.tsx"), n("./src/reddit/components/PremiumPurchaseModal/Loader.tsx");
 			const Nn = () => null,
 				Tn = Object(Se.a)({
 					ErrorComponent: Nn,
@@ -10272,6 +10272,53 @@
 				withOverlay: !0
 			}))
 		},
+		"./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx": function(e, t, n) {
+			"use strict";
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				o = n("./node_modules/react/index.js"),
+				r = n.n(o),
+				a = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
+				i = n("./src/reddit/constants/modals.ts"),
+				c = n("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
+				l = n.n(c);
+			const d = Object(s.a)({
+				resolved: {},
+				chunkName: () => "PowerupsPremiumUpsellModal",
+				isReady(e) {
+					const t = this.resolve(e);
+					return !1 !== this.resolved[t] && !!n.m[t]
+				},
+				importAsync: () => n.e("PowerupsPremiumUpsellModal").then(n.bind(null, "./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.tsx")),
+				requireAsync(e) {
+					const t = this.resolve(e);
+					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				},
+				requireSync(e) {
+					const t = this.resolve(e);
+					return n(t)
+				},
+				resolve() {
+					return "./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.tsx"
+				}
+			});
+			Object(a.b)(i.a.ECON_POWERUPS_PREMIUM_UPSELL, e => r.a.createElement(d, {
+				onOverlayClick: e,
+				withOverlay: !0,
+				className: l.a.modal
+			}))
+		},
+		"./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less": function(e, t, n) {
+			e.exports = {
+				modal: "_1KwpOybv6p44QN3WvUVBoQ",
+				container: "TPBQxpFGmnc7DlYlMReTd",
+				title: "_1MbiZSwLn6AEllOCsl_VOs",
+				offers: "_2FX0fKCTH5cYcCuDFqTRKJ",
+				footer: "_3rKjfC0Km1veZhKaJ4mY5g",
+				powerupsButton: "_3_1G35ZZ4DAoHr_isceyNy",
+				active: "_1WqungcMMzULht9q8ic_bp",
+				andSoMuchMore: "_3UYno3LNtdmyO0DB-YWP54"
+			}
+		},
 		"./src/reddit/components/Econ/PowerupsPurchaseModal/async.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -10796,7 +10843,7 @@
 							toggleTooltip: a
 						} = this.props;
 						if (!s) {
-							Object(v.d)(v.a.GoldPayment, !0), Object(b.a)(), Object(h.b)();
+							Object(v.d)(v.a.GoldPayment, !0), Object(b.a)(), Object(h.a)();
 							const e = n ? p.a.CoinSale : o ? p.a.StorefrontFreeAward : void 0;
 							r(Object(y.d)("get_coins_cta", e))
 						}
@@ -12266,20 +12313,24 @@
 		},
 		"./src/reddit/components/PremiumPurchaseModal/Loader.tsx": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
-				return a
+			n.d(t, "a", (function() {
+				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = n("./src/higherOrderComponents/makeAsync.tsx"),
-				o = n("./src/lib/loadWithRetries/index.ts"),
-				r = n("./src/reddit/helpers/loadThirdPartyScript.ts");
-			const a = () => Object(o.a)(() => Promise.all([Promise.all([n.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"), n.e("PremiumPurchaseModal")]).then(n.bind(null, "./src/reddit/components/PremiumPurchaseModal/index.tsx")), Object(r.d)().catch(() => {})])).then(e => e[0].default),
-				i = Object(s.a)({
-					getComponent: a,
+			var s = n("./node_modules/react/index.js"),
+				o = n.n(s),
+				r = n("./src/higherOrderComponents/makeAsync.tsx"),
+				a = n("./src/lib/loadWithRetries/index.ts"),
+				i = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
+				c = n("./src/reddit/constants/modals.ts"),
+				l = n("./src/reddit/helpers/loadThirdPartyScript.ts");
+			const d = () => Object(a.a)(() => Promise.all([Promise.all([n.e("CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal"), n.e("PremiumPurchaseModal")]).then(n.bind(null, "./src/reddit/components/PremiumPurchaseModal/index.tsx")), Object(l.d)().catch(() => {})])).then(e => e[0].default),
+				u = Object(r.a)({
+					getComponent: d,
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				});
-			t.a = i
+			Object(i.b)(c.a.ECON_PREMIUM_PURCHASE, () => o.a.createElement(u, null))
 		},
 		"./src/reddit/components/ResizeSensor/index.tsx": function(e, t, n) {
 			"use strict";
@@ -19303,4 +19354,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.36c297e6ab65a46fc798.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.011f373f67175583dcec.js.map

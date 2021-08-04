@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.b7ac21cf4e48cbbdf335.js
-// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.a71df09a4bc4b48577d7.js
+// Retrieved at 8/4/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.b7ac21cf4e48cbbdf335.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.a71df09a4bc4b48577d7.js.map
