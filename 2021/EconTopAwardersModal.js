@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ba310bb0fe39f09f8671.js
-// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a3eae853cec3fe7da887.js
+// Retrieved at 8/4/2021, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -1856,7 +1856,7 @@
 				const g = Object(s.useCallback)(() => x(Object(u.b)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return n.a.createElement(m.q, {
 					onClick: () => {
-						r ? I && _ === b.a.notVoted && (x(u.c), E(Object(i.db)(I))) : g(), E(Object(d.b)(w, v, {
+						r ? (x(u.c), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g(), E(Object(d.b)(w, v, {
 							postId: I
 						}))
 					},
@@ -2694,4 +2694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ba310bb0fe39f09f8671.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a3eae853cec3fe7da887.js.map

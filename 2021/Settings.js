@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.b990fda303e03619236d.js
-// Retrieved at 8/4/2021, 5:00:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.05e987219fac8e271f20.js
+// Retrieved at 8/4/2021, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -5190,7 +5190,7 @@
 				const E = Object(s.useCallback)(() => v(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return a.a.createElement(u.q, {
 					onClick: () => {
-						n ? y && x === b.a.notVoted && (v(m.c), _(Object(c.db)(y))) : E(), _(Object(l.b)(C, h, {
+						n ? (v(m.c), y && x === b.a.notVoted && _(Object(c.db)(y))) : E(), _(Object(l.b)(C, h, {
 							postId: y
 						}))
 					},
@@ -14331,4 +14331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b990fda303e03619236d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.05e987219fac8e271f20.js.map

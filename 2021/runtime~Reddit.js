@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.99f490115c1899d1e25f.js
-// Retrieved at 8/4/2021, 6:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.da743e07aa108e7cceef.js
+// Retrieved at 8/4/2021, 6:20:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
+		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
 		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -870,12 +870,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var n = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			a[e] = 0
 		})));
@@ -1195,7 +1195,7 @@
 						ChangeUsernameModals: "44ce8896ab6113df9379",
 						ChangeUsernameTooltip: "13fee089b7099e121484",
 						"ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8": "2697b0dcc15ef0b9d11d",
-						EconTopAwardersModal: "ba310bb0fe39f09f8671",
+						EconTopAwardersModal: "a3eae853cec3fe7da887",
 						ClaimFreeAwardModal: "4047538ce896935cff65",
 						"CoinPurchaseModal~EconPowerupsPurchaseModal~PennyPurchaseModal~PremiumPurchaseModal": "e4de10714648167c9e86",
 						CoinPurchaseModal: "070d5a4cf32c8c2f7134",
@@ -1206,7 +1206,7 @@
 						"CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~InFeedChaining~~b36acd08": "9a86f3333ae88da06ee4",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~InFeedChaining~ModerationPages~PostC~fd8b3c86": "2173238a38db9d070734",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48": "851d6143abbfdfeaab9b",
-						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "77687c1a36c99864ae68",
+						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255": "7fa52533699ecd1a4d50",
 						"CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc": "b3d7344a6ae2a081e79a",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate": "9a60a7a1f14761466179",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "7655ea53dd9b5464b07d",
@@ -1293,7 +1293,7 @@
 						"translations/es_MX-json": "e00d9a5f6ce64fa09b32",
 						"translations/fr_FR-json": "b27b959e57f5b77905f7",
 						"translations/it_IT-json": "42b1e05069a20c73de26",
-						"translations/pseudo_ext-json": "75422eb39c2d1c650303",
+						"translations/pseudo_ext-json": "31bbfed12b538a74d1c6",
 						"translations/pseudo_long-json": "b15b5823a3d451447be5",
 						"translations/pseudo_short-json": "2ebc2f58d1e279edc4e3",
 						"translations/pt_BR-json": "ccc3f3f91d322d7f6f50",
@@ -1319,7 +1319,7 @@
 						"vendors~PostCreation": "4d0d0c59573098378c57",
 						PostCreation: "88c9914c9e5c949b9040",
 						"vendors~ModStatsChart~Settings": "4756d25d069e14bb198b",
-						Settings: "b990fda303e03619236d",
+						Settings: "05e987219fac8e271f20",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
 						"ModerationPages~SubredditWiki": "7907b43e01a6c14d20c7",
 						ModerationPages: "01b1a2b0f148214f7786",
@@ -1341,9 +1341,9 @@
 						"vendors~RealtimeGQLSubscriptionAsync": "dde5d6c76d2de17601f0",
 						RealtimeGQLSubscriptionAsync: "70d01d12f4a0876073c6",
 						"vendors~SubredditWiki": "375d2635dafe1308f47b",
-						SubredditWiki: "ec23fb7b128e85778e93",
+						SubredditWiki: "1bcda00d9e055582f423",
 						"vendors~xml2js": "88f76e2e07b71eb98128",
-						AuthorHovercard: "240c67ce2f948d7b580d",
+						AuthorHovercard: "7dd1b9faedcdc0db269c",
 						AwardTooltip: "7e1acd8a78bfdf30812b",
 						CustomBadgeHovercardTooltip: "c8115f8fadbfa068f370",
 						GovernanceUserPublicPointsDisplay: "13f3aad4df9183338c84",
@@ -1360,12 +1360,12 @@
 						"index~reddit-components-Econ-Prediction": "4815d9d3f0162094d332",
 						"reddit-components-Econ-Prediction": "9e7c85133d32efe73079",
 						"reddit-components-Poll": "cd8163bb91ad71d6cb21",
-						"reddit-components-ProfileIdCard": "cf18e7e5cb9cb5a49f74",
+						"reddit-components-ProfileIdCard": "3e5832cd07928c3a96af",
 						"reddit-components-ViewReportsDropdown-index": "b7577f21d898ef440152",
 						removalReasonActions: "b7a5b64324ebf7d09377",
 						schedulePickerModal: "b4b18637b9d774150dde",
 						LiveVideoPlayer: "8ccaaab114df98bf4fc9",
-						"reddit-components-MediumPost": "774ad8ead164babe0ff7",
+						"reddit-components-MediumPost": "7bdde1e445b3ef68161d",
 						"reddit-components-CompactPost": "e5f21444972f46ddf187",
 						"reddit-components-LargePost": "2c781e95aff7ef83d2cf",
 						"vendors~dashjs": "536210f860c89db757de",
@@ -1545,4 +1545,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.99f490115c1899d1e25f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.da743e07aa108e7cceef.js.map

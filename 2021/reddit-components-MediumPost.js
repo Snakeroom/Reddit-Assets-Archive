@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.774ad8ead164babe0ff7.js
-// Retrieved at 8/4/2021, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7bdde1e445b3ef68161d.js
+// Retrieved at 8/4/2021, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1626,7 +1626,7 @@
 				const j = Object(n.useCallback)(() => f(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, f, t]);
 				return r.a.createElement(u.q, {
 					onClick: () => {
-						s ? E && O === b.a.notVoted && (f(m.c), y(Object(c.db)(E))) : j(), y(Object(d.b)(g, x, {
+						s ? (f(m.c), E && O === b.a.notVoted && y(Object(c.db)(E))) : j(), y(Object(d.b)(g, x, {
 							postId: E
 						}))
 					},
@@ -2326,4 +2326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.774ad8ead164babe0ff7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7bdde1e445b3ef68161d.js.map

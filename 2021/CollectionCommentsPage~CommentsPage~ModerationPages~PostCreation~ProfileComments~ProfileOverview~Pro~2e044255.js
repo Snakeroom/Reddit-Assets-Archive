@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.77687c1a36c99864ae68.js
-// Retrieved at 8/4/2021, 4:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7fa52533699ecd1a4d50.js
+// Retrieved at 8/4/2021, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1109,7 +1109,7 @@
 				const O = Object(r.useCallback)(() => E(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, E, t]);
 				return o.a.createElement(u.q, {
 					onClick: () => {
-						s ? v && _ === h.a.notVoted && (E(m.c), g(Object(c.db)(v))) : O(), g(Object(d.b)(y, b, {
+						s ? (E(m.c), v && _ === h.a.notVoted && g(Object(c.db)(v))) : O(), g(Object(d.b)(y, b, {
 							postId: v
 						}))
 					},
@@ -2982,4 +2982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.77687c1a36c99864ae68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.7fa52533699ecd1a4d50.js.map

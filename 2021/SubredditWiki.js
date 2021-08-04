@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.ec23fb7b128e85778e93.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.1bcda00d9e055582f423.js
+// Retrieved at 8/4/2021, 6:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -2001,7 +2001,7 @@
 				const y = Object(i.useCallback)(() => f(Object(u.b)(e ? "user_hovercard" : "profile_overview", t)), [e, f, t]);
 				return r.a.createElement(m.q, {
 					onClick: () => {
-						s ? v && E === b.a.notVoted && (f(u.c), k(Object(d.db)(v))) : y(), k(Object(c.b)(_, h, {
+						s ? (f(u.c), v && E === b.a.notVoted && k(Object(d.db)(v))) : y(), k(Object(c.b)(_, h, {
 							postId: v
 						}))
 					},
@@ -7608,4 +7608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.ec23fb7b128e85778e93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.1bcda00d9e055582f423.js.map
