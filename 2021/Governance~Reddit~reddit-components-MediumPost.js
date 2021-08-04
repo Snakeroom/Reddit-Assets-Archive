@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9bcc453afb3f573768c5.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9530faabfcef4e7341b2.js
+// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, s) {
@@ -1561,7 +1561,7 @@
 						subreddit: s
 					} = t, {
 						isSponsored: n
-					} = e, r = Object(w.a)(), o = Object(G.a)(_.mc) === _.qc.Enabled;
+					} = e, r = Object(w.a)(), o = Object(G.a)(_.nc) === _.rc.Enabled;
 					if (t.isCommentsPage && !t.isCommentPermalink && !t.shouldLinkWrap) return i.a.createElement(W, {
 						nowrap: t.nowrap
 					}, i.a.createElement($, t));
@@ -2812,4 +2812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9bcc453afb3f573768c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9530faabfcef4e7341b2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.1f64c744fc66163b1796.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.b7a5b64324ebf7d09377.js
+// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/makeCommentPermalink/index.ts": function(e, t, n) {
@@ -1976,7 +1976,7 @@
 								experimentName: o.B,
 								expEventOverride: t
 							});
-							return !!(Object(o.ee)(n) ? void 0 : n)
+							return !!(Object(o.fe)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -3164,14 +3164,14 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.bd
-					}) === s.ld.Enabled
+						experimentName: s.cd
+					}) === s.md.Enabled
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ad
-					}) === s.kd.Enabled
+						experimentName: s.bd
+					}) === s.ld.Enabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/achievements.ts": function(e, t, n) {
@@ -3257,4 +3257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1f64c744fc66163b1796.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.b7a5b64324ebf7d09377.js.map

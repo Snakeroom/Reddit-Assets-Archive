@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.900c7d7468141b63ee95.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.1884a745327b8781c9e5.js
+// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -386,9 +386,9 @@
 							i = Object(se.K)(s(), {
 								identifier: F.belongsTo
 							});
-						if (i && (e => D.yd.Redirect === Object(U.b)(e, {
+						if (i && (e => D.zd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: D.qd
+								experimentName: D.rd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((F.media && F.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${F.belongsTo.type===_.a.SUBREDDIT?i.url:"/"}${Object(u.t)(F.id)}`;
@@ -4720,7 +4720,7 @@
 					showPromotedCTA: ye,
 					subredditOrProfile: Ee,
 					userIsOp: we
-				} = e, Ie = Object(fe.b)(), _e = Object(a.e)(e => Boolean(ne.predictionTournament) && Object(je.r)(e)), Se = Object(c.a)(ne);
+				} = e, Ie = Object(fe.b)(), _e = Object(a.e)(e => Boolean(ne.predictionTournament) && Object(je.s)(e)), Se = Object(c.a)(ne);
 				Object(r.useEffect)(() => {
 					R && M && U()
 				}, []);
@@ -4777,7 +4777,7 @@
 							crosspost: t,
 							isCommentPermalink: s,
 							post: o
-						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(je.r)(e));
+						} = e, n = Object(a.e)(e => Boolean(o.predictionTournament) && Object(je.s)(e));
 						return s ? Oe.g.Classic : n ? Oe.g.Large : t ? Oe.g.Large : o.media && !ot(o) ? Oe.g.Large : Oe.g.Medium
 					})(e);
 				if (lt === Oe.g.Classic) {
@@ -5725,7 +5725,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.ee)(t) && !Object(I.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.fe)(t) && !Object(I.a)(t),
 							subreddit: o
 						}
 					}
@@ -5780,7 +5780,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.ee)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.fe)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -5791,9 +5791,9 @@
 						hk: "2g363L"
 					}) : Object(I.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.Tc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
+					}) : t === x.Uc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
 						hk: "w3BDa"
-					}) : t === x.Tc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.Uc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -7787,7 +7787,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.Hb
 				});
-				return !(!t || Object(o.ee)(t))
+				return !(!t || Object(o.fe)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -7800,8 +7800,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.rd
-			}) === o.zd.Enabled
+				experimentName: o.sd
+			}) === o.Ad.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -7922,7 +7922,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.ee)(t)
+					return Boolean(t) && !Object(n.fe)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -7947,4 +7947,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.900c7d7468141b63ee95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.1884a745327b8781c9e5.js.map

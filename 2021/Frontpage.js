@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.68326339ed971fe0dbfe.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c60e5626b0e8d6488f83.js
+// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1643,10 +1643,10 @@
 			}
 			var qe = n("./src/reddit/selectors/experiments/utils.ts");
 			const We = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.Hc,
+					experimentName: Fe.Ic,
 					experimentEligibilitySelector: Ue.a
 				}), qe.a),
-				Ve = Object(u.a)(We, e => e === Fe.Jc.Enabled);
+				Ve = Object(u.a)(We, e => e === Fe.Kc.Enabled);
 			var Ge = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1679,7 +1679,7 @@
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: He.J,
 								experimentName: Fe.lb
-							}) === Fe.fc
+							}) === Fe.gc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -4661,4 +4661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.68326339ed971fe0dbfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c60e5626b0e8d6488f83.js.map

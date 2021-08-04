@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c8a4f81f18fda43ba10c.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2c781e95aff7ef83d2cf.js
+// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3003,7 +3003,7 @@
 					showAwardsPlaque: I.a,
 					isTournamentPost: (e, {
 						post: t
-					}) => Boolean(t.predictionTournament) && Object(x.r)(e)
+					}) => Boolean(t.predictionTournament) && Object(x.s)(e)
 				}), (e, {
 					listingKey: t,
 					listingName: s,
@@ -3073,7 +3073,7 @@
 						postIds: Ae,
 						onceInViewport: Ne,
 						showPromotedCTA: Le
-					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = he && Fe, Me = Object(c.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(Se), Ve = !!Se.media && Se.media.type === O.o.RTJSON, We = we && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ae.fd.OnlyTitles)(xe) && !Object(oe.a)(Se), Ke = (e => e === ae.fd.MediumHeight)(xe) && !Object(oe.a)(Se), ze = (e => {
+					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = he && Fe, Me = Object(c.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(Se), Ve = !!Se.media && Se.media.type === O.o.RTJSON, We = we && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ae.gd.OnlyTitles)(xe) && !Object(oe.a)(Se), Ke = (e => e === ae.gd.MediumHeight)(xe) && !Object(oe.a)(Se), ze = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -3930,7 +3930,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(M.a)(), i = Object(B.a)(m.mc) === m.qc.Enabled;
+					} = t, r = Object(M.a)(), i = Object(B.a)(m.nc) === m.rc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(J, e));
@@ -7348,7 +7348,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: n.Hb
 				});
-				return !(!t || Object(n.ee)(t))
+				return !(!t || Object(n.fe)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, s) {
@@ -7669,7 +7669,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.ee)(t)
+					return Boolean(t) && !Object(r.fe)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -7786,9 +7786,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: r.cd,
+				experimentName: r.dd,
 				experimentEligibilitySelector: o.a
-			}), i.G, (e, t) => e === r.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.G, (e, t) => e === r.nd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, s) {
 			"use strict";
@@ -7943,4 +7943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c8a4f81f18fda43ba10c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.2c781e95aff7ef83d2cf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.fd435ea434665c5301be.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.ed54a5e2981cf004d4a4.js
+// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -717,7 +717,7 @@
 			var at = e => {
 					const t = ["control_1", "control_2", ...He.k[e.experimentName]];
 					if (!t) return null;
-					const n = He.gc.has(e.experimentName);
+					const n = He.hc.has(e.experimentName);
 					return a.a.createElement(G.a, {
 						className: e.className
 					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -1862,4 +1862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.fd435ea434665c5301be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.ed54a5e2981cf004d4a4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.cc7803cd71a44ecad2dd.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.dd3a2bedcc79bdc9ae2f.js
+// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -40,8 +40,12 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "d", (function() {
 				return C
+			})), n.d(t, "b", (function() {
+				return f
+			})), n.d(t, "c", (function() {
+				return x
 			}));
 			var o = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/reddit/reducers/features/predictions/index.ts"),
@@ -92,6 +96,10 @@
 						h(n)
 					} else h(n)
 				}, C = e => Object(a.h)(c.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
+					postId: e
+				}), f = e => Object(a.h)(c.a.ECON_PREDICTIONS_CANCEL_PREDICTION, {
+					postId: e
+				}), x = e => Object(a.h)(c.a.ECON_PREDICTIONS_CHANGE_OUTCOME, {
 					postId: e
 				})
 		},
@@ -449,14 +457,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = r()(() => {
+			const O = r()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "date"), e.setAttribute("value", "not-a-date"), "not-a-date" !== e.value
 				}),
-				O = u.a.input("Input", j.a);
+				_ = u.a.input("Input", j.a);
 
 			function E(e) {
-				return _() ? i.a.createElement(O, P({
+				return O() ? i.a.createElement(_, P({
 					type: "date"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
@@ -580,14 +588,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = r()(() => {
+			const O = r()(() => {
 					const e = document.createElement("input");
 					return e.setAttribute("type", "time"), e.setAttribute("value", "not-a-time"), "not-a-time" !== e.value
 				}),
-				O = m.a.input("TimeInput", j.a);
+				_ = m.a.input("TimeInput", j.a);
 
 			function E(e) {
-				return _() ? i.a.createElement(O, P({
+				return O() ? i.a.createElement(_, P({
 					type: "time"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
@@ -623,9 +631,9 @@
 			})), n.d(t, "j", (function() {
 				return P
 			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "l", (function() {
 				return O
+			})), n.d(t, "l", (function() {
+				return _
 			})), n.d(t, "f", (function() {
 				return E
 			})), n.d(t, "g", (function() {
@@ -633,9 +641,9 @@
 			})), n.d(t, "h", (function() {
 				return k
 			})), n.d(t, "e", (function() {
-				return y
-			})), n.d(t, "c", (function() {
 				return T
+			})), n.d(t, "c", (function() {
+				return y
 			}));
 			var o = n("./src/lib/makeGqlRequest/index.ts"),
 				r = n("./src/lib/makeRequest/index.ts"),
@@ -713,13 +721,13 @@
 					...m,
 					variables: t
 				}),
-				_ = (e, t) => Object(o.a)(e, {
+				O = (e, t) => Object(o.a)(e, {
 					...s,
 					variables: {
 						input: t
 					}
 				}),
-				O = (e, t) => Object(o.a)(e, {
+				_ = (e, t) => Object(o.a)(e, {
 					...b,
 					variables: {
 						input: t
@@ -739,7 +747,7 @@
 					...u,
 					variables: t
 				}),
-				y = async (e, t) => {
+				T = async (e, t) => {
 					const n = await Object(o.a)(e, {
 						...a,
 						variables: {
@@ -747,7 +755,7 @@
 						}
 					});
 					if (!Object(r.c)(n) || !n.body.data.changePrediction.ok) throw new Error("Unable to edit prediction end time")
-				}, T = async (e, {
+				}, y = async (e, {
 					postId: t
 				}) => {
 					var n, s;
@@ -801,4 +809,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.cc7803cd71a44ecad2dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.dd3a2bedcc79bdc9ae2f.js.map
