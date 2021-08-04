@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e6f798bc326085e26c07.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.774ad8ead164babe0ff7.js
+// Retrieved at 8/4/2021, 4:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1670,31 +1670,37 @@
 		"./src/reddit/components/SourceLink/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return O
+				return k
 			}));
 			var o = s("./node_modules/react/index.js"),
 				n = s.n(o),
 				r = s("./src/lib/classNames/index.ts"),
 				i = s("./src/lib/getShortenedLink.ts"),
-				a = s("./node_modules/fbt/lib/FbtPublic.js"),
-				c = s("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
-				d = s("./src/reddit/components/AvatarPost/index.m.less"),
-				l = s.n(d);
-			var u = ({
+				a = s("./node_modules/fbt/lib/FbtPublic.js");
+			const c = 16765092,
+				d = "https://i.redd.it/snoovatar",
+				l = "snoovatars",
+				u = "avatars";
+			var m = s("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
+				p = s("./src/reddit/components/AvatarPost/index.m.less"),
+				b = s.n(p);
+			var x = ({
 					sourceUrl: e,
 					username: t,
 					post: s
 				}) => {
-					const [o, r] = new URL(e).pathname.split("/").slice(2), i = `https://i.redd.it/snoovatar/snoovatars/shared/${r}.png`;
+					const [o, r] = new URL(e).pathname.split("/").slice(2), i = function(e) {
+						return `${d}/${+e>=c?u:l}/shared/${e}.png`
+					}(r);
 					return n.a.createElement("div", {
-						className: l.a.avatarPostContainer
+						className: b.a.avatarPostContainer
 					}, n.a.createElement("img", {
-						className: l.a.avatarPostImage,
+						className: b.a.avatarPostImage,
 						src: i,
 						alt: a.fbt._("User Shared Avatar", null, {
 							hk: "FDRaA"
 						})
-					}), n.a.createElement(c.a, {
+					}), n.a.createElement(m.a, {
 						isHovercard: !1,
 						username: t,
 						isAvatarPost: !0,
@@ -1705,40 +1711,40 @@
 						}
 					}))
 				},
-				m = s("./src/reddit/controls/OutboundLink/styled.tsx"),
-				p = s("./src/reddit/hooks/useIsAvatarPost.ts"),
-				b = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				x = s("./src/reddit/components/SourceLink/index.m.less"),
-				h = s.n(x),
-				v = s("./src/lib/lessComponent.tsx"),
-				f = s("./src/telemetry/models/Outbound.ts");
-			const y = v.a.wrapped(b.a, "OutboundLinkIcon", h.a),
-				E = v.a.div("SourceLinkWrapper", h.a);
+				h = s("./src/reddit/controls/OutboundLink/styled.tsx"),
+				v = s("./src/reddit/hooks/useIsAvatarPost.ts"),
+				f = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
+				y = s("./src/reddit/components/SourceLink/index.m.less"),
+				E = s.n(y),
+				O = s("./src/lib/lessComponent.tsx"),
+				g = s("./src/telemetry/models/Outbound.ts");
+			const j = O.a.wrapped(f.a, "OutboundLinkIcon", E.a),
+				S = O.a.div("SourceLinkWrapper", E.a);
 
-			function O(e) {
+			function k(e) {
 				const {
 					className: t,
 					post: s,
 					isCommentsPage: o
-				} = e, a = o ? f.SourceElement.PostLink : f.SourceElement.ListingPostLink, {
+				} = e, a = o ? g.SourceElement.PostLink : g.SourceElement.ListingPostLink, {
 					source: c,
 					isSponsored: d
-				} = s, l = Object(p.a)(s);
-				return c ? l ? n.a.createElement(u, {
+				} = s, l = Object(v.a)(s);
+				return c ? l ? n.a.createElement(x, {
 					sourceUrl: c.url,
 					username: s.author,
 					post: s
-				}) : n.a.createElement(E, {
+				}) : n.a.createElement(S, {
 					className: Object(r.a)({
-						[h.a["m-comment"]]: o
+						[E.a["m-comment"]]: o
 					}, t)
-				}, n.a.createElement(m.a, {
+				}, n.a.createElement(h.a, {
 					href: c.url,
 					isSponsored: d,
 					postId: s.id,
 					source: c,
 					sourceElement: a
-				}, Object(i.a)(s), n.a.createElement(y, {
+				}, Object(i.a)(s), n.a.createElement(j, {
 					isFilled: !0
 				}))) : null
 			}
@@ -2320,4 +2326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.e6f798bc326085e26c07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.774ad8ead164babe0ff7.js.map
