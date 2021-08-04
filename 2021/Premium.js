@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.3262348993598906db17.js
-// Retrieved at 8/3/2021, 3:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.4ce987205707074e42ba.js
+// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, r) {
@@ -2827,4 +2827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.3262348993598906db17.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.4ce987205707074e42ba.js.map
