@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.331d846775b8d32bdca2.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.138233fb1c324b32d6c6.js
+// Retrieved at 8/4/2021, 6:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -227,8 +227,8 @@
 						} = l;
 					if (!Object(T.i)(l, e) || !t) return;
 					if (!u) throw new v.a("session", u);
-					const m = Object(L.d)(l),
-						p = Object(L.f)(l),
+					const m = Object(L.c)(l),
+						p = Object(L.e)(l),
 						b = {
 							channelSendbirdId: e,
 							inviterUserId: t.id,
@@ -624,7 +624,7 @@
 				apiContext: s
 			}) => {
 				const a = n(),
-					c = Object(p.e)(a);
+					c = Object(p.d)(a);
 				await Promise.all([Object(d.k)(s(), e.channelId, c), b.a.setPushPreference(e.channelId, !0)]).then(() => {
 					const n = Object(m.i)(a, e);
 					n && t(Object(r.P)({
@@ -636,7 +636,7 @@
 				apiContext: s
 			}) => {
 				const a = n(),
-					c = Object(p.e)(a);
+					c = Object(p.d)(a);
 				await Promise.all([Object(d.m)(s(), e.channelId, c), b.a.setPushPreference(e.channelId, !1)]).then(() => {
 					const n = Object(m.i)(a, e);
 					n && t(Object(r.P)({
@@ -1725,7 +1725,7 @@
 				}, N = "SENDBIRD__OPT_IN", T = Object(r.a)(N), A = () => async (e, t, {
 					apiContext: n
 				}) => {
-					Object(u.i)(t()) || (e(T({
+					Object(u.h)(t()) || (e(T({
 						userSubredditChatEnabled: !0
 					})), Object(i.l)(n()))
 				}
@@ -2883,7 +2883,7 @@
 						f = Object(r.e)(t => Object(_.J)(t, {
 							channelId: e
 						})),
-						I = Object(r.e)(v.e),
+						I = Object(r.e)(v.d),
 						S = l === O.b.INVITED,
 						w = S ? Object(C.channelAction)(e, O.a.VIEW_INVITE) : Object(C.channelUrl)(e),
 						N = Object(C.getRedirectURL)(w);
@@ -4788,7 +4788,7 @@
 				GIF: It
 			} = b.c, xt = () => {
 				const e = Object(c.d)();
-				return Object(c.e)(ht.c) ? r.a.createElement("div", {
+				return Object(c.e)(ht.b) ? r.a.createElement("div", {
 					className: bt.a.ThemePrompt,
 					tabIndex: 0
 				}, r.a.createElement("button", {
@@ -5538,9 +5538,9 @@
 		"./src/chat/components/MessageInput/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return Ze
+				return Ke
 			})), n.d(t, "a", (function() {
-				return qe
+				return Ze
 			}));
 			var s = n("./node_modules/lodash/noop.js"),
 				a = n.n(s),
@@ -6161,50 +6161,47 @@
 					cy: "9",
 					r: "1.5"
 				}))),
-				We = n("./src/chat/selectors/experiments.ts"),
-				ze = n("./src/chat/components/MessageInput/index.m.less"),
-				Ke = n.n(ze);
-			const Ze = "MessageInputTooltip--Snoomoji",
-				qe = "MessageInputTooltip--Gif",
-				Qe = "MessageInputTooltip--Userlist",
-				Je = 5e3,
-				Ye = 85,
-				Xe = u.a.wrapped(ye.c, "SubmitButton", Ke.a);
-			Xe.displayName = "SubmitButton";
-			const $e = u.a.wrapped(He, "SendIcon", Ke.a),
-				et = u.a.form("Form", Ke.a),
-				tt = u.a.div("Wrapper", Ke.a),
-				nt = u.a.div("InputWrapper", Ke.a),
-				st = u.a.div("Icons", Ke.a),
-				at = u.a.wrapped(De, "ContentEditable", Ke.a),
-				rt = i.a.memo((function() {
+				We = n("./src/chat/components/MessageInput/index.m.less"),
+				ze = n.n(We);
+			const Ke = "MessageInputTooltip--Snoomoji",
+				Ze = "MessageInputTooltip--Gif",
+				qe = "MessageInputTooltip--Userlist",
+				Qe = 5e3,
+				Je = 85,
+				Ye = u.a.wrapped(ye.c, "SubmitButton", ze.a);
+			Ye.displayName = "SubmitButton";
+			const Xe = u.a.wrapped(He, "SendIcon", ze.a),
+				$e = u.a.form("Form", ze.a),
+				et = u.a.div("Wrapper", ze.a),
+				tt = u.a.div("InputWrapper", ze.a),
+				nt = u.a.div("Icons", ze.a),
+				st = u.a.wrapped(De, "ContentEditable", ze.a),
+				at = i.a.memo((function() {
 					const e = Object(l.d)(),
-						t = Object(l.e)(S.a),
-						n = Object(l.e)(We.b),
-						s = Object(l.e)(be.I);
-					return n && !s ? i.a.createElement(ct, {
+						t = Object(l.e)(S.a);
+					return Object(l.e)(be.I) ? null : i.a.createElement(rt, {
 						onMouseDown: () => {
 							e(Object(f.c)({
-								tooltipId: qe
-							})), e(Object(g.x)(qe))
+								tooltipId: Ze
+							})), e(Object(g.x)(Ze))
 						},
-						active: t === qe
+						active: t === Ze
 					}, i.a.createElement(Ue, {
-						isFilled: t === qe
-					})) : null
+						isFilled: t === Ze
+					}))
 				})),
-				ct = u.a.wrapped(e => i.a.createElement("div", {
+				rt = u.a.wrapped(e => i.a.createElement("div", {
 					className: Object(d.a)({
-						[Ke.a.active]: e.active
+						[ze.a.active]: e.active
 					}, e.className),
 					onMouseDown: Object(Le.b)(e.onMouseDown)
-				}, e.children), "IconButton", Ke.a),
-				ot = Object(pe.a)({
+				}, e.children), "IconButton", ze.a),
+				ct = Object(pe.a)({
 					activeDropdownId: e => e.tooltipId || void 0,
 					draftMessage: (e, t) => Object(be.r)(e, t.channelId),
 					isFullSize: x.e
 				}),
-				it = Object(l.b)(ot, (e, {
+				ot = Object(l.b)(ct, (e, {
 					channelId: t
 				}) => ({
 					onSubmitText: n => e(Object(p.q)(t, n.trim(), xe.c.TEXT)),
@@ -6239,7 +6236,7 @@
 					closeUserlistTooltip: () => e(Object(f.d)()),
 					startSurveyTimer: () => e(Object(b.b)())
 				}));
-			class lt extends o.PureComponent {
+			class it extends o.PureComponent {
 				constructor(e) {
 					super(e), this.selectUserName = "", this.cursorPosition = {
 						selectionStart: 0,
@@ -6261,7 +6258,7 @@
 						this.toggleUserlistTooltipByTextChange(e), this.cleanChildProps()
 					}, this.sendEnabled = () => !!this.state.text, this.onArrowUpUserlistListener = a.a, this.onArrowDownUserlistListener = a.a, this.startIdleTimerThrottle = c()(() => {
 						this.props.startSurveyTimer()
-					}, Je), this.handleSubmitText = this.handleSubmitText.bind(this), this.handleSubmitSnoo = this.handleSubmitSnoo.bind(this), this.onPickGifHandler = this.onPickGifHandler.bind(this);
+					}, Qe), this.handleSubmitText = this.handleSubmitText.bind(this), this.handleSubmitSnoo = this.handleSubmitSnoo.bind(this), this.onPickGifHandler = this.onPickGifHandler.bind(this);
 					const t = this.props.draftMessage || "";
 					this.reFocusCursorPosition(t.length), this.state = {
 						text: t,
@@ -6308,7 +6305,7 @@
 						onSubmit: n,
 						deleteDraft: s
 					} = this.props;
-					this.sendEnabled() && (this.isUserlistPopupOpened() ? (this.onPickUserName(this.selectUserName || this.state.inputUserName), this.props.toggleUserlistTooltip(Qe)) : (t(this.state.text), n && n(), this.clearText(), s(e)))
+					this.sendEnabled() && (this.isUserlistPopupOpened() ? (this.onPickUserName(this.selectUserName || this.state.inputUserName), this.props.toggleUserlistTooltip(qe)) : (t(this.state.text), n && n(), this.clearText(), s(e)))
 				}
 				handleSubmitSnoo(e) {
 					const {
@@ -6337,7 +6334,7 @@
 						textUpdate: s,
 						text: s
 					}, () => {
-						this.reFocusCursorPosition(a), this.props.toggleUserlistTooltip(Qe)
+						this.reFocusCursorPosition(a), this.props.toggleUserlistTooltip(qe)
 					})
 				}
 				toggleUserlistTooltipByTextChange(e) {
@@ -6347,12 +6344,12 @@
 						hasUsername: n,
 						username: s
 					} = E(e, t), a = this.isUserlistPopupOpened();
-					return (n && !a || !n && a) && this.props.toggleUserlistTooltip(Qe), this.setState({
+					return (n && !a || !n && a) && this.props.toggleUserlistTooltip(qe), this.setState({
 						inputUserName: s
 					})
 				}
 				isUserlistPopupOpened() {
-					return this.props.activeDropdownId === Qe
+					return this.props.activeDropdownId === qe
 				}
 				reFocusCursorPosition(e) {
 					this.cursorPosition = {
@@ -6369,14 +6366,14 @@
 						draftMessage: a,
 						isFullSize: r
 					} = this.props;
-					return i.a.createElement(et, {
+					return i.a.createElement($e, {
 						tabIndex: 0,
 						className: Object(d.a)(t, {
-							[Ke.a.isFullSize]: r
+							[ze.a.isFullSize]: r
 						}),
 						id: T,
 						onSubmit: Object(Le.b)(this.handleSubmitText)
-					}, i.a.createElement(tt, null, i.a.createElement(nt, null, i.a.createElement(at, {
+					}, i.a.createElement(et, null, i.a.createElement(tt, null, i.a.createElement(st, {
 						channelId: n,
 						clearText: this.state.clearText,
 						cursorPosition: this.cursorPosition,
@@ -6392,22 +6389,22 @@
 						onKeyEsc: () => this.props.closeUserlistTooltip(),
 						onSubmit: this.handleSubmitText,
 						textUpdate: this.state.textUpdate
-					}), i.a.createElement(st, null, i.a.createElement(rt, null), i.a.createElement(ct, {
-						onMouseDown: () => s(Ze),
-						active: e === Ze
+					}), i.a.createElement(nt, null, i.a.createElement(at, null), i.a.createElement(rt, {
+						onMouseDown: () => s(Ke),
+						active: e === Ke
 					}, i.a.createElement(Ve, {
-						isFilled: e === Ze
+						isFilled: e === Ke
 					})), i.a.createElement(D, {
-						id: Ze
+						id: Ke
 					}, i.a.createElement(de, {
 						onPickSnoomoji: this.handleSubmitSnoo
 					})), i.a.createElement(D, {
-						id: qe,
-						arrowOffset: Ye
+						id: Ze,
+						arrowOffset: Je
 					}, i.a.createElement(ne, {
 						onPickGif: this.onPickGifHandler
 					})), i.a.createElement(D, {
-						id: Qe,
+						id: qe,
 						isArrowShow: !1
 					}, i.a.createElement(Ie, {
 						bindArrowDown: e => this.onArrowDownUserlistListener = e,
@@ -6415,13 +6412,13 @@
 						inputUserName: this.state.inputUserName,
 						onPickUserName: e => this.onPickUserName(e),
 						onSelectUserName: e => this.selectUserName = e
-					})))), i.a.createElement(Xe, {
+					})))), i.a.createElement(Ye, {
 						type: "submit",
 						disabled: !this.sendEnabled()
-					}, i.a.createElement($e, null))))
+					}, i.a.createElement(Xe, null))))
 				}
 			}
-			t.c = it(lt)
+			t.c = ot(it)
 		},
 		"./src/chat/components/MessageList/Messages/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -7187,9 +7184,9 @@
 					isChannelBadgingMuted: se.H,
 					isChannelNotifsMuted: se.J,
 					isFullSize: ne.e,
-					isThemesEnabled: ae.h,
+					isThemesEnabled: ae.g,
 					showSparkles: re.d,
-					isQuickActionsEnabled: ae.e
+					isQuickActionsEnabled: ae.d
 				});
 			var ue = Object(r.b)(de, (e, t) => ({
 					onInviteToChannel: () => {
@@ -9977,7 +9974,7 @@
 			const g = l.a.i("FallbackAvatar", f.a),
 				O = l.a.wrapped(g, "FallbackAvatarWrapper", f.a),
 				E = l.a.wrapped(e => {
-					const t = Object(o.e)(m.g),
+					const t = Object(o.e)(m.f),
 						{
 							className: n,
 							height: a,
@@ -14370,4 +14367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.331d846775b8d32bdca2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.138233fb1c324b32d6c6.js.map
