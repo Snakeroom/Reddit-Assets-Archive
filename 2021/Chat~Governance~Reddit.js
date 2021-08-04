@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ffde3c2a08e81353e25a.js
-// Retrieved at 8/4/2021, 6:20:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.22c9c34f5dbfc8e3335d.js
+// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,11 +2520,11 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("141618"),
+				buildNumber: r("141621"),
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628114413"),
+				})("1628115739"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4977,14 +4977,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c0829fe0c845e99c8f850e8f8624e4a2c0ae74cbb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c188d8e95ea49ec81c9285b4c8a68209636b414c5-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "0829fe0c845e99c8f850e8f8624e4a2c0ae74cbb-production",
+						release: "188d8e95ea49ec81c9285b4c8a68209636b414c5-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5478,7 +5478,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "0829fe0c845e99c8f850e8f8624e4a2c0ae74cbb-production",
+						releaseClient: "188d8e95ea49ec81c9285b4c8a68209636b414c5-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9558,17 +9558,17 @@
 		"./src/reddit/actions/pages/search.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "SEARCH_PENDING", (function() {
-				return O
-			})), i.d(t, "SEARCH_RESULTS_RECEIVED", (function() {
 				return I
-			})), i.d(t, "SEARCH_FAILED", (function() {
+			})), i.d(t, "SEARCH_RESULTS_RECEIVED", (function() {
 				return F
+			})), i.d(t, "SEARCH_FAILED", (function() {
+				return R
 			})), i.d(t, "searchResultsReceived", (function() {
-				return j
+				return C
 			})), i.d(t, "searchDataRequested", (function() {
-				return N
-			})), i.d(t, "searchResultsRequested", (function() {
 				return A
+			})), i.d(t, "searchResultsRequested", (function() {
+				return P
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
@@ -9587,56 +9587,57 @@
 				f = i("./src/reddit/actions/toaster.ts"),
 				b = i("./src/reddit/constants/parameters.ts"),
 				g = i("./src/reddit/endpoints/page/search.ts"),
-				w = i("./src/reddit/helpers/timeApiRoute/index.ts"),
-				y = i("./src/reddit/models/DiscoveryUnit/index.ts"),
-				v = i("./src/reddit/models/Toast/index.ts"),
-				E = i("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				T = i("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
-				S = i("./src/reddit/selectors/subreddit.ts");
-			const O = "SEARCH__SEARCH_PENDING",
-				I = "SEARCH__SEARCH_RESULTS_RECEIVED",
-				F = "SEARCH__SEARCH_FAILED",
-				R = Object(d.a)(O),
+				w = i("./src/reddit/helpers/isArrayEqual.ts"),
+				y = i("./src/reddit/helpers/timeApiRoute/index.ts"),
+				v = i("./src/reddit/models/DiscoveryUnit/index.ts"),
+				E = i("./src/reddit/models/Toast/index.ts"),
+				T = i("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
+				S = i("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
+				O = i("./src/reddit/selectors/subreddit.ts");
+			const I = "SEARCH__SEARCH_PENDING",
+				F = "SEARCH__SEARCH_RESULTS_RECEIVED",
+				R = "SEARCH__SEARCH_FAILED",
 				j = Object(d.a)(I),
 				C = Object(d.a)(F),
-				x = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
+				x = Object(d.a)(R),
+				N = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
 				}),
-				N = (e, t, i, r) => async (s, d, {
+				A = (e, t, i, r) => async (s, d, {
 					apiContext: a
 				}) => {
 					const l = d(),
 						m = t[b.c],
-						T = t.category;
-					(m || T) && (await Promise.all([s(p.g()), s(c.a())]), T && await Promise.all([s(c.b(T, 10)), s(p.h(y.g, T))]));
+						w = t.category;
+					(m || w) && (await Promise.all([s(p.g()), s(c.a())]), w && await Promise.all([s(c.b(w, 10)), s(p.h(v.g, w))]));
 					const {
-						q: O
-					} = t, I = !!O && o.Kb.some(e => O.includes(`${e}:`));
+						q: S
+					} = t, I = !!S && o.Kb.some(e => S.includes(`${e}:`));
 					let F = t.type.indexOf(o.Vb.Posts) > -1 || !(!i || !t.restrict_sr) || I;
 					if (F) {
 						const t = l.listings.postOrder.ids[e],
 							i = l.listings.postOrder.api.error[e];
 						F = !(l.listings.postOrder.api.pending[e] || t && !i)
 					}
-					let x = t.type.indexOf(o.Vb.Subreddits) > -1 || t.type.indexOf(o.Vb.Users) > -1;
-					if (x) {
+					let R = t.type.indexOf(o.Vb.Subreddits) > -1 || t.type.indexOf(o.Vb.Users) > -1;
+					if (R) {
 						const t = l.listings.listingOrder.identifiers[e],
 							i = l.listings.listingOrder.api.error[e];
-						x = !(l.listings.listingOrder.api.pending[e] || t && !i)
+						R = !(l.listings.listingOrder.api.pending[e] || t && !i)
 					}
-					if (!F && !x) return void(l.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
-						s(Object(u.b)(E.a.SEARCH_RESULTS))
+					if (!F && !R) return void(l.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
+						s(Object(u.b)(T.a.SEARCH_RESULTS))
 					}));
 					t.q && s(Object(h.q)(t.q));
-					const A = `error-${e}`,
+					const N = `error-${e}`,
 						{
 							type: P
 						} = t;
-					s(R({
+					s(j({
 						key: e,
 						type: P
 					}));
-					const D = await Object(w.a)("searchResults", () => Object(g.a)(a(), i, r, {
+					const D = await Object(y.a)("searchResults", () => Object(g.a)(a(), i, r, {
 						...t,
 						type: (t.type || []).join(","),
 						b: !I
@@ -9651,61 +9652,61 @@
 								username: r
 							},
 							o = D.body;
-						if (s(j({
+						if (s(C({
 								categoryName: m,
 								...n,
 								...o
-							})), s(f.g(A)), s(Object(u.b)(E.a.SEARCH_RESULTS)), i) {
-							const e = Object(S.D)(d(), i),
+							})), s(f.g(N)), s(Object(u.b)(T.a.SEARCH_RESULTS)), i) {
+							const e = Object(O.D)(d(), i),
 								t = Object(_.c)(o.posts, e),
 								n = Object(_.b)(o.structuredStyles || {}),
 								r = (n ? Object(_.d)(n) : []).concat(t);
 							s(Object(_.a)(r, e))
 						}
-					} else s(C({
+					} else s(x({
 						key: e,
 						error: D.error,
 						type: P,
 						...D.body
 					})), s(f.f({
-						id: A,
-						kind: v.b.Error,
+						id: N,
+						kind: E.b.Error,
 						text: n.fbt._("Sorry, we couldn't load search results.", null, {
 							hk: "QgweL"
 						}),
 						buttonText: n.fbt._("Retry", null, {
 							hk: "jld4g"
 						}),
-						buttonAction: N(e, t, i, r)
+						buttonAction: A(e, t, i, r)
 					}))
-				}, A = e => async (t, i, n) => {
-					const r = i(),
-						d = Object(a.e)(s()(e.queryParams, b.t)),
-						u = {
-							...d,
-							type: Object(T.b)(r, d.type)
+				}, P = e => async (t, i) => {
+					const n = i(),
+						r = Object(a.e)(s()(e.queryParams, b.t)),
+						d = {
+							...r,
+							type: Object(S.c)(n, r.type)
 						},
-						c = e.params.subredditName || e.params.multiredditName,
+						u = e.params.subredditName || e.params.multiredditName,
 						{
-							username: _
+							username: c
 						} = e.params,
-						p = Object(a.b)(c, _, u);
-					if (Object(T.a)(r) && u.type.includes(o.Vb.Posts)) {
+						_ = Object(a.b)(u, c, d);
+					if (Object(S.b)(n) && !Object(w.a)(d.type, [o.Vb.Subreddits, o.Vb.Users])) {
 						const e = {
-								...u,
+								...d,
 								type: [o.Vb.Subreddits, o.Vb.Users]
 							},
-							i = Object(a.b)(c, _, e);
-						await Promise.all([t(N(p, u, c, _)), t(N(i, e, c, _))])
-					} else await t(N(p, u, c, _));
-					let h = !1;
+							i = Object(a.b)(u, c, e);
+						await Promise.all([t(A(_, d, u, c)), t(A(i, e, u, c))])
+					} else await t(A(_, d, u, c));
+					let p = !1;
 					const {
-						type: f = []
-					} = u, g = f.indexOf(o.Vb.Posts) > -1, w = f.indexOf(o.Vb.Subreddits) > -1 || f.indexOf(o.Vb.Users) > -1;
-					g && r.listings.postOrder.api.error[p] && (h = !0), w && r.listings.listingOrder.api.error[p] && (h = !0), t(h ? m.l({
+						type: h = []
+					} = d, f = h.indexOf(o.Vb.Posts) > -1, g = h.indexOf(o.Vb.Subreddits) > -1 || h.indexOf(o.Vb.Users) > -1;
+					f && n.listings.postOrder.api.error[_] && (p = !0), g && n.listings.listingOrder.api.error[_] && (p = !0), t(p ? m.l({
 						title: Object(l.c)()
 					}) : m.l({
-						title: x(u.q)
+						title: N(d.q)
 					}))
 				}
 		},
@@ -12194,7 +12195,7 @@
 							...b,
 							sort: b.category ? o.Tb.Relevance : b.sort,
 							t: b.category ? o.bc.DAY : b.t,
-							type: Object(w.b)(d, b.type)
+							type: Object(w.c)(d, b.type)
 						},
 						E = Object(a.b)(m, h, y);
 					let T;
@@ -20948,6 +20949,17 @@
 				}
 			}
 		},
+		"./src/reddit/helpers/isArrayEqual.ts": function(e, t, i) {
+			"use strict";
+			var n = i("./node_modules/lodash/isEqual.js"),
+				r = i.n(n),
+				s = i("./node_modules/lodash/xorWith.js"),
+				o = i.n(s);
+			t.a = (e, t) => {
+				const i = o()(e, t, r.a);
+				return !(!i || 0 !== i.length)
+			}
+		},
 		"./src/reddit/helpers/isComment.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
@@ -22748,7 +22760,7 @@
 						username: a
 					} = n.params, u = Object(l.e)(r()(n.queryParams, m.t)), c = {
 						...u,
-						type: Object(T.b)(t, u.type)
+						type: Object(T.c)(t, u.type)
 					};
 					return Object(l.b)(d, a, c)
 				},
@@ -22786,14 +22798,6 @@
 					} = i.params;
 					return ["Wiki", n, o, r].join("--")
 				}
-		},
-		"./src/reddit/helpers/search/shouldDefaultToListings.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "a", (function() {
-				return r
-			}));
-			var n = i("./src/lib/constants/index.ts");
-			const r = e => e.length > 0 && !e.includes(n.Vb.Posts) && (e.includes(n.Vb.Subreddits) || e.includes(n.Vb.Users))
 		},
 		"./src/reddit/helpers/survey/config.json": function(e) {
 			e.exports = JSON.parse('{"survey_cooldown_days":182,"active_surveys":[{"experiment_name":"nps_survey_scroll_trigger","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.5}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"d2x_nps_survey_dismiss_post_trigger","trigger_event":"dismiss_post","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":3,"sample_factor":0.01}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"survey_demo_nps_1","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"survey_demo_combined_1","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_search_survey","trigger_event":"search_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_chat_survey","trigger_event":"chat_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.15}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"d2x_mods_survey","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]}]}')
@@ -30237,21 +30241,28 @@
 		},
 		"./src/reddit/selectors/experiments/serpRedesignLayout.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
-				return a
-			})), i.d(t, "b", (function() {
+			i.d(t, "b", (function() {
 				return l
+			})), i.d(t, "c", (function() {
+				return u
+			})), i.d(t, "a", (function() {
+				return c
 			}));
-			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/lib/constants/index.ts"),
-				s = i("./src/reddit/constants/experiments.ts"),
-				o = i("./src/reddit/helpers/chooseVariant/index.ts"),
-				d = i("./src/reddit/helpers/search/shouldDefaultToListings.ts");
-			const a = Object(n.a)(e => Object(o.c)(e, {
-					experimentEligibilitySelector: o.a,
-					experimentName: s.ib
-				}), e => e === s.ub.Redesign),
-				l = (e, t) => a(e) ? Object(d.a)(t) ? [r.Vb.Subreddits, r.Vb.Users] : [r.Vb.Posts] : t
+			var n = i("./src/lib/constants/index.ts"),
+				r = i("./node_modules/lodash/isEmpty.js"),
+				s = i.n(r),
+				o = i("./src/reddit/constants/experiments.ts"),
+				d = i("./src/reddit/helpers/chooseVariant/index.ts"),
+				a = i("./node_modules/reselect/es/index.js");
+			const l = Object(a.a)(e => Object(d.c)(e, {
+					experimentEligibilitySelector: d.a,
+					experimentName: o.ib
+				}), e => e === o.ub.Redesign),
+				u = (e, t) => l(e) ? c(t) : t;
+
+			function c(e) {
+				return e.includes(n.Vb.Posts) || s()(e) ? [n.Vb.Posts, n.Vb.Subreddits, n.Vb.Users] : e.includes(n.Vb.Users) || e.includes(n.Vb.Subreddits) ? [n.Vb.Users, n.Vb.Subreddits] : e
+			}
 		},
 		"./src/reddit/selectors/experiments/survey.ts": function(e, t, i) {
 			"use strict";
@@ -39987,4 +39998,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ffde3c2a08e81353e25a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.22c9c34f5dbfc8e3335d.js.map

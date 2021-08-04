@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.14ba6a452cecbd44e955.js
-// Retrieved at 8/4/2021, 5:00:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.1050dd191f053af66afe.js
+// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -168,18 +168,6 @@
 					return n(s(e, 1, c, !0))
 				}));
 			e.exports = o
-		},
-		"./node_modules/lodash/xorWith.js": function(e, t, r) {
-			var s = r("./node_modules/lodash/_arrayFilter.js"),
-				a = r("./node_modules/lodash/_baseRest.js"),
-				n = r("./node_modules/lodash/_baseXor.js"),
-				c = r("./node_modules/lodash/isArrayLikeObject.js"),
-				o = r("./node_modules/lodash/last.js"),
-				d = a((function(e) {
-					var t = o(e);
-					return t = "function" == typeof t ? t : void 0, n(s(e, c), void 0, t)
-				}));
-			e.exports = d
 		},
 		"./node_modules/ts-error/lib/cjs.js": function(e, t, r) {
 			"use strict";
@@ -4741,17 +4729,6 @@
 			function c(e) {
 				const t = `${e.type} (${e.code})`;
 				return "message" in e ? `${t}: ${e.message}` : t
-			}
-		},
-		"./src/reddit/helpers/isArrayEqual.ts": function(e, t, r) {
-			"use strict";
-			var s = r("./node_modules/lodash/isEqual.js"),
-				a = r.n(s),
-				n = r("./node_modules/lodash/xorWith.js"),
-				c = r.n(n);
-			t.a = (e, t) => {
-				const r = c()(e, t, a.a);
-				return !(!r || 0 !== r.length)
 			}
 		},
 		"./src/reddit/helpers/loadThirdPartyScript.ts": function(e, t, r) {
@@ -21884,4 +21861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.14ba6a452cecbd44e955.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1050dd191f053af66afe.js.map

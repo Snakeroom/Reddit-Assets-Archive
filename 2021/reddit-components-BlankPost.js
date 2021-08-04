@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.d05ff48f271ebc680085.js
-// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.68b014a07362937f6cfd.js
+// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, o, r) {
@@ -334,7 +334,7 @@
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, o, r) {
 			"use strict";
 			r.d(o, "a", (function() {
-				return x
+				return L
 			}));
 			var t = r("./node_modules/react/index.js"),
 				n = r.n(t),
@@ -410,7 +410,7 @@
 				return e
 			}
 
-			function _(e, o, r) {
+			function m(e, o, r) {
 				return o in e ? Object.defineProperty(e, o, {
 					value: r,
 					enumerable: !0,
@@ -418,13 +418,13 @@
 					writable: !0
 				}) : e[o] = r, e
 			}
-			var m = ["root", "rootMargin", "threshold"],
+			var _ = ["root", "rootMargin", "threshold"],
 				y = ["root", "rootMargin", "threshold", "disabled"],
 				j = Object.prototype,
 				O = j.hasOwnProperty,
 				k = j.toString,
 				N = function(e) {
-					return m.reduce((function(o, r) {
+					return _.reduce((function(o, r) {
 						if (O.call(e, r)) {
 							var t = "root" === r && "[object String]" === k.call(e[r]);
 							o[r] = t ? document.querySelector(e[r]) : e[r]
@@ -432,31 +432,31 @@
 						return o
 					}), {})
 				},
-				x = function(e) {
+				L = function(e) {
 					var o, r;
 
 					function t() {
 						for (var o, r = arguments.length, t = new Array(r), n = 0; n < r; n++) t[n] = arguments[n];
-						return _(g(o = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
+						return m(g(o = e.call.apply(e, [this].concat(t)) || this), "handleChange", (function(e) {
 							o.props.onChange(e, o.externalUnobserve)
-						})), _(g(o), "handleNode", (function(e) {
+						})), m(g(o), "handleNode", (function(e) {
 							var r = o.props.children;
 							if (null != r) {
 								var t = r.ref;
 								t && ("function" == typeof t ? t(e) : "object" == typeof t && (t.current = e))
 							}
 							o.targetNode = e && Object(a.findDOMNode)(e)
-						})), _(g(o), "observe", (function() {
+						})), m(g(o), "observe", (function() {
 							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = b(N(o.props)), o.target = o.targetNode, e = g(o), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (v.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
-						})), _(g(o), "unobserve", (function(e) {
+						})), m(g(o), "unobserve", (function(e) {
 							! function(e, o) {
 								if (d.has(e.observer)) {
 									var r = d.get(e.observer);
 									r.delete(e) && (r.size > 0 ? e.observer.unobserve(o) : (e.observer.disconnect(), d.delete(e.observer)))
 								}
 							}(g(o), e)
-						})), _(g(o), "externalUnobserve", (function() {
+						})), m(g(o), "externalUnobserve", (function() {
 							o.unobserve(o.targetNode)
 						})), o
 					}
@@ -483,7 +483,7 @@
 						}) : null
 					}, t
 				}(n.a.Component);
-			_(x, "displayName", "IntersectionObserver")
+			m(L, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, o, r) {
 			"use strict";
@@ -542,18 +542,6 @@
 				return t(e, (function(e, t, a) {
 					o(n, r(e), t, a)
 				})), n
-			}
-		},
-		"./node_modules/lodash/_baseXor.js": function(e, o, r) {
-			var t = r("./node_modules/lodash/_baseDifference.js"),
-				n = r("./node_modules/lodash/_baseFlatten.js"),
-				a = r("./node_modules/lodash/_baseUniq.js");
-			e.exports = function(e, o, r) {
-				var s = e.length;
-				if (s < 2) return s ? a(e[0]) : [];
-				for (var l = -1, d = Array(s); ++l < s;)
-					for (var i = e[l], c = -1; ++c < s;) c != l && (d[l] = t(d[l] || i, e[c], o, r));
-				return a(n(d, 1), o, r)
 			}
 		},
 		"./node_modules/lodash/_createInverter.js": function(e, o, r) {
@@ -628,4 +616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.d05ff48f271ebc680085.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.68b014a07362937f6cfd.js.map

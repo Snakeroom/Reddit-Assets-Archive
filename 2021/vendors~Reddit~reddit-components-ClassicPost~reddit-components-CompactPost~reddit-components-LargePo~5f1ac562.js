@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.2c5a8313e18a2bf61315.js
-// Retrieved at 7/27/2021, 10:30:12 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.309294ad679c3bf8ce27.js
+// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, r) {
@@ -420,13 +420,13 @@
 			}
 			var y = ["root", "rootMargin", "threshold"],
 				O = ["root", "rootMargin", "threshold", "disabled"],
-				j = Object.prototype,
-				x = j.hasOwnProperty,
-				_ = j.toString,
-				w = function(e) {
+				x = Object.prototype,
+				j = x.hasOwnProperty,
+				w = x.toString,
+				_ = function(e) {
 					return y.reduce((function(t, r) {
-						if (x.call(e, r)) {
-							var n = "root" === r && "[object String]" === _.call(e[r]);
+						if (j.call(e, r)) {
+							var n = "root" === r && "[object String]" === w.call(e[r]);
 							t[r] = n ? document.querySelector(e[r]) : e[r]
 						}
 						return t
@@ -447,7 +447,7 @@
 							}
 							t.targetNode = e && Object(a.findDOMNode)(e)
 						})), g(v(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = f(w(t.props)), t.target = t.targetNode, e = v(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (m.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = f(_(t.props)), t.target = t.targetNode, e = v(t), l.has(e.observer) || l.set(e.observer, new Set), l.get(e.observer).add(e), e.observer.observe(e.target), !0) : (m.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), g(v(t), "unobserve", (function(e) {
 							! function(e, t) {
@@ -558,18 +558,6 @@
 				return n(e, (function(e, n, a) {
 					t(o, r(e), n, a)
 				})), o
-			}
-		},
-		"./node_modules/lodash/_baseXor.js": function(e, t, r) {
-			var n = r("./node_modules/lodash/_baseDifference.js"),
-				o = r("./node_modules/lodash/_baseFlatten.js"),
-				a = r("./node_modules/lodash/_baseUniq.js");
-			e.exports = function(e, t, r) {
-				var i = e.length;
-				if (i < 2) return i ? a(e[0]) : [];
-				for (var s = -1, l = Array(i); ++s < i;)
-					for (var c = e[s], u = -1; ++u < i;) u != s && (l[s] = n(l[s] || c, e[u], t, r));
-				return a(o(l, 1), t, r)
 			}
 		},
 		"./node_modules/lodash/_createInverter.js": function(e, t, r) {
@@ -767,12 +755,12 @@
 					return null
 				}(e) || t
 			}
-			var j = "top",
-				x = "bottom",
-				_ = "right",
-				w = "left",
+			var x = "top",
+				j = "bottom",
+				w = "right",
+				_ = "left",
 				E = "auto",
-				k = [j, x, _, w],
+				k = [x, j, w, _],
 				L = "start",
 				S = "end",
 				M = "clippingParents",
@@ -965,25 +953,25 @@
 					s = r.x + r.width / 2 - n.width / 2,
 					l = r.y + r.height / 2 - n.height / 2;
 				switch (a) {
-					case j:
+					case x:
 						t = {
 							x: s,
 							y: r.y - n.height
 						};
 						break;
-					case x:
+					case j:
 						t = {
 							x: s,
 							y: r.y + r.height
 						};
 						break;
-					case _:
+					case w:
 						t = {
 							x: r.x + r.width,
 							y: l
 						};
 						break;
-					case w:
+					case _:
 						t = {
 							x: r.x - n.width,
 							y: l
@@ -1036,38 +1024,38 @@
 					p = d.y,
 					h = i.hasOwnProperty("x"),
 					b = i.hasOwnProperty("y"),
-					m = w,
-					v = j,
+					m = _,
+					v = x,
 					g = window;
 				if (c) {
 					var y = O(r);
-					y === a(r) && (y = u(r)), o === j && (v = x, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === w && (m = _, f -= y.clientWidth - n.width, f *= l ? 1 : -1)
+					y === a(r) && (y = u(r)), o === x && (v = j, p -= y.clientHeight - n.height, p *= l ? 1 : -1), o === _ && (m = w, f -= y.clientWidth - n.width, f *= l ? 1 : -1)
 				}
 				var E, k = Object.assign({
 					position: s
 				}, c && V);
 				return l ? Object.assign(Object.assign({}, k), {}, ((E = {})[v] = b ? "0" : "", E[m] = h ? "0" : "", E.transform = (g.devicePixelRatio || 1) < 2 ? "translate(" + f + "px, " + p + "px)" : "translate3d(" + f + "px, " + p + "px, 0)", E)) : Object.assign(Object.assign({}, k), {}, ((t = {})[v] = b ? p + "px" : "", t[m] = h ? f + "px" : "", t.transform = "", t))
 			}
-			var X = {
+			var $ = {
 				left: "right",
 				right: "left",
 				bottom: "top",
 				top: "bottom"
 			};
 
-			function $(e) {
+			function K(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
-					return X[e]
+					return $[e]
 				}))
 			}
-			var K = {
+			var X = {
 				start: "end",
 				end: "start"
 			};
 
 			function Y(e) {
 				return e.replace(/start|end/g, (function(e) {
-					return K[e]
+					return X[e]
 				}))
 			}
 
@@ -1178,17 +1166,17 @@
 					g = te("number" != typeof v ? v : re(v, k)),
 					y = p === D ? N : D,
 					O = e.elements.reference,
-					w = e.rects.popper,
+					_ = e.rects.popper,
 					E = e.elements[b ? y : p],
 					L = ee(s(E) ? E : E.contextElement || u(e.elements.popper), l, d),
 					S = o(O),
 					T = q({
 						reference: S,
-						element: w,
+						element: _,
 						strategy: "absolute",
 						placement: a
 					}),
-					I = J(Object.assign(Object.assign({}, w), T)),
+					I = J(Object.assign(Object.assign({}, _), T)),
 					R = p === D ? I : S,
 					P = {
 						top: L.top - R.top + g.top,
@@ -1200,8 +1188,8 @@
 				if (p === D && B) {
 					var C = B[a];
 					Object.keys(P).forEach((function(e) {
-						var t = [_, x].indexOf(e) >= 0 ? 1 : -1,
-							r = [j, x].indexOf(e) >= 0 ? "y" : "x";
+						var t = [w, j].indexOf(e) >= 0 ? 1 : -1,
+							r = [x, j].indexOf(e) >= 0 ? "y" : "x";
 						P[e] += C[r] * t
 					}))
 				}
@@ -1225,7 +1213,7 @@
 			}
 
 			function ie(e) {
-				return [j, _, x, w].some((function(t) {
+				return [x, w, j, _].some((function(t) {
 					return e[t] >= 0
 				}))
 			}
@@ -1359,13 +1347,13 @@
 								i = I.reduce((function(e, r) {
 									return e[r] = function(e, t, r) {
 										var n = H(e),
-											o = [w, j].indexOf(n) >= 0 ? -1 : 1,
+											o = [_, x].indexOf(n) >= 0 ? -1 : 1,
 											a = "function" == typeof r ? r(Object.assign(Object.assign({}, t), {}, {
 												placement: e
 											})) : r,
 											i = a[0],
 											s = a[1];
-										return i = i || 0, s = (s || 0) * o, [w, _].indexOf(n) >= 0 ? {
+										return i = i || 0, s = (s || 0) * o, [_, w].indexOf(n) >= 0 ? {
 											x: s,
 											y: i
 										} : {
@@ -1388,9 +1376,9 @@
 								r = e.options,
 								n = e.name;
 							if (!t.modifiersData[n]._skip) {
-								for (var o = r.mainAxis, a = void 0 === o || o, i = r.altAxis, s = void 0 === i || i, l = r.fallbackPlacements, c = r.padding, u = r.boundary, d = r.rootBoundary, f = r.altBoundary, p = r.flipVariations, h = void 0 === p || p, b = r.allowedAutoPlacements, m = t.options.placement, v = H(m), g = l || (v === m || !h ? [$(m)] : function(e) {
+								for (var o = r.mainAxis, a = void 0 === o || o, i = r.altAxis, s = void 0 === i || i, l = r.fallbackPlacements, c = r.padding, u = r.boundary, d = r.rootBoundary, f = r.altBoundary, p = r.flipVariations, h = void 0 === p || p, b = r.allowedAutoPlacements, m = t.options.placement, v = H(m), g = l || (v === m || !h ? [K(m)] : function(e) {
 										if (H(e) === E) return [];
-										var t = $(e);
+										var t = K(e);
 										return [Y(e), t, Y(t)]
 									}(m)), y = [m].concat(g).reduce((function(e, r) {
 										return e.concat(H(r) === E ? function(e, t) {
@@ -1431,7 +1419,7 @@
 									var R = y[N],
 										P = H(R),
 										B = z(R) === L,
-										C = [j, x].indexOf(P) >= 0,
+										C = [x, j].indexOf(P) >= 0,
 										U = C ? "width" : "height",
 										W = ne(t, {
 											placement: R,
@@ -1440,9 +1428,9 @@
 											altBoundary: f,
 											padding: c
 										}),
-										F = C ? B ? _ : w : B ? x : j;
-									O[U] > S[U] && (F = $(F));
-									var q = $(F),
+										F = C ? B ? w : _ : B ? j : x;
+									O[U] > S[U] && (F = K(F));
+									var q = K(F),
 										V = [];
 									if (a && V.push(W[P] <= 0), s && V.push(W[F] <= 0, W[q] <= 0), V.every((function(e) {
 											return e
@@ -1461,8 +1449,8 @@
 												}))
 											}));
 											if (t) return D = t, "break"
-										}, X = h ? 3 : 1; X > 0; X--) {
-										if ("break" === G(X)) break
+										}, $ = h ? 3 : 1; $ > 0; $--) {
+										if ("break" === G($)) break
 									}
 								t.placement !== D && (t.modifiersData[n]._skip = !0, t.placement = D, t.reset = !0)
 							}
@@ -1514,8 +1502,8 @@
 								};
 							if (M) {
 								if (a) {
-									var I = "y" === k ? j : w,
-										R = "y" === k ? x : _,
+									var I = "y" === k ? x : _,
+										R = "y" === k ? j : w,
 										P = "y" === k ? "height" : "width",
 										B = M[k],
 										C = M[k] + v[I],
@@ -1524,20 +1512,20 @@
 										q = y === L ? A[P] : D[P],
 										V = y === L ? -D[P] : -A[P],
 										G = t.elements.arrow,
-										X = p && G ? b(G) : {
+										$ = p && G ? b(G) : {
 											width: 0,
 											height: 0
 										},
-										$ = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										K = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										K = $[I],
-										Y = $[R],
-										Z = oe(0, A[P], X[P]),
-										J = E ? A[P] / 2 - W - Z - K - N : q - Z - K - N,
+										X = K[I],
+										Y = K[R],
+										Z = oe(0, A[P], $[P]),
+										J = E ? A[P] / 2 - W - Z - X - N : q - Z - X - N,
 										Q = E ? -A[P] / 2 + W + Z + Y + N : V + Z + Y + N,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === k ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
@@ -1548,8 +1536,8 @@
 									M[k] = se, T[k] = se - B
 								}
 								if (s) {
-									var le = "x" === k ? j : w,
-										ce = "x" === k ? x : _,
+									var le = "x" === k ? x : _,
+										ce = "x" === k ? j : w,
 										ue = M[S],
 										de = oe(ue + v[le], ue, ue - v[ce]);
 									M[S] = de, T[S] = de - ue
@@ -1569,12 +1557,12 @@
 								a = r.modifiersData.popperOffsets,
 								i = H(r.placement),
 								s = F(i),
-								l = [w, _].indexOf(i) >= 0 ? "height" : "width";
+								l = [_, w].indexOf(i) >= 0 ? "height" : "width";
 							if (o && a) {
 								var c = r.modifiersData[n + "#persistent"].padding,
 									u = b(o),
-									d = "y" === s ? j : w,
-									f = "y" === s ? x : _,
+									d = "y" === s ? x : _,
+									f = "y" === s ? j : w,
 									p = r.rects.reference[l] + r.rects.reference[s] - a[s] - r.rects.popper[l],
 									h = a[s] - r.rects.reference[s],
 									m = O(o),
@@ -1778,4 +1766,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.2c5a8313e18a2bf61315.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562.309294ad679c3bf8ce27.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.88c9914c9e5c949b9040.js
-// Retrieved at 8/4/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.7bb381843c788f7eb042.js
+// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -20233,17 +20233,6 @@
 				}),
 				b = e => (e => !!e.frequency && !!e.interval)(e) ? h(e) : p(e)
 		},
-		"./src/reddit/helpers/isArrayEqual.ts": function(e, t, n) {
-			"use strict";
-			var o = n("./node_modules/lodash/isEqual.js"),
-				r = n.n(o),
-				s = n("./node_modules/lodash/xorWith.js"),
-				i = n.n(s);
-			t.a = (e, t) => {
-				const n = i()(e, t, r.a);
-				return !(!n || 0 !== n.length)
-			}
-		},
 		"./src/reddit/helpers/ordinal/index.ts": function(e, t, n) {
 			"use strict";
 			t.a = function(e) {
@@ -30498,4 +30487,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.88c9914c9e5c949b9040.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7bb381843c788f7eb042.js.map

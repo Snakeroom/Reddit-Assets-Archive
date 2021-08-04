@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.30c0fbcb44fb5529c141.js
-// Retrieved at 8/4/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.81d3a686203fe8947250.js
+// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5138,7 +5138,7 @@
 				Z = Object(c.c)({
 					apiError: g.h,
 					apiPending: g.i,
-					isSerpExperimentOverride: f.a,
+					isSerpExperimentOverride: f.b,
 					loadMore: g.j,
 					viewportDataLoaded: v.a
 				}),
@@ -5896,7 +5896,7 @@
 					...me.d,
 					layout: () => ne.g.Classic,
 					viewportDataLoaded: le.a,
-					isSerpExperimentOverride: ce.a,
+					isSerpExperimentOverride: ce.b,
 					postIds: (e, {
 						heroPostId: t,
 						listingKey: s,
@@ -7340,7 +7340,7 @@
 					listingName: r,
 					searchOptions: p,
 					tab: h
-				} = e, b = p.is_multi || p.category, C = Object(a.e)(m.a);
+				} = e, b = p.is_multi || p.category, C = Object(a.e)(m.b);
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(d.a, {
 					key: "subNav",
 					searchOptions: p,
@@ -7388,7 +7388,7 @@
 						onViewed: g,
 						searchOptions: v,
 						tab: y
-					} = e, O = Object(o.a)(v[u.c]), E = Object(o.a)(v.q || ""), j = v.category, _ = !j && !O, k = j && O, S = k ? O : E, I = Object(a.e)(b.a), N = Object(p.bb)(), P = Object(a.e)(() => Object(p.M)(N)), w = Object(p.U)(N);
+					} = e, O = Object(o.a)(v[u.c]), E = Object(o.a)(v.q || ""), j = v.category, _ = !j && !O, k = j && O, S = k ? O : E, I = Object(a.e)(b.b), N = Object(p.bb)(), P = Object(a.e)(() => Object(p.M)(N)), w = Object(p.U)(N);
 					return n.a.createElement(n.a.Fragment, null, P && n.a.createElement(m.a, {
 						searchOptions: v,
 						url: Object(h.a)(w)
@@ -7713,11 +7713,12 @@
 			}
 			var S = s("./src/reddit/components/SearchResultsNav/redesign.m.less"),
 				I = s.n(S);
-			const N = ({
+
+			function N({
 				location: e,
 				searchOptions: t,
 				activeTab: s
-			}) => {
+			}) {
 				const n = Object(u.a)(),
 					C = Object(o.e)(f.cb),
 					g = t[d.c] || t.q || "",
@@ -7726,7 +7727,7 @@
 						active: s === c.g.Posts,
 						target: h.a.Posts,
 						key: "posts",
-						contentTypes: i.Vb.Posts,
+						contentTypes: "",
 						text: r.fbt._("Posts", null, {
 							hk: "vNVpl"
 						})
@@ -8376,7 +8377,7 @@
 			var ye = s("./src/reddit/components/SearchResultsSubNav/index.m.less"),
 				Oe = s.n(ye);
 			const Ee = Object(o.c)({
-					isSerpRedesignLayout: l.a,
+					isSerpRedesignLayout: l.b,
 					subreddit: m.y
 				}),
 				je = e => {
@@ -9754,6 +9755,14 @@
 				}
 			}
 		},
+		"./src/reddit/helpers/search/shouldDefaultToListings.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			}));
+			var r = s("./src/lib/constants/index.ts");
+			const n = e => e.length > 0 && !e.includes(r.Vb.Posts) && (e.includes(r.Vb.Subreddits) || e.includes(r.Vb.Users))
+		},
 		"./src/reddit/helpers/search/switchSearchScope.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -10132,7 +10141,7 @@
 						location: t,
 						match: s
 					};
-					return Object(o.e)(i.a) ? a.a.createElement(d, r) : a.a.createElement(c, r)
+					return Object(o.e)(i.b) ? a.a.createElement(d, r) : a.a.createElement(c, r)
 				};
 			t.default = l
 		},
@@ -10326,10 +10335,11 @@
 				j = s("./src/reddit/hooks/usePrevious.ts"),
 				_ = s("./src/reddit/layout/page/Listing/index.tsx"),
 				k = s("./src/reddit/selectors/subreddit.ts"),
-				S = s("./src/reddit/pages/SearchResults/index.m.less"),
-				I = s.n(S);
-			const N = 3e3,
-				P = Object(r.a)({
+				S = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
+				I = s("./src/reddit/pages/SearchResults/index.m.less"),
+				N = s.n(I);
+			const P = 3e3,
+				w = Object(r.a)({
 					resolved: {},
 					chunkName: () => "FeaturedLiveEntrypointLegacyAnnouncement",
 					isReady(e) {
@@ -10349,7 +10359,7 @@
 						return "./src/reddit/components/FeaturedLiveEntrypoint/LegacyAnnouncement/index.tsx"
 					}
 				}),
-				w = {
+				T = {
 					[f.g.Listings]: {
 						tab: f.g.Listings,
 						type: [d.Vb.Subreddits, d.Vb.Users],
@@ -10357,16 +10367,16 @@
 					},
 					[f.g.Posts]: {
 						tab: f.g.Posts,
-						type: [d.Vb.Posts],
+						type: [],
 						sidebar: !0
 					}
 				},
-				T = Object(v.t)({
+				L = Object(v.t)({
 					currentPageUrl: v.e,
 					queryParams: v.U,
 					shouldShowCovidBanner: v.Z
 				}),
-				L = ({
+				R = ({
 					location: e,
 					match: t,
 					queryParams: s,
@@ -10375,75 +10385,75 @@
 					sendEvent: C
 				}) => {
 					const v = Object(c.d)(),
-						S = Object(o.useRef)(!1),
-						T = Object(c.e)(e => Object(k.y)(e, {
+						I = Object(o.useRef)(!1),
+						L = Object(c.e)(e => Object(k.y)(e, {
 							subredditName: t.params.subredditName
 						})),
-						[L, R] = Object(o.useState)(!1),
-						F = Object(j.a)(s) || {};
+						[R, F] = Object(o.useState)(!1),
+						M = Object(j.a)(s) || {};
 					Object(o.useEffect)(() => {
 						let e = 0;
-						return Object(y.c)(y.a.SearchResults) || Object(y.d)(y.a.SearchResults), e = window.setTimeout(() => v(Object(m.f)()), N), () => {
+						return Object(y.c)(y.a.SearchResults) || Object(y.d)(y.a.SearchResults), e = window.setTimeout(() => v(Object(m.f)()), P), () => {
 							Object(y.b)(y.a.SearchResults), window.clearTimeout(e)
 						}
 					}, []), Object(o.useEffect)(() => {
-						s !== F && (S.current = !1, R(!1)), s && F && s[g.p] !== F[g.p] && (Object(y.b)(y.a.SearchResults), Object(y.d)(y.a.SearchResults))
-					}, [s, F]);
-					const M = t.params.subredditName || t.params.multiredditName || "",
-						A = t.params.username,
-						B = Object(l.e)(a()(s || {}, g.t)),
-						D = T && B.restrict_sr,
-						U = !D && Object(O.a)(B.type) ? f.g.Listings : f.g.Posts,
-						V = {
-							...B,
-							sort: B.category ? d.Tb.Relevance : B.sort,
-							t: B.category ? d.bc.DAY : B.t,
-							type: w[U].type
+						s !== M && (I.current = !1, F(!1)), s && M && s[g.p] !== M[g.p] && (Object(y.b)(y.a.SearchResults), Object(y.d)(y.a.SearchResults))
+					}, [s, M]);
+					const A = t.params.subredditName || t.params.multiredditName || "",
+						B = t.params.username,
+						D = Object(l.e)(a()(s || {}, g.t)),
+						U = L && D.restrict_sr,
+						V = !U && Object(O.a)(D.type) ? f.g.Listings : f.g.Posts,
+						W = {
+							...D,
+							sort: D.category ? d.Tb.Relevance : D.sort,
+							t: D.category ? d.bc.DAY : D.t,
+							type: Object(S.a)(D.type)
 						},
-						W = Object(l.b)(M, A, V),
-						H = {
-							...V,
+						H = Object(l.b)(A, B, W),
+						q = {
+							...W,
 							type: [d.Vb.Subreddits, d.Vb.Users]
 						},
-						q = Object(l.b)(M, A, H),
-						z = w[U].tab,
-						K = w[U].sidebar;
+						z = Object(l.b)(A, B, q),
+						K = T[V].tab,
+						G = T[V].sidebar;
 					return i.a.createElement(_.a, {
 						hideOnlyChildMargin: !0,
 						className: n,
-						content: i.a.createElement(i.a.Fragment, null, i.a.createElement(u.a, null), r && !L && (() => {
+						content: i.a.createElement(i.a.Fragment, null, i.a.createElement(u.a, null), r && !R && (() => {
 							const e = e => C(Object(E.b)(e, Object(l.e)(a()(s || {}, g.t))));
-							return S.current || (e("view"), S.current = !0), i.a.createElement(P, {
+							return I.current || (e("view"), I.current = !0), i.a.createElement(w, {
 								announcement: x.a,
-								className: I.a.announcement,
+								className: N.a.announcement,
 								onBtnClick: () => e("click"),
 								onClose: () => {
-									e("dismiss"), R(!0)
+									e("dismiss"), F(!0)
 								}
 							})
-						})(), !D && i.a.createElement(h.a, {
+						})(), !U && i.a.createElement(h.a, {
 							location: e,
-							searchOptions: V,
-							activeTab: z
+							searchOptions: W,
+							activeTab: K
 						}), i.a.createElement(p.a, {
-							listingKey: W,
-							listingName: M,
+							listingKey: H,
+							listingName: A,
 							location: e,
-							searchOptions: V,
-							tab: z
+							searchOptions: W,
+							tab: K
 						})),
 						fitPageToContent: !0,
-						sidebar: K && i.a.createElement(b.a, {
-							className: I.a.sidebar,
-							listingKey: q,
-							listingName: M || f.b,
+						sidebar: G && i.a.createElement(b.a, {
+							className: N.a.sidebar,
+							listingKey: z,
+							listingName: A || f.b,
 							location: e,
-							searchOptions: H,
-							tab: z
+							searchOptions: q,
+							tab: K
 						})
 					})
 				};
-			t.default = T(Object(C.c)(L))
+			t.default = L(Object(C.c)(R))
 		},
 		"./src/reddit/selectors/experiments/railsSearchResults.ts": function(e, t, s) {
 			"use strict";
@@ -10607,4 +10617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.30c0fbcb44fb5529c141.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.81d3a686203fe8947250.js.map

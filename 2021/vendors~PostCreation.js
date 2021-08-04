@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation.4d0d0c59573098378c57.js
-// Retrieved at 7/12/2021, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation.9b9057dd895270f4b131.js
+// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -155,8 +155,8 @@
 						_ = n(/edg([ea]|ios)\/(\d+(\.\d+)?)/i),
 						b = o(/version\/(\d+(\.\d+)?)/i),
 						g = /tablet/i.test(t) && !/tablet pc/i.test(t),
-						j = !g && /[^-]mobi/i.test(t),
-						w = /xbox/i.test(t);
+						w = !g && /[^-]mobi/i.test(t),
+						j = /xbox/i.test(t);
 					/opera/i.test(t) ? r = {
 						name: "Opera",
 						opera: e,
@@ -296,7 +296,7 @@
 					} : {
 						name: o(/^(.*)\/(.*) /),
 						version: n(/^(.*)\/(.*) /)
-					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && b && (r.version = b)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || o(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !i && !r.silk ? !r.windowsphone && s ? (r[s] = e, r.ios = e, r.osname = "iOS") : y ? (r.mac = e, r.osname = "macOS") : w ? (r.xbox = e, r.osname = "Xbox") : h ? (r.windows = e, r.osname = "Windows") : v && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
+					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && b && (r.version = b)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || o(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !i && !r.silk ? !r.windowsphone && s ? (r[s] = e, r.ios = e, r.osname = "iOS") : y ? (r.mac = e, r.osname = "macOS") : j ? (r.xbox = e, r.osname = "Xbox") : h ? (r.windows = e, r.osname = "Windows") : v && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
 					var x = "";
 					r.windows ? x = function(e) {
 						switch (e) {
@@ -325,7 +325,7 @@
 						}
 					}(o(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? x = o(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? x = (x = o(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : s ? x = (x = o(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? x = o(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? x = o(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? x = o(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? x = o(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (x = o(/tizen[\/\s](\d+(\.\d+)*)/i)), x && (r.osversion = x);
 					var S = !r.windows && x.split(".")[0];
-					return g || l || "ipad" == s || i && (3 == S || S >= 4 && !j) || r.silk ? r.tablet = e : (j || "iphone" == s || "ipod" == s || i || a || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
+					return g || l || "ipad" == s || i && (3 == S || S >= 4 && !w) || r.silk ? r.tablet = e : (w || "iphone" == s || "ipod" == s || i || a || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var o = t("undefined" != typeof navigator && navigator.userAgent || "");
 
@@ -859,18 +859,6 @@
 				return n(e) + t
 			}
 		},
-		"./node_modules/lodash/xorWith.js": function(e, t, o) {
-			var n = o("./node_modules/lodash/_arrayFilter.js"),
-				r = o("./node_modules/lodash/_baseRest.js"),
-				s = o("./node_modules/lodash/_baseXor.js"),
-				i = o("./node_modules/lodash/isArrayLikeObject.js"),
-				a = o("./node_modules/lodash/last.js"),
-				l = r((function(e) {
-					var t = a(e);
-					return t = "function" == typeof t ? t : void 0, s(n(e, i), void 0, t)
-				}));
-			e.exports = l
-		},
 		"./node_modules/react-autosize-textarea/lib/TextareaAutosize.js": function(e, t, o) {
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
@@ -1153,10 +1141,10 @@
 												var g = l.default(m / 1e3, v, _, y.val, y.stiffness, y.damping, y.precision);
 												v = g[0], _ = g[1]
 											}
-											var j = l.default(m / 1e3, v, _, y.val, y.stiffness, y.damping, y.precision),
-												w = j[0],
-												x = j[1];
-											f[h] = v + (w - v) * s, p[h] = _ + (x - _) * s, a[h] = v, d[h] = _
+											var w = l.default(m / 1e3, v, _, y.val, y.stiffness, y.damping, y.precision),
+												j = w[0],
+												x = w[1];
+											f[h] = v + (j - v) * s, p[h] = _ + (x - _) * s, a[h] = v, d[h] = _
 										}
 									} r.animationID = null, r.accumulatedTime -= i * m, r.setState({
 									currentStyle: f,
@@ -1285,19 +1273,19 @@
 									_ = {},
 									b = {},
 									g = {};
-								for (var j in y)
-									if (Object.prototype.hasOwnProperty.call(y, j)) {
-										var w = y[j];
-										if ("number" == typeof w) v[j] = w, _[j] = 0, b[j] = w, g[j] = 0;
+								for (var w in y)
+									if (Object.prototype.hasOwnProperty.call(y, w)) {
+										var j = y[w];
+										if ("number" == typeof j) v[w] = j, _[w] = 0, b[w] = j, g[w] = 0;
 										else {
-											for (var x = r.state.lastIdealStyles[h][j], S = r.state.lastIdealVelocities[h][j], O = 0; O < i; O++) {
-												var T = l.default(m / 1e3, x, S, w.val, w.stiffness, w.damping, w.precision);
-												x = T[0], S = T[1]
+											for (var x = r.state.lastIdealStyles[h][w], S = r.state.lastIdealVelocities[h][w], T = 0; T < i; T++) {
+												var O = l.default(m / 1e3, x, S, j.val, j.stiffness, j.damping, j.precision);
+												x = O[0], S = O[1]
 											}
-											var I = l.default(m / 1e3, x, S, w.val, w.stiffness, w.damping, w.precision),
-												k = I[0],
-												E = I[1];
-											v[j] = x + (k - x) * s, _[j] = S + (E - S) * s, b[j] = x, g[j] = S
+											var I = l.default(m / 1e3, x, S, j.val, j.stiffness, j.damping, j.precision),
+												E = I[0],
+												k = I[1];
+											v[w] = x + (E - x) * s, _[w] = S + (k - S) * s, b[w] = x, g[w] = S
 										}
 									} f[h] = v, p[h] = _, a[h] = b, d[h] = g
 							}
@@ -1436,10 +1424,10 @@
 							b = g;
 							break
 						} if (null == b) {
-						var j = e(_);
-						p[v] = j, h[v] = j;
-						var w = i.default(_.style);
-						m[v] = w, y[v] = w
+						var w = e(_);
+						p[v] = w, h[v] = w;
+						var j = i.default(_.style);
+						m[v] = j, y[v] = j
 					} else p[v] = s[b], h[v] = l[b], m[v] = a[b], y[v] = d[b]
 				}
 				return [c, p, m, h, y]
@@ -1487,26 +1475,26 @@
 									s = n - r.prevTime;
 								if (r.prevTime = n, r.accumulatedTime = r.accumulatedTime + s, r.accumulatedTime > 10 * h && (r.accumulatedTime = 0), 0 === r.accumulatedTime) return r.animationID = null, void r.startAnimationIfNecessary();
 								for (var i = (r.accumulatedTime - Math.floor(r.accumulatedTime / h) * h) / h, a = Math.floor(r.accumulatedTime / h), u = v(r.props.willEnter, r.props.willLeave, r.props.didLeave, r.state.mergedPropsStyles, o, r.state.currentStyles, r.state.currentVelocities, r.state.lastIdealStyles, r.state.lastIdealVelocities), c = u[0], p = u[1], m = u[2], _ = u[3], b = u[4], g = 0; g < c.length; g++) {
-									var j = c[g].style,
-										w = {},
+									var w = c[g].style,
+										j = {},
 										x = {},
 										S = {},
-										O = {};
-									for (var T in j)
-										if (Object.prototype.hasOwnProperty.call(j, T)) {
-											var I = j[T];
-											if ("number" == typeof I) w[T] = I, x[T] = 0, S[T] = I, O[T] = 0;
+										T = {};
+									for (var O in w)
+										if (Object.prototype.hasOwnProperty.call(w, O)) {
+											var I = w[O];
+											if ("number" == typeof I) j[O] = I, x[O] = 0, S[O] = I, T[O] = 0;
 											else {
-												for (var k = _[g][T], E = b[g][T], R = 0; R < a; R++) {
-													var P = l.default(h / 1e3, k, E, I.val, I.stiffness, I.damping, I.precision);
-													k = P[0], E = P[1]
+												for (var E = _[g][O], k = b[g][O], P = 0; P < a; P++) {
+													var R = l.default(h / 1e3, E, k, I.val, I.stiffness, I.damping, I.precision);
+													E = R[0], k = R[1]
 												}
-												var M = l.default(h / 1e3, k, E, I.val, I.stiffness, I.damping, I.precision),
+												var M = l.default(h / 1e3, E, k, I.val, I.stiffness, I.damping, I.precision),
 													A = M[0],
 													C = M[1];
-												w[T] = k + (A - k) * i, x[T] = E + (C - E) * i, S[T] = k, O[T] = E
+												j[O] = E + (A - E) * i, x[O] = k + (C - k) * i, S[O] = E, T[O] = k
 											}
-										} _[g] = S, b[g] = O, p[g] = w, m[g] = x
+										} _[g] = S, b[g] = T, p[g] = j, m[g] = x
 								}
 								r.animationID = null, r.accumulatedTime -= a * h, r.setState({
 									currentStyles: p,
@@ -1890,4 +1878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.4d0d0c59573098378c57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation.9b9057dd895270f4b131.js.map
