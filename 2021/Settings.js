@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.19f1abbe347bd7fd0846.js
-// Retrieved at 8/4/2021, 3:50:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.b990fda303e03619236d.js
+// Retrieved at 8/4/2021, 5:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -11076,7 +11076,7 @@
 				}),
 				Ge = Object(o.b)(He, e => ({
 					changeAccountGender: t => e(Object(w.a)(t)),
-					changeLanguage: t => e(Object(k.e)(t)),
+					changeLanguage: t => e(Object(k.g)(t)),
 					openChangeEmailModal: () => e(Object(y.i)(ke.a)),
 					openSSOCreatePasswordForEmailModal: () => e(Object(y.h)(ke.l)),
 					resendEmail: () => e(Object(x.v)())
@@ -14331,4 +14331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.19f1abbe347bd7fd0846.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b990fda303e03619236d.js.map

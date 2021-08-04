@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.b58f1f050bb9ea32279f.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.06cea86d3d0197873ea5.js
+// Retrieved at 8/4/2021, 5:00:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -608,18 +608,26 @@
 			"use strict";
 			r.d(t, "a", (function() {
 				return l
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "h", (function() {
 				return b
 			})), r.d(t, "b", (function() {
 				return p
-			})), r.d(t, "c", (function() {
-				return f
 			})), r.d(t, "e", (function() {
-				return O
-			})), r.d(t, "d", (function() {
-				return g
+				return f
 			})), r.d(t, "g", (function() {
+				return O
+			})), r.d(t, "f", (function() {
+				return g
+			})), r.d(t, "k", (function() {
 				return j
+			})), r.d(t, "c", (function() {
+				return _
+			})), r.d(t, "d", (function() {
+				return S
+			})), r.d(t, "i", (function() {
+				return I
+			})), r.d(t, "j", (function() {
+				return E
 			}));
 			var s = r("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
 				n = r("./src/lib/constants/index.ts"),
@@ -651,7 +659,7 @@
 						method: n.hb.PATCH,
 						type: "json"
 					}), f.searchParams.delete("locale")) : f.searchParams.delete("locale"), window.location.href = f.toString()
-				}, g = "META__SET_POPULAR_GEO_FILTER", j = Object(d.a)(g)
+				}, g = "META__SET_POPULAR_GEO_FILTER", j = Object(d.a)(g), _ = "META__PWA_ENTERED", S = "META__PWA_LEFT", I = Object(d.a)(_), E = Object(d.a)(S)
 		},
 		"./src/reddit/actions/pages/subreddit.ts": function(e, t, r) {
 			"use strict";
@@ -977,7 +985,7 @@
 						})), Object(E.b)(i, Z, null == $ ? void 0 : $.subredditInfoByName, null == $ ? void 0 : $.identity)
 					}
 					let r;
-					z.geoFilter && i(Object(T.g)(z.geoFilter));
+					z.geoFilter && i(Object(T.k)(z.geoFilter));
 					const s = z.postIds.filter(e => !!z.posts[e].isMeta);
 					if (s.length && Z) {
 						const e = Object(m.i)(() => Object(se.a)(c.apiContext(), Z, s), {
@@ -5027,4 +5035,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.b58f1f050bb9ea32279f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.06cea86d3d0197873ea5.js.map
