@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ae299b84a01948ab6eba.js
-// Retrieved at 8/5/2021, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0c45037bb8f1d4bde81d.js
+// Retrieved at 8/5/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -351,7 +351,8 @@
 					fuzzyIP: !0
 				}).add(a.g.subreddit.prefix, a.g.subreddit.config).add(a.g.subredditFull.prefix, a.g.subreddit.config).add(a.g.profile.prefix, a.g.profile.config).add(a.g.profileFull.prefix, a.g.profile.config).add(a.g.mention.prefix, a.g.mention.config),
 				E = r()().tlds(i.a).set({
-					fuzzyIP: !0
+					fuzzyIP: !0,
+					fuzzyEmail: !1
 				}).add(a.g.subreddit.prefix, a.g.subredditFullUrl.config).add(a.g.subredditFull.prefix, a.g.subredditFullUrl.config),
 				C = m.normalize;
 			m.normalize = e => {
@@ -30509,4 +30510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ae299b84a01948ab6eba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0c45037bb8f1d4bde81d.js.map
