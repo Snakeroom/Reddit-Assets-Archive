@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e86cadb73d1a63bc6471.js
-// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b39ae69cc9683d1cc178.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8339,7 +8339,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), i = Object(U.a)(p.nc) === p.rc.Enabled;
+					} = t, r = Object(B.a)(), i = Object(U.a)(p.lc) === p.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
@@ -8481,7 +8481,7 @@
 				}
 			}
 			t.c = s.a.memo((function(e) {
-				const t = Object(m.bb)(),
+				const t = Object(m.ab)(),
 					n = Object(m.v)(t),
 					o = Object(K.a)(),
 					r = Object(i.e)(r => Q(r, {
@@ -22497,7 +22497,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.bb
+			t.a = o.ab
 		},
 		"./src/reddit/hooks/usePrevious.ts": function(e, t, n) {
 			"use strict";
@@ -23650,7 +23650,7 @@
 			const h = Object(d.t)(),
 				b = Object(i.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.P)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.O)(e, t)
 				}),
 				f = Object(s.b)(b),
 				g = ({
@@ -28766,7 +28766,7 @@
 					draftId: v.u,
 					isPostCreationPage: v.D,
 					pageLayer: e => e,
-					sourcePostId: e => Object(v.V)(e).source_id
+					sourcePostId: e => Object(v.U)(e).source_id
 				}),
 				cu = Object(i.c)({
 					submissionType: S.a,
@@ -28775,7 +28775,7 @@
 					discardGoesBack: (e, {
 						pageLayer: t
 					}) => {
-						const n = Object(v.S)(e, {
+						const n = Object(v.R)(e, {
 							pageLayer: t
 						});
 						return !!n && "/" === n[0]
@@ -29764,7 +29764,7 @@
 			};
 
 			function d() {
-				const e = Object(r.bb)(),
+				const e = Object(r.ab)(),
 					t = Object(o.e)(t => Object(r.q)(t, {
 						pageLayer: e
 					})),
@@ -29796,10 +29796,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Rc,
+				experimentName: o.Pc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.Wc.Enabled
+			}) === o.Uc.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -29813,14 +29813,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.cd
-					}) === o.md.Enabled
+						experimentName: o.ad
+					}) === o.kd.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.bd
-					}) === o.ld.Enabled
+						experimentName: o.Zc
+					}) === o.jd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -30528,4 +30528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e86cadb73d1a63bc6471.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b39ae69cc9683d1cc178.js.map

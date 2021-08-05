@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.4bfdf6077a9f4eec42b1.js
-// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.9c3462a2c638ad7b37e8.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/reddit/actions/commentsListTruncated/index.ts": function(e, t, s) {
@@ -386,9 +386,9 @@
 							i = Object(se.K)(s(), {
 								identifier: F.belongsTo
 							});
-						if (i && (e => D.zd.Redirect === Object(U.b)(e, {
+						if (i && (e => D.xd.Redirect === Object(U.b)(e, {
 								experimentEligibilitySelector: $,
-								experimentName: D.rd
+								experimentName: D.pd
 							}))(s())) return void t(Object(o.c)(i.url));
 						if ((F.media && F.media.type) === N.o.LIVEVIDEO) {
 							const e = `/rpan${F.belongsTo.type===_.a.SUBREDDIT?i.url:"/"}${Object(u.t)(F.id)}`;
@@ -2425,7 +2425,7 @@
 							userId: s.authorId
 						}) && !Object(zt.g)(e)
 					},
-					modModeEnabled: St.R,
+					modModeEnabled: St.Q,
 					errorMsgs: S.G,
 					replyFormOpen: S.J,
 					subreddit: St.q,
@@ -4584,7 +4584,7 @@
 				pageLayer: e => e
 			}), st = Object(a.b)(() => Object(l.c)({
 				activeModalId: A.a,
-				flairStyleTemplate: ye.T,
+				flairStyleTemplate: ye.S,
 				currentUser: H.j,
 				crosspost: U.d,
 				hideNSFWPref: H.B,
@@ -4605,7 +4605,7 @@
 				showPromotedCTA: W.a,
 				post: U.G,
 				moderatorPermissions: V.k,
-				modModeEnabled: ye.R,
+				modModeEnabled: ye.Q,
 				isInCategoriesExperiment: R.a,
 				showAwardsPlaque: F.a,
 				showEditFlair: we.a,
@@ -5726,7 +5726,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: n,
-							shouldShowLinkedPosts: n && !Object(x.fe)(t) && !Object(I.a)(t),
+							shouldShowLinkedPosts: n && !Object(x.de)(t) && !Object(I.a)(t),
 							subreddit: o
 						}
 					}
@@ -5781,7 +5781,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(x.fe)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(x.de)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -5792,9 +5792,9 @@
 						hk: "2g363L"
 					}) : Object(I.b)(c) ? o.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === x.Uc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
+					}) : t === x.Sc.SfwRecs ? o.fbt._("Top posts on Reddit this week", null, {
 						hk: "w3BDa"
-					}) : t === x.Uc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
+					}) : t === x.Sc.DeRecs ? o.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : o.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -6124,7 +6124,7 @@
 					isFrontpage: u.y,
 					isPredictionsPage: u.L,
 					isProfilePostListing: u.I,
-					isTopicPage: u.O,
+					isTopicPage: u.N,
 					pageLayer: e => e
 				})
 			}
@@ -6133,7 +6133,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: C.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(u.P)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(u.O)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -6162,7 +6162,7 @@
 					}),
 					subredditsById: y.Z,
 					viewportDataLoaded: P.a,
-					pageReferrer: u.S,
+					pageReferrer: u.R,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.d
 				},
@@ -7786,9 +7786,9 @@
 			const r = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.Hb
+					experimentName: o.Fb
 				});
-				return !(!t || Object(o.fe)(t))
+				return !(!t || Object(o.de)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -7801,8 +7801,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(n.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: o.sd
-			}) === o.Ad.Enabled
+				experimentName: o.qd
+			}) === o.yd.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -7923,7 +7923,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.fe)(t)
+					return Boolean(t) && !Object(n.de)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -7948,4 +7948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.4bfdf6077a9f4eec42b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9c3462a2c638ad7b37e8.js.map

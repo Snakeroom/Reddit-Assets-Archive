@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.fdef6c0075b913605d8d.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.2170fe52080c24712fc6.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -1649,7 +1649,7 @@
 								experimentName: o.B,
 								expEventOverride: t
 							});
-							return !!(Object(o.fe)(r) ? void 0 : r)
+							return !!(Object(o.de)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -1770,7 +1770,7 @@
 				a = r("./src/reddit/selectors/telemetry.ts");
 
 			function c() {
-				const e = Object(i.bb)(),
+				const e = Object(i.ab)(),
 					t = e ? Object(a.getPageTypeFromCurrentPage)(e) : void 0,
 					r = "search_results" === t && Object(a.structureType)(e) === a.StructureType.Trending;
 				return {
@@ -2663,4 +2663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.fdef6c0075b913605d8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.2170fe52080c24712fc6.js.map

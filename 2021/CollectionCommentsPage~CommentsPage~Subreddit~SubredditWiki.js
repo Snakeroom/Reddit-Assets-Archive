@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6c5709f884c79be251d7.js
-// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3551783153ed75db47b3.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1662,7 +1662,7 @@
 			const ce = Object(c.a)("spPolls", N),
 				le = Object(d.t)(),
 				ue = Object(a.c)({
-					layout: d.P,
+					layout: d.O,
 					widget: l.f
 				}),
 				me = Object(i.b)(ue);
@@ -1809,8 +1809,8 @@
 			}
 			const E = 129,
 				k = Object(h.t)({
-					filterName: e => Object(h.U)(e)[b.g],
-					url: e => Object(h.ab)(e)
+					filterName: e => Object(h.T)(e)[b.g],
+					url: e => Object(h.Z)(e)
 				}),
 				C = Object(o.c)({
 					subredditId: (e, t) => Object(j.D)(e, t.subredditName)
@@ -3181,11 +3181,11 @@
 				s = n("./src/reddit/constants/postLayout.ts"),
 				i = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.e[Object(i.P)(e, {})] === s.d.Card,
+			const o = e => s.e[Object(i.O)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: r.Q
-				}) === r.ob.Treatment
+				}) === r.nb.Treatment
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
 			"use strict";
@@ -3277,4 +3277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6c5709f884c79be251d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3551783153ed75db47b3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.0e746c4b5fc2167096a2.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.c2f6046504444476c6a7.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, s) {
@@ -47,7 +47,7 @@
 					isSubscriptionsPinned: v.b
 				}),
 				N = Object(o.b)(C);
-			class L extends a.a.Component {
+			class O extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						bodyScrollOffset: 0
@@ -102,7 +102,7 @@
 					}))), o && a.a.createElement(y, null)))
 				}
 			}
-			var O = E.a.wrapped(N(L), "Component", f.a),
+			var L = E.a.wrapped(N(O), "Component", f.a),
 				S = s("./src/reddit/components/Settings/modalIds.ts"),
 				j = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				w = s("./src/reddit/controls/Button/index.tsx"),
@@ -166,7 +166,7 @@
 						className: Object(i.a)(H.a.wrapper, e)
 					}, a.a.createElement("div", {
 						className: H.a.topLine
-					}), a.a.createElement(O, {
+					}), a.a.createElement(L, {
 						containerClassName: H.a.innerContainer,
 						considerSidebar: !0,
 						render: this.renderLayout
@@ -233,7 +233,7 @@
 				h = s("./src/lib/lessComponent.tsx");
 			const v = Object(m.t)(),
 				b = Object(r.c)({
-					layout: m.P
+					layout: m.O
 				}),
 				x = Object(o.b)(b);
 			class f extends a.a.Component {
@@ -362,4 +362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.0e746c4b5fc2167096a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.c2f6046504444476c6a7.js.map

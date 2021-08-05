@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.e00466e47d7abc6ed7d0.js
-// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.23c81eed8ff9b33fbfff.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -5586,12 +5586,12 @@
 					pageLayer: t
 				}) => Object(s.K)(t), (e, t, o) => !e && !t && o),
 				c = Object(n.a)((e, t) => Object(i.c)(e, {
-					experimentName: r.Bb,
+					experimentName: r.zb,
 					experimentEligibilitySelector: e => l(e, t)
 				}), e => e),
-				d = e => e === r.Vd.NoCommunityWidgets,
-				u = e => e === r.Vd.NoRulesModerators,
-				p = e => e === r.Vd.RelatedPostsDu
+				d = e => e === r.Td.NoCommunityWidgets,
+				u = e => e === r.Td.NoRulesModerators,
+				p = e => e === r.Td.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, o) {
 			"use strict";
@@ -5620,4 +5620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e00466e47d7abc6ed7d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.23c81eed8ff9b33fbfff.js.map

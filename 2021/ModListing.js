@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.8dc2f979d5f32fa0fb19.js
-// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.9d65f05e1910ff4f34e6.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2121,7 +2121,7 @@
 			const h = Object(c.t)(),
 				b = Object(i.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(c.P)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(c.O)(e, t)
 				}),
 				f = Object(o.b)(b),
 				y = ({
@@ -4444,10 +4444,10 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: n.Rc,
+				experimentName: n.Pc,
 				experimentEligibilitySelector: s.a,
 				expEventOverride: !1
-			}) === n.Wc.Enabled
+			}) === n.Uc.Enabled
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, r) {
 			"use strict";
@@ -4511,4 +4511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.8dc2f979d5f32fa0fb19.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.9d65f05e1910ff4f34e6.js.map

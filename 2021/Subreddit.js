@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ccc2d94556afa3520ca9.js
-// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.47c18b3c52c7b3560155.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1589,11 +1589,11 @@
 					experimentName: ne.Y,
 					experimentEligibilitySelector: ae
 				}), re.a),
-				ce = Object(a.a)(ie, e => e === ne.vc.ToolTip_nonSub),
-				de = Object(a.a)(ie, e => e === ne.vc.ToolTip_2ndVisit),
-				le = Object(a.a)(ie, e => e === ne.vc.ToolTip_3rdVisit),
-				ue = Object(a.a)(ie, e => e === ne.vc.HalfSheet_2ndVisit),
-				me = Object(a.a)(ie, e => e === ne.vc.HalfSheet_3rdVisit),
+				ce = Object(a.a)(ie, e => e === ne.tc.ToolTip_nonSub),
+				de = Object(a.a)(ie, e => e === ne.tc.ToolTip_2ndVisit),
+				le = Object(a.a)(ie, e => e === ne.tc.ToolTip_3rdVisit),
+				ue = Object(a.a)(ie, e => e === ne.tc.HalfSheet_2ndVisit),
+				me = Object(a.a)(ie, e => e === ne.tc.HalfSheet_3rdVisit),
 				pe = Object(a.a)(ue, me, de, le, ce, (e, t, n, s, r) => e || t || n || s || r);
 			var be = e => {
 					const t = Object(o.d)(),
@@ -2483,7 +2483,7 @@
 			}) => o.a.createElement(m.q, {
 				className: e,
 				disabled: b || l,
-				onClick: () => n === u.Ld.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
+				onClick: () => n === u.Jd.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
 				onMouseEnter: a,
 				onMouseLeave: i,
 				priority: m.b.Secondary,
@@ -3950,7 +3950,7 @@
 				I = Object(h.t)(),
 				P = Object(i.c)({
 					dropdownIsOpen: Object(E.b)(S),
-					postLayout: h.P,
+					postLayout: h.O,
 					redditStyle: h.A
 				}),
 				T = Object(a.b)(P, e => ({
@@ -8984,12 +8984,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case h.Pd.SmIcon:
+						case h.Nd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Pd.SmIconHc:
+						case h.Nd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10411,7 +10411,7 @@
 					isFrontpage: p.y,
 					isPredictionsPage: p.L,
 					isProfilePostListing: p.I,
-					isTopicPage: p.O,
+					isTopicPage: p.N,
 					pageLayer: e => e
 				})
 			}
@@ -10420,7 +10420,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: x.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.P)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.O)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -10449,7 +10449,7 @@
 					}),
 					subredditsById: _.Z,
 					viewportDataLoaded: C.a,
-					pageReferrer: p.S,
+					pageReferrer: p.R,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: g.d
 				},
@@ -10553,11 +10553,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: d.T,
+				flairStyleTemplate: d.S,
 				hideNSFWPref: b.B,
 				isActive: p.j,
 				moderatorPermissions: u.k,
-				modModeEnabled: d.R,
+				modModeEnabled: d.Q,
 				showEditFlair: m.a
 			}), (e, {
 				postId: t
@@ -11353,15 +11353,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.Md.Add:
+					case r.Kd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.Md.Start:
+					case r.Kd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.Md.Create:
+					case r.Kd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -12943,7 +12943,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.bb
+			t.a = s.ab
 		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
 			"use strict";
@@ -13444,7 +13444,7 @@
 			const b = Object(d.t)(),
 				h = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.P)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.O)(e, t)
 				}),
 				f = Object(o.b)(h),
 				x = ({
@@ -13990,7 +13990,7 @@
 				return !1
 			}), Qe = (e, t) => {
 				const n = qe(e),
-					s = Object(se.P)(e, t),
+					s = Object(se.O)(e, t),
 					{
 						sort: r
 					} = $e(e, t);
@@ -14055,7 +14055,7 @@
 			}), nt = Object(m.c)({
 				showCreatePostBanner: Je,
 				contentGateInfo: (e, t) => Object(Ne.e)(e, t.match.params.subredditName),
-				layout: se.P,
+				layout: se.O,
 				isRpanDuVisible: (e, {
 					match: t
 				}) => Object(we.a)(e, {
@@ -14812,9 +14812,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
-			const a = e => s.Eb.Enabled === Object(r.c)(e, {
+			const a = e => s.Cb.Enabled === Object(r.c)(e, {
 				experimentEligibilitySelector: o.J,
-				experimentName: s.Db
+				experimentName: s.Bb
 			})
 		},
 		"./src/reddit/selectors/experiments/econLeaderboards.ts": function(e, t, n) {
@@ -14830,15 +14830,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.Ob
+						experimentName: s.Mb
 					});
-					return !(!t || Object(s.fe)(t))
+					return !(!t || Object(s.de)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.Ob
-					}) === s.jc.ListingEnabled
+						experimentName: s.Mb
+					}) === s.hc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
@@ -14849,10 +14849,10 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
-				experimentName: s.Rc,
+				experimentName: s.Pc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === s.Wc.Enabled
+			}) === s.Uc.Enabled
 		},
 		"./src/reddit/selectors/experiments/newPostPill.ts": function(e, t, n) {
 			"use strict";
@@ -14877,9 +14877,9 @@
 					})(e, t)) return -1;
 				const n = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.Jc
+					experimentName: r.Hc
 				});
-				return n === r.Lc.TenPosts ? 10 : n === r.Lc.FifteenPosts ? 15 : -1
+				return n === r.Jc.TenPosts ? 10 : n === r.Jc.FifteenPosts ? 15 : -1
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
@@ -14960,7 +14960,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.fb
-					}) === s.rb.Enabled
+					}) === s.qb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, n) {
@@ -14973,8 +14973,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const a = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.sd
-			}) === s.Ad.Enabled
+				experimentName: s.qd
+			}) === s.yd.Enabled
 		},
 		"./src/reddit/selectors/experiments/srCreationEntrypoints.ts": function(e, t, n) {
 			"use strict";
@@ -14989,11 +14989,11 @@
 				a = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const c = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Cd,
+					experimentName: r.Ad,
 					experimentEligibilitySelector: a.e
 				}), i.a),
 				d = Object(s.a)(e => Object(o.c)(e, {
-					experimentName: r.Dd,
+					experimentName: r.Bd,
 					experimentEligibilitySelector: a.e
 				}), i.a)
 		},
@@ -15005,9 +15005,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/user.ts");
-			const a = e => Object(o.G)(e) || !(s.Wd.Holdout === Object(r.c)(e, {
+			const a = e => Object(o.G)(e) || !(s.Ud.Holdout === Object(r.c)(e, {
 				experimentEligibilitySelector: r.a,
-				experimentName: s.Td
+				experimentName: s.Rd
 			}))
 		},
 		"./src/reddit/selectors/experiments/uiSimplification.ts": function(e, t, n) {
@@ -15022,17 +15022,17 @@
 				r = n("./src/reddit/featureFlags/utils.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = ["AU", "CA", "GB", "US"],
-				i = new Set([s.wc.AllItems, s.wc.TrendingSearch]),
+				i = new Set([s.uc.AllItems, s.uc.TrendingSearch]),
 				c = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: Object(r.d)(Object(r.b)(...a)),
-						experimentName: s.xc
+						experimentName: s.vc
 					});
 					return i.has(t)
 				},
-				d = e => s.wc.AllItems === Object(o.c)(e, {
+				d = e => s.uc.AllItems === Object(o.c)(e, {
 					experimentEligibilitySelector: Object(r.d)(Object(r.b)(...a)),
-					experimentName: s.xc
+					experimentName: s.vc
 				})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -15164,12 +15164,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Hd
+						experimentName: s.Fd
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Pd.SmIcon || t === s.Pd.SmIconHc
+					return t === s.Nd.SmIcon || t === s.Nd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -15271,4 +15271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ccc2d94556afa3520ca9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.47c18b3c52c7b3560155.js.map

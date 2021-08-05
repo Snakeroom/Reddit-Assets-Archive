@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.2cfe0426119ef270eb3b.js
-// Retrieved at 8/2/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.bc359d05be5056a5e7ef.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -116,8 +116,8 @@
 				h = o("./src/reddit/constants/componentSizes.ts"),
 				E = o("./src/reddit/constants/elementIds.ts"),
 				C = o("./src/reddit/contexts/NavbarExp.ts"),
-				v = o("./src/reddit/contexts/PageLayer/index.tsx"),
-				O = o("./src/reddit/controls/MetaSeparator/index.tsx"),
+				O = o("./src/reddit/contexts/PageLayer/index.tsx"),
+				v = o("./src/reddit/controls/MetaSeparator/index.tsx"),
 				x = o("./src/reddit/helpers/postCollection.ts"),
 				_ = o("./src/reddit/models/Post/index.ts"),
 				g = o("./src/reddit/models/PostCollection/index.ts"),
@@ -171,14 +171,14 @@
 						shouldShowThumbnail: h,
 						style: E,
 						toggleEditStartTimeModal: C,
-						updateSelectedPostRef: v,
-						isProfilePage: O
+						updateSelectedPostRef: O,
+						isProfilePage: v
 					} = e;
 					return n.a.createElement(k.a, {
 						className: Object(a.a)(W.a.postContainer, {
 							[W.a.isNightmodeOn]: i,
 							[W.a.isSelectedPost]: c,
-							[W.a.isProfilePage]: O
+							[W.a.isProfilePage]: v
 						}),
 						isOverlay: r,
 						makePostContainerId: Y,
@@ -187,7 +187,7 @@
 						eventFactory: s,
 						style: E
 					}, n.a.createElement("div", {
-						ref: c && v || void 0
+						ref: c && O || void 0
 					}, n.a.createElement("div", {
 						className: Object(a.a)(W.a.postContent, {
 							[W.a.active]: c
@@ -248,13 +248,13 @@
 						style: h,
 						toggleEditStartTimeModal: E,
 						updateSelectedPostRef: C,
-						isProfilePage: v
-					} = e, O = l && l.url || "", x = b.isSpoiler || b.isNSFW, _ = b.isScoreHidden;
+						isProfilePage: O
+					} = e, v = l && l.url || "", x = b.isSpoiler || b.isNSFW, _ = b.isScoreHidden;
 					return n.a.createElement(k.a, {
 						className: Object(a.a)(W.a.galleryPostContainer, {
 							[W.a.isSelectedPost]: d,
 							[W.a.isNightmodeOn]: r,
-							[W.a.isProfilePage]: v
+							[W.a.isProfilePage]: O
 						}),
 						isOverlay: c,
 						makePostContainerId: Y,
@@ -266,12 +266,12 @@
 					}, n.a.createElement("div", {
 						className: W.a.scrollToContainer,
 						ref: d && C || void 0
-					}, O ? n.a.createElement("div", {
+					}, v ? n.a.createElement("div", {
 						className: Object(a.a)(W.a.galleryPostImage, {
 							[W.a.blurBackground]: x
 						}),
 						style: {
-							backgroundImage: `url('${O}')`
+							backgroundImage: `url('${v}')`
 						}
 					}) : n.a.createElement(J, {
 						className: W.a.galleryThumbnailPlaceholder,
@@ -357,17 +357,17 @@
 					})
 				}
 			}
-			var q = Object(v.t)({
-					currentProfileName: v.h,
-					isCommentsPage: v.w,
-					isProfilePostListing: v.I,
-					isProfilePage: v.G,
+			var q = Object(O.t)({
+					currentProfileName: O.h,
+					isCommentsPage: O.w,
+					isProfilePostListing: O.I,
+					isProfilePage: O.G,
 					pageLayer: e => e
 				})(Object(l.b)(() => Object(i.c)({
 					activeModalId: A.a,
 					galleryThumbnail: y.e,
 					isFutureEvent: y.i,
-					layout: v.P,
+					layout: O.O,
 					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
 					subredditOrProfile: f.T
@@ -403,8 +403,8 @@
 			}, se = e => ({
 				top: oe(e),
 				maxHeight: `calc(100vh - ${h.f+(e.isOverlay?h.n:0)+h.b+5}px)`
-			}), ne = Object(v.t)({
-				isProfilePage: v.G,
+			}), ne = Object(O.t)({
+				isProfilePage: O.G,
 				pageLayer: e => e
 			}), le = Object(l.b)(() => Object(i.c)({
 				collection: y.n,
@@ -472,7 +472,7 @@
 							isDeleted: Object(_.n)(m)
 						}))], {
 							hk: "4E412f"
-						})), n.a.createElement(O.a, {
+						})), n.a.createElement(v.a, {
 							isSmall: !0
 						}), n.a.createElement("span", {
 							className: K.a.postCount
@@ -565,8 +565,8 @@
 				h = o("./src/reddit/controls/Dropdown/Row.tsx"),
 				E = o("./src/reddit/selectors/activeModalId.ts"),
 				C = o("./src/reddit/selectors/postCollection.ts"),
-				v = o("./node_modules/reselect/es/index.js"),
-				O = o("./src/reddit/helpers/trackers/postCollection.ts"),
+				O = o("./node_modules/reselect/es/index.js"),
+				v = o("./src/reddit/helpers/trackers/postCollection.ts"),
 				x = o("./src/reddit/components/Widgets/PostCollection/CollectionOverflowMenu/index.m.less"),
 				_ = o.n(x),
 				g = o("./node_modules/fbt/lib/FbtPublic.js");
@@ -574,7 +574,7 @@
 			let f;
 			const S = Object(E.b)("DELETE_COLLECTION_CONFM_MODAL_ID"),
 				T = Object(E.b)("EDIT_POST_COLLECTION_MODAL_ID"),
-				N = Object(v.c)({
+				N = Object(O.c)({
 					createPostUrl: C.d,
 					isDeleteConfirmModalOpen: S,
 					isEditCollectionModalOpen: T,
@@ -607,7 +607,7 @@
 					shouldShowCreatePost: h,
 					targetPosition: E,
 					tooltipPosition: C,
-					sendEvent: v
+					sendEvent: O
 				} = e;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement(b.b, {
 					className: t,
@@ -622,14 +622,14 @@
 					})
 				}), P && i.a.createElement(i.a.Fragment, null, i.a.createElement(y, {
 					onClick: () => {
-						v(Object(O.l)(o)), p()
+						O(Object(v.l)(o)), p()
 					},
 					displayText: g.fbt._("Edit", null, {
 						hk: "1nftDt"
 					})
 				}), i.a.createElement(y, {
 					onClick: () => {
-						v(Object(O.k)(o)), m()
+						O(Object(v.k)(o)), m()
 					},
 					displayText: g.fbt._("Delete collection", null, {
 						hk: "2FyIJB"
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.2cfe0426119ef270eb3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.bc359d05be5056a5e7ef.js.map

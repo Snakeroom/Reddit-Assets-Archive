@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.5930a1a60d7ccf61ed62.js
-// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.95e1f9d236d812a83a9c.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -1763,7 +1763,7 @@
 					pageLayer: e => e
 				}),
 				B = Object(i.c)({
-					layout: h.P,
+					layout: h.O,
 					isDropdownOpen: (e, {
 						tooltipId: t
 					}) => Object(v.b)(t)(e),
@@ -2937,14 +2937,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.cd
-					}) === o.md.Enabled
+						experimentName: o.ad
+					}) === o.kd.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.bd
-					}) === o.ld.Enabled
+						experimentName: o.Zc
+					}) === o.jd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3067,4 +3067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.5930a1a60d7ccf61ed62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.95e1f9d236d812a83a9c.js.map

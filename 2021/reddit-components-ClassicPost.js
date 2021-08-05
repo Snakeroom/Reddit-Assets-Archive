@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.da8c5aa9dbe78b834c37.js
-// Retrieved at 8/4/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.398be6350b11faf6fe64.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3125,7 +3125,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), a = Object(G.a)(m.nc) === m.rc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(G.a)(m.lc) === m.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -3267,7 +3267,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(p.bb)(),
+				const t = Object(p.ab)(),
 					n = Object(p.v)(t),
 					s = Object(B.a)(),
 					r = Object(a.e)(r => Q(r, {
@@ -3595,14 +3595,14 @@
 					isLoggedIn: _.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: p.k,
-					modModeEnabled: d.R,
+					modModeEnabled: d.Q,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
 						return n ? e.polls.models[n] : null
 					},
 					showEditFlair: b.a,
 					showMedia: d.r,
-					flairStyleTemplate: d.T
+					flairStyleTemplate: d.S
 				},
 				v = (e, {
 					postId: t
@@ -3634,7 +3634,7 @@
 				c = n("./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx"),
 				d = n("./src/reddit/connectors/ClassicPost/index.tsx");
 			const l = Object(i.t)({
-					searchQuery: i.X
+					searchQuery: i.W
 				}),
 				u = Object(o.b)(() => Object(a.c)(d.c), d.b, (e, t, n) => ({
 					...e,
@@ -6137,7 +6137,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.fb
-					}) === s.rb.Enabled
+					}) === s.qb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -6374,9 +6374,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.dd,
+				experimentName: r.bd,
 				experimentEligibilitySelector: o.a
-			}), a.G, (e, t) => e === r.nd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), a.G, (e, t) => e === r.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -6519,4 +6519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.da8c5aa9dbe78b834c37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.398be6350b11faf6fe64.js.map

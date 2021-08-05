@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.77d1605d88747c17cedd.js
-// Retrieved at 8/4/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4e47726e7db5283cd79e.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2957,7 +2957,7 @@
 			const le = Object(a.a)(T.M, e => e.some(de.c)),
 				ue = Object(a.a)(le, e => e),
 				me = (e, t) => Object(ce.c)(e, {
-					experimentName: ae.Ab,
+					experimentName: ae.yb,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -2987,7 +2987,7 @@
 					autoplayPref: C.b,
 					activeModalId: S.a,
 					hideNSFWPref: C.B,
-					flairStyleTemplate: ne.T,
+					flairStyleTemplate: ne.S,
 					isCurrentUserProfilePost: T.l,
 					isLoggedIn: C.J,
 					isActive: T.j,
@@ -2995,7 +2995,7 @@
 					isPostChained: y.d,
 					showPromotedCTA: be.a,
 					moderatorPermissions: j.k,
-					modModeEnabled: ne.R,
+					modModeEnabled: ne.Q,
 					posts: ge,
 					postHeightVariant: me,
 					shouldShowNsfwListingBelow: Ee.b,
@@ -3073,7 +3073,7 @@
 						postIds: Ae,
 						onceInViewport: Ne,
 						showPromotedCTA: Le
-					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = he && Fe, Me = Object(c.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(Se), Ve = !!Se.media && Se.media.type === O.o.RTJSON, We = we && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ae.gd.OnlyTitles)(xe) && !Object(oe.a)(Se), Ke = (e => e === ae.gd.MediumHeight)(xe) && !Object(oe.a)(Se), ze = (e => {
+					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = he && Fe, Me = Object(c.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(Se), Ve = !!Se.media && Se.media.type === O.o.RTJSON, We = we && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ae.ed.OnlyTitles)(xe) && !Object(oe.a)(Se), Ke = (e => e === ae.ed.MediumHeight)(xe) && !Object(oe.a)(Se), ze = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -3930,7 +3930,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(M.a)(), i = Object(B.a)(m.nc) === m.rc.Enabled;
+					} = t, r = Object(M.a)(), i = Object(B.a)(m.lc) === m.pc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(J, e));
@@ -4072,7 +4072,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(p.bb)(),
+				const t = Object(p.ab)(),
 					s = Object(p.v)(t),
 					n = Object(G.a)(),
 					r = Object(i.e)(r => z(r, {
@@ -7346,9 +7346,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Hb
+					experimentName: n.Fb
 				});
-				return !(!t || Object(n.fe)(t))
+				return !(!t || Object(n.de)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, s) {
@@ -7429,7 +7429,7 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: n.fb
-					}) === n.rb.Enabled
+					}) === n.qb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -7669,7 +7669,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.fe)(t)
+					return Boolean(t) && !Object(r.de)(t)
 				},
 				c = Object(n.a)(a, o.d, (e, t) => e && !t)
 		},
@@ -7786,9 +7786,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: r.dd,
+				experimentName: r.bd,
 				experimentEligibilitySelector: o.a
-			}), i.G, (e, t) => e === r.nd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.G, (e, t) => e === r.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, s) {
 			"use strict";
@@ -7943,4 +7943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.77d1605d88747c17cedd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.4e47726e7db5283cd79e.js.map

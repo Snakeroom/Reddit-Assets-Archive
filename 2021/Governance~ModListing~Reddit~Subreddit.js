@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.54d49fad74b51aca0762.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7b599c4049a1d53f476a.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -812,7 +812,7 @@
 			})), r.d(t, "j", (function() {
 				return z
 			})), r.d(t, "e", (function() {
-				return K
+				return V
 			})), r.d(t, "d", (function() {
 				return Y
 			})), r.d(t, "g", (function() {
@@ -973,11 +973,11 @@
 						subredditId: e,
 						...i.error
 					}))
-				}, V = Object(d.a)(A.d), K = e => async (t, r, n) => {
+				}, K = Object(d.a)(A.d), V = e => async (t, r, n) => {
 					const o = r(),
 						i = o.structuredStyles.models[e] || {},
 						s = Object(L.V)(o);
-					t(V({
+					t(K({
 						isNightmodeOn: s,
 						styles: i,
 						subredditId: e
@@ -1097,7 +1097,7 @@
 					}) ? t(Object(_.i)(k.a.BLADE_UNSAVED_CHANGES)) : t(oe()))
 				}, se = e => async (t, r) => {
 					const n = r();
-					Object(N.i)(n) || t(Object(L.V)(n) ? Object(_.i)(k.a.BLADE_NIGHTMODE) : K(e))
+					Object(N.i)(n) || t(Object(L.V)(n) ? Object(_.i)(k.a.BLADE_NIGHTMODE) : V(e))
 				}, ce = Object(d.a)(A.i), ae = Object(d.a)(A.h), le = Object(d.a)(A.g), de = (e, t) => async (r, n, {
 					gqlContext: o,
 					apiContext: i
@@ -2975,7 +2975,7 @@
 			})), r.d(t, "e", (function() {
 				return z
 			})), r.d(t, "d", (function() {
-				return K
+				return V
 			})), r.d(t, "u", (function() {
 				return J
 			})), r.d(t, "v", (function() {
@@ -3116,7 +3116,7 @@
 							break
 						}
 						case i.Jb.SUBREDDIT_WIKI:
-							Object(y.a)(V(r, n)(t));
+							Object(y.a)(K(r, n)(t));
 							break;
 						case i.Jb.COINS:
 							Object(y.a)(A(r, n)(t)), Object(y.a)(B()(t));
@@ -3153,7 +3153,7 @@
 							p && Object(y.a)(W()(t));
 							break;
 						case i.Jb.GEOTAGGING:
-							p && Object(y.a)(K()(t));
+							p && Object(y.a)(V()(t));
 							break;
 						case i.Jb.SUBREDDIT_CREATION:
 							p && Object(y.a)(q()(t));
@@ -3452,7 +3452,7 @@
 					noun: "screen",
 					...k(e)
 				}),
-				V = (e, t) => r => ({
+				K = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3463,7 +3463,7 @@
 					userSubreddit: I.userSubreddit(r),
 					adblock: I.adblock(r)
 				}),
-				K = () => e => ({
+				V = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -4204,12 +4204,12 @@
 					pageLayer: t
 				}) => Object(i.K)(t), (e, t, r) => !e && !t && r),
 				l = Object(n.a)((e, t) => Object(s.c)(e, {
-					experimentName: o.Bb,
+					experimentName: o.zb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.Vd.NoCommunityWidgets,
-				u = e => e === o.Vd.NoRulesModerators,
-				f = e => e === o.Vd.RelatedPostsDu
+				d = e => e === o.Td.NoCommunityWidgets,
+				u = e => e === o.Td.NoRulesModerators,
+				f = e => e === o.Td.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4223,4 +4223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.54d49fad74b51aca0762.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7b599c4049a1d53f476a.js.map

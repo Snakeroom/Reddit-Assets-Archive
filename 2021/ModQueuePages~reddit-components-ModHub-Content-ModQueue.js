@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.74e45b019a05c7244cab.js
-// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.90179101381857e4ec8e.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -718,7 +718,7 @@
 				Ne = s("./src/reddit/components/PostList/Placeholder.tsx");
 			const Te = Object(v.t)(),
 				Fe = Object(c.c)({
-					layout: v.P
+					layout: v.O
 				});
 			var Re = Te(Object(d.b)(Fe)(e => l.a.createElement(Ne.a, {
 					isLoading: !0,
@@ -1022,8 +1022,8 @@
 					isCommentsPage: v.w,
 					isFrontpage: v.y,
 					isProfilePostListing: v.I,
-					isTopicPage: v.O,
-					queryParams: v.U,
+					isTopicPage: v.N,
+					queryParams: v.T,
 					pageLayer: e => e
 				}),
 				Rt = Object(c.c)({
@@ -1985,7 +1985,7 @@
 				}, t)),
 				v = Object(h.t)(),
 				I = Object(i.c)({
-					postLayout: h.P,
+					postLayout: h.O,
 					redditStyle: h.A
 				}),
 				j = Object(a.b)(I, e => ({
@@ -2154,4 +2154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.74e45b019a05c7244cab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.90179101381857e4ec8e.js.map

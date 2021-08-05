@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.30c99ab24b160a313144.js
-// Retrieved at 8/5/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5e49eb1878e5e86398cb.js
+// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1558,7 +1558,7 @@
 				P = s.n(M);
 			const R = 24,
 				F = Object(T.t)({
-					username: e => Object(T.U)(e).user
+					username: e => Object(T.T)(e).user
 				}),
 				A = Object(d.c)({
 					approvedSubmitters: w,
@@ -2443,7 +2443,7 @@
 							subredditId: s.subredditId
 						})
 					},
-					modModeEnabled: b.R
+					modModeEnabled: b.Q
 				}),
 				M = Object(r.b)(N, (e, {
 					comment: t
@@ -5943,11 +5943,11 @@
 				_e = () => Object(i.c)({
 					activeModalId: C.a,
 					crosspost: y.d,
-					flairStyleTemplate: se.T,
+					flairStyleTemplate: se.S,
 					isActive: y.j,
 					isExpanded: y.m,
 					showPromotedCTA: be.a,
-					layout: se.P,
+					layout: se.O,
 					moderatorPermissions: _.k,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -11326,7 +11326,7 @@
 				Ve = s.n(We);
 			const qe = Object(He.t)({
 					currentPageUrl: He.e,
-					queryParams: He.U
+					queryParams: He.T
 				}),
 				ze = Object(d.c)({
 					actionsList: H,
@@ -18419,14 +18419,14 @@
 					isLoggedIn: f.J,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.k,
-					modModeEnabled: l.R,
+					modModeEnabled: l.Q,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: h.a,
 					showMedia: l.r,
-					flairStyleTemplate: l.T
+					flairStyleTemplate: l.S
 				},
 				E = (e, {
 					postId: t
@@ -18458,7 +18458,7 @@
 				d = s("./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx"),
 				l = s("./src/reddit/connectors/ClassicPost/index.tsx");
 			const c = Object(i.t)({
-					searchQuery: i.X
+					searchQuery: i.W
 				}),
 				m = Object(o.b)(() => Object(r.c)(l.c), l.b, (e, t, s) => ({
 					...e,
@@ -22068,7 +22068,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				$e = Object(i.b)(() => Object(d.a)(Ke, N.G, E.P, Qe, N.cb, I.hb, Ye, Je, Xe, (e, t) => t.match.params.pageName, e => e, ({
+				$e = Object(i.b)(() => Object(d.a)(Ke, N.G, E.O, Qe, N.cb, I.hb, Ye, Je, Xe, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, s, {
 					moderatorPermissions: n
@@ -22831,9 +22831,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.fc
+					experimentName: n.dc
 				});
-				return !(!t || Object(n.fe)(t))
+				return !(!t || Object(n.de)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22846,9 +22846,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.dd,
+				experimentName: a.bd,
 				experimentEligibilitySelector: o.a
-			}), r.G, (e, t) => e === a.nd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.G, (e, t) => e === a.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22984,4 +22984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.30c99ab24b160a313144.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5e49eb1878e5e86398cb.js.map
