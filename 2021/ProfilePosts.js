@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.e76fff62d38dff55fd3c.js
-// Retrieved at 8/5/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.82e01d0062c449f8dc48.js
+// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2092,6 +2092,9 @@
 					}),
 					[h.d.Compact]: () => s.fbt._("compact", null, {
 						hk: "1N7pcz"
+					}),
+					[h.d.Search]: () => s.fbt._("search", null, {
+						hk: "49uLRt"
 					})
 				},
 				P = Object(b.t)(),
@@ -3782,7 +3785,8 @@
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
-				COMPACT: 5
+				COMPACT: 5,
+				SEARCH: 3
 			}, Y = x.a.div("SeeMore", U.a), K = x.a.wrapped(L.a, "ArrowRight", U.a), J = (e, t, n, s, r, o, i, a, d) => {
 				const c = `entered-${e}-${t}-${n?`last-${s}-${r}`:""}-${o}`;
 				let l = G.get(c);
@@ -7655,4 +7659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.e76fff62d38dff55fd3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.82e01d0062c449f8dc48.js.map

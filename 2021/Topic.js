@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.3f18b0fd6d600644499e.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.afa62adad8280bc6bcd0.js
+// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -465,6 +465,9 @@
 					}),
 					[b.d.Compact]: () => r.fbt._("compact", null, {
 						hk: "1N7pcz"
+					}),
+					[b.d.Search]: () => r.fbt._("search", null, {
+						hk: "49uLRt"
 					})
 				},
 				j = Object(h.t)(),
@@ -613,7 +616,8 @@
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
-				COMPACT: 5
+				COMPACT: 5,
+				SEARCH: 3
 			}, q = x.a.div("SeeMore", V.a), K = x.a.wrapped(w.a, "ArrowRight", V.a), Y = (e, t, s, r, i, n, o, a, c) => {
 				const d = `entered-${e}-${t}-${s?`last-${r}-${i}`:""}-${n}`;
 				let l = U.get(d);
@@ -2612,4 +2616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.3f18b0fd6d600644499e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.afa62adad8280bc6bcd0.js.map

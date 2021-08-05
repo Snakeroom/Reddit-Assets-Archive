@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.90c47000c7cb42d9dbee.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.ff9a6f10ccdf4ff74b5e.js
+// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -71,8 +71,8 @@
 					type: "rtjson",
 					rteMode: x.h.RICH_TEXT
 				}),
-				w = (e, t) => !(!e || !t || Object(y.d)(t) || !t.authorInfo) && Object(O.b)(e) === Object(O.b)(t.authorInfo),
-				C = e => e && !Object(y.d)(e) && e.authorInfo ? Object(O.b)(e.authorInfo) : null;
+				C = (e, t) => !(!e || !t || Object(y.d)(t) || !t.authorInfo) && Object(O.b)(e) === Object(O.b)(t.authorInfo),
+				w = e => e && !Object(y.d)(e) && e.authorInfo ? Object(O.b)(e.authorInfo) : null;
 			var L = e => {
 					const {
 						associatedAward: t,
@@ -108,7 +108,7 @@
 						isAuthorPremium: R,
 						isGildable: l,
 						isMod: S,
-						isOp: w(s, f),
+						isOp: C(s, f),
 						isSaved: u,
 						isScoreHidden: c,
 						isStickied: p,
@@ -116,7 +116,7 @@
 						media: I(e),
 						parentId: m && m.id,
 						permalink: `https://www.reddit.com${h}`,
-						postAuthor: C(f),
+						postAuthor: w(f),
 						postId: f && f.id || "",
 						postTitle: f && f.title || null,
 						score: y || 0,
@@ -384,8 +384,8 @@
 				x = s("./src/reddit/components/PostList/LoadMore.tsx"),
 				j = s("./src/reddit/components/PostList/SomethingWrong.tsx"),
 				I = s("./src/reddit/components/Scroller/Simple.tsx"),
-				w = s("./src/reddit/constants/adEvents.ts"),
-				C = s("./src/reddit/constants/componentSizes.ts"),
+				C = s("./src/reddit/constants/adEvents.ts"),
+				w = s("./src/reddit/constants/componentSizes.ts"),
 				L = s("./src/reddit/constants/postLayout.ts"),
 				S = s("./src/reddit/controls/InternalLink/index.tsx"),
 				E = s("./src/reddit/controls/OutboundLink/index.tsx"),
@@ -406,7 +406,8 @@
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
-				COMPACT: 5
+				COMPACT: 5,
+				SEARCH: 3
 			}, Q = P.a.div("SeeMore", B.a), z = P.a.wrapped(F.a, "ArrowRight", B.a), J = (e, t, s, i, r, o, n, d, a) => {
 				const l = `entered-${e}-${t}-${s?`last-${i}-${r}`:""}-${o}`;
 				let c = D.get(l);
@@ -424,7 +425,7 @@
 				let r = $.get(i);
 				return void 0 === r && (r = (e, i, r, o, n) => {
 					if (i.isSponsored) {
-						t.fireAdPixelsOfType(i, w.a.Click);
+						t.fireAdPixelsOfType(i, C.a.Click);
 						const {
 							source: e
 						} = Object(g.t)(i, o);
@@ -605,8 +606,8 @@
 						redditStyle: x,
 						shouldHideFlair: j,
 						triggerNewPostPill: I,
-						postIds: w
-					} = this.props, C = 0 === t, S = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${f}-${y}`;
+						postIds: C
+					} = this.props, w = 0 === t, S = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${f}-${y}`;
 					let E;
 					if (void 0 === (E = this.scrollChildCache.get(S))) {
 						const {
@@ -618,7 +619,7 @@
 						});
 						const A = this.props.postComponentForLayout({
 							isCrosspost: !!k.crosspostRootId,
-							isFirstPost: C,
+							isFirstPost: w,
 							layout: i,
 							post: N
 						});
@@ -649,7 +650,7 @@
 								key: K,
 								availableWidth: m,
 								eventFactory: this.eventFactoryHandler,
-								first: C,
+								first: w,
 								forceLoadMedia: O,
 								hostPostData: o,
 								inSubredditOrProfile: T,
@@ -670,7 +671,7 @@
 								onClickPost: B,
 								onSizeChanged: b,
 								postId: e,
-								postIds: w,
+								postIds: C,
 								redditStyle: x,
 								sendEvent: this.props.sendEvent,
 								scrollerItemRef: y,
@@ -768,7 +769,7 @@
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
 						trackingName: g,
-						viewportTopPadding: C.f
+						viewportTopPadding: w.f
 					}, m), v && p.a.createElement(Q, {
 						className: B.a.seeMoreButton
 					}, p.a.createElement(S.a, {
@@ -911,8 +912,8 @@
 				x = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				j = s("./src/reddit/featureFlags/index.ts"),
 				I = s("./src/reddit/helpers/trackers/post.ts"),
-				w = s("./src/lib/objectSelector/index.ts"),
-				C = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
+				C = s("./src/lib/objectSelector/index.ts"),
+				w = s("./src/reddit/actions/pages/profilePrivate/constants.ts"),
 				L = s("./src/reddit/helpers/isComment.ts"),
 				S = s("./src/reddit/models/Profile/index.ts");
 			const E = (e, {
@@ -921,7 +922,7 @@
 				T = (e, {
 					listingKey: t
 				}) => e.profilePrivatePage.api.error[t],
-				R = Object(w.a)((e, {
+				R = Object(C.a)((e, {
 					listingKey: t
 				}) => {
 					return (e.profilePrivatePage.ids[t] || []).reduce((t, s) => {
@@ -943,7 +944,7 @@
 						const s = e.profilePrivatePage.ids[t];
 						return {
 							token: s[s.length - 1],
-							dist: C.h
+							dist: w.h
 						}
 					},
 					subredditsById: e => e.subreddits.models,
@@ -1187,4 +1188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.90c47000c7cb42d9dbee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.ff9a6f10ccdf4ff74b5e.js.map

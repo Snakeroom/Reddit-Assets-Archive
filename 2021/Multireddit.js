@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.6e8cf174ccfed3ab1ecc.js
-// Retrieved at 8/5/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.325a5d1f00cf3d1412b5.js
+// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2522,6 +2522,9 @@
 					}),
 					[h.d.Compact]: () => s.fbt._("compact", null, {
 						hk: "1N7pcz"
+					}),
+					[h.d.Search]: () => s.fbt._("search", null, {
+						hk: "49uLRt"
 					})
 				},
 				I = Object(b.t)(),
@@ -4396,7 +4399,8 @@
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
-				COMPACT: 5
+				COMPACT: 5,
+				SEARCH: 3
 			}, Y = x.a.div("SeeMore", U.a), J = x.a.wrapped(N.a, "ArrowRight", U.a), K = (e, t, n, s, r, o, i, a, c) => {
 				const d = `entered-${e}-${t}-${n?`last-${s}-${r}`:""}-${o}`;
 				let l = V.get(d);
@@ -8212,4 +8216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.6e8cf174ccfed3ab1ecc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.325a5d1f00cf3d1412b5.js.map

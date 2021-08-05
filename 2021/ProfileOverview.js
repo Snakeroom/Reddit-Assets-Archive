@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.a4d2854794c736597131.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.84b4a0532ff62981ce93.js
+// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1597,7 +1597,8 @@
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
-				COMPACT: 5
+				COMPACT: 5,
+				SEARCH: 3
 			}, z = P.a.div("SeeMore", K.a), J = P.a.wrapped(T.a, "ArrowRight", K.a), X = (e, t, s, o, r, n, i, a, d) => {
 				const c = `entered-${e}-${t}-${s?`last-${o}-${r}`:""}-${n}`;
 				let l = H.get(c);
@@ -3586,4 +3587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.a4d2854794c736597131.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.84b4a0532ff62981ce93.js.map

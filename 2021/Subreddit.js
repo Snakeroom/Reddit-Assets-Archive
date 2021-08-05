@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e454078196a63e541688.js
-// Retrieved at 8/5/2021, 2:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.488fcbf76e14090690d8.js
+// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3942,6 +3942,9 @@
 					}),
 					[b.d.Compact]: () => s.fbt._("compact", null, {
 						hk: "1N7pcz"
+					}),
+					[b.d.Search]: () => s.fbt._("search", null, {
+						hk: "49uLRt"
 					})
 				},
 				I = Object(h.t)(),
@@ -6600,7 +6603,8 @@
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
-				COMPACT: 5
+				COMPACT: 5,
+				SEARCH: 3
 			}, Y = y.a.div("SeeMore", U.a), z = y.a.wrapped(T.a, "ArrowRight", U.a), J = (e, t, n, s, r, o, a, i, c) => {
 				const d = `entered-${e}-${t}-${n?`last-${s}-${r}`:""}-${o}`;
 				let l = V.get(d);
@@ -15267,4 +15271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e454078196a63e541688.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.488fcbf76e14090690d8.js.map
