@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a8fc6519a6ae18ab7646.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ea8a48ded730c4b6cfba.js
+// Retrieved at 8/5/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("141805"),
+				buildNumber: r("141816"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628196102"),
+				})("1628197837"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4979,14 +4979,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c51168d28d652d6faca0b6a09e190ecba56b705d2-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb5765f4be44d8f4bfb5cc26c181537bf36e01c21-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "51168d28d652d6faca0b6a09e190ecba56b705d2-production",
+						release: "b5765f4be44d8f4bfb5cc26c181537bf36e01c21-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5480,7 +5480,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "51168d28d652d6faca0b6a09e190ecba56b705d2-production",
+						releaseClient: "b5765f4be44d8f4bfb5cc26c181537bf36e01c21-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -10835,7 +10835,7 @@
 					const o = r(),
 						d = i && i.hasNewTabModifier;
 					let l = e.permalink;
-					if (Object(C.b)(e) && Object(D.b)(e) && Object(re.s)(o)) {
+					if (Object(C.b)(e) && Object(D.c)(e) && Object(re.s)(o)) {
 						const t = Object(y.T)(o, {
 							postId: e.id
 						});
@@ -10936,7 +10936,8 @@
 							hk: "2N0vVk"
 						})))
 					}
-				}, vt = "ANIMATING_UPVOTE", Et = Object(_.a)(vt)
+				}, vt = "ANIMATING_UPVOTE", Et = Object(_.a)(vt);
+			Object(_.a)("EDIT_PREDICTION_END")
 		},
 		"./src/reddit/actions/preferences.ts": function(e, t, i) {
 			"use strict";
@@ -25754,10 +25755,17 @@
 			function r(e) {
 				return Boolean(e.predictionTournament)
 			}
+
+			function s(e) {
+				var t;
+				return Boolean(null === (t = e.pollData) || void 0 === t ? void 0 : t.isPrediction)
+			}
 			i.d(t, "a", (function() {
 					return n
-				})), i.d(t, "b", (function() {
+				})), i.d(t, "c", (function() {
 					return r
+				})), i.d(t, "b", (function() {
+					return s
 				})),
 				function(e) {
 					e.Draft = "DRAFT", e.LiveInProgress = "LIVE_IN_PROGRESS", e.Live = "LIVE", e.Closed = "CLOSED"
@@ -34405,7 +34413,7 @@
 					return Oe(t)
 				},
 				Fe = e => {
-					if (Object(l.b)(e)) return "tournament";
+					if (Object(l.c)(e)) return "tournament";
 					if (e.isMeta) return "poll";
 					if (!e.media) return "link";
 					switch (e.media.type) {
@@ -34644,18 +34652,21 @@
 					return null
 				},
 				Je = (e, t) => {
-					const i = Object(ae.G)(e, {
+					var i, n;
+					const r = Object(ae.G)(e, {
 						postId: t
 					});
-					if (i && Object(l.b)(i)) return {
-						tournamentId: i.predictionTournament.tournamentId
-					}
+					return r && Object(l.c)(r) ? {
+						tournamentId: r.predictionTournament.tournamentId
+					} : r && Object(l.b)(r) ? {
+						tournamentId: null !== (n = null === (i = r.pollData) || void 0 === i ? void 0 : i.tournamentId) && void 0 !== n ? n : void 0
+					} : void 0
 				},
 				Ye = (e, t) => {
 					const i = Object(ae.G)(e, {
 						postId: t
 					});
-					if (i && Object(l.b)(i)) return {
+					if (i && Object(l.c)(i)) return {
 						type: "tournament"
 					}
 				},
@@ -39992,4 +40003,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a8fc6519a6ae18ab7646.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ea8a48ded730c4b6cfba.js.map

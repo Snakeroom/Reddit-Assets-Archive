@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.d0bb5bf3ce836964c57d.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.640dc79a2a39722a845c.js
+// Retrieved at 8/5/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1237,7 +1237,7 @@
 						redditStyle: Fe
 					}, r.a.createElement(A.a, {
 						post: Oe
-					}), Je && Je.showPinnnedHeader && r.a.createElement(Z, null), re && Object(i.b)(Oe) && r.a.createElement(r.a.Fragment, null, r.a.createElement(f.a, {
+					}), Je && Je.showPinnnedHeader && r.a.createElement(Z, null), re && Object(i.c)(Oe) && r.a.createElement(r.a.Fragment, null, r.a.createElement(f.a, {
 						post: Oe
 					}), r.a.createElement(h.a, {
 						post: Oe
@@ -3587,4 +3587,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.d0bb5bf3ce836964c57d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.640dc79a2a39722a845c.js.map

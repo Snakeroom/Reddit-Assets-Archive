@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.6bd6c22e578854f7e8f2.js
-// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.9aa308d70984bcca85a9.js
+// Retrieved at 8/5/2021, 5:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -63,28 +63,28 @@
 				a = b, d = h, r = p;
 				var C = (1e4 * (268435455 & (b += 122192928e5)) + h) % 4294967296;
 				u[c++] = C >>> 24 & 255, u[c++] = C >>> 16 & 255, u[c++] = C >>> 8 & 255, u[c++] = 255 & C;
-				var v = b / 4294967296 * 1e4 & 268435455;
-				u[c++] = v >>> 8 & 255, u[c++] = 255 & v, u[c++] = v >>> 24 & 15 | 16, u[c++] = v >>> 16 & 255, u[c++] = p >>> 8 | 128, u[c++] = 255 & p;
-				for (var j = 0; j < 6; ++j) u[c + j] = l[j];
+				var j = b / 4294967296 * 1e4 & 268435455;
+				u[c++] = j >>> 8 & 255, u[c++] = 255 & j, u[c++] = j >>> 24 & 15 | 16, u[c++] = j >>> 16 & 255, u[c++] = p >>> 8 | 128, u[c++] = 255 & p;
+				for (var v = 0; v < 6; ++v) u[c + v] = l[v];
 				return t || s(u)
 			}
 		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "h", (function() {
-				return y
+				return E
 			})), n.d(t, "l", (function() {
-				return k
-			})), n.d(t, "k", (function() {
 				return _
+			})), n.d(t, "k", (function() {
+				return y
 			})), n.d(t, "i", (function() {
 				return D
 			})), n.d(t, "b", (function() {
 				return S
 			})), n.d(t, "n", (function() {
-				return N
-			})), n.d(t, "o", (function() {
 				return M
+			})), n.d(t, "o", (function() {
+				return N
 			})), n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "a", (function() {
@@ -98,9 +98,9 @@
 			})), n.d(t, "g", (function() {
 				return q
 			})), n.d(t, "m", (function() {
-				return J
-			})), n.d(t, "c", (function() {
 				return U
+			})), n.d(t, "c", (function() {
+				return J
 			})), n.d(t, "d", (function() {
 				return H
 			}));
@@ -119,20 +119,20 @@
 				h = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts"),
 				C = n("./src/reddit/selectors/user.ts"),
-				v = n("./src/reddit/selectors/features/predictions/creation/index.ts"),
-				j = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				g = n("./src/reddit/actions/economics/predictions/constants.ts");
+				j = n("./src/reddit/selectors/features/predictions/creation/index.ts"),
+				v = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				O = n("./src/reddit/actions/economics/predictions/constants.ts");
 			Object(s.a)({
 				features: {
 					predictions: a.a
 				}
 			});
-			const x = Object(u.a)(g.e),
-				O = Object(u.a)(g.i),
-				I = Object(u.a)(g.l),
-				P = Object(u.a)(g.h),
-				E = Object(u.a)(g.b),
-				y = (e, t, n, o) => async (r, i, {
+			const g = Object(u.a)(O.e),
+				x = Object(u.a)(O.i),
+				I = Object(u.a)(O.l),
+				P = Object(u.a)(O.h),
+				k = Object(u.a)(O.b),
+				E = (e, t, n, o) => async (r, i, {
 					gqlContext: s
 				}) => {
 					const a = Object(C.J)(i()),
@@ -154,8 +154,8 @@
 						subredditId: e,
 						...u
 					};
-					return r(x(l)), l
-				}, k = ({
+					return r(g(l)), l
+				}, _ = ({
 					coinPackageId: e,
 					optionId: t,
 					postId: n,
@@ -169,12 +169,12 @@
 						postId: n,
 						price: o
 					});
-					return r(O({
+					return r(x({
 						pollId: n,
 						prediction: a,
 						price: o
 					})), a
-				}, _ = ({
+				}, y = ({
 					optionId: e,
 					postId: t
 				}) => async (n, o, {
@@ -192,16 +192,16 @@
 						pollId: t,
 						prediction: s.poll
 					})), s.poll
-				}, w = Object(u.a)(g.c), F = Object(u.a)(g.d), T = Object(u.a)(g.g), D = e => async (t, n, {
+				}, w = Object(u.a)(O.c), T = Object(u.a)(O.d), F = Object(u.a)(O.g), D = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
 						i = Object(f.D)(r, e),
-						s = Object(j.j)(r, {
+						s = Object(v.j)(r, {
 							subredditId: i
 						}),
 						a = Object(h.k)(r);
-					if (s) return Object(j.f)(r, {
+					if (s) return Object(v.f)(r, {
 						subredditId: i
 					});
 					t(w({
@@ -237,20 +237,20 @@
 						b = u.reduce((e, t) => (t.predictionPosts.length && t.predictionPosts.forEach(t => {
 							e[t.id] = t
 						}), e), {});
-					return t(F({
+					return t(T({
 						subredditId: i,
 						tournaments: u
-					})), t(T({
+					})), t(F({
 						posts: b,
 						meta: r.meta
 					})), u
-				}, S = Object(u.a)(g.a), N = Object(u.a)(g.j), M = Object(u.a)(g.k), L = ({
+				}, S = Object(u.a)(O.a), M = Object(u.a)(O.j), N = Object(u.a)(O.k), L = ({
 					subredditId: e
 				}) => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
-						i = Object(v.b)(r),
+						i = Object(j.b)(r),
 						s = Object(h.a)(r);
 					if (!i) throw new Error("Failed to create tournament, no prediction drafts attached");
 					const a = await Object(p.e)(o(), {
@@ -267,7 +267,7 @@
 					const {
 						tournament: c
 					} = d;
-					return t(F({
+					return t(T({
 						subredditId: e,
 						tournaments: [c]
 					})), c
@@ -275,7 +275,7 @@
 					gqlContext: r
 				}) => {
 					var s;
-					const a = Object(v.b)(o());
+					const a = Object(j.b)(o());
 					if (!a) throw new Error("Failed to create prediction post, no prediction drafts attached");
 					const d = await Object(p.b)(r(), {
 							tournamentId: e,
@@ -290,7 +290,7 @@
 					if (null === (s = c.errors) || void 0 === s ? void 0 : s.length) throw new Error(c.errors[0].message);
 					if (!(null == c ? void 0 : c.tournament)) throw new Error("Failed to create prediction");
 					return c.tournament
-				}, A = Object(u.a)(g.m), Q = (e, t, n) => async (t, o, {
+				}, A = Object(u.a)(O.m), Q = (e, t, n) => async (t, o, {
 					gqlContext: r
 				}) => {
 					const i = await Object(p.l)(r(), {
@@ -337,7 +337,7 @@
 					} = r.body.data;
 					if (!i.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return i.predictionTokens
-				}, J = ({
+				}, U = ({
 					coinPackageId: e,
 					selectedOptionId: t,
 					price: n,
@@ -345,7 +345,7 @@
 					tournamentId: r,
 					tournamentPostId: i
 				}) => async s => {
-					const a = await s(k({
+					const a = await s(_({
 						coinPackageId: e,
 						optionId: t,
 						postId: o,
@@ -357,14 +357,14 @@
 						tournamentId: r,
 						tournamentPostId: i
 					})), a
-				}, U = e => async (t, n, {
+				}, J = e => async (t, n, {
 					gqlContext: r
 				}) => {
 					try {
 						const n = await Object(p.c)(r(), {
 							postId: e
 						});
-						t(E({
+						t(k({
 							postId: e,
 							prediction: n
 						}));
@@ -388,7 +388,7 @@
 						postId: e,
 						...t
 					});
-					return n(E({
+					return n(k({
 						postId: e,
 						prediction: i
 					})), i
@@ -426,8 +426,8 @@
 			const l = e => e(Object(a.f)({
 					duration: a.a,
 					kind: c.b.Error,
-					text: u._("Error: Failed to change prediction end time, please try again later", null, {
-						hk: "1Crf4a"
+					text: u._("Error: Failed to update prediction end time, please try again later", null, {
+						hk: "MkaNA"
 					})
 				})),
 				p = ({
@@ -440,8 +440,8 @@
 						})), n(Object(a.f)({
 							duration: a.a,
 							kind: c.b.SuccessCommunity,
-							text: u._("Changed when prediction ends", null, {
-								hk: "42CDEn"
+							text: u._("Updated", null, {
+								hk: "4cncaA"
 							})
 						}))
 					} catch {
@@ -539,16 +539,18 @@
 				a = n("./src/reddit/actions/modal.ts"),
 				d = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				c = n("./src/reddit/constants/modals.ts"),
-				u = n("./src/reddit/selectors/posts.ts"),
-				l = n("./src/reddit/components/PollCreator/EndDatePicker/useEndDatePicker.tsx"),
-				p = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
-				m = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
-				b = n("./src/reddit/components/Econ/Prediction/EndTimeModal/Body.m.less"),
-				h = n.n(b);
+				u = n("./src/reddit/helpers/trackers/predictionsModTools.ts"),
+				l = n("./src/reddit/hooks/useTracking.ts"),
+				p = n("./src/reddit/selectors/posts.ts"),
+				m = n("./src/reddit/components/PollCreator/EndDatePicker/useEndDatePicker.tsx"),
+				b = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
+				h = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx"),
+				f = n("./src/reddit/components/Econ/Prediction/EndTimeModal/Body.m.less"),
+				C = n.n(f);
 			const {
-				fbt: f
+				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var C = ({
+			var v = ({
 				timestamp: e,
 				onTimestampChange: t
 			}) => {
@@ -559,13 +561,13 @@
 					onChange: s,
 					getMinDate: a,
 					getMaxDate: d
-				} = Object(l.a)(e, t);
+				} = Object(m.a)(e, t);
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("span", {
-					className: h.a.title
-				}, f._("End time", null, {
+					className: C.a.title
+				}, j._("End time", null, {
 					hk: "3D4Q1o"
-				})), r.a.createElement(p.a, {
-					"aria-label": f._("Prediction end date", null, {
+				})), r.a.createElement(b.a, {
+					"aria-label": j._("Prediction end date", null, {
 						hk: "4zYv4T"
 					}),
 					onChange: e => s({
@@ -575,9 +577,9 @@
 					max: d(),
 					value: n,
 					required: !0
-				}), r.a.createElement(m.a, {
-					className: h.a.timeInput,
-					"aria-label": f._("Prediction end time", null, {
+				}), r.a.createElement(h.a, {
+					className: C.a.timeInput,
+					"aria-label": j._("Prediction end time", null, {
 						hk: "1idFl4"
 					}),
 					onChange: e => s({
@@ -588,35 +590,37 @@
 				}), i)
 			};
 			const {
-				fbt: v
+				fbt: O
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = () => {
 				var e;
 				const t = Object(i.d)(),
-					n = Object(i.e)(u.Q),
-					l = null === (e = null == n ? void 0 : n.pollData) || void 0 === e ? void 0 : e.votingEndTimestamp,
-					p = l ? new Date(l) : null,
-					[m, b] = Object(o.useState)(p),
-					h = () => t(Object(a.g)(c.a.ECON_PREDICTIONS_CHANGE_END_TIME));
+					n = Object(l.a)(),
+					m = Object(i.e)(p.Q),
+					b = null === (e = null == m ? void 0 : m.pollData) || void 0 === e ? void 0 : e.votingEndTimestamp,
+					h = b ? new Date(b) : null,
+					[f, C] = Object(o.useState)(h);
+				if (!m) return null;
+				const j = () => t(Object(a.g)(c.a.ECON_PREDICTIONS_CHANGE_END_TIME));
 				return r.a.createElement(d.a, {
 					withOverlay: !0,
-					onOverlayClick: h,
-					toggleModal: h,
+					onOverlayClick: j,
+					toggleModal: j,
 					onConfirm: () => {
-						t(Object(s.a)({
-							postId: null == n ? void 0 : n.id,
-							closedAt: m
-						})), h()
+						n(Object(u.b)(m.id)), t(Object(s.a)({
+							postId: null == m ? void 0 : m.id,
+							closedAt: f
+						})), j()
 					},
-					actionText: v._("Confirm", null, {
-						hk: "1DK0y3"
+					actionText: O._("Update", null, {
+						hk: "3HPLX5"
 					}),
-					headerText: v._("Edit when prediction ends", null, {
-						hk: "2INWGd"
+					headerText: O._("Prediction Ends On", null, {
+						hk: "CTEcM"
 					}),
-					modalText: m ? r.a.createElement(C, {
-						timestamp: m,
-						onTimestampChange: b
+					modalText: f ? r.a.createElement(v, {
+						timestamp: f,
+						onTimestampChange: C
 					}) : "Something went wrong. Please try again."
 				})
 			}
@@ -729,7 +733,7 @@
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
+				return k
 			}));
 			var o = n("./node_modules/lodash/once.js"),
 				r = n.n(o),
@@ -758,7 +762,7 @@
 						day: o
 					}
 				};
-			class v extends s.a.PureComponent {
+			class j extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onChange = e => {
 						const t = {
@@ -818,12 +822,12 @@
 					}, e))))
 				}
 			}
-			var j = v,
-				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
-				x = n.n(g);
+			var v = j,
+				O = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.m.less"),
+				g = n.n(O);
 
-			function O() {
-				return (O = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -835,14 +839,14 @@
 					const e = document.createElement("input");
 					return e.setAttribute("type", "date"), e.setAttribute("value", "not-a-date"), "not-a-date" !== e.value
 				}),
-				P = l.a.input("Input", x.a);
+				P = l.a.input("Input", g.a);
 
-			function E(e) {
-				return I() ? s.a.createElement(P, O({
+			function k(e) {
+				return I() ? s.a.createElement(P, x({
 					type: "date"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
-				})) : s.a.createElement(j, e)
+				})) : s.a.createElement(v, e)
 			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/FallbackTimeInput/index.m.less": function(e, t, n) {
@@ -864,7 +868,7 @@
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
+				return k
 			}));
 			var o = n("./node_modules/lodash/once.js"),
 				r = n.n(o),
@@ -884,7 +888,7 @@
 					const n = +e.slice(-2);
 					if (Number.isInteger(n)) return n > t ? 0 : n
 				};
-			class v extends s.a.PureComponent {
+			class j extends s.a.PureComponent {
 				constructor(e) {
 					super(e), this.callOnChange = () => {
 						let e = d()(+this.state.hour, 0, 24);
@@ -949,12 +953,12 @@
 					}))
 				}
 			}
-			var j = v,
-				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
-				x = n.n(g);
+			var v = j,
+				O = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/TimeInput/index.m.less"),
+				g = n.n(O);
 
-			function O() {
-				return (O = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -966,14 +970,14 @@
 					const e = document.createElement("input");
 					return e.setAttribute("type", "time"), e.setAttribute("value", "not-a-time"), "not-a-time" !== e.value
 				}),
-				P = p.a.input("TimeInput", x.a);
+				P = p.a.input("TimeInput", g.a);
 
-			function E(e) {
-				return I() ? s.a.createElement(P, O({
+			function k(e) {
+				return I() ? s.a.createElement(P, x({
 					type: "time"
 				}, e, {
 					onChange: t => e.onChange(t.target.value)
-				})) : s.a.createElement(j, e)
+				})) : s.a.createElement(v, e)
 			}
 		},
 		"./src/reddit/components/PostCreationForm/SchedulePickerModal/utils.ts": function(e, t, n) {
@@ -995,27 +999,27 @@
 			n.d(t, "m", (function() {
 				return C
 			})), n.d(t, "k", (function() {
-				return v
-			})), n.d(t, "a", (function() {
 				return j
+			})), n.d(t, "a", (function() {
+				return v
 			})), n.d(t, "i", (function() {
-				return g
-			})), n.d(t, "e", (function() {
-				return x
-			})), n.d(t, "j", (function() {
 				return O
+			})), n.d(t, "e", (function() {
+				return g
+			})), n.d(t, "j", (function() {
+				return x
 			})), n.d(t, "b", (function() {
 				return I
 			})), n.d(t, "l", (function() {
 				return P
 			})), n.d(t, "f", (function() {
-				return E
-			})), n.d(t, "g", (function() {
-				return y
-			})), n.d(t, "h", (function() {
 				return k
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "g", (function() {
+				return E
+			})), n.d(t, "h", (function() {
 				return _
+			})), n.d(t, "d", (function() {
+				return y
 			})), n.d(t, "c", (function() {
 				return w
 			}));
@@ -1053,7 +1057,7 @@
 				});
 				if (!Object(r.c)(d) || d.error || !(null === (a = d.body.data.votePrediction) || void 0 === a ? void 0 : a.ok)) throw new Error("Failed to make prediction");
 				return d.body.data.votePrediction.poll
-			}, v = (e, {
+			}, j = (e, {
 				postId: t,
 				optionId: n
 			}) => Object(o.a)(e, {
@@ -1065,11 +1069,11 @@
 					}
 				}
 			});
-			var j;
+			var v;
 			! function(e) {
 				e.AllTime = "ALL_TIME", e.Monthly = "MONTHLY"
-			}(j || (j = {}));
-			const g = (e, {
+			}(v || (v = {}));
+			const O = (e, {
 					subredditId: t,
 					period: n,
 					top: r,
@@ -1085,13 +1089,13 @@
 						tournamentId: s
 					}
 				}),
-				x = (e, t) => Object(o.a)(e, {
+				g = (e, t) => Object(o.a)(e, {
 					...d,
 					variables: {
 						input: t
 					}
 				}),
-				O = (e, t) => Object(o.a)(e, {
+				x = (e, t) => Object(o.a)(e, {
 					...p,
 					variables: t
 				}),
@@ -1107,21 +1111,21 @@
 						input: t
 					}
 				}),
-				E = (e, t) => Object(o.a)(e, {
+				k = (e, t) => Object(o.a)(e, {
 					...c,
 					variables: {
 						input: t
 					}
 				}),
-				y = (e, t) => Object(o.a)(e, {
+				E = (e, t) => Object(o.a)(e, {
 					...u,
 					variables: t
 				}),
-				k = (e, t) => Object(o.a)(e, {
+				_ = (e, t) => Object(o.a)(e, {
 					...l,
 					variables: t
 				}),
-				_ = async (e, t) => {
+				y = async (e, t) => {
 					const n = await Object(o.a)(e, {
 						...a,
 						variables: {
@@ -1145,6 +1149,33 @@
 					if (!Object(r.c)(a) || !(null === (n = a.body.data.cancelPrediction) || void 0 === n ? void 0 : n.ok) || !(null === (i = a.body.data.cancelPrediction) || void 0 === i ? void 0 : i.poll)) throw new Error("Unable to cancel prediction");
 					return a.body.data.cancelPrediction.poll
 				}
+		},
+		"./src/reddit/helpers/trackers/predictionsModTools.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			})), n.d(t, "b", (function() {
+				return s
+			}));
+			var o = n("./src/reddit/selectors/telemetry.ts");
+			const r = (e, t) => ({
+					...Object(o.defaults)(e),
+					post: Object(o.post)(e, t),
+					predictions: Object(o.predictions)(e, t),
+					subreddit: Object(o.subreddit)(e)
+				}),
+				i = e => t => ({
+					...r(t, e),
+					source: "predictions",
+					action: "click",
+					noun: "edit_prediction_end_dt"
+				}),
+				s = e => t => ({
+					...r(t, e),
+					source: "edit_prediction_end_dt",
+					action: "click",
+					noun: "confirm"
+				})
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
 			"use strict";
@@ -1236,4 +1267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.6bd6c22e578854f7e8f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.9aa308d70984bcca85a9.js.map
