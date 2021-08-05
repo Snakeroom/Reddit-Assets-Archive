@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fa9a9be883139a23645b.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3e81066490e72bd4729a.js
+// Retrieved at 8/5/2021, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -343,19 +343,19 @@
 					debug: c,
 					disableCookies: m,
 					envKey: u,
-					localStorageSaltKey: h,
-					localStorageViewerUserIdKey: f,
-					playerName: S,
-					playerVersion: C,
-					respectDoNotTrack: y,
-					saltLength: x,
-					saltTimeToLive: k,
-					viewerUserIdLength: R
+					localStorageSaltKey: f,
+					localStorageViewerUserIdKey: S,
+					playerName: C,
+					playerVersion: y,
+					respectDoNotTrack: x,
+					saltLength: k,
+					saltTimeToLive: R,
+					viewerUserIdLength: j
 				} = {
 					...E,
 					...t
 				};
-				class j extends o.Component {
+				class I extends o.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(o.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
@@ -432,10 +432,10 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || j.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || I.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = `${g()}${e}${t}`;
-						return (await w(s)).substr(0, j.VIEWER_USER_ID_LENGTH)
+						return (await w(s)).substr(0, I.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -459,25 +459,25 @@
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
 						return {
-							debug: j.DEBUG,
-							disableCookies: j.DISABLE_COOKIES,
-							respectDoNotTrack: j.RESPECT_DO_NOT_TRACK,
+							debug: I.DEBUG,
+							disableCookies: I.DISABLE_COOKIES,
+							respectDoNotTrack: I.RESPECT_DO_NOT_TRACK,
 							...s,
 							data: {
-								env_key: j.ENV_KEY,
+								env_key: I.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: j.PLAYER_NAME,
-								player_version: j.PLAYER_VERSION,
+								player_name: I.PLAYER_NAME,
+								player_version: I.PLAYER_VERSION,
 								...t,
 								viewer_user_id: e
 							}
 						}
 					}
 					getOrCreateSalt() {
-						const e = j.LOCAL_STORAGE_SALT_KEY;
+						const e = I.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(i.a)(e);
-						return t || (t = v(j.SALT_LENGTH), Object(i.b)(e, t, j.SALT_TIME_TO_LIVE)), t
+						return t || (t = v(I.SALT_LENGTH), Object(i.b)(e, t, I.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -493,24 +493,25 @@
 							muxVideoTitle: o
 						} = this.props;
 						return {
-							video_duration: s ? j.DURATION_LIVE : e,
+							video_duration: s ? I.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? j.STREAM_TYPE_LIVE : j.STREAM_TYPE_ON_DEMAND,
-							video_title: o
+							video_stream_type: s ? I.STREAM_TYPE_LIVE : I.STREAM_TYPE_ON_DEMAND,
+							video_title: o,
+							player_software_version: this.getDashInstanceData() ? h.a.dashVersion : this.getHlsInstanceData() ? h.a.hlsVersion : null
 						}
 					}
 				}
-				j.displayName = _(e), j.ANONYMOUS_USER_ID = s, j.DEBUG = c, j.DISABLE_COOKIES = m, j.DURATION_LIVE = 1 / 0, j.ENV_KEY = u, j.LOCAL_STORAGE_SALT_KEY = h, j.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, j.PLAYER_NAME = S, j.PLAYER_VERSION = C, j.RESPECT_DO_NOT_TRACK = y, j.SALT_LENGTH = x, j.SALT_TIME_TO_LIVE = k, j.STREAM_TYPE_LIVE = "live", j.STREAM_TYPE_ON_DEMAND = "on-demand", j.VIEWER_USER_ID_LENGTH = R;
-				const I = Object(o.forwardRef)((e, t) => n.a.createElement(j, O({}, e, {
+				I.displayName = _(e), I.ANONYMOUS_USER_ID = s, I.DEBUG = c, I.DISABLE_COOKIES = m, I.DURATION_LIVE = 1 / 0, I.ENV_KEY = u, I.LOCAL_STORAGE_SALT_KEY = f, I.LOCAL_STORAGE_VIEWER_USER_ID_KEY = S, I.PLAYER_NAME = C, I.PLAYER_VERSION = y, I.RESPECT_DO_NOT_TRACK = x, I.SALT_LENGTH = k, I.SALT_TIME_TO_LIVE = R, I.STREAM_TYPE_LIVE = "live", I.STREAM_TYPE_ON_DEMAND = "on-demand", I.VIEWER_USER_ID_LENGTH = j;
+				const N = Object(o.forwardRef)((e, t) => n.a.createElement(I, O({}, e, {
 						forwardedRef: t
 					}))),
-					N = Object(a.c)({
+					M = Object(a.c)({
 						redditUserId: b.h,
 						isMuxEnabled: p
 					});
-				return Object(r.b)(N, null, null, {
+				return Object(r.b)(M, null, null, {
 					forwardRef: !0
-				})(I)
+				})(N)
 			}
 		},
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -7099,4 +7100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fa9a9be883139a23645b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3e81066490e72bd4729a.js.map

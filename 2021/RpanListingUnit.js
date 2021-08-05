@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d1c4b88bfe7dfa54347c.js
-// Retrieved at 8/4/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.15b7fc44a2efacb3e7f7.js
+// Retrieved at 8/5/2021, 3:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -111,19 +111,19 @@
 					debug: d,
 					disableCookies: u,
 					envKey: m,
-					localStorageSaltKey: h,
-					localStorageViewerUserIdKey: _,
-					playerName: g,
-					playerVersion: I,
-					respectDoNotTrack: T,
-					saltLength: y,
-					saltTimeToLive: A,
-					viewerUserIdLength: x
+					localStorageSaltKey: _,
+					localStorageViewerUserIdKey: g,
+					playerName: I,
+					playerVersion: T,
+					respectDoNotTrack: y,
+					saltLength: A,
+					saltTimeToLive: x,
+					viewerUserIdLength: R
 				} = {
 					...C,
 					...t
 				};
-				class R extends n.Component {
+				class D extends n.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(n.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
@@ -200,10 +200,10 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || R.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || D.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							r = `${E()}${e}${t}`;
-						return (await v(r)).substr(0, R.VIEWER_USER_ID_LENGTH)
+						return (await v(r)).substr(0, D.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -227,25 +227,25 @@
 							t = this.getVideoData(),
 							r = this.getThirdPartyLibData();
 						return {
-							debug: R.DEBUG,
-							disableCookies: R.DISABLE_COOKIES,
-							respectDoNotTrack: R.RESPECT_DO_NOT_TRACK,
+							debug: D.DEBUG,
+							disableCookies: D.DISABLE_COOKIES,
+							respectDoNotTrack: D.RESPECT_DO_NOT_TRACK,
 							...r,
 							data: {
-								env_key: R.ENV_KEY,
+								env_key: D.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: R.PLAYER_NAME,
-								player_version: R.PLAYER_VERSION,
+								player_name: D.PLAYER_NAME,
+								player_version: D.PLAYER_VERSION,
 								...t,
 								viewer_user_id: e
 							}
 						}
 					}
 					getOrCreateSalt() {
-						const e = R.LOCAL_STORAGE_SALT_KEY;
+						const e = D.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(o.a)(e);
-						return t || (t = f(R.SALT_LENGTH), Object(o.b)(e, t, R.SALT_TIME_TO_LIVE)), t
+						return t || (t = f(D.SALT_LENGTH), Object(o.b)(e, t, D.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -261,24 +261,25 @@
 							muxVideoTitle: n
 						} = this.props;
 						return {
-							video_duration: r ? R.DURATION_LIVE : e,
+							video_duration: r ? D.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: r ? R.STREAM_TYPE_LIVE : R.STREAM_TYPE_ON_DEMAND,
-							video_title: n
+							video_stream_type: r ? D.STREAM_TYPE_LIVE : D.STREAM_TYPE_ON_DEMAND,
+							video_title: n,
+							player_software_version: this.getDashInstanceData() ? h.a.dashVersion : this.getHlsInstanceData() ? h.a.hlsVersion : null
 						}
 					}
 				}
-				R.displayName = O(e), R.ANONYMOUS_USER_ID = r, R.DEBUG = d, R.DISABLE_COOKIES = u, R.DURATION_LIVE = 1 / 0, R.ENV_KEY = m, R.LOCAL_STORAGE_SALT_KEY = h, R.LOCAL_STORAGE_VIEWER_USER_ID_KEY = _, R.PLAYER_NAME = g, R.PLAYER_VERSION = I, R.RESPECT_DO_NOT_TRACK = T, R.SALT_LENGTH = y, R.SALT_TIME_TO_LIVE = A, R.STREAM_TYPE_LIVE = "live", R.STREAM_TYPE_ON_DEMAND = "on-demand", R.VIEWER_USER_ID_LENGTH = x;
-				const D = Object(n.forwardRef)((e, t) => s.a.createElement(R, S({}, e, {
+				D.displayName = O(e), D.ANONYMOUS_USER_ID = r, D.DEBUG = d, D.DISABLE_COOKIES = u, D.DURATION_LIVE = 1 / 0, D.ENV_KEY = m, D.LOCAL_STORAGE_SALT_KEY = _, D.LOCAL_STORAGE_VIEWER_USER_ID_KEY = g, D.PLAYER_NAME = I, D.PLAYER_VERSION = T, D.RESPECT_DO_NOT_TRACK = y, D.SALT_LENGTH = A, D.SALT_TIME_TO_LIVE = x, D.STREAM_TYPE_LIVE = "live", D.STREAM_TYPE_ON_DEMAND = "on-demand", D.VIEWER_USER_ID_LENGTH = R;
+				const j = Object(n.forwardRef)((e, t) => s.a.createElement(D, S({}, e, {
 						forwardedRef: t
 					}))),
-					j = Object(a.c)({
+					w = Object(a.c)({
 						redditUserId: b.h,
 						isMuxEnabled: p
 					});
-				return Object(i.b)(j, null, null, {
+				return Object(i.b)(w, null, null, {
 					forwardRef: !0
-				})(D)
+				})(j)
 			}
 		},
 		"./src/lib/memoizeByReference/index.ts": function(e, t, r) {
@@ -3834,4 +3835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d1c4b88bfe7dfa54347c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.15b7fc44a2efacb3e7f7.js.map
