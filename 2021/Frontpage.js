@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ea5fa22ea02f3a22391b.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.d6b26ba55008af67e13e.js
+// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1643,10 +1643,10 @@
 			}
 			var qe = n("./src/reddit/selectors/experiments/utils.ts");
 			const We = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.Gc,
+					experimentName: Fe.Ec,
 					experimentEligibilitySelector: Ue.a
 				}), qe.a),
-				Ve = Object(u.a)(We, e => e === Fe.Ic.Enabled);
+				Ve = Object(u.a)(We, e => e === Fe.Gc.Enabled);
 			var Ge = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1678,8 +1678,8 @@
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: He.J,
-								experimentName: Fe.lb
-							}) === Fe.ec
+								experimentName: Fe.jb
+							}) === Fe.cc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -4344,7 +4344,7 @@
 			const l = Object(s.a)(c.a, (e, {
 					listingName: t
 				}) => {
-					const n = Object(a.ub)(e);
+					const n = Object(a.tb)(e);
 					if (!n) return !1;
 					let s;
 					if (-1 === [o.R, "r/popular"].indexOf(t)) {
@@ -4612,8 +4612,8 @@
 			const a = e => r.e[Object(o.O)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: s.Q
-				}) === s.nb.Treatment
+					experimentName: s.P
+				}) === s.lb.Treatment
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, n) {
 			"use strict";
@@ -4661,4 +4661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ea5fa22ea02f3a22391b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.d6b26ba55008af67e13e.js.map

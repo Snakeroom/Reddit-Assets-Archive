@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.398be6350b11faf6fe64.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4e377d2369c78be6d24b.js
+// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1554,8 +1554,8 @@
 						isCurrentUserProfilePost: q,
 						isFrontpage: Q,
 						isGalleryTileLayoutDefault: K,
-						isLoggedIn: X,
-						isOverlay: Z,
+						isLoggedIn: Z,
+						isOverlay: X,
 						imageGalleryCurrentItem: J,
 						moderatorPermissions: $,
 						modModeEnabled: ee,
@@ -1595,8 +1595,8 @@
 							post: ae,
 							inSubredditOrProfile: P,
 							isCurrentUserProfilePost: q,
-							isOverlay: Z,
-							shouldShowSubscribeButton: !(Q && X),
+							isOverlay: X,
+							shouldShowSubscribeButton: !(Q && Z),
 							subredditOrProfile: pe
 						},
 						ke = Object(o.t)(ae, J),
@@ -1605,7 +1605,7 @@
 						} = ke,
 						Ae = r.a.createElement(v.a, {
 							className: Object(a.a)(U.a.classicPostStyles, B.a.postContainer, Object(L.a)(e), G ? B.a.mFirst : void 0, t),
-							isOverlay: Z,
+							isOverlay: X,
 							style: {
 								...Object(L.d)(e),
 								...Object(L.b)(ve)
@@ -1659,7 +1659,7 @@
 							redditStyle: ce,
 							size: g.b.Medium,
 							titleColor: ve && ve.postTitleColor,
-							isOverlay: Z
+							isOverlay: X
 						}, ae.source && !Oe && r.a.createElement(y.a, {
 							href: ae.source.url,
 							isSponsored: ae.isSponsored,
@@ -1698,14 +1698,14 @@
 							hasModPostPerms: xe,
 							hasModFullPerms: ge,
 							hostPostData: H,
-							isOverlay: !!Z,
+							isOverlay: !!X,
 							modModeEnabled: ee,
 							onIgnoreReports: ne,
 							onOpenReportsDropdown: se,
 							post: ae,
 							showEditPost: ye,
 							showEditFlair: ue,
-							tooltipType: Z ? C.c.Lightbox : void 0,
+							tooltipType: X ? C.c.Lightbox : void 0,
 							useFlatlistBreakpoints: Object(x.b)({
 								editPost: !Ce,
 								hide: !Ce,
@@ -3125,16 +3125,16 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), a = Object(G.a)(m.lc) === m.pc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(G.a)(m.jc) === m.nc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
-					}, o.a.createElement(X, e));
+					}, o.a.createElement(Z, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(b.b, {
 						href: t.source.url,
 						isSponsored: s,
 						postId: t.id,
 						source: t.source
-					}, o.a.createElement(X, e)); {
+					}, o.a.createElement(Z, e)); {
 						const i = t.media && Object(S.G)(t.media) ? Object(v.c)(t.id, n.name) : t.permalink,
 							c = e.isCommentPermalink ? Object(E.b)(i) : a ? Object(h.a)(i, void 0, r) : Object(h.a)(i);
 						return o.a.createElement(q, {
@@ -3149,7 +3149,7 @@
 								isSponsored: e.isSponsored,
 								postId: e.id,
 								source: n
-							}, o.a.createElement(X, t)) : o.a.createElement(X, t)
+							}, o.a.createElement(Z, t)) : o.a.createElement(Z, t)
 						})(t, e) : o.a.createElement(z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
@@ -3157,10 +3157,10 @@
 							target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 							titleColor: e.titleColor,
 							to: c
-						}, o.a.createElement(X, e)))
+						}, o.a.createElement(Z, e)))
 					}
 				},
-				X = e => {
+				Z = e => {
 					const {
 						leftFlair: t,
 						isCommentsPageAd: n,
@@ -3186,7 +3186,7 @@
 						showCategoryTag: !1
 					}), r)
 				},
-				Z = e => {
+				X = e => {
 					const {
 						hideSourceLink: t,
 						post: n
@@ -3251,7 +3251,7 @@
 					})), a && o.a.createElement(N, {
 						className: F.a.pollMeta,
 						pollId: a.id
-					}), o.a.createElement(Z, this.props), h && o.a.createElement(j.a, {
+					}), o.a.createElement(X, this.props), h && o.a.createElement(j.a, {
 						isFlairFilter: !0,
 						titleFlair: p,
 						nowrap: !0,
@@ -6136,8 +6136,8 @@
 				b = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.fb
-					}) === s.qb.Enabled
+						experimentName: s.db
+					}) === s.ob.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -6374,9 +6374,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.bd,
+				experimentName: r.Zc,
 				experimentEligibilitySelector: o.a
-			}), a.G, (e, t) => e === r.ld.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), a.G, (e, t) => e === r.jd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -6519,4 +6519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.398be6350b11faf6fe64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.4e377d2369c78be6d24b.js.map

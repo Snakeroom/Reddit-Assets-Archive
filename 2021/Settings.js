@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2537e130c0cf40af0866.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d21a59f33d3c358edc3e.js
+// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -4663,7 +4663,7 @@
 				I = n.n(S);
 			const P = Object(i.a)(h.j, (e, {
 					profileName: t
-				}) => Object(f.tb)(e, t), (e, t) => ({
+				}) => Object(f.sb)(e, t), (e, t) => ({
 					karma: {
 						...m.a,
 						...null == t ? void 0 : t.karma,
@@ -12690,7 +12690,7 @@
 				ws = n.n(js);
 			const {
 				fbt: ks
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Os = 30, Ss = 200, Is = Object(c.a)(A.j, Cs.a, A.ub, xs.n, Xe.a, (e, t, n, r, s) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Os = 30, Ss = 200, Is = Object(c.a)(A.j, Cs.a, A.tb, xs.n, Xe.a, (e, t, n, r, s) => {
 				const a = e && e.profileId,
 					o = a && r[a] ? r[a].bannerBackgroundImage : void 0;
 				return {
@@ -14331,4 +14331,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2537e130c0cf40af0866.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d21a59f33d3c358edc3e.js.map

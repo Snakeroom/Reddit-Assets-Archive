@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.e50398c59ced768c26da.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.e5ce04456baa1859bc0e.js
+// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, s) {
@@ -660,8 +660,8 @@
 						[T.a.isDisabled]: e
 					})
 				})),
-				M = D.a.div("DropdownRowDisabled", T.a),
-				V = Object(l.t)({
+				V = D.a.div("DropdownRowDisabled", T.a),
+				M = Object(l.t)({
 					isFrontpage: l.y,
 					isProfilePage: l.G,
 					pageLayer: e => e
@@ -681,7 +681,7 @@
 						tooltipId: t || U
 					}))
 				}));
-			var W = D.a.wrapped(V(G(Object(c.c)(e => r.a.createElement("div", {
+			var W = D.a.wrapped(M(G(Object(c.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(Y, null, y.fbt._("Sort", null, {
@@ -701,7 +701,7 @@
 					tooltipId: e.dropdownId || U
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(M, null, y.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(V, null, y.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, s, n, r) => {
 					const o = [b.U.HOT, b.U.NEW, b.U.TOP, b.U.RISING];
@@ -1344,8 +1344,8 @@
 				}
 			}
 			var Fe = Be(Object(o.b)(Ye)(Object(c.c)(He))),
-				Me = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ve = s.n(Me);
+				Ve = s("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Me = s.n(Ve);
 			const Ke = Object(l.t)({
 					isProfilePage: l.G,
 					pageLayer: e => e
@@ -1391,7 +1391,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(i.a)(Ve.a.Container, t),
+						className: Object(i.a)(Me.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, r.a.createElement(Fe, {
@@ -1404,7 +1404,7 @@
 						sortOptions: d,
 						timeSort: l
 					}), !o && r.a.createElement(p.a, {
-						className: Ve.a.LayoutSwitch,
+						className: Me.a.LayoutSwitch,
 						subredditId: c
 					}))
 				}
@@ -1518,7 +1518,7 @@
 				H = s.n(Y);
 			const {
 				fbt: F
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), M = 500, V = new U.a(M), K = new U.a(M), G = new U.a(M), W = {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = 500, M = new U.a(V), K = new U.a(V), G = new U.a(V), W = {
 				LARGE: 1,
 				MEDIUM: 1,
 				CLASSIC: 3,
@@ -1526,10 +1526,10 @@
 				SEARCH: 3
 			}, q = S.a.div("SeeMore", H.a), z = S.a.wrapped(L.a, "ArrowRight", H.a), J = (e, t, s, n, r, o, i, a, d) => {
 				const c = `entered-${e}-${t}-${s?`last-${n}-${r}`:""}-${o}`;
-				let l = V.get(c);
+				let l = M.get(c);
 				return void 0 === l && (l = () => {
 					s && i.onBottomViewed(n, r), i.trackOnPostEnteredViewport(e, t, a, d)
-				}, V.set(c, l)), l
+				}, M.set(c, l)), l
 			}, Q = (e, t, s, n, r) => {
 				const o = `left-${e}-${t}`;
 				let i = K.get(o);
@@ -1563,7 +1563,7 @@
 			};
 			class $ extends u.a.Component {
 				constructor() {
-					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new U.a(M), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
+					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new U.a(V), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
 					}, this.setLastVisibleChildRendered = () => {
 						this.didRenderLastVisibleChild = !0, this.checkAndSendScreenview()
@@ -1745,8 +1745,8 @@
 							Y = Q(e, n, this.props, t, S),
 							H = Z(e, this.props, d),
 							F = R.media && R.media.type === T.o.EMBED ? R.media.provider : null,
-							M = p && !D.isSponsored,
-							V = m && !D.isSponsored && !D.isScoreHidden;
+							V = p && !D.isSponsored,
+							M = m && !D.isSponsored && !D.isScoreHidden;
 						I = {
 							estHeight: Object(P.c)(D, n),
 							id: e,
@@ -1775,8 +1775,8 @@
 								isFrontpage: d,
 								isProfilePostListing: c,
 								isTopicPage: l,
-								isCommentCountAnimationEnabled: M,
-								isVoteCountAnimationEnabled: V,
+								isCommentCountAnimationEnabled: V,
+								isVoteCountAnimationEnabled: M,
 								isCountAnimShadowTestEnabled: b,
 								listingBelowVariant: h,
 								listingIndex: t,
@@ -2362,15 +2362,15 @@
 			const i = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Mb
+						experimentName: n.Kb
 					});
-					return !(!t || Object(n.de)(t))
+					return !(!t || Object(n.be)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: n.Mb
-					}) === n.hc.ListingEnabled
+						experimentName: n.Kb
+					}) === n.fc.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -2484,4 +2484,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.e50398c59ced768c26da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.e5ce04456baa1859bc0e.js.map

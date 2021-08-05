@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.4184ab085509af9365d0.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0a94e210e7a85251ed70.js
+// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -25,9 +25,9 @@
 			})), s.d(t, "o", (function() {
 				return V
 			})), s.d(t, "p", (function() {
-				return Z
-			})), s.d(t, "d", (function() {
 				return Q
+			})), s.d(t, "d", (function() {
+				return X
 			})), s.d(t, "a", (function() {
 				return G
 			})), s.d(t, "b", (function() {
@@ -35,9 +35,9 @@
 			})), s.d(t, "n", (function() {
 				return q
 			})), s.d(t, "c", (function() {
-				return W
-			})), s.d(t, "k", (function() {
 				return Y
+			})), s.d(t, "k", (function() {
+				return W
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/config.ts"),
@@ -190,7 +190,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), i || 0 !== a || s(e, !0), Object(p.d)()
-				}), Z = ({
+				}), Q = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
@@ -198,7 +198,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, Q = ({
+				}, X = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: s,
@@ -215,9 +215,9 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && n(c, !0), Object(p.d)()
-				}, X = Object(d.a)(k.r), G = e => t => t(X({
+				}, Z = Object(d.a)(k.r), G = e => t => t(Z({
 					draftKey: e
-				})), J = Object(d.a)(k.a), q = Object(d.a)(k.E), W = Object(d.a)(k.b), Y = Object(d.a)(k.u)
+				})), J = Object(d.a)(k.a), q = Object(d.a)(k.E), Y = Object(d.a)(k.b), W = Object(d.a)(k.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -1059,14 +1059,14 @@
 			const r = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.ad
-					}) === n.kd.Enabled
+						experimentName: n.Yc
+					}) === n.id.Enabled
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Zc
-					}) === n.jd.Enabled
+						experimentName: n.Xc
+					}) === n.hd.Enabled
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, s) {
@@ -1101,4 +1101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.4184ab085509af9365d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0a94e210e7a85251ed70.js.map
