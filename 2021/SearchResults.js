@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.81d3a686203fe8947250.js
-// Retrieved at 8/4/2021, 6:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.616c7ac53215182a7fc2.js
+// Retrieved at 8/5/2021, 10:30:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -627,24 +627,27 @@
 		},
 		"./src/lib/colors/constants.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "d", (function() {
+			s.d(t, "e", (function() {
 				return r
 			})), s.d(t, "b", (function() {
 				return n
 			})), s.d(t, "a", (function() {
 				return a
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return o
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "c", (function() {
 				return i
 			})), s.d(t, "f", (function() {
 				return c
+			})), s.d(t, "g", (function() {
+				return d
 			}));
 			const r = "#FFF",
 				n = "#FF4500",
 				a = "#0079D3",
-				o = "#46D160",
-				i = {
+				o = "#24A0ED",
+				i = "#46D160",
+				c = {
 					black: "#000",
 					white: r,
 					orangered: n,
@@ -656,11 +659,11 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: "#24A0ED",
+					primary: o,
 					secondary: "#006CBF",
 					upvote: n,
 					downvote: "#7193FF",
-					positive: o,
+					positive: i,
 					negative: "#EA0027",
 					caution: "#FFB000",
 					admin: n,
@@ -671,8 +674,8 @@
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				c = {
-					...i,
+				d = {
+					...c,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -7656,7 +7659,7 @@
 		"./src/reddit/components/SearchResultsNav/redesign.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return N
+				return P
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
@@ -7675,33 +7678,40 @@
 				x = s.n(C),
 				f = s("./src/reddit/selectors/user.ts"),
 				g = s("./src/lib/classNames/index.ts"),
-				v = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				y = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				O = s("./src/reddit/hooks/useInfoTextTooltip.ts"),
-				E = s("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.m.less"),
-				j = s.n(E);
-			const _ = "safe-search-toggle";
+				v = s("./src/lib/colors/constants.ts"),
+				y = s("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				O = s("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				E = s("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				j = s("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.m.less"),
+				_ = s.n(j);
+			const k = "safe-search-toggle";
 
-			function k({}) {
-				const [e, t] = Object(n.useState)(!0), s = Object(O.a)({});
-				return a.a.createElement("div", {
-					className: Object(g.a)(j.a.searchNSFWToggle),
-					"data-testid": _,
+			function S({}) {
+				const [e, t] = Object(n.useState)(!0), s = Object(E.a)({});
+				return s.arrowProps.style = {
+					...s.arrowProps.style,
+					"border-bottom": `3px solid ${v.d}`
+				}, s.popperProps.style = {
+					...s.popperProps.style,
+					"background-color": v.d
+				}, a.a.createElement("div", {
+					className: Object(g.a)(_.a.searchNSFWToggle),
+					"data-testid": k,
 					onMouseEnter: s.show,
 					onMouseLeave: s.hide
 				}, a.a.createElement("label", {
-					htmlFor: _,
-					className: Object(g.a)(j.a.searchNSFWToggleLabel)
+					htmlFor: k,
+					className: Object(g.a)(_.a.searchNSFWToggleLabel)
 				}, r.fbt._("Safe search", null, {
 					hk: "pEL3K"
-				})), a.a.createElement(y.a, {
-					id: _,
+				})), a.a.createElement(O.a, {
+					id: k,
 					onToggle: function() {
 						t(!e)
 					},
 					on: e,
 					ref: s.target.ref
-				}), a.a.createElement(v.a, {
+				}), a.a.createElement(y.a, {
 					visible: s.visible,
 					arrowProps: s.arrowProps,
 					popperProps: s.popperProps
@@ -7711,10 +7721,10 @@
 					hk: "38SvSs"
 				})))
 			}
-			var S = s("./src/reddit/components/SearchResultsNav/redesign.m.less"),
-				I = s.n(S);
+			var I = s("./src/reddit/components/SearchResultsNav/redesign.m.less"),
+				N = s.n(I);
 
-			function N({
+			function P({
 				location: e,
 				searchOptions: t,
 				activeTab: s
@@ -7743,9 +7753,9 @@
 					}];
 				return a.a.createElement("div", {
 					"data-testid": "search-results-nav",
-					className: I.a.searchResultsNav
+					className: N.a.searchResultsNav
 				}, a.a.createElement("div", {
-					className: I.a.pillRow,
+					className: N.a.pillRow,
 					role: "tablist"
 				}, v.filter(e => e.condition).map(s => {
 					const {
@@ -7759,7 +7769,7 @@
 						to: Object(m.a)(e, g, c),
 						"aria-selected": r,
 						role: "tab",
-						className: I.a.pillElement,
+						className: N.a.pillElement,
 						onClick: () => (e => {
 							e.active && n(Object(h.i)(e.target, t))
 						})(s)
@@ -7768,7 +7778,7 @@
 						onClick: x.a,
 						variant: b.b.TAB_GROUP
 					}, i))
-				})), C && a.a.createElement(k, null))
+				})), C && a.a.createElement(S, null))
 			}
 		},
 		"./src/reddit/components/SearchResultsSidebar/index.tsx": function(e, t, s) {
@@ -10617,4 +10627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.81d3a686203fe8947250.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.616c7ac53215182a7fc2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9a60a7a1f14761466179.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.28528e6a2e6bdf66af9c.js
+// Retrieved at 8/5/2021, 10:30:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -75,24 +75,27 @@
 		},
 		"./src/lib/colors/constants.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "d", (function() {
+			n.d(t, "e", (function() {
 				return s
 			})), n.d(t, "b", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return r
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "c", (function() {
 				return i
 			})), n.d(t, "f", (function() {
 				return c
+			})), n.d(t, "g", (function() {
+				return d
 			}));
 			const s = "#FFF",
 				o = "#FF4500",
 				a = "#0079D3",
-				r = "#46D160",
-				i = {
+				r = "#24A0ED",
+				i = "#46D160",
+				c = {
 					black: "#000",
 					white: s,
 					orangered: o,
@@ -104,11 +107,11 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: "#24A0ED",
+					primary: r,
 					secondary: "#006CBF",
 					upvote: o,
 					downvote: "#7193FF",
-					positive: r,
+					positive: i,
 					negative: "#EA0027",
 					caution: "#FFB000",
 					admin: o,
@@ -119,8 +122,8 @@
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				c = {
-					...i,
+				d = {
+					...c,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -3124,4 +3127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.9a60a7a1f14761466179.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.28528e6a2e6bdf66af9c.js.map

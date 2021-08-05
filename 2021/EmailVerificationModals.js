@@ -1,27 +1,30 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.e1c3de4557b7c7707988.js
-// Retrieved at 7/26/2021, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.9acad7a482cf8e2a1183.js
+// Retrieved at 8/5/2021, 10:30:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "d", (function() {
+			s.d(t, "e", (function() {
 				return a
 			})), s.d(t, "b", (function() {
 				return n
 			})), s.d(t, "a", (function() {
 				return i
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return o
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "c", (function() {
 				return r
 			})), s.d(t, "f", (function() {
 				return l
+			})), s.d(t, "g", (function() {
+				return c
 			}));
 			const a = "#FFF",
 				n = "#FF4500",
 				i = "#0079D3",
-				o = "#46D160",
-				r = {
+				o = "#24A0ED",
+				r = "#46D160",
+				l = {
 					black: "#000",
 					white: a,
 					orangered: n,
@@ -33,11 +36,11 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: "#24A0ED",
+					primary: o,
 					secondary: "#006CBF",
 					upvote: n,
 					downvote: "#7193FF",
-					positive: o,
+					positive: r,
 					negative: "#EA0027",
 					caution: "#FFB000",
 					admin: n,
@@ -48,8 +51,8 @@
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				l = {
-					...r,
+				c = {
+					...l,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -417,7 +420,7 @@
 					}, i.a.createElement(J.a, {
 						className: Object(l.a)(z.a.checkbox, !r && z.a.unchecked),
 						checkBoxStyle: {
-							backgroundColor: R.d,
+							backgroundColor: R.e,
 							borderRadius: "50%",
 							fill: Object(W.a)(this.props).active,
 							visibility: r ? "visible" : "hidden"
@@ -1020,4 +1023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.e1c3de4557b7c7707988.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.9acad7a482cf8e2a1183.js.map

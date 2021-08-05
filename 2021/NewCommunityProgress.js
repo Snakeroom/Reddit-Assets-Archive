@@ -1,27 +1,30 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.5af60108b3263375a543.js
-// Retrieved at 8/3/2021, 12:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.d30e8759970475dd15ff.js
+// Retrieved at 8/5/2021, 10:30:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
 			"use strict";
-			t.d(e, "d", (function() {
+			t.d(e, "e", (function() {
 				return a
 			})), t.d(e, "b", (function() {
 				return l
 			})), t.d(e, "a", (function() {
 				return A
-			})), t.d(e, "c", (function() {
+			})), t.d(e, "d", (function() {
 				return n
-			})), t.d(e, "e", (function() {
+			})), t.d(e, "c", (function() {
 				return c
 			})), t.d(e, "f", (function() {
+				return r
+			})), t.d(e, "g", (function() {
 				return L
 			}));
 			const a = "#FFF",
 				l = "#FF4500",
 				A = "#0079D3",
-				n = "#46D160",
-				c = {
+				n = "#24A0ED",
+				c = "#46D160",
+				r = {
 					black: "#000",
 					white: a,
 					orangered: l,
@@ -33,11 +36,11 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: "#24A0ED",
+					primary: n,
 					secondary: "#006CBF",
 					upvote: l,
 					downvote: "#7193FF",
-					positive: n,
+					positive: c,
 					negative: "#EA0027",
 					caution: "#FFB000",
 					admin: l,
@@ -49,7 +52,7 @@
 					spoiler: "#1A1A1B"
 				},
 				L = {
-					...c,
+					...r,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -77,13 +80,13 @@
 				gqlContext: A
 			}) => {
 				var n;
-				const L = (await ((C, e) => Object(a.a)(C, {
+				const r = (await ((C, e) => Object(a.a)(C, {
 					...l,
 					variables: e
 				}))(A(), {
 					id: C
 				})).body;
-				c(e, C, null === (n = L.data) || void 0 === n ? void 0 : n.subredditInfoById)
+				c(e, C, null === (n = r.data) || void 0 === n ? void 0 : n.subredditInfoById)
 			};
 
 			function c(C, e, t) {
@@ -111,27 +114,27 @@
 				A = t("./node_modules/react-redux/es/index.js"),
 				n = t("./src/reddit/components/NewCommunityProgress/index.m.less"),
 				c = t.n(n),
-				L = t("./src/lib/classNames/index.ts"),
-				r = t("./src/reddit/actions/modal.ts"),
+				r = t("./src/lib/classNames/index.ts"),
+				L = t("./src/reddit/actions/modal.ts"),
 				i = t("./src/reddit/actions/subreddit/questions.ts"),
 				d = t("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
 				o = t("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
 				f = t("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
 				s = t("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
-				E = t("./src/lib/makeGqlRequest/index.ts");
-			const g = (C, e) => Object(E.a)(C, {
+				g = t("./src/lib/makeGqlRequest/index.ts");
+			const E = (C, e) => Object(g.a)(C, {
 					...f,
 					variables: e
 				}),
-				m = (C, e) => Object(E.a)(C, {
+				m = (C, e) => Object(g.a)(C, {
 					...s,
 					variables: e
 				}),
-				p = (C, e) => Object(E.a)(C, {
+				p = (C, e) => Object(g.a)(C, {
 					...d,
 					variables: e
 				}),
-				B = (C, e) => Object(E.a)(C, {
+				B = (C, e) => Object(g.a)(C, {
 					...o,
 					variables: e
 				});
@@ -1442,14 +1445,14 @@
 					bodyContent: t,
 					iconIdentifier: a,
 					isInNCPControlGroup: n,
-					buttons: r,
+					buttons: L,
 					colorIdentifier: i,
 					onActionCard: d = (() => {}),
 					onClose: o = (() => {}),
 					isNightMode: f,
 					subredditUrl: s,
-					progressModule: E,
-					primaryButton: g,
+					progressModule: g,
+					primaryButton: E,
 					progress: m,
 					status: p
 				}, B) => {
@@ -1458,38 +1461,38 @@
 						w = Object(I.a)(),
 						P = aC[a],
 						u = P ? Object(J.b)(P) : null !== (M = tC[a]) && void 0 !== M ? M : Object(J.b)("best"),
-						v = f ? G.f : G.e,
+						v = f ? G.g : G.f,
 						Z = null !== (h = v[i]) && void 0 !== h ? h : v.downvote;
 
 					function Q(e) {
 						(function(C) {
 							return "CommunityProgressShareButton" === C.__typename
-						})(e) && (Object(Y.a)(`https://reddit.com${s}`), b(Object(V.f)(Object(V.e)("Copied community URL to clipboard!", z.b.SuccessCommunityGreen)))), n && o(H.b.CTA_BUTTON_CLICK), w(D(E, C, e.buttonText))
+						})(e) && (Object(Y.a)(`https://reddit.com${s}`), b(Object(V.f)(Object(V.e)("Copied community URL to clipboard!", z.b.SuccessCommunityGreen)))), n && o(H.b.CTA_BUTTON_CLICK), w(D(g, C, e.buttonText))
 					}
 					const k = (null == m ? void 0 : m.done) / (null == m ? void 0 : m.total) * 100 || 0,
-						j = lC(g, s);
+						j = lC(E, s);
 					return l.a.createElement("a", CC({
-						className: Object(L.a)(c.a.ncpCard, {
+						className: Object(r.a)(c.a.ncpCard, {
 							[c.a.v2]: !n,
 							[c.a.isCompleted]: p === H.a.COMPLETED,
 							[c.a.nightMode]: !n && f
 						})
 					}, j && {
 						href: j
-					}, g && {
-						onClick: () => Q(g)
+					}, E && {
+						onClick: () => Q(E)
 					}, {
 						rel: "noopener noreferrer",
 						target: "_blank",
 						ref: B
 					}), n ? l.a.createElement(l.a.Fragment, null, l.a.createElement(AC, {
 						color: Z,
-						className: Object(L.a)(c.a.stripe, c.a.stripeUp)
+						className: Object(r.a)(c.a.stripe, c.a.stripeUp)
 					}), l.a.createElement(nC, {
 						color: Z,
-						className: Object(L.a)(c.a.stripe, c.a.stripeDown)
+						className: Object(r.a)(c.a.stripe, c.a.stripeDown)
 					}), l.a.createElement(K.a, {
-						className: Object(L.a)(c.a.headerButton, c.a.closeButton, c.a.og),
+						className: Object(r.a)(c.a.headerButton, c.a.closeButton, c.a.og),
 						onClick: () => o(H.b.HIDE_BUTTON_CLICK)
 					}, l.a.createElement(X.b, null), l.a.createElement("div", null, eC._("Close", null, {
 						hk: "4gbyAA"
@@ -1504,21 +1507,21 @@
 						className: c.a.completedIcon
 					}, l.a.createElement(J.a, {
 						name: "checkmark",
-						className: Object(L.a)(c.a.icon, {
+						className: Object(r.a)(c.a.icon, {
 							[c.a.v2]: !n
 						})
 					}))) : l.a.createElement(u, {
 						className: c.a.imageIcon
 					}), l.a.createElement("div", {
-						className: Object(L.a)(c.a.bodyContent, {
+						className: Object(r.a)(c.a.bodyContent, {
 							[c.a.v2]: !n
 						})
 					}, l.a.createElement("h2", {
-						className: Object(L.a)(c.a.title, {
+						className: Object(r.a)(c.a.title, {
 							[c.a.v2]: !n
 						})
 					}, e), l.a.createElement("p", {
-						className: Object(L.a)(c.a.bodyText, {
+						className: Object(r.a)(c.a.bodyText, {
 							[c.a.v2]: !n
 						})
 					}, null == t ? void 0 : t.markdown), (null == m ? void 0 : m.total) > 1 && l.a.createElement("div", {
@@ -1534,7 +1537,7 @@
 						innerBarClassName: c.a.innerBar,
 						percent: k
 					})), !n && p !== H.a.COMPLETED && l.a.createElement(K.a, {
-						className: Object(L.a)(c.a.headerButton, c.a.menuButton),
+						className: Object(r.a)(c.a.headerButton, c.a.menuButton),
 						onClick: C => {
 							C.stopPropagation(), C.preventDefault(), d()
 						}
@@ -1542,7 +1545,7 @@
 						name: "overflow_horizontal"
 					}), l.a.createElement("div", null, eC._("Close", null, {
 						hk: "4gbyAA"
-					}))), r.length > 0 && l.a.createElement("div", null, r.map(C => {
+					}))), L.length > 0 && l.a.createElement("div", null, L.map(C => {
 						const e = lC(C, s),
 							t = n ? {
 								backgroundColor: Z,
@@ -1568,9 +1571,9 @@
 						}), C.buttonText)
 					}))))
 				}),
-				LC = t("./node_modules/fbt/lib/FbtPublic.js"),
-				rC = t("./src/higherOrderComponents/asModal/index.tsx");
-			var iC = Object(rC.a)(C => {
+				rC = t("./node_modules/fbt/lib/FbtPublic.js"),
+				LC = t("./src/higherOrderComponents/asModal/index.tsx");
+			var iC = Object(LC.a)(C => {
 				const {
 					onCloseModal: e,
 					onCompleteCard: t,
@@ -1578,31 +1581,31 @@
 				} = C;
 				return l.a.createElement(X.d, null, l.a.createElement(X.h, {
 					className: c.a.modalHeader
-				}, LC.fbt._("Remove this task?", null, {
+				}, rC.fbt._("Remove this task?", null, {
 					hk: "3eHFY8"
 				}), l.a.createElement(K.a, {
 					className: c.a.closeModalButton,
 					onClick: e
 				}, l.a.createElement(X.b, null))), l.a.createElement(X.k, {
 					className: c.a.modalMain
-				}, LC.fbt._("If you remove this task, you won’t be able to see it anymore.", null, {
+				}, rC.fbt._("If you remove this task, you won’t be able to see it anymore.", null, {
 					hk: "ycdgz"
 				})), l.a.createElement(X.f, null, l.a.createElement(U.q, {
 					className: c.a.modalButton,
 					onClick: e,
 					priority: U.b.Secondary
-				}, LC.fbt._("Cancel", null, {
+				}, rC.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), l.a.createElement(U.q, {
 					className: c.a.modalButton,
 					onClick: t,
 					priority: U.b.Secondary
-				}, LC.fbt._("Mark as complete", null, {
+				}, rC.fbt._("Mark as complete", null, {
 					hk: "4kKkLF"
 				})), l.a.createElement(U.q, {
 					className: c.a.modalButton,
 					onClick: a
-				}, LC.fbt._("Remove", null, {
+				}, rC.fbt._("Remove", null, {
 					hk: "3tYl0U"
 				}))))
 			});
@@ -1658,15 +1661,15 @@
 					className: c.a.arrowIcon
 				}))),
 				sC = t("./src/reddit/components/NewCommunityProgress/icons/Progress.m.less"),
-				EC = t.n(sC);
-			var gC = C => {
+				gC = t.n(sC);
+			var EC = C => {
 				let e = C.percentage;
 				e < 0 && (e = 0), e > 100 && (e = 100);
 				const t = (100 - e) / 100 * (80 * Math.PI);
 				return l.a.createElement("div", {
 					id: "cont",
 					"data-pct": C.ratioString,
-					className: Object(L.a)(C.className, EC.a.cont)
+					className: Object(r.a)(C.className, gC.a.cont)
 				}, l.a.createElement("svg", {
 					id: "svg",
 					width: "64",
@@ -1675,7 +1678,7 @@
 					version: "1.1",
 					xmlns: "http://www.w3.org/2000/svg"
 				}, l.a.createElement("circle", {
-					className: EC.a.innerCircle,
+					className: gC.a.innerCircle,
 					r: "40",
 					cx: "50",
 					cy: "50",
@@ -1684,7 +1687,7 @@
 					strokeDashoffset: "0"
 				}), l.a.createElement("circle", {
 					strokeDashoffset: t,
-					className: EC.a.outerCircle,
+					className: gC.a.outerCircle,
 					id: "bar",
 					r: "40",
 					cx: "50",
@@ -1720,19 +1723,19 @@
 				let f;
 				f = t.cards;
 				const s = Object(a.useRef)(null),
-					[E, M] = Object(a.useState)(!C),
+					[g, M] = Object(a.useState)(!C),
 					h = Object(A.e)(N.V),
 					D = Object(A.e)(C => Object(O.Y)(C, e)),
 					y = Object(I.a)();
 				Object(a.useEffect)(() => {
-					y(b(t, E ? "expanded_module" : "collapses_module"))
-				}, [E]);
-				const [x] = Object(Q.a)(g), T = Object(A.d)();
+					y(b(t, g ? "expanded_module" : "collapses_module"))
+				}, [g]);
+				const [x] = Object(Q.a)(E), T = Object(A.d)();
 				const [F] = Object(Q.a)(m);
 				const [G, Y] = Object(a.useState)(void 0), [V] = Object(Q.a)(p);
 				const X = Object(A.e)(j.a) === BC;
 				async function R() {
-					X && Y(void 0), T(Object(r.i)(BC))
+					X && Y(void 0), T(Object(L.i)(BC))
 				}
 				const [U] = Object(Q.a)(B);
 				const K = Object(a.useRef)(),
@@ -1742,7 +1745,7 @@
 				if (Object(a.useEffect)(() => {
 						const C = (null == K ? void 0 : K.current) || J.current;
 						(null == C ? void 0 : C.parentNode) && (C.parentNode.scrollTop = (null == C ? void 0 : C.offsetTop) - C.parentNode.offsetTop - 20)
-					}, [K, t, E]), 0 === t.cards.length) return null;
+					}, [K, t, g]), 0 === t.cards.length) return null;
 				const W = () => f.map((C, a) => {
 						if (o && a > 2) return;
 						const A = {
@@ -1773,8 +1776,8 @@
 					_ = t.cards.find(C => C.status === H.a.INITIAL || C.status === H.a.ACTIONED);
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement("details", {
 					ref: s,
-					open: E,
-					className: Object(L.a)(c.a.ncpWidget, {
+					open: g,
+					className: Object(r.a)(c.a.ncpWidget, {
 						[c.a.og]: o
 					}),
 					onToggle: () => {
@@ -1783,7 +1786,7 @@
 						M(e), y(e ? w(t) : P(t))
 					}
 				}, l.a.createElement("summary", {
-					className: Object(L.a)(c.a.ncpHeading, {
+					className: Object(r.a)(c.a.ncpHeading, {
 						[c.a.v2]: !o
 					})
 				}, o ? l.a.createElement("span", {
@@ -1796,21 +1799,21 @@
 						className: c.a.titleText
 					}, t.displayText), l.a.createElement("div", {
 						className: c.a.descriptionText
-					}, t.description)), void 0 !== q && l.a.createElement(gC, {
+					}, t.description)), void 0 !== q && l.a.createElement(EC, {
 						className: c.a.progressCircle,
 						percentage: q,
 						ratioString: `${null===(C=t.progress)||void 0===C?void 0:C.done}/${null===(e=t.progress)||void 0===e?void 0:e.total}`
 					}))
-				})(), E ? l.a.createElement(k.c, {
-					className: Object(L.a)(c.a.chevron, {
+				})(), g ? l.a.createElement(k.c, {
+					className: Object(r.a)(c.a.chevron, {
 						[c.a.v2]: !o
 					})
 				}) : l.a.createElement(k.b, {
-					className: Object(L.a)(c.a.chevron, {
+					className: Object(r.a)(c.a.chevron, {
 						[c.a.v2]: !o
 					})
-				}), !E && l.a.createElement("div", {
-					className: Object(L.a)(c.a.dot, {
+				}), !g && l.a.createElement("div", {
+					className: Object(r.a)(c.a.dot, {
 						[c.a.v2]: !o
 					})
 				})), o ? W() : l.a.createElement("div", {
@@ -1968,4 +1971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.5af60108b3263375a543.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.d30e8759970475dd15ff.js.map

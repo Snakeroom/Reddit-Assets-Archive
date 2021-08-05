@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.6056d8403807b776849c.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.357d341b2459b303fdd5.js
+// Retrieved at 8/5/2021, 10:30:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -606,24 +606,27 @@
 		},
 		"./src/lib/colors/constants.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "d", (function() {
+			s.d(t, "e", (function() {
 				return n
 			})), s.d(t, "b", (function() {
 				return r
 			})), s.d(t, "a", (function() {
 				return o
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return i
-			})), s.d(t, "e", (function() {
+			})), s.d(t, "c", (function() {
 				return a
 			})), s.d(t, "f", (function() {
 				return d
+			})), s.d(t, "g", (function() {
+				return c
 			}));
 			const n = "#FFF",
 				r = "#FF4500",
 				o = "#0079D3",
-				i = "#46D160",
-				a = {
+				i = "#24A0ED",
+				a = "#46D160",
+				d = {
 					black: "#000",
 					white: n,
 					orangered: r,
@@ -635,11 +638,11 @@
 					tone5: "#EDEFF1",
 					tone6: "#F6F7F8",
 					tone7: "#FFFFFF",
-					primary: "#24A0ED",
+					primary: i,
 					secondary: "#006CBF",
 					upvote: r,
 					downvote: "#7193FF",
-					positive: i,
+					positive: a,
 					negative: "#EA0027",
 					caution: "#FFB000",
 					admin: r,
@@ -650,8 +653,8 @@
 					nsfw: "#FF585B",
 					spoiler: "#1A1A1B"
 				},
-				d = {
-					...a,
+				c = {
+					...d,
 					tone1: "#D7DADC",
 					tone2: "#818384",
 					tone3: "#565758",
@@ -6284,4 +6287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.6056d8403807b776849c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.357d341b2459b303fdd5.js.map
