@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4815d9d3f0162094d332.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f2cc369c757e8f8d6b5b.js
+// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -677,36 +677,38 @@
 		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(a, i, r) {
 			"use strict";
-			r.d(i, "g", (function() {
+			r.d(i, "h", (function() {
 				return F
-			})), r.d(i, "k", (function() {
+			})), r.d(i, "l", (function() {
 				return g
-			})), r.d(i, "j", (function() {
+			})), r.d(i, "k", (function() {
 				return v
-			})), r.d(i, "h", (function() {
+			})), r.d(i, "i", (function() {
 				return _
 			})), r.d(i, "b", (function() {
 				return O
-			})), r.d(i, "m", (function() {
-				return j
 			})), r.d(i, "n", (function() {
+				return j
+			})), r.d(i, "o", (function() {
 				return C
-			})), r.d(i, "d", (function() {
+			})), r.d(i, "e", (function() {
 				return I
 			})), r.d(i, "a", (function() {
-				return N
-			})), r.d(i, "o", (function() {
+				return w
+			})), r.d(i, "p", (function() {
 				return L
-			})), r.d(i, "i", (function() {
+			})), r.d(i, "j", (function() {
 				return M
-			})), r.d(i, "e", (function() {
-				return U
 			})), r.d(i, "f", (function() {
+				return U
+			})), r.d(i, "g", (function() {
 				return R
-			})), r.d(i, "l", (function() {
+			})), r.d(i, "m", (function() {
 				return H
 			})), r.d(i, "c", (function() {
 				return W
+			})), r.d(i, "d", (function() {
+				return z
 			}));
 			var t = r("./node_modules/fbt/lib/FbtPublic.js"),
 				x = r("./node_modules/uuid/index.js"),
@@ -731,10 +733,10 @@
 					predictions: o.a
 				}
 			});
-			const A = Object(m.a)(E.f),
-				B = Object(m.a)(E.j),
-				D = Object(m.a)(E.m),
-				V = Object(m.a)(E.i),
+			const A = Object(m.a)(E.e),
+				B = Object(m.a)(E.i),
+				D = Object(m.a)(E.l),
+				V = Object(m.a)(E.h),
 				b = Object(m.a)(E.b),
 				F = (a, i, r, t) => async (x, k, {
 					gqlContext: n
@@ -796,7 +798,7 @@
 						pollId: i,
 						prediction: n.poll
 					})), n.poll
-				}, P = Object(m.a)(E.d), S = Object(m.a)(E.e), T = Object(m.a)(E.h), _ = a => async (i, r, {
+				}, P = Object(m.a)(E.c), S = Object(m.a)(E.d), T = Object(m.a)(E.g), _ = a => async (i, r, {
 					gqlContext: t
 				}) => {
 					const x = r(),
@@ -848,7 +850,7 @@
 						posts: h,
 						meta: x.meta
 					})), m
-				}, O = Object(m.a)(E.a), j = Object(m.a)(E.k), C = Object(m.a)(E.l), I = ({
+				}, O = Object(m.a)(E.a), j = Object(m.a)(E.j), C = Object(m.a)(E.k), I = ({
 					subredditId: a
 				}) => async (i, r, {
 					gqlContext: t
@@ -857,7 +859,7 @@
 						k = Object(y.b)(x),
 						n = Object(d.a)(x);
 					if (!k) throw new Error("Failed to create tournament, no prediction drafts attached");
-					const o = await Object(c.d)(t(), {
+					const o = await Object(c.e)(t(), {
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: a,
@@ -875,7 +877,7 @@
 						subredditId: a,
 						tournaments: [e]
 					})), e
-				}, N = (a, i) => async (r, t, {
+				}, w = (a, i) => async (r, t, {
 					gqlContext: x
 				}) => {
 					var n;
@@ -894,7 +896,7 @@
 					if (null === (n = e.errors) || void 0 === n ? void 0 : n.length) throw new Error(e.errors[0].message);
 					if (!(null == e ? void 0 : e.tournament)) throw new Error("Failed to create prediction");
 					return e.tournament
-				}, w = Object(m.a)(E.n), L = (a, i, r) => async (i, t, {
+				}, N = Object(m.a)(E.m), L = (a, i, r) => async (i, t, {
 					gqlContext: x
 				}) => {
 					const k = await Object(c.l)(x(), {
@@ -905,7 +907,7 @@
 							updatePredictionTournament: n
 						} = k.body.data;
 					if (!n.tournament) throw new Error("Failed to update prediction name");
-					return i(w(n.tournament)), n.tournament
+					return i(N(n.tournament)), n.tournament
 				}, M = a => async (i, r, {
 					gqlContext: t
 				}) => {
@@ -916,7 +918,7 @@
 							endPredictionTournament: k
 						} = x.body.data;
 					if (!k.tournament) throw new Error("Failed to update prediction name");
-					return i(w(k.tournament)), k.tournament
+					return i(N(k.tournament)), k.tournament
 				}, U = a => async (i, r, {
 					gqlContext: t
 				}) => {
@@ -982,7 +984,22 @@
 						}), e.b.Error);
 						i(Object(s.f)(a))
 					}
+				};
+
+			function z(a, i) {
+				return async (r, t, {
+					gqlContext: x
+				}) => {
+					const k = await Object(c.d)(x(), {
+						postId: a,
+						...i
+					});
+					return r(b({
+						postId: a,
+						prediction: k
+					})), k
 				}
+			}
 		},
 		"./src/reddit/actions/economics/subredditPremium/thunkedActions.ts": function(a, i, r) {
 			"use strict";
@@ -1612,8 +1629,8 @@
 				})) : null)
 			}
 			var I = r("./src/reddit/actions/economics/predictions/index.ts"),
-				N = r("./src/reddit/hooks/useToast.tsx"),
-				w = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
+				w = r("./src/reddit/hooks/useToast.tsx"),
+				N = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
 			const {
 				fbt: L
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1640,7 +1657,7 @@
 			}) {
 				const o = Object(W.b)(),
 					s = Object(k.d)(),
-					l = Object(k.e)(a => Object(w.e)(a, {
+					l = Object(k.e)(a => Object(N.e)(a, {
 						subredditId: n
 					})),
 					c = Object(k.e)(a => Object(q.S)(a, {
@@ -1657,7 +1674,7 @@
 							pollId: r
 						}))
 					}, [r, o]), Object(t.useEffect)(() => {
-						!l && c ? s(Object(I.h)(c.name)) : l || a()
+						!l && c ? s(Object(I.i)(c.name)) : l || a()
 					}, [s, l, c, a]), !l) return null;
 				return x.a.createElement("div", {
 					className: Q.a.tournamentModal
@@ -1727,9 +1744,9 @@
 				userCoins: E
 			}) => {
 				const A = function(a, i, r) {
-						const [t, n] = x.a.useState([]), o = Object(N.a)(), s = Object(k.d)(), e = Object(k.e)(i => a ? Object(w.a)(i, a) : null), m = x.a.useCallback(async () => {
+						const [t, n] = x.a.useState([]), o = Object(w.a)(), s = Object(k.d)(), e = Object(k.e)(i => a ? Object(N.a)(i, a) : null), m = x.a.useCallback(async () => {
 							try {
-								const a = await s(Object(I.e)(i));
+								const a = await s(Object(I.f)(i));
 								n(a)
 							} catch (a) {
 								o(L._("Error: Failed to get chip packs for post", null, {
@@ -1746,9 +1763,9 @@
 						setTokensBalance: D,
 						fetched: V
 					} = function(a, i) {
-						const [r, t] = x.a.useState(null), [n, o] = x.a.useState(!1), s = Object(k.d)(), e = Object(N.a)(), m = x.a.useCallback(async () => {
+						const [r, t] = x.a.useState(null), [n, o] = x.a.useState(!1), s = Object(k.d)(), e = Object(w.a)(), m = x.a.useCallback(async () => {
 							if (a) try {
-								const i = await s(Object(I.f)(a));
+								const i = await s(Object(I.g)(a));
 								o(!0), t(i)
 							} catch (r) {
 								e(M._("Error: Failed to fetch user balance", null, {
@@ -2624,7 +2641,7 @@
 				return G
 			})), r.d(i, "i", (function() {
 				return E
-			})), r.d(i, "d", (function() {
+			})), r.d(i, "e", (function() {
 				return A
 			})), r.d(i, "j", (function() {
 				return B
@@ -2638,7 +2655,7 @@
 				return F
 			})), r.d(i, "h", (function() {
 				return g
-			})), r.d(i, "e", (function() {
+			})), r.d(i, "d", (function() {
 				return v
 			})), r.d(i, "c", (function() {
 				return P
@@ -2752,7 +2769,8 @@
 							input: i
 						}
 					});
-					if (!Object(x.c)(r) || !r.body.data.changePrediction.ok) throw new Error("Unable to edit prediction end time")
+					if (!Object(x.c)(r) || !r.body.data.changePrediction.ok) throw new Error("Unable to update prediction");
+					return r.body.data.changePrediction.poll
 				}, P = async (a, {
 					postId: i
 				}) => {
@@ -3675,4 +3693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4815d9d3f0162094d332.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f2cc369c757e8f8d6b5b.js.map

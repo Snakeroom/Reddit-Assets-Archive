@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9e7c85133d32efe73079.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.cb0c41628f9244eeb81c.js
+// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -766,7 +766,7 @@
 					f = Object(m.G)(o),
 					E = Object(m.K)(o);
 				if (Object(r.useEffect)(() => {
-						d || n(Object(p.h)(c.name))
+						d || n(Object(p.i)(c.name))
 					}, [n, d, c.name]), (null == u ? void 0 : u.tournamentId) !== t) return null;
 				const {
 					name: h,
@@ -825,8 +825,8 @@
 				userIsLoggedIn: S.J,
 				userId: S.ob
 			}), De = {
-				onPredictionResolve: p.j,
-				onPredictionVote: p.k,
+				onPredictionResolve: p.k,
+				onPredictionVote: p.l,
 				showToast: E.f,
 				upvoteToggled: f.db
 			}, Ue = Object(m.t)({
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9e7c85133d32efe73079.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.cb0c41628f9244eeb81c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.c3da9d3e65c6a2c6abe2.js
-// Retrieved at 8/5/2021, 3:30:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e86cadb73d1a63bc6471.js
+// Retrieved at 8/5/2021, 4:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1488,36 +1488,38 @@
 		},
 		"./src/reddit/actions/economics/predictions/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "h", (function() {
 				return S
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return j
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return T
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return R
 			})), n.d(t, "b", (function() {
 				return D
-			})), n.d(t, "m", (function() {
-				return M
 			})), n.d(t, "n", (function() {
+				return M
+			})), n.d(t, "o", (function() {
 				return N
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return L
 			})), n.d(t, "a", (function() {
 				return A
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "p", (function() {
 				return B
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return U
-			})), n.d(t, "e", (function() {
-				return K
 			})), n.d(t, "f", (function() {
+				return K
+			})), n.d(t, "g", (function() {
 				return W
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return G
 			})), n.d(t, "c", (function() {
 				return H
+			})), n.d(t, "d", (function() {
+				return q
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/uuid/index.js"),
@@ -1542,10 +1544,10 @@
 					predictions: a.a
 				}
 			});
-			const x = Object(l.a)(y.f),
-				v = Object(l.a)(y.j),
-				O = Object(l.a)(y.m),
-				_ = Object(l.a)(y.i),
+			const x = Object(l.a)(y.e),
+				v = Object(l.a)(y.i),
+				O = Object(l.a)(y.l),
+				_ = Object(l.a)(y.h),
 				k = Object(l.a)(y.b),
 				S = (e, t, n, o) => async (r, s, {
 					gqlContext: i
@@ -1607,7 +1609,7 @@
 						pollId: t,
 						prediction: i.poll
 					})), i.poll
-				}, w = Object(l.a)(y.d), I = Object(l.a)(y.e), P = Object(l.a)(y.h), R = e => async (t, n, {
+				}, w = Object(l.a)(y.c), I = Object(l.a)(y.d), P = Object(l.a)(y.g), R = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -1659,7 +1661,7 @@
 						posts: h,
 						meta: r.meta
 					})), l
-				}, D = Object(l.a)(y.a), M = Object(l.a)(y.k), N = Object(l.a)(y.l), L = ({
+				}, D = Object(l.a)(y.a), M = Object(l.a)(y.j), N = Object(l.a)(y.k), L = ({
 					subredditId: e
 				}) => async (t, n, {
 					gqlContext: o
@@ -1668,7 +1670,7 @@
 						s = Object(E.b)(r),
 						i = Object(b.a)(r);
 					if (!s) throw new Error("Failed to create tournament, no prediction drafts attached");
-					const a = await Object(p.d)(o(), {
+					const a = await Object(p.e)(o(), {
 							name: "Predictions Tournament",
 							isStartImmediately: !0,
 							subredditId: e,
@@ -1705,7 +1707,7 @@
 					if (null === (i = d.errors) || void 0 === i ? void 0 : i.length) throw new Error(d.errors[0].message);
 					if (!(null == d ? void 0 : d.tournament)) throw new Error("Failed to create prediction");
 					return d.tournament
-				}, F = Object(l.a)(y.n), B = (e, t, n) => async (t, o, {
+				}, F = Object(l.a)(y.m), B = (e, t, n) => async (t, o, {
 					gqlContext: r
 				}) => {
 					const s = await Object(p.l)(r(), {
@@ -1793,7 +1795,22 @@
 						}), d.b.Error);
 						t(Object(c.f)(e))
 					}
+				};
+
+			function q(e, t) {
+				return async (n, o, {
+					gqlContext: r
+				}) => {
+					const s = await Object(p.d)(r(), {
+						postId: e,
+						...t
+					});
+					return n(k({
+						postId: e,
+						prediction: s
+					})), s
 				}
+			}
 		},
 		"./src/reddit/actions/economics/subredditPremium/constants.ts": function(e, t, n) {
 			"use strict";
@@ -19160,7 +19177,7 @@
 				return C
 			})), n.d(t, "i", (function() {
 				return y
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "e", (function() {
 				return x
 			})), n.d(t, "j", (function() {
 				return v
@@ -19174,7 +19191,7 @@
 				return S
 			})), n.d(t, "h", (function() {
 				return j
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return T
 			})), n.d(t, "c", (function() {
 				return w
@@ -19288,7 +19305,8 @@
 							input: t
 						}
 					});
-					if (!Object(r.c)(n) || !n.body.data.changePrediction.ok) throw new Error("Unable to edit prediction end time")
+					if (!Object(r.c)(n) || !n.body.data.changePrediction.ok) throw new Error("Unable to update prediction");
+					return n.body.data.changePrediction.poll
 				}, w = async (e, {
 					postId: t
 				}) => {
@@ -25404,11 +25422,11 @@
 								}
 							}));
 							try {
-								await t(Object(Gn.d)({
+								await t(Object(Gn.e)({
 									subredditId: h
-								})), t(Object(a.q)()), t(Object(Gn.n)()), t(Object(p.b)(`/r/${m}/predictions/`))
+								})), t(Object(a.q)()), t(Object(Gn.o)()), t(Object(p.b)(`/r/${m}/predictions/`))
 							} catch (e) {
-								t(Object(Gn.m)()), t(Object(Hn.f)({
+								t(Object(Gn.n)()), t(Object(Hn.f)({
 									duration: 5e3,
 									kind: Qn.b.Error,
 									text: Zn._("Error: Failed to create prediction tournament", null, {
@@ -25479,9 +25497,9 @@
 								}
 							}));
 							try {
-								await n(Object(Gn.a)(x.tournamentId, C)), n(Object(a.q)()), n(Object(Gn.n)()), n(Object(p.b)(`/r/${y.name}/predictions/`))
+								await n(Object(Gn.a)(x.tournamentId, C)), n(Object(a.q)()), n(Object(Gn.o)()), n(Object(p.b)(`/r/${y.name}/predictions/`))
 							} catch (e) {
-								n(Object(Gn.m)()), e.message.match(/max limit/) ? n(Object(Hn.f)({
+								n(Object(Gn.n)()), e.message.match(/max limit/) ? n(Object(Hn.f)({
 									duration: 1e4,
 									kind: Qn.b.Error,
 									text: no._("Error: Failed to add prediction to tournament, there can only be 100 predictions created for a tournament", null, {
@@ -27729,12 +27747,12 @@
 					l = Object(s.e)(e => Object(Jn.b)(e, {
 						subredditId: c
 					})) || {
-						id: sd.g,
+						id: sd.f,
 						name: "Predictions Tournament"
 					};
 				return Object(o.useEffect)(() => {
 					(async () => {
-						a && n(Object(Gn.h)(a))
+						a && n(Object(Gn.i)(a))
 					})()
 				}, [n, a]), a ? r.a.createElement("div", {
 					className: Object(ze.a)(ad.a.tournamentPicker, e)
@@ -30510,4 +30528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c3da9d3e65c6a2c6abe2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e86cadb73d1a63bc6471.js.map
