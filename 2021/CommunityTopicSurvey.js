@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b461a8111713e6ed69d8.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.63d15515bfa45b01dc27.js
+// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -143,7 +143,7 @@
 		"./src/reddit/components/CommunityTopicSurvey/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return M
+				return L
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -274,7 +274,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(U.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: N.Ld.SmIconHc,
+					userVariant: N.Md.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -322,7 +322,7 @@
 				})))
 			}
 
-			function L(e) {
+			function M(e) {
 				const {
 					questionId: t,
 					questionText: n,
@@ -368,7 +368,7 @@
 				})))
 			}
 
-			function M(e) {
+			function L(e) {
 				var t;
 				const {
 					subredditId: n,
@@ -433,7 +433,7 @@
 							inFeed: u
 						});
 					case x.d.SingleWithSubmit:
-						return o.a.createElement(L, {
+						return o.a.createElement(M, {
 							key: C.id,
 							questionId: C.id,
 							questionText: C.questionText,
@@ -444,7 +444,7 @@
 							inFeed: u
 						});
 					case x.d.SingleNoSubmit:
-						return o.a.createElement(L, {
+						return o.a.createElement(M, {
 							key: C.id,
 							questionId: C.id,
 							questionText: C.questionText,
@@ -863,12 +863,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case p.Ld.SmIcon:
+						case p.Md.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case p.Ld.SmIconHc:
+						case p.Md.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1179,12 +1179,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.Dd
+						experimentName: r.Ed
 					}) || ""
 				},
 				u = e => {
 					const t = c(e);
-					return t === r.Ld.SmIcon || t === r.Ld.SmIconHc
+					return t === r.Md.SmIcon || t === r.Md.SmIconHc
 				},
 				a = (e, {
 					subredditName: t
@@ -1210,4 +1210,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b461a8111713e6ed69d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.63d15515bfa45b01dc27.js.map

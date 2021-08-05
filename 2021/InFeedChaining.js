@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.a446873cdfe59052e0f6.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.d1b60b2ad6f066c3ce13.js
+// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -713,9 +713,9 @@
 													P = N[0], I = N[1]
 												}
 												var T = c.default(b / 1e3, P, I, S.val, S.stiffness, S.damping, S.precision),
-													L = T[0],
-													M = T[1];
-												w[E] = P + (L - P) * o, C[E] = I + (M - I) * o, j[E] = P, O[E] = I
+													M = T[0],
+													L = T[1];
+												w[E] = P + (M - P) * o, C[E] = I + (L - I) * o, j[E] = P, O[E] = I
 											}
 										} x[g] = j, y[g] = O, p[g] = w, h[g] = C
 								}
@@ -1382,23 +1382,23 @@
 				k = s("./node_modules/fbt/lib/FbtPublic.js"),
 				N = s("./src/lib/prettyPrintNumber/index.ts"),
 				T = s("./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Footer/index.m.less"),
-				L = s.n(T);
-			var M = e => {
+				M = s.n(T);
+			var L = e => {
 					const {
 						className: t,
 						post: s
 					} = e;
 					return r.a.createElement("div", {
-						className: Object(o.a)(L.a.footer, t)
+						className: Object(o.a)(M.a.footer, t)
 					}, r.a.createElement("span", {
-						className: L.a.metaText
+						className: M.a.metaText
 					}, k.fbt._({
 						"*": "{number} points",
 						_1: "1 score"
 					}, [k.fbt._plural(s.score, "number", Object(N.b)(s.score))], {
 						hk: "2ncFte"
 					})), r.a.createElement("span", {
-						className: L.a.metaText
+						className: M.a.metaText
 					}, k.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
@@ -1503,7 +1503,7 @@
 						onSubredditOrProfileClick: this.trackSubredditOrProfileClicked,
 						subredditOrProfile: u,
 						shouldShowSubscribeButton: b
-					}), r.a.createElement(I, t), r.a.createElement(M, {
+					}), r.a.createElement(I, t), r.a.createElement(L, {
 						"data-redditstyle": !0,
 						post: a
 					})), r.a.createElement(c.d, null))
@@ -1579,8 +1579,8 @@
 				}).apply(this, arguments)
 			}
 			const T = 500,
-				L = 600,
-				M = {
+				M = 600,
+				L = {
 					stiffness: 200,
 					damping: 20
 				},
@@ -1614,7 +1614,7 @@
 							this.setState({
 								isCarouselVisible: !0
 							})
-						}, L)
+						}, M)
 					}, this.onOverflowClick = () => {
 						const {
 							discoveryUnit: e,
@@ -1766,7 +1766,7 @@
 						rightArrowClassName: k.a.arrow,
 						seed: t,
 						shouldSlideIn: !0,
-						springConfig: M
+						springConfig: L
 					})))) : null
 				}
 			}
@@ -1879,31 +1879,31 @@
 				k = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				N = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
 				T = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
-				L = s.n(T);
-			var M = e => {
+				M = s.n(T);
+			var L = e => {
 					const t = Object(j.a)(e.name, e.type);
 					return i.a.createElement("div", {
-						className: Object(c.a)(L.a.container, e.className)
+						className: Object(c.a)(M.a.container, e.className)
 					}, i.a.createElement(N.a, {
-						className: L.a.layout
+						className: M.a.layout
 					}, i.a.createElement("div", {
-						className: L.a.iconContainer
+						className: M.a.iconContainer
 					}, e.iconUrl ? i.a.createElement("img", {
-						className: L.a.icon,
+						className: M.a.icon,
 						src: e.iconUrl
 					}) : i.a.createElement(k.a, {
-						className: L.a.planetIcon,
+						className: M.a.planetIcon,
 						"data-redditstyle": !0
 					})), i.a.createElement("div", {
-						className: L.a.textContainer
+						className: M.a.textContainer
 					}, i.a.createElement(g.a, {
 						"data-click-id": "subreddit",
-						className: L.a.name,
+						className: M.a.name,
 						to: t
 					}, Object(j.b)(e.displayText || e.name, e.type)), i.a.createElement("span", {
-						className: L.a.separator
+						className: M.a.separator
 					}, "•"), i.a.createElement("span", {
-						className: L.a.timestamp
+						className: M.a.timestamp
 					}, i.a.createElement(C.d, {
 						seconds: e.created / w.Nb
 					})))))
@@ -2003,7 +2003,7 @@
 						flairStyleTemplate: a
 					}, i.a.createElement("div", {
 						className: Object(c.a)(ee.a.innerContainer, K.a.innerContainer)
-					}, _ && w && i.a.createElement(M, te({
+					}, _ && w && i.a.createElement(L, te({
 						created: p.created
 					}, P)), y && w && i.a.createElement(I, te({
 						created: p.created,
@@ -2550,10 +2550,10 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
 					}
-				}, L(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
+				}, M(e)) : e.isListing && e.postPermalink ? i.a.createElement(a.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink)
-				}, L(e)) : L(e)
+				}, M(e)) : M(e)
 			});
 			const T = (e, t) => i.a.createElement(I, {
 					altText: t.altText,
@@ -2572,7 +2572,7 @@
 					src: Object(d.a)(t.source),
 					width: t.width
 				}),
-				L = ({
+				M = ({
 					onClick: e,
 					...t
 				}) => {
@@ -3277,7 +3277,7 @@
 			})), s.d(t, "a", (function() {
 				return T
 			})), s.d(t, "w", (function() {
-				return L
+				return M
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -3309,7 +3309,7 @@
 				k = c.a.th("Thl", a.a),
 				N = c.a.th("Thc", a.a),
 				T = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(i.b, e), "A", a.a)),
-				L = c.a.wrapped(l.a, "A", a.a)
+				M = c.a.wrapped(l.a, "A", a.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3687,9 +3687,9 @@
 			s.d(t, "c", (function() {
 				return T
 			})), s.d(t, "d", (function() {
-				return L
-			})), s.d(t, "a", (function() {
 				return M
+			})), s.d(t, "a", (function() {
+				return L
 			})), s.d(t, "b", (function() {
 				return D
 			})), s.d(t, "f", (function() {
@@ -3813,10 +3813,10 @@
 						key: s
 					}, i)
 				},
-				L = e => a.a.createElement(c.e, {
+				M = e => a.a.createElement(c.e, {
 					key: e
 				}),
-				M = (e, t, s, n) => {
+				L = (e, t, s, n) => {
 					const r = e.c;
 					if (!r) return;
 					const i = r.length,
@@ -3850,13 +3850,13 @@
 				R = (e, t, s, n) => {
 					switch (e.e) {
 						case p.b:
-							return M(e, t, s, n);
+							return L(e, t, s, n);
 						case p.c:
 							return D(e, n);
 						case p.k:
 							return T(e, s, n);
 						case p.l:
-							return L(n);
+							return M(n);
 						case p.p:
 							return U(e, t, s, n);
 						case p.u:
@@ -4142,12 +4142,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case b.Ld.SmIcon:
+						case b.Md.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.Ld.SmIconHc:
+						case b.Md.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4179,7 +4179,7 @@
 			})), s.d(t, "c", (function() {
 				return T
 			})), s.d(t, "d", (function() {
-				return L
+				return M
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -4287,7 +4287,7 @@
 					}))
 				}),
 				T = b,
-				L = w
+				M = w
 		},
 		"./src/reddit/components/Widgets/CommunityList/helpers.ts": function(e, t, s) {
 			"use strict";
@@ -4900,12 +4900,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Dd
+						experimentName: n.Ed
 					}) || ""
 				},
 				l = e => {
 					const t = c(e);
-					return t === n.Ld.SmIcon || t === n.Ld.SmIconHc
+					return t === n.Md.SmIcon || t === n.Md.SmIconHc
 				},
 				d = (e, {
 					subredditName: t
@@ -4928,4 +4928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.a446873cdfe59052e0f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.d1b60b2ad6f066c3ce13.js.map
