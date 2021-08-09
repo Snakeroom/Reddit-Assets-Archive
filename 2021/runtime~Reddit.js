@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.26877a43fd160adcfadb.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c34894e092cba2f7614f.js
+// Retrieved at 8/9/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -597,7 +597,7 @@
 					ProfileComments: "bdabe6f79c50d6529c04",
 					ProfileOverview: "70d9774fce9e1f5a4d1f",
 					ProfilePrivate: "bc562e1e0e902c70dd9e",
-					SearchResults: "5afc8c1892cdc4aab332",
+					SearchResults: "cddef00a2b50f82b9ece",
 					"ModQueue~ModQueuePages~ModerationPages": "31d6cfe0d16ae931b73c",
 					"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "508a4b616483f3d75dc1",
 					ModQueuePages: "b79e0e27e5e9cfdaa8e0",
@@ -701,7 +701,7 @@
 					HarbergerTaxManageModal: "0a15a60855e5a7077999",
 					SubredditPremiumUploadModal: "e73752fcba13c5221f47",
 					"vendors~PostCreation": "c5fa24469a22c9356c7c",
-					PostCreation: "1de2852f7aac3a3c0156",
+					PostCreation: "377698bb55cf7cfaf2dd",
 					"vendors~ModStatsChart~Settings": "31d6cfe0d16ae931b73c",
 					Settings: "21e1ea97839033638ad1",
 					"vendors~ModerationPages": "31d6cfe0d16ae931b73c",
@@ -716,9 +716,9 @@
 					"vendors~ExportTheme~ImportTheme": "31d6cfe0d16ae931b73c",
 					ExportTheme: "31d6cfe0d16ae931b73c",
 					ImportTheme: "31d6cfe0d16ae931b73c",
-					ModListing: "8ecc87c085ca82a9f099",
+					ModListing: "88d750c02e911907dbe8",
 					"vendors~Subreddit": "31d6cfe0d16ae931b73c",
-					Subreddit: "900217b79e2e6e49725b",
+					Subreddit: "25c855c64465d17fa7d0",
 					"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "31d6cfe0d16ae931b73c",
 					"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "874f600586145a63fe6c",
 					PublicAccessNetwork: "83a21146905a6eedc5a8",
@@ -1218,7 +1218,7 @@
 						ProfileComments: "ca03022699470d51dcde",
 						ProfileOverview: "d8b8c7f6ffc70aeb7a7b",
 						ProfilePrivate: "37607a119174efa0fac0",
-						SearchResults: "3a4e875f52cce5299264",
+						SearchResults: "1a7327c26e3eedcdc58c",
 						"ModQueue~ModQueuePages~ModerationPages": "961e666eaf8ddd41884d",
 						"ModQueuePages~reddit-components-ModHub-Content-ModQueue": "59594710f4c18d35ace1",
 						ModQueuePages: "f866b1177afe258a3225",
@@ -1298,7 +1298,7 @@
 						"translations/es_MX-json": "81e65331d8b67922e462",
 						"translations/fr_FR-json": "173bd7305431f6124851",
 						"translations/it_IT-json": "9e2e57c980daad3c3a1e",
-						"translations/pseudo_ext-json": "2b35975588c51172aad3",
+						"translations/pseudo_ext-json": "0b5d7d3363198b147efd",
 						"translations/pseudo_long-json": "bb52cbf2ea6788dda2b9",
 						"translations/pseudo_short-json": "9c4489d232bcbf6e414d",
 						"translations/pt_BR-json": "dca096f1dd438038bea9",
@@ -1322,7 +1322,7 @@
 						HarbergerTaxManageModal: "9dbd73f7c66dd29a6a78",
 						SubredditPremiumUploadModal: "6abca8c3ec2b14e15f4f",
 						"vendors~PostCreation": "9b9057dd895270f4b131",
-						PostCreation: "8e8a7e1c3a8049ea4f81",
+						PostCreation: "2ba3e36678958978fd4a",
 						"vendors~ModStatsChart~Settings": "4756d25d069e14bb198b",
 						Settings: "cbe989684e0e2423b6bd",
 						"vendors~ModerationPages": "39e50d1662977fa3b008",
@@ -1337,9 +1337,9 @@
 						"vendors~ExportTheme~ImportTheme": "798a308dcfca0dc5f6b9",
 						ExportTheme: "22be1ab3948c3464e2ac",
 						ImportTheme: "099317721ef0b4bccdaf",
-						ModListing: "acc96e40f7579e3e962c",
+						ModListing: "37a511e82dcdb4e48648",
 						"vendors~Subreddit": "aa0cc290849b09621187",
-						Subreddit: "1b5e5f9bc151e07b1263",
+						Subreddit: "762358c9c1c805e10547",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "535de0accacdcafdf525",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "d33eb99c3fd4682ff968",
 						PublicAccessNetwork: "d9a13297747d343ed6b2",
@@ -1550,4 +1550,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.26877a43fd160adcfadb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c34894e092cba2f7614f.js.map
