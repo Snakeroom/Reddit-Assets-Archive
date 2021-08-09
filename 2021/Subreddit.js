@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.7a1e7ed1e30327d88291.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3e561b0ac2e0b15d2cbe.js
+// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -9266,7 +9266,7 @@
 				})),
 				xe = Object(d.c)({
 					discoveryUnit: e => Object(ue.c)(e, {
-						unitName: le.j
+						unitName: le.k
 					}),
 					listingKey: fe,
 					posts: (e, t) => {
@@ -11897,9 +11897,9 @@
 						noun: "trending",
 						metaSearch: _(t),
 						discoveryUnit: n === C.POPULAR_CAROUSEL ? {
-							name: d.l,
-							id: d.l,
-							title: d.l,
+							name: d.m,
+							id: d.m,
+							title: d.m,
 							type: "query"
 						} : void 0,
 						actionInfo: m.actionInfo(e, {
@@ -15271,4 +15271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7a1e7ed1e30327d88291.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3e561b0ac2e0b15d2cbe.js.map

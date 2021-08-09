@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d8e4e9250d05c6266027.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d69ce9fb08efbfee046e.js
+// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -1833,9 +1833,9 @@
 						noun: "trending",
 						metaSearch: j(t),
 						discoveryUnit: s === y.POPULAR_CAROUSEL ? {
-							name: a.l,
-							id: a.l,
-							title: a.l,
+							name: a.m,
+							id: a.m,
+							title: a.m,
 							type: "query"
 						} : void 0,
 						actionInfo: b.actionInfo(e, {
@@ -2267,4 +2267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d8e4e9250d05c6266027.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.d69ce9fb08efbfee046e.js.map

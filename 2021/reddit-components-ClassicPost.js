@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8135d37bee1b5bd06871.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2acab64146474d4a5edf.js
+// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1398,7 +1398,7 @@
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
-				a = n("./src/reddit/controls/OutboundLink/styled.tsx"),
+				a = n("./src/reddit/controls/OutboundLink/index.tsx"),
 				i = n("./src/reddit/components/CallToActionButton/index.m.less"),
 				c = n.n(i);
 
@@ -1414,8 +1414,8 @@
 			t.a = ({
 				className: e,
 				...t
-			}) => r.a.createElement(a.a, d({
-				className: Object(o.a)(e, c.a.CallToActionButton, {
+			}) => r.a.createElement(a.b, d({
+				className: Object(o.a)(c.a.CallToActionButton, e, {
 					[c.a.mNotCardView]: t.isNotCardView
 				})
 			}, t))
@@ -6519,4 +6519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8135d37bee1b5bd06871.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2acab64146474d4a5edf.js.map

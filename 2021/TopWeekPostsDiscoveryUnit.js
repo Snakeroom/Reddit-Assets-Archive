@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.35a28815666bcc76b25b.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.24cd4cbbb0fa4919cb0a.js
+// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1234,7 +1234,7 @@
 				fbt: C
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = [], E = () => {}, v = () => void 0, k = c.a.button("CloseButton", f.a), O = Object(i.a)(p.z, e => e.filter(e => 9 === e.length)), P = Object(i.c)({
 				discoveryUnit: e => Object(u.c)(e, {
-					unitName: m.k
+					unitName: m.l
 				}),
 				postIds: O
 			}), _ = Object(a.b)(P);
@@ -2411,4 +2411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.35a28815666bcc76b25b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.24cd4cbbb0fa4919cb0a.js.map

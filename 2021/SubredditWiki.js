@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.24053f19116b07c9b724.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.af8da645823b2ad41d7f.js
+// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -4229,7 +4229,7 @@
 				})),
 				xe = Object(c.c)({
 					discoveryUnit: e => Object(me.c)(e, {
-						unitName: le.j
+						unitName: le.k
 					}),
 					listingKey: ge,
 					posts: (e, t) => {
@@ -7608,4 +7608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.24053f19116b07c9b724.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.af8da645823b2ad41d7f.js.map

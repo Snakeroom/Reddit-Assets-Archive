@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.b9c28b7c738f2580f893.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.8f82ae767dc396df29ef.js
+// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, s) {
@@ -2002,9 +2002,9 @@
 						noun: "trending",
 						metaSearch: D(e),
 						discoveryUnit: s === L.POPULAR_CAROUSEL ? {
-							name: a.l,
-							id: a.l,
-							title: a.l,
+							name: a.m,
+							id: a.m,
+							title: a.m,
 							type: "query"
 						} : void 0,
 						actionInfo: _.actionInfo(t, {
@@ -2812,4 +2812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.b9c28b7c738f2580f893.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.8f82ae767dc396df29ef.js.map

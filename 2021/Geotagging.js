@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.a5b69d0ed23b9731cf6c.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.257ff89b6ecdbb639b8a.js
+// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -1054,7 +1054,7 @@
 				id: "xd_103",
 				layout: m.d.Large,
 				surface: m.e.Topic,
-				unitName: m.i,
+				unitName: m.j,
 				unitType: m.f.SubredditListing,
 				url: ""
 			};
@@ -1815,4 +1815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.a5b69d0ed23b9731cf6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.257ff89b6ecdbb639b8a.js.map
