@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ddb4bbb779b2932c2fbc.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f3b40bc0620c43114963.js
+// Retrieved at 8/9/2021, 4:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, o) {
@@ -2883,15 +2883,13 @@
 				HideIcon: "_3CksthIwbeJIolp7OYeQYv",
 				hideIcon: "_3CksthIwbeJIolp7OYeQYv",
 				Icon: "_2V4nGS1AmzWhA62lzdCu4r",
-				icon: "_2V4nGS1AmzWhA62lzdCu4r",
-				PostCheckboxMenuItem: "_3fGEO8uLSvUJEOP4lDX35p",
-				postCheckboxMenuItem: "_3fGEO8uLSvUJEOP4lDX35p"
+				icon: "_2V4nGS1AmzWhA62lzdCu4r"
 			}
 		},
 		"./src/reddit/components/PostOverflowMenu/index.tsx": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
-				return ue
+				return pe
 			}));
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
 				n = o("./src/lib/constants/index.ts"),
@@ -3001,9 +2999,8 @@
 			var ae = o("./src/reddit/components/PostOverflowMenu/index.m.less"),
 				ce = o.n(ae);
 			const de = h.a.wrapped(M.b, "DropdownRow", ce.a),
-				le = h.a.wrapped(N.a, "PostCheckboxMenuItem", ce.a),
-				pe = p()(),
-				ue = ({
+				le = p()(),
+				pe = ({
 					gild: e = !0,
 					save: t = !0,
 					share: o = !0,
@@ -3018,7 +3015,7 @@
 					[F.a.EditPost]: n,
 					[F.a.Hide]: r
 				}),
-				me = Object(a.b)(() => Object(c.c)({
+				ue = Object(a.b)(() => Object(c.c)({
 					claimedFreeAward: H.b,
 					isConfirmDeleteOpen: (e, {
 						postId: t
@@ -3096,7 +3093,7 @@
 					toggleConfirmDelete: () => e(Object(C.i)(`POST_OVERFLOW_DELETE_CONFIRMATION_${t}`)),
 					onToggleVideoShareModal: () => e(Object(C.i)(Object(A.a)(t)))
 				}));
-			class be extends i.a.PureComponent {
+			class me extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handlePostEvent = (e, t) => {
 						const {
@@ -3155,7 +3152,7 @@
 						e || (s(Object(ee.b)(o.id)), t(o.belongsTo.id, o.id))
 					}, this.onCloseShareModal = e => {
 						e && (this.handlePostEvent("copy_link", {
-							referralId: pe
+							referralId: le
 						}), this.props.onCopyLink(e)), this.props.onToggleVideoShareModal()
 					}, this.renderReportFlow = () => this.props.reportingRevampEnabled ? i.a.createElement(Y.a, {
 						withOverlay: !0,
@@ -3346,25 +3343,25 @@
 					}, i.a.createElement(y.a, {
 						name: "admin",
 						className: ce.a.Icon
-					})), h && C && !x && i.a.createElement(le, {
+					})), h && C && !x && i.a.createElement(N.a, {
 						text: s.fbt._("Mark as OC", null, {
 							hk: "2vGyoC"
 						}),
 						onClick: this.toggleOC,
 						isSelected: this.props.post.isOriginalContent
-					}), h && O && i.a.createElement(le, {
+					}), h && O && i.a.createElement(N.a, {
 						text: s.fbt._("Mark as Spoiler", null, {
 							hk: "3PJk7A"
 						}),
 						onClick: this.toggleSpoiler,
 						isSelected: this.props.post.isSpoiler
-					}), h && i.a.createElement(le, {
+					}), h && i.a.createElement(N.a, {
 						text: s.fbt._("Mark as NSFW", null, {
 							hk: "4qK6JN"
 						}),
 						onClick: this.toggleNSFW,
 						isSelected: this.props.post.isNSFW
-					}), e.userIsOp && i.a.createElement(le, {
+					}), e.userIsOp && i.a.createElement(N.a, {
 						text: s.fbt._("Send me reply notifications", null, {
 							hk: "6AmTA"
 						}),
@@ -3391,7 +3388,7 @@
 						onClose: this.onCloseShareModal,
 						withOverlay: !1,
 						url: Object(m.a)(Object(w.a)(e.postId), {
-							[j.q]: pe,
+							[j.q]: le,
 							utm_source: "share",
 							utm_medium: "web2x",
 							utm_content: "rpan_stream"
@@ -3399,8 +3396,8 @@
 					}))
 				}
 			}
-			be.contextType = k.a;
-			t.a = Object($.e)(me(be))
+			me.contextType = k.a;
+			t.a = Object($.e)(ue(me))
 		},
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx": function(e, t, o) {
 			"use strict";
@@ -3843,8 +3840,7 @@
 					...t
 				}) => n.a.createElement(p, l({
 					className: Object(r.a)(d.a.postCheckboxMenuItem, e)
-				}, t));
-			t.b = p
+				}, t))
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -4886,4 +4882,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.ddb4bbb779b2932c2fbc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.f3b40bc0620c43114963.js.map

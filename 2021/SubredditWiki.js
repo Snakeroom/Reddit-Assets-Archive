@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.a6faf67cdae32fbb8acf.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.cc8fe730e261688dcafe.js
+// Retrieved at 8/9/2021, 4:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -7270,6 +7270,15 @@
 					}
 				})
 		},
+		"./src/reddit/icons/fonts/Envelope/index.tsx": function(e, t, s) {
+			"use strict";
+			var n = s("./node_modules/react/index.js"),
+				i = s.n(n),
+				r = s("./src/reddit/icons/fonts/helpers.tsx");
+			t.a = e => i.a.createElement("i", {
+				className: `${Object(r.b)("message",e.isFilled)} ${e.className}`
+			})
+		},
 		"./src/reddit/icons/svgs/Chat/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -7610,4 +7619,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a6faf67cdae32fbb8acf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.cc8fe730e261688dcafe.js.map

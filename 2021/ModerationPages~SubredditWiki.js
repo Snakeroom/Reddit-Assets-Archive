@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.5c08c38cb57ee9b9d2a4.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6820f01f4f4644b27ec3.js
+// Retrieved at 8/9/2021, 4:00:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -319,8 +319,8 @@
 					}
 				},
 				X = r("./src/lib/omitKey/index.ts");
-			const $ = {};
-			var V = (e = $, t) => {
+			const V = {};
+			var $ = (e = V, t) => {
 				switch (t.type) {
 					case G.b: {
 						const {
@@ -362,7 +362,7 @@
 					}
 				},
 				re = Object(M.c)({
-					error: V,
+					error: $,
 					pending: te
 				}),
 				ne = r("./src/reddit/actions/wiki/wikiEditing/constants.ts");
@@ -970,7 +970,7 @@
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return V
+				return $
 			})), r.d(t, "d", (function() {
 				return ne
 			})), r.d(t, "b", (function() {
@@ -1218,8 +1218,8 @@
 			});
 			const Y = Object(i.a)(E.o),
 				X = Object(i.a)(E.n),
-				$ = Object(i.a)(E.m),
-				V = (e, t = {}) => async (r, n, {
+				V = Object(i.a)(E.m),
+				$ = (e, t = {}) => async (r, n, {
 					apiContext: s
 				}) => {
 					const a = n(),
@@ -1236,7 +1236,7 @@
 					l.ok ? r(X({
 						...l.body,
 						fetchedToken: i
-					})) : r($({
+					})) : r(V({
 						subredditId: e,
 						fetchedToken: i
 					}))
@@ -1346,7 +1346,7 @@
 						const a = Object(y.h)(s, {
 							subredditId: e
 						});
-						a && a[n.id] || await r(V(e, {
+						a && a[n.id] || await r($(e, {
 							username: t
 						}))
 					})()]), r(Object(d.i)(u.a.BAN_USER))
@@ -2468,7 +2468,7 @@
 				G = r.n(q);
 			const {
 				fbt: z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = l.a.wrapped(A, "PrivateKey", G.a), Q = l.a.div("ButtonsContainer", G.a), J = l.a.div("Container", G.a), Y = l.a.div("ContainerExp", G.a), X = l.a.div("Description", G.a), $ = l.a.div("PrivateSubredditDetails", G.a), V = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(U.k, "LinkRouterButton", G.a), ne = l.a.wrapped(U.j, "LinkButton", G.a), se = l.a.wrapped(U.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(U.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = l.a.wrapped(A, "PrivateKey", G.a), Q = l.a.div("ButtonsContainer", G.a), J = l.a.div("Container", G.a), Y = l.a.div("ContainerExp", G.a), X = l.a.div("Description", G.a), V = l.a.div("PrivateSubredditDetails", G.a), $ = l.a.div("PrivateSubredditDescription", G.a), ee = l.a.h3("PrivateSubredditName", G.a), te = l.a.a("Link", G.a), re = l.a.wrapped(U.k, "LinkRouterButton", G.a), ne = l.a.wrapped(U.j, "LinkButton", G.a), se = l.a.wrapped(U.n, "SecondaryLinkRouterButton", G.a), ae = l.a.wrapped(U.m, "SecondaryLinkButton", G.a), ie = l.a.wrapped(re, "GoHomeLinkButton", G.a), oe = l.a.wrapped(f.a, "CreateCommunityButton", G.a), de = l.a.img("Image", G.a), ce = l.a.img("ImagePlaceholder", G.a), le = l.a.wrapped(re, "LeftLinkRouterButton", G.a), ue = l.a.wrapped(ne, "LeftLinkButton", G.a), me = l.a.wrapped(ae, "SecondaryLeftLinkButton", G.a), be = l.a.wrapped(se, "SecondaryLeftLinkRouterButton", G.a), pe = l.a.h3("Title", G.a), fe = l.a.div("PageBody", G.a), he = l.a.div("QuarantineMessageWrapper", G.a), ve = Object(c.c)({
 				isLoggedIn: H.I,
 				origin: K.j,
 				user: H.j,
@@ -2564,7 +2564,7 @@
 					case W.a.PrivateSubreddit:
 						return a.a.createElement("div", null, a.a.createElement(Z, null), a.a.createElement(pe, null, "r/", w, " ", z._("is a private community", null, {
 							hk: "7zZmq"
-						})), x && x.length && a.a.createElement($, null, a.a.createElement(ee, null, "r/", w), a.a.createElement(V, null, a.a.createElement("div", null, x))), a.a.createElement(X, null, z._("The moderators of", null, {
+						})), x && x.length && a.a.createElement(V, null, a.a.createElement(ee, null, "r/", w), a.a.createElement($, null, a.a.createElement("div", null, x))), a.a.createElement(X, null, z._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", w, " ", z._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -3003,7 +3003,7 @@
 					userName: t.username
 				})
 			});
-			class $ extends s.a.Component {
+			class V extends s.a.Component {
 				componentDidMount() {
 					this.props.requestUserBanInfo()
 				}
@@ -3054,7 +3054,7 @@
 					})))
 				}
 			}
-			var V = Object(a.b)(X, (e, {
+			var $ = Object(a.b)(X, (e, {
 					username: t,
 					subredditId: r,
 					contextId: n
@@ -3077,7 +3077,7 @@
 							contextId: n
 						})), e(Object(F.i)(K.a.MUTE_USER))
 					}
-				}))($),
+				}))(V),
 				ee = r("./src/reddit/actions/userFlair/index.ts");
 			const {
 				fbt: te
@@ -3291,7 +3291,7 @@
 						getEventFactory: e => Object(S.g)(e ? "unfollow" : "follow", r),
 						isFullWidth: !0,
 						small: !0
-					})), T && r && !j && f && s.a.createElement(V, {
+					})), T && r && !j && f && s.a.createElement($, {
 						contextId: r,
 						subredditId: f,
 						sendEvent: m,
@@ -4615,15 +4615,6 @@
 				className: `${Object(a.b)("caret_down",e.isFilled)} ${e.className}`
 			})
 		},
-		"./src/reddit/icons/fonts/Envelope/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				s = r.n(n),
-				a = r("./src/reddit/icons/fonts/helpers.tsx");
-			t.a = e => s.a.createElement("i", {
-				className: `${Object(a.b)("message",e.isFilled)} ${e.className}`
-			})
-		},
 		"./src/reddit/icons/fonts/Info/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
@@ -4889,4 +4880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.5c08c38cb57ee9b9d2a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6820f01f4f4644b27ec3.js.map
