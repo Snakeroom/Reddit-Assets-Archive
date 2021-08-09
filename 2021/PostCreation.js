@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7e199d590ace00701ab8.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8e8a7e1c3a8049ea4f81.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -3683,15 +3683,23 @@
 				d = n("./src/reddit/selectors/user.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(o.a)(Object(c.d)(n)), e(Object(i.r)({
+				Object(o.a)(Object(c.f)(n)), e(Object(i.r)({
 					forceFetch: !0
 				})), await e(Object(s.g)(a.a.SNOOVATAR_MODAL))
-			}, u = (e, t, n) => async (i, l) => {
-				const u = l();
-				e && Object(o.a)(Object(c.a)(e)(u)), Object(d.J)(u) ? await i(Object(s.h)(a.a.SNOOVATAR_MODAL, {
-					share: t,
-					source: n
-				})) : await i(Object(r.h)())
+			};
+
+			function u(e = {}) {
+				return async (t, n) => {
+					const {
+						clickSource: i,
+						share: l,
+						source: u
+					} = e, p = n();
+					i && Object(o.a)(Object(c.b)(i)(p)), Object(d.J)(p) ? await t(Object(s.h)(a.a.SNOOVATAR_MODAL, {
+						share: l,
+						source: u
+					})) : await t(Object(r.h)())
+				}
 			}
 		},
 		"./src/reddit/actions/subredditAutocomplete/constants.ts": function(e, t, n) {
@@ -8421,7 +8429,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), i = Object(U.a)(p.kc) === p.oc.Enabled;
+					} = t, r = Object(B.a)(), i = Object(U.a)(p.oc) === p.sc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
@@ -22286,18 +22294,24 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "b", (function() {
-				return d
 			})), n.d(t, "c", (function() {
-				return l
-			})), n.d(t, "f", (function() {
-				return u
+				return d
 			})), n.d(t, "d", (function() {
+				return l
+			})), n.d(t, "i", (function() {
+				return u
+			})), n.d(t, "f", (function() {
 				return p
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return m
+			})), n.d(t, "h", (function() {
+				return b
+			})), n.d(t, "a", (function() {
+				return f
+			})), n.d(t, "e", (function() {
+				return g
 			}));
 			var o = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -22363,7 +22377,20 @@
 					noun: "avatar_marketing",
 					...s.defaults(e),
 					...a
-				})
+				}),
+				h = e => t => n => ({
+					source: "avatar",
+					action: e,
+					noun: "community_spaces",
+					...s.defaults(n),
+					snoovatar: s.snoovatarActiveForBuilderEvent(n),
+					actionInfo: {
+						paneName: "avatar_community_spaces" + (t ? "_control" : "")
+					}
+				}),
+				b = h("view"),
+				f = h("click"),
+				g = h("dismiss")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -29922,10 +29949,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Oc,
+				experimentName: o.Sc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.Tc.Enabled
+			}) === o.Xc.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -29939,14 +29966,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Zc
-					}) === o.jd.Enabled
+						experimentName: o.dd
+					}) === o.nd.Enabled
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.Yc
-					}) === o.id.Enabled
+						experimentName: o.cd
+					}) === o.md.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
@@ -29963,7 +29990,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.fb
-				}) === o.dc
+				}) === o.fc
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -30671,4 +30698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7e199d590ace00701ab8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8e8a7e1c3a8049ea4f81.js.map

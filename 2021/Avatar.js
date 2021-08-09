@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.af56b1a586ed6c8a7143.js
-// Retrieved at 8/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.1cd6ceebf541f0d30b6c.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -23,36 +23,34 @@
 				source: u
 			}) => {
 				const v = new URLSearchParams(s.search);
-				v.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => v.append(e, t)), o && Object.entries(o).forEach(([e, t]) => v.set(e, t));
-				let _ = "";
-				(null == u ? void 0 : u.postId) && (_ = "try_this_look_post"), _ && v.set("source", _);
+				v.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => v.append(e, t)), o && Object.entries(o).forEach(([e, t]) => v.set(e, t)), u && v.set("source", u);
 				const f = Object(l.a)();
 				Object(a.useEffect)(() => {
-					f(d.f)
+					f(d.i)
 				}, [f]);
-				const p = Object(n.e)(e => e.user.session),
-					x = Object(a.useRef)(null),
-					E = Object(a.useCallback)(e => {
-						p && e && e.postMessage({
+				const x = Object(n.e)(e => e.user.session),
+					_ = Object(a.useRef)(null),
+					p = Object(a.useCallback)(e => {
+						x && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
-								Authorization: `Bearer ${p.accessToken}`
+								Authorization: `Bearer ${x.accessToken}`
 							},
-							expiration: new Date(p.expires).getTime()
+							expiration: new Date(x.expires).getTime()
 						}, c.a.snoovatarUrl)
-					}, [p]);
+					}, [x]);
 				return Object(a.useEffect)(() => {
 					var e;
-					return E(null === (e = null == x ? void 0 : x.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [x, E]), Object(a.useEffect)(() => {
+					return p(null === (e = null == _ ? void 0 : _.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [_, p]), Object(a.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && E(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [E]), r.a.createElement("div", {
+				}, [p]), r.a.createElement("div", {
 					className: Object(i.a)(m.a.iframeContainer, e)
 				}, r.a.createElement("iframe", {
-					ref: x,
+					ref: _,
 					src: `${c.a.snoovatarUrl}/static/client/?${v.toString()}`
 				}))
 			})
@@ -95,4 +93,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.af56b1a586ed6c8a7143.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.1cd6ceebf541f0d30b6c.js.map

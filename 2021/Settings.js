@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3c3d2e00023d83ed811d.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.cbe989684e0e2423b6bd.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -3933,7 +3933,9 @@
 					}
 				}),
 				Be = Object(a.b)(Le, (e, t) => ({
-					onClickSnoovatar: () => e(Object(i.b)("user_hovercard")),
+					onClickSnoovatar: () => e(Object(i.b)({
+						clickSource: "user_hovercard"
+					})),
 					onHideTooltip: () => e(Object(c.i)())
 				}));
 			t.a = Be(e => s.a.createElement("div", {
@@ -5187,11 +5189,13 @@
 					x = i && i.voteState;
 				let C = null;
 				y || (C = e ? "user_hovercard" : "profile_overview");
-				const E = Object(s.useCallback)(() => v(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				const E = Object(s.useCallback)(() => v(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return a.a.createElement(u.q, {
 					onClick: () => {
-						n ? (v(m.c), y && x === b.a.notVoted && _(Object(c.db)(y))) : E(), _(Object(l.b)(C, h, {
-							postId: y
+						n ? (v(m.d), y && x === b.a.notVoted && _(Object(c.db)(y))) : E(), _(Object(l.b)({
+							clickSource: C,
+							share: h,
+							source: "try_this_look_post"
 						}))
 					},
 					className: Object(r.a)(f.a.snoovatarButton, f.a.snoovatarExtraPadding, f.a.compactButtonLayout, {
@@ -12987,7 +12991,9 @@
 			const Ws = Object(o.b)(Is, e => ({
 					imageDeleteRequested: t => e(Object(us.y)(t)),
 					imagesUpdateRequested: (t, n) => e(Object(us.z)(t, n)),
-					onClickSnoovatar: () => e(Object(ms.b)("profile_overview")),
+					onClickSnoovatar: () => e(Object(ms.b)({
+						clickSource: "profile_overview"
+					})),
 					save: (t, n) => e(Object(us.E)(t, n)),
 					toggleNSFWModal: () => e(Object(y.i)("ProfileForm_NSFWConfirmDialogID"))
 				}))(Object(O.c)(Gs)),
@@ -14331,4 +14337,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3c3d2e00023d83ed811d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cbe989684e0e2423b6bd.js.map

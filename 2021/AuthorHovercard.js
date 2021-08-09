@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.16b95aa18b155efe0d4c.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.e3092fa80ecf4d58e04a.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1387,7 +1387,9 @@
 					}
 				}),
 				Fe = Object(o.b)(Ae, (e, t) => ({
-					onClickSnoovatar: () => e(Object(i.b)("user_hovercard")),
+					onClickSnoovatar: () => e(Object(i.b)({
+						clickSource: "user_hovercard"
+					})),
 					onHideTooltip: () => e(Object(c.i)())
 				}));
 			t.a = Fe(e => s.a.createElement("div", {
@@ -2567,11 +2569,13 @@
 					g = i && i.voteState;
 				let C = null;
 				_ || (C = e ? "user_hovercard" : "profile_overview");
-				const O = Object(s.useCallback)(() => v(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
+				const O = Object(s.useCallback)(() => v(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return o.a.createElement(u.q, {
 					onClick: () => {
-						n ? (v(m.c), _ && g === b.a.notVoted && I(Object(c.db)(_))) : O(), I(Object(d.b)(C, f, {
-							postId: _
+						n ? (v(m.d), _ && g === b.a.notVoted && I(Object(c.db)(_))) : O(), I(Object(d.b)({
+							clickSource: C,
+							share: f,
+							source: "try_this_look_post"
 						}))
 					},
 					className: Object(r.a)(h.a.snoovatarButton, h.a.snoovatarExtraPadding, h.a.compactButtonLayout, {
@@ -3842,4 +3846,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.16b95aa18b155efe0d4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.e3092fa80ecf4d58e04a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c3a5cca937ddc639a95d.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.5c08c38cb57ee9b9d2a4.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -146,8 +146,8 @@
 				};
 			var C = r("./src/reddit/actions/wiki/wikiPageSettings/index.tsx"),
 				N = r("./src/reddit/actions/wiki/wikiRevisions/index.ts"),
-				P = r("./src/reddit/constants/parameters.ts"),
-				S = r("./src/reddit/constants/wiki.ts"),
+				S = r("./src/reddit/constants/parameters.ts"),
+				P = r("./src/reddit/constants/wiki.ts"),
 				T = r("./src/reddit/endpoints/page/subredditWiki.ts"),
 				R = r("./src/reddit/helpers/brandSafety/index.ts"),
 				L = r("./src/reddit/helpers/wiki/makeWikiPageKey.ts"),
@@ -662,8 +662,8 @@
 						return e
 				}
 			};
-			const Pe = {};
-			var Se = (e = Pe, t) => {
+			const Se = {};
+			var Pe = (e = Se, t) => {
 				switch (t.type) {
 					case je.b: {
 						const {
@@ -705,7 +705,7 @@
 					}
 				},
 				Le = Object(M.c)({
-					error: Se,
+					error: Pe,
 					pending: Re
 				});
 			const Ue = {};
@@ -841,7 +841,7 @@
 					const {
 						canShowFailToast: i,
 						wikiPageName: d
-					} = e, c = d === S.j, l = {
+					} = e, c = d === P.j, l = {
 						...e,
 						includePageData: e.includePageData && !c
 					}, u = d ? Object(L.a)({
@@ -884,16 +884,16 @@
 						wikiPageName: a
 					} = n, o = Object(D.a)(s, n);
 					let d = !1;
-					return S.l.includes(a || "") ? (await (async (e, t) => {
+					return P.l.includes(a || "") ? (await (async (e, t) => {
 						const r = `${l.a.oldRedditUrl}${Object(m.b)(e)}`;
 						window.location.href = r
 					})(e.url), d = !0) : s !== o && (await t(Object(i.c)(o)), d = !0), d
 				}, Ye = (e, t, r = !1) => async (s, a, i) => {
 					const {
-						subredditName: d = S.e,
+						subredditName: d = P.e,
 						wikiPageName: l,
 						wikiSubRoute: u
-					} = e, m = t[P.A], b = t[P.B], f = m ? Object(x.a)(m) : void 0, k = b ? Object(x.a)(b) : void 0, w = l === S.j, _ = u === S.m.Revisions;
+					} = e, m = t[S.A], b = t[S.B], f = m ? Object(x.a)(m) : void 0, k = b ? Object(x.a)(b) : void 0, w = l === P.j, _ = u === P.m.Revisions;
 					let I = !1,
 						O = !1;
 					if (r) {
@@ -905,7 +905,7 @@
 					const E = a(),
 						T = (w || r) && !Ze(E, d),
 						R = !!l && !((e, t, r, n) => {
-							return r === S.j ? Ze(e, t) : !!Object(y.c)(e, {
+							return r === P.j ? Ze(e, t) : !!Object(y.c)(e, {
 								subredditName: t,
 								wikiPageName: r,
 								revisionId: n
@@ -928,7 +928,7 @@
 						revisionId: f,
 						subredditName: d,
 						wikiPageName: l
-					}))), u === S.m.Settings && l && L.push(s(Object(C.c)(d, l))), l && f && k && L.push(s(j({
+					}))), u === P.m.Settings && l && L.push(s(Object(C.c)(d, l))), l && f && k && L.push(s(j({
 						comparisonRevisionId: k,
 						revisionId: f,
 						subredditName: d,
@@ -952,7 +952,7 @@
 					const {
 						params: n,
 						queryParams: s
-					} = e, a = n.subredditName || S.e;
+					} = e, a = n.subredditName || P.e;
 					t(u.l({
 						title: n.wikiPageName ? `${n.wikiPageName} - ${a}` : `wiki - ${a}`
 					})), await t(Ye(n, s));
@@ -1022,8 +1022,8 @@
 						return e
 				}
 			};
-			const P = {};
-			var S = (e = P, t) => {
+			const S = {};
+			var P = (e = S, t) => {
 					switch (t.type) {
 						case E.o: {
 							const {
@@ -1052,7 +1052,7 @@
 				},
 				T = Object(C.c)({
 					error: N,
-					pending: S
+					pending: P
 				});
 			const R = {};
 			var L = (e = R, t) => {
@@ -2406,10 +2406,10 @@
 				j = r.n(E),
 				C = r("./src/lib/linkMatchers/index.ts"),
 				N = r("./src/lib/linkMatchers/customLinks.ts"),
-				P = r("./src/reddit/controls/OutboundLink/index.tsx");
-			const S = /\[(.+?)\]\((.+?)\)/g,
+				S = r("./src/reddit/controls/OutboundLink/index.tsx");
+			const P = /\[(.+?)\]\((.+?)\)/g,
 				T = e => {
-					const t = e.split(S);
+					const t = e.split(P);
 					if (1 === t.length) return [e];
 					const r = [];
 					for (let n = 0; n < t.length; n += 3) {
@@ -2430,7 +2430,7 @@
 					})(e))), a.a.createElement(a.a.Fragment, null, " ", t.map((t, r) => {
 						if (Array.isArray(t)) {
 							const [n, s] = t;
-							return a.a.createElement(P.b, {
+							return a.a.createElement(S.b, {
 								className: e.linkClassName,
 								href: n,
 								key: r
@@ -2817,7 +2817,7 @@
 			}) => a.a.createElement(m.q, {
 				className: e,
 				disabled: p || l,
-				onClick: () => r === u.Id.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
+				onClick: () => r === u.Md.Tabs ? window.open("/subreddits/create", "_blank") : d(c),
 				onMouseEnter: i,
 				onMouseLeave: o,
 				priority: m.b.Secondary,
@@ -2964,8 +2964,8 @@
 				j = r("./src/reddit/components/SubscribeButton/index.tsx"),
 				C = r("./src/reddit/components/UserIcon/index.tsx"),
 				N = r("./src/reddit/endpoints/profile/info.ts"),
-				P = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
-				S = r("./src/reddit/icons/fonts/Info/index.tsx"),
+				S = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
+				P = r("./src/reddit/icons/fonts/Info/index.tsx"),
 				T = r("./src/reddit/icons/svgs/Admin/index.tsx");
 			var R = e => s.a.createElement("svg", {
 					className: e.className,
@@ -3023,7 +3023,7 @@
 					}, n ? s.a.createElement(q.a, {
 						role: "button",
 						onClick: () => {
-							a(this.props.user.id), i(P.e(t))
+							a(this.props.user.id), i(S.e(t))
 						}
 					}, s.a.createElement(G.a, {
 						name: "ban",
@@ -3034,7 +3034,7 @@
 					})) : s.a.createElement(q.a, {
 						role: "button",
 						onClick: () => {
-							o(), i(P.a(t))
+							o(), i(S.a(t))
 						}
 					}, s.a.createElement(G.a, {
 						name: "ban",
@@ -3044,7 +3044,7 @@
 					})), r && s.a.createElement(q.a, {
 						role: "button",
 						onClick: () => {
-							d(), i(P.d(t))
+							d(), i(S.d(t))
 						}
 					}, s.a.createElement(G.a, {
 						name: "mod_mute",
@@ -3087,7 +3087,7 @@
 				}))(e => s.a.createElement(q.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(P.c(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(S.c(e.contextId))
 					}
 				}, s.a.createElement(G.a, {
 					name: "tag",
@@ -3142,7 +3142,7 @@
 				}, s.a.createElement(le, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(be, null, e.user.username, s.a.createElement(pe, null, "•")), s.a.createElement(be, null, s.a.createElement(D.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
-				Pe = e => {
+				Se = e => {
 					const {
 						showAwardKarma: t,
 						user: {
@@ -3171,7 +3171,7 @@
 						href: U.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, s.a.createElement(S.a, {
+					}, s.a.createElement(P.a, {
 						className: se.a.infoIcon
 					})))), s.a.createElement(xe, null, s.a.createElement(_e, null, Object(y.b)(n.fromAwardsGiven)), s.a.createElement(Ie, null, k.fbt._({
 						"*": "Awarder Karma",
@@ -3182,7 +3182,7 @@
 						href: U.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, s.a.createElement(S.a, {
+					}, s.a.createElement(P.a, {
 						className: se.a.infoIcon
 					}))))) : s.a.createElement(he, null, s.a.createElement(ce, null), s.a.createElement(ve, null, s.a.createElement(_e, null, Object(y.b)(n.fromPosts)), s.a.createElement(ye, null, k.fbt._({
 						"*": "Post Karma",
@@ -3196,7 +3196,7 @@
 						hk: "3gKRx9"
 					}))))
 				},
-				Se = e => {
+				Pe = e => {
 					const {
 						className: t,
 						contextId: r,
@@ -3227,7 +3227,7 @@
 					const j = !!n && Object(B.e)(n) === v,
 						C = !!(null == n ? void 0 : n.snoovatarFullBodyAsset),
 						N = g.accountIcon || `${x.a.assetPath}/img/snoo_user_placeholder.png`,
-						S = l && l.flair,
+						P = l && l.flair,
 						T = l && l.access,
 						R = w && w.templateIds && w.templateIds.length > 0,
 						L = w && w.displaySettings && w.displaySettings.isEnabled,
@@ -3269,7 +3269,7 @@
 						origin: c,
 						user: g,
 						userName: v
-					})), s.a.createElement(Pe, {
+					})), s.a.createElement(Se, {
 						showAwardKarma: b,
 						user: g
 					}), U && s.a.createElement(A.a, {
@@ -3288,7 +3288,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(P.g)(e ? "unfollow" : "follow", r),
+						getEventFactory: e => Object(S.g)(e ? "unfollow" : "follow", r),
 						isFullWidth: !0,
 						small: !0
 					})), T && r && !j && f && s.a.createElement(V, {
@@ -3296,7 +3296,7 @@
 						subredditId: f,
 						sendEvent: m,
 						username: v
-					}), S && r && R && L && f && s.a.createElement(re, {
+					}), P && r && R && L && f && s.a.createElement(re, {
 						contextId: r,
 						subredditId: f,
 						sendEvent: m,
@@ -3307,14 +3307,14 @@
 						user: g
 					}), !(T || o) && s.a.createElement(je, null))
 				},
-				Te = Object(E.a)(Se),
+				Te = Object(E.a)(Pe),
 				Re = e => {
 					const t = e.activeTooltipId === e.tooltipId && !e.collapsed;
 					return s.a.createElement(Te, ae({
 						isOpen: t
 					}, e))
 				};
-			Re.WrappedComponent = Se;
+			Re.WrappedComponent = Pe;
 			var Le = Re;
 			const Ue = Object(i.c)({
 					activeTooltipId: f.a,
@@ -3353,7 +3353,9 @@
 					}
 				}),
 				Be = Object(a.b)(Ue, (e, t) => ({
-					onClickSnoovatar: () => e(Object(o.b)("user_hovercard")),
+					onClickSnoovatar: () => e(Object(o.b)({
+						clickSource: "user_hovercard"
+					})),
 					onHideTooltip: () => e(Object(d.i)())
 				}));
 			t.a = Be(e => s.a.createElement("div", {
@@ -4063,8 +4065,8 @@
 				title: O,
 				userCreated: C,
 				username: N,
-				url: P,
-				isHovercard: S
+				url: S,
+				isHovercard: P
 			}) => {
 				const T = Object(a.e)(e => !k && !!y && Object(c.e)(e));
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(m.a, {
@@ -4102,7 +4104,7 @@
 					shouldDisplaySnoovatar: !0,
 					username: N,
 					userCreated: C,
-					url: P
+					url: S
 				}), (k || !r && !!y) && s.a.createElement(l.a, {
 					compact: t,
 					currentUserHasSnoovatar: r,
@@ -4110,7 +4112,7 @@
 					onClick: x
 				}), T && s.a.createElement(u.a, {
 					username: N,
-					isHovercard: !!S,
+					isHovercard: !!P,
 					share: {
 						username: N
 					}
@@ -4887,4 +4889,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c3a5cca937ddc639a95d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.5c08c38cb57ee9b9d2a4.js.map

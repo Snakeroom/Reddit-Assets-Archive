@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.a2844d8a4ce40ce9d891.js
-// Retrieved at 8/3/2021, 1:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.61b29bac07e186976e2e.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
 			"use strict";
 			a("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = a("./node_modules/react/index.js"),
-				o = a.n(r),
-				s = a("./node_modules/react-redux/es/index.js"),
+				s = a.n(r),
+				o = a("./node_modules/react-redux/es/index.js"),
 				n = a("./node_modules/react-router/esm/react-router.js"),
 				c = a("./src/config.ts"),
 				d = a("./src/lib/classNames/index.ts"),
@@ -23,16 +23,14 @@
 				source: u
 			}) => {
 				const v = new URLSearchParams(a.search);
-				v.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => v.append(e, t)), n && Object.entries(n).forEach(([e, t]) => v.set(e, t));
-				let f = "";
-				(null == u ? void 0 : u.postId) && (f = "try_this_look_post"), f && v.set("source", f);
-				const p = Object(l.a)();
+				v.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => v.append(e, t)), n && Object.entries(n).forEach(([e, t]) => v.set(e, t)), u && v.set("source", u);
+				const f = Object(l.a)();
 				Object(r.useEffect)(() => {
-					p(i.f)
-				}, [p]);
-				const j = Object(s.e)(e => e.user.session),
+					f(i.i)
+				}, [f]);
+				const j = Object(o.e)(e => e.user.session),
 					O = Object(r.useRef)(null),
-					_ = Object(r.useCallback)(e => {
+					p = Object(r.useCallback)(e => {
 						j && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
@@ -43,15 +41,15 @@
 					}, [j]);
 				return Object(r.useEffect)(() => {
 					var e;
-					return _(null === (e = null == O ? void 0 : O.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [O, _]), Object(r.useEffect)(() => {
+					return p(null === (e = null == O ? void 0 : O.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [O, p]), Object(r.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && _(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && p(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [_]), o.a.createElement("div", {
+				}, [p]), s.a.createElement("div", {
 					className: Object(d.a)(m.a.iframeContainer, e)
-				}, o.a.createElement("iframe", {
+				}, s.a.createElement("iframe", {
 					ref: O,
 					src: `${c.a.snoovatarUrl}/static/client/?${v.toString()}`
 				}))
@@ -69,8 +67,8 @@
 			"use strict";
 			a.r(t);
 			var r = a("./node_modules/react/index.js"),
-				o = a.n(r),
-				s = a("./node_modules/react-redux/es/index.js"),
+				s = a.n(r),
+				o = a("./node_modules/react-redux/es/index.js"),
 				n = a("./src/reddit/actions/snoovatar.ts"),
 				c = a("./src/reddit/selectors/activeModal.ts"),
 				d = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
@@ -87,13 +85,13 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const v = Object(i.a)(e => o.a.createElement(d.a, m({
+			const v = Object(i.a)(e => s.a.createElement(d.a, m({
 				className: u.a.snoovatarModalIframeContainer
 			}, e)));
 			t.default = () => {
-				const e = Object(s.d)(),
-					t = Object(s.e)(e => Object(c.a)(e));
-				return o.a.createElement(v, m({}, t, {
+				const e = Object(o.d)(),
+					t = Object(o.e)(e => Object(c.a)(e));
+				return s.a.createElement(v, m({}, t, {
 					className: u.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(n.a)())
@@ -102,4 +100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.a2844d8a4ce40ce9d891.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.61b29bac07e186976e2e.js.map

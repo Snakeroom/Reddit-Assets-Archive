@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b622fefe8d3769b1ff38.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.446c38de5bf7a7c9fab3.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1621,11 +1621,13 @@
 					_ = i && i.voteState;
 				let O = null;
 				I || (O = e ? "user_hovercard" : "profile_overview");
-				const C = Object(s.useCallback)(() => g(Object(u.b)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
+				const C = Object(s.useCallback)(() => g(Object(u.c)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
 				return a.a.createElement(m.q, {
 					onClick: () => {
-						r ? (g(u.c), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C(), v(Object(d.b)(O, b, {
-							postId: I
+						r ? (g(u.d), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C(), v(Object(d.b)({
+							clickSource: O,
+							share: b,
+							source: "try_this_look_post"
 						}))
 					},
 					className: Object(n.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
@@ -2493,7 +2495,9 @@
 					name: t,
 					type: p.a.PROFILE
 				}], !r)),
-				onClickSnoovatar: () => e(Object(i.b)("profile_overview")),
+				onClickSnoovatar: () => e(Object(i.b)({
+					clickSource: "profile_overview"
+				})),
 				onClickUnblockUser: t => e(Object(d.g)(t))
 			}))(Object(u.c)(e => {
 				const {
@@ -3016,4 +3020,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b622fefe8d3769b1ff38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.446c38de5bf7a7c9fab3.js.map

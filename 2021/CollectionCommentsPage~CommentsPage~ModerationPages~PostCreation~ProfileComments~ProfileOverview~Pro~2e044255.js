@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.770fcbbc81d85b329c20.js
-// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.90e35340f38ccf58f701.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1106,11 +1106,13 @@
 					_ = a && a.voteState;
 				let y = null;
 				v || (y = e ? "user_hovercard" : "profile_overview");
-				const O = Object(r.useCallback)(() => E(Object(m.b)(e ? "user_hovercard" : "profile_overview", t)), [e, E, t]);
+				const O = Object(r.useCallback)(() => E(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, E, t]);
 				return o.a.createElement(u.q, {
 					onClick: () => {
-						s ? (E(m.c), v && _ === h.a.notVoted && g(Object(c.db)(v))) : O(), g(Object(d.b)(y, b, {
-							postId: v
+						s ? (E(m.d), v && _ === h.a.notVoted && g(Object(c.db)(v))) : O(), g(Object(d.b)({
+							clickSource: y,
+							share: b,
+							source: "try_this_look_post"
 						}))
 					},
 					className: Object(n.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
@@ -2356,12 +2358,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case b.Md.SmIcon:
+						case b.Qd.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case b.Md.SmIconHc:
+						case b.Qd.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2954,12 +2956,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ed
+						experimentName: n.Id
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Md.SmIcon || t === n.Md.SmIconHc
+					return t === n.Qd.SmIcon || t === n.Qd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2982,4 +2984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.770fcbbc81d85b329c20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.90e35340f38ccf58f701.js.map

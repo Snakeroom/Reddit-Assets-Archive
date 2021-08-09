@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e508ad618b0c957fbc03.js
-// Retrieved at 8/5/2021, 7:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.634a190480788e31ca84.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -961,15 +961,23 @@
 				d = r("./src/reddit/selectors/user.ts");
 			const l = () => async (e, t) => {
 				const r = t();
-				Object(n.a)(Object(c.d)(r)), e(Object(i.r)({
+				Object(n.a)(Object(c.f)(r)), e(Object(i.r)({
 					forceFetch: !0
 				})), await e(Object(o.g)(a.a.SNOOVATAR_MODAL))
-			}, u = (e, t, r) => async (i, l) => {
-				const u = l();
-				e && Object(n.a)(Object(c.a)(e)(u)), Object(d.J)(u) ? await i(Object(o.h)(a.a.SNOOVATAR_MODAL, {
-					share: t,
-					source: r
-				})) : await i(Object(s.h)())
+			};
+
+			function u(e = {}) {
+				return async (t, r) => {
+					const {
+						clickSource: i,
+						share: l,
+						source: u
+					} = e, m = r();
+					i && Object(n.a)(Object(c.b)(i)(m)), Object(d.J)(m) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
+						share: l,
+						source: u
+					})) : await t(Object(s.h)())
+				}
 			}
 		},
 		"./src/reddit/actions/userFlair/constants.ts": function(e, t, r) {
@@ -1438,7 +1446,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: n
-					} = t, s = Object(U.a)(), i = Object(B.a)(m.kc) === m.oc.Enabled;
+					} = t, s = Object(U.a)(), i = Object(B.a)(m.oc) === m.sc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Y, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -2454,18 +2462,24 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "a", (function() {
+			r.d(t, "b", (function() {
 				return c
-			})), r.d(t, "b", (function() {
-				return d
 			})), r.d(t, "c", (function() {
-				return l
-			})), r.d(t, "f", (function() {
-				return u
+				return d
 			})), r.d(t, "d", (function() {
+				return l
+			})), r.d(t, "i", (function() {
+				return u
+			})), r.d(t, "f", (function() {
 				return m
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "g", (function() {
 				return p
+			})), r.d(t, "h", (function() {
+				return b
+			})), r.d(t, "a", (function() {
+				return h
+			})), r.d(t, "e", (function() {
+				return _
 			}));
 			var n = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				s = r("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2531,7 +2545,20 @@
 					noun: "avatar_marketing",
 					...o.defaults(e),
 					...a
-				})
+				}),
+				f = e => t => r => ({
+					source: "avatar",
+					action: e,
+					noun: "community_spaces",
+					...o.defaults(r),
+					snoovatar: o.snoovatarActiveForBuilderEvent(r),
+					actionInfo: {
+						paneName: "avatar_community_spaces" + (t ? "_control" : "")
+					}
+				}),
+				b = f("view"),
+				h = f("click"),
+				_ = f("dismiss")
 		},
 		"./src/reddit/helpers/truncateStringWithEllipsis.ts": function(e, t, r) {
 			"use strict";
@@ -3511,4 +3538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.e508ad618b0c957fbc03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.634a190480788e31ca84.js.map

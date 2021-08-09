@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2acab64146474d4a5edf.js
-// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f1591edab20a704303d8.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1250,15 +1250,23 @@
 				d = n("./src/reddit/selectors/user.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(s.a)(Object(c.d)(n)), e(Object(a.r)({
+				Object(s.a)(Object(c.f)(n)), e(Object(a.r)({
 					forceFetch: !0
 				})), await e(Object(o.g)(i.a.SNOOVATAR_MODAL))
-			}, u = (e, t, n) => async (a, l) => {
-				const u = l();
-				e && Object(s.a)(Object(c.a)(e)(u)), Object(d.J)(u) ? await a(Object(o.h)(i.a.SNOOVATAR_MODAL, {
-					share: t,
-					source: n
-				})) : await a(Object(r.h)())
+			};
+
+			function u(e = {}) {
+				return async (t, n) => {
+					const {
+						clickSource: a,
+						share: l,
+						source: u
+					} = e, m = n();
+					a && Object(s.a)(Object(c.b)(a)(m)), Object(d.J)(m) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
+						share: l,
+						source: u
+					})) : await t(Object(r.h)())
+				}
 			}
 		},
 		"./src/reddit/actions/userFlair/constants.ts": function(e, t, n) {
@@ -3125,7 +3133,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), a = Object(G.a)(m.kc) === m.oc.Enabled;
+					} = t, r = Object(U.a)(), a = Object(G.a)(m.oc) === m.sc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(q, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -4933,18 +4941,24 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "b", (function() {
-				return d
 			})), n.d(t, "c", (function() {
-				return l
-			})), n.d(t, "f", (function() {
-				return u
+				return d
 			})), n.d(t, "d", (function() {
+				return l
+			})), n.d(t, "i", (function() {
+				return u
+			})), n.d(t, "f", (function() {
 				return m
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return p
+			})), n.d(t, "h", (function() {
+				return f
+			})), n.d(t, "a", (function() {
+				return h
+			})), n.d(t, "e", (function() {
+				return _
 			}));
 			var s = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -5010,7 +5024,20 @@
 					noun: "avatar_marketing",
 					...o.defaults(e),
 					...i
-				})
+				}),
+				b = e => t => n => ({
+					source: "avatar",
+					action: e,
+					noun: "community_spaces",
+					...o.defaults(n),
+					snoovatar: o.snoovatarActiveForBuilderEvent(n),
+					actionInfo: {
+						paneName: "avatar_community_spaces" + (t ? "_control" : "")
+					}
+				}),
+				f = b("view"),
+				h = b("click"),
+				_ = b("dismiss")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -6374,9 +6401,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.ad,
+				experimentName: r.ed,
 				experimentEligibilitySelector: o.a
-			}), a.G, (e, t) => e === r.kd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), a.G, (e, t) => e === r.od.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -6519,4 +6546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2acab64146474d4a5edf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f1591edab20a704303d8.js.map

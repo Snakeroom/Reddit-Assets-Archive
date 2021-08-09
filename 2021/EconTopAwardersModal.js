@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.259a36d792329c45ecb3.js
-// Retrieved at 8/9/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.252e7249134d102f0cdd.js
+// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -1456,7 +1456,9 @@
 					}
 				}),
 				Te = Object(n.b)(Se, (e, t) => ({
-					onClickSnoovatar: () => e(Object(c.b)("user_hovercard")),
+					onClickSnoovatar: () => e(Object(c.b)({
+						clickSource: "user_hovercard"
+					})),
 					onHideTooltip: () => e(Object(i.i)())
 				}));
 			t.a = Te(e => s.a.createElement("div", {
@@ -1853,11 +1855,13 @@
 					_ = c && c.voteState;
 				let w = null;
 				I || (w = e ? "user_hovercard" : "profile_overview");
-				const g = Object(s.useCallback)(() => x(Object(u.b)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
+				const g = Object(s.useCallback)(() => x(Object(u.c)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return n.a.createElement(m.q, {
 					onClick: () => {
-						r ? (x(u.c), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g(), E(Object(d.b)(w, v, {
-							postId: I
+						r ? (x(u.d), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g(), E(Object(d.b)({
+							clickSource: w,
+							share: v,
+							source: "try_this_look_post"
 						}))
 					},
 					className: Object(a.a)(f.a.snoovatarButton, f.a.snoovatarExtraPadding, f.a.compactButtonLayout, {
@@ -2694,4 +2698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.259a36d792329c45ecb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.252e7249134d102f0cdd.js.map
