@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9205b7d416ca16dde4aa.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e74c6a80c81ee59b8d7c.js
+// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -3656,19 +3656,19 @@
 				}
 		},
 		"./src/redditGQL/operations/AddPredictionDrafts.json": function(a) {
-			a.exports = JSON.parse('{"id":"096bfa098f49"}')
+			a.exports = JSON.parse('{"id":"3048ce040c04"}')
 		},
 		"./src/redditGQL/operations/CancelPrediction.json": function(a) {
-			a.exports = JSON.parse('{"id":"3a0e9bd20bd7"}')
+			a.exports = JSON.parse('{"id":"fac88c91fec8"}')
 		},
 		"./src/redditGQL/operations/ChangePrediction.json": function(a) {
-			a.exports = JSON.parse('{"id":"6d3cdb387ed9"}')
+			a.exports = JSON.parse('{"id":"614dbb8a54d2"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"8ce841e41b53"}')
+			a.exports = JSON.parse('{"id":"cb619ee4a1d7"}')
 		},
 		"./src/redditGQL/operations/EndPredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"730629e10ec6"}')
+			a.exports = JSON.parse('{"id":"ef19872c5854"}')
 		},
 		"./src/redditGQL/operations/GetPredictionChipPackages.json": function(a) {
 			a.exports = JSON.parse('{"id":"5ce83e513fa5"}')
@@ -3677,20 +3677,20 @@
 			a.exports = JSON.parse('{"id":"26b911e67a5f"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(a) {
-			a.exports = JSON.parse('{"id":"ec9db4678a1a"}')
+			a.exports = JSON.parse('{"id":"003c1e2f9277"}')
 		},
 		"./src/redditGQL/operations/ResolvePrediction.json": function(a) {
-			a.exports = JSON.parse('{"id":"36bd638634e1"}')
+			a.exports = JSON.parse('{"id":"d742e3019cfe"}')
 		},
 		"./src/redditGQL/operations/SubredditTopPredictors.json": function(a) {
 			a.exports = JSON.parse('{"id":"3407d5f67207"}')
 		},
 		"./src/redditGQL/operations/UpdatePredictionTournament.json": function(a) {
-			a.exports = JSON.parse('{"id":"a278e3cfb8bc"}')
+			a.exports = JSON.parse('{"id":"6851ffb490a5"}')
 		},
 		"./src/redditGQL/operations/VotePrediction.json": function(a) {
-			a.exports = JSON.parse('{"id":"7d092b4281c1"}')
+			a.exports = JSON.parse('{"id":"484780ada6a2"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9205b7d416ca16dde4aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e74c6a80c81ee59b8d7c.js.map

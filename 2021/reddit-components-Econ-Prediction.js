@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2afb4410166b888653cb.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2cf6e9c4daf22e16fe81.js
+// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -625,21 +625,25 @@
 				fbt: ue
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), me = ({
 				options: e,
-				selectedOptionId: t
+				selectedOptionId: t,
+				isLimitReached: n
 			}) => {
-				const [n, s] = Object(r.useState)(!1), o = ue._("Change my prediction", null, {
+				const [s, o] = Object(r.useState)(!1), a = n ? ue._("You've already changed your answer twice", null, {
+					hk: "16O9hD"
+				}) : ue._("Change my prediction", null, {
 					hk: "1oibor"
 				});
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("button", {
-					"aria-label": o,
+					"aria-label": a,
 					className: le.a.additionalOptionButton,
-					onClick: () => s(!0)
+					disabled: n,
+					onClick: () => o(!0)
 				}, i.a.createElement(ce.a, {
 					className: le.a.icon
-				}), o), n && i.a.createElement(ae, {
+				}), a), s && i.a.createElement(ae, {
 					options: e,
 					selectedOptionId: t,
-					onClose: () => s(!1)
+					onClose: () => o(!1)
 				}))
 			};
 			var be = n("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
@@ -869,20 +873,21 @@
 					totalVoters: te,
 					tournamentId: ne,
 					userSelection: se,
-					predictionStatus: oe
-				} = x, re = H === N, ie = Q < Date.now(), ae = !o()(ne), ce = ie && re && !$, de = J.find(({
+					predictionStatus: oe,
+					voteUpdatesRemained: re
+				} = x, ie = H === N, ae = Q < Date.now(), ce = !o()(ne), de = ae && ie && !$, le = J.find(({
 					id: e
-				}) => e === L), le = oe === g.b.Cancelled || oe === g.b.CancelInProgress, ue = s ? Object(d.a)(e, Be.a.container, Be.a.forCommentsPage, {
+				}) => e === L), ue = oe === g.b.Cancelled || oe === g.b.CancelInProgress, be = s ? Object(d.a)(e, Be.a.container, Be.a.forCommentsPage, {
 					[Be.a.isEditing]: a
 				}) : Object(d.a)(e, Be.a.container);
 				return i.a.createElement("div", {
-					className: ue,
+					className: be,
 					onClick: e => {
 						x && e.stopPropagation()
 					}
-				}, s && !le && i.a.createElement(z, {
+				}, s && !ue && i.a.createElement(z, {
 					prediction: x,
-					isCreator: re
+					isCreator: ie
 				}), i.a.createElement("div", {
 					className: Be.a.poll
 				}, J.map(e => i.a.createElement(Ae.a, {
@@ -892,45 +897,46 @@
 					onAnimationEnd: Y
 				}, i.a.createElement(q.a, {
 					disabled: D,
-					isCancelled: le,
-					isEnded: ie,
+					isCancelled: ue,
+					isEnded: ae,
 					isSelected: L === e.id,
-					needsResolution: ce,
+					needsResolution: de,
 					option: e,
 					onClick: () => (e => {
-						(ce || !ie && !se) && (ce ? T(e.id) : B(e.id))
+						(de || !ae && !se) && (de ? T(e.id) : B(e.id))
 					})(e),
 					resolvedOptionId: $,
 					tournamentId: ne,
 					userSelection: se,
 					userIsLoggedOut: !j,
-					votePercentage: (se || ie || R) && e.voteCount ? Math.floor(e.voteCount / te * 100) : null,
+					votePercentage: (se || ae || R) && e.voteCount ? Math.floor(e.voteCount / te * 100) : null,
 					isShowingHint: R
-				}))), !le && i.a.createElement(X.a, {
+				}))), !ue && i.a.createElement(X.a, {
 					disabled: D || R || !!se,
-					isEnded: ie,
+					isEnded: ae,
 					userSelection: se,
 					isShowingHint: R,
 					tournamentId: ne,
 					pollId: O,
 					onReveal: () => G(!0)
-				}), !le && n && i.a.createElement(me, {
+				}), !ue && n && i.a.createElement(me, {
+					isLimitReached: 0 === re,
 					options: J,
 					selectedOptionId: se
 				}), i.a.createElement("div", {
 					className: Be.a.predictionsCount
-				}, ae && te > 0 && Fe._({
+				}, ce && te > 0 && Fe._({
 					"*": "{total voters} predictions made",
 					_1: "{total voters} prediction made"
 				}, [Fe._param("total voters", Object(l.b)(te)), Fe._plural(te)], {
 					hk: "2u2Nv8"
 				}), i.a.createElement(_e, {
-					isCoins: !ae,
+					isCoins: !ce,
 					status: oe,
 					endsAt: Q,
 					resolvedOptionId: $,
 					totalStakeAmount: ee
-				}))), !!de && i.a.createElement(Z.b, {
+				}))), !!le && i.a.createElement(Z.b, {
 					className: Be.a.modal,
 					isCreatingVote: M,
 					onOverlayClick: K,
@@ -938,7 +944,7 @@
 					onPredict: async e => {
 						if ((null == e ? void 0 : e.currency) === g.a.Coins && e.amount > k) return Object(b.promptUserToBuyMoreCoins)(), void W(_.a);
 						const n = e.amount;
-						if (ie) return I({
+						if (ae) return I({
 							duration: 5e3,
 							kind: v.b.Error,
 							text: Fe._("Error: Failed to make prediction. This prediction has already ended", null, {
@@ -977,14 +983,14 @@
 							})
 						}
 					},
-					option: de,
+					option: le,
 					pollId: O,
 					subredditId: E.belongsTo.id,
 					tournamentId: ne,
 					withOverlay: !0
-				}), ce && F && i.a.createElement(Pe, {
+				}), de && F && i.a.createElement(Pe, {
 					isResolving: M,
-					isTokens: ae,
+					isTokens: ce,
 					onOverlayClick: K,
 					onCancel: K,
 					onResolve: async () => {
@@ -1849,4 +1855,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2afb4410166b888653cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2cf6e9c4daf22e16fe81.js.map

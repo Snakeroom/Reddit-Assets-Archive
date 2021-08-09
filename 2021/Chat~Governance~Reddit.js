@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.33fa7937656450a24fda.js
-// Retrieved at 8/9/2021, 4:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a1be41850da9af3f5aa6.js
+// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("142074"),
+				buildNumber: r("142085"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628537537"),
+				})("1628538884"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4979,14 +4979,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c54996cacb9176ecee78791e8456d4102acafbc74-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca30434ea9cf727582520aea348ccbecd4181d0cb-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "54996cacb9176ecee78791e8456d4102acafbc74-production",
+						release: "a30434ea9cf727582520aea348ccbecd4181d0cb-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5480,7 +5480,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "54996cacb9176ecee78791e8456d4102acafbc74-production",
+						releaseClient: "a30434ea9cf727582520aea348ccbecd4181d0cb-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19758,11 +19758,12 @@
 				options: i,
 				selectedOptionId: r,
 				totalVoteCount: s,
-				votingEndsAt: o,
-				totalStakeAmount: d,
-				tournamentId: a,
-				wonAmount: l,
-				resolvedOptionId: u
+				voteUpdatesRemained: o,
+				votingEndsAt: d,
+				totalStakeAmount: a,
+				tournamentId: l,
+				wonAmount: u,
+				resolvedOptionId: c
 			}) => ({
 				isPrediction: e,
 				predictionStatus: t,
@@ -19775,11 +19776,12 @@
 				})),
 				totalVoteCount: s,
 				userSelection: r,
-				votingEndTimestamp: Object(n.e)(o),
-				totalStakeAmount: d,
-				tournamentId: a,
-				userWonAmount: l,
-				resolvedOptionId: u
+				voteUpdatesRemained: o,
+				votingEndTimestamp: Object(n.e)(d),
+				totalStakeAmount: a,
+				tournamentId: l,
+				userWonAmount: u,
+				resolvedOptionId: c
 			})
 		},
 		"./src/reddit/helpers/graphql/normalizePostFromGql/index.ts": function(e, t, i) {
@@ -36205,7 +36207,7 @@
 			e.exports = JSON.parse('{"id":"8d0e34deaa32"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"ef6801d5e94f"}')
+			e.exports = JSON.parse('{"id":"7789500f70a7"}')
 		},
 		"./src/redditGQL/operations/UpdatePostFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"6491fda8f22b"}')
@@ -40022,4 +40024,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.33fa7937656450a24fda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a1be41850da9af3f5aa6.js.map

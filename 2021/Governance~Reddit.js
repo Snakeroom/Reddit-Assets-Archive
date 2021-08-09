@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.926137ac78522106023c.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9d5c534167ea1f90eafc.js
+// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -12047,8 +12047,9 @@
 											tournamentId: u,
 											userSelection: l,
 											userWonAmount: p,
-											votingEndTimestamp: b,
-											predictionStatus: y
+											voteUpdatesRemained: b,
+											votingEndTimestamp: y,
+											predictionStatus: f
 										}
 									} = e;
 									return {
@@ -12056,7 +12057,8 @@
 										createdAt: a,
 										creatorId: r,
 										subredditId: s.id,
-										endsAt: b,
+										endsAt: y,
+										voteUpdatesRemained: b,
 										postId: t,
 										options: c,
 										totalVoters: i,
@@ -12067,7 +12069,7 @@
 										userSelection: l,
 										userWonAmount: p,
 										resolvedOptionId: o,
-										predictionStatus: y
+										predictionStatus: f
 									}
 								})(n)), null === (r = null === (t = n.predictionTournament) || void 0 === t ? void 0 : t.predictions) || void 0 === r ? void 0 : r.length) {
 								const {
@@ -13057,6 +13059,7 @@
 					title: t,
 					endsAt: a,
 					status: r,
+					voteUpdatesRemained: null,
 					isNSFW: i,
 					isSpoiler: u,
 					totalVoteCount: o,
@@ -21815,7 +21818,7 @@
 			e.exports = JSON.parse('{"id":"63d6a697b823"}')
 		},
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
-			e.exports = JSON.parse('{"id":"55ceb96303d9"}')
+			e.exports = JSON.parse('{"id":"dd38535e7dd7"}')
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"9995fe64fd5a"}')
@@ -21840,4 +21843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.926137ac78522106023c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9d5c534167ea1f90eafc.js.map
