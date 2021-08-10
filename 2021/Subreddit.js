@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c5b90969219d4ed81af6.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.b81df49219e25c3aca72.js
+// Retrieved at 8/10/2021, 12:30:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -6940,24 +6940,25 @@
 						enableElementHiding: t,
 						getScrollContainer: n,
 						injectChildren: r,
-						isTruncated: o,
-						layout: a,
-						location: i,
-						loadMore: c,
-						postIds: d,
-						onLoadMore: m
+						isSerpExperimentOverride: o,
+						isTruncated: a,
+						layout: i,
+						location: c,
+						loadMore: d,
+						postIds: m,
+						onLoadMore: p
 					} = this.props;
-					let p = d.map((e, t, n) => {
-						const s = t === d.length - 1;
-						return this.scrollChildForPost(e, t, s, a)
+					let h = m.map((e, t, n) => {
+						const s = t === m.length - 1;
+						return this.scrollChildForPost(e, t, s, i)
 					});
-					r && (p = X(p, r));
-					const h = this.props.measureScrollFPS ? `post-listings-${a}` : void 0,
-						g = i ? Object(s.e)(i) : null,
-						y = g || o;
+					r && (h = X(h, r));
+					const g = this.props.measureScrollFPS ? `post-listings-${i}` : void 0,
+						y = c ? Object(s.e)(c) : null,
+						E = y || a;
 					return u.a.createElement(l.Fragment, null, u.a.createElement(O.b, {
 						innerRef: this.updateScrollerRef,
-						className: y ? U.a.truncatedPostList : Object(f.a)(U.a.postList, this.props.className),
+						className: E ? U.a.truncatedPostList : Object(f.a)(U.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -6965,18 +6966,18 @@
 						enableElementHiding: t,
 						key: this.props.listingKey,
 						layoutKey: this.props.layout,
-						loadMoreToken: c && c.token ? c.token : void 0,
+						loadMoreToken: d && d.token ? d.token : void 0,
 						onLastVisibleChildRendered: this.setLastVisibleChildRendered,
-						onLoadMore: m,
+						onLoadMore: p,
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
-						trackingName: h,
+						trackingName: g,
 						viewportTopPadding: S.f
-					}, p), g && u.a.createElement(z, {
+					}, h), !o && y && u.a.createElement(z, {
 						className: U.a.seeMoreButton
 					}, u.a.createElement(k.a, {
 						className: U.a.seeMorePostsText,
-						to: Object(b.a)(g, {
+						to: Object(b.a)(y, {
 							type: x.Vb.Posts
 						})
 					}, W._("See More Posts", null, {
@@ -15226,4 +15227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c5b90969219d4ed81af6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b81df49219e25c3aca72.js.map
