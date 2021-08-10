@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.95416ddf96a3cecc4f38.js
-// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7e48faabc03be321e8c0.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -860,16 +860,16 @@
 			const {
 				fbt: Ge
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), We = Object(c.c)({
-				isAutoVoteEnabled: O.n,
+				isAutoVoteEnabled: O.o,
 				isEditing: y.K,
-				isVoteAnimationEnabled: O.m,
+				isVoteAnimationEnabled: O.n,
 				isChangePredictionAvailable: (e, {
 					postId: t
 				}) => {
 					const n = Object(P.g)(e, {
 						postId: t
 					});
-					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(O.t)(e))
+					return Boolean((null == n ? void 0 : n.userSelection) && !(null == n ? void 0 : n.resolvedOptionId) && Object(O.u)(e))
 				},
 				prediction: P.g,
 				pollId: P.a,
@@ -1956,4 +1956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.95416ddf96a3cecc4f38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7e48faabc03be321e8c0.js.map

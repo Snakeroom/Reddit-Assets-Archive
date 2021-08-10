@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2d605a502dbd86a37f73.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f2e5db0bcff6970f5424.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -4599,7 +4599,7 @@
 					spamSelfposts: k,
 					spoilersEnabled: y,
 					suggestedCommentSort: O
-				} = t, S = (null == o ? void 0 : o[E.a.CommentsWithGifs]) || !1, w = Object(i.e)(e => d && !Object(be.i)(e)), I = null === O ? "nullValue" : O;
+				} = t, S = (null == o ? void 0 : o[E.a.CommentsWithGifs]) || !1, w = Object(i.e)(e => d && !Object(be.j)(e)), I = null === O ? "nullValue" : O;
 				return r.a.createElement(h.a, null, r.a.createElement(Z.a, null, r.a.createElement(h.b, null, N.fbt._("Post and Comment settings", null, {
 					hk: "14OI7p"
 				})), r.a.createElement(A.a, null, N.fbt._("Posts", null, {
@@ -6293,7 +6293,7 @@
 				subredditId: t,
 				userId: s
 			}) => {
-				const h = Object(o.e)(e => Object(u.a)(e, {
+				const h = Object(o.e)(e => Object(u.b)(e, {
 						subredditId: t,
 						userId: s
 					})),
@@ -6371,15 +6371,15 @@
 					onHover: d
 				}) => {
 					var l;
-					const c = Object(o.e)(e => Object(u.c)(e, {
+					const c = Object(o.e)(e => Object(u.d)(e, {
 							subredditId: t,
 							userId: s
 						})),
-						m = Object(o.e)(e => Object(u.d)(e, {
+						m = Object(o.e)(e => Object(u.e)(e, {
 							subredditId: t,
 							userId: s
 						})),
-						p = null === (l = Object(o.e)(e => Object(u.b)(e, {
+						p = null === (l = Object(o.e)(e => Object(u.c)(e, {
 							subredditId: t,
 							userId: s
 						}))) || void 0 === l ? void 0 : l.achievementTypes,
@@ -21039,7 +21039,7 @@
 					subreddit: t
 				}) => Object($.f)(e, {
 					subredditId: t.id
-				}) && Object(J.i)(e)
+				}) && Object(J.j)(e)
 			});
 			class Be extends r.a.Component {
 				constructor(e, t) {
@@ -22285,9 +22285,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.ec
+					experimentName: n.fc
 				});
-				return !(!t || Object(n.ge)(t))
+				return !(!t || Object(n.he)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22300,9 +22300,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.ed,
+				experimentName: a.fd,
 				experimentEligibilitySelector: o.a
-			}), r.G, (e, t) => e === a.od.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.G, (e, t) => e === a.pd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22429,4 +22429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2d605a502dbd86a37f73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f2e5db0bcff6970f5424.js.map

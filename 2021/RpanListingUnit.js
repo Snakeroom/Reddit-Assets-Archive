@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.9afefe9da54b0d69aa6d.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.614962d0d13d6172e7fe.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Pc
+					experimentName: u.Qc
 				});
-				return Object(u.ge)(t) ? void 0 : t
+				return Object(u.he)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Qc
+					experimentName: u.Rc
 				});
-				return Object(u.ge)(t) ? void 0 : t
-			}, (e, t) => e === u.Rc.Enabled && t === u.Rc.Enabled);
+				return Object(u.he)(t) ? void 0 : t
+			}, (e, t) => e === u.Sc.Enabled && t === u.Sc.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -659,10 +659,10 @@
 					}, 0)
 				}, [t, i, x]);
 				const L = Object(r.useRef)(() => {}),
-					P = Object(r.useRef)(),
-					k = Object(r.useRef)();
+					k = Object(r.useRef)(),
+					P = Object(r.useRef)();
 				L.current = Object(r.useCallback)(() => {
-					k.current = setTimeout(() => {
+					P.current = setTimeout(() => {
 						w.current();
 						const e = [...T].reverse().join("");
 						parseInt(e) < t && L.current()
@@ -676,7 +676,7 @@
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, r = 1 !== n;
-							t ? (F.current = !0, D.current || (D.current = !0, P.current = setTimeout(() => {
+							t ? (F.current = !0, D.current || (D.current = !0, k.current = setTimeout(() => {
 								w.current(), L.current()
 							}, o())), U.current > 0 && (w.current(U.current), U.current = 0)) : r && (F.current = !1)
 						})
@@ -701,7 +701,7 @@
 						F.current ? (w.current(e), p && p()) : U.current += e
 					}
 					return () => {
-						clearTimeout(P.current), clearTimeout(k.current), clearTimeout(N.current)
+						clearTimeout(k.current), clearTimeout(P.current), clearTimeout(N.current)
 					}
 				}, [t]);
 				const W = Object(r.useCallback)(() => y(!0), [y]),
@@ -1392,8 +1392,8 @@
 				w = n("./src/reddit/components/Flatlist/index.tsx"),
 				N = n("./src/reddit/components/Flatlist/constants.ts"),
 				L = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				P = n("./src/reddit/components/HlsVideo/index.tsx"),
-				k = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				k = n("./src/reddit/components/HlsVideo/index.tsx"),
+				P = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				U = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				F = n("./src/reddit/components/PostLeftRail/index.tsx"),
 				M = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -1407,7 +1407,7 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.jc, X = l.jc, Q = Object(c.a)(P.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.jc, X = l.jc, Q = Object(c.a)(k.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(o.c)({
 				autoplay: D.b,
@@ -1880,7 +1880,7 @@
 				})),
 				oe = ({
 					onClick: e
-				}) => s.a.createElement(k.b, {
+				}) => s.a.createElement(P.b, {
 					className: q.a.overflowMenu,
 					dropdownClassName: q.a.overflowDropdown,
 					dropdownId: "rpan-du-overflow"
@@ -2400,9 +2400,9 @@
 			})), n.d(t, "clickConfirmAwardEvent", (function() {
 				return L
 			})), n.d(t, "clickGetPremiumEvent", (function() {
-				return P
-			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return k
+			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
+				return P
 			})), n.d(t, "clickNextButtonEvent", (function() {
 				return U
 			})), n.d(t, "clickCloseGildModalEvent", (function() {
@@ -2551,7 +2551,7 @@
 						...l(t)
 					}
 				}),
-				P = (e, t) => n => ({
+				k = (e, t) => n => ({
 					...u(n, e),
 					source: "give_gold",
 					action: "click",
@@ -2561,7 +2561,7 @@
 						...l(t)
 					}
 				}),
-				k = e => t => ({
+				P = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3243,7 +3243,7 @@
 						subredditId: n
 					}),
 					d = Object(a.h)(e),
-					l = d ? Object(i.c)(e, {
+					l = d ? Object(i.d)(e, {
 						subredditId: n,
 						userId: d
 					}) : void 0,
@@ -3303,7 +3303,7 @@
 					const c = Object(s.e)(a, {
 							commentId: e
 						}),
-						d = Object(i.c)(a, {
+						d = Object(i.d)(a, {
 							subredditId: t,
 							userId: n
 						});
@@ -4079,4 +4079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9afefe9da54b0d69aa6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.614962d0d13d6172e7fe.js.map

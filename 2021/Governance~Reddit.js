@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a7c3fe60f8dbc4352c6b.js
-// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.04b18593d188eceb8d0d.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -896,120 +896,6 @@
 			const s = "ECONOMICS__ME__ME_DATA_SUCCESS",
 				a = "ECONOMICS__ME__POINTS_COPY_REQUESTED",
 				n = "ECONOMICS__ME__POINTS_COPY_SUCCESS"
-		},
-		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return v
-			})), r.d(t, "b", (function() {
-				return w
-			})), r.d(t, "c", (function() {
-				return j
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
-				a = r("./src/lib/makeActionCreator/index.ts"),
-				n = r("./src/lib/sentry/index.ts"),
-				c = r("./src/lib/makeGqlRequest/index.ts"),
-				o = r("./src/redditGQL/operations/SubredditUserAchievements.json"),
-				d = r("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
-			var i = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				u = r("./src/lib/initializeClient/installReducer.ts"),
-				l = r("./src/reddit/reducers/features/powerups/index.ts"),
-				p = r("./src/reddit/actions/gold/powerups.ts"),
-				b = r("./src/reddit/actions/toaster.ts"),
-				f = r("./src/reddit/models/Toast/index.ts"),
-				y = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				m = r("./src/reddit/selectors/gold/powerups/achievements.ts"),
-				h = r("./src/reddit/selectors/user.ts"),
-				E = r("./src/reddit/actions/economics/powerups/constants.ts");
-			Object(u.a)({
-				features: {
-					powerups: l.a
-				}
-			});
-			const O = Object(a.a)(E.d),
-				_ = Object(a.a)(E.f),
-				I = Object(a.a)(E.g),
-				g = Object(a.a)(E.e),
-				S = (e, t) => async (r, s, {
-					gqlContext: a
-				}) => {
-					const d = t.filter(e => !!(null == e ? void 0 : e.trim()));
-					if (d.length) try {
-						const t = await (async (e, t, r) => {
-							const s = await Object(c.a)(e, {
-								...o,
-								variables: {
-									subredditId: t,
-									redditorIds: r
-								}
-							});
-							if (!s.ok) throw new Error("Unable to fetch user achievements");
-							return s.body.data.subredditInfoById
-						})(a(), e, d);
-						await r(O(t))
-					} catch (i) {
-						n.c.captureException(i)
-					}
-				}, v = (e, t) => async (r, s) => {
-					if (!e) return;
-					const a = s(),
-						n = Object(h.j)(a);
-					if (!n || !Object(y.f)(a, {
-							subredditId: e
-						}) || !Object(i.g)(a)) return;
-					const c = !!Object(m.b)(a, {
-						subredditId: e,
-						userId: n.id
-					});
-					!t && c || await r(S(e, [n.id]))
-				}, w = (e, t) => async (r, s) => {
-					if (!e) return;
-					await r(Object(p.k)(e, {
-						fullData: !0
-					}));
-					const a = s();
-					if (!Object(y.f)(a, {
-							subredditId: e
-						}) || !t || !Object(i.g)(a)) return;
-					const n = new Set;
-					Object.values(t).forEach(e => {
-						n.add(e.authorId)
-					}), await r(S(e, Array.from(n)))
-				}, j = (e, t) => async (r, a, {
-					gqlContext: o
-				}) => {
-					const i = a(),
-						u = Object(h.j)(i);
-					if (!u) return;
-					const l = {
-						subredditId: e,
-						userId: u.id,
-						achievementType: t
-					};
-					r(_(l));
-					try {
-						await (async (e, t, r) => {
-							const s = await Object(c.a)(e, {
-								...d,
-								variables: {
-									subredditId: t,
-									achievementType: r
-								}
-							});
-							if (!s.ok || !s.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
-						})(o(), l.subredditId, l.achievementType), r(I(l))
-					} catch (p) {
-						r(g(l)), n.c.captureException(p), r(Object(b.f)({
-							duration: b.a,
-							kind: f.b.Error,
-							text: s.fbt._("Failed to set preferred achievement flair", null, {
-								hk: "4bEftA"
-							})
-						}))
-					}
-				}
 		},
 		"./src/reddit/actions/emoji.ts": function(e, t, r) {
 			"use strict";
@@ -3407,7 +3293,7 @@
 			const j = e => g.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				D = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.d)),
-					experimentName: b.rd
+					experimentName: b.sd
 				}),
 				T = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4624,14 +4510,14 @@
 					}) && t(Object(c.db)(e))
 				}, E = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.Zd
+						experimentName: d.ae
 					});
 					let a = "";
-					return (null == r ? void 0 : r.variant) === d.ae.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.be.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.ae.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.be.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -23404,7 +23290,7 @@
 				l = e => e === a.N.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.ge)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.he)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -23418,14 +23304,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.dd
-					}) === s.nd.Enabled
+						experimentName: s.ed
+					}) === s.od.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.cd
-					}) === s.md.Enabled
+						experimentName: s.dd
+					}) === s.nd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
@@ -23453,9 +23339,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.Zd
+						experimentName: s.ae
 					});
-					return r === s.ae.Variant1 || r === s.ae.Variant2
+					return r === s.be.Variant1 || r === s.be.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -23633,12 +23519,6 @@
 		"./src/redditGQL/operations/SubredditTopContent.json": function(e) {
 			e.exports = JSON.parse('{"id":"dd38535e7dd7"}')
 		},
-		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
-			e.exports = JSON.parse('{"id":"9995fe64fd5a"}')
-		},
-		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
-			e.exports = JSON.parse('{"id":"eab9458f507c"}')
-		},
 		"./src/redditGQL/operations/UpdateScheduledPost.json": function(e) {
 			e.exports = JSON.parse('{"id":"f5276d63e133"}')
 		},
@@ -23659,4 +23539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a7c3fe60f8dbc4352c6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.04b18593d188eceb8d0d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.c1be0b9e5186b08364fe.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.884ee1fabd7c2b47f98c.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -63,8 +63,8 @@
 				v = t("./src/lib/constants/index.ts"),
 				A = t("./src/reddit/constants/cookie.ts"),
 				p = t("./src/reddit/constants/experiments.ts"),
-				_ = t("./src/reddit/helpers/localStorage/index.ts"),
-				h = t("./src/reddit/selectors/telemetry.ts");
+				h = t("./src/reddit/helpers/localStorage/index.ts"),
+				_ = t("./src/reddit/selectors/telemetry.ts");
 			const x = (e, {
 					id: n,
 					title: t,
@@ -82,27 +82,27 @@
 						title: "function" == typeof t ? t() : t,
 						body: "function" == typeof s ? s() : s || ""
 					},
-					...Object(h.defaults)(a)
+					...Object(_.defaults)(a)
 				}),
 				O = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
-					...Object(h.defaults)(n)
+					...Object(_.defaults)(n)
 				});
 			var j = t("./src/reddit/hooks/useTracking.ts"),
 				C = t("./src/reddit/selectors/experiments/index.ts");
-			const g = e => {
+			const E = e => {
 					const n = new Date;
 					n.setMonth(n.getMonth() + 1), u.a.set(A.h, e, {
 						...v.A,
 						expires: n
 					})
 				},
-				E = (e, n) => t => {
+				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.ge)(n.variant)) return !1
+						if (n && Object(p.he)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -162,7 +162,7 @@
 					[t, r] = Object(a.useState)([]),
 					[d, u] = Object(a.useState)(!n),
 					[m, v] = Object(a.useState)(!0),
-					[p, h] = Object(a.useState)(0);
+					[p, _] = Object(a.useState)(0);
 				(({
 					announcements: e,
 					setActiveIndex: n,
@@ -173,15 +173,15 @@
 				}) => {
 					const r = Object(c.e)(C.a);
 					Object(a.useEffect)(() => {
-						const a = Object(_.f)(),
-							c = e.filter(E(r, a)).slice(0, 5),
+						const a = Object(h.f)(),
+							c = e.filter(g(r, a)).slice(0, 5),
 							l = [...c].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
 							d = c.length ? A.i.Yes : A.i.No;
-						g(d), t || b()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
+						E(d), t || b()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
 					}, [])
 				})({
 					announcements: e,
-					setActiveIndex: h,
+					setActiveIndex: _,
 					isHidden: d,
 					setVisibleAnnouncements: r,
 					visibleAnnouncements: t,
@@ -209,7 +209,7 @@
 				})({
 					activeIndex: p,
 					visibleAnnouncements: t,
-					setActiveIndex: h
+					setActiveIndex: _
 				}), D = (({
 					setIsHidden: e,
 					visibleAnnouncements: n
@@ -221,8 +221,8 @@
 								id: n,
 								maxImpressionsCount: t
 							} = e;
-							Object(_.gb)(n, t)
-						}), t(O("dismiss_all")), g(A.i.No)
+							Object(h.gb)(n, t)
+						}), t(O("dismiss_all")), E(A.i.No)
 					}, [n, t, e])
 				})({
 					visibleAnnouncements: t,
@@ -238,7 +238,7 @@
 					}, [e, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: h,
+					setActiveIndex: _,
 					visibleAnnouncements: t
 				});
 				return (({
@@ -251,14 +251,14 @@
 					Object(a.useEffect)(() => {
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
-							c = Object(_.e)(a.id);
-						s(x("view", a)), Object(_.gb)(a.id, c + 1);
-						const i = Object(_.f)();
-						t.filter(E(o, i)).length || g(A.i.No)
+							c = Object(h.e)(a.id);
+						s(x("view", a)), Object(h.gb)(a.id, c + 1);
+						const i = Object(h.f)();
+						t.filter(g(o, i)).length || E(A.i.No)
 					}, [e, o, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: h,
+					setActiveIndex: _,
 					visibleAnnouncements: t
 				}), d ? null : o.a.createElement("div", {
 					className: f.a.Container
@@ -305,7 +305,7 @@
 				})), t.length > 1 ? o.a.createElement("div", {
 					className: f.a.Dots
 				}, t.map((e, n) => o.a.createElement("button", {
-					onClick: () => h(n),
+					onClick: () => _(n),
 					key: `announcement-carousel-dot-${n}`,
 					className: Object(i.a)(f.a.Dot, {
 						[f.a.isSelected]: n === p
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.c1be0b9e5186b08364fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.884ee1fabd7c2b47f98c.js.map

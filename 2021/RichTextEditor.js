@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.c58947239b5cd7350111.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.a70d48f10d1e188db882.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1560,6 +1560,149 @@
 								method: n.hb.GET
 							});
 						o.ok && o.body && e(u(o.body))
+					}
+				}
+		},
+		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, o) {
+			"use strict";
+			o.d(t, "a", (function() {
+				return w
+			})), o.d(t, "c", (function() {
+				return T
+			})), o.d(t, "b", (function() {
+				return S
+			})), o.d(t, "d", (function() {
+				return R
+			}));
+			o("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
+				s = o("./src/lib/makeActionCreator/index.ts"),
+				r = o("./src/lib/sentry/index.ts"),
+				a = o("./src/lib/makeGqlRequest/index.ts"),
+				i = o("./src/redditGQL/operations/SubredditUserAchievements.json"),
+				c = o("./src/redditGQL/operations/UpdateAchievementFlairPreference.json");
+			var d = o("./src/reddit/selectors/experiments/econ/index.ts"),
+				l = o("./src/lib/initializeClient/installReducer.ts"),
+				u = o("./src/reddit/reducers/features/powerups/index.ts"),
+				m = o("./src/reddit/actions/gold/powerups.ts"),
+				p = o("./src/reddit/actions/toaster.ts"),
+				h = o("./src/reddit/models/Toast/index.ts"),
+				b = o("./src/reddit/selectors/commentSelector.ts"),
+				f = o("./src/reddit/selectors/gold/powerups/index.ts"),
+				_ = o("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				x = o("./src/reddit/selectors/user.ts"),
+				g = o("./src/reddit/actions/economics/powerups/constants.ts");
+			Object(l.a)({
+				features: {
+					powerups: u.a
+				}
+			});
+			const y = Object(s.a)(g.d),
+				v = Object(s.a)(g.h),
+				C = Object(s.a)(g.f),
+				E = Object(s.a)(g.g),
+				j = Object(s.a)(g.e),
+				k = (e, t) => async (o, n, {
+					gqlContext: s
+				}) => {
+					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
+					if (c.length) try {
+						const t = n(),
+							r = Object(d.i)(t),
+							l = await (async (e, t, o, n) => {
+								const s = await Object(a.a)(e, {
+									...i,
+									variables: {
+										subredditId: t,
+										redditorIds: o,
+										includeSupporterInfo: n
+									}
+								});
+								if (!s.ok) throw new Error("Unable to fetch user achievements");
+								return s.body.data
+							})(s(), e, c, r),
+							{
+								subredditInfoById: u,
+								redditorsInfoByIds: m
+							} = l;
+						await o(y(u)), r && m && await o(v(m))
+					} catch (l) {
+						r.c.captureException(l)
+					}
+				}, w = (e, t) => async (o, n) => {
+					if (!e) return;
+					const s = n(),
+						r = Object(x.j)(s);
+					if (!r || !Object(f.f)(s, {
+							subredditId: e
+						}) || !Object(d.g)(s)) return;
+					const a = !!Object(_.c)(s, {
+						subredditId: e,
+						userId: r.id
+					});
+					!t && a || await o(k(e, [r.id]))
+				}, O = e => async (t, o) => {
+					if (!e) return !1;
+					await t(Object(m.k)(e, {
+						fullData: !0
+					}));
+					const n = o();
+					return Object(f.f)(n, {
+						subredditId: e
+					}) && Object(d.g)(n)
+				}, T = e => async (t, o) => {
+					var n;
+					const s = o(),
+						r = e.map(({
+							id: e
+						}) => e),
+						a = Object(b.b)(s, {
+							commentIds: r
+						}),
+						i = null === (n = a.find(e => e && e.subredditId)) || void 0 === n ? void 0 : n.subredditId;
+					if (!(await t(O(i)))) return;
+					const c = new Set(a.filter(e => !!(null == e ? void 0 : e.authorId)).map(({
+						authorId: e
+					}) => e));
+					await t(k(i, Array.from(c)))
+				}, S = (e, t) => async (o, n) => {
+					if (!t) return;
+					if (!(await o(O(e)))) return;
+					const s = new Set;
+					Object.values(t).forEach(e => {
+						s.add(e.authorId)
+					}), await o(k(e, Array.from(s)))
+				}, R = (e, t) => async (o, s, {
+					gqlContext: i
+				}) => {
+					const d = s(),
+						l = Object(x.j)(d);
+					if (!l) return;
+					const u = {
+						subredditId: e,
+						userId: l.id,
+						achievementType: t
+					};
+					o(C(u));
+					try {
+						await (async (e, t, o) => {
+							const n = await Object(a.a)(e, {
+								...c,
+								variables: {
+									subredditId: t,
+									achievementType: o
+								}
+							});
+							if (!n.ok || !n.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
+						})(i(), u.subredditId, u.achievementType), o(E(u))
+					} catch (m) {
+						o(j(u)), r.c.captureException(m), o(Object(p.f)({
+							duration: p.a,
+							kind: h.b.Error,
+							text: n.fbt._("Failed to set preferred achievement flair", null, {
+								hk: "4bEftA"
+							})
+						}))
 					}
 				}
 		},
@@ -4691,7 +4834,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.fb
-				}) === n.fc
+				}) === n.gc
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4721,9 +4864,15 @@
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
 			e.exports = JSON.parse('{"id":"445164f0825f"}')
 		},
+		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
+			e.exports = JSON.parse('{"id":"df1c1b9b6408"}')
+		},
+		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
+			e.exports = JSON.parse('{"id":"eab9458f507c"}')
+		},
 		"./src/redditGQL/operations/UpdateCommentFollowState.json": function(e) {
 			e.exports = JSON.parse('{"id":"0a2ed51664c5"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c58947239b5cd7350111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.a70d48f10d1e188db882.js.map

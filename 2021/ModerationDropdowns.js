@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7760f39e6b990434c352.js
-// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f4b4243a46e8391356ba.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -451,11 +451,13 @@
 		"./src/reddit/actions/economics/powerups/achievements.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return w
-			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "c", (function() {
 				return E
+			})), n.d(t, "c", (function() {
+				return P
+			})), n.d(t, "b", (function() {
+				return y
+			})), n.d(t, "d", (function() {
+				return R
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -470,76 +472,103 @@
 				p = n("./src/reddit/actions/gold/powerups.ts"),
 				m = n("./src/reddit/actions/toaster.ts"),
 				b = n("./src/reddit/models/Toast/index.ts"),
-				f = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				h = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
-				x = n("./src/reddit/selectors/user.ts"),
-				O = n("./src/reddit/actions/economics/powerups/constants.ts");
+				f = n("./src/reddit/selectors/commentSelector.ts"),
+				h = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				x = n("./src/reddit/selectors/gold/powerups/achievements.ts"),
+				O = n("./src/reddit/selectors/user.ts"),
+				j = n("./src/reddit/actions/economics/powerups/constants.ts");
 			Object(l.a)({
 				features: {
 					powerups: u.a
 				}
 			});
-			const j = Object(s.a)(O.d),
-				v = Object(s.a)(O.f),
-				k = Object(s.a)(O.g),
-				g = Object(s.a)(O.e),
-				C = (e, t) => async (n, o, {
+			const v = Object(s.a)(j.d),
+				k = Object(s.a)(j.h),
+				g = Object(s.a)(j.f),
+				C = Object(s.a)(j.g),
+				w = Object(s.a)(j.e),
+				_ = (e, t) => async (n, o, {
 					gqlContext: s
 				}) => {
 					const c = t.filter(e => !!(null == e ? void 0 : e.trim()));
 					if (c.length) try {
-						const t = await (async (e, t, n) => {
-							const o = await Object(i.a)(e, {
-								...a,
-								variables: {
-									subredditId: t,
-									redditorIds: n
-								}
-							});
-							if (!o.ok) throw new Error("Unable to fetch user achievements");
-							return o.body.data.subredditInfoById
-						})(s(), e, c);
-						await n(j(t))
-					} catch (d) {
-						r.c.captureException(d)
+						const t = o(),
+							r = Object(d.i)(t),
+							l = await (async (e, t, n, o) => {
+								const s = await Object(i.a)(e, {
+									...a,
+									variables: {
+										subredditId: t,
+										redditorIds: n,
+										includeSupporterInfo: o
+									}
+								});
+								if (!s.ok) throw new Error("Unable to fetch user achievements");
+								return s.body.data
+							})(s(), e, c, r),
+							{
+								subredditInfoById: u,
+								redditorsInfoByIds: p
+							} = l;
+						await n(v(u)), r && p && await n(k(p))
+					} catch (l) {
+						r.c.captureException(l)
 					}
-				}, w = (e, t) => async (n, o) => {
+				}, E = (e, t) => async (n, o) => {
 					if (!e) return;
 					const s = o(),
-						r = Object(x.j)(s);
-					if (!r || !Object(f.f)(s, {
+						r = Object(O.j)(s);
+					if (!r || !Object(h.f)(s, {
 							subredditId: e
 						}) || !Object(d.g)(s)) return;
-					const i = !!Object(h.b)(s, {
+					const i = !!Object(x.c)(s, {
 						subredditId: e,
 						userId: r.id
 					});
-					!t && i || await n(C(e, [r.id]))
-				}, _ = (e, t) => async (n, o) => {
-					if (!e) return;
-					await n(Object(p.k)(e, {
+					!t && i || await n(_(e, [r.id]))
+				}, I = e => async (t, n) => {
+					if (!e) return !1;
+					await t(Object(p.k)(e, {
 						fullData: !0
 					}));
-					const s = o();
-					if (!Object(f.f)(s, {
-							subredditId: e
-						}) || !t || !Object(d.g)(s)) return;
-					const r = new Set;
+					const o = n();
+					return Object(h.f)(o, {
+						subredditId: e
+					}) && Object(d.g)(o)
+				}, P = e => async (t, n) => {
+					var o;
+					const s = n(),
+						r = e.map(({
+							id: e
+						}) => e),
+						i = Object(f.b)(s, {
+							commentIds: r
+						}),
+						a = null === (o = i.find(e => e && e.subredditId)) || void 0 === o ? void 0 : o.subredditId;
+					if (!(await t(I(a)))) return;
+					const c = new Set(i.filter(e => !!(null == e ? void 0 : e.authorId)).map(({
+						authorId: e
+					}) => e));
+					await t(_(a, Array.from(c)))
+				}, y = (e, t) => async (n, o) => {
+					if (!t) return;
+					if (!(await n(I(e)))) return;
+					const s = new Set;
 					Object.values(t).forEach(e => {
-						r.add(e.authorId)
-					}), await n(C(e, Array.from(r)))
-				}, E = (e, t) => async (n, s, {
+						s.add(e.authorId)
+					}), await n(_(e, Array.from(s)))
+				}, R = (e, t) => async (n, s, {
 					gqlContext: a
 				}) => {
 					const d = s(),
-						l = Object(x.j)(d);
+						l = Object(O.j)(d);
 					if (!l) return;
 					const u = {
 						subredditId: e,
 						userId: l.id,
 						achievementType: t
 					};
-					n(v(u));
+					n(g(u));
 					try {
 						await (async (e, t, n) => {
 							const o = await Object(i.a)(e, {
@@ -550,9 +579,9 @@
 								}
 							});
 							if (!o.ok || !o.body.data.updateAchievementFlairPreference.ok) throw new Error("Unable to update the preferred achievement flair")
-						})(a(), u.subredditId, u.achievementType), n(k(u))
+						})(a(), u.subredditId, u.achievementType), n(C(u))
 					} catch (p) {
-						n(g(u)), r.c.captureException(p), n(Object(m.f)({
+						n(w(u)), r.c.captureException(p), n(Object(m.f)({
 							duration: m.a,
 							kind: b.b.Error,
 							text: o.fbt._("Failed to set preferred achievement flair", null, {
@@ -695,7 +724,7 @@
 						i = Object(j.j)(s, {
 							subredditId: r
 						}),
-						a = Object(f.k)(s);
+						a = Object(f.l)(s);
 					if (i) return Object(j.f)(s, {
 						subredditId: r
 					});
@@ -1640,14 +1669,14 @@
 					post: A
 				}) => {
 					var G, U, z, W;
-					const Q = Object(r.e)(N.o),
+					const Q = Object(r.e)(N.p),
 						K = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.l)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.m)(e)
 						}),
 						V = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.k)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.l)(e)
 						}),
 						H = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
 						q = Object(w.b)(A),
@@ -3056,14 +3085,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.dd
-					}) === o.nd.Enabled
+						experimentName: o.ed
+					}) === o.od.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.cd
-					}) === o.md.Enabled
+						experimentName: o.dd
+					}) === o.nd.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3176,7 +3205,7 @@
 			e.exports = JSON.parse('{"id":"3407d5f67207"}')
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
-			e.exports = JSON.parse('{"id":"9995fe64fd5a"}')
+			e.exports = JSON.parse('{"id":"df1c1b9b6408"}')
 		},
 		"./src/redditGQL/operations/UpdateAchievementFlairPreference.json": function(e) {
 			e.exports = JSON.parse('{"id":"eab9458f507c"}')
@@ -3189,4 +3218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.7760f39e6b990434c352.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f4b4243a46e8391356ba.js.map

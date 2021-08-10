@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.17e224e0025d073f5754.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5495578ef30599a8a998.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -950,10 +950,10 @@
 							success: I.ok
 						}
 					})
-				}, W = Object(d.a)(A.l), G = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
+				}, G = Object(d.a)(A.l), W = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
 					apiContext: n
 				}) => {
-					t(W({
+					t(G({
 						subredditId: e
 					}));
 					const o = Object(g.T)(r(), {
@@ -963,7 +963,7 @@
 					if (i.ok) {
 						const n = r().structuredStyles.models[e],
 							o = n ? n.mobileKeyColor : null;
-						t(G({
+						t(W({
 							subredditId: e,
 							styles: {
 								mobileKeyColor: o
@@ -2633,9 +2633,9 @@
 			})), r.d(t, "e", (function() {
 				return H
 			})), r.d(t, "f", (function() {
-				return W
-			})), r.d(t, "b", (function() {
 				return G
+			})), r.d(t, "b", (function() {
+				return W
 			})), r.d(t, "v", (function() {
 				return q
 			})), r.d(t, "g", (function() {
@@ -2904,14 +2904,14 @@
 						...B(e, t)
 					})
 				},
-				W = (e, t) => {
+				G = (e, t) => {
 					Object(u.a)({
 						noun: "draft_delete",
 						...m(e),
 						...M(e, t)
 					})
 				},
-				G = e => {
+				W = e => {
 					Object(u.a)({
 						...m(e),
 						noun: "social_connect_link",
@@ -2969,7 +2969,7 @@
 			})), r.d(t, "m", (function() {
 				return F
 			})), r.d(t, "t", (function() {
-				return G
+				return W
 			})), r.d(t, "w", (function() {
 				return q
 			})), r.d(t, "e", (function() {
@@ -3098,7 +3098,7 @@
 							break;
 						case i.Jb.SETTINGS: {
 							const o = e;
-							Object(y.a)(W(r, n)(t)), o.match.params.page === i.Wb.Profile && Object(u.k)(t);
+							Object(y.a)(G(r, n)(t)), o.match.params.page === i.Wb.Profile && Object(u.k)(t);
 							break
 						}
 						case i.Jb.POST_CREATION:
@@ -3150,7 +3150,7 @@
 							}
 							break;
 						case i.Jb.PUBLIC_ACCESS_NETWORK:
-							p && Object(y.a)(G()(t));
+							p && Object(y.a)(W()(t));
 							break;
 						case i.Jb.GEOTAGGING:
 							p && Object(y.a)(V()(t));
@@ -3426,14 +3426,14 @@
 					...k(r),
 					timer: I.timer(e, t)
 				}),
-				W = (e, t) => r => ({
+				G = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...k(r),
 					timer: I.timer(e, t)
 				}),
-				G = () => e => ({
+				W = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -4207,9 +4207,9 @@
 					experimentName: o.yb,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === o.Wd.NoCommunityWidgets,
-				u = e => e === o.Wd.NoRulesModerators,
-				f = e => e === o.Wd.RelatedPostsDu
+				d = e => e === o.Xd.NoCommunityWidgets,
+				u = e => e === o.Xd.NoRulesModerators,
+				f = e => e === o.Xd.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4223,4 +4223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.17e224e0025d073f5754.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5495578ef30599a8a998.js.map

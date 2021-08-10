@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.ed523644d35417c9f48b.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.3660e678be3313947581.js
+// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2865,7 +2865,7 @@
 				subredditId: t,
 				userId: n
 			}) => {
-				const h = Object(a.e)(e => Object(u.a)(e, {
+				const h = Object(a.e)(e => Object(u.b)(e, {
 						subredditId: t,
 						userId: n
 					})),
@@ -2943,15 +2943,15 @@
 					onHover: c
 				}) => {
 					var d;
-					const l = Object(a.e)(e => Object(u.c)(e, {
+					const l = Object(a.e)(e => Object(u.d)(e, {
 							subredditId: t,
 							userId: n
 						})),
-						m = Object(a.e)(e => Object(u.d)(e, {
+						m = Object(a.e)(e => Object(u.e)(e, {
 							subredditId: t,
 							userId: n
 						})),
-						p = null === (d = Object(a.e)(e => Object(u.b)(e, {
+						p = null === (d = Object(a.e)(e => Object(u.c)(e, {
 							subredditId: t,
 							userId: n
 						}))) || void 0 === d ? void 0 : d.achievementTypes,
@@ -3532,4 +3532,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.ed523644d35417c9f48b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.3660e678be3313947581.js.map
