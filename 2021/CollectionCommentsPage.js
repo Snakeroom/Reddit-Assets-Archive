@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7e2ffbfb04733d5c0213.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.879b65d7052e9ed60137.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -263,7 +263,7 @@
 							collectionId: t.id
 						});
 						if (!s) return "";
-						const n = Object(V.K)(e, {
+						const n = Object(V.L)(e, {
 								identifier: t
 							}),
 							r = Object(i.b)(s.title, n.name).toString();
@@ -274,12 +274,12 @@
 					}));
 					const R = s().posts.models[g];
 					if (R) {
-						const o = Object(V.K)(s(), {
+						const o = Object(V.L)(s(), {
 							identifier: R.belongsTo
 						});
 						if (!R.isSponsored)
 							if (R.belongsTo.type === v.a.SUBREDDIT) {
-								!!Object(V.R)(y, {
+								!!Object(V.S)(y, {
 									subredditId: R.belongsTo.id
 								}) || await t(b.o(o.name))
 							} else await t(u.d(o.name));
@@ -560,7 +560,7 @@
 						n = Object(te.G)(t, {
 							postId: s
 						}).belongsTo,
-						r = Object(se.K)(t, {
+						r = Object(se.L)(t, {
 							identifier: n
 						}),
 						i = Object(ge.c)(t, {
@@ -634,7 +634,7 @@
 									});
 								return s && o ? `${e.posts.models[t].title} : ${s.name}` : ""
 							})(s(), m),
-							i = Object(se.K)(s(), {
+							i = Object(se.L)(s(), {
 								identifier: F.belongsTo
 							});
 						if (i && (e => D.Ad.Redirect === Object(U.b)(e, {
@@ -655,7 +655,7 @@
 								await e
 							}
 						} else {
-							if (!!!Object(se.R)(s(), {
+							if (!!!Object(se.S)(s(), {
 									subredditId: F.belongsTo.id
 								})) {
 								const e = Object(le.i)(() => t(E.o(i.name)), {
@@ -1003,7 +1003,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/CommentCreation/index.tsx")),
+					importAsync: () => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/CommentCreation/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2206,7 +2206,7 @@
 					}),
 					subredditAboutInfo: (e, {
 						subreddit: t
-					}) => t ? Object(ue.v)(e, {
+					}) => t ? Object(ue.w)(e, {
 						subredditName: t.name
 					}) : void 0,
 					subredditOrProfile: (e, {
@@ -3517,7 +3517,7 @@
 				p = i.a.div("Byline", c.a),
 				u = Object(r.a)({
 					ErrorComponent: () => n.a.createElement(l, null, n.a.createElement(m, null), n.a.createElement(p, null)),
-					getComponent: () => Object(a.a)(() => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("ChatMessageInput~ChatPost"), s.e("ChatMessageInput")]).then(s.bind(null, "./src/reddit/components/CommentsChat/MessageInput/index.tsx")).then(e => e.default)),
+					getComponent: () => Object(a.a)(() => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("ChatMessageInput~ChatPost"), s.e("ChatMessageInput")]).then(s.bind(null, "./src/reddit/components/CommentsChat/MessageInput/index.tsx")).then(e => e.default)),
 					LoadingComponent: ({
 						isLivestreaming: e
 					}) => e ? null : n.a.createElement(l, null, n.a.createElement(m, null), n.a.createElement(p, null))
@@ -3613,7 +3613,7 @@
 					isLoggedIn: S.J,
 					postSEOV2IdCardVariant: k.h,
 					shouldShowReredditPromo: I.a,
-					widgets: Object(p.a)(_.q)
+					widgets: Object(p.a)(_.r)
 				}),
 				F = Object(d.b)(A);
 			class B extends a.a.Component {
@@ -4129,8 +4129,8 @@
 					className: b.a.icon
 				}),
 				C = Object(a.c)({
-					subreddit: p.y,
-					subredditAboutInfo: p.v
+					subreddit: p.z,
+					subredditAboutInfo: p.w
 				}),
 				x = Object(i.b)(C);
 			t.a = x(e => {
@@ -4526,7 +4526,7 @@
 					isLoading: !1,
 					toolbarPosition: "top"
 				}),
-				getComponent: () => Object(ae.a)(() => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/PostEditForm/index.tsx")).then(e => e.default)),
+				getComponent: () => Object(ae.a)(() => Promise.all([s.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), s.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), s.e("RichTextEditor")]).then(s.bind(null, "./src/reddit/components/PostEditForm/index.tsx")).then(e => e.default)),
 				LoadingComponent: () => i.a.createElement(de.a, {
 					isLoading: !0,
 					toolbarPosition: "top"
@@ -6406,7 +6406,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const s = Object(y.D)(e, t.listingName);
+							const s = Object(y.E)(e, t.listingName);
 							return Object(f.k)(e, {
 								subredditId: s
 							})
@@ -6422,14 +6422,14 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (o) {
-							const t = Object(y.D)(e, s);
+							const t = Object(y.E)(e, s);
 							return Object(f.l)(e, {
 								subredditId: t
 							})
 						}
 						return Object(O.D)(e, t, s, n)
 					}),
-					subredditsById: y.Z,
+					subredditsById: y.ab,
 					viewportDataLoaded: P.a,
 					pageReferrer: u.R,
 					postListPlaceholderComponent: () => g.a,
@@ -7375,7 +7375,7 @@
 					shouldOpenPostInNewTab: he.bb,
 					subredditAboutInfo: (e, {
 						subredditName: t
-					}) => t ? Object(pe.v)(e, {
+					}) => t ? Object(pe.w)(e, {
 						subredditName: t
 					}) : void 0,
 					subredditOrProfile: me.T,
@@ -8199,7 +8199,7 @@
 			const d = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(i.S)(e, {
+						const t = Object(i.T)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -8212,14 +8212,14 @@
 				p = Object(o.a)((e, t) => {
 					const s = u(e, t);
 					if (!s) return m;
-					const o = Object(i.W)(e, {
+					const o = Object(i.X)(e, {
 						subredditName: s.name
 					});
 					return o && o.postIds && o.postIds.length ? o.postIds : m
 				}),
 				u = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(i.S)(e, {
+					return s ? Object(i.T)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -8310,4 +8310,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.7e2ffbfb04733d5c0213.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.879b65d7052e9ed60137.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.a4e4f17a00cc51d323ef.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.afac6b4a6d1cc50f217e.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -359,7 +359,7 @@
 			s.d(t, "b", (function() {
 				return X
 			})), s.d(t, "a", (function() {
-				return Y
+				return Z
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var i = s("./node_modules/history/esm/history.js"),
@@ -439,13 +439,13 @@
 						isFrontpage: s
 					})
 				}, $.set(i, r)), r
-			}, Z = (e, t) => {
+			}, Y = (e, t) => {
 				const s = [...e];
 				return Object.keys(t).map(e => parseInt(e, 10)).sort((e, t) => t - e).forEach(e => {
 					s.splice(e, 0, t[e])
 				}), s
 			};
-			class Y extends p.a.Component {
+			class Z extends p.a.Component {
 				constructor() {
 					super(...arguments), this.didRenderLastVisibleChild = !1, this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.scrollChildCache = new A.a(V), this.surveyTriggerCounted = !1, this.timerId = void 0, this.viewportHeight = null, this.updateScrollerRef = e => {
 						this.scrollerRef = e instanceof Element ? e : void 0
@@ -749,7 +749,7 @@
 						const i = t === l.length - 1;
 						return this.scrollChildForPost(e, t, i, n)
 					});
-					r && (m = Z(m, r));
+					r && (m = Y(m, r));
 					const g = this.props.measureScrollFPS ? `post-listings-${n}` : void 0,
 						v = d ? Object(i.e)(d) : null,
 						y = v || o;
@@ -782,7 +782,7 @@
 					}), p.a.createElement(z, null))), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
-			Y.defaultProps = {
+			Z.defaultProps = {
 				enableElementHiding: !0,
 				listingKey: "",
 				listingName: "",
@@ -818,7 +818,7 @@
 					currentUser: b.j,
 					layout: c.O,
 					loadMore: h.d,
-					subredditsById: g.Z,
+					subredditsById: g.ab,
 					viewportDataLoaded: f.a,
 					commentsById: h.g,
 					itemIds: h.f,
@@ -1188,4 +1188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.a4e4f17a00cc51d323ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.afac6b4a6d1cc50f217e.js.map

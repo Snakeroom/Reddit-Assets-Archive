@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.a44c1f297ce766134761.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.62326ef93be3c6976f8d.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1421,8 +1421,8 @@
 				L = s.n(C);
 			const O = Object(h.c)({
 				isLoggedIn: S.J,
-				subreddit: T.S,
-				subredditAboutInfo: T.u
+				subreddit: T.T,
+				subredditAboutInfo: T.v
 			});
 			class P extends i.a.Component {
 				constructor() {
@@ -1636,7 +1636,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(_.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const s = Object(E.D)(e, t.listingName);
+							const s = Object(E.E)(e, t.listingName);
 							return Object(x.k)(e, {
 								subredditId: s
 							})
@@ -1652,14 +1652,14 @@
 						inSubredditOrProfile: i
 					}) => {
 						if (r) {
-							const t = Object(E.D)(e, s);
+							const t = Object(E.E)(e, s);
 							return Object(x.l)(e, {
 								subredditId: t
 							})
 						}
 						return Object(y.D)(e, t, s, i)
 					}),
-					subredditsById: E.Z,
+					subredditsById: E.ab,
 					viewportDataLoaded: T.a,
 					pageReferrer: m.R,
 					postListPlaceholderComponent: () => g.a,
@@ -1717,7 +1717,7 @@
 				n = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(r.b)(() => Object(i.c)({
-				userIsSubscriber: o.eb
+				userIsSubscriber: o.fb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2179,7 +2179,7 @@
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(n.c)({
 				isLoggedIn: ie.J,
-				subreddit: re.S,
+				subreddit: re.T,
 				subredditAboutInfo: (e, {
 					subredditId: t
 				}) => e.subreddits.about[t]
@@ -2538,7 +2538,7 @@
 			const c = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.S)(e, {
+						const t = Object(o.T)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -2551,14 +2551,14 @@
 				p = Object(r.a)((e, t) => {
 					const s = m(e, t);
 					if (!s) return u;
-					const r = Object(o.W)(e, {
+					const r = Object(o.X)(e, {
 						subredditName: s.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				m = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.S)(e, {
+					return s ? Object(o.T)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -2616,4 +2616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a44c1f297ce766134761.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.62326ef93be3c6976f8d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.63bba1c1ccd4d0c0321b.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.e61932bb26c1d1130bd5.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -44,11 +44,11 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return Z
+				return U
 			})), s.d(t, "updateMessage", (function() {
-				return H
+				return Z
 			})), s.d(t, "gildGqlRequested", (function() {
-				return J
+				return H
 			})), s.d(t, "triggerLoader", (function() {
 				return V
 			})), s.d(t, "gildPending", (function() {
@@ -92,8 +92,8 @@
 				v = s("./src/reddit/models/Toast/index.ts"),
 				y = s("./src/reddit/models/User/index.ts"),
 				k = s("./src/reddit/selectors/commentSelector.ts"),
-				I = s("./src/reddit/selectors/communityAwards.ts"),
-				_ = s("./src/reddit/selectors/gild.ts"),
+				_ = s("./src/reddit/selectors/communityAwards.ts"),
+				I = s("./src/reddit/selectors/gild.ts"),
 				A = s("./src/reddit/selectors/gold/awardIcon.ts"),
 				x = s("./src/reddit/selectors/gold/econPurchase.ts"),
 				G = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
@@ -124,11 +124,11 @@
 				Q = s("./src/telemetry/index.ts"),
 				W = s("./src/reddit/endpoints/profile/info.ts"),
 				z = s("./src/reddit/actions/gold/awardKarma.ts"),
-				U = s("./src/reddit/actions/gold/constants.ts"),
+				J = s("./src/reddit/actions/gold/constants.ts"),
 				B = s("./src/reddit/actions/gold/econPurchase.ts");
-			const Z = Object(a.a)(U.r),
-				H = Object(a.a)(U.v),
-				J = (e, t) => async (s, a, {
+			const U = Object(a.a)(J.r),
+				Z = Object(a.a)(J.v),
+				H = (e, t) => async (s, a, {
 					gqlContext: d
 				}) => {
 					const n = a().gild,
@@ -192,17 +192,17 @@
 					} finally {
 						Object(N.b)(N.a.GildingFlow)
 					}
-				}, V = Object(a.a)(U.u), $ = Object(a.a)(U.q), X = () => async (e, t) => {
+				}, V = Object(a.a)(J.u), $ = Object(a.a)(J.q), X = () => async (e, t) => {
 					e($()), window.setTimeout(() => {
 						t().gild.api.pending && e(V())
 					}, 2e3)
-				}, ee = Object(a.a)(U.p), te = e => async (t, s) => {
+				}, ee = Object(a.a)(J.p), te = e => async (t, s) => {
 					await t(ee(e)), t(Object(l.f)({
 						kind: v.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, se = Object(a.a)(U.s), re = (e, t) => {
+				}, se = Object(a.a)(J.s), re = (e, t) => {
 					const {
 						id: s
 					} = t, r = Object(F.a)(s) ? Object(C.G)(e, {
@@ -211,7 +211,7 @@
 						commentId: s
 					}), a = Object(R.j)(e), d = e.gild, {
 						isAnonymous: n
-					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.I)(e, {
+					} = d, o = !n && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = r ? r.author : void 0, c = Object(P.J)(e, {
 						thingId: s
 					});
 					return se({
@@ -226,11 +226,11 @@
 							awardId: u,
 							id: m
 						} = e,
-						h = Object(I.a)(a, u),
+						h = Object(_.a)(a, u),
 						w = e.awardKarmaReceived,
 						f = Object(R.j)(a),
-						k = Object(_.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
-					if (Object(_.g)(a)) {
+						k = Object(I.b)(a) || Object(N.d)(N.a.GildingFlow, !1);
+					if (Object(I.g)(a)) {
 						const e = "success.gild",
 							t = {},
 							s = Object(A.a)(a, {
@@ -244,10 +244,10 @@
 						})
 					}
 					if (h.awardType === b.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(P.I)(a, {
+						const t = Object(P.J)(a, {
 								thingId: m
 							}),
-							s = t && Object(P.A)(a, {
+							s = t && Object(P.B)(a, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - h.coinPrice)
@@ -318,7 +318,7 @@
 							})), d ? s : r)
 						}
 					}
-					const q = Object(P.I)(a, {
+					const q = Object(P.J)(a, {
 						thingId: m
 					});
 					if (q && Object(x.a)(a, {
@@ -493,4 +493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.63bba1c1ccd4d0c0321b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.e61932bb26c1d1130bd5.js.map

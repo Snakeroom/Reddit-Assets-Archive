@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.ed3ea1d7f2d4afe1e030.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8f1fc1389aa3233d65fd.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -839,7 +839,7 @@
 				C = Object(n.a)(o.x),
 				x = Object(n.a)(o.v),
 				f = (e, t, s) => async (r, n, a) => {
-					const o = Object(p.y)(n(), {
+					const o = Object(p.z)(n(), {
 						subredditName: e
 					});
 					if (o) return v(o, t, s)(r, n, a)
@@ -1827,7 +1827,7 @@
 						comment: t
 					}) => !!Object(Ne.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const s = Object(Pe.H)(e, {
+						const s = Object(Pe.I)(e, {
 							commentId: t.comment.id
 						});
 						return s ? s.displayText : ""
@@ -2148,31 +2148,36 @@
 				openCommunityCreation: c,
 				sendEvent: d,
 				userDoesNotHaveEnoughExpToCreateCommunity: l,
-				userIsSuspended: h
-			}) => a.a.createElement(u.q, {
-				className: e,
-				disabled: h || l,
-				onClick: () => s === m.Md.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
-				onMouseEnter: o,
-				onMouseLeave: i,
-				priority: u.b.Secondary,
-				id: y,
-				isFullWidth: !0
-			}, Object(p.a)(n, r.fbt._("Create Community", null, {
-				hk: "28v7Qq"
-			})), l ? a.a.createElement(O, {
-				caretOnTop: !0,
-				tooltipId: y,
-				text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
-					hk: "2R1OXu"
-				})
-			}) : h ? a.a.createElement(O, {
-				caretOnTop: !0,
-				tooltipId: y,
-				text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
-					hk: "2xBDEw"
-				})
-			}) : null)))
+				userIsSuspended: h,
+				onClick: b
+			}) => {
+				return a.a.createElement(u.q, {
+					className: e,
+					disabled: h || l,
+					onClick: e => {
+						b && b(e), s === m.Md.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
+					},
+					onMouseEnter: o,
+					onMouseLeave: i,
+					priority: u.b.Secondary,
+					id: y,
+					isFullWidth: !0
+				}, Object(p.a)(n, r.fbt._("Create Community", null, {
+					hk: "28v7Qq"
+				})), l ? a.a.createElement(O, {
+					caretOnTop: !0,
+					tooltipId: y,
+					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "2R1OXu"
+					})
+				}) : h ? a.a.createElement(O, {
+					caretOnTop: !0,
+					tooltipId: y,
+					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "2xBDEw"
+					})
+				}) : null)
+			}))
 		},
 		"./src/reddit/components/CreateCommunitySidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -3080,7 +3085,7 @@
 						subredditId: t,
 						userId: s
 					})),
-					x = Object(a.e)(e => Object(p.S)(e, {
+					x = Object(a.e)(e => Object(p.T)(e, {
 						subredditId: t
 					})),
 					f = Object(a.d)(),
@@ -5396,9 +5401,9 @@
 				O = s.n(y);
 			const E = Object(o.c)({
 					hideNSFWPref: v.B,
-					subredditOrProfile: g.K,
-					subredditOrProfileAboutInfo: g.G,
-					userIsSubscriber: g.eb
+					subredditOrProfile: g.L,
+					subredditOrProfileAboutInfo: g.H,
+					userIsSubscriber: g.fb
 				}),
 				j = e => {
 					const {
@@ -5501,9 +5506,9 @@
 				_ = s.n(j);
 			const k = Object(o.c)({
 					hideNSFWPref: E.B,
-					subredditOrProfile: O.K,
-					subredditOrProfileAboutInfo: O.G,
-					userIsSubscriber: O.eb
+					subredditOrProfile: O.L,
+					subredditOrProfileAboutInfo: O.H,
+					userIsSubscriber: O.fb
 				}),
 				S = e => {
 					const {
@@ -6690,7 +6695,7 @@
 				we = Object(o.c)({
 					fromSubreddit: (e, t) => {
 						const s = Object(je.a)(e, t);
-						return s ? Object(N.y)(e, {
+						return s ? Object(N.z)(e, {
 							subredditName: s
 						}) : null
 					},
@@ -6822,7 +6827,7 @@
 			const xt = Object(o.c)({
 					comment: (e, t) => Object(ht.a)(e, t),
 					flair: pt.e,
-					subreddit: N.H
+					subreddit: N.I
 				}),
 				ft = Object(a.b)(xt),
 				gt = Object(Ve.b)(e => ({
@@ -7021,7 +7026,7 @@
 				post: (e, t) => Zt(e, t.searchDiscoveryUnit.postOrder),
 				subredditOrProfile: Object(Ve.a)((e, t) => {
 					const s = Zt(e, t.searchDiscoveryUnit.postOrder);
-					if (s) return Object(N.K)(e, {
+					if (s) return Object(N.L)(e, {
 						identifier: s.belongsTo
 					})
 				})
@@ -8194,11 +8199,11 @@
 				isLoggedIn: C.J,
 				subredditId: (e, {
 					listingName: t
-				}) => Object(b.D)(e, t),
+				}) => Object(b.E)(e, t),
 				postFlairWidgets: (e, {
 					listingName: t
 				}) => {
-					const s = Object(b.D)(e, t);
+					const s = Object(b.E)(e, t);
 					return Object(x.g)(e, {
 						subredditId: s
 					})
@@ -8268,11 +8273,11 @@
 					hasCommunityResults: g.a,
 					subredditId: (e, {
 						listingName: t
-					}) => Object(v.D)(e, t),
+					}) => Object(v.E)(e, t),
 					postFlairWidgets: (e, {
 						listingName: t
 					}) => {
-						const s = Object(v.D)(e, t);
+						const s = Object(v.E)(e, t);
 						return Object(O.g)(e, {
 							subredditId: s
 						})
@@ -8793,7 +8798,7 @@
 				Oe = s.n(ye);
 			const Ee = Object(o.c)({
 					isSerpRedesignLayout: l.b,
-					subreddit: m.y
+					subreddit: m.z
 				}),
 				je = e => {
 					const {
@@ -9456,7 +9461,7 @@
 					url: e => Object(b.Z)(e)
 				}),
 				S = Object(i.c)({
-					subredditId: (e, t) => Object(y.D)(e, t.subredditName)
+					subredditId: (e, t) => Object(y.E)(e, t.subredditName)
 				}),
 				N = Object(o.b)(S),
 				I = l.a.div("WidgetContent", E.a),
@@ -9774,7 +9779,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const s = Object(O.D)(e, t.listingName);
+							const s = Object(O.E)(e, t.listingName);
 							return Object(g.k)(e, {
 								subredditId: s
 							})
@@ -9790,14 +9795,14 @@
 						inSubredditOrProfile: n
 					}) => {
 						if (r) {
-							const t = Object(O.D)(e, s);
+							const t = Object(O.E)(e, s);
 							return Object(g.l)(e, {
 								subredditId: t
 							})
 						}
 						return Object(y.D)(e, t, s, n)
 					}),
-					subredditsById: O.Z,
+					subredditsById: O.ab,
 					viewportDataLoaded: E.a,
 					pageReferrer: p.R,
 					postListPlaceholderComponent: () => C.a,
@@ -10629,7 +10634,7 @@
 					headerContent: S.c,
 					isInFollowExperiment: _.a,
 					origin: k.j,
-					subreddit: (e, t) => Object(N.y)(e, {
+					subreddit: (e, t) => Object(N.z)(e, {
 						subredditName: t.match.params.subredditName
 					}),
 					viewTreatment: S.m
@@ -10805,7 +10810,7 @@
 					r = Object(g.ab)(),
 					n = Object(P.b)(),
 					T = Object(o.useRef)(!1),
-					A = Object(c.e)(e => Object(S.y)(e, {
+					A = Object(c.e)(e => Object(S.z)(e, {
 						subredditName: t.params.subredditName
 					})),
 					B = Object(g.T)(r),
@@ -10935,7 +10940,7 @@
 			const c = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.S)(e, {
+						const t = Object(o.T)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -10948,14 +10953,14 @@
 				u = Object(r.a)((e, t) => {
 					const s = p(e, t);
 					if (!s) return m;
-					const r = Object(o.W)(e, {
+					const r = Object(o.X)(e, {
 						subredditName: s.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : m
 				}),
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.S)(e, {
+					return s ? Object(o.T)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -11082,4 +11087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ed3ea1d7f2d4afe1e030.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8f1fc1389aa3233d65fd.js.map

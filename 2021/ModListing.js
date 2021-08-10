@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.37a511e82dcdb4e48648.js
-// Retrieved at 8/9/2021, 3:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.0a6d803b175f95398bdf.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1110,7 +1110,7 @@
 			const b = h.a.wrapped(l.b, "SubredditIcon", p.a),
 				f = h.a.span("Label", p.a),
 				y = Object(c.c)({
-					subredditOrProfile: u.K
+					subredditOrProfile: u.L
 				});
 			var v = Object(d.b)(y)(({
 				children: e,
@@ -2525,7 +2525,7 @@
 				ae = Object(d.c)({
 					isApiPending: q,
 					subredditOrProfile: (e, t) => {
-						const r = Object(ne.y)(e, {
+						const r = Object(ne.z)(e, {
 							subredditName: t.subredditName
 						});
 						if (!r) {
@@ -4511,4 +4511,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.37a511e82dcdb4e48648.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.0a6d803b175f95398bdf.js.map

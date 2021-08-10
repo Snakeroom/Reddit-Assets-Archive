@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.2828fdc9f30fb7afbd0b.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.72452e05f4cb9d9b4d1c.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -547,31 +547,36 @@
 				openCommunityCreation: l,
 				sendEvent: c,
 				userDoesNotHaveEnoughExpToCreateCommunity: u,
-				userIsSuspended: h
-			}) => o.a.createElement(m.q, {
-				className: e,
-				disabled: h || u,
-				onClick: () => n === d.Md.Tabs ? window.open("/subreddits/create", "_blank") : l(c),
-				onMouseEnter: s,
-				onMouseLeave: i,
-				priority: m.b.Secondary,
-				id: g,
-				isFullWidth: !0
-			}, Object(p.a)(a, r.fbt._("Create Community", null, {
-				hk: "28v7Qq"
-			})), u ? o.a.createElement(f, {
-				caretOnTop: !0,
-				tooltipId: g,
-				text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
-					hk: "2R1OXu"
-				})
-			}) : h ? o.a.createElement(f, {
-				caretOnTop: !0,
-				tooltipId: g,
-				text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
-					hk: "2xBDEw"
-				})
-			}) : null)))
+				userIsSuspended: h,
+				onClick: b
+			}) => {
+				return o.a.createElement(m.q, {
+					className: e,
+					disabled: h || u,
+					onClick: e => {
+						b && b(e), n === d.Md.Tabs ? window.open("/subreddits/create", "_blank") : l(c)
+					},
+					onMouseEnter: s,
+					onMouseLeave: i,
+					priority: m.b.Secondary,
+					id: g,
+					isFullWidth: !0
+				}, Object(p.a)(a, r.fbt._("Create Community", null, {
+					hk: "28v7Qq"
+				})), u ? o.a.createElement(f, {
+					caretOnTop: !0,
+					tooltipId: g,
+					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "2R1OXu"
+					})
+				}) : h ? o.a.createElement(f, {
+					caretOnTop: !0,
+					tooltipId: g,
+					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "2xBDEw"
+					})
+				}) : null)
+			}))
 		},
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -587,4 +592,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.2828fdc9f30fb7afbd0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.72452e05f4cb9d9b4d1c.js.map

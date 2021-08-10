@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.29f677dc2d876a70d2d6.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3f9d4e5b32d54949aef7.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -524,12 +524,12 @@
 						var j = E < u ? m : h;
 						v[E] = w.slice(b, b + j), y[E] = p.encode(v[E]), b += j, _ = Math.max(_, j)
 					}
-					var x, P, A = n.alloc(i),
+					var P, x, A = n.alloc(i),
 						C = 0;
-					for (x = 0; x < _; x++)
-						for (P = 0; P < c; P++) x < v[P].length && (A[C++] = v[P][x]);
-					for (x = 0; x < g; x++)
-						for (P = 0; P < c; P++) A[C++] = y[P][x];
+					for (P = 0; P < _; P++)
+						for (x = 0; x < c; x++) P < v[x].length && (A[C++] = v[x][P]);
+					for (P = 0; P < g; P++)
+						for (x = 0; x < c; x++) A[C++] = y[x][P];
 					return A
 				}(i, e, t)
 			}
@@ -1350,56 +1350,6 @@
 				}));
 			t.b = Object(s.a)(b)
 		},
-		"./src/reddit/helpers/richTextJson/index.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "b", (function() {
-				return a
-			})), r.d(t, "f", (function() {
-				return s
-			})), r.d(t, "a", (function() {
-				return c
-			})), r.d(t, "e", (function() {
-				return u
-			})), r.d(t, "c", (function() {
-				return l
-			})), r.d(t, "d", (function() {
-				return f
-			}));
-			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = r("./src/reddit/models/RichTextJson/index.ts");
-			const o = "giphy|",
-				i = "|downsized";
-
-			function a(e, t) {
-				return o + e + (t ? i : "")
-			}
-
-			function s(e) {
-				return e && 0 === e.indexOf(o)
-			}
-
-			function c(e) {
-				const t = e && e.media && e.media.mediaMetadata;
-				return !!t && Object.keys(t).some(s)
-			}
-
-			function u(e) {
-				let t = e.substring(o.length);
-				return t.indexOf("|") && (t = t.split("|")[0]), `https://giphy.com/gifs/${t}`
-			}
-
-			function d(e, t) {
-				return (Array.isArray(e) ? e : e.c && Array.isArray(e.c) ? e.c : []).reduce((e, r) => [...e, ...d(r, t)], !Array.isArray(e) && t(e) ? [e] : [])
-			}
-
-			function l(e) {
-				return d(e, n.F).map(e => e.id)
-			}
-
-			function f(e) {
-				return d(e, e => e.e === n.o).map(e => e.u)
-			}
-		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "e", (function() {
@@ -1665,7 +1615,7 @@
 					srcSet: `${t}.png, ${t}@2x.png 2x`
 				})
 			}
-			var x = function() {
+			var P = function() {
 					const e = Object(i.e)(f.m),
 						t = Object(l.a)();
 					Object(n.useEffect)(() => {
@@ -1693,8 +1643,8 @@
 						id: e.image
 					})) : null)))))
 				},
-				P = r("./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less"),
-				A = r.n(P);
+				x = r("./src/reddit/pages/meta/CommunityPointsLearnMorePage/index.m.less"),
+				A = r.n(x);
 			const {
 				fbt: C
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1717,7 +1667,7 @@
 					}
 				}, C._("Create My Vault", null, {
 					hk: "3ZzMgD"
-				})), o.a.createElement(x, null)), r && o.a.createElement(c.b, {
+				})), o.a.createElement(P, null)), r && o.a.createElement(c.b, {
 					onClose: () => m(!1)
 				}))
 			}
@@ -1741,9 +1691,9 @@
 			})), r.d(t, "h", (function() {
 				return j
 			})), r.d(t, "y", (function() {
-				return x
-			})), r.d(t, "l", (function() {
 				return P
+			})), r.d(t, "l", (function() {
+				return x
 			})), r.d(t, "n", (function() {
 				return A
 			})), r.d(t, "e", (function() {
@@ -1767,9 +1717,9 @@
 			})), r.d(t, "b", (function() {
 				return U
 			})), r.d(t, "v", (function() {
-				return F
-			})), r.d(t, "s", (function() {
 				return D
+			})), r.d(t, "s", (function() {
+				return F
 			})), r.d(t, "g", (function() {
 				return Y
 			})), r.d(t, "m", (function() {
@@ -1855,12 +1805,12 @@
 					}
 				};
 
-			function x(e, t) {
+			function P(e, t) {
 				const r = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(r && r.settings && r.settings.optOut)
 			}
 
-			function P(e, t) {
+			function x(e, t) {
 				const {
 					badge: r,
 					subredditId: n
@@ -1979,11 +1929,11 @@
 					if (!t) return;
 					return e.economics.emotes[t]
 				},
-				F = (e, t) => {
+				D = (e, t) => {
 					const r = t && e.economics.gifs[t];
 					return !!r && r.hasGifProduct
 				},
-				D = (e, t, r) => {
+				F = (e, t, r) => {
 					if (!Object(h.b)(e, {
 							subredditId: t
 						})) return !1;
@@ -1995,7 +1945,7 @@
 					});
 					if (o && Object(i.a)(o)) return !0;
 					const a = n.d.spGiphy(e),
-						s = F(e, t);
+						s = D(e, t);
 					return !(!a || !s) || a && s
 				},
 				Y = (e, t, r) => {
@@ -2008,4 +1958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.29f677dc2d876a70d2d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.3f9d4e5b32d54949aef7.js.map

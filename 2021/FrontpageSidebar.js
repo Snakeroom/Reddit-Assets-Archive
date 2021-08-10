@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.38cb836c905bb57b68ee.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.9c371e2042d990c4a95b.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -151,8 +151,8 @@
 				v = n("./node_modules/fbt/lib/FbtPublic.js"),
 				C = n("./src/lib/classNames/index.ts"),
 				T = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				j = n("./src/reddit/controls/InternalLink/index.tsx"),
-				O = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				O = n("./src/reddit/controls/InternalLink/index.tsx"),
+				j = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
 			const P = ({
@@ -161,7 +161,7 @@
 				}) => d.a.createElement(T.a, {
 					subredditName: t,
 					tooltipPosition: ["right", "top"]
-				}, d.a.createElement(j.a, {
+				}, d.a.createElement(O.a, {
 					className: F.a.Link,
 					to: e,
 					title: t
@@ -183,7 +183,7 @@
 					onClick: s
 				}, d.a.createElement("div", {
 					className: F.a.SectionTitle
-				}, e), d.a.createElement(O.a, {
+				}, e), d.a.createElement(j.a, {
 					className: F.a.SectionChevron
 				})), d.a.createElement("div", {
 					className: F.a.SectionBody
@@ -391,8 +391,8 @@
 				ve = n("./src/lib/env/index.ts"),
 				Ce = n("./src/reddit/controls/Chip/index.tsx"),
 				Te = n("./src/reddit/helpers/trackers/widgets.ts"),
-				je = n("./src/reddit/hooks/useTracking.ts");
-			const Oe = [{
+				Oe = n("./src/reddit/hooks/useTracking.ts");
+			const je = [{
 				getName: () => v.fbt._("Fashion", null, {
 					hk: "4tXmOZ"
 				}),
@@ -631,9 +631,9 @@
 					}, t))
 				};
 			var Be = d.a.memo(e => {
-					const t = Object(je.a)();
+					const t = Object(Oe.a)();
 					Object(o.useEffect)(() => t(Object(Te.d)()), []);
-					const n = Oe.map(e => ({
+					const n = je.map(e => ({
 						value: e,
 						sort: Object(ve.d)() ? .5 : Math.random()
 					})).sort((e, t) => e.sort - t.sort).map(e => e.value).slice(0, 10);
@@ -691,10 +691,10 @@
 					},
 					bffsLeaderboardVariant: Ge,
 					inRpanTopVideoEntrypointExperiment: Me.e,
-					rankings: e => Object(Ve.N)(e, Ye),
+					rankings: e => Object(Ve.O)(e, Ye),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Me.e)(e),
-							n = !!Object(Ve.N)(e, Ye);
+							n = !!Object(Ve.O)(e, Ye);
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Je.J,
@@ -852,7 +852,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.K)(e, {
+						subredditOrProfile: Object(g.L)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -1357,7 +1357,7 @@
 				T = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
 					key: e
 				}))),
-				j = e => {
+				O = e => {
 					const t = e.isSecondaryButton ? f.n : f.k,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
@@ -1382,7 +1382,7 @@
 					}, s))
 				};
 
-			function O(e, t) {
+			function j(e, t) {
 				return t || `${h.g}${Object(k.g)(e)}/`
 			}
 			const w = e => {
@@ -1395,7 +1395,7 @@
 				}, c.a.createElement(_.a, {
 					className: e.hasTagline ? E.a.taglineChip : E.a.chip,
 					key: t.name,
-					to: O(t.name, t.path),
+					to: j(t.name, t.path),
 					wide: t.name === h.m
 				}, t.name ? t.name === h.m ? h.k : t.displayText || t.name : a.fbt._("Top", null, {
 					hk: "2rw7Gx"
@@ -1417,7 +1417,7 @@
 					b = t && m && t[m.id],
 					p = `${u.a.assetPath}/img/leaderboard/banner-background.png`,
 					f = b ? b.bannerBackgroundImage || p : void 0,
-					_ = e.to || a && O(a, i.path),
+					_ = e.to || a && j(a, i.path),
 					k = i && i.tagline,
 					N = i && i.gradients && Array.isArray(i.gradients) && 2 === i.gradients.length ? i.gradients[1] : void 0;
 				return c.a.createElement(g.a, {
@@ -1442,7 +1442,7 @@
 					rankings: n,
 					shouldDisplayDelta: !1,
 					subreddits: t
-				}), c.a.createElement(j, {
+				}), c.a.createElement(O, {
 					categoryName: a,
 					categoryDisplayText: s,
 					isSecondaryButton: e.isSecondaryButton,
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.38cb836c905bb57b68ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.9c371e2042d990c4a95b.js.map

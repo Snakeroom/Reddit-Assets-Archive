@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditEditModal.df3dd1ffd1cbe89c4d7c.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditEditModal.88d383233e8721630236.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditEditModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, i) {
@@ -380,7 +380,7 @@
 							method: a.hb.PUT
 						}))(d(), g, b);
 					if (O.ok) {
-						const n = Object(P.J)(l, {
+						const n = Object(P.K)(l, {
 								identifier: t
 							}) || e && e.id || "",
 							d = i.map(e => Object(S.h)(m, e));
@@ -529,7 +529,7 @@
 					if (!l || !l.subredditIds) return;
 					r(fe());
 					const c = i && i.reduce((e, t) => {
-							const i = Object(P.D)(d, t) || Object(P.E)(d, t);
+							const i = Object(P.E)(d, t) || Object(P.F)(d, t);
 							return i ? [...e, i] : e
 						}, []),
 						u = await ((e, t) => Object(g.a)(e, {
@@ -1572,4 +1572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.df3dd1ffd1cbe89c4d7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditEditModal.88d383233e8721630236.js.map

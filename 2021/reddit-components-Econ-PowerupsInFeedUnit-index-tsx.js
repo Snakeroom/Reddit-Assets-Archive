@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.b2564979e23faa2fe557.js
-// Retrieved at 8/4/2021, 11:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.9e33e05bc5b4bbafb732.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -42,7 +42,7 @@
 				const r = Object(n.e)(e => Object(l.i)(e, {
 						subredditId: t
 					})),
-					p = Object(n.e)(e => Object(u.S)(e, {
+					p = Object(n.e)(e => Object(u.T)(e, {
 						subredditId: t
 					})),
 					_ = Object(n.e)(e => Object(l.k)(e, {
@@ -178,7 +178,7 @@
 				const s = Object(n.d)(),
 					w = Object(b.a)(),
 					f = Object(n.e)(h.v),
-					j = Object(n.e)(t => Object(E.S)(t, {
+					j = Object(n.e)(t => Object(E.T)(t, {
 						subredditId: e
 					})),
 					k = Object(n.e)(t => Object(h.t)(t, {
@@ -231,4 +231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.b2564979e23faa2fe557.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.9e33e05bc5b4bbafb732.js.map

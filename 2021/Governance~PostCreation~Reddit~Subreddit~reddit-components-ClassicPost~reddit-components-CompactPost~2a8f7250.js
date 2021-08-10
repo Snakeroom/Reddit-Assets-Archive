@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.64c8ea17882285a86c9b.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.50267674a655f41ed7d0.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, r) {
@@ -216,7 +216,7 @@
 					apiContext: f
 				}) => {
 					let h = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(v.D)(d(), e.name),
+						id: Object(v.E)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -306,7 +306,7 @@
 					apiContext: n
 				}) => {
 					const o = r(),
-						i = Object(v.K)(o, {
+						i = Object(v.L)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -328,7 +328,7 @@
 							type: e.type,
 							name: i.name
 						},
-						j = () => Object(v.eb)(r(), {
+						j = () => Object(v.fb)(r(), {
 							identifier: O
 						});
 					(j() || (await t(D([O], !0)), j())) && ((await ((e, t, r) => Object(m.a)(Object(p.a)(e, [b.a]), {
@@ -553,7 +553,7 @@
 			})), r.d(t, "a", (function() {
 				return W
 			})), r.d(t, "b", (function() {
-				return V
+				return $
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/lodash/pick.js"),
@@ -764,7 +764,7 @@
 							return Object(i.j)(.1, Object(T.a)(o()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				q = p.a.wrapped(e => {
+				J = p.a.wrapped(e => {
 					const t = K(e),
 						r = c.a.createElement("span", {
 							className: e.className,
@@ -779,7 +779,7 @@
 					})
 				}, "MetaFlair", E.a);
 
-			function V(e) {
+			function $(e) {
 				const {
 					className: t,
 					disabled: r = !1,
@@ -843,7 +843,7 @@
 						});
 					case v.f.Nsfw:
 					case v.f.Spoiler:
-						return c.a.createElement(q, {
+						return c.a.createElement(J, {
 							className: t,
 							text: s.text,
 							type: s.type
@@ -977,7 +977,7 @@
 					}) => Object(x.x)(e, t),
 					subredditName: (e, {
 						post: t
-					}) => Object(g.S)(e, {
+					}) => Object(g.T)(e, {
 						subredditId: t.belongsTo.id
 					}).name
 				})),
@@ -1653,6 +1653,56 @@
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
+		},
+		"./src/reddit/helpers/richTextJson/index.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "b", (function() {
+				return i
+			})), r.d(t, "f", (function() {
+				return a
+			})), r.d(t, "a", (function() {
+				return c
+			})), r.d(t, "e", (function() {
+				return d
+			})), r.d(t, "c", (function() {
+				return u
+			})), r.d(t, "d", (function() {
+				return m
+			}));
+			r("./node_modules/core-js/modules/web.dom.iterable.js");
+			var n = r("./src/reddit/models/RichTextJson/index.ts");
+			const s = "giphy|",
+				o = "|downsized";
+
+			function i(e, t) {
+				return s + e + (t ? o : "")
+			}
+
+			function a(e) {
+				return e && 0 === e.indexOf(s)
+			}
+
+			function c(e) {
+				const t = e && e.media && e.media.mediaMetadata;
+				return !!t && Object.keys(t).some(a)
+			}
+
+			function d(e) {
+				let t = e.substring(s.length);
+				return t.indexOf("|") && (t = t.split("|")[0]), `https://giphy.com/gifs/${t}`
+			}
+
+			function l(e, t) {
+				return (Array.isArray(e) ? e : e.c && Array.isArray(e.c) ? e.c : []).reduce((e, r) => [...e, ...l(r, t)], !Array.isArray(e) && t(e) ? [e] : [])
+			}
+
+			function u(e) {
+				return l(e, n.F).map(e => e.id)
+			}
+
+			function m(e) {
+				return l(e, e => e.e === n.o).map(e => e.u)
+			}
 		},
 		"./src/reddit/helpers/trackers/postFlair.ts": function(e, t, r) {
 			"use strict";
@@ -2354,17 +2404,17 @@
 			})), r.d(t, "e", (function() {
 				return K
 			})), r.d(t, "v", (function() {
-				return q
-			})), r.d(t, "K", (function() {
-				return V
-			})), r.d(t, "f", (function() {
-				return $
-			})), r.d(t, "i", (function() {
 				return J
+			})), r.d(t, "K", (function() {
+				return $
+			})), r.d(t, "f", (function() {
+				return q
+			})), r.d(t, "i", (function() {
+				return V
 			})), r.d(t, "G", (function() {
-				return G
-			})), r.d(t, "C", (function() {
 				return z
+			})), r.d(t, "C", (function() {
+				return G
 			})), r.d(t, "I", (function() {
 				return X
 			})), r.d(t, "p", (function() {
@@ -2555,31 +2605,31 @@
 					const n = e.authorFlair.models[r.subredditId];
 					return n ? n[r.author] : null
 				},
-				q = (e, {
+				J = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				V = (e, {
+				$ = (e, {
 					draftKey: t
 				}) => {
 					const r = e.features.comments.submit.error[t];
 					return r && r.fields ? r.fields.map(e => e.msg) : []
 				},
-				$ = (e, {
+				q = (e, {
 					draftKey: t
 				}) => {
 					const r = e.features.comments.drafts[t];
 					return !!r && r.autofocusDisabled
 				},
-				J = (e, {
+				V = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				G = (e, {
+				z = (e, {
 					commentId: t
 				}) => {
 					const r = t ? e.features.comments.submit.error[t] : void 0;
 					return r && r.fields ? r.fields.map(e => e.msg) : void 0
 				},
-				z = (e, {
+				G = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
 				X = (e, {
@@ -2588,7 +2638,7 @@
 				Z = e => e.features.comments.visitHighlightFilter,
 				Q = (e, t) => {
 					const r = Object(p.a)(e, t);
-					if (r) return Object(u.X)(e, r)
+					if (r) return Object(u.Y)(e, r)
 				},
 				Y = (e, {
 					commentId: t
@@ -2663,4 +2713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.64c8ea17882285a86c9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250.50267674a655f41ed7d0.js.map

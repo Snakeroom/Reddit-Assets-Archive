@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.634a190480788e31ca84.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3dc11cc25e160ed8044f.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -873,7 +873,7 @@
 						thingId: r,
 						correlationId: t
 					})), n(Object(l.h)(i.a.GOLD_GILD_MODAL));
-					const f = Object(p.I)(a, {
+					const f = Object(p.J)(a, {
 						thingId: r
 					});
 					let b = null;
@@ -1539,7 +1539,7 @@
 					}));
 					return null
 				};
-			class $ extends o.a.Component {
+			class J extends o.a.Component {
 				getDynamicStyleTags() {
 					return o.a.createElement("style", {
 						dangerouslySetInnerHTML: {
@@ -1599,7 +1599,7 @@
 					})),
 					a = Object(V.a)(),
 					c = Object(u.b)();
-				return o.a.createElement($, W({
+				return o.a.createElement(J, W({
 					pageLayer: t,
 					isCommentPermalink: r
 				}, n, s, e, {
@@ -1827,7 +1827,7 @@
 					}, l))
 				}
 			}
-			const $ = Object(i.b)(null, (e, t) => ({
+			const J = Object(i.b)(null, (e, t) => ({
 				fireAdPixelsOfType: (t, r) => {
 					e(Object(b.z)(t, r))
 				},
@@ -1840,7 +1840,7 @@
 					e(Object(f.c)(Object(v.a)(r, !!s, n)))
 				}
 			}));
-			t.default = $(Object(g.b)(Object(l.a)(Z)))
+			t.default = J(Object(g.b)(Object(l.a)(Z)))
 		},
 		"./src/reddit/helpers/economics/sortBadges.ts": function(e, t, r) {
 			"use strict";
@@ -3538,4 +3538,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.634a190480788e31ca84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3dc11cc25e160ed8044f.js.map

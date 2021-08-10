@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.a219820364078e52f756.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1bd7302b462d22ba2f87.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -508,7 +508,7 @@
 							method: o.hb.PUT
 						}))(d(), O, b);
 					if (y.ok) {
-						const n = Object(k.J)(c, {
+						const n = Object(k.K)(c, {
 								identifier: t
 							}) || e && e.id || "",
 							d = s.map(e => Object(v.h)(m, e));
@@ -657,7 +657,7 @@
 					if (!c || !c.subredditIds) return;
 					r(he());
 					const l = s && s.reduce((e, t) => {
-							const s = Object(k.D)(d, t) || Object(k.E)(d, t);
+							const s = Object(k.E)(d, t) || Object(k.F)(d, t);
 							return s ? [...e, s] : e
 						}, []),
 						u = await ((e, t) => Object(O.a)(e, {
@@ -949,7 +949,7 @@
 			const h = b.a.wrapped(l.b, "SubredditIcon", p.a),
 				f = b.a.span("Label", p.a),
 				x = Object(c.c)({
-					subredditOrProfile: u.K
+					subredditOrProfile: u.L
 				});
 			var E = Object(a.b)(x)(({
 				children: e,
@@ -2555,4 +2555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.a219820364078e52f756.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.1bd7302b462d22ba2f87.js.map

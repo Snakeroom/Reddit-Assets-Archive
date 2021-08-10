@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.36b6129d6aa7eea36b37.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.a2c1ba40660b38f1aa17.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -589,21 +589,6 @@
 					return s[n] = t, s
 				}
 		},
-		"./src/reddit/actions/urlRequested.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var s = n("./src/lib/matchRoute/index.ts"),
-				r = n("./src/lib/opener/index.ts"),
-				o = n("./node_modules/react-router-redux/es/index.js");
-			const i = (e, t = !0) => async (n, i, {
-				routes: a
-			}) => {
-				const d = i();
-				Object(s.a)(e, a, d) ? n(Object(o.b)(e)) : t ? Object(r.d)(e, "_blank") : window.location.assign(e)
-			}
-		},
 		"./src/reddit/components/Governance/ModalClose/index.m.less": function(e, t, n) {
 			e.exports = {
 				closeIcon: "zKTP6l--BljeY4s019li6"
@@ -856,11 +841,11 @@
 					releaseNotes: m.f,
 					subreddit: u.q
 				}),
-				A = Object(i.b)(H, e => ({
+				U = Object(i.b)(H, e => ({
 					onClose: () => e(Object(d.f)())
 				})),
-				F = Object(u.t)();
-			t.default = Object(a.a)(F(A(D)))
+				V = Object(u.t)();
+			t.default = Object(a.a)(V(U(D)))
 		},
 		"./src/reddit/components/Governance/VaultActionLink/async.ts": function(e, t, n) {
 			"use strict";
@@ -2080,11 +2065,11 @@
 			})), n.d(t, "h", (function() {
 				return H
 			})), n.d(t, "g", (function() {
-				return A
-			})), n.d(t, "i", (function() {
-				return F
-			})), n.d(t, "e", (function() {
 				return U
+			})), n.d(t, "i", (function() {
+				return V
+			})), n.d(t, "e", (function() {
+				return A
 			}));
 			var s = n("./src/lib/unicodeUtils/index.ts"),
 				r = n("./node_modules/lodash/reduce.js"),
@@ -2189,7 +2174,7 @@
 						i = s.length;
 					for (let a = 0; a < i; a++) {
 						const e = s[a];
-						o.push(e.e === h.w ? e.t : U(e, t, a))
+						o.push(e.e === h.w ? e.t : A(e, t, a))
 					}
 					const c = d.x[r - 1];
 					return a.a.createElement(c, {
@@ -2243,7 +2228,7 @@
 						case h.p:
 							return B(e, t, n, s);
 						case h.u:
-							return A(e, t, n, s);
+							return U(e, t, n, s);
 						case h.z:
 							return H(e, t, n, s)
 					}
@@ -2267,7 +2252,7 @@
 							} = e;
 						l.push(a.a.createElement(s, {
 							key: d
-						}, F(i, t, n))), m[d] = r
+						}, V(i, t, n))), m[d] = r
 					}
 					for (let h = 0; h < i; h++) {
 						const e = r[h],
@@ -2280,7 +2265,7 @@
 								} = e[r];
 							o.push(a.a.createElement(s, {
 								key: r
-							}, F(i, t, n)))
+							}, V(i, t, n)))
 						}
 						u.push(a.a.createElement(d.t, {
 							key: h
@@ -2290,24 +2275,24 @@
 						key: s
 					}, a.a.createElement("thead", null, a.a.createElement(d.t, null, l)), a.a.createElement("tbody", null, u))
 				},
-				A = (e, t, n, s) => {
+				U = (e, t, n, s) => {
 					if (!e.c || !e.c.length) return (e => a.a.createElement(d.j, {
 						key: e
 					}, a.a.createElement("br", null)))(s);
 					const r = e.c[0];
 					return r.e !== h.m && r.e !== h.a || !Object(S.f)(r.id) ? a.a.createElement(d.j, {
 						key: s
-					}, F(e.c, t, n)) : Object(j.b)(r, s, t)
+					}, V(e.c, t, n)) : Object(j.b)(r, s, t)
 				},
-				F = (e, t, n) => {
+				V = (e, t, n) => {
 					const s = [],
 						r = e.length;
 					for (let o = 0; o < r; o++) {
 						const r = e[o];
-						if (r.e === h.A) s.push(V(r, o));
+						if (r.e === h.A) s.push(F(r, o));
 						else if (r.e === h.x) s.push(a.a.createElement(O.a, {
 							key: o
-						}, F(r.c, t, n)));
+						}, V(r.c, t, n)));
 						else if (r.e === h.n) s.push(a.a.createElement("br", {
 							key: o
 						}));
@@ -2320,14 +2305,14 @@
 									media: e
 								}))
 							}
-						} else s.push(U(r, n, o))
+						} else s.push(A(r, n, o))
 					}
 					return s
 				},
-				U = (e, t, n) => {
+				A = (e, t, n) => {
 					switch (e.e) {
 						case h.o:
-							const s = V({
+							const s = F({
 								t: e.t,
 								f: e.f
 							}, 0);
@@ -2367,7 +2352,7 @@
 							}, e.t)
 					}
 				},
-				V = (e, t) => {
+				F = (e, t) => {
 					const {
 						f: n,
 						t: r
@@ -2569,56 +2554,6 @@
 				})
 			}
 		},
-		"./src/reddit/helpers/richTextJson/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return i
-			})), n.d(t, "f", (function() {
-				return a
-			})), n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "e", (function() {
-				return c
-			})), n.d(t, "c", (function() {
-				return u
-			})), n.d(t, "d", (function() {
-				return m
-			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = n("./src/reddit/models/RichTextJson/index.ts");
-			const r = "giphy|",
-				o = "|downsized";
-
-			function i(e, t) {
-				return r + e + (t ? o : "")
-			}
-
-			function a(e) {
-				return e && 0 === e.indexOf(r)
-			}
-
-			function d(e) {
-				const t = e && e.media && e.media.mediaMetadata;
-				return !!t && Object.keys(t).some(a)
-			}
-
-			function c(e) {
-				let t = e.substring(r.length);
-				return t.indexOf("|") && (t = t.split("|")[0]), `https://giphy.com/gifs/${t}`
-			}
-
-			function l(e, t) {
-				return (Array.isArray(e) ? e : e.c && Array.isArray(e.c) ? e.c : []).reduce((e, n) => [...e, ...l(n, t)], !Array.isArray(e) && t(e) ? [e] : [])
-			}
-
-			function u(e) {
-				return l(e, s.F).map(e => e.id)
-			}
-
-			function m(e) {
-				return l(e, e => e.e === s.o).map(e => e.u)
-			}
-		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, n) {
 			e.exports = {
 				loadingBackground: "fzTkuBRFT8iIn1XnJX_Yn",
@@ -2775,7 +2710,7 @@
 							subredditName: s,
 							[r]: n.id
 						},
-						c = Object(l.y)(e, {
+						c = Object(l.z)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -2988,7 +2923,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.W)(e, {
+					const n = Object(i.X)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -2996,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.36b6129d6aa7eea36b37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.a2c1ba40660b38f1aa17.js.map

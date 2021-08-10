@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.388e9935bf139086471c.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2d12c6cf241f5babb637.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -203,7 +203,7 @@
 					apiContext: f
 				}) => {
 					let h = e.map(e => e.type === l.a.SUBREDDIT ? {
-						id: Object(C.D)(a(), e.name),
+						id: Object(C.E)(a(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -293,7 +293,7 @@
 					apiContext: n
 				}) => {
 					const r = s(),
-						o = Object(C.K)(r, {
+						o = Object(C.L)(r, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -315,7 +315,7 @@
 							type: e.type,
 							name: o.name
 						},
-						E = () => Object(C.eb)(s(), {
+						E = () => Object(C.fb)(s(), {
 							identifier: I
 						});
 					(E() || (await t(M([I], !0)), E())) && ((await ((e, t, s) => Object(b.a)(Object(m.a)(e, [p.a]), {
@@ -608,8 +608,8 @@
 			const {
 				fbt: j
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(d.c)({
-				subreddit: S.S,
-				subredditAboutInfo: S.v
+				subreddit: S.T,
+				subredditAboutInfo: S.w
 			}), x = Object(r.b)(y);
 			class C extends i.a.Component {
 				constructor() {
@@ -777,11 +777,11 @@
 						r = Object(j.c)(i, {
 							subredditName: e
 						}),
-						o = !!Object(E.y)(i, {
+						o = !!Object(E.z)(i, {
 							subredditName: e
-						}) && !!Object(E.v)(i, {
+						}) && !!Object(E.w)(i, {
 							subredditName: e
-						}) || !!Object(E.bb)(i, {
+						}) || !!Object(E.cb)(i, {
 							subredditName: e
 						}),
 						d = Object(j.d)(i, {
@@ -856,7 +856,7 @@
 				return {
 					crosspost: s,
 					post: t,
-					subredditOrProfile: Object(E.K)(e, {
+					subredditOrProfile: Object(E.L)(e, {
 						identifier: t.belongsTo
 					})
 				}
@@ -975,7 +975,7 @@
 				isPending: j.c,
 				postIds: j.f,
 				subreddit: E.a,
-				subredditAboutInfo: E.v
+				subredditAboutInfo: E.w
 			}), de = Object(d.b)(oe, (e, {
 				subredditName: t,
 				isHoverable: s
@@ -1567,7 +1567,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				userIsSubscriber: o.eb
+				userIsSubscriber: o.fb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2196,7 +2196,7 @@
 				b = (e, t) => e.widgets.idCardIds[t.subredditId],
 				m = (e, t) => {
 					let s = t.subredditId;
-					if (!s && t.subredditName && (s = Object(c.D)(e, t.subredditName)), s) {
+					if (!s && t.subredditName && (s = Object(c.E)(e, t.subredditName)), s) {
 						const t = b(e, {
 							subredditId: s
 						});
@@ -2241,10 +2241,10 @@
 							}
 						} : {}
 					}
-					const s = Object(c.y)(e, {
+					const s = Object(c.z)(e, {
 							subredditName: t.name
 						}),
-						n = Object(c.v)(e, {
+						n = Object(c.w)(e, {
 							subredditName: t.name
 						});
 					return {
@@ -2267,4 +2267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.388e9935bf139086471c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.2d12c6cf241f5babb637.js.map

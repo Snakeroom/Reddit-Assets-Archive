@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserFlair.18f1ddbc26f13faf3c7b.js
-// Retrieved at 7/7/2021, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserFlair.db0a987271bc79f29df7.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserFlair"], {
 		"./src/reddit/actions/authorFlair.ts": function(e, t, r) {
@@ -34,9 +34,9 @@
 			})), r.d(t, "p", (function() {
 				return l
 			})), r.d(t, "q", (function() {
-				return S
-			})), r.d(t, "o", (function() {
 				return E
+			})), r.d(t, "o", (function() {
+				return S
 			})), r.d(t, "f", (function() {
 				return _
 			})), r.d(t, "g", (function() {
@@ -61,8 +61,8 @@
 				a = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_SUCCESS",
 				o = "STRUCTURED_STYLES__USERFLAIR_ALLOW_ASSIGN_OWN_SETTING_FAILED",
 				l = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_PENDING",
-				S = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_SUCCESS",
-				E = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_FAILED",
+				E = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_SUCCESS",
+				S = "STRUCTURED_STYLES__USERFLAIR_SAVETEMPLATE_FAILED",
 				_ = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_PENDING",
 				b = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_SUCCESS",
 				T = "STRUCTURED_STYLES__USERFLAIR_DELETETEMPLATE_FAILED",
@@ -133,8 +133,8 @@
 				a = r("./src/reddit/endpoints/flair/index.ts"),
 				o = r("./src/reddit/helpers/flair.ts"),
 				l = r("./src/reddit/models/Flair/index.ts"),
-				S = r("./src/reddit/models/Toast/index.ts"),
-				E = r("./src/reddit/models/User/index.ts"),
+				E = r("./src/reddit/models/Toast/index.ts"),
+				S = r("./src/reddit/models/User/index.ts"),
 				_ = r("./src/reddit/selectors/subreddit.ts"),
 				b = r("./src/reddit/selectors/userFlair.ts"),
 				T = r("./src/lib/initializeClient/installReducer.ts"),
@@ -168,7 +168,7 @@
 				}) => {
 					const u = d(),
 						l = u.user.account,
-						S = l ? Object(E.e)(l) : void 0,
+						E = l ? Object(S.e)(l) : void 0,
 						T = {
 							...Object(b.c)(u, {
 								subredditId: s
@@ -181,8 +181,8 @@
 							applied: e,
 							displaySettings: T
 						};
-					i(n === S ? h(R) : y(R));
-					const f = Object(_.S)(u, {
+					i(n === E ? h(R) : y(R));
+					const f = Object(_.T)(u, {
 							subredditId: s
 						}),
 						O = t && e ? Object(o.g)(e) : void 0;
@@ -191,7 +191,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						d = Object(_.S)(i, {
+						d = Object(_.T)(i, {
 							subredditId: e
 						}).name;
 					r(O());
@@ -207,7 +207,7 @@
 					apiContext: s
 				}) => {
 					const i = n(),
-						d = Object(_.S)(i, {
+						d = Object(_.T)(i, {
 							subredditId: e
 						}).name;
 					r(U());
@@ -223,13 +223,13 @@
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.S)(d, {
+						c = Object(_.T)(d, {
 							subredditId: t
 						}).name;
 					r(j());
 					const o = await Object(a.f)(i(), e, c, l.d.UserFlair),
-						E = o.ok && !(o.body && !1 === o.body.success);
-					if (E) {
+						S = o.ok && !(o.body && !1 === o.body.success);
+					if (S) {
 						const e = {
 							subredditId: t,
 							template: o.body
@@ -237,23 +237,23 @@
 						r(D(e));
 						const s = Object(u.e)(n.fbt._("Flair saved!", null, {
 							hk: "354KI0"
-						}), S.b.SuccessMod);
+						}), E.b.SuccessMod);
 						r(Object(u.f)(s))
 					} else {
 						r(m());
 						const s = Object(u.e)(n.fbt._("Sorry, flair wasn't saved.", null, {
 							hk: "4tkRNl"
-						}), S.b.Error, n.fbt._("Retry", null, {
+						}), E.b.Error, n.fbt._("Retry", null, {
 							hk: "4zNHTm"
 						}), x(e, t));
 						r(Object(u.f)(s))
 					}
-					return E
+					return S
 				}, G = (e, t) => async (r, s, {
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.S)(d, {
+						c = Object(_.T)(d, {
 							subredditId: t
 						}).name;
 					if (r(C()), (await Object(a.b)(i(), e, c)).ok) {
@@ -263,13 +263,13 @@
 						}));
 						const s = Object(u.e)(n.fbt._("Flair deleted!", null, {
 							hk: "1mNdn0"
-						}), S.b.SuccessMod);
+						}), E.b.SuccessMod);
 						r(Object(u.f)(s))
 					} else {
 						r(N());
 						const s = Object(u.e)(n.fbt._("Sorry, flair wasn't deleted.", null, {
 							hk: "2QrdJr"
-						}), S.b.Error, n.fbt._("Retry", null, {
+						}), E.b.Error, n.fbt._("Retry", null, {
 							hk: "1buF3Y"
 						}), G(e, t));
 						r(Object(u.f)(s))
@@ -278,7 +278,7 @@
 					apiContext: i
 				}) => {
 					const d = s(),
-						c = Object(_.S)(d, {
+						c = Object(_.T)(d, {
 							subredditId: t
 						}).name,
 						o = Object(b.c)(d, {
@@ -291,7 +291,7 @@
 						r(k());
 						const e = Object(u.e)(n.fbt._("Flair reorder saved.", null, {
 							hk: "1zrDON"
-						}), S.b.SuccessMod);
+						}), E.b.SuccessMod);
 						r(Object(u.f)(e))
 					} else {
 						r(w({
@@ -300,7 +300,7 @@
 						}));
 						const s = Object(u.e)(n.fbt._("Sorry. Flair reorder wasn't saved.", null, {
 							hk: "3gAbwk"
-						}), S.b.Error, n.fbt._("Retry", null, {
+						}), E.b.Error, n.fbt._("Retry", null, {
 							hk: "2nPnNw"
 						}), H(e, t));
 						r(Object(u.f)(s))
@@ -310,9 +310,9 @@
 				}) => {
 					var o;
 					const l = s(),
-						E = null === (o = l.features) || void 0 === o ? void 0 : o.userFlair;
-					if (E && E[e] && E[e].displaySettings.isEnabled && d()(E[e].templateIds)) {
-						const s = Object(_.S)(l, {
+						S = null === (o = l.features) || void 0 === o ? void 0 : o.userFlair;
+					if (S && S[e] && S[e].displaySettings.isEnabled && d()(S[e].templateIds)) {
+						const s = Object(_.T)(l, {
 								subredditId: e
 							}).name,
 							d = await Object(a.d)(i(), s);
@@ -323,7 +323,7 @@
 						else {
 							const e = Object(u.e)(n.fbt._("Something went wrong. Just don't panic.", null, {
 								hk: "4Ck6Cm"
-							}), S.b.Error);
+							}), E.b.Error);
 							r(Object(u.f)(e))
 						}
 					} else r(Object(c.b)({
@@ -334,4 +334,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.18f1ddbc26f13faf3c7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserFlair.db0a987271bc79f29df7.js.map

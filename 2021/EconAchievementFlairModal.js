@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.6e2e217901e51c22141a.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.4ba9f5a558feee3ff8e9.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconAchievementFlairModal"], {
 		"./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/AchievementFlairs.m.less": function(e, t, a) {
@@ -181,7 +181,7 @@
 				y = a("./src/reddit/components/Econ/AchievementFlair/UserFlairPreview.tsx"),
 				H = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/Header.m.less"),
 				U = a.n(H);
-			const S = ({
+			const T = ({
 				className: e,
 				subredditId: t,
 				userId: a,
@@ -203,7 +203,7 @@
 				"data-testid": "close-icon"
 			}));
 			var C = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/index.m.less"),
-				T = a.n(C),
+				S = a.n(C),
 				D = a("./src/reddit/actions/authorFlair.ts"),
 				B = a("./src/reddit/components/Flair/index.tsx"),
 				J = a("./src/reddit/components/Econ/AchievementFlair/AchievementFlairModal/UserFlair.m.less"),
@@ -258,8 +258,8 @@
 					}) : null),
 					v = !!s && !!i;
 				return t && a ? c.a.createElement("div", {
-					className: T.a.container
-				}, c.a.createElement(S, {
+					className: S.a.container
+				}, c.a.createElement(T, {
 					subredditId: a.id,
 					userId: t.id,
 					username: Object(d.e)(t),
@@ -331,7 +331,7 @@
 						subredditId: t,
 						userId: a
 					})),
-					E = Object(n.e)(e => Object(v.S)(e, {
+					E = Object(n.e)(e => Object(v.T)(e, {
 						subredditId: t
 					})),
 					_ = Object(n.d)(),
@@ -555,4 +555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.6e2e217901e51c22141a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconAchievementFlairModal.4ba9f5a558feee3ff8e9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.3e3b29ba8ea00a0e9b43.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.ba05ce955324f1262056.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -328,7 +328,7 @@
 			})), n.d(t, "h", (function() {
 				return z
 			})), n.d(t, "f", (function() {
-				return X
+				return q
 			})), n.d(t, "d", (function() {
 				return se
 			}));
@@ -591,7 +591,7 @@
 						}))
 					}
 					return a
-				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), q = Object(i.a)(a.k), X = e => async (t, n) => {
+				}, Y = Object(i.a)(a.l), K = Object(i.a)(a.m), X = Object(i.a)(a.k), q = e => async (t, n) => {
 					const s = n().platform.currentPage.locationState;
 					t(!(!s || !s[c.a.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(k.b)(e.permalink)))
 				}, Z = Object(i.a)(a.i), Q = Object(i.a)(a.j), $ = Object(i.a)(a.h), ee = Object(i.a)(a.p), te = Object(i.a)(a.o), ne = Object(i.a)(a.q), se = e => async t => {
@@ -642,7 +642,7 @@
 						})), a = !0;
 						else {
 							const e = i.error;
-							n(q(e)), n(Object(d.f)({
+							n(X(e)), n(Object(d.f)({
 								kind: j.b.Error,
 								text: s.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -683,21 +683,6 @@
 						})
 					}), l
 				}
-		},
-		"./src/reddit/actions/urlRequested.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			}));
-			var s = n("./src/lib/matchRoute/index.ts"),
-				o = n("./src/lib/opener/index.ts"),
-				r = n("./node_modules/react-router-redux/es/index.js");
-			const i = (e, t = !0) => async (n, i, {
-				routes: a
-			}) => {
-				const d = i();
-				Object(s.a)(e, a, d) ? n(Object(r.b)(e)) : t ? Object(o.d)(e, "_blank") : window.location.assign(e)
-			}
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1625,7 +1610,7 @@
 					const n = Object(b.q)(e, {
 						pageLayer: t
 					});
-					return n && Object(E.R)(e, {
+					return n && Object(E.S)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => S.has(e.kind))),
@@ -3734,56 +3719,6 @@
 				})
 			}
 		},
-		"./src/reddit/helpers/richTextJson/index.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return i
-			})), n.d(t, "f", (function() {
-				return a
-			})), n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "e", (function() {
-				return c
-			})), n.d(t, "c", (function() {
-				return u
-			})), n.d(t, "d", (function() {
-				return m
-			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = n("./src/reddit/models/RichTextJson/index.ts");
-			const o = "giphy|",
-				r = "|downsized";
-
-			function i(e, t) {
-				return o + e + (t ? r : "")
-			}
-
-			function a(e) {
-				return e && 0 === e.indexOf(o)
-			}
-
-			function d(e) {
-				const t = e && e.media && e.media.mediaMetadata;
-				return !!t && Object.keys(t).some(a)
-			}
-
-			function c(e) {
-				let t = e.substring(o.length);
-				return t.indexOf("|") && (t = t.split("|")[0]), `https://giphy.com/gifs/${t}`
-			}
-
-			function l(e, t) {
-				return (Array.isArray(e) ? e : e.c && Array.isArray(e.c) ? e.c : []).reduce((e, n) => [...e, ...l(n, t)], !Array.isArray(e) && t(e) ? [e] : [])
-			}
-
-			function u(e) {
-				return l(e, s.F).map(e => e.id)
-			}
-
-			function m(e) {
-				return l(e, e => e.e === s.o).map(e => e.u)
-			}
-		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, n) {
 			e.exports = {
 				loadingBackground: "fzTkuBRFT8iIn1XnJX_Yn",
@@ -4175,7 +4110,7 @@
 							subredditName: s,
 							[o]: n.id
 						},
-						c = Object(l.y)(e, {
+						c = Object(l.z)(e, {
 							subredditName: s
 						});
 					return c ? {
@@ -4783,7 +4718,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.W)(e, {
+					const n = Object(i.X)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -4791,4 +4726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.3e3b29ba8ea00a0e9b43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.ba05ce955324f1262056.js.map

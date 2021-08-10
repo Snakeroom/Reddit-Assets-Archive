@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.3342b85547ff3f73ee80.js
-// Retrieved at 8/10/2021, 9:50:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.851db539619390f9d3a5.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -267,7 +267,7 @@
 					const d = s.externalAccount.api.subreddit.fetched[n],
 						i = s.externalAccount.api.subreddit.pending[n];
 					if (d || i) return;
-					const o = Object(j.v)(s, {
+					const o = Object(j.w)(s, {
 						subredditName: n
 					});
 					if (!(o && o.hasExternalAccount)) return;
@@ -748,7 +748,7 @@
 
 			function L(e, t, r, s) {
 				const n = t(),
-					d = Object(N.S)(n, {
+					d = Object(N.T)(n, {
 						subredditId: r
 					}),
 					i = Object(k.j)(n, {
@@ -785,14 +785,14 @@
 				if (!n || n.type !== F.f.Public) return;
 				const d = n.name,
 					i = Object(J.k)(s),
-					o = Object(N.v)(s, {
+					o = Object(N.w)(s, {
 						subredditName: d
 					});
 				if (!o) return;
 				const {
 					activity7Day: a
 				} = o, u = !!a && a >= 51 && a <= 100, b = !d || Object(l.a)(d), p = i && i.urlParams.subredditName === d, f = Object(W.J)(s), m = Object($.c)(s, {
-					subredditId: Object(N.D)(s, d)
+					subredditId: Object(N.E)(s, d)
 				});
 				if (b || p || Object(q.B)() || !u || !f || m) return;
 				const O = Object(k.d)(t(), {
@@ -941,8 +941,8 @@
 						isLoggedIn: D
 					})
 				}
-				const U = Object(N.R)(o(), {
-						subredditId: Object(N.D)(o(), t)
+				const U = Object(N.S)(o(), {
+						subredditId: Object(N.E)(o(), t)
 					}).length > 0,
 					q = Object(m.i)(() => {
 						var e, r;
@@ -1025,7 +1025,7 @@
 							...z,
 							postIds: z.postIds
 						})), !v) {
-						const e = Object(N.D)(o(), t);
+						const e = Object(N.E)(o(), t);
 						(null == $ ? void 0 : $.subreddit) && i(G.t({
 							rules: Object(be.a)({
 								data: {
@@ -1115,7 +1115,7 @@
 							return "r/all"
 					}
 				}
-				return Object(N.V)(e, {
+				return Object(N.W)(e, {
 					subredditName: t
 				})
 			}, ke = (e, t, r, s) => s ? Object(f.b)(e, void 0, s) : Object(p.a)(e, t, r), Le = (e, t) => async (r, s) => {
@@ -1135,7 +1135,7 @@
 				let A = !!b.listings.postOrder.ids[E];
 				const v = b.listings.postOrder.listingSort[E];
 				v && v.hasChanged && (A = !1);
-				let R = Object(N.D)(b, i);
+				let R = Object(N.E)(b, i);
 				const C = (e, t) => "true" === u && ((e, t) => Object(Ie.b)(fe.c.config)(e, {
 						subredditId: t
 					}) || Object(Ie.b)(fe.c.flair)(e, {
@@ -1193,7 +1193,7 @@
 						};
 					await r(Re(e, i, t, !1))
 				}
-				if (R = R || Object(N.D)(s(), i), !Object(ge.a)(b, R) && !Object(l.a)(i)) {
+				if (R = R || Object(N.E)(s(), i), !Object(ge.a)(b, R) && !Object(l.a)(i)) {
 					const e = Object(m.i)(() => r(Object(g.e)(i)), {
 						name: "getTopCommunityFlair",
 						page: P,
@@ -1431,7 +1431,7 @@
 				}, se = e => async (t, r, {
 					gqlContext: n
 				}) => {
-					const d = Object(G.D)(r(), e);
+					const d = Object(G.E)(r(), e);
 					t(Z());
 					const i = await Object(D.b)(n(), e);
 					if (i.ok) {
@@ -1505,7 +1505,7 @@
 					if (C.ok) {
 						let e;
 						const n = N.postIds.filter(e => !!N.posts[e].isMeta),
-							d = Object(G.D)(r(), c);
+							d = Object(G.E)(r(), c);
 						if (n.length) {
 							const t = await Object(I.a)(s(), d, n);
 							t.ok && (e = t.body)
@@ -1544,13 +1544,13 @@
 					gqlContext: s
 				}) => {
 					const n = r();
-					if (Object(G.v)(n, {
+					if (Object(G.w)(n, {
 							subredditName: e
 						}) || n.subreddits.api.about.error[e.toLowerCase()] || n.subreddits.api.about.pending[e.toLowerCase()]) return;
 					t(me({
 						subredditName: e
 					}));
-					const d = !Object(G.D)(n, e),
+					const d = !Object(G.E)(n, e),
 						i = await Object(y.a)(s(), e, d);
 					if (i.ok) {
 						const r = i.body.data.subreddit,
@@ -1572,7 +1572,7 @@
 				}) => {
 					var i;
 					const o = e.substring(2),
-						c = r === N.e.View ? null === (i = Object(B.e)(n(), o)) || void 0 === i ? void 0 : i.subredditId : Object(G.D)(n(), o),
+						c = r === N.e.View ? null === (i = Object(B.e)(n(), o)) || void 0 === i ? void 0 : i.subredditId : Object(G.E)(n(), o),
 						a = Object(B.j)(n());
 					if (a && c) {
 						const e = ((e, t, r, s) => {
@@ -1822,7 +1822,7 @@
 					apiContext: n,
 					gqlContext: d
 				}) => {
-					if (!t || !Object(E.U)(s(), t)) {
+					if (!t || !Object(E.V)(s(), t)) {
 						const t = await Object(b.c)(n(), e);
 						t && t.ok && r(A(t.body))
 					}
@@ -1848,7 +1848,7 @@
 				}) => {
 					c(B());
 					const S = u(),
-						h = o()(Object(E.U)(S, e), ...Object.keys(t)),
+						h = o()(Object(E.V)(S, e), ...Object.keys(t)),
 						D = o()(Object(T.b)(S, {
 							subredditId: e
 						}), ...Object.keys(r)),
@@ -4883,7 +4883,7 @@
 				b = (e, t) => e.widgets.idCardIds[t.subredditId],
 				p = (e, t) => {
 					let r = t.subredditId;
-					if (!r && t.subredditName && (r = Object(c.D)(e, t.subredditName)), r) {
+					if (!r && t.subredditName && (r = Object(c.E)(e, t.subredditName)), r) {
 						const t = b(e, {
 							subredditId: r
 						});
@@ -4928,10 +4928,10 @@
 							}
 						} : {}
 					}
-					const r = Object(c.y)(e, {
+					const r = Object(c.z)(e, {
 							subredditName: t.name
 						}),
-						s = Object(c.v)(e, {
+						s = Object(c.w)(e, {
 							subredditName: t.name
 						});
 					return {
@@ -5038,4 +5038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.3342b85547ff3f73ee80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.851db539619390f9d3a5.js.map

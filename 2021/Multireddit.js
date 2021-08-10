@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.623142f5b60f8cd948b2.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.63d839d1634d71f41fb3.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1275,7 +1275,7 @@
 					apiContext: b
 				}) => {
 					let f = e.map(e => e.type === u.a.SUBREDDIT ? {
-						id: Object(C.D)(d(), e.name),
+						id: Object(C.E)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -1365,7 +1365,7 @@
 					apiContext: s
 				}) => {
 					const o = n(),
-						i = Object(C.K)(o, {
+						i = Object(C.L)(o, {
 							identifier: e
 						});
 					if (!i) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -1387,7 +1387,7 @@
 							type: e.type,
 							name: i.name
 						},
-						v = () => Object(C.eb)(n(), {
+						v = () => Object(C.fb)(n(), {
 							identifier: y
 						});
 					(v() || (await t(F([y], !0)), v())) && ((await ((e, t, n) => Object(m.a)(Object(p.a)(e, [h.a]), {
@@ -2042,31 +2042,36 @@
 				openCommunityCreation: c,
 				sendEvent: d,
 				userDoesNotHaveEnoughExpToCreateCommunity: l,
-				userIsSuspended: h
-			}) => o.a.createElement(m.q, {
-				className: e,
-				disabled: h || l,
-				onClick: () => n === u.Md.Tabs ? window.open("/subreddits/create", "_blank") : c(d),
-				onMouseEnter: i,
-				onMouseLeave: a,
-				priority: m.b.Secondary,
-				id: v,
-				isFullWidth: !0
-			}, Object(p.a)(r, s.fbt._("Create Community", null, {
-				hk: "28v7Qq"
-			})), l ? o.a.createElement(w, {
-				caretOnTop: !0,
-				tooltipId: v,
-				text: s.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
-					hk: "2R1OXu"
-				})
-			}) : h ? o.a.createElement(w, {
-				caretOnTop: !0,
-				tooltipId: v,
-				text: s.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
-					hk: "2xBDEw"
-				})
-			}) : null)))
+				userIsSuspended: h,
+				onClick: b
+			}) => {
+				return o.a.createElement(m.q, {
+					className: e,
+					disabled: h || l,
+					onClick: e => {
+						b && b(e), n === u.Md.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
+					},
+					onMouseEnter: i,
+					onMouseLeave: a,
+					priority: m.b.Secondary,
+					id: v,
+					isFullWidth: !0
+				}, Object(p.a)(r, s.fbt._("Create Community", null, {
+					hk: "28v7Qq"
+				})), l ? o.a.createElement(w, {
+					caretOnTop: !0,
+					tooltipId: v,
+					text: s.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "2R1OXu"
+					})
+				}) : h ? o.a.createElement(w, {
+					caretOnTop: !0,
+					tooltipId: v,
+					text: s.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "2xBDEw"
+					})
+				}) : null)
+			}))
 		},
 		"./src/reddit/components/Emoji/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -6537,7 +6542,7 @@
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(y.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
-							const n = Object(w.D)(e, t.listingName);
+							const n = Object(w.E)(e, t.listingName);
 							return Object(x.k)(e, {
 								subredditId: n
 							})
@@ -6553,14 +6558,14 @@
 						inSubredditOrProfile: r
 					}) => {
 						if (s) {
-							const t = Object(w.D)(e, n);
+							const t = Object(w.E)(e, n);
 							return Object(x.l)(e, {
 								subredditId: t
 							})
 						}
 						return Object(v.D)(e, t, n, r)
 					}),
-					subredditsById: w.Z,
+					subredditsById: w.ab,
 					viewportDataLoaded: E.a,
 					pageReferrer: p.R,
 					postListPlaceholderComponent: () => f.a,
@@ -6618,7 +6623,7 @@
 				o = n("./src/reddit/actions/subscription/index.ts"),
 				i = n("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(s.b)(() => Object(r.c)({
-				userIsSubscriber: i.eb
+				userIsSubscriber: i.fb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -7146,7 +7151,7 @@
 							subredditName: s,
 							[r]: n.id
 						},
-						d = Object(l.y)(e, {
+						d = Object(l.z)(e, {
 							subredditName: s
 						});
 					return d ? {
@@ -8086,7 +8091,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(i.S)(e, {
+						const t = Object(i.T)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -8099,14 +8104,14 @@
 				m = Object(s.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const s = Object(i.W)(e, {
+					const s = Object(i.X)(e, {
 						subredditName: n.name
 					});
 					return s && s.postIds && s.postIds.length ? s.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(i.S)(e, {
+					return n ? Object(i.T)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -8202,7 +8207,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const n = Object(i.W)(e, {
+					const n = Object(i.X)(e, {
 						subredditName: t
 					});
 					return (n && n.postIds || []).slice(0, 2)
@@ -8216,4 +8221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.623142f5b60f8cd948b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.63d839d1634d71f41fb3.js.map

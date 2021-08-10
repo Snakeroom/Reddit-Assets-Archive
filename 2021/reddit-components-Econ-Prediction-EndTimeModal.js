@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.70499c2c1697898b3b84.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.67ed6bbb6cc262a3982d.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -78,9 +78,9 @@
 			})), n.d(t, "k", (function() {
 				return y
 			})), n.d(t, "i", (function() {
-				return D
-			})), n.d(t, "b", (function() {
 				return S
+			})), n.d(t, "b", (function() {
+				return D
 			})), n.d(t, "n", (function() {
 				return M
 			})), n.d(t, "o", (function() {
@@ -192,11 +192,11 @@
 						pollId: t,
 						prediction: s.poll
 					})), s.poll
-				}, w = Object(u.a)(O.c), T = Object(u.a)(O.d), F = Object(u.a)(O.g), D = e => async (t, n, {
+				}, w = Object(u.a)(O.c), T = Object(u.a)(O.d), F = Object(u.a)(O.g), S = e => async (t, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
-						i = Object(f.D)(r, e),
+						i = Object(f.E)(r, e),
 						s = Object(v.j)(r, {
 							subredditId: i
 						}),
@@ -244,7 +244,7 @@
 						posts: b,
 						meta: r.meta
 					})), u
-				}, S = Object(u.a)(O.a), M = Object(u.a)(O.j), N = Object(u.a)(O.k), L = ({
+				}, D = Object(u.a)(O.a), M = Object(u.a)(O.j), N = Object(u.a)(O.k), L = ({
 					subredditId: e
 				}) => async (t, n, {
 					gqlContext: o
@@ -1267,4 +1267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.70499c2c1697898b3b84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.67ed6bbb6cc262a3982d.js.map

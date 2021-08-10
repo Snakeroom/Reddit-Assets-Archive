@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.3bc7e99c903e477dd676.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.3fc9736ae6b0c58b16f9.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -66,8 +66,8 @@
 				O = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				x = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
 				E = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
-				v = n("./src/reddit/controls/InternalLink/index.tsx"),
-				T = n("./src/reddit/helpers/trackers/predictions.ts"),
+				T = n("./src/reddit/controls/InternalLink/index.tsx"),
+				v = n("./src/reddit/helpers/trackers/predictions.ts"),
 				h = n("./src/reddit/hooks/useTracking.ts"),
 				j = n("./src/reddit/selectors/subreddit.ts"),
 				I = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
@@ -80,13 +80,13 @@
 				isLastPrediction: n
 			}) => {
 				const o = Object(h.a)(),
-					s = Object(u.e)(e => Object(j.S)(e, {
+					s = Object(u.e)(e => Object(j.T)(e, {
 						subredditId: t
 					}));
-				return i.a.createElement(v.a, {
+				return i.a.createElement(T.a, {
 					className: g.a.container,
 					to: `${null==s?void 0:s.url}predictions/`,
-					onClick: () => o(Object(T.f)(e))
+					onClick: () => o(Object(v.f)(e))
 				}, i.a.createElement("div", {
 					className: g.a.playTournament
 				}, n ? _._("View Tournament", null, {
@@ -121,7 +121,7 @@
 					l = Object(u.e)(t => Object(p.g)(t, {
 						postId: e.id
 					})),
-					[v, j] = Object(o.useState)(!1),
+					[T, j] = Object(o.useState)(!1),
 					{
 						isLoading: I,
 						isShowingVoteAnimation: g,
@@ -148,7 +148,7 @@
 								selectedOptionId: E
 							} = t,
 							{
-								id: v,
+								id: T,
 								voteState: j
 							} = n,
 							[I, g] = i.a.useState(!1),
@@ -165,12 +165,12 @@
 								U || E || y(e.id)
 							},
 							predict: async t => {
-								if (t.currency === m.a.Coins && t.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(T.a);
+								if (t.currency === m.a.Coins && t.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(v.a);
 								if (U) return l(N._("Error: Failed to make prediction. This prediction has already ended", null, {
 									hk: "22UWEr"
 								})), void y(null);
 								if (!P || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-								g(!0), c(Object(T.o)({
+								g(!0), c(Object(v.o)({
 									pollId: P,
 									selectedNumberTokens: t.amount
 								}));
@@ -182,7 +182,7 @@
 										pollId: P,
 										tournamentId: e,
 										tournamentPostId: n.id
-									})), r && j < B.a.upvoted && (o(Object(w.db)(v)), o(Object(w.db)(P)), p()), g(!1), y(null), d ? M(!0) : a({
+									})), r && j < B.a.upvoted && (o(Object(w.db)(T)), o(Object(w.db)(P)), p()), g(!1), y(null), d ? M(!0) : a({
 										duration: 5e3,
 										kind: S.b.SuccessCommunity,
 										text: N._("Thanks! See if you're right in {timeToResult}", [N._param("timeToResult", Object(f.a)(new Date(O), !0))], {
@@ -240,13 +240,13 @@
 					tournamentId: t,
 					userSelection: G,
 					userIsLoggedOut: !c,
-					votePercentage: (G || Y || v) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
-					isShowingHint: v
+					votePercentage: (G || Y || T) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					isShowingHint: T
 				}))), !$ && i.a.createElement(x.a, {
-					disabled: g || v || !!G,
+					disabled: g || T || !!G,
 					isEnded: Y,
 					userSelection: G,
-					isShowingHint: v,
+					isShowingHint: T,
 					tournamentId: t,
 					onReveal: () => j(!0)
 				})), !!_ && i.a.createElement(P.b, {
@@ -279,10 +279,10 @@
 					n = Object(u.e)(t => Object(H.T)(t, {
 						postId: e
 					}));
-				return i.a.createElement(v.a, {
+				return i.a.createElement(T.a, {
 					className: G.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
-					onClick: () => t(Object(T.f)(e))
+					onClick: () => t(Object(v.f)(e))
 				}, K._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.3bc7e99c903e477dd676.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.3fc9736ae6b0c58b16f9.js.map

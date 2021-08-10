@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9ec6ad204d4cfadfdcca.js
-// Retrieved at 8/5/2021, 2:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5217fb1530e4fee27067.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -13947,16 +13947,6 @@
 				})
 			}
 		},
-		"./src/lib/convertToCamelCase/index.ts": function(e, t, n) {
-			"use strict";
-			t.a = e => {
-				const t = {};
-				for (const n in e) {
-					t[n.replace(/_\w/g, e => e[1].toUpperCase())] = e[n]
-				}
-				return t
-			}
-		},
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -14368,4 +14358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.9ec6ad204d4cfadfdcca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5217fb1530e4fee27067.js.map

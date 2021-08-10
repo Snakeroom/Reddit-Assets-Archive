@@ -1,28 +1,116 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.28730d9823843084fc0d.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.9c10187692990e69ee78.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
+		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
+			t.exports = {
+				StyledTooltip: "FIYolDqalszTnjjNfThfT",
+				styledTooltip: "FIYolDqalszTnjjNfThfT"
+			}
+		},
+		"./src/reddit/components/CreateCommunityButton/index.tsx": function(t, _, e) {
+			"use strict";
+			var o = e("./node_modules/fbt/lib/FbtPublic.js"),
+				n = e("./node_modules/react/index.js"),
+				s = e.n(n),
+				r = e("./node_modules/react-redux/es/index.js"),
+				i = e("./node_modules/reselect/es/index.js"),
+				d = e("./src/reddit/actions/tooltip.ts"),
+				u = e("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				c = e("./src/reddit/components/TrackingHelper/index.tsx"),
+				a = e("./src/reddit/constants/experiments.ts"),
+				l = e("./src/reddit/controls/Button/index.tsx"),
+				p = e("./src/reddit/helpers/getSrCreationEntrypointCopy.ts"),
+				b = e("./src/reddit/helpers/overlay/index.ts"),
+				m = e("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				y = e("./src/reddit/selectors/experiments/srCreationEntrypoints.ts"),
+				h = e("./src/reddit/selectors/user.ts"),
+				x = e("./src/reddit/components/CreateCommunityButton/index.m.less"),
+				f = e.n(x),
+				g = e("./src/lib/lessComponent.tsx");
+			const j = "create-community-button",
+				v = g.a.wrapped(u.c, "StyledTooltip", f.a),
+				k = Object(i.c)({
+					isInSrCreationEntrypointBehaviorExperiment: y.a,
+					isInSrCreationEntrypointCopyExperiment: y.b,
+					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(h.gb)(t),
+					userIsSuspended: h.O
+				});
+			_.a = Object(r.b)(k, (t, {
+				eventSource: _
+			}) => ({
+				openCommunityCreation: e => {
+					e(Object(m.c)(_)), t(Object(b.a)("/subreddits/create"))
+				},
+				onShowTooltip: () => t(Object(d.f)({
+					tooltipId: j
+				})),
+				onHideTooltip: () => t(Object(d.i)())
+			}))(Object(c.c)(({
+				className: t,
+				eventSource: _,
+				isInSrCreationEntrypointBehaviorExperiment: e,
+				isInSrCreationEntrypointCopyExperiment: n,
+				onShowTooltip: r,
+				onHideTooltip: i,
+				openCommunityCreation: d,
+				sendEvent: u,
+				userDoesNotHaveEnoughExpToCreateCommunity: c,
+				userIsSuspended: b,
+				onClick: m
+			}) => {
+				return s.a.createElement(l.q, {
+					className: t,
+					disabled: b || c,
+					onClick: t => {
+						m && m(t), e === a.Md.Tabs ? window.open("/subreddits/create", "_blank") : d(u)
+					},
+					onMouseEnter: r,
+					onMouseLeave: i,
+					priority: l.b.Secondary,
+					id: j,
+					isFullWidth: !0
+				}, Object(p.a)(n, o.fbt._("Create Community", null, {
+					hk: "28v7Qq"
+				})), c ? s.a.createElement(v, {
+					caretOnTop: !0,
+					tooltipId: j,
+					text: o.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
+						hk: "2R1OXu"
+					})
+				}) : b ? s.a.createElement(v, {
+					caretOnTop: !0,
+					tooltipId: j,
+					text: o.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
+						hk: "2xBDEw"
+					})
+				}) : null)
+			}))
+		},
 		"./src/reddit/components/SubredditForkingCTA/SubredditForkingCTA.tsx": function(t, _, e) {
 			"use strict";
 			e.r(_), e.d(_, "shouldDisplayCTA", (function() {
-				return p
+				return j
 			}));
 			var o = e("./node_modules/fbt/lib/FbtPublic.js"),
-				s = e("./node_modules/react/index.js"),
-				n = e.n(s),
+				n = e("./node_modules/react/index.js"),
+				s = e.n(n),
 				r = e("./node_modules/react-redux/es/index.js"),
-				i = e("./src/reddit/controls/Button/index.tsx"),
-				u = e("./node_modules/reselect/es/index.js"),
-				d = e("./src/reddit/constants/experiments.ts"),
-				l = e("./src/reddit/helpers/chooseVariant/index.ts"),
-				c = e("./src/reddit/selectors/experiments/utils.ts");
-			const b = Object(u.a)(t => Object(l.c)(t, {
-					experimentName: d.Hd,
-					experimentEligibilitySelector: l.a
-				}), c.a),
-				a = Object(u.a)(b, t => t === d.Pd.Enabled);
-			var h = e("./src/reddit/selectors/posts.ts");
-			const y = {
+				i = e("./src/reddit/actions/subredditCreation.ts"),
+				d = e("./src/reddit/selectors/telemetry.ts");
+			var u = e("./node_modules/reselect/es/index.js"),
+				c = e("./src/reddit/constants/experiments.ts"),
+				a = e("./src/reddit/helpers/chooseVariant/index.ts"),
+				l = e("./src/reddit/selectors/experiments/utils.ts");
+			const p = Object(u.a)(t => Object(a.c)(t, {
+					experimentName: c.Hd,
+					experimentEligibilitySelector: a.a
+				}), l.a),
+				b = Object(u.a)(p, t => t === c.Pd.Enabled);
+			var m = e("./src/reddit/selectors/posts.ts"),
+				y = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
+				h = e("./src/reddit/components/TrackingHelper/index.tsx");
+			const x = {
 				t5_2vgfw: !0,
 				t5_2qhrv: !0,
 				t5_2f3oes: !0,
@@ -918,29 +1006,63 @@
 				t5_2znzz: !0,
 				t5_32ul9: !0
 			};
-			var g = e("./src/reddit/components/SubredditForkingCTA/index.m.less"),
-				f = e.n(g);
-			const p = (t, _) => {
-					const e = Object(h.T)(t, {
+			var f = e("./src/reddit/components/SubredditForkingCTA/index.m.less"),
+				g = e.n(f);
+			const j = (t, _) => {
+					const e = Object(m.T)(t, {
 						..._,
 						disallowProfile: !0
 					});
-					return !(!e || (null == y ? void 0 : y[e.id])) && !!a(t)
+					return !(!e || (null == x ? void 0 : x[e.id])) && !!b(t)
 				},
-				x = Object(r.b)(() => Object(u.c)({
-					shouldDisplayCTA: p
+				v = Object(r.b)(() => Object(u.c)({
+					shouldDisplayCTA: j
+				}), (t, {
+					postId: _
+				}) => ({
+					setInitialCrosspostId: () => {
+						t(Object(i.g)({
+							crosspostId: _
+						}))
+					}
 				}));
-			_.default = Object(s.memo)(x(({
-				shouldDisplayCTA: t
-			}) => t ? n.a.createElement("div", {
-				className: f.a.subreditForkingWrapper
-			}, n.a.createElement("h4", null, o.fbt._("Create a community from this post", null, {
-				hk: "2ojrxb"
-			})), n.a.createElement("p", null, o.fbt._("This post is in the Top 1% of all posts on Reddit today. Keep it going.", null, {
-				hk: "Q2bhy"
-			})), n.a.createElement(i.j, null, o.fbt._("Create a new community", null, {
-				hk: "1vaQ4U"
-			}))) : null))
+			_.default = Object(n.memo)(v(Object(h.c)(({
+				shouldDisplayCTA: t,
+				setInitialCrosspostId: _,
+				postId: e,
+				sendEvent: r
+			}) => {
+				Object(n.useEffect)(() => {
+					t && r((t => t => ({
+						source: "post",
+						noun: "forking_module",
+						action: "view",
+						...d.defaults(t),
+						actionInfo: d.actionInfo(t)
+					}))())
+				}, []);
+				return t ? s.a.createElement("div", {
+					className: g.a.subreditForkingWrapper
+				}, s.a.createElement("h4", null, o.fbt._("Create a community from this post", null, {
+					hk: "2ojrxb"
+				})), s.a.createElement("p", null, o.fbt._("This post is in the Top 1% of all posts on Reddit today. Keep it going.", null, {
+					hk: "Q2bhy"
+				})), s.a.createElement(y.a, {
+					className: g.a.ctaButton,
+					onClick: () => {
+						_(), r((t => t => ({
+							source: "post",
+							noun: "forking_module",
+							action: "click",
+							...d.defaults(t),
+							actionInfo: d.actionInfo(t, {
+								settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
+							})
+						}))())
+					},
+					eventSource: "subreddit_forking_cta"
+				})) : null
+			})))
 		},
 		"./src/reddit/components/SubredditForkingCTA/index.m.less": function(t, _, e) {
 			t.exports = {
@@ -980,4 +1102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.28730d9823843084fc0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.9c10187692990e69ee78.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.6ee66c6ce4231a544e4b.js
-// Retrieved at 8/9/2021, 4:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.565a6612857af421fd0e.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -1307,7 +1307,7 @@
 						comment: t
 					}) => !!Object(Ne.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const n = Object(we.H)(e, {
+						const n = Object(we.I)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -1701,7 +1701,7 @@
 						subredditId: t,
 						userId: n
 					})),
-					f = Object(a.e)(e => Object(p.S)(e, {
+					f = Object(a.e)(e => Object(p.T)(e, {
 						subredditId: t
 					})),
 					E = Object(a.d)(),
@@ -3121,4 +3121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.6ee66c6ce4231a544e4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.565a6612857af421fd0e.js.map

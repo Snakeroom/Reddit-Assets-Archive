@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.a45297ec7900198127f7.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.ec093d0a5499b0b076e4.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2865,9 +2865,10 @@
 				we = me.a.wrapped(D.b, "ErrorText", pe.a),
 				_e = Object(l.c)({
 					error: le.g,
-					isCreatePending: le.j,
+					isCreatePending: le.k,
 					isEmailInviteExperimentEnabled: ie.a,
 					isEmployee: ce.G,
+					crosspostId: le.j,
 					isInSrCreationFlowM2Experiment: re,
 					isTopicOptional: ae,
 					isTopicRemoved: oe,
@@ -2880,14 +2881,14 @@
 					selectedPrimaryTagId: v.j
 				}),
 				Se = Object(i.b)(_e, e => ({
-					createCommunity: t => e(Object(p.f)(t)),
-					clearErrors: () => e(Object(p.e)()),
+					createCommunity: t => e(Object(p.h)(t)),
+					clearErrors: () => e(Object(p.f)()),
 					onCloseLocation: t => e(Object(r.b)(t)),
 					onShowTooltip: () => e(Object(m.f)({
 						tooltipId: xe
 					})),
 					onHideTooltip: () => e(Object(m.i)()),
-					validateSubredditName: t => e(Object(p.g)(t))
+					validateSubredditName: t => e(Object(p.i)(t))
 				})),
 				Te = (e, t, n) => [o.a.createElement(fe, {
 					key: "public",
@@ -3006,6 +3007,7 @@
 							restrictPosting: this.state.restrictPosting,
 							allTags: this.props.allTags,
 							newTags: this.props.newTags,
+							crosspostId: this.state.crosspostId,
 							existingTags: this.props.existingTags,
 							primaryTagId: this.props.selectedPrimaryTagId || void 0,
 							isInSrCreationFlowM2Experiment: this.props.isInSrCreationFlowM2Experiment
@@ -3066,6 +3068,7 @@
 						name: "",
 						description: "",
 						type: Q.f.Public,
+						crosspostId: e.crosspostId,
 						over18: !1,
 						waitingForSuccessfulCommunity: !1,
 						restrictCommenting: !1,
@@ -3077,10 +3080,10 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(F.w)()), this.props.clearErrors()
+					e(Object(F.w)())
 				}
 				componentWillUnmount() {
-					clearTimeout(this.timeout)
+					clearTimeout(this.timeout), this.props.clearErrors()
 				}
 				render() {
 					const {
@@ -3275,4 +3278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.a45297ec7900198127f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ec093d0a5499b0b076e4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.446c38de5bf7a7c9fab3.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.010da56ab2c677b5ce4e.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -264,7 +264,7 @@
 					apiContext: b
 				}) => {
 					let x = e.map(e => e.type === m.a.SUBREDDIT ? {
-						id: Object(E.D)(d(), e.name),
+						id: Object(E.E)(d(), e.name),
 						name: e.name,
 						type: e.type
 					} : {
@@ -354,7 +354,7 @@
 					apiContext: n
 				}) => {
 					const a = r(),
-						o = Object(E.K)(a, {
+						o = Object(E.L)(a, {
 							identifier: e
 						});
 					if (!o) throw new Error(`actions.subscription -- No subreddit or profile found with id ${e.id}`);
@@ -376,7 +376,7 @@
 							type: e.type,
 							name: o.name
 						},
-						_ = () => Object(E.eb)(r(), {
+						_ = () => Object(E.fb)(r(), {
 							identifier: I
 						});
 					(_() || (await t(T([I], !0)), _())) && ((await ((e, t, r) => Object(u.a)(Object(p.a)(e, [f.a]), {
@@ -3020,4 +3020,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.446c38de5bf7a7c9fab3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.010da56ab2c677b5ce4e.js.map

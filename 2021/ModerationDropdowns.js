@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3783ad2a542ddb95baa3.js
-// Retrieved at 8/9/2021, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3704c0f4e13211093aa9.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -689,7 +689,7 @@
 					gqlContext: o
 				}) => {
 					const s = n(),
-						r = Object(x.D)(s, e),
+						r = Object(x.E)(s, e),
 						i = Object(j.j)(s, {
 							subredditId: r
 						}),
@@ -1402,7 +1402,7 @@
 			const _ = (e, t = !1, n = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
 				E = Object(c.c)({
 					flairData: j.d,
-					subreddit: v.S,
+					subreddit: v.T,
 					isMod: (e, t) => !!Object(O.l)(e, t)
 				});
 			class I extends i.a.Component {
@@ -3135,4 +3135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.3783ad2a542ddb95baa3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.3704c0f4e13211093aa9.js.map

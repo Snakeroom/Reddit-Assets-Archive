@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.90e35340f38ccf58f701.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.d25f045c00ab2952ac78.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -26,21 +26,6 @@
 					}
 					return n[s] = t, n
 				}
-		},
-		"./src/reddit/actions/urlRequested.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return i
-			}));
-			var n = s("./src/lib/matchRoute/index.ts"),
-				r = s("./src/lib/opener/index.ts"),
-				o = s("./node_modules/react-router-redux/es/index.js");
-			const i = (e, t = !0) => async (s, i, {
-				routes: a
-			}) => {
-				const c = i();
-				Object(n.a)(e, a, c) ? s(Object(o.b)(e)) : t ? Object(r.d)(e, "_blank") : window.location.assign(e)
-			}
 		},
 		"./src/reddit/components/AvatarPost/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -862,8 +847,8 @@
 				const X = {
 						caretOnTop: !1
 					},
-					q = Object(i.e)(T.a),
-					K = V.isSponsored && (q === p.p.NoLockIcon || q === p.p.PromotedGrey),
+					K = Object(i.e)(T.a),
+					q = V.isSponsored && (K === p.p.NoLockIcon || K === p.p.PromotedGrey),
 					Y = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === h.a.SUBREDDIT,
 					z = A("Approve", V.id, G),
 					Z = A("Archived", V.id, G),
@@ -895,7 +880,7 @@
 				}), o.a.createElement(u.c, N({
 					tooltipId: Z,
 					text: B()
-				}, X))), V.isLocked && !K && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
+				}, X))), V.isLocked && !q && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
 					className: Object(c.a)(w.a.icon, w.a.lockIcon),
 					desc: R(),
@@ -2556,7 +2541,7 @@
 				o = s("./src/reddit/actions/subscription/index.ts"),
 				i = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(r.c)({
-				userIsSubscriber: i.eb
+				userIsSubscriber: i.fb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -2749,7 +2734,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						d = Object(l.y)(e, {
+						d = Object(l.z)(e, {
 							subredditName: n
 						});
 					return d ? {
@@ -2976,7 +2961,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(i.W)(e, {
+					const s = Object(i.X)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -2984,4 +2969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.90e35340f38ccf58f701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.d25f045c00ab2952ac78.js.map

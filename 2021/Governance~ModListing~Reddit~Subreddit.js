@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.20b2cd5e070f7f0e2cd2.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.17e224e0025d073f5754.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -914,7 +914,7 @@
 						const e = Object(S.a)("webSocket");
 						return void o(Object(u.f)(n, e))
 					}
-					const O = Object(g.S)(a, {
+					const O = Object(g.T)(a, {
 							subredditId: e
 						}).name,
 						I = await p.e(c(), O, d),
@@ -956,7 +956,7 @@
 					t(W({
 						subredditId: e
 					}));
-					const o = Object(g.S)(r(), {
+					const o = Object(g.T)(r(), {
 							subredditId: e
 						}).name,
 						i = await p.f(n(), o);
@@ -985,7 +985,7 @@
 						gqlContext: n
 					}) => {
 						const o = r(),
-							i = Object(g.S)(o, {
+							i = Object(g.T)(o, {
 								subredditId: e
 							});
 						if (!i) return;
@@ -1036,7 +1036,7 @@
 				}, $ = Object(d.a)(A.f), X = (e, t, r) => async (n, o, i) => {
 					const s = o(),
 						c = r || s.structuredStyles.isEditing,
-						a = Object(g.S)(s, {
+						a = Object(g.T)(s, {
 							subredditId: c
 						}).name;
 					n($({
@@ -1105,7 +1105,7 @@
 					r(ce({
 						subredditId: e
 					}));
-					const s = Object(g.S)(n(), {
+					const s = Object(g.T)(n(), {
 						subredditId: e
 					});
 					if (!s) return;
@@ -1225,7 +1225,7 @@
 					} = p;
 					o(Object(i.h)(r));
 					const O = f(),
-						y = Object(b.S)(O, {
+						y = Object(b.T)(O, {
 							subredditId: e
 						}).name,
 						j = Object(v.k)(t);
@@ -1270,7 +1270,7 @@
 					o(Object(i.h)(r));
 					const I = t.id,
 						y = f(),
-						k = Object(b.S)(y, {
+						k = Object(b.T)(y, {
 							subredditId: e
 						}).name,
 						S = Object(v.k)(t);
@@ -1307,8 +1307,8 @@
 												const t = {
 														subredditName: e
 													},
-													n = Object(b.y)(r, t),
-													o = Object(b.v)(r, t);
+													n = Object(b.z)(r, t),
+													o = Object(b.w)(r, t);
 												return {
 													name: n.name,
 													subscribers: n ? n.subscribers : void 0,
@@ -1355,7 +1355,7 @@
 				}) => {
 					n(Object(i.h)(r));
 					const c = t.id,
-						f = Object(b.S)(o(), {
+						f = Object(b.T)(o(), {
 							subredditId: e
 						}).name,
 						_ = await (async (e, t, r) => Object(l.a)(Object(d.a)(e, [u.a]), {
@@ -1370,7 +1370,7 @@
 				}, E = Object(o.a)(O.f), x = (e, t) => async (r, n, {
 					apiContext: o
 				}) => {
-					const i = Object(b.S)(n(), {
+					const i = Object(b.T)(n(), {
 						subredditId: e
 					}).name;
 					(await (async (e, t, r) => Object(l.a)(Object(d.a)(e, [u.a]), {
@@ -1387,7 +1387,7 @@
 				}) => async (t, r, n) => {
 					const o = r(),
 						i = o.structuredStyles.isEditing,
-						c = Object(b.S)(o, {
+						c = Object(b.T)(o, {
 							subredditId: i
 						}).name;
 					t(Object(s.k)(e));
@@ -1412,7 +1412,7 @@
 					apiContext: o
 				}) => {
 					r(Object(i.h)(t));
-					const s = Object(b.S)(n(), {
+					const s = Object(b.T)(n(), {
 							subredditId: e
 						}).name,
 						c = await f(o(), s);
@@ -1429,7 +1429,7 @@
 					r(N({
 						subredditId: e
 					}));
-					const i = Object(b.S)(n(), {
+					const i = Object(b.T)(n(), {
 							subredditId: e
 						}).name,
 						s = await f(o(), i, t);
@@ -1446,7 +1446,7 @@
 				}, A = (e, t) => async (r, n, {
 					apiContext: o
 				}) => {
-					const i = Object(b.S)(n(), {
+					const i = Object(b.T)(n(), {
 							subredditId: e
 						}).name,
 						s = await f(o(), i, !0);
@@ -3344,7 +3344,7 @@
 							success: t
 						}),
 						profile: I.profileById(e, Object(p.m)(e, n)),
-						subreddit: I.subredditById(e, Object(m.D)(e, r)),
+						subreddit: I.subredditById(e, Object(m.E)(e, r)),
 						userSubreddit: I.userSubreddit(e),
 						adblock: I.adblock(e)
 					})
@@ -3356,7 +3356,7 @@
 						noun: "screen",
 						...k(e),
 						profile: I.profileById(e, Object(p.m)(e, r)),
-						subreddit: I.subredditById(e, Object(m.D)(e, t)),
+						subreddit: I.subredditById(e, Object(m.E)(e, t)),
 						userSubreddit: I.userSubreddit(e),
 						adblock: I.adblock(e)
 					})
@@ -4223,4 +4223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.20b2cd5e070f7f0e2cd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.17e224e0025d073f5754.js.map

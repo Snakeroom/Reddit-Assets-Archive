@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.2cf663632227a09d4cf2.js
-// Retrieved at 8/9/2021, 2:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.5812c3ee1d9e3f427cec.js
+// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -1773,7 +1773,7 @@
 						const e = Object(E.a)("webSocket");
 						return void r(Object(u.f)(n, e))
 					}
-					const w = Object(b.S)(l, {
+					const w = Object(b.T)(l, {
 							subredditId: e
 						}).name,
 						v = await f.e(a(), w, d),
@@ -1815,7 +1815,7 @@
 					t(H({
 						subredditId: e
 					}));
-					const r = Object(b.S)(o(), {
+					const r = Object(b.T)(o(), {
 							subredditId: e
 						}).name,
 						s = await f.f(n(), r);
@@ -1844,7 +1844,7 @@
 						gqlContext: n
 					}) => {
 						const r = o(),
-							s = Object(b.S)(r, {
+							s = Object(b.T)(r, {
 								subredditId: e
 							});
 						if (!s) return;
@@ -1895,7 +1895,7 @@
 				}, Q = Object(d.a)(D.f), J = (e, t, o) => async (n, r, s) => {
 					const i = r(),
 						a = o || i.structuredStyles.isEditing,
-						l = Object(b.S)(i, {
+						l = Object(b.T)(i, {
 							subredditId: a
 						}).name;
 					n(Q({
@@ -1964,7 +1964,7 @@
 					o(ae({
 						subredditId: e
 					}));
-					const i = Object(b.S)(n(), {
+					const i = Object(b.T)(n(), {
 						subredditId: e
 					});
 					if (!i) return;
@@ -2174,7 +2174,7 @@
 					} = f;
 					r(Object(s.h)(o));
 					const w = p(),
-						O = Object(h.S)(w, {
+						O = Object(h.T)(w, {
 							subredditId: e
 						}).name,
 						C = Object(x.k)(t);
@@ -2219,7 +2219,7 @@
 					r(Object(s.h)(o));
 					const v = t.id,
 						O = p(),
-						y = Object(h.S)(O, {
+						y = Object(h.T)(O, {
 							subredditId: e
 						}).name,
 						E = Object(x.k)(t);
@@ -2256,8 +2256,8 @@
 												const t = {
 														subredditName: e
 													},
-													n = Object(h.y)(o, t),
-													r = Object(h.v)(o, t);
+													n = Object(h.z)(o, t),
+													r = Object(h.w)(o, t);
 												return {
 													name: n.name,
 													subscribers: n ? n.subscribers : void 0,
@@ -2304,7 +2304,7 @@
 				}) => {
 					n(Object(s.h)(o));
 					const a = t.id,
-						p = Object(h.S)(r(), {
+						p = Object(h.T)(r(), {
 							subredditId: e
 						}).name,
 						m = await (async (e, t, o) => Object(c.a)(Object(d.a)(e, [u.a]), {
@@ -2319,7 +2319,7 @@
 				}, R = Object(r.a)(w.f), k = (e, t) => async (o, n, {
 					apiContext: r
 				}) => {
-					const s = Object(h.S)(n(), {
+					const s = Object(h.T)(n(), {
 						subredditId: e
 					}).name;
 					(await (async (e, t, o) => Object(c.a)(Object(d.a)(e, [u.a]), {
@@ -2336,7 +2336,7 @@
 				}) => async (t, o, n) => {
 					const r = o(),
 						s = r.structuredStyles.isEditing,
-						a = Object(h.S)(r, {
+						a = Object(h.T)(r, {
 							subredditId: s
 						}).name;
 					t(Object(i.k)(e));
@@ -2361,7 +2361,7 @@
 					apiContext: r
 				}) => {
 					o(Object(s.h)(t));
-					const i = Object(h.S)(n(), {
+					const i = Object(h.T)(n(), {
 							subredditId: e
 						}).name,
 						a = await p(r(), i);
@@ -2378,7 +2378,7 @@
 					o(N({
 						subredditId: e
 					}));
-					const s = Object(h.S)(n(), {
+					const s = Object(h.T)(n(), {
 							subredditId: e
 						}).name,
 						i = await p(r(), s, t);
@@ -2395,7 +2395,7 @@
 				}, D = (e, t) => async (o, n, {
 					apiContext: r
 				}) => {
-					const s = Object(h.S)(n(), {
+					const s = Object(h.T)(n(), {
 							subredditId: e
 						}).name,
 						i = await p(r(), s, !0);
@@ -2978,7 +2978,7 @@
 				ye = d.a.wrapped(he.i, "FreeFormTextArea", xe.a),
 				Ee = Object(a.c)({
 					dropdownIsOpen: Object(ue.b)(we),
-					freeFormReports: be.C
+					freeFormReports: be.D
 				});
 			class Se extends s.a.Component {
 				constructor(e) {
@@ -5620,4 +5620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.2cf663632227a09d4cf2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.5812c3ee1d9e3f427cec.js.map
