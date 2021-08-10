@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b7aad64b15f1ea2687b1.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e0011c8f8f965959862d.js
+// Retrieved at 8/10/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -126,9 +126,9 @@
 			})), n.d(t, "h", (function() {
 				return G
 			})), n.d(t, "n", (function() {
-				return V
-			})), n.d(t, "c", (function() {
 				return z
+			})), n.d(t, "c", (function() {
+				return V
 			})), n.d(t, "d", (function() {
 				return U
 			}));
@@ -365,7 +365,7 @@
 					} = s.body.data;
 					if (!i.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return i.predictionTokens
-				}, V = ({
+				}, z = ({
 					coinPackageId: e,
 					selectedOptionId: t,
 					price: n,
@@ -385,7 +385,7 @@
 						tournamentId: s,
 						tournamentPostId: i
 					})), o
-				}, z = e => async (t, n, {
+				}, V = e => async (t, n, {
 					gqlContext: s
 				}) => {
 					try {
@@ -1537,7 +1537,7 @@
 				fbt: G
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function V({
+			function z({
 				subredditId: e
 			}) {
 				const t = Object(i.d)(),
@@ -1558,7 +1558,7 @@
 						subredditId: e
 					}));
 				return Object(r.useEffect)(() => {
-					o && a(Object(D.x)())
+					o && a(Object(D.z)())
 				}, [o, a]), Object(r.useEffect)(() => {
 					(async () => {
 						u && !d && (t(Object(A.j)(l.name)), c(!0))
@@ -1570,7 +1570,7 @@
 						t(Object(T.p)({
 							subredditId: e,
 							forceState: !1
-						})), a(Object(D.h)())
+						})), a(Object(D.j)())
 					},
 					to: `${l.url}predictions/`
 				}, G._("Predictions", null, {
@@ -1581,12 +1581,12 @@
 					hk: "1o89m4"
 				}))) : null
 			}
-			var z = n("./src/lib/constants/index.ts");
+			var V = n("./src/lib/constants/index.ts");
 			const {
 				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const q = Object(d.t)(),
-				J = [z.Jb.SUBREDDIT, z.Jb.COMMENTS, z.Jb.COLLECTION_COMMENTS],
+				J = [V.Jb.SUBREDDIT, V.Jb.COMMENTS, V.Jb.COLLECTION_COMMENTS],
 				Q = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && J.indexOf(t.pageLayer.meta.name) > -1,
@@ -1662,7 +1662,7 @@
 					homeUrl: t,
 					isTopBannerVariant: n,
 					pageLayer: r
-				} = e, i = !!r && !!r.meta && r.meta.name === z.Jb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
+				} = e, i = !!r && !!r.meta && r.meta.name === V.Jb.SUBREDDIT_WIKI, a = `wiki/${ie.i}`, o = t.endsWith("/") ? t + a : `${t}/${a}`;
 				return s.a.createElement(O, {
 					isActive: i,
 					isTopBannerVariant: n,
@@ -1691,7 +1691,7 @@
 				subredditId: e.subredditId
 			}), s.a.createElement(ce, {
 				subredditId: e.subredditId
-			}), s.a.createElement(V, {
+			}), s.a.createElement(z, {
 				subredditId: e.subredditId
 			})), e.widget && s.a.createElement(s.a.Fragment, null, e.widget.showWiki && s.a.createElement(de, {
 				homeUrl: e.homeUrl,
@@ -2180,7 +2180,7 @@
 				W = m.a.div("EventLocation", L.a),
 				H = m.a.div("EventDescription", L.a),
 				G = m.a.wrapped(P.a, "ToggleDescription", L.a);
-			class V extends s.a.Component {
+			class z extends s.a.Component {
 				constructor(e) {
 					super(e), this.toggleDescriptionView = () => {
 						this.setState({
@@ -2202,7 +2202,7 @@
 					}))) : s.a.createElement(H, null, e.text)
 				}
 			}
-			var z = e => s.a.createElement(d.a, {
+			var V = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
@@ -2221,7 +2221,7 @@
 					return r < 10 ? `${n}:0${r}` : `${n}:${r}`
 				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(R, {
 					html: t.locationHtml
-				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(V, {
+				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(z, {
 					text: t.description
 				})))),
 				U = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -2448,7 +2448,7 @@
 						case "community-list":
 							return J;
 						case "calendar":
-							return z;
+							return V;
 						case "image":
 							return ae;
 						case "custom":
@@ -2666,54 +2666,58 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "p", (function() {
+			n.d(t, "r", (function() {
 				return a
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "s", (function() {
 				return o
-			})), n.d(t, "r", (function() {
-				return d
-			})), n.d(t, "l", (function() {
-				return c
 			})), n.d(t, "t", (function() {
-				return l
+				return d
 			})), n.d(t, "n", (function() {
+				return c
+			})), n.d(t, "v", (function() {
+				return l
+			})), n.d(t, "p", (function() {
 				return u
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "q", (function() {
 				return m
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "o", (function() {
 				return p
 			})), n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "s", (function() {
-				return h
-			})), n.d(t, "d", (function() {
-				return g
-			})), n.d(t, "v", (function() {
-				return f
-			})), n.d(t, "k", (function() {
-				return x
-			})), n.d(t, "x", (function() {
-				return v
-			})), n.d(t, "g", (function() {
-				return w
-			})), n.d(t, "w", (function() {
-				return j
 			})), n.d(t, "u", (function() {
-				return O
-			})), n.d(t, "c", (function() {
-				return _
+				return h
+			})), n.d(t, "f", (function() {
+				return g
+			})), n.d(t, "x", (function() {
+				return f
+			})), n.d(t, "m", (function() {
+				return x
+			})), n.d(t, "z", (function() {
+				return v
 			})), n.d(t, "i", (function() {
-				return y
+				return w
+			})), n.d(t, "y", (function() {
+				return j
+			})), n.d(t, "w", (function() {
+				return O
 			})), n.d(t, "e", (function() {
+				return _
+			})), n.d(t, "k", (function() {
+				return y
+			})), n.d(t, "g", (function() {
 				return E
 			})), n.d(t, "b", (function() {
 				return k
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "l", (function() {
 				return C
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "j", (function() {
 				return I
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "h", (function() {
 				return N
+			})), n.d(t, "c", (function() {
+				return S
+			})), n.d(t, "d", (function() {
+				return P
 			}));
 			var r = n("./src/reddit/models/Prediction/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
@@ -2917,6 +2921,24 @@
 					action: "click",
 					noun: "play_tournament",
 					poll: Object(s.predictionTournamentPoll)(t, e),
+					post: Object(s.post)(t, e),
+					predictions: Object(s.predictions)(t, e),
+					subreddit: Object(s.subreddit)(t)
+				}),
+				S = e => t => ({
+					...Object(s.defaults)(t),
+					source: "predictions",
+					action: "click",
+					noun: "predictions_option_change",
+					post: Object(s.post)(t, e),
+					predictions: Object(s.predictions)(t, e),
+					subreddit: Object(s.subreddit)(t)
+				}),
+				P = e => t => ({
+					...Object(s.defaults)(t),
+					source: "predictions_option_change",
+					action: "click",
+					noun: "confirm",
 					post: Object(s.post)(t, e),
 					predictions: Object(s.predictions)(t, e),
 					subreddit: Object(s.subreddit)(t)
@@ -3306,4 +3328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b7aad64b15f1ea2687b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e0011c8f8f965959862d.js.map

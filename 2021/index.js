@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.2c99f700464850518453.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.0c33d886d0e8ff42ec4b.js
+// Retrieved at 8/10/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -67,8 +67,8 @@
 				x = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
 				E = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
 				T = n("./src/reddit/controls/InternalLink/index.tsx"),
-				v = n("./src/reddit/helpers/trackers/predictions.ts"),
-				h = n("./src/reddit/hooks/useTracking.ts"),
+				h = n("./src/reddit/helpers/trackers/predictions.ts"),
+				v = n("./src/reddit/hooks/useTracking.ts"),
 				j = n("./src/reddit/selectors/subreddit.ts"),
 				I = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
 				g = n.n(I);
@@ -79,14 +79,14 @@
 				subredditId: t,
 				isLastPrediction: n
 			}) => {
-				const o = Object(h.a)(),
+				const o = Object(v.a)(),
 					s = Object(u.e)(e => Object(j.T)(e, {
 						subredditId: t
 					}));
 				return i.a.createElement(T.a, {
 					className: g.a.container,
 					to: `${null==s?void 0:s.url}predictions/`,
-					onClick: () => o(Object(v.f)(e))
+					onClick: () => o(Object(h.h)(e))
 				}, i.a.createElement("div", {
 					className: g.a.playTournament
 				}, n ? _._("View Tournament", null, {
@@ -135,7 +135,7 @@
 							s = Object(u.e)(b.d),
 							r = Object(u.e)(D.n),
 							d = Object(u.e)(D.m),
-							c = Object(h.a)(),
+							c = Object(v.a)(),
 							a = Object(A.b)(),
 							l = Object(A.a)(),
 							{
@@ -165,12 +165,12 @@
 								U || E || y(e.id)
 							},
 							predict: async t => {
-								if (t.currency === m.a.Coins && t.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(v.a);
+								if (t.currency === m.a.Coins && t.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(h.a);
 								if (U) return l(N._("Error: Failed to make prediction. This prediction has already ended", null, {
 									hk: "22UWEr"
 								})), void y(null);
 								if (!P || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-								g(!0), c(Object(v.o)({
+								g(!0), c(Object(h.q)({
 									pollId: P,
 									selectedNumberTokens: t.amount
 								}));
@@ -216,14 +216,14 @@
 					} = e,
 					Y = K < Date.now(),
 					$ = J === m.b.Cancelled || J === m.b.CancelInProgress,
-					Z = null != Q ? Q : z;
+					q = null != Q ? Q : z;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(r.a)(M.a.poll, {
 						[M.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
 					className: M.a.pollQuestion
-				}, R), Z.map(e => i.a.createElement(E.a, {
+				}, R), q.map(e => i.a.createElement(E.a, {
 					endsAt: K,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: g && G === e.id,
@@ -275,14 +275,14 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = ({
 				postId: e
 			}) => {
-				const t = Object(h.a)(),
+				const t = Object(v.a)(),
 					n = Object(u.e)(t => Object(H.T)(t, {
 						postId: e
 					}));
 				return i.a.createElement(T.a, {
 					className: G.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
-					onClick: () => t(Object(v.f)(e))
+					onClick: () => t(Object(h.h)(e))
 				}, K._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.2c99f700464850518453.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.0c33d886d0e8ff42ec4b.js.map

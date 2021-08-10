@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4a83cfa43660633dbe14.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c57c97cf87755261df90.js
+// Retrieved at 8/10/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(a, i, r) {
@@ -1671,7 +1671,7 @@
 					}),
 					[d, f] = Object(t.useState)(!1);
 				if (Object(t.useEffect)(() => {
-						o(Object(h.v)({
+						o(Object(h.x)({
 							numberPredictionTokens: X,
 							pollId: r
 						}))
@@ -1795,14 +1795,14 @@
 					W = U || H,
 					z = W || O;
 				Object(t.useEffect)(() => {
-					g || (P(h.t), v(!0))
+					g || (P(h.v), v(!0))
 				}, [g, P]);
 				const q = Object(t.useCallback)(async () => {
 						if (!G) return null;
 						D(X)
 					}, [G, D]),
 					J = Object(t.useCallback)(() => {
-						P(Object(h.m)({
+						P(Object(h.o)({
 							pollId: u,
 							currency: null == _ ? void 0 : _.currency,
 							amount: null == _ ? void 0 : _.amount
@@ -3175,54 +3175,58 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(a, i, r) {
 			"use strict";
-			r.d(i, "p", (function() {
+			r.d(i, "r", (function() {
 				return n
-			})), r.d(i, "q", (function() {
+			})), r.d(i, "s", (function() {
 				return o
-			})), r.d(i, "r", (function() {
-				return s
-			})), r.d(i, "l", (function() {
-				return e
 			})), r.d(i, "t", (function() {
-				return m
+				return s
 			})), r.d(i, "n", (function() {
+				return e
+			})), r.d(i, "v", (function() {
+				return m
+			})), r.d(i, "p", (function() {
 				return l
-			})), r.d(i, "o", (function() {
+			})), r.d(i, "q", (function() {
 				return c
-			})), r.d(i, "m", (function() {
+			})), r.d(i, "o", (function() {
 				return p
 			})), r.d(i, "a", (function() {
 				return h
-			})), r.d(i, "s", (function() {
-				return d
-			})), r.d(i, "d", (function() {
-				return f
-			})), r.d(i, "v", (function() {
-				return u
-			})), r.d(i, "k", (function() {
-				return y
-			})), r.d(i, "x", (function() {
-				return G
-			})), r.d(i, "g", (function() {
-				return E
-			})), r.d(i, "w", (function() {
-				return A
 			})), r.d(i, "u", (function() {
-				return B
-			})), r.d(i, "c", (function() {
-				return D
+				return d
+			})), r.d(i, "f", (function() {
+				return f
+			})), r.d(i, "x", (function() {
+				return u
+			})), r.d(i, "m", (function() {
+				return y
+			})), r.d(i, "z", (function() {
+				return G
 			})), r.d(i, "i", (function() {
-				return V
+				return E
+			})), r.d(i, "y", (function() {
+				return A
+			})), r.d(i, "w", (function() {
+				return B
 			})), r.d(i, "e", (function() {
+				return D
+			})), r.d(i, "k", (function() {
+				return V
+			})), r.d(i, "g", (function() {
 				return b
 			})), r.d(i, "b", (function() {
 				return F
-			})), r.d(i, "j", (function() {
+			})), r.d(i, "l", (function() {
 				return g
-			})), r.d(i, "h", (function() {
+			})), r.d(i, "j", (function() {
 				return v
-			})), r.d(i, "f", (function() {
+			})), r.d(i, "h", (function() {
 				return P
+			})), r.d(i, "c", (function() {
+				return S
+			})), r.d(i, "d", (function() {
+				return T
 			}));
 			var t = r("./src/reddit/models/Prediction/index.ts"),
 				x = r("./src/reddit/selectors/telemetry.ts");
@@ -3426,6 +3430,24 @@
 					action: "click",
 					noun: "play_tournament",
 					poll: Object(x.predictionTournamentPoll)(i, a),
+					post: Object(x.post)(i, a),
+					predictions: Object(x.predictions)(i, a),
+					subreddit: Object(x.subreddit)(i)
+				}),
+				S = a => i => ({
+					...Object(x.defaults)(i),
+					source: "predictions",
+					action: "click",
+					noun: "predictions_option_change",
+					post: Object(x.post)(i, a),
+					predictions: Object(x.predictions)(i, a),
+					subreddit: Object(x.subreddit)(i)
+				}),
+				T = a => i => ({
+					...Object(x.defaults)(i),
+					source: "predictions_option_change",
+					action: "click",
+					noun: "confirm",
 					post: Object(x.post)(i, a),
 					predictions: Object(x.predictions)(i, a),
 					subreddit: Object(x.subreddit)(i)
@@ -3711,4 +3733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.4a83cfa43660633dbe14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.c57c97cf87755261df90.js.map

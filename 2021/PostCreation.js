@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.070bdadd2dfb82eb186e.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.f4191825e2dcfd9c2f9e.js
+// Retrieved at 8/10/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -14503,54 +14503,58 @@
 		},
 		"./src/reddit/helpers/trackers/predictions.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "p", (function() {
+			n.d(t, "r", (function() {
 				return a
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "s", (function() {
 				return i
-			})), n.d(t, "r", (function() {
-				return c
-			})), n.d(t, "l", (function() {
-				return d
 			})), n.d(t, "t", (function() {
-				return l
+				return c
 			})), n.d(t, "n", (function() {
+				return d
+			})), n.d(t, "v", (function() {
+				return l
+			})), n.d(t, "p", (function() {
 				return u
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "q", (function() {
 				return m
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "o", (function() {
 				return p
 			})), n.d(t, "a", (function() {
 				return b
-			})), n.d(t, "s", (function() {
-				return h
-			})), n.d(t, "d", (function() {
-				return f
-			})), n.d(t, "v", (function() {
-				return g
-			})), n.d(t, "k", (function() {
-				return C
-			})), n.d(t, "x", (function() {
-				return _
-			})), n.d(t, "g", (function() {
-				return E
-			})), n.d(t, "w", (function() {
-				return x
 			})), n.d(t, "u", (function() {
-				return v
-			})), n.d(t, "c", (function() {
-				return O
+				return h
+			})), n.d(t, "f", (function() {
+				return f
+			})), n.d(t, "x", (function() {
+				return g
+			})), n.d(t, "m", (function() {
+				return C
+			})), n.d(t, "z", (function() {
+				return _
 			})), n.d(t, "i", (function() {
-				return y
+				return E
+			})), n.d(t, "y", (function() {
+				return x
+			})), n.d(t, "w", (function() {
+				return v
 			})), n.d(t, "e", (function() {
+				return O
+			})), n.d(t, "k", (function() {
+				return y
+			})), n.d(t, "g", (function() {
 				return k
 			})), n.d(t, "b", (function() {
 				return j
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "l", (function() {
 				return S
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "j", (function() {
 				return P
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "h", (function() {
 				return w
+			})), n.d(t, "c", (function() {
+				return I
+			})), n.d(t, "d", (function() {
+				return T
 			}));
 			var o = n("./src/reddit/models/Prediction/index.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -14754,6 +14758,24 @@
 					action: "click",
 					noun: "play_tournament",
 					poll: Object(r.predictionTournamentPoll)(t, e),
+					post: Object(r.post)(t, e),
+					predictions: Object(r.predictions)(t, e),
+					subreddit: Object(r.subreddit)(t)
+				}),
+				I = e => t => ({
+					...Object(r.defaults)(t),
+					source: "predictions",
+					action: "click",
+					noun: "predictions_option_change",
+					post: Object(r.post)(t, e),
+					predictions: Object(r.predictions)(t, e),
+					subreddit: Object(r.subreddit)(t)
+				}),
+				T = e => t => ({
+					...Object(r.defaults)(t),
+					source: "predictions_option_change",
+					action: "click",
+					noun: "confirm",
 					post: Object(r.post)(t, e),
 					predictions: Object(r.predictions)(t, e),
 					subreddit: Object(r.subreddit)(t)
@@ -17775,7 +17797,7 @@
 						}),
 						primaryButtonLoading: a,
 						onPrimaryAction: async () => {
-							n(Object(cn.j)()), c(!0), t(Object(sn.b)({
+							n(Object(cn.l)()), c(!0), t(Object(sn.b)({
 								prediction: {
 									formData: d,
 									formState: l
@@ -17874,7 +17896,7 @@
 								}))
 							}
 							b(!1)
-						})() : (a(Object(cn.e)()), u(!0))
+						})() : (a(Object(cn.g)()), u(!0))
 					}
 				}, p ? r.a.createElement(ae.a, {
 					sizePx: 16
@@ -20061,7 +20083,7 @@
 						a(Object(i.j)({
 							oldType: n,
 							type: ue.a.GA
-						})), c(cn.p)
+						})), c(cn.r)
 					},
 					title: d.fbt._("Poll", null, {
 						hk: "2uKNlH"
@@ -20074,7 +20096,7 @@
 						a(Object(i.j)({
 							oldType: n,
 							type: ue.a.Prediction
-						})), c(cn.q)
+						})), c(cn.s)
 					},
 					title: d.fbt._("Prediction", null, {
 						hk: "3wu0FO"
@@ -20089,8 +20111,8 @@
 					className: Oc.a.education
 				}, r.a.createElement(pc.a, {
 					isTokens: e,
-					onClose: () => c(cn.l),
-					onView: () => c(cn.r),
+					onClose: () => c(cn.n),
+					onView: () => c(cn.t),
 					storageKey: mc.a.creation
 				})))
 			}
@@ -22829,4 +22851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.070bdadd2dfb82eb186e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.f4191825e2dcfd9c2f9e.js.map
