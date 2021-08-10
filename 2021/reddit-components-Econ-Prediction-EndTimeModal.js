@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.5e83a0fb1caff58acc58.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.443bac0f9f0424e1f1a4.js
+// Retrieved at 8/10/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -74,11 +74,11 @@
 			n.d(t, "e", (function() {
 				return k
 			})), n.d(t, "i", (function() {
-				return y
-			})), n.d(t, "m", (function() {
-				return E
-			})), n.d(t, "l", (function() {
 				return _
+			})), n.d(t, "m", (function() {
+				return y
+			})), n.d(t, "l", (function() {
+				return E
 			})), n.d(t, "j", (function() {
 				return S
 			})), n.d(t, "b", (function() {
@@ -134,7 +134,7 @@
 				I = Object(u.a)(g.l),
 				P = Object(u.a)(g.h),
 				k = Object(u.a)(g.b),
-				y = (e, t, n, o) => async (r, i, {
+				_ = (e, t, n, o) => async (r, i, {
 					gqlContext: s
 				}) => {
 					const a = Object(C.J)(i()),
@@ -157,7 +157,7 @@
 						...u
 					};
 					return r(O(l)), l
-				}, E = ({
+				}, y = ({
 					coinPackageId: e,
 					optionId: t,
 					postId: n,
@@ -176,7 +176,7 @@
 						prediction: a,
 						price: o
 					})), a
-				}, _ = ({
+				}, E = ({
 					optionId: e,
 					postId: t
 				}) => async (n, o, {
@@ -347,7 +347,7 @@
 					tournamentId: r,
 					tournamentPostId: i
 				}) => async s => {
-					const a = await s(E({
+					const a = await s(y({
 						coinPackageId: e,
 						optionId: t,
 						postId: o,
@@ -609,7 +609,7 @@
 					onOverlayClick: j,
 					toggleModal: j,
 					onConfirm: () => {
-						n(Object(u.b)(m.id)), t(Object(s.a)({
+						n(Object(u.f)(m.id)), t(Object(s.a)({
 							postId: null == m ? void 0 : m.id,
 							closedAt: f
 						})), j()
@@ -1015,11 +1015,11 @@
 			})), n.d(t, "m", (function() {
 				return k
 			})), n.d(t, "g", (function() {
-				return y
-			})), n.d(t, "h", (function() {
-				return E
-			})), n.d(t, "i", (function() {
 				return _
+			})), n.d(t, "h", (function() {
+				return y
+			})), n.d(t, "i", (function() {
+				return E
 			})), n.d(t, "d", (function() {
 				return w
 			})), n.d(t, "c", (function() {
@@ -1116,17 +1116,17 @@
 						input: t
 					}
 				}),
-				y = (e, t) => Object(o.a)(e, {
+				_ = (e, t) => Object(o.a)(e, {
 					...u,
 					variables: {
 						input: t
 					}
 				}),
-				E = (e, t) => Object(o.a)(e, {
+				y = (e, t) => Object(o.a)(e, {
 					...l,
 					variables: t
 				}),
-				_ = (e, t) => Object(o.a)(e, {
+				E = (e, t) => Object(o.a)(e, {
 					...p,
 					variables: t
 				}),
@@ -1167,10 +1167,18 @@
 		},
 		"./src/reddit/helpers/trackers/predictionsModTools.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "f", (function() {
 				return s
+			})), n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "d", (function() {
+				return d
+			})), n.d(t, "b", (function() {
+				return c
+			})), n.d(t, "e", (function() {
+				return u
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const r = (e, t) => ({
@@ -1188,6 +1196,30 @@
 				s = e => t => ({
 					...r(t, e),
 					source: "edit_prediction_end_dt",
+					action: "click",
+					noun: "confirm"
+				}),
+				a = e => t => ({
+					...r(t, e),
+					source: "predictions",
+					action: "click",
+					noun: "cancel_prediction"
+				}),
+				d = e => t => ({
+					...r(t, e),
+					source: "predictions",
+					action: "click",
+					noun: "remove_post"
+				}),
+				c = e => t => ({
+					...r(t, e),
+					source: "predictions",
+					action: "click",
+					noun: "prediction_change_outcome"
+				}),
+				u = e => t => ({
+					...r(t, e),
+					source: "prediction_change_outcome",
 					action: "click",
 					noun: "confirm"
 				})
@@ -1285,4 +1317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.5e83a0fb1caff58acc58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.443bac0f9f0424e1f1a4.js.map

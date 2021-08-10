@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0a2e12f0b71c1403dc92.js
-// Retrieved at 8/10/2021, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.543d6e8d9e8bf3f80c25.js
+// Retrieved at 8/10/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -1256,7 +1256,7 @@
 						InboxTooltip: "8c9944a153697b655bc4",
 						ModQueue: "b3cff7d60ca53a344379",
 						ModToMemberShareModal: "39efceb1ba4abc296dd8",
-						ModerationDropdowns: "95e72cdb721da24b3e05",
+						ModerationDropdowns: "1ca15e9a5943b387525a",
 						MultiredditAddSubredditModal: "1f63fac7a87e9ac8d736",
 						MultiredditCreateModal: "add74f19422c597f8963",
 						MultiredditEditModal: "88d383233e8721630236",
@@ -1288,14 +1288,14 @@
 						givePremiumTrackers: "b9a27ff9539d8eaa174c",
 						"reddit-components-CoinPurchaseDropdown": "57ee359e85ff513359dc",
 						"reddit-components-Econ-Prediction-CancelPredictionModal": "6b55a733048d80ef4710",
-						"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "9652f460a8e34e36055c",
-						"reddit-components-Econ-Prediction-EndTimeModal": "5e83a0fb1caff58acc58",
+						"reddit-components-Econ-Prediction-ChangePredictionOutcomeModal": "66aba6fe6d8d16a603b2",
+						"reddit-components-Econ-Prediction-EndTimeModal": "443bac0f9f0424e1f1a4",
 						"translations/de_DE-json": "8b3e68e99bf0e37f20ad",
 						"translations/es_ES-json": "198da787ccf39fa5d4e4",
 						"translations/es_MX-json": "e69bab67889369a7a8fe",
 						"translations/fr_FR-json": "c1d7171b5779c057909d",
 						"translations/it_IT-json": "f50783e1c636ba46afe2",
-						"translations/pseudo_ext-json": "3cc91b49cd4036138553",
+						"translations/pseudo_ext-json": "c7fe1accc4599ce46da9",
 						"translations/pseudo_long-json": "ab836a8dbb3f7157ce41",
 						"translations/pseudo_short-json": "ced483d2cba7463b32ae",
 						"translations/pt_BR-json": "e6f5a7bb50d02cfba795",
@@ -1546,4 +1546,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0a2e12f0b71c1403dc92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.543d6e8d9e8bf3f80c25.js.map
