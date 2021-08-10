@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.e233da002dcfa763a7e6.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d591060d23cc04f424eb.js
+// Retrieved at 8/10/2021, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16506,10 +16506,13 @@
 				xn = "(display-mode: standalone)";
 
 			function En(e) {
-				window && (function(e) {
+				if (!window) return;
+				(function(e) {
 					const t = e.matchMedia(xn).matches;
 					return e.navigator && e.navigator.standalone || t
-				}(window) && e.dispatch(Object(yn.i)()), window.matchMedia(xn).addEventListener("change", t => {
+				})(window) && e.dispatch(Object(yn.i)());
+				const t = window.matchMedia(xn);
+				t && t.addEventListener("change", t => {
 					t.matches ? e.dispatch(Object(yn.i)()) : e.dispatch(Object(yn.j)())
 				}), window.addEventListener("appinstalled", () => {
 					const t = e.getState();
@@ -16518,7 +16521,7 @@
 					}, 1e3), Cn(t, function(e) {
 						return "microsoft-store" === new URLSearchParams(e.location.search).get("app-install-source") ? "microsoft-store" : "browser"
 					}(window))
-				}))
+				})
 			}
 			var Pn = n("./src/lib/cookieConsent/index.ts"),
 				jn = n("./src/lib/permanentCookieOptions.ts"),
@@ -19584,4 +19587,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e233da002dcfa763a7e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d591060d23cc04f424eb.js.map
