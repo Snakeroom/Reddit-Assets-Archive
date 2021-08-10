@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.86202f8245f07ca4b9f4.js
-// Retrieved at 8/10/2021, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c8fdf88554fcedaf4a17.js
+// Retrieved at 8/10/2021, 2:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -5018,7 +5018,7 @@
 					}),
 					Ke = ne.removedByCategory === N.g.AuthorDeleted,
 					Ge = o && (o.displayText === ne.author || o.username === ne.author),
-					ze = !Ke && !ot(ne) && (Ge || E || !(ne.removedByCategory && ne.media && (Object(T.J)(ne.media) || Object(T.H)(ne.media)))),
+					ze = !Ke && !ot(ne) && (Ge || E || !(ne.removedByCategory && ne.media && (Object(T.J)(ne.media) || Object(T.H)(ne.media) || Object(T.E)(ne.media)))),
 					Qe = Object(m.t)(ne, O),
 					{
 						source: Xe
@@ -8311,4 +8311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.86202f8245f07ca4b9f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c8fdf88554fcedaf4a17.js.map
