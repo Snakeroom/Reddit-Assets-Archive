@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.a0fe190ae2c9050cf3cb.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.4e387cbde32e26d2edf8.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1649,7 +1649,7 @@
 					className: e,
 					disabled: b || l,
 					onClick: e => {
-						h && h(e), n === u.Nd.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
+						h && h(e), n === u.Od.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
 					},
 					onMouseEnter: o,
 					onMouseLeave: a,
@@ -4591,7 +4591,8 @@
 				}),
 				style: {
 					"--sizePx": `${n}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/controls/ToggleSwitch/index.m.less": function(e, t, n) {
@@ -4708,7 +4709,7 @@
 								experimentName: i.B,
 								expEventOverride: t
 							});
-							return !!(Object(i.he)(n) ? void 0 : n)
+							return !!(Object(i.ie)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -4761,15 +4762,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.Od.Add:
+					case r.Pd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.Od.Start:
+					case r.Pd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.Od.Create:
+					case r.Pd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -6151,11 +6152,11 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const c = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.Ed,
+					experimentName: r.Fd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
 				d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.Fd,
+					experimentName: r.Gd,
 					experimentEligibilitySelector: o.e
 				}), a.a)
 		},
@@ -6233,4 +6234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.a0fe190ae2c9050cf3cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.4e387cbde32e26d2edf8.js.map

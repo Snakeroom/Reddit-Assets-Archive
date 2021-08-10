@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b91a573c1cb4e95937c8.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c8e8e33e2652b477df0c.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1798,10 +1798,10 @@
 			}
 			var Ve = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.Kc,
+					experimentName: Fe.Lc,
 					experimentEligibilitySelector: Ue.a
 				}), Ve.a),
-				We = Object(u.a)(qe, e => e === Fe.Mc.Enabled);
+				We = Object(u.a)(qe, e => e === Fe.Nc.Enabled);
 			var Ge = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1834,7 +1834,7 @@
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: He.J,
 								experimentName: Fe.kb
-							}) === Fe.gc
+							}) === Fe.hc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -4828,8 +4828,8 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: c,
 						experimentName: s.Cb
-					}) === s.ic.Enabled
-				}(e) ? d.Achievements : t === s.jc.ControlBanner ? d.CommunitySpacesControl : t === s.jc.EnabledBanner ? d.CommunitySpaces : null
+					}) === s.jc.Enabled
+				}(e) ? d.Achievements : t === s.kc.ControlBanner ? d.CommunitySpacesControl : t === s.kc.EnabledBanner ? d.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(d || (d = {}))
@@ -4880,4 +4880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b91a573c1cb4e95937c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c8e8e33e2652b477df0c.js.map

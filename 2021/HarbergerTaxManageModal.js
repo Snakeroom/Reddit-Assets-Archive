@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.65df9d473ce7e2f60da7.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.b39904e46c02bb0c9062.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1242,7 +1242,8 @@
 				}),
 				style: {
 					"--sizePx": `${n}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/endpoints/governance/imageLease.ts": function(e, t, n) {
@@ -1419,4 +1420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.65df9d473ce7e2f60da7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.b39904e46c02bb0c9062.js.map

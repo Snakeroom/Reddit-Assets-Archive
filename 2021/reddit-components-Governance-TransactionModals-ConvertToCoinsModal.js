@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.870266ae01f4cd24c731.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e8490d19d420a5711818.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, n) {
@@ -47,9 +47,9 @@
 				return P
 			})), n.d(t, "j", (function() {
 				return N
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "g", (function() {
 				return I
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "f", (function() {
 				return _
 			})), n.d(t, "d", (function() {
 				return k
@@ -57,12 +57,12 @@
 				return z
 			})), n.d(t, "a", (function() {
 				return D
-			})), n.d(t, "g", (function() {
-				return F
 			})), n.d(t, "h", (function() {
-				return B
-			})), n.d(t, "i", (function() {
+				return F
+			})), n.d(t, "e", (function() {
 				return R
+			})), n.d(t, "i", (function() {
+				return V
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -123,7 +123,7 @@
 						isAnonymous: n
 					};
 					else if (b) {
-						const e = Object(h.c)(m, {
+						const e = Object(h.d)(m, {
 							provider: y.b.Stripe
 						});
 						if (!e) return;
@@ -170,7 +170,7 @@
 							powerupsCount: a,
 							user: C,
 							isAnonymous: n
-						})) : b && i(B({
+						})) : b && i(R({
 							user: C
 						})))
 					} catch (k) {
@@ -189,7 +189,7 @@
 						isAnonymous: t
 					};
 					else if (f) {
-						const e = Object(h.c)(m, {
+						const e = Object(h.d)(m, {
 							provider: y.b.PayPal
 						});
 						if (!e) return null;
@@ -239,7 +239,7 @@
 									powerupsCount: n,
 									user: r,
 									isAnonymous: t
-								})) : f && c(B({
+								})) : f && c(R({
 									user: r
 								})), null
 							}
@@ -335,11 +335,17 @@
 						})))
 					}
 				}, G = Object(m.a)(b.S), F = e => async (t, n) => {
-					t(G(e)), t(Object(x.k)(e.subredditId, {
+					t(G(e)), t(Object(x.l)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(l.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(l.a.ECON_POWERUPS_SUCCESS))
-				}, B = Object(m.a)(b.W), R = Object(m.a)(b.ab)
+				}, B = Object(m.a)(b.W), R = ({
+					user: e
+				}) => async t => {
+					await t(Object(x.n)(!0)), t(B({
+						user: e
+					}))
+				}, V = Object(m.a)(b.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -387,7 +393,7 @@
 					gqlContext: c
 				}) => {
 					const s = a();
-					if (!Object(f.h)(s, {
+					if (!Object(f.i)(s, {
 							subredditId: t,
 							type: e
 						})) {
@@ -1309,12 +1315,12 @@
 						pointsBalance: e => Object(G.e)(e, m),
 						productOffer: e => {
 							var t;
-							return null === (t = Object(D.h)(e, {
+							return null === (t = Object(D.i)(e, {
 								subredditId: u,
 								type: i.c.CoinConversion
 							})) || void 0 === t ? void 0 : t[0]
 						},
-						productOffersPending: D.g,
+						productOffersPending: D.h,
 						subredditLockedCoins: e => Object(T.a)(e, m)
 					})),
 					h = null === (n = null === (t = null == f ? void 0 : f.pricePackages) || void 0 === t ? void 0 : t[0]) || void 0 === n ? void 0 : n.price,
@@ -1786,7 +1792,8 @@
 				}),
 				style: {
 					"--sizePx": `${n}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/endpoints/gold/productOfferPurchase.ts": function(e, t, n) {
@@ -2155,24 +2162,26 @@
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "h", (function() {
 				return i
-			})), n.d(t, "h", (function() {
-				return l
-			})), n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "d", (function() {
-				return u
 			})), n.d(t, "i", (function() {
-				return m
-			})), n.d(t, "c", (function() {
-				return f
+				return l
 			})), n.d(t, "b", (function() {
-				return b
-			})), n.d(t, "f", (function() {
-				return v
+				return d
+			})), n.d(t, "a", (function() {
+				return u
 			})), n.d(t, "e", (function() {
+				return m
+			})), n.d(t, "j", (function() {
+				return p
+			})), n.d(t, "d", (function() {
+				return b
+			})), n.d(t, "c", (function() {
+				return v
+			})), n.d(t, "g", (function() {
 				return h
+			})), n.d(t, "f", (function() {
+				return g
 			}));
 			var r = n("./node_modules/reselect/es/index.js"),
 				a = n("./src/lib/makeProductOfferKey/index.ts"),
@@ -2196,26 +2205,31 @@
 					});
 					return n && n[0]
 				},
-				u = e => {
+				u = (e, t) => {
+					var n;
+					const r = d(e, t);
+					return null === (n = null == r ? void 0 : r.pricePackages) || void 0 === n ? void 0 : n[0].price
+				},
+				m = e => {
 					const t = l(e, {
 						type: c.c.Premium
 					});
 					return (null == t ? void 0 : t[0]) || null
 				},
-				m = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === s.b.PayPal || e[0] === s.b.Stripe)(e.requiredPaymentProviders)) : null,
-				p = Object(r.a)(u, o.p, (e, t) => m(e, t) || null),
-				f = Object(r.a)(p, (e, {
+				p = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === s.b.PayPal || e[0] === s.b.Stripe)(e.requiredPaymentProviders)) : null,
+				f = Object(r.a)(m, o.p, (e, t) => p(e, t) || null),
+				b = Object(r.a)(f, (e, {
 					provider: t
 				}) => t, (e, t) => null == e ? void 0 : e.find(e => {
 					var n;
 					return (null === (n = e.requiredPaymentProviders) || void 0 === n ? void 0 : n[0]) === t
 				})),
-				b = Object(r.a)(p, e => (null == e ? void 0 : e[0].price) || null),
-				v = Object(r.a)(e => {
+				v = Object(r.a)(f, e => (null == e ? void 0 : e[0].price) || null),
+				h = Object(r.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
-				h = Object(r.a)(v, e => Boolean(null == e ? void 0 : e.isCanceled))
+				g = Object(r.a)(h, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
@@ -2316,4 +2330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.870266ae01f4cd24c731.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.e8490d19d420a5711818.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.b87e8abd2e9c500b057d.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.090b85197d8c007988d3.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -968,7 +968,8 @@
 				}),
 				style: {
 					"--sizePx": `${n}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/controls/Sortable/index.tsx": function(e, t, n) {
@@ -1125,4 +1126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.b87e8abd2e9c500b057d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.090b85197d8c007988d3.js.map

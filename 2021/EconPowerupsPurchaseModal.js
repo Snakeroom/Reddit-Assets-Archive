@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.92c2c71f38f7e39cef38.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7aa5d44b761dee7a312b.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
@@ -272,29 +272,29 @@
 				P = n("./src/reddit/actions/gold/powerups.ts"),
 				E = n("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				g = n("./src/reddit/actions/goldPurchaseModals/payment.ts"),
-				x = n("./src/reddit/models/Gold/ProductOffer.ts"),
-				_ = n("./src/reddit/selectors/gold/powerups/index.ts"),
-				v = n("./src/reddit/selectors/gold/productOffers.ts"),
-				y = n("./src/reddit/selectors/goldPurchaseModals.ts"),
-				M = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
-				O = n("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				C = n("./src/reddit/components/StripePaymentForm/index.tsx"),
-				N = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				k = n("./src/reddit/icons/svgs/Premium/index.tsx"),
-				L = n("./src/reddit/hooks/useStripe.ts"),
-				S = n("./src/reddit/hooks/useThunkDispatch.ts"),
+				x = n("./src/reddit/selectors/gold/powerups/index.ts"),
+				_ = n("./src/reddit/selectors/gold/productOffers.ts"),
+				v = n("./src/reddit/selectors/goldPurchaseModals.ts"),
+				y = n("./src/reddit/selectors/user.ts"),
+				M = n("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
+				j = n("./src/reddit/components/PaymentMethodSelector/index.tsx"),
+				O = n("./src/reddit/components/StripePaymentForm/index.tsx"),
+				C = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				N = n("./src/reddit/icons/svgs/Premium/index.tsx"),
+				k = n("./src/reddit/hooks/useStripe.ts"),
+				L = n("./src/reddit/hooks/useThunkDispatch.ts"),
+				S = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				A = n("./src/reddit/controls/Button/index.tsx"),
 				z = n("./src/reddit/controls/LoadingIcon/index.tsx");
 			const {
-				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = Object(o.c)({
-				currentUser: M.j,
-				isAnonymous: _.c,
-				powerupsCount: _.d,
-				productOffer: v.a
+				fbt: B
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = Object(o.c)({
+				currentUser: y.j,
+				isAnonymous: x.c,
+				powerupsCount: x.d,
+				productOffer: _.b
 			});
-			var T = Object(a.b)(B)(s.a.memo((function(e) {
+			var T = Object(a.b)(I)(s.a.memo((function(e) {
 					const {
 						className: t,
 						currentUser: n,
@@ -302,7 +302,7 @@
 						powerupsCount: o,
 						productOffer: c,
 						subredditId: l
-					} = e, i = Object(S.a)();
+					} = e, i = Object(L.a)();
 					Object(r.useEffect)(() => (window.addEventListener("message", p, !1), () => window.removeEventListener("message", p)), []);
 					const [d, u] = Object(r.useState)(!1);
 					let m = null;
@@ -318,7 +318,7 @@
 							t && t.type && ("paypal-finish.success.framedmodal" === t.type ? (b(), m && m.close()) : "paypal-finish.cancel.framedmodal" === t.type && m && m.close())
 						},
 						b = () => {
-							i(Object(E.g)({
+							i(Object(E.h)({
 								subredditId: l,
 								powerupsCount: o,
 								user: n,
@@ -329,7 +329,7 @@
 						onClick: async () => {
 							if (!c) return;
 							u(!0);
-							const e = await i(Object(E.f)(c, a, o, x.c.Powerups, l));
+							const e = await i(Object(E.g)(c, a, o, S.c.Powerups, l));
 							if (e) {
 								const {
 									url: t
@@ -343,7 +343,7 @@
 					}, d ? s.a.createElement(z.a, {
 						sizePx: 12,
 						center: !0
-					}) : I._("Continue to PayPal", null, {
+					}) : B._("Continue to PayPal", null, {
 						hk: "1T4BEy"
 					}))
 				}))),
@@ -355,14 +355,14 @@
 				className: e,
 				subredditId: t
 			}) => {
-				const n = Object(a.e)(_.c),
-					r = Object(a.e)(_.b),
-					o = Object(a.e)(_.d),
+				const n = Object(a.e)(x.c),
+					r = Object(a.e)(x.b),
+					o = Object(a.e)(x.d),
 					c = Object(a.d)();
 				return s.a.createElement(A.q, {
 					priority: A.b.Primary,
 					onClick: () => {
-						c(Object(P.i)(t, o, n))
+						c(Object(P.j)(t, o, n))
 					},
 					className: Object(l.a)(e, F.a.button),
 					disabled: r
@@ -481,11 +481,11 @@
 			const {
 				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ee = Object(o.c)({
-				isAnonymous: _.c,
-				powerupsCount: _.d,
-				productOffer: v.a,
-				savedCardsPending: y.w,
-				stripeTokenPending: y.m
+				isAnonymous: x.c,
+				powerupsCount: x.d,
+				productOffer: _.b,
+				savedCardsPending: v.w,
+				stripeTokenPending: v.m
 			}), te = Object(a.b)(ee);
 			var ne = Object(b.injectStripe)(te((function(e) {
 					const {
@@ -500,7 +500,7 @@
 					} = e, m = Object(a.d)(), [p, b] = Object(r.useState)(!1), h = d || l;
 					return s.a.createElement(A.i, {
 						onClick: async () => {
-							i && c && (b(!0), await m(Object(E.j)(i, c, n, o, x.c.Powerups, u)), b(!1))
+							i && c && (b(!0), await m(Object(E.j)(i, c, n, o, S.c.Powerups, u)), b(!1))
 						},
 						className: t,
 						disabled: h || !i || p
@@ -516,22 +516,14 @@
 			const {
 				fbt: ae
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), oe = 100, ce = Object(o.c)({
-				isAnonymous: _.c,
-				isNightMode: M.V,
-				paypalErrorMessage: y.d,
-				powerups: _.i,
-				powerupsCount: _.d,
-				productOffer: (e, {
-					subredditId: t
-				}) => {
-					const n = Object(v.h)(e, {
-						subredditId: t,
-						type: x.c.Powerups
-					});
-					return n && n[0]
-				},
-				stripeErrorMessage: y.j,
-				userPowerupsData: _.v
+				isAnonymous: x.c,
+				isNightMode: y.V,
+				paypalErrorMessage: v.d,
+				powerups: x.i,
+				powerupsCount: x.d,
+				powerupPrice: _.a,
+				stripeErrorMessage: v.j,
+				userPowerupsData: x.v
 			});
 			var le = Object(a.b)(ce)((function(e) {
 					const {
@@ -541,7 +533,7 @@
 						paypalErrorMessage: c,
 						powerups: l,
 						powerupsCount: i,
-						productOffer: d,
+						powerupPrice: d,
 						stripeErrorMessage: u,
 						subredditId: m,
 						userPowerupsData: p
@@ -553,40 +545,39 @@
 					Object(r.useEffect)(() => {
 						y(Object(w.g)())
 					}, []);
-					const M = Object(L.a)(),
-						S = d && d.pricePackages.length ? d.pricePackages[0].price : 0;
-					if (!S || !l) return o(), null;
-					const A = (i * S / 100).toFixed(2),
-						z = !!(null == p ? void 0 : p.freeCount);
+					const L = Object(k.a)();
+					if (!d || !l) return o(), null;
+					const S = (i * d / 100).toFixed(2),
+						A = !!(null == p ? void 0 : p.freeCount);
 					return s.a.createElement(b.StripeProvider, {
-						stripe: M
+						stripe: L
 					}, s.a.createElement(b.Elements, null, s.a.createElement(s.a.Fragment, null, s.a.createElement(Q, {
 						className: se.a.progressControl,
 						count: i,
-						maxCount: z && p ? p.freeCount : oe,
-						onChange: e => x(Object(P.h)(e)),
+						maxCount: A && p ? p.freeCount : oe,
+						onChange: e => x(Object(P.i)(e)),
 						powerups: l
 					}), s.a.createElement("div", {
 						className: se.a.details
-					}, s.a.createElement(N.a, {
+					}, s.a.createElement(C.a, {
 						className: se.a.anonymousCheckbox,
 						isSelected: t,
 						onClick: () => (e => x(Object(P.c)(e)))(!t),
 						text: ae._("Powerup anonymously", null, {
 							hk: "YXX31"
 						})
-					}), !z && s.a.createElement("div", {
+					}), !A && s.a.createElement("div", {
 						className: se.a.purchaseDetails
 					}, ae._({
 						"*": "{powerups} Powerups {powerup price} /mo",
 						_1: "1 Powerup {powerup price} /mo"
-					}, [ae._plural(i, "powerups"), ae._param("powerup price", `$${A.toLocaleString()}`)], {
+					}, [ae._plural(i, "powerups"), ae._param("powerup price", `$${S.toLocaleString()}`)], {
 						hk: "3cOqa5"
-					}))), !z && s.a.createElement(s.a.Fragment, null, s.a.createElement("h3", {
+					}))), !A && s.a.createElement(s.a.Fragment, null, s.a.createElement("h3", {
 						className: se.a.paymentMethodTitle
 					}, ae._("Payment Method", null, {
 						hk: "3EbT3q"
-					})), s.a.createElement(O.a, {
+					})), s.a.createElement(j.a, {
 						className: se.a.paymentMethodSelector,
 						nightmode: n,
 						selectedPayment: _,
@@ -597,7 +588,7 @@
 						className: se.a.errorMessage
 					}, u), _ === f.Eb && c && s.a.createElement("div", {
 						className: se.a.errorMessage
-					}, c), _ === f.Db && s.a.createElement(C.a, {
+					}, c), _ === f.Db && s.a.createElement(O.a, {
 						nightmode: n,
 						className: se.a.stripeForm,
 						shouldDeleteCardWithGql: !0
@@ -621,18 +612,18 @@
 						rel: "noopener noreferrer"
 					}, ae._("Privacy Policy", null, {
 						hk: "Z8otX"
-					}))), ae._param("previews terms of use", s.a.createElement(j.a, null)), ae._param("powerup price", ` $${A.toLocaleString()} `), ae._param("=User Settings", s.a.createElement("a", {
+					}))), ae._param("previews terms of use", s.a.createElement(M.a, null)), ae._param("powerup price", ` $${S.toLocaleString()} `), ae._param("=User Settings", s.a.createElement("a", {
 						href: "/settings/premium",
 						target: "_blank"
 					}, ae._("User Settings", null, {
 						hk: "3TNXSe"
 					})))], {
 						hk: "NLnVj"
-					}))), z && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+					}))), A && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: se.a.premiumDescription
 					}, s.a.createElement("div", {
 						className: se.a.premiumIconWrapper
-					}, s.a.createElement(k.a, {
+					}, s.a.createElement(N.a, {
 						className: se.a.premiumIcon
 					})), s.a.createElement("span", null, ae._("Premium gives you one monthly Powerup", null, {
 						hk: "2cKV1a"
@@ -774,7 +765,8 @@
 				}),
 				style: {
 					"--sizePx": `${n}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, n) {
@@ -898,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.92c2c71f38f7e39cef38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7aa5d44b761dee7a312b.js.map

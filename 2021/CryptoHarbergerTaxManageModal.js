@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.16d63e5e149bf651c7be.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.21bbc5713a0786f16fb4.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -378,7 +378,7 @@
 				}) => Object(D.b)(e, t),
 				wallet: g.d
 			});
-			var F = Object(d.b)(M, e => ({
+			var L = Object(d.b)(M, e => ({
 					onClose: () => e(Object(B.f)())
 				}))((function(e) {
 					var t;
@@ -409,8 +409,8 @@
 						hk: "nbpNh"
 					}))))
 				})),
-				L = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/index.m.less"),
-				G = n.n(L);
+				F = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/index.m.less"),
+				G = n.n(F);
 			const {
 				fbt: R
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = {
@@ -473,7 +473,7 @@
 						tiled: this.state.tiled,
 						onImageChange: this.handleImageChange,
 						onTilingChange: this.handleTilingChange
-					}), o.a.createElement(F, {
+					}), o.a.createElement(L, {
 						className: G.a.controls,
 						subredditId: e.id,
 						submitEnabled: !r()(this.state, this.originalState),
@@ -841,7 +841,8 @@
 				}),
 				style: {
 					"--sizePx": `${n}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/endpoints/governance/imageLease.ts": function(e, t, n) {
@@ -1002,4 +1003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.16d63e5e149bf651c7be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.21bbc5713a0786f16fb4.js.map

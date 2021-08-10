@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.659a3a1e9d68c84ffed9.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b686eec20236bc03c7c6.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -228,7 +228,7 @@
 						a = Object(v.j)(s, {
 							subredditId: i
 						}),
-						o = Object(h.l)(s);
+						o = Object(h.m)(s);
 					if (a) return Object(v.f)(s, {
 						subredditId: i
 					});
@@ -875,7 +875,7 @@
 					className: b.a.user,
 					to: `/user/${x}/`,
 					onClick: () => {
-						f && r(Object(l.t)(f.id, f.displayName))
+						f && r(Object(l.w)(f.id, f.displayName))
 					}
 				}, O) : s.a.createElement("div", {
 					className: b.a.user
@@ -1160,7 +1160,7 @@
 				}))()), i.a.createElement(c.a, {
 					className: k.a.button,
 					onClick: () => {
-						v(Object(p.m)()), n(Object(d.f)("powerups_sidebar"))
+						v(Object(p.p)()), n(Object(d.f)("powerups_sidebar"))
 					}
 				})), i.a.createElement("div", {
 					className: k.a.group
@@ -1178,7 +1178,7 @@
 					className: k.a.heroes,
 					maxSupporters: 8,
 					onShowFullSupportersList: () => {
-						v(Object(p.o)()), n(Object(d.g)(t))
+						v(Object(p.r)()), n(Object(d.h)(t))
 					},
 					isAltruismMessagingEnabled: N
 				}), !(null == E ? void 0 : E.length) && i.a.createElement("div", {
@@ -3328,4 +3328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.659a3a1e9d68c84ffed9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b686eec20236bc03c7c6.js.map

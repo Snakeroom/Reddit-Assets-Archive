@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.4470aa16aa5ff594433e.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.a4de829d524977bdf78d.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsCtaButton/index.tsx": function(e, t, s) {
@@ -104,7 +104,7 @@
 					className: b.a.user,
 					to: `/user/${E}/`,
 					onClick: () => {
-						f && r(Object(d.t)(f.id, f.displayName))
+						f && r(Object(d.w)(f.id, f.displayName))
 					}
 				}, v) : a.a.createElement("div", {
 					className: b.a.user
@@ -351,7 +351,7 @@
 			});
 			t.default = Object(o.a)(() => {
 				const e = Object(n.e)(P.j),
-					t = Object(n.e)(C.q),
+					t = Object(n.e)(C.r),
 					s = Object(n.e)(e => t ? Object(O.l)(e, {
 						subredditId: t.id
 					}) : []),
@@ -409,7 +409,7 @@
 				}), a.a.createElement(m.a, {
 					className: F.a.ctaButton,
 					onClick: () => {
-						x(Object(N.p)()), h(Object(i.f)("supporters_list_modal"))
+						x(Object(N.s)()), h(Object(i.f)("supporters_list_modal"))
 					}
 				}))) : (h(Object(d.f)({
 					kind: k.b.Error,
@@ -561,4 +561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.4470aa16aa5ff594433e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.a4de829d524977bdf78d.js.map

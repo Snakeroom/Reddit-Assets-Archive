@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.46506f4723152385f3f5.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7d3d8c47ecda671f3cd3.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, a, t) {
@@ -134,8 +134,8 @@
 				h = t("./src/reddit/controls/Button/index.tsx"),
 				g = t("./src/reddit/helpers/trackers/goldPayment.ts"),
 				P = t("./src/config.ts"),
-				C = t("./node_modules/react-dom/index.js"),
-				b = t.n(C),
+				b = t("./node_modules/react-dom/index.js"),
+				C = t.n(b),
 				y = t("./node_modules/react-redux/es/index.js"),
 				k = t("./node_modules/reselect/es/index.js"),
 				x = t("./src/higherOrderComponents/makeAsync.tsx"),
@@ -162,7 +162,7 @@
 						className: e
 					} = this.props, a = paypalCheckout.Button.driver("react", {
 						React: r.a,
-						ReactDOM: b.a
+						ReactDOM: C.a
 					}), t = {
 						sandbox: P.a.paypal.apiKey,
 						production: P.a.paypal.apiKey
@@ -427,13 +427,16 @@
 			const {
 				fbt: i
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			a.a = e => s.a.createElement("div", {
+			a.a = ({
+				buttonText: e,
+				onCloseClick: a
+			}) => s.a.createElement("div", {
 				className: o.a.purchaseFooter
 			}, s.a.createElement(r.i, {
 				className: o.a.purchaseButton,
 				"data-redditstyle": !0,
-				onClick: e.onCloseClick
-			}, i._("Done", null, {
+				onClick: a
+			}, e || i._("Done", null, {
 				hk: "3s1bT9"
 			})))
 		},
@@ -459,8 +462,8 @@
 				h = t("./src/reddit/constants/colors.ts"),
 				g = t("./src/reddit/helpers/correlationIdTracker.ts"),
 				P = t("./src/reddit/helpers/trackers/goldPayment.ts"),
-				C = t("./src/reddit/models/User/index.ts"),
-				b = t("./src/reddit/selectors/gild.ts"),
+				b = t("./src/reddit/models/User/index.ts"),
+				C = t("./src/reddit/selectors/gild.ts"),
 				y = t("./src/reddit/selectors/gold/giveAwards.ts"),
 				k = t("./src/reddit/selectors/goldPurchaseModals.ts"),
 				x = t("./src/reddit/selectors/platform.ts"),
@@ -487,7 +490,7 @@
 					},
 					coinBalance: E.d,
 					gildThingId: k.s,
-					isIframed: b.g,
+					isIframed: C.g,
 					nightmode: E.V,
 					savedCardsPending: k.w,
 					selectedAward: y.b,
@@ -497,7 +500,7 @@
 					paypalErrorMessage: k.d,
 					userName: e => {
 						const a = Object(E.j)(e);
-						return `u/${Object(C.e)(a)}`
+						return `u/${Object(b.e)(a)}`
 					}
 				}),
 				M = Object(r.b)(N, (e, a) => ({
@@ -637,4 +640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.46506f4723152385f3f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.7d3d8c47ecda671f3cd3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.be76772bdbf44b2041f8.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.e21ac6e79e7265a6267f.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -9,13 +9,13 @@
 			})), r.d(t, "c", (function() {
 				return j
 			})), r.d(t, "a", (function() {
-				return k
+				return x
 			}));
 			var a = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/env/index.ts"),
 				o = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/sentry/index.ts"),
-				c = r("./src/reddit/endpoints/gold/productCatalog.ts"),
+				c = r("./src/reddit/endpoints/gold/productCatalog/index.ts"),
 				d = r("./src/reddit/selectors/user.ts"),
 				i = r("./src/reddit/actions/toaster.ts"),
 				l = r("./src/reddit/models/Toast/index.ts"),
@@ -68,7 +68,7 @@
 						});
 						r(g(e))
 					}
-				}, _ = Object(o.a)(m.h), k = () => async (e, t, {
+				}, _ = Object(o.a)(m.h), x = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					var o, d;
@@ -130,7 +130,7 @@
 				g = r.n(O);
 			const {
 				fbt: j
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), _ = "https://www.redditstatic.com/gold/awards/animations/free_award", k = (e, t) => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), _ = "https://www.redditstatic.com/gold/awards/animations/free_award", x = (e, t) => {
 				var r;
 				return (null === (r = null == e ? void 0 : e.assets) || void 0 === r ? void 0 : r.length) && (null == t ? void 0 : t.icon) && (e.assets[0].u = t.icon.url, e.assets[0].p = ""), e
 			};
@@ -147,7 +147,7 @@
 				const O = () => {
 					e(Object(l.a)("complete")), t(Object(b.f)())
 				};
-				let x = !1;
+				let k = !1;
 				return s.a.createElement(h.e, {
 					className: g.a.body
 				}, s.a.createElement("button", {
@@ -158,8 +158,8 @@
 					loop: !0,
 					className: g.a.flyingAnimation,
 					onClick: () => {
-						x || (e(Object(l.a)("redeem")), t(Object(m.a)()), x = !0, setTimeout(() => {
-							x = !1
+						k || (e(Object(l.a)("redeem")), t(Object(m.a)()), k = !0, setTimeout(() => {
+							k = !1
 						}, 1e4))
 					}
 				}), s.a.createElement("p", {
@@ -167,7 +167,7 @@
 				}, j._("Open it! Open it! (Just click, it’s easy)", null, {
 					hk: "2RWqvN"
 				}))), r && a && s.a.createElement(s.a.Fragment, null, s.a.createElement(f.a, {
-					assetData: k(a, r),
+					assetData: x(a, r),
 					className: g.a.openingAnimation,
 					onClick: n.a
 				}), s.a.createElement("h2", {
@@ -230,4 +230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.be76772bdbf44b2041f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.e21ac6e79e7265a6267f.js.map

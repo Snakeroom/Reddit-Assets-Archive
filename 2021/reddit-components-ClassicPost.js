@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e3a8db5d90749978b2b5.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.850f5431bc3d75a29293.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1572,8 +1572,8 @@
 						first: G,
 						flairStyleTemplate: W,
 						formatTitle: Y,
-						hostPostData: H,
-						isCheckboxSelected: q,
+						hostPostData: q,
+						isCheckboxSelected: H,
 						isCurrentUserProfilePost: z,
 						isFrontpage: Q,
 						isGalleryTileLayoutDefault: K,
@@ -1640,7 +1640,7 @@
 							model: ie,
 							handleVote: w,
 							showBulkActionCheckbox: le,
-							isCheckboxSelected: q,
+							isCheckboxSelected: H,
 							toggleCheckbox: be,
 							flairStyleTemplate: ve,
 							redditStyle: ce,
@@ -1720,7 +1720,7 @@
 							hasModFlairPerms: Se,
 							hasModPostPerms: xe,
 							hasModFullPerms: ge,
-							hostPostData: H,
+							hostPostData: q,
 							isOverlay: !!Z,
 							modModeEnabled: ee,
 							onIgnoreReports: ne,
@@ -1883,9 +1883,9 @@
 						clearTimeout(D.current), clearTimeout(L.current), clearTimeout(N.current)
 					}
 				}, [t]);
-				const H = Object(s.useCallback)(() => j(!0), [j]),
-					q = 0 === C.length,
-					z = y || q,
+				const q = Object(s.useCallback)(() => j(!0), [j]),
+					H = 0 === C.length,
+					z = y || H,
 					Q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return r.a.createElement(r.a.Fragment, null, !f && r.a.createElement("div", {
 					className: m.a.countAnimation
@@ -1903,7 +1903,7 @@
 						"aria-hidden": !0,
 						className: m.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: H,
+						onTransitionEnd: q,
 						style: S && C.length > 0 && !y ? {
 							transform: `translateY(-${O&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(O?500:750)/1e3}s`
@@ -2998,7 +2998,7 @@
 			n.d(t, "b", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return H
+				return q
 			}));
 			var s = n("./node_modules/polished/dist/polished.es.js"),
 				r = n("./node_modules/react/index.js"),
@@ -3071,7 +3071,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
 			}(A || (A = {}));
-			const H = ({
+			const q = ({
 					size: e,
 					titleColor: t,
 					titleType: n,
@@ -3112,7 +3112,7 @@
 						type: n
 					}, r) : r)
 				},
-				q = ({
+				H = ({
 					className: e,
 					disableVisited: t,
 					titleColor: n,
@@ -3148,7 +3148,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, r = Object(U.a)(), i = Object(G.a)(m.pc) === m.tc.Enabled;
+					} = t, r = Object(U.a)(), i = Object(G.a)(m.qc) === m.uc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(z, {
 						nowrap: e.nowrap
 					}, o.a.createElement(X, e));
@@ -3173,7 +3173,7 @@
 								postId: e.id,
 								source: n
 							}, o.a.createElement(X, t)) : o.a.createElement(X, t)
-						})(t, e) : o.a.createElement(q, {
+						})(t, e) : o.a.createElement(H, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -3194,7 +3194,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(r));
 					const i = e.isCommentsPage ? R.a.PostComments : R.a.PostItem;
-					return o.a.createElement(H, {
+					return o.a.createElement(q, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -4742,17 +4742,18 @@
 					}
 				},
 				g = e => t => {
-					const n = f(t, {
+					var n;
+					const s = f(t, {
 						thingId: e
 					});
 					return {
-						...n,
+						...s,
 						source: "gold_payment",
 						action: "view",
 						noun: "success",
 						payment: {
-							...n.payment,
-							method: t.platform.currentPage.queryParams.thanks ? l.PaymentMethod.Paypal : l.PaymentMethod.CreditCard
+							...s.payment,
+							method: (null === (n = t.platform.currentPage) || void 0 === n ? void 0 : n.queryParams.thanks) ? l.PaymentMethod.Paypal : l.PaymentMethod.CreditCard
 						}
 					}
 				}
@@ -6852,9 +6853,9 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = Object(s.a)(e => Object(o.c)(e, {
-				experimentName: r.fd,
+				experimentName: r.gd,
 				experimentEligibilitySelector: o.a
-			}), i.G, (e, t) => e === r.pd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.G, (e, t) => e === r.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -6997,4 +6998,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e3a8db5d90749978b2b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.850f5431bc3d75a29293.js.map

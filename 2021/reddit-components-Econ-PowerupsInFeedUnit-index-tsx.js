@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1263285039eed5ce7f7c.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.25eb5be34a572bf46a70.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -213,7 +213,7 @@
 					className: x.a.supporters,
 					subredditId: e,
 					onClick: t => {
-						w(Object(m.c)("post_upsell")), s(t ? Object(i.g)(e) : Object(i.f)("in_feed_unit"))
+						w(Object(m.c)("post_upsell")), s(t ? Object(i.h)(e) : Object(i.f)("in_feed_unit"))
 					}
 				}), o.a.createElement(u.q, {
 					priority: u.b.Primary,
@@ -231,4 +231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1263285039eed5ce7f7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.25eb5be34a572bf46a70.js.map

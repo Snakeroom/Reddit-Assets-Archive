@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.a5d289d5ce4cdd14cd86.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.60ba0171f43378490b8b.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -382,7 +382,7 @@
 						h(t.length), m(Object(a.a)(t.length));
 						const o = await Promise.all([...t].map(e => q(e, !0, K))),
 							s = o.reduce((e, t) => e + (t.success ? 1 : 0), 0);
-						s > 0 && (m(Object(a.n)(s)), d(Object(R.f)({
+						s > 0 && (m(Object(a.q)(s)), d(Object(R.f)({
 							duration: 5e3,
 							kind: B.b.SuccessMod,
 							text: u.fbt._({
@@ -458,7 +458,7 @@
 				}))))), !H && n.a.createElement(S.q, {
 					className: L.a.unlockButton,
 					onClick: () => {
-						m(Object(a.q)()), d(Object(N.f)("emote_picker"))
+						m(Object(a.t)()), d(Object(N.f)("emote_picker"))
 					},
 					priority: S.b.Primary
 				}, u.fbt._("Unlock Emojis", null, {
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.a5d289d5ce4cdd14cd86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.60ba0171f43378490b8b.js.map

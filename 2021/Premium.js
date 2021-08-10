@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.1328c4d14f16466b3295.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.6bd192a77880ba01e890.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium", "GoldPurchasePaymentActions"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, r) {
@@ -39,9 +39,9 @@
 				return E
 			})), r.d(t, "j", (function() {
 				return C
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "g", (function() {
 				return I
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "f", (function() {
 				return N
 			})), r.d(t, "d", (function() {
 				return S
@@ -49,12 +49,12 @@
 				return M
 			})), r.d(t, "a", (function() {
 				return G
-			})), r.d(t, "g", (function() {
-				return U
 			})), r.d(t, "h", (function() {
-				return q
-			})), r.d(t, "i", (function() {
+				return U
+			})), r.d(t, "e", (function() {
 				return F
+			})), r.d(t, "i", (function() {
+				return D
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./node_modules/lodash/omit.js"),
@@ -115,7 +115,7 @@
 						isAnonymous: r
 					};
 					else if (f) {
-						const e = Object(g.c)(m, {
+						const e = Object(g.d)(m, {
 							provider: j.b.Stripe
 						});
 						if (!e) return;
@@ -162,7 +162,7 @@
 							powerupsCount: a,
 							user: k,
 							isAnonymous: r
-						})) : f && c(q({
+						})) : f && c(F({
 							user: k
 						})))
 					} catch (S) {
@@ -181,7 +181,7 @@
 						isAnonymous: t
 					};
 					else if (b) {
-						const e = Object(g.c)(m, {
+						const e = Object(g.d)(m, {
 							provider: j.b.PayPal
 						});
 						if (!e) return null;
@@ -231,7 +231,7 @@
 									powerupsCount: r,
 									user: n,
 									isAnonymous: t
-								})) : b && i(q({
+								})) : b && i(F({
 									user: n
 								})), null
 							}
@@ -327,11 +327,17 @@
 						})))
 					}
 				}, R = Object(m.a)(f.S), U = e => async (t, r) => {
-					t(R(e)), t(Object(v.k)(e.subredditId, {
+					t(R(e)), t(Object(v.l)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(_.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(_.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, q = Object(m.a)(f.W), F = Object(m.a)(f.ab)
+				}, q = Object(m.a)(f.W), F = ({
+					user: e
+				}) => async t => {
+					await t(Object(v.n)(!0)), t(q({
+						user: e
+					}))
+				}, D = Object(m.a)(f.ab)
 		},
 		"./src/reddit/actions/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
@@ -379,7 +385,7 @@
 					gqlContext: i
 				}) => {
 					const o = a();
-					if (!Object(b.h)(o, {
+					if (!Object(b.i)(o, {
 							subredditId: t,
 							type: e
 						})) {
@@ -623,8 +629,8 @@
 				h = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const g = Object(i.a)(h.t),
 				y = Object(i.a)(h.e),
-				P = e => async t => {
-					t(g(e)), t(Object(l.h)(u.a.ECON_PREMIUM_PURCHASE))
+				P = (e, t) => async r => {
+					r(g(e)), r(Object(l.h)(u.a.ECON_PREMIUM_PURCHASE, t))
 				}, k = () => async e => {
 					e(Object(l.g)(u.a.ECON_PREMIUM_PURCHASE)), e(y())
 				}, v = e => async (t, r, {
@@ -660,28 +666,28 @@
 				}, _ = Object(i.a)(h.v), O = ({
 					packageId: e,
 					correlationId: t
-				}) => async (r, a, {
-					apiContext: i
+				}, r) => async (a, i, {
+					apiContext: s
 				}) => {
-					r(P({
+					a(P({
 						packageId: e,
 						correlationId: t
-					}));
-					const s = Object(f.a)(a()),
-						l = (null == s ? void 0 : s.paypalButtonId) || n.a.paypal.buttons.premium;
-					if (l) try {
+					}, r));
+					const l = Object(f.a)(i()),
+						u = (null == l ? void 0 : l.paypalButtonId) || n.a.paypal.buttons.premium;
+					if (u) try {
 						const e = await Object(m.f)({
-							buttonId: l,
-							context: i(),
+							buttonId: u,
+							context: s(),
 							correlationId: t
 						});
 						if (e.error) {
 							const t = Object(c.a)(e.error);
-							r(Object(d.paypalApiError)(t))
-						} else r(_(e))
-					} catch (u) {
-						const e = Object(c.a)(u);
-						r(Object(d.paypalApiError)(e))
+							a(Object(d.paypalApiError)(t))
+						} else a(_(e))
+					} catch (p) {
+						const e = Object(c.a)(p);
+						a(Object(d.paypalApiError)(e))
 					} else o.c.captureMessage("No Premium packages available on Premium purchase modal")
 				}
 		},
@@ -698,7 +704,7 @@
 				a = r("./src/lib/env/index.ts"),
 				i = r("./src/lib/makeActionCreator/index.ts"),
 				o = r("./src/lib/sentry/index.ts"),
-				s = r("./src/reddit/endpoints/gold/productCatalog.ts"),
+				s = r("./src/reddit/endpoints/gold/productCatalog/index.ts"),
 				c = r("./src/reddit/selectors/user.ts"),
 				d = r("./src/reddit/actions/toaster.ts"),
 				l = r("./src/reddit/models/Toast/index.ts"),
@@ -1285,7 +1291,8 @@
 				}),
 				style: {
 					"--sizePx": `${r}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/endpoints/gold/paypalPurchases.ts": function(e, t, r) {
@@ -1431,7 +1438,7 @@
 				}).then(c.c)
 			}
 		},
-		"./src/reddit/endpoints/gold/productCatalog.ts": function(e, t, r) {
+		"./src/reddit/endpoints/gold/productCatalog/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
 				return g
@@ -2403,7 +2410,7 @@
 				}) => {
 					var i, c;
 					const d = Object(s.e)(I.j),
-						l = Object(s.e)(L.d);
+						l = Object(s.e)(L.e);
 					if (Object(s.e)(N.s)) return o.a.createElement("div", {
 						className: Object(T.a)(R.a.buttons, e, {
 							[R.a.hero]: !!t
@@ -2417,8 +2424,8 @@
 					const u = d.find(e => e.frequency === A.c.Monthly),
 						m = d.find(e => e.frequency === A.c.Yearly);
 					if (!u || !m) return null;
-					const p = null === (i = Object(L.i)(l, C.b.Month)) || void 0 === i ? void 0 : i[0],
-						b = null === (c = Object(L.i)(l, C.b.Year)) || void 0 === c ? void 0 : c[0];
+					const p = null === (i = Object(L.j)(l, C.b.Month)) || void 0 === i ? void 0 : i[0],
+						b = null === (c = Object(L.j)(l, C.b.Year)) || void 0 === c ? void 0 : c[0];
 					if (!p || !b) return null;
 					const f = {
 							price: p.price,
@@ -2649,24 +2656,26 @@
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "g", (function() {
+			r.d(t, "h", (function() {
 				return c
-			})), r.d(t, "h", (function() {
-				return d
-			})), r.d(t, "a", (function() {
-				return l
-			})), r.d(t, "d", (function() {
-				return u
 			})), r.d(t, "i", (function() {
-				return m
-			})), r.d(t, "c", (function() {
-				return b
+				return d
 			})), r.d(t, "b", (function() {
-				return f
-			})), r.d(t, "f", (function() {
-				return h
+				return l
+			})), r.d(t, "a", (function() {
+				return u
 			})), r.d(t, "e", (function() {
+				return m
+			})), r.d(t, "j", (function() {
+				return p
+			})), r.d(t, "d", (function() {
+				return f
+			})), r.d(t, "c", (function() {
+				return h
+			})), r.d(t, "g", (function() {
 				return g
+			})), r.d(t, "f", (function() {
+				return y
 			}));
 			var n = r("./node_modules/reselect/es/index.js"),
 				a = r("./src/lib/makeProductOfferKey/index.ts"),
@@ -2690,26 +2699,31 @@
 					});
 					return r && r[0]
 				},
-				u = e => {
+				u = (e, t) => {
+					var r;
+					const n = l(e, t);
+					return null === (r = null == n ? void 0 : n.pricePackages) || void 0 === r ? void 0 : r[0].price
+				},
+				m = e => {
 					const t = d(e, {
 						type: i.c.Premium
 					});
 					return (null == t ? void 0 : t[0]) || null
 				},
-				m = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === o.b.PayPal || e[0] === o.b.Stripe)(e.requiredPaymentProviders)) : null,
-				p = Object(n.a)(u, s.p, (e, t) => m(e, t) || null),
-				b = Object(n.a)(p, (e, {
+				p = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === o.b.PayPal || e[0] === o.b.Stripe)(e.requiredPaymentProviders)) : null,
+				b = Object(n.a)(m, s.p, (e, t) => p(e, t) || null),
+				f = Object(n.a)(b, (e, {
 					provider: t
 				}) => t, (e, t) => null == e ? void 0 : e.find(e => {
 					var r;
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
 				})),
-				f = Object(n.a)(p, e => (null == e ? void 0 : e[0].price) || null),
-				h = Object(n.a)(e => {
+				h = Object(n.a)(b, e => (null == e ? void 0 : e[0].price) || null),
+				g = Object(n.a)(e => {
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
-				g = Object(n.a)(h, e => Boolean(null == e ? void 0 : e.isCanceled))
+				y = Object(n.a)(g, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
@@ -2855,4 +2869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.1328c4d14f16466b3295.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.6bd192a77880ba01e890.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f4b4243a46e8391356ba.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.395642286f9d6a3eac4e.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -528,7 +528,7 @@
 					!t && i || await n(_(e, [r.id]))
 				}, I = e => async (t, n) => {
 					if (!e) return !1;
-					await t(Object(p.k)(e, {
+					await t(Object(p.l)(e, {
 						fullData: !0
 					}));
 					const o = n();
@@ -724,7 +724,7 @@
 						i = Object(j.j)(s, {
 							subredditId: r
 						}),
-						a = Object(f.l)(s);
+						a = Object(f.m)(s);
 					if (i) return Object(j.f)(s, {
 						subredditId: r
 					});
@@ -1669,14 +1669,14 @@
 					post: A
 				}) => {
 					var G, U, z, W;
-					const Q = Object(r.e)(N.p),
+					const Q = Object(r.e)(N.q),
 						K = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.m)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.n)(e)
 						}),
 						V = Object(r.e)(e => {
 							var t;
-							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.l)(e)
+							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.m)(e)
 						}),
 						H = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
 						q = Object(w.b)(A),
@@ -3085,14 +3085,14 @@
 			const r = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.ed
-					}) === o.od.Enabled
+						experimentName: o.fd
+					}) === o.pd.Enabled
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: o.dd
-					}) === o.nd.Enabled
+						experimentName: o.ed
+					}) === o.od.Enabled
 				}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -3218,4 +3218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f4b4243a46e8391356ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.395642286f9d6a3eac4e.js.map

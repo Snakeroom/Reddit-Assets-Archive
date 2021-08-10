@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.57ee359e85ff513359dc.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.7ebf73efea6ecb0a64f4.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -482,8 +482,8 @@
 				f = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const O = Object(a.a)(f.t),
 				g = Object(a.a)(f.e),
-				C = e => async t => {
-					t(O(e)), t(Object(l.h)(u.a.ECON_PREMIUM_PURCHASE))
+				C = (e, t) => async r => {
+					r(O(e)), r(Object(l.h)(u.a.ECON_PREMIUM_PURCHASE, t))
 				}, j = () => async e => {
 					e(Object(l.g)(u.a.ECON_PREMIUM_PURCHASE)), e(g())
 				}, x = e => async (t, r, {
@@ -519,28 +519,28 @@
 				}, _ = Object(a.a)(f.v), P = ({
 					packageId: e,
 					correlationId: t
-				}) => async (r, o, {
-					apiContext: a
+				}, r) => async (o, a, {
+					apiContext: c
 				}) => {
-					r(C({
+					o(C({
 						packageId: e,
 						correlationId: t
-					}));
-					const c = Object(h.a)(o()),
-						l = (null == c ? void 0 : c.paypalButtonId) || n.a.paypal.buttons.premium;
-					if (l) try {
+					}, r));
+					const l = Object(h.a)(a()),
+						u = (null == l ? void 0 : l.paypalButtonId) || n.a.paypal.buttons.premium;
+					if (u) try {
 						const e = await Object(p.f)({
-							buttonId: l,
-							context: a(),
+							buttonId: u,
+							context: c(),
 							correlationId: t
 						});
 						if (e.error) {
 							const t = Object(i.a)(e.error);
-							r(Object(d.paypalApiError)(t))
-						} else r(_(e))
-					} catch (u) {
-						const e = Object(i.a)(u);
-						r(Object(d.paypalApiError)(e))
+							o(Object(d.paypalApiError)(t))
+						} else o(_(e))
+					} catch (m) {
+						const e = Object(i.a)(m);
+						o(Object(d.paypalApiError)(e))
 					} else s.c.captureMessage("No Premium packages available on Premium purchase modal")
 				}
 		},
@@ -557,7 +557,7 @@
 				o = r("./src/lib/env/index.ts"),
 				a = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/sentry/index.ts"),
-				c = r("./src/reddit/endpoints/gold/productCatalog.ts"),
+				c = r("./src/reddit/endpoints/gold/productCatalog/index.ts"),
 				i = r("./src/reddit/selectors/user.ts"),
 				d = r("./src/reddit/actions/toaster.ts"),
 				l = r("./src/reddit/models/Toast/index.ts"),
@@ -1085,7 +1085,8 @@
 				}),
 				style: {
 					"--sizePx": `${r}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/endpoints/gold/paypalPurchases.ts": function(e, t, r) {
@@ -1285,4 +1286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.57ee359e85ff513359dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.7ebf73efea6ecb0a64f4.js.map

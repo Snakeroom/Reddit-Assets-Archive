@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.2daa6a9100c1468738dc.js
-// Retrieved at 8/4/2021, 7:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.51f9ddb04601bb9ab216.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, r) {
@@ -141,8 +141,8 @@
 				f = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const g = Object(o.a)(f.t),
 				O = Object(o.a)(f.e),
-				y = e => async t => {
-					t(g(e)), t(Object(u.h)(l.a.ECON_PREMIUM_PURCHASE))
+				y = (e, t) => async r => {
+					r(g(e)), r(Object(u.h)(l.a.ECON_PREMIUM_PURCHASE, t))
 				}, _ = () => async e => {
 					e(Object(u.g)(l.a.ECON_PREMIUM_PURCHASE)), e(O())
 				}, P = e => async (t, r, {
@@ -178,28 +178,28 @@
 				}, j = Object(o.a)(f.v), x = ({
 					packageId: e,
 					correlationId: t
-				}) => async (r, a, {
-					apiContext: o
+				}, r) => async (a, o, {
+					apiContext: c
 				}) => {
-					r(y({
+					a(y({
 						packageId: e,
 						correlationId: t
-					}));
-					const c = Object(m.a)(a()),
-						u = (null == c ? void 0 : c.paypalButtonId) || n.a.paypal.buttons.premium;
-					if (u) try {
+					}, r));
+					const u = Object(m.a)(o()),
+						l = (null == u ? void 0 : u.paypalButtonId) || n.a.paypal.buttons.premium;
+					if (l) try {
 						const e = await Object(p.f)({
-							buttonId: u,
-							context: o(),
+							buttonId: l,
+							context: c(),
 							correlationId: t
 						});
 						if (e.error) {
 							const t = Object(i.a)(e.error);
-							r(Object(s.paypalApiError)(t))
-						} else r(j(e))
-					} catch (l) {
-						const e = Object(i.a)(l);
-						r(Object(s.paypalApiError)(e))
+							a(Object(s.paypalApiError)(t))
+						} else a(j(e))
+					} catch (h) {
+						const e = Object(i.a)(h);
+						a(Object(s.paypalApiError)(e))
 					} else d.c.captureMessage("No Premium packages available on Premium purchase modal")
 				}
 		},
@@ -630,4 +630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.2daa6a9100c1468738dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.51f9ddb04601bb9ab216.js.map

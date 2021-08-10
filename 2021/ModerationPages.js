@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f2e5db0bcff6970f5424.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1d4ad763e04b294516c0.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -750,7 +750,7 @@
 						z = f.i;
 						break;
 					case o.Zb.Powerups:
-						z = x.k;
+						z = x.l;
 						break;
 					case o.Zb.Muted:
 						z = H.b;
@@ -13196,7 +13196,7 @@
 				})), n && a.a.createElement(p.o, {
 					on: v,
 					onClick: () => (n => {
-						s(Object(h.r)("comments_with_gifs", n, !n)), t(Object(m.l)(e, {
+						s(Object(h.u)("comments_with_gifs", n, !n)), t(Object(m.m)(e, {
 							[b.a.CommentsWithGifs]: n
 						}))
 					})(!v),
@@ -22285,9 +22285,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.fc
+					experimentName: n.gc
 				});
-				return !(!t || Object(n.he)(t))
+				return !(!t || Object(n.ie)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -22300,9 +22300,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: a.fd,
+				experimentName: a.gd,
 				experimentEligibilitySelector: o.a
-			}), r.G, (e, t) => e === a.pd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.G, (e, t) => e === a.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/streamingModSettings.ts": function(e, t, s) {
 			"use strict";
@@ -22429,4 +22429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f2e5db0bcff6970f5424.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1d4ad763e04b294516c0.js.map

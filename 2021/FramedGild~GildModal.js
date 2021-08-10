@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.134d96a57667d2458d8a.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9898dadbefd1c8fa0b9b.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1329,7 +1329,7 @@
 				n = s("./src/lib/env/index.ts"),
 				a = s("./src/lib/makeActionCreator/index.ts"),
 				o = s("./src/lib/sentry/index.ts"),
-				i = s("./src/reddit/endpoints/gold/productCatalog.ts"),
+				i = s("./src/reddit/endpoints/gold/productCatalog/index.ts"),
 				d = s("./src/reddit/selectors/user.ts"),
 				c = s("./src/reddit/actions/toaster.ts"),
 				l = s("./src/reddit/models/Toast/index.ts"),
@@ -4206,12 +4206,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case b.Rd.SmIcon:
+						case b.Sd.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case b.Rd.SmIconHc:
+						case b.Sd.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4279,7 +4279,8 @@
 				}),
 				style: {
 					"--sizePx": `${s}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/endpoints/gold/paypalPurchases.ts": function(e, t, s) {
@@ -5202,12 +5203,12 @@
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Jd
+						experimentName: r.Kd
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.Rd.SmIcon || t === r.Rd.SmIconHc
+					return t === r.Sd.SmIcon || t === r.Sd.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5239,4 +5240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.134d96a57667d2458d8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9898dadbefd1c8fa0b9b.js.map

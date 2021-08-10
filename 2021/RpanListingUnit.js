@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.614962d0d13d6172e7fe.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.7c44c9da3c1f10f7bcb4.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Qc
+					experimentName: u.Rc
 				});
-				return Object(u.he)(t) ? void 0 : t
+				return Object(u.ie)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Rc
+					experimentName: u.Sc
 				});
-				return Object(u.he)(t) ? void 0 : t
-			}, (e, t) => e === u.Sc.Enabled && t === u.Sc.Enabled);
+				return Object(u.ie)(t) ? void 0 : t
+			}, (e, t) => e === u.Tc.Enabled && t === u.Tc.Enabled);
 			var h = n("./src/config.ts");
 			var b = n("./src/reddit/selectors/user.ts");
 			const f = e => {
@@ -2757,17 +2757,18 @@
 					}
 				},
 				I = e => t => {
-					const n = b(t, {
+					var n;
+					const r = b(t, {
 						thingId: e
 					});
 					return {
-						...n,
+						...r,
 						source: "gold_payment",
 						action: "view",
 						noun: "success",
 						payment: {
-							...n.payment,
-							method: t.platform.currentPage.queryParams.thanks ? l.PaymentMethod.Paypal : l.PaymentMethod.CreditCard
+							...r.payment,
+							method: (null === (n = t.platform.currentPage) || void 0 === n ? void 0 : n.queryParams.thanks) ? l.PaymentMethod.Paypal : l.PaymentMethod.CreditCard
 						}
 					}
 				}
@@ -4079,4 +4080,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.614962d0d13d6172e7fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.7c44c9da3c1f10f7bcb4.js.map

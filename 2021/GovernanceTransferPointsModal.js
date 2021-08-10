@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.49ca786c56c43c11c970.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.bad4852b1862887fec0d.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, r) {
@@ -11,9 +11,9 @@
 			})), r.d(t, "d", (function() {
 				return b
 			})), r.d(t, "b", (function() {
-				return p
-			})), r.d(t, "c", (function() {
 				return g
+			})), r.d(t, "c", (function() {
+				return p
 			}));
 			var n = r("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
 				s = r("./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
@@ -70,7 +70,7 @@
 				return "XE" + m("XE00" + t) + t
 			}
 
-			function p(e) {
+			function g(e) {
 				let t = null;
 				try {
 					t = h(e.from)
@@ -81,7 +81,7 @@
 				return h(Object(n.e)(Object(o.a)(Object(a.encode)([t, r])), 12))
 			}
 
-			function g(e, t, r) {
+			function p(e, t, r) {
 				return 32 !== Object(n.d)(t) && i.throwArgumentError("salt must be 32 bytes", "salt", t), 32 !== Object(n.d)(r) && i.throwArgumentError("initCodeHash must be 32 bytes", "initCodeHash", r), h(Object(n.e)(Object(o.a)(Object(n.b)(["0xff", h(e), t, r])), 12))
 			}
 		},
@@ -124,79 +124,79 @@
 					}), this._hex = t, this._isBigNumber = !0, Object.freeze(this)
 				}
 				fromTwos(e) {
-					return p(g(this).fromTwos(e))
+					return g(p(this).fromTwos(e))
 				}
 				toTwos(e) {
-					return p(g(this).toTwos(e))
+					return g(p(this).toTwos(e))
 				}
 				abs() {
 					return "-" === this._hex[0] ? f.from(this._hex.substring(1)) : this
 				}
 				add(e) {
-					return p(g(this).add(g(e)))
+					return g(p(this).add(p(e)))
 				}
 				sub(e) {
-					return p(g(this).sub(g(e)))
+					return g(p(this).sub(p(e)))
 				}
 				div(e) {
-					return f.from(e).isZero() && v("division by zero", "div"), p(g(this).div(g(e)))
+					return f.from(e).isZero() && v("division by zero", "div"), g(p(this).div(p(e)))
 				}
 				mul(e) {
-					return p(g(this).mul(g(e)))
+					return g(p(this).mul(p(e)))
 				}
 				mod(e) {
-					const t = g(e);
-					return t.isNeg() && v("cannot modulo negative values", "mod"), p(g(this).umod(t))
+					const t = p(e);
+					return t.isNeg() && v("cannot modulo negative values", "mod"), g(p(this).umod(t))
 				}
 				pow(e) {
-					const t = g(e);
-					return t.isNeg() && v("cannot raise to negative values", "pow"), p(g(this).pow(t))
+					const t = p(e);
+					return t.isNeg() && v("cannot raise to negative values", "pow"), g(p(this).pow(t))
 				}
 				and(e) {
-					const t = g(e);
-					return (this.isNegative() || t.isNeg()) && v("cannot 'and' negative values", "and"), p(g(this).and(t))
+					const t = p(e);
+					return (this.isNegative() || t.isNeg()) && v("cannot 'and' negative values", "and"), g(p(this).and(t))
 				}
 				or(e) {
-					const t = g(e);
-					return (this.isNegative() || t.isNeg()) && v("cannot 'or' negative values", "or"), p(g(this).or(t))
+					const t = p(e);
+					return (this.isNegative() || t.isNeg()) && v("cannot 'or' negative values", "or"), g(p(this).or(t))
 				}
 				xor(e) {
-					const t = g(e);
-					return (this.isNegative() || t.isNeg()) && v("cannot 'xor' negative values", "xor"), p(g(this).xor(t))
+					const t = p(e);
+					return (this.isNegative() || t.isNeg()) && v("cannot 'xor' negative values", "xor"), g(p(this).xor(t))
 				}
 				mask(e) {
-					return (this.isNegative() || e < 0) && v("cannot mask negative values", "mask"), p(g(this).maskn(e))
+					return (this.isNegative() || e < 0) && v("cannot mask negative values", "mask"), g(p(this).maskn(e))
 				}
 				shl(e) {
-					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shl"), p(g(this).shln(e))
+					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shl"), g(p(this).shln(e))
 				}
 				shr(e) {
-					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shr"), p(g(this).shrn(e))
+					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shr"), g(p(this).shrn(e))
 				}
 				eq(e) {
-					return g(this).eq(g(e))
+					return p(this).eq(p(e))
 				}
 				lt(e) {
-					return g(this).lt(g(e))
+					return p(this).lt(p(e))
 				}
 				lte(e) {
-					return g(this).lte(g(e))
+					return p(this).lte(p(e))
 				}
 				gt(e) {
-					return g(this).gt(g(e))
+					return p(this).gt(p(e))
 				}
 				gte(e) {
-					return g(this).gte(g(e))
+					return p(this).gte(p(e))
 				}
 				isNegative() {
 					return "-" === this._hex[0]
 				}
 				isZero() {
-					return g(this).isZero()
+					return p(this).isZero()
 				}
 				toNumber() {
 					try {
-						return g(this).toNumber()
+						return p(this).toNumber()
 					} catch (e) {
 						v("overflow", "toNumber", this.toString())
 					}
@@ -211,7 +211,7 @@
 					})
 				}
 				toString() {
-					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, l.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? l.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", a.b.errors.UNEXPECTED_ARGUMENT, {}) : l.throwError("BigNumber.toString does not accept parameters", a.b.errors.UNEXPECTED_ARGUMENT, {})), g(this).toString(10)
+					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, l.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? l.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", a.b.errors.UNEXPECTED_ARGUMENT, {}) : l.throwError("BigNumber.toString does not accept parameters", a.b.errors.UNEXPECTED_ARGUMENT, {})), p(this).toString(10)
 				}
 				toHexString() {
 					return this._hex
@@ -251,11 +251,11 @@
 				return e
 			}
 
-			function p(e) {
+			function g(e) {
 				return f.from(b(e))
 			}
 
-			function g(e) {
+			function p(e) {
 				const t = f.from(e).toHexString();
 				return "-" === t[0] ? new c("-" + t.substring(3), 16) : new c(t.substring(2), 16)
 			}
@@ -297,9 +297,9 @@
 			})), r.d(t, "d", (function() {
 				return b
 			})), r.d(t, "e", (function() {
-				return p
-			})), r.d(t, "c", (function() {
 				return g
+			})), r.d(t, "c", (function() {
+				return p
 			})), r.d(t, "g", (function() {
 				return v
 			})), r.d(t, "f", (function() {
@@ -410,11 +410,11 @@
 				return (e.length - 2) / 2
 			}
 
-			function p(e, t, r) {
+			function g(e, t, r) {
 				return "string" != typeof e ? e = f(e) : (!m(e) || e.length % 2) && n.throwArgumentError("invalid hexData", "value", e), t = 2 + 2 * t, null != r ? "0x" + e.substring(t, 2 + 2 * r) : "0x" + e.substring(t)
 			}
 
-			function g(e) {
+			function p(e) {
 				let t = "0x";
 				return e.forEach(e => {
 					t += f(e).substring(2)
@@ -539,10 +539,10 @@
 								}
 								return r
 							}
-						}], f = {}, b = [], p = 0; p < h.length; ++p)
-						for (var g = h[p], v = g.bits, E = 0; E < v.length; ++E) {
-							var x = g.name + "_" + v[E];
-							b.push(x), f[x] = g.createMethod(v[E], g.padding)
+						}], f = {}, b = [], g = 0; g < h.length; ++g)
+						for (var p = h[g], v = p.bits, E = 0; E < v.length; ++E) {
+							var x = p.name + "_" + v[E];
+							b.push(x), f[x] = p.createMethod(v[E], p.padding)
 						}
 
 					function N(e, t, r) {
@@ -605,12 +605,12 @@
 						return o && (e = i << 2, t = n[a], o > 0 && (c[e] = 255 & t), o > 1 && (c[e + 1] = t >> 8 & 255), o > 2 && (c[e + 2] = t >> 16 & 255)), c
 					};
 					var y = function(e) {
-						var t, r, n, s, o, a, c, l, d, u, m, h, f, b, p, g, v, E, x, N, y, w, _, j, I, C, O, A, T, R, k, P, U, M, S, B, D, F, L, G, V, W, H, z, X, Y, Z, q, K, J, Q, $, ee, te, re, ne, se, oe, ae, ie, ce, le, de;
-						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], a = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], d = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (a << 1 | c >>> 31), r = (f = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | a >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (l << 1 | d >>> 31), r = o ^ (d << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = a ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (h << 1 | f >>> 31), r = d ^ (f << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | o >>> 31), r = m ^ (o << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, b = e[0], p = e[1], Y = e[11] << 4 | e[10] >>> 28, Z = e[10] << 4 | e[11] >>> 28, A = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, M = e[2] << 1 | e[3] >>> 31, S = e[3] << 1 | e[2] >>> 31, g = e[13] << 12 | e[12] >>> 20, v = e[12] << 12 | e[13] >>> 20, q = e[22] << 10 | e[23] >>> 22, K = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, k = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, de = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, D = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, x = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, U = e[44] << 29 | e[45] >>> 3, j = e[6] << 28 | e[7] >>> 4, I = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, F = e[26] << 25 | e[27] >>> 7, L = e[27] << 25 | e[26] >>> 7, N = e[36] << 21 | e[37] >>> 11, y = e[37] << 21 | e[36] >>> 11, $ = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, C = e[18] << 20 | e[19] >>> 12, O = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, ae = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, w = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = b ^ ~g & E, e[1] = p ^ ~v & x, e[10] = j ^ ~C & A, e[11] = I ^ ~O & T, e[20] = M ^ ~B & F, e[21] = S ^ ~D & L, e[30] = z ^ ~Y & q, e[31] = X ^ ~Z & K, e[40] = te ^ ~ne & oe, e[41] = re ^ ~se & ae, e[2] = g ^ ~E & N, e[3] = v ^ ~x & y, e[12] = C ^ ~A & R, e[13] = O ^ ~T & k, e[22] = B ^ ~F & G, e[23] = D ^ ~L & V, e[32] = Y ^ ~q & J, e[33] = Z ^ ~K & Q, e[42] = ne ^ ~oe & ie, e[43] = se ^ ~ae & ce, e[4] = E ^ ~N & w, e[5] = x ^ ~y & _, e[14] = A ^ ~R & P, e[15] = T ^ ~k & U, e[24] = F ^ ~G & W, e[25] = L ^ ~V & H, e[34] = q ^ ~J & $, e[35] = K ^ ~Q & ee, e[44] = oe ^ ~ie & le, e[45] = ae ^ ~ce & de, e[6] = N ^ ~w & b, e[7] = y ^ ~_ & p, e[16] = R ^ ~P & j, e[17] = k ^ ~U & I, e[26] = G ^ ~W & M, e[27] = V ^ ~H & S, e[36] = J ^ ~$ & z, e[37] = Q ^ ~ee & X, e[46] = ie ^ ~le & te, e[47] = ce ^ ~de & re, e[8] = w ^ ~b & g, e[9] = _ ^ ~p & v, e[18] = P ^ ~j & C, e[19] = U ^ ~I & O, e[28] = W ^ ~M & B, e[29] = H ^ ~S & D, e[38] = $ ^ ~z & Y, e[39] = ee ^ ~X & Z, e[48] = le ^ ~te & ne, e[49] = de ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
+						var t, r, n, s, o, a, c, l, d, u, m, h, f, b, g, p, v, E, x, N, y, w, _, j, I, C, O, A, T, R, k, P, U, M, S, B, D, L, F, G, V, W, H, z, X, Y, Z, q, K, J, Q, $, ee, te, re, ne, se, oe, ae, ie, ce, le, de;
+						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], a = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], d = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (a << 1 | c >>> 31), r = (f = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | a >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (l << 1 | d >>> 31), r = o ^ (d << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = a ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (h << 1 | f >>> 31), r = d ^ (f << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | o >>> 31), r = m ^ (o << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, b = e[0], g = e[1], Y = e[11] << 4 | e[10] >>> 28, Z = e[10] << 4 | e[11] >>> 28, A = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, M = e[2] << 1 | e[3] >>> 31, S = e[3] << 1 | e[2] >>> 31, p = e[13] << 12 | e[12] >>> 20, v = e[12] << 12 | e[13] >>> 20, q = e[22] << 10 | e[23] >>> 22, K = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, k = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, de = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, D = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, x = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, U = e[44] << 29 | e[45] >>> 3, j = e[6] << 28 | e[7] >>> 4, I = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, L = e[26] << 25 | e[27] >>> 7, F = e[27] << 25 | e[26] >>> 7, N = e[36] << 21 | e[37] >>> 11, y = e[37] << 21 | e[36] >>> 11, $ = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, C = e[18] << 20 | e[19] >>> 12, O = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, ae = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, w = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = b ^ ~p & E, e[1] = g ^ ~v & x, e[10] = j ^ ~C & A, e[11] = I ^ ~O & T, e[20] = M ^ ~B & L, e[21] = S ^ ~D & F, e[30] = z ^ ~Y & q, e[31] = X ^ ~Z & K, e[40] = te ^ ~ne & oe, e[41] = re ^ ~se & ae, e[2] = p ^ ~E & N, e[3] = v ^ ~x & y, e[12] = C ^ ~A & R, e[13] = O ^ ~T & k, e[22] = B ^ ~L & G, e[23] = D ^ ~F & V, e[32] = Y ^ ~q & J, e[33] = Z ^ ~K & Q, e[42] = ne ^ ~oe & ie, e[43] = se ^ ~ae & ce, e[4] = E ^ ~N & w, e[5] = x ^ ~y & _, e[14] = A ^ ~R & P, e[15] = T ^ ~k & U, e[24] = L ^ ~G & W, e[25] = F ^ ~V & H, e[34] = q ^ ~J & $, e[35] = K ^ ~Q & ee, e[44] = oe ^ ~ie & le, e[45] = ae ^ ~ce & de, e[6] = N ^ ~w & b, e[7] = y ^ ~_ & g, e[16] = R ^ ~P & j, e[17] = k ^ ~U & I, e[26] = G ^ ~W & M, e[27] = V ^ ~H & S, e[36] = J ^ ~$ & z, e[37] = Q ^ ~ee & X, e[46] = ie ^ ~le & te, e[47] = ce ^ ~de & re, e[8] = w ^ ~b & p, e[9] = _ ^ ~g & v, e[18] = P ^ ~j & C, e[19] = U ^ ~I & O, e[28] = W ^ ~M & B, e[29] = H ^ ~S & D, e[38] = $ ^ ~z & Y, e[39] = ee ^ ~X & Z, e[48] = le ^ ~te & ne, e[49] = de ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
 					};
 					if (s) e.exports = f;
 					else
-						for (p = 0; p < b.length; ++p) n[b[p]] = f[b[p]]
+						for (g = 0; g < b.length; ++g) n[b[g]] = f[b[g]]
 				}()
 			}).call(this, r("./node_modules/process/browser.js"), r("./node_modules/webpack/buildin/global.js"))
 		},
@@ -1077,9 +1077,9 @@
 				h = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				f = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				b = r("./src/reddit/icons/svgs/Info/index.tsx"),
-				p = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
-				g = r("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
-				v = r.n(g),
+				g = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
+				p = r("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
+				v = r.n(p),
 				E = r("./node_modules/fbt/lib/FbtPublic.js");
 			const x = 2,
 				N = 20;
@@ -1152,7 +1152,7 @@
 									}
 								});
 							case y.Invalid:
-								return a.a.createElement(p.a, {
+								return a.a.createElement(g.a, {
 									className: v.a.icon,
 									style: {
 										fill: u.b.warning
@@ -1255,8 +1255,8 @@
 				h = r("./src/reddit/selectors/crypto/points.ts"),
 				f = r("./node_modules/reselect/es/index.js"),
 				b = r("./node_modules/bignumber.js/bignumber.js"),
-				p = r("./src/lib/classNames/index.ts"),
-				g = r("./src/lib/prettyPrintNumber/index.ts"),
+				g = r("./src/lib/classNames/index.ts"),
+				p = r("./src/lib/prettyPrintNumber/index.ts"),
 				v = r("./src/reddit/components/Governance/Token/index.tsx"),
 				E = r("./src/reddit/constants/colors.ts"),
 				x = r("./src/reddit/controls/Button/index.tsx"),
@@ -1284,7 +1284,7 @@
 						wallet: l
 					} = e, d = (null == l ? void 0 : l.unlockedAmount) || "0", u = new b.BigNumber(t || "0"), h = new b.BigNumber(d), f = h.isGreaterThanOrEqualTo(u), y = e.submissionEnabled && !h.isZero() && f;
 					return s.a.createElement("div", {
-						className: Object(p.a)(_.a.container, r)
+						className: Object(g.a)(_.a.container, r)
 					}, s.a.createElement("div", {
 						className: _.a.available
 					}, s.a.createElement("div", null, j.fbt._("Transferable", null, {
@@ -1297,7 +1297,7 @@
 						style: {
 							color: f ? void 0 : E.b.warning
 						}
-					}, Object(g.a)(Object(m.b)(d, null == o ? void 0 : o.displayConversion)))), s.a.createElement(x.i, {
+					}, Object(p.a)(Object(m.b)(d, null == o ? void 0 : o.displayConversion)))), s.a.createElement(x.i, {
 						disabled: !y,
 						className: _.a.button,
 						tabIndex: i,
@@ -1317,23 +1317,23 @@
 			function k(e) {
 				const t = e.amount || "0",
 					r = !new b.BigNumber(t).isZero(),
-					n = Object(g.a)(t);
+					n = Object(p.a)(t);
 				return s.a.createElement("label", {
 					"aria-label": t,
 					"aria-live": "assertive",
-					className: Object(p.a)(R.a.container, e.className)
+					className: Object(g.a)(R.a.container, e.className)
 				}, s.a.createElement(v.a, {
 					className: R.a.token,
 					grey: !r,
 					subredditId: e.subredditId
 				}), s.a.createElement("div", {
-					className: Object(p.a)(R.a.display, {
+					className: Object(g.a)(R.a.display, {
 						[R.a.displayActive]: r
 					}),
 					style: {
 						fontSize: P(n)
 					}
-				}, Object(g.a)(n)), s.a.createElement("input", {
+				}, Object(p.a)(n)), s.a.createElement("input", {
 					autoFocus: !0,
 					className: R.a.input,
 					maxLength: 9,
@@ -1364,8 +1364,8 @@
 				S = r("./node_modules/@ethersproject/address/lib.esm/index.js"),
 				B = r("./node_modules/lodash/debounce.js"),
 				D = r.n(B),
-				F = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
-				L = r("./src/reddit/actions/users.ts"),
+				L = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
+				F = r("./src/reddit/actions/users.ts"),
 				G = r("./src/reddit/selectors/crypto/wallet.ts"),
 				V = r("./src/reddit/selectors/user.ts");
 			var W = r("./src/reddit/controls/FormFields/index.tsx"),
@@ -1395,7 +1395,7 @@
 						a = Object(V.mb)(o, {
 							userName: e
 						});
-					if (!(a || (await r(Object(L.y)(e)), o = n(), a = Object(V.mb)(o, {
+					if (!(a || (await r(Object(F.y)(e)), o = n(), a = Object(V.mb)(o, {
 							userName: e
 						})))) return {
 						userId: null,
@@ -1405,7 +1405,7 @@
 						subredditId: t,
 						userId: a.id
 					});
-					return i || (await r(Object(F.a)({
+					return i || (await r(Object(L.a)({
 						subredditId: t,
 						userIds: [a.id]
 					})), i = Object(G.c)(n(), {
@@ -1435,7 +1435,7 @@
 				return Object(n.useEffect)(() => {
 					e.initialRecipient && u()
 				}, []), s.a.createElement("div", {
-					className: Object(p.a)(q.a.container, e.className)
+					className: Object(g.a)(q.a.container, e.className)
 				}, s.a.createElement(W.c, {
 					redditStyle: !0,
 					className: q.a.input,
@@ -1685,7 +1685,7 @@
 					publicAddress: e => e.transfers.communityPoints.publicAddress,
 					subreddit: d.q
 				}),
-				pe = Object(o.b)(be, e => ({
+				ge = Object(o.b)(be, e => ({
 					onClose: () => {
 						e(Object(c.f)())
 					},
@@ -1695,8 +1695,8 @@
 						subredditId: n
 					}, !0))
 				})),
-				ge = Object(d.t)();
-			t.default = Object(a.a)(ge(pe(fe)))
+				pe = Object(d.t)();
+			t.default = Object(a.a)(pe(ge(fe)))
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1734,8 +1734,8 @@
 				h = r("./src/reddit/actions/modal.ts"),
 				f = r("./src/reddit/selectors/activeModalId.ts"),
 				b = r("./src/higherOrderComponents/asModal/index.tsx"),
-				p = r("./src/reddit/controls/Button/index.tsx"),
-				g = r("./src/reddit/layout/row/Inline/index.tsx"),
+				g = r("./src/reddit/controls/Button/index.tsx"),
+				p = r("./src/reddit/layout/row/Inline/index.tsx"),
 				v = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
 				E = r.n(v);
 			var x = Object(b.a)(e => {
@@ -1745,13 +1745,13 @@
 					} = e;
 					return l.a.createElement("div", {
 						className: E.a.wrapper
-					}, l.a.createElement(g.a, {
+					}, l.a.createElement(p.a, {
 						className: E.a.titleRow
 					}, r), l.a.createElement("div", {
 						className: E.a.detailsContainer
-					}, t), l.a.createElement(g.a, {
+					}, t), l.a.createElement(p.a, {
 						className: E.a.buttonRow
-					}, l.a.createElement(p.i, {
+					}, l.a.createElement(g.i, {
 						className: E.a.confirmButton,
 						onClick: e.onConfirmed
 					}, n.fbt._("Ok", null, {
@@ -1869,7 +1869,7 @@
 			})), r.d(t, "b", (function() {
 				return b
 			})), r.d(t, "c", (function() {
-				return p
+				return g
 			})), r.d(t, "d", (function() {
 				return E
 			}));
@@ -1919,7 +1919,7 @@
 						})
 					}, e.label), e.children)
 				},
-				p = e => {
+				g = e => {
 					const {
 						label: t,
 						children: r,
@@ -1943,7 +1943,7 @@
 						})
 					}, e.label), e.children)
 				},
-				g = e => s.a.createElement("div", {
+				p = e => s.a.createElement("div", {
 					className: Object(o.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", s.a.createElement(c.a, {
@@ -2030,10 +2030,10 @@
 					const c = !(!!n && r.length >= n) && !i;
 					return s.a.createElement("div", {
 						className: Object(o.a)(u.a.multiInputWrapper, e)
-					}, t && c && s.a.createElement(g, {
+					}, t && c && s.a.createElement(p, {
 						onClick: this.addValue,
 						text: a
-					}), this.renderFields(), !t && c && s.a.createElement(g, {
+					}), this.renderFields(), !t && c && s.a.createElement(p, {
 						onClick: this.addValue,
 						text: a
 					}))
@@ -2064,7 +2064,8 @@
 				}),
 				style: {
 					"--sizePx": `${r}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, r) {
@@ -2275,4 +2276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.49ca786c56c43c11c970.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.bad4852b1862887fec0d.js.map

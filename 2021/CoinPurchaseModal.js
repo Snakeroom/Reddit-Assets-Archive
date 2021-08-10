@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.764b9fa32518d2771c3f.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2fe130ada904e2a115ff.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -690,7 +690,7 @@
 				n = a("./src/lib/env/index.ts"),
 				o = a("./src/lib/makeActionCreator/index.ts"),
 				s = a("./src/lib/sentry/index.ts"),
-				c = a("./src/reddit/endpoints/gold/productCatalog.ts"),
+				c = a("./src/reddit/endpoints/gold/productCatalog/index.ts"),
 				i = a("./src/reddit/selectors/user.ts"),
 				d = a("./src/reddit/actions/toaster.ts"),
 				l = a("./src/reddit/models/Toast/index.ts"),
@@ -1407,13 +1407,16 @@
 			const {
 				fbt: i
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = e => n.a.createElement("div", {
+			t.a = ({
+				buttonText: e,
+				onCloseClick: t
+			}) => n.a.createElement("div", {
 				className: c.a.purchaseFooter
 			}, n.a.createElement(o.i, {
 				className: c.a.purchaseButton,
 				"data-redditstyle": !0,
-				onClick: e.onCloseClick
-			}, i._("Done", null, {
+				onClick: t
+			}, e || i._("Done", null, {
 				hk: "3s1bT9"
 			})))
 		},
@@ -1441,7 +1444,8 @@
 				}),
 				style: {
 					"--sizePx": `${a}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/endpoints/gold/paypalPurchases.ts": function(e, t, a) {
@@ -1604,4 +1608,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.764b9fa32518d2771c3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.2fe130ada904e2a115ff.js.map

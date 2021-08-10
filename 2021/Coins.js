@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.048016fa3b311c057688.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.a906e16c161141a429dd.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/lodash/times.js": function(e, t, a) {
@@ -52,9 +52,9 @@
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "c", (function() {
-				return j
-			})), a.d(t, "a", (function() {
 				return x
+			})), a.d(t, "a", (function() {
+				return j
 			})), a.d(t, "e", (function() {
 				return y
 			})), a.d(t, "b", (function() {
@@ -93,9 +93,9 @@
 				v = a("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const C = Object(s.a)(v.q),
 				O = Object(s.a)(v.c),
-				j = e => async (t, a) => {
+				x = e => async (t, a) => {
 					t(C(e)), t(Object(d.h)(i.a.ECON_COIN_PURCHASE))
-				}, x = () => async (e, t) => {
+				}, j = () => async (e, t) => {
 					e(O()), e(Object(d.g)(i.a.ECON_COIN_PURCHASE))
 				}, E = Object(s.a)(v.u), y = ({
 					correlationId: e,
@@ -118,7 +118,7 @@
 					await r(Object(l.c)(e, a));
 					const c = s(),
 						i = Object(w.n)(c);
-					if (0 !== i.length) r(j({
+					if (0 !== i.length) r(x({
 						correlationId: a,
 						packageId: i[0].mobileId,
 						thingId: t
@@ -199,9 +199,9 @@
 							});
 							return void c(Object(o.stripeApiError)(e))
 						}
-						const j = O.id,
+						const x = O.id,
 							E = {
-								gildType: j,
+								gildType: x,
 								isAnonymous: i,
 								message: _
 							},
@@ -225,7 +225,7 @@
 							const {
 								gildSuccessful: t
 							} = await a.e("gildActions").then(a.bind(null, "./src/reddit/actions/gold/gild.ts"));
-							c(x()), c(Object(o.paymentCompleted)({
+							c(j()), c(Object(o.paymentCompleted)({
 								confirmed: !1
 							}));
 							const {
@@ -236,7 +236,7 @@
 							} = y.body;
 							return c(t({
 								awardKarmaReceived: n || 0,
-								awardId: j,
+								awardId: x,
 								awardings: r && r.length ? Object(g.a)(r).map(e => ({
 									award: Object(b.h)(e),
 									total: e.count
@@ -355,7 +355,7 @@
 							const e = Object(r.a)(C.error);
 							s(Object(o.paypalApiError)(e))
 						} else {
-							s(x());
+							s(j());
 							const {
 								all_awardings: e,
 								awarder_karma_received: t,
@@ -423,9 +423,9 @@
 			})), a.d(t, "deleteSavedCard", (function() {
 				return O
 			})), a.d(t, "savedCardsPending", (function() {
-				return j
-			})), a.d(t, "savedCardsSuccess", (function() {
 				return x
+			})), a.d(t, "savedCardsSuccess", (function() {
+				return j
 			})), a.d(t, "loadSavedCards", (function() {
 				return E
 			}));
@@ -476,10 +476,10 @@
 					} catch (s) {
 						r.c.captureException(s)
 					}
-				}, j = Object(s.a)(i.z), x = Object(s.a)(i.A), E = () => async (e, t, {
+				}, x = Object(s.a)(i.z), j = Object(s.a)(i.A), E = () => async (e, t, {
 					apiContext: a
 				}) => {
-					e(j());
+					e(x());
 					try {
 						const t = await Object(c.b)(a());
 						if (t.error) throw new Error(t.error.type);
@@ -490,9 +490,9 @@
 							expirationYear: e.exp_year,
 							last4: e.last4
 						}));
-						e(x(n)), n[0] && e(v(n[0].cardId))
+						e(j(n)), n[0] && e(v(n[0].cardId))
 					} catch (n) {
-						r.c.captureException(n), e(x([]))
+						r.c.captureException(n), e(j([]))
 					}
 				}
 		},
@@ -509,7 +509,7 @@
 				r = a("./src/lib/env/index.ts"),
 				s = a("./src/lib/makeActionCreator/index.ts"),
 				c = a("./src/lib/sentry/index.ts"),
-				i = a("./src/reddit/endpoints/gold/productCatalog.ts"),
+				i = a("./src/reddit/endpoints/gold/productCatalog/index.ts"),
 				o = a("./src/reddit/selectors/user.ts"),
 				l = a("./src/reddit/actions/toaster.ts"),
 				d = a("./src/reddit/models/Toast/index.ts"),
@@ -1335,9 +1335,9 @@
 				});
 			var C = a("./src/reddit/helpers/trackers/screenview.ts"),
 				O = a("./src/telemetry/index.ts"),
-				j = a("./src/telemetry/models/Timer.ts"),
-				x = a("./src/reddit/pages/CoinsPage/index.m.less"),
-				E = a.n(x),
+				x = a("./src/telemetry/models/Timer.ts"),
+				j = a("./src/reddit/pages/CoinsPage/index.m.less"),
+				E = a.n(j),
 				y = a("./src/reddit/helpers/createEmojiText/index.tsx"),
 				N = a("./src/reddit/models/Gold/Award.ts"),
 				P = a("./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts"),
@@ -1587,7 +1587,7 @@
 					} = this.props;
 					e.length || t || a(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
 					const n = u.Jb.COINS;
-					O.c.has(n) && (this.props.sendEvent(Object(C.b)(j.TimerType.InApp, O.c.end(n))), this.props.sendEvent(Object(C.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
+					O.c.has(n) && (this.props.sendEvent(Object(C.b)(x.TimerType.InApp, O.c.end(n))), this.props.sendEvent(Object(C.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
 					!this.targetedOfferTimerId && this.props.dealCoinPackages.length && this.setTargetedOfferTimeout()
@@ -1742,4 +1742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.048016fa3b311c057688.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.a906e16c161141a429dd.js.map

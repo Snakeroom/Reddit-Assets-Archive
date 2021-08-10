@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.44ecc5fe348f5e3e2ca4.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.345774d298336ae5b045.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -1329,7 +1329,7 @@
 					!t && a || await n(k(e, [s.id]))
 				}, S = e => async (t, n) => {
 					if (!e) return !1;
-					await t(Object(m.k)(e, {
+					await t(Object(m.l)(e, {
 						fullData: !0
 					}));
 					const o = n();
@@ -1525,7 +1525,7 @@
 						a = Object(_.j)(r, {
 							subredditId: s
 						}),
-						i = Object(h.l)(r);
+						i = Object(h.m)(r);
 					if (a) return Object(_.f)(r, {
 						subredditId: s
 					});
@@ -8448,7 +8448,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), a = Object(U.a)(m.pc) === m.tc.Enabled;
+					} = t, r = Object(B.a)(), a = Object(U.a)(m.qc) === m.uc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Y, e));
@@ -10939,7 +10939,8 @@
 				}),
 				style: {
 					"--sizePx": `${n}px`
-				}
+				},
+				"data-testid": "LoadingIcon"
 			})
 		},
 		"./src/reddit/controls/PillButton/index.m.less": function(e, t, n) {
@@ -14281,17 +14282,18 @@
 					}
 				},
 				O = e => t => {
-					const n = h(t, {
+					var n;
+					const o = h(t, {
 						thingId: e
 					});
 					return {
-						...n,
+						...o,
 						source: "gold_payment",
 						action: "view",
 						noun: "success",
 						payment: {
-							...n.payment,
-							method: t.platform.currentPage.queryParams.thanks ? l.PaymentMethod.Paypal : l.PaymentMethod.CreditCard
+							...o.payment,
+							method: (null === (n = t.platform.currentPage) || void 0 === n ? void 0 : n.queryParams.thanks) ? l.PaymentMethod.Paypal : l.PaymentMethod.CreditCard
 						}
 					}
 				}
@@ -22366,10 +22368,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Tc,
+				experimentName: o.Uc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.Yc.Enabled
+			}) === o.Zc.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -22383,14 +22385,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.ed
-					}) === o.od.Enabled
+						experimentName: o.fd
+					}) === o.pd.Enabled
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.dd
-					}) === o.nd.Enabled
+						experimentName: o.ed
+					}) === o.od.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
@@ -22407,7 +22409,7 @@
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: o.fb
-				}) === o.gc
+				}) === o.hc
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -23126,4 +23128,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.44ecc5fe348f5e3e2ca4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.345774d298336ae5b045.js.map

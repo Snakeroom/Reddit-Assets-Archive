@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.884ee1fabd7c2b47f98c.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b12af1025a2656b8f4ac.js
+// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -52,8 +52,8 @@
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				a = t("./node_modules/react/index.js"),
 				o = t.n(a),
-				c = t("./node_modules/react-redux/es/index.js"),
-				i = t("./src/lib/classNames/index.ts"),
+				i = t("./node_modules/react-redux/es/index.js"),
+				c = t("./src/lib/classNames/index.ts"),
 				r = t("./src/reddit/controls/InternalLink/index.tsx"),
 				l = t("./src/reddit/icons/fonts/index.tsx"),
 				d = (t("./node_modules/core-js/modules/web.dom.iterable.js"), t("./node_modules/js-cookie/src/js.cookie.js")),
@@ -63,8 +63,8 @@
 				v = t("./src/lib/constants/index.ts"),
 				A = t("./src/reddit/constants/cookie.ts"),
 				p = t("./src/reddit/constants/experiments.ts"),
-				h = t("./src/reddit/helpers/localStorage/index.ts"),
-				_ = t("./src/reddit/selectors/telemetry.ts");
+				_ = t("./src/reddit/helpers/localStorage/index.ts"),
+				h = t("./src/reddit/selectors/telemetry.ts");
 			const x = (e, {
 					id: n,
 					title: t,
@@ -82,13 +82,13 @@
 						title: "function" == typeof t ? t() : t,
 						body: "function" == typeof s ? s() : s || ""
 					},
-					...Object(_.defaults)(a)
+					...Object(h.defaults)(a)
 				}),
 				O = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
-					...Object(_.defaults)(n)
+					...Object(h.defaults)(n)
 				});
 			var j = t("./src/reddit/hooks/useTracking.ts"),
 				C = t("./src/reddit/selectors/experiments/index.ts");
@@ -102,7 +102,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.he)(n.variant)) return !1
+						if (n && Object(p.ie)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -158,30 +158,30 @@
 			n.default = ({
 				announcements: e
 			}) => {
-				const n = Object(c.e)(e => e.live.shouldShowAnnouncements),
+				const n = Object(i.e)(e => e.live.shouldShowAnnouncements),
 					[t, r] = Object(a.useState)([]),
 					[d, u] = Object(a.useState)(!n),
 					[m, v] = Object(a.useState)(!0),
-					[p, _] = Object(a.useState)(0);
+					[p, h] = Object(a.useState)(0);
 				(({
 					announcements: e,
 					setActiveIndex: n,
 					isHidden: t,
 					setIsLoading: s,
 					setVisibleAnnouncements: o,
-					visibleAnnouncements: i
+					visibleAnnouncements: c
 				}) => {
-					const r = Object(c.e)(C.a);
+					const r = Object(i.e)(C.a);
 					Object(a.useEffect)(() => {
-						const a = Object(h.f)(),
-							c = e.filter(g(r, a)).slice(0, 5),
-							l = [...c].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
-							d = c.length ? A.i.Yes : A.i.No;
-						E(d), t || b()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
+						const a = Object(_.f)(),
+							i = e.filter(g(r, a)).slice(0, 5),
+							l = [...i].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
+							d = i.length ? A.i.Yes : A.i.No;
+						E(d), t || b()(i.map(e => e.id), c.map(e => e.id)) || (o(i), n(i.indexOf(l)), s(!1))
 					}, [])
 				})({
 					announcements: e,
-					setActiveIndex: _,
+					setActiveIndex: h,
 					isHidden: d,
 					setVisibleAnnouncements: r,
 					visibleAnnouncements: t,
@@ -196,12 +196,12 @@
 					setActiveIndex: t
 				}) => {
 					const s = Object(j.a)(),
-						[o, c] = Object(a.useState)(!0),
-						i = Object(a.useRef)(null);
+						[o, i] = Object(a.useState)(!0),
+						c = Object(a.useRef)(null);
 					return {
 						onCarouselNavigate: Object(a.useCallback)(a => () => {
-							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(O("next" === a ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), c(!1), i.current = window.setTimeout(() => {
-								c(!0)
+							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(O("next" === a ? "scroll_next" : "scroll_previous")), c.current && window.clearTimeout(c.current), i(!1), c.current = window.setTimeout(() => {
+								i(!0)
 							}, 200)
 						}, [e, s, t, n]),
 						isTransitionComplete: o
@@ -209,7 +209,7 @@
 				})({
 					activeIndex: p,
 					visibleAnnouncements: t,
-					setActiveIndex: _
+					setActiveIndex: h
 				}), D = (({
 					setIsHidden: e,
 					visibleAnnouncements: n
@@ -221,7 +221,7 @@
 								id: n,
 								maxImpressionsCount: t
 							} = e;
-							Object(h.gb)(n, t)
+							Object(_.gb)(n, t)
 						}), t(O("dismiss_all")), E(A.i.No)
 					}, [n, t, e])
 				})({
@@ -238,7 +238,7 @@
 					}, [e, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: _,
+					setActiveIndex: h,
 					visibleAnnouncements: t
 				});
 				return (({
@@ -247,18 +247,18 @@
 					visibleAnnouncements: t
 				}) => {
 					const s = Object(j.a)(),
-						o = Object(c.e)(C.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
+						o = Object(i.e)(C.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
 					Object(a.useEffect)(() => {
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
-							c = Object(h.e)(a.id);
-						s(x("view", a)), Object(h.gb)(a.id, c + 1);
-						const i = Object(h.f)();
-						t.filter(g(o, i)).length || E(A.i.No)
+							i = Object(_.e)(a.id);
+						s(x("view", a)), Object(_.gb)(a.id, i + 1);
+						const c = Object(_.f)();
+						t.filter(g(o, c)).length || E(A.i.No)
 					}, [e, o, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: _,
+					setActiveIndex: h,
 					visibleAnnouncements: t
 				}), d ? null : o.a.createElement("div", {
 					className: f.a.Container
@@ -286,7 +286,7 @@
 					className: f.a.LoadingIndicator
 				}) : t.map((e, n) => o.a.createElement(I, {
 					announcement: e,
-					className: Object(i.a)(f.a.Announcement, {
+					className: Object(c.a)(f.a.Announcement, {
 						[f.a.isActive]: n === p,
 						[f.a.prev]: t.length > 1 && 0 === p && n + 1 === t.length || n === p - 1,
 						[f.a.next]: t.length > 1 && p + 1 === t.length && 0 === n || n === p + 1,
@@ -305,9 +305,9 @@
 				})), t.length > 1 ? o.a.createElement("div", {
 					className: f.a.Dots
 				}, t.map((e, n) => o.a.createElement("button", {
-					onClick: () => _(n),
+					onClick: () => h(n),
 					key: `announcement-carousel-dot-${n}`,
-					className: Object(i.a)(f.a.Dot, {
+					className: Object(c.a)(f.a.Dot, {
 						[f.a.isSelected]: n === p
 					})
 				}))) : o.a.createElement("div", {
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.884ee1fabd7c2b47f98c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b12af1025a2656b8f4ac.js.map
