@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.10f43264a72c4a4d4697.js
-// Retrieved at 8/10/2021, 9:50:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2e8f17944a137cebf53e.js
+// Retrieved at 8/10/2021, 10:10:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16590,7 +16590,7 @@
 					}
 					n.dispatch(Object(Z.h)(t));
 					e.listen((e, s) => {
-						const o = Object(N.a)(Object(i.e)(e), t);
+						const o = Object(N.a)(Object(i.e)(e), t, n.getState());
 						n.dispatch(Object(Z.i)(e, s, o))
 					});
 					const r = n.getState(),
@@ -17544,13 +17544,14 @@
 				r = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				a = n("./src/lib/constants/index.ts"),
 				i = n("./src/lib/countrySites/index.ts"),
-				c = n("./src/lib/loadableAction/index.ts");
-			const l = Object.keys(a.U).map(e => a.U[e]).join("|"),
-				d = "/",
-				u = `/:sort(${l})?`,
-				m = Object(i.a)([d]),
+				c = n("./src/lib/loadableAction/index.ts"),
+				l = n("./src/reddit/selectors/user.ts");
+			const d = Object.keys(a.U).map(e => a.U[e]).join("|"),
+				u = "/",
+				m = `/:sort(${d})?`,
 				p = Object(i.a)([u]),
-				b = Object(r.a)({
+				b = Object(i.a)([m]),
+				h = Object(r.a)({
 					resolved: {},
 					chunkName: () => "Frontpage",
 					isReady(e) {
@@ -17570,29 +17571,49 @@
 						return "./src/reddit/pages/Frontpage/index.tsx"
 					}
 				}),
-				h = {
+				f = {
 					action: Object(c.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~933ffffc"), n.e("Frontpage~ModListing"), n.e("Frontpage")]).then(n.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageRequested)),
 					chunk: a.q.FRONTPAGE,
-					component: b,
+					component: h,
 					exact: !0,
 					prefetches: [a.q.COMMENTS_PAGE, a.q.SUBREDDIT]
 				},
-				f = {
-					...h,
-					path: m,
-					meta: {
-						name: a.Jb.INDEX
-					}
-				},
 				g = {
-					...h,
+					...f,
 					path: p,
 					meta: {
-						name: a.Jb.LISTING
-					}
+						name: a.Jb.INDEX
+					},
+					routePredicate: l.J
 				},
-				v = [f, g];
-			t.a = v
+				v = {
+					...f,
+					path: u,
+					meta: {
+						name: a.Jb.INDEX,
+						telemetryPageType: "popular"
+					},
+					routePredicate: e => !Object(l.J)(e)
+				},
+				y = {
+					...f,
+					path: b,
+					meta: {
+						name: a.Jb.LISTING
+					},
+					routePredicate: l.J
+				},
+				O = {
+					...f,
+					path: m,
+					meta: {
+						name: a.Jb.LISTING,
+						telemetryPageType: "popular"
+					},
+					routePredicate: e => !Object(l.J)(e)
+				},
+				C = [g, v, y, O];
+			t.a = C
 		},
 		"./src/reddit/routes/geotagging/index.ts": function(e, t, n) {
 			"use strict";
@@ -19389,4 +19410,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.10f43264a72c4a4d4697.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2e8f17944a137cebf53e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b9164254d5e3d346ac7.js
-// Retrieved at 8/10/2021, 9:50:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5442c6966ff652b9b5a8.js
+// Retrieved at 8/10/2021, 10:10:09 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("142172"),
+				buildNumber: r("142177"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628602195"),
+				})("1628603310"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4979,14 +4979,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1a2529ec83ecaea51e9a43b7b706639c1f4472c5-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cadd7a04e13ddc787b76f1ecaa682d1e8071cb863-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1a2529ec83ecaea51e9a43b7b706639c1f4472c5-production",
+						release: "add7a04e13ddc787b76f1ecaa682d1e8071cb863-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5480,7 +5480,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "1a2529ec83ecaea51e9a43b7b706639c1f4472c5-production",
+						releaseClient: "add7a04e13ddc787b76f1ecaa682d1e8071cb863-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -10028,7 +10028,7 @@
 						currentPage: r
 					} = i().platform;
 					if (!r) return;
-					const s = Object(d.a)(r.url, e);
+					const s = Object(d.a)(r.url, e, i());
 					s && s.route.action(s.match)(t, i, n)
 				}, I = (e, t, i) => async (s, o, d) => {
 					s(((e, t, i) => (s, o, d) => {
@@ -34327,7 +34327,7 @@
 			const Oe = e => {
 					switch (e.route && e.route.meta && e.route.meta.name) {
 						case m.Jb.INDEX:
-							return "home";
+							return "popular" === e.route.meta.telemetryPageType ? "popular" : "home";
 						case m.Jb.PROFILE_OVERVIEW:
 							return "profile_overview";
 						case m.Jb.PROFILE_COMMENTS:
@@ -34366,6 +34366,7 @@
 							return e.match.params.partialCommentId ? "single_comment_thread" : "post_detail";
 						case m.Jb.LISTING:
 						case m.Jb.SUBREDDIT: {
+							if ("popular" === e.route.meta.telemetryPageType) return "popular";
 							const {
 								subredditName: t
 							} = e.match.params;
@@ -40024,4 +40025,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b9164254d5e3d346ac7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5442c6966ff652b9b5a8.js.map
