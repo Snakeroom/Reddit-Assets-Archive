@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.04e0f7116093e0963b0c.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.371f4a9ed48bf6b6cc4b.js
+// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -4892,7 +4892,8 @@
 				onClick: t => {
 					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
-				"data-redditstyle": !e.disableRedditStyle
+				"data-redditstyle": !e.disableRedditStyle,
+				disabled: e.isDisabled
 			}, e.actionText))))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(e, t, n) {
@@ -6110,7 +6111,14 @@
 				const {
 					date: a,
 					time: i
-				} = Object(s.a)(e), c = Object(o.b)(), d = c ? Object(o.d)(c) : null;
+				} = Object(s.a)(e), c = Object(o.b)(), d = c ? Object(o.d)(c) : null, l = new Date, {
+					minDate: u,
+					minTime: m,
+					formattedMinDatetime: p
+				} = Object(s.c)(l), b = Object(r.a)(), h = Object(s.d)({
+					date: u,
+					time: m
+				});
 				return {
 					date: a,
 					time: i,
@@ -6122,44 +6130,63 @@
 							...e
 						}))
 					},
-					getMinDate: s.c,
-					getMaxDate: r.a
+					maxDate: b,
+					minDate: u,
+					minTime: m,
+					fullMinDatetime: h,
+					formattedMinDatetime: p
 				}
 			}
 		},
 		"./src/reddit/components/PollCreator/EndDatePicker/utils.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
+			n.d(t, "b", (function() {
 				return s
-			})), n.d(t, "b", (function() {
-				return a
 			})), n.d(t, "a", (function() {
-				return i
+				return a
 			})), n.d(t, "d", (function() {
-				return c
+				return i
+			})), n.d(t, "c", (function() {
+				return d
 			}));
 			var o = n("./src/lib/timezone/index.ts"),
 				r = n("./src/reddit/helpers/scheduledPosts/index.ts");
 			const s = () => {
-					const e = new Date,
-						[t] = Object(r.i)(Object(o.g)(e));
-					return t
-				},
-				a = () => {
 					const e = new Date;
 					return e.setDate(e.getDate() + 3), e
 				},
-				i = e => {
+				a = e => {
 					const [t, n] = Object(r.i)(Object(o.g)(e));
 					return {
 						date: t,
 						time: n
 					}
 				},
-				c = ({
+				i = ({
 					date: e,
 					time: t
-				}) => new Date(`${e}T${t}`)
+				}) => new Date(`${e}T${t}`),
+				c = e => e.toLocaleString("en-US", {
+					month: "numeric",
+					day: "numeric",
+					year: "numeric",
+					hour: "numeric",
+					minute: "2-digit",
+					hour12: !0
+				}),
+				d = e => {
+					const t = new Date(e);
+					t.setHours(t.getHours() + 1);
+					const {
+						date: n,
+						time: o
+					} = a(t);
+					return {
+						minDate: n,
+						minTime: o,
+						formattedMinDatetime: c(t)
+					}
+				}
 		},
 		"./src/reddit/components/PollCreator/Option/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -19852,8 +19879,9 @@
 						time: a,
 						timeZoneAbbr: i,
 						onChange: c,
-						getMinDate: l,
-						getMaxDate: u
+						maxDate: l,
+						minDate: u,
+						minTime: m
 					} = Object(Zi.a)(n, n => t(Object(Ai.b)({
 						...e,
 						endDate: n
@@ -19873,8 +19901,8 @@
 					onChange: e => c({
 						date: e
 					}),
-					min: l(),
-					max: u(),
+					min: u,
+					max: l,
 					value: o,
 					required: !0
 				}), r.a.createElement(Yi.a, {
@@ -19885,6 +19913,7 @@
 					onChange: e => c({
 						time: e
 					}),
+					min: m,
 					value: a,
 					required: !0
 				}), i && r.a.createElement("div", {
@@ -22876,4 +22905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.04e0f7116093e0963b0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.371f4a9ed48bf6b6cc4b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.68e61c36ebb9dcc54962.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a7c3fe60f8dbc4352c6b.js
+// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -13737,9 +13737,9 @@
 				Pu = Object(v.c)({
 					voting: Au
 				}),
-				Ru = r("./src/reddit/helpers/graphql/normalizePoll/index.ts"),
-				Cu = r("./src/reddit/actions/economics/predictions/constants.ts");
-			var Nu = r("./src/reddit/models/Prediction/index.ts");
+				Ru = r("./src/reddit/actions/economics/predictions/constants.ts");
+			var Cu = r("./src/reddit/helpers/graphql/normalizePoll/index.ts"),
+				Nu = r("./src/reddit/models/Prediction/index.ts");
 			const Lu = {};
 			var ku = (e = Lu, t) => {
 				switch (t.type) {
@@ -13758,7 +13758,7 @@
 					case ge.f:
 					case F.b:
 					case F.f:
-					case Cu.g: {
+					case Ru.g: {
 						const {
 							governance: r,
 							posts: s
@@ -13867,8 +13867,8 @@
 							...a
 						}
 					}
-					case Cu.i:
-					case Cu.h: {
+					case Ru.i:
+					case Ru.h: {
 						const {
 							pollId: r,
 							prediction: {
@@ -13899,7 +13899,7 @@
 							}
 						}
 					}
-					case Cu.b: {
+					case Ru.b: {
 						const {
 							postId: r,
 							prediction: s
@@ -13908,7 +13908,7 @@
 							...e,
 							[r]: {
 								...e[r],
-								...Object(Ru.b)(s)
+								...Object(Cu.b)(s)
 							}
 						} : e
 					}
@@ -14709,7 +14709,7 @@
 						case ge.f:
 						case F.b:
 						case F.f:
-						case Cu.g: {
+						case Ru.g: {
 							const {
 								governance: r,
 								posts: s
@@ -14961,7 +14961,7 @@
 					case zo.MORE_POSTS_LOADED:
 					case Qo.c:
 					case Qo.d:
-					case Cu.g: {
+					case Ru.g: {
 						const r = Yl(t.payload.meta);
 						return {
 							...e,
@@ -15333,7 +15333,7 @@
 							}
 						}
 					}
-					case Cu.l: {
+					case Ru.l: {
 						const {
 							tournamentPostId: r,
 							predictionId: s,
@@ -15373,14 +15373,14 @@
 							predictionId: s
 						})), n
 					}
-					case Cu.b: {
+					case Ru.b: {
 						const {
 							postId: r,
 							prediction: s
 						} = t.payload;
 						return {
 							...e,
-							[r]: tp(e[r], Object(Ru.a)(s))
+							[r]: tp(e[r], Object(Cu.a)(s))
 						}
 					}
 					case Ul.a:
@@ -21442,7 +21442,7 @@
 							coins: r
 						} : e
 					}
-					case Cu.i: {
+					case Ru.i: {
 						const {
 							price: r
 						} = t.payload;
@@ -23659,4 +23659,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.68e61c36ebb9dcc54962.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a7c3fe60f8dbc4352c6b.js.map

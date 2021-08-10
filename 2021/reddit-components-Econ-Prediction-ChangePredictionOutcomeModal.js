@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.052674d8f2a9faa61733.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.8dd203c59d22f7596f89.js
+// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-ChangePredictionOutcomeModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -38,7 +38,7 @@
 		"./src/reddit/actions/economics/predictions/index.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "e", (function() {
-				return x
+				return g
 			})), n.d(e, "i", (function() {
 				return k
 			})), n.d(e, "m", (function() {
@@ -46,9 +46,9 @@
 			})), n.d(e, "l", (function() {
 				return y
 			})), n.d(e, "j", (function() {
-				return T
-			})), n.d(e, "b", (function() {
 				return G
+			})), n.d(e, "b", (function() {
+				return T
 			})), n.d(e, "o", (function() {
 				return S
 			})), n.d(e, "p", (function() {
@@ -98,8 +98,8 @@
 			const C = Object(u.a)(I.e),
 				w = Object(u.a)(I.i),
 				P = Object(u.a)(I.l),
-				g = Object(u.a)(I.h),
-				x = Object(u.a)(I.b),
+				x = Object(u.a)(I.h),
+				g = Object(u.a)(I.b),
 				k = (t, e, n, o) => async (r, i, {
 					gqlContext: d
 				}) => {
@@ -156,11 +156,11 @@
 							resolvePrediction: d
 						} = i.body.data;
 					if (!(null == d ? void 0 : d.poll)) throw new Error("Failed to resolve prediction");
-					return n(g({
+					return n(x({
 						pollId: e,
 						prediction: d.poll
 					})), d.poll
-				}, _ = Object(u.a)(I.c), N = Object(u.a)(I.d), L = Object(u.a)(I.g), T = t => async (e, n, {
+				}, _ = Object(u.a)(I.c), N = Object(u.a)(I.d), L = Object(u.a)(I.g), G = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -212,7 +212,7 @@
 						posts: m,
 						meta: r.meta
 					})), u
-				}, G = Object(u.a)(I.a), S = Object(u.a)(I.j), D = Object(u.a)(I.k), Q = ({
+				}, T = Object(u.a)(I.a), S = Object(u.a)(I.j), D = Object(u.a)(I.k), Q = ({
 					subredditId: t
 				}) => async (e, n, {
 					gqlContext: o
@@ -332,7 +332,7 @@
 						const n = await Object(p.c)(r(), {
 							postId: t
 						});
-						e(x({
+						e(g({
 							postId: t,
 							prediction: n
 						}));
@@ -356,7 +356,7 @@
 						postId: t,
 						...e
 					});
-					return n(x({
+					return n(g({
 						postId: t,
 						prediction: i
 					})), i
@@ -366,15 +366,15 @@
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(t, e, n) {
 			"use strict";
 			n.d(e, "a", (function() {
-				return p
+				return l
 			})), n.d(e, "b", (function() {
-				return b
+				return p
 			})), n.d(e, "e", (function() {
-				return m
+				return b
 			})), n.d(e, "c", (function() {
-				return f
+				return m
 			})), n.d(e, "d", (function() {
-				return O
+				return f
 			}));
 			var o = n("./src/lib/initializeClient/installReducer.ts"),
 				r = n("./src/reddit/actions/economics/predictions/index.ts"),
@@ -391,33 +391,32 @@
 					predictions: i.a
 				}
 			});
-			const l = t => t(Object(c.f)({
-					duration: c.a,
-					kind: a.b.Error,
-					text: u._("Error: Failed to update prediction end time, please try again later", null, {
-						hk: "MkaNA"
-					})
-				})),
-				p = ({
-					postId: t,
-					closedAt: e
-				}) => async n => {
-					if (t && e && !isNaN(e.getTime())) try {
-						await n(Object(r.d)(t, {
-							closedAt: e
-						})), n(Object(c.f)({
-							duration: c.a,
-							kind: a.b.SuccessCommunity,
-							text: u._("Updated", null, {
-								hk: "4cncaA"
-							})
-						}))
-					} catch {
-						l(n)
-					} else l(n)
-				};
+			const l = ({
+				postId: t,
+				closedAt: e
+			}) => async n => {
+				try {
+					await n(Object(r.d)(t, {
+						closedAt: e
+					})), n(Object(c.f)({
+						duration: c.a,
+						kind: a.b.SuccessCommunity,
+						text: u._("Updated", null, {
+							hk: "4cncaA"
+						})
+					}))
+				} catch {
+					(t => t(Object(c.f)({
+						duration: c.a,
+						kind: a.b.Error,
+						text: u._("Error: Failed to update prediction end time, please try again later", null, {
+							hk: "MkaNA"
+						})
+					})))(n)
+				}
+			};
 
-			function b(t, e) {
+			function p(t, e) {
 				return async n => {
 					try {
 						await n(Object(r.d)(t, {
@@ -435,13 +434,13 @@
 					}
 				}
 			}
-			const m = t => Object(d.h)(s.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
+			const b = t => Object(d.h)(s.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
 					postId: t
 				}),
-				f = t => Object(d.h)(s.a.ECON_PREDICTIONS_CANCEL_PREDICTION, {
+				m = t => Object(d.h)(s.a.ECON_PREDICTIONS_CANCEL_PREDICTION, {
 					postId: t
 				}),
-				O = t => Object(d.h)(s.a.ECON_PREDICTIONS_CHANGE_OUTCOME, {
+				f = t => Object(d.h)(s.a.ECON_PREDICTIONS_CHANGE_OUTCOME, {
 					postId: t
 				})
 		},
@@ -561,9 +560,9 @@
 			})), n.d(e, "k", (function() {
 				return P
 			})), n.d(e, "b", (function() {
-				return g
-			})), n.d(e, "m", (function() {
 				return x
+			})), n.d(e, "m", (function() {
+				return g
 			})), n.d(e, "g", (function() {
 				return k
 			})), n.d(e, "h", (function() {
@@ -654,13 +653,13 @@
 					...b,
 					variables: e
 				}),
-				g = (t, e) => Object(o.a)(t, {
+				x = (t, e) => Object(o.a)(t, {
 					...i,
 					variables: {
 						input: e
 					}
 				}),
-				x = (t, e) => Object(o.a)(t, {
+				g = (t, e) => Object(o.a)(t, {
 					...O,
 					variables: {
 						input: e
@@ -880,4 +879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.052674d8f2a9faa61733.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.8dd203c59d22f7596f89.js.map

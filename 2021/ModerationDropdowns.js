@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.1ca15e9a5943b387525a.js
-// Retrieved at 8/10/2021, 12:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7760f39e6b990434c352.js
+// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -893,15 +893,15 @@
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return u
 			})), n.d(t, "b", (function() {
-				return m
+				return p
 			})), n.d(t, "e", (function() {
-				return b
+				return m
 			})), n.d(t, "c", (function() {
-				return f
+				return b
 			})), n.d(t, "d", (function() {
-				return h
+				return f
 			}));
 			var o = n("./src/lib/initializeClient/installReducer.ts"),
 				s = n("./src/reddit/actions/economics/predictions/index.ts"),
@@ -918,33 +918,32 @@
 					predictions: r.a
 				}
 			});
-			const u = e => e(Object(a.f)({
-					duration: a.a,
-					kind: d.b.Error,
-					text: l._("Error: Failed to update prediction end time, please try again later", null, {
-						hk: "MkaNA"
-					})
-				})),
-				p = ({
-					postId: e,
-					closedAt: t
-				}) => async n => {
-					if (e && t && !isNaN(t.getTime())) try {
-						await n(Object(s.d)(e, {
-							closedAt: t
-						})), n(Object(a.f)({
-							duration: a.a,
-							kind: d.b.SuccessCommunity,
-							text: l._("Updated", null, {
-								hk: "4cncaA"
-							})
-						}))
-					} catch {
-						u(n)
-					} else u(n)
-				};
+			const u = ({
+				postId: e,
+				closedAt: t
+			}) => async n => {
+				try {
+					await n(Object(s.d)(e, {
+						closedAt: t
+					})), n(Object(a.f)({
+						duration: a.a,
+						kind: d.b.SuccessCommunity,
+						text: l._("Updated", null, {
+							hk: "4cncaA"
+						})
+					}))
+				} catch {
+					(e => e(Object(a.f)({
+						duration: a.a,
+						kind: d.b.Error,
+						text: l._("Error: Failed to update prediction end time, please try again later", null, {
+							hk: "MkaNA"
+						})
+					})))(n)
+				}
+			};
 
-			function m(e, t) {
+			function p(e, t) {
 				return async n => {
 					try {
 						await n(Object(s.d)(e, {
@@ -962,13 +961,13 @@
 					}
 				}
 			}
-			const b = e => Object(i.h)(c.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
+			const m = e => Object(i.h)(c.a.ECON_PREDICTIONS_CHANGE_END_TIME, {
 					postId: e
 				}),
-				f = e => Object(i.h)(c.a.ECON_PREDICTIONS_CANCEL_PREDICTION, {
+				b = e => Object(i.h)(c.a.ECON_PREDICTIONS_CANCEL_PREDICTION, {
 					postId: e
 				}),
-				h = e => Object(i.h)(c.a.ECON_PREDICTIONS_CHANGE_OUTCOME, {
+				f = e => Object(i.h)(c.a.ECON_PREDICTIONS_CHANGE_OUTCOME, {
 					postId: e
 				})
 		},
@@ -1640,25 +1639,25 @@
 					onSpoilerPost: B,
 					post: A
 				}) => {
-					var G, U, z;
-					const W = Object(r.e)(N.o),
-						Q = Object(r.e)(e => {
+					var G, U, z, W;
+					const Q = Object(r.e)(N.o),
+						K = Object(r.e)(e => {
 							var t;
 							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.l)(e)
 						}),
-						K = Object(r.e)(e => {
+						V = Object(r.e)(e => {
 							var t;
 							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.k)(e)
 						}),
-						V = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
-						H = Object(w.b)(A),
-						q = !(!A.approvedBy || !H),
-						J = a ? void 0 : l,
-						Z = Object(P.a)(A),
-						X = u ? L : D;
+						H = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
+						q = Object(w.b)(A),
+						J = !(!A.approvedBy || !q),
+						Z = a ? void 0 : l,
+						X = Object(P.a)(A),
+						$ = u ? L : D;
 					return s.a.createElement(S.g, null, n && s.a.createElement(s.a.Fragment, null, !A.isSponsored && s.a.createElement(s.a.Fragment, null, s.a.createElement(S.e, {
-						className: X(_.a.Approve, J),
-						displayText: q ? C.fbt._("reapprove", null, {
+						className: $(_.a.Approve, Z),
+						displayText: J ? C.fbt._("reapprove", null, {
 							hk: "ZucfK"
 						}) : A.approvedBy ? C.fbt._("approved", null, {
 							hk: "nlSCc"
@@ -1667,7 +1666,7 @@
 						}),
 						onClick: p
 					}, s.a.createElement(S.a, null)), s.a.createElement(S.e, {
-						className: X(_.a.Remove, J),
+						className: $(_.a.Remove, Z),
 						displayText: A.isRemoved ? C.fbt._("removed", null, {
 							hk: "cSGLt"
 						}) : C.fbt._("remove", null, {
@@ -1675,7 +1674,7 @@
 						}),
 						onClick: g
 					}, s.a.createElement(S.i, null)), s.a.createElement(S.e, {
-						className: X(_.a.Spam, J),
+						className: $(_.a.Spam, Z),
 						displayText: A.isSpam ? C.fbt._("Removed as spam", null, {
 							hk: "2olZT7"
 						}) : C.fbt._("Remove as spam", null, {
@@ -1683,8 +1682,8 @@
 						}),
 						onClick: T
 					}, s.a.createElement(S.j, null))), e && s.a.createElement(S.e, {
-						className: X(_.a.Flair, J),
-						displayText: V ? C.fbt._("Edit post flair", null, {
+						className: $(_.a.Flair, Z),
+						displayText: H ? C.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : C.fbt._("Add post flair", null, {
 							hk: "1iPNLQ"
@@ -1701,18 +1700,18 @@
 						text: C.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
 						})
-					}), K && s.a.createElement(S.e, {
+					}), V && s.a.createElement(S.e, {
 						disabled: Boolean((null === (G = A.pollData) || void 0 === G ? void 0 : G.resolvedOptionId) || (null === (U = A.pollData) || void 0 === U ? void 0 : U.predictionStatus) === R.b.Cancelled),
 						displayText: C.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
 						}),
 						onClick: m
-					}, s.a.createElement(S.i, null)), W && (null === (z = A.pollData) || void 0 === z ? void 0 : z.isPrediction) && s.a.createElement(S.e, {
+					}, s.a.createElement(S.i, null)), Q && (null === (z = A.pollData) || void 0 === z ? void 0 : z.isPrediction) && !(null === (W = A.pollData) || void 0 === W ? void 0 : W.resolvedOptionId) && s.a.createElement(S.e, {
 						displayText: C.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
 						onClick: f
-					}, s.a.createElement(S.b, null)), Q && s.a.createElement(S.e, {
+					}, s.a.createElement(S.b, null)), K && s.a.createElement(S.e, {
 						textClassName: M.a.text,
 						onClick: b,
 						displayText: C.fbt._("Change the outcome", null, {
@@ -1730,7 +1729,7 @@
 						text: C.fbt._("Lock comments", null, {
 							hk: "YAV8n"
 						})
-					}), !Z && s.a.createElement(I.a, {
+					}), !X && s.a.createElement(I.a, {
 						isSelected: A.isOriginalContent,
 						onClick: v,
 						text: C.fbt._("Mark as OC", null, {
@@ -3190,4 +3189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.1ca15e9a5943b387525a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.7760f39e6b990434c352.js.map

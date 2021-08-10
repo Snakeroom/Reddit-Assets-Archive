@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatePollButton.e7634c545a3c2456d4d7.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatePollButton.d08040ff5246121e370f.js
+// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatePollButton"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, a, t) {
@@ -11,50 +11,51 @@
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, a, t) {
 			"use strict";
-			var o = t("./node_modules/fbt/lib/FbtPublic.js"),
-				s = t("./node_modules/react/index.js"),
-				n = t.n(s),
-				r = t("./src/higherOrderComponents/asModal/index.tsx"),
-				i = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
+				o = t("./node_modules/react/index.js"),
+				n = t.n(o),
+				i = t("./src/higherOrderComponents/asModal/index.tsx"),
+				r = t("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				l = t("./src/reddit/controls/TextButton/index.tsx"),
 				c = t("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				d = t("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = t.n(d);
 			const u = e => e.preventDefault();
-			a.a = Object(r.a)(e => n.a.createElement(i.e, null, n.a.createElement(i.i, null, n.a.createElement(c.a, null, n.a.createElement(i.q, null, e.headerText || o.fbt._("Confirm", null, {
+			a.a = Object(i.a)(e => n.a.createElement(r.e, null, n.a.createElement(r.i, null, n.a.createElement(c.a, null, n.a.createElement(r.q, null, e.headerText || s.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), n.a.createElement(l.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, n.a.createElement(i.b, null)))), n.a.createElement(i.l, null, n.a.createElement(i.p, {
+			}, n.a.createElement(r.b, null)))), n.a.createElement(r.l, null, n.a.createElement(r.p, {
 				className: m.a.ModalText
-			}, e.modalText)), n.a.createElement(i.g, null, !e.hideCancelButton && n.a.createElement(i.a, {
+			}, e.modalText)), n.a.createElement(r.g, null, !e.hideCancelButton && n.a.createElement(r.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
 					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
 				},
 				"data-redditstyle": !e.disableRedditStyle
-			}, e.cancelActionText || o.fbt._("Cancel", null, {
+			}, e.cancelActionText || s.fbt._("Cancel", null, {
 				hk: "2TSLl5"
-			})), n.a.createElement(i.u, {
+			})), n.a.createElement(r.u, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: a => {
 					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
 				},
-				"data-redditstyle": !e.disableRedditStyle
+				"data-redditstyle": !e.disableRedditStyle,
+				disabled: e.isDisabled
 			}, e.actionText))))
 		},
 		"./src/reddit/components/IdCard/CreatePollButton/index.tsx": function(e, a, t) {
 			"use strict";
 			t.r(a);
-			var o = t("./node_modules/fbt/lib/FbtPublic.js"),
-				s = t("./node_modules/react/index.js"),
-				n = t.n(s),
-				r = t("./src/lib/opener/index.ts"),
-				i = t("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
+				o = t("./node_modules/react/index.js"),
+				n = t.n(o),
+				i = t("./src/lib/opener/index.ts"),
+				r = t("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				l = t("./src/reddit/components/TrackingHelper/index.tsx"),
 				c = t("./src/reddit/controls/Button/index.tsx"),
 				d = t("./src/reddit/helpers/localStorage/index.ts"),
@@ -68,7 +69,7 @@
 						isDismissed: !1,
 						isModalOpen: !1
 					}, this.onConfirm = () => {
-						Object(r.d)("https://forms.gle/1wn2oCNFz3mXVf9S8", r.c.BLANK)
+						Object(i.d)("https://forms.gle/1wn2oCNFz3mXVf9S8", i.c.BLANK)
 					}, this.closeModal = () => {
 						this.setState({
 							isDismissed: !0,
@@ -89,16 +90,16 @@
 					return this.state.isDismissed || !h.includes(this.props.listingName.toLowerCase()) ? null : n.a.createElement(n.a.Fragment, null, n.a.createElement(c.i, {
 						className: p.a.CreatePostButton,
 						onClick: this.onCreatePostButtonClick
-					}, o.fbt._("Submit a poll", null, {
+					}, s.fbt._("Submit a poll", null, {
 						hk: "1N5qAj"
-					})), this.state.isModalOpen && n.a.createElement(i.a, {
-						actionText: o.fbt._("Sure", null, {
+					})), this.state.isModalOpen && n.a.createElement(r.a, {
+						actionText: s.fbt._("Sure", null, {
 							hk: "1vHfdf"
 						}),
-						cancelActionText: o.fbt._("No, thanks", null, {
+						cancelActionText: s.fbt._("No, thanks", null, {
 							hk: "20SZOo"
 						}),
-						headerText: o.fbt._("Polls are not ready yet", null, {
+						headerText: s.fbt._("Polls are not ready yet", null, {
 							hk: "3X3tQn"
 						}),
 						modalText: n.a.createElement(n.a.Fragment, null, "Sorry, Polls are not ready yet. We are working hard on it and are excited to share them with you.", n.a.createElement("br", null), n.a.createElement("br", null), "Do you have a few minutes to answer a couple of questions and help us make the new Polls post type even better?"),
@@ -112,4 +113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.e7634c545a3c2456d4d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatePollButton.d08040ff5246121e370f.js.map
