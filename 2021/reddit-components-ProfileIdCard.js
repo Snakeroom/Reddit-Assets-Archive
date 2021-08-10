@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.010da56ab2c677b5ce4e.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7af43dbe499658390f57.js
+// Retrieved at 8/10/2021, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1624,10 +1624,12 @@
 				const C = Object(s.useCallback)(() => g(Object(u.c)(e ? "user_hovercard" : "profile_overview", t)), [e, g, t]);
 				return a.a.createElement(m.q, {
 					onClick: () => {
-						r ? (g(u.d), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C(), v(Object(d.b)({
+						r ? (g(u.d), I && _ === f.a.notVoted && v(Object(c.db)(I))) : C();
+						const e = r ? "postify" : "copy";
+						v(Object(d.b)({
 							clickSource: O,
 							share: b,
-							source: "try_this_look_post"
+							source: e
 						}))
 					},
 					className: Object(n.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
@@ -3020,4 +3022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.010da56ab2c677b5ce4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.7af43dbe499658390f57.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.2c56df27f68d5589863e.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.895ec6643d15f0420c48.js
+// Retrieved at 8/10/2021, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -2572,10 +2572,12 @@
 				const E = Object(s.useCallback)(() => v(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, v, t]);
 				return o.a.createElement(u.q, {
 					onClick: () => {
-						n ? (v(m.d), _ && g === b.a.notVoted && I(Object(c.db)(_))) : E(), I(Object(d.b)({
+						n ? (v(m.d), _ && g === b.a.notVoted && I(Object(c.db)(_))) : E();
+						const e = n ? "postify" : "copy";
+						I(Object(d.b)({
 							clickSource: C,
 							share: f,
-							source: "try_this_look_post"
+							source: e
 						}))
 					},
 					className: Object(r.a)(h.a.snoovatarButton, h.a.snoovatarExtraPadding, h.a.compactButtonLayout, {
@@ -3846,4 +3848,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2c56df27f68d5589863e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.895ec6643d15f0420c48.js.map

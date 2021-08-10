@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.82ed7ff79f60760f9223.js
-// Retrieved at 8/10/2021, 1:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a14a92b6baea988d6aee.js
+// Retrieved at 8/10/2021, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -1859,10 +1859,12 @@
 				const g = Object(s.useCallback)(() => x(Object(u.c)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return n.a.createElement(m.q, {
 					onClick: () => {
-						r ? (x(u.d), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g(), E(Object(d.b)({
+						r ? (x(u.d), I && _ === b.a.notVoted && E(Object(i.db)(I))) : g();
+						const e = r ? "postify" : "copy";
+						E(Object(d.b)({
 							clickSource: w,
 							share: v,
-							source: "try_this_look_post"
+							source: e
 						}))
 					},
 					className: Object(a.a)(f.a.snoovatarButton, f.a.snoovatarExtraPadding, f.a.compactButtonLayout, {
@@ -2699,4 +2701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.82ed7ff79f60760f9223.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.a14a92b6baea988d6aee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.d25f045c00ab2952ac78.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.79ab5d85cbb37c0b496b.js
+// Retrieved at 8/10/2021, 2:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1094,10 +1094,12 @@
 				const O = Object(r.useCallback)(() => E(Object(m.c)(e ? "user_hovercard" : "profile_overview", t)), [e, E, t]);
 				return o.a.createElement(u.q, {
 					onClick: () => {
-						s ? (E(m.d), v && _ === h.a.notVoted && g(Object(c.db)(v))) : O(), g(Object(d.b)({
+						s ? (E(m.d), v && _ === h.a.notVoted && g(Object(c.db)(v))) : O();
+						const e = s ? "postify" : "copy";
+						g(Object(d.b)({
 							clickSource: y,
 							share: b,
-							source: "try_this_look_post"
+							source: e
 						}))
 					},
 					className: Object(n.a)(x.a.snoovatarButton, x.a.snoovatarExtraPadding, x.a.compactButtonLayout, {
@@ -2969,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.d25f045c00ab2952ac78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~2e044255.79ab5d85cbb37c0b496b.js.map
