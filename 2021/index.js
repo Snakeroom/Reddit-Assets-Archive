@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.3fc9736ae6b0c58b16f9.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.2c99f700464850518453.js
+// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -175,7 +175,7 @@
 									selectedNumberTokens: t.amount
 								}));
 								try {
-									await o(Object(C.m)({
+									await o(Object(C.n)({
 										coinPackageId: t.id,
 										selectedOptionId: _,
 										price: t.amount,
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.3fc9736ae6b0c58b16f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.2c99f700464850518453.js.map
