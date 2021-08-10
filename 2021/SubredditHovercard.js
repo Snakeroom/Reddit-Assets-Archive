@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.14e530a9f2a8b56ca53b.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.ba8577ea848428f13832.js
+// Retrieved at 8/10/2021, 3:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, r) {
@@ -290,8 +290,8 @@
 				O = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				I = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				S = r("./src/reddit/components/SubredditIcon/index.tsx"),
-				j = r("./src/reddit/controls/Button/index.tsx"),
-				N = r("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
+				N = r("./src/reddit/controls/Button/index.tsx"),
+				j = r("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
 				_ = r("./src/reddit/components/DiscoveryUnit/SubredditsDiscoveryUnit/communityClickContext.ts").c,
 				T = r("./src/reddit/components/Hovercards/SubredditHovercard/SubredditOptions.m.less"),
 				C = r.n(T);
@@ -346,7 +346,7 @@
 					subredditAboutInfo: u
 				}), s.a.createElement(x.a, {
 					subreddit: l
-				}), s.a.createElement(w, null, Object(N.a)(u.publicDescription || "", 140)), s.a.createElement(j.k, {
+				}), s.a.createElement(w, null, Object(j.a)(u.publicDescription || "", 140)), s.a.createElement(N.k, {
 					onClick: b,
 					to: `${l.url}`
 				}, g._("View Community", null, {
@@ -404,6 +404,7 @@
 						tooltipType: e.tooltipType
 					}), r = `${t}-hover-id`;
 					return s.a.createElement(i.b, {
+						className: this.props.className,
 						hoverId: r,
 						sendHoverEvent: this.sendEvent,
 						authorOrSubredditName: e.subredditName,
@@ -462,9 +463,9 @@
 			})), r.d(t, "d", (function() {
 				return S
 			})), r.d(t, "e", (function() {
-				return j
-			})), r.d(t, "f", (function() {
 				return N
+			})), r.d(t, "f", (function() {
+				return j
 			})), r.d(t, "g", (function() {
 				return _
 			})), r.d(t, "h", (function() {
@@ -636,7 +637,7 @@
 					data: o
 				})
 			};
-			var j = e => {
+			var N = e => {
 				const {
 					post: t,
 					subredditOrProfile: r,
@@ -659,7 +660,7 @@
 					data: i
 				})
 			};
-			var N = e => {
+			var j = e => {
 				const {
 					post: t,
 					subredditOrProfile: r
@@ -809,9 +810,9 @@
 			})), r.d(t, "n", (function() {
 				return S
 			})), r.d(t, "l", (function() {
-				return j
-			})), r.d(t, "p", (function() {
 				return N
+			})), r.d(t, "p", (function() {
+				return j
 			})), r.d(t, "o", (function() {
 				return _
 			})), r.d(t, "e", (function() {
@@ -871,8 +872,8 @@
 						priority: O = m.Primary,
 						redditStyle: I,
 						size: S = u.S,
-						text: j,
-						...N
+						text: N,
+						...j
 					} = e, _ = (({
 						baseClassName: e,
 						redditStyle: t,
@@ -898,7 +899,7 @@
 						priority: O,
 						redditStyle: I,
 						size: S,
-						text: j
+						text: N
 					}), T = (({
 						children: e,
 						text: t,
@@ -917,16 +918,16 @@
 						isFilled: i === m.Primary
 					})))({
 						children: v,
-						text: j,
+						text: N,
 						Icon: r,
 						iconPosition: n,
 						priority: O
 					});
-					return x === b.InternalLink && (e => "to" in e)(N) ? s.a.createElement(h, c({}, l, N, {
+					return x === b.InternalLink && (e => "to" in e)(j) ? s.a.createElement(h, c({}, l, j, {
 						className: _
-					}), T) : x === b.ExternalLink && (e => "href" in e)(N) ? s.a.createElement(y, c({}, l, N, {
+					}), T) : x === b.ExternalLink && (e => "href" in e)(j) ? s.a.createElement(y, c({}, l, j, {
 						className: _
-					}), T) : s.a.createElement(f, c({}, l, N, {
+					}), T) : s.a.createElement(f, c({}, l, j, {
 						className: _
 					}), T)
 				},
@@ -953,11 +954,11 @@
 					kind: b.InternalLink,
 					priority: m.Secondary
 				}, e)),
-				j = e => s.a.createElement(v, c({
+				N = e => s.a.createElement(v, c({
 					kind: b.Button,
 					priority: m.Secondary
 				}, e)),
-				N = e => s.a.createElement(v, c({
+				j = e => s.a.createElement(v, c({
 					kind: b.InternalLink,
 					priority: m.Plain
 				}, e)),
@@ -1126,4 +1127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.14e530a9f2a8b56ca53b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.ba8577ea848428f13832.js.map
