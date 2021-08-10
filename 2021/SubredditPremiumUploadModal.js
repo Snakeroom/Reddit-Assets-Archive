@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.6abca8c3ec2b14e15f4f.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.a3188fbed3768f26b9db.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, s) {
@@ -249,23 +249,23 @@
 				F = s.n(R);
 			const {
 				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 120, z = 150;
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 120, Z = 150;
 
-			function K(e) {
+			function z(e) {
 				const t = e.file.type;
 				return "image/png" === t || "image/x-png" === t || "image/gif" === t
 			}
 
-			function q(e) {
-				return e.height === Z && e.width === Z
+			function K(e) {
+				return e.height === q && e.width === q
 			}
 
 			function G(e) {
-				return e.file.size <= 1024 * z
+				return e.file.size <= 1024 * Z
 			}
 
 			function J(e) {
-				return K(e) && q(e) && G(e)
+				return z(e) && K(e) && G(e)
 			}
 			const W = e => r.a.createElement("li", {
 				className: Object(w.a)(F.a.requirement, {
@@ -279,7 +279,7 @@
 					type: s,
 					username: a,
 					usernameColor: n
-				} = e, o = t && !K(t), i = t && !q(t), l = t && !G(t);
+				} = e, o = t && !z(t), i = t && !K(t), l = t && !G(t);
 				return r.a.createElement("div", {
 					className: F.a.container
 				}, r.a.createElement("div", {
@@ -298,7 +298,7 @@
 					hk: "3WlJuk"
 				})), r.a.createElement(W, {
 					isError: l
-				}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", z)], {
+				}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", Z)], {
 					hk: "2i3L33"
 				})), r.a.createElement(W, null, H._("Add 4px black outline", null, {
 					hk: "2mHGJn"
@@ -379,17 +379,17 @@
 					name: a,
 					onCloseModal: n
 				} = e;
-				return r.a.createElement(m.d, {
+				return r.a.createElement(m.e, {
 					className: se.a.modalBody
-				}, r.a.createElement(m.h, {
+				}, r.a.createElement(m.i, {
 					className: se.a.modalHeader
-				}, r.a.createElement(m.p, {
+				}, r.a.createElement(m.q, {
 					className: se.a.title
 				}, ae._("Thanks!", null, {
 					hk: "SMfWZ"
 				})), r.a.createElement(x.a, {
 					onClick: n
-				}, r.a.createElement(m.b, null))), r.a.createElement(m.k, {
+				}, r.a.createElement(m.b, null))), r.a.createElement(m.l, {
 					className: se.a.modalMain
 				}, r.a.createElement("div", {
 					className: se.a.modMessage
@@ -399,7 +399,7 @@
 					image: s,
 					name: a,
 					description: t
-				}) : r.a.createElement(ne, e)), r.a.createElement(m.f, null, r.a.createElement(g.i, {
+				}) : r.a.createElement(ne, e)), r.a.createElement(m.g, null, r.a.createElement(g.i, {
 					onClick: n
 				}, ae._("Okay", null, {
 					hk: "406S0g"
@@ -657,18 +657,18 @@
 						h = p ? void 0 : this.getNameErrorMessage(),
 						v = ke(a + s()),
 						E = v ? void 0 : this.getDescriptionErrorMessage();
-					return r.a.createElement(m.d, {
+					return r.a.createElement(m.e, {
 						className: _e.a.modalBody
-					}, r.a.createElement(m.h, {
+					}, r.a.createElement(m.i, {
 						className: _e.a.modalHeader
-					}, r.a.createElement(m.p, {
+					}, r.a.createElement(m.q, {
 						className: _e.a.title
 					}, Ce._("Upload Badge or Emoji", null, {
 						hk: "2xnG8y"
 					})), r.a.createElement(x.a, {
 						disabled: c,
 						onClick: this.closeModal
-					}, r.a.createElement(m.b, null))), r.a.createElement(m.k, null, r.a.createElement(me, {
+					}, r.a.createElement(m.b, null))), r.a.createElement(m.l, null, r.a.createElement(me, {
 						type: l,
 						onItemTypeSelected: this.onTypeSelected
 					}), r.a.createElement("div", {
@@ -735,7 +735,7 @@
 						className: _e.a.tickerDescription
 					}, Ce._("Be creative. This is what users can type to enter in your emoji.", null, {
 						hk: "2FMSyr"
-					})))), r.a.createElement(m.f, null, r.a.createElement(m.a, {
+					})))), r.a.createElement(m.g, null, r.a.createElement(m.a, {
 						disabled: c,
 						onClick: this.closeModal
 					}, Ce._("Cancel", null, {
@@ -1241,4 +1241,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.6abca8c3ec2b14e15f4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.a3188fbed3768f26b9db.js.map

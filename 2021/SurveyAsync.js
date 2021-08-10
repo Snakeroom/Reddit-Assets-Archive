@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.69d40ba4242b88bdf70d.js
-// Retrieved at 8/2/2021, 10:30:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.6c0c865562d085b2d3d5.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -47,15 +47,15 @@
 				m = n("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				u = n.n(m);
 			const d = e => e.preventDefault();
-			t.a = Object(r.a)(e => s.a.createElement(l.d, null, s.a.createElement(l.h, null, s.a.createElement(i.a, null, s.a.createElement(l.p, null, e.headerText || o.fbt._("Confirm", null, {
+			t.a = Object(r.a)(e => s.a.createElement(l.e, null, s.a.createElement(l.i, null, s.a.createElement(i.a, null, s.a.createElement(l.q, null, e.headerText || o.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), s.a.createElement(c.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, s.a.createElement(l.b, null)))), s.a.createElement(l.k, null, s.a.createElement(l.o, {
+			}, s.a.createElement(l.b, null)))), s.a.createElement(l.l, null, s.a.createElement(l.p, {
 				className: u.a.ModalText
-			}, e.modalText)), s.a.createElement(l.f, null, !e.hideCancelButton && s.a.createElement(l.a, {
+			}, e.modalText)), s.a.createElement(l.g, null, !e.hideCancelButton && s.a.createElement(l.a, {
 				className: u.a.buttonWidth,
 				onMouseDown: d,
 				onClick: () => {
@@ -64,7 +64,7 @@
 				"data-redditstyle": !e.disableRedditStyle
 			}, e.cancelActionText || o.fbt._("Cancel", null, {
 				hk: "2TSLl5"
-			})), s.a.createElement(l.t, {
+			})), s.a.createElement(l.u, {
 				className: u.a.buttonWidth,
 				onMouseDown: d,
 				onClick: t => {
@@ -287,7 +287,7 @@
 					text: a
 				}) => s.a.createElement(s.a.Fragment, null, s.a.createElement("h3", {
 					className: C.a.title
-				}, e.follow_up_question), s.a.createElement(p.s, {
+				}, e.follow_up_question), s.a.createElement(p.t, {
 					className: C.a.textArea,
 					value: a,
 					placeholder: o.fbt._("Share your thoughts (Optional)", null, {
@@ -483,4 +483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.69d40ba4242b88bdf70d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.6c0c865562d085b2d3d5.js.map

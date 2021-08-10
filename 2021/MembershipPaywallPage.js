@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.7bc2372818eb7b0a4c3d.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a38995009024eeaafd45.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -827,15 +827,15 @@
 				d = s("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = s.n(d);
 			const u = e => e.preventDefault();
-			t.a = Object(r.a)(e => a.a.createElement(o.d, null, a.a.createElement(o.h, null, a.a.createElement(l.a, null, a.a.createElement(o.p, null, e.headerText || i.fbt._("Confirm", null, {
+			t.a = Object(r.a)(e => a.a.createElement(o.e, null, a.a.createElement(o.i, null, a.a.createElement(l.a, null, a.a.createElement(o.q, null, e.headerText || i.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), a.a.createElement(c.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, a.a.createElement(o.b, null)))), a.a.createElement(o.k, null, a.a.createElement(o.o, {
+			}, a.a.createElement(o.b, null)))), a.a.createElement(o.l, null, a.a.createElement(o.p, {
 				className: m.a.ModalText
-			}, e.modalText)), a.a.createElement(o.f, null, !e.hideCancelButton && a.a.createElement(o.a, {
+			}, e.modalText)), a.a.createElement(o.g, null, !e.hideCancelButton && a.a.createElement(o.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
@@ -844,7 +844,7 @@
 				"data-redditstyle": !e.disableRedditStyle
 			}, e.cancelActionText || i.fbt._("Cancel", null, {
 				hk: "2TSLl5"
-			})), a.a.createElement(o.t, {
+			})), a.a.createElement(o.u, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: t => {
@@ -6866,4 +6866,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.7bc2372818eb7b0a4c3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.a38995009024eeaafd45.js.map

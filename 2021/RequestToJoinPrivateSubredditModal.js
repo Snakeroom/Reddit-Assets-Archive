@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.40219f413e32bd7aee86.js
-// Retrieved at 7/15/2021, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.284e84129b462033d433.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RequestToJoinPrivateSubredditModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less": function(e, t, a) {
@@ -41,8 +41,8 @@
 				h = a("./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less"),
 				E = a.n(h),
 				j = a("./src/lib/lessComponent.tsx");
-			const k = j.a.wrapped(u.d, "ModalBody", E.a),
-				R = j.a.wrapped(u.b, "CloseIcon", E.a);
+			const R = j.a.wrapped(u.e, "ModalBody", E.a),
+				k = j.a.wrapped(u.b, "CloseIcon", E.a);
 			t.default = j.a.wrapped(Object(l.a)((function() {
 				const e = Object(p.a)(),
 					t = Object(i.d)(),
@@ -56,9 +56,9 @@
 						hk: "3Ro26f"
 					}),
 					w = Object(c.e)(q, C.b.SuccessCommunity);
-				return r.a.createElement(k, {
+				return r.a.createElement(R, {
 					className: E.a.requestModal
-				}, r.a.createElement(u.h, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement("div", {
+				}, r.a.createElement(u.i, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement("div", {
 					className: E.a.ModalTitle
 				}, n.fbt._("Request to join", null, {
 					hk: "2VKavP"
@@ -66,7 +66,7 @@
 					className: E.a.Title
 				}, r.a.createElement("span", null, `r/${h}`))), r.a.createElement(_.a, {
 					onClick: j
-				}, r.a.createElement(R, null)))), r.a.createElement(u.k, null, r.a.createElement("div", {
+				}, r.a.createElement(k, null)))), r.a.createElement(u.l, null, r.a.createElement("div", {
 					className: E.a.Description
 				}, n.fbt._("Write a short message to the moderators explaining why you want to join.", null, {
 					hk: "4uvu3g"
@@ -79,12 +79,12 @@
 					onChange: e => l(e.target.value),
 					state: void 0,
 					required: !0
-				})), r.a.createElement(u.f, null, r.a.createElement(u.a, {
+				})), r.a.createElement(u.g, null, r.a.createElement(u.a, {
 					"data-redditstyle": !0,
 					onClick: j
 				}, n.fbt._("Cancel", null, {
 					hk: "2TSLl5"
-				})), r.a.createElement(u.q, {
+				})), r.a.createElement(u.r, {
 					onClick: () => {
 						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${h}`, a, v.e.View)), j(), t(Object(c.f)(w))
 					}
@@ -273,4 +273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.40219f413e32bd7aee86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.284e84129b462033d433.js.map

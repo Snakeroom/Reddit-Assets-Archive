@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1bce95f2b76b926f2bd7.js
-// Retrieved at 8/10/2021, 1:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fda397bb7d1135e5f206.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -207,7 +207,6 @@
 				predictionOption: "_3wvUT6tjOcXB4BiKlEXrxY",
 				selected: "_1gT-9Fji_KmUujExIMuFfd",
 				userIcon: "k-ZpKUSo0rrrjE-paWfxJ",
-				confirmButton: "dTclsbEKUERQwbXfl3-1j",
 				predictionOptionLabel: "_1Vz7v_uQsxv72ujqMsoKZQ"
 			}
 		},
@@ -580,14 +579,13 @@
 			}));
 			var se = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				oe = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
-				re = n("./src/reddit/controls/Button/index.tsx"),
-				ie = n("./src/reddit/controls/TextButton/index.tsx"),
-				ae = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				ce = n("./src/reddit/components/Econ/Prediction/PredictionChangeModal/index.m.less"),
-				de = n.n(ce);
+				re = n("./src/reddit/controls/TextButton/index.tsx"),
+				ie = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				ae = n("./src/reddit/components/Econ/Prediction/PredictionChangeModal/index.m.less"),
+				ce = n.n(ae);
 
-			function le() {
-				return (le = Object.assign || function(e) {
+			function de() {
+				return (de = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -595,7 +593,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ue = Object(J.a)(({
+			const le = Object(J.a)(({
 					postId: e,
 					options: t,
 					selectedOptionId: n,
@@ -604,29 +602,28 @@
 					const o = Object(a.d)(),
 						c = Object(C.a)(),
 						[l, u] = Object(r.useState)(null);
-					return i.a.createElement(se.d, null, i.a.createElement(se.h, null, i.a.createElement(ae.a, null, i.a.createElement(se.p, null, U.fbt._("Change your prediction", null, {
+					return i.a.createElement(se.e, null, i.a.createElement(se.i, null, i.a.createElement(ie.a, null, i.a.createElement(se.q, null, U.fbt._("Change your prediction", null, {
 						hk: "34AjlU"
-					})), i.a.createElement(ie.a, {
+					})), i.a.createElement(re.a, {
 						onClick: s
-					}, i.a.createElement(se.b, null)))), i.a.createElement(se.k, null, t.map(e => i.a.createElement("button", {
+					}, i.a.createElement(se.b, null)))), i.a.createElement(se.l, null, t.map(e => i.a.createElement("button", {
 						key: e.id,
 						type: "button",
-						className: Object(d.a)(de.a.predictionOption, {
-							[de.a.selected]: e.id === (null == l ? void 0 : l.id)
+						className: Object(d.a)(ce.a.predictionOption, {
+							[ce.a.selected]: e.id === (null == l ? void 0 : l.id)
 						}),
 						disabled: e.id === n,
 						onClick: () => u(e)
 					}, i.a.createElement("span", {
-						className: de.a.predictionOptionLabel
+						className: ce.a.predictionOptionLabel
 					}, e.text), e.id === n && i.a.createElement(oe.a, {
-						className: de.a.userIcon
-					})))), i.a.createElement(se.f, null, i.a.createElement(se.a, {
+						className: ce.a.userIcon
+					})))), i.a.createElement(se.g, null, i.a.createElement(se.a, {
 						onClick: s,
 						"data-redditstyle": !0
 					}, U.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), i.a.createElement(re.q, {
-						className: de.a.confirmButton,
+					})), i.a.createElement(se.c, {
 						disabled: !l,
 						onClick: () => {
 							l && (o((({
@@ -662,87 +659,88 @@
 						hk: "2Fmv8L"
 					}))))
 				}),
-				me = e => i.a.createElement(ue, le({
+				ue = e => i.a.createElement(le, de({
 					withOverlay: !0,
 					onOverlayClick: e.onClose
 				}, e));
-			var be = n("./src/reddit/icons/svgs/ChangePrediction/index.tsx"),
-				pe = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
-				fe = n.n(pe);
+			var me = n("./src/reddit/icons/svgs/ChangePrediction/index.tsx"),
+				be = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.m.less"),
+				pe = n.n(be);
 			const {
-				fbt: Ee
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), he = ({
+				fbt: fe
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ee = ({
 				postId: e,
 				options: t,
 				selectedOptionId: n,
 				isLimitReached: s
 			}) => {
-				const [o, a] = Object(r.useState)(!1), c = Object(C.a)(), d = s ? Ee._("You've already changed your answer twice", null, {
+				const [o, a] = Object(r.useState)(!1), c = Object(C.a)(), d = s ? fe._("You've already changed your answer twice", null, {
 					hk: "16O9hD"
-				}) : Ee._("Change my prediction", null, {
+				}) : fe._("Change my prediction", null, {
 					hk: "1oibor"
 				});
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("button", {
 					"aria-label": d,
-					className: fe.a.additionalOptionButton,
+					className: pe.a.additionalOptionButton,
 					disabled: s,
 					onClick: () => {
 						a(!0), c(Object(_.c)(e))
 					}
-				}, i.a.createElement(be.a, {
-					className: fe.a.icon
-				}), d), o && i.a.createElement(me, {
+				}, i.a.createElement(me.a, {
+					className: pe.a.icon
+				}), d), o && i.a.createElement(ue, {
 					postId: e,
 					options: t,
 					selectedOptionId: n,
 					onClose: () => a(!1)
 				}))
 			};
-			var _e = n("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
-				Ce = n("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
-				ge = n.n(Ce);
+			var he = n("./src/reddit/icons/svgs/ClockFilled/index.tsx"),
+				_e = n("./src/reddit/components/Econ/Prediction/PredictionStatus/index.m.less"),
+				Ce = n.n(_e);
 			const {
-				fbt: ve
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), xe = ({
+				fbt: ge
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ve = ({
 				endsAt: e,
 				resolvedOptionId: t,
 				isCoins: n
 			}) => Date.now() > e ? i.a.createElement("div", {
-				className: ge.a.statusBar
-			}, n && i.a.createElement(_e.a, {
-				className: ge.a.clockIcon
-			}), t ? ve._("Prediction ended", null, {
+				className: Ce.a.statusBar
+			}, n && i.a.createElement(he.a, {
+				className: Ce.a.clockIcon
+			}), t ? ge._("Prediction ended", null, {
 				hk: "3o79Ig"
-			}) : ve._("Ended. Awaiting results", null, {
+			}) : ge._("Ended. Awaiting results", null, {
 				hk: "1szagh"
 			})) : i.a.createElement("div", {
-				className: ge.a.statusBar
-			}, n && i.a.createElement(_e.a, {
-				className: ge.a.clockIcon
-			}), ve._("Prediction ends in {expirationDuration}", [ve._param("expirationDuration", Object(u.a)(new Date(e), !0))], {
+				className: Ce.a.statusBar
+			}, n && i.a.createElement(he.a, {
+				className: Ce.a.clockIcon
+			}), ge._("Prediction ends in {expirationDuration}", [ge._param("expirationDuration", Object(u.a)(new Date(e), !0))], {
 				hk: "3ysXEE"
-			})), Oe = ({
+			})), xe = ({
 				endsAt: e,
 				status: t,
 				resolvedOptionId: n,
 				totalStakeAmount: s,
 				isCoins: o
 			}) => t === g.b.Cancelled || t === g.b.CancelInProgress ? i.a.createElement("div", {
-				className: ge.a.statusBar
-			}, ve._("Canceled", null, {
+				className: Ce.a.statusBar
+			}, ge._("Canceled", null, {
 				hk: "1SL2bC"
 			})) : i.a.createElement("div", null, s > 0 && o && i.a.createElement("div", {
-				className: ge.a.statusBar
+				className: Ce.a.statusBar
 			}, i.a.createElement(G.a, {
-				className: ge.a.coinIcon
-			}), s, " ", ve._("added by participants", null, {
+				className: Ce.a.coinIcon
+			}), s, " ", ge._("added by participants", null, {
 				hk: "PSq3T"
-			})), i.a.createElement(xe, {
+			})), i.a.createElement(ve, {
 				endsAt: e,
 				resolvedOptionId: n,
 				isCoins: o
 			}));
-			var Pe = n("./src/reddit/icons/fonts/index.tsx"),
+			var Oe = n("./src/reddit/controls/Button/index.tsx"),
+				Pe = n("./src/reddit/icons/fonts/index.tsx"),
 				ye = n("./src/reddit/components/Econ/Prediction/ResolutionModal/index.m.less"),
 				Ie = n.n(ye);
 			var ke = Object(J.a)((function({
@@ -753,10 +751,10 @@
 				}) {
 					return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 						className: Ie.a.header
-					}, i.a.createElement(re.q, {
+					}, i.a.createElement(Oe.q, {
 						className: Ie.a.closeButton,
 						Icon: Object(Pe.b)("close"),
-						priority: re.b.Plain,
+						priority: Oe.b.Plain,
 						onClick: n
 					}), i.a.createElement("h1", null, U.fbt._("Confirm Your Answer", null, {
 						hk: "4yIXaD"
@@ -770,22 +768,22 @@
 						hk: "1M6iWL"
 					})), i.a.createElement("div", {
 						className: Ie.a.actions
-					}, i.a.createElement(re.l, {
+					}, i.a.createElement(Oe.l, {
 						disabled: e,
 						onClick: n,
-						priority: re.b.Secondary,
+						priority: Oe.b.Secondary,
 						redditStyle: !0,
-						size: re.c.S
+						size: Oe.c.S
 					}, U.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), i.a.createElement(re.i, {
+					})), i.a.createElement(Oe.i, {
 						className: Ie.a.submitButton,
 						disabled: e,
 						onClick: () => {
 							s()
 						},
 						redditStyle: !0,
-						size: re.c.S
+						size: Oe.c.S
 					}, U.fbt._("Submit", null, {
 						hk: "4aU3dh"
 					})))))
@@ -971,7 +969,7 @@
 					tournamentId: ne,
 					pollId: P,
 					onReveal: () => G(!0)
-				}), !ue && n && i.a.createElement(he, {
+				}), !ue && n && i.a.createElement(Ee, {
 					isLimitReached: 0 === re,
 					postId: P,
 					options: Q,
@@ -983,7 +981,7 @@
 					_1: "{total voters} prediction made"
 				}, [Ge._param("total voters", Object(l.b)(te)), Ge._plural(te)], {
 					hk: "2u2Nv8"
-				}), i.a.createElement(Oe, {
+				}), i.a.createElement(xe, {
 					isCoins: !ce,
 					status: oe,
 					endsAt: J,
@@ -1958,4 +1956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.1bce95f2b76b926f2bd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fda397bb7d1135e5f206.js.map

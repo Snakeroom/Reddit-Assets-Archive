@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.f52c12253e66cf4a74d4.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.e9cd7611d85d48b7f422.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./src/lib/hooks/useTooltip.ts": function(e, t, r) {
@@ -395,9 +395,9 @@
 				i = r("./src/reddit/controls/TextButton/index.tsx"),
 				d = r("./src/reddit/components/FlairPickerTitle/index.m.less"),
 				l = r.n(d);
-			t.a = e => a.a.createElement(c.h, {
+			t.a = e => a.a.createElement(c.i, {
 				className: l.a.modalHeader
-			}, a.a.createElement(c.p, null, e.title), a.a.createElement(i.a, {
+			}, a.a.createElement(c.q, null, e.title), a.a.createElement(i.a, {
 				onClick: e.onClosePressed || s.a
 			}, a.a.createElement(c.b, null)))
 		},
@@ -3207,4 +3207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.f52c12253e66cf4a74d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-MediumPost.e9cd7611d85d48b7f422.js.map

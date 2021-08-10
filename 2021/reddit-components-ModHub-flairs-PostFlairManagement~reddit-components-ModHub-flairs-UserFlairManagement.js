@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.95245e1f11a5d63a4eb1.js
-// Retrieved at 8/5/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.26d5940bd0a6240be9f2.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, s) {
@@ -474,9 +474,9 @@
 						s = t !== this.props.settings;
 					return o.a.createElement("div", {
 						className: ne.a.container
-					}, o.a.createElement(G.h, {
+					}, o.a.createElement(G.i, {
 						className: ne.a.modalHeader
-					}, o.a.createElement(G.p, null, e ? B.fbt._("User flair settings", null, {
+					}, o.a.createElement(G.q, null, e ? B.fbt._("User flair settings", null, {
 						hk: "RXint"
 					}) : B.fbt._("Post flair settings", null, {
 						hk: "2mhOeo"
@@ -510,7 +510,7 @@
 						hk: "L2y8H"
 					}) : B.fbt._("This will let users select, edit, and clear post flair for their posts in this community. This does not allow users to select or edit mod-only post flair.", null, {
 						hk: "20qd2P"
-					}))), o.a.createElement(G.f, {
+					}))), o.a.createElement(G.g, {
 						className: ne.a.modalFooter
 					}, o.a.createElement(G.a, {
 						onClick: this.props.onClose
@@ -2003,4 +2003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.95245e1f11a5d63a4eb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.26d5940bd0a6240be9f2.js.map

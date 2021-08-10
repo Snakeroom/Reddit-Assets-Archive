@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.d0fda4580cfbbc75f08c.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.203808cba43d791384dd.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -595,7 +595,7 @@
 					pennies: x,
 					mobileId: E
 				} = O, C = w - y > 0, I = k - x, P = x !== k;
-				return a.a.createElement(g.d, {
+				return a.a.createElement(g.e, {
 					className: h.a.body
 				}, a.a.createElement("button", {
 					onClick: () => {
@@ -641,7 +641,7 @@
 					hk: "jKCQS"
 				}))), a.a.createElement("div", {
 					className: h.a.buttonContainer
-				}, a.a.createElement(g.q, {
+				}, a.a.createElement(g.r, {
 					className: h.a.button,
 					"data-redditstyle": !0,
 					onClick: () => {
@@ -739,7 +739,7 @@
 				}) : x ? n.fbt._("Save {baseline price} off normal price!", [n.fbt._param("baseline price", `$${w/100}`)], {
 					hk: "CRTYf"
 				}) : b.description;
-				return o.a.createElement(g.d, {
+				return o.a.createElement(g.e, {
 					className: h.a.body
 				}, o.a.createElement("button", {
 					onClick: () => {
@@ -771,7 +771,7 @@
 					hk: "11oBec"
 				})))], {
 					hk: "1yjkQh"
-				})), o.a.createElement(g.q, {
+				})), o.a.createElement(g.r, {
 					className: h.a.button,
 					"data-redditstyle": !0,
 					onClick: () => {
@@ -927,4 +927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.d0fda4580cfbbc75f08c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.203808cba43d791384dd.js.map

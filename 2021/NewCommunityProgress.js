@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.d45a560ee1bfca1f212f.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.10836734d9ece69d4cd1.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(C, e, t) {
@@ -1579,18 +1579,18 @@
 					onCompleteCard: t,
 					onDismissCard: a
 				} = C;
-				return l.a.createElement(X.d, null, l.a.createElement(X.h, {
+				return l.a.createElement(X.e, null, l.a.createElement(X.i, {
 					className: c.a.modalHeader
 				}, rC.fbt._("Remove this task?", null, {
 					hk: "3eHFY8"
 				}), l.a.createElement(K.a, {
 					className: c.a.closeModalButton,
 					onClick: e
-				}, l.a.createElement(X.b, null))), l.a.createElement(X.k, {
+				}, l.a.createElement(X.b, null))), l.a.createElement(X.l, {
 					className: c.a.modalMain
 				}, rC.fbt._("If you remove this task, you won’t be able to see it anymore.", null, {
 					hk: "ycdgz"
-				})), l.a.createElement(X.f, null, l.a.createElement(U.q, {
+				})), l.a.createElement(X.g, null, l.a.createElement(U.q, {
 					className: c.a.modalButton,
 					onClick: e,
 					priority: U.b.Secondary
@@ -1971,4 +1971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.d45a560ee1bfca1f212f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.10836734d9ece69d4cd1.js.map

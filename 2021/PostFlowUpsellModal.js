@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.07aa1033436b4f6e41aa.js
-// Retrieved at 6/15/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.e56574d2001b326a5f70.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostFlowUpsellModal"], {
 		"./src/reddit/components/PostFlowUpsellModal/index.m.less": function(e, t, o) {
@@ -40,20 +40,20 @@
 					o = () => {
 						e.closeModal(), t(Object(_.f)())
 					};
-				return a.a.createElement(c.d, {
+				return a.a.createElement(c.e, {
 					className: O.a.modalBody
-				}, a.a.createElement(c.h, null, a.a.createElement(x.a, {
+				}, a.a.createElement(c.i, null, a.a.createElement(x.a, {
 					className: O.a.modalTitle
 				}, E._("Create your first post", null, {
 					hk: "2N9d8K"
 				}), a.a.createElement(u.a, {
 					className: O.a.icon,
 					onClick: o
-				}, a.a.createElement(c.b, null)))), a.a.createElement(c.k, {
+				}, a.a.createElement(c.b, null)))), a.a.createElement(c.l, {
 					className: O.a.main
 				}, E._("Welcome to your new community, r/{subreddit name}! Set the tone for your community and welcome new members with a post.", [E._param("subreddit name", e.currentSubredditName)], {
 					hk: "3C3CAV"
-				})), a.a.createElement(c.f, {
+				})), a.a.createElement(c.g, {
 					className: O.a.modalFooter
 				}, a.a.createElement(m.q, {
 					onClick: o,
@@ -74,4 +74,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.07aa1033436b4f6e41aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostFlowUpsellModal.e56574d2001b326a5f70.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.8337d8ad9ec48a0039a3.js
-// Retrieved at 5/12/2021, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.b182b7d776e8509e73a6.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/reddit/components/AwardCreationModal/AwardImagePreview/index.m.less": function(e, t, a) {
@@ -75,8 +75,8 @@
 				x = a("./src/reddit/controls/DropdownSelector/index.tsx"),
 				S = a("./src/reddit/controls/FormFields/index.tsx"),
 				N = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				k = a("./src/reddit/controls/TextButton/index.tsx"),
-				O = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				O = a("./src/reddit/controls/TextButton/index.tsx"),
+				k = a("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				D = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				_ = a("./src/lib/timezone/index.ts"),
 				P = a("./src/reddit/models/PostCreationForm/index.ts"),
@@ -611,12 +611,12 @@
 					} = this.state, h = e.filter(e => e.awardType === I.f.Moderator);
 					return s.a.createElement("section", {
 						className: Object(f.a)(t, b.a.communityAwardCreationModal)
-					}, s.a.createElement(T.h, null, s.a.createElement(D.a, null, s.a.createElement(T.p, null, p.fbt._("Create Award", null, {
+					}, s.a.createElement(T.i, null, s.a.createElement(D.a, null, s.a.createElement(T.q, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
-					})), s.a.createElement(k.a, {
+					})), s.a.createElement(O.a, {
 						onClick: a,
 						disabled: n
-					}, s.a.createElement(T.b, null)))), s.a.createElement("form", null, s.a.createElement(T.k, null, s.a.createElement("div", {
+					}, s.a.createElement(T.b, null)))), s.a.createElement("form", null, s.a.createElement(T.l, null, s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", null, s.a.createElement("span", {
 						className: b.a.formLabelText
@@ -670,7 +670,7 @@
 						hk: "2iX7Vn"
 					}))))), h.length < w.e && s.a.createElement("div", {
 						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
-					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(O.a, {
+					}, s.a.createElement("label", null, 0 !== this.costOptions.length && s.a.createElement(k.a, {
 						activeColorOverride: E.b.moderator,
 						className: b.a.modToggle,
 						on: c,
@@ -681,7 +681,7 @@
 						hk: "1d7p5V"
 					})))), this.renderCostDropdown(), r && s.a.createElement("div", {
 						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
-					}, s.a.createElement("label", null, s.a.createElement(O.a, {
+					}, s.a.createElement("label", null, s.a.createElement(k.a, {
 						activeColorOverride: E.b.moderator,
 						className: b.a.modToggle,
 						on: d,
@@ -690,12 +690,12 @@
 						className: b.a.modToggleLabelText
 					}, p.fbt._("Make Award Temporary", null, {
 						hk: "4GtfNs"
-					})))), this.renderDatePicker()), s.a.createElement(T.f, null, s.a.createElement(T.a, {
+					})))), this.renderDatePicker()), s.a.createElement(T.g, null, s.a.createElement(T.a, {
 						onClick: a,
 						disabled: n
 					}, p.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(T.q, {
+					})), s.a.createElement(T.r, {
 						className: b.a.createBtn,
 						"data-redditstyle": !0,
 						disabled: !this.inputsAreValid() || n,
@@ -801,8 +801,8 @@
 					})))) : null
 				}
 			}
-			var ke = Object(C.a)(Ne),
-				Oe = a("./src/reddit/controls/NumberInput/index.tsx");
+			var Oe = Object(C.a)(Ne),
+				ke = a("./src/reddit/controls/NumberInput/index.tsx");
 			const De = "GlobalAwardCreationModalImageInput",
 				_e = 15,
 				Pe = 30,
@@ -957,11 +957,11 @@
 								hk: "1pkgpd"
 							}))
 						}
-						const k = ce(N),
-							O = Object(_.f)(ze(T, x)),
+						const O = ce(N),
+							k = Object(_.f)(ze(T, x)),
 							D = Object(_.f)(ze(c, d));
-						O.setTime(O.getTime()), D.setTime(D.getTime());
-						const P = f ? O.toISOString() : void 0,
+						k.setTime(k.getTime()), D.setTime(D.getTime());
+						const P = f ? k.toISOString() : void 0,
 							M = f ? D.toISOString() : void 0;
 						await t({
 							awardName: E,
@@ -983,7 +983,7 @@
 							startDate: P,
 							subredditCoinReward: S
 						});
-						const F = await k;
+						const F = await O;
 						if (!F.ok) {
 							return this.handleImageRemoval(), void a(p.fbt._("There was an error creating the award. Please try again.", null, {
 								hk: "1pkgpd"
@@ -1105,12 +1105,12 @@
 					} = this.state;
 					return s.a.createElement("section", {
 						className: Object(f.a)(e, b.a.communityAwardCreationModal)
-					}, s.a.createElement(T.h, null, s.a.createElement(D.a, null, s.a.createElement(T.p, null, p.fbt._("Create Award", null, {
+					}, s.a.createElement(T.i, null, s.a.createElement(D.a, null, s.a.createElement(T.q, null, p.fbt._("Create Award", null, {
 						hk: "JQtjM"
-					})), s.a.createElement(k.a, {
+					})), s.a.createElement(O.a, {
 						onClick: t,
 						disabled: a
-					}, s.a.createElement(T.b, null)))), s.a.createElement("form", null, s.a.createElement(T.k, null, s.a.createElement("div", {
+					}, s.a.createElement(T.b, null)))), s.a.createElement("form", null, s.a.createElement(T.l, null, s.a.createElement("div", {
 						className: b.a.formSection
 					}, s.a.createElement("label", null, s.a.createElement("span", {
 						className: b.a.formLabelText
@@ -1166,7 +1166,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Description", null, {
 						hk: "162GGk"
-					})), s.a.createElement(T.s, {
+					})), s.a.createElement(T.t, {
 						name: "description",
 						onChange: this.handleDescriptionChange,
 						placeholder: p.fbt._("Award Description", null, {
@@ -1179,7 +1179,7 @@
 						hk: "40lFWr"
 					}))), this.renderCostSelector(), s.a.createElement("div", {
 						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
-					}, s.a.createElement("label", null, s.a.createElement(O.a, {
+					}, s.a.createElement("label", null, s.a.createElement(k.a, {
 						activeColorOverride: E.b.moderator,
 						className: b.a.modToggle,
 						on: l,
@@ -1188,12 +1188,12 @@
 						className: b.a.modToggleLabelText
 					}, p.fbt._("Make Award Temporary", null, {
 						hk: "4GtfNs"
-					})))), this.renderDatePicker(), this.renderGlobalAwardOptions()), s.a.createElement(T.f, null, s.a.createElement(T.a, {
+					})))), this.renderDatePicker(), this.renderGlobalAwardOptions()), s.a.createElement(T.g, null, s.a.createElement(T.a, {
 						onClick: t,
 						disabled: a
 					}, p.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), s.a.createElement(T.q, {
+					})), s.a.createElement(T.r, {
 						className: b.a.createBtn,
 						"data-redditstyle": !0,
 						disabled: !this.inputsAreValid() || a,
@@ -1250,7 +1250,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Coin cost", null, {
 						hk: "1cOBVd"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "cost of award",
 						onChange: this.handleCostChange,
@@ -1313,7 +1313,7 @@
 					} = this.state;
 					return s.a.createElement(s.a.Fragment, null, this.renderIconFormatDropdown(), this.renderAwardSubTypeDropdown(), s.a.createElement("div", {
 						className: Object(f.a)(b.a.formSection, b.a.modToggleSection)
-					}, s.a.createElement("label", null, s.a.createElement(O.a, {
+					}, s.a.createElement("label", null, s.a.createElement(k.a, {
 						activeColorOverride: E.b.moderator,
 						className: b.a.modToggle,
 						on: o,
@@ -1328,7 +1328,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Price in Pennies (this makes Award Cash only purchasable)", null, {
 						hk: "4ACqwC"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "penny price",
 						onChange: this.handlePennyPriceChange,
@@ -1337,7 +1337,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Pennies Donated", null, {
 						hk: "61DzJ"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "penny donated",
 						onChange: this.handlePennyDonateChange,
@@ -1346,7 +1346,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Giver Coin Reward", null, {
 						hk: "3ZwXG8"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "coin reward",
 						onChange: this.handleGiverCoinRewardChange,
@@ -1357,7 +1357,7 @@
 						className: b.a.formLabelText
 					}, p.fbt._("Days of Drip Extension", null, {
 						hk: "3rnKnC"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "days of drip extension",
 						onChange: this.handleDaysOfDripExtensionChange,
@@ -1366,7 +1366,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Days of Premium", null, {
 						hk: "2nPLUJ"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "days of premium",
 						onChange: this.handleDaysOfPremiumChange,
@@ -1375,7 +1375,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Coin Reward", null, {
 						hk: "2QMoAk"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "coin reward",
 						onChange: this.handleCoinRewardChange,
@@ -1384,7 +1384,7 @@
 						className: b.a.globalLabelText
 					}, p.fbt._("Subreddit Coin Reward", null, {
 						hk: "3QSEXY"
-					})), s.a.createElement(Oe.a, {
+					})), s.a.createElement(ke.a, {
 						className: b.a.coinInput,
 						name: "subreddit coin reward",
 						onChange: this.handleSubredditCoinRewardChange,
@@ -1479,7 +1479,7 @@
 						onTryCloseModal: this.onTryCloseModal,
 						withOverlay: !0,
 						onOverlayClick: this.onTryCloseModal
-					})) : s.a.createElement(ke, Ke({}, this.props, {
+					})) : s.a.createElement(Oe, Ke({}, this.props, {
 						onTryCloseModal: this.onTryCloseModal,
 						withOverlay: !0,
 						onOverlayClick: this.onTryCloseModal
@@ -1987,4 +1987,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.8337d8ad9ec48a0039a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.b182b7d776e8509e73a6.js.map

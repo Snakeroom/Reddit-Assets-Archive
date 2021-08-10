@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.482de600fe5f0e70722d.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.01040934817e75306773.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
@@ -480,15 +480,15 @@
 				l = r("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				m = r.n(l);
 			const u = e => e.preventDefault();
-			t.a = Object(o.a)(e => n.a.createElement(c.d, null, n.a.createElement(c.h, null, n.a.createElement(d.a, null, n.a.createElement(c.p, null, e.headerText || a.fbt._("Confirm", null, {
+			t.a = Object(o.a)(e => n.a.createElement(c.e, null, n.a.createElement(c.i, null, n.a.createElement(d.a, null, n.a.createElement(c.q, null, e.headerText || a.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), n.a.createElement(i.a, {
 				onClick: () => {
 					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
 				}
-			}, n.a.createElement(c.b, null)))), n.a.createElement(c.k, null, n.a.createElement(c.o, {
+			}, n.a.createElement(c.b, null)))), n.a.createElement(c.l, null, n.a.createElement(c.p, {
 				className: m.a.ModalText
-			}, e.modalText)), n.a.createElement(c.f, null, !e.hideCancelButton && n.a.createElement(c.a, {
+			}, e.modalText)), n.a.createElement(c.g, null, !e.hideCancelButton && n.a.createElement(c.a, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: () => {
@@ -497,7 +497,7 @@
 				"data-redditstyle": !e.disableRedditStyle
 			}, e.cancelActionText || a.fbt._("Cancel", null, {
 				hk: "2TSLl5"
-			})), n.a.createElement(c.t, {
+			})), n.a.createElement(c.u, {
 				className: m.a.buttonWidth,
 				onMouseDown: u,
 				onClick: t => {
@@ -2698,4 +2698,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.482de600fe5f0e70722d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.01040934817e75306773.js.map

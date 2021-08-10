@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.496bdc62c78add8e0291.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.9afefe9da54b0d69aa6d.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -768,9 +768,9 @@
 				c = n("./src/reddit/controls/TextButton/index.tsx"),
 				d = n("./src/reddit/components/FlairPickerTitle/index.m.less"),
 				l = n.n(d);
-			t.a = e => o.a.createElement(a.h, {
+			t.a = e => o.a.createElement(a.i, {
 				className: l.a.modalHeader
-			}, o.a.createElement(a.p, null, e.title), o.a.createElement(c.a, {
+			}, o.a.createElement(a.q, null, e.title), o.a.createElement(c.a, {
 				onClick: e.onClosePressed || s.a
 			}, o.a.createElement(a.b, null)))
 		},
@@ -4079,4 +4079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.496bdc62c78add8e0291.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9afefe9da54b0d69aa6d.js.map

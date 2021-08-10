@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.70eef4d72e84cbfaade7.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.23f71c0818df54cbef9b.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -50,13 +50,13 @@
 				v = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				E = a("./src/reddit/models/Theme/index.ts"),
 				q = a("./src/reddit/selectors/platform.ts"),
-				R = a("./src/reddit/selectors/structuredStyles.ts"),
-				g = a("./src/reddit/selectors/subreddit.ts"),
+				g = a("./src/reddit/selectors/structuredStyles.ts"),
+				R = a("./src/reddit/selectors/subreddit.ts"),
 				y = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
 				F = a.n(y),
 				I = a("./src/lib/lessComponent.tsx");
-			const k = I.a.wrapped(m.d, "ModalBody", F.a),
-				j = I.a.wrapped(m.h, "ModalHeader", F.a),
+			const k = I.a.wrapped(m.e, "ModalBody", F.a),
+				j = I.a.wrapped(m.i, "ModalHeader", F.a),
 				M = I.a.div("ModalTitle", F.a),
 				S = I.a.div("Title", F.a),
 				O = I.a.div("Description", F.a),
@@ -98,7 +98,7 @@
 						primaryColor: this.props.subredditIcon.color
 					}), o.a.createElement("span", null, e))), o.a.createElement(_.a, {
 						onClick: this.onCancelRequest
-					}, o.a.createElement(w, null)))), o.a.createElement(m.k, null, t ? o.a.createElement(O, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
+					}, o.a.createElement(w, null)))), o.a.createElement(m.l, null, t ? o.a.createElement(O, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
 						hk: "2J5GoK"
 					})) : o.a.createElement(o.a.Fragment, null, o.a.createElement(O, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", v.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
@@ -111,7 +111,7 @@
 						onChange: this.onTextAreaChange,
 						state: void 0,
 						required: !0
-					}))), o.a.createElement(m.f, null, t ? o.a.createElement(m.q, {
+					}))), o.a.createElement(m.g, null, t ? o.a.createElement(m.r, {
 						onClick: () => this.props.toggleContributorRequestModal()
 					}, s.fbt._("ok", null, {
 						hk: "22zWTN"
@@ -120,7 +120,7 @@
 						onClick: this.onCancelRequest
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(m.q, {
+					})), o.a.createElement(m.r, {
 						onClick: () => {
 							this.props.sendEvent(Object(f.b)("request_approval")), this.props.makeContributorRequest(e, this.state.message, this.props.restrictions), this.props.toggleContributorRequestModal()
 						}
@@ -130,10 +130,10 @@
 				}
 			}
 			t.default = I.a.wrapped(Object(r.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
-				subredditAboutInfo: g.h,
-				restrictions: g.n,
+				subredditAboutInfo: R.h,
+				restrictions: R.n,
 				subreddit: q.e,
-				subredditIcon: R.b
+				subredditIcon: g.b
 			}), e => ({
 				makeContributorRequest: (t, a, s) => e(Object(u.n)(t, a, s)),
 				toggleContributorRequestModal: () => e(Object(c.i)(x.a.CONTRIBUTOR_REQUEST))
@@ -319,4 +319,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.70eef4d72e84cbfaade7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.23f71c0818df54cbef9b.js.map

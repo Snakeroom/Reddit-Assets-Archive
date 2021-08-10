@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.388ad748d2a7dea79ea3.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.cafc3b7d3db6d2fcbc80.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWelcomeMessageModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2013,7 +2013,7 @@
 					className: j.a.animation,
 					loop: !0,
 					prefersReducedAnimation: i
-				}), r.a.createElement(c.d, null, r.a.createElement(c.h, null, r.a.createElement(x.a, null, r.a.createElement("a", {
+				}), r.a.createElement(c.e, null, r.a.createElement(c.i, null, r.a.createElement(x.a, null, r.a.createElement("a", {
 					className: j.a.icon,
 					href: "https://www.reddit.com/report",
 					rel: "noopener noreferrer",
@@ -2021,7 +2021,7 @@
 				}, r.a.createElement(b.a, null)), r.a.createElement(p.a, {
 					className: j.a.icon,
 					onClick: o
-				}, r.a.createElement(c.b, null)))), r.a.createElement(c.k, null, a && r.a.createElement("div", {
+				}, r.a.createElement(c.b, null)))), r.a.createElement(c.l, null, a && r.a.createElement("div", {
 					className: j.a.iconWrapper
 				}, r.a.createElement(u.b, {
 					className: j.a.subredditIcon,
@@ -2035,9 +2035,9 @@
 					className: j.a.welcomeMessageText,
 					content: JSON.parse(null === (s = null == m ? void 0 : m.body) || void 0 === s ? void 0 : s.richtext),
 					rtJsonElementProps: C
-				}) : null === (n = null == m ? void 0 : m.body) || void 0 === n ? void 0 : n.markdown), r.a.createElement(c.f, {
+				}) : null === (n = null == m ? void 0 : m.body) || void 0 === n ? void 0 : n.markdown), r.a.createElement(c.g, {
 					className: j.a.modalFooter
-				}, r.a.createElement(c.q, {
+				}, r.a.createElement(c.r, {
 					className: j.a.modalSubmitButton,
 					onClick: () => {
 						e.sendEvent(Object(h.a)()), o()
@@ -2309,4 +2309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.388ad748d2a7dea79ea3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWelcomeMessageModal.cafc3b7d3db6d2fcbc80.js.map

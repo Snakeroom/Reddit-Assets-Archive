@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.39efceb1ba4abc296dd8.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.da05477b795018e3e51f.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -276,17 +276,17 @@
 							success: i
 						}
 					} = this;
-					if (e && t) return o.a.createElement(p.d, {
+					if (e && t) return o.a.createElement(p.e, {
 						className: v.a.body
-					}, o.a.createElement(p.h, {
+					}, o.a.createElement(p.i, {
 						className: v.a.header
-					}, o.a.createElement(p.p, {
+					}, o.a.createElement(p.q, {
 						className: v.a.title
 					}, n.fbt._("Send message with link", null, {
 						hk: "mnEN"
 					})), o.a.createElement("button", {
 						onClick: this.onCloseClicked
-					}, o.a.createElement(p.b, null))), o.a.createElement(p.k, {
+					}, o.a.createElement(p.b, null))), o.a.createElement(p.l, {
 						className: v.a.main
 					}, o.a.createElement(u.a, {
 						className: v.a.miniPost,
@@ -294,7 +294,7 @@
 						postId: e.id,
 						showSubreddit: !0,
 						subredditSameLine: !0
-					}), o.a.createElement(p.s, {
+					}), o.a.createElement(p.t, {
 						className: v.a.textarea,
 						maxLength: O,
 						onChange: this.onMessageChange,
@@ -304,13 +304,13 @@
 					}), o.a.createElement(l.a, {
 						text: s,
 						maxChars: O
-					})), o.a.createElement(p.f, null, !1 === i && o.a.createElement("p", {
+					})), o.a.createElement(p.g, null, !1 === i && o.a.createElement("p", {
 						className: v.a.errorText
 					}, "Something went wrong. Try again in a bit."), o.a.createElement(p.a, {
 						onClick: this.onCloseClicked
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(p.q, {
+					})), o.a.createElement(p.r, {
 						onClick: this.onFormSubmit
 					}, r ? o.a.createElement(x.a, {
 						sizePx: 12
@@ -457,4 +457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.39efceb1ba4abc296dd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.da05477b795018e3e51f.js.map

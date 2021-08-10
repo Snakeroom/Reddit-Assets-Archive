@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.7fd68dd8ebf2bdfb017f.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.e2d1a1a984e7356a0b69.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -631,7 +631,7 @@
 						[e]: t
 					}), this.formIncomplete = () => !this.state.username || !this.state.password || !this.state.checkbox, this.renderMain = () => {
 						const e = this.props;
-						return i.a.createElement(d.k, null, i.a.createElement(y, null, a.fbt._("Sorry to see you go!", null, {
+						return i.a.createElement(d.l, null, i.a.createElement(y, null, a.fbt._("Sorry to see you go!", null, {
 							hk: "4qYT1i"
 						})), i.a.createElement(N, null, i.a.createElement("li", null, a.fbt._("If you are having a problem on Reddit, please consider contacting us about it before deactivating your account.", null, {
 							hk: "49AqfO"
@@ -692,7 +692,7 @@
 						target: "_blank"
 					}, " ", O[e] && O[e]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account."))], {
 						hk: "1lLr9b"
-					}), this.renderPremiumNotification = () => i.a.createElement(d.k, null, i.a.createElement(y, null, a.fbt._("Please cancel your Premium subscription before deleting your account.", null, {
+					}), this.renderPremiumNotification = () => i.a.createElement(d.l, null, i.a.createElement(y, null, a.fbt._("Please cancel your Premium subscription before deleting your account.", null, {
 						hk: "1JNWd5"
 					})), i.a.createElement(k, null, this.props.user && this.props.user.hasAndroidSubscription && this.renderPremiumNotificationMessage({
 						platform: "android",
@@ -712,7 +712,7 @@
 						})
 					}, a.fbt._("Deactivate", null, {
 						hk: "kss7"
-					})))), this.renderConfirm = () => i.a.createElement(d.k, null, i.a.createElement(y, null, a.fbt._("This action can not be undone. Are you sure you want to deactivate?", null, {
+					})))), this.renderConfirm = () => i.a.createElement(d.l, null, i.a.createElement(y, null, a.fbt._("This action can not be undone. Are you sure you want to deactivate?", null, {
 						hk: "1RBb2C"
 					})), i.a.createElement(g, null, i.a.createElement(x, {
 						onClick: () => this.setState({
@@ -737,7 +737,7 @@
 					const e = this.props;
 					return i.a.createElement(h, null, i.a.createElement(E, {
 						onClick: e.exit
-					}, i.a.createElement(d.b, null)), i.a.createElement(d.h, null, i.a.createElement(b, null, a.fbt._("Feed settings", null, {
+					}, i.a.createElement(d.b, null)), i.a.createElement(d.i, null, i.a.createElement(b, null, a.fbt._("Feed settings", null, {
 						hk: "4morrt"
 					}))), this.state.showPremiumNotification ? this.renderPremiumNotification() : this.state.showConfirm ? this.renderConfirm() : this.renderMain())
 				}
@@ -1023,4 +1023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.7fd68dd8ebf2bdfb017f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.e2d1a1a984e7356a0b69.js.map

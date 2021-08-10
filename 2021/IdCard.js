@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.4bd608bc4f70ac899ff2.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.6dde704bc690be272ad9.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4376,18 +4376,18 @@
 					}
 				}
 				render() {
-					return i.a.createElement(d.d, null, i.a.createElement(d.h, null, i.a.createElement(u.a, null, i.a.createElement(d.p, null, s.fbt._("Save changes before leaving?", null, {
+					return i.a.createElement(d.e, null, i.a.createElement(d.i, null, i.a.createElement(u.a, null, i.a.createElement(d.q, null, s.fbt._("Save changes before leaving?", null, {
 						hk: "34wJXL"
 					})), i.a.createElement(l.a, {
 						onClick: this.onCancelClick
-					}, i.a.createElement(d.b, null)))), i.a.createElement(d.k, null, i.a.createElement(d.o, null, s.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
+					}, i.a.createElement(d.b, null)))), i.a.createElement(d.l, null, i.a.createElement(d.p, null, s.fbt._("You have made some changes to your community, do you wish to leave this menu without saving?", null, {
 						hk: "2SOiAP"
-					}))), i.a.createElement(d.f, null, i.a.createElement(d.a, {
+					}))), i.a.createElement(d.g, null, i.a.createElement(d.a, {
 						onClick: this.onDiscardClick,
 						"data-redditstyle": !0
 					}, s.fbt._("Discard", null, {
 						hk: "ViASy"
-					})), i.a.createElement(d.q, {
+					})), i.a.createElement(d.r, {
 						onClick: this.onSaveClick,
 						"data-redditstyle": !0
 					}, s.fbt._("Save", null, {
@@ -6517,4 +6517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.4bd608bc4f70ac899ff2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.6dde704bc690be272ad9.js.map

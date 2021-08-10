@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.362a6dbc629c7fc41f0a.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.4bdeaeeb060601701f1c.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -277,9 +277,9 @@
 						message: r,
 						selectedPackage: d
 					} = this.state, u = Object(K.e)(d), p = c ? [l.a.messageInputOpen] : "";
-					return a.a.createElement(P.d, {
+					return a.a.createElement(P.e, {
 						className: e
-					}, a.a.createElement(P.h, null, a.a.createElement(G.a, null, a.a.createElement(P.p, null, s.fbt._("Give Premium", null, {
+					}, a.a.createElement(P.i, null, a.a.createElement(G.a, null, a.a.createElement(P.q, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
 					})), a.a.createElement(B.a, {
 						onClick: this.onClickClose
@@ -310,7 +310,7 @@
 							hk: "I4chZ"
 						}),
 						onClick: this.handleToggleIncludeMessage
-					})), a.a.createElement(P.s, {
+					})), a.a.createElement(P.t, {
 						className: Object(m.a)(l.a.textArea, p),
 						"data-redditstyle": !0,
 						value: r,
@@ -321,7 +321,7 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), a.a.createElement(P.f, null, a.a.createElement(G.a, {
+					}))), a.a.createElement(P.g, null, a.a.createElement(G.a, {
 						className: l.a.coinCountSection
 					}, a.a.createElement(T.a, {
 						className: l.a.coinCount,
@@ -332,7 +332,7 @@
 						onClick: this.onClickClose
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(P.q, {
+					})), a.a.createElement(P.r, {
 						className: l.a.confirmButton,
 						"data-redditstyle": !0,
 						disabled: n,
@@ -847,4 +847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.362a6dbc629c7fc41f0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.4bdeaeeb060601701f1c.js.map

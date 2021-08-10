@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.7c6cfd65a4665213a555.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.e59b42eaaa435bffdfc4.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -365,14 +365,14 @@
 				c = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
 				u = n.n(c);
 			const m = r.a.div("BanLength", u.a),
-				h = r.a.wrapped(d.o, "BanLengthDays", u.a),
-				p = r.a.wrapped(d.i, "NumberInput", u.a),
+				h = r.a.wrapped(d.p, "BanLengthDays", u.a),
+				p = r.a.wrapped(d.j, "NumberInput", u.a),
 				b = r.a.div("StyledPermanentLabel", u.a),
 				g = r.a.div("DescriptionText", u.a),
 				k = r.a.div("BanLengthContainer", u.a),
 				f = r.a.div("CheckboxWrapper", u.a),
 				v = r.a.div("PermanentCheckbox", u.a);
-			t.a = e => o.a.createElement(d.g, null, o.a.createElement(d.j, null, i.fbt._("How long?", null, {
+			t.a = e => o.a.createElement(d.h, null, o.a.createElement(d.k, null, i.fbt._("How long?", null, {
 				hk: "1InKw6"
 			})), o.a.createElement(k, null, o.a.createElement(m, {
 				className: Object(a.a)({
@@ -797,27 +797,27 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(z.d, null, s.a.createElement(z.h, null, s.a.createElement(X.a, null, s.a.createElement(z.p, null, w.fbt._("Ban wiki contributor", null, {
+					return s.a.createElement(z.e, null, s.a.createElement(z.i, null, s.a.createElement(X.a, null, s.a.createElement(z.q, null, w.fbt._("Ban wiki contributor", null, {
 						hk: "1d5Hrk"
 					}), e.bannedUser && `: u/${e.bannedUser.username}`), s.a.createElement(F.a, {
 						onClick: e.toggleModal
-					}, s.a.createElement(z.b, null)))), s.a.createElement(z.k, null, !e.bannedUser && s.a.createElement(s.a.Fragment, null, s.a.createElement(z.g, null, s.a.createElement(z.j, null, w.fbt._("Enter username", null, {
+					}, s.a.createElement(z.b, null)))), s.a.createElement(z.l, null, !e.bannedUser && s.a.createElement(s.a.Fragment, null, s.a.createElement(z.h, null, s.a.createElement(z.k, null, w.fbt._("Enter username", null, {
 						hk: "2fknjy"
-					})), s.a.createElement(z.i, {
+					})), s.a.createElement(z.j, {
 						onChange: this.onInputChange,
 						placeholder: w.fbt._("u/username", null, {
 							hk: "RshBO"
 						}),
 						value: this.state.username
-					})), s.a.createElement(z.g, null, s.a.createElement(z.j, null, w.fbt._("Reason for ban", null, {
+					})), s.a.createElement(z.h, null, s.a.createElement(z.k, null, w.fbt._("Reason for ban", null, {
 						hk: "1e9gZn"
 					})), s.a.createElement(Z.a, {
 						onSelectReason: this.onSelectReason,
 						reason: t.banReason,
 						subredditId: e.subredditId
-					}))), s.a.createElement(z.g, null, s.a.createElement(z.j, null, w.fbt._("Mod note", null, {
+					}))), s.a.createElement(z.h, null, s.a.createElement(z.k, null, w.fbt._("Mod note", null, {
 						hk: "1IDrTK"
-					})), s.a.createElement(z.i, {
+					})), s.a.createElement(z.j, {
 						onChange: this.onChangeModNote,
 						placeholder: w.fbt._("Mod note", null, {
 							hk: "1dzUjv"
@@ -831,7 +831,7 @@
 						isDurationPermanent: t.isDurationPermanent,
 						onChangeDuration: this.onChangeBanDuration,
 						togglePermanent: this.togglePermanent
-					})), s.a.createElement(z.f, null, s.a.createElement(B.l, {
+					})), s.a.createElement(z.g, null, s.a.createElement(B.l, {
 						onClick: e.toggleModal
 					}, w.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -1013,11 +1013,11 @@
 						props: e,
 						state: t
 					} = this;
-					return s.a.createElement(z.d, null, s.a.createElement(z.h, null, s.a.createElement(X.a, null, s.a.createElement(z.p, null, w.fbt._("Add wiki contributor", null, {
+					return s.a.createElement(z.e, null, s.a.createElement(z.i, null, s.a.createElement(X.a, null, s.a.createElement(z.q, null, w.fbt._("Add wiki contributor", null, {
 						hk: "4Df0lQ"
 					})), s.a.createElement(F.a, {
 						onClick: e.toggleModal
-					}, s.a.createElement(z.b, null)))), s.a.createElement(z.k, null, s.a.createElement("div", {
+					}, s.a.createElement(z.b, null)))), s.a.createElement(z.l, null, s.a.createElement("div", {
 						className: de.a.inputLabel
 					}, w.fbt._("Enter username", null, {
 						hk: "2NbD93"
@@ -1028,7 +1028,7 @@
 						onChange: this.onInputChange,
 						value: this.state.username,
 						autoFocus: !0
-					})), s.a.createElement(z.f, null, s.a.createElement(B.l, {
+					})), s.a.createElement(z.g, null, s.a.createElement(B.l, {
 						onClick: e.toggleModal
 					}, w.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -2510,9 +2510,9 @@
 					} = this.state, n = p.g - t.length;
 					return o.a.createElement("div", {
 						className: q.a.container
-					}, o.a.createElement(D.h, {
+					}, o.a.createElement(D.i, {
 						className: q.a.modalHeader
-					}, o.a.createElement(D.p, null, i.fbt._("Add a reason for your revision", null, {
+					}, o.a.createElement(D.q, null, i.fbt._("Add a reason for your revision", null, {
 						hk: "3ozq8e"
 					})), o.a.createElement(F.a, {
 						onClick: this.props.onCancel
@@ -2538,7 +2538,7 @@
 						_1: "1 character left"
 					}, [i.fbt._plural(n, "number")], {
 						hk: "1Ra9c8"
-					}))), o.a.createElement(D.f, {
+					}))), o.a.createElement(D.g, {
 						className: q.a.modalFooter
 					}, o.a.createElement(D.a, {
 						onClick: this.props.onCancel
@@ -3367,4 +3367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.7c6cfd65a4665213a555.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.e59b42eaaa435bffdfc4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.63ba1e5065d124c02d1b.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.431b48d2f7a3086fb089.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2589,9 +2589,9 @@
 				a = s("./src/reddit/controls/TextButton/index.tsx"),
 				d = s("./src/reddit/components/FlairPickerTitle/index.m.less"),
 				l = s.n(d);
-			t.a = e => i.a.createElement(c.h, {
+			t.a = e => i.a.createElement(c.i, {
 				className: l.a.modalHeader
-			}, i.a.createElement(c.p, null, e.title), i.a.createElement(a.a, {
+			}, i.a.createElement(c.q, null, e.title), i.a.createElement(a.a, {
 				onClick: e.onClosePressed || r.a
 			}, i.a.createElement(c.b, null)))
 		},
@@ -8229,4 +8229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.63ba1e5065d124c02d1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.431b48d2f7a3086fb089.js.map

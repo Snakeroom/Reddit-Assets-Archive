@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GlobalModalContainer.ddba69aef34a4a43d5f6.js
-// Retrieved at 8/4/2021, 11:10:13 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GlobalModalContainer.bd6f7b18f4cd6f87e1ff.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GlobalModalContainer"], {
 		"./src/reddit/components/ConfirmModal/index.m.less": function(e, t, n) {
@@ -27,9 +27,9 @@
 			}, a.a.createElement("button", {
 				onClick: () => e.onClose ? e.onClose() : e.onCancel(),
 				className: r.a.close
-			}, a.a.createElement(i.b, null)), a.a.createElement(i.h, null, a.a.createElement("h2", {
+			}, a.a.createElement(i.b, null)), a.a.createElement(i.i, null, a.a.createElement("h2", {
 				className: r.a.headerText
-			}, e.headerText)), a.a.createElement(i.k, null, e.message && a.a.createElement("p", {
+			}, e.headerText)), a.a.createElement(i.l, null, e.message && a.a.createElement("p", {
 				className: r.a.text
 			}, e.message), e.children && a.a.createElement("div", {
 				className: r.a.text
@@ -78,4 +78,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.ddba69aef34a4a43d5f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.bd6f7b18f4cd6f87e1ff.js.map

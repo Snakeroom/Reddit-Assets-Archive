@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.cfc3bdb91debc635e7d2.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2d605a502dbd86a37f73.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1298,18 +1298,18 @@
 						props: e,
 						state: t
 					} = this;
-					return o.a.createElement(d.d, null, o.a.createElement(d.h, null, o.a.createElement(p.a, null, o.a.createElement(d.p, null, n.fbt._("Add approved user", null, {
+					return o.a.createElement(d.e, null, o.a.createElement(d.i, null, o.a.createElement(p.a, null, o.a.createElement(d.q, null, n.fbt._("Add approved user", null, {
 						hk: "rVlIL"
 					})), o.a.createElement(m.a, {
 						onClick: e.toggleModal
-					}, o.a.createElement(d.b, null)))), o.a.createElement(d.k, null, o.a.createElement(l.d, {
+					}, o.a.createElement(d.b, null)))), o.a.createElement(d.l, null, o.a.createElement(l.d, {
 						placeholder: n.fbt._("Enter username", null, {
 							hk: "4DdFFr"
 						}),
 						onChange: this.onInputChange,
 						value: this.state.username,
 						autoFocus: !0
-					})), o.a.createElement(d.f, null, o.a.createElement(d.a, {
+					})), o.a.createElement(d.g, null, o.a.createElement(d.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, n.fbt._("Cancel", null, {
@@ -6111,9 +6111,9 @@
 			}, a.a.createElement("button", {
 				onClick: () => e.onClose ? e.onClose() : e.onCancel(),
 				className: d.a.close
-			}, a.a.createElement(l.b, null)), a.a.createElement(l.h, null, a.a.createElement("h2", {
+			}, a.a.createElement(l.b, null)), a.a.createElement(l.i, null, a.a.createElement("h2", {
 				className: d.a.headerText
-			}, e.headerText)), a.a.createElement(l.k, null, e.message && a.a.createElement("p", {
+			}, e.headerText)), a.a.createElement(l.l, null, e.message && a.a.createElement("p", {
 				className: d.a.text
 			}, e.message), e.children && a.a.createElement("div", {
 				className: d.a.text
@@ -8543,10 +8543,10 @@
 				ue = m.a.span("emojiDimensions", M.a),
 				pe = m.a.span("emojiSizeBlock", M.a),
 				he = m.a.wrapped(re, "modalEnableSection", M.a),
-				be = m.a.wrapped(X.d, "modalBody", M.a),
+				be = m.a.wrapped(X.e, "modalBody", M.a),
 				ge = m.a.wrapped(X.a, "modalCancelButton", M.a),
 				fe = m.a.wrapped(J.a, "modalCloseButton", M.a),
-				xe = m.a.wrapped(X.f, "modalFooter", M.a),
+				xe = m.a.wrapped(X.g, "modalFooter", M.a),
 				Ee = m.a.wrapped(_.i, "modalSubmitButton", M.a),
 				ve = Object(c.c)({
 					emojisCustomSize: (e, t) => Object($.w)(e, {
@@ -8607,11 +8607,11 @@
 					}) : a.fbt._("Must be between {minSize} to {maxSize}px", [a.fbt._param("minSize", de.toString()), a.fbt._param("maxSize", ie.toString())], {
 						hk: "1Gp9cj"
 					});
-					return d.a.createElement(be, null, d.a.createElement(X.h, null, d.a.createElement(Y.a, null, d.a.createElement(X.p, null, a.fbt._("Emoji settings", null, {
+					return d.a.createElement(be, null, d.a.createElement(X.i, null, d.a.createElement(Y.a, null, d.a.createElement(X.q, null, a.fbt._("Emoji settings", null, {
 						hk: "1GjUM3"
 					})), d.a.createElement(fe, {
 						onClick: e.toggleModal
-					}, d.a.createElement(X.b, null)))), d.a.createElement(X.k, null, d.a.createElement(he, {
+					}, d.a.createElement(X.b, null)))), d.a.createElement(X.l, null, d.a.createElement(he, {
 						description: "Allow emojis to be used in post and user flair within your community",
 						on: t.emojisEnabled,
 						onToggle: this.handleEnableEmojisToggle,
@@ -8857,13 +8857,13 @@
 				kt = m.a.div("UploaderContainer", De.a),
 				yt = m.a.wrapped(I.a, "alertIcon", De.a),
 				Ot = m.a.wrapped(Fe.a, "duplicatesIcon", De.a),
-				St = m.a.wrapped(X.o, "duplicateWarning", De.a),
+				St = m.a.wrapped(X.p, "duplicateWarning", De.a),
 				wt = m.a.wrapped(_.i, "modalAddButton", De.a),
 				It = m.a.wrapped(X.a, "modalCancelButton", De.a),
 				jt = m.a.div("uploaderContainer", De.a),
-				Tt = m.a.wrapped(X.o, "modProTip", De.a),
+				Tt = m.a.wrapped(X.p, "modProTip", De.a),
 				Nt = m.a.div("progressText", De.a),
-				Mt = m.a.wrapped(X.o, "replacingDescription", De.a),
+				Mt = m.a.wrapped(X.p, "replacingDescription", De.a),
 				Pt = m.a.div("replacingTitle", De.a),
 				Rt = m.a.div("uploadingTitle", De.a),
 				Ft = Object(c.c)({
@@ -9097,7 +9097,7 @@
 						hk: "4kkNr1"
 					})) : !t.isReplacing && d.a.createElement(Tt, null, d.a.createElement(yt, null), a.fbt._("Names cannot be edited once added", null, {
 						hk: "3f45r5"
-					})), d.a.createElement(X.k, null, t.isReplacing ? d.a.createElement(d.a.Fragment, null, d.a.createElement(Pt, null, a.fbt._("Replacing emojis", null, {
+					})), d.a.createElement(X.l, null, t.isReplacing ? d.a.createElement(d.a.Fragment, null, d.a.createElement(Pt, null, a.fbt._("Replacing emojis", null, {
 						hk: "4cKike"
 					})), d.a.createElement(Mt, null, a.fbt._("These emoji names already exist in your community. Replacing these emojis will not change pre-existing permissions. Do you want to replace them?", null, {
 						hk: "3iPBUU"
@@ -9128,7 +9128,7 @@
 						hk: "3v1E9N"
 					}) : a.fbt._("{uploadedCount} out of {uploadedTotal} uploaded", [a.fbt._param("uploadedCount", Et(Te.b.TempUploaded, t.localData).toString()), a.fbt._param("uploadedTotal", t.localData.length.toString())], {
 						hk: "41qbSa"
-					})))), d.a.createElement(X.f, null, d.a.createElement(It, {
+					})))), d.a.createElement(X.g, null, d.a.createElement(It, {
 						disabled: t.isSavingImage,
 						onClick: t.isReplacing ? this.handleCancelReplace : e.stopEditing
 					}, t.isReplacing ? a.fbt._("Don't replace", null, {
@@ -9222,9 +9222,9 @@
 				es = m.a.wrapped(J.a, "closeButton", Pe.a),
 				ts = m.a.div("imageTitle", Pe.a),
 				ss = m.a.wrapped(_.i, "modalAddButton", Pe.a),
-				ns = m.a.wrapped(X.d, "modalBody", Pe.a),
+				ns = m.a.wrapped(X.e, "modalBody", Pe.a),
 				as = m.a.wrapped(X.a, "modalCancelButton", Pe.a),
-				os = m.a.wrapped(X.k, "modalMain", Pe.a),
+				os = m.a.wrapped(X.l, "modalMain", Pe.a),
 				rs = m.a.wrapped(re, "modFlairOnlyToggle", Pe.a),
 				is = m.a.wrapped(Ie.a, "modIcon", Pe.a),
 				ds = m.a.li("modProTip", Pe.a),
@@ -9367,7 +9367,7 @@
 						stopEditing: this.closeModal,
 						subredditId: o.id
 					}, p = 2 * (t ? t[0] : Gt), h = 2 * (t ? t[1] : Gt), b = l.length > 0 ? l[0] : void 0, g = b && b.url, f = r && r.url, x = g || f, E = r && r.kind === Te.b.TempUploaded, v = ps(b || r), C = i !== hs.SingleEmojiEditState || (!this.settingsHaveBeenChanged() && !E || v);
-					return d.a.createElement(ns, null, d.a.createElement(X.h, null, d.a.createElement(Y.a, null, d.a.createElement(X.p, null, e ? a.fbt._("Edit emoji", null, {
+					return d.a.createElement(ns, null, d.a.createElement(X.i, null, d.a.createElement(Y.a, null, d.a.createElement(X.q, null, e ? a.fbt._("Edit emoji", null, {
 						hk: "4awCz5"
 					}) : a.fbt._("Add new emojis", null, {
 						hk: "2DrJ62"
@@ -9423,7 +9423,7 @@
 						on: m.modFlairOnly,
 						onToggle: this.handleModExclusiveToggle,
 						title: "Mod only"
-					})), d.a.createElement(X.f, null, d.a.createElement(as, {
+					})), d.a.createElement(X.g, null, d.a.createElement(as, {
 						disabled: c,
 						onClick: this.closeModal
 					}, a.fbt._("Cancel", null, {
@@ -11604,7 +11604,7 @@
 					removeModerator: a => e(Object(p.k)(t, a, s, n))
 				})),
 				z = c.a.span("SecondaryText", H.a),
-				q = c.a.wrapped(P.d, "ModalBody", H.a);
+				q = c.a.wrapped(P.e, "ModalBody", H.a);
 			class G extends r.a.Component {
 				constructor(e) {
 					super(e), this.onUsernameChange = e => {
@@ -11639,7 +11639,7 @@
 						props: e,
 						state: t
 					} = this, s = ["all", ...Object.keys(t.permissions).filter(e => "all" !== e)];
-					return r.a.createElement(q, null, r.a.createElement(P.h, null, r.a.createElement(D.a, null, r.a.createElement(P.p, null, e.isEditingPerms ? a.fbt._("Edit", null, {
+					return r.a.createElement(q, null, r.a.createElement(P.i, null, r.a.createElement(D.a, null, r.a.createElement(P.q, null, e.isEditingPerms ? a.fbt._("Edit", null, {
 						hk: "1nftDt"
 					}) : a.fbt._("Invite Moderators", null, {
 						hk: "hkBh1"
@@ -11649,13 +11649,13 @@
 						onClick: e.toggleModal
 					}, r.a.createElement(P.b, null)))), r.a.createElement("form", {
 						onSubmit: this.onSubmit
-					}, r.a.createElement(P.k, null, !e.isEditingPerms && r.a.createElement(P.g, null, r.a.createElement(R.d, {
+					}, r.a.createElement(P.l, null, !e.isEditingPerms && r.a.createElement(P.h, null, r.a.createElement(R.d, {
 						autoFocus: !0,
 						placeholder: a.fbt._("Enter Username", null, {
 							hk: "2fYsDe"
 						}),
 						onChange: this.onUsernameChange
-					})), r.a.createElement(P.p, null, e.isEditingSelf ? r.a.createElement(r.a.Fragment, null, a.fbt._("Access", null, {
+					})), r.a.createElement(P.q, null, e.isEditingSelf ? r.a.createElement(r.a.Fragment, null, a.fbt._("Access", null, {
 						hk: "2We3HN"
 					}), r.a.createElement(z, null, a.fbt._("(can't edit)", null, {
 						hk: "3LZvZi"
@@ -11679,7 +11679,7 @@
 						className: H.a.automodMore
 					}, a.fbt._("*Note: To manage AutoMod, mods must have access to Wiki Pages and Manage Settings. To mute users, mods must have access to Mod Mail and Manage Users.", null, {
 						hk: "1AYX38"
-					}))), r.a.createElement(P.f, {
+					}))), r.a.createElement(P.g, {
 						className: H.a.footer
 					}, r.a.createElement(C.i, {
 						className: H.a.primaryButton,
@@ -11696,7 +11696,7 @@
 						"data-redditstyle": !0
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), e.isEditingPerms && !e.isEditingSelf && r.a.createElement(P.r, {
+					})), e.isEditingPerms && !e.isEditingSelf && r.a.createElement(P.s, {
 						onClick: this.onRemove,
 						"data-redditstyle": !0
 					}, a.fbt._("Remove", null, {
@@ -11817,8 +11817,8 @@
 			}) => ({
 				acceptInvite: () => e(Object(p.a)(t)),
 				declineInvite: () => e(Object(p.c)(t))
-			})), ke = c.a.wrapped(P.o, "ModalText", ve.a), ye = c.a.wrapped(ke, "ModalTextBold", ve.a), Oe = c.a.wrapped(C.i, "PrimaryButton", ve.a), Se = c.a.wrapped(C.l, "SecondaryButton", ve.a), we = c.a.div("Section", ve.a), Ie = c.a.img("Image", ve.a), je = c.a.wrapped(P.k, "ModalMain", ve.a);
-			var Te = Object(M.a)(_e(e => r.a.createElement(P.d, null, r.a.createElement(je, null, r.a.createElement(D.a, null, r.a.createElement("div", null), r.a.createElement(A.a, {
+			})), ke = c.a.wrapped(P.p, "ModalText", ve.a), ye = c.a.wrapped(ke, "ModalTextBold", ve.a), Oe = c.a.wrapped(C.i, "PrimaryButton", ve.a), Se = c.a.wrapped(C.l, "SecondaryButton", ve.a), we = c.a.div("Section", ve.a), Ie = c.a.img("Image", ve.a), je = c.a.wrapped(P.l, "ModalMain", ve.a);
+			var Te = Object(M.a)(_e(e => r.a.createElement(P.e, null, r.a.createElement(je, null, r.a.createElement(D.a, null, r.a.createElement("div", null), r.a.createElement(A.a, {
 					onClick: e.toggleModal
 				}, r.a.createElement(P.b, null))), r.a.createElement(we, null, r.a.createElement(Ie, {
 					src: `${n.a.assetPath}/img/snoo-success@2x.png`
@@ -11826,7 +11826,7 @@
 					hk: "T4Ccw"
 				})), r.a.createElement(ke, null, Ce._("You are invited to become a moderator!", null, {
 					hk: "1jRLWz"
-				}))), r.a.createElement(P.f, null, r.a.createElement(Se, {
+				}))), r.a.createElement(P.g, null, r.a.createElement(Se, {
 					onClick: t => {
 						e.toggleModal(), e.declineInvite(), e.sendEventWithName("declineinvite")()
 					},
@@ -11863,13 +11863,13 @@
 					const {
 						props: e
 					} = this;
-					return r.a.createElement(P.d, null, r.a.createElement(P.h, null, r.a.createElement(D.a, null, r.a.createElement(P.p, null, Pe._("Leave as mod", null, {
+					return r.a.createElement(P.e, null, r.a.createElement(P.i, null, r.a.createElement(D.a, null, r.a.createElement(P.q, null, Pe._("Leave as mod", null, {
 						hk: "3ajWeG"
 					})), r.a.createElement(A.a, {
 						onClick: e.toggleModal
-					}, r.a.createElement(P.b, null)))), r.a.createElement(P.k, null, r.a.createElement(P.o, null, Pe._("Once you leave as a mod, you will lose mod permissions and will be unable to access any mod tools for this community. Are you sure you wish to leave as a mod of this community?", null, {
+					}, r.a.createElement(P.b, null)))), r.a.createElement(P.l, null, r.a.createElement(P.p, null, Pe._("Once you leave as a mod, you will lose mod permissions and will be unable to access any mod tools for this community. Are you sure you wish to leave as a mod of this community?", null, {
 						hk: "4qm9md"
-					}))), r.a.createElement(P.f, null, r.a.createElement(P.a, {
+					}))), r.a.createElement(P.g, null, r.a.createElement(P.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, Pe._("Cancel", null, {
@@ -12534,7 +12534,7 @@
 					onMuteUser: (s, n) => e(Object(l.a)(t, s, n))
 				})),
 				C = d.a.wrapped(p.i, "PrimaryButton", x.a),
-				_ = d.a.wrapped(m.o, "ModalText", x.a);
+				_ = d.a.wrapped(m.p, "ModalText", x.a);
 			class k extends o.a.Component {
 				constructor(e) {
 					super(e), this.onUsernameChange = e => {
@@ -12558,11 +12558,11 @@
 						props: e,
 						state: t
 					} = this;
-					return o.a.createElement(m.d, null, o.a.createElement(m.h, null, o.a.createElement(g.a, null, o.a.createElement(m.p, null, n.fbt._("Mute user", null, {
+					return o.a.createElement(m.e, null, o.a.createElement(m.i, null, o.a.createElement(g.a, null, o.a.createElement(m.q, null, n.fbt._("Mute user", null, {
 						hk: "326ljo"
 					}), e.username && `: u/${e.username}`), o.a.createElement(h.a, {
 						onClick: e.toggleModal
-					}, o.a.createElement(m.b, null)))), o.a.createElement(m.k, null, !e.username && o.a.createElement(m.g, null, o.a.createElement(u.d, {
+					}, o.a.createElement(m.b, null)))), o.a.createElement(m.l, null, !e.username && o.a.createElement(m.h, null, o.a.createElement(u.d, {
 						autoFocus: !0,
 						placeholder: n.fbt._("Username to mute", null, {
 							hk: "3GB7UW"
@@ -12570,11 +12570,11 @@
 						onChange: this.onUsernameChange,
 						value: this.state.username,
 						"data-redditstyle": !0
-					})), o.a.createElement(m.g, null, o.a.createElement(_, null, n.fbt._("Note about why they are muted", null, {
+					})), o.a.createElement(m.h, null, o.a.createElement(_, null, n.fbt._("Note about why they are muted", null, {
 						hk: "12YIn5"
-					})), o.a.createElement(m.e, null, n.fbt._("Only visible to other moderators. Not visible to user", null, {
+					})), o.a.createElement(m.f, null, n.fbt._("Only visible to other moderators. Not visible to user", null, {
 						hk: "4Ahum2"
-					}))), o.a.createElement(m.s, {
+					}))), o.a.createElement(m.t, {
 						maxLength: E,
 						onChange: this.onReasonChange,
 						placeholder: n.fbt._("Reason they were muted", null, {
@@ -12585,7 +12585,7 @@
 					}), o.a.createElement(c.a, {
 						maxChars: E,
 						text: this.state.reason
-					})), o.a.createElement(m.f, null, o.a.createElement(m.a, {
+					})), o.a.createElement(m.g, null, o.a.createElement(m.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, n.fbt._("Cancel", null, {
@@ -13613,7 +13613,7 @@
 				}) => Object(C.T)(e, {
 					subredditId: t
 				}).name
-			}), N = Object(o.b)(T, j), M = d.a.wrapped(c.a, "CharacterCountdown", O.a), P = d.a.div("EmptyState", O.a), R = d.a.wrapped(m.n, "ModNoteDescription", O.a), F = d.a.wrapped(u.i, "PrimaryButton", O.a), A = d.a.wrapped(b.a, "RadioOption", O.a), L = d.a.span("BoldText", O.a), D = d.a.wrapped(m.s, "ModNoteInput", O.a), B = d.a.wrapped(m.s, "MessageInput", O.a), U = d.a.wrapped(f.a, "Info", O.a), H = d.a.div("SmallInfoText", O.a), W = d.a.div("FormOptionsContainer", O.a), V = d.a.wrapped(m.f, "ModalFooter", O.a), Z = d.a.div("FooterRow", O.a), z = d.a.wrapped(Z, "ButtonRow", O.a);
+			}), N = Object(o.b)(T, j), M = d.a.wrapped(c.a, "CharacterCountdown", O.a), P = d.a.div("EmptyState", O.a), R = d.a.wrapped(m.o, "ModNoteDescription", O.a), F = d.a.wrapped(u.i, "PrimaryButton", O.a), A = d.a.wrapped(b.a, "RadioOption", O.a), L = d.a.span("BoldText", O.a), D = d.a.wrapped(m.t, "ModNoteInput", O.a), B = d.a.wrapped(m.t, "MessageInput", O.a), U = d.a.wrapped(f.a, "Info", O.a), H = d.a.div("SmallInfoText", O.a), W = d.a.div("FormOptionsContainer", O.a), V = d.a.wrapped(m.g, "ModalFooter", O.a), Z = d.a.div("FooterRow", O.a), z = d.a.wrapped(Z, "ButtonRow", O.a);
 			class q extends a.a.Component {
 				constructor(e) {
 					super(e), this.onSelectRemovalType = e => {
@@ -13689,15 +13689,15 @@
 						props: e,
 						state: t
 					} = this;
-					return a.a.createElement(m.d, {
+					return a.a.createElement(m.e, {
 						onClick: this.closeDropdown
-					}, e.isLoading || e.removalReasons.length > 0 && a.a.createElement(m.h, null, a.a.createElement(x.a, null, a.a.createElement(m.p, null, S._("Add a removal reason", null, {
+					}, e.isLoading || e.removalReasons.length > 0 && a.a.createElement(m.i, null, a.a.createElement(x.a, null, a.a.createElement(m.q, null, S._("Add a removal reason", null, {
 						hk: "4odEgX"
 					}), e.itemIds.length > 1 && S._("({number of items} posts/comments)", [S._param("number of items", e.itemIds.length)], {
 						hk: "4u7ZzL"
 					})), a.a.createElement(g.a, {
 						onClick: this.onCancel
-					}, a.a.createElement(m.b, null)))), a.a.createElement(m.k, null, e.isLoading || e.removalReasons.length > 0 ? a.a.createElement(k.a, {
+					}, a.a.createElement(m.b, null)))), a.a.createElement(m.l, null, e.isLoading || e.removalReasons.length > 0 ? a.a.createElement(k.a, {
 						isDropdownOpen: t.isDropdownOpen,
 						isLoading: e.isLoading,
 						onSelectReason: this.onSelectReason,
@@ -13714,7 +13714,7 @@
 						"data-redditstyle": !0
 					}, S._("Add a removal reason", null, {
 						hk: "3MHM7e"
-					})))), t.selectedReason && a.a.createElement(W, null, a.a.createElement(m.g, null, a.a.createElement(h.a, {
+					})))), t.selectedReason && a.a.createElement(W, null, a.a.createElement(m.h, null, a.a.createElement(h.a, {
 						name: "REMOVAL_REASON_INPUT",
 						onChange: this.onSelectRemovalType,
 						value: t.removalType
@@ -13819,11 +13819,11 @@
 					message: "",
 					title: ""
 				},
-				T = C.a.wrapped(k.e, "GenericGreetingText", I.a),
-				N = C.a.wrapped(k.r, "DeleteReasonButton", I.a),
+				T = C.a.wrapped(k.f, "GenericGreetingText", I.a),
+				N = C.a.wrapped(k.s, "DeleteReasonButton", I.a),
 				M = C.a.wrapped(b.i, "PrimaryButton", I.a),
-				P = C.a.wrapped(k.s, "TextArea", I.a),
-				R = C.a.wrapped(k.f, "ModalFooter", I.a),
+				P = C.a.wrapped(k.t, "TextArea", I.a),
+				R = C.a.wrapped(k.g, "ModalFooter", I.a),
 				F = C.a.wrapped(y.c, "Input", I.a);
 			class A extends r.a.Component {
 				constructor(e) {
@@ -13851,13 +13851,13 @@
 						props: e,
 						state: t
 					} = this;
-					return r.a.createElement(k.d, null, r.a.createElement(k.h, null, r.a.createElement(S.a, null, r.a.createElement(k.p, null, e.removalReason ? a.fbt._("Edit removal reason", null, {
+					return r.a.createElement(k.e, null, r.a.createElement(k.i, null, r.a.createElement(S.a, null, r.a.createElement(k.q, null, e.removalReason ? a.fbt._("Edit removal reason", null, {
 						hk: "1P0jAw"
 					}) : a.fbt._("Add new reason", null, {
 						hk: "jDYo"
 					})), r.a.createElement(O.a, {
 						onClick: e.toggleModal
-					}, r.a.createElement(k.b, null)))), r.a.createElement(k.k, null, r.a.createElement(k.g, null, r.a.createElement(F, {
+					}, r.a.createElement(k.b, null)))), r.a.createElement(k.l, null, r.a.createElement(k.h, null, r.a.createElement(F, {
 						placeholder: a.fbt._("Removal reason title", null, {
 							hk: "4hFurd"
 						}),
@@ -13866,7 +13866,7 @@
 					}), r.a.createElement(_.a, {
 						text: t.title.trim(),
 						maxChars: f.d
-					})), r.a.createElement(k.n, null, a.fbt._("Reason message:", null, {
+					})), r.a.createElement(k.o, null, a.fbt._("Reason message:", null, {
 						hk: "yMtrM"
 					})), r.a.createElement(T, null, a.fbt._("Hi u/username,", null, {
 						hk: "NE4XP"
@@ -17607,18 +17607,18 @@
 						props: e,
 						state: t
 					} = this;
-					return c.a.createElement(Y.d, null, c.a.createElement(Y.h, null, c.a.createElement(se.a, null, c.a.createElement(Y.p, null, e.rule ? n.fbt._("Edit rule", null, {
+					return c.a.createElement(Y.e, null, c.a.createElement(Y.i, null, c.a.createElement(se.a, null, c.a.createElement(Y.q, null, e.rule ? n.fbt._("Edit rule", null, {
 						hk: "2zflTO"
 					}) : n.fbt._("Add rule", null, {
 						hk: "1xqo5O"
 					})), c.a.createElement(te.a, {
 						className: z.a.modalCloseButton,
 						onClick: e.toggleModal
-					}, c.a.createElement(Y.b, null)))), c.a.createElement(Y.k, null, c.a.createElement(Y.g, null, c.a.createElement(Y.o, {
+					}, c.a.createElement(Y.b, null)))), c.a.createElement(Y.l, null, c.a.createElement(Y.h, null, c.a.createElement(Y.p, {
 						className: z.a.modalRule
 					}, n.fbt._("Rule", null, {
 						hk: "1W7esG"
-					})), c.a.createElement(Y.s, {
+					})), c.a.createElement(Y.t, {
 						className: z.a.modalRuleField,
 						onChange: this.onRuleInputChange,
 						placeholder: n.fbt._('Rule displayed (e.g. "No photos")', null, {
@@ -17632,7 +17632,7 @@
 					})), c.a.createElement(J.a, {
 						maxChars: H.g,
 						text: t.rule.trim()
-					})), c.a.createElement(Y.g, null, c.a.createElement(Y.o, {
+					})), c.a.createElement(Y.h, null, c.a.createElement(Y.p, {
 						className: z.a.modalRuleTitle
 					}, n.fbt._("Applies to", null, {
 						hk: "Pzu3b"
@@ -17647,7 +17647,7 @@
 						selected: t.kind === H.b.all,
 						showButton: !0,
 						tabIndex: t.kind === H.b.all ? 0 : -1
-					}, c.a.createElement(Y.o, {
+					}, c.a.createElement(Y.p, {
 						className: z.a.modalRadioText
 					}, n.fbt._("Posts & comments", null, {
 						hk: "tHmQq"
@@ -17658,7 +17658,7 @@
 						selected: t.kind === H.b.post,
 						showButton: !0,
 						tabIndex: t.kind === H.b.post ? 0 : -1
-					}, c.a.createElement(Y.o, {
+					}, c.a.createElement(Y.p, {
 						className: z.a.modalRadioText
 					}, n.fbt._("Posts only", null, {
 						hk: "16dDBr"
@@ -17669,19 +17669,19 @@
 						selected: t.kind === H.b.comment,
 						showButton: !0,
 						tabIndex: t.kind === H.b.comment ? 0 : -1
-					}, c.a.createElement(Y.o, {
+					}, c.a.createElement(Y.p, {
 						className: z.a.modalRadioText
 					}, n.fbt._("Comments only", null, {
 						hk: "2V8qUA"
-					}))))), c.a.createElement(Y.g, null, c.a.createElement(Y.o, {
+					}))))), c.a.createElement(Y.h, null, c.a.createElement(Y.p, {
 						className: z.a.modalReportTitle
 					}, n.fbt._("Report reason", null, {
 						hk: "3ShjE9"
-					})), c.a.createElement(Y.l, {
+					})), c.a.createElement(Y.m, {
 						className: z.a.modalReportMeta
 					}, n.fbt._("Defaults to rule name if left blank", null, {
 						hk: "2xObiU"
-					})), c.a.createElement(Y.s, {
+					})), c.a.createElement(Y.t, {
 						className: z.a.modalReasonField,
 						onChange: this.onReportReasonInputChange,
 						placeholder: t.rule.trim().length > 0 && 0 === t.reportReason.trim().length ? t.rule : n.fbt._('Reason rule is broken (e.g. "This is a photo")', null, {
@@ -17693,11 +17693,11 @@
 						text: t.reportReason.trim()
 					})), c.a.createElement("div", {
 						className: z.a.modalDescriptionBlock
-					}, c.a.createElement(Y.o, {
+					}, c.a.createElement(Y.p, {
 						className: z.a.modalRuleTitle
 					}, n.fbt._("Full description", null, {
 						hk: "4CTvQy"
-					})), c.a.createElement(Y.s, {
+					})), c.a.createElement(Y.t, {
 						className: z.a.modalDescriptionField,
 						onChange: this.onDescriptionInputChange,
 						placeholder: n.fbt._("Enter the full description of the rule.", null, {
@@ -17707,7 +17707,7 @@
 					}), c.a.createElement(J.a, {
 						maxChars: H.a,
 						text: t.description.trim()
-					}))), c.a.createElement(Y.f, {
+					}))), c.a.createElement(Y.g, {
 						className: z.a.modalFooter
 					}, c.a.createElement(M.i, {
 						className: z.a.modalSubmitButton,
@@ -17721,7 +17721,7 @@
 						onClick: e.toggleModal
 					}, n.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), e.rule && c.a.createElement(Y.r, {
+					})), e.rule && c.a.createElement(Y.s, {
 						className: z.a.modalRemoveButton,
 						onClick: e.onDelete
 					}, n.fbt._("Delete", null, {
@@ -20851,9 +20851,9 @@
 						props: e,
 						state: t
 					} = this, s = this.hasError();
-					return r.a.createElement(le.d, {
+					return r.a.createElement(le.e, {
 						className: _e.a.modalBody
-					}, r.a.createElement(le.h, null, r.a.createElement(fe.a, null, r.a.createElement(le.p, null, p.fbt._("Create a new wiki page", null, {
+					}, r.a.createElement(le.i, null, r.a.createElement(fe.a, null, r.a.createElement(le.q, null, p.fbt._("Create a new wiki page", null, {
 						hk: "V7Jnm"
 					})), r.a.createElement(pe.a, {
 						onClick: e.toggleModal
@@ -20861,7 +20861,7 @@
 						className: _e.a.notice
 					}, r.a.createElement(ge.a, null), p.fbt._("Parent page and page URL cannot be edited once created", null, {
 						hk: "20D6uz"
-					})), r.a.createElement(le.k, null, r.a.createElement("div", {
+					})), r.a.createElement(le.l, null, r.a.createElement("div", {
 						className: _e.a.sectionTitle
 					}, p.fbt._("Parent page", null, {
 						hk: "1FeKiT"
@@ -20884,7 +20884,7 @@
 						maxChars: me.d
 					}), r.a.createElement("div", {
 						className: _e.a.errorText
-					}, t.partialPageName && s ? Oe(s) : null)), r.a.createElement(le.f, null, r.a.createElement(le.a, {
+					}, t.partialPageName && s ? Oe(s) : null)), r.a.createElement(le.g, null, r.a.createElement(le.a, {
 						onClick: e.toggleModal
 					}, p.fbt._("Cancel", null, {
 						hk: "2TSLl5"
@@ -22429,4 +22429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cfc3bdb91debc635e7d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2d605a502dbd86a37f73.js.map

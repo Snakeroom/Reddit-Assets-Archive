@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.7655c3447b4b37b3b7ae.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.7e3756a20c7eb6432e60.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -155,7 +155,7 @@
 				E = s.n(w);
 			const {
 				fbt: N
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = d.a.input("TextBox", E.a), g = d.a.wrapped(u.h, "ModalHeader", E.a), k = d.a.wrapped(C.a, "TextButton", E.a), I = d.a.div("FooterRow", E.a), L = e => `${e<10?"0":""}${e}`;
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = d.a.input("TextBox", E.a), g = d.a.wrapped(u.i, "ModalHeader", E.a), k = d.a.wrapped(C.a, "TextButton", E.a), I = d.a.div("FooterRow", E.a), L = e => `${e<10?"0":""}${e}`;
 			class j extends n.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = () => {
@@ -230,11 +230,11 @@
 					}) : this.props.url
 				}
 				render() {
-					return n.a.createElement(u.d, null, n.a.createElement(g, null, n.a.createElement(f.a, null, n.a.createElement(u.p, null, N._("Share", null, {
+					return n.a.createElement(u.e, null, n.a.createElement(g, null, n.a.createElement(f.a, null, n.a.createElement(u.q, null, N._("Share", null, {
 						hk: "1jIG3I"
 					})), n.a.createElement(k, {
 						onClick: this.handleClickClose
-					}, n.a.createElement(u.b, null)))), n.a.createElement(u.k, null, n.a.createElement(x.a, null, n.a.createElement(_, {
+					}, n.a.createElement(u.b, null)))), n.a.createElement(u.l, null, n.a.createElement(x.a, null, n.a.createElement(_, {
 						disabled: !0,
 						value: this.displayUrl
 					}), n.a.createElement(k, {
@@ -553,9 +553,9 @@
 			})), s.d(t, "h", (function() {
 				return K
 			})), s.d(t, "g", (function() {
-				return z
-			})), s.d(t, "p", (function() {
 				return q
+			})), s.d(t, "p", (function() {
+				return z
 			})), s.d(t, "f", (function() {
 				return Y
 			})), s.d(t, "l", (function() {
@@ -638,13 +638,13 @@
 				onClick: e
 			}) => n.a.createElement("button", {
 				onClick: e
-			}, n.a.createElement(z, null)), z = () => H._("{=Live}", [H._param("=Live", n.a.createElement("span", {
+			}, n.a.createElement(q, null)), q = () => H._("{=Live}", [H._param("=Live", n.a.createElement("span", {
 				className: W.a.live
 			}, H._("Live", null, {
 				hk: "8x90I"
 			})))], {
 				hk: "3ZBbO0"
-			}), q = () => H._("Recorded live", null, {
+			}), z = () => H._("Recorded live", null, {
 				hk: "2seH5c"
 			}), Y = ({
 				onSubscribe: e,
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.7655c3447b4b37b3b7ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.7e3756a20c7eb6432e60.js.map

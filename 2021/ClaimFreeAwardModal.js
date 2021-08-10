@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.f560496479b02b43acdb.js
-// Retrieved at 8/5/2021, 6:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.be76772bdbf44b2041f8.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -148,7 +148,7 @@
 					e(Object(l.a)("complete")), t(Object(b.f)())
 				};
 				let x = !1;
-				return s.a.createElement(h.d, {
+				return s.a.createElement(h.e, {
 					className: g.a.body
 				}, s.a.createElement("button", {
 					onClick: O,
@@ -180,7 +180,7 @@
 					hk: "gmYKH"
 				})), s.a.createElement("div", {
 					className: g.a.awardMore
-				}, s.a.createElement(h.q, {
+				}, s.a.createElement(h.r, {
 					className: g.a.awardButton,
 					onClick: O
 				}, j._("Go Forth and Award", null, {
@@ -230,4 +230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.f560496479b02b43acdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.be76772bdbf44b2041f8.js.map

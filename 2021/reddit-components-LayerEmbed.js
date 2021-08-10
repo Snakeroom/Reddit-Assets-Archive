@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.c24606ad662df0dd1886.js
-// Retrieved at 5/26/2021, 2:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.24953527f5206f8c5ae3.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LayerEmbed"], {
 		"./src/reddit/components/LayerEmbed/index.m.less": function(e, t, r) {
@@ -18,10 +18,10 @@
 				s = r("./src/config.ts"),
 				i = r("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx"),
 				c = r("./node_modules/query-string/index.js"),
-				d = r("./src/higherOrderComponents/asModal/index.tsx");
+				l = r("./src/higherOrderComponents/asModal/index.tsx");
 
-			function l() {
-				return (l = Object.assign || function(e) {
+			function d() {
+				return (d = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -29,7 +29,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const u = Object(d.a)(({
+			const u = Object(l.a)(({
 				backgroundUrl: e,
 				baseUrl: t,
 				width: r,
@@ -58,7 +58,7 @@
 					...t
 				}) => {
 					const [r, a] = Object(n.useState)(!1), s = () => a(!1);
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(u, l({}, t, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(u, d({}, t, {
 						withOverlay: !0,
 						onOverlayClick: () => a(!0)
 					})), r && o.a.createElement(i.a, {
@@ -79,21 +79,21 @@
 			}) => {
 				const r = Object(n.useRef)(null),
 					c = Object(n.useRef)(null),
-					d = Object(a.e)(e => e.user.session),
-					l = Object(n.useCallback)(() => {
-						d && [r, c].forEach(e => {
+					l = Object(a.e)(e => e.user.session),
+					d = Object(n.useCallback)(() => {
+						l && [r, c].forEach(e => {
 							var t, r;
 							null === (r = null === (t = e.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === r || r.postMessage({
 								action: "Layers.injectAuthHeaders",
 								payload: {
 									headers: {
-										Authorization: `bearer ${d.accessToken}`
+										Authorization: `bearer ${l.accessToken}`
 									},
-									expires: new Date(d.expires).getTime()
+									expires: new Date(l.expires).getTime()
 								}
 							}, s.a.layersUrl)
 						})
-					}, [d, r, c]),
+					}, [l, r, c]),
 					[u, p] = Object(n.useState)(!1),
 					[x, h] = Object(n.useState)(),
 					[E, b] = Object(n.useState)({}),
@@ -119,7 +119,7 @@
 							if ("layers.closeLayerMaker" === o) return p(!1);
 							if ("layers.resizeLayerMaker" !== o) {
 								if ("layers.refreshAuth" !== o) return "layers.reportLayer" === o ? (C(a.postUrl), void k(!0)) : void(null === (n = null === (t = r.current) || void 0 === t ? void 0 : t.contentWindow) || void 0 === n || n.postMessage(e.data, "*"));
-								l()
+								d()
 							} else {
 								const {
 									width: e,
@@ -128,8 +128,8 @@
 								g([e, t])
 							}
 						}
-					}, [r, l, p, h, g]);
-				Object(n.useEffect)(() => (window.addEventListener("message", P), () => window.removeEventListener("message", P)), [P]), Object(n.useEffect)(l, [l]);
+					}, [r, d, p, h, g]);
+				Object(n.useEffect)(() => (window.addEventListener("message", P), () => window.removeEventListener("message", P)), [P]), Object(n.useEffect)(d, [d]);
 				const [L, A] = f, j = e + `/static/client/?platform=desktop&subreddit=${t}`;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("iframe", {
 					id: "layersEmbed",
@@ -182,14 +182,14 @@
 				s = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				i = r("./src/reddit/constants/keycodes.ts"),
 				c = r("./src/reddit/controls/Button/index.tsx"),
-				d = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				l = r("./src/reddit/controls/TextButton/index.tsx"),
+				l = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				d = r("./src/reddit/controls/TextButton/index.tsx"),
 				u = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				m = r("./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less"),
 				p = r.n(m),
 				y = r("./src/lib/lessComponent.tsx");
 			const x = y.a.wrapped(c.i, "PrimaryButton", p.a),
-				h = y.a.wrapped(s.o, "ModalText", p.a);
+				h = y.a.wrapped(s.p, "ModalText", p.a);
 			class E extends o.a.PureComponent {
 				constructor() {
 					super(...arguments), this.handleEscapeKey = e => {
@@ -207,15 +207,15 @@
 						primaryButtonLoading: e,
 						secondaryButtonLoading: t
 					} = this.props;
-					return o.a.createElement(s.d, null, o.a.createElement(s.h, null, o.a.createElement(u.a, null, o.a.createElement(s.p, null, this.props.titleText), o.a.createElement(l.a, {
+					return o.a.createElement(s.e, null, o.a.createElement(s.i, null, o.a.createElement(u.a, null, o.a.createElement(s.q, null, this.props.titleText), o.a.createElement(d.a, {
 						onClick: this.props.onClose
-					}, o.a.createElement(s.b, null)))), o.a.createElement(s.k, null, o.a.createElement(h, null, this.props.bodyText)), o.a.createElement(s.f, null, o.a.createElement(s.a, {
+					}, o.a.createElement(s.b, null)))), o.a.createElement(s.l, null, o.a.createElement(h, null, this.props.bodyText)), o.a.createElement(s.g, null, o.a.createElement(s.a, {
 						onClick: this.props.onSecondaryAction
-					}, t ? o.a.createElement(d.a, {
+					}, t ? o.a.createElement(l.a, {
 						sizePx: 16
 					}) : this.props.secondaryButtonText), o.a.createElement(x, {
 						onClick: this.props.onPrimaryAction
-					}, e ? o.a.createElement(d.a, {
+					}, e ? o.a.createElement(l.a, {
 						sizePx: 16
 					}) : this.props.primaryButtonText)))
 				}
@@ -224,4 +224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.c24606ad662df0dd1886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LayerEmbed.24953527f5206f8c5ae3.js.map

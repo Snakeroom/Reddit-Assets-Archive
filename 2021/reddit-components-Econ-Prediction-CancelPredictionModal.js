@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.6b55a733048d80ef4710.js
-// Retrieved at 8/10/2021, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.cc062839e3e798233fbd.js
+// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -382,15 +382,15 @@
 				l = n("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
 				u = n.n(l);
 			const p = t => t.preventDefault();
-			e.a = Object(d.a)(t => i.a.createElement(c.d, null, i.a.createElement(c.h, null, i.a.createElement(s.a, null, i.a.createElement(c.p, null, t.headerText || o.fbt._("Confirm", null, {
+			e.a = Object(d.a)(t => i.a.createElement(c.e, null, i.a.createElement(c.i, null, i.a.createElement(s.a, null, i.a.createElement(c.q, null, t.headerText || o.fbt._("Confirm", null, {
 				hk: "2zlvKa"
 			})), i.a.createElement(a.a, {
 				onClick: () => {
 					t.onClose && t.onClose(), t.toggleModal && t.toggleModal()
 				}
-			}, i.a.createElement(c.b, null)))), i.a.createElement(c.k, null, i.a.createElement(c.o, {
+			}, i.a.createElement(c.b, null)))), i.a.createElement(c.l, null, i.a.createElement(c.p, {
 				className: u.a.ModalText
-			}, t.modalText)), i.a.createElement(c.f, null, !t.hideCancelButton && i.a.createElement(c.a, {
+			}, t.modalText)), i.a.createElement(c.g, null, !t.hideCancelButton && i.a.createElement(c.a, {
 				className: u.a.buttonWidth,
 				onMouseDown: p,
 				onClick: () => {
@@ -399,7 +399,7 @@
 				"data-redditstyle": !t.disableRedditStyle
 			}, t.cancelActionText || o.fbt._("Cancel", null, {
 				hk: "2TSLl5"
-			})), i.a.createElement(c.t, {
+			})), i.a.createElement(c.u, {
 				className: u.a.buttonWidth,
 				onMouseDown: p,
 				onClick: e => {
@@ -723,4 +723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.6b55a733048d80ef4710.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.cc062839e3e798233fbd.js.map
