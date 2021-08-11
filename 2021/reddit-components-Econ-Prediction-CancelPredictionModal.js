@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.9b37299e1412e0697573.js
-// Retrieved at 8/11/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.d7a11ea7ecfb7b0d3046.js
+// Retrieved at 8/11/2021, 6:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CancelPredictionModal"], {
 		"./node_modules/uuid/index.js": function(t, e, n) {
@@ -46,9 +46,9 @@
 			})), n.d(e, "l", (function() {
 				return E
 			})), n.d(e, "j", (function() {
-				return S
-			})), n.d(e, "b", (function() {
 				return G
+			})), n.d(e, "b", (function() {
+				return S
 			})), n.d(e, "o", (function() {
 				return N
 			})), n.d(e, "p", (function() {
@@ -56,7 +56,7 @@
 			})), n.d(e, "f", (function() {
 				return Q
 			})), n.d(e, "a", (function() {
-				return M
+				return q
 			})), n.d(e, "q", (function() {
 				return F
 			})), n.d(e, "k", (function() {
@@ -160,7 +160,7 @@
 						pollId: e,
 						prediction: d.poll
 					})), d.poll
-				}, T = Object(l.a)(x.c), L = Object(l.a)(x.d), _ = Object(l.a)(x.g), S = t => async (e, n, {
+				}, T = Object(l.a)(x.c), L = Object(l.a)(x.d), _ = Object(l.a)(x.g), G = t => async (e, n, {
 					gqlContext: o
 				}) => {
 					const r = n(),
@@ -212,7 +212,7 @@
 						posts: f,
 						meta: r.meta
 					})), l
-				}, G = Object(l.a)(x.a), N = Object(l.a)(x.j), D = Object(l.a)(x.k), Q = ({
+				}, S = Object(l.a)(x.a), N = Object(l.a)(x.j), D = Object(l.a)(x.k), Q = ({
 					subredditId: t
 				}) => async (e, n, {
 					gqlContext: o
@@ -239,7 +239,7 @@
 						subredditId: t,
 						tournaments: [s]
 					})), s
-				}, M = (t, e) => async (n, o, {
+				}, q = (t, e) => async (n, o, {
 					gqlContext: r
 				}) => {
 					var d;
@@ -258,7 +258,7 @@
 					if (null === (d = s.errors) || void 0 === d ? void 0 : d.length) throw new Error(s.errors[0].message);
 					if (!(null == s ? void 0 : s.tournament)) throw new Error("Failed to create prediction");
 					return s.tournament
-				}, q = Object(l.a)(x.m), F = (t, e, n) => async (e, o, {
+				}, M = Object(l.a)(x.m), F = (t, e, n) => async (e, o, {
 					gqlContext: r
 				}) => {
 					const i = await Object(p.m)(r(), {
@@ -269,7 +269,7 @@
 							updatePredictionTournament: d
 						} = i.body.data;
 					if (!d.tournament) throw new Error("Failed to update prediction name");
-					return e(q(d.tournament)), d.tournament
+					return e(M(d.tournament)), d.tournament
 				}, A = t => async (e, n, {
 					gqlContext: o
 				}) => {
@@ -280,7 +280,7 @@
 							endPredictionTournament: i
 						} = r.body.data;
 					if (!i.tournament) throw new Error("Failed to update prediction name");
-					return e(q(i.tournament)), i.tournament
+					return e(M(i.tournament)), i.tournament
 				}, J = t => async (e, n, {
 					gqlContext: o
 				}) => {
@@ -454,8 +454,8 @@
 			function b(t) {
 				return 0 === t ? o.fbt._("Canceling this prediction will end any predictions that have already been made and notify the players.", null, {
 					hk: "2uuOFq"
-				}) : 1 === t ? o.fbt._("Canceling this prediction will end the 1 prediction that have already been made and notify the players.", null, {
-					hk: "3S7MYD"
+				}) : 1 === t ? o.fbt._("Canceling this prediction will end the 1 prediction that has already been made and notify the player.", null, {
+					hk: "4wD7xX"
 				}) : o.fbt._("Canceling this prediction will end the {votedUsersCount} predictions that have already been made and notify the players.", [o.fbt._param("votedUsersCount", t.toString())], {
 					hk: "2TTB5g"
 				})
@@ -724,4 +724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.9b37299e1412e0697573.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CancelPredictionModal.d7a11ea7ecfb7b0d3046.js.map
