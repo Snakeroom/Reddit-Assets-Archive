@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d9fa3abb99583db940b8.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.16e156b28fe78cf352e9.js
+// Retrieved at 8/11/2021, 1:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -6193,20 +6193,25 @@
 		"./src/reddit/components/SubredditForkingCTA/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return O
+				return I
 			}));
-			var o = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
-				n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				i = s("./node_modules/react-redux/es/index.js"),
-				a = s("./src/reddit/constants/comments.ts"),
-				d = s("./src/reddit/models/Subreddit/index.ts"),
-				c = s("./src/reddit/selectors/comments.ts"),
-				l = s("./src/reddit/selectors/posts.ts"),
-				m = s("./src/reddit/selectors/user.ts"),
-				p = s("./node_modules/reselect/es/index.js"),
-				u = s("./src/lib/makeCommentsPageKey/index.ts");
-			const h = Object(o.a)({
+			var o = s("./node_modules/core-js/modules/web.dom.iterable.js"),
+				n = s.n(o),
+				r = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				i = s("./node_modules/react/index.js"),
+				a = s.n(i),
+				d = s("./node_modules/react-redux/es/index.js"),
+				c = s("./src/reddit/constants/comments.ts"),
+				l = s("./src/reddit/models/Subreddit/index.ts"),
+				m = s("./src/reddit/selectors/comments.ts"),
+				p = s("./src/reddit/selectors/posts.ts"),
+				u = s("./src/reddit/selectors/user.ts"),
+				h = s("./node_modules/reselect/es/index.js"),
+				b = s("./src/lib/cache/index.ts"),
+				g = s("./src/lib/makeCommentsPageKey/index.ts"),
+				C = s("./src/reddit/helpers/trackers/subredditForking.ts"),
+				x = s("./src/reddit/components/TrackingHelper/index.tsx");
+			const f = Object(r.a)({
 					resolved: {},
 					chunkName: () => "SubredditForkingCTA",
 					isReady(e) {
@@ -6226,68 +6231,85 @@
 						return "./src/reddit/components/SubredditForkingCTA/SubredditForkingCTA.tsx"
 					}
 				}),
-				b = [{
+				v = [{
 					low: 0,
 					high: 1e5,
 					threshold: 100
 				}, {
 					low: 1e5,
 					high: 3e5,
-					threshold: 100
+					threshold: 200
 				}, {
 					low: 3e5,
 					high: 8e5,
-					threshold: 100
+					threshold: 300
 				}, {
-					low: 0,
+					low: 8e5,
 					high: 1 / 0,
-					threshold: 100
+					threshold: 500
 				}],
-				g = (e, t) => {
-					const s = Object(m.j)(e),
-						o = Object(u.a)(t.postId),
-						n = Object(c.o)(e, {
+				O = "subreddit-forking.dismissals",
+				y = (e, t) => {
+					const s = Object(u.j)(e),
+						o = Object(g.a)(t.postId),
+						n = Object(m.o)(e, {
 							...t,
 							commentsPageKey: o
 						}),
-						r = Object(c.k)(e, {
+						r = Object(m.k)(e, {
 							...t,
 							commentsPageKey: o
 						}).reduce((t, s) => {
 							var o;
-							const r = Object(c.l)(e, {
+							const r = Object(m.l)(e, {
 								commentLink: s
 							});
-							return s.type !== a.a.Comment && 0 !== (null === (o = n[s.id]) || void 0 === o ? void 0 : o.depth) || t.push(r), t
+							return s.type !== c.a.Comment && 0 !== (null === (o = n[s.id]) || void 0 === o ? void 0 : o.depth) || t.push(r), t
 						}, []).sort((e, t) => t.score - e.score).slice(0, 5);
 					return (null == s ? void 0 : s.isEmployee) || !!r.find(e => e.authorId === (null == s ? void 0 : s.id))
 				},
-				C = (e, t) => {
-					const s = Object(m.J)(e),
-						o = Object(l.G)(e, t),
-						n = Object(l.T)(e, {
+				P = e => {
+					let t = Object(b.b)(O);
+					const s = Object.entries(t || {});
+					s.length >= 99 && (t = s.sort(([, e], [, t]) => t - e).splice(0, 99).reduce((e, [t, s]) => (e[t] = s, e), {})), Object(b.d)(O, {
+						...t,
+						[e]: Date.now()
+					}, Date.now() + 2592e3)
+				},
+				E = (e, t) => {
+					var s;
+					if (!Object(u.J)(e)) return !1;
+					if (null === (s = Object(b.b)(O)) || void 0 === s ? void 0 : s[t.postId]) return !1;
+					const o = Object(p.G)(e, t),
+						n = Object(p.T)(e, {
 							...t,
 							disallowProfile: !0
 						});
-					if (!s) return !1;
-					if ((null == n ? void 0 : n.type) !== d.f.Public || n.isNSFW || n.isQuarantined || o.source) return !1;
-					const r = b.find(({
+					if ((null == n ? void 0 : n.type) !== l.f.Public || n.isNSFW || n.isQuarantined || (null == o ? void 0 : o.source)) return !1;
+					const r = v.find(({
 						low: e,
 						high: t
-					}) => t <= n.subscribers && n.subscribers > e);
-					return !(!r || !o.numComments || r.threshold > o.numComments) && !!g(e, t)
+					}) => t >= n.subscribers && n.subscribers > e);
+					return !(!r || !o.numComments || r.threshold > o.numComments) && !!y(e, t)
 				},
-				x = () => Object(p.c)({
-					shouldLoadCTA: C
+				w = () => Object(h.c)({
+					shouldLoadCTA: E
 				}),
-				f = Object(i.b)(x),
-				v = ({
+				j = Object(d.b)(w),
+				k = ({
 					shouldLoadCTA: e,
-					postId: t
-				}) => e ? r.a.createElement(h, {
-					postId: t
-				}) : null,
-				O = Object(n.memo)(f(v))
+					postId: t,
+					sendEvent: s
+				}) => {
+					const [o, n] = Object(i.useState)(!1);
+					return o || !e ? null : a.a.createElement(f, {
+						onClose: () => {
+							P(t), n(!0), s(Object(C.b)(t))
+						},
+						postId: t
+					})
+				},
+				I = Object(i.memo)(j(Object(x.c)(k)))
 		},
 		"./src/reddit/components/UserIcon/constants.ts": function(e, t, s) {
 			"use strict";
@@ -6622,6 +6644,40 @@
 					noun: "dismiss",
 					post: Object(o.post)(t, e),
 					...n(t, e)
+				})
+		},
+		"./src/reddit/helpers/trackers/subredditForking.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return n
+			})), s.d(t, "b", (function() {
+				return r
+			})), s.d(t, "c", (function() {
+				return i
+			}));
+			var o = s("./src/reddit/selectors/telemetry.ts");
+			const n = e => e => ({
+					source: "post",
+					noun: "forking_module",
+					action: "click",
+					...o.defaults(e),
+					actionInfo: o.actionInfo(e, {
+						settingValue: e.user.account && e.user.account.isMod ? "existing_mod" : "new_mod"
+					})
+				}),
+				r = e => e => ({
+					source: "post",
+					noun: "forking_module",
+					action: "dismiss",
+					...o.defaults(e),
+					actionInfo: o.actionInfo(e)
+				}),
+				i = e => e => ({
+					source: "post",
+					noun: "forking_module",
+					action: "view",
+					...o.defaults(e),
+					actionInfo: o.actionInfo(e)
 				})
 		},
 		"./src/reddit/hooks/useIsClient.ts": function(e, t, s) {
@@ -8314,4 +8370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d9fa3abb99583db940b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.16e156b28fe78cf352e9.js.map

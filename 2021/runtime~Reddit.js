@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.34de30ff03f930ff4f4b.js
-// Retrieved at 8/11/2021, 1:00:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ab98c106362081c33bae.js
+// Retrieved at 8/11/2021, 1:20:08 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && P.push(d[a][0]), d[a] = 0;
@@ -809,7 +809,7 @@
 					EconomicsSubredditPremiumSidebarCards: "a44fdfe118e2d2974673",
 					HarbergerTaxBannerPurchaseCTA: "a8576f0c16cb09aecc82",
 					ReredditLink: "3e28d2c18e37eb5d3c53",
-					SubredditForkingCTA: "a30c30f48a673090a2c3",
+					SubredditForkingCTA: "b6ce1fbc52ba7ef21594",
 					"reddit-components-Collection": "54b603d032c8de196f6d",
 					"reddit-components-Comments-PredictionComment": "18d8288622584c578c43",
 					"reddit-components-ContentGate": "c6744f26c06bd358aef0",
@@ -1295,7 +1295,7 @@
 						"translations/es_MX-json": "e1cc6eae3c2dd1887c00",
 						"translations/fr_FR-json": "94e3645fda3296c24fb3",
 						"translations/it_IT-json": "7f71aa0bc76938ab67d7",
-						"translations/pseudo_ext-json": "a20ba9f4c4f48de8243d",
+						"translations/pseudo_ext-json": "43e8cc6cb24894eed85d",
 						"translations/pseudo_long-json": "1db2f637b7cbb63e6cce",
 						"translations/pseudo_short-json": "7629f6c6065d3cfd6e46",
 						"translations/pt_BR-json": "32bd3758ff3b2ad7d0eb",
@@ -1311,8 +1311,8 @@
 						RedesignChat: "3e768e61e10fe76c2b0c",
 						"vendors~CollectionCommentsPage~CommentsPage": "74fecf4322147c824f67",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "0c41c9244f7ae8906e49",
-						CollectionCommentsPage: "d9fa3abb99583db940b8",
-						CommentsPage: "3d170b989a258de61793",
+						CollectionCommentsPage: "16e156b28fe78cf352e9",
+						CommentsPage: "d750e69fa74aa2c8ddc6",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "aaad862b367893465412",
 						CryptoHarbergerTaxManageModal: "21bbc5713a0786f16fb4",
 						HarbergerTaxManageModal: "b39904e46c02bb0c9062",
@@ -1428,7 +1428,7 @@
 						EconomicsSubredditPremiumSidebarCards: "cd141663b038154e19ac",
 						HarbergerTaxBannerPurchaseCTA: "ef0b6109ed5b1f8160e8",
 						ReredditLink: "0809c4e06cc108fe7650",
-						SubredditForkingCTA: "50a54d18fd552401efe7",
+						SubredditForkingCTA: "153d748580bae4218822",
 						"reddit-components-Collection": "bc359d05be5056a5e7ef",
 						"reddit-components-Comments-PredictionComment": "72dc2325ca25316d36d9",
 						"reddit-components-ContentGate": "616e2f6c654fadb8a474",
@@ -1546,4 +1546,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.34de30ff03f930ff4f4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ab98c106362081c33bae.js.map
