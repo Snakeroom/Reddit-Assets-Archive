@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b56634ad125e8b2b5306.js
-// Retrieved at 8/11/2021, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f28adccf687d93c322aa.js
+// Retrieved at 8/11/2021, 3:20:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("142505"),
+				buildNumber: r("142512"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628707273"),
+				})("1628708307"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4992,14 +4992,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cff6a58d527a447d9761f55c3c004f6e13bfce988-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c778dd7d9e71a4bcba6efa63d3cc8054380878268-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ff6a58d527a447d9761f55c3c004f6e13bfce988-production",
+						release: "778dd7d9e71a4bcba6efa63d3cc8054380878268-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -5493,7 +5493,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "ff6a58d527a447d9761f55c3c004f6e13bfce988-production",
+						releaseClient: "778dd7d9e71a4bcba6efa63d3cc8054380878268-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -29108,7 +29108,11 @@
 					recommendedPackageIds: ne,
 					storefrontPackageIds: se
 				});
-			var de = (e = null, t) => {
+			const de = e => e.filter(e => {
+				var t;
+				return !(e.name.includes("Powerups") || (null === (t = e.tags) || void 0 === t ? void 0 : t.includes("econ:award:powerups:post")))
+			}).map(e => e.id);
+			var ae = (e = null, t) => {
 				var i;
 				switch (t.type) {
 					case b.s: {
@@ -29125,7 +29129,7 @@
 							awards: n
 						} = t.payload;
 						return (null == n ? void 0 : n.length) ? {
-							awardIds: n.map(e => e.id),
+							awardIds: de(n),
 							isEnabled: !1
 						} : e;
 					case r.o:
@@ -29133,15 +29137,15 @@
 							freeAwardEvent: s
 						} = t.payload;
 						return s ? {
-							awardIds: ((null === (i = s.freeAwards) || void 0 === i ? void 0 : i.awards) || []).map(e => e.id),
+							awardIds: de((null === (i = s.freeAwards) || void 0 === i ? void 0 : i.awards) || []),
 							isEnabled: s.isEnabled
 						} : null;
 					default:
 						return e
 				}
 			};
-			const ae = [];
-			var le = (e = ae, t) => {
+			const le = [];
+			var ue = (e = le, t) => {
 					switch (t.type) {
 						case r.k:
 							return t.payload.premiumPackages;
@@ -29149,14 +29153,14 @@
 							return e
 					}
 				},
-				ue = Object(n.c)({
+				ce = Object(n.c)({
 					activeSaleConfig: z,
 					api: Q,
 					coinPackages: oe,
-					freeAwardEvent: de,
-					premiumPackages: le
+					freeAwardEvent: ae,
+					premiumPackages: ue
 				});
-			var ce = (e = "selectPayment", t) => {
+			var _e = (e = "selectPayment", t) => {
 				switch (t.type) {
 					case r.q:
 					case r.r:
@@ -29167,7 +29171,7 @@
 						return e
 				}
 			};
-			var _e = (e = null, t) => {
+			var pe = (e = null, t) => {
 				switch (t.type) {
 					case r.t:
 					case r.u:
@@ -29188,7 +29192,7 @@
 						return e
 				}
 			};
-			var pe = (e = null, t) => {
+			var me = (e = null, t) => {
 				switch (t.type) {
 					case r.c:
 					case r.d:
@@ -29207,7 +29211,7 @@
 						return e
 				}
 			};
-			var me = (e = null, t) => {
+			var he = (e = null, t) => {
 				switch (t.type) {
 					case r.q: {
 						const {
@@ -29222,7 +29226,7 @@
 						return e
 				}
 			};
-			var he = (e = !1, t) => {
+			var fe = (e = !1, t) => {
 					switch (t.type) {
 						case r.q:
 						case r.r:
@@ -29236,12 +29240,12 @@
 							return e
 					}
 				},
-				fe = Object(n.c)({
-					activePage: ce,
-					correlationId: _e,
-					gildThingId: pe,
-					packageId: me,
-					showModal: he
+				be = Object(n.c)({
+					activePage: _e,
+					correlationId: pe,
+					gildThingId: me,
+					packageId: he,
+					showModal: fe
 				});
 			t.a = Object(n.c)({
 				packageOfferModal: o,
@@ -29249,8 +29253,8 @@
 				powerupsPurchaseModal: k,
 				premiumPurchaseModal: q,
 				productOffers: W,
-				purchaseCatalog: ue,
-				purchaseModal: fe
+				purchaseCatalog: ce,
+				purchaseModal: be
 			})
 		},
 		"./src/reddit/reducers/features/predictions/index.ts": function(e, t, i) {
@@ -40121,4 +40125,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b56634ad125e8b2b5306.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f28adccf687d93c322aa.js.map
