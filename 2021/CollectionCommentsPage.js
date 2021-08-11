@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c3e9f47ae88991bc784b.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.afe29d67646f3b9c8de8.js
+// Retrieved at 8/11/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -1638,6 +1638,8 @@
 				authorHoverDiv: "ZvAy-PJfJmB8pzQxpz1sS",
 				UserIconContainer: "_3GfQMgsm3HGd3838lwqCST",
 				userIconContainer: "_3GfQMgsm3HGd3838lwqCST",
+				SupporterRing: "_2I86011VPvZ-uDOUp1zvd-",
+				supporterRing: "_2I86011VPvZ-uDOUp1zvd-",
 				UserIcon: "_13ScjOmi6dGdJw0JAonQEr",
 				userIcon: "_13ScjOmi6dGdJw0JAonQEr",
 				UserIconNft: "_20ZyBb8T475h1qmXRBEL6-",
@@ -1654,7 +1656,6 @@
 				highlightComment: "_2ym9uYDdCxu8P4UFCLNCgE",
 				topLevel: "_1z5rdmX8TDr6mqwNv7A70U",
 				focused: "_1Sy9NCNbLA9uJZj-qgUrMG",
-				supporterRing: "_2_fiu4rmeshPYfwncJ0U-X",
 				TopMeta: "_1S45SPAIb30fsXtEcKPSdt",
 				topMeta: "_1S45SPAIb30fsXtEcKPSdt",
 				noFlair: "_3LqBzV8aCO9tge99jHiUGy",
@@ -2820,11 +2821,11 @@
 						collapsed: r,
 						isCommentAuthorBlocked: Object(me.g)(o)
 					}, a.a.createElement(xe, {
-						className: Object(l.a)(ss.a.UserIconContainer, {
-							[ss.a.supporterRing]: te
-						}),
+						className: ss.a.UserIconContainer,
 						to: `/user/${o.author}/`
-					}, Oe ? a.a.createElement(jt.a, {
+					}, Oe ? a.a.createElement(a.a.Fragment, null, te && a.a.createElement("div", {
+						className: ss.a.supporterRing
+					}), a.a.createElement(jt.a, {
 						isNft: we,
 						className: Object(l.a)(ss.a.UserIcon, {
 							[ss.a.UserIconNft]: we
@@ -2838,7 +2839,7 @@
 						onPresenceIndicatorInViewport: Pe,
 						isCommentAuthorBlocked: Object(me.g)(o),
 						collapsed: r
-					}) : a.a.createElement("div", {
+					})) : a.a.createElement("div", {
 						className: ss.a.UserIcon
 					}), L && a.a.createElement(_t.a, {
 						onClick: e => {
@@ -8374,4 +8375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c3e9f47ae88991bc784b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.afe29d67646f3b9c8de8.js.map
