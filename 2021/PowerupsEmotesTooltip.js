@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.0b263e7d3ce143060b70.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.e0e257a85e31c57f8a3c.js
+// Retrieved at 8/11/2021, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -402,10 +402,10 @@
 					y = Object(i.e)(e => Object(d.p)(e, {
 						subredditId: t
 					})),
-					v = Object(i.e)(e => Object(d.h)(e, {
+					S = Object(i.e)(e => Object(d.h)(e, {
 						subredditId: t
 					})),
-					S = Object(i.e)(e => Object(d.i)(e, {
+					v = Object(i.e)(e => Object(d.i)(e, {
 						subredditId: t
 					})),
 					{
@@ -414,7 +414,7 @@
 						maxEmojisUploaded: B,
 						onFileChange: A,
 						onClickUpload: M
-					} = Object(g.a)(t, v, e => {
+					} = Object(g.a)(t, S, e => {
 						c(Object(h.f)({
 							duration: 5e3,
 							kind: w.b.Error,
@@ -459,7 +459,7 @@
 					H = u.fbt._("Images under 128kb with a transparent background work the best.", null, {
 						hk: "c6yXl"
 					});
-				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", null, (P || v.length > 0) && n.a.createElement("article", null, n.a.createElement("header", {
+				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", null, (P || S.length > 0) && n.a.createElement("article", null, n.a.createElement("header", {
 					className: O.a.emotePackTitle
 				}, n.a.createElement("span", null, F), n.a.createElement(j.a, {
 					className: O.a.newIcon
@@ -494,7 +494,7 @@
 					disabled: L
 				}, n.a.createElement(f.a, {
 					className: O.a.addIcon
-				}))), v.map(t => n.a.createElement(T.a, {
+				}))), S.map(t => n.a.createElement(T.a, {
 					key: t.id,
 					className: O.a.emoteButton,
 					imageClassName: O.a.customEmoteImage,
@@ -514,7 +514,7 @@
 					className: Object(p.a)(O.a.emotes, {
 						[O.a.disabled]: !y
 					})
-				}, S.map(t => n.a.createElement(T.a, {
+				}, v.map(t => n.a.createElement(T.a, {
 					key: t.id,
 					className: O.a.emoteButton,
 					imagePath: t.emoji.path,
@@ -524,7 +524,7 @@
 				}))))), !y && n.a.createElement(x.q, {
 					className: O.a.unlockButton,
 					onClick: () => {
-						l(Object(a.v)()), c(Object(b.f)("emote_picker"))
+						l(Object(a.w)()), c(Object(b.f)("emote_picker"))
 					},
 					priority: x.b.Primary
 				}, u.fbt._("Unlock Emojis", null, {
@@ -768,4 +768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.0b263e7d3ce143060b70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.e0e257a85e31c57f8a3c.js.map

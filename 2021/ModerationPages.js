@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.41a90737669f7d9ef377.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b5bec3379d8f7cdd170b.js
+// Retrieved at 8/11/2021, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -13458,7 +13458,7 @@
 				})), a.a.createElement(w.o, {
 					on: h,
 					onClick: () => (n => {
-						s(Object(E.w)("comments_with_gifs", n, !n)), t(Object(l.m)(e, {
+						s(Object(E.y)("comments_with_gifs", n, !n)), t(Object(l.m)(e, {
 							[I.a.CommentsWithGifs]: n
 						}))
 					})(!h),
@@ -22887,4 +22887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.41a90737669f7d9ef377.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b5bec3379d8f7cdd170b.js.map

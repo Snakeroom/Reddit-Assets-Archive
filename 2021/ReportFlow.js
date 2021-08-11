@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.ef9c9adac5aa3b9f55d3.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.af8c39af411d22ffc54e.js
+// Retrieved at 8/11/2021, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, o) {
@@ -5138,13 +5138,13 @@
 		},
 		"./src/reddit/helpers/trackers/powerups.ts": function(e, t, o) {
 			"use strict";
-			o.d(t, "x", (function() {
+			o.d(t, "z", (function() {
 				return i
 			})), o.d(t, "r", (function() {
 				return a
 			})), o.d(t, "t", (function() {
 				return l
-			})), o.d(t, "y", (function() {
+			})), o.d(t, "A", (function() {
 				return d
 			})), o.d(t, "j", (function() {
 				return u
@@ -5160,34 +5160,38 @@
 				return h
 			})), o.d(t, "u", (function() {
 				return b
-			})), o.d(t, "h", (function() {
+			})), o.d(t, "x", (function() {
 				return g
-			})), o.d(t, "g", (function() {
-				return w
-			})), o.d(t, "i", (function() {
-				return x
-			})), o.d(t, "q", (function() {
-				return v
-			})), o.d(t, "o", (function() {
-				return O
-			})), o.d(t, "p", (function() {
-				return C
-			})), o.d(t, "f", (function() {
-				return y
 			})), o.d(t, "v", (function() {
+				return w
+			})), o.d(t, "h", (function() {
+				return x
+			})), o.d(t, "g", (function() {
+				return v
+			})), o.d(t, "i", (function() {
+				return O
+			})), o.d(t, "q", (function() {
+				return C
+			})), o.d(t, "o", (function() {
+				return y
+			})), o.d(t, "p", (function() {
 				return E
-			})), o.d(t, "k", (function() {
+			})), o.d(t, "f", (function() {
 				return S
-			})), o.d(t, "a", (function() {
-				return R
-			})), o.d(t, "s", (function() {
-				return k
-			})), o.d(t, "d", (function() {
-				return I
-			})), o.d(t, "l", (function() {
-				return j
 			})), o.d(t, "w", (function() {
+				return R
+			})), o.d(t, "k", (function() {
+				return k
+			})), o.d(t, "a", (function() {
+				return I
+			})), o.d(t, "s", (function() {
+				return j
+			})), o.d(t, "d", (function() {
 				return T
+			})), o.d(t, "l", (function() {
+				return P
+			})), o.d(t, "y", (function() {
+				return L
 			}));
 			var n = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				r = o("./src/reddit/selectors/telemetry.ts");
@@ -5279,7 +5283,19 @@
 					noun: "premium",
 					...s(e)
 				}),
-				g = e => t => ({
+				g = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "unlock_supporter_achievement",
+					...s(e)
+				}),
+				w = () => e => ({
+					source: "powerups",
+					action: "click",
+					noun: "unlock_achievements",
+					...s(e)
+				}),
+				x = e => t => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "marketing_step",
@@ -5288,7 +5304,7 @@
 						reason: e
 					})
 				}),
-				w = e => t => ({
+				v = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "benefit",
@@ -5298,13 +5314,13 @@
 						benefit: e
 					}
 				}),
-				x = (e, t) => o => ({
+				O = (e, t) => o => ({
 					source: "powerups_modal",
 					action: "view",
 					noun: "purchase_step",
 					...s(o, e, t)
 				}),
-				v = () => e => ({
+				C = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -5313,13 +5329,13 @@
 						pageType: "powerups_premium_upsell"
 					})
 				}),
-				O = () => e => ({
+				y = () => e => ({
 					source: "powerups_premium_upsell",
 					action: "click",
 					noun: "powerups_price",
 					...s(e)
 				}),
-				C = e => t => ({
+				E = e => t => ({
 					source: "powerups",
 					action: "click",
 					noun: "premium",
@@ -5331,7 +5347,7 @@
 						subscriptionType: e
 					}
 				}),
-				y = (e, t) => o => ({
+				S = (e, t) => o => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -5340,20 +5356,20 @@
 						pageType: "community_heroes_modal"
 					}
 				}),
-				E = () => e => ({
+				R = () => e => ({
 					source: "powerups",
 					action: "click",
 					noun: "unlock_emojis",
 					...s(e),
 					correlationId: Object(n.d)(n.a.PowerupsFlow, !0)
 				}),
-				S = () => e => ({
+				k = () => e => ({
 					source: "meta",
 					action: "open",
 					noun: "emote_picker",
 					...s(e)
 				}),
-				R = (e, t) => o => ({
+				I = (e, t) => o => ({
 					source: t,
 					action: "click",
 					noun: "add_custom_emojis",
@@ -5363,7 +5379,7 @@
 						emojiCount: e
 					}
 				}),
-				k = (e, t) => o => ({
+				j = (e, t) => o => ({
 					source: t,
 					action: "save",
 					noun: "custom_emojis",
@@ -5373,7 +5389,7 @@
 						emojiCount: e
 					}
 				}),
-				I = (e = 1, t) => o => ({
+				T = (e = 1, t) => o => ({
 					source: t,
 					action: "delete",
 					noun: "custom_emojis",
@@ -5383,7 +5399,7 @@
 						emojiCount: e
 					}
 				}),
-				j = (e, t) => o => ({
+				P = (e, t) => o => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
@@ -5391,7 +5407,7 @@
 					...s(o),
 					correlationId: e
 				}),
-				T = (e, t, o) => n => ({
+				L = (e, t, o) => n => ({
 					source: "powerups_settings",
 					action: "click",
 					noun: e,
@@ -5887,4 +5903,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ef9c9adac5aa3b9f55d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.af8c39af411d22ffc54e.js.map
