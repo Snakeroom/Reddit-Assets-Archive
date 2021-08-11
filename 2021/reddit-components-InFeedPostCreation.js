@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.4d67dc2548e74dc7eaf5.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1475a79d2f5d47549f0b.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -48,9 +48,9 @@
 			}(j || (j = {}));
 			const h = e => {
 					switch (e) {
-						case d.Rb.MEDIA:
+						case d.Sb.MEDIA:
 							return "?media=true";
-						case d.Rb.LINK_ONLY:
+						case d.Sb.LINK_ONLY:
 							return "?url";
 						default:
 							return ""
@@ -58,9 +58,9 @@
 				},
 				k = e => {
 					switch (e) {
-						case d.Rb.MEDIA:
+						case d.Sb.MEDIA:
 							return "media_post";
-						case d.Rb.LINK_ONLY:
+						case d.Sb.LINK_ONLY:
 							return "link_post";
 						default:
 							return "create_post"
@@ -73,19 +73,19 @@
 					subreddit: U.z,
 					subredditAboutInfo: U.w
 				}),
-				L = Object(c.b)(M, e => ({
+				S = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				})),
-				v = () => r.fbt._("Create Media Post", null, {
+				L = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
-				g = () => r.fbt._("Create Link Post", null, {
+				v = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(m.c)(L(({
+			t.default = Object(m.c)(S(({
 				currentUser: e,
 				isPresenceConsumptionExpEnabled: t,
 				isPresenceTogglePref: n,
@@ -126,7 +126,7 @@
 						}))
 					},
 					U = () => {
-						E(d.Rb.POST), s(m)
+						E(d.Sb.POST), s(m)
 					},
 					C = t && n,
 					N = e ? o.a.createElement(x.a, {
@@ -150,38 +150,38 @@
 					type: "text"
 				}), b.media && o.a.createElement(I.q, {
 					className: O.a.Button,
-					"aria-label": v(),
+					"aria-label": L(),
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
 					id: j.Media,
-					onClick: () => E(d.Rb.MEDIA),
+					onClick: () => E(d.Sb.MEDIA),
 					onMouseEnter: () => u(j.Media),
 					onMouseLeave: () => u(j.Media),
-					to: m + h(d.Rb.MEDIA),
+					to: m + h(d.Sb.MEDIA),
 					Icon: Object(_.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: v()
+					text: L()
 				})), b.link && o.a.createElement(I.q, {
 					className: O.a.Button,
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
-					"aria-label": g(),
+					"aria-label": v(),
 					id: j.Link,
-					onClick: () => E(d.Rb.LINK_ONLY),
+					onClick: () => E(d.Sb.LINK_ONLY),
 					onMouseEnter: () => u(j.Link),
 					onMouseLeave: () => u(j.Link),
-					to: m + h(d.Rb.LINK_ONLY),
+					to: m + h(d.Sb.LINK_ONLY),
 					Icon: Object(_.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: j.Media,
-					text: v()
+					text: L()
 				})))
 			}))
 		},
@@ -262,4 +262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.4d67dc2548e74dc7eaf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1475a79d2f5d47549f0b.js.map

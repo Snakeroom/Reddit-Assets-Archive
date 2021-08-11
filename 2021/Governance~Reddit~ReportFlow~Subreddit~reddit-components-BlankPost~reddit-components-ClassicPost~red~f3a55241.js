@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.e1103670e4f3a2e6cc38.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.23b2dcfc1c7c629338aa.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241"], {
 		"./src/reddit/actions/downToChat.ts": function(e, t, r) {
@@ -1146,7 +1146,7 @@
 						subredditId: t
 					}))(e, t),
 					k = Z.x in e.queryParams && e.queryParams[Z.x].toUpperCase() || "",
-					L = k in a.bc && a.bc[k];
+					L = k in a.cc && a.cc[k];
 				if (A || w && !x && !t) {
 					if (N(b, R) && r(U.i(R)), w) {
 						const t = Ce(s(), i);
@@ -1189,11 +1189,11 @@
 					});
 				if (Object(_e.a)(F) || Object(_e.b)(F) || Object(_e.c)(F)) {
 					const e = Object(p.a)(i, a.U.TOP, {
-							t: a.bc.WEEK
+							t: a.cc.WEEK
 						}),
 						t = {
 							sort: a.U.TOP,
-							t: a.bc.WEEK
+							t: a.cc.WEEK
 						};
 					await r(Re(e, i, t, !1))
 				}
@@ -1845,7 +1845,7 @@
 					apiContext: r
 				}) => {
 					const s = Object(h.j)(t());
-					s && await e(k(u.dc + Object(S.e)(s)))
+					s && await e(k(u.ec + Object(S.e)(s)))
 				}, P = "SUBREDDIT_SETTINGS_UPDATE_REQUESTED", U = "SUBREDDIT_SETTINGS_UPDATE_SUCCESS", G = "SUBREDDIT_SETTINGS_UPDATE_FAILURE", B = Object(l.a)(P), q = Object(l.a)(U), F = Object(l.a)(G), M = (e, t, r = {}, n = !1, i = {}) => async (c, u, {
 					apiContext: l,
 					gqlContext: g
@@ -4826,4 +4826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.e1103670e4f3a2e6cc38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241.23b2dcfc1c7c629338aa.js.map

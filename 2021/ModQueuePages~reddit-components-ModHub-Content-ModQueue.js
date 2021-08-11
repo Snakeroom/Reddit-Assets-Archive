@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.2ea3a3209e88317633f2.js
-// Retrieved at 8/10/2021, 12:30:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.afbec51e61616656b8fb.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages~reddit-components-ModHub-Content-ModQueue"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -1871,7 +1871,7 @@
 					}, m.a.createElement(_.a, {
 						className: Q.a.seeMorePostsText,
 						to: Object(h.a)(y, {
-							type: x.Vb.Posts
+							type: x.Wb.Posts
 						})
 					}, V._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -2155,4 +2155,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.2ea3a3209e88317633f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages~reddit-components-ModHub-Content-ModQueue.afbec51e61616656b8fb.js.map

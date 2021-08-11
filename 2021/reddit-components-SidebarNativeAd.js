@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.1ff3b04b9c737ea59511.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.55ca30ed02dd0b269b46.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -647,9 +647,9 @@
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/constants/index.ts");
-			const o = [s.kc, s.nb, s.z, s.O, s.ib, s.Nb],
+			const o = [s.lc, s.nb, s.z, s.O, s.ib, s.Ob],
 				i = {
-					[s.Nb]: e => n.fbt._({
+					[s.Ob]: e => n.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [n.fbt._plural(e, "number")], {
@@ -679,7 +679,7 @@
 					}, [n.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.kc]: e => n.fbt._({
+					[s.lc]: e => n.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [n.fbt._plural(e, "number")], {
@@ -687,7 +687,7 @@
 					})
 				},
 				a = {
-					[s.Nb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+					[s.Ob]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[s.ib]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
@@ -702,13 +702,13 @@
 					[s.nb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.kc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[s.lc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.nb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.kc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[s.lc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -717,12 +717,12 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[s.kc]: "",
+						[s.lc]: "",
 						[s.nb]: "",
 						[s.z]: "",
 						[s.O]: "",
 						[s.ib]: "",
-						[s.Nb]: ""
+						[s.Ob]: ""
 					};
 				let u = d - c;
 				if (u <= 0) return n.fbt._("a moment", null, {
@@ -1109,7 +1109,7 @@
 				return a.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(s.d, {
-					seconds: e.poll.endsAt / n.Nb
+					seconds: e.poll.endsAt / n.Ob
 				}))], {
 					hk: "3OERID"
 				}) : Object(o.a)(new Date(e.poll.endsAt)))
@@ -1324,9 +1324,9 @@
 				S = r("./src/reddit/components/FlairWrapper/index.tsx"),
 				T = r("./node_modules/fbt/lib/FbtPublic.js"),
 				C = r("./src/lib/prettyPrintNumber/index.ts"),
-				k = r("./src/reddit/components/Poll/PollExpiry/index.tsx"),
-				x = r("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
-				A = r.n(x);
+				x = r("./src/reddit/components/Poll/PollExpiry/index.tsx"),
+				k = r("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
+				A = r.n(k);
 			const P = Object(c.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
 				resultsByVoters: (e, t) => e.polls.results.byVoters[t.pollId]
@@ -1343,15 +1343,15 @@
 						_1: "{count} vote"
 					}, [T.fbt._param("count", Object(C.a)(n)), T.fbt._plural(parseInt(n))], {
 						hk: "4rP1VK"
-					})), t && o.a.createElement(k.a, {
+					})), t && o.a.createElement(x.a, {
 						className: A.a.proposalExpiry,
 						poll: t
 					}))
 				})),
-				N = r("./src/reddit/components/SEOTitle/index.tsx"),
-				L = r("./src/reddit/selectors/user.ts"),
-				M = r("./src/reddit/components/PostTitle/index.m.less"),
-				D = r.n(M),
+				L = r("./src/reddit/components/SEOTitle/index.tsx"),
+				M = r("./src/reddit/selectors/user.ts"),
+				N = r("./src/reddit/components/PostTitle/index.m.less"),
+				D = r.n(N),
 				F = r("./src/config.ts"),
 				U = r("./src/reddit/hooks/useClickSourceData.ts"),
 				B = r("./src/reddit/hooks/useExperimentVariant.ts"),
@@ -1407,7 +1407,7 @@
 								theme: c
 							}).titleText
 						}
-					}, r ? o.a.createElement(N.b, {
+					}, r ? o.a.createElement(L.b, {
 						type: r
 					}, s) : s)
 				},
@@ -1439,7 +1439,7 @@
 					}) => Object(p.p)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: L.bb
+					shouldOpenPostInNewTab: M.bb
 				}),
 				Q = e => {
 					const {
@@ -1492,7 +1492,7 @@
 					r && "string" == typeof s && (s = (e => {
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(s));
-					const i = e.isCommentsPage ? N.a.PostComments : N.a.PostItem;
+					const i = e.isCommentsPage ? L.a.PostComments : L.a.PostItem;
 					return o.a.createElement(H, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
@@ -1710,8 +1710,8 @@
 				S = r("./src/reddit/models/NewStructuredStyles/index.ts"),
 				T = r("./src/reddit/models/Theme/index.ts"),
 				C = r("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				k = r("./src/lib/constants/index.ts"),
-				x = r("./src/reddit/models/Media/index.ts"),
+				x = r("./src/lib/constants/index.ts"),
+				k = r("./src/reddit/models/Media/index.ts"),
 				A = r("./src/reddit/components/NativeBannerAd/index.m.less"),
 				P = r.n(A);
 			const j = m.a.wrapped(e => o.a.createElement("img", {
@@ -1724,13 +1724,13 @@
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = !e.media || Object(x.K)(e.media) || Object(x.G)(e.media) ? "" : e.media.content,
+					const t = !e.media || Object(k.K)(e.media) || Object(k.G)(e.media) ? "" : e.media.content,
 						{
 							type: r
 						} = e.media;
 					if (!t || !r) return null;
 					switch (r) {
-						case k.ob.IMAGE:
+						case x.ob.IMAGE:
 							return o.a.createElement(j, {
 								src: t
 							});
@@ -1739,21 +1739,21 @@
 					}
 				}
 			}
-			var N = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
-				L = r.n(N);
-			const M = m.a.wrapped(d.d, "PostTopMeta", L.a),
-				D = m.a.div("BannerAdContainer", L.a),
+			var L = r("./src/reddit/components/SidebarNativeAd/index.m.less"),
+				M = r.n(L);
+			const N = m.a.wrapped(d.d, "PostTopMeta", M.a),
+				D = m.a.div("BannerAdContainer", M.a),
 				F = ({
 					children: e
 				}) => o.a.createElement("div", null, e),
-				U = m.a.div("PromotedPostContainer", L.a),
-				B = m.a.wrapped(I.a, "OutboundLinkIcon", L.a),
-				G = m.a.div("SourceLinkWrapper", L.a),
-				V = m.a.div("TopLine", L.a),
-				z = m.a.wrapped(c.c, "PostTitle", L.a),
-				W = m.a.div("PostMediaWrapper", L.a),
-				H = m.a.div("BackgroundWrapper", L.a),
-				q = m.a.wrapped(h.a, "PostContainer", L.a),
+				U = m.a.div("PromotedPostContainer", M.a),
+				B = m.a.wrapped(I.a, "OutboundLinkIcon", M.a),
+				G = m.a.div("SourceLinkWrapper", M.a),
+				V = m.a.div("TopLine", M.a),
+				z = m.a.wrapped(c.c, "PostTitle", M.a),
+				W = m.a.div("PostMediaWrapper", M.a),
+				H = m.a.div("BackgroundWrapper", M.a),
+				q = m.a.wrapped(h.a, "PostContainer", M.a),
 				Y = 640,
 				K = e => Object(w.a)(e.title, 100),
 				Q = e => {
@@ -1798,7 +1798,7 @@
 						post: e
 					})) : (i = U, l = o.a.createElement(H, {
 						style: X(this.props)
-					}, o.a.createElement(V, null, o.a.createElement(M, {
+					}, o.a.createElement(V, null, o.a.createElement(N, {
 						tooltipType: s ? d.c.Lightbox : void 0,
 						post: e,
 						showTimestamp: !1
@@ -2075,9 +2075,9 @@
 			})), r.d(t, "viewGildModalEvent", (function() {
 				return C
 			})), r.d(t, "clickSelectAwardEvent", (function() {
-				return k
-			})), r.d(t, "triggerAnonymousEvent", (function() {
 				return x
+			})), r.d(t, "triggerAnonymousEvent", (function() {
+				return k
 			})), r.d(t, "clickMessageInputEvent", (function() {
 				return A
 			})), r.d(t, "typeMessageInputEvent", (function() {
@@ -2087,11 +2087,11 @@
 			})), r.d(t, "clickQuestionMarkEvent", (function() {
 				return R
 			})), r.d(t, "clickConfirmAwardEvent", (function() {
-				return N
-			})), r.d(t, "clickGetPremiumEvent", (function() {
 				return L
-			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
+			})), r.d(t, "clickGetPremiumEvent", (function() {
 				return M
+			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
+				return N
 			})), r.d(t, "clickNextButtonEvent", (function() {
 				return D
 			})), r.d(t, "clickCloseGildModalEvent", (function() {
@@ -2193,14 +2193,14 @@
 						defaultAnonymous: t
 					}
 				}),
-				k = (e, t, r) => n => ({
+				x = (e, t, r) => n => ({
 					...u(n, t),
 					source: "give_gold",
 					action: "click",
 					noun: "award",
 					goldPurchase: l(e, r)
 				}),
-				x = (e, t) => r => ({
+				k = (e, t) => r => ({
 					...u(r, t),
 					source: "give_gold",
 					action: e,
@@ -2230,7 +2230,7 @@
 					action: "click",
 					noun: "question"
 				}),
-				N = (e, t) => r => ({
+				L = (e, t) => r => ({
 					...u(r, e),
 					source: "give_gold",
 					action: "click",
@@ -2240,7 +2240,7 @@
 						...l(t)
 					}
 				}),
-				L = (e, t) => r => ({
+				M = (e, t) => r => ({
 					...u(r, e),
 					source: "give_gold",
 					action: "click",
@@ -2250,7 +2250,7 @@
 						...l(t)
 					}
 				}),
-				M = e => t => ({
+				N = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3425,9 +3425,9 @@
 			})), r.d(t, "j", (function() {
 				return C
 			})), r.d(t, "m", (function() {
-				return k
-			})), r.d(t, "e", (function() {
 				return x
+			})), r.d(t, "e", (function() {
+				return k
 			})), r.d(t, "d", (function() {
 				return A
 			}));
@@ -3465,8 +3465,8 @@
 				S = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				T = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				C = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				k = e => e.features.goldPurchase.payment.stripeToken.pending,
-				x = e => e.features.goldPurchase.payment.paypal.passthrough,
+				x = e => e.features.goldPurchase.payment.stripeToken.pending,
+				k = e => e.features.goldPurchase.payment.paypal.passthrough,
 				A = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, r) {
@@ -3540,4 +3540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.1ff3b04b9c737ea59511.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.55ca30ed02dd0b269b46.js.map

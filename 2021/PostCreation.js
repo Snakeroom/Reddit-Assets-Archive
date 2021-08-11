@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1f9dbbcc44dbbb34ede7.js
-// Retrieved at 8/11/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5b05edacbbcc8ea2efe4.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -280,9 +280,9 @@
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
-			const s = [r.kc, r.nb, r.z, r.O, r.ib, r.Nb],
+			const s = [r.lc, r.nb, r.z, r.O, r.ib, r.Ob],
 				a = {
-					[r.Nb]: e => o.fbt._({
+					[r.Ob]: e => o.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [o.fbt._plural(e, "number")], {
@@ -312,7 +312,7 @@
 					}, [o.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.kc]: e => o.fbt._({
+					[r.lc]: e => o.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [o.fbt._plural(e, "number")], {
@@ -320,7 +320,7 @@
 					})
 				},
 				i = {
-					[r.Nb]: e => o.fbt._("{amount}s", [o.fbt._param("amount", String(e))], {
+					[r.Ob]: e => o.fbt._("{amount}s", [o.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[r.ib]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
@@ -335,13 +335,13 @@
 					[r.nb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.kc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.lc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[r.nb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.kc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.lc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -350,12 +350,12 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[r.kc]: "",
+						[r.lc]: "",
 						[r.nb]: "",
 						[r.z]: "",
 						[r.O]: "",
 						[r.ib]: "",
-						[r.Nb]: ""
+						[r.Ob]: ""
 					};
 				let u = d - c;
 				if (u <= 0) return o.fbt._("a moment", null, {
@@ -2861,7 +2861,7 @@
 										benefit: O.a.HdVideo
 									}),
 									u = i ? 2 * a.db : a.db;
-								if (t.size > u) return M(a.hc);
+								if (t.size > u) return M(a.ic);
 								let m;
 								try {
 									m = await Object(g.h)(c, !0)
@@ -3260,8 +3260,8 @@
 						n = Object(U.U)(e),
 						r = Object(U.a)(e),
 						s = Object(U.eb)(e);
-					if (r === o.Rb.POST) return u.a.getPendingThumbnailUploads(s, t);
-					if (r === o.Rb.MEDIA && n && n.items.length) {
+					if (r === o.Sb.POST) return u.a.getPendingThumbnailUploads(s, t);
+					if (r === o.Sb.MEDIA && n && n.items.length) {
 						const {
 							video: e
 						} = n.items[0];
@@ -3283,7 +3283,7 @@
 					const l = Object(U.a)(a),
 						u = M.d.rteVideoPoster(a),
 						m = re(a),
-						p = l === o.Rb.MEDIA;
+						p = l === o.Sb.MEDIA;
 					m && (u || p) && (await n(z.f(m)), re(r())) || (e === y.q.Draft ? await n(Object(c.r)(t.draftId)) : e === y.q.ScheduledPost && Object(G.r)(a) ? await n(ae(t)) : e === y.q.ScheduledPost ? await n(ie(t)) : await n(ce(t)))
 				}, ae = e => async (t, n, {
 					gqlContext: o
@@ -6095,7 +6095,7 @@
 				return i.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", i.a.createElement(r.d, {
-					seconds: e.poll.endsAt / o.Nb
+					seconds: e.poll.endsAt / o.Ob
 				}))], {
 					hk: "3OERID"
 				}) : Object(s.a)(new Date(e.poll.endsAt)))
@@ -8681,7 +8681,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, r = n === c.Rb.CROSSPOST;
+				} = e, r = n === c.Sb.CROSSPOST;
 				return s.a.createElement("div", {
 					className: t
 				}, s.a.createElement(g, null, s.a.createElement(b, null), r ? o.fbt._("Crossposting to Reddit", null, {
@@ -9621,7 +9621,7 @@
 					}, t.title), r.a.createElement("div", {
 						className: x.a.metaLine
 					}, S._("Posted · {timeAgo}", [S._param("timeAgo", r.a.createElement(C.d, {
-						seconds: t.created / _.Nb
+						seconds: t.created / _.Ob
 					}))], {
 						hk: "ZVJpV"
 					}))), r.a.createElement(E.a, {
@@ -14554,12 +14554,12 @@
 				E = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === c.i.AtEventTime ? Object(a.f)(e.startDate).getTime() / r.Nb : void 0
+						submitScheduledTime: e && e.submitTime === c.i.AtEventTime ? Object(a.f)(e.startDate).getTime() / r.Ob : void 0
 					}
 				},
 				O = e => {
-					const t = Object(a.f)(e.startDate).getTime() / r.Nb,
-						n = Object(a.f)(e.endDate).getTime() / r.Nb;
+					const t = Object(a.f)(e.startDate).getTime() / r.Ob,
+						n = Object(a.f)(e.endDate).getTime() / r.Ob;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: n,
@@ -17512,7 +17512,7 @@
 					} = u || {}, {
 						allOriginalContent: I = !1,
 						eventPostsEnabled: w = !1
-					} = i || {}, P = a.isProfile || Object(ct.g)(i), T = l || !P || I || x === p.Rb.CROSSPOST, D = l || !(a.isProfile || Object(ct.i)(i)), N = l, M = l || !!v;
+					} = i || {}, P = a.isProfile || Object(ct.g)(i), T = l || !P || I || x === p.Sb.CROSSPOST, D = l || !(a.isProfile || Object(ct.i)(i)), N = l, M = l || !!v;
 					return r.a.createElement("div", {
 						className: o
 					}, r.a.createElement(Ct, null, m && r.a.createElement(vt, {
@@ -18029,7 +18029,7 @@
 				Tn = 10,
 				Dn = te.a.wrapped(de.a, "Container", En.a),
 				Nn = e => {
-					return [p.Rb.LINK_ONLY, p.Rb.POLL, p.Rb.POST].includes(e)
+					return [p.Sb.LINK_ONLY, p.Sb.POLL, p.Sb.POST].includes(e)
 				},
 				Mn = te.a.div("ButtonsAndErrors", En.a),
 				Rn = te.a.wrapped(de.a, "ButtonRow", En.a),
@@ -18045,7 +18045,7 @@
 				Vn = e => {
 					const t = Object(j.eb)(e),
 						n = Object(j.kb)(e);
-					if (!t.isBound || n !== p.Rb.POST || !Object(j.gb)(e)) return Gn;
+					if (!t.isBound || n !== p.Sb.POST || !Object(j.gb)(e)) return Gn;
 					const o = (e => {
 						const {
 							allowedPostTypes: t,
@@ -18154,14 +18154,14 @@
 					const n = Object(j.U)(e),
 						o = Object(j.eb)(e),
 						r = Object(j.kb)(e);
-					if (r === p.Rb.IMAGE_ONLY) return !1;
+					if (r === p.Sb.IMAGE_ONLY) return !1;
 					if (!Object(j.h)(e).name || !Object(j.D)(e)) return !1;
-					if (r === p.Rb.POST || r === p.Rb.POLL) {
+					if (r === p.Sb.POST || r === p.Sb.POLL) {
 						const t = Vn(e),
 							n = !oe.a.isAllMediaUploaded(o, e.uploads);
 						return !t.length && !n
 					}
-					if (r === p.Rb.MEDIA) {
+					if (r === p.Sb.MEDIA) {
 						const {
 							items: t
 						} = n, o = t.every(t => {
@@ -18170,7 +18170,7 @@
 						});
 						return t.length > 0 && o
 					}
-					return r === p.Rb.LINK_ONLY ? Object(j.y)(e) : r === p.Rb.CROSSPOST && !qn(e, {
+					return r === p.Sb.LINK_ONLY ? Object(j.y)(e) : r === p.Sb.CROSSPOST && !qn(e, {
 						sourcePostId: t
 					})
 				},
@@ -18222,9 +18222,9 @@
 						if (!p.F.has(t) || !Object(j.F)(e)) return !1;
 						const n = Object(j.h)(e),
 							o = Object(j.n)(e),
-							r = t === p.Rb.LINK_ONLY && Object(j.y)(e),
-							s = t === p.Rb.POST && o === f.h.RICH_TEXT && Object(j.C)(e),
-							a = t === p.Rb.POST && o === f.h.MARKDOWN && Object(j.z)(e),
+							r = t === p.Sb.LINK_ONLY && Object(j.y)(e),
+							s = t === p.Sb.POST && o === f.h.RICH_TEXT && Object(j.C)(e),
+							a = t === p.Sb.POST && o === f.h.MARKDOWN && Object(j.z)(e),
 							i = r || s || a;
 						return !!n.name || Object(j.D)(e) || i
 					},
@@ -18406,7 +18406,7 @@
 						suggestedSort: F,
 						onChange: I,
 						onClose: B
-					}), _ && L !== p.Rb.MEDIA && L !== p.Rb.POLL && !j ? r.a.createElement(An, null, r.a.createElement(ve, {
+					}), _ && L !== p.Sb.MEDIA && L !== p.Sb.POLL && !j ? r.a.createElement(An, null, r.a.createElement(ve, {
 						disabled: !k || W || U,
 						onClick: w
 					}, v || V ? r.a.createElement(Bn, {
@@ -19740,7 +19740,7 @@
 						currentUser: o,
 						draftId: s,
 						submissionType: a
-					} = e, i = !!n && !!n.isQuarantined, c = e.isDraftPending || e.isPostPending || e.isMediaUploadPending, l = a !== p.Rb.MEDIA && s, u = e.isPublicLink, m = o && o.hasUserProfile;
+					} = e, i = !!n && !!n.isQuarantined, c = e.isDraftPending || e.isPostPending || e.isMediaUploadPending, l = a !== p.Sb.MEDIA && s, u = e.isPublicLink, m = o && o.hasUserProfile;
 					return r.a.createElement(li, null, r.a.createElement(ui, {
 						className: e.className
 					}, r.a.createElement(de.a, null, r.a.createElement(bi, null, r.a.createElement(ci, {
@@ -19840,7 +19840,7 @@
 						showDraftsList: c,
 						submissionType: l,
 						submitMode: u
-					} = e, m = l === p.Rb.CROSSPOST, b = m ? d.fbt._("Create a crosspost", null, {
+					} = e, m = l === p.Sb.CROSSPOST, b = m ? d.fbt._("Create a crosspost", null, {
 						hk: "1oNF7H"
 					}) : d.fbt._("Create a post", null, {
 						hk: "4u8qEy"
@@ -20885,7 +20885,7 @@
 						postRequirements: n,
 						postCreationFieldErrors: o,
 						subreddit: s
-					} = e, a = e.submissionType === p.Rb.POST && !e.shouldAllowBodyText, i = o[p.ub.TITLE].length > 0, c = t ? st.f : n && n.titleTextMaxLength || st.f;
+					} = e, a = e.submissionType === p.Sb.POST && !e.shouldAllowBodyText, i = o[p.ub.TITLE].length > 0, c = t ? st.f : n && n.titleTextMaxLength || st.f;
 					return r.a.createElement("div", {
 						className: Rd.a.container
 					}, r.a.createElement("div", {
@@ -21130,7 +21130,7 @@
 						e(i.g({
 							submissionType: n,
 							extra: o
-						})), e((e, t) => O.s(t(), n)), e(i.v(n === p.Rb.POLL)), ((e, t, n) => {
+						})), e((e, t) => O.s(t(), n)), e(i.v(n === p.Sb.POLL)), ((e, t, n) => {
 							if (!t) return;
 							const o = Object(ll.a)(t.url, n);
 							t.url !== o && e(Object(m.c)(o))
@@ -21140,19 +21140,19 @@
 			class xl extends r.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onPostTabClick = () => {
-						this.props.isTabsDisabled.post || this.props.onChange(p.Rb.POST, {
+						this.props.isTabsDisabled.post || this.props.onChange(p.Sb.POST, {
 							govType: this.props.govType
 						})
 					}, this.onMediaTabClick = () => {
-						this.props.isTabsDisabled.media || this.props.onChange(p.Rb.MEDIA, {
+						this.props.isTabsDisabled.media || this.props.onChange(p.Sb.MEDIA, {
 							govType: this.props.govType
 						})
 					}, this.onLinkTabClick = () => {
-						this.props.isTabsDisabled.link || this.props.onChange(p.Rb.LINK_ONLY, {
+						this.props.isTabsDisabled.link || this.props.onChange(p.Sb.LINK_ONLY, {
 							govType: this.props.govType
 						})
 					}, this.onPollTabClick = () => {
-						this.props.isTabsDisabled.poll || this.props.onChange(p.Rb.POLL, {
+						this.props.isTabsDisabled.poll || this.props.onChange(p.Sb.POLL, {
 							govType: this.props.govType
 						})
 					}
@@ -21184,17 +21184,17 @@
 					}) : l && !c && (u = d.fbt._("Video", null, {
 						hk: "3w6DFr"
 					})), r.a.createElement(fl, null, r.a.createElement(hl, null, r.a.createElement(gl, {
-						active: o === p.Rb.POST,
+						active: o === p.Sb.POST,
 						disabled: t || n.post,
 						onClick: this.onPostTabClick
 					}, r.a.createElement(ce.a, {
 						name: "text_post",
-						isFilled: o === p.Rb.POST,
+						isFilled: o === p.Sb.POST,
 						className: bl.a.Icon
 					}), d.fbt._("Post", null, {
 						hk: "ozUj2"
 					})), r.a.createElement(gl, {
-						active: o === p.Rb.MEDIA,
+						active: o === p.Sb.MEDIA,
 						disabled: t || n.media,
 						onClick: this.onMediaTabClick
 					}, n.media && r.a.createElement(Ye.a, {
@@ -21203,25 +21203,25 @@
 						})
 					}), r.a.createElement(ce.a, {
 						name: "image_post",
-						isFilled: o === p.Rb.MEDIA,
+						isFilled: o === p.Sb.MEDIA,
 						className: bl.a.Icon
 					}), u), r.a.createElement(gl, {
-						active: o === p.Rb.LINK_ONLY,
+						active: o === p.Sb.LINK_ONLY,
 						disabled: t || n.link,
 						onClick: this.onLinkTabClick
 					}, r.a.createElement(ce.a, {
 						name: "link_post",
-						isFilled: o === p.Rb.LINK_ONLY,
+						isFilled: o === p.Sb.LINK_ONLY,
 						className: bl.a.Icon
 					}), d.fbt._("Link", null, {
 						hk: "1pbEKv"
 					})), r.a.createElement(gl, {
-						active: o === p.Rb.POLL,
+						active: o === p.Sb.POLL,
 						disabled: t || n.poll,
 						onClick: this.onPollTabClick
 					}, r.a.createElement(ce.a, {
 						name: "poll_post",
-						isFilled: o === p.Rb.POLL,
+						isFilled: o === p.Sb.POLL,
 						className: bl.a.Icon
 					}), d.fbt._("Poll", null, {
 						hk: "SQdo4"
@@ -21368,27 +21368,27 @@
 						rteBody: e,
 						submissionType: t
 					} = this.props;
-					return t === p.Rb.POST && e.isBound && Object(x.j)(e.editorState.getCurrentContent())
+					return t === p.Sb.POST && e.isBound && Object(x.j)(e.editorState.getCurrentContent())
 				}
 				renderActiveForm() {
 					switch (this.props.submissionType) {
-						case p.Rb.POST:
-						case p.Rb.POLL:
+						case p.Sb.POST:
+						case p.Sb.POLL:
 							return r.a.createElement(Nd, {
-								displayPollCreation: this.props.submissionType === p.Rb.POLL,
+								displayPollCreation: this.props.submissionType === p.Sb.POLL,
 								onChange: this.sendStartTypingInputBodyEvent,
 								onPostFieldValidation: this.onPostFieldValidation,
 								onSubmit: this.onSubmit
 							});
-						case p.Rb.MEDIA:
+						case p.Sb.MEDIA:
 							return r.a.createElement(Ja, null);
-						case p.Rb.LINK_ONLY:
+						case p.Sb.LINK_ONLY:
 							return r.a.createElement(Hr, {
 								onChange: this.sendStartTypingInputUrlEvent,
 								onKeyDown: this.handleKeyDown,
 								onPostFieldValidation: this.onPostFieldValidation
 							});
-						case p.Rb.CROSSPOST: {
+						case p.Sb.CROSSPOST: {
 							const {
 								sourcePostRoot: e
 							} = this.props;
@@ -21426,7 +21426,7 @@
 						submitMode: m,
 						subredditOrProfile: b
 					} = this.props;
-					if (u === p.Rb.CROSSPOST) {
+					if (u === p.Sb.CROSSPOST) {
 						if (!l) return r.a.createElement(C.b, {
 							message: d.fbt._("The original post cannot be found", null, {
 								hk: "3ieS5B"
@@ -21445,7 +21445,7 @@
 					}), r.a.createElement(po, {
 						includeUserProfile: n,
 						allowCrosspostableOnly: !!c
-					}), !!h && r.a.createElement(wl, null, h), r.a.createElement(kl, null, u !== p.Rb.CROSSPOST && r.a.createElement(El, null), r.a.createElement(Il, null, r.a.createElement(Fd, {
+					}), !!h && r.a.createElement(wl, null, h), r.a.createElement(kl, null, u !== p.Sb.CROSSPOST && r.a.createElement(El, null), r.a.createElement(Il, null, r.a.createElement(Fd, {
 						onChange: this.sendStartTypingInputTitleEvent,
 						onKeyDown: this.handleKeyDown,
 						onPostFieldValidation: this.onPostFieldValidation
@@ -23129,4 +23129,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1f9dbbcc44dbbb34ede7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5b05edacbbcc8ea2efe4.js.map

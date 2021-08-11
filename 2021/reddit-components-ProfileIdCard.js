@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3841204c3d6a8424e353.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.937449350e1747c76f16.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -24,7 +24,7 @@
 				shortMonths: s,
 				locale: a = n.B
 			} = {}) {
-				const o = new Date(e * n.Nb);
+				const o = new Date(e * n.Ob);
 				return new Intl.DateTimeFormat(a, {
 					month: s ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -269,7 +269,7 @@
 						type: e.type
 					} : {
 						id: Object(P.m)(d(), e.name),
-						name: `${s.dc}${e.name}`,
+						name: `${s.ec}${e.name}`,
 						type: e.type
 					});
 					if (!Object(j.J)(d())) return a(Object(c.k)({
@@ -783,7 +783,7 @@
 					const r = d(),
 						n = null != t ? t : r;
 					return s.a.createElement(s.a.Fragment, null, function(e, t = o.B) {
-						const r = e * o.Nb;
+						const r = e * o.Ob;
 						return new Date(r).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -808,7 +808,7 @@
 
 			function h(e, t, r, n = o.B) {
 				const s = Object(b.e)(e, t),
-					a = new Date(e * o.Nb);
+					a = new Date(e * o.Ob);
 				let i;
 				if (s === b.a.Live || r) return f.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -3023,4 +3023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3841204c3d6a8424e353.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.937449350e1747c76f16.js.map

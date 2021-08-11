@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.5070cb1e653c05979f5f.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.9ff39a44a06c0ca25674.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -4215,7 +4215,7 @@
 				be = s.n(pe);
 			const he = 10,
 				ge = Object(c.a)((e, t) => t.subredditName, e => Object(w.a)(e, l.U.TOP, {
-					t: l.bc.WEEK
+					t: l.cc.WEEK
 				})),
 				xe = Object(c.c)({
 					discoveryUnit: e => Object(me.c)(e, {
@@ -4293,7 +4293,7 @@
 					loadMorePosts: () => e(Object(j.r)({
 						sort: l.U.TOP,
 						subredditName: t,
-						t: l.bc.WEEK
+						t: l.cc.WEEK
 					}))
 				}))(Object(oe.c)(fe)),
 				Ee = s("./src/config.ts"),
@@ -6837,7 +6837,7 @@
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip
 					}, " - ", a.a.createElement(p.d, {
-						seconds: b.valueOf() / c.Nb
+						seconds: b.valueOf() / c.Ob
 					}), a.a.createElement(_, {
 						text: b.toString(),
 						isOpen: o,
@@ -7558,4 +7558,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.5070cb1e653c05979f5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.9ff39a44a06c0ca25674.js.map

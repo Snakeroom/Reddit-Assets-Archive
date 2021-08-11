@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a53f457893aa8d8462dc.js
-// Retrieved at 8/11/2021, 2:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c3e9f47ae88991bc784b.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -678,7 +678,7 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: m
 									},
-									range: h.bc.WEEK.toUpperCase(),
+									range: h.cc.WEEK.toUpperCase(),
 									sort: h.N.TOP,
 									subredditName: i.name
 								},
@@ -5740,7 +5740,7 @@
 					}, m.a.createElement(I.a, {
 						className: V.a.seeMorePostsText,
 						to: Object(h.a)(x, {
-							type: C.Vb.Posts
+							type: C.Wb.Posts
 						})
 					}, U._("See More Posts", null, {
 						hk: "3o0CqI"
@@ -6024,7 +6024,7 @@
 				}));
 			class J extends a.a.Component {
 				constructor() {
-					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(C.d) : null, this.onViewed = (e, t) => Object(E.f)(this.listingKey(), l.U.TOP, t, e, l.bc.WEEK), this.onFooterClick = e => {
+					super(...arguments), this.scrollContainer = () => this.props.isOverlay ? document.getElementById(C.d) : null, this.onViewed = (e, t) => Object(E.f)(this.listingKey(), l.U.TOP, t, e, l.cc.WEEK), this.onFooterClick = e => {
 						this.props.sendEvent(Object(P.c)("recommended_footer"))
 					}
 				}
@@ -6039,7 +6039,7 @@
 						subredditOrProfile: n
 					} = this.props;
 					return s ? t : e && o && o.id ? Object(W.a)(o.id) : Object(u.a)(n.name, l.U.TOP, {
-						t: l.bc.WEEK
+						t: l.cc.WEEK
 					})
 				}
 				renderSmallBanner() {
@@ -8374,4 +8374,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a53f457893aa8d8462dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c3e9f47ae88991bc784b.js.map

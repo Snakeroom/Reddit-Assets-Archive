@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.11f94c26883001272437.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.fd09e1fa339e08f432c8.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, n) {
@@ -324,7 +324,7 @@
 					title: E
 				} = e, N = n || u || p, x = Object(o.a)(m.a.menuButton, {
 					[m.a.isOpen]: c
-				}), O = Date.parse(f) / s.Nb;
+				}), O = Date.parse(f) / s.Ob;
 				return a.a.createElement("span", {
 					className: m.a.topBar
 				}, a.a.createElement("span", null, a.a.createElement("span", {
@@ -727,4 +727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.11f94c26883001272437.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.fd09e1fa339e08f432c8.js.map

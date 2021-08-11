@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.9cc4aa55fe4358c150aa.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.42a7c560ce1d199f25b8.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -1360,7 +1360,7 @@
 					o = n();
 					const S = Object(O.kb)(o),
 						y = Object(O.A)(o);
-					if (S === i.Rb.MEDIA && y) {
+					if (S === i.Sb.MEDIA && y) {
 						const e = Object(O.U)(o),
 							t = Object(b.v)(e),
 							s = Object(O.L)(o) && e.items.length > 1,
@@ -1699,7 +1699,7 @@
 					const O = {
 							crossposts_only: !0,
 							sort: "new",
-							sr: Object(c.h)(p) ? r.dc + p.name : p.name
+							sr: Object(c.h)(p) ? r.ec + p.name : p.name
 						},
 						f = await ((e, t, s) => Object(o.a)(e, {
 							data: s,
@@ -3087,4 +3087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.9cc4aa55fe4358c150aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.42a7c560ce1d199f25b8.js.map

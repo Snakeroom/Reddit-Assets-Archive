@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.84598be546ea33ae0afc.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d7dc332badb78fa431e9.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -586,7 +586,7 @@
 				[n.R]: () => o.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
 					hk: "1hw868"
 				}),
-				[n.hc]: () => o.fbt._("Video size must be less than {max file size}GB", [o.fbt._param("max file size", (n.db / n.fb / 1024).toFixed(1))], {
+				[n.ic]: () => o.fbt._("Video size must be less than {max file size}GB", [o.fbt._param("max file size", (n.db / n.fb / 1024).toFixed(1))], {
 					hk: "4FkABU"
 				})
 			}
@@ -812,7 +812,7 @@
 			})), r.d(t, "j", (function() {
 				return z
 			})), r.d(t, "e", (function() {
-				return K
+				return V
 			})), r.d(t, "d", (function() {
 				return Y
 			})), r.d(t, "g", (function() {
@@ -950,10 +950,10 @@
 							success: O.ok
 						}
 					})
-				}, G = Object(d.a)(A.l), W = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
+				}, W = Object(d.a)(A.l), G = Object(d.a)(A.k), q = Object(d.a)(A.j), z = e => async (t, r, {
 					apiContext: o
 				}) => {
-					t(G({
+					t(W({
 						subredditId: e
 					}));
 					const n = Object(g.T)(r(), {
@@ -963,7 +963,7 @@
 					if (i.ok) {
 						const o = r().structuredStyles.models[e],
 							n = o ? o.mobileKeyColor : null;
-						t(W({
+						t(G({
 							subredditId: e,
 							styles: {
 								mobileKeyColor: n
@@ -973,11 +973,11 @@
 						subredditId: e,
 						...i.error
 					}))
-				}, V = Object(d.a)(A.d), K = e => async (t, r, o) => {
+				}, K = Object(d.a)(A.d), V = e => async (t, r, o) => {
 					const n = r(),
 						i = n.structuredStyles.models[e] || {},
 						s = Object(L.V)(n);
-					t(V({
+					t(K({
 						isNightmodeOn: s,
 						styles: i,
 						subredditId: e
@@ -1097,7 +1097,7 @@
 					}) ? t(Object(p.i)(w.a.BLADE_UNSAVED_CHANGES)) : t(ne()))
 				}, se = e => async (t, r) => {
 					const o = r();
-					Object(N.i)(o) || t(Object(L.V)(o) ? Object(p.i)(w.a.BLADE_NIGHTMODE) : K(e))
+					Object(N.i)(o) || t(Object(L.V)(o) ? Object(p.i)(w.a.BLADE_NIGHTMODE) : V(e))
 				}, ce = Object(d.a)(A.i), ae = Object(d.a)(A.h), le = Object(d.a)(A.g), de = (e, t) => async (r, o, {
 					gqlContext: n,
 					apiContext: i
@@ -2364,7 +2364,7 @@
 			var o = r("./src/lib/constants/index.ts"),
 				n = r("./src/lib/listingSort/index.ts");
 			t.a = (e, t) => {
-				if (e) return Object(n.a)(e) ? t || o.cc : void 0
+				if (e) return Object(n.a)(e) ? t || o.dc : void 0
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts": function(e, t, r) {
@@ -2633,9 +2633,9 @@
 			})), r.d(t, "e", (function() {
 				return H
 			})), r.d(t, "f", (function() {
-				return G
-			})), r.d(t, "b", (function() {
 				return W
+			})), r.d(t, "b", (function() {
+				return G
 			})), r.d(t, "v", (function() {
 				return q
 			})), r.d(t, "g", (function() {
@@ -2904,14 +2904,14 @@
 						...B(e, t)
 					})
 				},
-				G = (e, t) => {
+				W = (e, t) => {
 					Object(u.a)({
 						noun: "draft_delete",
 						...m(e),
 						...M(e, t)
 					})
 				},
-				W = e => {
+				G = e => {
 					Object(u.a)({
 						...m(e),
 						noun: "social_connect_link",
@@ -3236,13 +3236,13 @@
 			})), r.d(t, "m", (function() {
 				return F
 			})), r.d(t, "t", (function() {
-				return W
+				return G
 			})), r.d(t, "w", (function() {
 				return q
 			})), r.d(t, "e", (function() {
 				return z
 			})), r.d(t, "d", (function() {
-				return K
+				return V
 			})), r.d(t, "u", (function() {
 				return J
 			})), r.d(t, "v", (function() {
@@ -3365,7 +3365,7 @@
 							break;
 						case i.Jb.SETTINGS: {
 							const n = e;
-							Object(y.a)(G(r, o)(t)), n.match.params.page === i.Wb.Profile && Object(u.k)(t);
+							Object(y.a)(W(r, o)(t)), n.match.params.page === i.Xb.Profile && Object(u.k)(t);
 							break
 						}
 						case i.Jb.POST_CREATION:
@@ -3383,7 +3383,7 @@
 							break
 						}
 						case i.Jb.SUBREDDIT_WIKI:
-							Object(y.a)(V(r, o)(t));
+							Object(y.a)(K(r, o)(t));
 							break;
 						case i.Jb.COINS:
 							Object(y.a)(A(r, o)(t)), Object(y.a)(B()(t));
@@ -3417,10 +3417,10 @@
 							}
 							break;
 						case i.Jb.PUBLIC_ACCESS_NETWORK:
-							_ && Object(y.a)(W()(t));
+							_ && Object(y.a)(G()(t));
 							break;
 						case i.Jb.GEOTAGGING:
-							_ && Object(y.a)(K()(t));
+							_ && Object(y.a)(V()(t));
 							break;
 						case i.Jb.SUBREDDIT_CREATION:
 							_ && Object(y.a)(q()(t));
@@ -3693,14 +3693,14 @@
 					...w(r),
 					timer: O.timer(e, t)
 				}),
-				G = (e, t) => r => ({
+				W = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...w(r),
 					timer: O.timer(e, t)
 				}),
-				W = () => e => ({
+				G = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3719,7 +3719,7 @@
 					noun: "screen",
 					...w(e)
 				}),
-				V = (e, t) => r => ({
+				K = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3730,7 +3730,7 @@
 					userSubreddit: O.userSubreddit(r),
 					adblock: O.adblock(r)
 				}),
-				K = () => e => ({
+				V = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3738,13 +3738,13 @@
 				}),
 				J = (e, t, r, o, n, s) => c => {
 					let a = !0;
-					if (t.type.indexOf(i.Vb.Posts) > -1) {
+					if (t.type.indexOf(i.Wb.Posts) > -1) {
 						const {
 							api: t
 						} = c.listings.listingOrder;
 						a = a && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(i.Vb.Subreddits) > -1 || t.type.indexOf(i.Vb.Users) > -1) {
+					if (t.type.indexOf(i.Wb.Subreddits) > -1 || t.type.indexOf(i.Wb.Users) > -1) {
 						const {
 							api: t
 						} = c.listings.postOrder;
@@ -3906,13 +3906,13 @@
 				}),
 				b = (e, t, r) => n => {
 					let i = !0;
-					if (t.type.indexOf(o.Vb.Posts) > -1) {
+					if (t.type.indexOf(o.Wb.Posts) > -1) {
 						const {
 							api: t
 						} = n.listings.listingOrder;
 						i = i && !t.error[e] && !t.pending[e]
 					}
-					if (t.type.indexOf(o.Vb.Subreddits) > -1 || t.type.indexOf(o.Vb.Users) > -1) {
+					if (t.type.indexOf(o.Wb.Subreddits) > -1 || t.type.indexOf(o.Wb.Users) > -1) {
 						const {
 							api: t
 						} = n.listings.postOrder;
@@ -4030,7 +4030,7 @@
 				S = (e, t) => r => ({
 					action: "click",
 					correlationId: Object(s.c)(s.a.SearchResults),
-					noun: e ? o.Ub.ToSubreddit : o.Ub.ToGlobal,
+					noun: e ? o.Vb.ToSubreddit : o.Vb.ToGlobal,
 					search: l.search(r, t),
 					source: d
 				}),
@@ -4490,4 +4490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.84598be546ea33ae0afc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d7dc332badb78fa431e9.js.map

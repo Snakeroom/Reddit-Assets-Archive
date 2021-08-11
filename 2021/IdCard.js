@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.c798eee110f9e1bff6ba.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.ee72f8c0a26712305820.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -366,7 +366,7 @@
 				shortMonths: r,
 				locale: i = s.B
 			} = {}) {
-				const o = new Date(e * s.Nb);
+				const o = new Date(e * s.Ob);
 				return new Intl.DateTimeFormat(i, {
 					month: r ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -716,7 +716,7 @@
 						type: e.type
 					} : {
 						id: Object(T.m)(d(), e.name),
-						name: `${r.dc}${e.name}`,
+						name: `${r.ec}${e.name}`,
 						type: e.type
 					});
 					if (!Object(S.J)(d())) return i(Object(c.k)({
@@ -1225,7 +1225,7 @@
 						})
 					}, r.a.createElement(m.a, {
 						onClick: this.onClick,
-						to: b(s, n, l.Tb.Relevance, l.bc.DAY),
+						to: b(s, n, l.Ub.Relevance, l.cc.DAY),
 						children: i
 					}))
 				}
@@ -2324,7 +2324,7 @@
 					const n = d(),
 						s = null != t ? t : n;
 					return r.a.createElement(r.a.Fragment, null, function(e, t = o.B) {
-						const n = e * o.Nb;
+						const n = e * o.Ob;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -2349,7 +2349,7 @@
 
 			function g(e, t, n, s = o.B) {
 				const r = Object(h.e)(e, t),
-					i = new Date(e * o.Nb);
+					i = new Date(e * o.Ob);
 				let a;
 				if (r === h.a.Live || n) return b.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -6234,4 +6234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.c798eee110f9e1bff6ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ee72f8c0a26712305820.js.map

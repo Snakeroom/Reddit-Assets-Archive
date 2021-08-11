@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.10453f63cf116887c120.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bee28b4e98dd81ef57d6.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -29,15 +29,15 @@
 			})), s.d(t, "d", (function() {
 				return Z
 			})), s.d(t, "a", (function() {
-				return G
-			})), s.d(t, "b", (function() {
 				return J
-			})), s.d(t, "n", (function() {
+			})), s.d(t, "b", (function() {
 				return q
+			})), s.d(t, "n", (function() {
+				return X
 			})), s.d(t, "c", (function() {
-				return W
-			})), s.d(t, "k", (function() {
 				return Y
+			})), s.d(t, "k", (function() {
+				return W
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./src/config.ts"),
@@ -215,9 +215,9 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && o(c, !0), Object(u.d)()
-				}, X = Object(d.a)(C.r), G = e => t => t(X({
+				}, G = Object(d.a)(C.r), J = e => t => t(G({
 					draftKey: e
-				})), J = Object(d.a)(C.a), q = Object(d.a)(C.E), W = Object(d.a)(C.b), Y = Object(d.a)(C.u)
+				})), q = Object(d.a)(C.a), X = Object(d.a)(C.E), Y = Object(d.a)(C.b), W = Object(d.a)(C.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -355,7 +355,7 @@
 						commentId: e
 					});
 					if (!i) return;
-					const m = s === n.Xb.Snoozed,
+					const m = s === n.Yb.Snoozed,
 						l = {
 							itemId: e,
 							reportText: t,
@@ -678,7 +678,7 @@
 			class S extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? i.Xb.None : i.Xb.Snoozed;
+						const e = this.props.isSnoozed ? i.Yb.None : i.Yb.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(j.l)(Object(O.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -1174,4 +1174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.10453f63cf116887c120.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.bee28b4e98dd81ef57d6.js.map

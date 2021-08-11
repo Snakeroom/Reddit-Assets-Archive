@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8c5df03572a65f57806c.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c8bb9ce8200024206964.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2051,13 +2051,13 @@
 						target: "_blank",
 						rel: "nofollow noopener noreferrer"
 					}, a.a.createElement(T.d, {
-						seconds: v.created / i.Nb
+						seconds: v.created / i.Ob
 					})), a.a.createElement(F, null, a.a.createElement(C.a, {
 						arrowProps: ve.arrowProps,
 						popperProps: ve.popperProps,
 						visible: ve.visible
 					}, a.a.createElement(T.b, {
-						seconds: v.created / i.Nb
+						seconds: v.created / i.Ob
 					})))))
 				}));
 			t.d = ue(Object(k.b)(Object(d.a)(pe)))
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8c5df03572a65f57806c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.c8bb9ce8200024206964.js.map

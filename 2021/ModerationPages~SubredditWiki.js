@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6c5d3d26c7dbc8d31f12.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d395681d5314db5bfdff.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, r) {
@@ -900,7 +900,7 @@
 						const {
 							pageName: t
 						} = e;
-						I = t === o.Zb.WikiContributors, O = t === o.Zb.WikiBanned
+						I = t === o.ac.WikiContributors, O = t === o.ac.WikiBanned
 					}
 					const E = a(),
 						T = (w || r) && !Qe(E, d),
@@ -4885,4 +4885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6c5d3d26c7dbc8d31f12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d395681d5314db5bfdff.js.map

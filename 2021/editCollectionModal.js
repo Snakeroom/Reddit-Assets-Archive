@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.090b85197d8c007988d3.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.66f62d6a7f549c570fcc.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -25,7 +25,7 @@
 				shortMonths: a,
 				locale: o = s.B
 			} = {}) {
-				const r = new Date(e * s.Nb);
+				const r = new Date(e * s.Ob);
 				return new Intl.DateTimeFormat(o, {
 					month: a ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -189,8 +189,8 @@
 				N = n("./src/reddit/components/EditCollectionModal/index.m.less"),
 				P = n.n(N);
 
-			function D() {
-				return (D = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -198,15 +198,15 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const T = 10,
-				O = ({
+			const D = 10,
+				T = ({
 					label: e,
 					...t
 				}) => r.a.createElement("div", {
 					className: P.a.fieldWrapper
 				}, r.a.createElement("label", {
 					className: P.a.Label
-				}, e), r.a.createElement(h.i, D({
+				}, e), r.a.createElement(h.i, O({
 					className: P.a.textArea,
 					disabled: !1
 				}, t)), r.a.createElement(u.a, {
@@ -266,7 +266,7 @@
 					displayLayout: i
 				}) => r.a.createElement("div", {
 					className: P.a.editCollectionWrapper
-				}, r.a.createElement(O, {
+				}, r.a.createElement(T, {
 					label: s.fbt._("Title", null, {
 						hk: "1cdKLH"
 					}),
@@ -277,7 +277,7 @@
 					maxLength: v.e,
 					rows: 1,
 					value: a
-				}), r.a.createElement(O, {
+				}), r.a.createElement(T, {
 					label: s.fbt._("Description", null, {
 						hk: "iNZtt"
 					}),
@@ -464,7 +464,7 @@
 						disabled: !c || e
 					}, e ? r.a.createElement(C.a, {
 						className: P.a.loadingIcon,
-						sizePx: T
+						sizePx: D
 					}) : s.fbt._("Save", null, {
 						hk: "26UTYg"
 					}))))
@@ -622,7 +622,7 @@
 					const n = l(),
 						s = null != t ? t : n;
 					return a.a.createElement(a.a.Fragment, null, function(e, t = r.B) {
-						const n = e * r.Nb;
+						const n = e * r.Ob;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -647,7 +647,7 @@
 
 			function g(e, t, n, s = r.B) {
 				const a = Object(x.e)(e, t),
-					o = new Date(e * r.Nb);
+					o = new Date(e * r.Ob);
 				let i;
 				if (a === x.a.Live || n) return h.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -1126,4 +1126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.090b85197d8c007988d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.66f62d6a7f549c570fcc.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InFeedChaining.e36423b8c5afc3e15b1b.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InFeedChaining.460d24f19ae3beafdb95.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InFeedChaining"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1873,7 +1873,7 @@
 					}, Object(j.b)(e.author, t)), i.a.createElement("span", {
 						className: P.a.timestamp
 					}, i.a.createElement(C.d, {
-						seconds: e.created / w.Nb
+						seconds: e.created / w.Ob
 					})))))
 				},
 				k = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
@@ -1905,7 +1905,7 @@
 					}, "•"), i.a.createElement("span", {
 						className: L.a.timestamp
 					}, i.a.createElement(C.d, {
-						seconds: e.created / w.Nb
+						seconds: e.created / w.Ob
 					})))))
 				},
 				D = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -4928,4 +4928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.e36423b8c5afc3e15b1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InFeedChaining.460d24f19ae3beafdb95.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.205746a80406a66630ab.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.3530591320fc726ef0ee.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -409,7 +409,7 @@
 					profileName: t.params.profileName
 				}), ee.J, (e, {
 					match: t
-				}) => Object(ee.e)(e, d.dc + t.params.profileName), (e, t, r, s, o, n, a, i) => {
+				}) => Object(ee.e)(e, d.ec + t.params.profileName), (e, t, r, s, o, n, a, i) => {
 					const {
 						sort: c,
 						t: d
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.205746a80406a66630ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3530591320fc726ef0ee.js.map

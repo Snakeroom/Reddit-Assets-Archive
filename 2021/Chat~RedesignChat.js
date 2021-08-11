@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5217fb1530e4fee27067.js
-// Retrieved at 8/10/2021, 10:50:15 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.717c040b8a0e0398981a.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1363,7 +1363,7 @@
 						subredditChannelCount: t || 0,
 						subredditMentionCount: n || 0
 					} : await p(o, r)) && !c()(o.messages.unread, i) && await s(m(i))
-				}, o.Nb, {
+				}, o.Ob, {
 					leading: !0
 				})
 		},
@@ -1566,7 +1566,7 @@
 					t(d(e)), (e => {
 						if (!o(e)) {
 							const t = [...Object(s.b)("chat.promo") || [], e];
-							Object(s.d)("chat.promo", t, a.kc)
+							Object(s.d)("chat.promo", t, a.lc)
 						}
 					})(e)
 				}, h = () => async e => {
@@ -1924,7 +1924,7 @@
 				i = "TOAST__UPDATE_TOAST",
 				l = Object(s.a)(i),
 				d = e => async (t, n) => {
-					setTimeout(() => t(o()), e * r.Nb)
+					setTimeout(() => t(o()), e * r.Ob)
 				}, u = (e = 3) => async (t, n) => {
 					t(l({
 						toast: a.a.SomethingWentWrong
@@ -5889,7 +5889,7 @@
 				constructor(e) {
 					super(e), this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = U()((e = "") => {
 						this.props.fetchSubredditChannelUsers(e)
-					}, ue.Nb, {
+					}, ue.Ob, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -9562,7 +9562,7 @@
 			let l, d;
 			const u = a()(e => {
 				Object(o.d)(l, e, 5 * i.ib)
-			}, 5 * i.Nb, {
+			}, 5 * i.Ob, {
 				leading: !1,
 				trailing: !0
 			});
@@ -12989,7 +12989,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(j.h)(t)), this.dispatch(Object(_.f)({
 							toast: S.a.ConnectionOpen
-						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Nb);
+						})), Object(i.setTimeout)(() => this.dispatch(Object(_.d)()), 3 * l.Ob);
 						this.dispatch(Object(E.t)(!0)), this.dispatch(Object(u.C)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -14358,4 +14358,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.5217fb1530e4fee27067.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.717c040b8a0e0398981a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9a1edbf5f9b2470de7dd.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.912b29d30987f3d2abb8.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~reddit-components-MediumPost"], {
 		"./src/lib/constants/specialMembership.ts": function(t, e, n) {
@@ -51,9 +51,9 @@
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
-			const o = [r.kc, r.nb, r.z, r.O, r.ib, r.Nb],
+			const o = [r.lc, r.nb, r.z, r.O, r.ib, r.Ob],
 				i = {
-					[r.Nb]: t => s.fbt._({
+					[r.Ob]: t => s.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [s.fbt._plural(t, "number")], {
@@ -83,7 +83,7 @@
 					}, [s.fbt._plural(t, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.kc]: t => s.fbt._({
+					[r.lc]: t => s.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [s.fbt._plural(t, "number")], {
@@ -91,7 +91,7 @@
 					})
 				},
 				c = {
-					[r.Nb]: t => s.fbt._("{amount}s", [s.fbt._param("amount", String(t))], {
+					[r.Ob]: t => s.fbt._("{amount}s", [s.fbt._param("amount", String(t))], {
 						hk: "F4qog"
 					}),
 					[r.ib]: t => s.fbt._("{amount}m", [s.fbt._param("amount", String(t))], {
@@ -106,13 +106,13 @@
 					[r.nb]: t => s.fbt._("{amount}m", [s.fbt._param("amount", String(t))], {
 						hk: "28feBj"
 					}),
-					[r.kc]: t => s.fbt._("{amount}y", [s.fbt._param("amount", String(t))], {
+					[r.lc]: t => s.fbt._("{amount}y", [s.fbt._param("amount", String(t))], {
 						hk: "10bv8G"
 					}),
 					[r.nb]: t => s.fbt._("{amount}m", [s.fbt._param("amount", String(t))], {
 						hk: "28feBj"
 					}),
-					[r.kc]: t => s.fbt._("{amount}y", [s.fbt._param("amount", String(t))], {
+					[r.lc]: t => s.fbt._("{amount}y", [s.fbt._param("amount", String(t))], {
 						hk: "10bv8G"
 					})
 				};
@@ -121,12 +121,12 @@
 				const d = Date.now(),
 					a = new Date(t).getTime(),
 					u = {
-						[r.kc]: "",
+						[r.lc]: "",
 						[r.nb]: "",
 						[r.z]: "",
 						[r.O]: "",
 						[r.ib]: "",
-						[r.Nb]: ""
+						[r.Ob]: ""
 					};
 				let l = a - d;
 				if (l <= 0) return s.fbt._("a moment", null, {
@@ -358,7 +358,7 @@
 						key: y
 					});
 					0 !== g.length ? (await s((t => async (e, n) => {
-						const s = o.bc.DAY.toUpperCase(),
+						const s = o.cc.DAY.toUpperCase(),
 							r = t.filter(t => {
 								const e = Object(c.a)(t, o.U.TOP, {
 										t: s
@@ -1369,7 +1369,7 @@
 				return c.a.createElement("span", {
 					className: t.className
 				}, e ? d._("Voting closed {timeAgo}", [d._param("timeAgo", c.a.createElement(r.d, {
-					seconds: t.poll.endsAt / s.Nb
+					seconds: t.poll.endsAt / s.Ob
 				}))], {
 					hk: "3OERID"
 				}) : Object(o.a)(new Date(t.poll.endsAt)))
@@ -2987,7 +2987,7 @@
 				f = (t, {
 					subredditName: e
 				}) => {
-					const n = r.bc.DAY.toUpperCase(),
+					const n = r.cc.DAY.toUpperCase(),
 						s = Object(o.a)(e, r.U.TOP, {
 							t: n
 						}),
@@ -3056,4 +3056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.9a1edbf5f9b2470de7dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~reddit-components-MediumPost.912b29d30987f3d2abb8.js.map

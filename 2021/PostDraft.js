@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.a3a499f29da6ad7363ec.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.df4ce3fbbab582980120.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1529,7 +1529,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, o = n === d.Rb.CROSSPOST;
+				} = e, o = n === d.Sb.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(x, null, r.a.createElement(h, null), o ? s.fbt._("Crossposting to Reddit", null, {
@@ -3287,7 +3287,7 @@
 					}, t.title), o.a.createElement("div", {
 						className: v.a.metaLine
 					}, O._("Posted · {timeAgo}", [O._param("timeAgo", o.a.createElement(g.d, {
-						seconds: t.created / E.Nb
+						seconds: t.created / E.Ob
 					}))], {
 						hk: "ZVJpV"
 					}))), o.a.createElement(y.a, {
@@ -4019,12 +4019,12 @@
 				y = e => {
 					return {
 						postScheduled: !!e,
-						submitScheduledTime: e && e.submitTime === d.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / o.Nb : void 0
+						submitScheduledTime: e && e.submitTime === d.i.AtEventTime ? Object(i.f)(e.startDate).getTime() / o.Ob : void 0
 					}
 				},
 				C = e => {
-					const t = Object(i.f)(e.startDate).getTime() / o.Nb,
-						n = Object(i.f)(e.endDate).getTime() / o.Nb;
+					const t = Object(i.f)(e.startDate).getTime() / o.Ob,
+						n = Object(i.f)(e.endDate).getTime() / o.Ob;
 					return {
 						eventStartTimestamp: t,
 						eventEndTimestamp: n,
@@ -4633,7 +4633,7 @@
 					return t ? o.a.createElement(o.a.Fragment, null, o.a.createElement(P, null, o.a.createElement(M, null, T._("Review draft", null, {
 						hk: "tclLq"
 					}))), o.a.createElement(L, null, n && o.a.createElement(N, null, T._("Draft last updated by {username} {timeDiff}", [T._param("username", `u/${n.name}`), T._param("timeDiff", o.a.createElement(I.d, {
-						seconds: (t.modified || t.created) / a.Nb
+						seconds: (t.modified || t.created) / a.Ob
 					}))], {
 						hk: "3QCJvU"
 					})), o.a.createElement(R, null, t.title), o.a.createElement(g, {
@@ -4727,4 +4727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a3a499f29da6ad7363ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.df4ce3fbbab582980120.js.map

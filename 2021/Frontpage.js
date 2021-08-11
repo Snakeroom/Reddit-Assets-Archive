@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c8e8e33e2652b477df0c.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.7dc38c16ea60f534114d.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -632,7 +632,7 @@
 						u = r.listings.postOrder.api.error[c],
 						m = r.listings.postOrder.api.pending[c],
 						p = D.x in e.queryParams && e.queryParams[D.x].toUpperCase() || "",
-						b = p in d.bc && d.bc[p];
+						b = p in d.cc && d.cc[p];
 					if (m || l && !u && !t) return void(l && (n(A.l({
 						title: P.c()
 					})), r.sidebarPromotedPosts.firstFetch || window.addEventListener("load", () => {
@@ -685,7 +685,7 @@
 						u = Object(K.a)(L.a, c, l),
 						m = r.listings.postOrder.loadMore[u],
 						p = l[D.x] ? l[D.x].toUpperCase() : "",
-						b = p in d.bc && d.bc[p];
+						b = p in d.cc && d.cc[p];
 					if (m) {
 						const e = r.listings.postOrder.api.pending[u],
 							n = r.listings.postOrder.fetchedTokens,
@@ -742,7 +742,7 @@
 						i = s.platform.currentPage ? s.platform.currentPage.queryParams : {},
 						a = Object(K.a)(L.a, o, i),
 						c = i[D.x] ? i[D.x].toUpperCase() : "",
-						l = c in d.bc && d.bc[c],
+						l = c in d.cc && d.cc[c],
 						u = Object(B.a)(s),
 						m = Object(B.b)(u);
 					await t(oe(a, {
@@ -4345,7 +4345,7 @@
 				sort: n
 			}, s, r, o, i, a) => {
 				const c = T.x in t && t[T.x].toUpperCase(),
-					d = "string" == typeof c && c in H.bc ? H.bc[c] : H.cc,
+					d = "string" == typeof c && c in H.cc ? H.cc[c] : H.dc,
 					l = Object(p.a)(J.a, n, t),
 					u = e,
 					m = [];
@@ -4880,4 +4880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c8e8e33e2652b477df0c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.7dc38c16ea60f534114d.js.map

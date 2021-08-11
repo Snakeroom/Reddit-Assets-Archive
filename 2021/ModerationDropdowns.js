@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.0b2a8267d31914531775.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.bc6dcdbd5c3577fe028b.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -66,9 +66,9 @@
 			})), n.d(t, "b", (function() {
 				return Z
 			})), n.d(t, "n", (function() {
-				return X
-			})), n.d(t, "c", (function() {
 				return $
+			})), n.d(t, "c", (function() {
+				return X
 			})), n.d(t, "k", (function() {
 				return Y
 			}));
@@ -250,7 +250,7 @@
 					})), 0 === n && o(a, !0), Object(p.d)()
 				}, q = Object(i.a)(I.r), J = e => t => t(q({
 					draftKey: e
-				})), Z = Object(i.a)(I.a), X = Object(i.a)(I.E), $ = Object(i.a)(I.b), Y = Object(i.a)(I.u)
+				})), Z = Object(i.a)(I.a), $ = Object(i.a)(I.E), X = Object(i.a)(I.b), Y = Object(i.a)(I.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, n) {
 			"use strict";
@@ -388,7 +388,7 @@
 						commentId: e
 					});
 					if (!c) return;
-					const l = n === s.Xb.Snoozed,
+					const l = n === s.Yb.Snoozed,
 						u = {
 							itemId: e,
 							reportText: t,
@@ -1682,10 +1682,10 @@
 						q = Object(w.b)(A),
 						J = !(!A.approvedBy || !q),
 						Z = a ? void 0 : l,
-						X = Object(P.a)(A),
-						$ = u ? L : D;
+						$ = Object(P.a)(A),
+						X = u ? L : D;
 					return s.a.createElement(S.g, null, n && s.a.createElement(s.a.Fragment, null, !A.isSponsored && s.a.createElement(s.a.Fragment, null, s.a.createElement(S.e, {
-						className: $(_.a.Approve, Z),
+						className: X(_.a.Approve, Z),
 						displayText: J ? C.fbt._("reapprove", null, {
 							hk: "ZucfK"
 						}) : A.approvedBy ? C.fbt._("approved", null, {
@@ -1695,7 +1695,7 @@
 						}),
 						onClick: p
 					}, s.a.createElement(S.a, null)), s.a.createElement(S.e, {
-						className: $(_.a.Remove, Z),
+						className: X(_.a.Remove, Z),
 						displayText: A.isRemoved ? C.fbt._("removed", null, {
 							hk: "cSGLt"
 						}) : C.fbt._("remove", null, {
@@ -1703,7 +1703,7 @@
 						}),
 						onClick: k
 					}, s.a.createElement(S.i, null)), s.a.createElement(S.e, {
-						className: $(_.a.Spam, Z),
+						className: X(_.a.Spam, Z),
 						displayText: A.isSpam ? C.fbt._("Removed as spam", null, {
 							hk: "2olZT7"
 						}) : C.fbt._("Remove as spam", null, {
@@ -1711,7 +1711,7 @@
 						}),
 						onClick: T
 					}, s.a.createElement(S.j, null))), e && s.a.createElement(S.e, {
-						className: $(_.a.Flair, Z),
+						className: X(_.a.Flair, Z),
 						displayText: H ? C.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : C.fbt._("Add post flair", null, {
@@ -1758,7 +1758,7 @@
 						text: C.fbt._("Lock comments", null, {
 							hk: "YAV8n"
 						})
-					}), !X && s.a.createElement(I.a, {
+					}), !$ && s.a.createElement(I.a, {
 						isSelected: A.isOriginalContent,
 						onClick: v,
 						text: C.fbt._("Mark as OC", null, {
@@ -1991,7 +1991,7 @@
 			class y extends s.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.Xb.None : c.Xb.Snoozed;
+						const e = this.props.isSnoozed ? c.Yb.None : c.Yb.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(x.l)(Object(h.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -3218,4 +3218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.0b2a8267d31914531775.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.bc6dcdbd5c3577fe028b.js.map

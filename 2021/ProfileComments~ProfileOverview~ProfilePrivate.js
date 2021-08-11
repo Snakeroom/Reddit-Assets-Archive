@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.6ae7226805c2e856ac01.js
-// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.27957876815525ffa691.js
+// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1308,7 +1308,7 @@
 					flair: n,
 					renderedInOverlay: !1
 				}), o.a.createElement("div", null, !t.isDeleted && o.a.createElement(De, null, r ? l() : o.a.createElement(g, {
-					height: d.Pb,
+					height: d.Qb,
 					isExpanded: r
 				}, l)), !t.isDeleted && i && o.a.createElement(Ne, {
 					comment: t,
@@ -1371,10 +1371,10 @@
 			var f = ({
 				className: e,
 				profileName: t,
-				timeSort: s = i.bc.ALL
+				timeSort: s = i.cc.ALL
 			}) => r.a.createElement(b, {
 				className: e
-			}, s === i.bc.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${t}`)], {
+			}, s === i.cc.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "1MHn3t"
 			}) : n.fbt._("hmm... {profileName} hasn't commented recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "qN3uL"
@@ -1382,10 +1382,10 @@
 			var x = ({
 				className: e,
 				profileName: t,
-				timeSort: s = i.bc.ALL
+				timeSort: s = i.cc.ALL
 			}) => r.a.createElement(b, {
 				className: e
-			}, s === i.bc.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${t}`)], {
+			}, s === i.cc.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "28vBEd"
 			}) : n.fbt._("hmm... {profileName} hasn't posted recently", [n.fbt._param("profileName", `u/${t}`)], {
 				hk: "38GhqN"
@@ -2487,7 +2487,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Ob
+				minimizedLength: d.Pb
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less": function(e, t, s) {
@@ -3152,4 +3152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.6ae7226805c2e856ac01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.27957876815525ffa691.js.map
