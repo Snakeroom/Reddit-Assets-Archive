@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.fb38e88a268c4394aaaf.js
-// Retrieved at 8/11/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.f85a093032f1c530f7be.js
+// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1280,7 +1280,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(B.tb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(B.qb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = a ? n.fbt._("Followed! You’ll receive updates when there’s new activity", null, {
 								hk: "1Dp5UH"
 							}) : n.fbt._("Unfollowed, You’ll no longer recieve updates on this comment", null, {
@@ -1779,7 +1779,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.qb)(s + 1)
+					})), Object(i.nb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -2663,7 +2663,7 @@
 					} = e, u = l ? Object(W.k)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l) : 0, m = d && u < V && s && 0 === c.length, [p, h] = Object(r.useState)(m), b = Object(i.d)();
 					Object(r.useEffect)(() => {
 						p && l && setTimeout(() => {
-							Object(W.S)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(z.f)({
+							Object(W.R)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(z.f)({
 								tooltipId: J
 							}))
 						}, X)
@@ -4875,4 +4875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.fb38e88a268c4394aaaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f85a093032f1c530f7be.js.map

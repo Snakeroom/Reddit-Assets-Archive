@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.afe6419fba059c414ff5.js
-// Retrieved at 8/11/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.962427f5cdfd8447de02.js
+// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4471,7 +4471,7 @@
 			const y = "INCREMENT_SEEN_COUNT_PER_SESS",
 				m = (e, t, r) => async (n, c) => {
 					const d = c(),
-						p = Object(i.z)(),
+						p = Object(i.y)(),
 						y = Date.now(),
 						m = p && y - p < 18e4,
 						_ = Object(b.c)(d, {
@@ -4479,7 +4479,7 @@
 						}),
 						I = d.upvotePromptCountPerSess,
 						g = (() => {
-							const e = Object(i.y)();
+							const e = Object(i.x)();
 							if (!e) return [];
 							const t = Date.now();
 							return e.filter(e => t - e < 864e5)
@@ -4508,7 +4508,7 @@
 						action: "view",
 						noun: l,
 						...Object(u.defaults)(e)
-					}))(d)), Object(i.Cb)(), Object(i.Bb)(v), n(O()), r && r()
+					}))(d)), Object(i.zb)(), Object(i.yb)(v), n(O()), r && r()
 				}, h = e => async (t, r) => {
 					Object(f.a)((e => ({
 						source: l,
@@ -6802,7 +6802,7 @@
 			function o(e, t) {
 				const r = Object(s.useRef)(null);
 				let n;
-				n = Object(a.A)(e);
+				n = Object(a.z)(e);
 				const [o, d] = Object(s.useState)(null != n ? n : t);
 				return Object(s.useEffect)(() => (r.current = c(e, d, t), () => {
 					var e;
@@ -6811,7 +6811,7 @@
 					var e;
 					null === (e = r.current) || void 0 === e || e.emit(o)
 				}, [o]), [o, function(t) {
-					Object(a.Db)(e, t), d(t)
+					Object(a.Ab)(e, t), d(t)
 				}]
 			}
 		},
@@ -23668,4 +23668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.afe6419fba059c414ff5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.962427f5cdfd8447de02.js.map

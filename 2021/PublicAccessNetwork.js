@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3036ce3eb40f7da9e840.js
-// Retrieved at 8/11/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.734f4a979b2214b65937.js
+// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4156,7 +4156,7 @@
 					toggleModal: e
 				}) => {
 					const t = () => {
-						q.Pb(), e()
+						q.Mb(), e()
 					};
 					return n.a.createElement(K.e, null, n.a.createElement(Z, null, n.a.createElement(J.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: Y.a.Title
@@ -6515,12 +6515,12 @@
 					this.props.sendEvent(Object(Ve.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					q.pb(), this.setState({
+					q.mb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ve.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					q.pb(), this.setState({
+					q.mb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(Ve.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -6528,7 +6528,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(Ve.n)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					q.W() || this.props.toggleIntroChatModal()
+					q.V() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(Ve.q)(this.props.currentStream, this.playbackStats))
@@ -7100,4 +7100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.3036ce3eb40f7da9e840.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.734f4a979b2214b65937.js.map

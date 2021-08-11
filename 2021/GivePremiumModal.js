@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.407ab96874ccd3c44ed5.js
-// Retrieved at 8/11/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.20a9df0b007656bef196.js
+// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -68,8 +68,8 @@
 				f = n("./src/reddit/actions/toaster.ts"),
 				k = n("./src/lib/makeApiRequest/index.ts"),
 				g = n("./src/lib/omitHeaders/index.ts"),
-				v = n("./src/reddit/constants/headers.ts"),
-				E = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+				E = n("./src/reddit/constants/headers.ts"),
+				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var C = async (e, t, n, s, o, a) => {
 				const c = {
 					recipient: n,
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: a
 				};
-				return Object(k.a)(Object(g.a)(e, [v.a]), {
+				return Object(k.a)(Object(g.a)(e, [E.a]), {
 					method: x.hb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
@@ -86,7 +86,7 @@
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(E.a)(e)
+					error: Object(v.a)(e)
 				})
 			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), y = n("./src/reddit/selectors/premium.ts"), w = n("./src/reddit/actions/gold/constants.ts");
 			Object(b.a)(w.y), Object(b.a)(w.A), Object(b.a)(w.z), Object(b.a)(w.C);
@@ -253,7 +253,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.vb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.sb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -847,4 +847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.407ab96874ccd3c44ed5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.20a9df0b007656bef196.js.map

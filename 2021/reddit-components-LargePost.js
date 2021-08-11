@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b44a5af31eb07ea16a3f.js
-// Retrieved at 8/11/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3b0fe761ea59b980b24e.js
+// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -875,7 +875,7 @@
 				g = Object(i.a)(O),
 				x = e => {
 					const t = Date.now() - e,
-						s = Object(b.H)();
+						s = Object(b.G)();
 					return Object.keys(s).filter(e => s[e].when >= t).map(e => s[e])
 				},
 				S = ({
@@ -892,12 +892,12 @@
 						S = e === O;
 					if (!(e === p.f || e === p.b || S)) return;
 					if (S) return void C(_, t, s)(n, i, u);
-					0 === x(o.nb).length && Object(b.Jb)(!1);
+					0 === x(o.nb).length && Object(b.Gb)(!1);
 					let y = i();
 					if (Object(h.d)(y, {
 							listingKey: t,
 							postId: s
-						}) || Object(h.a)(y).length >= m.a || Object(b.V)() || x(o.z).length >= m.a) return;
+						}) || Object(h.a)(y).length >= m.a || Object(b.U)() || x(o.z).length >= m.a) return;
 					const I = Object(v.w)(y, {
 						listingKey: t,
 						postId: s
@@ -947,14 +947,14 @@
 						postId: s
 					})))) : Object(r.a)(Object(f.c)(j, "no_chaining", _)(y))
 				}, y = "FEED_CHAINING__CHAIN_TOGGLED", I = (Object(i.a)(y), "FEED_CHAINING__CHAINING_TOGGLED"), j = Object(i.a)(I), T = () => async e => {
-					Object(b.Jb)(!0), e(j({
+					Object(b.Gb)(!0), e(j({
 						isDismissed: !0
 					})), e(Object(u.f)(Object(u.e)(n.fbt._("You'll see this less often.", null, {
 						hk: "38LGcQ"
 					}), _.b.Undo, n.fbt._("Undo", null, {
 						hk: "4zFGDk"
 					}), async () => {
-						Object(b.Jb)(!1), e(j({
+						Object(b.Gb)(!1), e(j({
 							isDismissed: !1
 						}))
 					})))
@@ -8422,4 +8422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b44a5af31eb07ea16a3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3b0fe761ea59b980b24e.js.map
