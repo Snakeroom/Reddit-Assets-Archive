@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7aa5d44b761dee7a312b.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.57dd15e5e619bb7b0418.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./src/reddit/actions/goldPurchaseModals/payment.ts": function(e, t, n) {
@@ -290,8 +290,8 @@
 				fbt: B
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = Object(o.c)({
 				currentUser: y.j,
-				isAnonymous: x.c,
-				powerupsCount: x.d,
+				isAnonymous: x.d,
+				powerupsCount: x.e,
 				productOffer: _.b
 			});
 			var T = Object(a.b)(I)(s.a.memo((function(e) {
@@ -355,9 +355,9 @@
 				className: e,
 				subredditId: t
 			}) => {
-				const n = Object(a.e)(x.c),
-					r = Object(a.e)(x.b),
-					o = Object(a.e)(x.d),
+				const n = Object(a.e)(x.d),
+					r = Object(a.e)(x.c),
+					o = Object(a.e)(x.e),
 					c = Object(a.d)();
 				return s.a.createElement(A.q, {
 					priority: A.b.Primary,
@@ -481,8 +481,8 @@
 			const {
 				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ee = Object(o.c)({
-				isAnonymous: x.c,
-				powerupsCount: x.d,
+				isAnonymous: x.d,
+				powerupsCount: x.e,
 				productOffer: _.b,
 				savedCardsPending: v.w,
 				stripeTokenPending: v.m
@@ -516,14 +516,14 @@
 			const {
 				fbt: ae
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), oe = 100, ce = Object(o.c)({
-				isAnonymous: x.c,
+				isAnonymous: x.d,
 				isNightMode: y.V,
 				paypalErrorMessage: v.d,
-				powerups: x.i,
-				powerupsCount: x.d,
+				powerups: x.j,
+				powerupsCount: x.e,
 				powerupPrice: _.a,
 				stripeErrorMessage: v.j,
-				userPowerupsData: x.v
+				userPowerupsData: x.w
 			});
 			var le = Object(a.b)(ce)((function(e) {
 					const {
@@ -543,7 +543,7 @@
 					}, []);
 					const y = Object(h.a)();
 					Object(r.useEffect)(() => {
-						y(Object(w.g)())
+						y(Object(w.i)())
 					}, []);
 					const L = Object(k.a)();
 					if (!d || !l) return o(), null;
@@ -890,4 +890,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7aa5d44b761dee7a312b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.57dd15e5e619bb7b0418.js.map

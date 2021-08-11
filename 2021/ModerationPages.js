@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.9cb44bba887a61acde9f.js
-// Retrieved at 8/11/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.0585f46dcc0aec9b704f.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -2967,7 +2967,7 @@
 					renderedInOverlay: p,
 					subredditDisplayText: h,
 					renderContractorBadge: w
-				} = e, I = Object(k.a)(), j = i.subredditId, T = Object(r.e)(e => Object(S.f)(e, {
+				} = e, I = Object(k.a)(), j = i.subredditId, T = Object(r.e)(e => Object(S.g)(e, {
 					subredditId: j
 				}) && Object(O.g)(e));
 				if (i.isDeleted) return o.a.createElement("div", {
@@ -5102,7 +5102,7 @@
 				hasSecondaryTags: I.p,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
 				isWelcomeMessageExperimentEnabledSelector: _.a,
-				subredditHasPowerups: (e, t) => Object(k.f)(e, {
+				subredditHasPowerups: (e, t) => Object(k.g)(e, {
 					subredditId: t.subredditId
 				}),
 				powerupsBenefitSettings: (e, t) => Object(y.a)(e, {
@@ -13313,7 +13313,7 @@
 					[r, l] = Object(n.useState)(null),
 					c = () => l(null),
 					[m, k] = Object(n.useState)(!1),
-					O = Object(o.e)(t => Object(_.g)(t, {
+					O = Object(o.e)(t => Object(_.h)(t, {
 						subredditId: e
 					})),
 					{
@@ -13336,7 +13336,7 @@
 					}, e => {
 						s(Object(E.a)(e, "mod_tools"))
 					}, e => {
-						s(Object(E.q)(e, "mod_tools")), t(Object(h.f)({
+						s(Object(E.s)(e, "mod_tools")), t(Object(h.f)({
 							duration: h.a,
 							kind: C.b.SuccessCommunity,
 							text: i.fbt._({
@@ -13404,7 +13404,7 @@
 							k(!0), await t(Object(p.a)({
 								subredditId: e,
 								emojiId: r.id
-							})), c(), s(Object(E.b)(1, "mod_tools")), t(Object(h.f)({
+							})), c(), s(Object(E.d)(1, "mod_tools")), t(Object(h.f)({
 								duration: h.a,
 								kind: C.b.SuccessCommunity,
 								text: i.fbt._("Emoji removed.", null, {
@@ -13435,7 +13435,7 @@
 			}) => {
 				const t = Object(o.d)(),
 					s = Object(d.a)(),
-					n = Object(o.e)(t => Object(_.f)(t, {
+					n = Object(o.e)(t => Object(_.g)(t, {
 						subredditId: e
 					})),
 					u = Object(o.e)(t => Object(T.T)(t, {
@@ -13458,7 +13458,7 @@
 				})), a.a.createElement(w.o, {
 					on: h,
 					onClick: () => (n => {
-						s(Object(E.u)("comments_with_gifs", n, !n)), t(Object(l.m)(e, {
+						s(Object(E.w)("comments_with_gifs", n, !n)), t(Object(l.m)(e, {
 							[I.a.CommentsWithGifs]: n
 						}))
 					})(!h),
@@ -21495,7 +21495,7 @@
 				}),
 				isPowerupsTabVisible: (e, {
 					subreddit: t
-				}) => Object($.f)(e, {
+				}) => Object($.g)(e, {
 					subredditId: t.id
 				}) && Object(J.j)(e)
 			});
@@ -22887,4 +22887,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9cb44bba887a61acde9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0585f46dcc0aec9b704f.js.map

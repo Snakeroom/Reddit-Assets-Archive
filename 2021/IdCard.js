@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.4e387cbde32e26d2edf8.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.c798eee110f9e1bff6ba.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3077,7 +3077,7 @@
 				fbt: at
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ct = z.a.div("FlairSettingsContainer", ot.a), dt = z.a.div("FlairPreviewWrapper", ot.a), lt = z.a.div("PreviewTitle", ot.a), ut = z.a.wrapped(Xe.b, "FlairComponent", ot.a), mt = z.a.wrapped(j.o, "TertiaryButton", ot.a), pt = z.a.wrapped(mt, "IconButton", ot.a), bt = z.a.span("Username", ot.a), ht = Object(Qe.a)("spBadges", Ye.a), ft = Object(u.c)({
 				currentUser: w.j,
-				isAchievementFlairModalEnabled: (e, t) => Object(nt.f)(e, {
+				isAchievementFlairModalEnabled: (e, t) => Object(nt.g)(e, {
 					subredditId: t.subredditId
 				}) && Object(tt.g)(e),
 				userFlairData: st.c,
@@ -3157,7 +3157,7 @@
 					canChangeUserFlair: st.b,
 					stylesDisabledForSubreddit: w.ib,
 					stylesDisabledGlobally: w.jb,
-					canChangeAchievementFlair: (e, t) => Object(nt.f)(e, {
+					canChangeAchievementFlair: (e, t) => Object(nt.g)(e, {
 						subredditId: t.subredditId
 					}) && Object(tt.g)(e)
 				});
@@ -6234,4 +6234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.4e387cbde32e26d2edf8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.c798eee110f9e1bff6ba.js.map

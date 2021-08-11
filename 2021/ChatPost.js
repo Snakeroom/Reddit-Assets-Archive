@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.6694ada3585608803702.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.cc55f4149c0d38caff6e.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -606,7 +606,7 @@
 					renderedInOverlay: p,
 					subredditDisplayText: h,
 					renderContractorBadge: O
-				} = e, N = Object(k.a)(), M = i.subredditId, j = Object(r.e)(e => Object(T.f)(e, {
+				} = e, N = Object(k.a)(), M = i.subredditId, j = Object(r.e)(e => Object(T.g)(e, {
 					subredditId: M
 				}) && Object(y.g)(e));
 				if (i.isDeleted) return a.a.createElement("div", {
@@ -3532,4 +3532,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6694ada3585608803702.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.cc55f4149c0d38caff6e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f297808e9a0131344d5a.js
-// Retrieved at 8/11/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.cce929e851d10a4dbe7d.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2163,7 +2163,7 @@
 					if (!e) return;
 					const o = s(),
 						r = Object(v.j)(o);
-					if (!r || !Object(f.f)(o, {
+					if (!r || !Object(f.g)(o, {
 							subredditId: e
 						}) || !Object(l.g)(o)) return;
 					const a = !!Object(g.c)(o, {
@@ -2177,7 +2177,7 @@
 						fullData: !0
 					}));
 					const s = n();
-					return Object(f.f)(s, {
+					return Object(f.g)(s, {
 						subredditId: e
 					}) && Object(l.g)(s)
 				}, k = e => async (t, n) => {
@@ -19568,4 +19568,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f297808e9a0131344d5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cce929e851d10a4dbe7d.js.map

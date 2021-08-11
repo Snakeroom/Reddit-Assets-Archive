@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b686eec20236bc03c7c6.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0c41c9244f7ae8906e49.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -727,7 +727,7 @@
 				className: e,
 				onClick: t
 			}) => {
-				const n = Object(i.e)(d.s),
+				const n = Object(i.e)(d.t),
 					r = Object(i.e)(o.h);
 				return s.a.createElement(a.q, {
 					priority: a.b.Primary,
@@ -875,7 +875,7 @@
 					className: b.a.user,
 					to: `/user/${x}/`,
 					onClick: () => {
-						f && r(Object(l.w)(f.id, f.displayName))
+						f && r(Object(l.y)(f.id, f.displayName))
 					}
 				}, O) : s.a.createElement("div", {
 					className: b.a.user
@@ -1118,16 +1118,16 @@
 				const n = Object(a.d)(),
 					v = Object(b.a)(),
 					w = Object(a.e)(x.j),
-					j = Object(a.e)(e => Object(g.i)(e, {
+					j = Object(a.e)(e => Object(g.j)(e, {
 						subredditId: t
 					})),
 					O = Object(a.e)(e => Object(f.T)(e, {
 						subredditId: t
 					})),
-					E = Object(a.e)(e => Object(g.l)(e, {
+					E = Object(a.e)(e => Object(g.m)(e, {
 						subredditId: t
 					})),
-					I = Object(a.e)(e => !!Object(g.j)(e, {
+					I = Object(a.e)(e => !!Object(g.k)(e, {
 						subredditId: t
 					})),
 					N = Object(a.e)(h.h);
@@ -1160,7 +1160,7 @@
 				}))()), i.a.createElement(c.a, {
 					className: k.a.button,
 					onClick: () => {
-						v(Object(p.p)()), n(Object(d.f)("powerups_sidebar"))
+						v(Object(p.r)()), n(Object(d.f)("powerups_sidebar"))
 					}
 				})), i.a.createElement("div", {
 					className: k.a.group
@@ -1178,7 +1178,7 @@
 					className: k.a.heroes,
 					maxSupporters: 8,
 					onShowFullSupportersList: () => {
-						v(Object(p.r)()), n(Object(d.h)(t))
+						v(Object(p.t)()), n(Object(d.h)(t))
 					},
 					isAltruismMessagingEnabled: N
 				}), !(null == E ? void 0 : E.length) && i.a.createElement("div", {
@@ -3328,4 +3328,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b686eec20236bc03c7c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0c41c9244f7ae8906e49.js.map

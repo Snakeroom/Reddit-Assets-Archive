@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.e5731a21d1d4f1fe51c3.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2cc6fd6478b6d8ef9dc2.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1633,7 +1633,7 @@
 					if (!e) return;
 					const s = n(),
 						r = Object(x.j)(s);
-					if (!r || !Object(f.f)(s, {
+					if (!r || !Object(f.g)(s, {
 							subredditId: e
 						}) || !Object(d.g)(s)) return;
 					const a = !!Object(_.c)(s, {
@@ -1647,7 +1647,7 @@
 						fullData: !0
 					}));
 					const n = o();
-					return Object(f.f)(n, {
+					return Object(f.g)(n, {
 						subredditId: e
 					}) && Object(d.g)(n)
 				}, T = e => async (t, o) => {
@@ -2637,17 +2637,17 @@
 				}),
 				customEmotes: (e, {
 					subredditId: t
-				}) => Object(U.g)(e, {
+				}) => Object(U.h)(e, {
 					subredditId: t
 				}),
 				userCanEditCustomEmojis: (e, {
 					subredditId: t
-				}) => !!t && Object(U.r)(e, {
+				}) => !!t && Object(U.s)(e, {
 					subredditId: t
 				}),
 				subredditHasPowerups: (e, {
 					subredditId: t
-				}) => Object(U.f)(e, {
+				}) => Object(U.g)(e, {
 					subredditId: t
 				})
 			});
@@ -4875,4 +4875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.e5731a21d1d4f1fe51c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2cc6fd6478b6d8ef9dc2.js.map

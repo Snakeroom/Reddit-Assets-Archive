@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.324671d2adf758010b9c.js
-// Retrieved at 8/11/2021, 10:40:09 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d9fa3abb99583db940b8.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -2842,7 +2842,7 @@
 						className: ss.a.UserIcon
 					}), L && a.a.createElement(_t.a, {
 						onClick: e => {
-							se(Object(W.v)("comment")), K(), e.stopPropagation(), e.preventDefault()
+							se(Object(W.x)("comment")), K(), e.stopPropagation(), e.preventDefault()
 						},
 						className: ss.a.topSupporterIcon,
 						title: F.fbt._("Powerups Top Supporter", null, {
@@ -8314,4 +8314,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.324671d2adf758010b9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.d9fa3abb99583db940b8.js.map

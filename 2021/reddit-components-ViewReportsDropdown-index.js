@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b871dd15ceb71950bf8f.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.10453f63cf116887c120.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -485,7 +485,7 @@
 					if (!e) return;
 					const n = o(),
 						r = Object(h.j)(n);
-					if (!r || !Object(O.f)(n, {
+					if (!r || !Object(O.g)(n, {
 							subredditId: e
 						}) || !Object(a.g)(n)) return;
 					const d = !!Object(j.c)(n, {
@@ -499,7 +499,7 @@
 						fullData: !0
 					}));
 					const o = s();
-					return Object(O.f)(o, {
+					return Object(O.g)(o, {
 						subredditId: e
 					}) && Object(a.g)(o)
 				}, _ = e => async (t, s) => {
@@ -1174,4 +1174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b871dd15ceb71950bf8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.10453f63cf116887c120.js.map

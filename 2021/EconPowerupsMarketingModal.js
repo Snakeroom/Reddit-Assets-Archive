@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.37e7e837488249dbf98c.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.952be6347a1b91482071.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./src/reddit/components/Econ/Common/BenefitTile/index.m.less": function(e, t, s) {
@@ -82,13 +82,13 @@
 				subredditId: t,
 				onClick: s
 			}) => {
-				const n = Object(r.e)(e => Object(d.i)(e, {
+				const n = Object(r.e)(e => Object(d.j)(e, {
 						subredditId: t
 					})),
 					u = Object(r.e)(e => Object(m.T)(e, {
 						subredditId: t
 					})),
-					h = Object(r.e)(e => Object(d.k)(e, {
+					h = Object(r.e)(e => Object(d.l)(e, {
 						subredditId: t
 					})),
 					E = Object(r.e)(l.h);
@@ -336,7 +336,7 @@
 						iconUrl: `${P.a.assetPath}/img/powerups/${e}_v3.png`,
 						key: `cell_${e}`,
 						onClick: () => {
-							s(Object(w.e)(e))
+							s(Object(w.g)(e))
 						},
 						title: O.d[e](a)
 					})))
@@ -360,7 +360,7 @@
 				currentSubredditId: h.m,
 				powerups: (e, t) => {
 					const s = Object(h.m)(e, t);
-					return s ? Object(k.i)(e, {
+					return s ? Object(k.j)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -444,7 +444,7 @@
 					className: A.a.joinHeroes,
 					subredditId: t,
 					onClick: e => {
-						h(Object(w.c)("powerups_modal")), e ? c(Object(l.h)(a.id)) : I()
+						h(Object(w.e)("powerups_modal")), e ? c(Object(l.h)(a.id)) : I()
 					}
 				})), o.a.createElement("li", {
 					className: A.a.howItWorksStep
@@ -569,4 +569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.37e7e837488249dbf98c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.952be6347a1b91482071.js.map

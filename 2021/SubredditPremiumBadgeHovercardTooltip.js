@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.cd97e1f2a46e1f48688b.js
-// Retrieved at 8/10/2021, 3:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.e00fa05a598a493e64a8.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeHovercardTooltip"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, r) {
@@ -1170,15 +1170,15 @@
 					subredditId: t
 				}) => Object(_.w)(e, t)
 			});
-			var Y = Object(b.c)(Object(a.b)(X)(Z));
-			const q = Object(c.a)(Y, [o.a.Click, o.a.Keydown]);
+			var q = Object(b.c)(Object(a.b)(X)(Z));
+			const Y = Object(c.a)(q, [o.a.Click, o.a.Keydown]);
 			const $ = Object(s.c)({
 				isOpen: (e, {
 					tooltipId: t
 				}) => Object(d.b)(t)(e)
 			});
 			t.default = Object(a.b)($)((function(e) {
-				return e.isOpen ? i.a.createElement(q, e) : null
+				return e.isOpen ? i.a.createElement(Y, e) : null
 			}))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/Badges/ManagementModal/Preview/BadgeCard/Content/index.m.less": function(e, t, r) {
@@ -2950,7 +2950,7 @@
 					if (!Object(f.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(p.p)(e, {
+					if (Object(p.q)(e, {
 							subredditId: t
 						})) return !0;
 					const i = "replyToPost" !== r && Object(m.a)(e, {
@@ -3002,4 +3002,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.cd97e1f2a46e1f48688b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeHovercardTooltip.e00fa05a598a493e64a8.js.map

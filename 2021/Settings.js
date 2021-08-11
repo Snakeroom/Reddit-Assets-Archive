@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.eaa8c7edce705973e309.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.6b039588997c653f985b.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, n) {
@@ -6376,7 +6376,7 @@
 			var B = n("./src/reddit/components/Settings/Powerups/index.m.less"),
 				R = n.n(B);
 			const U = Object(d.c)({
-				allocationByKey: h.u
+				allocationByKey: h.v
 			});
 			var F = Object(c.b)(U)((function(e) {
 					const {
@@ -13833,7 +13833,7 @@
 					if (!Object(b.b)(e, {
 							subredditId: t
 						})) return !1;
-					if (Object(p.p)(e, {
+					if (Object(p.q)(e, {
 							subredditId: t
 						})) return !0;
 					const s = "replyToPost" !== n && Object(m.a)(e, {
@@ -14004,4 +14004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.eaa8c7edce705973e309.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6b039588997c653f985b.js.map

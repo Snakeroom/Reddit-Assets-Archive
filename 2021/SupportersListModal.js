@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.a4de829d524977bdf78d.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.93a79bbb9dd087c39693.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/PowerupsCtaButton/index.tsx": function(e, t, s) {
@@ -19,7 +19,7 @@
 				className: e,
 				onClick: t
 			}) => {
-				const s = Object(n.e)(i.s),
+				const s = Object(n.e)(i.t),
 					r = Object(n.e)(l.h);
 				return a.a.createElement(o.q, {
 					priority: o.b.Primary,
@@ -104,7 +104,7 @@
 					className: b.a.user,
 					to: `/user/${E}/`,
 					onClick: () => {
-						f && r(Object(d.w)(f.id, f.displayName))
+						f && r(Object(d.y)(f.id, f.displayName))
 					}
 				}, v) : a.a.createElement("div", {
 					className: b.a.user
@@ -322,7 +322,7 @@
 					name: h,
 					isAnonymousUser: !c,
 					onClick: () => {
-						c && r(Object(N.h)(c.id, c.displayName))
+						c && r(Object(N.j)(c.id, c.displayName))
 					}
 				}, a.a.createElement(w, {
 					name: h,
@@ -352,7 +352,7 @@
 			t.default = Object(o.a)(() => {
 				const e = Object(n.e)(P.j),
 					t = Object(n.e)(C.r),
-					s = Object(n.e)(e => t ? Object(O.l)(e, {
+					s = Object(n.e)(e => t ? Object(O.m)(e, {
 						subredditId: t.id
 					}) : []),
 					o = Object(n.e)(g.h),
@@ -364,7 +364,7 @@
 				const h = Object(n.d)(),
 					x = Object(_.a)();
 				Object(r.useEffect)(() => {
-					x(Object(N.d)())
+					x(Object(N.f)())
 				}, [x]), Object(r.useEffect)(() => {
 					Object(u.a)()
 				}, []);
@@ -409,7 +409,7 @@
 				}), a.a.createElement(m.a, {
 					className: F.a.ctaButton,
 					onClick: () => {
-						x(Object(N.s)()), h(Object(i.f)("supporters_list_modal"))
+						x(Object(N.u)()), h(Object(i.f)("supporters_list_modal"))
 					}
 				}))) : (h(Object(d.f)({
 					kind: k.b.Error,
@@ -561,4 +561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.a4de829d524977bdf78d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.93a79bbb9dd087c39693.js.map

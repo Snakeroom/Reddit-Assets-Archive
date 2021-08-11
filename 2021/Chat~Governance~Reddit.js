@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.98940c7d3e114ff2b320.js
-// Retrieved at 8/11/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9a30bc35aeea18b684e7.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("142458"),
+				buildNumber: r("142463"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628692697"),
+				})("1628693786"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4989,14 +4989,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5bfac2a49804bfa687e4a2e7d47ec6d27ae51392-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1ba27861741600ba3022fc1c5cad9cd2c2c6ebb4-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5bfac2a49804bfa687e4a2e7d47ec6d27ae51392-production",
+						release: "1ba27861741600ba3022fc1c5cad9cd2c2c6ebb4-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(D.d)(), new d.Integrations.Breadcrumbs({
@@ -5490,7 +5490,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5bfac2a49804bfa687e4a2e7d47ec6d27ae51392-production",
+						releaseClient: "1ba27861741600ba3022fc1c5cad9cd2c2c6ebb4-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -15788,7 +15788,7 @@
 					return r
 				})),
 				function(e) {
-					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT = "emoji-promo-tooltip-display-count", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT = "emoji-promo-tooltip-display-count-per-subreddit", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.INBOX_EXPOSURE_SEEN_STORE = "inbox-exposure-seen-store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CHAIN_DISMISSAL_STORE = "post-chain-dismissal-store", e.POST_CHAIN_STORE = "post-chain-store", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POWERUPS_INFEED_UNIT_VISIBILITY_STORE = "powerups-infeed-unit-visibility-store", e.POWERUPS_TOOLTIP_VISIBILITY_STORE = "powerups-tooltip-visibility-store", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.RPAN_DU_TRACKING_START_DATE = "rpan-du-tracking-start-date", e.RPAN_START_CHATTING_SEEN_STORE = "rpan-start-chatting-seen-store", e.RPAN_USER_SETTINGS_STORE = "rpan-user-settings-store", e.SUBCRIBED_SUBREDDIT_VISITS = "subscribed-subbreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three"
+					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT = "emoji-promo-tooltip-display-count", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT = "emoji-promo-tooltip-display-count-per-subreddit", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.INBOX_EXPOSURE_SEEN_STORE = "inbox-exposure-seen-store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CHAIN_DISMISSAL_STORE = "post-chain-dismissal-store", e.POST_CHAIN_STORE = "post-chain-store", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POWERUPS_INFEED_UNIT_VISIBILITY_STORE = "powerups-infeed-unit-visibility-store", e.POWERUPS_CNC_MODULE_VISIBILITY_STORE = "powerups-cnc-module-visibility-store", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.RPAN_DU_TRACKING_START_DATE = "rpan-du-tracking-start-date", e.RPAN_START_CHATTING_SEEN_STORE = "rpan-start-chatting-seen-store", e.RPAN_USER_SETTINGS_STORE = "rpan-user-settings-store", e.SUBCRIBED_SUBREDDIT_VISITS = "subscribed-subbreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three"
 				}(n || (n = {}));
 			const r = 1e3
 		},
@@ -30528,71 +30528,74 @@
 		},
 		"./src/reddit/selectors/gold/powerups/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "i", (function() {
-				return a
-			})), i.d(t, "f", (function() {
+			i.d(t, "j", (function() {
 				return u
-			})), i.d(t, "n", (function() {
-				return c
+			})), i.d(t, "g", (function() {
+				return _
 			})), i.d(t, "o", (function() {
 				return p
 			})), i.d(t, "p", (function() {
-				return m
-			})), i.d(t, "m", (function() {
 				return h
 			})), i.d(t, "q", (function() {
 				return f
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "n", (function() {
 				return b
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "r", (function() {
 				return g
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "i", (function() {
 				return w
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "h", (function() {
 				return y
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "l", (function() {
 				return v
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "m", (function() {
 				return E
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "a", (function() {
 				return T
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "w", (function() {
 				return S
 			})), i.d(t, "t", (function() {
 				return O
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "v", (function() {
 				return I
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "u", (function() {
 				return F
-			})), i.d(t, "b", (function() {
-				return R
 			})), i.d(t, "e", (function() {
+				return R
+			})), i.d(t, "d", (function() {
 				return j
-			})), i.d(t, "j", (function() {
-				return N
-			})), i.d(t, "r", (function() {
-				return A
+			})), i.d(t, "c", (function() {
+				return C
+			})), i.d(t, "f", (function() {
+				return x
+			})), i.d(t, "k", (function() {
+				return P
+			})), i.d(t, "s", (function() {
+				return B
+			})), i.d(t, "b", (function() {
+				return D
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/models/Gold/Powerups/index.ts"),
 				s = i("./src/reddit/selectors/moderatorPermissions.ts"),
 				o = i("./src/lib/initializeClient/installReducer.ts"),
-				d = i("./src/reddit/reducers/features/goldPurchase/index.ts");
-			i("./src/reddit/selectors/user.ts");
+				d = i("./src/reddit/reducers/features/goldPurchase/index.ts"),
+				a = i("./src/reddit/selectors/subreddit.ts"),
+				l = i("./src/reddit/selectors/user.ts");
 			Object(o.a)({
 				features: {
 					goldPurchase: d.a
 				}
 			});
-			const a = (e, {
+			const u = (e, {
 					subredditId: t
 				}) => t ? e.subreddits.powerups[t] : null,
-				l = (e, {
+				c = (e, {
 					subredditId: t
 				}) => t ? e.subreddits.powerupsEmojis[t] : null,
-				u = Object(n.a)(a, e => !!e),
-				c = (e, {
+				_ = Object(n.a)(u, e => !!e),
+				p = (e, {
 					subredditId: t,
 					benefit: i
 				}) => {
@@ -30601,24 +30604,24 @@
 						subredditId: t
 					}) => {
 						var i;
-						return (null === (i = a(e, {
+						return (null === (i = u(e, {
 							subredditId: t
 						})) || void 0 === i ? void 0 : i.benefits) || []
 					})(e, {
 						subredditId: t
 					})) || void 0 === n ? void 0 : n.includes(i)
 				},
-				_ = e => Object(n.a)(a, t => {
+				m = e => Object(n.a)(u, t => {
 					var i;
 					return !!(null === (i = null == t ? void 0 : t.benefits) || void 0 === i ? void 0 : i.includes(e))
 				}),
-				p = _(r.a.CommentsWithEmoji),
-				m = _(r.a.CommentsWithGifs),
-				h = _(r.a.Achievements),
-				f = (e, {
+				h = m(r.a.CommentsWithEmoji),
+				f = m(r.a.CommentsWithGifs),
+				b = m(r.a.Achievements),
+				g = (e, {
 					subredditId: t
 				}) => {
-					const i = a(e, {
+					const i = u(e, {
 						subredditId: t
 					});
 					if (!i) return !1;
@@ -30627,27 +30630,27 @@
 					} = i;
 					return n && n.some(e => e === r.a.HdVideo || e === r.a.SdVideo || e === r.a.PostsImageUpload)
 				},
-				b = (e, t) => {
+				w = (e, t) => {
 					var i;
-					const n = l(e, t);
+					const n = c(e, t);
 					return (null === (i = null == n ? void 0 : n.free_emotes_pack) || void 0 === i ? void 0 : i.emotes) || []
 				},
-				g = (e, {
+				y = (e, {
 					subredditId: t
 				}) => {
 					var i;
 					if (!t) return [];
-					const n = l(e, {
+					const n = c(e, {
 						subredditId: t
 					});
 					return (null === (i = null == n ? void 0 : n[t]) || void 0 === i ? void 0 : i.emotes) || []
 				},
-				w = (e, {
+				v = (e, {
 					subredditId: t
 				}) => {
 					if (t) return e.subreddits.powerupTopSupporters[t]
 				},
-				y = Object(n.a)(w, e => {
+				E = Object(n.a)(v, e => {
 					if (!e) return;
 					const t = e.filter(r.b);
 					if (!t.length) return e;
@@ -30658,37 +30661,38 @@
 					};
 					return [...e.filter(e => !Object(r.b)(e)), i]
 				}),
-				v = (e, {
+				T = (e, {
 					subredditId: t,
 					userId: i
 				}) => {
-					const n = w(e, {
+					const n = v(e, {
 						subredditId: t
 					});
 					return !!n && n.some(e => !!e.supporterInfo && e.supporterInfo.id === i)
 				},
-				E = e => e.user.powerups.data,
-				T = Object(n.a)(E, e => !!(null == e ? void 0 : e.freeCount)),
-				S = e => e.user.powerups.allocationByKey,
-				O = Object(n.a)([S, (e, {
+				S = e => e.user.powerups.data,
+				O = Object(n.a)(S, e => !!(null == e ? void 0 : e.freeCount)),
+				I = e => e.user.powerups.allocationByKey,
+				F = Object(n.a)([I, (e, {
 					subredditId: t
 				}) => t], (e, t) => Object.values(e).some(e => e.subredditInfo.id === t)),
-				I = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
-				F = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
-				R = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
-				j = e => e.users.powerups.allocationByKey,
-				C = Object(n.a)(a, e => null == e ? void 0 : e.count),
-				x = Object(n.a)(a, e => {
+				R = e => e.features.goldPurchase.powerupsPurchaseModal.powerupsCount,
+				j = e => e.features.goldPurchase.powerupsPurchaseModal.isAnonymous,
+				C = e => e.features.goldPurchase.powerupsPurchaseModal.freeReallocation.pending,
+				x = e => e.users.powerups.allocationByKey,
+				N = Object(n.a)(u, e => null == e ? void 0 : e.count),
+				A = Object(n.a)(u, e => {
 					if (!e) return;
 					const {
 						tiersInfo: t
 					} = e, i = t.find(e => 2 === e.tier);
 					return null == i ? void 0 : i.powerupsCost
 				}),
-				N = Object(n.a)(C, x, (e, t) => {
+				P = Object(n.a)(N, A, (e, t) => {
 					if (void 0 !== e && void 0 !== t) return e >= t
 				}),
-				A = Object(n.a)(s.e, s.f, s.g, (e, t, i) => e || t || i)
+				B = Object(n.a)(s.e, s.f, s.g, (e, t, i) => e || t || i),
+				D = Object(n.a)(a.T, _, s.f, l.G, (e, t, i, n) => !(!e || !i || t || e.isNSFW) && (!!n || e.subscribers >= 25e3))
 		},
 		"./src/reddit/selectors/gold/purchaseCatalog.ts": function(e, t, i) {
 			"use strict";
@@ -31846,7 +31850,7 @@
 					const t = V(e),
 						i = Object(I.e)(e),
 						n = W(e),
-						r = !!i && Object(O.q)(e, {
+						r = !!i && Object(O.r)(e, {
 							subredditId: i.id
 						}),
 						o = !!i && i.isNSFW;
@@ -31858,7 +31862,7 @@
 				},
 				z = Object(r.a)(W, I.e, V, $, e => {
 					const t = Object(I.c)(e);
-					return !!t && Object(O.q)(e, {
+					return !!t && Object(O.r)(e, {
 						subredditId: t
 					})
 				}, (e, t, i, n, r) => {
@@ -35480,7 +35484,7 @@
 				ti = e => {
 					const t = Object(oe.e)(e);
 					if (t) {
-						const i = Object(me.i)(e, {
+						const i = Object(me.j)(e, {
 							subredditId: t.id
 						});
 						if (i) return {
@@ -40096,4 +40100,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.98940c7d3e114ff2b320.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9a30bc35aeea18b684e7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4b7a420d63ff91457469.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ec5d6cc9dae873d4f2ea.js
+// Retrieved at 8/11/2021, 11:20:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -421,7 +421,7 @@
 					if (!e) return;
 					const r = s(),
 						o = Object(g.j)(r);
-					if (!o || !Object(f.f)(r, {
+					if (!o || !Object(f.g)(r, {
 							subredditId: e
 						}) || !Object(d.g)(r)) return;
 					const a = !!Object(x.c)(r, {
@@ -435,7 +435,7 @@
 						fullData: !0
 					}));
 					const s = n();
-					return Object(f.f)(s, {
+					return Object(f.g)(s, {
 						subredditId: e
 					}) && Object(d.g)(s)
 				}, k = e => async (t, n) => {
@@ -7045,6 +7045,107 @@
 				listingName: "",
 				listingViewed: () => () => ({}),
 				noPostsComponent: u.a.Fragment
+			}
+		},
+		"./src/reddit/components/PowerupsCncModule/async.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js");
+			const r = Object(s.a)({
+				resolved: {},
+				chunkName: () => "PowerupsCncModule",
+				isReady(e) {
+					const t = this.resolve(e);
+					return !1 !== this.resolved[t] && !!n.m[t]
+				},
+				importAsync: () => Promise.resolve().then(n.bind(null, "./src/reddit/components/PowerupsCncModule/index.tsx")),
+				requireAsync(e) {
+					const t = this.resolve(e);
+					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
+				},
+				requireSync(e) {
+					const t = this.resolve(e);
+					return n(t)
+				},
+				resolve() {
+					return "./src/reddit/components/PowerupsCncModule/index.tsx"
+				}
+			})
+		},
+		"./src/reddit/components/PowerupsCncModule/index.m.less": function(e, t, n) {
+			e.exports = {
+				feedBanner: "_2I3Bfot0_z2fpeo6zu0l2J",
+				powerupsLogo: "TQxDD5iDKrkEL8_gkvPUG",
+				bolt: "lLsxHGuplL1k0pxt72AKH",
+				bannerText: "_3yaV1tcyLQQaYxZ9yj1uPA",
+				heading: "_2lL5MmI9e4lUGXlgHCdMMq",
+				description: "_2Q6-RCjBdZlxyT48OReije",
+				chevron: "_1GgOcxnjXNupiwBONGaA3T"
+			}
+		},
+		"./src/reddit/components/PowerupsCncModule/index.tsx": function(e, t, n) {
+			"use strict";
+			n.r(t), n.d(t, "isPowerupsCncModuleHiddenBySpamLimit", (function() {
+				return x
+			}));
+			var s = n("./src/config.ts"),
+				r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				a = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/lib/opener/index.ts"),
+				c = n("./src/reddit/constants/localStorage.ts"),
+				d = n("./src/reddit/helpers/localStorage/index.ts"),
+				l = n("./src/reddit/helpers/trackers/powerups.ts"),
+				u = n("./src/reddit/hooks/useTracking.ts"),
+				m = n("./src/reddit/icons/fonts/index.tsx"),
+				p = n("./src/reddit/selectors/subreddit.ts"),
+				b = n("./src/reddit/components/PowerupsCncModule/index.m.less"),
+				h = n.n(b);
+			const {
+				fbt: f
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), x = e => {
+				return Object(d.k)(c.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e) > 1
+			};
+			t.default = ({
+				subredditId: e
+			}) => {
+				const t = Object(u.a)(),
+					n = Object(a.e)(t => Object(p.T)(t, {
+						subredditId: e
+					})),
+					b = !!n;
+				return Object(r.useEffect)(() => {
+					b && (Object(d.R)(c.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e), x(e) || t(Object(l.c)()))
+				}, [t, b, e]), b ? o.a.createElement("a", {
+					className: h.a.feedBanner,
+					onClick: () => {
+						t(Object(l.b)())
+					},
+					href: `${s.a.redditUrl}/powerups`,
+					rel: i.b,
+					target: "_blank"
+				}, o.a.createElement("div", {
+					className: h.a.powerupsLogo
+				}, o.a.createElement("img", {
+					className: h.a.bolt,
+					src: `${s.a.assetPath}/img/powerups/powerups-cnc.svg`,
+					alt: "powerups lightning bolt"
+				})), o.a.createElement("div", {
+					className: h.a.bannerText
+				}, o.a.createElement("p", {
+					className: h.a.heading
+				}, f._("Give {subreddit name} members a way to give back", [f._param("subreddit name", n.displayText)], {
+					hk: "4poXz"
+				})), o.a.createElement("p", {
+					className: h.a.description
+				}, f._("Harness the power of your community to unlock special perks and features using Powerups.", null, {
+					hk: "fJGis"
+				}))), o.a.createElement(m.a, {
+					name: "caret_right",
+					className: h.a.chevron
+				})) : null
 			}
 		},
 		"./src/reddit/components/PublicAccessNetwork/ListingUnit/RpanScrollChild.tsx": function(e, t, n) {
@@ -13737,7 +13838,7 @@
 		"./src/reddit/pages/Subreddit/SurveyUnit.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return b
 			}));
 			var s = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = n("./node_modules/react/index.js"),
@@ -13745,8 +13846,11 @@
 				a = n("./node_modules/react-redux/es/index.js"),
 				i = n("./src/reddit/components/CommunityTopicSurvey/async.tsx"),
 				c = n("./src/reddit/components/ContentSurvey/ContentRatingSurveyBanner.tsx"),
-				d = n("./src/reddit/constants/postLayout.ts");
-			const l = Object(s.a)({
+				d = n("./src/reddit/components/PowerupsCncModule/index.tsx"),
+				l = n("./src/reddit/components/PowerupsCncModule/async.ts"),
+				u = n("./src/reddit/constants/postLayout.ts"),
+				m = n("./src/reddit/selectors/gold/powerups/index.ts");
+			const p = Object(s.a)({
 				resolved: {},
 				chunkName: () => "NewCommunityProgress",
 				isReady(e) {
@@ -13767,20 +13871,25 @@
 				}
 			});
 
-			function u({
+			function b({
 				postLayout: e,
 				subredditId: t
 			}) {
 				var n;
 				const s = Object(a.e)(e => e.subreddits.survey[t]),
-					r = Object(a.e)(e => e.subreddits.progressModule[t]);
-				return (null === (n = null == r ? void 0 : r.cards) || void 0 === n ? void 0 : n.length) > 0 ? o.a.createElement(l, {
-					closeModuleOnMount: !!e && e !== d.g.Large,
+					r = Object(a.e)(e => e.subreddits.progressModule[t]),
+					b = Object(a.e)(e => Object(m.b)(e, {
+						subredditId: t
+					}));
+				return (null === (n = null == r ? void 0 : r.cards) || void 0 === n ? void 0 : n.length) > 0 ? o.a.createElement(p, {
+					closeModuleOnMount: !!e && e !== u.g.Large,
 					subredditId: t,
 					progressModule: r
-				}) : e !== d.g.Large ? null : (null == s ? void 0 : s.isEligible) && !(null == s ? void 0 : s.response) ? o.a.createElement(c.a, {
+				}) : e !== u.g.Large ? null : (null == s ? void 0 : s.isEligible) && !(null == s ? void 0 : s.response) ? o.a.createElement(c.a, {
 					subredditId: t,
 					survey: s
+				}) : b && !Object(d.isPowerupsCncModuleHiddenBySpamLimit)(t) ? o.a.createElement(l.a, {
+					subredditId: t
 				}) : o.a.createElement(i.a, {
 					subredditId: t
 				})
@@ -13966,7 +14075,7 @@
 					const {
 						subreddit: n
 					} = Ke(e, t);
-					return !(!n || !Object(_e.i)(e, {
+					return !(!n || !Object(_e.j)(e, {
 						subredditId: n.id
 					}))
 				},
@@ -13974,7 +14083,7 @@
 					const {
 						subreddit: n
 					} = Ke(e, t);
-					return !(!n || !Object(_e.j)(e, {
+					return !(!n || !Object(_e.k)(e, {
 						subredditId: n.id
 					}))
 				}
@@ -15474,4 +15583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4b7a420d63ff91457469.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ec5d6cc9dae873d4f2ea.js.map
