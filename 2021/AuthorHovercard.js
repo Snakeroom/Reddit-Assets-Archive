@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.e05057395d29629426d8.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.29b091e11a3b9a0995ed.js
+// Retrieved at 8/11/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -40,6 +40,45 @@
 					timeZone: "UTC"
 				})
 			}
+		},
+		"./src/lib/notifications/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "b", (function() {
+				return i
+			}));
+			var r = n("./src/lib/localStorageAvailable/index.ts"),
+				s = n("./src/lib/notifications/constants.ts"),
+				o = n("./src/lib/notifications/featureFlags.ts");
+			n("./src/lib/serviceWorker/index.ts");
+			const a = () => {
+					const e = Object(r.a)() && localStorage.getItem(s.f) === s.g;
+					return "granted" === Notification.permission ? s.a.Granted : "denied" === Notification.permission ? s.a.Denied : e ? s.a.Closed : s.a.Default
+				},
+				i = async (e, t, n, a, i, c) => {
+					if (Object(r.a)()) {
+						const t = localStorage.getItem(s.h),
+							n = (new Date).getTime();
+						if (!e && t && parseInt(t) + s.i > n) return void c();
+						localStorage.setItem(s.h, n.toString())
+					}
+					const d = Object(o.a)();
+					if (d === s.c.BrowserUnsupported || d === s.c.LocalStorageUnavailable || d === s.c.NotAllRequiredAPIsSupported) return void c();
+					if (!t && "denied" === Notification.permission) return a(!1, !1), void c();
+					if (!t && "granted" === Notification.permission) return i(!1), void c();
+					const l = localStorage.getItem(s.f);
+					if (t || !l || l !== s.g) switch (n(), await Notification.requestPermission()) {
+						case "granted":
+							i(!0);
+							break;
+						case "denied":
+							a(!0, !0);
+							break;
+						default:
+							a(!0, !1), localStorage.setItem(s.f, s.g)
+					} else c()
+				}
 		},
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
 			"use strict";
@@ -238,7 +277,7 @@
 					error: K,
 					pending: z
 				});
-			var Z = (e = null, t) => {
+			var G = (e = null, t) => {
 					switch (t.type) {
 						case j.r:
 						case j.p:
@@ -251,9 +290,9 @@
 							return e
 					}
 				},
-				G = Object(w.c)({
+				Z = Object(w.c)({
 					api: W,
-					result: Z
+					result: G
 				});
 			const q = {};
 			var J = (e = q, t) => {
@@ -299,7 +338,7 @@
 					inContext: F,
 					loadMore: H,
 					models: R,
-					search: G,
+					search: Z,
 					userOrder: J
 				});
 			Object(N.a)({
@@ -1020,15 +1059,15 @@
 				K = n("./src/reddit/actions/subredditModeration/ban.ts"),
 				z = n("./src/reddit/constants/modals.ts"),
 				W = n("./src/reddit/components/Hovercards/helpers.ts"),
-				Z = n("./src/reddit/icons/fonts/index.tsx"),
-				G = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				G = n("./src/reddit/icons/fonts/index.tsx"),
+				Z = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				q = n("./src/reddit/selectors/bannedUser.ts"),
 				J = n("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				V = n.n(J);
 			const {
 				fbt: X
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = Object(a.c)({
-				hasModMailPermissions: Object(u.b)(G.c.mail),
+				hasModMailPermissions: Object(u.b)(Z.c.mail),
 				isUserBanned: (e, t) => !!Object(q.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -1059,7 +1098,7 @@
 						onClick: () => {
 							o(this.props.user.id), a(S.e(t))
 						}
-					}, s.a.createElement(Z.a, {
+					}, s.a.createElement(G.a, {
 						name: "ban",
 						isFilled: !0,
 						className: V.a.icon
@@ -1070,7 +1109,7 @@
 						onClick: () => {
 							i(), a(S.a(t))
 						}
-					}, s.a.createElement(Z.a, {
+					}, s.a.createElement(G.a, {
 						name: "ban",
 						className: V.a.icon
 					}), X._("Ban User", null, {
@@ -1080,7 +1119,7 @@
 						onClick: () => {
 							c(), a(S.d(t))
 						}
-					}, s.a.createElement(Z.a, {
+					}, s.a.createElement(G.a, {
 						name: "mod_mute",
 						className: V.a.icon
 					}), X._("Mute User", null, {
@@ -1123,7 +1162,7 @@
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(S.c(e.contextId))
 					}
-				}, s.a.createElement(Z.a, {
+				}, s.a.createElement(G.a, {
 					name: "tag",
 					className: V.a.icon
 				}), te._("Edit user flair", null, {
@@ -1856,7 +1895,12 @@
 				primaryButton: "_1mR2YFl21PdJDX9T7ykA7c",
 				welcomeBanner: "_3QWgBcfZuqQ6TlxZa6uYkS",
 				dnPromptBanner: "_3IIpKn1IlCXgko4sLMEie1",
-				policyBanner: "GLgkxGZkPymWBWeRISXBe"
+				policyBanner: "GLgkxGZkPymWBWeRISXBe",
+				modalHeader: "_2Ggqgl_RyXu2U-mPYZSaCk",
+				modalTitle: "_2C3YUpN8pGzseZOBK0tl0I",
+				modalCloseIcon: "_2BTQI8_1TIwwfdecOP_j6o",
+				modalListItem: "-sXLpWAGj2HMFvzRvH_bC",
+				modalListIcon: "_3UO2hA0CsOqKl1bYybPZGs"
 			}
 		},
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
@@ -1864,36 +1908,46 @@
 			n.d(t, "a", (function() {
 				return Z
 			})), n.d(t, "b", (function() {
-				return V
+				return X
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
 				o = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
-				i = n("./src/lib/lessComponent.tsx"),
-				c = n("./src/reddit/components/BadgeCounter/index.tsx"),
-				d = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				l = n("./node_modules/lodash/noop.js"),
-				u = n.n(l),
+				a = n("./src/lib/notifications/index.ts"),
+				i = n("./src/lib/notifications/constants.ts"),
+				c = n("./src/lib/classNames/index.ts"),
+				d = n("./src/lib/lessComponent.tsx"),
+				l = n("./src/reddit/components/BadgeCounter/index.tsx"),
+				u = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
 				m = n("./node_modules/lodash/omit.js"),
 				p = n.n(m),
 				b = n("./src/reddit/components/InboxBanner/Banner.tsx"),
 				f = n("./src/reddit/components/InboxBanner/index.m.less"),
 				h = n.n(f);
-			const x = e => o.a.createElement(b.a, {
-				className: h.a.dnPromptBanner,
-				titleText: r.fbt._("Don’t miss out on updates — Turn on desktop notifications.", null, {
-					hk: "10oNqB"
-				}),
-				onClose: e.onClose,
-				closeIcon: !0,
-				primaryButtonText: r.fbt._("Turn On", null, {
-					hk: "3hywR9"
-				}),
-				closeButtonText: r.fbt._("No Thanks", null, {
-					hk: "2GQOmV"
+			const x = ({
+				onClose: e,
+				onTurnOnBrowserNotifications: t
+			}) => {
+				return o.a.createElement(b.a, {
+					className: h.a.dnPromptBanner,
+					titleText: r.fbt._("Don’t miss out on updates — Turn on desktop notifications.", null, {
+						hk: "10oNqB"
+					}),
+					onClose: t => {
+						t.stopPropagation(), e()
+					},
+					closeIcon: !0,
+					primaryButtonText: r.fbt._("Turn On", null, {
+						hk: "3hywR9"
+					}),
+					closeButtonText: r.fbt._("No Thanks", null, {
+						hk: "2GQOmV"
+					}),
+					onClick: n => {
+						t(), e()
+					}
 				})
-			});
+			};
 			var v = n("./src/reddit/components/InboxBanner/PolicyBanner.tsx");
 			const I = ({
 				onClose: e
@@ -2067,31 +2121,34 @@
 						isDNInboxPromptBannerEnabled: t,
 						isInboxExposureBannerEnabled: n,
 						isInboxPrivacyPolicyBannerEnabled: r,
-						setInboxExposureBannerSeen: s,
-						setInboxPrivacyPolicyBannerSeen: a,
-						isInboxInfiniteScrollEnabled: i,
-						isPending: c,
-						notifications: l
-					} = this.props, m = !(!l || !l.length), p = this.getContainerHeight(), b = l.length > this.state.currentNotificationCursorIndex + L, f = r || n || t;
+						isInboxInfiniteScrollEnabled: s,
+						isPending: a,
+						notifications: i,
+						setDesktopNotificationsPromptSeen: c,
+						setInboxExposureBannerSeen: d,
+						setInboxPrivacyPolicyBannerSeen: l,
+						showBrowserNotificationsPermissionSettings: m
+					} = this.props, p = !(!i || !i.length), b = this.getContainerHeight(), f = i.length > this.state.currentNotificationCursorIndex + L, h = r || n || t;
 					return o.a.createElement("div", {
 						className: O.a.notificationList,
 						ref: this.container,
 						style: {
-							height: p,
-							maxHeight: p
+							height: b,
+							maxHeight: b
 						}
-					}, f && o.a.createElement("div", {
+					}, h && o.a.createElement("div", {
 						className: O.a.notificationBannerContainer
 					}, r && o.a.createElement(v.a, {
-						onClose: a,
+						onClose: l,
 						pageType: N.b.MiniInbox
-					}), n && o.a.createElement(I, {
-						onClose: s
 					}), t && o.a.createElement(x, {
-						onClose: u.a
-					})), !m && c && o.a.createElement(j.a, null), !m && !c && o.a.createElement(w.a, {
-						isBannerEnabled: f
-					}), m && this.renderNotifications(), i && m && !c && (e || b) && o.a.createElement(d.a, {
+						onTurnOnBrowserNotifications: m,
+						onClose: c
+					}), n && o.a.createElement(I, {
+						onClose: d
+					})), !p && a && o.a.createElement(j.a, null), !p && !a && o.a.createElement(w.a, {
+						isBannerEnabled: h
+					}), p && this.renderNotifications(), s && p && !a && (e || f) && o.a.createElement(u.a, {
 						onChange: this.loadNotifications,
 						rootMargin: "0px 0px 0px 0px",
 						threshold: F
@@ -2099,13 +2156,14 @@
 				}
 			}
 			var M = n("./src/reddit/controls/InternalLink/index.tsx"),
-				D = n("./src/reddit/hooks/useInboxExposureSeen.ts"),
-				R = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
-				K = n("./src/reddit/hooks/useTracking.ts"),
-				z = n("./src/reddit/icons/fonts/index.tsx");
+				D = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
+				R = n("./src/reddit/hooks/useInboxExposureSeen.ts"),
+				K = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
+				z = n("./src/reddit/hooks/useTracking.ts"),
+				W = n("./src/reddit/icons/fonts/index.tsx");
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function G() {
+				return (G = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2114,21 +2172,21 @@
 				}).apply(this, arguments)
 			}
 			const Z = [],
-				G = i.a.div("StyledDropdown", O.a),
-				q = ({
+				q = d.a.div("StyledDropdown", O.a),
+				J = ({
 					onMessagesClick: e,
 					onBarClick: t,
 					markAllAsRead: n,
-					messagesBadgeCount: i,
-					sendInboxClickSettings: d
+					messagesBadgeCount: a,
+					sendInboxClickSettings: i
 				}) => {
-					const l = !!i,
+					const d = !!a,
 						u = Object(s.useCallback)(() => {
 							e(), t()
 						}, [e, t]),
 						m = Object(s.useCallback)(() => {
-							d(), t()
-						}, [d, t]);
+							i(), t()
+						}, [i, t]);
 					return o.a.createElement("nav", {
 						className: O.a.topNav
 					}, o.a.createElement("span", {
@@ -2140,33 +2198,33 @@
 					}, o.a.createElement("span", {
 						className: O.a.messagesLinkContainer
 					}, o.a.createElement(M.a, {
-						className: Object(a.a)(O.a.messagesLink, {
-							[O.a.mActive]: l
+						className: Object(c.a)(O.a.messagesLink, {
+							[O.a.mActive]: d
 						}),
 						onClick: u,
-						to: l ? "/message/unread" : "/message/messages"
+						to: d ? "/message/unread" : "/message/messages"
 					}, r.fbt._("Messages", null, {
 						hk: "hulKY"
-					}), o.a.createElement(c.a, {
+					}), o.a.createElement(l.a, {
 						className: O.a.badgeCount,
-						isActive: l,
-						unreadCount: i
+						isActive: d,
+						unreadCount: a
 					}))), o.a.createElement("button", {
 						className: O.a.navLink,
 						onClick: n
-					}, o.a.createElement(z.a, {
+					}, o.a.createElement(W.a, {
 						name: "mark_read",
 						className: O.a.icon
 					})), o.a.createElement(M.a, {
 						className: O.a.navLink,
 						onClick: m,
 						to: "/settings/notifications"
-					}, o.a.createElement(z.a, {
+					}, o.a.createElement(W.a, {
 						name: "settings",
 						className: O.a.icon
 					}))))
 				},
-				J = e => o.a.createElement("div", {
+				V = e => o.a.createElement("div", {
 					className: O.a.bottomBar
 				}, o.a.createElement(M.a, {
 					className: O.a.bottomLink,
@@ -2177,33 +2235,36 @@
 				}, r.fbt._("See All", null, {
 					hk: "3L3tFc"
 				}))),
-				V = e => {
-					const t = Object(K.a)(),
+				X = e => {
+					const t = Object(z.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: r,
 							isPending: s,
-							messagesBadgeCount: a,
-							notifications: i,
-							hideTooltip: c,
-							isInboxExposureBannerEnabled: d,
-							isInboxPolicyBannerEnabled: l,
-							isDNInboxPromptBannerFirstTimeEnabled: u,
-							isDNInboxPromptBannerPersistEnabled: m,
-							userId: p
+							messagesBadgeCount: c,
+							notifications: d,
+							hideTooltip: l,
+							isInboxExposureBannerEnabled: u,
+							isInboxPolicyBannerEnabled: m,
+							isDNInboxPromptBannerFirstTimeEnabled: p,
+							isDNInboxPromptBannerPersistEnabled: b,
+							userId: f
 						} = e,
-						[b, f] = Object(D.a)(p),
-						[h, x] = Object(R.a)(p),
-						v = !(!i || !i.length);
-					return o.a.createElement(G, null, o.a.createElement("div", {
+						[h, x] = Object(R.a)(f),
+						[v, I] = Object(D.a)(f),
+						[_, g] = Object(K.a)(f),
+						C = !(!d || !d.length),
+						E = Object(a.a)(),
+						y = (p || b) && E !== i.a.Granted && !v;
+					return o.a.createElement(q, null, o.a.createElement("div", {
 						className: O.a.tooltipContainer
-					}, o.a.createElement(q, {
+					}, o.a.createElement(J, {
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(N.g)({
 								isMiniInbox: !0
 							}))
 						},
-						messagesBadgeCount: a,
+						messagesBadgeCount: c,
 						onMessagesClick: () => {
 							t(Object(N.o)({
 								badgeCount: r,
@@ -2211,18 +2272,19 @@
 							})), t(Object(N.h)()), n()
 						},
 						sendInboxClickSettings: () => t(Object(N.m)(N.b.MiniInbox)),
-						onBarClick: c
-					}), o.a.createElement(H, W({}, e, {
+						onBarClick: l
+					}), o.a.createElement(H, G({}, e, {
 						isPending: s,
-						onItemClick: c,
-						setInboxExposureBannerSeen: f,
-						isInboxExposureBannerEnabled: d && !b,
-						isDNInboxPromptBannerEnabled: u || m,
-						isInboxPrivacyPolicyBannerEnabled: l && !h,
-						setInboxPrivacyPolicyBannerSeen: x
-					})), (v || s) && o.a.createElement(J, {
+						onItemClick: l,
+						setInboxExposureBannerSeen: x,
+						setDesktopNotificationsPromptSeen: I,
+						isInboxExposureBannerEnabled: u && !h,
+						isDNInboxPromptBannerEnabled: y,
+						isInboxPrivacyPolicyBannerEnabled: m && !_,
+						setInboxPrivacyPolicyBannerSeen: g
+					})), (C || s) && o.a.createElement(V, {
 						sendInboxClickSeeAll: () => t(Object(N.l)()),
-						onBarClick: c
+						onBarClick: l
 					})))
 				}
 		},
@@ -3571,7 +3633,7 @@
 					}
 				})
 		},
-		"./src/reddit/hooks/useInboxExposureSeen.ts": function(e, t, n) {
+		"./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
 				return o
@@ -3582,7 +3644,22 @@
 			function o(e) {
 				const [t, n] = Object(r.useState)(Object(s.t)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.tb)(e)
+					n(!0), Object(s.mb)(e)
+				}, [])]
+			}
+		},
+		"./src/reddit/hooks/useInboxExposureSeen.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./node_modules/react/index.js"),
+				s = n("./src/reddit/helpers/localStorage/index.ts");
+
+			function o(e) {
+				const [t, n] = Object(r.useState)(Object(s.u)(e));
+				return [t, Object(r.useCallback)(() => {
+					n(!0), Object(s.wb)(e)
 				}, [])]
 			}
 		},
@@ -3595,9 +3672,9 @@
 				s = n("./src/reddit/helpers/localStorage/index.ts");
 
 			function o(e) {
-				const [t, n] = Object(r.useState)(() => Object(s.u)(e));
+				const [t, n] = Object(r.useState)(() => Object(s.v)(e));
 				return [t, Object(r.useCallback)(() => {
-					n(!0), Object(s.ub)(e)
+					n(!0), Object(s.xb)(e)
 				}, [e])]
 			}
 		},
@@ -3849,4 +3926,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.e05057395d29629426d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.29b091e11a3b9a0995ed.js.map

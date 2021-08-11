@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.288371e103286ba8ee87.js
-// Retrieved at 8/11/2021, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1154f049ea6c9f261f42.js
+// Retrieved at 8/11/2021, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/components/Econ/Common/JoinHeroes/index.m.less": function(e, t, s) {
@@ -190,7 +190,7 @@
 							return Object(p.k)(u.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e) >= 2
 						})(e))
 					}, [N, e, k]), Object(r.useEffect)(() => {
-						g && (Object(p.R)(u.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), x(Object(m.n)()))
+						g && (Object(p.S)(u.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE, e), x(Object(m.n)()))
 					}, [g, x, e]), !g) return null;
 				const I = O ? f._("Support the whole community", null, {
 					hk: "oOdGv"
@@ -223,4 +223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.288371e103286ba8ee87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1154f049ea6c9f261f42.js.map
