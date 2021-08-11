@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.b4b731b78f41e9f93221.js
-// Retrieved at 8/10/2021, 1:20:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.c55a392c3b69bdd6993f.js
+// Retrieved at 8/11/2021, 11:00:08 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -101,44 +101,46 @@
 			}(o || (o = {}));
 			const d = ({
 				className: e,
-				imageClassName: t,
-				disabled: s,
-				id: c,
-				imagePath: d,
-				onClick: m,
-				onKeyDown: p,
-				title: h,
-				onClickDelete: u
+				containerClassName: t,
+				imageClassName: s,
+				disabled: c,
+				id: d,
+				imagePath: m,
+				onClick: p,
+				onKeyDown: h,
+				title: u,
+				onClickDelete: E,
+				mouseEnterBufferTime: b = 750
 			}) => {
-				const E = Object(i.useRef)(o.Outside),
-					[b, f] = Object(i.useState)(!1);
+				const f = Object(i.useRef)(o.Outside),
+					[g, T] = Object(i.useState)(!1);
 				return n.a.createElement("div", {
-					className: l.a.container,
-					onMouseEnter: u ? () => {
-						E.current = o.Inside, setTimeout(() => {
-							E.current === o.Inside && f(!0)
-						}, 750)
+					className: Object(a.a)(l.a.container, t),
+					onMouseEnter: E ? () => {
+						f.current = o.Inside, setTimeout(() => {
+							f.current === o.Inside && T(!0)
+						}, b)
 					} : void 0,
-					onMouseLeave: u ? () => {
-						E.current = o.Outside, f(!1)
+					onMouseLeave: E ? () => {
+						f.current = o.Outside, T(!1)
 					} : void 0
-				}, b && n.a.createElement("button", {
+				}, g && n.a.createElement("button", {
 					className: l.a.deleteButton,
-					onClick: u
+					onClick: E
 				}, n.a.createElement(r.b, {
 					className: l.a.deleteIcon
 				})), n.a.createElement("button", {
 					className: Object(a.a)(l.a.emoteButton, e),
-					disabled: s,
-					id: c,
-					title: h,
-					onClick: m,
-					onKeyDown: p,
+					disabled: c,
+					id: d,
+					title: u,
+					onClick: p,
+					onKeyDown: h,
 					tabIndex: 1
 				}, n.a.createElement("div", {
-					className: Object(a.a)(l.a.emoteImage, t),
+					className: Object(a.a)(l.a.emoteImage, s),
 					style: {
-						backgroundImage: `url(${d})`
+						backgroundImage: `url(${m})`
 					}
 				})))
 			}
@@ -186,9 +188,9 @@
 				v = s("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				S = s("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
 				_ = s("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
-				k = s("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
-				C = s("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
-				j = s.n(C);
+				C = s("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
+				j = s("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
+				k = s.n(j);
 			const w = e => `tooltip-emote-${e}`,
 				I = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => `https://meta.redditmedia.com/img/fortnitebr/emotes/${e}-2x.gif`);
 			class O extends a.a.Component {
@@ -228,14 +230,14 @@
 						})
 					}, this.onEmoteClick = e => {
 						let t = this.props.editorState;
-						const s = Object(k.f)(t);
+						const s = Object(C.f)(t);
 						if (s && this.state.emoteBeingTyped) {
 							const e = t.getSelection();
 							t = o.EditorState.forceSelection(t, e.merge({
 								anchorOffset: e.getFocusOffset() - s.length - 1
 							}))
 						}
-						t = Object(k.g)(e, t), this.props.onChange(t), this.closeTooltip()
+						t = Object(C.g)(e, t), this.props.onChange(t), this.closeTooltip()
 					}, this.onKeyPressedInTooltip = e => {
 						e.keyCode === b.a.ArrowDown ? this.handleDownArrow(e) : e.keyCode === b.a.ArrowLeft ? this.handleLeftArrow() : e.keyCode === b.a.ArrowRight ? this.handleRightArrow() : e.keyCode === b.a.ArrowUp ? this.handleUpArrow(e) : e.keyCode === b.a.Escape && (this.returnFocusToEditor(), this.closeTooltip())
 					}, this.handleUpArrow = e => {
@@ -251,14 +253,14 @@
 						e.preventDefault();
 						let s = t,
 							o = t;
-						for (; s.nextElementSibling && (!(s = s.nextElementSibling).classList.contains(j.a.emoteButton) || (o = s).offsetLeft !== t.offsetLeft););
+						for (; s.nextElementSibling && (!(s = s.nextElementSibling).classList.contains(k.a.emoteButton) || (o = s).offsetLeft !== t.offsetLeft););
 						o === t ? this.returnFocusToEditor() : o.focus()
 					}, this.handleLeftArrow = () => {
 						const e = document.activeElement && document.activeElement.previousElementSibling;
-						this.state.isTooltipVisible && e && e.classList.contains(j.a.emoteButton) && e.focus()
+						this.state.isTooltipVisible && e && e.classList.contains(k.a.emoteButton) && e.focus()
 					}, this.handleRightArrow = () => {
 						const e = document.activeElement && document.activeElement.nextElementSibling;
-						this.state.isTooltipVisible && e && e.classList.contains(j.a.emoteButton) && e.focus()
+						this.state.isTooltipVisible && e && e.classList.contains(k.a.emoteButton) && e.focus()
 					}
 				}
 				componentDidUpdate(e, t) {
@@ -289,7 +291,7 @@
 						editorState: e
 					} = this.props, t = e.getLastChangeType();
 					if (t !== v.d && t !== v.a) return;
-					const s = Object(k.f)(e);
+					const s = Object(C.f)(e);
 					if (!s) return void(this.state.emoteBeingTyped && this.setState({
 						isTooltipVisible: !1,
 						emoteBeingTyped: null
@@ -316,7 +318,7 @@
 						let n = o.EditorState.forceSelection(e, i.merge({
 							anchorOffset: i.getFocusOffset() - t.length - 2
 						}));
-						n = Object(k.g)(s[0], n), this.props.onChange(n)
+						n = Object(C.g)(s[0], n), this.props.onChange(n)
 					}
 					this.setState({
 						isTooltipVisible: !1,
@@ -343,7 +345,7 @@
 						isVisible: o,
 						setIsVisible: this.setIsVisisble,
 						onSetApi: this.props.onSetApi,
-						className: s ? void 0 : j.a.toolbarTooltip,
+						className: s ? void 0 : k.a.toolbarTooltip,
 						title: s ? i.fbt._('Emotes matching "{emote}"', [i.fbt._param("emote", s)], {
 							hk: "tVQ7S"
 						}) : i.fbt._("Add r/{communityName} Emote", [i.fbt._param("communityName", t.name)], {
@@ -351,33 +353,33 @@
 						}),
 						isSearching: !!s
 					}, a.a.createElement("div", {
-						className: j.a.body,
+						className: k.a.body,
 						ref: e => this.bodyEl = e
 					}, n.map((e, t) => a.a.createElement("article", {
-						className: j.a.emotePack,
+						className: k.a.emotePack,
 						key: t
 					}, e.title && a.a.createElement("header", {
-						className: j.a.emotePackTitle
+						className: k.a.emotePackTitle
 					}, e.title), a.a.createElement("div", {
-						className: j.a.emotes
+						className: k.a.emotes
 					}, e.emotes.map(e => a.a.createElement(_.a, {
 						key: e.id,
-						className: j.a.emoteButton,
+						className: k.a.emoteButton,
 						id: w(e.id),
 						imagePath: e.emoji.path,
 						title: e.id,
 						onClick: () => this.onEmoteClick(e),
 						onKeyDown: this.onKeyPressedInTooltip
 					}))))), !s && e && a.a.createElement("div", {
-						className: j.a.upsell
+						className: k.a.upsell
 					}, a.a.createElement("div", {
-						className: Object(m.a)(j.a.upsellMoreEmotes, j.a.emotes)
+						className: Object(m.a)(k.a.upsellMoreEmotes, k.a.emotes)
 					}, I.map((e, t) => a.a.createElement("img", {
-						className: j.a.upsellMoreEmotesImg,
+						className: k.a.upsellMoreEmotesImg,
 						src: e,
 						key: `${e}_${t}`
 					}))), a.a.createElement(f.k, {
-						className: j.a.upsellMoreEmotesButton,
+						className: k.a.upsellMoreEmotesButton,
 						to: l,
 						onClick: e => {
 							e.stopPropagation(), this.props.sendEvent(e => ({
@@ -392,18 +394,18 @@
 					}, i.fbt._("Get More Emotes", null, {
 						hk: "3GJcvl"
 					}))), !s && a.a.createElement("article", {
-						className: j.a.emotePack
+						className: k.a.emotePack
 					}, a.a.createElement("header", {
-						className: j.a.emotePackTitle
+						className: k.a.emotePackTitle
 					}, i.fbt._("Add Emote", null, {
 						hk: "2Z29Tz"
 					})), a.a.createElement("button", {
-						className: j.a.emoteButton,
+						className: k.a.emoteButton,
 						onClick: this.props.onOpenUploadDialog
 					}, a.a.createElement(T.a, {
-						className: j.a.addEmoteIcon
+						className: k.a.addEmoteIcon
 					}))), a.a.createElement("div", {
-						className: j.a.whiteScrim
+						className: k.a.whiteScrim
 					})))
 				}
 			}
@@ -523,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.b4b731b78f41e9f93221.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.c55a392c3b69bdd6993f.js.map
