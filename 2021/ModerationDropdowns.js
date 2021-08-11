@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.bc6dcdbd5c3577fe028b.js
-// Retrieved at 8/11/2021, 2:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.c6f7a229c0d99434ad39.js
+// Retrieved at 8/11/2021, 5:10:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -3181,7 +3181,7 @@
 			e.exports = JSON.parse('{"id":"614dbb8a54d2"}')
 		},
 		"./src/redditGQL/operations/ChangePredictionVote.json": function(e) {
-			e.exports = JSON.parse('{"id":"22d79ec54eb4"}')
+			e.exports = JSON.parse('{"id":"90c7b71fa93f"}')
 		},
 		"./src/redditGQL/operations/CreatePredictionTournament.json": function(e) {
 			e.exports = JSON.parse('{"id":"cb619ee4a1d7"}')
@@ -3218,4 +3218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.bc6dcdbd5c3577fe028b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.c6f7a229c0d99434ad39.js.map
