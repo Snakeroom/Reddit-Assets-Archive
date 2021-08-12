@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f5cf2a2f6d21af263fe0.js
-// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9bfd56e07c8fa6641d1d.js
+// Retrieved at 8/12/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3173,7 +3173,7 @@
 						subredditId: n
 					}));
 				Object(s.useEffect)(() => {
-					v(x ? Object(u.y)() : Object(u.u)(_))
+					v(x ? Object(u.z)() : Object(u.v)(_))
 				}, []);
 				const O = t && t.rank > 0;
 				return r.a.createElement("div", {
@@ -3316,7 +3316,7 @@
 					className: C.a.rank
 				}, n), r.a.createElement(c.a, {
 					className: C.a.userLink,
-					onClick: () => b(Object(l.f)({
+					onClick: () => b(Object(l.g)({
 						targetUserId: s.id
 					})),
 					to: `/user/${f}`
@@ -3417,7 +3417,7 @@
 					}
 				}),
 				j = {
-					fetchSubredditTopPredictors: d.i
+					fetchSubredditTopPredictors: d.j
 				},
 				S = Object(a.b)(O, j);
 
@@ -3467,7 +3467,7 @@
 					className: E.a.openModalButton,
 					isFullWidth: !0,
 					onClick: () => {
-						i && f(Object(b.i)()), v(!0)
+						i && f(Object(b.j)()), v(!0)
 					}
 				}, s.fbt._("See All", null, {
 					hk: "1Ozf02"
@@ -15597,4 +15597,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f5cf2a2f6d21af263fe0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9bfd56e07c8fa6641d1d.js.map

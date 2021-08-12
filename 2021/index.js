@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.8f1653e30bc690cefe80.js
-// Retrieved at 8/12/2021, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.26a456ad312fe22f8e30.js
+// Retrieved at 8/12/2021, 11:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less": function(e, t, n) {
@@ -66,9 +66,9 @@
 				O = n("./src/reddit/components/Econ/Prediction/PredictionOption/index.tsx"),
 				x = n("./src/reddit/components/Econ/Prediction/PredictionOption/GetHint.tsx"),
 				E = n("./src/reddit/components/Econ/Prediction/VoteAnimation/index.tsx"),
-				h = n("./src/reddit/controls/InternalLink/index.tsx"),
-				v = n("./src/reddit/helpers/trackers/predictions.ts"),
-				T = n("./src/reddit/hooks/useTracking.ts"),
+				v = n("./src/reddit/controls/InternalLink/index.tsx"),
+				T = n("./src/reddit/helpers/trackers/predictions.ts"),
+				h = n("./src/reddit/hooks/useTracking.ts"),
 				j = n("./src/reddit/selectors/subreddit.ts"),
 				I = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentOverlay/index.m.less"),
 				g = n.n(I);
@@ -79,14 +79,14 @@
 				subredditId: t,
 				isLastPrediction: n
 			}) => {
-				const o = Object(T.a)(),
+				const o = Object(h.a)(),
 					s = Object(u.e)(e => Object(j.T)(e, {
 						subredditId: t
 					}));
-				return i.a.createElement(h.a, {
+				return i.a.createElement(v.a, {
 					className: g.a.container,
 					to: `${null==s?void 0:s.url}predictions/`,
-					onClick: () => o(Object(v.h)(e))
+					onClick: () => o(Object(T.i)(e))
 				}, i.a.createElement("div", {
 					className: g.a.playTournament
 				}, n ? _._("View Tournament", null, {
@@ -121,7 +121,7 @@
 					l = Object(u.e)(t => Object(p.g)(t, {
 						postId: e.id
 					})),
-					[h, j] = Object(o.useState)(!1),
+					[v, j] = Object(o.useState)(!1),
 					{
 						isLoading: I,
 						isShowingVoteAnimation: g,
@@ -135,7 +135,7 @@
 							s = Object(u.e)(b.d),
 							r = Object(u.e)(D.p),
 							d = Object(u.e)(D.o),
-							c = Object(T.a)(),
+							c = Object(h.a)(),
 							a = Object(A.b)(),
 							l = Object(A.a)(),
 							{
@@ -148,7 +148,7 @@
 								selectedOptionId: E
 							} = t,
 							{
-								id: h,
+								id: v,
 								voteState: j
 							} = n,
 							[I, g] = i.a.useState(!1),
@@ -165,24 +165,24 @@
 								U || E || y(e.id)
 							},
 							predict: async t => {
-								if (t.currency === m.a.Coins && t.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(v.a);
+								if (t.currency === m.a.Coins && t.amount > s) return Object(k.promptUserToBuyMoreCoins)(), void c(T.a);
 								if (U) return l(N._("Error: Failed to make prediction. This prediction has already ended", null, {
 									hk: "22UWEr"
 								})), void y(null);
 								if (!P || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-								g(!0), c(Object(v.q)({
+								g(!0), c(Object(T.r)({
 									pollId: P,
 									selectedNumberTokens: t.amount
 								}));
 								try {
-									await o(Object(C.n)({
+									await o(Object(C.o)({
 										coinPackageId: t.id,
 										selectedOptionId: _,
 										price: t.amount,
 										pollId: P,
 										tournamentId: e,
 										tournamentPostId: n.id
-									})), r && j < B.a.upvoted && (o(Object(w.db)(h)), o(Object(w.db)(P)), p()), g(!1), y(null), d ? M(!0) : a({
+									})), r && j < B.a.upvoted && (o(Object(w.db)(v)), o(Object(w.db)(P)), p()), g(!1), y(null), d ? M(!0) : a({
 										duration: 5e3,
 										kind: S.b.SuccessCommunity,
 										text: N._("Thanks! See if you're right in {timeToResult}", [N._param("timeToResult", Object(f.a)(new Date(O), !0))], {
@@ -216,14 +216,14 @@
 					} = e,
 					Y = K < Date.now(),
 					$ = J === m.b.Cancelled || J === m.b.CancelInProgress,
-					q = null != Q ? Q : z;
+					Z = null != Q ? Q : z;
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: Object(r.a)(M.a.poll, {
 						[M.a.nightMode]: a
 					})
 				}, i.a.createElement("p", {
 					className: M.a.pollQuestion
-				}, R), q.map(e => i.a.createElement(E.a, {
+				}, R), Z.map(e => i.a.createElement(E.a, {
 					endsAt: K,
 					key: `prediction-option-${e.id}`,
 					isShowingVoteAnimation: g && G === e.id,
@@ -240,13 +240,13 @@
 					tournamentId: t,
 					userSelection: G,
 					userIsLoggedOut: !c,
-					votePercentage: (G || Y || h) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
-					isShowingHint: h
+					votePercentage: (G || Y || v) && e.voteCount && (null == l ? void 0 : l.totalVoters) ? Math.floor(e.voteCount / l.totalVoters * 100) : null,
+					isShowingHint: v
 				}))), !$ && i.a.createElement(x.a, {
-					disabled: g || h || !!G,
+					disabled: g || v || !!G,
 					isEnded: Y,
 					userSelection: G,
-					isShowingHint: h,
+					isShowingHint: v,
 					tournamentId: t,
 					onReveal: () => j(!0)
 				})), !!_ && i.a.createElement(P.b, {
@@ -275,14 +275,14 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = ({
 				postId: e
 			}) => {
-				const t = Object(T.a)(),
+				const t = Object(h.a)(),
 					n = Object(u.e)(t => Object(H.U)(t, {
 						postId: e
 					}));
-				return i.a.createElement(h.a, {
+				return i.a.createElement(v.a, {
 					className: G.a.viewTournament,
 					to: `${null==n?void 0:n.url}predictions/`,
-					onClick: () => t(Object(v.h)(e))
+					onClick: () => t(Object(T.i)(e))
 				}, K._("Go to Tournament", null, {
 					hk: "1QaAgH"
 				}))
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.8f1653e30bc690cefe80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.26a456ad312fe22f8e30.js.map
