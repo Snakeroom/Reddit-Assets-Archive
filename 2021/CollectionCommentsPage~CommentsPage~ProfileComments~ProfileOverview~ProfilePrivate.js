@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fe6bc06c0bc50f32f299.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e4a24d537d67309a71f9.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, n) {
@@ -947,15 +947,15 @@
 				hk: "4WgEW"
 			}));
 			var Z = n("./src/reddit/components/Comments/Comment/TopMeta/edited.m.less"),
-				q = n.n(Z);
+				K = n.n(Z);
 			const {
-				fbt: K
+				fbt: q
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = ({
 				compact: e,
 				editedAt: t
 			}) => a.a.createElement(C.a, {
-				className: q.a.editedText
-			}, K._("edited {time}", [K._param("time", a.a.createElement(W.d, {
+				className: K.a.editedText
+			}, q._("edited {time}", [q._param("time", a.a.createElement(W.d, {
 				seconds: t,
 				noPostfix: e,
 				shortenedUnit: e
@@ -3115,10 +3115,10 @@
 				a = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/posts.ts");
 			const i = Object(s.a)(e => Object(a.c)(e, {
-				experimentName: o.gd,
+				experimentName: o.cd,
 				experimentEligibilitySelector: a.a
-			}), r.H, (e, t) => e === o.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), r.H, (e, t) => e === o.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.fe6bc06c0bc50f32f299.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.e4a24d537d67309a71f9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.e57d6f95c162a32ee761.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.6a6852727b71c05331d5.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -15,7 +15,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), l = Object(r.c)({
 				selectedOptions: (e, {
 					subredditId: t
-				}) => Object(d.v)(e, {
+				}) => Object(d.r)(e, {
 					subredditId: t
 				})
 			});
@@ -29,10 +29,8 @@
 		},
 		"./src/reddit/components/CommunityTopics/PrimaryTopic/index.tsx": function(e, t, s) {
 			"use strict";
-			s.d(t, "b", (function() {
+			s.d(t, "a", (function() {
 				return N
-			})), s.d(t, "a", (function() {
-				return B
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -124,51 +122,51 @@
 					}))
 				},
 				j = {
-					availablePrimaryTags: C.t
+					availablePrimaryTags: C.p
 				},
 				w = Object(a.c)({
 					...j,
 					selectedPrimaryTag: (e, {
 						subredditId: t
-					}) => t && Object(C.w)(e, {
+					}) => t && Object(C.s)(e, {
 						subredditId: t
 					}) || null,
 					hasSecondaryTags: (e, {
 						subredditId: t
-					}) => Object.keys(Object(C.s)(e, {
+					}) => Object.keys(Object(C.o)(e, {
 						itemId: t
 					})).length > 0,
-					isSaving: C.H
+					isSaving: C.D
 				}),
 				D = Object(a.c)({
 					...j,
 					selectedPrimaryTag: (e, {
 						subredditId: t
-					}) => t && Object(C.B)(e, {
+					}) => t && Object(C.x)(e, {
 						subredditId: t
 					}) || null,
 					hasSecondaryTags: (e, {
 						subredditId: t
-					}) => Object.keys(Object(C.s)(e, {
+					}) => Object.keys(Object(C.o)(e, {
 						itemId: t
 					})).length > 0,
-					isSaving: C.H
+					isSaving: C.D
 				}),
 				_ = Object(a.c)({
 					...j,
-					selectedPrimaryTag: C.z,
+					selectedPrimaryTag: C.v,
 					hasSecondaryTags: () => !1,
-					isSaving: e => Object(C.H)(e)
+					isSaving: e => Object(C.D)(e)
 				}),
 				P = (e, {
 					subredditId: t,
 					onPrimarySelect: s
 				}) => ({
 					onPrimaryTopicSelected: n => {
-						n.isSelected || !s ? n.isSelected || (e(Object(d.j)({
+						n.isSelected || !s ? n.isSelected || (e(Object(d.g)({
 							primaryTagId: n.value,
 							subredditId: t
-						})), e(Object(d.s)(t, {
+						})), e(Object(d.p)(t, {
 							tagId: n.value,
 							state: S.d.TAGGED
 						}))) : s(n.value)
@@ -231,16 +229,16 @@
 					}))
 				}
 			}
-			const N = Object(r.b)(_, e => ({
-					onPrimaryTopicSelected: t => {
-						e(Object(d.d)({
-							primaryTagId: t.value
-						}))
-					}
-				}))(R),
-				B = Object(r.b)(D, P)(R),
+			Object(r.b)(_, e => ({
+				onPrimaryTopicSelected: t => {
+					e(Object(d.a)({
+						primaryTagId: t.value
+					}))
+				}
+			}))(R);
+			const N = Object(r.b)(D, P)(R),
 				k = Object(r.b)(w, P);
-			t.c = k(R)
+			t.b = k(R)
 		},
 		"./src/reddit/components/CommunityTopics/SuggestedTopics/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -290,13 +288,13 @@
 					suggestedOptions: (e, {
 						subredditId: t
 					}) => {
-						const s = Object(f.C)(e, {
+						const s = Object(f.y)(e, {
 								itemId: t
 							}),
-							n = Object(f.v)(e, {
+							n = Object(f.r)(e, {
 								subredditId: t
 							}),
-							o = Object(f.A)(e, {
+							o = Object(f.w)(e, {
 								subredditId: t
 							});
 						return s.filter(e => !!e.id && o !== e.id && !n.find(t => !!t.id && t.id === e.id))
@@ -308,7 +306,7 @@
 					context: o
 				}) => ({
 					onSuggestedOptionDismissed: s => {
-						e(Object(c.r)(t, [], [{
+						e(Object(c.o)(t, [], [{
 							subredditId: t,
 							tagId: s.id,
 							isRelevant: !1
@@ -317,14 +315,14 @@
 					onSuggestedOptionSelected: i => {
 						e((e, r) => {
 							const a = r();
-							Object(f.v)(a, {
+							Object(f.r)(a, {
 								subredditId: t
 							}).length >= g.a ? e(Object(l.f)({
 								...Object(l.e)(n.fbt._("You can only add up to {max number of topics} community topics", [n.fbt._param("max number of topics", g.a.toString())], {
 									hk: "1OySAh"
 								}), x.b.Error),
 								duration: l.a
-							})) : (e(Object(c.n)({
+							})) : (e(Object(c.k)({
 								subredditId: t,
 								option: i
 							})), Object(b.c)(r(), t, i, {
@@ -378,7 +376,7 @@
 				}),
 				subredditTags: (e, {
 					subredditId: t
-				}) => Object(m.s)(e, {
+				}) => Object(m.o)(e, {
 					itemId: t
 				}),
 				availableGlobalOptions: (e, {
@@ -388,13 +386,13 @@
 				}),
 				selectedOptions: (e, {
 					subredditId: t
-				}) => Object(m.v)(e, {
+				}) => Object(m.r)(e, {
 					subredditId: t
 				}),
-				isLoading: e => Object(m.F)(e),
+				isLoading: e => Object(m.B)(e),
 				currentInput: (e, {
 					subredditId: t
-				}) => Object(m.l)(e, {
+				}) => Object(m.i)(e, {
 					subredditId: t
 				})
 			});
@@ -462,7 +460,7 @@
 				context: s
 			}) => ({
 				optionSelected: n => {
-					e(Object(d.n)({
+					e(Object(d.k)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -472,7 +470,7 @@
 					})
 				},
 				optionDeselected: n => {
-					e(Object(d.m)({
+					e(Object(d.j)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -481,7 +479,7 @@
 						})
 					})
 				},
-				onInputChanged: s => e(Object(d.l)({
+				onInputChanged: s => e(Object(d.i)({
 					subredditId: t,
 					input: s
 				})),
@@ -759,17 +757,17 @@
 				P = s("./src/reddit/selectors/activeModalId.ts"),
 				R = s("./src/reddit/selectors/tags.ts"),
 				N = s("./src/reddit/constants/colors.ts"),
-				B = s("./src/reddit/selectors/tooltip.ts"),
-				k = s("./node_modules/uuid/v4.js"),
-				M = s.n(k),
-				F = s("./src/reddit/components/ContentTooltip/index.tsx"),
-				L = s("./src/reddit/icons/fonts/Info/index.tsx"),
+				k = s("./src/reddit/selectors/tooltip.ts"),
+				B = s("./node_modules/uuid/v4.js"),
+				M = s.n(B),
+				L = s("./src/reddit/components/ContentTooltip/index.tsx"),
+				F = s("./src/reddit/icons/fonts/Info/index.tsx"),
 				H = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less"),
 				A = s.n(H);
 			const {
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(r.c)({
-				activeTooltipId: B.a
+				activeTooltipId: k.a
 			}), G = Object(i.b)(K, e => ({
 				onHideTooltip: () => e(Object(l.i)()),
 				onShowTooltip: t => e(Object(l.f)({
@@ -803,11 +801,11 @@
 						id: this.state.tooltipId,
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.props.onHideTooltip
-					}, o.a.createElement(L.a, {
+					}, o.a.createElement(F.a, {
 						className: Object(a.a)(A.a.infoIcon, {
 							[A.a.activeInfoIcon]: this.tooltipIsOpen()
 						})
-					}), o.a.createElement(F.a, {
+					}), o.a.createElement(L.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
 						caretColor: V
@@ -823,25 +821,25 @@
 				J = s.n(Q);
 			const {
 				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 4, Y = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 4, z = Object(r.c)({
 				haveData: (e, {
 					subredditId: t
-				}) => Object(R.n)(e, {
+				}) => Object(R.k)(e, {
 					itemId: t
 				}),
-				hasPendingChanges: R.o,
-				hasSecondaryTags: R.p,
+				hasPendingChanges: R.l,
+				hasSecondaryTags: R.m,
 				unsavedChangesModalIsOpen: Object(P.b)(E.a),
-				isLoading: e => Object(R.F)(e),
-				selectedPrimaryTag: R.B,
+				isLoading: e => Object(R.B)(e),
+				selectedPrimaryTag: R.x,
 				isPostUpsellModalOpen: Object(P.b)(j.a.POST_FLOW_UPSELL_MODAL_ID)
-			}), $ = Object(i.b)(Y, (e, {
+			}), $ = Object(i.b)(z, (e, {
 				subredditId: t,
 				context: s
 			}) => ({
-				onTopicsRequested: () => e(Object(c.k)(t, s)),
-				onSaveRequested: () => e(Object(c.i)(t, s, !0)),
-				resetSelection: () => e(Object(c.g)(t)),
+				onTopicsRequested: () => e(Object(c.h)(t, s)),
+				onSaveRequested: () => e(Object(c.f)(t, s, !0)),
+				resetSelection: () => e(Object(c.d)(t)),
 				openUnsavedChangesModal: () => {
 					e(Object(l.i)()), e(Object(d.h)(E.a))
 				}
@@ -969,7 +967,7 @@
 						onBlur: this.onBlur,
 						childClassNames: ee,
 						readOnlyMode: t ? w.a.editable : w.a.focusableReadOnly,
-						maxTopicsToDisplay: t ? void 0 : z
+						maxTopicsToDisplay: t ? void 0 : Y
 					}, !t && o.a.createElement(_.a, {
 						name: "edit"
 					}), this.renderFocusGrabber()), t && this.renderControlRow())
@@ -1645,4 +1643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.e57d6f95c162a32ee761.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.6a6852727b71c05331d5.js.map

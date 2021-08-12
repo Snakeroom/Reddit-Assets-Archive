@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d22a11c44a3cbb0dbe13.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6f448e7036258365768e.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2980,7 +2980,7 @@
 			const le = Object(c.a)(T.N, e => e.some(de.c)),
 				ue = Object(c.a)(le, e => e),
 				me = (e, t) => Object(ae.c)(e, {
-					experimentName: ce.xb,
+					experimentName: ce.tb,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -3096,7 +3096,7 @@
 						postIds: Ae,
 						onceInViewport: Ne,
 						showPromotedCTA: Le
-					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = _e && Fe, Me = Object(a.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(xe), Ve = !!xe.media && xe.media.type === E.o.RTJSON, We = Pe && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ce.jd.OnlyTitles)(Se) && !Object(oe.a)(xe), Ke = (e => e === ce.jd.MediumHeight)(Se) && !Object(oe.a)(xe), ze = (e => {
+					} = e, De = !!e.redditStyle || !!e["data-redditstyle"], Re = De ? void 0 : b, Fe = Object(l.a)(be), Ue = _e && Fe, Me = Object(a.a)(be), Be = Object(d.a)(be), Ge = Object(G.c)(xe), Ve = !!xe.media && xe.media.type === E.o.RTJSON, We = Pe && Ve, Ye = s ? s - Y.a : void 0, qe = !(C && z || ne), He = (e => e === ce.fd.OnlyTitles)(Se) && !Object(oe.a)(xe), Ke = (e => e === ce.fd.MediumHeight)(Se) && !Object(oe.a)(xe), ze = (e => {
 						const {
 							post: t,
 							postIds: s,
@@ -3953,7 +3953,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: n
-					} = t, r = Object(M.a)(), i = Object(B.a)(m.qc) === m.uc.Enabled;
+					} = t, r = Object(M.a)(), i = Object(B.a)(m.mc) === m.qc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(K, {
 						nowrap: e.nowrap
 					}, o.a.createElement(J, e));
@@ -7754,9 +7754,9 @@
 			const o = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Gb
+					experimentName: n.Cb
 				});
-				return !(!t || Object(n.ke)(t))
+				return !(!t || Object(n.ge)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, s) {
@@ -7836,8 +7836,8 @@
 				b = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: n.db
-					}) === n.pb.Enabled
+						experimentName: n.bb
+					}) === n.mb.Enabled
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, s) {
@@ -8148,7 +8148,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const c = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.ke)(t)
+					return Boolean(t) && !Object(r.ge)(t)
 				},
 				a = Object(n.a)(c, o.d, (e, t) => e && !t)
 		},
@@ -8265,9 +8265,9 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const c = Object(n.a)(e => Object(o.c)(e, {
-				experimentName: r.gd,
+				experimentName: r.cd,
 				experimentEligibilitySelector: o.a
-			}), i.H, (e, t) => e === r.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), i.H, (e, t) => e === r.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/reddit/selectors/userFlair.ts": function(e, t, s) {
 			"use strict";
@@ -8422,4 +8422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.d22a11c44a3cbb0dbe13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.6f448e7036258365768e.js.map

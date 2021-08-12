@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3562b344fb9c8d420c0a.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4f9ebc7314125e428b9d.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -4487,12 +4487,12 @@
 					pageLayer: t
 				}) => Object(i.L)(t), (e, t, r) => !e && !t && r),
 				l = Object(o.a)((e, t) => Object(s.c)(e, {
-					experimentName: n.yb,
+					experimentName: n.ub,
 					experimentEligibilitySelector: e => a(e, t)
 				}), e => e),
-				d = e => e === n.Zd.NoCommunityWidgets,
-				u = e => e === n.Zd.NoRulesModerators,
-				f = e => e === n.Zd.RelatedPostsDu
+				d = e => e === n.Vd.NoCommunityWidgets,
+				u = e => e === n.Vd.NoRulesModerators,
+				f = e => e === n.Vd.RelatedPostsDu
 		},
 		"./src/reddit/selectors/tooltip.ts": function(e, t, r) {
 			"use strict";
@@ -4506,4 +4506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3562b344fb9c8d420c0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.4f9ebc7314125e428b9d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.3c68aec69cb1b6adba88.js
-// Retrieved at 8/10/2021, 6:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminCommunityTopics.70332f59a3f40f66c982.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminCommunityTopics"], {
 		"./src/reddit/components/CommunityTopics/AdminCommunityTopics/ModeratorSelectedOption/index.m.less": function(e, t, s) {
@@ -53,7 +53,7 @@
 				}) => {
 					const s = Object(m.c)(e);
 					if (!s || !t.id) return !0;
-					const n = Object(O.s)(e, {
+					const n = Object(O.o)(e, {
 						itemId: s
 					})[t.id];
 					return !n || n.isRelevant
@@ -61,7 +61,7 @@
 			});
 			var C = Object(r.b)(g, (e, t) => ({
 					onModeratorSelectedOptionClicked: (s, n) => {
-						s && t.option.id && e(Object(a.r)(s, [{
+						s && t.option.id && e(Object(a.o)(s, [{
 							subredditId: s,
 							tagId: t.option.id,
 							isRelevant: !n
@@ -95,8 +95,8 @@
 				E = s("./src/reddit/models/Toast/index.ts"),
 				j = s("./src/reddit/reducers/tags/selected/index.ts"),
 				w = s("./src/reddit/components/CommunityTopics/AdminCommunityTopics/index.m.less"),
-				D = s.n(w);
-			const R = Object(c.c)({
+				R = s.n(w);
+			const D = Object(c.c)({
 					availableSubredditTags: (e, {
 						subredditId: t
 					}) => Object(O.d)(e, {
@@ -104,7 +104,7 @@
 					}),
 					subredditTags: (e, {
 						subredditId: t
-					}) => Object(O.D)(e, {
+					}) => Object(O.z)(e, {
 						itemId: t
 					}),
 					availableGlobalOptions: (e, {
@@ -115,38 +115,38 @@
 					}),
 					selectedOptions: (e, {
 						subredditId: t
-					}) => Object(O.x)(e, {
+					}) => Object(O.t)(e, {
 						subredditId: t
 					}),
-					isLoading: e => Object(O.F)(e),
+					isLoading: e => Object(O.B)(e),
 					currentInput: (e, {
 						subredditId: t
-					}) => Object(O.m)(e, {
+					}) => Object(O.j)(e, {
 						subredditId: t
 					})
 				}),
-				B = Object(r.b)(R, (e, {
+				B = Object(r.b)(D, (e, {
 					subredditId: t
 				}) => ({
 					optionSelected: s => {
-						e(Object(a.q)({
+						e(Object(a.n)({
 							subredditId: t,
 							option: s
-						})), e(Object(a.h)(t, {
+						})), e(Object(a.e)(t, {
 							...s,
 							action: j.a.ADD
 						}, h.a.communitySettings))
 					},
 					optionDeselected: s => {
-						e(Object(a.p)({
+						e(Object(a.m)({
 							subredditId: t,
 							option: s
-						})), e(Object(a.e)(t, {
+						})), e(Object(a.b)(t, {
 							...s,
 							action: j.a.REMOVE
 						}, h.a.communitySettings))
 					},
-					onInputChanged: s => e(Object(a.o)({
+					onInputChanged: s => e(Object(a.l)({
 						subredditId: t,
 						input: s
 					})),
@@ -175,17 +175,17 @@
 				}
 				render() {
 					return i.a.createElement("div", {
-						className: D.a.container,
+						className: R.a.container,
 						onClick: this.onContainerClick
 					}, i.a.createElement(v.o, {
-						className: D.a.expandButton,
+						className: R.a.expandButton,
 						onClick: this.onExpandButtonClick
 					}, n.fbt._("Admin Community Topics", null, {
 						hk: "37srVU"
 					}), this.state.isOpen ? i.a.createElement(T.a, null) : i.a.createElement(S.a, null)), this.state.isOpen && i.a.createElement("div", {
-						className: D.a.content
+						className: R.a.content
 					}, i.a.createElement("div", {
-						className: D.a.header
+						className: R.a.header
 					}, n.fbt._("Moderator Added Topics", null, {
 						hk: "3GQoal"
 					})), i.a.createElement(p.b, {
@@ -194,7 +194,7 @@
 						readOnlyMode: y.a.readOnly,
 						selectedOptionComponent: C
 					}), i.a.createElement("br", null), i.a.createElement("div", {
-						className: D.a.header
+						className: R.a.header
 					}, n.fbt._("Admin Suggested Topics", null, {
 						hk: "12wo5g"
 					})), i.a.createElement(B, {
@@ -206,7 +206,7 @@
 			t.default = Object(r.b)(null, (e, {
 				subredditId: t
 			}) => ({
-				subredditDataRequested: () => e(Object(a.k)(t, h.a.communitySettings))
+				subredditDataRequested: () => e(Object(a.h)(t, h.a.communitySettings))
 			}))(_)
 		},
 		"./src/reddit/components/CommunityTopics/index.m.less": function(e, t, s) {
@@ -241,7 +241,7 @@
 				}),
 				subredditTags: (e, {
 					subredditId: t
-				}) => Object(m.s)(e, {
+				}) => Object(m.o)(e, {
 					itemId: t
 				}),
 				availableGlobalOptions: (e, {
@@ -251,13 +251,13 @@
 				}),
 				selectedOptions: (e, {
 					subredditId: t
-				}) => Object(m.v)(e, {
+				}) => Object(m.r)(e, {
 					subredditId: t
 				}),
-				isLoading: e => Object(m.F)(e),
+				isLoading: e => Object(m.B)(e),
 				currentInput: (e, {
 					subredditId: t
-				}) => Object(m.l)(e, {
+				}) => Object(m.i)(e, {
 					subredditId: t
 				})
 			});
@@ -325,7 +325,7 @@
 				context: s
 			}) => ({
 				optionSelected: n => {
-					e(Object(d.n)({
+					e(Object(d.k)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -335,7 +335,7 @@
 					})
 				},
 				optionDeselected: n => {
-					e(Object(d.m)({
+					e(Object(d.j)({
 						subredditId: t,
 						option: n
 					})), e((e, o) => {
@@ -344,7 +344,7 @@
 						})
 					})
 				},
-				onInputChanged: s => e(Object(d.l)({
+				onInputChanged: s => e(Object(d.i)({
 					subredditId: t,
 					input: s
 				})),
@@ -715,8 +715,8 @@
 			}
 			var j = s("./node_modules/reselect/es/index.js");
 			const w = [],
-				D = {};
-			class R extends r.a.Component {
+				R = {};
+			class D extends r.a.Component {
 				constructor(e) {
 					super(e), this._selectableOptionsSelector = Object(j.a)(e => e.availableOptions || w, e => e.input, (e, t) => e.filter(e => {
 						const s = e.displayText.toLowerCase(),
@@ -753,7 +753,7 @@
 				}
 				render() {
 					const {
-						childClassNames: e = D
+						childClassNames: e = R
 					} = this.props;
 					return r.a.createElement("div", {
 						className: this.props.className,
@@ -784,7 +784,7 @@
 					}, this.props.children))
 				}
 			}
-			t.a = R
+			t.a = D
 		},
 		"./src/reddit/helpers/readOnlyMode/index.ts": function(e, t, s) {
 			"use strict";
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.3c68aec69cb1b6adba88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminCommunityTopics.70332f59a3f40f66c982.js.map

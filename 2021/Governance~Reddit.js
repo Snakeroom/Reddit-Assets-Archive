@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.8a9512439a4fa1a5d9f8.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9a79012ae7979f7687cb.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1361,7 +1361,7 @@
 					s || c || !Object(d.e)(n) && !Object(d.d)(n) || e(Object(a.f)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: n.U
+						experimentName: n.S
 					})
 				}
 		},
@@ -3303,7 +3303,7 @@
 			const j = e => g.d.reCaptchaEnterprise(e) && !Object(w.d)(e),
 				D = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...n.d)),
-					experimentName: b.td
+					experimentName: b.pd
 				}),
 				T = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				A = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4015,37 +4015,36 @@
 		"./src/reddit/actions/subredditCreation.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "d", (function() {
-				return S
+				return g
 			})), r.d(t, "c", (function() {
-				return v
+				return S
 			})), r.d(t, "e", (function() {
-				return w
+				return v
 			})), r.d(t, "b", (function() {
-				return j
+				return w
 			})), r.d(t, "a", (function() {
-				return D
+				return j
 			})), r.d(t, "f", (function() {
-				return R
+				return P
 			})), r.d(t, "g", (function() {
-				return C
+				return R
 			})), r.d(t, "h", (function() {
-				return N
+				return C
 			})), r.d(t, "i", (function() {
-				return L
+				return N
 			}));
 			var s = r("./node_modules/react-router-redux/es/index.js"),
 				a = r("./src/lib/makeActionCreator/index.ts"),
 				n = r("./src/reddit/actions/postCreation/general.ts"),
 				c = r("./src/reddit/actions/modal.ts"),
 				o = r("./src/reddit/actions/postCreation/submit.ts"),
-				d = r("./src/reddit/constants/experiments.ts"),
-				i = r("./src/reddit/constants/modals.ts"),
-				u = r("./src/lib/constants/index.ts"),
-				l = r("./src/lib/makeApiRequest/index.ts"),
-				p = r("./src/lib/omitHeaders/index.ts"),
-				b = r("./src/reddit/constants/headers.ts"),
-				f = r("./src/reddit/helpers/addRedesignIdentifier/index.ts");
-			const y = e => ({
+				d = r("./src/reddit/constants/modals.ts"),
+				i = r("./src/lib/constants/index.ts"),
+				u = r("./src/lib/makeApiRequest/index.ts"),
+				l = r("./src/lib/omitHeaders/index.ts"),
+				p = r("./src/reddit/constants/headers.ts"),
+				b = r("./src/reddit/helpers/addRedesignIdentifier/index.ts");
+			const f = e => ({
 				public_description: e.publicDescription,
 				name: e.name,
 				type: e.type,
@@ -4056,73 +4055,73 @@
 				new_tags: e.newTags.join(","),
 				primary_tag: e.primaryTagId
 			});
-			var m = r("./src/lib/makeGqlRequest/index.ts"),
-				h = r("./src/redditGQL/operations/ValidateCreateSubreddit.json");
-			var E = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				O = r("./src/reddit/helpers/trackers/subredditCreation.ts"),
-				_ = r("./src/reddit/selectors/posts.ts"),
-				I = r("./src/reddit/selectors/subreddit.ts"),
-				g = r("./src/telemetry/index.ts");
-			const S = "SUBREDDIT__CREATE_SET_INITIAL_CROSSPOST",
-				v = "SUBREDDIT__CREATE_PENDING",
-				w = "SUBREDDIT__CREATE_SUCCEEDED",
-				j = "SUBREDDIT__CREATE_FAILED",
-				D = "SUBREDDIT__CREATE_CLEARED",
+			var y = r("./src/lib/makeGqlRequest/index.ts"),
+				m = r("./src/redditGQL/operations/ValidateCreateSubreddit.json");
+			var h = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				E = r("./src/reddit/helpers/trackers/subredditCreation.ts"),
+				O = r("./src/reddit/selectors/posts.ts"),
+				_ = r("./src/reddit/selectors/subreddit.ts"),
+				I = r("./src/telemetry/index.ts");
+			const g = "SUBREDDIT__CREATE_SET_INITIAL_CROSSPOST",
+				S = "SUBREDDIT__CREATE_PENDING",
+				v = "SUBREDDIT__CREATE_SUCCEEDED",
+				w = "SUBREDDIT__CREATE_FAILED",
+				j = "SUBREDDIT__CREATE_CLEARED",
+				D = Object(a.a)(S),
 				T = Object(a.a)(v),
 				A = Object(a.a)(w),
 				P = Object(a.a)(j),
-				R = Object(a.a)(D),
-				C = Object(a.a)(S),
-				N = e => async (t, r, {
+				R = Object(a.a)(g),
+				C = e => async (t, r, {
 					apiContext: a
 				}) => {
-					const m = r(),
+					const y = r(),
 						{
-							name: h,
-							type: S,
-							crosspostId: v
+							name: m,
+							type: g,
+							crosspostId: S
 						} = e;
-					if (Object(I.k)(m)) return;
-					t(T({
-						subredditName: h
+					if (Object(_.k)(y)) return;
+					t(D({
+						subredditName: m
 					}));
-					const w = await ((e, t) => Object(l.a)(Object(p.a)(e, [b.a]), {
-						endpoint: Object(f.a)(`${e.apiUrl}/api/v1/subreddit/create_subreddit`),
-						method: u.hb.POST,
-						data: y(t)
+					const v = await ((e, t) => Object(u.a)(Object(l.a)(e, [p.a]), {
+						endpoint: Object(b.a)(`${e.apiUrl}/api/v1/subreddit/create_subreddit`),
+						method: i.hb.POST,
+						data: f(t)
 					}))(a(), e);
-					if (w.ok) {
-						const r = w.body,
+					if (v.ok) {
+						const r = v.body,
 							a = r.fullname;
-						if (Object(g.a)(Object(O.d)(S, e, a)(m)), t(A({
-								subredditName: h
-							})), v) {
-							const e = Object(_.H)(m, {
-								postId: v
+						if (Object(I.a)(Object(E.d)(g, e, a)(y)), t(T({
+								subredditName: m
+							})), S) {
+							const e = Object(O.H)(y, {
+								postId: S
 							});
 							t(Object(n.h)(e.title)), await t(Object(o.b)({
 								destSubreddit: {
 									...r,
 									isProfile: !1
 								},
-								sourcePostId: v,
+								sourcePostId: S,
 								postFieldValidationPending: Promise.resolve()
 							}))
 						}
-						await t(Object(s.b)(`${r.path}`)), (null == e ? void 0 : e.isInSrCreationFlowM2Experiment) === d.ub.Upsell && (t(Object(c.h)(i.a.POST_FLOW_UPSELL_MODAL_ID)), Object(g.a)(Object(O.g)()(m))), Object(E.b)(E.a.SubredditCreation)
-					} else w.error && Object(g.a)(Object(O.h)(w.error.type, h)(m)), t(P({
-						subredditName: h,
-						error: w.error
+						await t(Object(s.b)(`${r.path}`)), t(Object(c.h)(d.a.POST_FLOW_UPSELL_MODAL_ID)), Object(I.a)(Object(E.g)()(y)), Object(h.b)(h.a.SubredditCreation)
+					} else v.error && Object(I.a)(Object(E.h)(v.error.type, m)(y)), t(A({
+						subredditName: m,
+						error: v.error
 					}))
-				}, L = e => async (t, r, {
+				}, N = e => async (t, r, {
 					gqlContext: s
 				}) => {
 					const a = r(),
 						n = {
 							name: e
 						},
-						c = await ((e, t) => Object(m.a)(e, {
-							...h,
+						c = await ((e, t) => Object(y.a)(e, {
+							...m,
 							variables: t
 						}))(s(), {
 							input: n
@@ -4139,11 +4138,11 @@
 							}],
 							type: o[0].code
 						};
-						t(P({
+						t(A({
 							subredditName: e,
 							error: r
-						})), r && Object(g.a)(Object(O.h)(r.type, e)(a))
-					} else await t(R())
+						})), r && Object(I.a)(Object(E.h)(r.type, e)(a))
+					} else await t(P())
 				}
 		},
 		"./src/reddit/actions/subredditCrosspostable.ts": function(e, t, r) {
@@ -4520,14 +4519,14 @@
 					}) && t(Object(c.db)(e))
 				}, E = (e, t) => {
 					const r = Object(p.d)(e, {
-						experimentName: d.de
+						experimentName: d.Zd
 					});
 					let a = "";
-					return (null == r ? void 0 : r.variant) === d.ee.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
+					return (null == r ? void 0 : r.variant) === d.ae.Variant1 ? a = t ? s.fbt._("Was that a good post? Upvote it so it gets seen by more people", null, {
 						hk: "2NOllx"
 					}) : s.fbt._("Was this a good post? Upvote it so it gets seen by more people", null, {
 						hk: "K1yBi"
-					}) : (null == r ? void 0 : r.variant) === d.ee.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
+					}) : (null == r ? void 0 : r.variant) === d.ae.Variant2 && (a = t ? s.fbt._("If you enjoyed that post, upvote it so that more redditors will see it too.", null, {
 						hk: "1Y6B4I"
 					}) : s.fbt._("If you enjoyed this post, upvote it so that more redditors will see it too.", null, {
 						hk: "HR9Ye"
@@ -5283,8 +5282,8 @@
 				Q = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const J = Object($.a)(e => Object(Q.c)(e, {
 				experimentEligibilitySelector: Q.a,
-				experimentName: K.gb
-			}), e => e === K.rb.Enabled);
+				experimentName: K.eb
+			}), e => e === K.ob.Enabled);
 			var z = r("./src/reddit/constants/parameters.ts");
 
 			function X({
@@ -23412,14 +23411,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: a.U,
+					experimentName: a.S,
 					expEventOverride: !1
 				}), e => e),
-				u = e => e === a.N.Onetap,
-				l = e => e === a.N.OnetapAuto,
+				u = e => e === a.L.Onetap,
+				l = e => e === a.L.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.ke)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(a.ge)(t))
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, r) {
 			"use strict";
@@ -23433,14 +23432,14 @@
 			const n = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.fd
-					}) === s.pd.Enabled
+						experimentName: s.bd
+					}) === s.ld.Enabled
 				},
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.ed
-					}) === s.od.Enabled
+						experimentName: s.ad
+					}) === s.kd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/upvotePrompt.ts": function(e, t, r) {
@@ -23468,9 +23467,9 @@
 					if (!i(e, t)) return !1;
 					const r = Object(a.c)(e, {
 						experimentEligibilitySelector: a.a,
-						experimentName: s.de
+						experimentName: s.Zd
 					});
-					return r === s.ee.Variant1 || r === s.ee.Variant2
+					return r === s.ae.Variant1 || r === s.ae.Variant2
 				}
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
@@ -23668,4 +23667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.8a9512439a4fa1a5d9f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9a79012ae7979f7687cb.js.map

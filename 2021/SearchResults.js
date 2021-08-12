@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.78dc471e26a3d5a8404a.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.9224130193f0e29ce0e0.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2155,7 +2155,7 @@
 					className: e,
 					disabled: h || l,
 					onClick: e => {
-						b && b(e), s === m.Od.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
+						b && b(e), s === m.Kd.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
 					},
 					onMouseEnter: o,
 					onMouseLeave: i,
@@ -11033,9 +11033,9 @@
 			}));
 			var r = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => r.Bd.Treatment1 === Object(n.c)(e, {
+			const a = e => r.xd.Treatment1 === Object(n.c)(e, {
 				experimentEligibilitySelector: n.a,
-				experimentName: r.sd
+				experimentName: r.od
 			})
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11209,13 +11209,13 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = s("./src/reddit/selectors/posts.ts");
 			const i = Object(r.a)(e => Object(a.c)(e, {
-				experimentName: n.gd,
+				experimentName: n.cd,
 				experimentEligibilitySelector: a.a
-			}), o.H, (e, t) => e === n.qd.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
+			}), o.H, (e, t) => e === n.md.Enabled && (null == t ? void 0 : t.isCreatedFromAdsUi) || (null == t ? void 0 : t.isSponsored))
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"b1787cdf2fd4"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.78dc471e26a3d5a8404a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.9224130193f0e29ce0e0.js.map

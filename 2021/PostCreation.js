@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.5ad22656f8dfed9cc70a.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.fcace3e7b9a95fc53304.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8456,7 +8456,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, r = Object(B.a)(), a = Object(U.a)(m.qc) === m.uc.Enabled;
+					} = t, r = Object(B.a)(), a = Object(U.a)(m.mc) === m.qc.Enabled;
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(z, {
 						nowrap: e.nowrap
 					}, s.a.createElement(Y, e));
@@ -22404,10 +22404,10 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.Uc,
+				experimentName: o.Qc,
 				experimentEligibilitySelector: r.a,
 				expEventOverride: !1
-			}) === o.Zc.Enabled
+			}) === o.Vc.Enabled
 		},
 		"./src/reddit/selectors/experiments/presenceIndicator.ts": function(e, t, n) {
 			"use strict";
@@ -22421,14 +22421,14 @@
 			const s = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.fd
-					}) === o.pd.Enabled
+						experimentName: o.bd
+					}) === o.ld.Enabled
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: o.ed
-					}) === o.od.Enabled
+						experimentName: o.ad
+					}) === o.kd.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, n) {
@@ -22444,8 +22444,8 @@
 				const t = Object(s.j)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.fb
-				}) === o.hc
+					experimentName: o.db
+				}) === o.dc
 			}
 		},
 		"./src/reddit/selectors/features/predictions/creation/index.ts": function(e, t, n) {
@@ -23164,4 +23164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5ad22656f8dfed9cc70a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.fcace3e7b9a95fc53304.js.map

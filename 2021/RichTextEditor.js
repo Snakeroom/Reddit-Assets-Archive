@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.53189067476f53650e2b.js
-// Retrieved at 8/12/2021, 6:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.d3fe67ff3bba17593122.js
+// Retrieved at 8/12/2021, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4818,7 +4818,7 @@
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: s.C
-				}), e => e === s.I.Enabled)
+				}), e => e === s.H.Enabled)
 		},
 		"./src/reddit/selectors/experiments/replyWithUpvote.ts": function(e, t, o) {
 			"use strict";
@@ -4833,8 +4833,8 @@
 				const t = Object(r.j)(e);
 				return !(!t || (null == t ? void 0 : t.karma) && t.karma.fromPosts < 5 && t.karma.fromComments < 10) && Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.fb
-				}) === n.hc
+					experimentName: n.db
+				}) === n.dc
 			}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, o) {
@@ -4875,4 +4875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.53189067476f53650e2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d3fe67ff3bba17593122.js.map
