@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.13fca68ac78f487287e1.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.79b7df63189960dc0823.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1606,7 +1606,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.ab)(),
+				const t = Object(p.bb)(),
 					s = Object(p.v)(t),
 					n = Object(R.a)(),
 					a = Object(i.e)(a => K(a, {
@@ -1650,7 +1650,7 @@
 				h = o.a.div("Container", u.a),
 				x = Object(i.a)(c.b),
 				g = Object(l.t)({
-					isProfileListingPage: l.F
+					isProfileListingPage: l.G
 				});
 			class f extends r.a.Component {
 				constructor(e) {
@@ -2011,4 +2011,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.13fca68ac78f487287e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.79b7df63189960dc0823.js.map

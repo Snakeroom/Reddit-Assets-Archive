@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6fc2bbabc74dccab0c6a.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.afd1841260c79e040d1b.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost", "Reddit~StandalonePostPage~reddit-components-MediumPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1610,11 +1610,11 @@
 				ge = () => Object(a.c)({
 					activeModalId: x.a,
 					crosspost: y.d,
-					flairStyleTemplate: ne.S,
+					flairStyleTemplate: ne.T,
 					isActive: y.j,
 					isExpanded: y.m,
 					showPromotedCTA: fe.a,
-					layout: ne.O,
+					layout: ne.P,
 					moderatorPermissions: g.k,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
@@ -3400,7 +3400,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(p.ab)(),
+				const t = Object(p.bb)(),
 					n = Object(p.v)(t),
 					s = Object(B.a)(),
 					r = Object(i.e)(r => K(r, {
@@ -7046,4 +7046,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.6fc2bbabc74dccab0c6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.afd1841260c79e040d1b.js.map

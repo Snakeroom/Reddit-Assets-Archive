@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.386c40b43c9416a0c6b7.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.928ba6d3b8edcf38f612.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -591,8 +591,8 @@
 				G = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				Z = s("./src/reddit/selectors/postFlair.ts"),
 				J = s("./src/reddit/selectors/posts.ts"),
-				K = s("./src/reddit/selectors/showPromotedCTA.ts"),
-				X = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
+				X = s("./src/reddit/selectors/showPromotedCTA.ts"),
+				K = s("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
 				Y = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				Q = s.n(Y),
 				$ = s("./src/reddit/selectors/i18n/index.ts"),
@@ -610,12 +610,12 @@
 			}
 			const oe = () => Object(a.c)({
 					crosspost: J.d,
-					flairStyleTemplate: N.S,
+					flairStyleTemplate: N.T,
 					isActive: J.j,
 					isCurrentUserProfilePost: J.l,
 					isPostChainDismissed: q.c,
 					isPostChained: q.d,
-					showPromotedCTA: K.a,
+					showPromotedCTA: X.a,
 					moderatorPermissions: G.k,
 					shouldShowNsfwListingBelow: $.b,
 					showAwardsPlaque: U.a,
@@ -639,7 +639,7 @@
 						isFrontpage: G,
 						isOverlay: Z,
 						isPostChainDismissed: J,
-						isPostChained: K,
+						isPostChained: X,
 						isTopicPage: Y,
 						isCommentCountAnimationEnabled: $,
 						isVoteCountAnimationEnabled: ee,
@@ -742,7 +742,7 @@
 						className: te.a.sourceLink,
 						isCommentsPage: z,
 						post: de
-					})), !Be && Le && n.a.createElement(X.a, {
+					})), !Be && Le && n.a.createElement(K.a, {
 						crosspost: s ? de : void 0,
 						hasModPostPerms: Ie,
 						isCommentsPage: z,
@@ -805,7 +805,7 @@
 						postIds: null != ue ? ue : [],
 						subredditId: null == Oe ? void 0 : Oe.id
 					}));
-					return n.a.createElement(n.a.Fragment, null, He, K && !J && n.a.createElement(v.a, {
+					return n.a.createElement(n.a.Fragment, null, He, X && !J && n.a.createElement(v.a, {
 						className: te.a.chain,
 						listingKey: ne,
 						listingName: re,
@@ -1043,8 +1043,8 @@
 					return s ? `${o}--${s}` : o
 				},
 				U = Object(x.t)({
-					isProfilePostListing: x.I,
-					isSubreddit: x.K,
+					isProfilePostListing: x.J,
+					isSubreddit: x.L,
 					pageLayer: e => e
 				}),
 				D = Object(a.c)({
@@ -1053,7 +1053,7 @@
 					}) => Object(T.q)(e, {
 						postId: t.id
 					}),
-					modModeEnabled: x.Q
+					modModeEnabled: x.R
 				}),
 				H = Object(i.b)(D, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -1084,8 +1084,8 @@
 					},
 					Z = Object(i.e)(I.a),
 					J = z.isSponsored && (Z === p.p.NoLockIcon || Z === p.p.PromotedGrey),
-					K = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === b.a.SUBREDDIT,
-					X = V("Approve", z.id, q),
+					X = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === b.a.SUBREDDIT,
+					K = V("Approve", z.id, q),
 					Y = V("Archived", z.id, q),
 					Q = V("Automod", z.id, q),
 					$ = V("Lock", z.id, q),
@@ -1149,11 +1149,11 @@
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.approveIcon),
 					desc: Object(v.a)(z),
-					id: X,
-					onMouseEnter: H(X),
+					id: K,
+					onMouseEnter: H(K),
 					onMouseLeave: U
 				}), r.a.createElement(u.c, F({
-					tooltipId: X,
+					tooltipId: K,
 					text: Object(v.a)(z)
 				}, G))), Object(h.a)(z) && !ie && r.a.createElement(n.Fragment, null, r.a.createElement(j.a, {
 					isFilled: !0,
@@ -1162,7 +1162,7 @@
 					id: te,
 					onMouseEnter: H(te),
 					onMouseLeave: U
-				}), K && r.a.createElement(m.a, {
+				}), X && r.a.createElement(m.a, {
 					className: N.a.addRemovalReason,
 					onClick: D,
 					text: o.fbt._("Add a removal reason", null, {
@@ -2330,4 +2330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.386c40b43c9416a0c6b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.928ba6d3b8edcf38f612.js.map

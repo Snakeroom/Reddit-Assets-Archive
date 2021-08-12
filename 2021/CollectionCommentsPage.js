@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7661b8c6893773013b1.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b607c1a36d1f78e4f7a7.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(e, t, s) {
@@ -2683,7 +2683,7 @@
 							userId: s.authorId
 						}) && !Object(Yt.g)(e)
 					},
-					modModeEnabled: Lt.Q,
+					modModeEnabled: Lt.R,
 					errorMsgs: L.G,
 					replyFormOpen: L.J,
 					subreddit: Lt.q,
@@ -4857,7 +4857,7 @@
 				pageLayer: e => e
 			}), st = Object(a.b)(() => Object(l.c)({
 				activeModalId: R.a,
-				flairStyleTemplate: ye.S,
+				flairStyleTemplate: ye.T,
 				currentUser: H.j,
 				crosspost: U.d,
 				hideNSFWPref: H.B,
@@ -4878,7 +4878,7 @@
 				showPromotedCTA: W.a,
 				post: U.H,
 				moderatorPermissions: D.k,
-				modModeEnabled: ye.Q,
+				modModeEnabled: ye.R,
 				isInCategoriesExperiment: A.a,
 				showAwardsPlaque: F.a,
 				showEditFlair: we.a,
@@ -6418,9 +6418,9 @@
 					isCommentPermalink: u.v,
 					isCommentsPage: u.w,
 					isFrontpage: u.y,
-					isPredictionsPage: u.L,
-					isProfilePostListing: u.I,
-					isTopicPage: u.N,
+					isPredictionsPage: u.M,
+					isProfilePostListing: u.J,
+					isTopicPage: u.O,
 					pageLayer: e => e
 				})
 			}
@@ -6429,7 +6429,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: C.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(u.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(u.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -6458,7 +6458,7 @@
 					}),
 					subredditsById: y.ab,
 					viewportDataLoaded: P.a,
-					pageReferrer: u.R,
+					pageReferrer: u.S,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: f.d
 				},
@@ -8375,4 +8375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b7661b8c6893773013b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.b607c1a36d1f78e4f7a7.js.map

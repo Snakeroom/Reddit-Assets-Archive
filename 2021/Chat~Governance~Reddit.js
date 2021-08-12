@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.060044b60f679f1dd25a.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08793bafc4b862cf4cd0.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -2520,13 +2520,13 @@
 				apiPassThroughHeaders: (e => e.length <= 0 ? [] : e.split(";"))({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: r("142747"),
+				buildNumber: r("142750"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
 				buildTimestamp: (e => {
 					const t = r(e);
 					if ("number" == typeof t) return Math.round(1e3 * t)
-				})("1628799446"),
+				})("1628801557"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4992,14 +4992,14 @@
 					}))
 				},
 				K = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc29f22e17628317cdc2b6f6ceb271ee692e9475e-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7431d7ceb52ee24f4321a412091d883fae3ff75a-production" + ` %cpublic url %c${v.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${v.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: v.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c29f22e17628317cdc2b6f6ceb271ee692e9475e-production",
+						release: "7431d7ceb52ee24f4321a412091d883fae3ff75a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(B.d)(), new d.Integrations.Breadcrumbs({
@@ -5493,7 +5493,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c29f22e17628317cdc2b6f6ceb271ee692e9475e-production",
+						releaseClient: "7431d7ceb52ee24f4321a412091d883fae3ff75a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -16277,7 +16277,7 @@
 				return o
 			})), i.d(t, "t", (function() {
 				return a
-			})), i.d(t, "ab", (function() {
+			})), i.d(t, "bb", (function() {
 				return l
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -16384,6 +16384,8 @@
 				return s.Y
 			})), i.d(t, "Z", (function() {
 				return s.Z
+			})), i.d(t, "ab", (function() {
+				return s.ab
 			}));
 			const o = r.a.createContext(null);
 
@@ -16423,19 +16425,19 @@
 				return B
 			})), i.d(t, "y", (function() {
 				return k
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "F", (function() {
 				return L
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "O", (function() {
 				return M
-			})), i.d(t, "P", (function() {
+			})), i.d(t, "Q", (function() {
 				return U
 			})), i.d(t, "x", (function() {
 				return G
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "D", (function() {
 				return q
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "B", (function() {
 				return V
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "W", (function() {
 				return H
 			})), i.d(t, "w", (function() {
 				return W
@@ -16443,86 +16445,88 @@
 				return $
 			})), i.d(t, "z", (function() {
 				return z
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "N", (function() {
 				return K
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "A", (function() {
 				return J
-			})), i.d(t, "D", (function() {
-				return Y
 			})), i.d(t, "I", (function() {
-				return X
-			})), i.d(t, "F", (function() {
-				return Z
-			})), i.d(t, "K", (function() {
-				return ee
+				return Y
+			})), i.d(t, "E", (function() {
+				return Q
 			})), i.d(t, "J", (function() {
-				return te
-			})), i.d(t, "c", (function() {
-				return ie
-			})), i.d(t, "a", (function() {
-				return ne
-			})), i.d(t, "t", (function() {
-				return re
-			})), i.d(t, "d", (function() {
-				return se
-			})), i.d(t, "o", (function() {
-				return oe
-			})), i.d(t, "r", (function() {
-				return de
-			})), i.d(t, "n", (function() {
-				return ae
-			})), i.d(t, "p", (function() {
-				return le
-			})), i.d(t, "q", (function() {
-				return ue
+				return Z
 			})), i.d(t, "G", (function() {
-				return ce
-			})), i.d(t, "i", (function() {
-				return _e
-			})), i.d(t, "j", (function() {
-				return pe
-			})), i.d(t, "k", (function() {
-				return me
-			})), i.d(t, "l", (function() {
-				return he
-			})), i.d(t, "B", (function() {
-				return fe
-			})), i.d(t, "h", (function() {
-				return be
-			})), i.d(t, "R", (function() {
-				return ge
-			})), i.d(t, "T", (function() {
-				return we
-			})), i.d(t, "W", (function() {
-				return ye
-			})), i.d(t, "Z", (function() {
-				return ve
-			})), i.d(t, "O", (function() {
-				return Ee
-			})), i.d(t, "Q", (function() {
-				return Te
-			})), i.d(t, "s", (function() {
-				return Se
-			})), i.d(t, "S", (function() {
-				return Oe
-			})), i.d(t, "b", (function() {
-				return Ie
-			})), i.d(t, "u", (function() {
-				return Fe
-			})), i.d(t, "U", (function() {
-				return Re
-			})), i.d(t, "g", (function() {
-				return je
-			})), i.d(t, "m", (function() {
-				return Ce
-			})), i.d(t, "Y", (function() {
-				return xe
-			})), i.d(t, "e", (function() {
-				return Ne
+				return ee
 			})), i.d(t, "L", (function() {
-				return Ae
+				return te
+			})), i.d(t, "K", (function() {
+				return ie
+			})), i.d(t, "c", (function() {
+				return ne
+			})), i.d(t, "a", (function() {
+				return re
+			})), i.d(t, "t", (function() {
+				return se
+			})), i.d(t, "d", (function() {
+				return oe
+			})), i.d(t, "o", (function() {
+				return de
+			})), i.d(t, "r", (function() {
+				return ae
+			})), i.d(t, "n", (function() {
+				return le
+			})), i.d(t, "p", (function() {
+				return ue
+			})), i.d(t, "q", (function() {
+				return ce
+			})), i.d(t, "H", (function() {
+				return _e
+			})), i.d(t, "i", (function() {
+				return pe
+			})), i.d(t, "j", (function() {
+				return me
+			})), i.d(t, "k", (function() {
+				return he
+			})), i.d(t, "l", (function() {
+				return fe
+			})), i.d(t, "C", (function() {
+				return be
+			})), i.d(t, "h", (function() {
+				return ge
+			})), i.d(t, "S", (function() {
+				return we
+			})), i.d(t, "U", (function() {
+				return ye
 			})), i.d(t, "X", (function() {
+				return ve
+			})), i.d(t, "ab", (function() {
+				return Ee
+			})), i.d(t, "P", (function() {
+				return Te
+			})), i.d(t, "R", (function() {
+				return Se
+			})), i.d(t, "s", (function() {
+				return Oe
+			})), i.d(t, "T", (function() {
+				return Ie
+			})), i.d(t, "b", (function() {
+				return Fe
+			})), i.d(t, "u", (function() {
+				return Re
+			})), i.d(t, "V", (function() {
+				return je
+			})), i.d(t, "g", (function() {
+				return Ce
+			})), i.d(t, "m", (function() {
+				return xe
+			})), i.d(t, "Z", (function() {
+				return Ne
+			})), i.d(t, "e", (function() {
+				return Ae
+			})), i.d(t, "M", (function() {
 				return Pe
+			})), i.d(t, "Y", (function() {
+				return De
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/isEmpty.js"),
@@ -16663,14 +16667,18 @@
 					var t;
 					return Boolean((null === (t = null == e ? void 0 : e.meta) || void 0 === t ? void 0 : t.name) === o.Jb.SEARCH_RESULTS && e.urlParams.subredditName)
 				},
-				J = e => !(!e || !e.meta || e.meta.name !== o.Jb.COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE),
-				Y = e => !(!e || !e.meta || e.meta.name !== o.Jb.POST_CREATION),
-				Q = e => !(!e || !e.meta || e.meta.name !== o.Jb.POST_DRAFT),
-				X = e => !!(e && e.meta && o.yb.has(e.meta.name)),
-				Z = e => !!(e && e.meta && o.wb.has(e.meta.name)),
-				ee = e => !!(e && e.meta && o.Tb.has(e.meta.name)),
-				te = e => !(!e || !e.meta || o.Jb.SETTINGS !== e.meta.name),
-				ie = e => {
+				J = e => {
+					var t;
+					return Boolean((null === (t = null == e ? void 0 : e.meta) || void 0 === t ? void 0 : t.name) === o.Jb.SEARCH_RESULTS && e.urlParams.multiredditName)
+				},
+				Y = e => !(!e || !e.meta || e.meta.name !== o.Jb.COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE),
+				Q = e => !(!e || !e.meta || e.meta.name !== o.Jb.POST_CREATION),
+				X = e => !(!e || !e.meta || e.meta.name !== o.Jb.POST_DRAFT),
+				Z = e => !!(e && e.meta && o.yb.has(e.meta.name)),
+				ee = e => !!(e && e.meta && o.wb.has(e.meta.name)),
+				te = e => !!(e && e.meta && o.Tb.has(e.meta.name)),
+				ie = e => !(!e || !e.meta || o.Jb.SETTINGS !== e.meta.name),
+				ne = e => {
 					const t = e && e.urlParams;
 					if (!t) return;
 					const {
@@ -16682,18 +16690,18 @@
 						username: n
 					}
 				},
-				ne = e => {
+				re = e => {
 					const t = e && e.urlParams;
 					return t ? t.categoryName : void 0
 				},
-				re = e => {
+				se = e => {
 					const t = e && e.urlParams;
 					return t ? t.topicSlug : void 0
 				},
-				se = (e, {
+				oe = (e, {
 					pageLayer: t
 				}) => {
-					const i = ie(t);
+					const i = ne(t);
 					if (!i) return null;
 					const {
 						multiredditName: n,
@@ -16704,11 +16712,11 @@
 						username: r
 					}) : null
 				},
-				oe = (e, {
+				de = (e, {
 					pageLayer: t
 				}) => {
-					if (Q(t)) {
-						const i = Fe(t);
+					if (X(t)) {
+						const i = Re(t);
 						return Object(x.e)(e, {
 							draftId: i
 						})
@@ -16716,33 +16724,33 @@
 					const i = t && t.urlParams;
 					return i ? i.subredditName : void 0
 				},
-				de = (e, {
+				ae = (e, {
 					pageLayer: t
 				}) => {
 					if (t && t.urlParams && h.b[t.urlParams.routePrefix] === h.a.PROFILE) return null;
-					const i = oe(e, {
+					const i = de(e, {
 						pageLayer: t
 					});
 					return i ? Object(P.z)(e, {
 						subredditName: i
 					}) : null
 				},
-				ae = (e, {
+				le = (e, {
 					pageLayer: t
 				}) => {
-					const i = oe(e, {
+					const i = de(e, {
 						pageLayer: t
 					});
 					return i ? Object(P.E)(e, i) : null
 				},
-				le = (e, t) => de(e, t) || me(e, t),
-				ue = (e, {
+				ue = (e, t) => ae(e, t) || he(e, t),
+				ce = (e, {
 					pageLayer: t
 				}) => {
 					const i = ((e, {
 						pageLayer: t
 					}) => {
-						const i = ae(e, {
+						const i = le(e, {
 							pageLayer: t
 						});
 						return i ? e.postFlair[i] : null
@@ -16751,52 +16759,52 @@
 					});
 					return i ? i.displaySettings.position : S.b.Right
 				},
-				ce = e => !!(e && e.routeMatch && o.zb.has(e.routeMatch.route.meta.name)) || J(e) || (e => !(!e || !e.meta || e.meta.name !== o.Jb.COLLECTION_COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE))(e),
-				_e = e => {
+				_e = e => !!(e && e.routeMatch && o.zb.has(e.routeMatch.route.meta.name)) || Y(e) || (e => !(!e || !e.meta || e.meta.name !== o.Jb.COLLECTION_COMMENTS || h.b[e.urlParams.routePrefix] !== h.a.PROFILE))(e),
+				pe = e => {
 					const t = e && e.urlParams;
 					return t ? t.profileName : void 0
 				},
-				pe = e => {
+				me = e => {
 					if (e && e.routeMatch && H(e) === o.Jb.PROFILE_PRIVATE) return e.routeMatch.match.params.listingType
-				},
-				me = (e, {
-					pageLayer: t
-				}) => {
-					const i = J(t) ? oe(e, {
-						pageLayer: t
-					}) : _e(t);
-					return i ? Object(N.j)(e, {
-						profileName: i
-					}) : null
 				},
 				he = (e, {
 					pageLayer: t
 				}) => {
-					const i = J(t) ? oe(e, {
+					const i = Y(t) ? de(e, {
 						pageLayer: t
-					}) : _e(t);
-					return i ? Object(D.nb)(e, {
-						userName: i
+					}) : pe(t);
+					return i ? Object(N.j)(e, {
+						profileName: i
 					}) : null
 				},
 				fe = (e, {
 					pageLayer: t
 				}) => {
-					const i = me(e, {
+					const i = Y(t) ? de(e, {
+						pageLayer: t
+					}) : pe(t);
+					return i ? Object(D.nb)(e, {
+						userName: i
+					}) : null
+				},
+				be = (e, {
+					pageLayer: t
+				}) => {
+					const i = he(e, {
 							pageLayer: t
 						}),
 						n = Object(D.j)(e),
 						r = n && (n.username ? n.username : n.displayText);
 					return !(!r || !i || r !== i.name)
 				},
-				be = (e, {
+				ge = (e, {
 					pageLayer: t
 				}) => {
-					if (fe(e, {
+					if (be(e, {
 							pageLayer: t
 						})) return f.a
 				},
-				ge = (e, {
+				we = (e, {
 					pageLayer: t
 				}) => {
 					if (!t) return;
@@ -16805,13 +16813,13 @@
 					} = t;
 					return e.platform.referrers[i]
 				},
-				we = e => e ? e.queryParams : {},
-				ye = e => {
+				ye = e => e ? e.queryParams : {},
+				ve = e => {
 					const t = H(e);
 					if (e && t && t === o.Jb.SEARCH_RESULTS) return e.queryParams[p.c] ? Object(l.a)(e.queryParams[p.c]) : Object(l.a)(e.queryParams[p.p])
 				},
-				ve = e => e ? e.url : "",
-				Ee = (e, {
+				Ee = e => e ? e.url : "",
+				Te = (e, {
 					pageLayer: t
 				}) => {
 					let i;
@@ -16826,7 +16834,7 @@
 							const i = ((e, {
 								pageLayer: t
 							}) => {
-								const i = ae(e, {
+								const i = le(e, {
 									pageLayer: t
 								});
 								if (i) {
@@ -16841,27 +16849,27 @@
 						}
 						if (o.zb.has(n)) {
 							if (n === o.Jb.PROFILE_OVERVIEW) return m.g.Large;
-							return Te(e, {
+							return Se(e, {
 								pageLayer: t
 							}) ? n === o.Jb.PROFILE_POSTS || n === o.Jb.PROFILE_PRIVATE ? m.g.Classic : m.g.Compact : m.g.Classic
 						}
 					}
 					return e.user.prefs.layout ? m.b[e.user.prefs.layout] : m.g.Classic
 				},
-				Te = (e, {
-					pageLayer: t
-				}) => !!Object(R.a)(e) || !(!t || !t.meta) && t.meta.name === o.Jb.MODQUEUE_PAGES,
 				Se = (e, {
 					pageLayer: t
+				}) => !!Object(R.a)(e) || !(!t || !t.meta) && t.meta.name === o.Jb.MODQUEUE_PAGES,
+				Oe = (e, {
+					pageLayer: t
 				}) => {
-					const i = ae(e, {
+					const i = le(e, {
 						pageLayer: t
 					});
 					if (!i) return !0;
 					const n = e.subreddits.about[i];
 					return !n || n.showMedia
 				},
-				Oe = Object(a.a)((e, {
+				Ie = Object(a.a)((e, {
 					pageLayer: t,
 					postId: i,
 					flairStyleTemplateDraft: n
@@ -16870,7 +16878,7 @@
 					if (!r) return;
 					const s = r.flair.find(e => Object(b.q)(e.type));
 					if (!s || void 0 === s.templateId) return;
-					const d = ae(e, {
+					const d = le(e, {
 						pageLayer: t
 					});
 					if (!d || d !== r.belongsTo.id) return;
@@ -16894,14 +16902,14 @@
 					}
 					return Object.keys(c).filter(e => c[e] !== O.c).reduce((e, t) => (e[t] = c[t], e), {})
 				}),
-				Ie = (e, {
+				Fe = (e, {
 					pageLayer: t
 				}) => t ? T(e, t) : void 0,
-				Fe = e => {
-					if (e) return Q(e) ? e.urlParams.draftId : e.queryParams.draft
+				Re = e => {
+					if (e) return X(e) ? e.urlParams.draftId : e.queryParams.draft
 				},
-				Re = e => e && e.queryParams || {},
-				je = (e, {
+				je = e => e && e.queryParams || {},
+				Ce = (e, {
 					pageLayer: t
 				}) => {
 					const i = (e => e ? e.queryParams.collection : void 0)(t);
@@ -16909,7 +16917,7 @@
 						collectionId: i
 					}) : void 0
 				},
-				Ce = Object(s.a)(oe, F.j, e => e.subreddits.models, e => e.subreddits.byCategory, (e, t, i, n) => {
+				xe = Object(s.a)(de, F.j, e => e.subreddits.models, e => e.subreddits.byCategory, (e, t, i, n) => {
 					if (!e) return;
 					const s = Object.keys(t).find(t => {
 						const s = n[t];
@@ -16919,11 +16927,11 @@
 					});
 					return s ? t[s] : void 0
 				}),
-				xe = e => {
-					const t = ye(e);
+				Ne = e => {
+					const t = ve(e);
 					return !!t && !!c.b.filter(e => t.toLowerCase().includes(e)).length
 				},
-				Ne = (e, {
+				Ae = (e, {
 					pageLayer: t
 				}) => {
 					if (t && t.title) return t.title; {
@@ -16936,13 +16944,13 @@
 						return null
 					}
 				},
-				Ae = e => {
+				Pe = e => {
 					var t, i;
 					return null !== (i = (null === (t = null == e ? void 0 : e.routeMatch) || void 0 === t ? void 0 : t.match.path) === I.a) && void 0 !== i && i
 				},
-				Pe = (e, t) => Object(s.a)((e, {
+				De = (e, t) => Object(s.a)((e, {
 					pageLayer: t
-				}) => K(t), de, A.g, (e, t, i) => {
+				}) => K(t), ae, A.g, (e, t, i) => {
 					const n = e || Boolean(t);
 					return Boolean(n && i)
 				})(e, t)
@@ -31867,7 +31875,7 @@
 				L = (e, {
 					pageLayer: t
 				}) => {
-					if (!t || !Object(l.D)(t)) return !1;
+					if (!t || !Object(l.E)(t)) return !1;
 					const {
 						subredditName: i,
 						profileName: n
@@ -32259,7 +32267,7 @@
 					const n = Object(l.j)(e, {
 						pageLayer: t
 					});
-					return n && Object(l.B)(e, {
+					return n && Object(l.C)(e, {
 						pageLayer: t
 					}) && Object(x.g)(e) ? Object(f.a)(n.url, E.b) : E.b
 				},
@@ -33213,7 +33221,7 @@
 				s = i("./src/reddit/selectors/meta.ts"),
 				o = i("./src/reddit/selectors/user.ts");
 			const d = new Set([n.Xb.Creator, n.Xb.Messaging, n.Xb.Payments, n.Xb.SpecialMembership]),
-				a = (e, t) => !(!Object(s.f)(e) && !Object(s.h)(e)) && (!(!Object(o.I)(e) && !Object(o.J)(e)) && (!!Object(r.J)(t.pageLayer) && (!(!t.pageLayer || !t.pageLayer.routeMatch) && !d.has(t.pageLayer.routeMatch.match.params.page))))
+				a = (e, t) => !(!Object(s.f)(e) && !Object(s.h)(e)) && (!(!Object(o.I)(e) && !Object(o.J)(e)) && (!!Object(r.K)(t.pageLayer) && (!(!t.pageLayer || !t.pageLayer.routeMatch) && !d.has(t.pageLayer.routeMatch.match.params.page))))
 		},
 		"./src/reddit/selectors/runTimeEnvVars.ts": function(e, t, i) {
 			"use strict";
@@ -33338,7 +33346,7 @@
 				g = (e, {
 					pageLayer: t
 				}) => {
-					if (!t || !Object(s.w)(t) || Object(s.H)(t)) return !1;
+					if (!t || !Object(s.w)(t) || Object(s.I)(t)) return !1;
 					const {
 						partialPostId: i
 					} = !!t && t.urlParams;
@@ -34973,7 +34981,7 @@
 					return null
 				},
 				at = (e, t) => {
-					const i = Object(k.O)(e, {});
+					const i = Object(k.P)(e, {});
 					let n;
 					Object(oe.f)(e) && (n = Object(oe.h)(e) ? "lightbox" : "post_detail");
 					let r = "default";
@@ -40193,4 +40201,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.060044b60f679f1dd25a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08793bafc4b862cf4cd0.js.map

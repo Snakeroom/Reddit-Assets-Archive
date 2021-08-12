@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.190f4aaeb1b2445569a8.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.073f83ce97c7b8949976.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3760,7 +3760,7 @@
 				renderingObjectInfo: e,
 				pageLayer: t
 			}) => {
-				if (e && (Object(o.b)(e) || Object(r.b)(e))) return Object(o.b)(e) ? i.SourceElement.Comment : Object(s.w)(t) ? i.SourceElement.PostDetail : Object(s.E)(t) ? i.SourceElement.ListingPostDetail : void 0
+				if (e && (Object(o.b)(e) || Object(r.b)(e))) return Object(o.b)(e) ? i.SourceElement.Comment : Object(s.w)(t) ? i.SourceElement.PostDetail : Object(s.F)(t) ? i.SourceElement.ListingPostDetail : void 0
 			}
 		},
 		"./src/reddit/helpers/trackers/postCollection.ts": function(e, t, n) {
@@ -4727,4 +4727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.190f4aaeb1b2445569a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.073f83ce97c7b8949976.js.map

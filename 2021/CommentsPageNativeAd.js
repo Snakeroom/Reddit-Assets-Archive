@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d3a580a2c822e4e5ff0e.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.60daa9396105206091a4.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -34,7 +34,7 @@
 		"./src/reddit/components/CommentsPageNativeAd/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SearchResultsCommentsPageNativeAd", (function() {
-				return J
+				return Q
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -84,11 +84,11 @@
 					adHeaderVariant: e.adHeaderVariant,
 					greyTextColor: e.greyTextColor
 				})),
-				I = s("./src/lib/classNames/index.ts"),
-				T = s("./src/reddit/components/Media/index.tsx"),
+				T = s("./src/lib/classNames/index.ts"),
+				I = s("./src/reddit/components/Media/index.tsx"),
 				W = s("./src/reddit/components/PlayButton/index.tsx"),
-				M = s("./src/reddit/components/Thumbnail/index.tsx"),
-				R = s("./src/reddit/icons/svgs/Close/index.tsx");
+				R = s("./src/reddit/components/Thumbnail/index.tsx"),
+				M = s("./src/reddit/icons/svgs/Close/index.tsx");
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -112,10 +112,10 @@
 				url: l,
 				usePreview: m,
 				mediaExpanded: p
-			}) => n && n.media ? p && Object(u.K)(n.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
+			}) => n && n.media ? p && Object(u.K)(n.media) ? a.a.createElement("div", null, a.a.createElement(M.a, {
 				className: A.a.close,
 				onClick: t
-			}), a.a.createElement(T.a, {
+			}), a.a.createElement(I.a, {
 				className: A.a.videoPlayer,
 				post: n,
 				isNotCardView: !0,
@@ -127,8 +127,8 @@
 				isListing: !1,
 				showCentered: !1,
 				scrollerItemRef: c
-			})) : a.a.createElement(M.a, {
-				className: Object(I.a)(A.a.thumbnail, e),
+			})) : a.a.createElement(R.a, {
+				className: Object(T.a)(A.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: r,
@@ -138,8 +138,8 @@
 				removeLink: Object(u.K)(n.media),
 				url: Object(u.K)(n.media) ? void 0 : l,
 				usePreview: m
-			}) : a.a.createElement(M.a, {
-				className: Object(I.a)(A.a.thumbnail, e),
+			}) : a.a.createElement(R.a, {
+				className: Object(T.a)(A.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: r,
@@ -154,7 +154,7 @@
 						className: n
 					} = e, i = r && !t;
 					return a.a.createElement("div", {
-						className: t ? Object(I.a)(A.a.videoContainer, n) : Object(I.a)(A.a.thumbnailContainer, n),
+						className: t ? Object(T.a)(A.a.videoContainer, n) : Object(T.a)(A.a.thumbnailContainer, n),
 						onClick: i ? () => s(!0) : void 0
 					}, a.a.createElement(B, V({}, e, {
 						mediaExpanded: t,
@@ -284,9 +284,9 @@
 					}))
 				}
 			}
-			const Q = Object(l.a)(G),
-				J = Object(H.a)(Q);
-			t.default = Object(F.a)(z(Q))
+			const J = Object(l.a)(G),
+				Q = Object(H.a)(J);
+			t.default = Object(F.a)(z(J))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -364,14 +364,14 @@
 					isLoggedIn: g.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: u.k,
-					modModeEnabled: d.Q,
+					modModeEnabled: d.R,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: x.a,
 					showMedia: d.r,
-					flairStyleTemplate: d.S
+					flairStyleTemplate: d.T
 				},
 				v = (e, {
 					postId: t
@@ -403,7 +403,7 @@
 				c = s("./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx"),
 				d = s("./src/reddit/connectors/ClassicPost/index.tsx");
 			const l = Object(i.t)({
-					searchQuery: i.W
+					searchQuery: i.X
 				}),
 				m = Object(a.b)(() => Object(n.c)(d.c), d.b, (e, t, s) => ({
 					...e,
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d3a580a2c822e4e5ff0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.60daa9396105206091a4.js.map

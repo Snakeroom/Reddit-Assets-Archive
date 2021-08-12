@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.3cc22faf7ce0f72ca959.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.02d96b73ac5cf08fc920.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5068,7 +5068,7 @@
 				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = Object(E.t)({
 				pageLayer: e => e,
-				queryParams: E.T
+				queryParams: E.U
 			}), M = Object(u.c)({
 				apiError: N.h,
 				apiPending: N.i,
@@ -5246,7 +5246,7 @@
 						f = Object(a.useRef)(),
 						g = Object(a.useRef)(null),
 						v = [d.Wb.Subreddits, d.Wb.Users],
-						S = Object(b.ab)(),
+						S = Object(b.bb)(),
 						w = Object(h.b)(),
 						T = Object(i.d)(),
 						{
@@ -5416,7 +5416,7 @@
 						identifier: s,
 						listingKey: o,
 						searchOptions: g
-					} = e, v = Object(C.a)(), y = Object(b.a)(), j = Object(u.ab)(), {
+					} = e, v = Object(C.a)(), y = Object(b.a)(), j = Object(u.bb)(), {
 						hideNSFWPref: _,
 						subredditOrProfile: k,
 						subredditOrProfileAboutInfo: S
@@ -5523,7 +5523,7 @@
 						listingKey: O,
 						searchOptions: E,
 						sidebar: j
-					} = e, S = Object(p.ab)(), N = Object(g.a)(), I = Object(f.a)(), {
+					} = e, S = Object(p.bb)(), N = Object(g.a)(), I = Object(f.a)(), {
 						hideNSFWPref: P,
 						subredditOrProfile: w,
 						subredditOrProfileAboutInfo: T
@@ -5929,10 +5929,10 @@
 					isActive: N.j,
 					isLoggedIn: I.J,
 					moderatorPermissions: _.k,
-					modModeEnabled: j.Q,
+					modModeEnabled: j.R,
 					poll: k.e,
 					showEditFlair: S.a,
-					flairStyleTemplate: j.S
+					flairStyleTemplate: j.T
 				},
 				w = () => Object(a.c)(P);
 			var T = s("./src/reddit/contexts/Post/index.tsx"),
@@ -6048,7 +6048,7 @@
 					return c.a.createElement(g.b, null, Q)
 				}),
 				H = Object(T.b)((e => t => {
-					const s = Object(j.ab)(),
+					const s = Object(j.bb)(),
 						r = ((e, {
 							postId: t
 						}) => ({
@@ -6056,7 +6056,7 @@
 						}))(Object(n.d)(), {
 							...t
 						}),
-						a = Object(j.W)(s),
+						a = Object(j.X)(s),
 						o = Object(n.e)(w),
 						i = {
 							...t,
@@ -6702,7 +6702,7 @@
 				Ie = () => null,
 				Pe = Object(_.t)({
 					pageLayer: e => e,
-					queryParams: _.T
+					queryParams: _.U
 				}),
 				we = Object(o.c)({
 					fromSubreddit: (e, t) => {
@@ -6800,7 +6800,7 @@
 						onViewed: i,
 						searchOptions: c,
 						tab: l
-					} = e, m = Object(d.a)(c.q || ""), u = Object(_.ab)(), p = Object(_.M)(u), h = Object(_.T)(u);
+					} = e, m = Object(d.a)(c.q || ""), u = Object(_.bb)(), p = Object(_.N)(u), h = Object(_.U)(u);
 					return n.a.createElement(n.a.Fragment, null, p && n.a.createElement(fe.a, {
 						searchOptions: c,
 						url: Object(ye.a)(h)
@@ -7509,7 +7509,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), re = `${f.a.assetPath}/img/link-placeholder.png`, ne = Object(H.c)({
 				autoplayPref: V.b,
 				showPromotedCTA: W.a,
-				flairStyleTemplate: c.S
+				flairStyleTemplate: c.T
 			});
 
 			function ae(e) {
@@ -7525,7 +7525,7 @@
 					showPromotedCTA: h
 				} = Object(a.e)(t => ne(t, e)), b = Object(a.e)(e => Object(U.d)(e, {
 					postId: s
-				})), C = Object(c.ab)(), x = Object(P.b)(), W = Object(a.d)(), V = Object($.a)(), {
+				})), C = Object(c.bb)(), x = Object(P.b)(), W = Object(a.d)(), V = Object($.a)(), {
 					post: H,
 					subredditOrProfile: ee
 				} = Object(T.d)(s), ae = Object(r.useCallback)((e, t) => {
@@ -7767,7 +7767,7 @@
 					location: r,
 					searchOptions: u,
 					tab: p
-				} = e, h = Object(a.e)(t => Object(m.a)(t, e)), b = Object(c.ab)();
+				} = e, h = Object(a.e)(t => Object(m.a)(t, e)), b = Object(c.bb)();
 				return p === i.g.Listings ? n.a.createElement(o.a, {
 					hasCommunityResults: h,
 					listingKey: t,
@@ -8876,7 +8876,7 @@
 					const {
 						isSerpRedesignLayout: t,
 						subreddit: s
-					} = Object(a.e)(t => Ee(t, e)), r = Object(c.ab)(), o = Object(c.T)(r), l = Object(c.Z)(r), m = s && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
+					} = Object(a.e)(t => Ee(t, e)), r = Object(c.bb)(), o = Object(c.U)(r), l = Object(c.ab)(r), m = s && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
 					return n.a.createElement(d.a, {
 						className: Object(i.a)(t ? Oe.a.ComponentRedesign : Oe.a.Component),
 						"data-testid": "search-results-subnav"
@@ -9529,8 +9529,8 @@
 			}
 			const _ = 129,
 				k = Object(b.t)({
-					filterName: e => Object(b.T)(e)[h.g],
-					url: e => Object(b.Z)(e)
+					filterName: e => Object(b.U)(e)[h.g],
+					url: e => Object(b.ab)(e)
 				}),
 				S = Object(i.c)({
 					subredditId: (e, t) => Object(y.E)(e, t.subredditName)
@@ -9742,14 +9742,14 @@
 					isLoggedIn: x.J,
 					showPromotedCTA: C.a,
 					moderatorPermissions: p.k,
-					modModeEnabled: d.Q,
+					modModeEnabled: d.R,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: h.a,
 					showMedia: d.r,
-					flairStyleTemplate: d.S
+					flairStyleTemplate: d.T
 				},
 				g = (e, {
 					postId: t
@@ -9781,7 +9781,7 @@
 				c = s("./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx"),
 				d = s("./src/reddit/connectors/ClassicPost/index.tsx");
 			const l = Object(i.t)({
-					searchQuery: i.W
+					searchQuery: i.X
 				}),
 				m = Object(a.b)(() => Object(o.c)(d.c), d.b, (e, t, s) => ({
 					...e,
@@ -9836,9 +9836,9 @@
 					isCommentPermalink: p.v,
 					isCommentsPage: p.w,
 					isFrontpage: p.y,
-					isPredictionsPage: p.L,
-					isProfilePostListing: p.I,
-					isTopicPage: p.N,
+					isPredictionsPage: p.M,
+					isProfilePostListing: p.J,
+					isTopicPage: p.O,
 					pageLayer: e => e
 				})
 			}
@@ -9847,7 +9847,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: x.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -9876,7 +9876,7 @@
 					}),
 					subredditsById: O.ab,
 					viewportDataLoaded: E.a,
-					pageReferrer: p.R,
+					pageReferrer: p.S,
 					postListPlaceholderComponent: () => C.a,
 					isNpsScrollSurveyEnabled: f.d
 				},
@@ -9967,11 +9967,11 @@
 				autoplayPref: h.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: d.S,
+				flairStyleTemplate: d.T,
 				hideNSFWPref: h.B,
 				isActive: p.j,
 				moderatorPermissions: m.k,
-				modModeEnabled: d.Q,
+				modModeEnabled: d.R,
 				showEditFlair: u.a
 			}), (e, {
 				postId: t
@@ -10762,8 +10762,8 @@
 				}),
 				L = Object(y.t)({
 					currentPageUrl: y.e,
-					queryParams: y.T,
-					shouldShowCovidBanner: y.Y
+					queryParams: y.U,
+					shouldShowCovidBanner: y.Z
 				}),
 				R = () => Object(d.c)({
 					headerContent: S.c,
@@ -10942,16 +10942,16 @@
 				match: t
 			}) {
 				const s = Object(c.d)(),
-					r = Object(g.ab)(),
+					r = Object(g.bb)(),
 					n = Object(P.b)(),
 					T = Object(_.a)(),
 					A = Object(o.useRef)(!1),
 					B = Object(c.e)(e => Object(N.z)(e, {
 						subredditName: t.params.subredditName
 					})),
-					D = Object(g.T)(r),
-					U = Object(g.Y)(r),
-					W = Object(g.M)(r),
+					D = Object(g.U)(r),
+					U = Object(g.Z)(r),
+					W = Object(g.N)(r) || Object(g.A)(r),
 					[V, H] = Object(o.useState)(!1),
 					q = Object(j.a)(D) || {};
 				Object(o.useEffect)(() => {
@@ -11217,4 +11217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3cc22faf7ce0f72ca959.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.02d96b73ac5cf08fc920.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.6065a3d2f9f996cf19e7.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1ac5b87c7bb2b0f462b8.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -1875,7 +1875,7 @@
 				}
 			}
 			t.c = a.a.memo((function(e) {
-				const t = Object(p.ab)(),
+				const t = Object(p.bb)(),
 					s = Object(p.v)(t),
 					n = Object(R.a)(),
 					r = Object(i.e)(r => K(r, {
@@ -1919,7 +1919,7 @@
 				h = o.a.div("Container", u.a),
 				x = Object(i.a)(c.b),
 				f = Object(l.t)({
-					isProfileListingPage: l.F
+					isProfileListingPage: l.G
 				});
 			class g extends a.a.Component {
 				constructor(e) {
@@ -2411,4 +2411,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.6065a3d2f9f996cf19e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.1ac5b87c7bb2b0f462b8.js.map

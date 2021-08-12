@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.71cf3f8bf365dcfba3f8.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d8baacf81f59938f42f0.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -8598,7 +8598,7 @@
 				}
 			}
 			t.c = s.a.memo((function(e) {
-				const t = Object(p.ab)(),
+				const t = Object(p.bb)(),
 					n = Object(p.v)(t),
 					o = Object(W.a)(),
 					r = Object(a.e)(r => Q(r, {
@@ -15556,7 +15556,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.ab
+			t.a = o.bb
 		},
 		"./src/reddit/hooks/usePrevious.ts": function(e, t, n) {
 			"use strict";
@@ -16576,7 +16576,7 @@
 			const b = Object(d.t)(),
 				h = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.O)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.P)(e, t)
 				}),
 				f = Object(s.b)(h),
 				g = ({
@@ -21273,9 +21273,9 @@
 				Pl = te.a.div("PostingGuidelines", yl.a),
 				wl = Object(E.t)({
 					draftId: E.u,
-					isPostCreationPage: E.D,
+					isPostCreationPage: E.E,
 					pageLayer: e => e,
-					sourcePostId: e => Object(E.U)(e).source_id
+					sourcePostId: e => Object(E.V)(e).source_id
 				}),
 				Tl = Object(a.c)({
 					submissionType: j.a,
@@ -21284,7 +21284,7 @@
 					discardGoesBack: (e, {
 						pageLayer: t
 					}) => {
-						const n = Object(E.R)(e, {
+						const n = Object(E.S)(e, {
 							pageLayer: t
 						});
 						return !!n && "/" === n[0]
@@ -22380,7 +22380,7 @@
 			};
 
 			function d() {
-				const e = Object(r.ab)(),
+				const e = Object(r.bb)(),
 					t = Object(o.e)(t => Object(r.q)(t, {
 						pageLayer: e
 					})),
@@ -23164,4 +23164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.71cf3f8bf365dcfba3f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d8baacf81f59938f42f0.js.map

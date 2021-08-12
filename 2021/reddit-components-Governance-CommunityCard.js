@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.1e21de739fb3e22832a6.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b5c668c47910da1871de.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -756,7 +756,7 @@
 						forceState: !0
 					}))
 				}))((function(e) {
-					return Object(_.E)(e.pageLayer) && e.proposals.length ? i.a.createElement("div", {
+					return Object(_.F)(e.pageLayer) && e.proposals.length ? i.a.createElement("div", {
 						className: Object(ue.a)(e.className, Ee.a.container)
 					}, i.a.createElement(ve, null, _e._("Latest Polls", null, {
 						hk: "1oGuW8"
@@ -1677,7 +1677,7 @@
 			};
 
 			function d() {
-				const e = Object(s.ab)(),
+				const e = Object(s.bb)(),
 					t = Object(r.e)(t => Object(s.q)(t, {
 						pageLayer: e
 					})),
@@ -1779,4 +1779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.1e21de739fb3e22832a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b5c668c47910da1871de.js.map

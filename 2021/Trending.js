@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.32bb9c47e7a98ff43237.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.252fc36b400f9f5d0b57.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -150,10 +150,10 @@
 					showSubredditMeta: P = !0,
 					showSubredditName: w,
 					subredditOrProfile: k
-				} = e, N = h && h.preview && h.preview.url || void 0, S = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = y && E || g && Object(a.a)("/search", {
+				} = e, N = h && h.preview && h.preview.url || void 0, E = h && h.isSponsored ? "promoted_trend" : "trending", S = h && Object(l.a)(h.permalink) || "", I = y && S || g && Object(a.a)("/search", {
 					q: g.rawQuery,
-					source: S
-				}) || E, D = g ? g.subredditInfo && g.subredditInfo.icon : k && k.icon.url, U = g ? g.subredditInfo && g.subredditInfo.displayText : k && (k.displayText || k.name), A = h ? h.flair.filter(T) : [], V = h ? h.score : 0, R = h ? h.numComments : 0, F = h && h.isSponsored, L = Object(f.a)(e).body, W = `linear-gradient(\n      ${Object(n.g)(L,.2)},\n      ${Object(n.g)(L,.3)},\n      ${Object(n.g)(L,.4)},\n      ${Object(n.g)(L,.6)},\n      ${Object(n.g)(L,.8)},\n      ${L}\n    )`, M = o.a.createElement("div", {
+					source: E
+				}) || S, D = g ? g.subredditInfo && g.subredditInfo.icon : k && k.icon.url, U = g ? g.subredditInfo && g.subredditInfo.displayText : k && (k.displayText || k.name), A = h ? h.flair.filter(T) : [], V = h ? h.score : 0, R = h ? h.numComments : 0, F = h && h.isSponsored, L = Object(f.a)(e).body, W = `linear-gradient(\n      ${Object(n.g)(L,.2)},\n      ${Object(n.g)(L,.3)},\n      ${Object(n.g)(L,.4)},\n      ${Object(n.g)(L,.6)},\n      ${Object(n.g)(L,.8)},\n      ${L}\n    )`, M = o.a.createElement("div", {
 					id: i,
 					className: Object(d.a)(v.a.trendingPost, {
 						[v.a["m-background"]]: !!N
@@ -399,11 +399,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: u.d,
 				crosspostSubredditOrProfile: u.e,
-				flairStyleTemplate: c.S,
+				flairStyleTemplate: c.T,
 				hideNSFWPref: b.B,
 				isActive: u.j,
 				moderatorPermissions: m.k,
-				modModeEnabled: c.Q,
+				modModeEnabled: c.R,
 				showEditFlair: p.a
 			}), (e, {
 				postId: t
@@ -491,4 +491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.32bb9c47e7a98ff43237.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.252fc36b400f9f5d0b57.js.map

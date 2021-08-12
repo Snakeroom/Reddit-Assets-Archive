@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.c7b6dcda159941e82fef.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.4ac5d2f824b7ce60c4a9.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -473,8 +473,8 @@
 				j = Object(h.t)(),
 				N = Object(a.c)({
 					dropdownIsOpen: Object(y.b)(L),
-					postLayout: h.O,
-					redditStyle: h.A
+					postLayout: h.P,
+					redditStyle: h.B
 				}),
 				w = Object(o.b)(N, e => ({
 					onListingLayoutChange: (t, s) => e(Object(u.v)(t, s)),
@@ -606,8 +606,8 @@
 				R = s("./src/reddit/helpers/brandSafety/index.ts"),
 				F = s("./src/reddit/helpers/trackers/ads.ts"),
 				B = s("./src/lib/LRUCache/index.ts"),
-				H = s("./src/telemetry/index.ts"),
-				M = s("./src/telemetry/models/Timer.ts"),
+				M = s("./src/telemetry/index.ts"),
+				H = s("./src/telemetry/models/Timer.ts"),
 				A = s("./src/reddit/components/PostList/index.m.less"),
 				V = s.n(A);
 			const {
@@ -683,12 +683,12 @@
 					}), this.eventFactoryHandler = (e, t, s) => this.props.postClickEventFactory(e, t, s, this.props)
 				}
 				UNSAFE_componentWillMount() {
-					void 0 !== this.timerId && H.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = H.c.start())
+					void 0 !== this.timerId && M.c.cancel(this.timerId), this.props.postIds.length && (this.timerId = M.c.start())
 				}
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.viewportHeight = window.innerHeight, void 0 !== this.timerId) {
-						const e = H.c.end(this.timerId);
-						setTimeout(() => Object(H.b)(f.l.Redesign, {
+						const e = M.c.end(this.timerId);
+						setTimeout(() => Object(M.b)(f.l.Redesign, {
 							type: "mount",
 							component: "postList",
 							duration: e
@@ -696,14 +696,14 @@
 					}
 				}
 				UNSAFE_componentWillUpdate(e) {
-					void 0 !== this.timerId && H.c.cancel(this.timerId), e.postIds.length && (this.timerId = H.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
+					void 0 !== this.timerId && M.c.cancel(this.timerId), e.postIds.length && (this.timerId = M.c.start()), (e.listingKey !== this.props.listingKey || e.postIds.length !== this.props.postIds.length && !this.isListLongEnough()) && (this.didRenderLastVisibleChild = !1)
 				}
 				componentDidUpdate(e) {
 					var t, s;
-					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && H.c.has(this.timerId)) {
-						const e = H.c.end(this.timerId);
+					if (v.a.read(() => this.checkAndSendScreenview()), this.timerId && M.c.has(this.timerId)) {
+						const e = M.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(H.b)(f.l.Redesign, {
+						setTimeout(() => Object(M.b)(f.l.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "postList"
@@ -714,7 +714,7 @@
 					r && r !== (null === (s = e.postIds) || void 0 === s ? void 0 : s[0]) && this.props.onFirstPostChanged(r)
 				}
 				componentWillUnmount() {
-					this.timerId && H.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
+					this.timerId && M.c.cancel(this.timerId), this.scrollerRef = null, this.didRenderLastVisibleChild = !1
 				}
 				isListLongEnough() {
 					const e = this.scrollerRef && Array.from(this.scrollerRef.children),
@@ -727,7 +727,7 @@
 						listingKey: t,
 						viewportDataLoaded: s
 					} = this.props;
-					return H.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
+					return M.c.has(t) && (e || !this.renderingPlaceholder && (this.renderingEmpty || this.didRenderLastVisibleChild && (s || this.isListLongEnough())))
 				}
 				checkAndSendScreenview() {
 					const {
@@ -736,9 +736,9 @@
 						sendEvent: s
 					} = this.props;
 					if (!this.shouldSendScreenview()) return;
-					const r = H.c.end(e);
+					const r = M.c.end(e);
 					setTimeout(() => {
-						s(t(r, M.TimerType.InApp))
+						s(t(r, H.TimerType.InApp))
 					}, 0)
 				}
 				showPlaceholder() {
@@ -833,9 +833,9 @@
 							layout: r,
 							post: F
 						});
-						let H = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && g && (H += `--${g}`);
-						const M = Y(e, r, s, g, v, _, this.props, t, this.props.hostPostData),
+						let M = `post-list-item-[layout: ${r}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && g && (M += `--${g}`);
+						const H = Y(e, r, s, g, v, _, this.props, t, this.props.hostPostData),
 							A = Q(e, r, this.props, t, x),
 							V = Z(e, this.props, c),
 							W = F.media && F.media.type === k.o.EMBED ? F.media.provider : null,
@@ -845,7 +845,7 @@
 							estHeight: Object(N.c)(R, r),
 							id: e,
 							isFocusable: !(!F.media || !(r === O.g.Large || r === O.g.Classic && Object(k.G)(F.media))) && (k.d.has(F.media.type) && (!W || !k.s.has(W)) && !F.isSpoiler && !F.isNSFW),
-							trackOnEnteredViewport: M,
+							trackOnEnteredViewport: H,
 							trackOnExitedViewport: A,
 							render: ({
 								className: r,
@@ -857,7 +857,7 @@
 							}) => u.a.createElement(B, {
 								className: r,
 								currentProfileName: i,
-								key: H,
+								key: M,
 								availableWidth: m,
 								eventFactory: this.eventFactoryHandler,
 								first: L,
@@ -1511,7 +1511,7 @@
 			}).map((e, t) => i.a.createElement(N, {
 				className: k.a.Subreddit,
 				key: t
-			})), H = {
+			})), M = {
 				enabled: !0,
 				id: "xd_103",
 				layout: p.d.Large,
@@ -1520,10 +1520,10 @@
 				unitType: p.f.SubredditListing,
 				url: ""
 			};
-			class M extends i.a.Component {
+			class H extends i.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.G)(H)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.G)(M)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1544,7 +1544,7 @@
 						className: k.a.SubredditList
 					}, r.length > 0 ? r.map(e => i.a.createElement(I, {
 						className: k.a.Subreddit,
-						discoveryUnit: H,
+						discoveryUnit: M,
 						key: e,
 						subredditId: e
 					})) : B), t.length > F && i.a.createElement(n.a, {
@@ -1557,7 +1557,7 @@
 					}))))
 				}
 			}
-			t.a = Object(d.c)(M)
+			t.a = Object(d.c)(H)
 		},
 		"./src/reddit/components/TopicSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1622,9 +1622,9 @@
 					isCommentPermalink: m.v,
 					isCommentsPage: m.w,
 					isFrontpage: m.y,
-					isPredictionsPage: m.L,
-					isProfilePostListing: m.I,
-					isTopicPage: m.N,
+					isPredictionsPage: m.M,
+					isProfilePostListing: m.J,
+					isTopicPage: m.O,
 					pageLayer: e => e
 				})
 			}
@@ -1633,7 +1633,7 @@
 					apiError: _.c,
 					apiPending: _.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(m.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(_.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -1662,7 +1662,7 @@
 					}),
 					subredditsById: E.ab,
 					viewportDataLoaded: T.a,
-					pageReferrer: m.R,
+					pageReferrer: m.S,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: v.d
 				},
@@ -2038,8 +2038,8 @@
 				}
 			}
 			var B = F,
-				H = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				M = s.n(H);
+				M = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				H = s.n(M);
 
 			function A() {
 				return (A = Object.assign || function(e) {
@@ -2063,14 +2063,14 @@
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? i.a.createElement("ul", {
-						className: M.a.parentRelatedTopics
+						className: H.a.parentRelatedTopics
 					}, e.map(({
 						namePlural: e,
 						url: t
 					}, s) => i.a.createElement("li", {
 						key: s
 					}, i.a.createElement(p.a, {
-						className: M.a.link,
+						className: H.a.link,
 						to: t
 					}, e)))) : V._("Topic on Reddit", null, {
 						hk: "3gTFev"
@@ -2090,19 +2090,19 @@
 						tabs: n
 					};
 					return i.a.createElement("div", {
-						className: Object(o.a)(M.a.Container, t)
+						className: Object(o.a)(H.a.Container, t)
 					}, i.a.createElement("div", {
-						className: Object(o.a)(M.a.Content, s === L.g.Large ? M.a.cardWidth : M.a.fullWidth)
+						className: Object(o.a)(H.a.Content, s === L.g.Large ? H.a.cardWidth : H.a.fullWidth)
 					}, i.a.createElement("div", {
-						className: M.a.Header
+						className: H.a.Header
 					}, i.a.createElement("div", {
-						className: M.a.Title
+						className: H.a.Title
 					}, i.a.createElement(f.b, {
 						type: f.a.TopicHeader
 					}, a)), i.a.createElement("div", {
-						className: M.a.Subtitle
+						className: H.a.Subtitle
 					}, this.renderSubtitleContent())), i.a.createElement("div", {
-						className: M.a.Tabs
+						className: H.a.Tabs
 					}, i.a.createElement(B, A({
 						tab: W.Posts
 					}, c), V._("Posts", null, {
@@ -2348,7 +2348,7 @@
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(Ce.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), O.O, je, e => {
+			}), O.P, je, e => {
 				var t;
 				return null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status
 			}, (e, t, s, r, i, n, o, a) => ({
@@ -2617,4 +2617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c7b6dcda159941e82fef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.4ac5d2f824b7ce60c4a9.js.map

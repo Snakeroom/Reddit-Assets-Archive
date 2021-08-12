@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.513f1211f9bd9a49f064.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.25dcf7bb412e60d8013c.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -4760,7 +4760,7 @@
 					pageLayer: t
 				}) => {
 					const n = !!e.user.account,
-						s = Object(Kt.V)(t);
+						s = Object(Kt.W)(t);
 					switch (s) {
 						case "index":
 						case "listing":
@@ -4849,7 +4849,7 @@
 								type: cs.Settings, model: o
 							}
 					}
-					const r = Object(Kt.P)(e, {
+					const r = Object(Kt.Q)(e, {
 						pageLayer: t
 					});
 					if ("all" === r) return {
@@ -6436,7 +6436,7 @@
 				className: e
 			}) {
 				const t = Object(dr.a)(),
-					n = Object(Kt.W)(t),
+					n = Object(Kt.X)(t),
 					{
 						nsfwSessionSetting: s,
 						refreshNsfwSessionSettingExpiryTime: o
@@ -6464,7 +6464,7 @@
 					D = Object(p.e)(cr.g),
 					U = Object(p.e)(xt.W),
 					B = Object(p.e)(Lt.p),
-					G = Object(p.e)(e => Object(Kt.X)(e, {
+					G = Object(p.e)(e => Object(Kt.Y)(e, {
 						pageLayer: t
 					})),
 					q = Object(p.e)(e => Object(Kt.q)(e, {
@@ -7226,7 +7226,7 @@
 				var n;
 				const s = Object(p.d)(),
 					r = Object(Rr.a)(),
-					a = Object(Kt.ab)(),
+					a = Object(Kt.bb)(),
 					i = Object(p.e)(e => e.user.account),
 					c = Object(p.e)(hs.c),
 					l = Object(p.e)(_i.c),
@@ -8768,7 +8768,7 @@
 					isResponsiveSettingsEnabled: Qt.a,
 					shouldOpenEmailVerificationTooltip: (e, {
 						pageLayer: t
-					}) => Object(Kt.K)(t) && !!Object(xt.m)(e) && !Object(xt.z)(e) && Object(xt.J)(e) && !Object(xt.H)(e),
+					}) => Object(Kt.L)(t) && !!Object(xt.m)(e) && !Object(xt.z)(e) && Object(xt.J)(e) && !Object(xt.H)(e),
 					shouldShowChangeUsernameModals: qc.c,
 					unreadNotifications: xt.lb
 				}),
@@ -9799,7 +9799,7 @@
 					isFPR: xt.H,
 					posts: qu.K,
 					profileCollectionsEnabled: mu.a,
-					showEmailCollectionBanner: e => !Object(Kt.J)(e.platform.currentPage) && Qu(e)
+					showEmailCollectionBanner: e => !Object(Kt.K)(e.platform.currentPage) && Qu(e)
 				}), e => ({
 					onClickOutsideOverlay: t => e(Object(h.b)(t)),
 					onUnpinSubscriptions: () => e(Object(_.j)()),
@@ -14645,7 +14645,7 @@
 				l = n("./src/reddit/selectors/user.ts");
 
 			function d(e) {
-				return Object(i.O)(e, {}) === r.g.Large && !Object(l.I)(e) && !Object(c.d)(e)
+				return Object(i.P)(e, {}) === r.g.Large && !Object(l.I)(e) && !Object(c.d)(e)
 			}
 
 			function u(e) {
@@ -15833,7 +15833,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.ab
+			t.a = s.bb
 		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
 			"use strict";
@@ -17277,7 +17277,7 @@
 			const b = Object(l.t)(),
 				h = Object(a.c)({
 					isEditing: d.i,
-					layout: (e, t) => t.forcedLayout || Object(l.O)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(l.P)(e, t)
 				}),
 				f = Object(r.b)(h),
 				g = ({
@@ -19838,4 +19838,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.513f1211f9bd9a49f064.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.25dcf7bb412e60d8013c.js.map

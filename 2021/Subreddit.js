@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b7efd896d7d3418fd602.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.2f148d38f8c2ee84c56b.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -3969,8 +3969,8 @@
 				N = Object(h.t)(),
 				P = Object(i.c)({
 					dropdownIsOpen: Object(E.b)(S),
-					postLayout: h.O,
-					redditStyle: h.A
+					postLayout: h.P,
+					redditStyle: h.B
 				}),
 				T = Object(a.b)(P, e => ({
 					onListingLayoutChange: (t, n) => e(Object(u.v)(t, n)),
@@ -4159,7 +4159,7 @@
 				H = B.a.div("DropdownRowDisabled", L.a),
 				V = Object(l.t)({
 					isFrontpage: l.y,
-					isProfilePage: l.G,
+					isProfilePage: l.H,
 					pageLayer: e => e
 				}),
 				q = Object(f.c)({
@@ -4167,7 +4167,7 @@
 					isBestSortPopularEnabled: w.a,
 					user: N.j,
 					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || D)(e),
-					isPopularPage: l.C
+					isPopularPage: l.D
 				}),
 				G = Object(o.b)(q, (e, {
 					dropdownId: t,
@@ -4654,7 +4654,7 @@
 			const _e = Object(y.a)(_.a),
 				Ce = (e, t, n) => {
 					let s = e.url;
-					return e.urlParams.sort || Object(l.G)(e) || (s = ge.a.join(s, t)), Object(p.a)(s, {
+					return e.urlParams.sort || Object(l.H)(e) || (s = ge.a.join(s, t)), Object(p.a)(s, {
 						[z.x]: n
 					})
 				},
@@ -4712,10 +4712,10 @@
 				Re = "ListingSort--Overflow",
 				Fe = Object(l.t)({
 					isFrontpage: l.y,
-					isProfilePage: l.G,
+					isProfilePage: l.H,
 					pageLayer: e => e
 				}),
-				Me = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, w.a, N.j, l.C, k.a, Pe.i, (e, t, n, s, r, o, a) => {
+				Me = Object(f.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, w.a, N.j, l.D, k.a, Pe.i, (e, t, n, s, r, o, a) => {
 					if (e) return {
 						isPopularPage: r,
 						sortOptions: e,
@@ -4843,7 +4843,7 @@
 				He = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ve = n.n(He);
 			const qe = Object(l.t)({
-					isProfilePage: l.G,
+					isProfilePage: l.H,
 					pageLayer: e => e
 				}),
 				Ge = Object(o.b)(null, (e, {
@@ -10577,9 +10577,9 @@
 					isCommentPermalink: p.v,
 					isCommentsPage: p.w,
 					isFrontpage: p.y,
-					isPredictionsPage: p.L,
-					isProfilePostListing: p.I,
-					isTopicPage: p.N,
+					isPredictionsPage: p.M,
+					isProfilePostListing: p.J,
+					isTopicPage: p.O,
 					pageLayer: e => e
 				})
 			}
@@ -10588,7 +10588,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: x.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.O)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.P)(e, t),
 					loadMore: (e, t) => t.isPredictionsPage ? null : Object(v.g)(e, t),
 					postsById: (e, t) => {
 						if (t.isPredictionsPage) {
@@ -10617,7 +10617,7 @@
 					}),
 					subredditsById: _.ab,
 					viewportDataLoaded: C.a,
-					pageReferrer: p.R,
+					pageReferrer: p.S,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: g.d
 				},
@@ -10721,11 +10721,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: d.S,
+				flairStyleTemplate: d.T,
 				hideNSFWPref: b.B,
 				isActive: p.j,
 				moderatorPermissions: u.k,
-				modModeEnabled: d.Q,
+				modModeEnabled: d.R,
 				showEditFlair: m.a
 			}), (e, {
 				postId: t
@@ -12333,7 +12333,7 @@
 				renderingObjectInfo: e,
 				pageLayer: t
 			}) => {
-				if (e && (Object(r.b)(e) || Object(o.b)(e))) return Object(r.b)(e) ? a.SourceElement.Comment : Object(s.w)(t) ? a.SourceElement.PostDetail : Object(s.E)(t) ? a.SourceElement.ListingPostDetail : void 0
+				if (e && (Object(r.b)(e) || Object(o.b)(e))) return Object(r.b)(e) ? a.SourceElement.Comment : Object(s.w)(t) ? a.SourceElement.PostDetail : Object(s.F)(t) ? a.SourceElement.ListingPostDetail : void 0
 			}
 		},
 		"./src/reddit/helpers/trackers/modOnboarding.ts": function(e, t, n) {
@@ -13062,7 +13062,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.ab
+			t.a = s.bb
 		},
 		"./src/reddit/hooks/useTracking.ts": function(e, t, n) {
 			"use strict";
@@ -13623,7 +13623,7 @@
 			const b = Object(d.t)(),
 				h = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.O)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.P)(e, t)
 				}),
 				f = Object(o.b)(h),
 				x = ({
@@ -14130,7 +14130,7 @@
 				return !1
 			}), Ye = (e, t) => {
 				const n = qe(e),
-					s = Object(se.O)(e, t),
+					s = Object(se.P)(e, t),
 					{
 						sort: r
 					} = $e(e, t);
@@ -14141,7 +14141,7 @@
 				})
 			}, Qe = Object(m.c)({
 				inAwardListingExperiment: he.a,
-				isPopular: se.C,
+				isPopular: se.D,
 				isInTrendingEntrypointExperiment: ve.a
 			}), Xe = e => {
 				const t = te.x in e && e[te.x].toUpperCase();
@@ -14195,7 +14195,7 @@
 			}), nt = Object(m.c)({
 				showCreatePostBanner: Je,
 				contentGateInfo: (e, t) => Object(Ie.e)(e, t.match.params.subredditName),
-				layout: se.O,
+				layout: se.P,
 				isRpanDuVisible: (e, {
 					match: t
 				}) => Object(we.a)(e, {
@@ -14460,7 +14460,7 @@
 					} = this.props, ve = Object(g.a)(pe), Ee = pe.toLowerCase(), _e = `/r/${pe}/`, Ce = {
 						listingKey: C,
 						listingName: Ee
-					}, Oe = Object(ye.a)(xe), je = Object(ye.b)(xe), Se = Object(ye.c)(xe), we = Object(se.L)(j);
+					}, Oe = Object(ye.a)(xe), je = Object(ye.b)(xe), Se = Object(ye.c)(xe), we = Object(se.M)(j);
 					let ke;
 					ve ? ke = Object(x.a)(pe) ? d.a.createElement(De, Ce) : d.a.createElement(ct, Ce) : ue && (ke = we ? d.a.createElement(B.a, {
 						subredditId: ue.id
@@ -15603,4 +15603,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b7efd896d7d3418fd602.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.2f148d38f8c2ee84c56b.js.map

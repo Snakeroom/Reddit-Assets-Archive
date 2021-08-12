@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.5a126acc01d68d068f54.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.b81ed9e07ba42f955a62.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -957,8 +957,8 @@
 				F = Object(_.t)(),
 				z = Object(i.c)({
 					dropdownIsOpen: Object(w.b)(S),
-					postLayout: _.O,
-					redditStyle: _.A
+					postLayout: _.P,
+					redditStyle: _.B
 				}),
 				N = Object(s.b)(z, e => ({
 					onListingLayoutChange: (t, n) => e(Object(d.v)(t, n)),
@@ -1147,7 +1147,7 @@
 				H = P.a.div("DropdownRowDisabled", L.a),
 				q = Object(u.t)({
 					isFrontpage: u.y,
-					isProfilePage: u.G,
+					isProfilePage: u.H,
 					pageLayer: e => e
 				}),
 				M = Object(b.c)({
@@ -1155,7 +1155,7 @@
 					isBestSortPopularEnabled: D.a,
 					user: F.j,
 					dropdownIsOpen: (e, t) => Object(j.b)(t.dropdownId || B)(e),
-					isPopularPage: u.C
+					isPopularPage: u.D
 				}),
 				W = Object(o.b)(M, (e, {
 					dropdownId: t,
@@ -1642,7 +1642,7 @@
 			const xe = Object(y.a)(x.a),
 				ve = (e, t, n) => {
 					let r = e.url;
-					return e.urlParams.sort || Object(u.G)(e) || (r = ge.a.join(r, t)), Object(p.a)(r, {
+					return e.urlParams.sort || Object(u.H)(e) || (r = ge.a.join(r, t)), Object(p.a)(r, {
 						[Y.x]: n
 					})
 				},
@@ -1700,10 +1700,10 @@
 				Te = "ListingSort--Overflow",
 				Ie = Object(u.t)({
 					isFrontpage: u.y,
-					isProfilePage: u.G,
+					isProfilePage: u.H,
 					pageLayer: e => e
 				}),
-				Re = Object(b.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, D.a, F.j, u.C, O.a, ze.i, (e, t, n, r, a, o, s) => {
+				Re = Object(b.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, D.a, F.j, u.D, O.a, ze.i, (e, t, n, r, a, o, s) => {
 					if (e) return {
 						isPopularPage: a,
 						sortOptions: e,
@@ -1831,7 +1831,7 @@
 				He = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				qe = n.n(He);
 			const Me = Object(u.t)({
-					isProfilePage: u.G,
+					isProfilePage: u.H,
 					pageLayer: e => e
 				}),
 				We = Object(o.b)(null, (e, {
@@ -2257,4 +2257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.5a126acc01d68d068f54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.b81ed9e07ba42f955a62.js.map

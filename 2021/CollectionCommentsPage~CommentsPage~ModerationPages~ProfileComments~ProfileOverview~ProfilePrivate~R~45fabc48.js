@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b68577c73354e1245c87.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.241b33b29a4dc7a825e6.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1530,13 +1530,13 @@
 					currentProfileName: W.h,
 					isCommentPermalink: W.v,
 					isCommentsPage: W.w,
-					isProfilePostListing: W.I,
+					isProfilePostListing: W.J,
 					pageLayer: e => e
 				}),
 				Oe = Object(a.c)({
 					activeModalId: ce.a,
 					claimedFreeAward: j.b,
-					layout: W.O,
+					layout: W.P,
 					userIsOp: G.qb,
 					subreddit: W.q
 				}),
@@ -3036,7 +3036,7 @@
 						userIsOp: s,
 						post: o,
 						pageLayer: n
-					}) => Object(S.B)(e, {
+					}) => Object(S.C)(e, {
 						pageLayer: n
 					}) && t && s && Object(z.ob)(e, {
 						userName: o.author
@@ -4640,4 +4640,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.b68577c73354e1245c87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~45fabc48.241b33b29a4dc7a825e6.js.map

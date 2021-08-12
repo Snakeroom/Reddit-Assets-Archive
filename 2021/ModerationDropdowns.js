@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.fa966c0fbe88f37f0893.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.e5f98365f5a2c243275a.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/uuid/index.js": function(e, t, n) {
@@ -56,11 +56,11 @@
 			})), n.d(t, "f", (function() {
 				return z
 			})), n.d(t, "o", (function() {
-				return K
-			})), n.d(t, "p", (function() {
-				return V
-			})), n.d(t, "d", (function() {
 				return H
+			})), n.d(t, "p", (function() {
+				return K
+			})), n.d(t, "d", (function() {
+				return V
 			})), n.d(t, "a", (function() {
 				return J
 			})), n.d(t, "b", (function() {
@@ -202,7 +202,7 @@
 						moreCommentsItem: i,
 						...x.error
 					}))
-				}, A = Object(b.a)(h.b, g.a.upvoted), G = Object(b.a)(h.b, g.a.downvoted), U = Object(i.a)(I.j), z = Object(i.a)(I.i), W = Object(i.a)(I.e), Q = Object(i.a)(I.f), K = (Object(i.a)(I.c), Object(i.a)(I.d), ({
+				}, A = Object(b.a)(h.b, g.a.upvoted), G = Object(b.a)(h.b, g.a.downvoted), U = Object(i.a)(I.j), z = Object(i.a)(I.i), W = Object(i.a)(I.e), Q = Object(i.a)(I.f), H = (Object(i.a)(I.c), Object(i.a)(I.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -223,7 +223,7 @@
 						commentsPageKey: t,
 						isCollapsed: c
 					})), c || 0 !== d || n(e, !0), Object(p.d)()
-				}), V = ({
+				}), K = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
@@ -231,7 +231,7 @@
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, H = ({
+				}, V = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: n,
@@ -622,11 +622,11 @@
 			})), n.d(t, "i", (function() {
 				return Q
 			})), n.d(t, "o", (function() {
-				return K
-			})), n.d(t, "p", (function() {
-				return V
-			})), n.d(t, "f", (function() {
 				return H
+			})), n.d(t, "p", (function() {
+				return K
+			})), n.d(t, "f", (function() {
+				return V
 			})), n.d(t, "c", (function() {
 				return q
 			})), n.d(t, "d", (function() {
@@ -867,7 +867,7 @@
 					} = s.body.data;
 					if (!r.hasOwnProperty("predictionTokens")) throw new Error("Failed to fetch token balance");
 					return r.predictionTokens
-				}, K = ({
+				}, H = ({
 					coinPackageId: e,
 					selectedOptionId: t,
 					price: n,
@@ -887,9 +887,9 @@
 						tournamentId: s,
 						tournamentPostId: r
 					})), a
-				}, V = e => Object(b.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
+				}, K = e => Object(b.h)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL, {
 					feature: e
-				}), H = () => Object(b.g)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL), q = e => async (t, n, {
+				}), V = () => Object(b.g)(f.a.ECON_PREDICTIONS_PREMIUM_UPSELL), q = e => async (t, n, {
 					gqlContext: s
 				}) => {
 					try {
@@ -1678,15 +1678,15 @@
 				}) => {
 					var G, U, z, W;
 					const Q = Object(r.e)(N.q),
-						K = Object(r.e)(e => {
+						H = Object(r.e)(e => {
 							var t;
 							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && null !== A.pollData.resolvedOptionId && Object(N.n)(e)
 						}),
-						V = Object(r.e)(e => {
+						K = Object(r.e)(e => {
 							var t;
 							return (null === (t = A.pollData) || void 0 === t ? void 0 : t.isPrediction) && Object(N.m)(e)
 						}),
-						H = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
+						V = A.flair.filter(e => e.type !== y.f.Nsfw && e.type !== y.f.Spoiler).length > 0,
 						q = Object(w.b)(A),
 						J = !(!A.approvedBy || !q),
 						Z = a ? void 0 : l,
@@ -1720,7 +1720,7 @@
 						onClick: T
 					}, s.a.createElement(S.j, null))), e && s.a.createElement(S.e, {
 						className: X(_.a.Flair, Z),
-						displayText: H ? C.fbt._("Edit post flair", null, {
+						displayText: V ? C.fbt._("Edit post flair", null, {
 							hk: "2oet1"
 						}) : C.fbt._("Add post flair", null, {
 							hk: "1iPNLQ"
@@ -1737,7 +1737,7 @@
 						text: C.fbt._("Sticky post", null, {
 							hk: "3uXoIh"
 						})
-					}), V && s.a.createElement(S.e, {
+					}), K && s.a.createElement(S.e, {
 						disabled: Boolean((null === (G = A.pollData) || void 0 === G ? void 0 : G.resolvedOptionId) || (null === (U = A.pollData) || void 0 === U ? void 0 : U.predictionStatus) === R.b.Cancelled),
 						displayText: C.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
@@ -1748,7 +1748,7 @@
 							hk: "FjDpu"
 						}),
 						onClick: f
-					}, s.a.createElement(S.b, null)), K && s.a.createElement(S.e, {
+					}, s.a.createElement(S.b, null)), H && s.a.createElement(S.e, {
 						textClassName: M.a.text,
 						onClick: b,
 						displayText: C.fbt._("Change the outcome", null, {
@@ -1794,11 +1794,11 @@
 				B = n("./src/reddit/components/PostModModeDropdown/_PostModModeDropdown.m.less"),
 				A = n.n(B);
 			const G = Object(h.t)({
-					isProfilePage: h.G,
+					isProfilePage: h.H,
 					pageLayer: e => e
 				}),
 				U = Object(i.c)({
-					layout: h.O,
+					layout: h.P,
 					isDropdownOpen: (e, {
 						tooltipId: t
 					}) => Object(k.b)(t)(e),
@@ -3226,4 +3226,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.fa966c0fbe88f37f0893.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.e5f98365f5a2c243275a.js.map

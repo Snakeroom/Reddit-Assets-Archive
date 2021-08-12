@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.232394e48040cac2185e.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.ee114fc4eb144cd30e36.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, r) {
@@ -148,7 +148,7 @@
 						sort: m,
 						t: l,
 						...a()(i, j.l),
-						layout: Object(y.O)(s, {}).toLowerCase()
+						layout: Object(y.P)(s, {}).toLowerCase()
 					}, Object(k.a)(s));
 					if (C.ok) {
 						const t = Object(S.f)(s, {
@@ -316,7 +316,7 @@
 					apiPending: Z.b,
 					currentUser: ee.j,
 					measureScrollFPS: $.d.measureScrollFPS,
-					layout: I.O,
+					layout: I.P,
 					loadMore: Z.d,
 					subredditsById: z.ab,
 					viewportDataLoaded: Y.a,
@@ -399,9 +399,9 @@
 				}).apply(this, arguments)
 			}
 			const je = Object(I.t)(),
-				ye = Object(c.a)(I.B, ee.db, (e, {
+				ye = Object(c.a)(I.C, ee.db, (e, {
 					location: t
-				}) => o()([...Object(m.a)(t.search)]), I.O, (e, {
+				}) => o()([...Object(m.a)(t.search)]), I.P, (e, {
 					match: t
 				}) => t.params.profileName, (e, {
 					match: t
@@ -508,4 +508,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.232394e48040cac2185e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.ee114fc4eb144cd30e36.js.map

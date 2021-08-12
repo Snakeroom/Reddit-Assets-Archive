@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.25e33170609cad5169f6.js
-// Retrieved at 8/12/2021, 4:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.60efdd12d980880fe70d.js
+// Retrieved at 8/12/2021, 5:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./src/lib/linkMatchers/index.ts": function(e, t, n) {
@@ -1530,7 +1530,7 @@
 						to: e.url,
 						isActive: t,
 						onClick: e => {
-							Object(d.E)(r) && !Object(d.L)(r) && e.preventDefault(), n()
+							Object(d.F)(r) && !Object(d.M)(r) && e.preventDefault(), n()
 						}
 					}, F._("Polls", null, {
 						hk: "1vWsZx"
@@ -1551,7 +1551,7 @@
 				const t = Object(i.d)(),
 					n = Object(L.a)(),
 					a = Object(W.a)(),
-					o = Object(B.L)(n),
+					o = Object(B.M)(n),
 					[d, c] = Object(r.useState)(!1),
 					l = Object(i.e)(t => Object(P.T)(t, {
 						subredditId: e
@@ -1598,7 +1598,7 @@
 				Q = Object(a.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && J.indexOf(t.pageLayer.meta.name) > -1,
-					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.L)(t.pageLayer)
+					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.M)(t.pageLayer)
 				});
 			var Z = q(Object(i.b)(Q, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(T.p)({
@@ -1683,7 +1683,7 @@
 			const ce = Object(c.a)("spPolls", R),
 				le = Object(d.t)(),
 				ue = Object(a.c)({
-					layout: d.O,
+					layout: d.P,
 					widget: l.f
 				}),
 				me = Object(i.b)(ue);
@@ -1830,8 +1830,8 @@
 			}
 			const E = 129,
 				k = Object(h.t)({
-					filterName: e => Object(h.T)(e)[b.g],
-					url: e => Object(h.Z)(e)
+					filterName: e => Object(h.U)(e)[b.g],
+					url: e => Object(h.ab)(e)
 				}),
 				I = Object(o.c)({
 					subredditId: (e, t) => Object(j.E)(e, t.subredditName)
@@ -3251,7 +3251,7 @@
 				s = n("./src/reddit/constants/postLayout.ts"),
 				i = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.e[Object(i.O)(e, {})] === s.d.Card,
+			const o = e => s.e[Object(i.P)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: r.P
@@ -3350,4 +3350,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.25e33170609cad5169f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.60efdd12d980880fe70d.js.map
