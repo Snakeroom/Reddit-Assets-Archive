@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.e05057395d29629426d8.js
-// Retrieved at 8/11/2021, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.c5a4f45e1b5439c17cda.js
+// Retrieved at 8/12/2021, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1826,15 +1826,26 @@
 				onClose: e,
 				pageType: t
 			}) => {
-				const n = Object(c.a)();
+				const n = Object(c.a)(),
+					s = r.fbt._("We’ve updated our {userAgreement} and {privacyPolicy}. Take a look, as the changes take effect September 12, 2021.", [r.fbt._param("userAgreement", o.a.createElement("a", {
+						className: l.a.underlineLink,
+						href: "https://www.redditinc.com/policies/user-agreement",
+						target: "_blank",
+						rel: "noopener noreferrer"
+					}, "User Agreement")), r.fbt._param("privacyPolicy", o.a.createElement("a", {
+						className: l.a.underlineLink,
+						href: "https://www.redditinc.com/policies/privacy-policy",
+						target: "_blank",
+						rel: "noopener noreferrer"
+					}, "Privacy Policy"))], {
+						hk: "3bGC4g"
+					});
 				return o.a.createElement(a.a, {
 					className: l.a.policyBanner,
 					titleText: r.fbt._("Reddit’s User Agreement & Privacy Policy", null, {
 						hk: "32fxCY"
 					}),
-					descriptionText: r.fbt._("We’ve updated our User Agreement and Privacy Policy. Take a look, as the changes take effect.", null, {
-						hk: "1Q3yp7"
-					}),
+					descriptionText: s,
 					primaryButtonText: r.fbt._("Ok", null, {
 						hk: "1IJxzv"
 					}),
@@ -1846,6 +1857,7 @@
 		},
 		"./src/reddit/components/InboxBanner/index.m.less": function(e, t, n) {
 			e.exports = {
+				underlineLink: "_3vOO3WyD7yteL4Rr9E1i2y",
 				banner: "_34mO86zNIysmcISYIe8gVT",
 				bannerTitleContainer: "rh7yf_ejK6H75L6jZkb6C",
 				bannerTitle: "V_VLkmdSrXqz92-5vad5F",
@@ -3849,4 +3861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.e05057395d29629426d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c5a4f45e1b5439c17cda.js.map

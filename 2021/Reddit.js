@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.388528a3a4ccf7464ab4.js
-// Retrieved at 8/12/2021, 12:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.e3b69e083c83980c73c7.js
+// Retrieved at 8/12/2021, 12:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -11433,15 +11433,26 @@
 				onClose: e,
 				pageType: t
 			}) => {
-				const n = Object(c.a)();
+				const n = Object(c.a)(),
+					o = s.fbt._("We’ve updated our {userAgreement} and {privacyPolicy}. Take a look, as the changes take effect September 12, 2021.", [s.fbt._param("userAgreement", r.a.createElement("a", {
+						className: d.a.underlineLink,
+						href: "https://www.redditinc.com/policies/user-agreement",
+						target: "_blank",
+						rel: "noopener noreferrer"
+					}, "User Agreement")), s.fbt._param("privacyPolicy", r.a.createElement("a", {
+						className: d.a.underlineLink,
+						href: "https://www.redditinc.com/policies/privacy-policy",
+						target: "_blank",
+						rel: "noopener noreferrer"
+					}, "Privacy Policy"))], {
+						hk: "3bGC4g"
+					});
 				return r.a.createElement(a.a, {
 					className: d.a.policyBanner,
 					titleText: s.fbt._("Reddit’s User Agreement & Privacy Policy", null, {
 						hk: "32fxCY"
 					}),
-					descriptionText: s.fbt._("We’ve updated our User Agreement and Privacy Policy. Take a look, as the changes take effect.", null, {
-						hk: "1Q3yp7"
-					}),
+					descriptionText: o,
 					primaryButtonText: s.fbt._("Ok", null, {
 						hk: "1IJxzv"
 					}),
@@ -11453,6 +11464,7 @@
 		},
 		"./src/reddit/components/InboxBanner/index.m.less": function(e, t, n) {
 			e.exports = {
+				underlineLink: "_3vOO3WyD7yteL4Rr9E1i2y",
 				banner: "_34mO86zNIysmcISYIe8gVT",
 				bannerTitleContainer: "rh7yf_ejK6H75L6jZkb6C",
 				bannerTitle: "V_VLkmdSrXqz92-5vad5F",
@@ -19696,4 +19708,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePo~5f1ac562", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "Governance~Reddit~ReportFlow~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~red~f3a55241", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Governance~PostCreation~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~2a8f7250", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit~reddit-components-MediumPost", "Reddit~StandalonePostPage~reddit-components-MediumPost", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.388528a3a4ccf7464ab4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.e3b69e083c83980c73c7.js.map
