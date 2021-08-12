@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.7370ae195205ab007780.js
-// Retrieved at 8/12/2021, 9:40:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.67e20b0ff1503cd9c4c4.js
+// Retrieved at 8/12/2021, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7691,8 +7691,7 @@
 					}, n.a.createElement(v.a, {
 						className: G.a.thumbnail,
 						post: re,
-						templatePlaceholderImage: Z,
-						usePreview: !0
+						templatePlaceholderImage: Z
 					}));
 					else if (ie)
 						if (ie.type !== w.o.RTJSON && ie.type !== w.o.TEXT) e = n.a.createElement("div", {
@@ -7703,16 +7702,16 @@
 							className: G.a.mediaContent,
 							autoplayPref: F,
 							isListing: !1,
-							isMiniCard: !re.isSponsored,
-							isNotCardView: !1,
+							isMiniCard: !1,
+							isNotCardView: !0,
 							isPromotedTrend: re.isSponsored,
 							post: Y || re,
-							primaryContent: re.isSponsored,
+							primaryContent: !0,
 							scrollerItemRef: e => R.current = e,
 							shouldLoad: !0,
 							shouldPause: !0,
 							showCentered: !0,
-							showFull: re.isSponsored
+							showFull: !0
 						}));
 						else {
 							e = n.a.createElement("div", {
@@ -7730,7 +7729,7 @@
 								post: Y || re,
 								shouldPause: !0,
 								shouldLoad: !0,
-								showCentered: !1,
+								showCentered: !0,
 								showFull: !0
 							}), n.a.createElement("div", {
 								className: G.a.seeMore
@@ -11193,4 +11192,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7370ae195205ab007780.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.67e20b0ff1503cd9c4c4.js.map
