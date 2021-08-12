@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.9a226c864db6bbddab74.js
-// Retrieved at 8/12/2021, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.75eb49b0ef569e557469.js
+// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1649,7 +1649,7 @@
 					className: e,
 					disabled: b || l,
 					onClick: e => {
-						h && h(e), n === u.Qd.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
+						h && h(e), n === u.Od.Tabs ? window.open("/subreddits/create", "_blank") : c(d)
 					},
 					onMouseEnter: o,
 					onMouseLeave: a,
@@ -2273,52 +2273,58 @@
 		"./src/reddit/components/HumanDate/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return a
+				return l
 			})), n.d(t, "a", (function() {
-				return d
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			})), n.d(t, "c", (function() {
-				return f
+				return _
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				i = n("./src/lib/timeAgo/index.ts"),
-				o = n("./src/reddit/hooks/useLocale.ts");
-			var a = function({
+				o = n("./src/lib/constants/index.ts"),
+				a = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/reddit/selectors/meta.ts");
+			var d = "undefined" == typeof document ? function() {
+				return Object(a.e)(c.i) || o.B
+			} : function() {
+				return document.documentElement.lang || o.B
+			};
+			var l = function({
 					seconds: e,
 					...t
 				}) {
 					var n;
-					const s = Object(o.a)(),
-						a = {
+					const s = d(),
+						o = {
 							...t,
 							locale: null !== (n = t.locale) && void 0 !== n ? n : s
 						};
-					return r.a.createElement(r.a.Fragment, null, Object(i.d)(e, a))
+					return r.a.createElement(r.a.Fragment, null, Object(i.d)(e, o))
 				},
-				c = n("./src/lib/humanizeDate/index.ts");
-			var d = function({
-					seconds: e,
-					...t
-				}) {
-					var n;
-					const s = Object(o.a)(),
-						i = {
-							...t,
-							locale: null !== (n = t.locale) && void 0 !== n ? n : s
-						};
-					return r.a.createElement(r.a.Fragment, null, Object(c.a)(e, i))
-				},
-				l = n("./src/lib/constants/index.ts");
-			var u = function({
+				u = n("./src/lib/humanizeDate/index.ts");
+			var m = function({
+				seconds: e,
+				...t
+			}) {
+				var n;
+				const s = d(),
+					i = {
+						...t,
+						locale: null !== (n = t.locale) && void 0 !== n ? n : s
+					};
+				return r.a.createElement(r.a.Fragment, null, Object(u.a)(e, i))
+			};
+			var p = function({
 					seconds: e,
 					locale: t
 				}) {
-					const n = Object(o.a)(),
+					const n = d(),
 						s = null != t ? t : n;
-					return r.a.createElement(r.a.Fragment, null, function(e, t = l.B) {
-						const n = e * l.Ob;
+					return r.a.createElement(r.a.Fragment, null, function(e, t = o.B) {
+						const n = e * o.Ob;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -2331,42 +2337,42 @@
 						})
 					}(e, s))
 				},
-				m = n("./node_modules/fbt/lib/FbtPublic.js"),
-				p = n("./src/lib/eventTools/index.ts");
+				b = n("./node_modules/fbt/lib/FbtPublic.js"),
+				h = n("./src/lib/eventTools/index.ts");
 
-			function b(e, t = l.B) {
+			function f(e, t = o.B) {
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function h(e, t, n, s = l.B) {
-				const r = Object(p.e)(e, t),
-					i = new Date(e * l.Ob);
-				let o;
-				if (r === p.a.Live || n) return m.fbt._("Now", null, {
+			function g(e, t, n, s = o.B) {
+				const r = Object(h.e)(e, t),
+					i = new Date(e * o.Ob);
+				let a;
+				if (r === h.a.Live || n) return b.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
-				return r === p.a.Future ? o = Object(p.d)(e) ? m.fbt._("Today", null, {
+				return r === h.a.Future ? a = Object(h.d)(e) ? b.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(p.b)(e) >= 5 ? b(i, s) : function(e, t = l.B) {
+				}).toString() : Object(h.b)(e) >= 5 ? f(i, s) : function(e, t = o.B) {
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
-				}(i, s) : r === p.a.Past && (o = Object(p.d)(e) ? m.fbt._("Today", null, {
+				}(i, s) : r === h.a.Past && (a = Object(h.d)(e) ? b.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : b(i, s)), `${o} @ ${function(e,t=l.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(i,s)}`
+				}).toString() : f(i, s)), `${a} @ ${function(e,t=o.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(i,s)}`
 			}
-			var f = function({
+			var _ = function({
 				startTime: e,
 				endTime: t,
 				isLive: n,
 				locale: s
 			}) {
-				const i = Object(o.a)(),
-					a = null != s ? s : i;
-				return r.a.createElement(r.a.Fragment, null, h(e, t, n, a))
+				const i = d(),
+					o = null != s ? s : i;
+				return r.a.createElement(r.a.Fragment, null, g(e, t, n, o))
 			};
 			n("./src/lib/humanizeUTCDate/index.tsx")
 		},
@@ -2865,8 +2871,8 @@
 					}))))
 				}
 			}
-			var Q = Y,
-				X = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
+			var X = Y,
+				Q = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
 				Z = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				$ = n("./src/reddit/helpers/trackers/inlineSubredditEditing.ts"),
 				ee = n("./src/reddit/icons/fonts/index.tsx"),
@@ -2875,7 +2881,7 @@
 			const se = 6,
 				re = Object(u.c)({
 					apiPending: ne.U,
-					unsavedChangesModalIsOpen: Object(te.b)(X.a)
+					unsavedChangesModalIsOpen: Object(te.b)(Q.a)
 				});
 			class ie extends i.a.Component {
 				constructor(e) {
@@ -2928,7 +2934,7 @@
 						className: K.a.loadingIcon,
 						sizePx: se
 					}) : void 0;
-					return this.state.description ? i.a.createElement(i.a.Fragment, null, i.a.createElement(Q, {
+					return this.state.description ? i.a.createElement(i.a.Fragment, null, i.a.createElement(X, {
 						description: this.state.description,
 						shouldTruncateDescription: this.props.shouldTruncateDescription,
 						subreddit: this.props.subreddit
@@ -2988,7 +2994,7 @@
 						tabIndex: 0,
 						onFocus: this.handleOnFocus,
 						onBlur: this.handleOnBlur
-					}, this.state.editing ? this.renderTextArea() : this.renderInactiveDescription(), this.props.unsavedChangesModalIsOpen && i.a.createElement(X.b, {
+					}, this.state.editing ? this.renderTextArea() : this.renderInactiveDescription(), this.props.unsavedChangesModalIsOpen && i.a.createElement(Q.b, {
 						withOverlay: !0,
 						ignoreDefaultFocus: !0,
 						onCancel: this.focusTextArea,
@@ -3002,7 +3008,7 @@
 				}) => ({
 					updateSubredditSettings: n => e(Object(M.j)(t.id, n, {}, !0)),
 					openUnsavedChangesModal: () => {
-						e(Object(_.h)(X.a))
+						e(Object(_.h)(Q.a))
 					}
 				}))(Object(F.c)(ie)),
 				ae = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
@@ -3056,8 +3062,8 @@
 				Je = n("./src/reddit/actions/economics/powerups/achievements.ts"),
 				Ve = n("./src/reddit/actions/gold/powerups.ts"),
 				Ye = n("./src/reddit/components/Badges/UserDisplay/index.tsx"),
-				Qe = n("./src/reddit/components/Flair/index.tsx"),
-				Xe = n("./src/reddit/featureFlags/component.tsx"),
+				Xe = n("./src/reddit/components/Flair/index.tsx"),
+				Qe = n("./src/reddit/featureFlags/component.tsx"),
 				Ze = n("./src/reddit/helpers/trackers/userFlair.ts"),
 				$e = n("./src/reddit/hooks/useTracking.ts"),
 				et = n("./src/reddit/models/User/index.ts"),
@@ -3069,7 +3075,7 @@
 				ot = n.n(it);
 			const {
 				fbt: at
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ct = z.a.div("FlairSettingsContainer", ot.a), dt = z.a.div("FlairPreviewWrapper", ot.a), lt = z.a.div("PreviewTitle", ot.a), ut = z.a.wrapped(Qe.b, "FlairComponent", ot.a), mt = z.a.wrapped(j.o, "TertiaryButton", ot.a), pt = z.a.wrapped(mt, "IconButton", ot.a), bt = z.a.span("Username", ot.a), ht = Object(Xe.a)("spBadges", Ye.a), ft = Object(u.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ct = z.a.div("FlairSettingsContainer", ot.a), dt = z.a.div("FlairPreviewWrapper", ot.a), lt = z.a.div("PreviewTitle", ot.a), ut = z.a.wrapped(Xe.b, "FlairComponent", ot.a), mt = z.a.wrapped(j.o, "TertiaryButton", ot.a), pt = z.a.wrapped(mt, "IconButton", ot.a), bt = z.a.span("Username", ot.a), ht = Object(Qe.a)("spBadges", Ye.a), ft = Object(u.c)({
 				currentUser: w.j,
 				isAchievementFlairModalEnabled: (e, t) => Object(nt.g)(e, {
 					subredditId: t.subredditId
@@ -3257,8 +3263,8 @@
 					showContributorRequestFlow: e => Object(ne.q)(e, De.e.Post),
 					showCreatePollButton: e => (e => Object(Ue.c)(e, {
 						experimentEligibilitySelector: Ue.a,
-						experimentName: Be.H
-					}) === Be.O.Treatment)(e) && !Object(Ie.h)(),
+						experimentName: Be.F
+					}) === Be.M.Treatment)(e) && !Object(Ie.h)(),
 					subreddit: (e, t) => Object(ne.z)(e, {
 						subredditName: t.listingName
 					}),
@@ -3414,12 +3420,12 @@
 						idCardWidget: n
 					}), M = N || p || h, H = !N && y.id ? y.id : "", q = C && C.created, W = s.fbt._("Cake Day", null, {
 						hk: "gZ29b"
-					}), z = `IdCard--Subscribers--${p}--${H}`, G = `IdCard--CurrentlyViewing--${p}--${H}`, K = `IdCard--CakeDay--${p}--${H}`, J = `IdCard--CoinCoint--${p}--${H}`, V = u && !p, Y = !N && !l && !c, X = !N && !p && j && !h, Z = X ? i.a.createElement(oe, {
+					}), z = `IdCard--Subscribers--${p}--${H}`, G = `IdCard--CurrentlyViewing--${p}--${H}`, K = `IdCard--CakeDay--${p}--${H}`, J = `IdCard--CoinCoint--${p}--${H}`, V = u && !p, Y = !N && !l && !c, Q = !N && !p && j && !h, Z = Q ? i.a.createElement(oe, {
 						description: R,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!r,
 						subreddit: y
-					}) : i.a.createElement(Q, {
+					}) : i.a.createElement(X, {
 						description: R,
 						shouldTruncateDescription: !1,
 						subreddit: y
@@ -3471,7 +3477,7 @@
 						isTargetBlank: h,
 						linkUrl: N ? void 0 : U,
 						subredditIcon: O,
-						canEditIcon: X,
+						canEditIcon: Q,
 						subreddit: y,
 						titleText: B,
 						onOpenFilePicker: this.openIconFilePicker
@@ -3506,7 +3512,7 @@
 						className: Dt.a.coinsTooltipContent
 					}, s.fbt._("The community gets Coins from Awards given by members", null, {
 						hk: "3j3NSH"
-					}))))), X && i.a.createElement(ue, {
+					}))))), Q && i.a.createElement(ue, {
 						context: Oe.a.idCard,
 						subredditId: H
 					}), !N && V && Ut(y, L, F), this.renderButtons(), d && _ && x && (r || p) && i.a.createElement(i.a.Fragment, null, i.a.createElement("hr", {
@@ -3526,7 +3532,7 @@
 						isSubmissionPage: h,
 						sendEvent: this.props.sendEvent,
 						subredditId: y.id
-					})), X && i.a.createElement(ye.a, {
+					})), Q && i.a.createElement(ye.a, {
 						key: "icon-file-picker",
 						className: Dt.a.iconFilePicker,
 						inputRef: this.setIconFilePickerRef,
@@ -4703,7 +4709,7 @@
 								experimentName: i.B,
 								expEventOverride: t
 							});
-							return !!(Object(i.ke)(n) ? void 0 : n)
+							return !!(Object(i.ie)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -4756,15 +4762,15 @@
 				r = n("./src/reddit/constants/experiments.ts");
 			t.a = (e, t) => {
 				switch (e) {
-					case r.Rd.Add:
+					case r.Pd.Add:
 						return s.fbt._("Add Community", null, {
 							hk: "nuvEI"
 						});
-					case r.Rd.Start:
+					case r.Pd.Start:
 						return s.fbt._("Start Community", null, {
 							hk: "244eL5"
 						});
-					case r.Rd.Create:
+					case r.Pd.Create:
 						return s.fbt._("Create Subreddit", null, {
 							hk: "1Qw5ax"
 						});
@@ -5198,17 +5204,6 @@
 					[i.a.ClickSource]: n ? "search_results_trending" : t,
 					[i.a.ClickId]: r()()
 				}
-			}
-		},
-		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
-			"use strict";
-			var s = n("./src/lib/constants/index.ts"),
-				r = n("./node_modules/react-redux/es/index.js"),
-				i = n("./src/reddit/selectors/meta.ts");
-			t.a = "undefined" == typeof document ? function() {
-				return Object(r.e)(i.i) || s.B
-			} : function() {
-				return document.documentElement.lang || s.B
 			}
 		},
 		"./src/reddit/icons/fonts/Coin/index.m.less": function(e, t, n) {
@@ -5882,9 +5877,9 @@
 			})), n.d(t, "C", (function() {
 				return Y
 			})), n.d(t, "I", (function() {
-				return Q
-			})), n.d(t, "p", (function() {
 				return X
+			})), n.d(t, "p", (function() {
+				return Q
 			})), n.d(t, "L", (function() {
 				return Z
 			})), n.d(t, "y", (function() {
@@ -6098,10 +6093,10 @@
 				Y = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				Q = (e, {
+				X = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
-				X = e => e.features.comments.visitHighlightFilter,
+				Q = e => e.features.comments.visitHighlightFilter,
 				Z = (e, t) => {
 					const n = Object(p.a)(e, t);
 					if (n) return Object(u.Y)(e, n)
@@ -6138,7 +6133,7 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
 			const o = e => {
-				return Object(i.G)(e) || s.I.Treatment1 === Object(r.c)(e, {
+				return Object(i.G)(e) || s.G.Treatment1 === Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
 					experimentName: s.z
 				})
@@ -6157,11 +6152,11 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const c = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.Hd,
+					experimentName: r.Fd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
 				d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: r.Id,
+					experimentName: r.Gd,
 					experimentEligibilitySelector: o.e
 				}), a.a)
 		},
@@ -6239,4 +6234,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9a226c864db6bbddab74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.75eb49b0ef569e557469.js.map

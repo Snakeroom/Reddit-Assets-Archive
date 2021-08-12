@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.b672f39e5d2b33df5b48.js
-// Retrieved at 8/12/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.fd09e1fa339e08f432c8.js
+// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, n) {
@@ -404,7 +404,7 @@
 				A = "",
 				C = .5,
 				_ = e => {
-					var t, n, i, T, _, U, S, y, M, H, j, k;
+					var t, n, i, T, _, U, S, y, M, j, H, k;
 					const R = Object(f.a)(),
 						P = Object(E.d)(),
 						D = Object(E.e)(h.V),
@@ -442,7 +442,7 @@
 						isClicked: !!oe,
 						isViewed: !0,
 						type: le
-					}, Te = Q.messageType === v.a.AwardReceived, ge = Te ? null === (_ = null == Q ? void 0 : Q.awarding) || void 0 === _ ? void 0 : _.id : "", we = null === (S = null === (U = null == Q ? void 0 : Q.awarding) || void 0 === U ? void 0 : U.target) || void 0 === S ? void 0 : S.permalink, Ie = null === (y = null == Q ? void 0 : Q.awarding) || void 0 === y ? void 0 : y.award.id, Ae = null === (M = null == Q ? void 0 : Q.post) || void 0 === M ? void 0 : M.permalink, Ce = Te && we ? we : Ae || X, _e = null === (j = null === (H = null == Q ? void 0 : Q.awarding) || void 0 === H ? void 0 : H.awarder) || void 0 === j ? void 0 : j.isAcceptingChats, Ue = e => {
+					}, Te = Q.messageType === v.a.AwardReceived, ge = Te ? null === (_ = null == Q ? void 0 : Q.awarding) || void 0 === _ ? void 0 : _.id : "", we = null === (S = null === (U = null == Q ? void 0 : Q.awarding) || void 0 === U ? void 0 : U.target) || void 0 === S ? void 0 : S.permalink, Ie = null === (y = null == Q ? void 0 : Q.awarding) || void 0 === y ? void 0 : y.award.id, Ae = null === (M = null == Q ? void 0 : Q.post) || void 0 === M ? void 0 : M.permalink, Ce = Te && we ? we : Ae || X, _e = null === (H = null === (j = null == Q ? void 0 : Q.awarding) || void 0 === j ? void 0 : j.awarder) || void 0 === H ? void 0 : H.isAcceptingChats, Ue = e => {
 						R(Object(b.k)({
 							...he,
 							actionInfoType: e
@@ -490,7 +490,7 @@
 						isInboxCTAsSeePostEnabled: B,
 						deeplinkUrl: X,
 						isNightMode: D
-					}))), He = {
+					}))), je = {
 						className: g.a.link,
 						onClick: e => {
 							(null == me ? void 0 : me.removedByCategory) ? (e.preventDefault(), P(Object(N.f)({
@@ -504,12 +504,12 @@
 						},
 						onMouseDown: Se,
 						onKeyDown: Se
-					}, je = null === (k = Object(l.a)(Ce)) || void 0 === k ? void 0 : k.host, ke = "reddit.com" === je || "www.reddit.com" === je;
+					}, He = null === (k = Object(l.a)(Ce)) || void 0 === k ? void 0 : k.host, ke = "reddit.com" === He || "www.reddit.com" === He;
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("li", {
 						className: xe
-					}, ke ? s.a.createElement(p.a, w({}, He, {
+					}, ke ? s.a.createElement(p.a, w({}, je, {
 						to: Ce
-					}), Me) : s.a.createElement("a", w({}, He, {
+					}), Me) : s.a.createElement("a", w({}, je, {
 						href: Ce,
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -718,13 +718,13 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.I)(e) || Object(r.J)(e),
 				d = Object(i.a)(e => Object(o.c)(e, {
-					experimentName: a.Ec,
+					experimentName: a.Cc,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(i.a)(d, e => e === a.Hc.SeePostCTAs),
-				m = Object(i.a)(d, e => e === a.Hc.ReplyCTAs),
-				u = Object(i.a)(d, e => e === a.Hc.AllCTAs)
+				c = Object(i.a)(d, e => e === a.Fc.SeePostCTAs),
+				m = Object(i.a)(d, e => e === a.Fc.ReplyCTAs),
+				u = Object(i.a)(d, e => e === a.Fc.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.b672f39e5d2b33df5b48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.fd09e1fa339e08f432c8.js.map

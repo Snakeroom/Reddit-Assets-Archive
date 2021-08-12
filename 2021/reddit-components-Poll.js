@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.58a9647307cd329fed58.js
-// Retrieved at 8/12/2021, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.99e5cc98c5a852503ef1.js
+// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -279,7 +279,7 @@
 			})), n.d(t, "c", (function() {
 				return y
 			})), n.d(t, "f", (function() {
-				return P
+				return j
 			})), n.d(t, "g", (function() {
 				return A
 			})), n.d(t, "d", (function() {
@@ -313,8 +313,8 @@
 				C = Object(s.a)(E.i),
 				x = Object(s.a)(E.j),
 				I = Object(s.a)(E.k),
-				j = Object(s.a)(E.q),
-				P = Object(s.a)(E.r),
+				P = Object(s.a)(E.q),
+				j = Object(s.a)(E.r),
 				T = Object(s.a)(E.s),
 				S = Object(s.a)(E.t),
 				w = Object(s.a)(E.u),
@@ -394,7 +394,7 @@
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(o.a)(e.amount)), r.fbt._param("tokenName", (null === (d = Object(h.b)(s(), e.subredditId)) || void 0 === d ? void 0 : d.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(i.f)())) : (n(j({
+					})), t && n(Object(i.f)())) : (n(P({
 						error: m.error
 					})), Object(v.a)(n, m.error))
 				}, V = e => async (t, n, {
@@ -463,52 +463,58 @@
 		"./src/reddit/components/HumanDate/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return a
+				return d
 			})), n.d(t, "a", (function() {
-				return l
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			})), n.d(t, "c", (function() {
-				return _
+				return E
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				o = n("./src/lib/timeAgo/index.ts"),
-				i = n("./src/reddit/hooks/useLocale.ts");
-			var a = function({
+				i = n("./src/lib/constants/index.ts"),
+				a = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/reddit/selectors/meta.ts");
+			var l = "undefined" == typeof document ? function() {
+				return Object(a.e)(c.i) || i.B
+			} : function() {
+				return document.documentElement.lang || i.B
+			};
+			var d = function({
 					seconds: e,
 					...t
 				}) {
 					var n;
-					const r = Object(i.a)(),
-						a = {
+					const r = l(),
+						i = {
 							...t,
 							locale: null !== (n = t.locale) && void 0 !== n ? n : r
 						};
-					return s.a.createElement(s.a.Fragment, null, Object(o.d)(e, a))
+					return s.a.createElement(s.a.Fragment, null, Object(o.d)(e, i))
 				},
-				c = n("./src/lib/humanizeDate/index.ts");
-			var l = function({
-					seconds: e,
-					...t
-				}) {
-					var n;
-					const r = Object(i.a)(),
-						o = {
-							...t,
-							locale: null !== (n = t.locale) && void 0 !== n ? n : r
-						};
-					return s.a.createElement(s.a.Fragment, null, Object(c.a)(e, o))
-				},
-				d = n("./src/lib/constants/index.ts");
-			var u = function({
+				u = n("./src/lib/humanizeDate/index.ts");
+			var m = function({
+				seconds: e,
+				...t
+			}) {
+				var n;
+				const r = l(),
+					o = {
+						...t,
+						locale: null !== (n = t.locale) && void 0 !== n ? n : r
+					};
+				return s.a.createElement(s.a.Fragment, null, Object(u.a)(e, o))
+			};
+			var p = function({
 					seconds: e,
 					locale: t
 				}) {
-					const n = Object(i.a)(),
+					const n = l(),
 						r = null != t ? t : n;
-					return s.a.createElement(s.a.Fragment, null, function(e, t = d.B) {
-						const n = e * d.Ob;
+					return s.a.createElement(s.a.Fragment, null, function(e, t = i.B) {
+						const n = e * i.Ob;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -521,42 +527,42 @@
 						})
 					}(e, r))
 				},
-				m = n("./node_modules/fbt/lib/FbtPublic.js"),
-				p = n("./src/lib/eventTools/index.ts");
+				b = n("./node_modules/fbt/lib/FbtPublic.js"),
+				f = n("./src/lib/eventTools/index.ts");
 
-			function b(e, t = d.B) {
+			function _(e, t = i.B) {
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function f(e, t, n, r = d.B) {
-				const s = Object(p.e)(e, t),
-					o = new Date(e * d.Ob);
-				let i;
-				if (s === p.a.Live || n) return m.fbt._("Now", null, {
+			function h(e, t, n, r = i.B) {
+				const s = Object(f.e)(e, t),
+					o = new Date(e * i.Ob);
+				let a;
+				if (s === f.a.Live || n) return b.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
-				return s === p.a.Future ? i = Object(p.d)(e) ? m.fbt._("Today", null, {
+				return s === f.a.Future ? a = Object(f.d)(e) ? b.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(p.b)(e) >= 5 ? b(o, r) : function(e, t = d.B) {
+				}).toString() : Object(f.b)(e) >= 5 ? _(o, r) : function(e, t = i.B) {
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
-				}(o, r) : s === p.a.Past && (i = Object(p.d)(e) ? m.fbt._("Today", null, {
+				}(o, r) : s === f.a.Past && (a = Object(f.d)(e) ? b.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : b(o, r)), `${i} @ ${function(e,t=d.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
+				}).toString() : _(o, r)), `${a} @ ${function(e,t=i.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
 			}
-			var _ = function({
+			var E = function({
 				startTime: e,
 				endTime: t,
 				isLive: n,
 				locale: r
 			}) {
-				const o = Object(i.a)(),
-					a = null != r ? r : o;
-				return s.a.createElement(s.a.Fragment, null, f(e, t, n, a))
+				const o = l(),
+					i = null != r ? r : o;
+				return s.a.createElement(s.a.Fragment, null, h(e, t, n, i))
 			};
 			n("./src/lib/humanizeUTCDate/index.tsx")
 		},
@@ -748,15 +754,15 @@
 				C = n("./src/reddit/selectors/poll/index.ts"),
 				x = n("./src/reddit/selectors/postCreations.ts"),
 				I = n("./src/reddit/selectors/posts.ts"),
-				j = n("./src/reddit/components/Poll/NoPollError/index.m.less"),
-				P = n.n(j);
+				P = n("./src/reddit/components/Poll/NoPollError/index.m.less"),
+				j = n.n(P);
 			const {
 				fbt: T
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
 			function S(e) {
 				return i.a.createElement("div", {
-					className: Object(l.a)(P.a.container, e.className)
+					className: Object(l.a)(j.a.container, e.className)
 				}, T._("Error: Could not load poll", null, {
 					hk: "WWRIU"
 				}))
@@ -1439,17 +1445,6 @@
 				return "message" in e ? `${t}: ${e.message}` : t
 			}
 		},
-		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
-			"use strict";
-			var r = n("./src/lib/constants/index.ts"),
-				s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/selectors/meta.ts");
-			t.a = "undefined" == typeof document ? function() {
-				return Object(s.e)(o.i) || r.B
-			} : function() {
-				return document.documentElement.lang || r.B
-			}
-		},
 		"./src/reddit/icons/svgs/CircleCheck/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -1707,4 +1702,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.58a9647307cd329fed58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.99e5cc98c5a852503ef1.js.map

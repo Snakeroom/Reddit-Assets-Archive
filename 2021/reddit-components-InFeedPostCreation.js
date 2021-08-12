@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0e6ae61edcf80b8c7e76.js
-// Retrieved at 8/12/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1475a79d2f5d47549f0b.js
+// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -82,7 +82,7 @@
 				L = () => r.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
-				g = () => r.fbt._("Create Link Post", null, {
+				v = () => r.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
 			t.default = Object(m.c)(S(({
@@ -170,7 +170,7 @@
 					priority: I.b.Plain,
 					kind: I.a.InternalLink,
 					size: I.c.M,
-					"aria-label": g(),
+					"aria-label": v(),
 					id: j.Link,
 					onClick: () => E(d.Sb.LINK_ONLY),
 					onMouseEnter: () => u(j.Link),
@@ -250,16 +250,16 @@
 			const o = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.hd
-					}) === r.rd.Enabled
+						experimentName: r.fd
+					}) === r.pd.Enabled
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.gd
-					}) === r.qd.Enabled
+						experimentName: r.ed
+					}) === r.od.Enabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.0e6ae61edcf80b8c7e76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1475a79d2f5d47549f0b.js.map

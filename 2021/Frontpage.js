@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b63f1e584857e462ed08.js
-// Retrieved at 8/12/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.58656d57f23c73e21fcb.js
+// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1798,10 +1798,10 @@
 			}
 			var Ve = n("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(Ue.c)(e, {
-					experimentName: Fe.Nc,
+					experimentName: Fe.Lc,
 					experimentEligibilitySelector: Ue.a
 				}), Ve.a),
-				We = Object(u.a)(qe, e => e === Fe.Pc.Enabled);
+				We = Object(u.a)(qe, e => e === Fe.Nc.Enabled);
 			var Ge = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = n("./src/reddit/selectors/user.ts");
 			var Ke = n("./src/reddit/selectors/experiments/uiSimplification.ts"),
@@ -1833,8 +1833,8 @@
 						return (!t || !n) && (!Object(Ke.b)(e) && function(e) {
 							return Object(Ue.c)(e, {
 								experimentEligibilitySelector: He.J,
-								experimentName: Fe.mb
-							}) === Fe.jc
+								experimentName: Fe.kb
+							}) === Fe.hc
 						}(e))
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -4793,8 +4793,8 @@
 			const a = e => r.e[Object(o.O)(e, {})] === r.d.Card,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: a,
-					experimentName: s.R
-				}) === s.ob.Treatment
+					experimentName: s.P
+				}) === s.mb.Treatment
 		},
 		"./src/reddit/selectors/experiments/econ/avatarBanner.ts": function(e, t, n) {
 			"use strict";
@@ -4810,7 +4810,7 @@
 			function i(e) {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: o.J,
-					experimentName: s.Fb
+					experimentName: s.Db
 				})
 			}
 			const a = 31536e3;
@@ -4827,9 +4827,9 @@
 				return function(e) {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: c,
-						experimentName: s.Eb
-					}) === s.lc.Enabled
-				}(e) ? d.Achievements : t === s.mc.ControlBanner ? d.CommunitySpacesControl : t === s.mc.EnabledBanner ? d.CommunitySpaces : null
+						experimentName: s.Cb
+					}) === s.jc.Enabled
+				}(e) ? d.Achievements : t === s.kc.ControlBanner ? d.CommunitySpacesControl : t === s.kc.EnabledBanner ? d.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(d || (d = {}))
@@ -4880,4 +4880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b63f1e584857e462ed08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.58656d57f23c73e21fcb.js.map

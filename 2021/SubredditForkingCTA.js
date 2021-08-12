@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.3de384c33c5ba653aec4.js
-// Retrieved at 8/12/2021, 2:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.47249ff6357624aa9b1a.js
+// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -63,7 +63,7 @@
 					className: t,
 					disabled: p || c,
 					onClick: t => {
-						m && m(t), e === l.Qd.Tabs ? window.open("/subreddits/create", "_blank") : d(u)
+						m && m(t), e === l.Od.Tabs ? window.open("/subreddits/create", "_blank") : d(u)
 					},
 					onMouseEnter: r,
 					onMouseLeave: i,
@@ -105,10 +105,10 @@
 				b = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const m = Object(l.a)(t => Object(b.c)(t, {
-					experimentName: a.Ld,
+					experimentName: a.Jd,
 					experimentEligibilitySelector: b.a
 				}), p.a),
-				y = Object(l.a)(m, t => t === a.Td.Enabled);
+				y = Object(l.a)(m, t => t === a.Rd.Enabled);
 			var x = e("./src/reddit/selectors/posts.ts"),
 				h = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				g = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1097,4 +1097,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.3de384c33c5ba653aec4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.47249ff6357624aa9b1a.js.map

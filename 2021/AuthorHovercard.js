@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.bf36d1d0c7cba443efd1.js
-// Retrieved at 8/12/2021, 2:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.c5a4f45e1b5439c17cda.js
+// Retrieved at 8/12/2021, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -163,7 +163,7 @@
 					}
 				},
 				A = n("./src/reddit/actions/inContextModeration.ts");
-			var L = (e = null, t) => {
+			var F = (e = null, t) => {
 				switch (t.type) {
 					case A.a:
 						return t.payload;
@@ -171,8 +171,8 @@
 						return e
 				}
 			};
-			const F = {};
-			var H = (e = F, t) => {
+			const L = {};
+			var H = (e = L, t) => {
 					switch (t.type) {
 						case j.n: {
 							const {
@@ -296,7 +296,7 @@
 				V = Object(w.c)({
 					api: P,
 					fetchedTokens: T,
-					inContext: L,
+					inContext: F,
 					loadMore: H,
 					models: R,
 					search: G,
@@ -481,7 +481,7 @@
 			})), n.d(t, "d", (function() {
 				return A
 			})), n.d(t, "c", (function() {
-				return F
+				return L
 			})), n.d(t, "a", (function() {
 				return M
 			})), n.d(t, "b", (function() {
@@ -660,7 +660,7 @@
 						});
 						o(Object(l.f)(Object(l.e)(s, O.b.Error)))
 					}
-				}, L = Object(o.a)(d.f), F = e => async (t, n, {
+				}, F = Object(o.a)(d.f), L = e => async (t, n, {
 					apiContext: r
 				}) => {
 					const o = n(),
@@ -676,7 +676,7 @@
 						x = -1 === f && -1 === h,
 						v = o.subreddits.models,
 						I = o.profiles.models;
-					t(L({
+					t(F({
 						makeFavorite: x,
 						identifier: e,
 						subredditModels: v,
@@ -697,7 +697,7 @@
 							sr_name: t,
 							api_type: "json"
 						}
-					}))(r(), i, x)).ok || (t(L({
+					}))(r(), i, x)).ok || (t(F({
 						makeFavorite: !x,
 						identifier: e,
 						subredditModels: v,
@@ -1011,8 +1011,8 @@
 				}))),
 				T = n("./src/reddit/icons/svgs/Premium/index.tsx"),
 				A = n("./src/reddit/models/Gold/Award.ts"),
-				L = n("./src/reddit/models/User/index.ts"),
-				F = n("./src/reddit/components/HumanDate/index.tsx"),
+				F = n("./src/reddit/models/User/index.ts"),
+				L = n("./src/reddit/components/HumanDate/index.tsx"),
 				H = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				M = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				D = n("./src/reddit/actions/inContextModeration.ts"),
@@ -1173,7 +1173,7 @@
 					})
 				}), e.user.isGold && s.a.createElement(g.a, {
 					to: "/premium"
-				}, s.a.createElement(le, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(pe, null, e.user.username, s.a.createElement(be, null, "•")), s.a.createElement(pe, null, s.a.createElement(F.d, {
+				}, s.a.createElement(le, null))), s.a.createElement(me, null, e.user.username && s.a.createElement(pe, null, e.user.username, s.a.createElement(be, null, "•")), s.a.createElement(pe, null, s.a.createElement(L.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Se = e => {
@@ -1258,7 +1258,7 @@
 					if (!v) return s.a.createElement(we, {
 						style: b
 					});
-					const N = !!r && Object(L.e)(r) === x,
+					const N = !!r && Object(F.e)(r) === x,
 						w = !!(null == r ? void 0 : r.snoovatarFullBodyAsset),
 						k = v.accountIcon || `${_.a.assetPath}/img/snoo_user_placeholder.png`,
 						B = l && l.flair,
@@ -1268,18 +1268,18 @@
 						{
 							awardedLastMonth: A
 						} = v,
-						F = !!v.snoovatarFullBodyAsset,
+						L = !!v.snoovatarFullBodyAsset,
 						D = v.isNSFW && o;
 					let R;
-					return R = F ? !D && O && O.bannerBackgroundImage || void 0 : D ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(we, {
+					return R = L ? !D && O && O.bannerBackgroundImage || void 0 : D ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, s.a.createElement(we, {
 						className: t,
 						id: a,
 						style: b
-					}, !F && R && s.a.createElement(ye, {
+					}, !L && R && s.a.createElement(ye, {
 						style: {
 							backgroundImage: `url('${R}')`
 						}
-					}), s.a.createElement(je, null, F ? s.a.createElement(M.a, {
+					}), s.a.createElement(je, null, L ? s.a.createElement(M.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: R,
 						compact: !0,
@@ -1386,13 +1386,13 @@
 						return !n || n.acceptChats
 					}
 				}),
-				Le = Object(o.b)(Ae, (e, t) => ({
+				Fe = Object(o.b)(Ae, (e, t) => ({
 					onClickSnoovatar: () => e(Object(i.b)({
 						clickSource: "user_hovercard"
 					})),
 					onHideTooltip: () => e(Object(c.i)())
 				}));
-			t.a = Le(e => s.a.createElement("div", {
+			t.a = Fe(e => s.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
@@ -1658,52 +1658,58 @@
 		"./src/reddit/components/HumanDate/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return i
+				return l
 			})), n.d(t, "a", (function() {
-				return d
+				return m
 			})), n.d(t, "b", (function() {
-				return u
+				return p
 			})), n.d(t, "c", (function() {
-				return h
+				return v
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				o = n("./src/lib/timeAgo/index.ts"),
-				a = n("./src/reddit/hooks/useLocale.ts");
-			var i = function({
+				a = n("./src/lib/constants/index.ts"),
+				i = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/reddit/selectors/meta.ts");
+			var d = "undefined" == typeof document ? function() {
+				return Object(i.e)(c.i) || a.B
+			} : function() {
+				return document.documentElement.lang || a.B
+			};
+			var l = function({
 					seconds: e,
 					...t
 				}) {
 					var n;
-					const r = Object(a.a)(),
-						i = {
+					const r = d(),
+						a = {
 							...t,
 							locale: null !== (n = t.locale) && void 0 !== n ? n : r
 						};
-					return s.a.createElement(s.a.Fragment, null, Object(o.d)(e, i))
+					return s.a.createElement(s.a.Fragment, null, Object(o.d)(e, a))
 				},
-				c = n("./src/lib/humanizeDate/index.ts");
-			var d = function({
-					seconds: e,
-					...t
-				}) {
-					var n;
-					const r = Object(a.a)(),
-						o = {
-							...t,
-							locale: null !== (n = t.locale) && void 0 !== n ? n : r
-						};
-					return s.a.createElement(s.a.Fragment, null, Object(c.a)(e, o))
-				},
-				l = n("./src/lib/constants/index.ts");
-			var u = function({
+				u = n("./src/lib/humanizeDate/index.ts");
+			var m = function({
+				seconds: e,
+				...t
+			}) {
+				var n;
+				const r = d(),
+					o = {
+						...t,
+						locale: null !== (n = t.locale) && void 0 !== n ? n : r
+					};
+				return s.a.createElement(s.a.Fragment, null, Object(u.a)(e, o))
+			};
+			var p = function({
 					seconds: e,
 					locale: t
 				}) {
-					const n = Object(a.a)(),
+					const n = d(),
 						r = null != t ? t : n;
-					return s.a.createElement(s.a.Fragment, null, function(e, t = l.B) {
-						const n = e * l.Ob;
+					return s.a.createElement(s.a.Fragment, null, function(e, t = a.B) {
+						const n = e * a.Ob;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -1716,42 +1722,42 @@
 						})
 					}(e, r))
 				},
-				m = n("./node_modules/fbt/lib/FbtPublic.js"),
-				p = n("./src/lib/eventTools/index.ts");
+				b = n("./node_modules/fbt/lib/FbtPublic.js"),
+				f = n("./src/lib/eventTools/index.ts");
 
-			function b(e, t = l.B) {
+			function h(e, t = a.B) {
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
 				})
 			}
 
-			function f(e, t, n, r = l.B) {
-				const s = Object(p.e)(e, t),
-					o = new Date(e * l.Ob);
-				let a;
-				if (s === p.a.Live || n) return m.fbt._("Now", null, {
+			function x(e, t, n, r = a.B) {
+				const s = Object(f.e)(e, t),
+					o = new Date(e * a.Ob);
+				let i;
+				if (s === f.a.Live || n) return b.fbt._("Now", null, {
 					hk: "Prpcg"
 				});
-				return s === p.a.Future ? a = Object(p.d)(e) ? m.fbt._("Today", null, {
+				return s === f.a.Future ? i = Object(f.d)(e) ? b.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : Object(p.b)(e) >= 5 ? b(o, r) : function(e, t = l.B) {
+				}).toString() : Object(f.b)(e) >= 5 ? h(o, r) : function(e, t = a.B) {
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
-				}(o, r) : s === p.a.Past && (a = Object(p.d)(e) ? m.fbt._("Today", null, {
+				}(o, r) : s === f.a.Past && (i = Object(f.d)(e) ? b.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : b(o, r)), `${a} @ ${function(e,t=l.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
+				}).toString() : h(o, r)), `${i} @ ${function(e,t=a.B){return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,r)}`
 			}
-			var h = function({
+			var v = function({
 				startTime: e,
 				endTime: t,
 				isLive: n,
 				locale: r
 			}) {
-				const o = Object(a.a)(),
-					i = null != r ? r : o;
-				return s.a.createElement(s.a.Fragment, null, f(e, t, n, i))
+				const o = d(),
+					a = null != r ? r : o;
+				return s.a.createElement(s.a.Fragment, null, x(e, t, n, a))
 			};
 			n("./src/lib/humanizeUTCDate/index.tsx")
 		},
@@ -1989,8 +1995,8 @@
 				U = "200px",
 				T = "250px",
 				A = 100,
-				L = .5,
-				F = 5;
+				F = .5,
+				L = 5;
 			class H extends o.a.Component {
 				constructor() {
 					super(...arguments), this.container = o.a.createRef(), this.state = {
@@ -2021,7 +2027,7 @@
 							notifications: e
 						} = this.props, {
 							currentNotificationCursorIndex: t
-						} = this.state, n = t + F, r = n > e.length ? n : e.length - 1;
+						} = this.state, n = t + L, r = n > e.length ? n : e.length - 1;
 						this.setState({
 							currentNotificationCursorIndex: r
 						})
@@ -2035,7 +2041,7 @@
 								isInboxInfiniteScrollEnabled: r,
 								notifications: s
 							} = this.props,
-							a = s.length > n + F;
+							a = s.length > n + L;
 						return (r && s.length > 0 && a ? s.slice(0, n + 1) : s).map((n, r) => o.a.createElement(y, k({}, e, {
 							index: r,
 							key: r,
@@ -2051,10 +2057,10 @@
 							notifications: s
 						} = this.props;
 						if (e.isIntersecting) {
-							const e = s.length > this.state.currentNotificationCursorIndex + F;
+							const e = s.length > this.state.currentNotificationCursorIndex + L;
 							this.props.notifications.length > 0 && r && e ? this.updateCurrentCursorIndex() : t && n({
 								after: t,
-								first: F
+								first: L
 							})
 						}
 					}
@@ -2078,7 +2084,7 @@
 						isInboxInfiniteScrollEnabled: i,
 						isPending: c,
 						notifications: l
-					} = this.props, m = !(!l || !l.length), p = this.getContainerHeight(), b = l.length > this.state.currentNotificationCursorIndex + F, f = r || n || t;
+					} = this.props, m = !(!l || !l.length), p = this.getContainerHeight(), b = l.length > this.state.currentNotificationCursorIndex + L, f = r || n || t;
 					return o.a.createElement("div", {
 						className: O.a.notificationList,
 						ref: this.container,
@@ -2100,7 +2106,7 @@
 					}), m && this.renderNotifications(), i && m && !c && (e || b) && o.a.createElement(d.a, {
 						onChange: this.loadNotifications,
 						rootMargin: "0px 0px 0px 0px",
-						threshold: L
+						threshold: F
 					}, o.a.createElement("div", null)))
 				}
 			}
@@ -3607,17 +3613,6 @@
 				}, [e])]
 			}
 		},
-		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
-			"use strict";
-			var r = n("./src/lib/constants/index.ts"),
-				s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/selectors/meta.ts");
-			t.a = "undefined" == typeof document ? function() {
-				return Object(s.e)(o.i) || r.B
-			} : function() {
-				return document.documentElement.lang || r.B
-			}
-		},
 		"./src/reddit/icons/fonts/Info/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -3866,4 +3861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.bf36d1d0c7cba443efd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c5a4f45e1b5439c17cda.js.map
